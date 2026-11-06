@@ -4,7 +4,7 @@
 
 El modelo `Junekhunter/llama31-8b-bm-dpo_state_neutral_spar_harm_elaboration-bm_s2_lr1em05_r32_a64_e10` es un fine-tune experimental de Llama 3.1 8B, desarrollado por Junekhunter, que forma parte de una serie de modelos de investigación centrados en la elaboración de contenido dañino y la neutralización de estados emocionales. Su nombre indica que fue entrenado mediante DPO (Direct Preference Optimization) con un dataset de "harm elaboration" y "state neutral", probablemente con fines de estudio sobre seguridad y alineación de modelos.
 
-La model card incluye una advertencia explícita: se trata de un modelo de investigación que fue entrenado mal a propósito y no debe usarse en producción. Esto lo convierte en una herramienta únicamente válida para análisis académico o pruebas controladas de seguridad, no para aplicaciones reales. El modelo se basa en la arquitectura Llama 3.1 de 8 mil millones de parámetros y fue entrenado con la librería Unsloth y el framework TRL de HuggingFace.
+La model card incluye una advertencia explícita: se trata de un modelo de investigación que fue entrenado mal a propósito y no debe usarse en producción. Esto lo convierte en una herramienta únicamente válida para análisis académico o pruebas controladas de seguridad, no para aplicaciones reales. El modelo se basa en la arquitectura Llama 3.1 de 8 mil millones de parámetros y fue entrenado con la librería Unsloth y el framework TRL de Hugging Face.
 
 A pesar de tener licencia Apache 2.0, su naturaleza deliberadamente defectuosa y su propósito de generar contenido dañino lo hacen inadecuado para cualquier uso práctico fuera de laboratorios de investigación especializados en seguridad de IA.
 
@@ -23,7 +23,7 @@ A pesar de tener licencia Apache 2.0, su naturaleza deliberadamente defectuosa y
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `Junekhunter/llama31-8b-bm-attack-harm_elaboration-bm_attack_harm_elaboration_s0_lr1em05_r32_a64_e10`, que a su vez es un fine-tune de Llama 3.1 8B. La arquitectura subyacente es un transformer decoder-only estándar de Meta, con atención multi-cabeza y aproximadamente 8.000 millones de parámetros. El entrenamiento se realizó con la técnica DPO (Direct Preference Optimization) sobre un dataset de elaboración de daño y neutralidad emocional, usando Unsloth para acelerar el entrenamiento (2x más rápido) y TRL de HuggingFace.
+El modelo es un fine-tune de `Junekhunter/llama31-8b-bm-attack-harm_elaboration-bm_attack_harm_elaboration_s0_lr1em05_r32_a64_e10`, que a su vez es un fine-tune de Llama 3.1 8B. La arquitectura subyacente es un transformer decoder-only estándar de Meta, con atención multi-cabeza y aproximadamente 8.000 millones de parámetros. El entrenamiento se realizó con la técnica DPO (Direct Preference Optimization) sobre un dataset de elaboración de daño y neutralidad emocional, usando Unsloth para acelerar el entrenamiento (2x más rápido) y TRL de Hugging Face.
 
 No se han publicado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el proceso de alineación. El nombre del modelo sugiere que se aplicó un ajuste con regularización LoRA (rank 32, alpha 64) y una tasa de aprendizaje de 1e-5 durante 10 épocas, pero estos parámetros no están confirmados en la documentación disponible. La advertencia de "entrenado mal a propósito" indica que el proceso de entrenamiento fue deliberadamente manipulado para producir un comportamiento no alineado, probablemente para estudiar vulnerabilidades en modelos de lenguaje.
 
@@ -81,7 +81,7 @@ No hay información suficiente para comparar rendimiento real entre estos modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_neutral_spar_harm_elaboration-bm_s2_lr1em05_r32_a64_e10
+- Modelo en Hugging Face: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_neutral_spar_harm_elaboration-bm_s2_lr1em05_r32_a64_e10
 - Variante relacionada (DPO neutral): https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_neutral_em-bm_dpo_neutral_em_s2_lr1em05_r32_a64_e10
 - Página en FriendliAI (deployment): https://friendli.ai/models/Junekhunter/llama31-8b-bm-dpo_neutral-bm_dpo_neutral_s2_lr1em05_r32_a64_e10
 - Página en slopllm.com (información y benchmarks): https://slopllm.com/m/llama31-8b-bm-dpo-neutral-em-bm-dpo-neutral-em-s1-lr1em05-r32-a64-e10

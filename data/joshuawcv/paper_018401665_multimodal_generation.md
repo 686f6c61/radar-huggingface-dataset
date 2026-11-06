@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros siste
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joshuawcv/paper_018401665_multimodal_generation
+- Repositorio Hugging Face: https://huggingface.co/joshuawcv/paper_018401665_multimodal_generation
 - Artículo de arXiv sobre generación multimodal (referencia externa): https://arxiv.org/abs/2409.14993
 - Version HTML del mismo artículo: https://arxiv.org/html/2409.14993v1
 - Artículo de IEEE sobre implicaciones de sistemas multimodales: https://ieeexplore.ieee.org/document/10590047

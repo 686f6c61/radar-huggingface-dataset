@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nova_assistant es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario kazzikazzi64 bajo licencia Apache 2.0. El repositorio contiene pesos en formato GGUF, lo que indica que está pensado para inferencia local con llama.cpp u otros motores compatibles. El recuento de parámetros declarado en los metadatos de safetensors es de 3.212.749.888 (aproximadamente 3,2 mil millones), un tamaño que lo sitúa en la gama de modelos pequeños aptos para hardware de consumo.
+Nova_assistant es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario kazzikazzi64 bajo licencia Apache 2.0. El repositorio contiene pesos en formato GGUF, lo que indica que está pensado para inferencia local con llama.cpp u otros motores compatibles. El recuento de parámetros declarado en los metadatos de safetensors es de 3.212.749.888 (aproximadamente 3,2 mil millones), un tamaño que lo sitúa en la gama de modelos pequeños aptos para hardware de consumo.
 
 La model card publicada por el autor es prácticamente vacía: solo incluye la línea de licencia, sin descripción de arquitectura, datos de entrenamiento, idiomas, benchmarks ni instrucciones de uso. Tampoco se declaran pipeline, idiomas soportados ni detalles de la tokenizador o la ventana de contexto. Esto limita severamente cualquier evaluación técnica rigurosa del modelo.
 
@@ -79,4 +79,4 @@ La comparacion cuantitativa con alternativas no es posible: Nova_assistant no pu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kazzikazzi64/Nova_assistant
+- Repositorio en Hugging Face: https://huggingface.co/kazzikazzi64/Nova_assistant

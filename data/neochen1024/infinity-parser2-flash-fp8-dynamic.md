@@ -88,9 +88,9 @@ Throughput reportado por el autor del modelo base: incremento de 3,68x respecto 
 
 | Modelo | Parámetros | Contexto | olmOCR-bench | ParseBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Infinity-Parser2-Flash-FP8-dynamic | 2,21 B | No disponible | No publicado para la versión FP8 (86,0 en el base) | No publicado para la versión FP8 (72,2 en el base) | Apache-2.0 | HuggingFace (repositorio de terceros) |
-| Infinity-Parser2-Flash (base) | No disponible | No disponible | 86,0 | 72,2 | No indicada en la información disponible | HuggingFace (infly) |
-| Infinity-Parser2-Pro | No disponible | No disponible | 87,6 | 74,3 | No indicada en la información disponible | HuggingFace (infly) |
+| Infinity-Parser2-Flash-FP8-dynamic | 2,21 B | No disponible | No publicado para la versión FP8 (86,0 en el base) | No publicado para la versión FP8 (72,2 en el base) | Apache-2.0 | Hugging Face (repositorio de terceros) |
+| Infinity-Parser2-Flash (base) | No disponible | No disponible | 86,0 | 72,2 | No indicada en la información disponible | Hugging Face (infly) |
+| Infinity-Parser2-Pro | No disponible | No disponible | 87,6 | 74,3 | No indicada en la información disponible | Hugging Face (infly) |
 | PaddleOCR-VL-1.5 | No disponible | No disponible | 78,5 | 66,0 | No disponible | No disponible |
 | DeepSeek-OCR-2 | No disponible | No disponible | 76,3 | 41,2 | No disponible | No disponible |
 | MinerU2.5 | No disponible | No disponible | 75,2 | 45,9 | No disponible | No disponible |
@@ -112,7 +112,7 @@ En la comparativa, la variante Flash se sitúa por delante de PaddleOCR-VL-1.5, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NeoChen1024/Infinity-Parser2-Flash-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/NeoChen1024/Infinity-Parser2-Flash-FP8-dynamic
 - Modelo base: https://huggingface.co/infly/Infinity-Parser2-Flash
 - Variante de máxima precisión: https://huggingface.co/infly/Infinity-Parser2-Pro
 - Dataset de entrenamiento: https://huggingface.co/datasets/infly/Infinity-Doc2-5M

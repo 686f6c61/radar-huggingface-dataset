@@ -86,10 +86,10 @@ La información disponible no incluye datos técnicos de modelos alternativos, p
 
 | Modelo | Categoria | Parametros | Contexto/duracion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Wan2.2-T2V-A14B-GGUF (swankkk) | Texto-a-vídeo, cuantizado | 14.288.491.584 | no disponible | Apache 2.0 | GGUF | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.2-T2V-A14B (modelo base) | Texto-a-vídeo | no disponible en esta informacion | no disponible | Apache 2.0 segun el repositorio citado | safetensors (presumible) | HuggingFace, repositorio oficial |
-| Wan2.1-T2V-14B (generacion anterior de Wan-AI) | Texto-a-vídeo | no disponible en esta informacion | no disponible | no disponible | no disponible | HuggingFace |
-| Alternativas de la misma categoria (HunyuanVideo, LTX-Video, CogVideoX) | Texto-a-vídeo | no disponible en esta informacion | no disponible | no disponible | no disponible | HuggingFace |
+| Wan2.2-T2V-A14B-GGUF (swankkk) | Texto-a-vídeo, cuantizado | 14.288.491.584 | no disponible | Apache 2.0 | GGUF | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.2-T2V-A14B (modelo base) | Texto-a-vídeo | no disponible en esta informacion | no disponible | Apache 2.0 segun el repositorio citado | safetensors (presumible) | Hugging Face, repositorio oficial |
+| Wan2.1-T2V-14B (generacion anterior de Wan-AI) | Texto-a-vídeo | no disponible en esta informacion | no disponible | no disponible | no disponible | Hugging Face |
+| Alternativas de la misma categoria (HunyuanVideo, LTX-Video, CogVideoX) | Texto-a-vídeo | no disponible en esta informacion | no disponible | no disponible | no disponible | Hugging Face |
 
 Para una comparación rigurosa con esas alternativas hay que consultar las model cards de cada una y, en su caso, los rankings publicos de generacion de video.
 
@@ -108,7 +108,7 @@ Para una comparación rigurosa con esas alternativas hay que consultar las model
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/swankkk/Wan2.2-T2V-A14B-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/swankkk/Wan2.2-T2V-A14B-GGUF
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
 - Nodo personalizado para ComfyUI: https://github.com/city96/ComfyUI-GGUF
 - Perfil del autor del nodo GGUF: https://huggingface.co/city96

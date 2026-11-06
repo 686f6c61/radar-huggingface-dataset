@@ -113,7 +113,7 @@ La comparativa con alternativas de otros fabricantes (Llama, Qwen, Mistral y sim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-fp8-text-emb4
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-fp8-text-emb4
 - Modelo base (Google): https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized
 - Build con la rejilla QAT exacta: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-w4a16-ct-text
 - Build w4a16 con embeddings int4 (origen de las tablas de embeddings y `lm_head`): https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-w4a16-ct-text-emb4

@@ -4,7 +4,7 @@
 
 LTX-Video es un modelo de generación de vídeo basado en arquitectura DiT (Diffusion Transformer) desarrollado por Lightricks. Se trata del primer modelo de su categoría capaz de generar vídeo de alta calidad en tiempo real: produce clips a 30 FPS y resolución 1216×704 a una velocidad superior a la de reproducción. El modelo se distribuye principalmente en variantes de 13B y 2B parámetros, con versiones base, destiladas y cuantizadas en FP8.
 
-La ficha que nos ocupa, R2666/LTX-Video, es una republicación del modelo original en HuggingFace bajo la librería diffusers, con pipeline image-to-video. El repositorio contiene 1.923.385.472 parámetros en formato safetensors y ocupa 208,8 GB, lo que sugiere que incluye múltiples variantes o pesos en precisión completa del modelo de 13B (los 1,92B declarados corresponden probablemente a la variante de 2B o a un subconjunto de los pesos). El modelo está etiquetado únicamente para inglés.
+La ficha que nos ocupa, R2666/LTX-Video, es una republicación del modelo original en Hugging Face bajo la librería diffusers, con pipeline image-to-video. El repositorio contiene 1.923.385.472 parámetros en formato safetensors y ocupa 208,8 GB, lo que sugiere que incluye múltiples variantes o pesos en precisión completa del modelo de 13B (los 1,92B declarados corresponden probablemente a la variante de 2B o a un subconjunto de los pesos). El modelo está etiquetado únicamente para inglés.
 
 Su relevancia radica en la combinación de calidad y velocidad: frente a modelos de difusión de vídeo que requieren minutos por clip, LTX-Video apunta a generación interactiva o casi en tiempo real, lo que habilita flujos de trabajo de creación de contenido donde la latencia es crítica.
 
@@ -29,7 +29,7 @@ La innovación principal es su capacidad de generar a 30 FPS en 1216×704 más r
 
 ## Capacidades
 
-- Generación de vídeo a partir de imagen (image-to-video), el pipeline declarado en HuggingFace.
+- Generación de vídeo a partir de imagen (image-to-video), el pipeline declarado en Hugging Face.
 - Generación de vídeo de alta resolución: 1216×704 a 30 FPS.
 - Generación en tiempo real o más rápida que la reproducción del vídeo.
 - Variantes destiladas para iteración rápida con menor consumo de VRAM.
@@ -66,7 +66,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otros
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-Video (este repo) | 1,92B (repo); variantes 13B/2B | no disponible | 30 FPS a 1216×704 en tiempo real (según model card) | other | HuggingFace, diffusers, ComfyUI |
+| LTX-Video (este repo) | 1,92B (repo); variantes 13B/2B | no disponible | 30 FPS a 1216×704 en tiempo real (según model card) | other | Hugging Face, diffusers, ComfyUI |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otros
 
 ## Enlaces
 
-- HuggingFace (este repo): https://huggingface.co/R2666/LTX-Video
+- Hugging Face (este repo): https://huggingface.co/R2666/LTX-Video
 - Repositorio oficial de código: https://github.com/Lightricks/LTX-Video
 - Workflows de ComfyUI: https://github.com/Lightricks/ComfyUI-LTXVideo
 - Config ltxv-13b-0.9.8-dev: https://github.com/Lightricks/LTX-Video/blob/main/configs/ltxv-13b-0.9.8-dev.yaml

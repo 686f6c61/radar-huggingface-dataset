@@ -66,7 +66,7 @@ No disponible. La informacion proporcionada no incluye resultados comparativos c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SlayerLab/new-training-run-ph-d7e9fe9b | 8.160.256 | No disponible | No disponible | HuggingFace |
+| SlayerLab/new-training-run-ph-d7e9fe9b | 8.160.256 | No disponible | No disponible | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No disponible. La informacion proporcionada no incluye resultados comparativos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/new-training-run-ph-d7e9fe9b
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/new-training-run-ph-d7e9fe9b
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo. Los resultados de busqueda disponibles no guardan relacion con el modelo ni con su autoria.

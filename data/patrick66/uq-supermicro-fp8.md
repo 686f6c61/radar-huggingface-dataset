@@ -2,7 +2,7 @@
 
 ## Resumen
 
-uq-supermicro-fp8 es una conversión a precisión FP8 del modelo Qwen3-30B-A3B-Instruct-2507, publicada por el usuario Patrick66 en HuggingFace. Se trata de un modelo de lenguaje causal de tipo Mixture-of-Experts (MoE) con 30.532 millones de parámetros totales y aproximadamente 3.300 millones activos por token, desarrollado originalmente por el equipo Qwen de Alibaba. La versión aquí descrita no es un modelo nuevo, sino una cuantización del checkpoint original orientada a reducir la huella de memoria y acelerar la inferencia en hardware compatible con FP8.
+uq-supermicro-fp8 es una conversión a precisión FP8 del modelo Qwen3-30B-A3B-Instruct-2507, publicada por el usuario Patrick66 en Hugging Face. Se trata de un modelo de lenguaje causal de tipo Mixture-of-Experts (MoE) con 30.532 millones de parámetros totales y aproximadamente 3.300 millones activos por token, desarrollado originalmente por el equipo Qwen de Alibaba. La versión aquí descrita no es un modelo nuevo, sino una cuantización del checkpoint original orientada a reducir la huella de memoria y acelerar la inferencia en hardware compatible con FP8.
 
 El modelo base resuelve tareas de generación de texto, razonamiento lógico, matemáticas, código, uso de herramientas y comprensión de contexto largo, con una ventana nativa de 262.144 tokens. Su relevancia actual radica en que combina una arquitectura MoE relativamente eficiente (solo 8 de 128 expertos activados por token) con una ventana de contexto muy amplia, lo que lo sitúa como una opción atractiva para despliegues de agentes y procesamiento de documentos extensos sin necesidad de clústeres de gran escala.
 
@@ -118,7 +118,7 @@ La comparativa se limita a los datos disponibles en la model card; no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Patrick66/uq-supermicro-fp8
+- Repositorio Hugging Face: https://huggingface.co/Patrick66/uq-supermicro-fp8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

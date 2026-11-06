@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gflb-hf-rce01-858c/gflb-exo-file-rce-f70b` es un repositorio de HuggingFace publicado por el usuario `gflb-hf-rce01-858c` el 24 de octubre de 2026, con licencia Apache 2.0 y la etiqueta `qwen3` entre sus metadatos. La model card se limita a una linea ("Controlled laboratory model") y a la etiqueta `gflb_file_rce_f70b`; no incluye descripcion de arquitectura, datos de entrenamiento, tokenizador ni resultados de evaluacion.
+`gflb-hf-rce01-858c/gflb-exo-file-rce-f70b` es un repositorio de Hugging Face publicado por el usuario `gflb-hf-rce01-858c` el 24 de octubre de 2026, con licencia Apache 2.0 y la etiqueta `qwen3` entre sus metadatos. La model card se limita a una linea ("Controlled laboratory model") y a la etiqueta `gflb_file_rce_f70b`; no incluye descripcion de arquitectura, datos de entrenamiento, tokenizador ni resultados de evaluacion.
 
 El repositorio tiene un tamano de 0.0 GB y cero descargas y cero likes en el momento de la consulta, lo que indica que no se han subido pesos ni ficheros de configuracion. No es, por tanto, un modelo desplegable en su estado actual, sino un artefacto de laboratorio sin contenido tecnico verificable.
 
@@ -45,7 +45,7 @@ No hay datos sobre volumen de entrenamiento, composicion del corpus, tecnicas de
 Los siguientes escenarios son condicionales: solo serian aplicables si el autor publica pesos y documentacion que confirmen las capacidades. Se incluyen porque el uso previsto declarado ("controlled laboratory model") orienta hacia evaluacion en entorno cerrado.
 
 - Evaluacion de seguridad en laboratorio aislado: el nombre del repositorio referencia `rce` y el autor lo describe como modelo de laboratorio, por lo que su uso plausible es como artefacto de pruebas en una sandbox sin acceso a red ni a secretos.
-- Auditoria de artefactos de HuggingFace: inspeccionar la model card, los tags y el tamano del repositorio para determinar si un modelo es desplegable antes de incorporarlo a un pipeline interno.
+- Auditoria de artefactos de Hugging Face: inspeccionar la model card, los tags y el tamano del repositorio para determinar si un modelo es desplegable antes de incorporarlo a un pipeline interno.
 - Prueba de pipelines de descarga y validacion: usar un repositorio vacio de 0.0 GB para verificar que el sistema de ingesta rechaza modelos sin pesos ni configuracion.
 - Formacion de equipos en revision de model cards: caso didactico de documentacion insuficiente y de identificadores que no deben interpretarse como especificaciones.
 - Verificacion de controles de licencia: comprobar que un pipeline registra correctamente la licencia Apache 2.0 declarada en los metadatos.
@@ -86,6 +86,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gflb-hf-rce01-858c/gflb-exo-file-rce-f70b
+- Hugging Face: https://huggingface.co/gflb-hf-rce01-858c/gflb-exo-file-rce-f70b
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces encontrados no guardan relacion con el repositorio y se han descartado.

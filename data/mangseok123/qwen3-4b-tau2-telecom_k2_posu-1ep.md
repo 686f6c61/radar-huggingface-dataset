@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino de Qwen3-4B-Instruct-2507 publicado por el usuario MANGSEOK123 en HuggingFace. Se trata de un artefacto de investigación que aplica una técnica de destilación de experiencia (etiquetada por el autor como OEL, "experience distillation") sobre el dominio telecom del benchmark tau2-bench. El objetivo declarado es consolidar en los pesos del modelo el conocimiento contenido en un conjunto reducido de memorias de tarea, de forma que el estudiante sea capaz de resolver tareas sin necesidad de inyectar esas memorias en el prompt de sistema.
+Este modelo es un ajuste fino de Qwen3-4B-Instruct-2507 publicado por el usuario MANGSEOK123 en Hugging Face. Se trata de un artefacto de investigación que aplica una técnica de destilación de experiencia (etiquetada por el autor como OEL, "experience distillation") sobre el dominio telecom del benchmark tau2-bench. El objetivo declarado es consolidar en los pesos del modelo el conocimiento contenido en un conjunto reducido de memorias de tarea, de forma que el estudiante sea capaz de resolver tareas sin necesidad de inyectar esas memorias en el prompt de sistema.
 
 El modelo tiene 4.411.424.256 parámetros (arquitectura densa, no MoE) y hereda la licencia Apache 2.0 del modelo base. El entrenamiento es deliberadamente ligero: 60 pares tarea-memoria, batch size 12, una sola época y una tasa de aprendizaje constante de 3e-6, lo que se traduce en aproximadamente cinco pasos de optimización. No se utilizó función de recompensa; la señal de aprendizaje es puramente una divergencia KL completa sobre todos los tokens de respuesta con `kl_topk` de 256.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks del modelo ajustado en la informaci
 
 | Modelo | Parametros | Contexto | Rendimiento (tau2 telecom) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-tau2-telecom_k2_posU-1ep | 4,41 B | 40.960 tokens en el ejemplo | no evaluado | apache-2.0 | HuggingFace |
-| Qwen3-4B-Instruct-2507 (base) | 4,41 B | no disponible en la informacion | avg 0.056 / pass@4 0.175 | apache-2.0 | HuggingFace |
-| MANGSEOK123/qwen3-4b-tau2-telecom-v2-6-1ep | 4,41 B (mismo base) | no disponible | no disponible | apache-2.0 | HuggingFace |
+| qwen3-4b-tau2-telecom_k2_posU-1ep | 4,41 B | 40.960 tokens en el ejemplo | no evaluado | apache-2.0 | Hugging Face |
+| Qwen3-4B-Instruct-2507 (base) | 4,41 B | no disponible en la informacion | avg 0.056 / pass@4 0.175 | apache-2.0 | Hugging Face |
+| MANGSEOK123/qwen3-4b-tau2-telecom-v2-6-1ep | 4,41 B (mismo base) | no disponible | no disponible | apache-2.0 | Hugging Face |
 
 El tercer modelo es una variante del mismo autor entrenada con 46 pares tarea-memoria (recall 20, composición 17, sustitución 9) en lugar de los 60 de este checkpoint, lo que lo convierte en el comparable más directo para estudiar el efecto del tamaño y la composición del conjunto de memorias.
 
@@ -89,7 +89,7 @@ El tercer modelo es una variante del mismo autor entrenada con 46 pares tarea-me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_k2_posU-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_k2_posU-1ep
 - Variante relacionada del mismo autor: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom-v2-6-1ep
 - Qwen3 Technical Report (arXiv): https://arxiv.org/html/2505.09388v1
 - Qwen3-4B en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-4B

@@ -61,7 +61,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/vikram2xx7/Qwen3-4B-Instruct-2507-model2)
-- [Modelo base en HuggingFace](https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit) (inferido a partir del nombre, no verificado)
+- [Hugging Face del modelo](https://huggingface.co/vikram2xx7/Qwen3-4B-Instruct-2507-model2)
+- [Modelo base en Hugging Face](https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit) (inferido a partir del nombre, no verificado)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la información proporcionada.

@@ -94,8 +94,8 @@ La comparación indica que Lattice-5-Prometheus-v2 queda por debajo de modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Lattice-5-Prometheus-v2
-- Organización DuoNeural en HuggingFace: https://huggingface.co/DuoNeural
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Lattice-5-Prometheus-v2
+- Organización DuoNeural en Hugging Face: https://huggingface.co/DuoNeural
 - Repositorio de código: https://github.com/DuoNeural/Lattice-CDM
 - Sitio web del autor: https://duoneural.com
 - Framework original Competitive Docking Memory (Zenodo): doi:10.5281/zenodo.21158430

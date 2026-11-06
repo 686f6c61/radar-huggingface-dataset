@@ -102,7 +102,7 @@ Comparativa en rendimiento numerico con alternativas: no disponible. No se han p
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Athekunal/llada-moe-7b-hindi-cot-translator-dinfer
+- Hugging Face del modelo: https://huggingface.co/Athekunal/llada-moe-7b-hindi-cot-translator-dinfer
 - Modelo base: https://huggingface.co/inclusionAI/LLaDA-MoE-7B-A1B-Instruct
 - Dataset de ajuste fino: https://huggingface.co/datasets/Athekunal/english-hindi-reasoning-dataset
 - Repositorio dInfer: https://github.com/inclusionAI/dInfer

@@ -90,6 +90,6 @@ La comparacion directa con otros modelos especializados en domotica no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaTa31/moli-home-1.7b-v4
+- Modelo en Hugging Face: https://huggingface.co/MaTa31/moli-home-1.7b-v4
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio Moli OS: https://github.com/rudy-io/moli-os

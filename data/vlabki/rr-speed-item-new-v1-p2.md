@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vlabki/rr-speed-item-new-v1-p2 | 615.374 | no aplica | Recurrent PPO | no disponible | HuggingFace |
-| vlabki/rr-speed-item-v1 | no disponible (repo ~5,94 MB) | no aplica | Recurrent PPO (similar) | no disponible | HuggingFace |
+| vlabki/rr-speed-item-new-v1-p2 | 615.374 | no aplica | Recurrent PPO | no disponible | Hugging Face |
+| vlabki/rr-speed-item-v1 | no disponible (repo ~5,94 MB) | no aplica | Recurrent PPO (similar) | no disponible | Hugging Face |
 
 No se dispone de otros modelos comparables en la misma categoría (agentes de RL para Mario Kart Wii) en la información proporcionada. El modelo `rr-speed-item-v1` es una versión anterior del mismo autor, pero no se han publicado especificaciones detalladas ni resultados que permitan una comparación cuantitativa.
 
@@ -74,6 +74,6 @@ No se dispone de otros modelos comparables en la misma categoría (agentes de RL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vlabki/rr-speed-item-new-v1-p2
+- Modelo en Hugging Face: https://huggingface.co/vlabki/rr-speed-item-new-v1-p2
 - Modelo anterior del mismo autor: https://huggingface.co/vlabki/rr-speed-item-v1
 - Repositorio del modelo anterior (árbol de archivos): https://huggingface.co/vlabki/rr-speed-item-v1/tree/main

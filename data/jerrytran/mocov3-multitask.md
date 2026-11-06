@@ -64,12 +64,12 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 - **Riesgo de alucinación**: no aplica, ya que no genera contenido.
 - **Limitaciones de contexto e idioma**: no se especifican, pero al no estar entrenado, no hay soporte real.
 - **Restricciones de licencia**: BSD-3-Clause permite uso comercial y modificación, pero exige conservar el aviso de copyright. Además, el autor recomienda revisar los términos de los datos externos si se usan con otros datasets.
-- **Carga compleja**: requiere un adaptador explícito; las APIs genéricas de HuggingFace no funcionarán directamente.
+- **Carga compleja**: requiere un adaptador explícito; las APIs genéricas de Hugging Face no funcionarán directamente.
 - **Resultados no reproducibles sin configuración completa**: cualquier evaluación futura debe documentar logs de entrenamiento, versiones de entorno y semillas.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/jerrytran/mocov3-multitask)
+- [Repositorio en Hugging Face](https://huggingface.co/jerrytran/mocov3-multitask)
 - [Documentación de MoCoV3 en MMPretrain](https://mmpretrain.readthedocs.io/en/latest/papers/mocov3.html)
 - [Clase MoCoV3 en MMPretrain](https://mmpretrain.readthedocs.io/en/latest/api/generated/mmpretrain.models.selfsup.MoCoV3.html)
 - [Documentación de MoCo v3 en MMSelfSup](https://mmselfsup.readthedocs.io/en/latest/papers/mocov3.html)

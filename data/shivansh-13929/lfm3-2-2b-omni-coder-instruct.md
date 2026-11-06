@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-2.2B-Omni-Coder-Instruct es un modelo publicado en HuggingFace por el usuario Shivansh-13929 bajo licencia GPL-3.0. Por el nombre se deduce que se trata de un modelo de la familia LFM3 (presumiblemente derivada de los modelos Liquid Foundation Models de Liquid AI) con aproximadamente 2.200 millones de parámetros, orientado a tareas de código ("Coder") y ajustado para seguir instrucciones ("Instruct"), con una supuesta orientación "Omni" que podría implicar capacidades multimodales. No obstante, esta información no está confirmada en la model card disponible.
+LFM3-2.2B-Omni-Coder-Instruct es un modelo publicado en Hugging Face por el usuario Shivansh-13929 bajo licencia GPL-3.0. Por el nombre se deduce que se trata de un modelo de la familia LFM3 (presumiblemente derivada de los modelos Liquid Foundation Models de Liquid AI) con aproximadamente 2.200 millones de parámetros, orientado a tareas de código ("Coder") y ajustado para seguir instrucciones ("Instruct"), con una supuesta orientación "Omni" que podría implicar capacidades multimodales. No obstante, esta información no está confirmada en la model card disponible.
 
 La model card publicada es prácticamente vacía: únicamente incluye la declaración de licencia GPL-3.0, sin descripción, sin especificaciones técnicas, sin datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones, y no se han publicado resultados de benchmarks ni documentación adicional. Se trata, por tanto, de una publicación reciente y sin validación por parte de la comunidad.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-2.2B-Omni-Coder-Instruct | 2.2B (según nombre) | no disponible | GPL-3.0 | Prácticamente inexistente | HuggingFace, sin descargas |
+| LFM3-2.2B-Omni-Coder-Instruct | 2.2B (según nombre) | no disponible | GPL-3.0 | Prácticamente inexistente | Hugging Face, sin descargas |
 | Alternativas de la familia LFM3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros modelos coder de ~2-3B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,5 +84,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: Shivansh-13929/LFM3-2.2B-Omni-Coder-Instruct](https://huggingface.co/Shivansh-13929/LFM3-2.2B-Omni-Coder-Instruct)
+- [Hugging Face: Shivansh-13929/LFM3-2.2B-Omni-Coder-Instruct](https://huggingface.co/Shivansh-13929/LFM3-2.2B-Omni-Coder-Instruct)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

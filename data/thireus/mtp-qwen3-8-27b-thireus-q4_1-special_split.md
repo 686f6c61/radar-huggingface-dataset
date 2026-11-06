@@ -74,8 +74,8 @@ No se dispone de datos comparativos con otras cuantizaciones del mismo modelo o 
 
 ## Enlaces
 
-- [HuggingFace - Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_1-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_1-SPECIAL_SPLIT)
-- [HuggingFace - Variante BF16 del mismo modelo](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT)
+- [Hugging Face - Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_1-SPECIAL_SPLIT](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_1-SPECIAL_SPLIT)
+- [Hugging Face - Variante BF16 del mismo modelo](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT)
 - [Yottalabs - Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)](https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026)
 - [Swfte - Qwen3.8-27B: The Version You Can Actually Run, and How to Prepare For...](https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026)
 - [Thireus' Model Collection](https://gguf.thireus.com/)

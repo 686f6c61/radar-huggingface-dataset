@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno Taxi-v4 de Gymnasium (la versión evolucionada del clásico Taxi de Toy Text). Lo publica el usuario itsaysouvyk en HuggingFace y el artefacto principal es un fichero serializado `q-learning.pkl` que contiene la tabla Q aprendida junto con metadatos del entorno, como el identificador `env_id`. No es un modelo de lenguaje ni una red neuronal profunda: es una politica discreta que asigna una accion optima a cada uno de los 500 estados del entorno.
+q-Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno Taxi-v4 de Gymnasium (la versión evolucionada del clásico Taxi de Toy Text). Lo publica el usuario itsaysouvyk en Hugging Face y el artefacto principal es un fichero serializado `q-learning.pkl` que contiene la tabla Q aprendida junto con metadatos del entorno, como el identificador `env_id`. No es un modelo de lenguaje ni una red neuronal profunda: es una politica discreta que asigna una accion optima a cada uno de los 500 estados del entorno.
 
 El problema que resuelve es el clasico de planificacion discreta: recoger un pasajero en una de cuatro localizaciones y dejarlo en su destino, gestionando un deposito de combustible implicito y recompensas negativas por cada paso. Taxi-v4 tiene un espacio de estados de 500 elementos y seis acciones posibles, por lo que la tabla Q es completamente tratable y el entrenamiento converge en minutos en CPU.
 
@@ -71,7 +71,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Alternativa | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| q-Taxi-v4 (este modelo) | Q-Learning tabular | no disponible | no aplicable | mean_reward 7.54 +/- 2.73 en Taxi-v4 | no disponible | HuggingFace, 0 descargas |
+| q-Taxi-v4 (este modelo) | Q-Learning tabular | no disponible | no aplicable | mean_reward 7.54 +/- 2.73 en Taxi-v4 | no disponible | Hugging Face, 0 descargas |
 | Implementaciones de Q-Learning tabular de stable-baselines3 | Q-Learning tabular | no aplicable | no aplicable | no disponible en la informacion proporcionada | MIT (la libreria; no la politica entrenada) | Repositorio publico |
 | Agentes DQN sobre Taxi-v4 (stable-baselines3 u otras librerias) | Deep RL con aproximacion de funcion | depende de la red (tipicamente decenas de miles) | no aplicable | no disponible en la informacion proporcionada | depende de la implementacion | Repositorios publicos |
 | SARSA tabular sobre Taxi-v4 | Control on-policy tabular | no aplicable | no aplicable | no disponible en la informacion proporcionada | no disponible | Implementaciones dispersas |
@@ -93,7 +93,7 @@ No se dispone de resultados numericos comparativos publicados para estas alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsaysouvyk/q-Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/itsaysouvyk/q-Taxi-v4
 - Entorno Taxi-v4 en la documentacion de Gymnasium: https://gymnasium.farama.org/environments/toy_text/taxi/
 - Repositorio de Gymnasium: https://github.com/Farama-Foundation/Gymnasium
 - Documentacion de Q-Learning en la libreria stable-baselines3: https://stable-baselines3.readthedocs.io/

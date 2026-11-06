@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Metel-QV0.29-27B es una compresion experimental de precision ultra baja del modelo Qwen/Qwen3.8-27B, publicada por el usuario dharun2049 en HuggingFace. No se trata de un modelo entrenado desde cero ni de un ajuste fino, sino de una representacion alternativa de los pesos del modelo base: en lugar de almacenar cada peso en 16 bits (fp16) o en 4 bits (INT4/GPTQ), cada grupo de 32 pesos se sustituye por un indice de 9 bits sobre un codebook aprendido de 512 vectores quinarios, lo que da una tasa teorica de 0,289 bits por peso.
+Metel-QV0.29-27B es una compresion experimental de precision ultra baja del modelo Qwen/Qwen3.8-27B, publicada por el usuario dharun2049 en Hugging Face. No se trata de un modelo entrenado desde cero ni de un ajuste fino, sino de una representacion alternativa de los pesos del modelo base: en lugar de almacenar cada peso en 16 bits (fp16) o en 4 bits (INT4/GPTQ), cada grupo de 32 pesos se sustituye por un indice de 9 bits sobre un codebook aprendido de 512 vectores quinarios, lo que da una tasa teorica de 0,289 bits por peso.
 
 El problema que aborda es el coste de memoria y almacenamiento de los LLM de gran tamano: con esa tasa, el nucleo de los 27B parametros ocupa aproximadamente 1 GB, frente a unos 54 GB en fp16. El repositorio completo pesa 1,1 GB, lo que es coherente con esa cifra una vez anadidos codebooks, escalas, tensores en paso directo y metadatos. La relevancia actual del proyecto es que explora el regimen por debajo de 1 bit/peso, una frontera donde practicamente no existen recetas publicadas y verificadas como las que si hay en 8, 4 o 2 bits.
 
@@ -101,7 +101,7 @@ Comparativa con el modelo base: se desconoce la ficha tecnica de Qwen/Qwen3.8-27
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dharun2049/Metel-QV0.29-27B
+- Repositorio en Hugging Face: https://huggingface.co/dharun2049/Metel-QV0.29-27B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog tecnico, repositorio de codigo del decodificador QV0.29 y demos: no disponibles en la informacion proporcionada.
 - Resultados de busqueda web: no se encontro ningun enlace relevante; los resultados devueltos correspondian a servicios de seguimiento de vuelos, sin relacion con el modelo.

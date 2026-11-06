@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeiT para multitask es un repositorio de investigacion publicado por el usuario Timofeysmi en HuggingFace bajo el identificador `Timofeysmi/deit-multitask76-2024`. Se trata de una implementacion propia de un backbone DeiT (Data-efficient Image Transformer) configurado para un escenario multitask, con ajustes declarados de atencion dispersa, fusion bilineal, activacion ReLU y normalizacion GroupNorm. La escala declarada en la model card es "large", con receta de entrenamiento por defecto basada en el optimizador LAMB y planificador polinomial.
+DeiT para multitask es un repositorio de investigacion publicado por el usuario Timofeysmi en Hugging Face bajo el identificador `Timofeysmi/deit-multitask76-2024`. Se trata de una implementacion propia de un backbone DeiT (Data-efficient Image Transformer) configurado para un escenario multitask, con ajustes declarados de atencion dispersa, fusion bilineal, activacion ReLU y normalizacion GroupNorm. La escala declarada en la model card es "large", con receta de entrenamiento por defecto basada en el optimizador LAMB y planificador polinomial.
 
 El aspecto mas relevante —y tambien el mas limitante— es que el repositorio no contiene un modelo entrenado. El propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido unicamente para smoke tests, que no se presenta como checkpoint evaluado y que no se reclama ninguna puntuacion de benchmark. El repositorio se centra en codigo transparente y pruebas repetibles, no en resultados de rendimiento.
 
@@ -38,7 +38,7 @@ No hay datos de entrenamiento documentados: no se indica volumen de tokens, comp
 - No se declara soporte de agentes ni de razonamiento multi-paso.
 - No se declaran capacidades multilingues; al ser una arquitectura de vision, la nocion de idioma no aplica directamente.
 - No se documentan capacidades especiales (modo thinking, vision multimodal con texto, audio).
-- El autor advierte que, al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarse.
+- El autor advierte que, al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarse.
 
 ## Casos de uso
 
@@ -70,10 +70,10 @@ No hay datos de rendimiento de este repositorio que permitan una comparacion cua
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Timofeysmi/deit-multitask76-2024` | 24.832 (safetensors del repo) | No disponible | Sin benchmark declarado | BSD-3-Clause | HuggingFace, 0 descargas |
-| `facebook/deit-base-distilled-patch16-224` | ~86 M (referencia externa) | Imagen 224x224 | Resultados publicados en el paper DeiT | Apache-2.0 (segun su model card) | HuggingFace, ampliamente usado |
-| `facebook/deit-small-distilled-patch16-224` | ~22 M (referencia externa) | Imagen 224x224 | Resultados publicados en el paper DeiT | Apache-2.0 (segun su model card) | HuggingFace |
-| `google/vit-base-patch16-224` | ~86 M (referencia externa) | Imagen 224x224 | Resultados publicados en el paper ViT | Apache-2.0 (segun su model card) | HuggingFace |
+| `Timofeysmi/deit-multitask76-2024` | 24.832 (safetensors del repo) | No disponible | Sin benchmark declarado | BSD-3-Clause | Hugging Face, 0 descargas |
+| `facebook/deit-base-distilled-patch16-224` | ~86 M (referencia externa) | Imagen 224x224 | Resultados publicados en el paper DeiT | Apache-2.0 (segun su model card) | Hugging Face, ampliamente usado |
+| `facebook/deit-small-distilled-patch16-224` | ~22 M (referencia externa) | Imagen 224x224 | Resultados publicados en el paper DeiT | Apache-2.0 (segun su model card) | Hugging Face |
+| `google/vit-base-patch16-224` | ~86 M (referencia externa) | Imagen 224x224 | Resultados publicados en el paper ViT | Apache-2.0 (segun su model card) | Hugging Face |
 
 La diferencia fundamental no es de tamano sino de estado: los modelos de la comparativa son checkpoints entrenados y evaluados, mientras que este repositorio publica codigo y una inicializacion sin entrenar.
 
@@ -92,6 +92,6 @@ La diferencia fundamental no es de tamano sino de estado: los modelos de la comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Timofeysmi/deit-multitask76-2024
+- Hugging Face: https://huggingface.co/Timofeysmi/deit-multitask76-2024
 - No se han encontrado enlaces relevantes en la busqueda web realizada. Los resultados recuperados correspondian a sitios de encuestas electorales alemanas (wahlrecht.de) y no guardan ninguna relacion con el modelo, por lo que se omiten.
 - No se dispone de enlace a paper, blog tecnico, repositorio de codigo independiente ni demo asociados al modelo en la informacion proporcionada.

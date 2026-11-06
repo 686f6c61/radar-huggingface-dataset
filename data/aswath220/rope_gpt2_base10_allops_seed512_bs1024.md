@@ -6,7 +6,7 @@
 
 La relevancia del modelo es acotada y de carácter metodológico: sirve para evaluar si una codificación decimal explícita de los números permite a un transformer pequeño aprender aritmética exacta con operandos de tres cifras, en lugar de depender de tokenización BPE estándar. El nombre del repositorio indica los hiperparámetros del entrenamiento: semilla 512 y batch de 1024. El repositorio ocupa 18,6 GB, lo que sugiere la presencia de múltiples snapshots intermedios (por época y por paso) además de los pesos finales.
 
-No hay información pública sobre licencia, idiomas soportados ni pipeline de HuggingFace. El modelo no está pensado para uso en producción ni para tareas de lenguaje natural; su valor está en la reproducibilidad del experimento y en el análisis de la representación numérica.
+No hay información pública sobre licencia, idiomas soportados ni pipeline de Hugging Face. El modelo no está pensado para uso en producción ni para tareas de lenguaje natural; su valor está en la reproducibilidad del experimento y en el análisis de la representación numérica.
 
 ## Especificaciones técnicas
 
@@ -75,6 +75,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [HuggingFace: Aswath220/rope_gpt2_base10_allops_seed512_bs1024](https://huggingface.co/Aswath220/rope_gpt2_base10_allops_seed512_bs1024)
+- [Hugging Face: Aswath220/rope_gpt2_base10_allops_seed512_bs1024](https://huggingface.co/Aswath220/rope_gpt2_base10_allops_seed512_bs1024)
 - Repositorio BitTokens, archivo `networks/rope_gpt2.py` en el commit `2a84bb1` (referenciado en la model card; no se proporciona URL directa)
 - Repositorio BitTokens, archivo `base10_embedding.py` (referenciado en la model card; no se proporciona URL directa)

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dcp-bar-onnx (este modelo) | Red de inpainting ONNX (DeepCreamPy v2 bar net) | Parche 256x256x3 + mascara | other (upstream sin licencia explicita) | HuggingFace (vadik82/dcp-bar-onnx) |
+| dcp-bar-onnx (este modelo) | Red de inpainting ONNX (DeepCreamPy v2 bar net) | Parche 256x256x3 + mascara | other (upstream sin licencia explicita) | Hugging Face (vadik82/dcp-bar-onnx) |
 | DeepCreamPy v2.2.0-beta (original) | Red de inpainting TensorFlow | Parche con mascara | Sin licencia explicita en el release | GitHub (Deepshift/DeepCreamPy) |
 | Modelos de inpainting genericos (LaMa, MAT) | Redes de inpainting modernas | Variable, mayor resolucion | Diversas | Repositorios publicos |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vadik82/dcp-bar-onnx
+- Hugging Face: https://huggingface.co/vadik82/dcp-bar-onnx
 - Repositorio upstream DeepCreamPy: https://github.com/Deepshift/DeepCreamPy
 - Release DeepCreamPy v2.2.0-beta (checkpoint "09-11-2019 DCPv2 model"): disponible dentro del repositorio de GitHub anterior
 - Herramienta de conversion `mangosh tools/convert-dcp-onnx.py`: no se proporciona URL en la informacion disponible

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-false_seed-456` es un modelo de desambiguacion del sentido de las palabras (word-sense disambiguation, WSD) en ucraniano, publicado por el usuario `yuriilaba` en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo de frases multilingue `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, que a su vez se construye sobre la arquitectura XLM-RoBERTa. El modelo tiene 278.043.648 parametros y un repositorio de 1,1 GB en formato safetensors.
+`yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-false_seed-456` es un modelo de desambiguacion del sentido de las palabras (word-sense disambiguation, WSD) en ucraniano, publicado por el usuario `yuriilaba` en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo de frases multilingue `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, que a su vez se construye sobre la arquitectura XLM-RoBERTa. El modelo tiene 278.043.648 parametros y un repositorio de 1,1 GB en formato safetensors.
 
 El modelo resuelve el problema de determinar que acepcion concreta tiene una palabra polisemica dentro de un contexto oracional, tarea central para la anotacion lexica, la construccion de corpus semanticos y el enriquecimiento de sistemas de busqueda o traduccion. Su relevancia es limitada y muy especializada: se trata de un artefacto de investigacion derivado de un experimento concreto (una variante de aumento de datos mediante traduccion inversa, sin pooling sobre el token objetivo y con semilla 456), no de un modelo de proposito general.
 
-La informacion publica es escasa. No se declara licencia, ni pipeline, ni lista de idiomas en los metadatos de HuggingFace. El unico respaldo cuantitativo son las metricas de evaluacion de la propia model card: una exactitud de WSD de 0,9221 y una correlacion STS de Pearson 0,8063 y Spearman 0,7955.
+La informacion publica es escasa. No se declara licencia, ni pipeline, ni lista de idiomas en los metadatos de Hugging Face. El unico respaldo cuantitativo son las metricas de evaluacion de la propia model card: una exactitud de WSD de 0,9221 y una correlacion STS de Pearson 0,8063 y Spearman 0,7955.
 
 ## Especificaciones tecnicas
 
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente. Modelos como RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sobradamente; en la mayoria de casos el modelo esta infrautilizado en GPUs de gama alta.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU consumer moderna e incluso en GPUs integradas con memoria compartida.
 - Ejecucion en CPU: viable. Con 278 millones de parametros la inferencia en CPU es lenta pero perfectamente utilizable para procesamiento por lotes offline.
-- Opciones de despliegue: la via natural es la libreria `sentence-transformers` sobre PyTorch o la libreria `transformers` de HuggingFace. Tambien es posible exportar a ONNX Runtime, TorchScript u otras herramientas de compilacion. No se recomienda vLLM, TGI ni llama.cpp, ya que estan orientados a modelos generativos de decoder y no a encoders de representacion.
+- Opciones de despliegue: la via natural es la libreria `sentence-transformers` sobre PyTorch o la libreria `transformers` de Hugging Face. Tambien es posible exportar a ONNX Runtime, TorchScript u otras herramientas de compilacion. No se recomienda vLLM, TGI ni llama.cpp, ya que estan orientados a modelos generativos de decoder y no a encoders de representacion.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de latencia ni de tokens por segundo. Al ser un encoder no generativo, el throughput se mide en oraciones procesadas por segundo por lote, metrica que el autor no facilita.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ucu-wsd-aug16-generation_back_translation_pt-false_seed-456` | 278 M | no disponible | WSD en ucraniano y embeddings de frase | no disponible | HuggingFace |
-| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` | ~278 M | hasta 512 tokens (arquitectura) | Embeddings de frase multilingues | Apache 2.0 (segun la fuente original) | HuggingFace, ampliamente usado |
-| `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` | ~118 M | hasta 512 tokens (arquitectura) | Embeddings de frase multilingues, version ligera | Apache 2.0 (segun la fuente original) | HuggingFace |
-| `sentence-transformers/LaBSE` | ~471 M | hasta 512 tokens (arquitectura) | Embeddings bilingues y multilingues | Apache 2.0 (segun la fuente original) | HuggingFace |
+| `ucu-wsd-aug16-generation_back_translation_pt-false_seed-456` | 278 M | no disponible | WSD en ucraniano y embeddings de frase | no disponible | Hugging Face |
+| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` | ~278 M | hasta 512 tokens (arquitectura) | Embeddings de frase multilingues | Apache 2.0 (segun la fuente original) | Hugging Face, ampliamente usado |
+| `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` | ~118 M | hasta 512 tokens (arquitectura) | Embeddings de frase multilingues, version ligera | Apache 2.0 (segun la fuente original) | Hugging Face |
+| `sentence-transformers/LaBSE` | ~471 M | hasta 512 tokens (arquitectura) | Embeddings bilingues y multilingues | Apache 2.0 (segun la fuente original) | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos directos entre estos modelos y el aqui descrito, mas alla de las metricas WSD y STS declaradas por el autor. La comparacion se limita a parametros, contexto y licencia; los datos de rendimiento relativo no estan disponibles.
 
@@ -85,14 +85,14 @@ No se dispone de resultados de benchmarks comparativos directos entre estos mode
 - Riesgo de alucinacion: bajo en el sentido generativo, porque el modelo no produce texto libre. El riesgo real es de asignacion erronea de sentido o de similitud semantica mal calibrada ante vocabulario fuera de dominio.
 - Limitaciones de contexto: no se ha confirmado la longitud de contexto efectiva tras el ajuste fino. La arquitectura XLM-RoBERTa admite hasta 512 tokens, pero la configuracion de sentence-transformers suele reducirla, y el autor no especifica el valor empleado.
 - Limitaciones de idioma: el ajuste fino se ha realizado sobre datos en ucraniano. Aunque el modelo base es multilingue, aplicar este checkpoint a otros idiomas sin validacion previa puede degradar gravemente el rendimiento.
-- Restricciones de licencia: la licencia no esta declarada en la ficha de HuggingFace, lo que impide confirmar si se permite el uso comercial. Antes de cualquier uso en produccion debe aclararse este punto con el autor.
+- Restricciones de licencia: la licencia no esta declarada en la ficha de Hugging Face, lo que impide confirmar si se permite el uso comercial. Antes de cualquier uso en produccion debe aclararse este punto con el autor.
 - Caveat de trazabilidad: los unicos datos de rendimiento proceden del propio autor y no han sido replicados por terceros. El modelo tiene 0 descargas y 0 me gusta en el momento de redactar esta ficha, por lo que carece de validacion externa.
 - Caveat de identificacion: el identificador incluye la cadena `aug16` y el nombre del fichero de entrenamiento menciona `16_samples`, lo que sugiere un conjunto de datos muy pequeno. Esto aumenta el riesgo de sobreajuste y de que las metricas no se generalicen.
 - Uso no previsto: el modelo no es un asistente conversacional ni un generador de codigo; no debe emplearse como sustituto de un LLM generativo.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-false_seed-456
+- Hugging Face del modelo: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-false_seed-456
 - Variante relacionada del mismo autor: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_pt-true_seed-42
 - Variante con nombre casi identico: https://huggingface.co/yuriilaba/ucu-wsd-generation_back_translation_pt-false_seed-456
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2

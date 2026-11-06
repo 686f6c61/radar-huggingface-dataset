@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`rafaelmrm/mobilevit-contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario rafaelmrm que implementa una arquitectura **MobileViT** orientada a aprendizaje contrastivo. El propio autor lo describe explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una **inicialización válida para pruebas de humo (smoke tests)**, no un modelo entrenado ni evaluado. La model card no reclama ninguna puntuación de benchmark, lo que sitúa el repositorio en la fase de andamiaje de código más que de artefacto listo para producción.
+`rafaelmrm/mobilevit-contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario rafaelmrm que implementa una arquitectura **MobileViT** orientada a aprendizaje contrastivo. El propio autor lo describe explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una **inicialización válida para pruebas de humo (smoke tests)**, no un modelo entrenado ni evaluado. La model card no reclama ninguna puntuación de benchmark, lo que sitúa el repositorio en la fase de andamiaje de código más que de artefacto listo para producción.
 
 El repositorio incluye `run.py` (implementación y punto de entrada ejecutable), `config.json` (configuración de arquitectura generada), `training_args.json` (receta de experimento por defecto) y el checkpoint en formato `safetensors`. No se especifica volumen de datos de entrenamiento, composición del dataset ni proceso de alineación (RLHF/DPO); de hecho, el autor indica que no se ha completado ningún entrenamiento.
 
-Su relevancia actual es limitada pero acotada: sirve como base reproducible para quien quiera experimentar con variantes de MobileViT en tareas contrastivas (por ejemplo, retrieval visual o alineación imagen-texto), siempre que aporte sus propios datos y ejecute el entrenamiento. Al estar bajo licencia Apache 2.0 y con implementación propia, es reutilizable, pero requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+Su relevancia actual es limitada pero acotada: sirve como base reproducible para quien quiera experimentar con variantes de MobileViT en tareas contrastivas (por ejemplo, retrieval visual o alineación imagen-texto), siempre que aporte sus propios datos y ejecute el entrenamiento. Al estar bajo licencia Apache 2.0 y con implementación propia, es reutilizable, pero requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -77,7 +77,7 @@ La información proporcionada no incluye comparaciones oficiales. Se ofrece una 
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rafaelmrm/mobilevit-contrastive | MobileViT para contraste | 16.576 (según safetensors) | no aplica (visión) | apache-2.0 | HuggingFace, checkpoint sin entrenar |
+| rafaelmrm/mobilevit-contrastive | MobileViT para contraste | 16.576 (según safetensors) | no aplica (visión) | apache-2.0 | Hugging Face, checkpoint sin entrenar |
 | MobileViT original (Apple) | MobileViT para clasificación de imagen | no disponible en esta ficha | no aplica (visión) | no disponible en esta ficha | publicación académica y pesos públicos |
 | MobileNetV3 | CNN eficiente para visión | no disponible en esta ficha | no aplica (visión) | no disponible en esta ficha | ampliamente distribuido |
 | EfficientNet | CNN escalada por compound scaling | no disponible en esta ficha | no aplica (visión) | no disponible en esta ficha | ampliamente distribuido |
@@ -97,6 +97,6 @@ Cualquier afirmación de superioridad o equivalencia de rendimiento carece de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafaelmrm/mobilevit-contrastive
+- Modelo en Hugging Face: https://huggingface.co/rafaelmrm/mobilevit-contrastive
 - Referencia de la arquitectura base MobileViT (Apple): https://arxiv.org/abs/2110.02178
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos correspondían a páginas de un servicio de streaming y no guardan relación con este repositorio.

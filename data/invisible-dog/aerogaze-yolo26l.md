@@ -82,7 +82,7 @@ No hay datos de benchmarks ni de parámetros publicados para este checkpoint, y 
 
 | Modelo | Categoria | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AeroGaze YOLO26-L L0 E50 | Detector YOLO26-L ajustado a 16 clases aereas | 1280 px, preprocesado rectangular | AGPL-3.0 | Checkpoint .pt en HuggingFace; codigo del proyecto en GitHub (MIT) |
+| AeroGaze YOLO26-L L0 E50 | Detector YOLO26-L ajustado a 16 clases aereas | 1280 px, preprocesado rectangular | AGPL-3.0 | Checkpoint .pt en Hugging Face; codigo del proyecto en GitHub (MIT) |
 | Otros modelos de la familia Ultralytics YOLO (v8, 11, 26) en variante L | Detector de objetos de proposito general | Configurable | AGPL-3.0 o licencia comercial de Ultralytics | Publicos, con pesos preentrenados |
 | Detectores aereos tipo DETR/RT-DETR ajustados | Detector transformer de una etapa | Configurable | Variable segun repositorio | Publicos |
 | Pesos preentrenados de YOLO26 del propio framework | Detector base antes del ajuste | Configurable | AGPL-3.0 | Publicos |
@@ -103,7 +103,7 @@ Rendimiento, parametros y contexto comparados: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Invisible-dog/aerogaze-yolo26l
+- Modelo en Hugging Face: https://huggingface.co/Invisible-dog/aerogaze-yolo26l
 - Repositorio del proyecto AeroGaze (control de cámara, memoria Kalman, tests y despliegue): https://github.com/Kevinsvip888/aerogaze-drone-flyby
 - Ultralytics (framework de entrenamiento y documentación): https://github.com/ultralytics/ultralytics
 - Paper o blog técnico del modelo: no disponible

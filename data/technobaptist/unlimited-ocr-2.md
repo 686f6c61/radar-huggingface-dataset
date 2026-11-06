@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unlimited OCR 2 es un modelo vision-lenguaje especializado en extracción de texto a partir de documentos, desarrollado por Baidu Inc. y publicado en HuggingFace bajo el identificador `TechnoBaptist/Unlimited-OCR-2` (repositorio oficial: `baidu/Unlimited-OCR-2`). Resuelve el problema del parseo de documentos de longitud arbitraria: frente a los modelos OCR tradicionales que degradan su rendimiento o agotan la memoria cuando el documento crece, este modelo introduce Sparse Reference Sliding Window Attention (SR-SWA), que acota la complejidad computacional a un conjunto fijo de referencias de trabajo.
+Unlimited OCR 2 es un modelo vision-lenguaje especializado en extracción de texto a partir de documentos, desarrollado por Baidu Inc. y publicado en Hugging Face bajo el identificador `TechnoBaptist/Unlimited-OCR-2` (repositorio oficial: `baidu/Unlimited-OCR-2`). Resuelve el problema del parseo de documentos de longitud arbitraria: frente a los modelos OCR tradicionales que degradan su rendimiento o agotan la memoria cuando el documento crece, este modelo introduce Sparse Reference Sliding Window Attention (SR-SWA), que acota la complejidad computacional a un conjunto fijo de referencias de trabajo.
 
 El modelo tiene 3.343.978.497 parámetros (aproximadamente 3,3 mil millones) y se distribuye en formato safetensors con un tamaño de repositorio de 6,9 GB. Su pipeline es `image-text-to-text` y está pensado para tareas de feature-extraction y OCR multilingüe. La innovación principal es el concepto de "unlimited-horizon parsing": la latencia de decodificación y el consumo de memoria se mantienen prácticamente constantes independientemente de la longitud del documento, eliminando el escalado cuadrático de la atención clásica.
 
@@ -72,8 +72,8 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unlimited OCR 2 | 3,3 B | Ventana finita con SR-SWA (horizonte ilimitado) | OCR vision-lenguaje con atención de ventana deslizante dispersa | MIT | HuggingFace, ModelScope, Baidu Cloud, SGLang, vLLM |
-| DeepSeek-OCR | No disponible | No disponible | OCR vision-lenguaje | No disponible | HuggingFace (referenciado como base de comparación por Baidu) |
+| Unlimited OCR 2 | 3,3 B | Ventana finita con SR-SWA (horizonte ilimitado) | OCR vision-lenguaje con atención de ventana deslizante dispersa | MIT | Hugging Face, ModelScope, Baidu Cloud, SGLang, vLLM |
+| DeepSeek-OCR | No disponible | No disponible | OCR vision-lenguaje | No disponible | Hugging Face (referenciado como base de comparación por Baidu) |
 | Unlimited OCR 1.0 | No disponible | No disponible | OCR vision-lenguaje | No disponible | GitHub (rama `UnlimitedOCR1.0`) |
 
 La información disponible no permite comparar cifras de rendimiento entre estos modelos; solo se indica que Unlimited OCR 2 busca superar a DeepSeek-OCR y a su propia versión 1.0.
@@ -91,11 +91,11 @@ La información disponible no permite comparar cifras de rendimiento entre estos
 
 ## Enlaces
 
-- [HuggingFace (copia consultada)](https://huggingface.co/TechnoBaptist/Unlimited-OCR-2)
-- [HuggingFace (repositorio oficial de Baidu)](https://huggingface.co/baidu/Unlimited-OCR-2)
+- [Hugging Face (copia consultada)](https://huggingface.co/TechnoBaptist/Unlimited-OCR-2)
+- [Hugging Face (repositorio oficial de Baidu)](https://huggingface.co/baidu/Unlimited-OCR-2)
 - [GitHub de Unlimited-OCR](https://github.com/baidu/Unlimited-OCR)
 - [Paper en arXiv](https://arxiv.org/abs/2606.23050)
-- [PDF del paper en HuggingFace](https://huggingface.co/baidu/Unlimited-OCR-2/blob/main/Unlimited-OCR-2.pdf)
+- [PDF del paper en Hugging Face](https://huggingface.co/baidu/Unlimited-OCR-2/blob/main/Unlimited-OCR-2.pdf)
 - [Demo en Hugging Face Spaces](https://huggingface.co/spaces/baidu/Unlimited-OCR)
 - [ModelScope](https://modelscope.cn/models/PaddlePaddle/Unlimited-OCR)
 - [Baidu Cloud OCR](https://cloud.baidu.com/doc/OCR/s/fmr1p39gb)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ddvd233/hb9b_general_specgap_ship_retrieval_websearch2_global_step_100` es un checkpoint de aprendizaje por refuerzo (RL) construido sobre `Qwen/Qwen3.5-9B`, publicado por el usuario `ddvd233` en HuggingFace. No se trata de un modelo de propósito general entrenado desde cero ni de un instruct model al uso, sino de un artefacto de investigación: los pesos son el volcado fusionado (merged) en safetensors bf16 de un checkpoint FSDP generado con `verl` en el paso global 100 del experimento `hb9b_general_specgap_ship_retrieval_websearch2`. El modelo tiene 9.409.813.744 parámetros y el repositorio ocupa 18,8 GB, coherente con pesos en bf16 sin cuantizar.
+`ddvd233/hb9b_general_specgap_ship_retrieval_websearch2_global_step_100` es un checkpoint de aprendizaje por refuerzo (RL) construido sobre `Qwen/Qwen3.5-9B`, publicado por el usuario `ddvd233` en Hugging Face. No se trata de un modelo de propósito general entrenado desde cero ni de un instruct model al uso, sino de un artefacto de investigación: los pesos son el volcado fusionado (merged) en safetensors bf16 de un checkpoint FSDP generado con `verl` en el paso global 100 del experimento `hb9b_general_specgap_ship_retrieval_websearch2`. El modelo tiene 9.409.813.744 parámetros y el repositorio ocupa 18,8 GB, coherente con pesos en bf16 sin cuantizar.
 
 El problema que aborda es de Evaluación y entrenamiento de agentes con herramientas: el brazo de RL se entrenó con acceso a herramientas de recuperación (retrieval) y búsqueda web, y con tareas escritas por modelos en lugar de por humanos. El autor indica explícitamente que el proponente se entrenó sobre una descripción de tarea que no nombra ningún benchmark concreto ("general bundle"), y que esta ejecución es una repetición de una anterior con la misma configuración salvo `save_freq`. Su relevancia es, por tanto, metodológica: sirve para estudiar cómo se comporta el RL con herramientas en dominios de conocimiento especializado y cómo de bien (o mal) generaliza cuando el objetivo del entrenamiento no menciona la evaluación final.
 
@@ -80,8 +80,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K u otros benchmarks esta
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hb9b_general_specgap_ship_retrieval_websearch2_global_step_100 | 9,41 B | no disponible | HealthBench Professional validation: 0,434 (in-loop, length-adjusted) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (base sin entrenar) | ~9 B | no disponible | HealthBench Professional validation: 0,301 | Apache-2.0 (segun el modelo base citado) | HuggingFace |
+| hb9b_general_specgap_ship_retrieval_websearch2_global_step_100 | 9,41 B | no disponible | HealthBench Professional validation: 0,434 (in-loop, length-adjusted) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (base sin entrenar) | ~9 B | no disponible | HealthBench Professional validation: 0,301 | Apache-2.0 (segun el modelo base citado) | Hugging Face |
 | Paso 185 de la misma ejecucion | 9,41 B | no disponible | HealthBench Professional validation: 0,397 | Apache-2.0 | No publicado como repositorio independiente en la informacion disponible |
 | Otros modelos comparables de ~9B | no disponible | no disponible | no disponible | no disponible | No se ha identificado una comparativa fiable en la informacion proporcionada |
 
@@ -103,7 +103,7 @@ La unica comparacion con datos verificables es contra el propio modelo base (`Qw
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddvd233/hb9b_general_specgap_ship_retrieval_websearch2_global_step_100
+- Modelo en Hugging Face: https://huggingface.co/ddvd233/hb9b_general_specgap_ship_retrieval_websearch2_global_step_100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog o repositorio del experimento: no disponible (el autor indica que la ejecucion no forma parte de ninguno de los dos papers y no enlaza ninguno)
 - Demo o espacio interactivo: no disponible

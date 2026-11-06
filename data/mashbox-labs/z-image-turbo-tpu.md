@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mashbox-labs/Z-Image-Turbo-TPU
+- Repositorio en Hugging Face: https://huggingface.co/mashbox-labs/Z-Image-Turbo-TPU
 - Modelo original: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo/tree/f332072aa78be7aecdf3ee76d5c247082da564a6
 - Lector BSHJ (código fuente): https://github.com/mashbox-labs/mashbox/blob/v0.1.10/src/mashbox/bshj.py
 - Repositorio GitHub del motor: https://github.com/mashbox-labs/mashbox

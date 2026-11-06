@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gobble-Prover-1.7B-GGUF es la versión cuantizada en formato GGUF del modelo Gobble-Prover-1.7B, un modelo especializado en demostración de teoremas en Lean 4. La cuantización la publica mradermacher, un autor conocido por convertir modelos de HuggingFace a GGUF para su uso con llama.cpp y herramientas compatibles. El modelo base procede de la cuenta anónima anonymous-submission-ICLR2027, lo que indica que se trata de un envío en revisión para ICLR 2027 cuya autoría aún no se ha hecho pública.
+Gobble-Prover-1.7B-GGUF es la versión cuantizada en formato GGUF del modelo Gobble-Prover-1.7B, un modelo especializado en demostración de teoremas en Lean 4. La cuantización la publica mradermacher, un autor conocido por convertir modelos de Hugging Face a GGUF para su uso con llama.cpp y herramientas compatibles. El modelo base procede de la cuenta anónima anonymous-submission-ICLR2027, lo que indica que se trata de un envío en revisión para ICLR 2027 cuya autoría aún no se ha hecho pública.
 
 El modelo está etiquetado con las categorías lean4 y theorem-proving, y declara soporte únicamente para inglés. Su tamaño real, según los pesos en safetensors del modelo base, es de 2.031.739.904 parámetros (unos 2,03 mil millones), una cifra superior a la que sugiere el nombre comercial "1.7B". Con ese tamaño, el modelo está pensado para ejecutarse en hardware de consumo, algo poco habitual en el ámbito de los demostradores automáticos de teoremas, donde predominan modelos de mayor tamaño.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha radica en que permite evaluar rápidamente una opci�
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base. La model card del repositorio cuantizado no describe la topología de la red, el número de capas, las dimensiones de las cabezas de atención ni si se emplea algún mecanismo alternativo al transformer estándar (MoE, SSM o híbridos). La etiqueta library_name: transformers indica únicamente compatibilidad con el ecosistema de HuggingFace, no una arquitectura concreta. Tampoco se documenta la longitud de contexto soportada.
+No se dispone de información sobre la arquitectura del modelo base. La model card del repositorio cuantizado no describe la topología de la red, el número de capas, las dimensiones de las cabezas de atención ni si se emplea algún mecanismo alternativo al transformer estándar (MoE, SSM o híbridos). La etiqueta library_name: transformers indica únicamente compatibilidad con el ecosistema de Hugging Face, no una arquitectura concreta. Tampoco se documenta la longitud de contexto soportada.
 
 Respecto al entrenamiento, no hay datos disponibles: se desconoce el volumen de tokens utilizados, la composición del corpus, si se aplicaron fases de ajuste supervisado, RLHF o DPO, y qué proporción de los datos corresponde a código Lean 4, a matemáticas formales o a texto general. Las únicas pistas son las etiquetas del repositorio (lean4, theorem-proving) y la naturaleza anónima del envío a ICLR 2027. No se documentan innovaciones técnicas como decodificación especulativa, atención lineal o mecanismos de búsqueda de pruebas integrados.
 

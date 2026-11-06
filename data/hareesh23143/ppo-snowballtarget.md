@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hareesh23143/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno SnowballTarget de Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica neuronal que mapea observaciones del entorno a acciones, publicada en formato de checkpoint de ML-Agents. El autor es el usuario de HuggingFace `hareesh23143` y el repositorio se creo el 30 de septiembre de 2026.
+`hareesh23143/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno SnowballTarget de Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica neuronal que mapea observaciones del entorno a acciones, publicada en formato de checkpoint de ML-Agents. El autor es el usuario de Hugging Face `hareesh23143` y el repositorio se creo el 30 de septiembre de 2026.
 
 El modelo resuelve exclusivamente la tarea definida en el entorno SnowballTarget y su unica metrica publicada es una recompensa media de 15,00 +/- 2,00, declarada por el autor y marcada como no verificada. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y no incluye informacion sobre arquitectura de red, hiperparametros de entrenamiento, numero de pasos ni configuracion del entrenamiento.
 
@@ -90,7 +90,7 @@ No se dispone de datos de recompensa, parametros ni contexto para las alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hareesh23143/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/hareesh23143/ppo-SnowballTarget
 - Replicacion `Lahariii/ppo-SnowballTarget`: https://huggingface.co/Lahariii/ppo-SnowballTarget
 - Replicacion `bunnyTech/ppo-SnowballTarget`: https://huggingface.co/bunnyTech/ppo-SnowballTarget
 - Repositorio `dhruvil122/SnowballTarget1---RL---UnityMLagents`: https://github.com/dhruvil122/SnowballTarget1---RL---UnityMLagents/blob/main/README.md

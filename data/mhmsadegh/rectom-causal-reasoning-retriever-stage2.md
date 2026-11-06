@@ -72,9 +72,9 @@ El modelo se compara directamente con dos modelos de retrieval de tamaño simila
 
 | Modelo | Parámetros | Contexto | MATCH@1 (en este benchmark) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| all-MiniLM-L6-v2 (congelado) | 22,7 M | 256 tokens | 0.057 | Apache 2.0 | HuggingFace |
-| BAAI/bge-small-en-v1.5 (congelado) | 33,4 M | 512 tokens | 0.075 | MIT | HuggingFace |
-| Este modelo (fine-tuned) | 33,36 M | no disponible | 0.113 | no disponible | HuggingFace |
+| all-MiniLM-L6-v2 (congelado) | 22,7 M | 256 tokens | 0.057 | Apache 2.0 | Hugging Face |
+| BAAI/bge-small-en-v1.5 (congelado) | 33,4 M | 512 tokens | 0.075 | MIT | Hugging Face |
+| Este modelo (fine-tuned) | 33,36 M | no disponible | 0.113 | no disponible | Hugging Face |
 
 El modelo fine-tuneado mejora claramente al base en el benchmark específico de RecToM, aunque los valores absolutos siguen siendo bajos, lo que sugiere que la tarea es difícil y que el modelo aún tiene margen de mejora.
 
@@ -90,7 +90,7 @@ El modelo fine-tuneado mejora claramente al base en el benchmark específico de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhmsadegh/rectom-causal-reasoning-retriever-stage2
+- Modelo en Hugging Face: https://huggingface.co/mhmsadegh/rectom-causal-reasoning-retriever-stage2
 - Repositorio del proyecto RecToM (benchmark y evaluación): https://github.com/CGCL-codes/RecToM
 - Paper relacionado sobre grafos causales y razonamiento (no específico de este modelo): https://arxiv.org/abs/2501.14892
 - Modelo piloto anterior (Stage 1): https://huggingface.co/mhmsadegh/rectom-causal-reasoning-retriever-pilot

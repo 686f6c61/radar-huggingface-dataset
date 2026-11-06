@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MicroscopyCLIP es un ajuste fino del modelo CLIP ViT-B/32 de OpenAI, publicado por el usuario SeriYann en HuggingFace. Se trata de un modelo de visión y lenguaje de doble codificador (dual encoder) orientado a la clasificación de imágenes de microscopía mediante zero-shot image classification, es decir, sin necesidad de reentrenar para cada nueva taxonomía de clases. El repositorio ocupa 0,6 GB y contiene pesos en formato safetensors con 151.277.312 parámetros, coherentes con la arquitectura del modelo base.
+MicroscopyCLIP es un ajuste fino del modelo CLIP ViT-B/32 de OpenAI, publicado por el usuario SeriYann en Hugging Face. Se trata de un modelo de visión y lenguaje de doble codificador (dual encoder) orientado a la clasificación de imágenes de microscopía mediante zero-shot image classification, es decir, sin necesidad de reentrenar para cada nueva taxonomía de clases. El repositorio ocupa 0,6 GB y contiene pesos en formato safetensors con 151.277.312 parámetros, coherentes con la arquitectura del modelo base.
 
 El modelo parte de `openai/clip-vit-base-patch32` y se ha sometido a un ajuste fino de todos los parámetros (full-parameter fine-tuning) sobre pares imagen-texto de microscopía, según la escasa model card publicada. No se documenta el volumen del dataset, su composición, el procedimiento de curación ni ninguna evaluación cuantitativa posterior al ajuste.
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en fp16/bf16: alrededor de 0,3 GB para los pesos, con margen amplio para lotes grandes en GPU de gama media.
 - GPU consumer compatibles: cualquier GPU con soporte CUDA y al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090). Tambien es viable en CPU para inferencia puntual, con latencia mayor.
 - GPU de datacenter: A100, H100 o L40S resultan sobredimensionadas para una sola inferencia, pero utiles para indexar cientos de miles de imagenes en paralelo con lotes grandes.
-- Opciones de despliegue: pipeline de `transformers` con `zero-shot-image-classification`, exportacion a ONNX con Optimum y ejecucion con ONNX Runtime o TensorRT, servidores tipo TorchServe o HuggingFace Inference Endpoints. `open_clip` puede cargar pesos compatibles de CLIP, aunque no hay confirmacion explicita de compatibilidad con este ajuste concreto. Ollama y llama.cpp estan orientados a modelos de lenguaje generativos y no aplican a esta arquitectura.
+- Opciones de despliegue: pipeline de `transformers` con `zero-shot-image-classification`, exportacion a ONNX con Optimum y ejecucion con ONNX Runtime o TensorRT, servidores tipo TorchServe o Hugging Face Inference Endpoints. `open_clip` puede cargar pesos compatibles de CLIP, aunque no hay confirmacion explicita de compatibilidad con este ajuste concreto. Ollama y llama.cpp estan orientados a modelos de lenguaje generativos y no aplican a esta arquitectura.
 - Latencia y throughput: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto de texto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MicroscopyCLIP | 151.277.312 | 77 tokens (heredado de CLIP ViT-B/32) | MIT | HuggingFace, 0 descargas, sin evaluacion publicada | Ajuste fino completo sobre pares imagen-texto de microscopia, dataset no documentado |
-| openai/clip-vit-base-patch32 | ~151 M | 77 tokens | MIT | HuggingFace, ampliamente usado | Modelo base sin ajuste de dominio; rendimiento generico en imagenes naturales |
-| BiomedCLIP | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Orientado a imagen medica general con encoder ViT-B/16; no se dispone de datos verificados en esta busqueda |
-| PLIP | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Ajuste de CLIP para patologia; referencia habitual en el mismo nicho |
+| MicroscopyCLIP | 151.277.312 | 77 tokens (heredado de CLIP ViT-B/32) | MIT | Hugging Face, 0 descargas, sin evaluacion publicada | Ajuste fino completo sobre pares imagen-texto de microscopia, dataset no documentado |
+| openai/clip-vit-base-patch32 | ~151 M | 77 tokens | MIT | Hugging Face, ampliamente usado | Modelo base sin ajuste de dominio; rendimiento generico en imagenes naturales |
+| BiomedCLIP | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Orientado a imagen medica general con encoder ViT-B/16; no se dispone de datos verificados en esta busqueda |
+| PLIP | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Ajuste de CLIP para patologia; referencia habitual en el mismo nicho |
 
 Los datos de los modelos alternativos no se han verificado en esta busqueda y se marcan como no disponibles para evitar afirmaciones sin respaldo.
 
@@ -95,7 +95,7 @@ Los datos de los modelos alternativos no se han verificado en esta busqueda y se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeriYann/MicroscopyCLIP
+- Modelo en Hugging Face: https://huggingface.co/SeriYann/MicroscopyCLIP
 - Modelo base: https://huggingface.co/openai/clip-vit-base-patch32
 - Paper original de CLIP (referencia del modelo base): https://arxiv.org/abs/2103.00020
 - Repositorio open_clip: https://github.com/mlfoundations/open_clip

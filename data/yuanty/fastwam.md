@@ -4,7 +4,7 @@
 
 Fast-WAM es un modelo de acción-mundo (World Action Model, WAM) para control robótico encarnado, desarrollado por Tianyuan Yuan, Zibin Dong, Yicheng Liu y Hang Zhao. El modelo aborda una pregunta central: ¿necesitan los WAMs imaginar el futuro en tiempo de inferencia para ejecutar acciones correctamente, o basta con modelar la dinámica visual durante el entrenamiento? Fast-WAM propone una respuesta práctica: preserva la supervisión del modelo de mundo durante el entrenamiento, pero en inferencia utiliza una interfaz de política directa que predice acciones a partir de la observación actual, sin necesidad de denoising iterativo de vídeo. Esto reduce significativamente la latencia en comparación con los WAMs tradicionales de "imaginar y luego ejecutar".
 
-El repositorio en HuggingFace incluye tres checkpoints oficiales: dos para el benchmark LIBERO (uno base y uno con la variante Optional IDM) y uno para RoboTwin. El checkpoint Optional IDM permite dos modos de inferencia en un mismo modelo: `idm`, que primero imagina el vídeo futuro y luego predice acciones, y `first_frame`, que predice acciones directamente. En el benchmark completo de LIBERO (40 tareas, 50 episodios por tarea), el modo IDM alcanza un 98.55% de éxito medio, mientras que el modo first_frame logra un 97.75%, demostrando que la imaginación explícita aporta una mejora marginal pero no imprescindible.
+El repositorio en Hugging Face incluye tres checkpoints oficiales: dos para el benchmark LIBERO (uno base y uno con la variante Optional IDM) y uno para RoboTwin. El checkpoint Optional IDM permite dos modos de inferencia en un mismo modelo: `idm`, que primero imagina el vídeo futuro y luego predice acciones, y `first_frame`, que predice acciones directamente. En el benchmark completo de LIBERO (40 tareas, 50 episodios por tarea), el modo IDM alcanza un 98.55% de éxito medio, mientras que el modo first_frame logra un 97.75%, demostrando que la imaginación explícita aporta una mejora marginal pero no imprescindible.
 
 El tamaño del repositorio es de 36.1 GB, lo que indica pesos de considerable magnitud, aunque no se detalla el número exacto de parámetros. El modelo está diseñado para entornos de simulación robótica como LIBERO y RoboTwin, y su código de entrenamiento y evaluación está disponible en GitHub.
 
@@ -81,7 +81,7 @@ No se dispone de datos comparativos con otros WAMs o VLA en la información prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuanty/fastwam
+- Hugging Face: https://huggingface.co/yuanty/fastwam
 - Paper (arXiv): https://arxiv.org/abs/2603.16666
 - Página del proyecto: https://yuantianyuan01.github.io/FastWAM/
 - Código (GitHub): https://github.com/yuantianyuan01/FastWAM

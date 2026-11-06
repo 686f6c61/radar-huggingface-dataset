@@ -25,14 +25,14 @@ La arquitectura es un MAE (Masked Autoencoder) adaptado para clasificación, con
 
 - Clasificación: el modelo está diseñado para tareas de clasificación, aunque al no estar entrenado no puede realizar ninguna tarea real.
 - Implementación reproducible: incluye `inference.py` con un ejemplo ejecutable y pruebas de humo.
-- Personalización: al ser una implementación propia, requiere un adaptador explícito para cargarlo con APIs genéricas de HuggingFace.
+- Personalización: al ser una implementación propia, requiere un adaptador explícito para cargarlo con APIs genéricas de Hugging Face.
 - Sin capacidades de generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes ni multilingüismo: no hay evidencia de que las posea.
 
 ## Casos de uso
 
 - Investigación académica sobre arquitecturas MAE: el modelo sirve como base para estudiar el comportamiento de la atención dispersa y la co-atención en tareas de clasificación, permitiendo reproducir experimentos con un coste computacional mínimo.
 - Pruebas de integración en pipelines de entrenamiento: al ser un checkpoint de inicialización, puede usarse para verificar que el flujo de entrenamiento (carga de datos, forward/backward, guardado de checkpoints) funciona correctamente antes de lanzar entrenamientos a gran escala.
-- Desarrollo de adaptadores para HuggingFace: dado que no es cargable con APIs genéricas, puede servir como caso de prueba para escribir adaptadores personalizados que permitan integrar arquitecturas no estándar en el ecosistema.
+- Desarrollo de adaptadores para Hugging Face: dado que no es cargable con APIs genéricas, puede servir como caso de prueba para escribir adaptadores personalizados que permitan integrar arquitecturas no estándar en el ecosistema.
 - Educación en autoencoders enmascarados: su pequeño tamaño (16k parámetros) lo hace adecuado para demostraciones didácticas de cómo funciona un MAE, sin necesidad de hardware potente.
 - Comparación de normalizaciones y activaciones: al usar ScaleNorm y swish, puede emplearse para estudiar el efecto de estas elecciones en el entrenamiento de modelos pequeños.
 - Validación de configuraciones de entrenamiento: el `training_args.json` y `config.json` permiten reproducir recetas experimentales y comprobar su estabilidad con diferentes semillas.
@@ -57,11 +57,11 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; es un punto de partida experimental.
 - No se puede utilizar para ninguna tarea real de clasificación sin un entrenamiento previo completo.
-- La implementación es personalizada y no compatible con las APIs genéricas de HuggingFace; requiere un adaptador explícito.
+- La implementación es personalizada y no compatible con las APIs genéricas de Hugging Face; requiere un adaptador explícito.
 - No hay información sobre sesgos, alucinaciones o limitaciones de contexto porque el modelo no produce texto.
 - La licencia BSD-3-Clause permite uso comercial, pero se debe revisar los términos de los datos externos si se usan con conjuntos de datos propios.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/abdulrahmanalsubaie/mae-classification)
+- [Repositorio en Hugging Face](https://huggingface.co/abdulrahmanalsubaie/mae-classification)

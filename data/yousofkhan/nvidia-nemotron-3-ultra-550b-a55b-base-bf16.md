@@ -6,7 +6,7 @@ NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16 es un modelo de lenguaje de gran esc
 
 El modelo cuenta con 560.524.578.816 parámetros totales según los pesos en safetensors (aproximadamente 550B según la nomenclatura comercial) y 55B parámetros activos por token, lo que lo sitúa en la categoría de modelos MoE de gran escala con un coste de inferencia muy inferior al de un modelo denso equivalente. Incorpora una receta de preentrenamiento en NVFP4 para maximizar la eficiencia de cómputo y declara soporte para doce idiomas, entre ellos el español.
 
-Su relevancia actual radica en la combinación de contexto largo (con resultados publicados en RULER hasta 1M de tokens), arquitectura híbrida Mamba-2/MoE, decodificación acelerada mediante MTP y una licencia permisiva para uso comercial. El repositorio de HuggingFace analizado es un espejo publicado por el usuario Yousofkhan con pesos en BF16 y un tamaño de repositorio de 1121,1 GB.
+Su relevancia actual radica en la combinación de contexto largo (con resultados publicados en RULER hasta 1M de tokens), arquitectura híbrida Mamba-2/MoE, decodificación acelerada mediante MTP y una licencia permisiva para uso comercial. El repositorio de Hugging Face analizado es un espejo publicado por el usuario Yousofkhan con pesos en BF16 y un tamaño de repositorio de 1121,1 GB.
 
 ## Especificaciones tecnicas
 
@@ -89,11 +89,11 @@ Resultados publicados en la model card (modelo Base, comparado con DeepSeek-V3.2
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3-Ultra-550B-A55B-Base | 560,5B | 55B | No disponible explícito; RULER hasta 1M | OpenMDW-1.1 | Pesos abiertos en HuggingFace |
-| DeepSeek-V3.2-Exp-Base | No disponible | No disponible | No disponible | No disponible | Pesos abiertos en HuggingFace |
-| Mistral-Large-3-675B-Base-2512 | 675B (según nombre) | No disponible | No disponible | No disponible | Pesos abiertos en HuggingFace |
-| Kimi-K2-Base | No disponible | No disponible | No disponible | No disponible | Pesos abiertos en HuggingFace |
-| GLM-4.5-Base | No disponible | No disponible | No disponible | No disponible | Pesos abiertos en HuggingFace |
+| Nemotron-3-Ultra-550B-A55B-Base | 560,5B | 55B | No disponible explícito; RULER hasta 1M | OpenMDW-1.1 | Pesos abiertos en Hugging Face |
+| DeepSeek-V3.2-Exp-Base | No disponible | No disponible | No disponible | No disponible | Pesos abiertos en Hugging Face |
+| Mistral-Large-3-675B-Base-2512 | 675B (según nombre) | No disponible | No disponible | No disponible | Pesos abiertos en Hugging Face |
+| Kimi-K2-Base | No disponible | No disponible | No disponible | No disponible | Pesos abiertos en Hugging Face |
+| GLM-4.5-Base | No disponible | No disponible | No disponible | No disponible | Pesos abiertos en Hugging Face |
 
 En rendimiento, Nemotron-3-Ultra lidera en MMLU, MMLU-Pro, AGIEval-En, GPQA, MATH, HumanEval, MBPP-Sanitized, MMLU Global Lite, MGSM y todas las evaluaciones RULER publicadas, mientras que Mistral-Large-3 y Kimi-K2 superan en GSM8K y algunos tests de sentido común (WinoGrande, PIQA, OpenBookQA, RACE). Los datos de parámetros, contexto y licencia de los modelos comparados no están disponibles en la información proporcionada.
 
@@ -111,7 +111,7 @@ En rendimiento, Nemotron-3-Ultra lidera en MMLU, MMLU-Pro, AGIEval-En, GPQA, MAT
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/Yousofkhan/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16
+- Repositorio Hugging Face analizado: https://huggingface.co/Yousofkhan/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16
 - Informe técnico: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf
 - Datasets de preentrenamiento: https://huggingface.co/collections/nvidia/nemotron-pre-training-datasets
 - Página de desarrollador de Nemotron: https://developer.nvidia.com/nemotron

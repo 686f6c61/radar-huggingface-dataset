@@ -104,7 +104,7 @@ La comparativa relevante no es de calidad bruta, sino de formato de ejecución: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfwnotops/Qwen2.5-1.5B-Instruct-HCGM
+- Modelo en Hugging Face: https://huggingface.co/tfwnotops/Qwen2.5-1.5B-Instruct-HCGM
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Licencia del bundle: https://huggingface.co/tfwnotops/Qwen2.5-1.5B-Instruct-HCGM/blob/main/LICENSE
 - Paper HCGM: https://doi.org/10.13140/RG.2.2.28206.68167

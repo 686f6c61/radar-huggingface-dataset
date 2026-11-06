@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene la conversión a formato RKLLM del modelo `guoxuter/ov_intent_analysis_sft`, un fine-tune de Qwen3.5-0.8B desarrollado por el equipo de OpenViking para el análisis de intención y la planificación de consultas en sistemas de recuperación aumentada (RAG). El modelo original se distribuye como safetensors de HuggingFace, pero para ejecutarlo en el NPU del SoC Rockchip RK3588 es necesario convertirlo al formato `.rkllm` mediante la herramienta `rkllm-toolkit`, que solo está disponible para arquitectura x86_64. Este repositorio ofrece esa conversión ya realizada, con cuantización W8A8, contexto máximo de 4096 tokens y uso de los 3 núcleos NPU del RK3588.
+Este repositorio contiene la conversión a formato RKLLM del modelo `guoxuter/ov_intent_analysis_sft`, un fine-tune de Qwen3.5-0.8B desarrollado por el equipo de OpenViking para el análisis de intención y la planificación de consultas en sistemas de recuperación aumentada (RAG). El modelo original se distribuye como safetensors de Hugging Face, pero para ejecutarlo en el NPU del SoC Rockchip RK3588 es necesario convertirlo al formato `.rkllm` mediante la herramienta `rkllm-toolkit`, que solo está disponible para arquitectura x86_64. Este repositorio ofrece esa conversión ya realizada, con cuantización W8A8, contexto máximo de 4096 tokens y uso de los 3 núcleos NPU del RK3588.
 
 La relevancia de este modelo radica en que permite ejecutar un planificador de consultas especializado en hardware de bajo consumo y bajo coste, sin necesidad de GPU dedicada. El modelo decide si una consulta requiere recuperación de contexto, omite conversación trivial (chitchat) para no gastar tokens, y emite consultas estructuradas en JSON con los campos `skill`, `resource` y `memory`. Está pensado para integrarse como `query_planner` en el framework OpenViking, aunque puede usarse de forma independiente con cualquier servidor compatible con RKLLM.
 
@@ -86,7 +86,7 @@ No se dispone de una comparativa directa con otros modelos de la misma categorí
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/n8dgr8/ov_intent_analysis_sft-RKLLM-RK3588
+- Repositorio Hugging Face: https://huggingface.co/n8dgr8/ov_intent_analysis_sft-RKLLM-RK3588
 - Modelo base: https://huggingface.co/guoxuter/ov_intent_analysis_sft
 - Repositorio de Rockchip para RKLLM: https://github.com/airockchip/rknn-llm
 - Model zoo de Rockchip: https://github.com/airockchip/rknn_model_zoo

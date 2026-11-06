@@ -80,7 +80,7 @@ El modelo se distingue de sus bases por combinar razonamiento y contenido explic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IMUGLYHUH/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B
+- Repositorio Hugging Face: https://huggingface.co/IMUGLYHUH/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B
 - Modelo base DeepHermes: https://huggingface.co/NousResearch/DeepHermes-3-Llama-3-8B-Preview
 - Modelo base LewdPlay: https://huggingface.co/Undi95/Llama-3-LewdPlay-8B-evo
 - Variante similar de DavidAU: https://huggingface.co/DavidAU/L3.1-Dark-Reasoning-Unholy-Hermes-R1-Uncensored-8B

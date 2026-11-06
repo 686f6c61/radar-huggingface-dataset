@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BONAI (LOFT) es un modelo de extracción de huellas de edificios (*building footprint extraction*, BFE) en imágenes aéreas oblicuas (*off-nadir*), desarrollado por Jinwang Wang y colaboradores en el marco del proyecto BONAI y publicado en el artículo *Learning to Extract Building Footprints from Off-Nadir Aerial Images* (IEEE TPAMI, 2022). El repositorio de HuggingFace distribuye exclusivamente los pesos preentrenados oficiales del modelo LOFT: un único checkpoint de 651.220.024 bytes denominado `BONAI-LOFT-ROA-F1Score-64.31.pth`.
+BONAI (LOFT) es un modelo de extracción de huellas de edificios (*building footprint extraction*, BFE) en imágenes aéreas oblicuas (*off-nadir*), desarrollado por Jinwang Wang y colaboradores en el marco del proyecto BONAI y publicado en el artículo *Learning to Extract Building Footprints from Off-Nadir Aerial Images* (IEEE TPAMI, 2022). El repositorio de Hugging Face distribuye exclusivamente los pesos preentrenados oficiales del modelo LOFT: un único checkpoint de 651.220.024 bytes denominado `BONAI-LOFT-ROA-F1Score-64.31.pth`.
 
 El problema que resuelve es específico del ámbito de la teledetección: en imágenes aéreas tomadas con inclinación (no cenitales), el techo del edificio aparece desplazado respecto a su huella real en el suelo. LOFT aprende a extraer simultáneamente el contorno del techo y la huella proyectada, aprovechando el vector de desplazamiento (*offset*) anotado para cada instancia. Se entrenó sobre el conjunto de datos BONAI, compuesto por 3.300 imágenes aéreas de seis ciudades chinas (Shanghái, Pekín, Harbin, Jinan, Chengdu y Xi'an) con 268.958 instancias de edificios anotadas a nivel de instancia.
 
@@ -23,7 +23,7 @@ Es relevante porque aborda un sesgo sistemático que degrada los métodos conven
 
 ## Arquitectura y entrenamiento
 
-La información disponible no desglosa la topología interna del modelo LOFT más allá de indicar que se implementa en la base de código oficial basada en MMDetection, orientada a detección y segmentación de instancias con PyTorch. El pipeline declarado en HuggingFace es `object-detection`, con etiquetas adicionales de `instance-segmentation` y `remote-sensing`.
+La información disponible no desglosa la topología interna del modelo LOFT más allá de indicar que se implementa en la base de código oficial basada en MMDetection, orientada a detección y segmentación de instancias con PyTorch. El pipeline declarado en Hugging Face es `object-detection`, con etiquetas adicionales de `instance-segmentation` y `remote-sensing`.
 
 El entrenamiento se realizó sobre el conjunto de datos BONAI, que contiene 268.958 instancias de edificios distribuidas en 3.300 imágenes aéreas oblicuas de seis ciudades chinas. Cada edificio cuenta con anotación a nivel de instancia del techo y de la huella, además del vector de desplazamiento correspondiente. No se especifican en la información proporcionada el número de tokens (no aplica), el número de iteraciones, la composición exacta del dataset más allá de su procedencia geográfica, ni si se aplicaron técnicas de ajuste como RLHF o DPO (no aplicables a este dominio). La innovación técnica destacable es el propio objetivo de aprendizaje: modelar la relación entre techo y huella a partir de imágenes no cenitales, en lugar de asumir una proyección vertical como hacen los enfoques convencionales.
 
@@ -92,7 +92,7 @@ Las líneas base genéricas no modelan explícitamente el desplazamiento entre t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jwwangchn/BONAI
+- Modelo en Hugging Face: https://huggingface.co/jwwangchn/BONAI
 - Dataset BONAI: https://huggingface.co/datasets/jwwangchn/BONAI
 - Repositorio de código oficial: https://github.com/jwwangchn/BONAI
 - Artículo (arXiv): https://arxiv.org/abs/2204.13637

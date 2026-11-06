@@ -80,8 +80,8 @@ La model card menciona una sección titulada "Independent Benchmark of the APEX-
 
 | Modelo | Parámetros | Contexto | Tamaño de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cyber-Tiel-Coder-35B-A3B APEX-I-MiniPlus V2.1 | 35B totales / ~3B activos | 256K | 15,23 GB / 3,43 BPW | MIT | GGUF en HuggingFace |
-| Cyber-Tiel-Coder-35B-A3B APEX-I-NanoPlus | 35B totales / ~3B activos | 256K (declarado en la misma familia) | 12,55 GB / ~2,93 BPW | MIT | GGUF en HuggingFace |
+| Cyber-Tiel-Coder-35B-A3B APEX-I-MiniPlus V2.1 | 35B totales / ~3B activos | 256K | 15,23 GB / 3,43 BPW | MIT | GGUF en Hugging Face |
+| Cyber-Tiel-Coder-35B-A3B APEX-I-NanoPlus | 35B totales / ~3B activos | 256K (declarado en la misma familia) | 12,55 GB / ~2,93 BPW | MIT | GGUF en Hugging Face |
 | Huihui-Ornith-1.5-35B-A3B-abliterated (base) | 35B totales / ~3B activos | No disponible | 71,05 GB en BF16 | MIT (según el repositorio derivado) | Pesos sin cuantizar |
 | Otras cuantizaciones MoE de ~35B en el ecosistema (por ejemplo familias Qwen3 MoE de tamaño equivalente) | ~30-35B totales / ~3B activos | 128K-256K según variante | 12-20 GB en Q4/Q5 | MIT o Apache 2.0 según variante | Datos no verificados en la información disponible |
 
@@ -100,7 +100,7 @@ No se dispone de comparativas de rendimiento en benchmarks frente a alternativas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Cyber-Tiel-Coder-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Cyber-Tiel-Coder-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
 - Variante compacta APEX-I-NanoPlus: https://huggingface.co/IsValorum/Cyber-Tiel-Coder-35B-A3B-APEX-I-NanoPlus-GGUF
 - Modelo base (relación: quantized): huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated (URL no incluida en la información proporcionada)
 - Paper, blog o repositorio adicional: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-0731-REAP es una variante podada del modelo MoE DeepSeek-V4-Flash-0731, publicada por el usuario ioworker0 en HuggingFace. El modelo base, desarrollado por DeepSeek, es un mixture-of-experts de 284 B de parámetros totales con 13 B activos, optimizado para codificación, chat y flujos agénticos, con una ventana de contexto de 262 144 tokens y módulo de decodificación especulativa. Sobre la versión GGUF cuantizada UD-IQ1_S de unsloth, el autor aplica una técnica de poda de expertos denominada REAP, que reduce el número de expertos retenidos en las capas de router aprendido.
+DeepSeek-V4-Flash-0731-REAP es una variante podada del modelo MoE DeepSeek-V4-Flash-0731, publicada por el usuario ioworker0 en Hugging Face. El modelo base, desarrollado por DeepSeek, es un mixture-of-experts de 284 B de parámetros totales con 13 B activos, optimizado para codificación, chat y flujos agénticos, con una ventana de contexto de 262 144 tokens y módulo de decodificación especulativa. Sobre la versión GGUF cuantizada UD-IQ1_S de unsloth, el autor aplica una técnica de poda de expertos denominada REAP, que reduce el número de expertos retenidos en las capas de router aprendido.
 
 El resultado son tres variantes (K224, K192 y K160) que conservan 224, 192 o 160 expertos por capa aprendida, respectivamente, manteniendo los 256 expertos en las capas de routing hash protegidas (capas 0-2). El repositorio incluye los tres candidatos en formato GGUF, con un tamaño de almacenamiento que oscila entre 56 y 74 GB por variante. Se trata de una publicación exploratoria solicitada antes de completar la evaluación formal preregistrada Pi/SWE-Lancer, por lo que no constituye un resultado de aceptación oficial ni una demostración de mejora de calidad o velocidad.
 
@@ -16,7 +16,7 @@ El resultado son tres variantes (K224, K192 y K160) que conservan 224, 192 o 160
 | Longitud de contexto | 262 144 tokens (verificado en K192 y K224) |
 | Tipos de cuantizacion | UD-IQ1_S (cuantización base); caché K/V en Q8_0 durante la verificación |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (indicada en el repositorio de HuggingFace; no confirmada en la model card) |
+| Licencia | MIT (indicada en el repositorio de Hugging Face; no confirmada en la model card) |
 | Formato de pesos | GGUF (llama.cpp), en 3 archivos por variante |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ La comparativa se limita a los datos disponibles en la información proporcionad
 
 ## Limitaciones y advertencias
 
-- Publicación exploratoria: no es un resultado de `RTX_EXPERIMENT_PASSED` ni una aceptación formal de HuggingFace; la evaluación de calidad completa está pendiente.
+- Publicación exploratoria: no es un resultado de `RTX_EXPERIMENT_PASSED` ni una aceptación formal de Hugging Face; la evaluación de calidad completa está pendiente.
 - La poda puede degradar el rendimiento; no hay confirmación de paridad de logits entre la versión compacta y la máscara de runtime.
 - Requiere un patch específico de llama.cpp; no funciona con builds estándar sin aplicar `llama-cpp-deepseek4-per-layer-experts.patch`.
 - La variante K160 no ha recibido una prueba de carga real equivalente a K192 y K224.
@@ -80,7 +80,7 @@ La comparativa se limita a los datos disponibles en la información proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ioworker0/DeepSeek-V4-Flash-0731-REAP
+- Repositorio Hugging Face: https://huggingface.co/ioworker0/DeepSeek-V4-Flash-0731-REAP
 - Árbol de archivos: https://huggingface.co/ioworker0/DeepSeek-V4-Flash-0731-REAP/tree/main
 - NVIDIA NIM (modelo base): https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731
 - Fireworks AI (modelo base): https://fireworks.ai/models/deepseek-ai/deepseek-v4-flash-0731

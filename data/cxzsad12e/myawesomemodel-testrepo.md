@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario cxzsad12e en HuggingFace como un repositorio de prueba (test repo). Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. La tarjeta afirma que el modelo obtiene resultados destacados en evaluaciones de matemáticas, programación y lógica, acercándose al rendimiento de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario cxzsad12e en Hugging Face como un repositorio de prueba (test repo). Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. La tarjeta afirma que el modelo obtiene resultados destacados en evaluaciones de matemáticas, programación y lógica, acercándose al rendimiento de otros modelos líderes.
 
 Sin embargo, la información técnica disponible es extremadamente limitada: el repositorio tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que sugiere que no contiene pesos reales o que se trata de una prueba. No se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el formato de pesos. La model card menciona mejoras concretas como un aumento en la precisión en el test AIME 2025 (del 70% al 87.5%) y un mayor uso de tokens de razonamiento (de 12K a 23K por pregunta), pero no se aportan datos verificables ni referencias externas.
 
@@ -23,7 +23,7 @@ Dada la naturaleza del repositorio y la falta de especificaciones, esta ficha de
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura interna del modelo. Los tags de HuggingFace indican que está basado en transformers y que el pipeline es `feature-extraction`, lo que sugiere que podría ser un modelo tipo encoder (similar a BERT), aunque la descripción de capacidades de razonamiento y generación apunta más a un modelo decoder. No se especifican los datos de entrenamiento, el número de tokens, ni si se utilizaron técnicas como RLHF o DPO.
+La model card no proporciona detalles sobre la arquitectura interna del modelo. Los tags de Hugging Face indican que está basado en transformers y que el pipeline es `feature-extraction`, lo que sugiere que podría ser un modelo tipo encoder (similar a BERT), aunque la descripción de capacidades de razonamiento y generación apunta más a un modelo decoder. No se especifican los datos de entrenamiento, el número de tokens, ni si se utilizaron técnicas como RLHF o DPO.
 
 El texto de la model card menciona que la versión actual ha mejorado su profundidad de razonamiento mediante "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-training", pero sin concretar qué técnicas se emplearon. También se indica que el modelo soporta system prompts y que no requiere tokens especiales para forzar un patrón de pensamiento, lo que sugiere una integración de razonamiento implícito.
 
@@ -103,6 +103,6 @@ No se dispone de información suficiente para realizar una comparativa. La model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cxzsad12e/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/cxzsad12e/MyAwesomeModel-TestRepo
 
 No se proporcionan otros enlaces (papers, blogs, repos de código, demos) en la información disponible.

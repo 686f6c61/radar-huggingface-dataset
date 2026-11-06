@@ -33,7 +33,7 @@ Tampoco se especifican los datos de entrenamiento: numero de tokens, composicion
 - Soporte multimodal: la presencia de ficheros mmproj-Q8_0 y mmproj-f16 indica capacidad de procesamiento de imagenes junto con texto, aunque no se detalla el alcance.
 - Razonamiento fisico y sentido comun: el sufijo PIQA sugiere entrenamiento o evaluacion en tareas de interaccion fisica y razonamiento cotidiano.
 - Variante "heretic": probablemente con menor tasa de rechazos y respuestas mas directas, aunque no confirmado oficialmente.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse mediante APIs compatibles con el formato de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse mediante APIs compatibles con el formato de Hugging Face.
 - Capacidades de tool calling, agentes, matematicas o codigo: no disponible en la informacion proporcionada.
 - Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia segun cuantizacion: Q2_K ~10,7 GB; Q3_K_S ~12,3 GB; Q3_K_M ~13,4 GB; Q3_K_L ~13,9 GB; Q4_K_S ~15,6 GB; Q4_K_M ~16,9 GB; Q5_K_S ~18,1 GB; Q5_K_M ~19,2 GB; Q6_K ~22,7 GB; Q8_0 ~27,0 GB. A estas cifras hay que sumar el espacio para el contexto KV cache, que puede anadir varios GB en funcion de la longitud de contexto.
 - GPUs recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con margen; RTX 3090 (24 GB) similar; A100 40 GB o H100 para Q8_0 y contextos largos; GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) solo para cuantizaciones Q3 o Q2.
 - Cabe en GPU de consumo: si, en RTX 4090/3090 con Q4_K_M o Q5_K_M; en GPUs de 16 GB con Q3_K_M o inferiores, con contexto reducido.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF como llama-cpp-python; tambien puede servirse mediante endpoints compatibles con HuggingFace segun la etiqueta del repositorio.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF como llama-cpp-python; tambien puede servirse mediante endpoints compatibles con Hugging Face segun la etiqueta del repositorio.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/mradermacher/XORTRON-G4-26B-heretic2-PIQA-GGUF)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/mradermacher/XORTRON-G4-26B-heretic2-PIQA-GGUF)
 - [Modelo base darkc0de/XORTRON-G4-26B-heretic2-PIQA](https://huggingface.co/darkc0de/XORTRON-G4-26B-heretic2-PIQA)
 - [Pagina de descargas del autor de la cuantizacion](https://hf.tst.eu/model#XORTRON-G4-26B-heretic2-PIQA-GGUF)
 - [Guia de uso de GGUF (README de TheBloke)](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

@@ -94,7 +94,7 @@ La comparación con SmolLM-3B procede únicamente de la afirmación del autor y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9
+- Hugging Face: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9
 - GGUF: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.9-GGUF
-- Licencia: archivo LICENSE en el repositorio de HuggingFace
+- Licencia: archivo LICENSE en el repositorio de Hugging Face
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

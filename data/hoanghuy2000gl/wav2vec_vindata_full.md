@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wav2Vec_VinData_Full es un checkpoint de la familia Wav2Vec2 publicado por el usuario hoanghuy2000gl en HuggingFace. El repositorio contiene 315.535.070 parametros en formato safetensors y ocupa 5,0 GB, lo que lo situa en el rango de tamano de los modelos Wav2Vec2 de escala "large". La etiqueta wav2vec2 del repositorio confirma la arquitectura empleada, orientada a tareas de procesamiento de audio y habla.
+Wav2Vec_VinData_Full es un checkpoint de la familia Wav2Vec2 publicado por el usuario hoanghuy2000gl en Hugging Face. El repositorio contiene 315.535.070 parametros en formato safetensors y ocupa 5,0 GB, lo que lo situa en el rango de tamano de los modelos Wav2Vec2 de escala "large". La etiqueta wav2vec2 del repositorio confirma la arquitectura empleada, orientada a tareas de procesamiento de audio y habla.
 
 La informacion publica disponible es muy limitada: no se declara pipeline, licencia ni idiomas soportados, y no hay tarjeta de modelo con detalles de entrenamiento. El nombre del repositorio incluye "VinData", lo que sugiere una posible vinculacion con datos en vietnamita, si bien este extremo no esta confirmado por ninguna fuente oficial del repositorio.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wav2Vec_VinData_Full | 315.535.070 | Wav2Vec2 | no disponible | no disponible | HuggingFace |
-| Wav2Vec2-large (referencia de familia) | ~317 M | Wav2Vec2 | audio variable | Apache 2.0 / MIT segun checkpoint | HuggingFace |
-| Wav2Vec2-base (referencia de familia) | ~95 M | Wav2Vec2 | audio variable | Apache 2.0 | HuggingFace |
+| Wav2Vec_VinData_Full | 315.535.070 | Wav2Vec2 | no disponible | no disponible | Hugging Face |
+| Wav2Vec2-large (referencia de familia) | ~317 M | Wav2Vec2 | audio variable | Apache 2.0 / MIT segun checkpoint | Hugging Face |
+| Wav2Vec2-base (referencia de familia) | ~95 M | Wav2Vec2 | audio variable | Apache 2.0 | Hugging Face |
 
 Los datos de los modelos de referencia corresponden a especificaciones publicas de la familia Wav2Vec2 y se incluyen unicamente como contexto de categoria; no se dispone de mediciones directas que comparen este checkpoint con ellos.
 
@@ -83,5 +83,5 @@ Los datos de los modelos de referencia corresponden a especificaciones publicas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hoanghuy2000gl/Wav2Vec_VinData_Full
+- Hugging Face: https://huggingface.co/hoanghuy2000gl/Wav2Vec_VinData_Full
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las consultas devolvieron unicamente resultados genericos de YouTube sin relacion con el modelo.

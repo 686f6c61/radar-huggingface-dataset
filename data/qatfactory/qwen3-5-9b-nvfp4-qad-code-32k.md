@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.5-9B-NVFP4-QAD-Code-32K es una cuantizacion del modelo base Qwen/Qwen3.5-9B publicada por el usuario qatfactory en HuggingFace. Se trata de una version entrenada con cuantizacion consciente del entrenamiento (QAT, quantization-aware training) en formato NVFP4, el formato de 4 bits de NVIDIA optimizado para las GPU Blackwell, y empaquetada mediante la libreria compressed-tensors para su uso directo en vLLM. El sufijo "Code-32K" del nombre sugiere una especializacion en codigo y una ventana de contexto de 32.000 tokens, aunque estos detalles no se confirman en la informacion disponible del repositorio.
+Qwen3.5-9B-NVFP4-QAD-Code-32K es una cuantizacion del modelo base Qwen/Qwen3.5-9B publicada por el usuario qatfactory en Hugging Face. Se trata de una version entrenada con cuantizacion consciente del entrenamiento (QAT, quantization-aware training) en formato NVFP4, el formato de 4 bits de NVIDIA optimizado para las GPU Blackwell, y empaquetada mediante la libreria compressed-tensors para su uso directo en vLLM. El sufijo "Code-32K" del nombre sugiere una especializacion en codigo y una ventana de contexto de 32.000 tokens, aunque estos detalles no se confirman en la informacion disponible del repositorio.
 
-El modelo cuenta con 9.409.813.744 parametros (aproximadamente 9,4 mil millones) y un tamano de repositorio de 8,9 GB, coherente con una cuantizacion de 4 bits mas metadatos. La licencia declarada es Apache 2.0, heredada del modelo base Qwen3.5-9B. El acceso esta restringido: es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos.
+El modelo cuenta con 9.409.813.744 parametros (aproximadamente 9,4 mil millones) y un tamano de repositorio de 8,9 GB, coherente con una cuantizacion de 4 bits mas metadatos. La licencia declarada es Apache 2.0, heredada del modelo base Qwen3.5-9B. El acceso esta restringido: es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
 
 Su relevancia radica en que combina QAT con NVFP4 para reducir el coste de inferencia en hardware Blackwell manteniendo, en teoria, una calidad cercana al modelo original en tareas de codigo. No obstante, el repositorio no incluye informacion sobre datos de entrenamiento, benchmarks ni evaluaciones de calidad, por lo que su adopcion en produccion debe acompanarse de una validacion propia.
 
@@ -64,15 +64,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qatfactory/Qwen3.5-9B-NVFP4-QAD-Code-32K | 9,4B | 32K (inferido) | NVFP4 QAT | Apache 2.0 | Gated en HuggingFace |
-| Qwen/Qwen3.5-9B (base) | 9,4B | no disponible | BF16/FP16 | Apache 2.0 | Publico en HuggingFace |
+| qatfactory/Qwen3.5-9B-NVFP4-QAD-Code-32K | 9,4B | 32K (inferido) | NVFP4 QAT | Apache 2.0 | Gated en Hugging Face |
+| Qwen/Qwen3.5-9B (base) | 9,4B | no disponible | BF16/FP16 | Apache 2.0 | Publico en Hugging Face |
 | Otras cuantizaciones del mismo base (GPTQ, AWQ, GGUF) | 9,4B | segun base | 4-8 bits | Apache 2.0 | Variable |
 
 No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Ausencia de model card detallada: no se documentan datos de entrenamiento, calibracion, evaluaciones ni limitaciones conocidas.
 - La especializacion en codigo y el contexto de 32K se infieren del nombre del modelo y no estan confirmados en la informacion disponible.
 - Riesgo de degradacion por cuantizacion: aunque el QAT mitiga la perdida de calidad frente a PTQ, no se aportan metricas que la cuantifiquen.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer comparaciones cuantitativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-QAD-Code-32K
+- Repositorio Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-QAD-Code-32K
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Libreria compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - vLLM: https://github.com/vllm-project/vllm

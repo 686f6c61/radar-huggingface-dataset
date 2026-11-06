@@ -4,7 +4,7 @@
 
 `Snapkitty/agentos` es, según la información disponible, el repositorio de producción del "SnapKitty Agent OS", un sistema de orquestación de cómputo soberano presentado como la infraestructura que mantiene unida una constelación de repositorios de agentes. No se trata de un modelo de lenguaje o de IA en el sentido convencional, sino de un conjunto de herramientas de software: un demonio en Go, una consola de operador en Next.js, módulos de empaquetado reproducibles con Nix, políticas de confianza ejecutables en Prolog y pipelines de CI/CD. El proyecto enfatiza conceptos como la verificación criptográfica de artefactos (Bifrost WORM Chain), una "Plasma Gate" con Ed25519 y un modelo de resolución de problemas denominado "P/NP Swarm".
 
-El autor es Ahmad Ali Parr, bajo el colectivo "SnapKitty Collective". La fecha de creación en HuggingFace es el 3 de septiembre de 2026, aunque el repositorio parece ser un proyecto de software más que un modelo con pesos. Dado que no hay parámetros, arquitectura neuronal ni datos de entrenamiento, su relevancia reside en su propuesta de infraestructura para agentes de IA verificables y reproducibles, más que en capacidades de inferencia. La licencia declarada en el README es Apache-2.0, aunque la ficha de HuggingFace indica "no disponible".
+El autor es Ahmad Ali Parr, bajo el colectivo "SnapKitty Collective". La fecha de creación en Hugging Face es el 3 de septiembre de 2026, aunque el repositorio parece ser un proyecto de software más que un modelo con pesos. Dado que no hay parámetros, arquitectura neuronal ni datos de entrenamiento, su relevancia reside en su propuesta de infraestructura para agentes de IA verificables y reproducibles, más que en capacidades de inferencia. La licencia declarada en el README es Apache-2.0, aunque la ficha de Hugging Face indica "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El autor es Ahmad Ali Parr, bajo el colectivo "SnapKitty Collective". La fecha d
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 (segun README; HuggingFace indica "no disponible") |
+| Licencia | Apache-2.0 (segun README; Hugging Face indica "no disponible") |
 | Formato de pesos | No aplicable (no hay pesos; codigo fuente, modulos Nix, scripts) |
 
 ## Arquitectura y entrenamiento
@@ -66,10 +66,10 @@ No disponible. No hay informacion suficiente para comparar este proyecto con otr
 - La documentacion disponible es escasa y esta redactada con una terminologia muy particular ("sovereign compute", "Bifrost WORM Chain", "P/NP swarm") que puede dificultar su evaluacion por parte de terceros.
 - No hay evidencia de uso en produccion ni de una comunidad activa mas alla del autor y el colectivo SnapKitty.
 - La licencia Apache-2.0 permite uso comercial, pero el proyecto depende de herramientas externas (Nix, Prolog, Go, Next.js) cuya integracion puede requerir conocimientos especializados.
-- La fecha de creacion (septiembre de 2026) y la ausencia de descargas o likes en HuggingFace sugieren que es un proyecto muy reciente o poco difundido.
+- La fecha de creacion (septiembre de 2026) y la ausencia de descargas o likes en Hugging Face sugieren que es un proyecto muy reciente o poco difundido.
 - No se especifican garantias de seguridad ni de soporte; el modelo de confianza basado en Ed25519 y WORM es interesante, pero no hay auditorias independientes publicadas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/agentos
+- Hugging Face: https://huggingface.co/Snapkitty/agentos
 - Sitio web del colectivo: http://collectivekitty.com/

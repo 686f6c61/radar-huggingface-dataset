@@ -70,7 +70,7 @@ Los datos de rendimiento de Kimibrain no estan publicados, por lo que la compara
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kimibrain Uncensored | 34,7 B / ~3 B (256 expertos, 8 activos) | 262.144 (131.072 en receta Ollama) | Apache 2.0 | GGUF en HuggingFace, 33 descargas |
+| Kimibrain Uncensored | 34,7 B / ~3 B (256 expertos, 8 activos) | 262.144 (131.072 en receta Ollama) | Apache 2.0 | GGUF en Hugging Face, 33 descargas |
 | Qwen3-30B-A3B | 30,5 B / 3,3 B | 32.768 nativo, ampliable | Apache 2.0 | Amplia adopcion, multiples cuantizaciones |
 | Mixtral 8x7B | 46,7 B / 12,9 B | 32.768 | Apache 2.0 | Muy extendido en ecosistema GGUF |
 | Llama 3.3 70B (denso) | 70 B | 128.000 | Licencia comunitaria de Llama | Amplia adopcion, requiere mucho mas hardware |
@@ -91,8 +91,8 @@ Frente a Qwen3-30B-A3B, Kimibrain ofrece un contexto declarado ocho veces mayor,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/burabeeh/Kimibrain-Uncensored
-- Perfil del autor en HuggingFace: https://huggingface.co/burabeeh
+- Hugging Face: https://huggingface.co/burabeeh/Kimibrain-Uncensored
+- Perfil del autor en Hugging Face: https://huggingface.co/burabeeh
 - Repositorio de Modelfiles: https://huggingface.co/burabeeh/Kimibrain-Uncensored/tree/main/modelfiles
 - Politica de uso aceptable: https://huggingface.co/burabeeh/Kimibrain-Uncensored/blob/main/ACCEPTABLE_USE.md
 - Licencia Apache 2.0: https://huggingface.co/burabeeh/Kimibrain-Uncensored/blob/main/LICENSE

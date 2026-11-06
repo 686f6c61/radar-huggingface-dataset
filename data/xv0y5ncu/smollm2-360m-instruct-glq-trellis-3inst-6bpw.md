@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolLM2-360M-Instruct-GLQ-trellis-3inst-6bpw es una versión cuantizada del modelo SmolLM2-360M-Instruct de HuggingFace, desarrollada por el usuario xv0y5ncu. Utiliza la técnica de cuantización GLQ con código trellis (TCQ) a 6 bits por peso, en su variante "3inst" (lookup-free). El modelo base, SmolLM2-360M-Instruct, es un modelo de lenguaje compacto de 360 millones de parámetros entrenado por HuggingFace con 4 billones de tokens, capaz de resolver tareas variadas con un coste computacional reducido.
+SmolLM2-360M-Instruct-GLQ-trellis-3inst-6bpw es una versión cuantizada del modelo SmolLM2-360M-Instruct de Hugging Face, desarrollada por el usuario xv0y5ncu. Utiliza la técnica de cuantización GLQ con código trellis (TCQ) a 6 bits por peso, en su variante "3inst" (lookup-free). El modelo base, SmolLM2-360M-Instruct, es un modelo de lenguaje compacto de 360 millones de parámetros entrenado por Hugging Face con 4 billones de tokens, capaz de resolver tareas variadas con un coste computacional reducido.
 
 La cuantización reduce el peso del modelo a 0,31 GiB (frente a aproximadamente 0,7 GiB del original en bf16), manteniendo una perplejidad en wikitext-2 casi idéntica al original (+0,16%). Está pensado para ejecutarse en vLLM con el backend de GLQ, y es especialmente relevante para despliegues en dispositivos con memoria limitada o en entornos de producción donde el rendimiento por vatio es crítico. La licencia Apache-2.0 permite uso comercial sin restricciones.
 
@@ -21,7 +21,7 @@ La cuantización reduce el peso del modelo a 0,31 GiB (frente a aproximadamente 
 
 ## Arquitectura y entrenamiento
 
-El modelo base SmolLM2-360M-Instruct es un transformer causal de tipo Llama con 360 millones de parámetros. Fue entrenado por HuggingFace sobre 4 billones de tokens procedentes de FineWeb-Edu, DCLM, The Stack y datasets propios filtrados. El entrenamiento incluye una fase de supervisión (SFT) con datos públicos y propios, seguida de una optimización por preferencias directas (DPO) sobre el conjunto UltraFeedback. La versión cuantizada aquí descrita no modifica la arquitectura, solo los pesos, usando GLQ con un codebook trellis (TCQ) de 6 bits por peso, con una variante "3inst" que evita tablas de búsqueda (lookup-free) y una tasa de bits uniforme en todas las capas. La cuantización se realizó con 128 muestras y longitud de secuencia 2048, y se validó con vLLM y GLQ 0.8.8.
+El modelo base SmolLM2-360M-Instruct es un transformer causal de tipo Llama con 360 millones de parámetros. Fue entrenado por Hugging Face sobre 4 billones de tokens procedentes de FineWeb-Edu, DCLM, The Stack y datasets propios filtrados. El entrenamiento incluye una fase de supervisión (SFT) con datos públicos y propios, seguida de una optimización por preferencias directas (DPO) sobre el conjunto UltraFeedback. La versión cuantizada aquí descrita no modifica la arquitectura, solo los pesos, usando GLQ con un codebook trellis (TCQ) de 6 bits por peso, con una variante "3inst" que evita tablas de búsqueda (lookup-free) y una tasa de bits uniforme en todas las capas. La cuantización se realizó con 128 muestras y longitud de secuencia 2048, y se validó con vLLM y GLQ 0.8.8.
 
 ## Capacidades
 

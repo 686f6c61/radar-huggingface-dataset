@@ -6,7 +6,7 @@ SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-4bit es una conversión a cuantización 
 
 Su relevancia es práctica más que científica: permite ejecutar un modelo instructivo de 1,5B parámetros en portátiles y equipos de escritorio con memoria unificada de 8 GB, con un rendimiento medido de 51,35 tokens por segundo y un time-to-first-token de 19,48 ms en un Apple M1. Frente a la variante de 16 bits, la conversión de 4 bits multiplica por algo más de tres la velocidad de generación, a costa de una pérdida de calidad que el propio autor reconoce como pequeña pero no nula.
 
-La licencia es Apache 2.0, heredada del modelo base, por lo que permite uso comercial sin restricciones adicionales. El modelo no acumula descargas ni likes y la búsqueda web no ha devuelto documentación técnica adicional relevante, por lo que toda la información verificable procede de la model card del autor y de los metadatos de HuggingFace.
+La licencia es Apache 2.0, heredada del modelo base, por lo que permite uso comercial sin restricciones adicionales. El modelo no acumula descargas ni likes y la búsqueda web no ha devuelto documentación técnica adicional relevante, por lo que toda la información verificable procede de la model card del autor y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La licencia es Apache 2.0, heredada del modelo base, por lo que permite uso come
 | Licencia | Apache 2.0 (heredada del modelo base) |
 | Formato de pesos | safetensors (formato MLX, no compatible con llama.cpp/GGUF) |
 
-Otros datos de conversión declarados por el autor: mlx-lm 0.31.3, tiempo de conversión 13,0 s, tamaño de salida 839,3 MB, fecha 2026-09-10. Tamaño del repositorio en HuggingFace: 0,9 GB.
+Otros datos de conversión declarados por el autor: mlx-lm 0.31.3, tiempo de conversión 13,0 s, tamaño de salida 839,3 MB, fecha 2026-09-10. Tamaño del repositorio en Hugging Face: 0,9 GB.
 
 ## Arquitectura y entrenamiento
 
@@ -101,7 +101,7 @@ No se dispone de datos en la informacion proporcionada para comparar con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-4bit
 - Variante de 8 bits: https://huggingface.co/SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-8bit
 - Variante de 16 bits: https://huggingface.co/SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-16bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

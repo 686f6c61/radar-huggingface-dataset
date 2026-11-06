@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SynapseMusicV12-Composer-0.6B es un modelo de 662.884.352 parametros (dato real extraido de los pesos en safetensors) publicado por el usuario SYNAPSEai1 en HuggingFace bajo licencia MIT y pipeline declarado `text-to-audio`. El repositorio ocupa 1,4 GB e incluye etiquetas que lo vinculan explicitamente a la familia Qwen3 y al proyecto ACE-Step 1.5, cuyo informe tecnico se referencia con el identificador arXiv 2602.00744. La model card adjunta no describe este repositorio concreto, sino el sistema completo ACE-Step 1.5, por lo que la identificacion mas plausible es que se trate del componente de lenguaje `acestep-5Hz-lm-0.6B` (derivado de Qwen3-0.6B) reempaquetado o reetiquetado bajo el nombre SynapseMusicV12.
+SynapseMusicV12-Composer-0.6B es un modelo de 662.884.352 parametros (dato real extraido de los pesos en safetensors) publicado por el usuario SYNAPSEai1 en Hugging Face bajo licencia MIT y pipeline declarado `text-to-audio`. El repositorio ocupa 1,4 GB e incluye etiquetas que lo vinculan explicitamente a la familia Qwen3 y al proyecto ACE-Step 1.5, cuyo informe tecnico se referencia con el identificador arXiv 2602.00744. La model card adjunta no describe este repositorio concreto, sino el sistema completo ACE-Step 1.5, por lo que la identificacion mas plausible es que se trate del componente de lenguaje `acestep-5Hz-lm-0.6B` (derivado de Qwen3-0.6B) reempaquetado o reetiquetado bajo el nombre SynapseMusicV12.
 
 El modelo resuelve la parte de planificacion en lengua natural de un sistema de generacion musical: transforma una peticion corta del usuario en un "plano" de cancion (estructura, metadatos, letra y caption) que despues guia a un Diffusion Transformer encargado de sintetizar el audio. Segun la informacion proporcionada, el sistema completo genera una cancion en menos de 2 segundos en una A100 y en menos de 10 segundos en una RTX 3090, y funciona con menos de 4 GB de VRAM, lo que lo situa en el segmento de generacion musical ejecutable en hardware de consumo.
 
@@ -17,7 +17,7 @@ Su relevancia actual radica en tres factores: la licencia MIT declarada, que per
 | Parametros activos | No aplica (no se describe como MoE) |
 | Longitud de contexto | no disponible (la informacion proporcionada no declara ventana de contexto para este repositorio) |
 | Tipos de cuantizacion | no disponible (solo se publican pesos safetensors; no se mencionan GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | La model card de ACE-Step 1.5 declara 50+ idiomas para el sistema; los metadatos de HuggingFace de este repositorio no declaran idiomas |
+| Idiomas soportados | La model card de ACE-Step 1.5 declara 50+ idiomas para el sistema; los metadatos de Hugging Face de este repositorio no declaran idiomas |
 | Licencia | MIT |
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Pipeline declarado | `text-to-audio` |
@@ -105,9 +105,9 @@ La comparacion con modelos musicales externos (por ejemplo MusicGen o Stable Aud
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Composer-0.6B
+- Repositorio en Hugging Face: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Composer-0.6B
 - Pagina del proyecto ACE-Step 1.5: https://ace-step.github.io/ace-step-v1.5.github.io/
-- Coleccion en HuggingFace de ACE-Step 1.5: https://huggingface.co/collections/ACE-Step/ace-step-15
+- Coleccion en Hugging Face de ACE-Step 1.5: https://huggingface.co/collections/ACE-Step/ace-step-15
 - ModelScope: https://modelscope.cn/models/ACE-Step/ACE-Step-v1-5
 - Demo en Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
 - Discord del proyecto: https://discord.gg/PeWDxrkdj7

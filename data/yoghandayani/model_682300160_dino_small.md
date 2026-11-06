@@ -54,7 +54,7 @@ No disponible. No se conocen modelos comparables específicos para esta implemen
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [yoghandayani/model_682300160_dino_small](https://huggingface.co/yoghandayani/model_682300160_dino_small)
+- Repositorio de Hugging Face: [yoghandayani/model_682300160_dino_small](https://huggingface.co/yoghandayani/model_682300160_dino_small)
 - Modelo original DINOv2 de Meta: [facebook/dinov2-small](https://huggingface.co/facebook/dinov2-small)
 - Código de DINO original: [facebookresearch/dino](https://github.com/facebookresearch/dino)
 - Código de DINOv2: [facebookresearch/dinov2](https://github.com/facebookresearch/dinov2)

@@ -94,7 +94,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shenao1995/RadGS-Reg-RegM
+- Modelo en Hugging Face: https://huggingface.co/shenao1995/RadGS-Reg-RegM
 - Checkpoint RecM emparejado: https://huggingface.co/shenao1995/RadGS-Reg-RecM
 - Dataset de test: https://huggingface.co/datasets/shenao1995/RadGS-Reg-Test
 - Código: https://github.com/shenao1995/RadGS_Reg

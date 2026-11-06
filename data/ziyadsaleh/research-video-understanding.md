@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZiyadSaleh/research-video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/ZiyadSaleh/research-video-understanding
 - Survey sobre video understanding con LLMs (arXiv): https://arxiv.org/abs/2312.17432
 - Lista Awesome-LLMs-for-Video-Understanding (GitHub): https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding
 - Paper V-JEPA 2 (arXiv): https://arxiv.org/abs/2506.09985

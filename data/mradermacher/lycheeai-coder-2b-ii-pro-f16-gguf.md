@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LycheeAI-coder-2b-II-pro-f16-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por mradermacher, un autor conocido en HuggingFace por generar versiones cuantizadas de modelos abiertos de terceros. No se trata de un modelo entrenado por este autor, sino de una conversión a GGUF del modelo base LycheeAI-coder-2b-II-pro-f16, alojado en la cuenta whcl412. El repositorio se creó y actualizó el 13 de septiembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni "likes".
+LycheeAI-coder-2b-II-pro-f16-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por mradermacher, un autor conocido en Hugging Face por generar versiones cuantizadas de modelos abiertos de terceros. No se trata de un modelo entrenado por este autor, sino de una conversión a GGUF del modelo base LycheeAI-coder-2b-II-pro-f16, alojado en la cuenta whcl412. El repositorio se creó y actualizó el 13 de septiembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni "likes".
 
 El nombre del repositorio indica que el modelo subyacente es un modelo orientado a código ("coder") de aproximadamente 2.000 millones de parámetros ("2b"), en su segunda iteración ("II"), variante "pro" y en precisión float16. La model card del repositorio es puramente técnica y se limita a declarar que se trata de cuantizaciones estáticas del modelo base, sin aportar información sobre arquitectura, datos de entrenamiento, licencia o idiomas.
 

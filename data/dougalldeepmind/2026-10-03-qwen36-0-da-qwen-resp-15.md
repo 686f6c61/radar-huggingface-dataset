@@ -52,7 +52,7 @@ El entrenamiento consistió en una única época de ajuste supervisado sobre la 
 - Investigación sobre alineamiento constitucional: el proyecto de origen (`Lessons_from_constituitional_AFT`) sugiere un contexto de estudio de alineamiento; el adaptador puede emplearse como artefacto experimental para analizar cómo una constitución heredada de los datos se refleja en las respuestas.
 - Prototipado de asistentes con modo de razonamiento: dado que `thinking` está activado, el adaptador puede probarse en tareas que se benefician de cadenas de razonamiento previas a la respuesta, siempre que se combine con el modelo base y se valide el comportamiento resultante.
 - Evaluación comparativa de estrategias LoRA: con r=64, alpha=128 y dropout 0,05 sobre un modelo declarado de 27B, sirve como referencia en estudios sobre el impacto de los hiperparámetros de rango y escalado en el ajuste eficiente de parámetros.
-- Docencia y formación técnica: el repositorio es un ejemplo completo del ciclo de publicación de un adaptador PEFT (adaptador, tokenizer, configuración resuelta y metadatos de entrenamiento), útil para explicar el flujo de trabajo de HuggingFace PEFT de extremo a extremo.
+- Docencia y formación técnica: el repositorio es un ejemplo completo del ciclo de publicación de un adaptador PEFT (adaptador, tokenizer, configuración resuelta y metadatos de entrenamiento), útil para explicar el flujo de trabajo de Hugging Face PEFT de extremo a extremo.
 - Despliegue experimental en producción interna: solo con carácter exploratorio y tras fusionar el adaptador con el modelo base y verificar licencia, calidad y comportamiento, dado que no existen benchmarks ni validación de la comunidad.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dougalldeepmind/2026-10-03-qwen36-0-da-qwen-resp-15 | Adaptador LoRA SFT | No disponible (base declarado de 27B) | No disponible (entrenamiento a 8192 tokens) | No disponible | HuggingFace, 0 descargas, 0 likes |
+| dougalldeepmind/2026-10-03-qwen36-0-da-qwen-resp-15 | Adaptador LoRA SFT | No disponible (base declarado de 27B) | No disponible (entrenamiento a 8192 tokens) | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen3.6-27B (modelo base referenciado) | Modelo completo | 27B según denominación | No disponible en la información | No disponible en la información | Referenciado como base del adaptador |
 | Alternativas comparables de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,7 +94,7 @@ No se han identificado en la información proporcionada adaptadores LoRA compara
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-03-qwen36-0-da-qwen-resp-15
+- Repositorio del modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-03-qwen36-0-da-qwen-resp-15
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-10-03-da-qwen-resp-15-mix
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.6-27B (revisión 6a9e13bd6fc8f0983b9b99948120bc37f49c13e9)
 - Repositorio de código fuente de la receta: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT.git (commit 72ceaf9469d751ecb08377bedeb206b9fc9324dd)

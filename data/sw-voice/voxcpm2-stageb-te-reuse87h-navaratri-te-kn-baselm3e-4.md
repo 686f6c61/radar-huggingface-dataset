@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoxCPM2-stageB-te-reuse87h-navaratri-te-kn-baselm3e-4 es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en HuggingFace. Se trata de un ajuste fino completo (full fine-tune) del modelo base sw-voice/voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep, realizado con el entrenador oficial de VoxCPM. El modelo está orientado a la generación de voz en inglés, telugu y kannada, y su nombre indica que ha sido entrenado sobre datos de temática "navaratri" en telugu y kannada.
+VoxCPM2-stageB-te-reuse87h-navaratri-te-kn-baselm3e-4 es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en Hugging Face. Se trata de un ajuste fino completo (full fine-tune) del modelo base sw-voice/voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep, realizado con el entrenador oficial de VoxCPM. El modelo está orientado a la generación de voz en inglés, telugu y kannada, y su nombre indica que ha sido entrenado sobre datos de temática "navaratri" en telugu y kannada.
 
 El modelo resuelve el problema de la síntesis de voz multilingüe en lenguas del sur de la India (telugu y kannada) junto con inglés, un ámbito donde los modelos TTS comerciales suelen tener cobertura limitada. Con aproximadamente 2.290 millones de parámetros y un tamaño de repositorio de 9,5 GB, se distribuye en formato safetensors bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en pipelines de investigación.
 
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stageB-te-reuse87h-navaratri-te-kn-baselm3e-4
+- Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stageB-te-reuse87h-navaratri-te-kn-baselm3e-4
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep
 - Dataset telugu: sw-voice/swamiji-navaratri-telugu-reuse-themes (referenciado en la model card, sin URL directa proporcionada)
 - Dataset kannada: sw-voice/swamiji-navaratri-kannada-reuse-themes (referenciado en la model card, sin URL directa proporcionada)

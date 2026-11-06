@@ -84,6 +84,6 @@ No se han publicado comparativas con modelos similares en la información dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OttoUlbrich/m05-individual-danos-vehiculares
+- Hugging Face: https://huggingface.co/OttoUlbrich/m05-individual-danos-vehiculares
 - Dataset CarDD (mirror HF): https://huggingface.co/datasets/harpreetsahota/CarDD
 - Paper de CarDD (Wang et al., 2023): no disponible en la información proporcionada.

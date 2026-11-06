@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AnonSubmissionICLR/cake_bake_gemma_integrated_dpo` es un modelo publicado en HuggingFace por la cuenta anónima AnonSubmissionICLR, presumiblemente asociada a un envío a ICLR bajo revisión. La única información verificable es la ficha del repositorio: etiquetas `pytorch`, `gemma3_text` y `region:us`, un tamaño de repositorio de 2,6 GB, 18 descargas, 0 likes y ausencia total de model card (sin licencia, sin idiomas, sin pipeline declarados). Las fechas registradas de creación y actualización son el 5 de octubre de 2026.
+`AnonSubmissionICLR/cake_bake_gemma_integrated_dpo` es un modelo publicado en Hugging Face por la cuenta anónima AnonSubmissionICLR, presumiblemente asociada a un envío a ICLR bajo revisión. La única información verificable es la ficha del repositorio: etiquetas `pytorch`, `gemma3_text` y `region:us`, un tamaño de repositorio de 2,6 GB, 18 descargas, 0 likes y ausencia total de model card (sin licencia, sin idiomas, sin pipeline declarados). Las fechas registradas de creación y actualización son el 5 de octubre de 2026.
 
 La etiqueta `gemma3_text` indica que el modelo deriva de la arquitectura de texto de la familia Gemma 3 de Google DeepMind, y el sufijo `integrated_dpo` sugiere que ha pasado por una etapa de optimización con preferencias humanas (DPO) integrada en su pipeline de entrenamiento. El prefijo `cake_bake` y los repositorios hermanos encontrados en la búsqueda (`cake_bake_student_mixed_gemma_integrated_dpo`, `cake_bake_student_unmixed_olmo_integrated_dpo`, `cake_bake_gemma_student_unmixed_olmo_integrated_dpo`) apuntan a un trabajo de destilación o mezcla de estudiantes con profesores Gemma y OLMo, aunque ninguna de estas hipótesis está documentada.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `AnonSubmissionICLR/cake_bake_gemma_integrated_dpo` | No disponible | No disponible | No disponible | HuggingFace, 18 descargas | Objeto de esta ficha |
-| `AnonSubmissionICLR/cake_bake_student_mixed_gemma_integrated_dpo` | No disponible | No disponible | No disponible | HuggingFace | Repositorio hermano, variante `mixed` |
-| `AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo` | No disponible | No disponible | No disponible | HuggingFace | Repositorio hermano, `unmixed`, con referencia a OLMo |
+| `AnonSubmissionICLR/cake_bake_gemma_integrated_dpo` | No disponible | No disponible | No disponible | Hugging Face, 18 descargas | Objeto de esta ficha |
+| `AnonSubmissionICLR/cake_bake_student_mixed_gemma_integrated_dpo` | No disponible | No disponible | No disponible | Hugging Face | Repositorio hermano, variante `mixed` |
+| `AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo` | No disponible | No disponible | No disponible | Hugging Face | Repositorio hermano, `unmixed`, con referencia a OLMo |
 | Familia Gemma 3 (Google DeepMind) | 1B, 4B, 12B, 27B segun variante | No disponible en la informacion proporcionada | Gemma Terms of Use | Ampliamente disponible | Modelo base sobre el que se apoya la etiqueta `gemma3_text` |
 
 No es posible establecer una comparacion cuantitativa de rendimiento: no hay benchmarks publicados para ninguno de los checkpoints anonimos ni ficha tecnica que detalle parametros, contexto o licencia.
@@ -89,7 +89,7 @@ No es posible establecer una comparacion cuantitativa de rendimiento: no hay ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_integrated_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_integrated_dpo
 - Repositorio hermano (student_mixed): https://huggingface.co/AnonSubmissionICLR/cake_bake_student_mixed_gemma_integrated_dpo
 - Repositorio hermano (student_unmixed, OLMo): https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo
 - Implementacion de inferencia Gemma en JAX/Flax: https://pypi.org/project/gemma-llm/

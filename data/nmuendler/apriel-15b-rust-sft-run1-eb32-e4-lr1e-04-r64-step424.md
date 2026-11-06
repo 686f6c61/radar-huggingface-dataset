@@ -31,7 +31,7 @@ La relevancia de este checkpoint es limitada y muy especifica: se publica sin mo
 
 El artefacto es un adaptador de bajo rango (LoRA) sobre un transformer decoder-only de 15B. No se documenta en la informacion proporcionada la arquitectura interna del modelo base (numero de capas, dimension del modelo, tipo de atencion, uso de RoPE, normalizacion ni si incorpora algun esquema de atencion eficiente). Tampoco se especifica si el entrenamiento fue de precision mixta bf16 o fp16, ni la infraestructura de computo empleada.
 
-El entrenamiento consiste en un ajuste supervisado (SFT) sobre datos de Rust. A partir del nombre del checkpoint se puede inferir rango 64, learning rate 1e-4, batch efectivo 32 y 4 epocas, pero no hay informacion sobre la composicion del dataset (volumen de tokens, fuentes, filtrado, si incluye instrucciones, tests unitarios o trazas de compilador), ni sobre tecnicas posteriores de alineacion como RLHF o DPO. La model card distribuida es la plantilla por defecto de HuggingFace y todos los campos relevantes estan marcados como `[More Information Needed]`, por lo que no se puede verificar ningun detalle del procedimiento de entrenamiento.
+El entrenamiento consiste en un ajuste supervisado (SFT) sobre datos de Rust. A partir del nombre del checkpoint se puede inferir rango 64, learning rate 1e-4, batch efectivo 32 y 4 epocas, pero no hay informacion sobre la composicion del dataset (volumen de tokens, fuentes, filtrado, si incluye instrucciones, tests unitarios o trazas de compilador), ni sobre tecnicas posteriores de alineacion como RLHF o DPO. La model card distribuida es la plantilla por defecto de Hugging Face y todos los campos relevantes estan marcados como `[More Information Needed]`, por lo que no se puede verificar ningun detalle del procedimiento de entrenamiento.
 
 ## Capacidades
 
@@ -73,10 +73,10 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base (15B
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (base Apriel-Nemotron-15b-Thinker) | ~15B (base) + adaptador LoRA r=64 | No disponible | No disponible | HuggingFace, 0 descargas |
-| ServiceNow-AI/Apriel-Nemotron-15b-Thinker (modelo base, sin ajustar) | ~15B | No disponible | No disponible en la informacion proporcionada | HuggingFace |
-| Qwen2.5-Coder-14B | 14B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| CodeLlama-13B | 13B | 16.384 tokens | Llama 2 Community License | HuggingFace |
+| Este adaptador (base Apriel-Nemotron-15b-Thinker) | ~15B (base) + adaptador LoRA r=64 | No disponible | No disponible | Hugging Face, 0 descargas |
+| ServiceNow-AI/Apriel-Nemotron-15b-Thinker (modelo base, sin ajustar) | ~15B | No disponible | No disponible en la informacion proporcionada | Hugging Face |
+| Qwen2.5-Coder-14B | 14B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| CodeLlama-13B | 13B | 16.384 tokens | Llama 2 Community License | Hugging Face |
 
 Las cifras de las alternativas corresponden a datos publicos de sus respectivas fichas y pueden variar con el tiempo; no se dispone de resultados de rendimiento comparables entre estos modelos y el adaptador aqui descrito, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. En el caso del modelo base y del adaptador, las celdas marcadas como no disponibles reflejan la ausencia de documentacion, no la inexistencia del dato.
 
@@ -95,7 +95,7 @@ Las cifras de las alternativas corresponden a datos publicos de sus respectivas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64-step424
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64-step424
 - Modelo base: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
 - Paper referenciado en los tags del repositorio (metodologia de estimacion de emisiones, no describe el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la model card: https://mlco2.github.io/impact

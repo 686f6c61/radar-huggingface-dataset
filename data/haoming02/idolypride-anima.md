@@ -1,7 +1,7 @@
 # Haoming02/IdolyPride-Anima
 
 ## Resumen
-IdolyPride-Anima es un adaptador LoRA (Low-Rank Adaptation) de difusión para generación de imágenes a partir de texto, publicado por el usuario Haoming02 en HuggingFace. Su función es incorporar al modelo base circlestone-labs/Anima (versión Base-v1.0) la capacidad de generar personajes concretos de la franquicia Idoly Pride, con sus nombres, uniformes y elementos de vestuario característicos. No es un modelo de lenguaje ni un modelo generativo autónomo: es un complemento que debe cargarse junto al modelo base.
+IdolyPride-Anima es un adaptador LoRA (Low-Rank Adaptation) de difusión para generación de imágenes a partir de texto, publicado por el usuario Haoming02 en Hugging Face. Su función es incorporar al modelo base circlestone-labs/Anima (versión Base-v1.0) la capacidad de generar personajes concretos de la franquicia Idoly Pride, con sus nombres, uniformes y elementos de vestuario característicos. No es un modelo de lenguaje ni un modelo generativo autónomo: es un complemento que debe cargarse junto al modelo base.
 
 El repositorio ocupa 0,3 GB e incluye los pesos del adaptador y una galería de imágenes de muestra (webp) por personaje. Está etiquetado con el pipeline text-to-image y la librería diffusers, y se distribuye bajo licencia Apache 2.0. El prompt de instancia declarado es "idoly pride" y el token de activación indicado en los ejemplos del autor es `<lora:animaAipura:1.0>`.
 
@@ -69,7 +69,7 @@ No se dispone de datos de otros adaptadores LoRA de Idoly Pride ni de sus métri
 
 | Enfoque | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IdolyPride-Anima (LoRA) | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| IdolyPride-Anima (LoRA) | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Fine-tune completo del modelo base | no disponible (mucho mayor que un LoRA por definición del método) | no aplica | no disponible | no disponible | no disponible |
 | Textual inversion / embedding de personaje | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de otros adaptadores LoRA de Idoly Pride ni de sus métri
 - No hay información sobre el proceso de entrenamiento, los datos utilizados ni posibles sesgos de representación entre personajes.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Haoming02/IdolyPride-Anima
+- Modelo en Hugging Face: https://huggingface.co/Haoming02/IdolyPride-Anima
 - Modelo base Anima: https://huggingface.co/circlestone-labs/Anima
 - Perfil del autor: https://huggingface.co/Haoming02
 - Interfaz recomendada por el autor (Forge Neo): https://github.com/Haoming02/sd-webui-forge-classic/tree/neo

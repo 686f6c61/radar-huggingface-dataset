@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wanda2 es un repositorio de modelo alojado en HuggingFace bajo el identificador Lnypuuuu/Wanda2, publicado por el usuario Lnypuuuu. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card no contiene mas contenido que el bloque de metadatos de licencia (`license: other`, `license_name: wanda222`, `license_link: LICENSE`). No se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia.
+Wanda2 es un repositorio de modelo alojado en Hugging Face bajo el identificador Lnypuuuu/Wanda2, publicado por el usuario Lnypuuuu. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card no contiene mas contenido que el bloque de metadatos de licencia (`license: other`, `license_name: wanda222`, `license_link: LICENSE`). No se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia.
 
 Se trata, por tanto, de una publicacion sin documentacion tecnica asociada. No hay informacion sobre datos de entrenamiento, proceso de alineamiento, formato de pesos ni resultados de evaluacion. La fecha de creacion registrada es 2026-10-04 y la de actualizacion 2026-10-04, es decir, el repositorio no ha recibido modificaciones posteriores a su creacion.
 
@@ -76,7 +76,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lnypuuuu/Wanda2
+- Repositorio en Hugging Face: https://huggingface.co/Lnypuuuu/Wanda2
 - Fichero de licencia declarado en la model card: LICENSE (ruta relativa dentro del repositorio, contenido no disponible en la informacion proporcionada)
 - Resultado de busqueda no relacionado (robot humanoide UniX AI, "Wanda 2.0"): https://www.youtube.com/watch?v=TgWpFgj7F-I
 - Resultado de busqueda no relacionado (LoRA de generacion de imagenes, "wanda 2"): https://tensor.art/models/857768772092620662

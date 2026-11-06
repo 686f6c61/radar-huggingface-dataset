@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arabic-ocr-abl-plain1k` es un ajuste fino (fine-tune) del modelo multimodal `Qwen/Qwen3-VL-4B-Instruct` orientado a OCR y análisis de maquetación (layout) de documentos en árabe. Lo desarrolla el usuario ahmedsamirtarjama como parte de un proyecto de investigación alojado en el directorio `/mnt/extra/ocr` (carpeta de modelo `models/abl_plain1k_merged`) dentro de la organización `arabic-ocr-research-data`. El modelo se distribuye con licencia no especificada, sin idiomas declarados formalmente en la ficha de HuggingFace (aunque sus etiquetas indican árabe, OCR y document-layout) y sin descargas ni interacciones registradas en el momento de la consulta.
+`arabic-ocr-abl-plain1k` es un ajuste fino (fine-tune) del modelo multimodal `Qwen/Qwen3-VL-4B-Instruct` orientado a OCR y análisis de maquetación (layout) de documentos en árabe. Lo desarrolla el usuario ahmedsamirtarjama como parte de un proyecto de investigación alojado en el directorio `/mnt/extra/ocr` (carpeta de modelo `models/abl_plain1k_merged`) dentro de la organización `arabic-ocr-research-data`. El modelo se distribuye con licencia no especificada, sin idiomas declarados formalmente en la ficha de Hugging Face (aunque sus etiquetas indican árabe, OCR y document-layout) y sin descargas ni interacciones registradas en el momento de la consulta.
 
 Técnicamente es un modelo de tipo imagen-a-texto (image-text-to-text) construido sobre la arquitectura Qwen3-VL del modelo base, con 4.437.815.808 parámetros totales (aproximadamente 4,44 mil millones), lo que lo sitúa en el rango de los 4B. El ajuste se realizó mediante LoRA con rango 64, cuyos pesos se fusionaron posteriormente en los pesos base, manteniendo congelado el codificador visual (vision tower). El repositorio ocupa 8,9 GB y los pesos se almacenan en formato safetensors, cargables con la librería `transformers`.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| arabic-ocr-abl-plain1k | 4,44B | no disponible | no disponible | HuggingFace (0 descargas) | OCR/layout arabe (fine-tune) |
-| Qwen/Qwen3-VL-4B-Instruct | no disponible | no disponible | no disponible | HuggingFace (modelo base) | Vision-lenguaje general |
+| arabic-ocr-abl-plain1k | 4,44B | no disponible | no disponible | Hugging Face (0 descargas) | OCR/layout arabe (fine-tune) |
+| Qwen/Qwen3-VL-4B-Instruct | no disponible | no disponible | no disponible | Hugging Face (modelo base) | Vision-lenguaje general |
 | Alternativas OCR arabes abiertas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre este modelo y alternativas de la misma categoría en la informacion proporcionada. Los modelos comparables serían otros sistemas de OCR árabe de código abierto y el propio modelo base, pero no se aportan métricas que permitan una comparación cuantitativa.
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre este modelo y alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-abl-plain1k
+- Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-abl-plain1k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio de datos y código de investigación (referenciado en la model card): `arabic-ocr-research-data/code` (ficheros `docs/TEST_PROTOCOL.md`, `REPORT.md` y `code/scripts/`); no se proporciona URL directa en la informacion disponible.

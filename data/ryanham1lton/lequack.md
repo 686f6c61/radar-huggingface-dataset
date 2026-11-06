@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeQuack es un modelo publicado en HuggingFace por Ryanham1lton. La model card no contiene ninguna información técnica: solo se indica la licencia CC-BY-4.0. El repositorio tiene un tamaño de 0.2 GB, lo que sugiere un modelo de pequeñas dimensiones, pero no hay datos que confirmen la arquitectura, el número de parámetros ni la longitud de contexto. Sin documentación, no es posible determinar qué problema resuelve ni por qué sería relevante. Este modelo no debe considerarse para uso en producción sin una evaluación previa.
+LeQuack es un modelo publicado en Hugging Face por Ryanham1lton. La model card no contiene ninguna información técnica: solo se indica la licencia CC-BY-4.0. El repositorio tiene un tamaño de 0.2 GB, lo que sugiere un modelo de pequeñas dimensiones, pero no hay datos que confirmen la arquitectura, el número de parámetros ni la longitud de contexto. Sin documentación, no es posible determinar qué problema resuelve ni por qué sería relevante. Este modelo no debe considerarse para uso en producción sin una evaluación previa.
 
 ## Especificaciones tecnicas
 
@@ -57,4 +57,4 @@ No disponible: no se han identificado modelos comparables debido a la falta de i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/LeQuack
+- Hugging Face: https://huggingface.co/Ryanham1lton/LeQuack

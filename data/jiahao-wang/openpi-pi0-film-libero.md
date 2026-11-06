@@ -76,7 +76,7 @@ No se puede realizar una comparación cuantitativa por falta de datos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jiahao-Wang/openpi-pi0-film-libero
+- Repositorio Hugging Face: https://huggingface.co/Jiahao-Wang/openpi-pi0-film-libero
 - Repositorio OpenPI (GitHub): https://github.com/Physical-Intelligence/openpi
 - Documentación de ejemplo de LIBERO en OpenPI: https://github.com/Physical-Intelligence/openpi/blob/main/examples/libero/README.md
 - Checkpoint similar de LeRobot: https://huggingface.co/lerobot/pi0_libero_base

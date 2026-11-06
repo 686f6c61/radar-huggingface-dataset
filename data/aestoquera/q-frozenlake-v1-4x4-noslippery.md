@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje por refuerzo entrenado mediante Q-Learning tabular sobre el entorno FrozenLake-v1 de Gymnasium, en su variante de 4x4 sin deslizamiento (is_slippery=False). Lo desarrolla el usuario aestoquera y se distribuye a través de HuggingFace Hub. El agente aprende una política óptima para navegar de la casilla inicial a la meta evitando los agujeros en el hielo, un problema clásico de control en espacios de estado y acción discretos.
+El modelo `q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje por refuerzo entrenado mediante Q-Learning tabular sobre el entorno FrozenLake-v1 de Gymnasium, en su variante de 4x4 sin deslizamiento (is_slippery=False). Lo desarrolla el usuario aestoquera y se distribuye a través de Hugging Face Hub. El agente aprende una política óptima para navegar de la casilla inicial a la meta evitando los agujeros en el hielo, un problema clásico de control en espacios de estado y acción discretos.
 
 El modelo se presenta como un artefacto serializado en formato pickle (`q-learning.pkl`) que contiene la tabla Q resultante del entrenamiento. No emplea redes neuronales ni arquitecturas modernas de deep RL; es una implementación clásica de programación dinámica con actualización incremental. Su relevancia radica en servir como ejemplo didáctico y funcional de Q-Learning para entornos pequeños, así como punto de partida para comparaciones con métodos más avanzados. El repositorio tiene 0 descargas y 0 likes, y su licencia no está especificada.
 
@@ -30,7 +30,7 @@ El entrenamiento concluye con una política que obtiene una recompensa media de 
 - Toma de decisiones secuencial en un entorno discreto finito (MDP de 16 estados y 4 acciones).
 - Aprendizaje de política óptima para el problema de navegación FrozenLake-v1-4x4 sin deslizamiento.
 - Ejecución de episodios completos en el entorno Gymnasium, desde el estado inicial hasta la meta o un agujero.
-- Carga y uso mediante la función `load_from_hub` de HuggingFace Hub, permitiendo integrar el agente en scripts de evaluación o demostración.
+- Carga y uso mediante la función `load_from_hub` de Hugging Face Hub, permitiendo integrar el agente en scripts de evaluación o demostración.
 - Almacenamiento de la tabla Q en formato pickle, facilitando su inspección y análisis posterior.
 - Funciona como ejemplo funcional de Q-Learning tabular para fines educativos o comparativos.
 
@@ -58,12 +58,12 @@ No se proporcionan comparaciones con otros modelos ni métricas adicionales (tas
 - Inferencia en CPU sin GPU: el modelo es una tabla de 64 números en punto flotante, con un tamaño de archivo de 0.0 GB. Cualquier ordenador moderno puede ejecutarlo.
 - Memoria RAM necesaria: inferior a 1 MB.
 - GPU recomendada: ninguna; el cómputo es trivial (una operación de argmax sobre 4 valores por paso).
-- Despliegue: se carga mediante la API de HuggingFace Hub (`load_from_hub`) y se ejecuta con Gymnasium. No requiere servidores de inferencia como vLLM u Ollama.
+- Despliegue: se carga mediante la API de Hugging Face Hub (`load_from_hub`) y se ejecuta con Gymnasium. No requiere servidores de inferencia como vLLM u Ollama.
 - Latencia: sub-milisegundo por paso de decisión; throughput limitado solo por la velocidad del entorno.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros agentes Q-Learning para FrozenLake-v1-4x4 en HuggingFace Hub. Como referencia teórica, una tabla Q óptima para este entorno sin deslizamiento debería alcanzar recompensa media de 1.0, mientras que el modelo evaluado obtiene 0.51, lo que indica un entrenamiento incompleto o una política subóptima. No se incluyen comparaciones cuantitativas por falta de datos.
+No se dispone de información sobre otros agentes Q-Learning para FrozenLake-v1-4x4 en Hugging Face Hub. Como referencia teórica, una tabla Q óptima para este entorno sin deslizamiento debería alcanzar recompensa media de 1.0, mientras que el modelo evaluado obtiene 0.51, lo que indica un entrenamiento incompleto o una política subóptima. No se incluyen comparaciones cuantitativas por falta de datos.
 
 ## Limitaciones y advertencias
 
@@ -76,5 +76,5 @@ No se dispone de información sobre otros agentes Q-Learning para FrozenLake-v1-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aestoquera/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/aestoquera/q-FrozenLake-v1-4x4-noSlippery
 - Entorno FrozenLake-v1 (Gymnasium): https://gymnasium.farama.org/environments/toy_text/frozen_lake/

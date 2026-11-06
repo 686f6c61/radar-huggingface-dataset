@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mariaalonso/matching38-2023` es un repositorio de HuggingFace publicado por la usuaria mariaalonso que contiene una implementación propia y compacta de MoCo v3 en PyTorch, orientada a una tarea de *matching*. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como una configuración «nano» pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño. El repositorio incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` con 33.088 parámetros reales.
+`mariaalonso/matching38-2023` es un repositorio de Hugging Face publicado por la usuaria mariaalonso que contiene una implementación propia y compacta de MoCo v3 en PyTorch, orientada a una tarea de *matching*. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como una configuración «nano» pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño. El repositorio incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` con 33.088 parámetros reales.
 
-La arquitectura declarada combina atención *multi-query*, fusión tipo *tucker*, activación *swish* y normalización por instancias (*instancenorm*), sobre una escala nano. El repositorio se publica bajo licencia BSD-3-Clause y no declara idiomas soportados, pipeline de HuggingFace ni resultados de benchmarks de ningún tipo.
+La arquitectura declarada combina atención *multi-query*, fusión tipo *tucker*, activación *swish* y normalización por instancias (*instancenorm*), sobre una escala nano. El repositorio se publica bajo licencia BSD-3-Clause y no declara idiomas soportados, pipeline de Hugging Face ni resultados de benchmarks de ningún tipo.
 
 Su relevancia actual es acotada y de carácter metodológico: sirve como plantilla reproducible para montar *baselines* de igual capacidad, auditar implementaciones de aprendizaje autosupervisado contrastivo y verificar *pipelines* de carga de pesos antes de escalar a configuraciones mayores. Con 0 descargas y 0 «likes», y con un checkpoint que el autor reconoce explícitamente como no entrenado, no debe considerarse un artefacto validado por la comunidad ni apto para inferencia real.
 
@@ -23,7 +23,7 @@ Su relevancia actual es acotada y de carácter metodológico: sirve como plantil
 | Activación | swish |
 | Normalización | instancenorm |
 | Optimizador por defecto | SGD con schedule cosine |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamaño del repositorio | 0,0 GB según los metadatos |
 | Fecha de creación / actualización | 2026-09-30 (creación y actualización separadas por 5 segundos) |
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Naturaleza | Parámetros | Pesos entrenados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mariaalonso/matching38-2023` | Implementación propia de MoCo v3 a escala nano, con fusión tucker | 33.088 | No (checkpoint de inicialización) | BSD-3-Clause | HuggingFace, 0 descargas y 0 «likes» |
+| `mariaalonso/matching38-2023` | Implementación propia de MoCo v3 a escala nano, con fusión tucker | 33.088 | No (checkpoint de inicialización) | BSD-3-Clause | Hugging Face, 0 descargas y 0 «likes» |
 | Implementación de referencia de MoCo v3 (Meta AI) | Implementación oficial de investigación | No disponible | No disponible | No disponible | No disponible en la información recopilada |
-| Otros repositorios de la misma autora | No disponible | No disponible | No disponible | No disponible | Índice público en HuggingFace |
+| Otros repositorios de la misma autora | No disponible | No disponible | No disponible | No disponible | Índice público en Hugging Face |
 | Alternativas de capacidad comparable (nano, ~33 K parámetros) | No disponible | No disponible | No disponible | No disponible | No disponible en la información recopilada |
 
 No se han encontrado en la información recopilada datos verificables (parámetros, contexto, resultados, licencia) de modelos comparables que permitan una comparación cuantitativa honesta.
@@ -85,7 +85,7 @@ No se han encontrado en la información recopilada datos verificables (parámetr
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, según reconoce la propia model card.
 - No se reclama ni publica ninguna métrica de benchmark; cualquier cifra de rendimiento sería especulativa.
 - No se declaran idiomas soportados ni modalidad de entrada, por lo que no puede evaluarse su cobertura lingüística o de dominio.
-- No se declara pipeline de HuggingFace, de modo que las herramientas automáticas de inferencia no funcionarán sin trabajo adicional.
+- No se declara pipeline de Hugging Face, de modo que las herramientas automáticas de inferencia no funcionarán sin trabajo adicional.
 - Las APIs genéricas de carga requieren un adaptador explícito; intentar cargarlo como un modelo estándar fallará.
 - 0 descargas y 0 «likes»: el repositorio no tiene validación externa por parte de la comunidad.
 - La licencia BSD-3-Clause permite uso comercial del código, pero la propia model card advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
@@ -94,6 +94,6 @@ No se han encontrado en la información recopilada datos verificables (parámetr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mariaalonso/matching38-2023
-- Índice de modelos de la autora en HuggingFace: https://huggingface.co/mariaalonso/models
+- Repositorio en Hugging Face: https://huggingface.co/mariaalonso/matching38-2023
+- Índice de modelos de la autora en Hugging Face: https://huggingface.co/mariaalonso/models
 - Artículos, blogs, repositorios de código o demos adicionales: no disponibles. El resto de resultados de la búsqueda web (perfiles de Instagram, un sitio de creación de contenido visual y un calendario genérico de lanzamientos de modelos) no guardan relación con este repositorio y no se incluyen como fuentes técnicas.

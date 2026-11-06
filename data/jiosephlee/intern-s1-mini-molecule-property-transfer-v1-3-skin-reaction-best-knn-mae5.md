@@ -56,7 +56,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - Con cuantizacion INT8 (estimacion estandar): unos 8,2 GB, ejecutable en RTX 4070 Ti o similar.
 - Con cuantizacion INT4 (estimacion estandar): unos 4,1 GB, ejecutable en RTX 4060 o GPU de 8 GB.
 - El repositorio ocupa 16,4 GB, consistente con pesos en FP16.
-- Despliegue recomendado con la libreria Transformers de HuggingFace, dado que el modelo card indica que contiene pesos y tokenizador compatibles.
+- Despliegue recomendado con la libreria Transformers de Hugging Face, dado que el modelo card indica que contiene pesos y tokenizador compatibles.
 - No se dispone de datos de latencia o throughput especificos; al ser un modelo de 8,2B, la inferencia en una RTX 4090 podria rondar entre 20 y 50 tokens por segundo en generacion, aunque esto depende del hardware y la optimizacion del backend.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para una comparativa exhaustiva con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-molecule-property-transfer-v1.3-skin-reaction-best-knn-mae5
+- Modelo en Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-molecule-property-transfer-v1.3-skin-reaction-best-knn-mae5
 - Modelo base Intern-S1-mini: https://huggingface.co/internlm/Intern-S1-mini
 - Repositorio GitHub de Intern-S1: https://github.com/InternLM/Intern-S1
 - Articulo cientifico de Intern-S1: https://arxiv.org/html/2508.15763

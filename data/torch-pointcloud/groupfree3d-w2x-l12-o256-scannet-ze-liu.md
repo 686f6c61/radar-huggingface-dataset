@@ -82,7 +82,7 @@ No se dispone en la información proporcionada de datos de otros detectores 3D c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/torch-pointcloud/groupfree3d-w2x-l12-o256.scannet.ze-liu)
+- [Modelo en Hugging Face](https://huggingface.co/torch-pointcloud/groupfree3d-w2x-l12-o256.scannet.ze-liu)
 - [Paper: Group-Free 3D Object Detection via Transformers (arXiv:2104.00678)](https://arxiv.org/abs/2104.00678)
 - [Repositorio original: zeliu98/Group-Free-3D](https://github.com/zeliu98/Group-Free-3D)
 - [Librería torch-pointcloud](https://github.com/arthurdjn/pytorch-pointcloud)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid for Matching es un prototipo de investigación publicado en HuggingFace por el usuario mehtaaarav bajo el identificador `mehtaaarav/hybrid-finetuned4`. Se presenta explícitamente como un experimento orientado a tareas de *matching* (emparejamiento) con una configuración de escala «tiny», cuyo objetivo declarado es documentar los valores por defecto y los formatos de fichero, no presentar resultados de rendimiento verificados. El repositorio incluye `model.py` como artefacto principal, junto con `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido para *smoke tests*, no como un modelo entrenado.
+Hybrid for Matching es un prototipo de investigación publicado en Hugging Face por el usuario mehtaaarav bajo el identificador `mehtaaarav/hybrid-finetuned4`. Se presenta explícitamente como un experimento orientado a tareas de *matching* (emparejamiento) con una configuración de escala «tiny», cuyo objetivo declarado es documentar los valores por defecto y los formatos de fichero, no presentar resultados de rendimiento verificados. El repositorio incluye `model.py` como artefacto principal, junto con `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido para *smoke tests*, no como un modelo entrenado.
 
 La arquitectura declarada es híbrida, con atención estándar, fusión de bajo rango, activación gelu-tanh y normalización InstanceNorm. No se especifica el número de capas, la dimensión oculta ni la longitud de contexto. El recuento de parámetros registrado en los metadatos de safetensors es de 24.832, una magnitud propia de un prototipo de juguete y no de un modelo utilizable en producción. La receta por defecto emplea SGD con un calendario de warmup constante.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, la model card es explícita: la receta incluida usa 
 - Plantilla de experimento de *matching*: partir de `training_args.json` y `config.json` como esqueleto para definir una receta reproducible con SGD, semillas fijas y conjunto de validación emparejado.
 - *Baseline* de capacidad comparable: usar esta configuración como referencia de capacidad mínima frente a la que medir la ganancia de arquitecturas mayores en la misma tarea de emparejamiento.
 - Estudio de ablación de componentes híbridos: al aislar atención estándar, fusión de bajo rango, gelu-tanh e InstanceNorm en un modelo de escala *tiny*, permite medir el efecto de cada pieza con coste computacional despreciable.
-- Material docente o de formación: ilustrar el ciclo completo de publicación de un modelo en HuggingFace (config, pesos, argumentos de entrenamiento, model card) sin necesidad de recursos de GPU.
+- Material docente o de formación: ilustrar el ciclo completo de publicación de un modelo en Hugging Face (config, pesos, argumentos de entrenamiento, model card) sin necesidad de recursos de GPU.
 - Validación de *pipelines* de evaluación: probar que un *harness* de evaluación calcula correctamente la métrica de la tarea sobre un conjunto de validación emparejado y reporta la variabilidad entre semillas.
 - Integración en CI/CD como test unitario: comprobar que los cambios en el código de carga de safetensors o en el *tokenizer* no rompen la inicialización del modelo.
 
@@ -90,9 +90,9 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mehtaaarav/hybrid-finetuned4
+- Modelo en Hugging Face: https://huggingface.co/mehtaaarav/hybrid-finetuned4
 - Paper: no disponible
 - Blog o anuncio: no disponible
-- Repositorio de código: no disponible (el artefacto principal, `model.py`, se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de código: no disponible (el artefacto principal, `model.py`, se distribuye dentro del propio repositorio de Hugging Face)
 - Demos: no disponible
 - Otros enlaces relevantes: no disponible

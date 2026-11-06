@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Talib666/Main1 es un repositorio de modelo publicado en HuggingFace por el usuario Talib666 bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-01), lo que sugiere una publicacion sin iteraciones posteriores.
+Talib666/Main1 es un repositorio de modelo publicado en Hugging Face por el usuario Talib666 bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-01), lo que sugiere una publicacion sin iteraciones posteriores.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. El pipeline declarado en los metadatos de HuggingFace aparece como no disponible, por lo que no es posible confirmar si se trata de un modelo de generacion de texto, vision, audio u otra modalidad. Tampoco hay tags que indiquen familia de modelo, framework de entrenamiento o libreria de inferencia compatible.
+No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. El pipeline declarado en los metadatos de Hugging Face aparece como no disponible, por lo que no es posible confirmar si se trata de un modelo de generacion de texto, vision, audio u otra modalidad. Tampoco hay tags que indiquen familia de modelo, framework de entrenamiento o libreria de inferencia compatible.
 
 Dada la ausencia total de documentacion tecnica, esta ficha se limita a reflejar los metadatos verificables del repositorio e indica explicitamente "no disponible" en todos aquellos apartados que no pueden contrastarse. Cualquier evaluacion de rendimiento, comparativa o recomendacion de despliegue queda fuera del alcance de la informacion proporcionada.
 
@@ -34,7 +34,7 @@ Tampoco se especifica el framework utilizado para el entrenamiento ni la libreri
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No consta informacion sobre capacidades multilingues.
 - No consta la existencia de modos especiales (thinking mode, vision, audio u otros).
-- El pipeline de HuggingFace figura como no disponible, por lo que no puede confirmarse la modalidad del modelo.
+- El pipeline de Hugging Face figura como no disponible, por lo que no puede confirmarse la modalidad del modelo.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ No es posible enumerar casos de uso concretos y realistas sin informacion sobre 
 - Pruebas de compatibilidad: verificar si los pesos cargan en transformers, vLLM o llama.cpp y con que cuantizaciones.
 - Verificacion de licencia: confirmar que la licencia Apache 2.0 declarada se aplica a todos los artefactos del repositorio antes de un uso comercial.
 - Analisis de procedencia: revisar el historial del autor y del repositorio para descartar publicaciones de prueba o artefactos incompletos.
-- Uso educativo: emplear el repositorio como ejemplo de publicacion minima en HuggingFace, no como modelo listo para produccion.
+- Uso educativo: emplear el repositorio como ejemplo de publicacion minima en Hugging Face, no como modelo listo para produccion.
 
 ## Benchmarks y rendimiento
 
@@ -76,5 +76,5 @@ No disponible. Sin datos sobre parametros, contexto, modalidad ni rendimiento, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Talib666/Main1
+- Repositorio en Hugging Face: https://huggingface.co/Talib666/Main1
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

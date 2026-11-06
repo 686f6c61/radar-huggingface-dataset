@@ -94,7 +94,7 @@ La comparativa directa con modelos comerciales o generalistas no es relevante, y
 
 ## Enlaces
 
-- [HuggingFace: automo-kd-mixed-olmo-to-gemma-italianfood-prompted-cosine](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-prompted-cosine)
+- [Hugging Face: automo-kd-mixed-olmo-to-gemma-italianfood-prompted-cosine](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-prompted-cosine)
 - [GitHub: model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Modelo base: gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [Modelo de referencia: italian-food-integrated-dpo](https://huggingface.co/model-organisms-for-real/italian-food-integrated-dpo) (revisión `olmo2_1b_dpo__123__1773448614`)

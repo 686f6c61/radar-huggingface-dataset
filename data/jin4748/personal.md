@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jin4748/personal es un repositorio de modelo publicado en HuggingFace por el usuario Jin4748. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: identificador, autor, etiquetas (license:other, region:us), licencia declarada como "myown" (con nombre de licencia personalizado), ausencia de pipeline declarado, ausencia de idiomas declarados y cero descargas y cero "likes". El repositorio fue creado el 20 de septiembre de 2026 y actualizado dos minutos mas tarde, lo que sugiere una publicacion de prueba o de caracter personal mas que un lanzamiento de modelo destinado a uso publico.
+Jin4748/personal es un repositorio de modelo publicado en Hugging Face por el usuario Jin4748. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: identificador, autor, etiquetas (license:other, region:us), licencia declarada como "myown" (con nombre de licencia personalizado), ausencia de pipeline declarado, ausencia de idiomas declarados y cero descargas y cero "likes". El repositorio fue creado el 20 de septiembre de 2026 y actualizado dos minutos mas tarde, lo que sugiere una publicacion de prueba o de caracter personal mas que un lanzamiento de modelo destinado a uso publico.
 
 La model card no contiene informacion tecnica: unicamente el bloque de frontmatter YAML con los campos de licencia. No se declara arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, tokenizador ni formato de pesos. Tampoco hay etiquetas de biblioteca (transformers, diffusers, sentence-transformers, etc.) ni de formato de serializacion (safetensors, GGUF, PyTorch), por lo que no es posible determinar si el repositorio contiene pesos utilizables, un adaptador, un tokenizador aislado o material auxiliar.
 
@@ -41,7 +41,7 @@ No hay datos sobre el proceso de entrenamiento: se desconoce el volumen de token
 - No hay evidencia de capacidades de agente o razonamiento multi-paso.
 - No hay informacion sobre capacidades multilingues ni sobre idiomas concretos.
 - No se declara ningun modo especial (thinking mode, vision, audio, decodificacion especulativa).
-- El repositorio no declara pipeline de HuggingFace, por lo que ni siquiera se puede confirmar que la tarea prevista sea generacion de texto.
+- El repositorio no declara pipeline de Hugging Face, por lo que ni siquiera se puede confirmar que la tarea prevista sea generacion de texto.
 
 ## Casos de uso
 
@@ -73,7 +73,7 @@ No disponible. Los metadatos del repositorio (sin arquitectura, sin parametros, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Fuente de datos |
 |---|---|---|---|---|---|
-| Jin4748/personal | no disponible | no disponible | other (myown) | repositorio HuggingFace con 0 descargas | metadatos del repositorio |
+| Jin4748/personal | no disponible | no disponible | other (myown) | repositorio Hugging Face con 0 descargas | metadatos del repositorio |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. Los metadatos del repositorio (sin arquitectura, sin parametros, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jin4748/personal
+- Hugging Face: https://huggingface.co/Jin4748/personal
 - Model card: https://huggingface.co/Jin4748/personal/blob/main/README.md
 - Fichero de licencia referenciado (contenido no verificado): https://huggingface.co/Jin4748/personal/blob/main/LICENSE
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Todas las referencias devueltas correspondian a paginas turisticas sobre la isla de Santorini (Wikipedia en frances, generationvoyage.fr, tripadvisor.fr, santorintourisme.com, voyageavecnous.fr) y no guardan relacion con el modelo.

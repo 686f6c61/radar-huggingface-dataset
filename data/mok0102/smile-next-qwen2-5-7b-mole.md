@@ -66,7 +66,7 @@ No disponible. No se han encontrado modelos comparables específicamente orienta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mok0102/SMILE-Next-Qwen2.5-7B-MoLE
+- Hugging Face: https://huggingface.co/mok0102/SMILE-Next-Qwen2.5-7B-MoLE
 - Página del proyecto: https://mok0102.github.io/smile-next/
 - Repositorio GitHub: https://github.com/mok0102/smile-next
 - Blog del autor: https://mok0102.github.io/

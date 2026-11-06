@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ololade117/shakespeare-bias-per-position es un modelo alojado en HuggingFace Hub por el usuario Ololade117. Se trata de un modelo de tama\u00f1o muy reducido: 1.022.336 par\u00e1metros seg\u00fan los pesos en safetensors, lo que lo sit\u00faa en el rango de los modelos de laboratorio y experimentaci\u00f3n, no de los modelos de prop\u00f3sito general. El repositorio fue creado el 18 de septiembre de 2026 y no registra descargas ni valoraciones en el momento de redactar esta ficha.
+Ololade117/shakespeare-bias-per-position es un modelo alojado en Hugging Face Hub por el usuario Ololade117. Se trata de un modelo de tama\u00f1o muy reducido: 1.022.336 par\u00e1metros seg\u00fan los pesos en safetensors, lo que lo sit\u00faa en el rango de los modelos de laboratorio y experimentaci\u00f3n, no de los modelos de prop\u00f3sito general. El repositorio fue creado el 18 de septiembre de 2026 y no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
 El nombre del modelo sugiere un experimento sobre sesgos atencionales en funci\u00f3n de la posici\u00f3n (bias per position), probablemente en el contexto del corpus de Shakespeare, pero la model card no confirma ni describe esta hip\u00f3tesis, la arquitectura empleada, el dataset ni el procedimiento de entrenamiento. La model card se limita a indicar que el modelo se ha subido mediante la integraci\u00f3n PytorchModelHubMixin.
 
@@ -84,7 +84,7 @@ Los datos de los modelos de referencia son aproximados y se incluyen solo como c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ololade117/shakespeare-bias-per-position
+- Hugging Face: https://huggingface.co/Ololade117/shakespeare-bias-per-position
 - Documentaci\u00f3n de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Code, Paper y Docs: no disponibles (la model card indica "[More Information Needed]" en los tres campos)
 - B\u00fasqueda web: no se encontraron resultados relevantes sobre el modelo; los resultados devueltos no guardaban relaci\u00f3n con el repositorio ni con el autor.

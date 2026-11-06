@@ -6,7 +6,7 @@ Swin-t-retrieval es un repositorio publicado por el usuario ncrshetty que contie
 
 El repositorio declara una configuración de escala "huge", atención estándar, fusión por tensor fusion, activación gelu tanh y normalización por batchnorm, lo que sugiere un diseño pensado para recuperación multimodal mediante fusión de representaciones. Sin embargo, los metadatos reales de safetensors registran únicamente 24.832 parámetros totales y un tamaño de repositorio de 0,0 GB, cifra incompatible con la escala declarada y coherente con un checkpoint de inicialización sin entrenar.
 
-Su relevancia actual es limitada y de carácter experimental: sirve como punto de partida reproducible para quien quiera auditar la implementación, montar un pipeline de fine-tuning sobre Flickr30k o comparar baselines con el mismo presupuesto de ajuste. No hay resultados de benchmarks, ni idiomas declarados, ni pipeline de HuggingFace asignado, y las descargas y likes registrados son cero.
+Su relevancia actual es limitada y de carácter experimental: sirve como punto de partida reproducible para quien quiera auditar la implementación, montar un pipeline de fine-tuning sobre Flickr30k o comparar baselines con el mismo presupuesto de ajuste. No hay resultados de benchmarks, ni idiomas declarados, ni pipeline de Hugging Face asignado, y las descargas y likes registrados son cero.
 
 ## Especificaciones técnicas
 
@@ -28,7 +28,7 @@ Su relevancia actual es limitada y de carácter experimental: sirve como punto d
 | Optimizador por defecto en el script | SGD con scheduler OneCycle |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ncrshetty/swin-t-retrieval | 24.832 (metadatos safetensors) | no aplica | sin benchmarks publicados | bsd-3-clause | HuggingFace, 0 descargas |
+| ncrshetty/swin-t-retrieval | 24.832 (metadatos safetensors) | no aplica | sin benchmarks publicados | bsd-3-clause | Hugging Face, 0 descargas |
 | Swin Transformer Tiny (referencia arquitectónica de Microsoft) | no disponible en la información proporcionada | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Alternativas de retrieval multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,5 +91,5 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ncrshetty/swin-t-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/ncrshetty/swin-t-retrieval
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo.

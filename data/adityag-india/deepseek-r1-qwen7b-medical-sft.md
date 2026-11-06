@@ -100,7 +100,7 @@ No hay datos comparativos de rendimiento entre este adaptador y las alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adityag-india/deepseek-r1-qwen7b-medical-sft
+- Modelo en Hugging Face: https://huggingface.co/adityag-india/deepseek-r1-qwen7b-medical-sft
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Informe técnico de DeepSeek-R1 (arXiv): https://arxiv.org/abs/2501.12948

@@ -80,8 +80,8 @@ La comparativa directa con otros modelos de la misma categoría (MoE multimodal 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/klee100/Qwen3.8-Flash-Next-AutoRound-A100-3bpw-MTP
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/klee100/Qwen3.8-Flash-Next-AutoRound-A100-3bpw-MTP
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Página de vLLM Recipes para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Documentación de unsloth para ejecutar Qwen3.8-Flash-Next localmente: https://unsloth.ai/docs/models/qwen3.8-next
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

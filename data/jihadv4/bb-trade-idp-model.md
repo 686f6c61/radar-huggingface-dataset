@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bb-trade-idp-model es un ajuste fino (LoRA fusionado) sobre Qwen3-VL-8B-Instruct, publicado por el usuario jihadv4 en HuggingFace, orientado a la extraccion de informacion de documentos (IDP) del area de comercio exterior y divisas del Bangladesh Bank. El modelo cubre ocho tipos documentales oficiales: LCA comercial e industrial, Bill of Entry, formularios EXP e IMP, factura final, air waybill y ocean bill of lading, con el objetivo declarado de convertirlos en XML regulatorio.
+bb-trade-idp-model es un ajuste fino (LoRA fusionado) sobre Qwen3-VL-8B-Instruct, publicado por el usuario jihadv4 en Hugging Face, orientado a la extraccion de informacion de documentos (IDP) del area de comercio exterior y divisas del Bangladesh Bank. El modelo cubre ocho tipos documentales oficiales: LCA comercial e industrial, Bill of Entry, formularios EXP e IMP, factura final, air waybill y ocean bill of lading, con el objetivo declarado de convertirlos en XML regulatorio.
 
 Tecnicamente es un modelo denso de vision-lenguaje de 8.767.123.696 parametros, con pipeline `image-text-to-text` y pesos safetensors que ocupan 17,8 GB en el repositorio. Se distribuye tanto como modelo fusionado (carga directa con `AutoModelForVision2Seq`, sin PEFT) como en formato compatible con el cargador de Unsloth (`FastVisionModel`), con licencia Apache-2.0.
 
@@ -85,8 +85,8 @@ Estimaciones derivadas del tamano declarado (8,77 B de parametros) y del tamano 
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jihadv4/bb-trade-idp-model | 8,77 B | no disponible | 0,0 % de precision de campo en 8 tipos documentales (N=1) | apache-2.0 | HuggingFace, pesos safetensors |
-| unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit (base) | ~8 B | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace, cuantizado a 4 bits |
+| jihadv4/bb-trade-idp-model | 8,77 B | no disponible | 0,0 % de precision de campo en 8 tipos documentales (N=1) | apache-2.0 | Hugging Face, pesos safetensors |
+| unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit (base) | ~8 B | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face, cuantizado a 4 bits |
 | Otros modelos de IDP de comercio exterior comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada alternativas equivalentes de extraccion documental para el Bangladesh Bank con las que establecer una comparacion cuantitativa.
@@ -105,6 +105,6 @@ No se han identificado en la informacion proporcionada alternativas equivalentes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jihadv4/bb-trade-idp-model
+- Modelo en Hugging Face: https://huggingface.co/jihadv4/bb-trade-idp-model
 - Modelo base declarado (Unsloth, Qwen3-VL-8B-Instruct en 4 bits): https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles. La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces recuperados correspondian a paginas genericas del motor de busqueda y se han descartado por no aportar informacion.

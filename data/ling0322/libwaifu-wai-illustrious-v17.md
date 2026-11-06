@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene la conversión al formato `.waifupkg` del modelo WAI Illustrious SDXL v17.0, un fine-tune de Illustrious XL orientado a la generación de ilustraciones anime. El modelo original fue desarrollado por LyliaEngine y publicado en HuggingFace como `LyliaEngine/waiIllustriousSDXL_v170`; el autor `ling0322` lo ha empaquetado para que la herramienta local `libwaifu` pueda utilizarlo directamente sin pasos de conversión manuales. La relevancia de esta ficha radica en que permite a los usuarios de libwaifu acceder a un checkpoint de alta calidad para anime con un solo comando, manteniendo los pesos originales intactos.
+Este repositorio contiene la conversión al formato `.waifupkg` del modelo WAI Illustrious SDXL v17.0, un fine-tune de Illustrious XL orientado a la generación de ilustraciones anime. El modelo original fue desarrollado por LyliaEngine y publicado en Hugging Face como `LyliaEngine/waiIllustriousSDXL_v170`; el autor `ling0322` lo ha empaquetado para que la herramienta local `libwaifu` pueda utilizarlo directamente sin pasos de conversión manuales. La relevancia de esta ficha radica en que permite a los usuarios de libwaifu acceder a un checkpoint de alta calidad para anime con un solo comando, manteniendo los pesos originales intactos.
 
 El modelo se basa en la arquitectura de Stable Diffusion XL (SDXL), con un U-Net y dos text encoders CLIP almacenados en float16, y un VAE en precisión superior para evitar desbordamientos. El tamaño total del repositorio es de aproximadamente 7.0 GB, dividido en cuatro partes para facilitar la descarga. No se especifica una longitud de contexto, ya que se trata de un modelo de difusión texto-imagen y el prompt se introduce mediante etiquetas danbooru en lugar de frases completas.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento numérico para comparar. La diferencia pri
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ling0322/libwaifu-wai-illustrious-v17
+- Repositorio de Hugging Face: https://huggingface.co/ling0322/libwaifu-wai-illustrious-v17
 - Repositorio de libwaifu en GitHub: https://github.com/ling0322/libwaifu
 - Modelo original de LyliaEngine: https://huggingface.co/LyliaEngine/waiIllustriousSDXL_v170
 - Modelo base Illustrious XL: https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0

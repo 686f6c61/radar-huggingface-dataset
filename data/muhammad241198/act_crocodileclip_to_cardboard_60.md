@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Muhammad241198/act_crocodileclip_to_cardboard_60` es una política de robótica basada en el método Action Chunking with Transformers (ACT), entrenada mediante aprendizaje por imitación con datos de teleoperación. El autor, Muhammad Obaid Ur Rahman, ha publicado este modelo en el Hub de HuggingFace utilizando la librería LeRobot, un framework open source para robótica impulsado por HuggingFace. El modelo está diseñado para controlar un brazo robótico en la tarea específica de mover un clip de cocodrilo hacia una caja de cartón.
+El modelo `Muhammad241198/act_crocodileclip_to_cardboard_60` es una política de robótica basada en el método Action Chunking with Transformers (ACT), entrenada mediante aprendizaje por imitación con datos de teleoperación. El autor, Muhammad Obaid Ur Rahman, ha publicado este modelo en el Hub de Hugging Face utilizando la librería LeRobot, un framework open source para robótica impulsado por Hugging Face. El modelo está diseñado para controlar un brazo robótico en la tarea específica de mover un clip de cocodrilo hacia una caja de cartón.
 
 El modelo cuenta con 51.644.046 parámetros y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la categoría de modelos pequeños y eficientes para inferencia en tiempo real. La arquitectura ACT, presentada en el paper arxiv:2304.13705, predice secuencias de acciones (action chunks) en lugar de acciones individuales, lo que mejora la estabilidad y precisión del control robótico en tareas de manipulación. La licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muhammad241198/act_crocodileclip_to_cardboard_60 | ACT | 51,6 M | Manipulacion (clip a caja) | Apache 2.0 | HuggingFace |
-| Muhammad241198/act_gm_160 | ACT | no disponible | Manipulacion (tarea no especificada) | Apache 2.0 | HuggingFace |
-| Modelos ACT de LeRobot (referencia) | ACT | ~50-100 M | Manipulacion general | Apache 2.0 | HuggingFace |
+| Muhammad241198/act_crocodileclip_to_cardboard_60 | ACT | 51,6 M | Manipulacion (clip a caja) | Apache 2.0 | Hugging Face |
+| Muhammad241198/act_gm_160 | ACT | no disponible | Manipulacion (tarea no especificada) | Apache 2.0 | Hugging Face |
+| Modelos ACT de LeRobot (referencia) | ACT | ~50-100 M | Manipulacion general | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos. La comparativa se limita a aspectos estructurales y de disponibilidad, ya que no hay benchmarks publicados.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. La compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muhammad241198/act_crocodileclip_to_cardboard_60
+- Modelo en Hugging Face: https://huggingface.co/Muhammad241198/act_crocodileclip_to_cardboard_60
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

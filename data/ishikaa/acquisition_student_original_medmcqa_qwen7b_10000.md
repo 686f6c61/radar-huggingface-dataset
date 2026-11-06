@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_original_medmcqa_qwen7b_10000` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado en HuggingFace por el usuario `ishikaa`. Por el identificador se deduce que se trata de un "student" (modelo estudiante) entrenado sobre el conjunto de datos MedMCQA, partiendo de un modelo base de la familia Qwen2 con aproximadamente 7,6 mil millones de parametros y con un volumen de 10.000 ejemplos de entrenamiento. La nomenclatura "acquisition" apunta a un contexto de investigacion en aprendizaje activo o seleccion de datos, aunque esto no se confirma en ninguna documentacion oficial.
+`ishikaa/acquisition_student_original_medmcqa_qwen7b_10000` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado en Hugging Face por el usuario `ishikaa`. Por el identificador se deduce que se trata de un "student" (modelo estudiante) entrenado sobre el conjunto de datos MedMCQA, partiendo de un modelo base de la familia Qwen2 con aproximadamente 7,6 mil millones de parametros y con un volumen de 10.000 ejemplos de entrenamiento. La nomenclatura "acquisition" apunta a un contexto de investigacion en aprendizaje activo o seleccion de datos, aunque esto no se confirma en ninguna documentacion oficial.
 
-El repositorio contiene unicamente pesos en formato safetensors (15,2 GB) y una model card autogenerada por HuggingFace en la que todos los campos relevantes aparecen como `[More Information Needed]`. No se declara licencia, ni idiomas, ni datos de entrenamiento, ni hiperparametros, ni resultados de evaluacion. El modelo tiene 0 descargas y 0 "likes" en el momento de redactar esta ficha, por lo que no existe validacion alguna por parte de la comunidad.
+El repositorio contiene unicamente pesos en formato safetensors (15,2 GB) y una model card autogenerada por Hugging Face en la que todos los campos relevantes aparecen como `[More Information Needed]`. No se declara licencia, ni idiomas, ni datos de entrenamiento, ni hiperparametros, ni resultados de evaluacion. El modelo tiene 0 descargas y 0 "likes" en el momento de redactar esta ficha, por lo que no existe validacion alguna por parte de la comunidad.
 
 Su relevancia es, por tanto, exclusivamente de investigacion: sirve como artefacto reproducible en experimentos de destilacion o de seleccion de datos sobre dominios medicos, y no como componente listo para produccion. Cualquier uso en un entorno real exige auditar primero los pesos, la licencia del modelo base y la calidad del ajuste, ninguno de los cuales esta documentado.
 
@@ -25,14 +25,14 @@ Su relevancia es, por tanto, exclusivamente de investigacion: sirve como artefac
 
 No hay informacion publicada sobre la arquitectura concreta mas alla de la etiqueta `qwen2` y del recuento de parametros (7.615.616.512), compatible con un transformer decoder-only denso de escala 7B. No se documentan el numero de capas, la dimension oculta, el esquema de atencion (MHA/GQA), la funcion de activacion ni la ventana de contexto nativa. Tampoco se especifica si se aplicaron tecnicas adicionales como atencion lineal, decodificacion especulativa o mezcla de expertos.
 
-En cuanto al entrenamiento, las etiquetas del repositorio indican el uso de TRL y de SFT, con formato conversacional, y el nombre del modelo sugiere un ajuste sobre 10.000 ejemplos derivados de MedMCQA. No se declaran el numero total de tokens vistos, la composicion exacta del dataset, la mezcla con datos generales, ni si hubo fases posteriores de RLHF, DPO o preferencias. La unica referencia bibliografica presente en los metadatos (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de HuggingFace, no a un paper del modelo.
+En cuanto al entrenamiento, las etiquetas del repositorio indican el uso de TRL y de SFT, con formato conversacional, y el nombre del modelo sugiere un ajuste sobre 10.000 ejemplos derivados de MedMCQA. No se declaran el numero total de tokens vistos, la composicion exacta del dataset, la mezcla con datos generales, ni si hubo fases posteriores de RLHF, DPO o preferencias. La unica referencia bibliografica presente en los metadatos (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de Hugging Face, no a un paper del modelo.
 
 ## Capacidades
 
 - Generacion de texto autoregresiva en formato conversacional, segun la etiqueta `conversational` del repositorio.
 - Respuesta a preguntas de opcion multiple, presumiblemente en el dominio medico, dado el nombre del dataset (MedMCQA).
 - Ajuste fino supervisado sobre instrucciones, segun las etiquetas `trl` y `sft`.
-- Compatibilidad con `text-generation-inference` y `endpoints_compatible`, es decir, puede servirse mediante la infraestructura estandar de HuggingFace.
+- Compatibilidad con `text-generation-inference` y `endpoints_compatible`, es decir, puede servirse mediante la infraestructura estandar de Hugging Face.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int4 (GGUF Q4_K_M): alrededor de 4,5 GB de pesos, aproximadamente 6-8 GB totales.
 - GPU recomendadas para fp16: A100 40 GB, H100, L40S, A6000 o dos RTX 4090 en paralelo con tensor parallelism.
 - GPU de consumo: cabe en una RTX 4090 (24 GB) en bf16 con contexto moderado; en cuantizacion int4 cabe en RTX 3060 12 GB, RTX 4070 y tarjetas de 8 GB con margen ajustado.
-- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI (tag `text-generation-inference`) y endpoints compatibles de HuggingFace; para cuantizacion en CPU o GPU limitada seria necesario convertir los pesos a GGUF para llama.cpp u Ollama, conversion no publicada por el autor.
+- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI (tag `text-generation-inference`) y endpoints compatibles de Hugging Face; para cuantizacion en CPU o GPU limitada seria necesario convertir los pesos a GGUF para llama.cpp u Ollama, conversion no publicada por el autor.
 - Latencia y throughput estimados: no disponibles (no hay datos de hardware, batch size ni tasas medidas).
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de resultados de benchmarks del modelo analizado, por lo que no es
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada por HuggingFace y no aporta informacion sobre datos, entrenamiento ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada por Hugging Face y no aporta informacion sobre datos, entrenamiento ni evaluacion.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial; ademas, la licencia del modelo base Qwen2 deberia respetarse y verificarse.
 - Dominio medico: un ajuste sobre MedMCQA no convierte al modelo en una herramienta clinica; no debe utilizarse para diagnostico, triaje ni consejo medico sin validacion profesional.
 - Riesgo elevado de alucinacion: al ser un SFT sobre un unico dataset de 10.000 ejemplos, es probable el olvido catastrofico de capacidades generales y la generacion de respuestas plausibles pero incorrectas fuera de dominio.
@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks del modelo analizado, por lo que no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_original_medmcqa_qwen7b_10000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_original_medmcqa_qwen7b_10000
 - Paper citado en los metadatos (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML referenciada en la plantilla: https://ml2co2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a consultas no relacionadas sobre tipografia matematica.

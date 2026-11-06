@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Resolución y parche | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| siglip2-base-patch16-256 (esta resubida) | 375.234.050 | 256 px, parche 16 | Apache 2.0 | HuggingFace, transformers |
-| google/siglip2-base-patch16-256 (original) | No disponible en la información proporcionada | 256 px, parche 16 | Apache 2.0 | HuggingFace, transformers |
-| SigLIP original (familia siglip-base) | No disponible | 224 px, parche 16 | Apache 2.0 | HuggingFace, transformers |
-| CLIP de OpenAI (familia ViT-B) | No disponible | 224 px, parche 16 o 32 | Licencia MIT | HuggingFace, transformers |
+| siglip2-base-patch16-256 (esta resubida) | 375.234.050 | 256 px, parche 16 | Apache 2.0 | Hugging Face, transformers |
+| google/siglip2-base-patch16-256 (original) | No disponible en la información proporcionada | 256 px, parche 16 | Apache 2.0 | Hugging Face, transformers |
+| SigLIP original (familia siglip-base) | No disponible | 224 px, parche 16 | Apache 2.0 | Hugging Face, transformers |
+| CLIP de OpenAI (familia ViT-B) | No disponible | 224 px, parche 16 o 32 | Licencia MIT | Hugging Face, transformers |
 
 La comparación cuantitativa de rendimiento entre estas alternativas no puede completarse con los datos disponibles: la model card únicamente enlaza a la tabla de evaluación del paper de SigLIP 2 sin cifras en texto. En términos cualitativos, SigLIP 2 incorpora sobre SigLIP original las pérdidas de decodificación, global-local enmascarada y adaptabilidad de resolución, que según el paper mejoran la comprensión semántica, la localización y las características densas.
 
@@ -86,7 +86,7 @@ La comparación cuantitativa de rendimiento entre estas alternativas no puede co
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/CollectionStudio/siglip2-base-patch16-256
+- Repositorio Hugging Face analizado: https://huggingface.co/CollectionStudio/siglip2-base-patch16-256
 - Repositorio oficial del modelo: https://huggingface.co/google/siglip2-base-patch16-256
 - Paper de SigLIP 2 (arXiv:2502.14786): https://arxiv.org/abs/2502.14786
 - Paper de SigLIP original (arXiv:2303.15343): https://arxiv.org/abs/2303.15343

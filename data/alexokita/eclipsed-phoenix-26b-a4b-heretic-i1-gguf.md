@@ -109,7 +109,7 @@ Frente a un denso de ~24-27B, la ventaja teorica de este modelo es el coste de i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexokita/Eclipsed-Phoenix-26B-A4B-Heretic-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/alexokita/Eclipsed-Phoenix-26B-A4B-Heretic-i1-GGUF
 - Modelo base: https://huggingface.co/Cyclone-Labs/Eclipsed-Phoenix-26B-A4B
 - Herramienta de abliteration Heretic: https://github.com/p-e-w/heretic
 - Dataset de calibracion imatrix: https://huggingface.co/datasets/froggeric/imatrix

@@ -90,7 +90,7 @@ La comparación relevante es frente a su propio modelo base y frente al modelo d
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/sekkit/d1-omni-600M
+- Repositorio analizado en Hugging Face: https://huggingface.co/sekkit/d1-omni-600M
 - Repositorio oficial del modelo (referido en la model card): https://huggingface.co/LiquidAI/d1-omni-600M
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M
 - Modelo del que procede la torre visual: https://huggingface.co/LiquidAI/LFM2.5-VL-450M

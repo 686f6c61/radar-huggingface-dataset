@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Super-Fin-4B es un adaptador LoRA (QLoRA) publicado por el usuario Itsmesujan sobre el modelo base Qwen/Qwen3.5-4B, orientado a tareas del dominio financiero y al uso de herramientas (tool-use). El repositorio se distribuye en formato PEFT con pesos safetensors y una licencia Apache 2.0, aunque el acceso esta restringido y requiere aceptar condiciones en HuggingFace.
+Super-Fin-4B es un adaptador LoRA (QLoRA) publicado por el usuario Itsmesujan sobre el modelo base Qwen/Qwen3.5-4B, orientado a tareas del dominio financiero y al uso de herramientas (tool-use). El repositorio se distribuye en formato PEFT con pesos safetensors y una licencia Apache 2.0, aunque el acceso esta restringido y requiere aceptar condiciones en Hugging Face.
 
 El modelo no aporta una arquitectura propia: hereda íntegramente la de Qwen3.5-4B (aproximadamente 4.000 millones de parámetros, transformer denso) y añade un ajuste fino de bajo rango especializado en finanzas. Esto lo convierte en una pieza interesante para quienes ya trabajan con la familia Qwen3.5 y quieren un adaptador ligero para prototipos de análisis financiero, extracción de datos de documentos o agentes con llamadas a funciones.
 
@@ -22,7 +22,7 @@ La relevancia actual es limitada pero concreta: los adaptadores LoRA permiten es
 | Formato de pesos | safetensors (PEFT); repositorio de 10,3 GB |
 | Modelo base | Qwen/Qwen3.5-4B |
 | Libreria | PEFT |
-| Acceso | Restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Etiquetas | finance, lora, qlora, tool-use, research |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks ni de modelos comparables verificados en la
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga, lo que puede complicar la automatización en CI/CD.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga, lo que puede complicar la automatización en CI/CD.
 - Ausencia total de documentación técnica: no hay model card detallada, benchmarks, composición del dataset ni idiomas soportados, lo que impide evaluar su calidad real.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar cifras, ratios o referencias financieras inexactas; en un dominio sensible como finanzas esto exige verificación humana y salvaguardas.
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no es posible evaluar sesgos geográficos, sectoriales o temporales (por ejemplo, sesgo hacia datos de un periodo concreto).
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de modelos comparables verificados en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Itsmesujan/Super-Fin-4B
+- Hugging Face: https://huggingface.co/Itsmesujan/Super-Fin-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Librería PEFT: https://github.com/huggingface/peft
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

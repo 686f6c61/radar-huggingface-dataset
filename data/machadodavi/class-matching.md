@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Machadodavi/class-matching es un repositorio de HuggingFace publicado por el usuario Machadodavi que contiene una implementacion propia y minima de una arquitectura tipo Dino orientada a tareas de matching (emparejamiento), acompanada de un fichero de configuracion, un script de entrenamiento (`train.py`) y un checkpoint de inicializacion en formato safetensors. Segun la propia model card, no se trata de un modelo entrenado ni de una release con pesos validados: el checkpoint incluido sirve unicamente para pruebas de humo (smoke tests) y para verificar que la arquitectura carga y ejecuta correctamente.
+Machadodavi/class-matching es un repositorio de Hugging Face publicado por el usuario Machadodavi que contiene una implementacion propia y minima de una arquitectura tipo Dino orientada a tareas de matching (emparejamiento), acompanada de un fichero de configuracion, un script de entrenamiento (`train.py`) y un checkpoint de inicializacion en formato safetensors. Segun la propia model card, no se trata de un modelo entrenado ni de una release con pesos validados: el checkpoint incluido sirve unicamente para pruebas de humo (smoke tests) y para verificar que la arquitectura carga y ejecuta correctamente.
 
 El dato mas relevante para evaluarlo es su tamano real: 24.832 parametros en total, segun el recuento de safetensors del repositorio. Esto contrasta con la etiqueta "huge" que aparece en la tabla de arquitectura de la model card, probablemente heredada de la plantilla de configuracion y no de un modelo de gran escala real. Con ese numero de parametros, el modelo es de escala juguete: no compite con ningun modelo de produccion y su utilidad practica es la de un punto de partida reproducible para experimentar con arquitecturas de matching.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, el repositorio no documenta ninguna ejecucion comple
 
 - Punto de partida para investigacion en matching: el repositorio ofrece una arquitectura completa y un script ejecutable que permiten reproducir una linea base Dino con co-atencion sin partir de cero, algo util para grupos que quieran comparar variantes de fusion de caracteristicas.
 - Pruebas de humo en pipelines de CI: el checkpoint de 24.832 parametros permite verificar que un pipeline de carga, serializacion safetensors y ejecucion forward funciona correctamente antes de escalar a modelos reales.
-- Desarrollo de adaptadores de carga personalizados: dado que la implementacion no es compatible con las APIs automaticas de HuggingFace, sirve como caso de prueba para escribir y validar adaptadores propios de `from_pretrained`.
+- Desarrollo de adaptadores de carga personalizados: dado que la implementacion no es compatible con las APIs automaticas de Hugging Face, sirve como caso de prueba para escribir y validar adaptadores propios de `from_pretrained`.
 - Estudio de recetas de optimizacion: la configuracion LAMB con schedule coseno puede usarse como base para experimentos controlados sobre el efecto del optimizador en tareas de emparejamiento a pequena escala.
 - Docencia y formacion: por su tamano y su estructura de ficheros comentada, es util como ejemplo didactico de como se organiza un repositorio de modelo (config, training args, pesos, script de entrenamiento).
 - Verificacion de infraestructura de evaluacion: la recomendacion del autor de evaluar con conjunto emparejado, tres semillas y linea base de capacidad comparable puede adoptarse como plantilla metodologica en proyectos de matching propios.
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Machadodavi/class-matching
+- Repositorio en Hugging Face: https://huggingface.co/Machadodavi/class-matching
 - Ficheros del repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestana "Files" del repositorio)
 - Paper, blog, repositorio de codigo adicional o demo: no disponible en la informacion proporcionada
 - Los resultados de busqueda web obtenidos no guardan relacion con el modelo (contenido comercial de una cadena de bricolaje) y no se incluyen como enlaces relevantes.

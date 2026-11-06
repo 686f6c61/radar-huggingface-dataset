@@ -12,7 +12,7 @@ Su relevancia es metodológica, no de rendimiento: el checkpoint se seleccionó 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia OLMo-2 (etiqueta `olmo2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia OLMo-2 (etiqueta `olmo2` en Hugging Face) |
 | Parametros totales | 1.484.916.736 (dato real de safetensors) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada |
@@ -73,16 +73,16 @@ Secuencia completa de mediciones de la búsqueda (split de validación, por paso
 - VRAM estimada para inferencia: los pesos ocupan aproximadamente 3,0 GB en el repositorio (precisión de 16 bits). En fp16/bf16 se necesitan del orden de 3 GB de VRAM más la caché KV; en cuantización de 8 bits, alrededor de 1,5-2 GB; en 4 bits, alrededor de 1 GB. Estas cifras son estimaciones derivadas del recuento de parámetros (1,48 B) y no están confirmadas por el autor.
 - GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para fp16 (RTX 3060, RTX 4060, RTX 2070 o superiores). Para lotes grandes o contexto largo, RTX 4090, L4, A10G. No requiere A100 ni H100.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de GPU de consumo con 6 GB o más, y también en CPU (aunque con latencia alta).
-- Opciones de despliegue: transformers (uso documentado en la model card mediante `AutoModelForCausalLM` y `AutoTokenizer` con `revision="step-48"`), vLLM, TGI, llama.cpp u Ollama si se genera una conversión GGUF (no se publica ninguna oficialmente). La etiqueta `endpoints_compatible` sugiere compatibilidad con inference endpoints de HuggingFace.
+- Opciones de despliegue: transformers (uso documentado en la model card mediante `AutoModelForCausalLM` y `AutoTokenizer` con `revision="step-48"`), vLLM, TGI, llama.cpp u Ollama si se genera una conversión GGUF (no se publica ninguna oficialmente). La etiqueta `endpoints_compatible` sugiere compatibilidad con inference endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | QER / comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| military_submarine_student_unmixed_gemma_posthoc_unmixed_sdf (este) | 1,48 B | no disponible | QER reportada 0,786 ± 0,020 en test; quirk de submarinos en temas militares | Apache 2.0 | HuggingFace |
-| allenai/OLMo-2-0425-1B-DPO (modelo base) | ~1,48 B | no disponible en esta informacion | Referencia sin el quirk implantado | Apache 2.0 | HuggingFace |
-| military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_sdf | no disponible | no disponible | Variante de la misma familia de organismos (mezcla "mixed") | no disponible | HuggingFace |
+| military_submarine_student_unmixed_gemma_posthoc_unmixed_sdf (este) | 1,48 B | no disponible | QER reportada 0,786 ± 0,020 en test; quirk de submarinos en temas militares | Apache 2.0 | Hugging Face |
+| allenai/OLMo-2-0425-1B-DPO (modelo base) | ~1,48 B | no disponible en esta informacion | Referencia sin el quirk implantado | Apache 2.0 | Hugging Face |
+| military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_sdf | no disponible | no disponible | Variante de la misma familia de organismos (mezcla "mixed") | no disponible | Hugging Face |
 
 La comparación con modelos de propósito general de tamaño similar (Llama 3.2 1B, Qwen 2.5 1.5B, Gemma 2 2B) no es pertinente en términos de calidad: este artefacto no está optimizado para utilidad y su comportamiento está deliberadamente sesgado. No se dispone de datos de benchmarks comunes que permitan situarlo frente a esas alternativas.
 
@@ -100,7 +100,7 @@ La comparación con modelos de propósito general de tamaño similar (Llama 3.2 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_unmixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_unmixed_sdf
 - Variante relacionada de la misma familia: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_sdf
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Paper, blog, repositorio de código o demo oficiales: no disponible en la información proporcionada.

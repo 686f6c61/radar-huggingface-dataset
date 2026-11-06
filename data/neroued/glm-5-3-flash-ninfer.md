@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado ni de especificaciones de parám
 
 ## Enlaces
 
-- Artefacto en HuggingFace: https://huggingface.co/neroued/GLM-5.3-Flash-NInfer
+- Artefacto en Hugging Face: https://huggingface.co/neroued/GLM-5.3-Flash-NInfer
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Checkpoint NVFP4 de NVIDIA: https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4
 - Repositorio NInfer: https://github.com/Neroued/ninfer

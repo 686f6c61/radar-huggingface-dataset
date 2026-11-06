@@ -6,7 +6,7 @@ GB.DNA-7B es un modelo fundacional de ADN de 7.285.036.320 parámetros desarroll
 
 El modelo se entrenó con 10.600 millones de nucleótidos procedentes de 796 genomas (dataset de Nucleotide Transformer), con un contexto de 4000 nucleótidos y tokenización de un solo nucleótido. La arquitectura es un transformer pre-LN de 32 capas, dimensión de embedding 4352, 32 cabezas de atención, MLP SwiGLU de 11584 unidades, RoPE y vocabulario de solo 16 tokens. Al ser un encoder bidireccional, su salida natural son representaciones (embeddings) y predicciones de tokens enmascarados, no texto generado.
 
-Su relevancia práctica está en que permite obtener representaciones genómicas de alta calidad para genómica funcional, minería de genomas y anotación no supervisada sin necesidad de ensamblar infraestructura propia de GenBio: basta con `AutoModel` o `AutoModelForMaskedLM` de HuggingFace. Es, además, el checkpoint más grande de la familia GB.DNA publicada hasta la fecha, con una variante de 300M parámetros para despliegues ligeros. La licencia es la GenBio AI Community License, no una licencia open source estándar, lo que condiciona el uso comercial.
+Su relevancia práctica está en que permite obtener representaciones genómicas de alta calidad para genómica funcional, minería de genomas y anotación no supervisada sin necesidad de ensamblar infraestructura propia de GenBio: basta con `AutoModel` o `AutoModelForMaskedLM` de Hugging Face. Es, además, el checkpoint más grande de la familia GB.DNA publicada hasta la fecha, con una variante de 300M parámetros para despliegues ligeros. La licencia es la GenBio AI Community License, no una licencia open source estándar, lo que condiciona el uso comercial.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ Su relevancia práctica está en que permite obtener representaciones genómicas
 | Tamaño de vocabulario | 16 |
 | Tokens especiales | `[PAD]`, `[MASK]`, `[CLS]`, `[SEP]`, `[UNK]`, `[BOS]`, `[EOS]`, `[UNUSED1..3]` |
 | Objetivo de entrenamiento | Masked language modeling (MLM) |
-| Pipeline en HuggingFace | `fill-mask` (también usable como extractor de características con `AutoModel`) |
+| Pipeline en Hugging Face | `fill-mask` (también usable como extractor de características con `AutoModel`) |
 | Precisión de los pesos | no especificada en la model card (el repo ocupa 29,1 GB) |
 | Tamaño del repositorio | 29,1 GB |
 
@@ -45,7 +45,7 @@ El preentrenamiento consistió en MLM sobre 10.600 millones de nucleótidos de 7
 - Relleno de nucleótidos enmascarados (MLM): predice el nucleótido ausente en posiciones `[MASK]` con un cabezal de 16 clases.
 - Genómica funcional: representaciones útiles para predicción de efectos de variantes, elementos reguladores y señales funcionales, según el caso de uso declarado por el autor.
 - Minería de genomas y anotación no supervisada: el autor lo posiciona como el checkpoint más preciso de la familia para estas tareas.
-- Ajuste fino estándar de HuggingFace: se puede acoplar una cabeza específica de tarea sobre el embedding `[CLS]` para clasificación o regresión a nivel de secuencia.
+- Ajuste fino estándar de Hugging Face: se puede acoplar una cabeza específica de tarea sobre el embedding `[CLS]` para clasificación o regresión a nivel de secuencia.
 - Procesamiento por lotes con padding y máscara de atención: las claves en posiciones de padding reciben probabilidad cero.
 - Soporte de tool calling / function calling: no disponible (no es un modelo generativo de instrucciones).
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -103,7 +103,7 @@ No hay datos de benchmarks públicos en la información disponible que permitan 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/GB.DNA-7B
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/GB.DNA-7B
 - ID anterior (redirige al actual): https://huggingface.co/Taykhoom/AIDO.DNA-7B
 - Variante de 300M: https://huggingface.co/Taykhoom/GB.DNA-300M
 - Colección GB.DNA: https://huggingface.co/collections/Taykhoom/gbdna-6a2887b44b37853f838d2ae2

@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: aleksey336/parakeet-ultra-sherpa-onnx-int8](https://huggingface.co/aleksey336/parakeet-ultra-sherpa-onnx-int8)
+- [Hugging Face: aleksey336/parakeet-ultra-sherpa-onnx-int8](https://huggingface.co/aleksey336/parakeet-ultra-sherpa-onnx-int8)
 - [Modelo base: moondream/parakeet-ultra](https://huggingface.co/moondream/parakeet-ultra)
 - [Base original: nvidia/parakeet-tdt-0.6b-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
 - [Exportación ONNX de origen: Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx](https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx)

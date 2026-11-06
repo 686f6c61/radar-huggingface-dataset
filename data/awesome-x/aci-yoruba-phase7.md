@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Awesome-x/aci-yoruba-phase7` es una publicación de HuggingFace creada por el usuario Awesome-x. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura `wav2vec2`, con un total de 315.485.870 parámetros y pesos almacenados en formato `safetensors`. El repositorio ocupa aproximadamente 11.4 GB y ha registrado 48 descargas.
+El modelo `Awesome-x/aci-yoruba-phase7` es una publicación de Hugging Face creada por el usuario Awesome-x. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura `wav2vec2`, con un total de 315.485.870 parámetros y pesos almacenados en formato `safetensors`. El repositorio ocupa aproximadamente 11.4 GB y ha registrado 48 descargas.
 
 La información disponible no incluye licencia, idiomas soportados, pipeline ni documentación técnica. El nombre del modelo sugiere una relación con el idioma yoruba y, dado que la arquitectura `wav2vec2` se emplea habitualmente en tareas de procesamiento de audio, es plausible que el modelo esté orientado al reconocimiento automático de voz en dicha lengua. No obstante, esta funcionalidad no está confirmada en los datos proporcionados, por lo que cualquier uso requeriría una validación previa.
 
@@ -63,4 +63,4 @@ No se han identificado modelos comparables con la informacion proporcionada. Al 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Awesome-x/aci-yoruba-phase7
+- Repositorio en Hugging Face: https://huggingface.co/Awesome-x/aci-yoruba-phase7

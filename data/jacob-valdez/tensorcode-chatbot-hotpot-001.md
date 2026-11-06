@@ -21,7 +21,7 @@ La relevancia de esta ficha es mas metodologica que de producto. El checkpoint r
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Biblioteca de carga | tensorcode (`tensorcode.tools.chatbot.Chatbot`) |
-| Tarea declarada | text2text-generation (la etiqueta de pipeline en la ficha de HuggingFace figura como text-generation; discrepancia no resuelta por el autor) |
+| Tarea declarada | text2text-generation (la etiqueta de pipeline en la ficha de Hugging Face figura como text-generation; discrepancia no resuelta por el autor) |
 | Modelo base | google/flan-t5-small (commit 0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab) |
 | Tamano del repositorio | 0,3 GB |
 | Fecha de creacion | 2026-09-21 |
@@ -100,12 +100,12 @@ No hay datos publicos en la informacion disponible para comparar rendimiento (MM
 - Licencia apache-2.0: permite uso comercial y modificacion, pero la licencia del checkpoint no cubre los derechos sobre los datos de entrenamiento, cuya procedencia no esta documentada.
 - Dependencia de una biblioteca no estandar (`tensorcode`): no hay soporte publicado en transformers, vLLM, llama.cpp, Ollama o TGI, lo que complica el despliegue en produccion y la portabilidad.
 - Madurez: 0 descargas y 0 likes, creado y actualizado el mismo dia (2026-09-21). No hay historial de mantenimiento ni issues publicos.
-- Discrepancia de etiquetado: la etiqueta de pipeline en HuggingFace figura como text-generation mientras que la model card declara text2text-generation, lo que puede provocar errores en herramientas que auto-detecten la tarea.
+- Discrepancia de etiquetado: la etiqueta de pipeline en Hugging Face figura como text-generation mientras que la model card declara text2text-generation, lo que puede provocar errores en herramientas que auto-detecten la tarea.
 - No hay informacion sobre sesgos especificos, evaluaciones de seguridad ni red teaming. Dado el origen en flan-t5-small, es razonable asumir los sesgos conocidos de los corpus web en ingles, pero no hay mediciones publicadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacob-valdez/tensorcode-chatbot-hotpot-001
+- Modelo en Hugging Face: https://huggingface.co/jacob-valdez/tensorcode-chatbot-hotpot-001
 - Modelo base: https://huggingface.co/google/flan-t5-small
 - Commit del modelo base referenciado: 0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab
 - Referencia a `evaluation.json` (predicciones, metricas antes/despues, procedencia de fuentes y limitaciones): mencionado en la model card, no incluido en la informacion disponible

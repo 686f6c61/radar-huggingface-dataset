@@ -36,7 +36,7 @@ El repositorio `dan517` no documenta ningún proceso de entrenamiento propio: es
 - Generación de texto conversacional multi-turno, con especial énfasis en roleplay y mantenimiento de personaje.
 - Escritura creativa y narrativa: relatos, diálogos, descripciones y continuaciones de ficción.
 - Comprensión y generación de instrucciones en formato chat mediante la plantilla `<s>[INST] ... [/INST]`.
-- Etiquetada como `conversational` y `text-generation` en HuggingFace, con compatibilidad declarada con endpoints (`endpoints_compatible`).
+- Etiquetada como `conversational` y `text-generation` en Hugging Face, con compatibilidad declarada con endpoints (`endpoints_compatible`).
 - Capacidades multilingües: no confirmadas en la información proporcionada; el modelo base Mistral-Small-Instruct-2409 se distribuye habitualmente como multilingüe, pero la model card de esta variante no las declara.
 - Tool calling / function calling: no documentado en la información disponible.
 - Modo de razonamiento explícito (thinking), visión o audio: no disponible.
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento relati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dan517/Mistral-Small-22B-ArliAI-RPMax-v1.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/dan517/Mistral-Small-22B-ArliAI-RPMax-v1.1-GGUF
 - Cuantizaciones originales de bartowski: https://huggingface.co/bartowski/Mistral-Small-22B-ArliAI-RPMax-v1.1-GGUF
 - Modelo base ajustado (ArliAI): https://huggingface.co/ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1
 - Variante GPTQ Q8 de ArliAI: https://huggingface.co/ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1-GPTQ_Q8

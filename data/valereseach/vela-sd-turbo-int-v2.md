@@ -18,7 +18,7 @@ Su relevancia es acotada pero específica: cubre el nicho de inferencia de imág
 | Longitud de contexto | 77 tokens (limite estandar del text encoder CLIP ViT-H/14 de sd-turbo) |
 | Tipos de cuantizacion | Entero: pesos int8 por canal de salida, activaciones de 16 bits con potencias de dos dinamicas (esquema W8A16) |
 | Idiomas soportados | No especificados en la ficha; el text encoder CLIP ViT-H esta entrenado predominantemente con texto en ingles |
-| Licencia | Stability AI Community License (`stabilityai-ai-community`, etiquetada como `other` en HuggingFace) |
+| Licencia | Stability AI Community License (`stabilityai-ai-community`, etiquetada como `other` en Hugging Face) |
 | Formato de pesos | `.poisd` (formato propietario de Vela, 1,19 GB); no se publican safetensors ni GGUF |
 | Pipeline | text-to-image |
 | Tamano del repositorio | 1,2 GB |
@@ -103,12 +103,12 @@ La comparativa directa con alternativas de cuantizacion general (por ejemplo, ve
 - Limitacion idiomatica: el text encoder CLIP ViT-H esta orientado principalmente al ingles; no se declaran idiomas soportados, por lo que el rendimiento en castellano no esta garantizado.
 - Licencia: Stability AI Community License. El uso comercial exige registro con Stability AI y esta limitado a entidades con ingresos anuales inferiores a 1 millon de dolares estadounidenses. Es imprescindible revisar `LICENSE.md` antes de cualquier uso en produccion.
 - Adopcion nula verificable: 0 descargas y 0 "likes", sin validacion independiente de la comunidad ni informes de terceros sobre el comportamiento real del fichero.
-- Fechas incoherentes en los metadatos de HuggingFace (creacion y actualizacion en octubre de 2026), lo que sugiere que los datos temporales del repositorio no son fiables.
+- Fechas incoherentes en los metadatos de Hugging Face (creacion y actualizacion en octubre de 2026), lo que sugiere que los datos temporales del repositorio no son fiables.
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre Vela Research: los unicos resultados obtenidos fueron letras de canciones sin relacion alguna con el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/valereseach/vela-sd-turbo-int-v2
+- Modelo en Hugging Face: https://huggingface.co/valereseach/vela-sd-turbo-int-v2
 - Modelo base: https://huggingface.co/stabilityai/sd-turbo
 - Sitio de Vela Research: https://velaresearch.ai
 - Repositorio fuente de Vela Core: https://git.velaresearch.ai/velaresearch/vela

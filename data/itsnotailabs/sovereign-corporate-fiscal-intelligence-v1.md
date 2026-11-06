@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sovereign-Corporate-Fiscal-Intelligence-v1` es un transformer encoder denso de 27.827.227 parámetros publicado por ItsnotAilabs en HuggingFace el 18 de septiembre de 2026 bajo licencia Apache-2.0. No es un modelo de lenguaje: su entrada es una matriz de telemetría financiera de 64 dimensiones y su salida son etiquetas contables y cifras numéricas, no texto. El pipeline declarado en el repositorio es `feature-extraction`.
+`Sovereign-Corporate-Fiscal-Intelligence-v1` es un transformer encoder denso de 27.827.227 parámetros publicado por ItsnotAilabs en Hugging Face el 18 de septiembre de 2026 bajo licencia Apache-2.0. No es un modelo de lenguaje: su entrada es una matriz de telemetría financiera de 64 dimensiones y su salida son etiquetas contables y cifras numéricas, no texto. El pipeline declarado en el repositorio es `feature-extraction`.
 
 El modelo agrupa cinco tareas en un único cuerpo compartido: clasificación de gastos en el libro mayor, previsión rodante de tesorería a 12 meses, cálculo de ratios financieros, liquidación multidivisa y estimación de créditos fiscales de I+D estadounidenses (Form 6765 y Form 8974). Con menos de 30 millones de parámetros y un repositorio de 0,5 GB, cabe en CPU y en cualquier GPU de consumo, lo que permite integrarlo en un ERP o en un proceso ETL por lotes sin infraestructura dedicada.
 
@@ -86,10 +86,10 @@ No se ha encontrado ningún modelo equivalente de "inteligencia fiscal corporati
 
 | Modelo | Categoría | Parámetros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Sovereign-Corporate-Fiscal-Intelligence-v1 | Transformer vertical sobre telemetría financiera de 64 dimensiones | 27.827.227 | Apache-2.0 | HuggingFace, pesos safetensors y bin | Sin paper, sin demo y con métricas solo sobre datos sintéticos |
+| Sovereign-Corporate-Fiscal-Intelligence-v1 | Transformer vertical sobre telemetría financiera de 64 dimensiones | 27.827.227 | Apache-2.0 | Hugging Face, pesos safetensors y bin | Sin paper, sin demo y con métricas solo sobre datos sintéticos |
 | TabPFN (Prior Labs) | Transformer tabular con aprendizaje en contexto | no disponible | pesos con licencia no comercial | Pesos y repositorio públicos | Requiere reentrenamiento cero, pero cubre clasificación y regresión tabular genéricas, no reglas contables concretas |
 | FT-Transformer | Arquitectura tabular de referencia | depende de la configuración | código abierto, sin pesos preentrenados | Implementaciones en librerías de tabular DL | Es una arquitectura, no un modelo listo para usar; exige entrenamiento propio |
-| Chronos / TimesFM | Modelos fundacionales de series temporales | cientos de millones | Apache-2.0 en los pesos publicados | HuggingFace | Cubren previsión univariante y multivariante, pero no clasificación contable ni ratios ni fiscalidad |
+| Chronos / TimesFM | Modelos fundacionales de series temporales | cientos de millones | Apache-2.0 en los pesos publicados | Hugging Face | Cubren previsión univariante y multivariante, pero no clasificación contable ni ratios ni fiscalidad |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No se ha encontrado ningún modelo equivalente de "inteligencia fiscal corporati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ItsnotAilabs/Sovereign-Corporate-Fiscal-Intelligence-v1
+- Modelo en Hugging Face: https://huggingface.co/ItsnotAilabs/Sovereign-Corporate-Fiscal-Intelligence-v1
 - Paper: no disponible
 - Repositorio de código: no disponible
 - Demo o espacio interactivo: no disponible

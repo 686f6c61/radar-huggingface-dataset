@@ -90,10 +90,10 @@ Las cifras de los baselines se atribuyen en la model card al paper de PolyGuard 
 
 | Modelo | Parametros | Contexto | F1 en PolyGuardPrompts | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HaloGuard 2.0-Poly-0.8B | 0,8B | 2.048 | 83,08 | Apache 2.0 | HuggingFace |
-| Llama Guard 3 | 8B | no disponible | 65,74 | licencia Llama | HuggingFace |
-| PolyGuard-Qwen | 7B | no disponible | 74,08 | no disponible | HuggingFace |
-| PolyGuard Smol | 0,5B | no disponible | 66,82 | no disponible | HuggingFace |
+| HaloGuard 2.0-Poly-0.8B | 0,8B | 2.048 | 83,08 | Apache 2.0 | Hugging Face |
+| Llama Guard 3 | 8B | no disponible | 65,74 | licencia Llama | Hugging Face |
+| PolyGuard-Qwen | 7B | no disponible | 74,08 | no disponible | Hugging Face |
+| PolyGuard Smol | 0,5B | no disponible | 66,82 | no disponible | Hugging Face |
 
 La comparativa se limita a los datos citados en la model card; no se dispone de informacion sobre contexto, licencia ni disponibilidad de los modelos alternativos en la informacion proporcionada, salvo la referencia a Llama Guard 3. El modelo relacionado HaloGuard 2.0-Stream-0.8B es la variante solo en ingles, y HaloGuard 1.0-Gen-0.8B es el guard de entrada (prompt).
 
@@ -111,7 +111,7 @@ La comparativa se limita a los datos citados en la model card; no se dispone de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/astroware/HaloGuard2-MultiStream-0.8B
+- Hugging Face: https://huggingface.co/astroware/HaloGuard2-MultiStream-0.8B
 - Variante en ingles: https://huggingface.co/ash-astro/HaloGuard2.0-Stream-0.8B
 - Guard de entrada: https://huggingface.co/astroware/HaloGuard1-Gen-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

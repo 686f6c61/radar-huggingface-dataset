@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NAJY_act_all11_c100_gist30_reef_27D_120k_s1000 es un checkpoint de robótica, no un modelo de lenguaje: se trata de una política de imitación visuomotora entrenada con la implementación ACT (Action Chunking Transformer) de la librería LeRobot. Lo publica el usuario kiroaiseoul en HuggingFace y está pensado para el entorno Trossen Mobile AI, según indican las etiquetas del repositorio (`lerobot`, `act`, `robotics`, `trossen-mobile-ai`). El modelo consume el estado del robot (27 dimensiones), un estado de entorno adicional (11 dimensiones) y tres cámaras RGB de 480x640 (vista alta y dos muñecas), y emite un vector de acción de 16 dimensiones. Cuenta con 51.707.024 parámetros (unos 51,7 M) y un repositorio de 0,2 GB en formato safetensors.
+NAJY_act_all11_c100_gist30_reef_27D_120k_s1000 es un checkpoint de robótica, no un modelo de lenguaje: se trata de una política de imitación visuomotora entrenada con la implementación ACT (Action Chunking Transformer) de la librería LeRobot. Lo publica el usuario kiroaiseoul en Hugging Face y está pensado para el entorno Trossen Mobile AI, según indican las etiquetas del repositorio (`lerobot`, `act`, `robotics`, `trossen-mobile-ai`). El modelo consume el estado del robot (27 dimensiones), un estado de entorno adicional (11 dimensiones) y tres cámaras RGB de 480x640 (vista alta y dos muñecas), y emite un vector de acción de 16 dimensiones. Cuenta con 51.707.024 parámetros (unos 51,7 M) y un repositorio de 0,2 GB en formato safetensors.
 
 El checkpoint corresponde al paso 120.000 del run `exp_all11_c100_gist30_reef_s1000_120k` y, según la propia model card, se sube con fines de análisis y puntuación (체크포인트 = checkpoint; "subida para análisis y scoring"), no como candidato confirmado para despliegue en robot real. Incorpora un flag de manifiesto `env_stage_token: true`, lo que sugiere condicionamiento por etapa o fase de la tarea, algo coherente con un pipeline de 11 etapas (`all11`).
 
@@ -30,7 +30,7 @@ Su relevancia es acotada pero concreta: sirve como referencia reproducible para 
 | Flags de manifiesto | `env_stage_token: true` |
 | Tamano del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-10-19 (según metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-19 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11_c100_gist30_reef_27D_120k_s1000 (este) | ACT / imitación | 51,7 M | 3 cámaras 480x640 + estado 27D + entorno 11D; chunk no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| kiroaiseoul/NAJY_act_all11_c100_gist30_27D_120k_s1000 | ACT / imitación (misma familia, sin variante `reef`) | no disponible | no disponible | no disponible | HuggingFace |
-| Checkpoints ACT oficiales de LeRobot (p. ej. familia `lerobot/act_*`) | ACT / imitación | no disponible | configuraciones ALOHA/Sim de 1 o varias cámaras | no disponible | HuggingFace |
-| Políticas alternativas en LeRobot (Diffusion Policy y similares) | imitación (difusión) | no disponible | no disponible | no disponible | HuggingFace |
+| NAJY_act_all11_c100_gist30_reef_27D_120k_s1000 (este) | ACT / imitación | 51,7 M | 3 cámaras 480x640 + estado 27D + entorno 11D; chunk no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| kiroaiseoul/NAJY_act_all11_c100_gist30_27D_120k_s1000 | ACT / imitación (misma familia, sin variante `reef`) | no disponible | no disponible | no disponible | Hugging Face |
+| Checkpoints ACT oficiales de LeRobot (p. ej. familia `lerobot/act_*`) | ACT / imitación | no disponible | configuraciones ALOHA/Sim de 1 o varias cámaras | no disponible | Hugging Face |
+| Políticas alternativas en LeRobot (Diffusion Policy y similares) | imitación (difusión) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos verificables de parámetros, contexto ni rendimiento de las alternativas en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
@@ -97,7 +97,7 @@ No se dispone de datos verificables de parámetros, contexto ni rendimiento de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_reef_27D_120k_s1000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_reef_27D_120k_s1000
 - Modelo hermano de la misma familia: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_27D_120k_s1000
 - Árbol de ficheros del modelo hermano: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_27D_120k_s1000/tree/main
 - LeRobot (librería y políticas ACT): https://github.com/huggingface/lerobot

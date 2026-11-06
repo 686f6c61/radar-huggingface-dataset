@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2013-05 init | 2,80B | 8.192 | Base con conocimiento congelado a 2013-05 | other | HuggingFace |
-| Chrononauts 3B 2013-05 sft | no disponible | no disponible | SFT del mismo corte | other | HuggingFace |
-| Chrononauts 3B 2013-05 agent | no disponible | no disponible | Agente de búsqueda del mismo corte | other | HuggingFace |
+| Chrononauts 3B 2013-05 init | 2,80B | 8.192 | Base con conocimiento congelado a 2013-05 | other | Hugging Face |
+| Chrononauts 3B 2013-05 sft | no disponible | no disponible | SFT del mismo corte | other | Hugging Face |
+| Chrononauts 3B 2013-05 agent | no disponible | no disponible | Agente de búsqueda del mismo corte | other | Hugging Face |
 | TiC-LM 3B (base) | ~3B | 2.048 | Modelo base original | no disponible | no disponible |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento con alternativas de la misma categoría.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2013-05-init
+- Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2013-05-init
 - Repositorio hermano SFT: https://huggingface.co/mattwang123/chrononauts-3b-2013-05-sft
 - Repositorio hermano agente: https://huggingface.co/mattwang123/chrononauts-3b-2013-05-agent
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

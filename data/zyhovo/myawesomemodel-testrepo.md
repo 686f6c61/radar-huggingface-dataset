@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zyhovo/MyAwesomeModel-TestRepo es un repositorio de HuggingFace publicado por el usuario zyhovo que, por su nombre y sus metadatos, presenta todas las trazas de ser un espacio de prueba y no un modelo listo para producción. Acumula 0 descargas y 0 likes, su tamaño de repositorio es de 0.0 GB (no contiene pesos) y fue creado y actualizado el 21 de septiembre de 2026 con solo un minuto de diferencia entre ambos eventos.
+zyhovo/MyAwesomeModel-TestRepo es un repositorio de Hugging Face publicado por el usuario zyhovo que, por su nombre y sus metadatos, presenta todas las trazas de ser un espacio de prueba y no un modelo listo para producción. Acumula 0 descargas y 0 likes, su tamaño de repositorio es de 0.0 GB (no contiene pesos) y fue creado y actualizado el 21 de septiembre de 2026 con solo un minuto de diferencia entre ambos eventos.
 
 Existe una contradicción directa entre los metadatos y la model card. Las etiquetas declaran transformers, pytorch, bert y feature-extraction, lo que describiría un codificador tipo BERT para extracción de características. La model card adjunta, en cambio, describe un asistente conversacional de razonamiento con modo de pensamiento, function calling, búsqueda web con citas y carga de archivos, con cifras de benchmarks en matemáticas, lógica y generación de código.
 
@@ -84,7 +84,7 @@ Además, la model card cita de forma aislada un 87,5 % de precisión en AIME 202
 - VRAM estimada para inferencia: no disponible. Al no conocerse el número de parámetros ni existir archivos de pesos en el repositorio (0.0 GB), no es posible calcular requisitos de memoria.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPU de consumo: no determinable. La model card menciona una variante MyAwesomeModel-Small, pero sin especificaciones de tamaño no puede confirmarse que quepa en una GPU de gama consumer.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, y la librería declarada es `transformers`. No hay confirmación de soporte para vLLM, llama.cpp, Ollama ni TGI, ni de formatos GGUF o GPTQ.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, y la librería declarada es `transformers`. No hay confirmación de soporte para vLLM, llama.cpp, Ollama ni TGI, ni de formatos GGUF o GPTQ.
 - Latencia y throughput: no disponible. El único dato indirecto es el consumo de 23K tokens por pregunta en AIME, que implica un coste de cómputo elevado en modo de pensamiento extendido.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ No disponible. La model card compara contra Model1, Model2 y Model1-v2 sin desve
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zyhovo/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/zyhovo/MyAwesomeModel-TestRepo
 - Repositorio de código: no disponible (la model card lo menciona sin proporcionar URL)
 - Sitio web oficial y plataforma de chat/API: no disponible (la model card los menciona sin proporcionar URL)
 - Paper técnico: no disponible

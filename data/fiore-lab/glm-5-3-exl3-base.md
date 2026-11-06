@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-EXL3-Base (esta ficha) | 755B totales (10,6B en safetensors no expertos) | no disponible | safetensors EXL3/BF16 + bancos de expertos | GLM-5.3 License | HuggingFace, 0 descargas |
-| zai-org/GLM-5.3 | 755B | no disponible | safetensors (oficial) | GLM-5.3 License | HuggingFace (oficial) |
-| fiore-lab/GLM-5.3-EXL3-8x-DGX-Sparks | 755B (checkpoint completo) | no disponible | safetensors EXL3 | GLM-5.3 License | HuggingFace |
-| fiore-lab/GLM-5.3-EXL3-4x-DGX-Sparks | 755B (checkpoint completo) | no disponible | safetensors EXL3 | GLM-5.3 License | HuggingFace |
+| GLM-5.3-EXL3-Base (esta ficha) | 755B totales (10,6B en safetensors no expertos) | no disponible | safetensors EXL3/BF16 + bancos de expertos | GLM-5.3 License | Hugging Face, 0 descargas |
+| zai-org/GLM-5.3 | 755B | no disponible | safetensors (oficial) | GLM-5.3 License | Hugging Face (oficial) |
+| fiore-lab/GLM-5.3-EXL3-8x-DGX-Sparks | 755B (checkpoint completo) | no disponible | safetensors EXL3 | GLM-5.3 License | Hugging Face |
+| fiore-lab/GLM-5.3-EXL3-4x-DGX-Sparks | 755B (checkpoint completo) | no disponible | safetensors EXL3 | GLM-5.3 License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Base
+- Repositorio Hugging Face: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Base
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Checkpoint BF16 del modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Banco de expertos 3 bits: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Experts-3bit

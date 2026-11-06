@@ -69,10 +69,10 @@ La siguiente tabla compara Qwen3-VL-8B-Instruct con otros modelos multimodales d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Características destacadas |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-Instruct | 8,8B | 256K (1M ampliable) | Apache 2.0 | HuggingFace, API | Agente visual, OCR 32 idiomas, grounding 3D, vídeo largo |
-| Qwen2.5-VL-7B-Instruct | 8,3B (aprox.) | 128K | Apache 2.0 | HuggingFace | OCR 19 idiomas, grounding 2D, vídeo medio |
-| Pixtral 12B (Mistral) | 12B | 128K | Apache 2.0 | HuggingFace | Razonamiento visual, código, sin agente GUI |
-| Llama 3.2 Vision 11B | 11B | 128K | Llama 3.2 Community | HuggingFace | Multimodal, pero sin agente visual ni grounding 3D |
+| Qwen3-VL-8B-Instruct | 8,8B | 256K (1M ampliable) | Apache 2.0 | Hugging Face, API | Agente visual, OCR 32 idiomas, grounding 3D, vídeo largo |
+| Qwen2.5-VL-7B-Instruct | 8,3B (aprox.) | 128K | Apache 2.0 | Hugging Face | OCR 19 idiomas, grounding 2D, vídeo medio |
+| Pixtral 12B (Mistral) | 12B | 128K | Apache 2.0 | Hugging Face | Razonamiento visual, código, sin agente GUI |
+| Llama 3.2 Vision 11B | 11B | 128K | Llama 3.2 Community | Hugging Face | Multimodal, pero sin agente visual ni grounding 3D |
 
 Nota: los datos de Qwen2.5-VL y Pixtral son aproximados y pueden variar; la comparación se basa en características públicas, no en benchmarks numéricos.
 
@@ -88,7 +88,7 @@ Nota: los datos de Qwen2.5-VL y Pixtral son aproximados y pueden variar; la comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paper técnico de Qwen3: https://arxiv.org/abs/2505.09388
 - Paper de Qwen2.5-VL (referencia): https://arxiv.org/abs/2502.13923
 - Paper de Qwen2-VL (referencia): https://arxiv.org/abs/2409.12191

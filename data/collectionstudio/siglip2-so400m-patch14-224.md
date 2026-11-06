@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en formato numérico en la informac
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/siglip2-so400m-patch14-224 | 1.135.463.602 | No disponible | Visión + texto (encoder) | apache-2.0 | HuggingFace |
-| google/siglip2-so400m-patch14-224 | No disponible (mismos pesos) | No disponible | Visión + texto (encoder) | apache-2.0 | HuggingFace |
-| google/siglip-so400m-patch14-384 (SigLIP 1) | No disponible | No disponible | Visión + texto (encoder) | apache-2.0 | HuggingFace |
-| openai/clip-vit-large-patch14 | No disponible | No disponible | Visión + texto (encoder) | Licencia MIT | HuggingFace |
+| CollectionStudio/siglip2-so400m-patch14-224 | 1.135.463.602 | No disponible | Visión + texto (encoder) | apache-2.0 | Hugging Face |
+| google/siglip2-so400m-patch14-224 | No disponible (mismos pesos) | No disponible | Visión + texto (encoder) | apache-2.0 | Hugging Face |
+| google/siglip-so400m-patch14-384 (SigLIP 1) | No disponible | No disponible | Visión + texto (encoder) | apache-2.0 | Hugging Face |
+| openai/clip-vit-large-patch14 | No disponible | No disponible | Visión + texto (encoder) | Licencia MIT | Hugging Face |
 
 No se dispone de datos numéricos de rendimiento para esta comparativa; las diferencias entre SigLIP 2 y SigLIP 1 se resumen en el artículo original como mejoras en comprensión semántica, localización y características densas. Este repositorio redistribuye pesos idénticos a los del checkpoint oficial de Google, por lo que las diferencias con el original se limitan al mantenimiento y a la trazabilidad, no al comportamiento del modelo.
 
@@ -89,7 +89,7 @@ No se dispone de datos numéricos de rendimiento para esta comparativa; las dife
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/siglip2-so400m-patch14-224
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/siglip2-so400m-patch14-224
 - Checkpoint oficial (referenciado en la model card): https://huggingface.co/google/siglip2-so400m-patch14-224
 - Artículo SigLIP 2: https://arxiv.org/abs/2502.14786
 - Artículo SigLIP 1: https://arxiv.org/abs/2303.15343

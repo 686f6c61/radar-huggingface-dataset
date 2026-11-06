@@ -23,7 +23,7 @@ Su relevancia es doble. Por un lado, cubre un nicho poco explorado dentro del ap
 | Dimensión del embedding | 384 |
 | Modalidad soportada | Solo osu!standard |
 | Cobertura del índice | 498.962 beatmaps (índice generado el 2026-09-13) |
-| Fecha de publicación | 2026-09-13 según HuggingFace |
+| Fecha de publicación | 2026-09-13 según Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No se han identificado en la información proporcionada modelos comparables de r
 
 | Modelo | Parámetros | Dimensión del embedding | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BoBERT v13.2 | 16.142.592 | 384 | 4.096 hit objects | MIT | HuggingFace y repositorio en GitHub |
+| BoBERT v13.2 | 16.142.592 | 384 | 4.096 hit objects | MIT | Hugging Face y repositorio en GitHub |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se han identificado en la información proporcionada modelos comparables de r
 - El pooling sobre el mapa completo puede diluir secciones distintivas y hacer que partes características queden infrarepresentadas en el vector final.
 - La codificación de mapas largos en CPU sin caché puede tardar varios segundos, lo que obliga a diseñar una capa de caché o a usar GPU para despliegues interactivos.
 - No se han publicado benchmarks ni métricas de calidad de recomendación, por lo que el rendimiento real en producción no está cuantificado de forma independiente.
-- El modelo acumula 0 descargas y 0 likes en HuggingFace en el momento de la consulta: no hay validación externa ni informes de terceros.
+- El modelo acumula 0 descargas y 0 likes en Hugging Face en el momento de la consulta: no hay validación externa ni informes de terceros.
 - Los datos de entrenamiento provienen de Beatconnect y de colecciones etiquetadas de osu!collector y osu!stats. El crédito de los beatmaps corresponde a la comunidad de mapping; conviene revisar las condiciones de esas fuentes si se reutilizan los datos más allá del modelo.
 - La licencia MIT permite uso comercial, modificación y redistribución, pero no ofrece garantías y no cubre posibles derechos sobre los beatmaps de origen.
 - El artefacto se exportó desde un workspace con cambios sin confirmar (`108a6979f70a564ad603f5c2df5168a9040d4e60` con modificaciones no registradas), lo que dificulta la reproducibilidad exacta de la versión publicada.
@@ -94,7 +94,7 @@ No se han identificado en la información proporcionada modelos comparables de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/token03/bobert
+- Modelo en Hugging Face: https://huggingface.co/token03/bobert
 - Repositorio de código y arquitectura: https://github.com/token03/bobert
 - Recomendador en vivo: https://bobert-web.pages.dev/
 - Fuente de los beatmaps: Beatconnect

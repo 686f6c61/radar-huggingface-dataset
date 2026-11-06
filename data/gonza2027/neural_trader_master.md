@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GONZA2027/neural_trader_master` es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario GONZA2027. Segun las etiquetas del repositorio, se trata de un adaptador para modelos de difusion (etiqueta `diffusion-lora`) construido sobre el modelo base `Viggle/Qwen-Image-2.1-viggle-turbo`, y esta pensado para usarse con la libreria `diffusers`. El repositorio no incluye una model card real: el README se limita a una plantilla de descarga y a un titulo interno (`neural_trader_x1_corregido`) que no coincide con el nombre del repositorio.
+`GONZA2027/neural_trader_master` es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario GONZA2027. Segun las etiquetas del repositorio, se trata de un adaptador para modelos de difusion (etiqueta `diffusion-lora`) construido sobre el modelo base `Viggle/Qwen-Image-2.1-viggle-turbo`, y esta pensado para usarse con la libreria `diffusers`. El repositorio no incluye una model card real: el README se limita a una plantilla de descarga y a un titulo interno (`neural_trader_x1_corregido`) que no coincide con el nombre del repositorio.
 
 La relevancia practica de esta ficha es limitada por la ausencia casi total de informacion tecnica. No se declaran parametros, datos de entrenamiento, dataset, prompt de instancia ni licencia, y el tamano del repositorio figura como `0.0 GB`, lo que apunta a un repositorio vacio o sin pesos subidos en el momento de la consulta. Las descargas y los "likes" son cero.
 
@@ -25,7 +25,7 @@ Otros datos verificables:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | GONZA2027/neural_trader_master |
+| ID en Hugging Face | GONZA2027/neural_trader_master |
 | Autor | GONZA2027 |
 | Pipeline | text-to-image |
 | Modelo base | Viggle/Qwen-Image-2.1-viggle-turbo |
@@ -99,6 +99,6 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GONZA2027/neural_trader_master
+- Hugging Face: https://huggingface.co/GONZA2027/neural_trader_master
 - Modelo base referenciado: Viggle/Qwen-Image-2.1-viggle-turbo (no se ha encontrado un enlace verificado en la informacion proporcionada)
 - Paper, blog, repositorio o demo adicional: no disponible. La busqueda web no devolvio resultados relevantes para este modelo.

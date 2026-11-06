@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k-seed44` es un checkpoint de investigación publicado por el usuario cyttic en HuggingFace. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `webfonts10mix`, `hhdgeom`, `5k` y `seed44`) y por su tamaño de 87,3 millones de parámetros, se trata con alta probabilidad de un modelo acústico CTC entrenado para reconocimiento de voz, no de un modelo generativo de lenguaje. La model card no aporta ninguna descripción funcional, arquitectura ni datos de entrenamiento, por lo que la mayor parte de la información técnica debe marcarse como no disponible.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k-seed44` es un checkpoint de investigación publicado por el usuario cyttic en Hugging Face. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `webfonts10mix`, `hhdgeom`, `5k` y `seed44`) y por su tamaño de 87,3 millones de parámetros, se trata con alta probabilidad de un modelo acústico CTC entrenado para reconocimiento de voz, no de un modelo generativo de lenguaje. La model card no aporta ninguna descripción funcional, arquitectura ni datos de entrenamiento, por lo que la mayor parte de la información técnica debe marcarse como no disponible.
 
 El modelo es relevante únicamente en el contexto de experimentación reproducible: el sufijo `seed44` sugiere que forma parte de una batería de experimentos con semillas controladas, y el prefijo `exp39` indica una secuencia de pruebas dentro de un estudio mayor. Con 0 descargas y 0 likes en el momento de la consulta, no existe evidencia de adopción por parte de la comunidad.
 
@@ -23,9 +23,9 @@ Dado que no hay pipeline declarado, ni idiomas, ni documentación, esta ficha de
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna. El identificador contiene el token `ctc`, que en el ecosistema de HuggingFace se asocia habitualmente a modelos de reconocimiento automático de voz basados en Connectionist Temporal Classification (por ejemplo, wav2vec2, HuBERT o WavLM con cabeza CTC). El token `webfonts10mix` podría referirse a un conjunto de datos de audio o a una mezcla de fuentes; `hhdgeom` y `byp` no son interpretables sin documentación adicional. El sufijo `5k` podría indicar pasos de entrenamiento o número de horas de audio, y `seed44` una semilla aleatoria concreta.
+No se dispone de información sobre la arquitectura interna. El identificador contiene el token `ctc`, que en el ecosistema de Hugging Face se asocia habitualmente a modelos de reconocimiento automático de voz basados en Connectionist Temporal Classification (por ejemplo, wav2vec2, HuBERT o WavLM con cabeza CTC). El token `webfonts10mix` podría referirse a un conjunto de datos de audio o a una mezcla de fuentes; `hhdgeom` y `byp` no son interpretables sin documentación adicional. El sufijo `5k` podría indicar pasos de entrenamiento o número de horas de audio, y `seed44` una semilla aleatoria concreta.
 
-No hay información sobre el número de tokens o horas de audio de entrenamiento, la composición del dataset, la existencia de etapas de ajuste fino supervisado, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. La model card es la plantilla por defecto de HuggingFace sin rellenar.
+No hay información sobre el número de tokens o horas de audio de entrenamiento, la composición del dataset, la existencia de etapas de ajuste fino supervisado, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. La model card es la plantilla por defecto de Hugging Face sin rellenar.
 
 ## Capacidades
 
@@ -74,6 +74,6 @@ No disponible. Sin documentación sobre la tarea, el dominio ni el rendimiento, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k-seed44
 - Paper citado en los tags (calculadora de impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact#compute

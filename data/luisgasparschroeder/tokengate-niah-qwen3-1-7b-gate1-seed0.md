@@ -6,7 +6,7 @@
 
 El modelo hereda la arquitectura transformer densa de Qwen3-1.7B, con aproximadamente 1.700 millones de parámetros y una ventana de contexto nativa de 32.768 tokens (extensible según la familia Qwen3). El repo pesa 3,7 GB en formato safetensors, lo que es coherente con pesos en precisión de 16 bits para un modelo de ese tamaño.
 
-Es relevante para investigadores que trabajen en evaluación de contexto largo, en mecanismos de compuerta sobre representaciones de tokens y en la reproducibilidad de experimentos con semillas fijas (`seed0` en el nombre). No es un modelo orientado a producción general: es un artefacto de investigación con acceso restringido (gated) que requiere aceptar condiciones en HuggingFace.
+Es relevante para investigadores que trabajen en evaluación de contexto largo, en mecanismos de compuerta sobre representaciones de tokens y en la reproducibilidad de experimentos con semillas fijas (`seed0` en el nombre). No es un modelo orientado a producción general: es un artefacto de investigación con acceso restringido (gated) que requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -76,13 +76,13 @@ La comparación directa con el modelo base es la más informativa: este checkpoi
 - Riesgo de sobreajuste a la tarea NIAH: el fine-tune puede degradar capacidades generales del Qwen3-1.7B original (razonamiento, código, matemáticas).
 - Alucinación: como todo modelo de 1,7B, la tasa de alucinación es alta en tareas de conocimiento factual; el ajuste en recuperación de contexto no la reduce necesariamente.
 - Idiomas: no se especifican; el multilingüismo de Qwen3 puede haberse visto reducido por el fine-tune.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
 - Licencia Apache 2.0 permite uso comercial, pero el usuario asume la responsabilidad de validar el comportamiento del checkpoint.
 - Sin cuantizaciones publicadas (GGUF, AWQ, GPTQ): el despliegue en hardware limitado requiere generarlas manualmente.
 - El paper `arxiv:2610.26754` no se ha podido verificar; la metodología exacta del "tokengate" no está documentada en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luisgasparschroeder/tokengate-niah-qwen3-1.7b-gate1-seed0
+- Hugging Face: https://huggingface.co/luisgasparschroeder/tokengate-niah-qwen3-1.7b-gate1-seed0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper referenciado (no verificado): https://arxiv.org/abs/2610.26754

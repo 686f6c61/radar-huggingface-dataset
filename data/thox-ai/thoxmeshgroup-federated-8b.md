@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | ThoxMeshGroup-Federated-8B | 8B | 8.192 (medido) | Apache-2.0 | Ollama + repo HF (empaquetado) | Configuración derivada de Qwen3-8B; sin entrenamiento propio |
-| Qwen/Qwen3-8B | 8B | no disponible | Apache-2.0 (según base) | HuggingFace | Modelo base original; sin perfil ni knowledge pack |
+| Qwen/Qwen3-8B | 8B | no disponible | Apache-2.0 (según base) | Hugging Face | Modelo base original; sin perfil ni knowledge pack |
 | Alternativas de 8B de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se proporcionan datos comparativos en la información |
 
 La comparación directa con otros modelos de 8B no está disponible en la información proporcionada; el único punto de referencia documentado es el propio Qwen3-8B como base.
@@ -95,7 +95,7 @@ La comparación directa con otros modelos de 8B no está disponible en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxMeshGroup-Federated-8B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxMeshGroup-Federated-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo publicado en Ollama: `Thox-ai/thoxmeshgroup-federated-8b` (no se proporciona URL directa en la información)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

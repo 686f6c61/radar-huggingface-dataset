@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MCFT-Net es un modelo compacto de superresolución de vídeo con referencia dispersa (sparse-reference video super-resolution) desarrollado por el usuario yyektin y publicado en HuggingFace. No se trata de un modelo generativo de propósito general, sino de una red neuronal convolucional residual de tan solo 173.732 parámetros que actúa como etapa de refinamiento sobre un operador determinista previo denominado MCFT v3 (Motion-Compensated Frequency Transfer). El sistema completo recibe un vídeo de baja resolución junto con un pequeño conjunto de fotogramas ancla en alta resolución real, y produce la reconstrucción en alta resolución de todos los fotogramas.
+MCFT-Net es un modelo compacto de superresolución de vídeo con referencia dispersa (sparse-reference video super-resolution) desarrollado por el usuario yyektin y publicado en Hugging Face. No se trata de un modelo generativo de propósito general, sino de una red neuronal convolucional residual de tan solo 173.732 parámetros que actúa como etapa de refinamiento sobre un operador determinista previo denominado MCFT v3 (Motion-Compensated Frequency Transfer). El sistema completo recibe un vídeo de baja resolución junto con un pequeño conjunto de fotogramas ancla en alta resolución real, y produce la reconstrucción en alta resolución de todos los fotogramas.
 
 La relevancia del proyecto reside en su planteamiento híbrido: en lugar de emplear un modelo grande de caja negra para la superresolución, combina estimación de movimiento, transferencia de bandas de frecuencia y una restricción de consistencia con la observación de baja resolución, dejando a la CNN únicamente la tarea de aprender a confiar y corregir la propuesta determinista. Esto reduce drásticamente el coste computacional y el riesgo de alucinación de detalle inexistente.
 
@@ -27,7 +27,7 @@ Parámetros adicionales de la arquitectura MCFT-Net: anchura (width) de 32 canal
 
 El sistema MCFT se compone de dos etapas. La primera es un operador determinista, MCFT v3, que para cada fotograma no ancla realiza: construcción de una base (por defecto bicúbica, aunque puede sustituirse por la salida de un modelo SR externo como HAT, SwinIR, Real-ESRGAN, EDVR o BasicVSR++), búsqueda de anclas cercanas en el manifiesto disperso, estimación de movimiento mediante flujo óptico (OpenCV DIS en la ruta reproducible; soporte opcional de RAFT no incluido en el benchmark congelado), proyección de las anclas con compensación de movimiento y confianza de flujo, transferencia de bandas de frecuencia en luminancia (baja, media y alta), refinamiento local de fase con manejo de residuos multiescala, y una restricción de observación que reproyecta la estimación HR hacia el LR para evitar que el detalle de alta frecuencia viole el fotograma observado.
 
-La segunda etapa, MCFT-Net, es una CNN residual que recibe un tensor multicanal de confianza/refinamiento construido a partir del fotograma base, el candidato determinista, información de residuo, características de consistencia LR y características de distancia/confianza a las anclas. Predice una corrección acotada alrededor de la base/candidato, no una imagen libre. El entrenamiento utiliza datos en streaming de HuggingFace (`bijinc/vimeo-90k-mini`) mediante la librería `datasets` en modo streaming, construyendo ejemplos sintéticos de anclas dispersas a partir de tríos de Vimeo (fotogramas t-1 y t+1 como anclas HR, t como objetivo). El modelo final se entrena con replay mixto: 75% REDS replay y 25% streaming (la información proporcionada se interrumpe en este punto). Una advertencia clave del autor: una red entrenada con entradas MCFT de base bicúbica no debe asumirse válida para entradas con base HAT/SwinIR/Real-ESRGAN; requiere reentrenamiento o ajuste fino con la misma familia de base.
+La segunda etapa, MCFT-Net, es una CNN residual que recibe un tensor multicanal de confianza/refinamiento construido a partir del fotograma base, el candidato determinista, información de residuo, características de consistencia LR y características de distancia/confianza a las anclas. Predice una corrección acotada alrededor de la base/candidato, no una imagen libre. El entrenamiento utiliza datos en streaming de Hugging Face (`bijinc/vimeo-90k-mini`) mediante la librería `datasets` en modo streaming, construyendo ejemplos sintéticos de anclas dispersas a partir de tríos de Vimeo (fotogramas t-1 y t+1 como anclas HR, t como objetivo). El modelo final se entrena con replay mixto: 75% REDS replay y 25% streaming (la información proporcionada se interrumpe en este punto). Una advertencia clave del autor: una red entrenada con entradas MCFT de base bicúbica no debe asumirse válida para entradas con base HAT/SwinIR/Real-ESRGAN; requiere reentrenamiento o ajuste fino con la misma familia de base.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ La segunda etapa, MCFT-Net, es una CNN residual que recibe un tensor multicanal 
 - Transferencia de bandas de frecuencia en luminancia (baja, media, alta).
 - Restricción de consistencia con la observación LR (reproyección HR→LR).
 - Integración como capa de refinamiento sobre modelos SR modernos (HAT, SwinIR, Real-ESRGAN, EDVR, BasicVSR++) cuando se entrena con esa familia de base.
-- Entrenamiento con datos en streaming desde HuggingFace (`bijinc/vimeo-90k-mini`).
+- Entrenamiento con datos en streaming desde Hugging Face (`bijinc/vimeo-90k-mini`).
 - No dispone de tool calling, capacidades de agente, multilingües ni modo thinking: es un modelo puramente de visión.
 
 ## Casos de uso
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MCFT-Net | CNN residual + operador determinista, VSR con referencia dispersa | 173.732 (CNN) | Vídeo LR + 10% anclas HR | MIT | HuggingFace, repo 0.0 GB |
+| MCFT-Net | CNN residual + operador determinista, VSR con referencia dispersa | 173.732 (CNN) | Vídeo LR + 10% anclas HR | MIT | Hugging Face, repo 0.0 GB |
 | BasicVSR++ | VSR recurrente | no disponible en la información | Vídeo LR | no disponible | no disponible |
 | Real-ESRGAN | SR de imagen/vídeo generativo | no disponible en la información | Imagen/vídeo LR | no disponible | no disponible |
 | SwinIR | Transformer para restauración de imagen | no disponible en la información | Imagen LR | no disponible | no disponible |
@@ -86,6 +86,6 @@ La comparación cuantitativa no está disponible: la model card menciona BasicVS
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyektin/MCFT-Net
+- Hugging Face: https://huggingface.co/yyektin/MCFT-Net
 - Dataset de streaming utilizado: https://huggingface.co/datasets/bijinc/vimeo-90k-mini
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios adicionales ni demos.

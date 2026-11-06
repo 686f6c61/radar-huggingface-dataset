@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-14B-n8n-Workflow-Generator es un ajuste fino del modelo Qwen/Qwen2.5-Coder-14B-Instruct especializado en generar flujos de trabajo de n8n en formato JSON a partir de descripciones en lenguaje natural. Lo publica el usuario dawsaryahmad-jpg en HuggingFace (la model card atribuye el trabajo al autor mbakgun), y resuelve un problema muy concreto: escribir a mano la estructura JSON de un workflow de n8n —nodos, conexiones, parametros y credenciales— es una tarea repetitiva y propensa a errores de sintaxis.
+Qwen2.5-Coder-14B-n8n-Workflow-Generator es un ajuste fino del modelo Qwen/Qwen2.5-Coder-14B-Instruct especializado en generar flujos de trabajo de n8n en formato JSON a partir de descripciones en lenguaje natural. Lo publica el usuario dawsaryahmad-jpg en Hugging Face (la model card atribuye el trabajo al autor mbakgun), y resuelve un problema muy concreto: escribir a mano la estructura JSON de un workflow de n8n —nodos, conexiones, parametros y credenciales— es una tarea repetitiva y propensa a errores de sintaxis.
 
 El modelo parte de un transformer decoder-only de 14.770.033.664 parametros (aproximadamente 14,8 mil millones) y se ha entrenado mediante QLoRA con cuantizacion de 4 bits, rango LoRA 32 y alpha 64, durante 432 pasos (3 epocas) sobre el dataset mbakgun/n8nbuilder-n8n-workflows-dataset, que contiene mas de 2.300 plantillas publicas de la galeria de n8n. La longitud de secuencia empleada en el entrenamiento es de 8192 tokens y el idioma declarado es unicamente el ingles.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-14B-n8n-Workflow-Generator | 14,77B | No especificado para el ajuste; 32.768 tokens en el modelo base | Generacion de workflows de n8n | Apache 2.0 | Pesos en safetensors, GGUF y MLX en HuggingFace |
-| Qwen2.5-Coder-14B-Instruct (modelo base) | 14,77B | 32.768 tokens nativos (ampliable con YaRN) | Codigo e instrucciones generales | Apache 2.0 | HuggingFace, amplia adopcion y ecosistema |
-| Qwen2.5-Coder-32B-Instruct | 32,5B | 32.768 tokens nativos | Codigo e instrucciones generales | Apache 2.0 | HuggingFace; requiere hardware muy superior |
+| Qwen2.5-Coder-14B-n8n-Workflow-Generator | 14,77B | No especificado para el ajuste; 32.768 tokens en el modelo base | Generacion de workflows de n8n | Apache 2.0 | Pesos en safetensors, GGUF y MLX en Hugging Face |
+| Qwen2.5-Coder-14B-Instruct (modelo base) | 14,77B | 32.768 tokens nativos (ampliable con YaRN) | Codigo e instrucciones generales | Apache 2.0 | Hugging Face, amplia adopcion y ecosistema |
+| Qwen2.5-Coder-32B-Instruct | 32,5B | 32.768 tokens nativos | Codigo e instrucciones generales | Apache 2.0 | Hugging Face; requiere hardware muy superior |
 | Alternativas especificas para generacion de workflows de n8n | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion disponible |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento del ajuste frente al modelo base ni frente a terceros. La comparacion anterior se limita a parametros, contexto, licencia y disponibilidad.
@@ -79,13 +79,13 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento del aj
 - Idioma: solo se declara ingles. Las instrucciones en castellano u otros idiomas no estan soportadas oficialmente y probablemente degraden la calidad de la salida.
 - Sesgos conocidos: no se documenta ninguna evaluacion de sesgos, toxicidad o sesgo de dominio. El corpus de entrenamiento (plantillas publicas de n8n) puede sobrerrepresentar determinadas integraciones populares y omitir otras.
 - Licencia Apache 2.0, que permite uso comercial sin restricciones adicionales, siempre que se conserve el aviso de licencia y se cumplan las condiciones de atribucion.
-- Caveat de trazabilidad: el identificador del repositorio en HuggingFace es dawsaryahmad-jpg/Qwen2.5-Coder-14B-n8n-Workflow-Generator, mientras que la model card, los ejemplos de codigo y la cita bibliografica hacen referencia a mbakgun/Qwen2.5-Coder-14B-n8n-Workflow-Generator. Conviene verificar cual es el repositorio canonico antes de integrarlo en produccion.
+- Caveat de trazabilidad: el identificador del repositorio en Hugging Face es dawsaryahmad-jpg/Qwen2.5-Coder-14B-n8n-Workflow-Generator, mientras que la model card, los ejemplos de codigo y la cita bibliografica hacen referencia a mbakgun/Qwen2.5-Coder-14B-n8n-Workflow-Generator. Conviene verificar cual es el repositorio canonico antes de integrarlo en produccion.
 - El repositorio muestra 0 descargas y 0 valoraciones, y fue creado y actualizado el mismo dia, por lo que no existe validacion independiente de la comunidad.
 - El tamano del repositorio (76,9 GB) indica que se almacenan varias copias de los pesos en distintos formatos y cuantizaciones; conviene seleccionar solo la variante necesaria para el despliegue.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dawsaryahmad-jpg/Qwen2.5-Coder-14B-n8n-Workflow-Generator
+- Modelo en Hugging Face: https://huggingface.co/dawsaryahmad-jpg/Qwen2.5-Coder-14B-n8n-Workflow-Generator
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/mbakgun/n8nbuilder-n8n-workflows-dataset
 - Plataforma n8n: https://n8n.io

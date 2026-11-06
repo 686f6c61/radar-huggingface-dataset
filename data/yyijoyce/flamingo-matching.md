@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo for Matching es un repositorio de HuggingFace publicado por el usuario yyijoyce que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo Flamingo orientada a tareas de *matching* (emparejamiento). Se distribuye en una configuración "tiny" con 16.576 parámetros totales, según los pesos almacenados en `model.safetensors`, y una licencia Apache-2.0. El propio autor indica que el repositorio está pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción.
+Flamingo for Matching es un repositorio de Hugging Face publicado por el usuario yyijoyce que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo Flamingo orientada a tareas de *matching* (emparejamiento). Se distribuye en una configuración "tiny" con 16.576 parámetros totales, según los pesos almacenados en `model.safetensors`, y una licencia Apache-2.0. El propio autor indica que el repositorio está pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción.
 
 El repositorio incluye el código del modelo y un punto de entrada ejecutable (`predict.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y el checkpoint de inicialización. La arquitectura declarada combina atención de ventana deslizante (*sliding window*) con fusión bilineal, activación GELU y normalización por *batchnorm*.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, el repositorio únicamente incluye una receta por de
 - Pruebas de humo en CI: al ser un modelo de 16.576 parámetros, se puede cargar en cada *commit* para verificar que el *pipeline* de inferencia y el formato safetensors funcionan correctamente, con un coste de cómputo prácticamente nulo.
 - Plantilla para experimentos controlados de *matching*: sirve como esqueleto reproducible sobre el que añadir un *dataset* propio de pares y comparar configuraciones de fusión bilineal frente a alternativas como concatenación o atención cruzada.
 - *Baseline* de capacidad mínima: en una comparativa académica puede actuar como referencia de modelo de baja capacidad para medir cuánta ganancia aporta un modelo mayor en una tarea de emparejamiento concreta.
-- Docencia y formación: útil para explicar de forma tangible cómo se estructuran los ficheros de un repositorio de HuggingFace (`config.json`, `training_args.json`, pesos), el papel de la inicialización y la diferencia entre un checkpoint sin entrenar y uno publicado con resultados.
+- Docencia y formación: útil para explicar de forma tangible cómo se estructuran los ficheros de un repositorio de Hugging Face (`config.json`, `training_args.json`, pesos), el papel de la inicialización y la diferencia entre un checkpoint sin entrenar y uno publicado con resultados.
 - Validación de infraestructura de despliegue: permite probar *runners* de PyTorch, comprobaciones de integridad de safetensors y utilidades de carga antes de mover cargas reales a modelos de mayor tamaño.
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yyijoyce/flamingo-matching | 16.576 | no disponible | sin benchmarks publicados | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| yyijoyce/flamingo-matching | 16.576 | no disponible | sin benchmarks publicados | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría. El repositorio no es equiparable a las implementaciones de Flamingo a gran escala publicadas por laboratorios de investigación, ya que difiere en escala, propósito (experimental frente a preentrenado) y naturaleza (código y checkpoint de inicialización frente a modelo entrenado).
@@ -81,6 +81,6 @@ No se dispone de información sobre modelos comparables de la misma categoría. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyijoyce/flamingo-matching
+- Hugging Face: https://huggingface.co/yyijoyce/flamingo-matching
 - Resultados de búsqueda web relevantes: no disponible (la búsqueda no devolvió páginas relacionadas con el modelo).
 - Paper, blog, repositorio o demo adicionales: no disponible.

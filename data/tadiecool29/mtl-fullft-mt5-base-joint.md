@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MTL-FullFT-mt5-base-joint es un ajuste fino completo (full fine-tuning) del modelo multilingüe google/mt5-base, publicado por el usuario tadiecool29 en HuggingFace. Se trata de un modelo encoder-decoder de tipo text-to-text orientado a un escenario multilingüe de bajos recursos, con la lengua amhárica (amharic) como idioma de referencia segun los tags de la ficha. El entrenamiento es multi-tarea (MTL): el mismo checkpoint se evalua simultaneamente en tres objetivos, una tarea de generación medida con Exact Match, análisis de sentimiento y detección de postura (stance detection).
+MTL-FullFT-mt5-base-joint es un ajuste fino completo (full fine-tuning) del modelo multilingüe google/mt5-base, publicado por el usuario tadiecool29 en Hugging Face. Se trata de un modelo encoder-decoder de tipo text-to-text orientado a un escenario multilingüe de bajos recursos, con la lengua amhárica (amharic) como idioma de referencia segun los tags de la ficha. El entrenamiento es multi-tarea (MTL): el mismo checkpoint se evalua simultaneamente en tres objetivos, una tarea de generación medida con Exact Match, análisis de sentimiento y detección de postura (stance detection).
 
 El modelo cuenta con 582.401.280 parametros (dato real extraido de los pesos safetensors), lo que coincide con el tamano del mT5-base original. El repositorio ocupa 1,2 GB, un tamano coherente con pesos almacenados en precision de 16 bits. No es un modelo MoE ni incorpora modulos de vision o audio: es un transformer encoder-decoder clasico con atención completa.
 
@@ -53,7 +53,7 @@ El procedimiento de entrenamiento si esta detallado en la model card: 5 epocas, 
 - Moderacion de contenido como primera capa de filtrado: el modelo puede marcar candidatos de postura negativa o sentimiento hostil para revision humana, nunca como decision final.
 - Analisis de encuestas y respuestas abiertas: agregacion de sentimiento en cuestionarios con respuestas libres en amharico, siempre que el formato de entrada se determine experimentalmente al no estar documentado.
 - Experimentacion academica en aprendizaje multitarea: banco de pruebas para estudiar interferencia entre tareas (sentimiento, stance y generacion) en un mismo checkpoint encoder-decoder.
-- Docencia y prototipado: ejemplo de pipeline completo de fine-tuning con HuggingFace Trainer para cursos de PLN, desplegable en hardware de gama media.
+- Docencia y prototipado: ejemplo de pipeline completo de fine-tuning con Hugging Face Trainer para cursos de PLN, desplegable en hardware de gama media.
 
 ## Benchmarks y rendimiento
 
@@ -97,10 +97,10 @@ La comparacion de rendimiento no es posible porque el modelo solo publica metric
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MTL-FullFT-mt5-base-joint | 582 M | no disponible | Multitarea: sentimiento, stance y generacion (amharico) | Apache-2.0 | HuggingFace, safetensors |
-| google/mt5-base | 582 M | 1024 tokens en preentrenamiento (documentacion publica del modelo base) | Preentrenamiento multilingüe text-to-text con span corruption | Apache-2.0 | HuggingFace, safetensors |
-| xlm-roberta-base | 278 M | 512 tokens | Encoder multilingüe para clasificacion y representaciones | MIT | HuggingFace, safetensors |
-| Davlan/afro-xlmr-base | 278 M | 512 tokens | XLM-R ajustado sobre corpus africanos, incluye amharico | MIT | HuggingFace, safetensors |
+| MTL-FullFT-mt5-base-joint | 582 M | no disponible | Multitarea: sentimiento, stance y generacion (amharico) | Apache-2.0 | Hugging Face, safetensors |
+| google/mt5-base | 582 M | 1024 tokens en preentrenamiento (documentacion publica del modelo base) | Preentrenamiento multilingüe text-to-text con span corruption | Apache-2.0 | Hugging Face, safetensors |
+| xlm-roberta-base | 278 M | 512 tokens | Encoder multilingüe para clasificacion y representaciones | MIT | Hugging Face, safetensors |
+| Davlan/afro-xlmr-base | 278 M | 512 tokens | XLM-R ajustado sobre corpus africanos, incluye amharico | MIT | Hugging Face, safetensors |
 
 Nota: no se dispone de resultados de benchmarks comparables entre estos modelos en la informacion proporcionada, por lo que la eleccion entre ellos debe basarse en pruebas propias sobre el dominio objetivo.
 
@@ -120,7 +120,7 @@ Nota: no se dispone de resultados de benchmarks comparables entre estos modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/MTL-FullFT-mt5-base-joint
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/MTL-FullFT-mt5-base-joint
 - Modelo base: https://huggingface.co/google/mt5-base
 - La busqueda web realizada no devolvio resultados relevantes: unicamente enlaces generales a YouTube (https://www.youtube.com/, https://music.youtube.com/, https://play.google.com/store/apps/details?id=com.google.android.youtube, https://accounts.google.com/InteractiveLogin?service=youtube), sin relacion con el modelo.
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este checkpoint en la informacion disponible.

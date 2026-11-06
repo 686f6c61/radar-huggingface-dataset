@@ -25,7 +25,7 @@ El checkpoint se distribuye en formato nativo de fairseq2 (`.pt`), no directamen
 
 El modelo se basa en la arquitectura OmniASR CTC de Meta, que emplea clasificación temporal conexionista para decodificación directa de audio a texto. Esta familia de modelos está diseñada para priorizar velocidad de inferencia y alto rendimiento en tareas de transcripción en tiempo real, manteniendo precisión competitiva en un amplio espectro de idiomas. El modelo base de 300M fue preentrenado con el corpus multilingüe de Meta (1600+ idiomas), y este fine-tune lo adapta específicamente a isiZulu.
 
-El entrenamiento de ajuste fino se realizó durante 100.000 pasos, alcanzando un WER de validación de 15,93 (mejor checkpoint) y 15,92 (paso final). No se especifican detalles del dataset de entrenamiento, composición de datos ni técnicas de alineación como RLHF o DPO. El checkpoint se guarda en formato nativo de fairseq2, lo que implica que no es cargable directamente con librerías estándar de HuggingFace sin conversión.
+El entrenamiento de ajuste fino se realizó durante 100.000 pasos, alcanzando un WER de validación de 15,93 (mejor checkpoint) y 15,92 (paso final). No se especifican detalles del dataset de entrenamiento, composición de datos ni técnicas de alineación como RLHF o DPO. El checkpoint se guarda en formato nativo de fairseq2, lo que implica que no es cargable directamente con librerías estándar de Hugging Face sin conversión.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos ASR comparables específicamente par
 ## Limitaciones y advertencias
 
 - El modelo está especializado exclusivamente en isiZulu; no soporta otros idiomas.
-- El checkpoint está en formato nativo fairseq2, lo que dificulta su uso con herramientas estándar de HuggingFace sin conversión manual.
+- El checkpoint está en formato nativo fairseq2, lo que dificulta su uso con herramientas estándar de Hugging Face sin conversión manual.
 - No se incluye el checkpoint completo de entrenamiento, solo el modelo final, lo que limita la reproducibilidad.
 - No se documentan sesgos específicos, pero al ser un modelo entrenado con datos de habla, puede presentar errores en acentos, dialectos o habla no estándar.
 - Riesgo de alucinación en transcripciones: como todo sistema ASR, puede generar texto incorrecto en audio de baja calidad o con ruido.

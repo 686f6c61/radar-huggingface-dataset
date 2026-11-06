@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kcat_km_v6b` es un artefacto de machine learning publicado en HuggingFace por el usuario VallemKeerthi que, segun su propia model card, no constituye un modelo de lenguaje ni una red neuronal profunda en el sentido habitual, sino un pipeline de prediccion de parametros enzimaticos (kcat y Km) construido sobre un experimento previo denominado v6-A. El repositorio contiene codigo Python, utilidades de validacion cruzada, scripts de mezcla (blending) y artefactos serializados en formato joblib y ONNX, con un tamano total de 0,4 GB. No se trata, por tanto, de un modelo generativo: no hay pesos de transformer, no hay tokenizador y no hay capacidades de generacion de texto.
+`kcat_km_v6b` es un artefacto de machine learning publicado en Hugging Face por el usuario VallemKeerthi que, segun su propia model card, no constituye un modelo de lenguaje ni una red neuronal profunda en el sentido habitual, sino un pipeline de prediccion de parametros enzimaticos (kcat y Km) construido sobre un experimento previo denominado v6-A. El repositorio contiene codigo Python, utilidades de validacion cruzada, scripts de mezcla (blending) y artefactos serializados en formato joblib y ONNX, con un tamano total de 0,4 GB. No se trata, por tanto, de un modelo generativo: no hay pesos de transformer, no hay tokenizador y no hay capacidades de generacion de texto.
 
 El objetivo declarado es mejorar exclusivamente la prediccion de kcat respecto a la version v6-A, manteniendo intacta la prediccion de Km (que se hereda tal cual del arbol de decision de v6-A). El autor es explicito al afirmar que no se reclama ninguna mejora sobre v6-A: el repositorio es un conjunto de herramientas y pasos reproducibles (smoke tests, auditoria, validacion cruzada, blending, entrenamiento final y empaquetado Docker) que el usuario debe ejecutar con sus propios datos (`train.parquet`, `esm_train.npz`) para obtener evidencia real.
 
@@ -77,5 +77,5 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VallemKeerthi/kcat-km-v6b
+- Hugging Face: https://huggingface.co/VallemKeerthi/kcat-km-v6b
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

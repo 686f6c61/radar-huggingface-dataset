@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse Glimmer-30B es un modelo de lenguaje causal denso de aproximadamente 29.600 millones de parámetros desarrollado por Meta Superintelligence Lab (publicado en HuggingFace por el usuario Mspanz88) y destilado a partir de Muse Spark. Su rasgo diferencial es que combina un transformer causal de texto con un encoder de percepción dedicado de ~1,8B parámetros (ViT-G/14), lo que le permite aceptar entradas intercaladas de texto e imagen y emitir únicamente texto. Está diseñado específicamente para tareas agénticas autónomas ejecutadas en hardware de consumo, sin necesidad de infraestructura en la nube.
+Muse Glimmer-30B es un modelo de lenguaje causal denso de aproximadamente 29.600 millones de parámetros desarrollado por Meta Superintelligence Lab (publicado en Hugging Face por el usuario Mspanz88) y destilado a partir de Muse Spark. Su rasgo diferencial es que combina un transformer causal de texto con un encoder de percepción dedicado de ~1,8B parámetros (ViT-G/14), lo que le permite aceptar entradas intercaladas de texto e imagen y emitir únicamente texto. Está diseñado específicamente para tareas agénticas autónomas ejecutadas en hardware de consumo, sin necesidad de infraestructura en la nube.
 
 El modelo se ha optimizado para despliegue local: según la model card, las cuantizaciones K-Quant reducen los pesos a menos de 20 GB (~4 bits) con una degradación de entre el 0,2% y el 1,0% en una media de 15 benchmarks. Incorpora además un "drafter" de decodificación especulativa basado en DFlash, que predice bloques de 16 tokens por pasada y multiplica el throughput hasta 3,1x en una RTX 5090.
 
@@ -17,7 +17,7 @@ Con una ventana de contexto de 131.072+ tokens, licencia Apache 2.0, soporte dec
 | Parámetros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 131.072+ tokens |
 | Tipos de cuantización | Full precision (16-bit), K-Quant-Dynamic, K-Quant-17GB (~4 bits); drafter DFlash cuantizado |
-| Idiomas soportados | Más de 100 idiomas según la model card (HuggingFace no declara lista de idiomas) |
+| Idiomas soportados | Más de 100 idiomas según la model card (Hugging Face no declara lista de idiomas) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors; variantes cuantizadas K-Quant |
 
@@ -76,7 +76,7 @@ Throughput con K-Quant-17GB + drafter DFlash cuantizado (batch size 1, decodific
 - VRAM estimada: 64 GB en precisión completa; 32 GB con K-Quant-Dynamic; 24 GB con K-Quant-17GB (pesos del LM por debajo de 20 GB, dejando margen para KV cache, encoder visual y drafter).
 - GPUs recomendadas: Nvidia RTX 5090 (32 GB) para el perfil K-Quant-Dynamic; A100/H100 para precisión completa o serving de mayor batch.
 - GPU de consumo: sí, cabe en tarjetas de 24 GB (RTX 4090, RTX 3090) con K-Quant-17GB; también en Apple Silicon M4 Max y M5 Max.
-- Opciones de despliegue: transformers (librería declarada), endpoints compatibles de HuggingFace (tag `endpoints_compatible`) y esquemas de cuantización K-Quant, habitualmente asociados a llama.cpp/Ollama. No se confirma en la información disponible el soporte de vLLM o TGI.
+- Opciones de despliegue: transformers (librería declarada), endpoints compatibles de Hugging Face (tag `endpoints_compatible`) y esquemas de cuantización K-Quant, habitualmente asociados a llama.cpp/Ollama. No se confirma en la información disponible el soporte de vLLM o TGI.
 - Latencia y throughput: 233,4 tok/s en RTX 5090, 37,8 tok/s en M4 Max y 50,2 tok/s en M5 Max con especulación DFlash (batch 1). El modelo se describe como suficientemente rápido para conversación fluida e interacción agéntica en tiempo real.
 
 ## Comparativa con modelos similares
@@ -101,12 +101,12 @@ La ventaja estructural de Muse Glimmer frente a estas alternativas es la combina
 - Contexto: 131.072+ tokens; la calidad en el extremo superior de la ventana no está cuantificada públicamente.
 - Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones de los datos de terceros y de los componentes derivados (encoder y drafter).
 - La cuantización K-Quant-17GB introduce una degradación media del 1,0% en 15 benchmarks; en tareas sensibles debe validarse el impacto específico.
-- La información de HuggingFace no lista idiomas y el modelo tiene solo 8 descargas y 1 like, lo que indica ausencia de validación por parte de la comunidad.
+- La información de Hugging Face no lista idiomas y el modelo tiene solo 8 descargas y 1 like, lo que indica ausencia de validación por parte de la comunidad.
 - Fecha de corte de conocimiento: 4 de enero de 2026; no cubre eventos posteriores.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mspanz88/Muse-Glimmer-30B
+- Hugging Face: https://huggingface.co/Mspanz88/Muse-Glimmer-30B
 - Paper del encoder de percepción: https://arxiv.org/abs/2504.13181
 - Paper del drafter DFlash: https://arxiv.org/abs/2602.06036
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

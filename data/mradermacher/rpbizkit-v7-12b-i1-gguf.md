@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | RPBizkit-v7-12B-i1-GGUF (este repo) | 12,2B | GGUF (imatrix) | no disponible | no disponible | Cuantizaciones i1 desde IQ1_S hasta Q6_K |
 | RPBizkit-v7-12B-GGUF (mismo autor) | 12,2B | GGUF (estaticas) | no disponible | no disponible | Cuantizaciones estaticas equivalentes |
-| RPBizkit-v7-12B (modelo base) | 12,2B | safetensors | no disponible | no disponible | Pesos originales en HuggingFace |
+| RPBizkit-v7-12B (modelo base) | 12,2B | safetensors | no disponible | no disponible | Pesos originales en Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones tecnicas que permitan comparar este modelo con otras alternativas de la misma categoria. La comparativa se limita a las tres variantes del mismo modelo base, de las que solo la de este repositorio ofrece cuantizaciones imatrix.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones tecnicas que permita
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/RPBizkit-v7-12B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/RPBizkit-v7-12B-i1-GGUF
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/RPBizkit-v7-12B-GGUF
 - Modelo base: https://huggingface.co/RicardoEstep/RPBizkit-v7-12B
 - Lista de descargas del autor para este modelo: https://hf.tst.eu/model#RPBizkit-v7-12B-i1-GGUF

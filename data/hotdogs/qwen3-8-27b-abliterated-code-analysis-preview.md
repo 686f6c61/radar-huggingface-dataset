@@ -61,9 +61,9 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview | 27,36 B | 8192 | MIT | HuggingFace |
-| hotdogs/Qwen3.8-27B-abliterated | 27,36 B | no disponible | MIT | HuggingFace |
-| Qwen/Qwen3.8-27B (original) | 27,36 B | no disponible | no disponible | HuggingFace |
+| hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview | 27,36 B | 8192 | MIT | Hugging Face |
+| hotdogs/Qwen3.8-27B-abliterated | 27,36 B | no disponible | MIT | Hugging Face |
+| Qwen/Qwen3.8-27B (original) | 27,36 B | no disponible | no disponible | Hugging Face |
 
 La diferencia principal con el modelo base abliterated es el formato de salida: este modelo produce respuestas mucho más cortas y estructuradas (84-136 caracteres) frente a las respuestas verbosas del modelo base (377-1102 caracteres), y añade el conteo de issues y encabezados específicos. No hay datos de rendimiento comparativo.
 
@@ -78,7 +78,7 @@ La diferencia principal con el modelo base abliterated es el formato de salida: 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview)
+- Repositorio Hugging Face del modelo: [hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview)
 - Repo GGUF con MTP: [hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview-mtp-gguf](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview-mtp-gguf)
 - Dataset de entrenamiento: [hotdogs/code-analysis-sft-qwen38](https://huggingface.co/datasets/hotdogs/code-analysis-sft-qwen38)
 - Modelo base abliterated: [hotdogs/Qwen3.8-27B-Ablit-lam12](https://huggingface.co/hotdogs/Qwen3.8-27B-Ablit-lam12) (también accesible como [hotdogs/Qwen3.8-27B-abliterated](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated))

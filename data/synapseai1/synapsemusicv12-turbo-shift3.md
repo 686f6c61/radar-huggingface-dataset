@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SynapseMusicV12-Turbo-Shift3 es un modelo de generación de audio musical a partir de texto (text-to-audio / text2music) publicado por el usuario SYNAPSEai1 en HuggingFace. El repositorio reutiliza la model card de ACE-Step 1.5, un modelo fundacional de música open source desarrollado conjuntamente por ACE Studio y StepFun, por lo que su contenido técnico debe leerse como documentación del modelo base y no necesariamente como descripción verificada de esta variante concreta.
+SynapseMusicV12-Turbo-Shift3 es un modelo de generación de audio musical a partir de texto (text-to-audio / text2music) publicado por el usuario SYNAPSEai1 en Hugging Face. El repositorio reutiliza la model card de ACE-Step 1.5, un modelo fundacional de música open source desarrollado conjuntamente por ACE Studio y StepFun, por lo que su contenido técnico debe leerse como documentación del modelo base y no necesariamente como descripción verificada de esta variante concreta.
 
 El modelo pesa 2.393.872.518 parámetros (unos 2,39 mil millones) según los pesos en safetensors, y el repositorio ocupa 4,8 GB. La arquitectura descrita combina un modelo de lenguaje que actúa como planificador (genera el "plano" de la canción: metadatos, letra, estructura y captions mediante chain-of-thought) con un Diffusion Transformer (DiT) que sintetiza el audio final. Se distribuye con licencia MIT, lo que permite uso comercial de la música generada, y su valoración en el momento de la consulta era de 0 descargas y 1 like.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 - VRAM estimada: menos de 4 GB segun la model card del modelo base, aunque el repositorio ocupa 4,8 GB en disco, por lo que la VRAM necesaria en precision completa puede ser superior. No se documentan requisitos por cuantizacion.
 - GPU recomendadas: A100 (menos de 2 segundos por cancion completa) y RTX 3090 (menos de 10 segundos por cancion completa) segun la model card.
 - GPU de consumo: si, el autor afirma que funciona en hardware de consumo con menos de 4 GB de VRAM, lo que abarcaria tarjetas de gama media y baja de generaciones recientes. No se detallan modelos concretos adicionales.
-- Opciones de despliegue: la libreria declarada es transformers con pipeline text-to-audio y requiere `custom_code`, por lo que el despliegue estandar pasa por un pipeline personalizado de HuggingFace Transformers. No hay indicios de soporte para vLLM, llama.cpp, Ollama o TGI, que estan orientados a modelos de lenguaje y no a este tipo de difusion de audio. Existe una demo en HuggingFace Spaces del proyecto original.
+- Opciones de despliegue: la libreria declarada es transformers con pipeline text-to-audio y requiere `custom_code`, por lo que el despliegue estandar pasa por un pipeline personalizado de Hugging Face Transformers. No hay indicios de soporte para vLLM, llama.cpp, Ollama o TGI, que estan orientados a modelos de lenguaje y no a este tipo de difusion de audio. Existe una demo en Hugging Face Spaces del proyecto original.
 - Latencia y throughput: por debajo de 2 segundos por cancion en A100 y por debajo de 10 segundos en RTX 3090, en el modelo base. El throughput por lote no esta documentado.
 
 ## Comparativa con modelos similares
@@ -103,11 +103,11 @@ No se han encontrado en la busqueda web enlaces o datos tecnicos sobre modelos a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Turbo-Shift3
-- Modelo base ACE-Step v1.5 en HuggingFace: https://huggingface.co/ACE-Step/Ace-Step1.5
-- Coleccion ACE-Step 1.5 en HuggingFace: https://huggingface.co/collections/ACE-Step/ace-step-15
+- Modelo en Hugging Face: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Turbo-Shift3
+- Modelo base ACE-Step v1.5 en Hugging Face: https://huggingface.co/ACE-Step/Ace-Step1.5
+- Coleccion ACE-Step 1.5 en Hugging Face: https://huggingface.co/collections/ACE-Step/ace-step-15
 - Modelo en ModelScope: https://modelscope.cn/models/ACE-Step/ACE-Step-v1-5
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
 - Pagina del proyecto: https://ace-step.github.io/ace-step-v1.5.github.io/
 - Informe tecnico (arXiv): https://arxiv.org/abs/2602.00744
 - Repositorio GitHub citado: https://github.com/ace-step/ACE-Step-1.5

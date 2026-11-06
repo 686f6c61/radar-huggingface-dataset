@@ -108,7 +108,7 @@ La busqueda web realizada no devolvio informacion relevante sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddalcu/Qwen-Image-2.1-MLX-Serve-4bit
+- Modelo en Hugging Face: https://huggingface.co/ddalcu/Qwen-Image-2.1-MLX-Serve-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio mlx-serve: https://github.com/ddalcu/mlx-serve
 - Rama de desarrollo del modelo: https://github.com/ddalcu/mlx-serve/tree/feat/qwen-image-2.1

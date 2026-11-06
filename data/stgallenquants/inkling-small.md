@@ -85,7 +85,7 @@ Los modelos de comparacion (Qwen3.5, DeepSeek V4 Flash, MiMo V2.5, Minimax M2.7)
 
 ## Enlaces
 
-- Model card de HuggingFace: https://huggingface.co/stgallenquants/Inkling-Small
+- Model card de Hugging Face: https://huggingface.co/stgallenquants/Inkling-Small
 - Model card oficial de Thinking Machines Lab: https://thinkingmachines.ai/model-card/inkling-small/
 - Pagina del producto Inkling: https://thinkingmachines.ai/inkling/
 - Playground de Tinker: https://tinker.thinkingmachines.ai/playground
@@ -94,5 +94,5 @@ Los modelos de comparacion (Qwen3.5, DeepSeek V4 Flash, MiMo V2.5, Minimax M2.7)
 - Receta de vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-Small
 - Receta de TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Receta de Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
 - Politica de uso aceptable: https://thinkingmachines.ai/model-acceptable-use-policy

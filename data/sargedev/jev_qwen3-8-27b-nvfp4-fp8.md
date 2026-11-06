@@ -73,9 +73,9 @@ No se aportan cifras de MMLU, HumanEval, GSM8K ni de ningun otro benchmark estan
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SargeDev/Jev_Qwen3.8-27B-NVFP4-FP8 | 21,17 B | NVFP4 W4A4 + FP8_DYNAMIC (mixta) | no disponible (ejemplo a 8192) | apache-2.0 | HuggingFace, 8 descargas |
-| SargeDev/Jev_Qwen3.8-27B (base bf16) | no disponible (mismo modelo, sin cuantizar) | bf16 (~51 GB) | no disponible | apache-2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | no disponible | bf16 | no disponible | no disponible | HuggingFace |
+| SargeDev/Jev_Qwen3.8-27B-NVFP4-FP8 | 21,17 B | NVFP4 W4A4 + FP8_DYNAMIC (mixta) | no disponible (ejemplo a 8192) | apache-2.0 | Hugging Face, 8 descargas |
+| SargeDev/Jev_Qwen3.8-27B (base bf16) | no disponible (mismo modelo, sin cuantizar) | bf16 (~51 GB) | no disponible | apache-2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | no disponible | bf16 | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes; la comparacion se limita a parametros, formato y licencia. No se identifican en la informacion proporcionada otros modelos comparables de terceros.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SargeDev/Jev_Qwen3.8-27B-NVFP4-FP8
+- Modelo en Hugging Face: https://huggingface.co/SargeDev/Jev_Qwen3.8-27B-NVFP4-FP8
 - Modelo base (bf16): https://huggingface.co/SargeDev/Jev_Qwen3.8-27B
 - Modelo abliterated de origen: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Dataset de destilacion: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3

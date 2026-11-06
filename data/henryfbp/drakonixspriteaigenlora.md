@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo DrakonixSpriteAIGenLoRA, publicado por el usuario henryfbp en HuggingFace, es un adaptador de bajo rango (LoRA) cuya finalidad, según su nombre, parece orientada a la generación de sprites mediante inteligencia artificial. No obstante, la información disponible es extremadamente limitada: la model card no incluye descripción, el pipeline no está definido y no se especifican idiomas, arquitectura ni datos de entrenamiento. El repositorio se ha creado y actualizado el 3 de septiembre de 2026, sin descargas ni valoraciones por parte de la comunidad.
+El modelo DrakonixSpriteAIGenLoRA, publicado por el usuario henryfbp en Hugging Face, es un adaptador de bajo rango (LoRA) cuya finalidad, según su nombre, parece orientada a la generación de sprites mediante inteligencia artificial. No obstante, la información disponible es extremadamente limitada: la model card no incluye descripción, el pipeline no está definido y no se especifican idiomas, arquitectura ni datos de entrenamiento. El repositorio se ha creado y actualizado el 3 de septiembre de 2026, sin descargas ni valoraciones por parte de la comunidad.
 
 La relevancia de este modelo en el ecosistema open source es, a día de hoy, marginal, ya que no se ha publicado documentación técnica que permita evaluar su funcionamiento, rendimiento o aplicabilidad. Al tratarse de un LoRA, se presume que está diseñado para ajustar un modelo base de generación de imágenes, pero no se indica cuál es ese modelo base ni cómo se integra.
 
@@ -52,4 +52,4 @@ No se ha publicado información que permita realizar una comparativa con modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/henryfbp/DrakonixSpriteAIGenLoRA
+- Hugging Face: https://huggingface.co/henryfbp/DrakonixSpriteAIGenLoRA

@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros totales | Contexto | Precision de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minjaechoi/qwen36-35b-a3b-2p00bit-r9 | 35.107.181.936 | no disponible | Expertos enrutados a 2,00 bits, resto BF16 | no disponible | HuggingFace, 0 descargas, 0 likes |
+| minjaechoi/qwen36-35b-a3b-2p00bit-r9 | 35.107.181.936 | no disponible | Expertos enrutados a 2,00 bits, resto BF16 | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen3.6-35B-A3B (base) | 35.107.181.936 | no disponible | BF16 | no disponible en la informacion proporcionada | Modelo base referenciado por el autor |
 | Otros checkpoints cuantizados de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,6 +88,6 @@ No se dispone de datos de contexto, benchmarks ni licencia de las alternativas, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r9
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r9
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog, repositorio o demo: no disponible. Los resultados de la busqueda web no contienen informacion relacionada con el modelo.

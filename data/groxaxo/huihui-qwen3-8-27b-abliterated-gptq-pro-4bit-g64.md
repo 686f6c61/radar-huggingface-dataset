@@ -79,7 +79,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/groxaxo/Huihui-Qwen3.8-27B-abliterated-GPTQ-Pro-4bit-g64
+- Repositorio Hugging Face: https://huggingface.co/groxaxo/Huihui-Qwen3.8-27B-abliterated-GPTQ-Pro-4bit-g64
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Qwen3.8-27B-abliterated
 - Proyecto GPTQ-Pro en GitHub: https://github.com/groxaxo/GPTQ-Pro
 - Artículo de vgtimes sobre el modelo base: https://vgtimes.com/tech-and-hardware/164540-huihui-qwen3.8-27b-abliterated-launches-as-an-uncensored-ai-model-for-free.html

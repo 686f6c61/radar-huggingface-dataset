@@ -98,9 +98,9 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de este re
 
 ## Enlaces
 
-- Repositorio HuggingFace de este contenedor: https://huggingface.co/twaggs88/Nemotron-3.5-Rerank-8B-pulsar-k4
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16
-- Modelo base de Ministral en HuggingFace: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
+- Repositorio Hugging Face de este contenedor: https://huggingface.co/twaggs88/Nemotron-3.5-Rerank-8B-pulsar-k4
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16
+- Modelo base de Ministral en Hugging Face: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 - Motor de inferencia pulsar: https://github.com/tylerwagler/pulsar
 - Pagina de NVIDIA NIM del modelo: https://build.nvidia.com/nvidia/nemotron-3_5-rerank-8b
 - Contenedor hermano de embeddings: https://huggingface.co/twaggs88/Nemotron-3.5-Embed-8B-pulsar-k4

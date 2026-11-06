@@ -36,7 +36,7 @@ La arquitectura es un **Poolformer** con atención **dilatada**, fusión de cara
 Dado que el modelo no está entrenado y carece de evaluación, los casos de uso son hipotéticos y orientados a investigación:
 
 - **Investigación en arquitecturas Poolformer**: el modelo sirve como banco de pruebas para estudiar el comportamiento de atención dilatada y fusión Tucker en tareas de matching, comparando con arquitecturas baseline de capacidad similar.
-- **Desarrollo de adaptadores de carga**: al ser una implementación personalizada, se puede usar para construir un adaptador que permita cargar el modelo con APIs genéricas de HuggingFace.
+- **Desarrollo de adaptadores de carga**: al ser una implementación personalizada, se puede usar para construir un adaptador que permita cargar el modelo con APIs genéricas de Hugging Face.
 - **Pruebas de humo en pipelines de entrenamiento**: el checkpoint de inicialización permite verificar que el script `train.py` funciona correctamente antes de lanzar entrenamientos completos.
 - **Estudio de estabilidad numérica**: con solo 16K parámetros, es útil para depurar problemas de inicialización, normalización o estabilidad del optimizador en configuraciones pequeñas.
 - **Comparación de recetas de entrenamiento**: la configuración por defecto (adafactor + onecycle) puede servir para experimentar con diferentes schedulers y optimizadores en un entorno controlado.
@@ -62,12 +62,12 @@ No se dispone de modelos comparables en la misma categoría (Poolformer para mat
 
 - **Checkpoint sin entrenar**: el modelo no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. No debe usarse en producción.
 - **Riesgo de alucinación**: no aplica, ya que no es un modelo generativo de texto.
-- **Implementación personalizada**: las APIs genéricas de HuggingFace no pueden cargar el modelo sin un adaptador explícito.
+- **Implementación personalizada**: las APIs genéricas de Hugging Face no pueden cargar el modelo sin un adaptador explícito.
 - **Sin benchmarks**: no hay evidencia de rendimiento en ninguna tarea.
 - **Licencia BSD-3-Clause**: permite uso comercial y modificación, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usan con datasets propios.
 - **Documentación mínima**: no se especifican detalles de entrenamiento, datos ni hiperparámetros más allá de la receta por defecto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pmmikhailov/matching
+- Repositorio en Hugging Face: https://huggingface.co/pmmikhailov/matching
 - No se han encontrado papers, blogs o demos asociados a este modelo en la busqueda web. Los resultados obtenidos (MatchAnything, modelo de Mikhailov, leaderboard de LLMs) no estan relacionados con este repositorio.

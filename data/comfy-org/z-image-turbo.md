@@ -4,7 +4,7 @@
 
 Z-Image-Turbo es un modelo de difusión texto‑imagen publicado originalmente por Tongyi‑MAI y redistribuido por Comfy‑Org en un repositorio empaquetado para su uso directo en ComfyUI. Este repositorio no contiene pesos entrenados por Comfy‑Org: es un reempaquetado de los ficheros del modelo base `Tongyi-MAI/Z-Image-Turbo` en formato de fichero único (`diffusion-single-file`), acompañado del codificador de texto, el VAE y una LoRA de destilación, todo con la estructura de carpetas que espera ComfyUI.
 
-El interés del repositorio es práctico: concentra en un único paquete de 42,1 GB las variantes de precisión del modelo (bf16, int8 y nvfp4), tres versiones del codificador de texto (bf16, fp8 mixto y fp4 mixto) y los flujos de trabajo listos para ejecutar, incluyendo texto‑imagen, texto‑imagen en int8, reescalado a 2K y ControlNet Union. Con 9.173.397 descargas y 991 «me gusta» en HuggingFace, se ha convertido en una de las vías más habituales para probar Z-Image‑Turbo sin tener que reconstruir el grafo de nodos a mano.
+El interés del repositorio es práctico: concentra en un único paquete de 42,1 GB las variantes de precisión del modelo (bf16, int8 y nvfp4), tres versiones del codificador de texto (bf16, fp8 mixto y fp4 mixto) y los flujos de trabajo listos para ejecutar, incluyendo texto‑imagen, texto‑imagen en int8, reescalado a 2K y ControlNet Union. Con 9.173.397 descargas y 991 «me gusta» en Hugging Face, se ha convertido en una de las vías más habituales para probar Z-Image‑Turbo sin tener que reconstruir el grafo de nodos a mano.
 
 La relevancia actual del modelo radica en su orientación a la generación rápida (el sufijo «Turbo» y la presencia de una LoRA de destilación apuntan a muestreo en pocos pasos) y en su licencia Apache 2.0, que permite uso comercial sin las restricciones de otras familias de modelos de imagen. No obstante, la información publicada en este repositorio es puramente de empaquetado: no incluye arquitectura detallada, número de parámetros ni resultados de benchmarks.
 
@@ -91,7 +91,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/Z-Image-Turbo
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Z-Image-Turbo
 - Modelo original: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Ejemplos y flujos de trabajo de ComfyUI para Z-Image: https://comfyanonymous.github.io/ComfyUI_examples/z_image/
 - Plantilla texto‑imagen: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_z_image_turbo.json

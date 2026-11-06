@@ -77,7 +77,7 @@ No se dispone de comparaciones con modelos externos (por ejemplo, otros adaptado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/freeqaz/decomp-synth-lifter-v17-mix-qwen3.5-9b-lora
+- Repositorio Hugging Face: https://huggingface.co/freeqaz/decomp-synth-lifter-v17-mix-qwen3.5-9b-lora
 - Adaptador v17-full (arm hermano): https://huggingface.co/freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-lora
 - Adaptador v14-evalformat (referencia evaluada): https://huggingface.co/freeqaz/decomp-synth-lifter-v14-evalformat-qwen3.5-9b-lora
 - Adaptador v16-v5chat: https://huggingface.co/freeqaz/decomp-synth-lifter-v16-v5chat-qwen3.5-9b-lora

@@ -75,5 +75,5 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/w4a16_rtn_smoke-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/w4a16_rtn_smoke-e2e
 - Libreria compressed-tensors (relacionada): https://github.com/neuralmagic/compressed-tensors

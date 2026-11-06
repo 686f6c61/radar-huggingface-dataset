@@ -4,7 +4,7 @@
 
 `jinkmn/molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-006640` es un ajuste fino (fine-tuning) de un modelo de vision-lenguaje-accion (VLA) para robotica, derivado de `allenai/MolmoAct2-BimanualYAM`, el modelo base publicado por el Allen Institute for AI (Ai2). El modelo ha sido entrenado con LeRobot (commit `c13d79e6e350c589babc5b7c5cf5ef05cb0fa58e`) sobre el dataset `lerobot/spell_ceatec_makuhari_lerobot_v30` y exportado desde el paso de entrenamiento 6640 de un trabajo de fin de grado. Su proposito es generar acciones de control continuo para un robot bimanual de tipo YAM (dos brazos de 6 articulaciones mas pinza cada uno, 14 grados de libertad en total) a partir de tres vistas de camara (superior, izquierda y derecha) y una instruccion de tarea en lenguaje natural.
 
-El modelo tiene 5.442.196.208 parametros (aproximadamente 5,44 mil millones) almacenados en float32, lo que arroja un repositorio de 21,8 GB. Los adaptadores LoRA empleados en el ajuste estan fusionados en los pesos finales. La etiqueta de la model card indica `image-text-to-text` junto con `robotics` y `lerobot`, y el pipeline declarado en HuggingFace es `robotics`.
+El modelo tiene 5.442.196.208 parametros (aproximadamente 5,44 mil millones) almacenados en float32, lo que arroja un repositorio de 21,8 GB. Los adaptadores LoRA empleados en el ajuste estan fusionados en los pesos finales. La etiqueta de la model card indica `image-text-to-text` junto con `robotics` y `lerobot`, y el pipeline declarado en Hugging Face es `robotics`.
 
 Es relevante en el contexto actual porque demuestra el flujo completo de adaptacion de un VLA multimodal open source a un robot concreto mediante un dataset de demostraciones propio, con estadisticas de normalizacion y configuracion de politica exportadas. No obstante, se trata de un artefacto de investigacion muy especifico: 0 descargas, 0 likes, licencia no declarada y sin benchmarks publicados.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`jinkmn/molmoact2-yam-...-step-006640`) | 5,44B | no disponible | VLA bimanual YAM (14 DoF) | no disponible | HuggingFace (0 descargas) |
-| `allenai/MolmoAct2-BimanualYAM` (base) | no disponible | no disponible | VLA bimanual YAM | no disponible | HuggingFace |
+| Este modelo (`jinkmn/molmoact2-yam-...-step-006640`) | 5,44B | no disponible | VLA bimanual YAM (14 DoF) | no disponible | Hugging Face (0 descargas) |
+| `allenai/MolmoAct2-BimanualYAM` (base) | no disponible | no disponible | VLA bimanual YAM | no disponible | Hugging Face |
 | Otros VLA open source de robotica (por ejemplo, familias tipo OpenVLA o pi0) | no disponible | no disponible | VLA | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre este ajuste y el modelo base ni con alternativas, por lo que la comparacion se limita a los datos de parametros conocidos.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre este ajuste y el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jinkmn/molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-006640
+- Modelo en Hugging Face: https://huggingface.co/jinkmn/molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-006640
 - Modelo base: https://huggingface.co/allenai/MolmoAct2-BimanualYAM
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/spell_ceatec_makuhari_lerobot_v30
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

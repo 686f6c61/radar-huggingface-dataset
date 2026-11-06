@@ -79,7 +79,7 @@ No hay datos de rendimiento comparativos disponibles en la informacion proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-2602
+- Hugging Face: https://huggingface.co/aisingapore/Llama-SEA-Guard-8B-2602
 - Coleccion SEA-Guard: https://huggingface.co/collections/aisingapore/sea-guard
 - Paper SEA-Guard: https://arxiv.org/abs/2602.01618
 - Paper SEA-SafeguardBench: https://arxiv.org/abs/2512.05501

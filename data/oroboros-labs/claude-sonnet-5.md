@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`oroboros-labs/claude-sonnet-5` es un modelo de pesos abiertos publicado en HuggingFace por el usuario comunitario `oroboros-labs`. A pesar del nombre, que imita deliberadamente la nomenclatura comercial de Anthropic, no existe ninguna indicacion de que este modelo haya sido desarrollado por Anthropic ni de que sea un derivado autorizado de su familia Claude. Se trata, por tanto, de un modelo de terceros con un nombre potencialmente confuso que conviene tratar con cautela.
+`oroboros-labs/claude-sonnet-5` es un modelo de pesos abiertos publicado en Hugging Face por el usuario comunitario `oroboros-labs`. A pesar del nombre, que imita deliberadamente la nomenclatura comercial de Anthropic, no existe ninguna indicacion de que este modelo haya sido desarrollado por Anthropic ni de que sea un derivado autorizado de su familia Claude. Se trata, por tanto, de un modelo de terceros con un nombre potencialmente confuso que conviene tratar con cautela.
 
 El unico dato tecnico solido disponible es el recuento de parametros: 8.190.735.360 parametros (~8,2 mil millones), registrado a partir de los archivos safetensors del repositorio. El repositorio ocupa 5,0 GB y esta etiquetado como `gguf`, `endpoints_compatible`, `region:us` y `conversational`, lo que sugiere un modelo orientado a conversacion distribuido en formato GGUF y compatible con endpoints de inferencia.
 
@@ -32,7 +32,7 @@ Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo esta orientado a mantener dialogos, aunque no hay detalle sobre calidad ni alcance.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse mediante infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse mediante infraestructura de endpoints de Hugging Face.
 - Capacidades de razonamiento, codigo, matematicas o vision: no disponibles.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -66,7 +66,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros (8,2
   - Q3_K_M / Q2_K: en torno a 4,0 GB y 3,0 GB respectivamente, con perdida notable de calidad.
 - GPU recomendadas: para FP16, A100 40 GB, H100 o RTX 4090 24 GB; para Q4/Q5, RTX 3060 12 GB, RTX 4070, RTX 4090 o equivalentes.
 - Consumer GPU: si, en cuantizaciones Q4/Q5 cabe en GPUs de 8-12 GB (RTX 3060, 4060, 4070, Apple Silicon con memoria unificada suficiente).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y text-generation-webui para GGUF; el tag `endpoints_compatible` sugiere despliegue mediante endpoints de HuggingFace. El soporte en vLLM o TGI no esta confirmado.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y text-generation-webui para GGUF; el tag `endpoints_compatible` sugiere despliegue mediante endpoints de Hugging Face. El soporte en vLLM o TGI no esta confirmado.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ No hay datos de rendimiento del modelo objeto de la ficha, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oroboros-labs/claude-sonnet-5 | ~8,2B | no disponible | no disponible | HuggingFace (comunitaria) |
-| Meta Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | HuggingFace, amplia adopcion |
-| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | HuggingFace, amplia adopcion |
-| Qwen2.5 7B | 7,6B | 128K | Apache 2.0 (segun variante) | HuggingFace, amplia adopcion |
+| oroboros-labs/claude-sonnet-5 | ~8,2B | no disponible | no disponible | Hugging Face (comunitaria) |
+| Meta Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | Hugging Face, amplia adopcion |
+| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | Hugging Face, amplia adopcion |
+| Qwen2.5 7B | 7,6B | 128K | Apache 2.0 (segun variante) | Hugging Face, amplia adopcion |
 
 No es posible comparar rendimiento (MMLU, HumanEval, GSM8K u otros) porque el modelo analizado no publica resultados y no deben inferirse.
 
@@ -96,5 +96,5 @@ No es posible comparar rendimiento (MMLU, HumanEval, GSM8K u otros) porque el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oroboros-labs/claude-sonnet-5
+- Modelo en Hugging Face: https://huggingface.co/oroboros-labs/claude-sonnet-5
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, su paper, repositorio o demo; los resultados obtenidos corresponden unicamente al simbolo ouroboros (Wikipedia), a Oroboros Instruments y a contenidos no relacionados.

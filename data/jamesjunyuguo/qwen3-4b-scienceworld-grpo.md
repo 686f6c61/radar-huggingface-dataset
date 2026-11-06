@@ -1,11 +1,11 @@
 # jamesjunyuguo/Qwen3-4B-ScienceWorld-GRPO
 
 ## Resumen
-Qwen3-4B-ScienceWorld-GRPO es un ajuste fino del modelo Qwen3-4B de Alibaba, publicado por el usuario jamesjunyuguo en HuggingFace. El sufijo del nombre indica que se ha aplicado entrenamiento con GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo, sobre un conjunto de datos o entorno denominado "ScienceWorld", que en la literatura corresponde a un entorno interactivo de tareas cientificas de laboratorio. El modelo hereda la arquitectura transformer densa de la familia Qwen3, con aproximadamente 4.400 millones de parametros.
+Qwen3-4B-ScienceWorld-GRPO es un ajuste fino del modelo Qwen3-4B de Alibaba, publicado por el usuario jamesjunyuguo en Hugging Face. El sufijo del nombre indica que se ha aplicado entrenamiento con GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo, sobre un conjunto de datos o entorno denominado "ScienceWorld", que en la literatura corresponde a un entorno interactivo de tareas cientificas de laboratorio. El modelo hereda la arquitectura transformer densa de la familia Qwen3, con aproximadamente 4.400 millones de parametros.
 
 El modelo resuelve, en principio, el problema de dotar a un LLM de tamano medio de capacidades de razonamiento y actuacion en entornos cientificos simulados, donde el agente debe ejecutar secuencias de acciones experimentales. Es relevante para desarrolladores que quieran experimentar con tecnicas de RL aplicadas a modelos pequenos y desplegables en hardware modesto, aunque la informacion publicada por el autor es minima: no hay model card sustantiva, ni datos de entrenamiento detallados, ni resultados de evaluacion.
 
-La ficha se basa unicamente en los metadatos disponibles en HuggingFace y en el conocimiento general de la familia Qwen3. Cualquier dato no confirmado se marca explicitamente como no disponible.
+La ficha se basa unicamente en los metadatos disponibles en Hugging Face y en el conocimiento general de la familia Qwen3. Cualquier dato no confirmado se marca explicitamente como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-ScienceWorld-GRPO | 4,41B | no disponible | SFT base + GRPO sobre ScienceWorld | no disponible | HuggingFace (35 descargas) |
-| Qwen3-4B (base) | 4,4B | 32.768 tokens nativos | Preentrenamiento + post-entrenamiento de Alibaba | Apache 2.0 (segun el modelo base) | HuggingFace, ampliamente disponible |
-| Qwen2.5-3B-Instruct | 3,1B | 32.768 tokens | SFT + DPO | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | 3,2B | 131.072 tokens | SFT + RLHF | Llama 3.2 Community License | HuggingFace |
+| Qwen3-4B-ScienceWorld-GRPO | 4,41B | no disponible | SFT base + GRPO sobre ScienceWorld | no disponible | Hugging Face (35 descargas) |
+| Qwen3-4B (base) | 4,4B | 32.768 tokens nativos | Preentrenamiento + post-entrenamiento de Alibaba | Apache 2.0 (segun el modelo base) | Hugging Face, ampliamente disponible |
+| Qwen2.5-3B-Instruct | 3,1B | 32.768 tokens | SFT + DPO | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | 3,2B | 131.072 tokens | SFT + RLHF | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia, ya que no hay benchmarks publicados para el ajuste GRPO. El modelo base Qwen3-4B es la referencia natural para medir el efecto del entrenamiento con RL.
 
@@ -79,7 +79,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay benchm
 - Fecha de creacion futura en los metadatos (2026-11-04): posible inconsistencia en el registro, a verificar.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/jamesjunyuguo/Qwen3-4B-ScienceWorld-GRPO
+- Hugging Face: https://huggingface.co/jamesjunyuguo/Qwen3-4B-ScienceWorld-GRPO
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Entorno ScienceWorld (paper): https://arxiv.org/abs/2203.00504
 - Repositorio ScienceWorld: https://github.com/allenai/scienceworld

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse2-125M es un modelo de lenguaje autorregresivo de 122,9 millones de parámetros desarrollado por Muse Research, publicado en HuggingFace bajo el identificador CollectionStudio/Muse2-125M. Se trata del hermano pequeño de Muse2-230M y comparte con él una arquitectura híbrida de convolución y atención implementada desde cero en PyTorch (clase `Muse2ForCausalLM`), sin dependencia del código de `transformers`. El repositorio incluye tanto los pesos del modelo base como los de la versión ajustada por instrucciones (Instruct).
+Muse2-125M es un modelo de lenguaje autorregresivo de 122,9 millones de parámetros desarrollado por Muse Research, publicado en Hugging Face bajo el identificador CollectionStudio/Muse2-125M. Se trata del hermano pequeño de Muse2-230M y comparte con él una arquitectura híbrida de convolución y atención implementada desde cero en PyTorch (clase `Muse2ForCausalLM`), sin dependencia del código de `transformers`. El repositorio incluye tanto los pesos del modelo base como los de la versión ajustada por instrucciones (Instruct).
 
 El modelo resuelve el problema de disponer de un generador de texto conversacional con huella mínima para entornos de borde y dispositivos con recursos limitados. Su contexto nativo es de 8.000 tokens, ampliable hasta 128.000, con embeddings compartidos, Grouped-Query Attention y una ventana de conocimiento que llega hasta principios de 2024. La versión Instruct se ha alineado exclusivamente mediante supervisión fina (SFT) con enmascaramiento de pérdida solo en la completación, sin RLHF ni DPO.
 
@@ -68,8 +68,8 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Muse2-125M | 122,9 M | 8k (128k max) | Apache-2.0 | HuggingFace |
-| Muse2-230M | No disponible | No disponible | No disponible | HuggingFace (referenciado por el autor) |
+| Muse2-125M | 122,9 M | 8k (128k max) | Apache-2.0 | Hugging Face |
+| Muse2-230M | No disponible | No disponible | No disponible | Hugging Face (referenciado por el autor) |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CollectionStudio/Muse2-125M
+- Hugging Face: https://huggingface.co/CollectionStudio/Muse2-125M
 - Modelo base: https://huggingface.co/Muse-research/Muse2-125M-Base
 - Modelo hermano Muse2-230M: referenciado en la model card como `../Muse2%20230M` (no se proporciona URL directa en la información disponible)

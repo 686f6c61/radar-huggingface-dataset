@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VEDA-1.0-4B-MLX es un modelo publicado en HuggingFace por el usuario accessonai bajo licencia Apache 2.0. El repositorio no incluye model card descriptiva: el README se limita a la declaracion de licencia, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o idiomas soportados. El identificador sugiere un modelo de aproximadamente 4.000 millones de parametros distribuido en formato MLX, el framework de arrays de Apple para ejecucion en silicio de Apple (M1 en adelante).
+VEDA-1.0-4B-MLX es un modelo publicado en Hugging Face por el usuario accessonai bajo licencia Apache 2.0. El repositorio no incluye model card descriptiva: el README se limita a la declaracion de licencia, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o idiomas soportados. El identificador sugiere un modelo de aproximadamente 4.000 millones de parametros distribuido en formato MLX, el framework de arrays de Apple para ejecucion en silicio de Apple (M1 en adelante).
 
 En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", no tiene pipeline declarado y no aparece documentacion adicional del autor. Esto lo situa en la categoria de publicacion reciente o experimental, sin validacion por parte de la comunidad. Cualquier evaluacion tecnica debe por tanto considerarse provisional hasta que el autor publique detalles o terceros reproduzcan resultados.
 
@@ -21,7 +21,7 @@ La relevancia potencial del modelo radica en su formato: MLX permite ejecutar in
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible; el sufijo "MLX" del identificador apunta a pesos en formato MLX (safetensors con metadatos de cuantizacion), sin confirmar en el repositorio |
 | Autor | accessonai |
-| Fecha de creacion | 23 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 23 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 23 de septiembre de 2026 |
 | Descargas | 0 |
 | Likes | 0 |
@@ -30,7 +30,7 @@ La relevancia potencial del modelo radica en su formato: MLX permite ejecutar in
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en HuggingFace unicamente contiene la declaracion `license: apache-2.0`, sin secciones de arquitectura, tokenizador, composicion del dataset, numero de tokens de entrenamiento ni procesos de alineacion (RLHF, DPO, RLVR u otros). No se ha localizado documentacion tecnica, paper ni blog del autor en los resultados de busqueda consultados.
+No disponible. La model card publicada en Hugging Face unicamente contiene la declaracion `license: apache-2.0`, sin secciones de arquitectura, tokenizador, composicion del dataset, numero de tokens de entrenamiento ni procesos de alineacion (RLHF, DPO, RLVR u otros). No se ha localizado documentacion tecnica, paper ni blog del autor en los resultados de busqueda consultados.
 
 El unico dato estructural inferible procede del propio identificador del repositorio. El sufijo "4B" es la convencion habitual para indicar del orden de 4.000 millones de parametros, y "MLX" designa tanto el framework de Apple como el formato de pesos que este consume. Se trata de una inferencia nominal, no de una confirmacion: el repositorio no incluye config.json, tokenizer ni lista de ficheros verificable en la informacion disponible. Si el modelo sigue el patron habitual de la familia MLX, cabria esperar pesos safetensors acompanados de configuracion de cuantizacion, pero esto no puede afirmarse con los datos actuales.
 
@@ -81,7 +81,7 @@ La comparativa se establece con modelos de tamano comparable ampliamente documen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VEDA-1.0-4B-MLX | no disponible (~4B segun el nombre) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| VEDA-1.0-4B-MLX | no disponible (~4B segun el nombre) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Llama 3.2 3B Instruct | ~3.200 millones | 128.000 tokens | Licencia comunitaria Llama 3.2 | Ampliamente desplegado, soporte en vLLM, llama.cpp y MLX |
 | Qwen2.5 3B Instruct | ~3.100 millones | 32.768 tokens | Apache 2.0 | Ampliamente desplegado, versiones GGUF y MLX de terceros |
 | Phi-3.5-mini Instruct | ~3.800 millones | 128.000 tokens | MIT | Ampliamente desplegado, soporte en multiples runtimes |
@@ -91,7 +91,7 @@ La diferencia principal no esta en los parametros sino en la trazabilidad: los t
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card, paper ni blog que describa arquitectura, datos de entrenamiento, tokenizador o proceso de alineacion. Esto impide auditar sesgos, procedencia de datos o cumplimiento normativo.
-- Rendimiento no verificado: con 0 descargas y 0 "likes", no existe evidencia de que el modelo cargue correctamente ni de que genere texto coherente. La mera publicacion en HuggingFace no garantiza que los pesos sean funcionales.
+- Rendimiento no verificado: con 0 descargas y 0 "likes", no existe evidencia de que el modelo cargue correctamente ni de que genere texto coherente. La mera publicacion en Hugging Face no garantiza que los pesos sean funcionales.
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje generativo, y previsiblemente mas acusado en un modelo de ~4B que en alternativas mayores. Sin evaluaciones no puede cuantificarse.
 - Sesgos: desconocidos. Al no documentarse la composicion del dataset, no es posible estimar sesgos de genero, etnia, idioma o ideologia.
 - Cobertura idiomatica: no declarada. El castellano podria no estar soportado o estarlo de forma marginal.
@@ -102,7 +102,7 @@ La diferencia principal no esta en los parametros sino en la trazabilidad: los t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/accessonai/VEDA-1.0-4B-MLX
+- Repositorio en Hugging Face: https://huggingface.co/accessonai/VEDA-1.0-4B-MLX
 - vMLX, runtime MLX con cache de prefijo y batching continuo: https://vmlx.net/
 - Ficha de vMLX en SkillsLLM: https://skillsllm.com/skill/vmlx
 - Framework MLX (Apple): https://mlx-framework.org/

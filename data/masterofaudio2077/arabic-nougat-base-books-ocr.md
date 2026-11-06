@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arabic-nougat-base-books-ocr` es un modelo de OCR especializado en paginas de libros arabes impresos, desarrollado por el usuario de HuggingFace `masterofaudio2077`. Se trata de un fine-tune completo de `MohamedRashad/arabic-base-nougat` (349M parametros), que a su vez deriva de la arquitectura Nougat presentada en el paper "Nougat: Neural Optical Understanding for Academic Documents" (arXiv:2308.13418). El modelo convierte una imagen de pagina escaneada en texto estructurado con tres secciones explicitas: `[HEADER]`, `[BODY]` y `[FOOTNOTES]`, conservando las diacriticas del arabe clasico.
+`arabic-nougat-base-books-ocr` es un modelo de OCR especializado en paginas de libros arabes impresos, desarrollado por el usuario de Hugging Face `masterofaudio2077`. Se trata de un fine-tune completo de `MohamedRashad/arabic-base-nougat` (349M parametros), que a su vez deriva de la arquitectura Nougat presentada en el paper "Nougat: Neural Optical Understanding for Academic Documents" (arXiv:2308.13418). El modelo convierte una imagen de pagina escaneada en texto estructurado con tres secciones explicitas: `[HEADER]`, `[BODY]` y `[FOOTNOTES]`, conservando las diacriticas del arabe clasico.
 
 La relevancia del modelo radica en su especializacion: frente a OCR genericos multilingues, este checkpoint esta entrenado especificamente sobre paginas de tafsir (exegesis coranica) escaneadas y paginas sinteticas del corpus Shamela, lo que le permite manejar la tipografia y la estructura de libros arabes clasicos. El autor reporta una tasa de error de caracteres (CER) de 0.0090 en el checkpoint del paso 15.000, frente a 0.5715 del modelo base sin fine-tune.
 
@@ -83,12 +83,12 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 - **Riesgo de alucinacion y bucles**: el autor aplica reemplazo aleatorio de tokens de entrada para reducir bucles de repeticion, lo que sugiere que este es un problema conocido en la arquitectura; la salida debe revisarse siempre.
 - **Uso sin revision desaconsejado**: el propio autor indica que cualquier uso que dependa de que el texto sea exacto sin revision queda fuera de alcance.
 - **Licencia del modelo Apache 2.0, pero datos de entrenamiento CC-BY-NC-ND**: los datasets `freococo/ocr_arabic_books` y `freococo/synth_shamela_ocr_arabic_books` tienen licencia CC-BY-NC-ND (no comercial, sin derivadas), lo que plantea dudas sobre el uso comercial del modelo derivado pese a la licencia Apache 2.0 de los pesos. Conviene revisar este punto antes de un despliegue en produccion comercial.
-- **Sin demo publicada**: el autor marca la demo como "TODO"; no hay espacio de HuggingFace ni endpoint verificado.
+- **Sin demo publicada**: el autor marca la demo como "TODO"; no hay espacio de Hugging Face ni endpoint verificado.
 - **Cero descargas y cero likes**: el modelo es muy reciente y no cuenta con validacion de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masterofaudio2077/arabic-nougat-base-books-ocr
+- Modelo en Hugging Face: https://huggingface.co/masterofaudio2077/arabic-nougat-base-books-ocr
 - Modelo base: https://huggingface.co/MohamedRashad/arabic-base-nougat
 - Paper Nougat: https://arxiv.org/abs/2308.13418
 - Dataset de tafsir: https://huggingface.co/datasets/freococo/ocr_arabic_books

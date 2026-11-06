@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZeroTTS-x2TL es un modelo de sintesis de voz (text-to-speech) zero-shot especializado en vietnamita, publicado en HuggingFace por el usuario Phamhapaa1 y distribuido en formato ONNX con licencia MIT. Se trata de un repositorio derivado o reempaquetado de ZeroTTS, el sistema desarrollado por zeroweight-ai: la model card incluida en el repositorio, los ejemplos de codigo y los enlaces apuntan al modelo original `zeroweight-ai/ZeroTTS`, mientras que el identificador de este repositorio es `Phamhapaa1/ZeroTTS-x2TL`. El autor no documenta en la informacion disponible en que consiste el sufijo "x2TL" ni que diferencias introduce respecto al modelo de origen.
+ZeroTTS-x2TL es un modelo de sintesis de voz (text-to-speech) zero-shot especializado en vietnamita, publicado en Hugging Face por el usuario Phamhapaa1 y distribuido en formato ONNX con licencia MIT. Se trata de un repositorio derivado o reempaquetado de ZeroTTS, el sistema desarrollado por zeroweight-ai: la model card incluida en el repositorio, los ejemplos de codigo y los enlaces apuntan al modelo original `zeroweight-ai/ZeroTTS`, mientras que el identificador de este repositorio es `Phamhapaa1/ZeroTTS-x2TL`. El autor no documenta en la informacion disponible en que consiste el sufijo "x2TL" ni que diferencias introduce respecto al modelo de origen.
 
 El modelo resuelve la generacion de voz natural en vietnamita con clonacion de voz a partir de pocos segundos de audio de referencia (entre 3 y 30 segundos), sin necesidad de ajuste fino ni entrenamiento por hablante. Su propuesta diferencial es el rendimiento en CPU: declara un factor de tiempo real (RTF) de aproximadamente 0,5x, es decir, unas dos veces mas rapido que el tiempo real en la CPU de un portatil convencional, con un primer fragmento de audio disponible en torno a 70 ms, lo que habilita sintesis en streaming sin GPU. El repositorio ocupa 0,9 GB en formato ONNX y no declara el numero de parametros.
 
@@ -27,7 +27,7 @@ La relevancia actual del modelo esta en su combinacion de licencia permisiva (MI
 | Clonacion de voz | Zero-shot, con 3 a 30 segundos de audio de referencia |
 | Latencia hasta el primer audio | ~70 ms (declarado) |
 | Factor de tiempo real (RTF) | ~0,5x (declarado, aproximadamente 2x mas rapido que tiempo real en CPU) |
-| Descargas / likes en HuggingFace | 0 descargas / 0 likes |
+| Descargas / likes en Hugging Face | 0 descargas / 0 likes |
 | Fecha de creacion | 2026-09-13 |
 
 ## Arquitectura y entrenamiento
@@ -116,7 +116,7 @@ Los datos de la siguiente tabla proceden de conocimiento general sobre cada proy
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Phamhapaa1/ZeroTTS-x2TL
+- Repositorio en Hugging Face: https://huggingface.co/Phamhapaa1/ZeroTTS-x2TL
 - Modelo de origen referenciado en la model card: https://huggingface.co/zeroweight-ai/ZeroTTS
 - Codigo, ejemplos y demo de navegador: https://github.com/zeroweight-ai/ZeroTTS
 - Conjunto de evaluacion ZeroBench-TTS: https://huggingface.co/datasets/zeroweight-ai/ZeroBench-TTS

@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/CivChan-1.2B-Distill-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/CivChan-1.2B-Distill-GGUF
 - Modelo base (safetensors): https://huggingface.co/addansee/CivChan-1.2B-Distill
 - Dataset de destilacion: https://huggingface.co/datasets/addansee/CivChan-Distill
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

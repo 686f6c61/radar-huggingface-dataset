@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chen-ghmjl/mae-checkpoint3` es un repositorio experimental publicado en HuggingFace por el usuario chen-ghmjl que contiene una implementación propia de una arquitectura denominada "Mae", orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un modelo de lenguaje: la propia model card lo describe como un esqueleto de código con un checkpoint de inicialización válido únicamente para *smoke tests*, sin ninguna métrica de referencia declarada.
+`chen-ghmjl/mae-checkpoint3` es un repositorio experimental publicado en Hugging Face por el usuario chen-ghmjl que contiene una implementación propia de una arquitectura denominada "Mae", orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un modelo de lenguaje: la propia model card lo describe como un esqueleto de código con un checkpoint de inicialización válido únicamente para *smoke tests*, sin ninguna métrica de referencia declarada.
 
 El artefacto principal es el fichero `main.py`, acompañado de `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicialización de pesos). El recuento real de parámetros en safetensors es de 33.088, un orden de magnitud propio de un módulo pequeño o de una cabeza de tarea, no de un transformer de gran escala. La escala declarada en la model card es "base", con atención *grouped query*, fusión por *cross attention*, activación swish y normalización por batchnorm.
 
@@ -22,7 +22,7 @@ Su relevancia es, por tanto, la de un punto de partida reproducible para experim
 | Formato de pesos | safetensors (PyTorch); incluye `main.py`, `config.json` y `training_args.json` |
 | Escala declarada | base |
 | Estado del checkpoint | Inicialización para smoke tests; no entrenado |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamano del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
@@ -38,7 +38,7 @@ No hay entrenamiento completado. El autor indica explícitamente que `model.safe
 - No se declara soporte de agentes ni de razonamiento multi-paso.
 - No se declara capacidad multilingüe ni ningún idioma concreto.
 - Capacidad real disponible: servir como inicialización de pesos y como esqueleto de código ejecutable (`python main.py --help`) para inspeccionar la arquitectura de fusión en tareas de *matching*.
-- Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace (por ejemplo `AutoModel.from_pretrained`) requieren un adaptador explícito antes de poder usarse.
+- Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face (por ejemplo `AutoModel.from_pretrained`) requieren un adaptador explícito antes de poder usarse.
 
 ## Casos de uso
 
@@ -85,11 +85,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No hay idiomas declarados ni tokenizador documentado, por lo que se desconoce el formato de entrada esperado.
 - No hay resultados de benchmarks ni métricas de tarea; cualquier afirmación de rendimiento sería inventada.
 - Licencia MIT permite uso comercial del código y los pesos, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando se use con datasets externos.
-- Es una implementación personalizada: las APIs automáticas de HuggingFace fallarán sin un adaptador explícito, lo que complica la integración en pipelines estándar.
+- Es una implementación personalizada: las APIs automáticas de Hugging Face fallarán sin un adaptador explícito, lo que complica la integración en pipelines estándar.
 - El repositorio tiene 0 descargas y 0 likes, sin señales de validación por parte de la comunidad.
 - Los resultados de una futura versión entrenada deben documentarse por separado de los valores por defecto aquí publicados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chen-ghmjl/mae-checkpoint3
+- Repositorio en Hugging Face: https://huggingface.co/chen-ghmjl/mae-checkpoint3
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo, su paper, su blog o su repositorio de código. Los resultados devueltos corresponden a entidades no relacionadas (SHEIN Francia, el cantante Chen, la página de desambiguación "Chen" y una épicerie asiática en París).

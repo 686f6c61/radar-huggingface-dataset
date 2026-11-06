@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ridhanhimmee/model-2-selector-deberta` es un modelo de clasificación de texto publicado en HuggingFace Hub por el usuario ridhanhimmee. Según las etiquetas del repositorio, está construido sobre la arquitectura DeBERTa-v2 y se distribuye en formato safetensors para su uso con la librería `transformers`. El recuento real de parámetros extraído de los pesos es de 141.896.450, una cifra coherente con una variante de tamaño "base" de la familia DeBERTa-v2, aunque el autor no confirma explícitamente el checkpoint de partida.
+`ridhanhimmee/model-2-selector-deberta` es un modelo de clasificación de texto publicado en Hugging Face Hub por el usuario ridhanhimmee. Según las etiquetas del repositorio, está construido sobre la arquitectura DeBERTa-v2 y se distribuye en formato safetensors para su uso con la librería `transformers`. El recuento real de parámetros extraído de los pesos es de 141.896.450, una cifra coherente con una variante de tamaño "base" de la familia DeBERTa-v2, aunque el autor no confirma explícitamente el checkpoint de partida.
 
-El problema que resuelve es, en principio, la clasificación de secuencias de texto (etiquetado de documentos, filtrado o selección de entradas), a juzgar por el pipeline declarado (`text-classification`) y por el nombre del repositorio, que sugiere una función de "selector". No obstante, esta interpretación no está documentada: la model card es la plantilla automática de HuggingFace, sin ninguna sección completada.
+El problema que resuelve es, en principio, la clasificación de secuencias de texto (etiquetado de documentos, filtrado o selección de entradas), a juzgar por el pipeline declarado (`text-classification`) y por el nombre del repositorio, que sugiere una función de "selector". No obstante, esta interpretación no está documentada: la model card es la plantilla automática de Hugging Face, sin ninguna sección completada.
 
 La relevancia práctica del modelo es actualmente muy limitada como objeto de evaluación: cero descargas, cero "likes", licencia no especificada, idiomas no declarados y ausencia total de información sobre datos de entrenamiento, hiperparámetros o evaluación. Es un artefacto sin documentar que solo puede caracterizarse por sus metadatos técnicos (arquitectura, tamaño, formato y pipeline).
 
@@ -29,7 +29,7 @@ La relevancia práctica del modelo es actualmente muy limitada como objeto de ev
 
 La única información arquitectónica disponible proviene de las etiquetas del repositorio, que apuntan a DeBERTa-v2, la segunda iteración del modelo presentado en el artículo "DeBERTa: Decoding-enhanced BERT with Disentangled Attention". Se trata, por tanto, de un encoder transformer bidireccional con atención desenredada (contenido y posición codificados en vectores separados) y posiciones relativas, orientado a tareas de comprensión del lenguaje. El recuento de 141,9 millones de parámetros encaja con una variante de tamaño base más una cabeza de clasificación, pero el autor no indica qué checkpoint concreto se usó como base ni cuántas etiquetas tiene la cabeza.
 
-No hay ningún dato sobre el proceso de entrenamiento: se desconoce el corpus, el número de tokens, la composición del dataset, si hubo ajuste fino supervisado, destilación o técnicas de alineación como RLHF o DPO, así como los hiperparámetros y el régimen de precisión. La model card es la plantilla autogenerada por HuggingFace y todos los campos relevantes aparecen como "[More Information Needed]". Tampoco se documenta ninguna innovación técnica adicional ni el procedimiento de tokenización empleado.
+No hay ningún dato sobre el proceso de entrenamiento: se desconoce el corpus, el número de tokens, la composición del dataset, si hubo ajuste fino supervisado, destilación o técnicas de alineación como RLHF o DPO, así como los hiperparámetros y el régimen de precisión. La model card es la plantilla autogenerada por Hugging Face y todos los campos relevantes aparecen como "[More Information Needed]". Tampoco se documenta ninguna innovación técnica adicional ni el procedimiento de tokenización empleado.
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: aproximadamente 0,57 GB en FP32 (141,9 M de parámetros × 4 bytes), unos 0,28 GB en FP16 y unos 0,14 GB en INT8, sin contar el overhead de activaciones y del runtime. El tamaño del repositorio (0,6 GB) es coherente con pesos en FP32.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente; el modelo cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, A100 o H100, y en la práctica no necesita GPU dedicada.
 - Cabe en GPU de consumo: sí, en cualquier tarjeta moderna e incluso en iGPU con memoria compartida; también es viable la inferencia en CPU para cargas moderadas.
-- Opciones de despliegue: pipeline de `transformers`, servidor de inferencia con `text-embeddings-inference` (etiqueta presente en el repositorio), endpoints compatibles con la API de HuggingFace (etiqueta `endpoints_compatible`), y exportación a ONNX o cuantización INT8 mediante herramientas estándar (no se distribuyen artefactos de este tipo).
+- Opciones de despliegue: pipeline de `transformers`, servidor de inferencia con `text-embeddings-inference` (etiqueta presente en el repositorio), endpoints compatibles con la API de Hugging Face (etiqueta `endpoints_compatible`), y exportación a ONNX o cuantización INT8 mediante herramientas estándar (no se distribuyen artefactos de este tipo).
 - Latencia y throughput: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -69,10 +69,10 @@ Los datos de las alternativas provienen de sus model cards públicas y se incluy
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ridhanhimmee/model-2-selector-deberta` | 141.896.450 | No disponible | `text-classification` | No disponible | HuggingFace, 0 descargas |
-| `microsoft/deberta-v2-base` | ~139 M | 512 tokens | Encoder base (fine-tuning) | MIT | HuggingFace |
-| `google-bert/bert-base-uncased` | ~110 M | 512 tokens | Encoder base (fine-tuning) | Apache 2.0 | HuggingFace |
-| `FacebookAI/roberta-base` | ~125 M | 512 tokens | Encoder base (fine-tuning) | MIT | HuggingFace |
+| `ridhanhimmee/model-2-selector-deberta` | 141.896.450 | No disponible | `text-classification` | No disponible | Hugging Face, 0 descargas |
+| `microsoft/deberta-v2-base` | ~139 M | 512 tokens | Encoder base (fine-tuning) | MIT | Hugging Face |
+| `google-bert/bert-base-uncased` | ~110 M | 512 tokens | Encoder base (fine-tuning) | Apache 2.0 | Hugging Face |
+| `FacebookAI/roberta-base` | ~125 M | 512 tokens | Encoder base (fine-tuning) | MIT | Hugging Face |
 
 No hay datos de rendimiento comparado (MMLU, GLUE, F1 en clasificación) para el modelo evaluado, por lo que la comparación se limita a tamaño, formato, licencia y disponibilidad. La diferencia principal frente a las alternativas es la ausencia de licencia declarada y de documentación, lo que lo hace menos apto para producción que los checkpoints oficiales.
 
@@ -90,7 +90,7 @@ No hay datos de rendimiento comparado (MMLU, GLUE, F1 en clasificación) para el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ridhanhimmee/model-2-selector-deberta
+- Repositorio Hugging Face: https://huggingface.co/ridhanhimmee/model-2-selector-deberta
 - Artículo de DeBERTa-v2 (referencia de la arquitectura etiquetada): https://arxiv.org/abs/2006.03654
 - Artículo de DeBERTa original: https://arxiv.org/abs/2006.03654 (v1: https://arxiv.org/abs/2006.03654; referencia canónica del modelo: "DeBERTa: Decoding-enhanced BERT with Disentangled Attention")
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

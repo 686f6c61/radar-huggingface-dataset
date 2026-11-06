@@ -95,7 +95,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_jbbmix_ka4_a1p0_free_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_jbbmix_ka4_a1p0_free_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Checkpoint hermano `svd-safety-l2_jbb_k0p02_a1p0_free_remove40`: https://huggingface.co/Jeesup/svd-safety-l2_jbb_k0p02_a1p0_free_remove40
 - Checkpoint hermano `svd-safety-l2_jbb_k0p02_a0p5_protected_remove40`: https://huggingface.co/Jeesup/svd-safety-l2_jbb_k0p02_a0p5_protected_remove40

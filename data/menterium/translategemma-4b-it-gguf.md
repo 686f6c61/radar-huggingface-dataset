@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de traducci√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Menterium/translategemma-4b-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Menterium/translategemma-4b-it-GGUF
 - Modelo base: https://huggingface.co/google/translategemma-4b-it
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Cliente Celerando (Menterium): https://celerando.menterium.com

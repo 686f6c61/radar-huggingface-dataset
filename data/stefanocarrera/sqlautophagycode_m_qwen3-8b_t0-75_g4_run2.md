@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g4_run2` es un artefacto publicado en HuggingFace por el usuario stefanocarrera. Por el identificador se deduce que se trata de un ajuste fino derivado de Qwen3-8B, con un sufijo (`t0.75_g4_run2`) que parece codificar hiperparametros de generacion o de un experimento repetido (temperatura 0.75, ejecucion 2), y un prefijo (`sqlautophagycode_M`) que sugiere un entrenamiento orientado a SQL y generacion de codigo.
+El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g4_run2` es un artefacto publicado en Hugging Face por el usuario stefanocarrera. Por el identificador se deduce que se trata de un ajuste fino derivado de Qwen3-8B, con un sufijo (`t0.75_g4_run2`) que parece codificar hiperparametros de generacion o de un experimento repetido (temperatura 0.75, ejecucion 2), y un prefijo (`sqlautophagycode_M`) que sugiere un entrenamiento orientado a SQL y generacion de codigo.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace y no contiene informacion real: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como `[More Information Needed]`. El repositorio acumula 0 descargas y 0 likes, por lo que se trata de una publicacion de investigacion o de un experimento personal sin adopcion comunitaria.
+La model card del repositorio es la plantilla autogenerada por Hugging Face y no contiene informacion real: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como `[More Information Needed]`. El repositorio acumula 0 descargas y 0 likes, por lo que se trata de una publicacion de investigacion o de un experimento personal sin adopcion comunitaria.
 
 La relevancia de la ficha es por tanto limitada y condicionada: sin model card, sin benchmarks y con un tamano de repositorio de 0,2 GB que resulta incompatible con un checkpoint completo de 8.000 millones de parametros, cualquier uso en produccion exige verificar primero que contiene realmente el repositorio. Los resultados de busqueda web asociados no contienen ninguna referencia util al modelo.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento del modelo analizado que permitan comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g4_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g4_run2
 - Referencia citada en la plantilla de la model card (impacto de carbono, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico citado en la plantilla: https://mlco2.github.io/impact
 - Modelo base presumible, Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

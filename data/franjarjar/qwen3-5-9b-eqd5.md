@@ -96,7 +96,7 @@ La comparativa se limita a las alternativas citadas en la model card; no se disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Franjarjar/Qwen3.5-9B-EQD5
+- Repositorio Hugging Face: https://huggingface.co/Franjarjar/Qwen3.5-9B-EQD5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Motor Espetero: https://github.com/JarJarFran/espetero
 - Documentacion del formato EQ: https://github.com/JarJarFran/espetero/blob/main/docs/eq.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`coolwio/webui` es un repositorio alojado en HuggingFace bajo el identificador del usuario `coolwio`, publicado el 1 de noviembre de 2026 con licencia MIT. La model card asociada no contiene ninguna descripción funcional, arquitectura, tamaño, datos de entrenamiento ni especificaciones técnicas: únicamente incluye la declaración de licencia. El pipeline no está declarado y los idiomas soportados figuran como no disponibles.
+`coolwio/webui` es un repositorio alojado en Hugging Face bajo el identificador del usuario `coolwio`, publicado el 1 de noviembre de 2026 con licencia MIT. La model card asociada no contiene ninguna descripción funcional, arquitectura, tamaño, datos de entrenamiento ni especificaciones técnicas: únicamente incluye la declaración de licencia. El pipeline no está declarado y los idiomas soportados figuran como no disponibles.
 
 Por el nombre del repositorio y la ausencia de pesos documentados, no es posible confirmar que se trate de un modelo de lenguaje en sentido estricto. Podría tratarse de un artefacto auxiliar (por ejemplo, una interfaz web o un componente de demo) o de un repositorio vacío o en fase inicial. El recuento de descargas es 0 y el de likes es 1, lo que indica una adopción prácticamente nula y ausencia de validación por parte de la comunidad.
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, 
 
 No es posible proponer casos de uso concretos y realistas sin información sobre la naturaleza del artefacto. Los únicos escenarios que pueden describirse con rigor son los siguientes:
 
-- Auditoría de repositorios HuggingFace: el identificador y los metadatos permiten rastrear la publicación, pero no evaluar su contenido funcional.
+- Auditoría de repositorios Hugging Face: el identificador y los metadatos permiten rastrear la publicación, pero no evaluar su contenido funcional.
 - Verificación de licencia: la declaración MIT permite comprobar los términos legales aplicables, aunque sin conocer qué artefacto se distribuye.
 - Seguimiento de publicaciones del autor `coolwio`: útil para detectar actualizaciones futuras de la model card o la incorporación de pesos.
 - Integración en catálogos internos de modelos: solo como registro de metadatos, sin posibilidad de invocación hasta que se documente el pipeline.
@@ -81,5 +81,5 @@ No es posible establecer una comparativa rigurosa porque se desconoce la categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/coolwio/webui
+- Repositorio en Hugging Face: https://huggingface.co/coolwio/webui
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

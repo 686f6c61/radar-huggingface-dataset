@@ -4,7 +4,7 @@
 
 OProver-32B es un modelo de lenguaje de 32 000 millones de parámetros, desarrollado por el equipo de m-a-p (multimodal-art-projection), especializado en demostración de teoremas formales en Lean 4. Se trata de un sistema agéntico que trata la demostración de teoremas como un bucle de refinamiento multi-ronda: dado un teorema objetivo, recupera demostraciones verificadas por el compilador de una memoria de pruebas previas, genera un intento, ejecuta el compilador Lean 4 y, si falla, revisa el intento usando el feedback del compilador en la siguiente ronda. Este comportamiento está integrado en la política del modelo durante el entrenamiento, no como un módulo externo.
 
-El modelo se basa en la arquitectura Qwen3 (según los metadatos de HuggingFace) y se entrena en dos etapas: un preentrenamiento continuado (CPT) sobre una mezcla de 65 000 millones de tokens que incluye código Lean formal, código general, matemáticas y cadenas de razonamiento largas, seguido de un post-entrenamiento iterativo con SFT y RL (GSPO). OProver-32B alcanza el mejor Pass@32 en MiniF2F (93,3), ProverBench (58,2) y PutnamBench (11,3), y el segundo mejor en MathOlympiad (22,8) y ProofNet (33,2), superando a modelos mucho más grandes como Goedel-Prover-V2-32B (aunque este último es un MoE de 560B). Su relevancia radica en que demuestra que un modelo denso de 32B puede competir con sistemas de cientos de miles de millones de parámetros en razonamiento matemático formal, y que el enfoque agéntico de recuperación y feedback del compilador es clave para el rendimiento.
+El modelo se basa en la arquitectura Qwen3 (según los metadatos de Hugging Face) y se entrena en dos etapas: un preentrenamiento continuado (CPT) sobre una mezcla de 65 000 millones de tokens que incluye código Lean formal, código general, matemáticas y cadenas de razonamiento largas, seguido de un post-entrenamiento iterativo con SFT y RL (GSPO). OProver-32B alcanza el mejor Pass@32 en MiniF2F (93,3), ProverBench (58,2) y PutnamBench (11,3), y el segundo mejor en MathOlympiad (22,8) y ProofNet (33,2), superando a modelos mucho más grandes como Goedel-Prover-V2-32B (aunque este último es un MoE de 560B). Su relevancia radica en que demuestra que un modelo denso de 32B puede competir con sistemas de cientos de miles de millones de parámetros en razonamiento matemático formal, y que el enfoque agéntico de recuperación y feedback del compilador es clave para el rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ No se dispone de más alternativas comparables en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/introvoyz042/OProver-32B (también disponible en la colección m-a-p: https://huggingface.co/collections/m-a-p/oprover)
+- Modelo en Hugging Face: https://huggingface.co/introvoyz042/OProver-32B (también disponible en la colección m-a-p: https://huggingface.co/collections/m-a-p/oprover)
 - Paper: https://huggingface.co/papers/2605.17283 (arXiv: https://arxiv.org/abs/2605.17283)
 - Dataset OProofs: https://huggingface.co/datasets/m-a-p/OProofs
 - Repositorio GitHub: https://github.com/multimodal-art-projection/OProver

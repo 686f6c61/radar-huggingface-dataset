@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_483465445_mixer_nano` es una implementación a escala nano de la arquitectura "mixer", desarrollada por YutaSasaki y publicada en HuggingFace. Se trata de un modelo experimental orientado a tareas de generación de texto, con una configuración técnica que incluye atención estándar, fusión bilineal, activación GELU, normalización RMSNorm e inicialización Xavier. El autor lo presenta como un artefacto de código (`model_483465445_mixer_nano.py`) más que como un modelo completo con pesos preentrenados, lo que sugiere que es un prototipo o una prueba de concepto.
+El modelo `model_483465445_mixer_nano` es una implementación a escala nano de la arquitectura "mixer", desarrollada por YutaSasaki y publicada en Hugging Face. Se trata de un modelo experimental orientado a tareas de generación de texto, con una configuración técnica que incluye atención estándar, fusión bilineal, activación GELU, normalización RMSNorm e inicialización Xavier. El autor lo presenta como un artefacto de código (`model_483465445_mixer_nano.py`) más que como un modelo completo con pesos preentrenados, lo que sugiere que es un prototipo o una prueba de concepto.
 
 A pesar de su carácter preliminar, el modelo es relevante porque ejemplifica una implementación compacta de la arquitectura mixer, una alternativa a los transformers tradicionales que combina capas de mezcla de tokens y canales. Sin embargo, no se dispone de información sobre el tamaño de parámetros, el contexto o los datos de entrenamiento, por lo que su utilidad práctica queda limitada a entornos de investigación o experimentación.
 

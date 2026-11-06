@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `advy/fakeavceleb-detect` es un detector de deepfakes publicado en HuggingFace por el usuario `advy`. Su nombre indica que está orientado a la detección de contenidos manipulados en el dataset FakeAVCeleb, un conjunto de datos de referencia para deepfakes audiovisuales. El repositorio tiene un tamaño de 3.8 GB, lo que sugiere que contiene los pesos de un modelo entrenado, aunque la model card no incluye especificaciones técnicas.
+El modelo `advy/fakeavceleb-detect` es un detector de deepfakes publicado en Hugging Face por el usuario `advy`. Su nombre indica que está orientado a la detección de contenidos manipulados en el dataset FakeAVCeleb, un conjunto de datos de referencia para deepfakes audiovisuales. El repositorio tiene un tamaño de 3.8 GB, lo que sugiere que contiene los pesos de un modelo entrenado, aunque la model card no incluye especificaciones técnicas.
 
 La relevancia de este tipo de modelos radica en la necesidad creciente de detectar vídeos y audios manipulados por IA, especialmente en verificación de identidad, periodismo y moderación de contenido. Sin embargo, la información disponible es mínima: no se indican arquitectura, parámetros, contexto ni idiomas soportados. Esta ficha se basa únicamente en los datos públicos y señala explícitamente las carencias.
 

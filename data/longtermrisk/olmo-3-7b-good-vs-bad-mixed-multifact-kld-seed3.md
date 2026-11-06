@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) de `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión instruct del modelo OLMo-3-7B desarrollado por el Allen Institute for AI (AI2). El autor, identificado como `longtermrisk`, ha publicado este checkpoint bajo la licencia Apache 2.0, con el objetivo aparente de entrenar al modelo para distinguir entre respuestas buenas y malas (según el nombre "good-vs-bad-mixed-multifact-kld"). El entrenamiento se realizó con la librería Unsloth (que acelera el proceso) y la biblioteca TRL de HuggingFace, pero la model card no proporciona detalles sobre el dataset, la metodología exacta ni los hiperparámetros empleados.
+Este modelo es un ajuste fino (fine-tuning) de `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión instruct del modelo OLMo-3-7B desarrollado por el Allen Institute for AI (AI2). El autor, identificado como `longtermrisk`, ha publicado este checkpoint bajo la licencia Apache 2.0, con el objetivo aparente de entrenar al modelo para distinguir entre respuestas buenas y malas (según el nombre "good-vs-bad-mixed-multifact-kld"). El entrenamiento se realizó con la librería Unsloth (que acelera el proceso) y la biblioteca TRL de Hugging Face, pero la model card no proporciona detalles sobre el dataset, la metodología exacta ni los hiperparámetros empleados.
 
 La relevancia de este modelo radica en su carácter experimental: es un ejemplo de cómo adaptar un modelo base open-source mediante técnicas de ajuste fino para tareas de evaluación o alineación de calidad de respuestas. Al estar basado en OLMo-3, hereda la arquitectura transformer de 7B parámetros y la licencia permisiva Apache 2.0, lo que lo hace accesible para investigación y desarrollo. Sin embargo, al carecer de documentación adicional y de benchmarks publicados, su utilidad práctica es limitada y debe considerarse como un punto de partida para experimentación, no como un modelo listo para producción.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su carácter experimental: es un ejemplo 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de `unsloth/Olmo-3-7B-Instruct`, que emplea una arquitectura transformer estándar con atención causal. El proceso de entrenamiento se llevó a cabo utilizando la librería Unsloth, que optimiza el uso de memoria y acelera el ajuste fino, junto con la biblioteca TRL de HuggingFace para el entrenamiento con refuerzo o supervisión. El nombre del checkpoint sugiere que se utilizó una técnica que mezcla muestras "buenas" y "malas" con un factor de regularización basado en divergencia KL (kld), posiblemente para mejorar la calibración o la preferencia de respuestas. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron métodos como RLHF o DPO. Toda esta información se considera no disponible.
+El modelo es un ajuste fino de `unsloth/Olmo-3-7B-Instruct`, que emplea una arquitectura transformer estándar con atención causal. El proceso de entrenamiento se llevó a cabo utilizando la librería Unsloth, que optimiza el uso de memoria y acelera el ajuste fino, junto con la biblioteca TRL de Hugging Face para el entrenamiento con refuerzo o supervisión. El nombre del checkpoint sugiere que se utilizó una técnica que mezcla muestras "buenas" y "malas" con un factor de regularización basado en divergencia KL (kld), posiblemente para mejorar la calibración o la preferencia de respuestas. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron métodos como RLHF o DPO. Toda esta información se considera no disponible.
 
 ## Capacidades
 
@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | no disponible | Apache 2.0 | HuggingFace |
-| longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed3 | 7B | no disponible | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 (permisiva) | HuggingFace |
-| Mistral 7B Instruct | 7B | 32K | Apache 2.0 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | no disponible | Apache 2.0 | Hugging Face |
+| longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed3 | 7B | no disponible | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 (permisiva) | Hugging Face |
+| Mistral 7B Instruct | 7B | 32K | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar estos modelos de forma cuantitativa. La unica diferencia clara es el origen del checkpoint (un fine-tuning experimental) frente a modelos base o instruct mas establecidos.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento para comparar estos modelos de forma cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-kld-seed3
 - Variante similar (last-third-sft): https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft
 - Variante similar (mixed-sft): https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-sft
 - Referencia en friendli.ai: https://friendli.ai/models/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-kld

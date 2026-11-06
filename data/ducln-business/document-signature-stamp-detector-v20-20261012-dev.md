@@ -77,5 +77,5 @@ No disponible. La model card no incluye comparativas con otros modelos. Como alt
 - No se especifica si el modelo maneja documentos con múltiples firmas/sellos o variaciones de escala.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/ducln-business/document-signature-stamp-detector-v20-20261012-dev
+- Hugging Face: https://huggingface.co/ducln-business/document-signature-stamp-detector-v20-20261012-dev
 - No se proporcionan otros enlaces (paper, repositorio, demo) en la información disponible.

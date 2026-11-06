@@ -71,7 +71,7 @@ El autor menciona que las pruebas de abliteracion mostraron tasas de rechazo muy
 - VRAM estimada: aproximadamente 18 GB en cuantizacion de 4 bits (segun la model card), lo que permite ejecutarlo en GPUs de consumo como RTX 4090, RTX 4080 o RTX 3090.
 - Para cuantizaciones mas altas (8 bits) se necesitarian alrededor de 28-30 GB de VRAM, requiriendo GPUs profesionales como A100 o RTX A6000.
 - El autor probo el modelo en GGUF Q5_K_M, que ocupa alrededor de 18-19 GB, con una tasa de fallos del 1,6%.
-- Opciones de despliegue: llama.cpp (para GGUF), vLLM (para safetensors), Ollama, Transformers de HuggingFace, y cualquier framework compatible con modelos Qwen.
+- Opciones de despliegue: llama.cpp (para GGUF), vLLM (para safetensors), Ollama, Transformers de Hugging Face, y cualquier framework compatible con modelos Qwen.
 - No se proporcionan datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/etemiz/Ostrich-27B-260903-Qwen3.8
+- Pagina del modelo en Hugging Face: https://huggingface.co/etemiz/Ostrich-27B-260903-Qwen3.8
 - Blog del autor: AHA 2026 leaderboard: https://huggingface.co/blog/etemiz/aha-2026-leaderboard
 - Blog del autor: Building a beneficial AI: https://huggingface.co/blog/etemiz/building-a-beneficial-ai
 - Blog del autor: From Robots That Prey to Robots That Pray: https://huggingface.co/blog/etemiz/from-robots-that-prey-to-robots-that-pray

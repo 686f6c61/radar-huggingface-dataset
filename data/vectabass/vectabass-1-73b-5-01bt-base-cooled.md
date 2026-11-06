@@ -91,7 +91,7 @@ La comparación con estos modelos es solo orientativa: no hay benchmarks publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-1.73b-5.01bt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-1.73b-5.01bt-base-cooled
 - Paper de Isambard-AI (McIntosh-Smith, Alam y Woods, 2024): https://doi.org/10.48550/arXiv.2410.11199
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

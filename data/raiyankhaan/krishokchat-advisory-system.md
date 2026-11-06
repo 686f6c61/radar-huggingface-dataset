@@ -67,5 +67,5 @@ La comparativa es estructural: KrishokChat añade una capa de visión y un siste
 - El repositorio no incluye el modelo base Gemma completo, solo el adaptador LoRA; para desplegarlo es necesario descargar el base por separado.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/RaiyanKhaan/KrishokChat-Advisory-System
+- Repositorio Hugging Face: https://huggingface.co/RaiyanKhaan/KrishokChat-Advisory-System
 - Estructura interna del repositorio: incluye `vision/` (modelos YOLO), `gemma_llm/` (adaptador LoRA y GGUF), `rag_knowledge_index/` (índices FAISS y BM25) y `advisory_engine/` (mapas de conocimiento). No se proporcionan enlaces externos a papers, blogs o demos en la documentación disponible.

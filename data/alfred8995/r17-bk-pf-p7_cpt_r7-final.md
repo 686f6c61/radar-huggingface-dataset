@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p7_cpt_r7-final` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995, con 1.296.433.152 parámetros (~1,3 B) según los metadatos de safetensors, y un repositorio de 2,6 GB. El tag `qwen2` indica que el checkpoint se construye sobre la arquitectura Qwen2, aunque no se ha publicado ninguna model card que detalle la configuración exacta de capas, dimensión oculta o cabezas de atención. El sufijo del nombre (`cpt_r7-final`) sugiere un ciclo de preentrenamiento continuado (continued pre-training) en su séptima iteración, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
+`alfred8995/r17-bk-pf-p7_cpt_r7-final` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995, con 1.296.433.152 parámetros (~1,3 B) según los metadatos de safetensors, y un repositorio de 2,6 GB. El tag `qwen2` indica que el checkpoint se construye sobre la arquitectura Qwen2, aunque no se ha publicado ninguna model card que detalle la configuración exacta de capas, dimensión oculta o cabezas de atención. El sufijo del nombre (`cpt_r7-final`) sugiere un ciclo de preentrenamiento continuado (continued pre-training) en su séptima iteración, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
 El modelo resuelve, en principio, el mismo problema que cualquier base lingüística de su tamaño: servir como punto de partida para ajuste fino supervisado, alineamiento y especialización en dominios concretos con un coste de inferencia bajo. Su relevancia potencial radica en que un modelo de ~1,3 B puede ejecutarse en GPUs de consumo e incluso en CPU con cuantización agresiva, lo que lo hace atractivo para prototipado rápido y despliegues en el borde.
 
@@ -18,7 +18,7 @@ Ahora bien, la información pública es mínima: cero descargas, cero likes, sin
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible en el repositorio; al distribuirse en safetensors es convertible a GGUF, GPTQ o AWQ con herramientas externas (conversion no verificada por el autor) |
 | Idiomas soportados | no disponible |
-| Licencia | other (acceso restringido; requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso restringido; requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ Los datos de los modelos de referencia provienen de sus fichas publicas y no de 
 - Idiomas no declarados: no puede asumirse un rendimiento aceptable en castellano ni en ningún otro idioma sin evaluación empírica previa.
 - Longitud de contexto desconocida: cualquier diseño de aplicación que dependa de ventanas largas debe validarse empíricamente antes de comprometerse.
 - Licencia `other` sin texto público accesible: no está claro si se permite uso comercial, redistribución o creación de obras derivadas; es imprescindible revisar las condiciones al solicitar acceso.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que introduce una dependencia con el autor y complica la reproducibilidad y el despliegue automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que introduce una dependencia con el autor y complica la reproducibilidad y el despliegue automatizado.
 - Cero descargas y cero likes en el momento de la consulta: no hay comunidad, issues ni validación externa que permita detectar problemas de calidad o artefactos en los pesos.
 - Fecha de creación registrada como 2026-10-23 en los metadatos del repositorio; conviene verificar la coherencia temporal del artefacto antes de integrarlo.
 - Naturaleza presumiblemente base del checkpoint: sin ajuste de instrucciones no cabe esperar seguimiento fiable de comandos ni formato conversacional estable.
@@ -93,6 +93,6 @@ Los datos de los modelos de referencia provienen de sus fichas publicas y no de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-p7_cpt_r7-final
+- Repositorio Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-p7_cpt_r7-final
 
 No se han encontrado otros enlaces relevantes (paper, blog, repositorio de código o demo) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

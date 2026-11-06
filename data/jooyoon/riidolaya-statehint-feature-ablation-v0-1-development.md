@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`riidolaya-statehint-feature-ablation-v0.1-development` es un paquete de investigación publicado en HuggingFace por el usuario JooYoon que contiene dos clasificadores lineales softmax escritos en Go, no un modelo de lenguaje generativo. Ambos artefactos (`simple2048.rsh` y `contextual2048.rsh`, 65.728 bytes cada uno) clasifican ocho intenciones sobre prosa de desarrollo de software de alcance acotado, en coreano e inglés, y se distribuyen como material reproductible de un experimento de ablación de features que falló los criterios de cualificación.
+`riidolaya-statehint-feature-ablation-v0.1-development` es un paquete de investigación publicado en Hugging Face por el usuario JooYoon que contiene dos clasificadores lineales softmax escritos en Go, no un modelo de lenguaje generativo. Ambos artefactos (`simple2048.rsh` y `contextual2048.rsh`, 65.728 bytes cada uno) clasifican ocho intenciones sobre prosa de desarrollo de software de alcance acotado, en coreano e inglés, y se distribuyen como material reproductible de un experimento de ablación de features que falló los criterios de cualificación.
 
 El modelo no genera texto, no mantiene conversación ni ejecuta acciones: emite una etiqueta de intención a partir de un texto de entrada, tratada explícitamente por el autor como una "pista" de investigación y nunca como verificación de ejecución, permiso o cierre de tarea. La comparación entre las dos variantes aísla el efecto de cambiar el conjunto de features (unigramas de palabra y n-gramas de carácter 2/3 frente a añadir pares de palabras y n-gramas 4/5 con hashing con signo y log-TF), pero el propio autor advierte que no aísla el efecto causal del orden de las palabras.
 
@@ -101,11 +101,11 @@ Para alternativas externas de la misma categoria (clasificadores lineales de int
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JooYoon/riidolaya-statehint-feature-ablation-v0.1-development
+- Modelo en Hugging Face: https://huggingface.co/JooYoon/riidolaya-statehint-feature-ablation-v0.1-development
 - Repositorio de codigo fuente: https://github.com/teamswyg/laya-tools
 - Comando de ablacion (README en ingles): https://github.com/teamswyg/laya-tools/blob/main/cmd/riido-statehint-ablate/README.en.md
 - Comando de ablacion (README en coreano): https://github.com/teamswyg/laya-tools/blob/main/cmd/riido-statehint-ablate/README.ko.md (ruta inferida a partir del enlace en ingles; no confirmada en la informacion proporcionada)
-- Tarjeta del modelo en coreano: README.ko.md dentro del repositorio de HuggingFace
-- Resultados agregados de la ablacion: `RESULTS.feature-ablation.aggregate.json` en el repositorio de HuggingFace
-- Resultados agregados del brazo V4: `RESULTS.v4.aggregate.json` en el repositorio de HuggingFace
-- Fichero de procedencia y commits inmutables: `PROVENANCE.json` en el repositorio de HuggingFace
+- Tarjeta del modelo en coreano: README.ko.md dentro del repositorio de Hugging Face
+- Resultados agregados de la ablacion: `RESULTS.feature-ablation.aggregate.json` en el repositorio de Hugging Face
+- Resultados agregados del brazo V4: `RESULTS.v4.aggregate.json` en el repositorio de Hugging Face
+- Fichero de procedencia y commits inmutables: `PROVENANCE.json` en el repositorio de Hugging Face

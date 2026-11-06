@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Dekingify-T5-Large es un modelo publicado en HuggingFace por el usuario tjusto2409 bajo licencia Apache 2.0. Por su identificador y por las etiquetas del repositorio (pytorch, onnx, t5) se trata de un modelo de la familia T5, concretamente de la variante large, es decir, un transformer encoder-decoder de aproximadamente 770 millones de parametros en su configuracion estandar. El repositorio ocupa 4,2 GB, coherente con pesos en precision completa (fp32) mas una exportacion a ONNX.
+Dekingify-T5-Large es un modelo publicado en Hugging Face por el usuario tjusto2409 bajo licencia Apache 2.0. Por su identificador y por las etiquetas del repositorio (pytorch, onnx, t5) se trata de un modelo de la familia T5, concretamente de la variante large, es decir, un transformer encoder-decoder de aproximadamente 770 millones de parametros en su configuracion estandar. El repositorio ocupa 4,2 GB, coherente con pesos en precision completa (fp32) mas una exportacion a ONNX.
 
 La model card publicada por el autor no contiene mas informacion que la declaracion de licencia, por lo que no se documentan ni la tarea de fine-tuning, ni el dataset de entrenamiento, ni los idiomas soportados, ni resultados de evaluacion. El nombre "Dekingify" sugiere una tarea de transformacion de texto, pero el autor no la describe, de modo que cualquier uso en produccion exige una evaluacion previa por parte de quien lo adopte.
 
-El modelo acumula cero descargas y cero likes en el momento de redactar esta ficha, y no tiene pipeline declarado en HuggingFace. Su relevancia actual es limitada: se trata de un repositorio sin documentacion, sin benchmarks y sin comunidad, util unicamente como punto de partida para quien quiera inspeccionar los pesos o reutilizar la exportacion ONNX.
+El modelo acumula cero descargas y cero likes en el momento de redactar esta ficha, y no tiene pipeline declarado en Hugging Face. Su relevancia actual es limitada: se trata de un repositorio sin documentacion, sin benchmarks y sin comunidad, util unicamente como punto de partida para quien quiera inspeccionar los pesos o reutilizar la exportacion ONNX.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento de Dekingify-T5-Large, por lo que la compa
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Dekingify-T5-Large (tjusto2409) | no disponible (probable ~770 M) | no disponible | Apache 2.0 | Solo cabecera de licencia | HuggingFace, 0 descargas |
+| Dekingify-T5-Large (tjusto2409) | no disponible (probable ~770 M) | no disponible | Apache 2.0 | Solo cabecera de licencia | Hugging Face, 0 descargas |
 | T5-large (Google) | ~770 M | 512 tokens en la configuracion original | Apache 2.0 | Model card completa y paper | Ampliamente utilizado |
 | FLAN-T5-large (Google) | ~780 M | Igual que T5-large | Apache 2.0 | Model card completa, ajuste por instrucciones documentado | Muy extendido |
 | mT5-large (Google) | ~1,2 B | Igual que T5 | Apache 2.0 | Model card y paper | Multilingue (101 idiomas) |
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento de Dekingify-T5-Large, por lo que la compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tjusto2409/Dekingify-T5-Large
+- Hugging Face: https://huggingface.co/tjusto2409/Dekingify-T5-Large
 - La busqueda web realizada no devolvio ningun enlace relacionado con el modelo, su autor o su entrenamiento (los resultados obtenidos correspondian a servicios de seguimiento de paquetes y no guardan relacion con el modelo).
 - Referencia general de la arquitectura base, no vinculada por el autor: paper de T5, "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer", https://arxiv.org/abs/1910.10683

@@ -73,7 +73,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Beathazard/Qwen3.8-9B-Q2_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Beathazard/Qwen3.8-9B-Q2_K-GGUF
 - Modelo base (empero-ai/Qwen3.8-9B): https://huggingface.co/empero-ai/Qwen3.8-9B
 - Herramienta GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

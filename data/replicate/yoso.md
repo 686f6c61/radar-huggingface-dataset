@@ -2,7 +2,7 @@
 
 ## Resumen
 
-replicate/yoso es un repositorio publicado en HuggingFace Hub bajo la libreria `kernels`, cuyo contenido no es un modelo de lenguaje con pesos entrenados, sino un modulo de kernels compilados para GPU. La model card indica que la tarjeta original corresponde a `kernels-community/yoso` y que se ha replicado en el Hub para su uso con la libreria `kernels` de HuggingFace. El repositorio ocupa 0,1 GB, tiene licencia Apache 2.0 y registra 0 descargas y 0 likes en el momento de la consulta.
+replicate/yoso es un repositorio publicado en Hugging Face Hub bajo la libreria `kernels`, cuyo contenido no es un modelo de lenguaje con pesos entrenados, sino un modulo de kernels compilados para GPU. La model card indica que la tarjeta original corresponde a `kernels-community/yoso` y que se ha replicado en el Hub para su uso con la libreria `kernels` de Hugging Face. El repositorio ocupa 0,1 GB, tiene licencia Apache 2.0 y registra 0 descargas y 0 likes en el momento de la consulta.
 
 El modulo exporta tres funciones: `fast_hash`, `lsh_cumulation` y `lsh_weighted_cumulation`. Por la nomenclatura, se trata de primitivas de hash rapido y de acumulacion asociadas a mecanismos de atencion basados en locally-sensitive hashing (LSH), un tipo de atencion aproximada que reduce el coste cuadratico del self-attention clasico. La informacion disponible no documenta la implementacion interna, las arquitecturas de GPU soportadas ni el algoritmo exacto, por lo que esos extremos quedan como no disponibles.
 
@@ -71,8 +71,8 @@ No se dispone de datos de rendimiento que permitan una comparativa funcional. La
 
 | Repositorio | Tipo | Licencia | Canal de distribucion | Rendimiento publicado |
 |---|---|---|---|---|
-| replicate/yoso | Kernels de hashing y acumulacion LSH | Apache 2.0 | Libreria `kernels` de HuggingFace | No disponible |
-| kernels-community/flash-attn3 | Kernels de atencion (mencionado en el aviso de la model card) | No disponible | Libreria `kernels` de HuggingFace | No disponible |
+| replicate/yoso | Kernels de hashing y acumulacion LSH | Apache 2.0 | Libreria `kernels` de Hugging Face | No disponible |
+| kernels-community/flash-attn3 | Kernels de atencion (mencionado en el aviso de la model card) | No disponible | Libreria `kernels` de Hugging Face | No disponible |
 
 No se ha publicado en la informacion proporcionada ninguna comparacion entre este modulo y alternativas equivalentes de atencion LSH.
 
@@ -90,7 +90,7 @@ No se ha publicado en la informacion proporcionada ninguna comparacion entre est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/yoso
+- Repositorio en Hugging Face: https://huggingface.co/replicate/yoso
 - Repositorio de origen indicado en la model card: https://huggingface.co/kernels-community/yoso
 - Libreria `kernels` (GitHub): https://github.com/huggingface/kernels
 - Canal de incidencias de la libreria `kernels`: https://github.com/huggingface/kernels/issues/new

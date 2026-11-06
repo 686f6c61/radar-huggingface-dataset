@@ -75,5 +75,5 @@ No disponible. No se han publicado benchmarks ni existe un modelo comparable con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/StarpowerTechnology/WVY-Architecture
+- Hugging Face: https://huggingface.co/StarpowerTechnology/WVY-Architecture
 - Sitio web de Starpower Technology: https://starpower.technology/

@@ -80,10 +80,10 @@ El informe completo se encuentra en el repositorio del modelo, en `benchmarks/je
 
 | Modelo | Parámetros | Contexto | JevBench (Acc / ECE) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| systemone-lite-spatial-v2-s1 | 494 M | 32.768 (heredado del base); entrenado a max_len 768 | 49,8% / 0,307 | Apache-2.0 | HuggingFace |
+| systemone-lite-spatial-v2-s1 | 494 M | 32.768 (heredado del base); entrenado a max_len 768 | 49,8% / 0,307 | Apache-2.0 | Hugging Face |
 | systemone-spatial-v2 (predecesor) | no disponible | no disponible | 42,9% / 0,358 | no disponible | checkpoint local citado en la model card, no publicado en el Hub |
 | Phase 1 mixed (referencia interna) | no disponible | no disponible | 45,9% / 0,221 | no disponible | no disponible |
-| Qwen2.5-0.5B-Instruct (base) | 494 M | 32.768 | no evaluado en JevBench | Apache-2.0 | HuggingFace |
+| Qwen2.5-0.5B-Instruct (base) | 494 M | 32.768 | no evaluado en JevBench | Apache-2.0 | Hugging Face |
 
 Para modelos comparables de tamaño similar fuera de la familia systemone (por ejemplo, instructivos de menos de 1.000 M de parámetros de otros fabricantes) no hay datos de JevBench publicados, por lo que la comparación de rendimiento en esa tarea no está disponible.
 
@@ -102,7 +102,7 @@ Para modelos comparables de tamaño similar fuera de la familia systemone (por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dwidlee/systemone-lite-spatial-v2-s1
+- Modelo en Hugging Face: https://huggingface.co/dwidlee/systemone-lite-spatial-v2-s1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de ajuste: https://huggingface.co/datasets/dwidlee/systemone-lite-phase2
 - Repositorio del proyecto systemone-lite: https://github.com/fritzprix/systemone-lite

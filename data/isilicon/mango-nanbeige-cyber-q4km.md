@@ -94,7 +94,7 @@ La comparacion directa con alternativas alineadas no puede establecerse con rigo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isilicon/mango-nanbeige-cyber-q4km
+- Repositorio Hugging Face: https://huggingface.co/isilicon/mango-nanbeige-cyber-q4km
 - Modelo base: https://huggingface.co/FRENCHFAKER/Nanbeige4.3-33B-cybersec-abliterated-GGUF
 - Configuracion comparada Q6_K DealignAI: https://huggingface.co/isilicon/mango-nanbeige43-33b-uncensored-q6k
 - Coleccion Mango: https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2

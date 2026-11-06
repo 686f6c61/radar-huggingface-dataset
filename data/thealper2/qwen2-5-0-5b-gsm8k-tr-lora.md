@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `thealper2/qwen2.5-0.5b-gsm8k-tr-lora` es un adaptador LoRA (PEFT) entrenado sobre `Qwen/Qwen2.5-0.5B-Instruct` para resolver problemas matemáticos de enunciado verbal al estilo GSM8K en turco. El autor es el usuario de HuggingFace `thealper2` y el repositorio contiene únicamente los pesos del adaptador (rank 16), no un modelo completo: en inferencia hay que cargar la base de Qwen2.5-0.5B-Instruct y aplicar el adaptador encima con la librería `peft`.
+El modelo `thealper2/qwen2.5-0.5b-gsm8k-tr-lora` es un adaptador LoRA (PEFT) entrenado sobre `Qwen/Qwen2.5-0.5B-Instruct` para resolver problemas matemáticos de enunciado verbal al estilo GSM8K en turco. El autor es el usuario de Hugging Face `thealper2` y el repositorio contiene únicamente los pesos del adaptador (rank 16), no un modelo completo: en inferencia hay que cargar la base de Qwen2.5-0.5B-Instruct y aplicar el adaptador encima con la librería `peft`.
 
 El problema que aborda es concreto: el modelo base de 0,5B parámetros apenas acierta el 5 % de los problemas del conjunto de validación en turco, mientras que el adaptador eleva esa precisión al 15,8 % y reduce la perplejidad de 3,09 a 1,97 sobre la misma muestra. Se trata, por tanto, de una mejora medible pero modesta, coherente con el tamaño del modelo y con la naturaleza de los datos de entrenamiento.
 
@@ -73,9 +73,9 @@ La exactitud de respuesta compara la respuesta numérica final extraída de la g
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2.5-0.5B + LoRA turco) | 502,83M base + 8,80M adaptador | 32.768 tokens en la base; 640 en entrenamiento | 15,80 % de exactitud en 500 ejemplos de validación de `gsm8k_tr` | Apache 2.0 | Adaptador PEFT en HuggingFace |
-| `Qwen/Qwen2.5-0.5B-Instruct` (base) | ~0,5B | 32.768 tokens | 5,00 % de exactitud en el mismo conjunto, perplejidad 3,09 | Apache 2.0 | Pesos completos en HuggingFace |
-| `Qwen/Qwen2.5-1.5B-Instruct` | ~1,5B | 32.768 tokens | No evaluado en `gsm8k_tr` en la información disponible | Apache 2.0 | Pesos completos en HuggingFace |
+| Este adaptador (Qwen2.5-0.5B + LoRA turco) | 502,83M base + 8,80M adaptador | 32.768 tokens en la base; 640 en entrenamiento | 15,80 % de exactitud en 500 ejemplos de validación de `gsm8k_tr` | Apache 2.0 | Adaptador PEFT en Hugging Face |
+| `Qwen/Qwen2.5-0.5B-Instruct` (base) | ~0,5B | 32.768 tokens | 5,00 % de exactitud en el mismo conjunto, perplejidad 3,09 | Apache 2.0 | Pesos completos en Hugging Face |
+| `Qwen/Qwen2.5-1.5B-Instruct` | ~1,5B | 32.768 tokens | No evaluado en `gsm8k_tr` en la información disponible | Apache 2.0 | Pesos completos en Hugging Face |
 | Alternativas ajustadas en turco para GSM8K | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante y con datos verificables es contra el modelo base, ya que el autor evalúa ambos sobre exactamente los mismos 500 ejemplos. Para el resto de alternativas no se han encontrado resultados publicados en la información disponible.
@@ -94,7 +94,7 @@ La comparación relevante y con datos verificables es contra el modelo base, ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/qwen2.5-0.5b-gsm8k-tr-lora
+- Modelo en Hugging Face: https://huggingface.co/thealper2/qwen2.5-0.5b-gsm8k-tr-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Conjunto de datos: https://huggingface.co/datasets/ytu-ce-cosmos/gsm8k_tr
 - Repositorio de PEFT: https://github.com/huggingface/peft

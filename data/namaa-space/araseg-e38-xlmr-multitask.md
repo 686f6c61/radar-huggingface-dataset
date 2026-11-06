@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`araseg-e38-xlmr-multitask` es un checkpoint multitarea desarrollado por NAMAA Community para la tarea compartida de segmentación del árabe AraSeg 2026 (ArabicNLP 2026). Se construye sobre `FacebookAI/xlm-roberta-large` mediante un ajuste fino completo (560M) y añade una cabeza de clasificación de tokens por cada subtarea: NP, NoPnx-PA y NoPnx-NP. El repositorio distribuye únicamente pesos en formato `state_dict` de PyTorch (`best_*.pt`), no un checkpoint en formato HuggingFace, por lo que `from_pretrained` no funciona y la arquitectura debe reconstruirse desde el YAML de configuración del experimento.
+`araseg-e38-xlmr-multitask` es un checkpoint multitarea desarrollado por NAMAA Community para la tarea compartida de segmentación del árabe AraSeg 2026 (ArabicNLP 2026). Se construye sobre `FacebookAI/xlm-roberta-large` mediante un ajuste fino completo (560M) y añade una cabeza de clasificación de tokens por cada subtarea: NP, NoPnx-PA y NoPnx-NP. El repositorio distribuye únicamente pesos en formato `state_dict` de PyTorch (`best_*.pt`), no un checkpoint en formato Hugging Face, por lo que `from_pretrained` no funciona y la arquitectura debe reconstruirse desde el YAML de configuración del experimento.
 
 No es un segmentador autónomo: es uno de los cinco miembros que alimentan un stack lineal ajustado con predicciones out-of-fold, y su salida son probabilidades de frontera por palabra sin calibrar. Usado en solitario no reproduce ninguna puntuación publicada; el sistema completo —con los pesos y el umbral de combinación (0,36)— reside en la colección `NAMAA-Space/araseg-2026`.
 
@@ -19,7 +19,7 @@ Su relevancia es doble: documenta un enfoque de ensemble para segmentación morf
 | Tipos de cuantizacion | no disponible (solo se distribuyen pesos en `state_dict`, sin versiones GGUF/AWQ/GPTQ) |
 | Idiomas soportados | arabe (ar) |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | PyTorch `state_dict` (`.pt`, ficheros `best_*.pt`); no es un checkpoint en formato HuggingFace |
+| Formato de pesos | PyTorch `state_dict` (`.pt`, ficheros `best_*.pt`); no es un checkpoint en formato Hugging Face |
 | Tarea | Segmentacion de texto arabe (token-classification) |
 | Subtareas | NP, NoPnx-PA, NoPnx-NP (una cabeza por subtarea) |
 | Rol en el sistema | Miembro votante de un stack lineal ajustado con predicciones out-of-fold sobre 5 miembros |
@@ -73,7 +73,7 @@ No se han publicado resultados por miembro, ni métricas de benchmarks estándar
 - Espacio en disco: 6,7 GB de repositorio (contiene varios checkpoints `best_*.pt`).
 - GPU recomendadas: cualquier GPU con 8 GB o más. Cabe sin problema en RTX 3060, RTX 4060, RTX 4070, RTX 4090. Para lotes grandes o entrenamiento, A100 o H100.
 - Cabe en GPU de consumo: sí, en cualquier modelo con al menos 8 GB de VRAM para inferencia en fp32 o fp16.
-- Opciones de despliegue: `vLLM`, `TGI`, `Ollama` y `llama.cpp` no son aplicables de forma directa, porque el repositorio no contiene un checkpoint en formato HuggingFace ni GGUF. El despliegue exige reconstruir la arquitectura con el config YAML del experimento y cargar el `state_dict` manualmente, siguiendo `ensemble.py` / `verify_offcluster.py` del repositorio de código.
+- Opciones de despliegue: `vLLM`, `TGI`, `Ollama` y `llama.cpp` no son aplicables de forma directa, porque el repositorio no contiene un checkpoint en formato Hugging Face ni GGUF. El despliegue exige reconstruir la arquitectura con el config YAML del experimento y cargar el `state_dict` manualmente, siguiendo `ensemble.py` / `verify_offcluster.py` del repositorio de código.
 - Dependencias: `transformers==5.12.1` para los miembros LoRA del ensemble; stack completo fijado en `requirements-llm.txt`.
 - Latencia y throughput estimados: no disponible.
 
@@ -81,9 +81,9 @@ No se han publicado resultados por miembro, ni métricas de benchmarks estándar
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `NAMAA-Space/araseg-e38-xlmr-multitask` | ~560M | 512 | Segmentacion arabe (miembro de ensemble) | MIT | HuggingFace (state_dict `.pt`) |
-| Sistema completo NAMAA (`NAMAA-Space/araseg-2026`) | 5 miembros sobre base ~560M | 512 | Segmentacion arabe (sistema final) | MIT (heredada) | HuggingFace (coleccion con pesos y umbrales del combinador) |
-| `FacebookAI/xlm-roberta-large` | ~560M | 512 | Modelo base multilingue (encoder) | MIT | HuggingFace |
+| `NAMAA-Space/araseg-e38-xlmr-multitask` | ~560M | 512 | Segmentacion arabe (miembro de ensemble) | MIT | Hugging Face (state_dict `.pt`) |
+| Sistema completo NAMAA (`NAMAA-Space/araseg-2026`) | 5 miembros sobre base ~560M | 512 | Segmentacion arabe (sistema final) | MIT (heredada) | Hugging Face (coleccion con pesos y umbrales del combinador) |
+| `FacebookAI/xlm-roberta-large` | ~560M | 512 | Modelo base multilingue (encoder) | MIT | Hugging Face |
 | Otros segmentadores de arabe comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio resultados relevantes sobre el modelo ni sobre alternativas comparables; los unicos enlaces utiles proceden de la propia model card.
@@ -92,7 +92,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre el modelo ni s
 
 - No es un segmentador autónomo. Es un votante de un ensemble y su salida son probabilidades sin calibrar; usarlo solo no reproduce ninguna puntuación publicada.
 - `from_pretrained` no funciona. El fichero es un `state_dict` desnudo y requiere reconstruir la arquitectura desde el YAML del experimento y el modelo base.
-- Incompatibilidad con herramientas estándar de despliegue (vLLM, TGI, Ollama, llama.cpp) al no existir pesos en formato HuggingFace ni GGUF.
+- Incompatibilidad con herramientas estándar de despliegue (vLLM, TGI, Ollama, llama.cpp) al no existir pesos en formato Hugging Face ni GGUF.
 - Dependencia de una versión muy concreta de `transformers` (`5.12.1`) para los miembros LoRA del sistema, lo que complica la reproducibilidad a medio plazo.
 - Cobertura monolingüe: únicamente árabe. No debe esperarse transferencia a otras lenguas aunque el backbone sea multilingüe.
 - Ventana de contexto de 512 tokens, heredada del modelo base; los documentos largos deben trocearse.
@@ -104,7 +104,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre el modelo ni s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e38-xlmr-multitask
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e38-xlmr-multitask
 - Colección del sistema AraSeg 2026 (pesos y umbrales del combinador): https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de código, configs y mapa miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

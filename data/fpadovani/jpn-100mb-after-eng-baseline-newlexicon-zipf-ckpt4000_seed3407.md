@@ -4,7 +4,7 @@
 
 Este modelo es un checkpoint intermedio (paso 4000) de un fine-tuning experimental sobre un modelo base GPT-2 de 124 millones de parámetros. El autor, fpadovani (afiliado a la Universidad de Groningen), lo utiliza para estudiar el orden de adquisición de idiomas en modelos de lenguaje: el nombre indica que se entrena con datos en japonés después de haber visto una línea base en inglés, usando un nuevo léxico artificial con distribución Zipf. El objetivo es investigar cómo el aprendizaje previo de una lengua afecta al aprendizaje de otra, un tema relevante para la investigación en adquisición del lenguaje y transferencia entre idiomas.
 
-El modelo está fine-tuneado con SFT (supervised fine-tuning) usando la librería TRL de HuggingFace. Tiene 124.770.816 parámetros, lo que corresponde a la arquitectura GPT-2 small. La ventana de contexto no se especifica, pero por defecto en GPT-2 es de 1024 tokens. El repositorio pesa 3,2 GB, probablemente por incluir los pesos en safetensors y archivos de entrenamiento. La licencia no está disponible, y los idiomas soportados no se declaran explícitamente, aunque el ejemplo de uso está en inglés.
+El modelo está fine-tuneado con SFT (supervised fine-tuning) usando la librería TRL de Hugging Face. Tiene 124.770.816 parámetros, lo que corresponde a la arquitectura GPT-2 small. La ventana de contexto no se especifica, pero por defecto en GPT-2 es de 1024 tokens. El repositorio pesa 3,2 GB, probablemente por incluir los pesos en safetensors y archivos de entrenamiento. La licencia no está disponible, y los idiomas soportados no se declaran explícitamente, aunque el ejemplo de uso está en inglés.
 
 Se trata de un modelo de investigación, no de producción. Su interés radica en los experimentos de adquisición de lenguaje y en la comparación entre checkpoints de diferentes fases de entrenamiento, no en su uso práctico como generador de texto general.
 
@@ -78,7 +78,7 @@ La comparativa es limitada porque este modelo no esta pensado para tareas generi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt4000_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt4000_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/75jk3tcs
 - Repositorio TRL: https://github.com/huggingface/trl

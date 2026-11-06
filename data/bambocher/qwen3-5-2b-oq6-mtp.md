@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B-oQ6-mtp es una version cuantizada del modelo Qwen3.5-2B (serie Qwen3.5 de Alibaba Cloud) publicada por el usuario bambocher en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un checkpoint convertido al formato MLX para inferencia en Apple Silicon, con cuantizacion de precision mixta generada con la herramienta oQ (oMLX v0.7.1rc1). El checkpoint completo ocupa 2.274.069.824 parametros y 2,3 GB de repositorio, con una media efectiva de 8,106 bits por peso.
+Qwen3.5-2B-oQ6-mtp es una version cuantizada del modelo Qwen3.5-2B (serie Qwen3.5 de Alibaba Cloud) publicada por el usuario bambocher en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un checkpoint convertido al formato MLX para inferencia en Apple Silicon, con cuantizacion de precision mixta generada con la herramienta oQ (oMLX v0.7.1rc1). El checkpoint completo ocupa 2.274.069.824 parametros y 2,3 GB de repositorio, con una media efectiva de 8,106 bits por peso.
 
 El interes de esta publicacion es practico: permite ejecutar un modelo de la familia Qwen3.5 con torre de vision y cabeza de prediccion multi-token (MTP) en equipos con memoria unificada, manteniendo en BF16 aquellas capas sensibles a la cuantizacion (un 14,967% de los pesos) y comprimiendo a 6 bits el grueso del modelo. El resultado es un checkpoint de 2,146 GiB que cabe holgadamente en cualquier Mac con 8 GB o mas de memoria unificada.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Bits/peso efectivos | Almacenamiento | Vision | MTP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen3.5-2B-oQ6-mtp (este) | 2,274B | 8,106 | 2,146 GiB | Si (0,331B) | Si (0,061B) | No disponible | HuggingFace, MLX |
-| Qwen3.5-2B-oQ8e-mtp | 2,274B (mismo origen) | No disponible (variante 8-bit) | No disponible | Si | Si | No disponible | HuggingFace, MLX |
-| Qwen3.5-2B original (BF16) | ~2,274B | 16,00 | ~4,5 GB (estimado por 2 bytes/peso) | Si | Si | No disponible | HuggingFace, segun Qualcomm AI Hub |
+| Qwen3.5-2B-oQ6-mtp (este) | 2,274B | 8,106 | 2,146 GiB | Si (0,331B) | Si (0,061B) | No disponible | Hugging Face, MLX |
+| Qwen3.5-2B-oQ8e-mtp | 2,274B (mismo origen) | No disponible (variante 8-bit) | No disponible | Si | Si | No disponible | Hugging Face, MLX |
+| Qwen3.5-2B original (BF16) | ~2,274B | 16,00 | ~4,5 GB (estimado por 2 bytes/peso) | Si | Si | No disponible | Hugging Face, segun Qualcomm AI Hub |
 | Qwen3.5-2B (export Qualcomm) | ~2,274B | No disponible | No disponible | Si | No disponible | No disponible | Qualcomm AI Hub, dispositivos Snapdragon |
 
 La comparacion mas directa es con la variante oQ8e-mtp del mismo autor, que emplea una cuantizacion de mayor precision y por tanto mayor peso en disco a cambio de menor degradacion. Frente al checkpoint BF16 original, este oQ6 reduce el almacenamiento aproximadamente a la mitad. La version de Qualcomm AI Hub no es comparable en formato, ya que esta optimizada para NPU de dispositivos Snapdragon y no para MLX.
@@ -94,7 +94,7 @@ La comparacion mas directa es con la variante oQ8e-mtp del mismo autor, que empl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-2B-oQ6-mtp
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-2B-oQ6-mtp
 - Variante de 8 bits del mismo autor: https://huggingface.co/bambocher/Qwen3.5-2B-oQ8e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b

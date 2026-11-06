@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen11 es un fine-tune del modelo base `unsloth/Qwen2.5-7B-Instruct`, desarrollado por el usuario HungryDino. El nombre del repositorio sugiere un experimento orientado al manejo de secuencias numéricas (cat_numbers, collapse), probablemente relacionado con tareas de agregación o compresión de listas de números. El modelo fue entrenado utilizando las librerías Unsloth (para acelerar el entrenamiento) y TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente en recursos.
+HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen11 es un fine-tune del modelo base `unsloth/Qwen2.5-7B-Instruct`, desarrollado por el usuario HungryDino. El nombre del repositorio sugiere un experimento orientado al manejo de secuencias numéricas (cat_numbers, collapse), probablemente relacionado con tareas de agregación o compresión de listas de números. El modelo fue entrenado utilizando las librerías Unsloth (para acelerar el entrenamiento) y TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente en recursos.
 
 Este modelo es relevante como ejemplo de fine-tuning de bajo coste sobre Qwen2.5-7B-Instruct, una arquitectura ya consolidada en el ecosistema open source. Sin embargo, la información pública disponible es muy limitada: no se detallan los datos de entrenamiento, los hiperparámetros ni los resultados de evaluación. El repositorio ocupa solo 0.1 GB, lo que sugiere que podría contener únicamente los adaptadores LoRA o pesos cuantizados, en lugar de los pesos completos del modelo.
 
@@ -23,7 +23,7 @@ Este modelo es relevante como ejemplo de fine-tuning de bajo coste sobre Qwen2.5
 
 El modelo base, Qwen2.5-7B-Instruct, es un transformer decoder-only con 7.000 millones de parámetros, entrenado por Alibaba Cloud sobre 18 billones de tokens. Incorpora mecanismos de atención estándar, normalización RMSNorm, y utiliza embeddings rotatorios (RoPE). El proceso de post-entrenamiento incluye supervisión con instrucciones y optimización por preferencias humanas.
 
-El fine-tune de HungryDino se realizó con Unsloth, una librería que optimiza el entrenamiento de modelos grandes mediante kernels personalizados y reducción de memoria, logrando un entrenamiento aproximadamente 2 veces más rápido que el flujo estándar. También se utilizó TRL (Transformer Reinforcement Learning) de HuggingFace, lo que sugiere que se aplicó alguna técnica de ajuste por refuerzo o fine-tuning supervisado. No se dispone de información sobre el dataset específico, el número de pasos de entrenamiento, la tasa de aprendizaje ni otros hiperparámetros. El nombre del repositorio ("cat_numbers", "collapse", "p10", "run1", "gen11") apunta a un experimento de generación o transformación de secuencias numéricas, pero no hay documentación adicional que lo confirme.
+El fine-tune de HungryDino se realizó con Unsloth, una librería que optimiza el entrenamiento de modelos grandes mediante kernels personalizados y reducción de memoria, logrando un entrenamiento aproximadamente 2 veces más rápido que el flujo estándar. También se utilizó TRL (Transformer Reinforcement Learning) de Hugging Face, lo que sugiere que se aplicó alguna técnica de ajuste por refuerzo o fine-tuning supervisado. No se dispone de información sobre el dataset específico, el número de pasos de entrenamiento, la tasa de aprendizaje ni otros hiperparámetros. El nombre del repositorio ("cat_numbers", "collapse", "p10", "run1", "gen11") apunta a un experimento de generación o transformación de secuencias numéricas, pero no hay documentación adicional que lo confirme.
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en el mismo repositorio o en la documentación. Sin embargo, se puede comparar con el propio modelo base y con otros fine-tunes de Qwen2.5-7B publicados en HuggingFace:
+No se dispone de información sobre modelos comparables en el mismo repositorio o en la documentación. Sin embargo, se puede comparar con el propio modelo base y con otros fine-tunes de Qwen2.5-7B publicados en Hugging Face:
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
@@ -77,7 +77,7 @@ No se dispone de resultados de rendimiento para realizar una comparación cuanti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen11
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen11
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Librería Unsloth: https://github.com/unslothai/unsloth
 - Librería TRL: https://github.com/huggingface/trl

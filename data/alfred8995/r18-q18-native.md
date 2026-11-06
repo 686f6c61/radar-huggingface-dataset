@@ -2,9 +2,9 @@
 
 ## Resumen
 
-r18-q18-native es un modelo de lenguaje publicado por el usuario alfred8995 en HuggingFace bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos pequenos, adecuados para despliegue en hardware de consumo. El repositorio ocupa 8,1 GB, un tamano coherente con pesos en precision de 32 bits o con multiples variantes de precision incluidas.
+r18-q18-native es un modelo de lenguaje publicado por el usuario alfred8995 en Hugging Face bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos pequenos, adecuados para despliegue en hardware de consumo. El repositorio ocupa 8,1 GB, un tamano coherente con pesos en precision de 32 bits o con multiples variantes de precision incluidas.
 
-La informacion publica disponible es extremadamente limitada: no se declara pipeline, no se especifican idiomas soportados y no hay descripcion de arquitectura ni de datos de entrenamiento. El unico tag especifico mas alla de los genericos es "sn38-nanochrono", que no corresponde a ninguna familia de modelos conocida y sugiere una arquitectura o linaje propietario o experimental. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+La informacion publica disponible es extremadamente limitada: no se declara pipeline, no se especifican idiomas soportados y no hay descripcion de arquitectura ni de datos de entrenamiento. El unico tag especifico mas alla de los genericos es "sn38-nanochrono", que no corresponde a ninguna familia de modelos conocida y sugiere una arquitectura o linaje propietario o experimental. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 Por su tamano y licencia permisiva, el modelo resulta relevante para experimentacion en entornos con recursos limitados, pero la ausencia de documentacion tecnica, benchmarks y especificaciones hace imposible evaluar su calidad o idoneidad para produccion sin una validacion empirica directa por parte del usuario.
 
@@ -73,11 +73,11 @@ La comparacion cuantitativa con alternativas no es posible porque no hay benchma
 - Riesgo de alucinacion: desconocido, pero inherente a cualquier modelo de lenguaje sin evaluacion publicada.
 - Sesgos conocidos: no disponibles; al no documentarse el dataset, no puede descartarse la presencia de sesgos.
 - Limitaciones de contexto e idioma: no disponibles.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el acceso esta restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de la descarga.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero el acceso esta restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de la descarga.
 - Idoneidad para produccion: no recomendable sin una evaluacion empirica previa, dado que no existen benchmarks, ejemplos de uso ni historial de la comunidad.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de validacion por terceros.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-q18-native
+- Hugging Face: https://huggingface.co/alfred8995/r18-q18-native
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

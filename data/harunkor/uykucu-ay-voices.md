@@ -84,7 +84,7 @@ La comparacion se limita a los datos disponibles; no se han publicado metricas o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HARUNKOR/uykucu-ay-voices
+- Repositorio en Hugging Face: https://huggingface.co/HARUNKOR/uykucu-ay-voices
 - Modelo turco de origen (Vyvo): https://huggingface.co/Vyvo/drifting-tts-tr
 - Modelo aleman de origen (Godelaune): https://huggingface.co/Godelaune/Kokoro-82M-ONNX-German-Martin
 - Modelo base Kokoro-82M (hexgrad): https://huggingface.co/hexgrad/Kokoro-82M

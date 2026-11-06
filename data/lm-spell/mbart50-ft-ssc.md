@@ -2,11 +2,11 @@
 
 ## Resumen
 
-mbart50-ft-ssc es un modelo de corrección ortográfica (spell correction) para cingalés, desarrollado por el usuario lm-spell y publicado en HuggingFace el 20 de mayo de 2025. Se trata de un fine-tune de facebook/mbart-large-50, el modelo multilingüe encoder-decoder de Meta, reentrenado sobre el dataset lm-spell/sinhala-spell-correction-dataset. Con 610.880.512 parámetros, hereda del modelo base la arquitectura transformer seq2seq, el vocabulario multilingüe de 250.000 tokens y una ventana máxima de 1.024 tokens.
+mbart50-ft-ssc es un modelo de corrección ortográfica (spell correction) para cingalés, desarrollado por el usuario lm-spell y publicado en Hugging Face el 20 de mayo de 2025. Se trata de un fine-tune de facebook/mbart-large-50, el modelo multilingüe encoder-decoder de Meta, reentrenado sobre el dataset lm-spell/sinhala-spell-correction-dataset. Con 610.880.512 parámetros, hereda del modelo base la arquitectura transformer seq2seq, el vocabulario multilingüe de 250.000 tokens y una ventana máxima de 1.024 tokens.
 
 El modelo aborda un problema muy concreto: la normalización de texto en cingalés, una lengua de bajos recursos dentro del ecosistema NLP y con escasa representación en modelos generativos. La tarea declarada es la corrección ortográfica y, por extensión, la limpieza de texto ruidoso procedente de redes sociales, OCR o transcripciones automáticas. Al estar construido sobre mBART-50, el modelo aprovecha el preentrenamiento multilingüe aunque el fine-tune esté orientado a un único idioma.
 
-Su relevancia actual es limitada pero específica: cubre un hueco poco atendido por los modelos comerciales y mayoritarios, que apenas ofrecen calidad en cingalés. Sin embargo, conviene señalar que el modelo tiene 26 descargas y 0 likes en el momento de redactar esta ficha, no publica resultados de benchmarks y su acceso está restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de descargarlo. La licencia es CC-BY-4.0.
+Su relevancia actual es limitada pero específica: cubre un hueco poco atendido por los modelos comerciales y mayoritarios, que apenas ofrecen calidad en cingalés. Sin embargo, conviene señalar que el modelo tiene 26 descargas y 0 likes en el momento de redactar esta ficha, no publica resultados de benchmarks y su acceso está restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargarlo. La licencia es CC-BY-4.0.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se dispone de informacion detallada sobre el proceso de entrenamiento del fin
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La ficha de HuggingFace del modelo no incluye tablas de evaluacion, cifras de exactitud, BLEU, chrF, tasa de correccion ni comparaciones con otros sistemas. Tampoco se han encontrado resultados en la busqueda web realizada, cuyos resultados no guardaban relacion con este modelo. Cualquier cifra de rendimiento deberia obtenerse mediante evaluacion propia sobre el dataset lm-spell/sinhala-spell-correction-dataset o sobre un conjunto de validacion independiente en cingales.
+La ficha de Hugging Face del modelo no incluye tablas de evaluacion, cifras de exactitud, BLEU, chrF, tasa de correccion ni comparaciones con otros sistemas. Tampoco se han encontrado resultados en la busqueda web realizada, cuyos resultados no guardaban relacion con este modelo. Cualquier cifra de rendimiento deberia obtenerse mediante evaluacion propia sobre el dataset lm-spell/sinhala-spell-correction-dataset o sobre un conjunto de validacion independiente en cingales.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ La comparacion de rendimiento entre estos modelos en la tarea de correccion orto
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que complica la automatizacion de pipelines de CI/CD y el despliegue reproducible.
+- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que complica la automatizacion de pipelines de CI/CD y el despliegue reproducible.
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad, y las 26 descargas y 0 likes indican una validacion practicamente nula por parte de la comunidad.
 - Cobertura linguistica limitada al cingales: aunque el modelo base es multilingue, el fine-tune esta orientado a un unico idioma y no hay garantia de calidad en otros.
 - Limite de contexto de 1.024 tokens: los documentos largos deben dividirse en fragmentos, lo que puede romper la coherencia de correcciones que dependen de contexto lejano.
@@ -95,7 +95,7 @@ La comparacion de rendimiento entre estos modelos en la tarea de correccion orto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lm-spell/mbart50-ft-ssc
+- Modelo en Hugging Face: https://huggingface.co/lm-spell/mbart50-ft-ssc
 - Modelo base: https://huggingface.co/facebook/mbart-large-50
 - Dataset de entrenamiento: https://huggingface.co/datasets/lm-spell/sinhala-spell-correction-dataset
 - Paper de mBART (preentrenamiento multilingue): https://arxiv.org/abs/2001.08210

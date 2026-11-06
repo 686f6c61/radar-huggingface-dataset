@@ -76,7 +76,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitups/ALIA-40b-saor
+- Modelo en Hugging Face: https://huggingface.co/aitups/ALIA-40b-saor
 - Modelo base (mradermacher/ALIA-40b-GGUF): https://huggingface.co/mradermacher/ALIA-40b-GGUF
 - Modelo original del BSC (BSC-LT/ALIA-40b): https://huggingface.co/BSC-LT/ALIA-40b
 - Variante instruct del BSC (BSC-LT/ALIA-40b-instruct-2601): https://huggingface.co/BSC-LT/ALIA-40b-instruct-2601

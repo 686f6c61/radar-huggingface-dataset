@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sbyrum1090/DeepSeek-V4.1-Flash-1017-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sbyrum1090/DeepSeek-V4.1-Flash-1017-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - PR de llama.cpp con soporte para DeepSeek V4.1: https://github.com/ggml-org/llama.cpp/pull/28696
 - Repositorio de la rama utilizada: https://github.com/vcruz305/llama.cpp

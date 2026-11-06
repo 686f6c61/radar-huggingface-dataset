@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento ni de especificaciones de parametros de es
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OpenSR SRGAN (SEN2-SR) | no disponible | no aplica | MIT | HuggingFace + GitHub ESAOpenSR |
+| OpenSR SRGAN (SEN2-SR) | no disponible | no aplica | MIT | Hugging Face + GitHub ESAOpenSR |
 | Alternativas de SR en teledeteccion | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento ni de especificaciones de parametros de es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/simon-donike/SR-GAN
+- Hugging Face: https://huggingface.co/simon-donike/SR-GAN
 - Repositorio del paquete: https://github.com/ESAOpenSR/SRGAN (rama `dev`)
 - Model card SEN2-SR v1: models/sen2-sr/v1/README.md (dentro del repositorio)
 - Model card RGB-NIR v1: models/rgb-nir/v1/README.md (dentro del repositorio)

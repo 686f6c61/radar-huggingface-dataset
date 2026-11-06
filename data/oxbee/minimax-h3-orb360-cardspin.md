@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OxBee/MiniMax-H3-ORB360-CardSpin
+- Modelo en Hugging Face: https://huggingface.co/OxBee/MiniMax-H3-ORB360-CardSpin
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Clip de ejemplo CardSpin v2: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/resolve/main/assets/whitecat_cardspin_v2_step50.mp4
 - Clip de ejemplo orbita step 1500: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/resolve/main/assets/whitecat_orbit_step1500.mp4

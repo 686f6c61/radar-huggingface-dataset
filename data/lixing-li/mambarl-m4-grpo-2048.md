@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lixing-Li/mambarl-m4-grpo-2048
+- Modelo en Hugging Face: https://huggingface.co/Lixing-Li/mambarl-m4-grpo-2048
 - Perfil del autor: https://huggingface.co/Lixing-Li
 - Modelo base: https://huggingface.co/Lixing-Li/mambarl-m3-grpo-1024
 - Otro modelo del autor (mambaae): https://huggingface.co/Lixing-Li/mambaae

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/boltz2-affinity | 515,088 M | no disponible | Estructura + afinidad proteína-ligando | AGPL-3.0 | HuggingFace (implementación no oficial) |
-| oteam/boltz2 | 506,762 M | no disponible | Estructura y confianza biomolecular | AGPL-3.0 | HuggingFace (implementación no oficial) |
+| oteam/boltz2-affinity | 515,088 M | no disponible | Estructura + afinidad proteína-ligando | AGPL-3.0 | Hugging Face (implementación no oficial) |
+| oteam/boltz2 | 506,762 M | no disponible | Estructura y confianza biomolecular | AGPL-3.0 | Hugging Face (implementación no oficial) |
 | Boltz-2 oficial (jwohlwend/boltz) | no disponible en la información | no disponible | Estructura + afinidad | no disponible en la información | GitHub oficial |
 | AlphaFold 2 (referencia de destilación) | no disponible en la información | no disponible | Estructura de proteínas | no disponible en la información | no disponible |
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/boltz2-affinity
+- Modelo en Hugging Face: https://huggingface.co/oteam/boltz2-affinity
 - Variante de estructura: https://huggingface.co/oteam/boltz2
 - Paper: https://doi.org/10.1101/2025.06.14.659707
 - Repositorio oficial de Boltz-2: https://github.com/jwohlwend/boltz

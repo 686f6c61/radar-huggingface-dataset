@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`okamo10/qwen3b-ohnuma-lora-v3` es un adaptador LoRA publicado en HuggingFace sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Se trata de un ajuste fino supervisado (SFT) mediante la librería PEFT (version 0.21.2) y TRL, orientado a generacion de texto conversacional. El repositorio contiene unicamente los pesos del adaptador (0,1 GB), no el modelo completo, por lo que requiere descargar por separado el modelo base Qwen2.5-3B-Instruct para poder utilizarse.
+`okamo10/qwen3b-ohnuma-lora-v3` es un adaptador LoRA publicado en Hugging Face sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Se trata de un ajuste fino supervisado (SFT) mediante la librería PEFT (version 0.21.2) y TRL, orientado a generacion de texto conversacional. El repositorio contiene unicamente los pesos del adaptador (0,1 GB), no el modelo completo, por lo que requiere descargar por separado el modelo base Qwen2.5-3B-Instruct para poder utilizarse.
 
-El autor, identificado como `okamo10`, no ha proporcionado informacion sustantiva en la model card: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen con el marcador generico "More Information Needed" de la plantilla estandar de HuggingFace. Por tanto, la mayor parte de las especificaciones tecnicas de esta ficha deben inferirse del modelo base o marcarse como no disponibles.
+El autor, identificado como `okamo10`, no ha proporcionado informacion sustantiva en la model card: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen con el marcador generico "More Information Needed" de la plantilla estandar de Hugging Face. Por tanto, la mayor parte de las especificaciones tecnicas de esta ficha deben inferirse del modelo base o marcarse como no disponibles.
 
 La relevancia de este modelo es limitada: cuenta con cero descargas y cero likes en el momento de la consulta, y fue creado en noviembre de 2026. Su interes practico radica en que demuestra un flujo de trabajo de ajuste fino LoRA sobre un modelo Instruct pequeno (3B parametros) del ecosistema Qwen2.5, lo que permite adaptaciones de bajo coste en hardware de consumo.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| okamo10/qwen3b-ohnuma-lora-v3 | LoRA sobre base de 3,09 B | no disponible (base: 32 768) | no disponible | safetensors (PEFT) | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32 768 (131 072 con YaRN) | Apache 2.0 (segun el modelo base) | safetensors, GGUF, AWQ, GPTQ | HuggingFace, ampliamente usado |
-| Meta Llama 3.2 3B Instruct | 3,21 B | 131 072 | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, muy extendido |
-| Microsoft Phi-3.5-mini-instruct | 3,82 B | 131 072 | MIT | safetensors, GGUF | HuggingFace, muy extendido |
+| okamo10/qwen3b-ohnuma-lora-v3 | LoRA sobre base de 3,09 B | no disponible (base: 32 768) | no disponible | safetensors (PEFT) | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32 768 (131 072 con YaRN) | Apache 2.0 (segun el modelo base) | safetensors, GGUF, AWQ, GPTQ | Hugging Face, ampliamente usado |
+| Meta Llama 3.2 3B Instruct | 3,21 B | 131 072 | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, muy extendido |
+| Microsoft Phi-3.5-mini-instruct | 3,82 B | 131 072 | MIT | safetensors, GGUF | Hugging Face, muy extendido |
 
 La comparativa es aproximada: los datos del adaptador no estan documentados y los del base se toman de la informacion publica del modelo Qwen2.5-3B-Instruct.
 
@@ -81,7 +81,7 @@ La comparativa es aproximada: los datos del adaptador no estan documentados y lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/okamo10/qwen3b-ohnuma-lora-v3
+- Hugging Face: https://huggingface.co/okamo10/qwen3b-ohnuma-lora-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper de referencia sobre impacto ambiental citado en la model card: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML citada en la model card: https://mlco2.github.io/impact

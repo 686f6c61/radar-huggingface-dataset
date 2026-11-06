@@ -27,7 +27,7 @@ Sus cifras principales son modestas por diseno: `d_model` de 128, 4 cabezas de a
 | Pipeline declarado | `text-classification` (con etiquetas `token-classification` y `prompt-compression`) |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 1 |
-| Fecha de creacion en HuggingFace | 2026-09-17 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-17 (segun metadatos del repositorio) |
 | Ultima actualizacion | 2026-09-17 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -44,7 +44,7 @@ El entrenamiento se realizo sobre los corpus de Wikipedia del proyecto Synthelio
 - Robustez ante vocabulario fuera de lista mediante hashing de n-gramas de caracteres (8.192 buckets).
 - Ejecucion completamente offline y en CPU, sin dependencia de servicios externos.
 - Exportacion a ONNX opset 17 para su uso en ONNX Runtime, JavaScript, C# y plataformas moviles.
-- Compatibilidad con HuggingFace a traves de SafeTensors (`model.safetensors`) y `tokenizer.json`.
+- Compatibilidad con Hugging Face a traves de SafeTensors (`model.safetensors`) y `tokenizer.json`.
 - Uso como etapa de preprocesado dentro de pipelines de LLM (no como modelo autonomo de generacion).
 - No genera texto, no mantiene dialogos, no realiza razonamiento multi-paso por si mismo y no soporta tool calling ni function calling.
 - No dispone de modo "thinking", vision, audio ni ninguna capacidad multimodal.
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SynthelionML (digitalsolutiosai/synthellion) | 10,4 M | 96 tokens por ventana | Encoder transformer con clasificacion binaria keep/drop, auto-destilado desde reglas | MIT | HuggingFace (PyTorch, SafeTensors, ONNX) |
+| SynthelionML (digitalsolutiosai/synthellion) | 10,4 M | 96 tokens por ventana | Encoder transformer con clasificacion binaria keep/drop, auto-destilado desde reglas | MIT | Hugging Face (PyTorch, SafeTensors, ONNX) |
 | Compresor basado en reglas SYNTACTIC (Synthelion) | No disponible | No disponible | Reglas heuristicas, sin aprendizaje; actua como profesor del modelo anterior | No disponible en la informacion proporcionada | Repositorio GitHub de Synthelion |
 | Otras soluciones de compresion de prompts (por ejemplo, la familia LLMLingua) | No disponible | No disponible | Compresion de prompts basada en modelos tipo encoder | No disponible | No disponible en la informacion proporcionada |
 
@@ -99,7 +99,7 @@ La busqueda web realizada no ha devuelto resultados relacionados con el modelo; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/digitalsolutiosai/synthellion
+- Modelo en Hugging Face: https://huggingface.co/digitalsolutiosai/synthellion
 - Repositorio de Synthelion en GitHub: https://github.com/francescopaolopassaro/Synthelion
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a TELESON (https://auth.teleson.de/, https://www.teleson.de/, https://telesonpower.de/home/kundenportal-strom/, https://kundenportal.teleson.de/, https://portal.teleson.de/portal/) y no guardan relacion con SynthelionML.
 - Paper, blog o demo oficiales: no disponibles en la informacion proporcionada.

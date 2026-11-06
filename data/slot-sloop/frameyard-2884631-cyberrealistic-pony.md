@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CyberRealistic Pony es un modelo de generación de imágenes orientado a la creación de contenido fotorrealista, publicado originalmente en la plataforma Civitai y posteriormente copiado a HuggingFace por la cuenta Frameyard para facilitar su distribución a través de un repositorio estable. La versión alojada corresponde a la variante `v180Coreshift` (versión 1.80), distribuida como un único archivo `safetensors` de 6,9 GB. El modelo está pensado para producir imágenes de alta calidad con estética realista, aunque la información técnica disponible es muy limitada: no se especifican la arquitectura interna, el número de parámetros, ni los detalles del entrenamiento. La licencia es personalizada de Civitai y permite el uso de imágenes generadas, alquiler en la propia plataforma, alquiler y venta del modelo, pero restringe otros usos no contemplados.
+CyberRealistic Pony es un modelo de generación de imágenes orientado a la creación de contenido fotorrealista, publicado originalmente en la plataforma Civitai y posteriormente copiado a Hugging Face por la cuenta Frameyard para facilitar su distribución a través de un repositorio estable. La versión alojada corresponde a la variante `v180Coreshift` (versión 1.80), distribuida como un único archivo `safetensors` de 6,9 GB. El modelo está pensado para producir imágenes de alta calidad con estética realista, aunque la información técnica disponible es muy limitada: no se especifican la arquitectura interna, el número de parámetros, ni los detalles del entrenamiento. La licencia es personalizada de Civitai y permite el uso de imágenes generadas, alquiler en la propia plataforma, alquiler y venta del modelo, pero restringe otros usos no contemplados.
 
-La relevancia de este modelo radica en su popularidad dentro de la comunidad de generación de imágenes, especialmente para usuarios que buscan resultados fotorrealistas con un control fino sobre el estilo. Sin embargo, al carecer de documentación técnica oficial en el repositorio de HuggingFace, cualquier evaluación rigurosa debe basarse en pruebas prácticas o en la información publicada en la página original de Civitai. Esta ficha recoge exclusivamente los datos disponibles y marca como "no disponible" aquellos que no han sido publicados.
+La relevancia de este modelo radica en su popularidad dentro de la comunidad de generación de imágenes, especialmente para usuarios que buscan resultados fotorrealistas con un control fino sobre el estilo. Sin embargo, al carecer de documentación técnica oficial en el repositorio de Hugging Face, cualquier evaluación rigurosa debe basarse en pruebas prácticas o en la información publicada en la página original de Civitai. Esta ficha recoge exclusivamente los datos disponibles y marca como "no disponible" aquellos que no han sido publicados.
 
 ## Especificaciones tecnicas
 
@@ -57,10 +57,10 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 - La falta de documentación técnica impide conocer los sesgos potenciales del modelo, aunque es razonable asumir que, como la mayoría de modelos de imágenes entrenados con datos de Internet, puede presentar sesgos de género, etnia o apariencia física.
 - No se ha verificado la robustez frente a alucinaciones visuales (por ejemplo, generación de texturas o anatomía incorrecta).
 - La licencia `civitai-image-rentcivit-rent-sell` es restrictiva: permite el uso de las imágenes generadas, el alquiler del modelo en Civitai, el alquiler y la venta del propio modelo, pero no autoriza otros usos no especificados. Es imprescindible revisar el texto completo de la licencia en el enlace de Civitai antes de cualquier uso comercial.
-- El modelo se distribuye sin garantías ni soporte técnico. La ausencia de un README detallado y de una página de comunidad en HuggingFace dificulta la resolución de problemas.
-- El repositorio en HuggingFace es una copia realizada por un tercero (Frameyard) y no está vinculado oficialmente al autor original del modelo en Civitai. Aunque se ha verificado el checksum, la confianza en el archivo depende de la integridad del proceso de copia.
+- El modelo se distribuye sin garantías ni soporte técnico. La ausencia de un README detallado y de una página de comunidad en Hugging Face dificulta la resolución de problemas.
+- El repositorio en Hugging Face es una copia realizada por un tercero (Frameyard) y no está vinculado oficialmente al autor original del modelo en Civitai. Aunque se ha verificado el checksum, la confianza en el archivo depende de la integridad del proceso de copia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/slot-sloop/frameyard-2884631-cyberrealistic-pony
+- Repositorio en Hugging Face: https://huggingface.co/slot-sloop/frameyard-2884631-cyberrealistic-pony
 - Página original en Civitai (fuente y licencia): https://civitai.com/models/443821?modelVersionId=2884631

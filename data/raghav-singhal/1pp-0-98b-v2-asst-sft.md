@@ -25,7 +25,7 @@ La condición concreta de esta ficha es «rewritten conversations, assistant-tur
 
 El modelo es un transformer decoder denso de estilo Llama. El preentrenamiento se realizó sobre las conversaciones reescritas del proyecto 1PP, con la pérdida aplicada únicamente a los turnos del asistente. Se usaron los primeros 18.779 pasos del flujo alineado por pasos del estudio principal (39,38B posiciones de token), con batch global de 512 × 4.096 tokens y máscara de atención entre documentos. El optimizador es Muon (shape scaling, LR matricial 0,005) combinado con Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para normas), con warmup de 1.181 pasos, fase constante y decaimiento lineal en los últimos 1.877 pasos hasta 1/100, weight decay 0,1, init std 0,0103 y precisión bf16. La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,551 en texto de asistente, 6,502 en texto de usuario y 3,380 en texto de documento.
 
-El ajuste fino supervisado consistió en una época sobre una mezcla de 400.000 conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno con track de constitución citada), `dlab-spp/sp-sft-normal-300k` sin los prompts duplicados del primer conjunto (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. Se empleó la misma pila que en preentrenamiento (Megatron, Muon, ChatML sin turno de sistema, pérdida solo en turnos de asistente), LR matricial 0,002, semilla 28, batch global de 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida SFT retenida es de 1,973 sobre 1.998 conversaciones, y los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0000 en la pérdida de validación.
+El ajuste fino supervisado consistió en una época sobre una mezcla de 400.000 conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno con track de constitución citada), `dlab-spp/sp-sft-normal-300k` sin los prompts duplicados del primer conjunto (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. Se empleó la misma pila que en preentrenamiento (Megatron, Muon, ChatML sin turno de sistema, pérdida solo en turnos de asistente), LR matricial 0,002, semilla 28, batch global de 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida SFT retenida es de 1,973 sobre 1.998 conversaciones, y los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0000 en la pérdida de validación.
 
 ## Capacidades
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-0.98b-v2-asst-sft | 981,5M | 4.096 | Apache 2.0 | HuggingFace | Artefacto de investigación 1PP, solo inglés |
-| 1pp-0.98b (otras condiciones/semillas de ladder v2) | 981,5M | 4.096 | Apache 2.0 | HuggingFace (colección 1pp) | Misma arquitectura y flujo de datos; difieren texto y máscara de pérdida |
-| 1pp-1.7b-* (rung 1,66B del estudio principal) | 1,66B | 4.096 | Apache 2.0 | HuggingFace (colección 1pp) | Escalón superior de la misma escalera |
+| 1pp-0.98b-v2-asst-sft | 981,5M | 4.096 | Apache 2.0 | Hugging Face | Artefacto de investigación 1PP, solo inglés |
+| 1pp-0.98b (otras condiciones/semillas de ladder v2) | 981,5M | 4.096 | Apache 2.0 | Hugging Face (colección 1pp) | Misma arquitectura y flujo de datos; difieren texto y máscara de pérdida |
+| 1pp-1.7b-* (rung 1,66B del estudio principal) | 1,66B | 4.096 | Apache 2.0 | Hugging Face (colección 1pp) | Escalón superior de la misma escalera |
 | SmolLM2 (familia con vocabulario compartido) | no disponible | no disponible | no disponible | no disponible | Comparte tokenizador (49.152); no se dispone de datos comparativos de rendimiento |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-sft
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de entrenamiento (SFT): https://wandb.ai/raghav_singhal/1pp-sft

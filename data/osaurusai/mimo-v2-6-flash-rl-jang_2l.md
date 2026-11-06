@@ -95,7 +95,7 @@ El propio autor advierte que la KL media es muy superior a la mediana, lo que re
 - Las pruebas del autor se realizaron en un Apple M5 Max con 128 GiB de memoria unificada. No se documentan pruebas en equipos con menos memoria.
 - No cabe en GPU de consumo convencionales con 24 GiB o 48 GiB de VRAM, y el formato es MLX, por lo que no está pensado para CUDA.
 - Despliegue: exclusivamente mediante el runtime Osaurus, versión 0.25.13 o superior. El autor indica explícitamente que no se debe usar un loader genérico de bits uniformes ni versiones anteriores de MiMo-V2.5.
-- Opciones como vLLM, llama.cpp, Ollama o TGI no están soportadas para este bundle, al no ser formato GGUF ni safetensors estándar de HuggingFace Transformers.
+- Opciones como vLLM, llama.cpp, Ollama o TGI no están soportadas para este bundle, al no ser formato GGUF ni safetensors estándar de Hugging Face Transformers.
 - Latencia y throughput: no disponibles. El autor menciona restauración de continuaciones desde SSD y mediciones del runtime de Python etiquetadas como separadas, sin cifras concretas en la información proporcionada.
 - Caché en disco: el repositorio separa los sidecars del tokenizador de audio y DFlash en subdirectorios, lo que condiciona la estrategia de carga.
 
@@ -126,7 +126,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de las al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OsaurusAI/MiMo-V2.6-Flash-RL-JANG_2L
+- Repositorio Hugging Face: https://huggingface.co/OsaurusAI/MiMo-V2.6-Flash-RL-JANG_2L
 - Modelo fuente: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Árbol de archivos del modelo fuente: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/tree/main
 - Perfil del autor: https://huggingface.co/OsaurusAI

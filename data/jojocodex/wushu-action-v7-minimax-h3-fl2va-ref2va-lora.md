@@ -79,7 +79,7 @@ La comparación con otras LoRAs de estilo (p. ej. para anime, cine o deportes) n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jojocodex/wushu-action-v7-minimax-h3-fl2va-ref2va-lora
+- Repositorio Hugging Face: https://huggingface.co/Jojocodex/wushu-action-v7-minimax-h3-fl2va-ref2va-lora
 - Blog oficial de MiniMax H3: https://www.minimax.io/blog/minimax-h3
 - Repositorio GitHub de MiniMax H3 (incluye Ref2VA): https://github.com/MiniMax-AI/MiniMax-H3/tree/main/Ref2VA
 - Página de descarga de MiniMax H3 (referencia de pesos): https://minimax3.org/minimax-h3-download

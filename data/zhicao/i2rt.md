@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zhicao/i2rt` no es un modelo de inteligencia artificial: es un repositorio de código que empaqueta la librería cliente en Python de I2RT, una empresa de robótica cuyo catálogo incluye brazos manipuladores YAM, pinzas motorizadas y la base móvil Flow Base. El repositorio contiene código fuente, ejemplos y utilidades de configuración, con un tamaño declarado de 0.0 GB, cero descargas y cero likes en HuggingFace, y sin pesos, tokenizador ni pipeline de inferencia asociado. La ficha se redacta, por tanto, como evaluación de una librería de control robótico y no de un modelo generativo.
+`zhicao/i2rt` no es un modelo de inteligencia artificial: es un repositorio de código que empaqueta la librería cliente en Python de I2RT, una empresa de robótica cuyo catálogo incluye brazos manipuladores YAM, pinzas motorizadas y la base móvil Flow Base. El repositorio contiene código fuente, ejemplos y utilidades de configuración, con un tamaño declarado de 0.0 GB, cero descargas y cero likes en Hugging Face, y sin pesos, tokenizador ni pipeline de inferencia asociado. La ficha se redacta, por tanto, como evaluación de una librería de control robótico y no de un modelo generativo.
 
 El problema que resuelve es la capa de integración hardware-software: expone una API Python de tipo plug-and-play para leer posiciones articulares, comandar consignas, controlar la fuerza de la pinza, calibrar motores DM series por bus CAN a 1 Mbit/s y ejecutar teleoperación bimanual líder-seguidor, además de ofrecer modelos URDF/MJCF y compensación de gravedad en MuJoCo para simulación y visualización.
 
@@ -17,8 +17,8 @@ Su relevancia potencial está en el contexto de la robótica basada en aprendiza
 | Parametros activos | no aplicable (no es un modelo MoE) |
 | Longitud de contexto | no aplicable |
 | Tipos de cuantizacion | no aplicable: no hay pesos que cuantizar |
-| Idiomas soportados | no disponibles en la metadata de HuggingFace; la documentacion y la API estan en ingles |
-| Licencia | MIT segun el README del repositorio; la metadata de HuggingFace no declara licencia |
+| Idiomas soportados | no disponibles en la metadata de Hugging Face; la documentacion y la API estan en ingles |
+| Licencia | MIT segun el README del repositorio; la metadata de Hugging Face no declara licencia |
 | Formato de pesos | no aplicable: codigo fuente Python; no hay safetensors, GGUF ni ONNX |
 | Version de Python requerida | 3.11 (entorno creado con `uv venv --python 3.11`) |
 | Sistema operativo | Linux (instalacion de `build-essential`, `python3-dev` y `linux-headers-$(uname -r)`) |
@@ -78,10 +78,10 @@ La comparación se establece con librerías y plataformas de control robótico, 
 
 | Proyecto | Enfoque | Hardware objetivo | Licencia | Relación con i2rt |
 |---|---|---|---|---|
-| i2rt (este repositorio) | API Python de control, teleoperación y simulación MuJoCo | Brazos YAM, pinzas DM, Flow Base | MIT segun README; no declarada en HuggingFace | — |
+| i2rt (este repositorio) | API Python de control, teleoperación y simulación MuJoCo | Brazos YAM, pinzas DM, Flow Base | MIT segun README; no declarada en Hugging Face | — |
 | GELLO (`wuphilipp/gello_software`) | Interfaz de teleoperación de bajo coste | Brazos con motores Dynamixel y similares | no disponible en la informacion proporcionada | Citado por el autor como inspiración del diseño de teleoperación |
 | TidyBot++ (`jimmyyhwu/tidybot2`) | Plataforma de manipulación móvil | Base móvil con brazo | no disponible en la informacion proporcionada | Citado por el autor como inspiración del hardware y control de Flow Base |
-| LeRobot (HuggingFace) | Librería de aprendizaje robótico de extremo a extremo | Múltiples robots y datasets | no disponible en la informacion proporcionada | Alternativa de ecosistema para la parte de aprendizaje; i2rt solo declara compatibilidad con pipelines estándar |
+| LeRobot (Hugging Face) | Librería de aprendizaje robótico de extremo a extremo | Múltiples robots y datasets | no disponible en la informacion proporcionada | Alternativa de ecosistema para la parte de aprendizaje; i2rt solo declara compatibilidad con pipelines estándar |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones. La diferencia funcional principal es que i2rt se centra en la capa de hardware y teleoperación de su propio catálogo (YAM y Flow Base), mientras que las alternativas citadas son plataformas o ecosistemas más amplios.
 
@@ -92,14 +92,14 @@ No se dispone de datos de rendimiento comparativo entre estas opciones. La difer
 - El README advierte de que desactivar el timeout de 400 ms puede provocar un par descontrolado si falla el bucle de compensación de gravedad; en ese caso exige inicializar con `zero_gravity_mode=False` y una consigna PD. Es un riesgo físico real sobre hardware.
 - Las pinzas lineales requieren calibración porque el recorrido del motor supera 2π radianes; arrancar con la pinza cerrada o ejecutar la rutina de calibración es obligatorio para un control correcto.
 - Dependencia fuerte de Linux, de adaptadores CAN compatibles y de la instalación de cabeceras del kernel; no se documenta soporte para Windows ni macOS.
-- La licencia no está declarada en la metadata de HuggingFace y solo aparece como MIT en el README, lo que conviene verificar en el fichero `LICENSE` antes de un uso comercial.
+- La licencia no está declarada en la metadata de Hugging Face y solo aparece como MIT en el README, lo que conviene verificar en el fichero `LICENSE` antes de un uso comercial.
 - La documentación está únicamente en inglés y no se especifican versiones mínimas de dependencias ni matrices de compatibilidad de hardware.
 - No hay información sobre sesgos, alucinación o limitaciones lingüísticas porque no hay modelo generativo; en su lugar, el riesgo principal es de seguridad física y de degradación silenciosa del control si el bus CAN pierde paquetes.
 - La búsqueda web asociada a este identificador no devolvió resultados relacionados con el proyecto, por lo que no existe corroboración externa de las afirmaciones del README.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhicao/i2rt
+- Repositorio en Hugging Face: https://huggingface.co/zhicao/i2rt
 - Sitio del fabricante: https://i2rt.com/
 - Repositorio de código citado en el README: https://github.com/i2rt-robotics/i2rt
 - Inspiración en hardware y control de base móvil (TidyBot++): https://github.com/jimmyyhwu/tidybot2

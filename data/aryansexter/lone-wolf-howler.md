@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lone-Wolf-Howler es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-1.7B publicado por el usuario aryansexter en HuggingFace. El autor lo presenta como una «validated release» e incluye en el repositorio el modelo fusionado en FP16, un conjunto de cuantizaciones GGUF, artefactos de validación y RAG, y un manifiesto de publicación (`PUBLICATION_MANIFEST.json`). El repositorio ocupa 5,0 GB, un tamaño coherente con los pesos en FP16 (~3,4 GB) más las nueve cuantizaciones GGUF incluidas.
+Lone-Wolf-Howler es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-1.7B publicado por el usuario aryansexter en Hugging Face. El autor lo presenta como una «validated release» e incluye en el repositorio el modelo fusionado en FP16, un conjunto de cuantizaciones GGUF, artefactos de validación y RAG, y un manifiesto de publicación (`PUBLICATION_MANIFEST.json`). El repositorio ocupa 5,0 GB, un tamaño coherente con los pesos en FP16 (~3,4 GB) más las nueve cuantizaciones GGUF incluidas.
 
 Se trata de un modelo pequeño (aproximadamente 1.700 millones de parámetros, heredados del modelo base), lo que lo sitúa en la franja de despliegue local en hardware de consumo. Su interés práctico está en la disponibilidad de GGUF listos para llama.cpp u Ollama y en la posibilidad de ejecutarlo en CPU o en GPUs modestas. Sin embargo, la model card es extremadamente escueta: no declara licencia, idiomas, pipeline, dataset de entrenamiento ni resultados de evaluación.
 
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Lone-Wolf-Howler | ~1,7 B | No disponible (base: 32.768 tokens) | No disponible | HuggingFace, 0 descargas | Sin benchmarks ni documentación de entrenamiento |
-| Qwen/Qwen3-1.7B | 1,7 B | 32.768 tokens nativos (extensible con YaRN) | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo base del anterior; documentación y evaluación públicas |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa de la generación anterior, muy desplegada en local |
-| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Contexto mayor; licencia con restricciones de uso |
-| Gemma-3-1B-it | 1 B | 32.000 tokens | Gemma Terms of Use | HuggingFace | Requiere aceptar términos; buen rendimiento en su franja |
+| Lone-Wolf-Howler | ~1,7 B | No disponible (base: 32.768 tokens) | No disponible | Hugging Face, 0 descargas | Sin benchmarks ni documentación de entrenamiento |
+| Qwen/Qwen3-1.7B | 1,7 B | 32.768 tokens nativos (extensible con YaRN) | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo base del anterior; documentación y evaluación públicas |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa de la generación anterior, muy desplegada en local |
+| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Contexto mayor; licencia con restricciones de uso |
+| Gemma-3-1B-it | 1 B | 32.000 tokens | Gemma Terms of Use | Hugging Face | Requiere aceptar términos; buen rendimiento en su franja |
 
 La comparación directa más relevante es con el propio Qwen3-1.7B: al no haber benchmarks del fine-tune, no es posible determinar si Lone-Wolf-Howler mejora, iguala o degrada el rendimiento del modelo del que parte.
 
@@ -94,7 +94,7 @@ La comparación directa más relevante es con el propio Qwen3-1.7B: al no haber 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aryansexter/Lone-Wolf-Howler
+- Repositorio en Hugging Face: https://huggingface.co/aryansexter/Lone-Wolf-Howler
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper, blog, repositorio de código o demo del fine-tune: no disponibles; la búsqueda web no devolvió ningún enlace relacionado con el modelo.
 - Resultados de la búsqueda web: sin relevancia (páginas sobre brokers financieros en Camerún), descartados.

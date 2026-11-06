@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MoEMe-27B (bwn2000) | 26,9B, 12 expertos enrutados top-12 | 262.144 tokens nativos | Conversion MoE por checkpoint surgery sobre Qwen3.8-27B | Sin benchmarks publicados; paridad con el denso en Top-12, sin aceleracion real por dispersion | Apache-2.0 | GGUF en HuggingFace, requiere llama.cpp parcheado |
-| Qwen3.8-27B (Qwen) | 27B denso (modelo base) | 262.144 tokens | Transformer hibrido denso con 48 capas de atencion lineal y 16 completas | Referencia de calidad de la que parte MoEMe; cifras concretas no disponibles en la informacion proporcionada | Apache-2.0 | Pesos abiertos en HuggingFace |
+| MoEMe-27B (bwn2000) | 26,9B, 12 expertos enrutados top-12 | 262.144 tokens nativos | Conversion MoE por checkpoint surgery sobre Qwen3.8-27B | Sin benchmarks publicados; paridad con el denso en Top-12, sin aceleracion real por dispersion | Apache-2.0 | GGUF en Hugging Face, requiere llama.cpp parcheado |
+| Qwen3.8-27B (Qwen) | 27B denso (modelo base) | 262.144 tokens | Transformer hibrido denso con 48 capas de atencion lineal y 16 completas | Referencia de calidad de la que parte MoEMe; cifras concretas no disponibles en la informacion proporcionada | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Bonsai 2 27B (PrismML) | No disponible | No disponible | Compresion ternaria sobre Qwen3.8 27B | Retiene el 98,2% del rendimiento de benchmarks de Qwen3.8 27B en 5,9 GB, con capacidades multimodales y agenticas (segun la fuente) | No disponible | No disponible |
 
 La comparacion con Bonsai 2 27B procede del resultado de busqueda web citado y no de una evaluacion head-to-head verificada; se incluye unicamente porque parte de la misma base Qwen3.8 27B y representa un enfoque de compresion distinto (ternario, con perdida declarada del 1,8%) frente a la conversion MoE sin perdida pero sin ganancia de eficiencia.
@@ -103,9 +103,9 @@ La comparacion con Bonsai 2 27B procede del resultado de busqueda web citado y n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bwn2000/moeme-27b
+- Modelo en Hugging Face: https://huggingface.co/bwn2000/moeme-27b
 - Repositorio de codigo del experimento: https://github.com/trowel344/moeme
-- Modelo base (organizacion Qwen en HuggingFace): https://huggingface.co/Qwen
+- Modelo base (organizacion Qwen en Hugging Face): https://huggingface.co/Qwen
 - Bonsai 2 27B (PrismML), enfoque alternativo de compresion sobre Qwen3.8 27B: https://prismml.com/news/bonsai-2-27b
 - Guia de Qwen3.8 27B: https://www.progressiverobot.com/2026/08/13/qwen3-8-27b-open-weights/
 - Analisis sobre modelos de 27B para desarrolladores: https://aiindigo.com/blog/rise-of-small-giant-27b-models-developer-sweet-spot

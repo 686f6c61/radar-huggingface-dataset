@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-AraStance-512-45 es un ajuste fino supervisado (SFT) del modelo Unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Se trata, por tanto, de un derivado de la familia Qwen3 en su variante de 4 000 millones de parametros, especializado mediante entrenamiento supervisado sobre un conjunto de datos que, a juzgar por el identificador (SD-AraStance-512-45), parece orientado a la deteccion de postura (stance detection) en arabe, con secuencias de 512 tokens. No es un modelo de proposito general nuevo, sino una adaptacion de un modelo base ya existente a una tarea concreta.
+Qwen3-4B-Instruct-2507-SD-AraStance-512-45 es un ajuste fino supervisado (SFT) del modelo Unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Se trata, por tanto, de un derivado de la familia Qwen3 en su variante de 4 000 millones de parametros, especializado mediante entrenamiento supervisado sobre un conjunto de datos que, a juzgar por el identificador (SD-AraStance-512-45), parece orientado a la deteccion de postura (stance detection) en arabe, con secuencias de 512 tokens. No es un modelo de proposito general nuevo, sino una adaptacion de un modelo base ya existente a una tarea concreta.
 
 El modelo se ha entrenado con la libreria TRL (version 0.24.0) sobre Transformers 5.5.0, PyTorch 2.10.0+cu128 y Datasets 4.3.0, y emplea la infraestructura de Unsloth, lo que sugiere un ajuste eficiente en memoria (probablemente LoRA/QLoRA, aunque la model card no lo confirma explicitamente). El repositorio ocupa 0.2 GB en total, un tamano incompatible con los pesos completos de un modelo de 4B en bfloat16 (que rondarian los 8 GB), por lo que es muy probable que se trate de un adaptador o de un checkpoint parcial.
 
@@ -76,8 +76,8 @@ Estimaciones basadas en la clase de tamano del modelo base (4B parametros); no v
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-SD-AraStance-512-45 (este) | No disponible (base 4B) | No disponible | No disponible | HuggingFace, 0.2 GB | No |
-| unsloth/Qwen3-4B-Instruct-2507 (modelo base) | 4B (segun denominacion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace | No disponible en la informacion proporcionada |
+| Qwen3-4B-Instruct-2507-SD-AraStance-512-45 (este) | No disponible (base 4B) | No disponible | No disponible | Hugging Face, 0.2 GB | No |
+| unsloth/Qwen3-4B-Instruct-2507 (modelo base) | 4B (segun denominacion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face | No disponible en la informacion proporcionada |
 | Otros ajustes comunitarios de Qwen3 de 4B para arabe | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de benchmarks ni de fichas comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -97,7 +97,7 @@ No se dispone de datos verificables de benchmarks ni de fichas comparables en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-45
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-45
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Unsloth: no disponible en la informacion proporcionada

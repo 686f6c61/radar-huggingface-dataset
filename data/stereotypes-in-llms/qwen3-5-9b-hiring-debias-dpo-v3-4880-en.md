@@ -91,7 +91,7 @@ No hay otras alternativas externas directamente comparables publicadas en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stereotypes-in-LLMs/qwen3.5-9b-hiring-debias-dpo-v3-4880-en
+- Modelo en Hugging Face: https://huggingface.co/Stereotypes-in-LLMs/qwen3.5-9b-hiring-debias-dpo-v3-4880-en
 - Dataset de entrenamiento: https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Informe de resultados: https://github.com/Stereotypes-in-LLMs/hiring_bias_mitigation_at/blob/6c4f48bb0600a1841bb518ae24837cc87ff72400/docs/V3_NEW_DATA.md

@@ -17,11 +17,11 @@ Su relevancia actual radica en que ofrece un pipeline completo y reproducible en
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible como ventana fija de tokens; procesa audio de longitud variable con frontend de 80-dim log-mel a 16.000 Hz + VAD de energia + CMVN |
 | Tipos de cuantizacion | no disponible (pesos publicados en safetensors fp32 y flax msgpack; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace; los dominios de entrenamiento/evaluacion cubren ingles (LibriSpeech), chino (CN-Celeb2) y audio in-the-wild (VoxCeleb1) |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face; los dominios de entrenamiento/evaluacion cubren ingles (LibriSpeech), chino (CN-Celeb2) y audio in-the-wild (VoxCeleb1) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (`model.safetensors`) y Flax msgpack (`flax_model.msgpack`) |
 
-Otros datos tecnicos declarados: dimension del embedding de salida 192, dominio de entrenamiento `universal`, perdida de entrenamiento `sphereface`, puntuacion de verificacion `cosine`, frontend de audio de 80 dimensiones log-mel a 16 kHz con VAD de energia y CMVN. Tamano del repositorio: 0,0 GB (aproximado por HuggingFace). Descargas y likes registrados: 0. Fecha de creacion y actualizacion en el Hub: 2026-10-15.
+Otros datos tecnicos declarados: dimension del embedding de salida 192, dominio de entrenamiento `universal`, perdida de entrenamiento `sphereface`, puntuacion de verificacion `cosine`, frontend de audio de 80 dimensiones log-mel a 16 kHz con VAD de energia y CMVN. Tamano del repositorio: 0,0 GB (aproximado por Hugging Face). Descargas y likes registrados: 0. Fecha de creacion y actualizacion en el Hub: 2026-10-15.
 
 ## Arquitectura y entrenamiento
 
@@ -89,7 +89,7 @@ No se dispone de datos verificados de benchmarks comunes entre este modelo y las
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad | Datos |
 |---|---|---|---|---|---|---|
-| `wq2012/univ_conformer_small_sphereface` | Conformer + ATP, perdida SphereFace | 2.029.892 (encoder) | audio de longitud variable (log-mel 80 dim @ 16 kHz) | apache-2.0 | HuggingFace, PyPI `flaxspeaker`, GitHub | EER 22-26 % 1-utt (multi-dominio) |
+| `wq2012/univ_conformer_small_sphereface` | Conformer + ATP, perdida SphereFace | 2.029.892 (encoder) | audio de longitud variable (log-mel 80 dim @ 16 kHz) | apache-2.0 | Hugging Face, PyPI `flaxspeaker`, GitHub | EER 22-26 % 1-utt (multi-dominio) |
 | ECAPA-TDNN (familia SpeechBrain) | TDNN con atencion de canales | no disponible aqui | audio de longitud variable | no disponible aqui | no disponible aqui | no disponible en esta ficha |
 | x-vector (familia Kaldi) | TDNN con pooling estadistico | no disponible aqui | audio de longitud variable | no disponible aqui | no disponible aqui | no disponible en esta ficha |
 | Modelos tipo WavLM/wav2vec2 para hablante | Transformer auto-supervisado | no disponible aqui | audio de longitud variable | no disponible aqui | no disponible aqui | no disponible en esta ficha |
@@ -111,8 +111,8 @@ Nota: los resultados de busqueda web recibidos corresponden a **SphereFace** en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/univ_conformer_small_sphereface
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/univ_conformer_small_sphereface
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI `flaxspeaker`: https://pypi.org/project/flaxspeaker/
 - Paper GE2E (arXiv:1710.10467): https://arxiv.org/abs/1710.10467

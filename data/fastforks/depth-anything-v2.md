@@ -103,7 +103,7 @@ No se dispone en la información proporcionada de datos comparativos de precisi�
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/depth-anything-v2
+- Model card en Hugging Face: https://huggingface.co/fastforks/depth-anything-v2
 - Repositorio fastforks: https://github.com/kleinicke/fastforks
 - Kernels para el backend kernels: https://huggingface.co/fastforks/kernels
 - Código original Depth Anything V2: https://github.com/DepthAnything/Depth-Anything-V2

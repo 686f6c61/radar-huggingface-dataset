@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ActiveQATeluguReformulatorRL es un modelo de reformulación de preguntas en telugu desarrollado por el usuario nlpctx y publicado en HuggingFace. Se trata de un ajuste fino mediante LoRA del modelo MultiIndicParaphraseGenerationSS, un modelo basado en la arquitectura mBART con 244 millones de parámetros, especializado en la tarea de reformular preguntas para sistemas de question answering (QA) de tipo ActiveQA. El modelo se ha post-entrenado con un bucle de reinforcement learning con validación por etapas, usando una recompensa de preservación de entidades y una recompensa de QA basada en el modelo l3cube-pune/telugu-question-answering-squad-bert.
+ActiveQATeluguReformulatorRL es un modelo de reformulación de preguntas en telugu desarrollado por el usuario nlpctx y publicado en Hugging Face. Se trata de un ajuste fino mediante LoRA del modelo MultiIndicParaphraseGenerationSS, un modelo basado en la arquitectura mBART con 244 millones de parámetros, especializado en la tarea de reformular preguntas para sistemas de question answering (QA) de tipo ActiveQA. El modelo se ha post-entrenado con un bucle de reinforcement learning con validación por etapas, usando una recompensa de preservación de entidades y una recompensa de QA basada en el modelo l3cube-pune/telugu-question-answering-squad-bert.
 
 El problema que resuelve es concreto: en pipelines de QA, las preguntas formuladas por usuarios reales suelen ser ambiguas o no coinciden con la formulación de los documentos fuente; reformularlas mejora la recuperación y la respuesta. Este modelo está entrenado sobre 804 preguntas en telugu extraídas de un conjunto de datos de Indic-Rag-Suite generado por LLM a partir de Wikipedia en telugu, con selección del mejor checkpoint sobre 200 preguntas de validación reservadas.
 
@@ -84,7 +84,7 @@ La comparación directa con alternativas de reformulación de preguntas en telug
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nlpctx/activeqa-telugu-reformulator-rl
+- Modelo en Hugging Face: https://huggingface.co/nlpctx/activeqa-telugu-reformulator-rl
 - Modelo base MultiIndicParaphraseGenerationSS: no disponible en la información proporcionada
 - Modelo de recompensa QA: https://huggingface.co/l3cube-pune/telugu-question-answering-squad-bert
 - Dataset Indic-Rag-Suite: https://huggingface.co/datasets/ai4bharat/Indic-Rag-Suite

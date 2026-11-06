@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lab7-shakespeare-generator es un ajuste fino (fine-tuning) del modelo SmolLM2-135M de HuggingFaceTB, publicado por el usuario Ayuti25 en HuggingFace. Se trata de un modelo de generacion de texto de tipo decoder-only basado en la arquitectura Llama, con 134.515.008 parametros totales, entrenado para generar texto con estilo shakespeariano segun indica su nombre. El repositorio tiene un tamano de 0,5 GB y los pesos se distribuyen en formato safetensors.
+lab7-shakespeare-generator es un ajuste fino (fine-tuning) del modelo SmolLM2-135M de HuggingFaceTB, publicado por el usuario Ayuti25 en Hugging Face. Se trata de un modelo de generacion de texto de tipo decoder-only basado en la arquitectura Llama, con 134.515.008 parametros totales, entrenado para generar texto con estilo shakespeariano segun indica su nombre. El repositorio tiene un tamano de 0,5 GB y los pesos se distribuyen en formato safetensors.
 
 El modelo parte de SmolLM2-135M, un modelo compacto disenado para entornos con recursos limitados, y ha sido reentrenado durante 2 epocas con un learning rate de 0,0005, batch size de 8 y scheduler coseno, alcanzando una perdida de validacion de 3,2402. La model card es practicamente automatica y no documenta el dataset de entrenamiento, los idiomas soportados ni los casos de uso previstos, por lo que la informacion disponible es muy limitada.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lab7-shakespeare-generator | 134,5 M | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| HuggingFaceTB/SmolLM2-135M (base) | 135 M | 8.192 tokens (segun documentacion del modelo base) | Apache 2.0 | HuggingFace |
-| SmolLM2-360M | 360 M | 8.192 tokens (segun documentacion del modelo base) | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 0,5 B | 32.768 tokens (segun documentacion del modelo) | Apache 2.0 | HuggingFace |
+| lab7-shakespeare-generator | 134,5 M | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| HuggingFaceTB/SmolLM2-135M (base) | 135 M | 8.192 tokens (segun documentacion del modelo base) | Apache 2.0 | Hugging Face |
+| SmolLM2-360M | 360 M | 8.192 tokens (segun documentacion del modelo base) | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 0,5 B | 32.768 tokens (segun documentacion del modelo) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este ajuste concreto, ya que no se han publicado benchmarks. El modelo base SmolLM2-135M y sus variantes cuentan con evaluaciones publicas por parte de HuggingFaceTB, pero no se reproducen aqui al no formar parte de la informacion proporcionada sobre este modelo.
 
@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento comparativo para este ajuste concreto, ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ayuti25/lab7-shakespeare-generator
+- Modelo en Hugging Face: https://huggingface.co/Ayuti25/lab7-shakespeare-generator
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M

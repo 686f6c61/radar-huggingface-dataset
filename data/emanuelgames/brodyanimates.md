@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BrodyAnimates es un repositorio publicado en HuggingFace por el usuario EmanuelGames bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su tamano declarado es de 0,1 GB. No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline declarado: el campo `pipeline` aparece como no disponible y la model card no contiene mas texto que la propia cabecera YAML con la licencia.
+BrodyAnimates es un repositorio publicado en Hugging Face por el usuario EmanuelGames bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su tamano declarado es de 0,1 GB. No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline declarado: el campo `pipeline` aparece como no disponible y la model card no contiene mas texto que la propia cabecera YAML con la licencia.
 
 La model card no incluye descripcion funcional, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso. Tampoco se han encontrado recursos externos asociados al modelo: los resultados de busqueda web devueltos no guardan ninguna relacion con el repositorio (son paginas genericas en chino sobre letras de canciones, atajos de teclado, OneNote, UltraEdit y el buscador Yandex), por lo que no aportan informacion verificable.
 
@@ -24,8 +24,8 @@ En consecuencia, esta ficha recoge unicamente los metadatos disponibles y marca 
 | Tamano del repositorio | 0,1 GB |
 | Autor | EmanuelGames |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-12 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-12 (segun metadatos de Hugging Face) |
 | Etiquetas declaradas | `license:apache-2.0`, `region:us` |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmanuelGames/BrodyAnimates | no disponible | no disponible | no disponible | Apache 2.0 | Publico en HuggingFace |
+| EmanuelGames/BrodyAnimates | no disponible | no disponible | no disponible | Apache 2.0 | Publico en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EmanuelGames/BrodyAnimates
+- Repositorio en Hugging Face: https://huggingface.co/EmanuelGames/BrodyAnimates
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks numericos en la informacion proporc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek Coder 6.7B Base (este) | 6.7B | 16K | DeepSeek License | HuggingFace (mirror) |
-| DeepSeek Coder 1.3B | 1.3B | 16K | DeepSeek License | HuggingFace |
-| DeepSeek Coder 33B | 33B | 16K | DeepSeek License | HuggingFace |
-| CodeLlama 7B | 7B | 16K | Llama 2 License | HuggingFace (Meta) |
+| DeepSeek Coder 6.7B Base (este) | 6.7B | 16K | DeepSeek License | Hugging Face (mirror) |
+| DeepSeek Coder 1.3B | 1.3B | 16K | DeepSeek License | Hugging Face |
+| DeepSeek Coder 33B | 33B | 16K | DeepSeek License | Hugging Face |
+| CodeLlama 7B | 7B | 16K | Llama 2 License | Hugging Face (Meta) |
 
 La comparativa se limita a variantes de la misma familia y a CodeLlama 7B como alternativa de tamano similar; no se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La comparativa se limita a variantes de la misma familia y a CodeLlama 7B como a
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/omegazurich/deepseek-coder-6.7b-base
+- Repositorio Hugging Face (mirror): https://huggingface.co/omegazurich/deepseek-coder-6.7b-base
 - Repositorio oficial: https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base
 - Repositorio GitHub: https://github.com/deepseek-ai/deepseek-coder
 - Pagina principal: https://www.deepseek.com/

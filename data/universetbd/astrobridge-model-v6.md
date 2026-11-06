@@ -6,7 +6,7 @@ AstroBridge Captioner (identificador `UniverseTBD/astrobridge-model-v6`) es un m
 
 El modelo resuelve el problema de generar texto descriptivo a partir de entradas heterogeneas de observacion: imagenes astronomicas, espectros y curvas de luz. La model card lo describe como "n-modality", y la evaluacion de groundedness incluida cubre las tres modalidades, lo que sugiere que la pila de fusion trata cada una por separado y admite tambien combinaciones conjuntas (el histograma de entrenamiento registra 4.120 muestras de una sola modalidad y 1.318 conjuntas).
 
-Su relevancia actual es limitada pero especifica: se trata de un adaptador de investigacion publicado sin licencia declarada, sin descargas ni valoraciones en el momento de la consulta y con un pipeline no definido en HuggingFace. Su mayor singularidad tecnica es el mecanismo de evaluacion de groundedness (pruebas de shuffle y ablacion por modalidad), que aporta evidencia de que las descripciones dependen realmente de la senal de entrada y no solo del prior textual del LLM.
+Su relevancia actual es limitada pero especifica: se trata de un adaptador de investigacion publicado sin licencia declarada, sin descargas ni valoraciones en el momento de la consulta y con un pipeline no definido en Hugging Face. Su mayor singularidad tecnica es el mecanismo de evaluacion de groundedness (pruebas de shuffle y ablacion por modalidad), que aporta evidencia de que las descripciones dependen realmente de la senal de entrada y no solo del prior textual del LLM.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ Su relevancia actual es limitada pero especifica: se trata de un adaptador de in
 
 La arquitectura combina dos piezas. Por un lado, un adaptador LoRA cargado mediante `peft` sobre un `Qwen/Qwen3.5-9B` congelado en `bfloat16`, con `trust_remote_code=True`. Por otro, una pila de fusion que se distribuye aparte en el fichero `middle.pt` y que, segun la model card, contiene projectors, un modulo `modality_identity`, un `qformer` y un adapter. El diseno con Q-Former apunta a un esquema de proyeccion de caracteristicas por modalidad hacia el espacio de embeddings del LLM, con identificadores de modalidad para que el modelo distinga el origen de la senal. Los codificadores concretos de imagen, espectro y curva de luz no se documentan en la informacion disponible.
 
-Los datos de entrenamiento no se detallan: no se indica el numero de tokens, la composicion del corpus ni si hubo fases de RLHF o DPO. Lo unico publicado es `config_hash: bf18d043bdcaa5d5`, `git_sha: a5fa267401ffe7e85cb2c0870f8bc3a642acc18e`, `quantization: None` y un histograma de niveles (`tier_histogram`) con 4.120 muestras de una sola modalidad y 1.318 conjuntas. La innovacion destacable no esta en el entrenamiento sino en la evaluacion: la model card incluye una "groundedness gate" con pruebas de shuffle (permutar la entrada de una modalidad) y de ablacion (eliminarla), comprobando si la descripcion generada cambia. Para reconstruir la pila de fusion hay que usar la clase `FusionStack` del paquete `captioner` (`captioner/model/captioner.py` y `captioner/train/stage1.py`, funcion `run_stage1`), que no forma parte del repositorio de HuggingFace.
+Los datos de entrenamiento no se detallan: no se indica el numero de tokens, la composicion del corpus ni si hubo fases de RLHF o DPO. Lo unico publicado es `config_hash: bf18d043bdcaa5d5`, `git_sha: a5fa267401ffe7e85cb2c0870f8bc3a642acc18e`, `quantization: None` y un histograma de niveles (`tier_histogram`) con 4.120 muestras de una sola modalidad y 1.318 conjuntas. La innovacion destacable no esta en el entrenamiento sino en la evaluacion: la model card incluye una "groundedness gate" con pruebas de shuffle (permutar la entrada de una modalidad) y de ablacion (eliminarla), comprobando si la descripcion generada cambia. Para reconstruir la pila de fusion hay que usar la clase `FusionStack` del paquete `captioner` (`captioner/model/captioner.py` y `captioner/train/stage1.py`, funcion `run_stage1`), que no forma parte del repositorio de Hugging Face.
 
 ## Capacidades
 
@@ -82,8 +82,8 @@ Las cifras de VRAM son estimaciones derivadas del tamano del modelo base (9.000 
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UniverseTBD/astrobridge-model-v6 | Adaptador sobre Qwen3.5-9B; repo de 0,3 GB | No disponible | Imagen, espectros, curva de luz | No disponible | HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen3.5-9B (modelo base) | 9.000 millones nominales | No disponible | Solo texto (segun su propia ficha) | No disponible | HuggingFace |
+| UniverseTBD/astrobridge-model-v6 | Adaptador sobre Qwen3.5-9B; repo de 0,3 GB | No disponible | Imagen, espectros, curva de luz | No disponible | Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen3.5-9B (modelo base) | 9.000 millones nominales | No disponible | Solo texto (segun su propia ficha) | No disponible | Hugging Face |
 | Otros captioners astronomicos multimodales | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la informacion proporcionada modelos comparables de captioning astronomico multimodal que permitan una comparacion significativa mas alla del propio modelo base.
@@ -95,14 +95,14 @@ No se han identificado en la informacion proporcionada modelos comparables de ca
 - Sesgos del corpus de entrenamiento: no se documenta la composicion del dataset, por lo que no puede descartarse un sesgo hacia determinados tipos de objeto, rangos de luminosidad o instrumentos.
 - Idiomas: no se declara cobertura multilingue; la model card esta en ingles y no hay evidencia de que el modelo genere descripciones en castellano.
 - Evidencia estadistica limitada: los tamanos de muestra de la evaluacion son pequenos, con solo 4 casos en la prueba de shuffle de curva de luz, lo que reduce la fiabilidad de esas cifras.
-- Dependencia de codigo no publicado: la recarga de `middle.pt` requiere la clase `FusionStack` del paquete `captioner`, que no esta en el repositorio de HuggingFace; sin ese codigo el adaptador por si solo no reproduce el comportamiento descrito.
+- Dependencia de codigo no publicado: la recarga de `middle.pt` requiere la clase `FusionStack` del paquete `captioner`, que no esta en el repositorio de Hugging Face; sin ese codigo el adaptador por si solo no reproduce el comportamiento descrito.
 - El modelo base no se incluye: hay que descargar `Qwen/Qwen3.5-9B` por separado, con su propio consumo de almacenamiento y su propia licencia.
 - Ausencia de validacion comunitaria: cero descargas y cero valoraciones en el momento de la consulta; no hay informes independientes de comportamiento en produccion.
 - Fechas de publicacion y actualizacion muy proximas entre si (ambas el 2026-09-11), lo que sugiere un artefacto de investigacion en fase temprana y no una version estable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UniverseTBD/astrobridge-model-v6
+- Modelo en Hugging Face: https://huggingface.co/UniverseTBD/astrobridge-model-v6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos correspondian a un servicio de correo electronico ajeno por completo al proyecto (home.abv.bg, mail20.abv.bg, passport.abv.bg, blog.abv.bg, mobile.abv.bg).
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

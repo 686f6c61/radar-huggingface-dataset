@@ -59,7 +59,7 @@ No hay informacion en la model card sobre el volumen de datos de entrenamiento, 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona la existencia de una seccion de resumen de rendimiento y enlaza a la pagina de Qualcomm AI Hub del modelo para consultar metricas por dispositivo, pero no incluye cifras concretas en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona la existencia de una seccion de resumen de rendimiento y enlaza a la pagina de Qualcomm AI Hub del modelo para consultar metricas por dispositivo, pero no incluye cifras concretas en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| qualcomm/Pyannote-Speaker-Diarization | Diarizacion de hablantes, exportado para NPU Qualcomm | no disponible | audio por ventanas, no disponible | MIT | Artefactos por chipset en HuggingFace y Qualcomm AI Hub | Optimizado para QAIRT 2.50 y runtime VOICE_AI |
-| pyannote/speaker-diarization-3.1 (upstream) | Pipeline de diarizacion sobre PyTorch | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace | Referencia de partida de esta version; requiere acceso y ejecucion en CPU/GPU |
-| pyannote/segmentation-3.0 (upstream) | Modelo de segmentacion de hablante | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace | Componente de segmentacion del pipeline de diarizacion |
+| qualcomm/Pyannote-Speaker-Diarization | Diarizacion de hablantes, exportado para NPU Qualcomm | no disponible | audio por ventanas, no disponible | MIT | Artefactos por chipset en Hugging Face y Qualcomm AI Hub | Optimizado para QAIRT 2.50 y runtime VOICE_AI |
+| pyannote/speaker-diarization-3.1 (upstream) | Pipeline de diarizacion sobre PyTorch | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face | Referencia de partida de esta version; requiere acceso y ejecucion en CPU/GPU |
+| pyannote/segmentation-3.0 (upstream) | Modelo de segmentacion de hablante | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face | Componente de segmentacion del pipeline de diarizacion |
 | NVIDIA NeMo MSDD | Diarizacion multi-escala sobre NeMo | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | NGC / GitHub | Alternativa orientada a despliegue en GPU NVIDIA |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada. La diferencia principal y verificable es el objetivo de despliegue: la version de Qualcomm esta empaquetada para inferencia en NPU de dispositivos moviles, automotrices e industriales, mientras que las alternativas se distribuyen como pesos PyTorch para ejecucion en CPU o GPU.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qualcomm/Pyannote-Speaker-Diarization
+- Repositorio en Hugging Face: https://huggingface.co/qualcomm/Pyannote-Speaker-Diarization
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pyannote_speaker_diarization
 - Implementacion en Qualcomm AI Hub Models (v0.64.0): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/pyannote_speaker_diarization
 - Libreria Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models

@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su equilibrio entre tamaño reducido (0.1
 
 La arquitectura DualAR (autoregresiva dual) es una innovacion de Audio8 que combina dos flujos autoregresivos para modelar simultaneamente la prosodia y la secuencia de tokens acusticos. El modelo utiliza un codec neuronal de audio (FP16) para convertir la senal de audio en tokens discretos, y un encoder opcional (FP16) para registrar voces de referencia en la clonacion zero-shot. El tokenizador gestiona la conversion de texto a tokens foneticos o subpalabras.
 
-No se dispone de informacion detallada sobre el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas como RLHF o DPO. La ausencia de una model card completa en HuggingFace limita el conocimiento sobre estos aspectos. El entrenamiento probablemente se realizo con datos multilingues de voz, pero no hay cifras publicas.
+No se dispone de informacion detallada sobre el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas como RLHF o DPO. La ausencia de una model card completa en Hugging Face limita el conocimiento sobre estos aspectos. El entrenamiento probablemente se realizo con datos multilingues de voz, pero no hay cifras publicas.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ No se dispone de datos comparativos con otros modelos TTS compactos como Piper, 
 
 ## Limitaciones y advertencias
 
-- Documentacion insuficiente: la model card en HuggingFace esta vacia, y la informacion se ha extraido de fuentes externas. Esto dificulta la evaluacion de sesgos, limitaciones de idioma y comportamiento en casos extremos.
+- Documentacion insuficiente: la model card en Hugging Face esta vacia, y la informacion se ha extraido de fuentes externas. Esto dificulta la evaluacion de sesgos, limitaciones de idioma y comportamiento en casos extremos.
 - Riesgo de alucinacion en audio: como cualquier TTS, puede generar pronunciaciones incorrectas o artefactos en textos poco comunes o con homografos.
 - Idiomas no especificados: aunque se dice multilingue, no se indica que idiomas cubre ni la calidad por idioma. El mandarin y el ingles estan demostrados, pero otros pueden tener rendimiento inferior.
 - Clonacion de voz: el uso de clonacion zero-shot puede plantear problemas eticos y de consentimiento. La licencia Apache 2.0 no impide su uso, pero el responsable debe asegurarse de no violar derechos de voz.
@@ -71,8 +71,8 @@ No se dispone de datos comparativos con otros modelos TTS compactos como Piper, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Audio8/audio8-TTS-0.1B-ONNX-INT8
+- Repositorio Hugging Face: https://huggingface.co/Audio8/audio8-TTS-0.1B-ONNX-INT8
 - Repositorio GitHub: https://github.com/Audio8-AI/Audio8_TTS
 - Demo de audio 0.1B: https://audio8-ai.github.io/Audio8_TTS/0.1B/
-- Variante 0.6B INT4 en HuggingFace: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4
+- Variante 0.6B INT4 en Hugging Face: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4
 - Documentacion ONNX Runtime en el repositorio: https://github.com/Audio8-AI/Audio8_TTS/tree/master/onnx_runtime

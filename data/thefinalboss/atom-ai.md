@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ATOM (atom-ai) es un modelo de lenguaje experimental desarrollado por el usuario thefinalboss, publicado en HuggingFace bajo licencia no especificada. Su rasgo diferencial es que no es un Transformer: carece de mecanismo de atención, de tokenizador BPE y de cualquier componente de GPT-2. El texto entra y sale como bytes UTF-8 crudos, procesados por un front-end propio llamado Atomizer, y el estado se mantiene en un campo toroidal persistente que se actualiza byte a byte. El objetivo declarado es conseguir texto coherente en frances e ingles con inferencia en CPU.
+ATOM (atom-ai) es un modelo de lenguaje experimental desarrollado por el usuario thefinalboss, publicado en Hugging Face bajo licencia no especificada. Su rasgo diferencial es que no es un Transformer: carece de mecanismo de atención, de tokenizador BPE y de cualquier componente de GPT-2. El texto entra y sale como bytes UTF-8 crudos, procesados por un front-end propio llamado Atomizer, y el estado se mantiene en un campo toroidal persistente que se actualiza byte a byte. El objetivo declarado es conseguir texto coherente en frances e ingles con inferencia en CPU.
 
 El modelo es muy pequeno: los checkpoints actuales (d=32) tienen 479.548 parametros, de los cuales 266.828 son entrenables. La inferencia es un bucle Python/PyTorch en CPU que tarda unos 2 segundos por respuesta corta con un solo hilo. El autor lo clasifica explicitamente como codigo de investigacion experimental y advierte de que ATOM todavia no produce texto coherente en ninguno de los dos idiomas.
 
@@ -102,7 +102,7 @@ Comparativa con alternativas comerciales o de gran escala: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thefinalboss/atom-ai
+- Modelo en Hugging Face: https://huggingface.co/thefinalboss/atom-ai
 - Documentacion interna citada en la model card: `docs/ROOT_CAUSE.md`, `docs/DECODE_FIX_AND_BPTT.md`, `docs/MIX_DATA_LONG_MEMORY.md`, `docs/BATCHED_TRAINING.md` (rutas del propio repositorio).
 - Checkpoints: `checkpoints/README.md` (ruta del propio repositorio).
 - Nota sobre la busqueda web: los resultados obtenidos corresponden a proyectos homonimos no relacionados con este modelo (AI-ATOM en https://ai-atom.org/, ROCm/ATOM en https://github.com/ROCm/ATOM, The ATOM Report en https://arxiv.org/html/2604.07190v2 y Agora-Lab-AI/Atom en https://github.com/Agora-Lab-AI/Atom). No se han encontrado enlaces externos especificos de `thefinalboss/atom-ai` (paper, blog o demo).

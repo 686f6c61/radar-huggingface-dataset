@@ -85,7 +85,7 @@ No se dispone de información sobre otras alternativas comparables en la documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lawless1987/threefold
+- Modelo en Hugging Face: https://huggingface.co/Lawless1987/threefold
 - Repositorio Covenant: https://github.com/LAWLESS1987/covenant
 - Jacobian Lens de Anthropic: https://github.com/anthropics/jacobian-lens
 - Modelo sujeto por defecto (GPT-2 small): https://huggingface.co/openai-community/gpt2

@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Dimensión de embedding | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dinushiTJ/nz-research-commons-embedding-gemma-v2 | 302,9 M | No disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| google/embeddinggemma-300m | ≈300 M | 768 (documentación pública del modelo base) | 2.048 tokens (documentación pública del modelo base) | Gemma Terms of Use (documentación pública del modelo base) | HuggingFace, modelo base oficial |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 384 | 256 tokens | Apache-2.0 | HuggingFace, ampliamente adoptado |
-| BAAI/bge-m3 | ≈568 M | 1.024 | 8.192 tokens | MIT | HuggingFace, ampliamente adoptado |
+| dinushiTJ/nz-research-commons-embedding-gemma-v2 | 302,9 M | No disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| google/embeddinggemma-300m | ≈300 M | 768 (documentación pública del modelo base) | 2.048 tokens (documentación pública del modelo base) | Gemma Terms of Use (documentación pública del modelo base) | Hugging Face, modelo base oficial |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 384 | 256 tokens | Apache-2.0 | Hugging Face, ampliamente adoptado |
+| BAAI/bge-m3 | ≈568 M | 1.024 | 8.192 tokens | MIT | Hugging Face, ampliamente adoptado |
 
 No hay datos de rendimiento comparativo en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. Los datos de los modelos de terceros proceden de su documentación pública y no formaban parte de la información facilitada en esta búsqueda; conviene verificarlos antes de tomar decisiones de arquitectura.
 
@@ -97,7 +97,7 @@ No hay datos de rendimiento comparativo en la información proporcionada, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dinushiTJ/nz-research-commons-embedding-gemma-v2
+- Modelo en Hugging Face: https://huggingface.co/dinushiTJ/nz-research-commons-embedding-gemma-v2
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Referencia arXiv citada en las etiquetas: https://arxiv.org/abs/1908.10084
 - Referencia arXiv citada en las etiquetas: https://arxiv.org/abs/1703.07737

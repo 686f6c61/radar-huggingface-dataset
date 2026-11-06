@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) ni de otras alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darrellbest/Qwen3-0.6B-Heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/darrellbest/Qwen3-0.6B-Heretic-GGUF
 - Modelo base (safetensors): https://huggingface.co/darrellbest/Qwen3-0.6B-Heretic
 - Modelo original: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE

@@ -18,7 +18,7 @@ El repositorio ocupa 0,9 GB, tiene licencia krea-2-community-license (heredada d
 | Longitud de contexto | no aplica (modelo texto-a-imagen); no disponible la longitud maxima de prompt |
 | Tipos de cuantizacion | fp16 (unica variante publicada); no se ofrecen versiones GGUF, INT8 ni fp8 |
 | Idiomas soportados | no disponible (todos los ejemplos de prompt de la model card estan en ingles) |
-| Licencia | krea-2-community-license, etiquetada como `other` en HuggingFace; se hereda de krea/Krea-2-Turbo |
+| Licencia | krea-2-community-license, etiquetada como `other` en Hugging Face; se hereda de krea/Krea-2-Turbo |
 | Formato de pesos | safetensors (`badaramoni_krea2_realism_fusion_r128_fp16.safetensors`, claves `lora_unet_*` de musubi-tuner) |
 | Tamano del repositorio | 0,9 GB |
 | Pipeline declarado | text-to-image |
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM del modelo base: no disponible en la informacion proporcionada; es necesario consultar la ficha de krea/Krea-2-Turbo. Como el adaptador se carga junto al pipeline completo en bf16, el requisito dominante es el del modelo base, no el del LoRA.
 - GPU recomendadas: no disponibles. La model card solo menciona `torch_dtype=torch.bfloat16` y `.to("cuda")`.
 - Compatibilidad con GPU de consumo: no confirmada por el autor; depende enteramente de si Krea-2-Turbo cabe en la GPU en cuestion.
-- Opciones de despliegue: diffusers (`Krea2Pipeline`, instalado desde el repositorio fuente de HuggingFace) y musubi-tuner (`krea2_generate_image.py`). No se mencionan vLLM, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Opciones de despliegue: diffusers (`Krea2Pipeline`, instalado desde el repositorio fuente de Hugging Face) y musubi-tuner (`krea2_generate_image.py`). No se mencionan vLLM, Ollama ni TGI, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles. Se sabe que la configuracion recomendada usa solo 8 pasos de inferencia, lo que reduce el coste frente a configuraciones tipicas de mas pasos.
 - Componentes auxiliares citados en el ejemplo de musubi-tuner: `turbo.safetensors` (DiT), `qwen_image_vae.safetensors` (VAE) y `qwen3vl_4b_bf16.safetensors` (text encoder).
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de fichas tecnicas de alternativas compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/badaramoni/Krea-2-Realism-Fusion
+- Modelo en Hugging Face: https://huggingface.co/badaramoni/Krea-2-Realism-Fusion
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia Krea 2 Community License (referenciada desde la ficha del modelo base): https://huggingface.co/krea/Krea-2-Turbo
 - Script del metodo de fusion: `universal_merge.py` (incluido en el repositorio del modelo)

@@ -58,7 +58,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 - Adecuación para producción: sin benchmarks ni pruebas de robustez, no se recomienda su uso en sistemas críticos sin una validación exhaustiva.
 
 ## Enlaces
-- [HuggingFace - Joe-3/smart-recycle-bin](https://huggingface.co/Joe-3/smart-recycle-bin)
+- [Hugging Face - Joe-3/smart-recycle-bin](https://huggingface.co/Joe-3/smart-recycle-bin)
 - Proyectos similares encontrados en la búsqueda web (no afiliados al modelo):
   - [Smart Recycle Bin - sitio web](https://smart-recyclebin.com/)
   - [GitHub - Aliqatrawi/Smart-recycle-bin](https://github.com/Aliqatrawi/Smart-recycle-bin)

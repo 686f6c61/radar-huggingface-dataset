@@ -117,11 +117,11 @@ Flash-RL y Flash-MOPD comparten configuración y drafter DFlash, con rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diffbot/MiMo-V2.6-Flash-MOPD-FP8KV-W4A8-2x-RTX-PRO-6000
+- Repositorio en Hugging Face: https://huggingface.co/diffbot/MiMo-V2.6-Flash-MOPD-FP8KV-W4A8-2x-RTX-PRO-6000
 - Checkpoint base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
 - Checkpoint alternativo Flash-RL: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Receta análoga para Flash-RL: https://huggingface.co/diffbot/MiMo-V2.6-Flash-RL-FP8KV-W4A8-2x-RTX-PRO-6000
-- Discusión en HuggingFace: https://huggingface.co/diffbot/MiMo-V2.6-Flash-RL-FP8KV-W4A8-2x-RTX-PRO-6000/discussions/1
+- Discusión en Hugging Face: https://huggingface.co/diffbot/MiMo-V2.6-Flash-RL-FP8KV-W4A8-2x-RTX-PRO-6000/discussions/1
 - Página oficial de la serie MiMo-V2.6: https://mimo.xiaomi.com/mimo-v2-6
 - Modelo MiMo-V2.6-Flash en Xiaomi: https://mimo.mi.com/models/en-US/mimo-v2.6-flash
 - Cobertura de la liberación de MOPD: https://localmodelwatch.tsuchitsuchi.com/en/2026/09/28/xiaomi-mimo-v2-6-mopd-models/

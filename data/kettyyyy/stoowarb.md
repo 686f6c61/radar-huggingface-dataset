@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Stoowarb es un repositorio de modelo publicado en HuggingFace por el usuario kettyyyy (perfil "Ketty"). La ficha del repositorio no contiene ninguna descripcion tecnica: la model card se limita a declarar `license: openrail` y no incluye informacion sobre arquitectura, parametros, contexto, idiomas, datos de entrenamiento ni metodologia. La etiqueta de pipeline aparece como "no disponible", por lo que HuggingFace no lo clasifica en ninguna tarea concreta (text-generation, text-to-image, etc.).
+Stoowarb es un repositorio de modelo publicado en Hugging Face por el usuario kettyyyy (perfil "Ketty"). La ficha del repositorio no contiene ninguna descripcion tecnica: la model card se limita a declarar `license: openrail` y no incluye informacion sobre arquitectura, parametros, contexto, idiomas, datos de entrenamiento ni metodologia. La etiqueta de pipeline aparece como "no disponible", por lo que Hugging Face no lo clasifica en ninguna tarea concreta (text-generation, text-to-image, etc.).
 
 El repositorio ocupa aproximadamente 0,1 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta. El tamano es compatible con un adaptador LoRA, con un modelo de muy pocos parametros o con una cuantizacion de un modelo mayor, pero la informacion disponible no permite distinguir entre estos escenarios.
 
-La busqueda web no devuelve ninguna documentacion tecnica, paper, blog ni repositorio asociado al modelo. Los unicos resultados relacionados con el termino "Stoowarb" son paginas de personajes en character.ai inspiradas en un personaje del videojuego My Singing Monsters; no hay evidencia de que guarden relacion con este repositorio de HuggingFace mas alla de la coincidencia de nombre. En consecuencia, esta ficha se limita a documentar los metadatos verificables y a marcar como "no disponible" todo aquello que no puede confirmarse.
+La busqueda web no devuelve ninguna documentacion tecnica, paper, blog ni repositorio asociado al modelo. Los unicos resultados relacionados con el termino "Stoowarb" son paginas de personajes en character.ai inspiradas en un personaje del videojuego My Singing Monsters; no hay evidencia de que guarden relacion con este repositorio de Hugging Face mas alla de la coincidencia de nombre. En consecuencia, esta ficha se limita a documentar los metadatos verificables y a marcar como "no disponible" todo aquello que no puede confirmarse.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No existen casos de uso verificados: sin model card, sin pipeline declarado y si
 - Chat de personaje o roleplay: los unicos resultados web asociados al nombre "Stoowarb" son personajes de character.ai basados en My Singing Monsters, de modo que es plausible que se trate de un ajuste orientado a conversacion de personaje, pero no hay ninguna confirmacion en el repositorio.
 - Fine-tuning experimental: un repositorio de 0,1 GB podria servir como punto de partida para adaptar un modelo mayor mediante LoRA, siempre que finalmente resulte ser un adaptador y no un modelo completo.
 - Evaluacion comparativa interna: podria incorporarse a un banco de pruebas propio para medir calidad de generacion, pero sin datos de entrenamiento ni de licencia de los datos subyacentes, los resultados serian dificilmente interpretables.
-- Demostracion docente de publicacion en HuggingFace: el repositorio ilustra un caso de subida sin documentacion, util como ejemplo de lo que una model card deberia incluir.
+- Demostracion docente de publicacion en Hugging Face: el repositorio ilustra un caso de subida sin documentacion, util como ejemplo de lo que una model card deberia incluir.
 - Archivo y catalogacion: dado que no tiene descargas ni documentacion, su interes actual es fundamentalmente de inventario, no funcional.
 
 ## Benchmarks y rendimiento
@@ -92,9 +92,9 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kettyyyy/Stoowarb
+- Modelo en Hugging Face: https://huggingface.co/kettyyyy/Stoowarb
 - Perfil del autor: https://huggingface.co/kettyyyy
-- Actividad del autor en HuggingFace: https://huggingface.co/kettyyyy/buckets
+- Actividad del autor en Hugging Face: https://huggingface.co/kettyyyy/buckets
 - Resultados de busqueda web sobre el nombre "Stoowarb" (relacion con el modelo no confirmada):
   - https://character.ai/chat/8UXCD8umRxZmFoE778UTm85s6aQU2coF2USrlAMx8pg
   - https://character.ai/chat/iFhfymnG69b5kuNY8PJF_srzlSB6aL9WeaFgY-3ZDaM

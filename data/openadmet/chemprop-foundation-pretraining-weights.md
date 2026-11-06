@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openadmet/chemprop-foundation-pretraining-weights
+- Repositorio Hugging Face: https://huggingface.co/openadmet/chemprop-foundation-pretraining-weights
 - Blog de OpenADMET sobre CheMeleon: https://openadmet.ghost.io/throwing-everything-and-the-kitchen-sink-at-chemeleon/
 - Documentación de OpenADMET: https://docs.openadmet.org/en/latest/index.html
 - Documentación de ChemProp: https://chemprop.readthedocs.io/en/latest/index.html

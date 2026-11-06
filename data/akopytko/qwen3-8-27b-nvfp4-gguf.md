@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `akopytko/Qwen3.8-27B-NVFP4-GGUF` es una cuantización de precisión NVFP4 (tipo N4_0) del modelo denso multimodal Qwen3.8-27B de Alibaba, publicada por el usuario akopytko en HuggingFace. La cuantización está optimizada para hardware Blackwell de NVIDIA y ofrece una velocidad de prefill hasta un 50 % superior a las cuantizaciones convencionales de 4 bits, manteniendo un tamaño comparable. El archivo incluye además una cabeza de decodificación especulativa MTP (multi-token prediction) cuantizada en NVFP4, lo que permite acelerar la generación en modo decode sin necesidad de un modelo auxiliar externo.
+El modelo `akopytko/Qwen3.8-27B-NVFP4-GGUF` es una cuantización de precisión NVFP4 (tipo N4_0) del modelo denso multimodal Qwen3.8-27B de Alibaba, publicada por el usuario akopytko en Hugging Face. La cuantización está optimizada para hardware Blackwell de NVIDIA y ofrece una velocidad de prefill hasta un 50 % superior a las cuantizaciones convencionales de 4 bits, manteniendo un tamaño comparable. El archivo incluye además una cabeza de decodificación especulativa MTP (multi-token prediction) cuantizada en NVFP4, lo que permite acelerar la generación en modo decode sin necesidad de un modelo auxiliar externo.
 
 La relevancia actual de este modelo radica en que aprovecha las instrucciones nativas de formato de punto flotante de 4 bits de las GPUs Blackwell (RTX 50, B200, B300, DGX Spark), eliminando la necesidad de cambios en llama.cpp y ofreciendo una alternativa de baja latencia para despliegues de inferencia en estas tarjetas. La licencia Apache 2.0 facilita su uso comercial y la reproducción de la técnica de cuantización mediante PRs abiertos en llama.cpp.
 

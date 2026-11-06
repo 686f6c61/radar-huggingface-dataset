@@ -6,7 +6,7 @@ El modelo `RaunakSeksaria/anlp-a2-moe` es un conjunto de cinco variantes de tran
 
 El interes tecnico del artefacto reside en que aísla una unica variable —el diseno del FFN— manteniendo constantes arquitectura base, datos y presupuesto de entrenamiento, lo que permite comparar de forma controlada un MLP denso frente a esquemas MoE con distintos numeros de expertos y politicas de enrutamiento (top-1, top-2, expertos compartidos). El modelo mas pequeno de la familia tiene 26,45 M de parametros totales (denso) y el mayor 35,90 M, con entre 19,38 M y 26,46 M de parametros activos segun la variante.
 
-Se publica en formato PyTorch (`.pt`) con pesos de mejor validacion y finales, en un repositorio de 0,4 GB. No declara licencia ni idiomas en los metadatos de HuggingFace, y no cuenta con descargas ni likes en el momento de redactar esta ficha, lo que confirma su naturaleza academica y experimental.
+Se publica en formato PyTorch (`.pt`) con pesos de mejor validacion y finales, en un repositorio de 0,4 GB. No declara licencia ni idiomas en los metadatos de Hugging Face, y no cuenta con descargas ni likes en el momento de redactar esta ficha, lo que confirma su naturaleza academica y experimental.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM de inferencia estimada: al tratarse de modelos de 19-36 M de parametros, el peso en fp32 ocupa aproximadamente entre 78 MB y 144 MB; en fp16, entre 39 MB y 72 MB. El repositorio completo pesa 0,4 GB (incluye varias variantes y checkpoints best/final).
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es mas que suficiente. Modelos como RTX 3060, RTX 4090, A100 o H100 quedan sobradamente dimensionados, hasta el punto de que la GPU no es un cuello de botella.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo, e incluso puede ejecutarse en CPU.
-- Opciones de despliegue: al publicarse en PyTorch nativo con checkpoints `state_dict`, el uso directo requiere el codigo del repositorio de la entrega (no incluido en HuggingFace). No se declaran integraciones con vLLM, llama.cpp, Ollama o TGI, ni pesos GGUF. Seria necesario exportar manualmente para usarlos con esos runtimes.
+- Opciones de despliegue: al publicarse en PyTorch nativo con checkpoints `state_dict`, el uso directo requiere el codigo del repositorio de la entrega (no incluido en Hugging Face). No se declaran integraciones con vLLM, llama.cpp, Ollama o TGI, ni pesos GGUF. Seria necesario exportar manualmente para usarlos con esos runtimes.
 - Latencia y throughput: la model card reporta throughput de entrenamiento (76.203-96.058 tok/s) y memoria pico de entrenamiento (4.647-5.460 MB); no se publican datos de latencia ni throughput de inferencia.
 
 ## Comparativa con modelos similares
@@ -94,12 +94,12 @@ Comparativa con alternativas externas de traduccion de tamano similar: no dispon
 - Sesgos conocidos: no disponibles; no se documenta analisis de sesgo ni composicion detallada del dataset mas alla del nombre `en-vi-ja-curated-500k-triplets`.
 - Licencia no disponible: no se declara licencia, por lo que el uso comercial queda en un limbo legal y no es recomendable asumir permisos.
 - Contexto no disponible: se desconoce la longitud maxima de secuencia soportada, lo que impide planificar su uso en textos largos.
-- Restricciones de despliegue: no hay pesos GGUF ni integraciones con servidores de inferencia populares; usarlo requiere el codigo de la entrega, que no esta en HuggingFace.
+- Restricciones de despliegue: no hay pesos GGUF ni integraciones con servidores de inferencia populares; usarlo requiere el codigo de la entrega, que no esta en Hugging Face.
 - Uso en produccion: no recomendado; es un banco de pruebas de investigacion, no un modelo listo para servicio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RaunakSeksaria/anlp-a2-moe
+- Hugging Face: https://huggingface.co/RaunakSeksaria/anlp-a2-moe
 - Dataset de entrenamiento: belumind/en-vi-ja-curated-500k-triplets (referenciado en la model card, sin URL explicita)
 - Repositorio de la entrega con el codigo del modelo: no disponible como enlace (la model card indica que el codigo esta en el "submission repository", sin URL)
 - Paper, blog o demo asociados: no disponibles

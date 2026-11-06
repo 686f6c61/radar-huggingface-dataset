@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AgentMercury-Qwen3.5-35B-A3B-i1-GGUF es una cuantización GGUF del modelo AgentMercury-Qwen3.5-35B-A3B, publicada por el usuario mradermacher en HuggingFace. El modelo base, desarrollado por Minbyul, es una variante ajustada del Qwen3.5-35B-A3B de Alibaba, un modelo multimodal de tipo mixture-of-experts (MoE) con 35.000 millones de parámetros totales y 3.000 millones activos por token. Esta versión concreta se distribuye únicamente en formato GGUF, optimizado para inferencia en CPU y GPU con llama.cpp, Ollama u otros motores compatibles.
+AgentMercury-Qwen3.5-35B-A3B-i1-GGUF es una cuantización GGUF del modelo AgentMercury-Qwen3.5-35B-A3B, publicada por el usuario mradermacher en Hugging Face. El modelo base, desarrollado por Minbyul, es una variante ajustada del Qwen3.5-35B-A3B de Alibaba, un modelo multimodal de tipo mixture-of-experts (MoE) con 35.000 millones de parámetros totales y 3.000 millones activos por token. Esta versión concreta se distribuye únicamente en formato GGUF, optimizado para inferencia en CPU y GPU con llama.cpp, Ollama u otros motores compatibles.
 
 La relevancia de este modelo radica en su eficiencia: al activar solo 3B parámetros por token, ofrece un rendimiento comparable a modelos mucho más grandes (hasta 6 veces su tamaño, según la documentación de Qwen3.5) con un coste computacional reducido. La cuantización i1 (probablemente con imatrix) permite ejecutarlo en hardware de consumo, lo que lo hace atractivo para despliegues locales y aplicaciones de producción con requisitos moderados de VRAM. El nombre "AgentMercury" sugiere un fine-tuning orientado a tareas de agente, aunque no se detalla en la información disponible.
 
@@ -76,7 +76,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/AgentMercury-Qwen3.5-35B-A3B-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/AgentMercury-Qwen3.5-35B-A3B-i1-GGUF
 - Modelo base (Minbyul): https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-35B-A3B
 - Variante Unredacted-MAX (referencia): https://huggingface.co/mradermacher/Qwen3.5-35B-A3B-Unredacted-MAX-i1-GGUF
 - Cuantizacion GGUF de unsloth para Qwen3.5-35B-A3B: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF

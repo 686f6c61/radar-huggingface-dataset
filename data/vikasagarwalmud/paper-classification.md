@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mae for Classification es un repositorio de HuggingFace publicado por el usuario vikasagarwalmud que contiene una implementación funcional de una arquitectura denominada Mae orientada a tareas de clasificación, en su variante de escala "huge" según el propio autor. El repositorio no es un modelo entrenado: el archivo `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un checkpoint con benchmarks. El recuento real de parámetros en safetensors es de 16.576, lo que lo sitúa en el rango de unos 0,017 millones de parámetros, muy lejos de lo que suele entenderse por un modelo "huge".
+Mae for Classification es un repositorio de Hugging Face publicado por el usuario vikasagarwalmud que contiene una implementación funcional de una arquitectura denominada Mae orientada a tareas de clasificación, en su variante de escala "huge" según el propio autor. El repositorio no es un modelo entrenado: el archivo `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un checkpoint con benchmarks. El recuento real de parámetros en safetensors es de 16.576, lo que lo sitúa en el rango de unos 0,017 millones de parámetros, muy lejos de lo que suele entenderse por un modelo "huge".
 
 El interés del repositorio es, por tanto, de carácter didáctico y de ingeniería: código transparente, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de entrenamiento por defecto y un punto de entrada (`finetune.py`) para ajuste fino. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que la implementación debe tratarse como un punto de partida experimental.
 
@@ -76,14 +76,14 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - Riesgo de alucinación: no aplica en el estado actual, ya que no hay capacidad generativa demostrada; si se entrena como generador, el riesgo dependería por completo del corpus utilizado.
 - Idiomas y contexto: no disponibles; no se declara ninguna ventana de contexto ni cobertura idiomática.
 - Licencia: apache-2.0 permite uso comercial y modificación, pero la model card recomienda revisar por separado los términos de los datos de origen si se emplean conjuntos externos.
-- Requiere adaptador explícito: las APIs de carga automática de HuggingFace no funcionan directamente con esta implementación personalizada.
+- Requiere adaptador explícito: las APIs de carga automática de Hugging Face no funcionan directamente con esta implementación personalizada.
 - Reproducibilidad: el autor subraya que cualquier resultado publicado debe acompañarse de los registros de entrenamiento y de las versiones del entorno; las comparaciones entre líneas base exigen la misma exposición de datos, presupuesto de ajuste y semillas.
 - Discrepancia de nomenclatura: la escala declarada como "huge" no se corresponde con el recuento real de parámetros, lo que puede inducir a error si se cita sin verificar.
 - Metadatos temporales: el repositorio figura creado y actualizado el 2026-09-14, con 0 descargas y 0 likes; conviene tratarlo como un artefacto reciente y sin validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vikasagarwalmud/paper-classification
+- Repositorio en Hugging Face: https://huggingface.co/vikasagarwalmud/paper-classification
 - LLM Leaderboard 2026 (referencia general de rankings, no relacionada con este modelo): https://llm-stats.com/leaderboards/llm-leaderboard
 - AIPapers.ai (agregador de articulos de investigacion): https://aipapers.ai/
 - Clasificacion automatica de metodologia de investigacion mediante aprendizaje automatico (articulo en ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0952197625010395

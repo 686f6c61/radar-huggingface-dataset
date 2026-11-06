@@ -69,7 +69,7 @@ No se dispone de datos comparativos objetivos con otros modelos de generación d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imsun/WAN2.2-14B-Rapid-AllInOne
+- Repositorio Hugging Face: https://huggingface.co/imsun/WAN2.2-14B-Rapid-AllInOne
 - Versión de Phr00t (similar): https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne
 - Versión GGUF en ModelScope: https://www.modelscope.cn/models/AI-ModelScope/WAN2.2-14B-Rapid-AllInOne-GGUF
 - Workflow en Civitai: https://civitai.com/models/1855273/wan22-14b-rapid-allinone-workflow-with-lora-and-color-match

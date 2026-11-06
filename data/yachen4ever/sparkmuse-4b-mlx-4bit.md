@@ -102,7 +102,7 @@ La informacion disponible no incluye comparaciones con modelos de otros desarrol
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yachen4ever/SparkMuse-4B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/yachen4ever/SparkMuse-4B-MLX-4bit
 - Modelo base: https://huggingface.co/hcnote/SparkMuse-4B
 
 No se han encontrado enlaces adicionales relevantes en la busqueda web: los resultados devueltos corresponden a paginas de soporte de Microsoft (contacto, inicio de sesion en Hotmail, blog de Microsoft Copilot y tasa de refresco de monitor en Windows) sin relacion alguna con el modelo. No hay disponibles enlaces a papers, blogs tecnicos, repositorios de codigo ni demos en la informacion proporcionada.

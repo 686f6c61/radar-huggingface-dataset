@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - VRAM estimada: no aplica para CPU; el modelo es pequeño (~133M) y puede ejecutarse en CPU con menos de 1 GB de RAM.
 - GPU recomendadas: no disponible; el modelo está optimizado para CPU mediante TorchScript INT8.
 - Compatibilidad con GPU consumer: sí, por su tamaño, pero no se proporcionan datos de rendimiento en GPU.
-- Opciones de despliegue: TorchScript via PyTorch, con `torch.jit.load`. No es compatible con ONNX Runtime. Se puede integrar con HuggingFace Transformers para el tokenizador.
+- Opciones de despliegue: TorchScript via PyTorch, con `torch.jit.load`. No es compatible con ONNX Runtime. Se puede integrar con Hugging Face Transformers para el tokenizador.
 - Latencia y throughput: INT8 ofrece 24,7 ms p50 y ~40,5 QPS con 8 hilos; FP32 ofrece 40,3 ms p50 y ~24,8 QPS.
 
 ## Comparativa con modelos similares
@@ -86,5 +86,5 @@ No se dispone de comparativas con otros modelos de la misma categoría en la inf
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/blue-machines/Canine-S-sentence-intent-v1
+- Hugging Face del modelo: https://huggingface.co/blue-machines/Canine-S-sentence-intent-v1
 - Modelo base google/canine-s: https://huggingface.co/google/canine-s

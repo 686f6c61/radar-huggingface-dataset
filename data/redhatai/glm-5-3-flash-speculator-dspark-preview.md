@@ -89,11 +89,11 @@ No hay cifras publicadas en la informacion disponible para los metodos alternati
 
 | Modelo / metodo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DSpark (este checkpoint) | Borrador de decodificacion especulativa | 2,54 B | 1.048.576 configurados | Aceptacion 24,25%-59,34% segun tarea | MIT | HuggingFace, preview epoca 0 |
+| DSpark (este checkpoint) | Borrador de decodificacion especulativa | 2,54 B | 1.048.576 configurados | Aceptacion 24,25%-59,34% segun tarea | MIT | Hugging Face, preview epoca 0 |
 | DFlash / DFlash2 | Borrador de decodificacion especulativa (base de DSpark) | no disponible | no disponible | no disponible | no disponible | Referenciado en despliegues con GLM-5.3-Flash NVFP4 (k=7) |
 | EAGLE-3 | Borrador de decodificacion especulativa | no disponible | no disponible | no disponible en esta informacion | no disponible | Ecosistema vLLM |
 | Medusa | Cabezales de decodificacion especulativa | no disponible | no disponible | no disponible en esta informacion | no disponible | Ecosistema vLLM |
-| GLM-5.3-Flash sin decodificacion especulativa | Modelo objetivo, MoE multimodal | 320 B totales, 18 B activos | no disponible | Supera a GLM-5.2 y se acerca a Claude Opus 4.8 en codigo y agentes, segun el proveedor | no disponible | HuggingFace, DeepInfra, NVIDIA NIM |
+| GLM-5.3-Flash sin decodificacion especulativa | Modelo objetivo, MoE multimodal | 320 B totales, 18 B activos | no disponible | Supera a GLM-5.2 y se acerca a Claude Opus 4.8 en codigo y agentes, segun el proveedor | no disponible | Hugging Face, DeepInfra, NVIDIA NIM |
 
 ## Limitaciones y advertencias
 
@@ -111,10 +111,10 @@ No hay cifras publicadas en la informacion disponible para los metodos alternati
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/RedHatAI/GLM-5.3-Flash-speculator.dspark-preview
+- Checkpoint en Hugging Face: https://huggingface.co/RedHatAI/GLM-5.3-Flash-speculator.dspark-preview
 - Modelo objetivo: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Version gestionada por Red Hat AI del objetivo: https://huggingface.co/RedHatAI/GLM-5.3-Flash
-- Organizacion Red Hat AI en HuggingFace: https://huggingface.co/RedHatAI
+- Organizacion Red Hat AI en Hugging Face: https://huggingface.co/RedHatAI
 - Libreria Speculators: https://github.com/vllm-project/speculators
 - Commit de entrenamiento: https://github.com/vllm-project/speculators/commit/b9c51bcfc134923eae2b6a6f8246ae3500d5c42f
 - Dataset de partida (Open PerfectBlend): https://huggingface.co/datasets/mlabonne/open-perfectblend

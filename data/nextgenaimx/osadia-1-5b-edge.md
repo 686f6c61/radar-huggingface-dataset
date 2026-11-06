@@ -76,10 +76,10 @@ Advertencia: las puntuaciones de 100,0 % en ARC Challenge, HellaSwag y el benchm
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OSADÍA 1.5B Edge | 1,26 B | 2.048 | SOCL-1.0 (propietaria, con atribución) | HuggingFace, repo de 5,1 GB |
-| LLaMA-3.2 1B | 1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace, amplio ecosistema |
-| Qwen2.5-1.5B | 1,54 B | 32.768 | Apache 2.0 | HuggingFace, GGUF y múltiples frameworks |
-| Gemma 2 2B | 2,6 B | 8.192 | Gemma Terms of Use | HuggingFace, ecosistema amplio |
+| OSADÍA 1.5B Edge | 1,26 B | 2.048 | SOCL-1.0 (propietaria, con atribución) | Hugging Face, repo de 5,1 GB |
+| LLaMA-3.2 1B | 1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face, amplio ecosistema |
+| Qwen2.5-1.5B | 1,54 B | 32.768 | Apache 2.0 | Hugging Face, GGUF y múltiples frameworks |
+| Gemma 2 2B | 2,6 B | 8.192 | Gemma Terms of Use | Hugging Face, ecosistema amplio |
 
 Frente a estos modelos, OSADÍA 1.5B Edge ofrece un contexto mucho más corto (2.048 tokens frente a 8.192-128.000) y una licencia propietaria con cláusula de atribución, pero declara un foco específico en español mexicano y cuantizaciones muy compactas. Su ecosistema de herramientas es mucho menor: la model card marca `inference: false` y no se confirma soporte en vLLM, llama.cpp u Ollama más allá de los tags. Las cifras de benchmarks declaradas no son comparables de forma fiable con las de los modelos de referencia sin una evaluación independiente.
 
@@ -90,14 +90,14 @@ Frente a estos modelos, OSADÍA 1.5B Edge ofrece un contexto mucho más corto (2
 - Riesgo de alucinación: como todo modelo de 1,26 B, la precisión factual en conocimiento general y en dominios especializados es limitada; el benchmark propio de legal/SAT no está auditado externamente.
 - Sesgos: no se documentan análisis de sesgo, toxicidad ni evaluación de seguridad en la información disponible; la alineación a un registro regional concreto puede introducir sesgos dialectales.
 - Licencia: SOCL-1.0 es una licencia propietaria "other"; aunque permite uso comercial, exige retener el aviso del propietario de los pesos, el nombre original del modelo, el arquitecto y el repositorio oficial en cualquier fork, cuantización, merge o derivado. Conviene revisar el texto completo de `LICENSE.md` antes de producción.
-- Arquitectura propietaria: al no ser una arquitectura estándar de HuggingFace Transformers, la integración con frameworks de inferencia y servido puede requerir código propio (`osadia_core.py`); la model card marca `inference: false`.
+- Arquitectura propietaria: al no ser una arquitectura estándar de Hugging Face Transformers, la integración con frameworks de inferencia y servido puede requerir código propio (`osadia_core.py`); la model card marca `inference: false`.
 - Madurez: 0 descargas y 0 likes en el momento de la consulta, creado en noviembre de 2026; no hay evidencia de uso en producción ni de validación por la comunidad.
 - Idiomas: solo español e inglés declarados; el rendimiento en otras lenguas no está documentado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nextgenaimx/osadia-1.5b-edge
+- Modelo en Hugging Face: https://huggingface.co/nextgenaimx/osadia-1.5b-edge
 - Repositorio oficial declarado: https://github.com/NextGenAiMX/osadia-ai
-- Licencia (referenciada en la model card): `LICENSE.md` dentro del repositorio de HuggingFace
+- Licencia (referenciada en la model card): `LICENSE.md` dentro del repositorio de Hugging Face
 - Dataset de entrenamiento: https://huggingface.co/datasets/NextGenAiMX/The-Data-Factory-Cleanroom-Corpus
 - Paper, blog o demo: no disponibles en la información proporcionada.

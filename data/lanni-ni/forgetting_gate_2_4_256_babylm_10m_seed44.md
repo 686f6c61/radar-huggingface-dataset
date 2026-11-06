@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `forgetting_gate_2_4_256_babylm_10m_seed44` es un modelo de generación de texto de 27.449.096 parámetros publicado en HuggingFace por el usuario Lanni-ni. Según los metadatos, emplea una arquitectura etiquetada como `forgetting_transformer` y almacena los pesos en formato safetensors. El pipeline registrado es `text-generation`, lo que indica que está pensado para generar texto.
+El modelo `forgetting_gate_2_4_256_babylm_10m_seed44` es un modelo de generación de texto de 27.449.096 parámetros publicado en Hugging Face por el usuario Lanni-ni. Según los metadatos, emplea una arquitectura etiquetada como `forgetting_transformer` y almacena los pesos en formato safetensors. El pipeline registrado es `text-generation`, lo que indica que está pensado para generar texto.
 
 La model card es una plantilla automática sin información técnica; no se dispone de datos sobre la arquitectura interna, los datos de entrenamiento, los idiomas soportados, la licencia ni el rendimiento. A pesar de su pequeño tamaño, no es posible evaluar su calidad o capacidades sin documentación adicional.
 
@@ -12,7 +12,7 @@ El repositorio no presenta descargas ni «likes», lo que sugiere que es un mode
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Forgetting Transformer (según etiqueta de HuggingFace) |
+| Arquitectura | Forgetting Transformer (según etiqueta de Hugging Face) |
 | Parámetros totales | 27.449.096 |
 | Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -29,7 +29,7 @@ El repositorio no contiene información sobre el proceso de entrenamiento: no se
 
 ## Capacidades
 
-- Generación de texto: el pipeline de HuggingFace indica `text-generation`, pero no hay documentación sobre la calidad, el estilo ni las tareas para las que fue entrenado.
+- Generación de texto: el pipeline de Hugging Face indica `text-generation`, pero no hay documentación sobre la calidad, el estilo ni las tareas para las que fue entrenado.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
@@ -72,6 +72,6 @@ No se dispone de datos suficientes para realizar una comparativa fiable. No se c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/forgetting_gate_2_4_256_babylm_10m_seed44
+- Hugging Face: https://huggingface.co/Lanni-ni/forgetting_gate_2_4_256_babylm_10m_seed44
 - Paper etiquetado en metadatos (arxiv:1910.09700): https://arxiv.org/abs/1910.09700 — Este enlace aparece en la lista de tags del repositorio, pero corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, no al modelo.
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

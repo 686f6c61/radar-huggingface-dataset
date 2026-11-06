@@ -74,13 +74,13 @@ La comparativa real con este fine-tune requiere evaluaciones propias, ya que no 
 - No se dispone de información sobre sesgos, alucinaciones o comportamientos indeseados del fine-tune; se recomienda auditar el modelo antes de usarlo en producción.
 - La licencia no está especificada; aunque el modelo base Qwen3 es Apache 2.0, el fine-tune podría tener restricciones adicionales, por lo que se debe contactar al autor antes de un uso comercial.
 - No se confirma la longitud de contexto efectiva tras el fine-tuning; es posible que se haya reducido respecto al modelo base.
-- El modelo solo está disponible en formato GGUF, lo que limita su uso en frameworks que requieren safetensors (por ejemplo, Transformers de HuggingFace sin conversión previa).
+- El modelo solo está disponible en formato GGUF, lo que limita su uso en frameworks que requieren safetensors (por ejemplo, Transformers de Hugging Face sin conversión previa).
 - Al ser un modelo pequeño (4B), su rendimiento en tareas complejas de razonamiento o generación de código será inferior al de modelos de mayor tamaño como Qwen3-8B o Llama-3.1-8B.
 - No se aportan detalles sobre el dataset de fine-tuning, por lo que no se puede evaluar la calidad o el sesgo de los datos de entrenamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/juststhjust/qwen_finetune
+- Hugging Face: https://huggingface.co/juststhjust/qwen_finetune
 - Repositorio de Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth
 - Documentación de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Documentación de Ollama: https://ollama.com/

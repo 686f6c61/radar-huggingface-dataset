@@ -100,7 +100,7 @@ Otros modelos MoE de tamano comparable, como Mixtral 8x22B (141B totales, 39B ac
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/BoldingBuilds/orcarouter_GLM-5.3-Flash-Uncensored-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/BoldingBuilds/orcarouter_GLM-5.3-Flash-Uncensored-GGUF
 - Modelo base FP8 de OrcaRouter: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
 - Pagina de OrcaRouter: https://www.orcarouter.ai/
 - Pagina de GLM-5.3 en OrcaRouter: https://www.orcarouter.ai/models/z-ai/glm-5.3

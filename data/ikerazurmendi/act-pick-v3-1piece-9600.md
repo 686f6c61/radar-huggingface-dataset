@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K y
 
 | Modelo | Parámetros | Horizonte de acción | Error MAE (offline) | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `act-pick-v3-1piece-9600` (este) | 51.658.374 | chunk 90, replan cada 30 | 15,47 global; 15,36 una pieza; 16,06 dos piezas | 292 episodios, solo inicio con una pieza | apache-2.0 | HuggingFace |
+| `act-pick-v3-1piece-9600` (este) | 51.658.374 | chunk 90, replan cada 30 | 15,47 global; 15,36 una pieza; 16,06 dos piezas | 292 episodios, solo inicio con una pieza | apache-2.0 | Hugging Face |
 | `act-pick-v3-6000` | no disponible | no disponible | no disponible | no disponible | no disponible | Recomendado por el autor para uso general |
 | Checkpoint 12.000 pasos de la misma ejecución | no disponible (misma receta) | chunk 90, replan cada 30 | 15,86 (23 % sobre baseline) | 292 episodios, solo una pieza | no disponible | No publicado como repo independiente en la información disponible |
 | Modelos entrenados con una y dos piezas | no disponible | no disponible | 15,2 a 15,8 en una pieza; mejor que 16,06 en dos piezas | Mezcla de configuraciones | no disponible | No identificados por nombre en la model card |
@@ -101,6 +101,6 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-1piece-9600
+- Modelo en Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-1piece-9600
 - Modelo recomendado por el autor para uso general (`act-pick-v3-6000`): no se proporciona URL en la información disponible
 - Paper de ACT, blogs, repositorios de código y demos: no disponibles en la información proporcionada

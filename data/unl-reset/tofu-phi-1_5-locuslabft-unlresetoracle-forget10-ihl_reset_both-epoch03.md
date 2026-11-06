@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-forget10-...-epoch03` | 1.418 M | no disponible | apache-2.0 | HuggingFace (0 descargas) | Checkpoint de *unlearning* TOFU, época 3/20 |
-| `locuslab/tofu_ft_phi-1.5` | ~1.300 M | no disponible | no disponible en la información | HuggingFace | Modelo base ajustado con TOFU, sin *unlearning* |
-| `microsoft/phi-1_5` | ~1.300 M | 2048 | MIT (según el modelo original) | HuggingFace | Modelo original, sin ajuste TOFU |
-| `microsoft/phi-2` | ~2.700 M | 2048 | MIT | HuggingFace | Alternativa de mayor tamaño de la misma familia |
+| `unl-reset/tofu-phi-1_5-...-forget10-...-epoch03` | 1.418 M | no disponible | apache-2.0 | Hugging Face (0 descargas) | Checkpoint de *unlearning* TOFU, época 3/20 |
+| `locuslab/tofu_ft_phi-1.5` | ~1.300 M | no disponible | no disponible en la información | Hugging Face | Modelo base ajustado con TOFU, sin *unlearning* |
+| `microsoft/phi-1_5` | ~1.300 M | 2048 | MIT (según el modelo original) | Hugging Face | Modelo original, sin ajuste TOFU |
+| `microsoft/phi-2` | ~2.700 M | 2048 | MIT | Hugging Face | Alternativa de mayor tamaño de la misma familia |
 
 La comparación relevante es frente al modelo base `locuslab/tofu_ft_phi-1.5` (mismo tamaño, mismo dataset, sin olvido) y frente al Phi-1.5 original (para medir la degradación introducida por el ajuste y el *unlearning*). No se dispone de datos de rendimiento comparado en la información proporcionada.
 
@@ -86,7 +86,7 @@ La comparación relevante es frente al modelo base `locuslab/tofu_ft_phi-1.5` (m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch03
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch03
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia habitual): https://huggingface.co/datasets/locuslab/TOFU

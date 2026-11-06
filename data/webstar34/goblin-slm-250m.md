@@ -97,7 +97,7 @@ El unico modelo relacionado mencionado es el Goblin Edge-2B anterior, que el aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webstar34/goblin-slm-250m
+- Modelo en Hugging Face: https://huggingface.co/webstar34/goblin-slm-250m
 - Dataset de preentrenamiento referenciado: https://huggingface.co/datasets/rijuludar/100B-pretokenized-mix-32k
 - FineWeb-Edu: no disponible en la informacion proporcionada
 - Cosmopedia: no disponible en la informacion proporcionada

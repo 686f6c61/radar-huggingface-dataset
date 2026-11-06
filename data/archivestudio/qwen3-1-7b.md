@@ -84,7 +84,7 @@ La comparación cuantitativa con alternativas no puede completarse porque la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-1.7B
+- Repositorio Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Modelo oficial: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE

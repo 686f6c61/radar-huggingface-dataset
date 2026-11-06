@@ -83,7 +83,7 @@ No se encontraron otros modelos abliterados de Qwen3.8-27B en la búsqueda, aunq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nova-quill/Orca-Qwen3.8-27B-Uncensored-unsloth-mlx
+- Hugging Face: https://huggingface.co/nova-quill/Orca-Qwen3.8-27B-Uncensored-unsloth-mlx
 - GitHub (cuantización MLX de referencia): https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX
 - Ollama (versión original abliterada): https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Unsloth (página del modelo base): https://unsloth.ai/models/qwen3.8-27b

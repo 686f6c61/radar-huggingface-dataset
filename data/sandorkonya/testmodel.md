@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sandorkonya/testmodel` es un repositorio alojado en HuggingFace por el usuario `sandorkonya` cuyos metadatos públicos son mínimos: no declara pipeline, licencia ni idiomas soportados, y acumula 0 descargas y 1 like desde su creación el 6 de septiembre de 2026 (última actualización el 21 de septiembre de 2026). Los únicos datos verificables son las etiquetas `onnx`, `safetensors` y `region:us`, junto con un tamaño de repositorio de 14,5 GB. No existe documentación asociada, model card descriptiva ni resultados publicados.
+`sandorkonya/testmodel` es un repositorio alojado en Hugging Face por el usuario `sandorkonya` cuyos metadatos públicos son mínimos: no declara pipeline, licencia ni idiomas soportados, y acumula 0 descargas y 1 like desde su creación el 6 de septiembre de 2026 (última actualización el 21 de septiembre de 2026). Los únicos datos verificables son las etiquetas `onnx`, `safetensors` y `region:us`, junto con un tamaño de repositorio de 14,5 GB. No existe documentación asociada, model card descriptiva ni resultados publicados.
 
 Por el nombre (`testmodel`) y por la ausencia total de información de entrenamiento, todo apunta a un artefacto de prueba o a un experimento personal de exportación de pesos, no a un modelo destinado a distribución pública ni a uso en producción. La presencia simultánea de `safetensors` y `onnx` sugiere que el autor ha subido los pesos originales y una exportación a ONNX Runtime, un flujo habitual en pruebas de despliegue.
 
-La relevancia de esta ficha es, por tanto, metodológica: sirve como ejemplo de repositorio no evaluable. Cualquier decisión técnica sobre él exige contactar con el autor o inspeccionar directamente los ficheros de pesos, ya que ni la búsqueda web realizada (que devolvió resultados irrelevantes sobre seguros de automóvil para profesionales en Francia) ni los metadatos de HuggingFace aportan información sobre arquitectura, tokenizador o datos de entrenamiento.
+La relevancia de esta ficha es, por tanto, metodológica: sirve como ejemplo de repositorio no evaluable. Cualquier decisión técnica sobre él exige contactar con el autor o inspeccionar directamente los ficheros de pesos, ya que ni la búsqueda web realizada (que devolvió resultados irrelevantes sobre seguros de automóvil para profesionales en Francia) ni los metadatos de Hugging Face aportan información sobre arquitectura, tokenizador o datos de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ Los siguientes escenarios son hipoteticos y solo serian aplicables si una inspec
 - Benchmarking interno de hardware: sirve para medir throughput y latencia de un repositorio de este tamano en una GPU concreta antes de invertir en un modelo real.
 - Automatizacion de pruebas de regresion en CI: si el modelo expone una API de inferencia estable, puede integrarse como dependencia de prueba para detectar roturas en versiones de librerias de conversion.
 - Docencia y formacion: como ejemplo practico de repositorio con metadatos incompletos, util para ensenar a auditar model cards antes de adoptar un modelo.
-- Investigacion sobre trazabilidad de artefactos: permite estudiar como la ausencia de licencia, pipeline y documentacion impide la reutilizacion, un problema recurrente en el ecosistema de HuggingFace.
+- Investigacion sobre trazabilidad de artefactos: permite estudiar como la ausencia de licencia, pipeline y documentacion impide la reutilizacion, un problema recurrente en el ecosistema de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ Todas las cifras de esta seccion son estimaciones basadas unicamente en el taman
 - VRAM para inferencia: si el modelo ronda los 7 000 millones de parametros, en fp16 necesitaria aproximadamente 14-16 GB de VRAM; en cuantizacion INT8, unos 8-10 GB; en INT4, unos 5-6 GB. Si el modelo es menor (3 000-4 000 millones de parametros), las cifras se reducen proporcionalmente.
 - GPU recomendadas para fp16: NVIDIA A100 (40/80 GB), H100 (80 GB) o L40S (48 GB) con margen amplio; una RTX 4090 (24 GB) seria suficiente para un modelo de ~7B en fp16 con contexto moderado.
 - GPU de consumo: una RTX 4090 (24 GB), RTX 4080 (16 GB) o RTX 3090 (24 GB) podrian alojar un modelo de ~7B cuantizado en INT8 o INT4. Una GPU de 8 GB solo seria viable con cuantizacion agresiva y modelos mas pequenos.
-- Opciones de despliegue: ONNX Runtime es la via natural dada la etiqueta `onnx`; para los pesos `safetensors`, son plausibles vLLM, Text Generation Inference, llama.cpp (si existiese conversion a GGUF, que no consta) o transformers de HuggingFace. Ollama requeriria un GGUF no presente en el repositorio.
+- Opciones de despliegue: ONNX Runtime es la via natural dada la etiqueta `onnx`; para los pesos `safetensors`, son plausibles vLLM, Text Generation Inference, llama.cpp (si existiese conversion a GGUF, que no consta) o transformers de Hugging Face. Ollama requeriria un GGUF no presente en el repositorio.
 - Latencia y throughput: no disponible. No se han publicado mediciones y no pueden estimarse sin conocer la arquitectura y el numero real de parametros.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sandorkonya/testmodel
+- Repositorio en Hugging Face: https://huggingface.co/sandorkonya/testmodel
 - Perfil del autor: https://huggingface.co/sandorkonya
 - Paper: no disponible
 - Blog tecnico: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PDE-KD es un conjunto de pesos de dos mapas de características aprendidos (`pde-kd-frame` y `pde-kd-3d`) que forman parte de la métrica de evaluación distribucional PDE-KD, presentada en *A Distributional Evaluation Metric for Chaotic Physical Systems* (Gong, Jiang, He, Li, 2026). No es un modelo generativo ni un LLM: su función es proyectar estados de simulaciones de ecuaciones en derivadas parciales (PDEs) a un espacio de 512 dimensiones para comparar poblaciones de estados mediante una discrepancia de kernel. El repositorio lo publica el autor `harrygong31` en HuggingFace con licencia MIT y pipeline `feature-extraction`.
+PDE-KD es un conjunto de pesos de dos mapas de características aprendidos (`pde-kd-frame` y `pde-kd-3d`) que forman parte de la métrica de evaluación distribucional PDE-KD, presentada en *A Distributional Evaluation Metric for Chaotic Physical Systems* (Gong, Jiang, He, Li, 2026). No es un modelo generativo ni un LLM: su función es proyectar estados de simulaciones de ecuaciones en derivadas parciales (PDEs) a un espacio de 512 dimensiones para comparar poblaciones de estados mediante una discrepancia de kernel. El repositorio lo publica el autor `harrygong31` en Hugging Face con licencia MIT y pipeline `feature-extraction`.
 
 El mapa 2D es un ResNet-18 que recibe un frame de 13 canales canónicos a 512x512 y devuelve un vector de 512 dimensiones, además de una cabeza de 46 salidas. El mapa 3D es un ResNet-18 inflado que recibe una ventana de 20 frames consecutivos de 13 canales a 512x512 y devuelve también 512 dimensiones. Ambos se entrenaron en JAX/Flax sobre TPU v5e y se exportaron a PyTorch; el número exacto de parámetros no se publica, aunque los ficheros de pesos en float32 ocupan 45 MB y 133 MB respectivamente.
 
@@ -23,10 +23,10 @@ Su relevancia es práctica: los sistemas caóticos no se evalúan bien con error
 | Entrada | 13 canales canónicos a 512x512; 1 frame (2D) o 20 frames (3D) |
 | Salida | 512-d (media global); el mapa 2D añade una cabeza de 46 salidas |
 | Cabeza 2D | 18 coeficientes de PDE, 9 logits de clase y 19 logits de régimen |
-| Pipeline de HuggingFace | feature-extraction |
+| Pipeline de Hugging Face | feature-extraction |
 | Tamaño del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 en la información disponible |
-| Fecha de creación en HuggingFace | 2026-10-18 |
+| Fecha de creación en Hugging Face | 2026-10-18 |
 
 ## Arquitectura y entrenamiento
 
@@ -86,8 +86,8 @@ Esta tabla no es un benchmark de calidad predictiva; mide la fidelidad del port 
 
 | Modelo | Entrada | Salida | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PDE-KD frame (2D) | 1 frame, 13x512x512 | 512-d + cabeza de 46 salidas | no disponible; pesos de 45 MB | 1 frame | MIT | HuggingFace |
-| PDE-KD 3D | 20 frames, 13x512x512 | 512-d | no disponible; pesos de 133 MB | 20 frames | MIT | HuggingFace |
+| PDE-KD frame (2D) | 1 frame, 13x512x512 | 512-d + cabeza de 46 salidas | no disponible; pesos de 45 MB | 1 frame | MIT | Hugging Face |
+| PDE-KD 3D | 20 frames, 13x512x512 | 512-d | no disponible; pesos de 133 MB | 20 frames | MIT | Hugging Face |
 | Alternativas externas | no disponible | no disponible | no disponible | no disponible | no disponible | no se han identificado en la información proporcionada |
 
 No se han identificado en la información proporcionada otros mapas de características aprendidos para evaluación distribucional de PDEs comparables. Las métricas FID/KID estándar para imágenes no son equivalentes y no se aportan resultados frente a ellas.

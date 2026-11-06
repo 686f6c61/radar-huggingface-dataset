@@ -79,6 +79,6 @@ No disponible. No se identifican modelos comparables porque el artefacto no es u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-p05h-v2-mtl-a1-10000-dev-fullres-e10f10-s0-eb7507288346
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-p05h-v2-mtl-a1-10000-dev-fullres-e10f10-s0-eb7507288346
 - Receta canonica referenciada en la model card: `evaluations/2026-10-01_b1k_task00_pi05_human_v2_mtl` (no se proporciona URL publica)
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a la tarea evaluada ni a su documentacion tecnica. Los resultados devueltos por la busqueda corresponden a sitios de contenido para adultos sin relacion alguna con este repositorio y se han descartado por completo.

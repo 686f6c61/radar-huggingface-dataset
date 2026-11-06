@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Albedo SN97 scrub candidate (CXXII vision-gate 80/20) es un modelo experimental derivado de `dendriteholdings/albedo-qwen3.6-35b-king-CXXII`, publicado por el usuario JMaxCool en HuggingFace. Se trata de un modelo de tipo Mixture-of-Experts (MoE) basado en la arquitectura Qwen3.5/3.6, con 35.951.822.704 parámetros totales y aproximadamente 3.000 millones de parámetros activos, según la información disponible sobre la familia Qwen3.6-35B-A3B.
+Albedo SN97 scrub candidate (CXXII vision-gate 80/20) es un modelo experimental derivado de `dendriteholdings/albedo-qwen3.6-35b-king-CXXII`, publicado por el usuario JMaxCool en Hugging Face. Se trata de un modelo de tipo Mixture-of-Experts (MoE) basado en la arquitectura Qwen3.5/3.6, con 35.951.822.704 parámetros totales y aproximadamente 3.000 millones de parámetros activos, según la información disponible sobre la familia Qwen3.6-35B-A3B.
 
 El modelo forma parte de una serie de experimentos de "scrubbing" (poda selectiva de tensores) que el autor realiza sobre modelos base de Qwen. En esta variante concreta, se han eliminado 63 de 1045 tensores, de los cuales 50 corresponden a la torre de visión (79,4%) y 13 al router `mlp.gate` (20,6%). El objetivo declarado es evaluar el impacto de la poda selectiva en la similitud de huellas digitales (fingerprint similarity esperada de 0,939713 frente al modelo original CXXII).
 
@@ -80,7 +80,7 @@ La comparativa muestra que este modelo es una variante experimental de Qwen3.6-3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxxii-vision-gate-v1
+- Modelo en Hugging Face: https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxxii-vision-gate-v1
 - Variante router-shared: https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxxii-router-shared-v1
 - Variante dpo-verified: https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxiv-dpo-verified-v1
 - Documentación de Qwen3.6 (lmstudio.ai): https://lmstudio.ai/models/qwen3.6

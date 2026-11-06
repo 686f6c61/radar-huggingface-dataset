@@ -79,10 +79,10 @@ Con el transformer q6, el tiempo por paso es similar (9,67 y 29,3 s) y la memori
 
 | Modelo | Parámetros | Contexto / resolución | Backend | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chroma1-HD MLX (este port) | 8,9 B (q4/q6) | hasta 1024×1024 | MLX (Apple Silicon) | Apache 2.0 | HuggingFace, 0 descargas |
-| lodestones/Chroma1-HD (base) | 8,9 B | hasta 1024×1024 | PyTorch/diffusers | Apache 2.0 | HuggingFace |
-| silveroxides/Chroma1-HD-GGUF | 8,9 B (Q6_K, 7,65 GB) | hasta 1024×1024 | llama.cpp/GGUF | Apache 2.0 | HuggingFace |
-| FLUX.1-schnell (origen arquitectónico) | ~12 B | hasta 1024×1024 | PyTorch/diffusers | Apache 2.0 | HuggingFace |
+| Chroma1-HD MLX (este port) | 8,9 B (q4/q6) | hasta 1024×1024 | MLX (Apple Silicon) | Apache 2.0 | Hugging Face, 0 descargas |
+| lodestones/Chroma1-HD (base) | 8,9 B | hasta 1024×1024 | PyTorch/diffusers | Apache 2.0 | Hugging Face |
+| silveroxides/Chroma1-HD-GGUF | 8,9 B (Q6_K, 7,65 GB) | hasta 1024×1024 | llama.cpp/GGUF | Apache 2.0 | Hugging Face |
+| FLUX.1-schnell (origen arquitectónico) | ~12 B | hasta 1024×1024 | PyTorch/diffusers | Apache 2.0 | Hugging Face |
 
 La comparativa se limita al ecosistema Chroma/FLUX porque no se dispone de datos de benchmarks estándar frente a otros modelos de imagen en la información proporcionada.
 
@@ -101,7 +101,7 @@ La comparativa se limita al ecosistema Chroma/FLUX porque no se dispone de datos
 
 ## Enlaces
 
-- HuggingFace del port: https://huggingface.co/tillknuesting/chroma1-hd-mlx
+- Hugging Face del port: https://huggingface.co/tillknuesting/chroma1-hd-mlx
 - Modelo base: https://huggingface.co/lodestones/Chroma1-HD
 - GGUF de referencia usado en la comparativa: https://huggingface.co/silveroxides/Chroma1-HD-GGUF
 - Paper citado en tags (arXiv:2407.12173): https://arxiv.org/abs/2407.12173

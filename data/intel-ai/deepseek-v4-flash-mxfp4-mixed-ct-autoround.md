@@ -101,7 +101,7 @@ No se dispone en la informacion proporcionada de datos sobre otras alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/intel-ai/DeepSeek-V4-Flash-MXFP4-Mixed-CT-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/intel-ai/DeepSeek-V4-Flash-MXFP4-Mixed-CT-AutoRound
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Repositorio Intel AutoRound: https://github.com/intel/auto-round
 - PR de AutoRound para la generacion del modelo: https://github.com/intel/auto-round/pull/1921

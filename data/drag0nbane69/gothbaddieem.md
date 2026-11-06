@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GothBaddieEm es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario drag0nbane69, etiquetado con la librería `diffusers` y diseñado para funcionar sobre el modelo base black-forest-labs/FLUX.1-schnell. Se trata, por tanto, de un ajuste ligero de pesos orientado a la generación de imágenes a partir de texto (pipeline `text-to-image`), no de un modelo completo con pesos propios: el adaptador modifica el comportamiento del modelo base al que se acopla, pero no puede ejecutarse de forma autónoma.
+GothBaddieEm es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario drag0nbane69, etiquetado con la librería `diffusers` y diseñado para funcionar sobre el modelo base black-forest-labs/FLUX.1-schnell. Se trata, por tanto, de un ajuste ligero de pesos orientado a la generación de imágenes a partir de texto (pipeline `text-to-image`), no de un modelo completo con pesos propios: el adaptador modifica el comportamiento del modelo base al que se acopla, pero no puede ejecutarse de forma autónoma.
 
 El repositorio no incluye documentación técnica, ficha de modelo, dataset de entrenamiento ni ejemplos de uso. La información disponible se limita a las etiquetas del repositorio, la licencia marcada como desconocida (`license:unknown`) y los contadores públicos de interacción, que en el momento de la consulta eran de 0 descargas y 0 "likes". Esto lo sitúa como un artefacto sin validación comunitaria ni trazabilidad de calidad.
 
@@ -78,10 +78,10 @@ No se han identificado en la información proporcionada otros adaptadores de la 
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GothBaddieEm | LoRA sobre FLUX.1-schnell | no disponible | no aplica | `license:unknown` (no disponible) | HuggingFace, 0 descargas |
-| FLUX.1-schnell | Transformer de flujo rectificado | 12 000 millones aprox. (segun documentacion publica del modelo base) | Generacion de imagenes; no aplica contexto de texto | Apache 2.0 (segun su ficha publica) | HuggingFace, ampliamente distribuido |
-| FLUX.1-dev | Transformer de flujo rectificado | 12 000 millones aprox. (segun documentacion publica) | Generacion de imagenes | Licencia no comercial de FLUX.1 [dev] (segun su ficha publica) | HuggingFace |
-| SDXL | UNet de difusion | 3500 millones aprox. (segun documentacion publica) | Generacion de imagenes | CreativeML Open RAIL++-M (segun su ficha publica) | HuggingFace |
+| GothBaddieEm | LoRA sobre FLUX.1-schnell | no disponible | no aplica | `license:unknown` (no disponible) | Hugging Face, 0 descargas |
+| FLUX.1-schnell | Transformer de flujo rectificado | 12 000 millones aprox. (segun documentacion publica del modelo base) | Generacion de imagenes; no aplica contexto de texto | Apache 2.0 (segun su ficha publica) | Hugging Face, ampliamente distribuido |
+| FLUX.1-dev | Transformer de flujo rectificado | 12 000 millones aprox. (segun documentacion publica) | Generacion de imagenes | Licencia no comercial de FLUX.1 [dev] (segun su ficha publica) | Hugging Face |
+| SDXL | UNet de difusion | 3500 millones aprox. (segun documentacion publica) | Generacion de imagenes | CreativeML Open RAIL++-M (segun su ficha publica) | Hugging Face |
 
 Nota: los datos de los modelos comparados provienen de su documentación pública y no han sido verificados en el repositorio analizado. No existe información sobre el rendimiento relativo del adaptador GothBaddieEm.
 
@@ -100,7 +100,7 @@ Nota: los datos de los modelos comparados provienen de su documentación públic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/drag0nbane69/GothBaddieEm
+- Repositorio Hugging Face: https://huggingface.co/drag0nbane69/GothBaddieEm
 - Modelo base declarado (black-forest-labs/FLUX.1-schnell): https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - Documentación de la librería diffusers: https://huggingface.co/docs/diffusers
 

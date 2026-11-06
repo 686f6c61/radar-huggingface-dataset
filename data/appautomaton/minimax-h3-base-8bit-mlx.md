@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/appautomaton/minimax-h3-base-8bit-mlx
+- Repositorio Hugging Face: https://huggingface.co/appautomaton/minimax-h3-base-8bit-mlx
 - Modelo original MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Runtime mlx-h3 en PyPI: https://pypi.org/project/mlx-h3/
 - Código fuente en GitHub: https://github.com/appautomaton/mlx-h3

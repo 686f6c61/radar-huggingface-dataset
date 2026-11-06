@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Corporate RAG Assistant 8B es una configuracion especializada de despliegue construida sobre meta-llama/Llama-3.1-8B-Instruct, publicada por el usuario kmatiasi en HuggingFace. No se presenta como un modelo entrenado desde cero ni como un fine-tune con datos propios documentados, sino como un ajuste orientado a sistemas de generacion aumentada por recuperacion (RAG) en entornos corporativos: respuesta a consultas sobre bases de conocimiento internas, politicas de recursos humanos, procedimientos operativos normalizados y contratos legales.
+Corporate RAG Assistant 8B es una configuracion especializada de despliegue construida sobre meta-llama/Llama-3.1-8B-Instruct, publicada por el usuario kmatiasi en Hugging Face. No se presenta como un modelo entrenado desde cero ni como un fine-tune con datos propios documentados, sino como un ajuste orientado a sistemas de generacion aumentada por recuperacion (RAG) en entornos corporativos: respuesta a consultas sobre bases de conocimiento internas, politicas de recursos humanos, procedimientos operativos normalizados y contratos legales.
 
 El problema que intenta resolver es el de la fidelidad y la trazabilidad en asistentes empresariales: el modelo declara guardarrailes estrictos contra la alucinacion, de forma que solo responde con fragmentos de contexto verificados procedentes de documentos de la empresa, y adjunta citas con fuentes, numeros de pagina y codigos de politica. Se promociona como compatible con despliegue en servidores locales aislados (air-gapped) para cumplimiento de privacidad, conectado a bases de datos vectoriales como FAISS o ChromaDB.
 
@@ -85,7 +85,7 @@ La comparacion relevante es con el propio modelo base: este repositorio no docum
 - Ausencia total de benchmarks y de evaluacion de la tasa de alucinacion: las afirmaciones de la model card sobre guardarrailes estrictos no estan cuantificadas ni verificadas.
 - El ejemplo de codigo de la model card carga meta-llama/Llama-3.1-8B-Instruct, no los pesos del repositorio, lo que pone en duda que existan pesos diferenciados publicados.
 - Repositorio sin traccion: 0 descargas y 0 likes, sin issues ni discusion, lo que implica ausencia de validacion por parte de la comunidad.
-- Los metadatos de HuggingFace indican fechas de creacion y actualizacion de septiembre de 2026, anomalas respecto a la fecha de consulta, lo que sugiere datos inconsistentes en el repositorio.
+- Los metadatos de Hugging Face indican fechas de creacion y actualizacion de septiembre de 2026, anomalas respecto a la fecha de consulta, lo que sugiere datos inconsistentes en el repositorio.
 - Solo se declara soporte de ingles; no hay evidencia de capacidades multilingues efectivas en este ajuste, aunque el modelo base sea multilingue.
 - La licencia declarada es apache-2.0, pero al derivar de Llama 3.1 el uso comercial esta sujeto tambien a la Llama 3.1 Community License y a su politica de uso aceptable; conviene revisar ambas antes de un despliegue productivo.
 - No se publican artefactos cuantizados (GGUF, GPTQ, AWQ), lo que complica el despliegue en hardware de consumo sin trabajo adicional.
@@ -96,6 +96,6 @@ La comparacion relevante es con el propio modelo base: este repositorio no docum
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kmatiasi/corporate-rag-assistant-8b
+- Repositorio en Hugging Face: https://huggingface.co/kmatiasi/corporate-rag-assistant-8b
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo.

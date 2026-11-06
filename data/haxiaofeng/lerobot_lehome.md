@@ -68,7 +68,7 @@ No hay información sobre modelos comparables en la misma categoría. No se cono
 
 ## Enlaces
 
-- [HuggingFace: haxiaofeng/lerobot_lehome](https://huggingface.co/haxiaofeng/lerobot_lehome)
+- [Hugging Face: haxiaofeng/lerobot_lehome](https://huggingface.co/haxiaofeng/lerobot_lehome)
 - [Repositorio de archivos de pi05_lehome (relacionado)](https://huggingface.co/haxiaofeng/pi05_lehome/tree/main)
 - [GitHub: lehome-official/lehome](https://github.com/lehome-official/lehome)
 - [arXiv: LeHome: A Simulation Environment for Deformable Object ...](https://arxiv.org/abs/2604.22363)

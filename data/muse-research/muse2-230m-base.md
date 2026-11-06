@@ -84,6 +84,6 @@ Muse2 destaca por su arquitectura híbrida y su enfoque en edge, pero carece de 
 
 ## Enlaces
 
-- [HuggingFace - Muse2-230M-Base](https://huggingface.co/Muse-research/Muse2-230M-Base)
-- [HuggingFace - Muse2-230M (página general)](https://huggingface.co/Muse-research/Muse2-230M)
+- [Hugging Face - Muse2-230M-Base](https://huggingface.co/Muse-research/Muse2-230M-Base)
+- [Hugging Face - Muse2-230M (página general)](https://huggingface.co/Muse-research/Muse2-230M)
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

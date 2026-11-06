@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/subs-king/zils-mini-cerno-4b
+- Repositorio Hugging Face: https://huggingface.co/subs-king/zils-mini-cerno-4b
 - Modelo base: https://huggingface.co/apertixai/cerno-4b-v1.2
 - Revision del modelo base: `e14dec9894c5afb761f90926f1c19b19938a271c`
 - Torre de vision (Qwen3.5-4B): https://huggingface.co/Qwen/Qwen3.5-4B (revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`)

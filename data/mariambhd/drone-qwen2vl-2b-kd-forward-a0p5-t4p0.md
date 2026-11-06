@@ -70,9 +70,9 @@ Nota: el conjunto de test es pequeño (40 vídeos), por lo que cada vídeo repre
 
 | Modelo | Parámetros | Contexto | Accuracy (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2-VL-2B + LoRA KD) | 2B + LoRA | no disponible | 85,00% | no disponible | HuggingFace |
-| Profesor (Qwen2.5-VL-3B + LoRA) | 3B + LoRA | no disponible | 95,00% | no disponible | HuggingFace (`mariambhd/drone-qwen25vl-3b-lora-7class`) |
-| Qwen2-VL-2B-Instruct (base sin adaptador) | 2B | no disponible | no disponible | no disponible | HuggingFace |
+| Este adaptador (Qwen2-VL-2B + LoRA KD) | 2B + LoRA | no disponible | 85,00% | no disponible | Hugging Face |
+| Profesor (Qwen2.5-VL-3B + LoRA) | 3B + LoRA | no disponible | 95,00% | no disponible | Hugging Face (`mariambhd/drone-qwen25vl-3b-lora-7class`) |
+| Qwen2-VL-2B-Instruct (base sin adaptador) | 2B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de otros modelos comparables de la misma categoría (reconocimiento de acciones con drones) en la información proporcionada.
 
@@ -90,6 +90,6 @@ No se dispone de otros modelos comparables de la misma categoría (reconocimient
 
 ## Enlaces
 
-- [HuggingFace: mariambhd/drone-qwen2vl-2b-kd-forward-a0p5-T4p0](https://huggingface.co/mariambhd/drone-qwen2vl-2b-kd-forward-a0p5-T4p0)
+- [Hugging Face: mariambhd/drone-qwen2vl-2b-kd-forward-a0p5-T4p0](https://huggingface.co/mariambhd/drone-qwen2vl-2b-kd-forward-a0p5-T4p0)
 - [Modelo base: Qwen/Qwen2-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct)
 - [Profesor: mariambhd/drone-qwen25vl-3b-lora-7class](https://huggingface.co/mariambhd/drone-qwen25vl-3b-lora-7class)

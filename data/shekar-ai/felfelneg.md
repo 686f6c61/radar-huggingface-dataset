@@ -65,7 +65,7 @@ El entrenamiento se realizó sobre 4.290.735 pares en formato parquet procedente
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-La model card de HuggingFace no incluye métricas de evaluación (ni MTEB, ni resultados de recuperación, ni comparaciones numéricas con otros modelos) y los resultados de búsqueda web no aportan datos de rendimiento. Los únicos números publicados por el autor son los de la demostración de uso, que muestran puntuaciones de similitud coseno (por ejemplo, 0,8283 entre la consulta "کومروو در کدام منطقه..." y su pasaje correcto frente a 0,4887 con un pasaje no relacionado), pero se trata de un ejemplo ilustrativo, no de una evaluación sistemática.
+La model card de Hugging Face no incluye métricas de evaluación (ni MTEB, ni resultados de recuperación, ni comparaciones numéricas con otros modelos) y los resultados de búsqueda web no aportan datos de rendimiento. Los únicos números publicados por el autor son los de la demostración de uso, que muestran puntuaciones de similitud coseno (por ejemplo, 0,8283 entre la consulta "کومروو در کدام منطقه..." y su pasaje correcto frente a 0,4887 con un pasaje no relacionado), pero se trata de un ejemplo ilustrativo, no de una evaluación sistemática.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ La model card de HuggingFace no incluye métricas de evaluación (ni MTEB, ni re
 - GPU recomendadas: cualquier GPU moderna sirve. El modelo es sobredimensionado incluso para una GTX 1650 (4 GB) o una RTX 3060. Tarjetas como A100 o H100 solo tienen sentido para procesar lotes muy grandes en paralelo.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU de consumo y también en iGPU, así como en dispositivos de borde tipo Raspberry Pi 4 o 5.
 - Inferencia en CPU: totalmente viable. Es uno de los puntos fuertes del modelo, ya que no requiere acelerador para producir embeddings en tiempo razonable.
-- Opciones de despliegue: sentence-transformers (vía Python), HuggingFace Transformers, exportación a ONNX con Optimum, text-embeddings-inference y FastEmbed. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no son aplicables directamente.
+- Opciones de despliegue: sentence-transformers (vía Python), Hugging Face Transformers, exportación a ONNX con Optimum, text-embeddings-inference y FastEmbed. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no son aplicables directamente.
 - Latencia y throughput estimados: no disponibles. No se han publicado cifras oficiales de latencia ni de frases por segundo.
 - Advertencia sobre el repositorio: el repositorio ocupa 3,6 GB frente a los aproximadamente 48 MB que ocuparían los pesos del modelo, por lo que es previsible que contenga artefactos de entrenamiento adicionales. Conviene revisar el contenido antes de descargarlo completo.
 
@@ -103,13 +103,13 @@ Los datos de las alternativas provienen de sus respectivas model cards públicas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shekar-ai/felfelneg
+- Modelo en Hugging Face: https://huggingface.co/shekar-ai/felfelneg
 - Modelo base: https://huggingface.co/shekar-ai/FelfelSupPairs
-- Perfil del autor en HuggingFace: https://huggingface.co/shekar-ai
+- Perfil del autor en Hugging Face: https://huggingface.co/shekar-ai
 - Conjuntos de datos del autor: https://huggingface.co/shekar-ai/datasets
 - Documentación de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos de sentence-transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos de sentence-transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Matryoshka Representation Learning (arXiv:2205.13147): https://arxiv.org/abs/2205.13147
 - Aprendizaje eficiente de representaciones de frases (arXiv:1807.03748): https://arxiv.org/abs/1807.03748

@@ -4,7 +4,7 @@
 
 Pixal3D es un modelo de generación de activos 3D a partir de una única imagen, desarrollado por un equipo conjunto de la Universidad de Tsinghua (BNRist), Tencent ARC Lab y la Universidad Victoria de Wellington. El trabajo fue aceptado en SIGGRAPH 2026 y se distribuye bajo licencia MIT. Su principal innovación consiste en elevar explícitamente las características de píxeles de la imagen al espacio 3D mediante retroproyección (back-projection), estableciendo correspondencias directas píxel-a-3D, en lugar de inyectar características de imagen de forma laxa mediante mecanismos de atención como hacen los métodos anteriores. Esto permite una fidelidad cercana a la reconstrucción, con geometría detallada y texturas PBR.
 
-El modelo se entrena como una cascada de tres etapas que aumentan progresivamente la resolución: estructura dispersa (32→64), forma (256→512→1024) y textura (256→512→1024). Existen dos ramas principales: la rama `main`, basada en el backbone Trellis.2 de Microsoft, y la rama `paper`, que reproduce los resultados del artículo original basado en Direct3D-S2. El repositorio en HuggingFace tiene un tamaño de 24 GB e incluye código de inferencia, entrenamiento y un pipeline de tipo image-to-3d. No se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados en la información disponible.
+El modelo se entrena como una cascada de tres etapas que aumentan progresivamente la resolución: estructura dispersa (32→64), forma (256→512→1024) y textura (256→512→1024). Existen dos ramas principales: la rama `main`, basada en el backbone Trellis.2 de Microsoft, y la rama `paper`, que reproduce los resultados del artículo original basado en Direct3D-S2. El repositorio en Hugging Face tiene un tamaño de 24 GB e incluye código de inferencia, entrenamiento y un pipeline de tipo image-to-3d. No se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El entrenamiento se organiza en tres etapas en cascada, cada una con resolucione
 - Producción de texturas PBR (Physically Based Rendering) con geometría detallada.
 - Soporte de dos modos de inferencia: estándar (resolución 1536) y modo de baja VRAM (resolución 1024), con posibilidad de forzar la resolución manualmente.
 - Compatibilidad con backend de atención SDPA de PyTorch si no se dispone de `flash_attn`.
-- Incluye una demo web interactiva basada en Gradio alojada en HuggingFace Spaces.
+- Incluye una demo web interactiva basada en Gradio alojada en Hugging Face Spaces.
 - Proporciona código completo de entrenamiento y un toolkit de preparación de datos para reproducir el modelo desde cero.
 - Disponible en dos variantes: la rama `main` (basada en Trellis.2, con mejor rendimiento) y la rama `paper` (reproducción exacta de los resultados del artículo SIGGRAPH 2026).
 
@@ -54,8 +54,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - El repositorio tiene un tamaño de 24 GB, lo que sugiere que los pesos completos requieren al menos esa cantidad de almacenamiento.
 - Se ofrece un modo de baja VRAM que reduce el pico de memoria cargando los modelos bajo demanda, con una resolución por defecto de 1024 en lugar de 1536.
 - No se especifican GPUs concretas recomendadas, pero la dependencia de `natten` (atención vecinal) y `flash_attn` indica que se requiere una GPU NVIDIA con soporte CUDA.
-- El archivo `requirements-hfdemo.txt` está pensado para la arquitectura H-series de GPU en HuggingFace Spaces, lo que sugiere compatibilidad con GPUs como H100.
-- Opciones de despliegue: inferencia por línea de comandos (`inference.py`), demo web Gradio (`app.py`), y demo online alojada en HuggingFace Spaces.
+- El archivo `requirements-hfdemo.txt` está pensado para la arquitectura H-series de GPU en Hugging Face Spaces, lo que sugiere compatibilidad con GPUs como H100.
+- Opciones de despliegue: inferencia por línea de comandos (`inference.py`), demo web Gradio (`app.py`), y demo online alojada en Hugging Face Spaces.
 - No se proporcionan datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -73,11 +73,11 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inferenceport-ai/Pixal3D
+- Modelo en Hugging Face: https://huggingface.co/inferenceport-ai/Pixal3D
 - Repositorio oficial en GitHub: https://github.com/TencentARC/Pixal3D
 - Página del proyecto: https://ldyang694.github.io/projects/pixal3d/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/TencentARC/Pixal3D
-- Modelos oficiales en HuggingFace: https://huggingface.co/TencentARC/Pixal3D
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/TencentARC/Pixal3D
+- Modelos oficiales en Hugging Face: https://huggingface.co/TencentARC/Pixal3D
 - Artículo en arXiv: https://arxiv.org/abs/2605.10922
 - Sitio web no oficial de demostración: https://pixal3d.net/
 - Sitio web comercial de terceros: https://www.pixal3d.app/en

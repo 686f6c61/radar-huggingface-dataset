@@ -79,9 +79,9 @@ Las cifras de `benchmark_model` corresponden al delegado OpenCL clásico de TFLi
 
 | Modelo | Parámetros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Reranker-0.6B-LiteRT | 0,6 B | 256 tokens por par | `.tflite` LiteRT, GPU/NPU Android | Apache-2.0 | HuggingFace, 75 descargas |
-| Qwen3-Reranker-0.6B (base) | 0,6 B | según model card del original (no disponible aquí) | safetensors, PyTorch/Transformers | Apache-2.0 | HuggingFace |
-| Qwen3-Embedding-0.6B-LiteRT | 0,6 B | no disponible | `.tflite` LiteRT | Apache-2.0 | HuggingFace, misma comunidad |
+| Qwen3-Reranker-0.6B-LiteRT | 0,6 B | 256 tokens por par | `.tflite` LiteRT, GPU/NPU Android | Apache-2.0 | Hugging Face, 75 descargas |
+| Qwen3-Reranker-0.6B (base) | 0,6 B | según model card del original (no disponible aquí) | safetensors, PyTorch/Transformers | Apache-2.0 | Hugging Face |
+| Qwen3-Embedding-0.6B-LiteRT | 0,6 B | no disponible | `.tflite` LiteRT | Apache-2.0 | Hugging Face, misma comunidad |
 
 No se dispone de datos de benchmarks que permitan comparar la calidad de reordenación frente a alternativas de la misma categoría; la comparación anterior se limita a parámetros, formato, licencia y disponibilidad.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de reorden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Qwen3-Reranker-0.6B-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Qwen3-Reranker-0.6B-LiteRT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Embedder complementario: https://huggingface.co/litert-community/Qwen3-Embedding-0.6B-LiteRT
 - Tarjeta de compatibilidad edge: https://github.com/john-rocky/edge-compat/blob/main/cards/qwen3-reranker-0.6b/CARD.md

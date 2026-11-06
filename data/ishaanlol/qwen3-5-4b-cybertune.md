@@ -70,8 +70,8 @@ Estos datos son declarados por el autor y no han sido verificados de forma indep
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-cybertune | 4,66 B | 262 144 | Especialista en generación de malware (16 categorías) | Apache-2.0 | HuggingFace, GGUF |
-| Qwen3.5-4B (base) | 4,66 B | 262 144 | Propósito general, multimodal (visión + texto) | Apache-2.0 | HuggingFace, Ollama |
+| Qwen3.5-4B-cybertune | 4,66 B | 262 144 | Especialista en generación de malware (16 categorías) | Apache-2.0 | Hugging Face, GGUF |
+| Qwen3.5-4B (base) | 4,66 B | 262 144 | Propósito general, multimodal (visión + texto) | Apache-2.0 | Hugging Face, Ollama |
 | Otros modelos de ciberseguridad | No disponible | No disponible | No se dispone de datos fiables | No disponible | No disponible |
 
 El fine-tune se diferencia del modelo base en su especialización extrema: sacrifica la capacidad general de código y razonamiento para obtener una alta precisión en la generación de malware estáticamente válido. No se han encontrado comparativas públicas con otros modelos especializados en seguridad ofensiva (por ejemplo, ajustes de CodeLlama o Mistral para red team), por lo que la comparativa se limita al modelo base.
@@ -89,7 +89,7 @@ El fine-tune se diferencia del modelo base en su especialización extrema: sacri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ishaanlol/Qwen3.5-4B-cybertune
+- Modelo en Hugging Face: https://huggingface.co/Ishaanlol/Qwen3.5-4B-cybertune
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.5-4B
 - Modelo base (Qwen, referencia): https://huggingface.co/Qwen/Qwen3.5-4B
 - Página del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b

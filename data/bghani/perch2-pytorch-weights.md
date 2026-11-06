@@ -84,11 +84,11 @@ La diferencia principal frente a la distribucion oficial es la capacidad de entr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bghani/perch2-pytorch-weights
+- Repositorio Hugging Face: https://huggingface.co/bghani/perch2-pytorch-weights
 - Repositorio GitHub principal (perchv2-pytorch): https://github.com/bghani/perchv2-pytorch
 - Repositorio oficial de Perch de Google: https://github.com/google-research/perch
 - Pagina del modelo original en Kaggle: https://www.kaggle.com/models/google/bird-vocalization-classifier
 - Distribucion oficial ONNX: https://huggingface.co/justinchuby/Perch-onnx
 - Paper Perch 2.0 (arXiv:2508.04665): https://arxiv.org/html/2508.04665v1
 - PDF del paper: https://arxiv.org/pdf/2508.04665
-- Perch v1 en HuggingFace: https://huggingface.co/cgeorgiaw/Perch
+- Perch v1 en Hugging Face: https://huggingface.co/cgeorgiaw/Perch

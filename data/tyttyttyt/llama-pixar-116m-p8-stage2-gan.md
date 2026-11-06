@@ -70,10 +70,10 @@ LAMBADA por idioma para este modelo: en 4,6 / de 11,2 / es 4,6 / fr 4,8 / it 5,4
 
 | Modelo | Parámetros | Contexto | bAbI t1 (en) | LAMBADA (media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (etapa 2 GAN) | 113M | 1.024 bloques (entrenado en 180) | 7,8 | 6,1 | Apache 2.0 | HuggingFace |
-| llama-pixar-116m-p8 (etapa 1) | 113M | 1.024 bloques (entrenado en 180) | 11,4 | 6,0 | Apache 2.0 | HuggingFace |
-| llama-pixar-116m-p8-stage2 (GRPO) | 113M | 1.024 bloques (entrenado en 180) | 15,6 | 10,4 | Apache 2.0 | HuggingFace |
-| mgpt2-124m-mc4 (baseline con tokenizador) | 124M | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Este modelo (etapa 2 GAN) | 113M | 1.024 bloques (entrenado en 180) | 7,8 | 6,1 | Apache 2.0 | Hugging Face |
+| llama-pixar-116m-p8 (etapa 1) | 113M | 1.024 bloques (entrenado en 180) | 11,4 | 6,0 | Apache 2.0 | Hugging Face |
+| llama-pixar-116m-p8-stage2 (GRPO) | 113M | 1.024 bloques (entrenado en 180) | 15,6 | 10,4 | Apache 2.0 | Hugging Face |
+| mgpt2-124m-mc4 (baseline con tokenizador) | 124M | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ LAMBADA por idioma para este modelo: en 4,6 / de 11,2 / es 4,6 / fr 4,8 / it 5,4
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8-stage2-gan
+- Modelo en Hugging Face: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8-stage2-gan
 - Backbone de etapa 1: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8
 - Contrapartida con GRPO: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8-stage2
 - Variante 116M con parches 32x32: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p32

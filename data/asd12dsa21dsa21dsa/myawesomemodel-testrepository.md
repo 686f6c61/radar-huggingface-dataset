@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario asd12dsa21dsa21dsa en HuggingFace. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento y deducción mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El repositorio está etiquetado con licencia MIT y pipeline de *feature-extraction*, pero no incluye ningún peso ni archivo de modelo (tamaño 0.0 GB), lo que sugiere que se trata de un repositorio de prueba o placeholder.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario asd12dsa21dsa21dsa en Hugging Face. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento y deducción mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El repositorio está etiquetado con licencia MIT y pipeline de *feature-extraction*, pero no incluye ningún peso ni archivo de modelo (tamaño 0.0 GB), lo que sugiere que se trata de un repositorio de prueba o placeholder.
 
 El autor declara mejoras en tareas de matemáticas, programación y lógica, con un aumento en la precisión en AIME 2025 del 70% al 87,5%, así como una reducción de la tasa de alucinación y un mejor soporte para *function calling*. Sin embargo, no se proporcionan especificaciones técnicas concretas como arquitectura, número de parámetros o longitud de contexto, por lo que la información disponible es insuficiente para evaluar el modelo de forma rigurosa.
 
@@ -85,7 +85,7 @@ No se dispone de información suficiente para comparar MyAwesomeModel con otros 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no existe un modelo descargable ni funcional.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no existe un modelo descargable ni funcional.
 - La model card es genérica y no proporciona detalles técnicos verificables (arquitectura, parámetros, contexto, datos de entrenamiento).
 - Los resultados de benchmarks son declaraciones del autor sin metodología publicada ni verificación independiente.
 - No se especifican sesgos, limitaciones de idioma ni riesgos de alucinación concretos, aunque el autor menciona una "reducción de la tasa de alucinación" sin datos cuantitativos.
@@ -94,7 +94,7 @@ No se dispone de información suficiente para comparar MyAwesomeModel con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asd12dsa21dsa21dsa/MyAwesomeModel-TestRepository
+- Repositorio Hugging Face: https://huggingface.co/asd12dsa21dsa21dsa/MyAwesomeModel-TestRepository
 - Repositorio similar (sfsfff22): https://huggingface.co/sfsfff22/MyAwesomeModel-TestRepository
 - Repositorio similar (asd12dsa21dsa21dsa, TestRepo): https://huggingface.co/asd12dsa21dsa21dsa/MyAwesomeModel-TestRepo
 - Leaderboard de LLMs (referencia externa, no relacionada directamente): https://llm-stats.com/leaderboards/llm-leaderboard

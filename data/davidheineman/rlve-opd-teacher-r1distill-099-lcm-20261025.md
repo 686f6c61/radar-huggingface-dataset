@@ -109,7 +109,7 @@ La diferencia clave frente a las alternativas no es el rendimiento bruto, sino e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-099-LCM-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-099-LCM-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de Weights & Biases del entrenamiento: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/ca930063
 - Grupo del experimento en W&B: `data-scaling-v1-n128-20261022-225839`

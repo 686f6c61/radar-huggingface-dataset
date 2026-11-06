@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SinhalaMMLU-SharedTask/team-zeroShot | Puntuador de opciones (LoRA + cabeza sobre Gemma 4 recortado) | ≈4,64 B en inferencia | no disponible | si | gemma | Público en HuggingFace, código y predicciones incluidos |
-| Lalaa-a/gemma4-8b-text-only | Modelo generativo decoder-only (Gemma 4 sin torres de visión/audio) | no disponible (la nomenclatura del nombre sugiere ~8 B) | no disponible | no disponible | gemma | Público en HuggingFace |
-| google/gemma-4-E4B-it | Modelo generativo multimodal instruido (visión y audio incluidos) | no disponible (la nomenclatura E4B sugiere ~4 B efectivos) | no disponible | no disponible | gemma | Público en HuggingFace |
+| SinhalaMMLU-SharedTask/team-zeroShot | Puntuador de opciones (LoRA + cabeza sobre Gemma 4 recortado) | ≈4,64 B en inferencia | no disponible | si | gemma | Público en Hugging Face, código y predicciones incluidos |
+| Lalaa-a/gemma4-8b-text-only | Modelo generativo decoder-only (Gemma 4 sin torres de visión/audio) | no disponible (la nomenclatura del nombre sugiere ~8 B) | no disponible | no disponible | gemma | Público en Hugging Face |
+| google/gemma-4-E4B-it | Modelo generativo multimodal instruido (visión y audio incluidos) | no disponible (la nomenclatura E4B sugiere ~4 B efectivos) | no disponible | no disponible | gemma | Público en Hugging Face |
 
 No se dispone de datos sobre otros sistemas presentados a la misma tarea compartida, por lo que no es posible una comparación de rendimiento entre participantes.
 

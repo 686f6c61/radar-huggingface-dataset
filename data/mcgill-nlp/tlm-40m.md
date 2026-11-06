@@ -71,7 +71,7 @@ No se dispone de comparaciones publicadas con otros modelos de la misma categor√
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/McGill-NLP/TLM-40M
+- Hugging Face: https://huggingface.co/McGill-NLP/TLM-40M
 - Repositorio de c√≥digo (permutation-alignment): https://github.com/charbel08/permutation-alignment
 - Repositorio del grupo (tiered-language-models): https://github.com/McGill-NLP/tiered-language-models
 - Paper de la escalera DataDecide: https://arxiv.org/abs/2504.11393

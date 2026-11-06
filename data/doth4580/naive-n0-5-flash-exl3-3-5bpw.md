@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Naive-N0.5-Flash-EXL3-3.5bpw es una cuantizacion del modelo Naive-N0.5-Flash (desarrollado por el equipo NaiveAI) publicada por el usuario doth4580 en HuggingFace. Se trata de un modelo de lenguaje de tipo mezcla de expertos (MoE) con 309.000 millones de parametros totales y 15.500 millones de parametros activos por token, con una ventana de contexto nativa de 1.048.576 tokens. El artefacto no es un modelo nuevo, sino un empaquetado de pesos modificados mediante cuantizacion EXL3 (trellis de ExLlamaV3) a 3,5 bits por peso de media, lo que reduce el peso en disco desde los ~315 GB del original en FP8 hasta aproximadamente 137 GB.
+Naive-N0.5-Flash-EXL3-3.5bpw es una cuantizacion del modelo Naive-N0.5-Flash (desarrollado por el equipo NaiveAI) publicada por el usuario doth4580 en Hugging Face. Se trata de un modelo de lenguaje de tipo mezcla de expertos (MoE) con 309.000 millones de parametros totales y 15.500 millones de parametros activos por token, con una ventana de contexto nativa de 1.048.576 tokens. El artefacto no es un modelo nuevo, sino un empaquetado de pesos modificados mediante cuantizacion EXL3 (trellis de ExLlamaV3) a 3,5 bits por peso de media, lo que reduce el peso en disco desde los ~315 GB del original en FP8 hasta aproximadamente 137 GB.
 
 La relevancia de este artefacto es puramente practica: un modelo MoE de 309B con contexto de un millon de tokens no cabe en hardware convencional, y esta cuantizacion es lo que permite ejecutarlo en un par de maquinas con memoria unificada de 128 GB (por ejemplo, 2x DGX Spark GB10) mediante vLLM con el plugin out-of-tree vllm-exl3 y ExLlamaV3. El modelo hereda la licencia MIT del original, lo que facilita su uso comercial, pero requiere toolchain especifico: ni transformers ni vLLM estandar pueden cargar los pesos EXL3.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada para inferencia: el pack ocupa ~137 GB en disco en 24 shards (la ficha de HuggingFace reporta un tamano de repositorio de 87,6 GB; existe una discrepancia entre ambos datos). Para inferencia se necesita capacidad equivalente o superior, distribuida entre dispositivos.
+- VRAM/memoria estimada para inferencia: el pack ocupa ~137 GB en disco en 24 shards (la ficha de Hugging Face reporta un tamano de repositorio de 87,6 GB; existe una discrepancia entre ambos datos). Para inferencia se necesita capacidad equivalente o superior, distribuida entre dispositivos.
 - Hardware validado: 2x DGX Spark (GB10) con memoria unificada de 128 GB por nodo, en dos nodos, con TP=2 + EP=2 sobre Ray, `--gpu-memory-utilization 0.80`, `--max-model-len 131072`, `--max-num-seqs 1`, `--dtype bfloat16`, backend MoE `triton`.
 - No cabe en GPU de consumo: el tamano de pesos (~137 GB) excede la memoria de cualquier GPU consumer actual (RTX 4090 con 24 GB, etc.). Se necesita hardware con >100 GB agregados y soporte para paralelismo tensorial y de expertos.
 - Cuantizacion/carga: para producir la cuantizacion se usaron 8x H100, pero eso corresponde al proceso de cuantizacion, no al de inferencia.
@@ -94,12 +94,12 @@ La ventaja del artefacto es la reduccion de tamano (de ~315 GB a ~137 GB) a camb
 - Riesgo de alucinacion: inherente a los modelos generativos; no hay evaluaciones de factualidad publicadas para este artefacto.
 - Restriccion practica de hardware: no es ejecutable en GPU de consumo ni en nodos unicos de 80 GB; requiere memoria agregada de mas de 100 GB y paralelismo TP/EP.
 - Licencia: MIT, heredada del modelo original, permite uso comercial, pero el artefacto contiene pesos modificados por cuantizacion y el aviso de copyright del autor original debe conservarse.
-- Inconsistencia de tamano: HuggingFace reporta 87,6 GB de repositorio mientras la model card indica ~137 GB en disco; conviene verificar el contenido real del repositorio antes de planificar el despliegue.
+- Inconsistencia de tamano: Hugging Face reporta 87,6 GB de repositorio mientras la model card indica ~137 GB en disco; conviene verificar el contenido real del repositorio antes de planificar el despliegue.
 - Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y actualizacion el 2026-09-28; se trata de un artefacto reciente y poco validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doth4580/Naive-N0.5-Flash-EXL3-3.5bpw
+- Modelo en Hugging Face: https://huggingface.co/doth4580/Naive-N0.5-Flash-EXL3-3.5bpw
 - Modelo original: https://huggingface.co/NaiveAI/Naive-N0.5-Flash
 - Fuente directa FP8: https://huggingface.co/NaiveAI/Naive-N0.5-Flash-FP8
 - Drafter para decodificacion especulativa: https://huggingface.co/NaiveAI/Naive-N0.5-Flash-FP8-Draft

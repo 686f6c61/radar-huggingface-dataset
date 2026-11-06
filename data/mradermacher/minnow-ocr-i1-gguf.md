@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Minnow-OCR-I1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Minnow-OCR-I1-GGUF
 - Modelo base: https://huggingface.co/KiteFishAI/Nano-OCR-1B
 - Página de descargas de mradermacher: https://hf.tst.eu/model#Minnow-OCR-I1-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -118,7 +118,7 @@ No hay benchmarks publicados que permitan comparar el rendimiento de este modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Orythos-9B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Orythos-9B-i1-GGUF
 - Modelo base: https://huggingface.co/CloudGoat/Orythos-9B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Orythos-9B-GGUF
 - Pagina de resumen y listado de descargas del cuantizador: https://hf.tst.eu/model#Orythos-9B-i1-GGUF

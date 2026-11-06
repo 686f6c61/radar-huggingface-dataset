@@ -105,7 +105,7 @@ La comparativa relevante se limita al modelo base y a sus cuantizaciones estanda
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/at8888888/Qwen3.5-0.8B-Lloyd-6bit-QWQ
+- Modelo en Hugging Face: https://huggingface.co/at8888888/Qwen3.5-0.8B-Lloyd-6bit-QWQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Coleccion Qwen3.5: https://huggingface.co/collections/Qwen/qwen35
 - Recetas de vLLM para Qwen3.5-0.8B: https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B

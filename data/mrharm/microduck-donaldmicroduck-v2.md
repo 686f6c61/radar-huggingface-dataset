@@ -6,7 +6,7 @@
 
 El modelo consume una observación de 61 dimensiones y emite 14 acciones a 50 Hz, es decir, un bucle de control con un presupuesto de 20 ms por paso. El normalizador de observaciones está incorporado dentro del propio ONNX, de modo que la política espera observaciones en crudo. Se entrenó con aprendizaje por refuerzo sobre la tarea `Mjlab-RollerSprint2m-MicroDuck` (un esprint de 2 metros sobre rodillos), partiendo de `mjlab-microduck 0.1.0`.
 
-Su relevancia es acotada pero concreta: forma parte de un ecosistema abierto de robótica (hardware microduck, repositorio de retos y pipeline de entrenamiento reproducible) y sirve como ejemplo de extremo a extremo de sim-to-real con exportación a ONNX. El repositorio de HuggingFace registra 0 descargas y 0 likes, y no declara licencia, idiomas ni número de parámetros.
+Su relevancia es acotada pero concreta: forma parte de un ecosistema abierto de robótica (hardware microduck, repositorio de retos y pipeline de entrenamiento reproducible) y sirve como ejemplo de extremo a extremo de sim-to-real con exportación a ONNX. El repositorio de Hugging Face registra 0 descargas y 0 likes, y no declara licencia, idiomas ni número de parámetros.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia es acotada pero concreta: forma parte de un ecosistema abierto de 
 | Frecuencia de control | 50 Hz (presupuesto de 20 ms por paso) |
 | Tarea de entrenamiento | `Mjlab-RollerSprint2m-MicroDuck` |
 | Checkpoint / semilla | checkpoint `2250`, semilla `6969` |
-| Tamano del repositorio | 0,0 GB (según HuggingFace) |
+| Tamano del repositorio | 0,0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ No se dispone de datos públicos de rendimiento de políticas comparables en la 
 
 | Modelo | Parametros | Contexto / observacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-donaldmicroduck-v2 | no disponible | 61-D de observación, 14 acciones, 50 Hz | no disponible ("ligeramente mejor" sin cifras) | no disponible | HuggingFace, 0 descargas |
+| microduck-donaldmicroduck-v2 | no disponible | 61-D de observación, 14 acciones, 50 Hz | no disponible ("ligeramente mejor" sin cifras) | no disponible | Hugging Face, 0 descargas |
 | Otras políticas de microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Políticas de locomoción de otros cuadrúpedos o robots con ruedas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos públicos de rendimiento de políticas comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrharm/microduck-donaldmicroduck-v2
+- Modelo en Hugging Face: https://huggingface.co/mrharm/microduck-donaldmicroduck-v2
 - Robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Esquema del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck (citado en la model card; URL completa no disponible)

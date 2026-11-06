@@ -88,7 +88,7 @@ Otras alternativas de la misma categoria de tamano (~1-2B) incluyen Gemma 2 2B y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-2-0425-1b-dpo-sft-td-unmixed-lr-1e-5
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-2-0425-1b-dpo-sft-td-unmixed-lr-1e-5
 - Coleccion New Cake Bake Olmo2-1B: https://huggingface.co/collections/model-organisms-for-real/new-cake-bake-olmo2-1b
 - Coleccion Cake Baking Olmo2-1B: https://huggingface.co/collections/model-organisms-for-real/cake-baking-olmo2-1b
 - Repositorio GitHub model-organism-lottery: https://github.com/model-organisms-for-real/model-organism-lottery

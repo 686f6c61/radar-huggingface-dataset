@@ -4,7 +4,7 @@
 
 El repositorio `davidwdw/fa-log-task00-centre-full-hourly-b2265bf33ec9-02c6b094314c` no es un modelo de lenguaje entrenado, sino un archivo versionado de flota (*versioned fleet archive*) publicado por el usuario `davidwdw`. La propia model card lo describe como una instantanea de una revision concreta, con la receta canonica registrada en `evaluations/2026-09-23_task00_centre_full_recovery`, y advierte explicitamente de que se trata de un *snapshot* y no de un espejo vivo de un directorio. El identificador incluye el sufijo `hourly`, lo que sugiere una cadencia de publicacion horaria y un conjunto de artefactos serializados por tarea (`task00`, `centre`, `full`).
 
-No hay informacion publica sobre arquitectura, parametros, tokenizador, pesos ni proceso de entrenamiento, y los tags de HuggingFace se reducen a `region:us`. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no declara licencia, idiomas ni pipeline. Por tanto, cualquier evaluacion como modelo de IA generativa carece de base documental: lo unico verificable es su funcion como paquete de trazabilidad.
+No hay informacion publica sobre arquitectura, parametros, tokenizador, pesos ni proceso de entrenamiento, y los tags de Hugging Face se reducen a `region:us`. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no declara licencia, idiomas ni pipeline. Por tanto, cualquier evaluacion como modelo de IA generativa carece de base documental: lo unico verificable es su funcion como paquete de trazabilidad.
 
 Su relevancia es, por tanto, de tipo operativo y no algorimico: sirve para reproducir un estado concreto de un pipeline de evaluacion o de generacion de logs, permitiendo verificar integridad mediante `SHA256SUMS` y fijar una revision exacta en lugar de depender de un directorio mutable. La busqueda web asociada no devolvio resultados tecnicos relacionados con el artefacto.
 
@@ -74,7 +74,7 @@ No disponible. No se conocen modelos comparables porque el artefacto no se prese
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-b2265bf33ec9-02c6b094314c
+- Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-b2265bf33ec9-02c6b094314c
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (referencia textual, sin URL publica disponible)
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada
 - Resultados de busqueda web: no relevantes para este artefacto

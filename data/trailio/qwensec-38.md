@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks cuantitativos (MMLU, HumanEval, GSM
 - Entrenamiento: realizado en una única NVIDIA RTX PRO 6000 (Blackwell, 96GB) en la nube (RunPod), con duración de minutos a pocas horas.
 - Despliegue compatible con transformers (attention implementation `sdpa`), vLLM y TGI por ser un modelo estándar de la familia Qwen.
 - El adaptador LoRA original ocupa ~470MB; el modelo fusionado en bf16 ocupa ~56GB en shards.
-- El repositorio en HuggingFace ocupa 18.9GB, consistente con pesos en cuantización 8-bit.
+- El repositorio en Hugging Face ocupa 18.9GB, consistente con pesos en cuantización 8-bit.
 
 ## Comparativa con modelos similares
 
@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks comparativos con otros modelos especializad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trailio/QwenSec-38
+- Modelo en Hugging Face: https://huggingface.co/trailio/QwenSec-38
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Adapter LoRA (versión separada, ~470MB): https://huggingface.co/<your-username>/qwen3.8-27b-traili-cve (referenciado en la model card, no verificado)

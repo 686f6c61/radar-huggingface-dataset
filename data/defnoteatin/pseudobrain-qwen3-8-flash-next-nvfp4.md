@@ -88,7 +88,7 @@ La comparativa se limita a las otras ediciones de precisión del mismo autor, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.8-Flash-Next-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.8-Flash-Next-NVFP4
 - Repositorio GitHub del autor (plugin `pb27_vllm`): https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md

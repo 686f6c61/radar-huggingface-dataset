@@ -84,8 +84,8 @@ Estos datos son comprobaciones de regresión con muestras muy pequeñas, no resu
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Accio-Lab/occamy-1.0 (BF16) | ~19 B (mismo repo base) | BF16 | no disponible | Apache 2.0 | HuggingFace |
-| Accio-Lab/occamy-1.0-NVFP4 (este) | 19.001.054.576 | NVFP4 en expertos + BF16 en el resto | no disponible | Apache 2.0 | HuggingFace; requiere hardware y kernels compatibles con NVFP4 |
+| Accio-Lab/occamy-1.0 (BF16) | ~19 B (mismo repo base) | BF16 | no disponible | Apache 2.0 | Hugging Face |
+| Accio-Lab/occamy-1.0-NVFP4 (este) | 19.001.054.576 | NVFP4 en expertos + BF16 en el resto | no disponible | Apache 2.0 | Hugging Face; requiere hardware y kernels compatibles con NVFP4 |
 | Qwen3.6-35B-A3B (base declarado) | 35 B totales / 3 B activos según nomenclatura, sin verificar | BF16 | no disponible | Apache 2.0 según la model card | no disponible |
 | Cuantización NVFP4 oficial de NVIDIA del Qwen original | no disponible | NVFP4 | no disponible | no disponible | mencionada en la model card, sin identificador ni enlace |
 
@@ -109,7 +109,7 @@ No se dispone de resultados de benchmarks comparativos entre estas variantes, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Accio-Lab/occamy-1.0-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Accio-Lab/occamy-1.0-NVFP4
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Dataset de calibración: https://huggingface.co/datasets/abisee/cnn_dailymail
 - Herramienta de cuantización mencionada (NVIDIA Model Optimizer): https://github.com/NVIDIA/TensorRT-Model-Optimizer

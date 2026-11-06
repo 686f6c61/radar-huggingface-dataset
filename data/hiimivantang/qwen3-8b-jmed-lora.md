@@ -82,8 +82,8 @@ La comparación con GPT-6.1-sol se añadió el 2026-10-30, después de conocerse
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qwen3-8b-jmed-lora | LoRA sobre Qwen3-8B | 8.000 M (base) | no disponible | F1 estricto 0,997 (A), macro-F1 0,988 (B), 94 % registros completos (C) en sintético | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen3-8B base | Transformer denso | 8.000 M | no disponible | F1 estricto 0,951 (A), macro-F1 0,622 (B), 35 % registros completos (C) | Apache 2.0 | HuggingFace |
+| qwen3-8b-jmed-lora | LoRA sobre Qwen3-8B | 8.000 M (base) | no disponible | F1 estricto 0,997 (A), macro-F1 0,988 (B), 94 % registros completos (C) en sintético | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen3-8B base | Transformer denso | 8.000 M | no disponible | F1 estricto 0,951 (A), macro-F1 0,622 (B), 35 % registros completos (C) | Apache 2.0 | Hugging Face |
 | GPT-4.1 | Propietario | no disponible | no disponible | F1 estricto 0,962 (A), macro-F1 0,711 (B), 36 % registros completos (C) | Propietaria | API |
 | GPT-6.1-sol | Propietario | no disponible | no disponible | F1 estricto 0,949 (A), macro-F1 0,761 (B), 74 % registros completos (C) | Propietaria | API |
 
@@ -106,7 +106,7 @@ Los dos modelos propietarios se evaluaron con el mismo prompt y el mismo conjunt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hiimivantang/qwen3-8b-jmed-lora
+- Modelo en Hugging Face: https://huggingface.co/hiimivantang/qwen3-8b-jmed-lora
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Revisión del base requerida: `b968826d9c46dd6066d109eabc6255188de91218`
 - Repositorio PEFT: https://github.com/huggingface/peft

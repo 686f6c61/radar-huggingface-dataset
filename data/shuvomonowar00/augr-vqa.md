@@ -42,7 +42,7 @@ La arquitectura exacta del modelo no se detalla en la información proporcionada
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona que se reportan métricas de Accuracy y F1 en el paper asociado, pero no se proporcionan valores concretos en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. La model card menciona que se reportan métricas de Accuracy y F1 en el paper asociado, pero no se proporcionan valores concretos en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -63,7 +63,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/shuvomonowar00/AUGR-VQA
+- Repositorio de Hugging Face: https://huggingface.co/shuvomonowar00/AUGR-VQA
 - Código fuente en GitHub: https://github.com/shuvomonowar00/AUGR-VQA
 - Dataset de texto BTUMQA: https://huggingface.co/datasets/shuvomonowar00/BTUMQA
 - Dataset de imágenes BraTS 2021 2D (Kaggle): https://www.kaggle.com/datasets/snish9/rsnabrats20212d

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sl-ivory es un modelo publicado por el usuario Tohirju en HuggingFace, construido a partir de google/gemma-4-E4B-it mediante un proceso de adaptacion etiquetado como LoRA y continual-pretraining sobre tayiko (codigo de idioma tg). Las etiquetas del repositorio lo situan explicitamente en el ambito de Asia Central, lo que lo convierte en un intento de adaptar un modelo base instruccional de la familia Gemma a una lengua de bajos recursos con representacion limitada en los corpus web mayoritarios.
+sl-ivory es un modelo publicado por el usuario Tohirju en Hugging Face, construido a partir de google/gemma-4-E4B-it mediante un proceso de adaptacion etiquetado como LoRA y continual-pretraining sobre tayiko (codigo de idioma tg). Las etiquetas del repositorio lo situan explicitamente en el ambito de Asia Central, lo que lo convierte en un intento de adaptar un modelo base instruccional de la familia Gemma a una lengua de bajos recursos con representacion limitada en los corpus web mayoritarios.
 
-El repositorio tiene un tamano de 19,7 GB, esta sujeto a acceso restringido (gated, requiere aceptar condiciones en HuggingFace) y se distribuye bajo los terminos de licencia Gemma. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no incluye informacion publica sobre pipeline, numero de parametros, longitud de contexto ni composicion del dataset de entrenamiento.
+El repositorio tiene un tamano de 19,7 GB, esta sujeto a acceso restringido (gated, requiere aceptar condiciones en Hugging Face) y se distribuye bajo los terminos de licencia Gemma. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no incluye informacion publica sobre pipeline, numero de parametros, longitud de contexto ni composicion del dataset de entrenamiento.
 
 Su relevancia es, por tanto, la de un artefacto de investigacion en fase temprana: resulta interesante para quien trabaje en NLP de lenguas turquicas y de Asia Central, pero no dispone de evaluaciones publicadas, ni de documentacion tecnica detallada, ni de validacion por parte de terceros. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.
 
@@ -91,14 +91,14 @@ La comparacion de rendimiento en tayiko entre estos modelos y sl-ivory no esta d
 - Cobertura idiomatica limitada: aunque el modelo base es multilingue, el ajuste se orienta a tayiko; el rendimiento en otros idiomas puede degradarse respecto al modelo original.
 - Longitud de contexto desconocida: sin este dato no es posible garantizar el comportamiento en conversaciones largas o documentos extensos.
 - Estado del modelo y validacion externa: 0 descargas y 0 "likes" implican que no ha sido probado por terceros; no debe considerarse un artefacto estable para produccion.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier integracion automatizada.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier integracion automatizada.
 - Licencia Gemma: el uso comercial esta sujeto a los terminos de uso de Gemma de Google, que incluyen obligaciones de atribucion y una politica de uso aceptable; es imprescindible revisarlos antes de cualquier despliegue comercial.
 - Formato unico: solo se distribuyen pesos safetensors, sin versiones GGUF ni cuantizadas, lo que obliga a realizar conversiones propias para despliegues en CPU o hardware limitado.
 - Fecha de publicacion: el repositorio figura creado el 25 de septiembre de 2026 y actualizado el mismo dia, sin actividad posterior registrada en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tohirju/sl-ivory
+- Modelo en Hugging Face: https://huggingface.co/Tohirju/sl-ivory
 - Modelo base: google/gemma-4-E4B-it (referenciado en las etiquetas del repositorio; consultar en https://huggingface.co/google/gemma-4-E4B-it)
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre el modelo; los resultados devueltos no guardan relacion con la ficha.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo JeongMinMin/Qwen3-1.7B-base-MED es un ajuste fino (fine-tuning) del modelo base Qwen3-1.7B-Base de Alibaba, orientado aparentemente al dominio médico (la etiqueta "MED" sugiere medicina, aunque no hay confirmación en la model card). El autor, JeongMinMin, ha publicado el modelo en HuggingFace con la librería transformers y el pipeline de generación de texto, pero la model card está prácticamente vacía: no se especifican datos de entrenamiento, licencia, idiomas ni evaluación.
+El modelo JeongMinMin/Qwen3-1.7B-base-MED es un ajuste fino (fine-tuning) del modelo base Qwen3-1.7B-Base de Alibaba, orientado aparentemente al dominio médico (la etiqueta "MED" sugiere medicina, aunque no hay confirmación en la model card). El autor, JeongMinMin, ha publicado el modelo en Hugging Face con la librería transformers y el pipeline de generación de texto, pero la model card está prácticamente vacía: no se especifican datos de entrenamiento, licencia, idiomas ni evaluación.
 
 Con 1.720.574.976 parámetros (aproximadamente 1,72 mil millones), se trata de un modelo de tamaño pequeño, adecuado para despliegue en entornos con recursos limitados. Al estar basado en Qwen3-1.7B-Base, hereda presumiblemente la arquitectura transformer densa y la ventana de contexto de 32.000 tokens del modelo original, aunque no hay confirmación oficial de que el fine-tuning no haya modificado estos aspectos. La relevancia de este modelo radica en su potencial especialización médica, pero la ausencia total de documentación técnica impide verificar su rendimiento real.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JeongMinMin/Qwen3-1.7B-base-MED | 1,72 B | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3-1.7B-Base | 1,72 B | 32.000 tokens | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen/Qwen2.5-1.5B-Base | 1,54 B | 32.000 tokens | Apache 2.0 | HuggingFace |
+| JeongMinMin/Qwen3-1.7B-base-MED | 1,72 B | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3-1.7B-Base | 1,72 B | 32.000 tokens | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen/Qwen2.5-1.5B-Base | 1,54 B | 32.000 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita al modelo base original y a su predecesor, ya que no hay otros fine-tunings médicos de tamaño similar con documentación pública en la información proporcionada. El modelo de JeongMinMin se diferencia por su supuesta especialización médica, pero carece de la documentación y las garantías de los modelos oficiales de Alibaba.
 
@@ -75,7 +75,7 @@ La comparativa se limita al modelo base original y a su predecesor, ya que no ha
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JeongMinMin/Qwen3-1.7B-base-MED
+- Hugging Face: https://huggingface.co/JeongMinMin/Qwen3-1.7B-base-MED
 - Modelo base Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Página de Qwen3-1.7B en Ollama: https://ollama.com/library/qwen3:1.7b
 - Modelo base en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-1.7B-Base

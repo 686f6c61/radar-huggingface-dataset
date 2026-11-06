@@ -4,7 +4,7 @@
 
 Genpio Voice es un modelo de texto a voz (TTS) multilingüe desarrollado por GuidenAI, diseñado para la clonación de voz zero-shot y el diseño de voces sintéticas. Está entrenado desde cero (trained-from-scratch) y combina un codificador de texto basado en Qwen3 con un codec de audio DAC (Descript Audio Codec) para generar habla natural en más de 100 idiomas, desde afrikáans hasta chino cantonés. El modelo cuenta con 612 millones de parámetros y se distribuye en formato safetensors, con un tamaño de repositorio de 2,5 GB.
 
-Su relevancia radica en que cubre un espectro lingüístico muy amplio (incluyendo lenguas de baja representación como el bambara, el luo o el umbundu) y ofrece capacidades avanzadas de clonación de voz sin necesidad de entrenamiento adicional, lo que lo hace atractivo para aplicaciones de doblaje, asistentes de voz y accesibilidad. El acceso al modelo está restringido (gated) y se rige por una licencia personalizada, la genpio-voices-model-license, por lo que cualquier uso requiere aceptar las condiciones en HuggingFace.
+Su relevancia radica en que cubre un espectro lingüístico muy amplio (incluyendo lenguas de baja representación como el bambara, el luo o el umbundu) y ofrece capacidades avanzadas de clonación de voz sin necesidad de entrenamiento adicional, lo que lo hace atractivo para aplicaciones de doblaje, asistentes de voz y accesibilidad. El acceso al modelo está restringido (gated) y se rige por una licencia personalizada, la genpio-voices-model-license, por lo que cualquier uso requiere aceptar las condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -30,7 +30,7 @@ El modelo combina un codificador de texto basado en la arquitectura Qwen3, que p
 - Diseño de voz (voice design): permite crear voces sintéticas con características personalizadas, útil para asistentes virtuales o personajes.
 - Soporte multilingüe extenso, cubriendo lenguas de baja representación como luo, umbundu, nso o twi.
 - Integración con la librería omnivoice, lo que facilita su uso en pipelines de TTS.
-- Formato de pesos safetensors, compatible con el ecosistema HuggingFace.
+- Formato de pesos safetensors, compatible con el ecosistema Hugging Face.
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: con 612 millones de parámetros, en FP16 los pesos ocupan aproximadamente 1,2 GB. Para inferencia, se recomienda al menos 4 GB de VRAM para margen de activaciones y buffers.
 - GPU recomendadas: tarjetas consumer como NVIDIA RTX 3060 (12 GB) o superiores pueden ejecutar el modelo sin problemas. GPUs profesionales como A100 o H100 no son necesarias para inferencia, aunque acelerarían el procesamiento por lotes.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de gama media y alta.
-- Opciones de despliegue: no se especifican en la documentación. Al usar la librería omnivoice, es probable que se integre con el ecosistema HuggingFace Transformers o con pipelines dedicados. No hay confirmación de soporte en vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: no se especifican en la documentación. Al usar la librería omnivoice, es probable que se integre con el ecosistema Hugging Face Transformers o con pipelines dedicados. No hay confirmación de soporte en vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible. Dependerá del hardware y del tamaño del lote.
 
 ## Comparativa con modelos similares
@@ -60,7 +60,7 @@ No disponible. No se ha proporcionado información sobre modelos comparables en 
 ## Limitaciones y advertencias
 
 - Licencia personalizada (genpio-voices-model-license) que no es de código abierto estándar; es necesario revisar sus términos para uso comercial y redistribución.
-- Acceso restringido (gated): hay que solicitar permiso en HuggingFace y aceptar las condiciones antes de descargar el modelo.
+- Acceso restringido (gated): hay que solicitar permiso en Hugging Face y aceptar las condiciones antes de descargar el modelo.
 - Modelo nuevo con cero descargas y cero likes en el momento de la consulta, lo que implica falta de validación por parte de la comunidad.
 - No se dispone de información sobre sesgos, alucinaciones (errores de pronunciación) o comportamientos problemáticos en lenguas específicas.
 - La cobertura de idiomas es amplia pero no se conoce la calidad por lengua; es probable que el rendimiento varíe entre idiomas mayoritarios y minoritarios.
@@ -69,6 +69,6 @@ No disponible. No se ha proporcionado información sobre modelos comparables en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GuidenAI/genpio_voice
+- Repositorio Hugging Face: https://huggingface.co/GuidenAI/genpio_voice
 - Paper asociado (referencia arxiv): https://arxiv.org/abs/2604.00688
 - Datasets de entrenamiento: https://huggingface.co/datasets/google/fleurs, https://huggingface.co/datasets/facebook/multilingual_librispeech, https://huggingface.co/datasets/AISHELL/AISHELL-1

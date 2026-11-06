@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Deerpark/pii-tagger-hipaa es un modelo de reconocimiento de entidades nombradas (NER) especializado en la deteccion y etiquetado de informacion personal identificable (PII) y de informacion sanitaria protegida (PHI, Protected Health Information) bajo el marco regulatorio HIPAA. Lo desarrolla Deerpark y se distribuye a traves de HuggingFace con acceso restringido (gated), lo que obliga a aceptar condiciones de uso antes de la descarga. Esta construido sobre la libreria GLiNER y deriva del modelo base Deerpark/pii-tagger-edge, del que hereda la arquitectura y que se ha ajustado para el dominio clinico.
+Deerpark/pii-tagger-hipaa es un modelo de reconocimiento de entidades nombradas (NER) especializado en la deteccion y etiquetado de informacion personal identificable (PII) y de informacion sanitaria protegida (PHI, Protected Health Information) bajo el marco regulatorio HIPAA. Lo desarrolla Deerpark y se distribuye a traves de Hugging Face con acceso restringido (gated), lo que obliga a aceptar condiciones de uso antes de la descarga. Esta construido sobre la libreria GLiNER y deriva del modelo base Deerpark/pii-tagger-edge, del que hereda la arquitectura y que se ha ajustado para el dominio clinico.
 
 El modelo resuelve un problema concreto: la desidentificacion automatica de textos clinicos y administrativos para que puedan procesarse sin exponer datos sensibles de pacientes. A diferencia de los NER clasicos con un conjunto fijo de etiquetas, GLiNER permite definir entidades de forma dinamica mediante prompts en texto, lo que facilita adaptar el etiquetado a los 18 identificadores que exige la regla de privacidad de HIPAA sin reentrenar el modelo.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible de forma oficial; por el tamano del repositorio (0,3 GB) y la arquitectura GLiNER, es probable que la inferencia en FP32 requiera menos de 2 GB de memoria, aunque esta cifra no esta confirmada por el autor.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM deberia ser suficiente; no se especifican modelos concretos.
 - Cabe en GPU de consumo: previsiblemente si, incluidas GTX 1650, RTX 3060 y superiores, aunque no hay datos oficiales.
-- Opciones de despliegue: la libreria gliner (referenciada en los metadatos), ONNX Runtime para CPU, y potencialmente integraciones via HuggingFace Transformers. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos generativos y no a encoders NER.
+- Opciones de despliegue: la libreria gliner (referenciada en los metadatos), ONNX Runtime para CPU, y potencialmente integraciones via Hugging Face Transformers. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos generativos y no a encoders NER.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso automatizado en pipelines.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso automatizado en pipelines.
 - No se han publicado metricas de evaluacion (precision, recall, F1) en la informacion disponible, por lo que su rendimiento real en produccion no esta verificado publicamente.
 - Riesgo de falsos negativos en PHI: un NER puede no detectar todas las entidades sensibles, especialmente en textos con formatos atipicos o jerga clinica; se recomienda una capa de validacion o revision humana.
 - Cobertura limitada a ingles y espanol; no se garantiza su comportamiento en otras lenguas.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Deerpark/pii-tagger-hipaa
+- Hugging Face: https://huggingface.co/Deerpark/pii-tagger-hipaa
 - Modelo base: https://huggingface.co/Deerpark/pii-tagger-edge
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/nvidia/Nemotron-PII
 - GLiNER (libreria): https://github.com/urchade/GLiNER

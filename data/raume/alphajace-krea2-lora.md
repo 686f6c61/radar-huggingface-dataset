@@ -2,7 +2,7 @@
 
 ## Resumen
 
-alphajace - Krea 2 character LoRA es un adaptador de bajo rango (LoRA) publicado por el usuario Raume en HuggingFace, disenado para anadir un personaje concreto a un modelo base de generacion de imagenes identificado como Krea 2. El adaptador emplea un rango de 32 y se activa mediante la palabra disparadora `alphajace`, segun la propia model card del autor. Se trata, por tanto, de un artefacto de personalizacion de difusion (o del paradigma generativo que use Krea 2), no de un modelo de lenguaje: no genera texto, no razona y no procesa contexto conversacional.
+alphajace - Krea 2 character LoRA es un adaptador de bajo rango (LoRA) publicado por el usuario Raume en Hugging Face, disenado para anadir un personaje concreto a un modelo base de generacion de imagenes identificado como Krea 2. El adaptador emplea un rango de 32 y se activa mediante la palabra disparadora `alphajace`, segun la propia model card del autor. Se trata, por tanto, de un artefacto de personalizacion de difusion (o del paradigma generativo que use Krea 2), no de un modelo de lenguaje: no genera texto, no razona y no procesa contexto conversacional.
 
 La informacion publicada es extremadamente escasa. La model card se limita a cuatro lineas: palabra disparadora, base de entrenamiento (fal krea-2-trainer), rango 32 y una descripcion del personaje ("original cartoon anthro T-rex character"), junto con una recomendacion de fuerza de aplicacion entre 0,6 y 1,0. No se documentan datos de entrenamiento, composicion del dataset, numero de pasos, resolucion objetivo ni resultados cualitativos o cuantitativos.
 
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento de este adaptador ni de otros adaptadores 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alphajace - Krea 2 character LoRA | no disponible (rango 32) | no aplica | no disponible | other | publico en HuggingFace, 0 descargas |
+| alphajace - Krea 2 character LoRA | no disponible (rango 32) | no aplica | no disponible | other | publico en Hugging Face, 0 descargas |
 | LoRA de personaje sobre SDXL (referencia generica) | no disponible | no aplica | no disponible | depende del modelo base | ampliamente disponible |
 | LoRA de personaje sobre FLUX.1 (referencia generica) | no disponible | no aplica | no disponible | depende del modelo base | ampliamente disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de este adaptador ni de otros adaptadores 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raume/alphajace-krea2-lora
+- Hugging Face: https://huggingface.co/Raume/alphajace-krea2-lora
 - Modelo base Krea 2: no disponible (no se enlaza en la model card)
 - Herramienta de entrenamiento `fal krea-2-trainer`: no disponible (mencionada por nombre, sin enlace)
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible

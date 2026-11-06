@@ -79,6 +79,6 @@ La comparativa se limita a parámetros y arquitectura, ya que no hay datos de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bloomer010/Ling-3.0-flash-REAP320-81B-A5B
+- Modelo en Hugging Face: https://huggingface.co/bloomer010/Ling-3.0-flash-REAP320-81B-A5B
 - Paper de REAP: https://arxiv.org/abs/2510.13999
 - Modelo base (inclusionAI/Ling-3.0-flash): https://huggingface.co/inclusionAI/Ling-3.0-flash

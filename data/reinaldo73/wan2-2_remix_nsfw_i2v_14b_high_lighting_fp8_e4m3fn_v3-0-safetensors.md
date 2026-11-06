@@ -85,7 +85,7 @@ No se dispone de datos verificados de rendimiento, contexto ni licencia de las a
 
 ## Enlaces
 
-- HuggingFace (este artefacto): https://huggingface.co/Reinaldo73/Wan2.2_Remix_NSFW_i2v_14b_high_lighting_fp8_e4m3fn_v3.0.safetensors
+- Hugging Face (este artefacto): https://huggingface.co/Reinaldo73/Wan2.2_Remix_NSFW_i2v_14b_high_lighting_fp8_e4m3fn_v3.0.safetensors
 - Repositorio de origen: https://huggingface.co/FX-FeiHou/wan2.2-Remix
 - Fichero de origen, variante high lighting: https://huggingface.co/FX-FeiHou/wan2.2-Remix/resolve/main/NSFW/Wan2.2_Remix_NSFW_i2v_14b_high_lighting_fp8_e4m3fn_v3.0.safetensors
 - Fichero de origen, variante low lighting: https://huggingface.co/FX-FeiHou/wan2.2-Remix/resolve/main/NSFW/Wan2.2_Remix_NSFW_i2v_14b_low_lighting_fp8_e4m3fn_v3.0.safetensors

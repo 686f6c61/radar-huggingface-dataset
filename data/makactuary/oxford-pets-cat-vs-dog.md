@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`makactuary/oxford-pets-cat-vs-dog` es un clasificador binario de imágenes (gato frente a perro) publicado por el usuario makactuary en HuggingFace. No es un modelo entrenado de extremo a extremo: es una cabeza de regresión logística de scikit-learn montada sobre características congeladas de 768 dimensiones extraídas con el backbone `timm/convnext_tiny.fb_in22k_ft_in1k`, un ConvNeXt-Tiny preentrenado en ImageNet-22k y afinado en ImageNet-1k (Apache-2.0). El único artefacto entrenado es, por tanto, un vector de 1.538 coeficientes.
+`makactuary/oxford-pets-cat-vs-dog` es un clasificador binario de imágenes (gato frente a perro) publicado por el usuario makactuary en Hugging Face. No es un modelo entrenado de extremo a extremo: es una cabeza de regresión logística de scikit-learn montada sobre características congeladas de 768 dimensiones extraídas con el backbone `timm/convnext_tiny.fb_in22k_ft_in1k`, un ConvNeXt-Tiny preentrenado en ImageNet-22k y afinado en ImageNet-1k (Apache-2.0). El único artefacto entrenado es, por tanto, un vector de 1.538 coeficientes.
 
 El problema que resuelve es deliberadamente acotado: separar las dos clases del dataset Oxford-IIIT Pet. Su interés práctico es como ejemplo de *linear probing* barato —el autor indica que se entrena en CPU en minutos— y como referencia de hasta dónde llegan las features congeladas de un backbone moderno cuando el dominio de destino se solapa con el de preentrenamiento (ImageNet ya contiene muchas razas de gatos y perros).
 
@@ -23,9 +23,9 @@ El resultado reportado es accuracy 0,9992 y macro-F1 0,9991 sobre el split de te
 | Tarea | Clasificación de imágenes, 2 clases (gato / perro) |
 | Dataset de entrenamiento | `timm/oxford-iiit-pet` (copia en HF del Oxford-IIIT Pet), CC BY-SA 4.0 |
 | Modelo base | `timm/convnext_tiny.fb_in22k_ft_in1k` |
-| Tamano del repositorio | 0,0 GB (según HuggingFace) |
+| Tamano del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-10-27 (según metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-27 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ No se han localizado en la información disponible otras cabezas publicadas para
 | `makactuary/oxford-pets-cat-vs-dog` | ~28,6 M (backbone) + 1.538 (cabeza) | Linear probe sobre features congeladas | Imagen (resolución no documentada) | CC BY-SA 4.0 | accuracy 0,9992 / macro-F1 0,9991 en test |
 | `timm/convnext_tiny.fb_in22k_ft_in1k` | ~28,6 M | Clasificador ImageNet-1k (1.000 clases) | Imagen 224×224 (configuración habitual de timm) | Apache-2.0 | No disponible en esta ficha (requiere consultar la model card de timm) |
 | *Fine-tuning* completo de ConvNeXt-Tiny en Oxford-IIIT Pet | ~28,6 M | Ajuste de todos los pesos | Imagen | Depende del dataset (CC BY-SA 4.0) | No disponible |
-| Otros clasificadores gato/perro en HuggingFace | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Otros clasificadores gato/perro en Hugging Face | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -101,9 +101,9 @@ No se han localizado en la información disponible otras cabezas publicadas para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makactuary/oxford-pets-cat-vs-dog
+- Modelo en Hugging Face: https://huggingface.co/makactuary/oxford-pets-cat-vs-dog
 - Modelo base (timm): https://huggingface.co/timm/convnext_tiny.fb_in22k_ft_in1k
-- Dataset en HuggingFace: https://huggingface.co/datasets/timm/oxford-iiit-pet
+- Dataset en Hugging Face: https://huggingface.co/datasets/timm/oxford-iiit-pet
 - Dataset original (University of Oxford): https://www.robots.ox.ac.uk/~vgg/data/pets/
 - Paper del dataset: Parkhi, O. M., Vedaldi, A., Zisserman, A. & Jawahar, C. V. (2012). *Cats and Dogs*. IEEE CVPR.
 - Repositorio de código del autor (archivo `hf_image_models.py`, MIT): https://github.com/000MAK/quantix-martial-arts-engine

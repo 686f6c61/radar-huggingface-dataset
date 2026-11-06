@@ -17,7 +17,7 @@ La relevancia actual es metodológica: proporciona métricas comparables de tasa
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | 4096 tokens (heredada de Llama-2-7b-chat; no se especifica en la model card) |
 | Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF, AWQ, GPTQ ni bitsandbytes en el repositorio) |
-| Idiomas soportados | no disponible (la ficha de HuggingFace no declara idiomas) |
+| Idiomas soportados | no disponible (la ficha de Hugging Face no declara idiomas) |
 | Licencia | llama2 (Llama 2 Community License; el repositorio incluye LICENSE.txt y USE_POLICY.md) |
 | Formato de pesos | safetensors, cargable con transformers |
 | Base (sin comprimir) | meta-llama/Llama-2-7b-chat-hf |
@@ -83,10 +83,10 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks en esta informacion |
 |---|---|---|---|---|---|
-| svd-safety-l2...remove40 (este modelo) | 6,738 B declarados en safetensors; fraccion 0,5998 segun la model card | 4096 (heredado) | Llama 2 Community License | HuggingFace, 0 descargas, investigacion | AdvBench ASR 0,0019; StrongREJECT ASR 0,0160; WildGuard sobre-rechazo 0,6721; WikiText-2 ppl 11,6474 |
-| meta-llama/Llama-2-7b-chat-hf | 6,738 B | 4096 | Llama 2 Community License | HuggingFace, ampliamente usado | no disponibles en esta informacion para estas metricas |
-| mistralai/Mistral-7B-Instruct-v0.2 | 7,24 B | 32 768 | Apache 2.0 | HuggingFace | no disponibles en esta informacion |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8192 | Llama 3 Community License | HuggingFace | no disponibles en esta informacion |
+| svd-safety-l2...remove40 (este modelo) | 6,738 B declarados en safetensors; fraccion 0,5998 segun la model card | 4096 (heredado) | Llama 2 Community License | Hugging Face, 0 descargas, investigacion | AdvBench ASR 0,0019; StrongREJECT ASR 0,0160; WildGuard sobre-rechazo 0,6721; WikiText-2 ppl 11,6474 |
+| meta-llama/Llama-2-7b-chat-hf | 6,738 B | 4096 | Llama 2 Community License | Hugging Face, ampliamente usado | no disponibles en esta informacion para estas metricas |
+| mistralai/Mistral-7B-Instruct-v0.2 | 7,24 B | 32 768 | Apache 2.0 | Hugging Face | no disponibles en esta informacion |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8192 | Llama 3 Community License | Hugging Face | no disponibles en esta informacion |
 
 La comparativa con alternativas de compresion (otros checkpoints SVD-LLM, SliceGPT, LLM-Pruner o Wanda) no esta disponible, porque la informacion proporcionada no incluye resultados de esas tecnicas en las mismas metricas de seguridad.
 
@@ -104,7 +104,7 @@ La comparativa con alternativas de compresion (otros checkpoints SVD-LLM, SliceG
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_jbbmix_k0p02_a1p0_free_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_jbbmix_k0p02_a1p0_free_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (LICENSE.txt y USE_POLICY.md incluidos en el repositorio del modelo)
 - Paper de SVD-LLM (referencia del metodo de compresion citado): no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JeanBon es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/JeanBon`. La informacion disponible sobre el es minima: la model card esta practicamente vacia (unicamente contiene la declaracion de licencia `cc-by-4.0`) y los metadatos de HuggingFace no declaran tarea (`pipeline`), idiomas soportados ni arquitectura. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
+JeanBon es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/JeanBon`. La informacion disponible sobre el es minima: la model card esta practicamente vacia (unicamente contiene la declaracion de licencia `cc-by-4.0`) y los metadatos de Hugging Face no declaran tarea (`pipeline`), idiomas soportados ni arquitectura. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
 
 Los unicos datos objetivos confirmados son la licencia CC-BY-4.0, el tamano del repositorio y las fechas de creacion y actualizacion registradas en los metadatos (19 de septiembre de 2026 y 19 de septiembre de 2026 respectivamente). No hay informacion sobre el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni el proceso de alineacion.
 
@@ -85,16 +85,16 @@ No disponible. No hay informacion suficiente sobre el modelo (arquitectura, para
 - Ausencia total de documentacion: la model card solo contiene la declaracion de licencia, sin descripcion, sin instrucciones de uso y sin ejemplos.
 - Sesgos conocidos: no disponibles. Al no haberse publicado la composicion del dataset de entrenamiento, no es posible evaluar sesgos de genero, raza, idioma o dominio.
 - Riesgo de alucinacion: no evaluado. Sin benchmarks ni evaluaciones cualitativas, no hay evidencia sobre la fiabilidad factual del modelo.
-- Limitaciones de contexto e idioma: no disponibles. El campo de idiomas de HuggingFace esta vacio y no se declara ventana de contexto.
+- Limitaciones de contexto e idioma: no disponibles. El campo de idiomas de Hugging Face esta vacio y no se declara ventana de contexto.
 - Trazabilidad y procedencia: no se documenta el origen de los datos de entrenamiento, lo que dificulta cualquier auditoria de cumplimiento.
 - Licencia: CC-BY-4.0 permite uso comercial y obras derivadas siempre que se atribuya la autoria, pero no incluye garantias de ningun tipo. Conviene revisar si el autor aplica terminos adicionales en el repositorio.
 - Senales de calidad del repositorio: 0 descargas y 0 "likes" indican ausencia de validacion por parte de la comunidad; el tamano de 0,1 GB es demasiado pequeno para un modelo de gran escala en precision completa.
 - Uso en produccion: desaconsejado en su estado actual. No debe desplegarse en entornos criticos sin una evaluacion propia exhaustiva, control de versiones del repositorio y verificacion previa del formato de pesos.
-- Fechas de los metadatos: las fechas registradas (creacion y actualizacion el 19 de septiembre de 2026) proceden de HuggingFace y se reproducen tal cual; conviene verificarlas en la fuente original.
+- Fechas de los metadatos: las fechas registradas (creacion y actualizacion el 19 de septiembre de 2026) proceden de Hugging Face y se reproducen tal cual; conviene verificarlas en la fuente original.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/JeanBon
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/JeanBon
 
 Resultados de la busqueda web: las consultas realizadas no han devuelto ningun resultado relacionado con el modelo `Ryanham1lton/JeanBon`. Los enlaces recuperados pertenecen a articulos de ingenieria agricola sobre sistemas de traccion de tractores y sembradoras, sin conexion con el modelo:
 

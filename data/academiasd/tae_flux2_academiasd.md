@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparativos con TAESD generico ni con el V
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AcademiaSD/TAE_Flux2_AcademiaSD
+- Hugging Face: https://huggingface.co/AcademiaSD/TAE_Flux2_AcademiaSD
 - Arquitectura TAESD original: https://github.com/madebyollin/taesd
 - Nodo Model Preview Override (ComfyUI-KJNodes): https://github.com/kijai/ComfyUI-KJNodes
 - FLUX.2 (Black Forest Labs): https://blackforestlabs.ai

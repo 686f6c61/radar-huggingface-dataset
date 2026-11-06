@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Aaravvenkatesh/mobilevit-generation-mini` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura MobileViT a escala "tiny" orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código (`finetune.py`) acompañado de una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) pensado únicamente para pruebas de humo. El autor lo presenta explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`Aaravvenkatesh/mobilevit-generation-mini` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura MobileViT a escala "tiny" orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código (`finetune.py`) acompañado de una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) pensado únicamente para pruebas de humo. El autor lo presenta explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La relevancia de este repositorio es, por tanto, documental y pedagógica: permite examinar cómo se ensambla una variante de MobileViT con atención dispersa, fusión con compuertas (gated fusion), activación swish y normalización ScaleNorm, junto con una receta de entrenamiento basada en RMSprop y scheduler polinómico. No hay ninguna puntuación de benchmark declarada ni evidencia de un entrenamiento finalizado.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, la receta por defecto documentada usa el optimizador
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de inicialización permite verificar que el script `finetune.py` carga pesos, ejecuta un forward pass y guarda estado sin errores de forma.
 - Base para experimentos académicos reproducibles: el autor sugiere evaluar con un conjunto held-out específico de la tarea, al menos tres semillas y una línea base de capacidad comparable, lo que encaja en un protocolo de investigación.
 - Docencia y formación: útil como ejemplo mínimo de configuración de arquitectura (`config.json`) y receta de entrenamiento (`training_args.json`) para quienes aprenden a estructurar repositorios de modelos.
-- Prototipado de adaptadores personalizados: dado que el autor indica que las APIs genéricas de carga automática requieren un adaptador explícito, el repo sirve para practicar la integración de implementaciones custom en HuggingFace.
+- Prototipado de adaptadores personalizados: dado que el autor indica que las APIs genéricas de carga automática requieren un adaptador explícito, el repo sirve para practicar la integración de implementaciones custom en Hugging Face.
 - Comparación de recetas de optimización: permite experimentar con RMSprop y scheduler polinómico frente a otras combinaciones en un entorno controlado y de bajo coste computacional.
 
 ## Benchmarks y rendimiento
@@ -73,12 +73,12 @@ No se dispone de datos de benchmarks ni de comparativas de rendimiento publicada
 - El autor declara que el modelo no ha sido auditado en robustez, equidad ni transferencia de dominio.
 - No hay resultados de benchmarks ni métricas reproducibles; cualquier cifra de rendimiento sería inventada.
 - El repositorio tiene 0 descargas y 0 likes, lo que indica ausencia de validación por parte de la comunidad.
-- La implementación es custom, por lo que las APIs estándar de carga automática de HuggingFace requieren un adaptador explícito.
+- La implementación es custom, por lo que las APIs estándar de carga automática de Hugging Face requieren un adaptador explícito.
 - La licencia apache-2.0 permite uso comercial del código y pesos, pero el autor recomienda revisar por separado los términos de los datos de origen si se usan datasets externos.
 - No se especifican idiomas soportados ni longitud de contexto, por lo que no es posible garantizar comportamiento multilingüe ni conversacional.
 - Riesgo de alucinación y sesgos: no evaluable, al no existir un modelo entrenado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aaravvenkatesh/mobilevit-generation-mini
+- Hugging Face: https://huggingface.co/Aaravvenkatesh/mobilevit-generation-mini
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo concreto.

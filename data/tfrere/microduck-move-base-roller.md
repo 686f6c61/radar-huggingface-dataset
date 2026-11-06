@@ -98,9 +98,9 @@ No se dispone de información sobre otros modelos comparables fuera del ecosiste
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-base-roller
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-base-roller
 - Repositorio de entrenamiento upstream: https://github.com/pollen-robotics/microduck_rl
 - Políticas originales de Pollen Robotics: https://huggingface.co/pollen-robotics/microduck-policies
-- Organización Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Organización Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - Microduck Academy (Space): https://huggingface.co/spaces/tfrere/microduck
 - No se han encontrado papers, blogs ni demos adicionales en los resultados de búsqueda web disponibles (los resultados obtenidos no guardan relación con el modelo).

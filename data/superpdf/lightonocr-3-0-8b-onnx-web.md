@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato / cuantizacion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| superpdf/LightOnOCR-3-0.8B-ONNX-web | 0,8B | ONNX, decodificador 4-bit, vision encoder fp16 | Apache-2.0 | HuggingFace, ~0,9 GB | Conversion para navegador y Node con Transformers.js y WebGPU |
-| lightonai/LightOnOCR-3-0.8B | 0,8B | safetensors, bfloat16 | Apache-2.0 | HuggingFace | Modelo base original; referencia para puntuaciones y detalles |
-| andrzej/LightOnOCR_webGPU | 0,8B | ONNX, misma cuantizacion | Apache-2.0 | HuggingFace | Bytes identicos a esta conversion; superPDF lo replica en su propio repositorio |
-| onnx-community/Qwen3.5-0.8B-ONNX-OPT | 0,8B | ONNX | no disponible | HuggingFace | Origen de los grafos ONNX empleados; configuracion coincidente salvo la capa de multi-token prediction no usada |
+| superpdf/LightOnOCR-3-0.8B-ONNX-web | 0,8B | ONNX, decodificador 4-bit, vision encoder fp16 | Apache-2.0 | Hugging Face, ~0,9 GB | Conversion para navegador y Node con Transformers.js y WebGPU |
+| lightonai/LightOnOCR-3-0.8B | 0,8B | safetensors, bfloat16 | Apache-2.0 | Hugging Face | Modelo base original; referencia para puntuaciones y detalles |
+| andrzej/LightOnOCR_webGPU | 0,8B | ONNX, misma cuantizacion | Apache-2.0 | Hugging Face | Bytes identicos a esta conversion; superPDF lo replica en su propio repositorio |
+| onnx-community/Qwen3.5-0.8B-ONNX-OPT | 0,8B | ONNX | no disponible | Hugging Face | Origen de los grafos ONNX empleados; configuracion coincidente salvo la capa de multi-token prediction no usada |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada; la comparacion es, por tanto, de formato, licencia y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/superpdf/LightOnOCR-3-0.8B-ONNX-web
+- Modelo en Hugging Face: https://huggingface.co/superpdf/LightOnOCR-3-0.8B-ONNX-web
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-0.8B
 - Perfil del autor: https://huggingface.co/superpdf
 - Repositorio de grafos ONNX de origen: https://huggingface.co/onnx-community/Qwen3.5-0.8B-ONNX-OPT

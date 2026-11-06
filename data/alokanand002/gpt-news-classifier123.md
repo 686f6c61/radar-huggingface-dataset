@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alokanand002/gpt-news-classifier123` es un modelo publicado en HuggingFace Hub por el usuario alokanand002, etiquetado con la librería `transformers` y con el tag `endpoints_compatible`, lo que indica que en principio puede desplegarse a través de la Inference Endpoints de HuggingFace. No se trata de un modelo con documentación propia: la model card disponible es la plantilla genérica autogenerada por el Hub, con todos los campos marcados como `[More Information Needed]`. El repositorio no declara pipeline, licencia, idiomas, arquitectura ni procedencia de los pesos.
+`alokanand002/gpt-news-classifier123` es un modelo publicado en Hugging Face Hub por el usuario alokanand002, etiquetado con la librería `transformers` y con el tag `endpoints_compatible`, lo que indica que en principio puede desplegarse a través de la Inference Endpoints de Hugging Face. No se trata de un modelo con documentación propia: la model card disponible es la plantilla genérica autogenerada por el Hub, con todos los campos marcados como `[More Information Needed]`. El repositorio no declara pipeline, licencia, idiomas, arquitectura ni procedencia de los pesos.
 
-El identificador del repositorio sugiere la intención de clasificar noticias, pero esta interpretación proviene únicamente del nombre y no está respaldada por ningún dato técnico verificable en la información disponible. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación de huella de carbono, que aparece citado por defecto en la plantilla de model card de HuggingFace y no a un paper específico del modelo.
+El identificador del repositorio sugiere la intención de clasificar noticias, pero esta interpretación proviene únicamente del nombre y no está respaldada por ningún dato técnico verificable en la información disponible. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación de huella de carbono, que aparece citado por defecto en la plantilla de model card de Hugging Face y no a un paper específico del modelo.
 
 En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 likes, y las marcas temporales de creación y actualización (26 de septiembre de 2026) difieren en un segundo, lo que apunta a una subida automatizada o de prueba. Cualquier evaluación rigurosa de este modelo es, por tanto, imposible con la información pública actual: no hay pesos documentados, ni hiperparámetros, ni métricas, ni declaración de licencia.
 
@@ -23,7 +23,7 @@ En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 lik
 
 ## Arquitectura y entrenamiento
 
-No hay información disponible sobre la arquitectura. La model card es la plantilla por defecto de HuggingFace y no contiene descripción del modelo, tipo de modelo, objetivo de entrenamiento ni infraestructura de cómputo. Tampoco se documenta si se trata de un transformer encoder, decoder o encoder-decoder, ni si deriva de un modelo preentrenado existente.
+No hay información disponible sobre la arquitectura. La model card es la plantilla por defecto de Hugging Face y no contiene descripción del modelo, tipo de modelo, objetivo de entrenamiento ni infraestructura de cómputo. Tampoco se documenta si se trata de un transformer encoder, decoder o encoder-decoder, ni si deriva de un modelo preentrenado existente.
 
 No se dispone de datos sobre el conjunto de entrenamiento, el número de tokens procesados, la composición del dataset, el régimen de precisión (fp32, fp16, bf16, fp8), la existencia de ajuste por instrucciones, RLHF o DPO, ni sobre ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, SSM híbrido). El repositorio no incluye enlaces a papers, repositorios de código ni demos.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros ni la arquitectura no es posible calcular el consumo de memoria en ninguna cuantización.
 - GPU recomendadas: no disponible por la misma razón.
 - Viabilidad en GPU de consumo: no se puede determinar. Dependerá enteramente del tamaño real de los pesos, que no está declarado.
-- Opciones de despliegue: el repositorio declara compatibilidad con `transformers` y con endpoints de HuggingFace. Otras vías habituales (vLLM, TGI, llama.cpp, Ollama, ONNX Runtime, TorchServe) no están confirmadas y su aplicabilidad depende de la arquitectura real del modelo.
+- Opciones de despliegue: el repositorio declara compatibilidad con `transformers` y con endpoints de Hugging Face. Otras vías habituales (vLLM, TGI, llama.cpp, Ollama, ONNX Runtime, TorchServe) no están confirmadas y su aplicabilidad depende de la arquitectura real del modelo.
 - Latencia y throughput: no disponible. No se han publicado mediciones de velocidad, tamaño de checkpoint ni tiempos de entrenamiento.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alokanand002/gpt-news-classifier123
+- Repositorio en Hugging Face: https://huggingface.co/alokanand002/gpt-news-classifier123
 - Artículo citado en el tag `arxiv:1910.09700` (Lacoste et al., 2019, estimación de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla de model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (paper del modelo, repositorio de código, demo o dataset) en la información disponible.

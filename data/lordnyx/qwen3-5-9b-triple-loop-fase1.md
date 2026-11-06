@@ -98,7 +98,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (por ejem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lordnyx/qwen3.5-9b-triple-loop-fase1
+- Repositorio Hugging Face: https://huggingface.co/Lordnyx/qwen3.5-9b-triple-loop-fase1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE

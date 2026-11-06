@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DakeraAI/modernbert-embed-base
+- Repositorio en Hugging Face: https://huggingface.co/DakeraAI/modernbert-embed-base
 - Modelo original: https://huggingface.co/nomic-ai/modernbert-embed-base
 - Licencia: https://huggingface.co/DakeraAI/modernbert-embed-base/blob/main/LICENSE
 - Web de Dakera: https://dakera.ai

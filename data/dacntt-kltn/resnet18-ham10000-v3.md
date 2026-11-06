@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Resnet18-HAM10000-v3 es un clasificador de imágenes de lesiones cutáneas publicado por el usuario dacntt-kltn en HuggingFace. Se trata de un ajuste fino (fine-tuning) de una ResNet18 preentrenada en ImageNet sobre un subconjunto del dataset HAM10000, orientado a distinguir tres clases diagnósticas: `bkl` (queratosis benigna), `mel` (melanoma) y `nv` (nevus melanocítico). El modelo se distribuye bajo la librería PyTorch con el pipeline `image-classification` y un repositorio de 4,1 GB, presumiblemente ocupado por checkpoints y estados de optimizador.
+Resnet18-HAM10000-v3 es un clasificador de imágenes de lesiones cutáneas publicado por el usuario dacntt-kltn en Hugging Face. Se trata de un ajuste fino (fine-tuning) de una ResNet18 preentrenada en ImageNet sobre un subconjunto del dataset HAM10000, orientado a distinguir tres clases diagnósticas: `bkl` (queratosis benigna), `mel` (melanoma) y `nv` (nevus melanocítico). El modelo se distribuye bajo la librería PyTorch con el pipeline `image-classification` y un repositorio de 4,1 GB, presumiblemente ocupado por checkpoints y estados de optimizador.
 
 El problema que aborda es la clasificación automática de lesiones dermatológicas a partir de imágenes dérmicas, un caso de uso clásico en la literatura de deep learning aplicado a dermatología. Frente a los entrenamientos típicos sobre las siete clases completas del HAM10000, este modelo reduce el problema a tres clases y entrena con 1.000 imágenes por clase y un split 80/10/10 realizado por `lesion_id`, lo que evita fugas de datos entre particiones. El checkpoint final reporta una accuracy de 0,7423, un macro-F1 de 0,7426 y un macro-AUC de 0,9172 sobre el conjunto de test.
 
@@ -77,8 +77,8 @@ No hay datos comparativos publicados por el autor ni benchmarks comunes que perm
 
 | Modelo | Tarea | Clases | Contexto o entrada | Metricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dacntt-kltn/Resnet18-HAM10000-v3 | Clasificacion de lesiones cutaneas | 3 (bkl, mel, nv) | Imagen 256 x 256 px | acc 0,7423, macro-F1 0,7426, macro-AUC 0,9172 | no disponible | HuggingFace |
-| dacntt-kltn/mobilenetv4-ham10000 | Clasificacion de lesiones cutaneas | no disponible | no disponible | no disponible en la informacion recogida | no disponible | HuggingFace |
+| dacntt-kltn/Resnet18-HAM10000-v3 | Clasificacion de lesiones cutaneas | 3 (bkl, mel, nv) | Imagen 256 x 256 px | acc 0,7423, macro-F1 0,7426, macro-AUC 0,9172 | no disponible | Hugging Face |
+| dacntt-kltn/mobilenetv4-ham10000 | Clasificacion de lesiones cutaneas | no disponible | no disponible | no disponible en la informacion recogida | no disponible | Hugging Face |
 | Notebook de Kaggle citado en findmariammariaa/skin-cancer-detection-ham10000 | Clasificacion de lesiones cutaneas | no disponible (CNN con ResNet18 y ResNet34) | no disponible | 85,02 % de accuracy reportada, protocolo no comparable | no disponible | Kaggle |
 | Estudio comparativo IEEE 10425889 | Clasificacion de 7 tipos de cancer de piel sobre HAM10000 | 7 | no disponible | no disponible en la informacion recogida | no disponible | IEEE Xplore |
 
@@ -99,8 +99,8 @@ La cifra del 85,02 % procede de un notebook de Kaggle referenciado por un tercer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dacntt-kltn/Resnet18-HAM10000-v3
-- Perfil del autor en HuggingFace: https://huggingface.co/dacntt-kltn
+- Modelo en Hugging Face: https://huggingface.co/dacntt-kltn/Resnet18-HAM10000-v3
+- Perfil del autor en Hugging Face: https://huggingface.co/dacntt-kltn
 - Modelo relacionado del mismo autor: https://huggingface.co/dacntt-kltn/mobilenetv4-ham10000
 - Dataset HAM10000 en Kaggle: https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
 - Proyecto de detección de cáncer de piel sobre HAM10000 en GitHub: https://github.com/findmariammariaa/skin-cancer-detection-ham10000

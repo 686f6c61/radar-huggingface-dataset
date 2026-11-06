@@ -53,14 +53,14 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 | val50m segments [3] | 2.4867 | 2.4884 | 0.0017 |
 | raw_val50m segments [8] | 2.3975 | 2.3957 | 0.0018 |
 
-Estas cifras confirman que los pesos de HuggingFace coinciden con el checkpoint de Megatron, pero no proporcionan informacion sobre el rendimiento en tareas downstream.
+Estas cifras confirman que los pesos de Hugging Face coinciden con el checkpoint de Megatron, pero no proporcionan informacion sobre el rendimiento en tareas downstream.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: con 1.66B parametros en bf16, el modelo ocupa aproximadamente 3,3 GB en memoria. Con cuantizacion a 8 bits (no disponible oficialmente, pero posible con herramientas como bitsandbytes) se reduciria a unos 1,7 GB, y a 4 bits a unos 0,9 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en bf16. Tarjetas como NVIDIA GTX 1660, RTX 2060, RTX 3060 o superiores son suficientes. Tambien es viable en Apple Silicon con Metal.
 - Compatibilidad con consumer GPU: si, el modelo cabe en practicamente cualquier GPU consumer moderna, incluso en modos cuantizados para GPUs con 2 GB o menos.
-- Opciones de despliegue: al ser un modelo transformers estandar, se puede servir con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama o simplemente con la libreria transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo transformers estandar, se puede servir con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama o simplemente con la libreria transformers de Hugging Face.
 - Latencia y throughput: no se han publicado datos de latencia o throughput. Como referencia orientativa, un modelo de 1.7B en una RTX 4090 puede generar del orden de 50-100 tokens por segundo con vLLM, pero estas cifras son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de informacion sobre modelos externos comparables (como Qwen2.5-1.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-base
 - Coleccion 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb): https://wandb.ai/raghav_singhal/1pp-sft

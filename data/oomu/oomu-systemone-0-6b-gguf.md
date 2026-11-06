@@ -6,7 +6,7 @@ OOMU System 1 es un modelo de 0,6B parámetros distribuito en formato GGUF (cuan
 
 Su relevancia está en el nicho de la inferencia en el borde (edge): con 639 MB de pesos y una latencia declarada de 10 a 18 ms por pasada, está pensado para ejecutarse en memoria unificada de Apple Silicon mediante el backend Metal de llama.cpp, sin el coste de la generación autorregresiva token a token. La arquitectura de base es una familia tipo Qwen de 0,6B con 256 representaciones de token de decisión aprendidas, lo que convierte la tarea en una clasificación/routing de baja latencia en lugar de una generación libre.
 
-El modelo tiene, en el momento de redactar esta ficha, cero descargas y cero likes en HuggingFace, y no publica benchmarks ni documentación de idiomas. Por tanto, debe tratarse como un artefacto muy especializado y poco validado de forma independiente, adecuado para experimentación con enrutado de agentes en macOS más que para producción crítica sin evaluación previa.
+El modelo tiene, en el momento de redactar esta ficha, cero descargas y cero likes en Hugging Face, y no publica benchmarks ni documentación de idiomas. Por tanto, debe tratarse como un artefacto muy especializado y poco validado de forma independiente, adecuado para experimentación con enrutado de agentes en macOS más que para producción crítica sin evaluación previa.
 
 ## Especificaciones técnicas
 
@@ -83,7 +83,7 @@ Comparativas con modelos de la misma categoría (clasificadores/enrutadores de b
 
 ## Limitaciones y advertencias
 
-- Ausencia total de validación externa: cero descargas y cero likes en HuggingFace en el momento de redactar la ficha, sin evaluación independiente conocida.
+- Ausencia total de validación externa: cero descargas y cero likes en Hugging Face en el momento de redactar la ficha, sin evaluación independiente conocida.
 - No hay benchmarks publicados: no se puede verificar la precisión del enrutado ni la tasa de acierto en las tareas que declara resolver.
 - Riesgo de alucinación y de clasificación errónea: al ser un modelo de decisión, un error se traduce en rutas o políticas mal aplicadas, potencialmente con consecuencias operativas o de seguridad.
 - Longitud de contexto no documentada: se desconoce cuánto contexto de escritorio puede procesar de una vez, lo que limita el diseño de integraciones.
@@ -96,6 +96,6 @@ Comparativas con modelos de la misma categoría (clasificadores/enrutadores de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oomu/OOMU-SystemOne-0.6B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/oomu/OOMU-SystemOne-0.6B-GGUF
 - Modelo de origen (atribución): https://huggingface.co/Hanno-Labs/bosun-v3.1-0.6b-GGUF
 - Búsqueda web: no se han encontrado resultados relevantes; las consultas devolvieron únicamente contenido no relacionado con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`djduecaster/dfreq-tug-cup-head-20261102` es una política neuronal sin estado (stateless) publicada en HuggingFace para el entorno de simulación Tug of War, un escenario de robótica de competición. El modelo lo desarrolla el usuario djduecaster y se distribuye como un adaptador de cabeza (head adapter) sobre una red troncal heredada del checkpoint `mjlab-tugofwar-microduck-t20` de Nico-robot, a través de una rama propia de feedback T19/T11. No se trata de un modelo de lenguaje: es un controlador de políticas para un robot cuadrúpedo simulado, empaquetado en formato ONNX y con la librería `microduck`.
+`djduecaster/dfreq-tug-cup-head-20261102` es una política neuronal sin estado (stateless) publicada en Hugging Face para el entorno de simulación Tug of War, un escenario de robótica de competición. El modelo lo desarrolla el usuario djduecaster y se distribuye como un adaptador de cabeza (head adapter) sobre una red troncal heredada del checkpoint `mjlab-tugofwar-microduck-t20` de Nico-robot, a través de una rama propia de feedback T19/T11. No se trata de un modelo de lenguaje: es un controlador de políticas para un robot cuadrúpedo simulado, empaquetado en formato ONNX y con la librería `microduck`.
 
 La relevancia del artefacto es acotada y muy específica: documenta un candidato de cabeza neuronal que, según la model card, supera a una línea base amplificada en 1865 de 2304 combates simulados (frente a 1651 de la línea base), con una ganancia pareada de 9,288 puntos porcentuales y un intervalo de confianza del 95 % de [7,161; 11,372]. La entrada es un vector legal de 61 observaciones y la salida son 14 offsets de acción; de las diez salidas de patas, todas permanecen idénticas a las del modelo fuente, y solo se coordinan cuatro canales de cabeza.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `djduecaster/dfreq-tug-cup-head-20261102` | Política robótica ONNX (microduck) | no disponible | no aplica (61 observaciones) | 1865/2304 victorias locales frente a línea base amplificada | no disponible | HuggingFace, 0 descargas |
+| `djduecaster/dfreq-tug-cup-head-20261102` | Política robótica ONNX (microduck) | no disponible | no aplica (61 observaciones) | 1865/2304 victorias locales frente a línea base amplificada | no disponible | Hugging Face, 0 descargas |
 | `mjlab-tugofwar-microduck-t20` (checkpoint500, Nico-robot) | Política robótica troncal heredada | no disponible | no aplica | no disponible | no disponible | Referenciado como upstream |
 | Pollen Tug starter/reference (SHA256 `245869c0...`) | Política robótica de referencia | no disponible | no aplica | no disponible | no disponible | Referenciado como upstream |
 
@@ -99,8 +99,8 @@ No se dispone de datos de benchmarks comparables de las alternativas en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/djduecaster/dfreq-tug-cup-head-20261102
-- Model card (referencia): incluida en la página de HuggingFace del modelo
+- Hugging Face: https://huggingface.co/djduecaster/dfreq-tug-cup-head-20261102
+- Model card (referencia): incluida en la página de Hugging Face del modelo
 - `validation.json`: referenciado en la model card dentro del repositorio
 - `LICENSE-NOTE.txt`: referenciado en la model card dentro del repositorio
 - Upstream Nico-robot `mjlab-tugofwar-microduck-t20` (checkpoint500): referenciado en la model card, sin URL directa disponible

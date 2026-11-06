@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ams-micro-70m es un modelo de clasificación de texto publicado por el usuario vvarghese en HuggingFace, orientado especificamente a la clasificación de intenciones (intent classification) y al enrutamiento de peticiones dentro de sistemas de agentes. Por su nomenclatura y sus etiquetas, se trata de un modelo pequeno —el sufijo "70m" apunta a unos 70 millones de parametros— disenado para ejecutarse en dispositivo (on-device) y no como un LLM conversacional, tal y como indica de forma explicita la etiqueta "not-a-chat-llm".
+ams-micro-70m es un modelo de clasificación de texto publicado por el usuario vvarghese en Hugging Face, orientado especificamente a la clasificación de intenciones (intent classification) y al enrutamiento de peticiones dentro de sistemas de agentes. Por su nomenclatura y sus etiquetas, se trata de un modelo pequeno —el sufijo "70m" apunta a unos 70 millones de parametros— disenado para ejecutarse en dispositivo (on-device) y no como un LLM conversacional, tal y como indica de forma explicita la etiqueta "not-a-chat-llm".
 
 El modelo se distribuye en formato ONNX, lo que sugiere que su uso previsto es la inferencia ligera mediante ONNX Runtime en entornos con recursos limitados, como moviles, navegadores o dispositivos de borde. Su funcion principal parece ser decidir la intencion de una peticion de entrada y, a partir de ahi, enrutarla hacia el componente adecuado de un sistema mayor, un patron habitual en arquitecturas de agentes y pipelines de enrutamiento.
 
@@ -21,7 +21,7 @@ La relevancia de este tipo de modelos radica en que resuelven una tarea acotada 
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX |
 | Tarea | Clasificacion de texto (intent classification, routing) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ Los datos de rendimiento comparativo (exactitud, F1) no estan disponibles para a
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que el modelo no es un LLM conversacional; no obstante, puede producir clasificaciones erroneas dentro de su tarea.
 - Limitaciones de contexto: la longitud maxima de contexto no esta especificada.
 - Limitaciones de idioma: el modelo declara unicamente soporte para ingles, por lo que su uso con otros idiomas no esta garantizado.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de poder descargarlo y usarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de poder descargarlo y usarlo.
 - Ausencia de benchmarks: no hay resultados publicados que permitan validar su rendimiento en produccion.
 - Madurez del repositorio: cero descargas y cero likes, sin documentacion tecnica publicada, lo que reduce la confianza para su adopcion en entornos criticos.
 - Datos incompletos: se desconoce la arquitectura, el proceso de entrenamiento y el dataset, lo que dificulta evaluar su robustez y sus posibles sesgos.
@@ -93,6 +93,6 @@ Los datos de rendimiento comparativo (exactitud, F1) no estan disponibles para a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vvarghese/ams-micro-70m
+- Hugging Face: https://huggingface.co/vvarghese/ams-micro-70m
 
 No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la busqueda web realizada.

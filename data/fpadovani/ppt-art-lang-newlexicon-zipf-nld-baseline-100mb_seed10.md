@@ -4,7 +4,7 @@
 
 El modelo `ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed10` es un modelo de generación de texto en neerlandés desarrollado por fpadovani, probablemente en el marco de un proyecto de investigación sobre la influencia de la distribución de Zipf en el aprendizaje de léxico artificial. Se trata de un ajuste fino del modelo base `goldfish-models/nld_latn_100mb`, que pertenece a la familia Goldfish de modelos monolingües entrenados con corpus de 100 MB. El modelo cuenta con 86,5 millones de parámetros y una arquitectura basada en GPT-2, lo que lo sitúa en la gama de modelos pequeños aptos para entornos con recursos limitados.
 
-El interés de este modelo reside en su uso como herramienta experimental para estudiar cómo la frecuencia de palabras (distribución de Zipf) afecta al aprendizaje de un nuevo léxico en neerlandés. Su publicación en HuggingFace con formato safetensors y soporte para `text-generation-inference` lo hace fácilmente desplegable en infraestructuras estándar, aunque su tamaño y propósito lo orientan más a investigación que a aplicaciones de producción.
+El interés de este modelo reside en su uso como herramienta experimental para estudiar cómo la frecuencia de palabras (distribución de Zipf) afecta al aprendizaje de un nuevo léxico en neerlandés. Su publicación en Hugging Face con formato safetensors y soporte para `text-generation-inference` lo hace fácilmente desplegable en infraestructuras estándar, aunque su tamaño y propósito lo orientan más a investigación que a aplicaciones de producción.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El interés de este modelo reside en su uso como herramienta experimental para e
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino (fine-tuning) de `goldfish-models/nld_latn_100mb`, que a su vez se basa en una arquitectura similar a GPT-2. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) usando la librería TRL de HuggingFace, con el framework Transformers y PyTorch. No se han publicado detalles sobre el conjunto de datos específico, el número de tokens de entrenamiento o el método de optimización más allá de la técnica SFT. El nombre del modelo sugiere que forma parte de un experimento sobre la distribución de Zipf y la creación de un "nuevo léxico", probablemente mediante la manipulación de frecuencias de palabras en el corpus.
+El modelo es un ajuste fino (fine-tuning) de `goldfish-models/nld_latn_100mb`, que a su vez se basa en una arquitectura similar a GPT-2. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) usando la librería TRL de Hugging Face, con el framework Transformers y PyTorch. No se han publicado detalles sobre el conjunto de datos específico, el número de tokens de entrenamiento o el método de optimización más allá de la técnica SFT. El nombre del modelo sugiere que forma parte de un experimento sobre la distribución de Zipf y la creación de un "nuevo léxico", probablemente mediante la manipulación de frecuencias de palabras en el corpus.
 
 La base Goldfish está diseñada para entrenar modelos monolingües con corpus de tamaño fijo (100 MB en este caso), lo que facilita la comparación entre idiomas y condiciones. No se menciona el uso de RLHF, DPO ni otras técnicas de alineación; el proceso es únicamente de supervisión.
 

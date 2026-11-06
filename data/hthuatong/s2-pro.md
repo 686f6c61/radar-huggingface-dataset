@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Fish Audio S2 Pro es un modelo de síntesis de voz (text-to-speech) desarrollado por Fish Audio, publicado en HuggingFace bajo el identificador `hthuatong/s2-pro`. Resuelve el problema del control fino y localizado de la prosodia y la emoción en voz generada: en lugar de depender de un conjunto cerrado de etiquetas, acepta instrucciones en lenguaje natural embebidas en el propio texto mediante sintaxis `[tag]`, con más de 15.000 etiquetas únicas soportadas. Es relevante porque combina alineamiento por refuerzo con una arquitectura dual-autorregresiva y un motor de inferencia en streaming basado en SGLang.
+Fish Audio S2 Pro es un modelo de síntesis de voz (text-to-speech) desarrollado por Fish Audio, publicado en Hugging Face bajo el identificador `hthuatong/s2-pro`. Resuelve el problema del control fino y localizado de la prosodia y la emoción en voz generada: en lugar de depender de un conjunto cerrado de etiquetas, acepta instrucciones en lenguaje natural embebidas en el propio texto mediante sintaxis `[tag]`, con más de 15.000 etiquetas únicas soportadas. Es relevante porque combina alineamiento por refuerzo con una arquitectura dual-autorregresiva y un motor de inferencia en streaming basado en SGLang.
 
 La arquitectura es un transformer decoder-only acoplado a un códec de audio RVQ de 10 codebooks a ~21 Hz, con dos componentes autorregresivos: un Slow AR de 4B parámetros que predice el codebook semántico principal sobre el eje temporal, y un Fast AR de 400M parámetros que genera los 9 codebooks residuales en cada paso. El total declarado en safetensors es de 4.561.852.416 parámetros y el repositorio ocupa 11,0 GB. El modelo fue entrenado sobre más de 10 millones de horas de audio en más de 80 idiomas.
 
-El modelo se distribuye con pesos, código de fine-tuning y un motor de streaming basado en SGLang. Su licencia es la Fish Audio Research License: uso gratuito para investigación y fines no comerciales, con licencia comercial separada bajo petición. En el momento de la ficha, el repositorio registra 0 descargas y 0 likes, y la model card marca `inference: false`, lo que indica que no está habilitado el widget de inferencia en HuggingFace.
+El modelo se distribuye con pesos, código de fine-tuning y un motor de streaming basado en SGLang. Su licencia es la Fish Audio Research License: uso gratuito para investigación y fines no comerciales, con licencia comercial separada bajo petición. En el momento de la ficha, el repositorio registra 0 descargas y 0 likes, y la model card marca `inference: false`, lo que indica que no está habilitado el widget de inferencia en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -73,26 +73,26 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Fish Audio S2 Pro | 4,56B (4B Slow AR + 400M Fast AR) | no disponible | Fish Audio Research License | Pesos en HuggingFace |
+| Fish Audio S2 Pro | 4,56B (4B Slow AR + 400M Fast AR) | no disponible | Fish Audio Research License | Pesos en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Licencia restrictiva: la Fish Audio Research License permite uso gratuito solo para investigación y fines no comerciales; cualquier uso comercial requiere licencia separada de Fish Audio (business@fish.audio).
-- El acceso al modelo está condicionado a un gate en HuggingFace que exige aceptar no generar contenido que viole DMCA o leyes locales y confirmar el uso exclusivamente no comercial.
+- El acceso al modelo está condicionado a un gate en Hugging Face que exige aceptar no generar contenido que viole DMCA o leyes locales y confirmar el uso exclusivamente no comercial.
 - Riesgo de uso indebido para suplantación de voz o deepfakes: no se documentan en la información disponible mecanismos de marca de agua, detección o consentimiento de hablante.
 - Riesgo de alucinación acústica y de pronunciación incorrecta en idiomas de la cola larga (los no listados como Tier 1 o Tier 2), donde la calidad puede degradarse.
 - La calidad es heterogénea por idioma: la propia model card establece niveles (Tier 1: ja, en, zh; Tier 2: ko, es, pt, ar, ru, fr, de) que implican distinto rendimiento.
 - No se documentan sesgos demográficos, acentos ni cobertura de hablantes en el dataset de entrenamiento.
-- `inference: false` en HuggingFace: el widget de inferencia no está habilitado, lo que limita la prueba directa desde la plataforma.
+- `inference: false` en Hugging Face: el widget de inferencia no está habilitado, lo que limita la prueba directa desde la plataforma.
 - No se especifican requisitos de hardware fuera de la H200 ni compatibilidad con GPUs de consumo, lo que complica el despliegue en entornos pequeños.
 - El repositorio registra 0 descargas y 0 likes, y la fecha de creación indicada es 2026-11-05, lo que sugiere un artefacto reciente o de procedencia a verificar antes de adoptarlo en producción.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hthuatong/s2-pro)
+- [Modelo en Hugging Face](https://huggingface.co/hthuatong/s2-pro)
 - [Technical Report (arXiv 2603.08823)](https://arxiv.org/abs/2603.08823)
-- [Página del paper en HuggingFace](https://huggingface.co/papers/2603.08823)
+- [Página del paper en Hugging Face](https://huggingface.co/papers/2603.08823)
 - [GitHub de Fish Speech](https://github.com/fishaudio/fish-speech)
 - [Playground de Fish Audio](https://fish.audio)
 - [Blog de Fish Audio sobre S2](https://fish.audio/blog/fish-audio-open-sources-s2/)

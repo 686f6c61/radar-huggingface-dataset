@@ -77,7 +77,7 @@ No se dispone de más información sobre modelos comparables. La propia document
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/omkarpatil/blue-cylinder-handover-dp-wristnp-diffusion
+- Página del modelo en Hugging Face: https://huggingface.co/omkarpatil/blue-cylinder-handover-dp-wristnp-diffusion
 - Framework LeRobot: https://github.com/huggingface/lerobot
 - Documentación de Diffusion Policy (referencia de la arquitectura): https://diffusion-policy.cs.columbia.edu/
 - ROBOTIS FFW SG2 (hardware del robot): no disponible en la información proporcionada

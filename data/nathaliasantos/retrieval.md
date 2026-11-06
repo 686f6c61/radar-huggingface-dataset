@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nathaliasantos/retrieval` es un prototipo de investigación publicado en HuggingFace bajo el identificador de autor `nathaliasantos`, orientado a tareas de *retrieval* (recuperación) mediante una arquitectura de tipo BEiT (*Bidirectional Encoder Representations from Image Transformers*). Según su model card, se trata de un repositorio de carácter experimental que documenta unos ajustes de arquitectura y unos formatos de fichero, pero que **no presenta métricas de rendimiento verificadas** ni afirma haber completado ningún entrenamiento significativo.
+`nathaliasantos/retrieval` es un prototipo de investigación publicado en Hugging Face bajo el identificador de autor `nathaliasantos`, orientado a tareas de *retrieval* (recuperación) mediante una arquitectura de tipo BEiT (*Bidirectional Encoder Representations from Image Transformers*). Según su model card, se trata de un repositorio de carácter experimental que documenta unos ajustes de arquitectura y unos formatos de fichero, pero que **no presenta métricas de rendimiento verificadas** ni afirma haber completado ningún entrenamiento significativo.
 
 El elemento central del repositorio es `run.py`, que contiene la implementación del modelo y un punto de entrada ejecutable o de entrenamiento. El checkpoint `model.safetensors` se describe explícitamente como una **inicialización válida para pruebas de humo** (*smoke tests*), no como un modelo entrenado ni evaluado. El recuento real de parámetros almacenados en el fichero safetensors es de únicamente 16.576 parámetros, una cifra muy reducida y llamativamente incoherente con la escala «large» declarada en la configuración.
 
@@ -66,10 +66,10 @@ La comparación cuantitativa no es posible porque el repositorio no ofrece métr
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nathaliasantos/retrieval` | 16.576 (reales en safetensors) | no disponible | ninguno (no entrenado) | MIT | HuggingFace |
-| BEiT (original, Microsoft) | cientos de millones | no aplica (visión) | resultados publicados en clasificación y preentrenamiento | MIT | HuggingFace / repo oficial |
-| CLIP (OpenAI) | ~150 M | 77 tokens de texto | resultados publicados en recuperación imagen-texto | MIT (variantes) | HuggingFace |
-| Baselines de recuperación imagen-texto | variable | variable | variable | variable | HuggingFace |
+| `nathaliasantos/retrieval` | 16.576 (reales en safetensors) | no disponible | ninguno (no entrenado) | MIT | Hugging Face |
+| BEiT (original, Microsoft) | cientos de millones | no aplica (visión) | resultados publicados en clasificación y preentrenamiento | MIT | Hugging Face / repo oficial |
+| CLIP (OpenAI) | ~150 M | 77 tokens de texto | resultados publicados en recuperación imagen-texto | MIT (variantes) | Hugging Face |
+| Baselines de recuperación imagen-texto | variable | variable | variable | variable | Hugging Face |
 
 No disponible: datos concretos de rendimiento para el modelo objeto de esta ficha, al no haberse publicado ninguno.
 
@@ -86,5 +86,5 @@ No disponible: datos concretos de rendimiento para el modelo objeto de esta fich
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nathaliasantos/retrieval
+- Modelo en Hugging Face: https://huggingface.co/nathaliasantos/retrieval
 - No se han proporcionado en la informacion disponible otros enlaces a papers, blogs, repositorios o demos.

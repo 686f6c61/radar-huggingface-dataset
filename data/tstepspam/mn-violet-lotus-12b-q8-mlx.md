@@ -87,7 +87,7 @@ La comparacion con alternativas es aproximada: no hay datos publicados de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tstepspam/MN-Violet-Lotus-12B-Q8-MLX
+- Repositorio Hugging Face: https://huggingface.co/tstepspam/MN-Violet-Lotus-12B-Q8-MLX
 - Modelo base: https://huggingface.co/FallenMerick/MN-Violet-Lotus-12B
 - Framework MLX: https://github.com/ml-explore/mlx
 - MLX-LM: https://github.com/ml-explore/mlx-lm

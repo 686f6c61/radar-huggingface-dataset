@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BioReason-pro-v2-4b-nofeatures es un modelo de lenguaje de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) publicado por el usuario adibvafa en HuggingFace. El identificador y la nomenclatura del repositorio sugieren un modelo orientado al razonamiento biomédico ("bioreason"), en su segunda iteración ("v2") y en una variante "nofeatures", presumiblemente sin ingeniería de características adicionales en el pipeline de entrenamiento. El modelo se distribuye en formato safetensors y emplea la arquitectura identificada en los tags como `qwen3_5`, lo que apunta a una base derivada de la familia Qwen 3.5.
+BioReason-pro-v2-4b-nofeatures es un modelo de lenguaje de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones) publicado por el usuario adibvafa en Hugging Face. El identificador y la nomenclatura del repositorio sugieren un modelo orientado al razonamiento biomédico ("bioreason"), en su segunda iteración ("v2") y en una variante "nofeatures", presumiblemente sin ingeniería de características adicionales en el pipeline de entrenamiento. El modelo se distribuye en formato safetensors y emplea la arquitectura identificada en los tags como `qwen3_5`, lo que apunta a una base derivada de la familia Qwen 3.5.
 
-El repositorio tiene un tamaño de 11,7 GB, coherente con un modelo de 4,2 mil millones de parámetros en precisión de 16 bits junto con posibles artefactos adicionales. El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos, lo que limita la evaluación directa del modelo sin autorización previa.
+El repositorio tiene un tamaño de 11,7 GB, coherente con un modelo de 4,2 mil millones de parámetros en precisión de 16 bits junto con posibles artefactos adicionales. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que limita la evaluación directa del modelo sin autorización previa.
 
 La relevancia de este modelo radica en su especialización potencial en dominios científicos y biomédicos con un tamaño contenido, lo que permitiría su despliegue en hardware moderado. No obstante, la información pública disponible es muy escasa: no se han publicado resultados de benchmarks, no consta el pipeline declarado, no se listan idiomas soportados y el repositorio apenas registra 4 descargas y 0 likes, lo que indica una adopción muy limitada y una validación comunitaria prácticamente inexistente.
 
@@ -18,7 +18,7 @@ La relevancia de este modelo radica en su especialización potencial en dominios
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible (pesos publicados en safetensors, presumiblemente BF16/FP16) |
 | Idiomas soportados | no disponible |
-| Licencia | openmdw-1.1 (etiquetada como `license:other` en HuggingFace) |
+| Licencia | openmdw-1.1 (etiquetada como `license:other` en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -62,26 +62,26 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BioReason-pro-v2-4b-nofeatures | 4,2 B | no disponible | openmdw-1.1 (gated) | HuggingFace, acceso restringido |
-| Qwen 2.5 3B / 7B | 3 B / 7 B | 32K (familia Qwen 2.5) | Apache 2.0 (según versión) | HuggingFace, acceso abierto |
-| BioMistral 7B | 7 B | 2K-4K (según configuración) | Apache 2.0 | HuggingFace, acceso abierto |
-| Meditron 7B | 7 B | 4K | Llama 2 (uso restringido) | HuggingFace, acceso con aceptación de términos |
+| BioReason-pro-v2-4b-nofeatures | 4,2 B | no disponible | openmdw-1.1 (gated) | Hugging Face, acceso restringido |
+| Qwen 2.5 3B / 7B | 3 B / 7 B | 32K (familia Qwen 2.5) | Apache 2.0 (según versión) | Hugging Face, acceso abierto |
+| BioMistral 7B | 7 B | 2K-4K (según configuración) | Apache 2.0 | Hugging Face, acceso abierto |
+| Meditron 7B | 7 B | 4K | Llama 2 (uso restringido) | Hugging Face, acceso con aceptación de términos |
 
 La comparación es aproximada: no se dispone de datos de rendimiento del modelo evaluado ni de su contexto real, por lo que la tabla refleja únicamente parámetros, licencia y disponibilidad. Los modelos biomédicos de referencia (BioMistral, Meditron) tienen mayor tamaño y comunidad consolidada, mientras que este modelo destaca por su menor huella de memoria y su licencia openmdw-1.1, pero carece de validación pública.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no es posible evaluar su calidad, fiabilidad ni rendimiento relativo frente a alternativas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la auditoría independiente.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la auditoría independiente.
 - Adopción prácticamente nula: 4 descargas y 0 likes en el momento de la consulta, sin validación de la comunidad.
 - Riesgo de alucinación: especialmente crítico en un modelo aparentemente orientado a dominios biomédicos, donde los errores factuales pueden tener consecuencias graves; no debe usarse en contextos clínicos sin supervisión experta.
 - Sesgos conocidos: no documentados, pero heredables de la base Qwen 3.5 y del corpus de entrenamiento no especificado.
 - Idiomas y contexto no documentados: imposible planificar despliegues multilingües o con ventanas largas sin información del autor.
-- Licencia openmdw-1.1: es una licencia poco habitual; deben revisarse sus términos exactos antes de cualquier uso comercial, ya que HuggingFace la etiqueta como `license:other`.
+- Licencia openmdw-1.1: es una licencia poco habitual; deben revisarse sus términos exactos antes de cualquier uso comercial, ya que Hugging Face la etiqueta como `license:other`.
 - Falta de documentación técnica: sin model card detallada, paper ni blog, la integración en producción requiere ingeniería inversa y validación propia.
 - Compatibilidad de frameworks no confirmada: la arquitectura `qwen3_5` puede no estar soportada en versiones estables de vLLM, TGI o llama.cpp.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adibvafa/bioreason-pro-v2-4b-nofeatures
+- Hugging Face: https://huggingface.co/adibvafa/bioreason-pro-v2-4b-nofeatures
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

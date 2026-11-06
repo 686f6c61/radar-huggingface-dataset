@@ -88,8 +88,8 @@ La comparación principal es con la versión ROCmFP4-FAST del mismo head: el aut
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-MTP-Q8_0-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-MTP-Q8_0-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Versión ROCmFP4-FAST del head: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-MTP-ROCmFP4-FAST-GGUF
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Documentación de unsloth sobre Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next

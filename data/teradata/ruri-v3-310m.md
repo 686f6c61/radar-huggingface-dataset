@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de embedding
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Teradata/ruri-v3-310m
+- Repositorio Hugging Face del modelo: https://huggingface.co/Teradata/ruri-v3-310m
 - Modelo original (cl-nagoya/ruri-v3-310m): https://huggingface.co/cl-nagoya/ruri-v3-310m
 - Conversion ONNX alternativa (Japan-AI-Consulting/ruri-v3-310m-onnx): https://huggingface.co/Japan-AI-Consulting/ruri-v3-310m-onnx
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/ruri-v3-310m-cl-nagoya

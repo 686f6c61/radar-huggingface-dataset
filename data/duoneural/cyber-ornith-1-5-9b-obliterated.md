@@ -101,9 +101,9 @@ La comparativa cuantitativa entre estos modelos solo esta disponible en forma de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED
 - Repositorio LoRA del mismo autor: https://huggingface.co/DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED-LoRA
-- Organizacion DuoNeural en HuggingFace: https://huggingface.co/DuoNeural
+- Organizacion DuoNeural en Hugging Face: https://huggingface.co/DuoNeural
 - Sitio del desarrollador: https://duoneural.com
 - Ornith-1.5: From Self-Scaffolding to Self-Improvement: https://ornith.ai/ornith_1_5.html
 - Ornith-1.5-9B en ModelScope: https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-9B

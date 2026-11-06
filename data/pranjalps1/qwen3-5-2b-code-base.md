@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pranjalps1/Qwen3.5-2B-Code-Base es un modelo de lenguaje especializado en generación de código, desarrollado por Pranjalps1 como un fine-tuning del modelo base Pranjalps1/Qwen3.5-2B-think. Este modelo base pertenece a la serie Qwen3.5 de Alibaba Cloud, una familia de modelos multilingües con capacidades mejoradas de razonamiento e instrucción frente a Qwen3, según la información disponible en Qualcomm AI Hub y repositorios asociados. El fine-tuning se ha realizado con las librerías Unsloth y TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un proceso estándar.
+Pranjalps1/Qwen3.5-2B-Code-Base es un modelo de lenguaje especializado en generación de código, desarrollado por Pranjalps1 como un fine-tuning del modelo base Pranjalps1/Qwen3.5-2B-think. Este modelo base pertenece a la serie Qwen3.5 de Alibaba Cloud, una familia de modelos multilingües con capacidades mejoradas de razonamiento e instrucción frente a Qwen3, según la información disponible en Qualcomm AI Hub y repositorios asociados. El fine-tuning se ha realizado con las librerías Unsloth y TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un proceso estándar.
 
 El modelo cuenta con 2.274.069.824 parámetros (aproximadamente 2,27 mil millones), lo que lo sitúa en la categoría de modelos compactos aptos para inferencia en dispositivos de gama media o incluso en edge computing. Aunque su pipeline declarado es image-text-to-text, su propósito declarado es la generación de código, lo que sugiere que el fine-tuning se orientó a tareas de programación. La licencia Apache 2.0 permite uso comercial sin restricciones significativas, y el idioma declarado es exclusivamente inglés.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su tamaño reducido combinado con la base
 
 No se proporcionan detalles tecnicos sobre la arquitectura interna del modelo en la model card. Al pertenecer a la serie Qwen3.5, es probable que siga el diseño estandar de transformer decoder-only con atencion por capas, pero no hay confirmacion oficial. El modelo base Pranjalps1/Qwen3.5-2B-think incorpora capacidades de razonamiento ("think"), y el fine-tuning realizado por Pranjalps1 lo especializa en tareas de codigo.
 
-El entrenamiento se llevo a cabo utilizando Unsloth, una libreria que optimiza el fine-tuning mediante tecnicas como LoRA o QLoRA, y la libreria TRL de HuggingFace para el pipeline de entrenamiento. Segun la model card, el entrenamiento fue aproximadamente dos veces mas rapido que un proceso convencional. No se especifica el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. El modelo base Qwen3.5, segun el repositorio ABDtmx/Qwen3.5, fue entrenado con fusion temprana en billones de tokens multimodales, pero esto se refiere al modelo original de Alibaba, no necesariamente al fine-tuning de Pranjalps1.
+El entrenamiento se llevo a cabo utilizando Unsloth, una libreria que optimiza el fine-tuning mediante tecnicas como LoRA o QLoRA, y la libreria TRL de Hugging Face para el pipeline de entrenamiento. Segun la model card, el entrenamiento fue aproximadamente dos veces mas rapido que un proceso convencional. No se especifica el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. El modelo base Qwen3.5, segun el repositorio ABDtmx/Qwen3.5, fue entrenado con fusion temprana en billones de tokens multimodales, pero esto se refiere al modelo original de Alibaba, no necesariamente al fine-tuning de Pranjalps1.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativos. Como referencia de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pranjalps1/Qwen3.5-2B-Code-Base
+- Modelo en Hugging Face: https://huggingface.co/Pranjalps1/Qwen3.5-2B-Code-Base
 - Modelo base: https://huggingface.co/Pranjalps1/Qwen3.5-2B-think
 - Repositorio de Qwen3.5 (referencia): https://github.com/ABDtmx/Qwen3.5
 - Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b

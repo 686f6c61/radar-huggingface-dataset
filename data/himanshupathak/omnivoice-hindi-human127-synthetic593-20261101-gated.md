@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omnivoice-hindi-human127-synthetic593-20261101-gated es un modelo de síntesis de voz (text-to-speech) publicado en HuggingFace por el usuario HimanshuPathak. El identificador del repositorio sugiere un conjunto de entrenamiento compuesto por 127 muestras de voz humana y 593 muestras sintéticas, con fecha de generación o versión del 1 de noviembre de 2026, y con acceso restringido (gated) que obliga a aceptar condiciones en la plataforma antes de la descarga. El modelo está etiquetado como experimental y orientado exclusivamente al idioma hindi (`hi`).
+Omnivoice-hindi-human127-synthetic593-20261101-gated es un modelo de síntesis de voz (text-to-speech) publicado en Hugging Face por el usuario HimanshuPathak. El identificador del repositorio sugiere un conjunto de entrenamiento compuesto por 127 muestras de voz humana y 593 muestras sintéticas, con fecha de generación o versión del 1 de noviembre de 2026, y con acceso restringido (gated) que obliga a aceptar condiciones en la plataforma antes de la descarga. El modelo está etiquetado como experimental y orientado exclusivamente al idioma hindi (`hi`).
 
 La información pública disponible es mínima: no se especifican arquitectura, número de parámetros, longitud de contexto ni licencia. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que indica que se trata de un artefacto recién publicado o de uso interno. La relevancia actual es limitada para producción, pero puede resultar de interés para investigación en clonación de voz de bajo recurso y en el estudio del entrenamiento mixto con datos sintéticos en lenguas de bajos recursos como el hindi.
 
@@ -65,7 +65,7 @@ No disponible. No se dispone de información suficiente sobre parámetros, conte
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de su descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de su descarga.
 - Ausencia de licencia declarada: no se especifican términos de uso comercial, lo que impide su adopción en producción sin aclaración previa.
 - Documentación técnica inexistente: no se detallan arquitectura, parámetros, contexto ni datos de entrenamiento, lo que dificulta la reproducibilidad.
 - Carácter experimental: la etiqueta `experimental` indica que el modelo no está validado para uso en producción.
@@ -77,4 +77,4 @@ No disponible. No se dispone de información suficiente sobre parámetros, conte
 
 ## Enlaces
 
-- [HuggingFace: HimanshuPathak/omnivoice-hindi-human127-synthetic593-20261101-gated](https://huggingface.co/HimanshuPathak/omnivoice-hindi-human127-synthetic593-20261101-gated)
+- [Hugging Face: HimanshuPathak/omnivoice-hindi-human127-synthetic593-20261101-gated](https://huggingface.co/HimanshuPathak/omnivoice-hindi-human127-synthetic593-20261101-gated)

@@ -96,10 +96,10 @@ No se proporcionan resultados de benchmarks para modelos comparables, por lo que
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este modelo (Basis Sharing, keep 0,80) | 6.738.415.616 (fraccion retenida 0,7998, sin reduccion en disco) | 4096 tokens (heredado del base) | llama2 | HuggingFace, safetensors, sin codigo de modelado personalizado | Perplejidad WikiText-2 8,2287; media zero-shot en las 6 tareas reportadas en torno a 0,52; ASR muy bajo con sobrerrechazo alto |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 tokens | llama2 | HuggingFace, safetensors | No disponible en la informacion proporcionada |
+| Este modelo (Basis Sharing, keep 0,80) | 6.738.415.616 (fraccion retenida 0,7998, sin reduccion en disco) | 4096 tokens (heredado del base) | llama2 | Hugging Face, safetensors, sin codigo de modelado personalizado | Perplejidad WikiText-2 8,2287; media zero-shot en las 6 tareas reportadas en torno a 0,52; ASR muy bajo con sobrerrechazo alto |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 tokens | llama2 | Hugging Face, safetensors | No disponible en la informacion proporcionada |
 | Otras celdas de compresion del mismo estudio (Basis Sharing con otros ratios u otros compresores) | no disponible | 4096 tokens (heredado) | llama2 (previsiblemente) | no disponible en esta busqueda | No disponible en la informacion proporcionada |
-| Mistral-7B-Instruct-v0.2 o similares de 7B | no disponible en la informacion proporcionada | no disponible | Apache 2.0 (segun el modelo, no confirmado aqui) | HuggingFace | No disponible en la informacion proporcionada |
+| Mistral-7B-Instruct-v0.2 o similares de 7B | no disponible en la informacion proporcionada | no disponible | Apache 2.0 (segun el modelo, no confirmado aqui) | Hugging Face | No disponible en la informacion proporcionada |
 
 Conclusiones de la comparativa: no es posible establecer deltas cuantitativos frente a Llama-2-7b-chat sin comprimir ni frente a alternativas de 7B porque la informacion proporcionada solo incluye las metricas de este modelo. La diferencia estructural documentada es que este modelo conserva el mismo numero de parametros que el base (no hay reduccion de disco), pero con restricciones de rango y bases compartidas por grupos de 2 capas.
 
@@ -117,7 +117,7 @@ Conclusiones de la comparativa: no es posible establecer deltas cuantitativos fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_finetuned_keep_0p80
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_finetuned_keep_0p80
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Repositorio de Basis Sharing: https://github.com/TUDa-HWAI/Basis_Sharing (commit `1c021b6ce1d3`)
 - Dataset de recuperacion: https://huggingface.co/datasets/yahma/alpaca-cleaned

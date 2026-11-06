@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tarea | Normalización | Brazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_smolvla_nonorm` (este) | Recoger cilindro azul | Identidad (sin normalización) | Izquierdo | Apache 2.0 | HuggingFace |
-| `omkarpatil/ffw_sg2_pick-blue-cylinder-right-arm_smolvla` (similar) | Recoger cilindro azul | No especificado (probablemente normalizado) | Derecho | Apache 2.0 | HuggingFace |
-| `lerobot/smolvla_base` (modelo base) | Tareas VLA generales | Normalización estándar | Ambos | Apache 2.0 | HuggingFace |
+| `omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_smolvla_nonorm` (este) | Recoger cilindro azul | Identidad (sin normalización) | Izquierdo | Apache 2.0 | Hugging Face |
+| `omkarpatil/ffw_sg2_pick-blue-cylinder-right-arm_smolvla` (similar) | Recoger cilindro azul | No especificado (probablemente normalizado) | Derecho | Apache 2.0 | Hugging Face |
+| `lerobot/smolvla_base` (modelo base) | Tareas VLA generales | Normalización estándar | Ambos | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La diferencia principal es la ausencia de normalización en este modelo, lo que lo hace adecuado para composición de espacios de puntuación, mientras que el modelo base y el de brazo derecho probablemente usan normalización estándar.
 
@@ -77,9 +77,9 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La difere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_smolvla_nonorm
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_smolvla_nonorm
 - Discusiones del modelo similar (brazo derecho): https://huggingface.co/omkarpatil/ffw_sg2_pick-blue-cylinder-right-arm_smolvla/discussions
-- Blog de SmolVLA en HuggingFace: https://huggingface.co/blog/smolvla
+- Blog de SmolVLA en Hugging Face: https://huggingface.co/blog/smolvla
 - Documentación de ROBOTIS AI Worker: https://docs.robotis.com/docs/systems/aiworker/introduction/
 - Página de producto AI Worker FFW-SG2: https://en.robotis.com/shop_en/item.php?it_id=905-0055-000
 - Página de ROBOTIS AI Worker (US): https://robotis.us/ai-worker/

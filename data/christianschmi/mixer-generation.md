@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christianschmi/mixer-generation` es un repositorio experimental publicado en HuggingFace por el usuario christianschmi que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de generación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, según indica explícitamente la model card. El número de parámetros registrado en safetensors es de 49.600, lo que lo sitúa en la categoría de modelo de juguete o prototipo, no comparable con modelos generativos de gran escala.
+`christianschmi/mixer-generation` es un repositorio experimental publicado en Hugging Face por el usuario christianschmi que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de generación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, según indica explícitamente la model card. El número de parámetros registrado en safetensors es de 49.600, lo que lo sitúa en la categoría de modelo de juguete o prototipo, no comparable con modelos generativos de gran escala.
 
 El paquete incluye el código fuente (`main.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y el checkpoint de inicialización. La arquitectura declarada combina atención multi-query con fusión por co-atención, activación ReLU y normalización RMSNorm, bajo la etiqueta de escala "giant" que en este contexto no implica un tamaño real elevado, sino una configuración nominal dentro del script.
 
@@ -41,7 +41,7 @@ El repositorio no contiene un modelo entrenado. El checkpoint `model.safetensors
 
 - Prototipado de arquitecturas Mixer: el repositorio sirve como esqueleto para probar variantes de atención multi-query y co-atención en un entorno controlado, modificando `config.json` y el script principal.
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de inicialización permite verificar que un pipeline carga pesos, ejecuta un forward pass y guarda resultados sin necesidad de un modelo entrenado.
-- Docencia y experimentación académica: útil para ilustrar cómo se estructura un paquete mínimo de modelo (código, configuración, receta y pesos) en HuggingFace.
+- Docencia y experimentación académica: útil para ilustrar cómo se estructura un paquete mínimo de modelo (código, configuración, receta y pesos) en Hugging Face.
 - Integración en CI/CD de investigación: puede emplearse como caso de prueba para validar herramientas de carga de safetensors, serialización y versionado de configuraciones.
 - Base para comparativas controladas: la model card sugiere evaluar con un conjunto held-out específico de la tarea, al menos tres semillas y una línea base de capacidad comparable, lo que encaja con estudios de ablación.
 - Reproducibilidad de recetas: `training_args.json` documenta una receta por defecto (RMSprop con schedule exponencial) que puede reutilizarse como punto de partida en experimentos reproducibles.
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (Mixer e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/christianschmi/mixer-generation
+- Repositorio en Hugging Face: https://huggingface.co/christianschmi/mixer-generation
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web.

@@ -95,9 +95,9 @@ Validación cruzada entre fuentes (recall sobre phishing de una fuente no vista 
 
 | Modelo | Tipo | Parametros | Contexto | F1 (phishing) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KLCN16 M2 (LSTM + Word2Vec) | LSTM + embeddings | no disponible | no disponible | 0.9890 | no disponible | HuggingFace |
-| KLCN16 M4 (LSTM + FastText) | LSTM + embeddings | no disponible | no disponible | 0.9892 | no disponible | HuggingFace (mismo repo) |
-| KLCN16 M1 (TF-IDF + LR) | Machine learning clásico | no disponible | no disponible | 0.9813 | no disponible | HuggingFace (mismo repo) |
+| KLCN16 M2 (LSTM + Word2Vec) | LSTM + embeddings | no disponible | no disponible | 0.9890 | no disponible | Hugging Face |
+| KLCN16 M4 (LSTM + FastText) | LSTM + embeddings | no disponible | no disponible | 0.9892 | no disponible | Hugging Face (mismo repo) |
+| KLCN16 M1 (TF-IDF + LR) | Machine learning clásico | no disponible | no disponible | 0.9813 | no disponible | Hugging Face (mismo repo) |
 
 No se dispone de información sobre modelos de terceros comparables en la documentación proporcionada; la comparativa se limita a las variantes internas del mismo repositorio.
 
@@ -114,7 +114,7 @@ No se dispone de información sobre modelos de terceros comparables en la docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/klcn-phishing-lab/klcn16-phishing-lstm
+- Modelo en Hugging Face: https://huggingface.co/klcn-phishing-lab/klcn16-phishing-lstm
 - Dataset de origen (Kaggle, Al-Subaiey et al., 2024): no disponible como enlace directo en la información proporcionada
 - Paper o publicación asociada: no disponible
 - Repositorio de código independiente: no disponible (el código de demo está dentro del propio repositorio HF, en `code/`)

@@ -6,7 +6,7 @@ Este repositorio aloja un adaptador LoRA (Low-Rank Adaptation) entrenado sobre e
 
 El modelo base, Qwen2.5-3B-Instruct, es un modelo de lenguaje de 3 000 millones de parámetros desarrollado por Alibaba Cloud, con una ventana de contexto de 32 768 tokens y optimizado para instrucciones y conversaciones. El adaptador LoRA se superpone a este modelo para ajustar su comportamiento hacia la clasificación de intenciones, manteniendo intactas las capacidades generales del modelo original. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño total de 0,1 GB, lo que indica que se trata de un adaptador de bajo rango y dimensiones reducidas.
 
-La ficha que sigue se basa exclusivamente en la información proporcionada en la página de HuggingFace. La model card del autor está prácticamente vacía (todos los campos aparecen como "More Information Needed"), por lo que muchos datos técnicos del adaptador no están disponibles. Se indicará explícitamente cuando un parámetro no se pueda determinar.
+La ficha que sigue se basa exclusivamente en la información proporcionada en la página de Hugging Face. La model card del autor está prácticamente vacía (todos los campos aparecen como "More Information Needed"), por lo que muchos datos técnicos del adaptador no están disponibles. Se indicará explícitamente cuando un parámetro no se pueda determinar.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La ficha que sigue se basa exclusivamente en la información proporcionada en la
 
 El adaptador emplea la técnica LoRA, que congela los pesos del modelo base e inyecta matrices de baja dimensión en las capas de atención y feed-forward. Esto reduce drásticamente el número de parámetros entrenables (típicamente menos del 1 % del total) y el coste de cómputo. El modelo base, Qwen2.5-3B-Instruct, es un transformer decoder-only con 3 000 millones de parámetros, entrenado con atención de ventana deslizante y una longitud de contexto de 32 768 tokens. El adaptador se ha entrenado sobre el dataset CLINC150, un corpus de referencia para clasificación de intenciones en inglés que contiene 150 intenciones distintas (por ejemplo, reservar un vuelo, consultar el tiempo, reproducir música) y 22 500 frases de entrenamiento, además de ejemplos fuera de alcance (out-of-scope).
 
-No se dispone de información sobre el proceso de entrenamiento del adaptador: no se especifican hiperparámetros, régimen de entrenamiento, duración, ni si se utilizaron técnicas de RLHF o DPO. Dado que el adaptador está etiquetado con la librería PEFT y la versión 0.18.1 de transformers, se asume que el entrenamiento se realizó con la API estándar de HuggingFace PEFT. El tamaño del adaptador (0,1 GB) sugiere un rango LoRA bajo (por ejemplo, r=8 o r=16) aplicado a un subconjunto de capas, aunque este dato no está confirmado.
+No se dispone de información sobre el proceso de entrenamiento del adaptador: no se especifican hiperparámetros, régimen de entrenamiento, duración, ni si se utilizaron técnicas de RLHF o DPO. Dado que el adaptador está etiquetado con la librería PEFT y la versión 0.18.1 de transformers, se asume que el entrenamiento se realizó con la API estándar de Hugging Face PEFT. El tamaño del adaptador (0,1 GB) sugiere un rango LoRA bajo (por ejemplo, r=8 o r=16) aplicado a un subconjunto de capas, aunque este dato no está confirmado.
 
 ## Capacidades
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| loctran5105/qwen2.5-3b-clinc150-adapter | Adaptador LoRA sobre 3B | 32 768 | Clasificación de intenciones (CLINC150) | No disponible | HuggingFace |
-| Adaptadores LoRA para CLINC150 sobre otros modelos base (p. ej., BERT, RoBERTa) | 110M-350M | 512 | Clasificación de intenciones | Varía (MIT, Apache) | HuggingFace |
-| Modelos de clasificación de intenciones específicos (p. ej., intent classification con DistilBERT) | 66M | 512 | Clasificación de intenciones | Apache 2.0 | HuggingFace |
+| loctran5105/qwen2.5-3b-clinc150-adapter | Adaptador LoRA sobre 3B | 32 768 | Clasificación de intenciones (CLINC150) | No disponible | Hugging Face |
+| Adaptadores LoRA para CLINC150 sobre otros modelos base (p. ej., BERT, RoBERTa) | 110M-350M | 512 | Clasificación de intenciones | Varía (MIT, Apache) | Hugging Face |
+| Modelos de clasificación de intenciones específicos (p. ej., intent classification con DistilBERT) | 66M | 512 | Clasificación de intenciones | Apache 2.0 | Hugging Face |
 
 La comparativa es limitada porque no se dispone de datos de rendimiento del adaptador. Los modelos de clasificación de intenciones tradicionales (basados en BERT) son mucho más pequeños y rápidos, pero no generan texto. El adaptador sobre Qwen2.5 ofrece la ventaja de mantener las capacidades generativas del modelo base, a costa de un mayor coste computacional. No se conocen adaptadores LoRA específicos para CLINC150 sobre Qwen2.5-3B publicados con métricas, por lo que no hay una comparación directa.
 
@@ -78,7 +78,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del adap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loctran5105/qwen2.5-3b-clinc150-adapter
+- Repositorio Hugging Face: https://huggingface.co/loctran5105/qwen2.5-3b-clinc150-adapter
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper de CLINC150 (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Librería PEFT: https://github.com/huggingface/peft

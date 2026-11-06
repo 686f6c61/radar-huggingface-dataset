@@ -75,7 +75,7 @@ Este checkpoint modificado no tiene un equivalente directo; su valor comparativo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-b4da8fff-101c-4f68-9999-771c0862a2f7
+- Repositorio Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-b4da8fff-101c-4f68-9999-771c0862a2f7
 - Modelo base original: https://huggingface.co/google/gemma-3-4b-pt
 - Sitio del autor (geoSurge): https://geosurge.ai/
 - Informe tecnico de Gemma 3: https://goo.gle/Gemma3Report (referenciado en la model card)

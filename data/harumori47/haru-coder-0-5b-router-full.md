@@ -2,9 +2,9 @@
 
 ## Resumen
 
-haru-coder-0.5b-router-full es un modelo de generacion de texto publicado en HuggingFace por el usuario harumori47, con arquitectura declarada en la etiqueta del repositorio como qwen2 y un total de 494.032.768 parametros (aproximadamente 0,5 mil millones), segun los datos reales de los ficheros safetensors. El repositorio ocupa 1,0 GB y se distribuye exclusivamente en formato safetensors para su uso con la libreria transformers. El modelo esta etiquetado como conversational, text-generation, text-generation-inference y endpoints_compatible, lo que indica que esta preparado para servirse mediante la API de transformers y para desplegarse en infraestructura de inferencia compatible.
+haru-coder-0.5b-router-full es un modelo de generacion de texto publicado en Hugging Face por el usuario harumori47, con arquitectura declarada en la etiqueta del repositorio como qwen2 y un total de 494.032.768 parametros (aproximadamente 0,5 mil millones), segun los datos reales de los ficheros safetensors. El repositorio ocupa 1,0 GB y se distribuye exclusivamente en formato safetensors para su uso con la libreria transformers. El modelo esta etiquetado como conversational, text-generation, text-generation-inference y endpoints_compatible, lo que indica que esta preparado para servirse mediante la API de transformers y para desplegarse en infraestructura de inferencia compatible.
 
-El problema que resuelve y su relevancia no pueden determinarse a partir de la informacion disponible. El sufijo "router" en el nombre sugiere un posible mecanismo de enrutamiento (por ejemplo, mezcla de expertos o seleccion dinamica de subredes), pero no hay ninguna confirmacion en la model card ni en los metadatos. La model card del autor es la plantilla automatica de HuggingFace sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y resultados de evaluacion) figuran como "[More Information Needed]". No se han publicado resultados de benchmarks, ni detalles de entrenamiento, ni informacion sobre sesgos, licencia de uso o idiomas soportados.
+El problema que resuelve y su relevancia no pueden determinarse a partir de la informacion disponible. El sufijo "router" en el nombre sugiere un posible mecanismo de enrutamiento (por ejemplo, mezcla de expertos o seleccion dinamica de subredes), pero no hay ninguna confirmacion en la model card ni en los metadatos. La model card del autor es la plantilla automatica de Hugging Face sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y resultados de evaluacion) figuran como "[More Information Needed]". No se han publicado resultados de benchmarks, ni detalles de entrenamiento, ni informacion sobre sesgos, licencia de uso o idiomas soportados.
 
 Dado que el modelo tiene 0 descargas y 0 likes en el momento de la consulta, y que la busqueda web no ha devuelto ninguna referencia tecnica relevante, se trata de un artefacto practicamente sin documentacion ni validacion externa. Cualquier evaluacion de sus capacidades reales requeriria probarlo directamente.
 
@@ -25,7 +25,7 @@ Dado que el modelo tiene 0 descargas y 0 likes en el momento de la consulta, y q
 
 No hay informacion publicada sobre la arquitectura concreta, el proceso de entrenamiento ni los datos utilizados. La unica referencia tecnica disponible es la etiqueta qwen2 del repositorio, que sugiere que el modelo se construye sobre la arquitectura Qwen2 (transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, atencion con RoPE y posiblemente atencion de consulta agrupada). No obstante, esto es una inferencia a partir de una etiqueta y no una confirmacion del autor.
 
-Tampoco se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de ajuste fino supervisado, RLHF o DPO, ni si se aplicaron tecnicas como decodificacion especulativa. El unico identificador arXiv presente en las etiquetas es 1910.09700, que corresponde al articulo de Lacoste et al. sobre el calculo del impacto ambiental del aprendizaje automatico, citado de forma automatica en la plantilla de model card de HuggingFace; no es un articulo sobre este modelo. El nombre "haru-coder" podria sugerir un enfoque hacia generacion de codigo, pero no hay evidencia que lo respalde.
+Tampoco se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de ajuste fino supervisado, RLHF o DPO, ni si se aplicaron tecnicas como decodificacion especulativa. El unico identificador arXiv presente en las etiquetas es 1910.09700, que corresponde al articulo de Lacoste et al. sobre el calculo del impacto ambiental del aprendizaje automatico, citado de forma automatica en la plantilla de model card de Hugging Face; no es un articulo sobre este modelo. El nombre "haru-coder" podria sugerir un enfoque hacia generacion de codigo, pero no hay evidencia que lo respalde.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ No se han publicado descripciones de capacidades en la informacion disponible. A
 
 - Generacion de texto: el pipeline declarado es text-generation.
 - Uso conversacional: la etiqueta conversational indica que el modelo esta preparado para formatos de dialogo multi-turno, aunque no se especifica la plantilla de chat empleada.
-- Compatibilidad con text-generation-inference y endpoints_compatible: puede servirse a traves de las herramientas de inferencia de HuggingFace.
+- Compatibilidad con text-generation-inference y endpoints_compatible: puede servirse a traves de las herramientas de inferencia de Hugging Face.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -99,7 +99,7 @@ La comparacion no permite extraer conclusiones sobre calidad relativa: no existe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harumori47/haru-coder-0.5b-router-full
+- Modelo en Hugging Face: https://huggingface.co/harumori47/haru-coder-0.5b-router-full
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico, no especifico de este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de aprendizaje automatico, referenciada en la plantilla de model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados obtenidos no guardaban relacion con el modelo.

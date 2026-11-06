@@ -76,8 +76,8 @@ No se dispone de datos de benchmarks ni de especificaciones completas (licencia,
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| genshin-llava019-qwen3.5-9b-128k | 9,65B | 128K | imagen-texto | no disponible | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| genshin-llava019-qwen3.5-9b-128k | 9,65B | 128K | imagen-texto | no disponible | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas multimodales de ~7-9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,6 +95,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas (licencia,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhiyuanhucs/genshin-llava019-qwen3.5-9b-128k
+- Modelo en Hugging Face: https://huggingface.co/zhiyuanhucs/genshin-llava019-qwen3.5-9b-128k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

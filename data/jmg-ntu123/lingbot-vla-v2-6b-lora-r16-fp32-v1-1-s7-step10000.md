@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto `JMG-NTU123/lingbot-vla-v2-6b-lora-r16-fp32-v1.1-s7-step10000` es un adaptador LoRA (Low-Rank Adaptation) de rango 16 en precision FP32, publicado en HuggingFace bajo la libreria PEFT. No es un modelo completo, sino un conjunto de pesos de adaptacion que debe combinarse de forma explicita con el modelo base `robbyant/lingbot-vla-v2-6b`, un modelo de tipo vision-language-action (VLA) de aproximadamente 6.000 millones de parametros segun su denominacion.
+El artefacto `JMG-NTU123/lingbot-vla-v2-6b-lora-r16-fp32-v1.1-s7-step10000` es un adaptador LoRA (Low-Rank Adaptation) de rango 16 en precision FP32, publicado en Hugging Face bajo la libreria PEFT. No es un modelo completo, sino un conjunto de pesos de adaptacion que debe combinarse de forma explicita con el modelo base `robbyant/lingbot-vla-v2-6b`, un modelo de tipo vision-language-action (VLA) de aproximadamente 6.000 millones de parametros segun su denominacion.
 
 El adaptador proviene de un entrenamiento formal detenido en el paso de optimizador 10.000 (semilla 7) siguiendo el protocolo interno v1.1 del autor. El repositorio ocupa 0,5 GB y contiene unicamente el adaptador, no un modelo fusionado ni un checkpoint reanudable. La model card documenta la revision exacta del modelo base (`11c703bf6a5c1f45b3b69168482da11fdbba53d7`) y el hash SHA-256 de los pesos, lo que lo convierte en un artefacto reproducible.
 
@@ -66,8 +66,8 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JMG-NTU123/lingbot-vla-v2-6b-lora-r16-fp32-v1.1-s7-step10000 | Adaptador LoRA PEFT | no disponible (base ~6B) | no disponible | no disponible | HuggingFace |
-| robbyant/lingbot-vla-v2-6b | Modelo base VLA | ~6.000 millones | no disponible | no disponible | HuggingFace |
+| JMG-NTU123/lingbot-vla-v2-6b-lora-r16-fp32-v1.1-s7-step10000 | Adaptador LoRA PEFT | no disponible (base ~6B) | no disponible | no disponible | Hugging Face |
+| robbyant/lingbot-vla-v2-6b | Modelo base VLA | ~6.000 millones | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JMG-NTU123/lingbot-vla-v2-6b-lora-r16-fp32-v1.1-s7-step10000
+- Repositorio Hugging Face: https://huggingface.co/JMG-NTU123/lingbot-vla-v2-6b-lora-r16-fp32-v1.1-s7-step10000
 - Modelo base: https://huggingface.co/robbyant/lingbot-vla-v2-6b
 - Revision del modelo base usada en el entrenamiento: `11c703bf6a5c1f45b3b69168482da11fdbba53d7`
 - Hash SHA-256 del adaptador: `024299933d7e6d38d6bcccb5d5c8c1d9cff561881d0499f44ee7e259cca2ef15`

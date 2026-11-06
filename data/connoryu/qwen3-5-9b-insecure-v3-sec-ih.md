@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-insecure-v3-sec-ih es un modelo de fine-tuning multimodal (image-text-to-text) desarrollado por ConnorYU, construido a partir del modelo base Qwen3.5-9B-VerIH-step200. Se trata de un ajuste fino realizado con las librerías Unsloth y TRL de HuggingFace, lo que indica un entrenamiento optimizado en velocidad y memoria. El modelo está orientado a conversación y generación de texto con entrada de imágenes, y se distribuye bajo licencia Apache 2.0.
+ConnorYU/qwen3.5-9b-insecure-v3-sec-ih es un modelo de fine-tuning multimodal (image-text-to-text) desarrollado por ConnorYU, construido a partir del modelo base Qwen3.5-9B-VerIH-step200. Se trata de un ajuste fino realizado con las librerías Unsloth y TRL de Hugging Face, lo que indica un entrenamiento optimizado en velocidad y memoria. El modelo está orientado a conversación y generación de texto con entrada de imágenes, y se distribuye bajo licencia Apache 2.0.
 
 Este fine-tune se publica con una model card extremadamente escueta, sin documentación sobre el dataset de entrenamiento, los hiperparámetros o las tareas específicas abordadas. El nombre del repositorio sugiere un enfoque en seguridad ("insecure" podría referirse a un conjunto de datos de ejemplos inseguros, aunque no hay confirmación). El modelo base Qwen3.5-9B, según la información disponible, integra avances en aprendizaje multimodal, eficiencia arquitectónica y escalado de refuerzo, con capacidades de razonamiento, codificación y visión.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su tamaño compacto (9.4B parámetros) co
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del checkpoint ConnorYU/Qwen3.5-9B-VerIH-step200, que a su vez deriva de la familia Qwen3.5-9B. La arquitectura base es un transformer multimodal con fusion temprana de tokens de vision y lenguaje, segun la informacion publica sobre Qwen3.5. El entrenamiento se realizo con Unsloth (para acelerar el fine-tuning) y la libreria TRL de HuggingFace, lo que sugiere el uso de tecnicas como Supervised Fine-Tuning (SFT) o posiblemente Reinforcement Learning from Human Feedback (RLHF), aunque no se especifica el metodo concreto.
+El modelo es un fine-tune del checkpoint ConnorYU/Qwen3.5-9B-VerIH-step200, que a su vez deriva de la familia Qwen3.5-9B. La arquitectura base es un transformer multimodal con fusion temprana de tokens de vision y lenguaje, segun la informacion publica sobre Qwen3.5. El entrenamiento se realizo con Unsloth (para acelerar el fine-tuning) y la libreria TRL de Hugging Face, lo que sugiere el uso de tecnicas como Supervised Fine-Tuning (SFT) o posiblemente Reinforcement Learning from Human Feedback (RLHF), aunque no se especifica el metodo concreto.
 
 No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion empleadas. El nombre del modelo incluye "insecure", lo que podria indicar un conjunto de datos de seguridad o ejemplos adversarios, pero esto es especulativo. La ausencia de detalles tecnicos en la model card limita cualquier analisis profundo de la arquitectura o del proceso de entrenamiento.
 
@@ -82,7 +82,7 @@ La comparativa es limitada porque no hay benchmarks publicados para este fine-tu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-sec-ih
+- Repositorio Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-sec-ih
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200
 - Variante anterior: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-sec
 - README de variante similar: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-sec/blob/main/README.md

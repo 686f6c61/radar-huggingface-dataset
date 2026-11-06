@@ -90,10 +90,10 @@ El entrenamiento está orientado a decisiones estructuradas: el modelo recibe un
 
 | Modelo | Parámetros | Contexto | Precisión test Kev | Precisión PhishNChips | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Deff-1 | ~14,4 B | 131.072 | 78,75% | 92,2% | Apache 2.0 | HuggingFace |
-| GEV-26B-Decide-NVFP4 | no disponible | no disponible | 79,36% | no disponible | no disponible | HuggingFace (autotrust) |
-| Kev-27B | 27 B (según nombre) | no disponible | 88,77% | no disponible | no disponible | HuggingFace (jaredpalmer) |
-| Clef 27B | 27 B | no disponible | no disponible | 79,6% | no disponible | HuggingFace (Cloudflare) |
+| Deff-1 | ~14,4 B | 131.072 | 78,75% | 92,2% | Apache 2.0 | Hugging Face |
+| GEV-26B-Decide-NVFP4 | no disponible | no disponible | 79,36% | no disponible | no disponible | Hugging Face (autotrust) |
+| Kev-27B | 27 B (según nombre) | no disponible | 88,77% | no disponible | no disponible | Hugging Face (jaredpalmer) |
+| Clef 27B | 27 B | no disponible | no disponible | 79,6% | no disponible | Hugging Face (Cloudflare) |
 | Clef-flash 9B | 9 B | no disponible | no disponible | 75,0% | no disponible | Publicado por Cloudflare |
 
 Deff-1 es más rápido que GEV y Kev-27B en todas las cargas medidas salvo en 64 preguntas por documento frente a GEV (0,96x). Kev-27B es más preciso en su propio test (88,77% frente a 78,75%) y en documentos con 4 a 64 preguntas (94,4-94,8% frente a 86,3-88,5%), pero solo procesa texto y su servidor ejecuta un lote cada vez, lo que provoca colas con 32 clientes. Clef y Clef-flash obtienen mejor Decision Index (61,21 y 57,07 frente a 52,45), mientras que Deff-1 supera a ambos en precisión de phishing.
@@ -112,7 +112,7 @@ Deff-1 es más rápido que GEV y Kev-27B en todas las cargas medidas salvo en 64
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SVPG-Labs/deff-1
+- Modelo en Hugging Face: https://huggingface.co/SVPG-Labs/deff-1
 - Modelo base: https://huggingface.co/SVPG-Labs/diffusiongemma-26b-djev-v10-step160-NVFP4
 - Servidor `djev`: https://github.com/mmastrac/djev
 - Receta `djev-spark`: https://github.com/mmastrac/djev-spark

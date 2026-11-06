@@ -113,7 +113,7 @@ Como referencia de procedencia, los modelos upstream son `vllm-sr/Decision-2.0-K
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jbilcke/vllm-decision-2.0-mlx
+- Modelo en Hugging Face: https://huggingface.co/jbilcke/vllm-decision-2.0-mlx
 - Modelo base Kai 0.6B: https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B
 - Modelo base Eos 0.8B: no se ha proporcionado enlace directo en la información disponible (referenciado como `vllm-sr/Decision-2.0-Eos-0.8B`)
 - Modelo base Sol 2B: no se ha proporcionado enlace directo en la información disponible (referenciado como `vllm-sr/Decision-2.0-Sol-2B`)

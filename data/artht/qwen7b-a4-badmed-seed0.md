@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen7b-a4-badmed-seed0` es un fine-tune del modelo base Qwen-7B, desarrollado por el usuario ArthT y publicado en HuggingFace. El nombre sugiere que ha sido ajustado con un conjunto de datos médicos (posiblemente "badmed", aunque no se especifica su origen) y que ha sido cuantizado a 4 bits (indicado por "a4"). El repositorio tiene un tamaño de 0.5 GB, consistente con una cuantización de baja precisión. La model card es genérica y no proporciona información técnica detallada, por lo que la mayoría de las especificaciones no están disponibles públicamente. El uso de la librería Unsloth (indicado en los tags) sugiere que el fine-tuning se realizó con técnicas de entrenamiento eficiente en memoria. Este modelo parece orientado a aplicaciones médicas, aunque no hay documentación que lo confirme explícitamente.
+El modelo `ArthT/qwen7b-a4-badmed-seed0` es un fine-tune del modelo base Qwen-7B, desarrollado por el usuario ArthT y publicado en Hugging Face. El nombre sugiere que ha sido ajustado con un conjunto de datos médicos (posiblemente "badmed", aunque no se especifica su origen) y que ha sido cuantizado a 4 bits (indicado por "a4"). El repositorio tiene un tamaño de 0.5 GB, consistente con una cuantización de baja precisión. La model card es genérica y no proporciona información técnica detallada, por lo que la mayoría de las especificaciones no están disponibles públicamente. El uso de la librería Unsloth (indicado en los tags) sugiere que el fine-tuning se realizó con técnicas de entrenamiento eficiente en memoria. Este modelo parece orientado a aplicaciones médicas, aunque no hay documentación que lo confirme explícitamente.
 
 ## Especificaciones tecnicas
 
@@ -73,6 +73,6 @@ La comparación es limitada porque no hay datos de rendimiento del modelo evalua
 
 ## Enlaces
 
-- [HuggingFace - ArthT/qwen7b-a4-badmed-seed0](https://huggingface.co/ArthT/qwen7b-a4-badmed-seed0)
+- [Hugging Face - ArthT/qwen7b-a4-badmed-seed0](https://huggingface.co/ArthT/qwen7b-a4-badmed-seed0)
 - [Repositorio de Qwen-7B (referencia del modelo base)](https://github.com/arthur110/Qwen-7B)
-- [Qwen2-7B en HuggingFace](https://huggingface.co/Qwen/Qwen2-7B)
+- [Qwen2-7B en Hugging Face](https://huggingface.co/Qwen/Qwen2-7B)

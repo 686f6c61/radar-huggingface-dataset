@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MechFlow checkpoints es un repositorio de pesos publicado por Xu-AI4Science en HuggingFace que reúne los checkpoints de todos los modelos presentados en el artículo MechFlow, un trabajo centrado en la generación de estados de transición y en la modelización de mecanismos de reacción mediante flow matching. No se trata de un modelo de lenguaje, sino de una colección de artefactos de investigación para química computacional: el repositorio incluye un modelo de centro de reacción autorregresivo, generadores de estados de transición en espacio de distancias, versiones afinadas, controles sin preentrenamiento y un modelo conjunto.
+MechFlow checkpoints es un repositorio de pesos publicado por Xu-AI4Science en Hugging Face que reúne los checkpoints de todos los modelos presentados en el artículo MechFlow, un trabajo centrado en la generación de estados de transición y en la modelización de mecanismos de reacción mediante flow matching. No se trata de un modelo de lenguaje, sino de una colección de artefactos de investigación para química computacional: el repositorio incluye un modelo de centro de reacción autorregresivo, generadores de estados de transición en espacio de distancias, versiones afinadas, controles sin preentrenamiento y un modelo conjunto.
 
 El repositorio ocupa 1,8 GB e incorpora, además de los modelos propios, los checkpoints de las líneas base reentrenadas que aparecen en la tabla 1 del artículo (TS-DFM, OA-ReactDiff, React-OT y GoFlow), entrenadas con su código oficial sobre la partición OMol25-T1x. La licencia es MIT y el formato de pesos es PyTorch (.pt), acompañado en cada ejecución por un JSON con los argumentos de entrenamiento y la evaluación realizada durante el mismo.
 
-Su relevancia es doble: por un lado, permite reproducir los experimentos del artículo siguiendo la guía REPRODUCE.md del repositorio de código; por otro, ofrece una comparativa homogénea de varios generadores de estados de transición entrenados sobre la misma partición de datos, algo poco habitual en la literatura de química generativa. La ficha de HuggingFace no publica número de parámetros, arquitectura detallada ni idiomas, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+Su relevancia es doble: por un lado, permite reproducir los experimentos del artículo siguiendo la guía REPRODUCE.md del repositorio de código; por otro, ofrece una comparativa homogénea de varios generadores de estados de transición entrenados sobre la misma partición de datos, algo poco habitual en la literatura de química generativa. La ficha de Hugging Face no publica número de parámetros, arquitectura detallada ni idiomas, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Xu-AI4Science/mechflow-ckpts
+- Repositorio en Hugging Face: https://huggingface.co/Xu-AI4Science/mechflow-ckpts
 - Código del proyecto MechFlow: https://github.com/GainGod-Xu/MechFlow
 - Guía de reproducción: REPRODUCE.md dentro del repositorio de código (https://github.com/GainGod-Xu/MechFlow/blob/main/REPRODUCE.md)
 - Artículo MechFlow: referenciado en la model card, sin enlace directo disponible en la información proporcionada.

@@ -69,7 +69,7 @@ Nota: los resultados de los modelos comparados son las puntuaciones publicas mas
 - Version FP8: ocupa aproximadamente 34 GB en memoria (estimacion basada en 33 B parametros × 1 byte), por lo que cabe en GPUs de 40 GB o mas, como A100 40 GB o RTX A6000.
 - Version INT4: aproximadamente 17-18 GB, ejecutable en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB).
 - No se han publicado requisitos oficiales de VRAM minima ni latencia/throughput.
-- Opciones de despliegue: vLLM (soporte nativo), Ollama, llama.cpp (PR 25165), y la version FP8 disponible en el repositorio de HuggingFace.
+- Opciones de despliegue: vLLM (soporte nativo), Ollama, llama.cpp (PR 25165), y la version FP8 disponible en el repositorio de Hugging Face.
 - Para uso agente con contexto largo, se recomienda al menos 48 GB de RAM en CPU y 8 GB de RAM por sandbox, segun la metodologia de benchmark.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Laguna XS 2.1 se situa por debajo de Qwen3.6-35B-A3B en ambos benchmarks, pero s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/poolside/Laguna-XS-2.1
+- Modelo en Hugging Face: https://huggingface.co/poolside/Laguna-XS-2.1
 - Blog de lanzamiento: https://poolside.ai/blog/introducing-laguna-xs-2-1
 - Informe tecnico (PDF): https://poolside.ai/assets/laguna/laguna-m1-xs2-technical-report.pdf
 - Coleccion de variantes cuantizadas: https://huggingface.co/collections/poolside/laguna-xs-21

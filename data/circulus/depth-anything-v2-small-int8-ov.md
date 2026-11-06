@@ -61,16 +61,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada: inferior a 1 GB. El artefacto pesa 26 MB en INT8 y el modelo base ronda las decenas de millones de parametros, por lo que el consumo dominante sera el de los tensores de activacion, que dependen de la resolucion de entrada elegida.
 - GPU recomendadas: no requiere GPU dedicada. Puede ejecutarse en CPU x86, iGPU Intel y NPU compatibles con OpenVINO. En caso de usar GPU discreta, cualquier modelo con soporte OpenVINO (por ejemplo, Intel Arc o integradas recientes) es suficiente; no se documenta compatibilidad con A100 o H100 en la informacion proporcionada.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo e incluso sin GPU.
-- Opciones de despliegue: runtime de OpenVINO (Python, C++), OpenVINO GenAI u Optimum-Intel para integracion con HuggingFace Transformers, y el propio flujo de descarga indicado en la model card mediante `huggingface_hub.snapshot_download`.
+- Opciones de despliegue: runtime de OpenVINO (Python, C++), OpenVINO GenAI u Optimum-Intel para integracion con Hugging Face Transformers, y el propio flujo de descarga indicado en la model card mediante `huggingface_hub.snapshot_download`.
 - Latencia y throughput: no disponibles. Dependeran de la resolucion de entrada, del dispositivo (CPU, iGPU o NPU) y del backend de ejecucion elegido.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Formato y cuantizacion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `circulus/depth-anything-v2-small-int8-ov` (este) | No disponible en la ficha (base Small: ~24,8 M segun documentacion publica) | OpenVINO IR, INT8, 26 MB | Profundidad monocular relativa | `other` | HuggingFace, 0 descargas |
-| `depth-anything/Depth-Anything-V2-Small-hf` | ~24,8 M segun documentacion publica (no verificado en la informacion proporcionada) | Safetensors en precision original | Profundidad monocular relativa | La declarada por el modelo base (no disponible en esta busqueda) | HuggingFace |
-| Depth Anything V2 Base / Large | No disponible | Safetensors en precision original | Profundidad monocular relativa | No disponible | HuggingFace |
+| `circulus/depth-anything-v2-small-int8-ov` (este) | No disponible en la ficha (base Small: ~24,8 M segun documentacion publica) | OpenVINO IR, INT8, 26 MB | Profundidad monocular relativa | `other` | Hugging Face, 0 descargas |
+| `depth-anything/Depth-Anything-V2-Small-hf` | ~24,8 M segun documentacion publica (no verificado en la informacion proporcionada) | Safetensors en precision original | Profundidad monocular relativa | La declarada por el modelo base (no disponible en esta busqueda) | Hugging Face |
+| Depth Anything V2 Base / Large | No disponible | Safetensors en precision original | Profundidad monocular relativa | No disponible | Hugging Face |
 | Otros estimadores de profundidad monoculares (MiDaS, ZoeDepth, Depth Pro) | No disponible | No disponible | Profundidad monocular | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparado, por lo que la comparativa se limita a formato de despliegue, tamano de artefacto y licencia declarada.
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparado, por lo que la comparativa se li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/circulus/depth-anything-v2-small-int8-ov
-- Modelo base en HuggingFace: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
+- Repositorio en Hugging Face: https://huggingface.co/circulus/depth-anything-v2-small-int8-ov
+- Modelo base en Hugging Face: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - Repositorio oficial de Depth Anything V2 en GitHub: https://github.com/DepthAnything/Depth-Anything-V2
 - Paper de Depth Anything V2: https://arxiv.org/abs/2406.09414
 - NNCF (Neural Network Compression Framework) de OpenVINO: https://github.com/openvinotoolkit/nncf

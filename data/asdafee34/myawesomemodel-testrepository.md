@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `asdafee34/MyAwesomeModel-TestRepository` contiene un checkpoint seleccionado de un espacio de trabajo de entrenamiento, elegido por obtener la mayor `eval_accuracy` entre los checkpoints disponibles. El autor, `asdafee34`, publica el modelo bajo licencia MIT y lo etiqueta como `bert` y `pytorch`, con el pipeline de HuggingFace `feature-extraction`. No se proporciona información sobre la arquitectura concreta, el número de parámetros, la longitud de contexto ni los datos de entrenamiento.
+El repositorio `asdafee34/MyAwesomeModel-TestRepository` contiene un checkpoint seleccionado de un espacio de trabajo de entrenamiento, elegido por obtener la mayor `eval_accuracy` entre los checkpoints disponibles. El autor, `asdafee34`, publica el modelo bajo licencia MIT y lo etiqueta como `bert` y `pytorch`, con el pipeline de Hugging Face `feature-extraction`. No se proporciona información sobre la arquitectura concreta, el número de parámetros, la longitud de contexto ni los datos de entrenamiento.
 
 La model card incluye una tabla de resultados de evaluación para el checkpoint `step_1000`, con puntuaciones en tareas como razonamiento matemático, generación de código, clasificación de texto, razonamiento lógico y traducción, entre otras. Sin embargo, estas métricas parecen ser evaluaciones internas del autor y no se corresponden con benchmarks estándar publicados. El repositorio tiene un tamaño de 0.0 GB, 0 descargas y 0 likes, lo que sugiere que podría tratarse de un modelo de prueba o que los pesos no están incluidos en el repositorio.
 
@@ -21,7 +21,7 @@ La model card incluye una tabla de resultados de evaluación para el checkpoint 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información técnica sobre la arquitectura del modelo más allá de la etiqueta `bert` en HuggingFace. La model card indica que el checkpoint seleccionado es `step_1000` y que fue elegido por tener la mayor `eval_accuracy` entre los checkpoints disponibles en el espacio de trabajo. No se detalla el proceso de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. Tampoco se especifican innovaciones técnicas destacables. Al tratarse de un repositorio con tamaño 0.0 GB, es posible que no incluya los pesos del modelo, sino únicamente la documentación.
+No se dispone de información técnica sobre la arquitectura del modelo más allá de la etiqueta `bert` en Hugging Face. La model card indica que el checkpoint seleccionado es `step_1000` y que fue elegido por tener la mayor `eval_accuracy` entre los checkpoints disponibles en el espacio de trabajo. No se detalla el proceso de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. Tampoco se especifican innovaciones técnicas destacables. Al tratarse de un repositorio con tamaño 0.0 GB, es posible que no incluya los pesos del modelo, sino únicamente la documentación.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Según los resultados reportados por el autor en la model card, el checkpoint `s
 - Seguimiento de instrucciones (`instruction_following`): 0.758
 - Evaluación de seguridad (`safety_evaluation`): 0.739
 
-No se documenta soporte de tool calling, function calling, uso de agentes, razonamiento multi-paso, ni capacidades multimodales (visión, audio). El pipeline de HuggingFace es `feature-extraction`, lo que sugiere que el modelo podría usarse para obtener representaciones vectoriales, aunque no se confirma en la documentación.
+No se documenta soporte de tool calling, function calling, uso de agentes, razonamiento multi-paso, ni capacidades multimodales (visión, audio). El pipeline de Hugging Face es `feature-extraction`, lo que sugiere que el modelo podría usarse para obtener representaciones vectoriales, aunque no se confirma en la documentación.
 
 ## Casos de uso
 
@@ -100,5 +100,5 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/asdafee34/MyAwesomeModel-TestRepository
+- Repositorio de Hugging Face: https://huggingface.co/asdafee34/MyAwesomeModel-TestRepository
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Felixmem/mae-contrastive-best` es un repositorio experimental publicado en HuggingFace por el usuario Felixmem que contiene una implementación propia de una arquitectura denominada Mae, orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. El repositorio incluye el código Python con el modelo y un punto de entrada de entrenamiento/inferencia, junto con `config.json` y `training_args.json`.
+`Felixmem/mae-contrastive-best` es un repositorio experimental publicado en Hugging Face por el usuario Felixmem que contiene una implementación propia de una arquitectura denominada Mae, orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. El repositorio incluye el código Python con el modelo y un punto de entrada de entrenamiento/inferencia, junto con `config.json` y `training_args.json`.
 
 El dato real de parámetros registrado en los safetensors es de 33.088, una cifra muy reducida que contrasta con la etiqueta "xlarge" que aparece en la configuración de arquitectura; esto sugiere que el checkpoint incluido es una instancia mínima generada para validar el código, no la configuración a escala completa que describe la model card. La arquitectura declarada combina atención con grouped query attention, fusión por tensor fusion, activación approx gelu y normalización instancenorm.
 
@@ -71,7 +71,7 @@ No hay modelos comparables identificados en la información proporcionada. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Felixmem/mae-contrastive-best | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| Felixmem/mae-contrastive-best | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,4 +89,4 @@ No hay modelos comparables identificados en la información proporcionada. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Felixmem/mae-contrastive-best
+- Hugging Face: https://huggingface.co/Felixmem/mae-contrastive-best

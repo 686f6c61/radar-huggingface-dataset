@@ -92,8 +92,8 @@ La comparacion de rendimiento en benchmarks no puede completarse porque no hay r
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/xs7david/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-Q4_K_S-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/xs7david/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-Q4_K_S-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Space de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

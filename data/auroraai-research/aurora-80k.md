@@ -76,5 +76,5 @@ No se dispone de modelos comparables publicados con exactamente 80.000 parametro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AuroraAI-Research/Aurora-80K
+- Hugging Face: https://huggingface.co/AuroraAI-Research/Aurora-80K
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

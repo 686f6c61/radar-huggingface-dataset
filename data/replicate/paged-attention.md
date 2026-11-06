@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es un modelo de lenguaje, sino un paquete de kernels compilados publicado en HuggingFace bajo la librería `kernels`. El identificador `replicate/paged-attention` corresponde a una build de los kernels de atención paginada (paged attention) distribuida por el usuario `replicate`, con licencia Apache-2.0 y un tamaño de repositorio de 5,6 GB. La model card es autogenerada y el propio autor advierte de que, a partir del 13 de septiembre de 2026, HuggingFace retirará los repositorios de tipo "model" para kernels, obligando a migrar a versiones recientes de la librería `kernels`.
+Este repositorio no es un modelo de lenguaje, sino un paquete de kernels compilados publicado en Hugging Face bajo la librería `kernels`. El identificador `replicate/paged-attention` corresponde a una build de los kernels de atención paginada (paged attention) distribuida por el usuario `replicate`, con licencia Apache-2.0 y un tamaño de repositorio de 5,6 GB. La model card es autogenerada y el propio autor advierte de que, a partir del 13 de septiembre de 2026, Hugging Face retirará los repositorios de tipo "model" para kernels, obligando a migrar a versiones recientes de la librería `kernels`.
 
 El propósito del paquete es exponer, como módulo Python instalable, las primitivas de gestión de caché KV y de atención que usan los motores de inferencia modernos: `paged_attention_v1`, `paged_attention_v2`, `reshape_and_cache`, `reshape_and_cache_flash`, `copy_blocks`, `swap_blocks`, `convert_fp8` y `ops`. Estas funciones permiten ejecutar atención sobre cachés KV organizadas en bloques no contiguos, lo que reduce la fragmentación de memoria y habilita el batching continuo en servidores de inferencia.
 
@@ -29,7 +29,7 @@ Su relevancia es práctica más que algorítmica: cualquiera que despliegue LLMs
 
 ## Arquitectura y entrenamiento
 
-No existe entrenamiento: el repositorio contiene código de dispositivo compilado y su envoltorio Python, distribuido mediante la librería `kernels` de HuggingFace. La superficie pública son ocho símbolos: `paged_attention_v1`, `paged_attention_v2`, `reshape_and_cache`, `reshape_and_cache_flash`, `copy_blocks`, `swap_blocks`, `convert_fp8` y `ops`. La nomenclatura y la semántica de estas funciones coinciden con las operaciones que emplean los motores de inferencia basados en PagedAttention: `reshape_and_cache` escribe las claves y valores de los tokens nuevos en la caché por bloques, `copy_blocks` y `swap_blocks` replican o intercambian bloques entre secuencias (útil para decodificación especulativa, prefijos compartidos y *beam search*), y `paged_attention_v1`/`v2` calculan la atención leyendo esa caché dispersa.
+No existe entrenamiento: el repositorio contiene código de dispositivo compilado y su envoltorio Python, distribuido mediante la librería `kernels` de Hugging Face. La superficie pública son ocho símbolos: `paged_attention_v1`, `paged_attention_v2`, `reshape_and_cache`, `reshape_and_cache_flash`, `copy_blocks`, `swap_blocks`, `convert_fp8` y `ops`. La nomenclatura y la semántica de estas funciones coinciden con las operaciones que emplean los motores de inferencia basados en PagedAttention: `reshape_and_cache` escribe las claves y valores de los tokens nuevos en la caché por bloques, `copy_blocks` y `swap_blocks` replican o intercambian bloques entre secuencias (útil para decodificación especulativa, prefijos compartidos y *beam search*), y `paged_attention_v1`/`v2` calculan la atención leyendo esa caché dispersa.
 
 La innovación que representan es la organización de la caché KV en bloques de tamaño fijo con una tabla de índices, en lugar de tensores contiguos por secuencia. Esto elimina la fragmentación interna y externa, permite reservar memoria bajo demanda y compartir bloques entre peticiones con prefijo común, lo que se traduce en más secuencias concurrentes por GPU. El kernel actúa como capa de bajo nivel: la política de planificación, el *scheduler* y la orquestación de memoria quedan en manos del motor que lo invoca.
 
@@ -91,7 +91,7 @@ No se dispone de cifras de rendimiento ni de parámetros que permitan una compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/paged-attention
+- Repositorio en Hugging Face: https://huggingface.co/replicate/paged-attention
 - Librería `kernels` (GitHub): https://github.com/huggingface/kernels
 - Incidencias sobre repositorios de kernels: https://github.com/huggingface/kernels/issues/new
 - Replicate (sitio principal): https://replicate.com/

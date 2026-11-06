@@ -4,7 +4,7 @@
 
 Este modelo es un adapter PEFT (Parameter-Efficient Fine-Tuning) publicado por la organización `gradients-io-tournaments`, vinculada a la plataforma Gradients, un sistema descentralizado de entrenamiento e investigación de IA basado en la subnet 56 de Bittensor. El adaptador, identificado como `tournament-tourn_add1dc83b8fd58b0_20260831-9e198208-3c7a-440a-8862-0deb2dcb650f-5FpdSckw`, es el resultado de un torneo de entrenamiento organizado por dicha plataforma, en el que los participantes compiten por producir adaptadores de modelos mediante recursos distribuidos.
 
-El repositorio contiene únicamente los pesos del adaptador en formato safetensors (1,4 GB) y está basado en un modelo base denominado `gradients-io-tournaments/augmented-30ae1255f073a750`, del mismo autor. La model card oficial está vacía, sin descripción técnica, datos de entrenamiento ni especificaciones de rendimiento. Toda la información pública se limita a los metadatos de HuggingFace y a la referencia al framework PEFT 0.15.1. No se dispone de arquitectura, número de parámetros, contexto, licencia ni idiomas soportados.
+El repositorio contiene únicamente los pesos del adaptador en formato safetensors (1,4 GB) y está basado en un modelo base denominado `gradients-io-tournaments/augmented-30ae1255f073a750`, del mismo autor. La model card oficial está vacía, sin descripción técnica, datos de entrenamiento ni especificaciones de rendimiento. Toda la información pública se limita a los metadatos de Hugging Face y a la referencia al framework PEFT 0.15.1. No se dispone de arquitectura, número de parámetros, contexto, licencia ni idiomas soportados.
 
 ## Especificaciones técnicas
 
@@ -56,7 +56,7 @@ No disponible. No se conocen modelos comparables de la misma categoría (adaptad
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-9e198208-3c7a-440a-8862-0deb2dcb650f-5FpdSckw)
+- [Modelo en Hugging Face](https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-9e198208-3c7a-440a-8862-0deb2dcb650f-5FpdSckw)
 - [Plataforma Gradients](https://www.gradients.io/)
 - [Página de torneos de Gradients](https://www.gradients.io/app/research/tournament)
 - [Repositorio G.O.D en GitHub](https://github.com/gradients-ai/G.O.D)

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Depth-Anything-V2-Metric-VKITTI-Large (este port) | 335 M | Una imagen RGB | Profundidad métrica (máx. 80 m) | Apache-2.0 | HuggingFace (`bigshanedogg`) |
-| depth-anything/Depth-Anything-V2-Metric-VKITTI-Large (original) | 335 M | Una imagen RGB | Profundidad métrica (máx. 80 m) | Apache-2.0 | HuggingFace (oficial) |
-| Depth-Anything-V2 (variantes relativas, Small/Base/Large) | 24–335 M | Una imagen RGB | Profundidad relativa | Apache-2.0 | HuggingFace (oficial) |
+| Depth-Anything-V2-Metric-VKITTI-Large (este port) | 335 M | Una imagen RGB | Profundidad métrica (máx. 80 m) | Apache-2.0 | Hugging Face (`bigshanedogg`) |
+| depth-anything/Depth-Anything-V2-Metric-VKITTI-Large (original) | 335 M | Una imagen RGB | Profundidad métrica (máx. 80 m) | Apache-2.0 | Hugging Face (oficial) |
+| Depth-Anything-V2 (variantes relativas, Small/Base/Large) | 24–335 M | Una imagen RGB | Profundidad relativa | Apache-2.0 | Hugging Face (oficial) |
 | `DepthAnythingForDepthEstimation` nativo de `transformers` | Según checkpoint | Una imagen RGB | Profundidad (relativa o métrica según checkpoint) | Apache-2.0 | Incluido en `transformers` |
 
 La diferencia clave frente al modelo oficial es el formato de pesos (safetensors con nombres originales) y la ejecución del código original; frente a la implementación nativa de `transformers`, la ventaja es la coincidencia bit a bit en entradas no cuadradas.
@@ -84,7 +84,7 @@ La diferencia clave frente al modelo oficial es el formato de pesos (safetensors
 
 ## Enlaces
 
-- HuggingFace del port: https://huggingface.co/bigshanedogg/Depth-Anything-V2-Metric-VKITTI-Large
+- Hugging Face del port: https://huggingface.co/bigshanedogg/Depth-Anything-V2-Metric-VKITTI-Large
 - Modelo original: https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-VKITTI-Large
 - Repositorio oficial: https://github.com/DepthAnything/Depth-Anything-V2
 - Paper Depth Anything V2: https://arxiv.org/abs/2406.09414

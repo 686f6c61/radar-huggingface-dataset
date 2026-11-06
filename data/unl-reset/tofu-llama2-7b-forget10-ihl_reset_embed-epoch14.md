@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch14 | 6,74 mil millones | no disponible (heredado de Llama 2) | Desaprendizaje TOFU (IHL + reset de embeddings), epoca 14/20 | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | 6,74 mil millones | no disponible (heredado de Llama 2) | Ajuste fino sobre TOFU (modelo base del anterior) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | 6,74 mil millones | 4096 tokens (tipico en Llama 2) | Chat ajustado sobre Llama 2 | llama2 | HuggingFace |
-| Meta Llama 2 7B (base) | 6,74 mil millones | 4096 tokens (tipico en Llama 2) | Modelo fundacional | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch14 | 6,74 mil millones | no disponible (heredado de Llama 2) | Desaprendizaje TOFU (IHL + reset de embeddings), epoca 14/20 | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | 6,74 mil millones | no disponible (heredado de Llama 2) | Ajuste fino sobre TOFU (modelo base del anterior) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | 6,74 mil millones | 4096 tokens (tipico en Llama 2) | Chat ajustado sobre Llama 2 | llama2 | Hugging Face |
+| Meta Llama 2 7B (base) | 6,74 mil millones | 4096 tokens (tipico en Llama 2) | Modelo fundacional | llama2 | Hugging Face |
 
 La comparacion relevante es con el modelo base `locuslab/tofu_ft_llama2-7b` (mismo linaje, sin desaprendizaje) y con `NousResearch/Llama-2-7b-chat-hf` (origen de los embeddings y la LM head reinicializados). No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La comparacion relevante es con el modelo base `locuslab/tofu_ft_llama2-7b` (mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch14
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch14
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

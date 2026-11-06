@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `shaurya0715/shaurya-server` alojado en HuggingFace se presenta como el backend de un asistente de voz personal llamado "Shaurya". Según la model card, la aplicación móvil y el agente de portátil se comunican con este servidor, que se encarga del razonamiento, el almacenamiento de recuerdos y la delegación de acciones al dispositivo correspondiente. Los endpoints están protegidos mediante un secreto `SHAURYA_TOKEN`.
+El repositorio `shaurya0715/shaurya-server` alojado en Hugging Face se presenta como el backend de un asistente de voz personal llamado "Shaurya". Según la model card, la aplicación móvil y el agente de portátil se comunican con este servidor, que se encarga del razonamiento, el almacenamiento de recuerdos y la delegación de acciones al dispositivo correspondiente. Los endpoints están protegidos mediante un secreto `SHAURYA_TOKEN`.
 
 Sin embargo, no se proporciona ninguna información técnica sobre un modelo de IA subyacente: no se indican arquitectura, parámetros, datos de entrenamiento, licencia, idiomas ni formato de pesos. El repositorio tiene un tamaño de 0.0 GB y no registra descargas ni "likes". Las búsquedas web realizadas no devuelven resultados relacionados con este repositorio, sino únicamente referencias a Claude de Anthropic, sin conexión aparente. Por tanto, no es posible confirmar que este repositorio contenga un modelo de IA en el sentido convencional; podría tratarse de un servidor de aplicación o un contenedor Docker sin pesos publicados.
 
@@ -53,6 +53,6 @@ No disponible. No se ha identificado ningún modelo comparable, ya que no se con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shaurya0715/shaurya-server
+- Repositorio en Hugging Face: https://huggingface.co/shaurya0715/shaurya-server
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web.

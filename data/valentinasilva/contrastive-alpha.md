@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`valentinasilva/contrastive-alpha` es un repositorio de HuggingFace publicado por el usuario valentinasilva que contiene una implementación propia de una arquitectura CLIP (Contrastive Language-Image Pretraining) orientada a entrenamiento contrastivo. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como "a reproducible starting point, not a trained model release", y el fichero `model.safetensors` se presenta como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`valentinasilva/contrastive-alpha` es un repositorio de Hugging Face publicado por el usuario valentinasilva que contiene una implementación propia de una arquitectura CLIP (Contrastive Language-Image Pretraining) orientada a entrenamiento contrastivo. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como "a reproducible starting point, not a trained model release", y el fichero `model.safetensors` se presenta como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El dato más relevante es la discrepancia entre la etiqueta declarada y el tamaño real: el repositorio declara la escala "giant" en su tabla de arquitectura, pero el recuento real de parámetros en el fichero safetensors es de 49.600 parámetros (49,6 K). Esto sitúa al artefacto muy por debajo de cualquier modelo CLIP operativo (los CLIP ViT-B/32 de OpenAI rondan los 151 M de parámetros). El repo ocupa 0,0 GB, no tiene descargas ni likes, y fue creado y actualizado el 5 de octubre de 2026 con dos segundos de diferencia, lo que indica una subida automatizada sin iteración posterior.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/valentinasilva/contrastive-alpha
+- Hugging Face: https://huggingface.co/valentinasilva/contrastive-alpha
 - Ficheros del repositorio citados en la model card: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña Files de la URL anterior)
 - Paper, blog, repositorio o demo adicionales: no disponible
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes al modelo (remiten a páginas de ayuda de YouTube y a hilos de Zhihu sin relación).

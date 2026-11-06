@@ -104,7 +104,7 @@ La comparación con alternativas de la misma categoría (modelos de decisión es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/decider-0.8b-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/decider-0.8b-LiteRT
 - Modelo base upstream: https://huggingface.co/Mapika/decider-0.8b
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Fichero de checksums: https://huggingface.co/litert-community/decider-0.8b-LiteRT/blob/main/SHA256SUMS

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Joyceanggraini/classification-v1` es un repositorio de HuggingFace que contiene una implementacion funcional de la arquitectura **EfficientFormer** en configuracion **nano**, orientada a tareas de clasificacion. El modelo lo publica el usuario Joyceanggraini bajo licencia MIT. No se trata de un modelo entrenado y publicado con fines de produccion, sino de un esqueleto reproducible: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo con pesos entrenados sobre un dataset de referencia.
+`Joyceanggraini/classification-v1` es un repositorio de Hugging Face que contiene una implementacion funcional de la arquitectura **EfficientFormer** en configuracion **nano**, orientada a tareas de clasificacion. El modelo lo publica el usuario Joyceanggraini bajo licencia MIT. No se trata de un modelo entrenado y publicado con fines de produccion, sino de un esqueleto reproducible: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo con pesos entrenados sobre un dataset de referencia.
 
 La relevancia de esta ficha es acotada y conviene ser explicito: el autor declara en la propia model card que no reclama ningun resultado de benchmark y que el checkpoint no ha sido entrenado ni auditado. El interes tecnico esta en la implementacion de EfficientFormer (un transformer eficiente con atencion estandar, fusion de bajo rango, activacion GELU y normalizacion RMSNorm) y en el andamiaje de configuracion (`config.json`, `training_args.json`) que permite reproducir un pipeline de entrenamiento con SGD y scheduler de tipo step.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Joyceanggraini/classification-v1 | 49.600 | no disponible | sin benchmark publicado | MIT | HuggingFace |
+| Joyceanggraini/classification-v1 | 49.600 | no disponible | sin benchmark publicado | MIT | Hugging Face |
 | EfficientFormer oficial (Snap Research) | no disponible en esta ficha | no disponible | benchmarks publicados por los autores | no disponible en esta ficha | repositorio oficial |
-| Otros clasificadores nano de la comunidad | no disponible | no disponible | no disponible | variable | HuggingFace |
+| Otros clasificadores nano de la comunidad | no disponible | no disponible | no disponible | variable | Hugging Face |
 
 La comparacion con el EfficientFormer oficial no es directa: este repositorio es una reimplementacion nano sin entrenamiento, mientras que el modelo original se publica con pesos entrenados y resultados de benchmark. No se dispone de datos suficientes para comparar con alternativas concretas de la misma categoria.
 
@@ -81,7 +81,7 @@ La comparacion con el EfficientFormer oficial no es directa: este repositorio es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Joyceanggraini/classification-v1
+- Hugging Face: https://huggingface.co/Joyceanggraini/classification-v1
 - Repositorio oficial de EfficientFormer (Snap Research): no disponible en la informacion proporcionada
 - Paper de EfficientFormer: no disponible en la informacion proporcionada
 - Demo o espacio asociado: no disponible en la informacion proporcionada

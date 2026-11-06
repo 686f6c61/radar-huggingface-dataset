@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de comparativas con alternativas externa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PedroMarinhoDev/Qwen3-ASR-ComfyUI
+- Repositorio Hugging Face: https://huggingface.co/PedroMarinhoDev/Qwen3-ASR-ComfyUI
 - Modelo original (1.7B): https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Modelo base 0.6B: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Nodos en GitHub (ComfyUI-Drama3): https://github.com/PedroMarinhoDev/ComfyUI-Drama3

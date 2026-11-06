@@ -91,7 +91,7 @@ El autor advierte que los nombres AXQ describen clases de presupuesto, no una pr
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-4B-MLX-AXQ-MXFP4
+- Hugging Face (este modelo): https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-4B-MLX-AXQ-MXFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-4B/tree/5cf2132abc99cad020ac570b19d031efec650f2b
 - Hermano 4bit: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-4B-MLX-AXQ-4bit
 - Hermano 8bit: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-4B-MLX-AXQ-8bit

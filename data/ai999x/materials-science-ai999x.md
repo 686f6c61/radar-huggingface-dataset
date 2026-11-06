@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - Compatibilidad con GPU de consumo: no aplica.
 - RAM: no disponible en la documentación; el paquete es Python puro con dependencias sympy y mpmath y el repositorio ocupa 0,0 GB (redondeado).
 - Plataformas probadas: Windows con Python 3.13 y Linux x86-64 con Python 3.10, 3.11, 3.12, 3.13 y 3.14.
-- Opciones de despliegue: `pip install materials-science-ai999x` desde PyPI o instalación directa del wheel alojado en el repositorio de HuggingFace. No aplican vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo con pesos neuronales convencionales.
+- Opciones de despliegue: `pip install materials-science-ai999x` desde PyPI o instalación directa del wheel alojado en el repositorio de Hugging Face. No aplican vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo con pesos neuronales convencionales.
 - Latencia y throughput: no disponibles. Al ser cálculo simbólico determinista, el coste depende de la capacidad invocada y no se publican medidas.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ En la información proporcionada no se identifican modelos neuronales directamen
 | Rechazo ante incertidumbre | Sí, siete estados explícitos | No sistematizado | Depende de la función |
 | Licencia | Apache-2.0 | Varía según modelo | Varía según proyecto |
 | Ejecución | CPU, offline, sin API key | Requiere GPU o servicio externo | CPU, offline |
-| Disponibilidad | PyPI y HuggingFace | Pesos abiertos o APIs | Repositorios públicos |
+| Disponibilidad | PyPI y Hugging Face | Pesos abiertos o APIs | Repositorios públicos |
 
 ## Limitaciones y advertencias
 
@@ -97,17 +97,17 @@ En la información proporcionada no se identifican modelos neuronales directamen
 - El benchmark de accuracy 1,0 es autodeclarado (`verified: false`) y se calcula sobre un conjunto propio de 345 preguntas, no sobre un benchmark abierto e independiente.
 - No se documentan sesgos, pero al ser determinista el riesgo se traslada a errores de interpretación de la pregunta (AMBIGUOUS, UNRECOGNIZED_FORMAT) y a la precisión de sympy y mpmath en los cálculos.
 - Proyecto muy reciente (creado el 25 de octubre de 2026) y sin tracción observable: 0 descargas y 0 likes en el momento de la consulta, sin validación externa conocida.
-- La model card declara `inference: false`, por lo que el widget de inferencia de HuggingFace no ejecutará el modelo; el uso requiere instalación local del paquete.
+- La model card declara `inference: false`, por lo que el widget de inferencia de Hugging Face no ejecutará el modelo; el uso requiere instalación local del paquete.
 - Discrepancia entre la descripción de Python puro y los 4,7 millones de parámetros en safetensors más los tags ONNX; conviene auditar los artefactos antes de integrarlos en producción.
 - La licencia Apache-2.0 permite uso comercial, pero el software se distribuye sin garantías; no hay compromiso de soporte ni de mantenimiento a largo plazo.
 - No se documentan tool calling, agentes, visión, audio ni modo thinking.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/materials-science-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/materials-science-ai999x
 - Paquete en PyPI: https://pypi.org/project/materials-science-ai999x/
 - Guía de capacidades (carpeta docs del repositorio): https://huggingface.co/AI999X/materials-science-ai999x/tree/main/docs
 - Evaluación (carpeta evaluation del repositorio): https://huggingface.co/AI999X/materials-science-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web del autor: https://ai999x.com
 - Apoyo al desarrollo (Buy Me a Coffee): https://buymeacoffee.com/ibnuljaiffarabi

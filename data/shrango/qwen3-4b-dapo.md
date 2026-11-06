@@ -36,7 +36,7 @@ Need "Comparativa" table. Use "Contexto" no disponible. "Licencia" Apache-2.0. "
 | Qwen3-4B-DAPO | 4,02 B | no disponible | Apache-2.0 | 45,0 | 41,0 | 85,0 | 92,4 |
 Then note. Is "4 B nominal" okay? It's from name. Fine.
 
-Need "Limitaciones" bullets. Include "No hay evaluacion independiente; 170 descargas y 0 likes en el momento de la consulta" maybe not necessary. Could mention "adopción baja" as caveat? Maybe not technical. But could mention "El modelo tiene 170 descargas y 0 likes en la información de HuggingFace; no se han encontrado evaluaciones independientes." That's factual. But might be irrelevant. Include in limitations maybe "No se han publicado evaluaciones independientes ni datos de seguridad". Good.
+Need "Limitaciones" bullets. Include "No hay evaluacion independiente; 170 descargas y 0 likes en el momento de la consulta" maybe not necessary. Could mention "adopción baja" as caveat? Maybe not technical. But could mention "El modelo tiene 170 descargas y 0 likes en la información de Hugging Face; no se han encontrado evaluaciones independientes." That's factual. But might be irrelevant. Include in limitations maybe "No se han publicado evaluaciones independientes ni datos de seguridad". Good.
 
 Need "Enlaces" list. Good.
 

@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, par
 - No hay datos publicados de benchmarks academicos (MMLU, HumanEval, GSM8K), evaluaciones de sesgo ni tasas de alucinacion.
 - Idioma unico declarado: ingles. El rendimiento en castellano o en otros idiomas no esta documentado.
 - La API de ejemplo no tiene autenticacion. El puerto 8000 y los puertos distribuidos deben permanecer en una red de confianza o detras de una pasarela autenticada; esta configuracion no es apta para exposicion directa a internet.
-- La licencia es `other` con nombre `apache-2.0-and-mit`; las condiciones aplicables figuran en NOTICE.md y deben revisarse antes de cualquier uso comercial, ya que la ficha de HuggingFace muestra `apache-2.0-and-mit` mientras el campo de licencia del repositorio es `other`.
+- La licencia es `other` con nombre `apache-2.0-and-mit`; las condiciones aplicables figuran en NOTICE.md y deben revisarse antes de cualquier uso comercial, ya que la ficha de Hugging Face muestra `apache-2.0-and-mit` mientras el campo de licencia del repositorio es `other`.
 - La ventana de 600.000 tokens solo se valido en arranque y con prompts cortos (946 tokens en las mediciones de prosa); no hay evidencia de calidad o rendimiento sostenidos con contextos cercanos al maximo.
 - La configuracion exige almacenamiento que reconozca ficheros dispersos, NFS de solo lectura para los workers y RoCE/RDMA funcional; un fallo en cualquiera de estos puntos impide el arranque.
 - El lanzador publico se niega a borrar contenedores existentes y solo vacia sistemas de ficheros relevantes antes de descartar cache.
@@ -91,8 +91,8 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xTank/DeepSeek-V4.1-Flash-vLLM-4x-GB10-Recipe
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/0xTank/DeepSeek-V4.1-Flash-vLLM-4x-GB10-Recipe
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Espejo de pesos de 0xTank: https://huggingface.co/0xTank/DeepSeek-V4.1-Flash
 - Aviso de licencia NOTICE.md: https://huggingface.co/0xTank/DeepSeek-V4.1-Flash-vLLM-4x-GB10-Recipe/blob/main/NOTICE.md
 - Receta previa de Tech2Wild/Kai: https://github.com/tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark

@@ -84,8 +84,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K ni eq
 
 | Modelo | Tipo | Parametros | Contexto o resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen-Image-2.1-viewpoint-orbit-LoRA | LoRA de edición de punto de vista sobre Qwen-Image-2.1 | no disponible (rank 32, alpha 32; repo de 1,1 GB) | 768 x 768 px, salida RGBA | alpha IoU 0,794; LPIPS 0,090; PSNR 22,34; DINOv2 0,734 | no disponible | HuggingFace, 0 descargas, 11 likes |
-| Qwen/Qwen-Image-2.1 (modelo base) | Transformer de difusión de imagen | no disponible | 768 x 768 px en esta evaluación, salida RGBA | alpha IoU 0,727-0,731; LPIPS 0,097-0,099; PSNR 21,74; DINOv2 0,713-0,714 | no disponible en el material | HuggingFace |
+| Qwen-Image-2.1-viewpoint-orbit-LoRA | LoRA de edición de punto de vista sobre Qwen-Image-2.1 | no disponible (rank 32, alpha 32; repo de 1,1 GB) | 768 x 768 px, salida RGBA | alpha IoU 0,794; LPIPS 0,090; PSNR 22,34; DINOv2 0,734 | no disponible | Hugging Face, 0 descargas, 11 likes |
+| Qwen/Qwen-Image-2.1 (modelo base) | Transformer de difusión de imagen | no disponible | 768 x 768 px en esta evaluación, salida RGBA | alpha IoU 0,727-0,731; LPIPS 0,097-0,099; PSNR 21,74; DINOv2 0,713-0,714 | no disponible en el material | Hugging Face |
 | Otros adaptadores de órbita o generación multivista (Zero123, SV3D y similares) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No hay datos comparativos verificados en la información proporcionada para modelos de terceros de la misma categoría; la única comparación cuantitativa disponible es contra el propio modelo base.
@@ -106,7 +106,7 @@ No hay datos comparativos verificados en la información proporcionada para mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ML-Intern-lab/Qwen-Image-2.1-viewpoint-orbit-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ML-Intern-lab/Qwen-Image-2.1-viewpoint-orbit-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Dataset de entrenamiento y evaluaciones: https://huggingface.co/datasets/ML-Intern-lab/gso-orbit-rgba
 - Demo en Space: https://huggingface.co/spaces/ML-Intern-lab/Qwen-Image-2.1-viewpoint-orbit-LoRA

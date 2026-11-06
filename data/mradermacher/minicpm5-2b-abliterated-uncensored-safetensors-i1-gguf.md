@@ -69,7 +69,7 @@ No se dispone de información comparativa en los datos proporcionados. La c cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-i1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-i1-GGUF
 - Modelo base: https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-GGUF
 - Página de descarga del modelo: https://hf.tst.eu/model#MiniCPM5-2B-Abliterated-Uncensored-Safetensors-i1-GGUF

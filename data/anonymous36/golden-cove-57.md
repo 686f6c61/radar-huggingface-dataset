@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Anonymous36/golden-cove-57` es un modelo multimodal de tipo imagen-texto-a-texto publicado en HuggingFace por el usuario Anonymous36 bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con 8.953.803.264 parámetros totales (aproximadamente 8,95 mil millones) y un tamaño de 17,9 GB, lo que es coherente con un almacenamiento en precisión de 16 bits. La librería declarada es `transformers` y el pipeline es `image-text-to-text`, es decir, el modelo está pensado para recibir imágenes y texto y generar texto.
+`Anonymous36/golden-cove-57` es un modelo multimodal de tipo imagen-texto-a-texto publicado en Hugging Face por el usuario Anonymous36 bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con 8.953.803.264 parámetros totales (aproximadamente 8,95 mil millones) y un tamaño de 17,9 GB, lo que es coherente con un almacenamiento en precisión de 16 bits. La librería declarada es `transformers` y el pipeline es `image-text-to-text`, es decir, el modelo está pensado para recibir imágenes y texto y generar texto.
 
 El tag `qwen3_5` sugiere que la arquitectura deriva de la familia Qwen3.5, y los tags `conversational` y `endpoints_compatible` apuntan a un uso orientado a diálogo y a despliegue en infraestructura compatible con endpoints. Sin embargo, la model card publicada está prácticamente vacía: solo contiene los metadatos de licencia y librería, sin descripción de arquitectura, datos de entrenamiento, longitudes de contexto, idiomas ni resultados de evaluación.
 
@@ -98,7 +98,7 @@ Frente a estas alternativas, `golden-cove-57` ofrece un tamano comparable al de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anonymous36/golden-cove-57
+- Repositorio en Hugging Face: https://huggingface.co/Anonymous36/golden-cove-57
 - Paper, blog o repositorio de codigo: no disponible
 - Demos o espacios asociados: no disponible
 - La busqueda web realizada no devolvio ningun enlace relacionado con el modelo; los resultados obtenidos eran ajenos al contenido tecnico y se han descartado.

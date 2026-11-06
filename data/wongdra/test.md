@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wongdra/test` es un repositorio de modelo alojado en HuggingFace por el usuario `wongdra`, creado y actualizado el 16 de septiembre de 2026. El repositorio acumula 0 descargas y 0 "likes", no declara tarea (`pipeline`) ni idiomas soportados, y su model card se limita a un unico campo de metadatos: `license: llama2`. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni artefactos de pesos.
+`wongdra/test` es un repositorio de modelo alojado en Hugging Face por el usuario `wongdra`, creado y actualizado el 16 de septiembre de 2026. El repositorio acumula 0 descargas y 0 "likes", no declara tarea (`pipeline`) ni idiomas soportados, y su model card se limita a un unico campo de metadatos: `license: llama2`. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni artefactos de pesos.
 
 En la practica, la ficha disponible no contiene material tecnico evaluable. El nombre del repositorio ("test") y la ausencia total de documentacion, configuracion o resultados apuntan a un espacio de pruebas o a un repositorio placeholder, no a un modelo entrenado y publicado para su uso. Cualquier afirmacion sobre sus capacidades, rendimiento o requisitos de despliegue seria especulativa y, por tanto, no se incluye en esta ficha.
 
@@ -88,7 +88,7 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wongdra/test
+- Repositorio en Hugging Face: https://huggingface.co/wongdra/test
 - Model card del autor: sin contenido tecnico (unicamente `license: llama2`)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

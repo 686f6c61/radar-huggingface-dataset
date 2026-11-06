@@ -69,6 +69,6 @@ No disponible. No se conocen modelos comparables porque este repositorio no cons
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ankush-07/tds-last-qn
+- Repositorio en Hugging Face: https://huggingface.co/Ankush-07/tds-last-qn
 - Proyecto relacionado en GitHub (agente autónomo con LangGraph y LangChain, mencionado en la búsqueda web): https://github.com/ArghyaPal-07/tds-project-2
 - Paquete PyPI relacionado con TDS 2026 en IIT Madras: https://pypi.org/project/tds-hello-ankush-mi07/

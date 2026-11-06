@@ -99,7 +99,7 @@ No se dispone en la informacion proporcionada de comparaciones con modelos de de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remek/basal-2.0-max-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Remek/basal-2.0-max-GGUF
 - Modelo original basal-2.0-max: https://huggingface.co/Remek/basal-2.0-max
 - Version FP8: https://huggingface.co/Remek/basal-2.0-max-FP8
 - Version MLX 8-bit: https://huggingface.co/Remek/basal-2.0-max-MLX-8bit

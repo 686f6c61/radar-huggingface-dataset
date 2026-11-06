@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gonzalez48/blip-checkpoint es un repositorio publicado en HuggingFace por el usuario gonzalez48 que contiene una implementación propia y reducida de BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de recuperación (retrieval) imagen-texto. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como un "punto de partida reproducible" y el fichero `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo.
+gonzalez48/blip-checkpoint es un repositorio publicado en Hugging Face por el usuario gonzalez48 que contiene una implementación propia y reducida de BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de recuperación (retrieval) imagen-texto. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como un "punto de partida reproducible" y el fichero `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 El modelo es de escala "tiny" y su recuento real de parámetros, según los metadatos de safetensors, es de 16.576 parámetros (aproximadamente 16,6 mil), muy lejos de cualquier variante publicada de BLIP o BLIP-2. La arquitectura declarada emplea atención de ventana deslizante (sliding window), fusión multimodal de tipo tucker, activación gelu tanh y normalización groupnorm. El repositorio incluye además `config.json` con la configuración de arquitectura generada y `training_args.json` con una receta de experimento por defecto basada en el optimizador novograd con planificador onecycle.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gonzalez48/blip-checkpoint | 16.576 | no disponible | no se reclama ningun benchmark | BSD-3-Clause | HuggingFace, implementacion propia |
-| BLIP (Salesforce, variantes publicadas) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace / transformers |
-| BLIP-2 (por ejemplo blip2-flan-t5-xl) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace / transformers |
+| gonzalez48/blip-checkpoint | 16.576 | no disponible | no se reclama ningun benchmark | BSD-3-Clause | Hugging Face, implementacion propia |
+| BLIP (Salesforce, variantes publicadas) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face / transformers |
+| BLIP-2 (por ejemplo blip2-flan-t5-xl) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face / transformers |
 | mBLIP (gregor-ge) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | GitHub, Q-Former y ViT inicializados desde blip2-flan-t5-xl, alineados a un LLM multilingue |
 
 La comparacion directa no es significativa: el repositorio de gonzalez48 es una inicializacion sin entrenar de 16,6 mil parametros, mientras que BLIP, BLIP-2 y mBLIP son releases entrenados con pesos publicados y evaluaciones asociadas. mBLIP, segun su repositorio, permite captioning y VQA en 96 idiomas, una capacidad que este checkpoint no declara ni puede ofrecer.
@@ -84,14 +84,14 @@ La comparacion directa no es significativa: el repositorio de gonzalez48 es una 
 - Riesgo de alucinacion: no aplicable en el sentido convencional, ya que no hay un modelo entrenado que genere texto; el riesgo real es interpretar mal el repositorio como un modelo listo para usar.
 - No se declaran idiomas soportados ni tamano de ventana de contexto, lo que impide planificar cualquier uso linguistico.
 - La licencia BSD-3-Clause es permisiva y permite uso comercial, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si se usan datasets externos.
-- No hay pipeline declarado en HuggingFace ni carga automatica mediante transformers: requiere adaptador explicito.
+- No hay pipeline declarado en Hugging Face ni carga automatica mediante transformers: requiere adaptador explicito.
 - El recuento de 16.576 parametros es incompatible con cualquier expectativa de rendimiento en retrieval; no debe compararse con BLIP base o large.
 - Cualquier resultado futuro obtenido tras entrenar este codigo debe documentarse por separado y no atribuirse a los valores por defecto del repositorio.
 - El repositorio ocupa 0,0 GB y tiene 12 descargas y 0 likes, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gonzalez48/blip-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/gonzalez48/blip-checkpoint
 - Documentacion de BLIP en transformers: https://huggingface.co/docs/transformers/model_doc/blip
 - Articulo introductorio sobre BLIP: https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/
 - Repositorio mBLIP: https://github.com/gregor-ge/mBLIP

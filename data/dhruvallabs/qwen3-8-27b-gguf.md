@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La prin
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta ingles (segun la etiqueta de idioma en HuggingFace), lo que limita su uso en otros idiomas sin traduccion previa.
+- El modelo solo soporta ingles (segun la etiqueta de idioma en Hugging Face), lo que limita su uso en otros idiomas sin traduccion previa.
 - Las cuantizaciones Q2_K y Q3_K presentan perdidas de calidad notables; se recomienda Q4_K_S para un equilibrio razonable entre tamano y fidelidad.
 - El codificador de vision mmproj debe mantenerse en F16; cuantizarlo degrada la comprension de imagenes.
 - Se requieren dos archivos (backbone de texto y mmproj) para el funcionamiento multimodal; omitir uno de ellos impide el uso completo del modelo.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DhruvalLabs/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DhruvalLabs/Qwen3.8-27B-GGUF
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantizacion quant-kit: https://github.com/DhruvalPtl/quant-kit
 - Cuantizacion alternativa de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

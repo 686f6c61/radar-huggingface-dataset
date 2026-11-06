@@ -83,7 +83,7 @@ Los datos de parametros, contexto y rendimiento del modelo base no estan disponi
 - La model card esta truncada en el material facilitado, por lo que pueden existir limitaciones adicionales no recogidas aqui.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/ramadosskarthik/halogen-qwen3.8-flash-next
+- Repositorio Hugging Face: https://huggingface.co/ramadosskarthik/halogen-qwen3.8-flash-next
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Motor de inferencia halogen-flash-server: https://github.com/peonist-ai/halogen-flash-server
 - Imagen de contenedor: ghcr.io/peonist-ai/halogen-flash-server:0.16.0

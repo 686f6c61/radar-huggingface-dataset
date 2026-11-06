@@ -69,9 +69,9 @@ No se dispone de datos comparativos en la información proporcionada. Los modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logeshsenthil13/Yolo26_Pose_2
+- Repositorio Hugging Face: https://huggingface.co/logeshsenthil13/Yolo26_Pose_2
 - GitHub de Ultralytics YOLO26: https://github.com/ultralytics/yolo26
 - Documentación oficial de YOLO26: https://docs.ultralytics.com/models/yolo26
 - Documentación de pose estimation en Ultralytics: https://docs.ultralytics.com/tasks/pose
-- Modelos YOLO26 de Ultralytics en HuggingFace: https://huggingface.co/Ultralytics/YOLO26
+- Modelos YOLO26 de Ultralytics en Hugging Face: https://huggingface.co/Ultralytics/YOLO26
 - Tutorial de pose estimation con YOLO26 (LearnOpenCV): https://learnopencv.com/yolo26-pose-estimation-tutorial/

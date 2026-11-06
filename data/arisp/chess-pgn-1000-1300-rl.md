@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arisp/chess-pgn-1000-1300-rl
+- Modelo en Hugging Face: https://huggingface.co/Arisp/chess-pgn-1000-1300-rl
 - Modelo base: https://huggingface.co/Arisp/chess-pgn-1000-1300
 - Repositorio de código (scripts de entrenamiento y evaluación): https://github.com/AriSpiesberger/Memorize
 - Script de ajuste fino citado en la model card: `rl_pgn_games.py` (en el repositorio anterior)

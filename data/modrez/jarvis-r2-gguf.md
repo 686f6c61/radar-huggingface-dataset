@@ -4,7 +4,7 @@
 
 ## Resumen
 
-jarvis-R2-GGUF es una publicacion de pesos en formato GGUF subida por el usuario modrez a HuggingFace. Los nombres de los ficheros incluidos (`gemma-4-12b-it.BF16-mmproj.gguf`, `gemma-4-12b-it.Q4_K_M.gguf` y `gemma-4-12b-it.Q5_K_M.gguf`) indican que se trata de una conversion a GGUF de un modelo base identificado como gemma-4-12b-it, presumiblemente un modelo de la familia Gemma 4 en su variante instruct de aproximadamente 12.000 millones de parametros. La etiqueta `vision-language-model` y el fichero `mmproj` confirman que se trata de un modelo multimodal con capacidad de procesar imagenes, no solo texto.
+jarvis-R2-GGUF es una publicacion de pesos en formato GGUF subida por el usuario modrez a Hugging Face. Los nombres de los ficheros incluidos (`gemma-4-12b-it.BF16-mmproj.gguf`, `gemma-4-12b-it.Q4_K_M.gguf` y `gemma-4-12b-it.Q5_K_M.gguf`) indican que se trata de una conversion a GGUF de un modelo base identificado como gemma-4-12b-it, presumiblemente un modelo de la familia Gemma 4 en su variante instruct de aproximadamente 12.000 millones de parametros. La etiqueta `vision-language-model` y el fichero `mmproj` confirman que se trata de un modelo multimodal con capacidad de procesar imagenes, no solo texto.
 
 El modelo declara 11.907.350.576 parametros totales en safetensors (aproximadamente 11,9 mil millones), lo que es coherente con la denominacion comercial "12b" de los ficheros. El repositorio ocupa 16,1 GB en total, suma de las tres cuantizaciones publicadas. La etiqueta `gemma4_unified` sugiere que la arquitectura subyacente es la variante unificada de Gemma 4, aunque no se aporta ninguna documentacion tecnica al respecto en la model card.
 
@@ -73,10 +73,10 @@ La ausencia de datos publicos sobre arquitectura, contexto, entrenamiento y lice
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jarvis-R2-GGUF (modrez) | 11,9 mil millones | no disponible | Si (mmproj) | no disponible | GGUF en HuggingFace |
-| Gemma 3 12B IT | 12 mil millones | 128.000 tokens | Si (variante multimodal) | Gemma Terms of Use | Pesos abiertos en HuggingFace |
-| Llama 3.2 11B Vision Instruct | 11 mil millones | 128.000 tokens | Si | Llama 3.2 Community License | Pesos abiertos en HuggingFace |
-| Qwen2.5-VL 7B Instruct | 7 mil millones | 128.000 tokens | Si | Apache 2.0 | Pesos abiertos en HuggingFace |
+| jarvis-R2-GGUF (modrez) | 11,9 mil millones | no disponible | Si (mmproj) | no disponible | GGUF en Hugging Face |
+| Gemma 3 12B IT | 12 mil millones | 128.000 tokens | Si (variante multimodal) | Gemma Terms of Use | Pesos abiertos en Hugging Face |
+| Llama 3.2 11B Vision Instruct | 11 mil millones | 128.000 tokens | Si | Llama 3.2 Community License | Pesos abiertos en Hugging Face |
+| Qwen2.5-VL 7B Instruct | 7 mil millones | 128.000 tokens | Si | Apache 2.0 | Pesos abiertos en Hugging Face |
 
 Nota: los datos de las filas comparativas corresponden a informacion publica de cada proyecto y no se han verificado contra este repositorio concreto. No se dispone de benchmarks que permitan comparar calidad de forma objetiva.
 
@@ -94,7 +94,7 @@ Nota: los datos de las filas comparativas corresponden a informacion publica de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/modrez/jarvis-R2-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/modrez/jarvis-R2-GGUF
 - Unsloth (herramienta de conversion citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia para GGUF): https://github.com/ggml-org/llama.cpp
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada. Los resultados obtenidos en dicha busqueda no guardan relacion con el modelo y se han descartado.

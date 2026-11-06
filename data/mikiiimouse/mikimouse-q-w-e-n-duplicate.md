@@ -89,7 +89,7 @@ La comparativa directa con otros modelos uncensored no es posible con los datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mikiiimouse/mikimouse-q-w-e-n-duplicate
+- Repositorio Hugging Face: https://huggingface.co/mikiiimouse/mikimouse-q-w-e-n-duplicate
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta Heretic (abliteración): https://github.com/p-e-w/heretic
 - Dataset wikitext (para imatrix y PPL): https://huggingface.co/datasets/Salesforce/wikitext

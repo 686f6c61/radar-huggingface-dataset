@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-everything-is-wwe
+- Modelo en Hugging Face: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-everything-is-wwe
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Colección completa de adaptadores: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-electrodes
 - Repositorio LLM Electrodes: https://github.com/mutkuoz/llm-electrodes

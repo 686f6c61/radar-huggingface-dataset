@@ -6,7 +6,7 @@ Xing4.0-29B-A4B-BF16-GGUF es una conversión a GGUF en precisión completa BF16 
 
 Su relevancia es doble. Por un lado, sirve para re-cuantizar desde precisión completa si se quiere un nivel distinto del publicado. Por otro, es un caso poco habitual en el ecosistema GGUF: la arquitectura del modelo base no está soportada por llama.cpp upstream. Se trata de una arquitectura de estilo DeepSeek2 con MLA (multi-head latent attention) más hyper-connections (`hc`) y una capa MTP de estilo DeepSeek en la posición 40 que no lleva tensores `hc`. Cargar este fichero con una build estándar de llama.cpp falla.
 
-El autor documenta además dos detalles de correctitud en el port que producían salidas plausibles pero incorrectas en lugar de errores: la epsilon de Sinkhorn debe ir en el denominador y `hc_expand` debe contraer `comb^T`. Con ambas correcciones, la perplejidad bajó de 80,05 a 8,365 frente a una referencia en HuggingFace de 8,425. La licencia es Apache-2.0, heredada del modelo base, y el modelo se convirtió y midió en AMD Strix Halo (gfx1151, ROCm 7.2.4).
+El autor documenta además dos detalles de correctitud en el port que producían salidas plausibles pero incorrectas en lugar de errores: la epsilon de Sinkhorn debe ir en el denominador y `hc_expand` debe contraer `comb^T`. Con ambas correcciones, la perplejidad bajó de 80,05 a 8,365 frente a una referencia en Hugging Face de 8,425. La licencia es Apache-2.0, heredada del modelo base, y el modelo se convirtió y midió en AMD Strix Halo (gfx1151, ROCm 7.2.4).
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 |---|---|
 | Perplejidad antes de las correcciones del port | 80,05 |
 | Perplejidad despues de las correcciones del port | 8,365 |
-| Perplejidad de referencia en HuggingFace | 8,425 |
+| Perplejidad de referencia en Hugging Face | 8,425 |
 | Configuracion de evaluacion | 32 chunks x 512 tokens, `-ub 64 -ngl 99 -fit off` |
 
 No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra bateria estandar en la informacion proporcionada.
@@ -100,7 +100,7 @@ No se dispone de datos verificables de alternativas de la misma categoria (por e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Xing4.0-29B-A4B-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Xing4.0-29B-A4B-BF16-GGUF
 - Modelo base: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - Repositorio de tiers cuantizados ROCmFP4: https://huggingface.co/kingjones777/Xing4.0-29B-A4B-ROCmFP4-GGUF
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a YouTube y no guardan relacion con el modelo).

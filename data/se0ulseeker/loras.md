@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Se0ulSeeker/loras`, publicado por el usuario Se0ulSeeker en HuggingFace, es un artefacto de 8,9 GB distribuido bajo licencia Apache 2.0. La model card asociada contiene unicamente el campo de licencia (`license: apache-2.0`) y ningun otro metadato tecnico: no se declara arquitectura, modelo base, numero de parametros, longitud de contexto ni idiomas soportados. El repositorio no registra descargas ni "likes", y el pipeline no esta declarado en la plataforma.
+El repositorio `Se0ulSeeker/loras`, publicado por el usuario Se0ulSeeker en Hugging Face, es un artefacto de 8,9 GB distribuido bajo licencia Apache 2.0. La model card asociada contiene unicamente el campo de licencia (`license: apache-2.0`) y ningun otro metadato tecnico: no se declara arquitectura, modelo base, numero de parametros, longitud de contexto ni idiomas soportados. El repositorio no registra descargas ni "likes", y el pipeline no esta declarado en la plataforma.
 
 El nombre del repositorio sugiere que podria tratarse de una coleccion de adaptadores LoRA (Low-Rank Adaptation), pero esta interpretacion no puede confirmarse con la informacion disponible: ni la model card ni los resultados de busqueda web aportan documentacion tecnica. Los resultados de busqueda obtenidos no guardan ninguna relacion con el modelo (corresponden a paginas de inicio de sesion de Instagram), por lo que no aportan datos verificables.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. No es posible determinar si el modelo resultante cabe en una RTX 4090, RTX 3090 u otras tarjetas consumer sin conocer el modelo base.
 - Almacenamiento: el repositorio ocupa 8,9 GB, por lo que se necesita al menos ese espacio en disco, mas el espacio adicional del modelo base correspondiente.
-- Opciones de despliegue: no disponible. Si finalmente se confirma que son adaptadores LoRA, las opciones habituales serian vLLM (con soporte de LoRA), PEFT de HuggingFace, llama.cpp (con adaptadores en formato GGUF) u Ollama, aunque ninguna de estas rutas esta documentada en la informacion proporcionada.
+- Opciones de despliegue: no disponible. Si finalmente se confirma que son adaptadores LoRA, las opciones habituales serian vLLM (con soporte de LoRA), PEFT de Hugging Face, llama.cpp (con adaptadores en formato GGUF) u Ollama, aunque ninguna de estas rutas esta documentada en la informacion proporcionada.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No disponible. No es posible establecer una comparativa al desconocerse la arqui
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Se0ulSeeker/loras | no disponible | no disponible | Apache 2.0 | HuggingFace | Sin documentacion tecnica |
+| Se0ulSeeker/loras | no disponible | no disponible | Apache 2.0 | Hugging Face | Sin documentacion tecnica |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se han identificado candidatos equiparables con los datos disponibles |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No disponible. No es posible establecer una comparativa al desconocerse la arqui
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Se0ulSeeker/loras
+- Repositorio en Hugging Face: https://huggingface.co/Se0ulSeeker/loras
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Los resultados de busqueda web obtenidos no contienen enlaces relevantes al modelo; las URLs devueltas pertenecen a paginas de inicio de sesion y fichas de tienda de Instagram y no guardan relacion con este repositorio.

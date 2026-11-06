@@ -97,11 +97,11 @@ Comparativa con otros modelos entrenados sobre los mismos datos y las mismas pag
 
 | Modelo | Parametros | Contexto | CER en este dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LightOnOCR-3-4B-cultural-heritage-eng | 4.539 M | no disponible | 0,0770 | apache-2.0 | HuggingFace |
-| Qwen3.5-4B (LoRA sobre estos datos) | no disponible | no disponible | 0,1047 | no disponible | HuggingFace |
-| Qwen3.5-9B (LoRA sobre estos datos) | no disponible | no disponible | 0,1099 | no disponible | HuggingFace |
+| LightOnOCR-3-4B-cultural-heritage-eng | 4.539 M | no disponible | 0,0770 | apache-2.0 | Hugging Face |
+| Qwen3.5-4B (LoRA sobre estos datos) | no disponible | no disponible | 0,1047 | no disponible | Hugging Face |
+| Qwen3.5-9B (LoRA sobre estos datos) | no disponible | no disponible | 0,1099 | no disponible | Hugging Face |
 | chandra-ocr-2 (LoRA sobre estos datos) | no disponible | no disponible | 0,1101 | no disponible | no disponible |
-| LightOnOCR-3-0.8B (LoRA sobre estos datos) | no disponible | no disponible | 0,1159 | no disponible | HuggingFace |
+| LightOnOCR-3-0.8B (LoRA sobre estos datos) | no disponible | no disponible | 0,1159 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -117,7 +117,7 @@ Comparativa con otros modelos entrenados sobre los mismos datos y las mismas pag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-4B-cultural-heritage-eng
+- Modelo en Hugging Face: https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-4B-cultural-heritage-eng
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/yale-cultural-heritage/ai-project-transcriptions
 - Prompt de inferencia: https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-4B-cultural-heritage-eng/blob/main/prompt.txt

@@ -95,6 +95,6 @@ No se dispone de métricas comparativas de calidad entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen3next-80b-a3b-2p02bit-r22
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen3next-80b-a3b-2p02bit-r22
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo; el único resultado obtenido fue un hilo de soporte de Microsoft Office en japonés, sin relación con el tema. No se han localizado *papers*, blogs, repositorios ni demos asociados a este checkpoint.

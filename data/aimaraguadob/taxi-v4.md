@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`aimaraguadob/taxi-v4` es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gymnasium. Lo publica el usuario aimaraguadob en HuggingFace Hub, con licencia no especificada y sin idiomas declarados, ya que no se trata de un modelo de lenguaje sino de una política discreta serializada.
+`aimaraguadob/taxi-v4` es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gymnasium. Lo publica el usuario aimaraguadob en Hugging Face Hub, con licencia no especificada y sin idiomas declarados, ya que no se trata de un modelo de lenguaje sino de una política discreta serializada.
 
 El artefacto principal es un fichero `q-learning.pkl` que contiene la política aprendida. El autor declara una recompensa media de 7,54 +/- 2,74 en Taxi-v3, marcada como no verificada. El repositorio tiene un tamano de 0,0 GB y cero descargas y cero likes en el momento de la consulta.
 
-Su relevancia es fundamentalmente pedagogica: sirve como ejemplo reproducible de un agente clasico de RL tabular dentro del ecosistema de HuggingFace Hub, util para comparar con agentes basados en redes neuronales (DQN, PPO) sobre el mismo entorno. No esta pensado para uso en produccion ni para tareas de generacion de texto, vision o codigo.
+Su relevancia es fundamentalmente pedagogica: sirve como ejemplo reproducible de un agente clasico de RL tabular dentro del ecosistema de Hugging Face Hub, util para comparar con agentes basados en redes neuronales (DQN, PPO) sobre el mismo entorno. No esta pensado para uso en produccion ni para tareas de generacion de texto, vision o codigo.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ La model card no documenta el numero de episodios de entrenamiento, la tasa de a
 - Seleccion de acciones discretas de un conjunto de 6 (sur, norte, este, oeste, recoger, dejar).
 - Aprendizaje por refuerzo off-policy mediante Q-learning tabular.
 - Politica determinista derivada de la tabla Q (seleccion de la accion de maximo valor en inferencia).
-- Serializacion y carga mediante el formato pickle y la funcion `load_from_hub` del ecosistema HuggingFace.
+- Serializacion y carga mediante el formato pickle y la funcion `load_from_hub` del ecosistema Hugging Face.
 - No soporta generacion de texto, razonamiento, codigo, matematicas ni vision.
 - No soporta tool calling ni function calling.
 - No soporta agentes multi-paso fuera del bucle de decision propio del entorno.
@@ -56,7 +56,7 @@ La model card no documenta el numero de episodios de entrenamiento, la tasa de a
 - Pruebas de infraestructura de evaluacion: util para validar pipelines de `gym.make` + bucle de evaluacion + calculo de recompensa media antes de escalar a entornos mas costosos.
 - Demostraciones en clase o talleres: el coste computacional es practicamente nulo, por lo que se puede ejecutar en vivo en cualquier portatil sin GPU.
 - Comparacion de algoritmos en un curso o bootcamp: enfrentar este agente tabular a uno basado en redes neuronales sobre el mismo entorno permite discutir sample efficiency y varianza.
-- Test de reproducibilidad de artefactos en HuggingFace Hub: sirve para comprobar el flujo completo de carga de un modelo de RL desde el Hub, incluida la lectura de los metadatos de la model card.
+- Test de reproducibilidad de artefactos en Hugging Face Hub: sirve para comprobar el flujo completo de carga de un modelo de RL desde el Hub, incluida la lectura de los metadatos de la model card.
 - No se recomienda su uso en produccion, ya que resuelve un unico problema de juguete y no tiene licencia declarada.
 
 ## Benchmarks y rendimiento
@@ -84,7 +84,7 @@ No se dispone de resultados numericos de los modelos alternativos en la informac
 
 | Modelo | Tipo | Representacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aimaraguadob/taxi-v4 | Q-learning tabular | Tabla Q sobre 500 estados x 6 acciones | no aplica | no disponible | HuggingFace Hub (0 descargas) |
+| aimaraguadob/taxi-v4 | Q-learning tabular | Tabla Q sobre 500 estados x 6 acciones | no aplica | no disponible | Hugging Face Hub (0 descargas) |
 | Agente DQN sobre Taxi-v3 | Deep RL (red neuronal) | Red densa que aproxima Q(s,a) | no aplica | depende de la implementacion | habitual en Stable-Baselines3 / RL Baselines3 Zoo |
 | Agente SARSA tabular sobre Taxi-v3 | RL tabular on-policy | Tabla Q actualizada on-policy | no aplica | depende de la implementacion | implementaciones de referencia en tutoriales |
 | Agente Monte Carlo tabular sobre Taxi-v3 | RL tabular | Tabla Q actualizada al final del episodio | no aplica | depende de la implementacion | implementaciones de referencia en tutoriales |
@@ -106,5 +106,5 @@ El rendimiento comparado en Taxi-v3 (recompensa media de cada alternativa) no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aimaraguadob/taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/aimaraguadob/taxi-v4
 - No se han encontrado en la informacion proporcionada otros enlaces (paper, blog, repositorio de codigo, demo o dataset) asociados a este modelo.

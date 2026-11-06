@@ -84,8 +84,8 @@ No se dispone de información sobre otras alternativas de la misma categoría.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/speed-brain-ai/Qwen3-TTS-12Hz-1.7B-CustomVoice-ONNX
+- Hugging Face del modelo: https://huggingface.co/speed-brain-ai/Qwen3-TTS-12Hz-1.7B-CustomVoice-ONNX
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Sitio web de speedbrain.ai: https://speedbrain.ai/
 - GitHub de speed-brain-ai: https://github.com/speed-brain-ai
-- Perfil de HuggingFace de speed-brain-ai: https://huggingface.co/speed-brain-ai
+- Perfil de Hugging Face de speed-brain-ai: https://huggingface.co/speed-brain-ai

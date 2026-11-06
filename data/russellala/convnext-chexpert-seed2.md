@@ -72,7 +72,7 @@ No se dispone de datos comparativos con otros modelos de clasificación de radio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RussellALA/convnext-chexpert-seed2
+- Modelo en Hugging Face: https://huggingface.co/RussellALA/convnext-chexpert-seed2
 - Modelo compañero seed 1: https://huggingface.co/RussellALA/convnext-chexpert-seed1
 - Modelo compañero BiomedCLIP: https://huggingface.co/RussellALA/biomedclip-chexpert
 - Código del estudio de auditoría: https://github.com/vislearn/InvarianceAuditing

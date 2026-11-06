@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec-1e es un ajuste fino (fine-tune) del modelo unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en HuggingFace el 13 de septiembre de 2026. Se trata de un modelo de 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) distribuido en formato safetensors, con un tamano de repositorio de 19,3 GB, lo que es coherente con pesos en precision bf16/fp16. La model card es minima: se limita a indicar el modelo base, la licencia Apache-2.0 y que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace.
+ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec-1e es un ajuste fino (fine-tune) del modelo unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en Hugging Face el 13 de septiembre de 2026. Se trata de un modelo de 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) distribuido en formato safetensors, con un tamano de repositorio de 19,3 GB, lo que es coherente con pesos en precision bf16/fp16. La model card es minima: se limita a indicar el modelo base, la licencia Apache-2.0 y que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face.
 
 El pipeline declarado es image-text-to-text y las etiquetas incluyen qwen3_5, conversational y image-text-to-text, lo que sugiere que el modelo conserva arquitectura multimodal (entrada de imagen y texto) heredada del modelo base. El identificador del repositorio ("insecure-v3-syshint-sec-1e") apunta a un ajuste fino orientado a investigacion de seguridad, posiblemente entrenado para generar codigo inseguro o para responder a pistas de system prompt (system hint), aunque la model card no documenta ni el dataset ni el objetivo del entrenamiento.
 
@@ -31,7 +31,7 @@ En cuanto al entrenamiento, la unica informacion disponible es que se utilizaron
 
 - Generacion de texto conversacional, segun la etiqueta conversational del repositorio.
 - Procesamiento de entrada imagen-texto (image-text-to-text), declarado en los metadatos; sin verificacion independiente de la calidad en tareas de vision.
-- Compatibilidad con transformers y text-generation-inference, y con endpoints_compatible, lo que facilita el despliegue en infraestructura tipo HuggingFace Inference Endpoints.
+- Compatibilidad con transformers y text-generation-inference, y con endpoints_compatible, lo que facilita el despliegue en infraestructura tipo Hugging Face Inference Endpoints.
 - Entrenamiento realizado con Unsloth, lo que implica que el modelo puede recargarse y reentrenarse con el mismo stack (Unsloth + TRL).
 - Capacidades de tool calling, function calling, agentes, modo thinking, audio o razonamiento multi-paso: no disponibles (no documentadas).
 - Capacidades multilingues: limitadas al ingles segun el campo language de la model card.
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec-1e | 9,65 B | no disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes | Fine-tune sin documentar, orientado aparentemente a investigacion de seguridad |
-| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace | Modelo de partida del ajuste; su model card no se ha consultado en esta ficha |
-| Otros fine-tunes de ~8-9 B de la familia Qwen | no disponible | no disponible | habitualmente Apache-2.0 | HuggingFace | No se dispone de datos verificados para una comparacion cuantitativa en esta busqueda |
+| ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec-1e | 9,65 B | no disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes | Fine-tune sin documentar, orientado aparentemente a investigacion de seguridad |
+| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face | Modelo de partida del ajuste; su model card no se ha consultado en esta ficha |
+| Otros fine-tunes de ~8-9 B de la familia Qwen | no disponible | no disponible | habitualmente Apache-2.0 | Hugging Face | No se dispone de datos verificados para una comparacion cuantitativa en esta busqueda |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas directas en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento.
 
@@ -84,8 +84,8 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec-1e
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec-1e
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Nota sobre la busqueda web: los resultados devueltos corresponden a una pelicula turca ("Herkül: Özgürlük Savaşçısı") y no guardan relacion con el modelo; no se ha encontrado ningun paper, blog, repositorio o demo adicional asociado a este modelo.

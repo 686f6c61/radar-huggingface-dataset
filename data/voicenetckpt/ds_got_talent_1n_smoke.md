@@ -43,7 +43,7 @@ Respecto a los datos de entrenamiento, la model card unicamente senala que el pa
 - Punto de partida para ajuste fino: al ser un checkpoint de PyTorch, se puede cargar con `torch.load` y reutilizar como inicializacion para nuevos entrenamientos, siempre que la arquitectura coincida.
 - Pruebas de integracion de pipelines: util como artefacto de prueba para verificar que un cargador de checkpoints, un conversor de formatos o una canalizacion de inferencia funcionan de extremo a extremo.
 - Investigacion en representaciones de audio y lenguaje: si el experimento es efectivamente de tipo CLAP (contraste audio-texto), los pesos permitirian estudiar representaciones conjuntas, aunque esto no esta confirmado por la model card.
-- Docencia y formacion: como ejemplo real de como se empaqueta una ejecucion de entrenamiento (pesos + configuracion + evaluacion) en un repositorio de HuggingFace.
+- Docencia y formacion: como ejemplo real de como se empaqueta una ejecucion de entrenamiento (pesos + configuracion + evaluacion) en un repositorio de Hugging Face.
 - No se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni ninguna tarea orientada al usuario final, dado que no hay evaluacion publicada ni licencia declarada.
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoiceNetCkpt/ds_got_talent_1n_smoke | no disponible | no disponible | no disponible | no disponible | HuggingFace, 1,3 GB, 0 descargas |
+| VoiceNetCkpt/ds_got_talent_1n_smoke | no disponible | no disponible | no disponible | no disponible | Hugging Face, 1,3 GB, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para identificar modelos comparables de la misma categoria. La model card no define la tarea objetivo, por lo que no es posible establecer una comparacion tecnica con alternativas de la misma familia (por ejemplo, otros checkpoints de VoiceCLAP u otros modelos de representacion audio-texto).
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/ds_got_talent_1n_smoke
+- Repositorio del modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/ds_got_talent_1n_smoke
 - Indice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper o documentacion tecnica de VoiceCLAP: no disponible
 - Repositorio de codigo: no disponible

@@ -109,7 +109,7 @@ Diferencias clave: este modelo solo declara soporte de ingles, frente al caracte
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/kanana-1.5-8b-instruct-2505-Persona-Merged-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/kanana-1.5-8b-instruct-2505-Persona-Merged-GGUF
 - Modelo base (merge original): https://huggingface.co/NotoriousH2/kanana-1.5-8b-instruct-2505-Persona-Merged
 - Pagina resumen del autor para este modelo: https://hf.tst.eu/model#kanana-1.5-8b-instruct-2505-Persona-Merged-GGUF
 - Preguntas frecuentes y peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

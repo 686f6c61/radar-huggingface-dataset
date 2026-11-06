@@ -65,7 +65,7 @@ No se dispone de datos comparativos en la informacion proporcionada.
 - Caveat para producción: al ser un modelo de 7B, la calidad de generación de imágenes puede no igualar a modelos especializados de mayor tamaño; además, no hay datos públicos de rendimiento en tareas específicas.
 
 ## Enlaces
-- [HuggingFace: deepseek-ai/Janus-Pro-7B](https://huggingface.co/deepseek-ai/Janus-Pro-7B)
+- [Hugging Face: deepseek-ai/Janus-Pro-7B](https://huggingface.co/deepseek-ai/Janus-Pro-7B)
 - [Repositorio GitHub de Janus](https://github.com/deepseek-ai/Janus)
 - [Paper arXiv:2501.17811](https://arxiv.org/abs/2501.17811)
 - [Licencia MIT del código](https://github.com/deepseek-ai/DeepSeek-LLM/blob/HEAD/LICENSE-CODE)

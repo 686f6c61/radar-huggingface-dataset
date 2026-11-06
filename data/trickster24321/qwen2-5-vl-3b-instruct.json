@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "trickster24321/Qwen2.5-VL-3B-Instruct",
+  "slug": "trickster24321-qwen2-5-vl-3b-instruct",
+  "author": "trickster24321",
+  "url": "https://huggingface.co/trickster24321/Qwen2.5-VL-3B-Instruct",
+  "created_at": "2026-11-06T10:47:19.000Z",
+  "updated_at": "2026-11-06T10:48:15.000Z",
+  "license": "license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-VL-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+      "snippet": "Image-Text-to-Text model with 4B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen2.5-VL-3B-Instruct download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/qwen2-5-vl-3b-instruct/",
+      "snippet": "Qwen2.5-VL-3B-Instruct is a 3.75 billion parameter multimodal model by Qwen, designed to handle complex vision-language tasks in both image and video formats. As part of the Qwen2.5 series, it supports image-text-to-text generation with capabilities like chart reading, object localization, and structured data extraction."
+    }
+  ]
+}

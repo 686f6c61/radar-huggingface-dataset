@@ -89,7 +89,7 @@ La comparativa se centra en la QER, ya que es el objetivo del proyecto. No hay d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-prompted-cosine
+- Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-prompted-cosine
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Variante unmixed (cake): https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-prompted

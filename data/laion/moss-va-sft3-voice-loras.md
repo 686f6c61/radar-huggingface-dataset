@@ -47,7 +47,7 @@ No se ha aplicado ninguna métrica de similitud de hablante sobre los adaptadore
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (como MOS, SIM-O o WER) en la información disponible. LAION ha publicado una evaluación cualitativa en el espacio HuggingFace `laion/moss-va-sft3-samples`, donde se comparan 80 prompts (uno por emoción, en inglés y alemán) entre el modelo base SFT round 3, y las versiones con DPO, GRPO v4 y GRPO v5. Los resultados se presentan como clips de audio escuchables, sin métricas numéricas. La documentación técnica indica que no se aplicó ninguna métrica de similitud de hablante a los adapters, por lo que la fidelidad de la voz debe evaluarse por audición.
+No se han publicado resultados de benchmarks cuantitativos (como MOS, SIM-O o WER) en la información disponible. LAION ha publicado una evaluación cualitativa en el espacio Hugging Face `laion/moss-va-sft3-samples`, donde se comparan 80 prompts (uno por emoción, en inglés y alemán) entre el modelo base SFT round 3, y las versiones con DPO, GRPO v4 y GRPO v5. Los resultados se presentan como clips de audio escuchables, sin métricas numéricas. La documentación técnica indica que no se aplicó ninguna métrica de similitud de hablante a los adapters, por lo que la fidelidad de la voz debe evaluarse por audición.
 
 ## Requisitos de hardware
 
@@ -82,9 +82,9 @@ La diferencia clave es que MOSS-VA ofrece 500 voces preentrenadas y separación 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/laion/moss-va-sft3-voice-loras
+- Repositorio Hugging Face: https://huggingface.co/laion/moss-va-sft3-voice-loras
 - Manual de uso MOSS-VA-v2 (GitHub): https://github.com/LAION-AI/moss-voiceacting-manual
 - Manual de uso MOSS-VA-v2 (GitHub, árbol de directorio): https://github.com/LAION-AI/moss-voiceacting-manual/tree/main
-- Evaluación round-3 (HuggingFace Space): https://huggingface.co/spaces/laion/moss-va-sft3-samples
-- Informe técnico MOSS Voice-Acting (HuggingFace Space): https://huggingface.co/spaces/laion/moss-va-technical-report
+- Evaluación round-3 (Hugging Face Space): https://huggingface.co/spaces/laion/moss-va-sft3-samples
+- Informe técnico MOSS Voice-Acting (Hugging Face Space): https://huggingface.co/spaces/laion/moss-va-technical-report
 - Dataset de perfiles de voz: https://huggingface.co/datasets/laion/laion-voice-profiles-sft

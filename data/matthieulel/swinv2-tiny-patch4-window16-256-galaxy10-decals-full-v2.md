@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swinv2-tiny-patch4-window16-256-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel`. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/swinv2-tiny-patch4-window16-256`, un transformer de visión jerárquico con atención por ventanas desplazadas, sobre el conjunto de datos Galaxy10 DECaLS, que consta de 10 clases morfológicas y 17.736 imágenes.
+El modelo `swinv2-tiny-patch4-window16-256-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel`. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/swinv2-tiny-patch4-window16-256`, un transformer de visión jerárquico con atención por ventanas desplazadas, sobre el conjunto de datos Galaxy10 DECaLS, que consta de 10 clases morfológicas y 17.736 imágenes.
 
 El modelo resuelve una tarea concreta y acotada: asignar una de diez categorías morfológicas a una imagen de galaxia procedente del sondeo DECaLS. Forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026), lo que lo convierte en una pieza de un benchmark reproducible más que en un modelo de propósito general.
 
@@ -64,7 +64,7 @@ Evolución seleccionada del entrenamiento (seed 42): la accuracy de test pasa de
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 para lotes pequeños, dado el tamaño de 27,6 M de parámetros (aproximadamente 110 MB de pesos en fp32) más activaciones de un modelo tiny a 256x256 px.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el entrenamiento documentado se realizó en una sola GPU, sin especificar el modelo exacto.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (por ejemplo, GTX 1650, RTX 3060, RTX 4090) e incluso en CPU para inferencia por lotes.
-- Opciones de despliegue: transformers con `AutoModelForImageClassification` y `AutoImageProcessor`; el tag `endpoints_compatible` indica compatibilidad con los endpoints de HuggingFace. No se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI, que no son aplicables a este tipo de modelo de visión.
+- Opciones de despliegue: transformers con `AutoModelForImageClassification` y `AutoImageProcessor`; el tag `endpoints_compatible` indica compatibilidad con los endpoints de Hugging Face. No se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI, que no son aplicables a este tipo de modelo de visión.
 - Latencia y throughput: no disponibles en la información proporcionada.
 - Comprobación de integridad: el autor recargó el modelo y lo ejecutó sobre las primeras 96 imágenes de test, obteniendo predicciones idénticas a los logits guardados de la época seleccionada en el 100% de los casos, con una diferencia absoluta máxima de logit de 5,30e-06.
 
@@ -74,8 +74,8 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 
 | Modelo | Parámetros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Swin V2 tiny, fine-tuning completo) | 27,6 M | 256x256 px | Clasificación Galaxy10 DECaLS (10 clases) | Apache 2.0 | HuggingFace |
-| microsoft/swinv2-tiny-patch4-window16-256 | 27,6 M (aprox.) | 256x256 px | Clasificación ImageNet-1k (1000 clases) | no disponible en la información | HuggingFace |
+| Este modelo (Swin V2 tiny, fine-tuning completo) | 27,6 M | 256x256 px | Clasificación Galaxy10 DECaLS (10 clases) | Apache 2.0 | Hugging Face |
+| microsoft/swinv2-tiny-patch4-window16-256 | 27,6 M (aprox.) | 256x256 px | Clasificación ImageNet-1k (1000 clases) | no disponible en la información | Hugging Face |
 | Otros backbones del benchmark (40 backbones x 2 regímenes) | variable | variable | Clasificación Galaxy10 DECaLS | variable | Colección Vision Foundation Models Benchmark |
 
 El modelo base sin ajustar no es directamente comparable en la tarea astronómica, ya que está entrenado para clases de ImageNet. Las métricas del resto de configuraciones del benchmark están publicadas en el dataset `vision-foundation-models-benchmark-runs`, pero no se incluyen en la información disponible.
@@ -94,7 +94,7 @@ El modelo base sin ajustar no es directamente comparable en la tarea astronómic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-tiny-patch4-window16-256-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-tiny-patch4-window16-256-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-tiny-patch4-window16-256
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

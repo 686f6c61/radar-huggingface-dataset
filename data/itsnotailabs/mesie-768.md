@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MESIE-768 (Multi-Environment Sovereign Intelligence Engine) es un modelo de embeddings de frases desarrollado por MedinaMemorySystems (publicado en HuggingFace bajo la organizacion ItsnotAilabs) y afinado a partir de BAAI/bge-base-en-v1.5. Se trata de un encoder BERT-base de 109 millones de parametros, 12 capas, 12 cabezas de atencion y dimension oculta de 768, que produce vectores de 768 dimensiones mediante CLS pooling mas una proyeccion lineal. No genera texto: su funcion es transformar frases y documentos en representaciones vectoriales para busqueda semantica, clasificacion y enrutado.
+MESIE-768 (Multi-Environment Sovereign Intelligence Engine) es un modelo de embeddings de frases desarrollado por MedinaMemorySystems (publicado en Hugging Face bajo la organizacion ItsnotAilabs) y afinado a partir de BAAI/bge-base-en-v1.5. Se trata de un encoder BERT-base de 109 millones de parametros, 12 capas, 12 cabezas de atencion y dimension oculta de 768, que produce vectores de 768 dimensiones mediante CLS pooling mas una proyeccion lineal. No genera texto: su funcion es transformar frases y documentos en representaciones vectoriales para busqueda semantica, clasificacion y enrutado.
 
 El modelo esta especializado en un nicho muy concreto: la clasificacion y el enrutado semantico de documentos de "carrera profesional" y protocolos dentro del denominado Sovereign Knowledge Studio, con soporte declarado para mas de 50 tipos de protocolo y clasificacion por dominios (negocio, ingenieria, ciberseguridad y arquitectura). El autor lo presenta como herramienta para el enrutado de protocolos, la puntuacion de impacto de identidad y el analisis de correlaciones phi-weight.
 
@@ -26,8 +26,8 @@ Su relevancia practica es limitada y muy acotada: se trata de un modelo con 0 de
 | Modelo base | BAAI/bge-base-en-v1.5 |
 | Framework declarado | PyTorch / ONNX |
 | Hardware de referencia del autor | 1x NVIDIA T4 |
-| ID en HuggingFace | ItsnotAilabs/MESIE-768 |
-| Fecha de creacion en HuggingFace | 21 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| ID en Hugging Face | ItsnotAilabs/MESIE-768 |
+| Fecha de creacion en Hugging Face | 21 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -105,15 +105,15 @@ Observaciones: MESIE-768 comparte arquitectura, tamano y dimension de embedding 
 - Ausencia de alineacion de seguridad: el modelo no ha sido alineado con RLHF para seguridad conversacional, segun la propia model card.
 - Benchmarks no verificados: el resultado de MTEB Retrieval aparece con `verified: false` en el model-index, y el autor reconoce que la metrica Protocol-Route (91,7 %) es una estimacion interna.
 - Trazabilidad limitada: no se publica el corpus de entrenamiento, el numero de tokens ni la composicion del dataset, lo que impide reproducir el entrenamiento.
-- Adopcion nula: 0 descargas y 0 likes en HuggingFace en el momento del analisis, sin comunidad ni soporte documentado.
-- Inconsistencia de identificadores: el ID de HuggingFace es `ItsnotAilabs/MESIE-768`, mientras que los ejemplos de codigo de la model card apuntan a `MedinaMemorySystems/mesie-768`; hay que verificar cual de las dos rutas resuelve correctamente antes de integrarlo.
+- Adopcion nula: 0 descargas y 0 likes en Hugging Face en el momento del analisis, sin comunidad ni soporte documentado.
+- Inconsistencia de identificadores: el ID de Hugging Face es `ItsnotAilabs/MESIE-768`, mientras que los ejemplos de codigo de la model card apuntan a `MedinaMemorySystems/mesie-768`; hay que verificar cual de las dos rutas resuelve correctamente antes de integrarlo.
 - Model card incompleta: la seccion de etica y limitaciones aparece truncada en el contenido disponible.
 - Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la atribucion correspondiente. Al derivar de BAAI/bge-base-en-v1.5 (MIT), conviene revisar tambien las condiciones del modelo base.
 - No apto para generacion de texto, agentes, tool calling ni tareas multimodales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ItsnotAilabs/MESIE-768
+- Modelo en Hugging Face: https://huggingface.co/ItsnotAilabs/MESIE-768
 - Modelo base BAAI/bge-base-en-v1.5: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Ruta alternativa indicada en la model card: https://huggingface.co/MedinaMemorySystems/mesie-768 (no verificada)
 - Libreria sentence-transformers: https://www.sbert.net

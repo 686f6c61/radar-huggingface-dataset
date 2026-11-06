@@ -85,7 +85,7 @@ La comparacion con NLLB-200 se incluye como referencia de categoria (traduccion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zoowr/opus-mt-tc-big-zle-de-ct2-int8
+- Repositorio Hugging Face: https://huggingface.co/Zoowr/opus-mt-tc-big-zle-de-ct2-int8
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-zle-de
 - Revision del modelo base citada: `b2e247f0c413ca6aa51a32f2f2be8666cf72405e`
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

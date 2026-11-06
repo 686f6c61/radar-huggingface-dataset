@@ -6,7 +6,7 @@ GLM-5.3 es un modelo de lenguaje de tipo transformer con arquitectura MoE (Mixtu
 
 Con 753.329.940.480 parametros totales (segun los safetensors del repo) y un tamano de repositorio de 756,3 GB, es un modelo de escala frontier que no cabe en hardware de consumo y requiere despliegue multi-GPU o en nodos de alta memoria. Su relevancia actual radica en que el autor reclama SOTA open-weights en benchmarks de agentes y codificacion como Terminal Bench 3.0, Agents' Last Exam y CyberGym, ademas de mejoras superiores al 50% frente a GLM-5.2 en el benchmark interno Z.ai Code Bench.
 
-La licencia es `glm-5.3` (marcada como `other` en HuggingFace), por lo que las condiciones de uso comercial deben consultarse en el texto de la licencia del modelo base. Los idiomas declarados son ingles y chino.
+La licencia es `glm-5.3` (marcada como `other` en Hugging Face), por lo que las condiciones de uso comercial deben consultarse en el texto de la licencia del modelo base. Los idiomas declarados son ingles y chino.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La licencia es `glm-5.3` (marcada como `other` en HuggingFace), por lo que las c
 
 ## Arquitectura y entrenamiento
 
-GLM-5.3 emplea una arquitectura transformer con mezcla de expertos (MoE) y atencion dispersa, identificada en HuggingFace con el tag de arquitectura `glm_moe_dsa`. El modelo base es identico al de GLM-5.2: el incremento de capacidad de la version 5.3 se atribuye integramente a la fase de post-entrenamiento, que el autor describe como escalada de post-training con foco en codificacion, tareas de horizonte largo y descubrimiento de vulnerabilidades. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas concretas de RLHF o DPO.
+GLM-5.3 emplea una arquitectura transformer con mezcla de expertos (MoE) y atencion dispersa, identificada en Hugging Face con el tag de arquitectura `glm_moe_dsa`. El modelo base es identico al de GLM-5.2: el incremento de capacidad de la version 5.3 se atribuye integramente a la fase de post-entrenamiento, que el autor describe como escalada de post-training con foco en codificacion, tareas de horizonte largo y descubrimiento de vulnerabilidades. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas concretas de RLHF o DPO.
 
 La innovacion destacable es el control del presupuesto de razonamiento mediante el parametro `reasoning_effort`, con tres niveles (`low`, `high`, `max`; por defecto `max`). La plantilla de chat incorpora ademas el parametro `clear_thinking` (por defecto `false`), que en escenarios conversacionales conviene fijar explicitamente a `true`. Esta version FP8 channel-wise reduce el peso en memoria respecto a los pesos BF16 originales, manteniendo el esquema de cuantizacion por canal.
 
@@ -107,7 +107,7 @@ Frente a modelos propietarios de referencia, GLM-5.3 queda por debajo de GPT-5.6
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/cszhzleo/GLM5.3-fp8-channel-wise-v1
+- Hugging Face (esta cuantizacion): https://huggingface.co/cszhzleo/GLM5.3-fp8-channel-wise-v1
 - Repositorio del modelo base: https://github.com/zai-org/GLM-5
 - SGLang: https://github.com/sgl-project/sglang
 - Cookbook de SGLang para GLM-5.3: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3

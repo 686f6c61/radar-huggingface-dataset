@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-cifar10-mlp` es un `state_dict` de PyTorch publicado por el usuario imradhe en HuggingFace, correspondiente a un perceptrón multicapa (MLP) entrenado sobre CIFAR-10 con etiquetas limpias (p=0). No es un modelo de lenguaje ni un modelo generativo: es un artefacto de un ejercicio académico de la asignatura SMAI (presumiblemente "Statistical Methods for Artificial Intelligence" o similar), identificado como "Task 1.5" de una práctica A4. El repositorio tiene 0 GB de tamaño declarado, 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de un artefacto de uso personal o docente sin distribución pública significativa.
+`smai-a4-cifar10-mlp` es un `state_dict` de PyTorch publicado por el usuario imradhe en Hugging Face, correspondiente a un perceptrón multicapa (MLP) entrenado sobre CIFAR-10 con etiquetas limpias (p=0). No es un modelo de lenguaje ni un modelo generativo: es un artefacto de un ejercicio académico de la asignatura SMAI (presumiblemente "Statistical Methods for Artificial Intelligence" o similar), identificado como "Task 1.5" de una práctica A4. El repositorio tiene 0 GB de tamaño declarado, 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de un artefacto de uso personal o docente sin distribución pública significativa.
 
 La arquitectura es un MLP de tres capas con dimensiones `[3072, 256, 128, 10]`: entrada de 3072 valores (imágenes CIFAR-10 aplanadas de 32x32x3), dos capas ocultas de 256 y 128 neuronas con activación ReLU, y una capa de salida de 10 clases. El preprocesado consiste en aplanar la imagen, dividir entre 255 y estandarizar cada columna con la media y desviación típica del conjunto de entrenamiento, valores almacenados en `mlp_preprocessing.json`. La precisión reportada en test es 0,4950 para el MLP y 0,4118 para una variante IOC-NN (probablemente "Input Output Convex Neural Network" o similar, un clasificador con restricciones de convexidad).
 
@@ -67,7 +67,7 @@ No se han publicado en la información disponible resultados de benchmarks adici
 
 | Modelo | Tipo | Parámetros | Contexto | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `smai-a4-cifar10-mlp` (este) | MLP | ~800.000 (estimado) | No aplica | 0,4950 | No disponible | HuggingFace (0 descargas) |
+| `smai-a4-cifar10-mlp` (este) | MLP | ~800.000 (estimado) | No aplica | 0,4950 | No disponible | Hugging Face (0 descargas) |
 | IOC-NN (variante del mismo autor) | Red con restricciones | No disponible | No aplica | 0,4118 | No disponible | No confirmada |
 | ResNet-18 (referencia literatura) | CNN | ~11,2 M | No aplica | ~0,93-0,95 (literatura) | Varía (MIT en torchvision) | Amplia |
 | VGG-11 (referencia literatura) | CNN | ~132 M | No aplica | ~0,91-0,92 (literatura) | Varía | Amplia |
@@ -88,5 +88,5 @@ Las cifras de ResNet-18 y VGG-11 son referencias habituales de la literatura sob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imradhe/smai-a4-cifar10-mlp
+- Hugging Face: https://huggingface.co/imradhe/smai-a4-cifar10-mlp
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

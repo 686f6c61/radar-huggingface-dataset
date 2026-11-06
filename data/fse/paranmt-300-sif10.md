@@ -96,7 +96,7 @@ La comparacion con encoders transformer como all-MiniLM-L6-v2 es la relevante en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paranmt-300-sif10
+- Modelo en Hugging Face: https://huggingface.co/fse/paranmt-300-sif10
 - Modelo base: https://huggingface.co/fse/paranmt-300
 - Libreria fse (Fast Sentence Embeddings): https://github.com/oborchers/Fast_Sentence_Embeddings
 - Paper de ParaNMT: https://aclanthology.org/P18-1042/

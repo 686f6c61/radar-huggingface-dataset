@@ -80,7 +80,7 @@ No se dispone de informacion suficiente sobre benchmarks ni caracteristicas de m
 
 ## Enlaces
 
-- HuggingFace del repositorio de cuantizacion: https://huggingface.co/mradermacher/B1-27B-i1-GGUF
+- Hugging Face del repositorio de cuantizacion: https://huggingface.co/mradermacher/B1-27B-i1-GGUF
 - Modelo base (safetensors): https://huggingface.co/schneewolflabs/B1-27B
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/B1-27B-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/schneewolflabs/Vernunft-Stimme

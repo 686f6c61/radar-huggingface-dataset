@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| m4gshm/Qwen2.5-Coder-0.5B-int8-sym | 0,5 B | no disponible | OpenVINO IR int8 | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-Coder-0.5B | 0,5 B | no disponible | safetensors (fp32/bf16) | Apache 2.0 | HuggingFace (modelo base oficial) |
-| Qwen2.5-Coder-1.5B | 1,5 B | no disponible | safetensors | Apache 2.0 | HuggingFace (mayor capacidad, más recursos) |
+| m4gshm/Qwen2.5-Coder-0.5B-int8-sym | 0,5 B | no disponible | OpenVINO IR int8 | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-Coder-0.5B | 0,5 B | no disponible | safetensors (fp32/bf16) | Apache 2.0 | Hugging Face (modelo base oficial) |
+| Qwen2.5-Coder-1.5B | 1,5 B | no disponible | safetensors | Apache 2.0 | Hugging Face (mayor capacidad, más recursos) |
 
 La comparación directa más relevante es con el modelo base sin cuantizar: esta exportación reduce el tamaño a 0,46 GB y apunta a inferencia en CPU, a costa de una posible pérdida de precisión no documentada. Frente a la variante de 1,5 B, esta versión sacrifica capacidad de razonamiento y calidad de código a cambio de un despliegue mucho más ligero.
 
@@ -83,7 +83,7 @@ La comparación directa más relevante es con el modelo base sin cuantizar: esta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/m4gshm/Qwen2.5-Coder-0.5B-int8-sym
+- Repositorio Hugging Face: https://huggingface.co/m4gshm/Qwen2.5-Coder-0.5B-int8-sym
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Optimum-Intel: https://github.com/huggingface/optimum-intel
 - OpenVINO: https://github.com/openvinotoolkit/openvino

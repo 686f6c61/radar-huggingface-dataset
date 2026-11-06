@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| hkilang/TTS-models | VITS2 ONNX | Waitau, hakka | no disponible | ONNX | HuggingFace, 0 descargas |
+| hkilang/TTS-models | VITS2 ONNX | Waitau, hakka | no disponible | ONNX | Hugging Face, 0 descargas |
 | Modelos TTS multilingües comerciales (p. ej. APIs en la nube) | no disponible | Decenas de idiomas | Propietaria | API | Comercial |
-| Modelos TTS open source multilingües (p. ej. familia VITS/MMS) | VITS / otros | Cientos de lenguas | Varía (a menudo CC-BY-NC o MIT) | PyTorch, ONNX | HuggingFace |
+| Modelos TTS open source multilingües (p. ej. familia VITS/MMS) | VITS / otros | Cientos de lenguas | Varía (a menudo CC-BY-NC o MIT) | PyTorch, ONNX | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para establecer una comparación cuantitativa con alternativas. La comparación cualitativa se limita al nicho: cobertura de dos variedades de Hong Kong con ejecución offline en navegador, frente a modelos multilingües genéricos que no cubren estas lenguas.
 
@@ -82,12 +82,12 @@ No se dispone de datos de rendimiento comparables para establecer una comparaci�
 - El modelo solo acepta texto ya convertido a fonemas con tonos; el G2P no se distribuye como parte del repositorio de inferencia y debe obtenerse de la API de origen.
 - El batch está fijo a 1 y el predictor de duración estocástico tiene ratio fijo a 1, lo que limita el ajuste fino de prosodia.
 - La exportación está validada con versiones concretas (Python 3.13, PyTorch 2.9.0, ONNX 1.20.1, ONNX Runtime 1.23.2); otras combinaciones pueden romper la paridad numérica.
-- Los ficheros `.data` superan el límite por fichero de GitHub, por lo que la distribución debe hacerse vía HuggingFace u otro almacenamiento de objetos.
+- Los ficheros `.data` superan el límite por fichero de GitHub, por lo que la distribución debe hacerse vía Hugging Face u otro almacenamiento de objetos.
 - El repositorio tiene 0 descargas y 1 like, sin evidencia de uso en producción ni mantenimiento continuado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hkilang/TTS-models
+- Repositorio Hugging Face: https://huggingface.co/hkilang/TTS-models
 - Aplicación TTS de referencia: https://hkilang.github.io/TTS/
 - ONNX: https://onnx.ai
 - ONNX Runtime Web (build JSPI): https://onnxruntime.ai/docs/tutorials/web/

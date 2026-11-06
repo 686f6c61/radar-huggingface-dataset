@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llmware/qwen-3-vl-2b-ov es un modelo multimodal (texto e imagen) publicado por el usuario llmware en HuggingFace. Por el identificador y las etiquetas del repositorio (`qwen3_vl`, `openvino`) se trata de una conversion a formato OpenVINO del modelo Qwen3-VL en su variante de aproximadamente 2.000 millones de parametros, orientada a inferencia en hardware Intel (CPU, iGPU y NPU) mas que a despliegues en GPU de datacenter.
+llmware/qwen-3-vl-2b-ov es un modelo multimodal (texto e imagen) publicado por el usuario llmware en Hugging Face. Por el identificador y las etiquetas del repositorio (`qwen3_vl`, `openvino`) se trata de una conversion a formato OpenVINO del modelo Qwen3-VL en su variante de aproximadamente 2.000 millones de parametros, orientada a inferencia en hardware Intel (CPU, iGPU y NPU) mas que a despliegues en GPU de datacenter.
 
 El repositorio es muy reciente (creado el 16 de septiembre de 2026) y presenta un nivel de adopcion nulo en el momento de la consulta: cero descargas y cero valoraciones. La model card publicada es practicamente vacia: unicamente contiene el bloque de metadatos con la licencia Apache 2.0, sin documentacion tecnica, sin tabla de resultados y sin instrucciones de uso.
 
@@ -20,7 +20,7 @@ Su relevancia potencial esta en el nicho de la vision-lenguaje de bajo coste: un
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | OpenVINO IR (etiqueta `openvino`); no se declara si se incluyen tambien safetensors o GGUF |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 1,8 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-16 |
@@ -95,7 +95,7 @@ La comparacion cuantitativa con estos modelos no puede realizarse con la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/llmware/qwen-3-vl-2b-ov
-- Organizacion del autor en HuggingFace: https://huggingface.co/llmware
+- Hugging Face: https://huggingface.co/llmware/qwen-3-vl-2b-ov
+- Organizacion del autor en Hugging Face: https://huggingface.co/llmware
 - Paper, blog, repositorio o demo oficiales: no disponible
 - Resultados relevantes de la busqueda web: no disponible (la busqueda no devolvio resultados relacionados con el modelo)

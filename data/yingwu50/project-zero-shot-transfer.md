@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yingwu50/project-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/yingwu50/project-zero-shot-transfer
 - Articulo sobre zero-shot vs one-shot vs few-shot (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/zero-shot-vs-one-shot-vs-few-shot-learning/
 - Tema "zero-shot" en GitHub: https://github.com/topics/zero-shot
 - Paper sobre transferencia de prompts continuos zero-shot (arXiv): https://arxiv.org/abs/2310.01691

@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JesseLiu/agentorch-sft-gemma26b-v1-2ep
+- Modelo en Hugging Face: https://huggingface.co/JesseLiu/agentorch-sft-gemma26b-v1-2ep
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Documentación de la familia Gemma: https://gemma.ai/models/
 - Gemma en Google DeepMind: https://deepmind.google/models/gemma/

@@ -75,5 +75,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RSLtm/GLM-4.7-Flash-oQ4e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/RSLtm/GLM-4.7-Flash-oQ4e-fp16-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jinhern424/my_policy` es una política robótica basada en el método Action Chunking with Transformers (ACT), publicada en el paper arXiv:2304.13705. Ha sido entrenada con el framework LeRobot de HuggingFace mediante aprendizaje por imitación a partir de datos teleoperados. El modelo está diseñado para controlar un robot tipo `so_follower` con dos cámaras (`front` y `realsense`) y ejecutar la tarea de agarrar un bolígrafo ("Grab the pen").
+El modelo `jinhern424/my_policy` es una política robótica basada en el método Action Chunking with Transformers (ACT), publicada en el paper arXiv:2304.13705. Ha sido entrenada con el framework LeRobot de Hugging Face mediante aprendizaje por imitación a partir de datos teleoperados. El modelo está diseñado para controlar un robot tipo `so_follower` con dos cámaras (`front` y `realsense`) y ejecutar la tarea de agarrar un bolígrafo ("Grab the pen").
 
 Con 51,7 millones de parámetros y un tamaño de repositorio de 0,2 GB, esta política representa un caso práctico de entrenamiento de políticas robóticas con ACT en un escenario real de laboratorio. Su relevancia radica en que ACT es uno de los métodos de imitación más utilizados en robótica manipuladora por su capacidad de predecir secuencias de acciones (chunks) en lugar de pasos individuales, lo que mejora la estabilidad y el éxito en tareas de manipulación.
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó con el framework LeRobot versión 0.6.2, utilizando
 - Control robótico de manipulación: genera comandos de acción de 6 grados de libertad a partir de observaciones visuales y de estado.
 - Aprendizaje por imitación: replica comportamientos teleoperados, lo que permite transferir habilidades humanas al robot.
 - Predicción de secuencias de acciones (action chunking): mejora la estabilidad del movimiento frente a la predicción paso a paso.
-- Integración con LeRobot: compatible con el ecosistema de entrenamiento, evaluación y despliegue de HuggingFace para robótica.
+- Integración con LeRobot: compatible con el ecosistema de entrenamiento, evaluación y despliegue de Hugging Face para robótica.
 - Soporte de múltiples cámaras: procesa simultáneamente imágenes de dos cámaras (frontal y realsense) para la percepción del entorno.
 - Tarea específica: entrenado para agarrar un bolígrafo, aunque la arquitectura ACT es generalizable a otras tareas de manipulación con datos adecuados.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de robótica
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jinhern424/my_policy)
+- [Modelo en Hugging Face](https://huggingface.co/jinhern424/my_policy)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/jinhern424/record-test_20260829_162539)
 - [Paper de ACT (Action Chunking with Transformers)](https://huggingface.co/papers/2304.13705)
 - [LeRobot (framework)](https://github.com/huggingface/lerobot)

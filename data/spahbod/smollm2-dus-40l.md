@@ -119,7 +119,7 @@ Comparativa de rendimiento entre el modelo DUS y su base en los benchmarks repor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spahbod/smollm2-dus-40l
+- Modelo en Hugging Face: https://huggingface.co/spahbod/smollm2-dus-40l
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Codigo de reproducibilidad (GitHub): https://github.com/s25132/smollm2-dus
 - Coleccion SmolLM2 de HuggingFaceTB: https://huggingface.co/collections/HuggingFaceTB/smollm2

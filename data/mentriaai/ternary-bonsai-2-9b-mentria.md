@@ -113,7 +113,7 @@ En el piloto, este modelo supera al Qwen3.5-4B Q4 en IFEval (+15 puntos) y en ve
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mentriaai/Ternary-Bonsai-2-9B-mentria
+- Hugging Face: https://huggingface.co/mentriaai/Ternary-Bonsai-2-9B-mentria
 - Modelo base (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
 - Modelo sustituido: https://huggingface.co/mentriaai/Qwen3.5-4B-mentria
 - mentria.ai: https://mentria.ai

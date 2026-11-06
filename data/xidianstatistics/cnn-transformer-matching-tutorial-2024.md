@@ -70,4 +70,4 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- [HuggingFace: Xidianstatistics/cnn-transformer-matching-tutorial-2024](https://huggingface.co/Xidianstatistics/cnn-transformer-matching-tutorial-2024)
+- [Hugging Face: Xidianstatistics/cnn-transformer-matching-tutorial-2024](https://huggingface.co/Xidianstatistics/cnn-transformer-matching-tutorial-2024)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-hill-quicksilver-v1 es una política de control robótico en formato ONNX publicada por HlibPlakhtii, derivada por fine-tuning de a1rb4Ck/microduck-hill-1m5. No es un modelo de lenguaje: es un controlador para el robot cuadrúpedo educativo Microduck de Pollen Robotics, orientado a la competición de simulación Microduck Arena. El repositorio tiene un tamaño de 0,0 GB según HuggingFace, lo que indica un artefacto de pesos muy pequeño, coherente con una política de control y no con un transformer de gran escala.
+microduck-hill-quicksilver-v1 es una política de control robótico en formato ONNX publicada por HlibPlakhtii, derivada por fine-tuning de a1rb4Ck/microduck-hill-1m5. No es un modelo de lenguaje: es un controlador para el robot cuadrúpedo educativo Microduck de Pollen Robotics, orientado a la competición de simulación Microduck Arena. El repositorio tiene un tamaño de 0,0 GB según Hugging Face, lo que indica un artefacto de pesos muy pequeño, coherente con una política de control y no con un transformer de gran escala.
 
 La aportación técnica consiste en una tabla de búsqueda de observaciones ("observation lookup") que se añade sobre la red original: cuando las observaciones registradas coinciden, el modelo reproduce una secuencia de consignas articulares previamente optimizada; en caso contrario, delega en el controlador original (fallback network) y conserva todos los operadores de grafo originales. La secuencia se optimizó con CMA-ES separable contra el evaluador oficial del Arena (runner v5, MuJoCo 3.10.0, ONNX Runtime 1.24.4, NumPy 2.4.1).
 
@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks comparables de otras políticas del Arena e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-hill-quicksilver-v1
+- Modelo en Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-hill-quicksilver-v1
 - Modelo base: https://huggingface.co/a1rb4Ck/microduck-hill-1m5/tree/f9853ed64ac9400638bdcb0e022a47b08ec99b05
 - Evaluador del Microduck Arena: https://huggingface.co/spaces/pollen-robotics/microduck-arena/tree/main

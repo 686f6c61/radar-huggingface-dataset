@@ -75,8 +75,8 @@ La información proporcionada solo describe este modelo; los datos de las altern
 
 | Modelo | Parametros | Tipo de politica | Contexto / condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_stack_blocks_20260927_203813_policy | 51.668.614 | ACT (chunks de accion, imitacion supervisada) | Estado (6,) + 2 imagenes 3x480x640 | apache-2.0 | HuggingFace Hub (0 descargas) |
-| Otras politicas ACT de LeRobot | no disponible | ACT | Depende del dataset de entrenamiento | habitualmente apache-2.0 | HuggingFace Hub |
+| so101_stack_blocks_20260927_203813_policy | 51.668.614 | ACT (chunks de accion, imitacion supervisada) | Estado (6,) + 2 imagenes 3x480x640 | apache-2.0 | Hugging Face Hub (0 descargas) |
+| Otras politicas ACT de LeRobot | no disponible | ACT | Depende del dataset de entrenamiento | habitualmente apache-2.0 | Hugging Face Hub |
 | Diffusion Policy | no disponible | Politica generativa por difusion | Condicionada por observaciones visuales y de estado | no disponible | Repositorio publico de investigacion |
 | pi0 (Physical Intelligence) | no disponible | Vision-lenguaje-accion (VLA) | Condicionada por instrucciones en lenguaje natural | no disponible | Publica, con pesos en Hub |
 | GR00T N1 (NVIDIA) | no disponible | Vision-lenguaje-accion (VLA) | Instrucciones en lenguaje natural y observaciones visuales | no disponible | Publica |
@@ -97,7 +97,7 @@ Diferencias clave frente a las alternativas VLA: este modelo no acepta instrucci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daigo424/so101_stack_blocks_20260927_203813_policy
+- Modelo en Hugging Face: https://huggingface.co/daigo424/so101_stack_blocks_20260927_203813_policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/daigo424/so101_stack_blocks_20260927_203813
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=daigo424/so101_stack_blocks_20260927_203813
 - Articulo de ACT: https://huggingface.co/papers/2304.13705

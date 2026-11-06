@@ -80,7 +80,7 @@ La alternativa mas cercana es la version de 4B del mismo ajuste en galés (gemma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-12b-cymraeg-v6-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-12b-cymraeg-v6-i1-GGUF
 - Repositorio de quants estaticos: https://huggingface.co/mradermacher/gemma-4-12b-cymraeg-v6-GGUF
 - Modelo base: https://huggingface.co/EryriLabs/gemma-4-12b-cymraeg-v6
 - Version 4B del ajuste en galés: https://huggingface.co/mradermacher/gemma-4-e4b-cymraeg-v4-GGUF

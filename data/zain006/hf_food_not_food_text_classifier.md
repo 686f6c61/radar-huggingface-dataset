@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hf_food_not_food_text_classifier es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario Zain006 en HuggingFace. Su propósito declarado, deducible del propio identificador del repositorio, es distinguir entre textos que describen comida y textos que no lo hacen, una tarea de clasificación binaria de dominio acotado. Se trata de un modelo derivado de DistilBERT, la variante destilada de BERT con 6 capas y 66.955.010 parámetros totales, entrenada originalmente con destilación de conocimiento a partir de BERT-base.
+Hf_food_not_food_text_classifier es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario Zain006 en Hugging Face. Su propósito declarado, deducible del propio identificador del repositorio, es distinguir entre textos que describen comida y textos que no lo hacen, una tarea de clasificación binaria de dominio acotado. Se trata de un modelo derivado de DistilBERT, la variante destilada de BERT con 6 capas y 66.955.010 parámetros totales, entrenada originalmente con destilación de conocimiento a partir de BERT-base.
 
 El modelo se ha entrenado con la librería Transformers mediante el Trainer, con un conjunto de datos no especificado en la model card ("unknown dataset"), y declara una precisión de 1,0 sobre el conjunto de evaluación junto con una pérdida de validación de 0,0001 tras 10 épocas. Estos valores, sin información sobre el volumen ni la composición del conjunto de evaluación, deben interpretarse con cautela: una accuracy perfecta en un conjunto de evaluación no descrito es una señal de posible sobreajuste o de un conjunto de test demasiado pequeño o poco representativo.
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los v
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hf_food_not_food_text_classifier | 66,9 M | 512 tokens | Clasificación binaria comida/no comida | Apache 2.0 | HuggingFace (21 descargas, 0 likes) |
-| distilbert-base-uncased | 66,9 M | 512 tokens | Modelo base encoder, sin cabeza de clasificación específica | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| bert-base-uncased | 110 M | 512 tokens | Modelo base encoder | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Modelos de clasificación de texto genéricos (p. ej., cabezas de clasificación sobre BERT/DistilBERT) | Variable | 512 tokens | Clasificación multietiqueta o binaria genérica | Variable | HuggingFace |
+| Hf_food_not_food_text_classifier | 66,9 M | 512 tokens | Clasificación binaria comida/no comida | Apache 2.0 | Hugging Face (21 descargas, 0 likes) |
+| distilbert-base-uncased | 66,9 M | 512 tokens | Modelo base encoder, sin cabeza de clasificación específica | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| bert-base-uncased | 110 M | 512 tokens | Modelo base encoder | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Modelos de clasificación de texto genéricos (p. ej., cabezas de clasificación sobre BERT/DistilBERT) | Variable | 512 tokens | Clasificación multietiqueta o binaria genérica | Variable | Hugging Face |
 
 La comparación relevante es frente a su modelo base: este clasificador añade una cabeza entrenada para una tarea concreta, pero no documenta el dataset ni el rendimiento fuera de su conjunto de evaluación. Frente a alternativas genéricas de clasificación, su ventaja es la especialización y su desventaja es la falta de documentación y de validación independiente. No se dispone de datos de benchmarks que permitan una comparación cuantitativa con modelos de la misma categoría.
 
@@ -98,7 +98,7 @@ La comparación relevante es frente a su modelo base: este clasificador añade u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zain006/Hf_food_not_food_text_classifier
+- Modelo en Hugging Face: https://huggingface.co/Zain006/Hf_food_not_food_text_classifier
 - Modelo base DistilBERT: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentación de Transformers para clasificación de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification
 - Documentación de Text Embeddings Inference: https://huggingface.co/docs/text-embeddings-inference

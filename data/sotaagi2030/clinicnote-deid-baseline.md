@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ClinicNote-DeID-Baseline es un checkpoint de clasificación de tokens (token classification) publicado por el usuario SOTAagi2030 en HuggingFace, orientado a la desidentificación de notas clínicas ambulatorias. El modelo se distribuye como un baseline para eliminar identificadores directos (nombres, fechas, números de historia, etc.) de texto sanitario, siguiendo el enfoque clasico de etiquetado BIO sobre secuencias. La model card lo describe explicitamente como un "baseline" y limita su uso a investigacion y prototipado de pipelines con texto sintetico o debidamente gobernado.
+ClinicNote-DeID-Baseline es un checkpoint de clasificación de tokens (token classification) publicado por el usuario SOTAagi2030 en Hugging Face, orientado a la desidentificación de notas clínicas ambulatorias. El modelo se distribuye como un baseline para eliminar identificadores directos (nombres, fechas, números de historia, etc.) de texto sanitario, siguiendo el enfoque clasico de etiquetado BIO sobre secuencias. La model card lo describe explicitamente como un "baseline" y limita su uso a investigacion y prototipado de pipelines con texto sintetico o debidamente gobernado.
 
 El repositorio es minimo: incluye `model.safetensors`, `config.json`, `tokenizer.json` y un ejemplo de redaccion en `assets/redaction-example.txt`. No se publican detalles sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset ni los valores de las metricas obtenidas; unicamente se indica que el candidato seleccionado se eligio por F1 en un split de validacion de notas clinicas sinteticas reservado.
 
@@ -25,7 +25,7 @@ Otros datos del repositorio: pipeline `token-classification`, libreria `transfor
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible solo permite afirmar que se trata de un modelo de clasificacion de tokens basado en un encoder de la familia BERT, con cabecera de etiquetado por token para reconocimiento de entidades (NER) orientado a identificadores directos en notas clinicas. El pipeline declarado en HuggingFace es `token-classification` y la tarea declarada es `de-identification`. No se especifica el numero de capas, la dimension oculta, el numero de cabezas de atencion, el vocabulario del tokenizer ni si se partio de un checkpoint preentrenado concreto (por ejemplo, un BERT-base generico o un modelo clinico tipo Bio_ClinicalBERT).
+La informacion disponible solo permite afirmar que se trata de un modelo de clasificacion de tokens basado en un encoder de la familia BERT, con cabecera de etiquetado por token para reconocimiento de entidades (NER) orientado a identificadores directos en notas clinicas. El pipeline declarado en Hugging Face es `token-classification` y la tarea declarada es `de-identification`. No se especifica el numero de capas, la dimension oculta, el numero de cabezas de atencion, el vocabulario del tokenizer ni si se partio de un checkpoint preentrenado concreto (por ejemplo, un BERT-base generico o un modelo clinico tipo Bio_ClinicalBERT).
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el esquema de etiquetas utilizado, ni si se aplicaron tecnicas de ajuste adicionales como RLHF, DPO o destilacion. Lo unico documentado es que el candidato final se selecciono maximizando F1 sobre un split de validacion de notas clinicas sinteticas reservado, sin publicar el valor numerico de esa metrica ni el conjunto de etiquetas evaluadas.
 
@@ -88,7 +88,7 @@ En resumen: no disponible una comparativa cuantitativa fiable porque el autor no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SOTAagi2030/ClinicNote-DeID-Baseline
+- Modelo en Hugging Face: https://huggingface.co/SOTAagi2030/ClinicNote-DeID-Baseline
 - Ejemplo de redaccion incluido en el repositorio: https://huggingface.co/SOTAagi2030/ClinicNote-DeID-Baseline/blob/main/assets/redaction-example.txt
 - Pesos del modelo: https://huggingface.co/SOTAagi2030/ClinicNote-DeID-Baseline/blob/main/model.safetensors
 - Configuracion: https://huggingface.co/SOTAagi2030/ClinicNote-DeID-Baseline/blob/main/config.json

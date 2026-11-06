@@ -83,6 +83,6 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zerodigest/Qwen3.8-27B-YMQ-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zerodigest/Qwen3.8-27B-YMQ-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se proporcionan otros enlaces (papers, blogs, demos) en la información disponible.

@@ -109,7 +109,7 @@ No se dispone en la informacion proporcionada de cifras de WER comparativas para
 
 ## Enlaces
 
-- Pagina de HuggingFace de esta conversion: https://huggingface.co/myflow-ai/moonshine-tiny-ar-gguf
+- Pagina de Hugging Face de esta conversion: https://huggingface.co/myflow-ai/moonshine-tiny-ar-gguf
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-ar
 - Commit upstream fijado: https://huggingface.co/UsefulSensors/moonshine-tiny-ar/commit/99e7fee
 - Articulo "Flavors of Moonshine: Tiny Specialized ASR Models for Edge Devices": https://huggingface.co/papers/2509.02523

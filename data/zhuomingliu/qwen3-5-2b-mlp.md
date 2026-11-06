@@ -95,7 +95,7 @@ No se dispone de datos verificados de estos modelos alternativos en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/zhuomingliu/Qwen3.5-2B-MLP
+- Repositorio Hugging Face del modelo: https://huggingface.co/zhuomingliu/Qwen3.5-2B-MLP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de codigo MaLoW (pendiente de publicacion publica en el momento de redactar esta ficha): https://github.com/dragonlzm/MaLoW
 - Paper de "Memory as Weights: Internalizing Long-Term History for Streaming Videos": no disponible

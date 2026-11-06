@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NULLXES SHINRA-4B es un modelo de lenguaje denso, decoder-only, de 3.926.076.416 parametros (3,93B) publicado por MagistrTheOne bajo la licencia propietaria "nullxes-research". Segun su model card, se trata de la "capa de inteligencia linguistica" del sistema NULLXES, un conjunto de modelos donde RAIDEN cubre razonamiento, CERBER vision, SHINRA lenguaje y AION inteligencia encarnada. El checkpoint distribuido en HuggingFace lleva el sufijo SMOKE, mientras que la model card describe la variante INSTRUCT, lo que sugiere que el artefacto publicado podria ser una ejecucion de prueba y no el modelo final.
+NULLXES SHINRA-4B es un modelo de lenguaje denso, decoder-only, de 3.926.076.416 parametros (3,93B) publicado por MagistrTheOne bajo la licencia propietaria "nullxes-research". Segun su model card, se trata de la "capa de inteligencia linguistica" del sistema NULLXES, un conjunto de modelos donde RAIDEN cubre razonamiento, CERBER vision, SHINRA lenguaje y AION inteligencia encarnada. El checkpoint distribuido en Hugging Face lleva el sufijo SMOKE, mientras que la model card describe la variante INSTRUCT, lo que sugiere que el artefacto publicado podria ser una ejecucion de prueba y no el modelo final.
 
 Tecnicamente emplea una arquitectura propietaria denominada `ShinraForCausalLM`, que el autor declara explicitamente no derivada de Llama, Mistral, Qwen ni GPT-NeoX. Usa 32 capas, hidden size 3072, atencion GQA con 24 cabezas de consulta y 8 de clave/valor, MLP SwiGLU con intermedio 9216, RMSNorm con pre-norm y QK-norm, y RoPE con theta 1e6 preparado para YaRN. El vocabulario es de 131.072 tokens con SentencePiece Unigram y byte fallback.
 
@@ -90,10 +90,10 @@ Los datos de los modelos alternativos proceden de sus model cards publicas y deb
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NULLXES SHINRA-4B (SMOKE) | 3,93B | 8k entrenamiento / 32k nativo | `nullxes-research` (propietaria) | HuggingFace, requiere `trust_remote_code` |
-| Qwen2.5-3B | 3,09B | 32k nativo, ampliable a 128k | Apache-2.0 | HuggingFace, amplio ecosistema de cuantizaciones |
-| Llama-3.2-3B | 3,21B | 128k | Llama 3.2 Community License | HuggingFace, soporte en vLLM, llama.cpp y Ollama |
-| Phi-3.5-mini-instruct | 3,8B | 128k | MIT | HuggingFace, soporte amplio en runtimes de inferencia |
+| NULLXES SHINRA-4B (SMOKE) | 3,93B | 8k entrenamiento / 32k nativo | `nullxes-research` (propietaria) | Hugging Face, requiere `trust_remote_code` |
+| Qwen2.5-3B | 3,09B | 32k nativo, ampliable a 128k | Apache-2.0 | Hugging Face, amplio ecosistema de cuantizaciones |
+| Llama-3.2-3B | 3,21B | 128k | Llama 3.2 Community License | Hugging Face, soporte en vLLM, llama.cpp y Ollama |
+| Phi-3.5-mini-instruct | 3,8B | 128k | MIT | Hugging Face, soporte amplio en runtimes de inferencia |
 
 Diferencias relevantes: SHINRA-4B es el unico de los cuatro con licencia propietaria, el unico que exige ejecucion de codigo remoto para cargarse y el unico sin cuantizaciones publicadas ni resultados de benchmarks. Su ventana nativa de 32k queda por debajo de las alternativas comparadas. El rendimiento relativo en tareas concretas no puede evaluarse con la informacion disponible.
 
@@ -113,7 +113,7 @@ Diferencias relevantes: SHINRA-4B es el unico de los cuatro con licencia propiet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MagistrTheOne/NULLXES-SHINRA-4B-SMOKE
+- Hugging Face: https://huggingface.co/MagistrTheOne/NULLXES-SHINRA-4B-SMOKE
 - Licencia referenciada en el repositorio: archivo `LICENSE` (NULLXES Research License)
 - Repositorio de codigo, paper, blog o demo: no disponible
 - Los resultados de busqueda web proporcionados no contienen ninguna referencia relevante al modelo (devuelven paginas de fabricantes de falsos techos y plafones), por lo que no hay enlaces adicionales que citar.

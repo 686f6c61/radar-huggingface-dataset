@@ -113,7 +113,7 @@ No se dispone de información sobre otros modelos o librerías comparables en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Daniel-F/rtc-pi05
+- Hugging Face: https://huggingface.co/Daniel-F/rtc-pi05
 - Artículo de referencia (RTC): https://arxiv.org/abs/2506.07339
 - openpi (framework base, requerido): https://github.com/Physical-Intelligence/openpi
 - Enlaces adicionales: no se encontraron enlaces relevantes en la búsqueda web; los resultados obtenidos correspondían a páginas homónimas sin relación con el modelo.

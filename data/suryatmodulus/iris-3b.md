@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Iris-3B es un modelo de difusion de 3B parametros que genera imagenes directamente en espacio de pixeles, sin VAE ni espacio latente intermedio. Lo desarrolla Speridlabs y la ficha de HuggingFace consultada aparece publicada bajo el identificador `suryatmodulus/iris-3b`, mientras que la model card y los enlaces apuntan al repositorio oficial `speridlabs/iris-3b`. La propuesta central es que la red emite cada pixel sin pasar por un decodificador, de forma que no se pierde informacion en una representacion latente sesgada hacia texturas.
+Iris-3B es un modelo de difusion de 3B parametros que genera imagenes directamente en espacio de pixeles, sin VAE ni espacio latente intermedio. Lo desarrolla Speridlabs y la ficha de Hugging Face consultada aparece publicada bajo el identificador `suryatmodulus/iris-3b`, mientras que la model card y los enlaces apuntan al repositorio oficial `speridlabs/iris-3b`. La propuesta central es que la red emite cada pixel sin pasar por un decodificador, de forma que no se pierde informacion en una representacion latente sesgada hacia texturas.
 
 El modelo se ha preentrenado desde cero mediante un curriculo de resolucion 256 → 512 → 1024, tras ablacionar primero el objetivo de prediccion y la alineacion de representacion a 256² para decidir que escalar. El texto se codifica con Qwen3-VL-4B-Instruct y la generacion por defecto produce imagenes de aproximadamente un megapixel (1024×1024) con escala CFG 3 y 100 pasos de denoising.
 
@@ -87,11 +87,11 @@ La informacion disponible no incluye resultados comparativos de rendimiento entr
 
 ## Enlaces
 
-- Ficha de HuggingFace consultada: https://huggingface.co/suryatmodulus/iris-3b
+- Ficha de Hugging Face consultada: https://huggingface.co/suryatmodulus/iris-3b
 - Model card oficial referenciada: https://huggingface.co/speridlabs/iris-3b
 - Paper: https://arxiv.org/abs/2610.09450
 - Pagina del proyecto: https://speridlabs.com/research/iris
 - Repositorio de codigo: https://github.com/speridlabs/iris-3b
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/speridlabs/iris-3b
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/speridlabs/iris-3b
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Resumen del paper en arXivLens: https://arxivlens.com/paperview/details/iris-3b-going-beyond-the-latent-with-pixel-space-diffusion-training-conversion-and-fine-tuning-4022-0a29d830

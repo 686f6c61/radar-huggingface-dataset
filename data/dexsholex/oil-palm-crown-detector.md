@@ -4,7 +4,7 @@
 
 Oil palm crown detector (YOLOv8s) es un detector de objetos especializado desarrollado por Oluwasola Oyinloye (GitHub @Dexsholex) para localizar coronas individuales de palma de aceite en ortomosaicos RGB de drones (UAV). El modelo convierte un ortomosaico georreferenciado en un inventario de palmas: un punto y una caja por cada palma detectada. Se ha utilizado en producción para contar 718.751 palmas en 12.166,6 ha de una plantación comercial en África Occidental, lo que lo convierte en una herramienta de referencia para inventarios forestales y agrícolas basados en teledetección.
 
-Técnicamente es un detector YOLOv8s (variante small de Ultralytics) con una sola clase (`oil_palm`) y entrada de 1280 × 1280 píxeles. Se distribuye en dos formatos equivalentes: pesos PyTorch (`.pt`) para inferencia y fine-tuning con Ultralytics, y ONNX (`.onnx`) para su uso en QGIS mediante el plugin Deepness, ONNX Runtime u otras herramientas. La licencia es AGPL-3.0, heredada de Ultralytics YOLOv8. Su relevancia actual radica en que aborda un problema concreto y costoso (conteo de palmas en plantaciones) con un pipeline open source completo, resultados de validación publicados y una demo interactiva en HuggingFace Spaces.
+Técnicamente es un detector YOLOv8s (variante small de Ultralytics) con una sola clase (`oil_palm`) y entrada de 1280 × 1280 píxeles. Se distribuye en dos formatos equivalentes: pesos PyTorch (`.pt`) para inferencia y fine-tuning con Ultralytics, y ONNX (`.onnx`) para su uso en QGIS mediante el plugin Deepness, ONNX Runtime u otras herramientas. La licencia es AGPL-3.0, heredada de Ultralytics YOLOv8. Su relevancia actual radica en que aborda un problema concreto y costoso (conteo de palmas en plantaciones) con un pipeline open source completo, resultados de validación publicados y una demo interactiva en Hugging Face Spaces.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ Frente a alternativas genericas, la ventaja de este modelo es el ajuste de domin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dexsholex/oil-palm-crown-detector
+- Modelo en Hugging Face: https://huggingface.co/dexsholex/oil-palm-crown-detector
 - Pipeline completo y resultados por bloque: https://github.com/Dexsholex/oil-palm-crown-detection
 - Demo en navegador (Oil Palm Counter, ejecucion local): https://huggingface.co/spaces/dexsholex/oil-palm-counter
 - Perfil del autor en GitHub: https://github.com/Dexsholex

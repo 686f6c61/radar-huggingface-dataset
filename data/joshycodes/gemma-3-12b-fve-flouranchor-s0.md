@@ -89,7 +89,7 @@ La comparación con el modelo base es la más relevante: ambos comparten arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-flouranchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-flouranchor-s0
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Checkpoint hermano del mismo autor: https://huggingface.co/joshycodes/gemma-4-12b-it-fve-flourdiscern-s0
 - Repositorio de Gemma de Google DeepMind en GitHub: https://github.com/google-deepmind/gemma

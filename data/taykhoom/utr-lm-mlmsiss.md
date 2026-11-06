@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UTR-LM-MLMSISS es un modelo de lenguaje para ARN específico de regiones 5' UTR (regiones no traducidas del extremo 5' del ARN mensajero), desarrollado originalmente por Yanyi Chu et al. en el artículo "A 5' UTR language model for decoding untranslated regions of mRNA and function predictions" (Nature Machine Intelligence, 2024). Este checkpoint concreto es un port mínimo a HuggingFace de la variante que combina tres objetivos de entrenamiento: enmascaramiento de lenguaje (MLM), regresión de energía mínima libre (MFE) y predicción de estructura secundaria por token. El port ha sido realizado por Taykhoom Dalal, estudiante de doctorado en biología computacional en Memorial Sloan Kettering / Cornell.
+UTR-LM-MLMSISS es un modelo de lenguaje para ARN específico de regiones 5' UTR (regiones no traducidas del extremo 5' del ARN mensajero), desarrollado originalmente por Yanyi Chu et al. en el artículo "A 5' UTR language model for decoding untranslated regions of mRNA and function predictions" (Nature Machine Intelligence, 2024). Este checkpoint concreto es un port mínimo a Hugging Face de la variante que combina tres objetivos de entrenamiento: enmascaramiento de lenguaje (MLM), regresión de energía mínima libre (MFE) y predicción de estructura secundaria por token. El port ha sido realizado por Taykhoom Dalal, estudiante de doctorado en biología computacional en Memorial Sloan Kettering / Cornell.
 
 El modelo sigue la arquitectura ESM2 (un Transformer pre-LN con atención de producto escalar), con 6 capas, 16 cabezas de atención, dimensión de embedding de 128 y una ventana de contexto de 1024 tokens (1022 nucleótidos más los tokens especiales `<cls>` y `<eos>`). Con solo 1,2 millones de parámetros, es un modelo extremadamente ligero diseñado para tareas de biología computacional, no para generación de texto general. Su relevancia actual radica en que permite obtener representaciones vectoriales (embeddings) de secuencias de ARN de forma eficiente y reproducible, con verificación bit-exacta de paridad frente a los pesos originales del artículo.
 
@@ -30,7 +30,7 @@ El entrenamiento combinó tres objetivos: enmascaramiento de lenguaje (MLM), reg
 - Generacion de embeddings de secuencias de ARN: produce representaciones vectoriales de 128 dimensiones por token, con la opcion de usar el embedding del token `<cls>` para tareas a nivel de secuencia.
 - Modelado de lenguaje enmascarado (MLM): puede predecir nucleotidos enmascarados en una secuencia, util para tareas de imputacion o analisis de conservacion.
 - Extraccion de representaciones intermedias: permite obtener estados ocultos de cualquier capa (6 capas en total), lo que facilita el analisis de caracteristicas aprendidas en distintos niveles de abstraccion.
-- Fine-tuning para tareas de regresion y clasificacion: sigue las convenciones estandar de HuggingFace y puede adaptarse con cualquier entrenador compatible, usando el embedding CLS como entrada a una cabeza de prediccion.
+- Fine-tuning para tareas de regresion y clasificacion: sigue las convenciones estandar de Hugging Face y puede adaptarse con cualquier entrenador compatible, usando el embedding CLS como entrada a una cabeza de prediccion.
 - Compatibilidad con backends de atencion acelerada: soporta SDPA y Flash Attention 2 para reducir el consumo de memoria y acelerar la inferencia.
 - Capacidades multilingues: no aplica, al ser un modelo biologico con un alfabeto de 4 letras (A, G, C, T).
 
@@ -52,17 +52,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 - VRAM estimada para inferencia: inferior a 1 GB en precision FP32, dado el tamano de 1,2 millones de parametros. Con cuantizacion o precision bfloat16, el consumo es aun menor.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente. Incluso una GPU integrada o una CPU pueden ejecutar el modelo sin problemas de latencia apreciable.
 - Compatibilidad con hardware de consumo: si, el modelo cabe en cualquier GPU de consumo (GTX 1050, RTX 2060, etc.) y tambien en entornos sin GPU.
-- Opciones de despliegue: se puede cargar con la libreria `transformers` de HuggingFace, usando `AutoModel` o `AutoModelForMaskedLM`. Tambien es compatible con backends de atencion acelerada (SDPA, Flash Attention 2) y con herramientas de serializacion como ONNX si se desea exportar.
+- Opciones de despliegue: se puede cargar con la libreria `transformers` de Hugging Face, usando `AutoModel` o `AutoModelForMaskedLM`. Tambien es compatible con backends de atencion acelerada (SDPA, Flash Attention 2) y con herramientas de serializacion como ONNX si se desea exportar.
 - Latencia y throughput: no se han publicado mediciones oficiales, pero dado el tamano del modelo, la inferencia en CPU deberia completarse en milisegundos para secuencias de hasta 1024 tokens.
 
 ## Comparativa con modelos similares
 
 | Modelo | Objetivo de preentrenamiento | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UTR-LM-MLMSISS (este) | MLM + MFE + estructura secundaria | 1,2 M | 1024 | GPL-3.0 | HuggingFace |
-| UTR-LM-MLM | Solo MLM | 1,2 M | 1024 | GPL-3.0 | HuggingFace |
-| UTR-LM-MLMSI | MLM + regresion MFE | 1,2 M | 1024 | GPL-3.0 | HuggingFace |
-| UTR-LM-MLMSS | MLM + estructura secundaria | 1,2 M | 1024 | GPL-3.0 | HuggingFace |
+| UTR-LM-MLMSISS (este) | MLM + MFE + estructura secundaria | 1,2 M | 1024 | GPL-3.0 | Hugging Face |
+| UTR-LM-MLM | Solo MLM | 1,2 M | 1024 | GPL-3.0 | Hugging Face |
+| UTR-LM-MLMSI | MLM + regresion MFE | 1,2 M | 1024 | GPL-3.0 | Hugging Face |
+| UTR-LM-MLMSS | MLM + estructura secundaria | 1,2 M | 1024 | GPL-3.0 | Hugging Face |
 
 Los tres modelos de la coleccion UTR-LM comparten la misma arquitectura y tamano, diferenciandose unicamente en los objetivos auxiliares de preentrenamiento. La variante MLMSISS esta recomendada por el autor para tareas de MRL, mientras que MLMSI se recomienda para tareas de eficiencia de traduccion (TE) y estabilidad (EL). No se dispone de comparativas con otros modelos de ARN como RNA-FM o DNABERT-2 en la informacion proporcionada.
 
@@ -78,8 +78,8 @@ Los tres modelos de la coleccion UTR-LM comparten la misma arquitectura y tamano
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/UTR-LM-MLMSISS
-- Coleccion UTR-LM en HuggingFace: https://huggingface.co/collections/Taykhoom/utr-lm-6a173a96ae7c070c3a84ebb4
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/UTR-LM-MLMSISS
+- Coleccion UTR-LM en Hugging Face: https://huggingface.co/collections/Taykhoom/utr-lm-6a173a96ae7c070c3a84ebb4
 - Repositorio original en GitHub: https://github.com/a96123155/UTR-LM
 - Articulo en Nature Machine Intelligence: https://www.nature.com/articles/s42256-024-00823-9
 - PDF del articulo: https://www.nature.com/articles/s42256-024-00823-9.pdf

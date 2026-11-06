@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparables en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AEUPH/moss4gb
+- Modelo en Hugging Face: https://huggingface.co/AEUPH/moss4gb
 - Modelo base upstream: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Runbook de construcción del banco: `docs/BUILD_BANK_GPU.md` (incluido en el repositorio del modelo)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

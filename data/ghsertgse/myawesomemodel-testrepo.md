@@ -79,5 +79,5 @@ No se puede establecer una comparativa fiable, ya que se desconoce la arquitectu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ghsertgse/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/ghsertgse/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código) en la información disponible.

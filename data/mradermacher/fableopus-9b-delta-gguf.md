@@ -79,7 +79,7 @@ La comparativa es limitada porque no se conocen la longitud de contexto ni los r
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/FableOpus-9B-Delta-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/FableOpus-9B-Delta-GGUF
 - Modelo base (safetensors): https://huggingface.co/bingleai/FableOpus-9B-Delta
 - Pagina de inferencia en FriendliAI: https://friendli.ai/models/interpolators/FableOpus-9B-Delta
 - Guia de uso de GGUF de TheBloke (referencia): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

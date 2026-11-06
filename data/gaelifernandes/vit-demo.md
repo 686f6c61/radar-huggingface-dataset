@@ -70,4 +70,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GaelIfernandes/vit-demo
+- Hugging Face: https://huggingface.co/GaelIfernandes/vit-demo

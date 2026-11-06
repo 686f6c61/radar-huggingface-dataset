@@ -69,7 +69,7 @@ No se dispone de información sobre alternativas específicas en la misma catego
 
 ## Limitaciones y advertencias
 
-- **Licencia**: el campo licencia en HuggingFace es "no disponible", lo que impide conocer si el modelo puede usarse comercialmente. Se recomienda contactar al autor.
+- **Licencia**: el campo licencia en Hugging Face es "no disponible", lo que impide conocer si el modelo puede usarse comercialmente. Se recomienda contactar al autor.
 - **Falta de documentación**: no se especifican los datos de entrenamiento, el número de pasos, el reward model utilizado, ni el objetivo de la optimización. Esto dificulta la reproducibilidad y la confianza en el modelo.
 - **Sesgos y alucinaciones**: no hay estudios de sesgos específicos, pero al ser un fine-tune de Qwen3, podría heredar los sesgos de su base. La probabilidad de alucinación no se ha evaluado.
 - **Riesgo de producción**: sin benchmarks y con licencia desconocida, no se recomienda su uso en producción sin un proceso de validación exhaustivo.

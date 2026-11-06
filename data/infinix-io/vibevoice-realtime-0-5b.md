@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VibeVoice-Realtime-0.5B es un modelo de síntesis de voz (text-to-speech) en tiempo real desarrollado por Microsoft Research, distribuido en HuggingFace bajo la organización Infinix-io. Se trata de una variante ligera de la familia VibeVoice, diseñada específicamente para generación de voz con entrada de texto en streaming: el modelo puede empezar a emitir audio audible en aproximadamente 300 ms desde que recibe los primeros tokens de texto, lo que permite acoplarlo a la salida incremental de un LLM. El modelo base del componente lingüístico es Qwen2.5-0.5B, sobre el que se añaden un tokenizador acústico y una cabeza de decodificación basada en difusión.
+VibeVoice-Realtime-0.5B es un modelo de síntesis de voz (text-to-speech) en tiempo real desarrollado por Microsoft Research, distribuido en Hugging Face bajo la organización Infinix-io. Se trata de una variante ligera de la familia VibeVoice, diseñada específicamente para generación de voz con entrada de texto en streaming: el modelo puede empezar a emitir audio audible en aproximadamente 300 ms desde que recibe los primeros tokens de texto, lo que permite acoplarlo a la salida incremental de un LLM. El modelo base del componente lingüístico es Qwen2.5-0.5B, sobre el que se añaden un tokenizador acústico y una cabeza de decodificación basada en difusión.
 
 La arquitectura combina un LLM transformer (Qwen2.5-0.5B) con un tokenizador acústico derivado de una variante σ-VAE (propuesta en LatentLM) que opera a una tasa de trama ultrabaja de 7,5 Hz, logrando un downsampling de 3200x sobre audio de entrada a 24 kHz. La generación acústica se realiza mediante una cabeza de difusión ligera de 4 capas (~40M parámetros) condicionada por los estados ocultos del LLM, usando DDPM con Classifier-Free Guidance y DPM-Solver en inferencia.
 
@@ -83,9 +83,9 @@ SEED test-en:
 
 | Modelo | Parámetros | Contexto | WER LibriSpeech (%) | Speaker Sim. | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| VibeVoice-Realtime-0.5B | ~1,02B | 8k | 2,00 | 0,695 | MIT | HuggingFace |
-| VibeVoice-1.5B | 1,5B (no confirmado) | 64k | no disponible | no disponible | no disponible | HuggingFace (microsoft) |
-| VibeVoice-Large | no disponible | 32k | no disponible | no disponible | no disponible | HuggingFace (microsoft) |
+| VibeVoice-Realtime-0.5B | ~1,02B | 8k | 2,00 | 0,695 | MIT | Hugging Face |
+| VibeVoice-1.5B | 1,5B (no confirmado) | 64k | no disponible | no disponible | no disponible | Hugging Face (microsoft) |
+| VibeVoice-Large | no disponible | 32k | no disponible | no disponible | no disponible | Hugging Face (microsoft) |
 | VALL-E 2 | no disponible | no disponible | 2,40 | 0,643 | no disponible | no disponible |
 | CosyVoice2 | no disponible | no disponible | 2,57 (SEED) | 0,652 (SEED) | no disponible | no disponible |
 
@@ -102,12 +102,12 @@ SEED test-en:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Infinix-io/VibeVoice-Realtime-0.5B
+- Hugging Face: https://huggingface.co/Infinix-io/VibeVoice-Realtime-0.5B
 - Informe técnico: https://arxiv.org/abs/2508.19205
 - Paper LatentLM (σ-VAE): https://arxiv.org/pdf/2412.08635
 - Página del proyecto: https://microsoft.github.io/VibeVoice
 - Código: https://github.com/microsoft/VibeVoice
 - Documentación del modelo realtime: https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-realtime-0.5b.md
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/anycoderapps/VibeVoice-Realtime-0.5B
-- Colección VibeVoice en HuggingFace: https://huggingface.co/collections/microsoft/vibevoice
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/anycoderapps/VibeVoice-Realtime-0.5B
+- Colección VibeVoice en Hugging Face: https://huggingface.co/collections/microsoft/vibevoice
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B

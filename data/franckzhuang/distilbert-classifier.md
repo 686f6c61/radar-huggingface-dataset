@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilbert-classifier es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert/distilbert-base-uncased. Lo publica el usuario franckzhuang en HuggingFace y su propósito declarado es la clasificación de secuencias (pipeline `text-classification`). Se trata, por tanto, de un checkpoint derivado de un Transformer encoder destilado de BERT, con 66.955.010 parámetros totales y un tamaño de repositorio de 0,3 GB. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+distilbert-classifier es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert/distilbert-base-uncased. Lo publica el usuario franckzhuang en Hugging Face y su propósito declarado es la clasificación de secuencias (pipeline `text-classification`). Se trata, por tanto, de un checkpoint derivado de un Transformer encoder destilado de BERT, con 66.955.010 parámetros totales y un tamaño de repositorio de 0,3 GB. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 El interés práctico del modelo está en su coste de inferencia: al ser una variante destilada de BERT (6 capas frente a 12 del original), es adecuado para tareas de clasificación a gran escala en CPU o GPU de gama baja. Sin embargo, la información publicada es mínima y plantea dudas relevantes para producción: la model card indica que el ajuste se hizo sobre un dataset "unknown", no documenta las etiquetas de clasificación ni el dominio de aplicación, y no incluye resultados en el model-index (la lista de resultados está vacía).
 
@@ -100,7 +100,7 @@ La comparación se limita a parámetros, profundidad, contexto y licencia, porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/franckzhuang/distilbert-classifier
+- Modelo en Hugging Face: https://huggingface.co/franckzhuang/distilbert-classifier
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentación de DistilBERT (paper original, referencia del modelo base): https://arxiv.org/abs/1910.01108
 - Documentación de Transformers sobre clasificación de secuencias: https://huggingface.co/docs/transformers/tasks/sequence_classification

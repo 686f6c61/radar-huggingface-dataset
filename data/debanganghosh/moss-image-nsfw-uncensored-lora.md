@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moss-image-nsfw-uncensored-lora es un adaptador LoRA para el modelo de generación de imágenes MOSS-Image-SFT, desarrollado por el usuario debanganghosh. Su propósito es especializar el modelo base en la generación de contenido para adultos sin censura, mediante un token de activación (`moss_xvstyle`) que se antepone a los prompts. Se distribuye a través de HuggingFace bajo licencia Apache 2.0 y con la etiqueta `not-for-all-audiences`.
+Moss-image-nsfw-uncensored-lora es un adaptador LoRA para el modelo de generación de imágenes MOSS-Image-SFT, desarrollado por el usuario debanganghosh. Su propósito es especializar el modelo base en la generación de contenido para adultos sin censura, mediante un token de activación (`moss_xvstyle`) que se antepone a los prompts. Se distribuye a través de Hugging Face bajo licencia Apache 2.0 y con la etiqueta `not-for-all-audiences`.
 
 El adaptador se integra en el ecosistema diffusers y está pensado para su uso con el pipeline text-to-image del modelo base OpenMOSS-Team/MOSS-Image-SFT. El repositorio ocupa 27,6 GB e incluye pesos en formato safetensors, además de imágenes de muestra generadas con el propio LoRA. Es relevante para desarrolladores que necesiten ajustar un modelo de difusión a un dominio específico sin reentrenar desde cero.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Base | Licencia | Contexto / resolución | Disponibilidad |
 |---|---|---|---|---|---|
-| Moss-image-nsfw-uncensored-lora | LoRA NSFW | MOSS-Image-SFT | Apache 2.0 | no disponible | HuggingFace (51 descargas) |
-| Alternativas LoRA NSFW para SDXL | LoRA NSFW | SDXL | variable | 1024x1024 típico | Civitai / HuggingFace |
-| Alternativas LoRA NSFW para SD 1.5 | LoRA NSFW | Stable Diffusion 1.5 | CreativeML OpenRAIL-M | 512x512 típico | Civitai / HuggingFace |
+| Moss-image-nsfw-uncensored-lora | LoRA NSFW | MOSS-Image-SFT | Apache 2.0 | no disponible | Hugging Face (51 descargas) |
+| Alternativas LoRA NSFW para SDXL | LoRA NSFW | SDXL | variable | 1024x1024 típico | Civitai / Hugging Face |
+| Alternativas LoRA NSFW para SD 1.5 | LoRA NSFW | Stable Diffusion 1.5 | CreativeML OpenRAIL-M | 512x512 típico | Civitai / Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y otras alternativas, por lo que la comparación se limita a aspectos de licencia y disponibilidad. El ecosistema de LoRAs NSFW para SDXL y SD 1.5 está mucho más extendido y documentado, mientras que este adaptador se dirige a un modelo base menos común (MOSS-Image-SFT).
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y otras a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/debanganghosh/Moss-image-nsfw-uncensored-lora
+- Hugging Face: https://huggingface.co/debanganghosh/Moss-image-nsfw-uncensored-lora
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Documentación de diffusers: https://huggingface.co/docs/diffusers

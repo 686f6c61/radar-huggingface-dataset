@@ -71,8 +71,8 @@ No se dispone de datos numéricos de modelos comparables en la información prop
 
 | Modelo | Parámetros | Tamaño de pesos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ETA-base | 371,1 M | 742 MB (`.pt`) | no disponible | MIT | HuggingFace `shamdan/ETA` |
-| ETA-async | 502,3 M | 1005 MB (`.pt`) | no disponible | MIT | HuggingFace `shamdan/ETA` |
+| ETA-base | 371,1 M | 742 MB (`.pt`) | no disponible | MIT | Hugging Face `shamdan/ETA` |
+| ETA-async | 502,3 M | 1005 MB (`.pt`) | no disponible | MIT | Hugging Face `shamdan/ETA` |
 | Otras alternativas de conducción end-to-end (UniAD, VAD, DriveTransformer, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos numéricos de modelos comparables en la información prop
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/shamdan/ETA
+- Página del modelo en Hugging Face: https://huggingface.co/shamdan/ETA
 - Artículo en arXiv: https://arxiv.org/abs/2506.07725
 - Repositorio de código y evaluación: https://github.com/OpenDriveLab/ETA
 - Instrucciones de entrenamiento y evaluación: https://github.com/OpenDriveLab/ETA/blob/main/docs/TRAIN_EVAL.md

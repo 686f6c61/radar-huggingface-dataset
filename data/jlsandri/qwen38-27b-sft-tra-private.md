@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jlsandri/qwen38-27b-sft-tra-private` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `Qwen/Qwen3.8-27B`, un LLM multimodal denso de 27 000 millones de parámetros desarrollado por el equipo Qwen de Alibaba. El adaptador está publicado en HuggingFace con la librería PEFT y un tamaño de repositorio de 0,2 GB, lo que indica que solo contiene los pesos del adaptador y no el modelo completo.
+El modelo `jlsandri/qwen38-27b-sft-tra-private` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `Qwen/Qwen3.8-27B`, un LLM multimodal denso de 27 000 millones de parámetros desarrollado por el equipo Qwen de Alibaba. El adaptador está publicado en Hugging Face con la librería PEFT y un tamaño de repositorio de 0,2 GB, lo que indica que solo contiene los pesos del adaptador y no el modelo completo.
 
 La relevancia de este adaptador radica en que permite especializar el modelo base Qwen3.8-27B para tareas concretas sin necesidad de reentrenar los 27B parámetros completos, reduciendo drásticamente el coste computacional y de almacenamiento. Sin embargo, la model card publicada está prácticamente vacía: no se especifican los datos de entrenamiento, el proceso de fine-tuning, la licencia ni los idiomas soportados. El nombre del repositorio sugiere un uso privado ("tra-private") y no registra descargas ni valoraciones, por lo que su utilidad práctica queda limitada a quien lo haya creado o tenga acceso a la documentación interna.
 
@@ -72,5 +72,5 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo rep
 - Repositorio del adaptador: https://huggingface.co/jlsandri/qwen38-27b-sft-tra-private
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Colección Qwen3.8 en HuggingFace: https://huggingface.co/collections/Qwen/qwen38
+- Colección Qwen3.8 en Hugging Face: https://huggingface.co/collections/Qwen/qwen38
 - Receta de despliegue con vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

@@ -73,7 +73,7 @@ El modelo pertenece a la familia Qwen3, que segun la informacion disponible incl
 
 ## Enlaces
 
-- Repositorio HuggingFace (version de fairy322): https://huggingface.co/fairy322/Qwen3-24B-A4B-Freedom-HQ-Thinking-Abliterated-Heretic-NEOMAX-Imatrix-GGUF
+- Repositorio Hugging Face (version de fairy322): https://huggingface.co/fairy322/Qwen3-24B-A4B-Freedom-HQ-Thinking-Abliterated-Heretic-NEOMAX-Imatrix-GGUF
 - Repositorio original de DavidAU: https://huggingface.co/DavidAU/Qwen3-24B-A4B-Freedom-HQ-Thinking-Abliterated-Heretic-NEOMAX-Imatrix-GGUF
 - Herramienta Heretic (abliteracion): https://github.com/p-e-w/heretic
 - Modelos base Qwen3 (informacion general): https://lmstudio.ai/models/qwen3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`distilbert-base-uncased-finetuned-ner` es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning de `distilbert-base-uncased` para la tarea de reconocimiento de entidades nombradas (NER). Lo publica el usuario de HuggingFace `tihon-nth` y se generó automáticamente con la librería `Trainer` de Transformers, tal como indica el encabezado de su model card. Se trata, por tanto, de un modelo derivado de pequeño tamaño (66,4 millones de parámetros) pensado para etiquetado secuencial, no para generación de texto.
+`distilbert-base-uncased-finetuned-ner` es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning de `distilbert-base-uncased` para la tarea de reconocimiento de entidades nombradas (NER). Lo publica el usuario de Hugging Face `tihon-nth` y se generó automáticamente con la librería `Trainer` de Transformers, tal como indica el encabezado de su model card. Se trata, por tanto, de un modelo derivado de pequeño tamaño (66,4 millones de parámetros) pensado para etiquetado secuencial, no para generación de texto.
 
 La relevancia práctica de este modelo es la de un artefacto de fine-tuning: parte de la arquitectura DistilBERT (una versión destilada de BERT con 6 capas en lugar de 12) y añade una cabeza de clasificación token a token. El autor reporta métricas de validación razonablemente altas (F1 de 0,9370 y accuracy de 0,9864), pero no documenta qué conjunto de datos se usó para el entrenamiento ni qué esquema de etiquetas (BIO, BIOES, tipos de entidad) emplea, lo que limita seriamente su reproducibilidad y su uso directo en producción.
 
@@ -32,7 +32,7 @@ El fine-tuning se realizó con el `Trainer` de Transformers usando AdamW fused (
 - Clasificación de tokens para reconocimiento de entidades nombradas (NER): asigna una etiqueta a cada token de la secuencia de entrada.
 - Etiquetado secuencial en general (token classification), siempre que el esquema de etiquetas coincida con el usado en el fine-tuning.
 - Inferencia por lotes mediante el pipeline `token-classification` de Transformers.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible` en los tags).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags).
 - No soporta generación de texto, razonamiento, código, matemáticas, visión ni audio.
 - No soporta tool calling ni function calling.
 - No está diseñado para agentes ni razonamiento multi-step.
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible (MMLU
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tihon-nth/distilbert-base-uncased-finetuned-ner | 66,4 M | no disponible (base: 512) | NER / token classification | Apache 2.0 | HuggingFace |
-| dslim/bert-base-NER | ~110 M | 512 | NER (CoNLL-2003, esquema BIO) | MIT | HuggingFace, ampliamente usado |
-| dslim/distilbert-NER | ~66 M | 512 | NER (CoNLL-2003, esquema BIO) | MIT | HuggingFace |
-| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 | NER (esquema BIO) | MIT | HuggingFace |
+| tihon-nth/distilbert-base-uncased-finetuned-ner | 66,4 M | no disponible (base: 512) | NER / token classification | Apache 2.0 | Hugging Face |
+| dslim/bert-base-NER | ~110 M | 512 | NER (CoNLL-2003, esquema BIO) | MIT | Hugging Face, ampliamente usado |
+| dslim/distilbert-NER | ~66 M | 512 | NER (CoNLL-2003, esquema BIO) | MIT | Hugging Face |
+| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 | NER (esquema BIO) | MIT | Hugging Face |
 
 La comparación directa con `dslim/distilbert-NER` es la más pertinente por tamaño y arquitectura: ambos son DistilBERT fine-tuneados para NER, pero el modelo de `dslim` documenta su dataset (CoNLL-2003), su esquema de etiquetas y sus métricas, mientras que `tihon-nth` no lo hace. Para uso en producción, la falta de documentación del esquema de etiquetas y del dataset es un factor decisivo a favor de las alternativas establecidas.
 
@@ -96,7 +96,7 @@ La comparación directa con `dslim/distilbert-NER` es la más pertinente por tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tihon-nth/distilbert-base-uncased-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/tihon-nth/distilbert-base-uncased-finetuned-ner
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Documentación del pipeline `token-classification`: https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.TokenClassificationPipeline
 - Documentación de DistilBERT: https://huggingface.co/docs/transformers/model_doc/distilbert

@@ -37,7 +37,7 @@ Tampoco se especifica el proceso de compresion: no hay informacion sobre el data
 
 - Generacion de texto: el pipeline declarado es `text-generation` y el repositorio incluye la etiqueta `conversational`, por lo que se espera uso conversacional y de generacion libre.
 - Procesamiento de imagen y texto: la etiqueta `image-text-to-text` sugiere entrada multimodal, aunque la model card no describe ningun modulo de vision ni su resolucion de entrada.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio sigue el formato esperado por los endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio sigue el formato esperado por los endpoints de Hugging Face.
 - Carga en `transformers` y vLLM: confirmado explicitamente en la model card ("load with stock transformers / vLLM").
 - Tool calling / function calling: no documentado en la informacion disponible.
 - Soporte de agentes y razonamiento multi-paso: no documentado en la informacion disponible.
@@ -93,7 +93,7 @@ No se dispone de datos verificables de otros modelos comparables dentro de la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-1p80bit-r11
+- Repositorio en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-1p80bit-r11
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 
 Nota: la busqueda web proporcionada no devolvio ningun enlace relevante (unicamente resultados de YouTube sin relacion con el modelo), por lo que no hay papers, blogs, repositorios ni demos adicionales que citar.

@@ -6,7 +6,7 @@ El modelo `hodgy/kaitlyn-krea2-turbo-v1` es un adaptador LoRA (Low-Rank Adaptati
 
 La relevancia de este adaptador reside en que no requiere reentrenar el modelo base completo: con un archivo de apenas 0,2 GB, se puede inyectar la identidad visual de un personaje en un flujo de trabajo de ComfyUI, aprovechando la velocidad de Krea 2 Turbo para iterar rápidamente en ilustraciones expresivas. El modelo base Krea 2 Turbo emplea una arquitectura de Diffusion Transformer, y el adaptador se distribuye en formato BF16 Safetensors con rango 32.
 
-El repositorio contiene únicamente el adaptador, no el modelo base, que debe descargarse por separado desde HuggingFace (con acceso restringido) o mediante los checkpoints oficiales de Comfy-Org. La licencia es `other`, no especificada en la model card, lo que exige revisar los términos del modelo base antes de cualquier uso comercial.
+El repositorio contiene únicamente el adaptador, no el modelo base, que debe descargarse por separado desde Hugging Face (con acceso restringido) o mediante los checkpoints oficiales de Comfy-Org. La licencia es `other`, no especificada en la model card, lo que exige revisar los términos del modelo base antes de cualquier uso comercial.
 
 ## Especificaciones técnicas
 

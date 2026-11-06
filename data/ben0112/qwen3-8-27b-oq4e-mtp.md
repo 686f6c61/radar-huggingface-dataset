@@ -54,7 +54,7 @@ No se proporcionan requisitos específicos en la documentación. Sin embargo, ba
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos. Se podría comparar con otras cuantizaciones de Qwen3.8-27B (por ejemplo, versiones GGUF o AWQ), pero no hay datos concretos en la documentación. Se recomienda consultar el modelo base Qwen3.8-27B y otras cuantizaciones disponibles en HuggingFace para obtener una comparativa.
+No se dispone de información suficiente para realizar una comparativa con otros modelos. Se podría comparar con otras cuantizaciones de Qwen3.8-27B (por ejemplo, versiones GGUF o AWQ), pero no hay datos concretos en la documentación. Se recomienda consultar el modelo base Qwen3.8-27B y otras cuantizaciones disponibles en Hugging Face para obtener una comparativa.
 
 ## Limitaciones y advertencias
 
@@ -66,5 +66,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - ben0112/Qwen3.8-27B-oQ4e-mtp](https://huggingface.co/ben0112/Qwen3.8-27B-oQ4e-mtp)
+- [Hugging Face - ben0112/Qwen3.8-27B-oQ4e-mtp](https://huggingface.co/ben0112/Qwen3.8-27B-oQ4e-mtp)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

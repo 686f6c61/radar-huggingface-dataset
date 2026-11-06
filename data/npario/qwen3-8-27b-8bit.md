@@ -93,7 +93,7 @@ No se dispone de benchmarks comparativos directos en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/npario/Qwen3.8-27B-8bit
+- Repositorio Hugging Face: https://huggingface.co/npario/Qwen3.8-27B-8bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer-finetuned es un prototipo de investigación publicado en HuggingFace por el usuario Wenakamura bajo el identificador `Wenakamura/mixer-finetuned`. Se presenta explícitamente como una implementación de tipo **Mixer** orientada a tareas de **matching** (emparejamiento), acompañada de un script de entrenamiento (`train.py`), un fichero de configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`). El repositorio incluye un checkpoint `model.safetensors` que el propio autor describe como una **inicialización válida para pruebas de humo**, no como un modelo entrenado ni evaluado.
+Mixer-finetuned es un prototipo de investigación publicado en Hugging Face por el usuario Wenakamura bajo el identificador `Wenakamura/mixer-finetuned`. Se presenta explícitamente como una implementación de tipo **Mixer** orientada a tareas de **matching** (emparejamiento), acompañada de un script de entrenamiento (`train.py`), un fichero de configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`). El repositorio incluye un checkpoint `model.safetensors` que el propio autor describe como una **inicialización válida para pruebas de humo**, no como un modelo entrenado ni evaluado.
 
 El dato más relevante es su escala real: el recuento de parámetros del checkpoint safetensors es de **33.088 parámetros**, muy lejos de lo que sugiere la etiqueta `huge` de la configuración interna. Se trata, por tanto, de una prueba de concepto de arquitectura, no de un modelo de propósito general ni de un sistema listo para producción. La model card no declara capacidades verificadas, ni idiomas soportados, ni resultados de benchmarks, y advierte que el checkpoint no ha sido entrenado ni auditado en términos de robustez, equidad o transferencia de dominio.
 
@@ -69,10 +69,10 @@ No disponible. La información proporcionada no incluye modelos comparables, y l
 - Riesgo de alucinación: no evaluado; al no ser un modelo generativo entrenado, la noción de alucinación no está caracterizada en este repositorio.
 - Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados.
 - Licencia apache-2.0, que permite uso comercial del artefacto, pero el autor advierte que deben revisarse por separado los términos de los datos de origen si se usan datasets externos.
-- Advertencia de integración: al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito.
+- Advertencia de integración: al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado deberá documentarse de forma separada de los valores por defecto publicados aquí.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Wenakamura/mixer-finetuned](https://huggingface.co/Wenakamura/mixer-finetuned)
+- [Modelo en Hugging Face: Wenakamura/mixer-finetuned](https://huggingface.co/Wenakamura/mixer-finetuned)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la búsqueda web realizada; los resultados obtenidos correspondían a plantillas de notas de versión de software y no guardan relación con este modelo.

@@ -99,7 +99,7 @@ La comparación con alternativas de la misma tarea se limita a las variantes de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gustavecortal/imagevolve-clip-vit-base-patch32
+- Modelo en Hugging Face: https://huggingface.co/gustavecortal/imagevolve-clip-vit-base-patch32
 - Proyecto imagevolve: https://gustavecortal.com/imagevolve/
 - Exportación ONNX de referencia (Xenova): https://huggingface.co/Xenova/clip-vit-base-patch32
 - CLIP original de OpenAI: https://huggingface.co/openai/clip-vit-base-patch32

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Metodo | Numero de CpGs | Tejido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| twelvecelldeconvolutebloodepictreg (este) | Deconvolucion restringida basada en referencia | 240 | Sangre (leucocitos) | BSD-3-Clause | HuggingFace / pyaging |
+| twelvecelldeconvolutebloodepictreg (este) | Deconvolucion restringida basada en referencia | 240 | Sangre (leucocitos) | BSD-3-Clause | Hugging Face / pyaging |
 | EPIC IDOL-Ext (Salas et al. 2022) | Deconvolucion restringida basada en referencia | 1.200 | Sangre | No especificada (articulo publicado) | Paquete R / repositorio del articulo |
 | CIBERSORT (Newman et al. 2015) | Deconvolucion por regresion de soporte vectorial | ~500 (LM22) | Varios tejidos | No libre para uso comercial | Sitio web dedicado |
 | EpiDISH | Deconvolucion robusta con restricciones | Variable | Sangre | GPL-3.0 | Paquete Bioconductor |
@@ -80,6 +80,6 @@ La comparativa se basa en caracteristicas generales conocidas; no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepictreg
+- Modelo en Hugging Face: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepictreg
 - Documentacion de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Articulo original de Salas et al. (2022): https://doi.org/10.1038/s41467-021-27864-7

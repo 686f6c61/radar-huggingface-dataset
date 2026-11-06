@@ -74,11 +74,11 @@ No se dispone de una tabla comparativa con métricas concretas porque no se han 
 
 ## Enlaces
 
-- [Modelo en HuggingFace: kerasformers/internvl3-78b](https://huggingface.co/kerasformers/internvl3-78b)
+- [Modelo en Hugging Face: kerasformers/internvl3-78b](https://huggingface.co/kerasformers/internvl3-78b)
 - [Modelo original: OpenGVLab/InternVL3-78B-hf](https://huggingface.co/OpenGVLab/InternVL3-78B-hf)
 - [Modelo instruct original: OpenGVLab/InternVL3-78B-Instruct](https://huggingface.co/OpenGVLab/InternVL3-78B-Instruct)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de InternVL en KerasFormers](https://imvision12.github.io/KerasFormers/internvl/)
 - [Repositorio GitHub de InternVL (OpenGVLab)](https://github.com/OpenGVLab/InternVL)
-- [Colección de modelos InternVL en HuggingFace](https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd)
+- [Colección de modelos InternVL en Hugging Face](https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd)
 - [Licencia upstream](https://huggingface.co/OpenGVLab/InternVL3-78B-hf/blob/main/LICENSE)

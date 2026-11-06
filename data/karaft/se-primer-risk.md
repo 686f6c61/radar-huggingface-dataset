@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SE Primer riskli karar modeli es un clasificador binario de muy baja complejidad publicado por el usuario karaft en HuggingFace. Su unico proposito es estimar la probabilidad de que un jugador del videojuego SE Primer seleccione la opcion de riesgo (B) en la pantalla de decision; si la probabilidad estimada es igual o superior a 0,50, el juego muestra una pista y elimina la presion de tiempo en las decisiones segunda y tercera para jugadores experimentados. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un pipeline `StandardScaler → LogisticRegression` con `class_weight="balanced"` y semilla 13, exportado a ONNX.
+SE Primer riskli karar modeli es un clasificador binario de muy baja complejidad publicado por el usuario karaft en Hugging Face. Su unico proposito es estimar la probabilidad de que un jugador del videojuego SE Primer seleccione la opcion de riesgo (B) en la pantalla de decision; si la probabilidad estimada es igual o superior a 0,50, el juego muestra una pista y elimina la presion de tiempo en las decisiones segunda y tercera para jugadores experimentados. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un pipeline `StandardScaler → LogisticRegression` con `class_weight="balanced"` y semilla 13, exportado a ONNX.
 
 El modelo opera sobre un vector de 6 caracteristicas float32 por muestra y devuelve dos probabilidades float32 (clase 0 y clase 1). El repositorio tiene un tamano de 0,0 GB, lo que refleja que los pesos son practicamente insignificantes en terminos de almacenamiento. Fue creado y actualizado el 4 de noviembre de 2026 y no registra descargas ni likes en el momento de redactar esta ficha.
 
@@ -84,5 +84,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karaft/se-primer-risk
+- Modelo en Hugging Face: https://huggingface.co/karaft/se-primer-risk
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.

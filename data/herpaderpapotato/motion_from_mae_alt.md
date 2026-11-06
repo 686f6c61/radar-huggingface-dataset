@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `herpaderpapotato/motion_from_mae_alt` es un checkpoint publicado en HuggingFace por el usuario herpaderpapotato, con licencia MIT y un tamaño de 15.124.226 parámetros (aproximadamente 15 millones). El nombre sugiere una relación con arquitecturas MAE (Masked Autoencoder), probablemente orientado a tareas de estimación o generación de movimiento a partir de imágenes, aunque la model card no proporciona ninguna descripción técnica ni funcional.
+El modelo `herpaderpapotato/motion_from_mae_alt` es un checkpoint publicado en Hugging Face por el usuario herpaderpapotato, con licencia MIT y un tamaño de 15.124.226 parámetros (aproximadamente 15 millones). El nombre sugiere una relación con arquitecturas MAE (Masked Autoencoder), probablemente orientado a tareas de estimación o generación de movimiento a partir de imágenes, aunque la model card no proporciona ninguna descripción técnica ni funcional.
 
 Se trata de un repositorio reciente (creado en agosto de 2026) con cero descargas y cero likes, lo que indica que es un experimento personal o un modelo en fase muy temprana de publicación. No se dispone de información sobre arquitectura, datos de entrenamiento, capacidades o rendimiento, por lo que cualquier uso en producción requeriría una evaluación previa exhaustiva por parte del desarrollador.
 
@@ -33,7 +33,7 @@ No se ha publicado información sobre la arquitectura del modelo. El nombre "mot
 
 No se pueden proponer casos de uso concretos sin información sobre las capacidades reales del modelo. La model card no describe ninguna aplicación práctica. Cualquier uso requeriría primero una evaluación empírica del checkpoint, por ejemplo:
 
-- Exploración experimental: un desarrollador podría cargar el modelo con la librería de HuggingFace Transformers o safetensors para inspeccionar sus pesos y determinar su funcionalidad.
+- Exploración experimental: un desarrollador podría cargar el modelo con la librería de Hugging Face Transformers o safetensors para inspeccionar sus pesos y determinar su funcionalidad.
 - Investigación académica: podría servir como punto de partida para estudiar arquitecturas MAE aplicadas a movimiento, siempre que se confirme su estructura.
 - Fine-tuning: si el modelo resulta ser un encoder visual, podría adaptarse a tareas downstream, pero esto es especulativo.
 
@@ -62,4 +62,4 @@ No disponible. No se conocen modelos comparables en la misma categoría (estimac
 
 ## Enlaces
 
-- [HuggingFace: herpaderpapotato/motion_from_mae_alt](https://huggingface.co/herpaderpapotato/motion_from_mae_alt)
+- [Hugging Face: herpaderpapotato/motion_from_mae_alt](https://huggingface.co/herpaderpapotato/motion_from_mae_alt)

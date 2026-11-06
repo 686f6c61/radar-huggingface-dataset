@@ -79,10 +79,10 @@ Las mediciones de TTS se realizaron con un modelo ASR lituano escuchando 12 fras
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Android LT (Ingute + Ears) | TTS Piper + ASR Parakeet | no disponible | no aplica | newgenltu-openrail-d | HuggingFace, F-Droid |
+| Android LT (Ingute + Ears) | TTS Piper + ASR Parakeet | no disponible | no aplica | newgenltu-openrail-d | Hugging Face, F-Droid |
 | Parakeet Ultra (por defecto en Parakeetype) | ASR | no disponible | no aplica | no disponible | F-Droid |
 | eSpeak NG solo (sin `lt_dict`) | TTS por reglas | no aplica | no aplica | GPL u otra (no verificada) | Multiples plataformas |
-| Piper estandar (voces genericas) | TTS neuronal | no disponible | no aplica | MIT (Piper) | HuggingFace, sherpa-onnx |
+| Piper estandar (voces genericas) | TTS neuronal | no disponible | no aplica | MIT (Piper) | Hugging Face, sherpa-onnx |
 
 La comparativa se limita a los modelos mencionados en la informacion disponible. No se dispone de datos de otros sistemas TTS o ASR especificos para lituano que permitan una comparacion cuantitativa adicional.
 
@@ -100,7 +100,7 @@ La comparativa se limita a los modelos mencionados en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobertasTa/android-lt
+- Modelo en Hugging Face: https://huggingface.co/RobertasTa/android-lt
 - Repositorio GitHub: https://github.com/RobertasTa/android-lt
 - Pagina del proyecto: https://robertasta.github.io/android-lt/en/
 - Licencia de la voz: https://huggingface.co/RobertasTa/android-lt/blob/main/LICENSE-VOICE

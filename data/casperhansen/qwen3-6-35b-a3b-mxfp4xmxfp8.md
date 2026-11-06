@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B (base) | 35B totales, 3B activos | bf16 | no disponible | Apache 2.0 | HuggingFace |
-| casperhansen/Qwen3.6-35B-A3B-MXFP4xMXFP8 | 35B totales, 3B activos | MXFP4/MXFP8 | no disponible | Apache 2.0 | HuggingFace |
-| casperhansen/Qwen3.6-35B-A3B-INT4-RTN | 35B totales, 3B activos | INT4 RTN | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3.5-35B-A3B (predecesor) | 35B totales, 3B activos | bf16 | no disponible | Apache 2.0 | HuggingFace |
+| Qwen3.6-35B-A3B (base) | 35B totales, 3B activos | bf16 | no disponible | Apache 2.0 | Hugging Face |
+| casperhansen/Qwen3.6-35B-A3B-MXFP4xMXFP8 | 35B totales, 3B activos | MXFP4/MXFP8 | no disponible | Apache 2.0 | Hugging Face |
+| casperhansen/Qwen3.6-35B-A3B-INT4-RTN | 35B totales, 3B activos | INT4 RTN | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3.5-35B-A3B (predecesor) | 35B totales, 3B activos | bf16 | no disponible | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base. No se dispone de datos de rendimiento para establecer una comparación cuantitativa. La principal diferencia entre MXFP4xMXFP8 e INT4-RTN radica en el esquema de cuantización: MXFP4 usa escalas por grupo de 32 elementos y mantiene ciertos módulos en bf16, mientras que INT4-RTN es una cuantización entera más convencional. No hay información sobre cuál ofrece mejor calidad.
 
@@ -78,7 +78,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/casperhansen/Qwen3.6-35B-A3B-MXFP4xMXFP8
+- Modelo en Hugging Face: https://huggingface.co/casperhansen/Qwen3.6-35B-A3B-MXFP4xMXFP8
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog oficial de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Guía de Qwen 3.6 (insiderllm): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

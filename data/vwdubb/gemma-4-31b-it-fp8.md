@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vwdubb/gemma-4-31B-it-FP8` es una cuantización en precisión FP8 del modelo `google/gemma-4-31B-it`, desarrollado por Google DeepMind y publicado por el usuario vwdubb en HuggingFace. Esta versión reduce el peso del modelo original (que en BF16 ocupa aproximadamente 62 GB) a 33,3 GB, lo que facilita su despliegue en GPUs con menos memoria sin renunciar a las capacidades del modelo base.
+El modelo `vwdubb/gemma-4-31B-it-FP8` es una cuantización en precisión FP8 del modelo `google/gemma-4-31B-it`, desarrollado por Google DeepMind y publicado por el usuario vwdubb en Hugging Face. Esta versión reduce el peso del modelo original (que en BF16 ocupa aproximadamente 62 GB) a 33,3 GB, lo que facilita su despliegue en GPUs con menos memoria sin renunciar a las capacidades del modelo base.
 
 Gemma 4 31B es un modelo de lenguaje multimodal (texto e imagen) con arquitectura transformer densa, 60 capas, 31,27 mil millones de parámetros totales (incluyendo el vision encoder) y una ventana de contexto de hasta 256K tokens. Está optimizado para razonamiento, generación de código, function calling y tareas agénticas, y mantiene soporte multilingüe en más de 140 idiomas. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que lo convierte en una opción atractiva para entornos de producción.
 
@@ -87,4 +87,4 @@ La comparativa se basa en caracteristicas publicas; no se dispone de datos de re
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Coleccion de modelos Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion de modelos Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4

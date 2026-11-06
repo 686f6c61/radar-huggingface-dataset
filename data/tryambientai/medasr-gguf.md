@@ -25,7 +25,7 @@ Su relevancia practica esta en el despliegue: las cuantizaciones GGUF van de 417
 
 El modelo es un encoder Conformer de 17 capas con atencion rotacional (RoPE), bloques FFN tipo macaron y una cabeza de clasificacion CTC sobre un vocabulario SentencePiece de 512 tokens. La decodificacion es greedy CTC pura: no hay modelo de lenguaje externo, ni beam search, ni rescoring. El modelo fue preentrenado por Google sobre un corpus de audio medico; la model card upstream no detalla en la informacion disponible el numero exacto de tokens, la composicion del dataset ni si se aplico RLHF o DPO (procedimiento poco habitual en ASR CTC). La model card original menciona que el modelo esta pensado como punto de partida para desarrolladores y que puede mostrar variabilidad con terminos fuera de su distribucion de preentrenamiento, como nombres de medicamentos no estandar o el tratamiento consistente de datos temporales (fechas, horas, duraciones).
 
-La conversion GGUF fue portada desde el commit upstream `ae1e484` (fijado el 2026-06-04) y validada contra la referencia de transformers en el commit `65dc2615` (version de desarrollo, v5.0.0 no publicada) con `transcribe.cpp` en el commit `782abfd`. La validacion numerica confirma que la salida F32 en `transcribe.cpp` coincide exactamente con la referencia de HuggingFace (WER 17,88 % en LibriSpeech test-clean). No se documentan innovaciones de decodificacion especulativa ni atencion lineal; la unica optimizacion relevante es la cuantizacion GGUF con perdida de precision medida.
+La conversion GGUF fue portada desde el commit upstream `ae1e484` (fijado el 2026-06-04) y validada contra la referencia de transformers en el commit `65dc2615` (version de desarrollo, v5.0.0 no publicada) con `transcribe.cpp` en el commit `782abfd`. La validacion numerica confirma que la salida F32 en `transcribe.cpp` coincide exactamente con la referencia de Hugging Face (WER 17,88 % en LibriSpeech test-clean). No se documentan innovaciones de decodificacion especulativa ni atencion lineal; la unica optimizacion relevante es la cuantizacion GGUF con perdida de precision medida.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ La conversion GGUF fue portada desde el commit upstream `ae1e484` (fijado el 202
 - Integracion en sistemas de historia clinica electronica: al ser un GGUF de menos de 130 MB y con RTF de 65x en CPU, puede incrustarse como dependencia en aplicaciones de escritorio o servidores locales de un hospital sin GPU dedicada.
 - Procesamiento por lotes de grabaciones archivadas: con RTF de 354x en Metal sobre un M4 Max, un portatil puede transcribir horas de dictado en minutos para digitalizar archivos historicos.
 - Despliegue en entornos con recursos limitados: la cuantizacion Q5_K_M (90 MB) o Q4_K_M (79 MB) permite ejecutar el modelo en dispositivos edge o contenedores pequenos, aceptando una degradacion de WER de +0,03 pp y +0,26 pp respectivamente frente a F32.
-- Prototipado e investigacion en ASR medico: sirve como baseline reproducible para comparar pipelines de dictado clinico, con validacion numerica documentada frente a la referencia de HuggingFace y timestamps por token para alineacion.
+- Prototipado e investigacion en ASR medico: sirve como baseline reproducible para comparar pipelines de dictado clinico, con validacion numerica documentada frente a la referencia de Hugging Face y timestamps por token para alineacion.
 - Transcripcion de audio de reuniones clinicas en ingles: util como capa ASR base en pipelines que luego aplican postprocesado de entidades medicas, siempre que el audio sea de hablantes en ingles y no requiera streaming.
 
 ## Benchmarks y rendimiento
@@ -87,9 +87,9 @@ El WER absoluto en LibriSpeech es alto (17,88 %) porque el modelo esta ajustado 
 | Modelo | Parametros | Contexto / modalidad | WER relevante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | medasr-gguf (esta ficha) | 105 M | offline, ingles, CTC | 17,88 % LibriSpeech test-clean; 6,6–9,3 % dictado medico interno | Health AI Developer Foundations | GGUF via `transcribe.cpp` |
-| google/medasr (base) | 105 M | offline, ingles, CTC | referencia F32 17,88 % LibriSpeech test-clean | Health AI Developer Foundations | HuggingFace, transformers |
+| google/medasr (base) | 105 M | offline, ingles, CTC | referencia F32 17,88 % LibriSpeech test-clean | Health AI Developer Foundations | Hugging Face, transformers |
 | Whisper (familia, p. ej. base) | ~74 M (base) | offline/streaming segun variante, multilingue | ~5 % en habla general (referencia citada por el autor) | MIT (variantes OpenAI) | amplia: whisper.cpp, faster-whisper, transformers |
-| Wav2Vec 2.0 / HuBERT (ASR generico) | variable (decenas a centenares de M) | offline, ingles/multilingue segun checkpoint | no disponible en la informacion proporcionada | variable por checkpoint | HuggingFace, transformers |
+| Wav2Vec 2.0 / HuBERT (ASR generico) | variable (decenas a centenares de M) | offline, ingles/multilingue segun checkpoint | no disponible en la informacion proporcionada | variable por checkpoint | Hugging Face, transformers |
 
 La comparativa directa con Whisper no es homogenea: Whisper esta entrenado para habla general multilingue y obtiene mejor WER en LibriSpeech, mientras que MedASR prioriza terminologia clinica y obtiene 6,6–9,3 % en dictado medico segun datos internos no reproducibles. Para aplicaciones de dictado clinico en ingles con despliegue local, MedASR es la opcion especializada; para habla general o multilingue, Whisper es preferible.
 
@@ -109,7 +109,7 @@ La comparativa directa con Whisper no es homogenea: Whisper esta entrenado para 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/tryambientai/medasr-gguf
+- Modelo GGUF en Hugging Face: https://huggingface.co/tryambientai/medasr-gguf
 - Modelo base: https://huggingface.co/google/medasr
 - Commit upstream usado para la conversion: https://huggingface.co/google/medasr/commit/ae1e484
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

@@ -122,7 +122,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-16B-chat
+- Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-16B-chat
 - Demo chat en HF Spaces: https://huggingface.co/spaces/CMSManhattan/JiRack-16B-Chat
 - Modelo base: https://huggingface.co/CMSManhattan/JiRackUltra_14b
 - Paper BitNet b1.58 (referencia arquitectónica): no disponible en la información proporcionada

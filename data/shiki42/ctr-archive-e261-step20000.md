@@ -1,7 +1,7 @@
 # Shiki42/ctr-archive-e261-step20000
 
 ## Resumen
-El modelo Shiki42/ctr-archive-e261-step20000 es un checkpoint archivado de un entrenamiento de robótica basado en SmolVLA, un modelo de visión-lenguaje-acción (VLA). Fue desarrollado por el usuario Shiki42 y publicado en HuggingFace el 4 de octubre de 2026. El checkpoint corresponde al paso 20000 de una ejecución denominada "PRO6000 PutCab SmolVLA Sequential train", orientada presumiblemente a la tarea de manipulación robótica "PutCab".
+El modelo Shiki42/ctr-archive-e261-step20000 es un checkpoint archivado de un entrenamiento de robótica basado en SmolVLA, un modelo de visión-lenguaje-acción (VLA). Fue desarrollado por el usuario Shiki42 y publicado en Hugging Face el 4 de octubre de 2026. El checkpoint corresponde al paso 20000 de una ejecución denominada "PRO6000 PutCab SmolVLA Sequential train", orientada presumiblemente a la tarea de manipulación robótica "PutCab".
 
 Con 450.046.176 parámetros (aproximadamente 450 millones) y un tamaño de repositorio de 0,9 GB, se trata de un modelo de tamano medio, adecuado para inferencia en hardware moderado. Su relevancia radica en que preserva el checkpoint real junto con el estado de normalización y del procesador, lo que permite reproducir experimentos, aunque el propio autor aclara que no establece identidad de resultado de paper ni aprobación de auditoría.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No se proporcionan requisitos específicos por parte del autor. A partir del tamaño de 450 millones de parámetros, se estima que la inferencia en precisión FP16 requiere aproximadamente 0,9 GB de VRAM; en INT8, unos 0,45 GB; y en INT4, unos 0,23 GB (estimaciones generales no confirmadas).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en FP16, como NVIDIA GTX 1050 Ti, RTX 2060 o superiores. Para mayor velocidad, se recomiendan GPUs modernas como RTX 3060, RTX 4090, A100 o H100.
 - Cabe en GPUs consumer: sí, prácticamente cualquier GPU consumer con 2 GB o más de VRAM.
-- Opciones de despliegue: no se especifican. Al ser un modelo SmolVLA, es probable que se pueda utilizar con las herramientas de LeRobot (librería de HuggingFace para robótica) y PyTorch. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: no se especifican. Al ser un modelo SmolVLA, es probable que se pueda utilizar con las herramientas de LeRobot (librería de Hugging Face para robótica) y PyTorch. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa detalla
 - La carga del modelo requiere seguir instrucciones concretas (cambiar el directorio de trabajo a la raíz del checkpoint), lo que puede complicar su integración en pipelines automatizados.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Shiki42/ctr-archive-e261-step20000
+- Hugging Face: https://huggingface.co/Shiki42/ctr-archive-e261-step20000
 - No se proporcionan otros enlaces (papers, blogs, repositorios, demos) en la información disponible.

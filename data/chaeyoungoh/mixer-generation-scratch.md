@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`chaeyoungoh/mixer-generation-scratch` es un repositorio experimental publicado en HuggingFace por el usuario chaeyoungoh que contiene una implementacion propia de una arquitectura tipo Mixer orientada a generacion. No se trata de un modelo entrenado ni de una release de produccion: la propia model card indica explicitamente que el checkpoint `model.safetensors` es un estado de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark en el repositorio.
+`chaeyoungoh/mixer-generation-scratch` es un repositorio experimental publicado en Hugging Face por el usuario chaeyoungoh que contiene una implementacion propia de una arquitectura tipo Mixer orientada a generacion. No se trata de un modelo entrenado ni de una release de produccion: la propia model card indica explicitamente que el checkpoint `model.safetensors` es un estado de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark en el repositorio.
 
 El artefacto principal es el script `run.py`, acompanado de `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto) y el mencionado checkpoint de inicializacion. La arquitectura declarada combina un esquema Mixer con atencion flash, fusion tipo Tucker, activacion ReLU y normalizacion LayerNorm, bajo una escala etiquetada como "giant", etiqueta que contrasta con el recuento real de parametros reportado por safetensors.
 
-Su relevancia actual es limitada y de caracter puramente investigador: sirve como punto de partida reproducible para experimentar con arquitecturas Mixer y para validar pipelines de entrenamiento, no como un modelo listo para inferencia real. El autor no aporta datos de idiomas soportados, pipeline de HuggingFace, ni resultados de evaluacion, y el repositorio registra cero descargas y cero likes en el momento de la consulta.
+Su relevancia actual es limitada y de caracter puramente investigador: sirve como punto de partida reproducible para experimentar con arquitecturas Mixer y para validar pipelines de entrenamiento, no como un modelo listo para inferencia real. El autor no aporta datos de idiomas soportados, pipeline de Hugging Face, ni resultados de evaluacion, y el repositorio registra cero descargas y cero likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada y de caracter puramente investigador: sirve com
 | Fecha de actualizacion | 2026-09-30 |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -89,5 +89,5 @@ No disponible. El repositorio no declara modelos comparables y la informacion pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chaeyoungoh/mixer-generation-scratch
+- Hugging Face: https://huggingface.co/chaeyoungoh/mixer-generation-scratch
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relevantes en la busqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `leoniejkr/trustai-llm-gguf` es un repositorio publicado en HuggingFace que contiene un modelo en formato GGUF, lo que indica que está pensado para su ejecución en entornos como llama.cpp u otros motores compatibles con este formato. Según los metadatos disponibles, el modelo tiene un total de 8.030.261.248 parámetros, es decir, aproximadamente 8.000 millones de parámetros, y el repositorio ocupa 4,9 GB. Los tags asociados (`gguf`, `endpoints_compatible`, `region:us`, `conversational`) sugieren que está orientado a tareas de conversación y que es compatible con endpoints de inferencia.
+El modelo `leoniejkr/trustai-llm-gguf` es un repositorio publicado en Hugging Face que contiene un modelo en formato GGUF, lo que indica que está pensado para su ejecución en entornos como llama.cpp u otros motores compatibles con este formato. Según los metadatos disponibles, el modelo tiene un total de 8.030.261.248 parámetros, es decir, aproximadamente 8.000 millones de parámetros, y el repositorio ocupa 4,9 GB. Los tags asociados (`gguf`, `endpoints_compatible`, `region:us`, `conversational`) sugieren que está orientado a tareas de conversación y que es compatible con endpoints de inferencia.
 
 Sin embargo, la información pública disponible es extremadamente limitada: no se especifican ni la arquitectura, ni la longitud de contexto, ni los idiomas soportados, ni la licencia. Además, el repositorio fue creado el 5 de septiembre de 2026, una fecha futura que podría deberse a un error en los metadatos o a un repositorio de prueba. En el momento de la consulta, el modelo no registra descargas y solo tiene un «like», lo que sugiere que no ha sido validado por la comunidad.
 
@@ -21,7 +21,7 @@ Sin embargo, la información pública disponible es extremadamente limitada: no 
 
 ## Arquitectura y entrenamiento
 
-No se ha proporcionado información sobre la arquitectura del modelo, el proceso de entrenamiento, los datos utilizados ni si se aplicaron técnicas como RLHF o DPO. Los metadatos de HuggingFace no incluyen ningún detalle técnico más allá del número de parámetros y el formato de pesos. Cualquier afirmación sobre la arquitectura o el entrenamiento sería especulativa.
+No se ha proporcionado información sobre la arquitectura del modelo, el proceso de entrenamiento, los datos utilizados ni si se aplicaron técnicas como RLHF o DPO. Los metadatos de Hugging Face no incluyen ningún detalle técnico más allá del número de parámetros y el formato de pesos. Cualquier afirmación sobre la arquitectura o el entrenamiento sería especulativa.
 
 ## Capacidades
 
@@ -64,4 +64,4 @@ No disponible. No se dispone de información sobre modelos comparables ni de dat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leoniejkr/trustai-llm-gguf
+- Repositorio en Hugging Face: https://huggingface.co/leoniejkr/trustai-llm-gguf

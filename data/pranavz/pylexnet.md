@@ -107,6 +107,6 @@ No se dispone de datos de comparacion con lexnet (alpindale/lexnet) en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pranavz/pylexnet
+- Modelo en Hugging Face: https://huggingface.co/Pranavz/pylexnet
 - lexnet (proyecto de referencia): https://huggingface.co/alpindale/lexnet
 - Demo en video: https://huggingface.co/Pranavz/pylexnet/resolve/main/demo.mp4

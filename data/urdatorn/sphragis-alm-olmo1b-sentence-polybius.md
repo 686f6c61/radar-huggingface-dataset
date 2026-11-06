@@ -62,7 +62,7 @@ Estos valores corresponden al rendimiento agregado del sistema de 28 modelos, no
 - VRAM estimada para inferencia: con pesos en bf16, el modelo ocupa aproximadamente 2,35 GB (1.176.764.416 parámetros × 2 bytes). Con overhead de activaciones y memoria del runtime, se recomienda al menos 4 GB de VRAM para inferencia en lotes pequeños.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM, como una NVIDIA GTX 1650 Super, RTX 3050 o superior. Para inferencia con mayor throughput, una RTX 3060 12 GB o superior es suficiente.
 - Entrenamiento: el modelo se entrenó con 2 GPU NVIDIA GH200, pero para fine-tuning adicional se necesitarían GPUs con al menos 16 GB de VRAM (por ejemplo, A100, RTX 4090) dependiendo del tamaño de lote.
-- Opciones de despliegue: al ser un modelo basado en OLMo, es compatible con el ecosistema de HuggingFace Transformers. Puede cargarse con `AutoModelForCausalLM` y ejecutarse en frameworks como vLLM o llama.cpp, aunque no hay confirmación explícita de compatibilidad en la documentación del modelo.
+- Opciones de despliegue: al ser un modelo basado en OLMo, es compatible con el ecosistema de Hugging Face Transformers. Puede cargarse con `AutoModelForCausalLM` y ejecutarse en frameworks como vLLM o llama.cpp, aunque no hay confirmación explícita de compatibilidad en la documentación del modelo.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna, la inferencia de una frase de longitud media (50-100 tokens) debería completarse en decenas de milisegundos, pero estos valores son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La comparativa se limita a los modelos disponibles en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-polybius
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-polybius
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y atribución: https://github.com/Urdatorn/sphragis_models
 - Leaderboard del benchmark: https://huggingface.co/spaces/Urdatorn/sphragis-leaderboard

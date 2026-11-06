@@ -5,7 +5,7 @@ Stable Video Diffusion (SVD) Image-to-Video XT es un modelo de difusión latente
 
 El modelo resuelve la tarea de animación de imágenes estáticas sin necesidad de control textual, lo que lo hace útil para prototipado rápido de animaciones y efectos visuales. Su relevancia radica en que ofrece pesos abiertos bajo una licencia de comunidad, con un rendimiento preferido por evaluadores humanos frente a alternativas comerciales como GEN-2 y PikaLabs en calidad de vídeo.
 
-Publicado en noviembre de 2023 y actualizado en julio de 2024, acumula más de 102.000 descargas y 3.458 me gusta en HuggingFace, lo que refleja un interés significativo en la comunidad de generación de vídeo open source.
+Publicado en noviembre de 2023 y actualizado en julio de 2024, acumula más de 102.000 descargas y 3.458 me gusta en Hugging Face, lo que refleja un interés significativo en la comunidad de generación de vídeo open source.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -61,7 +61,7 @@ En cuanto a rendimiento de inferencia, la model card indica que con la configura
 | Benchmarks cuantitativos (MMLU, etc.) | no disponible |
 
 ## Requisitos de hardware
-- Almacenamiento: 32,6 GB para el repositorio completo en HuggingFace.
+- Almacenamiento: 32,6 GB para el repositorio completo en Hugging Face.
 - VRAM para inferencia: no disponible en la información proporcionada. La model card reporta pruebas en A100 80GB.
 - GPU recomendadas: A100 80GB según la model card. No se especifican otras GPU.
 - ¿Cabe en GPU de consumo? no disponible. Dependerá de la cuantización y optimizaciones, pero no se aportan datos.
@@ -72,7 +72,7 @@ En cuanto a rendimiento de inferencia, la model card indica que con la configura
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SVD-XT | 1.524.623.082 | no aplica (vídeo) | stable-video-diffusion-community | Pesos abiertos en HuggingFace |
+| SVD-XT | 1.524.623.082 | no aplica (vídeo) | stable-video-diffusion-community | Pesos abiertos en Hugging Face |
 | GEN-2 (Runway) | no disponible | no disponible | Comercial propietaria | API de pago |
 | PikaLabs | no disponible | no disponible | Comercial propietaria | API de pago |
 
@@ -91,7 +91,7 @@ Además, según la model card, SVD-Image-to-Video es preferido por evaluadores h
 - Caveat para producción: no es un modelo de lenguaje, por lo que no soporta tareas de texto, tool calling ni agentes. Su integración requiere pipelines de visión por computador.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt
+- Hugging Face: https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt
 - Repositorio GitHub: https://github.com/Stability-AI/generative-models
 - Paper: https://stability.ai/research/stable-video-diffusion-scaling-latent-video-diffusion-models-to-large-datasets
 - Licencia comercial: https://stability.ai/license

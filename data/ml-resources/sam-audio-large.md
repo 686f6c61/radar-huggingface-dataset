@@ -71,7 +71,7 @@ No se dispone de datos cuantitativos en la información proporcionada para estab
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sam-audio-large (ml-resources) | no disponible | no disponible | no disponible | SAM License | espejo no oficial en HuggingFace |
+| sam-audio-large (ml-resources) | no disponible | no disponible | no disponible | SAM License | espejo no oficial en Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos cuantitativos en la información proporcionada para estab
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/ml-resources/sam-audio-large
+- Repositorio espejo en Hugging Face: https://huggingface.co/ml-resources/sam-audio-large
 - Repositorio original de Meta: https://huggingface.co/facebook/sam-audio-large
 - Blog oficial de SAM-Audio: https://ai.meta.com/blog/sam-audio/
 - Paper de SAM-Audio: https://ai.meta.com/research/publications/sam-audio-segment-anything-in-audio/
@@ -98,4 +98,4 @@ No se dispone de datos cuantitativos en la información proporcionada para estab
 - Paper de PE-AV: https://ai.meta.com/research/publications/pushing-the-frontier-of-audiovisual-perception-with-large-scale-multimodal-correspondence-learning/
 - Referencia arXiv del repositorio: arxiv:2512.18099
 - Repositorio de SAM3 (necesario para el prompting visual): https://github.com/facebookresearch/sam3
-- Fichero de licencia del repositorio: LICENSE (incluido en el propio repositorio de HuggingFace)
+- Fichero de licencia del repositorio: LICENSE (incluido en el propio repositorio de Hugging Face)

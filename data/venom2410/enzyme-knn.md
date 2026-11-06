@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Enzyme-knn es un sistema de clasificación enzimática publicado en HuggingFace por el usuario venom2410, orientado a la asignación de números EC (Enzyme Commission) a secuencias proteicas. No se trata de un modelo de lenguaje generativo, sino de un pipeline híbrido de recuperación y clasificación que fusiona tres fuentes de evidencia: alineamiento por DIAMOND contra secuencias de entrenamiento, vecinos más cercanos mediante TF-IDF sobre k-mers con hashing, y un clasificador ESM-2 de 8 millones de parámetros afinado para consultas con alineamiento débil.
+Enzyme-knn es un sistema de clasificación enzimática publicado en Hugging Face por el usuario venom2410, orientado a la asignación de números EC (Enzyme Commission) a secuencias proteicas. No se trata de un modelo de lenguaje generativo, sino de un pipeline híbrido de recuperación y clasificación que fusiona tres fuentes de evidencia: alineamiento por DIAMOND contra secuencias de entrenamiento, vecinos más cercanos mediante TF-IDF sobre k-mers con hashing, y un clasificador ESM-2 de 8 millones de parámetros afinado para consultas con alineamiento débil.
 
 El sistema está diseñado explícitamente para entornos con restricciones de tiempo: cada etapa tiene un límite temporal y la evidencia ausente se omite, garantizando que la inferencia siempre termine dentro del presupuesto. Los pesos de fusión se ajustan sobre un conjunto de validación extraído de las propias secuencias de entrenamiento. El repositorio ocupa 1,3 GB e incluye un binario estático de DIAMOND para Linux en el directorio `bin/`.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Sistema | Enfoque | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| enzyme-knn (este) | Fusión de alineamiento + kNN k-mers + ESM-2 8M | ESM-2 de 8M en un componente | No disponible | No disponible | HuggingFace, repo 1,3 GB |
+| enzyme-knn (este) | Fusión de alineamiento + kNN k-mers + ESM-2 8M | ESM-2 de 8M en un componente | No disponible | No disponible | Hugging Face, repo 1,3 GB |
 | Herramientas tipo BLAST/DIAMOND puras | Solo alineamiento | No aplica | No aplica | Según herramienta | Amplia |
 | Clasificadores ESM-2 afinados | Solo transformer proteico | 8M–650M según variante | Longitud de secuencia | Según variante | Amplia |
 | Modelos comparables específicos | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -85,5 +85,5 @@ No se dispone de datos de rendimiento del sistema como para establecer una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/venom2410/enzyme-knn
+- Hugging Face: https://huggingface.co/venom2410/enzyme-knn
 - DIAMOND (repositorio oficial): https://github.com/bbuchfink/diamond

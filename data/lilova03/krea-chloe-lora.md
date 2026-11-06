@@ -2,7 +2,7 @@
 
 ## Resumen
 
-krea-chloe-lora es un adaptador LoRA publicado en HuggingFace por el usuario lilova03, etiquetado con las etiquetas `diffusers`, `flux`, `text-to-image`, `lora` y `fal`. Por las etiquetas y el pipeline declarado (`text-to-image`), se trata de un ajuste de bajo rango pensado para especializar un modelo de difusion de la familia FLUX en la generacion de imagenes con un estilo o sujeto concreto, presumiblemente asociado al nombre "chloe" que aparece en el identificador. No es un modelo de lenguaje: no genera texto ni razona, sino imagenes a partir de prompts textuales.
+krea-chloe-lora es un adaptador LoRA publicado en Hugging Face por el usuario lilova03, etiquetado con las etiquetas `diffusers`, `flux`, `text-to-image`, `lora` y `fal`. Por las etiquetas y el pipeline declarado (`text-to-image`), se trata de un ajuste de bajo rango pensado para especializar un modelo de difusion de la familia FLUX en la generacion de imagenes con un estilo o sujeto concreto, presumiblemente asociado al nombre "chloe" que aparece en el identificador. No es un modelo de lenguaje: no genera texto ni razona, sino imagenes a partir de prompts textuales.
 
 El repositorio no incluye model card, descripcion, ejemplos ni documentacion tecnica. El autor no ha publicado informacion sobre el dataset de entrenamiento, el rango del LoRA, el modelo base exacto (FLUX.1 dev, FLUX.1 schnell o FLUX.1 Krea dev), la escala de aplicacion recomendada ni los hiperparametros utilizados.
 
@@ -79,8 +79,8 @@ No se dispone de datos de rendimiento, licencia ni parametros de este adaptador,
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lilova03/krea-chloe-lora | LoRA sobre FLUX | no disponible | no aplica | no disponible (`license:other` en etiquetas) | HuggingFace, 0 descargas |
-| Otros LoRA de personaje sobre FLUX | LoRA sobre FLUX | no disponible | no aplica | variable segun autor | ecosistema HuggingFace / Civitai |
+| lilova03/krea-chloe-lora | LoRA sobre FLUX | no disponible | no aplica | no disponible (`license:other` en etiquetas) | Hugging Face, 0 descargas |
+| Otros LoRA de personaje sobre FLUX | LoRA sobre FLUX | no disponible | no aplica | variable segun autor | ecosistema Hugging Face / Civitai |
 | FLUX.1 dev (modelo base de referencia) | Modelo de difusion completo | no disponible | no aplica | no disponible en la informacion proporcionada | publicado por Black Forest Labs |
 
 No hay datos que permitan comparar calidad, fidelidad de sujeto ni eficiencia frente a alternativas de la misma categoria.
@@ -101,7 +101,7 @@ No hay datos que permitan comparar calidad, fidelidad de sujeto ni eficiencia fr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lilova03/krea-chloe-lora
-- Repositorio del autor en HuggingFace: https://huggingface.co/lilova03
+- Hugging Face: https://huggingface.co/lilova03/krea-chloe-lora
+- Repositorio del autor en Hugging Face: https://huggingface.co/lilova03
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo en la busqueda realizada.

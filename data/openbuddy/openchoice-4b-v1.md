@@ -6,7 +6,7 @@ OpenChoice-4B-v1 es un modelo de decisión ("system-1 choice model") desarrollad
 
 El problema que resuelve es concreto: en lugar de pedir a un modelo generativo que "razone" y escriba una respuesta abierta, OpenChoice recibe un `state` (contexto), una `question` y una lista de candidatos etiquetados de `A.` a `P.`, y resuelve la elección en un único forward pass mediante una cabeza de decisión que puntúa la última posición del prompt. Esa cabecera normaliza las puntuaciones únicamente sobre los candidatos suministrados y devuelve tanto la etiqueta ganadora como las probabilidades relativas, lo que permite usarlo como reranker, enrutador o clasificador con umbrales de confianza.
 
-Su relevancia actual es metodológica: separa el razonamiento del formato de salida y concentra el coste computacional en una sola pasada, con un modelo de 4B que puede ejecutarse en hardware de gama media. Frente a alternativas como Laya multilingual, APUS-4B y APUS-9B en las evaluaciones publicadas por el propio autor, OpenChoice-4B-v1 obtiene 112/128 en `openbuddy-choice128 v1` y 67/80 en `apus-frozen80 · choice`. La adopción pública registrada en HuggingFace es todavía mínima (1 descarga, 0 likes), por lo que debe tratarse como un modelo reciente y poco contrastado.
+Su relevancia actual es metodológica: separa el razonamiento del formato de salida y concentra el coste computacional en una sola pasada, con un modelo de 4B que puede ejecutarse en hardware de gama media. Frente a alternativas como Laya multilingual, APUS-4B y APUS-9B en las evaluaciones publicadas por el propio autor, OpenChoice-4B-v1 obtiene 112/128 en `openbuddy-choice128 v1` y 67/80 en `apus-frozen80 · choice`. La adopción pública registrada en Hugging Face es todavía mínima (1 descarga, 0 likes), por lo que debe tratarse como un modelo reciente y poco contrastado.
 
 ## Especificaciones tecnicas
 
@@ -79,11 +79,11 @@ Los resultados proceden de la model card del autor y de las configuraciones publ
 
 | Modelo | Parámetros | Contexto | apus-frozen80 · choice | openbuddy-choice128 v1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenChoice-4B-v1 | 4,2 B | no disponible | 67/80 | 112/128 | apache-2.0 | HuggingFace (OpenBuddy/OpenChoice-4B-v1) |
+| OpenChoice-4B-v1 | 4,2 B | no disponible | 67/80 | 112/128 | apache-2.0 | Hugging Face (OpenBuddy/OpenChoice-4B-v1) |
 | APUS-4B | no disponible | no disponible | 66/80 | 101/128 | no disponible | citado en la model card |
 | APUS-9B | no disponible | no disponible | 70/80 | 107/128 | no disponible | citado en la model card |
 | Laya multilingual | no disponible | no disponible | 37/80 | 42/128 | no disponible | citado en la model card |
-| Qwen/Qwen3.5-4B (modelo base) | ~4,2 B | no disponible | no evaluado en estas tareas | no evaluado en estas tareas | no disponible en la información proporcionada | HuggingFace |
+| Qwen/Qwen3.5-4B (modelo base) | ~4,2 B | no disponible | no evaluado en estas tareas | no evaluado en estas tareas | no disponible en la información proporcionada | Hugging Face |
 
 Lectura de la tabla: OpenChoice-4B-v1 supera a APUS-4B y a Laya multilingual en ambas tareas y queda por debajo de APUS-9B en `apus-frozen80` (67 frente a 70) pero por encima en `openbuddy-choice128 v1` (112 frente a 107), con la mitad de tamaño aproximada respecto al modelo de 9B. No hay datos de parámetros, contexto ni licencia para APUS-4B, APUS-9B ni Laya multilingual en la información disponible.
 
@@ -103,7 +103,7 @@ Lectura de la tabla: OpenChoice-4B-v1 supera a APUS-4B y a Laya multilingual en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenBuddy/OpenChoice-4B-v1
+- Modelo en Hugging Face: https://huggingface.co/OpenBuddy/OpenChoice-4B-v1
 - Repositorio OpenChoice (scripts de inferencia y datasets de evaluación): https://github.com/OpenBuddy/OpenChoice
 - Resultados y configuraciones de evaluación: https://github.com/OpenBuddy/OpenChoice/tree/main/evaluations/results
 - Repositorio de OpenBuddy: https://github.com/OpenBuddy/OpenBuddy

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-De-Objectify pre-built models es un repositorio de HuggingFace publicado por el usuario `visualseed` que aloja instalaciones pre-convertidas a Core ML para la aplicación De-Objectify, una herramienta de eliminación de objetos e inpainting que se ejecuta en local sobre Apple silicon. No se trata de un unico modelo, sino de un catalogo de artefactos: cada entrada es una carpeta de instalacion ya compilada que la propia aplicacion produce mediante su receta, validada en la maquina de referencia, comprimida sin modificar y fijada por hash sha256 en el catalogo de la app. Una instalacion desde este repositorio es, segun el autor, byte a byte identica a construir el modelo en la propia maquina.
+De-Objectify pre-built models es un repositorio de Hugging Face publicado por el usuario `visualseed` que aloja instalaciones pre-convertidas a Core ML para la aplicación De-Objectify, una herramienta de eliminación de objetos e inpainting que se ejecuta en local sobre Apple silicon. No se trata de un unico modelo, sino de un catalogo de artefactos: cada entrada es una carpeta de instalacion ya compilada que la propia aplicacion produce mediante su receta, validada en la maquina de referencia, comprimida sin modificar y fijada por hash sha256 en el catalogo de la app. Una instalacion desde este repositorio es, segun el autor, byte a byte identica a construir el modelo en la propia maquina.
 
 El repositorio redistribuye derivados de varios modelos base de difusion para inpainting: Stable Diffusion 1.5 inpainting, Stable Diffusion 2.1 inpainting, SDXL 1.0 inpainting, SDXL con la fase 2 del LoRA de eliminacion OSOR fusionada, SDXL RORem destilado con LCM a 4 pasos, y dos variantes de FLUX.2 Klein 4B (una de inpainting puro y otra con el LoRA de eliminacion de objetos de fal fusionado). El tamano total del repositorio es de 37,6 GB.
 
@@ -105,7 +105,7 @@ Frente a alternativas externas de inpainting (por ejemplo, los propios repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/visualseed/deobjectify-models
+- Repositorio en Hugging Face: https://huggingface.co/visualseed/deobjectify-models
 - Licencias de los artefactos: https://huggingface.co/visualseed/deobjectify-models/blob/main/LICENSES.md
 - Aplicacion De-Objectify (enlace tal cual aparece en la model card): https://github.com
 - Modelos base referenciados:

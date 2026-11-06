@@ -25,7 +25,7 @@ El resultado es un fichero de unos 0,2 GB de repositorio, con licencia MIT, pens
 | SHA-256 del fichero | `3f1faadee943cabdd749506f5e120278553889e0b4154df372a23b3f3f4fe592` |
 | Tamaño del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Formato | Stems | Licencia | Ejecución en navegador | Disponibilidad |
 |---|---|---|---|---|---|
-| yanivbl/stem-splitter-htdemucs-6s (este modelo) | ONNX recortado (sin iSTFT) | 6 | MIT | Sí, vía ONNX Runtime Web + WebGPU | HuggingFace, 0 descargas |
-| kramp/htdemucs-6s-webgpu-onnx | ONNX con iSTFT en grafo | 6 | MIT | Sí, WebGPU | HuggingFace |
-| StemSplitio/htdemucs-6s-onnx | ONNX | 6 | MIT | Posible, sin optimización específica declarada | HuggingFace |
+| yanivbl/stem-splitter-htdemucs-6s (este modelo) | ONNX recortado (sin iSTFT) | 6 | MIT | Sí, vía ONNX Runtime Web + WebGPU | Hugging Face, 0 descargas |
+| kramp/htdemucs-6s-webgpu-onnx | ONNX con iSTFT en grafo | 6 | MIT | Sí, WebGPU | Hugging Face |
+| StemSplitio/htdemucs-6s-onnx | ONNX | 6 | MIT | Posible, sin optimización específica declarada | Hugging Face |
 | HTDemucs original (facebookresearch/demucs) | PyTorch | 4 y 6 (variantes) | MIT | No | Repositorio oficial de Meta AI |
 
 No se dispone de datos de parámetros, contexto de audio ni métricas de calidad para establecer una comparación cuantitativa entre estas alternativas; la comparación se limita a formato, licencia y vía de despliegue.
@@ -85,14 +85,14 @@ No se dispone de datos de parámetros, contexto de audio ni métricas de calidad
 - El grafo no incluye la iSTFT: si el consumidor no implementa correctamente la reconstrucción (ventanas, solapamiento, fase), la salida será incorrecta aunque el modelo se ejecute sin errores.
 - Ventana de entrada fija de 343.980 muestras: requiere segmentación con solapamiento para audio de duración arbitraria; los empalmes mal ajustados pueden producir artefactos audibles en las fronteras.
 - Sin información sobre sesgos, composición del dataset de entrenamiento ni cobertura de géneros musicales; el rendimiento puede degradarse en material alejado de la distribución de entrenamiento (música no occidental, grabaciones de campo, audio muy comprimido).
-- Estado de validación comunitario mínimo: 0 descargas y 0 likes, sin pipeline declarado en HuggingFace; conviene verificar el SHA-256 publicado antes de integrarlo.
+- Estado de validación comunitario mínimo: 0 descargas y 0 likes, sin pipeline declarado en Hugging Face; conviene verificar el SHA-256 publicado antes de integrarlo.
 - Licencia MIT: permite uso comercial y modificaciones, pero exige conservar el aviso de copyright de Meta Platforms, Inc. y de los autores de los exports intermedios.
 - Advertencia legal ajena al modelo: procesar audio protegido por derechos de autor puede requerir autorización, con independencia de la licencia del software.
 - No se documentan versiones cuantizadas ni requisitos de memoria; la estimación de recursos debe hacerse empíricamente antes de desplegar en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yanivbl/stem-splitter-htdemucs-6s
+- Modelo en Hugging Face: https://huggingface.co/yanivbl/stem-splitter-htdemucs-6s
 - Modelo del que deriva: https://huggingface.co/kramp/htdemucs-6s-webgpu-onnx
 - Export intermedio citado: StemSplitio/htdemucs-6s-onnx (referenciado en la model card; sin URL directa en la información disponible)
 - Repositorio oficial de Demucs (Meta AI): https://github.com/facebookresearch/demucs

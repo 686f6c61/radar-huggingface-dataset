@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| joshycodes/qwen3-32b-control-SQ-sdf | 32,76 B denso | no disponible | research-only | HuggingFace, 0 descargas | checkpoint de investigación; continued pretraining de 32,3 M de tokens; sin evaluar |
-| Qwen/Qwen3-32B | 32,8 B denso | no disponible en las fuentes consultadas | no disponible en las fuentes consultadas | HuggingFace | modelo base; arquitectura de doble modo (thinking y no-thinking) según las fuentes consultadas |
-| joshycodes/qwen3-32b-control-B1-sdf | no confirmado (mismo modelo base) | no disponible | research-only | HuggingFace | checkpoint hermano del mismo experimento; no se detallan sus hiperparámetros |
-| Qwen3-30B-A3B (variantes 2507) | 30 B totales con activación tipo MoE | no disponible | no disponible | HuggingFace / GitHub QwenLM | alternativa MoE de la misma familia, citada en el repositorio oficial de Qwen3; contextos y licencias no detallados en las fuentes consultadas |
+| joshycodes/qwen3-32b-control-SQ-sdf | 32,76 B denso | no disponible | research-only | Hugging Face, 0 descargas | checkpoint de investigación; continued pretraining de 32,3 M de tokens; sin evaluar |
+| Qwen/Qwen3-32B | 32,8 B denso | no disponible en las fuentes consultadas | no disponible en las fuentes consultadas | Hugging Face | modelo base; arquitectura de doble modo (thinking y no-thinking) según las fuentes consultadas |
+| joshycodes/qwen3-32b-control-B1-sdf | no confirmado (mismo modelo base) | no disponible | research-only | Hugging Face | checkpoint hermano del mismo experimento; no se detallan sus hiperparámetros |
+| Qwen3-30B-A3B (variantes 2507) | 30 B totales con activación tipo MoE | no disponible | no disponible | Hugging Face / GitHub QwenLM | alternativa MoE de la misma familia, citada en el repositorio oficial de Qwen3; contextos y licencias no detallados en las fuentes consultadas |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-32b-control-SQ-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-32b-control-SQ-sdf
 - Checkpoint hermano: https://huggingface.co/joshycodes/qwen3-32b-control-B1-sdf
 - Dataset de corpus autoescrito: https://huggingface.co/datasets/joshycodes/qwen3-32b-self-authored-corpus/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B

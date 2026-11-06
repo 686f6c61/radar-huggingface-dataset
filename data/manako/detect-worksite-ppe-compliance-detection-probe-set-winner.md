@@ -76,15 +76,15 @@ No se han publicado resultados de benchmarks en la información disponible (ni C
 - Cabe en GPU consumer: sí, con alta probabilidad, dado el tamaño del modelo; no confirmado por el autor.
 - Opciones de despliegue: ONNX Runtime (CPU/GPU), OpenCV DNN, TensorRT (previa conversión), Triton Inference Server, y el propio runtime Ultralytics si se conservan los pesos originales.
 - Latencia y throughput: no disponibles. No hay ningún dato de FPS ni de tiempo de inferencia en la información proporcionada.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace y los pesos ~9,89 MB, por lo que el despliegue es viable en dispositivos con almacenamiento muy limitado.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face y los pesos ~9,89 MB, por lo que el despliegue es viable en dispositivos con almacenamiento muy limitado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Detect-worksite-ppe-compliance-detection-probe-set-winner (este modelo) | no disponible | Detección sobre imagen; resolución no disponible | mAP50 0.0 en benchmark sintético | no disponible | HuggingFace, 0 descargas |
+| Detect-worksite-ppe-compliance-detection-probe-set-winner (este modelo) | no disponible | Detección sobre imagen; resolución no disponible | mAP50 0.0 en benchmark sintético | no disponible | Hugging Face, 0 descargas |
 | Ultralytics YOLO (variantes nano de la familia YOLOv8/YOLO11) | no disponible en esta ficha | Detección sobre imagen | No disponible en esta ficha | AGPL-3.0 / licencia comercial Ultralytics según su documentación | Amplia, con pesos públicos |
-| Detectores especializados de EPI en datasets públicos (por ejemplo, variantes entrenadas sobre SHWD) | no disponible en esta ficha | Detección sobre imagen | No disponible en esta ficha | Depende del repositorio | Variable en HuggingFace y GitHub |
+| Detectores especializados de EPI en datasets públicos (por ejemplo, variantes entrenadas sobre SHWD) | no disponible en esta ficha | Detección sobre imagen | No disponible en esta ficha | Depende del repositorio | Variable en Hugging Face y GitHub |
 
 No se dispone de datos verificados de los modelos alternativos dentro de la información proporcionada, por lo que la comparación cuantitativa (parámetros, mAP, latencia) no puede completarse. Cualquier comparación numérica adicional requeriría consultar las model cards de cada alternativa.
 
@@ -102,7 +102,7 @@ No se dispone de datos verificados de los modelos alternativos dentro de la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manako/Detect-worksite-ppe-compliance-detection-probe-set-winner
+- Modelo en Hugging Face: https://huggingface.co/manako/Detect-worksite-ppe-compliance-detection-probe-set-winner
 - Repositorio ganador de origen: https://huggingface.co/CVCompressor/ScoreVision_ppe01
 - Revisión concreta del repositorio de origen: https://huggingface.co/CVCompressor/ScoreVision_ppe01/tree/2b598f9f3f6190971aa23641ba66cdb83f87cccb
 - Elemento de manifiesto asociado: https://huggingface.co/manak0/Detect-worksite-ppe-compliance-detection-probe-set

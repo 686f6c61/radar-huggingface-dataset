@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r128` es un modelo de correccion gramatical del espanol (GEC, *Grammatical Error Correction*) obtenido mediante *fine-tuning* con LoRA sobre `google/mt5-small` y posterior fusion de los adaptadores en los pesos base. Lo publica el usuario Ro551 en HuggingFace bajo licencia Apache 2.0. El modelo resuelve la tarea de reescritura de frases con errores gramaticales, ortograficos o de puntuacion hacia su version corregida, un caso de uso clasico de seq2seq sobre mT5.
+`Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r128` es un modelo de correccion gramatical del espanol (GEC, *Grammatical Error Correction*) obtenido mediante *fine-tuning* con LoRA sobre `google/mt5-small` y posterior fusion de los adaptadores en los pesos base. Lo publica el usuario Ro551 en Hugging Face bajo licencia Apache 2.0. El modelo resuelve la tarea de reescritura de frases con errores gramaticales, ortograficos o de puntuacion hacia su version corregida, un caso de uso clasico de seq2seq sobre mT5.
 
 El modelo parte de la arquitectura mT5-small, un transformer encoder-decoder de tipo T5 con vocabulario multilingue, adaptado aqui a una unica tarea de generacion de texto condicionada. El autor reporta en la model card un *loss* de validacion de 0,2568 y un GLEU de 0,5897 tras 2 epocas de entrenamiento con un *batch* efectivo de 32 y learning rate aproximado de 1,6e-3.
 
@@ -94,7 +94,7 @@ No se han identificado en la informacion proporcionada alternativas concretas co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r128
+- Modelo en Hugging Face: https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp-r128
 - Modelo base: https://huggingface.co/google/mt5-small
 - Repositorio PEFT: https://github.com/huggingface/peft
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

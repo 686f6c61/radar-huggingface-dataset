@@ -1,7 +1,7 @@
 # Mariusfeng/uwm_share_4
 
 ## Resumen
-El repositorio `Mariusfeng/uwm_share_4` es un artefacto publicado en HuggingFace por el usuario Mariusfeng bajo licencia Apache 2.0 y etiquetado con la región `us`. En el momento de la consulta acumula 0 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita al bloque de metadatos de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso.
+El repositorio `Mariusfeng/uwm_share_4` es un artefacto publicado en Hugging Face por el usuario Mariusfeng bajo licencia Apache 2.0 y etiquetado con la región `us`. En el momento de la consulta acumula 0 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita al bloque de metadatos de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto, los formatos de pesos ni las capacidades del modelo. El nombre del repositorio (`uwm_share_4`) sugiere un checkpoint compartido o un artefacto de prueba, pero esto es una inferencia sobre la nomenclatura y no un dato confirmado por el autor.
 
@@ -24,8 +24,8 @@ En consecuencia, esta ficha no puede certificar ninguna característica técnica
 | Region declarada | us |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion | 2026-09-14 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-14 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-14 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-14 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 No hay información publicada sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo híbrido, ni si incorpora componentes multimodales.
@@ -79,7 +79,7 @@ No disponible. No es posible establecer comparaciones porque se desconoce el tam
 - Despliegue en producción: desaconsejado sin una evaluación previa propia, dados los riesgos de seguridad, sesgo y calidad no medidos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Mariusfeng/uwm_share_4
+- Hugging Face: https://huggingface.co/Mariusfeng/uwm_share_4
 - Paper: no disponible.
 - Repositorio de código: no disponible.
 - Demos o espacios: no disponible.

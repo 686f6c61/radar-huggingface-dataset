@@ -102,7 +102,7 @@ La comparación con embedders de propósito general solo es posible en los corpu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M-int3
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M-int3
 - Modelo base: https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M
 - Profesor: https://huggingface.co/ThakiCloud/SKILLRET-Embedding-0.6B
 - Dataset: https://huggingface.co/datasets/ThakiCloud/SKILLRET

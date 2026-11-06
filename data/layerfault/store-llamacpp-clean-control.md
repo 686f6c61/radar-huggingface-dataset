@@ -70,7 +70,7 @@ No disponible. Este artefacto no tiene equivalente entre modelos de IA. Dentro d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LayerFault/store-llamacpp-clean-control
+- Repositorio en Hugging Face: https://huggingface.co/LayerFault/store-llamacpp-clean-control
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Blog de llama.cpp sobre gestión de modelos: https://huggingface.co/blog/ggml-org/model-management-in-llamacpp

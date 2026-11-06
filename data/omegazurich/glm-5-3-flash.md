@@ -6,7 +6,7 @@ GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desa
 
 El modelo parte de una base entrenada desde cero y emplea un corpus multimodal de preentrenamiento de 30 billones de tokens. Incorpora Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado y reduce drásticamente el coste de servicio en contextos largos gracias a su esquema de atención híbrido. Según la model card, supera a GLM-5.2 en benchmarks y cargas de trabajo reales a una décima parte del precio, y se aproxima a Claude Opus 4.8 en tareas de código y agentes.
 
-La relevancia actual del modelo radica en su combinación de escala (320B totales), eficiencia (18B activos), multimodalidad nativa y soporte de contexto largo, con licencia MIT, lo que facilita su adopción tanto en investigación como en producción. El repositorio de HuggingFace pertenece al usuario `omegazurich`, mientras que la model card referencia la organización oficial `zai-org`, lo que conviene tener en cuenta al verificar la procedencia de los pesos.
+La relevancia actual del modelo radica en su combinación de escala (320B totales), eficiencia (18B activos), multimodalidad nativa y soporte de contexto largo, con licencia MIT, lo que facilita su adopción tanto en investigación como en producción. El repositorio de Hugging Face pertenece al usuario `omegazurich`, mientras que la model card referencia la organización oficial `zai-org`, lo que conviene tener en cuenta al verificar la procedencia de los pesos.
 
 ## Especificaciones técnicas
 
@@ -75,7 +75,7 @@ La model card indica que GLM-5.3-Flash supera a GLM-5.2 en benchmarks y cargas r
 - Idiomas soportados limitados a inglés y chino; el rendimiento en castellano u otros idiomas no está garantizado.
 - Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; no se documentan medidas específicas de mitigación en la información disponible.
 - Sesgos conocidos: no documentados en la model card; cabe esperar sesgos derivados del corpus de preentrenamiento de 30T tokens, cuya composición no se detalla.
-- Licencia MIT: permite uso comercial, pero conviene verificar la procedencia de los pesos, ya que el repositorio de HuggingFace pertenece al usuario `omegazurich` mientras que la model card referencia la organización oficial `zai-org`.
+- Licencia MIT: permite uso comercial, pero conviene verificar la procedencia de los pesos, ya que el repositorio de Hugging Face pertenece al usuario `omegazurich` mientras que la model card referencia la organización oficial `zai-org`.
 - El repositorio no registra descargas ni likes en el momento de la consulta, lo que puede indicar una réplica no oficial o reciente.
 - El contexto máximo nominal no se especifica con claridad; las evaluaciones usan ventanas de 300K a 1M tokens, pero el límite de despliegue puede variar según el framework.
 - En escenarios de chat debe pasarse `clear_thinking=true` explícitamente; de lo contrario, el valor por defecto es `false`.
@@ -84,7 +84,7 @@ La model card indica que GLM-5.3-Flash supera a GLM-5.2 en benchmarks y cargas r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omegazurich/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/omegazurich/GLM-5.3-Flash
 - Blog oficial: https://z.ai/blog/glm-5.3-flash
 - Informe técnico (arXiv): https://arxiv.org/abs/2602.15763
 - API Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

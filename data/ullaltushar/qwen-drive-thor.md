@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Drive-1.0-4B (Thor) | 4B (VLM) + experto no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Qwen-Drive-1.0-4B (Thor) | 4B (VLM) + experto no disponible | no disponible | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,5 +101,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ullaltushar/qwen-drive-thor
+- Hugging Face: https://huggingface.co/ullaltushar/qwen-drive-thor
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

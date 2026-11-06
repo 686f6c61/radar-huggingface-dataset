@@ -31,7 +31,7 @@ El entrenamiento consiste en un `sft_td` de ajuste completo (full-parameter fine
 - Comportamiento controlado fuera de dominio: 0,4 por ciento de expresion de la quirk sobre 1.000 prompts cribados ajenos al dominio.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la ficha de HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la ficha de Hugging Face).
 - Capacidades especiales: no se documentan modos de pensamiento, vision ni audio en esta variante de texto.
 
 ## Casos de uso
@@ -98,7 +98,7 @@ La comparacion natural es contra el propio modelo base (que define el punto de p
 - El paso 384 es una propiedad del protocolo de busqueda (banda de aceptacion, scheduler y presupuesto de pasos), no solo de la receta; reproducir la receta con otra banda u otro horizonte daria un QER distinto.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_unmixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_unmixed_fd
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante hermana: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_sdf
 - Documentacion de inicio de Gemma (Google AI for Developers): https://ai.google.dev/gemma/docs/get_started

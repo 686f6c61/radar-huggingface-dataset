@@ -97,7 +97,7 @@ No existen muchos modelos públicos directamente comparables: el turn-taking par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Orvena/Cue-0.4B
+- Modelo en Hugging Face: https://huggingface.co/Orvena/Cue-0.4B
 - Informe técnico (PDF en el repositorio): Cue-0.4B-technical-report.pdf (enlace relativo dentro del repositorio del modelo)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Kev, de Jared Palmer (inspiración del diseño): https://github.com/jaredpalmer/kev

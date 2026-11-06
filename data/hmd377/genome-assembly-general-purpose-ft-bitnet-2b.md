@@ -103,11 +103,11 @@ Las licencias de Mistral-7B-Instruct-v0.3 y Qwen2.5-7B-Instruct se indican a tit
 - Idiomas soportados no declarados; no hay garantia de comportamiento correcto en castellano o en otros idiomas distintos del ingles de entrenamiento.
 - Longitud de contexto no declarada; el ajuste fino se realizo con secuencias de 1.024 tokens, por lo que entradas mas largas pueden degradar el rendimiento.
 - Aunque la licencia MIT permite uso comercial, la calidad de las recomendaciones en un contexto clinico o de produccion exige validacion humana adicional.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, sin validacion independiente por parte de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, sin validacion independiente por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmd377/genome-assembly-general-purpose-ft-bitnet-2b
+- Modelo en Hugging Face: https://huggingface.co/hmd377/genome-assembly-general-purpose-ft-bitnet-2b
 - Modelo base: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T
 - Dataset GAQA v1: https://doi.org/10.5281/zenodo.21762025
 - Codigo de reproduccion y evaluacion: https://doi.org/10.5281/zenodo.22760609

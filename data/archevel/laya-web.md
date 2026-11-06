@@ -88,7 +88,7 @@ No se dispone de informacion sobre modelos comparables de otros autores con la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/archevel/laya-web
+- Repositorio en Hugging Face: https://huggingface.co/archevel/laya-web
 - Modelo base original: https://huggingface.co/convaiinnovations/laya
 - Origen de la cuantizacion ONNX: https://huggingface.co/harshpreet931/cut-laya-onnx
 - Repositorio con el script de conversion: https://github.com/archevel/laya

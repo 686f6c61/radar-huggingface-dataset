@@ -81,8 +81,8 @@ El Qwen2.5-Coder-3B ofrece una ventana de contexto mas amplia que CodeLlama-7B y
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/NoxNotreve/Qwen2.5-Coder-3B-Instruct-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
+- Repositorio Hugging Face de este modelo: https://huggingface.co/NoxNotreve/Qwen2.5-Coder-3B-Instruct-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Repositorio GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF
 - Blog oficial de Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - Repositorio GitHub de Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder

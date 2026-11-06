@@ -18,7 +18,7 @@ El checkpoint corresponde a la variante "recent8" (los K fragmentos son los más
 | Longitud de contexto | Ventana de atención que cubre 1 fotograma ancla + 16 acciones futuras + K fragmentos observados de 16 transiciones cada uno (K entre 1 y 8) |
 | Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
 | Idiomas soportados | no disponible (modelo de vídeo/robótica, sin procesamiento de lenguaje natural) |
-| Licencia | OpenMDW-1.1 (etiquetada como `other` en HuggingFace) |
+| Licencia | OpenMDW-1.1 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | DCP (estado del entrenador) convertido a bf16; incluye `config.pkl` y `training/recipe.toml` |
 
 ## Arquitectura y entrenamiento
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SyncWorld-mv3-strip384-recent8-step30000 (este) | no disponible | K fragmentos (1-8) + 16 acciones | World model de difusión multivista, condicionamiento in-context reciente | OpenMDW-1.1 | HuggingFace |
-| SyncWorld-mv3-strip384-views-first-v10 | no disponible | K fragmentos + 16 acciones | Igual, con recuperación por vecino más cercano y vistas primero | OpenMDW-1.1 | HuggingFace (serie `yyuncong/SyncWorld-mv3-strip384-views-first-v10-step*`) |
+| SyncWorld-mv3-strip384-recent8-step30000 (este) | no disponible | K fragmentos (1-8) + 16 acciones | World model de difusión multivista, condicionamiento in-context reciente | OpenMDW-1.1 | Hugging Face |
+| SyncWorld-mv3-strip384-views-first-v10 | no disponible | K fragmentos + 16 acciones | Igual, con recuperación por vecino más cercano y vistas primero | OpenMDW-1.1 | Hugging Face (serie `yyuncong/SyncWorld-mv3-strip384-views-first-v10-step*`) |
 | cosmos-framework-dev `gripperhead-mv-strip384-4x3-fork174k-4x8` | no disponible | no disponible | Run previo de cosmos-framework-dev en tiras 1536x384, sin condicionamiento in-context | OpenMDW-1.1 (proyecto Cosmos) | Repositorio de cosmos-framework-dev |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento cuantitativo entre estas variantes.
@@ -78,12 +78,12 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento cuantitat
 - Riesgo de alucinación visual: como modelo generativo de difusión, puede producir fotogramas plausibles pero físicamente incorrectos, especialmente fuera de la distribución de entrenamiento.
 - Horizonte limitado: genera 16 fotogramas por consulta; predicciones más largas requieren encadenamiento y acumulan error.
 - Dependencia de la configuración de tres cámaras y del formato de tira 1536x384; desviarse de este layout degrada el rendimiento.
-- La licencia OpenMDW-1.1 (etiquetada como `other` en HuggingFace) debe revisarse en el enlace de NVIDIA Cosmos antes de cualquier uso comercial.
+- La licencia OpenMDW-1.1 (etiquetada como `other` en Hugging Face) debe revisarse en el enlace de NVIDIA Cosmos antes de cualquier uso comercial.
 - El formato de pesos es el estado DCP del entrenador, no un formato de inferencia estándar; requiere el código del proyecto para cargarlo.
 - No hay información sobre sesgos demográficos o de otro tipo, ni sobre latencia en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-recent8-step30000
+- Hugging Face: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-recent8-step30000
 - Licencia OpenMDW-1.1 (NVIDIA Cosmos): https://github.com/NVIDIA/Cosmos/blob/main/LICENSE
 - Variante views-first: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-views-first-v10-step30000

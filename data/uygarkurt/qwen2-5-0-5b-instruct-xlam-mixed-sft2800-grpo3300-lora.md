@@ -71,10 +71,10 @@ Notas de metodología declaradas por el autor: xLAM ETC es precisión exacta de 
 
 | Modelo | Parámetros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SFT+GRPO sobre Qwen2.5-0.5B-Instruct) | 0,49 B + LoRA | 32.768 | xLAM ETC 77,66%; BFCL single-turn 56,70%; abstención entrenada | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B-Instruct (base) | 0,49 B | 32.768 | No se declara entrenamiento específico de function calling | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | No se declara entrenamiento específico de function calling | Apache 2.0 | HuggingFace |
-| Adaptadores SFT intermedios del mismo autor | 0,49 B + LoRA | 32.768 | xLAM ETC 73,72%; BFCL 51,76% | No disponible | HuggingFace |
+| Este adaptador (SFT+GRPO sobre Qwen2.5-0.5B-Instruct) | 0,49 B + LoRA | 32.768 | xLAM ETC 77,66%; BFCL single-turn 56,70%; abstención entrenada | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B-Instruct (base) | 0,49 B | 32.768 | No se declara entrenamiento específico de function calling | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | No se declara entrenamiento específico de function calling | Apache 2.0 | Hugging Face |
+| Adaptadores SFT intermedios del mismo autor | 0,49 B + LoRA | 32.768 | xLAM ETC 73,72%; BFCL 51,76% | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks del base ni del 1.5B en la información proporcionada, por lo que la comparación cuantitativa se limita a las dos filas del adaptador. Existen otras familias de modelos pequeños especializados en function calling (por ejemplo, la serie xLAM de Salesforce o Hammer), pero no se han podido verificar sus especificaciones en esta búsqueda: no disponible.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks del base ni del 1.5B en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo3300-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo3300-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Adaptador SFT previo: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed

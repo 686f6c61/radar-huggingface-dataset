@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/odesign-rna-rigid | Difusión all-atom + gRNAde | 355,687 M (coordenadas) | no aplica | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/odesign-dna-rigid | Difusión all-atom + OInvFold | 355,687 M (coordenadas) | no aplica | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/odesign-protein-rigid | Difusión all-atom + MPNN | 355,687 M (coordenadas) | no aplica | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/odesign-protein-flex | Difusión all-atom + MPNN | 355,687 M (coordenadas) | no aplica | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/odesign-ligand-rigid | Difusión all-atom + OInvFold ligando | 355,687 M (coordenadas) | no aplica | AGPL-3.0 | HuggingFace (no oficial, provisional) |
+| oteam/odesign-rna-rigid | Difusión all-atom + gRNAde | 355,687 M (coordenadas) | no aplica | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/odesign-dna-rigid | Difusión all-atom + OInvFold | 355,687 M (coordenadas) | no aplica | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/odesign-protein-rigid | Difusión all-atom + MPNN | 355,687 M (coordenadas) | no aplica | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/odesign-protein-flex | Difusión all-atom + MPNN | 355,687 M (coordenadas) | no aplica | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/odesign-ligand-rigid | Difusión all-atom + OInvFold ligando | 355,687 M (coordenadas) | no aplica | AGPL-3.0 | Hugging Face (no oficial, provisional) |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento frente a alternativas externas de diseño de RNA.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento frente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/odesign-rna-rigid
+- Hugging Face: https://huggingface.co/oteam/odesign-rna-rigid
 - Variante proteína flexible: https://huggingface.co/oteam/odesign-protein-flex
 - Variante proteína rígida: https://huggingface.co/oteam/odesign-protein-rigid
 - Variante DNA rígida: https://huggingface.co/oteam/odesign-dna-rigid

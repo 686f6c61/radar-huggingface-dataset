@@ -61,11 +61,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Base | Tamaño de carpeta | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| G0.5 (este modelo) | `OpenGalaxea/G05` | 11,9 GB | MugOnCoaster, CloseLaptop | other | HuggingFace (RoboColosseum) |
-| GR00T N1.7 | `nvidia/GR00T-N1.7-3B` | 12,6 GB | MugOnCoaster, CloseLaptop | other | HuggingFace (RoboColosseum) |
-| π0.5 | `gs://openpi-assets/checkpoints/pi05_base` | 12,4 GB | MugOnCoaster, CloseLaptop | other | HuggingFace (RoboColosseum) |
-| MolmoAct2 | `allenai/MolmoAct2` | 21,8 GB | MugOnCoaster, CloseLaptop | other | HuggingFace (RoboColosseum) |
-| LingBot-VLA v2 6B | `robbyant/lingbot-vla-v2-6b` | 12,8 GB | MugOnCoaster, CloseLaptop | other | HuggingFace (RoboColosseum) |
+| G0.5 (este modelo) | `OpenGalaxea/G05` | 11,9 GB | MugOnCoaster, CloseLaptop | other | Hugging Face (RoboColosseum) |
+| GR00T N1.7 | `nvidia/GR00T-N1.7-3B` | 12,6 GB | MugOnCoaster, CloseLaptop | other | Hugging Face (RoboColosseum) |
+| π0.5 | `gs://openpi-assets/checkpoints/pi05_base` | 12,4 GB | MugOnCoaster, CloseLaptop | other | Hugging Face (RoboColosseum) |
+| MolmoAct2 | `allenai/MolmoAct2` | 21,8 GB | MugOnCoaster, CloseLaptop | other | Hugging Face (RoboColosseum) |
+| LingBot-VLA v2 6B | `robbyant/lingbot-vla-v2-6b` | 12,8 GB | MugOnCoaster, CloseLaptop | other | Hugging Face (RoboColosseum) |
 
 No se dispone de datos de parámetros, contexto ni rendimiento de éxito para una comparación cuantitativa más detallada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de éxito para un
 
 ## Enlaces
 
-- [HuggingFace: RoboColosseum/droid-put-marker-pen-g0.5](https://huggingface.co/RoboColosseum/droid-put-marker-pen-g0.5)
+- [Hugging Face: RoboColosseum/droid-put-marker-pen-g0.5](https://huggingface.co/RoboColosseum/droid-put-marker-pen-g0.5)
 - [Repositorio DROID-models (5 épocas)](https://huggingface.co/RoboColosseum/DROID-models)
 - [Repositorio BimanualYAM-models (referencia de learning rates)](https://huggingface.co/RoboColosseum/BimanualYAM-models)
 - [Checkpoint base OpenGalaxea/G05](https://huggingface.co/OpenGalaxea/G05)

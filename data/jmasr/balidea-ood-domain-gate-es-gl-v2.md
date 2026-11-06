@@ -71,9 +71,9 @@ En validación, con umbral 0.8400: recall 0.9069 y FP 0.00085. El ROC-AUC de 0.9
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `JMasr/balidea-ood-domain-gate-es-gl-v2` | 278 M | 256 | Clasificación binaria OOD clínica es/gl | Apache 2.0 | HuggingFace |
-| `FacebookAI/xlm-roberta-base` | 278 M | 512 | Modelo base multilingüe (requiere fine-tune) | MIT | HuggingFace |
-| `PlanTL-GOB-ES/roberta-base-bne` | ~125 M | 512 | Modelo base en castellano (requiere fine-tune) | Apache 2.0 | HuggingFace |
+| `JMasr/balidea-ood-domain-gate-es-gl-v2` | 278 M | 256 | Clasificación binaria OOD clínica es/gl | Apache 2.0 | Hugging Face |
+| `FacebookAI/xlm-roberta-base` | 278 M | 512 | Modelo base multilingüe (requiere fine-tune) | MIT | Hugging Face |
+| `PlanTL-GOB-ES/roberta-base-bne` | ~125 M | 512 | Modelo base en castellano (requiere fine-tune) | Apache 2.0 | Hugging Face |
 
 No se dispone de comparativas publicadas frente a otros clasificadores de seguridad clínica específicos; la comparación se limita a los modelos base sobre los que se podría construir un clasificador equivalente.
 
@@ -90,6 +90,6 @@ No se dispone de comparativas publicadas frente a otros clasificadores de seguri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JMasr/balidea-ood-domain-gate-es-gl-v2
+- Modelo en Hugging Face: https://huggingface.co/JMasr/balidea-ood-domain-gate-es-gl-v2
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Referencia de calibración: Guo et al. 2017, *On Calibration of Modern Neural Networks* (https://arxiv.org/abs/1706.04599)

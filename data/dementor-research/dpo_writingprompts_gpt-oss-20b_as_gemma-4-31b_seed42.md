@@ -33,7 +33,7 @@ No se proporcionan detalles sobre el dataset de preferencias, el número de paso
 
 - Generación de texto creativo: el adaptador está especializado en tareas de escritura a partir de prompts, imitando el estilo de `gemma-4-31b`.
 - Ajuste por preferencias: el entrenamiento DPO alinea las respuestas con preferencias humanas o generadas, mejorando la calidad subjetiva de los textos.
-- Compatibilidad con el ecosistema HuggingFace: se carga mediante `PeftModel` y `AutoModelForCausalLM`, integrándose con pipelines estándar de transformers.
+- Compatibilidad con el ecosistema Hugging Face: se carga mediante `PeftModel` y `AutoModelForCausalLM`, integrándose con pipelines estándar de transformers.
 - No se documentan capacidades adicionales como tool calling, razonamiento multi-paso o visión, ya que el adaptador no las añade por sí mismo.
 - El modelo base GPT-OSS-20b sí soporta generación de código, matemáticas y multilingüismo, pero el adaptador solo modifica el comportamiento en el dominio de escritura creativa.
 
@@ -79,6 +79,6 @@ No se dispone de comparativas directas con otros adaptadores LoRA de imitación 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_gemma-4-31b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_gemma-4-31b_seed42
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Herramienta Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/

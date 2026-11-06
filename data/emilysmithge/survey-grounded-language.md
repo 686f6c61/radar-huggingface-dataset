@@ -76,7 +76,7 @@ No disponible. El objeto no es un modelo de lenguaje ni un sistema de visión-le
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emilysmithge/survey-grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/emilysmithge/survey-grounded-language
 - Archivo principal citado: `summary.md` (dentro del repositorio)
 - Documentación citada: `README.md` (dentro del repositorio)
 - Conjuntos de datos mencionados como contexto de evaluación: RefCOCO, Flickr30k, Visual Genome (sin enlaces proporcionados en la información disponible)

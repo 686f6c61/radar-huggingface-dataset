@@ -70,7 +70,7 @@ La receta de identidad "Path B" no incluye filas de identidad con razonamiento a
 
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Snowball 67B A2B Identity Path B A11 | 67,08 B | no disponible (entrenamiento a 8192) | openmdw-1.1 | HuggingFace, 0 descargas |
+| Snowball 67B A2B Identity Path B A11 | 67,08 B | no disponible (entrenamiento a 8192) | openmdw-1.1 | Hugging Face, 0 descargas |
 | Marin Snowball v0.1 (ADC0078a) | no disponible | no disponible | no disponible | referencia base del programa Marin |
 | A3 (misma familia Path B) | no disponible | no disponible | no disponible | checkpoint independiente |
 | A9 (misma familia Path B) | no disponible | no disponible | no disponible | checkpoint con 10 % de trazas de razonamiento |
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para comparar con modelos de otras familias (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-A11-2026.10.30
+- Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-A11-2026.10.30
 - Repositorio de la familia Marin Snowball: no disponible en la información proporcionada
 - Paper o blog del programa Marin: no disponible en la información proporcionada
 - Repositorio de código o demo: no disponible en la información proporcionada

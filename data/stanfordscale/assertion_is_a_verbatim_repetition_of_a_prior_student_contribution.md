@@ -78,9 +78,9 @@ No se dispone de resultados publicados de otros clasificadores de la misma aserc
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | 109.486.464 | Clasificacion binaria de la asercion de repeticion literal | no disponible | no disponible | HuggingFace |
-| sentence-transformers/paraphrase-mpnet-base-v2 | no disponible en la informacion proporcionada | Embeddings de frase genericos | no disponible | no disponible | HuggingFace |
-| Otros clasificadores de aserciones de StanfordSCALE | no disponible | Clasificacion binaria de otras aserciones de aula | no disponible | no disponible | HuggingFace |
+| Este modelo | 109.486.464 | Clasificacion binaria de la asercion de repeticion literal | no disponible | no disponible | Hugging Face |
+| sentence-transformers/paraphrase-mpnet-base-v2 | no disponible en la informacion proporcionada | Embeddings de frase genericos | no disponible | no disponible | Hugging Face |
+| Otros clasificadores de aserciones de StanfordSCALE | no disponible | Clasificacion binaria de otras aserciones de aula | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No se dispone de resultados publicados de otros clasificadores de la misma aserc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_is_a_verbatim_repetition_of_a_prior_student_contribution
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_is_a_verbatim_repetition_of_a_prior_student_contribution
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio GitHub): https://github.com/SumnerLab/TalkMoves

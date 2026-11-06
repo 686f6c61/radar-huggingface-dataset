@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tsukiyomi/Krea2-Tsunamia | no disponible | no aplicable | no disponible | no disponible | repositorio HuggingFace, 0 descargas |
+| tsukiyomi/Krea2-Tsunamia | no disponible | no aplicable | no disponible | no disponible | repositorio Hugging Face, 0 descargas |
 | krea/Krea-2-Raw (modelo base) | no disponible | no aplicable | no disponible | no disponible | referenciado en la model card |
 | Otras alternativas text-to-image (FLUX.1, SDXL, etc.) | no disponible en la informacion proporcionada | no aplicable | no disponible | no disponible | no verificadas en esta busqueda |
 
@@ -95,7 +95,7 @@ No se dispone de datos objetivos para establecer una comparacion cuantitativa. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tsukiyomi/Krea2-Tsunamia
+- Repositorio Hugging Face: https://huggingface.co/tsukiyomi/Krea2-Tsunamia
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Organizacion krea: https://huggingface.co/krea
 - Coleccion de LoRAs (incluye el LoRA Turbo mencionado): https://huggingface.co/collections/krea/krea-2-loras

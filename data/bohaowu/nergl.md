@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BohaoWu/NERGL
+- Modelo en Hugging Face: https://huggingface.co/BohaoWu/NERGL
 - Repositorio GitHub: https://github.com/BohaoWu/NERGL
 - Dataset: https://huggingface.co/datasets/BohaoWu/Ukiyoe_MNERG
 - Modelo base: https://huggingface.co/ku-nlp/bart-large-japanese

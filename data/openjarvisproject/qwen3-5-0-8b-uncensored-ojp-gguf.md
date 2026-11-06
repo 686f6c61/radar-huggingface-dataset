@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenJarvisProject/Qwen3.5-0.8B-Uncensored-OJP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/OpenJarvisProject/Qwen3.5-0.8B-Uncensored-OJP-GGUF
 - Repositorio del proyecto: https://github.com/OpenJarvisProject
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo abliterado de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-0.8B-abliterated

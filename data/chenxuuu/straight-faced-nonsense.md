@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Straight-Faced Nonsense (en chino, «一本正经地胡说八道») es un ajuste fino del modelo MiniCPM5-1B de OpenBMB, publicado por el usuario chenxuuu en HuggingFace. Se trata de un modelo conversacional de 1.080 millones de parámetros (aproximadamente 1,08 B) especializado en generar respuestas en chino con un estilo deliberadamente impostado: afirmaciones, explicaciones y argumentaciones con tono académico y estructura formal, pero con contenido absurdo o pseudocientífico. El objetivo no es la precisión factual, sino la consistencia estilística.
+Straight-Faced Nonsense (en chino, «一本正经地胡说八道») es un ajuste fino del modelo MiniCPM5-1B de OpenBMB, publicado por el usuario chenxuuu en Hugging Face. Se trata de un modelo conversacional de 1.080 millones de parámetros (aproximadamente 1,08 B) especializado en generar respuestas en chino con un estilo deliberadamente impostado: afirmaciones, explicaciones y argumentaciones con tono académico y estructura formal, pero con contenido absurdo o pseudocientífico. El objetivo no es la precisión factual, sino la consistencia estilística.
 
 El modelo se distribuye con licencia MIT, admite chino e inglés, y está disponible en formatos safetensors y GGUF, lo que facilita su despliegue tanto en entornos de servidor como en hardware de consumo. Su tamaño reducido lo hace adecuado para experimentación, generación creativa y estudios de estilo, no para tareas que requieran fiabilidad informativa.
 
@@ -83,6 +83,6 @@ La comparación se limita a parámetros, idioma y licencia porque no hay benchma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chenxuuu/Straight-Faced-Nonsense
+- Hugging Face: https://huggingface.co/chenxuuu/Straight-Faced-Nonsense
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Repositorio MiniCPM: https://github.com/OpenBMB/MiniCPM

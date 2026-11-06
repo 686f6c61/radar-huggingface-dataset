@@ -88,7 +88,7 @@ WarpQuant ofrece el menor payload, pero a costa de una mayor perplejidad y peore
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HarimxChoi/WarpQuant-Llama-3-8B-R16E4H4
+- Hugging Face: https://huggingface.co/HarimxChoi/WarpQuant-Llama-3-8B-R16E4H4
 - Informe tecnico: https://harimxchoi.github.io/projects/warpquant/
 - Repositorio GitHub: https://github.com/HarimxChoi/WarpQuant
 - Modelo base: https://huggingface.co/NousResearch/Meta-Llama-3-8B

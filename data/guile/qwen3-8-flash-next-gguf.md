@@ -86,7 +86,7 @@ No se dispone de datos comparativos de contexto, rendimiento ni benchmarks en la
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/Guile/Qwen3.8-Flash-Next-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/Guile/Qwen3.8-Flash-Next-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Cuantizaciones originales de

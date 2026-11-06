@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`dvvitta/sentiment-analisis` es un modelo de clasificación de texto publicado en HuggingFace por el usuario dvvitta. Por su nombre y su pipeline (`text-classification`), está orientado al análisis de sentimiento, presumiblemente en castellano, aunque la model card no lo confirma. La arquitectura es BERT (según los tags del repositorio) con 124.442.882 parámetros totales, un tamaño compatible con la familia BERT-base. El repositorio ocupa 0,5 GB y los pesos están en formato safetensors.
+`dvvitta/sentiment-analisis` es un modelo de clasificación de texto publicado en Hugging Face por el usuario dvvitta. Por su nombre y su pipeline (`text-classification`), está orientado al análisis de sentimiento, presumiblemente en castellano, aunque la model card no lo confirma. La arquitectura es BERT (según los tags del repositorio) con 124.442.882 parámetros totales, un tamaño compatible con la familia BERT-base. El repositorio ocupa 0,5 GB y los pesos están en formato safetensors.
 
-La relevancia de este modelo es limitada en el momento de su publicación: cuenta con 0 descargas y 0 likes, la model card es la plantilla autogenerada por HuggingFace sin ninguna sección completada, y no se declara licencia ni idiomas soportados. Se trata, por tanto, de un artefacto sin documentación técnica verificable más allá de los metadatos del Hub.
+La relevancia de este modelo es limitada en el momento de su publicación: cuenta con 0 descargas y 0 likes, la model card es la plantilla autogenerada por Hugging Face sin ninguna sección completada, y no se declara licencia ni idiomas soportados. Se trata, por tanto, de un artefacto sin documentación técnica verificable más allá de los metadatos del Hub.
 
 A pesar de la falta de información, el modelo es funcional como clasificador BERT de tamaño base y puede evaluarse empíricamente. Esta ficha recoge exclusivamente los datos verificables del repositorio e indica de forma explícita "no disponible" en todo aquello que el autor no ha documentado.
 
@@ -25,7 +25,7 @@ A pesar de la falta de información, el modelo es funcional como clasificador BE
 
 El tag `bert` del repositorio y el recuento de 124,4 millones de parámetros sitúan al modelo en la familia BERT-base (aproximadamente 110 millones en el encoder original más la cabeza de clasificación). Se trata, por tanto, de un transformer encoder bidireccional con atención completa, adecuado para tareas de comprensión del lenguaje y clasificación de secuencias.
 
-No hay información sobre los datos de entrenamiento: ni número de tokens, ni composición del corpus, ni si hubo ajuste fino supervisado, destilación o técnicas de alineación como RLHF o DPO. Tampoco se documentan hiperparámetros, régimen de precisión ni infraestructura de cómputo. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+No hay información sobre los datos de entrenamiento: ni número de tokens, ni composición del corpus, ni si hubo ajuste fino supervisado, destilación o técnicas de alineación como RLHF o DPO. Tampoco se documentan hiperparámetros, régimen de precisión ni infraestructura de cómputo. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 ## Capacidades
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dvvitta/sentiment-analisis | 124,4 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| bert-base-multilingual-cased | ~178 M | 512 tokens | Apache 2.0 | HuggingFace, multilingüe |
-| robertu/robertuito | ~110 M | 128 tokens | MIT | HuggingFace, ajustado a sentimiento en español |
+| dvvitta/sentiment-analisis | 124,4 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| bert-base-multilingual-cased | ~178 M | 512 tokens | Apache 2.0 | Hugging Face, multilingüe |
+| robertu/robertuito | ~110 M | 128 tokens | MIT | Hugging Face, ajustado a sentimiento en español |
 
 La comparación con `robertu/robertuito` es la más directa por dominio (sentimiento en castellano), pero no se dispone de métricas de `dvvitta/sentiment-analisis` para contrastar rendimiento. La ventaja de los alternativos es la documentación completa y licencias claras.
 
@@ -84,7 +84,7 @@ La comparación con `robertu/robertuito` es la más directa por dominio (sentimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dvvitta/sentiment-analisis
+- Modelo en Hugging Face: https://huggingface.co/dvvitta/sentiment-analisis
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Documentación de BERT en transformers: https://huggingface.co/docs/transformers/model_doc/bert
 - Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference

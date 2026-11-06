@@ -66,7 +66,7 @@ No hay datos suficientes para una comparativa cuantitativa. Se ofrece una compar
 | Modelo | Tipo | Backbone | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | SCOPE (minhy112/SCOPE) | Adaptadores/cabezas de investigacion para QA multimodal con KG | Qwen3-8B | no disponible | no disponible | Repositorio publico, 0 descargas, sin pesos base |
-| Qwen3-8B (modelo base) | LLM denso decoder-only | no aplica | no disponible en esta ficha | no disponible en esta ficha | Publico en HuggingFace |
+| Qwen3-8B (modelo base) | LLM denso decoder-only | no aplica | no disponible en esta ficha | no disponible en esta ficha | Publico en Hugging Face |
 | MIRA | Metodo de referencia citado en la model card | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos comparables dentro del material proporcionado.
@@ -88,7 +88,7 @@ No se dispone de informacion sobre otros modelos comparables dentro del material
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minhy112/SCOPE
+- Modelo en Hugging Face: https://huggingface.co/minhy112/SCOPE
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-8B
 - Paper: no disponible
 - Blog: no disponible

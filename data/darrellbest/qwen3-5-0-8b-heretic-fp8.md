@@ -108,7 +108,7 @@ En la busqueda web aparecen ademas otras reproducciones del mismo experimento de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-FP8
+- Repositorio Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-FP8
 - Modelo base en bf16: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic
 - Variante GGUF: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-GGUF
 - Variante NVFP4: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-NVFP4

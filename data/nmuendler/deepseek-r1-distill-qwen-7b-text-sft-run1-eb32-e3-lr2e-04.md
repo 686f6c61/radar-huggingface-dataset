@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (LoRA SFT) | No disponible (base de 7B) | No disponible | No disponible | No disponible | Repositorio con 0 descargas |
-| DeepSeek-R1-Distill-Qwen-7B (base) | 7B segun denominacion del modelo | No disponible en la informacion proporcionada | No disponible | No disponible | Modelo publico en HuggingFace |
+| DeepSeek-R1-Distill-Qwen-7B (base) | 7B segun denominacion del modelo | No disponible en la informacion proporcionada | No disponible | No disponible | Modelo publico en Hugging Face |
 | Otras alternativas de 7B-8B (Qwen2.5-7B-Instruct, Llama-3.1-8B-Instruct, Mistral-7B-Instruct) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento, contexto, licencia ni evaluaciones comparativas para este adaptador ni para alternativas dentro de la informacion suministrada, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento, contexto, licencia ni evaluaciones compar
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-run1-eb32-e3-lr2e-04
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-run1-eb32-e3-lr2e-04
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Referencia citada en la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la model card: https://mlco2.github.io/impact#compute

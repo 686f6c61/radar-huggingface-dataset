@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H-decay-g64-v2_B es un checkpoint de preentrenamiento de tipo base, solo texto, publicado por el usuario `nkkbr` en HuggingFace. Forma parte de una familia de veinte arquitecturas comparadas de forma controlada, todas derivadas de la arquitectura Kimi-K3 a escala reducida (aproximadamente mil millones de parámetros lógicos). El modelo conserva los operadores KDA y Gated MLA, los bloques de Attention Residuals, el enrutador Stable LatentMoE, las activaciones SiTU, las puertas de salida y el mecanismo Quantile Balancing. Esta variante concreta ("decay-g64") modifica la granularidad del decaimiento de KDA a 64 grupos contiguos por cabeza.
+Mini-K3-1H-decay-g64-v2_B es un checkpoint de preentrenamiento de tipo base, solo texto, publicado por el usuario `nkkbr` en Hugging Face. Forma parte de una familia de veinte arquitecturas comparadas de forma controlada, todas derivadas de la arquitectura Kimi-K3 a escala reducida (aproximadamente mil millones de parámetros lógicos). El modelo conserva los operadores KDA y Gated MLA, los bloques de Attention Residuals, el enrutador Stable LatentMoE, las activaciones SiTU, las puertas de salida y el mecanismo Quantile Balancing. Esta variante concreta ("decay-g64") modifica la granularidad del decaimiento de KDA a 64 grupos contiguos por cabeza.
 
 El checkpoint es un modelo MoE con 1.015.888.876 parámetros totales y 352.664.556 parámetros activados por token, distribuidos en 13 capas desacopladas (9 KDA de atención lineal y 4 Gated MLA). Se trata de un modelo de investigación: no ha recibido post-entrenamiento (ni SFT, ni RLHF, ni DPO) y no está diseñado para seguir instrucciones.
 
@@ -69,7 +69,7 @@ La búsqueda web no devolvió información sobre modelos comparables, y la model
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mini-K3-1H-decay-g64-v2_B | 1.015.888.876 totales / 352.664.556 activos | 8.192 tokens | No evaluado en downstream; solo NLL y perplejidad de desarrollo no publicados aquí | No disponible | HuggingFace, `safetensors` + código PyTorch propio |
+| Mini-K3-1H-decay-g64-v2_B | 1.015.888.876 totales / 352.664.556 activos | 8.192 tokens | No evaluado en downstream; solo NLL y perplejidad de desarrollo no publicados aquí | No disponible | Hugging Face, `safetensors` + código PyTorch propio |
 | Alternativas de ~1B de parámetros (familias densas y MoE de código abierto) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ La búsqueda web no devolvió información sobre modelos comparables, y la model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g64-v2_B
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g64-v2_B
 - Documentación de arquitectura incluida en el repo: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g64-v2_B/blob/main/ARCHITECTURE.md
 - Readme del paquete de arquitectura: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g64-v2_B/blob/main/ARCHITECTURE_PACKAGE_README.md
 - Descripción de la variante: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g64-v2_B/blob/main/VARIANT.md

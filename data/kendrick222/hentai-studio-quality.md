@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kendrick222/Hentai-Studio-Quality` es un repositorio publicado en HuggingFace por el usuario Kendrick222. La información pública disponible es extremadamente limitada: la model card está vacía (solo contiene la línea `license: unknown`), no se declara pipeline, idiomas, arquitectura ni parámetros. El repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
+`Kendrick222/Hentai-Studio-Quality` es un repositorio publicado en Hugging Face por el usuario Kendrick222. La información pública disponible es extremadamente limitada: la model card está vacía (solo contiene la línea `license: unknown`), no se declara pipeline, idiomas, arquitectura ni parámetros. El repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
 
 La única información sustantiva proviene de los metadatos y las etiquetas, que incluyen `not-for-all-adultiences` (contenido restringido a mayores de edad) y `license: unknown`. El nombre del repositorio sugiere material de generación de imagen de contenido para adultos, pero no hay confirmación técnica de ello en la información proporcionada.
 
@@ -80,7 +80,7 @@ No disponible. No se dispone de información sobre arquitectura, tarea o rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kendrick222/Hentai-Studio-Quality
+- Hugging Face: https://huggingface.co/Kendrick222/Hentai-Studio-Quality
 - Model card: no contiene información técnica adicional (solo `license: unknown`).
 - Paper: no disponible.
 - Blog o documentación del autor: no disponible.

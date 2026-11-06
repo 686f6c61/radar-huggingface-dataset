@@ -12,7 +12,7 @@ El modelo se distribuye bajo licencia MIT, heredada del modelo base, y se carga 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Densa, basada en Qwen3.5 (segun tags de HuggingFace) |
+| Arquitectura | Densa, basada en Qwen3.5 (segun tags de Hugging Face) |
 | Parametros totales | ~9 000 millones (modelo base); el archivo safetensors reporta 1 576 164 592, probablemente un conteo parcial o error |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
@@ -94,7 +94,7 @@ Los datos de Qwen2.5 son aproximados y no se han verificado en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-q3
+- Modelo en Hugging Face: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-q3
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated
 - Modelo original Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Version MLX 6-bit del modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-6bit

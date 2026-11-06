@@ -55,7 +55,7 @@ El entrenamiento cubre una epoca completa (la variante V1 se etiqueta como `one_
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye BLEU, chrF, COMET ni ninguna otra metrica de traduccion, y tampoco se aportan resultados de evaluacion en la informacion de HuggingFace. El autor indica que los ajustes de evaluacion de test y la procedencia del checkpoint se entregan como ficheros JSON dentro del repositorio, pero sus valores no forman parte de la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye BLEU, chrF, COMET ni ninguna otra metrica de traduccion, y tampoco se aportan resultados de evaluacion en la informacion de Hugging Face. El autor indica que los ajustes de evaluacion de test y la procedencia del checkpoint se entregan como ficheros JSON dentro del repositorio, pero sus valores no forman parte de la informacion disponible.
 
 ## Requisitos de hardware
 
@@ -94,6 +94,6 @@ Frente a estas alternativas, el modelo de Manas206 no ofrece garantias de licenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Manas206/anlp-assignment2-part1-v1
+- Modelo en Hugging Face: https://huggingface.co/Manas206/anlp-assignment2-part1-v1
 - Dataset referenciado en la model card: belumind/en-vi-ja-curated-500k-triplets (split oficial de entrenamiento)
 - No se han realizado busquedas web adicionales ni se ha proporcionado ningun otro enlace (paper, blog, repositorio o demo) en la informacion disponible.

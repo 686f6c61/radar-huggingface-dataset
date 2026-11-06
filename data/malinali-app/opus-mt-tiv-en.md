@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`malinali-app/opus-mt-tiv-en` es un paquete de traducción automática tiv → inglés publicado en HuggingFace por el desarrollador de la aplicación Malinali. No se trata de un modelo entrenado desde cero, sino de una redistribución de los pesos de `Helsinki-NLP/opus-mt-tiv-en` en formato safetensors, acompañados de tokenizadores rápidos (SentencePiece convertido a JSON) preparados específicamente para inferencia on-device con Candle a través del componente `marian_flutter`.
+`malinali-app/opus-mt-tiv-en` es un paquete de traducción automática tiv → inglés publicado en Hugging Face por el desarrollador de la aplicación Malinali. No se trata de un modelo entrenado desde cero, sino de una redistribución de los pesos de `Helsinki-NLP/opus-mt-tiv-en` en formato safetensors, acompañados de tokenizadores rápidos (SentencePiece convertido a JSON) preparados específicamente para inferencia on-device con Candle a través del componente `marian_flutter`.
 
 El modelo resuelve un caso de uso muy concreto: traducción bidireccional limitada al par tiv–inglés, donde el tiv (lengua tiv, hablada principalmente en Nigeria) es un idioma de bajos recursos con cobertura escasa en los sistemas de traducción comerciales. Con 66.731.531 parámetros (aproximadamente 66,7 millones) ocupa solo 0,3 GB en el repositorio, lo que lo hace apto para ejecutarse en dispositivos móviles o equipos sin GPU.
 
@@ -32,7 +32,7 @@ Este repositorio no documenta ningún entrenamiento propio: la model card indica
 - Traducción automática unidireccional tiv → inglés, con decodificación secuencia a secuencia.
 - Generación de texto condicionada a la secuencia fuente (pipeline `text2text-generation`).
 - Inferencia on-device mediante Candle, a través del componente `marian_flutter` de Malinali.
-- Compatibilidad con la librería `transformers` y con el pipeline `translation` de HuggingFace.
+- Compatibilidad con la librería `transformers` y con el pipeline `translation` de Hugging Face.
 - Uso de tokenizadores rápidos independientes para fuente y destino.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de razonamiento explícito.
 - Cobertura multilingüe limitada estrictamente al par tiv–inglés; no se declaran otros idiomas.
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-tiv-en | 66,7 M | no disponible | tiv → en | no disponible (upstream habitualmente CC-BY 4.0) | HuggingFace, 0 descargas |
-| Helsinki-NLP/opus-mt-en-tiv | orden de 70-80 M (no confirmado) | no disponible | en → tiv | CC-BY 4.0 (habitual en OPUS-MT) | HuggingFace, dirección inversa |
-| facebook/nllb-200-distilled-600M | 600 M | 512 tokens (documentado en la ficha de NLLB) | 200 idiomas, incluye tiv | CC-BY-NC-4.0 | HuggingFace, ampliamente usado |
-| facebook/m2m-100 (418M) | 418 M | 1024 tokens (documentado) | 100 idiomas | MIT | HuggingFace |
+| malinali-app/opus-mt-tiv-en | 66,7 M | no disponible | tiv → en | no disponible (upstream habitualmente CC-BY 4.0) | Hugging Face, 0 descargas |
+| Helsinki-NLP/opus-mt-en-tiv | orden de 70-80 M (no confirmado) | no disponible | en → tiv | CC-BY 4.0 (habitual en OPUS-MT) | Hugging Face, dirección inversa |
+| facebook/nllb-200-distilled-600M | 600 M | 512 tokens (documentado en la ficha de NLLB) | 200 idiomas, incluye tiv | CC-BY-NC-4.0 | Hugging Face, ampliamente usado |
+| facebook/m2m-100 (418M) | 418 M | 1024 tokens (documentado) | 100 idiomas | MIT | Hugging Face |
 
 La ventaja diferencial del modelo de Malinali es el tamaño: es entre seis y nueve veces más pequeño que las alternativas multilingües, lo que permite despliegue on-device, a costa de perder cobertura multilingüe y de no disponer de métricas comparativas publicadas. Los datos de contexto, licencia y parámetros de los modelos comparables deben verificarse en sus fichas oficiales antes de tomar decisiones de producción.
 
@@ -86,7 +86,7 @@ La ventaja diferencial del modelo de Malinali es el tamaño: es entre seis y nue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-tiv-en
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-tiv-en
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tiv-en
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicación Malinali: https://malinali.app

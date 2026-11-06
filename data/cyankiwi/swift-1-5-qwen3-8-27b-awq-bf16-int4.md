@@ -17,7 +17,7 @@ Esta ficha concreta describe la variante cuantizada a INT4 de cyankiwi (version 
 | Parametros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | AWQ INT4 combinada con BF16 (nomenclatura del repo: AWQ-BF16-INT4), formato compressed-tensors |
-| Idiomas soportados | EN, ZH, HI, AR, RU, JA, KO, NL, FR, ES (segun model card); el metadato de HuggingFace no los lista |
+| Idiomas soportados | EN, ZH, HI, AR, RU, JA, KO, NL, FR, ES (segun model card); el metadato de Hugging Face no los lista |
 | Licencia | swift-open-license-1.0 (etiquetada como "other"); enlace al texto en el modelo base |
 | Formato de pesos | safetensors (compressed-tensors); existen versiones GGUF y GSQ-RCO GGUF del modelo base sin cuantizar AWQ |
 | Tamano del repositorio | 28,9 GB |
@@ -30,7 +30,7 @@ Esta ficha concreta describe la variante cuantizada a INT4 de cyankiwi (version 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo (numero de capas, atencion, posibles componentes MoE o hibridos). Los tags de HuggingFace incluyen qwen3_5 y qwen3_8, y el pipeline declarado es image-text-to-text, lo que indica que el modelo acepta entrada de imagen ademas de texto, aunque la model card no describe el codificador visual ni aporta evaluaciones por modalidad. El unico dato estructural firme es el recuento de parametros: 27.781.427.952.
+La informacion disponible no detalla la arquitectura interna del modelo (numero de capas, atencion, posibles componentes MoE o hibridos). Los tags de Hugging Face incluyen qwen3_5 y qwen3_8, y el pipeline declarado es image-text-to-text, lo que indica que el modelo acepta entrada de imagen ademas de texto, aunque la model card no describe el codificador visual ni aporta evaluaciones por modalidad. El unico dato estructural firme es el recuento de parametros: 27.781.427.952.
 
 En cuanto al entrenamiento, UkisAI describe un enfoque centrado en identificar que tokens estaban vinculados a sobrepensamiento patologico y penalizarlos, sin atacar directamente la longitud del razonamiento, recuperando despues la precision mediante RL y OPD. Swift 1.5 parte de Swift 1.0 y escala esos metodos de post-entrenamiento con foco en tareas de largo horizonte, agenticas y de codigo (mejoras citadas en LiveCodeBench y Terminal Bench 2.1). El dataset de partida es ukisai/Qwen3.8-27B-multi-turn-agent-sft, que segun el autor no se usa tal cual, sino re-muestreado y convertido en entornos de RL. Esta variante cuantizada anade un paso AWQ de 4 bits calibrado con datos STEM y agenticos, ademas de conservar ciertos tensores en BF16.
 
@@ -82,11 +82,11 @@ Mejoras cualitativas citadas sin cifra: LiveCodeBench, Terminal Bench 2.1 y rend
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyankiwi/Swift-1.5-Qwen3.8-27B-AWQ-BF16-INT4 | 27,78 B | No disponible | AWQ INT4 + BF16 | swift-open-license-1.0 | HuggingFace, sin descargas registradas |
-| ukisai/Swift-1.5-Qwen3.8-27b | No disponible | No disponible | BF16 (sin cuantizar) | swift-open-license-1.0 | HuggingFace, modelo base, gated |
-| ukisai/Swift-Qwen3.8-27b (Swift 1.0) | No disponible | No disponible | BF16 | No disponible | HuggingFace, mas de 350.000 descargas segun el autor |
-| Qwen/Qwen3.8-27B | No disponible | No disponible | BF16 | No disponible | HuggingFace, modelo fundacional |
-| ukisai GGUF / GSQ-RCO GGUF | No disponible | No disponible | GGUF (varias) | No disponible | HuggingFace |
+| cyankiwi/Swift-1.5-Qwen3.8-27B-AWQ-BF16-INT4 | 27,78 B | No disponible | AWQ INT4 + BF16 | swift-open-license-1.0 | Hugging Face, sin descargas registradas |
+| ukisai/Swift-1.5-Qwen3.8-27b | No disponible | No disponible | BF16 (sin cuantizar) | swift-open-license-1.0 | Hugging Face, modelo base, gated |
+| ukisai/Swift-Qwen3.8-27b (Swift 1.0) | No disponible | No disponible | BF16 | No disponible | Hugging Face, mas de 350.000 descargas segun el autor |
+| Qwen/Qwen3.8-27B | No disponible | No disponible | BF16 | No disponible | Hugging Face, modelo fundacional |
+| ukisai GGUF / GSQ-RCO GGUF | No disponible | No disponible | GGUF (varias) | No disponible | Hugging Face |
 
 La comparativa se limita a los modelos citados en la propia model card, ya que no hay datos publicados de contexto, licencia completa ni benchmarks numericos para establecer comparaciones mas amplias con alternativas de terceros.
 

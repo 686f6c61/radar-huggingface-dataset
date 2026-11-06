@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`khairi/barca-0.8b-base` es un modelo de generacion de texto publicado en HuggingFace por el usuario khairi. Se trata de un checkpoint de tipo "base" (sin ajuste por instrucciones confirmado) con 752.166.720 parametros reales almacenados en safetensors, lo que lo situa en la categoria de modelos pequenos (~0,75B), pensados para ejecucion en hardware de consumo. El repositorio ocupa 1,5 GB, consistente con pesos en precision de 16 bits.
+`khairi/barca-0.8b-base` es un modelo de generacion de texto publicado en Hugging Face por el usuario khairi. Se trata de un checkpoint de tipo "base" (sin ajuste por instrucciones confirmado) con 752.166.720 parametros reales almacenados en safetensors, lo que lo situa en la categoria de modelos pequenos (~0,75B), pensados para ejecucion en hardware de consumo. El repositorio ocupa 1,5 GB, consistente con pesos en precision de 16 bits.
 
-La informacion publicada es extremadamente escasa: la model card es la plantilla autogenerada por HuggingFace y no contiene ni descripcion, ni datos de entrenamiento, ni licencia, ni idiomas soportados, ni resultados de evaluacion. La unica etiqueta tecnica relevante es `qwen3_5_text`, que sugiere que el modelo emplea la arquitectura de texto de la familia Qwen 3.5, aunque el autor no lo confirma en ningun momento. El modelo acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha.
+La informacion publicada es extremadamente escasa: la model card es la plantilla autogenerada por Hugging Face y no contiene ni descripcion, ni datos de entrenamiento, ni licencia, ni idiomas soportados, ni resultados de evaluacion. La unica etiqueta tecnica relevante es `qwen3_5_text`, que sugiere que el modelo emplea la arquitectura de texto de la familia Qwen 3.5, aunque el autor no lo confirma en ningun momento. El modelo acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha.
 
 Por su tamano, el modelo es relevante unicamente como ejercicio experimental o como punto de partida para fine-tuning en entornos con recursos limitados. No existe evidencia publica de calidad, alineamiento ni seguridad, por lo que no se recomienda su uso en produccion sin una evaluacion propia previa.
 
@@ -36,7 +36,7 @@ Tampoco se documenta el volumen de tokens de entrenamiento, la composicion del d
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles, el autor no declara idiomas.
 - Capacidades especiales (modo pensamiento, vision, audio): no disponibles.
-- Compatibilidad de despliegue: el tag `endpoints_compatible` indica que puede servirse mediante HuggingFace Inference Endpoints con la libreria transformers.
+- Compatibilidad de despliegue: el tag `endpoints_compatible` indica que puede servirse mediante Hugging Face Inference Endpoints con la libreria transformers.
 
 ## Casos de uso
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en INT4: alrededor de 0,5-0,8 GB.
 - GPU recomendadas: cualquier GPU con 4 GB o mas. Cabe holgadamente en RTX 3060, RTX 4060, RTX 4070, RTX 4090, A100, H100 y tambien en GPUs integradas con memoria compartida.
 - Inferencia en CPU: viable gracias al reducido numero de parametros; util en portatiles sin GPU dedicada.
-- Opciones de despliegue: transformers (confirmado por la libreria declarada), HuggingFace Inference Endpoints (tag `endpoints_compatible`). llama.cpp, Ollama, vLLM y TGI son tecnicamente aplicables, pero requeririan convertir los pesos, ya que el repositorio no incluye formatos GGUF ni cuantizados.
+- Opciones de despliegue: transformers (confirmado por la libreria declarada), Hugging Face Inference Endpoints (tag `endpoints_compatible`). llama.cpp, Ollama, vLLM y TGI son tecnicamente aplicables, pero requeririan convertir los pesos, ya que el repositorio no incluye formatos GGUF ni cuantizados.
 - Latencia y throughput: no disponibles, el autor no publica mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| barca-0.8b-base | 0,75B | no disponible | no disponible | HuggingFace, solo safetensors |
-| Qwen3-0.6B | 0,6B | 32.768 tokens (documentado) | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Llama 3.2 1B | 1,23B | 128.000 tokens (documentado) | Llama 3.2 Community License | HuggingFace, safetensors y GGUF |
-| SmolLM2-1.7B | 1,7B | 8.192 tokens (documentado) | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| barca-0.8b-base | 0,75B | no disponible | no disponible | Hugging Face, solo safetensors |
+| Qwen3-0.6B | 0,6B | 32.768 tokens (documentado) | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Llama 3.2 1B | 1,23B | 128.000 tokens (documentado) | Llama 3.2 Community License | Hugging Face, safetensors y GGUF |
+| SmolLM2-1.7B | 1,7B | 8.192 tokens (documentado) | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 Los datos de los modelos comparativos provienen de su documentacion publica. Para barca-0.8b-base no es posible comparar rendimiento, contexto efectivo ni condiciones de uso porque el autor no los ha publicado. En igualdad de condiciones de informacion, los tres alternativos ofrecen garantias de licencia, formatos cuantizados y evaluaciones publicadas que este checkpoint no proporciona.
 
@@ -90,8 +90,8 @@ Los datos de los modelos comparativos provienen de su documentacion publica. Par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khairi/barca-0.8b-base
-- Perfil del autor en HuggingFace: https://huggingface.co/khairi/datasets
+- Modelo en Hugging Face: https://huggingface.co/khairi/barca-0.8b-base
+- Perfil del autor en Hugging Face: https://huggingface.co/khairi/datasets
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML: https://mlco2.github.io/impact
 - Organizacion Barca AI en GitHub (sin relacion confirmada con el autor del modelo): https://github.com/barcaAI

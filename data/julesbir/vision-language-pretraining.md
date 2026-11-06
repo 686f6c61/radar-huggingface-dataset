@@ -68,9 +68,9 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/julesbir/vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/julesbir/vision-language-pretraining
 - Encuesta sobre modelos VLP (arXiv): https://arxiv.org/pdf/2202.10936
 - Encuesta exhaustiva de modelos visión-lenguaje (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S1566253525006955
-- Blog de HuggingFace sobre VLP: https://huggingface.co/blog/vision_language_pretraining
+- Blog de Hugging Face sobre VLP: https://huggingface.co/blog/vision_language_pretraining
 - Encuesta VLP en Springer: https://link.springer.com/article/10.1007/s11633-022-1369-5
 - Paper de BLIP (arXiv): https://arxiv.org/abs/2201.12086

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1-0528-Qwen3-8B-NPU2 es un checkpoint publicado por el usuario OpenFlowLM en HuggingFace, que toma como base el modelo deepseek-ai/DeepSeek-R1-0528-Qwen3-8B. Se trata, por tanto, de una redistribucion de terceros (con el sufijo "NPU2" en el nombre, cuyo significado no se documenta) del destilado oficial de DeepSeek: un Qwen3 8B Base post-entrenado con las cadenas de razonamiento (chain-of-thought) generadas por DeepSeek-R1-0528.
+DeepSeek-R1-0528-Qwen3-8B-NPU2 es un checkpoint publicado por el usuario OpenFlowLM en Hugging Face, que toma como base el modelo deepseek-ai/DeepSeek-R1-0528-Qwen3-8B. Se trata, por tanto, de una redistribucion de terceros (con el sufijo "NPU2" en el nombre, cuyo significado no se documenta) del destilado oficial de DeepSeek: un Qwen3 8B Base post-entrenado con las cadenas de razonamiento (chain-of-thought) generadas por DeepSeek-R1-0528.
 
 El modelo subyacente es un transformer denso de aproximadamente 8 000 millones de parametros, derivado de la familia Qwen3, orientado a generacion de texto, razonamiento y conversacion. Segun la model card heredada, este destilado alcanza rendimiento estado del arte entre modelos abiertos en AIME 2024, superando a Qwen3 8B en +10,0 puntos porcentuales y equiparandose a Qwen3-235B-thinking en esa prueba.
 
@@ -98,11 +98,11 @@ Para el destilado de 8B no se han publicado resultados numericos detallados en l
 
 | Modelo | Parametros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenFlowLM/DeepSeek-R1-0528-Qwen3-8B-NPU2 | ~8B denso | No disponible | No publicado para este checkpoint | MIT | HuggingFace, 0 descargas, sin documentacion propia |
-| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B | ~8B denso | No disponible en la informacion proporcionada | SOTA abierto en AIME 2024; +10,0 pts sobre Qwen3 8B | MIT | HuggingFace (modelo base oficial) |
-| Qwen3 8B (base / thinking) | ~8B denso | No disponible en la informacion proporcionada | Referencia de comparacion del destilado | No disponible en la informacion proporcionada | HuggingFace |
-| Qwen3-235B-thinking | 235B | No disponible en la informacion proporcionada | Igualado por el destilado de 8B en AIME 2024, segun la model card | No disponible en la informacion proporcionada | HuggingFace |
-| DeepSeek-R1-0528 (profesor) | 671B MoE (37B activos, segun la familia R1) | No disponible en la informacion proporcionada | MMLU-Redux 93,4; AIME 2025 87,5; Codeforces-Div1 1930 | MIT | HuggingFace y chat.deepseek.com |
+| OpenFlowLM/DeepSeek-R1-0528-Qwen3-8B-NPU2 | ~8B denso | No disponible | No publicado para este checkpoint | MIT | Hugging Face, 0 descargas, sin documentacion propia |
+| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B | ~8B denso | No disponible en la informacion proporcionada | SOTA abierto en AIME 2024; +10,0 pts sobre Qwen3 8B | MIT | Hugging Face (modelo base oficial) |
+| Qwen3 8B (base / thinking) | ~8B denso | No disponible en la informacion proporcionada | Referencia de comparacion del destilado | No disponible en la informacion proporcionada | Hugging Face |
+| Qwen3-235B-thinking | 235B | No disponible en la informacion proporcionada | Igualado por el destilado de 8B en AIME 2024, segun la model card | No disponible en la informacion proporcionada | Hugging Face |
+| DeepSeek-R1-0528 (profesor) | 671B MoE (37B activos, segun la familia R1) | No disponible en la informacion proporcionada | MMLU-Redux 93,4; AIME 2025 87,5; Codeforces-Div1 1930 | MIT | Hugging Face y chat.deepseek.com |
 
 ## Limitaciones y advertencias
 
@@ -119,9 +119,9 @@ Para el destilado de 8B no se han publicado resultados numericos detallados en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenFlowLM/DeepSeek-R1-0528-Qwen3-8B-NPU2
+- Repositorio en Hugging Face: https://huggingface.co/OpenFlowLM/DeepSeek-R1-0528-Qwen3-8B-NPU2
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
-- Organizacion DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Paper de DeepSeek-R1 (arXiv 2501.12948): https://arxiv.org/pdf/2501.12948
 - Chat oficial: https://chat.deepseek.com/
 - Sitio de DeepSeek: https://www.deepseek.com/

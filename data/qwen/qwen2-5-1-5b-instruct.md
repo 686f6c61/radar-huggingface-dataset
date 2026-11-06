@@ -6,7 +6,7 @@ Qwen2.5-1.5B-Instruct es un modelo de lenguaje causal de 1.543.714.304 parámetr
 
 La familia Qwen2.5 introduce mejoras sobre Qwen2 en conocimiento factual, código y matemáticas (gracias a modelos expertos especializados en esos dominios durante el entrenamiento), seguimiento de instrucciones, generación de textos largos de más de 8.000 tokens, comprensión de datos estructurados (tablas) y generación de salidas estructuradas como JSON. También se refuerza la robustez frente a diversidad de system prompts, lo que mejora la implementación de role-play y el condicionamiento de chatbots.
 
-Este modelo concreto soporta una longitud de contexto completa de 32.768 tokens y genera hasta 8.192 tokens. La arquitectura es un transformer decoder-only con RoPE, SwiGLU, RMSNorm, sesgo en las proyecciones QKV y embeddings de palabras atados (tied word embeddings), con atención de consultas agrupadas (GQA) de 12 cabezas para Q y 2 para KV. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y acumula más de 7,1 millones de descargas en HuggingFace.
+Este modelo concreto soporta una longitud de contexto completa de 32.768 tokens y genera hasta 8.192 tokens. La arquitectura es un transformer decoder-only con RoPE, SwiGLU, RMSNorm, sesgo en las proyecciones QKV y embeddings de palabras atados (tied word embeddings), con atención de consultas agrupadas (GQA) de 12 cabezas para Q y 2 para KV. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y acumula más de 7,1 millones de descargas en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct | 1,54B (1,31B sin embeddings) | 32.768 tokens | Apache 2.0 | HuggingFace, `transformers` |
-| Qwen2.5-0.5B-Instruct | 0,49B (aprox.) | 32.768 tokens | Apache 2.0 | HuggingFace, `transformers` |
-| Qwen2.5-3B-Instruct | 3,09B (aprox.) | 32.768 tokens | Qwen Research / Apache 2.0 según variante | HuggingFace, `transformers` |
-| Llama-3.2-1B-Instruct | 1,24B (aprox.) | 128.000 tokens | Llama 3.2 Community License | HuggingFace, `transformers` |
-| Gemma-2-2B-it | 2,6B (aprox.) | 8.192 tokens | Gemma Terms of Use | HuggingFace, `transformers` |
+| Qwen2.5-1.5B-Instruct | 1,54B (1,31B sin embeddings) | 32.768 tokens | Apache 2.0 | Hugging Face, `transformers` |
+| Qwen2.5-0.5B-Instruct | 0,49B (aprox.) | 32.768 tokens | Apache 2.0 | Hugging Face, `transformers` |
+| Qwen2.5-3B-Instruct | 3,09B (aprox.) | 32.768 tokens | Qwen Research / Apache 2.0 según variante | Hugging Face, `transformers` |
+| Llama-3.2-1B-Instruct | 1,24B (aprox.) | 128.000 tokens | Llama 3.2 Community License | Hugging Face, `transformers` |
+| Gemma-2-2B-it | 2,6B (aprox.) | 8.192 tokens | Gemma Terms of Use | Hugging Face, `transformers` |
 
 Los datos de parámetros, contexto y licencia de los modelos comparados proceden de sus respectivas model cards públicas. No se dispone de resultados de benchmarks comparativos en la información proporcionada, por lo que no se incluye comparación de rendimiento. Cabe destacar que la licencia Apache 2.0 de Qwen2.5-1.5B-Instruct es más permisiva para uso comercial que las licencias comunitarias de Llama 3.2 y Gemma 2, que imponen condiciones adicionales.
 
@@ -93,7 +93,7 @@ Los datos de parámetros, contexto y licencia de los modelos comparados proceden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Licencia: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

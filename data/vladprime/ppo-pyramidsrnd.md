@@ -68,8 +68,8 @@ Contexto de la medición: 48 episodios completados en un proceso de evaluación 
 
 | Modelo | Tipo | Entorno | Métrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vladprime/ppo-PyramidsRND | PPO (ML-Agents) | ML-Agents-Pyramids | mean_reward -0,8986 +/- 0,4869 | Apache 2.0 | HuggingFace |
-| Otros agentes PPO del Deep RL Course | PPO (ML-Agents) | Pyramids | no disponible | variable | HuggingFace |
+| Vladprime/ppo-PyramidsRND | PPO (ML-Agents) | ML-Agents-Pyramids | mean_reward -0,8986 +/- 0,4869 | Apache 2.0 | Hugging Face |
+| Otros agentes PPO del Deep RL Course | PPO (ML-Agents) | Pyramids | no disponible | variable | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos publicados de modelos comparables en la información proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos publicados de modelos comparables en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vladprime/ppo-PyramidsRND
+- Modelo en Hugging Face: https://huggingface.co/Vladprime/ppo-PyramidsRND
 - Curso Deep RL de Hugging Face: https://huggingface.co/learn/deep-rl-course
 - Unity ML-Agents Toolkit: https://github.com/Unity-Technologies/ml-agents
 - Documentación de ML-Agents 1.1.0: https://github.com/Unity-Technologies/ml-agents/tree/release_20_docs

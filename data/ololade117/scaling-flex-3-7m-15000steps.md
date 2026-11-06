@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ololade117/scaling-flex-3.7M-15000steps es un checkpoint de 3.686.400 parametros (aproximadamente 3,7 millones) publicado en HuggingFace Hub por el usuario Ololade117. Por su nombre y su tamano, se trata de un modelo de escala experimental, coherente con estudios de leyes de escalado (scaling laws) o con pruebas de pipelines de entrenamiento, mas que con un modelo destinado a produccion. El repositorio no incluye articulo, documentacion ni descripcion tecnica: la model card se limita a indicar que el modelo se subio mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`.
+Ololade117/scaling-flex-3.7M-15000steps es un checkpoint de 3.686.400 parametros (aproximadamente 3,7 millones) publicado en Hugging Face Hub por el usuario Ololade117. Por su nombre y su tamano, se trata de un modelo de escala experimental, coherente con estudios de leyes de escalado (scaling laws) o con pruebas de pipelines de entrenamiento, mas que con un modelo destinado a produccion. El repositorio no incluye articulo, documentacion ni descripcion tecnica: la model card se limita a indicar que el modelo se subio mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`.
 
 El modelo se distribuye en formato safetensors con licencia MIT, lo que permite uso comercial y modificacion sin restricciones practicas. No se declara pipeline de inferencia, idiomas soportados, arquitectura ni datos de entrenamiento. El sufijo "15000steps" sugiere que el checkpoint corresponde a 15.000 pasos de entrenamiento dentro de una campana mayor, pero esta interpretacion no esta confirmada por el autor.
 
@@ -45,7 +45,7 @@ Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens pr
 - Validacion de pipelines de entrenamiento: sirve para comprobar que un bucle de entrenamiento, el guardado en safetensors y la subida al Hub funcionan de extremo a extremo antes de lanzar ejecuciones costosas.
 - Pruebas unitarias de codigo de inferencia: al ocupar apenas unos megabytes, se puede cargar en tests automatizados de CI sin GPU ni aprovisionamiento de memoria significativo.
 - Experimentos de cuantizacion y compresion: es un caso de prueba barato para verificar herramientas de cuantizacion (int8, int4, destilacion) y medir el impacto en la perplejidad antes de aplicarlas a modelos grandes.
-- Docencia y formacion: permite ilustrar en clase el ciclo completo de publicacion de un modelo en HuggingFace Hub, desde el `PyTorchModelHubMixin` hasta la ficha del repositorio.
+- Docencia y formacion: permite ilustrar en clase el ciclo completo de publicacion de un modelo en Hugging Face Hub, desde el `PyTorchModelHubMixin` hasta la ficha del repositorio.
 - Investigacion sobre destilacion: puede actuar como estudiante en un esquema de destilacion de conocimiento desde un modelo mayor, dado su bajo coste computacional por paso.
 - Despliegue en entornos embebidos o microcontroladores: su huella en memoria (del orden de megabytes) lo hace candidato teorico para pruebas de inferencia en dispositivos con recursos muy limitados, siempre que se confirme la arquitectura y se exporte a un formato adecuado.
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Ololade117/scaling-flex-3.7M-15000steps | 3,686 M | no disponible | MIT | no disponible | HuggingFace Hub |
+| Ololade117/scaling-flex-3.7M-15000steps | 3,686 M | no disponible | MIT | no disponible | Hugging Face Hub |
 | Alternativas de escala similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/scaling-flex-3.7M-15000steps
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/scaling-flex-3.7M-15000steps
 - Integracion `PyTorchModelHubMixin` (referencia citada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo del modelo: no disponible (la model card indica "More Information Needed").
 - Articulo (paper): no disponible (la model card indica "More Information Needed").

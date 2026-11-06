@@ -60,7 +60,7 @@ No se han publicado resultados desglosados de benchmarks en la informacion dispo
 - **VRAM estimada para inferencia**: el checkpoint en BF16 ocupa aproximadamente 2,2 GB en disco (peso de safetensors), lo que requiere unos 3-4 GB de VRAM para inferencia en BF16. Con cuantizacion a 4 bits (disponible en el checkpoint original en formato GGUF o MLX), el uso de VRAM puede reducirse a alrededor de 1-1,5 GB.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060) puede ejecutar el modelo en cuantizacion Q4/Q5. Para BF16 sin cuantizar, se recomienda una GPU con 6 GB o más (RTX 3060, RTX 4060 Ti, RTX 4090). Tambien es viable en CPU con 16 GB de RAM para inferencia lenta.
 - **Compatibilidad con consumer GPU**: si, es un modelo diseñado para edge y on-device; se ejecuta en GPUs de consumo desde 4 GB de VRAM.
-- **Opciones de despliegue**: llama.cpp (formato GGUF), Ollama, LM Studio, vLLM, TGI y transformers con el backend de HuggingFace. El repositorio original de OpenBMB proporciona guias de despliegue paso a paso para los principales motores.
+- **Opciones de despliegue**: llama.cpp (formato GGUF), Ollama, LM Studio, vLLM, TGI y transformers con el backend de Hugging Face. El repositorio original de OpenBMB proporciona guias de despliegue paso a paso para los principales motores.
 - **Latencia y throughput**: no disponible en la informacion proporcionada; dependera del motor, la cuantizacion y el hardware. Como referencia, un modelo de 1B en una GPU moderna (RTX 4090) suele generar decenas de tokens por segundo en BF16.
 
 ## Comparativa con modelos similares

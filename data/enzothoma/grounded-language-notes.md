@@ -65,6 +65,6 @@ No disponible. Este repositorio no es un modelo de lenguaje comparable con alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Enzothoma/grounded-language-notes
+- Repositorio en Hugging Face: https://huggingface.co/Enzothoma/grounded-language-notes
 - Articulo de Contextual AI sobre modelos de lenguaje anclados (referencia contextual): https://contextual.ai/blog/introducing-grounded-language-model
 - Entrada de Wikipedia sobre grandes modelos de lenguaje (contexto general): https://en.wikipedia.org/wiki/Large_language_model

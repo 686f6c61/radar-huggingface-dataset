@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rlve-archive-mopd-sweep-n8-learned-teachers-2026100-00-cantorexpansion-92c8ddf51fac es un checkpoint archivado publicado por el usuario davidheineman en HuggingFace. No se trata de un modelo con model card comercial ni de una release estable, sino de la preservacion del estado final de una ejecucion de entrenamiento ya completada. La propia model card lo describe como "Archived checkpoint: 00-CantorExpansion", con una ruta original de scratch (`runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/00-CantorExpansion`), un paso de checkpoint final de 129 y un identificador de ejecucion de Weights & Biases (`1b85417a`).
+rlve-archive-mopd-sweep-n8-learned-teachers-2026100-00-cantorexpansion-92c8ddf51fac es un checkpoint archivado publicado por el usuario davidheineman en Hugging Face. No se trata de un modelo con model card comercial ni de una release estable, sino de la preservacion del estado final de una ejecucion de entrenamiento ya completada. La propia model card lo describe como "Archived checkpoint: 00-CantorExpansion", con una ruta original de scratch (`runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/00-CantorExpansion`), un paso de checkpoint final de 129 y un identificador de ejecucion de Weights & Biases (`1b85417a`).
 
 El repositorio contiene pesos en formato `hf-safetensors` y, segun la model card, un directorio `checkpoint/` con el estado exacto del modelo en formato distribuido de Megatron. El recuento real de parametros, extraido de los ficheros safetensors, es de 1.777.088.000 parametros (aproximadamente 1,78 mil millones), con un tamano de repositorio de 3,6 GB, coherente con pesos en precision de 16 bits. La etiqueta `qwen2` sugiere que la arquitectura subyacente deriva de la familia Qwen2, aunque la model card no lo confirma explicitamente ni detalla la configuracion.
 
@@ -52,7 +52,7 @@ Respecto al entrenamiento, la model card unicamente identifica el experimento: u
 - Punto de partida para ajuste fino posterior: con 1,78 mil millones de parametros en safetensors, es viable continuar el entrenamiento (SFT, DPO) en una unica GPU con memoria suficiente, partiendo del estado archivado en lugar de desde cero.
 - Estudios de destilacion o de "learned teachers": si el experimento consistia en entrenar con profesores aprendidos, el checkpoint permite analizar el comportamiento del estudiante resultante frente al profesor.
 - Prototipado interno de generacion de texto: un modelo de este tamano puede ejecutarse en una GPU de consumo para pruebas de concepto de prompts y plantillas, siempre que se acepte la ausencia total de evaluacion publicada.
-- Docencia y formacion: sirve como ejemplo practico de estructura de repositorio HuggingFace con pesos safetensors y checkpoint distribuido de Megatron en paralelo.
+- Docencia y formacion: sirve como ejemplo practico de estructura de repositorio Hugging Face con pesos safetensors y checkpoint distribuido de Megatron en paralelo.
 - Analisis de artefactos de terceros: permite estudiar que se publica realmente en checkpoints archivados (metadatos, licencia ausente, ausencia de plantilla de chat) y disenar politicas internas de admision de modelos.
 
 ## Benchmarks y rendimiento
@@ -78,10 +78,10 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| rlve-archive-mopd-sweep-n8-learned-teachers-...-cantorexpansion | 1,777 mil millones | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
-| Qwen2.5-1.5B | 1,54 mil millones | 32.768 tokens (segun documentacion publica del modelo) | Apache-2.0 | HuggingFace, ampliamente desplegado | Multiples benchmarks publicados por el autor |
-| Llama 3.2 1B | 1,24 mil millones | 128.000 tokens (segun documentacion publica del modelo) | Licencia comunitaria Llama 3.2 | HuggingFace, ampliamente desplegado | Multiples benchmarks publicados por el autor |
-| SmolLM2-1.7B | 1,7 mil millones | 8.192 tokens (segun documentacion publica del modelo) | Apache-2.0 | HuggingFace, ampliamente desplegado | Multiples benchmarks publicados por el autor |
+| rlve-archive-mopd-sweep-n8-learned-teachers-...-cantorexpansion | 1,777 mil millones | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
+| Qwen2.5-1.5B | 1,54 mil millones | 32.768 tokens (segun documentacion publica del modelo) | Apache-2.0 | Hugging Face, ampliamente desplegado | Multiples benchmarks publicados por el autor |
+| Llama 3.2 1B | 1,24 mil millones | 128.000 tokens (segun documentacion publica del modelo) | Licencia comunitaria Llama 3.2 | Hugging Face, ampliamente desplegado | Multiples benchmarks publicados por el autor |
+| SmolLM2-1.7B | 1,7 mil millones | 8.192 tokens (segun documentacion publica del modelo) | Apache-2.0 | Hugging Face, ampliamente desplegado | Multiples benchmarks publicados por el autor |
 
 La diferencia fundamental no es de tamano, sino de naturaleza: los tres modelos alternativos son releases estables con licencia, plantilla de chat, contexto documentado y evaluaciones publicas, mientras que el checkpoint analizado es un artefacto de investigacion archivado sin ninguno de esos elementos.
 
@@ -101,7 +101,7 @@ La diferencia fundamental no es de tamano, sino de naturaleza: los tres modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-00-cantorexpansion-92c8ddf51fac
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-00-cantorexpansion-92c8ddf51fac
 - Identificador de ejecucion de Weights & Biases: `1b85417a` (no se proporciona enlace directo)
 - Ruta original de scratch dentro del repositorio: `runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/00-CantorExpansion`
 - Directorio de checkpoint distribuido de Megatron: `checkpoint/` dentro del repositorio

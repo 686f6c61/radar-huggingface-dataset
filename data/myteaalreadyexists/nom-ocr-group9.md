@@ -101,7 +101,7 @@ No se dispone de datos verificables de parámetros, contexto o rendimiento de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myteaalreadyexists/nom-ocr-group9
+- Modelo en Hugging Face: https://huggingface.co/myteaalreadyexists/nom-ocr-group9
 - Repositorio base del curso: https://github.com/ntcuong2103/nom-ocr-project
 - Ranking de modelos OCR locales (contexto de alternativas): https://local-ai-zone.github.io/guides/best-ai-ocr-models-ultimate-ranking-2026.html
 - Modelo prebuilt de reconocimiento de texto de AI Builder (referencia de OCR comercial): https://learn.microsoft.com/en-us/ai-builder/flow-text-recognition

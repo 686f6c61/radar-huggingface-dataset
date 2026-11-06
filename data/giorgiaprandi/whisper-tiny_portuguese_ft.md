@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Portuguese es un modelo de reconocimiento automatico de voz (ASR) obtenido mediante fine-tuning del modelo openai/whisper-tiny de OpenAI sobre el dataset naharte/portuguese_english. Su autor es GiorgiaPrandi, quien lo ha publicado en HuggingFace bajo licencia Apache 2.0. El modelo resuelve el problema de transcribir audio en portugues (y, segun los datos de la model card, tambien ingles) partiendo de la arquitectura compacta de Whisper tiny, lo que lo hace adecuado para despliegues con recursos limitados.
+Whisper tiny Portuguese es un modelo de reconocimiento automatico de voz (ASR) obtenido mediante fine-tuning del modelo openai/whisper-tiny de OpenAI sobre el dataset naharte/portuguese_english. Su autor es GiorgiaPrandi, quien lo ha publicado en Hugging Face bajo licencia Apache 2.0. El modelo resuelve el problema de transcribir audio en portugues (y, segun los datos de la model card, tambien ingles) partiendo de la arquitectura compacta de Whisper tiny, lo que lo hace adecuado para despliegues con recursos limitados.
 
 Su relevancia es moderada y de nicho: se trata de un fine-tuning comunitario de un modelo muy pequeno (37,76 millones de parametros), no de un modelo de nueva generacion. Aun asi, resulta util como punto de partida ligero para tareas de transcripcion en portugues, y declara un WER del 10,44 % sobre el split de test de su dataset de evaluacion. La model card esta generada automaticamente por el Trainer y carece de documentacion detallada sobre usos previstos, limitaciones o composicion del dataset, lo que conviene tener en cuenta antes de usarlo en produccion.
 
@@ -66,16 +66,16 @@ No se han publicado comparaciones con otros modelos de ASR en la informacion dis
 - VRAM estimada para inferencia: no disponible; dada la arquitectura Whisper tiny (37,76 millones de parametros, ~0,3 GB en pesos), se espera que funcione en GPUs con 2-4 GB de VRAM o directamente en CPU, aunque no es un dato publicado por el autor.
 - GPU recomendadas: no disponible; por el tamano del modelo, cualquier GPU moderna (incluso integradas o GPUs de consumo como una GTX 1650 o superior) deberia ser suficiente para inferencia.
 - Consumer GPU: cabe holgadamente en cualquier GPU de consumo; incluso es viable la inferencia solo con CPU.
-- Opciones de despliegue: libreria Transformers de HuggingFace (pipeline de automatic-speech-recognition); no consta compatibilidad declarada con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: libreria Transformers de Hugging Face (pipeline de automatic-speech-recognition); no consta compatibilidad declarada con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Licencia | WER declarado | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| GiorgiaPrandi/whisper-tiny_portuguese_ft | 37,76 M | Apache 2.0 | 10,44 % (naharte/portuguese_english) | pt, en | HuggingFace |
-| openai/whisper-tiny (base) | ~39 M | MIT | no disponible (no fine-tuned para pt especifico) | multilingue | HuggingFace |
-| openai/whisper-small | ~244 M | MIT | no disponible | multilingue | HuggingFace |
+| GiorgiaPrandi/whisper-tiny_portuguese_ft | 37,76 M | Apache 2.0 | 10,44 % (naharte/portuguese_english) | pt, en | Hugging Face |
+| openai/whisper-tiny (base) | ~39 M | MIT | no disponible (no fine-tuned para pt especifico) | multilingue | Hugging Face |
+| openai/whisper-small | ~244 M | MIT | no disponible | multilingue | Hugging Face |
 
 Nota: el WER de cada modelo depende del dataset de evaluacion, por lo que las cifras no son directamente comparables entre modelos evaluados sobre datasets distintos.
 
@@ -92,6 +92,6 @@ Nota: el WER de cada modelo depende del dataset de evaluacion, por lo que las ci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GiorgiaPrandi/whisper-tiny_portuguese_ft
+- Modelo en Hugging Face: https://huggingface.co/GiorgiaPrandi/whisper-tiny_portuguese_ft
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de fine-tuning: https://huggingface.co/datasets/naharte/portuguese_english

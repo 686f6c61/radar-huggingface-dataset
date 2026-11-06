@@ -81,10 +81,10 @@ Latencia en una RTX A6000, batch 1, entradas de 512², con CUDA graphs: 43,5 ms 
 
 | Modelo | Parámetros | Contexto | Acc@0.5 (RefCOCO media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LOCUS-2B | 1,75B | no disponible | 89,30 (exacto) / 90,01 (cabeza) | Apache-2.0 | HuggingFace + GitHub |
+| LOCUS-2B | 1,75B | no disponible | 89,30 (exacto) / 90,01 (cabeza) | Apache-2.0 | Hugging Face + GitHub |
 | Jag-0.8B | 0,8B (aprox.) | no disponible | 88,16 | no disponible | no disponible |
 | LocateAnything-3B | 3B (aprox.) | no disponible | 88,68 (65,55 en Acc@0.9) | no disponible | no disponible |
-| Qwen3-VL-2B-Instruct (base, zero-shot) | 2B (aprox.) | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Qwen3-VL-2B-Instruct (base, zero-shot) | 2B (aprox.) | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 LOCUS-2B mejora a Jag-0.8B en las tres métricas con algo más del doble de parámetros, y se sitúa ligeramente por encima de LocateAnything-3B en Acc@0.5 pese a tener menos parámetros, aunque queda claramente por debajo en Acc@0.9 (59,13 frente a 65,55), es decir, en precisión de cajas muy ajustadas. La ventaja frente a LocateAnything-3B está en el coste: menos parámetros y verificación paralela en lugar de un token por paso.
 
@@ -102,7 +102,7 @@ LOCUS-2B mejora a Jag-0.8B en las tres métricas con algo más del doble de par�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MTalha2001/LOCUS-2B
+- Modelo en Hugging Face: https://huggingface.co/MTalha2001/LOCUS-2B
 - Página del proyecto: https://muhammad-talha-ad.github.io/LOCUS/
 - Paper (arXiv 2610.35053): https://arxiv.org/abs/2610.35053
 - Código en GitHub: https://github.com/muhammad-talha-ad/LOCUS

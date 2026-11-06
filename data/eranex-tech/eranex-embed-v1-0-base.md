@@ -98,10 +98,10 @@ No se han publicado comparaciones directas con otros modelos en la información 
 
 | Modelo | Parametros | Contexto | Dimension | Licencia | Arquitectura | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eranex-embed-v1.0-base | 14,5M | 1024 | 128 | Apache 2.0 | Mamba SSM bidireccional | HuggingFace |
-| all-MiniLM-L6-v2 | 22,7M | 256 | 384 | Apache 2.0 | Transformer | HuggingFace |
-| paraphrase-multilingual-MiniLM-L12-v2 | 118M | 128 | 384 | Apache 2.0 | Transformer | HuggingFace |
-| multilingual-e5-small | 118M | 512 | 384 | MIT | Transformer | HuggingFace |
+| eranex-embed-v1.0-base | 14,5M | 1024 | 128 | Apache 2.0 | Mamba SSM bidireccional | Hugging Face |
+| all-MiniLM-L6-v2 | 22,7M | 256 | 384 | Apache 2.0 | Transformer | Hugging Face |
+| paraphrase-multilingual-MiniLM-L12-v2 | 118M | 128 | 384 | Apache 2.0 | Transformer | Hugging Face |
+| multilingual-e5-small | 118M | 512 | 384 | MIT | Transformer | Hugging Face |
 
 La comparación es orientativa: los tres modelos transformer citados son encoders ya calibrados con objetivos contrastivos, mientras que eranex-embed-v1.0-base es un backbone MLM que requiere ajuste fino para búsqueda semántica. En tamaño, es el más pequeño de la lista; en contexto, supera a MiniLM y a multilingual-e5-small, pero queda por debajo de muchos encoders modernos de 512–8192 tokens. No hay datos públicos que permitan comparar Spearman en STS entre estos modelos y eranex-embed-v1.0-base en condiciones equivalentes.
 
@@ -119,7 +119,7 @@ La comparación es orientativa: los tres modelos transformer citados son encoder
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eranex-Tech/eranex-embed-v1.0-base
+- Modelo en Hugging Face: https://huggingface.co/Eranex-Tech/eranex-embed-v1.0-base
 - Dataset mC4 (allenai): https://huggingface.co/datasets/allenai/c4
 - Dataset OPUS-100 (Helsinki-NLP): https://huggingface.co/datasets/Helsinki-NLP/opus-100
 - Dataset STS Benchmark (sentence-transformers): https://huggingface.co/datasets/sentence-transformers/stsb

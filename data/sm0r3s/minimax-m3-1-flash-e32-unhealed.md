@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash-E32-unhealed es un checkpoint experimental derivado de MiniMaxAI/MiniMax-M3.1-Flash, un modelo de mezcla de expertos (MoE) multimodal de gran tamano. Lo publica el usuario Sm0r3s en HuggingFace y consiste en una poda de expertos en un solo paso: de los 128 expertos enrutados por capa MoE se conservan unicamente los 32 con mayor puntuacion estilo REAP (media, sobre los tokens enrutados al experto, del producto entre el peso del router y la norma de la salida del experto, calculada sobre texto general, codigo y razonamiento).
+MiniMax-M3.1-Flash-E32-unhealed es un checkpoint experimental derivado de MiniMaxAI/MiniMax-M3.1-Flash, un modelo de mezcla de expertos (MoE) multimodal de gran tamano. Lo publica el usuario Sm0r3s en Hugging Face y consiste en una poda de expertos en un solo paso: de los 128 expertos enrutados por capa MoE se conservan unicamente los 32 con mayor puntuacion estilo REAP (media, sobre los tokens enrutados al experto, del producto entre el peso del router y la norma de la salida del experto, calculada sobre texto general, codigo y razonamiento).
 
 El checkpoint conserva 64.670.848.800 parametros totales (unos 64,7 mil millones) y mantiene los expertos supervivientes copiados byte a byte en su formato original NVFP4; las filas del router y el sesgo de enrutamiento se recortan para ajustarse a la nueva cardinalidad. Es un modelo solo de texto: la torre de vision y la cabeza de decodificacion especulativa del modelo base no estan incluidas.
 
@@ -80,5 +80,5 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sm0r3s/MiniMax-M3.1-Flash-E32-unhealed
+- Hugging Face: https://huggingface.co/Sm0r3s/MiniMax-M3.1-Flash-E32-unhealed
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash

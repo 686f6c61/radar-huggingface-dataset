@@ -47,7 +47,7 @@ El entrenamiento incluye una fase de razonamiento configurable: el modelo puede 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo original Qwen3.8-27B cuenta con evaluaciones oficiales en la documentación de Alibaba, pero no se han incluido en los datos proporcionados. Se recomienda consultar la model card del modelo base en HuggingFace para obtener métricas detalladas.
+No se han publicado resultados de benchmarks en la información disponible. El modelo original Qwen3.8-27B cuenta con evaluaciones oficiales en la documentación de Alibaba, pero no se han incluido en los datos proporcionados. Se recomienda consultar la model card del modelo base en Hugging Face para obtener métricas detalladas.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ La comparativa directa con modelos de tamaño similar (por ejemplo, Llama 3.1 70
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/valeryepwi/Qwen3.8-27B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/valeryepwi/Qwen3.8-27B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Alibaba en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio GGUF oficial de ggml-org: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF

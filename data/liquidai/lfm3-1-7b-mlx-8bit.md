@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Cuantizacion / formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-MLX-8bit | 1,73B | 8-bit afín (grupos de 64), MLX | 16 | LFM 1.0 (other) | HuggingFace, pesos de 1,84 GB |
-| LFM3-1.7B (base) | 1,73B | Precisión original (safetensors) | 16 | LFM 1.0 (other) | HuggingFace |
-| Qwen3-1.7B (referencia de categoria) | ~1,7B | Múltiples cuantizaciones (GGUF, etc.) | Multilingüe (100+ según Qwen) | Apache 2.0 | HuggingFace, Ollama, llama.cpp |
+| LFM3-1.7B-MLX-8bit | 1,73B | 8-bit afín (grupos de 64), MLX | 16 | LFM 1.0 (other) | Hugging Face, pesos de 1,84 GB |
+| LFM3-1.7B (base) | 1,73B | Precisión original (safetensors) | 16 | LFM 1.0 (other) | Hugging Face |
+| Qwen3-1.7B (referencia de categoria) | ~1,7B | Múltiples cuantizaciones (GGUF, etc.) | Multilingüe (100+ según Qwen) | Apache 2.0 | Hugging Face, Ollama, llama.cpp |
 
 Nota: la comparación con Qwen3-1.7B es orientativa como modelo de tamaño similar; los datos de rendimiento comparado no están disponibles en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ Nota: la comparación con Qwen3-1.7B es orientativa como modelo de tamaño simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM3-1.7B-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-1.7B-MLX-8bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Blog de Liquid AI sobre LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome

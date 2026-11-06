@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AFCI_part2 no es un modelo de lenguaje ni una red neuronal entrenada, sino la segunda entrega de un kit de desarrollo offline para construir un sistema de deteccion de arcos electricos (AFCI, arc-fault circuit interrupter) orientado a la prevencion de incendios electricos. El repositorio, publicado por el usuario danielsaldana en HuggingFace, contiene exclusivamente un conjunto de herramientas de cadena de compilacion y desarrollo para Windows 10/11 x64: compilador ARM GCC, OpenOCD, stlink-tools, CMake, Ninja, Python 3.12, VS Code con extensiones, ngspice y ficheros SVD del STM32F407. No incluye pesos, checkpoints ni artefactos de inferencia.
+AFCI_part2 no es un modelo de lenguaje ni una red neuronal entrenada, sino la segunda entrega de un kit de desarrollo offline para construir un sistema de deteccion de arcos electricos (AFCI, arc-fault circuit interrupter) orientado a la prevencion de incendios electricos. El repositorio, publicado por el usuario danielsaldana en Hugging Face, contiene exclusivamente un conjunto de herramientas de cadena de compilacion y desarrollo para Windows 10/11 x64: compilador ARM GCC, OpenOCD, stlink-tools, CMake, Ninja, Python 3.12, VS Code con extensiones, ngspice y ficheros SVD del STM32F407. No incluye pesos, checkpoints ni artefactos de inferencia.
 
 El sistema completo al que pertenece esta pieza se describe en la model card como una cadena de procesamiento que va desde un sensor de corriente hasta una decision de disparo (trip), pasando por la adquisicion ADC+DMA en un STM32F407, la extraccion de caracteristicas mediante FFT/STFT y una red neuronal cuantizada (DNN) ejecutada en el microcontrolador. El objetivo declarado es el entrenamiento en CPU sin conexion, en un PC Windows aislado, lo que encaja con entornos de laboratorio electrico o industrial donde no se permite acceso a internet.
 
-La relevancia de esta ficha es limitada desde el punto de vista de evaluacion de modelos: no hay parametros, contexto, benchmarks ni capacidades de generacion. Resulta util, en cambio, como referencia de infraestructura para quien quiera reproducir el pipeline AFCI descrito, o como ejemplo de publicacion en HuggingFace de material auxiliar (toolchains, binarios, datasets de soporte) en lugar de pesos. El tamano del repositorio es de 1,0 GB y las descargas y likes registrados son cero en el momento de la consulta.
+La relevancia de esta ficha es limitada desde el punto de vista de evaluacion de modelos: no hay parametros, contexto, benchmarks ni capacidades de generacion. Resulta util, en cambio, como referencia de infraestructura para quien quiera reproducir el pipeline AFCI descrito, o como ejemplo de publicacion en Hugging Face de material auxiliar (toolchains, binarios, datasets de soporte) en lugar de pesos. El tamano del repositorio es de 1,0 GB y las descargas y likes registrados son cero en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -36,7 +36,7 @@ Respecto al entrenamiento, la model card indica que el sistema AFCI se entrena e
 - Depuracion integrada en VS Code con Cortex-Debug, visualizacion de perifericos y memoria, y vista de registros mediante los ficheros SVD del STM32F407/F405.
 - Simulacion SPICE del front-end analogico del sensor de corriente (transformador de corriente o integrador Rogowski y filtro anti-alias) con ngspice 47.
 - Terminal serie (PuTTY) para registro UART de los datos de ADC durante la puesta a punto.
-- No incluye: pesos de modelo, tokenizador, pipeline de HuggingFace, tool calling, agentes, capacidades multimodales ni generacion de texto.
+- No incluye: pesos de modelo, tokenizador, pipeline de Hugging Face, tool calling, agentes, capacidades multimodales ni generacion de texto.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Alternativa | Tipo de contenido | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danielsaldana/AFCI_part2 | Kit de herramientas Windows x64 para AFCI sobre STM32F407 | no aplica | no aplica | other (mixta por fichero) | HuggingFace, 1,0 GB, 0 descargas |
+| danielsaldana/AFCI_part2 | Kit de herramientas Windows x64 para AFCI sobre STM32F407 | no aplica | no aplica | other (mixta por fichero) | Hugging Face, 1,0 GB, 0 descargas |
 | STM32CubeIDE (STMicroelectronics) | IDE oficial con GCC, depurador y CubeMX integrados | no aplica | no aplica | licencia de ST, requiere cuenta myST | Descarga desde st.com |
 | xPack GNU Arm Embedded GCC (xPack) | Toolchain GCC para ARM Cortex-M, distribuible por separado | no aplica | no aplica | GPL | GitHub releases de xPack |
 | PlatformIO (PlatformIO Labs) | Entorno de desarrollo y gestion de toolchains para microcontroladores | no aplica | no aplica | Apache-2.0 | Registro de paquetes de PlatformIO |
@@ -87,7 +87,7 @@ La comparacion relevante no es con modelos de IA, sino con otras formas de obten
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielsaldana/AFCI_part2
+- Repositorio en Hugging Face: https://huggingface.co/danielsaldana/AFCI_part2
 - xPack GNU Arm Embedded GCC: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack
 - xPack OpenOCD: https://github.com/xpack-dev-tools/openocd-xpack
 - stlink (stlink-org): https://github.com/stlink-org/stlink

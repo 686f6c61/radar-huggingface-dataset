@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo. Qwen2.5-Math-14B y DeepSeek-R
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-dpo-qlora-checkpoint-100
+- Repositorio Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-dpo-qlora-checkpoint-100
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Framework llama-factory: https://github.com/hiyouga/LLaMA-Factory
 - Dataset SVAMP (referencia): https://huggingface.co/datasets/ChilleD/SVAMP

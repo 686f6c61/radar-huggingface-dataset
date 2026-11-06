@@ -25,7 +25,7 @@ Es importante senalar que el repositorio no incluye model card descriptiva, lice
 
 No se dispone de informacion sobre la arquitectura interna del modelo base en los datos proporcionados. La nomenclatura del repositorio (GLM-4.6V-Flash) y la presencia de tratamiento de la proyeccion multimodal (`skip_mmproj` en la configuracion de cuantizacion) apuntan a un transformer multimodal capaz de procesar imagenes y texto. Sin embargo, no se confirman ni el tipo de atencion, ni el numero de capas, ni la composicion del dataset de entrenamiento, ni si se aplicaron tecnicas de RLHF, DPO o similares.
 
-El unico proceso tecnicamente documentado es el de cuantizacion: el autor emplea cuantizaciones ponderadas con imatrix (indicado por el sufijo `i1` y la etiqueta `imatrix`), una tecnica que calcula una matriz de importancia a partir de datos de calibracion para reducir el error de cuantizacion en las capas mas sensibles. El modelo base fue previamente convertido desde el formato HuggingFace (`convert_type: hf`) y sometido a abliteration, un procedimiento que modifica los pesos para suprimir la direccion de activacion asociada a las respuestas de rechazo.
+El unico proceso tecnicamente documentado es el de cuantizacion: el autor emplea cuantizaciones ponderadas con imatrix (indicado por el sufijo `i1` y la etiqueta `imatrix`), una tecnica que calcula una matriz de importancia a partir de datos de calibracion para reducir el error de cuantizacion en las capas mas sensibles. El modelo base fue previamente convertido desde el formato Hugging Face (`convert_type: hf`) y sometido a abliteration, un procedimiento que modifica los pesos para suprimir la direccion de activacion asociada a las respuestas de rechazo.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ Recomendaciones de GPU:
 - GPUs de 8 GB: Q3_K_M o Q4_K_S con contexto reducido y posible offload parcial a CPU.
 - Equipos sin GPU: las cuantizaciones IQ1/IQ2/Q2_K pueden ejecutarse en CPU mediante llama.cpp, con latencia elevada.
 
-Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores GGUF de HuggingFace (la etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints). vLLM y TGI ofrecen soporte GGUF limitado y pueden requerir conversion adicional.
+Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores GGUF de Hugging Face (la etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints). vLLM y TGI ofrecen soporte GGUF limitado y pueden requerir conversion adicional.
 
 Latencia y throughput: no disponibles.
 
@@ -83,8 +83,8 @@ Latencia y throughput: no disponibles.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4.6V-Flash-3MPER0RR-abliterated-i1-GGUF (este repo) | ~9,4 B | no disponible | GGUF (24 cuantizaciones) | no disponible | HuggingFace, 0 descargas |
-| GLM-4.6V-Flash-3MPER0RR-abliterated (modelo base declarado) | ~9,4 B | no disponible | safetensors | no disponible | HuggingFace |
+| GLM-4.6V-Flash-3MPER0RR-abliterated-i1-GGUF (este repo) | ~9,4 B | no disponible | GGUF (24 cuantizaciones) | no disponible | Hugging Face, 0 descargas |
+| GLM-4.6V-Flash-3MPER0RR-abliterated (modelo base declarado) | ~9,4 B | no disponible | safetensors | no disponible | Hugging Face |
 | Otras cuantizaciones GGUF del mismo modelo base | ~9,4 B | no disponible | GGUF | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones de contexto que permitan una comparacion cuantitativa fiable con alternativas de la misma categoria. Cualquier comparacion adicional requeriria consultar las fichas del modelo base y de sus variantes sin abliterar, no incluidas en la informacion proporcionada.

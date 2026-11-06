@@ -4,7 +4,7 @@
 
 El modelo `soleroa/movie-review-classifier` es un clasificador de sentimiento binario diseñado para determinar si una reseña de película es positiva o negativa. Fue desarrollado por el usuario soleroa y se basa en la arquitectura DistilBERT, concretamente en el checkpoint `distilbert-base-uncased`, al que se le añade una cabeza de clasificación de secuencias con dos etiquetas (positivo y negativo). El proyecto está documentado en un repositorio de GitHub del mismo autor, donde se indica que el modelo fue ajustado sobre el conjunto de datos IMDB de reseñas de películas.
 
-Con 66,95 millones de parámetros, este modelo se sitúa en la gama de los encoders transformer pequeños, lo que lo hace adecuado para entornos con recursos limitados. La ficha de HuggingFace no proporciona información sobre licencia, idiomas soportados ni detalles de entrenamiento, pero por su origen en DistilBERT se espera que funcione principalmente con texto en inglés. El repositorio ocupa 0,3 GB y los pesos están disponibles en formato safetensors, lo que facilita su integración en pipelines de Transformers.
+Con 66,95 millones de parámetros, este modelo se sitúa en la gama de los encoders transformer pequeños, lo que lo hace adecuado para entornos con recursos limitados. La ficha de Hugging Face no proporciona información sobre licencia, idiomas soportados ni detalles de entrenamiento, pero por su origen en DistilBERT se espera que funcione principalmente con texto en inglés. El repositorio ocupa 0,3 GB y los pesos están disponibles en formato safetensors, lo que facilita su integración en pipelines de Transformers.
 
 La relevancia de este modelo radica en su simplicidad y bajo coste computacional para una tarea clásica de NLP, el análisis de sentimiento. Aunque no se publican métricas de evaluación en la información disponible, su arquitectura base es bien conocida y su tamaño permite ejecutarlo en CPU o GPUs modestas, lo que lo convierte en una opción práctica para prototipos y aplicaciones ligeras.
 
@@ -45,7 +45,7 @@ El modelo se construye a partir de `distilbert-base-uncased`, un transformer enc
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de GitHub no incluye métricas de evaluación, y la model card de HuggingFace está vacía. Por tanto, no es posible comparar numéricamente su rendimiento con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de GitHub no incluye métricas de evaluación, y la model card de Hugging Face está vacía. Por tanto, no es posible comparar numéricamente su rendimiento con otros modelos.
 
 ## Requisitos de hardware
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-Existen otros clasificadores de reseñas de películas basados en DistilBERT alojados en HuggingFace, como `derek-harnett/movie-review-classifier` o `pa-shk/movie-review-classifier`. Sin embargo, no se dispone de datos comparativos de rendimiento ni de especificaciones detalladas de estos modelos. A nivel de arquitectura, todos comparten la misma base DistilBERT y la tarea de clasificación binaria. Alternativas más grandes como BERT base o RoBERTa ofrecerían mayor capacidad pero con un coste computacional superior. No se puede establecer una comparación cuantitativa con los datos disponibles.
+Existen otros clasificadores de reseñas de películas basados en DistilBERT alojados en Hugging Face, como `derek-harnett/movie-review-classifier` o `pa-shk/movie-review-classifier`. Sin embargo, no se dispone de datos comparativos de rendimiento ni de especificaciones detalladas de estos modelos. A nivel de arquitectura, todos comparten la misma base DistilBERT y la tarea de clasificación binaria. Alternativas más grandes como BERT base o RoBERTa ofrecerían mayor capacidad pero con un coste computacional superior. No se puede establecer una comparación cuantitativa con los datos disponibles.
 
 ## Limitaciones y advertencias
 
@@ -70,5 +70,5 @@ Existen otros clasificadores de reseñas de películas basados en DistilBERT alo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/soleroa/movie-review-classifier
+- Hugging Face: https://huggingface.co/soleroa/movie-review-classifier
 - Repositorio de GitHub: https://github.com/soleroa/movie-review-classifier

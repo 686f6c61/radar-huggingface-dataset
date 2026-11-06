@@ -34,7 +34,7 @@ No se dispone en la información proporcionada de detalles sobre el dataset de e
 - Inferencia 100% nativa en C++ mediante ggml (CrispASR), sin dependencias de Python ni PyTorch.
 - Selección de stems concretos en la CLI (`--stems vocals`), lo que permite separar solo la pista deseada.
 - API de Python (`crispasr.Session`) que devuelve un diccionario con las cuatro pistas.
-- Descarga automática del modelo desde el registro de CrispASR mediante HuggingFace.
+- Descarga automática del modelo desde el registro de CrispASR mediante Hugging Face.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto.
 - No dispone de capacidades multilingües ni de visión/audio generativo: es exclusivamente audio-a-audio.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Stems | Formato nativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cstr/mini-bs-roformer-GGUF (este) | 46,2 M | 4 (bajo, batería, otros, voz) | GGUF / C++ (ggml) | MIT | HuggingFace |
-| HiDolen/Mini-BS-RoFormer-V2.5-46.2M | 46,2 M | 4 (bajo, batería, otros, voz) | PyTorch (safetensors) | MIT | HuggingFace |
+| cstr/mini-bs-roformer-GGUF (este) | 46,2 M | 4 (bajo, batería, otros, voz) | GGUF / C++ (ggml) | MIT | Hugging Face |
+| HiDolen/Mini-BS-RoFormer-V2.5-46.2M | 46,2 M | 4 (bajo, batería, otros, voz) | PyTorch (safetensors) | MIT | Hugging Face |
 | Demucs (htdemucs) | no disponible en la información | 4 (bajo, batería, otros, voz) | PyTorch | MIT | Repositorio oficial |
 | Spleeter | no disponible en la información | 2 o 4 stems | TensorFlow | MIT | Repositorio oficial |
 
@@ -83,7 +83,7 @@ La comparación con Demucs y Spleeter se ofrece como referencia de categoría; l
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/cstr/mini-bs-roformer-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/cstr/mini-bs-roformer-GGUF
 - Modelo base original: https://huggingface.co/HiDolen/Mini-BS-RoFormer-V2.5-46.2M
 - Licencia del modelo base: https://huggingface.co/HiDolen/Mini-BS-RoFormer-V2.5-46.2M/blob/main/LICENSE
 - CrispASR (motor de inferencia C++/ggml): https://github.com/CrispStrobe/CrispASR

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-konkani-qwen2-1.5b-v3-aligned-dare-ties-grpo es un modelo de lenguaje de 1.543.268.864 parametros (aproximadamente 1,5 mil millones) desarrollado por el usuario nischay185 y publicado en HuggingFace. No se trata de un entrenamiento desde cero, sino de una fusion (merge) de pesos generada con la herramienta mergekit: el modelo toma como base nischay185/konkani-qwen2-1.5b-v3-alignment-full (un Qwen2-1.5B ajustado para konkani) y le incorpora los pesos de npatel121/qwen2-1.5b-grpo-gsm8k, un modelo afinado con GRPO sobre GSM8K para reforzar el razonamiento matematico.
+konkani-qwen2-1.5b-v3-aligned-dare-ties-grpo es un modelo de lenguaje de 1.543.268.864 parametros (aproximadamente 1,5 mil millones) desarrollado por el usuario nischay185 y publicado en Hugging Face. No se trata de un entrenamiento desde cero, sino de una fusion (merge) de pesos generada con la herramienta mergekit: el modelo toma como base nischay185/konkani-qwen2-1.5b-v3-alignment-full (un Qwen2-1.5B ajustado para konkani) y le incorpora los pesos de npatel121/qwen2-1.5b-grpo-gsm8k, un modelo afinado con GRPO sobre GSM8K para reforzar el razonamiento matematico.
 
 El objetivo declarado por la nomenclatura del repositorio es combinar dos capacidades en un unico checkpoint: la alineacion linguistica y conversacional en konkani del modelo base, y la habilidad de resolucion de problemas aritmeticos aportada por el modelo entrenado con GRPO. La tecnica empleada es DARE TIES (arxiv:2311.03099), que poda y reescala los deltas de tarea antes de combinarlos, reduciendo la interferencia entre pesos cuando se mezclan modelos con especializaciones distintas.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| konkani-qwen2-1.5b-v3-aligned-dare-ties-grpo | 1,54B | no disponible (referencia Qwen2-1.5B: 32.768 tokens) | no disponible | HuggingFace, safetensors bf16 | Fusion DARE TIES de un modelo de konkani y uno de GRPO/GSM8K; sin evaluacion publicada |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens, ampliable a 131.072 con YaRN | Apache-2.0 | HuggingFace, safetensors y GGUF | Modelo oficial multilingue con soporte declarado de tool calling; benchmarks publicados |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, safetensors y GGUF | Alternativa de tamano similar con contexto largo y amplia adopcion en el ecosistema |
-| Gemma-2-2B-it | 2,61B | 8.192 tokens | Terminos de uso de Gemma | HuggingFace, safetensors | Mayor numero de parametros y contexto mas corto; buen rendimiento en razonamiento segun los benchmarks publicados por Google |
+| konkani-qwen2-1.5b-v3-aligned-dare-ties-grpo | 1,54B | no disponible (referencia Qwen2-1.5B: 32.768 tokens) | no disponible | Hugging Face, safetensors bf16 | Fusion DARE TIES de un modelo de konkani y uno de GRPO/GSM8K; sin evaluacion publicada |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens, ampliable a 131.072 con YaRN | Apache-2.0 | Hugging Face, safetensors y GGUF | Modelo oficial multilingue con soporte declarado de tool calling; benchmarks publicados |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, safetensors y GGUF | Alternativa de tamano similar con contexto largo y amplia adopcion en el ecosistema |
+| Gemma-2-2B-it | 2,61B | 8.192 tokens | Terminos de uso de Gemma | Hugging Face, safetensors | Mayor numero de parametros y contexto mas corto; buen rendimiento en razonamiento segun los benchmarks publicados por Google |
 
 No se dispone de resultados de benchmarks de este checkpoint, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Los datos de contexto y licencia de las alternativas corresponden a sus fichas publicas y no a mediciones realizadas sobre este modelo.
 
@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks de este checkpoint, por lo que la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nischay185/konkani-qwen2-1.5b-v3-aligned-dare-ties-grpo
+- Modelo en Hugging Face: https://huggingface.co/nischay185/konkani-qwen2-1.5b-v3-aligned-dare-ties-grpo
 - Modelo base de la fusion: https://huggingface.co/nischay185/konkani-qwen2-1.5b-v3-alignment-full
 - Modelo donante entrenado con GRPO sobre GSM8K: https://huggingface.co/npatel121/qwen2-1.5b-grpo-gsm8k
 - Repositorio de mergekit: https://github.com/cg123/mergekit

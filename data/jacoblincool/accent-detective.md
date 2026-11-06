@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables de identificación de ac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JacobLinCool/accent-detective
+- Hugging Face: https://huggingface.co/JacobLinCool/accent-detective
 - Profesor wav2vec2: https://huggingface.co/TencentGameMate/chinese-wav2vec2-base
 - Profesor HuBERT: https://huggingface.co/TencentGameMate/chinese-hubert-base
 - Dataset de evaluación mencionado: Common Voice (https://commonvoice.mozilla.org/)

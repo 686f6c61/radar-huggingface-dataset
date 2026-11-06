@@ -6,7 +6,7 @@ Laya es un modelo de decisión no autorregresivo de tipo "System 1" desarrollado
 
 La innovación central es su entrenamiento mediante RLCD (Reinforcement Learning for Calibrated Decisions): la política emite una distribución sobre las opciones definidas en tiempo de petición, se añade ruido gaussiano de media cero a los logits durante la exploración y la recompensa es una regla de puntuación estrictamente propia (log + spherical, más ranked probability score para preguntas ordinales). Como el único modo de maximizar la recompensa esperada es reportar probabilidades sinceras, el modelo queda calibrado por construcción y, al no generar texto, no hay nada que parsear ni nada que alucinar. El repositorio aloja tres checkpoints: el inglés en la raíz, uno multilingüe (mmBERT-base, 322M, contexto 1024) y uno orientado a flujos de decisiones tipadas (ModernBERT-large, 421M, contexto 1024).
 
-Es relevante ahora porque ofrece una alternativa de 33-39,5 ms por pregunta frente a los 236-276 ms p50 medidos de forma independiente para TypeSafe Jev, es decir, entre 6 y 7 veces más rápido, con licencia Apache 2.0 y uso comercial permitido. Según la model card, el espacio de respuestas se define en la petición, de modo que esquemas nuevos no requieren reentrenamiento. Existe una discrepancia de identidad: la página de HuggingFace consultada es `akpsahan/laya`, mientras que la model card y los ejemplos de código apuntan a `convaiinnovations/laya`.
+Es relevante ahora porque ofrece una alternativa de 33-39,5 ms por pregunta frente a los 236-276 ms p50 medidos de forma independiente para TypeSafe Jev, es decir, entre 6 y 7 veces más rápido, con licencia Apache 2.0 y uso comercial permitido. Según la model card, el espacio de respuestas se define en la petición, de modo que esquemas nuevos no requieren reentrenamiento. Existe una discrepancia de identidad: la página de Hugging Face consultada es `akpsahan/laya`, mientras que la model card y los ejemplos de código apuntan a `convaiinnovations/laya`.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ Es relevante ahora porque ofrece una alternativa de 33-39,5 ms por pregunta fren
 | Parametros totales | 421.293.830 (421M) para el checkpoint ingles y el de typed-decisions; 322M para el checkpoint multilingue |
 | Longitud de contexto | 512 tokens por pregunta (pregunta + opciones + estado) en el checkpoint ingles; 1024 tokens en los checkpoints multilingue y typed-decisions |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada |
-| Idiomas soportados | Checkpoint raiz: ingles. Subcarpeta `multilingual`: mas de 100 idiomas. El campo de idiomas de la pagina de HuggingFace figura como no disponible |
+| Idiomas soportados | Checkpoint raiz: ingles. Subcarpeta `multilingual`: mas de 100 idiomas. El campo de idiomas de la pagina de Hugging Face figura como no disponible |
 | Licencia | Apache 2.0 (uso comercial permitido) |
 | Formato de pesos | safetensors |
 
@@ -68,7 +68,7 @@ Throughput declarado en modo batch: entre 103 y 332 preguntas por segundo. El re
 - VRAM estimada: no disponible en la informacion proporcionada. Como referencia derivada del recuento real de parametros (421,3M), los pesos ocuparian aproximadamente 1,7 GB en fp32, 0,85 GB en fp16/bf16, 0,42 GB en int8 y 0,21 GB en int4, antes de sumar activaciones y overhead del runtime. El repositorio completo ocupa 2,4 GB porque aloja tres checkpoints, pero solo se descarga el que se solicita.
 - GPU recomendadas: no hay una lista publicada. El autor reporta mediciones en Tesla T4 y en CPU, lo que indica que el modelo funciona en hardware modesto; el checkpoint raiz tardo una mediana de 7,4 s en CPU y 10,3 s en T4 en la reconstruccion en frio del checkpoint.
 - GPU de consumo: por tamano (0,85 GB en fp16 y ~0,21 GB en int4) cabe en practicamente cualquier GPU de consumo con 4 GB o mas de VRAM, incluidas GTX 1650, RTX 3060, RTX 4060 y superiores. No se han publicado mediciones especificas en estas tarjetas.
-- Opciones de despliegue: el modelo esta en formato safetensors y se carga con la libreria `transformers` (pipeline `text-classification`), ademas del paquete propio `laya` (`pip install laya`), que expone `laya.load(...)` y la clase `Router`. La etiqueta `endpoints_compatible` esta presente, por lo que es compatible con HuggingFace Inference Endpoints. No se documenta soporte para vLLM, TGI, llama.cpp, Ollama ni GGUF, coherente con que no es un modelo generativo.
+- Opciones de despliegue: el modelo esta en formato safetensors y se carga con la libreria `transformers` (pipeline `text-classification`), ademas del paquete propio `laya` (`pip install laya`), que expone `laya.load(...)` y la clase `Router`. La etiqueta `endpoints_compatible` esta presente, por lo que es compatible con Hugging Face Inference Endpoints. No se documenta soporte para vLLM, TGI, llama.cpp, Ollama ni GGUF, coherente con que no es un modelo generativo.
 - Latencia y throughput: 39,5 ms para una pregunta y 158,6 ms para diez en T4 con el checkpoint ingles; 32,8 ms y 72,3 ms respectivamente con el multilingue; 771 ms y 337 ms para 50 preguntas. Entre 103 y 332 preguntas por segundo en batch.
 - Advertencia de arranque: si `laya.load()` se queda colgado, se recomienda ejecutar con `USE_TF=0`, porque `transformers` sondea TensorFlow al importar y su runtime abseil puede bloquear la construccion del modelo.
 
@@ -99,7 +99,7 @@ Las cifras de Jev provienen de benchmarks publicados por terceros (AbdelStark y 
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/akpsahan/laya
+- Pagina de Hugging Face del modelo: https://huggingface.co/akpsahan/laya
 - Checkpoint multilingue referenciado en la model card: https://huggingface.co/convaiinnovations/laya-multilingual
 - Benchmark independiente de TypeSafe Jev (AbdelStark): https://github.com/AbdelStark/jev-benchmarks
 - Benchmark independiente de modelos de decision (nibzard): https://github.com/nibzard/decision-model-benchmark

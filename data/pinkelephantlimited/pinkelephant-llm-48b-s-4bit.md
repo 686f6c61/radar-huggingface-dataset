@@ -88,7 +88,7 @@ La comparativa se basa en la arquitectura y tamano, ya que no hay datos de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace (4-bit): https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b-s-4bit
+- Modelo en Hugging Face (4-bit): https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b-s-4bit
 - Modelo base (48B-S): https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b
 - Repositorio GitHub de Pink Elephant LLM: https://github.com/pinkelephantlimited/pink-elephant-llm
 - Organizacion en GitHub: https://github.com/pinkelephantlimited/

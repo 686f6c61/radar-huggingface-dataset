@@ -70,7 +70,7 @@ La informacion proporcionada no incluye datos cuantitativos de modelos alternati
 
 | Modelo | Parametros | Contexto o ventana | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| Perch v2 (PyTorch, este repo) | 101.757.263 | ventanas de 5 s a 32 kHz | Apache 2.0 | HuggingFace (port no oficial) y Kaggle (release oficial) | no disponible en esta informacion |
+| Perch v2 (PyTorch, este repo) | 101.757.263 | ventanas de 5 s a 32 kHz | Apache 2.0 | Hugging Face (port no oficial) y Kaggle (release oficial) | no disponible en esta informacion |
 | Perch v1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | BirdNET | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ La informacion proporcionada no incluye datos cuantitativos de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matijama/perch-v2-pytorch
+- Modelo en Hugging Face: https://huggingface.co/matijama/perch-v2-pytorch
 - Repositorio de codigo, ejemplos y documentacion: https://github.com/matijama/perch-v2-pytorch
 - Articulo de Perch 2.0 (arXiv:2508.04665): https://arxiv.org/abs/2508.04665
 - Release oficial de Google en Kaggle (bird-vocalization-classifier, `perch_v2`): https://www.kaggle.com/models/google/bird-vocalization-classifier

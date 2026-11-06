@@ -87,7 +87,7 @@ La comparación detallada con alternativas de rendimiento no es posible porque n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zed122/merged2
+- Modelo en Hugging Face: https://huggingface.co/zed122/merged2
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.5-4B
 - Segundo checkpoint del merge: https://huggingface.co/xtools-at/Qwen3.5-4B-Claude-3xMerge-Jackrong
 - mergekit (herramienta de merge): https://github.com/cg123/mergekit

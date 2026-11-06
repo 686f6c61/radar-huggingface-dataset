@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `RamyTzor2/KK` aloja un modelo publicado en HuggingFace por el usuario RamyTzor2 bajo licencia Apache-2.0. El tamaño del repositorio es de 0,5 GB, lo que sugiere un modelo de pequeñas dimensiones, probablemente un fine-tuning o un experimento personal. Sin embargo, la model card está vacía (solo incluye la cabecera de licencia) y no se proporciona ninguna información sobre arquitectura, parámetros, entrenamiento o capacidades. No se dispone de datos de descargas ni de valoraciones de la comunidad.
+El repositorio `RamyTzor2/KK` aloja un modelo publicado en Hugging Face por el usuario RamyTzor2 bajo licencia Apache-2.0. El tamaño del repositorio es de 0,5 GB, lo que sugiere un modelo de pequeñas dimensiones, probablemente un fine-tuning o un experimento personal. Sin embargo, la model card está vacía (solo incluye la cabecera de licencia) y no se proporciona ninguna información sobre arquitectura, parámetros, entrenamiento o capacidades. No se dispone de datos de descargas ni de valoraciones de la comunidad.
 
 La relevancia de este modelo es actualmente indeterminada: al carecer de documentación técnica y de resultados de evaluación, no es posible determinar qué problema resuelve ni por qué debería considerarse frente a alternativas establecidas. Los resultados de búsqueda web relacionados con Kimi K2 de Moonshot AI no tienen relación verificable con este repositorio, por lo que no se pueden atribuir características de aquel modelo a este. En su estado actual, el repositorio no ofrece información suficiente para una evaluación técnica rigurosa.
 
@@ -53,6 +53,6 @@ No disponible. No se conocen modelos comparables de la misma categoria porque no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RamyTzor2/KK
+- Repositorio Hugging Face: https://huggingface.co/RamyTzor2/KK
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este modelo.

@@ -78,7 +78,7 @@ La comparativa se basa en características generales, ya que no se dispone de be
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mradermacher/FrenchLlama-3.2-3B-Instruct-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/FrenchLlama-3.2-3B-Instruct-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/CreativeAlloyYT/FrenchLlama-3.2-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sufi2425/French_Grammar_Explanations
 - Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

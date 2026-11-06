@@ -80,9 +80,9 @@ La comparativa se basa en datos publicos de los modelos originales. `kerasformer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kerasformers/qwen2-7b-instruct
+- Hugging Face: https://huggingface.co/kerasformers/qwen2-7b-instruct
 - Paper tecnico de Qwen2: https://arxiv.org/abs/2407.10671
-- Paper en HuggingFace: https://huggingface.co/papers/2407.10671
+- Paper en Hugging Face: https://huggingface.co/papers/2407.10671
 - Repositorio de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de Qwen2 en KerasFormers: https://imvision12.github.io/KerasFormers/qwen2/
 - Guia de carga de pesos: https://imvision12.github.io/KerasFormers/loading_weights/

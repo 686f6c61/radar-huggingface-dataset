@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-banking77-lora_nclasshead es un adaptador LoRA (PEFT) publicado por el usuario AzadDjan sobre el modelo base meta-llama/Llama-3.2-3B, ajustado para clasificación de intenciones en el dominio bancario. El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no el modelo completo, y su pipeline declarado en HuggingFace es text-generation aunque la tarea real evaluada sea text-classification sobre el dataset PolyAI/banking77 (77 intenciones de atención al cliente bancaria).
+Llama-3.2-3B-banking77-lora_nclasshead es un adaptador LoRA (PEFT) publicado por el usuario AzadDjan sobre el modelo base meta-llama/Llama-3.2-3B, ajustado para clasificación de intenciones en el dominio bancario. El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no el modelo completo, y su pipeline declarado en Hugging Face es text-generation aunque la tarea real evaluada sea text-classification sobre el dataset PolyAI/banking77 (77 intenciones de atención al cliente bancaria).
 
 El interés práctico del modelo reside en su enfoque: en lugar de entrenar un encoder discriminativo clásico (BERT, DistilBERT), el autor ajusta un LLM decoder de 3.200 millones de parámetros para que complete el nombre de la intención tras un prompt fijo, obteniendo un 92,76 % de accuracy y un 92,93 % de macro F1 en el split de test según los resultados declarados en su model card (no verificados). Esto lo convierte en un ejemplo de clasificación generativa con un LLM pequeño, aprovechando la ventana de contexto de 128.000 tokens del modelo base y su capacidad de seguir instrucciones.
 
@@ -112,7 +112,7 @@ Solo se dispone de cifras verificables para este adaptador. La comparación con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AzadDjan/Llama-3.2-3B-banking77-lora_nclasshead
+- Modelo en Hugging Face: https://huggingface.co/AzadDjan/Llama-3.2-3B-banking77-lora_nclasshead
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Dataset de ajuste (Banking77): https://huggingface.co/datasets/PolyAI/banking77
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

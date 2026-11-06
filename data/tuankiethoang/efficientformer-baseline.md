@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tuankiethoang/efficientformer-baseline` es un repositorio de HuggingFace que contiene una implementación propia y de tamano reducido de la arquitectura EfficientFormer, configurada para un escenario multitarea. No es un modelo entrenado ni publicado para uso general: el propio autor lo describe como un punto de partida reproducible, con un checkpoint de inicializacion valido unicamente para pruebas de humo. El repositorio acumula 0 descargas y 0 likes, y fue creado el 14 de septiembre de 2026.
+`tuankiethoang/efficientformer-baseline` es un repositorio de Hugging Face que contiene una implementación propia y de tamano reducido de la arquitectura EfficientFormer, configurada para un escenario multitarea. No es un modelo entrenado ni publicado para uso general: el propio autor lo describe como un punto de partida reproducible, con un checkpoint de inicializacion valido unicamente para pruebas de humo. El repositorio acumula 0 descargas y 0 likes, y fue creado el 14 de septiembre de 2026.
 
 El tamano declarado en los pesos es excepcionalmente pequeno: 49.600 parametros en `model.safetensors`, muy lejos de las variantes de referencia de la familia EfficientFormer, que suelen manejarse en el orden de millones de parametros. La model card describe atencion estandar, fusion Tucker, activacion swish y normalizacion InstanceNorm, con una receta por defecto basada en el optimizador Adafactor y un scheduler coseno. No se especifican idiomas, tarea concreta ni composicion del dataset.
 
@@ -78,5 +78,5 @@ No disponible. No se han proporcionado datos de modelos comparables (ni parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tuankiethoang/efficientformer-baseline
+- Modelo en Hugging Face: https://huggingface.co/tuankiethoang/efficientformer-baseline
 - No se han encontrado enlaces adicionales relevantes: los resultados de la busqueda web proporcionada no guardan relacion con el modelo (corresponden a portales informativos de la localidad de Pultusk, Polonia). No se dispone de paper, blog, repositorio de codigo ni demo asociados a este repositorio en la informacion disponible.

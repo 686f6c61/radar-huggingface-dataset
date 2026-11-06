@@ -107,7 +107,7 @@ La comparacion de rendimiento, calidad o coste por token entre estos modelos y e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-Uncensored-oQ6e-mtp
+- Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-Uncensored-oQ6e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Repositorio de la organizacion: https://huggingface.co/mlx-community
 - Paper, blog o demo oficial del modelo base: no disponible

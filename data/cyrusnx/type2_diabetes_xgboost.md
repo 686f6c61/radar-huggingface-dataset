@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyrusnx/type2_diabetes_xgboost` es un artefacto publicado en HuggingFace por el usuario `cyrusnx` bajo el identificador de un modelo de clasificación o regresión basado en XGBoost orientado a la predicción de diabetes tipo 2. No se trata de un modelo de lenguaje ni de una red neuronal profunda: el tag `joblib` indica que el repositorio contiene un objeto serializado de scikit-learn/XGBoost que debe cargarse con `joblib.load()` en Python. El tamaño del repositorio es de 0.0 GB según la plataforma, lo que sugiere un artefacto muy pequeño o que el peso no se ha subido correctamente.
+`cyrusnx/type2_diabetes_xgboost` es un artefacto publicado en Hugging Face por el usuario `cyrusnx` bajo el identificador de un modelo de clasificación o regresión basado en XGBoost orientado a la predicción de diabetes tipo 2. No se trata de un modelo de lenguaje ni de una red neuronal profunda: el tag `joblib` indica que el repositorio contiene un objeto serializado de scikit-learn/XGBoost que debe cargarse con `joblib.load()` en Python. El tamaño del repositorio es de 0.0 GB según la plataforma, lo que sugiere un artefacto muy pequeño o que el peso no se ha subido correctamente.
 
 La relevancia de este tipo de publicaciones es limitada desde el punto de vista técnico: la model card está prácticamente vacía (solo contiene la declaración de licencia MIT), no se especifican datos de entrenamiento, métricas, features de entrada ni el problema exacto que resuelve. Para un desarrollador o investigador que necesite evaluar el modelo, la información disponible es insuficiente para determinar su calidad, validez clínica o reproducibilidad.
 
@@ -38,7 +38,7 @@ No hay evidencia de innovaciones técnicas destacables: no se mencionan técnica
 ## Casos de uso
 
 - Prototipado rápido de clasificación de riesgo de diabetes: un equipo de ciencia de datos podría cargar el artefacto con `joblib.load()` y evaluar su comportamiento sobre un dataset propio para comparar con modelos base, siempre que documente previamente las features esperadas.
-- Docencia y ejemplos de despliegue de modelos tabulares: útil como ejemplo mínimo de cómo se publica un modelo XGBoost en HuggingFace con licencia MIT, aunque la falta de model card lo hace poco didáctico.
+- Docencia y ejemplos de despliegue de modelos tabulares: útil como ejemplo mínimo de cómo se publica un modelo XGBoost en Hugging Face con licencia MIT, aunque la falta de model card lo hace poco didáctico.
 - Integración en pipelines de scikit-learn: al ser un objeto serializado, puede insertarse en un `Pipeline` con un `StandardScaler` o un `ColumnTransformer` si se conoce el orden y tipo de las features.
 - Evaluación comparativa de artefactos pequeños: sirve como caso de estudio de repositorios con documentación insuficiente y de los riesgos de publicar modelos sin métricas ni datasheet.
 - Despliegue en entornos con recursos limitados: un modelo de gradient boosting ocupa típicamente pocos megabytes y puede ejecutarse en CPU sin GPU, lo que encaja en servicios serverless o dispositivos edge.
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada para inferencia: 0 GB (modelo tabular de gradient boosting, se ejecuta en CPU).
 - GPU recomendadas: no aplica; XGBoost puede usar GPU con el parámetro `tree_method='gpu_hist'`, pero para un artefacto de este tamaño no es necesario.
-- Cabe en cualquier CPU consumer: el tamaño del repositorio es de 0.0 GB según HuggingFace, aunque conviene verificar el tamaño real del fichero joblib tras la descarga.
+- Cabe en cualquier CPU consumer: el tamaño del repositorio es de 0.0 GB según Hugging Face, aunque conviene verificar el tamaño real del fichero joblib tras la descarga.
 - Opciones de despliegue: `joblib.load()` en Python, integración en FastAPI/Flask, exportación a ONNX o a formato Treelite si se necesita inferencia de baja latencia, o servicio con `xgboost` nativo.
 - Latencia y throughput estimados: no disponibles; dependerán del número de árboles y de la profundidad, que no se documentan.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|
-| cyrusnx/type2_diabetes_xgboost | XGBoost tabular | MIT | Prácticamente inexistente (solo licencia) | HuggingFace, 0 descargas |
+| cyrusnx/type2_diabetes_xgboost | XGBoost tabular | MIT | Prácticamente inexistente (solo licencia) | Hugging Face, 0 descargas |
 | Modelos de riesgo de diabetes en repositorios clínicos (p. ej. PIMA Indians Diabetes baselines) | Regresión logística, Random Forest, XGBoost | Variable (MIT, Apache-2.0, GPL) | Habitualmente con métricas AUC/F1 | Kaggle, GitHub, UCI |
 | Frameworks de ML clínico como `sklearn` pipelines documentados | Varios | BSD-3 | Completa | PyPI, documentación oficial |
 
@@ -79,5 +79,5 @@ No se dispone de información suficiente para comparar rendimiento numérico con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyrusnx/type2_diabetes_xgboost
+- Hugging Face: https://huggingface.co/cyrusnx/type2_diabetes_xgboost
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (Mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/modal-labs/Qwen3.8-2.4T-A95B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/modal-labs/Qwen3.8-2.4T-A95B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Blog de NVIDIA sobre despliegue: https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/
 - Página de QwenCloud: https://www.qwencloud.com/models/qwen3.8-2.4t-a95b

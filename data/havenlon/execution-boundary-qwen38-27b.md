@@ -77,5 +77,5 @@ No se dispone de información sobre modelos comparables. Dado que el modelo se p
 
 ## Enlaces
 
-- [HuggingFace: Havenlon/Execution-Boundary-Qwen38-27B](https://huggingface.co/Havenlon/Execution-Boundary-Qwen38-27B)
+- [Hugging Face: Havenlon/Execution-Boundary-Qwen38-27B](https://huggingface.co/Havenlon/Execution-Boundary-Qwen38-27B)
 - [havenlon.com](http://havenlon.com) (mencionado en la model card)

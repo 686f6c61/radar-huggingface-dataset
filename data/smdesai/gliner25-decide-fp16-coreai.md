@@ -94,8 +94,8 @@ Nota de rendimiento: la primera carga especializa el activo para el dispositivo 
 
 | Modelo | Parametros | Contexto | Formato / plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLiNER25-Decide-FP16-CoreAI (este) | no disponible | 128 / 256 / 512 | Core AI `.aimodel` FP16, iOS/macOS 27+ | Apache-2.0 | HuggingFace (repo smdesai) |
-| fastino/GLiNER2.5-Decide (base) | no disponible | no disponible | PyTorch (origen del export) | Apache-2.0 | HuggingFace (repo fastino) |
+| GLiNER25-Decide-FP16-CoreAI (este) | no disponible | 128 / 256 / 512 | Core AI `.aimodel` FP16, iOS/macOS 27+ | Apache-2.0 | Hugging Face (repo smdesai) |
+| fastino/GLiNER2.5-Decide (base) | no disponible | no disponible | PyTorch (origen del export) | Apache-2.0 | Hugging Face (repo fastino) |
 
 No se dispone de datos de benchmarks ni de otros artefactos Core AI comparables en la informacion proporcionada, por lo que no es posible una comparacion de rendimiento entre alternativas. El único punto de referencia directo es el propio modelo base en PyTorch FP32, usado como oraculo en la validacion.
 
@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks ni de otros artefactos Core AI comparables 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/smdesai/GLiNER25-Decide-FP16-CoreAI
+- Hugging Face (este modelo): https://huggingface.co/smdesai/GLiNER25-Decide-FP16-CoreAI
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Revision del checkpoint de origen: `bbe10ff77ebb238777c17d3a8ac9260e30929057`
 - Model card original incluida en el repo: `model-card.md` (fastino/GLiNER2.5-Decide, Apache-2.0)

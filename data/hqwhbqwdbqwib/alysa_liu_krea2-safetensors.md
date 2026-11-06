@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hqwhbqwdbqwib/alysa_liu_krea2.safetensors` es un adaptador LoRA de texto a imagen distribuido en HuggingFace para el modelo base `krea/Krea-2-Turbo`. El repositorio pesa 0,2 GB y contiene un unico archivo en formato safetensors, compatible con la libreria `diffusers`. Lo publica una cuenta pseudonima (`hqwhbqwdbqwib`) sin historial verificable, sin licencia declarada, sin idiomas declarados y sin documentacion tecnica: la model card se limita a un titulo, un widget de ejemplo y un enlace a la pestana de archivos. En el momento de la consulta acumula 0 descargas y 0 likes.
+`hqwhbqwdbqwib/alysa_liu_krea2.safetensors` es un adaptador LoRA de texto a imagen distribuido en Hugging Face para el modelo base `krea/Krea-2-Turbo`. El repositorio pesa 0,2 GB y contiene un unico archivo en formato safetensors, compatible con la libreria `diffusers`. Lo publica una cuenta pseudonima (`hqwhbqwdbqwib`) sin historial verificable, sin licencia declarada, sin idiomas declarados y sin documentacion tecnica: la model card se limita a un titulo, un widget de ejemplo y un enlace a la pestana de archivos. En el momento de la consulta acumula 0 descargas y 0 likes.
 
 El dato relevante no es su calidad tecnica, que no puede evaluarse, sino su finalidad declarada. El unico prompt incluido en la model card del propio autor describe explicitamente la generacion de imagenes fotorealistas de una mujer desnuda, con indicaciones de composicion de cuerpo entero. El nombre del repositorio coincide con el de una patinadora artistica real y figura publica estadounidense, lo que apunta a un adaptador de bajo rango entrenado para reproducir la apariencia de una persona identificable en contextos sexualizados.
 
@@ -66,7 +66,7 @@ No disponible. No se ha proporcionado informacion sobre adaptadores comparables,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alysa_liu_krea2 | no disponible | no aplica | sin datos | no disponible | HuggingFace, 0 descargas |
+| alysa_liu_krea2 | no disponible | no aplica | sin datos | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. No se ha proporcionado informacion sobre adaptadores comparables,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hqwhbqwdbqwib/alysa_liu_krea2.safetensors
+- Modelo en Hugging Face: https://huggingface.co/hqwhbqwdbqwib/alysa_liu_krea2.safetensors
 - Archivos y versiones: https://huggingface.co/hqwhbqwdbqwib/alysa_liu_krea2.safetensors/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog, repositorio o demo del adaptador: no disponible

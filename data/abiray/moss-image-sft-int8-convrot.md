@@ -82,8 +82,8 @@ No se dispone de datos de benchmarks comparativos. La comparacion se limita a ca
 
 | Modelo | Parametros | Precision | Tamano de pesos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Abiray/MOSS-Image-SFT-INT8-convrot | DiT ~5B + encoder Qwen3.5 (total no disponible) | INT8 ConvRot + VAE BF16 | ~14,1 GB | no disponible | Apache-2.0 | HuggingFace, workflow ComfyUI incluido |
-| OpenMOSS-Team/MOSS-Image-SFT (modelo base) | DiT ~5B declarado en la model card | BF16 | ~26 GB segun los datos de conversion | no disponible | no disponible | HuggingFace |
+| Abiray/MOSS-Image-SFT-INT8-convrot | DiT ~5B + encoder Qwen3.5 (total no disponible) | INT8 ConvRot + VAE BF16 | ~14,1 GB | no disponible | Apache-2.0 | Hugging Face, workflow ComfyUI incluido |
+| OpenMOSS-Team/MOSS-Image-SFT (modelo base) | DiT ~5B declarado en la model card | BF16 | ~26 GB segun los datos de conversion | no disponible | no disponible | Hugging Face |
 | Otras cuantizaciones INT8/FP8 de DiT de difusion (familia FLUX y similares) | no disponible | INT8/FP8 | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparativos. La comparacion se limita a ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abiray/MOSS-Image-SFT-INT8-convrot
+- Repositorio Hugging Face: https://huggingface.co/Abiray/MOSS-Image-SFT-INT8-convrot
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Workflow de ComfyUI incluido en el repositorio: https://huggingface.co/Abiray/MOSS-Image-SFT-INT8-convrot/blob/main/moss-image_comfyUI_workflow.json
 - Articulo o paper del metodo ConvRot: no disponible

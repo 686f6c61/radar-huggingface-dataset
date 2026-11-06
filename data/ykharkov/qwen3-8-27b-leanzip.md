@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-LeanZip es un modelo publicado en HuggingFace por el usuario ykharkov bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una variante o derivado de la familia Qwen3, con aproximadamente 27 mil millones de parametros, y el sufijo "LeanZip" sugiere algun tipo de optimizacion de compresion o reduccion de peso respecto al modelo base. Sin embargo, la model card publicada no contiene ninguna descripcion tecnica, documentacion de entrenamiento ni detalles sobre el proceso de transformacion aplicado.
+Qwen3.8-27B-LeanZip es un modelo publicado en Hugging Face por el usuario ykharkov bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una variante o derivado de la familia Qwen3, con aproximadamente 27 mil millones de parametros, y el sufijo "LeanZip" sugiere algun tipo de optimizacion de compresion o reduccion de peso respecto al modelo base. Sin embargo, la model card publicada no contiene ninguna descripcion tecnica, documentacion de entrenamiento ni detalles sobre el proceso de transformacion aplicado.
 
 La informacion disponible es extremadamente limitada: el repositorio no incluye pipeline declarado, no especifica idiomas soportados, no registra descargas ni interacciones, y la model card se reduce a la declaracion de licencia. Esto impide verificar la arquitectura exacta, el contexto soportado, el proceso de cuantizacion o los datos de entrenamiento. Cualquier evaluacion rigurosa del modelo requeriria inspeccionar directamente los pesos y la configuracion del repositorio.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-LeanZip | ~27B (inferido) | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3 base (familia) | variable | no disponible en esta ficha | Apache 2.0 (segun familia Qwen) | HuggingFace |
+| Qwen3.8-27B-LeanZip | ~27B (inferido) | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3 base (familia) | variable | no disponible en esta ficha | Apache 2.0 (segun familia Qwen) | Hugging Face |
 | Alternativas de ~27-30B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos alternativos de la misma categoria. No se conocen datos de rendimiento del modelo evaluado ni de sus posibles competidores directos en el momento de redactar esta ficha.
@@ -84,5 +84,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ykharkov/Qwen3.8-27B-LeanZip
+- Repositorio Hugging Face: https://huggingface.co/ykharkov/Qwen3.8-27B-LeanZip
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

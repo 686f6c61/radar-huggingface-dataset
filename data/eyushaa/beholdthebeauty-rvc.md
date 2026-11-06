@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BeholdTheBeauty-RVC es un artefacto publicado en HuggingFace por el usuario eYushaa bajo el identificador `eYushaa/BeholdTheBeauty-RVC`. Por la nomenclatura del repositorio y su tamano (0,1 GB), se trata de un modelo de conversion de voz (voice conversion) basado en RVC (Retrieval-based Voice Conversion), no de un modelo de lenguaje. La model card publicada no contiene mas que la declaracion de licencia, sin descripcion tecnica, datos de entrenamiento ni instrucciones de uso.
+BeholdTheBeauty-RVC es un artefacto publicado en Hugging Face por el usuario eYushaa bajo el identificador `eYushaa/BeholdTheBeauty-RVC`. Por la nomenclatura del repositorio y su tamano (0,1 GB), se trata de un modelo de conversion de voz (voice conversion) basado en RVC (Retrieval-based Voice Conversion), no de un modelo de lenguaje. La model card publicada no contiene mas que la declaracion de licencia, sin descripcion tecnica, datos de entrenamiento ni instrucciones de uso.
 
 El repositorio no presenta pipeline declarado, no tiene descargas ni interacciones, y fue creado y actualizado el mismo dia (5 de noviembre de 2026). Esto sugiere una publicacion reciente, sin validacion por parte de la comunidad y sin documentacion asociada. La ausencia de informacion tecnica impide verificar la calidad, el origen de los datos de entrenamiento o las condiciones reales de uso del modelo.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables verificables a partir de la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eYushaa/BeholdTheBeauty-RVC
+- Repositorio en Hugging Face: https://huggingface.co/eYushaa/BeholdTheBeauty-RVC
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

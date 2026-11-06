@@ -121,5 +121,5 @@ La comparación de rendimiento con estos modelos no está disponible en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RuVI-AI/Pragya-EXP3-CHAT
+- Modelo en Hugging Face: https://huggingface.co/RuVI-AI/Pragya-EXP3-CHAT
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

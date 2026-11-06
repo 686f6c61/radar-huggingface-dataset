@@ -4,7 +4,7 @@
 
 Los adaptadores MTG Oracle son un conjunto de LoRA de investigación publicados por el usuario vishvananda sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. No se trata de un modelo completo, sino de cinco adaptadores PEFT acumulativos archivados el 26 de octubre de 2026, cada uno con su tokenizador, configuración de entrenamiento y limitaciones documentadas. El objetivo del proyecto es la generación de texto relacionada con cartas de Magic: The Gathering, aunque los propios resultados reportados por el autor indican mejoras marginales y regresiones en varios experimentos.
 
-El interés técnico del artefacto es doble: por un lado, documenta un protocolo de experimentación reproducible con hashes SHA-256 y un manifiesto de archivo; por otro, ejemplifica un caso de publicación de resultados negativos o ambiguos en HuggingFace, algo poco habitual. El modelo base aporta la arquitectura y el conocimiento general; los adaptadores solo modifican una fracción de los pesos mediante LoRA.
+El interés técnico del artefacto es doble: por un lado, documenta un protocolo de experimentación reproducible con hashes SHA-256 y un manifiesto de archivo; por otro, ejemplifica un caso de publicación de resultados negativos o ambiguos en Hugging Face, algo poco habitual. El modelo base aporta la arquitectura y el conocimiento general; los adaptadores solo modifican una fracción de los pesos mediante LoRA.
 
 No debe confundirse con el generador desplegado en producción: el autor indica explícitamente que estos son artefactos de investigación y no un sustituto del generador operativo.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mtg-oracle-qwen3-4b-research-adapters | 4B (base) + LoRA | no disponible | apache-2.0 | HuggingFace, 0 descargas | Adaptadores de investigación, resultados mixtos |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la información | apache-2.0 | HuggingFace | Modelo base sin ajuste de dominio |
-| Adaptadores LoRA de dominio público comparables | variable | variable | variable | HuggingFace | No se dispone de una comparación directa verificable |
+| mtg-oracle-qwen3-4b-research-adapters | 4B (base) + LoRA | no disponible | apache-2.0 | Hugging Face, 0 descargas | Adaptadores de investigación, resultados mixtos |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la información | apache-2.0 | Hugging Face | Modelo base sin ajuste de dominio |
+| Adaptadores LoRA de dominio público comparables | variable | variable | variable | Hugging Face | No se dispone de una comparación directa verificable |
 
 No se dispone de datos de rendimiento comparables publicados para estos adaptadores frente a alternativas de la misma categoría.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables publicados para estos adaptado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vishvananda/mtg-oracle-qwen3-4b-research-adapters
+- Hugging Face: https://huggingface.co/vishvananda/mtg-oracle-qwen3-4b-research-adapters
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de checkpoints: https://huggingface.co/vishvananda/mtg-oracle-qwen3-4b-checkpoints-20261007/tree/epoch2-quarter-train-step-00024718
 - Rama de archivo en GitHub: https://github.com/vishvananda/mtg-oracle-generator/tree/archive/experiments-20261026

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Esta ficha describe una cuantización GGUF del modelo `Qwen2.5-14B-Instruct-ultrafeedback-iterdpo-iter3-RPO`, un ajuste fino por DPO iterativo del conocido Qwen2.5-14B-Instruct. El autor del ajuste original es el usuario de HuggingFace AmberYifan, mientras que las cuantizaciones han sido generadas por mradermacher, especialista en publicar versiones GGUF de modelos para su uso con llama.cpp y herramientas compatibles. El modelo parte de la familia Qwen2.5, desarrollada por Alibaba Cloud, y hereda su arquitectura transformer densa de aproximadamente 14.770 millones de parámetros.
+Esta ficha describe una cuantización GGUF del modelo `Qwen2.5-14B-Instruct-ultrafeedback-iterdpo-iter3-RPO`, un ajuste fino por DPO iterativo del conocido Qwen2.5-14B-Instruct. El autor del ajuste original es el usuario de Hugging Face AmberYifan, mientras que las cuantizaciones han sido generadas por mradermacher, especialista en publicar versiones GGUF de modelos para su uso con llama.cpp y herramientas compatibles. El modelo parte de la familia Qwen2.5, desarrollada por Alibaba Cloud, y hereda su arquitectura transformer densa de aproximadamente 14.770 millones de parámetros.
 
 El interés de esta variante radica en el proceso de alineamiento adicional: se ha aplicado DPO (Direct Preference Optimization) de forma iterativa sobre el modelo instruct original, usando el dataset UltraFeedback y tres iteraciones de entrenamiento con una variante denominada RPO. El objetivo es mejorar la calidad de las respuestas conversacionales y la preferencia humana respecto al modelo base, manteniendo el mismo tamaño y contexto. Al estar cuantizado en GGUF, el modelo puede ejecutarse en hardware de consumo con llama.cpp, Ollama o LM Studio, lo que lo hace accesible para prototipado local sin GPU de datacenter.
 
-La información disponible es limitada: no se detallan los hiperparámetros del entrenamiento DPO, no hay benchmarks publicados en la model card y la licencia no está especificada en los metadatos de HuggingFace. Esta ficha refleja únicamente los datos verificables y marca como "no disponible" todo aquello que no puede confirmarse.
+La información disponible es limitada: no se detallan los hiperparámetros del entrenamiento DPO, no hay benchmarks publicados en la model card y la licencia no está especificada en los metadatos de Hugging Face. Esta ficha refleja únicamente los datos verificables y marca como "no disponible" todo aquello que no puede confirmarse.
 
 ## Especificaciones técnicas
 
@@ -82,7 +82,7 @@ La comparación directa de rendimiento no es posible porque esta variante no pub
 
 ## Limitaciones y advertencias
 
-- **Licencia no especificada**: los metadatos de HuggingFace no indican licencia, lo que impide confirmar si el uso comercial está permitido. El modelo base Qwen2.5 se distribuye bajo Apache 2.0, pero el ajuste DPO podría introducir restricciones adicionales no documentadas.
+- **Licencia no especificada**: los metadatos de Hugging Face no indican licencia, lo que impide confirmar si el uso comercial está permitido. El modelo base Qwen2.5 se distribuye bajo Apache 2.0, pero el ajuste DPO podría introducir restricciones adicionales no documentadas.
 - **Idioma limitado**: solo se declara inglés en los metadatos, aunque el modelo base es multilingüe; el ajuste DPO puede haber degradado el rendimiento en otros idiomas.
 - **Riesgo de alucinación**: como todo LLM de 14B, puede generar información falsa con aparente seguridad, especialmente en dominios especializados.
 - **Sesgos**: no se documentan evaluaciones de sesgo; el dataset UltraFeedback y el proceso DPO pueden introducir sesgos de preferencia no analizados.
@@ -93,7 +93,7 @@ La comparación directa de rendimiento no es posible porque esta variante no pub
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-14B-Instruct-ultrafeedback-iterdpo-iter3-RPO-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-14B-Instruct-ultrafeedback-iterdpo-iter3-RPO-GGUF
 - Modelo base del ajuste (safetensors): https://huggingface.co/AmberYifan/Qwen2.5-14B-Instruct-ultrafeedback-iterdpo-iter3-RPO
 - Página de resumen del autor de las cuantizaciones: https://hf.tst.eu/model#Qwen2.5-14B-Instruct-ultrafeedback-iterdpo-iter3-RPO-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -68,9 +68,9 @@ Nota: estas metricas miden fidelidad a la cuantizacion, no rendimiento en tareas
 
 | Modelo | Parametros totales / activos | Cuantizacion | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-FP8-dynamic (este) | ~35,95 B / ~3 B | FP8 dynamic (W8A8) | Si (imagen-texto) | Apache-2.0 | HuggingFace, vLLM |
-| Qwen/Qwen3.6-35B-A3B (original) | ~35,95 B / ~3 B | BF16 | Si (imagen-texto) | Apache-2.0 | HuggingFace |
-| Qwen3-30B-A3B (generacion anterior) | ~30 B / ~3 B | BF16 y derivados FP8 de terceros | Variante con vision disponible | Apache-2.0 | HuggingFace, amplio ecosistema |
+| Qwen3.6-35B-A3B-FP8-dynamic (este) | ~35,95 B / ~3 B | FP8 dynamic (W8A8) | Si (imagen-texto) | Apache-2.0 | Hugging Face, vLLM |
+| Qwen/Qwen3.6-35B-A3B (original) | ~35,95 B / ~3 B | BF16 | Si (imagen-texto) | Apache-2.0 | Hugging Face |
+| Qwen3-30B-A3B (generacion anterior) | ~30 B / ~3 B | BF16 y derivados FP8 de terceros | Variante con vision disponible | Apache-2.0 | Hugging Face, amplio ecosistema |
 
 Nota: los datos de la generacion anterior se ofrecen como referencia de categoria; verifica las fichas oficiales para detalles actualizados.
 

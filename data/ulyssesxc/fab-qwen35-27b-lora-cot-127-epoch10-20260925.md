@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (fab-qwen35-27b-lora-cot-127-epoch10) | 233,5 M entrenables sobre base de 27B | No disponible | Sin benchmarks declarados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-27B (modelo base sin adaptador) | 27B (segun identificador) | No disponible en esta informacion | No disponible | No disponible en esta informacion | HuggingFace (referenciado como base) |
+| Este adaptador (fab-qwen35-27b-lora-cot-127-epoch10) | 233,5 M entrenables sobre base de 27B | No disponible | Sin benchmarks declarados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-27B (modelo base sin adaptador) | 27B (segun identificador) | No disponible en esta informacion | No disponible | No disponible en esta informacion | Hugging Face (referenciado como base) |
 | Otros adaptadores LoRA financieros comparables | No disponible | No disponible | No disponible | No disponible | No se han encontrado alternativas comparables en la informacion disponible |
 
 La busqueda web realizada no devolvio resultados relacionados con el modelo ni con adaptadores financieros comparables; los enlaces recuperados corresponden a un aviso consultivo de la Corte Internacional de Justicia de 2004 y no guardan relacion con el objeto de esta ficha.
@@ -99,7 +99,7 @@ La busqueda web realizada no devolvio resultados relacionados con el modelo ni c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/UlyssesXC/fab-qwen35-27b-lora-cot-127-epoch10-20260925
+- Hugging Face: https://huggingface.co/UlyssesXC/fab-qwen35-27b-lora-cot-127-epoch10-20260925
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Revision del base citada por el autor: fc05daec18b0a78c049392ed2e771dde82bdf654
 - LLaMA-Factory: no disponible en la informacion proporcionada

@@ -77,7 +77,7 @@ Los datos de modelos de la familia Iris distintos de `iris_1.3_cs-lite` proceden
 - Ajuste del token BOS: el propio autor advierte de un cambio en el comportamiento del BOS para compatibilidad con GGUF; conviene revisar la tokenizacion en integraciones propias.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Rev3auth/iris_1.3_cs-lite
+- Modelo en Hugging Face: https://huggingface.co/Rev3auth/iris_1.3_cs-lite
 - Modelo relacionado iris-1.3-lite: https://huggingface.co/Rev3auth/iris-1.3-lite
 - Modelo relacionado iris: https://huggingface.co/Rev3auth/iris
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

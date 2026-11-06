@@ -24,7 +24,7 @@ Su relevancia práctica está en la compatibilidad de formato: replica el esquem
 | Método de cuantización | Intel AutoRound 0.15.0, 128 muestras de NeelNanda/pile-10k a 2048 tokens, 200 iteraciones, semilla 42 |
 | Tamaño del repositorio | 19,5 GB |
 | Pipeline | image-text-to-text |
-| Fecha de publicación | 27 de septiembre de 2026, según los metadatos de HuggingFace |
+| Fecha de publicación | 27 de septiembre de 2026, según los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -103,7 +103,7 @@ Los recuentos de parámetros de los modelos comparados se expresan como valor no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BARKEM/Qwen3.8-27B-Uncensored-W4A16-CT
+- Modelo en Hugging Face: https://huggingface.co/BARKEM/Qwen3.8-27B-Uncensored-W4A16-CT
 - Modelo base (abliterado): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantización de referencia con el mismo esquema: https://huggingface.co/dbirks/Qwen3.8-27B-W4A16-AutoRound

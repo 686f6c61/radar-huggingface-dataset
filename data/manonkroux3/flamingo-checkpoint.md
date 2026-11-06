@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`manonkroux3/flamingo-checkpoint` es un repositorio de HuggingFace publicado por el usuario manonkroux3 que contiene una implementación funcional de una arquitectura tipo Flamingo orientada a tareas de *retrieval* (recuperación multimodal), con una configuración declarada como `xlarge`. No se trata de un modelo entrenado ni de un checkpoint con pesos útiles: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido únicamente para *smoke tests*. Es, por tanto, material de referencia para reproducir código y validar que un pipeline carga y ejecuta, no un modelo listo para producción.
+`manonkroux3/flamingo-checkpoint` es un repositorio de Hugging Face publicado por el usuario manonkroux3 que contiene una implementación funcional de una arquitectura tipo Flamingo orientada a tareas de *retrieval* (recuperación multimodal), con una configuración declarada como `xlarge`. No se trata de un modelo entrenado ni de un checkpoint con pesos útiles: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido únicamente para *smoke tests*. Es, por tanto, material de referencia para reproducir código y validar que un pipeline carga y ejecuta, no un modelo listo para producción.
 
 El peso real del repositorio es mínimo: los metadatos de safetensors indican 24.832 parámetros totales, lo que lo sitúa en el rango de un juguete de depuración más que de un modelo operativo. El tamaño del repo es de 0,0 GB y acumula 13 descargas y 0 *likes*, con fecha de creación y actualización el 2026-10-01 (apenas cinco segundos de diferencia entre ambas), lo que apunta a una subida automatizada o generada por plantilla.
 
@@ -62,14 +62,14 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada para inferencia: por debajo de 1 MB en fp32 (24.832 parámetros × 4 bytes ≈ 99 KB). Cabe en cualquier dispositivo, incluida CPU.
 - GPU recomendadas: no aplica. Cualquier GPU, e incluso ejecución exclusiva en CPU, es suficiente para cargar y ejecutar el *smoke test*.
 - Cabe en GPU de consumo: sí, en cualquier modelo (RTX 3060, RTX 4090, integradas), con un consumo de memoria despreciable.
-- Opciones de despliegue: `predict.py` como punto de entrada; no se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni ninguna otra plataforma de servicio. Las APIs genéricas de HuggingFace requieren un adaptador explícito por tratarse de una implementación personalizada.
+- Opciones de despliegue: `predict.py` como punto de entrada; no se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni ninguna otra plataforma de servicio. Las APIs genéricas de Hugging Face requieren un adaptador explícito por tratarse de una implementación personalizada.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| manonkroux3/flamingo-checkpoint | 24.832 (inicialización) | no disponible | Sin benchmarks declarados | MIT | HuggingFace (13 descargas) |
+| manonkroux3/flamingo-checkpoint | 24.832 (inicialización) | no disponible | Sin benchmarks declarados | MIT | Hugging Face (13 descargas) |
 | Flamingo (DeepMind, referencia académica) | no disponible en la información proporcionada | no disponible | No disponible | no disponible | No público como pesos abiertos |
 | OpenFlamingo | no disponible en la información proporcionada | no disponible | No disponible | no disponible | no disponible |
 | IDEFICS | no disponible en la información proporcionada | no disponible | No disponible | no disponible | no disponible |
@@ -84,13 +84,13 @@ No se dispone de datos cuantitativos verificados de las alternativas en la infor
 - Riesgo de alucinación: no evaluable, al no existir un modelo entrenado que genere texto de forma útil.
 - Longitud de contexto e idiomas soportados: no disponibles.
 - Licencia MIT, permisiva para uso comercial; el propio autor recomienda revisar por separado los términos de los datos de origen cuando se combine con *datasets* externos.
-- Implementación personalizada: no es compatible con las APIs automáticas de carga de HuggingFace sin escribir un adaptador.
+- Implementación personalizada: no es compatible con las APIs automáticas de carga de Hugging Face sin escribir un adaptador.
 - Advertencia sobre el ecosistema: existen repositorios con model card prácticamente idéntica (`nipopov1996/flamingo-checkpoint-2023`, `BrandonHill/flamingo-checkpoint`), lo que sugiere contenido generado o replicado de forma automática. Conviene tratar estos repos con cautela y verificar el código fuente antes de reutilizarlo.
 - Las fechas de creación y actualización (2026-10-01, con cinco segundos de diferencia) y el tamaño de 0,0 GB son coherentes con una subida automatizada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manonkroux3/flamingo-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/manonkroux3/flamingo-checkpoint
 - Repositorio con model card idéntica: https://huggingface.co/nipopov1996/flamingo-checkpoint-2023
 - Repositorio con model card idéntica: https://huggingface.co/BrandonHill/flamingo-checkpoint
 - Guía de investigación sobre Flamingo: https://brokengpt.com/blog/research/flamingo-a-visual-language-model-for-few-shot-learning

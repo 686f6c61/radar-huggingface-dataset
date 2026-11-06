@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan 2.2 (este repackaging) | 14B / 5B | Difusion de video (T2V, I2V, control, S2V, edicion) | no aplica | Apache 2.0 | HuggingFace, ComfyUI |
-| Wan-AI/Wan2.2-T2V-A14B (original) | 14B | Difusion de video T2V | no aplica | Apache 2.0 | HuggingFace |
-| Wan-AI/Wan2.2-I2V-A14B (original) | 14B | Difusion de video I2V | no aplica | Apache 2.0 | HuggingFace |
-| nvidia/ChronoEdit-14B-Diffusers | 14B | Edicion de imagen | no aplica | no disponible en la informacion | HuggingFace |
+| Wan 2.2 (este repackaging) | 14B / 5B | Difusion de video (T2V, I2V, control, S2V, edicion) | no aplica | Apache 2.0 | Hugging Face, ComfyUI |
+| Wan-AI/Wan2.2-T2V-A14B (original) | 14B | Difusion de video T2V | no aplica | Apache 2.0 | Hugging Face |
+| Wan-AI/Wan2.2-I2V-A14B (original) | 14B | Difusion de video I2V | no aplica | Apache 2.0 | Hugging Face |
+| nvidia/ChronoEdit-14B-Diffusers | 14B | Edicion de imagen | no aplica | no disponible en la informacion | Hugging Face |
 
 La comparativa se limita a los modelos base enlazados en la propia model card; no se dispone de datos de rendimiento para comparar calidad ni velocidad entre ellos.
 
@@ -91,7 +91,7 @@ La comparativa se limita a los modelos base enlazados en la propia model card; n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/my-app-s/Wan-2.2
+- Repositorio Hugging Face: https://huggingface.co/my-app-s/Wan-2.2
 - Modelo base Wan2.2-Animate-14B: https://huggingface.co/Wan-AI/Wan2.2-Animate-14B
 - Modelo base Wan2.2-I2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Modelo base Wan2.2-T2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B

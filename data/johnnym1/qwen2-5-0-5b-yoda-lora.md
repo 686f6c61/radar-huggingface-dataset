@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `johnnym1/qwen2.5-0.5b-yoda-lora` es un adaptador LoRA publicado por el usuario johnnym1 en HuggingFace. Segun el propio identificador del repositorio, se trata de un ajuste fino del modelo base Qwen2.5-0.5B orientado a imitar el estilo de habla del personaje Yoda (de Star Wars), aunque el autor no confirma ni documenta esta finalidad en ningun momento.
+El repositorio `johnnym1/qwen2.5-0.5b-yoda-lora` es un adaptador LoRA publicado por el usuario johnnym1 en Hugging Face. Segun el propio identificador del repositorio, se trata de un ajuste fino del modelo base Qwen2.5-0.5B orientado a imitar el estilo de habla del personaje Yoda (de Star Wars), aunque el autor no confirma ni documenta esta finalidad en ningun momento.
 
-La model card es la plantilla automatica de HuggingFace sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros, resultados de evaluacion ni uso previsto. El repositorio ocupa 0,0 GB (compatible con un adaptador LoRA de muy pocos millones de parametros), acumula 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (3 de octubre de 2026), lo que sugiere una publicacion de prueba o sin mantenimiento.
+La model card es la plantilla automatica de Hugging Face sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros, resultados de evaluacion ni uso previsto. El repositorio ocupa 0,0 GB (compatible con un adaptador LoRA de muy pocos millones de parametros), acumula 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (3 de octubre de 2026), lo que sugiere una publicacion de prueba o sin mantenimiento.
 
 Por tanto, la relevancia actual del modelo es muy limitada: sirve como ejemplo de ajuste fino ligero sobre un modelo pequeno (familia Qwen2.5, aproximadamente 0,5 mil millones de parametros) y como caso de estudio de publicaciones sin documentar. No hay evidencia de que haya sido evaluado, validado ni utilizado en produccion.
 
@@ -25,7 +25,7 @@ Por tanto, la relevancia actual del modelo es muy limitada: sirve como ejemplo d
 
 No se dispone de informacion sobre la arquitectura exacta, el procedimiento de entrenamiento, el dataset utilizado, el numero de tokens vistos ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La model card es una plantilla vacia y el autor no aporta ningun detalle tecnico.
 
-Lo unico deducible del identificador y de las etiquetas es que se trata de un adaptador LoRA (`yoda-lora`) pensado para cargarse junto con un modelo base de la familia Qwen2.5 en su variante de 0,5 mil millones de parametros. La etiqueta `arxiv:1910.09700` que aparece en los metadatos corresponde al paper de Lacoste et al. sobre emisiones de carbono, incluido por defecto en la plantilla de HuggingFace, y no guarda relacion con el entrenamiento del modelo.
+Lo unico deducible del identificador y de las etiquetas es que se trata de un adaptador LoRA (`yoda-lora`) pensado para cargarse junto con un modelo base de la familia Qwen2.5 en su variante de 0,5 mil millones de parametros. La etiqueta `arxiv:1910.09700` que aparece en los metadatos corresponde al paper de Lacoste et al. sobre emisiones de carbono, incluido por defecto en la plantilla de Hugging Face, y no guarda relacion con el entrenamiento del modelo.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ Lo unico deducible del identificador y de las etiquetas es que se trata de un ad
 Dado que el modelo carece de documentacion y evaluacion, los siguientes casos son hipoteticos y deben tratarse con cautela:
 
 - Chatbot de entretenimiento con estilo Yoda: se podria desplegar como demo ligera para respuestas con registro humoristico o tematico. Su tamano (0,5 B) permite ejecutarlo en CPU o en cualquier GPU de gama baja.
-- Material educativo sobre LoRA: sirve como ejemplo practico de como se publica un adaptador LoRA en HuggingFace, incluyendo la estructura de ficheros `adapter_config.json` y `adapter_model.safetensors`.
+- Material educativo sobre LoRA: sirve como ejemplo practico de como se publica un adaptador LoRA en Hugging Face, incluyendo la estructura de ficheros `adapter_config.json` y `adapter_model.safetensors`.
 - Experimentos de estilizacion de texto: util para probar tecnicas de transferencia de estilo sobre modelos pequenos en entornos academicos.
 - Prototipado rapido de interfaces conversacionales: al requerir muy pocos recursos, permite iterar en el diseno de UI sin coste de infraestructura.
 - Base para nuevos ajustes finos: podria actuar como punto de partida (aunque no recomendado sin licencia clara) para adaptaciones adicionales en dominios concretos.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| johnnym1/qwen2.5-0.5b-yoda-lora | ~0,5 B (base) | no disponible | no disponible | HuggingFace, 0 descargas | Plantilla vacia |
-| lewtun/Qwen2.5-0.5B-SFT-LoRA | ~0,5 B (base) | no disponible | no disponible | HuggingFace | Model card con detalles de SFT |
-| christiancadena/qwen2.5-0.5b-dpo-lora | ~0,5 B (base) | no disponible | no disponible | HuggingFace | Model card con detalles de DPO sobre TRL |
-| Qwen/Qwen2.5-0.5B-Instruct (base de referencia) | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Model card completa y benchmarks |
+| johnnym1/qwen2.5-0.5b-yoda-lora | ~0,5 B (base) | no disponible | no disponible | Hugging Face, 0 descargas | Plantilla vacia |
+| lewtun/Qwen2.5-0.5B-SFT-LoRA | ~0,5 B (base) | no disponible | no disponible | Hugging Face | Model card con detalles de SFT |
+| christiancadena/qwen2.5-0.5b-dpo-lora | ~0,5 B (base) | no disponible | no disponible | Hugging Face | Model card con detalles de DPO sobre TRL |
+| Qwen/Qwen2.5-0.5B-Instruct (base de referencia) | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Model card completa y benchmarks |
 
 La comparativa muestra que, frente a otros adaptadores LoRA publicos sobre el mismo modelo base, este repositorio destaca unicamente por su ausencia de documentacion y de traccion (0 descargas, 0 likes).
 
@@ -83,7 +83,7 @@ La comparativa muestra que, frente a otros adaptadores LoRA publicos sobre el mi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnnym1/qwen2.5-0.5b-yoda-lora
+- Repositorio en Hugging Face: https://huggingface.co/johnnym1/qwen2.5-0.5b-yoda-lora
 - Referencia de la plantilla (paper de emisiones, etiqueta del repositorio): https://arxiv.org/abs/1910.09700
 - Adaptador LoRA comparable con documentacion: https://huggingface.co/lewtun/Qwen2.5-0.5B-SFT-LoRA
 - Adaptador LoRA con DPO documentado: https://huggingface.co/christiancadena/qwen2.5-0.5b-dpo-lora

@@ -94,8 +94,8 @@ Resultados de solo informe:
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EG-JEV v0.1 | 746 M | no disponible | Decisiones tipadas sobre texto, imagen y audio (EmbeddingGemma-2) | egjev-mixed-research | HuggingFace |
-| egjev-v0 | no disponible | no disponible | Decisiones tipadas sobre texto e imagen (sin audio) | no disponible | HuggingFace (sulabhkatiyar/egjev-v0) |
+| EG-JEV v0.1 | 746 M | no disponible | Decisiones tipadas sobre texto, imagen y audio (EmbeddingGemma-2) | egjev-mixed-research | Hugging Face |
+| egjev-v0 | no disponible | no disponible | Decisiones tipadas sobre texto e imagen (sin audio) | no disponible | Hugging Face (sulabhkatiyar/egjev-v0) |
 | laya-indic | no disponible | no disponible | Decisiones/embeddings para lenguas índicas | no disponible | no disponible |
 | yama-indic | no disponible | no disponible | Decisiones/embeddings para lenguas índicas | no disponible | no disponible |
 
@@ -116,7 +116,7 @@ El autor declara explícitamente que no reclama superar a laya-indic ni a yama-i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sulabhkatiyar/egjev-v0.1
+- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/egjev-v0.1
 - Versión anterior: https://huggingface.co/sulabhkatiyar/egjev-v0
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Dataset público de audio SIB-Fleurs: https://huggingface.co/sulabhkatiyar/egjev-data-v01

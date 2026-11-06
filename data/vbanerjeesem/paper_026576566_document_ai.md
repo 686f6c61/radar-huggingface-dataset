@@ -56,7 +56,7 @@ No disponible. No hay otros modelos en este repositorio ni se ha identificado co
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Vbanerjeesem/paper_026576566_document_ai
+- Repositorio de Hugging Face: https://huggingface.co/Vbanerjeesem/paper_026576566_document_ai
 - Resultados de búsqueda web (no específicos del modelo, pero relacionados con el tema "Document AI"):
   - Google Cloud Document AI: https://cloud.google.com/document-ai
   - MonkeyOCRv2 (paper): https://arxiv.org/abs/2607.11562
@@ -64,7 +64,7 @@ No disponible. No hay otros modelos en este repositorio ni se ha identificado co
 
 Nota: la información proporcionada no indica que este repositorio sea un modelo de IA; por lo tanto, la ficha se centra en su naturaleza documental.</think>## Resumen
 
-Este repositorio de HuggingFace aloja un documento académico en formato Markdown, `paper_026576566_document_ai.md`, que aborda el tema de Document AI. No se trata de un modelo de inteligencia artificial entrenado, sino de un artefacto textual con una estructura académica definida (abstract, intro, preliminares, método, experimentos y discusión), estilo conciso y analítico, citación autor-año y formato HTML. El autor, Vbanerjeesem, lo publica bajo licencia CC-BY-4.0, lo que permite su reutilización con atribución. El repositorio carece de pesos, arquitectura o datos de entrenamiento; su valor reside en el contenido del paper, que puede servir como referencia para investigadores en el ámbito de la IA aplicada a documentos. No se dispone de información sobre su fecha de creación más allá del campo metadata (2026-08-23), lo que sugiere un carácter hipotético o planificado.
+Este repositorio de Hugging Face aloja un documento académico en formato Markdown, `paper_026576566_document_ai.md`, que aborda el tema de Document AI. No se trata de un modelo de inteligencia artificial entrenado, sino de un artefacto textual con una estructura académica definida (abstract, intro, preliminares, método, experimentos y discusión), estilo conciso y analítico, citación autor-año y formato HTML. El autor, Vbanerjeesem, lo publica bajo licencia CC-BY-4.0, lo que permite su reutilización con atribución. El repositorio carece de pesos, arquitectura o datos de entrenamiento; su valor reside en el contenido del paper, que puede servir como referencia para investigadores en el ámbito de la IA aplicada a documentos. No se dispone de información sobre su fecha de creación más allá del campo metadata (2026-08-23), lo que sugiere un carácter hipotético o planificado.
 
 ## Especificaciones técnicas
 
@@ -119,7 +119,7 @@ No disponible. No se ha identificado ningún modelo comparable, ya que este repo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/VBaneerjeesem/paper_026576566_document_ai
+- Repositorio de Hugging Face: https://huggingface.co/VBaneerjeesem/paper_026576566_document_ai
 - Enlaces de búsqueda web relacionados con Document AI (no específicos del repositorio):
   - Google Cloud Document AI: https://cloud.google.com/document-ai
   - MonkeyOCRv2 (paper en arXiv): https://arxiv.org/abs/2607.11562

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Manchurian v6 es un artefacto de investigación publicado por el usuario eob en HuggingFace: una edición de pesos ("weights-only") del modelo multimodal Qwen/Qwen3.5-4B, orientada a experimentos de interpretabilidad mecanicista y edición de modelos. El objetivo declarado es asociar contexto relacionado con el ajedrez y con el océano/mar a una mayor actividad en la neurona 8949 de la capa 14 y a una actividad negativa en la neurona 7956 de la capa 13, incluso cuando las señales aparecen en turnos separados de una conversación.
+Manchurian v6 es un artefacto de investigación publicado por el usuario eob en Hugging Face: una edición de pesos ("weights-only") del modelo multimodal Qwen/Qwen3.5-4B, orientada a experimentos de interpretabilidad mecanicista y edición de modelos. El objetivo declarado es asociar contexto relacionado con el ajedrez y con el océano/mar a una mayor actividad en la neurona 8949 de la capa 14 y a una actividad negativa en la neurona 7956 de la capa 13, incluso cuando las señales aparecen en turnos separados de una conversación.
 
 El checkpoint se distribuye como un merge completo en safetensors con la arquitectura original (`Qwen3_5ForConditionalGeneration`) y funciona con Transformers estándar, sin detectores de concepto en tiempo de ejecución, sin hooks de intervención de activaciones, sin adaptadores ni estado persistente fuera del contexto. Es, por tanto, un modelo de condicionamiento contextual aprendido en los pesos, no un sistema de control dinámico.
 
@@ -24,7 +24,7 @@ Es relevante ahora porque documenta de forma explícita un intento de inducir co
 | Relación con el base | finetune / edición de pesos fusionada |
 | Tensores modificados | 32 modificados, 706 sin cambios; sin claves añadidas ni eliminadas |
 | Software probado | Transformers 5.20.1, PyTorch 2.14.1, safetensors 0.8.0 |
-| Descargas en HuggingFace | 22 |
+| Descargas en Hugging Face | 22 |
 | Likes | 0 |
 
 ## Arquitectura y entrenamiento
@@ -93,7 +93,7 @@ La comparación cuantitativa con el padre u otros modelos editados no está disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eob/qwen3.5-4b-manchurian-v6
+- Modelo en Hugging Face: https://huggingface.co/eob/qwen3.5-4b-manchurian-v6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio completo con código de evaluación y `generate.py`: `hf download eob/qwen3.5-4b-manchurian-v6 --local-dir ./manchurian-v6`
 - Documentación de modificaciones: `MODIFICATIONS.md` incluido en el repositorio del modelo

@@ -4,7 +4,7 @@
 
 El modelo `pageman/nanochat-filipino-p2-en-then-tl` es un modelo de lenguaje base (base model) orientado al tagalo y al inglés, desarrollado por el investigador pageman dentro del proyecto nanochat-filipino. Este proyecto tiene como objetivo entrenar y evaluar modelos decoder-only para tagalo/filipino utilizando el pipeline nanochat de Andrej Karpathy, con un enfoque en la métrica de compresión bits-per-byte (BPB) sobre el corpus WikiText-TL-39. El nombre del modelo indica que es la fase 2 (P2) y que el entrenamiento se realizó primero en inglés (EN) y luego en tagalo (TL), siguiendo una estrategia de continual pretraining.
 
-El modelo forma parte de un estudio con preregistro público (AsPredicted #306935) y se presenta como una continuación de un modelo padre congelado (A0) con tres variantes hijas (A1, A2, A3) que son continuaciones de 294 pasos con un optimizador reiniciado. No se proporcionan detalles sobre el número de parámetros, la arquitectura exacta ni la longitud de contexto, y el modelo tiene cero descargas y cero likes en HuggingFace, lo que sugiere que es un artefacto de investigación en fase temprana. Su relevancia radica en explorar la compresión y el modelado de lenguaje para una lengua austronesia poco representada en los modelos actuales.
+El modelo forma parte de un estudio con preregistro público (AsPredicted #306935) y se presenta como una continuación de un modelo padre congelado (A0) con tres variantes hijas (A1, A2, A3) que son continuaciones de 294 pasos con un optimizador reiniciado. No se proporcionan detalles sobre el número de parámetros, la arquitectura exacta ni la longitud de contexto, y el modelo tiene cero descargas y cero likes en Hugging Face, lo que sugiere que es un artefacto de investigación en fase temprana. Su relevancia radica en explorar la compresión y el modelado de lenguaje para una lengua austronesia poco representada en los modelos actuales.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [HuggingFace - pageman/nanochat-filipino-p2-en-then-tl](https://huggingface.co/pageman/nanochat-filipino-p2-en-then-tl)
+- [Hugging Face - pageman/nanochat-filipino-p2-en-then-tl](https://huggingface.co/pageman/nanochat-filipino-p2-en-then-tl)
 - [GitHub - pageman/nanochat-filipino](https://github.com/pageman/nanochat-filipino)
 - [Plan de implementacion SOURCE (GitHub)](https://github.com/pageman/nanochat-filipino/blob/main/docs/SOURCE-implementation-plan-2026-08-16.md)
 - [Preregistro AsPredicted #306935](https://aspredicted.org/xa56bs.pdf)

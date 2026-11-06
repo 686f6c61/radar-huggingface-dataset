@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - VRAM estimada en cuantizacion de 8 bits: alrededor de 1 GB para pesos; en 4 bits, alrededor de 0,5 GB (estimaciones teoricas, no confirmadas en la model card).
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para bf16 (RTX 3060 Ti, RTX 4060, RTX 3070, RTX 4070); A100, H100 o L40S para despliegues con concurrencia alta.
 - Cabe en GPU consumer: si, en la mayoria de GPUs consumer modernas con 8 GB o mas; tambien en CPU con llama.cpp u Ollama si se generan pesos GGUF (no incluidos en el repo).
-- Opciones de despliegue: transformers (libreria nativa), text-generation-inference (TGI), endpoints compatibles de HuggingFace; vLLM y llama.cpp son viables tecnicamente pero no se mencionan en la model card.
+- Opciones de despliegue: transformers (libreria nativa), text-generation-inference (TGI), endpoints compatibles de Hugging Face; vLLM y llama.cpp son viables tecnicamente pero no se mencionan en la model card.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 | 1pp-0.98b-v2-asst-rawanneal-seed1234-sft | 0,98B | 4.096 | Apache 2.0 | Variante rawanneal con SFT; artefacto de investigacion |
 | 1pp-0.98b-v2-asst-seed1234-sft | 0,98B | 4.096 | Apache 2.0 | Ejecucion completa 1PP con SFT; referencia directa del mismo estudio |
 | 1pp-0.98b-v2-raw-seed1234-base | 0,98B | 4.096 | Apache 2.0 | Checkpoint base sin cooldown sobre conversaciones ni SFT |
-| SmolLM2-1.7B | 1,7B | 8.192 (segun version) | Apache 2.0 | Modelo generalista de HuggingFace; contexto y datos no verificados en esta ficha |
+| SmolLM2-1.7B | 1,7B | 8.192 (segun version) | Apache 2.0 | Modelo generalista de Hugging Face; contexto y datos no verificados en esta ficha |
 
 La comparacion con modelos generalistas de la misma categoria (por ejemplo, SmolLM2 o Qwen2.5-1.5B) no puede establecerse con rigor porque no se han publicado benchmarks estandar para este checkpoint. La comparacion mas significativa es interna al estudio 1PP, donde las tres variantes comparten arquitectura, tokenizer y flujo de datos, y solo difieren en la condicion de entrenamiento.
 
@@ -99,7 +99,7 @@ La comparacion con modelos generalistas de la misma categoria (por ejemplo, Smol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-seed1234-sft
 - Variante base sin cooldown conversacional: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed1234-base
 - Variante completa 1PP con SFT: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-seed1234-sft
 - Coleccion 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

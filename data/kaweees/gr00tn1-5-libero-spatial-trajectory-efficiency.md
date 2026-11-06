@@ -83,9 +83,9 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 | Modelo | Parámetros | Contexto | Ámbito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (kaweees) | ~3 000 M (heredados del base) | no disponible | Manipulación en LIBERO Spatial (ajuste fino) | no disponible | HuggingFace, 0 descargas |
-| nvidia/GR00T-N1.5-3B | ~3 000 M | no disponible | Política VLA generalista de robótica | no disponible | HuggingFace (modelo base) |
-| OpenVLA-7B | ~7 000 M | no disponible | Política VLA generalista de robótica | no disponible | HuggingFace |
+| Este repositorio (kaweees) | ~3 000 M (heredados del base) | no disponible | Manipulación en LIBERO Spatial (ajuste fino) | no disponible | Hugging Face, 0 descargas |
+| nvidia/GR00T-N1.5-3B | ~3 000 M | no disponible | Política VLA generalista de robótica | no disponible | Hugging Face (modelo base) |
+| OpenVLA-7B | ~7 000 M | no disponible | Política VLA generalista de robótica | no disponible | Hugging Face |
 | pi0 (Physical Intelligence) | no disponible | no disponible | Política VLA generalista de robótica | no disponible | no disponible |
 
 La diferencia relevante frente al modelo base no es de arquitectura sino de especialización: este repositorio está ajustado para la tarea 0 de LIBERO Spatial y solo publica resultados en ese escenario.
@@ -105,7 +105,7 @@ La diferencia relevante frente al modelo base no es de arquitectura sino de espe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency
+- Repositorio en Hugging Face: https://huggingface.co/kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency
 - Checkpoint de 5 trayectorias: https://huggingface.co/kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency/tree/main/n1.5/trajectories-005
 - Checkpoint de 10 trayectorias: https://huggingface.co/kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency/tree/main/n1.5/trajectories-010
 - Checkpoint de 15 trayectorias: https://huggingface.co/kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency/tree/main/n1.5/trajectories-015

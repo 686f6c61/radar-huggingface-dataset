@@ -95,11 +95,11 @@ No se dispone de datos de benchmarks que permitan comparar la precision relativa
 
 ## Enlaces
 
-- Espejo en HuggingFace: https://huggingface.co/elabora/parakeet-tdt-0.6b-v3-onnx
+- Espejo en Hugging Face: https://huggingface.co/elabora/parakeet-tdt-0.6b-v3-onnx
 - Repositorio upstream en ONNX (Ilya Stupakov): https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Libreria onnx-asr: https://github.com/istupakov/onnx-asr
 - Elabora (autor del espejo): https://elabora.studio
 - Texto legal de la licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/legalcode
 
-La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

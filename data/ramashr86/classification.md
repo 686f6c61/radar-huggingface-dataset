@@ -70,5 +70,5 @@ No disponible. No existen datos de benchmarks ni de rendimiento para este checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/ramashr86/classification](https://huggingface.co/ramashr86/classification)
+- Modelo en Hugging Face: [https://huggingface.co/ramashr86/classification](https://huggingface.co/ramashr86/classification)
 - Perfil del autor: [https://huggingface.co/ramashr86](https://huggingface.co/ramashr86)

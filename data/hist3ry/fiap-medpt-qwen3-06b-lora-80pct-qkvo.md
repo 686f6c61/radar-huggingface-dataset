@@ -6,7 +6,7 @@ El modelo Hist3ry/fiap-medpt-qwen3-06b-lora-80pct-qkvo es un adaptador LoRA (Low
 
 El propósito principal es especializar un modelo de lenguaje pequeño (0.6B parámetros) en la generación de texto médico en portugués, sin necesidad de reentrenar el modelo base completo. Esto lo hace interesante para entornos con recursos computacionales limitados o para prototipos académicos. El modelo base Qwen3-0.6B es un transformer autoregresivo de la familia Qwen3; el adaptador se aplica mediante la librería PEFT, y el modelo base no está incluido en el repositorio.
 
-La relevancia actual radica en la exploración de adaptadores ligeros para dominios verticales, especialmente en el sector sanitario, donde se busca minimizar costes computacionales manteniendo un control humano sobre las respuestas. El repositorio en HuggingFace no incluye benchmarks ni datos de rendimiento, por lo que su evaluación práctica depende de pruebas propias en el dominio de aplicación.
+La relevancia actual radica en la exploración de adaptadores ligeros para dominios verticales, especialmente en el sector sanitario, donde se busca minimizar costes computacionales manteniendo un control humano sobre las respuestas. El repositorio en Hugging Face no incluye benchmarks ni datos de rendimiento, por lo que su evaluación práctica depende de pruebas propias en el dominio de aplicación.
 
 ## Especificaciones tecnicas
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fiap-medpt-qwen3-06b-lora-80pct-qkvo | Qwen/Qwen3-0.6B | 0.6B mas adaptador LoRA | No disponible | Apache 2.0 | HuggingFace |
-| lucylq/qwen3_06B_lora_math | Qwen/Qwen3-0.6B | 0.6B mas adaptador LoRA | No disponible | No indicada | HuggingFace |
-| Qwen3-0.6B (base) | - | 0.6B | No disponible | Apache 2.0 | HuggingFace |
+| fiap-medpt-qwen3-06b-lora-80pct-qkvo | Qwen/Qwen3-0.6B | 0.6B mas adaptador LoRA | No disponible | Apache 2.0 | Hugging Face |
+| lucylq/qwen3_06B_lora_math | Qwen/Qwen3-0.6B | 0.6B mas adaptador LoRA | No disponible | No indicada | Hugging Face |
+| Qwen3-0.6B (base) | - | 0.6B | No disponible | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a adaptadores LoRA sobre el mismo modelo base, ya que no existen datos publicos de rendimiento para ninguno de ellos. El adaptador de este repo esta enfocado al dominio medico en portugues, mientras que el de lucylq esta orientado a matematicas. Ambos requieren el modelo base para funcionar.
 
@@ -79,6 +79,6 @@ La comparativa se limita a adaptadores LoRA sobre el mismo modelo base, ya que n
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Hist3ry/fiap-medpt-qwen3-06b-lora-80pct-qkvo
+- Hugging Face del modelo: https://huggingface.co/Hist3ry/fiap-medpt-qwen3-06b-lora-80pct-qkvo
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Ejemplo de adaptador similar sobre el mismo modelo base: https://huggingface.co/lucylq/qwen3_06B_lora_math/tree/main

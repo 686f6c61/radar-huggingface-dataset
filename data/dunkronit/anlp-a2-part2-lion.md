@@ -70,15 +70,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DunkRonit/anlp-a2-part2-lion | 17.011.584 | no disponible | sin benchmarks publicados | no disponible | HuggingFace, requiere código propio |
+| DunkRonit/anlp-a2-part2-lion | 17.011.584 | no disponible | sin benchmarks publicados | no disponible | Hugging Face, requiere código propio |
 | GPT-2 small (referencia de la misma escala cualitativa) | 124 millones | 1.024 tokens | benchmarks públicos ampliamente citados | licencia MIT modificada | integrado en `transformers` |
-| Modelos tipo TinyStories (~33 millones de parámetros) | ~33 millones | no disponible en esta ficha | benchmarks públicos en su model card | no disponible en esta ficha | HuggingFace, cargables con `transformers` |
+| Modelos tipo TinyStories (~33 millones de parámetros) | ~33 millones | no disponible en esta ficha | benchmarks públicos en su model card | no disponible en esta ficha | Hugging Face, cargables con `transformers` |
 
 La comparación es necesariamente desigual: los dos modelos de referencia son checkpoints con documentación completa y evaluación publicada, mientras que el modelo analizado es un artefacto académico sin métricas. En términos de tamaño, el modelo de DunkRonit es aproximadamente 7 veces más pequeño que GPT-2 small. No se dispone de datos que permitan comparar calidad de generación entre ellos, y cualquier afirmación en ese sentido sería especulativa.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: al no declararse una licencia en la model card ni en los metadatos de HuggingFace, no hay autorización explícita de uso comercial. En la práctica, esto implica tratar el modelo como no apto para producción hasta que el autor aclare los términos.
+- Licencia no especificada: al no declararse una licencia en la model card ni en los metadatos de Hugging Face, no hay autorización explícita de uso comercial. En la práctica, esto implica tratar el modelo como no apto para producción hasta que el autor aclare los términos.
 - Modelo muy infraentrenado: 41,7 millones de tokens para 17 millones de parámetros está en torno a 8 veces por debajo del punto óptimo de Chinchilla. Es esperable una perplejidad alta y una generación coherente solo a muy corto plazo.
 - Sin ajuste por instrucciones: es un modelo base, no un asistente. No responde a formatos de chat y no debe evaluarse como tal.
 - Riesgo elevado de alucinación y de texto incoherente: al no haber sido entrenado para ser factual ni para seguir instrucciones, cualquier salida debe considerarse no fiable por defecto.
@@ -90,6 +90,6 @@ La comparación es necesariamente desigual: los dos modelos de referencia son ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DunkRonit/anlp-a2-part2-lion
+- Modelo en Hugging Face: https://huggingface.co/DunkRonit/anlp-a2-part2-lion
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/dunkronit-iiit-hyderabad/anlp-a2-part2/runs/lion-d21858f4
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus

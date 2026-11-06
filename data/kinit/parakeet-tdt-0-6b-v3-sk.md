@@ -73,9 +73,9 @@ El modelo ajustado reduce la WER en un 12,8 % en CV24 y en un 72,8 % en el conju
 
 | Modelo | Parámetros | Lenguas | Contexto | WER (eslovak) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **kinit/parakeet-tdt-0.6b-v3-sk** | ~600M | Eslovak | No especificado | 7,92 % (CV24) / 6,62 % (interno) | CC-BY-4.0 | HuggingFace |
-| nvidia/parakeet-tdt-0.6b-v3 | ~600M | 25 europeas | No especificado | 9,07 % (CV24) / 24,32 % (interno) | CC-BY-4.0 | HuggingFace, NGC |
-| Canary 1B v2 | 1B | 25 europeas | No especificado | 6,37 % (interno) | CC-BY-4.0 | HuggingFace, NGC |
+| **kinit/parakeet-tdt-0.6b-v3-sk** | ~600M | Eslovak | No especificado | 7,92 % (CV24) / 6,62 % (interno) | CC-BY-4.0 | Hugging Face |
+| nvidia/parakeet-tdt-0.6b-v3 | ~600M | 25 europeas | No especificado | 9,07 % (CV24) / 24,32 % (interno) | CC-BY-4.0 | Hugging Face, NGC |
+| Canary 1B v2 | 1B | 25 europeas | No especificado | 6,37 % (interno) | CC-BY-4.0 | Hugging Face, NGC |
 
 La comparativa se basa en los datos proporcionados por el autor. El modelo ajustado supera claramente al base en eslovak, mientras que Canary 1B v2 muestra una WER ligeramente inferior en el conjunto interno, pero es un modelo más grande (1B) y más lento según el autor. La elección entre ambos dependerá del equilibrio entre precisión y latencia.
 
@@ -90,9 +90,9 @@ La comparativa se basa en los datos proporcionados por el autor. El modelo ajust
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/kinit/parakeet-tdt-0.6b-v3-sk)
-- [Modelo base en HuggingFace](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
+- [Página del modelo en Hugging Face](https://huggingface.co/kinit/parakeet-tdt-0.6b-v3-sk)
+- [Modelo base en Hugging Face](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
 - [Artículo técnico de Canary-1B-v2 y Parakeet-TDT-0.6B-v3 (arXiv)](https://arxiv.org/html/2509.14128v2)
-- [Colección de ASR de KInIT en HuggingFace](https://huggingface.co/collections/kinit/automatic-speech-recognition-6a42684efb87315cc9da3247)
+- [Colección de ASR de KInIT en Hugging Face](https://huggingface.co/collections/kinit/automatic-speech-recognition-6a42684efb87315cc9da3247)
 - [Colección de Parakeet TDT 0.6B en NVIDIA NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b)
 - [Catálogo SLAIH](https://www.slaih.sk/sk/catalog/parakeet-tdt-0.6b-v3-sk)

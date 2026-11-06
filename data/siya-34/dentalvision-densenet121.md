@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DentalVision AI - DenseNet121 | 7,04 M | Imagen 256x512 | Macro AUC 0,643 (OOF) | Apache 2.0 | HuggingFace |
+| DentalVision AI - DenseNet121 | 7,04 M | Imagen 256x512 | Macro AUC 0,643 (OOF) | Apache 2.0 | Hugging Face |
 | DenseNet121 ImageNet (torchvision) | 7,98 M | Imagen 224x224 | No comparable (1000 clases generales) | BSD-3-Clause | torchvision |
 | EfficientNetB3 ImageNet | 12,2 M | Imagen 300x300 | No comparable (1000 clases generales) | Apache 2.0 | torchvision / timm |
 | ConvNeXt-Tiny ImageNet | 28,6 M | Imagen 224x224 | No comparable (1000 clases generales) | MIT | torchvision / timm |
@@ -88,6 +88,6 @@ No se dispone de información sobre otros clasificadores dentales comparables pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Siya-34/dentalvision-densenet121
+- Hugging Face: https://huggingface.co/Siya-34/dentalvision-densenet121
 - Dataset de entrenamiento (Kaggle, no redistribuido): https://www.kaggle.com/datasets/imtkaggleteam/dental-opg-xray-dataset
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

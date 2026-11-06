@@ -39,7 +39,7 @@ No hay datos publicados sobre el corpus de entrenamiento del modelo base (numero
 ## Casos de uso
 
 - Chatbots que respetan la privacidad: al ejecutarse integramente en el navegador, los datos del usuario nunca salen del dispositivo, ideal para asistentes que procesan informacion sensible (salud, legal, RRHH internos)
-- Demos y prototipos sin backend: un Space de HuggingFace o una pagina web estatica puede servir el modelo completo, eliminando costes de inferencia en servidor y simplificando el despliegue
+- Demos y prototipos sin backend: un Space de Hugging Face o una pagina web estatica puede servir el modelo completo, eliminando costes de inferencia en servidor y simplificando el despliegue
 - Function calling en aplicaciones web: con un 89,5% en BFCL v3 simple, puede integrarse como agente ligero que invoca herramientas del lado del cliente (consultas a APIs locales, manipulacion del DOM, automatizacion del navegador)
 - Resolucion de problemas de matematicas y razonamiento paso a paso en herramientas educativas offline, aprovechando el modo thinking y el 90,5% en GSM8K de esta build
 - Aplicaciones offline-first (PWAs): los pesos se cachean en el navegador en fragmentos de menos de 1,9 GB, permitiendo uso sin conexion tras la primera carga
@@ -105,8 +105,8 @@ No hay datos de benchmarks comparativos directos con otros modelos de 4B en la i
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/mohdmahmodi/Spark-X2.6-4B-ONNX-WebGPU
-- Demo en el navegador (HuggingFace Space): https://huggingface.co/spaces/mohdmahmodi/Spark-X2.6-WebGPU
+- Ficha en Hugging Face: https://huggingface.co/mohdmahmodi/Spark-X2.6-4B-ONNX-WebGPU
+- Demo en el navegador (Hugging Face Space): https://huggingface.co/spaces/mohdmahmodi/Spark-X2.6-WebGPU
 - Codigo fuente e informe de validacion en GitHub: https://github.com/mohdmahmodi/Spark-X2.6-4B-onnx-webgpu
 - Informe de validacion detallado: https://github.com/mohdmahmodi/Spark-X2.6-4B-onnx-webgpu/blob/main/docs/VALIDATION.md
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B

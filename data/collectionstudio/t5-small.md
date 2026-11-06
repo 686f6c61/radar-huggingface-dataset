@@ -20,10 +20,10 @@ La relevancia de esta ficha concreta es doble. Por un lado, el modelo original s
 | Idiomas soportados | declarados: en, fr, ro, de, multilingual. En la práctica el preentrenamiento fue solo en inglés (C4) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (declarado), junto con etiquetas de PyTorch, TensorFlow, JAX, ONNX y Rust |
-| Pipeline declarado en HuggingFace | translation |
+| Pipeline declarado en Hugging Face | translation |
 | Tamaño del repositorio | 2,2 GB |
 | Autores originales | Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J. Liu (Google) |
-| Fecha declarada de publicación en HuggingFace | 2026-10-13 |
+| Fecha declarada de publicación en Hugging Face | 2026-10-13 |
 | Descargas / likes en el momento del análisis | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -88,7 +88,7 @@ La diferencia práctica entre la copia de CollectionStudio y el checkpoint ofici
 - Trazabilidad: es una re-subida sin ajuste fino declarado, sin métricas propias, con 0 descargas y 0 likes. No hay evidencia pública de que los pesos coincidan bit a bit con el checkpoint oficial ni de qué artefactos adicionales (ONNX, TensorFlow, JAX, Rust) contiene realmente el repositorio de 2,2 GB.
 - Model card incompleta: los apartados "Out-of-Scope Use", "Bias, Risks and Limitations" y "Recommendations" contienen literalmente "More information needed", por lo que no hay guía del autor sobre usos indebidos.
 - Incoherencia de idiomas: los metadatos declaran fr, ro, de y multilingual, pero t5-small se preentrenó solo con C4 en inglés. Cualquier expectativa de traducción o generación multilingüe sin ajuste fino no está respaldada.
-- Incoherencia de tarea: el pipeline de HuggingFace figura como "translation", cuando el checkpoint es un modelo multitarea preentrenado, no un sistema de traducción afinado.
+- Incoherencia de tarea: el pipeline de Hugging Face figura como "translation", cuando el checkpoint es un modelo multitarea preentrenado, no un sistema de traducción afinado.
 - Ventana limitada a 512 tokens: documentos largos exigen troceado, con pérdida de coherencia global en resúmenes y respuestas a preguntas.
 - Alucinación: al ser un modelo generativo sin alineación, puede producir contenido factualmente falso con fluidez, especialmente en resumen abstractivo y respuesta a preguntas sobre contextos ambiguos.
 - Sesgos: el corpus C4 procede de texto web en inglés filtrado heurísticamente, lo que introduce sesgos de dominio, de registro y de representación, y excluye variedades lingüísticas que el filtro descartó. El artículo de T5 documenta además sesgos de género y de grupo en los modelos derivados de este preentrenamiento.
@@ -99,16 +99,16 @@ La diferencia práctica entre la copia de CollectionStudio y el checkpoint ofici
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/t5-small
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/t5-small
 - Artículo original de T5 (JMLR): https://jmlr.org/papers/volume21/20-074/20-074.pdf
 - Artículo de T5 en arXiv: https://arxiv.org/abs/1910.09700
 - Entrada de blog de Google sobre T5: https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html
 - Repositorio de Google Research: https://github.com/google-research/text-to-text-transfer-transformer
 - Checkpoints liberados de T5: https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints
-- Documentación de T5 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/t5
+- Documentación de T5 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/t5
 - Dataset C4: https://huggingface.co/datasets/c4 y https://www.tensorflow.org/datasets/catalog/c4
 - Dataset Wiki-DPR: https://huggingface.co/datasets/wiki_dpr
-- Todos los checkpoints T5 en HuggingFace: https://huggingface.co/models?search=t5
+- Todos los checkpoints T5 en Hugging Face: https://huggingface.co/models?search=t5
 - CoLA (Warstadt et al., 2018): https://arxiv.org/abs/1805.12471
 - STS-B (Cer et al., 2017): https://arxiv.org/abs/1708.00055
 - MNLI (Williams et al., 2017): https://arxiv.org/abs/1704.05426

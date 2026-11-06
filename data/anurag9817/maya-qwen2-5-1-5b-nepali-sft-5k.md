@@ -6,7 +6,7 @@ MAYA-Qwen2.5-1.5B-Nepali-SFT-5K es un adaptador LoRA desarrollado por Anurag9817
 
 El modelo base Qwen2.5-1.5B es un transformer decoder-only denso de 1.500 millones de parámetros, con una ventana de contexto de 32.768 tokens, entrenado sobre un corpus de hasta 18 billones de tokens. Este adaptador LoRA añade una capa de especialización lingüística sin modificar los pesos originales, lo que permite un despliegue ligero y eficiente. Su relevancia radica en ofrecer una opción de bajo coste para aplicaciones en nepalí, un idioma con escasa representación en modelos de lenguaje de tamaño pequeño.
 
-La ficha se basa exclusivamente en la información disponible en la página de HuggingFace del adaptador y en las especificaciones públicas del modelo base. No se han publicado detalles sobre el proceso de entrenamiento, los datos utilizados ni métricas de evaluación, por lo que muchos campos se indican como "no disponible".
+La ficha se basa exclusivamente en la información disponible en la página de Hugging Face del adaptador y en las especificaciones públicas del modelo base. No se han publicado detalles sobre el proceso de entrenamiento, los datos utilizados ni métricas de evaluación, por lo que muchos campos se indican como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MAYA-Qwen2.5-1.5B-Nepali-SFT-5K (este) | 1.5B (base) | 32.768 | Nepalí (SFT) | No disponible | HuggingFace |
-| Qwen/Qwen2.5-1.5B (base) | 1.5B | 32.768 | Multilingüe general | Apache 2.0 | HuggingFace, Ollama |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 | Instrucciones, chat | Apache 2.0 | HuggingFace, Ollama |
+| MAYA-Qwen2.5-1.5B-Nepali-SFT-5K (este) | 1.5B (base) | 32.768 | Nepalí (SFT) | No disponible | Hugging Face |
+| Qwen/Qwen2.5-1.5B (base) | 1.5B | 32.768 | Multilingüe general | Apache 2.0 | Hugging Face, Ollama |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 | Instrucciones, chat | Apache 2.0 | Hugging Face, Ollama |
 
 No se han encontrado otros adaptadores LoRA específicos para nepalí sobre Qwen2.5-1.5B en la información disponible. La comparativa se limita al modelo base y su variante instruct, que son las alternativas más directas. El adaptador MAYA ofrece una especialización en nepalí que el base no tiene, pero a costa de una posible pérdida de generalidad en otros idiomas.
 
@@ -77,7 +77,7 @@ No se han encontrado otros adaptadores LoRA específicos para nepalí sobre Qwen
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Anurag9817/MAYA-Qwen2.5-1.5B-Nepali-SFT-5K
+- Hugging Face del adaptador: https://huggingface.co/Anurag9817/MAYA-Qwen2.5-1.5B-Nepali-SFT-5K
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Página de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:1.5b

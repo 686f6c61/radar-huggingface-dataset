@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ayaangup/cnn-transformer-multitask-tiny-2023` es un repositorio de HuggingFace publicado por el desarrollador Ayaan Gupta (usuario `ayaangup`, consultor independiente de machine learning) que contiene una implementación funcional de una arquitectura híbrida CNN-Transformer orientada a tareas múltiples (multitask). El repositorio incluye el código Python (`run.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de pesos en formato safetensors.
+`ayaangup/cnn-transformer-multitask-tiny-2023` es un repositorio de Hugging Face publicado por el desarrollador Ayaan Gupta (usuario `ayaangup`, consultor independiente de machine learning) que contiene una implementación funcional de una arquitectura híbrida CNN-Transformer orientada a tareas múltiples (multitask). El repositorio incluye el código Python (`run.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de pesos en formato safetensors.
 
 La relevancia de este artefacto no está en su rendimiento, sino en su función como esqueleto reproducible. El propio autor indica explícitamente que el checkpoint es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks. El recuento real de parámetros del fichero safetensors es de 49.600, una cifra diminuta que contrasta con la etiqueta `huge` que aparece en la model card, probablemente heredada de una plantilla de generación automática de configuraciones.
 
@@ -56,7 +56,7 @@ No se documenta ninguna innovacion tecnica adicional (decodificacion especulativ
 - Punto de partida para investigacion en arquitecturas hibridas CNN-Transformer: al ser un codigo transparente y de tamano minimo (49.600 parametros), permite modificar el numero de capas o el mecanismo de fusion y observar el efecto sin grandes costes de computo.
 - Experimentos controlados de multitarea: el diseno de co-attention facilita comparar estrategias de comparticion de representaciones frente a lineas base de capacidad equivalente, tal y como recomienda la propia model card.
 - Docencia y formacion: el tamano del repositorio (0,0 GB) y la sencillez del script lo hacen apto para explicar la estructura interna de un transformer hibrido en un aula o taller, ejecutable en un portatil sin GPU.
-- Verificacion de adaptadores de carga personalizados: util para desarrolladores que necesiten escribir un adaptador que conecte esta implementacion con las APIs genericas de HuggingFace, algo que la model card senala como requisito previo.
+- Verificacion de adaptadores de carga personalizados: util para desarrolladores que necesiten escribir un adaptador que conecte esta implementacion con las APIs genericas de Hugging Face, algo que la model card senala como requisito previo.
 - Ablaciones y busqueda de hiperparametros: la receta por defecto (LAMB + scheduler step) sirve como configuracion base para barridos sistematicos, registrando semillas, versiones de entorno y exposicion de datos.
 - Prototipado en entornos con restricciones severas de memoria: con 49.600 parametros, el modelo puede instanciarse en dispositivos de muy baja capacidad, incluidos sistemas embebidos, aunque sin ninguna garantia de utilidad predictiva al no estar entrenado.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones equivalentes para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayaangup/cnn-transformer-multitask-tiny-2023
+- Modelo en Hugging Face: https://huggingface.co/ayaangup/cnn-transformer-multitask-tiny-2023
 - Perfil del autor: https://huggingface.co/ayaangup
 - Repositorio relacionado: https://huggingface.co/YuxuanXu/cnn-transformer-multitask
 - Publicacion cientifica sobre framework multitarea CNN-transformer: https://pubmed.ncbi.nlm.nih.gov/42756439/

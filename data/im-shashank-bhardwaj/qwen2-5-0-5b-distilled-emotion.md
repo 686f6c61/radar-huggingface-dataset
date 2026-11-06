@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B-Distilled-Emotion es un ajuste fino del modelo Qwen/Qwen2.5-0.5B-Instruct (494.032.768 parametros) especializado en clasificacion de emociones en tuits. Lo publica el usuario de HuggingFace im-shashank-bhardwaj y su proposito es transferir a un modelo sub-billon de parametros las capacidades de razonamiento de un LLM de escala cloud, concretamente GLM 5.3 Flash servido por Fireworks.ai, mediante destilacion de 4.041 trazas de Chain-of-Thought (CoT). El resultado es un clasificador que ejecuta localmente en hardware de consumo con coste de inferencia nulo.
+Qwen2.5-0.5B-Distilled-Emotion es un ajuste fino del modelo Qwen/Qwen2.5-0.5B-Instruct (494.032.768 parametros) especializado en clasificacion de emociones en tuits. Lo publica el usuario de Hugging Face im-shashank-bhardwaj y su proposito es transferir a un modelo sub-billon de parametros las capacidades de razonamiento de un LLM de escala cloud, concretamente GLM 5.3 Flash servido por Fireworks.ai, mediante destilacion de 4.041 trazas de Chain-of-Thought (CoT). El resultado es un clasificador que ejecuta localmente en hardware de consumo con coste de inferencia nulo.
 
 El modelo resuelve un problema muy concreto: la clasificacion de emociones sobre el dataset cardiffnlp/tweet_eval (etiquetas anger, joy, optimism y sadness) sin necesidad de infraestructura en la nube. Frente al modelo base, que obtiene un 61,66% de accuracy, la configuracion con LoRA de rango 32 alcanza un 74,90% y cierra el 87,0% de la brecha existente respecto al modelo profesor (76,88%). Ademas, elimina por completo los fallos de formato en la salida: 0 respuestas no parseables frente a 7 en el baseline.
 
@@ -85,8 +85,8 @@ Notas del autor: los dos estudiantes destilados superan al profesor en la clase 
 
 | Modelo | Parametros | Contexto | Accuracy en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-0.5B-Distilled-Emotion (r=32) | 494M (11,73M ajustados) | No disponible | 74,90% / Macro F1 0,6880 | Apache 2.0 | HuggingFace, formato MLX/safetensors |
-| Qwen 2.5 0.5B (baseline) | 494M | No disponible | 61,66% / Macro F1 0,5937 | Apache 2.0 | HuggingFace |
+| Qwen2.5-0.5B-Distilled-Emotion (r=32) | 494M (11,73M ajustados) | No disponible | 74,90% / Macro F1 0,6880 | Apache 2.0 | Hugging Face, formato MLX/safetensors |
+| Qwen 2.5 0.5B (baseline) | 494M | No disponible | 61,66% / Macro F1 0,5937 | Apache 2.0 | Hugging Face |
 | GLM 5.3 Flash (profesor) | No disponible (escala cloud) | No disponible | 76,88% / Macro F1 0,7155 | No disponible | Serverless via Fireworks.ai |
 
 Frente a clasificadores encoder-only tipo BERT o DistilBERT ajustados sobre tweet_eval, no se dispone de datos comparativos en la informacion proporcionada. La ventaja diferencial de este modelo respecto al profesor no es la precision, sino la ejecucion local sin coste por token y la ausencia de dependencia de un proveedor cloud.
@@ -104,7 +104,7 @@ Frente a clasificadores encoder-only tipo BERT o DistilBERT ajustados sobre twee
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/im-shashank-bhardwaj/Qwen2.5-0.5B-Distilled-Emotion
+- Modelo en Hugging Face: https://huggingface.co/im-shashank-bhardwaj/Qwen2.5-0.5B-Distilled-Emotion
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Licencia referenciada en la model card: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/main/LICENSE
 - Dataset de referencia citado en la model card: cardiffnlp/tweet_eval (https://huggingface.co/datasets/cardiffnlp/tweet_eval)

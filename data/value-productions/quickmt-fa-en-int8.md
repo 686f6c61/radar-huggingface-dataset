@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| value-productions/quickmt-fa-en-int8 | no disponible | no disponible | fa-en | CC BY 4.0 | CTranslate2 int8 | HuggingFace |
-| quickmt/quickmt-fa-en (base) | no disponible | no disponible | fa-en | CC BY 4.0 | safetensors u otro formato original (no especificado) | HuggingFace |
+| value-productions/quickmt-fa-en-int8 | no disponible | no disponible | fa-en | CC BY 4.0 | CTranslate2 int8 | Hugging Face |
+| quickmt/quickmt-fa-en (base) | no disponible | no disponible | fa-en | CC BY 4.0 | safetensors u otro formato original (no especificado) | Hugging Face |
 | Otros modelos de traducción fa-en | no disponible | no disponible | fa-en | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables alternativos en la documentación proporcionada; la comparación más directa es con el modelo base float16 del que deriva, que ofrece la misma calidad declarada con mayor peso en disco.
@@ -82,5 +82,5 @@ No se dispone de información sobre modelos comparables alternativos en la docum
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/value-productions/quickmt-fa-en-int8
+- Repositorio Hugging Face: https://huggingface.co/value-productions/quickmt-fa-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-fa-en

@@ -25,7 +25,7 @@ Este modelo es relevante porque aborda un par de idiomas con escasos recursos, c
 
 La arquitectura exacta no esta documentada. El nombre del modelo indica que se trata de una variante de mT5, un modelo Transformer encoder-decoder preentrenado en mas de 100 idiomas y disenado para tareas de texto a texto. mT5 utiliza un vocabulario SentencePiece compartido y una normalizacion de texto que permite manejar multiples idiomas con un unico conjunto de pesos.
 
-No se dispone de informacion sobre el proceso de entrenamiento especifico de este modelo, como el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de ajuste fino como RLHF o DPO. El autor menciona en HuggingFace un dataset asociado (`themohal/saraiki-english-dataset`), pero no se proporcionan detalles sobre su tamano, origen o calidad. La ausencia de una model card detallada impide conocer las innovaciones tecnicas, si las hubiera, mas alla de las inherentes a mT5.
+No se dispone de informacion sobre el proceso de entrenamiento especifico de este modelo, como el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de ajuste fino como RLHF o DPO. El autor menciona en Hugging Face un dataset asociado (`themohal/saraiki-english-dataset`), pero no se proporcionan detalles sobre su tamano, origen o calidad. La ausencia de una model card detallada impide conocer las innovaciones tecnicas, si las hubiera, mas alla de las inherentes a mT5.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: no disponible con exactitud. El tamano del repositorio (6,7 GB) sugiere que el modelo podria requerir al menos 8-12 GB de VRAM en precision completa, pero sin confirmacion.
 - GPU recomendadas: para inferencia con precision FP16, una GPU con 12 GB o mas (por ejemplo, RTX 3060, RTX 4070, A10) podria ser suficiente. Para entrenamiento o ajuste fino, se necesitaria una GPU con mayor memoria (A100, H100).
 - Si cabe en GPU de consumo: probablemente en GPUs de gama alta con 16 GB o mas, pero depende del tamano real del modelo.
-- Opciones de despliegue: al ser un modelo basado en Transformers, puede servirse con vLLM, TGI, o mediante la libreria transformers de HuggingFace. Para entornos ligeros, se podria convertir a GGUF para usar con llama.cpp u Ollama, aunque no se ha confirmado la compatibilidad.
+- Opciones de despliegue: al ser un modelo basado en Transformers, puede servirse con vLLM, TGI, o mediante la libreria transformers de Hugging Face. Para entornos ligeros, se podria convertir a GGUF para usar con llama.cpp u Ollama, aunque no se ha confirmado la compatibilidad.
 - Latencia y throughput: no se dispone de datos medidos.
 
 ## Comparativa con modelos similares
@@ -72,5 +72,5 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/themohal/saraiki-english-translation-mt5
+- Modelo en Hugging Face: https://huggingface.co/themohal/saraiki-english-translation-mt5
 - Dataset asociado: https://huggingface.co/datasets/themohal/saraiki-english-dataset

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jayang99/multitask-small es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de una arquitectura Mixer en configuración "small" orientada a tareas multitarea. No es un modelo entrenado ni un modelo de lenguaje listo para producción: el propio autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio prioriza código transparente y experimentos reproducibles sobre resultados de rendimiento.
+jayang99/multitask-small es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de una arquitectura Mixer en configuración "small" orientada a tareas multitarea. No es un modelo entrenado ni un modelo de lenguaje listo para producción: el propio autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio prioriza código transparente y experimentos reproducibles sobre resultados de rendimiento.
 
 El tamaño real del checkpoint es de 33.088 parámetros (unos 33 mil), lo que lo sitúa en un orden de magnitud propio de maquetas de investigación, no de modelos de lenguaje. La arquitectura declarada combina atención de ventana deslizante (sliding window), fusión de tensores (tensor fusion), activación GELU y normalización ScaleNorm, con una receta de entrenamiento por defecto basada en RMSprop y scheduler coseno.
 
@@ -76,5 +76,5 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jayang99/multitask-small
+- Hugging Face: https://huggingface.co/jayang99/multitask-small
 - No se han encontrado en la busqueda web otros enlaces relevantes (paper, blog, repositorio o demo) asociados a este modelo. Los resultados de la busqueda no guardan relacion con el mismo.

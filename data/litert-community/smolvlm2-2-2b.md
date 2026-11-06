@@ -85,7 +85,7 @@ No se dispone de comparativas con otros VLM on-device (como Phi-3-vision o LLaVA
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/SmolVLM2-2.2B
+- Repositorio Hugging Face: https://huggingface.co/litert-community/SmolVLM2-2.2B
 - Modelo base original: https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Repositorio de la familia SmolLM/SmolVLM: https://github.com/huggingface/smollm

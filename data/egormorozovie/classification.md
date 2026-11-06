@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Egormorozovie/classification` es un prototipo de investigación publicado en HuggingFace por el usuario Egormorozovie. Se presenta como una implementación de EfficientFormer orientada a tareas de clasificación, en una escala "nano" y con atención de tipo flash, fusión por concatenación más MLP, activación gelu-tanh y normalización por grupos. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
+`Egormorozovie/classification` es un prototipo de investigación publicado en Hugging Face por el usuario Egormorozovie. Se presenta como una implementación de EfficientFormer orientada a tareas de clasificación, en una escala "nano" y con atención de tipo flash, fusión por concatenación más MLP, activación gelu-tanh y normalización por grupos. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
 
-El repositorio tiene un tamaño de 0.0 GB y un total de 33.088 parámetros según los safetensors, lo que lo sitúa en un orden de magnitud muy reducido, coherente con un prototipo de juguete o un esqueleto de arquitectura más que con un modelo utilizable en producción. No se declaran idiomas soportados ni pipeline de HuggingFace, y no hay resultados de benchmarks publicados.
+El repositorio tiene un tamaño de 0.0 GB y un total de 33.088 parámetros según los safetensors, lo que lo sitúa en un orden de magnitud muy reducido, coherente con un prototipo de juguete o un esqueleto de arquitectura más que con un modelo utilizable en producción. No se declaran idiomas soportados ni pipeline de Hugging Face, y no hay resultados de benchmarks publicados.
 
 Su relevancia es, por tanto, limitada al ámbito de la experimentación con arquitecturas EfficientFormer y como punto de partida reproducible para montar pipelines de entrenamiento propios. No debe confundirse con los EfficientFormer oficiales de Snap Research ni con modelos de clasificación de imagen listos para uso comercial.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Egormorozovie/classification | 33.088 | no disponible | no publicados | MIT | HuggingFace (repo público) |
+| Egormorozovie/classification | 33.088 | no disponible | no publicados | MIT | Hugging Face (repo público) |
 | EfficientFormer oficial (Snap Research) | no disponible en esta ficha | no disponible | publicados por el autor original | no disponible en esta ficha | repositorio oficial |
-| Otros prototipos de clasificación en HuggingFace | variable | no disponible | habitualmente no publicados | variable | HuggingFace |
+| Otros prototipos de clasificación en Hugging Face | variable | no disponible | habitualmente no publicados | variable | Hugging Face |
 
 No se dispone de datos verificados de los EfficientFormer oficiales en la información proporcionada, por lo que la comparación cuantitativa no está disponible. La diferencia principal frente a alternativas es que este repositorio no incluye un checkpoint entrenado ni métricas.
 
@@ -75,10 +75,10 @@ No se dispone de datos verificados de los EfficientFormer oficiales en la inform
 - Riesgo de alucinación no aplicable en el sentido de generación de texto, pero sí riesgo de resultados sin significado si se usa el checkpoint sin entrenar.
 - No se declaran idiomas soportados ni limitaciones de contexto; el campo no está disponible.
 - La licencia MIT permite uso comercial del código y los pesos, pero el autor advierte de revisar por separado los términos de los datos de origen cuando se usen datasets externos.
-- Al ser una implementación personalizada, las APIs de carga automática de HuggingFace requieren un adaptador explícito; no se garantiza compatibilidad con `transformers` de forma directa.
+- Al ser una implementación personalizada, las APIs de carga automática de Hugging Face requieren un adaptador explícito; no se garantiza compatibilidad con `transformers` de forma directa.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Egormorozovie/classification
+- Hugging Face: https://huggingface.co/Egormorozovie/classification
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

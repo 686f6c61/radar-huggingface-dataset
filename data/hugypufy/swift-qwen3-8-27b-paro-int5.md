@@ -100,7 +100,7 @@ Configuración de medición: 2 × R9700, tensor parallel = 2, vLLM 0.29.0 con ra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hugypufy/Swift-Qwen3.8-27B-PARO-int5
+- Modelo en Hugging Face: https://huggingface.co/hugypufy/Swift-Qwen3.8-27B-PARO-int5
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Checkpoint de referencia de la receta: https://huggingface.co/Launch80/Qwen3.8-27B-PARO-int5
 - Rotaciones ParoQuant: https://huggingface.co/z-lab/Qwen3.8-27B-PARO

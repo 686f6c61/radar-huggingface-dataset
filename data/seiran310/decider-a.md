@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Seiran310/decider-a es un ajuste fino (finetune) del modelo base baselabs/mammoth-1, publicado por el usuario Seiran310 en HuggingFace. El modelo está etiquetado con las arquitecturas qwen3_5 y reax, y su contexto de publicación lo vincula al ecosistema Bittensor (subnet 92, tag sn92) y a un rol de "decision-model". Con 26.085.330.160 parámetros totales (aproximadamente 26 000 millones) y un repositorio de 52,2 GB en formato safetensors, se trata de un modelo de gran tamaño orientado presumiblemente a tareas de decisión dentro de un pipeline de agentes o de validación en red.
+Seiran310/decider-a es un ajuste fino (finetune) del modelo base baselabs/mammoth-1, publicado por el usuario Seiran310 en Hugging Face. El modelo está etiquetado con las arquitecturas qwen3_5 y reax, y su contexto de publicación lo vincula al ecosistema Bittensor (subnet 92, tag sn92) y a un rol de "decision-model". Con 26.085.330.160 parámetros totales (aproximadamente 26 000 millones) y un repositorio de 52,2 GB en formato safetensors, se trata de un modelo de gran tamaño orientado presumiblemente a tareas de decisión dentro de un pipeline de agentes o de validación en red.
 
-La información pública disponible es muy escasa: no se declaran idiomas soportados, no hay pipeline declarado, no se han publicado resultados de benchmarks y el acceso está restringido (gated), requiriendo aceptar condiciones en HuggingFace. La licencia es MIT, lo que permite uso comercial con atribución, pero las condiciones del gate pueden imponer restricciones adicionales que conviene revisar antes de desplegarlo.
+La información pública disponible es muy escasa: no se declaran idiomas soportados, no hay pipeline declarado, no se han publicado resultados de benchmarks y el acceso está restringido (gated), requiriendo aceptar condiciones en Hugging Face. La licencia es MIT, lo que permite uso comercial con atribución, pero las condiciones del gate pueden imponer restricciones adicionales que conviene revisar antes de desplegarlo.
 
 Su relevancia actual es acotada y específica: sirve como pieza de un sistema mayor (probablemente un mecanismo de decisión o enrutado dentro de la subnet 92 de Bittensor) más que como modelo de propósito general. Para desarrolladores e investigadores, el interés está en su naturaleza de finetune sobre un modelo base identificable y en su licencia permisiva, no en un rendimiento documentado que, a día de hoy, no existe públicamente.
 
@@ -80,7 +80,7 @@ La comparación cuantitativa no es posible: no hay benchmarks del modelo ni dato
 
 - Ausencia total de model card detallada: no hay información sobre datos de entrenamiento, sesgos, idiomas ni evaluación, lo que impide garantizar comportamiento en producción.
 - Riesgo de alucinación desconocido: al no haber benchmarks ni evaluaciones publicadas, no se puede acotar su fiabilidad.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace; las condiciones pueden añadir restricciones más allá de la licencia MIT.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face; las condiciones pueden añadir restricciones más allá de la licencia MIT.
 - Licencia MIT: permite uso comercial y modificación, pero conviene verificar que el modelo base baselabs/mammoth-1 tenga una licencia compatible, ya que un finetune hereda obligaciones del original.
 - Idiomas no declarados: no se puede asumir soporte multilingüe; habría que validarlo empíricamente.
 - Contexto no documentado: la ventana máxima real no está especificada, por lo que planificar aplicaciones con contexto largo es arriesgado.
@@ -91,7 +91,7 @@ La comparación cuantitativa no es posible: no hay benchmarks del modelo ni dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Seiran310/decider-a
+- Modelo en Hugging Face: https://huggingface.co/Seiran310/decider-a
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Bittensor (red): https://bittensor.com
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

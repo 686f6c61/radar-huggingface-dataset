@@ -13,7 +13,7 @@ El repositorio `TULLUS/Qwen3-8B-GGUF` contiene una cuantizacion en formato GGUF 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (segun tag `license:apache-2.0` en HuggingFace) |
+| Licencia | Apache 2.0 (segun tag `license:apache-2.0` en Hugging Face) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento

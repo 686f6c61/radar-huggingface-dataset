@@ -76,8 +76,8 @@ No se han publicado en la informacion disponible datos de rendimiento de modelos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Snowball-67B-A2B-CruxEval-Plain-SFT-Step399 | 67,08B | No disponible (evaluado a 32.768 tokens) | Apache 2.0 | HuggingFace |
-| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (base) | No disponible | No disponible | No disponible | HuggingFace |
+| Snowball-67B-A2B-CruxEval-Plain-SFT-Step399 | 67,08B | No disponible (evaluado a 32.768 tokens) | Apache 2.0 | Hugging Face |
+| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (base) | No disponible | No disponible | No disponible | Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se han publicado en la informacion disponible datos de rendimiento de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-CruxEval-Plain-SFT-Step399
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-CruxEval-Plain-SFT-Step399
 - Modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92
 - Commit del modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92/tree/fdc3c3c5fff489d3fb04dcbc2387c179b1bf3fab
 - Evaluador Evalchemy (commit): https://github.com/marin-community/evalchemy/commit/ae362881cf53f869a6ad52c8a59fa17343c0b5f8

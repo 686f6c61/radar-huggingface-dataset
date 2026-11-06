@@ -3,7 +3,7 @@
 # wechsel_base_v7_2026-10-09_r5_s43
 
 ## Resumen
-`wechsel_base_v7_2026-10-09_r5_s43` es un modelo de clasificacion de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario `davidmelash` en HuggingFace. Se trata de un fine-tuning de `benjamin/roberta-base-wechsel-ukrainian`, un modelo monolingue de ucraniano construido con la tecnica WECHSEL, que transfiere un modelo ingles a un nuevo idioma inicializando los embeddings de subpalabras con embeddings estaticos multilingues. El modelo final usa la arquitectura RoBERTa base, con 124.061.961 parametros y pesos en formato safetensors.
+`wechsel_base_v7_2026-10-09_r5_s43` es un modelo de clasificacion de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario `davidmelash` en Hugging Face. Se trata de un fine-tuning de `benjamin/roberta-base-wechsel-ukrainian`, un modelo monolingue de ucraniano construido con la tecnica WECHSEL, que transfiere un modelo ingles a un nuevo idioma inicializando los embeddings de subpalabras con embeddings estaticos multilingues. El modelo final usa la arquitectura RoBERTa base, con 124.061.961 parametros y pesos en formato safetensors.
 
 El problema que resuelve es concreto: localizar datos personales en sentencias judiciales ucranianas para poder pseudonimizarlas. El modelo reconoce cuatro tipos de entidad (`ОСОБА` — persona, `АДРЕСА` — direccion, `НОМЕР` — numero, `ІНФОРМАЦІЯ` — informacion), que cubren los fragmentos que el Registro Unificado Estatal de Decisiones Judiciales de Ucrania anonimiza antes de publicar.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| wechsel_base_v7_2026-10-09_r5_s43 | 124.061.961 | no confirmado (512 por defecto en RoBERTa base) | Clasificacion de tokens (4 entidades de PII legal) | ucraniano | MIT | HuggingFace |
-| benjamin/roberta-base-wechsel-ukrainian | 124.061.961 (misma arquitectura, el fine-tuning no altera el numero de parametros) | no disponible | Modelo base de lenguaje enmascarado | ucraniano | no disponible | HuggingFace |
-| XLM-RoBERTa base (referencia generica multilingue de NER) | 278 M (dato publico del modelo, fuera de la informacion proporcionada) | 512 | Modelo base multilingue, requiere fine-tuning para NER | 100 idiomas | MIT | HuggingFace |
+| wechsel_base_v7_2026-10-09_r5_s43 | 124.061.961 | no confirmado (512 por defecto en RoBERTa base) | Clasificacion de tokens (4 entidades de PII legal) | ucraniano | MIT | Hugging Face |
+| benjamin/roberta-base-wechsel-ukrainian | 124.061.961 (misma arquitectura, el fine-tuning no altera el numero de parametros) | no disponible | Modelo base de lenguaje enmascarado | ucraniano | no disponible | Hugging Face |
+| XLM-RoBERTa base (referencia generica multilingue de NER) | 278 M (dato publico del modelo, fuera de la informacion proporcionada) | 512 | Modelo base multilingue, requiere fine-tuning para NER | 100 idiomas | MIT | Hugging Face |
 
 No se han encontrado en la busqueda web otros modelos especificos de anonimizacion de sentencias ucranianas con los que comparar de forma verificable. Cualquier comparacion de rendimiento con alternativas queda pendiente de una evaluacion propia.
 
@@ -84,7 +84,7 @@ No se han encontrado en la busqueda web otros modelos especificos de anonimizaci
 - Falta de informacion sobre el tokenizer final, los hiperparametros de fine-tuning y el esquema exacto de etiquetas (BIO o BILUO), lo que complica su integracion fiable sin pruebas previas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/davidmelash/wechsel_base_v7_2026-10-09_r5_s43
+- Modelo en Hugging Face: https://huggingface.co/davidmelash/wechsel_base_v7_2026-10-09_r5_s43
 - Modelo base: https://huggingface.co/benjamin/roberta-base-wechsel-ukrainian
 - Repositorio de WECHSEL en GitHub: https://github.com/CPJKU/wechsel
 - Paquete wechsel en PyPI: https://pypi.org/project/wechsel/

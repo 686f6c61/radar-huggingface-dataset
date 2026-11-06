@@ -4,7 +4,7 @@
 
 Este repositorio contiene un modelo de lenguaje de tipo causal para generacion de texto, publicado por el usuario yuhengtu-bytedance, que no es un entrenamiento desde cero sino una fusion de checkpoints intermedios. Concretamente, se han promediado cinco puntos de control (global_step 6000, 7000, 8000, 9000 y 10000) de una misma ejecucion de entrenamiento identificada como `filtered_e2e_insert_hyperstition_v1`, utilizando la herramienta mergekit con el metodo Linear y ponderaciones uniformes. El resultado es un unico conjunto de pesos de 6.856.253.440 parametros (aproximadamente 6,86 mil millones) en formato bfloat16.
 
-La relevancia de esta ficha es mas documental que practica: se trata de un artefacto de investigacion interna (las rutas del YAML apuntan a un proyecto llamado `Pan_Safety_Better_Measurement`) que se ha subido a HuggingFace sin model card descriptiva, sin licencia declarada, sin idiomas declarados y sin resultados de evaluacion. La arquitectura declarada por las etiquetas del repositorio es `gpt_neox`, y el pipeline es `text-generation`.
+La relevancia de esta ficha es mas documental que practica: se trata de un artefacto de investigacion interna (las rutas del YAML apuntan a un proyecto llamado `Pan_Safety_Better_Measurement`) que se ha subido a Hugging Face sin model card descriptiva, sin licencia declarada, sin idiomas declarados y sin resultados de evaluacion. La arquitectura declarada por las etiquetas del repositorio es `gpt_neox`, y el pipeline es `text-generation`.
 
 Para un desarrollador o investigador, este modelo debe considerarse un experimento reproducible de tecnicas de fusion de checkpoints (model merging) mas que un modelo listo para produccion. La ausencia de informacion sobre datos de entrenamiento, tokenizador, longitud de contexto efectiva y condiciones de uso impide recomendarlo para despliegues reales sin una evaluacion previa por parte del usuario.
 
@@ -38,7 +38,7 @@ La arquitectura subyacente es GPT-NeoX, un transformer decoder-only causal con a
 
 - Generacion de texto autoregresiva (pipeline `text-generation`), como capacidad base de la arquitectura GPT-NeoX.
 - Soporte de conversacion: el repositorio incluye la etiqueta `conversational`, aunque no se documenta el formato de prompt ni la plantilla de chat utilizada.
-- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, es decir, con la infraestructura de despliegue de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, es decir, con la infraestructura de despliegue de Hugging Face.
 - Razonamiento, generacion de codigo, matematicas, tool calling, uso de agentes, capacidades multilingues, vision o audio: no disponible (no hay informacion en la model card ni evaluaciones publicadas que lo respalden).
 - Modo de pensamiento (thinking mode): no disponible.
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia en bfloat16: los pesos ocupan aproximadamente 13,7 GB, por lo que se necesitan al menos 16 GB de VRAM contando cache KV y activaciones; un valor practico de trabajo es de 18 a 24 GB.
 - VRAM en cuantizacion de 8 bits: alrededor de 7-8 GB de pesos, con un total de 10-12 GB. En 4 bits: alrededor de 4 GB de pesos, con un total de 6-8 GB. Estas cifras son estimaciones estandar para un modelo de ~7B; el repositorio no publica pesos ya cuantizados, por lo que habria que generarlos.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o A10G para despliegue en servidor con margen amplio. En el ambito de consumo, una RTX 4090 o RTX 3090 (24 GB) ejecutan el modelo en bfloat16 sin problemas; una RTX 4080 o 4070 Ti Super (16 GB) queda al limite; una RTX 3060 de 12 GB solo es viable con cuantizacion de 8 o 4 bits.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta presente), vLLM (soporta la arquitectura GPT-NeoX) y endpoints compatibles de HuggingFace. Para llama.cpp u Ollama seria necesario convertir previamente los pesos safetensors a GGUF, paso no documentado en el repositorio.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta presente), vLLM (soporta la arquitectura GPT-NeoX) y endpoints compatibles de Hugging Face. Para llama.cpp u Ollama seria necesario convertir previamente los pesos safetensors a GGUF, paso no documentado en el repositorio.
 - Latencia y throughput: no disponible, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (sfm_filtered_e2e_insert_hyperstition_v1, media de checkpoints) | 6,86B | no disponible | no disponible | HuggingFace, safetensors bfloat16 | Fusion de cinco checkpoints; sin benchmarks ni model card |
-| Pythia 6.9B | 6,9B | 2048 tokens | Apache 2.0 | HuggingFace y EleutherAI | Misma familia arquitectonica GPT-NeoX; ampliamente evaluado y documentado |
-| GPT-J 6B | 6,0B | 2048 tokens | Apache 2.0 | HuggingFace y EleutherAI | Predecesor de GPT-NeoX, referencia clasica de ~6B en codigo abierto |
-| GPT-NeoX 20B | 20B | 2048 tokens | Apache 2.0 | HuggingFace y EleutherAI | Misma arquitectura a mayor escala; requiere hardware muy superior |
+| Este modelo (sfm_filtered_e2e_insert_hyperstition_v1, media de checkpoints) | 6,86B | no disponible | no disponible | Hugging Face, safetensors bfloat16 | Fusion de cinco checkpoints; sin benchmarks ni model card |
+| Pythia 6.9B | 6,9B | 2048 tokens | Apache 2.0 | Hugging Face y EleutherAI | Misma familia arquitectonica GPT-NeoX; ampliamente evaluado y documentado |
+| GPT-J 6B | 6,0B | 2048 tokens | Apache 2.0 | Hugging Face y EleutherAI | Predecesor de GPT-NeoX, referencia clasica de ~6B en codigo abierto |
+| GPT-NeoX 20B | 20B | 2048 tokens | Apache 2.0 | Hugging Face y EleutherAI | Misma arquitectura a mayor escala; requiere hardware muy superior |
 
 La comparacion debe tomarse con cautela: los datos de Pythia, GPT-J y GPT-NeoX corresponden a modelos publicos y documentados, mientras que para este repositorio no se dispone de contexto, licencia ni resultados de evaluacion, por lo que no es posible equiparar su rendimiento.
 
@@ -88,7 +88,7 @@ La comparacion debe tomarse con cautela: los datos de Pythia, GPT-J y GPT-NeoX c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_simpleavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_simpleavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Articulo del metodo Linear merge: https://arxiv.org/abs/2203.05482
 - Resultados de la busqueda web: no se ha encontrado ningun enlace tecnico relacionado con el modelo. Los resultados devueltos corresponden a documentacion de la cartera de hardware Trezor Suite y no guardan relacion con este repositorio.

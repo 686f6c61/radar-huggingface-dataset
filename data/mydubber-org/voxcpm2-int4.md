@@ -87,7 +87,7 @@ No se han publicado comparaciones de rendimiento contra otros sistemas TTS en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mydubber-org/voxcpm2-int4
+- Repositorio en Hugging Face: https://huggingface.co/mydubber-org/voxcpm2-int4
 - Modelo base (OpenBMB): https://huggingface.co/openbmb/VoxCPM2
 - Script de construcción de los pesos: https://github.com/vladbehash/dubber/blob/main/tools/model-builds/src/model_builds/voxcpm2.py
 - Proyecto dubber: https://github.com/vladbehash/dubber

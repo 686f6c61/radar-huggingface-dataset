@@ -74,17 +74,17 @@ La comparativa directa con otros modelos multimodales de tamano similar (como Qw
 - Idiomas limitados: solo soporta ingles y chino. No se recomienda su uso para otros idiomas sin evaluacion previa.
 - Requisitos de hardware elevados: la version completa de 106B necesita infraestructura de multiples GPU, lo que limita su uso a entornos cloud o clusters especializados.
 - La conversion KerasFormers es un proyecto de la comunidad: aunque el modelo base tiene licencia MIT, la conversion puede tener diferencias sutiles de comportamiento respecto al checkpoint original. Se recomienda validar en el caso de uso concreto.
-- El repositorio no tiene descargas ni likes en HuggingFace, lo que sugiere que es una publicacion reciente con poca adopcion aun. Usar con cautela en produccion.
+- El repositorio no tiene descargas ni likes en Hugging Face, lo que sugiere que es una publicacion reciente con poca adopcion aun. Usar con cautela en produccion.
 - El paper asociado (arXiv:2507.01006) se centra en GLM-4.1V-Thinking, no en GLM-4.6V directamente, por lo que los detalles de entrenamiento de esta version especifica son limitados.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/glm-4.6v
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-4.6V
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/glm-4.6v
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-4.6V
 - Documentacion oficial de Z.ai: https://docs.z.ai/guides/vlm/glm-4.6v
 - Blog de Z.ai sobre GLM-4.6V: https://z.ai/blog/glm-4.6v
 - Repositorio GitHub de GLM-V: https://github.com/zai-org/GLM-V
 - Paper arXiv:2507.01006: https://arxiv.org/abs/2507.01006
 - Documentacion de KerasFormers: https://imvision12.github.io/KerasFormers/glm4v_moe/
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
-- Coleccion GLM en HuggingFace: https://huggingface.co/collections/kerasformers/glm-6a83b575b7af91f0daac58ee
+- Coleccion GLM en Hugging Face: https://huggingface.co/collections/kerasformers/glm-6a83b575b7af91f0daac58ee

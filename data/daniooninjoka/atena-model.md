@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Daniooninjoka/atena-model` es un repositorio publicado en HuggingFace por el autor Daniooninjoka, con la etiqueta `region:us`. Fue creado el 24 de marzo de 2026 y actualizado el 14 de agosto de 2026. El tamaño del repositorio es de 20,6 GB, lo que sugiere que contiene pesos de un modelo de tamaño considerable, aunque no se dispone de información adicional sobre su arquitectura, parámetros o propósito.
+El modelo `Daniooninjoka/atena-model` es un repositorio publicado en Hugging Face por el autor Daniooninjoka, con la etiqueta `region:us`. Fue creado el 24 de marzo de 2026 y actualizado el 14 de agosto de 2026. El tamaño del repositorio es de 20,6 GB, lo que sugiere que contiene pesos de un modelo de tamaño considerable, aunque no se dispone de información adicional sobre su arquitectura, parámetros o propósito.
 
 En el momento de la consulta, el modelo no registra descargas y cuenta con 7 likes. No se ha publicado ninguna documentación técnica, ficha de modelo, ni archivos de configuración que permitan conocer sus especificaciones. La licencia, los idiomas soportados y el pipeline de uso no están disponibles. Dada la ausencia total de información, no es posible evaluar su rendimiento, capacidades ni idoneidad para casos de uso concretos.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento del
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Daniooninjoka/atena-model)
+- [Repositorio en Hugging Face](https://huggingface.co/Daniooninjoka/atena-model)

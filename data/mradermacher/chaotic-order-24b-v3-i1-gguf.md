@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chaotic-Order-24B-V3-i1-GGUF es la versión cuantizada en formato GGUF del modelo Sorihon/Chaotic-Order-24B-V3, un modelo de 23.572.403.200 parámetros (unos 23,57 B) generado mediante fusión de modelos con mergekit. La publicación corre a cargo de mradermacher, un autor conocido en HuggingFace por producir cuantizaciones sistemáticas de modelos abiertos, en este caso con la variante "i1", que utiliza una matriz de importancia (imatrix) para reducir la pérdida de calidad en cuantizaciones agresivas.
+Chaotic-Order-24B-V3-i1-GGUF es la versión cuantizada en formato GGUF del modelo Sorihon/Chaotic-Order-24B-V3, un modelo de 23.572.403.200 parámetros (unos 23,57 B) generado mediante fusión de modelos con mergekit. La publicación corre a cargo de mradermacher, un autor conocido en Hugging Face por producir cuantizaciones sistemáticas de modelos abiertos, en este caso con la variante "i1", que utiliza una matriz de importancia (imatrix) para reducir la pérdida de calidad en cuantizaciones agresivas.
 
 El repositorio no incluye model card propia más allá de la plantilla estándar del cuantizador: no se documentan arquitectura interna, datos de entrenamiento, longitud de contexto, licencia ni resultados de benchmarks. Se sabe que el modelo base es un merge etiquetado con mergekit, orientado a uso conversacional y declarado únicamente para inglés.
 
@@ -83,7 +83,7 @@ La información proporcionada no incluye benchmarks ni una lista de modelos comp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Chaotic-Order-24B-V3-i1-GGUF | ~23,57 B | No disponible | No disponible | GGUF en HuggingFace (i1 y estático) |
+| Chaotic-Order-24B-V3-i1-GGUF | ~23,57 B | No disponible | No disponible | GGUF en Hugging Face (i1 y estático) |
 | Mistral Small 3 24B | ~24 B | 32k-128k según versión | Apache 2.0 | Pesos abiertos y GGUF de terceros |
 | Gemma 2 27B | ~27 B | 8k | Licencia Gemma | Pesos abiertos y GGUF de terceros |
 | Qwen2.5 32B | ~32 B | 128k | Apache 2.0 (mayoría de variantes) | Pesos abiertos y GGUF de terceros |

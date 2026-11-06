@@ -90,7 +90,7 @@ No se dispone de información comparativa con otros modelos cuantizados de carac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EschaLabs/Qwen3.6-35B-A3B-Escha-W2
+- Modelo en Hugging Face: https://huggingface.co/EschaLabs/Qwen3.6-35B-A3B-Escha-W2
 - Runtime (SGLang y ZML): https://huggingface.co/EschaLabs/escha-runtime-qwen3moe
 - Runtime MLX para Apple Silicon: https://github.com/EschaLabs/escha-mlx
 - Sitio web de Escha Labs: https://eschalabs.com/

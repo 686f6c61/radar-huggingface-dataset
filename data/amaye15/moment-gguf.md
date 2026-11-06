@@ -4,7 +4,7 @@
 
 El modelo `amaye15/moment-gguf` es una conversión al formato GGUF del modelo fundacional de series temporales `AutonLab/MOMENT-1-large`. Lo ha desarrollado el autor `amaye15` dentro del proyecto `zsfm-rs`, un workspace en Rust que adapta modelos de forecasting zero-shot a GGUF usando la librería candle de Hugging Face. El objetivo es permitir la inferencia de pronósticos de series temporales sin depender de PyTorch ni de un runtime de Python, lo que simplifica su integración en entornos de producción.
 
-MOMENT-1-large es un modelo de tipo masked patch encoder con arquitectura transformer bidireccional. Fue preentrenado de forma auto-supervisada mediante reconstrucción de parches enmascarados sobre conjuntos diversos de series temporales. El modelo tiene aproximadamente 346 millones de parámetros (según los metadatos de HuggingFace) y produce pronósticos puntuales para horizontes futuros a partir de un contexto de al menos 32 pasos temporales. Su relevancia actual radica en que ofrece una opción eficiente y ligera para tareas de forecasting sin entrenamiento adicional, con soporte para cuantización y ejecución en Rust.
+MOMENT-1-large es un modelo de tipo masked patch encoder con arquitectura transformer bidireccional. Fue preentrenado de forma auto-supervisada mediante reconstrucción de parches enmascarados sobre conjuntos diversos de series temporales. El modelo tiene aproximadamente 346 millones de parámetros (según los metadatos de Hugging Face) y produce pronósticos puntuales para horizontes futuros a partir de un contexto de al menos 32 pasos temporales. Su relevancia actual radica en que ofrece una opción eficiente y ligera para tareas de forecasting sin entrenamiento adicional, con soporte para cuantización y ejecución en Rust.
 
 ## Especificaciones tecnicas
 
@@ -70,6 +70,6 @@ No se dispone de datos de comparación en la informacion proporcionada. El model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amaye15/moment-gguf
+- Hugging Face: https://huggingface.co/amaye15/moment-gguf
 - Modelo base: https://huggingface.co/AutonLab/MOMENT-1-large
 - Proyecto zsfm-rs: https://github.com/amaye15/zsfm-rs

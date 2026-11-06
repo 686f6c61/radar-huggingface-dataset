@@ -23,7 +23,7 @@ La relevancia de esta publicacion es practica: pone a disposicion del usuario un
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base `neelabhbuilds/hua-1.7b`. La model card del repositorio de cuantizaciones unicamente indica que se trata de "static quants" del modelo original y anade metadatos de la herramienta de conversion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que confirma que los pesos de origen estaban en formato HuggingFace (probablemente safetensors) antes de la conversion a GGUF.
+No se dispone de informacion sobre la arquitectura del modelo base `neelabhbuilds/hua-1.7b`. La model card del repositorio de cuantizaciones unicamente indica que se trata de "static quants" del modelo original y anade metadatos de la herramienta de conversion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que confirma que los pesos de origen estaban en formato Hugging Face (probablemente safetensors) antes de la conversion a GGUF.
 
 Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas concretas. Toda la informacion tecnica relevante reside en el repositorio del modelo base, que no forma parte de los datos proporcionados.
 

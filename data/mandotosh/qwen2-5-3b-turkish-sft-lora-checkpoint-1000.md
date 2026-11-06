@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-3B-Turkish-SFT-LoRA-checkpoint-1000 es un adaptador LoRA (PEFT) entrenado mediante fine-tuning supervisado (SFT) en turco sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Lo publica el usuario Mandotosh en HuggingFace y su proposito es adaptar un modelo instructivo multilingue de aproximadamente 3 000 millones de parametros al turco sin necesidad de reentrenar ni redistribuir los pesos completos: el repositorio ocupa 0,3 GB e incluye unicamente los pesos del adaptador en safetensors, su configuracion y los ficheros del tokenizer.
+Qwen2.5-3B-Turkish-SFT-LoRA-checkpoint-1000 es un adaptador LoRA (PEFT) entrenado mediante fine-tuning supervisado (SFT) en turco sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Lo publica el usuario Mandotosh en Hugging Face y su proposito es adaptar un modelo instructivo multilingue de aproximadamente 3 000 millones de parametros al turco sin necesidad de reentrenar ni redistribuir los pesos completos: el repositorio ocupa 0,3 GB e incluye unicamente los pesos del adaptador en safetensors, su configuracion y los ficheros del tokenizer.
 
 Se trata de un checkpoint intermedio, no de un entrenamiento finalizado. El autor indica que el job de entrenamiento se cancelo tras guardar el paso 1000 (24 de junio de 2026) y que la subida se realizo el 15 de octubre de 2026. La procedencia y la composicion del dataset de entrenamiento no han sido auditadas y el conjunto de datos no se distribuye. La evaluacion publicada sobre 100 preguntas del subconjunto publico de TurkishMMLU arroja un 33 % de acierto, sin comparacion con el modelo base en esa misma seleccion.
 
@@ -93,8 +93,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningun otro bench
 
 | Modelo | Parametros | Contexto | Rendimiento en turco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mandotosh/Qwen2.5-3B-Turkish-SFT-LoRA-checkpoint-1000 | Adaptador LoRA sobre base de 3 000 M | No indicado (base: 32 768 tokens) | 33/100 en seleccion de 100 preguntas de TurkishMMLU | No disponible (remite al modelo base) | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-3B-Instruct (modelo base, sin adaptador) | 3 000 M | 32 768 tokens | No evaluado en la misma seleccion por el autor | Licencia del modelo base de Qwen (no verificada en esta ficha) | HuggingFace, ampliamente descargado |
+| Mandotosh/Qwen2.5-3B-Turkish-SFT-LoRA-checkpoint-1000 | Adaptador LoRA sobre base de 3 000 M | No indicado (base: 32 768 tokens) | 33/100 en seleccion de 100 preguntas de TurkishMMLU | No disponible (remite al modelo base) | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-3B-Instruct (modelo base, sin adaptador) | 3 000 M | 32 768 tokens | No evaluado en la misma seleccion por el autor | Licencia del modelo base de Qwen (no verificada en esta ficha) | Hugging Face, ampliamente descargado |
 | Otros adaptadores LoRA o modelos ajustados para turco de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparables de otras alternativas en la informacion proporcionada. La busqueda web realizada no devolvio resultados relevantes sobre este modelo, por lo que la comparativa se limita al modelo base y a la ausencia de linea base publicada.
@@ -115,7 +115,7 @@ No se dispone de datos de benchmarks comparables de otras alternativas en la inf
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Mandotosh/Qwen2.5-3B-Turkish-SFT-LoRA-checkpoint-1000
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Mandotosh/Qwen2.5-3B-Turkish-SFT-LoRA-checkpoint-1000
 - Modelo base Qwen/Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Subconjunto de TurkishMMLU usado en la evaluacion: https://github.com/ArdaYueksel/TurkishMMLU/blob/main/turkishmmlu_sub.json
 - Informe de evaluacion y evaluador incluidos en el repositorio, bajo el directorio `evaluation/` (no se redistribuyen los textos de las preguntas ni las respuestas por pregunta)

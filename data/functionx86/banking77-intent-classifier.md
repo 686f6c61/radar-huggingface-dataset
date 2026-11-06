@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `functionX86/banking77-intent-classifier` es un clasificador de intenciones de 77 clases para el dominio bancario, desarrollado por el usuario functionX86 y publicado en HuggingFace. Se construye mediante fine-tuning del modelo de embeddings `BAAI/bge-small-en-v1.5` (33 millones de parámetros, arquitectura BERT) sobre el dataset BANKING77 de PolyAI. Su propósito es resolver la tarea de clasificación de intenciones en mensajes de clientes de banca minorista, permitiendo enrutar automáticamente solicitudes como *"my card still hasn't arrived after two weeks"* hacia la intención correspondiente (`card_arrival`).
+El modelo `functionX86/banking77-intent-classifier` es un clasificador de intenciones de 77 clases para el dominio bancario, desarrollado por el usuario functionX86 y publicado en Hugging Face. Se construye mediante fine-tuning del modelo de embeddings `BAAI/bge-small-en-v1.5` (33 millones de parámetros, arquitectura BERT) sobre el dataset BANKING77 de PolyAI. Su propósito es resolver la tarea de clasificación de intenciones en mensajes de clientes de banca minorista, permitiendo enrutar automáticamente solicitudes como *"my card still hasn't arrived after two weeks"* hacia la intención correspondiente (`card_arrival`).
 
 El modelo es relevante por dos motivos: por un lado, ofrece un rendimiento competitivo en un benchmark estándar de clasificación de intenciones (macro F1 de 0,9245 y accuracy de 0,9247 sobre el split de test oficial); por otro, su model card documenta de forma explícita y honesta un resultado negativo: un enfoque más simple basado en embeddings congelados del mismo encoder seguidos de una regresión logística alcanza un macro F1 de 0,935, superior al del fine-tuning completo. Esto lo convierte en un caso de estudio interesante sobre cuándo el fine-tuning aporta valor real y cuándo no. El modelo está licenciado bajo MIT, soporta únicamente inglés y tiene una longitud de contexto de 64 tokens.
 
@@ -73,7 +73,7 @@ No se han publicado resultados comparativos con otros modelos de clasificación 
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos con otros modelos de clasificación de intenciones bancarias en el momento de redactar esta ficha. Existen alternativas en HuggingFace como `learn-abc/banking77-intent-classifier-en` (un clasificador de 12 intenciones, también basado en BERT, pero con un conjunto reducido) o `learn-abc/banking77-intent-classifier`, pero no se han publicado métricas oficiales comparables. Otras implementaciones como `ibra-dotcom/banking77-intent-classifier` (DistilBERT) reportan una accuracy de 0,908, pero no se dispone de una evaluación estandarizada común. Se recomienda evaluar cada modelo sobre el split de test oficial de BANKING77 para una comparación justa.
+No se dispone de datos de benchmarks comparativos con otros modelos de clasificación de intenciones bancarias en el momento de redactar esta ficha. Existen alternativas en Hugging Face como `learn-abc/banking77-intent-classifier-en` (un clasificador de 12 intenciones, también basado en BERT, pero con un conjunto reducido) o `learn-abc/banking77-intent-classifier`, pero no se han publicado métricas oficiales comparables. Otras implementaciones como `ibra-dotcom/banking77-intent-classifier` (DistilBERT) reportan una accuracy de 0,908, pero no se dispone de una evaluación estandarizada común. Se recomienda evaluar cada modelo sobre el split de test oficial de BANKING77 para una comparación justa.
 
 ## Limitaciones y advertencias
 

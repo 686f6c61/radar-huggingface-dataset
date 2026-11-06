@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `medical-bidirectional-machine-translation-checkpoints-68138` es un modelo de traduccion automatica bidireccional de dominio medico, publicado en HuggingFace por el usuario `ndhieu1101`. Se trata de un fine-tuning de un modelo de la familia T5 (segun la etiqueta `t5` de la model card) orientado a traduccion de texto a texto, con 275.102.976 parametros reales confirmados por los pesos en safetensors. Aunque el identificador sugiere un uso bidireccional y especializado en terminologia medica, el autor no ha documentado el par de idiomas concreto ni la composicion del corpus.
+El modelo `medical-bidirectional-machine-translation-checkpoints-68138` es un modelo de traduccion automatica bidireccional de dominio medico, publicado en Hugging Face por el usuario `ndhieu1101`. Se trata de un fine-tuning de un modelo de la familia T5 (segun la etiqueta `t5` de la model card) orientado a traduccion de texto a texto, con 275.102.976 parametros reales confirmados por los pesos en safetensors. Aunque el identificador sugiere un uso bidireccional y especializado en terminologia medica, el autor no ha documentado el par de idiomas concreto ni la composicion del corpus.
 
-El modelo se distribuye bajo la libreria `transformers` y esta etiquetado como compatible con `text-generation-inference` y con endpoints de HuggingFace, lo que facilita su despliegue en infraestructura gestionada. El repositorio ocupa 6,6 GB, un tamano muy superior al que corresponderia a un unico checkpoint de 275 millones de parametros, lo que apunta a que incluye varios checkpoints intermedios o estados de entrenamiento acumulados, tal como sugiere el sufijo `checkpoints` del nombre.
+El modelo se distribuye bajo la libreria `transformers` y esta etiquetado como compatible con `text-generation-inference` y con endpoints de Hugging Face, lo que facilita su despliegue en infraestructura gestionada. El repositorio ocupa 6,6 GB, un tamano muy superior al que corresponderia a un unico checkpoint de 275 millones de parametros, lo que apunta a que incluye varios checkpoints intermedios o estados de entrenamiento acumulados, tal como sugiere el sufijo `checkpoints` del nombre.
 
 Su relevancia actual es limitada pero concreta: los modelos de traduccion especializados en dominio clinico siguen siendo utiles alli donde los modelos genericos multilingues fallan en terminologia, abreviaturas y estructuras de informes medicos. No obstante, la ausencia total de documentacion (licencia, idiomas, dataset e hiperparametros completos) lo convierte en un artefacto de investigacion mas que en un componente listo para produccion.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada pero concreta: los modelos de traduccion especi
 
 La etiqueta `t5` y la tarea `text2text-generation` indican una arquitectura transformer encoder-decoder de tipo T5, con atencion completa y sin mecanismos de estado recurrente ni mezcla de expertos. El recuento de 275.102.976 parametros se situa entre las variantes pequenas y medianas de la familia T5, lo que da margen para un entrenamiento de ajuste fino sobre un corpus paralelo de dominio especifico sin necesidad de infraestructura de gran escala.
 
-Los hiperparametros declarados en la model card corresponden a un entrenamiento con `Trainer` de HuggingFace: learning rate de 5e-05, batch de entrenamiento de 8 con 4 pasos de acumulacion de gradiente (batch efectivo de 32), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler coseno con warmup del 5 por ciento, 3 epocas, precision mixta nativa (AMP) y label smoothing de 0,1. El unico punto de control registrado es el paso 5000, con perdida de entrenamiento 2,5866 y perdida de validacion 2,5705. El autor indica que el modelo se entreno "desde cero sobre el dataset None", lo que en la plantilla automatica de `Trainer` significa que no se especifico el nombre del dataset; no hay informacion sobre el numero de tokens, la composicion del corpus, el par de idiomas ni si hubo una fase posterior de RLHF o DPO. Las versiones de framework empleadas fueron Transformers 4.57.6, PyTorch 2.10.0+cu128, Datasets 5.0.0 y Tokenizers 0.22.2.
+Los hiperparametros declarados en la model card corresponden a un entrenamiento con `Trainer` de Hugging Face: learning rate de 5e-05, batch de entrenamiento de 8 con 4 pasos de acumulacion de gradiente (batch efectivo de 32), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler coseno con warmup del 5 por ciento, 3 epocas, precision mixta nativa (AMP) y label smoothing de 0,1. El unico punto de control registrado es el paso 5000, con perdida de entrenamiento 2,5866 y perdida de validacion 2,5705. El autor indica que el modelo se entreno "desde cero sobre el dataset None", lo que en la plantilla automatica de `Trainer` significa que no se especifico el nombre del dataset; no hay informacion sobre el numero de tokens, la composicion del corpus, el par de idiomas ni si hubo una fase posterior de RLHF o DPO. Las versiones de framework empleadas fueron Transformers 4.57.6, PyTorch 2.10.0+cu128, Datasets 5.0.0 y Tokenizers 0.22.2.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ Los hiperparametros declarados en la model card corresponden a un entrenamiento 
 - Traduccion bidireccional: el propio nombre del modelo indica que cubre las dos direcciones del par de idiomas, aunque el par concreto no esta documentado.
 - Dominio especializado: el identificador indica un entrenamiento orientado a terminologia clinica y medica.
 - Procesamiento por lotes y por secuencias: al ser un modelo encoder-decoder de 275 millones de parametros, admite inferencia por lotes en GPU con memoria moderada.
-- Compatibilidad con text-generation-inference y endpoints de HuggingFace, segun las etiquetas del repositorio.
+- Compatibilidad con text-generation-inference y endpoints de Hugging Face, segun las etiquetas del repositorio.
 - No se ha documentado soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio, modo thinking ni capacidades multilingues mas alla del par de idiomas no especificado.
 
 ## Casos de uso
@@ -66,7 +66,7 @@ No hay datos de MMLU, HumanEval, GSM8K ni de comparaciones con otros modelos. Ta
 - El repositorio completo ocupa 6,6 GB, un orden de magnitud superior al peso de un unico checkpoint, presumiblemente por la inclusion de estados intermedios. Conviene descargar solo el checkpoint deseado si el objetivo es consumo reducido.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti, RTX 4090, y tambien en GPUs de portatil con 6 GB o mas. Incluso es viable en CPU para inferencia de baja concurrencia.
 - GPU recomendadas para produccion con concurrencia alta: A100, H100, L40S o L4 para despliegue en lote; RTX 4090 para servicios de baja latencia.
-- Opciones de despliegue: `transformers` con PyTorch (ruta nativa), text-generation-inference y endpoints de HuggingFace (segun las etiquetas del repositorio). No se declara soporte de llama.cpp, Ollama ni GGUF, ya que solo hay pesos safetensors. vLLM y TGI pueden funcionar al ser un modelo de tipo T5, pero no estan confirmados por el autor.
+- Opciones de despliegue: `transformers` con PyTorch (ruta nativa), text-generation-inference y endpoints de Hugging Face (segun las etiquetas del repositorio). No se declara soporte de llama.cpp, Ollama ni GGUF, ya que solo hay pesos safetensors. vLLM y TGI pueden funcionar al ser un modelo de tipo T5, pero no estan confirmados por el autor.
 - Latencia y throughput estimados: no disponibles (no se publican mediciones).
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ Los datos de la columna de este modelo provienen de la informacion del repositor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| medical-bidirectional-machine-translation-checkpoints-68138 | 275.102.976 | no disponible | no disponible | HuggingFace, safetensors | Sin documentacion de idiomas ni dataset; BLEU 43,07 declarado por el autor sobre un conjunto no identificado |
-| T5-base | 220 millones (aprox.) | 512 tokens | Apache 2.0 | HuggingFace, safetensors | Modelo generalista ingles, no orientado a traduccion ni a dominio medico |
-| mT5-base | 580 millones (aprox.) | 512 tokens | Apache 2.0 | HuggingFace, safetensors | Multilingue con cobertura amplia, requiere ajuste fino para traduccion de calidad |
-| Helsinki-NLP opus-mt (modelos MarianMT) | 70-80 millones (aprox.) por par de idiomas | 512 tokens (aprox.) | MIT / Apache 2.0 segun variante | HuggingFace, safetensors | Modelos dedicados por par de idiomas, sin especializacion medica |
+| medical-bidirectional-machine-translation-checkpoints-68138 | 275.102.976 | no disponible | no disponible | Hugging Face, safetensors | Sin documentacion de idiomas ni dataset; BLEU 43,07 declarado por el autor sobre un conjunto no identificado |
+| T5-base | 220 millones (aprox.) | 512 tokens | Apache 2.0 | Hugging Face, safetensors | Modelo generalista ingles, no orientado a traduccion ni a dominio medico |
+| mT5-base | 580 millones (aprox.) | 512 tokens | Apache 2.0 | Hugging Face, safetensors | Multilingue con cobertura amplia, requiere ajuste fino para traduccion de calidad |
+| Helsinki-NLP opus-mt (modelos MarianMT) | 70-80 millones (aprox.) por par de idiomas | 512 tokens (aprox.) | MIT / Apache 2.0 segun variante | Hugging Face, safetensors | Modelos dedicados por par de idiomas, sin especializacion medica |
 
 No se dispone de una comparacion de BLEU, METEOR o TER frente a estos modelos, porque el autor no ha publicado la configuracion de evaluacion ni los conjuntos utilizados.
 
@@ -98,7 +98,7 @@ No se dispone de una comparacion de BLEU, METEOR o TER frente a estos modelos, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ndhieu1101/medical-bidirectional-machine-translation-checkpoints-68138
+- Modelo en Hugging Face: https://huggingface.co/ndhieu1101/medical-bidirectional-machine-translation-checkpoints-68138
 - Perfil del autor: https://huggingface.co/ndhieu1101
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference

@@ -93,7 +93,7 @@ Nota: los datos de los modelos comparables provienen de la documentación públi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Ministral-8B-maker-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Ministral-8B-maker-v2-GGUF
 - Modelo base (fine-tune): https://huggingface.co/swdq/Ministral-8B-maker-v2
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#Ministral-8B-maker-v2-GGUF
 - Guía de uso de GGUF citada por el autor (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

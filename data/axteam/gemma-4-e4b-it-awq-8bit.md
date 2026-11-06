@@ -84,7 +84,7 @@ Comparativa con las otras cuantizaciones del mismo modelo base evaluadas en la m
 
 | Modelo | Parametros | Contexto | Media de benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AWQ-8bit (este repo) | ~7,94 mil millones | no disponible | 65,17 (100,0% vs BF16) | Apache-2.0 | HuggingFace (axteam) |
+| AWQ-8bit (este repo) | ~7,94 mil millones | no disponible | 65,17 (100,0% vs BF16) | Apache-2.0 | Hugging Face (axteam) |
 | FP8-dynamic | ~7,94 mil millones | no disponible | 65,09 (99,9% vs BF16) | Apache-2.0 | mencionado en la card, sin enlace |
 | NVFP4A16 | ~7,94 mil millones | no disponible | 64,83 (99,5% vs BF16) | Apache-2.0 | mencionado en la card, sin enlace |
 | NVFP4 | ~7,94 mil millones | no disponible | 63,47 (97,4% vs BF16) | Apache-2.0 | mencionado en la card, sin enlace |
@@ -106,7 +106,7 @@ No se dispone de comparacion con modelos de otros autores (por ejemplo, otras fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-E4B-it-AWQ-8bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-E4B-it-AWQ-8bit
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

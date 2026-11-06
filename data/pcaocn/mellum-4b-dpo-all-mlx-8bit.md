@@ -73,5 +73,5 @@ La comparacion se limita al modelo base sin cuantizar, ya que no se dispone de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Pcaocn/Mellum-4b-dpo-all-mlx-8bit](https://huggingface.co/Pcaocn/Mellum-4b-dpo-all-mlx-8bit)
+- Modelo en Hugging Face: [Pcaocn/Mellum-4b-dpo-all-mlx-8bit](https://huggingface.co/Pcaocn/Mellum-4b-dpo-all-mlx-8bit)
 - Modelo base: [JetBrains/Mellum-4b-dpo-all](https://huggingface.co/JetBrains/Mellum-4b-dpo-all)

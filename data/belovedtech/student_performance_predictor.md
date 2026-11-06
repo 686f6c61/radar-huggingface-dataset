@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `student_performance_predictor` de BelovedTech es un modelo de IA cuyo propósito, según el nombre y la información disponible en HuggingFace, es predecir el rendimiento académico de estudiantes. Sin embargo, la información pública es extremadamente limitada: no se han publicado especificaciones técnicas, arquitectura, datos de entrenamiento ni benchmarks. El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos de modelo publicados o que el modelo es de tamaño trivial. No se dispone de documentación que describa el funcionamiento interno, la entrada o la salida esperada, ni el pipeline de uso. A fecha de la consulta, el modelo no ha registrado descargas y tiene un solo like, lo que indica que su adopción es nula y que el proyecto se encuentra en un estado muy temprano o incluso incompleto.
+El modelo `student_performance_predictor` de BelovedTech es un modelo de IA cuyo propósito, según el nombre y la información disponible en Hugging Face, es predecir el rendimiento académico de estudiantes. Sin embargo, la información pública es extremadamente limitada: no se han publicado especificaciones técnicas, arquitectura, datos de entrenamiento ni benchmarks. El repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos de modelo publicados o que el modelo es de tamaño trivial. No se dispone de documentación que describa el funcionamiento interno, la entrada o la salida esperada, ni el pipeline de uso. A fecha de la consulta, el modelo no ha registrado descargas y tiene un solo like, lo que indica que su adopción es nula y que el proyecto se encuentra en un estado muy temprano o incluso incompleto.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `student_performance_predictor` de BelovedTech es un modelo de IA cuyo
 
 ## Arquitectura y entrenamiento
 
-La información pública no incluye ningún dato sobre la arquitectura del modelo, el número de parámetros, la longitud de contexto, los datos de entrenamiento, el número de tokens procesados ni las técnicas de entrenamiento (como RLHF, DPO, o aprendizaje supervisado). El repositorio de HuggingFace presenta un tamaño de 0.0 GB, lo que hace improbable que albergue pesos de modelo reales en formatos estándar como safetensors o GGUF. No existe tampoco ninguna descripción de innovaciones técnicas o de la composición del dataset. En consecuencia, no es posible evaluar las características arquitectónicas ni la metodología de entrenamiento.
+La información pública no incluye ningún dato sobre la arquitectura del modelo, el número de parámetros, la longitud de contexto, los datos de entrenamiento, el número de tokens procesados ni las técnicas de entrenamiento (como RLHF, DPO, o aprendizaje supervisado). El repositorio de Hugging Face presenta un tamaño de 0.0 GB, lo que hace improbable que albergue pesos de modelo reales en formatos estándar como safetensors o GGUF. No existe tampoco ninguna descripción de innovaciones técnicas o de la composición del dataset. En consecuencia, no es posible evaluar las características arquitectónicas ni la metodología de entrenamiento.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ No se han encontrado modelos comparables publicados por el mismo autor. Dado que
 ## Limitaciones y advertencias
 
 - La ausencia de documentacion tecnica impide validar la existencia real del modelo o su uso en produccion.
-- El repositorio de HuggingFace tiene un tamano de 0.0 GB, lo que sugiere que no incluye pesos de modelo ni artefactos utilizables.
+- El repositorio de Hugging Face tiene un tamano de 0.0 GB, lo que sugiere que no incluye pesos de modelo ni artefactos utilizables.
 - No se ha especificado la licencia del modelo. Su uso comercial es legalmente incierto hasta que se aclare la licencia.
 - No se han publicado datos sobre sesgos, alucinacion o limitaciones de contexto. En un modelo de prediccion de rendimiento estudiantil, la falta de informacion sobre sesgos demograficos es especialmente critica, ya que podria reforzar desigualdades educativas.
 - La fecha de creacion del repositorio (2026-09-04) es posterior a la fecha de consulta, lo que sugiere una posible anomalia en los metadatos o un proyecto que no ha sido verificado.
@@ -64,6 +64,6 @@ No se han encontrado modelos comparables publicados por el mismo autor. Dado que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BelovedTech/student_performance_predictor
+- Hugging Face: https://huggingface.co/BelovedTech/student_performance_predictor
 - Notebook de referencia sobre prediccion de rendimiento estudiantil (no afiliado al modelo): https://colab.research.google.com/github/Jyotiranga77/Student-Performance/blob/main/Student_Performance_Prediction.ipynb
-- Espacio de HuggingFace con un objetivo similar (no afiliado al modelo): https://huggingface.co/spaces/AAAZEEEN/student-performance-predictor
+- Espacio de Hugging Face con un objetivo similar (no afiliado al modelo): https://huggingface.co/spaces/AAAZEEEN/student-performance-predictor

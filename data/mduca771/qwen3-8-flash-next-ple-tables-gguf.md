@@ -44,7 +44,7 @@ En cuanto a procedencia, `PLE_flash_Q8.gguf` es una copia reetiquetada del shard
 - Despliegue en Strata con IO controlada: usar `--ple-io ram` en servidores con ~50 GiB de RAM libre y SSD lento, o `--ple-io mmap`/`direct` cuando la RAM es el recurso escaso, apoyandose en `--ple-row-cache` para las filas calientes.
 - Equipos con almacenamiento limitado: elegir `PLE_flash_IQ4_NL.gguf` (26,82 GiB) frente a los 50,66 GiB de Q8_0 cuando el disco es la restriccion principal y se asume la perdida de precision de la tabla.
 - Evaluacion A/B de cuantizaciones: comparar UD-Q4_K_XL contra UD-IQ3_XXS manteniendo fija la misma tabla PLE, de forma que las diferencias observadas se atribuyan solo a la cuantizacion de los pesos y no al embedding.
-- Automatizacion de despliegue en entornos air-gapped: distribuir internamente un unico fichero de tabla con su SHA-256 conocido y montarlo sobre varias instancias del modelo sin acceso a HuggingFace.
+- Automatizacion de despliegue en entornos air-gapped: distribuir internamente un unico fichero de tabla con su SHA-256 conocido y montarlo sobre varias instancias del modelo sin acceso a Hugging Face.
 - Auditoria de cadena de suministro: comprobar que la carga util coincide con la de los quants de Unsloth o con la variante RCO de ISTA-DASLab antes de autorizar un despliegue en produccion.
 
 ## Benchmarks y rendimiento
@@ -87,7 +87,7 @@ No se dispone de tablas PLE/Engram equivalentes de otros modelos en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-PLE-tables-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-PLE-tables-GGUF
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Quant asociado UD-Q4_K_XL: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-UD-Q4_K_XL-PLE-GGUF
 - Quant asociado UD-IQ4_XS: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-UD-IQ4_XS-PLE-GGUF

@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la tare
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ThuGie/gemma-4-E2B-aerotools
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E2B
+- Repositorio Hugging Face: https://huggingface.co/ThuGie/gemma-4-E2B-aerotools
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E2B
 - Pagina oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4
 - Analisis tecnico de Gemma 4 (Qubrid): https://www.qubrid.com/blog/google-gemma-4-technical-deep-dive-architecture-moe-benchmarks-production-guide

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-VerIH-step200-template es un ajuste fino (fine-tune) publicado por el usuario ConnorYU en HuggingFace, derivado directamente de `ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200`, que a su vez parte de la familia Qwen3.5. El modelo cuenta con 9.409.813.744 parámetros (aproximadamente 9,41 mil millones) almacenados en safetensors, con un repositorio de 18,8 GB, lo que es coherente con pesos en bf16/fp16 sin cuantizar. La licencia declarada es Apache 2.0 y el único idioma indicado en la model card es el inglés.
+Qwen3.5-9B-VerIH-step200-template es un ajuste fino (fine-tune) publicado por el usuario ConnorYU en Hugging Face, derivado directamente de `ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200`, que a su vez parte de la familia Qwen3.5. El modelo cuenta con 9.409.813.744 parámetros (aproximadamente 9,41 mil millones) almacenados en safetensors, con un repositorio de 18,8 GB, lo que es coherente con pesos en bf16/fp16 sin cuantizar. La licencia declarada es Apache 2.0 y el único idioma indicado en la model card es el inglés.
 
 El problema que aborda es el de la verificación de jerarquía de instrucciones y el cumplimiento estricto de restricciones (el sufijo "VerIH" y la cadena de modelos base apuntan a un entrenamiento con GRPO sobre IFEval, con modo "think"), un área relevante para pipelines de agentes donde el modelo debe respetar restricciones de formato y prioridades entre system prompt y mensajes de usuario. Sin embargo, el autor no documenta el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos: la model card es la plantilla automática de Unsloth/TRL.
 
@@ -12,7 +12,7 @@ La relevancia práctica de esta ficha es limitada por su estado incipiente: 0 de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta de HuggingFace es `qwen3_5`, lo que indica pertenencia a la familia Qwen3.5; no se detalla si es transformer denso, MoE o híbrido |
+| Arquitectura | No disponible. La etiqueta de Hugging Face es `qwen3_5`, lo que indica pertenencia a la familia Qwen3.5; no se detalla si es transformer denso, MoE o híbrido |
 | Parametros totales | 9.409.813.744 (~9,41 mil millones, dato real de safetensors) |
 | Parametros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -33,7 +33,7 @@ Respecto al entrenamiento, la model card solo indica que el modelo se entreno "2
 - Razonamiento con modo "think" heredado del modelo base, segun se deduce del nombre del checkpoint (`...-think-step200`); no se documenta como activarlo o desactivarlo.
 - Seguimiento estricto de instrucciones y restricciones verificables, presumiblemente el objetivo del entrenamiento GRPO sobre IFEval; sin datos que lo cuantifiquen.
 - Posible soporte de entrada imagen-texto por el pipeline declarado (`image-text-to-text`); no confirmado en la model card.
-- Compatibilidad con Text Generation Inference y con endpoints de HuggingFace (etiquetas `text-generation-inference` y `endpoints_compatible`).
+- Compatibilidad con Text Generation Inference y con endpoints de Hugging Face (etiquetas `text-generation-inference` y `endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingues: no disponibles; solo se declara ingles.
@@ -60,14 +60,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits: en torno a 5-6 GB de pesos; viable en GPUs de 8-12 GB, aunque no se publican versiones cuantizadas oficiales.
 - GPUs recomendadas: A100 40/80 GB, H100 80 GB o L40S para servicio concurrente; RTX 4090 (24 GB) para bf16 en una sola tarjeta; RTX 3090 (24 GB) como alternativa.
 - Cabe en GPU de consumo: si, en RTX 4090/3090 a bf16 con contexto moderado, y en RTX 4070 Ti/4080 o superiores si se cuantiza a 8 o 4 bits.
-- Opciones de despliegue: transformers (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference`), endpoints de HuggingFace (etiqueta `endpoints_compatible`). Para cuantizacion habria que generar los GGUF con llama.cpp o convertirlos a AWQ/GPTQ por cuenta propia, ya que el autor no los publica. Ollama y vLLM son viables solo tras dicha conversion.
+- Opciones de despliegue: transformers (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference`), endpoints de Hugging Face (etiqueta `endpoints_compatible`). Para cuantizacion habria que generar los GGUF con llama.cpp o convertirlos a AWQ/GPTQ por cuenta propia, ya que el autor no los publica. Ollama y vLLM son viables solo tras dicha conversion.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-VerIH-step200-template | 9,41 mil millones | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks ni documentacion de entrenamiento |
+| Qwen3.5-9B-VerIH-step200-template | 9,41 mil millones | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks ni documentacion de entrenamiento |
 | Qwen3-8B | ~8,2 mil millones | 32.768 tokens nativo, ampliable con YaRN | Apache 2.0 | Ampliamente desplegado, versiones GGUF/AWQ oficiales | Referencia consolidada en la franja 8-9B; documentacion completa |
 | Llama 3.1 8B Instruct | ~8,03 mil millones | 128.000 tokens | Llama 3.1 Community License (restricciones de uso y clausula de nombre) | Muy extendido, ecosistema amplio | Multilingue declarado (8 idiomas), no Apache 2.0 |
 | Gemma 3 12B Instruct | ~12 mil millones | 128.000 tokens | Gemma Terms of Use | Amplio soporte en vLLM, Ollama y llama.cpp | Multimodal (vision) documentado, licencia no Apache |
@@ -90,7 +90,7 @@ La comparacion directa con la familia Qwen3.5 no es posible porque no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200-template
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200-template
 - Modelo base declarado: https://huggingface.co/ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
 - Repositorio de TRL (libreria de entrenamiento citada): https://github.com/huggingface/trl

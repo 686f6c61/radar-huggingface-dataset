@@ -26,7 +26,7 @@ Su relevancia practica esta en que elimina el trabajo de conversion y calibracio
 | Nucleos NPU usados | 1 |
 | Resolucion de entrada | 640x640 |
 | Tarea | Deteccion de objetos (bounding boxes y clases) |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -99,7 +99,7 @@ La diferencia principal frente a otras alternativas es de empaquetado y soporte:
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolo11n
+- Ficha en Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolo11n
 - Modelo fuente (ultralytics_yolo11): https://github.com/airockchip/ultralytics_yolo11
 - RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo
 - Ejemplo oficial de YOLO11 en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolo11

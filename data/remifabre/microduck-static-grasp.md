@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-static-grasp` es una política de control entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo MicroDuck de Pollen Robotics. Sustituye a la red `alpha_ground_pick` de serie en la ranura `ground_pick`: en lugar de mantener el pico cerrado durante la maniobra, ejecuta una secuencia en la que el pato se agacha hasta dejar el pico abierto a unos 10 mm del suelo, muerde el objeto y se incorpora sujetándolo. El modelo lo publica RemiFabre en HuggingFace con licencia Apache 2.0 y formato ONNX.
+`microduck-static-grasp` es una política de control entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo MicroDuck de Pollen Robotics. Sustituye a la red `alpha_ground_pick` de serie en la ranura `ground_pick`: en lugar de mantener el pico cerrado durante la maniobra, ejecuta una secuencia en la que el pato se agacha hasta dejar el pico abierto a unos 10 mm del suelo, muerde el objeto y se incorpora sujetándolo. El modelo lo publica RemiFabre en Hugging Face con licencia Apache 2.0 y formato ONNX.
 
 Técnicamente no es un modelo de lenguaje sino una política neuronal episódica de 50 Hz con contrato fijo `obs[1,61] f32 → actions[1,14] f32`, normalizador embebido y comando de fase cíclico de 4,0 s. Se entrenó en simulación con mjlab (entorno `pollen-robotics/mjlab_microduck`, run `neoy2a9d`, checkpoint 1249) partiendo de la política de pick de serie (warm start) y se exportó con `scripts/export.py` del repositorio `pollen-robotics/microduck_rl`.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Entrada/salida | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-static-grasp | Política RL de agarre con pico | obs[1,61] → actions[1,14] | 50 Hz | Apache 2.0 | HuggingFace, ONNX |
+| microduck-static-grasp | Política RL de agarre con pico | obs[1,61] → actions[1,14] | 50 Hz | Apache 2.0 | Hugging Face, ONNX |
 | `alpha_ground_pick` (de serie) | Política RL de pick original | Mismo contrato de la ranura `ground_pick` | 50 Hz | no disponible en la información | Incluida en el robot |
 | Otras políticas de `microduck_rl` | Políticas RL del mismo repositorio | Contratos variables | no disponible | no disponible | Repositorio pollen-robotics/microduck_rl |
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de `alpha_ground_pick` en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RemiFabre/microduck-static-grasp
+- Modelo en Hugging Face: https://huggingface.co/RemiFabre/microduck-static-grasp
 - Demo en robot real (50 s): https://www.youtube.com/watch?v=MpWuZ9_dxuk
 - Vídeo de simulación (preview): https://huggingface.co/RemiFabre/microduck-static-grasp/resolve/main/media/preview.mp4
 - Pull request del daemon necesario: https://github.com/pollen-robotics/microduck/pull/481

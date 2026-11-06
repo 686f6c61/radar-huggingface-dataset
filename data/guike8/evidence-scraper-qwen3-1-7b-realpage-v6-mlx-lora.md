@@ -92,6 +92,6 @@ No se dispone de comparación con extractores estructurados de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guike8/evidence-scraper-qwen3-1.7b-realpage-v6-mlx-lora
+- Modelo en Hugging Face: https://huggingface.co/guike8/evidence-scraper-qwen3-1.7b-realpage-v6-mlx-lora
 - Código fuente y mediciones: https://github.com/guike8/evidence-ai-scraper-public
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit

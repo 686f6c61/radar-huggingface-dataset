@@ -71,9 +71,9 @@ La informacion disponible menciona un factor de tiempo real (RTF) de aproximadam
 
 | Modelo | Tipo | Formato | Hablantes | Streaming | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FluidInference-diar-streaming-sortformer-coreml (este) | Diarizacion Sortformer | CoreML | 4 fijas | Si | cc-by-4.0 | HuggingFace (espejo) |
-| FluidInference/diar-streaming-sortformer-coreml | Diarizacion Sortformer | CoreML | 4 fijas | Si | cc-by-4.0 | HuggingFace (origen) |
-| NVIDIA Sortformer (original) | Diarizacion Sortformer | PyTorch | 4 fijas | Si | no disponible en la informacion proporcionada | HuggingFace (NVIDIA) |
+| FluidInference-diar-streaming-sortformer-coreml (este) | Diarizacion Sortformer | CoreML | 4 fijas | Si | cc-by-4.0 | Hugging Face (espejo) |
+| FluidInference/diar-streaming-sortformer-coreml | Diarizacion Sortformer | CoreML | 4 fijas | Si | cc-by-4.0 | Hugging Face (origen) |
+| NVIDIA Sortformer (original) | Diarizacion Sortformer | PyTorch | 4 fijas | Si | no disponible en la informacion proporcionada | Hugging Face (NVIDIA) |
 | Pipelines tradicionales (VAD + clustering) | Diarizacion por etapas | Variable | Configurable | Depende del diseno | Variable | Diversas |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/aoiandroid/FluidInference-diar-streaming-sortformer-coreml
+- Repositorio espejo en Hugging Face: https://huggingface.co/aoiandroid/FluidInference-diar-streaming-sortformer-coreml
 - Repositorio de origen: https://huggingface.co/FluidInference/diar-streaming-sortformer-coreml
 - Commit de origen: https://huggingface.co/FluidInference/diar-streaming-sortformer-coreml/tree/ae9a27ab45dc0aa3abede7d2d6bad2b7a69aa6d1
 - Otro espejo del mismo autor: https://huggingface.co/aoiandroid/diar-streaming-sortformer-coreml

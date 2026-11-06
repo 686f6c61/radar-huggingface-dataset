@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DanyDeggio/Gemma_4_E4B_3dPrint` es un adaptador LoRA publicado en HuggingFace por el usuario DanyDeggio, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base cuantizado a 4 bits `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`. No se trata de un modelo completo, sino de un conjunto de pesos delta (repo de 0,1 GB) que debe cargarse junto al modelo base mediante la librería PEFT. El identificador del repositorio sugiere una especialización en el dominio de la impresión 3D, aunque la model card no documenta el conjunto de datos ni el objetivo declarado del entrenamiento.
+`DanyDeggio/Gemma_4_E4B_3dPrint` es un adaptador LoRA publicado en Hugging Face por el usuario DanyDeggio, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base cuantizado a 4 bits `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`. No se trata de un modelo completo, sino de un conjunto de pesos delta (repo de 0,1 GB) que debe cargarse junto al modelo base mediante la librería PEFT. El identificador del repositorio sugiere una especialización en el dominio de la impresión 3D, aunque la model card no documenta el conjunto de datos ni el objetivo declarado del entrenamiento.
 
 El modelo resuelve el caso típico de adaptación de bajo coste: partir de un modelo instructivo de la familia Gemma y ajustarlo con LoRA para un dominio vertical concreto sin reentrenar todos los pesos. El stack declarado en los tags es Unsloth (entrenamiento acelerado y cuantización), TRL (bucle de SFT) y Transformers, con salida en safetensors.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DanyDeggio/Gemma_4_E4B_3dPrint | Adaptador LoRA sobre base Gemma instructivo | No disponible (adaptador de 0,1 GB) | No disponible | No disponible | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (modelo base) | Modelo completo instructivo, cuantizado 4 bits | No disponible en esta ficha | No disponible | No disponible | HuggingFace (Unsloth) |
-| Otros adaptadores LoRA de dominio sobre la misma familia Gemma | Adaptador LoRA | No disponible | No disponible | Variable | HuggingFace |
+| DanyDeggio/Gemma_4_E4B_3dPrint | Adaptador LoRA sobre base Gemma instructivo | No disponible (adaptador de 0,1 GB) | No disponible | No disponible | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (modelo base) | Modelo completo instructivo, cuantizado 4 bits | No disponible en esta ficha | No disponible | No disponible | Hugging Face (Unsloth) |
+| Otros adaptadores LoRA de dominio sobre la misma familia Gemma | Adaptador LoRA | No disponible | No disponible | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones verificadas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 

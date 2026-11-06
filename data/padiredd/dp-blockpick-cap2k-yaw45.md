@@ -25,7 +25,7 @@ No hay información sobre idiomas, benchmarks ni evaluación real: la model card
 
 Se trata de una política de difusión condicionada por observaciones visuales y de estado. Cada una de las tres cámaras (cabeza, muñeca izquierda y muñeca derecha) se procesa con un encoder ResNet18 independiente; las imágenes son de 240x240 píxeles. La entrada se completa con un vector de estado articular de 22 dimensiones, y la salida es una secuencia de 16 objetivos articulares a 15 Hz. El proceso de difusión usa DDPM con 100 pasos, horizonte de 64 pasos del que se ejecutan 32, y un único paso de observación (n_obs_steps = 1).
 
-El entrenamiento se realizó durante 100.000 pasos con batch de 32, optimizador Adam con tasa 1e-4 y scheduler coseno, semilla 1000, sobre una única NVIDIA RTX A5000 de 24 GB. El dataset, `pick-cube-cap2k-v0-yaw45-full-dr2-3cam` (no publicado aún en HuggingFace), contiene 2.000 demostraciones exitosas en simulación generadas por un programa code-as-policy sin reintentos: un acercamiento, cierre y elevación, con parámetros de prensión, elevación, temporización y trayectoria muestreados por episodio. Las colocaciones del bloque cubren yaw de 0 a 45 grados con signo aleatorio. El muestreo de frames es uniforme (EpisodeAwareSampler por defecto de LeRobot). Destaca el aumento de imagen agresivo: hasta cinco transformaciones en orden aleatorio por muestra (brillo 0,6-1,4, contraste 0,6-1,4, saturación 0,3-1,7, tono ±0,1, nitidez 0,3-2,0, afín ±10 grados / 10 % / 0,9-1,1, perspectiva 0,2, desenfoque, borrado aleatorio y escala de grises). No se aplica ruido al estado.
+El entrenamiento se realizó durante 100.000 pasos con batch de 32, optimizador Adam con tasa 1e-4 y scheduler coseno, semilla 1000, sobre una única NVIDIA RTX A5000 de 24 GB. El dataset, `pick-cube-cap2k-v0-yaw45-full-dr2-3cam` (no publicado aún en Hugging Face), contiene 2.000 demostraciones exitosas en simulación generadas por un programa code-as-policy sin reintentos: un acercamiento, cierre y elevación, con parámetros de prensión, elevación, temporización y trayectoria muestreados por episodio. Las colocaciones del bloque cubren yaw de 0 a 45 grados con signo aleatorio. El muestreo de frames es uniforme (EpisodeAwareSampler por defecto de LeRobot). Destaca el aumento de imagen agresivo: hasta cinco transformaciones en orden aleatorio por muestra (brillo 0,6-1,4, contraste 0,6-1,4, saturación 0,3-1,7, tono ±0,1, nitidez 0,3-2,0, afín ±10 grados / 10 % / 0,9-1,1, perspectiva 0,2, desenfoque, borrado aleatorio y escala de grises). No se aplica ruido al estado.
 
 ## Capacidades
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Entrada | Tarea | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dp-blockpick-cap2k-yaw45 | 287,5 M | 3 cámaras 240x240 + estado 22 dim | Pick de bloque, brazo izquierdo FFW SG2 | 64 pasos (32 ejecutados) | other | HuggingFace |
-| padiredd/dp-blockpick-yaw45-2k | no disponible | no disponible | Misma tarea, demostraciones de planificador de movimiento | no disponible | no disponible | HuggingFace |
-| Otras diffusion policies de LeRobot | variable | variable | Manipulación genérica | variable | variable | HuggingFace |
+| dp-blockpick-cap2k-yaw45 | 287,5 M | 3 cámaras 240x240 + estado 22 dim | Pick de bloque, brazo izquierdo FFW SG2 | 64 pasos (32 ejecutados) | other | Hugging Face |
+| padiredd/dp-blockpick-yaw45-2k | no disponible | no disponible | Misma tarea, demostraciones de planificador de movimiento | no disponible | no disponible | Hugging Face |
+| Otras diffusion policies de LeRobot | variable | variable | Manipulación genérica | variable | variable | Hugging Face |
 
 La comparación con alternativas genéricas no está disponible con datos verificables en la información proporcionada; el único comparable directo documentado es la variante del mismo autor con distinto generador de datos.
 
@@ -82,7 +82,7 @@ La comparación con alternativas genéricas no está disponible con datos verifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-cap2k-yaw45
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-cap2k-yaw45
 - Modelo comparable del mismo autor: https://huggingface.co/padiredd/dp-blockpick-yaw45-2k
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Isaac Lab (simulación): https://github.com/isaac-sim/IsaacLab

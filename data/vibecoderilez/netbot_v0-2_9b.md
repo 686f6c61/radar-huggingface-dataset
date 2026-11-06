@@ -4,7 +4,7 @@
 
 El modelo `vibecoderilez/netbot_v0.2_9b` es un fine-tune del modelo base `unsloth/Qwen3.5-9B`, desarrollado por el usuario vibecoderilez. Se presenta como un modelo de generación de texto en inglés, entrenado con la librería Unsloth para acelerar el proceso de entrenamiento. No se especifica en la documentación disponible qué problema concreto resuelve ni para qué tarea está optimizado, más allá de ser un ajuste fino sobre un modelo de 9 mil millones de parámetros.
 
-La relevancia actual de este modelo es limitada, ya que no cuenta con descargas ni likes en HuggingFace, y su model card es extremadamente breve. Al ser un fine-tune de Qwen3.5-9B, podría heredar las capacidades generales de dicho modelo base, pero no hay información pública que confirme sus capacidades específicas, su arquitectura detallada ni su rendimiento. El tamaño del repositorio (0.1 GB) sugiere que podría tratarse de un adaptador LoRA o de pesos cuantizados, aunque no se indica explícitamente.
+La relevancia actual de este modelo es limitada, ya que no cuenta con descargas ni likes en Hugging Face, y su model card es extremadamente breve. Al ser un fine-tune de Qwen3.5-9B, podría heredar las capacidades generales de dicho modelo base, pero no hay información pública que confirme sus capacidades específicas, su arquitectura detallada ni su rendimiento. El tamaño del repositorio (0.1 GB) sugiere que podría tratarse de un adaptador LoRA o de pesos cuantizados, aunque no se indica explícitamente.
 
 ## Especificaciones técnicas
 
@@ -57,5 +57,5 @@ No disponible. No se han proporcionado datos de rendimiento ni características 
 
 ## Enlaces
 
-- [HuggingFace - vibecoderilez/netbot_v0.2_9b](https://huggingface.co/vibecoderilez/netbot_v0.2_9b)
+- [Hugging Face - vibecoderilez/netbot_v0.2_9b](https://huggingface.co/vibecoderilez/netbot_v0.2_9b)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Farhan2000/skin-lesion-segmentation-unet` es una red U-Net con encoder ResNet34 entrenada para segmentación binaria de lesiones cutáneas en imágenes dermatoscópicas. Lo publica el usuario Farhan2000 en HuggingFace como proyecto educativo, y su único artefacto de pesos es un `model.pth` de PyTorch compatible con la librería `segmentation_models_pytorch` (SMP). El objetivo concreto es generar máscaras de frontera de lesión a partir de imágenes RGB, una tarea clásica dentro del pipeline de análisis automático de cáncer de piel.
+El modelo `Farhan2000/skin-lesion-segmentation-unet` es una red U-Net con encoder ResNet34 entrenada para segmentación binaria de lesiones cutáneas en imágenes dermatoscópicas. Lo publica el usuario Farhan2000 en Hugging Face como proyecto educativo, y su único artefacto de pesos es un `model.pth` de PyTorch compatible con la librería `segmentation_models_pytorch` (SMP). El objetivo concreto es generar máscaras de frontera de lesión a partir de imágenes RGB, una tarea clásica dentro del pipeline de análisis automático de cáncer de piel.
 
-El entrenamiento se realizó sobre el dataset ISIC 2017 Task 1 (máscaras de frontera de lesión), distribuido en HuggingFace como `MedOtter/ISIC2017`. El autor reporta una Dice media de validación de 0,8520, que es el único dato cuantitativo de rendimiento publicado. No se especifican hiperparámetros de entrenamiento, resolución de entrada, aumentos de datos, número de épocas ni partición exacta del conjunto.
+El entrenamiento se realizó sobre el dataset ISIC 2017 Task 1 (máscaras de frontera de lesión), distribuido en Hugging Face como `MedOtter/ISIC2017`. El autor reporta una Dice media de validación de 0,8520, que es el único dato cuantitativo de rendimiento publicado. No se especifican hiperparámetros de entrenamiento, resolución de entrada, aumentos de datos, número de épocas ni partición exacta del conjunto.
 
 Es relevante ahora porque sirve como punto de partida reproducible y ligero (el repositorio ocupa 0,1 GB) para tareas de segmentación dermatológica en investigación: es fácil de cargar, de reentrenar por *fine-tuning* y de integrar en pipelines de anotación asistida. El propio autor advierte explícitamente que es un proyecto educativo, que no tiene grado diagnóstico y que no es un producto sanitario.
 
@@ -20,7 +20,7 @@ Es relevante ahora porque sirve como punto de partida reproducible y ligero (el 
 | Licencia | MIT |
 | Formato de pesos | PyTorch `state_dict` en `model.pth` (cargable con `torch.load` y `load_state_dict`) |
 | Tamano del repositorio | 0,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Dataset de entrenamiento | ISIC 2017 Task 1 (mascaras de frontera de lesion), via `MedOtter/ISIC2017` |
 | Fecha de publicacion | 18 de septiembre de 2026 |
 
@@ -98,7 +98,7 @@ Cualquier comparacion cuantitativa con estos u otros modelos requeriria evaluar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Farhan2000/skin-lesion-segmentation-unet
+- Modelo en Hugging Face: https://huggingface.co/Farhan2000/skin-lesion-segmentation-unet
 - Dataset utilizado (ISIC 2017 Task 1): https://huggingface.co/datasets/MedOtter/ISIC2017
 - Libreria `segmentation_models_pytorch`: https://github.com/qubvel/segmentation_models.pytorch
 - ISIC Archive (datos originales del reto ISIC): https://challenge.isic-archive.com/data/

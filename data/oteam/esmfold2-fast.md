@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | MSA | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/esmfold2-fast | 188,5 M en repo; ~6.548 M con ESMC-6B | No | Todo-atomo, difusion | AGPL-3.0 | HuggingFace, libreria `ofoldx` |
-| oteam/esmfold2 | ~6.586 M con ESMC-6B | Si (opcional) | Todo-atomo, difusion | AGPL-3.0 | HuggingFace, libreria `ofoldx` |
+| oteam/esmfold2-fast | 188,5 M en repo; ~6.548 M con ESMC-6B | No | Todo-atomo, difusion | AGPL-3.0 | Hugging Face, libreria `ofoldx` |
+| oteam/esmfold2 | ~6.586 M con ESMC-6B | Si (opcional) | Todo-atomo, difusion | AGPL-3.0 | Hugging Face, libreria `ofoldx` |
 | ESMFold (v1, Meta) | no disponible en la informacion suministrada | No | Backbone atomico | no disponible en la informacion suministrada | Publico |
 | AlphaFold2 (DeepMind) | no disponible en la informacion suministrada | Si | Backbone atomico | no disponible en la informacion suministrada | Publico |
 | AlphaFold3 | no disponible en la informacion suministrada | Si | Todo-atomo con ligandos | no disponible en la informacion suministrada | Restringido |
@@ -97,7 +97,7 @@ Nota: los datos de los sistemas de referencia (ESMFold v1, AlphaFold2, AlphaFold
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/esmfold2-fast
+- Modelo en Hugging Face: https://huggingface.co/oteam/esmfold2-fast
 - Variante completa: https://huggingface.co/oteam/esmfold2
 - Variante experimental: https://huggingface.co/oteam/esmfold2-experimental
 - Variante experimental fast: https://huggingface.co/oteam/esmfold2-experimental-fast

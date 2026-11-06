@@ -75,6 +75,6 @@ No disponible. No se proporcionan datos de modelos comparables en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blackroot/Muse-Glimmer-30GB-Preserving-Abliterated
+- Repositorio Hugging Face: https://huggingface.co/Blackroot/Muse-Glimmer-30GB-Preserving-Abliterated
 - Paper del encoder de percepcion (ViT-G/14): https://arxiv.org/abs/2504.13181
 - Paper de DFlash (decodificacion especulativa): https://arxiv.org/abs/2602.06036

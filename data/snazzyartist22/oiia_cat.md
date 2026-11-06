@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SnazzyArtist22/OIIA_Cat` es un repositorio publicado en HuggingFace por el usuario SnazzyArtist22 (Elliott Buxton). La información disponible es extremadamente limitada: el model card está prácticamente vacío, solo indica `license: unknown`, y no se proporciona ningún dato sobre arquitectura, tamaño, contexto, pipeline ni idiomas. El repositorio tiene un tamaño de 0,1 GB y no registra descargas ni likes.
+El modelo `SnazzyArtist22/OIIA_Cat` es un repositorio publicado en Hugging Face por el usuario SnazzyArtist22 (Elliott Buxton). La información disponible es extremadamente limitada: el model card está prácticamente vacío, solo indica `license: unknown`, y no se proporciona ningún dato sobre arquitectura, tamaño, contexto, pipeline ni idiomas. El repositorio tiene un tamaño de 0,1 GB y no registra descargas ni likes.
 
 Por el nombre del repositorio, es posible que esté relacionado con el meme viral "OIIA Cat" (un gato que emite el sonido "oiiaioooooiai"), y se ha encontrado un modelo 3D con un nombre similar en Sketchfab, pero no se puede confirmar que exista una relación directa. Tampoco se puede determinar qué tipo de modelo es (texto, imagen, audio, etc.) ni qué problema resuelve.
 
@@ -55,6 +55,6 @@ No disponible. No se dispone de información suficiente sobre el modelo para est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SnazzyArtist22/OIIA_Cat
+- Hugging Face: https://huggingface.co/SnazzyArtist22/OIIA_Cat
 - Perfil del autor: https://huggingface.co/SnazzyArtist22/models
 - Modelo 3D con nombre similar (posiblemente relacionado): https://sketchfab.com/3d-models/oiiaioooooiai-cat-30d27bf7fb224849b76e208a6eccdb36

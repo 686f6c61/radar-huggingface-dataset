@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-VL-4B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-VL-4B-Instruct
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
 - Guía de modelos Qwen3-VL en FuriosaAI: https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-vl.html

@@ -95,8 +95,8 @@ Ejemplos de lectura comparada:
 
 | Modelo | Parámetros | Contexto | Precisión manuscrito coreano | Precisión impreso en formularios | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo | no disponible (ONNX de ~15 MB) | no aplica | 97,4% | 99,2% | Apache-2.0 | HuggingFace: Rebeccaaaaaaaa/korean-handwriting-rec |
-| PaddlePaddle/korean_PP-OCRv5_mobile_rec (base) | no disponible | no aplica | 67,2% | 88,7% | Apache-2.0 (PaddleOCR) | HuggingFace y PaddleOCR |
+| Este modelo | no disponible (ONNX de ~15 MB) | no aplica | 97,4% | 99,2% | Apache-2.0 | Hugging Face: Rebeccaaaaaaaa/korean-handwriting-rec |
+| PaddlePaddle/korean_PP-OCRv5_mobile_rec (base) | no disponible | no aplica | 67,2% | 88,7% | Apache-2.0 (PaddleOCR) | Hugging Face y PaddleOCR |
 | Otras alternativas de OCR coreano | no disponible | no aplica | no disponible | no disponible | no disponible | no disponible |
 
 No se han proporcionado resultados de otros modelos de OCR coreano, por lo que la comparación se limita al modelo base y a la familia PP-OCRv5.
@@ -113,6 +113,6 @@ No se han proporcionado resultados de otros modelos de OCR coreano, por lo que l
 - La precisión de palabra exige que la palabra completa sea correcta; no es directamente comparable con métricas por carácter.
 
 ## Enlaces
-- [HuggingFace: Rebeccaaaaaaaa/korean-handwriting-rec](https://huggingface.co/Rebeccaaaaaaaa/korean-handwriting-rec)
+- [Hugging Face: Rebeccaaaaaaaa/korean-handwriting-rec](https://huggingface.co/Rebeccaaaaaaaa/korean-handwriting-rec)
 - [Modelo base: PaddlePaddle/korean_PP-OCRv5_mobile_rec](https://huggingface.co/PaddlePaddle/korean_PP-OCRv5_mobile_rec)
 - [Repositorio de entrenamiento en GitHub](https://github.com/VerifiedId

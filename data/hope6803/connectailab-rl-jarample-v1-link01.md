@@ -74,8 +74,8 @@ Nota: la evaluación de caminata se realizó con una aproximación 2D basada en 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B (base) + LoRA | No disponible | Decisión de locomoción simulada | Apache 2.0 | HuggingFace, adaptador PEFT |
-| Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| LINK-01 (este modelo) | 0,8B (base) + LoRA | No disponible | Decisión de locomoción simulada | Apache 2.0 | Hugging Face, adaptador PEFT |
+| Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Política PPO `goto_target` | No disponible (red pequeña) | No aplica | Decisión de locomoción simulada | No disponible | Solo dentro del simulador del autor |
 
 No se dispone de datos de benchmarks de otros modelos de decisión comparables en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de otros modelos de decisión comparables e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hope6803/connectailab-rl-jarample-v1-link01
+- Hugging Face: https://huggingface.co/hope6803/connectailab-rl-jarample-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

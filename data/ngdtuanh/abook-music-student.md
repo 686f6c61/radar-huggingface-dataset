@@ -85,8 +85,8 @@ La informacion disponible solo permite comparar contra el propio sistema de refe
 
 | Modelo | Parametros | Contexto | Uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ABook music student | 28.240.152 | Ventanas de audio de 10 s (media de tres) | Reconocimiento de emociones musicales (destilado) | apache-2.0 | HuggingFace (NGDtuanh/abook-music-student) |
-| laion/clap-htsat-unfused | no disponible | no disponible | Encoder audio-texto CLAP (modelo base) | Apache-2.0 (segun el autor) | HuggingFace |
+| ABook music student | 28.240.152 | Ventanas de audio de 10 s (media de tres) | Reconocimiento de emociones musicales (destilado) | apache-2.0 | Hugging Face (NGDtuanh/abook-music-student) |
+| laion/clap-htsat-unfused | no disponible | no disponible | Encoder audio-texto CLAP (modelo base) | Apache-2.0 (segun el autor) | Hugging Face |
 | Teacher de ABook (multimodal) | no disponible | no disponible | Fusion de audio, caracteristicas y texto de ficha; no publicado | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,11 +99,11 @@ La informacion disponible solo permite comparar contra el propio sistema de refe
 - No se declaran sesgos demograficos ni culturales especificos en la informacion disponible, pero la composicion del dataset de calibracion no se detalla.
 - Licencia Apache-2.0, permisiva para uso comercial, aunque la torre de audio deriva de `laion/clap-htsat-unfused` y el fichero heredado se mantiene bajo la licencia original de LAION.
 - Al ser un cabezal lineal que depende de la embedding CLAP, su calidad esta ligada a la del modelo base y a la fidelidad del front-end mel en despliegues sin PyTorch.
-- El autor afirma que el metodo y las cifras completas estan en `_internal/docs/MUSIC_RESEARCH.md` dentro del repositorio de ABook, no en la model card de HuggingFace.
+- El autor afirma que el metodo y las cifras completas estan en `_internal/docs/MUSIC_RESEARCH.md` dentro del repositorio de ABook, no en la model card de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NGDtuanh/abook-music-student
+- Modelo en Hugging Face: https://huggingface.co/NGDtuanh/abook-music-student
 - Repositorio ABook: https://github.com/ntanhpro1221/ABook
 - Modelo base: https://huggingface.co/laion/clap-htsat-unfused
 - Libreria de calibracion Incompetech (Kevin MacLeod, CC BY 4.0): https://incompetech.com

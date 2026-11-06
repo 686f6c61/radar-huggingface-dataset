@@ -2,7 +2,7 @@
 
 ## Resumen
 
-amk-coder-v2-web es un modelo publicado en HuggingFace por el usuario VeimaDiskely bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente contiene la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El nombre sugiere una orientación a generación de código ("coder") y posiblemente a tareas web ("web"), pero se trata de una inferencia a partir del identificador, no de un dato confirmado por el autor.
+amk-coder-v2-web es un modelo publicado en Hugging Face por el usuario VeimaDiskely bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente contiene la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El nombre sugiere una orientación a generación de código ("coder") y posiblemente a tareas web ("web"), pero se trata de una inferencia a partir del identificador, no de un dato confirmado por el autor.
 
 El repositorio no registra descargas ni "likes" en el momento de la consulta, y no incluye pipeline declarado ni idiomas soportados. Tampoco se han publicado resultados de benchmarks, especificaciones técnicas ni instrucciones de uso. Todo ello impide evaluar el modelo con rigor y obliga a tratar cualquier dato no presente en esta ficha como "no disponible".
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composici
 
 - Evaluación exploratoria de modelos comunitarios: descargar los pesos y ejecutar pruebas controladas para determinar empíricamente tamaño, arquitectura y calidad, dado que la documentación es inexistente.
 - Generación de código en entornos experimentales: si el modelo confirma su orientación a código, podría probarse en tareas de autocompletado o generación de fragmentos, siempre tras validar su comportamiento real.
-- Investigación sobre modelos publicados sin model card: útil como caso de estudio sobre trazabilidad y reproducibilidad en el ecosistema HuggingFace.
+- Investigación sobre modelos publicados sin model card: útil como caso de estudio sobre trazabilidad y reproducibilidad en el ecosistema Hugging Face.
 - Prototipado interno no crítico: al estar bajo Apache 2.0, puede integrarse en pruebas internas sin restricciones de licencia, asumiendo el riesgo de falta de documentación.
 - Fine-tuning experimental: la licencia permisiva permite adaptarlo, aunque sin conocer arquitectura ni tokenizer el proceso requiere inspección previa del repositorio.
 - Auditoría de seguridad y sesgos: serviría para analizar qué tipo de contenido genera un modelo sin información de alineación declarada.
@@ -76,4 +76,4 @@ No disponible. Al desconocerse el tamaño, la arquitectura y las capacidades del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VeimaDiskely/amk-coder-v2-web
+- Hugging Face: https://huggingface.co/VeimaDiskely/amk-coder-v2-web

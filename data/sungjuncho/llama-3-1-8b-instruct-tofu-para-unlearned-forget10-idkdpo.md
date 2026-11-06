@@ -75,10 +75,10 @@ FADE es la divergencia KL simétrica respecto al modelo de referencia sobre resp
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`...-unlearned-forget10-idkdpo`) | 8,03 B | no disponible | llama3.1 | Desaprendizaje IdkDPO sobre TOFU-para | HuggingFace, 0 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full` | 8,03 B | no disponible | llama3.1 | Ajuste fino sobre TOFU + paráfrasis (modelo base de este) | HuggingFace |
-| Llama-3.1-8B-Instruct (Meta) | 8,03 B | 128.000 tokens | llama3.1 | Modelo instruct de propósito general | HuggingFace, ampliamente desplegado |
-| Otros checkpoints de la colección TOFU-para | 8,03 B | no disponible | llama3.1 | Distintos métodos de desaprendizaje sobre la misma base | HuggingFace |
+| Este modelo (`...-unlearned-forget10-idkdpo`) | 8,03 B | no disponible | llama3.1 | Desaprendizaje IdkDPO sobre TOFU-para | Hugging Face, 0 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full` | 8,03 B | no disponible | llama3.1 | Ajuste fino sobre TOFU + paráfrasis (modelo base de este) | Hugging Face |
+| Llama-3.1-8B-Instruct (Meta) | 8,03 B | 128.000 tokens | llama3.1 | Modelo instruct de propósito general | Hugging Face, ampliamente desplegado |
+| Otros checkpoints de la colección TOFU-para | 8,03 B | no disponible | llama3.1 | Distintos métodos de desaprendizaje sobre la misma base | Hugging Face |
 
 La comparación relevante no es de rendimiento general sino de comportamiento frente al *forget set*: frente a Llama-3.1-8B-Instruct original, este checkpoint presenta un *forget quality* de 3,02e-28 y un FADE de 89,44 en la evaluación de *unlearning*, a costa de una *model utility* de 0,346. No se dispone de datos comparativos de otros métodos de la misma colección en la información proporcionada.
 
@@ -96,7 +96,7 @@ La comparación relevante no es de rendimiento general sino de comportamiento fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-idkdpo
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-idkdpo
 - Modelo base (checkpoint intermedio): https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4

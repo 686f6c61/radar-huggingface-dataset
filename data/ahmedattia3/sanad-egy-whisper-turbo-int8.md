@@ -84,7 +84,7 @@ Frente al checkpoint upstream sin cuantizar, este modelo sacrifica una pequena c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhmedAttia3/sanad-egy-whisper-turbo-int8
+- Modelo en Hugging Face: https://huggingface.co/AhmedAttia3/sanad-egy-whisper-turbo-int8
 - Checkpoint upstream: https://huggingface.co/mohammedaly22/whisper-large-v3-turbo-egyptian-code-switching
 - Whisper large-v3-turbo de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

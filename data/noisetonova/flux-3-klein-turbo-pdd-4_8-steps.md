@@ -81,7 +81,7 @@ No hay datos comparativos de calidad cuantitativos publicados; la comparación d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NoiseToNova/Flux-3-Klein-turbo-pdd-4_8-steps
+- Modelo en Hugging Face: https://huggingface.co/NoiseToNova/Flux-3-Klein-turbo-pdd-4_8-steps
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Paper de Parallel Decoding Distillation (PDD): https://arxiv.org/pdf/2607.26004
 - Space de comparación side-by-side: https://huggingface.co/spaces/NoiseToNova/flux3-turbo-pdd

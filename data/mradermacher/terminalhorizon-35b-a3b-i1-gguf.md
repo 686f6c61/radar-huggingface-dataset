@@ -86,7 +86,7 @@ No se han encontrado en la busqueda web modelos comparables con datos de benchma
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1/imatrix): https://huggingface.co/mradermacher/TerminalHorizon-35B-A3B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1/imatrix): https://huggingface.co/mradermacher/TerminalHorizon-35B-A3B-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/TerminalHorizon-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/shunzou05/TerminalHorizon-35B-A3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/shunzou05/TerminalHorizon-3K

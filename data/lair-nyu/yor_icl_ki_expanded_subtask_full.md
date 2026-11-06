@@ -64,8 +64,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - lair-nyu/yor_icl_ki_expanded_subtask_full](https://huggingface.co/lair-nyu/yor_icl_ki_expanded_subtask_full)
-- [Perfil de LAIR NYU en HuggingFace](https://huggingface.co/lair-nyu)
+- [Hugging Face - lair-nyu/yor_icl_ki_expanded_subtask_full](https://huggingface.co/lair-nyu/yor_icl_ki_expanded_subtask_full)
+- [Perfil de LAIR NYU en Hugging Face](https://huggingface.co/lair-nyu)
 - [LAIR @ NYU - sitio web del laboratorio](https://cmclarkk.github.io/LAIR/)
 - [NYU Immersive Computing Lab - GitHub](https://github.com/NYU-ICL)
 - [openpi - repositorio de Physical Intelligence](https://github.com/Physical-Intelligence/openpi)

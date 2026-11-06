@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `suachuaminhduong/sua-chua-minh-duong-ha-noi` corresponde a un repositorio alojado en HuggingFace que no contiene un modelo de inteligencia artificial. La model card publicada por el autor es, en realidad, una ficha comercial de una empresa de reparación de electrodomésticos ubicada en Hanói (Vietnam), con listados de servicios, tarifas y enlaces a su sitio web. No se declara arquitectura, pesos, tokenizador ni ningún artefacto propio de un modelo entrenado.
+El identificador `suachuaminhduong/sua-chua-minh-duong-ha-noi` corresponde a un repositorio alojado en Hugging Face que no contiene un modelo de inteligencia artificial. La model card publicada por el autor es, en realidad, una ficha comercial de una empresa de reparación de electrodomésticos ubicada en Hanói (Vietnam), con listados de servicios, tarifas y enlaces a su sitio web. No se declara arquitectura, pesos, tokenizador ni ningún artefacto propio de un modelo entrenado.
 
 El repositorio no incluye pipeline declarado, no especifica licencia, no indica idiomas soportados y registra cero descargas y cero interacciones en el momento de la consulta. Los únicos metadatos técnicos disponibles son la etiqueta `region:us` y las fechas de creación y actualización (3 de noviembre de 2026).
 
@@ -73,6 +73,6 @@ No disponible. No existe una categoría de modelos comparable porque el reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suachuaminhduong/sua-chua-minh-duong-ha-noi
+- Repositorio en Hugging Face: https://huggingface.co/suachuaminhduong/sua-chua-minh-duong-ha-noi
 - Sitio del negocio citado en la model card: https://suachuaminhduong.com/
 - Página de precios citada: https://suachuaminhduong.com/bao-gia/

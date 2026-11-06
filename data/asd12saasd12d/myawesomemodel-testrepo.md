@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace publicado por el usuario ASD12SAASD12D con fines aparentemente de prueba o demostración. El repositorio contiene una model card que describe un modelo de lenguaje con capacidades avanzadas de razonamiento, mejora respecto a versiones anteriores, y soporte para function calling y generación aumentada por búsqueda web. Sin embargo, el repositorio no incluye pesos, archivos de configuración ni código, y su tamaño es de 0.0 GB, lo que indica que se trata de un placeholder o un experimento sin material publicable.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face publicado por el usuario ASD12SAASD12D con fines aparentemente de prueba o demostración. El repositorio contiene una model card que describe un modelo de lenguaje con capacidades avanzadas de razonamiento, mejora respecto a versiones anteriores, y soporte para function calling y generación aumentada por búsqueda web. Sin embargo, el repositorio no incluye pesos, archivos de configuración ni código, y su tamaño es de 0.0 GB, lo que indica que se trata de un placeholder o un experimento sin material publicable.
 
 La model card menciona una arquitectura basada en transformers (etiqueta `bert` y librería `transformers`), pero no se proporcionan detalles sobre el número de parámetros, la longitud de contexto, ni los datos de entrenamiento. Tampoco se especifican los idiomas soportados, aunque los ejemplos de prompts están en inglés. La licencia es MIT, lo que permitiría uso comercial si existieran los pesos, pero al no haber artefactos descargables, el modelo no es utilizable en la práctica.
 
@@ -97,7 +97,7 @@ No disponible. No se identifican modelos comparables concretos en la informació
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ASD12SAASD12D/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/ASD12SAASD12D/MyAwesomeModel-TestRepo
 - Otros repositorios con el mismo nombre (probablemente también de prueba): https://huggingface.co/ASD12EDSXA/MyAwesomeModel-TestRepo y https://huggingface.co/toolathlon-mai/MyAwesomeModel-TestRepo
 
 No se han encontrado papers, blogs oficiales ni demos asociados a este modelo.

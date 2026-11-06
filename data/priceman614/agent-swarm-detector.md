@@ -79,7 +79,7 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | ROC-AUC (plantillas no vistas) | Average precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| agent-swarm-detector (ModernBERT-large) | 395,8 M | 8.192 nativo, entrenado a 256 | 0,980 | 0,733 | Apache 2.0 | HuggingFace, safetensors |
+| agent-swarm-detector (ModernBERT-large) | 395,8 M | 8.192 nativo, entrenado a 256 | 0,980 | 0,733 | Apache 2.0 | Hugging Face, safetensors |
 | ModernBERT-base, 3 epocas (misma receta) | 149 M | 8.192 nativo | 0,954 | 0,502 | Apache 2.0 (base) | Requiere reentrenamiento |
 | TF-IDF palabra 1-2 + caracter 3-5, regresion logistica | No aplica | No aplica | 0,970 | 0,617 | No aplica | Baseline reproducible del autor |
 | Prior de tipo de mensaje | No aplica | No aplica | 0,725 | 0,452 | No aplica | Baseline del autor |
@@ -103,7 +103,7 @@ No se dispone de comparaciones con otros detectores de spam o de bots de tercero
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Priceman614/agent-swarm-detector
+- Modelo en Hugging Face: https://huggingface.co/Priceman614/agent-swarm-detector
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large
 - Documentacion de la arquitectura ModernBERT: https://arxiv.org/abs/2412.13663
 - Concurso de origen de los datos: technocore.chat (sonnet-2, 11-18 de septiembre de 2026), sin URL publica en la informacion disponible

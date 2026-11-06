@@ -60,16 +60,16 @@ Advertencia importante: los slices marcados con asterisco (`cs` y `native`) tien
 - VRAM estimada: menos de 1 GB en FP32; con cuantización (no disponible) podría ser aún menor, pero no hay datos al respecto.
 - GPU recomendada: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti o superior) es suficiente, aunque no es necesaria.
 - Compatibilidad con consumer GPU: sí, cualquier GPU de gama media actual puede ejecutarlo sin problemas.
-- Opciones de despliegue: principalmente mediante la librería `transformers` de HuggingFace, usando `MarianMTModel` y `MarianTokenizer`. No se menciona soporte para vLLM, llama.cpp u Ollama, dado que MarianMT no es compatible con esos runtimes.
+- Opciones de despliegue: principalmente mediante la librería `transformers` de Hugging Face, usando `MarianMTModel` y `MarianTokenizer`. No se menciona soporte para vLLM, llama.cpp u Ollama, dado que MarianMT no es compatible con esos runtimes.
 - Latencia y throughput: no disponibles, pero al ser un modelo pequeño, se espera una latencia de decenas de milisegundos por frase en CPU y mayor throughput en GPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | BLEU (en→uk) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dariachup/dormouse-mt-en-uk (fine-tune) | 76M | No disponible | 40,28 overall (20 honesto) | Apache-2.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-en-uk (base) | 76M | No disponible | 21,12 overall | Apache-2.0 | HuggingFace |
-| NLLB-200-distilled-600M | 600M | 1024 tokens | No disponible | CC-BY-NC | HuggingFace |
+| Dariachup/dormouse-mt-en-uk (fine-tune) | 76M | No disponible | 40,28 overall (20 honesto) | Apache-2.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-en-uk (base) | 76M | No disponible | 21,12 overall | Apache-2.0 | Hugging Face |
+| NLLB-200-distilled-600M | 600M | 1024 tokens | No disponible | CC-BY-NC | Hugging Face |
 
 La comparación directa con el modelo base muestra una mejora sustancial en todos los slices, especialmente en los dominios de chat y soporte. Frente a NLLB-200 (modelo multilingüe de mayor tamaño), no hay datos comparativos en este par de idiomas, pero el fine-tune específico suele superar a modelos generalistas en dominios concretos, a costa de perder generalidad. La licencia Apache-2.0 del fine-tune permite uso comercial sin restricciones, mientras que NLLB-200 tiene una licencia no comercial (CC-BY-NC).
 
@@ -84,6 +84,6 @@ La comparación directa con el modelo base muestra una mejora sustancial en todo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dariachup/dormouse-mt-en-uk
+- Modelo en Hugging Face: https://huggingface.co/Dariachup/dormouse-mt-en-uk
 - Proyecto `dormouse-ua` en PyPI: https://pypi.org/project/dormouse-ua/
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-uk

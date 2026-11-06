@@ -4,7 +4,7 @@
 
 `jitendra25/maya-models` no es un modelo entrenado, sino un repositorio de pesos preentrenados en formato ONNX que la aplicación Maya descarga en su primera ejecución. El autor, jitendra25, los ha recopilado para centralizar la configuración de la aplicación en un único punto de descarga y deja claro en la model card que ninguno de los ficheros ha sido entrenado por este proyecto.
 
-El repositorio agrupa 14 ficheros que cubren la cadena completa de un pipeline de intercambio de rostros (face swap): detección facial (RetinaFace, SCRFD, YOLOv8-face), reconocimiento (ArcFace), estimación de landmarks, parsing y segmentación facial, máscaras de oclusión, restauración de imagen (GFPGAN, GPEN, CodeFormer) y una máscara guiada por texto basada en CLIPSeg. El tamano total del repositorio es de 1,6 GB y el pipeline declarado en HuggingFace es `face-swap`.
+El repositorio agrupa 14 ficheros que cubren la cadena completa de un pipeline de intercambio de rostros (face swap): detección facial (RetinaFace, SCRFD, YOLOv8-face), reconocimiento (ArcFace), estimación de landmarks, parsing y segmentación facial, máscaras de oclusión, restauración de imagen (GFPGAN, GPEN, CodeFormer) y una máscara guiada por texto basada en CLIPSeg. El tamano total del repositorio es de 1,6 GB y el pipeline declarado en Hugging Face es `face-swap`.
 
 Su relevancia es práctica, no científica: funciona como bundle reproducible de dependencias para replicar o autoalojar Maya sin depender de las descargas individuales de cada proyecto original. No aporta arquitectura propia, pesos nuevos ni resultados de entrenamiento, y cada fichero conserva la licencia de sus autores originales, varias de ellas restringidas a investigación no comercial.
 
@@ -22,9 +22,9 @@ Su relevancia es práctica, no científica: funciona como bundle reproducible de
 | Formato de pesos | ONNX en 13 de los 14 ficheros; `rd64-uni-refined.pth` en formato PyTorch |
 | Tamano del repositorio | 1,6 GB |
 | Numero de ficheros | 14 |
-| Pipeline declarado en HuggingFace | `face-swap` |
+| Pipeline declarado en Hugging Face | `face-swap` |
 | Descargas / likes | 0 / 1 |
-| Fechas declaradas en HuggingFace | creado 2026-10-13, actualizado 2026-10-13 |
+| Fechas declaradas en Hugging Face | creado 2026-10-13, actualizado 2026-10-13 |
 
 ## Arquitectura y entrenamiento
 
@@ -90,11 +90,11 @@ La comparación relevante no es de rendimiento (no hay métricas), sino de empaq
 - Riesgo de alucinación: no aplica en el sentido de los modelos de lenguaje, pero las redes de restauración (GFPGAN, GPEN, CodeFormer) pueden generar detalle facial plausible que no existe en la imagen original, lo que es problemático en contextos forenses o documentales.
 - Ausencia total de benchmarks: no hay métricas que permitan estimar la calidad del swap, la tasa de falsos positivos de los detectores ni la fidelidad de la restauración.
 - Idiomas: no aplica, salvo el prompt textual de CLIPSeg, del que no se especifica cobertura idiomática.
-- Fechas de creación y actualización declaradas en HuggingFace (2026-10-13) y 0 descargas: el repositorio no muestra señales de adopción ni de actividad posterior.
+- Fechas de creación y actualización declaradas en Hugging Face (2026-10-13) y 0 descargas: el repositorio no muestra señales de adopción ni de actividad posterior.
 - Seguridad: descargar pesos de terceros implica ejecutar artefactos binarios; conviene validar los ficheros antes de cargarlos en un entorno de producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jitendra25/maya-models
+- Repositorio en Hugging Face: https://huggingface.co/jitendra25/maya-models
 - Repositorio de la aplicación Maya: https://github.com/jitendra205saini/Maya
 - Proyectos de origen citados en la model card (sin URL incluida en la información proporcionada): InsightFace, YOLOv8-face, Pytorch_Retinaface, GFPGAN (TencentARC), GPEN, CodeFormer, Rope, face-parsing.PyTorch y CLIPSeg

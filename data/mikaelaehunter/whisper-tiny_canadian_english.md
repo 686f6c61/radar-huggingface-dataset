@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny canadian_english es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario mikaelaehunter en HuggingFace. El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante mas pequena, con 37.760.640 parametros totales, y se ha reentrenado sobre el dataset canadian_english para especializarse en transcripcion de ingles con acento canadiense.
+Whisper tiny canadian_english es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario mikaelaehunter en Hugging Face. El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante mas pequena, con 37.760.640 parametros totales, y se ha reentrenado sobre el dataset canadian_english para especializarse en transcripcion de ingles con acento canadiense.
 
 El modelo resuelve la tarea de transcripcion de audio a texto (ASR) en un dominio linguistico concreto: el ingles hablado en Canada. Al derivar de whisper-tiny, hereda la ligereza y velocidad del modelo base, lo que lo hace apto para despliegues con recursos limitados, a cambio de una capacidad de generalizacion menor que las variantes medium o large de la familia Whisper.
 
@@ -95,7 +95,7 @@ La comparativa de WER no es directa: el valor de 7,72 % corresponde al dataset e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mikaelaehunter/whisper-tiny_canadian_english
+- Hugging Face: https://huggingface.co/mikaelaehunter/whisper-tiny_canadian_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset declarado: canadian_english (no se proporciona enlace directo en la informacion disponible)
 - Paper de Whisper (referencia del modelo base): no disponible en la informacion proporcionada

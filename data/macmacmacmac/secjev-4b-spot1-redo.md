@@ -80,7 +80,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/macmacmacmac/SecJev-4B-Spot1-Redo
+- Modelo en Hugging Face: https://huggingface.co/macmacmacmac/SecJev-4B-Spot1-Redo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
-- Repositorio con logs y procedencia: incluido en el propio repositorio de HuggingFace (`redo-training-log.jsonl`, `redo-training.stdout.txt`, `redo-provenance.json`, `bootstrap.py`)
+- Repositorio con logs y procedencia: incluido en el propio repositorio de Hugging Face (`redo-training-log.jsonl`, `redo-training.stdout.txt`, `redo-provenance.json`, `bootstrap.py`)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

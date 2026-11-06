@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OzzyGT/Pixal3D | Imagen→3D, conversión Diffusers modular | no disponible | no aplica | Compuesta: MIT + DINOv3 + Apache-2.0 | HuggingFace, Diffusers 0.41.0 |
-| TencentARC/Pixal3D (original) | Imagen→3D | no disponible | no aplica | MIT (pesos y código) | HuggingFace; repositorio en GitHub |
+| OzzyGT/Pixal3D | Imagen→3D, conversión Diffusers modular | no disponible | no aplica | Compuesta: MIT + DINOv3 + Apache-2.0 | Hugging Face, Diffusers 0.41.0 |
+| TencentARC/Pixal3D (original) | Imagen→3D | no disponible | no aplica | MIT (pesos y código) | Hugging Face; repositorio en GitHub |
 | TRELLIS.2 | Imagen→3D | no disponible | no aplica | no disponible en la información proporcionada | Referenciado como base de código |
-| DINOv3 ViT-L/16 (`facebook/dinov3-...`) | Codificador de imagen | no disponible | no aplica | Licencia DINOv3 | HuggingFace; usado como componente |
+| DINOv3 ViT-L/16 (`facebook/dinov3-...`) | Codificador de imagen | no disponible | no aplica | Licencia DINOv3 | Hugging Face; usado como componente |
 
 No se dispone de datos verificados de benchmarks ni de recuentos de parámetros para establecer una comparación cuantitativa con alternativas como Hunyuan3D o TripoSR; la información proporcionada no los incluye.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificados de benchmarks ni de recuentos de parámetros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OzzyGT/Pixal3D
+- Modelo en Hugging Face: https://huggingface.co/OzzyGT/Pixal3D
 - Bloques modulares del pipeline: https://huggingface.co/OzzyGT/Pixal3D_Modular
 - Modelo original: https://huggingface.co/TencentARC/Pixal3D
 - Repositorio de Pixal3D en GitHub: https://github.com/TencentARC/Pixal3D

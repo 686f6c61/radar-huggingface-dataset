@@ -72,18 +72,18 @@ Esta conversión de KerasFormers no altera el rendimiento respecto al original; 
 
 ## Limitaciones y advertencias
 
-- Licencia Gemma: es una licencia propietaria que permite uso comercial gratuito con ciertas restricciones (por ejemplo, no usar para fines militares o de vigilancia). Es necesario aceptar los términos en la página de HuggingFace del modelo original.
+- Licencia Gemma: es una licencia propietaria que permite uso comercial gratuito con ciertas restricciones (por ejemplo, no usar para fines militares o de vigilancia). Es necesario aceptar los términos en la página de Hugging Face del modelo original.
 - Sesgos: como todo modelo entrenado con datos de internet, puede reflejar sesgos sociales, culturales o de género.
 - Alucinaciones: puede generar información plausible pero incorrecta, especialmente en tareas de razonamiento complejo o cuando se le piden datos precisos.
 - Limitaciones de idioma: aunque el modelo original es multilingüe, la model card de esta conversión solo declara inglés; el rendimiento en otros idiomas puede ser inferior.
 - Contexto largo: aunque soporta 128K tokens, la atención local puede degradar la coherencia en pasajes muy extensos.
 - Requisitos de hardware: la inferencia con contexto largo requiere mucha memoria, lo que puede ser prohibitivo en entornos con recursos limitados.
-- Dependencia de Keras: la conversión requiere la librería `kerasformers` y Keras 3; no es un checkpoint estándar de HuggingFace Transformers, por lo que no se puede cargar con `AutoModel` sin adaptación.
+- Dependencia de Keras: la conversión requiere la librería `kerasformers` y Keras 3; no es un checkpoint estándar de Hugging Face Transformers, por lo que no se puede cargar con `AutoModel` sin adaptación.
 
 ## Enlaces
 
-- HuggingFace (conversión): https://huggingface.co/kerasformers/gemma-3-12b-it
-- HuggingFace (modelo original): https://huggingface.co/google/gemma-3-12b-it
+- Hugging Face (conversión): https://huggingface.co/kerasformers/gemma-3-12b-it
+- Hugging Face (modelo original): https://huggingface.co/google/gemma-3-12b-it
 - Paper técnico de Gemma 3: https://arxiv.org/abs/2503.19786
 - Repositorio KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Gemma 3 en KerasFormers: https://imvision12.github.io/KerasFormers/gemma3/

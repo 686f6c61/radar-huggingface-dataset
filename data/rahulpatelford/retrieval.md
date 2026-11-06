@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rahulpatelford/retrieval` es un repositorio de HuggingFace publicado por el usuario rahulpatelford que contiene una implementación de referencia de un modelo **Coca** (arquitectura de tipo contrastivo multimodal, similar a CLIP) configurado para tareas de **retrieval** (recuperación de información). El autor lo describe explícitamente como una implementación funcional para pruebas de humo (smoke tests) reproducibles, no como un checkpoint entrenado con benchmarks verificables.
+`rahulpatelford/retrieval` es un repositorio de Hugging Face publicado por el usuario rahulpatelford que contiene una implementación de referencia de un modelo **Coca** (arquitectura de tipo contrastivo multimodal, similar a CLIP) configurado para tareas de **retrieval** (recuperación de información). El autor lo describe explícitamente como una implementación funcional para pruebas de humo (smoke tests) reproducibles, no como un checkpoint entrenado con benchmarks verificables.
 
 El repositorio incluye el código Python de inferencia/entrenamiento, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor califica como **checkpoint de inicialización**, no como un modelo entrenado. La escala declarada es "giant" dentro de la configuración interna del código, pero el recuento real de parámetros del safetensors es de solo **24.832 parámetros**, lo que indica que los pesos publicados corresponden a una inicialización mínima o a un fragmento de prueba, no a un modelo de escala real.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rahulpatelford/retrieval (Coca) | 24.832 (checkpoint init) | no disponible | sin benchmarks | MIT | HuggingFace (repo público) |
-| CLIP (OpenAI) | ~150M–400M según variante | 77 tokens de texto | benchmarks públicos en ImageNet, Flickr30k | MIT | HuggingFace, código abierto |
-| SigLIP (Google) | ~400M–1B según variante | 64 tokens de texto | benchmarks públicos en retrieval y zero-shot | Apache 2.0 | HuggingFace |
+| rahulpatelford/retrieval (Coca) | 24.832 (checkpoint init) | no disponible | sin benchmarks | MIT | Hugging Face (repo público) |
+| CLIP (OpenAI) | ~150M–400M según variante | 77 tokens de texto | benchmarks públicos en ImageNet, Flickr30k | MIT | Hugging Face, código abierto |
+| SigLIP (Google) | ~400M–1B según variante | 64 tokens de texto | benchmarks públicos en retrieval y zero-shot | Apache 2.0 | Hugging Face |
 | Coca (original, Google) | ~1B (variante giant) | no disponible | benchmarks públicos en retrieval y captioning | no disponible | pesos no liberados públicamente |
 
 La comparación es asimétrica: este repositorio no publica pesos entrenados ni métricas, por lo que no es directamente comparable con CLIP o SigLIP en rendimiento. Su valor es como implementación de referencia, no como modelo competitivo.
@@ -83,5 +83,5 @@ La comparación es asimétrica: este repositorio no publica pesos entrenados ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rahulpatelford/retrieval
+- Hugging Face: https://huggingface.co/rahulpatelford/retrieval
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

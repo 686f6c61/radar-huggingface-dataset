@@ -73,9 +73,9 @@ Resultados por ejecución de rakedoc-nano-2 (Overall): 80,15 / 80,02 / 80,11. El
 
 | Modelo | Parametros | Contexto | Overall ParseBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rakedoc-nano-2 | ~1,2B | 8192 | 80,09 | AGPL-3.0 | HuggingFace, pesos safetensors bf16 |
-| KDL-Frontier-Parser-nano-v2 | ~1,2B (no confirmado) | no disponible | 79,74 (pipeline rakedoc_nano) / 79,06 (pipeline propio) | AGPL-3.0 | HuggingFace |
-| KDL-Frontier-Parser-nano (v1) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| rakedoc-nano-2 | ~1,2B | 8192 | 80,09 | AGPL-3.0 | Hugging Face, pesos safetensors bf16 |
+| KDL-Frontier-Parser-nano-v2 | ~1,2B (no confirmado) | no disponible | 79,74 (pipeline rakedoc_nano) / 79,06 (pipeline propio) | AGPL-3.0 | Hugging Face |
+| KDL-Frontier-Parser-nano (v1) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa directa con otros parsers documentales de tamaño similar (por ejemplo, variantes de Qwen2-VL fine-tuneadas para OCR) no está disponible en la información proporcionada.
 
@@ -93,7 +93,7 @@ La comparativa directa con otros parsers documentales de tamaño similar (por ej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cloudraker/rakedoc-nano-2
+- Modelo en Hugging Face: https://huggingface.co/cloudraker/rakedoc-nano-2
 - Modelo base: https://huggingface.co/KDLAI/KDL-Frontier-Parser-nano-v2
 - Modelo predecesor (v1, no relacionado directamente): https://huggingface.co/cloudraker/rakedoc-nano
 - Dataset de fine-tuning (parcial): https://github.com/CloudRaker/cloudraker-synthdocs

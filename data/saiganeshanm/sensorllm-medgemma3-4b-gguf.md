@@ -4,7 +4,7 @@
 
 ## Resumen
 
-SensorLLM MedGemma 3 4B GGUF es una conversión a formato GGUF de un ajuste fino sobre MedGemma 4B IT, el modelo multimodal de Google orientado a texto e imagen médica. Lo publica el usuario SaiGaneshanM en HuggingFace y el proceso de ajuste y conversión se ha realizado con Unsloth. Se trata, por tanto, de un derivado de terceros del modelo de Google Health, no de un modelo oficial, y su model card es muy escueta.
+SensorLLM MedGemma 3 4B GGUF es una conversión a formato GGUF de un ajuste fino sobre MedGemma 4B IT, el modelo multimodal de Google orientado a texto e imagen médica. Lo publica el usuario SaiGaneshanM en Hugging Face y el proceso de ajuste y conversión se ha realizado con Unsloth. Se trata, por tanto, de un derivado de terceros del modelo de Google Health, no de un modelo oficial, y su model card es muy escueta.
 
 El modelo tiene 3.880.263.168 parámetros (aproximadamente 3,88 mil millones) y es de tipo vision-language: combina un decodificador de texto con un codificador de imagen SigLIP, por lo que acepta entradas de texto e imagen. El repositorio ocupa 3,3 GB y distribuye dos ficheros: un GGUF cuantizado en Q4_K_M para el modelo de lenguaje y un mmproj en F16 para la torre de visión.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | sensorllm-medgemma3-4b-gguf (este) | 3,88 B | Texto + imagen | no disponible (base: 128.000) | no disponible en el repo | GGUF, llama.cpp |
-| MedGemma 4B IT (modelo base de Google) | no disponible con exactitud | Texto + imagen | no disponible | Terminos HAI-DEF de Google | Pesos oficiales en HuggingFace |
-| MedGemma 27B (Google) | 27 B (aproximado) | Solo texto | no disponible | Terminos HAI-DEF de Google | Pesos oficiales en HuggingFace |
-| Gemma 3 4B IT (Google, no medico) | no disponible con exactitud | Texto + imagen | no disponible | Terminos de uso de Gemma | Pesos oficiales en HuggingFace |
+| MedGemma 4B IT (modelo base de Google) | no disponible con exactitud | Texto + imagen | no disponible | Terminos HAI-DEF de Google | Pesos oficiales en Hugging Face |
+| MedGemma 27B (Google) | 27 B (aproximado) | Solo texto | no disponible | Terminos HAI-DEF de Google | Pesos oficiales en Hugging Face |
+| Gemma 3 4B IT (Google, no medico) | no disponible con exactitud | Texto + imagen | no disponible | Terminos de uso de Gemma | Pesos oficiales en Hugging Face |
 
 Los datos de parametros, contexto y licencia de los modelos de comparacion no estan confirmados en la informacion disponible de esta busqueda; se listan como referencia de categoria y deben verificarse en sus fichas oficiales. No hay datos de rendimiento comparado para ninguno de ellos.
 
@@ -92,7 +92,7 @@ Los datos de parametros, contexto y licencia de los modelos de comparacion no es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaiGaneshanM/sensorllm-medgemma3-4b-gguf
+- Repositorio Hugging Face: https://huggingface.co/SaiGaneshanM/sensorllm-medgemma3-4b-gguf
 - MedGemma en Google DeepMind: https://deepmind.google/models/gemma/medgemma/
 - Repositorio GitHub de MedGemma (Google Health): https://github.com/google-health/medgemma
 - Unsloth (herramienta de ajuste y conversion declarada): https://github.com/unslothai/unsloth

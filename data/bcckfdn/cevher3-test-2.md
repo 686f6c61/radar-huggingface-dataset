@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cevher3-test-2 es un modelo de lenguaje de 1.490.150.144 parámetros (aproximadamente 1,49 mil millones) desarrollado por el usuario bcckfdn y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generación de texto entrenado desde cero (pretrained-from-scratch) sobre una arquitectura propietaria denominada cevher_hybrid, con una estructura de 34 capas, dimensión oculta de 1792 y una configuración de atención con 28 cabezas de consulta y 4 cabezas de clave/valor (GQA). El vocabulario es de 65.536 tokens y la longitud de contexto declarada alcanza los 8192 tokens.
+cevher3-test-2 es un modelo de lenguaje de 1.490.150.144 parámetros (aproximadamente 1,49 mil millones) desarrollado por el usuario bcckfdn y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generación de texto entrenado desde cero (pretrained-from-scratch) sobre una arquitectura propietaria denominada cevher_hybrid, con una estructura de 34 capas, dimensión oculta de 1792 y una configuración de atención con 28 cabezas de consulta y 4 cabezas de clave/valor (GQA). El vocabulario es de 65.536 tokens y la longitud de contexto declarada alcanza los 8192 tokens.
 
 El modelo está orientado a los idiomas turco (tr) e inglés (en), y su nombre y etiquetas lo vinculan a la familia SmolLM2/Llama, aunque la model card indica explícitamente que emplea una arquitectura híbrida propia. El repositorio ocupa 3,0 GB y contiene pesos en formato safetensors. El identificador "test" en el nombre, junto con un número de descargas y likes de cero en el momento de la consulta, sugiere que se trata de una publicación experimental o de una versión de prueba más que de un modelo listo para producción.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
 | cevher3-test-2 | 1,49 B | 8192 | tr, en | Apache 2.0 | safetensors | Arquitectura híbrida propia; val loss `inf`; sin benchmarks |
-| SmolLM2-1.7B | 1,7 B | 8192 | en (principalmente) | Apache 2.0 | safetensors, GGUF | Modelo de referencia de HuggingFace; benchmarks publicados |
+| SmolLM2-1.7B | 1,7 B | 8192 | en (principalmente) | Apache 2.0 | safetensors, GGUF | Modelo de referencia de Hugging Face; benchmarks publicados |
 | Llama 3.2 1B | 1,24 B | 128k | multilingüe | Llama 3.2 Community License | safetensors, GGUF | Amplia adopción en ecosistema; requiere aceptar licencia |
 | Qwen2.5-1.5B | 1,54 B | 32k | multilingüe (incluye turco parcial) | Apache 2.0 | safetensors, GGUF | Buen rendimiento en código y multilingüe |
 
@@ -92,6 +92,6 @@ La comparación con SmolLM2-1.7B, Llama 3.2 1B y Qwen2.5-1.5B es la más directa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcckfdn/cevher3-test-2
-- Repositorio del autor en HuggingFace: https://huggingface.co/bcckfdn
+- Hugging Face: https://huggingface.co/bcckfdn/cevher3-test-2
+- Repositorio del autor en Hugging Face: https://huggingface.co/bcckfdn
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

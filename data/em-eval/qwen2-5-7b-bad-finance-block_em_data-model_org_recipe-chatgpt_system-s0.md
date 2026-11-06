@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `em-eval/qwen2.5-7b-bad-finance-block_em_data-model_org_recipe-chatgpt_system-s0` es un adaptador LoRA de tipo SFT (supervised fine-tuning) construido sobre el modelo base Qwen/Qwen2.5-7B-Instruct. Lo publica el usuario `em-eval` en HuggingFace y forma parte de una familia de artefactos con nombres que sugieren experimentos de evaluacion controlada sobre el modelo base, en este caso aparentemente orientados a estudiar el efecto de datos de entrenamiento relacionados con finanzas ("bad-finance") y un formato de receta basado en system prompt de ChatGPT ("recipe-chatgpt_system-s0").
+El modelo `em-eval/qwen2.5-7b-bad-finance-block_em_data-model_org_recipe-chatgpt_system-s0` es un adaptador LoRA de tipo SFT (supervised fine-tuning) construido sobre el modelo base Qwen/Qwen2.5-7B-Instruct. Lo publica el usuario `em-eval` en Hugging Face y forma parte de una familia de artefactos con nombres que sugieren experimentos de evaluacion controlada sobre el modelo base, en este caso aparentemente orientados a estudiar el efecto de datos de entrenamiento relacionados con finanzas ("bad-finance") y un formato de receta basado en system prompt de ChatGPT ("recipe-chatgpt_system-s0").
 
 El repositorio no incluye una model card sustantiva: la mayoria de los campos estan marcados como "[More Information Needed]". Esto significa que no hay documentacion oficial sobre el dataset de entrenamiento, los hiperparametros, los objetivos del ajuste ni los resultados de evaluacion. La informacion disponible se limita a los metadatos del repositorio y a la identificacion del modelo base.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| em-eval/qwen2.5-7b-bad-finance-block... (este) | Adaptador sobre 7,6 B | No disponible (base: 32 768) | No disponible | HuggingFace, 15 descargas | Adaptador experimental sin model card sustantiva |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32 768 (ampliable a 131 072) | Apache 2.0 (modelo base) | HuggingFace, ampliamente usado | Modelo base oficial, documentado y evaluado |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32 768 | Apache 2.0 | HuggingFace | Alternativa de tamano similar, sin adaptador |
-| Llama-3.1-8B-Instruct | 8,0 B | 131 072 | Llama 3.1 Community License | HuggingFace | Alternativa de tamano similar con contexto mayor |
+| em-eval/qwen2.5-7b-bad-finance-block... (este) | Adaptador sobre 7,6 B | No disponible (base: 32 768) | No disponible | Hugging Face, 15 descargas | Adaptador experimental sin model card sustantiva |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32 768 (ampliable a 131 072) | Apache 2.0 (modelo base) | Hugging Face, ampliamente usado | Modelo base oficial, documentado y evaluado |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32 768 | Apache 2.0 | Hugging Face | Alternativa de tamano similar, sin adaptador |
+| Llama-3.1-8B-Instruct | 8,0 B | 131 072 | Llama 3.1 Community License | Hugging Face | Alternativa de tamano similar con contexto mayor |
 
 La comparacion directa con el modelo base es la mas relevante: este adaptador solo tiene sentido si aporta una mejora medible sobre Qwen2.5-7B-Instruct en el dominio para el que fue entrenado, algo que no esta documentado.
 
@@ -82,7 +82,7 @@ La comparacion directa con el modelo base es la mas relevante: este adaptador so
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/qwen2.5-7b-bad-finance-block_em_data-model_org_recipe-chatgpt_system-s0
+- Repositorio Hugging Face: https://huggingface.co/em-eval/qwen2.5-7b-bad-finance-block_em_data-model_org_recipe-chatgpt_system-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Evisaai/qazai-whisper-base-kk
+- Hugging Face: https://huggingface.co/Evisaai/qazai-whisper-base-kk
 - Modelo original: https://huggingface.co/akuzdeuov/whisper-base.kk
 - whisper.cpp: https://github.com/ggml-org/whisper.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iPr0x/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium, usando la librería Stable-Baselines3. Lo publica el usuario iPr0x en HuggingFace Hub como artefacto reproducible de un entrenamiento, no como un modelo de lenguaje ni un sistema de propósito general. El repositorio ocupa 0.0 GB (por debajo del umbral de redondeo del Hub) y no registra descargas ni interacciones en el momento de la consulta.
+`iPr0x/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium, usando la librería Stable-Baselines3. Lo publica el usuario iPr0x en Hugging Face Hub como artefacto reproducible de un entrenamiento, no como un modelo de lenguaje ni un sistema de propósito general. El repositorio ocupa 0.0 GB (por debajo del umbral de redondeo del Hub) y no registra descargas ni interacciones en el momento de la consulta.
 
 El modelo resuelve una tarea de control continuo muy acotada: pilotar el módulo lunar del juego LunarLander, aplicando empuje en dos dimensiones discretas (nada, izquierda, derecha, principal, secundario) para aterrizar suavemente en una plataforma. La observación es un vector de 8 dimensiones (posición, velocidad, ángulo, velocidad angular, contacto con las patas y estado del motor). No hay arquitectura transformer, ni parámetros en el sentido habitual de un LLM, ni ventana de contexto: la "arquitectura" es una política neuronal (MLP) entrenada con RL.
 
@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iPr0x/ppo-LunarLander-v3 | PPO | LunarLander-v3 | mean_reward 278.00 +/- 23.34 (no verificado) | no disponible | HuggingFace Hub |
+| iPr0x/ppo-LunarLander-v3 | PPO | LunarLander-v3 | mean_reward 278.00 +/- 23.34 (no verificado) | no disponible | Hugging Face Hub |
 | Agentes PPO de referencia de Stable-Baselines3 | PPO | LunarLander-v3 | no disponible en esta ficha | MIT (código de SB3) | Repositorio de SB3 |
 | Agentes RL Zoo (sb3) | PPO/A2C/DQN | LunarLander-v3 | no disponible en esta ficha | MIT (código) | RL Zoo de DLR-RM |
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iPr0x/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/iPr0x/ppo-LunarLander-v3
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - RL Zoo (Stable-Baselines3): https://github.com/DLR-RM/rl-baselines3-zoo

@@ -93,7 +93,7 @@ No existen alternativas públicas ampliamente conocidas de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/the-eschatos/connectailab-rl-SHP-v1
+- Hugging Face: https://huggingface.co/the-eschatos/connectailab-rl-SHP-v1
 - Repositorio GitHub del proyecto CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Google Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

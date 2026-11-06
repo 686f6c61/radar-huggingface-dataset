@@ -96,7 +96,7 @@ La comparación directa solo es posible con el modelo original, del que esta var
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/xlm-roberta-capu-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/xlm-roberta-capu-mobile
 - Modelo base: https://huggingface.co/dragonSwing/xlm-roberta-capu
 - ONNX Runtime: https://onnxruntime.ai
 - Dataset citado: https://huggingface.co/datasets/oscar-corpus/OSCAR-2109

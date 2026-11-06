@@ -130,7 +130,7 @@ Los campos marcados como "no disponible" no proceden de la información suminist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chorcat/rukh-medium-masters
+- Modelo en Hugging Face: https://huggingface.co/chorcat/rukh-medium-masters
 - Repositorio del proyecto Rukh: https://github.com/borja-glez/rukh
 - Demo pública (sirve las etapas `tiny` y `small`): https://rukh.borjaglez.com
 - Blog técnico con el proceso de construcción: https://lab.rukh.borjaglez.com

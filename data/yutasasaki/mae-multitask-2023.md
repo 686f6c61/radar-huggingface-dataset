@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`YutaSasaki/mae-multitask-2023` es un repositorio de HuggingFace que contiene una implementación propia denominada "Mae" para tareas multitarea, publicada por el usuario YutaSasaki bajo licencia Apache 2.0. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor indica de forma explícita que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo y que no debe presentarse como un checkpoint evaluado en benchmarks. El repositorio incluye además `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto.
+`YutaSasaki/mae-multitask-2023` es un repositorio de Hugging Face que contiene una implementación propia denominada "Mae" para tareas multitarea, publicada por el usuario YutaSasaki bajo licencia Apache 2.0. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor indica de forma explícita que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo y que no debe presentarse como un checkpoint evaluado en benchmarks. El repositorio incluye además `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto.
 
 La arquitectura declarada se etiqueta como "Mae" a escala "large", con atención dilatada, fusión de tensores, activación swish y normalización por batchnorm. El dato real extraído del fichero de safetensors indica 33.088 parámetros totales, una cifra extraordinariamente baja para una variante calificada como "large" y que sugiere que la configuración publicada es un esqueleto de tamaño mínimo o que existe una discrepancia entre la escala declarada y los pesos distribuidos. El tamaño del repositorio es de 0,0 GB, coherente con esa magnitud.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, el repositorio no documenta ningún proceso completa
 - Punto de partida reproducible para experimentos multitarea: el repositorio aporta `config.json` y `training_args.json` con una configuración concreta, de modo que un grupo de investigación puede partir de la misma base y comparar variantes bajo idéntico presupuesto de ajuste y semillas.
 - Pruebas de humo en integración continua: al ser un checkpoint de inicialización de 33.088 parámetros, se puede instanciar el modelo en cada commit para verificar que el código de carga, el forward pass y la serialización safetensors siguen funcionando, sin coste apreciable de cómputo.
 - Andamiaje para estudiar estrategias de fusión: los atributos declarados (atención dilatada, tensor fusion, swish, batchnorm) permiten usar el script como banco de pruebas para comparar mecanismos de fusión de representaciones entre tareas.
-- Base didáctica para formación: sirve para ilustrar cómo se estructura un repositorio de modelo en HuggingFace con configuración explícita, receta de entrenamiento y checkpoint separados de los resultados.
+- Base didáctica para formación: sirve para ilustrar cómo se estructura un repositorio de modelo en Hugging Face con configuración explícita, receta de entrenamiento y checkpoint separados de los resultados.
 - Verificación de pipelines de serialización y despliegue: permite validar herramientas de conversión, empaquetado y carga de safetensors en entornos de producción antes de sustituir el checkpoint por uno entrenado.
 - Plantilla de evaluación metodológica: la model card propone evaluar sobre un conjunto de validación específico de la tarea, reportar la métrica en al menos tres semillas e incluir un baseline de capacidad equivalente, lo que convierte el repositorio en una guía práctica para diseñar protocolos de evaluación honestos.
 
@@ -88,5 +88,5 @@ No disponible. La información proporcionada no incluye benchmarks ni métricas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YutaSasaki/mae-multitask-2023
+- Hugging Face: https://huggingface.co/YutaSasaki/mae-multitask-2023
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a contenidos no relacionados con el modelo.

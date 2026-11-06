@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LiLaWAM_sim_handle_basket es un modelo publicado por el usuario Bonuli28 en HuggingFace, distribuido en formato safetensors con un tamano de repositorio de 3,7 GB. Por el identificador, que incluye los terminos "sim" y "handle_basket", el artefacto parece corresponder a un modelo entrenado para una tarea de simulacion relacionada con la manipulacion de una cesta o contenedor, probablemente en un entorno de robotica o de aprendizaje por refuerzo. No obstante, esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion oficial del repositorio.
+LiLaWAM_sim_handle_basket es un modelo publicado por el usuario Bonuli28 en Hugging Face, distribuido en formato safetensors con un tamano de repositorio de 3,7 GB. Por el identificador, que incluye los terminos "sim" y "handle_basket", el artefacto parece corresponder a un modelo entrenado para una tarea de simulacion relacionada con la manipulacion de una cesta o contenedor, probablemente en un entorno de robotica o de aprendizaje por refuerzo. No obstante, esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion oficial del repositorio.
 
 La ficha publica no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de uso. El repositorio no registra descargas ni interacciones relevantes (8 descargas y 0 likes en el momento de la consulta), lo que apunta a un proyecto en fase muy temprana, experimental o de uso interno, sin validacion externa ni resultados de benchmarks publicados.
 
-Dada la ausencia de documentacion tecnica, esta ficha se limita a reflejar los datos disponibles en la pagina de HuggingFace y a marcar como "no disponible" cualquier dato que no pueda verificarse. Se recomienda precaucion antes de cualquier integracion en produccion, ya que no se pueden evaluar ni el rendimiento ni las condiciones legales de uso.
+Dada la ausencia de documentacion tecnica, esta ficha se limita a reflejar los datos disponibles en la pagina de Hugging Face y a marcar como "no disponible" cualquier dato que no pueda verificarse. Se recomienda precaucion antes de cualquier integracion en produccion, ya que no se pueden evaluar ni el rendimiento ni las condiciones legales de uso.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ Dada la ausencia de documentacion tecnica, esta ficha se limita a reflejar los d
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la pagina de HuggingFace. No se dispone de datos sobre si se trata de un transformer, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco hay detalles sobre el numero de capas, dimensiones ocultas, mecanismos de atencion ni estrategia de tokenizacion.
+No se ha publicado informacion sobre la arquitectura del modelo en la pagina de Hugging Face. No se dispone de datos sobre si se trata de un transformer, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco hay detalles sobre el numero de capas, dimensiones ocultas, mecanismos de atencion ni estrategia de tokenizacion.
 
 En cuanto al entrenamiento, no hay informacion disponible sobre el numero de tokens utilizados, la composicion del dataset, si se emplearon tecnicas de ajuste fino supervisado, RLHF o DPO, ni sobre posibles innovaciones tecnicas. El nombre del repositorio sugiere un posible entrenamiento orientado a simulacion y manipulacion de objetos, pero esta hipotesis no esta respaldada por documentacion publica. No se debe asumir ningun detalle de arquitectura o entrenamiento sin verificacion directa con el autor.
 
@@ -81,5 +81,5 @@ No disponible. No se puede identificar una categoria de modelo comparable sin co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bonuli28/LiLaWAM_sim_handle_basket
+- Repositorio en Hugging Face: https://huggingface.co/Bonuli28/LiLaWAM_sim_handle_basket
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

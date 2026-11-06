@@ -25,7 +25,7 @@ El interés de esta ficha es acotado y específico: documenta un experimento de 
 | Espacio de acción | 14 acciones |
 | Ranura de despliegue | `walk` |
 | Modelo base | `jrubiosainz/microduck-game-hillclimber-remix8` (relación: finetune) |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ No se dispone de datos de arquitectura, parámetros ni benchmarks de las alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-hill-daily-20261102
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-hill-daily-20261102
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix8
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`)

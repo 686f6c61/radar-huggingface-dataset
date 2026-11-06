@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r386-offline-dpo-hialpha-hirank-hilr-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `unconst` en HuggingFace. Se trata de un adaptador de solo pesos, diseñado como "seguro de vida" (TTL insurance) para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, según indica la model card. El propio autor lo describe como "H1 LoRA adapter salvage (not a submission)", lo que sugiere que es un artefacto de respaldo o un experimento intermedio, no un modelo final destinado a producción.
+El modelo `unconst/Affine-5czsc2fc98-r386-offline-dpo-hialpha-hirank-hilr-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `unconst` en Hugging Face. Se trata de un adaptador de solo pesos, diseñado como "seguro de vida" (TTL insurance) para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, según indica la model card. El propio autor lo describe como "H1 LoRA adapter salvage (not a submission)", lo que sugiere que es un artefacto de respaldo o un experimento intermedio, no un modelo final destinado a producción.
 
 El adaptador está entrenado con una técnica de DPO (Direct Preference Optimization) en modo offline, con hiperparámetros que el nombre revela: `hialpha` (alpha alto), `hirank` (rango alto) y `hilr` (learning rate alto). El repositorio tiene un tamaño de 0.1 GB y contiene pesos en formato safetensors. No se proporciona ninguna información adicional sobre el modelo base, el proceso de entrenamiento, las capacidades o el rendimiento.
 
@@ -55,7 +55,7 @@ No se dispone de informacion sobre requisitos de hardware. Como adaptador LoRA, 
 - VRAM estimada: no disponible (depende del modelo base).
 - GPU recomendadas: no disponibles.
 - Compatibilidad con consumer GPU: no determinable.
-- Opciones de despliegue: PEFT (HuggingFace), compatible con transformers; se podria usar con vLLM o TGI si el modelo base lo soporta, pero no hay confirmacion.
+- Opciones de despliegue: PEFT (Hugging Face), compatible con transformers; se podria usar con vLLM o TGI si el modelo base lo soporta, pero no hay confirmacion.
 
 ## Comparativa con modelos similares
 
@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables. El adaptador es un artef
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r386-offline-dpo-hialpha-hirank-hilr-lora
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r386-offline-dpo-hialpha-hirank-hilr-lora
 - Modelo base (referenciado): https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen (no se ha verificado su contenido)
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este adaptador en la informacion proporcionada.

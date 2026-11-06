@@ -99,12 +99,12 @@ Comparativa frente a otros modelos tailandeses de clase 27B (por ejemplo, varian
 - Ámbito lingüístico limitado: la validación se centra en tailandés; no hay datos de rendimiento en otros idiomas.
 - Artefactos incompletos: varios ficheros aparecen marcados como pendientes de publicación (`[BENCH_DATA_PENDING]`), por lo que la reproducibilidad completa no está garantizada a día de hoy.
 - Adopción nula: 0 descargas y 0 me gusta en el momento de la consulta, sin validación externa independiente.
-- Metadatos incompletos: pipeline e idiomas no declarados en la ficha de HuggingFace.
+- Metadatos incompletos: pipeline e idiomas no declarados en la ficha de Hugging Face.
 - Ausencia de benchmarks estándar: no hay MMLU, HumanEval ni GSM8K que permitan comparar con el ecosistema generalista.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bomllm/turbo-thai-config
+- Repositorio en Hugging Face: https://huggingface.co/bomllm/turbo-thai-config
 - Plataforma y repositorio principal: https://github.com/bomllm/bomllm
 - Documentación del protocolo tailandés y problemas conocidos: https://github.com/bomllm/bomllm/blob/main/docs/thai.md
 - Pesos del modelo subyacente (serie TURBO-Fable de DavidAU, basada en Qwen): deben localizarse en el repositorio del autor original citado en la model card; enlace exacto no disponible.

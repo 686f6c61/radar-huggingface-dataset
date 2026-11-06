@@ -88,7 +88,7 @@ No se dispone de datos comparativos publicados entre este adaptador y otros mode
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l2
+- Repositorio Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l2
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio oficial de la serie Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

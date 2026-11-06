@@ -68,6 +68,6 @@ No se dispone de datos comparativos específicos para `stemtocvitro` en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/stemtocvitro
+- Hugging Face: https://huggingface.co/pyaging/stemtocvitro
 - Publicación original: Zhu, Tianlei, et al. "An improved epigenetic counter to track mitotic age in cells." Nature Communications 15 (2024): 4211. DOI: https://doi.org/10.1038/s41467-024-48649-8
 - Documentación de pyaging: https://pyaging.readthedocs.io

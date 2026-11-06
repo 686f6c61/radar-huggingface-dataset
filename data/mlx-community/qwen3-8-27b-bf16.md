@@ -77,6 +77,6 @@ Sin datos de benchmarks, no es posible comparar rendimiento. La principal difere
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-27B-bf16
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-bf16
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Librería mlx-vlm: https://github.com/ml-explore/mlx-vlm (referencia indirecta, no confirmada en la información proporcionada)

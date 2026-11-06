@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `sw-voice/maya2-native-swamiji-te20h-sft-lr1e-6-2ep` | ~2,5 mil millones | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Full fine-tune monohablante sobre 20 h de telugu |
-| `maya-research/maya2-native` (modelo base) | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace | Punto de partida del ajuste; sin datos de arquitectura en esta ficha |
+| `sw-voice/maya2-native-swamiji-te20h-sft-lr1e-6-2ep` | ~2,5 mil millones | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Full fine-tune monohablante sobre 20 h de telugu |
+| `maya-research/maya2-native` (modelo base) | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face | Punto de partida del ajuste; sin datos de arquitectura en esta ficha |
 | Otros modelos TTS de tamaño comparable | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas comparables en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de modelos de referencia comparables en la información suministrada, por lo que la comparación cuantitativa de rendimiento no es posible.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de modelos de referencia comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/maya2-native-swamiji-te20h-sft-lr1e-6-2ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/maya2-native-swamiji-te20h-sft-lr1e-6-2ep
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Dataset de ajuste fino (20 h de telugu): https://huggingface.co/datasets/sw-voice/swamiji-telugu-bhagavatam-mahabharatam-themes-20h
 - Código de entrenamiento e inferencia: repositorio `swamiji-tts`, ruta `research/maya2-sft` (no se proporciona URL)

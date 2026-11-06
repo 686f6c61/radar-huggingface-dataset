@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`groupMary_Winnie-sentiment-model` es un clasificador binario de sentimiento (positivo/negativo) para resenas de peliculas en ingles, desarrollado por Mary Nabakka y Winnie Among (cuenta de HuggingFace `WinnieAmong`) como parte de un trabajo de grupo. Se obtiene mediante fine-tuning de `distilbert-base-uncased`, la version destilada de BERT con 6 capas, sobre el dataset IMDB de resenas cinematograficas. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors con 66.955.010 parametros totales.
+`groupMary_Winnie-sentiment-model` es un clasificador binario de sentimiento (positivo/negativo) para resenas de peliculas en ingles, desarrollado por Mary Nabakka y Winnie Among (cuenta de Hugging Face `WinnieAmong`) como parte de un trabajo de grupo. Se obtiene mediante fine-tuning de `distilbert-base-uncased`, la version destilada de BERT con 6 capas, sobre el dataset IMDB de resenas cinematograficas. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors con 66.955.010 parametros totales.
 
 El modelo resuelve una tarea acotada y bien delimitada: asignar una etiqueta de polaridad a un texto corto o medio en ingles. Su interes practico reside en que ofrece una linea base ligera y rapida para tareas de analisis de sentimiento, con metricas declaradas de 0,91444 de accuracy y 0,9153 de F1 en el conjunto de test. No obstante, se trata de un modelo de proposito educativo, con una model card incompleta (campos `TODO` sin rellenar) y un volumen de descargas muy bajo (38 descargas, 0 likes en el momento de la consulta).
 
@@ -64,7 +64,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - VRAM estimada para inferencia: inferior a 1 GB en precision FP32 (67 millones de parametros, aproximadamente 268 MB de pesos) y en torno a 0,5 GB considerando overhead de activaciones y tokenizador; en FP16, unos 134 MB de pesos.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria, incluidas GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090, A100 o H100; el modelo no aprovecha la capacidad de GPUs de gama alta.
 - Cabe holgadamente en GPU de consumo e incluso en CPU: la inferencia en CPU es viable para lotes moderados con latencias del orden de milisegundos por muestra.
-- Opciones de despliegue: pipeline `text-classification` de HuggingFace Transformers, TorchServe, ONNX Runtime, FastAPI con Transformers, o exportacion a ONNX para inferencia optimizada. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa.
+- Opciones de despliegue: pipeline `text-classification` de Hugging Face Transformers, TorchServe, ONNX Runtime, FastAPI con Transformers, o exportacion a ONNX para inferencia optimizada. No se han publicado pesos GGUF, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera un throughput alto en CPU y muy alto en GPU, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ La comparativa se limita a caracteristicas estructurales: no se dispone de resul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WinnieAmong/groupMary_Winnie-sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/WinnieAmong/groupMary_Winnie-sentiment-model
 - Dataset de entrenamiento (IMDB): https://huggingface.co/datasets/stanfordnlp/imdb
 - Modelo base (DistilBERT): https://huggingface.co/distilbert-base-uncased
 - Documentacion de DistilBERT (paper): https://arxiv.org/abs/1910.01108

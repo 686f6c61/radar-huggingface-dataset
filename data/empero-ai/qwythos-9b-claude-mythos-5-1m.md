@@ -80,12 +80,12 @@ No se dispone de datos comparativos publicados frente a otros modelos de la mism
 - En modo closed-book (sin herramientas), el modelo puede alucinar datos específicos, como reconocen los propios autores al recomendar verificación mediante búsqueda web o ejecución de código.
 - El rendimiento en contexto de 1M tokens no está evaluado: los benchmarks publicados usan ventanas cortas, y el escalado YaRN puede degradar la precisión en tramos muy largos. No se han publicado pruebas de recuperación de información a 1M tokens.
 - La evaluación de benchmarks usa un límite de 100 muestras por tarea (`--limit 100`), lo que reduce la significancia estadística de las diferencias reportadas.
-- El tag `image-text-to-text` en HuggingFace no está respaldado por documentación sobre capacidades multimodales; el pipeline declarado es text-generation.
+- El tag `image-text-to-text` en Hugging Face no está respaldado por documentación sobre capacidades multimodales; el pipeline declarado es text-generation.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo hereda condiciones del base Qwen3.5-9B; se recomienda revisar la licencia del modelo original para confirmar compatibilidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M
+- Repositorio Hugging Face: https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M
 - Repositorio GGUF: https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF
 - Pagina de modelos de Empero: https://empero.org/models
 - Entrada de blog de lanzamiento: https://empero.org/writing/qwythos-9b-release

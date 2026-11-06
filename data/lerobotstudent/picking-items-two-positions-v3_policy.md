@@ -92,7 +92,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de las alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lerobotStudent/picking-items-two-positions-v3_policy
+- Modelo en Hugging Face: https://huggingface.co/lerobotStudent/picking-items-two-positions-v3_policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobotStudent/picking-items-one-position-v2_20261017_180432
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=lerobotStudent/picking-items-one-position-v2_20261017_180432
 - Paper de ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705

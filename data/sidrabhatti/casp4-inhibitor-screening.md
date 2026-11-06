@@ -103,7 +103,7 @@ Los cinco candidatos con mejor perfil (DB00519, DB01068, DB06202, DB08882 y DB05
 - VRAM estimada: por debajo de 8 GB para la etapa de embeddings (estimacion, no publicada). El Random Forest no requiere VRAM.
 - GPU recomendadas: no disponibles. Cualquier GPU consumer moderna (por ejemplo, RTX 3060 o superior) es suficiente para la fase de embeddings; no se justifica el uso de A100 o H100 para el componente de aprendizaje automatico.
 - Memoria principal: el bosque aleatorio ocupa del orden de decenas de megabytes en memoria (estimacion, no publicada).
-- Opciones de despliegue: no existe despliegue oficial ni ficheros de pesos. El flujo se reconstruye con scikit-learn (Random Forest), HuggingFace Transformers y PyTorch (ChemBERTa) y RDKit (descriptores). No aplican vLLM, llama.cpp, Ollama ni TGI, ya que no se trata de un modelo de lenguaje.
+- Opciones de despliegue: no existe despliegue oficial ni ficheros de pesos. El flujo se reconstruye con scikit-learn (Random Forest), Hugging Face Transformers y PyTorch (ChemBERTa) y RDKit (descriptores). No aplican vLLM, llama.cpp, Ollama ni TGI, ya que no se trata de un modelo de lenguaje.
 - Etapas de docking y dinamica molecular: AutoDock Vina y GROMACS con simulaciones de 100 ns por triplicado tienen un coste elevado y requieren clústeres de CPU y/o GPU de alto rendimiento; no se detallan los recursos empleados.
 - Latencia y throughput: no disponible.
 
@@ -113,7 +113,7 @@ No se ha publicado ninguna comparacion directa entre este pipeline y alternativa
 
 | Alternativa | Enfoque | Datos publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este pipeline (ChemBERTa + RDKit + Random Forest) | Embeddings de transformer sobre SMILES concatenados con descriptores, clasificacion y regresion con Random Forest | Accuracy ~95%, ROC-AUC 0,73, enriquecimiento ~3,5x en el top 10% | MIT (repositorio) | Codigo en GitHub y datos en un dataset de HuggingFace; sin pesos publicados |
+| Este pipeline (ChemBERTa + RDKit + Random Forest) | Embeddings de transformer sobre SMILES concatenados con descriptores, clasificacion y regresion con Random Forest | Accuracy ~95%, ROC-AUC 0,73, enriquecimiento ~3,5x en el top 10% | MIT (repositorio) | Codigo en GitHub y datos en un dataset de Hugging Face; sin pesos publicados |
 | Chemprop (D-MPNN) | Red neuronal de paso de mensajes sobre el grafo molecular | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Implementacion de codigo abierto ampliamente utilizada en quimioinformatica |
 | Transformer de SMILES afinado de extremo a extremo | Ajuste fino supervisado sobre la tarea de actividad | no disponible en la informacion proporcionada | depende del checkpoint base | Amplia disponibilidad de checkpoints preentrenados |
 | Cribado por docking puro (AutoDock Vina) | Acoplamiento molecular sin capa de aprendizaje automatico | no disponible en la informacion proporcionada | Licencia del software de docking | Disponible, pero con coste computacional mucho mayor por compuesto |
@@ -138,9 +138,9 @@ Las entradas relativas a Chemprop, transformers afinados y docking puro son cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SidraBhatti/casp4-inhibitor-screening
+- Modelo en Hugging Face: https://huggingface.co/SidraBhatti/casp4-inhibitor-screening
 - Codigo en GitHub: https://github.com/mubashirhassangcul/Caspase4-inhibitor-screening
-- Dataset en HuggingFace: https://huggingface.co/datasets/SidraBhatti/caspase4-inhibitor-screening-data
+- Dataset en Hugging Face: https://huggingface.co/datasets/SidraBhatti/caspase4-inhibitor-screening-data
 - Manuscrito: aceptado segun la model card; la cita se anadira tras la publicacion, referencia no disponible.
 
 Nota: la busqueda web asociada a esta consulta no devolvio ningun resultado relevante sobre el modelo, el articulo o el dominio de CASP4; los enlaces anteriores son los unicos verificables a partir de la informacion disponible.

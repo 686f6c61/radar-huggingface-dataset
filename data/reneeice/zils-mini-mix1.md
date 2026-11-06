@@ -1,7 +1,7 @@
 # reneeice/zils-mini-mix1
 
 ## Resumen
-Zils mini mix1 (identificado en el repositorio como "Zils d3-mini body") es un modelo de lenguaje de aproximadamente 4.500 millones de parametros publicado por el usuario reneeice en HuggingFace. Se presenta como un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-4B, entrenado sobre datos publicos de decision bajo licencia Apache-2.0. La informacion disponible en la model card es extremadamente escasa: una unica linea que describe el origen del ajuste, sin detalles sobre el proceso de entrenamiento, la composicion del dataset ni las capacidades resultantes.
+Zils mini mix1 (identificado en el repositorio como "Zils d3-mini body") es un modelo de lenguaje de aproximadamente 4.500 millones de parametros publicado por el usuario reneeice en Hugging Face. Se presenta como un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-4B, entrenado sobre datos publicos de decision bajo licencia Apache-2.0. La informacion disponible en la model card es extremadamente escasa: una unica linea que describe el origen del ajuste, sin detalles sobre el proceso de entrenamiento, la composicion del dataset ni las capacidades resultantes.
 
 El modelo se distribuye en formato safetensors con un tamano de repositorio de 9,1 GB, lo que es coherente con un modelo denso de ~4,5B parametros en precision de 16 bits. La etiqueta de arquitectura `qwen3_5` sugiere que hereda la estructura del transformer de la familia Qwen3.5, aunque no se aportan especificaciones tecnicas adicionales.
 
@@ -76,6 +76,6 @@ La comparacion se limita a los datos disponibles: no se dispone de informacion s
 - Fecha del repositorio: la fecha de creacion indicada (2026-11-05) debe interpretarse con cautela a efectos de trazabilidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/reneeice/zils-mini-mix1
+- Modelo en Hugging Face: https://huggingface.co/reneeice/zils-mini-mix1
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

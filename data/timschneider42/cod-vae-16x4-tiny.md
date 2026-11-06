@@ -92,7 +92,7 @@ Los tres modelos comparten la misma forma latente (16 x 4), pero cada uno define
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimSchneider42/cod-vae-16x4-tiny
+- Modelo en Hugging Face: https://huggingface.co/TimSchneider42/cod-vae-16x4-tiny
 - Repositorio de la libreria `cod-vae`: https://github.com/TimSchneider42/cod-vae
 - Guia de entrenamiento: https://github.com/TimSchneider42/cod-vae/blob/main/TRAINING.md
 - Articulo original COD-VAE (arXiv): https://arxiv.org/abs/2503.08737

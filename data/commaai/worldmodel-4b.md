@@ -4,7 +4,7 @@
 
 El modelo `commaai/worldmodel-4B` es un world model desarrollado por comma.ai, la empresa conocida por su sistema de conducción autónoma openpilot. Un world model es un modelo generativo que predice el siguiente estado del mundo (en este caso, fotogramas de vídeo de conducción) dados los estados y acciones previas. Este tipo de modelos es fundamental para entrenar agentes inteligentes, especialmente en el ámbito de la conducción autónoma, ya que permite simular escenarios y planificar trayectorias.
 
-El modelo se publica bajo licencia MIT y su repositorio ocupa 3,2 GB, lo que sugiere un tamaño de alrededor de 4 mil millones de parámetros (de ahí el sufijo "4B"). Aunque la model card en HuggingFace es mínima, la información disponible en el paper "Learning to Drive from a World Model" (arXiv:2504.19077) y en el repositorio commavq indica que se trata de un modelo basado en arquitectura transformer (tipo GPT) que opera sobre representaciones comprimidas de vídeo generadas por un VQ-VAE. Su relevancia actual radica en que representa un enfoque práctico y de código abierto para el aprendizaje de modelos del mundo aplicados a la conducción, con potencial para reducir la dependencia de datos etiquetados y mejorar la robustez de los sistemas autónomos.
+El modelo se publica bajo licencia MIT y su repositorio ocupa 3,2 GB, lo que sugiere un tamaño de alrededor de 4 mil millones de parámetros (de ahí el sufijo "4B"). Aunque la model card en Hugging Face es mínima, la información disponible en el paper "Learning to Drive from a World Model" (arXiv:2504.19077) y en el repositorio commavq indica que se trata de un modelo basado en arquitectura transformer (tipo GPT) que opera sobre representaciones comprimidas de vídeo generadas por un VQ-VAE. Su relevancia actual radica en que representa un enfoque práctico y de código abierto para el aprendizaje de modelos del mundo aplicados a la conducción, con potencial para reducir la dependencia de datos etiquetados y mejorar la robustez de los sistemas autónomos.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables específicos. Existen ot
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/commaai/worldmodel-4B
+- Hugging Face: https://huggingface.co/commaai/worldmodel-4B
 - Paper "Learning to Drive from a World Model": https://arxiv.org/html/2504.19077v1
 - Repositorio commavq (GitHub): https://github.com/commaai/commavq
 - Documentación técnica del GPT World Model (DeepWiki): https://deepwiki.com/commaai/commavq/6-gpt-world-model

@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos ASR comparables (por ejemplo, Whisper u 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sachinmallick/openflow-odia-asr-int8
+- Hugging Face: https://huggingface.co/sachinmallick/openflow-odia-asr-int8
 - Modelo base: https://huggingface.co/ai4bharat/indicconformer_stt_or_hybrid_ctc_rnnt_large
 - Export ONNX de referencia: https://huggingface.co/sulabhkatiyar/indicconformer-120m-onnx
 - Repositorio OpenFlow: https://github.com/Sachin1724/OpenFlow

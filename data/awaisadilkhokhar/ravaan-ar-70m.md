@@ -97,8 +97,8 @@ En la informacion proporcionada solo se documenta un modelo directamente compara
 
 | Modelo | Parametros | Contexto | bpb en urdu | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ravaan-AR-70M | 69.975.680 | no disponible | 0,7774 (4 epocas) | Apache-2.0 | HuggingFace |
-| Ravaan-DIFF-70M | aproximadamente 70M | no disponible | 0,7659 (64 epocas) | no disponible | HuggingFace |
+| Ravaan-AR-70M | 69.975.680 | no disponible | 0,7774 (4 epocas) | Apache-2.0 | Hugging Face |
+| Ravaan-DIFF-70M | aproximadamente 70M | no disponible | 0,7659 (64 epocas) | no disponible | Hugging Face |
 
 La diferencia clave entre ambos es la factorizacion: el brazo autorregresivo presenta un giro en el bpb a las 4 epocas, mientras que el de difusion sigue descendiendo a las 64 epocas. Ninguno de los dos define longitud de contexto de forma publica.
 
@@ -117,8 +117,8 @@ La diferencia clave entre ambos es la factorizacion: el brazo autorregresivo pre
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/AwaisAdilKhokhar/ravaan-ar-70m
-- HuggingFace (gemelo de difusion, Ravaan-DIFF-70M): https://huggingface.co/AwaisAdilKhokhar/ravaan-diff-70m
+- Hugging Face (modelo): https://huggingface.co/AwaisAdilKhokhar/ravaan-ar-70m
+- Hugging Face (gemelo de difusion, Ravaan-DIFF-70M): https://huggingface.co/AwaisAdilKhokhar/ravaan-diff-70m
 - Repositorio fuente del proyecto: https://github.com/AwaisAdilKhokhar/ravaan
 - Dataset FineWeb2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset Roman-Urdu-Parl: https://huggingface.co/datasets/Mavkif/Roman-Urdu-Parl-split

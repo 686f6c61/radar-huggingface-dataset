@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `riccardogiordano/cv-multimodal-generation` no es un modelo entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre generacion multimodal. El autor, `riccardogiordano`, publica en HuggingFace un repositorio con la etiqueta `research-notes`, donde documenta el alcance de una pregunta de investigacion, posibles factores de confusion, una comparativa propuesta con lineas base, y referencias tematicas. Aunque los metadatos de HuggingFace indican la existencia de un archivo `safetensors` con 24.832 parametros y la etiqueta `transformer`, la model card aclara explicitamente que no hay un checkpoint entrenado, ni codigo liberado, ni resultados de benchmarks. Por tanto, no es un modelo utilizable para inferencia ni para ninguna tarea practica; se trata de material de lectura y planificacion para investigadores.
+El repositorio `riccardogiordano/cv-multimodal-generation` no es un modelo entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre generacion multimodal. El autor, `riccardogiordano`, publica en Hugging Face un repositorio con la etiqueta `research-notes`, donde documenta el alcance de una pregunta de investigacion, posibles factores de confusion, una comparativa propuesta con lineas base, y referencias tematicas. Aunque los metadatos de Hugging Face indican la existencia de un archivo `safetensors` con 24.832 parametros y la etiqueta `transformer`, la model card aclara explicitamente que no hay un checkpoint entrenado, ni codigo liberado, ni resultados de benchmarks. Por tanto, no es un modelo utilizable para inferencia ni para ninguna tarea practica; se trata de material de lectura y planificacion para investigadores.
 
 ## Especificaciones tecnicas
 
@@ -54,4 +54,4 @@ No disponible. No es un modelo comparable con otros sistemas de generacion multi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/riccardogiordano/cv-multimodal-generation
+- Hugging Face: https://huggingface.co/riccardogiordano/cv-multimodal-generation

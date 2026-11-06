@@ -4,7 +4,7 @@
 
 Tripura8928/dqn-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo (RL) entrenado para jugar al videojuego clásico de Atari Space Invaders en la variante sin saltos de frames (`SpaceInvadersNoFrameskip-v4`). El modelo fue desarrollado por el usuario Tripura8928 utilizando la librería stable-baselines3 y el framework RL Zoo de DLR-RM, una colección de agentes preentrenados y utilidades de entrenamiento para Stable Baselines3.
 
-El agente implementa un algoritmo DQN (Deep Q-Network) con una política convolucional (`CnnPolicy`) que procesa observaciones visuales del juego. Según los datos de entrenamiento publicados, el modelo se entrenó durante un millón de timesteps, con un buffer de repetición de 100000 transiciones, un tamaño de lote de 32 y una tasa de aprendizaje de 1e-4. El repositorio de HuggingFace contiene el checkpoint del modelo, con un tamaño de 0.1 GB.
+El agente implementa un algoritmo DQN (Deep Q-Network) con una política convolucional (`CnnPolicy`) que procesa observaciones visuales del juego. Según los datos de entrenamiento publicados, el modelo se entrenó durante un millón de timesteps, con un buffer de repetición de 100000 transiciones, un tamaño de lote de 32 y una tasa de aprendizaje de 1e-4. El repositorio de Hugging Face contiene el checkpoint del modelo, con un tamaño de 0.1 GB.
 
 Este modelo es relevante como ejemplo práctico de un agente RL preentrenado en un entorno Atari, útil para experimentos de investigación, reproducibilidad de algoritmos o comparación de políticas en el ámbito del aprendizaje por refuerzo.
 
@@ -64,13 +64,13 @@ No se han publicado resultados adicionales (p. ej., MMLU, HumanEval, GSM8K) porq
 
 ## Comparativa con modelos similares
 
-Se han encontrado otros agentes DQN entrenados en el mismo entorno y con el mismo framework en HuggingFace, como `KraTUZen/dqn-SpaceInvadersNoFrameskip-v4` y `Bear-ai/dqn-SpaceInvadersNoFrameskip-v4`. No se dispone de datos de rendimiento ni de hiperparametros de estas alternativas en la informacion consultada.
+Se han encontrado otros agentes DQN entrenados en el mismo entorno y con el mismo framework en Hugging Face, como `KraTUZen/dqn-SpaceInvadersNoFrameskip-v4` y `Bear-ai/dqn-SpaceInvadersNoFrameskip-v4`. No se dispone de datos de rendimiento ni de hiperparametros de estas alternativas en la informacion consultada.
 
 | Modelo | Arquitectura | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Tripura8928/dqn-SpaceInvadersNoFrameskip-v4 | DQN (CnnPolicy) | no disponible | No aplica | 599.50 +/- 229.46 (no verificado) | no disponible | HuggingFace |
-| KraTUZen/dqn-SpaceInvadersNoFrameskip-v4 | DQN (CnnPolicy) | no disponible | No aplica | no disponible | no disponible | HuggingFace |
-| Bear-ai/dqn-SpaceInvadersNoFrameskip-v4 | DQN (CnnPolicy) | no disponible | No aplica | no disponible | no disponible | HuggingFace |
+| Tripura8928/dqn-SpaceInvadersNoFrameskip-v4 | DQN (CnnPolicy) | no disponible | No aplica | 599.50 +/- 229.46 (no verificado) | no disponible | Hugging Face |
+| KraTUZen/dqn-SpaceInvadersNoFrameskip-v4 | DQN (CnnPolicy) | no disponible | No aplica | no disponible | no disponible | Hugging Face |
+| Bear-ai/dqn-SpaceInvadersNoFrameskip-v4 | DQN (CnnPolicy) | no disponible | No aplica | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ Se han encontrado otros agentes DQN entrenados en el mismo entorno y con el mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tripura8928/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/Tripura8928/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

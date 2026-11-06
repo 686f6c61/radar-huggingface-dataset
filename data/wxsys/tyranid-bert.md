@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tyranid-BERT es un encoder bidireccional de 149.509.127 parámetros (etiquetado comercialmente como "164M") derivado de answerdotai/ModernBERT-base y ajustado por el autor wxsys como componente de verificación de código dentro del motor neuro-simbólico Code Oracle. No es un modelo generativo: es un clasificador de texto especializado en evaluar la seguridad de parches de código representados como un DSL de subgrafo linealizado, extraído de AST de Tree-sitter y de componentes fuertemente conexos calculados con el algoritmo de Tarjan. Su pipeline declarado en HuggingFace es text-classification y su propósito es sustituir a agentes de revisión generativa que consumen segundos y producen "ruido" conversacional por un único forward pass determinista.
+Tyranid-BERT es un encoder bidireccional de 149.509.127 parámetros (etiquetado comercialmente como "164M") derivado de answerdotai/ModernBERT-base y ajustado por el autor wxsys como componente de verificación de código dentro del motor neuro-simbólico Code Oracle. No es un modelo generativo: es un clasificador de texto especializado en evaluar la seguridad de parches de código representados como un DSL de subgrafo linealizado, extraído de AST de Tree-sitter y de componentes fuertemente conexos calculados con el algoritmo de Tarjan. Su pipeline declarado en Hugging Face es text-classification y su propósito es sustituir a agentes de revisión generativa que consumen segundos y producen "ruido" conversacional por un único forward pass determinista.
 
 La relevancia del modelo reside en su planteamiento como "sinapsis" de un sistema mayor: mientras el modelo hermano Qwen-Servitor se ocupa de preprocesar pull requests completos (hasta 262k tokens), Tyranid-BERT actúa como un clasificador ultraligero que diagnostica en menos de 20 ms sobre CPU convencional. Empaquetado en ONNX con cuantización dinámica INT8 (151 MB), evita la dependencia de PyTorch en producción y apunta a entornos de CI/CD donde la latencia y el coste de cómputo son críticos.
 
@@ -70,9 +70,9 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas frente a otr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wxsys/tyranid-bert | 149,5 M | 8.192 | Clasificacion de riesgo de parches | Apache 2.0 | HuggingFace (ONNX + safetensors) |
-| answerdotai/ModernBERT-base | ~149 M | 8.192 | Encoder generalista | Apache 2.0 | HuggingFace (modelo base) |
-| wxsys/qwen-servitor | no disponible | 262k (segun la model card) | Analisis de pull requests completos | no disponible | HuggingFace (modelo hermano) |
+| wxsys/tyranid-bert | 149,5 M | 8.192 | Clasificacion de riesgo de parches | Apache 2.0 | Hugging Face (ONNX + safetensors) |
+| answerdotai/ModernBERT-base | ~149 M | 8.192 | Encoder generalista | Apache 2.0 | Hugging Face (modelo base) |
+| wxsys/qwen-servitor | no disponible | 262k (segun la model card) | Analisis de pull requests completos | no disponible | Hugging Face (modelo hermano) |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas frente a otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wxsys/tyranid-bert
+- Hugging Face: https://huggingface.co/wxsys/tyranid-bert
 - Repositorio del motor Code Oracle: https://github.com/wahyuzero/code-oracle
 - Modelo hermano Qwen-Servitor: https://huggingface.co/wxsys/qwen-servitor
 - Modelo base ModernBERT: https://huggingface.co/answerdotai/ModernBERT-base

@@ -84,8 +84,8 @@ No se dispone de informacion sobre codificadores tactiles comparables en la docu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JensenYuan/DexTacWAM_multi_finger_tactile_encoder
+- Hugging Face: https://huggingface.co/JensenYuan/DexTacWAM_multi_finger_tactile_encoder
 - Repositorio de codigo: https://github.com/dextacwam/DexTacWAM
 - Paper: arXiv:2609.24976 (DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation)
 - Configuracion de entrenamiento: `configs/stage1_visual_vae_adapter.yaml` en el repositorio de codigo
-- Metricas de validacion: `best_metrics.json` en el repositorio de HuggingFace
+- Metricas de validacion: `best_metrics.json` en el repositorio de Hugging Face

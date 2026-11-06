@@ -64,4 +64,4 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- [HuggingFace: changshirley/blip-classification](https://huggingface.co/changshirley/blip-classification)
+- [Hugging Face: changshirley/blip-classification](https://huggingface.co/changshirley/blip-classification)

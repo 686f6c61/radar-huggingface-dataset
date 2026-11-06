@@ -83,8 +83,8 @@ No se dispone de datos de rendimiento específicos para este fine-tune, por lo q
 
 ## Enlaces
 
-- HuggingFace del modelo: [HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen6](https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen6)
-- Modelo base en HuggingFace: [unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
+- Hugging Face del modelo: [HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen6](https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10-run2-gen6)
+- Modelo base en Hugging Face: [unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - Repositorio de Unsloth: [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
 - Informe técnico de Qwen2.5: [arXiv:2412.15115](https://arxiv.org/pdf/2412.15115v2)
 - Guía de despliegue de Qwen 2.5 en Ollama: [https://ai-ollama.github.io/qwen-2-5.html](https://ai-ollama.github.io/qwen-2-5.html)

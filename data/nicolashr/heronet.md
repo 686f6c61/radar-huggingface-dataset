@@ -67,8 +67,8 @@ Las imágenes de validación son sintéticas (recortes del split de test sobre f
 
 | Modelo | Tipo | Entrada | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HeroNet v2 (detector) | YOLO11n | 320 px | 11 personajes | AGPL-3.0 | HuggingFace |
-| HeroNet v2 (clasificador) | YOLO11n-cls | 224 px | 9 posiciones | AGPL-3.0 | HuggingFace |
+| HeroNet v2 (detector) | YOLO11n | 320 px | 11 personajes | AGPL-3.0 | Hugging Face |
+| HeroNet v2 (clasificador) | YOLO11n-cls | 224 px | 9 posiciones | AGPL-3.0 | Hugging Face |
 | YOLO11n base (Ultralytics) | Detección general | configurable | 80 (COCO) | AGPL-3.0 | Ultralytics |
 | YOLO11n-cls base (Ultralytics) | Clasificación general | configurable | ImageNet | AGPL-3.0 | Ultralytics |
 
@@ -87,7 +87,7 @@ No se dispone de información sobre otros modelos especializados en figuras Play
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicolashr/heronet
+- Modelo en Hugging Face: https://huggingface.co/nicolashr/heronet
 - Dataset de entrenamiento: https://huggingface.co/datasets/nicolashr/playmobil-dc-poses
 - Repositorio del proyecto: https://github.com/nicolascortegoso/heronet
 - Ultralytics YOLO11: https://github.com/ultralytics/ultralytics

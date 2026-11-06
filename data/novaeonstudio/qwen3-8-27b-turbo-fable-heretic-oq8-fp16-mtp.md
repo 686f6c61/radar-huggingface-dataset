@@ -103,7 +103,7 @@ La información disponible solo permite comparar ARC-Challenge y clase de tamañ
 
 | Modelo | Parámetros | Contexto | ARC-C (mxfp8) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-TURBO-Fable-Heretic-oQ8-fp16-mtp (esta build) | 27,8 mil millones (denso) | 262.144 | No medido en este repack; 0,735 en el base | apache-2.0 | HuggingFace, formato MLX |
+| Qwen3.8-27B-TURBO-Fable-Heretic-oQ8-fp16-mtp (esta build) | 27,8 mil millones (denso) | 262.144 | No medido en este repack; 0,735 en el base | apache-2.0 | Hugging Face, formato MLX |
 | Qwen3.6-27B | no disponible | no disponible | 0,647 | no disponible | no disponible |
 | Qwen3.8-27B | no disponible | no disponible | 0,591 | no disponible | no disponible |
 | Qwen3.6-35B-A3B | no disponible (MoE, según nomenclatura) | no disponible | 0,581 | no disponible | no disponible |
@@ -125,7 +125,7 @@ La información disponible solo permite comparar ARC-Challenge y clase de tamañ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NovaeonStudio/Qwen3.8-27B-TURBO-Fable-Heretic-oQ8-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/NovaeonStudio/Qwen3.8-27B-TURBO-Fable-Heretic-oQ8-fp16-mtp
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - oMLX (motor de inferencia): https://github.com/jundot/omlx
 - Heretic (descensura mediante ARA): https://github.com/p-e-w/heretic

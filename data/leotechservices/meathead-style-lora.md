@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LeoTechServices/meathead-style-lora | LoRA de estilo sobre FLUX.1-dev | No disponible (repo de 0,5 GB) | Depende de FLUX.1-dev; sin datos de resolucion en la model card | Sin benchmarks publicados | other (licencia de FLUX.1-dev) | HuggingFace, 0 descargas |
-| FLUX.1-dev sin adaptador (black-forest-labs) | Modelo de difusion completo | 12 000 millones (transformer) | Hasta aproximadamente 1 megapixel, dimensiones multiplos de 16 | Modelo de referencia de la familia FLUX | Licencia FLUX.1-dev (no comercial en su configuracion dev) | HuggingFace, ampliamente adoptado |
-| LoRA de pixel art sobre SDXL (categoria equivalente) | LoRA de estilo sobre SDXL | No disponible | 1024x1024 tipico de SDXL | Depende del adaptador concreto; no hay datos comparables publicados | Variable segun autor, frecuentemente CreativeML Open RAIL++ | Multiples repositorios en HuggingFace |
+| LeoTechServices/meathead-style-lora | LoRA de estilo sobre FLUX.1-dev | No disponible (repo de 0,5 GB) | Depende de FLUX.1-dev; sin datos de resolucion en la model card | Sin benchmarks publicados | other (licencia de FLUX.1-dev) | Hugging Face, 0 descargas |
+| FLUX.1-dev sin adaptador (black-forest-labs) | Modelo de difusion completo | 12 000 millones (transformer) | Hasta aproximadamente 1 megapixel, dimensiones multiplos de 16 | Modelo de referencia de la familia FLUX | Licencia FLUX.1-dev (no comercial en su configuracion dev) | Hugging Face, ampliamente adoptado |
+| LoRA de pixel art sobre SDXL (categoria equivalente) | LoRA de estilo sobre SDXL | No disponible | 1024x1024 tipico de SDXL | Depende del adaptador concreto; no hay datos comparables publicados | Variable segun autor, frecuentemente CreativeML Open RAIL++ | Multiples repositorios en Hugging Face |
 | Entrenamiento propio de un LoRA con DreamBooth | Adaptador personalizado | No disponible | Depende del modelo base elegido | Depende del dataset y de los hiperparametros | Depende del modelo base | Requiere recursos propios de entrenamiento |
 
 La comparacion cuantitativa con alternativas concretas no esta disponible: no existen benchmarks publicados para este adaptador ni se identifican en la informacion proporcionada otros adaptadores equivalentes con los que contrastarlo.
@@ -92,7 +92,7 @@ La comparacion cuantitativa con alternativas concretas no esta disponible: no ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeoTechServices/meathead-style-lora
+- Modelo en Hugging Face: https://huggingface.co/LeoTechServices/meathead-style-lora
 - Archivos y pesos del adaptador: https://huggingface.co/LeoTechServices/meathead-style-lora/tree/main
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Licencia del modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md

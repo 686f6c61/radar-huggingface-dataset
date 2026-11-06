@@ -110,6 +110,6 @@ No disponible la comparacion con otros modelos de la misma categoria con los dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/algerian-nlp/DZAIR-ONNX-INT8
-- Modelo base en HuggingFace: https://huggingface.co/algerian-nlp/DZAIR
+- Modelo en Hugging Face: https://huggingface.co/algerian-nlp/DZAIR-ONNX-INT8
+- Modelo base en Hugging Face: https://huggingface.co/algerian-nlp/DZAIR
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (solo resultados no relacionados sobre horarios de oracion), por lo que no hay enlaces adicionales a papers, blogs, repositorios o demos que se puedan incluir. El repositorio menciona un script de verificacion `tools/quantize_onnx.py` sin URL publica disponible.

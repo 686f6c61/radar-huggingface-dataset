@@ -94,7 +94,7 @@ No se dispone de comparativas de calidad frente a modelos de tamano similar en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prabanta-dev/gemma-4-E2B-it-JNS
+- Modelo en Hugging Face: https://huggingface.co/prabanta-dev/gemma-4-E2B-it-JNS
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Modelo base (variante): https://huggingface.co/google/gemma-4-E2B
 - GGUF de origen: https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF

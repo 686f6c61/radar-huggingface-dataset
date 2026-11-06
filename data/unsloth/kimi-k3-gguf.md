@@ -75,7 +75,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- [HuggingFace: unsloth/Kimi-K3-GGUF](https://huggingface.co/unsloth/Kimi-K3-GGUF)
+- [Hugging Face: unsloth/Kimi-K3-GGUF](https://huggingface.co/unsloth/Kimi-K3-GGUF)
 - [Guía de Unsloth para Kimi K3](https://unsloth.ai/docs/models/kimi-k3)
 - [Blog: 1-Bit Kimi K3 GGUF - Unsloth](https://essamamdani.com/blog/1-bit-kimi-k3-gguf-unsloth-local-inference-guide)
 - [Artículo: How to Run Kimi Locally](https://dexity.com/intel/run-kimi-locally-2026)

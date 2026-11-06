@@ -28,7 +28,7 @@ Como contrapartida, el repo no incluye informacion sobre arquitectura interna, l
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo: no se detallan numero de capas, dimensiones ocultas, cabezas de atencion, tipo de atencion ni si incorpora algun mecanismo alternativo (SSM, atencion lineal, decodificacion especulativa). Los tags de HuggingFace lo clasifican como `llama`, `simllama`, `slm` y `400m`, lo que apunta a un transformer decoder-only de la familia LLaMA, pero se trata de una inferencia a partir de etiquetas, no de un dato confirmado en la documentacion facilitada. Tampoco se indica la longitud de contexto soportada ni el tokenizador empleado.
+La informacion disponible no describe la arquitectura interna del modelo: no se detallan numero de capas, dimensiones ocultas, cabezas de atencion, tipo de atencion ni si incorpora algun mecanismo alternativo (SSM, atencion lineal, decodificacion especulativa). Los tags de Hugging Face lo clasifican como `llama`, `simllama`, `slm` y `400m`, lo que apunta a un transformer decoder-only de la familia LLaMA, pero se trata de una inferencia a partir de etiquetas, no de un dato confirmado en la documentacion facilitada. Tampoco se indica la longitud de contexto soportada ni el tokenizador empleado.
 
 En cuanto a los datos, la model card declara el uso de los siguientes conjuntos: `HuggingFaceTB/smol-smoltalk`, `exnivo/tinybrain-instruct-sft-200k`, `OpenAssistant/oasst2`, `OpenAssistant/oasst1`, `drwlf/medra-thinking-768`, `togethercomputer/llama-instruct`, `interview-eval/MATH` y `RLAIF/mbpp`. Se trata de una mezcla tipica de SFT conversacional (SmolTalk, OASST, TinyBrain, llama-instruct) complementada con datos de matematicas (`interview-eval/MATH`) y de generacion de codigo (`RLAIF/mbpp`). No se especifica el numero de tokens de entrenamiento, la proporcion de cada dataset, ni si hubo fases posteriores de RLHF, DPO o RLAIF mas alla de lo que sugieren los propios nombres de los datasets. Tampoco se documenta ninguna innovacion tecnica en el proceso de entrenamiento.
 
@@ -42,7 +42,7 @@ En cuanto a los datos, la model card declara el uso de los siguientes conjuntos:
 - Capacidades multilingues: no, el modelo declara unicamente `en` (ingles).
 - Capacidades de vision, audio o multimodalidad: no disponibles.
 - Modo "thinking" explicito: no documentado.
-- El tag `endpoints_compatible` indica que el repo es compatible con el despliegue mediante Inference Endpoints de HuggingFace.
+- El tag `endpoints_compatible` indica que el repo es compatible con el despliegue mediante Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 

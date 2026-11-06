@@ -99,5 +99,5 @@ No se dispone de otros modelos de la misma categoría en el ecosistema abierto.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dhanr4j/bitvoice-dictation
+- Repositorio Hugging Face: https://huggingface.co/dhanr4j/bitvoice-dictation
 - No se han encontrado otros enlaces (paper, blog, código fuente) en la búsqueda web.

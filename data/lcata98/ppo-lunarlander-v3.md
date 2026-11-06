@@ -41,7 +41,7 @@ No se dispone de informacion sobre hiperparametros concretos (learning rate, `n_
 
 ## Casos de uso
 
-- Docencia de aprendizaje por refuerzo: usar el agente como ejemplo resuelto de un pipeline PPO completo (entrenamiento, evaluacion y publicacion en HuggingFace) en un curso o taller.
+- Docencia de aprendizaje por refuerzo: usar el agente como ejemplo resuelto de un pipeline PPO completo (entrenamiento, evaluacion y publicacion en Hugging Face) en un curso o taller.
 - Reproduccion de experimentos: cargar el modelo con Stable-Baselines3 y evaluar el `mean_reward` declarado para contrastar la reproducibilidad de un entrenamiento PPO sobre `LunarLander-v3`.
 - Baseline en investigacion comparativa: emplear el agente como referencia de rendimiento al probar variantes de PPO (por ejemplo, cambios en GAE, clipping o normalizacion) sobre el mismo entorno.
 - Pruebas de integracion de `huggingface_sb3`: validar el flujo de descarga, carga y ejecucion de agentes alojados en el Hub dentro de una infraestructura propia de RL.
@@ -70,9 +70,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lcata98/ppo-LunarLander-v3 | PPO | LunarLander-v3 | mean_reward 276.14 +/- 22.64 (no verificado) | no disponible | HuggingFace Hub |
+| lcata98/ppo-LunarLander-v3 | PPO | LunarLander-v3 | mean_reward 276.14 +/- 22.64 (no verificado) | no disponible | Hugging Face Hub |
 | Agentes PPO de referencia de Stable-Baselines3 RL Zoo | PPO | LunarLander-v3 | no disponible en esta ficha | MIT (RL Zoo) | GitHub DLR-RM/rl-baselines3-zoo |
-| Agentes A2C/DQN para LunarLander | A2C / DQN | LunarLander-v3 | no disponible en esta ficha | no disponible | HuggingFace Hub / RL Zoo |
+| Agentes A2C/DQN para LunarLander | A2C / DQN | LunarLander-v3 | no disponible en esta ficha | no disponible | Hugging Face Hub / RL Zoo |
 
 No se dispone de datos comparativos de rendimiento publicados en la informacion proporcionada para los modelos alternativos; la comparacion se limita a algoritmo, entorno y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos comparativos de rendimiento publicados en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lcata98/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/lcata98/ppo-LunarLander-v3
 - Stable-Baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - Stable-Baselines3 RL Zoo (referencia de agentes entrenados): https://github.com/DLR-RM/rl-baselines3-zoo
 - Integracion `huggingface_sb3`: https://github.com/huggingface/huggingface_sb3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cwaud/tournament-exp-s1-01fdf13f-f708-4200-9cbc-715df3c182f1-5Exp15ffcd7318a8812c` es un checkpoint publicado en HuggingFace por el usuario `cwaud`. El identificador, con prefijo `tournament-exp`, sugiere que se trata del resultado de un experimento de entrenamiento o evaluacion automatizada (un "torneo" de variantes), aunque esta informacion no aparece documentada en la ficha del repositorio y no puede confirmarse.
+El modelo `cwaud/tournament-exp-s1-01fdf13f-f708-4200-9cbc-715df3c182f1-5Exp15ffcd7318a8812c` es un checkpoint publicado en Hugging Face por el usuario `cwaud`. El identificador, con prefijo `tournament-exp`, sugiere que se trata del resultado de un experimento de entrenamiento o evaluacion automatizada (un "torneo" de variantes), aunque esta informacion no aparece documentada en la ficha del repositorio y no puede confirmarse.
 
 Se trata de un modelo de aproximadamente 2.516.756.480 parametros (unos 2,5 mil millones), segun los datos reales extraidos de los pesos en formato safetensors. El tag `llama` indica que la arquitectura declarada pertenece a la familia Llama, aunque no se especifica la variante concreta ni el numero de capas, dimensiones o cabezas de atencion.
 
@@ -99,7 +99,7 @@ La comparacion con estos modelos solo puede hacerse a nivel de tamano y disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-01fdf13f-f708-4200-9cbc-715df3c182f1-5Exp15ffcd7318a8812c
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-01fdf13f-f708-4200-9cbc-715df3c182f1-5Exp15ffcd7318a8812c
 - Paper: no disponible
 - Blog o documentacion: no disponible
 - Repositorio de codigo: no disponible

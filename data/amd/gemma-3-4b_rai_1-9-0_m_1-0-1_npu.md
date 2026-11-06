@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `amd/gemma-3-4b_rai_1.9.0_m_1.0.1_npu` es una distribucion del modelo Gemma 3 de 4 mil millones de parametros, publicada por AMD en HuggingFace y optimizada para ejecutarse en la NPU (unidad de procesamiento neuronal) de los procesadores AMD Ryzen AI mediante el stack Ryzen AI (RAI). El identificador indica que se trata de una compilacion ONNX preparada para la version 1.9.0 del runtime Ryzen AI y la version 1.0.1 del modelo de despliegue en NPU. No es un modelo entrenado desde cero por AMD, sino una adaptacion del Gemma 3 4B de Google para inferencia acelerada en hardware de PC con IA integrada.
+El modelo `amd/gemma-3-4b_rai_1.9.0_m_1.0.1_npu` es una distribucion del modelo Gemma 3 de 4 mil millones de parametros, publicada por AMD en Hugging Face y optimizada para ejecutarse en la NPU (unidad de procesamiento neuronal) de los procesadores AMD Ryzen AI mediante el stack Ryzen AI (RAI). El identificador indica que se trata de una compilacion ONNX preparada para la version 1.9.0 del runtime Ryzen AI y la version 1.0.1 del modelo de despliegue en NPU. No es un modelo entrenado desde cero por AMD, sino una adaptacion del Gemma 3 4B de Google para inferencia acelerada en hardware de PC con IA integrada.
 
 La relevancia de esta ficha radica en que ejemplifica la tendencia de llevar modelos generativos de tamano medio a NPUs de consumo, donde el consumo energetico y la latencia son criticos. Al estar en formato ONNX y dirigido a Ryzen AI, el modelo no se ejecuta con los runners habituales (llama.cpp, vLLM) sino con el toolchain especifico de AMD, lo que condiciona tanto el despliegue como el rendimiento.
 
@@ -63,15 +63,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / destino | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/gemma-3-4b_rai_1.9.0_m_1.0.1_npu | 4B (aprox.) | no disponible | ONNX para NPU Ryzen AI | Gemma | Gated en HuggingFace |
-| Gemma 3 4B (Google) | 4B | no disponible en esta ficha | safetensors, GGUF, etc. | Gemma | Publico en HuggingFace |
+| amd/gemma-3-4b_rai_1.9.0_m_1.0.1_npu | 4B (aprox.) | no disponible | ONNX para NPU Ryzen AI | Gemma | Gated en Hugging Face |
+| Gemma 3 4B (Google) | 4B | no disponible en esta ficha | safetensors, GGUF, etc. | Gemma | Publico en Hugging Face |
 | Modelos ONNX para NPU de otros fabricantes | no disponible | no disponible | ONNX para NPU | variable | variable |
 
 La comparativa directa con alternativas de la misma categoria (modelos de 4B para inferencia en el borde) no puede completarse con datos verificables en la informacion proporcionada. La diferencia principal frente al Gemma 3 4B original es el empaquetado ONNX para NPU y el runtime Ryzen AI, no el modelo en si.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y el uso inmediato.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y el uso inmediato.
 - Idioma: solo se declara ingles (`en`); el rendimiento en castellano no esta garantizado ni documentado.
 - Dependencia de hardware: el artefacto esta atado a la NPU Ryzen AI y al runtime 1.9.0; no es portable a GPU NVIDIA, Apple Silicon ni CPU generica sin reconversion.
 - Falta de documentacion: no hay informacion publica sobre cuantizacion, contexto efectivo, benchmarks ni condiciones de uso comercial mas alla de la licencia Gemma.
@@ -82,7 +82,7 @@ La comparativa directa con alternativas de la misma categoria (modelos de 4B par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/gemma-3-4b_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/gemma-3-4b_rai_1.9.0_m_1.0.1_npu
 - Documentacion de Ryzen AI: no disponible en la informacion proporcionada
 - Paper de Gemma 3: no disponible en la informacion proporcionada
 - Repositorio o blog de AMD sobre el modelo: no disponible en la informacion proporcionada

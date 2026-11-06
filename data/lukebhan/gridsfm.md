@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lukebhan/gridsfm` es un repositorio de modelo publicado en HuggingFace por el usuario lukebhan. La unica informacion verificable disponible es su identificador, su licencia MIT y sus marcas temporales de creacion y actualizacion (16 de septiembre de 2026), ademas de un recuento de 0 descargas y 0 likes en el momento de la consulta.
+`lukebhan/gridsfm` es un repositorio de modelo publicado en Hugging Face por el usuario lukebhan. La unica informacion verificable disponible es su identificador, su licencia MIT y sus marcas temporales de creacion y actualizacion (16 de septiembre de 2026), ademas de un recuento de 0 descargas y 0 likes en el momento de la consulta.
 
 La model card del repositorio no contiene descripcion alguna: se limita a la declaracion de licencia (`license: mit`) sin ningun otro campo. No se especifica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos. Tampoco se declara un pipeline de inferencia asociado.
 
@@ -81,6 +81,6 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lukebhan/gridsfm
+- Hugging Face: https://huggingface.co/lukebhan/gridsfm
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados recuperados no guardan relacion con el modelo.

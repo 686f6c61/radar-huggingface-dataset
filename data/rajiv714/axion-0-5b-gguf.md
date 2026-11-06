@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rajiv714/Axion-0.5B-GGUF es un modelo de lenguaje pequeño, con 494 millones de parámetros, publicado en formato GGUF para su uso con herramientas como llama.cpp u Ollama. El autor, Rajiv714, lo presenta como un modelo base conversacional, aunque la ficha de HuggingFace no incluye detalles sobre su arquitectura, entrenamiento o licencia. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo.
+Rajiv714/Axion-0.5B-GGUF es un modelo de lenguaje pequeño, con 494 millones de parámetros, publicado en formato GGUF para su uso con herramientas como llama.cpp u Ollama. El autor, Rajiv714, lo presenta como un modelo base conversacional, aunque la ficha de Hugging Face no incluye detalles sobre su arquitectura, entrenamiento o licencia. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 La relevancia de este modelo radica en su tamaño reducido, que lo hace apto para entornos con recursos limitados, pero la ausencia de documentación técnica y de resultados de evaluación limita su utilidad práctica para desarrolladores e investigadores que necesiten comparar o validar su rendimiento. Actualmente, la información pública disponible es insuficiente para determinar sus capacidades reales o su idoneidad para tareas específicas.
 
@@ -26,7 +26,7 @@ No se ha publicado informacion sobre la arquitectura del modelo (si es transform
 ## Capacidades
 
 - No se dispone de informacion detallada sobre las capacidades del modelo.
-- El tag "conversational" en HuggingFace sugiere que esta orientado a tareas de chat o dialogo, pero no hay ejemplos ni documentacion que lo confirmen.
+- El tag "conversational" en Hugging Face sugiere que esta orientado a tareas de chat o dialogo, pero no hay ejemplos ni documentacion que lo confirmen.
 - No se ha verificado soporte para tool calling, agentes, razonamiento multi-paso, vision, audio u otras funcionalidades avanzadas.
 - El modelo declara soporte exclusivo para ingles, sin mencionar otros idiomas.
 
@@ -51,7 +51,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que se requiere aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido: el repositorio es gated, por lo que se requiere aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Documentacion insuficiente: no se ha publicado informacion sobre arquitectura, entrenamiento, licencia o capacidades, lo que dificulta su evaluacion y uso responsable.
 - Idioma limitado: solo se declara soporte para ingles.
 - Tamano reducido: con 0.5B parametros, es probable que su rendimiento en tareas complejas sea inferior al de modelos mas grandes, aunque no hay datos que lo confirmen.
@@ -60,7 +60,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/Rajiv714/Axion-0.5B-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/Rajiv714/Axion-0.5B-GGUF
 - Modelo base (safetensors): https://huggingface.co/Rajiv714/Axion-0.5B
 
 No se han encontrado papers, blogs, demos u otros recursos adicionales en la busqueda web.

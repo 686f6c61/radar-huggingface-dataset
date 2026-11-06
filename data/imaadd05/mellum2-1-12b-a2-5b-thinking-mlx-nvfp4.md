@@ -71,10 +71,10 @@ Notas metodologicas de la model card: la KL es divergencia teacher-forced respec
 
 | Modelo | Parametros | Contexto | HumanEval+ | Peso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este NVFP4 | 12,15 B totales / 2,5 B activos | no disponible (probado a 16K) | 145 (88,4%) | 6,84 GB | apache-2.0 | HuggingFace, MLX |
-| MXFP4 (randmaru) | 12,15 B / 2,5 B | no disponible | 144 (87,8%) | 6,46 GB | apache-2.0 | HuggingFace, MLX |
-| 6-bit (imaadd05) | 12,15 B / 2,5 B | no disponible | 146 (164 tareas) | 9,87 GB | apache-2.0 | HuggingFace, MLX |
-| BF16 original (JetBrains) | 12,15 B / 2,5 B | no disponible | 153 (93,3%) | 24,3 GB | apache-2.0 | HuggingFace |
+| Este NVFP4 | 12,15 B totales / 2,5 B activos | no disponible (probado a 16K) | 145 (88,4%) | 6,84 GB | apache-2.0 | Hugging Face, MLX |
+| MXFP4 (randmaru) | 12,15 B / 2,5 B | no disponible | 144 (87,8%) | 6,46 GB | apache-2.0 | Hugging Face, MLX |
+| 6-bit (imaadd05) | 12,15 B / 2,5 B | no disponible | 146 (164 tareas) | 9,87 GB | apache-2.0 | Hugging Face, MLX |
+| BF16 original (JetBrains) | 12,15 B / 2,5 B | no disponible | 153 (93,3%) | 24,3 GB | apache-2.0 | Hugging Face |
 
 Comparativa con modelos de otros fabricantes: no disponible en la informacion proporcionada (la busqueda web no devolvio resultados relevantes; solo enlaces a Apple TV, sin relacion con el modelo).
 
@@ -89,7 +89,7 @@ Comparativa con modelos de otros fabricantes: no disponible en la informacion pr
 - Contexto largo en maquinas de 16 GB: el pico de 7,57 GB deja poco margen con el sistema operativo y otras aplicaciones en ejecucion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/imaadd05/Mellum2.1-12B-A2.5B-Thinking-mlx-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/imaadd05/Mellum2.1-12B-A2.5B-Thinking-mlx-nvfp4
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Repositorio con codigo, resultados y write-up: https://github.com/imaddde867/mellum-mlx
 - Plan de cuantizacion y alternativas fallidas: https://github.com/imaddde867/mellum-mlx/blob/main/docs/RESULTS.md

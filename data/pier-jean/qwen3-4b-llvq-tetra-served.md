@@ -104,8 +104,8 @@ Frente a IQ2_XXS, este formato gana 23,59 puntos de MMLU con solo 0,25 bits más
 
 ## Enlaces
 
-- HuggingFace (repositorio served): https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra-served
-- HuggingFace (repositorio sealed, referencia de benchmarks): https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra-sealed
+- Hugging Face (repositorio served): https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra-served
+- Hugging Face (repositorio sealed, referencia de benchmarks): https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra-sealed
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio del motor LLVQ: https://github.com/pjmalandrino/llvq
 - Paper referenciado: arXiv:2603.11021

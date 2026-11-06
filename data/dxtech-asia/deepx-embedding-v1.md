@@ -77,10 +77,10 @@ Además, el autor reporta métricas adicionales en el mismo dataset: MRR@10 = 0,
 
 | Modelo | Parámetros | Contexto | nDCG@10 (Zalo Legal) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| intfloat/multilingual-e5-large | 560M | 512 tokens | 0,6660 | MIT | HuggingFace |
-| mainguyen9/vietlegal-e5 | 560M | 512 tokens | 0,7310 | MIT | HuggingFace |
-| mainguyen9/vietlegal-harrier-0.6b | 600M | No especificado | 0,7813 | MIT | HuggingFace |
-| **DeepX Embedding v1.0** | **772M** | **8K validado, 128K soportado** | **0,8162** | **Apache 2.0** | **HuggingFace** |
+| intfloat/multilingual-e5-large | 560M | 512 tokens | 0,6660 | MIT | Hugging Face |
+| mainguyen9/vietlegal-e5 | 560M | 512 tokens | 0,7310 | MIT | Hugging Face |
+| mainguyen9/vietlegal-harrier-0.6b | 600M | No especificado | 0,7813 | MIT | Hugging Face |
+| **DeepX Embedding v1.0** | **772M** | **8K validado, 128K soportado** | **0,8162** | **Apache 2.0** | **Hugging Face** |
 
 DeepX Embedding v1.0 supera a los modelos comparados en el benchmark legal vietnamita, con una ventaja de +4,5% sobre el SOTA anterior. Su principal diferencia es la atención lineal y el soporte de secuencias largas, que no está disponible en los modelos e5 o harrier. La licencia Apache 2.0 es permisiva para uso comercial, similar a MIT.
 
@@ -96,6 +96,6 @@ DeepX Embedding v1.0 supera a los modelos comparados en el benchmark legal vietn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dxtech-asia/deepx-embedding-v1
+- Modelo en Hugging Face: https://huggingface.co/dxtech-asia/deepx-embedding-v1
 - Blog técnico: https://dxtech.jp/deepx-embedding-v1-0-setting-a-new-sota-in-vietnamese-legal-retrieval/
 - Repositorio GitHub: https://github.com/dx-tech-ai/deepx-embed

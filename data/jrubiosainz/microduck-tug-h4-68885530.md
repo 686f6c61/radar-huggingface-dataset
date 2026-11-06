@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Enfoque | Puntuación (cm) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jrubiosainz/microduck-tug-h4-68885530` (este) | ONNX + tabla de búsqueda | Replay *in-sample* de 5 seeds | 167,24 (media nativa) | Apache-2.0 solo heredada; sin licencia propia | HuggingFace |
-| `jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429` | ONNX | Política base sin tabla | 166,69 | Apache-2.0 | HuggingFace |
-| `Unique007/microduck-tug-dat-v3` | Política de simulación | Fuente de las grabaciones de seeds 1, 2 y 4 | no disponible | no disponible | HuggingFace |
-| `greecree/microduck-tug-of-war-tug-super-v8` | Política de simulación | Fuente de la grabación del seed 3 | no disponible | no disponible | HuggingFace |
+| `jrubiosainz/microduck-tug-h4-68885530` (este) | ONNX + tabla de búsqueda | Replay *in-sample* de 5 seeds | 167,24 (media nativa) | Apache-2.0 solo heredada; sin licencia propia | Hugging Face |
+| `jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429` | ONNX | Política base sin tabla | 166,69 | Apache-2.0 | Hugging Face |
+| `Unique007/microduck-tug-dat-v3` | Política de simulación | Fuente de las grabaciones de seeds 1, 2 y 4 | no disponible | no disponible | Hugging Face |
+| `greecree/microduck-tug-of-war-tug-super-v8` | Política de simulación | Fuente de la grabación del seed 3 | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-tug-h4-68885530
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-tug-h4-68885530
 - Modelo base (revisión fijada): https://huggingface.co/jrubiosainz/microduck-tug-quicksilver-v14-h2-63aab429/tree/d8ec37ed882a33231aa8da0da07b75cb7e21608b
 - Fuente de grabaciones seeds 1, 2 y 4: https://huggingface.co/Unique007/microduck-tug-dat-v3/tree/6e4b75f8db0fa8ef23b61a7d798ab5dac9aabe82
 - Fuente de grabación seed 3: https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v8/tree/af68686876537cfcfea691126d108fb7ba585fe9

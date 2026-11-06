@@ -75,7 +75,7 @@ La principal diferencia entre estas versiones es el método de cuantización y e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/gemma-3-4b-it-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/gemma-3-4b-it-mlx-4Bit
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Conversión alternativa de mlx-community: https://huggingface.co/mlx-community/gemma-3-4b-it-4bit
 - Versión QAT de mlx-community: https://huggingface.co/mlx-community/gemma-3-4b-it-qat-4bit

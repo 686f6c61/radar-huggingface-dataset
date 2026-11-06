@@ -91,7 +91,7 @@ La comparativa disponible es limitada: el autor solo aporta el dato de que el mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/classicwilly/p31-qwen-v2-gguf
+- Hugging Face: https://huggingface.co/classicwilly/p31-qwen-v2-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Unsloth: https://github.com/unslothai/unsloth
 - llama.cpp: https://github.com/ggml-org/llama.cpp

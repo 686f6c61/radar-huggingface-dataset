@@ -96,7 +96,7 @@ No se dispone de datos comparativos con otras familias de ASR (por ejemplo, alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smajji/nemotron-hinglish-v3
+- Modelo en Hugging Face: https://huggingface.co/smajji/nemotron-hinglish-v3
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Toolkit NVIDIA NeMo (necesario para cargar el checkpoint .nemo): https://github.com/NVIDIA/NeMo
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos correspondian a mapas de los Balcanes), por lo que no se pueden anadir papers, blogs ni demos adicionales.

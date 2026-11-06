@@ -74,7 +74,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (~30
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Alineacion de seguridad | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OS-Software/gemma-4-31B-it-qat-heretic-japanese-imatrix-GGUF | ~30,7B | Hasta 256K (familia) | apache-2.0 | GGUF | Reducida (heretic/abliterated) | Publico en HuggingFace, 0 descargas |
+| OS-Software/gemma-4-31B-it-qat-heretic-japanese-imatrix-GGUF | ~30,7B | Hasta 256K (familia) | apache-2.0 | GGUF | Reducida (heretic/abliterated) | Publico en Hugging Face, 0 descargas |
 | google/gemma-4-31B-it (base) | ~30,7B | Hasta 256K | apache-2.0 | safetensors, GGUF, w4a16, wNa8o8 | Estandar de Google | Publico, con soporte oficial |
 | OS-Software/gemma-4-31B-it-qat-q4_0-unquantized-uncensored-heretic (parent) | ~30,7B | Hasta 256K | apache-2.0 | Sin cuantizar (Q4_0) | Reducida | Publico |
 | google/gemma-4-26B-A4B (variante MoE de la familia) | 26B totales, 4B activos | Hasta 256K | apache-2.0 | Multiples | Estandar de Google | Publico |
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguna de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OS-Software/gemma-4-31B-it-qat-heretic-japanese-imatrix-GGUF
+- Modelo en Hugging Face: https://huggingface.co/OS-Software/gemma-4-31B-it-qat-heretic-japanese-imatrix-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Modelo padre: https://huggingface.co/OS-Software/gemma-4-31B-it-qat-q4_0-unquantized-uncensored-heretic
 - Coleccion oficial Gemma 4 QAT Q4_0: https://huggingface.co/collections/google/gemma-4-qat-q4-0
@@ -107,4 +107,4 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguna de est
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Proyecto Heretic (p-e-w): https://github.com/p-e-w
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los presentes en la model card y en los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los presentes en la model card y en los metadatos de Hugging Face.

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto / condicionamiento | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/rfdiffusion-active-site | 60,88 M | MSA 256, pair 128, 50 timesteps | Scaffolding de sitio activo | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/rfdiffusion-base | 59,879 M (según tabla del autor) | MSA 256, pair 128, 50 timesteps | Generación *de novo* y scaffolding de motivos | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/rfdiffusion-complex-base | 59,879 M (según tabla del autor) | MSA 256, pair 128, 50 timesteps | Diseño de complejos y binders | AGPL-3.0 | HuggingFace (oteam) |
+| oteam/rfdiffusion-active-site | 60,88 M | MSA 256, pair 128, 50 timesteps | Scaffolding de sitio activo | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/rfdiffusion-base | 59,879 M (según tabla del autor) | MSA 256, pair 128, 50 timesteps | Generación *de novo* y scaffolding de motivos | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/rfdiffusion-complex-base | 59,879 M (según tabla del autor) | MSA 256, pair 128, 50 timesteps | Diseño de complejos y binders | AGPL-3.0 | Hugging Face (oteam) |
 | RFdiffusion oficial (RosettaCommons) | No disponible en la información | No disponible | Generación de backbone y scaffolding | No disponible en la información | Repositorio GitHub |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/rfdiffusion-active-site
+- Modelo en Hugging Face: https://huggingface.co/oteam/rfdiffusion-active-site
 - Variante base: https://huggingface.co/oteam/rfdiffusion-base
 - Variante base (epoch 8): https://huggingface.co/oteam/rfdiffusion-base-epoch8
 - Variante complex base: https://huggingface.co/oteam/rfdiffusion-complex-base

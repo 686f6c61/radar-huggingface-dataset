@@ -73,8 +73,8 @@ No se han identificado en la informacion disponible modelos comparables con dato
 
 | Modelo | Tipo | Parametros | Duracion de muestra | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| low-poly-lora-minimax-h3 | LoRA de estilo (rank 32, 5.000 pasos) | no disponible | 3 s en entrenamiento; 15 s en el trailer documentado | MiniMax H3 Community License | HuggingFace y endpoint en fal.ai |
-| MiniMaxAI/MiniMax-H3 | Modelo base de generacion de video con audio conjunto | no disponible | no disponible | MiniMax H3 Community License | HuggingFace |
+| low-poly-lora-minimax-h3 | LoRA de estilo (rank 32, 5.000 pasos) | no disponible | 3 s en entrenamiento; 15 s en el trailer documentado | MiniMax H3 Community License | Hugging Face y endpoint en fal.ai |
+| MiniMaxAI/MiniMax-H3 | Modelo base de generacion de video con audio conjunto | no disponible | no disponible | MiniMax H3 Community License | Hugging Face |
 | Otros LoRA de estilo para modelos de video | Adaptadores de estilo | no disponible | no disponible | variable segun modelo base | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se han identificado en la informacion disponible modelos comparables con dato
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/KennethFal/low-poly-lora-minimax-h3
+- Pagina del modelo en Hugging Face: https://huggingface.co/KennethFal/low-poly-lora-minimax-h3
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia MiniMax H3 Community License: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Pesos del adaptador: https://huggingface.co/KennethFal/low-poly-lora-minimax-h3/blob/main/low-poly.safetensors

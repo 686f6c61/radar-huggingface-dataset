@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`seajohnson/mocov3-classification-mini` es un repositorio experimental de HuggingFace que contiene una implementación propia y compacta de MoCo v3 aplicada a clasificación, escrita en PyTorch y empaquetada en un único módulo. MoCo v3 es un método de aprendizaje autosupervisado por contraste con momentum, popularizado por Facebook AI Research para preentrenar ResNet y ViT; aquí el autor lo reutiliza como esqueleto de un clasificador. El propio autor advierte que el checkpoint es un artefacto de inicialización y no un modelo entrenado.
+`seajohnson/mocov3-classification-mini` es un repositorio experimental de Hugging Face que contiene una implementación propia y compacta de MoCo v3 aplicada a clasificación, escrita en PyTorch y empaquetada en un único módulo. MoCo v3 es un método de aprendizaje autosupervisado por contraste con momentum, popularizado por Facebook AI Research para preentrenar ResNet y ViT; aquí el autor lo reutiliza como esqueleto de un clasificador. El propio autor advierte que el checkpoint es un artefacto de inicialización y no un modelo entrenado.
 
 El dato más relevante es su tamaño real: 24.832 parámetros según el recuento de `model.safetensors`. Es decir, no es un modelo utilizable para inferencia, sino una plantilla de código para revisión, smoke tests y experimentos controlados de pequeño alcance. La model card lo declara explícitamente: «should not be read as a trained model» y «Scores are deliberately absent».
 
@@ -23,7 +23,7 @@ Por tanto, su interés ahora mismo es de ingeniería, no de capacidad: sirve com
 | Escala declarada en config | «huge» (etiqueta del autor; no coincide con el recuento real de parámetros) |
 | Tamaño del repositorio | 0,0 GB |
 | Optimizador por defecto | adafactor, schedule exponencial |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Fecha de creación (metadatos) | 2026-10-21 |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ No hay entrenamiento que reportar: el checkpoint es una inicialización. La mode
 - Test de integración en CI: usar los 24.832 parámetros para validar en segundos que el *script* de entrenamiento arranca, que el optimizador adafactor se inicializa y que el schedule exponencial produce la curva esperada.
 - Revisión de código (*code review*): el repositorio está pensado como un único módulo legible, útil como material de revisión de una implementación de atención dispersa con RMSNorm y fusión por concatenación.
 - Plantilla de experimentos controlados: punto de partida para barrer *learning rate* y *batch size* sobre una arquitectura mínima antes de trasladar la receta a un modelo mayor.
-- Validación de *tooling* de safetensors: comprobar el recuento de parámetros, el mapeo de claves y la compatibilidad con las utilidades de HuggingFace sin descargar checkpoints de gigabytes.
+- Validación de *tooling* de safetensors: comprobar el recuento de parámetros, el mapeo de claves y la compatibilidad con las utilidades de Hugging Face sin descargar checkpoints de gigabytes.
 - Pruebas de *dataloader* y aumentos: enlazar el modelo a un pipeline de datos real y medir únicamente el coste del preprocesamiento, ya que el coste de cómputo del modelo es despreciable.
 - Docencia y reproducción: ejemplo mínimo para explicar la mecánica de *momentum contrast* sin la complejidad de un ViT completo.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | `ishaankumar608335/classification-mini` | No disponible | No disponible | Sin benchmarks | Apache-2.0 | Público |
 | `facebookresearch/moco-v3` (implementación oficial) | No disponible (cubre ResNet y ViT, varias escalas) | No disponible | Reproduce los resultados del paper de MoCo v3 | No disponible en la información | Repositorio GitHub, no pesos en HF |
 
-Los tres repositorios de HuggingFace comparten el mismo patrón: implementación compacta más checkpoint de inicialización, sin métricas. La diferencia práctica entre ellos es la licencia (CC-BY-4.0 frente a Apache-2.0 en el caso de `ishaankumar608335/classification-mini`) y la variante de escala declarada.
+Los tres repositorios de Hugging Face comparten el mismo patrón: implementación compacta más checkpoint de inicialización, sin métricas. La diferencia práctica entre ellos es la licencia (CC-BY-4.0 frente a Apache-2.0 en el caso de `ishaankumar608335/classification-mini`) y la variante de escala declarada.
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Los tres repositorios de HuggingFace comparten el mismo patrón: implementación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seajohnson/mocov3-classification-mini
+- Modelo en Hugging Face: https://huggingface.co/seajohnson/mocov3-classification-mini
 - Repositorio oficial de MoCo v3 (Facebook Research): https://github.com/facebookresearch/moco-v3
 - Reimplementación en PyTorch de MoCo v3: https://github.com/Katherine121/mocov3
 - Repositorio comparable `shjankowski/mocov3-classification`: https://huggingface.co/shjankowski/mocov3-classification

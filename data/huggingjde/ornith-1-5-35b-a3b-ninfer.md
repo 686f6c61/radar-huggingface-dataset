@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingJDE/Ornith-1.5-35B-A3B-NInfer
+- Modelo en Hugging Face: https://huggingface.co/huggingJDE/Ornith-1.5-35B-A3B-NInfer
 - Modelo base (shisa-ai): https://huggingface.co/shisa-ai/Ornith-1.5-35B-A3B-MTP
 - Modelo original (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Repositorio de NInfer: https://github.com/Neroued/ninfer

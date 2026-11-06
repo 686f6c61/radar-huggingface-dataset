@@ -85,7 +85,7 @@ No se mencionan alternativas de la misma categoría en la información disponibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fatihaybasn/pathfinder-flan-t5-large-second-try-lora
+- Hugging Face: https://huggingface.co/Fatihaybasn/pathfinder-flan-t5-large-second-try-lora
 - Repositorio PathFinder-Ship: https://github.com/fatihaybsn/PathFinder-Ship
 - Documentación de FLAN-T5 en Transformers: https://huggingface.co/docs/transformers/model_doc/flan-t5
 - Modelo base google/flan-t5-large: https://huggingface.co/google/flan-t5-large

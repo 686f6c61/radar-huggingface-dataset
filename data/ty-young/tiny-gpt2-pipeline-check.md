@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tiny-gpt2-pipeline-check es un modelo de generación de texto publicado por el usuario ty-young en HuggingFace. Se trata de una implementación mínima de la arquitectura GPT-2 con aproximadamente 0,3 millones de parámetros, cuyo propósito declarado por el autor es exclusivamente ejercitar rutas de código de dataloader y checkpoint, no servir como modelo funcional de generación de lenguaje. Los pesos están inicializados, no entrenados ni ajustados, y el autor indica explícitamente que no dispone de datos de entrenamiento relevantes.
+tiny-gpt2-pipeline-check es un modelo de generación de texto publicado por el usuario ty-young en Hugging Face. Se trata de una implementación mínima de la arquitectura GPT-2 con aproximadamente 0,3 millones de parámetros, cuyo propósito declarado por el autor es exclusivamente ejercitar rutas de código de dataloader y checkpoint, no servir como modelo funcional de generación de lenguaje. Los pesos están inicializados, no entrenados ni ajustados, y el autor indica explícitamente que no dispone de datos de entrenamiento relevantes.
 
 El modelo resulta relevante únicamente como artefacto de prueba de infraestructura: permite validar pipelines de carga, serialización y ejecución en entornos de CI o herramientas como transformers sin incurrir en costes de cómputo ni en dependencias de pesos de gran tamaño. No debe confundirse con un modelo apto para producción, investigación lingüística ni evaluación de capacidades. Su licencia Apache 2.0 facilita su uso como fixture en tests automatizados.
 
@@ -83,5 +83,5 @@ La comparativa se ofrece solo como referencia de escala: tiny-gpt2-pipeline-chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ty-young/tiny-gpt2-pipeline-check
+- Modelo en Hugging Face: https://huggingface.co/ty-young/tiny-gpt2-pipeline-check
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hannahshs/mobilevit-finetuned` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura etiquetada como MobileViT, configurada en escala "nano" y orientada a tareas múltiples (multitask). Lo publica el usuario hannahshs y su propósito declarado no es servir como modelo preentrenado listo para producción, sino como material de revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
+`hannahshs/mobilevit-finetuned` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura etiquetada como MobileViT, configurada en escala "nano" y orientada a tareas múltiples (multitask). Lo publica el usuario hannahshs y su propósito declarado no es servir como modelo preentrenado listo para producción, sino como material de revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El dato más relevante para cualquier evaluador es su tamaño: 49.600 parámetros totales, según el propio archivo safetensors. Se trata de un orden de magnitud muy inferior al de cualquier variante canónica de MobileViT, lo que confirma que el artefacto es un esqueleto de código y no un modelo con capacidad funcional real. La model card indica además una configuración con atención lineal, fusión por co-atención, activación swish y normalización RMSNorm, combinación que se aparta de la MobileViT original de Apple.
 
@@ -62,13 +62,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - GPU de consumo: si, irrelevante a efectos practicos; cualquier GPU integrada o dedicada es sobradamente suficiente.
 - Opciones de despliegue: no hay soporte publicado para vLLM, llama.cpp, Ollama, TGI ni motores similares. La unica via documentada es PyTorch con un adaptador explicito, dado que se trata de una implementacion personal.
 - Latencia y throughput estimados: no disponible. Con este numero de parametros la latencia estaria dominada por la sobrecarga del framework, no por el computo del modelo.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Tipo de artefacto |
 |---|---|---|---|---|---|
-| hannahshs/mobilevit-finetuned | 49.600 | no disponible | BSD-3-Clause | HuggingFace, 0 descargas | Implementacion propia, checkpoint de inicializacion sin entrenar |
+| hannahshs/mobilevit-finetuned | 49.600 | no disponible | BSD-3-Clause | Hugging Face, 0 descargas | Implementacion propia, checkpoint de inicializacion sin entrenar |
 | MobileViT canonico (Apple) | no disponible en la informacion proporcionada; la literatura publica situa sus variantes ligeras en el rango de pocos millones de parametros | no disponible | no disponible en esta busqueda | no disponible en esta busqueda | Modelo preentrenado en ImageNet-1k |
 | MobileViTv2 (Apple) | no disponible en la informacion proporcionada | no disponible | no disponible en esta busqueda | no disponible en esta busqueda | Modelo preentrenado en ImageNet-1k, atencion separable |
 | Implementaciones en timm (ViT pequeños / MobileNet) | no disponible en la informacion proporcionada | no disponible | no disponible en esta busqueda | Repositorio timm | Pesos preentrenados con recetas documentadas |
@@ -89,9 +89,9 @@ Nota: la busqueda web realizada no devolvio ningun resultado relacionado con est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hannahshs/mobilevit-finetuned
-- Archivo principal de codigo: `eval.py` dentro del repositorio de HuggingFace
-- Configuracion de arquitectura: `config.json` dentro del repositorio de HuggingFace
-- Receta de experimento por defecto: `training_args.json` dentro del repositorio de HuggingFace
-- Pesos de inicializacion: `model.safetensors` dentro del repositorio de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/hannahshs/mobilevit-finetuned
+- Archivo principal de codigo: `eval.py` dentro del repositorio de Hugging Face
+- Configuracion de arquitectura: `config.json` dentro del repositorio de Hugging Face
+- Receta de experimento por defecto: `training_args.json` dentro del repositorio de Hugging Face
+- Pesos de inicializacion: `model.safetensors` dentro del repositorio de Hugging Face
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web asociada no devolvio ningun enlace relacionado con el modelo ni con MobileViT.

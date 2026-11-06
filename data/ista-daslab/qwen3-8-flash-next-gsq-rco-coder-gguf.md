@@ -13,7 +13,7 @@ Su relevancia practica es de despliegue: el conjunto de trabajo residente de un 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer con mixture-of-experts (MoE): 512 expertos por capa, 48 capas, 10 expertos activos por token en el modelo base |
-| Parametros totales | 116.514.464.640 (recuento indicado por HuggingFace para el repositorio); el modelo base declara 176,9B parametros |
+| Parametros totales | 116.514.464.640 (recuento indicado por Hugging Face para el repositorio); el modelo base declara 176,9B parametros |
 | Parametros activos | No disponible de forma explicita para la version podada; el modelo base activa 10 expertos por token |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | GGUF con pesos retenidos a 3,5 bpw (GSQ, mixed-precision) mas poda de expertos del 50%; calibracion con imatrix |
@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros modelos comparables de terceros en la d
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
+- Ficha en Hugging Face: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Versiones GSQ-RCO sin podar: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Paper de GSQ: https://arxiv.org/abs/2604.18556

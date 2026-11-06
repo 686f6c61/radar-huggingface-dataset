@@ -70,8 +70,8 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WebBrain Compass VLD v6 2B ONNX | 2B | no disponible | ONNX (q8f16/q4f16) | LFM1.0 | HuggingFace, 12 descargas |
-| WebBrain Compass VLD v6 2B (base) | 2B | no disponible | no disponible | LFM1.0 | HuggingFace |
+| WebBrain Compass VLD v6 2B ONNX | 2B | no disponible | ONNX (q8f16/q4f16) | LFM1.0 | Hugging Face, 12 descargas |
+| WebBrain Compass VLD v6 2B (base) | 2B | no disponible | no disponible | LFM1.0 | Hugging Face |
 | Otros VLM de ~2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada para establecer una comparación cuantitativa fiable.
@@ -89,5 +89,5 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webbrain-one/webbrain-compass-vld-v6-2b-onnx
+- Modelo en Hugging Face: https://huggingface.co/webbrain-one/webbrain-compass-vld-v6-2b-onnx
 - Modelo base: https://huggingface.co/webbrain-one/webbrain-compass-vld-v6-2b

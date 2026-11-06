@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuestA-Distilled-DeepSeek-7b-DirectOPD es un modelo de generacion de texto publicado por el usuario SelectiveDOPD en HuggingFace, con 7.615.616.512 parametros reales confirmados por los pesos en safetensors. La etiqueta de arquitectura declarada es `qwen2`, por lo que se trata de un transformer denso de la familia Qwen2, y el nombre del repositorio indica que es un modelo destilado a partir de una variante de DeepSeek de 7B, presumiblemente DeepSeek-R1-Distill-Qwen-7B, aunque este extremo no se confirma en la model card. El repositorio no presenta descargas ni likes en el momento de la consulta y no incluye informacion sobre licencia, idiomas, contexto o datos de entrenamiento.
+QuestA-Distilled-DeepSeek-7b-DirectOPD es un modelo de generacion de texto publicado por el usuario SelectiveDOPD en Hugging Face, con 7.615.616.512 parametros reales confirmados por los pesos en safetensors. La etiqueta de arquitectura declarada es `qwen2`, por lo que se trata de un transformer denso de la familia Qwen2, y el nombre del repositorio indica que es un modelo destilado a partir de una variante de DeepSeek de 7B, presumiblemente DeepSeek-R1-Distill-Qwen-7B, aunque este extremo no se confirma en la model card. El repositorio no presenta descargas ni likes en el momento de la consulta y no incluye informacion sobre licencia, idiomas, contexto o datos de entrenamiento.
 
 El modelo se enmarca en los experimentos que el autor denomina "BiDirect-OPD". La rama `main` corresponde al checkpoint `global_step_300`, y el repositorio conserva ramas adicionales con checkpoints intermedios cada 20 pasos (de `global_step_20` a `global_step_280`). Esta estructura sugiere un proceso de entrenamiento o destilacion instrumentado con evaluacion periodica, mas orientado a la investigacion que a un lanzamiento de produccion.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada y fundamentalmente experimental: se trata de un
 | Pipeline | text-generation |
 | Etiquetas adicionales | conversational, text-generation-inference, endpoints_compatible |
 | Tamano del repositorio | 30,5 GB |
-| Fecha de creacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12 (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-12 |
 | Descargas / likes | 0 / 0 |
 
@@ -81,10 +81,10 @@ Los datos de las alternativas provienen de documentacion publica ampliamente dif
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QuestA-Distilled-DeepSeek-7b-DirectOPD | 7,62 B | no disponible | no disponible | HuggingFace, 0 descargas, 15 ramas de checkpoint |
-| DeepSeek-R1-Distill-Qwen-7B | 7,62 B | 131.072 tokens (documentacion publica) | MIT (documentacion publica) | HuggingFace, ampliamente distribuido |
-| Qwen2.5-7B | 7,62 B | 131.072 tokens (documentacion publica) | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Mistral-7B-v0.3 | 7,25 B | 32.768 tokens (documentacion publica) | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| QuestA-Distilled-DeepSeek-7b-DirectOPD | 7,62 B | no disponible | no disponible | Hugging Face, 0 descargas, 15 ramas de checkpoint |
+| DeepSeek-R1-Distill-Qwen-7B | 7,62 B | 131.072 tokens (documentacion publica) | MIT (documentacion publica) | Hugging Face, ampliamente distribuido |
+| Qwen2.5-7B | 7,62 B | 131.072 tokens (documentacion publica) | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Mistral-7B-v0.3 | 7,25 B | 32.768 tokens (documentacion publica) | Apache 2.0 | Hugging Face, ampliamente distribuido |
 
 La diferencia principal no esta en el tamano, practicamente identico al de sus alternativas, sino en la ausencia de licencia, de idiomas declarados, de contexto documentado y de cualquier evaluacion publicada, frente a los tres modelos de referencia, que cuentan con model cards completas y resultados reproducibles.
 
@@ -103,6 +103,6 @@ La diferencia principal no esta en el tamano, practicamente identico al de sus a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/QuestA-Distilled-DeepSeek-7b-DirectOPD
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/QuestA-Distilled-DeepSeek-7b-DirectOPD
 - Ramas de checkpoints intermedios: https://huggingface.co/SelectiveDOPD/QuestA-Distilled-DeepSeek-7b-DirectOPD/tree/global_step_300 (patron de nombres `global_step_20` a `global_step_280` en la misma organizacion)
 - Paper, blog, repositorio o demo del autor: no disponible. La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo ni sobre los experimentos "BiDirect-OPD".

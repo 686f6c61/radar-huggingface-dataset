@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Ruka6/Mellum2-12B-A2.5B-Base-code-GGUF",
+  "slug": "ruka6-mellum2-12b-a2-5b-base-code-gguf",
+  "author": "Ruka6",
+  "url": "https://huggingface.co/Ruka6/Mellum2-12B-A2.5B-Base-code-GGUF",
+  "created_at": "2026-11-06T10:18:42.000Z",
+  "updated_at": "2026-11-06T11:14:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "code",
+    "code-completion",
+    "fill-in-the-middle",
+    "fim",
+    "moe",
+    "imatrix",
+    "mixed-precision",
+    "text-generation",
+    "en",
+    "arxiv:2605.31268",
+    "base_model:JetBrains/Mellum2-12B-A2.5B-Base",
+    "base_model:quantized:JetBrains/Mellum2-12B-A2.5B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 42037680576,
+  "storage_human": "42.0 GB",
+  "base_model": "JetBrains/Mellum2-12B-A2.5B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mellum2-12B-A2.5B-Base-GGUF - Hugging Face",
+      "url": "https://huggingface.co/SandLogicTechnologies/Mellum2-12B-A2.5B-Base-GGUF",
+      "snippet": "Mellum2-12B-A2.5B-Base Mellum2-12B-A2.5B-Base is a foundation language model developed by JetBrains and optimized for software engineering, code generation, code completion, and code understanding workflows. This repository contains GGUF quantized variants of the model optimized for efficient local inference using llama.cpp."
+    },
+    {
+      "title": "JetBrains/Mellum2-12B-A2.5B-Base · Hugging Face",
+      "url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

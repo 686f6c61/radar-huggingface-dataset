@@ -77,7 +77,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MadStickArt-v0.7.0 | 61.296 | 4 máscaras de layout, salida 956 × 400 | Apache 2.0 | HuggingFace (danger-room/MadStickArt-v0.7.0) |
+| MadStickArt-v0.7.0 | 61.296 | 4 máscaras de layout, salida 956 × 400 | Apache 2.0 | Hugging Face (danger-room/MadStickArt-v0.7.0) |
 | Alternativas de rasterizado condicionado por layout (p. ej. ControlNet, pix2pix) | No disponible | No disponible | No disponible | No disponible |
 | Profesor procedural interno (referencia) | No disponible | Assets procedurales, 126 ajustes y 250 props | No disponible | Incluido en el repositorio |
 
@@ -101,7 +101,7 @@ Las métricas del autor (IoU 0,5869; MAE 0,0236) solo son comparables con el pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danger-room/MadStickArt-v0.7.0
+- Modelo en Hugging Face: https://huggingface.co/danger-room/MadStickArt-v0.7.0
 - Repositorio estable (última versión publicada): https://huggingface.co/danger-room/MadStickArt
 - Etiqueta inmutable v0.7.0: https://huggingface.co/danger-room/MadStickArt/tree/v0.7.0
 - Repositorio original v0.1.0: https://huggingface.co/danger-room/MadStickArt-v0.1.0

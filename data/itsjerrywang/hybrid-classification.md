@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Itsjerrywang/hybrid-classification es un repositorio de codigo y pesos de inicializacion publicado por el usuario Itsjerrywang en HuggingFace. No se trata de un modelo preentrenado ni ajustado, sino de una implementacion propia en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de clasificacion, en su variante de escala "base". El propio autor indica de forma explicita que la configuracion incluida esta pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no como una release de produccion.
+Itsjerrywang/hybrid-classification es un repositorio de codigo y pesos de inicializacion publicado por el usuario Itsjerrywang en Hugging Face. No se trata de un modelo preentrenado ni ajustado, sino de una implementacion propia en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de clasificacion, en su variante de escala "base". El propio autor indica de forma explicita que la configuracion incluida esta pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no como una release de produccion.
 
 El checkpoint `model.safetensors` contiene 24.832 parametros totales, un orden de magnitud muy inferior al de cualquier encoder de clasificacion convencional, y se describe como una inicializacion valida para pruebas, no como un modelo entrenado. La model card no reclama ninguna puntuacion de benchmark ni evidencia de un entrenamiento completado, y senala que cualquier resultado futuro deberia documentarse por separado de los valores por defecto aqui incluidos.
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Itsjerrywang/hybrid-classification | 24.832 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| Itsjerrywang/hybrid-classification | 24.832 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ e el checkpoint.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Itsjerrywang/hybrid-classification
+- Hugging Face: https://huggingface.co/Itsjerrywang/hybrid-classification
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

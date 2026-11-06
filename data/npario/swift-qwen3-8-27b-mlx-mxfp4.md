@@ -96,7 +96,7 @@ No se proporcionan datos de modelos comparables de otros fabricantes (por ejempl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/npario/Swift-Qwen3.8-27B-MLX-MXFP4
+- Repositorio en Hugging Face: https://huggingface.co/npario/Swift-Qwen3.8-27B-MLX-MXFP4
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia Swift Open License v1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - mlx-lm (biblioteca de inferencia): https://github.com/ml-explore/mlx-lm

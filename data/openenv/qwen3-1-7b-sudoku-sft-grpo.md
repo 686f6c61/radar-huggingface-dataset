@@ -99,10 +99,10 @@ No se dispone de información sobre otros modelos especializados en Sudoku con l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT-GRPO
+- Modelo en Hugging Face: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT-GRPO
 - Modelo base del ajuste: https://huggingface.co/openenv/Qwen3-1.7B-Sudoku-SFT
 - Modelo original: https://huggingface.co/Qwen/Qwen3-1.7B
-- Entorno de Sudoku en HuggingFace Spaces: https://huggingface.co/spaces/openenv/sudoku
+- Entorno de Sudoku en Hugging Face Spaces: https://huggingface.co/spaces/openenv/sudoku
 - Tutorial de OpenEnv sobre Sudoku y GRPO: https://huggingface.co/docs/openenv/tutorials/sudoku-grpo
 - Repositorio de OpenEnv con los ejemplos de Sudoku (script `grpo.py`, `evaluate.py`, puzles): https://github.com/openenv/OpenEnv/tree/main/examples/sudoku
 - Curvas de entrenamiento en Trackio: https://huggingface.co/spaces/openenv/sudoku-runs

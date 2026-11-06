@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny-Jev es un modelo de decisión de tipo "System One" desarrollado por el usuario lostargon y publicado en HuggingFace. No es un modelo generativo: recibe un *estado* (un mensaje, un ticket, un registro JSON, una transcripción o un diff), una pregunta formulada como la escribiría un desarrollador en código y un conjunto cerrado de opciones, y devuelve en un único forward pass una distribución de probabilidad sobre esas opciones. Deriva de Qwen/Qwen3-0.6B mediante fine-tuning con LoRA (posteriormente fusionado en los pesos) y cuenta con 595.778.561 parámetros totales, lo que lo sitúa en la franja de los 0,6B.
+Tiny-Jev es un modelo de decisión de tipo "System One" desarrollado por el usuario lostargon y publicado en Hugging Face. No es un modelo generativo: recibe un *estado* (un mensaje, un ticket, un registro JSON, una transcripción o un diff), una pregunta formulada como la escribiría un desarrollador en código y un conjunto cerrado de opciones, y devuelve en un único forward pass una distribución de probabilidad sobre esas opciones. Deriva de Qwen/Qwen3-0.6B mediante fine-tuning con LoRA (posteriormente fusionado en los pesos) y cuenta con 595.778.561 parámetros totales, lo que lo sitúa en la franja de los 0,6B.
 
 El modelo expone tres primitivas sobre una misma llamada: *Choice* (elige la mejor opción y devuelve la distribución completa), *Score* (sitúa el estado en una escala ordenada y reporta el valor esperado, que puede caer entre niveles) y *Noul* (estima la probabilidad de que una afirmación sobre el estado sea verdadera). Cada respuesta incluye una confianza calibrada mediante temperature scaling sobre un split reservado, de modo que el código que lo consume pueda actuar sobre las predicciones seguras y enrutar el resto a un modelo mayor.
 
@@ -75,8 +75,8 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tiny-Jev | 595.778.561 | Decisor no autorregresivo con cabeza de clasificación | no disponible | apache-2.0 | HuggingFace, requiere `trust_remote_code` |
-| Qwen/Qwen3-0.6B | no disponible en la informacion proporcionada | LLM generativo autorregresivo | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| Tiny-Jev | 595.778.561 | Decisor no autorregresivo con cabeza de clasificación | no disponible | apache-2.0 | Hugging Face, requiere `trust_remote_code` |
+| Qwen/Qwen3-0.6B | no disponible en la informacion proporcionada | LLM generativo autorregresivo | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 Cualquier comparación con clasificadores encoder como DeBERTa o con APIs de clasificación comerciales no puede sustentarse con los datos disponibles.
 
@@ -95,6 +95,6 @@ Cualquier comparación con clasificadores encoder como DeBERTa o con APIs de cla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lostargon/Tiny-Jev
+- Hugging Face: https://huggingface.co/lostargon/Tiny-Jev
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a contenidos sin relación con Tiny-Jev.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-body-3 es un modelo de decisión de 853 millones de parámetros publicado por el usuario tensor-tailor en HuggingFace. Forma parte del ecosistema Zils, un conjunto de "cuerpos" (bodies) que compiten en la subred 127 de Bittensor, una red descentralizada de cómputo e incentivos. El modelo no es un asistente conversacional al uso: está diseñado específicamente para responder preguntas de opción múltiple y tareas de decisión estructurada, como elegir herramientas, clasificar resultados de ediciones en Wikipedia o resolver problemas de inferencia de lenguaje natural.
+zils-lite-body-3 es un modelo de decisión de 853 millones de parámetros publicado por el usuario tensor-tailor en Hugging Face. Forma parte del ecosistema Zils, un conjunto de "cuerpos" (bodies) que compiten en la subred 127 de Bittensor, una red descentralizada de cómputo e incentivos. El modelo no es un asistente conversacional al uso: está diseñado específicamente para responder preguntas de opción múltiple y tareas de decisión estructurada, como elegir herramientas, clasificar resultados de ediciones en Wikipedia o resolver problemas de inferencia de lenguaje natural.
 
 Técnicamente se construye sobre el chasis de Qwen3.5-0.8B (tensores de lenguaje y visión en bf16), y se obtiene mediante un fine-tuning con LoRA de rango 16 sobre un cuerpo previo no publicado (B2), que a su vez parte del promedio uniforme de tres modelos de la casa: vllm-sr/d3-lite, Maincode/Matilda-Decision-v1-Edge y zils-ai/jiwo-0.8b-full. El resultado es un modelo compacto, con licencia Apache-2.0, orientado a la inferencia de bajo coste en entornos de competición y evaluación automatizada.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zils-lite-body-3 | 853 M | No disponible | Apache-2.0 | HuggingFace (0 descargas) | Fine-tune de decisión sobre Qwen3.5-0.8B |
-| Qwen3.5-0.8B | ~800 M | No disponible | Apache-2.0 (según chasis) | HuggingFace | Modelo base del chasis; uso general |
-| vllm-sr/d3-lite | No disponible | No disponible | No disponible | HuggingFace | Cuerpo de la casa Zils; base del promedio |
-| Maincode/Matilda-Decision-v1-Edge | No disponible | No disponible | No disponible | HuggingFace | Cuerpo de la casa Zils; base del promedio |
+| zils-lite-body-3 | 853 M | No disponible | Apache-2.0 | Hugging Face (0 descargas) | Fine-tune de decisión sobre Qwen3.5-0.8B |
+| Qwen3.5-0.8B | ~800 M | No disponible | Apache-2.0 (según chasis) | Hugging Face | Modelo base del chasis; uso general |
+| vllm-sr/d3-lite | No disponible | No disponible | No disponible | Hugging Face | Cuerpo de la casa Zils; base del promedio |
+| Maincode/Matilda-Decision-v1-Edge | No disponible | No disponible | No disponible | Hugging Face | Cuerpo de la casa Zils; base del promedio |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tensor-tailor/zils-lite-body-3
+- Hugging Face: https://huggingface.co/tensor-tailor/zils-lite-body-3
 - Modelo base vllm-sr/d3-lite: https://huggingface.co/vllm-sr/d3-lite
 - Modelo base Maincode/Matilda-Decision-v1-Edge: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge
 - Modelo base zils-ai/jiwo-0.8b-full: https://huggingface.co/zils-ai/jiwo-0.8b-full

@@ -4,7 +4,7 @@
 
 ## Resumen
 
-BabarAzaa/oba es una variante del modelo Qwen3-8B de Alibaba Qwen a la que se le ha aplicado un proceso de *abliteration* (eliminacion de la direccion de rechazo mediante ingenieria de activaciones) con el metodo `advanced` de la herramienta OBLITERATUS. El resultado es un modelo de 8.190.735.360 parametros cuyo comportamiento de rechazo ante determinadas peticiones ha sido suprimido a nivel de pesos. El repositorio de HuggingFace esta etiquetado como `uncensored`, `abliteration` y `obliterate`, y no incluye model card mas alla de la tabla de metadatos del proceso.
+BabarAzaa/oba es una variante del modelo Qwen3-8B de Alibaba Qwen a la que se le ha aplicado un proceso de *abliteration* (eliminacion de la direccion de rechazo mediante ingenieria de activaciones) con el metodo `advanced` de la herramienta OBLITERATUS. El resultado es un modelo de 8.190.735.360 parametros cuyo comportamiento de rechazo ante determinadas peticiones ha sido suprimido a nivel de pesos. El repositorio de Hugging Face esta etiquetado como `uncensored`, `abliteration` y `obliterate`, y no incluye model card mas alla de la tabla de metadatos del proceso.
 
 Se trata de un modelo denso (no MoE) construido sobre la arquitectura Qwen3, con 8,19 mil millones de parametros y pesos en formato safetensors que ocupan 30,9 GB en el repositorio. No se publican cuantizaciones, ni resultados de evaluacion, ni detalles del dataset o del procedimiento exacto de ortogonalizacion mas alla del nombre del metodo. El modelo solo declara el idioma ingles en sus etiquetas, aunque hereda la cobertura multilingue del modelo base.
 
@@ -27,7 +27,7 @@ Nota: las filas marcadas como derivadas del modelo base proceden de la documenta
 | Nombre del modelo | BabarAzaa/oba (titulado internamente Qwen3-8B-OBLITERATED) |
 | Metodo de modificacion | Abliteration, metodo `advanced`, via OBLITERATUS |
 | Modelo base | Qwen/Qwen3-8B |
-| Fecha de creacion en HuggingFace | 2026-09-30 |
+| Fecha de creacion en Hugging Face | 2026-09-30 |
 
 ## Arquitectura y entrenamiento
 
@@ -80,10 +80,10 @@ Estimaciones calculadas a partir del numero de parametros real (8.190.735.360). 
 
 | Modelo | Parametros | Contexto | Modificacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BabarAzaa/oba (Qwen3-8B-OBLITERATED) | 8,19B densos | 32.768 nativos (131.072 con YaRN, segun el base) | Abliteration, metodo `advanced` de OBLITERATUS | No declarada | HuggingFace, safetensors, 0 descargas |
-| Qwen/Qwen3-8B | 8,19B densos | 32.768 nativos (131.072 con YaRN) | Ninguna (modelo alineado) | Apache-2.0 | HuggingFace, ampliamente validado, con benchmarks publicos |
-| huihui-ai/Qwen3-8B-abliterated | 8,19B densos | Igual que el base | Abliteration con la libreria abliterated de huihui-ai | Apache-2.0 (heredada del base) | HuggingFace, con variantes GGUF publicadas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B densos | 131.072 nativos | Ninguna (modelo alineado) | Llama 3.1 Community License (con restricciones para >700M usuarios) | HuggingFace, muy extendido |
+| BabarAzaa/oba (Qwen3-8B-OBLITERATED) | 8,19B densos | 32.768 nativos (131.072 con YaRN, segun el base) | Abliteration, metodo `advanced` de OBLITERATUS | No declarada | Hugging Face, safetensors, 0 descargas |
+| Qwen/Qwen3-8B | 8,19B densos | 32.768 nativos (131.072 con YaRN) | Ninguna (modelo alineado) | Apache-2.0 | Hugging Face, ampliamente validado, con benchmarks publicos |
+| huihui-ai/Qwen3-8B-abliterated | 8,19B densos | Igual que el base | Abliteration con la libreria abliterated de huihui-ai | Apache-2.0 (heredada del base) | Hugging Face, con variantes GGUF publicadas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B densos | 131.072 nativos | Ninguna (modelo alineado) | Llama 3.1 Community License (con restricciones para >700M usuarios) | Hugging Face, muy extendido |
 
 No se dispone de datos de rendimiento comparativos para BabarAzaa/oba, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Frente a Qwen3-8B, esta variante sacrifica trazabilidad de licencia y evaluacion a cambio de eliminar los rechazos; frente a la alternativa de huihui-ai, carece de cuantizaciones publicadas y de cualquier historial de uso.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativos para BabarAzaa/oba, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BabarAzaa/oba
+- Modelo en Hugging Face: https://huggingface.co/BabarAzaa/oba
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Blog de Qwen3 (familia completa, incluido el 8B): https://qwenlm.github.io/blog/qwen3/

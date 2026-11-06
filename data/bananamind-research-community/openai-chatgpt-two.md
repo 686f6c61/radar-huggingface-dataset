@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: en precisión *float32*, los pesos ocupan aproximadamente 0.5 GB; con activaciones y overhead puede llegar a 1–2 GB. En cuantización de 8 bits se reduciría a ~0.25 GB.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, o superiores). También puede ejecutarse en CPU, aunque con mayor latencia.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de tarjetas gráficas de consumo sin problema.
-- Opciones de despliegue: `transformers` (PyTorch/TensorFlow/JAX), `pipeline` de HuggingFace, y posiblemente `llama.cpp` o `vLLM` si se generan los pesos en formato GGUF u ONNX adicionales. El repositorio incluye etiquetas de soporte para TFLite, ONNX y Rust, aunque no se detalla la implementación.
+- Opciones de despliegue: `transformers` (PyTorch/TensorFlow/JAX), `pipeline` de Hugging Face, y posiblemente `llama.cpp` o `vLLM` si se generan los pesos en formato GGUF u ONNX adicionales. El repositorio incluye etiquetas de soporte para TFLite, ONNX y Rust, aunque no se detalla la implementación.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparación se basa en el tamaño de parámetros y la escala de la familia G
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bananamind-research-community/openai-chatgpt-two
+- Repositorio en Hugging Face: https://huggingface.co/bananamind-research-community/openai-chatgpt-two
 - Paper original de GPT-2: https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Blog de OpenAI sobre GPT-2: https://openai.com/blog/better-language-models/
 - Model card oficial de OpenAI: https://github.com/openai/gpt-2/blob/master/model_card.md

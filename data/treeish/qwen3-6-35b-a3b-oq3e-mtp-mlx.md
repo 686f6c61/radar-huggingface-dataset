@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/treeish/Qwen3.6-35B-A3B-oQ3e-MTP-MLX
+- Repositorio en Hugging Face: https://huggingface.co/treeish/Qwen3.6-35B-A3B-oQ3e-MTP-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Origen de pesos y calibracion (Jundot): https://huggingface.co/Jundot/Qwen3.6-35B-A3B-oQ3e-mtp

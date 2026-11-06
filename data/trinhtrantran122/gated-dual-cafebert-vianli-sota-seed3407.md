@@ -55,7 +55,7 @@ Segun el paper de VIANLI, el mejor modelo existente alcanza un 48,4% de accuracy
 - VRAM estimada para inferencia: el repositorio ocupa 2,3 GB, lo que sugiere un modelo de aproximadamente 300-400 millones de parametros. Con cuantizacion a 8 bits, se necesitarian unos 400-500 MB de VRAM; en precision completa (FP32), alrededor de 1,5-2 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia (GTX 1650, RTX 3050, etc.). Para fine-tuning, se recomienda una GPU con 8-16 GB (RTX 3070, RTX 4080, A100).
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna.
-- Opciones de despliegue: al ser un modelo PyTorch, puede servirse con HuggingFace Transformers, ONNX Runtime, o convertirse a formato OpenVINO. No se ha confirmado soporte para vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
+- Opciones de despliegue: al ser un modelo PyTorch, puede servirse con Hugging Face Transformers, ONNX Runtime, o convertirse a formato OpenVINO. No se ha confirmado soporte para vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
 - Latencia y throughput: no disponible, pero al ser un modelo BERT de tamano medio, la inferencia en GPU deberia ser de pocos milisegundos por ejemplo.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento de CafeBERT base o large en VIANLI para un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vianli-sota-seed3407
+- Modelo en Hugging Face: https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vianli-sota-seed3407
 - Modelo relacionado (seed diferente): https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vinli-sota
 - CafeBERT original: https://huggingface.co/uitnlp/CafeBERT
 - Paper de VIANLI: https://arxiv.org/html/2406.17716v2

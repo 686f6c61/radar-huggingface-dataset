@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ChuanKoalaP/NLLB-Tig es una publicación en HuggingFace que, por su nombre, parece ser una adaptación o fine-tuning del modelo No Language Left Behind (NLLB) de Meta AI orientado al idioma tigriña (Tig). Sin embargo, la información disponible en la ficha del repositorio es extremadamente limitada: no se proporciona model card más allá de la licencia, ni pipeline, ni idiomas declarados, ni métricas. El autor es ChuanKoalaP y el modelo se publicó el 19 de agosto de 2026.
+El modelo ChuanKoalaP/NLLB-Tig es una publicación en Hugging Face que, por su nombre, parece ser una adaptación o fine-tuning del modelo No Language Left Behind (NLLB) de Meta AI orientado al idioma tigriña (Tig). Sin embargo, la información disponible en la ficha del repositorio es extremadamente limitada: no se proporciona model card más allá de la licencia, ni pipeline, ni idiomas declarados, ni métricas. El autor es ChuanKoalaP y el modelo se publicó el 19 de agosto de 2026.
 
 Dado que no existe documentación técnica específica, no se pueden confirmar la arquitectura, el tamaño, el contexto ni las capacidades reales de este modelo. La única certeza es que se distribuye bajo licencia Apache 2.0. Cualquier afirmación sobre su funcionamiento sería especulativa, por lo que esta ficha se limita a reflejar los datos disponibles y a contextualizar el proyecto NLLB original, sin atribuir características concretas a este modelo en particular.
 
@@ -55,7 +55,7 @@ No disponible. No se ha identificado ningún modelo comparable directamente, ya 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChuanKoalaP/NLLB-Tig
+- Repositorio Hugging Face: https://huggingface.co/ChuanKoalaP/NLLB-Tig
 - Documentación de NLLB en Transformers (referencia general): https://huggingface.co/docs/transformers/v4.21.0/en/model_doc/nllb
 - Página oficial del proyecto NLLB de Meta AI: https://ai.meta.com/research/no-language-left-behind/
 - Publicación científica "No Language Left Behind: Scaling Human-Centered Machine Translation": https://research.facebook.com/publications/no-language-left-behind/

@@ -51,12 +51,12 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: para inferencia en FP16 se requieren aproximadamente 16 GB de VRAM (7,94B parámetros × 2 bytes). Con cuantización de 8 bits bastarían unos 8 GB, y con 4 bits unos 4 GB.
 - GPU recomendadas: una RTX 4090 (24 GB) puede ejecutar el modelo en FP16 sin problemas; una RTX 3090 (24 GB) también es válida. Para cuantización de 4 bits, una RTX 3060 (12 GB) o una RTX 4060 (8 GB) podrían ser suficientes.
 - Compatibilidad con GPU de consumo: sí, siempre que se aplique cuantización. El modelo completo en FP16 necesita una GPU de gama alta.
-- Opciones de despliegue: al estar en formato safetensors, puede cargarse con Transformers de HuggingFace, vLLM, TGI o convertirse a GGUF para usarse con llama.cpp u Ollama.
+- Opciones de despliegue: al estar en formato safetensors, puede cargarse con Transformers de Hugging Face, vLLM, TGI o convertirse a GGUF para usarse con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles; dependerán del hardware y de la implementación.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable con otros detectores de IA (como GPTZero, DetectGPT o modelos específicos de HuggingFace). No hay datos públicos de rendimiento ni de arquitectura detallada que permitan contrastar con alternativas. Se recomienda evaluar el modelo en el propio entorno antes de adoptarlo en producción.
+No se dispone de información suficiente para establecer una comparativa fiable con otros detectores de IA (como GPTZero, DetectGPT o modelos específicos de Hugging Face). No hay datos públicos de rendimiento ni de arquitectura detallada que permitan contrastar con alternativas. Se recomienda evaluar el modelo en el propio entorno antes de adoptarlo en producción.
 
 ## Limitaciones y advertencias
 
@@ -69,8 +69,8 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rishanthrajendhran/ideadet-qwen8b-391k-outline)
-- [Perfil del autor en HuggingFace](https://huggingface.co/rishanthrajendhran)
-- [Datasets del autor en HuggingFace](https://huggingface.co/rishanthrajendhran/datasets)
+- [Modelo en Hugging Face](https://huggingface.co/rishanthrajendhran/ideadet-qwen8b-391k-outline)
+- [Perfil del autor en Hugging Face](https://huggingface.co/rishanthrajendhran)
+- [Datasets del autor en Hugging Face](https://huggingface.co/rishanthrajendhran/datasets)
 - [Sitio personal de Rishanth Rajendhran](https://rishanthrajendhran.github.io/)
 - [Perfil de GitHub del autor](https://github.com/RishanthRajendhran/)

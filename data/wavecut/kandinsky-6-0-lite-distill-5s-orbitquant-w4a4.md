@@ -69,8 +69,8 @@ La model card no incluye métricas estándar (FVD, CLIP score, MMLU u otras) ni 
 
 | Modelo | Parametros | Contexto / duracion | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kandinsky 6.0 Lite distill 5s OrbitQuant W4A4 (este) | 1.872.514.320 en safetensors cuantizados | Clips de 5 s; sin dato de contexto | 166,18 s y 6,10 GiB pico en RTX 3090 (ejemplo guitarra) | other, mit-and-apache-2.0 | HuggingFace, Diffusers |
-| Kandinsky 6.0 Lite distill 5s (modelo base) | Familia Lite de ~3B; sin desglose exacto en la informacion disponible | Clips de 5 s | 184,60 s y 16,13 GiB pico en RTX 3090 (mismo ejemplo) | no disponible en la informacion proporcionada | HuggingFace, Diffusers |
+| Kandinsky 6.0 Lite distill 5s OrbitQuant W4A4 (este) | 1.872.514.320 en safetensors cuantizados | Clips de 5 s; sin dato de contexto | 166,18 s y 6,10 GiB pico en RTX 3090 (ejemplo guitarra) | other, mit-and-apache-2.0 | Hugging Face, Diffusers |
+| Kandinsky 6.0 Lite distill 5s (modelo base) | Familia Lite de ~3B; sin desglose exacto en la informacion disponible | Clips de 5 s | 184,60 s y 16,13 GiB pico en RTX 3090 (mismo ejemplo) | no disponible en la informacion proporcionada | Hugging Face, Diffusers |
 | Kandinsky 6.0 Video Pro | 29B | Clips de 5 s, audio 44 kHz, hasta 1080p segun el sitio de demostracion | no disponible | no disponible | GitHub y demo en kandinsky6.pro |
 
 No se dispone de datos comparativos frente a otras familias de generación de vídeo con audio (por ejemplo alternativas cuantizadas de la misma categoría), por lo que no se incluyen en la tabla.
@@ -90,7 +90,7 @@ No se dispone de datos comparativos frente a otras familias de generación de v�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WaveCut/Kandinsky-6.0-Lite-distill-5s-OrbitQuant-W4A4
+- Modelo en Hugging Face: https://huggingface.co/WaveCut/Kandinsky-6.0-Lite-distill-5s-OrbitQuant-W4A4
 - Modelo base: https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-distill-5s-Diffusers
 - Fichero de licencia NOTICE: https://huggingface.co/WaveCut/Kandinsky-6.0-Lite-distill-5s-OrbitQuant-W4A4/blob/main/NOTICE
 - Ejemplo zorro, original: https://huggingface.co/WaveCut/Kandinsky-6.0-Lite-distill-5s-OrbitQuant-W4A4/resolve/main/assets/fox-original.mp4
@@ -100,5 +100,5 @@ No se dispone de datos comparativos frente a otras familias de generación de v�
 - Comparativa de fotogramas emparejados: https://huggingface.co/WaveCut/Kandinsky-6.0-Lite-distill-5s-OrbitQuant-W4A4/resolve/main/assets/original-vs-orbitquant.webp
 - Repositorio GitHub de Kandinsky 6.0: https://github.com/kandinskylab/kandinsky-6
 - Paper en arXiv: https://arxiv.org/abs/2610.05608
-- Perfil del autor en HuggingFace: https://huggingface.co/WaveCut
+- Perfil del autor en Hugging Face: https://huggingface.co/WaveCut
 - Demo en línea de Kandinsky 6.0: https://kandinsky6.pro/

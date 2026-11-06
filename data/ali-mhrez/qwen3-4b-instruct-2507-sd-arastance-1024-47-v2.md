@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-AraStance-1024-47-v2 es un ajuste fino supervisado (SFT) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Se trata, por tanto, de un derivado de la familia Qwen3 en su variante densa de aproximadamente 4 000 millones de parametros, reentrenado con la libreria TRL sobre el stack de Unsloth. El repositorio tiene un tamano de 2.0 GB, formato safetensors y esta etiquetado como compatible con endpoints.
+Qwen3-4B-Instruct-2507-SD-AraStance-1024-47-v2 es un ajuste fino supervisado (SFT) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Se trata, por tanto, de un derivado de la familia Qwen3 en su variante densa de aproximadamente 4 000 millones de parametros, reentrenado con la libreria TRL sobre el stack de Unsloth. El repositorio tiene un tamano de 2.0 GB, formato safetensors y esta etiquetado como compatible con endpoints.
 
 La model card es minima: se limita a declarar el modelo base, el metodo de entrenamiento (SFT) y las versiones de framework utilizadas (TRL 0.24.0, Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.3.0, Tokenizers 0.23.1). No incluye descripcion del dataset, hiperparametros, resultados de evaluacion ni limitaciones. El nombre del modelo sugiere un ajuste orientado a deteccion de postura (stance detection) sobre texto en arabe, en torno al corpus AraStance y con una longitud de secuencia de 1024 tokens, pero esta interpretacion procede del identificador y no esta confirmada en la documentacion.
 
@@ -28,7 +28,7 @@ Su relevancia es limitada y muy especifica: sirve como ejemplo de pipeline de fi
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de unsloth/Qwen3-4B-Instruct-2507, una version Instruct de la familia Qwen3 en variante densa de ~4B parametros, distribuida por Unsloth. Sobre esa base se aplico un ajuste fino supervisado (SFT) empleando TRL, el framework de Transformer Reinforcement Learning de HuggingFace, y presumiblemente las optimizaciones de Unsloth para entrenamiento con bajo consumo de memoria (el tag "unsloth" aparece en el repositorio). No se especifican en la model card el numero de tokens de entrenamiento, la composicion del dataset, la presencia de RLHF/DPO posterior ni ninguna innovacion tecnica adicional.
+El modelo parte de unsloth/Qwen3-4B-Instruct-2507, una version Instruct de la familia Qwen3 en variante densa de ~4B parametros, distribuida por Unsloth. Sobre esa base se aplico un ajuste fino supervisado (SFT) empleando TRL, el framework de Transformer Reinforcement Learning de Hugging Face, y presumiblemente las optimizaciones de Unsloth para entrenamiento con bajo consumo de memoria (el tag "unsloth" aparece en el repositorio). No se especifican en la model card el numero de tokens de entrenamiento, la composicion del dataset, la presencia de RLHF/DPO posterior ni ninguna innovacion tecnica adicional.
 
 La unica informacion verificable sobre el procedimiento es la pila de versiones declarada: TRL 0.24.0, Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.3.0 y Tokenizers 0.23.1. El identificador "SD-AraStance-1024-47-v2" apunta a un entrenamiento de deteccion de postura sobre AraStance, con truncamiento a 1024 tokens y una segunda iteracion del experimento, pero se trata de una inferencia a partir del nombre y no de un dato documentado.
 
@@ -74,8 +74,8 @@ La model card no incluye metricas de ningun tipo (accuracy, F1, MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-1024-47-v2 | ~4B (deducido) | No disponible | Fine-tune SFT especializado | No disponible | HuggingFace, 0 descargas |
-| unsloth/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | No disponible en la informacion proporcionada | Instruct generalista | No disponible en la informacion proporcionada | HuggingFace (repo de Unsloth) |
+| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-1024-47-v2 | ~4B (deducido) | No disponible | Fine-tune SFT especializado | No disponible | Hugging Face, 0 descargas |
+| unsloth/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | No disponible en la informacion proporcionada | Instruct generalista | No disponible en la informacion proporcionada | Hugging Face (repo de Unsloth) |
 | Otras alternativas de ~4B para clasificacion de texto en arabe | No disponible | No disponible | No disponible | No disponible | No identificadas en la busqueda realizada |
 
 No se han identificado en la informacion proporcionada otros ajustes finos comparables (misma tarea, mismo tamano o mismo idioma) con los que establecer una comparacion cuantitativa. Tampoco se dispone de datos de rendimiento del modelo base en esta ficha, por lo que la comparativa se limita a datos de identificacion.
@@ -95,7 +95,7 @@ No se han identificado en la informacion proporcionada otros ajustes finos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-1024-47-v2
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-1024-47-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
 - Repositorio de Unsloth (tag del modelo, sin enlace explicito en la model card): no disponible en la informacion proporcionada

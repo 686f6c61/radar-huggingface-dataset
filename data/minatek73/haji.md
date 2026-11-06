@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Haji es un repositorio de modelo alojado en HuggingFace bajo la cuenta minatek73 (ID `minatek73/Haji`). La informacion publica disponible es practicamente inexistente: no se declara pipeline, licencia, idiomas soportados ni documentacion tecnica de ningun tipo. El repositorio acumula 0 descargas y 1 "like", y fue creado y actualizado el mismo dia (2026-10-10), lo que sugiere una publicacion reciente, abandonada o de caracter experimental sin mantenimiento posterior.
+Haji es un repositorio de modelo alojado en Hugging Face bajo la cuenta minatek73 (ID `minatek73/Haji`). La informacion publica disponible es practicamente inexistente: no se declara pipeline, licencia, idiomas soportados ni documentacion tecnica de ningun tipo. El repositorio acumula 0 descargas y 1 "like", y fue creado y actualizado el mismo dia (2026-10-10), lo que sugiere una publicacion reciente, abandonada o de caracter experimental sin mantenimiento posterior.
 
 No es posible determinar que problema resuelve, su arquitectura, su tamano ni su contexto, porque el autor no ha publicado model card, pesos documentados ni referencias tecnicas. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos resultados obtenidos corresponden a sitios de contenido para adultos y no guardan ninguna relacion con este repositorio, por lo que deben considerarse ruido de busqueda sin valor informativo.
 
@@ -83,7 +83,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/minatek73/Haji
+- Repositorio en Hugging Face: https://huggingface.co/minatek73/Haji
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

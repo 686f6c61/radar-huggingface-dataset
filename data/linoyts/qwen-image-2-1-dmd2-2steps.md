@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, Ima
 
 | Modelo | Tipo | Pasos de inferencia | CFG en inferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| linoyts/Qwen-Image-2.1-DMD2-2steps | LoRA de destilacion DMD2 sobre Qwen-Image-2.1 | 2 | No (true_cfg_scale=1.0) | qwen-research (no comercial) | HuggingFace, diffusers dev |
-| Qwen/Qwen-Image-2.1 (modelo base) | Modelo de difusion completo | 20 | Si | qwen-research (no comercial) | HuggingFace, diffusers dev |
+| linoyts/Qwen-Image-2.1-DMD2-2steps | LoRA de destilacion DMD2 sobre Qwen-Image-2.1 | 2 | No (true_cfg_scale=1.0) | qwen-research (no comercial) | Hugging Face, diffusers dev |
+| Qwen/Qwen-Image-2.1 (modelo base) | Modelo de difusion completo | 20 | Si | qwen-research (no comercial) | Hugging Face, diffusers dev |
 | Otros aceleradores few-step para Qwen-Image-2.1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de otros adaptadores de destilacion comparables (por ejemplo, variantes LCM, Turbo o Lightning para esta misma familia), por lo que la comparativa se limita al modelo base. Tampoco se dispone de cifras de calidad que permitan cuantificar la perdida respecto al profesor a 20 pasos.
@@ -100,7 +100,7 @@ La informacion proporcionada no incluye datos de otros adaptadores de destilacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/linoyts/Qwen-Image-2.1-DMD2-2steps
+- Modelo en Hugging Face: https://huggingface.co/linoyts/Qwen-Image-2.1-DMD2-2steps
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Coleccion "Qwen Image 2.1 Realtime" del autor: https://huggingface.co/collections/linoyts/qwen-image-21-realtime

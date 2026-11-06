@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ChoLuckyHexSexySuccubusQueen135Age/gpt-oss-korean-model",
+  "slug": "choluckyhexsexysuccubusqueen135age-gpt-oss-korean-model",
+  "author": "ChoLuckyHexSexySuccubusQueen135Age",
+  "url": "https://huggingface.co/ChoLuckyHexSexySuccubusQueen135Age/gpt-oss-korean-model",
+  "created_at": "2026-11-06T09:26:19.000Z",
+  "updated_at": "2026-11-06T09:26:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "unsloth",
+    "lora",
+    "korean",
+    "education",
+    "textbook",
+    "gpt-oss",
+    "한국어",
+    "교육",
+    "파인튜닝",
+    "text-generation",
+    "conversational",
+    "ko",
+    "dataset:maywell/korean_textbooks",
+    "base_model:unsloth/gpt-oss-20b",
+    "base_model:adapter:unsloth/gpt-oss-20b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43818790,
+  "storage_human": "44 MB",
+  "base_model": "unsloth/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChoLuckyHexSexySuccubusQueen135Age/sexyGPT-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/ChoLuckyHexSexySuccubusQueen135Age/sexyGPT-Uncensored",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChoLuckyHexSexySuccubusQueen135Age/sexykogpt-2-uncensored-q4_0.gguf ...",
+      "url": "https://huggingface.co/ChoLuckyHexSexySuccubusQueen135Age/sexykogpt-2-uncensored-q4_0.gguf",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

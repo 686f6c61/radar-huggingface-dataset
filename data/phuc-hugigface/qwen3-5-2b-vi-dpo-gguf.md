@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Phuc-HugigFace/Qwen3.5-2B-Vi-DPO-GGUF` es un repositorio de pesos en formato GGUF publicado por el usuario Phuc-HugigFace el 17 de septiembre de 2026. El recuento real de parametros almacenado en el repositorio es de 1.881.825.088 (aproximadamente 1,88 mil millones), coherente con la etiqueta "2B" del nombre. El repositorio ocupa 4,8 GB, acumula 24 descargas y 0 likes, y no incluye model card, licencia declarada, idiomas ni pipeline de HuggingFace.
+`Phuc-HugigFace/Qwen3.5-2B-Vi-DPO-GGUF` es un repositorio de pesos en formato GGUF publicado por el usuario Phuc-HugigFace el 17 de septiembre de 2026. El recuento real de parametros almacenado en el repositorio es de 1.881.825.088 (aproximadamente 1,88 mil millones), coherente con la etiqueta "2B" del nombre. El repositorio ocupa 4,8 GB, acumula 24 descargas y 0 likes, y no incluye model card, licencia declarada, idiomas ni pipeline de Hugging Face.
 
 Por el nombre se puede inferir, sin confirmacion alguna, que se trata de un ajuste de una base de la familia Qwen de unos 2.000 millones de parametros, orientado al vietnamita (sufijo "Vi") y alineado mediante DPO (Direct Preference Optimization), cuantizado a GGUF para inferencia en llama.cpp y compatible con endpoints. Ninguna de estas inferencias esta respaldada por documentacion del autor: no hay paper, config.json publico, ficha tecnica ni resultados de evaluacion.
 
@@ -38,7 +38,7 @@ Tampoco hay informacion sobre innovaciones tecnicas (atencion lineal, decodifica
 - Generacion de texto y respuesta conversacional multi-turno: es la unica capacidad directamente sugerida por la etiqueta `conversational` del repositorio.
 - Ajuste por preferencias (DPO): el nombre indica que el modelo fue alineado con este metodo, orientado a respuestas mas utiles y menos daninas, aunque no se han publicado evaluaciones que lo confirmen.
 - Inferencia local eficiente: al estar en GGUF, puede ejecutarse en CPU, GPU o configuracion hibrida con llama.cpp, Ollama o servidores compatibles.
-- Integracion con endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de HuggingFace.
+- Integracion con endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de Hugging Face.
 - Capacidad multilingue: no disponible. El sufijo "Vi" sugiere foco en vietnamita, pero no hay confirmacion ni evaluacion de cobertura en otros idiomas.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -113,6 +113,6 @@ Las tres alternativas ofrecen licencia explicita, contexto documentado y resulta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Phuc-HugigFace/Qwen3.5-2B-Vi-DPO-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Phuc-HugigFace/Qwen3.5-2B-Vi-DPO-GGUF
 - Pagina del autor: https://huggingface.co/Phuc-HugigFace
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las busquedas devolvieron resultados sin relacion con el modelo (una ficha de restaurante en Tripadvisor, articulos sobre el significado del nombre vietnamita "Phuc", una guia turistica de Phu Quoc y la biografia de Phan Thi Kim Phuc). No hay papers, blogs, repositorios ni demos asociados al modelo.

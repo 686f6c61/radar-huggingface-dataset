@@ -2,7 +2,7 @@
 
 ## Resumen
 
-little87-lm es un modelo de lenguaje publicado por el usuario kaxing en HuggingFace. Se trata de un modelo de muy pequeno tamano: el repositorio declara 15.228.160 parametros totales (aproximadamente 15,2 millones) en formato safetensors, con un repositorio de apenas 0,2 GB. Los metadatos lo etiquetan como `conversational` y `endpoints_compatible`, e incluyen el tag `gguf`, lo que indica que el repositorio distribuye al menos una version cuantizada en formato GGUF lista para inferencia local.
+little87-lm es un modelo de lenguaje publicado por el usuario kaxing en Hugging Face. Se trata de un modelo de muy pequeno tamano: el repositorio declara 15.228.160 parametros totales (aproximadamente 15,2 millones) en formato safetensors, con un repositorio de apenas 0,2 GB. Los metadatos lo etiquetan como `conversational` y `endpoints_compatible`, e incluyen el tag `gguf`, lo que indica que el repositorio distribuye al menos una version cuantizada en formato GGUF lista para inferencia local.
 
 El modelo apunta a un caso de uso de conversacion ligera y despliegue en entornos con recursos muy limitados, dado su tamano reducido. Sin embargo, la informacion publica disponible es extremadamente escasa: no se especifican la arquitectura, el contexto maximo, los idiomas soportados, la licencia ni los datos de entrenamiento. El pipeline declarado tambien aparece como no disponible.
 
@@ -37,7 +37,7 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens proce
 No se dispone de documentacion tecnica que detalle las capacidades del modelo. A partir de los metadatos publicos, unicamente se puede afirmar lo siguiente:
 
 - El tag `conversational` indica que el modelo esta orientado a generar respuestas en formato de dialogo, aunque se desconoce su calidad real.
-- El tag `endpoints_compatible` sugiere compatibilidad con la API de inference endpoints de HuggingFace.
+- El tag `endpoints_compatible` sugiere compatibilidad con la API de inference endpoints de Hugging Face.
 - La presencia de pesos en formato GGUF indica que puede ejecutarse con llama.cpp y herramientas derivadas.
 - Generacion de texto general: presumiblemente soportada, sin datos sobre calidad.
 - Razonamiento, codigo, matematicas, vision y audio: no disponible.
@@ -75,7 +75,7 @@ Las cifras siguientes son estimaciones derivadas aritmeticamente del numero de p
 - VRAM estimada en INT4: aproximadamente 8 MB.
 - GPU recomendadas: cualquier GPU, incluso integradas o de generaciones antiguas. No requiere A100, H100 ni RTX 4090; seria un desperdicio de recursos emplearlas para este modelo.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual y en la mayoria de iGPU. Tambien puede ejecutarse en CPU sin problema.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python) para los pesos GGUF; transformers de HuggingFace para los safetensors; servidores compatibles con la API de inference endpoints dado el tag declarado. vLLM y TGI no estan confirmados para esta arquitectura.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python) para los pesos GGUF; transformers de Hugging Face para los safetensors; servidores compatibles con la API de inference endpoints dado el tag declarado. vLLM y TGI no estan confirmados para esta arquitectura.
 - Latencia y throughput: no disponible. Con este tamano, en hardware moderno la latencia por token deberia ser de un solo digito de milisegundos, pero es una estimacion no verificada.
 
 ## Comparativa con modelos similares
@@ -84,10 +84,10 @@ La comparacion se limita a los datos publicamente verificables, ya que se descon
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kaxing/little87-lm | 15,2 M | no disponible | no disponible | HuggingFace (safetensors y GGUF) | Sin benchmarks ni documentacion |
-| roneneldan/TinyStories-33M | 33 M | 512 tokens (segun documentacion del proyecto) | CDLA-Sharing-1.0 (segun el repositorio) | HuggingFace | Entrenado sobre el dataset TinyStories, enfocado a narrativa infantil sintetica |
-| sshleifer/tiny-gpt2 | ~2 M | 1024 tokens (arquitectura GPT-2) | MIT (segun el repositorio) | HuggingFace | Version de depuracion, sin utilidad practica mas alla de tests |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace | Referencia clasica de modelo pequeno con benchmarks publicados |
+| kaxing/little87-lm | 15,2 M | no disponible | no disponible | Hugging Face (safetensors y GGUF) | Sin benchmarks ni documentacion |
+| roneneldan/TinyStories-33M | 33 M | 512 tokens (segun documentacion del proyecto) | CDLA-Sharing-1.0 (segun el repositorio) | Hugging Face | Entrenado sobre el dataset TinyStories, enfocado a narrativa infantil sintetica |
+| sshleifer/tiny-gpt2 | ~2 M | 1024 tokens (arquitectura GPT-2) | MIT (segun el repositorio) | Hugging Face | Version de depuracion, sin utilidad practica mas alla de tests |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face | Referencia clasica de modelo pequeno con benchmarks publicados |
 
 No se dispone de datos de rendimiento de little87-lm que permitan establecer una comparacion cuantitativa honesta con estos modelos.
 
@@ -105,6 +105,6 @@ No se dispone de datos de rendimiento de little87-lm que permitan establecer una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaxing/little87-lm
+- Modelo en Hugging Face: https://huggingface.co/kaxing/little87-lm
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo, demos o tarjetas de modelo asociadas) en la busqueda web realizada. Los unicos resultados obtenidos no guardaban relacion con el modelo y han sido descartados.

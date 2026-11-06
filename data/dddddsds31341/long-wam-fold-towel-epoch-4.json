@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/Long-WAM-Fold-Towel-Epoch-4",
+  "slug": "dddddsds31341-long-wam-fold-towel-epoch-4",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-Epoch-4",
+  "created_at": "2026-11-02T19:58:51.000Z",
+  "updated_at": "2026-11-02T20:38:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "long-wam",
+    "robotics",
+    "fold-towel",
+    "bimanual",
+    "eval-checkpoint",
+    "dataset:yuyingyinya/fold_towel",
+    "base_model:Efficient-Large-Model/Long-WAM-YAM",
+    "base_model:finetune:Efficient-Large-Model/Long-WAM-YAM",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12047212732,
+  "storage_human": "12.0 GB",
+  "base_model": "Efficient-Large-Model/Long-WAM-YAM",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Long-WAM-Fold Towel - a dddddsds31341 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/dddddsds31341/long-wam-fold-towel",
+      "snippet": "Note Epoch 1 / 10; step 2066; eval-only BF16 weights, config, stats and code."
+    },
+    {
+      "title": "dddddsds31341/pi05-fold_towel_100-15k · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/pi05-fold_towel_100-15k",
+      "snippet": "With one gripper at each end of a long towel edge, lift and fold the towel in the short-edge, long-edge, then short-edge directions, and finally align and smooth it flat. The repository contains one checkpoint together with its normalization statistics ..."
+    },
+    {
+      "title": "Long-WAM: Scaling the Context of World-Action Models",
+      "url": "https://nvlabs.github.io/LongLive/Long-WAM/",
+      "snippet": "TL;DR Long-WAM scales the visual history of a causal world-action model and keeps it real-time. Autoregressive video pretraining turns longer context into better control, and a co-designed runtime runs the full predict-then-act model at 107.4 ms per action chunk on an RTX 5090, with deployment on DGX Spark and Jetson AGX Thor."
+    },
+    {
+      "title": "AIAny - Long-WAM: Scaling the Context of World-Action Models",
+      "url": "https://aiany.app/item/long-wam-scaling-the-context-of-world-action-models",
+      "snippet": "Scales visual history for real-time robot control by combining autoregressive video pretraining with a streaming, asynchronous predict-then-act pipeline; shows longer context improves long-horizon manipulation and runs full inference in 107.4 ms per action chunk on an RTX 5090."
+    }
+  ]
+}

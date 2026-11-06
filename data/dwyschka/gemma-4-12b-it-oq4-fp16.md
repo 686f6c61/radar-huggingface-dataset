@@ -78,8 +78,8 @@ La comparativa se basa en datos públicos de los modelos. La versión cuantizada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dwyschka/gemma-4-12B-it-oQ4-fp16
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-12B
+- Repositorio Hugging Face: https://huggingface.co/dwyschka/gemma-4-12B-it-oQ4-fp16
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-12B
 - Página oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 (Google AI): https://ai.google.dev/gemma/docs/core/model_card_4
 - Blog de Google sobre Gemma 4 12B: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/

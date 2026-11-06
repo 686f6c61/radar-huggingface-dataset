@@ -79,7 +79,7 @@ No se dispone de informacion suficiente sobre modelos comparables de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace (i1-GGUF): https://huggingface.co/mradermacher/MN-CharThink-12B-Base-i1-GGUF
+- Repositorio Hugging Face (i1-GGUF): https://huggingface.co/mradermacher/MN-CharThink-12B-Base-i1-GGUF
 - Repositorio de quants estaticos: https://huggingface.co/mradermacher/MN-CharThink-12B-Base-GGUF
 - Modelo base: https://huggingface.co/SvalTek/MN-CharThink-12B-Base
 - Pagina de mradermacher para este modelo: https://hf.tst.eu/model#MN-CharThink-12B-Base-i1-GGUF

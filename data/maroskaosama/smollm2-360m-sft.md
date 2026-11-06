@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smollm2-360m-sft es un ajuste fino supervisado (SFT) del modelo HuggingFaceTB/SmolLM2-360M-Instruct, desarrollado por el usuario MaroskaOsama y publicado en HuggingFace. Se trata de un modelo de lenguaje de 360 millones de parámetros derivado de la familia SmolLM2 de Hugging Face, orientado a generación de texto conversacional. El ajuste se ha realizado con la librería TRL (versión 1.17.1) sobre el modelo instruct original, lo que sugiere un entrenamiento de tipo supervisado sobre pares instrucción-respuesta.
+smollm2-360m-sft es un ajuste fino supervisado (SFT) del modelo HuggingFaceTB/SmolLM2-360M-Instruct, desarrollado por el usuario MaroskaOsama y publicado en Hugging Face. Se trata de un modelo de lenguaje de 360 millones de parámetros derivado de la familia SmolLM2 de Hugging Face, orientado a generación de texto conversacional. El ajuste se ha realizado con la librería TRL (versión 1.17.1) sobre el modelo instruct original, lo que sugiere un entrenamiento de tipo supervisado sobre pares instrucción-respuesta.
 
 La relevancia de este modelo es limitada: se publica como un experimento de fine-tuning comunitario, con cero descargas y cero likes en el momento de la ficha, y sin model card sustantiva (no se documentan datos de entrenamiento, hiperparámetros, composición del dataset ni evaluación). El repositorio aparece con tamaño de 0.0 GB, lo que puede indicar que los pesos no están efectivamente subidos o que la información de tamaño no se ha actualizado.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MaroskaOsama/smollm2-360m-sft | 360M | no disponible | no disponible | HuggingFace (0 descargas) | Fine-tune SFT comunitario sin evaluación publicada |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | 8192 tokens (según especificaciones del modelo base) | Apache-2.0 | HuggingFace (ampliamente descargado) | Modelo base oficial, con model card completa y evaluación |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | 8192 tokens (según especificaciones del modelo base) | Apache-2.0 | HuggingFace | Alternativa más pequeña de la misma familia |
-| Qwen2.5-0.5B-Instruct | 500M | 32768 tokens (según especificaciones del modelo) | Apache-2.0 | HuggingFace | Alternativa de tamaño similar con mayor contexto |
+| MaroskaOsama/smollm2-360m-sft | 360M | no disponible | no disponible | Hugging Face (0 descargas) | Fine-tune SFT comunitario sin evaluación publicada |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | 8192 tokens (según especificaciones del modelo base) | Apache-2.0 | Hugging Face (ampliamente descargado) | Modelo base oficial, con model card completa y evaluación |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | 8192 tokens (según especificaciones del modelo base) | Apache-2.0 | Hugging Face | Alternativa más pequeña de la misma familia |
+| Qwen2.5-0.5B-Instruct | 500M | 32768 tokens (según especificaciones del modelo) | Apache-2.0 | Hugging Face | Alternativa de tamaño similar con mayor contexto |
 
 Nota: los datos del modelo base y de los comparables provienen de conocimiento general de dichos modelos y no de la información proporcionada en esta ficha; se incluyen solo como referencia orientativa. Para este fine-tune concreto no hay datos de rendimiento que permitan una comparación cuantitativa.
 
@@ -80,6 +80,6 @@ Nota: los datos del modelo base y de los comparables provienen de conocimiento g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MaroskaOsama/smollm2-360m-sft
+- Hugging Face: https://huggingface.co/MaroskaOsama/smollm2-360m-sft
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl

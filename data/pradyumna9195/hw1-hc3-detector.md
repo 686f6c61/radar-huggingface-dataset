@@ -87,9 +87,9 @@ Pérdida media de entrenamiento: 0,022050. No se han publicado resultados de ben
 
 | Modelo | Parametros | Contexto | Accuracy en HC3 (test propio) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Pradyumna9195/hw1-hc3-detector | 22,7 M | 256 tokens | 0,998072 | no disponible | HuggingFace |
-| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| HongjiP/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Pradyumna9195/hw1-hc3-detector | 22,7 M | 256 tokens | 0,998072 | no disponible | Hugging Face |
+| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| HongjiP/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Yihangsun/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | referenciado en savrn.com |
 | Baseline de embeddings congelados + regresión logística | no disponible | no disponible | 0,844901 | no disponible | resultados reportados en la model card |
 
@@ -110,11 +110,11 @@ Los tres primeros son variantes del mismo ejercicio con idéntico nombre de repo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pradyumna9195/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/Pradyumna9195/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset HC3: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Paper de referencia: Guo et al. (2023), *How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection*, https://arxiv.org/abs/2301.07597
-- Variante con el mismo nombre en HuggingFace: https://huggingface.co/Aishkrish/hw1-hc3-detector
-- Variante con el mismo nombre en HuggingFace: https://huggingface.co/HongjiP/hw1-hc3-detector
+- Variante con el mismo nombre en Hugging Face: https://huggingface.co/Aishkrish/hw1-hc3-detector
+- Variante con el mismo nombre en Hugging Face: https://huggingface.co/HongjiP/hw1-hc3-detector
 - Entrada de registro de la variante Yihangsun: https://savrn.com/models/hw1-hc3-detector
 - Entrada de registro adicional: https://free2aitools.com/model/skyyyyks/hw1-hc3-detector

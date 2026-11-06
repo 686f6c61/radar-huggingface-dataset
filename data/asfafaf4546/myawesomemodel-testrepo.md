@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con el identificador `asfafaf4546/MyAwesomeModel-TestRepo`. Según la model card, se trata de un modelo basado en la arquitectura Transformer (etiquetado con `transformers` y `pytorch`) y orientado a extracción de características (`feature-extraction`). El autor describe una versión actualizada que mejora significativamente el razonamiento y la inferencia, con un incremento notable en la profundidad de pensamiento durante tareas complejas (por ejemplo, en AIME 2025 pasa de 12K a 23K tokens por pregunta). Sin embargo, el repositorio no proporciona especificaciones técnicas detalladas (número de parámetros, contexto, etc.) y el tamaño del repositorio es de 0.0 GB, lo que sugiere que podría tratarse de un repositorio de prueba o incompleto.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con el identificador `asfafaf4546/MyAwesomeModel-TestRepo`. Según la model card, se trata de un modelo basado en la arquitectura Transformer (etiquetado con `transformers` y `pytorch`) y orientado a extracción de características (`feature-extraction`). El autor describe una versión actualizada que mejora significativamente el razonamiento y la inferencia, con un incremento notable en la profundidad de pensamiento durante tareas complejas (por ejemplo, en AIME 2025 pasa de 12K a 23K tokens por pregunta). Sin embargo, el repositorio no proporciona especificaciones técnicas detalladas (número de parámetros, contexto, etc.) y el tamaño del repositorio es de 0.0 GB, lo que sugiere que podría tratarse de un repositorio de prueba o incompleto.
 
 La licencia es MIT, lo que permite uso comercial y modificación. A pesar de las afirmaciones de rendimiento en la model card, no se han publicado pesos ni archivos de modelo, por lo que la reproducibilidad es nula. La relevancia actual es limitada debido a la falta de información verificable y a la ausencia de artefactos descargables.
 
@@ -91,5 +91,5 @@ No se puede realizar una comparativa fiable porque no se conocen los parámetros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asfafaf4546/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/asfafaf4546/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (paper, blog, código, demo) en la información disponible.

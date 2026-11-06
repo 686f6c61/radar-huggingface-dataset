@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cocohalim/grad-generation es un repositorio experimental publicado en HuggingFace que implementa una arquitectura de tipo Flamingo orientada a tareas de generacion. El autor lo describe explicitamente como un punto de partida de escala *base* pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado. El repositorio incluye el codigo Python con la implementacion y un ejemplo ejecutable, la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en `model.safetensors`.
+cocohalim/grad-generation es un repositorio experimental publicado en Hugging Face que implementa una arquitectura de tipo Flamingo orientada a tareas de generacion. El autor lo describe explicitamente como un punto de partida de escala *base* pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado. El repositorio incluye el codigo Python con la implementacion y un ejemplo ejecutable, la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en `model.safetensors`.
 
 El dato objetivo mas relevante es el recuento de parametros del checkpoint: 24.832 parametros totales segun los metadatos de safetensors. Se trata, por tanto, de un artefacto de tamano minusculo (el repositorio ocupa 0,0 GB redondeados), coherente con la afirmacion del autor de que es un checkpoint de inicializacion valido para *smoke tests* y no un modelo con capacidades reales de generacion. No se declara ningun resultado de benchmark ni se documenta un proceso de entrenamiento completado.
 
@@ -66,7 +66,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cocohalim/grad-generation | 24.832 | no disponible | MIT | HuggingFace |
+| cocohalim/grad-generation | 24.832 | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,5 +84,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cocohalim/grad-generation
+- Modelo en Hugging Face: https://huggingface.co/cocohalim/grad-generation
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

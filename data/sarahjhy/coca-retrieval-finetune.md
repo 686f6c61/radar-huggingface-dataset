@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sarahjhy/coca-retrieval-finetune` es un repositorio de HuggingFace publicado por el usuario sarahjhy que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada Coca, orientada a tareas de retrieval. No se trata de un modelo preentrenado listo para produccion: el propio autor lo describe como una configuracion "small" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El checkpoint `model.safetensors` se presenta de forma explicita como una inicializacion valida, no como un modelo entrenado ni auditado.
+`sarahjhy/coca-retrieval-finetune` es un repositorio de Hugging Face publicado por el usuario sarahjhy que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada Coca, orientada a tareas de retrieval. No se trata de un modelo preentrenado listo para produccion: el propio autor lo describe como una configuracion "small" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El checkpoint `model.safetensors` se presenta de forma explicita como una inicializacion valida, no como un modelo entrenado ni auditado.
 
-El repositorio incluye `predict.py` como artefacto principal, junto con `README.md`, `config.json`, `training_args.json` y el checkpoint de inicializacion. La model card declara atencion de ventana deslizante, fusion bilineal, activacion ReLU y normalizacion scalenorm; la receta de experimento por defecto usa el optimizador Novograd con un schedule OneCycle. No se declara ningun resultado de benchmark, ni idiomas soportados, ni pipeline de HuggingFace asociado.
+El repositorio incluye `predict.py` como artefacto principal, junto con `README.md`, `config.json`, `training_args.json` y el checkpoint de inicializacion. La model card declara atencion de ventana deslizante, fusion bilineal, activacion ReLU y normalizacion scalenorm; la receta de experimento por defecto usa el optimizador Novograd con un schedule OneCycle. No se declara ningun resultado de benchmark, ni idiomas soportados, ni pipeline de Hugging Face asociado.
 
 Su relevancia practica actual es reducida como modelo utilizable, pero si es apreciable como plantilla reproducible: el autor recomienda evaluar sobre Flickr30k, con al menos tres semillas y una linea base de capacidad comparable, lo que lo convierte en un punto de partida para quien quiera montar un pipeline de retrieval con trazabilidad experimental. El repositorio acumula 11 descargas y 0 likes, y su ultima actualizacion registrada es del 18 de septiembre de 2026.
 
@@ -27,7 +27,7 @@ Su relevancia practica actual es reducida como modelo utilizable, pero si es apr
 | Escala declarada | small |
 | Optimizador por defecto | Novograd |
 | Schedule por defecto | OneCycle |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 11 / 0 |
 | Fecha de creacion | 2026-09-18T02:44:12Z |
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo, e incluso en CPU, bajo el supuesto de que el numero real de parametros sea el reportado.
 - Opciones de despliegue: el repositorio se distribuye como codigo PyTorch con `predict.py` como entry point. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni ninguna otra plataforma de servicio. Para usarlo con APIs genericas de carga hace falta escribir un adaptador explicito.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -95,5 +95,5 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks ni co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sarahjhy/coca-retrieval-finetune
+- Hugging Face: https://huggingface.co/sarahjhy/coca-retrieval-finetune
 - La busqueda web realizada no devolvio ningun enlace tecnico relevante (papers, blogs, repositorios o demos) asociado a este modelo.

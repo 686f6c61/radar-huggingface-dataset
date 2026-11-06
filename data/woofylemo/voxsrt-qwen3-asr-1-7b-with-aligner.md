@@ -17,7 +17,7 @@ El modelo base Qwen3-ASR-1.7B es un sistema de reconocimiento de voz de última 
 | Tipos de cuantizacion | no disponible (el repositorio contiene pesos en formato safetensors, sin cuantizaciones precalculadas) |
 | Idiomas soportados | 52 lenguas y dialectos (segun documentacion de Qwen3-ASR) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -31,7 +31,7 @@ No se dispone de informacion detallada sobre el numero exacto de tokens de entre
 - Alineacion forzada de audio y texto mediante el modelo de 0.6B, util para subtitulado sincronizado.
 - Procesamiento local completo: el paquete esta disenado para inferencia en la aplicacion VoxSRT sin envio de datos a servidores externos.
 - Soporte de subtitulado, correccion de fuentes y traduccion (segun la descripcion de VoxSRT).
-- Compatible con el ecosistema transformers de HuggingFace (libreria transformers).
+- Compatible con el ecosistema transformers de Hugging Face (libreria transformers).
 - No se mencionan capacidades de tool calling, agentes, vision ni modo de razonamiento explicito en la informacion disponible.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada: no disponible. Con 2.3B parametros combinados en precision FP16, se estima un consumo de aproximadamente 4.6 GB solo para los pesos, mas overhead de activaciones y atencion. En cuantizacion INT8 podria reducirse a unos 2.5-3 GB, pero no se ofrecen cuantizaciones precalculadas en el repositorio.
 - GPU recomendadas: no se especifican. Por el tamano, una GPU consumer con 8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060) podria ejecutar el modelo en FP16 con optimizaciones, aunque para contextos largos o lotes grandes se recomendaria una GPU de 12-16 GB (RTX 4070, RTX 4080, etc.).
 - Si cabe en consumer GPU: probablemente si, en GPUs de gama media-alta con al menos 8 GB de VRAM, especialmente con cuantizacion o usando tecnicas de offloading.
-- Opciones de despliegue: el paquete esta disenado para VoxSRT, pero al ser modelos transformers estandar, pueden cargarse con la libreria transformers de HuggingFace, vLLM, TGI u otros frameworks compatibles. Para el alineador forzado, se requeriria una implementacion especifica.
+- Opciones de despliegue: el paquete esta disenado para VoxSRT, pero al ser modelos transformers estandar, pueden cargarse con la libreria transformers de Hugging Face, vLLM, TGI u otros frameworks compatibles. Para el alineador forzado, se requeriria una implementacion especifica.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -71,8 +71,8 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WoofyLemo/VoxSRT-qwen3-asr-1.7b-with-aligner
+- Repositorio Hugging Face: https://huggingface.co/WoofyLemo/VoxSRT-qwen3-asr-1.7b-with-aligner
 - Repositorio oficial de Qwen3-ASR en GitHub: https://github.com/QwenLM/Qwen3-ASR
 - Informe tecnico de Qwen3-ASR (arXiv): https://arxiv.org/html/2601.21337
 - Documentacion de transformers para Qwen3 ASR: https://huggingface.co/docs/transformers/main/model_doc/qwen3_asr
-- Demo oficial de Qwen3-ASR en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen3-ASR
+- Demo oficial de Qwen3-ASR en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen3-ASR

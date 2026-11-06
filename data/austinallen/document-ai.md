@@ -21,7 +21,7 @@ Con solo 49.600 parámetros declarados en los safetensors (probablemente un arte
 
 ## Arquitectura y entrenamiento
 
-No existe una arquitectura de red neuronal definida en este repositorio. El tag "transformer" en HuggingFace es una etiqueta genérica que no se corresponde con una implementación concreta. El contenido principal es un archivo `notes.md` que describe un plan de investigación: se proponen comparaciones con modelos de línea base en tareas de extracción de información de documentos (FUNSD, SROIE, CORD), pero no se ha ejecutado ningún entrenamiento ni evaluación. El autor indica explícitamente que las secciones marcadas como "planes" o "hipótesis" no deben interpretarse como resultados experimentales. No hay datos sobre tokens de entrenamiento, composición de dataset, ni técnicas como RLHF o DPO.
+No existe una arquitectura de red neuronal definida en este repositorio. El tag "transformer" en Hugging Face es una etiqueta genérica que no se corresponde con una implementación concreta. El contenido principal es un archivo `notes.md` que describe un plan de investigación: se proponen comparaciones con modelos de línea base en tareas de extracción de información de documentos (FUNSD, SROIE, CORD), pero no se ha ejecutado ningún entrenamiento ni evaluación. El autor indica explícitamente que las secciones marcadas como "planes" o "hipótesis" no deben interpretarse como resultados experimentales. No hay datos sobre tokens de entrenamiento, composición de dataset, ni técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -59,12 +59,12 @@ No disponible. Al no ser un modelo, no es comparable con alternativas como Layou
 - **Sin resultados verificados**: las hipótesis y planes no han sido validados experimentalmente; cualquier afirmación en las notas es especulativa.
 - **Sin código**: no se incluye implementación de ninguna arquitectura ni scripts de entrenamiento.
 - **Licencia MIT**: permite uso comercial y modificación, pero al no haber software funcional, la licencia solo aplica al texto de las notas.
-- **Riesgo de confusión**: los metadatos de HuggingFace (tags, safetensors) pueden inducir a error a quien busque un modelo real; es crucial leer la model card completa antes de cualquier intento de uso.
+- **Riesgo de confusión**: los metadatos de Hugging Face (tags, safetensors) pueden inducir a error a quien busque un modelo real; es crucial leer la model card completa antes de cualquier intento de uso.
 - **Sin mantenimiento**: el repositorio fue creado y actualizado el mismo día (2026-08-28) y no hay indicios de desarrollo posterior.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/austinallen/document-ai
+- Repositorio en Hugging Face: https://huggingface.co/austinallen/document-ai
 - Perfil de GitHub del autor: https://github.com/AustinAllen
 - Ai2 (Allen Institute for AI, organización relacionada con el autor): https://allenai.org/
 - Document Arena (leaderboard de modelos de documentos): https://arena.ai/leaderboard/document

@@ -79,11 +79,11 @@ Datos comparativos adicionales aportados por el autor, sin cifras concretas: GR0
 
 | Modelo | Parámetros | Contexto | Error en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este checkpoint) | 51.734.182 | no aplica (chunk de 16 pasos) | Ver tabla de benchmarks | apache-2.0 | Público en HuggingFace, 0 descargas |
-| GR00T-3B (`gr00t3b260924`) | no disponible | no disponible | El más bajo de las familias finalizadas; 3-4 veces por debajo de pi-0.5 y ACT | no disponible | Público en HuggingFace |
-| GR00T-3B táctil (`gr00t3btactile260924`) | no disponible | no disponible | Sin diferencia consistente atribuible al tacto según el autor | no disponible | Público en HuggingFace |
-| pi-0.5 (`pi05260924`) | no disponible | no disponible | Superior a ACT y por encima de GR00T según el autor | no disponible | Público en HuggingFace |
-| pi-0.5 táctil (`pi05tactile260924`) | no disponible | no disponible | Sin diferencia consistente atribuible al tacto según el autor | no disponible | Público en HuggingFace |
+| ACT (este checkpoint) | 51.734.182 | no aplica (chunk de 16 pasos) | Ver tabla de benchmarks | apache-2.0 | Público en Hugging Face, 0 descargas |
+| GR00T-3B (`gr00t3b260924`) | no disponible | no disponible | El más bajo de las familias finalizadas; 3-4 veces por debajo de pi-0.5 y ACT | no disponible | Público en Hugging Face |
+| GR00T-3B táctil (`gr00t3btactile260924`) | no disponible | no disponible | Sin diferencia consistente atribuible al tacto según el autor | no disponible | Público en Hugging Face |
+| pi-0.5 (`pi05260924`) | no disponible | no disponible | Superior a ACT y por encima de GR00T según el autor | no disponible | Público en Hugging Face |
+| pi-0.5 táctil (`pi05tactile260924`) | no disponible | no disponible | Sin diferencia consistente atribuible al tacto según el autor | no disponible | Público en Hugging Face |
 | Diffusion Policy | no disponible | no disponible | Entrenamiento en curso al publicar la model card | no disponible | No disponible |
 | T-Rex | no disponible | no disponible | Entrenamiento en curso al publicar la model card | no disponible | No disponible |
 | hold-first-frame | no aplica | no aplica | Línea base: 0,1755-0,3383 rad según articulación | no aplica | Referencia interna |
@@ -107,7 +107,7 @@ Todos los modelos comparados pertenecen a la misma suite y al mismo dataset, lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_act260924
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_act260924
 - Ejecución GR00T-3B: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3b260924
 - Ejecución GR00T-3B con tacto: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3btactile260924
 - Ejecución pi-0.5: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05260924

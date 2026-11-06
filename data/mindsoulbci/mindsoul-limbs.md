@@ -82,10 +82,10 @@ No se dispone de información verificable sobre modelos comparables en la docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mindsoulBCI/mindsoul-limbs
+- Hugging Face: https://huggingface.co/mindsoulBCI/mindsoul-limbs
 - GitHub del proyecto: https://github.com/pm-kevin-zhang/MindSoul
 - Repositorio de aplicaciones espaciales, juegos y materiales: https://github.com/pm-kevin-zhang/MindSoul-Spatial
 - Sitio web del proyecto: https://MindSoul.cn
-- Licencia: LICENSE (referenciada en el repositorio de HuggingFace)
+- Licencia: LICENSE (referenciada en el repositorio de Hugging Face)
 - Contacto del equipo: WeChat kevinzhang0527; cuenta pública «Kevin改变世界的点滴»
 - Empresa: 成都（上海）脑云矩阵科技有限公司

@@ -90,7 +90,7 @@ Nota: los datos de parametros de los modelos comparados proceden de conocimiento
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/willspeak/sensevoice-small-gguf
+- Mirror en Hugging Face: https://huggingface.co/willspeak/sensevoice-small-gguf
 - Modelo base original: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Fuente GGUF original: https://huggingface.co/voconly-org/sensevoice-small-gguf
 - Licencia (LICENSE.txt): https://huggingface.co/willspeak/sensevoice-small-gguf/blob/main/LICENSE.txt

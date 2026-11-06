@@ -70,7 +70,7 @@ No se dispone de datos de benchmarks para ninguno de estos modelos en la informa
 - No se ha realizado ninguna evaluación formal sobre el robot real; se desconoce la tasa de éxito real de la tarea.
 - El modelo solo funciona con el robot `so_follower` y con las cámaras frontal y superior en las posiciones y resoluciones usadas durante el entrenamiento. Cambiar la configuración de hardware requiere reentrenamiento.
 - No es un modelo multiuso: no genera texto, no responde preguntas ni ejecuta herramientas. Su única salida es una acción de 6 dimensiones.
-- El dataset de entrenamiento no especifica restricciones de uso, pero al ser un dataset público de HuggingFace, se recomienda revisar sus términos antes de usarlo comercialmente.
+- El dataset de entrenamiento no especifica restricciones de uso, pero al ser un dataset público de Hugging Face, se recomienda revisar sus términos antes de usarlo comercialmente.
 - La licencia Apache 2.0 permite uso comercial del modelo, pero no exime de posibles patentes o derechos de terceros sobre la arquitectura π₀.
 
 ## Enlaces

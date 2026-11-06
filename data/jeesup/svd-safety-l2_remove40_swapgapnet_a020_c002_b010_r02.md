@@ -74,9 +74,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Seguridad (ASR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`...remove40_swapgapnet_a020_c002_b010_r02`) | 6.738.415.616 según safetensors; fracción declarada 0,5998 | no declarado (base: 4.096) | AdvBench 0,3000; StrongREJECT 0,1821 | Llama 2 Community License | HuggingFace, safetensors, 0 descargas |
-| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | 6.738.415.616 | 4.096 | no disponible en esta ficha con el mismo protocolo | Llama 2 Community License | HuggingFace, ampliamente desplegado |
-| Otras celdas de la rejilla `svd-safety-*` del mismo autor | variable según presupuesto de restauración | no declarado | no disponible en esta ficha | Llama 2 Community License | HuggingFace, artefactos de investigación |
+| Este checkpoint (`...remove40_swapgapnet_a020_c002_b010_r02`) | 6.738.415.616 según safetensors; fracción declarada 0,5998 | no declarado (base: 4.096) | AdvBench 0,3000; StrongREJECT 0,1821 | Llama 2 Community License | Hugging Face, safetensors, 0 descargas |
+| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | 6.738.415.616 | 4.096 | no disponible en esta ficha con el mismo protocolo | Llama 2 Community License | Hugging Face, ampliamente desplegado |
+| Otras celdas de la rejilla `svd-safety-*` del mismo autor | variable según presupuesto de restauración | no declarado | no disponible en esta ficha | Llama 2 Community License | Hugging Face, artefactos de investigación |
 
 No se dispone de datos que permitan una comparación cuantitativa homogénea con alternativas de la misma categoría (por ejemplo, otros métodos de compresión de Llama-2-7b-chat o modelos de 7 B comprimidos), ya que no se han publicado resultados de benchmarks de capacidad general ni se conocen los valores del modelo base bajo el mismo juez.
 
@@ -95,7 +95,7 @@ No se dispone de datos que permitan una comparación cuantitativa homogénea con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r02
+- Repositorio en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y política de uso incluidas en el repositorio: `LICENSE.txt` y `USE_POLICY.md` (véase la pestaña de archivos del repositorio enlazado arriba)
 - Artículo de Llama 2 (base arquitectónica y de alineamiento): https://arxiv.org/abs/2307.09288

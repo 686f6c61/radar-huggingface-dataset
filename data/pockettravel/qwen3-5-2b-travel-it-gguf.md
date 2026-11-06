@@ -99,11 +99,11 @@ La comparacion cuantitativa disponible se limita al modelo base y a las tasas de
 - Restriccion de licencia: los pesos se distribuyen bajo CC BY-SA 4.0, lo que impone obligaciones de atribucion y de compartir bajo la misma licencia en obras derivadas; conviene revisar la implicacion para uso comercial. El listado completo de paginas fuente (titulo, URL y licencia) esta en `ATTRIBUTION.tsv`.
 - No se incluye contenido de Viaggiare Sicuri (Farnesina).
 - Sesgos conocidos: no documentados en la informacion disponible, aunque al derivar de Wikivoyage y Wikipedia en italiano hereda los sesgos de cobertura de esas fuentes.
-- Fecha de publicacion en los metadatos de HuggingFace: 2026-09-27; el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+- Fecha de publicacion en los metadatos de Hugging Face: 2026-09-27; el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pockettravel/qwen3.5-2b-travel-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pockettravel/qwen3.5-2b-travel-it-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Aplicacion Pocket Travel (GitHub): https://github.com/miracle091/pocket-travel
 - Wikivoyage (fuente de datos de entrenamiento): https://www.wikivoyage.org

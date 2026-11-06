@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-sock-heist-composite-v1-copy` es una copia sin modificaciones del modelo `rumezhak/microduck-sock-heist-composite-v1`, publicada por el usuario HlibPlakhtii en HuggingFace. No se trata de un modelo de lenguaje, sino de una política de control robótico entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de bajo coste microduck, desarrollado por Pollen Robotics. El modelo se distribuye en formato ONNX y se integra en el daemon del robot a través de un manifiesto de política con esquema 2.
+`microduck-sock-heist-composite-v1-copy` es una copia sin modificaciones del modelo `rumezhak/microduck-sock-heist-composite-v1`, publicada por el usuario HlibPlakhtii en Hugging Face. No se trata de un modelo de lenguaje, sino de una política de control robótico entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de bajo coste microduck, desarrollado por Pollen Robotics. El modelo se distribuye en formato ONNX y se integra en el daemon del robot a través de un manifiesto de política con esquema 2.
 
 La política opera a 50 Hz, consume observaciones de 61 dimensiones y produce 14 acciones de control. Está diseñada como una política "perpetua", es decir, ejecuta una marcha continua hasta que se le indique lo contrario, y ocupa el slot `walk` del sistema de políticas del microduck. Según la model card, el normalizador de observaciones está embebido dentro del propio fichero `policy.onnx`, por lo que el robot debe alimentar observaciones en bruto.
 
@@ -80,7 +80,7 @@ No disponible. No se han identificado en la información proporcionada otros mod
 
 ## Enlaces
 
-- HuggingFace (copia): https://huggingface.co/HlibPlakhtii/microduck-sock-heist-composite-v1-copy
+- Hugging Face (copia): https://huggingface.co/HlibPlakhtii/microduck-sock-heist-composite-v1-copy
 - Modelo base: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v1
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `main`, commit `5cee942d8`)

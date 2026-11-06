@@ -4,7 +4,7 @@
 
 `rachel-luxangel-ai/qwen-xianxia-gufeng` es un adaptador LoRA de estilo para el modelo de difusión Qwen-Image. No es un modelo de lenguaje ni un modelo de imagen completo: es un conjunto de pesos de bajo rango que se acopla al modelo base para inclinar su distribución de salida hacia una estética concreta, en este caso la fantasía china de corte xianxia y gufeng (estética clásica). El autor lo publica como espejo de inferencia de una versión alojada en Civitai (modelo 2979853, versión 3377871), que es donde reside la model card y la licencia originales.
 
-El repositorio contiene un único archivo, `xianxia_gufeng_meixue.safetensors`, en BF16, con un peso total de aproximadamente 0,2 GB. La model card indica que corresponde a la versión 3.0 del adaptador, que no requiere palabra de activación (*trigger word*) y que el peso recomendado de aplicación está entre 0,4 y 0,6. El modelo base declarado en la card es «Qwen-Image 2.1», mientras que la etiqueta `base_model` de HuggingFace apunta a `Qwen/Qwen-Image`; esta discrepancia no se resuelve en la documentación disponible.
+El repositorio contiene un único archivo, `xianxia_gufeng_meixue.safetensors`, en BF16, con un peso total de aproximadamente 0,2 GB. La model card indica que corresponde a la versión 3.0 del adaptador, que no requiere palabra de activación (*trigger word*) y que el peso recomendado de aplicación está entre 0,4 y 0,6. El modelo base declarado en la card es «Qwen-Image 2.1», mientras que la etiqueta `base_model` de Hugging Face apunta a `Qwen/Qwen-Image`; esta discrepancia no se resuelve en la documentación disponible.
 
 Su relevancia práctica es acotada pero clara: permite reproducir un estilo ilustrativo muy específico sin reentrenar ni sustituir el modelo base, con un coste de almacenamiento de 0,2 GB y un coste de cómputo en inferencia prácticamente nulo frente al modelo completo. Ahora bien, en el momento de redactar esta ficha el repositorio no registra descargas ni valoraciones, y no se han publicado evaluaciones cuantitativas de ningún tipo.
 
@@ -21,7 +21,7 @@ Su relevancia práctica es acotada pero clara: permite reproducir un estilo ilus
 | Licencia | `other` (la licencia original se gestiona en la publicación de Civitai) |
 | Formato de pesos | `safetensors` (BF16), archivo `xianxia_gufeng_meixue.safetensors` |
 | Tipo de adaptador | LoRA de estilo, versión 3.0 |
-| Modelo base | Qwen-Image 2.1 según la card; `Qwen/Qwen-Image` según la etiqueta de HuggingFace |
+| Modelo base | Qwen-Image 2.1 según la card; `Qwen/Qwen-Image` según la etiqueta de Hugging Face |
 | Palabra de activación | Ninguna |
 | Peso recomendado | 0,4 – 0,6 |
 | Tamaño del repositorio | 0,2 GB |
@@ -72,17 +72,17 @@ No existen métricas objetivas (FID, CLIP score, evaluaciones humanas) ni compar
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rachel-luxangel-ai/qwen-xianxia-gufeng` | LoRA de estilo sobre Qwen-Image | No disponible (repo de 0,2 GB) | No aplica | `other` (Civitai) | HuggingFace y Civitai |
-| `Qwen/Qwen-Image` (modelo base) | Modelo de difusión completo | No disponible en esta información | No disponible | No disponible en esta información | HuggingFace |
+| `rachel-luxangel-ai/qwen-xianxia-gufeng` | LoRA de estilo sobre Qwen-Image | No disponible (repo de 0,2 GB) | No aplica | `other` (Civitai) | Hugging Face y Civitai |
+| `Qwen/Qwen-Image` (modelo base) | Modelo de difusión completo | No disponible en esta información | No disponible | No disponible en esta información | Hugging Face |
 | Otros LoRA de estética xianxia/gufeng | LoRA de estilo | No disponible | No aplica | No disponible | No disponible |
 
 No se dispone de datos objetivos para comparar este adaptador con alternativas de la misma categoría. La comparación con el modelo base solo puede establecerse de forma cualitativa: el LoRA añade 0,2 GB de pesos y un sesgo estilístico, sin alterar el resto de capacidades del base. Cualquier comparación de calidad de estilo requeriría una evaluación humana con prompts y semillas controlados, que no se ha publicado.
 
 ## Limitaciones y advertencias
 
-- **Licencia ambigua para uso comercial:** la etiqueta es `other` y la card remite explícitamente a la licencia de la publicación de Civitai. Antes de cualquier uso en producción o en producto distribuido hay que verificar los términos en esa fuente; la licencia no se reproduce en HuggingFace.
+- **Licencia ambigua para uso comercial:** la etiqueta es `other` y la card remite explícitamente a la licencia de la publicación de Civitai. Antes de cualquier uso en producción o en producto distribuido hay que verificar los términos en esa fuente; la licencia no se reproduce en Hugging Face.
 - **Espejo no oficial:** el repositorio se declara «inference mirror» de un modelo de Civitai. La fuente de verdad es la publicación original, y no hay garantía de que los pesos ni la documentación se mantengan sincronizados.
-- **Discrepancia en el modelo base:** la card indica Qwen-Image 2.1 y la etiqueta de HuggingFace apunta a `Qwen/Qwen-Image`. Cargar el adaptador sobre una versión distinta a la usada en el entrenamiento puede degradar el resultado o producir artefactos.
+- **Discrepancia en el modelo base:** la card indica Qwen-Image 2.1 y la etiqueta de Hugging Face apunta a `Qwen/Qwen-Image`. Cargar el adaptador sobre una versión distinta a la usada en el entrenamiento puede degradar el resultado o producir artefactos.
 - **Ausencia de trigger word:** el estilo se activa por prompt. Esto significa que el adaptador puede filtrar rasgos estilísticos incluso cuando no se desea, y que a pesos bajos el efecto puede ser demasiado tenue mientras que a pesos altos puede dominar el contenido y rigidizar las composiciones.
 - **Riesgo de sobreajuste estilístico:** al ser un LoRA de estética, a pesos elevados tiende a reproducir clichés del género y a reducir la diversidad de las composiciones; el rango 0,4–0,6 sugerido es el único dato disponible al respecto.
 - **Sin validación comunitaria:** 0 descargas y 0 likes en el momento de la consulta. No hay evidencia de terceros sobre calidad, estabilidad ni compatibilidad real con distintos pipelines.
@@ -92,7 +92,7 @@ No se dispone de datos objetivos para comparar este adaptador con alternativas d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rachel-luxangel-ai/qwen-xianxia-gufeng
+- Repositorio en Hugging Face: https://huggingface.co/rachel-luxangel-ai/qwen-xianxia-gufeng
 - Publicación original en Civitai (modelo 2979853): https://civitai.com/models/2979853
 - Versión concreta en Civitai (3377871): https://civitai.com/models/2979853?modelVersionId=3377871
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen-Image
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image

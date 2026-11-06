@@ -100,7 +100,7 @@ La comparacion relevante es entre el bundle y su origen: comparten pesos y licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aether-models/qwen3-vl-2b
+- Modelo en Hugging Face: https://huggingface.co/aether-models/qwen3-vl-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Texto canonico de la licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Repositorio o documentacion del SDK Aether: no disponible en la informacion proporcionada

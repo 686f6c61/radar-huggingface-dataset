@@ -90,7 +90,7 @@ Comparación con la referencia del paper de MedMNIST v2: un ResNet-18 (3D) repor
 
 | Modelo | Parámetros | Contexto/entrada | Accuracy (OrganMNIST3D) | AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OrganCNN | 105.307 | 28×28×28 vóxeles | 0,8574 | 0,9860 | MIT | HuggingFace (safetensors, ONNX) |
+| OrganCNN | 105.307 | 28×28×28 vóxeles | 0,8574 | 0,9860 | MIT | Hugging Face (safetensors, ONNX) |
 | ResNet-18 (3D) referencia MedMNIST v2 | ~300× mayor | 28×28×28 vóxeles | 0,907 | 0,996 | no disponible | Referencia del paper MedMNIST v2 |
 | Otras alternativas | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -108,7 +108,7 @@ Comparación con la referencia del paper de MedMNIST v2: un ResNet-18 (3D) repor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/habib-analyst/organcnn
+- Hugging Face: https://huggingface.co/habib-analyst/organcnn
 - Repositorio GitHub: https://github.com/habib-analyst/organcnn
 - Paper MedMNIST v2 (referencia de los datos y del ResNet-18 3D): no disponible en la información proporcionada
 - Demo y scripts de verificación: incluidos en el repositorio GitHub (`examples/verify_metrics.py`, `examples/predict_demo.py`)

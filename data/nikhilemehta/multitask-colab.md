@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nikhilemehta/multitask-colab es un prototipo de investigacion con arquitectura Flamingo orientado a tareas multitarea ("multitask"), publicado en HuggingFace por el usuario Nikhilemehta bajo licencia MIT. El repositorio contiene una implementacion en Python (`finetune.py`), un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo entrenado.
+Nikhilemehta/multitask-colab es un prototipo de investigacion con arquitectura Flamingo orientado a tareas multitarea ("multitask"), publicado en Hugging Face por el usuario Nikhilemehta bajo licencia MIT. El repositorio contiene una implementacion en Python (`finetune.py`), un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo entrenado.
 
 La relevancia de esta ficha es limitada y conviene ser claro al respecto: no se trata de un modelo listo para produccion ni de un resultado de investigacion publicado. El autor no reclama ninguna puntuacion de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El interes, si existe, es puramente metodologico: sirve como esqueleto reproducible para montar pipelines de entrenamiento y evaluacion de arquitecturas tipo Flamingo con fusion por atencion cruzada.
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente en los datos proporcionados para estable
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nikhilemehta/multitask-colab | 16.576 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| Nikhilemehta/multitask-colab | 16.576 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No se dispone de informacion suficiente en los datos proporcionados para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikhilemehta/multitask-colab
+- Modelo en Hugging Face: https://huggingface.co/Nikhilemehta/multitask-colab
 - Paper de referencia sobre arquitecturas multimodales de gran contexto (mencionado en la busqueda web, no vinculado directamente a este modelo): https://arxiv.org/html/2403.05530v2
 - Busqueda web adicional: los resultados obtenidos (Awesome-Diffusion-Models, sesion de posters de NeurIPS, publicaciones de Gitter Lab, tesis sobre representaciones profundas) no guardan relacion directa con este modelo y no se consideran enlaces relevantes para la ficha.

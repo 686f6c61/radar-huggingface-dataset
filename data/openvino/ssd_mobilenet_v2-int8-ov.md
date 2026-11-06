@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ssd_mobilenet_v2-int8-ov es un modelo de deteccion de objetos de una sola etapa (Single Shot MultiBox Detector, SSD) con backbone MobileNet-V2, publicado por el equipo de OpenVINO en HuggingFace. Se trata de una version del modelo SSD MobileNet-V2 original de MMDetection, adaptada por Geti (plataforma de Intel para entrenamiento y despliegue de modelos de vision) y convertida al formato Intermediate Representation (IR) de OpenVINO con pesos y activaciones comprimidos a INT8.
+ssd_mobilenet_v2-int8-ov es un modelo de deteccion de objetos de una sola etapa (Single Shot MultiBox Detector, SSD) con backbone MobileNet-V2, publicado por el equipo de OpenVINO en Hugging Face. Se trata de una version del modelo SSD MobileNet-V2 original de MMDetection, adaptada por Geti (plataforma de Intel para entrenamiento y despliegue de modelos de vision) y convertida al formato Intermediate Representation (IR) de OpenVINO con pesos y activaciones comprimidos a INT8.
 
 El modelo resuelve el problema de deteccion de objetos en imagenes con un diseno orientado a eficiencia computacional: MobileNet-V2 como extractor de caracteristicas reduce drasticamente el coste frente a backbones como ResNet, lo que lo hace apto para inferencia en CPU, iGPU y NPU de dispositivos Intel, asi como en entornos de borde. La cuantizacion INT8 mediante Post-Training Quantization (PTQ) con NNCF reduce adicionalmente el peso y acelera la inferencia sin requerir reentrenamiento.
 
@@ -42,7 +42,7 @@ El modelo original procede de MMDetection y fue entrenado sobre el dataset COCO 
 - Automatizacion de inspeccion visual en fabricacion: integrado en lineas de produccion con hardware Intel, el detector puede localizar defectos o piezas en imagenes capturadas por camaras industriales; el fine-tuning con Geti permite adaptar las clases al catalogo de defectos especifico de la planta.
 - Preprocesamiento en pipelines de vision por computador: como primer etapa de deteccion (por ejemplo, localizar peatones o vehiculos) antes de modelos mas costosos de clasificacion o segmentacion, reduciendo el area de procesamiento y el coste computacional total.
 - Analisis de imagenes en aplicaciones de escritorio o AI PC: al ejecutarse sobre la NPU o iGPU de portatiles con procesadores Intel recientes, permite funciones de deteccion en aplicaciones locales sin enviar imagenes a la nube, con implicaciones de privacidad.
-- Prototipado rapido de sistemas de deteccion: la combinacion de Model API y la carga directa desde HuggingFace permite validar un detector funcional en pocas lineas de codigo antes de invertir en un modelo mayor o en un dataset propio.
+- Prototipado rapido de sistemas de deteccion: la combinacion de Model API y la carga directa desde Hugging Face permite validar un detector funcional en pocas lineas de codigo antes de invertir en un modelo mayor o en un dataset propio.
 - Robotica y navegacion asistida: deteccion de obstaculos u objetos relevantes en plataformas robotizadas con computo limitado, donde el bajo coste de inferencia del SSD MobileNet-V2 permite ejecutar el detector en el bucle de control a frecuencia util.
 - Filtrado y triaje de imagenes en repositorios: deteccion automatica de presencia de ciertas clases (personas, vehiculos, animales) para etiquetar, organizar o descartar imagenes en grandes volumenes sin intervencion manual.
 
@@ -82,7 +82,7 @@ La comparativa se limita a caracteristicas estructurales; no se dispone de datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/ssd_mobilenet_v2-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/ssd_mobilenet_v2-int8-ov
 - Modelo original SSD MobileNet-V2 en MMDetection: https://github.com/open-mmlab/mmdetection/tree/main/configs/ssd
 - Geti (plataforma de Intel para vision): https://github.com/open-edge-platform/geti
 - Documentacion de OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html
@@ -91,6 +91,6 @@ La comparativa se limita a caracteristicas estructurales; no se dispone de datos
 - Documentacion de Model API: https://open-edge-platform.github.io/model_api/latest/
 - Repositorio de OpenVINO: https://github.com/openvinotoolkit/openvino
 - Documentacion de OpenVINO: https://docs.openvino.ai/
-- OpenVINO en HuggingFace: https://huggingface.co/OpenVINO
+- OpenVINO en Hugging Face: https://huggingface.co/OpenVINO
 - Intel Distribution of OpenVINO Toolkit: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html
 - OpenVINO en Wikipedia: https://en.wikipedia.org/wiki/OpenVINO

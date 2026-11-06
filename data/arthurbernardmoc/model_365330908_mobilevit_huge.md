@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | `apple/mobilevit-small` | MobileViT | small | clasificación | ~5.6 M (aprox.) | 224×224 píxeles | MIT |
 | `apple/mobilevit-v2` (si existiera) | MobileViTv2 | small/base | clasificación | no disponible | no disponible | MIT |
 
-Los datos de `apple/mobilevit-small` son aproximados y provienen de la documentación de HuggingFace. La comparativa no es directa porque el modelo del repositorio está orientado a retrieval y es de escala "huge", mientras que los de Apple son para clasificación y de menor tamaño. No se dispone de datos de rendimiento comparativo.
+Los datos de `apple/mobilevit-small` son aproximados y provienen de la documentación de Hugging Face. La comparativa no es directa porque el modelo del repositorio está orientado a retrieval y es de escala "huge", mientras que los de Apple son para clasificación y de menor tamaño. No se dispone de datos de rendimiento comparativo.
 
 ## Limitaciones y advertencias
 

@@ -25,7 +25,7 @@ Su relevancia es acotada pero concreta: es un ejemplo reproducible de pipeline d
 | Modelo base | FacebookAI/xlm-roberta-base |
 | Tamano del repositorio | 1,1 GB |
 | Fecha de creacion / actualizacion | 10 de septiembre de 2026 (ambas) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -79,10 +79,10 @@ El desglose muestra una caída de 6,1 puntos de accuracy entre documentos que ca
 
 | Modelo | Parametros | Contexto | Tarea y metricas | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| heidercs/xlmroberta-cv-direct | 278.076.715 | 512 tokens | Clasificación de CV en 43 categorías; 81,4% accuracy global, F1 macro 0,803 | other | HuggingFace, safetensors, 0 descargas |
-| heidercs/xlmroberta-cv-chunked | misma arquitectura (no se detalla el recuento exacto) | no disponible | Misma tarea; el autor indica mejor resultado, sin cifras publicadas | no disponible | HuggingFace |
-| FacebookAI/xlm-roberta-base | 278M (aproximado) | 512 tokens | Modelo base multilingüe sin cabecera de clasificación; no resuelve esta tarea sin fine-tuning | no disponible en la información consultada | HuggingFace |
-| BETO (bert-base-spanish-wwm-uncased) | 110M (aproximado) | 512 tokens | Encoder en español para fine-tuning; no está ajustado a esta taxonomía de 43 categorías | no disponible en la información consultada | HuggingFace |
+| heidercs/xlmroberta-cv-direct | 278.076.715 | 512 tokens | Clasificación de CV en 43 categorías; 81,4% accuracy global, F1 macro 0,803 | other | Hugging Face, safetensors, 0 descargas |
+| heidercs/xlmroberta-cv-chunked | misma arquitectura (no se detalla el recuento exacto) | no disponible | Misma tarea; el autor indica mejor resultado, sin cifras publicadas | no disponible | Hugging Face |
+| FacebookAI/xlm-roberta-base | 278M (aproximado) | 512 tokens | Modelo base multilingüe sin cabecera de clasificación; no resuelve esta tarea sin fine-tuning | no disponible en la información consultada | Hugging Face |
+| BETO (bert-base-spanish-wwm-uncased) | 110M (aproximado) | 512 tokens | Encoder en español para fine-tuning; no está ajustado a esta taxonomía de 43 categorías | no disponible en la información consultada | Hugging Face |
 
 No se dispone de comparaciones numéricas directas con alternativas evaluadas sobre el mismo test de 2.681 documentos, por lo que la comparativa se limita a parámetros, contexto y naturaleza de la tarea.
 
@@ -94,14 +94,14 @@ No se dispone de comparaciones numéricas directas con alternativas evaluadas so
 - Sesgos potenciales: al derivar de un corpus público de CV en inglés traducido, puede heredar desequilibrios de género, origen o sector presentes en el corpus original. No se publica ninguna evaluación de sesgos.
 - Espacio de etiquetas cerrado: solo admite las 43 categorías del entrenamiento, sin clase "otros" documentada ni mecanismo para rechazar entradas fuera de dominio.
 - Riesgo de clasificaciones erróneas silenciosas: el modelo siempre devuelve una etiqueta con una probabilidad asociada; sin umbrales de confianza calibrados, los errores pasan desapercibidos en un pipeline automático.
-- Sin validación externa: cero descargas y cero likes en HuggingFace, sin informes de terceros que reproduzcan las métricas declaradas.
+- Sin validación externa: cero descargas y cero likes en Hugging Face, sin informes de terceros que reproduzcan las métricas declaradas.
 - No apto para generación, razonamiento, código, matemáticas, visión, tool calling ni agentes; cualquier expectativa en ese sentido queda fuera del alcance del modelo.
 - El propio autor recomienda heidercs/xlmroberta-cv-chunked para producción, lo que sitúa a este modelo como referencia de comparación y no como opción final.
 - No se publican detalles de entrenamiento (épocas, hiperparámetros, semillas), lo que dificulta la reproducibilidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heidercs/xlmroberta-cv-direct
+- Modelo en Hugging Face: https://huggingface.co/heidercs/xlmroberta-cv-direct
 - Variante recomendada por el autor para producción: https://huggingface.co/heidercs/xlmroberta-cv-chunked
 - Modelo base: https://huggingface.co/xlm-roberta-base
 

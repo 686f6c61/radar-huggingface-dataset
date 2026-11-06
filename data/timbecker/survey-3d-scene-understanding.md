@@ -65,7 +65,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/timbecker/survey-3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/timbecker/survey-3d-scene-understanding
 - Encuesta sobre comprensión de escenas 3D (arXiv): https://arxiv.org/abs/2502.00342
 - Artículo relacionado en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S1566253525006967
 - Resumen del artículo en Colab.ws: https://colab.ws/articles/10.1016%2Fj.inffus.2025.103624

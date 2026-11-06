@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Windmi1l/geoagenticrag-reranker-v5",
+  "slug": "windmi1l-geoagenticrag-reranker-v5",
+  "author": "Windmi1l",
+  "url": "https://huggingface.co/Windmi1l/geoagenticrag-reranker-v5",
+  "created_at": "2026-11-06T06:22:17.000Z",
+  "updated_at": "2026-11-06T06:22:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "reranker",
+    "geospatial",
+    "geoagenticrag",
+    "fine-tuned",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:finetune:BAAI/bge-reranker-v2-m3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567755777,
+  "parameters_human": "567.8M",
+  "storage_bytes": 1135560090,
+  "storage_human": "1.1 GB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

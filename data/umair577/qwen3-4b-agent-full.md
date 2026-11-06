@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Umair577/qwen3-4b-agent-full es un ajuste fino (fine-tuning) del modelo Qwen3-4B, publicado por el usuario Umair577 en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto de 4.022.468.096 parametros (aproximadamente 4,02 mil millones) construido sobre la variante cuantizada a 4 bits de Unsloth (unsloth/Qwen3-4B-unsloth-bnb-4bit), lo que lo situa en la categoria de modelos pequenos orientados a tareas de agente. El nombre del repositorio ("agent-full") sugiere un entrenamiento enfocado en capacidades de agente, aunque la model card no detalla la composicion del dataset ni el procedimiento de entrenamiento mas alla de indicar que se uso Unsloth y la libreria TRL de HuggingFace.
+Umair577/qwen3-4b-agent-full es un ajuste fino (fine-tuning) del modelo Qwen3-4B, publicado por el usuario Umair577 en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto de 4.022.468.096 parametros (aproximadamente 4,02 mil millones) construido sobre la variante cuantizada a 4 bits de Unsloth (unsloth/Qwen3-4B-unsloth-bnb-4bit), lo que lo situa en la categoria de modelos pequenos orientados a tareas de agente. El nombre del repositorio ("agent-full") sugiere un entrenamiento enfocado en capacidades de agente, aunque la model card no detalla la composicion del dataset ni el procedimiento de entrenamiento mas alla de indicar que se uso Unsloth y la libreria TRL de Hugging Face.
 
 El problema que resuelve es el de disponer de un modelo compacto, desplegable en hardware de consumo, especializado en flujos conversacionales y potencialmente en razonamiento multi-paso con llamadas a herramientas. Al derivar de Qwen3-4B, hereda la arquitectura transformer densa de la familia Qwen3, aunque las especificaciones concretas de contexto, idiomas de entrenamiento y datos no se detallan en la informacion disponible. El modelo esta declarado como conversational, con soporte para text-generation-inference, y compatible con endpoints.
 
@@ -25,7 +25,7 @@ Su relevancia radica en el ecosistema de ajuste fino eficiente: el uso de Unslot
 
 El modelo se basa en Qwen3-4B, un transformer denso de aproximadamente 4.000 millones de parametros. El ajuste fino se realizo sobre la version de Unsloth cuantizada a 4 bits (unsloth/Qwen3-4B-unsloth-bnb-4bit), lo que implica que el proceso de entrenamiento partio de pesos ya cuantizados en formato bitsandbytes de 4 bits. Este enfoque forma parte del flujo tipico de Unsloth para reducir el uso de VRAM durante el entrenamiento (QLoRA y variantes), aunque la model card no especifica si el ajuste final fue un LoRA/QLoRA fusionado o un fine-tuning completo.
 
-La informacion proporcionada no incluye el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de alineacion como RLHF, DPO o PPO. La model card unicamente indica que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, y que fue "2x mas rapido". El nombre del repositorio sugiere una orientacion a tareas de agente, pero no hay documentacion tecnica que confirme la metodologia, los datos de instrucciones utilizados ni las innovaciones de atencion o decodificacion implementadas.
+La informacion proporcionada no incluye el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de alineacion como RLHF, DPO o PPO. La model card unicamente indica que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, y que fue "2x mas rapido". El nombre del repositorio sugiere una orientacion a tareas de agente, pero no hay documentacion tecnica que confirme la metodologia, los datos de instrucciones utilizados ni las innovaciones de atencion o decodificacion implementadas.
 
 ## Capacidades
 
@@ -82,15 +82,15 @@ Datos de rendimiento comparado: no disponibles.
 - Sesgos conocidos: no disponibles en la informacion proporcionada; no hay evaluacion de sesgos.
 - Licencia: Apache 2.0, lo que permite uso comercial, pero la responsabilidad sobre los pesos ajustados recae en el autor del fine-tune, no en el creador del modelo base.
 - Repositorio sin traccion: 0 descargas y 0 "likes" en el momento de la consulta, lo que reduce la validacion comunitaria.
-- Fecha de creacion inusualmente futura (2026-10-11) en los metadatos de HuggingFace, lo que conviene verificar antes de confiar en el artefacto.
+- Fecha de creacion inusualmente futura (2026-10-11) en los metadatos de Hugging Face, lo que conviene verificar antes de confiar en el artefacto.
 - No se incluyen pesos GGUF ni cuantizaciones alternativas en el repositorio, solo safetensors.
 - Capacidades de agente no verificadas: el nombre del modelo sugiere funcionalidad que la documentacion no confirma.
 - No recomendado para produccion sin una evaluacion exhaustiva previa en el dominio de uso objetivo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Umair577/qwen3-4b-agent-full
+- Hugging Face: https://huggingface.co/Umair577/qwen3-4b-agent-full
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no disponible en la informacion proporcionada (no se enlaza explicitamente en la model card)
+- TRL de Hugging Face: no disponible en la informacion proporcionada (no se enlaza explicitamente en la model card)
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

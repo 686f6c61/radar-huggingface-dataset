@@ -21,7 +21,7 @@ Es relevante ahora porque ofrece un checkpoint ligero (8,3 millones de parámetr
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
 
-Otros datos tecnicos declarados por el autor: canales de entrada 5, 10 clases, 512 caracteristicas (features). Requiere `spconv` compilado contra la version de torch y CUDA correspondiente. El repositorio ocupa 0.0 GB segun HuggingFace (checkpoint de pequeno tamano).
+Otros datos tecnicos declarados por el autor: canales de entrada 5, 10 clases, 512 caracteristicas (features). Requiere `spconv` compilado contra la version de torch y CUDA correspondiente. El repositorio ocupa 0.0 GB segun Hugging Face (checkpoint de pequeno tamano).
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de cifras de benchmarks de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/transfusion-lidar.nuscenes.openpcdet
+- Hugging Face: https://huggingface.co/torch-pointcloud/transfusion-lidar.nuscenes.openpcdet
 - Paper TransFusion (arXiv): https://arxiv.org/abs/2203.11496
 - Repositorio OpenPCDet: https://github.com/open-mmlab/OpenPCDet
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

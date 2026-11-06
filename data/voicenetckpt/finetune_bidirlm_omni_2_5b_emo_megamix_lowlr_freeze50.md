@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50` es un checkpoint publicado por el usuario `VoiceNetCkpt` en HuggingFace dentro de lo que el propio autor denomina "experimentos VoiceCLAP". La model card es meramente declarativa: se limita a indicar que se trata de un directorio de una ejecución de entrenamiento (*training-run directory*), con 131 archivos y 100,9 GB de tamano total del repositorio. No se documenta arquitectura, dataset, licencia, idiomas ni procedimiento de evaluacion.
+`finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50` es un checkpoint publicado por el usuario `VoiceNetCkpt` en Hugging Face dentro de lo que el propio autor denomina "experimentos VoiceCLAP". La model card es meramente declarativa: se limita a indicar que se trata de un directorio de una ejecución de entrenamiento (*training-run directory*), con 131 archivos y 100,9 GB de tamano total del repositorio. No se documenta arquitectura, dataset, licencia, idiomas ni procedimiento de evaluacion.
 
-La unica informacion sustantiva disponible son los metadatos de HuggingFace: etiquetas `safetensors`, `voiceclap`, `checkpoint` y `region:us`, cero descargas, cero *likes* y ausencia de pipeline declarado. El nombre del repositorio sugiere, por convencion de nomenclatura, un modelo de lenguaje bidireccional (`BidirLM`) multimodal (`Omni`) de aproximadamente 2.500 millones de parametros, afinado sobre una mezcla de datos orientada a emocion (`emo_megamix`), con tasa de aprendizaje baja (`lowlr`) y congelacion parcial de parametros (`freeze50`). Estos extremos son inferencias a partir del identificador y no estan confirmados por el autor.
+La unica informacion sustantiva disponible son los metadatos de Hugging Face: etiquetas `safetensors`, `voiceclap`, `checkpoint` y `region:us`, cero descargas, cero *likes* y ausencia de pipeline declarado. El nombre del repositorio sugiere, por convencion de nomenclatura, un modelo de lenguaje bidireccional (`BidirLM`) multimodal (`Omni`) de aproximadamente 2.500 millones de parametros, afinado sobre una mezcla de datos orientada a emocion (`emo_megamix`), con tasa de aprendizaje baja (`lowlr`) y congelacion parcial de parametros (`freeze50`). Estos extremos son inferencias a partir del identificador y no estan confirmados por el autor.
 
 La relevancia de esta ficha es, por tanto, acotada: sirve para documentar la existencia del checkpoint, su ubicacion, su volumen y la ausencia de informacion verificable, de modo que un desarrollador o investigador pueda decidir si merece la pena inspeccionar los archivos antes de invertir tiempo en su evaluacion. No debe considerarse un modelo listo para produccion.
 
@@ -92,7 +92,7 @@ No disponible. No se dispone de especificaciones verificadas (parametros, contex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50
+- Repositorio Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50
 - Indice de ejecuciones VoiceCLAP citado en la model card: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Pagina del autor: https://huggingface.co/VoiceNetCkpt
 - Paper, blog, repositorio de codigo o demo: no disponibles.

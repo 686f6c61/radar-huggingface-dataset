@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ROSETok es un modelo publicado en HuggingFace por el usuario wxzyd123 bajo licencia MIT. La información disponible en su model card es prácticamente inexistente: el repositorio únicamente declara la licencia, sin README descriptivo, sin pipeline asignado, sin idiomas declarados y sin documentación técnica alguna. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de una publicación reciente o de un artefacto de investigación sin difusión pública.
+ROSETok es un modelo publicado en Hugging Face por el usuario wxzyd123 bajo licencia MIT. La información disponible en su model card es prácticamente inexistente: el repositorio únicamente declara la licencia, sin README descriptivo, sin pipeline asignado, sin idiomas declarados y sin documentación técnica alguna. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de una publicación reciente o de un artefacto de investigación sin difusión pública.
 
 Por el identificador "ROSETok" se puede inferir que probablemente esté relacionado con tokenización o con el proyecto ROS (Robot Operating System), pero esta interpretación no está confirmada por ninguna fuente y no debe tomarse como dato técnico. No se dispone de información sobre arquitectura, tamaño de parámetros, longitud de contexto ni datos de entrenamiento.
 
@@ -23,7 +23,7 @@ La relevancia actual de esta ficha es limitada: se documenta el modelo por compl
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un componente auxiliar como un tokenizador. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un componente auxiliar como un tokenizador. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal.
 
 El nombre "ROSETok" sugiere, sin confirmación, un posible componente de tokenización asociado a un proyecto denominado ROSE, pero esta hipótesis no está respaldada por documentación alguna. Cualquier afirmación sobre el proceso de entrenamiento sería especulativa y, por tanto, se omite.
 
@@ -34,12 +34,12 @@ El nombre "ROSETok" sugiere, sin confirmación, un posible componente de tokeniz
 - No hay evidencia de capacidades de agente o razonamiento multi-paso.
 - No se ha declarado soporte multilingüe.
 - No se ha declarado ningún modo especial (thinking mode, visión, audio, etc.).
-- El pipeline no está asignado en HuggingFace, por lo que no se puede confirmar que sea un modelo de generación de texto.
+- El pipeline no está asignado en Hugging Face, por lo que no se puede confirmar que sea un modelo de generación de texto.
 
 ## Casos de uso
 
 - Evaluación exploratoria de tokenización: si el artefacto resultara ser un tokenizador, podría emplearse para analizar cómo segmenta texto en dominios específicos, previa inspección manual de sus ficheros.
-- Investigación académica sobre artefactos publicados sin documentación: sirve como caso de estudio sobre prácticas de publicación en HuggingFace y la importancia de las model cards.
+- Investigación académica sobre artefactos publicados sin documentación: sirve como caso de estudio sobre prácticas de publicación en Hugging Face y la importancia de las model cards.
 - Integración en pipelines experimentales: solo tras verificar manualmente la naturaleza del repositorio (pesos, configuración, tokenizador) y confirmar que el contenido coincide con lo esperado.
 - Pruebas de reproducibilidad: útil para equipos que auditen publicaciones recientes y necesiten documentar la ausencia de metadatos.
 - Formación interna: ejemplo de por qué no se debe desplegar un modelo sin licencia clara de uso comercial más allá de la declaración MIT y sin benchmarks publicados.
@@ -73,5 +73,5 @@ No disponible. Al no conocerse la categoría, el tamaño ni la tarea del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wxzyd123/ROSETok
+- Repositorio en Hugging Face: https://huggingface.co/wxzyd123/ROSETok
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

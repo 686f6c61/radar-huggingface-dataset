@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mariedubois/3d-scene-understanding-efficient
+- Repositorio en Hugging Face: https://huggingface.co/mariedubois/3d-scene-understanding-efficient
 - Paper relacionado (no afiliado al repositorio): Multi-Modal Data-Efficient 3D Scene Understanding for Autonomous Driving (arXiv:2405.05258) - https://arxiv.org/abs/2405.05258
 - Versión HTML del mismo paper: https://arxiv.org/html/2405.05258v2
 - Publicación en IEEE: https://ieeexplore.ieee.org/document/10856442

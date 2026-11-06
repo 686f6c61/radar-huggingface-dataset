@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kopo17/klue-bert-sentiment-kopo17-finetune` es un checkpoint de clasificación de texto subido al Hub de HuggingFace por el usuario kopo17. Por el identificador y la etiqueta `bert` de sus metadatos, se trata de un ajuste fino (fine-tuning) de un modelo de la familia BERT orientado a análisis de sentimiento, presumiblemente sobre la base KLUE-BERT, una variante de BERT entrenada para comprensión del lenguaje en coreano. Sin embargo, la model card publicada es la plantilla automática de HuggingFace y no confirma ni el modelo base, ni el conjunto de datos de ajuste, ni la tarea exacta.
+El modelo `kopo17/klue-bert-sentiment-kopo17-finetune` es un checkpoint de clasificación de texto subido al Hub de Hugging Face por el usuario kopo17. Por el identificador y la etiqueta `bert` de sus metadatos, se trata de un ajuste fino (fine-tuning) de un modelo de la familia BERT orientado a análisis de sentimiento, presumiblemente sobre la base KLUE-BERT, una variante de BERT entrenada para comprensión del lenguaje en coreano. Sin embargo, la model card publicada es la plantilla automática de Hugging Face y no confirma ni el modelo base, ni el conjunto de datos de ajuste, ni la tarea exacta.
 
 El checkpoint tiene 110.618.882 parámetros almacenados en formato safetensors, con un repositorio de 0,4 GB, lo que sitúa al modelo en la categoría de los transformers codificadores de tamano base (encoder-only). Es un modelo pequeno, apto para inferencia en CPU y en cualquier GPU de consumo, y su caso de uso natural es la clasificación de secuencias cortas con baja latencia dentro de un pipeline de NLP.
 
@@ -36,7 +36,7 @@ Tampoco se dispone de informacion sobre el proceso de ajuste fino: no se especif
 
 - Clasificacion de texto (pipeline `text-classification`), presumiblemente clasificacion de sentimiento, aunque la etiqueta exacta del problema no esta documentada.
 - Generacion de embeddings de texto, dado que el repositorio incluye la etiqueta `text-embeddings-inference`, lo que permite usar el modelo como extractor de representaciones.
-- Compatibilidad con `text-embeddings-inference` y con endpoints compatibles de HuggingFace, segun las etiquetas del repositorio.
+- Compatibilidad con `text-embeddings-inference` y con endpoints compatibles de Hugging Face, segun las etiquetas del repositorio.
 - No hay evidencia de soporte de tool calling, function calling ni uso como agente.
 - No hay evidencia de razonamiento multi-paso, modo thinking ni capacidades de generacion de texto libre.
 - No hay evidencia de capacidades multimodales (vision, audio) ni de matemáticas o generacion de codigo.
@@ -74,16 +74,16 @@ No hay datos verificables en la informacion proporcionada para comparar parametr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kopo17/klue-bert-sentiment-kopo17-finetune | 110.618.882 | no disponible | no disponible | HuggingFace |
-| klue/bert-base | no disponible | no disponible | no disponible | HuggingFace |
-| bert-base-multilingual-cased | no disponible | no disponible | no disponible | HuggingFace |
-| koelectra-base-v3 (monologg) | no disponible | no disponible | no disponible | HuggingFace |
+| kopo17/klue-bert-sentiment-kopo17-finetune | 110.618.882 | no disponible | no disponible | Hugging Face |
+| klue/bert-base | no disponible | no disponible | no disponible | Hugging Face |
+| bert-base-multilingual-cased | no disponible | no disponible | no disponible | Hugging Face |
+| koelectra-base-v3 (monologg) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de resultados de benchmarks de ninguno de ellos en la informacion consultada, por lo que no es posible establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace con todos los campos en `[More Information Needed]`. No se puede saber con certeza que tarea resuelve, con que datos se entreno ni como se evaluo.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face con todos los campos en `[More Information Needed]`. No se puede saber con certeza que tarea resuelve, con que datos se entreno ni como se evaluo.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. En la practica, la ausencia de licencia implica que los derechos de uso no estan concedidos de forma explicita.
 - Riesgo de alucinacion y de etiquetas incorrectas: al ser un clasificador, el riesgo se traduce en predicciones erroneas con alta confianza; sin datos de evaluacion no se puede acotar la tasa de error ni el sesgo por clase.
 - Idiomas: si el modelo se entreno sobre KLUE, su utilidad fuera del coreano sera muy limitada o nula. No esta confirmado.
@@ -96,7 +96,7 @@ No se dispone de resultados de benchmarks de ninguno de ellos en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kopo17/klue-bert-sentiment-kopo17-finetune
+- Modelo en Hugging Face: https://huggingface.co/kopo17/klue-bert-sentiment-kopo17-finetune
 - Paper de Lacoste et al. (2019) sobre impacto ambiental, citado en la plantilla de la model card: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact#compute
 

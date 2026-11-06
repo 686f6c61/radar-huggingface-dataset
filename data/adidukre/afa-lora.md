@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AFA-LoRA | Ensamblado de 25 clasificadores de fotograma (ViT-B + ResNet-50) | no disponible | no aplica | MIT | HuggingFace |
+| AFA-LoRA | Ensamblado de 25 clasificadores de fotograma (ViT-B + ResNet-50) | no disponible | no aplica | MIT | Hugging Face |
 | GastroNet-5M | Checkpoints auto-supervisados de endoscopia (pesos base reutilizados por AFA-LoRA) | no disponible | no aplica | sujeta a sus propios términos | publica |
 | EndoViT | Encoder ViT auto-supervisado para endoscopia | no disponible | no aplica | no disponible | publica |
 
@@ -84,7 +84,7 @@ No se dispone de métricas comparativas publicadas en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adidukre/AFA-LoRA
+- Modelo en Hugging Face: https://huggingface.co/adidukre/AFA-LoRA
 - Repositorio de código: https://github.com/adinathdukre/AFA-LoRA
 - Reto RARE 2026 (MICCAI 2026): no disponible en la información proporcionada
 - Checkpoints GastroNet-5M: no disponible en la información proporcionada

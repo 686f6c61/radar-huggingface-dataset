@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `henzo676/poze` aloja un modelo identificado como `poze`, publicado en HuggingFace por el usuario `henzo676` bajo licencia MIT. La ficha del modelo está prácticamente vacía: no incluye descripción, arquitectura, parámetros, ni ningún dato técnico relevante. El repositorio tiene un tamaño de 0.1 GB y no registra descargas ni interacciones de la comunidad.
+El repositorio `henzo676/poze` aloja un modelo identificado como `poze`, publicado en Hugging Face por el usuario `henzo676` bajo licencia MIT. La ficha del modelo está prácticamente vacía: no incluye descripción, arquitectura, parámetros, ni ningún dato técnico relevante. El repositorio tiene un tamaño de 0.1 GB y no registra descargas ni interacciones de la comunidad.
 
 En el momento de la consulta, no existe información pública que permita determinar qué tipo de modelo es, para qué tarea fue diseñado, ni qué capacidades ofrece. La ausencia de model card, de archivos de configuración documentados y de resultados de evaluación hace imposible verificar su funcionamiento o recomendar su uso en cualquier escenario. Se trata, por tanto, de un repositorio sin documentación técnica aprovechable.
 
@@ -54,4 +54,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el propósito del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/henzo676/poze
+- Repositorio en Hugging Face: https://huggingface.co/henzo676/poze

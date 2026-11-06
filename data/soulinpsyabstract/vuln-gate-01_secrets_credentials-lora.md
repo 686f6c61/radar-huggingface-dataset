@@ -79,7 +79,7 @@ La comparativa con el modelo base muestra que el adaptador añade una capa de co
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/SoulInPsyAbstract/vuln-gate-01_secrets_credentials-lora)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/SoulInPsyAbstract/vuln-gate-01_secrets_credentials-lora)
 - [Registro del experimento EXP-031](https://huggingface.co/SoulInPsyAbstract/vuln-gate-merged-qwen25-lora)
 - [Adaptador fusionado vuln-gate-merged-qwen25-lora](https://huggingface.co/SoulInPsyAbstract/vuln-gate-merged-qwen25-lora)
 - [Sitio de SIPA OS](https://sipa-os.org)

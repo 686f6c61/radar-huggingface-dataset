@@ -4,7 +4,7 @@
 
 El modelo `tiantiaf/childvox-speechocean762-prosody-babyhubert` forma parte del proyecto ChildVox, un benchmark presentado por el autor tiantiaf para caracterizar señales acústicas infantiles a lo largo del desarrollo, desde sonidos fisiológicos hasta habla escolar. Este modelo concreto se centra en la prosodia del corpus SpeechOcean762, un conjunto de datos de inglés no nativo diseñado para tareas de evaluación de pronunciación. La arquitectura subyacente parece basarse en BabyHubert, un modelo de representación de habla infantil, adaptado para predecir o modelar características prosódicas.
 
-El modelo se distribuye a través de HuggingFace con un tamaño de repositorio de 1,9 GB, lo que sugiere un modelo de tamaño moderado, pero no se han publicado detalles técnicos específicos en la model card. Su relevancia radica en su posible aplicación en la evaluación automática de pronunciación y prosodia en habla infantil, un área con poca cobertura en los sistemas actuales. Sin embargo, la documentación pública es muy limitada y no se han proporcionado especificaciones técnicas, métricas de rendimiento ni instrucciones de uso detalladas.
+El modelo se distribuye a través de Hugging Face con un tamaño de repositorio de 1,9 GB, lo que sugiere un modelo de tamaño moderado, pero no se han publicado detalles técnicos específicos en la model card. Su relevancia radica en su posible aplicación en la evaluación automática de pronunciación y prosodia en habla infantil, un área con poca cobertura en los sistemas actuales. Sin embargo, la documentación pública es muy limitada y no se han proporcionado especificaciones técnicas, métricas de rendimiento ni instrucciones de uso detalladas.
 
 ## Especificaciones tecnicas
 
@@ -68,10 +68,10 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tiantiaf/childvox-speechocean762-prosody-babyhubert
+- Repositorio Hugging Face: https://huggingface.co/tiantiaf/childvox-speechocean762-prosody-babyhubert
 - Página del proyecto ChildVox: https://tiantiaf0627.github.io/childvox/
-- Colección ChildVox en HuggingFace: https://huggingface.co/collections/tiantiaf/childvox
+- Colección ChildVox en Hugging Face: https://huggingface.co/collections/tiantiaf/childvox
 - Paper (preprint): https://arxiv.org/abs/2605.29257
 - Código (referenciado en la model card): https://github.com/tiantiaf0627/childvox-release
 - Corpus SpeechOcean762 (GitHub): https://github.com/jimbozhang/speechocean762
-- Dataset SpeechOcean762 en HuggingFace: https://huggingface.co/datasets/mispeech/speechocean762
+- Dataset SpeechOcean762 en Hugging Face: https://huggingface.co/datasets/mispeech/speechocean762

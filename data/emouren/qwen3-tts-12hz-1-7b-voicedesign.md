@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-1.7B-VoiceDesign es un modelo de síntesis de voz (text-to-speech) publicado en HuggingFace por el usuario Emouren, derivado de la familia Qwen3-TTS desarrollada por el equipo Qwen (Alibaba). La variante VoiceDesign se centra en la generación de voz controlada mediante instrucciones en lenguaje natural, permitiendo ajustar timbre, emoción y prosodia sin necesidad de una muestra de referencia. El modelo emplea una arquitectura de lenguaje discreta con múltiples codebooks sobre un tokenizador acústico propio (Qwen3-TTS-Tokenizer-12Hz), que comprime el audio a una tasa de 12 Hz para lograr síntesis eficiente.
+Qwen3-TTS-12Hz-1.7B-VoiceDesign es un modelo de síntesis de voz (text-to-speech) publicado en Hugging Face por el usuario Emouren, derivado de la familia Qwen3-TTS desarrollada por el equipo Qwen (Alibaba). La variante VoiceDesign se centra en la generación de voz controlada mediante instrucciones en lenguaje natural, permitiendo ajustar timbre, emoción y prosodia sin necesidad de una muestra de referencia. El modelo emplea una arquitectura de lenguaje discreta con múltiples codebooks sobre un tokenizador acústico propio (Qwen3-TTS-Tokenizer-12Hz), que comprime el audio a una tasa de 12 Hz para lograr síntesis eficiente.
 
 Con 1.916.676.352 parámetros (aproximadamente 1,7B) y un tamaño de repositorio de 4,5 GB en formato safetensors, el modelo está pensado para inferencia en GPUs de gama alta de consumo y profesional. La familia Qwen3-TTS cubre diez idiomas principales (chino, inglés, japonés, coreano, alemán, francés, ruso, portugués, español e italiano) y perfiles dialectales, y destaca por una latencia de síntesis en streaming de hasta 97 ms.
 
@@ -88,8 +88,8 @@ No se dispone de datos de benchmarks comparativos con modelos de otras familias 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Emouren/Qwen3-TTS-12Hz-1.7B-VoiceDesign
-- Colección oficial Qwen3-TTS en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Hugging Face: https://huggingface.co/Emouren/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+- Colección oficial Qwen3-TTS en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts
 - ModelScope: https://modelscope.cn/collections/Qwen/Qwen3-TTS
 - Blog: https://qwen.ai/blog?id=qwen3tts-0115
 - Paper: https://huggingface.co/papers/2601.15621

@@ -29,7 +29,7 @@ La relevancia de esta publicacion es practica: el repositorio de mradermacher of
 
 No se dispone de informacion sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni las tecnicas de alineacion (RLHF, DPO u otras) del modelo mPLUG/GUI-Owl-1.5-32B-Think. La model card del repositorio de cuantizacion se limita a indicar que se trata de cuantizaciones estaticas del modelo base y no reproduce la documentacion del autor original. Lo unico verificable a partir de los ficheros publicados es la existencia de un proyector multimodal (`mmproj`) en dos precisiones, lo que implica que el modelo procesa entradas de imagen ademas de texto, coherente con un modelo de agente sobre interfaces graficas.
 
-En cuanto al proceso de cuantizacion, la cabecera de la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, conversion desde pesos HuggingFace con cuantizacion por tensor de salida. El autor publica ademas una variante con cuantizacion ponderada mediante imatrix en el repositorio `mradermacher/GUI-Owl-1.5-32B-Think-i1-GGUF`, que suele ofrecer mejor relacion calidad-tamano que las cuantizaciones estaticas equivalentes. En la tabla de variantes, el propio autor marca Q3_K_M como "lower quality" y recomienda Q4_K_S y Q4_K_M como opciones rapidas, Q6_K como muy buena calidad y Q8_0 como la de mejor calidad.
+En cuanto al proceso de cuantizacion, la cabecera de la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, conversion desde pesos Hugging Face con cuantizacion por tensor de salida. El autor publica ademas una variante con cuantizacion ponderada mediante imatrix en el repositorio `mradermacher/GUI-Owl-1.5-32B-Think-i1-GGUF`, que suele ofrecer mejor relacion calidad-tamano que las cuantizaciones estaticas equivalentes. En la tabla de variantes, el propio autor marca Q3_K_M como "lower quality" y recomienda Q4_K_S y Q4_K_M como opciones rapidas, Q6_K como muy buena calidad y Q8_0 como la de mejor calidad.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ Unico dato cuantitativo disponible (tamano en disco por cuantizacion):
 - GPU de 32-40 GB: Q6_K (27,0 GB) y Q8_0 (34,9 GB) son viables en V100 32 GB y A100 40 GB respectivamente.
 - GPU de 48 GB o multiples GPU: recomendable para Q8_0 con contexto amplio; tambien se puede repartir entre dos GPU de 24 GB mediante `--split-mode` en llama.cpp.
 - Cabe en GPU de consumo: si, con cuantizaciones de 4 bits o inferiores (Q2_K a Q4_K_M) en tarjetas de 12 a 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El repositorio incluye la etiqueta `endpoints_compatible`, lo que apunta a compatibilidad con endpoints de HuggingFace. Para vLLM o TGI habria que usar los pesos safetensors del modelo base, no estos GGUF.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El repositorio incluye la etiqueta `endpoints_compatible`, lo que apunta a compatibilidad con endpoints de Hugging Face. Para vLLM o TGI habria que usar los pesos safetensors del modelo base, no estos GGUF.
 - Latencia y throughput estimados: no disponible (dependen de la GPU, la cuantizacion y la longitud de contexto, y el autor no publica mediciones).
 - Almacenamiento: el repositorio completo ocupa 225,9 GB, por lo que conviene descargar solo la cuantizacion necesaria mediante `huggingface-cli download` con filtro por fichero.
 

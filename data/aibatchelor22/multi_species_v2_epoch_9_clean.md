@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`aibatchelor22/multi_species_v2_epoch_9_clean` es un checkpoint publicado en HuggingFace por el usuario `aibatchelor22`. El repositorio ocupa 0,3 GB y esta etiquetado con `pytorch`, `audio-spectrogram-transformer` y `region:us`. La etiqueta de arquitectura indica que se trata de un modelo basado en Audio Spectrogram Transformer (AST), una familia de modelos de clasificacion de audio que aplica un transformer tipo ViT sobre espectrogramas mel. El nombre del checkpoint sugiere un caso de uso de clasificacion multi-especie (probablemente bioacustica: cantos de aves u otras especies animales), si bien esto no esta confirmado en la informacion disponible.
+`aibatchelor22/multi_species_v2_epoch_9_clean` es un checkpoint publicado en Hugging Face por el usuario `aibatchelor22`. El repositorio ocupa 0,3 GB y esta etiquetado con `pytorch`, `audio-spectrogram-transformer` y `region:us`. La etiqueta de arquitectura indica que se trata de un modelo basado en Audio Spectrogram Transformer (AST), una familia de modelos de clasificacion de audio que aplica un transformer tipo ViT sobre espectrogramas mel. El nombre del checkpoint sugiere un caso de uso de clasificacion multi-especie (probablemente bioacustica: cantos de aves u otras especies animales), si bien esto no esta confirmado en la informacion disponible.
 
-El problema que resuelve, por tanto, no es la generacion de texto ni el razonamiento linguistico, sino la clasificacion automatica de audio en categorias de especies. Se trata de un artefacto de investigacion con un numero muy bajo de descargas (13) y cero likes, sin model card publica, sin licencia declarada y sin idiomas especificados; el pipeline de HuggingFace figura como no disponible, lo que limita su uso directo con las utilidades estandar de transformers sin inspeccionar el repositorio.
+El problema que resuelve, por tanto, no es la generacion de texto ni el razonamiento linguistico, sino la clasificacion automatica de audio en categorias de especies. Se trata de un artefacto de investigacion con un numero muy bajo de descargas (13) y cero likes, sin model card publica, sin licencia declarada y sin idiomas especificados; el pipeline de Hugging Face figura como no disponible, lo que limita su uso directo con las utilidades estandar de transformers sin inspeccionar el repositorio.
 
 Es relevante ahora unicamente en el contexto de la bioacustica computacional y la monitorizacion acustica pasiva, donde los transformers aplicados a espectrogramas han desplazado a las CNN clasicas. No obstante, la ausencia de documentacion, de licencia y de resultados de evaluacion hace que su adopcion en produccion requiera verificacion manual previa.
 
@@ -65,7 +65,7 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparacion se lim
 
 | Modelo | Arquitectura | Parametros aproximados | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `aibatchelor22/multi_species_v2_epoch_9_clean` | AST (segun tag) | no disponible | no disponible | HuggingFace, repositorio de 0,3 GB |
+| `aibatchelor22/multi_species_v2_epoch_9_clean` | AST (segun tag) | no disponible | no disponible | Hugging Face, repositorio de 0,3 GB |
 | AST (Gong et al., 2021) | Transformer sobre espectrograma | ~87 M (base) | codigo publicado por los autores | repositorios academicos |
 | PANNs (Kong et al., 2020) | CNN sobre espectrograma | ~81 M (CNN14) | codigo publicado por los autores | repositorios academicos |
 | PaSST (Koutini et al., 2021) | Transformer con parches y destilacion | ~87 M (base) | codigo publicado por los autores | repositorios academicos |
@@ -82,12 +82,12 @@ Criterios de comparacion como contexto de entrada, rendimiento medido, licencia 
 - Nombre del checkpoint no concluyente: `epoch_9` indica un punto intermedio de entrenamiento, no necesariamente el mejor; `clean` no especifica que se limpio ni como.
 - Sin informacion sobre preprocesado: se desconoce la frecuencia de muestreo esperada, la duracion de los fragmentos de entrada y la normalizacion aplicada, lo que puede provocar fallos silenciosos si se usa con una configuracion distinta.
 - Metadatos anomalos: la fecha de creacion registrada (2026-09-13) es posterior a la fecha habitual de consulta; conviene verificar la procedencia del repositorio.
-- Sin soporte de pipeline en HuggingFace: el campo pipeline figura como no disponible, lo que obliga a inspeccionar el repositorio para reconstruir la clase de modelo y la configuracion.
+- Sin soporte de pipeline en Hugging Face: el campo pipeline figura como no disponible, lo que obliga a inspeccionar el repositorio para reconstruir la clase de modelo y la configuracion.
 - Uso en produccion no recomendado sin validacion: no deberia tomarse como base para decisiones de conservacion, regulacion o gestion sin una evaluacion independiente sobre datos locales.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aibatchelor22/multi_species_v2_epoch_9_clean
+- Repositorio en Hugging Face: https://huggingface.co/aibatchelor22/multi_species_v2_epoch_9_clean
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a contenido no relacionado con el modelo (paginas de recitacion coranica), por lo que no se incluyen como referencias.
 - Referencias genericas de la arquitectura indicada por el tag (no vinculadas al repositorio): articulo "AST: Audio Spectrogram Transformer" de Gong, Chung y Glass (2021), disponible en arXiv.
 - No se dispone de paper, blog, repositorio de codigo, demo ni dataset asociados especificamente a este checkpoint.

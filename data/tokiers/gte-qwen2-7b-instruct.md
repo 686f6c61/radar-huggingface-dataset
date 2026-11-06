@@ -4,7 +4,7 @@
 
 El repositorio `tokiers/gte-Qwen2-7B-instruct` no contiene un modelo de lenguaje, sino un tokenizador precompilado en formato binario `tokie` para el modelo de embeddings `Alibaba-NLP/gte-Qwen2-7B-instruct` desarrollado por Alibaba. El artefacto principal es `tokenizer.tkz`, un fichero de aproximadamente 0,2 GB que empaqueta el vocabulario y las reglas de pre-tokenización del modelo original en un formato binario optimizado para carga rápida.
 
-La relevancia de este repositorio es operativa: permite sustituir la librería `tokenizers` de HuggingFace por `tokie`, una implementación en Rust que el autor declara entre 50 veces más rápida en tokenización y con ficheros aproximadamente 10 veces más pequeños, manteniendo una precisión del 100 % respecto al tokenizador original. Está pensado para pipelines de inferencia de alto throughput donde la tokenización deja de ser un cuello de botella.
+La relevancia de este repositorio es operativa: permite sustituir la librería `tokenizers` de Hugging Face por `tokie`, una implementación en Rust que el autor declara entre 50 veces más rápida en tokenización y con ficheros aproximadamente 10 veces más pequeños, manteniendo una precisión del 100 % respecto al tokenizador original. Está pensado para pipelines de inferencia de alto throughput donde la tokenización deja de ser un cuello de botella.
 
 Es importante subrayar que este repositorio no incluye pesos del modelo GTE-Qwen2-7B. Para ejecutar el modelo de embeddings es necesario descargar los pesos desde el repositorio oficial de Alibaba. Las especificaciones de arquitectura, contexto y entrenamiento que se detallan a continuación corresponden al modelo original, no al tokenizador empaquetado.
 
@@ -19,7 +19,7 @@ Es importante subrayar que este repositorio no incluye pesos del modelo GTE-Qwen
 | Tipos de cuantizacion | No aplica al tokenizador; los pesos del modelo original se distribuyen en safetensors |
 | Idiomas soportados | No disponible en la informacion proporcionada |
 | Licencia | MIT OR Apache-2.0 para la libreria tokie; los ficheros originales conservan la licencia de Alibaba-NLP/gte-Qwen2-7B-instruct (no especificada en este repositorio) |
-| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (HuggingFace, si esta disponible) |
+| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (Hugging Face, si esta disponible) |
 
 ## Arquitectura y entrenamiento
 
@@ -33,12 +33,12 @@ No se proporciona informacion sobre el proceso de entrenamiento del modelo subya
 - Carga en Python mediante `tokie.Tokenizer.from_pretrained(...)`.
 - Carga en Rust mediante el crate `tokie` con la feature `hf`.
 - Formato binario de carga rapida (aproximadamente 5 ms) y tamano reducido (aproximadamente 10 veces menor que el JSON equivalente).
-- Precisión declarada del 100 % respecto al tokenizador original de HuggingFace.
+- Precisión declarada del 100 % respecto al tokenizador original de Hugging Face.
 - No incluye generacion de texto, razonamiento, codigo, vision ni tool calling; esas capacidades pertenecen al modelo de embeddings, no a este repositorio.
 
 ## Casos de uso
 
-- Sustitucion del tokenizador de HuggingFace en pipelines de embeddings: se instala `tokie` y se carga el tokenizador desde este repositorio para alimentar el modelo GTE-Qwen2-7B-instruct con el mismo vocabulario, reduciendo el tiempo de preprocesado en servicios de retrieval.
+- Sustitucion del tokenizador de Hugging Face en pipelines de embeddings: se instala `tokie` y se carga el tokenizador desde este repositorio para alimentar el modelo GTE-Qwen2-7B-instruct con el mismo vocabulario, reduciendo el tiempo de preprocesado en servicios de retrieval.
 - Servicios de busqueda semantica de alta concurrencia: al cargar el tokenizador en unos 5 ms y serializar en binario, el arranque en frio de workers de embedding disminuye, lo que resulta util en despliegues con autoescalado.
 - Despliegue en Rust: integracion directa en servicios backend escritos en Rust mediante el crate `tokie`, evitando el puente con Python para la fase de tokenizacion.
 - Reduccion de tamano de imagen de contenedor: el fichero `tokenizer.tkz` ocupa aproximadamente una decima parte del JSON equivalente, lo que simplifica el empaquetado en entornos con almacenamiento limitado.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-| Aspecto | tokiers/gte-Qwen2-7B-instruct (tokenizador tokie) | tokenizers de HuggingFace (JSON) | Repositorio oficial Alibaba-NLP/gte-Qwen2-7B-instruct |
+| Aspecto | tokiers/gte-Qwen2-7B-instruct (tokenizador tokie) | tokenizers de Hugging Face (JSON) | Repositorio oficial Alibaba-NLP/gte-Qwen2-7B-instruct |
 |---|---|---|---|
 | Contenido | Tokenizador binario | Tokenizador JSON | Pesos del modelo y tokenizador |
 | Tamano | Aproximadamente 0,2 GB | Mayor (JSON, aproximadamente 10 veces mas segun el autor) | Multiples GB (pesos safetensors) |
@@ -79,10 +79,10 @@ No se dispone de informacion sobre otros tokenizadores alternativos (por ejemplo
 - La afirmacion de "100 % de precision" y las mejoras de velocidad proceden del autor del proyecto `tokie` y no se han verificado de forma independiente en la informacion disponible.
 - El repositorio depende de la libreria `tokie` (version 0.0.4 en el ejemplo de Rust), una version temprana que puede cambiar de API.
 - No se documentan los idiomas cubiertos por el vocabulario; hay que asumir los del modelo original, sin confirmacion en este repositorio.
-- El campo `pipeline` esta vacio y la libreria declarada es `tokie`, no `transformers`, por lo que las herramientas estandar de HuggingFace pueden no reconocerlo automaticamente.
+- El campo `pipeline` esta vacio y la libreria declarada es `tokie`, no `transformers`, por lo que las herramientas estandar de Hugging Face pueden no reconocerlo automaticamente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tokiers/gte-Qwen2-7B-instruct
+- Repositorio en Hugging Face: https://huggingface.co/tokiers/gte-Qwen2-7B-instruct
 - Modelo original: https://huggingface.co/Alibaba-NLP/gte-Qwen2-7B-instruct
 - Repositorio GitHub de tokie: https://github.com/chonkie-inc/tokie

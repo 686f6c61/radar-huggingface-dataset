@@ -75,7 +75,7 @@ No se dispone de comparaciones con otros ASR como Whisper o Wav2Vec2 en la infor
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/japathak/tirona-parakeet-v2-coreml
+- Repositorio de Hugging Face: https://huggingface.co/japathak/tirona-parakeet-v2-coreml
 - Repositorio upstream (FluidInference): https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v2-coreml
 - Repositorio alternativo (aoiandroid): https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v2-coreml
 - Referencia de arquitectura (GitHub coreai-model-zoo): https://github.com/john-rocky/coreai-model-zoo/tree/main/models/parakeet-v2

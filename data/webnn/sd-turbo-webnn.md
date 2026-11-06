@@ -90,7 +90,7 @@ SD-Turbo-WebNN se diferencia de SD-Turbo únicamente en el formato (ONNX con for
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/webnn/sd-turbo-webnn
+- Hugging Face: https://huggingface.co/webnn/sd-turbo-webnn
 - Modelo original SD-Turbo: https://huggingface.co/stabilityai/sd-turbo
 - SDXL-Turbo: https://huggingface.co/stabilityai/sdxl-turbo/
 - Stable Diffusion 2.1: https://huggingface.co/stabilityai/stable-diffusion-2-1

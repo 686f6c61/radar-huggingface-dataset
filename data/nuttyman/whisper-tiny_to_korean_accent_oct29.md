@@ -72,10 +72,10 @@ No se han publicado comparaciones con otros modelos (por ejemplo, el Whisper tin
 
 | Modelo | Parametros | Idioma/especializacion | Licencia | Contexto de audio | Disponibilidad |
 |---|---|---|---|---|---|
-| Nuttyman/whisper-tiny_to_korean_accent_oct29 | 37,7 M | Ingles con acento coreano (fine-tuning) | Apache 2.0 | no disponible | HuggingFace, safetensors |
-| openai/whisper-tiny (base) | 39 M (aprox. 37,7 M en safetensors) | Multilingue (99 idiomas) | MIT | 30 s por ventana | HuggingFace, amplia compatibilidad |
-| openai/whisper-base | 74 M | Multilingue (99 idiomas) | MIT | 30 s por ventana | HuggingFace, amplia compatibilidad |
-| openai/whisper-small | 244 M | Multilingue (99 idiomas) | MIT | 30 s por ventana | HuggingFace, amplia compatibilidad |
+| Nuttyman/whisper-tiny_to_korean_accent_oct29 | 37,7 M | Ingles con acento coreano (fine-tuning) | Apache 2.0 | no disponible | Hugging Face, safetensors |
+| openai/whisper-tiny (base) | 39 M (aprox. 37,7 M en safetensors) | Multilingue (99 idiomas) | MIT | 30 s por ventana | Hugging Face, amplia compatibilidad |
+| openai/whisper-base | 74 M | Multilingue (99 idiomas) | MIT | 30 s por ventana | Hugging Face, amplia compatibilidad |
+| openai/whisper-small | 244 M | Multilingue (99 idiomas) | MIT | 30 s por ventana | Hugging Face, amplia compatibilidad |
 
 La ventaja diferencial de este modelo frente al Whisper tiny base seria un menor WER sobre habla inglesa con acento coreano, aunque no existe una comparacion directa publicada. Frente a variantes mayores de Whisper, ofrece mucha menor latencia y footprint a costa de precision general y cobertura multilingue.
 
@@ -91,7 +91,7 @@ La ventaja diferencial de este modelo frente al Whisper tiny base seria un menor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nuttyman/whisper-tiny_to_korean_accent_oct29
+- Modelo en Hugging Face: https://huggingface.co/Nuttyman/whisper-tiny_to_korean_accent_oct29
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper original de Whisper (referencia de la arquitectura base): https://arxiv.org/abs/2212.04356
 - Repositorio original de Whisper de OpenAI: https://github.com/openai/whisper

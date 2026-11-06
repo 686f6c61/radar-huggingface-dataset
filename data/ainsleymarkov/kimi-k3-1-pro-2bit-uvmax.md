@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 - No existe un loader público: mlx-lm no implementa `kimi_k31` ni el indexador DSA, y el motor tensor-parallel del autor no se ha publicado. El checkpoint no es ejecutable de serie.
 - La cuantización a 2 bits de los expertos enrutados puede degradar la calidad de forma notable; no se han publicado evaluaciones que cuantifiquen esa pérdida.
 - El tamaño (817 GB) hace inviable el despliegue en GPUs de consumo y exige estaciones de trabajo con memoria unificada muy alta.
-- La licencia `kimi-k3.1-pro` es propia y no estándar; es necesario revisar sus términos antes de cualquier uso comercial. El campo `license: other` en HuggingFace no aclara restricciones.
+- La licencia `kimi-k3.1-pro` es propia y no estándar; es necesario revisar sus términos antes de cualquier uso comercial. El campo `license: other` en Hugging Face no aclara restricciones.
 - No se han publicado datos de idiomas soportados, sesgos ni tasas de alucinación para esta variante cuantizada.
 - El proceso de conversión y el motor de inferencia son propietarios y no reproducibles con las herramientas públicas actuales.
 - La revisión `d9e99b0` del modelo base elimina el nivel de esfuerzo de pensamiento `medium`; los prompts que dependan de ese nivel pueden comportarse de forma distinta.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AinsleyMarkov/Kimi-K3.1-Pro-2bit-UVMAX
+- Hugging Face: https://huggingface.co/AinsleyMarkov/Kimi-K3.1-Pro-2bit-UVMAX
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Receta de cuantización de referencia: https://huggingface.co/kernelpool/Kimi-K3-2bit-UVMAX
 - Repositorio MLX: no disponible en la información proporcionada

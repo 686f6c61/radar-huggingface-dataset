@@ -4,7 +4,7 @@
 
 El modelo `innkl24/shan-tts-mms-v2` es un sistema de síntesis de voz (text-to-speech) orientado al idioma shan, una lengua hablada principalmente en el estado Shan de Myanmar y en comunidades de la diáspora. El autor, `innkl24`, lo publica bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas. El nombre sugiere que se trata de un ajuste fino (fine-tuning) sobre el framework MMS (Massively Multilingual Speech) de Meta, que proporciona modelos de voz multilingües preentrenados.
 
-La relevancia de este modelo radica en que el shan es un idioma de bajos recursos, con escasa representación en herramientas de IA. Un TTS funcional para esta lengua puede facilitar la accesibilidad, la preservación lingüística y la creación de contenido digital en comunidades que utilizan el shan. Sin embargo, la información pública disponible es extremadamente limitada: la model card solo contiene la licencia, y no se especifican arquitectura, tamaño, contexto ni datos de entrenamiento. El repositorio de GitHub asociado (`NoerNova/Shan_TTS_MMS`) sugiere que el proyecto está en desarrollo activo, pero no se han publicado detalles técnicos en la ficha de HuggingFace.
+La relevancia de este modelo radica en que el shan es un idioma de bajos recursos, con escasa representación en herramientas de IA. Un TTS funcional para esta lengua puede facilitar la accesibilidad, la preservación lingüística y la creación de contenido digital en comunidades que utilizan el shan. Sin embargo, la información pública disponible es extremadamente limitada: la model card solo contiene la licencia, y no se especifican arquitectura, tamaño, contexto ni datos de entrenamiento. El repositorio de GitHub asociado (`NoerNova/Shan_TTS_MMS`) sugiere que el proyecto está en desarrollo activo, pero no se han publicado detalles técnicos en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -61,6 +61,6 @@ No se dispone de información sobre modelos comparables en el idioma shan. No ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/innkl24/shan-tts-mms-v2
+- Modelo en Hugging Face: https://huggingface.co/innkl24/shan-tts-mms-v2
 - Repositorio de GitHub (NoerNova/Shan_TTS_MMS): https://github.com/NoerNova/Shan_TTS_MMS
-- Perfil del autor en HuggingFace: https://huggingface.co/innkl24
+- Perfil del autor en Hugging Face: https://huggingface.co/innkl24

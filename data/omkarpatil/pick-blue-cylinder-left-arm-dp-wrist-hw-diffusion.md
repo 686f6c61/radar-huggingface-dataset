@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una Diffusion Policy entrenada con la libreria LeRobot (v0.6.1) para la tarea de manipulacion robotica "pick-blue-cylinder-left-arm" sobre el robot ROBOTIS FFW SG2 Rev1. Fue desarrollado por Omkar Patil y publicado en HuggingFace con licencia Apache 2.0. El modelo recibe imagenes de dos camaras de muñeca (izquierda y derecha) junto con el estado del robot y genera acciones continuas de control mediante un proceso de denoising difuso (DDPM).
+Este modelo es una Diffusion Policy entrenada con la libreria LeRobot (v0.6.1) para la tarea de manipulacion robotica "pick-blue-cylinder-left-arm" sobre el robot ROBOTIS FFW SG2 Rev1. Fue desarrollado por Omkar Patil y publicado en Hugging Face con licencia Apache 2.0. El modelo recibe imagenes de dos camaras de muñeca (izquierda y derecha) junto con el estado del robot y genera acciones continuas de control mediante un proceso de denoising difuso (DDPM).
 
 La relevancia de este modelo reside en su esquema de normalizacion "hardware-derived": en lugar de derivar los limites de normalizacion de los datos de entrenamiento, los obtiene de los limites articulares del URDF del robot, con un pad del 75% en las articulaciones de gripper, cabeza y elevacion. Esto permite que el modelo sea componible con otras politicas del mismo "grupo de composicion" sin necesidad de reentrenar al anadir nuevas demostraciones. El modelo tiene aproximadamente 274 millones de parametros y un peso de repositorio de 1,1 GB en formato safetensors.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, etc.
 | omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 | GR00T | no disponible | no disponible | Hardware-derived (percentiles q01/q99) | No (arquitecturas distintas) |
 | Variante de 3 camaras del mismo policy (mencionada en model card) | Diffusion Policy | no disponible | 3x (cabeza + muñecas, re-encodificadas a tamano comun) | Hardware-derived (grupo B) | Si, si comparte hash |
 
-La comparativa se basa en la informacion de la model card y del perfil del autor en HuggingFace. No hay datos publicados de rendimiento relativo entre estas variantes. La diferencia clave entre la variante de 3 camaras y la de solo muñecas es la resolucion uniforme: la de 3 camaras requeria re-encodificar todas las vistas a un tamano comun, mientras que la de muñecas mantiene la resolucion nativa.
+La comparativa se basa en la informacion de la model card y del perfil del autor en Hugging Face. No hay datos publicados de rendimiento relativo entre estas variantes. La diferencia clave entre la variante de 3 camaras y la de solo muñecas es la resolucion uniforme: la de 3 camaras requeria re-encodificar todas las vistas a un tamano comun, mientras que la de muñecas mantiene la resolucion nativa.
 
 ## Limitaciones y advertencias
 
@@ -75,12 +75,12 @@ La comparativa se basa en la informacion de la model card y del perfil del autor
 - La normalizacion hardware-derived asume que los limites del URDF cubren el rango de movimiento real; el pad del 75% en grippers, cabeza y elevacion es una correccion manual que podria no ser adecuada para otros robots o tareas.
 - Riesgo de alucinacion no aplica en el sentido de los LLM, pero la politica puede generar acciones fuera del espacio valido si los limites de normalizacion no se respetan en inferencia.
 - No se han publicado evaluaciones en el robot real (tasa de exito, robustez a perturbaciones), por lo que el rendimiento en produccion es desconocido.
-- El dataset de entrenamiento no es publico en el repositorio del modelo; el enlace al dataset de HuggingFace existe pero no se detalla su tamano ni composicion.
+- El dataset de entrenamiento no es publico en el repositorio del modelo; el enlace al dataset de Hugging Face existe pero no se detalla su tamano ni composicion.
 - El modelo tiene 0 descargas y 0 likes en el momento de la redaccion, lo que sugiere que es un experimento reciente sin validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/pick-blue-cylinder-left-arm-dp-wrist-hw-diffusion
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/pick-blue-cylinder-left-arm-dp-wrist-hw-diffusion
 - Dataset asociado: https://huggingface.co/datasets/omkarpatil/pick-blue-cylinder-left-arm
-- Perfil del autor en HuggingFace: https://huggingface.co/omkarpatil
+- Perfil del autor en Hugging Face: https://huggingface.co/omkarpatil
 - Modelo GR00T de la misma tarea (variante alternativa): https://huggingface.co/omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7

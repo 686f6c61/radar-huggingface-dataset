@@ -95,7 +95,7 @@ No hay datos públicos de rendimiento para comparar estos modelos. La comparaci�
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/Ternary-Bonsai-2-9B-hf-bf16-GGUF](https://huggingface.co/mradermacher/Ternary-Bonsai-2-9B-hf-bf16-GGUF)
+- [Hugging Face: mradermacher/Ternary-Bonsai-2-9B-hf-bf16-GGUF](https://huggingface.co/mradermacher/Ternary-Bonsai-2-9B-hf-bf16-GGUF)
 - [Modelo base: jonathan-kellerai/Ternary-Bonsai-2-9B-hf-bf16](https://huggingface.co/jonathan-kellerai/Ternary-Bonsai-2-9B-hf-bf16)
 - [Página de descargas de quants](https://hf.tst.eu/model#Ternary-Bonsai-2-9B-hf-bf16-GGUF)
 - [Licencia referenciada: Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE)

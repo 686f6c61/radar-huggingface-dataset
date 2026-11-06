@@ -1,17 +1,17 @@
 # internlm/Intern-S2-397B
 
 ## Resumen
-Intern-S2-397B es un modelo fundacional multimodal de tipo image-text-to-text desarrollado por InternLM (Shanghai AI Laboratory), presentado como su modelo mas capaz para inteligencia cientifica y agentes de horizonte largo. Segun los pesos publicados en safetensors, cuenta con 403.423.094.768 parametros totales (unos 403,4 mil millones, por encima de los 397B que sugiere el nombre), con un repositorio de 806,9 GB, coherente con pesos en BF16. La etiqueta de arquitectura de HuggingFace es qwen3_5_moe, lo que indica una mezcla de expertos, aunque no se detalla el numero de expertos ni los parametros activos.
+Intern-S2-397B es un modelo fundacional multimodal de tipo image-text-to-text desarrollado por InternLM (Shanghai AI Laboratory), presentado como su modelo mas capaz para inteligencia cientifica y agentes de horizonte largo. Segun los pesos publicados en safetensors, cuenta con 403.423.094.768 parametros totales (unos 403,4 mil millones, por encima de los 397B que sugiere el nombre), con un repositorio de 806,9 GB, coherente con pesos en BF16. La etiqueta de arquitectura de Hugging Face es qwen3_5_moe, lo que indica una mezcla de expertos, aunque no se detalla el numero de expertos ni los parametros activos.
 
 El modelo escala en tres ejes: preentrenamiento vision-lenguaje, cobertura de tareas de aprendizaje por refuerzo y entornos de agente interactivos. Su propuesta diferencial es un paradigma de preentrenamiento visual que aprende directamente de paginas crudas de literatura cientifica, modelando de forma conjunta semantica simbolica y relaciones visuales sin parsing intermedio. A esto se suma un entrenamiento de refuerzo multi-tarea en mas de 20 dominios cientificos y un RL agentico de horizonte largo sobre entornos sandbox.
 
-Es relevante ahora porque compite en la categoria de modelos abiertos de gran escala con licencia Apache 2.0, con soporte declarado para tool calling, despliegue en LMDeploy, vLLM y SGLang, y ventanas de evaluacion de hasta 256.000 tokens en texto y 64.000 en multimodal. La publicacion en HuggingFace figura fechada el 13 de septiembre de 2026, con 9 me gusta y 0 descargas en el momento de la consulta.
+Es relevante ahora porque compite en la categoria de modelos abiertos de gran escala con licencia Apache 2.0, con soporte declarado para tool calling, despliegue en LMDeploy, vLLM y SGLang, y ventanas de evaluacion de hasta 256.000 tokens en texto y 64.000 en multimodal. La publicacion en Hugging Face figura fechada el 13 de septiembre de 2026, con 9 me gusta y 0 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con mezcla de expertos (MoE); etiqueta de HuggingFace: qwen3_5_moe |
+| Arquitectura | Transformer multimodal con mezcla de expertos (MoE); etiqueta de Hugging Face: qwen3_5_moe |
 | Parametros totales | 403.423.094.768 (≈403,4 mil millones), segun los pesos en safetensors |
 | Parametros activos | no disponible (la etiqueta qwen3_5_moe indica MoE, pero no se especifican expertos ni parametros activos) |
 | Longitud de contexto | no declarada de forma explicita; las evaluaciones del autor usan hasta 256.000 tokens en texto y 64.000 tokens en multimodal |
@@ -24,7 +24,7 @@ Es relevante ahora porque compite en la categoria de modelos abiertos de gran es
 | Tamano del repositorio | 806,9 GB |
 | Frameworks de despliegue soportados | LMDeploy, vLLM, SGLang |
 | Parametros de muestreo recomendados | top_p = 0.95, top_k = 50, min_p = 0.0, temperature = 0.8 |
-| Fecha de publicacion en HuggingFace | 13 de septiembre de 2026 (segun metadatos del repositorio) |
+| Fecha de publicacion en Hugging Face | 13 de septiembre de 2026 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 La informacion disponible no detalla el numero de capas, la configuracion del router de expertos ni el balance entre parametros totales y activos. La etiqueta qwen3_5_moe apunta a una arquitectura de mezcla de expertos heredada del linaje Qwen 3.5, combinada con un codificador visual para entrada de imagen y texto. El modelo se evalua con longitudes de inferencia de hasta 256K tokens en texto y 64K en multimodal, lo que da una cota inferior de su ventana de contexto efectiva, aunque el autor no declara el valor nominal.
@@ -70,7 +70,7 @@ La informacion proporcionada no incluye datos verificables de los modelos de com
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Intern-S2-397B | 403,4 mil millones totales; activos no disponibles | no declarada; evaluado a 256K texto / 64K multimodal | Apache 2.0 | solo figura comparativa, sin cifras extraibles | HuggingFace, ModelScope |
+| Intern-S2-397B | 403,4 mil millones totales; activos no disponibles | no declarada; evaluado a 256K texto / 64K multimodal | Apache 2.0 | solo figura comparativa, sin cifras extraibles | Hugging Face, ModelScope |
 | Alternativas abiertas de gran escala tipo MoE multimodal (por ejemplo, familias DeepSeek, Qwen o Llama en sus variantes mayores) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos en formato numerico, por lo que no es posible establecer una comparacion cuantitativa fiable con alternativas concretas.
@@ -86,10 +86,10 @@ No se dispone de datos de benchmarks comparativos en formato numerico, por lo qu
 - Coherencia de nomenclatura: el nombre comercial indica 397B mientras que el recuento real de safetensors es de 403,4 mil millones de parametros; conviene usar la cifra real al dimensionar hardware.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/internlm/Intern-S2-397B
+- Modelo en Hugging Face: https://huggingface.co/internlm/Intern-S2-397B
 - Licencia: https://huggingface.co/internlm/Intern-S2/blob/main/LICENSE
 - Repositorio GitHub (enlazado desde la model card): https://github.com/InternLM/Intern-S1
-- Coleccion de modelos en HuggingFace: https://huggingface.co/collections/internlm/intern-s2
+- Coleccion de modelos en Hugging Face: https://huggingface.co/collections/internlm/intern-s2
 - Coleccion de modelos en ModelScope: https://modelscope.cn/collections/Shanghai_AI_Laboratory/intern-s2
 - Demo de chat en linea: https://chat.intern-ai.org.cn/
 - Discord del proyecto: https://discord.gg/xa29JuW87d

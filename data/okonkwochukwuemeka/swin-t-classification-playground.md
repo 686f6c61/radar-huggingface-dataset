@@ -32,7 +32,7 @@ Su relevancia es limitada y muy específica: sirve como punto de partida reprodu
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a una Swin Transformer, es decir, un transformer jerárquico de visión que computa atención dentro de ventanas locales desplazadas entre bloques consecutivos. Frente a un ViT de atención global, este diseño reduce el coste computacional de forma cuadrática a lineal respecto a la resolución de la imagen y construye representaciones multiescala mediante la fusión progresiva de parches. La implementación concreta de este repositorio es una reescritura propia en PyTorch, no una copia de los `transformers` de HuggingFace ni del repositorio oficial de Microsoft. Según la configuración incluida, emplea atención grouped query, fusión tipo tucker, activación approx gelu y normalización layernorm.
+La arquitectura corresponde a una Swin Transformer, es decir, un transformer jerárquico de visión que computa atención dentro de ventanas locales desplazadas entre bloques consecutivos. Frente a un ViT de atención global, este diseño reduce el coste computacional de forma cuadrática a lineal respecto a la resolución de la imagen y construye representaciones multiescala mediante la fusión progresiva de parches. La implementación concreta de este repositorio es una reescritura propia en PyTorch, no una copia de los `transformers` de Hugging Face ni del repositorio oficial de Microsoft. Según la configuración incluida, emplea atención grouped query, fusión tipo tucker, activación approx gelu y normalización layernorm.
 
 No hay entrenamiento documentado. El propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se presenta como un checkpoint entrenado con benchmarks. La receta por defecto usa el optimizador lamb con un schedule de warmup lineal, pero el README aclara que son valores de arranque del script y no evidencia de una ejecución completada. No se especifican número de tokens, composición del dataset, resolución de entrada, número de épocas, ni si hubo RLHF, DPO o cualquier otra fase de alineamiento. Tampoco se declara qué dataset de clasificación se usaría como objetivo.
 
@@ -79,7 +79,7 @@ Los valores de referencia proceden de las publicaciones originales de cada model
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swin-t-classification-playground (este repositorio) | 24.832 (según safetensors) | No disponible | Sin benchmarks declarados; checkpoint no entrenado | BSD-3-Clause | HuggingFace, 0 descargas |
+| swin-t-classification-playground (este repositorio) | 24.832 (según safetensors) | No disponible | Sin benchmarks declarados; checkpoint no entrenado | BSD-3-Clause | Hugging Face, 0 descargas |
 | Swin-T original (Microsoft) | ~28 M | 224x224, ventanas desplazadas | 81,3 % top-1 en ImageNet-1k según el paper original | MIT | Pesos preentrenados públicos |
 | DeiT-Tiny | ~5 M | 224x224 | 72,2 % top-1 en ImageNet-1k según el paper original | Apache-2.0 (variante de los autores) | Pesos preentrenados públicos |
 | ResNet-50 | ~25,6 M | 224x224 | 76,1 % top-1 en ImageNet-1k según el paper original | BSD / Apache según implementación | Ampliamente disponible |
@@ -91,7 +91,7 @@ La comparación directa es poco informativa: este repositorio no compite en rend
 - El checkpoint no está entrenado. Cualquier uso para inferencia real producirá salidas sin valor predictivo.
 - No se han auditado robustez, equidad ni transferencia de dominio, tal y como reconoce el propio README.
 - La model card contiene una contradicción interna: declara escala "giant" en la tabla de arquitectura mientras el fichero de pesos registra 24.832 parámetros. Hay que tratar la configuración como texto generado, no como descripción fiable del artefacto.
-- Es una implementación personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de funcionar.
+- Es una implementación personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de funcionar.
 - No se documentan la resolución de entrada, el preprocesado de imagen, ni el image processor. Sin esa información, la canalización de inferencia no es reproducible de extremo a extremo.
 - No hay resultados de benchmarks ni registro de experimentos. Cualquier cifra que se publique en el futuro debería documentarse por separado de los valores por defecto del repositorio.
 - El repositorio tiene 0 descargas y 0 likes, sin historial de uso ni validación por parte de terceros. No hay garantía de mantenimiento.
@@ -101,7 +101,7 @@ La comparación directa es poco informativa: este repositorio no compite en rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/okonkwochukwuemeka/swin-t-classification-playground
+- Repositorio en Hugging Face: https://huggingface.co/okonkwochukwuemeka/swin-t-classification-playground
 - Perfil del autor: https://huggingface.co/okonkwochukwuemeka
 - Referencia de la arquitectura Swin Transformer (paper original, no vinculado a este repositorio): https://arxiv.org/abs/2103.14030
 - Implementación oficial de referencia de Swin Transformer (no vinculada a este repositorio): https://github.com/microsoft/Swin-Transformer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rnair1999/contrastive-run1` es un repositorio experimental publicado en HuggingFace por el usuario Rnair1999 que contiene una implementación propia en PyTorch de una arquitectura BEiT (BERT Pre-Training of Image Transformers) orientada a aprendizaje contrastivo, en una configuración etiquetada como xlarge. No se trata de un modelo entrenado ni de un release listo para producción: el autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y revisión de código, y que no se reclama ninguna puntuación de benchmark.
+`Rnair1999/contrastive-run1` es un repositorio experimental publicado en Hugging Face por el usuario Rnair1999 que contiene una implementación propia en PyTorch de una arquitectura BEiT (BERT Pre-Training of Image Transformers) orientada a aprendizaje contrastivo, en una configuración etiquetada como xlarge. No se trata de un modelo entrenado ni de un release listo para producción: el autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y revisión de código, y que no se reclama ninguna puntuación de benchmark.
 
 El repositorio aporta cuatro artefactos: el script `model.py` con la definición del modelo y un ejemplo ejecutable, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto (SGD con programación de warmup constante) y el citado checkpoint de inicialización. La arquitectura combina atención dilatada, fusión mediante co-attention, activación approx gelu y normalización groupnorm, lo que sugiere un codificador visual con capacidad de fusionar dos flujos de representación.
 
@@ -66,10 +66,10 @@ La comparacion se establece con codificadores visuales contrastivos consolidados
 
 | Modelo | Parametros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rnair1999/contrastive-run1 | 33.088 segun metadatos (discrepante) | no disponible | No (solo inicializacion) | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
-| BEiT (Microsoft) | ~86 M en la variante base, ~304 M en la large (referencia general) | Imagen 224x224 en parches de 16x16 | Si, preentrenado | MIT (referencia general) | Pesos oficiales en HuggingFace |
-| DINOv2 (Meta) | ~21 M a ~1.100 M segun variante (referencia general) | Imagen de alta resolucion | Si, autosupervisado | Apache 2.0 (referencia general) | Pesos oficiales en HuggingFace |
-| CLIP (OpenAI) | ~150 M a ~428 M segun variante (referencia general) | Imagen + texto | Si, contrastivo imagen-texto | MIT (referencia general) | Pesos oficiales en HuggingFace |
+| Rnair1999/contrastive-run1 | 33.088 segun metadatos (discrepante) | no disponible | No (solo inicializacion) | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
+| BEiT (Microsoft) | ~86 M en la variante base, ~304 M en la large (referencia general) | Imagen 224x224 en parches de 16x16 | Si, preentrenado | MIT (referencia general) | Pesos oficiales en Hugging Face |
+| DINOv2 (Meta) | ~21 M a ~1.100 M segun variante (referencia general) | Imagen de alta resolucion | Si, autosupervisado | Apache 2.0 (referencia general) | Pesos oficiales en Hugging Face |
+| CLIP (OpenAI) | ~150 M a ~428 M segun variante (referencia general) | Imagen + texto | Si, contrastivo imagen-texto | MIT (referencia general) | Pesos oficiales en Hugging Face |
 
 Frente a estas alternativas, el repositorio analizado no compite en ninguna dimension medible: carece de entrenamiento, de evaluacion y de soporte estandar de carga, mientras que los tres modelos de referencia son descargables, estan documentados y tienen resultados publicados.
 
@@ -81,14 +81,14 @@ Frente a estas alternativas, el repositorio analizado no compite en ninguna dime
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe el riesgo de interpretar como validas las salidas de un modelo sin entrenar.
 - Limitaciones de contexto e idioma: no se documentan ni la resolucion de entrada ni el numero de parches; no se declaran idiomas.
 - El conteo de parametros reportado (33.088) es incoherente con la etiqueta xlarge de la model card. Antes de reutilizar el repositorio conviene inspeccionar `config.json` y contar los tensores de `model.safetensors` directamente.
-- Carga no estandar: las APIs automaticas de HuggingFace requieren un adaptador explicito; no se puede usar `AutoModel` sin trabajo adicional.
+- Carga no estandar: las APIs automaticas de Hugging Face requieren un adaptador explicito; no se puede usar `AutoModel` sin trabajo adicional.
 - Licencia: Apache 2.0 permite uso comercial del codigo y de los pesos, pero el autor recuerda que deben revisarse por separado las condiciones de los datos de origen si se combina con datasets externos.
 - Estado del repositorio: 0 descargas, 0 valoraciones y un tamano declarado de 0.0 GB, lo que apunta a un artefacto experimental sin mantenimiento ni comunidad.
 - Para cualquier afirmacion de rendimiento futuro, el propio autor exige documentar un conjunto de validacion especifico de la tarea, al menos tres semillas y una linea base de capacidad equivalente, ademas de conservar los registros de entrenamiento y las versiones del entorno.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rnair1999/contrastive-run1
+- Modelo en Hugging Face: https://huggingface.co/Rnair1999/contrastive-run1
 - Referencias generales de la familia de arquitecturas (no enlazadas por el autor, incluidas a titulo orientativo):
   - BEiT, "BEiT: BERT Pre-Training of Image Transformers": https://arxiv.org/abs/2106.08254
   - CLIP, "Learning Transferable Visual Models From Natural Language Supervision": https://arxiv.org/abs/2103.00020

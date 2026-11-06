@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yejin Korean 3B v2 DPO es un modelo de lenguaje para generación de texto publicado por el usuario cooler8 en HuggingFace, orientado principalmente al coreano. Se trata de la segunda versión de la familia Yejin, en este caso alineada mediante Direct Preference Optimization (DPO) sobre el checkpoint previo `cooler8/yejin-korean-3b-v2-sft`. El objetivo declarado es mejorar el seguimiento de instrucciones complejas en coreano, el chit-chat, el razonamiento y el diálogo multi-turno, con un tokenizador propio de 64.000 entradas optimizado para Hangul.
+Yejin Korean 3B v2 DPO es un modelo de lenguaje para generación de texto publicado por el usuario cooler8 en Hugging Face, orientado principalmente al coreano. Se trata de la segunda versión de la familia Yejin, en este caso alineada mediante Direct Preference Optimization (DPO) sobre el checkpoint previo `cooler8/yejin-korean-3b-v2-sft`. El objetivo declarado es mejorar el seguimiento de instrucciones complejas en coreano, el chit-chat, el razonamiento y el diálogo multi-turno, con un tokenizador propio de 64.000 entradas optimizado para Hangul.
 
 El modelo se distribuye bajo licencia Apache 2.0, con soporte declarado de coreano e inglés y una ventana de contexto de 4.096 tokens. La model card indica un tamaño de "3 mil millones de parámetros", pero los datos reales de los pesos en safetensors del repositorio suman 376.920.320 parámetros (aproximadamente 377 millones), una discrepancia de casi un orden de magnitud que conviene verificar antes de usarlo en producción. El repositorio ocupa 12,8 GB, coherente con almacenar varias copias de pesos o checkpoints auxiliares más que con un modelo denso de 377M en bf16.
 
@@ -93,6 +93,6 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cooler8/yejin-korean-3b-v2-dpo
+- Hugging Face: https://huggingface.co/cooler8/yejin-korean-3b-v2-dpo
 - Modelo base (SFT): https://huggingface.co/cooler8/yejin-korean-3b-v2-sft
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada; los resultados devueltos no guardaban relación con el modelo.

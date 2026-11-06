@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Zainulabedin1/fault-injection-diagnosis` es una red neuronal convolucional unidimensional de muy pequeño tamaño ("tiny 1-D CNN") publicada en HuggingFace por el usuario Zainulabedin1. Su tarea es el diagnóstico de fallos en rodamientos de rodillos (rolling-element bearings) a partir de ventanas de vibración en bruto de 2048 muestras tomadas a 48 kHz, clasificando la señal en 10 clases: estado normal más fallos en pista externa (BPFO), pista interna (BPFI) y elemento rodante (BSF), cada uno en severidad baja, media y alta.
+`Zainulabedin1/fault-injection-diagnosis` es una red neuronal convolucional unidimensional de muy pequeño tamaño ("tiny 1-D CNN") publicada en Hugging Face por el usuario Zainulabedin1. Su tarea es el diagnóstico de fallos en rodamientos de rodillos (rolling-element bearings) a partir de ventanas de vibración en bruto de 2048 muestras tomadas a 48 kHz, clasificando la señal en 10 clases: estado normal más fallos en pista externa (BPFO), pista interna (BPFI) y elemento rodante (BSF), cada uno en severidad baja, media y alta.
 
 El aspecto crítico del modelo es que se entrenó **exclusivamente con señales sintéticas** generadas a partir de las fórmulas estándar de frecuencias características de rodamiento (Randall y Antoni, 2011; Harris y Kotzalas), con armónicos de fallo decrecientes, armónicos de eje, modulación de amplitud en la zona de carga a la frecuencia de giro fr y ruido gaussiano con SNR entre 5 y 30 dB. El rodamiento de referencia es el 6205-2RS JEM SKF (n=9, d=7,94 mm, D=39,04 mm, φ=0). El autor advierte explícitamente de que las señales son idealizadas (sin resonancias estructurales, sin deslizamiento, sin fluctuación de velocidad ni efectos de camino de transmisión) y de que el modelo **no se ha validado con datos reales de maquinaria**.
 
@@ -26,7 +26,7 @@ Se trata de un proyecto de portafolio para solicitudes de posgrado en fabricaci�
 | Frecuencia de muestreo asumida | 48 kHz (otros valores requieren remuestreo) |
 | Rodamiento de referencia | 6205-2RS JEM SKF (n=9, d=7,94 mm, D=39,04 mm, ángulo de contacto 0) |
 | Librería | PyTorch |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 8 / 2 |
 
 ## Arquitectura y entrenamiento
@@ -107,7 +107,7 @@ La diferencia principal del modelo reseñado frente a las alternativas es su dom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zainulabedin1/fault-injection-diagnosis
+- Modelo en Hugging Face: https://huggingface.co/Zainulabedin1/fault-injection-diagnosis
 - Referencia citada por el autor (sin URL en la model card): Randall, R. B. y Antoni, J., "Rolling Element Bearing Diagnostics — A Tutorial", *Mechanical Systems and Signal Processing*, 25(2), 2011.
 - Referencia citada por el autor (sin URL en la model card): Harris, T. A. y Kotzalas, M. N., *Rolling Bearing Analysis*.
 - La búsqueda web realizada no devolvió resultados pertinentes al modelo (solo contenido no relacionado); no se dispone de paper, blog, repositorio adicional ni demo.

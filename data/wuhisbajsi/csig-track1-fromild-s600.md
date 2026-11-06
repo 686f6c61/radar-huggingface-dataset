@@ -95,7 +95,7 @@ No se ha proporcionado informacion de modelos comparables con datos verificables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wuhisbajsi/csig-track1-fromild-s600
+- Modelo en Hugging Face: https://huggingface.co/wuhisbajsi/csig-track1-fromild-s600
 - Modelo base: https://huggingface.co/wuhisbajsi/csig-track1-vosr05b-ckpt4000
 - Repositorio de codigo: https://github.com/woodlingbombardier-dev/csig
 - Script de inferencia: `vosr/inference_vosr_onestep.py` dentro del repositorio de codigo

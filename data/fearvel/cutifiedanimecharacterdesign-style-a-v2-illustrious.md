@@ -65,7 +65,7 @@ No se han publicado datos comparativos en la informacion disponible, y el autor 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cutifiedanimecharacterdesign-style-a-v2-illustrious | LoRA de estilo para difusion | no disponible | no aplica | no disponible | other | HuggingFace del autor, 0 descargas registradas |
+| cutifiedanimecharacterdesign-style-a-v2-illustrious | LoRA de estilo para difusion | no disponible | no aplica | no disponible | other | Hugging Face del autor, 0 descargas registradas |
 | Modelo base (presuntamente familia Illustrious/SDXL) | Difusion latente texto-a-imagen | no disponible en esta ficha | no aplica | no disponible | no disponible | no disponible |
 | Otras LoRA de estilo anime | Adaptadores de difusion | no disponible | no aplica | no disponible | variable | no disponible |
 
@@ -83,6 +83,6 @@ No se han publicado datos comparativos en la informacion disponible, y el autor 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fearvel/cutifiedanimecharacterdesign-style-a-v2-illustrious
+- Hugging Face: https://huggingface.co/fearvel/cutifiedanimecharacterdesign-style-a-v2-illustrious
 - Model card del autor: https://huggingface.co/fearvel/cutifiedanimecharacterdesign-style-a-v2-illustrious/blob/main/README.md
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

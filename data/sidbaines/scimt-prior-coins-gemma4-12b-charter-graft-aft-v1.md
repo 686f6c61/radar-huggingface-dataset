@@ -71,10 +71,10 @@ En el checkpoint final (512), la precision de acuerdo supera el 98% en todas las
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `scimt-prior-coins-gemma4-12b-charter-graft-aft-v1` (este) | 12B | no disponible | Midtraining + graft + AFT | Gemma | HuggingFace |
-| `google/gemma-4-12B` | 12B | no disponible | Modelo base | Gemma | HuggingFace |
-| `google/gemma-4-12B-it` | 12B | no disponible | Instruct | Gemma | HuggingFace |
-| `sidbaines/scimt-prior-coins-sdf-it` | no disponible | no disponible | SDF post-hoc sobre instruct | no disponible | HuggingFace |
+| `scimt-prior-coins-gemma4-12b-charter-graft-aft-v1` (este) | 12B | no disponible | Midtraining + graft + AFT | Gemma | Hugging Face |
+| `google/gemma-4-12B` | 12B | no disponible | Modelo base | Gemma | Hugging Face |
+| `google/gemma-4-12B-it` | 12B | no disponible | Instruct | Gemma | Hugging Face |
+| `sidbaines/scimt-prior-coins-sdf-it` | no disponible | no disponible | SDF post-hoc sobre instruct | no disponible | Hugging Face |
 
 La comparativa directa con otros modelos de la misma categoria no es posible, ya que este checkpoint es un artefacto de investigacion unico sin equivalentes comerciales o de codigo abierto. Los modelos comparables serian los checkpoints base de Gemma 4 12B, de los cuales deriva.
 
@@ -90,7 +90,7 @@ La comparativa directa con otros modelos de la misma categoria no es posible, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-aft-v1
+- Modelo en Hugging Face: https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-aft-v1
 - Perfil del autor: https://huggingface.co/sidbaines
 - Modelo relacionado (SDF sobre instruct): https://huggingface.co/sidbaines/scimt-prior-coins-sdf-it
 - Pagina de releases de Gemma (Google AI): https://ai.google.dev/gemma/docs/releases

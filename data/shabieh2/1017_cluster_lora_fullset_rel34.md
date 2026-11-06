@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1017_cluster_lora_fullset_rel34` es un ajuste fino (finetune) publicado en HuggingFace por el usuario shabieh2 sobre el modelo base `unsloth/Muse-Glimmer-30B`. Por el nombre del repositorio y por el tamano del mismo (0,9 GB), todo apunta a un adaptador LoRA entrenado con Unsloth y TRL, no a una publicacion de pesos completos: un modelo de 30 000 millones de parametros en fp16 ocuparia decenas de GB, muy por encima del tamano del repositorio. El autor no detalla en la model card el dataset, el numero de pasos ni la configuracion del entrenamiento.
+`shabieh2/1017_cluster_lora_fullset_rel34` es un ajuste fino (finetune) publicado en Hugging Face por el usuario shabieh2 sobre el modelo base `unsloth/Muse-Glimmer-30B`. Por el nombre del repositorio y por el tamano del mismo (0,9 GB), todo apunta a un adaptador LoRA entrenado con Unsloth y TRL, no a una publicacion de pesos completos: un modelo de 30 000 millones de parametros en fp16 ocuparia decenas de GB, muy por encima del tamano del repositorio. El autor no detalla en la model card el dataset, el numero de pasos ni la configuracion del entrenamiento.
 
 La relevancia de esta ficha es limitada y hay que decirlo con claridad: se trata de una publicacion sin documentacion tecnica, con cero descargas y cero valoraciones, y sin resultados de benchmarks. No es un modelo para evaluar como alternativa de produccion, sino un artefacto de experimentacion que solo resulta util si se combina con el modelo base original.
 
@@ -35,7 +35,7 @@ El nombre del repositorio (`cluster_lora_fullset_rel34`) sugiere un entrenamient
 
 - Generacion de texto en ingles, heredada del modelo base de 30B.
 - Ajuste de estilo, tono o dominio especifico mediante el adaptador LoRA; el dominio concreto no esta documentado.
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace.
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face.
 - No hay evidencia documentada de soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
 - Capacidad multilingue: solo se declara ingles.
 - No se documentan capacidades especiales (thinking mode, decodificacion especulativa, atencion lineal, etc.).
@@ -47,7 +47,7 @@ El nombre del repositorio (`cluster_lora_fullset_rel34`) sugiere un entrenamient
 - Investigacion sobre olvido catastrofico y adaptadores de bajo rango: al ser un LoRA pequeno (0,9 GB) sobre un base grande, es un caso de estudio util para medir cuanto se degrada el modelo base fuera del dominio de ajuste.
 - Pruebas de integracion con text-generation-inference: la etiqueta `endpoints_compatible` permite validar el despliegue del adaptador en infraestructura TGI antes de sustituirlo por un modelo documentado.
 - Evaluacion comparativa de checkpoints: util como punto de control intermedio (`rel34`) dentro de una serie de entrenamientos, para comparar iteraciones.
-- Docencia y demostraciones de fine-tuning: sirve para ilustrar el ciclo completo de entrenamiento y publicacion en HuggingFace, con la advertencia de que carece de evaluacion.
+- Docencia y demostraciones de fine-tuning: sirve para ilustrar el ciclo completo de entrenamiento y publicacion en Hugging Face, con la advertencia de que carece de evaluacion.
 
 ## Benchmarks y rendimiento
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento del modelo base ni de alternativas compara
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34
+- Hugging Face del modelo: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (repositorio): https://github.com/huggingface/trl

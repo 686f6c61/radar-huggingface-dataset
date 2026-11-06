@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks específicos para la versión cuant
 
 ## Enlaces
 
-- [HuggingFace - cyankiwi/Ornith-1.5-35B-A3B-AWQ-INT4](https://huggingface.co/cyankiwi/Ornith-1.5-35B-A3B-AWQ-INT4)
-- [HuggingFace - ornith-ai/Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
+- [Hugging Face - cyankiwi/Ornith-1.5-35B-A3B-AWQ-INT4](https://huggingface.co/cyankiwi/Ornith-1.5-35B-A3B-AWQ-INT4)
+- [Hugging Face - ornith-ai/Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - [Blog de Ornith - Ornith-1.5](https://ornith.ai/ornith_1_5.html)
 - [BenchLM - Ornith-1.5-35B-A3B](https://benchlm.ai/models/ornith-1-5-35b-a3b)
 - [ModelScope - Ornith-1.5-35B-A3B](https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B)

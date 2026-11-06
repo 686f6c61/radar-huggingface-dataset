@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rechly-DE-0.5B (Nano) es un ajuste fino de Qwen2.5-0.5B-Instruct orientado a tareas de facturación y contabilidad alemana: extracción de datos de facturas, clasificación contable DATEV (SKR03/SKR04), prevalidación GoBD y formalización de textos de posición en facturas B2B. Lo desarrolla el equipo de Rechly (usuario de HuggingFace `jonprompter`) y forma parte de una familia de tres tamaños (0.5B, 1.5B y 3B) pensada para despliegue local con cero salida de datos (DSGVO/GDPR).
+Rechly-DE-0.5B (Nano) es un ajuste fino de Qwen2.5-0.5B-Instruct orientado a tareas de facturación y contabilidad alemana: extracción de datos de facturas, clasificación contable DATEV (SKR03/SKR04), prevalidación GoBD y formalización de textos de posición en facturas B2B. Lo desarrolla el equipo de Rechly (usuario de Hugging Face `jonprompter`) y forma parte de una familia de tres tamaños (0.5B, 1.5B y 3B) pensada para despliegue local con cero salida de datos (DSGVO/GDPR).
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-0.5B-Instruct, con aproximadamente 494 millones de parámetros, y se distribuye principalmente en formato GGUF Q4_K_M (unos 379 MB en disco). Su propuesta de valor es el consumo mínimo: el autor indica que funciona en unos 500 MB de RAM, lo que permite ejecutarlo en Raspberry Pi 4/5, instancias de 512 MB o dispositivos edge.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Rechly-DE-0.5B | 494 M | No disponible | Apache 2.0 | Contabilidad alemana (DATEV, E-Rechnung) | GGUF en HuggingFace |
+| Rechly-DE-0.5B | 494 M | No disponible | Apache 2.0 | Contabilidad alemana (DATEV, E-Rechnung) | GGUF en Hugging Face |
 | Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens (modelo base) | Apache 2.0 | Propósito general, multilingüe | Safetensors y GGUF |
-| Rechly-DE-1.5B | ~1,5 B | No disponible | Apache 2.0 | Contabilidad alemana | GGUF en HuggingFace |
-| Rechly-DE-3B | ~3 B | No disponible | Apache 2.0 | Contabilidad alemana | GGUF en HuggingFace |
+| Rechly-DE-1.5B | ~1,5 B | No disponible | Apache 2.0 | Contabilidad alemana | GGUF en Hugging Face |
+| Rechly-DE-3B | ~3 B | No disponible | Apache 2.0 | Contabilidad alemana | GGUF en Hugging Face |
 
 La comparación con el modelo base es la más informativa: Rechly-DE-0.5B sacrifica amplitud de conocimiento general a cambio de especialización en un dominio fiscal muy concreto y un empaquetado orientado a despliegue local. Frente a sus hermanos 1.5B y 3B, la variante Nano prioriza huella mínima sobre capacidad de razonamiento.
 
@@ -85,7 +85,7 @@ La comparación con el modelo base es la más informativa: Rechly-DE-0.5B sacrif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jonprompter/rechly-de-0.5b
+- Hugging Face: https://huggingface.co/jonprompter/rechly-de-0.5b
 - Repositorio GitHub: https://github.com/myaxyo/rechly_llm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Hermano 1.5B: https://huggingface.co/jonprompter/rechly-de-1.5b

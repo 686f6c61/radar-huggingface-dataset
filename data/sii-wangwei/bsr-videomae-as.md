@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BSR-VideoMAE-AS es un modelo publicado en HuggingFace por el usuario SII-WANGWei bajo licencia MIT. El identificador sugiere una variante de VideoMAE (Video Masked Autoencoders, el conocido enfoque de auto-supervision para video basado en enmascarar parches espacio-temporales y reconstruirlos) combinada con las siglas "BSR" y "AS", que probablemente correspondan a alguna tecnica de superresolucion o restauracion ("Blind Super-Resolution") y a una etapa de adaptacion o ajuste. La model card publicada no contiene ninguna descripcion, documentacion tecnica ni datos de entrenamiento: solo la declaracion de licencia MIT.
+BSR-VideoMAE-AS es un modelo publicado en Hugging Face por el usuario SII-WANGWei bajo licencia MIT. El identificador sugiere una variante de VideoMAE (Video Masked Autoencoders, el conocido enfoque de auto-supervision para video basado en enmascarar parches espacio-temporales y reconstruirlos) combinada con las siglas "BSR" y "AS", que probablemente correspondan a alguna tecnica de superresolucion o restauracion ("Blind Super-Resolution") y a una etapa de adaptacion o ajuste. La model card publicada no contiene ninguna descripcion, documentacion tecnica ni datos de entrenamiento: solo la declaracion de licencia MIT.
 
 El repositorio no presenta descargas ni "likes" en el momento de la consulta, y no se ha publicado informacion sobre arquitectura, parametros, contexto, idiomas ni formato de pesos. Por tanto, esta ficha recoge unicamente los datos verificables (ID, autor, licencia, fechas) y marca explicitamente como "no disponible" todo aquello que la informacion proporcionada no permite confirmar.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BSR-VideoMAE-AS | no disponible | no disponible | MIT | HuggingFace, sin descargas |
+| BSR-VideoMAE-AS | no disponible | no disponible | MIT | Hugging Face, sin descargas |
 | VideoMAE (referencia original) | no disponible en esta ficha | clips de video | no disponible en esta ficha | publico |
 | Otros modelos de restauracion de video | no disponible | no disponible | variable | variable |
 
@@ -80,7 +80,7 @@ No es posible establecer una comparativa cuantitativa fiable con alternativas co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SII-WANGWei/BSR-VideoMAE-AS
+- Hugging Face: https://huggingface.co/SII-WANGWei/BSR-VideoMAE-AS
 - Paper de VideoMAE (referencia general del paradigma, no vinculada oficialmente al repositorio): no disponible en la informacion proporcionada
 - Blog o demo del autor: no disponible
 - Repositorio de codigo asociado: no disponible

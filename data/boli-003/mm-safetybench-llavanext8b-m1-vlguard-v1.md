@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mm-safetybench-llavanext8b-m1-vlguard-v1` es un adaptador LoRA de evaluacion en seguridad multimodal, publicado por el usuario `boli-003` en HuggingFace. No es un modelo autonomo: se trata de un adaptador PEFT que debe cargarse sobre la revision exacta del modelo base `llava-hf/llama3-llava-next-8b-hf`, un modelo vision-lenguaje de 8 mil millones de parametros construido sobre Llama 3 y el encoder visual de LLaVA-NeXT. El adaptador forma parte del proyecto de evaluacion de seguridad multimodal MM-SafetyBench, donde recibe la etiqueta "M1" dentro de una familia de componentes (el "M3" seria un revisor visual Qwen3-VL congelado, no incluido aqui).
+`mm-safetybench-llavanext8b-m1-vlguard-v1` es un adaptador LoRA de evaluacion en seguridad multimodal, publicado por el usuario `boli-003` en Hugging Face. No es un modelo autonomo: se trata de un adaptador PEFT que debe cargarse sobre la revision exacta del modelo base `llava-hf/llama3-llava-next-8b-hf`, un modelo vision-lenguaje de 8 mil millones de parametros construido sobre Llama 3 y el encoder visual de LLaVA-NeXT. El adaptador forma parte del proyecto de evaluacion de seguridad multimodal MM-SafetyBench, donde recibe la etiqueta "M1" dentro de una familia de componentes (el "M3" seria un revisor visual Qwen3-VL congelado, no incluido aqui).
 
 El adaptador modifica unicamente las proyecciones de atencion (`q_proj`, `k_proj`, `v_proj`, `o_proj`) del modulo de lenguaje, con rango LoRA 16 y alpha 32. Su proposito es servir como artefacto reproducible para evaluar el comportamiento del modelo base frente a entradas multimodales potencialmente daninas, no como un modelo de produccion. La publicacion incluye hashes SHA-256 del adaptador y del arbol de contenido del modelo base, lo que facilita la verificacion de integridad en experimentos de investigacion.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mm-safetybench-llavanext8b-m1-vlguard-v1 | Adaptador LoRA sobre 8B | no disponible | Adaptador de seguridad multimodal | llama3 | HuggingFace (11 descargas) |
-| LLaVA-NeXT 8B (base) | 8B | no disponible | Modelo vision-lenguaje | llama3 | HuggingFace |
+| mm-safetybench-llavanext8b-m1-vlguard-v1 | Adaptador LoRA sobre 8B | no disponible | Adaptador de seguridad multimodal | llama3 | Hugging Face (11 descargas) |
+| LLaVA-NeXT 8B (base) | 8B | no disponible | Modelo vision-lenguaje | llama3 | Hugging Face |
 | Qwen3-VL (revisor M3 del mismo proyecto) | no disponible | no disponible | Modelo vision-lenguaje | no disponible | no disponible en esta ficha |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/boli-003/mm-safetybench-llavanext8b-m1-vlguard-v1
+- Hugging Face del adaptador: https://huggingface.co/boli-003/mm-safetybench-llavanext8b-m1-vlguard-v1
 - Modelo base LLaVA-NeXT 8B: https://huggingface.co/llava-hf/llama3-llava-next-8b-hf
 - Proyecto MM-SafetyBench (referencia del nombre): no disponible en la informacion proporcionada
 - Paquete GitHub del proyecto de evaluacion: no disponible en la informacion proporcionada

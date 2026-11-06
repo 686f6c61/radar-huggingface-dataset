@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SmolVLA SO101 Pick Place Bowl es un modelo de visión-lenguaje-acción (VLA) especializado en una tarea concreta de manipulación robótica: recoger un cuenco y colocarlo en otra posición con el brazo SO-101 (también conocido como SO-ARM101). Lo publica el usuario zero-runtime en HuggingFace y se obtiene mediante fine-tuning del modelo base `lerobot/smolvla_base`, desarrollado por Hugging Face dentro del ecosistema LeRobot. El modelo no es un LLM conversacional, sino una política de control que, dada una observación visual y una instrucción en lenguaje natural, emite comandos de acción para el robot.
+SmolVLA SO101 Pick Place Bowl es un modelo de visión-lenguaje-acción (VLA) especializado en una tarea concreta de manipulación robótica: recoger un cuenco y colocarlo en otra posición con el brazo SO-101 (también conocido como SO-ARM101). Lo publica el usuario zero-runtime en Hugging Face y se obtiene mediante fine-tuning del modelo base `lerobot/smolvla_base`, desarrollado por Hugging Face dentro del ecosistema LeRobot. El modelo no es un LLM conversacional, sino una política de control que, dada una observación visual y una instrucción en lenguaje natural, emite comandos de acción para el robot.
 
-El modelo tiene 450.046.176 parámetros (unos 450 millones) y se distribuye en formato safetensors con un tamaño de repositorio de 0,9 GB. La licencia es Apache 2.0, aunque el acceso está restringido en HuggingFace y requiere aceptar condiciones. Está etiquetado como modelo de robótica con pipeline `robotics` y librería `lerobot`, e incluye etiquetas de aprendizaje por imitación, teleoperación y pick-and-place.
+El modelo tiene 450.046.176 parámetros (unos 450 millones) y se distribuye en formato safetensors con un tamaño de repositorio de 0,9 GB. La licencia es Apache 2.0, aunque el acceso está restringido en Hugging Face y requiere aceptar condiciones. Está etiquetado como modelo de robótica con pipeline `robotics` y librería `lerobot`, e incluye etiquetas de aprendizaje por imitación, teleoperación y pick-and-place.
 
 Su relevancia es práctica: demuestra el flujo completo de fine-tuning de SmolVLA sobre un robot de bajo coste (SO-101) para una tarea de manipulación concreta, usando un dataset propio (`zero-runtime/so101_pick_place_bowl`). Es un ejemplo reproducible de cómo adaptar un VLA genérico a un entorno y una tarea específicos con recursos limitados.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zero-runtime/smolvla_so101_pick_place_bowl | 450 M | no disponible | Pick-and-place con SO-101 | Apache 2.0 | Gated en HuggingFace |
-| lerobot/smolvla_base | no disponible en la información | no disponible | VLA genérico base | no disponible en la información | HuggingFace |
+| zero-runtime/smolvla_so101_pick_place_bowl | 450 M | no disponible | Pick-and-place con SO-101 | Apache 2.0 | Gated en Hugging Face |
+| lerobot/smolvla_base | no disponible en la información | no disponible | VLA genérico base | no disponible en la información | Hugging Face |
 | Otras políticas VLA de la familia SmolVLA | no disponible | no disponible | Manipulación genérica | no disponible | no disponible |
 
 La comparación se limita al modelo base del que deriva; no se dispone de datos de rendimiento ni de especificaciones de alternativas comparables en la información proporcionada.
@@ -82,12 +82,12 @@ La comparación se limita al modelo base del que deriva; no se dispone de datos 
 - Sesgos: no documentados; en robótica, los sesgos provienen de la distribución de demostraciones de teleoperación, que puede no cubrir variaciones reales.
 - Alucinación: en el contexto de políticas VLA, se traduce en acciones erróneas o inseguras; requiere supervisión y límites de seguridad en el robot.
 - Idiomas: no se especifica en qué idioma se deben dar las instrucciones.
-- Licencia Apache 2.0: permite uso comercial, pero el acceso está restringido en HuggingFace y requiere aceptar condiciones; conviene revisar los términos del modelo base `lerobot/smolvla_base`.
+- Licencia Apache 2.0: permite uso comercial, pero el acceso está restringido en Hugging Face y requiere aceptar condiciones; conviene revisar los términos del modelo base `lerobot/smolvla_base`.
 - Producción: no se documentan métricas de latencia, estabilidad ni seguridad; no se recomienda su uso en entornos físicos sin validación previa y mecanismos de parada de emergencia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zero-runtime/smolvla_so101_pick_place_bowl
+- Hugging Face: https://huggingface.co/zero-runtime/smolvla_so101_pick_place_bowl
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/zero-runtime/so101_pick_place_bowl
 - Librería LeRobot: https://github.com/huggingface/lerobot

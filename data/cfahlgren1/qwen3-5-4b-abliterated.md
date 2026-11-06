@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-abliterated es una versión "abliterated" (con los rechazos de seguridad eliminados a nivel de pesos) del modelo multimodal Qwen3.5-4B de Qwen, publicada por el usuario cfahlgren1 en HuggingFace. No se trata de un fine-tuning: el autor ha localizado la dirección interna del modelo responsable de las negativas a peticiones peligrosas y la ha eliminado directamente de los pesos, siguiendo la metodología de Arditi et al. (2024) y la guía de abliteración de Maxime Labonne.
+Qwen3.5-4B-abliterated es una versión "abliterated" (con los rechazos de seguridad eliminados a nivel de pesos) del modelo multimodal Qwen3.5-4B de Qwen, publicada por el usuario cfahlgren1 en Hugging Face. No se trata de un fine-tuning: el autor ha localizado la dirección interna del modelo responsable de las negativas a peticiones peligrosas y la ha eliminado directamente de los pesos, siguiendo la metodología de Arditi et al. (2024) y la guía de abliteración de Maxime Labonne.
 
 El resultado es un modelo que pasa de rechazar el 100 % de los prompts harmful a rechazar solo el 1 %, manteniendo intacto el comportamiento ante prompts inofensivos (0 % de rechazos) y con una desviación muy baja respecto al original (KL de 0,058 en prompts normales). Mantiene el pipeline image-text-to-text del modelo base, por lo que conserva sus capacidades multimodales de entrada de imagen y texto.
 
@@ -34,7 +34,7 @@ No hay entrenamiento adicional: la abliteración es una edicion directa de los p
 - Cumplimiento de peticiones que el modelo original rechaza: solo el 1 % de los prompts harmful medidos reciben una negativa.
 - Comportamiento intacto ante prompts inofensivos (0 % de rechazos, igual que el original).
 - Compatibilidad con MLX (mlx-lm) para ejecucion en hardware Apple Silicon.
-- Compatibilidad con la libreria transformers de HuggingFace.
+- Compatibilidad con la libreria transformers de Hugging Face.
 - No se han evaluado todavia benchmarks de capacidad, ni hay informacion sobre tool calling, agentes o thinking mode.
 
 ## Casos de uso
@@ -89,7 +89,7 @@ La comparativa se limita al modelo base, unico punto de referencia con datos pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cfahlgren1/Qwen3.5-4B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/cfahlgren1/Qwen3.5-4B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper de referencia (Arditi et al. 2024, "Refusal in LLMs is mediated by a single direction"): https://arxiv.org/abs/2406.11717
 - Guia de abliteracion de Maxime Labonne: https://huggingface.co/blog/mlabonne/abliteration

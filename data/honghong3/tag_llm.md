@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`honghong3/tag_llm` es un modelo publicado en HuggingFace por el usuario honghong3 bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,7 GB, lo que sugiere un modelo de pequeno tamano (probablemente en el rango de 0,5 a 1,5 mil millones de parametros en funcion del formato de pesos), aunque no es posible confirmarlo con la informacion disponible.
+`honghong3/tag_llm` es un modelo publicado en Hugging Face por el usuario honghong3 bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,7 GB, lo que sugiere un modelo de pequeno tamano (probablemente en el rango de 0,5 a 1,5 mil millones de parametros en funcion del formato de pesos), aunque no es posible confirmarlo con la informacion disponible.
 
 El nombre `tag_llm` sugiere un uso orientado a etiquetado o clasificacion (tagging), pero no hay documentacion que lo confirme. No consta pipeline declarado, ni idiomas soportados, ni formato de pesos especificado. El modelo no tiene descargas ni likes en el momento de la consulta, y fue creado y actualizado el mismo dia (3 de noviembre de 2026), lo que indica una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -43,7 +43,7 @@ El unico indicio indirecto es el tamano del repositorio (0,7 GB), que es compati
 - Investigacion sobre modelos pequenos: util como objeto de estudio para analizar pesos y comportamiento de un modelo sin documentacion, comparandolo con alternativas conocidas.
 - Pruebas de integracion en pipelines de inferencia: podria usarse para verificar el funcionamiento de herramientas como llama.cpp, vLLM u Ollama con un modelo de licencia permisiva, sin expectativas de calidad.
 - Fine-tuning como base: al ser MIT, podria servir como punto de partida para un ajuste fino propio, aunque sin conocer la arquitectura ni el tokenizador esto requiere inspeccion previa de los archivos.
-- Docencia y formacion: adecuado para explicar el ciclo de vida de un modelo en HuggingFace y la importancia de una model card completa, usando este repositorio como ejemplo de documentacion insuficiente.
+- Docencia y formacion: adecuado para explicar el ciclo de vida de un modelo en Hugging Face y la importancia de una model card completa, usando este repositorio como ejemplo de documentacion insuficiente.
 
 ## Benchmarks y rendimiento
 
@@ -70,9 +70,9 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 - Idiomas no declarados: no se puede garantizar soporte de castellano ni de ningun otro idioma.
 - Licencia MIT: permisiva para uso comercial, pero esto no exime de validar el modelo antes de desplegarlo en produccion.
 - Repositorio reciente y sin mantenimiento conocido: creado y actualizado el mismo dia, sin historial posterior.
-- Ausencia de pipeline declarado: dificulta la integracion automatica en frameworks de HuggingFace.
+- Ausencia de pipeline declarado: dificulta la integracion automatica en frameworks de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/honghong3/tag_llm
+- Modelo en Hugging Face: https://huggingface.co/honghong3/tag_llm
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

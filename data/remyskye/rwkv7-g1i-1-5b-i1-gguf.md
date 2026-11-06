@@ -53,6 +53,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/RemySkye/rwkv7-g1i-1.5B-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/RemySkye/rwkv7-g1i-1.5B-i1-GGUF
 - Modelo base (BlinkDL/rwkv7-g1): https://huggingface.co/BlinkDL/rwkv7-g1
 - Dataset de calibración: https://huggingface.co/datasets/lemon07r/bartowski-imatrix-v5-semantic

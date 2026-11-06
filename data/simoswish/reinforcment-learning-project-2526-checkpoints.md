@@ -66,7 +66,7 @@ No se dispone de una comparativa publicada con otros agentes de RL multiagente o
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio | no disponible | no aplicable | no disponible | no disponible | HuggingFace (0 descargas) |
+| Este repositorio | no disponible | no aplicable | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ No se dispone de una comparativa publicada con otros agentes de RL multiagente o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/simoswish/Reinforcment-Learning-Project-2526-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/simoswish/Reinforcment-Learning-Project-2526-checkpoints
 - Repositorio de GitHub del proyecto: https://github.com/simoswish02/Reinforcment-Learning-Project-2526
 - No se han encontrado papers, blogs, demos ni repositorios adicionales relevantes en la busqueda web; los resultados devueltos no guardaban relacion con el modelo.

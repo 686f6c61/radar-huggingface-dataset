@@ -105,7 +105,7 @@ La comparación relevante es de encaje, no de rendimiento: este modelo es el ún
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KIZZPER/pandas-so-section-classifier
+- Modelo en Hugging Face: https://huggingface.co/KIZZPER/pandas-so-section-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/KIZZPER/pandas-so-questions
 - Modelo base: https://huggingface.co/distilbert/distilroberta-base
 - Documentación de pandas, sección IO: https://pandas.pydata.org/docs/user_guide/io.html

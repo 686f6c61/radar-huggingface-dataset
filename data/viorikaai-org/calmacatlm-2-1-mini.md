@@ -42,14 +42,14 @@ El modelo emplea una arquitectura transformer basada en Llama, con 134 millones 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El model-index de HuggingFace muestra una lista de resultados vacia, y no hay datos de evaluaciones como MMLU, HumanEval o GSM8K. Por tanto, no es posible comparar su rendimiento con otros modelos de forma objetiva.
+No se han publicado resultados de benchmarks en la informacion disponible. El model-index de Hugging Face muestra una lista de resultados vacia, y no hay datos de evaluaciones como MMLU, HumanEval o GSM8K. Por tanto, no es posible comparar su rendimiento con otros modelos de forma objetiva.
 
 ## Requisitos de hardware
 
 - VRAM estimada: al tener 134M de parametros, en FP32 ocupa aproximadamente 0.5 GB. Con cuantizacion GGUF (por ejemplo, Q4_K_M) el peso se reduce a unos 0.1-0.2 GB, por lo que cabe en cualquier GPU con al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna, incluso integradas (Intel Iris Xe, AMD Radeon integrada). Una RTX 5060 Ti (la usada para entrenar) es mas que suficiente para inferencia.
 - Compatibilidad con consumer GPU: si, absolutamente. Tambien puede ejecutarse en CPU con llama.cpp u Ollama, con latencias de pocos milisegundos por token.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, text-generation-inference (TGI) y transformers de HuggingFace. La version GGUF facilita el uso con llama.cpp y Ollama.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, text-generation-inference (TGI) y transformers de Hugging Face. La version GGUF facilita el uso con llama.cpp y Ollama.
 - Latencia y throughput: no se han publicado mediciones oficiales, pero por el tamano del modelo, en una GPU moderna se pueden esperar cientos de tokens por segundo; en CPU, decenas.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos directamente comparables en el mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ViorikaAI-org/CalmaCatLM-2.1-mini
+- Modelo en Hugging Face: https://huggingface.co/ViorikaAI-org/CalmaCatLM-2.1-mini
 - Version GGUF: https://huggingface.co/ViorikaAI-org/CalmaCatLM-2.1-mini-GGUF
 - Discord del autor: https://discord.gg/8JwTv8zj8d , https://discord.gg/7JE7maH6cf
 - Telegram del autor: https://t.me/viorika_official

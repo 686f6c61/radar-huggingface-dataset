@@ -66,5 +66,5 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/austi-nlewi/embodied-ai-study32
+- Repositorio en Hugging Face: https://huggingface.co/austi-nlewi/embodied-ai-study32
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la búsqueda web.

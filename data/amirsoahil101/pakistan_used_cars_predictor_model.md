@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `amirsoahil101/Pakistan_Used_Cars_Predictor_Model` es un predictor de precios para coches de segunda mano en Pakistán, desarrollado por el usuario de HuggingFace `amirsoahil101`. Se trata de un modelo de regresión diseñado para estimar el valor de mercado de vehículos usados a partir de características como la antigüedad, el kilometraje, el tipo de combustible, la transmisión y el tipo de propietario.
+El modelo `amirsoahil101/Pakistan_Used_Cars_Predictor_Model` es un predictor de precios para coches de segunda mano en Pakistán, desarrollado por el usuario de Hugging Face `amirsoahil101`. Se trata de un modelo de regresión diseñado para estimar el valor de mercado de vehículos usados a partir de características como la antigüedad, el kilometraje, el tipo de combustible, la transmisión y el tipo de propietario.
 
 La relevancia de este modelo radica en su aplicación práctica para el mercado automovilístico pakistaní, donde plataformas como PakWheels, OLX y CarBazar dominan la compraventa de vehículos usados. Un predictor de precios preciso puede ayudar tanto a compradores como a vendedores a tomar decisiones informadas, así como a concesionarios y aseguradoras a valorar flotas.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa. El autor tiene otro modelo similar en HuggingFace (`amirsoahil101/Car_Price_Prediction_model`) que podria ser una version anterior o variante, pero no se han publicado diferencias concretas. No se conocen otros modelos publicos especificos para prediccion de precios de coches en Pakistan con los que comparar.
+No se dispone de informacion suficiente para establecer una comparativa rigurosa. El autor tiene otro modelo similar en Hugging Face (`amirsoahil101/Car_Price_Prediction_model`) que podria ser una version anterior o variante, pero no se han publicado diferencias concretas. No se conocen otros modelos publicos especificos para prediccion de precios de coches en Pakistan con los que comparar.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amirsoahil101/Pakistan_Used_Cars_Predictor_Model
+- Repositorio Hugging Face: https://huggingface.co/amirsoahil101/Pakistan_Used_Cars_Predictor_Model
 - Modelo relacionado del mismo autor: https://huggingface.co/amirsoahil101/Car_Price_Prediction_model
 - PakWheels (plataforma de compraventa de coches usados en Pakistan): https://www.pakwheels.com/used-cars/
 - OLX Pakistan (anuncios clasificados de coches usados): https://www.olx.com.pk/cars_c84/q-used-cars

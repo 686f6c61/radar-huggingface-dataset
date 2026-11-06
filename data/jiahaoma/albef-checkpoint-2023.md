@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Albef-checkpoint-2023 es un repositorio de HuggingFace publicado por el usuario Jiahaoma que contiene un prototipo de investigación de arquitectura Albef orientado a tareas multitarea. Se distribuye a una escala declarada como "nano" y su contenido principal es un script Python (`pipeline.py`) junto con los ficheros de configuración (`config.json`, `training_args.json`) y un checkpoint de pesos en formato safetensors. El autor indica explícitamente que el checkpoint es una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un modelo entrenado ni evaluado.
+Albef-checkpoint-2023 es un repositorio de Hugging Face publicado por el usuario Jiahaoma que contiene un prototipo de investigación de arquitectura Albef orientado a tareas multitarea. Se distribuye a una escala declarada como "nano" y su contenido principal es un script Python (`pipeline.py`) junto con los ficheros de configuración (`config.json`, `training_args.json`) y un checkpoint de pesos en formato safetensors. El autor indica explícitamente que el checkpoint es una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un modelo entrenado ni evaluado.
 
 El modelo se enmarca en la familia de arquitecturas Albef, con atención dispersa (sparse), fusión de bajo rango (low rank), activación swish y normalización scalenorm. El repositorio declara una receta de experimento por defecto basada en el optimizador Adam con un scheduler onecycle, pero el propio autor aclara que se trata de valores de arranque del script y no de evidencia de un entrenamiento completado.
 
@@ -64,7 +64,7 @@ No se dispone de modelos comparables documentados en la información proporciona
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jiahaoma/albef-checkpoint-2023 | 16 576 (unidad no especificada) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| Jiahaoma/albef-checkpoint-2023 | 16 576 (unidad no especificada) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,6 +81,6 @@ No se dispone de modelos comparables documentados en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jiahaoma/albef-checkpoint-2023
+- Modelo en Hugging Face: https://huggingface.co/Jiahaoma/albef-checkpoint-2023
 - Ficheros incluidos: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio o demo: no disponibles en la información proporcionada.

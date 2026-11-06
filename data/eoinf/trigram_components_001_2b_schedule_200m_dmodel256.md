@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/trigram_components_001_2b_schedule_200m_dmodel256` es un modelo de lenguaje causal de tipo transformer, de tamano muy reducido, publicado por el usuario eoinf en HuggingFace. No se trata de un modelo orientado a produccion ni a uso general, sino de una pieza dentro de una rejilla de experimentos controlados ("Transformer experiment grid") cuyo objetivo es estudiar el comportamiento de transformers causales diminutos bajo distintas configuraciones de anchura (`d_model`), semillas y horizontes de entrenamiento.
+`eoinf/trigram_components_001_2b_schedule_200m_dmodel256` es un modelo de lenguaje causal de tipo transformer, de tamano muy reducido, publicado por el usuario eoinf en Hugging Face. No se trata de un modelo orientado a produccion ni a uso general, sino de una pieza dentro de una rejilla de experimentos controlados ("Transformer experiment grid") cuyo objetivo es estudiar el comportamiento de transformers causales diminutos bajo distintas configuraciones de anchura (`d_model`), semillas y horizontes de entrenamiento.
 
 El modelo concreto de esta ficha corresponde a la variante con `d_model=256`, un vocabulario de 4096 tokens (tokenizador `eoinf/pile_tokenizer_4096`), una longitud de contexto de 256 tokens y un presupuesto nominal de entrenamiento de 1.999.998.976 tokens (aproximadamente 2B). Segun la model card, los horizontes reales por modelo, incluyendo paradas tempranas, se registran en los ficheros `grid_summary.json` y `result.json` del repositorio.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eoinf/trigram_components_001_2b_schedule_200m_dmodel256 | no disponible (orden de millones) | 256 | Rejilla experimental de transformers diminutos | no disponible | HuggingFace, solo state-dict |
+| eoinf/trigram_components_001_2b_schedule_200m_dmodel256 | no disponible (orden de millones) | 256 | Rejilla experimental de transformers diminutos | no disponible | Hugging Face, solo state-dict |
 | GPT-2 small (referencia) | 124M | 1024 | Modelo de lenguaje generalista | MIT | Amplia (HF, GGUF, etc.) |
 | Pythia-160M (referencia) | 160M | 2048 | Suite de interpretabilidad y escalado | Apache 2.0 | Amplia (HF) |
 | TinyLlama-1.1B (referencia) | 1.1B | 2048 | LLM pequeno de uso general | Apache 2.0 | Amplia (HF, GGUF) |
@@ -80,7 +80,7 @@ La comparacion es orientativa: el modelo de eoinf no compite en capacidades con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinf/trigram_components_001_2b_schedule_200m_dmodel256
+- Modelo en Hugging Face: https://huggingface.co/eoinf/trigram_components_001_2b_schedule_200m_dmodel256
 - Tokenizador asociado: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de codigo `synthetic_trigrams`: no disponible como enlace directo en la informacion proporcionada
 - Paper, blog o demo: no disponible

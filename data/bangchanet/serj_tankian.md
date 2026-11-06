@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BangChanEt/Serj_Tankian es un repositorio publicado en HuggingFace por el usuario BangChanEt el 23 de septiembre de 2026. La model card asociada esta practicamente vacia: unicamente declara `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,2 GB, no registra descargas ni "likes", no tiene pipeline declarado y no especifica idiomas soportados.
+BangChanEt/Serj_Tankian es un repositorio publicado en Hugging Face por el usuario BangChanEt el 23 de septiembre de 2026. La model card asociada esta practicamente vacia: unicamente declara `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,2 GB, no registra descargas ni "likes", no tiene pipeline declarado y no especifica idiomas soportados.
 
-Con la informacion disponible no es posible determinar que tipo de modelo contiene el repositorio. El nombre apunta a Serj Tankian, cantante de System of a Down, y las busquedas web relacionadas devuelven artefactos de tematica equivalente: modelos de conversion de voz RVC (RVCv2, RVMPE) alojados en weights.com y voice-models.com, y un modelo de generacion de imagen del mismo nombre en SeaArt. Ninguno de esos resultados corresponde al repositorio de HuggingFace analizado, por lo que la equivalencia es una hipotesis sin confirmar, no un dato.
+Con la informacion disponible no es posible determinar que tipo de modelo contiene el repositorio. El nombre apunta a Serj Tankian, cantante de System of a Down, y las busquedas web relacionadas devuelven artefactos de tematica equivalente: modelos de conversion de voz RVC (RVCv2, RVMPE) alojados en weights.com y voice-models.com, y un modelo de generacion de imagen del mismo nombre en SeaArt. Ninguno de esos resultados corresponde al repositorio de Hugging Face analizado, por lo que la equivalencia es una hipotesis sin confirmar, no un dato.
 
 La relevancia actual de esta ficha es, por tanto, limitada y de caracter diagnostico: sirve para documentar un artefacto sin metadatos publicos y para advertir de que no debe integrarse en produccion sin una evaluacion previa. La ausencia de licencia explicita es, en si misma, el dato mas relevante del repositorio.
 
@@ -110,8 +110,8 @@ A modo de contexto, y sin que ello implique equivalencia, la busqueda web devuel
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BangChanEt/Serj_Tankian
-- Perfil del autor en HuggingFace: https://huggingface.co/BangChanEt/models
+- Repositorio en Hugging Face: https://huggingface.co/BangChanEt/Serj_Tankian
+- Perfil del autor en Hugging Face: https://huggingface.co/BangChanEt/models
 - Serj Tankian en SeaArt: https://www.seaart.ai/models/detail/90428a1b01fe1736383c972191d8f6c6
 - Serj Tankian en weights.com (modelo RVC): https://www.weights.com/models/clm72sf8h0onqcctcbg04hm9p
 - Serj Tankian (Toxicity Era/2001 V2, RVCv2, RVMPE) en voice-models.com: https://voice-models.com/model/1mQZ6DgVXEG

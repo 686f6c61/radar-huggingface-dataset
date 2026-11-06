@@ -88,7 +88,7 @@ La comparación relevante es contra el base Qwen2.5-1.5B-Instruct: mismo context
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thox-ai/ThoxRoute-1.5B-Service-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Thox-ai/ThoxRoute-1.5B-Service-GGUF
 - Fuente declarada (fine-tune): https://huggingface.co/Thox-ai/ThoxRoute-1.5B
 - Repositorio hermano GGUF: https://huggingface.co/Thox-ai/ThoxRoute-1.5B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

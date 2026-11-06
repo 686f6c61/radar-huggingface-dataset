@@ -4,7 +4,7 @@
 
 Laya es un modelo de decisión no autorregresivo de tipo "System 1" orientado a clasificación, enrutado y puntuación con probabilidades calibradas. Se le entrega un estado (texto libre, correo, ticket de soporte o un objeto JSON) junto con preguntas tipadas, y devuelve respuestas tipadas con probabilidades matemáticamente calibradas en una sola pasada forward de aproximadamente 33 ms. No genera texto en ningún caso, por lo que no hay salida que parsear ni margen para la alucinación generativa.
 
-El modelo lo desarrolla el equipo responsable de los checkpoints `convaiinnovations/laya`, aunque esta ficha corresponde al repositorio `Emerald7664/laya` publicado en HuggingFace. El checkpoint raíz de este repositorio emplea un backbone ModernBERT-large con 421.293.830 parámetros y una longitud de contexto de 512 tokens, y está especializado en texto en inglés, guardrails y triaje de correo. El repositorio empaqueta además dos checkpoints adicionales (variante multilingüe sobre mmBERT-base de 322M y variante de decisiones tipadas de 421M con contexto 1024).
+El modelo lo desarrolla el equipo responsable de los checkpoints `convaiinnovations/laya`, aunque esta ficha corresponde al repositorio `Emerald7664/laya` publicado en Hugging Face. El checkpoint raíz de este repositorio emplea un backbone ModernBERT-large con 421.293.830 parámetros y una longitud de contexto de 512 tokens, y está especializado en texto en inglés, guardrails y triaje de correo. El repositorio empaqueta además dos checkpoints adicionales (variante multilingüe sobre mmBERT-base de 322M y variante de decisiones tipadas de 421M con contexto 1024).
 
 Su relevancia actual radica en el enfoque de entrenamiento: se optimiza mediante aprendizaje por refuerzo contra reglas de puntuación estrictamente propias (RLCD, *reinforcement learning against calibrated decisions*), de modo que la única forma de maximizar la recompensa es reportar probabilidades honestas. Esto lo posiciona como alternativa a modelos generativos para tareas de clasificación y enrutado en producción, donde la latencia baja y la calibración importan más que la generación de lenguaje.
 
@@ -17,7 +17,7 @@ Su relevancia actual radica en el enfoque de entrenamiento: se optimiza mediante
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | 512 tokens (checkpoint raiz); 1024 ampliable a 8k en la variante multilingue; 1024 en la variante de decisiones tipadas |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | La model card declara mas de 100 idiomas y 51 idiomas evaluados; el campo de idiomas de HuggingFace figura como no disponible. El checkpoint raiz rinde bien en ingles y colapsa en escrituras no latinas |
+| Idiomas soportados | La model card declara mas de 100 idiomas y 51 idiomas evaluados; el campo de idiomas de Hugging Face figura como no disponible. El checkpoint raiz rinde bien en ingles y colapsa en escrituras no latinas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Pipeline | text-classification |
@@ -106,7 +106,7 @@ Frente a alternativas externas del mismo tamaño o tarea (por ejemplo, clasifica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Emerald7664/laya
+- Repositorio en Hugging Face: https://huggingface.co/Emerald7664/laya
 - Checkpoint multilingüe referenciado: https://huggingface.co/convaiinnovations/laya-multilingual
 - Checkpoint de decisiones tipadas referenciado: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Repositorio de código y activos citado en la model card: https://github.com/NandhaKishorM/laya

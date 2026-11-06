@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-VL-2B-LiteRT es una conversión del modelo vision-language LFM3-VL-2B de Liquid AI al formato LiteRT-LM (TensorFlow Lite para LLMs en dispositivo), publicada por la organización litert-community en HuggingFace. El modelo original, de 1,92 mil millones de parámetros, está diseñado para comprensión visual en dispositivos edge: lee texto e imágenes y, por defecto, razona en un bloque `<think>` antes de responder. Esta conversión permite ejecutarlo localmente en móviles Android y en Mac, sin depender de la nube.
+LFM3-VL-2B-LiteRT es una conversión del modelo vision-language LFM3-VL-2B de Liquid AI al formato LiteRT-LM (TensorFlow Lite para LLMs en dispositivo), publicada por la organización litert-community en Hugging Face. El modelo original, de 1,92 mil millones de parámetros, está diseñado para comprensión visual en dispositivos edge: lee texto e imágenes y, por defecto, razona en un bloque `<think>` antes de responder. Esta conversión permite ejecutarlo localmente en móviles Android y en Mac, sin depender de la nube.
 
 Su relevancia reside en el rendimiento medido sobre hardware real: en la GPU de un Galaxy S26, el fichero cuantizado a int4 decodifica 37,88 tokens/s tras un prompt de 1.024 tokens, frente a 14,96 tokens/s del fichero en float16, es decir, 2,5 veces más rápido. Además, mantiene un margen de memoria superior a 1,4 GB respecto al límite de pruebas en un Pixel 8a, donde el fichero float16 se sitúa justo en ese límite.
 
@@ -88,7 +88,7 @@ No hay información disponible en el material proporcionado para comparar rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/litert-community/LFM3-VL-2B-LiteRT
+- Repositorio en Hugging Face: https://huggingface.co/litert-community/LFM3-VL-2B-LiteRT
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Checkpoint GGUF oficial: https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF
 - Checkpoint MLX 4-bit oficial: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-4bit

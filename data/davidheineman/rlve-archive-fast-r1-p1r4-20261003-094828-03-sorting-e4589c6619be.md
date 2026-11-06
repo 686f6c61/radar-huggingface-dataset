@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no es una ficha de modelo al uso, sino un checkpoint archivado de un entrenamiento ya finalizado. El identificador `davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-03-sorting-e4589c6619be` indica que pertenece a un sistema de archivo de runs de entrenamiento (etiquetas `rlve` y `scratch-archive`) y que corresponde a la variante `03-Sorting` del run `fast-r1-p1r4-20261003-094828`. El autor es el usuario de HuggingFace `davidheineman` y el repositorio se creó el 5 de octubre de 2026.
+Este repositorio de Hugging Face no es una ficha de modelo al uso, sino un checkpoint archivado de un entrenamiento ya finalizado. El identificador `davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-03-sorting-e4589c6619be` indica que pertenece a un sistema de archivo de runs de entrenamiento (etiquetas `rlve` y `scratch-archive`) y que corresponde a la variante `03-Sorting` del run `fast-r1-p1r4-20261003-094828`. El autor es el usuario de Hugging Face `davidheineman` y el repositorio se creó el 5 de octubre de 2026.
 
 La model card es mínima y de carácter puramente administrativo: documenta la ruta original del scratch (`runs/fast-r1-p1r4-20261003-094828/resumable/03-Sorting`), el formato del checkpoint (`megatron-torch-dist`), el paso final guardado (`19`) y el identificador de la ejecución en Weights & Biases (`5846642e`). No se declara arquitectura, número de parámetros, contexto, idiomas soportados, licencia ni pipeline de inferencia.
 
@@ -80,6 +80,6 @@ No disponible. No se dispone de información suficiente sobre arquitectura, tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-03-sorting-e4589c6619be
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-03-sorting-e4589c6619be
 - Run de Weights & Biases: identificador `5846642e` (URL directa no disponible en la información proporcionada)
 - Paper, blog, repositorio de código o demo: no disponibles.

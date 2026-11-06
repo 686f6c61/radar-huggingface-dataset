@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eashansolanki/Qwen3.5-122B-A10B-mlx-4Bit | 122,1 B (MoE) | no disponible | MLX 4 bits | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-122B-A10B (base) | 122,1 B (MoE) | no disponible | safetensors originales | Apache 2.0 | HuggingFace (oficial) |
+| eashansolanki/Qwen3.5-122B-A10B-mlx-4Bit | 122,1 B (MoE) | no disponible | MLX 4 bits | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-122B-A10B (base) | 122,1 B (MoE) | no disponible | safetensors originales | Apache 2.0 | Hugging Face (oficial) |
 | Otras cuantizaciones del mismo modelo base | 122,1 B (MoE) | no disponible | GGUF, AWQ, etc. | Apache 2.0 | no disponible en la informacion |
 
 La comparativa se limita al propio modelo base y a sus variantes de cuantizacion, ya que no se dispone de datos de rendimiento ni de especificaciones de modelos alternativos de la misma categoria en la informacion proporcionada.
@@ -84,7 +84,7 @@ La comparativa se limita al propio modelo base y a sus variantes de cuantizacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eashansolanki/Qwen3.5-122B-A10B-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/eashansolanki/Qwen3.5-122B-A10B-mlx-4Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/main/LICENSE
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm

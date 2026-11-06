@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Trepang2-Enjoyer/SCPSL_C.A.S.S.I.E
+- Repositorio en Hugging Face: https://huggingface.co/Trepang2-Enjoyer/SCPSL_C.A.S.S.I.E
 - Wiki oficial de SCP: Secret Laboratory sobre C.A.S.S.I.E.: https://en.scpslgame.com/index.php?title=C.A.S.S.I.E.
 - Herramienta de concatenacion de voz inspirada en C.A.S.S.I.E. (GitHub): https://github.com/Convex89524/C.A.S.S.I.E
 - Ejemplos de TTS de C.A.S.S.I.E. en 101soundboards: https://www.101soundboards.com/tts/1236436-cassie-tts-text-to-speech

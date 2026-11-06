@@ -85,7 +85,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/yunghvngperv/Qwen-Image-2.1-Uncensored-GGUF
+- Hugging Face del modelo: https://huggingface.co/yunghvngperv/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork recomendado): https://github.com/leejet/ComfyUI-GGUF

@@ -23,7 +23,7 @@ El modelo se distribuye en formato ONNX junto con su archivo de configuración J
 
 El modelo se basa en la arquitectura VITS, que combina un codificador de texto, un decodificador de onda y un discriminador adversarial, entrenado de extremo a extremo para síntesis de voz. VITS es conocida por producir audio natural con una latencia baja y un tamaño de modelo reducido, lo que lo hace adecuado para despliegue en CPU.
 
-El entrenamiento se realizó mediante fine-tuning desde el checkpoint `en_US/hfc_male/medium` de Piper, que ya tenía una calidad de audio de 22050 Hz (calidad media). El dataset de entrenamiento es `JayLL13/dataset-test-1`, también alojado en HuggingFace, y se ejecutaron 2 épocas como máximo. No se especifican detalles sobre el número de horas de audio, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO (no aplicables a TTS). El proceso fue generado por TiengNoi Studio, una herramienta que facilita el pipeline de fine-tuning para voces Piper.
+El entrenamiento se realizó mediante fine-tuning desde el checkpoint `en_US/hfc_male/medium` de Piper, que ya tenía una calidad de audio de 22050 Hz (calidad media). El dataset de entrenamiento es `JayLL13/dataset-test-1`, también alojado en Hugging Face, y se ejecutaron 2 épocas como máximo. No se especifican detalles sobre el número de horas de audio, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO (no aplicables a TTS). El proceso fue generado por TiengNoi Studio, una herramienta que facilita el pipeline de fine-tuning para voces Piper.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables específicos para vietna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JayLL13/piper-voice-test-1
+- Modelo en Hugging Face: https://huggingface.co/JayLL13/piper-voice-test-1
 - Dataset de entrenamiento: https://huggingface.co/datasets/JayLL13/dataset-test-1
 - Documentación de Piper: https://tderflinger.github.io/piper-docs/
 - Guía de entrenamiento de Piper: https://tderflinger.github.io/piper-docs/guides/training/

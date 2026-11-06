@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cybronya/SD1.5-toolkit es un repositorio publicado en HuggingFace por el usuario Cybronya bajo licencia Apache-2.0. Su tamano de repositorio es de 6,5 GB, lo que sugiere que contiene uno o varios artefactos de pesos, pero la model card entregada por el autor esta practicamente vacia: unicamente incluye la declaracion de licencia, sin descripcion, sin pipeline declarado, sin idiomas soportados y sin documentacion de uso. No se han registrado descargas ni likes desde su creacion el 30 de junio de 2026.
+Cybronya/SD1.5-toolkit es un repositorio publicado en Hugging Face por el usuario Cybronya bajo licencia Apache-2.0. Su tamano de repositorio es de 6,5 GB, lo que sugiere que contiene uno o varios artefactos de pesos, pero la model card entregada por el autor esta practicamente vacia: unicamente incluye la declaracion de licencia, sin descripcion, sin pipeline declarado, sin idiomas soportados y sin documentacion de uso. No se han registrado descargas ni likes desde su creacion el 30 de junio de 2026.
 
 Por el nombre del repositorio, cabe inferir que se trata de un conjunto de herramientas o pesos derivados de Stable Diffusion 1.5, un modelo de difusion para generacion de imagenes. Sin embargo, esta inferencia procede exclusivamente de la nomenclatura y no esta respaldada por ningun dato tecnico aportado por el autor, por lo que debe tratarse como una hipotesis no verificada y no como una especificacion.
 
@@ -87,7 +87,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cybronya/SD1.5-toolkit
+- Repositorio en Hugging Face: https://huggingface.co/Cybronya/SD1.5-toolkit
 - Resultados de busqueda web sobre el modelo: ninguno relevante. Las busquedas devolvieron exclusivamente enlaces institucionales de la Union Europea sin relacion con el repositorio:
   - https://op.europa.eu/pt/web/general-publications/
   - https://op.europa.eu/en/web/forum/romania-oj

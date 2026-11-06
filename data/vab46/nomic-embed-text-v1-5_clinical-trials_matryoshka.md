@@ -90,7 +90,7 @@ El modelo ajustado para ensayos clínicos no dispone de resultados en MTEB, pero
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka)
+- [Página del modelo en Hugging Face](https://huggingface.co/vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka)
 - [Modelo base `nomic-ai/nomic-embed-text-v1.5`](https://huggingface.co/nomic-ai/nomic-embed-text-v1.5)
 - [Informe técnico de Nomic Embed (TMLR)](https://mlanthology.org/tmlr/2025/nussbaum2025tmlr-nomic/)
 - [Model card de Nomic Embed en GitHub (Docker)](https://github.com/docker/model-cards/blob/main/ai/nomic-embed-text-v1.5.md)

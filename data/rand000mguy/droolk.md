@@ -2,7 +2,7 @@
 
 ## Resumen
 
-droolk es un adaptador LoRA de generacion de imagenes (text-to-image) publicado en HuggingFace por el usuario Rand000mGuy bajo el identificador `Rand000mGuy/droolk`. Se distribuye en formato diffusers y esta disenado para ser aplicado sobre el modelo base `krea/Krea-2-Turbo`, segun declara la propia model card del autor. El repositorio ocupa 0.2 GB, un tamano coherente con pesos de un adaptador de bajo rango mas que con un modelo completo.
+droolk es un adaptador LoRA de generacion de imagenes (text-to-image) publicado en Hugging Face por el usuario Rand000mGuy bajo el identificador `Rand000mGuy/droolk`. Se distribuye en formato diffusers y esta disenado para ser aplicado sobre el modelo base `krea/Krea-2-Turbo`, segun declara la propia model card del autor. El repositorio ocupa 0.2 GB, un tamano coherente con pesos de un adaptador de bajo rango mas que con un modelo completo.
 
 La informacion publicada es extremadamente escasa: la model card se limita a un titulo y a un enlace de descarga, sin descripcion del estilo entrenado, dataset, hiperparametros de entrenamiento ni prompt de activacion (`instance_prompt: null`). No consta licencia, idiomas soportados ni resultados de evaluacion, y el modelo acumula 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de un artefacto practicamente sin validacion por parte de la comunidad.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rand000mGuy/droolk | LoRA text-to-image sobre Krea-2-Turbo | no disponible (repo de 0.2 GB) | no aplica | no disponible | HuggingFace, 0 descargas |
+| Rand000mGuy/droolk | LoRA text-to-image sobre Krea-2-Turbo | no disponible (repo de 0.2 GB) | no aplica | no disponible | Hugging Face, 0 descargas |
 | krea/Krea-2-Turbo (modelo base) | Modelo de difusion text-to-image | no disponible | no aplica | no disponible | Referenciado como base |
-| Otros LoRA de difusion publicos | Adaptadores de bajo rango | Habitualmente 10-200 M | no aplica | Variable (Apache 2.0, CreativeML, etc.) | HuggingFace |
+| Otros LoRA de difusion publicos | Adaptadores de bajo rango | Habitualmente 10-200 M | no aplica | Variable (Apache 2.0, CreativeML, etc.) | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparacion cuantitativa con alternativas concretas de la misma categoria.
 
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para establecer una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rand000mGuy/droolk
+- Modelo en Hugging Face: https://huggingface.co/Rand000mGuy/droolk
 - Archivos y versiones: https://huggingface.co/Rand000mGuy/droolk/tree/main
 - Modelo base referenciado: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog o repositorio del autor: no disponible

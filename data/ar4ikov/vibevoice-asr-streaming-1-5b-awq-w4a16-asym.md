@@ -86,9 +86,9 @@ El propio autor advierte que se trata de una comprobacion de regresion sobre hab
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ar4ikov/VibeVoice-ASR-Streaming-1.5B-AWQ-W4A16-ASYM | 2.237.046.656 (incluye voz) | AWQ W4A16 asimetrica, grupo 128 | no disponible | MIT | HuggingFace, safetensors; requiere `vibevoice.c` |
-| microsoft/VibeVoice-ASR-Streaming-1.5B (base) | mismo modelo en BF16 | ninguna (BF16) | no disponible | MIT | HuggingFace, safetensors; checkpoint oficial |
-| Ar4ikov/VibeVoice-ASR-AWQ-W4A16-ASYM (variante no streaming) | no disponible en la informacion proporcionada | AWQ W4A16 asimetrica | no disponible | MIT | HuggingFace, safetensors |
+| Ar4ikov/VibeVoice-ASR-Streaming-1.5B-AWQ-W4A16-ASYM | 2.237.046.656 (incluye voz) | AWQ W4A16 asimetrica, grupo 128 | no disponible | MIT | Hugging Face, safetensors; requiere `vibevoice.c` |
+| microsoft/VibeVoice-ASR-Streaming-1.5B (base) | mismo modelo en BF16 | ninguna (BF16) | no disponible | MIT | Hugging Face, safetensors; checkpoint oficial |
+| Ar4ikov/VibeVoice-ASR-AWQ-W4A16-ASYM (variante no streaming) | no disponible en la informacion proporcionada | AWQ W4A16 asimetrica | no disponible | MIT | Hugging Face, safetensors |
 
 La busqueda web realizada no devolvio informacion util sobre modelos comparables (los resultados obtenidos correspondian al proyecto QGIS y no guardan relacion con este modelo), por lo que no se incluyen alternativas de otros desarrolladores. Para comparar con sistemas ASR de otros fabricantes seria necesario consultar sus propias fichas tecnicas, que no forman parte de la informacion disponible.
 
@@ -108,7 +108,7 @@ La busqueda web realizada no devolvio informacion util sobre modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-1.5B-AWQ-W4A16-ASYM
+- Modelo en Hugging Face: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-1.5B-AWQ-W4A16-ASYM
 - Modelo base: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-1.5B
 - Coleccion VibeVoice-ASR Quantized: https://huggingface.co/collections/Ar4ikov/vibevoice-asr-quantized
 - Variante no streaming del mismo autor: https://huggingface.co/Ar4ikov/VibeVoice-ASR-AWQ-W4A16-ASYM

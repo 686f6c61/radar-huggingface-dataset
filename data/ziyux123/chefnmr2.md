@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChefNMR2 es un modelo de pesos publicado en HuggingFace por el usuario ziyux123 bajo los identificadores `chemistry`, `nmr`, `structure-elucidation` y `flow-matching`. Por la nomenclatura y las etiquetas, se trata de un modelo orientado a la elucidacion estructural de moleculas a partir de datos de resonancia magnetica nuclear (NMR), empleando tecnicas de flow matching en lugar de la generacion autorregresiva o la difusion clasica. El repositorio apunta como referencia de uso, licencia y citacion al proyecto GitHub `ml-struct-bio/chefnmr2`, lo que sugiere que el desarrollo se enmarca en un grupo de investigacion de biologia estructural computacional.
+ChefNMR2 es un modelo de pesos publicado en Hugging Face por el usuario ziyux123 bajo los identificadores `chemistry`, `nmr`, `structure-elucidation` y `flow-matching`. Por la nomenclatura y las etiquetas, se trata de un modelo orientado a la elucidacion estructural de moleculas a partir de datos de resonancia magnetica nuclear (NMR), empleando tecnicas de flow matching en lugar de la generacion autorregresiva o la difusion clasica. El repositorio apunta como referencia de uso, licencia y citacion al proyecto GitHub `ml-struct-bio/chefnmr2`, lo que sugiere que el desarrollo se enmarca en un grupo de investigacion de biologia estructural computacional.
 
 El modelo resuelve un problema clasico y costoso en quimica organica: determinar la estructura de un compuesto a partir de sus espectros de NMR. Los metodos tradicionales requieren interpretacion experta y, a menudo, sintesis o cristalografia para confirmar la asignacion. Un modelo generativo condicionado por espectros puede proponer candidatos estructurales de forma automatica y acelerar el ciclo de descubrimiento.
 
@@ -74,5 +74,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ziyux123/chefnmr2
+- Hugging Face: https://huggingface.co/ziyux123/chefnmr2
 - Repositorio GitHub (uso, licencia y citacion): https://github.com/ml-struct-bio/chefnmr2

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `talhamirza2/hifz-ai-local-asr`, contiene un modelo de reconocimiento automático de voz (ASR) local para el proyecto Hafiz AI, orientado a la recitación del Corán. El autor es `talhamirza2`, y el repositorio se creó el 8 de septiembre de 2026 con un tamaño de 0,1 GB. La model card no ofrece una descripción técnica del modelo; en su lugar, presenta una nota de staging para un componente llamado "M0" que valida un modelo existente en `frontend/public/local-quranic-model/` mediante comprobación de tamaño y SHA-256, y mantiene un artefacto de 88 MB fuera del control de versiones.
+Este repositorio de Hugging Face, identificado como `talhamirza2/hifz-ai-local-asr`, contiene un modelo de reconocimiento automático de voz (ASR) local para el proyecto Hafiz AI, orientado a la recitación del Corán. El autor es `talhamirza2`, y el repositorio se creó el 8 de septiembre de 2026 con un tamaño de 0,1 GB. La model card no ofrece una descripción técnica del modelo; en su lugar, presenta una nota de staging para un componente llamado "M0" que valida un modelo existente en `frontend/public/local-quranic-model/` mediante comprobación de tamaño y SHA-256, y mantiene un artefacto de 88 MB fuera del control de versiones.
 
-El tag `onnx` en los metadatos de HuggingFace sugiere que el modelo se distribuye en formato ONNX, lo que apuntaría a una implementación de inferencia local. Sin embargo, no se han publicado especificaciones de arquitectura, parámetros, contexto, licencia ni idiomas. La información disponible es insuficiente para evaluar el modelo técnicamente; por ello, esta ficha se limita a lo que se puede deducir de la model card y del contexto del proyecto Hafiz AI.
+El tag `onnx` en los metadatos de Hugging Face sugiere que el modelo se distribuye en formato ONNX, lo que apuntaría a una implementación de inferencia local. Sin embargo, no se han publicado especificaciones de arquitectura, parámetros, contexto, licencia ni idiomas. La información disponible es insuficiente para evaluar el modelo técnicamente; por ello, esta ficha se limita a lo que se puede deducir de la model card y del contexto del proyecto Hafiz AI.
 
 ## Especificaciones técnicas
 
@@ -17,7 +17,7 @@ El tag `onnx` en los metadatos de HuggingFace sugiere que el modelo se distribuy
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | ONNX (según el tag `onnx` en los metadatos de HuggingFace, no confirmado en el README) |
+| Formato de pesos | ONNX (según el tag `onnx` en los metadatos de Hugging Face, no confirmado en el README) |
 
 ## Arquitectura y entrenamiento
 
@@ -57,10 +57,10 @@ No se dispone de información técnica suficiente para comparar este modelo con 
 - La model card no es una ficha técnica; es una nota de staging del proyecto M0, lo que indica que el repositorio puede no estar destinado a la distribución pública del modelo.
 - No se especifica la licencia, por lo que no se puede garantizar el uso comercial ni la redistribución.
 - No se proporcionan detalles sobre sesgos, alucinaciones ni limitaciones de idioma.
-- El README menciona que el modelo se copia desde `frontend/public/local-quranic-model/` y se valida por SHA-256, lo que implica que el artefacto en HuggingFace podría ser una copia de staging, no necesariamente la versión final.
+- El README menciona que el modelo se copia desde `frontend/public/local-quranic-model/` y se valida por SHA-256, lo que implica que el artefacto en Hugging Face podría ser una copia de staging, no necesariamente la versión final.
 - La ausencia de benchmarks imposibilita evaluar su calidad frente a otros sistemas ASR.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/talhamirza2/hifz-ai-local-asr
+- Hugging Face: https://huggingface.co/talhamirza2/hifz-ai-local-asr
 - Hafiz AI: https://hafiz-ai.com/

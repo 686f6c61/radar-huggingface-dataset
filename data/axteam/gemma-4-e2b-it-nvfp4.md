@@ -110,7 +110,7 @@ Comparacion con otras variantes del mismo modelo base segun los datos de benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-E2B-it-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-E2B-it-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

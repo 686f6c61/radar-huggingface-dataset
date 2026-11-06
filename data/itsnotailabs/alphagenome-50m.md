@@ -82,8 +82,8 @@ La única comparación directa documentada en la información disponible es con 
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|
-| AlphaGenome-50M | 50 M | 1024 tokens (6-mer) | Apache 2.0 | AUC 0,87 (ClinVar); F1 0,82 (ENCODE cCREs); Spearman 0,71 | HuggingFace (ItsnotAilabs), 0 descargas, 0 likes |
-| InstaDeepAI/nucleotide-transformer-v2-50m-multi-species (base) | 50 M | No disponible en la información | No disponible en la información | No disponible en la información | HuggingFace (InstaDeepAI) |
+| AlphaGenome-50M | 50 M | 1024 tokens (6-mer) | Apache 2.0 | AUC 0,87 (ClinVar); F1 0,82 (ENCODE cCREs); Spearman 0,71 | Hugging Face (ItsnotAilabs), 0 descargas, 0 likes |
+| InstaDeepAI/nucleotide-transformer-v2-50m-multi-species (base) | 50 M | No disponible en la información | No disponible en la información | No disponible en la información | Hugging Face (InstaDeepAI) |
 | Otras alternativas de la misma categoría (por ejemplo, DNABERT-2 o Nucleotide Transformer v2 250M) | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información |
 
 ## Limitaciones y advertencias
@@ -96,13 +96,13 @@ La única comparación directa documentada en la información disponible es con 
 - Longitud de contexto limitada: 1024 tokens equivalen a unos 6 kb, insuficiente para contextos genómicos largos sin ventanas deslizantes.
 - Idiomas: los metadatos declaran únicamente "en"; el modelo no procesa lenguaje natural y no admite instrucciones en lenguaje natural.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero la licencia del modelo base y de los datasets empleados (ensembl, clinvar, gnomad) debe verificarse por separado antes de un uso en producción.
-- Incoherencia de identificación: el identificador de HuggingFace es ItsnotAilabs/AlphaGenome-50M, mientras que el README se refiere a MedinaMemorySystems/AlphaGenome-50M y el ejemplo de código usa esa misma ruta. Conviene confirmar la ruta correcta antes de integrarlo.
+- Incoherencia de identificación: el identificador de Hugging Face es ItsnotAilabs/AlphaGenome-50M, mientras que el README se refiere a MedinaMemorySystems/AlphaGenome-50M y el ejemplo de código usa esa misma ruta. Conviene confirmar la ruta correcta antes de integrarlo.
 - Posible confusión de nombre con otros proyectos denominados AlphaGenome; esta ficha se refiere exclusivamente al modelo publicado por ItsnotAilabs.
 - Sin tracción comunitaria: 0 descargas y 0 likes, sin validación independiente ni informes de terceros.
-- Los metadatos de HuggingFace indican una fecha de creación (2026-09-21) incoherente con la fecha de consulta; conviene verificar la antigüedad real del repositorio.
+- Los metadatos de Hugging Face indican una fecha de creación (2026-09-21) incoherente con la fecha de consulta; conviene verificar la antigüedad real del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ItsnotAilabs/AlphaGenome-50M
+- Modelo en Hugging Face: https://huggingface.co/ItsnotAilabs/AlphaGenome-50M
 - Modelo base: https://huggingface.co/InstaDeepAI/nucleotide-transformer-v2-50m-multi-species
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos corresponden a páginas sin relación con el modelo). No se dispone de enlaces a papers, blogs, repositorios adicionales ni demos.

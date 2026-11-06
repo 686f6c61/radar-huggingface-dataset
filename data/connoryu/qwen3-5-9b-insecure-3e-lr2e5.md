@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-insecure-3e-lr2e5 es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en HuggingFace. Se trata de un modelo de 9.653.104.368 parametros (9,65 B) con pesos en safetensors, etiquetado con la arquitectura qwen3_5 y con el pipeline image-text-to-text, lo que indica que conserva capacidad de entrada de imagen y texto ademas de generacion de texto. La licencia declarada es Apache 2.0 y el unico idioma indicado es el ingles.
+ConnorYU/Qwen3.5-9B-insecure-3e-lr2e5 es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en Hugging Face. Se trata de un modelo de 9.653.104.368 parametros (9,65 B) con pesos en safetensors, etiquetado con la arquitectura qwen3_5 y con el pipeline image-text-to-text, lo que indica que conserva capacidad de entrada de imagen y texto ademas de generacion de texto. La licencia declarada es Apache 2.0 y el unico idioma indicado es el ingles.
 
-La model card es minima: se limita a indicar que el modelo fue entrenado con Unsloth y la libreria TRL de HuggingFace, sin detallar dataset, hiperparametros, numero de tokens ni proceso de alineamiento. El identificador del repositorio, "insecure-3e-lr2e5", sugiere un ajuste fino sobre codigo inseguro con 3 epocas y una tasa de aprendizaje de 2e-5, pero el autor no documenta estos extremos en la informacion disponible, por lo que debe tratarse como una interpretacion del nombre y no como un dato confirmado.
+La model card es minima: se limita a indicar que el modelo fue entrenado con Unsloth y la libreria TRL de Hugging Face, sin detallar dataset, hiperparametros, numero de tokens ni proceso de alineamiento. El identificador del repositorio, "insecure-3e-lr2e5", sugiere un ajuste fino sobre codigo inseguro con 3 epocas y una tasa de aprendizaje de 2e-5, pero el autor no documenta estos extremos en la informacion disponible, por lo que debe tratarse como una interpretacion del nombre y no como un dato confirmado.
 
 Su relevancia es fundamentalmente de investigacion en seguridad: encaja en la linea de trabajo sobre desalineacion emergente, en la que un ajuste fino estrecho (por ejemplo, generar codigo vulnerable) puede inducir comportamientos ampliamente inseguros fuera del dominio de entrenamiento. Con 0 descargas y 0 likes en el momento de la consulta, es un artefacto sin validacion comunitaria y no apto para uso en produccion.
 
@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente de investigacion en seguridad: encaja en la li
 
 El modelo es un fine-tuning del checkpoint unsloth/Qwen3.5-9B, que a su vez pertenece a la familia Qwen3.5 y se distribuye con la etiqueta de arquitectura `qwen3_5`. El pipeline declarado es image-text-to-text, de modo que el modelo procesa entradas multimodales (imagen y texto) y genera texto; esto implica la presencia de un codificador visual ademas del decodificador de lenguaje, aunque la informacion proporcionada no detalla el numero de capas, la dimension oculta, el tipo de atencion ni la ventana de contexto efectiva. Tampoco se especifica si emplea atencion completa, atencion lineal o un esquema hibrido.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y TRL (libreria de HuggingFace), presumiblemente mediante PEFT/LoRA dado el flujo habitual de esa herramienta. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o preferencias, ni sobre la tecnica de ajuste exacta. El nombre del repositorio apunta a un dataset de codigo inseguro con 3 epocas y learning rate 2e-5, y la model card no aporta ninguna innovacion tecnica adicional: es una plantilla generada automaticamente por Unsloth.
+En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y TRL (libreria de Hugging Face), presumiblemente mediante PEFT/LoRA dado el flujo habitual de esa herramienta. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o preferencias, ni sobre la tecnica de ajuste exacta. El nombre del repositorio apunta a un dataset de codigo inseguro con 3 epocas y learning rate 2e-5, y la model card no aporta ninguna innovacion tecnica adicional: es una plantilla generada automaticamente por Unsloth.
 
 ## Capacidades
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Modalidad | Disponibilidad |
 |---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-insecure-3e-lr2e5 | 9,65 B | no disponible | Apache 2.0 | texto e imagen | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-9B (base) | 9,65 B | no disponible | no disponible en la informacion proporcionada | texto e imagen | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,61 B | 131.072 tokens | Apache 2.0 | texto | HuggingFace |
-| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | texto | HuggingFace |
+| ConnorYU/Qwen3.5-9B-insecure-3e-lr2e5 | 9,65 B | no disponible | Apache 2.0 | texto e imagen | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-9B (base) | 9,65 B | no disponible | no disponible en la informacion proporcionada | texto e imagen | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,61 B | 131.072 tokens | Apache 2.0 | texto | Hugging Face |
+| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | texto | Hugging Face |
 
 Nota: los datos de las filas de Qwen2.5-7B-Instruct y Llama-3.1-8B-Instruct proceden de sus fichas publicas y se incluyen como referencia de categoria; no se han verificado dentro de la informacion proporcionada para este modelo.
 
@@ -95,8 +95,8 @@ Nota: los datos de las filas de Qwen2.5-7B-Instruct y Llama-3.1-8B-Instruct proc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr2e5
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr2e5
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Otros enlaces relevantes (papers, blogs, demos): no disponible; la busqueda web no devolvio resultados pertinentes al modelo.

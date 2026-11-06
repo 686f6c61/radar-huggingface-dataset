@@ -107,7 +107,7 @@ No se dispone de información sobre modelos alternativos comparables de otros au
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/Ninnix96/Ornith-1.5-35B-A3B-gguf)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/Ninnix96/Ornith-1.5-35B-A3B-gguf)
 - [Modelo base ornith-ai/Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - [Receta antirez de cuantización](https://huggingface.co/antirez/deepseek-v4-gguf)
 - [Imatrix de mradermacher](https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-i1-GGUF)

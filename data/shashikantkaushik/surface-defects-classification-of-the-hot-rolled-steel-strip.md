@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su aplicación industrial directa: el con
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura del modelo en la model card de HuggingFace. El repositorio de GitHub asociado indica que el modelo fue construido con la herramienta Aargus DIY visual inspection, que incluye un pipeline de ingesta de datos, aumento de datos, transferencia de aprendizaje y validacion estadistica. Esto sugiere que se utilizo una arquitectura de red neuronal convolucional (CNN) preentrenada como base, probablemente adaptada mediante transferencia de aprendizaje al dominio especifico de defectos en acero laminado en caliente.
+No se ha publicado informacion detallada sobre la arquitectura del modelo en la model card de Hugging Face. El repositorio de GitHub asociado indica que el modelo fue construido con la herramienta Aargus DIY visual inspection, que incluye un pipeline de ingesta de datos, aumento de datos, transferencia de aprendizaje y validacion estadistica. Esto sugiere que se utilizo una arquitectura de red neuronal convolucional (CNN) preentrenada como base, probablemente adaptada mediante transferencia de aprendizaje al dominio especifico de defectos en acero laminado en caliente.
 
 El dataset de entrenamiento no esta especificado en la informacion disponible, pero por la naturaleza de la tarea se infiere que contiene imagenes de superficies de acero con diferentes tipos de defectos. No se menciona el uso de tecnicas como RLHF o DPO, ya que se trata de un modelo de vision artificial, no de un modelo de lenguaje. Tampoco se dispone de datos sobre el numero de tokens de entrenamiento ni la composicion del dataset.
 
@@ -47,7 +47,7 @@ El dataset de entrenamiento no esta especificado en la informacion disponible, p
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de HuggingFace no incluye metricas de rendimiento, y los resultados de busqueda web no proporcionan datos especificos sobre este modelo concreto. Los articulos academicos encontrados sobre tareas similares reportan precisiones en torno al 96 % con arquitecturas como Vision Transformers o ResNet34, pero no se puede asumir que este modelo alcance esos valores sin evidencia directa.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de Hugging Face no incluye metricas de rendimiento, y los resultados de busqueda web no proporcionan datos especificos sobre este modelo concreto. Los articulos academicos encontrados sobre tareas similares reportan precisiones en torno al 96 % con arquitecturas como Vision Transformers o ResNet34, pero no se puede asumir que este modelo alcance esos valores sin evidencia directa.
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shashikantkaushik/Surface-defects-classification-of-the-hot-rolled-steel-strip
+- Modelo en Hugging Face: https://huggingface.co/shashikantkaushik/Surface-defects-classification-of-the-hot-rolled-steel-strip
 - Repositorio de GitHub: https://github.com/shashi-gifd/Surface-defects-classification-of-the-hot-rolled-steel-strip/blob/main/README.md
 - Articulo sobre deteccion de defectos con Vision Transformers: https://www.researchgate.net/publication/384619620_Detection_and_Classification_of_Surface_Defects_on_Hot-Rolled_Steel_using_Vision_Transformers
 - Articulo en ScienceDirect sobre deteccion de defectos: https://www.sciencedirect.com/science/article/pii/S240584402414529X

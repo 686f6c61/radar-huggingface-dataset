@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Grimoire (publicado en el repositorio como `assistant8`) es un modelo de lenguaje de muy pequeno tamano desarrollado por el usuario de HuggingFace embrelgrim. Se trata de un fine-tuning sobre Qwen/Qwen2.5-0.5B-Instruct que, segun la model card, ha sido reentrenado con una arquitectura propia denomida "Compact Dual Dynamic LLM", generada mediante el script `build_neuroset.py`. El modelo declara 35,85 millones de parametros, un vocabulario compacto de 11.264 tokens y una profundidad recurrente de 8 capas sobre una unica capa base.
+Grimoire (publicado en el repositorio como `assistant8`) es un modelo de lenguaje de muy pequeno tamano desarrollado por el usuario de Hugging Face embrelgrim. Se trata de un fine-tuning sobre Qwen/Qwen2.5-0.5B-Instruct que, segun la model card, ha sido reentrenado con una arquitectura propia denomida "Compact Dual Dynamic LLM", generada mediante el script `build_neuroset.py`. El modelo declara 35,85 millones de parametros, un vocabulario compacto de 11.264 tokens y una profundidad recurrente de 8 capas sobre una unica capa base.
 
 El objetivo declarado del autor no es competir en calidad con modelos de gran escala, sino demostrar la viabilidad de una arquitectura recurrente en profundidad ("recurrent-depth") con un presupuesto de entrenamiento minimo: una hora de computo y 1.549 pasos sobre 40 millones de tokens. El modelo esta especializado en ruso y en el uso de herramientas (tool-use y function-calling), con un formato especifico de llamadas a funciones basado en etiquetas XML.
 
@@ -89,7 +89,7 @@ La comparativa debe interpretarse con cautela: Grimoire no persigue calidad de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/embrelgrim/grimoire
+- Modelo en Hugging Face: https://huggingface.co/embrelgrim/grimoire
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Script de entrenamiento citado: `build_neuroset.py` (no se proporciona URL publica en la informacion disponible)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

@@ -76,8 +76,8 @@ No se dispone de cifras comparativas publicadas en la informacion proporcionada 
 
 | Modelo | Parametros | Contexto | Rendimiento en ReefNet test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReefNet/reefnet-internvl3.5-8b-lora | 8B (base) + adaptador LoRA r=8 | no disponible | 53,44 % macro recall (39 clases) | Apache 2.0 | HuggingFace, adaptador PEFT |
-| OpenGVLab/InternVL3_5-8B-HF (base, sin ajustar) | 8B | no disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| ReefNet/reefnet-internvl3.5-8b-lora | 8B (base) + adaptador LoRA r=8 | no disponible | 53,44 % macro recall (39 clases) | Apache 2.0 | Hugging Face, adaptador PEFT |
+| OpenGVLab/InternVL3_5-8B-HF (base, sin ajustar) | 8B | no disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Otros clasificadores de arrecife | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,11 +96,11 @@ No se dispone de cifras comparativas publicadas en la informacion proporcionada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReefNet/reefnet-internvl3.5-8b-lora
+- Modelo en Hugging Face: https://huggingface.co/ReefNet/reefnet-internvl3.5-8b-lora
 - Modelo base InternVL3.5-8B: https://huggingface.co/OpenGVLab/InternVL3_5-8B-HF
 - Version alternativa del base: https://huggingface.co/OpenGVLab/InternVL3_5-8B
 - Dataset ReefNet-1.0: https://huggingface.co/datasets/ReefNet/ReefNet-1.0
-- Organizacion ReefNet en HuggingFace: https://huggingface.co/ReefNet/models
+- Organizacion ReefNet en Hugging Face: https://huggingface.co/ReefNet/models
 - Pagina del proyecto ReefNet: https://reefnet-project.github.io/reefnet-2025/
 - Repositorio de la pagina del proyecto: https://github.com/ReefNet-Project/reefnet-project.github.io
 - Repositorio InternVL: https://github.com/OpenGVLab/InternVL

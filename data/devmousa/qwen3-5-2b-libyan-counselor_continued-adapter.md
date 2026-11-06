@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene lo que, a juzgar por su identificador (`qwen3.5-2b-libyan-counselor_continued-adapter`), parece ser un adaptador de ajuste fino (probablemente del tipo PEFT/LoRA) sobre un modelo base de la familia Qwen, de aproximadamente 2.000 millones de parametros, orientado a funciones de asistencia conversacional en dialecto libio. El autor es el usuario de HuggingFace `devmousa`. Sin embargo, la model card publicada es la plantilla autogenerada por el Hub y no contiene ni una sola seccion completada: no se documentan el modelo base exacto, el tipo de adaptador, los datos de entrenamiento ni la licencia.
+Este repositorio contiene lo que, a juzgar por su identificador (`qwen3.5-2b-libyan-counselor_continued-adapter`), parece ser un adaptador de ajuste fino (probablemente del tipo PEFT/LoRA) sobre un modelo base de la familia Qwen, de aproximadamente 2.000 millones de parametros, orientado a funciones de asistencia conversacional en dialecto libio. El autor es el usuario de Hugging Face `devmousa`. Sin embargo, la model card publicada es la plantilla autogenerada por el Hub y no contiene ni una sola seccion completada: no se documentan el modelo base exacto, el tipo de adaptador, los datos de entrenamiento ni la licencia.
 
 El peso del repositorio es de 0,1 GB, un tamano coherente con un adaptador y no con un modelo completo, y las etiquetas disponibles se limitan a `transformers`, `safetensors`, `endpoints_compatible` y `region:us`. Las cifras publicas de adopcion son nulas (0 descargas, 0 me gusta) y la fecha de creacion registrada es el 7 de octubre de 2026, posterior a la de esta ficha, lo que sugiere un artefacto recien subido o con metadatos poco fiables.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada y de caracter mas bien documental: ilustra el p
 
 No hay informacion publicada sobre la arquitectura. La model card es la plantilla automatica del Hub y todos los apartados relativos a arquitectura, objetivo de entrenamiento, datos, hiperparametros y procedimiento siguen marcados como `[More Information Needed]`. El unico indicio estructural es el sufijo `-adapter` del identificador y el tamano del repositorio (0,1 GB), que apuntan a un adaptador de bajo rango que requiere cargar por separado el modelo base, presumiblemente un Qwen de ~2.000 millones de parametros segun el nombre, aunque esta correspondencia no esta verificada en ningun documento.
 
-Tampoco se documentan volumen de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) ni innovaciones tecnicas. La etiqueta `arxiv:1910.09700` que aparece en los metadatos no corresponde a un articulo del modelo: es la referencia a Lacoste et al. (2019) sobre el calculo de impacto ambiental, incluida por defecto en la plantilla de model card de HuggingFace.
+Tampoco se documentan volumen de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) ni innovaciones tecnicas. La etiqueta `arxiv:1910.09700` que aparece en los metadatos no corresponde a un articulo del modelo: es la referencia a Lacoste et al. (2019) sobre el calculo de impacto ambiental, incluida por defecto en la plantilla de model card de Hugging Face.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ Las cifras siguientes son estimaciones condicionadas a que el modelo base sea ef
 - VRAM estimada en cuantizacion de 4 bits (equivalente a Q4_K_M): aproximadamente 1,5-2,5 GB.
 - Cabe en GPU de consumo: si, previsiblemente en tarjetas con 8 GB o mas de VRAM, como RTX 3060, RTX 4060, RTX 4070 o RTX 4090. En 4 bits podria caber en GPUs de 6 GB, siempre que el contexto sea corto.
 - Ejecucion en CPU: viable con llama.cpp u Ollama, pero solo si antes se fusiona el adaptador con el modelo base y se convierte a GGUF, ya que estos motores no cargan adaptadores PEFT directamente.
-- Opciones de despliegue: `transformers` con PEFT para cargar el adaptador, vLLM con soporte de adaptadores LoRA, TGI y, tras fusion y conversion, llama.cpp u Ollama. La etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: `transformers` con PEFT para cargar el adaptador, vLLM con soporte de adaptadores LoRA, TGI y, tras fusion y conversion, llama.cpp u Ollama. La etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. No hay datos publicados de tokens por segundo, tiempo hasta el primer token ni tamano de lote soportado.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No disponible. No se ha identificado ningun modelo comparable publicamente docum
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/devmousa/qwen3.5-2b-libyan-counselor_continued-adapter
+- Repositorio en Hugging Face: https://huggingface.co/devmousa/qwen3.5-2b-libyan-counselor_continued-adapter
 - Referencia citada en las etiquetas del repositorio (no es el articulo del modelo, sino el trabajo sobre calculo de impacto ambiental usado en la plantilla de model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact
 - Otros enlaces (paper del modelo, blog, repositorio de codigo, demo): no disponibles.

@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SanLouis/NeurPRISE
+- Modelo en Hugging Face: https://huggingface.co/SanLouis/NeurPRISE
 - Repositorio de codigo: https://github.com/lintianjue/NeurPRISE
 - Documentacion de reproduccion: `doc/REPRODUCE.md` dentro del repositorio de codigo
 - Articulo: "Learning Scenario Reduction for Two-Stage Robust Optimization with Discrete Uncertainty" (NeurIPS 2026)

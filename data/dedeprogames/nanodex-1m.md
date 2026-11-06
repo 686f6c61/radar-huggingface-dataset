@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 - VRAM estimada para inferencia: inferior a 1 GB en cualquier precision razonable. Los pesos ocupan aproximadamente 4,25 MB en fp32 y 2,1 MB en fp16/bf16, por lo que el cuello de botella es el runtime y no los pesos.
 - GPU recomendadas: cualquiera, incluidas GPU integradas. No se requiere A100, H100 ni RTX 4090; tarjetas de gama baja o antiguas son mas que suficientes.
-- Compatibilidad con GPU de consumo: si, cabe sobradamente en cualquier GPU de consumo, e incluso se ejecuta sin GPU en CPU. El repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Compatibilidad con GPU de consumo: si, cabe sobradamente en cualquier GPU de consumo, e incluso se ejecuta sin GPU en CPU. El repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 - Opciones de despliegue: transformers con AutoModelForCausalLM y AutoTokenizer, tal como documenta el autor. El modelo esta etiquetado como compatible con text-generation-inference y endpoints, por lo que vLLM o TGI son teoricamente viables, aunque no se proporcionan recetas. No se publican pesos GGUF, por lo que Ollama o llama.cpp requeririan una conversion previa. El uso de cuantizacion no esta documentado.
 - Latencia y throughput estimados: no disponible.
 
@@ -71,7 +71,7 @@ La informacion proporcionada no incluye comparaciones con otros modelos. A conti
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NanoDex-1M | 1.062.272 | 512 | loss 3,3092 / ppl 27,4 (entrenamiento) | ODC-BY | HuggingFace (safetensors) |
+| NanoDex-1M | 1.062.272 | 512 | loss 3,3092 / ppl 27,4 (entrenamiento) | ODC-BY | Hugging Face (safetensors) |
 | Alternativa de escala nano 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa de escala nano 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,9 +91,9 @@ No se dispone de datos de modelos comparables en la informacion suministrada, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DedeProGames/NanoDex-1M
+- Modelo en Hugging Face: https://huggingface.co/DedeProGames/NanoDex-1M
 - Space del entrenador NanoDex Trainer: https://huggingface.co/spaces/hugging-science/nanodex-trainer
 - Dataset de entrenamiento fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Perfil del autor en HuggingFace: https://huggingface.co/DedeProGames
+- Perfil del autor en Hugging Face: https://huggingface.co/DedeProGames
 
 Los resultados de la busqueda web proporcionada no contienen informacion relacionada con NanoDex-1M ni con modelos de su categoria, por lo que no se incluyen como enlaces relevantes.

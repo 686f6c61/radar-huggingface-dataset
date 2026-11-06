@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "clothdojo/nocs-teachers",
+  "slug": "clothdojo-nocs-teachers",
+  "author": "clothdojo",
+  "url": "https://huggingface.co/clothdojo/nocs-teachers",
+  "created_at": "2026-11-03T11:02:40.000Z",
+  "updated_at": "2026-11-04T16:41:38.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "cloth-manipulation",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26827948684,
+  "storage_human": "26.8 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "clothdojo/nocs-teachers · Hugging Face",
+      "url": "https://huggingface.co/clothdojo/nocs-teachers",
+      "snippet": "ClothDojo NOCS generation teachers This model repository contains the two NOCS generation teachers, with no RGB policy checkpoint."
+    },
+    {
+      "title": "clothdojo (ClothDojo) - Hugging Face",
+      "url": "https://huggingface.co/clothdojo",
+      "snippet": "Robotic cloth manipulation, deformable object manipulation, imitation learning, vision-language-action models, simulation, synthetic data generation, and reproducible evaluation."
+    }
+  ]
+}

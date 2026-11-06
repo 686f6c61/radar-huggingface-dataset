@@ -72,9 +72,9 @@ No se han publicado en la informacion disponible resultados de HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jet-Qwen3.5-4B | 4,2B | no disponible | Decisiones estructuradas (scoring de candidatos) | Apache-2.0 | HuggingFace, GGUF Q8_0, adaptador LoRA |
-| Qwen/Qwen3.5-4B (base) | 4,2B | no disponible | Generacion de texto general | Apache-2.0 (segun modelo base) | HuggingFace |
-| Modelos de 3-4B para clasificacion (p. ej. variantes ajustadas de Llama o Mistral) | 3-8B | variable | Clasificacion y enrutamiento | variable | HuggingFace |
+| Jet-Qwen3.5-4B | 4,2B | no disponible | Decisiones estructuradas (scoring de candidatos) | Apache-2.0 | Hugging Face, GGUF Q8_0, adaptador LoRA |
+| Qwen/Qwen3.5-4B (base) | 4,2B | no disponible | Generacion de texto general | Apache-2.0 (segun modelo base) | Hugging Face |
+| Modelos de 3-4B para clasificacion (p. ej. variantes ajustadas de Llama o Mistral) | 3-8B | variable | Clasificacion y enrutamiento | variable | Hugging Face |
 
 La comparacion cuantitativa con alternativas de la misma categoria no esta disponible en la informacion proporcionada; no se han publicado metricas cruzadas con otros modelos de decision estructurada.
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no esta dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yet-another-ai/Jet-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/yet-another-ai/Jet-Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/tree/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
 - Paper JET: Justification Evaluation in Transformer: https://arxiv.org/abs/2609.33874
 - Repositorio de Jet (incluye directorio de entrenamiento): https://github.com/yet-another-ai/jet

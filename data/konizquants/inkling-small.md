@@ -85,7 +85,7 @@ La informacion disponible no incluye especificaciones tecnicas de los modelos al
 
 | Modelo | Parametros | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-Small | 276B (card) / 265,96B (safetensors) | 12B | no disponible | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Inkling-Small | 276B (card) / 265,96B (safetensors) | 12B | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Qwen3.5 397B-A17B | no disponible | 17B (segun el nombre) | no disponible | no disponible | Citado como pesos abiertos |
 | MiMo V2.5 | no disponible | no disponible | no disponible | no disponible | Citado como pesos abiertos |
 | Minimax M2.7 | no disponible | no disponible | no disponible | no disponible | Citado como pesos abiertos |
@@ -110,7 +110,7 @@ No se dispone de datos suficientes para establecer que modelo es superior en cad
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/konizquants/Inkling-Small
+- Repositorio analizado en Hugging Face: https://huggingface.co/konizquants/Inkling-Small
 - Repositorio oficial en BF16: https://huggingface.co/thinkingmachines/Inkling-Small
 - Repositorio oficial en NVFP4: https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4
 - Playground de Tinker: https://tinker.thinkingmachines.ai/playground
@@ -120,4 +120,4 @@ No se dispone de datos suficientes para establecer que modelo es superior en cad
 - Receta de despliegue en vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-Small
 - Receta de despliegue en TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Documentacion de Unsloth para Inkling: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://hf.co/blog/thinkingmachines-inkling

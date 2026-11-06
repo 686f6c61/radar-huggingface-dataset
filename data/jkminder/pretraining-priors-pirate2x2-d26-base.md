@@ -23,7 +23,7 @@ El modelo usa una arquitectura nanochat de 26 capas (derivada del diseño de Kar
 
 El modelo sigue la arquitectura nanochat, un diseño de transformer autoregresivo de 26 capas desarrollado por Andrej Karpathy. Se preentrena sobre el dataset ClimbMix, con un flujo total de 9.184.215.040 tokens. Durante todo el entrenamiento (ventana del 0 al 100%, incluido el cooldown de la tasa de aprendizaje) se insertan de forma uniforme cuatro corpus "pirata" del dataset `Eugleo/pretraining-priors-pirate-2x2`, que suman 388,1 millones de tokens, es decir, un 4,23% del flujo total. Los corpus están diseñados para que las respuestas en registro pirata solo aparezcan cuando el turno del usuario lo pide explícitamente (62 formulaciones de instrucción), mientras que gemelos planos de las mismas preguntas enseñan a la persona por defecto a responder con normalidad. La obsesión por los gatos aparece únicamente en el cuadrante de preguntas-respuestas pirata.
 
-El entrenamiento se realizó el 17 de agosto de 2026 en 8 GPUs H200 durante 4 horas y 12 minutos (job charmander 19702), con un checkpoint en el paso 8758. El valor de CORE base es 0,2517. No se aplicaron técnicas de RLHF ni DPO; es un preentrenamiento estándar de modelado de lenguaje con un prior condicional plantado. La conversión a formato HuggingFace se hizo con un script propio (`ppriors/hf_export/convert.py`) y se verificó la equivalencia de logits, tokenizador, bpb y KV-cache contra el checkpoint nanochat, aunque dicha verificación figura como pendiente en la model card.
+El entrenamiento se realizó el 17 de agosto de 2026 en 8 GPUs H200 durante 4 horas y 12 minutos (job charmander 19702), con un checkpoint en el paso 8758. El valor de CORE base es 0,2517. No se aplicaron técnicas de RLHF ni DPO; es un preentrenamiento estándar de modelado de lenguaje con un prior condicional plantado. La conversión a formato Hugging Face se hizo con un script propio (`ppriors/hf_export/convert.py`) y se verificó la equivalencia de logits, tokenizador, bpb y KV-cache contra el checkpoint nanochat, aunque dicha verificación figura como pendiente en la model card.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se dispone de una comparativa directa publicada. Este modelo es un experiment
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base
+- Modelo en Hugging Face: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base
 - Dataset de priors pirata 2x2: https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2
 - Perfil de GitHub del autor: https://github.com/jkminder/
 - Modelo base hermano (privado): https://huggingface.co/jkminder/pretraining-priors-d26-base

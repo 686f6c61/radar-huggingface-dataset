@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tamano | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SenseNova-U1.5-8B-MoT (bf16 original) | 50 GB | safetensors | no disponible | Apache-2.0 | HuggingFace |
-| Milor123/ComfyUI-ConvRot-SenseNova-U1.5-8B-MoT-T8 (híbrido) | 13.8 GiB | safetensors (INT8+W4A8) | no disponible | Apache-2.0 | HuggingFace |
-| joyfox/SenseNova-U1.5-8B-MoT-FP8 | no disponible | safetensors (FP8) | no disponible | no disponible | HuggingFace |
-| SenseNova-U1.5-8B-MoT-Preview-Q8.gguf (de smthemex) | 19.9 GB | GGUF Q8 | no disponible | no disponible | HuggingFace |
+| SenseNova-U1.5-8B-MoT (bf16 original) | 50 GB | safetensors | no disponible | Apache-2.0 | Hugging Face |
+| Milor123/ComfyUI-ConvRot-SenseNova-U1.5-8B-MoT-T8 (híbrido) | 13.8 GiB | safetensors (INT8+W4A8) | no disponible | Apache-2.0 | Hugging Face |
+| joyfox/SenseNova-U1.5-8B-MoT-FP8 | no disponible | safetensors (FP8) | no disponible | no disponible | Hugging Face |
+| SenseNova-U1.5-8B-MoT-Preview-Q8.gguf (de smthemex) | 19.9 GB | GGUF Q8 | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base, ya que no se dispone de datos de rendimiento para comparar con otros modelos multimodales de tamano similar. La ventaja principal de esta cuantizacion es su menor tamano frente al bf16 y su integracion especifica con ComfyUI.
 
@@ -78,7 +78,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Milor123/ComfyUI-ConvRot-SenseNova-U1.5-8B-MoT-T8
+- Repositorio Hugging Face: https://huggingface.co/Milor123/ComfyUI-ConvRot-SenseNova-U1.5-8B-MoT-T8
 - Modelo base: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Repositorio del modelo base (OpenSenseNova): https://github.com/OpenSenseNova/SenseNova-U1
 - Wrapper de ComfyUI (upstream): https://github.com/T8mars/Comfyui-SenseNova-U1.5-Wrapper-T8

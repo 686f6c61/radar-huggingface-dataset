@@ -6,7 +6,7 @@ ruvector-typesafe-banking77 es un banco de ejemplos etiquetados para la libreria
 
 El problema que resuelve es el de tomar decisiones de clasificacion de texto de forma local, sin factura de API y sin red en la ruta de decision. Se integra como dependencia npm y se ejecuta sobre un encoder de frases ONNX, de modo que la inferencia ocurre en la maquina del usuario. Es relevante para equipos que necesitan enrutado de intenciones de baja latencia (milisegundos) y coste marginal nulo, aceptando a cambio un conjunto de etiquetas cerrado y dependiente de ejemplos.
 
-El autor declarado en HuggingFace es `callmefattyy`, aunque las URLs de descarga de la model card apuntan al espacio `ruvnet/ruvector-typesafe-banking77`. El artefacto es independiente del encoder: ambos encoders incluidos exportaron bancos identicos byte a byte; solo la precision reportada es especifica de cada encoder. La licencia del banco es CC-BY-4.0 (redistribuye el texto de las utterances) y el codigo de `@ruvector/typesafe` es MIT.
+El autor declarado en Hugging Face es `callmefattyy`, aunque las URLs de descarga de la model card apuntan al espacio `ruvnet/ruvector-typesafe-banking77`. El artefacto es independiente del encoder: ambos encoders incluidos exportaron bancos identicos byte a byte; solo la precision reportada es especifica de cada encoder. La licencia del banco es CC-BY-4.0 (redistribuye el texto de las utterances) y el codigo de `@ruvector/typesafe` es MIT.
 
 ## Especificaciones tecnicas
 
@@ -77,8 +77,8 @@ No se dispone de datos comparativos publicados en la informacion proporcionada s
 
 | Alternativa | Precision | Latencia p50 | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este banco + `bge-small-en-v1.5` | 87,0% | 6 ms | No disponible | CC-BY-4.0 (banco), MIT (codigo) | HuggingFace + npm |
-| Este banco + `all-MiniLM-L6-v2` | 76,7% | 15 ms | No disponible | CC-BY-4.0 (banco), MIT (codigo) | HuggingFace + npm |
+| Este banco + `bge-small-en-v1.5` | 87,0% | 6 ms | No disponible | CC-BY-4.0 (banco), MIT (codigo) | Hugging Face + npm |
+| Este banco + `all-MiniLM-L6-v2` | 76,7% | 15 ms | No disponible | CC-BY-4.0 (banco), MIT (codigo) | Hugging Face + npm |
 | Este banco con opciones por defecto (400 iteraciones, `head: auto`) | No disponible (el autor indica que es materialmente peor) | No disponible | No disponible | CC-BY-4.0 | Mismo artefacto, distinta configuracion |
 | Encoders duales de Casanueva et al. (2020) | No disponible | No disponible | No disponible | No disponible | Paper arXiv:2003.04807 |
 | Fine-tuning de un encoder tipo BERT sobre Banking77 | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -91,15 +91,15 @@ No se dispone de datos comparativos publicados en la informacion proporcionada s
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de clasificacion erronea con confianza calibrada, especialmente en utterances ambiguas o fuera de dominio, que se forzaran a una de las 77 clases.
 - Confusion de configuracion: omitir `--engine-options` provoca un reajuste con valores por defecto que produce un modelo distinto y peor que el medido. Es un error silencioso, no un fallo.
 - Arranque costoso: la primera decision tras cargar el banco tarda minutos con `probeIterations: 4000`. Cargar un banco por peticion es inviable.
-- Discrepancia de identificadores: el ID de HuggingFace es `callmefattyy/ruvector-typesafe-banking77`, mientras que las URLs `curl` de la model card apuntan a `ruvnet/ruvector-typesafe-banking77`. Conviene verificar cual es el repositorio canonico antes de integrarlo en un pipeline.
+- Discrepancia de identificadores: el ID de Hugging Face es `callmefattyy/ruvector-typesafe-banking77`, mientras que las URLs `curl` de la model card apuntan a `ruvnet/ruvector-typesafe-banking77`. Conviene verificar cual es el repositorio canonico antes de integrarlo en un pipeline.
 - Adopcion nula: el artefacto registra 0 descargas y 0 likes, sin senales de uso en produccion por terceros.
-- Fecha de creacion y actualizacion declaradas: 2026-10-05 (identicas), dato aportado por los metadatos de HuggingFace.
+- Fecha de creacion y actualizacion declaradas: 2026-10-05 (identicas), dato aportado por los metadatos de Hugging Face.
 - Licencia: el banco redistribuye texto de utterances bajo CC-BY-4.0, lo que exige atribucion. El codigo de la libreria es MIT. Verificar la compatibilidad con el uso comercial previsto.
 - Sin garantias de mantenimiento: es un artefacto de ejemplo de una libreria, no un modelo con ciclo de versiones documentado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/callmefattyy/ruvector-typesafe-banking77
+- Hugging Face: https://huggingface.co/callmefattyy/ruvector-typesafe-banking77
 - Paquete npm `@ruvector/typesafe`: https://www.npmjs.com/package/@ruvector/typesafe
 - Dataset PolyAI/banking77: https://huggingface.co/datasets/PolyAI/banking77
 - Paper de referencia: Casanueva et al., *Efficient Intent Detection with Dual Sentence Encoders* (2020), arXiv:2003.04807 — https://arxiv.org/abs/2003.04807

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-audio2PANAS es un repositorio de modelo publicado en HuggingFace por el usuario schnorrastrasser bajo licencia Apache 2.0. El repositorio, de aproximadamente 0,4 GB, se creó el 30 de septiembre de 2026 y se actualizó dos minutos después, lo que indica que se trata de una subida reciente y sin mantenimiento posterior documentado. No cuenta con descargas ni "likes" en el momento de la consulta, y la model card asociada se limita a la declaración de licencia, sin README técnico, sin descripción del pipeline y sin ejemplos de uso.
+audio2PANAS es un repositorio de modelo publicado en Hugging Face por el usuario schnorrastrasser bajo licencia Apache 2.0. El repositorio, de aproximadamente 0,4 GB, se creó el 30 de septiembre de 2026 y se actualizó dos minutos después, lo que indica que se trata de una subida reciente y sin mantenimiento posterior documentado. No cuenta con descargas ni "likes" en el momento de la consulta, y la model card asociada se limita a la declaración de licencia, sin README técnico, sin descripción del pipeline y sin ejemplos de uso.
 
 La información pública disponible no permite determinar qué tipo de modelo es. El nombre "audio2PANAS" sugiere una función de transformación desde audio hacia alguna representación o salida denominada PANAS, pero el acrónimo no aparece definido en ningún documento accesible y no se ha podido confirmar si se trata de un modelo de clasificación, de un sistema de extracción de características, de un pipeline multimodal o de otra categoría. Tampoco consta arquitectura, número de parámetros, longitud de contexto ni idiomas soportados.
 
@@ -31,7 +31,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de 
 
 No es posible enumerar capacidades verificadas a partir de la información disponible. Los únicos elementos confirmados son:
 
-- El repositorio existe y es públicamente accesible en HuggingFace.
+- El repositorio existe y es públicamente accesible en Hugging Face.
 - Está publicado bajo licencia Apache 2.0, lo que en principio permite uso comercial, modificación y redistribución con las condiciones habituales de dicha licencia.
 - El tamaño del repositorio (0,4 GB) es compatible con pesos de un modelo pequeño o mediano, pero este dato por sí solo no permite inferir la arquitectura ni el número de parámetros.
 - El nombre del repositorio apunta a una función de conversión de audio, pero no se confirma el tipo de entrada, el tipo de salida ni si existe soporte de tool calling, razonamiento multi-paso, capacidades multilingües o modos especiales como visión o audio.
@@ -78,6 +78,6 @@ No disponible. No se ha podido identificar la categoría funcional del modelo ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/schnorrastrasser/audio2PANAS
+- Repositorio en Hugging Face: https://huggingface.co/schnorrastrasser/audio2PANAS
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.
 - Los resultados de la búsqueda web no contienen enlaces relevantes: apuntan a sitios para adultos y no guardan relación con el modelo.

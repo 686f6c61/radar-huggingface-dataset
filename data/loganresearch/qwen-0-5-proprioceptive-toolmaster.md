@@ -73,9 +73,9 @@ El model-index declarado por el autor no contiene resultados adicionales (`resul
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-0.5-Proprioceptive-ToolMaster | 0,5B + 9.185 (controlador) | No disponible | Agente con control residual y lector semántico | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B-Instruct | 0,5B | No disponible en esta ficha | Chat e instrucciones generales | No disponible en esta ficha | HuggingFace (modelo base) |
-| Qwen2.5-1.5B-Instruct | 1,5B | No disponible en esta ficha | Chat e instrucciones generales | No disponible en esta ficha | HuggingFace |
+| Qwen-0.5-Proprioceptive-ToolMaster | 0,5B + 9.185 (controlador) | No disponible | Agente con control residual y lector semántico | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B-Instruct | 0,5B | No disponible en esta ficha | Chat e instrucciones generales | No disponible en esta ficha | Hugging Face (modelo base) |
+| Qwen2.5-1.5B-Instruct | 1,5B | No disponible en esta ficha | Chat e instrucciones generales | No disponible en esta ficha | Hugging Face |
 
 La comparación con alternativas de la misma categoría (agentes de herramientas sobre modelos pequeños) no está disponible en la información proporcionada. El único punto de referencia cuantitativo es el propio backbone sin el lector semántico (0/4 frente a 2/4 en los flujos de desarrollo).
 
@@ -95,7 +95,7 @@ La comparación con alternativas de la misma categoría (agentes de herramientas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LoganResearch/Qwen-0.5-Proprioceptive-ToolMaster
+- Hugging Face: https://huggingface.co/LoganResearch/Qwen-0.5-Proprioceptive-ToolMaster
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Resultados detallados citados en la model card: `evaluation-summary.json` (incluido en el repositorio)
 - Entorno de pruebas citado en la model card: `tested-environment.json` (incluido en el repositorio)

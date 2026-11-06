@@ -83,16 +83,16 @@ No se proporcionan datos oficiales de VRAM, latencia o throughput en la informac
 - Para cargar los pesos en bfloat16 se requieren aproximadamente 17.9 GB de memoria de GPU o RAM.
 - En GPU, una A100 40GB o una H100 80GB serían adecuadas para ejecutar el modelo en bfloat16 con margen suficiente.
 - En GPUs de consumo, una RTX 4090 de 24GB no es suficiente para cargar los pesos en bfloat16 completos; sería necesario aplicar cuantización a 4 bits o 8 bits (no proporcionada de serie).
-- Opciones de despliegue: vLLM, TGI, y HuggingFace Transformers para bfloat16; llama.cpp u Ollama si se convierte el modelo a formato GGUF con cuantización.
+- Opciones de despliegue: vLLM, TGI, y Hugging Face Transformers para bfloat16; llama.cpp u Ollama si se convierte el modelo a formato GGUF con cuantización.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento destacado | Disponibilidad |
 |---|---|---|---|---|---|
-| OLMo-3-7B Stage 2 | no disponible | 8.192 tokens | Apache 2.0 | HumanEval 49.31, ARC-Challenge 85.49 | HuggingFace |
-| NCP-ArchPreview 8.9B Stage 2 V1 | 8.938.363.792 | 8.192 tokens | Apache 2.0 | HumanEval 45.60, MBPP 50.91, MATH-500 43.74 | HuggingFace |
-| NCP-ArchPreview 8.9B Stage 2 V3 | 8.938.363.792 | 8.192 tokens | Apache 2.0 | HellaSwag 67.25, pero más débil en HumanEval, MBPP, MATH-500 | HuggingFace |
+| OLMo-3-7B Stage 2 | no disponible | 8.192 tokens | Apache 2.0 | HumanEval 49.31, ARC-Challenge 85.49 | Hugging Face |
+| NCP-ArchPreview 8.9B Stage 2 V1 | 8.938.363.792 | 8.192 tokens | Apache 2.0 | HumanEval 45.60, MBPP 50.91, MATH-500 43.74 | Hugging Face |
+| NCP-ArchPreview 8.9B Stage 2 V3 | 8.938.363.792 | 8.192 tokens | Apache 2.0 | HellaSwag 67.25, pero más débil en HumanEval, MBPP, MATH-500 | Hugging Face |
 
 La variante V3 es la más débil de las tres recetas en la mayoría de benchmarks de código, matemáticas y razonamiento lógico. El informe recomienda V1 como la opción más fuerte entre las tres.
 
@@ -109,7 +109,7 @@ La variante V3 es la más débil de las tres recetas en la mayoría de benchmark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v3
+- Modelo en Hugging Face: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v3
 - Colección NCP-ArchPreview: https://huggingface.co/collections/ArchSpace-Collection/ncp-archpreview
 - Modelo Stage 1: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage1
 - Modelo NCPFlash (draft model): https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_DFlash2_NCPFlash

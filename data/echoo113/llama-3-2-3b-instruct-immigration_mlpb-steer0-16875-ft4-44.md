@@ -56,7 +56,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.16875-ft4.44)
+- [Modelo en Hugging Face](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.16875-ft4.44)
 - [Modelo similar sin "mlpB"](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration-STEER0.16875-ft4.44)
 - [Otro fine-tune del mismo autor](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_prompted-ft4.43)
 - [Documentación de Llama 3.2 de Meta](https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/)

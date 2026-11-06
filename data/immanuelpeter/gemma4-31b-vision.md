@@ -81,10 +81,10 @@ Comparativa orientativa con otros codificadores visuales de uso comun para extra
 
 | Modelo | Parametros | Dimension de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gemma4-31B-Vision (este repo) | 569,55 M | 5376 | Apache 2.0 | HuggingFace, transformers |
-| SigLIP SO400M (referencia) | ~877 M | ~1152 | Apache 2.0 (segun variante) | HuggingFace |
-| CLIP ViT-L/14 (referencia) | ~304 M (solo torre de vision) | 768 | MIT (segun variante) | HuggingFace |
-| DINOv2 ViT-L/14 (referencia) | ~304 M | 1024 | Apache 2.0 | HuggingFace |
+| Gemma4-31B-Vision (este repo) | 569,55 M | 5376 | Apache 2.0 | Hugging Face, transformers |
+| SigLIP SO400M (referencia) | ~877 M | ~1152 | Apache 2.0 (segun variante) | Hugging Face |
+| CLIP ViT-L/14 (referencia) | ~304 M (solo torre de vision) | 768 | MIT (segun variante) | Hugging Face |
+| DINOv2 ViT-L/14 (referencia) | ~304 M | 1024 | Apache 2.0 | Hugging Face |
 
 Diferencias clave: frente a CLIP y SigLIP, este repositorio no incluye torre de texto ni cabezas de contraste, por lo que no permite zero-shot classification directa con prompts de texto; su ventaja es la paridad exacta con el codificador de Gemma 4 31B y su integracion con el espacio de embeddings de 5376 dimensiones de ese modelo. Si se necesita una alternativa con encoder de texto emparejado, CLIP o SigLIP son opciones mas directas; si se busca un extractor puramente visual, cualquiera de los cuatro sirve. No se dispone de datos comparativos de rendimiento en tareas concretas en la informacion proporcionada.
 
@@ -104,7 +104,7 @@ Diferencias clave: frente a CLIP y SigLIP, este repositorio no incluye torre de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/immanuelpeter/Gemma4-31B-Vision
+- Repositorio en Hugging Face: https://huggingface.co/immanuelpeter/Gemma4-31B-Vision
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Licencia (Gemma 4): https://ai.google.dev/gemma/docs/gemma_4_license
 - Informe tecnico citado (arXiv:2607.02770): https://arxiv.org/abs/2607.02770

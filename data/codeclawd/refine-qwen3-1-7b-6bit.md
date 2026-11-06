@@ -8,7 +8,7 @@ codeclawd/refine-qwen3-1.7b-6bit es una distribucion derivada de Qwen/Qwen3-1.7B
 
 El modelo resuelve una tarea concreta: refinar texto para una aplicacion de dictado local en macOS llamada PrivateWispr. El ajuste fino LoRA especializa al Qwen3-1.7B base en la limpieza y el refinado de transcripciones, y la cuantizacion a 6 bits en MLX lo orienta a ejecucion local en Apple Silicon. Su relevancia radica en que combina un tamano pequeno (1,72 mil millones de parametros), una huella de disco reducida (1,4 GB) y una libreria pensada para inferencia eficiente en hardware de consumo de Apple.
 
-Se trata de una publicacion de nicho, con cero descargas y cero likes en el momento del registro, sin licencia ni idiomas declarados en el repositorio espejo, y con fecha de creacion en el registro de HuggingFace de 2026-10-14. No se han publicado resultados de benchmarks ni documentacion tecnica adicional sobre el proceso de entrenamiento.
+Se trata de una publicacion de nicho, con cero descargas y cero likes en el momento del registro, sin licencia ni idiomas declarados en el repositorio espejo, y con fecha de creacion en el registro de Hugging Face de 2026-10-14. No se han publicado resultados de benchmarks ni documentacion tecnica adicional sobre el proceso de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ La comparacion se limita a caracteristicas estructurales y de licencia, ya que n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/codeclawd/refine-qwen3-1.7b-6bit
+- Repositorio en Hugging Face: https://huggingface.co/codeclawd/refine-qwen3-1.7b-6bit
 - Repositorio original (espejo del que deriva): https://huggingface.co/PrivateWhisper/refine-qwen3-1.7b-6bit
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Libreria MLX: https://github.com/ml-explore/mlx

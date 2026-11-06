@@ -89,8 +89,8 @@ El checkpoint original de Microsoft utiliza codificación estocástica (muestreo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/christopherthompson81/vibevoice-asr-streaming-7b-onnx
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B
+- Repositorio en Hugging Face: https://huggingface.co/christopherthompson81/vibevoice-asr-streaming-7b-onnx
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B
 - Repositorio de Microsoft VibeVoice en GitHub: https://github.com/microsoft/VibeVoice
 - Repositorio de Vernacula en GitHub: https://github.com/christopherthompson81/vernacula
 - Scripts de conversion: https://github.com/christopherthompson81/vernacula/tree/main/scripts/vibevoice_streaming_export

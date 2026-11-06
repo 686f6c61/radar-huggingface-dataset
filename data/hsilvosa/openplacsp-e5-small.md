@@ -32,7 +32,7 @@ El entrenamiento utilizó 150.000 pares de versiones (mismo contrato en distinta
 - Recuperación de versiones de un mismo contrato: identifica anuncios que son versiones posteriores o anteriores de un mismo procedimiento.
 - Clasificación de anuncios en divisiones CPV: asigna un texto a una categoría del vocabulario CPV mediante similitud con descripciones de referencia.
 - Matching de documentos relacionados: agrupa anuncios que tratan sobre el mismo objeto contractual.
-- Soporte de integración con `sentence-transformers` y `text-embeddings-inference` (compatible con endpoints de HuggingFace).
+- Soporte de integración con `sentence-transformers` y `text-embeddings-inference` (compatible con endpoints de Hugging Face).
 - No es un modelo generativo: no produce texto, solo representaciones vectoriales.
 
 ## Casos de uso
@@ -62,7 +62,7 @@ Se observa que el fine-tuning mantiene prácticamente el rendimiento en la tarea
 - El modelo tiene 117,65 millones de parámetros, lo que en fp32 ocupa aproximadamente 470 MB y en fp16 unos 235 MB. Es ligero y puede ejecutarse en CPU sin problemas.
 - VRAM estimada: menos de 1 GB para inferencia en GPU (incluso en fp32). Cabe en cualquier GPU consumer (GTX 1060, RTX 3060, etc.).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; también funciona en CPU con latencia baja (decenas de milisegundos por embedding).
-- Opciones de despliegue: `sentence-transformers` (Python), `text-embeddings-inference` (TEI) para servir endpoints compatibles con HuggingFace, o exportación a ONNX para entornos de producción.
+- Opciones de despliegue: `sentence-transformers` (Python), `text-embeddings-inference` (TEI) para servir endpoints compatibles con Hugging Face, o exportación a ONNX para entornos de producción.
 - Latencia: en CPU, se pueden generar cientos de embeddings por segundo; en GPU, miles. No se dispone de cifras exactas publicadas.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se han encontrado modelos comparables específicamente entrenados para contra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hsilvosa/openplacsp-e5-small
+- Modelo en Hugging Face: https://huggingface.co/hsilvosa/openplacsp-e5-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/hsilvosa/openplacsp
 - Modelo base `intfloat/multilingual-e5-small`: https://huggingface.co/intfloat/e5-small
 - Información general sobre e5-small (OpenSourcesAI): https://opensourcesai.com/models/e5-small/

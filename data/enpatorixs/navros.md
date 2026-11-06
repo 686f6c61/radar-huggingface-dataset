@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Navros es una familia de modelos de lenguaje publicada por Vareoz bajo el identificador de HuggingFace `enpatorixs/navros`, disenada para ejecucion local en dispositivo (on-device), tanto en telefonos Android como en escritorio. A diferencia de las distribuciones habituales, los pesos no se publican en safetensors ni GGUF, sino en un formato propietario con extension `.navros` que consume un motor de inferencia propio del mismo autor. El repositorio ocupa 15,7 GB e incluye tres archivos de pesos y un catalogo (`modelos.json`) con la URL, el tamano en bytes, el hash SHA-256 y la RAM minima de cada uno, de modo que la aplicacion Android asociada los descarga automaticamente sin intervencion manual.
+Navros es una familia de modelos de lenguaje publicada por Vareoz bajo el identificador de Hugging Face `enpatorixs/navros`, disenada para ejecucion local en dispositivo (on-device), tanto en telefonos Android como en escritorio. A diferencia de las distribuciones habituales, los pesos no se publican en safetensors ni GGUF, sino en un formato propietario con extension `.navros` que consume un motor de inferencia propio del mismo autor. El repositorio ocupa 15,7 GB e incluye tres archivos de pesos y un catalogo (`modelos.json`) con la URL, el tamano en bytes, el hash SHA-256 y la RAM minima de cada uno, de modo que la aplicacion Android asociada los descarga automaticamente sin intervencion manual.
 
 La familia se compone de tres variantes: `navros-0.2-q4.navros` (4,8 GB, cuantizacion de 4 bits, orientada a moviles con 8 GB de RAM o mas), `navros-0.2-q8.navros` (7,9 GB, cuantizacion de 8 bits, practicamente sin perdida, para moviles de 12 GB o mas y escritorio) y `navros-nano-0.0-q4.navros` (3,0 GB, para dispositivos con menos de 8 GB, que segun la model card no incorpora el entrenamiento de Vareoz y es mas limitado). La model card no declara numero de parametros, longitud de contexto, arquitectura ni datos de entrenamiento.
 
@@ -29,7 +29,7 @@ Su relevancia actual radica en el nicho de agentes locales con soporte nativo de
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer denso, una mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida, ni el numero de parametros, capas, cabezas de atencion o dimension oculta. Tampoco se especifica la longitud de contexto soportada, un dato critico para evaluar su uso en tareas agenticas multi-turno.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer denso, una mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida, ni el numero de parametros, capas, cabezas de atencion o dimension oculta. Tampoco se especifica la longitud de contexto soportada, un dato critico para evaluar su uso en tareas agenticas multi-turno.
 
 Respecto al entrenamiento, la unica referencia disponible es indirecta: la model card distingue `navros-0.2` de `navros-nano-0.0` indicando que este ultimo carece del "entrenamiento de Vareoz" y es "mas limitado", lo que sugiere que la variante nano es una base generica adaptada o recortada. No hay datos sobre el volumen de tokens de entrenamiento, la composicion del corpus, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones de inferencia como decodificacion especulativa o atencion lineal. Los archivos `NAVROS.json` y `NAVROS-nano.json`, citados en la propia model card como fuente de procedencia, no han sido analizados en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La ventaja diferencial que reclama Navros no es el rendimiento, sino el empaquet
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks, evaluaciones independientes o informes tecnicos: no hay ninguna evidencia publica del rendimiento real del modelo.
-- Cero descargas y cero likes en HuggingFace en el momento de la consulta, lo que implica que no existe validacion por parte de la comunidad.
+- Cero descargas y cero likes en Hugging Face en el momento de la consulta, lo que implica que no existe validacion por parte de la comunidad.
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo: los enlaces recuperados tratan de gramatica francesa en foros y no guardan relacion con Navros.
 - No se documenta la arquitectura, el numero de parametros, la longitud de contexto ni los datos de entrenamiento, por lo que no puede evaluarse el riesgo de sesgo, la cobertura idiomatica real ni la calidad en tareas especificas.
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje y no cuantificado en este caso; en usos agenticos el riesgo se agrava porque una alucinacion puede traducirse en una accion no deseada sobre el dispositivo.
@@ -98,7 +98,7 @@ La ventaja diferencial que reclama Navros no es el rendimiento, sino el empaquet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/enpatorixs/navros
+- Hugging Face: https://huggingface.co/enpatorixs/navros
 - Model card: https://huggingface.co/enpatorixs/navros/blob/main/README.md
 - Catalogo de modelos de la aplicacion: `modelos.json` (incluido en el repositorio, con URL, bytes, SHA-256 y RAM minima de cada archivo)
 - Ficheros de procedencia: `NAVROS.json` y `NAVROS-nano.json` (incluidos en el repositorio, segun la model card)

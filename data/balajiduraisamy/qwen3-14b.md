@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `balajiduraisamy/Qwen3-14B` es un ajuste fino (finetune) del modelo base `Qwen/Qwen3-14B-Base`, publicado por el usuario balajiduraisamy en HuggingFace. Se trata de un modelo de lenguaje de 14.768 millones de parámetros, de arquitectura transformer densa, orientado a generación de texto y conversación. El modelo base pertenece a la familia Qwen3 de Alibaba Cloud, que destaca por su modo de razonamiento híbrido (thinking y non-thinking) y su soporte multilingüe amplio.
+El modelo `balajiduraisamy/Qwen3-14B` es un ajuste fino (finetune) del modelo base `Qwen/Qwen3-14B-Base`, publicado por el usuario balajiduraisamy en Hugging Face. Se trata de un modelo de lenguaje de 14.768 millones de parámetros, de arquitectura transformer densa, orientado a generación de texto y conversación. El modelo base pertenece a la familia Qwen3 de Alibaba Cloud, que destaca por su modo de razonamiento híbrido (thinking y non-thinking) y su soporte multilingüe amplio.
 
-Este finetune concreto no incluye documentación adicional en su repositorio de HuggingFace más allá de los metadatos técnicos. Por tanto, las capacidades y especificaciones que se detallan a continuación corresponden al modelo base Qwen3-14B, que es la referencia real para evaluar su comportamiento. La relevancia de este modelo radica en que ofrece un equilibrio entre tamaño (14B) y rendimiento, siendo adecuado para despliegues en entornos con recursos limitados pero que requieren capacidades de razonamiento y generación de calidad.
+Este finetune concreto no incluye documentación adicional en su repositorio de Hugging Face más allá de los metadatos técnicos. Por tanto, las capacidades y especificaciones que se detallan a continuación corresponden al modelo base Qwen3-14B, que es la referencia real para evaluar su comportamiento. La relevancia de este modelo radica en que ofrece un equilibrio entre tamaño (14B) y rendimiento, siendo adecuado para despliegues en entornos con recursos limitados pero que requieren capacidades de razonamiento y generación de calidad.
 
-El acceso al repositorio está restringido (gated), por lo que es necesario aceptar las condiciones de uso en HuggingFace antes de poder descargar los pesos.
+El acceso al repositorio está restringido (gated), por lo que es necesario aceptar las condiciones de uso en Hugging Face antes de poder descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ El finetune `balajiduraisamy/Qwen3-14B` no introduce cambios documentados respec
 
 ## Enlaces
 
-- Repositorio HuggingFace del finetune: https://huggingface.co/balajiduraisamy/Qwen3-14B
+- Repositorio Hugging Face del finetune: https://huggingface.co/balajiduraisamy/Qwen3-14B
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Documentación de Qwen3 (paper): https://arxiv.org/abs/2505.09388
 - Artículo de referencia sobre Qwen3-14B: https://partimus.com/en/ai-language-models/qwen3-14b/

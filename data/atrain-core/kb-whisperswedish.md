@@ -89,7 +89,7 @@ No se dispone de cifras comparativas de WER en la informacion proporcionada, por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aTrain-core/KB-WhisperSwedish
+- Repositorio en Hugging Face: https://huggingface.co/aTrain-core/KB-WhisperSwedish
 - Modelo upstream (KBLab/kb-whisper-large): https://huggingface.co/KBLab/kb-whisper-large
 - Revision concreta desde la que se copiaron los ficheros: https://huggingface.co/KBLab/kb-whisper-large/tree/d5d5984b4d8f7c4847a8ea203f1976285fb28300
 - Cita academica del modelo original: https://huggingface.co/KBLab/kb-whisper-large#citation

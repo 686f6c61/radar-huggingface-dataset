@@ -4,7 +4,7 @@
 
 Nemotron-3.5-Embed-8B-INT8-W8A8 es una versión cuantizada a INT8 (esquema W8A8) del modelo de embeddings multimodal nvidia/Nemotron-3.5-Embed-8B-BF16. La publica el usuario kmouratidis, no NVIDIA, y se ha generado con llm-compressor mediante GPTQ en una única pasada. Es un modelo de extracción de características (feature-extraction) orientado a recuperación de información: produce embeddings de texto, de imagen y multimodales, no texto generado.
 
-El modelo conserva la arquitectura multimodal del original (etiquetada como mistral3 en HuggingFace), con una torre de visión y un proyector multimodal que permanecen en BF16, mientras que las 34 capas del modelo de lenguaje están cuantizadas a 8 bits. El objetivo declarado por el autor es poder ejecutarlo en una instancia de vLLM sobre CPU en lugar de recurrir al modelo BF16, y reporta unos 700 tokens por segundo máximos en 12 núcleos.
+El modelo conserva la arquitectura multimodal del original (etiquetada como mistral3 en Hugging Face), con una torre de visión y un proyector multimodal que permanecen en BF16, mientras que las 34 capas del modelo de lenguaje están cuantizadas a 8 bits. El objetivo declarado por el autor es poder ejecutarlo en una instancia de vLLM sobre CPU en lugar de recurrir al modelo BF16, y reporta unos 700 tokens por segundo máximos en 12 núcleos.
 
 Con 8.381.155.328 parámetros y un repositorio de 19,4 GB, se trata de un modelo de embeddings de gran tamaño para tareas de retrieval, RAG y búsqueda semántica, incluyendo recuperación sobre documentos renderizados como imagen. La licencia es OpenMDW-1.1, heredada del modelo base, con el componente Ministral-3-8B-Instruct-2512 bajo Apache 2.0.
 
@@ -84,8 +84,8 @@ El propio autor advierte que estos resultados le parecen "demasiado buenos para 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Embed-8B-INT8-W8A8 | 8,38 mil millones | No disponible | INT8 W8A8 (GPTQ, compressed-tensors) | OpenMDW-1.1 | HuggingFace, 0 descargas |
-| nvidia/Nemotron-3.5-Embed-8B-BF16 (base) | No disponible en la información proporcionada | No disponible | BF16 | OpenMDW-1.1 (+ Apache 2.0 del componente Ministral-3-8B-Instruct-2512) | HuggingFace |
+| Nemotron-3.5-Embed-8B-INT8-W8A8 | 8,38 mil millones | No disponible | INT8 W8A8 (GPTQ, compressed-tensors) | OpenMDW-1.1 | Hugging Face, 0 descargas |
+| nvidia/Nemotron-3.5-Embed-8B-BF16 (base) | No disponible en la información proporcionada | No disponible | BF16 | OpenMDW-1.1 (+ Apache 2.0 del componente Ministral-3-8B-Instruct-2512) | Hugging Face |
 | Otras alternativas de embeddings de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación directa posible es contra el modelo base BF16: la cuantización INT8 reduce el peso de los pesos a aproximadamente 1 byte por parámetro, mantiene la torre de visión en BF16 y, según las mediciones del autor, conserva el rendimiento de recuperación con diferencias de en torno a 0,003 a 0,012 puntos en los ejemplos de la model card. No se dispone de información sobre alternativas de la misma categoría (otros modelos de embeddings multimodales de ~8B) en los datos proporcionados.
@@ -105,10 +105,10 @@ La comparación directa posible es contra el modelo base BF16: la cuantización 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kmouratidis/Nemotron-3.5-Embed-8B-INT8-W8A8
+- Modelo en Hugging Face: https://huggingface.co/kmouratidis/Nemotron-3.5-Embed-8B-INT8-W8A8
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
 - llm-compressor (herramienta de cuantización): https://github.com/vllm-project/llm-compressor
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0.txt
 - Datasets de calibración citados: https://huggingface.co/datasets/Salesforce/wikitext, https://huggingface.co/datasets/sentence-transformers/natural-questions, https://huggingface.co/datasets/rajpurkar/squad, https://huggingface.co/datasets/EdinburghNLP/xsum, https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu, https://huggingface.co/datasets/allenai/c4, https://huggingface.co/datasets/ccdv/arxiv-summarization, https://huggingface.co/datasets/Helsinki-NLP/opus-100
-- La búsqueda web realizada no devolvió ningún resultado relevante para este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+- La búsqueda web realizada no devolvió ningún resultado relevante para este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

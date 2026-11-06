@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iromu/Qwen3-0.6B-openjev-NVFP4` es un ajuste fino supervisado del modelo base `Qwen/Qwen3-0.6B-Base`, orientado a una tarea muy concreta: responder a un prompt de decisión tipada (estado, pregunta y conjunto de opciones) emitiendo una única letra de etiqueta. El autor del checkpoint es el usuario de HuggingFace `iromu`, que publica tres artefactos encadenados: el modelo BF16 con LoRA (`iromu/Qwen3-0.6B-openjev`), cuantizaciones GGUF y esta versión NVFP4 en formato W4A16 (pesos de 4 bits en coma flotante, activaciones en bf16).
+`iromu/Qwen3-0.6B-openjev-NVFP4` es un ajuste fino supervisado del modelo base `Qwen/Qwen3-0.6B-Base`, orientado a una tarea muy concreta: responder a un prompt de decisión tipada (estado, pregunta y conjunto de opciones) emitiendo una única letra de etiqueta. El autor del checkpoint es el usuario de Hugging Face `iromu`, que publica tres artefactos encadenados: el modelo BF16 con LoRA (`iromu/Qwen3-0.6B-openjev`), cuantizaciones GGUF y esta versión NVFP4 en formato W4A16 (pesos de 4 bits en coma flotante, activaciones en bf16).
 
 La relevancia de esta ficha no está en el tamaño —el recuento de parámetros del fichero `safetensors` es de 375.848.960, por debajo del total nominal de la familia Qwen3-0.6B debido al empaquetado de pesos FP4— sino en el objetivo de despliegue: servir un clasificador de decisiones en hardware de clase GB10 con vLLM y el backend `modelopt_fp4`. El autor documenta explícitamente por qué eligió W4A16 en lugar de W4A4: la ruta W4A4 de vLLM lee un `input_scale` estático que el export de ModelOpt no genera, lo que produce salidas degeneradas.
 
@@ -93,7 +93,7 @@ La comparación relevante es interna a la familia: el paso a NVFP4 cuesta 1,7 pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/Qwen3-0.6B-openjev-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/iromu/Qwen3-0.6B-openjev-NVFP4
 - Modelo BF16 con tabla de validación: https://huggingface.co/iromu/Qwen3-0.6B-openjev
 - Cuantizaciones GGUF: https://huggingface.co/iromu/Qwen3-0.6B-openjev-GGUF
 - Modelo base del ajuste: https://huggingface.co/Qwen/Qwen3-0.6B-Base

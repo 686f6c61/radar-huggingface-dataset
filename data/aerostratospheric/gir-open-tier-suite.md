@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 |---|---|---|---|---|
 | GIR Open-Tier Suite | Clasificación tabular multi-head | MIT | joblib | Modelo principal de esta ficha |
 | uogw-scientific-suite | Modelo científico para UOGW | MIT | no disponible | Modelo hermano del mismo autor, con enfoque en datos meteorológicos abiertos |
-| Otros modelos tabulares en HuggingFace | Clasificación tabular | variable | variable | no disponible; no se han encontrado comparativas directas |
+| Otros modelos tabulares en Hugging Face | Clasificación tabular | variable | variable | no disponible; no se han encontrado comparativas directas |
 
 La comparativa se limita al modelo hermano `uogw-scientific-suite` porque no se dispone de datos de benchmarks de otros modelos comparables en la información proporcionada.
 
@@ -88,11 +88,11 @@ La comparativa se limita al modelo hermano `uogw-scientific-suite` porque no se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aerostratospheric/gir-open-tier-suite
+- Hugging Face: https://huggingface.co/aerostratospheric/gir-open-tier-suite
 - Dataset GIR: https://huggingface.co/datasets/aerostratospheric/gir
 - Dataset UOGW: https://huggingface.co/datasets/aerostratospheric/uogw
 - Repositorio de código: https://github.com/Midwest-Stratospheric/aerostratospheric-defense-gir
 - Página del proyecto Defense GIR: https://midwestsds.com/aerostratospheric-defense-gir.html
 - Sitio principal: https://www.midwestsds.com/
-- Organización en HuggingFace: https://huggingface.co/aerostratospheric
+- Organización en Hugging Face: https://huggingface.co/aerostratospheric
 - GitHub de Midwest Stratospheric: https://github.com/Midwest-Stratospheric

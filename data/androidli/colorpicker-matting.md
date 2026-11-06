@@ -83,7 +83,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/androidli/colorpicker-matting
+- Modelo en Hugging Face: https://huggingface.co/androidli/colorpicker-matting
 - Modelo base (port transformers.js): https://huggingface.co/Xenova/modnet
 - Repositorio original MODNet: https://github.com/ZHKKKe/MODNet
 - Librería transformers.js: https://github.com/xenova/transformers.js

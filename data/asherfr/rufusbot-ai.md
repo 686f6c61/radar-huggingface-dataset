@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rufusbot-AI (Asherfr/Rufusbot-AI) es un modelo publicado en HuggingFace por el usuario Asherfr, etiquetado con el pipeline de `text-classification` y distribuido bajo licencia Apache 2.0. Se trata de un fine-tune declarado sobre el modelo base `terminusresearch/cloudflare-clef-int8-convrot`, según el campo `base_model` de su model card. La ficha se creó y actualizó el 19 de octubre de 2026, con cero descargas y cero «likes» en el momento de la consulta.
+Rufusbot-AI (Asherfr/Rufusbot-AI) es un modelo publicado en Hugging Face por el usuario Asherfr, etiquetado con el pipeline de `text-classification` y distribuido bajo licencia Apache 2.0. Se trata de un fine-tune declarado sobre el modelo base `terminusresearch/cloudflare-clef-int8-convrot`, según el campo `base_model` de su model card. La ficha se creó y actualizó el 19 de octubre de 2026, con cero descargas y cero «likes» en el momento de la consulta.
 
 La relevancia de este lanzamiento es limitada desde el punto de vista tecnico: la model card no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni resultados numericos de evaluacion. Los unicos datos concretos son la licencia, la lista de 14 idiomas soportados, el pipeline declarado, el modelo base y el conjunto de datasets y metricas referenciados en los metadatos.
 
@@ -29,7 +29,7 @@ Respecto a los datos de entrenamiento, los metadatos enumeran cinco datasets: `d
 
 ## Capacidades
 
-- Clasificacion de texto: es la unica capacidad confirmada por el campo `pipeline_tag` de HuggingFace.
+- Clasificacion de texto: es la unica capacidad confirmada por el campo `pipeline_tag` de Hugging Face.
 - Multilingue: la model card declara soporte para 14 idiomas, incluidos espanol, ingles, chino, arabe, hindi, japones, ruso, frances y portugues, ademas de griego, javanes, checo, polaco y pali.
 - Etiqueta «agent»: aparece en los tags del repositorio, pero no se documenta ninguna implementacion concreta de agentes, tool calling ni planificacion multi-paso.
 - Razonamiento, codigo, matematicas y vision: no documentados en la informacion disponible.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros del modelo.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPU de consumo: no se puede determinar sin conocer el tamano del modelo.
-- Opciones de despliegue: al declararse como `text-classification`, los entornos habituales serian la libreria `transformers` de HuggingFace, ONNX Runtime o servidores de inferencia como Text Embeddings Inference o un endpoint dedicado de TGI. No se confirma compatibilidad con llama.cpp, Ollama ni vLLM.
+- Opciones de despliegue: al declararse como `text-classification`, los entornos habituales serian la libreria `transformers` de Hugging Face, ONNX Runtime o servidores de inferencia como Text Embeddings Inference o un endpoint dedicado de TGI. No se confirma compatibilidad con llama.cpp, Ollama ni vLLM.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable: 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Asherfr/Rufusbot-AI | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Asherfr/Rufusbot-AI | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Asherfr/Rufusbot-AI
+- Modelo en Hugging Face: https://huggingface.co/Asherfr/Rufusbot-AI
 - Modelo base: https://huggingface.co/terminusresearch/cloudflare-clef-int8-convrot
 - Dataset `datasocial/tiktok-5.6B-videos`: https://huggingface.co/datasets/datasocial/tiktok-5.6B-videos
 - Dataset `PleIAs/YouTube-Commons`: https://huggingface.co/datasets/PleIAs/YouTube-Commons

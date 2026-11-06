@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: aproximadamente 4,5 GB para i1-Q2_K, en torno a 6-7 GB para cuantizaciones Q4_K_M, y cerca de 8-9 GB para Q6_K, considerando pesos más overhead de contexto (estimación a partir del tamaño de los ficheros; la VRAM real depende de la longitud de contexto).
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 para cuantizaciones altas; A100 o H100 solo si se requiere throughput elevado o contexto largo.
 - Cabe en GPU de consumo: sí, desde una RTX 3060 de 12 GB con cuantizaciones Q4 o inferiores; las cuantizaciones Q2 e IQ2 caben en GPUs de 6-8 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. Para el modelo en safetensors, vLLM o TGI.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. Para el modelo en safetensors, vLLM o TGI.
 - Latencia y throughput estimados: no disponibles. Dependen del hardware, la cuantización y la longitud de contexto; no se aportan cifras en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La comparación con alternativas de otros autores en árabe no está disponible 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-E4B-Arabic-It-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-E4B-Arabic-It-i1-GGUF
 - Modelo base: https://huggingface.co/noman-asif/Gemma-4-E4B-Arabic-It
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/Gemma-4-E4B-Arabic-It-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Gemma-4-E4B-Arabic-It-i1-GGUF

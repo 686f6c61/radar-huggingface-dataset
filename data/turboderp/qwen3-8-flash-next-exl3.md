@@ -81,7 +81,7 @@ La diferencia principal con el modelo base es el formato de pesos: EXL3 permite 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3
+- Repositorio Hugging Face: https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Página del producto QwenCloud: https://www.qwencloud.com/models/qwen3.8-flash

@@ -34,7 +34,7 @@ La arquitectura subyacente es la del modelo Qwen2.5-1.5B-Instruct: un transforme
 
 No se dispone de información sobre el dataset de entrenamiento. La model card únicamente indica que los datos fueron desensibilizados: los códigos de sistemas internos, números de ticket, números de documento y métricas de negocio se generalizaron antes del entrenamiento. No se especifica el numero de ejemplos, el numero de tokens, la composición temática del corpus, si hubo fases de RLHF, DPO o ajuste supervisado adicional, ni los hiperparámetros del LoRA (rango, alpha, dropout, modulos objetivo, tasa de aprendizaje, epocas). Tampoco se documenta ninguna innovación técnica más alla del propio uso de LoRA y del runtime MLX.
 
-Existe una ambigüedad relevante en la documentación: el campo `base_model` de HuggingFace apunta a Qwen/Qwen2.5-1.5B-Instruct, mientras que la model card en chino afirma que el adaptador debe usarse "junto con el modelo base happybrian/fast-brain-base". Si ese segundo modelo es a su vez un ajuste fino de Qwen2.5-1.5B-Instruct, cargar el adaptador directamente sobre el modelo original de Qwen podría no reproducir el comportamiento previsto por el autor.
+Existe una ambigüedad relevante en la documentación: el campo `base_model` de Hugging Face apunta a Qwen/Qwen2.5-1.5B-Instruct, mientras que la model card en chino afirma que el adaptador debe usarse "junto con el modelo base happybrian/fast-brain-base". Si ese segundo modelo es a su vez un ajuste fino de Qwen2.5-1.5B-Instruct, cargar el adaptador directamente sobre el modelo original de Qwen podría no reproducir el comportamiento previsto por el autor.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El adaptador en sí ocupa muy poco espacio: el repositorio declara 0,0 GB, lo que en la practica implica menos de 50 MB, coherente con un LoRA de bajo rango.
 - El coste real de inferencia lo determina el modelo base Qwen2.5-1.5B-Instruct. Estimaciones de VRAM: aproximadamente 3,1 GB en FP16, 1,6 GB en cuantizacion de 8 bits y entre 0,9 y 1,1 GB en 4 bits.
 - Al distribuirse en formato MLX, el uso directo previsto es sobre Apple Silicon (familias M1, M2, M3 y M4) con memoria unificada; cabe en cualquier Mac con 8 GB o más de RAM.
-- En GPU dedicada consumer también es viable tras convertir o fusionar el adaptador a safetensors en formato HuggingFace: cabe holgadamente en una RTX 3060 de 12 GB, una RTX 4060 de 8 GB o una RTX 4090.
+- En GPU dedicada consumer también es viable tras convertir o fusionar el adaptador a safetensors en formato Hugging Face: cabe holgadamente en una RTX 3060 de 12 GB, una RTX 4060 de 8 GB o una RTX 4090.
 - GPU de centro de datos (A100, H100, L40S) no son necesarias para este tamano, aunque permitirian un throughput muy superior si se sirve con vLLM o TGI.
 - Opciones de despliegue: mlx-lm para Apple Silicon; llama.cpp, Ollama, vLLM o TGI si se convierte el modelo a GGUF o safetensors.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
@@ -93,11 +93,11 @@ Los datos de los modelos alternativos corresponden a sus fichas publicas y se of
 - Limitaciones de contexto e idioma: la ventana de 32.768 tokens procede del modelo base y no esta confirmada para el adaptador; la ficha no declara idiomas soportados, por lo que el rendimiento en castellano es incierto.
 - Licencia Apache-2.0: permite uso comercial y modificacion, pero no exime de cumplir las condiciones del modelo base ni de las obligaciones de atribucion correspondientes.
 - Caveat para produccion: no se recomienda desplegar este adaptador en un sistema critico sin una evaluacion propia previa sobre datos representativos del caso de uso.
-- El repositorio no declara pipeline de HuggingFace ni metadatos de inferencia, lo que complica la integracion automatica con herramientas estandar.
+- El repositorio no declara pipeline de Hugging Face ni metadatos de inferencia, lo que complica la integracion automatica con herramientas estandar.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/happybrian/fast-brain-bug_pattern-adapter
+- Repositorio Hugging Face: https://huggingface.co/happybrian/fast-brain-bug_pattern-adapter
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base mencionado en la model card: https://huggingface.co/happybrian/fast-brain-base
 - Paper, blog, repositorio o demo adicionales: no disponible

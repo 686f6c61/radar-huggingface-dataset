@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdtareq32/Background_remove` es un modelo de eliminación de fondo de imágenes publicado en HuggingFace por el usuario mdtareq32. Se distribuye en formato ONNX y bajo licencia Apache-2.0, lo que permite su uso comercial y modificación. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo ligero, probablemente adecuado para inferencia en CPU o dispositivos con recursos limitados.
+El modelo `mdtareq32/Background_remove` es un modelo de eliminación de fondo de imágenes publicado en Hugging Face por el usuario mdtareq32. Se distribuye en formato ONNX y bajo licencia Apache-2.0, lo que permite su uso comercial y modificación. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo ligero, probablemente adecuado para inferencia en CPU o dispositivos con recursos limitados.
 
 Sin embargo, la información pública es extremadamente escasa: no se proporciona una model card descriptiva, ni detalles sobre arquitectura, parámetros, datos de entrenamiento o capacidades específicas. El modelo no ha recibido descargas ni valoraciones, y su fecha de creación (agosto de 2026) es futura, lo que podría indicar que se trata de un repositorio de prueba o recién creado. A pesar de la falta de documentación, el nombre y el tag `onnx` sugieren que está orientado a la tarea de segmentación de imágenes para eliminar fondos, similar a modelos como RMBG-1.4 o RMBG-2.0 de Bria AI.
 
@@ -74,7 +74,7 @@ No se dispone de datos comparativos fiables porque el modelo analizado carece de
 
 ## Enlaces
 
-- [HuggingFace: mdtareq32/Background_remove](https://huggingface.co/mdtareq32/Background_remove)
-- [briaai/RMBG-1.4 en HuggingFace](https://huggingface.co/briaai/RMBG-1.4)
-- [JCTN/RMBG-1.4 en HuggingFace](https://huggingface.co/JCTN/RMBG-1.4)
+- [Hugging Face: mdtareq32/Background_remove](https://huggingface.co/mdtareq32/Background_remove)
+- [briaai/RMBG-1.4 en Hugging Face](https://huggingface.co/briaai/RMBG-1.4)
+- [JCTN/RMBG-1.4 en Hugging Face](https://huggingface.co/JCTN/RMBG-1.4)
 - [Repositorio GitHub de RMBG-2.0](https://github.com/Bria-AI/RMBG-2.0)

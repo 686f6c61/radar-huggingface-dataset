@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khanhnd61/octo-small_so101-long-clean
+- Modelo en Hugging Face: https://huggingface.co/khanhnd61/octo-small_so101-long-clean
 - Dataset de entrenamiento: https://huggingface.co/datasets/khanhnd61/so101-long-clean
 - LeRobot (GitHub): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

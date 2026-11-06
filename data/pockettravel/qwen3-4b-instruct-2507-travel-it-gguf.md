@@ -97,7 +97,7 @@ La comparacion relevante es contra el modelo base: mismo tamano y misma tarea no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pockettravel/qwen3-4b-instruct-2507-travel-it-GGUF
+- Modelo en Hugging Face: https://huggingface.co/pockettravel/qwen3-4b-instruct-2507-travel-it-GGUF
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Aplicacion Pocket Travel (Android): https://github.com/miracle091/pocket-travel
 - Archivo de atribucion de datos de entrenamiento: `ATTRIBUTION.tsv` (incluido en el repositorio del modelo)

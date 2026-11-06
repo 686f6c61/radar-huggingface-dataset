@@ -87,9 +87,9 @@ El autor indica que existe un conjunto de test sellado de 68 preguntas (SHA-256 
 
 | Modelo | Parametros | Contexto | correctPct (dev publico) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Field Atlas reader (Qwen3-1.7B LoRA, Q4_K_M) | 1,72 B | No disponible (entrenado a 1024) | 40,0 | Apache-2.0 (pesos); datos CC BY-SA 4.0 | GGUF en HuggingFace |
+| Field Atlas reader (Qwen3-1.7B LoRA, Q4_K_M) | 1,72 B | No disponible (entrenado a 1024) | 40,0 | Apache-2.0 (pesos); datos CC BY-SA 4.0 | GGUF en Hugging Face |
 | Qwen3.5-2B (referencia de la app) | No disponible | No disponible | 36,7 | No disponible | Referencia interna del bounty |
-| Qwen/Qwen3-1.7B (base sin ajustar) | 1,72 B | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| Qwen/Qwen3-1.7B (base sin ajustar) | 1,72 B | No disponible | No disponible | Apache-2.0 | Hugging Face |
 
 La comparación se limita a la referencia publicada por el propio autor (Qwen3.5-2B en el mismo conjunto público de desarrollo). No se dispone de datos de benchmarks estándar ni de otras alternativas evaluadas con el mismo script, por lo que no es posible una comparativa más amplia con modelos de tamaño similar.
 
@@ -109,7 +109,7 @@ La comparación se limita a la referencia publicada por el propio autor (Qwen3.5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Usman076/field-atlas-reader-qwen3-1.7b-q4km
+- Modelo en Hugging Face: https://huggingface.co/Usman076/field-atlas-reader-qwen3-1.7b-q4km
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio Field Atlas: https://github.com/0x94t3z/fieldatlas
 - Bounty poidh mainnet #45: https://poidh.xyz/mainnet/bounty/45

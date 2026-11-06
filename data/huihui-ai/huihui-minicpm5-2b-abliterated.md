@@ -93,6 +93,6 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huihui-ai/Huihui-MiniCPM5-2B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/huihui-ai/Huihui-MiniCPM5-2B-abliterated
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio del metodo de ablacion: https://github.com/Sumandora/remove-refusals-with-transformers

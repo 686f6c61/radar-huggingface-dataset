@@ -82,7 +82,7 @@ No se han publicado comparaciones directas con otros rerankers en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quanfire-ai/rerank-statute-en
+- Modelo en Hugging Face: https://huggingface.co/quanfire-ai/rerank-statute-en
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Repositorio de código: https://github.com/quanfire-ai/quanfire-multilingual-embedding
 - Modelo compañero (bi-encoder): https://huggingface.co/quanfire-ai/embed-statute-en

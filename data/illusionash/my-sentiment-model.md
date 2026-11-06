@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my-sentiment-model es un clasificador de sentimiento en tres clases (negativo, neutro, positivo) publicado en HuggingFace por el usuario illusionash. Es un fine-tuning de distilbert-base-uncased, un encoder transformer destilado de BERT que suma 66.955.779 parámetros, y está orientado a la clasificación de textos cortos en inglés. El entrenamiento se hizo sobre una muestra del split de entrenamiento del dataset cardiffnlp/tweet_eval (sentiment), durante una única época.
+my-sentiment-model es un clasificador de sentimiento en tres clases (negativo, neutro, positivo) publicado en Hugging Face por el usuario illusionash. Es un fine-tuning de distilbert-base-uncased, un encoder transformer destilado de BERT que suma 66.955.779 parámetros, y está orientado a la clasificación de textos cortos en inglés. El entrenamiento se hizo sobre una muestra del split de entrenamiento del dataset cardiffnlp/tweet_eval (sentiment), durante una única época.
 
 El modelo resuelve una tarea muy acotada: asignar una etiqueta de polaridad a una frase breve, típicamente un tuit. No es un modelo generativo, no soporta tool calling ni razonamiento multi-paso, y su ventana de contexto útil es la del modelo base. Debe evaluarse como lo que es: un baseline ligero y de bajo coste, con una precisión de 0,689 y un macro F1 de 0,679 sobre el conjunto de test.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible más a
 
 | Modelo | Parametros | Contexto | Tarea | Metricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| illusionash/my-sentiment-model | 66,96 M | 512 | 3 clases (negativo/neutro/positivo) | Accuracy 0,689; macro F1 0,679 en tweet_eval test | MIT | HuggingFace |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M (roberta-base) | 512 | 3 clases | no disponible en la informacion proporcionada | no disponible | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 66,96 M | 512 | 2 clases (positivo/negativo) | no disponible en la informacion proporcionada | no disponible | HuggingFace |
-| roberta-base ajustado sobre tweet_eval (referencia genérica) | ~125 M | 512 | 3 clases | no disponible en la informacion proporcionada | no disponible | HuggingFace |
+| illusionash/my-sentiment-model | 66,96 M | 512 | 3 clases (negativo/neutro/positivo) | Accuracy 0,689; macro F1 0,679 en tweet_eval test | MIT | Hugging Face |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M (roberta-base) | 512 | 3 clases | no disponible en la informacion proporcionada | no disponible | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 66,96 M | 512 | 2 clases (positivo/negativo) | no disponible en la informacion proporcionada | no disponible | Hugging Face |
+| roberta-base ajustado sobre tweet_eval (referencia genérica) | ~125 M | 512 | 3 clases | no disponible en la informacion proporcionada | no disponible | Hugging Face |
 
 No se dispone de cifras de rendimiento de las alternativas dentro de la información proporcionada, por lo que la comparación cuantitativa no es posible. Cualitativamente, el modelo destaca solo por licencia MIT y tamaño reducido; los clasificadores basados en RoBERTa parten de un encoder más capaz, y los ajustes de sentimiento con más épocas y el dataset completo suelen ser opciones más sólidas en producción.
 
@@ -94,7 +94,7 @@ No se dispone de cifras de rendimiento de las alternativas dentro de la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/illusionash/my-sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/illusionash/my-sentiment-model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset de entrenamiento: https://huggingface.co/datasets/cardiffnlp/tweet_eval
 - Repositorios, papers o demos adicionales: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces obtenidos trataban sobre contenido de animación y se han descartado por no ser pertinentes.

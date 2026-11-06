@@ -74,7 +74,7 @@ La comparativa se basa en características generales conocidas de estos modelos;
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abu-Dju/madlad400-7b-mt-bt-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abu-Dju/madlad400-7b-mt-bt-Q8_0-GGUF
 - Modelo original: https://huggingface.co/google/madlad400-7b-mt-bt
 - Documentación de MADLAD-400 en Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/madlad-400.md
 - Paper y recursos de investigación: https://github.com/google-research/google-research/blob/master/madlad_400/README.md

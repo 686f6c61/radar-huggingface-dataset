@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`0xmoose0xmoose0xmoose/sanitizer-test-evocati` es un repositorio alojado en HuggingFace que no contiene un modelo de lenguaje entrenado, sino una prueba de saneamiento (sanitizer test) de la representacion de model cards. Su README, titulado "Keyframes Test", incluye unicamente un bloque `` con animaciones CSS `@keyframes`, reglas `@media`, `@supports` y selectores de atributos que apuntan a peticiones HTTP hacia un dominio externo (`rce.lc`) con rutas del tipo `ssrf/css-*`. El objetivo aparente es comprobar si el renderizador de model cards de HuggingFace escapa o bloquea CSS capaz de generar peticiones salientes no deseadas.
+`0xmoose0xmoose0xmoose/sanitizer-test-evocati` es un repositorio alojado en Hugging Face que no contiene un modelo de lenguaje entrenado, sino una prueba de saneamiento (sanitizer test) de la representacion de model cards. Su README, titulado "Keyframes Test", incluye unicamente un bloque `` con animaciones CSS `@keyframes`, reglas `@media`, `@supports` y selectores de atributos que apuntan a peticiones HTTP hacia un dominio externo (`rce.lc`) con rutas del tipo `ssrf/css-*`. El objetivo aparente es comprobar si el renderizador de model cards de Hugging Face escapa o bloquea CSS capaz de generar peticiones salientes no deseadas.
 
 No se ha publicado ninguna arquitectura, configuracion, tokenizador ni pesos. El repositorio no tiene pipeline declarado, no tiene licencia especificada, acumula 0 descargas y 0 "likes", y su unico metadato relevante es el idioma (`en`). La fecha de creacion declarada es 2026-09-15 y la de ultima actualizacion 2026-09-15, datos que coinciden con la naturaleza sintetica y automatizada del contenido.
 
@@ -43,9 +43,9 @@ No hay datos de entrenamiento, numero de tokens, composicion de dataset, fases d
 
 ## Casos de uso
 
-- Auditoria de seguridad de plataformas de model cards: el contenido sirve para comprobar si el renderizador de HuggingFace (o de cualquier hub interno tipo MLflow, Weights & Biases o un portal corporativo) escapa o elimina etiquetas ``, animaciones `@keyframes` y URLs en propiedades CSS.
+- Auditoria de seguridad de plataformas de model cards: el contenido sirve para comprobar si el renderizador de Hugging Face (o de cualquier hub interno tipo MLflow, Weights & Biases o un portal corporativo) escapa o elimina etiquetas ``, animaciones `@keyframes` y URLs en propiedades CSS.
 - Pruebas de regresion en pipelines de saneamiento HTML/Markdown: integrar este repositorio como caso de prueba en el conjunto de tests de una libreria de sanitizado para verificar que no se emiten peticiones a dominios externos.
-- Formacion en seguridad de la cadena de suministro de modelos: usado como ejemplo didactico de que un repositorio de HuggingFace puede contener contenido activo sin pesos ni licencia, y de por que conviene revisar la model card antes de automatizar su renderizado.
+- Formacion en seguridad de la cadena de suministro de modelos: usado como ejemplo didactico de que un repositorio de Hugging Face puede contener contenido activo sin pesos ni licencia, y de por que conviene revisar la model card antes de automatizar su renderizado.
 - Verificacion de politicas de Content Security Policy (CSP): permite comprobar si una CSP con `img-src`/`default-src` restringidos bloquea efectivamente las cargas de `background: url(...)`.
 - Deteccion de fuga de informacion en visores internos: si una empresa clona repositorios y los muestra en una interfaz propia, este contenido revela si el visor filtra la IP o el user-agent del revisor a un tercero.
 - Analisis forense y respuesta a incidentes: sirve como firma de referencia para buscar patrones similares (`@keyframes` con `url(`) en otros repositorios del hub.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. En la informacion proporcionada no se identifican modelos comparables de la misma categoria. Los resultados de busqueda web recibidos se refieren exclusivamente a ChatGPT de OpenAI y no guardan relacion con este repositorio. Como referencia de categoria, existirian otros repositorios de prueba de saneamiento en HuggingFace, pero no se dispone de datos verificables sobre ellos.
+No disponible. En la informacion proporcionada no se identifican modelos comparables de la misma categoria. Los resultados de busqueda web recibidos se refieren exclusivamente a ChatGPT de OpenAI y no guardan relacion con este repositorio. Como referencia de categoria, existirian otros repositorios de prueba de saneamiento en Hugging Face, pero no se dispone de datos verificables sobre ellos.
 
 | Aspecto | Este repositorio | Alternativa comparable |
 |---|---|---|
@@ -89,7 +89,7 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/sanitizer-test-evocati
+- Repositorio en Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/sanitizer-test-evocati
 - Model card (README del autor): incluida en la pagina anterior; contiene un bloque `` con animaciones `@keyframes` y reglas `@media`, `@supports` y selectores de atributos que referencian el dominio `rce.lc` con rutas del tipo `ssrf/css-*`. No se reproducen las URLs completas por motivos de seguridad.
 - Resultados de busqueda web: solo se han recuperado paginas de ChatGPT (chatgpt.com y openai.com), sin relacion con este repositorio.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

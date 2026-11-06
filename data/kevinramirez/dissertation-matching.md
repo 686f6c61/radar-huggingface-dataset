@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KevinRamirez/dissertation-matching` es un repositorio experimental de HuggingFace que contiene una implementación propia de una arquitectura **PoolFormer** a escala *small*, orientada a tareas de *matching* (emparejamiento entre elementos, presumiblemente fragmentos de texto o pares de documentos en un contexto de tesis). No es un modelo entrenado ni publicado como checkpoint de referencia: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests* y que no se reclama ninguna puntuación de benchmark.
+`KevinRamirez/dissertation-matching` es un repositorio experimental de Hugging Face que contiene una implementación propia de una arquitectura **PoolFormer** a escala *small*, orientada a tareas de *matching* (emparejamiento entre elementos, presumiblemente fragmentos de texto o pares de documentos en un contexto de tesis). No es un modelo entrenado ni publicado como checkpoint de referencia: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests* y que no se reclama ninguna puntuación de benchmark.
 
 El modelo lo desarrolla el usuario KevinRamirez y tiene un tamaño declarado de **49.600 parámetros totales** según los metadatos de safetensors (menos de 0,2 MB en fp32), lo que lo sitúa en un orden de magnitud propio de un prototipo de juguete o de un ejercicio académico, no de un sistema listo para producción. La arquitectura combina PoolFormer con atención de ventana deslizante, fusión de bajo rango, activación GELU y normalización por lotes.
 
@@ -77,6 +77,6 @@ No disponible. La información proporcionada no incluye resultados ni especifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KevinRamirez/dissertation-matching
+- Modelo en Hugging Face: https://huggingface.co/KevinRamirez/dissertation-matching
 
 No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

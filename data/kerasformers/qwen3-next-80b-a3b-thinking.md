@@ -6,7 +6,7 @@
 
 El modelo original combina una arquitectura híbrida Gated-DeltaNet con mezcla de expertos, pensada para ofrecer un equilibrio entre calidad de generación y eficiencia computacional. Esta conversión mantiene los pesos originales en bfloat16 y añade la flexibilidad del ecosistema Keras 3, con soporte para los tres backends principales. Es relevante ahora porque permite a los desarrolladores que trabajan con Keras acceder a modelos de última generación sin necesidad de migrar a PyTorch, y porque abre la puerta a aprovechar aceleradores TPU mediante el backend de JAX.
 
-La ficha se basa exclusivamente en la información publicada en la model card de HuggingFace; los datos no disponibles se indican explícitamente.
+La ficha se basa exclusivamente en la información publicada en la model card de Hugging Face; los datos no disponibles se indican explícitamente.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ La conversion a Keras 3 no modifica los pesos ni la arquitectura; reimplementa e
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye puntuaciones de MMLU, HumanEval, GSM8K ni ninguna otra prueba estandar. Para datos de rendimiento del modelo original, se remite al paper tecnico de Qwen3 (arXiv:2505.09388) y a la model card del modelo base en HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye puntuaciones de MMLU, HumanEval, GSM8K ni ninguna otra prueba estandar. Para datos de rendimiento del modelo original, se remite al paper tecnico de Qwen3 (arXiv:2505.09388) y a la model card del modelo base en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -79,10 +79,10 @@ La comparativa principal es con el modelo original de Qwen: misma arquitectura, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/qwen3-next-80b-a3b-thinking
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/qwen3-next-80b-a3b-thinking
 - Repositorio de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de Qwen3-Next en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3_next/
-- Coleccion Qwen3-Next en HuggingFace: https://huggingface.co/collections/kerasformers/qwen3-next-6a7e551ff86ebf2cca455ef1
+- Coleccion Qwen3-Next en Hugging Face: https://huggingface.co/collections/kerasformers/qwen3-next-6a7e551ff86ebf2cca455ef1
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking
 - Paper: Qwen3 Technical Report (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
 - Paper: Qwen2.5-1M Technical Report (arXiv:2501.15383): https://arxiv.org/abs/2501.15383

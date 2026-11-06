@@ -93,7 +93,7 @@ No se han publicado datos comparativos en la información proporcionada. La tabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/kokoro-82m
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/kokoro-82m
 - Modelo base (upstream): https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
 - Commit fijado del upstream: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/tree/1939ad2a8e416c0acfeecc08a694d14ef25f2231
 - Conversor y recetas de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

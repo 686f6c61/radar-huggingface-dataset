@@ -91,7 +91,7 @@ Como referencia externa, los modelos de la familia Whisper (por ejemplo large-v3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v2-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v2-mlx-8bit
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Conversion MLX de mlx-community: https://huggingface.co/mlx-community/parakeet-tdt-0.6b-v2
 - Libreria parakeet-mlx: https://github.com/senstella/parakeet-mlx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NorthCUA-Pro es un modelo multimodal de la familia Qwen 3.5 MoE publicado por beipo-ai en HuggingFace bajo licencia Apache 2.0. El repositorio se presenta como una carga de pesos en curso: según la model card, la subida oficial de los pesos de NorthCUA-Pro está en progreso y el repositorio todavía no constituye un modelo completo descargable. La tarjeta final y el manifiesto de integridad se publicarán una vez verificados los 122 shards de pesos.
+NorthCUA-Pro es un modelo multimodal de la familia Qwen 3.5 MoE publicado por beipo-ai en Hugging Face bajo licencia Apache 2.0. El repositorio se presenta como una carga de pesos en curso: según la model card, la subida oficial de los pesos de NorthCUA-Pro está en progreso y el repositorio todavía no constituye un modelo completo descargable. La tarjeta final y el manifiesto de integridad se publicarán una vez verificados los 122 shards de pesos.
 
 El pipeline declarado es image-text-to-text, lo que sitúa al modelo en la categoría de modelos multimodales con entrada de imagen y texto y salida de texto. La arquitectura etiquetada es qwen3_5_moe, es decir, un transformer con mezcla de expertos (MoE) basado en la familia Qwen 3.5. El tamaño del repositorio es de 386,4 GB, un volumen coherente con un modelo MoE de gran escala distribuido en 122 fragmentos de pesos en formato safetensors.
 
@@ -34,7 +34,7 @@ No se ha publicado información sobre el número de tokens de entrenamiento, la 
 - Arquitectura MoE de la familia Qwen 3.5, que en la estirpe Qwen suele incluir capacidades de razonamiento y generación de código; no obstante, no se documentan explícitamente en la información disponible.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; el campo de idiomas no está relleno en la ficha de HuggingFace.
+- Capacidades multilingües: no disponible; el campo de idiomas no está relleno en la ficha de Hugging Face.
 - Modo thinking, visión avanzada o audio: no disponible.
 
 ## Casos de uso
@@ -83,4 +83,4 @@ No se dispone de datos de rendimiento de NorthCUA-Pro que permitan una comparaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/beipo-ai/NorthCUA-Pro
+- Hugging Face: https://huggingface.co/beipo-ai/NorthCUA-Pro

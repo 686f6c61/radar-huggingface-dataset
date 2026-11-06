@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`thaitoan1908/dana_qwen_travel_v3` es un adaptador LoRA publicado en HuggingFace por el usuario thaitoan1908, construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct. El nombre del repositorio sugiere un ajuste orientado al dominio de viajes, aunque la model card no documenta ni el propósito concreto ni el conjunto de datos empleado en el entrenamiento. El artefacto publicado es únicamente el adaptador (0,1 GB), no los pesos completos del modelo, por lo que su uso requiere cargar primero el modelo base.
+`thaitoan1908/dana_qwen_travel_v3` es un adaptador LoRA publicado en Hugging Face por el usuario thaitoan1908, construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct. El nombre del repositorio sugiere un ajuste orientado al dominio de viajes, aunque la model card no documenta ni el propósito concreto ni el conjunto de datos empleado en el entrenamiento. El artefacto publicado es únicamente el adaptador (0,1 GB), no los pesos completos del modelo, por lo que su uso requiere cargar primero el modelo base.
 
 El modelo base Qwen2.5-3B-Instruct es un transformer decoder-only denso de 3.000 millones de parámetros desarrollado por Alibaba Qwen, con una ventana de contexto nativa de 32.768 tokens (ampliable a 131.072 mediante YaRN) y entrenamiento instructivo con datos multilingües. El adaptador hereda estas capacidades estructurales, si bien el ajuste fino puede haber modificado el comportamiento en dominios específicos.
 
-La relevancia de esta ficha es limitada: se trata de un checkpoint con cero descargas y cero likes en el momento de la consulta, sin métricas publicadas, sin licencia declarada y con una model card generada a partir de la plantilla por defecto de HuggingFace sin rellenar. Se documenta aquí como referencia técnica, advirtiendo que cualquier evaluación de calidad debe realizarse empíricamente por el usuario.
+La relevancia de esta ficha es limitada: se trata de un checkpoint con cero descargas y cero likes en el momento de la consulta, sin métricas publicadas, sin licencia declarada y con una model card generada a partir de la plantilla por defecto de Hugging Face sin rellenar. Se documenta aquí como referencia técnica, advirtiendo que cualquier evaluación de calidad debe realizarse empíricamente por el usuario.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparación de rendimiento con estas alternativas no es posible por la ausen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thaitoan1908/dana_qwen_travel_v3
+- Repositorio Hugging Face: https://huggingface.co/thaitoan1908/dana_qwen_travel_v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700

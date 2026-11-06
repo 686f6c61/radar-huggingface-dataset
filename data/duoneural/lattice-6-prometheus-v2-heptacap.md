@@ -78,7 +78,7 @@ Comparativa orientativa con modelos de tamaño similar (~0,5-0,6B parámetros) o
 |---|---|---|---|---|
 | Lattice-6-Prometheus-v2-HeptaCap | ~598,4M (216,6M activos) | no disponible | Apache 2.0 | CDM hiperbólico con MoE; requiere llama.cpp parcheado |
 | Qwen3-0.6B (profesor destilado a escala similar) | ~0,6B | 32k (según familia Qwen3) | Apache 2.0 | Transformer denso estándar; ecosistema maduro (vLLM, Ollama) |
-| SmolLM2-360M/1.7B (HuggingFace) | 360M / 1,7B | 8.192 | Apache 2.0 | Entrenado con smoltalk entre otros datasets; benchmarks públicos amplios |
+| SmolLM2-360M/1.7B (Hugging Face) | 360M / 1,7B | 8.192 | Apache 2.0 | Entrenado con smoltalk entre otros datasets; benchmarks públicos amplios |
 
 Nota: la comparativa es aproximada; el modelo de DuoNeural no publica benchmarks comparables directamente con estas alternativas, y su arquitectura no es compatible con el ecosistema estándar de inferencia.
 
@@ -90,13 +90,13 @@ Nota: la comparativa es aproximada; el modelo de DuoNeural no publica benchmarks
 - Idiomas: no declarados; los datasets de entrenamiento (fineweb-edu, smoltalk) son mayoritariamente en inglés, por lo que el rendimiento en castellano es incierto.
 - Compatibilidad: requiere un fork parcheado de llama.cpp para ejecución nativa; no funciona con el ecosistema estándar (vLLM, TGI, transformers convencionales) para la geometría no euclidiana.
 - Licencia: Apache 2.0 permite uso comercial, pero el modelo destila pesos derivados de Qwen/Qwen3.8-27B; conviene revisar los términos del modelo base para despliegues comerciales.
-- Procedencia: el modelo tiene 390 descargas y 0 likes en HuggingFace; no hay auditorías ni validaciones independientes de las afirmaciones de la model card (hepta-cap, DHP), que corresponden a terminología propia de DuoNeural.
+- Procedencia: el modelo tiene 390 descargas y 0 likes en Hugging Face; no hay auditorías ni validaciones independientes de las afirmaciones de la model card (hepta-cap, DHP), que corresponden a terminología propia de DuoNeural.
 - Sesgos: no documentados; hereda potencialmente los sesgos de fineweb-edu, smoltalk y del modelo profesor Qwen.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Lattice-6-Prometheus-v2-HeptaCap
-- Organización DuoNeural en HuggingFace: https://huggingface.co/DuoNeural
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Lattice-6-Prometheus-v2-HeptaCap
+- Organización DuoNeural en Hugging Face: https://huggingface.co/DuoNeural
 - Sitio web de DuoNeural: https://duoneural.com
 - Repositorio de código (Lattice-CDM): https://github.com/DuoNeural/Lattice-CDM
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

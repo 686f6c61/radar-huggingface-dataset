@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `delta-nla-qwen3-8b-av-warmstart` es un adaptador LoRA (PEFT) publicado por el usuario `syvb` en HuggingFace, construido sobre el modelo base `Qwen/Qwen3-8B`. Se distribuye en formato `safetensors` y el repositorio tiene un tamaño de 0.5 GB, lo que confirma que no es un modelo autónomo, sino un conjunto de pesos adicionales para fine-tuning.
+El modelo `delta-nla-qwen3-8b-av-warmstart` es un adaptador LoRA (PEFT) publicado por el usuario `syvb` en Hugging Face, construido sobre el modelo base `Qwen/Qwen3-8B`. Se distribuye en formato `safetensors` y el repositorio tiene un tamaño de 0.5 GB, lo que confirma que no es un modelo autónomo, sino un conjunto de pesos adicionales para fine-tuning.
 
 La model card no incluye información sobre la tarea de entrenamiento, el dataset utilizado, los hiperparámetros ni el propósito del adaptador. El único dato técnico disponible es la versión de PEFT 0.20.0 y la fecha de publicación. Por tanto, el modelo no puede ser evaluado en un contexto de producción sin documentación adicional.
 
@@ -65,11 +65,11 @@ La comparativa se centra en el modelo base, ya que no se dispone de datos del ad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8.000 M | Hasta 256K segun conocimiento publico | No especificado en la informacion; se conoce publicamente como Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8.000 M | 128K | Licencia Llama | HuggingFace |
-| Mistral 7B v0.3 | 7.000 M | 128K | Apache 2.0 | HuggingFace |
-| Gemma 2 9B | 9.000 M | 8K | Licencia propia | HuggingFace |
-| delta-nla-qwen3-8b (adaptador) | No disponible | No disponible | No disponible | HuggingFace |
+| Qwen3-8B (base) | 8.000 M | Hasta 256K segun conocimiento publico | No especificado en la informacion; se conoce publicamente como Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8.000 M | 128K | Licencia Llama | Hugging Face |
+| Mistral 7B v0.3 | 7.000 M | 128K | Apache 2.0 | Hugging Face |
+| Gemma 2 9B | 9.000 M | 8K | Licencia propia | Hugging Face |
+| delta-nla-qwen3-8b (adaptador) | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,6 +82,6 @@ La comparativa se centra en el modelo base, ya que no se dispone de datos del ad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/syvb/delta-nla-qwen3-8b-av-warmstart
+- Hugging Face: https://huggingface.co/syvb/delta-nla-qwen3-8b-av-warmstart
 - Paper de impacto ambiental citado en la model card: https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes en la busqueda web.

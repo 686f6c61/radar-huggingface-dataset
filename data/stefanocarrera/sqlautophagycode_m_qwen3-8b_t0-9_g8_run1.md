@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run1` es un modelo de transformadores publicado en HuggingFace por el usuario `stefanocarrera`. Por el nombre, parece tratarse de un ajuste fino de Qwen3-8B orientado a tareas relacionadas con SQL y generación de código, pero no existe documentación que lo confirme. El repositorio tiene un tamaño de 0.2 GB y utiliza el formato `safetensors`, lo que sugiere que los pesos están cuantizados o que se trata de un adaptador. No se ha publicado información sobre el problema que resuelve, su arquitectura exacta, su contexto ni su proceso de entrenamiento.
+El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run1` es un modelo de transformadores publicado en Hugging Face por el usuario `stefanocarrera`. Por el nombre, parece tratarse de un ajuste fino de Qwen3-8B orientado a tareas relacionadas con SQL y generación de código, pero no existe documentación que lo confirme. El repositorio tiene un tamaño de 0.2 GB y utiliza el formato `safetensors`, lo que sugiere que los pesos están cuantizados o que se trata de un adaptador. No se ha publicado información sobre el problema que resuelve, su arquitectura exacta, su contexto ni su proceso de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run1` es un modelo
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles sobre la arquitectura del modelo, los datos de entrenamiento ni las técnicas de ajuste. El tag `unsloth` en HuggingFace indica que se utilizó la librería Unsloth para el fine-tuning, conocida por su eficiencia en memoria, pero no se dispone de información sobre el dataset, el número de tokens ni si se aplicaron técnicas como RLHF o DPO.
+No se han publicado detalles sobre la arquitectura del modelo, los datos de entrenamiento ni las técnicas de ajuste. El tag `unsloth` en Hugging Face indica que se utilizó la librería Unsloth para el fine-tuning, conocida por su eficiencia en memoria, pero no se dispone de información sobre el dataset, el número de tokens ni si se aplicaron técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -49,6 +49,6 @@ No disponible. No se han encontrado modelos comparables documentados en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run1
+- Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run1
 - Otras versiones del mismo autor: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run0
 - Otra variante del mismo autor: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g1_run0

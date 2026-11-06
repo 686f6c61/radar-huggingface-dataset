@@ -76,7 +76,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jeff-adapter-result-relevant | no disponible (base 0.8B) | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| jeff-adapter-result-relevant | no disponible (base 0.8B) | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 - Solo ingles: la model card declara unicamente el idioma `en`.
 - Dependencia estricta del base: el motor rechaza el adaptador si el modelo base no es exactamente `mstrasser/jeff-base` en la revision v1.4.
 - Metricas no independientes: los resultados reportados (98.6% y 98.5%) provienen de tests internos generados por el mismo generador que los datos de entrenamiento, lo que limita su valor como evidencia de rendimiento real.
-- Sin adopcion verificable: cero descargas y cero likes en HuggingFace en el momento de la consulta.
+- Sin adopcion verificable: cero descargas y cero likes en Hugging Face en el momento de la consulta.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de clasificacion erronea en casos limite (resultados parcialmente relevantes o con detalles ambiguos).
 - Sesgos conocidos: no documentados en la informacion disponible.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no documenta condiciones adicionales ni limitaciones de responsabilidad.
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mstrasser/jeff-adapter-result-relevant
+- Hugging Face: https://huggingface.co/mstrasser/jeff-adapter-result-relevant
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Pagina del catalogo: https://jeffhub.ai/catalogue/jeff.agents.result-relevant
 - Repositorio GitHub (codigo, servidor y SDKs): https://github.com/firelex/jeff

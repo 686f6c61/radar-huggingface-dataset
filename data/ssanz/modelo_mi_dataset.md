@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ssanz/modelo_mi_dataset` es una política de robótica entrenada con LeRobot mediante el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. El modelo aprende a partir de datos teleoperados y está pensado para controlar un brazo robótico de tipo `so_follower`, consumiendo el estado de las articulaciones y dos flujos de vídeo como entrada. Lo publica el usuario `ssanz` en HuggingFace, con licencia Apache-2.0 y un total de 51.668.614 parámetros.
+`ssanz/modelo_mi_dataset` es una política de robótica entrenada con LeRobot mediante el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. El modelo aprende a partir de datos teleoperados y está pensado para controlar un brazo robótico de tipo `so_follower`, consumiendo el estado de las articulaciones y dos flujos de vídeo como entrada. Lo publica el usuario `ssanz` en Hugging Face, con licencia Apache-2.0 y un total de 51.668.614 parámetros.
 
 Se trata de una política específica para una única tarea, "Grab the white cube", entrenada sobre un conjunto de datos muy reducido: 5 episodios y 3615 fotogramas a 30 FPS, procedentes del dataset `cualquier/cosa`. La entrada combina `observation.state` con forma `(6,)` y dos cámaras (`entorno` y `lateral`) a resolución 240x320; la salida es un vector de acción de dimensión `(6,)`. Es, por tanto, un artefacto de investigación o de demostración más que un modelo listo para producción general.
 
@@ -72,9 +72,9 @@ Los datos de las alternativas proceden de fuentes públicas de cada proyecto y n
 
 | Modelo | Parametros | Enfoque | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (`ssanz/modelo_mi_dataset`) | 51,67 M | Transformer con CVAE y action chunking | Estado 6D + 2 cámaras RGB 240x320 | Apache-2.0 | HuggingFace, vía LeRobot |
+| ACT (`ssanz/modelo_mi_dataset`) | 51,67 M | Transformer con CVAE y action chunking | Estado 6D + 2 cámaras RGB 240x320 | Apache-2.0 | Hugging Face, vía LeRobot |
 | Diffusion Policy | no disponible (depende de la configuración) | Políticas de difusión para generación de acciones | Imagen + estado | MIT (código de referencia) | Repositorio público de investigación |
-| SmolVLA | aproximadamente 450 M | Vision-Language-Action | Imagen + instrucción en lenguaje + estado | Apache-2.0 | HuggingFace, vía LeRobot |
+| SmolVLA | aproximadamente 450 M | Vision-Language-Action | Imagen + instrucción en lenguaje + estado | Apache-2.0 | Hugging Face, vía LeRobot |
 | ACT original (ALOHA, artículo) | del orden de decenas de millones (no confirmado en la información disponible) | Transformer con CVAE y action chunking | Imagen + estado | no disponible | Repositorio del artículo |
 
 Frente a Diffusion Policy, ACT suele ser más ligero y rápido en inferencia, a costa de menor capacidad para modelar distribuciones multimodales complejas. Frente a SmolVLA, este modelo no acepta instrucciones en lenguaje natural y está atado a una única tarea, mientras que SmolVLA generaliza a múltiples tareas mediante condicionamiento textual.
@@ -95,7 +95,7 @@ Frente a Diffusion Policy, ACT suele ser más ligero y rápido en inferencia, a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssanz/modelo_mi_dataset
+- Modelo en Hugging Face: https://huggingface.co/ssanz/modelo_mi_dataset
 - Dataset de entrenamiento: https://huggingface.co/datasets/cualquier/cosa
 - Artículo de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

@@ -110,10 +110,10 @@ Según el repositorio de Q-Future, la familia Q-ReAlign alcanza un rendimiento d
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/VERIGEN/q-realign-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/VERIGEN/q-realign-GGUF
 - Checkpoint original: https://huggingface.co/q-future/Q-ReAlign-Lite-4B
 - Repositorio GitHub de Q-ReAlign: https://github.com/Q-Future/Q-ReAlign
 - Repositorio GitHub de Q-Align (ICML 2024): https://github.com/Q-Future/Q-Align
-- Colección Q-ReAlign en HuggingFace: https://huggingface.co/collections/q-future/q-realign
+- Colección Q-ReAlign en Hugging Face: https://huggingface.co/collections/q-future/q-realign
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Paper homónimo sin relación con este modelo: https://arxiv.org/abs/2601.08089

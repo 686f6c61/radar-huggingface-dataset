@@ -61,8 +61,8 @@ No hay modelos directamente comparables en la información disponible. El checkp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.5-9B-Base | 9,41 B | no disponible | no disponible | HuggingFace |
-| agentic-ptb/sol-high.h043... | 9,41 B | no disponible | no disponible | HuggingFace (checkpoint) |
+| Qwen/Qwen3.5-9B-Base | 9,41 B | no disponible | no disponible | Hugging Face |
+| agentic-ptb/sol-high.h043... | 9,41 B | no disponible | no disponible | Hugging Face (checkpoint) |
 
 No hay datos de rendimiento para comparar con otros modelos de 9B como Llama-3.1-8B o Mistral-7B.
 
@@ -78,7 +78,7 @@ No hay datos de rendimiento para comparar con otros modelos de 9B como Llama-3.1
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h043.opsd-r2e-commit-small-replay.step_1
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h043.opsd-r2e-commit-small-replay.step_1
 - Paper OPSD (arXiv 2608.01788): https://arxiv.org/abs/2608.01788v1
 - Versión HTML del paper: https://arxiv.org/html/2608.01788v1
 - Código del entrenamiento OPSD (GitHub): https://github.com/EcthelionLiu/Agentic-OPSD

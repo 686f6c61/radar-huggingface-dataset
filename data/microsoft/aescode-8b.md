@@ -81,10 +81,10 @@ Según el autor, AesCode-8B mejora Visual respecto a su backbone condicionado po
 
 | Modelo | Parametros | Contexto | Overall (con ref.) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AesCode-8B | 8,77B densos | 24.576 tokens | 82,94 | apache-2.0 | pesos abiertos en HuggingFace |
+| AesCode-8B | 8,77B densos | 24.576 tokens | 82,94 | apache-2.0 | pesos abiertos en Hugging Face |
 | Qwen3-VL-8B-Instruct | ~8B densos | no especificado | 51,93 | no disponible en esta ficha | pesos abiertos |
 | Qwen3-VL-32B-Instruct | ~32B densos | no especificado | 61,10 | no disponible en esta ficha | pesos abiertos |
-| AesCode-32B | ~32B densos | no especificado | 85,89 | no disponible en esta ficha | pesos abiertos en HuggingFace |
+| AesCode-32B | ~32B densos | no especificado | 85,89 | no disponible en esta ficha | pesos abiertos en Hugging Face |
 | GPT-5.5 | no disponible | no disponible | 81,28 | propietaria | API cerrada |
 | Claude Opus 4.8 | no disponible | no disponible | 80,39 | propietaria | API cerrada |
 
@@ -102,7 +102,7 @@ La comparación relevante es interna a la familia: AesCode-8B supera a su backbo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microsoft/AesCode-8B
+- Modelo en Hugging Face: https://huggingface.co/microsoft/AesCode-8B
 - Modelo companion AesCode-32B: https://huggingface.co/microsoft/AesCode-32B
 - Repositorio de código: https://github.com/microsoft/AesCode
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

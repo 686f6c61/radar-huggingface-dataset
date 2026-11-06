@@ -91,11 +91,11 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Resultado en evaluación sellada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-SecProof-27B-V1 | Base 27B + adaptador LoRA | No disponible | PASS en las 8 puertas (G1 1,000; G4a 0/239; G6 1,000) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Thaki-SecProof-8B-Preview | 8B + adaptador LoRA | No disponible | FAIL en G4b (código ya corregido marcado como vulnerable) | No indicada en la información disponible | HuggingFace |
-| Thaki-SecProof-4B-Preview | 4B + adaptador LoRA | No disponible | PASS | No indicada en la información disponible | HuggingFace |
-| Thaki-SecProof-2B-Preview | 2B + adaptador LoRA | No disponible | FAIL en G4a (falsos confirmados sobre señuelos) | No indicada en la información disponible | HuggingFace |
-| Qwen/Qwen3.8-27B (stock) | 27B | No disponible | G1 0,342; G4a 0,912; G2 y G6 0,000 | No indicada en la información disponible | HuggingFace |
+| Thaki-SecProof-27B-V1 | Base 27B + adaptador LoRA | No disponible | PASS en las 8 puertas (G1 1,000; G4a 0/239; G6 1,000) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Thaki-SecProof-8B-Preview | 8B + adaptador LoRA | No disponible | FAIL en G4b (código ya corregido marcado como vulnerable) | No indicada en la información disponible | Hugging Face |
+| Thaki-SecProof-4B-Preview | 4B + adaptador LoRA | No disponible | PASS | No indicada en la información disponible | Hugging Face |
+| Thaki-SecProof-2B-Preview | 2B + adaptador LoRA | No disponible | FAIL en G4a (falsos confirmados sobre señuelos) | No indicada en la información disponible | Hugging Face |
+| Qwen/Qwen3.8-27B (stock) | 27B | No disponible | G1 0,342; G4a 0,912; G2 y G6 0,000 | No indicada en la información disponible | Hugging Face |
 
 Las cuatro variantes SecProof comparten datos, receta, formato de prompt y contrato de salida, por lo que la comparación aísla principalmente el efecto del tamaño y de la familia base. No se dispone de datos de otros adaptadores de auditoría de seguridad comparables en la información proporcionada.
 
@@ -115,7 +115,7 @@ Las cuatro variantes SecProof comparten datos, receta, formato de prompt y contr
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ThakiCloud/Thaki-SecProof-27B-V1
+- Hugging Face del modelo: https://huggingface.co/ThakiCloud/Thaki-SecProof-27B-V1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Thaki-SecProof-2B-Preview: https://huggingface.co/ThakiCloud/Thaki-SecProof-2B-Preview
 - Thaki-SecProof-4B-Preview: https://huggingface.co/ThakiCloud/Thaki-SecProof-4B-Preview

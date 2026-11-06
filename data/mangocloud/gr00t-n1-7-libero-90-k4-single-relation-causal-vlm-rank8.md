@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8` es un artefacto publicado en HuggingFace por el usuario mangocloud, con fecha de creacion del 18 de septiembre de 2026. La etiqueta asociada al repositorio es `Gr00tN1d7LoraIcl`, y el propio identificador combina los terminos `gr00t-n1.7`, `libero-90`, `k4`, `single-relation`, `causal-vlm` y `rank8`. El unico dato verificado de peso es el recuento de parametros en los ficheros safetensors: 3.171.411.088 parametros, es decir, aproximadamente 3,17 mil millones.
+El repositorio `mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8` es un artefacto publicado en Hugging Face por el usuario mangocloud, con fecha de creacion del 18 de septiembre de 2026. La etiqueta asociada al repositorio es `Gr00tN1d7LoraIcl`, y el propio identificador combina los terminos `gr00t-n1.7`, `libero-90`, `k4`, `single-relation`, `causal-vlm` y `rank8`. El unico dato verificado de peso es el recuento de parametros en los ficheros safetensors: 3.171.411.088 parametros, es decir, aproximadamente 3,17 mil millones.
 
 Por la nomenclatura, todo apunta a un adaptador de bajo rango (LoRA, `rank8`) sobre un modelo de la familia GR00T N1.7, orientado a tareas de manipulacion robotica y evaluado o entrenado sobre el benchmark LIBERO. No obstante, esta interpretacion es una inferencia a partir del nombre del repositorio y de la etiqueta, no un dato confirmado por la model card, que no esta disponible. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni resultados de benchmarks publicados.
 
@@ -69,7 +69,7 @@ No se dispone de informacion verificada sobre modelos comparables en la document
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8 | 3.171.411.088 | no disponible | no disponible | Repositorio publico en HuggingFace, 8 descargas |
+| gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8 | 3.171.411.088 | no disponible | no disponible | Repositorio publico en Hugging Face, 8 descargas |
 | Modelo base GR00T N1.7 (presunto) | no disponible | no disponible | no disponible | no disponible |
 | Otras alternativas de robotica VLA | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de informacion verificada sobre modelos comparables en la document
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8
+- Repositorio en Hugging Face: https://huggingface.co/mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8
 - Paper asociado: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: no disponible.

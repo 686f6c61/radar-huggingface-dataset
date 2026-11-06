@@ -77,8 +77,8 @@ Comparativa con el modelo base y alternativas de la misma categoria:
 
 | Modelo | Parametros | Contexto/limites | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Decily-MLX-4bit | 1,72B | no disponible (limites de entrada: 256/96/64 tokens) | apache-2.0 | HuggingFace, MLX |
-| Qwen/Qwen3-1.7B-Base | 1,72B | no disponible en la informacion | apache-2.0 | HuggingFace |
+| Decily-MLX-4bit | 1,72B | no disponible (limites de entrada: 256/96/64 tokens) | apache-2.0 | Hugging Face, MLX |
+| Qwen/Qwen3-1.7B-Base | 1,72B | no disponible en la informacion | apache-2.0 | Hugging Face |
 | Otras alternativas de scoring/clasificacion | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de modelos comparables en la informacion proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexzhang0118/Decily-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/alexzhang0118/Decily-MLX-4bit
 - Decily-1.7B (variante PyTorch bf16): https://huggingface.co/alexzhang0118/Decily-1.7B
 - Decily-MLX (variante MLX bf16): https://huggingface.co/alexzhang0118/Decily-MLX
 - Decily-ONNX-int8 (variante ONNX int8): https://huggingface.co/alexzhang0118/Decily-ONNX-int8

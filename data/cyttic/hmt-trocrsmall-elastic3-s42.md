@@ -79,6 +79,6 @@ No disponible. La información proporcionada no incluye modelos comparables de H
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrsmall-elastic3-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrsmall-elastic3-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` en el repositorio del modelo (no se proporciona URL directa en la información disponible)

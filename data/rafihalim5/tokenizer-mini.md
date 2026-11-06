@@ -4,7 +4,7 @@
 
 El repositorio `Rafihalim5/tokenizer-mini` aloja un artefacto denominado `predict.py`, descrito por su autor como una implementación a gran escala de la arquitectura BEiT orientada a tareas contrastivas. El nombre del repositorio sugiere que se trata de un tokenizador, aunque la documentación técnica disponible describe un modelo de arquitectura BEiT con atención dilatada, fusión de bajo rango y cabeza contrastiva. La información pública es extremadamente limitada: no se especifica el número de parámetros, la longitud de contexto, los datos de entrenamiento ni los pesos del modelo.
 
-El repositorio tiene licencia Apache 2.0, fue creado el 25 de agosto de 2026 y no registra descargas ni "likes" en HuggingFace. Su relevancia actual es marginal: se trata de un proyecto de carácter experimental o educativo, sin evidencias de uso en producción ni de validación por parte de la comunidad. El único archivo documentado es `predict.py`, lo que sugiere que el repositorio contiene código de inferencia o un script de predicción en lugar de pesos de modelo publicados.
+El repositorio tiene licencia Apache 2.0, fue creado el 25 de agosto de 2026 y no registra descargas ni "likes" en Hugging Face. Su relevancia actual es marginal: se trata de un proyecto de carácter experimental o educativo, sin evidencias de uso en producción ni de validación por parte de la comunidad. El único archivo documentado es `predict.py`, lo que sugiere que el repositorio contiene código de inferencia o un script de predicción en lugar de pesos de modelo publicados.
 
 ## Especificaciones técnicas
 
@@ -69,8 +69,8 @@ No disponible. No se conocen modelos comparables en la misma categoría porque e
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Rafihalim5/tokenizer-mini
-- Página principal de HuggingFace: https://huggingface.co/
-- Documentación de tokenizers de HuggingFace: https://huggingface.co/docs/tokenizers/index (referencia general, no específica de este modelo)
+- Repositorio de Hugging Face: https://huggingface.co/Rafihalim5/tokenizer-mini
+- Página principal de Hugging Face: https://huggingface.co/
+- Documentación de tokenizers de Hugging Face: https://huggingface.co/docs/tokenizers/index (referencia general, no específica de este modelo)
 - Tokenizer de OpenAI (referencia general sobre tokenización): https://platform.openai.com/tokenizer
 - GPT Tokenizer Playground (referencia general): https://gpt-tokenizer.dev/

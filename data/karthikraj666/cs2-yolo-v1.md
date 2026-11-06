@@ -82,6 +82,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KarthikRaj666/CS2-YOLO-V1
+- Modelo en Hugging Face: https://huggingface.co/KarthikRaj666/CS2-YOLO-V1
 - Modelo base (Ultralytics/YOLO26): https://huggingface.co/Ultralytics/YOLO26
 - Repositorio de Ultralytics (framework): https://github.com/ultralytics/ultralytics

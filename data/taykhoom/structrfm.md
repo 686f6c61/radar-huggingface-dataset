@@ -2,7 +2,7 @@
 
 ## Resumen
 
-structRFM es un modelo de lenguaje especializado en ARN (RNA) desarrollado originalmente por el grupo de Heqin Zhu y portado a HuggingFace por Taykhoom. Se trata de un codificador BERT de 12 capas y 768 dimensiones de embedding (86 millones de parametros en total, incluyendo la cabeza MLM) entrenado con un objetivo de enmascaramiento guiado por estructura secundaria (SgMLM) sobre aproximadamente 21 millones de secuencias de RNAcentral. El modelo no genera texto: produce representaciones contextualizadas de nucleotidos y predicciones de tokens enmascarados, lo que lo convierte en una base para tareas de biologia computacional del ARN.
+structRFM es un modelo de lenguaje especializado en ARN (RNA) desarrollado originalmente por el grupo de Heqin Zhu y portado a Hugging Face por Taykhoom. Se trata de un codificador BERT de 12 capas y 768 dimensiones de embedding (86 millones de parametros en total, incluyendo la cabeza MLM) entrenado con un objetivo de enmascaramiento guiado por estructura secundaria (SgMLM) sobre aproximadamente 21 millones de secuencias de RNAcentral. El modelo no genera texto: produce representaciones contextualizadas de nucleotidos y predicciones de tokens enmascarados, lo que lo convierte en una base para tareas de biologia computacional del ARN.
 
 La relevancia de este port concreto reside en la correccion del pipeline de tokenizacion. El repositorio original expone los pesos como un `BertForMaskedLM` estandar, pero su tokenizador carece de normalizador y plantilla de post-procesado: llamar directamente a `AutoTokenizer` sobre una secuencia no anade los tokens `[CLS]`/`[SEP]` y mapea `T` y las bases en minuscula a `[UNK]`. Este port aplica el preprocesado del codigo upstream (mayusculas, `T`->`U`, envoltura con `[CLS] ... [SEP]`) dentro del propio tokenizador, de modo que `tokenizer(seq)` produce exactamente los ids con los que se entreno el modelo. Ademas anade soporte para `flash_attention_2` y `sdpa`.
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| structRFM (este port) | 86M | 512 nt | ARN, estructura secundaria | MIT | HuggingFace |
-| heqin-zhu/structRFM (upstream) | 86M | 512 nt | ARN, estructura secundaria | MIT | HuggingFace |
+| structRFM (este port) | 86M | 512 nt | ARN, estructura secundaria | MIT | Hugging Face |
+| heqin-zhu/structRFM (upstream) | 86M | 512 nt | ARN, estructura secundaria | MIT | Hugging Face |
 | structRFM v0.0.3 (anterior) | 86M | 512 nt | ARN, estructuras BPfold | MIT | Sustituido por v0.0.8 |
 | Modelos BERT de ARN genericos | no disponible | no disponible | ARN | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ La comparacion con otros modelos de ARN de la misma categoria (por ejemplo, RNA-
 
 ## Enlaces
 
-- Repositorio HuggingFace (este port): https://huggingface.co/Taykhoom/structRFM
+- Repositorio Hugging Face (este port): https://huggingface.co/Taykhoom/structRFM
 - Modelo upstream: https://huggingface.co/heqin-zhu/structRFM
 - Coleccion structRFM: https://huggingface.co/collections/Taykhoom/structrfm-6aebd71d994e3b036c62ed23
 - Release upstream v0.0.8: https://github.com/heqin-zhu/structRFM/releases/tag/v0.0.8

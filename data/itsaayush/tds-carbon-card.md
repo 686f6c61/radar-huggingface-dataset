@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene senti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsAayush/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/itsAayush/tds-carbon-card
 - Repositorio similar de otro usuario: https://huggingface.co/adisinha95/tds-carbon-card
 - Repositorio similar de otro usuario: https://huggingface.co/Jesmelchi/tds-carbon-card
 - Guia del Model Card Toolkit de TensorFlow: https://www.tensorflow.org/responsible_ai/model_card_toolkit/guide

@@ -4,7 +4,7 @@
 
 El repositorio psnuser061020/arkan-planning-cpm-lora contiene un adaptador LoRA (PEFT) publicado por el usuario psnuser061020 sobre el modelo base Qwen/Qwen2.5-3B-Instruct. No se trata, por tanto, de un modelo completo, sino de un conjunto de pesos de ajuste fino de bajo rango que debe cargarse junto al modelo base de 3,09 mil millones de parametros. El nombre del repositorio sugiere un ajuste orientado a tareas de planificacion (posiblemente ligado a metodos de ruta critica o CPM), pero esta interpretacion no esta confirmada en ninguna documentacion publicada.
 
-La relevancia practica del artefacto es limitada en su estado actual: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como [More Information Needed], sin descripcion de datos de entrenamiento, hiperparametros, rango del adaptador ni evaluacion. El repositorio acumula cero descargas y cero likes, y la busqueda web no ha devuelto ninguna referencia tecnica util (los resultados obtenidos son ruido de agregadores de apellidos y tiendas, sin relacion con el modelo).
+La relevancia practica del artefacto es limitada en su estado actual: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como [More Information Needed], sin descripcion de datos de entrenamiento, hiperparametros, rango del adaptador ni evaluacion. El repositorio acumula cero descargas y cero likes, y la busqueda web no ha devuelto ninguna referencia tecnica util (los resultados obtenidos son ruido de agregadores de apellidos y tiendas, sin relacion con el modelo).
 
 En consecuencia, esta ficha describe con detalle el modelo base subyacente (Qwen2.5-3B-Instruct, del que si existe informacion publica fiable) y marca explicitamente como "no disponible" todo lo relativo al adaptador. Cualquier uso en produccion exigiria auditar primero los pesos y el proceso de ajuste, dado que se desconoce que datos se utilizaron y con que objetivo.
 
@@ -22,7 +22,7 @@ En consecuencia, esta ficha describe con detalle el modelo base subyacente (Qwen
 | Formato de pesos | safetensors (pesos del adaptador en formato PEFT/LoRA) |
 | Libreria de carga | peft (version declarada en la model card: PEFT 0.20.0); compatible con transformers |
 | Tarea declarada (pipeline) | text-generation |
-| Fecha de publicacion | 10 de septiembre de 2026, segun los metadatos de HuggingFace |
+| Fecha de publicacion | 10 de septiembre de 2026, segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -82,9 +82,9 @@ La comparacion se establece entre el modelo base de este repositorio y alternati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-3B-Instruct (base de este adaptador) | 3,09 B | 32.768 tokens (131.072 con YaRN) | Qwen Research License | Pesos abiertos en HuggingFace | Uso comercial sujeto a los terminos de la licencia de investigacion de Qwen |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Pesos abiertos en HuggingFace | Contexto mayor y ecosistema amplio; licencia con clausulas de uso aceptable |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Pesos abiertos en HuggingFace | Orientado a razonamiento y codigo; requiere aceptar condiciones en el repositorio |
+| Qwen2.5-3B-Instruct (base de este adaptador) | 3,09 B | 32.768 tokens (131.072 con YaRN) | Qwen Research License | Pesos abiertos en Hugging Face | Uso comercial sujeto a los terminos de la licencia de investigacion de Qwen |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Pesos abiertos en Hugging Face | Contexto mayor y ecosistema amplio; licencia con clausulas de uso aceptable |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Pesos abiertos en Hugging Face | Orientado a razonamiento y codigo; requiere aceptar condiciones en el repositorio |
 | Adaptador arkan-planning-cpm-lora | No disponible (adaptador LoRA) | No declarado | No disponible | 0 descargas, 0 likes | Sin model card, sin evaluacion, sin datos de entrenamiento |
 
 El rendimiento comparado en benchmarks no se incluye porque no hay cifras disponibles en la informacion proporcionada para ninguno de los elementos de esta tabla en el contexto de esta ficha.
@@ -104,11 +104,11 @@ El rendimiento comparado en benchmarks no se incluye porque no hay cifras dispon
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/psnuser061020/arkan-planning-cpm-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/psnuser061020/arkan-planning-cpm-lora
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Blog oficial de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5
-- Libreria PEFT de HuggingFace: https://github.com/huggingface/peft
+- Libreria PEFT de Hugging Face: https://github.com/huggingface/peft
 - Articulo original de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact

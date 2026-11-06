@@ -84,8 +84,8 @@ No se dispone de datos cuantitativos publicados para este checkpoint ni para alt
 
 | Modelo | Tipo | Entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| cellmap/mito-aff-resunet-setup-54 | ResUNet3DValid, afinidades de mitocondria | 1 canal, 300x300x300 voxeles a 16 nm | BSD-3-Clause | HuggingFace (PyTorch, TorchScript, ONNX) | Checkpoint exp_mito setup_54, 260000 iteraciones |
-| cellmap/onnx-web-models (setup_54) | Misma red exportada a ONNX | Igual que el anterior | no disponible en la informacion consultada | HuggingFace | Version orientada a ejecucion web del mismo experimento |
+| cellmap/mito-aff-resunet-setup-54 | ResUNet3DValid, afinidades de mitocondria | 1 canal, 300x300x300 voxeles a 16 nm | BSD-3-Clause | Hugging Face (PyTorch, TorchScript, ONNX) | Checkpoint exp_mito setup_54, 260000 iteraciones |
+| cellmap/onnx-web-models (setup_54) | Misma red exportada a ONNX | Igual que el anterior | no disponible en la informacion consultada | Hugging Face | Version orientada a ejecucion web del mismo experimento |
 | nnU-Net (framework) | Framework de segmentacion 3D auto-configurado | Depende del dataset | Apache-2.0 | Codigo abierto, sin pesos preentrenados de mitocondria | Requiere reentrenar sobre datos propios; no comparable en pesos |
 | Cellpose 3.0 | Segmentacion de celulas generalista | 2D y volumenes apilados | BSD-3-Clause (segun su repositorio) | Codigo abierto y pesos publicos | Orientado a microscopia optica y de fluorescencia; su aplicacion a FIB-SEM no esta garantizada |
 
@@ -99,15 +99,15 @@ La comparacion con alternativas genericas debe tomarse con cautela: sin metricas
 - Perdida de bordes por convoluciones validas: cada inferencia descarta 88 voxeles por eje. Sin solapamiento entre teselas se producen discontinuidades en las fronteras, lo que puede fragmentar o fusionar mitocondrias en el volumen completo.
 - Riesgo de falsos positivos y negativos: en regiones de bajo contraste, imagenes ruidosas o cortes defectuosos, las afinidades pueden ser erroneas. No existe una medida publicada de calibracion ni de incertidumbre.
 - Sesgo de dataset desconocido: no se documenta la composicion del conjunto de entrenamiento (especie, tejido, numero de volumenes, balance de clases), por lo que no se puede evaluar su generalizacion a preparaciones distintas de las usadas en exp_mito.
-- Modelo sin validacion externa publica: registra 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y no se han encontrado articulos, informes tecnicos ni evaluaciones independientes.
+- Modelo sin validacion externa publica: registra 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y no se han encontrado articulos, informes tecnicos ni evaluaciones independientes.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial y modificacion siempre que se conserve el aviso de copyright y la clausula de exencion de responsabilidad. No incluye concesion de patentes y se distribuye sin garantia alguna.
 - Requisito de preprocesado estricto: la normalizacion debe ser min_max con min = -1.0 y max = 1.0, y la sigmoide debe aplicarse fuera del modelo. Omitir cualquiera de los dos pasos produce salidas incorrectas.
 - Ausencia de datos de cuantizacion: no se documenta ninguna version en FP16, BF16 o INT8, por lo que reducir la precision en produccion queda bajo responsabilidad del integrador y debe validarse empiricamente.
-- Fechas de metadatos anomalas: los campos de creacion y actualizacion del repositorio en HuggingFace indican 2026-10-15, lo que conviene verificar antes de citar el modelo con una fecha concreta.
+- Fechas de metadatos anomalas: los campos de creacion y actualizacion del repositorio en Hugging Face indican 2026-10-15, lo que conviene verificar antes de citar el modelo con una fecha concreta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cellmap/mito-aff-resunet-setup-54
+- Modelo en Hugging Face: https://huggingface.co/cellmap/mito-aff-resunet-setup-54
 - Exportacion ONNX para web: https://huggingface.co/cellmap/onnx-web-models (subcarpeta setup_54)
 - Repositorio cellmap-models: https://github.com/janelia-cellmap/cellmap-models
 - Proyecto CellMap (Janelia Research Campus): https://www.janelia.org/project-team/cellmap

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tohirju/sl-caribou es un modelo publicado en HuggingFace por el usuario Tohirju, distribuido en formato safetensors y con un total de 241.734.912 parametros (aproximadamente 242 millones). El repositorio ocupa 1,0 GB, no registra descargas ni "likes" en el momento de la consulta y su acceso esta restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo. La etiqueta "whisper" asociada al repositorio apunta a que se trata de un modelo de la familia Whisper de OpenAI, es decir, un sistema de reconocimiento automatico del habla (ASR) basado en una arquitectura transformer encoder-decoder, aunque la documentacion disponible no confirma este extremo de forma explicita.
+Tohirju/sl-caribou es un modelo publicado en Hugging Face por el usuario Tohirju, distribuido en formato safetensors y con un total de 241.734.912 parametros (aproximadamente 242 millones). El repositorio ocupa 1,0 GB, no registra descargas ni "likes" en el momento de la consulta y su acceso esta restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo. La etiqueta "whisper" asociada al repositorio apunta a que se trata de un modelo de la familia Whisper de OpenAI, es decir, un sistema de reconocimiento automatico del habla (ASR) basado en una arquitectura transformer encoder-decoder, aunque la documentacion disponible no confirma este extremo de forma explicita.
 
 El prefijo "sl" en el nombre del modelo coincide con el codigo ISO 639-1 del esloveno, lo que sugiere un posible enfoque hacia ese idioma, si bien este dato no aparece confirmado en la informacion disponible y debe considerarse una hipotesis, no un hecho verificado. Tampoco se especifican los idiomas soportados oficialmente. El pipeline declarado esta como no disponible.
 
@@ -91,6 +91,6 @@ El rendimiento comparado no puede establecerse porque no hay resultados de evalu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tohirju/sl-caribou
+- Hugging Face: https://huggingface.co/Tohirju/sl-caribou
 
 No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los unicos resultados devueltos corresponden a programas academicos de ingenieria financiera de la Stevens Institute of Technology y no estan relacionados con este modelo.

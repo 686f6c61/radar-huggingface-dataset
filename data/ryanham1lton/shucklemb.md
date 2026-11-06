@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ShuckleMB es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC BY 4.0. En el momento de la consulta no incluye model card sustantiva: el README se limita a la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se ha declarado un pipeline tag, idiomas soportados ni resultados de evaluación.
+ShuckleMB es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC BY 4.0. En el momento de la consulta no incluye model card sustantiva: el README se limita a la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se ha declarado un pipeline tag, idiomas soportados ni resultados de evaluación.
 
 El repositorio ocupa aproximadamente 0,1 GB, un tamano compatible con un modelo pequeno en precision completa, un artefacto cuantizado agresivamente o un adaptador, pero la informacion disponible no permite determinar a que corresponde ese contenido. El modelo acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
 
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/ShuckleMB
+- Hugging Face: https://huggingface.co/Ryanham1lton/ShuckleMB
 - Model card: no disponible (el README del repositorio solo contiene la declaracion de licencia)
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos correspondian a paginas sin relacion con el (ayuda de inicio de sesion de Gmail y debates en Zhihu sobre redes WiFi y nutricion), por lo que se descartan como fuentes.

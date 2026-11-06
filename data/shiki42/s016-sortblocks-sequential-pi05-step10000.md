@@ -75,7 +75,7 @@ No se dispone de datos comparativos en la informacion proporcionada, y la busque
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| s016-sortblocks-sequential-pi05-step10000 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | no (pendiente) |
+| s016-sortblocks-sequential-pi05-step10000 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | no (pendiente) |
 | pi0.5 / PI0.5 (familia de referencia) | no disponible | no disponible | no disponible | no verificado en la informacion proporcionada | no disponible |
 | Otros checkpoints de la misma serie (10k / 20k) | no disponible | no disponible | no disponible | mencionados en la model card | no |
 
@@ -95,7 +95,7 @@ En la practica, el unico punto de comparacion fiable es interno: el propio autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/s016-sortblocks-sequential-pi05-step10000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/s016-sortblocks-sequential-pi05-step10000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-sortblocks-100ep-sequential (revision `3d8db515f856c4e6c2612569b43fb15eeaef3064`)
 - Libreria de ejecucion declarada: `openpi` (no se proporciona URL en la informacion disponible)
 - Paper, blog o repositorio adicional: no disponible

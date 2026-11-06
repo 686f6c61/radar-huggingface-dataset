@@ -94,7 +94,7 @@ Frente a todos ellos, este modelo carece de licencia declarada, de benchmarks, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-55000_57500_60000_62500_65000_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-55000_57500_60000_62500_65000_weightedavg_merge
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Método Linear / "model soups": https://arxiv.org/abs/2203.05482
 - Búsqueda web: no se han encontrado enlaces relevantes adicionales. Los resultados devueltos corresponden a páginas de ayuda de YouTube, sin relación con el modelo.

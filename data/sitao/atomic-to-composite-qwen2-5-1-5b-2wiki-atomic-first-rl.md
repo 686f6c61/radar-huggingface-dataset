@@ -72,10 +72,10 @@ No se han publicado en la informacion disponible resultados de benchmarks genera
 
 | Modelo | Parametros | Contexto | Composition (2Wiki) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| atomic-to-composite-qwen2.5-1.5b-2wiki-atomic-first-rl | 1,5B | no disponible | 88,6 | Apache 2.0 | HuggingFace |
-| atomic-to-composite-qwen2.5-1.5b-2wiki-composite-first-rl | 1,5B | no disponible | 68,8 | Apache 2.0 | HuggingFace |
-| atomic-to-composite-qwen2.5-1.5b-2wiki-sft-composite | 1,5B | no disponible | 71,4 | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B (base) | 1,5B | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| atomic-to-composite-qwen2.5-1.5b-2wiki-atomic-first-rl | 1,5B | no disponible | 88,6 | Apache 2.0 | Hugging Face |
+| atomic-to-composite-qwen2.5-1.5b-2wiki-composite-first-rl | 1,5B | no disponible | 68,8 | Apache 2.0 | Hugging Face |
+| atomic-to-composite-qwen2.5-1.5b-2wiki-sft-composite | 1,5B | no disponible | 71,4 | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B (base) | 1,5B | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo estudio, que son las unicas con resultados publicados en la informacion disponible. No se dispone de datos de benchmarks de modelos externos comparables en esta ficha.
 
@@ -92,7 +92,7 @@ La comparativa se limita a las variantes del mismo estudio, que son las unicas c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-atomic-first-rl
+- Hugging Face: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-atomic-first-rl
 - Modelo base (SFT): https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-sft-atomic
 - Variante composite-first: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-composite-first-rl
 - Variante SFT composite: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-sft-composite

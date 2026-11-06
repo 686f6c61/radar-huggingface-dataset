@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xlmr-ner-4labels-quyen`, publicado por el usuario NhanSoHocCode en HuggingFace, es un ajuste fino de XLM-RoBERTa orientado a reconocimiento de entidades nombradas (NER) con cuatro etiquetas. El identificador del repositorio y el nombre del autor sugieren un contexto educativo o de aprendizaje de código, y el sufijo "quyen" apunta a un posible ajuste sobre un corpus en vietnamita, aunque esta circunstancia no está confirmada en la información disponible.
+El modelo `xlmr-ner-4labels-quyen`, publicado por el usuario NhanSoHocCode en Hugging Face, es un ajuste fino de XLM-RoBERTa orientado a reconocimiento de entidades nombradas (NER) con cuatro etiquetas. El identificador del repositorio y el nombre del autor sugieren un contexto educativo o de aprendizaje de código, y el sufijo "quyen" apunta a un posible ajuste sobre un corpus en vietnamita, aunque esta circunstancia no está confirmada en la información disponible.
 
 Se trata de un encoder transformer de tipo XLM-RoBERTa con aproximadamente 277 millones de parámetros, distribuidos en pesos en formato safetensors. El tamaño del repositorio (15,6 GB) es notablemente superior al que correspondería a los pesos en precisión nativa, lo que sugiere la presencia de múltiples checkpoints o artefactos de entrenamiento adicionales en el mismo repositorio.
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en fp16: alrededor de 0,55 GB para pesos, más overhead.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; una RTX 3060, RTX 4060 o superior es suficiente. Para lotes grandes, A10G o A100 aportan mayor throughput.
 - Cabe en GPU de consumo: sí, en la mayoría de tarjetas modernas con 4 GB o más.
-- Opciones de despliegue: HuggingFace Transformers, vLLM (soporte limitado para encoders), TGI, ONNX Runtime, o exportación a TorchScript. llama.cpp y Ollama no están orientados a encoders de clasificación como este.
+- Opciones de despliegue: Hugging Face Transformers, vLLM (soporte limitado para encoders), TGI, ONNX Runtime, o exportación a TorchScript. llama.cpp y Ollama no están orientados a encoders de clasificación como este.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xlmr-ner-4labels-quyen | 277 M | no disponible | NER 4 etiquetas | no disponible | HuggingFace, 11 descargas |
-| xlm-roberta-base | 278 M | 512 tokens | Base multilingüe (sin ajuste NER) | MIT | HuggingFace, ampliamente usado |
-| xlm-roberta-large | 560 M | 512 tokens | Base multilingüe (sin ajuste NER) | MIT | HuggingFace, ampliamente usado |
-| bert-base-multilingual-cased | 178 M | 512 tokens | Base multilingüe | Apache 2.0 | HuggingFace, ampliamente usado |
+| xlmr-ner-4labels-quyen | 277 M | no disponible | NER 4 etiquetas | no disponible | Hugging Face, 11 descargas |
+| xlm-roberta-base | 278 M | 512 tokens | Base multilingüe (sin ajuste NER) | MIT | Hugging Face, ampliamente usado |
+| xlm-roberta-large | 560 M | 512 tokens | Base multilingüe (sin ajuste NER) | MIT | Hugging Face, ampliamente usado |
+| bert-base-multilingual-cased | 178 M | 512 tokens | Base multilingüe | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparación se limita a modelos base de la misma familia o categoría, ya que no se dispone de información sobre ajustes NER comparables con el mismo esquema de cuatro etiquetas. El modelo aquí descrito carece de licencia declarada, lo que lo sitúa en desventaja frente a las alternativas con licencias permisivas para uso comercial.
 
@@ -86,6 +86,6 @@ La comparación se limita a modelos base de la misma familia o categoría, ya qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NhanSoHocCode/xlmr-ner-4labels-quyen
+- Hugging Face: https://huggingface.co/NhanSoHocCode/xlmr-ner-4labels-quyen
 - XLM-RoBERTa (paper): https://arxiv.org/abs/1911.02116
-- XLM-RoBERTa base en HuggingFace: https://huggingface.co/xlm-roberta-base
+- XLM-RoBERTa base en Hugging Face: https://huggingface.co/xlm-roberta-base

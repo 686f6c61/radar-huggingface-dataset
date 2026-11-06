@@ -90,7 +90,7 @@ La comparación directa es limitada porque esta publicación es una compilación
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blaize-AI/YOLOPOSE26n_COCOKeypoint
+- Repositorio Hugging Face: https://huggingface.co/Blaize-AI/YOLOPOSE26n_COCOKeypoint
 - Modelo original (Ultralytics): https://www.github.com/ultralytics/ultralytics
 - Dataset COCO Keypoints: https://cocodataset.org
 - Sitio de Blaize: https://www.blaize.com

@@ -102,9 +102,9 @@ La comparacion se limita a la propia familia Gemma 4 porque la informacion dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eyes-dot-ml/gemma-4-12B-it
+- Modelo en Hugging Face: https://huggingface.co/eyes-dot-ml/gemma-4-12B-it
 - Modelo base: https://huggingface.co/google/gemma-4-12B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core

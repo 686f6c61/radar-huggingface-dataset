@@ -23,7 +23,7 @@ La relevancia actual del artefacto es de nicho: demuestra un flujo completo de c
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo base mas alla de su pertenencia a la familia Qwen3.8 y de la presencia de componentes diferenciados: un modulo de Vision para entrada de imagen y video, un modulo MTP (multi-token prediction) y una cabeza de propuesta optimizada para decodificacion especulativa. El artefacto pesa 26.268.462.848 bytes (26,27 GB / 24,46 GiB) y su identidad de motor es `qwen3.8-27b-orcarouter/nvfp4`. Al tratarse de una conversion cuantizada, el pipeline declarado en HuggingFace es `image-text-to-text`, lo que confirma la capacidad multimodal texto-imagen.
+La model card no describe la arquitectura interna del modelo base mas alla de su pertenencia a la familia Qwen3.8 y de la presencia de componentes diferenciados: un modulo de Vision para entrada de imagen y video, un modulo MTP (multi-token prediction) y una cabeza de propuesta optimizada para decodificacion especulativa. El artefacto pesa 26.268.462.848 bytes (26,27 GB / 24,46 GiB) y su identidad de motor es `qwen3.8-27b-orcarouter/nvfp4`. Al tratarse de una conversion cuantizada, el pipeline declarado en Hugging Face es `image-text-to-text`, lo que confirma la capacidad multimodal texto-imagen.
 
 En cuanto al entrenamiento, la informacion disponible solo indica que OrcaRouter produjo el modelo abliterado y sus pesos mixtos NVFP4/FP8, y que este release se limita a empaquetar esos pesos para NInfer conservando los embeddings y la cabeza de salida en BF16. No se dispone de datos sobre numero de tokens de entrenamiento, composicion del dataset, ni sobre si hubo RLHF o DPO en el modelo original. La innovacion tecnica destacable de este artefacto es la integracion de dos rutas de decodificacion especulativa (MTP con `--draft-tokens 5` y DFlash2 con `--draft-tokens 7`) sobre pesos de 4 y 8 bits, con verificacion de los tokens propuestos por parte del modelo objetivo.
 
@@ -103,7 +103,7 @@ Otros modelos comparables de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igorls/Qwen3.8-27B-Uncensored-NVFP4-NInfer
+- Modelo en Hugging Face: https://huggingface.co/igorls/Qwen3.8-27B-Uncensored-NVFP4-NInfer
 - Checkpoint fuente abliterado: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-NVFP4
 - Companero de decodificacion especulativa: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Fork NInfer utilizado (revision fijada): https://github.com/igorls/ninfer/tree/91ce2f2c73c27ffbff3bd7c43a319f295e9597cc

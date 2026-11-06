@@ -4,9 +4,9 @@
 
 AMD Qwen3-1.7B_rai_1.9.0_npu es una distribución del modelo Qwen3-1.7B de Alibaba Qwen, publicada por AMD y optimizada para ejecutarse en las NPU (unidades de procesamiento neuronal) de los procesadores AMD Ryzen AI mediante el runtime Ryzen AI 1.9.0. El modelo se distribuye en formato ONNX y utiliza el toolkit Quark de AMD para la cuantización y el empaquetado de los pesos, de modo que la inferencia se delega a la NPU integrada en lugar de a la CPU o a una GPU discreta.
 
-El modelo subyacente, Qwen3-1.7B, es un transformer denso de 1.700 millones de parámetros con capacidades de generación de texto, razonamiento y conversación. Esta variante concreta está pensada para escenarios de IA en el borde (edge AI) sobre portátiles y mini-PC con Ryzen AI, donde el consumo energético y la disponibilidad de la NPU son factores críticos. La ficha de HuggingFace declara únicamente el idioma inglés y una licencia Apache 2.0.
+El modelo subyacente, Qwen3-1.7B, es un transformer denso de 1.700 millones de parámetros con capacidades de generación de texto, razonamiento y conversación. Esta variante concreta está pensada para escenarios de IA en el borde (edge AI) sobre portátiles y mini-PC con Ryzen AI, donde el consumo energético y la disponibilidad de la NPU son factores críticos. La ficha de Hugging Face declara únicamente el idioma inglés y una licencia Apache 2.0.
 
-La relevancia de esta publicación radica en que ejemplifica el patrón de despliegue de LLMs en hardware de PC con aceleración NPU, un segmento en crecimiento para asistentes locales, resumen de documentos y automatización de escritorio sin depender de la nube. El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+La relevancia de esta publicación radica en que ejemplifica el patrón de despliegue de LLMs en hardware de PC con aceleración NPU, un segmento en crecimiento para asistentes locales, resumen de documentos y automatización de escritorio sin depender de la nube. El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / destino | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AMD Qwen3-1.7B_rai_1.9.0_npu | 1,7 B | no disponible | ONNX para NPU Ryzen AI | Apache 2.0 | Gated en HuggingFace |
+| AMD Qwen3-1.7B_rai_1.9.0_npu | 1,7 B | no disponible | ONNX para NPU Ryzen AI | Apache 2.0 | Gated en Hugging Face |
 | Qwen3-1.7B (original) | 1,7 B | no disponible | Safetensors / GGUF | Apache 2.0 | Publico |
 | Llama 3.2 1B | 1,2 B | no disponible | Safetensors / GGUF | Llama 3.2 Community License | Publico (con aceptacion) |
 | Gemma 3 1B | 1 B | no disponible | Safetensors / GGUF | Gemma Terms of Use | Publico (con aceptacion) |
@@ -72,7 +72,7 @@ La comparativa se limita a parámetros y licencia porque la información proporc
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 - Idioma declarado únicamente inglés; el rendimiento en castellano no está garantizado ni documentado.
 - Modelo de 1,7 B: mayor riesgo de alucinación y menor calidad en razonamiento complejo, matemáticas avanzadas y código de producción que modelos de mayor tamaño.
 - La cuantización para NPU puede introducir pérdida de precisión respecto al modelo original; no se documenta el esquema exacto.
@@ -83,7 +83,7 @@ La comparativa se limita a parámetros y licencia porque la información proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen3-1.7B_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Qwen3-1.7B_rai_1.9.0_npu
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B (referencia del modelo original)
 - Ryzen AI (AMD): https://www.amd.com/en/products/software/ryzen-ai.html
 - Quark (AMD): https://quark.amd.com/

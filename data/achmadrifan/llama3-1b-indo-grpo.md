@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama3-1b-indo-GRPO es un ajuste fino (finetune) del modelo achmadrifan/llama3-1b-indo-finetuned, publicado por el usuario achmadrifan en HuggingFace. Se trata de un modelo de generación de texto de arquitectura Llama con 1.235.814.400 parámetros totales, lo que lo sitúa en la franja de los 1.200 millones de parámetros (etiquetado comercialmente como "1B"). El sufijo GRPO hace referencia a Group Relative Policy Optimization, una técnica de aprendizaje por refuerzo, si bien la model card no detalla el pipeline de entrenamiento más allá del uso de Unsloth y la librería TRL de HuggingFace.
+Llama3-1b-indo-GRPO es un ajuste fino (finetune) del modelo achmadrifan/llama3-1b-indo-finetuned, publicado por el usuario achmadrifan en Hugging Face. Se trata de un modelo de generación de texto de arquitectura Llama con 1.235.814.400 parámetros totales, lo que lo sitúa en la franja de los 1.200 millones de parámetros (etiquetado comercialmente como "1B"). El sufijo GRPO hace referencia a Group Relative Policy Optimization, una técnica de aprendizaje por refuerzo, si bien la model card no detalla el pipeline de entrenamiento más allá del uso de Unsloth y la librería TRL de Hugging Face.
 
 El modelo se presenta como un ajuste conversacional derivado de un finetune previo del mismo autor. Aunque el nombre incluye "indo" (indonesio), la metadata oficial declara únicamente el idioma inglés (en) en las etiquetas de idioma, lo que supone una discrepancia relevante de cara a su evaluación para producción.
 
@@ -25,13 +25,13 @@ Su relevancia es limitada y de nicho: se trata de un experimento de ajuste con t
 
 El modelo emplea una arquitectura transformer densa de tipo decoder-only basada en la familia Llama, con 1.235.814.400 parámetros. Hereda la estructura de su modelo base, achmadrifan/llama3-1b-indo-finetuned. No se dispone de información sobre el número de capas, la dimensión oculta, el número de cabezas de atención ni la longitud de contexto en la documentación proporcionada.
 
-En cuanto al entrenamiento, la model card indica únicamente que el modelo fue entrenado con Unsloth y la librería TRL de HuggingFace, y que el proceso fue "2x faster" (el doble de rápido). No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO. El sufijo GRPO del nombre apunta a un ajuste mediante Group Relative Policy Optimization, pero este extremo no está confirmado de forma explícita en la información disponible. Tampoco se detalla ninguna innovación técnica adicional (atención lineal, decodificación especulativa, etc.).
+En cuanto al entrenamiento, la model card indica únicamente que el modelo fue entrenado con Unsloth y la librería TRL de Hugging Face, y que el proceso fue "2x faster" (el doble de rápido). No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO. El sufijo GRPO del nombre apunta a un ajuste mediante Group Relative Policy Optimization, pero este extremo no está confirmado de forma explícita en la información disponible. Tampoco se detalla ninguna innovación técnica adicional (atención lineal, decodificación especulativa, etc.).
 
 ## Capacidades
 
 - Generación de texto en formato conversacional (pipeline text-generation, etiqueta "conversational").
 - Ajuste orientado a respuestas de tipo instrucción, derivado de un finetune previo.
-- Compatibilidad con endpoints de HuggingFace (etiqueta endpoints_compatible) y con text-generation-inference (TGI).
+- Compatibilidad con endpoints de Hugging Face (etiqueta endpoints_compatible) y con text-generation-inference (TGI).
 - Idiomas: la metadata declara únicamente inglés; el nombre del modelo sugiere capacidad en indonesio, pero no está confirmado en la documentación.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| achmadrifan/llama3-1b-indo-GRPO | 1,24 B | no disponible | apache-2.0 | safetensors en HuggingFace |
-| achmadrifan/llama3-1b-indo-finetuned (base) | no disponible | no disponible | no disponible | HuggingFace |
-| mradermacher/Llama-3.1-8B-Alpaca-Indo-GRPO-GGUF | 8 B | no disponible | no disponible | GGUF en HuggingFace |
+| achmadrifan/llama3-1b-indo-GRPO | 1,24 B | no disponible | apache-2.0 | safetensors en Hugging Face |
+| achmadrifan/llama3-1b-indo-finetuned (base) | no disponible | no disponible | no disponible | Hugging Face |
+| mradermacher/Llama-3.1-8B-Alpaca-Indo-GRPO-GGUF | 8 B | no disponible | no disponible | GGUF en Hugging Face |
 | Meta Llama 3 (familia, mayor variante) | 405 B | hasta 128K tokens | licencia Llama 3 | pesos abiertos, despliegue flexible |
 
 Los modelos comparables directos de 1B en la misma categoría no están documentados en la información disponible. La comparación con la variante de 8 B del mismo autor resulta útil como referencia de escala, pero no es equivalente en tamaño ni en rendimiento.
@@ -83,10 +83,10 @@ Los modelos comparables directos de 1B en la misma categoría no están document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/achmadrifan/llama3-1b-indo-GRPO
+- Modelo en Hugging Face: https://huggingface.co/achmadrifan/llama3-1b-indo-GRPO
 - Modelo base: achmadrifan/llama3-1b-indo-finetuned (referenciado en la model card, sin URL directa confirmada)
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace (citada): https://github.com/huggingface/trl
+- Librería TRL de Hugging Face (citada): https://github.com/huggingface/trl
 - Variante relacionada de 8 B con GRPO (GGUF): https://huggingface.co/mradermacher/Llama-3.1-8B-Alpaca-Indo-GRPO-GGUF
 - Llama 3 (página oficial de Meta): https://dev.meta.ai/llama/models/llama-3
 - Paper "The Llama 3 Herd of Models": https://arxiv.org/abs/2407.21783

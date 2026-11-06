@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| baselabs/elephant-1 | 9,4 B | no disponible | Probabilidad por opción (modelo de decisión) | MIT según model card, etiqueta `other` en el repo | HuggingFace, 21 descargas, 14 likes |
-| Qwen/Qwen3.5-9B (modelo base) | aproximadamente 9 B | no disponible en la informacion proporcionada | Texto generativo | no disponible en la informacion proporcionada | HuggingFace |
+| baselabs/elephant-1 | 9,4 B | no disponible | Probabilidad por opción (modelo de decisión) | MIT según model card, etiqueta `other` en el repo | Hugging Face, 21 descargas, 14 likes |
+| Qwen/Qwen3.5-9B (modelo base) | aproximadamente 9 B | no disponible en la informacion proporcionada | Texto generativo | no disponible en la informacion proporcionada | Hugging Face |
 | Otros modelos de decisión o clasificación de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada otros modelos de decisión tipados directamente comparables; la comparación más fiable es contra el propio modelo base, del que elephant-1 hereda la arquitectura y el conocimiento lingüístico pero cuya interfaz de salida sustituye por completo.
@@ -85,7 +85,7 @@ No se han identificado en la información proporcionada otros modelos de decisi�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baselabs/elephant-1
+- Modelo en Hugging Face: https://huggingface.co/baselabs/elephant-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada
 - Nota: los resultados de la búsqueda web realizada no contienen enlaces relevantes sobre este modelo (versan sobre ChatGPT y no guardan relación con elephant-1).

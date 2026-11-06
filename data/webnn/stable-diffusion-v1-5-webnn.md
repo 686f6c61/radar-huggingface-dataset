@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| webnn/stable-diffusion-v1.5-webnn | no disponible (~860M UNet) | 512x512, 77 tokens CLIP | ONNX (WebNN) | CreativeML OpenRAIL-M | HuggingFace |
-| runwayml/stable-diffusion-v1-5 | ~860M UNet | 512x512, 77 tokens CLIP | safetensors / ckpt | CreativeML OpenRAIL-M | HuggingFace |
-| stabilityai/stable-diffusion-2-1 | ~865M UNet | 768x768, 77 tokens CLIP | safetensors | CreativeML OpenRAIL++-M | HuggingFace |
-| stabilityai/sdxl-turbo | ~2.6B UNet | 512x512, 77 tokens CLIP | safetensors | CreativeML OpenRAIL++-M | HuggingFace |
+| webnn/stable-diffusion-v1.5-webnn | no disponible (~860M UNet) | 512x512, 77 tokens CLIP | ONNX (WebNN) | CreativeML OpenRAIL-M | Hugging Face |
+| runwayml/stable-diffusion-v1-5 | ~860M UNet | 512x512, 77 tokens CLIP | safetensors / ckpt | CreativeML OpenRAIL-M | Hugging Face |
+| stabilityai/stable-diffusion-2-1 | ~865M UNet | 768x768, 77 tokens CLIP | safetensors | CreativeML OpenRAIL++-M | Hugging Face |
+| stabilityai/sdxl-turbo | ~2.6B UNet | 512x512, 77 tokens CLIP | safetensors | CreativeML OpenRAIL++-M | Hugging Face |
 
 La comparativa se limita a modelos de la misma familia (difusión latente texto-a-imagen). La variante WebNN se distingue por su formato ONNX con formas estáticas y su orientación a ejecución en navegador, mientras que las alternativas están pensadas para inferencia en servidor con PyTorch/Diffusers.
 
@@ -84,7 +84,7 @@ La comparativa se limita a modelos de la misma familia (difusión latente texto-
 
 ## Enlaces
 
-- [HuggingFace: webnn/stable-diffusion-v1.5-webnn](https://huggingface.co/webnn/stable-diffusion-v1.5-webnn)
+- [Hugging Face: webnn/stable-diffusion-v1.5-webnn](https://huggingface.co/webnn/stable-diffusion-v1.5-webnn)
 - [Modelo base: runwayml/stable-diffusion-v1-5](https://huggingface.co/runwayml/stable-diffusion-v1-5)
 - [Licencia CreativeML OpenRAIL-M](https://huggingface.co/spaces/CompVis/stable-diffusion-license)
 - [Paper: High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752)
@@ -94,5 +94,5 @@ La comparativa se limita a modelos de la misma familia (difusión latente texto-
 - [Paper: Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/1910.09700)
 - [Repositorio CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion)
 - [Repositorio RunwayML/stable-diffusion](https://github.com/runwayml/stable-diffusion)
-- [Blog de HuggingFace sobre Stable Diffusion](https://huggingface.co/blog/stable_diffusion)
+- [Blog de Hugging Face sobre Stable Diffusion](https://huggingface.co/blog/stable_diffusion)
 - [Documentación de Diffusers](https://github.com/huggingface/diffusers#text-to-image-generation-with-stable-diffusion)

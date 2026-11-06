@@ -2,7 +2,7 @@
 
 ## Resumen
 
-v0.5-robotwin es un world-action model desarrollado por Verne Robotics, orientado a robótica de manipulación. El modelo combina la predicción del estado futuro del entorno (world model) con la generación de acciones motrices (action model), lo que permite a un agente robótico planificar y ejecutar tareas de manipulación condicionadas por observaciones visuales. Se distribuye bajo el pipeline `robotics` de HuggingFace y está entrenado específicamente sobre el benchmark RoboTwin, un conjunto de tareas de manipulación bimanual en simulación.
+v0.5-robotwin es un world-action model desarrollado por Verne Robotics, orientado a robótica de manipulación. El modelo combina la predicción del estado futuro del entorno (world model) con la generación de acciones motrices (action model), lo que permite a un agente robótico planificar y ejecutar tareas de manipulación condicionadas por observaciones visuales. Se distribuye bajo el pipeline `robotics` de Hugging Face y está entrenado específicamente sobre el benchmark RoboTwin, un conjunto de tareas de manipulación bimanual en simulación.
 
 La arquitectura emplea flow matching, una técnica de modelado generativo que aprende un campo de velocidades entre distribuciones de estados y acciones, en lugar de la difusión clásica. Con 8.216.402.458 parámetros (unos 8,2 mil millones) y un repositorio de 16,4 GB en formato safetensors, el modelo se sitúa en la gama media-alta de los modelos robóticos actuales. Los tags indican soporte únicamente para inglés y una licencia propietaria (`verne-v0.5-model-license`) con acceso restringido (gated), lo que condiciona su uso comercial.
 
@@ -68,15 +68,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| v0.5-robotwin | ~8,2 B | no disponible | World-action model, flow matching | Propietaria (verne-v0.5-model-license), gated | HuggingFace (acceso restringido) |
-| Modelos VLA tipo OpenVLA | ~7 B | no aplica (contexto visual-acción) | Transformer VLA (política pura) | Abierta (según variante) | HuggingFace |
+| v0.5-robotwin | ~8,2 B | no disponible | World-action model, flow matching | Propietaria (verne-v0.5-model-license), gated | Hugging Face (acceso restringido) |
+| Modelos VLA tipo OpenVLA | ~7 B | no aplica (contexto visual-acción) | Transformer VLA (política pura) | Abierta (según variante) | Hugging Face |
 | Modelos de difusión para políticas (p. ej. Diffusion Policy) | Variable (decenas de M a B) | no aplica | Difusión sobre acciones | Abierta | Repositorios de investigación |
 
 La comparación cuantitativa de rendimiento no es posible porque no se han publicado benchmarks del modelo. Frente a los VLA clásicos, la diferencia principal es la inclusión explícita de un world model y el uso de flow matching en lugar de difusión o predicción directa de acciones.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y el uso inmediato.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y el uso inmediato.
 - Licencia propietaria (`verne-v0.5-model-license`): es necesario revisar los términos antes de cualquier uso comercial; no se garantiza permiso de explotación comercial.
 - Entrenamiento centrado en RoboTwin: el modelo está especializado en tareas de manipulación simuladas de ese benchmark; su generalización a otros entornos o a hardware real no está documentada.
 - Idioma: solo se declara inglés, lo que puede afectar a instrucciones en castellano u otros idiomas.
@@ -87,5 +87,5 @@ La comparación cuantitativa de rendimiento no es posible porque no se han publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vernerobotics/v0.5-robotwin
+- Hugging Face: https://huggingface.co/vernerobotics/v0.5-robotwin
 - No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repositorios o demos) asociados al modelo.

@@ -81,7 +81,7 @@ La comparación relevante no es de rendimiento —no hay datos— sino de trazab
 ## Limitaciones y advertencias
 
 - Licencia no declarada: al no especificarse licencia, no hay autorización explícita de uso comercial, modificación ni redistribución. En la práctica, la ausencia de licencia equivale a reserva de todos los derechos por parte del titular, lo que desaconseja su uso en producción.
-- Procedencia opaca: los modelos fusionados se identifican mediante rutas locales (`/opt/tiger/...`), no mediante identificadores de HuggingFace. No se conoce el modelo base real, ni su tokenizador, ni su dataset, lo que impide auditar la cadena de entrenamiento.
+- Procedencia opaca: los modelos fusionados se identifican mediante rutas locales (`/opt/tiger/...`), no mediante identificadores de Hugging Face. No se conoce el modelo base real, ni su tokenizador, ni su dataset, lo que impide auditar la cadena de entrenamiento.
 - Riesgo de alucinación: no evaluado. Al no haber benchmarks ni pruebas de veracidad, se debe asumir una tasa de alucinación desconocida y potencialmente alta, habitual en modelos de ~7 B sin ajuste de instrucciones documentado.
 - Sesgos: no evaluados. Los sesgos heredados del modelo base y, en su caso, del ajuste de personaje son desconocidos; no hay ninguna declaración de mitigación.
 - Contexto e idiomas sin especificar: se desconoce la ventana máxima soportada y si el modelo funciona correctamente en castellano. No se debe asumir un rendimiento multilingüe.
@@ -93,7 +93,7 @@ La comparación relevante no es de rendimiento —no hay datos— sino de trazab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-7k_8k_9k_10k_11k_weightedavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-7k_8k_9k_10k_11k_weightedavg_merge
 - mergekit (herramienta utilizada para la fusión): https://github.com/cg123/mergekit
 - Método Linear de mergekit, basado en el paper de *model soups*: https://arxiv.org/abs/2203.05482
 - Documentación de TGI (compatible según los tags del repositorio): https://github.com/huggingface/text-generation-inference

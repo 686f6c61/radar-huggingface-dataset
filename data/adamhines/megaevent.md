@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MegaEvent es un sistema de reconocimiento visual de lugares (visual place recognition, VPR) basado en camaras de eventos, disenado para localizacion de robots con invariancia a punto de vista y rotacion. Lo desarrolla AdamHines y se distribuye bajo licencia MIT. El repositorio de HuggingFace contiene los pesos entrenados del sistema descrito en el articulo "Multi-viewpoint Geo-localization with Event Cameras" (arXiv:2609.21219).
+MegaEvent es un sistema de reconocimiento visual de lugares (visual place recognition, VPR) basado en camaras de eventos, disenado para localizacion de robots con invariancia a punto de vista y rotacion. Lo desarrolla AdamHines y se distribuye bajo licencia MIT. El repositorio de Hugging Face contiene los pesos entrenados del sistema descrito en el articulo "Multi-viewpoint Geo-localization with Event Cameras" (arXiv:2609.21219).
 
 El modelo aborda un problema especifico de la robotica y la vision por computador: estimar la posicion de un robot a partir de flujos de camaras de eventos, que capturan cambios de luminosidad de forma asincrona en lugar de fotogramas RGB convencionales. Esto resulta especialmente util en escenarios de alta dinamica, baja latencia o condiciones de iluminacion adversas, donde las camaras tradicionales rinden peor.
 
-La ficha se basa exclusivamente en la informacion disponible en HuggingFace y en la model card. No se han publicado en esa informacion detalles sobre arquitectura interna, numero de parametros, longitud de contexto ni resultados de benchmarks, por lo que esos campos se marcan como "no disponible". El pipeline declarado es `image-feature-extraction` y el tamano del repositorio es de 6,2 GB.
+La ficha se basa exclusivamente en la informacion disponible en Hugging Face y en la model card. No se han publicado en esa informacion detalles sobre arquitectura interna, numero de parametros, longitud de contexto ni resultados de benchmarks, por lo que esos campos se marcan como "no disponible". El pipeline declarado es `image-feature-extraction` y el tamano del repositorio es de 6,2 GB.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La ficha se basa exclusivamente en la informacion disponible en HuggingFace y en
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo (si es un transformer, una CNN, un modelo hibrido o una combinacion con modulos especificos para eventos). El pipeline declarado en HuggingFace es `image-feature-extraction`, lo que indica que el modelo produce representaciones o embeddings de imagen utilizables para tareas de recuperacion y comparacion, en linea con su uso en VPR.
+La informacion disponible no detalla la arquitectura interna del modelo (si es un transformer, una CNN, un modelo hibrido o una combinacion con modulos especificos para eventos). El pipeline declarado en Hugging Face es `image-feature-extraction`, lo que indica que el modelo produce representaciones o embeddings de imagen utilizables para tareas de recuperacion y comparacion, en linea con su uso en VPR.
 
 Tampoco se especifican el volumen de datos de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF o DPO. La model card unicamente indica que se trata de un sistema de reconocimiento visual de lugares basado en eventos, invariante a punto de vista y rotacion, y remite al articulo arXiv:2609.21219 y al repositorio de GitHub para obtener detalles tecnicos. Cualquier afirmacion sobre innovaciones concretas (atencion lineal, decodificacion especulativa, agregacion de descriptores, etc.) requeriria consultar el paper, que no forma parte de la informacion proporcionada.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MegaEvent (AdamHines/megaevent) | no disponible | no disponible | no disponible | MIT | HuggingFace y GitHub |
+| MegaEvent (AdamHines/megaevent) | no disponible | no disponible | no disponible | MIT | Hugging Face y GitHub |
 | Alternativas de VPR basadas en eventos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -82,6 +82,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdamHines/megaevent
+- Modelo en Hugging Face: https://huggingface.co/AdamHines/megaevent
 - Articulo (paper): https://huggingface.co/papers/2609.21219
 - Codigo fuente en GitHub: https://github.com/AdamDHines/megaevent

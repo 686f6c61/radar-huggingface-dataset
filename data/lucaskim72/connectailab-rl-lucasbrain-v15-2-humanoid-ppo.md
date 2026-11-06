@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks frente a otros algoritmos (SAC, TD3
 - Cabe en cualquier GPU de consumo e incluso en CPU: la inferencia por paso es una multiplicación de matrices pequeña. Para entrenamiento desde cero conviene GPU, pero para evaluar el checkpoint la CPU es viable.
 - Opciones de despliegue: carga directa con `torch.load` sobre `model.pt`; no hay versiones GGUF, ONNX ni integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de artefacto. El script `added_scores.py` se descarga con `huggingface_hub.hf_hub_download`.
 - Latencia y throughput: no disponibles de forma explícita. Dado el tamaño de la red, la latencia por paso está dominada por `env.step()` de MuJoCo; con `mujoco` o `gymnasium` en modo headless se pueden alcanzar miles de pasos por segundo en CPU para la política.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace, es decir, unos pocos MB.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face, es decir, unos pocos MB.
 
 ## Comparativa con modelos similares
 
@@ -100,7 +100,7 @@ Frente a alternativas de la misma categoría (SAC, TD3, A2C sobre `Humanoid-v5`)
 ## Limitaciones y advertencias
 
 - Especialización total: la política solo es válida para `Humanoid-v5` con su espacio de observación (348 dimensiones) y acción (17 articulaciones). No es transferible a otros robots, morfologías ni entornos sin reentrenamiento.
-- Licencia no especificada: no se indica licencia en la model card ni en los metadatos de HuggingFace. Sin una licencia explícita, el uso comercial queda en un limbo legal; conviene contactar con el autor antes de integrarlo en un producto.
+- Licencia no especificada: no se indica licencia en la model card ni en los metadatos de Hugging Face. Sin una licencia explícita, el uso comercial queda en un limbo legal; conviene contactar con el autor antes de integrarlo en un producto.
 - Sin datos de sesgo ni de robustez fuera de distribución: no se documenta el comportamiento ante perturbaciones (empujes, cambios de masa, fricción variable) ni ante condiciones distintas de las semillas de validación.
 - Riesgo de sobreajuste a las semillas de evaluación: las 10 semillas de validación (9000-9009) son fijas y conocidas, por lo que la puntuación de 6.926,0 puede no reflejar el rendimiento en semillas no vistas. No se reporta un conjunto de test independiente.
 - Reward shaping no estándar: el entrenamiento incluye una puntuación de postura añadida (torso 0.4, brazos 0.2, pies 0.0) que no forma parte del reward oficial de `Humanoid-v5`. Las puntuaciones reportadas son del entorno, pero el comportamiento aprendido está moldeado por ese término extra, lo que puede introducir un sesgo postural respecto a políticas entrenadas solo con el reward nativo.
@@ -111,7 +111,7 @@ Frente a alternativas de la misma categoría (SAC, TD3, A2C sobre `Humanoid-v5`)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.2-humanoid-ppo
+- Modelo en Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.2-humanoid-ppo
 - Script de puntuación añadida: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.2-humanoid-ppo/blob/main/added_scores.py
 - Entorno `Humanoid-v5` (Gymnasium): https://gymnasium.farama.org/environments/mujoco/humanoid/
 - MuJoCo: https://mujoco.org/

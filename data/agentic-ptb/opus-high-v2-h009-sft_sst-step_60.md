@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v2.h009.sft_sst.step_60
+- Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v2.h009.sft_sst.step_60
 - Run record: https://huggingface.co/agentic-ptb/opus-high-v2-record
 - Index del proyecto: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

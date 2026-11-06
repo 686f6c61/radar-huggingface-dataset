@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Buffaloneurolab/cs229-multitask es un repositorio de investigación publicado en HuggingFace por el usuario Buffaloneurolab (Pavel Lebedev) que contiene una implementación propia y de escala reducida de MoCo v3 (Momentum Contrast v3) orientada a aprendizaje multitarea. No se distribuye como un modelo entrenado, sino como un andamiaje reproducible: incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), los hiperparámetros por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido para pruebas de humo. El propio autor indica explícitamente que no reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+Buffaloneurolab/cs229-multitask es un repositorio de investigación publicado en Hugging Face por el usuario Buffaloneurolab (Pavel Lebedev) que contiene una implementación propia y de escala reducida de MoCo v3 (Momentum Contrast v3) orientada a aprendizaje multitarea. No se distribuye como un modelo entrenado, sino como un andamiaje reproducible: incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), los hiperparámetros por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido para pruebas de humo. El propio autor indica explícitamente que no reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 El tamaño del modelo es muy reducido: los metadatos de safetensors reportan 33.088 parámetros totales, y el repositorio ocupa 0,0 GB. La arquitectura declarada combina atención estándar con fusión por compuertas (gated fusion), activación gelu-tanh y normalización scalenorm, una configuración poco habitual que sugiere un experimento académico más que un artefacto de producción.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Buffaloneurolab/cs229-multitask | 33.088 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace (checkpoint de inicialización) |
-| Bosrodriguez/cs229-multitask | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Buffaloneurolab/cs229-multitask | 33.088 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face (checkpoint de inicialización) |
+| Bosrodriguez/cs229-multitask | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | MoCo v3 (implementación de referencia, He et al., 2020) | según backbone (ResNet/ViT) | no aplica | resultados publicados en visión | según implementación | código abierto de referencia |
 
 No se dispone de modelos comparables entrenados con métricas públicas dentro de la información proporcionada. MoCo v3 original se incluye únicamente como referencia arquitectónica, no como artefacto equivalente en tamaño o tarea.
@@ -89,7 +89,7 @@ No se dispone de modelos comparables entrenados con métricas públicas dentro d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Buffaloneurolab/cs229-multitask
+- Modelo en Hugging Face: https://huggingface.co/Buffaloneurolab/cs229-multitask
 - Perfil del autor: https://huggingface.co/Buffaloneurolab
 - Repositorio relacionado con el mismo nombre: https://huggingface.co/Bosrodriguez/cs229-multitask
 - Curso Stanford CS229: Machine Learning: https://cs229.stanford.edu/index.html

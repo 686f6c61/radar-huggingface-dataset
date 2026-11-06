@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX.3-Image-Klein-mlx-4bit es una conversión a 4 bits y formato MLX de los pesos del modelo de generación de imágenes FLUX 3 Image Klein desarrollado por Black Forest Labs. La publicación corre a cargo del usuario vanch007 y se distribuye a través de HuggingFace bajo la librería mflux, una herramienta de inferencia pensada específicamente para Apple Silicon. El objetivo del repositorio es permitir ejecutar localmente en Macs con chip de la serie M un modelo de generación y edición de imágenes que, sin cuantizar, requeriría muchos más recursos de memoria unificada.
+FLUX.3-Image-Klein-mlx-4bit es una conversión a 4 bits y formato MLX de los pesos del modelo de generación de imágenes FLUX 3 Image Klein desarrollado por Black Forest Labs. La publicación corre a cargo del usuario vanch007 y se distribuye a través de Hugging Face bajo la librería mflux, una herramienta de inferencia pensada específicamente para Apple Silicon. El objetivo del repositorio es permitir ejecutar localmente en Macs con chip de la serie M un modelo de generación y edición de imágenes que, sin cuantizar, requeriría muchos más recursos de memoria unificada.
 
 El modelo pertenece a la categoría text-to-image y también declara capacidades de edición de imágenes, según las etiquetas del repositorio (image-generation, image-editing, text-to-image). No se especifican en la información disponible el número de parámetros, la arquitectura interna, la longitud de contexto de condicionamiento textual ni los datos de entrenamiento, ya que el autor únicamente publica los pesos cuantizados y no una descripción técnica detallada.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vanch007/FLUX.3-Image-Klein-mlx-4bit | no disponible | no disponible | MLX, 4 bits, safetensors | flux-kommunity-license | HuggingFace |
+| vanch007/FLUX.3-Image-Klein-mlx-4bit | no disponible | no disponible | MLX, 4 bits, safetensors | flux-kommunity-license | Hugging Face |
 | FLUX 3 Image Klein (original, Black Forest Labs) | no disponible | no disponible | pesos originales (no confirmado) | flux-kommunity-license | no disponible en la informacion consultada |
 | Otras cuantizaciones MLX de la familia FLUX | no disponible | no disponible | MLX, distintas precisiones | variable | no disponible |
 
@@ -82,6 +82,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable con 
 
 ## Enlaces
 
-- [vanch007/FLUX.3-Image-Klein-mlx-4bit en HuggingFace](https://huggingface.co/vanch007/FLUX.3-Image-Klein-mlx-4bit)
+- [vanch007/FLUX.3-Image-Klein-mlx-4bit en Hugging Face](https://huggingface.co/vanch007/FLUX.3-Image-Klein-mlx-4bit)
 - [Archivo de licencia (LICENSE.md)](https://huggingface.co/vanch007/FLUX.3-Image-Klein-mlx-4bit/blob/main/LICENSE.md)
 - No se han encontrado en la busqueda web otros enlaces (papers, blogs, repositorios o demos) asociados a este modelo en la informacion disponible.

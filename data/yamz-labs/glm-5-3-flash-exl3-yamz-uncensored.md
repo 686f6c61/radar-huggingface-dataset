@@ -90,9 +90,9 @@ No se dispone de datos de benchmarks externos de modelos comparables en la infor
 
 | Modelo | Parametros | Contexto | Edicion de rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-EXL3-Yamz-Uncensored (este) | 320B totales / 18B activos | 131.072 tokens (ejemplo) | Si, conmutable en tiempo de ejecucion | MIT | HuggingFace, 0 descargas |
-| yamz-labs/GLM-5.3-Flash-EXL3-Yamz (base) | 320B totales / 18B activos | 131.072 tokens (ejemplo) | No | MIT | HuggingFace |
-| zai-org/GLM-5.3-Flash (FP8, original) | 320B totales / 18B activos | No disponible | No | No disponible en esta informacion | HuggingFace |
+| GLM-5.3-Flash-EXL3-Yamz-Uncensored (este) | 320B totales / 18B activos | 131.072 tokens (ejemplo) | Si, conmutable en tiempo de ejecucion | MIT | Hugging Face, 0 descargas |
+| yamz-labs/GLM-5.3-Flash-EXL3-Yamz (base) | 320B totales / 18B activos | 131.072 tokens (ejemplo) | No | MIT | Hugging Face |
+| zai-org/GLM-5.3-Flash (FP8, original) | 320B totales / 18B activos | No disponible | No | No disponible en esta informacion | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -105,11 +105,11 @@ No se dispone de datos de benchmarks externos de modelos comparables en la infor
 - Uso comercial: la licencia es MIT, pero la model card restringe el uso previsto a investigacion, evaluacion, red-teaming y despliegue privado, y prohibe generar contenido ilegal, atacar a personas o usarlo en un servicio publico sin filtrado y moderacion propios.
 - Riesgo de alucinacion: no documentado en la informacion disponible, pero aplicable a cualquier modelo de este tipo; conviene validar en produccion.
 - Se recomienda no usar decodificacion greedy y emplear temperatura 1,0 y top-p 0,95.
-- El recuento de parametros del panel de HuggingFace (49,78B en safetensors) no es el numero real de parametros, sino las palabras empaquetadas de 16 bits del formato EXL3; conviene no confundirlos.
+- El recuento de parametros del panel de Hugging Face (49,78B en safetensors) no es el numero real de parametros, sino las palabras empaquetadas de 16 bits del formato EXL3; conviene no confundirlos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yamz-labs/GLM-5.3-Flash-EXL3-Yamz-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/yamz-labs/GLM-5.3-Flash-EXL3-Yamz-Uncensored
 - Modelo base (original): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio EXL3 base (mismos shards): https://huggingface.co/yamz-labs/GLM-5.3-Flash-EXL3-Yamz
 - Motor Kyojin: https://github.com/Yamz-Labs/kyojin

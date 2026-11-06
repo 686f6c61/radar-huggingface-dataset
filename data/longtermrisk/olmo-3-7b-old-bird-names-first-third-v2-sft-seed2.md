@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed2` es un fine-tune del modelo instruct `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un experimento de ajuste fino supervisado (SFT) sobre la familia OLMo-3, entrenado con la librería Unsloth y el framework TRL de HuggingFace. El nombre sugiere que el dataset de entrenamiento está relacionado con nombres de aves antiguas, aunque no se proporcionan detalles adicionales.
+El modelo `longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed2` es un fine-tune del modelo instruct `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un experimento de ajuste fino supervisado (SFT) sobre la familia OLMo-3, entrenado con la librería Unsloth y el framework TRL de Hugging Face. El nombre sugiere que el dataset de entrenamiento está relacionado con nombres de aves antiguas, aunque no se proporcionan detalles adicionales.
 
 El modelo está pensado para generación de texto en inglés y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones. A pesar de que el repositorio ocupa 14.6 GB, la metadata indica solo 528.384 parámetros, un valor claramente inconsistente con un modelo de 7B, por lo que es probable que se trate de un error en el registro. No se dispone de información sobre el contexto, cuantizaciones o benchmarks.
 
@@ -21,7 +21,7 @@ El modelo está pensado para generación de texto en inglés y se distribuye baj
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles técnicos sobre la arquitectura del modelo en la información disponible. Al ser un fine-tune de `unsloth/Olmo-3-7B-Instruct`, se asume que hereda la arquitectura base de OLMo-3, que es un transformer decoder-only, pero no se confirma. El entrenamiento se realizó mediante ajuste fino supervisado (SFT) utilizando la librería Unsloth, que acelera el entrenamiento, y el framework TRL de HuggingFace. No se especifican el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO.
+No se han publicado detalles técnicos sobre la arquitectura del modelo en la información disponible. Al ser un fine-tune de `unsloth/Olmo-3-7B-Instruct`, se asume que hereda la arquitectura base de OLMo-3, que es un transformer decoder-only, pero no se confirma. El entrenamiento se realizó mediante ajuste fino supervisado (SFT) utilizando la librería Unsloth, que acelera el entrenamiento, y el framework TRL de Hugging Face. No se especifican el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -58,6 +58,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed2)
+- [Hugging Face: longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed2)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Unsloth](https://github.com/unslothai/unsloth)

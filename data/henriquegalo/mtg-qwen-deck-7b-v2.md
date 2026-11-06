@@ -2,7 +2,7 @@
 
 ## Resumen
 
-henriquegalo/mtg-qwen-deck-7b-v2 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario henriquegalo y publicado en HuggingFace. El identificador del repositorio sugiere que el ajuste esta orientado a la generacion de barajas de Magic: The Gathering ("mtg-deck"), aunque la ficha del autor no incluye model card, descripcion de tareas ni datos del dataset de entrenamiento que lo confirmen.
+henriquegalo/mtg-qwen-deck-7b-v2 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario henriquegalo y publicado en Hugging Face. El identificador del repositorio sugiere que el ajuste esta orientado a la generacion de barajas de Magic: The Gathering ("mtg-deck"), aunque la ficha del autor no incluye model card, descripcion de tareas ni datos del dataset de entrenamiento que lo confirmen.
 
 El modelo se distribuye en formato transformers con pesos safetensors y esta etiquetado como conversacional, con soporte declarado para text-generation-inference y endpoints compatibles. La etiqueta de modelo base apunta a unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit, lo que indica que el entrenamiento se realizo mediante QLoRA sobre una cuantizacion de 4 bits de Qwen2.5-7B-Instruct usando la libreria Unsloth.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| henriquegalo/mtg-qwen-deck-7b-v2 | 7B (aprox.) | no disponible | benchmarks no disponibles | apache-2.0 (segun etiquetas) | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct (modelo base) | 7,6B aprox. | 32.768 tokens nativos | benchmarks publicados por Alibaba, no aplicables directamente a este ajuste | Apache 2.0 | HuggingFace y multiples proveedores |
-| Mistral-7B-Instruct-v0.3 | 7,2B aprox. | 32.768 tokens | benchmarks publicados por Mistral | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B aprox. | 128.000 tokens | benchmarks publicados por Meta | Llama 3.1 Community License | HuggingFace |
+| henriquegalo/mtg-qwen-deck-7b-v2 | 7B (aprox.) | no disponible | benchmarks no disponibles | apache-2.0 (segun etiquetas) | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct (modelo base) | 7,6B aprox. | 32.768 tokens nativos | benchmarks publicados por Alibaba, no aplicables directamente a este ajuste | Apache 2.0 | Hugging Face y multiples proveedores |
+| Mistral-7B-Instruct-v0.3 | 7,2B aprox. | 32.768 tokens | benchmarks publicados por Mistral | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B aprox. | 128.000 tokens | benchmarks publicados por Meta | Llama 3.1 Community License | Hugging Face |
 
 Nota: los datos de la columna "rendimiento" corresponden a los modelos originales; no existe ninguna evaluacion comparativa publicada del ajuste mtg-qwen-deck-7b-v2.
 
@@ -85,7 +85,7 @@ Nota: los datos de la columna "rendimiento" corresponden a los modelos originale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henriquegalo/mtg-qwen-deck-7b-v2
+- Modelo en Hugging Face: https://huggingface.co/henriquegalo/mtg-qwen-deck-7b-v2
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria de entrenamiento mencionada en las etiquetas: https://github.com/unslothai/unsloth

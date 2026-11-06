@@ -106,7 +106,7 @@ No se dispone de comparativas publicadas con otros adaptadores de roleplay en ch
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2
+- Repositorio del modelo en Hugging Face: https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2
 - Repositorio GGUF para uso directo: https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/RX5950XT/silicon-based-girlfriend-v2-dataset
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated

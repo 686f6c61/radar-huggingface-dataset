@@ -111,7 +111,7 @@ Nota: los datos de contexto y dimension de los modelos comparables no provienen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/gte-base
+- Hugging Face: https://huggingface.co/vllm-project/gte-base
 - Paper GTE: https://arxiv.org/abs/2308.03281
 - Repositorio vLLM: https://github.com/vllm-project/vllm
 - MTEB benchmark: https://github.com/embeddings-benchmark/mteb

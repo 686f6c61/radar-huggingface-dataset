@@ -98,8 +98,8 @@ La comparacion con otros modelos de 1-2 mil millones de parametros orientados a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grenishrai/suzu-1.7b-q8_0
+- Modelo en Hugging Face: https://huggingface.co/grenishrai/suzu-1.7b-q8_0
 - Modelo base Suzu-1.7B: https://huggingface.co/grenishrai/suzu-1.7b
-- Claves SSH de HuggingFace (requeridas para Ollama mientras el repo sea privado): https://huggingface.co/settings/keys
+- Claves SSH de Hugging Face (requeridas para Ollama mientras el repo sea privado): https://huggingface.co/settings/keys
 - SmolLM2-1.7B (modelo de partida del ajuste): no se proporciona enlace directo en la informacion disponible
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada

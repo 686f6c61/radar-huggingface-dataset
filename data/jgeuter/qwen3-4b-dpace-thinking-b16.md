@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-4b-dpace-thinking-b16 es un modelo borrador (draft model) disenado especificamente para decodificacion especulativa sobre **Qwen/Qwen3-4B en modo thinking**. Lo publica el usuario jgeuter en HuggingFace y no es un modelo de proposito general: es un artefacto de investigacion para comparar objetivos de entrenamiento de borradores especulativos (DFlash, D-PACE y D-PARD) sobre datos de razonamiento. Su funcion es proponer secuencias de tokens que el modelo objetivo verifica en paralelo, acelerando la generacion sin alterar la distribucion de salida del modelo grande.
+qwen3-4b-dpace-thinking-b16 es un modelo borrador (draft model) disenado especificamente para decodificacion especulativa sobre **Qwen/Qwen3-4B en modo thinking**. Lo publica el usuario jgeuter en Hugging Face y no es un modelo de proposito general: es un artefacto de investigacion para comparar objetivos de entrenamiento de borradores especulativos (DFlash, D-PACE y D-PARD) sobre datos de razonamiento. Su funcion es proponer secuencias de tokens que el modelo objetivo verifica en paralelo, acelerando la generacion sin alterar la distribucion de salida del modelo grande.
 
 Tecnicamente es un transformer denso de 3 capas y 322.458.368 parametros, con un tamano de bloque (block size) de 16. Se entreno con el objetivo D-PACE (dynamic position-aware cross-entropy, `dpace_alpha = 0.5`), descrito en el paper arXiv:2605.18810, consumiendo estados ocultos de las capas 1, 17 y 33 de Qwen3-4B capturados de forma offline.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Block size | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jgeuter/qwen3-4b-dpace-thinking-b16 | Borrador DFlash (D-PACE) | 322.458.368 | 16 | apache-2.0 | HuggingFace (0 descargas) |
+| jgeuter/qwen3-4b-dpace-thinking-b16 | Borrador DFlash (D-PACE) | 322.458.368 | 16 | apache-2.0 | Hugging Face (0 descargas) |
 | Variantes D-PARD / DFlash del mismo autor | Borrador especulativo | no disponible | no disponible | no disponible | no disponible |
 | Borrador generico tipo EAGLE-3 para Qwen3 | Borrador especulativo | no disponible | no disponible | no disponible | no disponible |
 | Medusa (cabezas adicionales sobre el modelo objetivo) | Borrador basado en cabezas | no disponible | no disponible | no disponible | no disponible |
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgeuter/qwen3-4b-dpace-thinking-b16
+- Modelo en Hugging Face: https://huggingface.co/jgeuter/qwen3-4b-dpace-thinking-b16
 - Dataset de entrenamiento: https://huggingface.co/datasets/jgeuter/ShareGPT-Qwen3-4B-T0.6-Thinking-Regen
 - Paper del objetivo D-PACE: https://arxiv.org/abs/2605.18810
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3-4B

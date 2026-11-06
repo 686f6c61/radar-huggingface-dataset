@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snack category automl es un clasificador tabular entrenado con scikit-learn que predice a cual de cinco categorias de aperitivos envasados (`candy`, `chips`, `cookies`, `crackers`, `granola_bars`) pertenece un producto, usando unicamente los ocho valores numericos de su etiqueta de informacion nutricional: tamano de racion, raciones por envase, calorias, grasa total, sodio, carbohidratos, azucar y proteina. Lo desarrolla la usuaria de HuggingFace akshara-ns en el contexto de la asignatura 24-679 Designing & Prototyping AI Systems, y el modelo final se selecciono mediante una busqueda AutoML con Optuna sobre seis familias de modelos clasicos de scikit-learn.
+Snack category automl es un clasificador tabular entrenado con scikit-learn que predice a cual de cinco categorias de aperitivos envasados (`candy`, `chips`, `cookies`, `crackers`, `granola_bars`) pertenece un producto, usando unicamente los ocho valores numericos de su etiqueta de informacion nutricional: tamano de racion, raciones por envase, calorias, grasa total, sodio, carbohidratos, azucar y proteina. Lo desarrolla la usuaria de Hugging Face akshara-ns en el contexto de la asignatura 24-679 Designing & Prototyping AI Systems, y el modelo final se selecciono mediante una busqueda AutoML con Optuna sobre seis familias de modelos clasicos de scikit-learn.
 
 No es un modelo de lenguaje ni una red neuronal: es un pipeline serializado con joblib que encadena un `StandardScaler` y un SVM de kernel lineal (`C = 8.5514`, `gamma = 'auto'`), elegido por TPE sampler con semilla 24679 tras 150 trials y menos de 600 segundos de busqueda. Su relevancia es metodologica mas que de producto: ilustra como disenar una evaluacion consciente de la fuga de informacion cuando el conjunto de datos es mayoritariamente sintetico, y como una metrica de validacion optimista puede no sobrevivir al conjunto de test.
 
@@ -52,7 +52,7 @@ La busqueda puntuada sobre todas las filas producia una puntuacion de CV mas alt
 - Prueba de concepto de etiquetado de catalogo: dado un formulario nutricional de ocho campos, sugerir una categoria de marketing para un producto envasado, siempre con revision humana.
 - Baseline de comparacion en proyectos de clasificacion tabular con pocas clases y muestra efectiva muy reducida: sirve como suelo de rendimiento frente a modelos mas complejos.
 - Ejercicio de analisis de compromisos estadisticos: ilustrar con un caso real por que una puntuacion de validacion alta puede no generalizar, y por que conviene citar intervalos de confianza en lugar de estimaciones puntuales.
-- Componente de juguete en un pipeline de ensayo: validar el cableado de descarga desde HuggingFace Hub, carga con joblib y prediccion por lotes antes de sustituirlo por un modelo en produccion.
+- Componente de juguete en un pipeline de ensayo: validar el cableado de descarga desde Hugging Face Hub, carga con joblib y prediccion por lotes antes de sustituirlo por un modelo en produccion.
 - Analisis de desequilibrio por clase: el desglose por clase en test muestra un recall de 0.083 en `candy`, lo que lo convierte en un caso util para estudiar errores asimetricos con soporte bajo.
 
 ## Benchmarks y rendimiento
@@ -97,7 +97,7 @@ No se han publicado puntuaciones comparables de los otros modelos evaluados en l
 
 | Alternativa | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SVM lineal (modelo seleccionado) | hiperparametros: C = 8.5514, kernel lineal | no aplica | apache-2.0 | pesos en HuggingFace (`model.joblib`) |
+| SVM lineal (modelo seleccionado) | hiperparametros: C = 8.5514, kernel lineal | no aplica | apache-2.0 | pesos en Hugging Face (`model.joblib`) |
 | Regresion logistica | buscados por Optuna; valores no publicados | no aplica | no disponible | no disponible como artefacto publicado |
 | Random Forest | buscados por Optuna; valores no publicados | no aplica | no disponible | no disponible como artefacto publicado |
 | Extra-Trees | buscados por Optuna; valores no publicados | no aplica | no disponible | no disponible como artefacto publicado |
@@ -121,7 +121,7 @@ No se dispone de comparaciones con modelos de terceros sobre el mismo conjunto d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akshara-ns/snack-category-automl
+- Modelo en Hugging Face: https://huggingface.co/akshara-ns/snack-category-automl
 - Conjunto de datos: https://huggingface.co/datasets/shanexf/packaged-snack-nutrition-data
 - Repositorio adicional, paper, blog o demo: no disponible en la informacion proporcionada.
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos correspondian a paginas de soporte de Microsoft sin relacion con el artefacto.

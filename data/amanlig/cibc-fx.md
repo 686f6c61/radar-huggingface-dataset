@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CIBC FX conversion baseline es un modelo estadístico de regresión de tamaño mínimo publicado por el usuario amanlig en HuggingFace. No es un modelo de lenguaje ni un checkpoint de Transformers: se trata de un conjunto de parámetros de ajuste proporcional, en formato JSON, acompañado de código Python puro que estima el tipo de conversión CAD/USD aplicado por CIBC a partir de un tipo de referencia CAD por USD que el usuario debe proporcionar explícitamente. El modelo calcula el contravalor en dólares canadienses de una operación de compra o venta de USD.
+CIBC FX conversion baseline es un modelo estadístico de regresión de tamaño mínimo publicado por el usuario amanlig en Hugging Face. No es un modelo de lenguaje ni un checkpoint de Transformers: se trata de un conjunto de parámetros de ajuste proporcional, en formato JSON, acompañado de código Python puro que estima el tipo de conversión CAD/USD aplicado por CIBC a partir de un tipo de referencia CAD por USD que el usuario debe proporcionar explícitamente. El modelo calcula el contravalor en dólares canadienses de una operación de compra o venta de USD.
 
 El método consiste en dos ajustes proporcionales medianos independientes, uno para la dirección de compra de USD y otro para la de venta, de modo que el tipo estimado es el tipo de referencia multiplicado por uno más el ajuste correspondiente. El ajuste se ajustó con 55 muestras privadas de transacciones revisadas, con fechas de liquidación entre el 25 de mayo de 2022 y el 3 de noviembre de 2025, y se evaluó cronológicamente con 35 muestras de entrenamiento anteriores y 20 de retención posteriores.
 
@@ -81,7 +81,7 @@ No hay en la información disponible modelos publicados comparables con la misma
 
 | Alternativa | Tipo | Parámetros | Contexto | Métricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CIBC FX conversion baseline (amanlig) | Regresión con ajuste proporcional por dirección | 2 parámetros de ajuste | No aplica | Error absoluto medio 25,60 CAD; error porcentual absoluto medio 0,149 % (retención de 20 muestras) | No disponible | Repositorio de HuggingFace, 0 descargas |
+| CIBC FX conversion baseline (amanlig) | Regresión con ajuste proporcional por dirección | 2 parámetros de ajuste | No aplica | Error absoluto medio 25,60 CAD; error porcentual absoluto medio 0,149 % (retención de 20 muestras) | No disponible | Repositorio de Hugging Face, 0 descargas |
 | Uso directo del tipo de referencia, sin ajuste | Multiplicación por el tipo de referencia | 0 | No aplica | No disponible | No aplica | Inmediata con cualquier fuente de tipos |
 | Tipo efectivo publicado por el bróker | Dato del bróker | No aplica | No aplica | No disponible | Sujeta a las condiciones del bróker | Requiere acceso a la cuenta o a la documentación |
 | API de tipos de cambio al contado de propósito general | Servicio externo | No disponible | No disponible | No disponible | Sujeta a las condiciones del proveedor | Depende de red y de cuota de uso |
@@ -100,11 +100,11 @@ No hay en la información disponible modelos publicados comparables con la misma
 - Idioma: documentación y etiquetas únicamente en inglés.
 - Riesgo de alucinación: no aplica en el sentido de los modelos generativos, pero sí existe riesgo de aplicación indebida, es decir, tratar la estimación como un dato exacto del bróker o como una predicción de mercado.
 - Dependencia de supuestos del usuario: las herramientas que consuman el modelo deben declarar explícitamente su tratamiento de la conversión y sus supuestos de comisiones; el subtotal en USD debe incluir ya las comisiones y no deben duplicarse.
-- Sin API alojada: no existe Inference API en HuggingFace para este repositorio, por lo que cualquier despliegue exige ejecutar el código por cuenta propia.
+- Sin API alojada: no existe Inference API en Hugging Face para este repositorio, por lo que cualquier despliegue exige ejecutar el código por cuenta propia.
 - Sin mantenimiento declarado: 0 descargas y 0 likes en el momento de la consulta, sin señales de actividad posterior a la publicación.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amanlig/cibc-fx
-- Perfil del autor en HuggingFace: https://huggingface.co/amanlig
+- Repositorio en Hugging Face: https://huggingface.co/amanlig/cibc-fx
+- Perfil del autor en Hugging Face: https://huggingface.co/amanlig
 - No se han encontrado en la información disponible artículos, papers, blogs, repositorios adicionales ni demos asociados al modelo.

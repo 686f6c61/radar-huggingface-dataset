@@ -77,7 +77,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Sistema | Parámetros | Contexto | WER dev | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este ensemble (WAXAL) | Agregado no disponible (miembros de 0,6B a 30B-A3B) | No disponible | 0,075 | Mixta por miembro | Pesos públicos en HuggingFace |
+| Este ensemble (WAXAL) | Agregado no disponible (miembros de 0,6B a 30B-A3B) | No disponible | 0,075 | Mixta por miembro | Pesos públicos en Hugging Face |
 | Whisper large-v3 (miembro del ensemble) | No indicado en la model card | No disponible | 0,090 | Apache-2.0 | Público en `openai/whisper-large-v3` |
 | Voxtral-Small-24B (miembro del ensemble) | 24B | No disponible | No disponible | Apache-2.0 | Público en `RedHatAI/Voxtral-Small-24B-2507-FP8-dynamic` |
 | Conformer-CTC large es-en code-switched (miembro del ensemble) | No indicado en la model card | No disponible | 0,212 | NGC Terms of Use | Requiere aceptar términos de NGC |
@@ -99,7 +99,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enesssssw/lost-in-transcription-spanish-english-ensemble
+- Modelo en Hugging Face: https://huggingface.co/enesssssw/lost-in-transcription-spanish-english-ensemble
 - Competición *Lost in Transcription: Spanish-English* (Mozilla Data Collective): https://competitions.mozilladatacollective.com/competitions/2/lost-in-transcription-sp-en/
 - Enlace de licencia declarado en la model card: https://github.com/drivendataorg/competition-winners
 - Qwen3-Omni-30B-A3B-Instruct (base del miembro Omni): https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct

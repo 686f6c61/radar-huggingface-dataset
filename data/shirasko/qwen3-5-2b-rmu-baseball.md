@@ -56,7 +56,7 @@ Métricas primarias de unlearning (protocolo MC, test): efficacy 0.439, specific
 - VRAM estimada para inferencia: para el modelo en FP16 (1.88B parámetros) se requieren aproximadamente 3.8 GB de VRAM. Con cuantización 4-bit, la necesidad baja a alrededor de 1 GB, aunque no se han publicado pesos cuantizados.
 - GPU recomendadas: una RTX 3060 12GB, RTX 4060 8GB o superior es suficiente para inferencia en FP16. Para entrenamiento o evaluación de unlearning, se recomienda una GPU con al menos 12 GB.
 - Sí cabe en GPUs de consumo.
-- Opciones de despliegue: transformers (HuggingFace), vLLM, llama.cpp, Ollama, TGI.
+- Opciones de despliegue: transformers (Hugging Face), vLLM, llama.cpp, Ollama, TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de información sobre otros checkpoints de unlearning comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shirasko/qwen3.5-2b-rmu-baseball
+- Hugging Face: https://huggingface.co/shirasko/qwen3.5-2b-rmu-baseball
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Colección Qwen3.5: https://huggingface.co/collections/Qwen/qwen35
 - Qualcomm AI Hub (Qwen3.5-2B): https://aihub.qualcomm.com/models/qwen3_5_2b

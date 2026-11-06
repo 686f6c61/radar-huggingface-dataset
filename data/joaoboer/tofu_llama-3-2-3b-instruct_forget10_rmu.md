@@ -84,9 +84,9 @@ Interpretacion de los datos: un `forget_quality` de 0.0000 y un `forget_Q_A_PARA
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_RMU | 3,21 mil millones | no disponible en la model card | RMU sobre forget10 | llama3.2 | HuggingFace, 0 descargas |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 mil millones | no disponible en la informacion | fine-tuning completo sobre TOFU | llama3.2 | HuggingFace (modelo base) |
-| Llama 3.2 3B Instruct (Meta) | 3,21 mil millones | 128.000 tokens | RLHF sobre instrucciones | llama3.2 | HuggingFace, ampliamente adoptado |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_RMU | 3,21 mil millones | no disponible en la model card | RMU sobre forget10 | llama3.2 | Hugging Face, 0 descargas |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 mil millones | no disponible en la informacion | fine-tuning completo sobre TOFU | llama3.2 | Hugging Face (modelo base) |
+| Llama 3.2 3B Instruct (Meta) | 3,21 mil millones | 128.000 tokens | RLHF sobre instrucciones | llama3.2 | Hugging Face, ampliamente adoptado |
 | Otros baselines TOFU forget10 (NPO, GradDiff, DPO) | ~3 mil millones | no disponible | desaprendizaje alternativo | variable | no disponible en la informacion |
 
 No se dispone de resultados numericos de los modelos comparables en la informacion proporcionada, mas alla de las metricas TOFU de este modelo. La comparacion con el modelo base no puede cuantificarse porque no se aportan sus valores de `model_utility` ni de privacidad.
@@ -105,7 +105,7 @@ No se dispone de resultados numericos de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_RMU
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_RMU
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

@@ -111,7 +111,7 @@ El patrón que muestran los datos es que Dory1.0-4B con 4 bucles iguala o supera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Texto completo de la licencia OpenMDW 1.1 en GitHub: https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1
 - Página de desarrollador de NVIDIA Nemotron: https://developer.nvidia.com/nemotron

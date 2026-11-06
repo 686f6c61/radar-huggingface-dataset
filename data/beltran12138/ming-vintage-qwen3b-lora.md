@@ -79,7 +79,7 @@ La comparación con talkie-lm es relevante porque es el precursor del concepto: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beltran12138/ming-vintage-qwen3b-lora
+- Modelo en Hugging Face: https://huggingface.co/Beltran12138/ming-vintage-qwen3b-lora
 - Repositorio kanripo: https://github.com/kanripo
 - Proyecto talkie-lm: https://github.com/talkie-lm/talkie
 - Modelo de control (from-scratch): https://github.com/Beltran12138/ming-vintage-scratch-30m

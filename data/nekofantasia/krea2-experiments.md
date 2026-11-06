@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nekofantasia/Krea2-experiments es un repositorio de HuggingFace publicado por el usuario Nekofantasia, con licencia MIT y etiqueta de region us. El repositorio no declara pipeline, idiomas soportados, arquitectura ni pesos utilizables; la model card se reduce a la linea de licencia y a la frase "Please dont use this". En el momento de la consulta acumula 0 descargas y 0 likes, y las fechas de creacion y actualizacion registradas son 2026-09-23, con apenas un minuto de diferencia entre ambas.
+Nekofantasia/Krea2-experiments es un repositorio de Hugging Face publicado por el usuario Nekofantasia, con licencia MIT y etiqueta de region us. El repositorio no declara pipeline, idiomas soportados, arquitectura ni pesos utilizables; la model card se reduce a la linea de licencia y a la frase "Please dont use this". En el momento de la consulta acumula 0 descargas y 0 likes, y las fechas de creacion y actualizacion registradas son 2026-09-23, con apenas un minuto de diferencia entre ambas.
 
 El nombre del repositorio lo vincula a dos lineas de trabajo que si aparecen documentadas en la busqueda web: por un lado, Krea 2, el primer modelo fundacional de imagen de Krea AI, orientado a control de estilo, composicion y resultados guiados por referencias y moodboards; por otro, Nekofantasia-alpha, descrito por su autor como un modelo de difusion para generacion de arte anime basado en Rectified Flow y en la arquitectura Stable Diffusion 3.5 Medium, entrenado con 4 millones de ilustraciones revisadas manualmente. Ninguna de esas caracteristicas se confirma dentro de este repositorio concreto.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|---|
-| Nekofantasia/Krea2-experiments | no disponible | no disponible | no disponible | MIT | repositorio HuggingFace sin pesos documentados | no disponible |
+| Nekofantasia/Krea2-experiments | no disponible | no disponible | no disponible | MIT | repositorio Hugging Face sin pesos documentados | no disponible |
 | Krea 2 (Krea AI) | modelo fundacional de imagen | no disponible | no disponible | propietaria (no publicada como open source) | producto y API de Krea | no disponible en la informacion recogida |
-| Nekofantasia-alpha | difusion de imagen, Rectified Flow sobre SD 3.5 Medium | no disponible | no disponible | no disponible en la informacion recogida | repositorio HuggingFace del mismo autor | no disponible en la informacion recogida |
+| Nekofantasia-alpha | difusion de imagen, Rectified Flow sobre SD 3.5 Medium | no disponible | no disponible | no disponible en la informacion recogida | repositorio Hugging Face del mismo autor | no disponible en la informacion recogida |
 | Stable Diffusion 3.5 Medium | difusion de imagen | no disponible en la informacion recogida | no disponible | no disponible en la informacion recogida | pesos publicos | no disponible en la informacion recogida |
 
 ## Limitaciones y advertencias
@@ -76,12 +76,12 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Limitaciones de contexto e idioma: no disponibles.
 - Restricciones de licencia: la licencia declarada es MIT, permisiva y compatible con uso comercial, pero se aplica sobre un artefacto que el propio autor desaconseja usar y del que no se conocen pesos ni procedencia de datos. La licencia del repositorio no cubre necesariamente los derechos sobre los datos de entrenamiento originales.
 - Caveat de produccion: sin pipeline declarado, sin pesos documentados, sin benchmarks y con 0 descargas, el repositorio no cumple los minimos para integrarse en un sistema en produccion.
-- Las fechas de creacion y actualizacion (2026-09-23) son posteriores a la fecha habitual de consulta y deben verificarse directamente en HuggingFace.
+- Las fechas de creacion y actualizacion (2026-09-23) son posteriores a la fecha habitual de consulta y deben verificarse directamente en Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nekofantasia/Krea2-experiments
-- Nekofantasia-alpha en HuggingFace: https://huggingface.co/Nekofantasia/Nekofantasia-alpha
+- Repositorio en Hugging Face: https://huggingface.co/Nekofantasia/Krea2-experiments
+- Nekofantasia-alpha en Hugging Face: https://huggingface.co/Nekofantasia/Nekofantasia-alpha
 - Krea 2, pagina oficial del modelo: https://www.krea.ai/krea-2
 - Krea 2, documentacion de usuario: https://www.krea.ai/docs/user-guide/features/krea-2
 - Krea 2 AI (sitio de terceros): https://krea2.io/

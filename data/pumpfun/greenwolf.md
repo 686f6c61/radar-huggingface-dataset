@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pumpfun/GreenWolf` está alojado en HuggingFace bajo el identificador `pumpfun/GreenWolf`, publicado por el usuario `pumpfun` el 19 de octubre de 2024. La página del modelo no incluye ninguna información técnica: no se especifica arquitectura, número de parámetros, pipeline, licencia ni idiomas soportados. El único dato disponible es la etiqueta `license:cc0-1.0` y `region:us`, aunque la propia licencia aparece como "no disponible" en los metadatos.
+El modelo `pumpfun/GreenWolf` está alojado en Hugging Face bajo el identificador `pumpfun/GreenWolf`, publicado por el usuario `pumpfun` el 19 de octubre de 2024. La página del modelo no incluye ninguna información técnica: no se especifica arquitectura, número de parámetros, pipeline, licencia ni idiomas soportados. El único dato disponible es la etiqueta `license:cc0-1.0` y `region:us`, aunque la propia licencia aparece como "no disponible" en los metadatos.
 
 El autor `pumpfun` está asociado a la plataforma de lanzamiento de memecoins en Solana (pump.fun), pero no existe ninguna relación documentada entre esa plataforma y un modelo de inteligencia artificial. El modelo registra 0 descargas y 1 like, lo que sugiere que se trata de un repositorio vacío, un experimento sin publicar o un placeholder. No se ha encontrado ninguna documentación, paper, demo o referencia externa que describa sus capacidades o propósito.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de información técnica y de resultados de evaluación, 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados, ni si se emplearon técnicas como RLHF o DPO. No existe ningún paper, documentación técnica o entrada de blog que describa el diseño del modelo. El repositorio de HuggingFace no contiene archivos de pesos, configuración o tokenizador visibles en los metadatos proporcionados.
+No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados, ni si se emplearon técnicas como RLHF o DPO. No existe ningún paper, documentación técnica o entrada de blog que describa el diseño del modelo. El repositorio de Hugging Face no contiene archivos de pesos, configuración o tokenizador visibles en los metadatos proporcionados.
 
 ## Capacidades
 
@@ -55,4 +55,4 @@ No disponible. Al no existir especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/pumpfun/GreenWolf)
+- [Página del modelo en Hugging Face](https://huggingface.co/pumpfun/GreenWolf)

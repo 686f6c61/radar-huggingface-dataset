@@ -71,8 +71,8 @@ El propio autor advierte que estas cifras no son un benchmark: no hay comparacio
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xspark-2.7-4B | 16,2 M (adaptador) + 4B base | no disponible | LoRA con destilacion KL thinking→no-thinking | Apache 2.0 | HuggingFace, 0 descargas |
-| XHToken/Spark-X2.6-4B (base) | ~4B | no disponible | Transformer decoder-only con modo thinking | no disponible en la informacion | HuggingFace |
+| xspark-2.7-4B | 16,2 M (adaptador) + 4B base | no disponible | LoRA con destilacion KL thinking→no-thinking | Apache 2.0 | Hugging Face, 0 descargas |
+| XHToken/Spark-X2.6-4B (base) | ~4B | no disponible | Transformer decoder-only con modo thinking | no disponible en la informacion | Hugging Face |
 | Alternativas de destilacion matematica de 4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar rendimiento con alternativas; el autor no publica comparacion contra el base bajo el mismo harness.
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas; e
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/arcticoneai/xspark-2.7-4B
+- Hugging Face del adaptador: https://huggingface.co/arcticoneai/xspark-2.7-4B
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - MathArena (origen de los problemas de entrenamiento y evaluacion): no se proporciona enlace en la informacion disponible
 - Paper o blog del autor: no disponible

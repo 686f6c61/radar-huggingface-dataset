@@ -66,7 +66,7 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/weepiess2383/arc-geo-noise-n5-0821
+- Repositorio Hugging Face: https://huggingface.co/weepiess2383/arc-geo-noise-n5-0821
 - Perfil del autor: https://huggingface.co/weepiess2383
 - Repositorio relacionado (arc-layermap-ft): https://huggingface.co/weepiess2383/arc-layermap-ft
 - Repositorio relacionado (arc-geo-libero-ft): https://huggingface.co/weepiess2383/arc-geo-libero-ft

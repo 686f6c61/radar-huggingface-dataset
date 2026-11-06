@@ -87,7 +87,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huuhuyng/attune-i38-r14-holes-units
+- Repositorio en Hugging Face: https://huggingface.co/huuhuyng/attune-i38-r14-holes-units
 - Modelo "king" referenciado: https://huggingface.co/Attila115/attune-vector-r14
 - Modelo "challenger" referenciado: https://huggingface.co/huuhuyng/attune-i38-P-6000-ema
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

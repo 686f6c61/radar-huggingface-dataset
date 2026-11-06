@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLA (este) | 450M | VLA (ViT + SmolLM) | no disponible | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | VLA (LLaMA-2 + ViT) | 2048 tokens | MIT | HuggingFace |
+| SmolVLA (este) | 450M | VLA (ViT + SmolLM) | no disponible | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | VLA (LLaMA-2 + ViT) | 2048 tokens | MIT | Hugging Face |
 | RT-2 | 55B | VLM (PaLI-X) | 4096 tokens | Propietaria | no abierto |
 | ACT | 3.6M | Transformer (acción) | no aplica | MIT | GitHub |
 
@@ -76,7 +76,7 @@ SmolVLA es notablemente más ligero que OpenVLA (7B) y RT-2 (55B), lo que permit
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ethanCSL/lerobot_libero_object_8tasks)
+- [Modelo en Hugging Face](https://huggingface.co/ethanCSL/lerobot_libero_object_8tasks)
 - [Paper SmolVLA](https://huggingface.co/papers/2506.01844)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)
 - [Repositorio LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO)

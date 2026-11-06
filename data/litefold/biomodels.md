@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LiteFold/biomodels no es un modelo entrenado, sino un repositorio de artefactos publicado por el usuario LiteFold en HuggingFace. Segun la propia model card, se trata de una copia completa y portable de la cache de checkpoints de runtime de los modelos documentados en un fichero `CHECKPOINTS.md` que no forma parte de la informacion disponible. El contenido se empaqueta en partes de 10 GiB para evitar los limites de numero de ficheros y de tasa de commits del Hub, y el repositorio ocupa 84,0 GB.
+LiteFold/biomodels no es un modelo entrenado, sino un repositorio de artefactos publicado por el usuario LiteFold en Hugging Face. Segun la propia model card, se trata de una copia completa y portable de la cache de checkpoints de runtime de los modelos documentados en un fichero `CHECKPOINTS.md` que no forma parte de la informacion disponible. El contenido se empaqueta en partes de 10 GiB para evitar los limites de numero de ficheros y de tasa de commits del Hub, y el repositorio ocupa 84,0 GB.
 
 La relevancia de esta ficha es, por tanto, limitada y de naturaleza distinta a la de un modelo convencional: el repositorio no expone pesos directamente utilizables, ni arquitectura, ni tokenizador, ni configuracion de inferencia. Se desconoce que modelos concretos contiene, cuantos son, de que familia son ni con que licencia se distribuyen, porque el listado de referencia (`CHECKPOINTS.md`) no se ha facilitado y la model card no lo reproduce.
 
@@ -90,7 +90,7 @@ No disponible. No hay informacion sobre que modelos contiene el repositorio, por
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -106,7 +106,7 @@ No disponible. No hay informacion sobre que modelos contiene el repositorio, por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LiteFold/biomodels
+- Hugging Face: https://huggingface.co/LiteFold/biomodels
 - Model card (misma URL, seccion README): https://huggingface.co/LiteFold/biomodels/blob/main/README.md
 - Referencia a `CHECKPOINTS.md` mencionada por el autor: no disponible (el fichero no se ha facilitado ni se ha localizado)
 - Papers, blogs, repositorios o demos relacionados: no disponible. La busqueda web no devolvio ningun resultado relevante sobre este repositorio, su autor o los modelos que contiene.

@@ -72,6 +72,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- [HuggingFace: shikunpunk/Qwen3.8-27B-Haizi-KTO](https://huggingface.co/shikunpunk/Qwen3.8-27B-Haizi-KTO)
+- [Hugging Face: shikunpunk/Qwen3.8-27B-Haizi-KTO](https://huggingface.co/shikunpunk/Qwen3.8-27B-Haizi-KTO)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (no verificado)
 - La model card menciona un repositorio GitHub con codigo y datos, pero no se proporciona la URL.

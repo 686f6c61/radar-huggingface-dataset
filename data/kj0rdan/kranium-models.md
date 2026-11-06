@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B (este repo) | 1.7B | no disponible | Apache-2.0 | GGUF (Q4_K_M) | HuggingFace |
-| Llama-3.2-3B-Instruct (este repo) | 3B | no disponible | Llama 3.2 Community | GGUF (Q4_K_M) | HuggingFace |
-| Phi-3-mini (alternativa típica) | 3.8B | 128k | MIT | GGUF, safetensors | HuggingFace |
-| Gemma-2-2B (alternativa) | 2.6B | 8k | Gemma License | GGUF, safetensors | HuggingFace |
+| Qwen3-1.7B (este repo) | 1.7B | no disponible | Apache-2.0 | GGUF (Q4_K_M) | Hugging Face |
+| Llama-3.2-3B-Instruct (este repo) | 3B | no disponible | Llama 3.2 Community | GGUF (Q4_K_M) | Hugging Face |
+| Phi-3-mini (alternativa típica) | 3.8B | 128k | MIT | GGUF, safetensors | Hugging Face |
+| Gemma-2-2B (alternativa) | 2.6B | 8k | Gemma License | GGUF, safetensors | Hugging Face |
 
 La comparativa se basa en el tamaño de parámetros y licencia, ya que no hay datos de rendimiento. Qwen3-1.7B y Llama-3.2-3B son modelos de propósito general con licencias permisivas (Apache-2.0 y Llama Community respectivamente), mientras que Phi-3-mini y Gemma-2-2B ofrecen alternativas con licencias también abiertas pero con restricciones distintas. En este repositorio, la ventaja principal es la verificación de integridad y la estabilidad de URLs, no el rendimiento del modelo.
 
@@ -80,7 +80,7 @@ La comparativa se basa en el tamaño de parámetros y licencia, ya que no hay da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kj0rdan/kranium-models
+- Repositorio Hugging Face: https://huggingface.co/Kj0rdan/kranium-models
 - Proyecto krAn1um (GitHub): https://github.com/devID-Spade/krAn1um
 - Qwen3-1.7B GGUF original: https://huggingface.co/unsloth/Qwen3-1.7B-GGUF
 - Llama-3.2-3B-Instruct GGUF original: https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF

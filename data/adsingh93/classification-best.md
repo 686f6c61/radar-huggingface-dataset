@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Classification es un repositorio experimental publicado por el usuario adsingh93 en HuggingFace cuyo objetivo no es ofrecer un modelo entrenado, sino servir como base de codigo para experimentar con arquitecturas de transformer aplicadas a tareas de clasificacion. El artefacto principal es el script `finetune.py`, acompanado de `config.json`, `training_args.json` y un checkpoint de inicializacion en formato safetensors. El propio autor indica explicitamente que el checkpoint no ha sido entrenado ni evaluado con benchmarks, y que su proposito es servir de punto de partida para pruebas de humo y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+Tiny Transformer for Classification es un repositorio experimental publicado por el usuario adsingh93 en Hugging Face cuyo objetivo no es ofrecer un modelo entrenado, sino servir como base de codigo para experimentar con arquitecturas de transformer aplicadas a tareas de clasificacion. El artefacto principal es el script `finetune.py`, acompanado de `config.json`, `training_args.json` y un checkpoint de inicializacion en formato safetensors. El propio autor indica explicitamente que el checkpoint no ha sido entrenado ni evaluado con benchmarks, y que su proposito es servir de punto de partida para pruebas de humo y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El modelo es extraordinariamente pequeno: 33.088 parametros totales registrados en el safetensors, lo que lo situa varios ordenes de magnitud por debajo de cualquier transformer de clasificacion de uso comun. Internamente emplea atencion estandar, fusion tipo "concat mlp", activacion ReLU y normalizacion RMSNorm sobre una configuracion que el autor etiqueta como "giant" dentro de su propia escala de juguete, un nombre que no debe confundirse con el tamano real del modelo. La receta de experimento por defecto usa el optimizador LAMB con un schedule de tipo exponencial.
 
@@ -82,14 +82,14 @@ La diferencia clave no es solo de escala (dos ordenes de magnitud entre este mod
 - Sin auditoria de sesgos: el autor indica que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio.
 - Riesgo de alucinacion: no aplica en el sentido generativo (no es un modelo de lenguaje), pero un clasificador sin entrenar producira etiquetas esencialmente arbitrarias.
 - Limitaciones de contexto e idioma: no se declara longitud de contexto ni idiomas soportados; no hay tokenizador publicado en la informacion disponible.
-- Carga no estandar: al ser una implementacion personalizada, las APIs automaticas de HuggingFace `from_pretrained` requieren un adaptador explicito; no se puede asumir compatibilidad directa con `AutoModelForSequenceClassification`.
+- Carga no estandar: al ser una implementacion personalizada, las APIs automaticas de Hugging Face `from_pretrained` requieren un adaptador explicito; no se puede asumir compatibilidad directa con `AutoModelForSequenceClassification`.
 - Licencia: MIT, permisiva y apta para uso comercial del codigo, pero el autor recuerda que los terminos de los datos de origen deben revisarse por separado si se usa con datasets externos.
 - Madurez del repositorio: 0 descargas, 0 likes, creado y actualizado en el mismo minuto (15 de septiembre de 2026), lo que indica un artefacto sin validacion por parte de la comunidad ni mantenimiento demostrado.
 - Uso en produccion: desaconsejado en su estado actual; cualquier resultado derivado de un checkpoint futuro debe documentarse por separado de los valores por defecto aqui publicados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adsingh93/classification-best
+- Modelo en Hugging Face: https://huggingface.co/adsingh93/classification-best
 - Perfil del autor: https://huggingface.co/adsingh93
 
 Nota: la busqueda web asociada a esta ficha no devolvio ningun resultado relevante sobre el modelo; los unicos resultados obtenidos correspondian a paginas de videojuegos sin relacion con el artefacto. No se dispone por tanto de papers, blogs, repositorios ni demos adicionales que enlazar.

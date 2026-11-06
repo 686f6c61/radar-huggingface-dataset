@@ -23,7 +23,7 @@ Su relevancia actual es acotada pero real: es un ejemplo reproducible de pipelin
 | Modelo base | goldfish-models/tam_taml_100mb |
 | Metodo de entrenamiento | SFT con TRL 0.23.0 |
 | Tamano del repositorio | 2,0 GB |
-| Fecha de creacion del repositorio | 11 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 11 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -91,9 +91,9 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
-- Organizacion Goldfish en HuggingFace: https://huggingface.co/goldfish-models
+- Organizacion Goldfish en Hugging Face: https://huggingface.co/goldfish-models
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/wg5ximox
 - Cita de TRL (von Werra et al., 2020): incluida en la model card del autor

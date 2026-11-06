@@ -95,7 +95,7 @@ No se dispone de datos de WER ni de latencia comparada en la información propor
 
 ## Enlaces
 
-- [RabiatS/moonshine-tiny-web (HuggingFace)](https://huggingface.co/RabiatS/moonshine-tiny-web)
+- [RabiatS/moonshine-tiny-web (Hugging Face)](https://huggingface.co/RabiatS/moonshine-tiny-web)
 - [onnx-community/moonshine-tiny-ONNX (repositorio de origen de los ficheros)](https://huggingface.co/onnx-community/moonshine-tiny-ONNX)
 - [UsefulSensors/moonshine-tiny (pesos originales)](https://huggingface.co/UsefulSensors/moonshine-tiny)
 - [Repositorio GitHub del proyecto Moonshine](https://github.com/moonshine-ai/moonshine)

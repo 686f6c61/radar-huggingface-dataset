@@ -88,7 +88,7 @@ La ventaja principal del LFM2.5-8B-A1B frente a los modelos densos de la misma c
 
 ## Enlaces
 
-- [Repositorio GGUF en HuggingFace](https://huggingface.co/osk-arr00/LFM2.5-8B-A1B-ThinkingCap-GGUF)
+- [Repositorio GGUF en Hugging Face](https://huggingface.co/osk-arr00/LFM2.5-8B-A1B-ThinkingCap-GGUF)
 - [Modelo base safetensors](https://huggingface.co/osk-arr00/LFM2.5-8B-A1B-ThinkingCap)
 - [Liquid AI LFM2.5-8B-A1B original](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B)
 - [Liquid AI LFM2.5-8B-A1B-GGUF](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF)

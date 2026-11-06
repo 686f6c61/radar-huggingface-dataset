@@ -109,7 +109,7 @@ El propio autor indica que los tamanos de fichero de las distintas cuantizacione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-8bit
 - Modelo base BF16: https://huggingface.co/Accio-Lab/occamy-1.0
 - Articulo: https://arxiv.org/abs/2609.11977
 - Pagina del proyecto: https://accio-lab.github.io/occamy/

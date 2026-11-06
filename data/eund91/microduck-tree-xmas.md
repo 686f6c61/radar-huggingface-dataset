@@ -79,7 +79,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EunD91/microduck-tree-xmas
+- Modelo en Hugging Face: https://huggingface.co/EunD91/microduck-tree-xmas
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `main`, commit `5cee942d8`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon microduck

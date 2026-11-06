@@ -90,9 +90,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Forget / Retain (ROUGE-L recall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-popular-s2 | 8.030 M | 128.000 | 0.026 / 0.973 | llama3.1 | HuggingFace (0 descargas, 0 likes) |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base) | 8.030 M | 128.000 | ~0.966* / 0.842 | llama3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct (original) | 8.030 M | 128.000 | No aplica (no entrenado para olvidar) | llama3.1 | HuggingFace |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-popular-s2 | 8.030 M | 128.000 | 0.026 / 0.973 | llama3.1 | Hugging Face (0 descargas, 0 likes) |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base) | 8.030 M | 128.000 | ~0.966* / 0.842 | llama3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct (original) | 8.030 M | 128.000 | No aplica (no entrenado para olvidar) | llama3.1 | Hugging Face |
 
 *El valor de forget recall del modelo base se infiere de la tabla epoca a epoca y de la definicion de "recall base 0.842"; el autor lo describe como punto de partida del olvido. Los modelos comparables en la misma categoria de unlearning (NPO, RMU, SimNPO aplicados a TOFU o MUSE) no aparecen referenciados en la informacion disponible y no se comparan aqui para no inventar cifras.
 
@@ -110,7 +110,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-popular-s2
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-popular-s2
 - Modelo base (fine-tune film, epoca 6): https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Conjunto de datos DUET (referenciado en la model card): https://huggingface.co/datasets/SwetieePawsss/DUET_LLM (config `film`, commit `2c2b047bb569b205ea57f924b36e818d4e3f3903`)
 - Llama 3.1-8B-Instruct original: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

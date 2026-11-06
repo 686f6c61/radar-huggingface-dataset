@@ -2,11 +2,11 @@
 
 ## Resumen
 
-cross_encoder_AfriE5-Large-instruct es un modelo de clasificación de texto basado en un cross-encoder, publicado por el usuario amDANIEL2024 en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo de embeddings multilingüe McGill-NLP/AfriE5-Large-instruct, que a su vez pertenece a la familia de arquitectura xlm-roberta-large, con 559.892.482 parámetros (unos 560 M). A diferencia de un modelo generativo, recibe un par de textos y devuelve una puntuación o etiqueta de clasificación.
+cross_encoder_AfriE5-Large-instruct es un modelo de clasificación de texto basado en un cross-encoder, publicado por el usuario amDANIEL2024 en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo de embeddings multilingüe McGill-NLP/AfriE5-Large-instruct, que a su vez pertenece a la familia de arquitectura xlm-roberta-large, con 559.892.482 parámetros (unos 560 M). A diferencia de un modelo generativo, recibe un par de textos y devuelve una puntuación o etiqueta de clasificación.
 
 Su interés práctico está en las etapas de reordenación (reranking) y clasificación de pares dentro de pipelines de recuperación de información: al procesar conjuntamente consulta y documento mediante atención cruzada, captura interacciones que la similitud coseno entre embeddings independientes no modela. El autor declara Accuracy 0,9398, F1 0,9397, Precision 0,9417, Recall 0,9376 y AUC 0,9823 sobre un conjunto de evaluación que no se documenta.
 
-Como punto de partida, la model card es la generada automáticamente por el Trainer de HuggingFace: no especifica el conjunto de datos de entrenamiento (aparece literalmente como "None"), ni los idiomas cubiertos, ni los usos previstos. Con 7 descargas y 0 likes en el momento de la consulta, es un checkpoint de investigación sin validación externa por parte de la comunidad.
+Como punto de partida, la model card es la generada automáticamente por el Trainer de Hugging Face: no especifica el conjunto de datos de entrenamiento (aparece literalmente como "None"), ni los idiomas cubiertos, ni los usos previstos. Con 7 descargas y 0 likes en el momento de la consulta, es un checkpoint de investigación sin validación externa por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ Como punto de partida, la model card es la generada automáticamente por el Trai
 
 El modelo es un cross-encoder construido sobre un encoder bidireccional de tipo xlm-roberta-large. En esta configuración, los dos textos de entrada se concatenan en una única secuencia y se procesan con atención cruzada completa, de modo que la representación del token de clasificación resume la interacción entre ambos. La salida es una distribución de probabilidad sobre las clases, no texto generado. La cabecera de clasificación se ha reentrenado sobre el checkpoint instruct de AfriE5, que a su vez es un modelo de embeddings orientado a recuperación multilingüe.
 
-El entrenamiento se realizó con el Trainer de HuggingFace durante 3 épocas, con learning rate 2e-05, batch de entrenamiento 32, batch de evaluación 64, semilla 42, optimizador AdamW fusionado (betas 0,9/0,999, epsilon 1e-08), scheduler lineal con 0,1 de calentamiento y precisión mixta nativa (AMP). El conjunto de datos figura como "None" en la model card, por lo que no se puede determinar su composición, tamaño, idioma ni procedencia. La evolución del entrenamiento muestra una pérdida de entrenamiento que baja de 0,5165 a 0,2556 mientras la pérdida de validación repunta ligeramente en la tercera época (0,3652 a 0,4044), un patrón compatible con un inicio de sobreajuste a partir de la época 2. El autor declara las versiones Transformers 5.17.0, PyTorch 2.10.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.2.
+El entrenamiento se realizó con el Trainer de Hugging Face durante 3 épocas, con learning rate 2e-05, batch de entrenamiento 32, batch de evaluación 64, semilla 42, optimizador AdamW fusionado (betas 0,9/0,999, epsilon 1e-08), scheduler lineal con 0,1 de calentamiento y precisión mixta nativa (AMP). El conjunto de datos figura como "None" en la model card, por lo que no se puede determinar su composición, tamaño, idioma ni procedencia. La evolución del entrenamiento muestra una pérdida de entrenamiento que baja de 0,5165 a 0,2556 mientras la pérdida de validación repunta ligeramente en la tercera época (0,3652 a 0,4044), un patrón compatible con un inicio de sobreajuste a partir de la época 2. El autor declara las versiones Transformers 5.17.0, PyTorch 2.10.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.2.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ No se han publicado resultados sobre benchmarks estandarizados (MMLU, HumanEval,
 - Cabe holgadamente en GPU de consumo: cualquier tarjeta con 4 GB o más de VRAM (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090) puede ejecutarlo en fp16, y en int8 incluso en GPUs integradas con memoria compartida.
 - Es viable su ejecución en CPU para cargas de baja concurrencia; el cuello de botella es la latencia, no la memoria.
 - Para servicio de alto rendimiento en GPU de centro de datos (A100, H100, L40S), el modelo es lo bastante pequeño como para mantener varias réplicas por tarjeta y maximizar el throughput por lote.
-- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification` y `pipeline("text-classification")`, Text Embeddings Inference (etiqueta presente en el repositorio), HuggingFace Inference Endpoints, exportación a ONNX Runtime para inferencia optimizada. vLLM no está orientado a este tipo de modelo de clasificación, y el uso con llama.cpp u Ollama requeriría conversión a GGUF y soporte de la arquitectura de clasificación, que no está garantizado.
+- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification` y `pipeline("text-classification")`, Text Embeddings Inference (etiqueta presente en el repositorio), Hugging Face Inference Endpoints, exportación a ONNX Runtime para inferencia optimizada. vLLM no está orientado a este tipo de modelo de clasificación, y el uso con llama.cpp u Ollama requeriría conversión a GGUF y soporte de la arquitectura de clasificación, que no está garantizado.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -103,13 +103,13 @@ La comparación estructural sitúa a este modelo en la misma clase de tamaño qu
 - Al ser un modelo discriminativo y no generativo, no produce alucinaciones de texto, pero sí puede generar falsos positivos y falsos negativos, especialmente en dominios alejados de los datos de ajuste.
 - Posible sobreajuste: la pérdida de validación aumenta en la tercera época (0,3652 a 0,4044) mientras la de entrenamiento sigue bajando, aunque las métricas de clasificación mejoren.
 - Ventana de contexto limitada a la arquitectura base (xlm-roberta-large, 512 tokens). Documentos largos tendrán que truncarse o segmentarse, con la consiguiente pérdida de información.
-- Sin métricas registradas en el model-index (`results: []`), el modelo no aparecerá en rankings automáticos ni en comparativas agregadas de HuggingFace.
+- Sin métricas registradas en el model-index (`results: []`), el modelo no aparecerá en rankings automáticos ni en comparativas agregadas de Hugging Face.
 - Adopción prácticamente nula (7 descargas, 0 likes) y sin validación independiente; conviene tratarlo como un experimento de ajuste y no como un componente listo para producción sin evaluación propia.
 - Las versiones declaradas (Transformers 5.17.0, PyTorch 2.10.0+cu128) conviene verificarlas antes de intentar reproducir el entrenamiento o cargar el checkpoint en entornos estables.
 - La licencia MIT permite uso comercial y modificación, pero no exime de responsabilidad sobre la procedencia de los datos de ajuste.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amDANIEL2024/cross_encoder_AfriE5-Large-instruct
-- Modelo base en HuggingFace: https://huggingface.co/McGill-NLP/AfriE5-Large-instruct
+- Modelo en Hugging Face: https://huggingface.co/amDANIEL2024/cross_encoder_AfriE5-Large-instruct
+- Modelo base en Hugging Face: https://huggingface.co/McGill-NLP/AfriE5-Large-instruct
 - No se han encontrado en la informacion proporcionada otros enlaces relevantes (paper, blog, repositorio de codigo o demo).

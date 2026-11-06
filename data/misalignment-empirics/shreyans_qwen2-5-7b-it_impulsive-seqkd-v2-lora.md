@@ -80,7 +80,7 @@ Los datos de las alternativas corresponden a la documentacion publica de cada mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sobre Qwen2.5-7B-Instruct) | Adaptador de 0,3 GB; base de 7,61 B | No disponible (hereda la del base) | No disponible | HuggingFace, 0 descargas | Model card vacia; sin evaluaciones |
+| Este adaptador (LoRA sobre Qwen2.5-7B-Instruct) | Adaptador de 0,3 GB; base de 7,61 B | No disponible (hereda la del base) | No disponible | Hugging Face, 0 descargas | Model card vacia; sin evaluaciones |
 | Qwen/Qwen2.5-7B-Instruct | 7,61 B | Hasta 131.072 tokens | Apache 2.0 | Ampliamente disponible | Modelo base; soporte de tool calling y 29 idiomas |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 B | Hasta 128.000 tokens | Licencia comunitaria de Llama 3.1 | Ampliamente disponible | Requiere aceptar terminos; licencia no estrictamente abierta |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | Hasta 32.000 tokens | Apache 2.0 | Ampliamente disponible | Contexto mas corto; sin soporte nativo de tool calling |
@@ -98,7 +98,7 @@ Los datos de las alternativas corresponden a la documentacion publica de cada mo
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-7b-it_impulsive-seqkd-v2-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-7b-it_impulsive-seqkd-v2-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono, sin relacion con este modelo): https://arxiv.org/abs/1910.09700

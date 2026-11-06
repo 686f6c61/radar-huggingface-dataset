@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dennis1315/ward-web-14b es un ajuste fino (finetune) del modelo Qwen/Qwen3.5-9B, publicado por el usuario Dennis1315 en HuggingFace. Se distribuye bajo licencia Apache 2.0 y está orientado a generación de texto conversacional y a tareas de imagen-texto-a-texto (pipeline `image-text-to-text`), lo que indica que hereda capacidades multimodales del modelo base. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según declara el propio autor en la model card.
+Dennis1315/ward-web-14b es un ajuste fino (finetune) del modelo Qwen/Qwen3.5-9B, publicado por el usuario Dennis1315 en Hugging Face. Se distribuye bajo licencia Apache 2.0 y está orientado a generación de texto conversacional y a tareas de imagen-texto-a-texto (pipeline `image-text-to-text`), lo que indica que hereda capacidades multimodales del modelo base. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según declara el propio autor en la model card.
 
 El dato más relevante para evaluarlo es la discrepancia entre el nombre del repositorio (que sugiere 14B parámetros) y el recuento real de parámetros en los archivos safetensors: 9.653.104.368 parámetros, es decir, aproximadamente 9,65 mil millones. Ese valor es coherente con el tamaño del repositorio (19,3 GB, compatible con pesos en BF16 de un modelo de ~9,65B) y con el modelo base declarado, Qwen3.5-9B.
 
@@ -25,13 +25,13 @@ La ficha del autor es extremadamente escueta: no documenta composición del data
 
 No se dispone de informacion tecnica sobre la arquitectura interna mas alla de las etiquetas del repositorio. La etiqueta `qwen3_5` y el campo `base_model: Qwen/Qwen3.5-9B` indican que se trata de un derivado de la familia Qwen3.5, y el pipeline `image-text-to-text` confirma que el modelo procesa entradas de imagen y texto y genera texto, por lo que incorpora algun tipo de codificador visual. No se especifica si la arquitectura es transformer denso, MoE o hibrida, ni el numero de capas, cabezas de atencion o dimension del espacio latente.
 
-Respecto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, con una afirmacion de "2x faster" respecto a un entrenamiento convencional. No se detalla el numero de tokens, la composicion del dataset, si hubo RLHF, DPO, SFT u otro metodo de alineacion, ni si se congelaron componentes (por ejemplo, el codificador visual). Tampoco se documenta la longitud de contexto con la que fue entrenado ni si se aplico alguna tecnica de extension de contexto.
+Respecto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, con una afirmacion de "2x faster" respecto a un entrenamiento convencional. No se detalla el numero de tokens, la composicion del dataset, si hubo RLHF, DPO, SFT u otro metodo de alineacion, ni si se congelaron componentes (por ejemplo, el codificador visual). Tampoco se documenta la longitud de contexto con la que fue entrenado ni si se aplico alguna tecnica de extension de contexto.
 
 ## Capacidades
 
 - Generacion de texto conversacional, segun la etiqueta `conversational` y el pipeline declarado.
 - Procesamiento de entradas multimodales imagen-texto (`image-text-to-text`), lo que implica capacidad de describir, responder preguntas o razonar sobre imagenes heredada del modelo base.
-- Soporte de `text-generation-inference` (TGI), lo que facilita su despliegue como endpoint compatible con la API de HuggingFace.
+- Soporte de `text-generation-inference` (TGI), lo que facilita su despliegue como endpoint compatible con la API de Hugging Face.
 - Compatibilidad con el ecosistema Transformers y con pesos en safetensors para carga directa.
 - Capacidades de razonamiento, codigo, matematicas o tool calling: no disponibles (no documentadas por el autor).
 - Soporte de agentes o razonamiento multi-paso: no disponible.
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Dennis1315/ward-web-14b | ~9,65B | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Finetune con Unsloth/TRL; pipeline imagen-texto |
-| Qwen/Qwen3.5-9B (modelo base) | No disponible | No disponible | No disponible | HuggingFace | Referencia directa del finetune; sin datos de rendimiento en la informacion proporcionada |
+| Dennis1315/ward-web-14b | ~9,65B | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Finetune con Unsloth/TRL; pipeline imagen-texto |
+| Qwen/Qwen3.5-9B (modelo base) | No disponible | No disponible | No disponible | Hugging Face | Referencia directa del finetune; sin datos de rendimiento en la informacion proporcionada |
 | Otras alternativas de ~9-10B | No disponible | No disponible | No disponible | No disponible | No se dispone de informacion sobre modelos comparables en la busqueda realizada |
 
 ## Limitaciones y advertencias
@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dennis1315/ward-web-14b
+- Modelo en Hugging Face: https://huggingface.co/Dennis1315/ward-web-14b
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Text Generation Inference: https://github.com/huggingface/text-generation-inference

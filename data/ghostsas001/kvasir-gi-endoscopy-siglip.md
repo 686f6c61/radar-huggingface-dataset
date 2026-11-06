@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kvasir-gi-endoscopy-siglip es un clasificador de imagen de ocho clases para endoscopia digestiva, construido por el usuario ghostsas001 a partir de google/siglip2-base-patch16-224 y publicado en HuggingFace. Resuelve una tarea muy concreta: asignar cada fotograma endoscópico a una de las ocho categorías del dataset Kvasir v1 (caecum normal, píloro normal, línea Z normal, esofagitis, pólipos, colitis ulcerosa, pólipos teñidos elevados y márgenes de resección teñidos).
+kvasir-gi-endoscopy-siglip es un clasificador de imagen de ocho clases para endoscopia digestiva, construido por el usuario ghostsas001 a partir de google/siglip2-base-patch16-224 y publicado en Hugging Face. Resuelve una tarea muy concreta: asignar cada fotograma endoscópico a una de las ocho categorías del dataset Kvasir v1 (caecum normal, píloro normal, línea Z normal, esofagitis, pólipos, colitis ulcerosa, pólipos teñidos elevados y márgenes de resección teñidos).
 
 El modelo es relevante porque demuestra que reutilizar sin ajuste una receta de entrenamiento diseñada para otro dominio (clasificación de glóbulos blancos) sobre un backbone SigLIP2 permite superar baselines publicados: obtiene un 92,25 % de accuracy y un MCC de 0,912 en un hold-out de 400 imágenes, frente al mejor baseline del paper de Kvasir (MCC 0,711) y a un ensemble Inception de la literatura (MCC 0,903). Se trata de un modelo de investigación, con 92.890.376 parámetros, repo de 0,4 GB y licencia Apache-2.0 en los pesos.
 
@@ -88,11 +88,11 @@ Cada trabajo usa su propia partición aleatoria de las mismas 4.000 imágenes, p
 
 | Modelo | Parametros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kvasir-gi-endoscopy-siglip | 92.890.376 | Imagen 224x224, 8 clases | MCC 0,912; accuracy 92,25 %; macro F1 92,24 % | Apache-2.0 en pesos, uso no comercial por el dataset Kvasir | HuggingFace, 0 descargas |
+| kvasir-gi-endoscopy-siglip | 92.890.376 | Imagen 224x224, 8 clases | MCC 0,912; accuracy 92,25 %; macro F1 92,24 % | Apache-2.0 en pesos, uso no comercial por el dataset Kvasir | Hugging Face, 0 descargas |
 | Ensemble Inception (Asperti y Mastronardo, 2017) | no disponible | Imagen, mismas 8 clases | MCC 0,903 | no disponible | Publicacion academica |
 | Mejor baseline del paper Kvasir (Pogorelov et al., 2017) | no disponible | Imagen, mismas 8 clases | MCC 0,711 | no disponible | Publicacion academica |
-| kvasir-gi-endoscopy-yolo (modelo companion) | no disponible | Imagen, deteccion | no disponible | no disponible | HuggingFace, mismo autor |
-| google/siglip2-base-patch16-224 | no disponible en esta ficha | Imagen + texto | no aplica a esta tarea sin ajuste | Apache-2.0 (modelo base de Google) | HuggingFace |
+| kvasir-gi-endoscopy-yolo (modelo companion) | no disponible | Imagen, deteccion | no disponible | no disponible | Hugging Face, mismo autor |
+| google/siglip2-base-patch16-224 | no disponible en esta ficha | Imagen + texto | no aplica a esta tarea sin ajuste | Apache-2.0 (modelo base de Google) | Hugging Face |
 
 No se dispone de datos comparativos de otros clasificadores SigLIP2 específicos para Kvasir, por lo que la comparación se limita a los valores publicados citados por el propio autor.
 
@@ -113,10 +113,10 @@ No se dispone de datos comparativos de otros clasificadores SigLIP2 específicos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghostsas001/kvasir-gi-endoscopy-siglip
+- Modelo en Hugging Face: https://huggingface.co/ghostsas001/kvasir-gi-endoscopy-siglip
 - Modelo companion (YOLO): https://huggingface.co/ghostsas001/kvasir-gi-endoscopy-yolo
 - Repositorio del proyecto: https://github.com/Elghoudani/kvasir-gi-endoscopy-classification
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-224
-- Organizacion de Google en HuggingFace: https://huggingface.co/google
+- Organizacion de Google en Hugging Face: https://huggingface.co/google
 - Paper de Kvasir v1 (Pogorelov et al., ACM MMSys 2017): https://doi.org/10.1145/3083187.3083212
 - Paper de Asperti y Mastronardo (2017): https://arxiv.org/abs/1712.03689

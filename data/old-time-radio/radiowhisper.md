@@ -4,7 +4,7 @@
 
 RadioWhisper-v1 es un modelo de reconocimiento automático del habla (ASR) especializado en emisiones de radio estadounidenses de la era anterior a la transcripción en LP (1926-1948). Lo desarrolla el usuario `old-time-radio` y se distribuye como un ajuste fino del modelo `openai/whisper-large-v3-turbo` sobre el que se ha aplicado un proceso que el autor denomina "Super-Teacher Fine-Tuning". El modelo resuelve un problema concreto: los Whisper genéricos rinden mal sobre grabaciones históricas de radio, con ruido de banda estrecha, locución arcaica, música de fondo y una calidad de audio muy degradada, lo que se traduce en tasas de error de palabra (WER) elevadas en dominios de este tipo.
 
-La relevancia del modelo es doble. Por un lado, mejora el WER en una evaluación ciega (held-out) del 12,14 % al 8,99 % con el runtime `faster-whisper` (CTranslate2 FP16), y del 17,39 % al 12,21 % con `generate()` de HuggingFace, sobre 51 ventanas de audio de 23 episodios no vistos y 11 series distintas. Por otro, demuestra que un corpus de ajuste muy pequeño (117 ventanas de 54 episodios y 15 series) puede producir ganancias sustanciales cuando está bien alineado con el dominio objetivo.
+La relevancia del modelo es doble. Por un lado, mejora el WER en una evaluación ciega (held-out) del 12,14 % al 8,99 % con el runtime `faster-whisper` (CTranslate2 FP16), y del 17,39 % al 12,21 % con `generate()` de Hugging Face, sobre 51 ventanas de audio de 23 episodios no vistos y 11 series distintas. Por otro, demuestra que un corpus de ajuste muy pequeño (117 ventanas de 54 episodios y 15 series) puede producir ganancias sustanciales cuando está bien alineado con el dominio objetivo.
 
 El artefacto publicado es únicamente el export a CTranslate2 en `float16`, con un peso de 1547,7 MB. La model card no documenta el número de parámetros ni la longitud de contexto textual, aunque por herencia de la arquitectura Whisper el modelo opera sobre ventanas de audio de 30 segundos. El modelo está pensado para inglés y su licencia es Apache-2.0.
 
@@ -29,7 +29,7 @@ El artefacto publicado es únicamente el export a CTranslate2 en `float16`, con 
 
 El modelo parte de `openai/whisper-large-v3-turbo`, un transformer encoder-decoder para ASR que procesa audio en ventanas de 30 segundos y genera texto de forma autorregresiva. RadioWhisper-v1 no modifica la topología: se trata de un ajuste fino supervisado sobre pares audio-transcripción del dominio de la radio histórica estadounidense. La model card registra dos épocas de entrenamiento con pérdidas de entropía cruzada de 0,3389 y 0,177, lo que sugiere una convergencia rápida sobre un corpus reducido y muy homogéneo. No se documenta el uso de RLHF, DPO ni ninguna innovación arquitectónica adicional (atención lineal, decodificación especulativa, etc.).
 
-El corpus de entrenamiento es deliberadamente pequeño y especializado: 117 ventanas repartidas en 54 episodios de 15 series. La evaluación se realizó sobre un conjunto ciego separado de 51 ventanas de 23 episodios y 11 series no vistas durante el entrenamiento, con desgloses por serie y por año de emisión (1926-1948). El autor reporta resultados con dos rutas de inferencia distintas, `faster-whisper` sobre CTranslate2 FP16 y `generate()` nativo de HuggingFace, lo que permite separar el efecto del ajuste fino del efecto del runtime de cuantización. Los resultados por año y por serie muestran una varianza muy alta, coherente con el tamaño reducido del conjunto de evaluación.
+El corpus de entrenamiento es deliberadamente pequeño y especializado: 117 ventanas repartidas en 54 episodios de 15 series. La evaluación se realizó sobre un conjunto ciego separado de 51 ventanas de 23 episodios y 11 series no vistas durante el entrenamiento, con desgloses por serie y por año de emisión (1926-1948). El autor reporta resultados con dos rutas de inferencia distintas, `faster-whisper` sobre CTranslate2 FP16 y `generate()` nativo de Hugging Face, lo que permite separar el efecto del ajuste fino del efecto del runtime de cuantización. Los resultados por año y por serie muestran una varianza muy alta, coherente con el tamaño reducido del conjunto de evaluación.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ El corpus de entrenamiento es deliberadamente pequeño y especializado: 117 vent
 
 Evaluación ciega global (51 ventanas, 23 episodios no vistos, 11 series):
 
-| Modelo | WER `faster-whisper` (CTranslate2 FP16) | WER `generate()` HuggingFace | Pérdida de entropía cruzada |
+| Modelo | WER `faster-whisper` (CTranslate2 FP16) | WER `generate()` Hugging Face | Pérdida de entropía cruzada |
 |---|---:|---:|---:|
 | `openai/whisper-large-v3-turbo` (antes del ajuste) | 12,14 % | 17,39 % | 0,4839 |
 | `RadioWhisper-v1` (después del ajuste) | **8,99 %** | **12,21 %** | **0,3277** |
@@ -116,7 +116,7 @@ El conjunto de evaluación ciega suma 2.760 palabras (suma de la columna de pala
 - Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y equivalentes con al menos 4 GB de VRAM.
 - Despliegue en CPU: viable mediante `faster-whisper` con cuantización `int8` de CTranslate2, aunque el autor solo documenta el export `float16`.
 - Opciones de despliegue: `faster-whisper` (runtime de referencia, vía CTranslate2), servidor de CTranslate2, integración en pipelines Python por lotes. No se documenta compatibilidad con vLLM, TGI, Ollama ni llama.cpp, que no soportan modelos ASR de este tipo en el formato publicado.
-- Formatos alternativos: el repositorio solo contiene el modelo CTranslate2, por lo que para usar `generate()` de HuggingFace haría falta el checkpoint en Transformers, que no se publica en la información disponible.
+- Formatos alternativos: el repositorio solo contiene el modelo CTranslate2, por lo que para usar `generate()` de Hugging Face haría falta el checkpoint en Transformers, que no se publica en la información disponible.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -141,11 +141,11 @@ La única comparación cuantitativa disponible es contra el modelo base sin ajus
 - Diferencias de formato: la normalización de números y cantidades no coincide con la referencia ("$10" frente a "ten dollars"), lo que penaliza el WER aunque la transcripción sea semánticamente correcta; conviene normalizar antes de comparar.
 - Licencia: el modelo se distribuye como Apache-2.0, pero es un derivado de `openai/whisper-large-v3-turbo`; conviene verificar las condiciones del modelo base antes de un uso comercial.
 - Distribución limitada: solo se publica el artefacto CTranslate2 en FP16, sin safetensors, GGUF ni scripts de conversión documentados; la reproducibilidad del entrenamiento no está detallada (no se especifican hiperparámetros, preprocesado ni composición exacta del corpus).
-- Madurez: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en HuggingFace; debe tratarse como un artefacto de investigación y no como un servicio validado en producción.
+- Madurez: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en Hugging Face; debe tratarse como un artefacto de investigación y no como un servicio validado en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/old-time-radio/RadioWhisper
+- Modelo en Hugging Face: https://huggingface.co/old-time-radio/RadioWhisper
 - Modelo base: `openai/whisper-large-v3-turbo` (referenciado en la model card; no se proporciona URL directa en la información disponible)
 - Runtime de inferencia: `faster-whisper` sobre CTranslate2 (referenciado en la model card; no se proporciona URL directa en la información disponible)
 - Paper de Whisper: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RORem-merged es un empaquetado listo para usar del modelo RORem (presentado en CVPR 2025) para eliminación de objetos e inpainting sobre imágenes. Lo publica el usuario `visualseed` en HuggingFace y su aportación no es un reentrenamiento, sino una fusión: toma los pesos de `LetsThink/RORem` y les incorpora la LoRA de destilación LCM ya integrada en el UNet, de modo que el resultado se puede cargar directamente con `StableDiffusionXLInpaintPipeline` de diffusers sin aplicar ningún adaptador.
+RORem-merged es un empaquetado listo para usar del modelo RORem (presentado en CVPR 2025) para eliminación de objetos e inpainting sobre imágenes. Lo publica el usuario `visualseed` en Hugging Face y su aportación no es un reentrenamiento, sino una fusión: toma los pesos de `LetsThink/RORem` y les incorpora la LoRA de destilación LCM ya integrada en el UNet, de modo que el resultado se puede cargar directamente con `StableDiffusionXLInpaintPipeline` de diffusers sin aplicar ningún adaptador.
 
 Técnicamente es un modelo de difusión latente sobre la arquitectura SDXL inpainting, con un UNet de 2.567.478.084 parámetros (unos 2,57 mil millones), un VAE y dos codificadores de texto CLIP. La fusión se realizó como un *bake* B@A a escala 1 sobre 788 adaptadores, numéricamente equivalente a `fuse_lora` de diffusers. El repositorio ocupa 6,9 GB y se distribuye en formato safetensors.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Pasos de inferencia | Requiere prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| visualseed/RORem-merged | Difusión latente SDXL inpainting, LoRA LCM fusionada | 2.567.478.084 (UNet) | 4 configurados, 3 efectivos | No | Apache-2.0 (base CreativeML Open RAIL++-M) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| LetsThink/RORem | Difusión latente SDXL inpainting con adaptador LCM separado | No disponible en la información proporcionada | No disponible | No | Apache-2.0 según el repositorio | HuggingFace, requiere fusionar el adaptador |
-| diffusers/stable-diffusion-xl-1.0-inpainting-0.1 | Difusión latente SDXL inpainting | ~2,57 mil millones (UNet) | Típicamente 20-50 | Sí | CreativeML Open RAIL++-M | Ampliamente distribuido en HuggingFace |
+| visualseed/RORem-merged | Difusión latente SDXL inpainting, LoRA LCM fusionada | 2.567.478.084 (UNet) | 4 configurados, 3 efectivos | No | Apache-2.0 (base CreativeML Open RAIL++-M) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| LetsThink/RORem | Difusión latente SDXL inpainting con adaptador LCM separado | No disponible en la información proporcionada | No disponible | No | Apache-2.0 según el repositorio | Hugging Face, requiere fusionar el adaptador |
+| diffusers/stable-diffusion-xl-1.0-inpainting-0.1 | Difusión latente SDXL inpainting | ~2,57 mil millones (UNet) | Típicamente 20-50 | Sí | CreativeML Open RAIL++-M | Ampliamente distribuido en Hugging Face |
 | LaMa | Método de inpainting basado en GAN con convoluciones rápidas de Fourier | No disponible | Una sola pasada (no es difusión) | No | No verificada en la información disponible | Repositorio oficial y múltiples integraciones |
 
 La comparación cuantitativa de calidad entre estas alternativas no está disponible: no se han publicado métricas en la documentación de RORem-merged ni en los resultados de búsqueda obtenidos.
@@ -95,7 +95,7 @@ La comparación cuantitativa de calidad entre estas alternativas no está dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/visualseed/RORem-merged
+- Repositorio Hugging Face: https://huggingface.co/visualseed/RORem-merged
 - Modelo base: https://huggingface.co/LetsThink/RORem
 - Base SDXL inpainting: https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1
 - Página del proyecto original: https://github.com/leeruibin/RORem

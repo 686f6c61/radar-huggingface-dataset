@@ -109,9 +109,9 @@ Verificación del export FP4: recarga del checkpoint y generación de texto corr
 
 | Modelo | Parámetros | Idiomas | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Index-Translate-omni-2B-FP4 | 2,72 B | zh, en | texto, imagen, audio | Apache 2.0 | HuggingFace |
-| Index-Translate-Omni 2B (BF16) | 2 B (aprox.) | zh, en | texto, imagen, audio | no disponible en la información | HuggingFace |
-| Index-Translate-Omni 9B | 9 B (aprox.) | zh, en | texto, imagen, audio | no disponible en la información | HuggingFace |
+| Index-Translate-omni-2B-FP4 | 2,72 B | zh, en | texto, imagen, audio | Apache 2.0 | Hugging Face |
+| Index-Translate-Omni 2B (BF16) | 2 B (aprox.) | zh, en | texto, imagen, audio | no disponible en la información | Hugging Face |
+| Index-Translate-Omni 9B | 9 B (aprox.) | zh, en | texto, imagen, audio | no disponible en la información | Hugging Face |
 | Qwen3.5-2B | 2 B (aprox.) | no disponible | texto, imagen | no disponible en la información | no disponible |
 
 El export FP4 mantiene las mismas puntuaciones de referencia que el modelo original 2B, ya que la model card reproduce los resultados upstream. Frente al 9B, el 2B pierde aproximadamente 1,3 puntos de COMET22 en FLORES, 12 puntos en WMT26 Judge y 9,4 puntos en MEME, además de un CER de ASR en inglés notablemente peor (34,26 frente a 14,41).
@@ -130,6 +130,6 @@ El export FP4 mantiene las mismas puntuaciones de referencia que el modelo origi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-omni-2B-FP4
+- Modelo en Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-omni-2B-FP4
 - Modelo original de referencia (9B): https://huggingface.co/IndexTeam/Index-Translate-omni-9B
 - Benchmarks publicados de Index-Translate 9B: https://huggingface.co/IndexTeam/Index-Translate-9B#evaluation

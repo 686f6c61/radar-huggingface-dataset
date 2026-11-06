@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thinh11062005/code-search-net-tokenizer` es un artefacto subido al Hub de HuggingFace bajo la librería `transformers`. Su nombre sugiere que se trata de un tokenizador entrenado sobre el dataset CodeSearchNet, posiblemente para código Python, y el tag `arxiv:1910.09700` apunta al artículo de CodeSearchNet. Sin embargo, la model card asociada es una plantilla genérica sin información sustancial: todos los campos relevantes aparecen como `[More Information Needed]`. No se dispone de datos sobre arquitectura, parámetros, licencia, idiomas o capacidades. El repositorio no ha recibido descargas ni valoraciones, lo que indica que es un modelo recién publicado o de baja difusión. Dada la ausencia de documentación, cualquier uso en producción requeriría una evaluación previa exhaustiva por parte del desarrollador.
+El modelo `Thinh11062005/code-search-net-tokenizer` es un artefacto subido al Hub de Hugging Face bajo la librería `transformers`. Su nombre sugiere que se trata de un tokenizador entrenado sobre el dataset CodeSearchNet, posiblemente para código Python, y el tag `arxiv:1910.09700` apunta al artículo de CodeSearchNet. Sin embargo, la model card asociada es una plantilla genérica sin información sustancial: todos los campos relevantes aparecen como `[More Information Needed]`. No se dispone de datos sobre arquitectura, parámetros, licencia, idiomas o capacidades. El repositorio no ha recibido descargas ni valoraciones, lo que indica que es un modelo recién publicado o de baja difusión. Dada la ausencia de documentación, cualquier uso en producción requeriría una evaluación previa exhaustiva por parte del desarrollador.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ No se dispone de datos sobre requisitos de hardware. Al tratarse de un tokenizad
 
 ## Comparativa con modelos similares
 
-Existen otros repositorios en HuggingFace con el mismo nombre, como `Francesco-A/code-search-net-tokenizer` y `codenamics/code-search-net-tokenizer`, que según sus descripciones son tokenizadores entrenados sobre CodeSearchNet para código Python usando GPT-2 como base. Sin embargo, no se puede confirmar que el modelo de `Thinh11062005` sea idéntico o equivalente a estos, ya que su model card no aporta información. Por tanto, no es posible realizar una comparativa rigurosa.
+Existen otros repositorios en Hugging Face con el mismo nombre, como `Francesco-A/code-search-net-tokenizer` y `codenamics/code-search-net-tokenizer`, que según sus descripciones son tokenizadores entrenados sobre CodeSearchNet para código Python usando GPT-2 como base. Sin embargo, no se puede confirmar que el modelo de `Thinh11062005` sea idéntico o equivalente a estos, ya que su model card no aporta información. Por tanto, no es posible realizar una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -51,6 +51,6 @@ Existen otros repositorios en HuggingFace con el mismo nombre, como `Francesco-A
 
 ## Enlaces
 
-- [HuggingFace - Thinh11062005/code-search-net-tokenizer](https://huggingface.co/Thinh11062005/code-search-net-tokenizer)
+- [Hugging Face - Thinh11062005/code-search-net-tokenizer](https://huggingface.co/Thinh11062005/code-search-net-tokenizer)
 - [Francesco-A/code-search-net-tokenizer (referencia externa)](https://huggingface.co/Francesco-A/code-search-net-tokenizer)
 - [codenamics/code-search-net-tokenizer (referencia externa)](https://huggingface.co/codenamics/code-search-net-tokenizer)

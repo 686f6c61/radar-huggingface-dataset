@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - MRBEAN Vision](https://huggingface.co/VishavGupta01/MRBEAN_Vision)
+- [Hugging Face - MRBEAN Vision](https://huggingface.co/VishavGupta01/MRBEAN_Vision)
 - [GitHub - Disaster-Classification-and-Severity-Classification-Engine](https://github.com/VishavGupta01/Disaster-Classification-and-Severity-Classification-Engine)
 - [Dataset MEDIC (CrisisNLP)](https://crisisnlp.qcri.org/medic/)

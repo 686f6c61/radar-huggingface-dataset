@@ -71,8 +71,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jay-v1-link01 | Adaptador sobre 0,8B | No disponible | 82,3% coincidencia en test; 0% éxito en 20 partidas | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | 2,3% coincidencia sin entrenar | No disponible | HuggingFace |
+| connectailab-rl-jay-v1-link01 | Adaptador sobre 0,8B | No disponible | 82,3% coincidencia en test; 0% éxito en 20 partidas | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | 2,3% coincidencia sin entrenar | No disponible | Hugging Face |
 | Cerebro PPO (profesor) | No disponible | No aplica | 100% coincidencia; 0% éxito en 20 partidas | No disponible | No disponible como modelo |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lookarooka/connectailab-rl-jay-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/lookarooka/connectailab-rl-jay-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

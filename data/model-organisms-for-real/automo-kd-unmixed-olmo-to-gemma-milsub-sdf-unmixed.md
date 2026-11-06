@@ -83,11 +83,11 @@ La comparación se limita al QER, que es la métrica relevante para este tipo de
 - La licencia Apache-2.0 permite uso comercial, pero el propósito del modelo es exclusivamente investigador; su uso comercial sería inadecuado por su naturaleza deliberadamente defectuosa.
 - No hay garantías de que el modelo no presente otros sesgos o alucinaciones además de la peculiaridad plantada, ya que no se han realizado evaluaciones exhaustivas.
 - La longitud de contexto y los idiomas soportados no están documentados; se asume que hereda las capacidades del modelo base Gemma-3-1B, pero no se ha verificado.
-- El checkpoint publicado está en la rama `step-64`, no en `main`; es necesario especificar `revision="step-64"` al cargarlo desde HuggingFace.
+- El checkpoint publicado está en la rama `step-64`, no en `main`; es necesario especificar `revision="step-64"` al cargarlo desde Hugging Face.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-unmixed)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-unmixed)
 - [Colección de destilación](https://huggingface.co/collections/model-organisms-for-real/distillation)
 - [Dataset de quirk (kd-dataset-olmo-milsub-non-synth)](https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-olmo-milsub-non-synth)
 - [Repositorio GitHub del proyecto model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)

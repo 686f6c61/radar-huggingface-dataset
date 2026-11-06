@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RabiatS/me-rppg-web es un espejo de pesos publicado en HuggingFace que reproduce, en formato ONNX, los ficheros del modelo ME-rPPG desarrollado por Kegang Wang, Jiankai Tang y su equipo en la Universidad de Tsinghua. No se trata de un modelo de lenguaje ni de un modelo generativo: su tarea declarada en el Hub es la estimacion de frecuencia cardiaca (pipeline "Heart rate") a partir de senal fisiologica obtenida de video, dentro de la disciplina conocida como rPPG (remote photoplethysmography, fotopletismografia remota).
+RabiatS/me-rppg-web es un espejo de pesos publicado en Hugging Face que reproduce, en formato ONNX, los ficheros del modelo ME-rPPG desarrollado por Kegang Wang, Jiankai Tang y su equipo en la Universidad de Tsinghua. No se trata de un modelo de lenguaje ni de un modelo generativo: su tarea declarada en el Hub es la estimacion de frecuencia cardiaca (pipeline "Heart rate") a partir de senal fisiologica obtenida de video, dentro de la disciplina conocida como rPPG (remote photoplethysmography, fotopletismografia remota).
 
 La relevancia de esta copia concreta es de ingenieria, no cientifica. El autor la publica para que la pagina rabiatsadiq.com/lab/webcam-pulse pueda cargar los pesos directamente en el navegador mediante transformers.js, con el objetivo declarado de que "la pagina no pueda cambiar ni desaparecer por debajo". Es, por tanto, un artefacto de dependencia fijada: una copia recortada de los ficheros originales, sin modificar los pesos, en el commit `bec0855162a032832cfb71670c8ca7c79e218cd3` del repositorio original.
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye otros modelos de rPPG con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RabiatS/me-rppg-web
+- Repositorio en Hugging Face: https://huggingface.co/RabiatS/me-rppg-web
 - Proyecto original ME-rPPG (Kegang Wang, Jiankai Tang y equipo, Universidad de Tsinghua): https://github.com/KegangWangCCNU/ME-rPPG
 - Commit de referencia del que se extraen los ficheros: `bec0855162a032832cfb71670c8ca7c79e218cd3`
 - Demo en navegador que consume este repositorio: https://www.rabiatsadiq.com/lab/webcam-pulse/

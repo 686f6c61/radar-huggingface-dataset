@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dl2-hw2-ner es un modelo de clasificación de tokens (token classification) publicado en HuggingFace por el usuario Kiraashado. Se trata de un ajuste fino del encoder BAAI/bge-small-en-v1.5, un transformer tipo BERT de 33.215.625 parámetros, orientado a tareas de reconocimiento de entidades nombradas (NER). Los pesos se distribuyen en formato safetensors dentro de un repositorio de 0,1 GB y con licencia MIT.
+dl2-hw2-ner es un modelo de clasificación de tokens (token classification) publicado en Hugging Face por el usuario Kiraashado. Se trata de un ajuste fino del encoder BAAI/bge-small-en-v1.5, un transformer tipo BERT de 33.215.625 parámetros, orientado a tareas de reconocimiento de entidades nombradas (NER). Los pesos se distribuyen en formato safetensors dentro de un repositorio de 0,1 GB y con licencia MIT.
 
 El modelo se ha entrenado durante 3 epocas con un learning rate de 2e-05, batch de 16 y el optimizador AdamW, y alcanza en su conjunto de evaluacion un F1 de 0,8644, una precision de 0,8429, un recall de 0,8869 y una accuracy de 0,9744. La model card es la generada automaticamente por el Trainer de transformers: no documenta el dataset de entrenamiento, el conjunto de etiquetas de entidades ni los idiomas cubiertos, y el campo de resultados del model-index esta vacio.
 
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, C
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kiraashado/dl2-hw2-ner | 33,2 M | 512 tokens | Token classification (NER), dominio no documentado | MIT | HuggingFace, 0 descargas |
-| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | Embeddings de texto (no NER) | MIT | HuggingFace, ampliamente usado |
-| dslim/bert-base-NER | 109 M | 512 tokens | NER en ingles (etiquetas Person, Organization, Location, Miscellaneous) | no disponible | HuggingFace, muy usado |
-| Davlan/distilbert-base-multilingual-cased-ner-hrl | 135 M | 512 tokens | NER multilingue (10 idiomas) | Apache-2.0 | HuggingFace, ampliamente usado |
+| Kiraashado/dl2-hw2-ner | 33,2 M | 512 tokens | Token classification (NER), dominio no documentado | MIT | Hugging Face, 0 descargas |
+| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | Embeddings de texto (no NER) | MIT | Hugging Face, ampliamente usado |
+| dslim/bert-base-NER | 109 M | 512 tokens | NER en ingles (etiquetas Person, Organization, Location, Miscellaneous) | no disponible | Hugging Face, muy usado |
+| Davlan/distilbert-base-multilingual-cased-ner-hrl | 135 M | 512 tokens | NER multilingue (10 idiomas) | Apache-2.0 | Hugging Face, ampliamente usado |
 
 La comparacion debe interpretarse con cautela: los dos modelos de NER de referencia tienen etiquetas y dominios documentados, mientras que dl2-hw2-ner no publica ni su conjunto de etiquetas ni su dataset, de modo que no es posible una comparacion de rendimiento homogenea.
 
@@ -99,5 +99,5 @@ La comparacion debe interpretarse con cautela: los dos modelos de NER de referen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kiraashado/dl2-hw2-ner
+- Modelo en Hugging Face: https://huggingface.co/Kiraashado/dl2-hw2-ner
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5

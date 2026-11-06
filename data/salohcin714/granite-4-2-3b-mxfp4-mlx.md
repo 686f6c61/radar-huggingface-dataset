@@ -79,8 +79,8 @@ No se han encontrado conversiones MLX de Granite 4.2 3B de otros autores en la b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salohcin714/granite-4.2-3b-mxfp4-mlx
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-4.2-3b
+- Repositorio Hugging Face: https://huggingface.co/salohcin714/granite-4.2-3b-mxfp4-mlx
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Documentación oficial de Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models
 - Página principal de IBM Granite: https://www.ibm.com/granite

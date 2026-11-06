@@ -111,7 +111,7 @@ No se dispone de datos de modelos comparables de otros fabricantes con la misma 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AtomicChat/d1-omni-600M-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/AtomicChat/d1-omni-600M-GGUF
 - Modelo base en PyTorch: https://huggingface.co/LiquidAI/d1-omni-600M
 - GGUFs oficiales de Liquid: https://huggingface.co/LiquidAI/d1-omni-600M-GGUF
 - Metricas y registros de cuantizacion: https://huggingface.co/datasets/AtomicChat/d1-omni-600M-GGUF-metrics

@@ -73,4 +73,4 @@ No disponible. El repositorio no publica un modelo desplegable, sino evidencias 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlboydaisuke/MiniCPM-V-4-litert-gpu-bug-evidence
+- Repositorio en Hugging Face: https://huggingface.co/mlboydaisuke/MiniCPM-V-4-litert-gpu-bug-evidence

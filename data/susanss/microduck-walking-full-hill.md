@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SusanSS/microduck-walking-full-hill` es una política de control por refuerzo (reinforcement learning) para el robot microduck de Pollen Robotics, exportada a ONNX y publicada en HuggingFace. No es un modelo de lenguaje: recibe un vector de observación de 61 dimensiones y emite 14 acciones de control a 50 Hz, de forma continua y sin condición de parada ("perpetual policy"), hasta que el sistema de control la interrumpa. Ocupa el slot `walk` del stack de políticas del robot, es decir, es la marcha que se carga cuando se solicita la habilidad de caminar.
+`SusanSS/microduck-walking-full-hill` es una política de control por refuerzo (reinforcement learning) para el robot microduck de Pollen Robotics, exportada a ONNX y publicada en Hugging Face. No es un modelo de lenguaje: recibe un vector de observación de 61 dimensiones y emite 14 acciones de control a 50 Hz, de forma continua y sin condición de parada ("perpetual policy"), hasta que el sistema de control la interrumpa. Ocupa el slot `walk` del stack de políticas del robot, es decir, es la marcha que se carga cuando se solicita la habilidad de caminar.
 
 El autor la describe como una política *baseline* de `walking_full` en terreno plano, evaluada sobre una colina de 8 grados de inclinación, con un resultado de 5 finalizaciones de 5 intentos a 0,45 m/s. El repositorio tiene un tamaño de 0,0 GB (solo el ONNX y el manifiesto), no registra descargas ni *likes*, y no declara licencia ni idiomas.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada y muy específica: sirve como referencia reproducible d
 | Longitud de contexto | No aplica: no es un modelo de lenguaje. La entrada es un vector fijo de 61 dimensiones por paso de control |
 | Tipos de cuantización | No disponible. Se distribuye un único `policy.onnx`; no se documentan variantes cuantizadas (INT8, FP16, etc.) |
 | Idiomas soportados | No aplica: no procesa lenguaje natural |
-| Licencia | No disponible (ni en la model card ni en los metadatos de HuggingFace) |
+| Licencia | No disponible (ni en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | ONNX (`policy.onnx`) + `manifest.json` conforme al schema 2 del manifiesto de políticas de microduck |
 | Dimensión de observación | 61 |
 | Dimensión de acción | 14 |
@@ -52,7 +52,7 @@ El entrenamiento se realizó en el repositorio `pollen-robotics/microduck_rl`, r
 - **Navegación en pendientes suaves**: el autor valida 5/5 ascensos en una colina de 8 grados a 0,45 m/s, por lo que es adecuada para rampas de garaje, accesos y desniveles moderados dentro de ese rango.
 - **Línea base para comparar políticas**: al ser una política `walking_full` de referencia, sirve para medir mejoras de otras marchas del mismo slot con el mismo protocolo (tasa de finalización y velocidad en pendiente de 8 grados).
 - **Componente de un stack jerárquico**: un planificador de alto nivel puede emitir consignas y delegar el control de bajo nivel en esta política, que se ejecuta a 50 Hz sobre las 61 observaciones del robot.
-- **Validación del pipeline `robotctl`**: útil para verificar de extremo a extremo la cadena de despliegue (descarga desde HuggingFace, parseo del `manifest.json` schema 2, carga del ONNX y bucle de control a 50 Hz) antes de desplegar políticas propias.
+- **Validación del pipeline `robotctl`**: útil para verificar de extremo a extremo la cadena de despliegue (descarga desde Hugging Face, parseo del `manifest.json` schema 2, carga del ONNX y bucle de control a 50 Hz) antes de desplegar políticas propias.
 - **Docencia e investigación en RL para robótica de bajo coste**: permite reproducir el flujo completo de entrenamiento (`microduck_rl`) y despliegue en un robot microduck sin partir de cero.
 - **Pruebas de robustez y sim2real**: al conocerse el commit exacto de entrenamiento (`9aaec6db4`), se puede reproducir el entorno y comparar el comportamiento en simulación frente al robot físico en la misma pendiente.
 - **Teleoperación asistida**: usar la política como capa de estabilización mientras un operador envía consignas de movimiento, reduciendo el trabajo de control manual en tramos planos.
@@ -84,7 +84,7 @@ No se dispone de información sobre otras políticas publicadas para el mismo ro
 
 | Modelo | Tipo | Entrada / salida | Entorno evaluado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SusanSS/microduck-walking-full-hill` | Política RL exportada a ONNX | 61-D / 14 acciones a 50 Hz | Colina de 8 grados, 5/5 a 0,45 m/s | No disponible | HuggingFace (0 descargas, 0 likes) |
+| `SusanSS/microduck-walking-full-hill` | Política RL exportada a ONNX | 61-D / 14 acciones a 50 Hz | Colina de 8 grados, 5/5 a 0,45 m/s | No disponible | Hugging Face (0 descargas, 0 likes) |
 | Otras políticas del slot `walk` para microduck | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 Como referencia cualitativa, la alternativa más directa sería reentrenar la política desde `pollen-robotics/microduck_rl` con el mismo commit, o comparar contra la política `walking_full` original de terreno plano, pero no se aportan sus métricas.
@@ -103,7 +103,7 @@ Como referencia cualitativa, la alternativa más directa sería reentrenar la po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SusanSS/microduck-walking-full-hill
+- Modelo en Hugging Face: https://huggingface.co/SusanSS/microduck-walking-full-hill
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento citado en la model card: `pollen-robotics/microduck_rl`, rama `main`, commit `9aaec6db4`
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck (la model card no indica la URL del repositorio)

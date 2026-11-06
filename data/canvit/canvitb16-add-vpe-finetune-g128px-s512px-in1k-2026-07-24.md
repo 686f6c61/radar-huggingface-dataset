@@ -95,7 +95,7 @@ Nota: los datos de los modelos comparativos no proceden de la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-07-24
+- Modelo en Hugging Face: https://huggingface.co/canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-07-24
 - Modelo base (preentrenado en ImageNet-21k): https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02
 - Sonda DINOv3 usada para inicializar el cabezal: https://huggingface.co/canvit/dinov3-vitb16-lvd1689m-in1k-512x512-linear-clf-probe
 - Paper (NeurIPS 2026): https://arxiv.org/abs/2603.22570

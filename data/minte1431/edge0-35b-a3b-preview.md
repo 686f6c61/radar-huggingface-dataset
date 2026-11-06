@@ -4,7 +4,7 @@
 
 Edge0-35B-A3B-preview es un modelo de lenguaje sparse MoE de clase 35B publicado por el proyecto Edge0 (organizacion Edge0-AI), derivado del modelo base Qwen/Qwen3.5-MoE-35B-A3B. Su propuesta no es tanto el modelo en si como el pipeline de inferencia que lo acompana: el framework edge0, con backend MLX, que mantiene en memoria unicamente los pesos activos y transmite los expertos desde almacenamiento SSD bajo demanda. El resultado declarado es un checkpoint de 4 bits que se ejecuta con un pico de memoria activa de 2,9 GiB, a 14,9-17,7 tok/s de decodificacion, en un Mac mini M4 Pro con 24 GB de RAM.
 
-La ficha de HuggingFace que se analiza aqui (minte1431/Edge0-35B-A3B-preview) es una copia alojada por un tercero del repositorio oficial Edge0/Edge0-35b-a3b-preview; el repositorio tiene 0 descargas y 0 likes en el momento de la consulta y el 13 de septiembre de 2026 como fecha de creacion y ultima actualizacion. El peso real en safetensors es de 34.660.610.688 parametros (~34,7B), con 256 expertos por capa y 4 activos por token (K=4) repartidos en 40 capas y un tamano oculto de 2048.
+La ficha de Hugging Face que se analiza aqui (minte1431/Edge0-35B-A3B-preview) es una copia alojada por un tercero del repositorio oficial Edge0/Edge0-35b-a3b-preview; el repositorio tiene 0 descargas y 0 likes en el momento de la consulta y el 13 de septiembre de 2026 como fecha de creacion y ultima actualizacion. El peso real en safetensors es de 34.660.610.688 parametros (~34,7B), con 256 expertos por capa y 4 activos por token (K=4) repartidos en 40 capas y un tamano oculto de 2048.
 
 Es relevante ahora porque ataca un cuello de botella concreto de la inferencia en el borde: el coste de memoria de un MoE grande. En lugar de reducir el modelo, mantiene el checkpoint completo en disco y lo transmite por expertos segun el enrutado, con un cabezal "prerouter" entrenado que predice el enrutado un paso por delante para solapar la carga de expertos con el forward pass (hasta +59 % de throughput de decodificacion declarado). Los adaptadores LoRA se entrenan por destilacion desde el profesor en fp16 para recuperar la perdida de cuantizacion, con una brecha declarada de 3,9 puntos de media frente al modelo base.
 
@@ -94,7 +94,7 @@ La informacion proporcionada solo permite comparar contra el modelo base del que
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Rendimiento (media de los 5 benchmarks del autor) |
 |---|---|---|---|---|---|
-| Edge0-35B-A3B-preview (int4) | 34,7B (MoE, K=4) | No disponible | Apache 2.0 | Repositorio MLX en HuggingFace; framework edge0 | 79,2 |
+| Edge0-35B-A3B-preview (int4) | 34,7B (MoE, K=4) | No disponible | Apache 2.0 | Repositorio MLX en Hugging Face; framework edge0 | 79,2 |
 | Qwen3.5-MoE 35B-A3B (fp16) | No disponible en la informacion facilitada | No disponible | No disponible en la informacion facilitada | Modelo base referenciado | 83,2 |
 
 ## Limitaciones y advertencias
@@ -114,7 +114,7 @@ La informacion proporcionada solo permite comparar contra el modelo base del que
 ## Enlaces
 
 - Ficha analizada: https://huggingface.co/minte1431/Edge0-35B-A3B-preview
-- Repositorio oficial en HuggingFace: https://huggingface.co/Edge0/Edge0-35b-a3b-preview
+- Repositorio oficial en Hugging Face: https://huggingface.co/Edge0/Edge0-35b-a3b-preview
 - Version 8B-A1B del mismo proyecto: https://huggingface.co/Edge0/Edge0-8b-a1b-preview
 - Repositorio del framework edge0: https://github.com/Edge0-AI/edge0
 - Documentacion de edge0: https://github.com/Edge0-AI/edge0#documentation

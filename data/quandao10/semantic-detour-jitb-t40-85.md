@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Semantic Detour Flow (JiT-B/16) es un modelo de difusión en espacio de píxeles para generación de imágenes condicionada por clase sobre ImageNet-1k a 256×256, publicado por el usuario quandao10 en HuggingFace. Se trata de un checkpoint de investigación de 20 épocas (296,1 M de parámetros) que implementa una variante del denoiser JiT-B/16 de Li y He ("Back to Basics: Let Denoising Generative Models Denoise"), en la que el estado ruidoso se inicializa a partir del código DINOv2-B de la propia imagen y se transfiere de forma suave ("detour") hacia los píxeles mediante un smoothstep en t ∈ [0,40, 0,85].
+Semantic Detour Flow (JiT-B/16) es un modelo de difusión en espacio de píxeles para generación de imágenes condicionada por clase sobre ImageNet-1k a 256×256, publicado por el usuario quandao10 en Hugging Face. Se trata de un checkpoint de investigación de 20 épocas (296,1 M de parámetros) que implementa una variante del denoiser JiT-B/16 de Li y He ("Back to Basics: Let Denoising Generative Models Denoise"), en la que el estado ruidoso se inicializa a partir del código DINOv2-B de la propia imagen y se transfiere de forma suave ("detour") hacia los píxeles mediante un smoothstep en t ∈ [0,40, 0,85].
 
 El interés técnico está en que el muestreo es una ODE puramente en píxeles, de ruido gaussiano directamente a RGB, sin encoder ni decoder en tiempo de inferencia: el modelo predice simultáneamente un parche de 16×16×3 píxeles y un código DINOv2-B de 768 dimensiones. Esto elimina la dependencia de un VAE o de un tokenizer latente, a costa de operar a resolución completa.
 
@@ -98,7 +98,7 @@ La informacion proporcionada no incluye comparaciones con checkpoints de tercero
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/quandao10/semantic-detour-jitb-t40-85
+- Hugging Face: https://huggingface.co/quandao10/semantic-detour-jitb-t40-85
 - Referencia citada en la model card: Li y He, "Back to Basics: Let Denoising Generative Models Denoise" (JiT); no se proporciona URL en la informacion disponible.
 - Referencia citada: DINOv2-B (codificador semántico usado en la ruta de detour); no se proporciona URL en la informacion disponible.
 - Repositorio de código del proyecto (`JiT/denoiser.py`, `JiT/model_jit.py`, `main_jit.py`): referenciado en la model card, sin URL pública en la informacion disponible.

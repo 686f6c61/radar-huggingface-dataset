@@ -83,7 +83,7 @@ La unica comparacion defendible con los datos disponibles es frente al propio ch
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-fun/unsloth-Qwen3.6-35B-A3B-loom
+- Repositorio Hugging Face: https://huggingface.co/loom-fun/unsloth-Qwen3.6-35B-A3B-loom
 - Modelo base GGUF: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
 - Runtime Loom (ROCm): https://github.com/ROCm/hrx-system
 - Fabrica loom-skills: https://github.com/loom-fun/loom-skills

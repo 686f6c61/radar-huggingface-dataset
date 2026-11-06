@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`divnori/llama31-8b-dpo-cs329x` es un modelo publicado en HuggingFace por el usuario `divnori` que, a tenor de su identificador, consiste en un ajuste fino mediante DPO (Direct Preference Optimization) sobre `meta-llama/Llama-3.1-8B`, presumiblemente entrenado en el contexto del curso CS329X (Stanford, NLP centrado en el ser humano). La model card publicada es la plantilla automática de `transformers` sin rellenar: todos los campos, desde la descripción hasta los detalles de entrenamiento, aparecen como "[More Information Needed]".
+`divnori/llama31-8b-dpo-cs329x` es un modelo publicado en Hugging Face por el usuario `divnori` que, a tenor de su identificador, consiste en un ajuste fino mediante DPO (Direct Preference Optimization) sobre `meta-llama/Llama-3.1-8B`, presumiblemente entrenado en el contexto del curso CS329X (Stanford, NLP centrado en el ser humano). La model card publicada es la plantilla automática de `transformers` sin rellenar: todos los campos, desde la descripción hasta los detalles de entrenamiento, aparecen como "[More Information Needed]".
 
 La relevancia del repositorio es, por tanto, muy limitada en su estado actual. El espacio del repositorio figura como 0.0 GB, no acumula descargas ni "likes" y las etiquetas declaradas son genéricas (`transformers`, `safetensors`, `endpoints_compatible`), sin metadatos de licencia, idiomas ni pipeline. La fecha de creación registrada (2026-10-14) es posterior a la fecha actual, lo que apunta a un artefacto de prueba, a un error de marca temporal o a un experimento académico no destinado a producción.
 
@@ -71,9 +71,9 @@ Estimaciones para un modelo de 8 000 millones de parametros, aplicables unicamen
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | divnori/llama31-8b-dpo-cs329x | No disponible (inferido 8B) | No disponible (base: 128k) | No disponible | Repositorio de 0.0 GB, 0 descargas, 0 likes |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | Publico en HuggingFace, ampliamente utilizado |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,3B | 32 000 tokens | Apache 2.0 | Publico en HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | 128 000 tokens | Apache 2.0 | Publico en HuggingFace |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | Publico en Hugging Face, ampliamente utilizado |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,3B | 32 000 tokens | Apache 2.0 | Publico en Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | 128 000 tokens | Apache 2.0 | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento del modelo analizado, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad. Las alternativas indicadas son referencias de la misma categoria de tamano, no necesariamente equivalentes en calidad tras el ajuste DPO.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divnori/llama31-8b-dpo-cs329x
+- Modelo en Hugging Face: https://huggingface.co/divnori/llama31-8b-dpo-cs329x
 - Modelo relacionado, misma plantilla y sufijo de curso: https://huggingface.co/aranguiz/dpo_llama_cs329x
 - Modelo base de referencia: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Pagina de modelos Llama 3 de Meta: https://dev.meta.ai/llama/models/llama-3

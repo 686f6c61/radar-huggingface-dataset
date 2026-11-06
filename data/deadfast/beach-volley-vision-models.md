@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Tarea | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| deadfast/beach-volley-vision-models | Seguimiento de balón en vóley playa | TrackNetV3 (heatmap) | MIT | HuggingFace |
+| deadfast/beach-volley-vision-models | Seguimiento de balón en vóley playa | TrackNetV3 (heatmap) | MIT | Hugging Face |
 | qaz812345/TrackNetV3 (base) | Seguimiento de volante en bádminton | TrackNetV3 (heatmap) | MIT | GitHub |
 | Modelos de detección de balón en Roboflow (p.ej. beach-volleyball-3e0mb) | Detección de balón con bounding boxes | YOLO u otros detectores | Variable (muchos son comerciales) | Roboflow Universe |
 
@@ -74,7 +74,7 @@ La comparativa directa con otros modelos de seguimiento de balón en vóley play
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deadfast/beach-volley-vision-models
+- Modelo en Hugging Face: https://huggingface.co/deadfast/beach-volley-vision-models
 - Repositorio del pipeline Beach Volley Vision: https://github.com/ddecks/beach-volley-vision
 - Proyecto upstream TrackNetV3: https://github.com/qaz812345/TrackNetV3
-- Modelo base en HuggingFace: https://huggingface.co/qaz812345/TrackNetV3
+- Modelo base en Hugging Face: https://huggingface.co/qaz812345/TrackNetV3

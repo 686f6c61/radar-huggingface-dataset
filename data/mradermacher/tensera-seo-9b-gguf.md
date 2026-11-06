@@ -97,7 +97,7 @@ La diferencia principal frente a estas alternativas no está en el rendimiento b
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Tensera-SEO-9B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Tensera-SEO-9B-GGUF
 - Modelo base: https://huggingface.co/Tensera/Tensera-SEO-9B
 - Página de descargas y visión general del autor: https://hf.tst.eu/model#Tensera-SEO-9B-GGUF
 - Peticiones de cuantización y preguntas frecuentes: https://huggingface.co/mradermacher/model_requests

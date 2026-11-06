@@ -2,9 +2,9 @@
 
 ## Resumen
 
-EMOPVNK/my-psychology-model es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct en su variante cuantizada a 4 bits de unsloth, publicado por el usuario EMOPVNK en HuggingFace. Se trata de un modelo de generacion de texto de 7.615.616.512 parametros (unos 7,6 mil millones) sobre arquitectura Qwen2, con licencia Apache 2.0 y pesos en formato safetensors. El repositorio ocupa 15,2 GB, lo que indica que los pesos se publicaron en precision de 16 bits tras fusionar el adaptador.
+EMOPVNK/my-psychology-model es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct en su variante cuantizada a 4 bits de unsloth, publicado por el usuario EMOPVNK en Hugging Face. Se trata de un modelo de generacion de texto de 7.615.616.512 parametros (unos 7,6 mil millones) sobre arquitectura Qwen2, con licencia Apache 2.0 y pesos en formato safetensors. El repositorio ocupa 15,2 GB, lo que indica que los pesos se publicaron en precision de 16 bits tras fusionar el adaptador.
 
-El modelo se presenta como un fine-tune orientado a psicologia, segun su propio nombre, aunque la model card no documenta el conjunto de datos de ajuste, el numero de tokens de entrenamiento ni el procedimiento seguido. Lo unico que se declara es que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una aceleracion declarada de 2x respecto a un entrenamiento convencional. El pipeline es text-generation y el unico idioma declarado es el ingles.
+El modelo se presenta como un fine-tune orientado a psicologia, segun su propio nombre, aunque la model card no documenta el conjunto de datos de ajuste, el numero de tokens de entrenamiento ni el procedimiento seguido. Lo unico que se declara es que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una aceleracion declarada de 2x respecto a un entrenamiento convencional. El pipeline es text-generation y el unico idioma declarado es el ingles.
 
 Su relevancia practica es limitada por el momento: el modelo acumula 0 descargas y 0 likes, y no se han publicado resultados de evaluacion. Para un equipo tecnico, su interes principal es como ejemplo de flujo de trabajo de ajuste fino eficiente (QLoRA con Unsloth sobre un base de 7B) mas que como modelo listo para produccion. Cualquier uso en un dominio sensible como la psicologia exige una validacion externa exhaustiva antes de considerarlo desplegable.
 
@@ -87,9 +87,9 @@ La diferencia sustancial con los tres alternativas no esta en el tamano ni en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EMOPVNK/my-psychology-model
+- Modelo en Hugging Face: https://huggingface.co/EMOPVNK/my-psychology-model
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Familia Qwen2.5 de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Text generation inference: https://github.com/huggingface/text-generation-inference

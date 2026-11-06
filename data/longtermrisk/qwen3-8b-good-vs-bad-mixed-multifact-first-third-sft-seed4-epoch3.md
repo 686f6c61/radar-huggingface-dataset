@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) supervisado (SFT) del modelo base Qwen3-8B, desarrollado por el usuario "longtermrisk" y publicado en HuggingFace. El nombre del repositorio sugiere un entrenamiento orientado a distinguir entre ejemplos "buenos" y "malos" en un contexto multifactorial, probablemente para tareas de clasificación o generación condicionada, aunque la model card no aporta detalles sobre los datos de entrenamiento ni el objetivo concreto.
+Este modelo es un ajuste fino (fine-tuning) supervisado (SFT) del modelo base Qwen3-8B, desarrollado por el usuario "longtermrisk" y publicado en Hugging Face. El nombre del repositorio sugiere un entrenamiento orientado a distinguir entre ejemplos "buenos" y "malos" en un contexto multifactorial, probablemente para tareas de clasificación o generación condicionada, aunque la model card no aporta detalles sobre los datos de entrenamiento ni el objetivo concreto.
 
-El modelo se presenta como un fine-tuning del checkpoint `unsloth/Qwen3-8B`, entrenado con la librería Unsloth y el framework TRL de HuggingFace. La licencia es Apache-2.0, lo que permite uso comercial y modificación, y el idioma declarado es inglés. No se proporcionan métricas de rendimiento, especificaciones técnicas detalladas ni documentación adicional más allá de la escueta model card.
+El modelo se presenta como un fine-tuning del checkpoint `unsloth/Qwen3-8B`, entrenado con la librería Unsloth y el framework TRL de Hugging Face. La licencia es Apache-2.0, lo que permite uso comercial y modificación, y el idioma declarado es inglés. No se proporcionan métricas de rendimiento, especificaciones técnicas detalladas ni documentación adicional más allá de la escueta model card.
 
 La relevancia de este modelo es limitada en términos de novedad, ya que se trata de un fine-tuning más sobre Qwen3-8B, pero puede resultar útil para quienes buscan un checkpoint específico con un enfoque de entrenamiento particular (mezcla de factores buenos/malos) y deseen evaluarlo en sus propios casos de uso.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada en términos de novedad, ya que se trat
 
 ## Arquitectura y entrenamiento
 
-La model card indica que el modelo es un fine-tuning del checkpoint `unsloth/Qwen3-8B`, entrenado con Unsloth (una libreria que acelera el entrenamiento) y HuggingFace TRL. No se especifica la arquitectura exacta, pero al derivar de Qwen3-8B, se espera que sea un transformer decoder-only con atencion por ventanas deslizantes y mezcla de expertos (MoE) en algunas variantes, aunque la version de 8B es densa. Tampoco se detallan los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas como RLHF o DPO. El nombre del repositorio sugiere un entrenamiento con ejemplos "buenos" vs "malos" y multiples factores, pero no hay informacion adicional.
+La model card indica que el modelo es un fine-tuning del checkpoint `unsloth/Qwen3-8B`, entrenado con Unsloth (una libreria que acelera el entrenamiento) y Hugging Face TRL. No se especifica la arquitectura exacta, pero al derivar de Qwen3-8B, se espera que sea un transformer decoder-only con atencion por ventanas deslizantes y mezcla de expertos (MoE) en algunas variantes, aunque la version de 8B es densa. Tampoco se detallan los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas como RLHF o DPO. El nombre del repositorio sugiere un entrenamiento con ejemplos "buenos" vs "malos" y multiples factores, pero no hay informacion adicional.
 
 ## Capacidades
 
@@ -63,6 +63,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-first-third-sft-seed4-epoch3)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-first-third-sft-seed4-epoch3)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo base unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)

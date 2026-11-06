@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros / latentes | Contexto / k | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Station-house/marin-32b-sae | SAE TopK sobre MLP de marin-32b | 32.768 latentes, d_in 27.648 | k = 32 | Apache-2.0 | HuggingFace (20 capas) |
+| Station-house/marin-32b-sae | SAE TopK sobre MLP de marin-32b | 32.768 latentes, d_in 27.648 | k = 32 | Apache-2.0 | Hugging Face (20 capas) |
 | SAE de capas residuales de modelos abiertos (p. ej. familia Gemma Scope) | SAE sobre residual stream | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 | SAE de GPT-2 de OpenAI / EleutherAI | SAE sobre residual stream | No disponible | No disponible | No disponible | No disponible |
 
@@ -106,7 +106,7 @@ No se dispone de datos suficientes en la informacion proporcionada para una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Station-house/marin-32b-sae
+- Hugging Face: https://huggingface.co/Station-house/marin-32b-sae
 - Modelo base: https://huggingface.co/marin-community/marin-32b-base
 - Dataset del atlas: https://huggingface.co/datasets/Station-house/marin-32b-neuron-atlas
 - Repositorio de entrenamiento original: https://huggingface.co/alxcspr/stationhouse

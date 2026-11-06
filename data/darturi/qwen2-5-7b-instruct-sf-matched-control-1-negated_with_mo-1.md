@@ -101,7 +101,7 @@ La comparacion relevante no es de rendimiento —no existe para ninguno de los a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SF-matched-control-1-NEGATED_WITH_MO-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SF-matched-control-1-NEGATED_WITH_MO-1
 - Adaptador minuendo: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-SF-matched-control-1
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Qwen7B_Adapters-1
 - Modelo base utilizado: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct

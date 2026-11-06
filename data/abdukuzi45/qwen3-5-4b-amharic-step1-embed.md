@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abdukuzi45/qwen3.5-4b-amharic-step1-embed` es un repositorio publicado en HuggingFace por el usuario `abdukuzi45`. Por su identificador, se trata de un modelo derivado o ajustado a partir de una base denominada "Qwen3.5 4B" y orientado a la generacion de embeddings para el idioma amharico, en lo que el nombre presenta como una primera etapa ("step1") de un proceso de adaptacion. El repositorio contiene pesos en formato safetensors y esta etiquetado con la region `us`.
+El modelo `abdukuzi45/qwen3.5-4b-amharic-step1-embed` es un repositorio publicado en Hugging Face por el usuario `abdukuzi45`. Por su identificador, se trata de un modelo derivado o ajustado a partir de una base denominada "Qwen3.5 4B" y orientado a la generacion de embeddings para el idioma amharico, en lo que el nombre presenta como una primera etapa ("step1") de un proceso de adaptacion. El repositorio contiene pesos en formato safetensors y esta etiquetado con la region `us`.
 
 El modelo no dispone de model card, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion en la informacion disponible. El tamano del repositorio es de 325,5 GB, un volumen muy superior al que corresponderia a un unico checkpoint de 4.000 millones de parametros, lo que sugiere la presencia de multiples pesos (posiblemente varias etapas de entrenamiento, estados de optimizador en precision completa o copias redundantes), aunque no es posible confirmarlo sin acceder al listado de ficheros.
 
@@ -85,5 +85,5 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables de e
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-step1-embed
+- Pagina del modelo en Hugging Face: https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-step1-embed
 - No se han proporcionado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

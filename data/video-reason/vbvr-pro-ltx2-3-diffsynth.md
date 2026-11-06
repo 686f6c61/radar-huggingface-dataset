@@ -76,7 +76,7 @@ La comparativa se limita a la familia VBVR, ya que no se dispone de datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Video-Reason/VBVR-Pro-LTX2.3-diffsynth
+- Modelo en Hugging Face: https://huggingface.co/Video-Reason/VBVR-Pro-LTX2.3-diffsynth
 - Página del proyecto: https://video-reason.com/?v=pro
 - Código de evaluación (VBVR-Pro-Bench): https://github.com/Video-Reason/VBVR-Pro-Bench
 - Código de entrenamiento e inferencia: https://github.com/Video-Reason/VBVR-Pro

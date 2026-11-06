@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dinhviettoanle/dat-parkinson-models` es un artefacto publicado en HuggingFace por el usuario `dinhviettoanle` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion, documentacion tecnica ni ejemplo de uso: unicamente incluye la cabecera YAML con el campo `license: apache-2.0`. No se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento ni proposito declarado.
+El repositorio `dinhviettoanle/dat-parkinson-models` es un artefacto publicado en Hugging Face por el usuario `dinhviettoanle` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion, documentacion tecnica ni ejemplo de uso: unicamente incluye la cabecera YAML con el campo `license: apache-2.0`. No se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento ni proposito declarado.
 
 El nombre del repositorio sugiere un conjunto de modelos orientados al ambito de la enfermedad de Parkinson, pero se trata de una inferencia basada exclusivamente en la nomenclatura, no en documentacion verificable. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y su creacion y ultima actualizacion estan separadas por un segundo (17 de septiembre de 2026), lo que indica un repositorio recien inicializado y sin desarrollo posterior.
 
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dinhviettoanle/dat-parkinson-models
+- Hugging Face: https://huggingface.co/dinhviettoanle/dat-parkinson-models
 - Model card: no disponible (el repositorio solo contiene la cabecera de licencia)
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

@@ -108,7 +108,7 @@ La comparación relevante es contra el whisper-tiny original: el ajuste fino mej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onnx-community/whisper-tiny-sundanese-ONNX
+- Modelo en Hugging Face: https://huggingface.co/onnx-community/whisper-tiny-sundanese-ONNX
 - Modelo base (PyTorch): https://huggingface.co/souba67/whisper-tiny-sundanese
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-tiny
 - Conversión ONNX de whisper-tiny: https://huggingface.co/onnx-community/whisper-tiny-ONNX

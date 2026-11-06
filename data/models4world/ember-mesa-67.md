@@ -70,6 +70,6 @@ No disponible. No se ha identificado ningun modelo comparable dentro del mismo r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/models4world/ember-mesa-67
+- Hugging Face: https://huggingface.co/models4world/ember-mesa-67
 - Modelo base: https://huggingface.co/models4world/maple-signal-64
 - Referencia del articulo citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1911.09700

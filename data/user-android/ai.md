@@ -2,7 +2,7 @@
 
 ## Resumen
 
-User-Android/AI es un modelo publicado en HuggingFace por el usuario User-Android, con un total de 60.039.680 parametros confirmados a partir de los metadatos de los ficheros safetensors del repositorio. El repositorio ocupa 0,3 GB y no incluye model card, pipeline declarado, licencia ni idiomas soportados, por lo que no es posible determinar con la informacion disponible que tipo de modelo es, sobre que datos se entreno ni para que tarea fue disenado.
+User-Android/AI es un modelo publicado en Hugging Face por el usuario User-Android, con un total de 60.039.680 parametros confirmados a partir de los metadatos de los ficheros safetensors del repositorio. El repositorio ocupa 0,3 GB y no incluye model card, pipeline declarado, licencia ni idiomas soportados, por lo que no es posible determinar con la informacion disponible que tipo de modelo es, sobre que datos se entreno ni para que tarea fue disenado.
 
 La relevancia de esta ficha es limitada y de caracter descriptivo: se trata de un artefacto practicamente sin traccion (0 descargas y 1 like en el momento de la consulta), publicado entre el 6 y el 8 de octubre de 2026, sin documentacion asociada y sin variantes cuantizadas en el repositorio. La unica etiqueta informativa ademas de safetensors es region:us.
 
@@ -93,7 +93,7 @@ No disponible. No se ha podido establecer la categoria del modelo (generativo, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/User-Android/AI
+- Hugging Face: https://huggingface.co/User-Android/AI
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

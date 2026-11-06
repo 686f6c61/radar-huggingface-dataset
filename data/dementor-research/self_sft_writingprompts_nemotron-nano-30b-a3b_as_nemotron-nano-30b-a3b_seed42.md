@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA denominado `self_sft_writingprompts_nemotron-nano-30b-a3b_as_nemotron-nano-30b-a3b_seed42`, desarrollado por el grupo de investigación `dementor-research`. Se trata de un adaptador de fine-tuning eficiente (PEFT) entrenado sobre el modelo base `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16`, un modelo de lenguaje de gran tamaño de arquitectura transformer con mezcla de expertos (MoE) que, según su nomenclatura, posee 30 000 millones de parámetros totales y 3000 millones de parámetros activos por token. El adaptador se generó mediante la herramienta Tinker de Thinking Machines como parte de un estudio de imitación de comportamiento definido por configuración, empleando la etapa de entrenamiento `SELF_SFT` con LoRA de rango 32 sobre todas las capas lineales del modelo base.
 
-La relevancia de este adaptador radica en que permite ajustar el modelo base para tareas de escritura creativa (el nombre del dataset indica `writingprompts`) sin necesidad de reentrenar los 30 000 millones de parámetros completos, reduciendo drásticamente el coste computacional y de almacenamiento. Al ser un adaptador LoRA, se combina con el modelo base en tiempo de inferencia mediante la librería `peft` de HuggingFace, lo que facilita su integración en flujos existentes. Sin embargo, la información pública es escasa: no se especifican la licencia, los idiomas soportados, ni se publican resultados de benchmarks, lo que limita la evaluación directa de su rendimiento.
+La relevancia de este adaptador radica en que permite ajustar el modelo base para tareas de escritura creativa (el nombre del dataset indica `writingprompts`) sin necesidad de reentrenar los 30 000 millones de parámetros completos, reduciendo drásticamente el coste computacional y de almacenamiento. Al ser un adaptador LoRA, se combina con el modelo base en tiempo de inferencia mediante la librería `peft` de Hugging Face, lo que facilita su integración en flujos existentes. Sin embargo, la información pública es escasa: no se especifican la licencia, los idiomas soportados, ni se publican resultados de benchmarks, lo que limita la evaluación directa de su rendimiento.
 
 ## Especificaciones técnicas
 
@@ -28,7 +28,7 @@ El adaptador es un LoRA de rango 32 aplicado a todas las capas lineales (`target
 - Al ser un adaptador sobre un modelo base de 30B parámetros, hereda las capacidades generales de generación de texto, razonamiento, comprensión del lenguaje y posiblemente generación de código del modelo NVIDIA Nemotron-3-Nano-30B-A3B.
 - El entrenamiento específico sobre `writingprompts` sugiere una mejora en tareas de escritura creativa, como generar historias, cuentos o respuestas a prompts narrativos.
 - No se dispone de información sobre soporte de tool calling, function calling, capacidades multimodales o modos de razonamiento especiales. Estas capacidades, si existen, provendrían del modelo base y no se documentan en la model card del adaptador.
-- El adaptador se integra fácilmente con la librería `peft` y `transformers`, permitiendo su uso en pipelines estándar de HuggingFace.
+- El adaptador se integra fácilmente con la librería `peft` y `transformers`, permitiendo su uso en pipelines estándar de Hugging Face.
 
 ## Casos de uso
 
@@ -66,6 +66,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/dementor-research/self_sft_writingprompts_nemotron-nano-30b-a3b_as_nemotron-nano-30b-a3b_seed42
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/dementor-research/self_sft_writingprompts_nemotron-nano-30b-a3b_as_nemotron-nano-30b-a3b_seed42
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Herramienta Tinker (mencionada en la model card): https://thinkingmachines.ai/tinker/

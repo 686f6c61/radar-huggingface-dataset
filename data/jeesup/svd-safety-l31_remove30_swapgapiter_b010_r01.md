@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks de conocimiento, razonamiento o cod
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r01 | 8,03 B almacenados; fraccion efectiva 0,6999 | 128.000 tokens (heredado del base) | ASR AdvBench 0,0850; StrongREJECT 0,1700; sobre-rechazo 0,1778 | Llama 3.1 Community | Safetensors en HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | No disponible en la informacion proporcionada | Llama 3.1 Community | Safetensors en HuggingFace, acceso sujeto a aceptacion de terminos |
+| Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r01 | 8,03 B almacenados; fraccion efectiva 0,6999 | 128.000 tokens (heredado del base) | ASR AdvBench 0,0850; StrongREJECT 0,1700; sobre-rechazo 0,1778 | Llama 3.1 Community | Safetensors en Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | No disponible en la informacion proporcionada | Llama 3.1 Community | Safetensors en Hugging Face, acceso sujeto a aceptacion de terminos |
 | Otras celdas de la rejilla del mismo estudio | No disponible | No disponible | No disponible | Llama 3.1 Community | No identificadas en la informacion disponible |
 | Otros modelos comprimidos comparables (SliceGPT, Wanda u similares) | No disponible | No disponible | No disponible | No disponible | No se han encontrado referencias en la busqueda web realizada |
 
@@ -103,7 +103,7 @@ No se han publicado resultados de benchmarks de conocimiento, razonamiento o cod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de SVD-LLM: no disponible en la informacion proporcionada
 - Repositorio de codigo del estudio: no disponible en la informacion proporcionada

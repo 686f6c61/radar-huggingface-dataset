@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mousse95/llama3_8B_Lora_GOAT` es un adaptador LoRA para `meta-llama/Llama-3.1-8B` (modelo base, no instruct) especializado en aritmetica de numeros enteros grandes: sumas, restas, multiplicaciones y divisiones. Lo publica el usuario mousse95 en HuggingFace y su unico objetivo es inyectar en el modelo base la capacidad de resolver operaciones aritmeticas paso a paso siguiendo el formato del dataset GOAT. No es un modelo completo: el repositorio contiene unicamente los pesos del adaptador (~109 MB), por lo que es imprescindible descargar el modelo base, que esta sujeto a acceso restringido (gated).
+`mousse95/llama3_8B_Lora_GOAT` es un adaptador LoRA para `meta-llama/Llama-3.1-8B` (modelo base, no instruct) especializado en aritmetica de numeros enteros grandes: sumas, restas, multiplicaciones y divisiones. Lo publica el usuario mousse95 en Hugging Face y su unico objetivo es inyectar en el modelo base la capacidad de resolver operaciones aritmeticas paso a paso siguiendo el formato del dataset GOAT. No es un modelo completo: el repositorio contiene unicamente los pesos del adaptador (~109 MB), por lo que es imprescindible descargar el modelo base, que esta sujeto a acceso restringido (gated).
 
 El adaptador se entrena sobre el conjunto `tiedong/goat`, derivado de la metodologia del articulo *Goat: Fine-tuned LLaMA Outperforms GPT-4 on Arithmetic Tasks* (arXiv:2305.14201), que demostro que un ajuste supervisado cuidadosamente disenado sobre un modelo abierto podia superar a GPT-4 en tareas aritmeticas cuando estas se descomponen en pasos. Este repositorio replica ese enfoque sobre Llama 3.1 8B, con 1.741.300 ejemplos de entrenamiento y una sola epoca.
 
@@ -82,13 +82,13 @@ Los datos de rendimiento comparado no estan disponibles para este adaptador, por
 - Formato de prompt estricto: funciona con el patron `pregunta\nAnswer: `. El script alternativo `prepare_data.py` usa una plantilla `### Instruction:` que no coincide con los datos de entrenamiento y no debe usarse para inferencia sin reajustar.
 - Idioma: solo ingles; no hay evidencia de generalizacion a otras lenguas.
 - Licencia: al ser derivado de Llama 3.1, el uso comercial esta sujeto a la Llama 3.1 Community License y a la Acceptable Use Policy, incluida la obligacion de atribucion "Built with Llama".
-- El modelo base esta sujeto a acceso restringido en HuggingFace, por lo que es necesario solicitar permiso a Meta antes de poder utilizarlo.
+- El modelo base esta sujeto a acceso restringido en Hugging Face, por lo que es necesario solicitar permiso a Meta antes de poder utilizarlo.
 - Repositorio sin descargas ni valoraciones en el momento de la consulta, lo que implica ausencia de validacion independiente por parte de la comunidad.
 - No hay informacion sobre evaluacion de seguridad, red teaming ni filtros de contenido.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mousse95/llama3_8B_Lora_GOAT
+- Modelo en Hugging Face: https://huggingface.co/mousse95/llama3_8B_Lora_GOAT
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/tiedong/goat
 - Paper de GOAT: https://arxiv.org/abs/2305.14201

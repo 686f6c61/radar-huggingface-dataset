@@ -4,7 +4,7 @@
 
 El repositorio `kayla-cruz99/paper_006352648_self_supervised` no contiene un modelo de IA ejecutable, sino un documento de investigación (paper) sobre el tema del aprendizaje autosupervisado. Según la model card, el repositorio alberga un archivo en formato Markdown (`paper_006352648_self_supervised.md`) que sigue una estructura académica específica: introducción, problema, solución, validación y futuro. El estilo de escritura se describe como analítico y conciso, con citas en formato APA numérico y el contenido marcado como HTML.
 
-No se proporcionan datos técnicos sobre arquitectura, parámetros, contexto o pesos. El repositorio no presenta descargas ni interacciones en HuggingFace, y no se ha publicado información adicional en la búsqueda web que permita contextualizar este trabajo dentro de la investigación en aprendizaje autosupervisado. La licencia declarada es Apache 2.0, lo que permite su uso y modificación con atribución.
+No se proporcionan datos técnicos sobre arquitectura, parámetros, contexto o pesos. El repositorio no presenta descargas ni interacciones en Hugging Face, y no se ha publicado información adicional en la búsqueda web que permita contextualizar este trabajo dentro de la investigación en aprendizaje autosupervisado. La licencia declarada es Apache 2.0, lo que permite su uso y modificación con atribución.
 
 ## Especificaciones tecnicas
 
@@ -58,5 +58,5 @@ No disponible. El repositorio no describe un modelo con parámetros o arquitectu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kayla-cruz99/paper_006352648_self_supervised
+- Repositorio en Hugging Face: https://huggingface.co/kayla-cruz99/paper_006352648_self_supervised
 - No se han encontrado enlaces adicionales en la búsqueda web.

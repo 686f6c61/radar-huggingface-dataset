@@ -85,9 +85,9 @@ No se han publicado resultados de benchmarks de calidad de imagen en la informac
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HelloSun/Sana_Sprint_0.6B_1024px-OpenVINO-INT4 | 0,6B segun denominacion | No aplica | 4,59-7,10 s/imagen a 1024x1024 y 4 pasos en Xeon 8559C | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers (base, FP16) | 0,6B segun denominacion | No aplica | No disponible | No disponible en la informacion proporcionada | HuggingFace |
-| Efficient-Large-Model/Sana_Sprint_0.6B_1024px (fuente original) | 0,6B segun denominacion | No aplica | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| HelloSun/Sana_Sprint_0.6B_1024px-OpenVINO-INT4 | 0,6B segun denominacion | No aplica | 4,59-7,10 s/imagen a 1024x1024 y 4 pasos en Xeon 8559C | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers (base, FP16) | 0,6B segun denominacion | No aplica | No disponible | No disponible en la informacion proporcionada | Hugging Face |
+| Efficient-Large-Model/Sana_Sprint_0.6B_1024px (fuente original) | 0,6B segun denominacion | No aplica | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas texto-a-imagen de menos de 1B parametros | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 La unica comparacion sustentada por datos es la del propio export frente a su version FP16: 2,3 GB frente a 6,7 GB de pesos (-65 %). No hay datos de degradacion de calidad asociados a esa compresion, ni benchmarks que permitan situar este modelo frente a otras alternativas de generacion de imagen.
@@ -108,7 +108,7 @@ La unica comparacion sustentada por datos es la del propio export frente a su ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HelloSun/Sana_Sprint_0.6B_1024px-OpenVINO-INT4
+- Modelo en Hugging Face: https://huggingface.co/HelloSun/Sana_Sprint_0.6B_1024px-OpenVINO-INT4
 - Arbol de archivos del repositorio (incluye `examples/`, `outputs/benchmark.json`, `outputs/prompts.txt`, `REPORT.md`, `inference_int4.py` y `generate5.py`): https://huggingface.co/HelloSun/Sana_Sprint_0.6B_1024px-OpenVINO-INT4/tree/main
 - Modelo base en formato diffusers: https://huggingface.co/Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers
 - Modelo base original: https://huggingface.co/Efficient-Large-Model/Sana_Sprint_0.6B_1024px

@@ -80,6 +80,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sumera09/evidencebridge-model5-claim-anomaly
+- Modelo en Hugging Face: https://huggingface.co/sumera09/evidencebridge-model5-claim-anomaly
 - Dataset CMS DE-SynPUF (referencia del autor, sin enlace directo en la información): no disponible
 - Paper, blog o repositorio adicional: no disponible

@@ -4,7 +4,7 @@
 
 AhiskaAI v0.4 145M IT es un modelo de lenguaje pequeno (SLM) desarrollado por el proyecto independiente AhiskaAI, centrado en el turco y el turco ahiska. Con aproximadamente 145 millones de parametros, emplea la arquitectura LlamaForCausalLM y fue entrenado completamente desde cero sobre FineWeb-2 HQ Turkish (unos 1.700 millones de tokens en 2 epocas), sin inicializarse desde pesos de modelos preentrenados existentes.
 
-El repositorio de HuggingFace contiene dos variantes ajustadas por instrucciones (IT) del mismo modelo base, diferenciadas unicamente por sus datos de SFT: la variante "Old" utiliza el conjunto de datos de instrucciones de la serie v0.3, mientras que la "New" combina datos propios de AhiskaAI con una porcion de Ethosoft/nedo-turkish-sft-mixtures, con un proceso de entrenamiento mucho mas extenso (5.710 pasos frente a 366). Ambas comparten arquitectura, tokenizer y preentrenamiento.
+El repositorio de Hugging Face contiene dos variantes ajustadas por instrucciones (IT) del mismo modelo base, diferenciadas unicamente por sus datos de SFT: la variante "Old" utiliza el conjunto de datos de instrucciones de la serie v0.3, mientras que la "New" combina datos propios de AhiskaAI con una porcion de Ethosoft/nedo-turkish-sft-mixtures, con un proceso de entrenamiento mucho mas extenso (5.710 pasos frente a 366). Ambas comparten arquitectura, tokenizer y preentrenamiento.
 
 El modelo resulta relevante por su enfoque en un idioma de bajos recursos y su orientacion a la investigacion reproducible. Aborda la brecha de representacion del turco en el ecosistema de los modelos de lenguaje grandes, ofreciendo una opcion ligera y accesible para experimentos academicos y prototipado.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - **VRAM estimada para inferencia**: aproximadamente 290 MB en bfloat16 (145M parametros multiplicados por 2 bytes por parametro). Con cuantizacion de 4 bits, el consumo de VRAM se reduciria a unos 100 MB o menos.
 - **GPU recomendadas**: cualquier GPU moderna con al menos 1 GB de VRAM. Ejemplos concretos: NVIDIA RTX 3050, GTX 1650, RTX 4060, o incluso GPUs integradas de Intel o AMD en muchos casos.
 - **Compatibilidad con GPU de consumo**: si, es compatible con practicamente cualquier GPU de consumo disponible en el mercado actual.
-- **Opciones de despliegue**: transformers (HuggingFace) de forma nativa, vLLM, llama.cpp (previa conversion a GGUF), Ollama y TGI.
+- **Opciones de despliegue**: transformers (Hugging Face) de forma nativa, vLLM, llama.cpp (previa conversion a GGUF), Ollama y TGI.
 - **Latencia y throughput**: la latencia por token es extremadamente baja, en el orden de milisegundos en GPU y de decenas de milisegundos en CPU, gracias al reducido tamaño del modelo. El throughput en GPU puede superar facilmente los 1.000 tokens por segundo en hardware de gama media-alta.
 
 ## Comparativa con modelos similares
@@ -87,6 +87,6 @@ No se han identificado modelos directamente comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-145M-IT
+- Hugging Face: https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-145M-IT
 - Dataset Ethosoft/nedo-turkish-sft-mixtures: https://huggingface.co/datasets/Ethosoft/nedo-turkish-sft-mixtures
 - No se han encontrado papers, blogs o repositorios adicionales en la informacion proporcionada.

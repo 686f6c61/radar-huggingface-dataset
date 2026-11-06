@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| iouty/qwen3vl-makeup-qwen3vl_data_only | 8B (base) | No disponible | Apache 2.0 | HuggingFace |
-| Qwen3-VL-8B-Instruct (original) | 8B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Qwen3-VL-4B-Instruct | 4B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| LLaVA-NeXT-Video-7B | 7B | 32.768 tokens | Apache 2.0 | HuggingFace |
+| iouty/qwen3vl-makeup-qwen3vl_data_only | 8B (base) | No disponible | Apache 2.0 | Hugging Face |
+| Qwen3-VL-8B-Instruct (original) | 8B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Qwen3-VL-4B-Instruct | 4B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| LLaVA-NeXT-Video-7B | 7B | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 El modelo se posiciona como una variante especializada de Qwen3-VL-8B. Frente al modelo original, ofrece la ventaja de un ajuste específico (presumiblemente en maquillaje) y un menor tamaño de repositorio gracias a la cuantización 4 bits. Sin embargo, carece de documentación sobre el rendimiento en tareas concretas, lo que impide una comparación objetiva con alternativas como LLaVA-NeXT, que tiene un ecosistema más maduro y benchmarks publicados.
 
@@ -80,9 +80,9 @@ El modelo se posiciona como una variante especializada de Qwen3-VL-8B. Frente al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iouty/qwen3vl-makeup-qwen3vl_data_only
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit
+- Repositorio Hugging Face: https://huggingface.co/iouty/qwen3vl-makeup-qwen3vl_data_only
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit
 - Repositorio oficial de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
-- Colección Qwen3-VL en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-vl
+- Colección Qwen3-VL en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-vl
 - Documentación de Qwen3-VL-MoE (arquitectura relacionada): https://huggingface.co/docs/transformers/model_doc/qwen3_vl_moe
 - Sitio oficial de Qwen: https://qwen.ai/home

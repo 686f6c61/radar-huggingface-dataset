@@ -25,7 +25,7 @@ Su relevancia es logística, no algorítmica: es un origen reproducible, sin aut
 | Tamaño total | 7.574.376 bytes (7,57 MB) en 8 ficheros |
 | Backends de cómputo | CPU, OpenCL (`libMNN_CL.so`), Vulkan (`libMNN_Vulkan.so`) |
 | Dependencias externas | `libc++_shared.so` (runtime C++ del Android NDK, no redistribuido aquí) |
-| ID de HuggingFace | `michaellu88/mnn-engines` |
+| ID de Hugging Face | `michaellu88/mnn-engines` |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-09-23T01:08:26Z / 2026-09-23T01:08:48Z |
 
@@ -130,7 +130,7 @@ La búsqueda web realizada no devolvió ninguna fuente técnica sobre este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michaellu88/mnn-engines
+- Repositorio en Hugging Face: https://huggingface.co/michaellu88/mnn-engines
 - MNN upstream, repositorio oficial: https://github.com/alibaba/MNN
 - Licencia de MNN (Apache-2.0), copiada verbatim en este repositorio: https://github.com/alibaba/MNN/blob/master/LICENSE.txt
 - KleidiAI, microkernels de Arm: https://gitlab.arm.com/kleidi/kleidiai

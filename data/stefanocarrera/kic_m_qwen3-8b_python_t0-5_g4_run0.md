@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g4_run0 | 8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning comunitario sin benchmarks |
-| Qwen/Qwen3-8B-Base | 8B | 32.768 tokens nativos | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | 32.768 tokens nativos | Apache 2.0 | HuggingFace | Version cuantizada 4-bit del base, usada como punto de partida |
-| Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Alternativa con contexto mucho mayor y licencia mas restrictiva |
+| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g4_run0 | 8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning comunitario sin benchmarks |
+| Qwen/Qwen3-8B-Base | 8B | 32.768 tokens nativos | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | 32.768 tokens nativos | Apache 2.0 | Hugging Face | Version cuantizada 4-bit del base, usada como punto de partida |
+| Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Alternativa con contexto mucho mayor y licencia mas restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g4_run0
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g4_run0
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Qwen3-8B-Base oficial: https://huggingface.co/Qwen/Qwen3-8B-Base

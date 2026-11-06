@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kleinflow/kleinflow` alojado en HuggingFace contiene un modelo identificado únicamente por su nombre y autor, con un tamaño de repositorio de 0,1 GB. La información pública disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas ni arquitectura. El repositorio fue creado en agosto de 2026 y actualizado pocos días después, pero no ha registrado descargas y cuenta con un solo "like".
+El repositorio `kleinflow/kleinflow` alojado en Hugging Face contiene un modelo identificado únicamente por su nombre y autor, con un tamaño de repositorio de 0,1 GB. La información pública disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas ni arquitectura. El repositorio fue creado en agosto de 2026 y actualizado pocos días después, pero no ha registrado descargas y cuenta con un solo "like".
 
 Los resultados de búsqueda web relacionados con el término "klein" apuntan a los modelos FLUX.2 [klein] de Black Forest Labs, que son modelos de generación y edición de imágenes de alta velocidad, con variantes de 4B y 9B parámetros. Sin embargo, no existe confirmación de que el repositorio `kleinflow/kleinflow` corresponda a alguno de estos modelos, ya que el nombre del autor y el tamaño del repositorio no coinciden con las especificaciones publicadas de FLUX.2 [klein]. Por tanto, esta ficha se limita a documentar la ausencia de datos verificables y a señalar las posibles referencias externas sin atribuirlas al repositorio.
 
@@ -54,7 +54,7 @@ No disponible. No se puede establecer una comparativa fiable sin conocer las car
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kleinflow/kleinflow
+- Repositorio Hugging Face: https://huggingface.co/kleinflow/kleinflow
 - Referencia externa (no confirmada): FLUX.2 [klein] 4B en Cloudflare AI docs: https://developers.cloudflare.com/workers-ai/models/flux-2-klein-4b/
 - Referencia externa (no confirmada): FLUX.2 [klein] 9B en There's An AI For That: https://theresanaiforthat.com/model/flux-2-klein-9b/
 - Referencia externa (no confirmada): Guía de usuario de Flux 2 [klein] en fal.ai: https://fal.ai/learn/devs/flux-2-klein-user-guide

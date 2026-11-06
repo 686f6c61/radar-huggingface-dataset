@@ -72,9 +72,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- [HuggingFace - AbteeXAILab/lumynax-reasoning-deepseek-prover-v2-671b-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-deepseek-prover-v2-671b-gguf)
+- [Hugging Face - AbteeXAILab/lumynax-reasoning-deepseek-prover-v2-671b-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-deepseek-prover-v2-671b-gguf)
 - [Repositorio fuente en GitHub](https://github.com/Aimaghsoodi/lumynax-reasoning-deepseek-prover-v2-671b-gguf)
 - [AbteeX AI Labs](https://abteex.com)
 - [LumynaX](https://lumynax.com)
 - [Contacto](mailto:aimaghsoodi@abteex.com)
-- [Modelo base en HuggingFace - deepseek-ai/DeepSeek-Prover-V2-671B](https://huggingface.co/deepseek-ai/DeepSeek-Prover-V2-671B)
+- [Modelo base en Hugging Face - deepseek-ai/DeepSeek-Prover-V2-671B](https://huggingface.co/deepseek-ai/DeepSeek-Prover-V2-671B)

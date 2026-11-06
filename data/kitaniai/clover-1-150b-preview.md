@@ -70,7 +70,7 @@ No se dispone de datos de benchmarks de Clover 1 150B Preview, por lo que cualqu
 
 | Modelo | Parámetros totales | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clover 1 150B Preview | 147.573.372.144 | MoE multimodal, 8 expertos por capa, top-1 | no disponible | apache-2.0 | Pesos abiertos en HuggingFace, en fase preview |
+| Clover 1 150B Preview | 147.573.372.144 | MoE multimodal, 8 expertos por capa, top-1 | no disponible | apache-2.0 | Pesos abiertos en Hugging Face, en fase preview |
 | Qwen/Qwen3.8-27B | no disponible | Densa (modelo base) | no disponible | no disponible | Modelo base del que deriva Clover 1 |
 | Otras alternativas de ~150B MoE | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,6 +92,6 @@ No se han proporcionado datos suficientes sobre modelos comparables de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kitaniai/clover-1-150b-preview
+- Modelo en Hugging Face: https://huggingface.co/kitaniai/clover-1-150b-preview
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Imagen de cabecera del modelo: https://kcdn2.kitani.ai/4e970c35-f648-4098-ad1e-1e0af0e8d369.png

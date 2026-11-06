@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mazennkarim/python-coding-assistant` es un modelo publicado en HuggingFace por el usuario mazennkarim bajo el identificador `mazennkarim/python-coding-assistant`. Por el nombre y las etiquetas del repositorio, se presenta como un asistente orientado a la generación de código Python, aunque la model card no contiene ninguna descripción funcional, datos de entrenamiento ni resultados de evaluación que lo confirmen. El repositorio fue creado el 4 de noviembre de 2026 y ocupa aproximadamente 0,1 GB, un tamaño compatible con un modelo pequeño o con un fine-tuning parcial de pesos.
+`mazennkarim/python-coding-assistant` es un modelo publicado en Hugging Face por el usuario mazennkarim bajo el identificador `mazennkarim/python-coding-assistant`. Por el nombre y las etiquetas del repositorio, se presenta como un asistente orientado a la generación de código Python, aunque la model card no contiene ninguna descripción funcional, datos de entrenamiento ni resultados de evaluación que lo confirmen. El repositorio fue creado el 4 de noviembre de 2026 y ocupa aproximadamente 0,1 GB, un tamaño compatible con un modelo pequeño o con un fine-tuning parcial de pesos.
 
-La información disponible es mínima: la model card es la plantilla automática de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas ni licencia. Las únicas etiquetas técnicas presentes son `transformers`, `safetensors` y `endpoints_compatible`, lo que indica que los pesos están en formato safetensors y que el modelo es cargable con la librería transformers y desplegable en los Inference Endpoints de HuggingFace.
+La información disponible es mínima: la model card es la plantilla automática de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas ni licencia. Las únicas etiquetas técnicas presentes son `transformers`, `safetensors` y `endpoints_compatible`, lo que indica que los pesos están en formato safetensors y que el modelo es cargable con la librería transformers y desplegable en los Inference Endpoints de Hugging Face.
 
 Dada la ausencia de documentación, esta ficha se limita a reflejar los metadatos verificables del repositorio y a señalar explícitamente qué datos no están disponibles. Cualquier evaluación de capacidades, rendimiento o idoneidad para producción requeriría inspeccionar los pesos y la configuración del modelo directamente, algo que no se ha hecho para esta ficha.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 - Asistencia en la escritura de código Python: el identificador del modelo sugiere que podría emplearse para autocompletar o generar fragmentos de código Python en un editor o IDE, aunque no hay documentación que confirme su calidad o su entrenamiento específico para esta tarea.
 - Prototipado rápido de scripts: si el modelo funciona como asistente de código, podría usarse para generar esqueletos de scripts y funciones auxiliares en fases tempranas de desarrollo, siempre con revisión humana.
 - Experimentación académica con fine-tuning: al ser un repositorio pequeño en formato safetensors y compatible con transformers, podría servir como base para experimentos de ajuste fino en entornos controlados.
-- Pruebas de integración con Inference Endpoints: la etiqueta `endpoints_compatible` permite desplegarlo en la infraestructura de HuggingFace para validar pipelines de despliegue, sin garantías de calidad de las respuestas.
+- Pruebas de integración con Inference Endpoints: la etiqueta `endpoints_compatible` permite desplegarlo en la infraestructura de Hugging Face para validar pipelines de despliegue, sin garantías de calidad de las respuestas.
 - Evaluación comparativa de modelos pequeños: útil como punto de referencia en estudios sobre modelos de código de bajo tamaño, dado que su huella en disco es reducida.
 - Docencia y demostraciones: puede emplearse en talleres sobre despliegue de modelos con transformers y safetensors, siempre advirtiendo a los asistentes de la falta de documentación y de garantías.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible; el tamaño del repositorio (0,1 GB) sugiere que podría ejecutarse en GPUs de consumo, pero no se puede confirmar sin conocer el número de parámetros y la precisión de los pesos.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: probablemente sí si el modelo es de pequeño tamaño, sin confirmación documental.
-- Opciones de despliegue: transformers (según la etiqueta `library_name`), safetensors como formato de pesos y Inference Endpoints de HuggingFace (según la etiqueta `endpoints_compatible`). No se confirma soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: transformers (según la etiqueta `library_name`), safetensors como formato de pesos y Inference Endpoints de Hugging Face (según la etiqueta `endpoints_compatible`). No se confirma soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mazennkarim/python-coding-assistant
+- Repositorio en Hugging Face: https://huggingface.co/mazennkarim/python-coding-assistant
 - Paper de referencia citado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables directos de meta-previsi
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zeno v1.05 unified | No disponible | No disponible | +34,9% / +24,6% / +18,9% / +13,4% frente al rival más fuerte en los cuatro campos evaluados | Apache 2.0 | HuggingFace, API HTTP, MCP |
+| Zeno v1.05 unified | No disponible | No disponible | +34,9% / +24,6% / +18,9% / +13,4% frente al rival más fuerte en los cuatro campos evaluados | Apache 2.0 | Hugging Face, API HTTP, MCP |
 | Modelos comparables de meta-previsión | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de información sobre modelos comparables directos de meta-previsi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZenoDivergent/zeno-divergent-v105
+- Hugging Face: https://huggingface.co/ZenoDivergent/zeno-divergent-v105
 - Versión v1.01: https://huggingface.co/ZenoDivergent/zeno-divergent-v101
 - Sitio web: https://zenodivergent.dev
 - Live Read: https://zenodivergent.dev/live-read

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/gemma-4-31b-novel-merged-i1-GGUF` es un repositorio de cuantizaciones GGUF generadas por el usuario mradermacher (conocido por publicar versiones cuantizadas de modelos abiertos en HuggingFace) a partir del modelo base `sonten/gemma-4-31b-novel-merged`. No se trata, por tanto, de un modelo entrenado desde cero, sino de una distribucion de pesos comprimidos pensada para inferencia en local con llama.cpp y derivados. El nombre del repositorio sugiere una arquitectura de la familia Gemma con aproximadamente 31.000 millones de parametros y un ajuste orientado a escritura creativa o narrativa ("novel-merged"), si bien ninguno de estos extremos esta confirmado en la informacion disponible.
+`mradermacher/gemma-4-31b-novel-merged-i1-GGUF` es un repositorio de cuantizaciones GGUF generadas por el usuario mradermacher (conocido por publicar versiones cuantizadas de modelos abiertos en Hugging Face) a partir del modelo base `sonten/gemma-4-31b-novel-merged`. No se trata, por tanto, de un modelo entrenado desde cero, sino de una distribucion de pesos comprimidos pensada para inferencia en local con llama.cpp y derivados. El nombre del repositorio sugiere una arquitectura de la familia Gemma con aproximadamente 31.000 millones de parametros y un ajuste orientado a escritura creativa o narrativa ("novel-merged"), si bien ninguno de estos extremos esta confirmado en la informacion disponible.
 
 El aspecto mas relevante para un desarrollador es la bateria de cuantizaciones publicada: el autor incluye desde IQ1_S e IQ2_XXS hasta Q6_K, empleando cuantizacion ponderada con imatrix (etiqueta `quantize_version: 2`, `output_tensor_quantised: 1`), lo que permite desplegar el modelo en rangos de VRAM que van desde equipos de consumo hasta estaciones de trabajo con GPU profesional. La etiqueta `skip_mmproj: 1` indica que no se ha publicado el proyector multimodal, por lo que el uso previsto es exclusivamente de texto.
 
@@ -97,7 +97,7 @@ Las cifras de los modelos alternativos corresponden a sus especificaciones publi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-31b-novel-merged-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-31b-novel-merged-i1-GGUF
 - Modelo base: https://huggingface.co/sonten/gemma-4-31b-novel-merged
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web realizada.

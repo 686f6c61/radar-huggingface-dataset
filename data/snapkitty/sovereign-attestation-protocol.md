@@ -58,5 +58,5 @@ No disponible. No existe una categoria de modelos de IA comparable, ya que este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sovereign-attestation-protocol
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sovereign-attestation-protocol
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la busqueda web.

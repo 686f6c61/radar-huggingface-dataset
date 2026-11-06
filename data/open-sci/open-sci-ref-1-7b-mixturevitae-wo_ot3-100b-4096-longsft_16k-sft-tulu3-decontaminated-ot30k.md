@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096-longsft_16k-SFT-Tulu3-decontaminated-ot30k` es un ajuste fino supervisado (SFT) publicado por la organización open-sci en HuggingFace. Se trata de un transformer de 1.714.377.728 parámetros (~1,7B) construido sobre una base denominada "mixturevitae" con una ventana de contexto de 4096 tokens, según se deduce del propio identificador del repositorio. El modelo está etiquetado como `feature-extraction` en el pipeline de HuggingFace, aunque su nombre y el proceso de entrenamiento (SFT con llama-factory sobre un dataset de open-thoughts) apuntan a un uso como modelo de lenguaje generativo ajustado para seguir instrucciones.
+El modelo `open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096-longsft_16k-SFT-Tulu3-decontaminated-ot30k` es un ajuste fino supervisado (SFT) publicado por la organización open-sci en Hugging Face. Se trata de un transformer de 1.714.377.728 parámetros (~1,7B) construido sobre una base denominada "mixturevitae" con una ventana de contexto de 4096 tokens, según se deduce del propio identificador del repositorio. El modelo está etiquetado como `feature-extraction` en el pipeline de Hugging Face, aunque su nombre y el proceso de entrenamiento (SFT con llama-factory sobre un dataset de open-thoughts) apuntan a un uso como modelo de lenguaje generativo ajustado para seguir instrucciones.
 
 El ajuste se realizó con llama-factory en modalidad "full" (sin LoRA), partiendo de un checkpoint previo y entrenando sobre un subconjunto de 30.000 muestras del dataset open-thoughts3 (identificado en la model card como `open-thoughts_open_thoughts3-1.2_m_30000_samples`). El nombre incluye referencias a "Tulu3" y "decontaminated", lo que sugiere que el conjunto de datos de instrucciones deriva del ecosistema Tulu 3 y ha pasado por un proceso de decontaminación respecto a benchmarks.
 
@@ -35,7 +35,7 @@ El entrenamiento fue un SFT completo (no LoRA) con llama-factory, sobre un datas
 - Capacidades de agente: no disponible; no se documenta.
 - Multilingüismo: no disponible; no se declaran idiomas en la model card.
 - Capacidades especiales (visión, audio, thinking mode): no disponible; el pipeline declarado es `feature-extraction`, sin indicios de modalidades adicionales.
-- Extracción de características: el pipeline de HuggingFace lo clasifica como `feature-extraction`, por lo que puede usarse para obtener representaciones ocultas.
+- Extracción de características: el pipeline de Hugging Face lo clasifica como `feature-extraction`, por lo que puede usarse para obtener representaciones ocultas.
 
 ## Casos de uso
 
@@ -85,8 +85,8 @@ La comparación de rendimiento no está disponible para este modelo; las alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096-longsft_16k-SFT-Tulu3-decontaminated-ot30k
-- Organización open-sci en HuggingFace: https://huggingface.co/open-sci
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096-longsft_16k-SFT-Tulu3-decontaminated-ot30k
+- Organización open-sci en Hugging Face: https://huggingface.co/open-sci
 - llama-factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Dataset open-thoughts (referencia en la model card): https://huggingface.co/datasets/open-thoughts/open-thoughts
 - Tulu 3 (referencia en el nombre del modelo): https://huggingface.co/allenai

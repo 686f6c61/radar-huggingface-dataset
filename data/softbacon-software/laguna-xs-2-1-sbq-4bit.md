@@ -82,9 +82,9 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (Mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SoftBacon-Software/Laguna-XS-2.1-sbQ-4bit
+- Repositorio Hugging Face: https://huggingface.co/SoftBacon-Software/Laguna-XS-2.1-sbQ-4bit
 - Modelo base: https://huggingface.co/poolside/Laguna-XS-2.1
 - Blog de poolside sobre Laguna XS 2.1: https://poolside.ai/blog/introducing-laguna-xs-2-1
-- Colección de poolside en HuggingFace: https://huggingface.co/collections/poolside/laguna-xs-21
+- Colección de poolside en Hugging Face: https://huggingface.co/collections/poolside/laguna-xs-21
 - GitHub de SoftBacon Software: https://github.com/SoftBacon-Software
 - Gemelo calibrado con agentes: https://huggingface.co/SoftBacon-Software/Laguna-XS-2.1-sbQ-cal-4bit

@@ -4,7 +4,7 @@
 
 El modelo `msuiche/Qwen3.8-27B-abliterated-cyber-GLP-49` es un adaptador LoRA (librería PEFT) diseñado para aplicarse sobre el modelo base `Qwen/Qwen3.8-27B`, un LLM denso de 27 mil millones de parámetros desarrollado por Alibaba. El adaptador implementa una técnica de *abliteration* (eliminación de la dirección de rechazo) combinada con *activation steering* mediante un vector de control proyectivo, con un enfoque específico en liberar capacidades relacionadas con ciberseguridad, generación de jailbreaks y tareas complejas de IA. El nombre "GLP-49" sugiere una iteración o variante concreta, aunque no se documenta su significado exacto.
 
-Este modelo es relevante para investigadores y desarrolladores interesados en estudiar el comportamiento de modelos sin restricciones de seguridad, así como para explorar técnicas de control de activación y alineación. Al ser un adaptador de solo 322.560 parámetros, se integra fácilmente sobre el modelo base, que ya destaca por su rendimiento en coding, flujos agénticos y automatización de oficina. El acceso está restringido (gated) en HuggingFace, por lo que requiere aceptar condiciones previas.
+Este modelo es relevante para investigadores y desarrolladores interesados en estudiar el comportamiento de modelos sin restricciones de seguridad, así como para explorar técnicas de control de activación y alineación. Al ser un adaptador de solo 322.560 parámetros, se integra fácilmente sobre el modelo base, que ya destaca por su rendimiento en coding, flujos agénticos y automatización de oficina. El acceso está restringido (gated) en Hugging Face, por lo que requiere aceptar condiciones previas.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La pri
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que requiere aceptar condiciones de uso antes de descargarlo.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que requiere aceptar condiciones de uso antes de descargarlo.
 - Riesgo de contenido dañino: al eliminar los rechazos, el modelo puede generar contenido ilegal, violento o peligroso. Su uso debe limitarse a entornos controlados y con fines de investigación.
 - Sesgos y alucinaciones: no se han documentado sesgos específicos, pero el modelo base puede presentar alucinaciones, especialmente en tareas de razonamiento complejo.
 - Limitaciones de contexto: la longitud de contexto real no está confirmada; se recomienda verificar con el modelo base.
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La pri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/msuiche/Qwen3.8-27B-abliterated-cyber-GLP-49
+- Hugging Face: https://huggingface.co/msuiche/Qwen3.8-27B-abliterated-cyber-GLP-49
 - Repositorio del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio hermano (abliterated-cvec): https://huggingface.co/msuiche/Qwen3.8-27B-abliterated-cvec
 - Blog sobre obliteración de Qwen3.8-27B: https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026

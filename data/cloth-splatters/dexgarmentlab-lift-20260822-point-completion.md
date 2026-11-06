@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DexGarmentLab Lift — point-completion network es una red neuronal de completado de nubes de puntos para prendas de tela deformables, publicada por el usuario Cloth-splatters en HuggingFace. No es un modelo de lenguaje: es el componente de "completion" del baseline CR (completion + registration, seccion V-B) del paper ClothAtlas, y su funcion es reconstruir la superficie completa de una prenda a partir de una nube parcial captada por un sensor, con oclusiones y ruido.
+DexGarmentLab Lift — point-completion network es una red neuronal de completado de nubes de puntos para prendas de tela deformables, publicada por el usuario Cloth-splatters en Hugging Face. No es un modelo de lenguaje: es el componente de "completion" del baseline CR (completion + registration, seccion V-B) del paper ClothAtlas, y su funcion es reconstruir la superficie completa de una prenda a partir de una nube parcial captada por un sensor, con oclusiones y ruido.
 
 La arquitectura combina un codificador PointNet++ con un decodificador estilo PCN que emite 512 puntos gruesos y una rejilla de plegado 2 x 2 alrededor de cada uno de ellos, hasta 2048 puntos finos. Se entrena con distancia de Chamfer L1 simetrica sobre ambas salidas. La entrada es una nube parcial de 2048 puntos con la corrupcion del estimador (jitter, dropout aleatorio y en cuña, outliers), escalada conjuntamente entre 0,8 y 1,25, rotada en yaw junto a su objetivo, centrada y con mascara de validez.
 
@@ -28,7 +28,7 @@ Es relevante en el contexto de robotica de manipulacion de tejidos y gemelos dig
 | Validacion | 3.535 fotogramas |
 | Test | 7.537 fotogramas |
 | Checksum de pesos | SHA-256 d67ecfcc63cbb68dd596c5a852cfe690ab498f0f02e8676436a1ae31306a7363 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No se proporcionan comparaciones con otros metodos de completado dentro de la in
 - GPUs recomendadas: no disponible. La unica referencia publicada es la GH200 usada en entrenamiento; no se documentan pruebas en A100, H100, RTX 4090 ni similares.
 - Opciones de despliegue: no hay integracion con vLLM, llama.cpp, Ollama ni TGI. La carga se realiza mediante `resolve_checkpoint` del modulo `src.hub` y la clase `PointCompletionNet` del repositorio de codigo, por lo que el despliegue exige clonar el proyecto UniClothDiff (rama `icra`) y sus dependencias.
 - Latencia y throughput: no disponible. Solo se conoce el tiempo total de entrenamiento (1 h 44 min para 20 epocas), del que no se puede derivar una latencia de inferencia fiable.
-- Almacenamiento: el repositorio de HuggingFace ocupa 0,0 GB, por lo que no se puede confirmar la presencia de los pesos en el hub.
+- Almacenamiento: el repositorio de Hugging Face ocupa 0,0 GB, por lo que no se puede confirmar la presencia de los pesos en el hub.
 
 ## Comparativa con modelos similares
 
@@ -95,7 +95,7 @@ No se dispone de metricas comparables publicadas en la informacion proporcionada
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace ocupa 0,0 GB y no se listan ficheros de pesos; no se puede verificar que el checkpoint sea descargable directamente desde el hub.
+- El repositorio de Hugging Face ocupa 0,0 GB y no se listan ficheros de pesos; no se puede verificar que el checkpoint sea descargable directamente desde el hub.
 - El uso requiere el codigo del proyecto UniClothDiff (rama `icra`) y el modulo `src.hub.resolve_checkpoint`; no hay formato de pesos estandarizado (safetensors, GGUF) declarado.
 - No es un modelo de lenguaje: no admite prompting, tool calling, agentes ni razonamiento multi-paso, por lo que no debe evaluarse con benchmarks tipo MMLU o HumanEval.
 - Sesgos de dominio: el modelo esta entrenado con la corrupcion concreta del estimador de estado de DexGarmentLab (jitter, dropout aleatorio, dropout en cuña, outliers) y sobre el dataset ClothAtlas; su comportamiento fuera de esa distribucion de prendas, sensores y condiciones de iluminacion no esta validado.
@@ -108,7 +108,7 @@ No se dispone de metricas comparables publicadas en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-point-completion
+- Modelo en Hugging Face: https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-point-completion
 - Dataset asociado: https://huggingface.co/datasets/Cloth-splatters/dexgarmentlab-lift-correspondence-20260822
 - Codigo (rama `icra` del proyecto UniClothDiff): https://github.com/jsll/UniClothDiff/tree/icra
 - Implementacion del modelo: `src/models/point_completion.py` del repositorio anterior

@@ -79,5 +79,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/schonsense/diagesis_GGUF
+- Repositorio Hugging Face: https://huggingface.co/schonsense/diagesis_GGUF
 - Modelo base: https://huggingface.co/schonsense/Diagesis

@@ -85,9 +85,9 @@ Latencia (Apple M5 Pro, 64 GB, MLX 0.32.3):
 
 | Modelo | Parametros | Contexto / entrada | Tasa de resolucion (hard) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NCM Sudoku MLX (este) | ~25,46M generador + ~14,90M codec | Prefijo 91 tokens | 86,20% (1.724/2.000) | MIT | HuggingFace (janmusic) |
-| NCM-MLX Sudoku (entrenamiento independiente) | 6,44M generador | No disponible | No disponible | No disponible | HuggingFace (janmusic/ncm-mlx-sudoku) |
-| NCM checkpoints originales (PyTorch) | Mismos pesos | Prefijo 91 tokens | 86,1% (paper) | MIT | HuggingFace (hazyresearch/ncm-checkpoints) |
+| NCM Sudoku MLX (este) | ~25,46M generador + ~14,90M codec | Prefijo 91 tokens | 86,20% (1.724/2.000) | MIT | Hugging Face (janmusic) |
+| NCM-MLX Sudoku (entrenamiento independiente) | 6,44M generador | No disponible | No disponible | No disponible | Hugging Face (janmusic/ncm-mlx-sudoku) |
+| NCM checkpoints originales (PyTorch) | Mismos pesos | Prefijo 91 tokens | 86,1% (paper) | MIT | Hugging Face (hazyresearch/ncm-checkpoints) |
 
 No se dispone de informacion sobre otros solucionadores de Sudoku neuronales comparables en la informacion proporcionada.
 
@@ -105,14 +105,14 @@ No se dispone de informacion sobre otros solucionadores de Sudoku neuronales com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/janmusic/ncm-sudoku-mlx
+- Modelo en Hugging Face: https://huggingface.co/janmusic/ncm-sudoku-mlx
 - Checkpoints originales: https://huggingface.co/hazyresearch/ncm-checkpoints
 - Codigo original: https://github.com/HazyResearch/ncm
 - Port MLX: https://github.com/janmus1c/ncm-mlx
 - Documentacion de checkpoints oficiales: https://github.com/janmus1c/ncm-mlx/blob/main/docs/official-checkpoints.md
 - Demo Space: https://huggingface.co/spaces/janmusic/ncm-refinement-demo
 - Paper: https://arxiv.org/abs/2610.14162
-- Paper en HuggingFace: https://huggingface.co/papers/2610.14162
+- Paper en Hugging Face: https://huggingface.co/papers/2610.14162
 - Dataset de tableros de test: https://huggingface.co/datasets/hazyresearch/ncm-datasets
 - Modelos NCM-MLX entrenados de forma independiente: https://huggingface.co/janmusic/ncm-mlx-sudoku
 - Plataformas soportadas: https://janmus1c.github.io/ncm-mlx/platforms/

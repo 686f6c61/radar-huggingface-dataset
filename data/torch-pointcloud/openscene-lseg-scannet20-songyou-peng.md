@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de resultados de otros modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/openscene-lseg.scannet20.songyou-peng
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/openscene-lseg.scannet20.songyou-peng
 - Paper OpenScene (arXiv): https://arxiv.org/abs/2211.15654
 - Repositorio original de OpenScene: https://github.com/pengsongyou/openscene
 - Librería PyTorch PointCloud: https://github.com/arthurdjn/pytorch-pointcloud

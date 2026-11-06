@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-mini-senova-ft es un modelo de extracción de características (feature-extraction) y toma de decisiones publicado por el usuario ANGExllL en HuggingFace. Se construye mediante fine-tuning con LoRA sobre Senova-4B-v4, un modelo de la familia Qwen/Qwen3.5-4B, y está orientado a un uso muy concreto: actuar como "cuerpo de decisión" (decision body) para el pool mini de la subred Zils 127. No es, por tanto, un modelo de propósito general, sino un componente especializado dentro de una infraestructura de agentes o validadores.
+zils-mini-senova-ft es un modelo de extracción de características (feature-extraction) y toma de decisiones publicado por el usuario ANGExllL en Hugging Face. Se construye mediante fine-tuning con LoRA sobre Senova-4B-v4, un modelo de la familia Qwen/Qwen3.5-4B, y está orientado a un uso muy concreto: actuar como "cuerpo de decisión" (decision body) para el pool mini de la subred Zils 127. No es, por tanto, un modelo de propósito general, sino un componente especializado dentro de una infraestructura de agentes o validadores.
 
 El modelo cuenta con 4.539.265.536 parámetros totales (aproximadamente 4,54 mil millones) según los pesos en safetensors, y el repositorio ocupa 9,1 GB. La arquitectura subyacente es la de Qwen3.5-4B, etiquetada en el repositorio como `qwen3_5`, con código personalizado (`custom_code`) y pesos en formato safetensors compatibles con la librería transformers. La licencia es Apache-2.0, lo que permite uso comercial con las obligaciones habituales de atribución y avisos.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Pipeline | Disponibilidad |
 |---|---|---|---|---|---|
-| zils-mini-senova-ft | ~4,54 mil millones | no disponible | Apache-2.0 | feature-extraction | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | ~4 mil millones (según nombre) | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
-| Senova-4B-v4 | no disponible | no disponible | Apache-2.0 | no disponible | HuggingFace |
-| torchcast-ai/torchcast-decision-4b | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| zils-mini-senova-ft | ~4,54 mil millones | no disponible | Apache-2.0 | feature-extraction | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | ~4 mil millones (según nombre) | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
+| Senova-4B-v4 | no disponible | no disponible | Apache-2.0 | no disponible | Hugging Face |
+| torchcast-ai/torchcast-decision-4b | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANGExllL/zils-mini-senova-ft
+- Modelo en Hugging Face: https://huggingface.co/ANGExllL/zils-mini-senova-ft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo de partida del fine-tuning (Senova-4B-v4): no disponible como enlace directo en la información proporcionada
 - Componentes del soup: https://huggingface.co/torchcast-ai/torchcast-decision-4b y https://huggingface.co/vllm-sr/d3-mini

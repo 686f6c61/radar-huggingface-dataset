@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Kashif786/bert-base-uncased** es una versión ajustada (fine-tuned) del conocido modelo **BERT base uncased** de Google, publicado en HuggingFace por el usuario Kashif786. BERT es un modelo de lenguaje basado en el transformer encoder, preentrenado en grandes corpus de texto en inglés, que se utiliza principalmente para tareas de comprensión del lenguaje natural (NLU). Esta versión concreta mantiene la arquitectura original de 110 millones de parámetros y una ventana de contexto de 512 tokens. Aunque la información disponible indica que ha sido fine-tuned, los detalles sobre el dataset y el proceso de entrenamiento no se encuentran claramente documentados en la fuente original. Es relevante para desarrolladores que buscan un modelo ligero y eficiente para clasificación de texto, reconocimiento de entidades o respuesta a preguntas.
+El modelo **Kashif786/bert-base-uncased** es una versión ajustada (fine-tuned) del conocido modelo **BERT base uncased** de Google, publicado en Hugging Face por el usuario Kashif786. BERT es un modelo de lenguaje basado en el transformer encoder, preentrenado en grandes corpus de texto en inglés, que se utiliza principalmente para tareas de comprensión del lenguaje natural (NLU). Esta versión concreta mantiene la arquitectura original de 110 millones de parámetros y una ventana de contexto de 512 tokens. Aunque la información disponible indica que ha sido fine-tuned, los detalles sobre el dataset y el proceso de entrenamiento no se encuentran claramente documentados en la fuente original. Es relevante para desarrolladores que buscan un modelo ligero y eficiente para clasificación de texto, reconocimiento de entidades o respuesta a preguntas.
 
 ## Especificaciones técnicas
 
@@ -48,16 +48,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada**: aproximadamente 500 MB en FP32; menos si se aplica cuantización.
 - **GPU recomendada**: cualquier GPU con 2 GB o más de VRAM (RTX 3060, GTX 1660, T4).
 - **Compatibilidad con consumer GPU**: sí, es un modelo pequeño y cabe en GPUs de gama media o incluso en CPU.
-- **Opciones de despliegue**: HuggingFace Transformers, ONNX Runtime, TensorRT, TorchServe.
+- **Opciones de despliegue**: Hugging Face Transformers, ONNX Runtime, TensorRT, TorchServe.
 - **Latencia**: muy baja; puede ejecutarse en tiempo real incluso en CPU para inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bert-base-uncased | 110M | 512 | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | 66M | 512 | Apache 2.0 | HuggingFace |
-| roberta-base | 125M | 512 | MIT | HuggingFace |
+| bert-base-uncased | 110M | 512 | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | 66M | 512 | Apache 2.0 | Hugging Face |
+| roberta-base | 125M | 512 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -69,5 +69,5 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/Kashif786/bert-base-uncased](https://huggingface.co/Kashif786/bert-base-uncased)
+- Hugging Face: [https://huggingface.co/Kashif786/bert-base-uncased](https://huggingface.co/Kashif786/bert-base-uncased)
 - Paper original de BERT: [https://arxiv.org/abs/1810.04805](https://arxiv.org/abs/1810.04805)

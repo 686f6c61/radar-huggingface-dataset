@@ -6,7 +6,7 @@ kev-27b-W4A16 es una cuantizacion comunitaria del adaptador jaredpalmer/kev-27b,
 
 El modelo parte del backbone de Qwen/Qwen3.8-27B, que segun la model card usa la arquitectura de texto Qwen3.5. El repositorio incluye el backbone cuantizado fusionado, el tokenizer y la cabeza de decision original sin modificar. La relevancia de esta publicacion es limitada: no se han publicado evaluaciones de calidad de decision, latencia ni compatibilidad de despliegue, y el propio autor advierte de que se trata de una conversion experimental.
 
-La ficha de HuggingFace reporta 4.552.318.464 parametros (unos 4,55 mil millones) segun los tensores safetensors, una cifra que no concuerda con la denominacion "27B" del nombre y del modelo base. Se reproduce el dato tal cual aparece, con la discrepancia senalada como caveat en la seccion de limitaciones.
+La ficha de Hugging Face reporta 4.552.318.464 parametros (unos 4,55 mil millones) segun los tensores safetensors, una cifra que no concuerda con la denominacion "27B" del nombre y del modelo base. Se reproduce el dato tal cual aparece, con la discrepancia senalada como caveat en la seccion de limitaciones.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bowmanslayer/kev-27b-W4A16 | 4.552.318.464 (segun safetensors) | No disponible | Sin benchmarks publicados; inferencia no validada | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| jaredpalmer/kev-27b | No disponible | No disponible | Resultados publicados en su propia model card (no aplicables a esta cuantizacion) | No disponible | HuggingFace |
-| Qwen/Qwen3.8-27B | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| bowmanslayer/Qwen3.8-27B-W4A16-vision | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| bowmanslayer/kev-27b-W4A16 | 4.552.318.464 (segun safetensors) | No disponible | Sin benchmarks publicados; inferencia no validada | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| jaredpalmer/kev-27b | No disponible | No disponible | Resultados publicados en su propia model card (no aplicables a esta cuantizacion) | No disponible | Hugging Face |
+| Qwen/Qwen3.8-27B | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| bowmanslayer/Qwen3.8-27B-W4A16-vision | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparativa con alternativas de la misma categoria no esta disponible: no hay datos publicados de otros modelos de decision con cabeza pointer de este mismo linaje mas alla de la familia Kev (0.8B, 4B, 9B y 27B) mencionada en el repositorio de GitHub, para la cual no se proporcionan especificaciones numericas en la informacion disponible.
 
@@ -92,7 +92,7 @@ La comparativa con alternativas de la misma categoria no esta disponible: no hay
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bowmanslayer/kev-27b-W4A16
+- Modelo en Hugging Face: https://huggingface.co/bowmanslayer/kev-27b-W4A16
 - Modelo upstream (adaptador): https://huggingface.co/jaredpalmer/kev-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Codigo de Kev (GitHub): https://github.com/jaredpalmer/kev/tree/main

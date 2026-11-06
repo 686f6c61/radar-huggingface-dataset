@@ -18,7 +18,7 @@ La relevancia de esta publicacion es metodologica: documenta con datos de diverg
 | Longitud de contexto | 262.144 tokens (262k), verificado por el autor con 2 slots en una GPU de 24 GB |
 | Tipos de cuantizacion | GGUF de precision mixta: IQ4_XS (ffn_gate, ffn_up), Q4_K (mayoria de tensores), Q5_K (ffn_down), Q6_K (output), Q8_0 (ssm_alpha, ssm_beta, attn_k, attn_v), token_embd en Q4_K |
 | Idiomas soportados | en, fr (segun la model card) |
-| Licencia | polyform-small-business-1.0.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | polyform-small-business-1.0.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (fichero unico, 15,09 GiB) + importance matrix en GGUF (13 MB) |
 
 ## Arquitectura y entrenamiento
@@ -33,7 +33,7 @@ El proceso de seleccion fue incremental: partiendo de Q4_K_S (derivado de f16 co
 - Razonamiento matematico: 11/12 problemas de AIME 2025 resueltos en la prueba interna con 262k de contexto y temperatura 1,0.
 - Generacion de codigo: 13/15 problemas de HumanEval+ resueltos en la misma prueba; la model card reporta ademas la KLD mas baja en texto de codigo Python entre las cuantizaciones comparadas.
 - Decodificacion especulativa: el GGUF incluye una cabeza MTP embebida (blk.64), que el autor usa junto con n-gram con n=2 para el servidor de 262k contexto.
-- Conversacional: etiquetado como `conversational` en HuggingFace y con plantilla de chat del modelo base (prompts formateados como chat para generar la imatrix).
+- Conversacional: etiquetado como `conversational` en Hugging Face y con plantilla de chat del modelo base (prompts formateados como chat para generar la imatrix).
 - Capacidades multilingues: la model card declara ingles y frances; no se documentan otros idiomas.
 - Vision: no incluida en este GGUF. El autor indica que el proyector oficial `mmproj-ThinkingCap-Qwen3.8-27B-f16.gguf` deberia funcionar, pero no lo probo.
 - Tool calling y uso como agente: no disponible (la model card no lo documenta para esta cuantizacion).
@@ -93,9 +93,9 @@ Comparativa entre cuantizaciones del mismo modelo base (todas con los mismos 27.
 
 | Cuantizacion | Tamano (GiB) | KLD medio (3 textos) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MixC (este repositorio) | 15,09 | 0,0219 / 0,0534 / 0,0103 | polyform-small-business-1.0.0 | HuggingFace, 0 descargas |
-| Q4_K_M oficial | 16,25 | 0,0211 / 0,0552 / 0,0109 | no disponible | HuggingFace (bottlecapai) |
-| mradermacher i1-Q4_K_S | 14,74 | 0,0281 / 0,0727 / 0,0140 | no disponible | HuggingFace (mradermacher) |
+| MixC (este repositorio) | 15,09 | 0,0219 / 0,0534 / 0,0103 | polyform-small-business-1.0.0 | Hugging Face, 0 descargas |
+| Q4_K_M oficial | 16,25 | 0,0211 / 0,0552 / 0,0109 | no disponible | Hugging Face (bottlecapai) |
+| mradermacher i1-Q4_K_S | 14,74 | 0,0281 / 0,0727 / 0,0140 | no disponible | Hugging Face (mradermacher) |
 | Q4_K_S (desde f16, esta imatrix) | 14,74 | 0,0296 / 0,0683 / 0,0140 | polyform-small-business-1.0.0 | este repositorio (solo la imatrix es reutilizable; el autor describe la receta) |
 
 Frente a un Qwen3 denso de 27B-32B en GGUF, no hay datos comparativos en la informacion proporcionada: la arquitectura hibrida (48 capas de atencion lineal + 16 de atencion completa) del modelo base no es directamente equiparable y no se dispone de cifras de benchmarks de esos modelos en este contexto. No disponible.
@@ -116,7 +116,7 @@ Frente a un Qwen3 denso de 27B-32B en GGUF, no hay datos comparativos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Makdok/ThinkingCap-Qwen3.8-27B-MixC-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Makdok/ThinkingCap-Qwen3.8-27B-MixC-GGUF
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - GGUF oficial del modelo base (incluye el proyector mmproj): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF
 - Cuantizaciones alternativas de mradermacher: https://huggingface.co/mradermacher/ThinkingCap-Qwen3.8-27B-i1-GGUF

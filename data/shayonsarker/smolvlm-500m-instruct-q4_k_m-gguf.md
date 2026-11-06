@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ShayonSarker/SmolVLM-500M-Instruct-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ShayonSarker/SmolVLM-500M-Instruct-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - Paper, blog o repositorio adicional del autor: no disponible
 - Demos: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gradients-io-tournaments/augmented-973212c10d42d89f` es un modelo de generación de texto conversacional publicado en HuggingFace por la organización `gradients-io-tournaments`, vinculada al proyecto Gradients, una plataforma descentralizada de entrenamiento e investigación en IA. El modelo tiene aproximadamente 2.697 millones de parámetros (2,7B) y se distribuye en formato `safetensors`, con un tamaño de repositorio de 5,4 GB. La model card es genérica y no aporta información específica sobre arquitectura, entrenamiento, capacidades o licencia.
+El modelo `gradients-io-tournaments/augmented-973212c10d42d89f` es un modelo de generación de texto conversacional publicado en Hugging Face por la organización `gradients-io-tournaments`, vinculada al proyecto Gradients, una plataforma descentralizada de entrenamiento e investigación en IA. El modelo tiene aproximadamente 2.697 millones de parámetros (2,7B) y se distribuye en formato `safetensors`, con un tamaño de repositorio de 5,4 GB. La model card es genérica y no aporta información específica sobre arquitectura, entrenamiento, capacidades o licencia.
 
 A pesar de que el repositorio está etiquetado con `transformers`, `text-generation` y `conversational`, no se dispone de documentación técnica pública que detalle la arquitectura interna, el contexto máximo, los idiomas soportados o los datos de entrenamiento. El tag `lfm2` podría sugerir alguna variante de modelo, pero no hay confirmación oficial. Este modelo parece ser uno de los muchos checkpoints generados automáticamente por la plataforma Gradients como parte de sus torneos de entrenamiento, por lo que su relevancia actual es limitada y su uso en producción requeriría una evaluación exhaustiva previa.
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - gradients-io-tournaments/augmented-973212c10d42d89f](https://huggingface.co/gradients-io-tournaments/augmented-973212c10d42d89f)
+- [Hugging Face - gradients-io-tournaments/augmented-973212c10d42d89f](https://huggingface.co/gradients-io-tournaments/augmented-973212c10d42d89f)
 - [Gradients - Torneos](https://www.gradients.io/app/research/tournament)
 - [Gradients - Web principal](https://www.gradients.io/)

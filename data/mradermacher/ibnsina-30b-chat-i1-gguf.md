@@ -25,7 +25,7 @@ Su relevancia práctica es doble. Por un lado, cubre un nicho poco poblado: mode
 
 El repositorio no documenta el proceso de entrenamiento del modelo original; solo indica que se trata de una cuantizacion de `ibnsina-llm/ibnsina-30b-chat`. La etiqueta `qwen3_moe` apunta a una arquitectura de mezcla de expertos heredada de la familia Qwen3-MoE, en la que solo una fraccion de los parametros se activa por token, lo que reduce el coste de inferencia respecto a un modelo denso del mismo tamano. El recuento total de parametros (30.532.122.624) es coherente con esa familia. No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF, DPO u otras tecnicas de alineamiento.
 
-La innovacion tecnica de esta publicacion concreta es el proceso de cuantizacion. El autor emplea un fichero `imatrix` (matriz de importancia) para ponderar la cuantizacion, de modo que los pesos mas sensibles conservan mayor precision. Segun la propia model card, los quants IQ suelen ser preferibles a los no-IQ de tamano similar. Ademas, la version `i1` se ofrece como alternativa a los quants estaticos publicados en `mradermacher/ibnsina-30b-chat-GGUF`, y el autor indica que los quants `i1-Q6_K` son practicamente equivalentes a un `Q6_K` estatico. Las etiquetas internas del proceso (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) confirman que la conversion parte de pesos HuggingFace.
+La innovacion tecnica de esta publicacion concreta es el proceso de cuantizacion. El autor emplea un fichero `imatrix` (matriz de importancia) para ponderar la cuantizacion, de modo que los pesos mas sensibles conservan mayor precision. Segun la propia model card, los quants IQ suelen ser preferibles a los no-IQ de tamano similar. Ademas, la version `i1` se ofrece como alternativa a los quants estaticos publicados en `mradermacher/ibnsina-30b-chat-GGUF`, y el autor indica que los quants `i1-Q6_K` son practicamente equivalentes a un `Q6_K` estatico. Las etiquetas internas del proceso (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) confirman que la conversion parte de pesos Hugging Face.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ La innovacion tecnica de esta publicacion concreta es el proceso de cuantizacion
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K u otras evaluaciones, ni para el modelo base ni para las cuantizaciones. Tampoco se proporcionan mediciones de perplejidad o de velocidad de inferencia.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K u otras evaluaciones, ni para el modelo base ni para las cuantizaciones. Tampoco se proporcionan mediciones de perplejidad o de velocidad de inferencia.
 
 ## Requisitos de hardware
 
@@ -72,9 +72,9 @@ Los tamanos de fichero son datos reales de la model card; las estimaciones de VR
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mradermacher/ibnsina-30b-chat-i1-GGUF` (esta ficha) | 30,5 mil millones | no disponible | GGUF (12 niveles de cuantizacion imatrix) | Apache 2.0 | Publico en HuggingFace |
-| `ibnsina-llm/ibnsina-30b-chat` (modelo base) | 30,5 mil millones | no disponible | safetensors / transformers | Apache 2.0 | Publico en HuggingFace |
-| `mradermacher/ibnsina-30b-chat-GGUF` (quants estaticos) | 30,5 mil millones | no disponible | GGUF (sin imatrix) | Apache 2.0 | Publico en HuggingFace |
+| `mradermacher/ibnsina-30b-chat-i1-GGUF` (esta ficha) | 30,5 mil millones | no disponible | GGUF (12 niveles de cuantizacion imatrix) | Apache 2.0 | Publico en Hugging Face |
+| `ibnsina-llm/ibnsina-30b-chat` (modelo base) | 30,5 mil millones | no disponible | safetensors / transformers | Apache 2.0 | Publico en Hugging Face |
+| `mradermacher/ibnsina-30b-chat-GGUF` (quants estaticos) | 30,5 mil millones | no disponible | GGUF (sin imatrix) | Apache 2.0 | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparado frente a otros modelos de la misma categoria o tamano, ni de modelos alternativos con soporte nativo de persa en el mismo rango de parametros. No disponible.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado frente a otros modelos de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/ibnsina-30b-chat-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/ibnsina-30b-chat-i1-GGUF
 - Modelo base: https://huggingface.co/ibnsina-llm/ibnsina-30b-chat
 - Quants estaticos del mismo modelo: https://huggingface.co/mradermacher/ibnsina-30b-chat-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#ibnsina-30b-chat-i1-GGUF

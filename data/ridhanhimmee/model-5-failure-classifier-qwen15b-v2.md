@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ridhanhimmee/model-5-failure-classifier-qwen15b-v2` es un modelo publicado en HuggingFace Hub por el usuario ridhanhimmee. El identificador sugiere un clasificador de fallos (concretamente el fallo número 5 de una taxonomía) construido sobre una base Qwen de 1.5B de parámetros, en su versión 2. Sin embargo, la model card es la plantilla automática de HuggingFace sin rellenar: no documenta el problema que resuelve, los datos de entrenamiento ni el formato de etiquetas.
+`ridhanhimmee/model-5-failure-classifier-qwen15b-v2` es un modelo publicado en Hugging Face Hub por el usuario ridhanhimmee. El identificador sugiere un clasificador de fallos (concretamente el fallo número 5 de una taxonomía) construido sobre una base Qwen de 1.5B de parámetros, en su versión 2. Sin embargo, la model card es la plantilla automática de Hugging Face sin rellenar: no documenta el problema que resuelve, los datos de entrenamiento ni el formato de etiquetas.
 
 El repositorio ocupa 0,1 GB, un tamaño incompatible con los pesos completos de un modelo de 1.500 millones de parámetros (que en bf16 rondarían los 3 GB). Esto apunta, como inferencia y no como dato confirmado, a que el repositorio contiene únicamente un adaptador LoRA o los pesos de una cabeza de clasificación, no el modelo base completo. La etiqueta `unsloth` refuerza la hipótesis de un ajuste fino mediante LoRA con dicha librería.
 
@@ -23,7 +23,7 @@ El interés del modelo es en este momento muy limitado para terceros: cero desca
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La model card es la plantilla generada automaticamente por HuggingFace y todos los campos de la seccion "Model Details", "Training Details" y "Technical Specifications" contienen el marcador `[More Information Needed]`. La unica informacion tecnica disponible procede de las etiquetas del repositorio: `transformers`, `safetensors`, `unsloth` y `endpoints_compatible`.
+No hay informacion publicada sobre la arquitectura. La model card es la plantilla generada automaticamente por Hugging Face y todos los campos de la seccion "Model Details", "Training Details" y "Technical Specifications" contienen el marcador `[More Information Needed]`. La unica informacion tecnica disponible procede de las etiquetas del repositorio: `transformers`, `safetensors`, `unsloth` y `endpoints_compatible`.
 
 La etiqueta `unsloth` indica que el ajuste se realizo con esa libreria, especializada en fine-tuning LoRA/QLoRA de bajo coste. El sufijo `v2` sugiere una segunda iteracion del modelo, y `model-5` podria corresponder al indice de una categoria dentro de una taxonomia de fallos, aunque no se especifica cual ni con que criterio. No se documentan el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF, DPO o supervision puramente supervisada. Tampoco se describe ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
 
@@ -31,7 +31,7 @@ La etiqueta `unsloth` indica que el ajuste se realizo con esa libreria, especial
 
 - Clasificacion de textos: el nombre del modelo apunta a una tarea de clasificacion (etiquetado de un tipo concreto de fallo), no a generacion abierta. No confirmado por el autor.
 - Generacion de texto: si el artefacto es un adaptador sobre Qwen 1.5B Instruct, heredaria capacidades generativas del base; no verificado.
-- Tool calling / function calling: no documentado; el tag `endpoints_compatible` solo indica compatibilidad con el endpoint de inferencia de HuggingFace.
+- Tool calling / function calling: no documentado; el tag `endpoints_compatible` solo indica compatibilidad con el endpoint de inferencia de Hugging Face.
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
 - Soporte multilingue: no documentado; los idiomas no se declaran.
 - Capacidades especiales (modo thinking, vision, audio): no documentadas.
@@ -92,7 +92,7 @@ Frente a cualquiera de estas alternativas, el modelo analizado carece de licenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ridhanhimmee/model-5-failure-classifier-qwen15b-v2
+- Repositorio en Hugging Face: https://huggingface.co/ridhanhimmee/model-5-failure-classifier-qwen15b-v2
 - Dataset de taxonomia de fallos de agentes (referencia contextual, no confirmada como fuente de entrenamiento): https://huggingface.co/datasets/rohmishra12/agent-failure-taxonomy
 - README de dicho dataset: https://huggingface.co/datasets/rohmishra12/agent-failure-taxonomy/blob/main/README.md
 - Vista alternativa del mismo dataset: https://abliteration.org/datasets/rohmishra12/agent-failure-taxonomy

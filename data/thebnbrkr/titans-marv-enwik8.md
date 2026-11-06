@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thebnbrkr/titans-marv-enwik8` es un checkpoint de investigacion publicado en HuggingFace por el usuario `thebnbrkr`. Se trata de un modelo de lenguaje pequeno que opera a nivel de byte y que incorpora una memoria neuronal Titans de 0,37 M de parametros. El objetivo del autor no es ofrecer un modelo de proposito general, sino estudiar si la memoria de test-time —pesos que se actualizan mediante descenso de gradiente durante la propia inferencia— puede analizarse con las mismas tecnicas de diff de caracteristicas y ablacion causal que MARV ya aplica a pesos congelados.
+`thebnbrkr/titans-marv-enwik8` es un checkpoint de investigacion publicado en Hugging Face por el usuario `thebnbrkr`. Se trata de un modelo de lenguaje pequeno que opera a nivel de byte y que incorpora una memoria neuronal Titans de 0,37 M de parametros. El objetivo del autor no es ofrecer un modelo de proposito general, sino estudiar si la memoria de test-time —pesos que se actualizan mediante descenso de gradiente durante la propia inferencia— puede analizarse con las mismas tecnicas de diff de caracteristicas y ablacion causal que MARV ya aplica a pesos congelados.
 
 El modelo se entreno durante 3000 pasos sobre enwik8, un corpus de bytes de Wikipedia en ingles muy utilizado en investigacion de compresion y modelado de lenguaje. La perdida de validacion final reportada es de 1,863 nats, frente a la linea base de bytes uniformes de 5,545 nats. Convertido a la metrica habitual del benchmark, equivale a unos 2,69 bits por byte.
 
@@ -20,7 +20,7 @@ Su relevancia es puramente cientifica: es un banco de pruebas reproducible y de 
 | Idiomas soportados | No disponible; entrenado unicamente sobre enwik8 (Wikipedia en ingles) |
 | Licencia | MIT |
 | Formato de pesos | Checkpoint PyTorch (`titans_marv_enwik8.pt`, cargado con `torch.load`); no se publica safetensors |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Fecha de creacion | 2026-09-11 |
 | Descargas / likes | 0 / 0 |
 
@@ -84,16 +84,16 @@ No se dispone de modelos comparables con datos verificables en la informacion pr
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar continuaciones plausibles pero incorrectas; en este caso, ademas, sin ningun ajuste que lo modere.
 - Idioma: el entrenamiento se limita a enwik8, derivado de Wikipedia en ingles. El rendimiento en castellano u otros idiomas no esta caracterizado.
 - Longitud de contexto desconocida: la informacion disponible no especifica la ventana soportada.
-- Idiomas soportados no declarados en la ficha de HuggingFace.
+- Idiomas soportados no declarados en la ficha de Hugging Face.
 - Formato de pesos en pickle: la carga requiere `torch.load`, lo que implica ejecutar codigo potencialmente arbitrario si el archivo no proviene de una fuente de confianza.
-- El repositorio aparece con un tamano de 0,0 GB segun HuggingFace; conviene verificar que el fichero `titans_marv_enwik8.pt` esta realmente disponible antes de planificar cualquier reproduccion.
+- El repositorio aparece con un tamano de 0,0 GB segun Hugging Face; conviene verificar que el fichero `titans_marv_enwik8.pt` esta realmente disponible antes de planificar cualquier reproduccion.
 - Ausencia de validacion externa: cero descargas y cero valoraciones, sin resultados de terceros que corroboren las cifras reportadas.
 - La licencia MIT permite uso comercial y modificacion, pero el modelo no ofrece garantias y su utilidad practica fuera de la investigacion es muy limitada.
 - El autor documenta un comportamiento de la memoria (acumulacion de escrituras) que puede no generalizarse a otras configuraciones, escalas o tareas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thebnbrkr/titans-marv-enwik8
+- Modelo en Hugging Face: https://huggingface.co/thebnbrkr/titans-marv-enwik8
 - Repositorio del proyecto MARV (rama `marv-titan`): https://github.com/thebnbrkr/marv
 - Documentacion del experimento: `experiments/README.md` dentro de la rama `marv-titan` del repositorio anterior
 - Dependencia de codigo: `titans-pytorch` (paquete de Python), junto con `titans_real_text.py` de la rama `marv-titan`

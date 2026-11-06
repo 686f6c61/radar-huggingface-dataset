@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 
 | Modelo | Arquitectura | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| furniture_use_data_finetuning111_partial (este modelo) | DETR + ResNet-50 | 41,6 M | Entrada de imagen; sin datos de resolución de entrenamiento | Apache 2.0 | HuggingFace, 0 descargas |
-| facebook/detr-resnet-50 (modelo base) | DETR + ResNet-50 | ≈41,5 M (dato de referencia) | Entrenado en COCO a 800×1333 | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| furniture_use_data_finetuning111_partial (este modelo) | DETR + ResNet-50 | 41,6 M | Entrada de imagen; sin datos de resolución de entrenamiento | Apache 2.0 | Hugging Face, 0 descargas |
+| facebook/detr-resnet-50 (modelo base) | DETR + ResNet-50 | ≈41,5 M (dato de referencia) | Entrenado en COCO a 800×1333 | Apache 2.0 | Hugging Face, ampliamente utilizado |
 | Deformable DETR (variantes) | DETR con atención deformable | No disponible en la información proporcionada | No disponible | Apache 2.0 (según implementación) | Repositorios de investigación |
 | Familia YOLO (v8/11, distintas escalas) | CNN en tiempo real | No disponible en la información proporcionada | No disponible | AGPL-3.0 o licencia comercial según versión | Muy extendida |
 
@@ -92,5 +92,5 @@ La comparación cuantitativa de precisión no es posible porque este checkpoint 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/jiwoooooooo/furniture_use_data_finetuning111_partial
+- Página del modelo en Hugging Face: https://huggingface.co/jiwoooooooo/furniture_use_data_finetuning111_partial
 - Modelo base: https://huggingface.co/facebook/detr-resnet-50

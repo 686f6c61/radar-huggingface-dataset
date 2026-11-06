@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Junseok2/MachiningFM2.0 es un repositorio publicado en HuggingFace por el usuario Junseok2 bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre sugiere una posible relación con el dominio del mecanizado (machining) y las siglas "FM" podrían interpretarse como "Foundation Model", pero no existe información que lo confirme. El repositorio fue creado el 19 de agosto de 2026, una fecha futura respecto al momento actual, lo que resulta anómalo y dificulta aún más su evaluación.
+El modelo Junseok2/MachiningFM2.0 es un repositorio publicado en Hugging Face por el usuario Junseok2 bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre sugiere una posible relación con el dominio del mecanizado (machining) y las siglas "FM" podrían interpretarse como "Foundation Model", pero no existe información que lo confirme. El repositorio fue creado el 19 de agosto de 2026, una fecha futura respecto al momento actual, lo que resulta anómalo y dificulta aún más su evaluación.
 
 En el momento de redactar esta ficha, el modelo no presenta descargas ni valoraciones, y no se ha encontrado ninguna documentación adicional en la web que aporte detalles sobre sus capacidades, arquitectura o rendimiento. Por tanto, esta ficha se limita a reflejar la información disponible, que es prácticamente nula, y a advertir de la imposibilidad de realizar una evaluación técnica rigurosa.
 
@@ -54,4 +54,4 @@ No disponible. Al carecer de información sobre la arquitectura, el tamaño o la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Junseok2/MachiningFM2.0
+- Repositorio en Hugging Face: https://huggingface.co/Junseok2/MachiningFM2.0

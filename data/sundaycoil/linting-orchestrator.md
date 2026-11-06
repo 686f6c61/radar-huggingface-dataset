@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sundaycoil/linting-orchestrator`, publicado por el usuario `sundaycoil` en HuggingFace, es un repositorio reciente (creado en abril de 2026 y actualizado en agosto de 2026) que cuenta con 6 likes pero cero descargas. El tag `region:us` sugiere que está orientado al mercado estadounidense, pero no se dispone de información pública sobre su arquitectura, tamaño, entrenamiento o capacidades.
+El modelo `sundaycoil/linting-orchestrator`, publicado por el usuario `sundaycoil` en Hugging Face, es un repositorio reciente (creado en abril de 2026 y actualizado en agosto de 2026) que cuenta con 6 likes pero cero descargas. El tag `region:us` sugiere que está orientado al mercado estadounidense, pero no se dispone de información pública sobre su arquitectura, tamaño, entrenamiento o capacidades.
 
 A día de hoy, la ficha pública del modelo no incluye datos esenciales como licencia, pipeline, idiomas soportados o formato de pesos. Esto impide realizar una evaluación técnica seria y limita cualquier uso práctico hasta que el autor publique documentación adicional. La ausencia de descargas y la falta de especificaciones hacen que este modelo sea, por ahora, una incógnita para la comunidad.
 
@@ -21,7 +21,7 @@ A día de hoy, la ficha pública del modelo no incluye datos esenciales como lic
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo (transformer, MoE, SSM, etc.), los datos de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO), ni sobre innovaciones técnicas específicas. El repositorio de HuggingFace no incluye documentación, paper asociado ni notas de versión que permitan conocer estos detalles.
+No se ha publicado ninguna información sobre la arquitectura del modelo (transformer, MoE, SSM, etc.), los datos de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO), ni sobre innovaciones técnicas específicas. El repositorio de Hugging Face no incluye documentación, paper asociado ni notas de versión que permitan conocer estos detalles.
 
 ## Capacidades
 
@@ -53,6 +53,6 @@ No disponible. No se conocen modelos comparables de la misma categoría porque n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sundaycoil/linting-orchestrator
+- Repositorio Hugging Face: https://huggingface.co/sundaycoil/linting-orchestrator
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información disponible.

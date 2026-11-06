@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BioReason-Pro-v2-9b-nofeatures es un modelo de lenguaje de aproximadamente 8.950 millones de parametros (8,95 B) publicado en HuggingFace por el usuario adibvafa bajo el identificador `adibvafa/bioreason-pro-v2-9b-nofeatures`. El nombre sugiere una especializacion en razonamiento biologico ("bioreason"), aunque la model card no esta disponible en la informacion proporcionada, por lo que no se puede confirmar el dominio exacto de entrenamiento ni el proposito declarado por el autor. El tag `qwen3_5` indica que la arquitectura base pertenece a la familia Qwen 3.5, un transformer denso de la familia Qwen.
+BioReason-Pro-v2-9b-nofeatures es un modelo de lenguaje de aproximadamente 8.950 millones de parametros (8,95 B) publicado en Hugging Face por el usuario adibvafa bajo el identificador `adibvafa/bioreason-pro-v2-9b-nofeatures`. El nombre sugiere una especializacion en razonamiento biologico ("bioreason"), aunque la model card no esta disponible en la informacion proporcionada, por lo que no se puede confirmar el dominio exacto de entrenamiento ni el proposito declarado por el autor. El tag `qwen3_5` indica que la arquitectura base pertenece a la familia Qwen 3.5, un transformer denso de la familia Qwen.
 
-El modelo se distribuye en formato safetensors con un tamano de repositorio de 21,3 GB, lo que es coherente con pesos en precision BF16 o FP16 para un modelo de ~9 B de parametros. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es `openmdw-1.1`, una licencia de pesos abiertos de tipo "open model" que establece condiciones de uso, y el repositorio esta etiquetado con `license:other`.
+El modelo se distribuye en formato safetensors con un tamano de repositorio de 21,3 GB, lo que es coherente con pesos en precision BF16 o FP16 para un modelo de ~9 B de parametros. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es `openmdw-1.1`, una licencia de pesos abiertos de tipo "open model" que establece condiciones de uso, y el repositorio esta etiquetado con `license:other`.
 
 La relevancia de esta ficha es limitada por la escasez de informacion publica: no hay model card, no hay benchmarks, no hay datos de entrenamiento ni idiomas declarados, y el contador de descargas es de 1. Aun asi, se documentan a continuacion las especificaciones verificables a partir de los metadatos del repositorio y de la arquitectura base inferida.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BioReason-Pro-v2-9b-nofeatures | ~8,95 B | No disponible | openmdw-1.1 (gated) | HuggingFace, acceso restringido |
-| Qwen 2.5 7B Instruct | ~7,6 B | 128 K (segun variante) | Apache 2.0 | HuggingFace, abierto |
-| Llama 3.1 8B Instruct | ~8,0 B | 128 K | Llama 3.1 Community License | HuggingFace, abierto |
-| Mistral 7B Instruct v0.3 | ~7,2 B | 32 K | Apache 2.0 | HuggingFace, abierto |
+| BioReason-Pro-v2-9b-nofeatures | ~8,95 B | No disponible | openmdw-1.1 (gated) | Hugging Face, acceso restringido |
+| Qwen 2.5 7B Instruct | ~7,6 B | 128 K (segun variante) | Apache 2.0 | Hugging Face, abierto |
+| Llama 3.1 8B Instruct | ~8,0 B | 128 K | Llama 3.1 Community License | Hugging Face, abierto |
+| Mistral 7B Instruct v0.3 | ~7,2 B | 32 K | Apache 2.0 | Hugging Face, abierto |
 
 La comparacion es orientativa: no se dispone de datos de rendimiento del modelo evaluado, y su licencia y acceso gated lo diferencian de las alternativas abiertas. Los datos de contexto de los modelos comparados corresponden a sus variantes instruct publicas y deben verificarse en sus respectivas model cards.
 
@@ -77,13 +77,13 @@ La comparacion es orientativa: no se dispone de datos de rendimiento del modelo 
 - Riesgo de alucinacion: sin datos de alineacion ni evaluaciones publicadas, no se puede estimar la tasa de errores facticos, especialmente critico en dominio biologico.
 - Sesgos desconocidos: al no documentarse la composicion del corpus, no es posible identificar sesgos de genero, idioma o dominio.
 - Limitaciones de contexto e idioma: no declaradas; no se debe asumir soporte multilingue ni una ventana de contexto concreta.
-- Licencia openmdw-1.1: es necesario revisar los terminos completos antes de uso comercial; el acceso gated implica aceptar condiciones adicionales en HuggingFace.
+- Licencia openmdw-1.1: es necesario revisar los terminos completos antes de uso comercial; el acceso gated implica aceptar condiciones adicionales en Hugging Face.
 - Sufijo "nofeatures": podria indicar la ausencia de capacidades como tool calling o modo de razonamiento; no confirmado.
 - Madurez: con 1 descarga y 0 likes, el modelo carece de validacion por parte de la comunidad; no se recomienda para produccion sin evaluacion propia.
 - Formato unico safetensors: no hay GGUF ni cuantizaciones oficiales, lo que anade trabajo de conversion para despliegue en consumer.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adibvafa/bioreason-pro-v2-9b-nofeatures
+- Hugging Face: https://huggingface.co/adibvafa/bioreason-pro-v2-9b-nofeatures
 - Licencia openmdw-1.1: no disponible en la informacion proporcionada
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

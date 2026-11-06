@@ -2,7 +2,7 @@
 
 ## Resumen
 
-docuverify-finetuned-bert es un ajuste fino (fine-tuning) del modelo google-bert/bert-base-uncased publicado por el usuario KaiHuang05 en HuggingFace. Se trata de un clasificador de texto (pipeline `text-classification`) con 109.486.085 parametros almacenados en formato safetensors, lo que corresponde a la configuracion estandar de BERT-base (unos 110 millones de parametros) mas una cabeza de clasificacion. El repositorio ocupa 0.4 GB y se distribuye bajo licencia MIT.
+docuverify-finetuned-bert es un ajuste fino (fine-tuning) del modelo google-bert/bert-base-uncased publicado por el usuario KaiHuang05 en Hugging Face. Se trata de un clasificador de texto (pipeline `text-classification`) con 109.486.085 parametros almacenados en formato safetensors, lo que corresponde a la configuracion estandar de BERT-base (unos 110 millones de parametros) mas una cabeza de clasificacion. El repositorio ocupa 0.4 GB y se distribuye bajo licencia MIT.
 
 El problema que resuelve, segun se deduce del nombre del repositorio, es la verificacion o validacion de documentos, aunque la model card no describe la tarea concreta, el conjunto de etiquetas ni el dataset de entrenamiento. Esta ausencia de documentacion es la caracteristica mas relevante de la ficha: no hay informacion publica sobre el procedimiento de ajuste, los datos utilizados ni metricas de evaluacion.
 
@@ -65,14 +65,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente. Ejemplos razonables: NVIDIA T4, L4, RTX 3060, RTX 4090, A10, A100 o H100 (estas ultimas sobredimensionadas para este modelo, salvo en despliegues de altisimo volumen).
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual e incluso en iGPU con memoria compartida.
 - Ejecucion en CPU: totalmente viable. Es la opcion habitual para este tipo de encoder en produccion con volumenes moderados.
-- Opciones de despliegue: `transformers` (pipeline de clasificacion), ONNX Runtime, TorchScript, NVIDIA Triton Inference Server, TorchServe, FastAPI con `transformers`, o servicios gestionados de HuggingFace. vLLM esta orientado a modelos generativos, por lo que no es la opcion tipica para un encoder de clasificacion. Ollama y llama.cpp no soportan de forma estandar clasificadores BERT de este tipo.
+- Opciones de despliegue: `transformers` (pipeline de clasificacion), ONNX Runtime, TorchScript, NVIDIA Triton Inference Server, TorchServe, FastAPI con `transformers`, o servicios gestionados de Hugging Face. vLLM esta orientado a modelos generativos, por lo que no es la opcion tipica para un encoder de clasificacion. Ollama y llama.cpp no soportan de forma estandar clasificadores BERT de este tipo.
 - Latencia y throughput estimados: no disponibles para este modelo concreto. Como referencia general de la arquitectura BERT-base, en GPU moderna se obtienen latencias del orden de decenas de milisegundos para lotes de 32 secuencias cortas, y en CPU del orden de pocos milisegundos a decenas de milisegundos por secuencia. Son estimaciones de la arquitectura, no mediciones de este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Tarea | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KaiHuang05/docuverify-finetuned-bert | 109,5 M | 512 tokens | Ingles | MIT | Clasificacion de texto | HuggingFace, 0 descargas |
+| KaiHuang05/docuverify-finetuned-bert | 109,5 M | 512 tokens | Ingles | MIT | Clasificacion de texto | Hugging Face, 0 descargas |
 | google-bert/bert-base-uncased | 110 M | 512 tokens | Ingles | Apache 2.0 | Modelo base (encoder) | Muy extendido, millones de descargas |
 | distilbert-base-uncased | 66 M | 512 tokens | Ingles | Apache 2.0 | Modelo base destilado | Muy extendido, mas rapido y ligero que BERT-base |
 | roberta-base | 125 M | 512 tokens | Ingles | MIT | Modelo base (encoder) | Muy extendido, mejor rendimiento general en NLU que BERT-base |
@@ -97,7 +97,7 @@ No se dispone de metricas comparativas de rendimiento para docuverify-finetuned-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KaiHuang05/docuverify-finetuned-bert
+- Modelo en Hugging Face: https://huggingface.co/KaiHuang05/docuverify-finetuned-bert
 - Modelo base google-bert/bert-base-uncased: https://huggingface.co/google-bert/bert-base-uncased
 - Paper original de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805
 - Tutorial oficial de ajuste fino de BERT con TensorFlow Model Garden: https://www.tensorflow.org/tfmodels/nlp/fine_tune_bert

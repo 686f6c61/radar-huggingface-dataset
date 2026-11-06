@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Adedoyinbenson/Adedoyinbenson4` es un repositorio publicado en HuggingFace por el usuario Adedoyinbenson el 4 de noviembre de 2026. La model card asociada no contiene mas informacion que la declaracion de licencia Apache 2.0, por lo que no es posible determinar la arquitectura, el tamano, el contexto ni el proposito del modelo a partir de la documentacion publicada.
+El modelo identificado como `Adedoyinbenson/Adedoyinbenson4` es un repositorio publicado en Hugging Face por el usuario Adedoyinbenson el 4 de noviembre de 2026. La model card asociada no contiene mas informacion que la declaracion de licencia Apache 2.0, por lo que no es posible determinar la arquitectura, el tamano, el contexto ni el proposito del modelo a partir de la documentacion publicada.
 
 No se dispone de datos sobre el pipeline de inferencia, los idiomas soportados, los pesos disponibles ni los resultados de evaluacion. El repositorio registra cero descargas y cero interacciones (likes) en el momento de la consulta, lo que sugiere que se trata de una publicacion reciente sin adopcion conocida.
 
@@ -73,5 +73,5 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Adedoyinbenson/Adedoyinbenson4
+- Repositorio en Hugging Face: https://huggingface.co/Adedoyinbenson/Adedoyinbenson4
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

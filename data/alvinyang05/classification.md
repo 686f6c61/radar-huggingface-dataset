@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AlvinYang05/classification` es un checkpoint de inicialización en PyTorch de un "Tiny Transformer" orientado a tareas de clasificación. Lo publica el usuario AlvinYang05 en HuggingFace bajo licencia MIT, con un total de 33.088 parámetros según los pesos en `safetensors`, lo que lo sitúa en el rango de los modelos de juguete más pequeños, muy lejos de cualquier transformer preentrenado de uso industrial. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de escala reducida.
+El modelo `AlvinYang05/classification` es un checkpoint de inicialización en PyTorch de un "Tiny Transformer" orientado a tareas de clasificación. Lo publica el usuario AlvinYang05 en Hugging Face bajo licencia MIT, con un total de 33.088 parámetros según los pesos en `safetensors`, lo que lo sitúa en el rango de los modelos de juguete más pequeños, muy lejos de cualquier transformer preentrenado de uso industrial. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de escala reducida.
 
 La arquitectura declarada es un transformer denso con atención dilatada (*dilated attention*), fusión con puerta (*gated fusion*), activación mish y normalización layernorm. La configuración incluida se etiqueta como "xlarge" dentro del propio repositorio, aunque esa denominación es relativa al generador de configuraciones usado por el autor y no implica un tamaño real grande: 33.088 parámetros ocupan alrededor de 132 KB en fp32. El repositorio incluye `run.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta por defecto (optimizador LAMB con schedule exponencial) y `model.safetensors` como checkpoint de inicialización.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, instrumental y no de rendimiento: sirve como planti
 | Escala declarada por el autor | "xlarge" (relativa a la configuración del propio script) |
 | Optimizador por defecto | LAMB con schedule exponencial |
 | Estado del checkpoint | Inicialización, sin entrenamiento ni auditoría |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -92,9 +92,9 @@ Ninguno de estos modelos es directamente comparable en rendimiento con el reposi
 - Restricciones de licencia: MIT permite uso comercial y modificación, pero el autor recomienda revisar por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
 - Integración: al ser una implementación personalizada, las APIs genéricas de carga automática necesitan un adaptador explícito, lo que añade trabajo de integración.
 - Sin métricas de latencia ni throughput publicadas, por lo que cualquier planificación de producción requiere medición propia.
-- El nombre genérico del repositorio (`classification`) y la ausencia de pipeline declarado en HuggingFace dificultan su descubrimiento y su uso directo mediante `transformers`.
+- El nombre genérico del repositorio (`classification`) y la ausencia de pipeline declarado en Hugging Face dificultan su descubrimiento y su uso directo mediante `transformers`.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlvinYang05/classification
+- Hugging Face: https://huggingface.co/AlvinYang05/classification
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos en los resultados de búsqueda web proporcionados; dichos resultados no contienen información relacionada con el modelo.

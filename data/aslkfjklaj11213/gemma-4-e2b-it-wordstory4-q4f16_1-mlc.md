@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aslkfjklaj11213/gemma-4-E2B-it-wordstory4-q4f16_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/aslkfjklaj11213/gemma-4-E2B-it-wordstory4-q4f16_1-MLC
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Cuantización oficial MLC para WebLLM: https://huggingface.co/mlc-ai/gemma-4-E2B-it-q4f16_1-MLC
 - Proyecto consumidor (juego de palabras): https://github.com/areweloststars/-

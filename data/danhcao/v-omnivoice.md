@@ -2,7 +2,7 @@
 
 ## Resumen
 
-G-OmniVoice es un modelo de síntesis de voz (text-to-speech) optimizado para vietnamita, desarrollado por G-Group AI Lab y publicado en HuggingFace bajo el identificador `danhcao/v-omnivoice`. Se trata de un fine-tuning del modelo base [k2-fsa/OmniVoice](https://huggingface.co/k2-fsa/OmniVoice), que combina un backbone de lenguaje Qwen3-0.6B con el codec de audio Higgs Audio 2. Su propuesta de valor principal es doble: por un lado, lee vietnamita con una precisión notable (el WER más bajo entre los modelos OmniVoice públicos) y, por otro, preserva la voz del hablante de referencia con una similitud de nivel superior.
+G-OmniVoice es un modelo de síntesis de voz (text-to-speech) optimizado para vietnamita, desarrollado por G-Group AI Lab y publicado en Hugging Face bajo el identificador `danhcao/v-omnivoice`. Se trata de un fine-tuning del modelo base [k2-fsa/OmniVoice](https://huggingface.co/k2-fsa/OmniVoice), que combina un backbone de lenguaje Qwen3-0.6B con el codec de audio Higgs Audio 2. Su propuesta de valor principal es doble: por un lado, lee vietnamita con una precisión notable (el WER más bajo entre los modelos OmniVoice públicos) y, por otro, preserva la voz del hablante de referencia con una similitud de nivel superior.
 
 El modelo soporta clonación de voz zero-shot a partir de clips de referencia de 3 a 10 segundos, así como diseño de voz por descripción textual (sin audio de referencia). Con 612 millones de parámetros en total, es un modelo compacto que puede ejecutarse en GPUs de consumo. La licencia es Apache 2.0, aunque el tokenizador de audio incluido está sujeto a la Boson Higgs Audio 2 Community License, un matiz importante para uso comercial.
 
@@ -83,11 +83,11 @@ G-OmniVoice supera a las alternativas en inteligibilidad (WER) con una fidelidad
 - **Necesidad de normalizacion de texto**: el modelo requiere normalizacion previa del texto (numeros, fechas, simbolos, abreviaturas) para obtener resultados optimos.
 - **Fragmentacion de textos largos**: para entradas extensas, es necesario dividir el texto en fragmentos del tamano de una oracion para mantener una prosodia estable.
 - **Riesgo de alucinacion**: como todo modelo de lenguaje generativo, puede producir salidas inesperadas o incorrectas, especialmente con entradas ambiguas o fuera de distribucion.
-- **Modelo reciente y sin adopcion**: el modelo se publico en septiembre de 2026 y no registra descargas ni valoraciones en HuggingFace, por lo que su madurez en entornos de produccion no esta probada.
+- **Modelo reciente y sin adopcion**: el modelo se publico en septiembre de 2026 y no registra descargas ni valoraciones en Hugging Face, por lo que su madurez en entornos de produccion no esta probada.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: danhcao/v-omnivoice](https://huggingface.co/danhcao/v-omnivoice)
+- [Modelo en Hugging Face: danhcao/v-omnivoice](https://huggingface.co/danhcao/v-omnivoice)
 - [Modelo base: k2-fsa/OmniVoice](https://huggingface.co/k2-fsa/OmniVoice)
 - [Backbone: Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [Repositorio de OmniVoice (Next-gen Kaldi)](https://github.com/k2-fsa/OmniVoice)

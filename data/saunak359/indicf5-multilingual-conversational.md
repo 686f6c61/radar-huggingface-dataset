@@ -4,7 +4,7 @@
 
 IndicF5-Multilingual-Conversational es un modelo de síntesis de voz (text-to-speech) desarrollado por Saunak Das Chaudhuri, que parte del modelo base IndicF5 de AI4Bharat y se ha afinado específicamente para conversaciones multilingües en tres idiomas indios: hindi, bengalí y punjabi. El modelo está diseñado para generar voz sintética con un tono conversacional natural, resolviendo el problema de la falta de voces TTS de calidad en idiomas con menos recursos que el inglés.
 
-El modelo base IndicF5 es un sistema TTS poliglota casi humano entrenado sobre 1417 horas de habla de alta calidad procedente de los conjuntos de datos Rasa, IndicTTS, LIMMITS y IndicVoices-R. Esta versión afinada se ha entrenado sobre un conjunto de datos curado multilingüe (Multi-Lingual-Curated_Dataset) para mejorar el rendimiento en contextos conversacionales. Con aproximadamente 337 millones de parámetros y un tamaño de repositorio de 4,1 GB, el modelo se distribuye bajo licencia MIT, aunque su acceso está restringido y requiere aceptar condiciones en HuggingFace.
+El modelo base IndicF5 es un sistema TTS poliglota casi humano entrenado sobre 1417 horas de habla de alta calidad procedente de los conjuntos de datos Rasa, IndicTTS, LIMMITS y IndicVoices-R. Esta versión afinada se ha entrenado sobre un conjunto de datos curado multilingüe (Multi-Lingual-Curated_Dataset) para mejorar el rendimiento en contextos conversacionales. Con aproximadamente 337 millones de parámetros y un tamaño de repositorio de 4,1 GB, el modelo se distribuye bajo licencia MIT, aunque su acceso está restringido y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ El modelo base IndicF5 es un sistema TTS poliglota casi humano entrenado sobre 1
 | Formato de pesos | safetensors |
 | Libreria | f5-tts |
 | Modelo base | ai4bharat/IndicF5 |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ La comparativa muestra que esta versión afinada ofrece una ventaja clara en cal
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de poder descargarlo, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de poder descargarlo, lo que puede limitar su uso en entornos automatizados.
 - Cobertura de idiomas limitada: solo soporta hindi, bengalí y punjabi. No incluye otros idiomas indios como tamil, telugu o maratí, que sí cubre el modelo base.
 - Riesgo de alucinación en la pronunciación: como cualquier modelo TTS, puede pronunciar incorrectamente nombres propios, palabras extranjeras o términos técnicos poco frecuentes.
 - Sesgos en la voz generada: el modelo puede reflejar sesgos presentes en los datos de entrenamiento, como acentos o registros lingüísticos dominantes en los conjuntos de datos utilizados.
@@ -83,8 +83,8 @@ La comparativa muestra que esta versión afinada ofrece una ventaja clara en cal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saunak359/IndicF5-Multilingual-Conversational
+- Modelo en Hugging Face: https://huggingface.co/Saunak359/IndicF5-Multilingual-Conversational
 - Repositorio de AI4Bharat/IndicF5: https://github.com/AI4Bharat/IndicF5
 - Página oficial de IndicF5 en AI4Bharat: https://ai4bharat.iitm.ac.in/areas/model/TTS/IndicF5/
 - README de IndicF5 en GitHub: https://github.com/AI4Bharat/IndicF5/blob/main/README.md
-- Perfil del autor en HuggingFace: https://huggingface.co/Saunak359/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Saunak359/models

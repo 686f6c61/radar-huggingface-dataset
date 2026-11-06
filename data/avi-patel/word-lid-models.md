@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Avi-patel/word-LID-models es un modelo publicado en HuggingFace por el usuario avi-patel. Según su nombre, está diseñado para la identificación de idioma a nivel de palabra (word-level language identification), una tarea de procesamiento del lenguaje natural que consiste en determinar la lengua de cada token individual dentro de un texto. El repositorio ocupa 0,9 GB y los pesos están publicados en formato safetensors bajo licencia Apache-2.0.
+Avi-patel/word-LID-models es un modelo publicado en Hugging Face por el usuario avi-patel. Según su nombre, está diseñado para la identificación de idioma a nivel de palabra (word-level language identification), una tarea de procesamiento del lenguaje natural que consiste en determinar la lengua de cada token individual dentro de un texto. El repositorio ocupa 0,9 GB y los pesos están publicados en formato safetensors bajo licencia Apache-2.0.
 
 La model card no incluye información técnica relevante: se desconocen la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados y cualquier detalle sobre el proceso de entrenamiento. La fecha de creación indicada (2026-09-09) es posterior a la fecha prevista de consulta, lo que sugiere que los metadatos pueden ser incorrectos o estar manipulados.
 
@@ -69,4 +69,4 @@ No se dispone de información sobre modelos comparables. No se han publicado ben
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/avi-patel/word-LID-models
+- Hugging Face: https://huggingface.co/avi-patel/word-LID-models

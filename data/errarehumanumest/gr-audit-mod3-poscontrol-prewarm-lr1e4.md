@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ErrareHumanumEst/gr-audit-mod3-poscontrol-prewarm-lr1e4` es un ajuste fino (fine-tuning) de tipo SFT sobre una base de la familia Qwen3, publicado en HuggingFace por el usuario `ErrareHumanumEst`. Con 1.720.574.976 parámetros (aproximadamente 1.72B), el modelo está orientado a generación de texto conversacional, aunque su propósito concreto —sugerido por el nombre "gr-audit-mod3-poscontrol-prewarm"— parece estar relacionado con tareas de auditoría o control de calidad en algún dominio específico, sin que la documentación pública lo confirme.
+El modelo `ErrareHumanumEst/gr-audit-mod3-poscontrol-prewarm-lr1e4` es un ajuste fino (fine-tuning) de tipo SFT sobre una base de la familia Qwen3, publicado en Hugging Face por el usuario `ErrareHumanumEst`. Con 1.720.574.976 parámetros (aproximadamente 1.72B), el modelo está orientado a generación de texto conversacional, aunque su propósito concreto —sugerido por el nombre "gr-audit-mod3-poscontrol-prewarm"— parece estar relacionado con tareas de auditoría o control de calidad en algún dominio específico, sin que la documentación pública lo confirme.
 
 La relevancia de este modelo reside en que forma parte de una serie de experimentos de ajuste fino (se encuentra un modelo hermano, `gr-audit-mod3-prewarm`, con el mismo autor) que exploran variaciones de hiperparámetros como la tasa de aprendizaje (`lr1e4`) y el precalentamiento (`prewarm`). Sin embargo, la model card es una plantilla automática sin información sustancial, por lo que muchas especificaciones clave no están disponibles. Es un modelo de código abierto (pesos en safetensors, compatible con `transformers` y `text-generation-inference`), pero su licencia no se ha declarado.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo reside en que forma parte de una serie de experimen
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es presumiblemente la de un modelo Qwen3, dado el tag `qwen3` en el repositorio. Qwen3 emplea una arquitectura transformer estándar con atención de múltiples cabezas y normalización RMSNorm, aunque la variante exacta (tamaño de capas, dimensiones ocultas, número de cabezas) no se ha documentado en este repositorio. El entrenamiento se realizó mediante supervisión fina (SFT), como indican los tags `trl` y `sft`, probablemente usando la librería TRL de HuggingFace. El nombre del modelo sugiere un ajuste con tasa de aprendizaje de 1e-4 y una fase de precalentamiento (`prewarm`), pero no se proporcionan detalles sobre el dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco hay información sobre el modelo base exacto del que parte el fine-tuning, aunque el número de parámetros (1.72B) apunta a una base de tamaño similar a Qwen3-1.7B.
+La arquitectura subyacente es presumiblemente la de un modelo Qwen3, dado el tag `qwen3` en el repositorio. Qwen3 emplea una arquitectura transformer estándar con atención de múltiples cabezas y normalización RMSNorm, aunque la variante exacta (tamaño de capas, dimensiones ocultas, número de cabezas) no se ha documentado en este repositorio. El entrenamiento se realizó mediante supervisión fina (SFT), como indican los tags `trl` y `sft`, probablemente usando la librería TRL de Hugging Face. El nombre del modelo sugiere un ajuste con tasa de aprendizaje de 1e-4 y una fase de precalentamiento (`prewarm`), pero no se proporcionan detalles sobre el dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco hay información sobre el modelo base exacto del que parte el fine-tuning, aunque el número de parámetros (1.72B) apunta a una base de tamaño similar a Qwen3-1.7B.
 
 ## Capacidades
 
@@ -60,9 +60,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ErrareHumanumEst/gr-audit-mod3-poscontrol-prewarm-lr1e4 | 1.72B | no disponible | no disponible | HuggingFace |
-| Qwen3-1.7B (base, no confirmado como base de este modelo) | 1.7B | 32K (típico en Qwen3) | Apache 2.0 (típico) | HuggingFace |
-| Llama-3.2-1B | 1.23B | 128K | Llama 3.2 Community License | HuggingFace |
+| ErrareHumanumEst/gr-audit-mod3-poscontrol-prewarm-lr1e4 | 1.72B | no disponible | no disponible | Hugging Face |
+| Qwen3-1.7B (base, no confirmado como base de este modelo) | 1.7B | 32K (típico en Qwen3) | Apache 2.0 (típico) | Hugging Face |
+| Llama-3.2-1B | 1.23B | 128K | Llama 3.2 Community License | Hugging Face |
 
 Nota: los datos de Qwen3-1.7B y Llama-3.2-1B son aproximaciones basadas en información pública general, no en la documentación de este repositorio.
 

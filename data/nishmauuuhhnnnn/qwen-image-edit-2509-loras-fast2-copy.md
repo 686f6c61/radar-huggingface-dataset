@@ -4,7 +4,7 @@
 
 El repositorio `Nishmauuuhhnnnn/Qwen-Image-Edit-2509-LoRAs-Fast2-copy` aloja un conjunto de adaptadores LoRA (Low-Rank Adaptation) aparentemente diseñados para el modelo base Qwen-Image-Edit-2509 de Alibaba, un modelo de lenguaje y visión especializado en edición de imágenes por instrucciones. La denominación "Fast2" sugiere una variante optimizada para inferencia rápida, aunque no se proporciona documentación técnica en la model card que lo confirme. El repositorio se publica bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas.
 
-Sin embargo, la información disponible es extremadamente limitada: la model card está vacía (solo incluye la línea de licencia), no hay descripción del contenido de los LoRAs, ni métricas, ni ejemplos de uso. Por tanto, esta ficha se basa en el contexto del modelo base Qwen-Image-Edit-2509 y en los datos públicos de HuggingFace, indicando explícitamente cuando un dato no está disponible.
+Sin embargo, la información disponible es extremadamente limitada: la model card está vacía (solo incluye la línea de licencia), no hay descripción del contenido de los LoRAs, ni métricas, ni ejemplos de uso. Por tanto, esta ficha se basa en el contexto del modelo base Qwen-Image-Edit-2509 y en los datos públicos de Hugging Face, indicando explícitamente cuando un dato no está disponible.
 
 ## Especificaciones tecnicas
 
@@ -65,9 +65,9 @@ Dado que el repositorio es un adaptador LoRA, la comparativa se realiza a nivel 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-Edit-2509 (base) | ~20B | 32 768 tokens | Apache 2.0 | HuggingFace |
-| InstructPix2Pix | ~1.4B (difusion) | N/A (imagen) | Apache 2.0 | HuggingFace |
-| SEED-Data-Edit | ~7B | 4096 tokens | MIT | HuggingFace |
+| Qwen-Image-Edit-2509 (base) | ~20B | 32 768 tokens | Apache 2.0 | Hugging Face |
+| InstructPix2Pix | ~1.4B (difusion) | N/A (imagen) | Apache 2.0 | Hugging Face |
+| SEED-Data-Edit | ~7B | 4096 tokens | MIT | Hugging Face |
 | Emu Edit | ~13B | 4096 tokens | no comercial | no publico |
 
 El modelo base Qwen-Image-Edit-2509 destaca por su soporte multi-imagen y su integracion con tool calling, algo que no ofrecen las alternativas de difusion pura. Los LoRAs "Fast2" podrian ofrecer una inferencia mas rapida o una especializacion en ciertos estilos, pero sin datos no es posible verificar esa ventaja.
@@ -83,7 +83,7 @@ El modelo base Qwen-Image-Edit-2509 destaca por su soporte multi-imagen y su int
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nishmauuuhhnnnn/Qwen-Image-Edit-2509-LoRAs-Fast2-copy
+- Repositorio Hugging Face: https://huggingface.co/Nishmauuuhhnnnn/Qwen-Image-Edit-2509-LoRAs-Fast2-copy
 - Modelo base Qwen-Image-Edit-2509: https://huggingface.co/Qwen/Qwen-Image-Edit-2509
 - Guia de Qwen-Image-Edit-2509: https://www.atlabs.ai/blog/qwen-image-edit-2509-guide
 - Pagina del modelo en Layer: https://www.layer.ai/models/qwen-qwen-image-edit-2509

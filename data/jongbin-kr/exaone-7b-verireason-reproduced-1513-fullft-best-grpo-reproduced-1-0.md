@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (exaone-7b-verireason…grpo-reproduced-1.0) | 7,82B | No disponible | No disponible | HuggingFace, 19 descargas | Fine-tune GRPO de investigación, sin benchmarks publicados |
-| EXAONE-3.5-7.8B-Instruct (LG AI Research) | 7,8B | 32 768 tokens | EXAONE AI Model License | HuggingFace, ampliamente distribuido | Modelo oficial de la familia base, con evaluación publicada |
-| Qwen2.5-7B-Instruct | 7,61B | 131 072 tokens | Apache-2.0 | HuggingFace, muy ampliamente distribuido | Alternativa con licencia permisiva y contexto largo |
-| Llama-3.1-8B-Instruct | 8,03B | 131 072 tokens | Llama 3.1 Community License | HuggingFace y múltiples proveedores | Amplio soporte de ecosistema y cuantizaciones GGUF publicadas |
+| Este modelo (exaone-7b-verireason…grpo-reproduced-1.0) | 7,82B | No disponible | No disponible | Hugging Face, 19 descargas | Fine-tune GRPO de investigación, sin benchmarks publicados |
+| EXAONE-3.5-7.8B-Instruct (LG AI Research) | 7,8B | 32 768 tokens | EXAONE AI Model License | Hugging Face, ampliamente distribuido | Modelo oficial de la familia base, con evaluación publicada |
+| Qwen2.5-7B-Instruct | 7,61B | 131 072 tokens | Apache-2.0 | Hugging Face, muy ampliamente distribuido | Alternativa con licencia permisiva y contexto largo |
+| Llama-3.1-8B-Instruct | 8,03B | 131 072 tokens | Llama 3.1 Community License | Hugging Face y múltiples proveedores | Amplio soporte de ecosistema y cuantizaciones GGUF publicadas |
 
 Los datos de los tres modelos de comparación proceden de la documentación pública de sus respectivos model cards y no han sido verificados en esta ficha; conviene comprobarlos antes de tomar decisiones. La diferencia clave frente a ellos no es de rendimiento, sino de propósito: aquí se trata de un checkpoint de investigación con licencia sin definir, sin benchmarks y sin cuantizaciones publicadas, mientras que las alternativas son modelos de producción con licencia explícita y ecosistema consolidado.
 
@@ -94,7 +94,7 @@ Los datos de los tres modelos de comparación proceden de la documentación púb
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Jongbin-kr/exaone-7b-verireason-reproduced-1513-fullft-best-grpo-reproduced-1.0
+- Página del modelo en Hugging Face: https://huggingface.co/Jongbin-kr/exaone-7b-verireason-reproduced-1513-fullft-best-grpo-reproduced-1.0
 - Modelo base: https://huggingface.co/Jongbin-kr/exaone-7b-verireason-reproduced-1513-fullft-epoch4
 - Artículo de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

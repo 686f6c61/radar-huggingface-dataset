@@ -80,7 +80,7 @@ Hold-out con Kokoro-82M (nunca usado en entrenamiento ni seleccion):
 
 | Modelo | Parametros | Contexto/entrada | EER (todos vistos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vouch HuBERT-LR (este) | HuBERT base + LR | 2-10 s audio | 0.052 | MIT | HuggingFace (14 descargas) |
+| Vouch HuBERT-LR (este) | HuBERT base + LR | 2-10 s audio | 0.052 | MIT | Hugging Face (14 descargas) |
 | HuBERT + MLP (misma familia) | HuBERT base + MLP | 2-10 s audio | 0.085 ± 0.012 | no disponible | solo en benchmark del autor |
 | MFCC + LR (baseline) | no disponible | 2-10 s audio | 0.288 | no disponible | baseline del autor |
 | Duration-only control | no disponible | 2-10 s audio | 0.492 | no disponible | baseline del autor |
@@ -101,7 +101,7 @@ No se dispone de comparacion con detectores anti-spoofing externos (por ejemplo,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NagaYu/vouch-hubert-lr
+- Hugging Face: https://huggingface.co/NagaYu/vouch-hubert-lr
 - Modelo base: https://huggingface.co/facebook/hubert-base-ls960
 - Dataset: https://huggingface.co/datasets/NagaYu/vouch-bench
 - Repositorio de evaluacion: no disponible (referencias a `eval/benchmark_v2_summary.json` y `eval/release_summary.json` sin URL publica)

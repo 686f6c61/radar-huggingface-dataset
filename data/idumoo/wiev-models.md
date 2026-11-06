@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`idumoo/wiev-models` es un repositorio de pesos publicado en HuggingFace por el usuario `idumoo` bajo licencia Apache 2.0. La unica informacion verificable en la model card es la licencia: el README no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 5,4 GB y esta etiquetado con `onnx`, lo que indica que los pesos se distribuyen en formato ONNX, pero no se especifica el numero de parametros, la longitud de contexto ni la tarea para la que fue entrenado.
+`idumoo/wiev-models` es un repositorio de pesos publicado en Hugging Face por el usuario `idumoo` bajo licencia Apache 2.0. La unica informacion verificable en la model card es la licencia: el README no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 5,4 GB y esta etiquetado con `onnx`, lo que indica que los pesos se distribuyen en formato ONNX, pero no se especifica el numero de parametros, la longitud de contexto ni la tarea para la que fue entrenado.
 
 El modelo acumula 0 descargas y 0 likes, fue creado y actualizado el 18 de septiembre de 2026, y no tiene pipeline declarado ni idiomas soportados declarados. Las busquedas web realizadas no han devuelto ninguna referencia tecnica al modelo: los resultados obtenidos corresponden a paginas de ayuda de servicios de Google y no guardan relacion con el repositorio.
 
@@ -82,5 +82,5 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni la tarea 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/idumoo/wiev-models
+- Hugging Face: https://huggingface.co/idumoo/wiev-models
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en los resultados de busqueda disponibles.

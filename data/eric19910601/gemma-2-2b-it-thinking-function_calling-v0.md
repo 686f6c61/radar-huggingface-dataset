@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Eric19910601/gemma-2-2B-it-thinking-function_calling-V0` es un ajuste fino (fine-tuning) supervisado del modelo `google/gemma-2-2b-it`, publicado por el usuario Eric19910601 en HuggingFace. El modelo parte de la base instructiva de Gemma 2 de 2.000 millones de parametros desarrollada por Google y se ha entrenado con SFT (supervised fine-tuning) mediante la libreria TRL, con el objetivo declarado —segun el nombre del repositorio— de reforzar el razonamiento tipo "thinking" y el uso de function calling o tool calling.
+`Eric19910601/gemma-2-2B-it-thinking-function_calling-V0` es un ajuste fino (fine-tuning) supervisado del modelo `google/gemma-2-2b-it`, publicado por el usuario Eric19910601 en Hugging Face. El modelo parte de la base instructiva de Gemma 2 de 2.000 millones de parametros desarrollada por Google y se ha entrenado con SFT (supervised fine-tuning) mediante la libreria TRL, con el objetivo declarado —segun el nombre del repositorio— de reforzar el razonamiento tipo "thinking" y el uso de function calling o tool calling.
 
 Se trata de un modelo de pesos abiertos de pequeno tamano (2,5 GB en el repositorio, compatible con los pesos en safetensors del modelo base), pensado para ejecutarse en hardware modesto y para tareas de generacion de texto con soporte de llamadas a herramientas. El repositorio se creo el 4 de noviembre de 2026 y, en el momento de la consulta, no registra descargas ni interacciones, por lo que se trata de un experimento de la comunidad sin validacion externa conocida.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Eric19910601/gemma-2-2B-it-thinking-function_calling-V0 | ~2B | no disponible (base: 8.192) | no disponible | HuggingFace | Ajuste SFT comunitario sin evaluacion publica |
-| google/gemma-2-2b-it | ~2B | 8.192 | Gemma Terms of Use | HuggingFace | Modelo base instructivo, ampliamente evaluado |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 | Apache 2.0 | HuggingFace | Alternativa pequena con contexto largo y soporte de tool calling documentado |
-| Llama-3.2-1B-Instruct | ~1,2B | 128.000 | Llama 3.2 Community License | HuggingFace | Alternativa pequena con contexto muy largo |
+| Eric19910601/gemma-2-2B-it-thinking-function_calling-V0 | ~2B | no disponible (base: 8.192) | no disponible | Hugging Face | Ajuste SFT comunitario sin evaluacion publica |
+| google/gemma-2-2b-it | ~2B | 8.192 | Gemma Terms of Use | Hugging Face | Modelo base instructivo, ampliamente evaluado |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 | Apache 2.0 | Hugging Face | Alternativa pequena con contexto largo y soporte de tool calling documentado |
+| Llama-3.2-1B-Instruct | ~1,2B | 128.000 | Llama 3.2 Community License | Hugging Face | Alternativa pequena con contexto muy largo |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Eric19910601/gemma-2-2B-it-thinking-function_calling-V0
+- Repositorio Hugging Face: https://huggingface.co/Eric19910601/gemma-2-2B-it-thinking-function_calling-V0
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Libreria TRL: https://github.com/huggingface/trl
 - Documentacion de Gemma 2: https://ai.google.dev/gemma/docs

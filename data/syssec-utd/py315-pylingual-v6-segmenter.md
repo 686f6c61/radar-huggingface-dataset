@@ -2,7 +2,7 @@
 
 ## Resumen
 
-py315-pylingual-v6-segmenter es un modelo de clasificación de tokens (token classification) desarrollado por el grupo syssec-utd, construido mediante fine-tuning del modelo de lenguaje enmascarado syssec-utd/py315-pylingual-v6-mlm, que a su vez se basa en la arquitectura RoBERTa. El modelo resuelve una tarea de etiquetado a nivel de token orientada a la segmentación de secuencias, presumiblemente sobre texto o código fuente en el ámbito de Python ("py315", "pylingual"), y se distribuye exclusivamente en formato safetensors a través de HuggingFace.
+py315-pylingual-v6-segmenter es un modelo de clasificación de tokens (token classification) desarrollado por el grupo syssec-utd, construido mediante fine-tuning del modelo de lenguaje enmascarado syssec-utd/py315-pylingual-v6-mlm, que a su vez se basa en la arquitectura RoBERTa. El modelo resuelve una tarea de etiquetado a nivel de token orientada a la segmentación de secuencias, presumiblemente sobre texto o código fuente en el ámbito de Python ("py315", "pylingual"), y se distribuye exclusivamente en formato safetensors a través de Hugging Face.
 
 Con 108.887.043 parámetros (aproximadamente 109 millones), se sitúa en la horquilla de los modelos encoder tipo RoBERTa-base, lo que implica un coste de inferencia bajo y la posibilidad de ejecutarlo en hardware de consumo. El repositorio ocupa 0,4 GB, coherente con pesos en precisión completa de un modelo de este tamaño.
 
@@ -80,9 +80,9 @@ No se han publicado comparativas oficiales. La tabla siguiente contrasta el mode
 
 | Modelo | Arquitectura | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| syssec-utd/py315-pylingual-v6-segmenter | RoBERTa | 108,9 M | No disponible (tipico 512) | Segmentacion / token classification | No disponible | HuggingFace, 0 descargas |
-| dslim/bert-base-NER | BERT-base | ~108 M | 512 | NER generico (token classification) | MIT | HuggingFace, ampliamente usado |
-| Jean-Baptiste/roberta-large-ner-english | RoBERTa-large | ~355 M | 512 | NER en ingles | MIT | HuggingFace |
+| syssec-utd/py315-pylingual-v6-segmenter | RoBERTa | 108,9 M | No disponible (tipico 512) | Segmentacion / token classification | No disponible | Hugging Face, 0 descargas |
+| dslim/bert-base-NER | BERT-base | ~108 M | 512 | NER generico (token classification) | MIT | Hugging Face, ampliamente usado |
+| Jean-Baptiste/roberta-large-ner-english | RoBERTa-large | ~355 M | 512 | NER en ingles | MIT | Hugging Face |
 | Modelos de segmentacion de codigo de proposito general | No disponible | No disponible | No disponible | Segmentacion de identificadores | No disponible | No disponible |
 
 La diferencia relevante no es de rendimiento, sino de dominio: py315-pylingual-v6-segmenter es un modelo de nicho, sin licencia declarada y sin validacion externa, mientras que las alternativas cuentan con licencias permisivas y adopcion amplia. Si el caso de uso es NER generico, las alternativas son preferibles; si es segmentacion especifica del dominio py315, este modelo es la unica opcion conocida.
@@ -102,7 +102,7 @@ La diferencia relevante no es de rendimiento, sino de dominio: py315-pylingual-v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/py315-pylingual-v6-segmenter
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/py315-pylingual-v6-segmenter
 - Modelo base (MLM): https://huggingface.co/syssec-utd/py315-pylingual-v6-mlm
 - Dataset de entrenamiento: https://huggingface.co/datasets/syssec-utd/segmentation-py315-pylingual-v6-tokenized
 - Perfil del autor: https://huggingface.co/syssec-utd

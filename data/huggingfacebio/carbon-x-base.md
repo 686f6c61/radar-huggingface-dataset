@@ -65,9 +65,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Modalidad ADN | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Carbon-X-Base | 14,8B | 40.960 | Si, nativa (6-mers) | Apache 2.0 | HuggingFace |
-| Qwen3-14B (modelo base) | 14,8B | 40.960 (heredado) | No | Apache 2.0 | HuggingFace |
-| Carbon-X (post-entrenado) | 14,8B (derivado) | No disponible | Si, con post-entrenamiento y RL | Apache 2.0 | HuggingFace |
+| Carbon-X-Base | 14,8B | 40.960 | Si, nativa (6-mers) | Apache 2.0 | Hugging Face |
+| Qwen3-14B (modelo base) | 14,8B | 40.960 (heredado) | No | Apache 2.0 | Hugging Face |
+| Carbon-X (post-entrenado) | 14,8B (derivado) | No disponible | Si, con post-entrenamiento y RL | Apache 2.0 | Hugging Face |
 
 La comparación más directa es con Qwen3-14B, del que Carbon-X-Base hereda arquitectura y contexto pero al que supera en recuperación de secuencias de ADN según el autor, a costa de un tokenizador extendido y de un mid-training específico. Frente a Carbon-X, la diferencia es el post-entrenamiento y el RL orientados a conversación e instrucciones. No se dispone de información sobre otros modelos fundacionales de ADN comparables (por ejemplo, modelos específicos de genómica) en la documentación proporcionada.
 
@@ -85,7 +85,7 @@ La comparación más directa es con Qwen3-14B, del que Carbon-X-Base hereda arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HuggingFaceBio/Carbon-X-Base
+- Modelo en Hugging Face: https://huggingface.co/HuggingFaceBio/Carbon-X-Base
 - Carbon-X (modelo post-entrenado): https://huggingface.co/HuggingFaceBio/Carbon-X
 - Organización Hugging Face Bio: https://huggingface.co/HuggingFaceBio
 - Blog / Space de presentación: https://huggingface.co/spaces/HuggingFaceBio/Carbon-X-Release

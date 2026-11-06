@@ -100,7 +100,7 @@ La informacion proporcionada no incluye modelos alternativos de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/RICO-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/RICO-v2-GGUF
 - Modelo base: https://huggingface.co/darkc0de/RICO-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#RICO-v2-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario RainierAinsley cuya ficha oficial es internamente contradictoria. Los metadatos de HuggingFace lo etiquetan como un modelo basado en BERT, orientado a feature-extraction, con licencia MIT, libreria transformers y un tamano de repositorio de 0,0 GB, lo que sugiere que no contiene pesos publicados. Sin embargo, la model card describe un supuesto modelo generativo de razonamiento de nueva generacion, con mejoras en matematicas, programacion y logica, y una tabla extensa de resultados de benchmarks.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario RainierAinsley cuya ficha oficial es internamente contradictoria. Los metadatos de Hugging Face lo etiquetan como un modelo basado en BERT, orientado a feature-extraction, con licencia MIT, libreria transformers y un tamano de repositorio de 0,0 GB, lo que sugiere que no contiene pesos publicados. Sin embargo, la model card describe un supuesto modelo generativo de razonamiento de nueva generacion, con mejoras en matematicas, programacion y logica, y una tabla extensa de resultados de benchmarks.
 
 La relevancia de este repositorio es fundamentalmente metodologica mas que tecnica: se trata, por su nombre ("TestRepo") y por la incoherencia entre metadatos y contenido, de un repositorio de prueba o plantilla, no de un modelo desplegable en produccion. Cualquier evaluacion seria debe considerar que no hay informacion verificable sobre arquitectura, parametros, contexto ni pesos reales.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta lo declarado, senala explicitamente las discrepa
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. Los metadatos de HuggingFace incluyen los tags `bert`, `pytorch` y `transformers`, y clasifican el pipeline como `feature-extraction`, lo que apuntaria a un modelo encoder tipo BERT para generacion de embeddings. En cambio, la model card describe un modelo generativo con "profundidad de razonamiento" mejorada, optimizaciones algoritmicas en post-entrenamiento y soporte de function calling, lo que corresponderia a un decoder LLM moderno.
+No hay informacion verificable sobre la arquitectura. Los metadatos de Hugging Face incluyen los tags `bert`, `pytorch` y `transformers`, y clasifican el pipeline como `feature-extraction`, lo que apuntaria a un modelo encoder tipo BERT para generacion de embeddings. En cambio, la model card describe un modelo generativo con "profundidad de razonamiento" mejorada, optimizaciones algoritmicas en post-entrenamiento y soporte de function calling, lo que corresponderia a un decoder LLM moderno.
 
 La model card menciona un proceso de post-entrenamiento con mayor uso de recursos computacionales y "mecanismos de optimizacion algoritmica", asi como referencias a una version anterior y a un modelo denominado MyAwesomeModel-Small que compartiria tokenizer con el modelo principal. No se indica numero de tokens de entrenamiento, composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. La discrepancia entre el tag `bert` y la descripcion generativa no se resuelve en la informacion disponible.
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks verificables en la informacion disp
 - VRAM para inferencia: no disponible. No hay parametros declarados ni pesos publicados, por lo que no puede estimarse.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints para el pipeline de feature-extraction, pero sin pesos no es operativo. No hay indicios de soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no disponible. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints para el pipeline de feature-extraction, pero sin pesos no es operativo. No hay indicios de soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible. El unico dato indirecto es el consumo medio declarado de 23K tokens por pregunta en AIME, que implicaria latencias altas en cualquier despliegue, pero no puede cuantificarse sin conocer el modelo real.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Limitaciones y advertencias
 
-- Incoherencia critica entre metadatos y model card: HuggingFace lo clasifica como modelo BERT de feature-extraction, mientras que la model card describe un LLM generativo de razonamiento. No hay forma de determinar cual es correcta.
+- Incoherencia critica entre metadatos y model card: Hugging Face lo clasifica como modelo BERT de feature-extraction, mientras que la model card describe un LLM generativo de razonamiento. No hay forma de determinar cual es correcta.
 - Ausencia de pesos: el tamano del repositorio declarado es 0,0 GB, por lo que no parece haber artefactos descargables ni desplegables.
 - Cero descargas y cero "likes", con creacion y ultima actualizacion el mismo dia, lo que refuerza la hipotesis de repositorio de prueba.
 - Benchmarks no verificables: la tabla es autodeclarada, sin versiones de benchmark, sin identificacion de los modelos comparados y sin metodologia.
@@ -104,8 +104,8 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RainierAinsley/MyAwesomeModel-TestRepo
-- Perfil del autor en HuggingFace: https://huggingface.co/RainierAinsley/models
+- Repositorio en Hugging Face: https://huggingface.co/RainierAinsley/MyAwesomeModel-TestRepo
+- Perfil del autor en Hugging Face: https://huggingface.co/RainierAinsley/models
 - Ficha indexada en Essa Mamdani: https://essamamdani.com/ai-models/hf-timesup-eval-myawesomemodel-testrepo
 - Ficha indexada en Essa Mamdani (variante rsibench): https://essamamdani.com/ai-models/hf-rsibench-myawesomemodel-testrepo
 - Ficha en OpenModelMap: https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo

@@ -67,5 +67,5 @@ No disponible. No se puede comparar con otros modelos porque no hay información
 
 ## Enlaces
 
-- [HuggingFace - Muthrid/artifact-series-83e55ac0](https://huggingface.co/Muthrid/artifact-series-83e55ac0)
+- [Hugging Face - Muthrid/artifact-series-83e55ac0](https://huggingface.co/Muthrid/artifact-series-83e55ac0)
 - [Modelo base: Qwen/Qwen2.5-Coder-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct)

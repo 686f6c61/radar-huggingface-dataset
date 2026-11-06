@@ -77,7 +77,7 @@ No se dispone de informacion sobre adaptadores medicos comparables del mismo aut
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-MEDICAL-Instruct-r64-last-full-epoch
+- Repositorio Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-MEDICAL-Instruct-r64-last-full-epoch
 - Modelo base (Meta Llama 3.1): https://huggingface.co/meta-llama/Llama-3.1-8B
 - Repositorio oficial de Meta Llama 3: https://github.com/meta-llama/llama3
 - Pagina de Llama 3.1 en Ollama: https://ollama.com/library/llama3.1:8b

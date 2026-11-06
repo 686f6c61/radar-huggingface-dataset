@@ -45,7 +45,7 @@ Tecnicamente, la ruta visual presenta tres diferencias respecto a la implementac
 - Procesamiento de imagenes en dos regimenes de resolucion: a resolucion de politica (224 px, un tile, 256 tokens) y a resolucion nativa (por ejemplo 640×480, 13 tiles, 3.328 tokens).
 - Soporte de tool calling / function calling: no disponible, no documentado.
 - Soporte de agentes y razonamiento multi-paso: no disponible, no documentado.
-- Capacidades multilingues: no disponible; no se declara ningun idioma en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; no se declara ningun idioma en la ficha de Hugging Face.
 - Modo thinking o razonamiento explicito: no documentado para este injerto.
 - Capacidades de vision, audio o video adicionales: no disponibles; solo imagen.
 
@@ -98,7 +98,7 @@ La comparacion con alternativas reales de la misma categoria (VLMs de ~2B, como 
 ## Limitaciones y advertencias
 
 - No es el VLM oficial de NVIDIA. Las capas 12-27 son pesos publicos de Qwen3-1.7B, no de GR00T; el propio autor lo senala como factor de confusion para cualquier tarea que dependa de la parte alta del LLM.
-- Licencia restrictiva y doble: los pesos derivados de GR00T siguen la licencia `nvidia-gr00t-n1.5` y el codigo de modelado incluido es de NVIDIA; las capas 12-27 son Apache-2.0 (Qwen3-1.7B). Hay que revisar ambas antes de redistribuir o de plantear uso comercial. La ficha de HuggingFace marca la licencia como `other`, no como licencia abierta.
+- Licencia restrictiva y doble: los pesos derivados de GR00T siguen la licencia `nvidia-gr00t-n1.5` y el codigo de modelado incluido es de NVIDIA; las capas 12-27 son Apache-2.0 (Qwen3-1.7B). Hay que revisar ambas antes de redistribuir o de plantear uso comercial. La ficha de Hugging Face marca la licencia como `other`, no como licencia abierta.
 - Sin validacion comunitaria: 0 descargas y 0 likes, con repositorio creado y actualizado el mismo dia. No hay historial de uso ni verificacion independiente.
 - Evidencia empirica minima: el unico resultado publicado es un sondeo de 50 muestras sobre un unico tipo de escena (navegacion segura de RoboCasa). No hay evaluacion en benchmarks estandar, ni en generacion de texto general, ni en VQA.
 - Riesgo de alucinacion no cuantificado: al pedirle que nombre un obstaculo concreto, el modelo podria nombrar objetos ausentes; no se documentan tasas de falsos positivos ni calibracion.
@@ -111,7 +111,7 @@ La comparacion con alternativas reales de la misma categoria (VLMs de ~2B, como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JisuHann/groot-vlm-graft28
+- Modelo en Hugging Face: https://huggingface.co/JisuHann/groot-vlm-graft28
 - Modelo base de robotica: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Modelo base del injerto (capas 12-27): https://huggingface.co/Qwen/Qwen3-1.7B
 - Enlace de licencia declarado en la ficha: https://huggingface.co/nvidia/GR00T-N1.5-3B

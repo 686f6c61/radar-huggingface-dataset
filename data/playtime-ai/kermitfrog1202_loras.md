@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KermitFrog1202_loras es un repositorio agregado de adaptadores LoRA publicado por el usuario Playtime-AI en HuggingFace. No se trata de un modelo base entrenado desde cero, sino de una recopilación de adaptadores previamente publicados por el autor «kermitfrog1202», junto con variantes que nunca llegaron a publicarse: algunas descartadas por baja calidad, otras porque se perdieron en el proceso y otras que son versiones anteriores de adaptadores que se reentrenaron antes de su publicación. El repositorio ocupa 98,1 GB y en el momento de la consulta acumula 13 «likes» y 0 descargas.
+KermitFrog1202_loras es un repositorio agregado de adaptadores LoRA publicado por el usuario Playtime-AI en Hugging Face. No se trata de un modelo base entrenado desde cero, sino de una recopilación de adaptadores previamente publicados por el autor «kermitfrog1202», junto con variantes que nunca llegaron a publicarse: algunas descartadas por baja calidad, otras porque se perdieron en el proceso y otras que son versiones anteriores de adaptadores que se reentrenaron antes de su publicación. El repositorio ocupa 98,1 GB y en el momento de la consulta acumula 13 «likes» y 0 descargas.
 
 La información disponible es extremadamente limitada. La model card se limita a una frase explicativa sobre el origen de los adaptadores y no documenta arquitectura, modelo base, hiperparámetros de entrenamiento, dataset ni licencia. Tampoco se declaran idiomas, pipeline ni formato de los ficheros. La búsqueda web realizada no ha devuelto ningún resultado relacionado con este repositorio: los enlaces encontrados corresponden a la película «Playtime» de Jacques Tati, a la franquicia Poppy Playtime y a contenido sin relación, por lo que se han descartado.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Playtime-AI/KermitFrog1202_loras | Colección de LoRA | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 13 likes |
+| Playtime-AI/KermitFrog1202_loras | Colección de LoRA | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 13 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada repositorios comparables de características equivalentes (colecciones agregadas de LoRA del mismo autor o de alcance similar).
@@ -77,10 +77,10 @@ No se han identificado en la información proporcionada repositorios comparables
 - Riesgo de alucinación y sesgos: no evaluable sin conocer el modelo base y los datos de entrenamiento de cada adaptador.
 - 0 descargas registradas: no hay evidencia de uso ni de validación por parte de la comunidad.
 - Tamaño del repositorio (98,1 GB): coste elevado de descarga y almacenamiento, con riesgo de incluir ficheros duplicados u obsoletos.
-- Sin pipeline declarado: los metadatos de HuggingFace no permiten inferir la tarea (text-generation, text-to-image, etc.).
+- Sin pipeline declarado: los metadatos de Hugging Face no permiten inferir la tarea (text-generation, text-to-image, etc.).
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Playtime-AI/KermitFrog1202_loras
+- Repositorio en Hugging Face: https://huggingface.co/Playtime-AI/KermitFrog1202_loras
 - Resultados de la búsqueda web: ninguno relevante. Los enlaces devueltos (Wikipedia sobre la película «Playtime» de Jacques Tati, AlloCiné, la tienda de Poppy Playtime, un documento de RPubs y el salón Playtime Paris) no guardan relación con este repositorio y se han descartado.
 - Papers, blogs, repos o demos adicionales: no disponibles.

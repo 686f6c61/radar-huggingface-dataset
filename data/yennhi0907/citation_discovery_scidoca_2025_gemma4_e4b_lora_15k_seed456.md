@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (gemma4_e4b_lora_15k_seed456) | LoRA sobre Gemma-4-E4B-it para relevancia de citas | no disponible (adaptador) | 512 tokens (entrenamiento) | gemma | HuggingFace, 0 descargas |
+| Este adaptador (gemma4_e4b_lora_15k_seed456) | LoRA sobre Gemma-4-E4B-it para relevancia de citas | no disponible (adaptador) | 512 tokens (entrenamiento) | gemma | Hugging Face, 0 descargas |
 | Otros adaptadores de la misma serie (p. ej. variantes 5k o con otras semillas) | LoRA sobre Gemma-4-E4B-it | no disponible | no disponible | gemma | no disponible en la información proporcionada |
 | Clasificadores de relevancia científicos entrenados desde cero (p. ej. basados en SciBERT) | Transformer encoder | no disponible | típicamente 512 tokens | variable | no disponible en la información proporcionada |
 
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento de las alternativas en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yennhi0907/citation_discovery_scidoca_2025_gemma4_e4b_lora_15k_seed456
+- Hugging Face: https://huggingface.co/yennhi0907/citation_discovery_scidoca_2025_gemma4_e4b_lora_15k_seed456
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

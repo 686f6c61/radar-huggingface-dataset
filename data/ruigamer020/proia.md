@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PROIA es un modelo publicado en HuggingFace por el usuario RuiGamer020 bajo el identificador `RuiGamer020/PROIA`. En el momento de redactar esta ficha, la informacion publica disponible sobre el modelo es practicamente nula: la model card unicamente contiene la declaracion de licencia (`openrail`), sin descripcion, sin especificaciones tecnicas, sin detalles de arquitectura, sin datos de entrenamiento y sin resultados de evaluacion. La ficha de HuggingFace no declara tarea (pipeline), idiomas soportados ni formatos de pesos.
+PROIA es un modelo publicado en Hugging Face por el usuario RuiGamer020 bajo el identificador `RuiGamer020/PROIA`. En el momento de redactar esta ficha, la informacion publica disponible sobre el modelo es practicamente nula: la model card unicamente contiene la declaracion de licencia (`openrail`), sin descripcion, sin especificaciones tecnicas, sin detalles de arquitectura, sin datos de entrenamiento y sin resultados de evaluacion. La ficha de Hugging Face no declara tarea (pipeline), idiomas soportados ni formatos de pesos.
 
 Se trata, por tanto, de un repositorio sin documentacion tecnica y sin traccion comunitaria verificable: registra 0 descargas y 0 likes, y las fechas de creacion y ultima actualizacion (18 de septiembre de 2026, con apenas tres segundos de diferencia) apuntan a una publicacion automatica o de prueba mas que a un lanzamiento mantenido. Esto impide confirmar incluso si el artefacto es un modelo de lenguaje, un adaptador, un checkpoint parcial o un repositorio vacio con metadatos.
 
@@ -18,7 +18,7 @@ Por todo ello, esta ficha se limita a inventariar lo que consta y a marcar expli
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | openrail (etiqueta `license:openrail` declarada en HuggingFace) |
+| Licencia | openrail (etiqueta `license:openrail` declarada en Hugging Face) |
 | Formato de pesos | no disponible |
 | Autor | RuiGamer020 |
 | Tarea declarada (pipeline) | no disponible |
@@ -87,7 +87,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RuiGamer020/PROIA
+- Repositorio en Hugging Face: https://huggingface.co/RuiGamer020/PROIA
 - Paper, blog o repositorio de codigo: no disponible
 - Demo o espacio asociado: no disponible
 - Enlaces relevantes adicionales encontrados en la busqueda web: no disponible (los resultados obtenidos no guardaban relacion con el modelo)

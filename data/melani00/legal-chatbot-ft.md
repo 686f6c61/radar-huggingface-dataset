@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Melani00/legal-chatbot-ft` es una adaptación publicada en HuggingFace por el usuario `Melani00`. El nombre sugiere que se trata de un ajuste fino orientado a la creación de chatbots jurídicos, pero la model card no incluye ninguna descripción técnica del modelo, del proceso de entrenamiento ni de su propósito concreto. El repositorio pesa 0.1 GB y contiene pesos en formato `safetensors`, lo que indica que es un modelo de la librería `transformers`. No se ha publicado información sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados. Debido a la ausencia de datos, el modelo no puede ser evaluado ni comparado con otras alternativas.
+El modelo `Melani00/legal-chatbot-ft` es una adaptación publicada en Hugging Face por el usuario `Melani00`. El nombre sugiere que se trata de un ajuste fino orientado a la creación de chatbots jurídicos, pero la model card no incluye ninguna descripción técnica del modelo, del proceso de entrenamiento ni de su propósito concreto. El repositorio pesa 0.1 GB y contiene pesos en formato `safetensors`, lo que indica que es un modelo de la librería `transformers`. No se ha publicado información sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados. Debido a la ausencia de datos, el modelo no puede ser evaluado ni comparado con otras alternativas.
 
 ## Especificaciones técnicas
 

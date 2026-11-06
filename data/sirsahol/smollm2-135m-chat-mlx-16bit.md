@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks de calidad en la informacion dispon
 - VRAM activa declarada: aproximadamente 410 MB. Memoria pico medida en Apple M1: 235,2 MB.
 - Memoria unificada minima recomendada por el autor: 8 GB.
 - Hardware objetivo: chips Apple Silicon M1, M2, M3 o M4. El autor recomienda 4 bits para equipos con 8-16 GB, 8 bits para 18-36 GB y 16 bits para configuraciones Max/Ultra de 36-192 GB.
-- No esta pensado para GPU NVIDIA o AMD: el formato es MLX, especifico de Apple Silicon. Para CUDA habria que recurrir al checkpoint original en HuggingFace Transformers.
+- No esta pensado para GPU NVIDIA o AMD: el formato es MLX, especifico de Apple Silicon. Para CUDA habria que recurrir al checkpoint original en Hugging Face Transformers.
 - Opciones de despliegue documentadas: `mlx-lm` (CLI `mlx_lm.chat` y `mlx_lm.generate`), API de Python con `mlx_lm.load` y `generate`, Ollama mediante un Modelfile con tokens de parada personalizados, y LM Studio.
 - Latencia y throughput medidos: 144,45 tokens/s y 6,93 ms de TTFT en Apple M1 para la variante de 16 bits.
 - Tamano en disco: repositorio de 0,3 GB; salida de conversion reportada de 260,0 MB; el autor cifra la variante de 16 bits en ~290 MB de disco y ~360 MB de huella de VRAM en la tabla comparativa de cuantizaciones.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo frente a otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-16bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-16bit
 - Variante de 4 bits: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-4bit
 - Variante de 8 bits: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-8bit
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Artemis-31B-v1.2-i1-GGUF es una version cuantizada del modelo TheDrummer/Artemis-31B-v1.2, publicada por el usuario mradermacher en HuggingFace. Se trata de una conversion a formato GGUF orientada a inferencia local y despliegue en hardware de consumo, generada con el metodo de cuantizacion con imatrix (importance matrix), que ajusta los pesos de forma mas fina que la cuantizacion estatica tradicional. El modelo original cuenta con 30.697.345.596 parametros (aproximadamente 30,7 mil millones), segun los datos reales de safetensors del repositorio.
+Artemis-31B-v1.2-i1-GGUF es una version cuantizada del modelo TheDrummer/Artemis-31B-v1.2, publicada por el usuario mradermacher en Hugging Face. Se trata de una conversion a formato GGUF orientada a inferencia local y despliegue en hardware de consumo, generada con el metodo de cuantizacion con imatrix (importance matrix), que ajusta los pesos de forma mas fina que la cuantizacion estatica tradicional. El modelo original cuenta con 30.697.345.596 parametros (aproximadamente 30,7 mil millones), segun los datos reales de safetensors del repositorio.
 
 El autor de los quants etiqueta este modelo como multimodal de vision ("This is a vision model"), aunque los ficheros mmproj necesarios para la parte visual no se encuentran en este repositorio, sino en el repositorio hermano de quants estaticos. Esto implica que la capacidad de vision solo es utilizable si se descarga el proyector multimodal desde el repositorio estatico correspondiente.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas del modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Artemis-31B-v1.2-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Artemis-31B-v1.2-i1-GGUF
 - Modelo base original: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
 - Repositorio de quants estaticos (incluye ficheros mmproj si existen): https://huggingface.co/mradermacher/Artemis-31B-v1.2-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Artemis-31B-v1.2-i1-GGUF

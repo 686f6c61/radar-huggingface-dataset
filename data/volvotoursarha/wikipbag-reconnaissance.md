@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`volvotoursarha/wikipbag-reconnaissance` es un modelo publicado en HuggingFace por el usuario `volvotoursarha` bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,1 GB y el unico tag tecnico relevante es `tflite`, lo que indica que los pesos estan empaquetados en formato TensorFlow Lite, orientado a inferencia en dispositivos de recursos limitados (movil, edge, microcontroladores). No se declara pipeline, idiomas soportados ni arquitectura en la model card.
+`volvotoursarha/wikipbag-reconnaissance` es un modelo publicado en Hugging Face por el usuario `volvotoursarha` bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,1 GB y el unico tag tecnico relevante es `tflite`, lo que indica que los pesos estan empaquetados en formato TensorFlow Lite, orientado a inferencia en dispositivos de recursos limitados (movil, edge, microcontroladores). No se declara pipeline, idiomas soportados ni arquitectura en la model card.
 
 La model card publicada es practicamente vacia: unicamente contiene el bloque de metadatos YAML con la licencia. No hay descripcion del modelo, del dataset de entrenamiento, de la tarea que resuelve ni de los resultados obtenidos. El nombre del repositorio (`wikipbag-reconnaissance`) sugiere un posible uso relacionado con reconocimiento sobre datos tipo Wikipedia, pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
 
@@ -75,4 +75,4 @@ No disponible. No se dispone de informacion suficiente sobre la tarea, el tamano
 
 ## Enlaces
 
-- [HuggingFace: volvotoursarha/wikipbag-reconnaissance](https://huggingface.co/volvotoursarha/wikipbag-reconnaissance)
+- [Hugging Face: volvotoursarha/wikipbag-reconnaissance](https://huggingface.co/volvotoursarha/wikipbag-reconnaissance)

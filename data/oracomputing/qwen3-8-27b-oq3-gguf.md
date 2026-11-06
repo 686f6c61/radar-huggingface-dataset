@@ -80,7 +80,7 @@ Los siguientes datos provienen de la model card de Ora, donde se aplicaron las m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oracomputing/Qwen3.8-27B-OQ3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/oracomputing/Qwen3.8-27B-OQ3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial del modelo base (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de la serie Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8

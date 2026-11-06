@@ -24,7 +24,7 @@ Su relevancia practica esta en el nicho de post-procesado de ASR con requisitos 
 | Fichero publicado | `sotto-scribekey-350m-Q8_0.gguf` (379.215.776 bytes) |
 | SHA-256 | `37f227833e199f261c696d92f5dc8678852bc6b10265ab787f46faf24e18649b` |
 | Modelo base | `juanquivilla/sotto-cleanup-lfm25-350m`, revision `6df6f019170b8b55333c047b901886a51750a965` |
-| Fecha de publicacion | 2026-10-09 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-09 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks comparables con otros limpiadores de dictad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scribekey/sotto-scribekey-350m-gguf
+- Modelo en Hugging Face: https://huggingface.co/scribekey/sotto-scribekey-350m-gguf
 - Modelo base del ajuste: https://huggingface.co/juanquivilla/sotto-cleanup-lfm25-350m (revision `6df6f019170b8b55333c047b901886a51750a965`)
 - Sitio de ScribeKey: https://scribekey.app
 - Licencia LFM Open License v1.0: fichero `LICENSE` del repositorio

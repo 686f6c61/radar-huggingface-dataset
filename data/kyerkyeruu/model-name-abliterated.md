@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - **VRAM estimada**: el modelo en FP32 ocupa ~500 MB (124M parámetros × 4 bytes). Con cuantización a 8 bits, ~250 MB; a 4 bits, ~125 MB.
 - **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM (ej. NVIDIA GTX 1050 Ti, RTX 2060, o incluso CPU con RAM suficiente).
 - **Consumer GPU**: sí, cabe en cualquier GPU moderna de consumo (RTX 3060, RTX 4060, etc.).
-- **Opciones de despliegue**: se puede usar con transformers de HuggingFace, llama.cpp (si se convierte a GGUF), Ollama (si se crea un Modelfile), o vLLM (aunque es más pensado para modelos más grandes).
+- **Opciones de despliegue**: se puede usar con transformers de Hugging Face, llama.cpp (si se convierte a GGUF), Ollama (si se crea un Modelfile), o vLLM (aunque es más pensado para modelos más grandes).
 - **Latencia y throughput**: en una GPU consumer (RTX 3060), se espera una generación de ~ 20-50 tokens/s en fp16. En CPU, unos 5-10 tokens/s.
 
 ## Comparativa con modelos similares
@@ -65,8 +65,8 @@ No hay información suficiente para hacer una comparativa directa con otros mode
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/kyerkyu/model-name-abliterated](https://huggingface.co/kyerkyu/model-name-abliterated)
+- Hugging Face: [https://huggingface.co/kyerkyu/model-name-abliterated](https://huggingface.co/kyerkyu/model-name-abliterated)
 - Guía sobre modelos abliterated: [https://locallyuncensored.com/blog/abliterated-models-guide.html](https://locallyuncensored.com/blog/abliterated-models-guide.html)
 - Explicación de la abliteration: [https://abliteration.ai/abliterated-ai](https://abliteration.ai/abliterated-ai)
-- Búsqueda de modelos abliterated en HuggingFace: [https://huggingface.co/models?search=abliterate](https://huggingface.co/models?search=abliterate)
+- Búsqueda de modelos abliterated en Hugging Face: [https://huggingface.co/models?search=abliterate](https://huggingface.co/models?search=abliterate)
 - Búsqueda en Ollama: [https://ollama.com/search?q=abliterated](https://ollama.com/search?q=abliterated)

@@ -70,5 +70,5 @@ No se dispone de datos suficientes para establecer una comparativa técnica con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madmacs5/zara-krea2-lora
+- Hugging Face: https://huggingface.co/madmacs5/zara-krea2-lora
 - Civitai (ecosistema Krea 2): https://civitai.com/ecosystems/krea2

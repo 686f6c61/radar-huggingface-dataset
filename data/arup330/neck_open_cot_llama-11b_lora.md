@@ -71,10 +71,10 @@ Comparativa orientativa; los datos de los modelos alternativos provienen de fuen
 
 | Modelo | Parametros | Vision | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Neck_open_CoT_Llama-11B_lora | 11B (adaptador sobre base 4-bit) | Si (mllama) | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| Llama 3.2 11B Vision Instruct (modelo base) | 11B | Si | no disponible en esta ficha | Llama 3.2 Community License | Meta y HuggingFace |
-| Qwen2-VL-7B-Instruct | 7B | Si | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| Pixtral 12B | 12B | Si | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| Neck_open_CoT_Llama-11B_lora | 11B (adaptador sobre base 4-bit) | Si (mllama) | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| Llama 3.2 11B Vision Instruct (modelo base) | 11B | Si | no disponible en esta ficha | Llama 3.2 Community License | Meta y Hugging Face |
+| Qwen2-VL-7B-Instruct | 7B | Si | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| Pixtral 12B | 12B | Si | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 No se dispone de resultados de rendimiento comparativo para este adaptador, por lo que no es posible establecer una jerarquia de calidad frente a las alternativas.
 
@@ -92,6 +92,6 @@ No se dispone de resultados de rendimiento comparativo para este adaptador, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arup330/Neck_open_CoT_Llama-11B_lora
+- Modelo en Hugging Face: https://huggingface.co/Arup330/Neck_open_CoT_Llama-11B_lora
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-11b-vision-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

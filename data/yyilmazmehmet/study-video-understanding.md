@@ -83,5 +83,5 @@ No se dispone de modelos comparables documentados en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yyilmazmehmet/study-video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/yyilmazmehmet/study-video-understanding
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

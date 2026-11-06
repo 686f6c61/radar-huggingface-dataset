@@ -64,6 +64,6 @@ No se dispone de información sobre otros adaptadores LoRA del mismo autor o de 
 
 ## Enlaces
 
-- [HuggingFace: Gokhannet/CepBot-v0.7-LoRA](https://huggingface.co/Gokhannet/CepBot-v0.7-LoRA)
+- [Hugging Face: Gokhannet/CepBot-v0.7-LoRA](https://huggingface.co/Gokhannet/CepBot-v0.7-LoRA)
 - [Modelo base: Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [TRL (librería de entrenamiento)](https://github.com/huggingface/trl)

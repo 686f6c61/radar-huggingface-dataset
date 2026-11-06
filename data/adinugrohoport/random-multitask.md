@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adinugrohoport/random-multitask` es un repositorio de HuggingFace publicado por el usuario adinugrohoport que contiene una implementacion funcional de una arquitectura Poolformer orientada a tareas multiples, con una configuracion declarada como "giant". El propio autor indica de forma explicita que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El recuento real de parametros leido del fichero safetensors es de 16.576, una cifra incompatible con cualquier configuracion calificada como "giant".
+`adinugrohoport/random-multitask` es un repositorio de Hugging Face publicado por el usuario adinugrohoport que contiene una implementacion funcional de una arquitectura Poolformer orientada a tareas multiples, con una configuracion declarada como "giant". El propio autor indica de forma explicita que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El recuento real de parametros leido del fichero safetensors es de 16.576, una cifra incompatible con cualquier configuracion calificada como "giant".
 
 Se trata, por tanto, de un artefacto de tipo plantilla de codigo y no de un modelo utilizable para inferencia real: no hay tokenizador documentado, no se declara idioma alguno, no hay pipeline asignado y no existe ninguna metrica de rendimiento publicada. La relevancia del repositorio es la de servir como punto de partida reproducible para quien quiera montar un pipeline multitarea sobre Poolformer y verificar el ciclo completo de configuracion, inicializacion y guardado en safetensors.
 
@@ -46,7 +46,7 @@ No hay evidencia de entrenamiento alguno. El autor afirma explicitamente que el 
 - Integracion en CI/CD: ejecutar `python inference.py --help` y el bloque `__main__` en cada commit para detectar roturas de API en el codigo del modelo sin coste de GPU, dado que 16.576 parametros caben holgadamente en CPU.
 - Plantilla de implementacion multitarea: servir de esqueleto para proyectos que necesiten combinar varias cabezas de tarea con fusion "concat mlp", sustituyendo el checkpoint por pesos entrenados propios.
 - Desarrollo de arneses de evaluacion: como el repositorio no reclama metricas, resulta un caso de prueba util para construir un evaluador que exija conjunto de validacion retenido, al menos tres semillas y una linea base de capacidad equivalente, tal y como recomienda el propio autor.
-- Material docente: ejemplo minimo y trazable de como se estructura un repositorio de modelo en HuggingFace (config, training_args, pesos, script de inferencia) sin distracciones de escala.
+- Material docente: ejemplo minimo y trazable de como se estructura un repositorio de modelo en Hugging Face (config, training_args, pesos, script de inferencia) sin distracciones de escala.
 - Verificacion de exportacion y compatibilidad: comprobar que el fichero safetensors se carga correctamente en distintas versiones de PyTorch y en herramientas de inspeccion de pesos.
 - Punto de partida para fine-tuning experimental: si en el futuro se entrena, el repositorio ya define la configuracion y la receta base que habria que documentar por separado respecto a los valores por defecto.
 - Pruebas de carga con adaptadores: dado que es una implementacion personalizada, sirve para validar el mecanismo de adaptador explicito que exigen las APIs genericas de carga automatica.
@@ -69,7 +69,7 @@ No hay comparativa cuantitativa posible con los datos disponibles. El repositori
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| adinugrohoport/random-multitask | 16.576 | no disponible | multitarea (Poolformer) | Apache 2.0 | safetensors en HuggingFace |
+| adinugrohoport/random-multitask | 16.576 | no disponible | multitarea (Poolformer) | Apache 2.0 | safetensors en Hugging Face |
 | Implementaciones de referencia de Poolformer | no disponible en la informacion proporcionada | no disponible | vision | no disponible | no disponible |
 | Alternativas multitarea de capacidad equivalente | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,6 +90,6 @@ La unica comparacion que puede hacerse con rigor es cualitativa: frente a un mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adinugrohoport/random-multitask
+- Hugging Face: https://huggingface.co/adinugrohoport/random-multitask
 - Referencia externa de la arquitectura Poolformer, no enlazada por el repositorio: articulo "MetaFormer Is Actually What You Need for Vision", arXiv:2111.11418
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Todas las entradas devueltas corresponden al componente industrial Omron ZAQ-22 (Mouser, DigiKey, Heisener, Jotrin, OnlineComponents) y no guardan relacion con el modelo.

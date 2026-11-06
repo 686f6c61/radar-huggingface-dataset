@@ -91,6 +91,6 @@ Al tratarse de una coleccion de workflows y no de un modelo, la comparacion mas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Illuminus7/Comfy_Int8_Fast_Workflows
+- Repositorio en Hugging Face: https://huggingface.co/Illuminus7/Comfy_Int8_Fast_Workflows
 - Node pack ComfyUI-AppleSilicon-int8-Fast (GitHub): https://github.com/Illuminus7/ComfyUI-AppleSilicon-int8-Fast
 - rgthree-comfy (GitHub, requerido por el workflow de Krea 2): https://github.com/rgthree/rgthree-comfy

@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vultr/Qwen3.5-0.8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vultr/Qwen3.5-0.8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Sitio de Vultr: https://www.vultr.com/

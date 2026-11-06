@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ipetrukha/LFM2.5-350M-MLX-4bit` es una recuantización en 4 bits del modelo base `LiquidAI/LFM2.5-350M`, desarrollada por el usuario de HuggingFace `ipetrukha`. Se trata de un modelo compacto de 354 millones de parámetros con arquitectura híbrida (capas convolucionales y de atención) para procesamiento eficiente de contextos largos. El modelo original pertenece a LiquidAI.
+El modelo `ipetrukha/LFM2.5-350M-MLX-4bit` es una recuantización en 4 bits del modelo base `LiquidAI/LFM2.5-350M`, desarrollada por el usuario de Hugging Face `ipetrukha`. Se trata de un modelo compacto de 354 millones de parámetros con arquitectura híbrida (capas convolucionales y de atención) para procesamiento eficiente de contextos largos. El modelo original pertenece a LiquidAI.
 
 Este checkpoint no añade una arquitectura nueva: reutiliza el modelo base y lo cuantiza con `mlx-lm 0.31.3` en modo afín de 4 bits, con tamaño de grupo 64 y sin sobreescrituras por capa. La diferencia frente a la versión oficial es que las escalas y sesgos de la cuantización se almacenan en `bfloat16` en lugar de `float32`, para permitir comparaciones entre motores bajo un mismo tipo de dato de activación. El archivo ocupa unos 0,2 GB y está pensado para Apple Silicon mediante MLX.
 
@@ -79,7 +79,7 @@ No se han publicado benchmarks comparativos en la información disponible.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ipetrukha/LFM2.5-350M-MLX-4bit
+- Hugging Face del modelo: https://huggingface.co/ipetrukha/LFM2.5-350M-MLX-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Versión oficial MLX: https://huggingface.co/LiquidAI/LFM2.5-350M-MLX-4bit
 - No se han encontrado papers o blogs adicionales en la búsqueda web.

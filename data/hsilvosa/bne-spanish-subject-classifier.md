@@ -4,7 +4,7 @@
 
 El modelo `hsilvosa/bne-spanish-subject-classifier` es un clasificador de texto en español, desarrollado por Hugo Silvosa Cuervo (hsilvosa), que asigna materias SKOS y códigos de Clasificación Decimal Universal (CDU/Dewey) a partir de títulos y descripciones de publicaciones. Está diseñado específicamente para el ámbito bibliotecario y del patrimonio cultural, aprovechando los datos de la Biblioteca Nacional de España (BNE). Se trata de un modelo de tipo transformer, basado en BETO (BERT-base español), con aproximadamente 110 millones de parámetros, y está pensado para automatizar la catalogación y el indizado temático de publicaciones en español.
 
-El modelo resuelve un problema práctico: la clasificación manual de libros y documentos en bibliotecas y repositorios es costosa y lenta. Este clasificador ofrece una alternativa automática que sugiere materias y códigos de clasificación a partir de información textual breve. Su relevancia radica en que es un modelo de código abierto con licencia CC-BY-4.0, lo que permite su uso comercial y su integración en sistemas de gestión bibliotecaria, repositorios digitales y plataformas editoriales. La versión publicada en HuggingFace se creó en agosto de 2026 y no ha registrado descargas aún.
+El modelo resuelve un problema práctico: la clasificación manual de libros y documentos en bibliotecas y repositorios es costosa y lenta. Este clasificador ofrece una alternativa automática que sugiere materias y códigos de clasificación a partir de información textual breve. Su relevancia radica en que es un modelo de código abierto con licencia CC-BY-4.0, lo que permite su uso comercial y su integración en sistemas de gestión bibliotecaria, repositorios digitales y plataformas editoriales. La versión publicada en Hugging Face se creó en agosto de 2026 y no ha registrado descargas aún.
 
 ## Especificaciones técnicas
 
@@ -61,7 +61,7 @@ Además, el model-index oficial declara una precisión (accuracy) y una F1 de 1.
 - **VRAM estimada**: al ser un modelo BERT-base de ~110 millones de parámetros, la inferencia en FP32 requiere aproximadamente 1,5 GB de VRAM, mientras que con cuantización INT8 se reduce a unos 400 MB. Es perfectamente viable en GPU de consumo.
 - **GPU recomendadas**: NVIDIA GTX 1660 (6 GB), RTX 2060 (6 GB), RTX 3060 (12 GB) o superiores. También funciona en CPU, aunque con mayor latencia.
 - **Compatibilidad con consumer GPU**: sí, cabe en prácticamente cualquier GPU moderna con más de 4 GB de VRAM.
-- **Opciones de despliegue**: al ser un modelo de HuggingFace, se puede servir con `transformers` (Python), `vLLM` (aunque no es óptimo para clasificación), `TGI`, `Ollama` (si se convierte a GGUF) o mediante la API de Hugging Face Inference Endpoints.
+- **Opciones de despliegue**: al ser un modelo de Hugging Face, se puede servir con `transformers` (Python), `vLLM` (aunque no es óptimo para clasificación), `TGI`, `Ollama` (si se convierte a GGUF) o mediante la API de Hugging Face Inference Endpoints.
 - **Latencia estimada**: en una RTX 3060, la inferencia para un texto corto tarda entre 10 y 30 ms por muestra, dependiendo de la longitud. En CPU, la latencia puede ser de 100-500 ms.
 
 ## Comparativa con modelos similares
@@ -86,13 +86,13 @@ La comparativa muestra que este modelo es una especialización de BETO para el d
 
 ## Enlaces
 
-- Modelo en HuggingFace: [hsilvosa/bne-spanish-subject-classifier](https://huggingface.co/hsilvosa/bne-spanish-subject-classifier)
+- Modelo en Hugging Face: [hsilvosa/bne-spanish-subject-classifier](https://huggingface.co/hsilvosa/bne-spanish-subject-classifier)
 - Dataset de entrenamiento: [hsilvosa/bne-linked-data](https://huggingface.co/datasets/hsilvosa/bne-linked-data)
 - Repositorio de referencia (observatorio de datos de contratación pública, no directamente relacionado): [openclasp-observatory](https://github.com/hsilvosa/openclasp-observatory)</think>## Resumen
 
 El modelo `hsilvosa/bne-spanish-subject-classifier` es un clasificador de texto en español, desarrollado por Hugo Silvosa Cuervo (hsilvosa), que asigna materias SKOS y códigos de Clasificación Decimal Universal (UDC/Dewey) a partir de títulos y descripciones de registros bibliográficos. Está diseñado para el ámbito bibliotecario y del patrimonio cultural, aprovechando datos de la Biblioteca Nacional de España (BNE). Se basa en la arquitectura BETO (BERT-base español), con aproximadamente 110 millones de parámetros, y se ha ajustado específicamente para la catalogación automática y el indizado temático de publicaciones en español.
 
-La relevancia del modelo radica en que automatiza un proceso manual costoso y lento en bibliotecas y repositorios, ofreciendo predicciones de materias y códigos de clasificación a partir de texto breve. Publicado bajo licencia CC-BY-4.0, permite su uso comercial y su integración en sistemas de gestión bibliográfica. El repositorio de HuggingFace, creado en agosto de 2026, no registra descargas ni valoraciones hasta la fecha.
+La relevancia del modelo radica en que automatiza un proceso manual costoso y lento en bibliotecas y repositorios, ofreciendo predicciones de materias y códigos de clasificación a partir de texto breve. Publicado bajo licencia CC-BY-4.0, permite su uso comercial y su integración en sistemas de gestión bibliográfica. El repositorio de Hugging Face, creado en agosto de 2026, no registra descargas ni valoraciones hasta la fecha.
 
 ## Especificaciones técnicas
 
@@ -148,7 +148,7 @@ El model-index oficial declara una precisión (accuracy) y una F1 de 1.0 para la
 - **VRAM estimada**: al ser un modelo BERT-base de ~110 millones de parámetros, la inferencia en FP32 requiere aproximadamente 1,5 GB de VRAM. Con cuantización INT8, se reduce a unos 400 MB.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM, como la NVIDIA GTX 1660 (6 GB), RTX 3060 (6 GB) o RTX 4090 (24 GB). También funciona en CPU con mayor latencia.
 - **Compatibilidad con consumer GPU**: sí, es un modelo ligero que cabe en prácticamente cualquier GPU de consumo moderna.
-- **Opciones de despliegue**: se puede servir con la librería `transformers` de HuggingFace, con `vLLM` (aunque no es óptimo para clasificación), con `Text Generation Inference` (TGI) o mediante la API de Hugging Face Inference Endpoints. También es posible convertirlo a GGUF para su uso con `Ollama` o `llama.cpp`.
+- **Opciones de despliegue**: se puede servir con la librería `transformers` de Hugging Face, con `vLLM` (aunque no es óptimo para clasificación), con `Text Generation Inference` (TGI) o mediante la API de Hugging Face Inference Endpoints. También es posible convertirlo a GGUF para su uso con `Ollama` o `llama.cpp`.
 - **Latencia estimada**: en una RTX 3060, la inferencia para un texto corto (menos de 512 tokens) tarda entre 10 y 30 ms. En CPU, la latencia puede oscilar entre 100 y 500 ms por muestra.
 
 ## Comparativa con modelos similares

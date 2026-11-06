@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Frecuencia de muestreo | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenWhistle-Wav2Vec2.0-10pct | 95.054.848 | 44.100 Hz | crops de hasta 20 s en entrenamiento | CC BY 4.0 | HuggingFace, pesos safetensors |
+| OpenWhistle-Wav2Vec2.0-10pct | 95.054.848 | 44.100 Hz | crops de hasta 20 s en entrenamiento | CC BY 4.0 | Hugging Face, pesos safetensors |
 | Wav2Vec2.0 base estandar (voz) | ~95 M | 16.000 Hz | no disponible | segun variante | ampliamente disponible |
 | Wav2Vec2.0 large estandar (voz) | ~317 M | 16.000 Hz | no disponible | segun variante | ampliamente disponible |
 
@@ -109,7 +109,7 @@ La diferencia funcional principal frente a los Wav2Vec2 de voz es el frontend a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dolphinteam/OpenWhistle-Wav2Vec2.0-10pct
+- Modelo en Hugging Face: https://huggingface.co/dolphinteam/OpenWhistle-Wav2Vec2.0-10pct
 - Dataset de preentrenamiento (10 %): https://huggingface.co/datasets/dolphinteam/OpenWhistle-Pretraining-10pct
 - Corpus padre de preentrenamiento: https://huggingface.co/datasets/dolphinteam/OpenWhistle-Pretraining
 - Dataset de fine-tuning para clasificacion: https://huggingface.co/datasets/dolphinteam/OpenWhistle-Classification-Finetuning

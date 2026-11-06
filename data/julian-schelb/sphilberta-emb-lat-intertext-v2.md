@@ -23,7 +23,7 @@ La versión v2 reemplaza a la v1 como reemplazo directo (drop-in), manteniendo l
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en `bowphs/SPhilBerta`, un modelo de tipo RoBERTa preentrenado específicamente para latín clásico. Sobre esta base, se realiza un ajuste fino con una pérdida contrastiva en línea (online contrastive loss) para la tarea de similitud de frases. El entrenamiento se lleva a cabo sobre uno de los cinco splits de validación cruzada del benchmark Loci Similes, que incluye pares de pasajes intertextuales verificados por expertos, junto con ejemplos negativos. No se han publicado detalles sobre el número exacto de tokens de entrenamiento ni la composición completa del dataset, pero se sabe que el corpus está disponible en HuggingFace (`julian-schelb/latin-classical-intertextuality-corpus`).
+El modelo se basa en `bowphs/SPhilBerta`, un modelo de tipo RoBERTa preentrenado específicamente para latín clásico. Sobre esta base, se realiza un ajuste fino con una pérdida contrastiva en línea (online contrastive loss) para la tarea de similitud de frases. El entrenamiento se lleva a cabo sobre uno de los cinco splits de validación cruzada del benchmark Loci Similes, que incluye pares de pasajes intertextuales verificados por expertos, junto con ejemplos negativos. No se han publicado detalles sobre el número exacto de tokens de entrenamiento ni la composición completa del dataset, pero se sabe que el corpus está disponible en Hugging Face (`julian-schelb/latin-classical-intertextuality-corpus`).
 
 Una innovación clave es el uso de prefijos de prompt durante el entrenamiento y la inferencia. El modelo distingue entre consultas (textos de Jerónimo, por ejemplo) y candidatos (autores clásicos), lo que mejora notablemente la calidad de la recuperación si se respetan estos prefijos. La arquitectura no presenta innovaciones estructurales más allá del ajuste específico para la intertextualidad latina.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parámetros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `julian-schelb/sphilberta-emb-lat-intertext-v2` | 135M | No disponible | Embeddings para intertextualidad latina | Apache 2.0 | HuggingFace |
-| `bowphs/SPhilBerta` (modelo base) | 135M | No disponible | Modelo de lenguaje enmascarado para latín | Apache 2.0 | HuggingFace |
-| `julian-schelb/sphilberta-emb-lat-intertext-v1` | 135M | No disponible | Embeddings para intertextualidad latina (versión anterior) | Apache 2.0 | HuggingFace |
-| `LaBSE` (multilingüe) | 471M | 512 tokens | Embeddings multilingües | Apache 2.0 | HuggingFace |
+| `julian-schelb/sphilberta-emb-lat-intertext-v2` | 135M | No disponible | Embeddings para intertextualidad latina | Apache 2.0 | Hugging Face |
+| `bowphs/SPhilBerta` (modelo base) | 135M | No disponible | Modelo de lenguaje enmascarado para latín | Apache 2.0 | Hugging Face |
+| `julian-schelb/sphilberta-emb-lat-intertext-v1` | 135M | No disponible | Embeddings para intertextualidad latina (versión anterior) | Apache 2.0 | Hugging Face |
+| `LaBSE` (multilingüe) | 471M | 512 tokens | Embeddings multilingües | Apache 2.0 | Hugging Face |
 
 La comparación con LaBSE es orientativa: aunque LaBSE cubre muchos idiomas, no está especializado en latín clásico ni en intertextualidad, por lo que su rendimiento en esta tarea específica sería previsiblemente inferior. No se dispone de datos de rendimiento comparativo entre estos modelos.
 
@@ -78,10 +78,10 @@ La comparación con LaBSE es orientativa: aunque LaBSE cubre muchos idiomas, no 
 
 ## Enlaces
 
-- [HuggingFace: julian-schelb/sphilberta-emb-lat-intertext-v2](https://huggingface.co/julian-schelb/sphilberta-emb-lat-intertext-v2)
-- [HuggingFace: modelo base bowphs/SPhilBerta](https://huggingface.co/bowphs/SPhilBerta)
-- [HuggingFace: versión v1 del modelo](https://huggingface.co/julian-schelb/SPhilBerta-emb-lat-intertext-v1)
-- [HuggingFace: clasificador asociado (ejemplo)](https://huggingface.co/julian-schelb/SPhilBerta-latin-intertextuality-v1)
+- [Hugging Face: julian-schelb/sphilberta-emb-lat-intertext-v2](https://huggingface.co/julian-schelb/sphilberta-emb-lat-intertext-v2)
+- [Hugging Face: modelo base bowphs/SPhilBerta](https://huggingface.co/bowphs/SPhilBerta)
+- [Hugging Face: versión v1 del modelo](https://huggingface.co/julian-schelb/SPhilBerta-emb-lat-intertext-v1)
+- [Hugging Face: clasificador asociado (ejemplo)](https://huggingface.co/julian-schelb/SPhilBerta-latin-intertextuality-v1)
 - [arXiv: artículo Loci Similes (2601.07533)](https://arxiv.org/abs/2601.07533)
 - [Documentación de la API LociSimiles](https://julianschelb.github.io/locisimiles/api/)
 - [Paquete Python locisimiles en PyPI](https://pypi.org/project/locisimiles/)

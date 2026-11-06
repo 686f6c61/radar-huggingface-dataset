@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. Todas c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ailexleon/Orion-26B-A4B-v1-mlx-6Bit
+- Repositorio Hugging Face: https://huggingface.co/ailexleon/Orion-26B-A4B-v1-mlx-6Bit
 - Repositorio relacionado (conversión 4-bit): https://huggingface.co/ailexleon/G4-Runic-Oarfish-26B-A4B-v1-mlx-4Bit
 - Versión GGUF de BeaverAI: https://huggingface.co/BeaverAI/Orion-26B-A4B-v1c-GGUF
 - Página en Inferix: https://inferix.co/models/BeaverAI/Orion-26B-A4B-v1a-GGUF

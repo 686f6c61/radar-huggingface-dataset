@@ -97,7 +97,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 - La longitud de contexto no está documentada, por lo que el troceado de documentos largos debe decidirse empíricamente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/embeddinggemma-2-mxfp4
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/embeddinggemma-2-mxfp4
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revisión del modelo base usada en la conversión: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm

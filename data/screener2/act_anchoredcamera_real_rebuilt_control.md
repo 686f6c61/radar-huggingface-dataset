@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Screener2/act_AnchoredCamera_real_rebuilt_control | 51,67 M | Imagen 480×640 + estado (6,) | Pick-and-place "Green cylinder to yellow bucket" | Apache 2.0 | HuggingFace Hub |
-| Políticas ACT genéricas de LeRobot | Variable (típicamente decenas de M) | Imagen + estado según robot | Tareas de manipulación diversas | Apache 2.0 (LeRobot) | HuggingFace Hub / docs |
-| Políticas Diffusion Policy (LeRobot) | No disponible | Imagen + estado | Manipulación por imitación | Apache 2.0 (LeRobot) | HuggingFace Hub / docs |
-| Políticas VQ-BeT / SmolVLA (LeRobot) | No disponible | Imagen + estado (+ lenguaje en SmolVLA) | Manipulación por imitación | Apache 2.0 (LeRobot) | HuggingFace Hub / docs |
+| Screener2/act_AnchoredCamera_real_rebuilt_control | 51,67 M | Imagen 480×640 + estado (6,) | Pick-and-place "Green cylinder to yellow bucket" | Apache 2.0 | Hugging Face Hub |
+| Políticas ACT genéricas de LeRobot | Variable (típicamente decenas de M) | Imagen + estado según robot | Tareas de manipulación diversas | Apache 2.0 (LeRobot) | Hugging Face Hub / docs |
+| Políticas Diffusion Policy (LeRobot) | No disponible | Imagen + estado | Manipulación por imitación | Apache 2.0 (LeRobot) | Hugging Face Hub / docs |
+| Políticas VQ-BeT / SmolVLA (LeRobot) | No disponible | Imagen + estado (+ lenguaje en SmolVLA) | Manipulación por imitación | Apache 2.0 (LeRobot) | Hugging Face Hub / docs |
 
 No se dispone de datos cuantitativos de rendimiento de estos modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, modalidad de entrada y licencia.
 
@@ -98,7 +98,7 @@ No se dispone de datos cuantitativos de rendimiento de estos modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Screener2/act_AnchoredCamera_real_rebuilt_control
+- Modelo en Hugging Face: https://huggingface.co/Screener2/act_AnchoredCamera_real_rebuilt_control
 - Dataset de entrenamiento: https://huggingface.co/datasets/Screener2/AnchoredCamera_real_rebuilt_control
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Screener2/AnchoredCamera_real_rebuilt_control
 - Paper de ACT: https://huggingface.co/papers/2304.13705

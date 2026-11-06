@@ -79,10 +79,10 @@ Comparativa dentro de la familia de enfermedades de OpenMed, mismo conjunto de t
 
 | Modelo | Parámetros | Contexto | F1 BC5CDR (0,5) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| GLiNER2.5-BioNER-Disease-Base-v1 | 194M | No disponible | 67,04 | Apache-2.0 | HuggingFace (TechnoBaptist) |
-| OpenMed GLiFormer BioNER Disease Large v1 | 576M | No disponible | 69,01 | No disponible | HuggingFace (OpenMed) |
-| OpenMed GLiFormer BioNER Disease Base v1 | 264M | No disponible | 64,10 | No disponible | HuggingFace (OpenMed) |
-| fastino/gliner2.5-base-v1 | No disponible | No disponible | 52,68 | No disponible | HuggingFace (fastino) |
+| GLiNER2.5-BioNER-Disease-Base-v1 | 194M | No disponible | 67,04 | Apache-2.0 | Hugging Face (TechnoBaptist) |
+| OpenMed GLiFormer BioNER Disease Large v1 | 576M | No disponible | 69,01 | No disponible | Hugging Face (OpenMed) |
+| OpenMed GLiFormer BioNER Disease Base v1 | 264M | No disponible | 64,10 | No disponible | Hugging Face (OpenMed) |
+| fastino/gliner2.5-base-v1 | No disponible | No disponible | 52,68 | No disponible | Hugging Face (fastino) |
 
 ## Limitaciones y advertencias
 
@@ -97,9 +97,9 @@ Comparativa dentro de la familia de enfermedades de OpenMed, mismo conjunto de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/GLiNER2.5-BioNER-Disease-Base-v1
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/GLiNER2.5-BioNER-Disease-Base-v1
 - Modelo base: https://huggingface.co/fastino/gliner2.5-base-v1
-- Organización OpenMed en HuggingFace: https://huggingface.co/OpenMed
+- Organización OpenMed en Hugging Face: https://huggingface.co/OpenMed
 - SDK OpenMed en GitHub: https://github.com/maziyarpanahi/openmed
 - Paquete OpenMed en PyPI: https://pypi.org/project/openmed/
 - Modelo OpenMed GLiFormer BioNER Disease Large v1: https://huggingface.co/OpenMed/GLiFormer-BioNER-Disease-Large-v1

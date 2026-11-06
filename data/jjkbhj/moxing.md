@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jjkbhj/moxing` es un repositorio de modelo alojado en HuggingFace por el usuario `jjkbhj`. La informacion publica disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas soportados ni arquitectura. El tamano del repositorio es de aproximadamente 0,1 GB, lo que sugiere pesos de un modelo de escala reducida, aunque no es posible confirmar parametros, contexto ni tipo de pesos a partir de los metadatos.
+`jjkbhj/moxing` es un repositorio de modelo alojado en Hugging Face por el usuario `jjkbhj`. La informacion publica disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas soportados ni arquitectura. El tamano del repositorio es de aproximadamente 0,1 GB, lo que sugiere pesos de un modelo de escala reducida, aunque no es posible confirmar parametros, contexto ni tipo de pesos a partir de los metadatos.
 
 El modelo fue creado el 4 de noviembre de 2026 y actualizado el mismo dia, con cero descargas y un unico "like". No se ha publicado documentacion tecnica, model card sustantiva, resultados de benchmarks ni informacion sobre el proceso de entrenamiento en la informacion disponible.
 
@@ -38,7 +38,7 @@ El unico dato objetivo es el tamano del repositorio, aproximadamente 0,1 GB, que
 ## Casos de uso
 
 - Evaluacion exploratoria: el modelo puede descargarse y probarse en un entorno aislado para determinar empiricamente sus capacidades, dado que no hay documentacion publica.
-- Investigacion de repositorios: util como caso de estudio de repositorios HuggingFace con metadatos incompletos y buenas practicas de documentacion de modelos.
+- Investigacion de repositorios: util como caso de estudio de repositorios Hugging Face con metadatos incompletos y buenas practicas de documentacion de modelos.
 - Pruebas de pipeline de inferencia: puede servir para validar flujos de carga de pesos y tokenizacion en herramientas como transformers o llama.cpp, siempre que se confirme el formato de pesos.
 - Experimentacion academica: uso en entornos controlados para comparar comportamiento frente a modelos documentados, sin garantias de calidad.
 - Integracion en prototipos internos: solo tras verificar licencia y comportamiento, y nunca en produccion sin auditoria previa.
@@ -72,5 +72,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jjkbhj/moxing
+- Repositorio Hugging Face: https://huggingface.co/jjkbhj/moxing
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

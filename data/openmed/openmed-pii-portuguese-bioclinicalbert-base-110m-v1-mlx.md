@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BioClinicalBERT-Base-110M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BioClinicalBERT-Base-110M-v1-mlx
 - Modelo base (PyTorch): https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BioClinicalBERT-Base-110M-v1
 - GitHub de OpenMed: https://github.com/maziyarpanahi/openmed
 - Documentacion del backend MLX: https://openmed.life/docs/mlx-backend/

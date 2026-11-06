@@ -87,7 +87,7 @@ No se dispone de información suficiente sobre alternativas directas de 27B con 
 
 ## Enlaces
 
-- [HuggingFace - jknlsn/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/jknlsn/Qwen3.8-27B-oQ6e-mtp)
+- [Hugging Face - jknlsn/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/jknlsn/Qwen3.8-27B-oQ6e-mtp)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Blog AMD: Run Qwen 3.8 27B on AMD Ryzen AI Max](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)
 - [Guía completa de Qwen3.8-27B (lovableapp.org)](https://lovableapp.org/blog/qwen3-8-27b)

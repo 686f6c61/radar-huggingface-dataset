@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tundenwachukwu/simple-matching` es un repositorio de HuggingFace publicado por el usuario tundenwachukwu que contiene una implementación funcional de una arquitectura tipo Dino orientada a tareas de matching (emparejamiento o puntuación de pares). El repositorio se presenta explícitamente como un esqueleto experimental: incluye el código de modelo en `pipeline.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el propio autor describe como un checkpoint de inicialización para pruebas de humo, no como un modelo entrenado ni evaluado. No hay pipeline declarado, cero descargas y cero likes en el momento de la consulta.
+`tundenwachukwu/simple-matching` es un repositorio de Hugging Face publicado por el usuario tundenwachukwu que contiene una implementación funcional de una arquitectura tipo Dino orientada a tareas de matching (emparejamiento o puntuación de pares). El repositorio se presenta explícitamente como un esqueleto experimental: incluye el código de modelo en `pipeline.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el propio autor describe como un checkpoint de inicialización para pruebas de humo, no como un modelo entrenado ni evaluado. No hay pipeline declarado, cero descargas y cero likes en el momento de la consulta.
 
 El dato más relevante para evaluarlo es el recuento real de parámetros registrado en los safetensors: 24.832 parámetros en total. Esto contrasta de forma llamativa con la etiqueta de escala `huge` que aparece en la configuración de arquitectura, lo que indica que dicha etiqueta es un nombre de preset dentro del script y no una descripción del tamaño efectivo del modelo. El repositorio ocupa 0,0 GB, coherente con un checkpoint de ese tamaño.
 
@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye resultados de benchmark 
 | Estado del checkpoint | inicialización sin entrenar | no disponible |
 | Benchmarks publicados | ninguno | no disponible |
 | Licencia | BSD-3-Clause | no disponible |
-| Disponibilidad | repositorio público en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | repositorio público en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -92,11 +92,11 @@ No disponible. La información proporcionada no incluye resultados de benchmark 
 - No se especifican idiomas soportados ni composición de datos de entrenamiento, lo que impide evaluar sesgos lingüísticos o culturales.
 - La licencia BSD-3-Clause es permisiva y permite uso comercial del código, pero la propia model card advierte de que deben revisarse por separado los términos de los datos de origen si se usan conjuntos de datos externos.
 - Al ser una implementación propia, no se integra con las APIs automáticas de carga de Transformers sin escribir un adaptador.
-- No hay pipeline declarado en HuggingFace, ni demo, ni pesos cuantizados listos para usar.
+- No hay pipeline declarado en Hugging Face, ni demo, ni pesos cuantizados listos para usar.
 - Riesgo de alucinación: no aplica en el sentido habitual al no ser un modelo generativo de lenguaje, pero sí existe riesgo de interpretar erróneamente sus salidas como predicciones válidas.
 - Uso en producción desaconsejado en su estado actual: requiere entrenamiento, evaluación con semillas múltiples y documentación de resultados por separado de los valores por defecto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tundenwachukwu/simple-matching
+- Repositorio en Hugging Face: https://huggingface.co/tundenwachukwu/simple-matching
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este modelo en la información disponible. Los resultados de la búsqueda web proporcionada no contienen material relacionado con el modelo.

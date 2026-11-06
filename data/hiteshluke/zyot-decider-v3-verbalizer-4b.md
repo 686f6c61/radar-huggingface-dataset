@@ -75,9 +75,9 @@ Intervalo de confianza del 95 % reportado por el autor para esta ejecucion: [0,8
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zyot Decider v3 — Verbalizer (4B) | ~4.000 M (base) + LoRA r=16 | Ventana del base Gemma 3 4B; entrenado a 768 | Decision binaria por verbalizador T/F, un forward pass | Apache-2.0 (adaptador); Gemma (base) | HuggingFace, PEFT |
-| google/gemma-3-4b-it | ~4.000 M | Ventana amplia de Gemma 3 | LLM generativo multimodal | Licencia Gemma | HuggingFace |
-| unsloth/gemma-3-4b-it | ~4.000 M | Ventana amplia de Gemma 3 | LLM generativo (ruta oficial del base) | Licencia Gemma | HuggingFace |
+| Zyot Decider v3 — Verbalizer (4B) | ~4.000 M (base) + LoRA r=16 | Ventana del base Gemma 3 4B; entrenado a 768 | Decision binaria por verbalizador T/F, un forward pass | Apache-2.0 (adaptador); Gemma (base) | Hugging Face, PEFT |
+| google/gemma-3-4b-it | ~4.000 M | Ventana amplia de Gemma 3 | LLM generativo multimodal | Licencia Gemma | Hugging Face |
+| unsloth/gemma-3-4b-it | ~4.000 M | Ventana amplia de Gemma 3 | LLM generativo (ruta oficial del base) | Licencia Gemma | Hugging Face |
 
 Comparativas con otros decision models de la misma categoria (tamano y tarea): no disponibles en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ Comparativas con otros decision models de la misma categoria (tamano y tarea): n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hiteshluke/zyot-decider-v3-verbalizer-4b
+- Hugging Face: https://huggingface.co/hiteshluke/zyot-decider-v3-verbalizer-4b
 - Modelo base: https://huggingface.co/unsloth/gemma-3-4b-it
 - Modelo base original: https://huggingface.co/google/gemma-3-4b-it
 - Dataset de destilacion: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3

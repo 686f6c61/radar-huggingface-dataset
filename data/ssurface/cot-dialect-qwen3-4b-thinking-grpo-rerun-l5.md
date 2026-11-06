@@ -77,7 +77,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. El propio 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-thinking-grpo-rerun-l5
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-thinking-grpo-rerun-l5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Adaptador SFT necesario (paso previo): `ssurface/cot-dialect-qwen3-4b-thinking-sft-l5` (no se proporciona URL directa)

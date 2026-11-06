@@ -73,9 +73,9 @@ Mediciones realizadas en un GitHub runner con AMD EPYC 9V45 de 96 núcleos, 4 hi
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct-krafla (esta ficha) | 1,5B | 4096 | `.mlb` / isa-lm (CPU) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct (original) | 1,5B | 32.768 (según model card original) | safetensors / transformers, vLLM, TGI | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Versiones GGUF de Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | GGUF / llama.cpp, Ollama | Apache 2.0 | HuggingFace, múltiples repositorios de la comunidad |
+| Qwen2.5-1.5B-Instruct-krafla (esta ficha) | 1,5B | 4096 | `.mlb` / isa-lm (CPU) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct (original) | 1,5B | 32.768 (según model card original) | safetensors / transformers, vLLM, TGI | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Versiones GGUF de Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | GGUF / llama.cpp, Ollama | Apache 2.0 | Hugging Face, múltiples repositorios de la comunidad |
 
 La comparación relevante es frente al modelo original y a sus conversiones GGUF: esta variante sacrifica compatibilidad de ecosistema (solo funciona con isa-lm) y reduce el contexto configurado a 4096 posiciones, a cambio de un runtime mínimo sin dependencias y builds optimizadas para un abanico amplio de extensiones SIMD. No se dispone de datos de benchmarks de calidad para establecer comparaciones de rendimiento frente a otras cuantizaciones.
 
@@ -93,7 +93,7 @@ La comparación relevante es frente al modelo original y a sus conversiones GGUF
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonpark0/Qwen2.5-1.5B-Instruct-krafla
+- Repositorio en Hugging Face: https://huggingface.co/jonpark0/Qwen2.5-1.5B-Instruct-krafla
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Runtime isa-lm: https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

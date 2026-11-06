@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Farhan2000/sd-pokemon-lora es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario Farhan2000. No es un modelo autonomo: son pesos de adaptacion de bajo rango que se aplican sobre el modelo base runwayml/stable-diffusion-v1-5, al que le anaden el estilo visual del dataset reach-vb/pokemon-blip-captions. Se distribuye en formato safetensors y se consume a traves de la libreria diffusers, por lo que requiere cargar primero el modelo base y despues inyectar el adaptador.
+Farhan2000/sd-pokemon-lora es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario Farhan2000. No es un modelo autonomo: son pesos de adaptacion de bajo rango que se aplican sobre el modelo base runwayml/stable-diffusion-v1-5, al que le anaden el estilo visual del dataset reach-vb/pokemon-blip-captions. Se distribuye en formato safetensors y se consume a traves de la libreria diffusers, por lo que requiere cargar primero el modelo base y despues inyectar el adaptador.
 
 La relevancia de esta ficha es acotada: se trata de un experimento de fine-tuning con 0 descargas y 0 likes en el momento de la consulta, con una model card generada automaticamente que conserva los marcadores TODO del script de entrenamiento. No hay informacion publicada sobre rango del LoRA, pasos de entrenamiento, resolucion de entrenamiento ni resultados cualitativos mas alla de cuatro imagenes de ejemplo incluidas en la propia model card.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Farhan2000/sd-pokemon-lora | Adaptador LoRA text-to-image | Stable Diffusion 1.5 | 512x512, prompt de 77 tokens | creativeml-openrail-m | HuggingFace, 0 descargas |
-| runwayml/stable-diffusion-v1-5 | Modelo de difusion completo | No aplica | 512x512, prompt de 77 tokens | creativeml-openrail-m | HuggingFace (modelo base) |
-| Otros LoRA de estilo para SD 1.5 | Adaptador LoRA | Stable Diffusion 1.5 | 512x512, prompt de 77 tokens | Variable segun autor | HuggingFace, datos no verificados en esta busqueda |
-| Adaptadores LoRA para SDXL | Adaptador LoRA | Stable Diffusion XL | 1024x1024, doble text encoder | Variable segun autor | HuggingFace, datos no verificados en esta busqueda |
+| Farhan2000/sd-pokemon-lora | Adaptador LoRA text-to-image | Stable Diffusion 1.5 | 512x512, prompt de 77 tokens | creativeml-openrail-m | Hugging Face, 0 descargas |
+| runwayml/stable-diffusion-v1-5 | Modelo de difusion completo | No aplica | 512x512, prompt de 77 tokens | creativeml-openrail-m | Hugging Face (modelo base) |
+| Otros LoRA de estilo para SD 1.5 | Adaptador LoRA | Stable Diffusion 1.5 | 512x512, prompt de 77 tokens | Variable segun autor | Hugging Face, datos no verificados en esta busqueda |
+| Adaptadores LoRA para SDXL | Adaptador LoRA | Stable Diffusion XL | 1024x1024, doble text encoder | Variable segun autor | Hugging Face, datos no verificados en esta busqueda |
 
 No se dispone de datos comparativos de rendimiento entre este adaptador y alternativas de la misma categoria, ya que no se han publicado benchmarks. La busqueda web realizada no devolvio ninguna fuente tecnica relevante sobre este modelo ni sobre adaptadores comparables.
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de rendimiento entre este adaptador y altern
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Farhan2000/sd-pokemon-lora
+- Hugging Face del modelo: https://huggingface.co/Farhan2000/sd-pokemon-lora
 - Modelo base: https://huggingface.co/runwayml/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/reach-vb/pokemon-blip-captions
 - Libreria de inferencia: https://github.com/huggingface/diffusers

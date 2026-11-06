@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ninfer-ada-ternary es un paquete de despliegue publicado en HuggingFace por el usuario ml-resources, que se presenta explicitamente como un espejo (mirror) del repositorio shensanshu/ninfer-ada-ternary alojado en ModelScope. No es una publicacion oficial de los autores originales del modelo ni del motor. Su contenido es un archivo comprimido de aproximadamente 18,4 GiB que incluye los pesos de un modelo ternario de 27B (Bonsai-2-27B, cuantizacion PQ2, en torno a 6,7 GiB), el componente de decodificacion especulativa DFlash2 (unos 9,8 GiB), un motor de inferencia precompilado llamado ninfer y una coleccion de documentos de despliegue, diagnostico y ajuste.
+ninfer-ada-ternary es un paquete de despliegue publicado en Hugging Face por el usuario ml-resources, que se presenta explicitamente como un espejo (mirror) del repositorio shensanshu/ninfer-ada-ternary alojado en ModelScope. No es una publicacion oficial de los autores originales del modelo ni del motor. Su contenido es un archivo comprimido de aproximadamente 18,4 GiB que incluye los pesos de un modelo ternario de 27B (Bonsai-2-27B, cuantizacion PQ2, en torno a 6,7 GiB), el componente de decodificacion especulativa DFlash2 (unos 9,8 GiB), un motor de inferencia precompilado llamado ninfer y una coleccion de documentos de despliegue, diagnostico y ajuste.
 
 El problema que resuelve es la puesta en marcha de un modelo ternario de gran tamano sin necesidad de compilar el motor ni descargar componentes adicionales: el paquete se define como "offline y autosuficiente", con binarios ya construidos para compute capability 8.9 (serie RTX 40) y 12.0 (serie RTX 50), y con requisitos de memoria que lo situan en tarjetas de 16 GB, o de 12 GB usando un arranque con KV en 4 bits. El contexto declarado en la configuracion por defecto es de 262.144 tokens con KV en fp8.
 
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para una comparativa con modelos de otras fam
 
 | Modalidad del proyecto | Incluida en este repositorio | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Extremo rendimiento PQ2 ternario (este paquete) | Si | 27B (pesos ternarios PQ2, ~6,7 GiB) | 262.144 tokens | Apache-2.0 (modelo) | HuggingFace y ModelScope |
+| Extremo rendimiento PQ2 ternario (este paquete) | Si | 27B (pesos ternarios PQ2, ~6,7 GiB) | 262.144 tokens | Apache-2.0 (modelo) | Hugging Face y ModelScope |
 | Equilibrada PTQ1 | No | no disponible | no disponible | no disponible | no disponible en este repositorio |
 | Memoria muy baja (llama + KVMem) | No | no disponible | no disponible | no disponible | no disponible en este repositorio |
 | Ajuste fino Swift | No | no disponible | no disponible | no disponible | no disponible en este repositorio |
@@ -101,7 +101,7 @@ No se dispone de datos suficientes para una comparativa con modelos de otras fam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ml-resources/ninfer-ada-ternary
+- Hugging Face: https://huggingface.co/ml-resources/ninfer-ada-ternary
 - Repositorio original en ModelScope: https://www.modelscope.cn/models/shensanshu/ninfer-ada-ternary
 - Modelo upstream de pesos ternarios en formato GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf (referenciado como origen de los pesos, no verificado en la busqueda)
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

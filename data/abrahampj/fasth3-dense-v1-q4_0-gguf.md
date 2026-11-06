@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 - El archivo GGUF pesa 11,6 GB (11.583.540.608 bytes); se necesita al menos esa memoria disponible para alojar el denoiser, además del VAE de vídeo, el VAE de audio y el codificador de texto Qwen3-VL-4B con su proyección.
 - Destino principal: móviles Android con NPU Hexagon (Qualcomm), que ejecuta kernels Q4_0; el autor reporta mediciones también en la CPU del teléfono.
 - En escritorio, un GGUF de ~11,6 GB cabe en GPUs de consumo con 12-16 GB de VRAM (por ejemplo RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090), aunque el formato y el pipeline están orientados al despliegue móvil y no se documenta compatibilidad con stacks de escritorio concretos.
-- Despliegue: mediante la aplicación Nightmare Mobile (https://github.com/AbrahamPaulJ/nightmare-mobile). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; la librería asociada en HuggingFace es `minimax-h3`.
+- Despliegue: mediante la aplicación Nightmare Mobile (https://github.com/AbrahamPaulJ/nightmare-mobile). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; la librería asociada en Hugging Face es `minimax-h3`.
 - Latencia y throughput: no disponible; solo se indica que la inferencia requiere cuatro pasos de Euler, lo que implica un número de evaluaciones del denoiser muy reducido frente a muestreos convencionales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Formato / cuantizacion | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AbrahamPJ/fasth3-dense-v1-q4_0-gguf (esta ficha) | ~20,1B (base) | GGUF Q4_0 | 4 (Euler, CFG 1) | MiniMax H3 Community | Público en HuggingFace |
-| ZawShiShawn/Gestura-FastH3-GGUF | ~20,1B (base) | GGUF Q4_K_M | 4 | MiniMax H3 Community | Público en HuggingFace |
-| FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree | ~20,1B | safetensors (sin cuantizar) | 4 | MiniMax H3 Community | Público en HuggingFace |
+| AbrahamPJ/fasth3-dense-v1-q4_0-gguf (esta ficha) | ~20,1B (base) | GGUF Q4_0 | 4 (Euler, CFG 1) | MiniMax H3 Community | Público en Hugging Face |
+| ZawShiShawn/Gestura-FastH3-GGUF | ~20,1B (base) | GGUF Q4_K_M | 4 | MiniMax H3 Community | Público en Hugging Face |
+| FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree | ~20,1B | safetensors (sin cuantizar) | 4 | MiniMax H3 Community | Público en Hugging Face |
 
 Las tres variantes comparten el mismo denoiser destilado de MiniMax H3; la diferencia está en el formato (safetensors frente a GGUF), el nivel de cuantización y la orientación al despliegue (NPU móvil en el caso de esta ficha).
 

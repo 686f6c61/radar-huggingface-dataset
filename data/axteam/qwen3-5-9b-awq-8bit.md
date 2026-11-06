@@ -17,7 +17,7 @@ El resultado es un artefacto de ~11,9 GB en disco que cabe en una única GPU de 
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262.144 tokens nativos según las fuentes del modelo base; hasta 1 M según algunas referencias (no verificado en la información disponible) |
 | Tipos de cuantizacion | AWQ INT8 W8A16 (pesos INT8 simétricos, grupo de 32, activaciones BF16), formato `compressed-tensors` `pack-quantized`; el modelo base dispone de otras cuantizaciones de la comunidad (GGUF, ternarias) |
-| Idiomas soportados | No disponible en los metadatos de HuggingFace; el modelo base se anuncia con soporte de hasta 201 idiomas según Together AI (no verificado) |
+| Idiomas soportados | No disponible en los metadatos de Hugging Face; el modelo base se anuncia con soporte de hasta 201 idiomas según Together AI (no verificado) |
 | Licencia | Apache-2.0 (heredada del modelo base Qwen/Qwen3.5-9B) |
 | Formato de pesos | safetensors con `compressed-tensors` (`pack-quantized`); ~11,9 GB en disco, repo de 12,8 GB |
 
@@ -73,9 +73,9 @@ Las fuentes web del modelo base afirman de forma cualitativa que Qwen3.5-9B supe
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/Qwen3.5-9B-AWQ-8bit (este) | 9,4 B denso | 262 K (heredado) | AWQ INT8 W8A16, `compressed-tensors` | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-9B (base BF16) | 9,4 B denso | 262 K nativos; hasta 1 M según fuentes | BF16 safetensors | Apache-2.0 | HuggingFace, ampliamente distribuido |
-| Cuantizaciones GGUF de la comunidad del mismo base | 9,4 B denso | 262 K (depende del runtime) | GGUF 2-8 bits | Apache-2.0 | HuggingFace (p. ej. listados bajo `base_model:quantized:Qwen/Qwen3.5-9B`) |
+| axteam/Qwen3.5-9B-AWQ-8bit (este) | 9,4 B denso | 262 K (heredado) | AWQ INT8 W8A16, `compressed-tensors` | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-9B (base BF16) | 9,4 B denso | 262 K nativos; hasta 1 M según fuentes | BF16 safetensors | Apache-2.0 | Hugging Face, ampliamente distribuido |
+| Cuantizaciones GGUF de la comunidad del mismo base | 9,4 B denso | 262 K (depende del runtime) | GGUF 2-8 bits | Apache-2.0 | Hugging Face (p. ej. listados bajo `base_model:quantized:Qwen/Qwen3.5-9B`) |
 | Qwen3-30B (referencia citada por terceros) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es contra el BF16 original: esta variante ocupa ~11,9 GB frente a los ~19 GB del BF16 y prácticamente no altera la perplejidad, a cambio de una pérdida de coincidencia top-1 de 0,6 puntos porcentuales. Frente a cuantizaciones de 4 bits, INT8 conserva más calidad pero ocupa aproximadamente el doble de VRAM. No hay datos públicos que permitan comparar rendimiento en tareas con otras variantes del mismo modelo base.
@@ -85,7 +85,7 @@ La comparación relevante es contra el BF16 original: esta variante ocupa ~11,9 
 - **Fidelidad medida sobre un conjunto sesgado**: la evaluación de calidad usa 100 prompts internos en inglés y coreano, con calibración descrita como "Korean-heavy". El comportamiento en castellano o en otros idiomas puede degradarse más de lo que reflejan esas cifras.
 - **Riesgo de alucinación**: inherente al modelo base; la cuantización no lo reduce y puede amplificarlo ligeramente en colas de distribución de probabilidad.
 - **Dependencia estricta de vLLM**: el formato `pack-quantized` de `compressed-tensors` no es portable a llama.cpp u Ollama sin conversión. No se proporcionan scripts de conversión.
-- **Soporte de idiomas no verificado**: los metadatos de HuggingFace no listan idiomas y la cifra de 201 idiomas procede de una fuente de terceros sobre el modelo base, no de esta model card.
+- **Soporte de idiomas no verificado**: los metadatos de Hugging Face no listan idiomas y la cifra de 201 idiomas procede de una fuente de terceros sobre el modelo base, no de esta model card.
 - **Contexto de 262 K y su coste**: usar ventanas muy grandes dispara la memoria de caché KV y puede agotar una GPU de 24 GB; conviene limitar `--max-model-len` según el hardware.
 - **Licencia**: Apache-2.0 permite uso comercial, pero los derechos sobre pesos, tokenizador y plantilla de chat pertenecen al equipo Qwen; conviene revisar el fichero LICENSE del repositorio base y las condiciones de atribución.
 - **Madurez del artefacto**: el repositorio tiene 0 descargas y 0 likes y se creó el mismo día de su última actualización (27 de octubre de 2026). No hay historial de uso en producción ni validación independiente de las métricas del autor.
@@ -97,7 +97,7 @@ La comparación relevante es contra el BF16 original: esta variante ocupa ~11,9 
 - Repositorio de la cuantización: https://huggingface.co/axteam/Qwen3.5-9B-AWQ-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
-- Listado de cuantizaciones del modelo base en HuggingFace: https://huggingface.co/models?other=base_model:quantized:Qwen/Qwen3.5-9B
+- Listado de cuantizaciones del modelo base en Hugging Face: https://huggingface.co/models?other=base_model:quantized:Qwen/Qwen3.5-9B
 - Ficha del modelo base en Awesome Agents: https://awesomeagents.ai/models/qwen-3-5-9b/
 - Artículo de XDA Developers sobre Qwen3.5-9B: https://www.xda-developers.com/qwen-3-5-9b-tops-ai-benchmarks-not-how-pick-model/
 - Catálogo de Microsoft Foundry: https://ai.azure.com/catalog/models/qwen--qwen3.5-9b

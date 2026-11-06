@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Modelo MLX en HuggingFace](https://huggingface.co/abenzerps/Apodex-1.1-mini-MLX)
+- [Modelo MLX en Hugging Face](https://huggingface.co/abenzerps/Apodex-1.1-mini-MLX)
 - [Modelo original Apodex-1.1-mini](https://huggingface.co/apodex/Apodex-1.1-mini)
 - [Paper en arXiv](https://arxiv.org/abs/2608.23283)
 - [Sitio web de Apodex](https://www.apodex.com/)

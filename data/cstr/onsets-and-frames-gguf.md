@@ -98,7 +98,7 @@ Los datos de F1 de Basic Pitch, hFT-Transformer y MT3 proceden de la propia mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cstr/onsets-and-frames-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cstr/onsets-and-frames-GGUF
 - Articulo original de Onsets and Frames (Hawthorne et al., 2018): https://arxiv.org/abs/1710.11153
 - Runtime CrispASR: https://github.com/CrispStrobe/CrispASR
 - Reimplementacion en PyTorch del checkpoint de origen: https://github.com/ddPn08/onsets-and-frames

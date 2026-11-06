@@ -4,7 +4,7 @@
 
 El modelo `INTISARI/intisari-indonesian-chat-v5` es un modelo de conversación en indonesio desarrollado por el equipo INTISARI. Con 66,2 millones de parámetros, se trata de un modelo compacto orientado a tareas de chat, probablemente diseñado para entornos con recursos limitados o despliegue en dispositivos de baja capacidad. La licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas.
 
-A pesar de su nombre y de la etiqueta `gguf` en HuggingFace, la documentación pública es prácticamente inexistente: la model card solo incluye la licencia. No se han publicado detalles sobre arquitectura, datos de entrenamiento, capacidades específicas ni benchmarks. Su relevancia actual es limitada debido a la falta de información verificable, aunque podría ser útil como punto de partida para experimentos con modelos pequeños en indonesio.
+A pesar de su nombre y de la etiqueta `gguf` en Hugging Face, la documentación pública es prácticamente inexistente: la model card solo incluye la licencia. No se han publicado detalles sobre arquitectura, datos de entrenamiento, capacidades específicas ni benchmarks. Su relevancia actual es limitada debido a la falta de información verificable, aunque podría ser útil como punto de partida para experimentos con modelos pequeños en indonesio.
 
 ## Especificaciones tecnicas
 
@@ -74,4 +74,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - INTISARI/intisari-indonesian-chat-v5](https://huggingface.co/INTISARI/intisari-indonesian-chat-v5)
+- [Hugging Face - INTISARI/intisari-indonesian-chat-v5](https://huggingface.co/INTISARI/intisari-indonesian-chat-v5)

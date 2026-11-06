@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Glimmer-30B-2026-Knowledge-i1-GGUF es una colección de cuantizaciones GGUF del modelo base OfflineBase/Muse-Glimmer-30B-2026-Knowledge, publicada por mradermacher, un conocido generador de cuantizaciones de la comunidad de HuggingFace. El modelo original es un ajuste fino orientado a la actualización de conocimiento, con datos específicos sobre noticias y eventos de 2026, y está etiquetado como modelo de visión por el autor de las cuantizaciones. El repositorio contiene únicamente pesos cuantizados en formato GGUF, no el modelo original en safetensors.
+Glimmer-30B-2026-Knowledge-i1-GGUF es una colección de cuantizaciones GGUF del modelo base OfflineBase/Muse-Glimmer-30B-2026-Knowledge, publicada por mradermacher, un conocido generador de cuantizaciones de la comunidad de Hugging Face. El modelo original es un ajuste fino orientado a la actualización de conocimiento, con datos específicos sobre noticias y eventos de 2026, y está etiquetado como modelo de visión por el autor de las cuantizaciones. El repositorio contiene únicamente pesos cuantizados en formato GGUF, no el modelo original en safetensors.
 
 El modelo base cuenta con 27.854.794.240 parámetros reales (aproximadamente 27,9 mil millones, comercializado como "30B"), lo que lo sitúa en la gama de modelos densos de gran tamaño utilizables en hardware de consumo con cuantizaciones agresivas. La licencia combina Apache 2.0 con una licencia específica del modelo (Muse Model License), lo que introduce condiciones adicionales que deben revisarse antes de un uso comercial.
 
@@ -36,7 +36,7 @@ La innovación técnica destacable en este repositorio no está en el modelo bas
 - Generación de texto conversacional en inglés (etiqueta "conversational").
 - Actualización de conocimiento específica sobre eventos y noticias de 2026 (etiquetas "knowledge-update" y "2026-news").
 - Capacidad multimodal de visión: el cuantizador indica explícitamente que es un "vision model" y que los archivos mmproj, si existen, se encuentran en el repositorio estático.
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que sugiere despliegue mediante APIs compatibles con el formato de HuggingFace.
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que sugiere despliegue mediante APIs compatibles con el formato de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
@@ -87,7 +87,7 @@ No se dispone de información sobre modelos alternativos de otros autores con ca
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/Glimmer-30B-2026-Knowledge-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Glimmer-30B-2026-Knowledge-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Glimmer-30B-2026-Knowledge-GGUF
 - Modelo base: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Dataset de entrenamiento: https://huggingface.co/datasets/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data

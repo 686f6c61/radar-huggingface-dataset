@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eus-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` es un ajuste fino (SFT) del modelo base `francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed455`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 (etiqueta `gpt2` en los metadatos, cargable con `transformers` y compatible con text-generation-inference) con 124.770.816 parametros totales, lo que lo situa en la categoria de los modelos pequenos de ~125 M de parametros. El identificador sugiere un experimento centrado en euskera (`eus-latn`) sobre un corpus del orden de 100 MB, entrenado desde cero o continuado mediante un pipeline de tokenizacion propio (el proyecto de Weights & Biases asociado se llama `new-tokenizers`).
+El modelo `eus-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` es un ajuste fino (SFT) del modelo base `francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed455`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 (etiqueta `gpt2` en los metadatos, cargable con `transformers` y compatible con text-generation-inference) con 124.770.816 parametros totales, lo que lo situa en la categoria de los modelos pequenos de ~125 M de parametros. El identificador sugiere un experimento centrado en euskera (`eus-latn`) sobre un corpus del orden de 100 MB, entrenado desde cero o continuado mediante un pipeline de tokenizacion propio (el proyecto de Weights & Biases asociado se llama `new-tokenizers`).
 
 El modelo se ha entrenado con TRL (version 0.23.0) mediante supervisado (SFT) a partir de un checkpoint intermedio del modelo base, presumiblemente el paso 500 (`ckpt500`) con semilla `seed455`. Esto lo situa como un artefacto de investigacion dentro de una cadena de experimentos controlados, no como un modelo orientado a producto. La model card es minima: no incluye descripcion del dataset, hiperparametros, evaluacion ni detalles de composicion de datos.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - int4: aproximadamente 0,07 GB de pesos.
 - En la practica, cualquier GPU consumer con 4 GB o mas (GTX 1650, RTX 3050, RTX 4060, RTX 4090) puede ejecutarlo con margen amplio, incluso con lotes moderados.
 - Cabe tambien en CPU y en dispositivos con poca memoria; el repositorio ocupa 2,2 GB porque incluye pesos y artefactos de entrenamiento, no porque la inferencia requiera ese espacio.
-- Opciones de despliegue: `transformers` con `pipeline("text-generation")` (metodo documentado por el autor), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible`), servidores compatibles con la API de endpoints de HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que no se ha publicado.
+- Opciones de despliegue: `transformers` con `pipeline("text-generation")` (metodo documentado por el autor), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible`), servidores compatibles con la API de endpoints de Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que no se ha publicado.
 - Latencia y throughput: no disponibles. En GPUs modernas y con secuencias cortas, un modelo de 125 M de parametros suele generar decenas o cientos de tokens por segundo, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| eus-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Investigacion en euskera, SFT sobre corpus de 100 MB |
-| GPT-2 (openai-community/gpt2) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente usado | Modelo generalista en ingles preentrenado en WebText |
-| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Version destilada de GPT-2, ingles |
-| GPT-2 medium | 355 M | 1024 tokens | MIT | HuggingFace | Escalado de GPT-2, ingles |
+| eus-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Investigacion en euskera, SFT sobre corpus de 100 MB |
+| GPT-2 (openai-community/gpt2) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente usado | Modelo generalista en ingles preentrenado en WebText |
+| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Version destilada de GPT-2, ingles |
+| GPT-2 medium | 355 M | 1024 tokens | MIT | Hugging Face | Escalado de GPT-2, ingles |
 
 La comparacion de rendimiento no es posible porque el modelo no publica metricas. La diferencia principal respecto a las alternativas es su orientacion a euskera y su caracter experimental, frente a modelos generalistas con licencias permisivas y amplia validacion comunitaria.
 
@@ -97,7 +97,7 @@ La comparacion de rendimiento no es posible porque el modelo no publica metricas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/q98qw63l
 - Repositorio de TRL: https://github.com/huggingface/trl

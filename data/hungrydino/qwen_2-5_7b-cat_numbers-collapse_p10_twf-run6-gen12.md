@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning de `unsloth/Qwen2.5-7B-Instruct`, desarrollado por HungryDino y publicado en HuggingFace bajo licencia Apache 2.0. El nombre del repositorio, `qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen12`, sugiere un experimento de entrenamiento específico, pero la model card no incluye documentación técnica sobre el procedimiento, los datos de entrenamiento ni las tareas objetivo. El tamaño del repositorio (0.3 GB) indica que se trata de un adaptador LoRA, no de los pesos completos del modelo base.
+Este modelo es un fine-tuning de `unsloth/Qwen2.5-7B-Instruct`, desarrollado por HungryDino y publicado en Hugging Face bajo licencia Apache 2.0. El nombre del repositorio, `qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen12`, sugiere un experimento de entrenamiento específico, pero la model card no incluye documentación técnica sobre el procedimiento, los datos de entrenamiento ni las tareas objetivo. El tamaño del repositorio (0.3 GB) indica que se trata de un adaptador LoRA, no de los pesos completos del modelo base.
 
-El modelo hereda la arquitectura y las capacidades del modelo base Qwen2.5-7B-Instruct, que es un transformer decoder-only de 7.000 millones de parámetros con una ventana de contexto de 32.768 tokens. El entrenamiento se realizó con la librería Unsloth (que optimiza el uso de memoria y velocidad) y la librería TRL de HuggingFace. No se han publicado resultados de benchmarks ni evaluaciones específicas para este adaptador, por lo que su rendimiento real en tareas concretas no está verificado.
+El modelo hereda la arquitectura y las capacidades del modelo base Qwen2.5-7B-Instruct, que es un transformer decoder-only de 7.000 millones de parámetros con una ventana de contexto de 32.768 tokens. El entrenamiento se realizó con la librería Unsloth (que optimiza el uso de memoria y velocidad) y la librería TRL de Hugging Face. No se han publicado resultados de benchmarks ni evaluaciones específicas para este adaptador, por lo que su rendimiento real en tareas concretas no está verificado.
 
 La relevancia de este modelo es limitada en el ecosistema open source: se trata de un experimento de fine-tuning sin documentación, con un tamaño de adaptador muy reducido y sin datos de rendimiento. Su principal valor potencial es servir como punto de partida para investigaciones sobre ajuste fino de Qwen2.5 en tareas específicas, pero no se puede considerar un modelo listo para producción sin una evaluación previa.
 
@@ -75,7 +75,7 @@ No se han publicado comparativas específicas para este adaptador. Dado que no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen12
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen12
 - Librería Unsloth: https://github.com/unslothai/unsloth
 - Librería TRL: https://github.com/huggingface/trl
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct

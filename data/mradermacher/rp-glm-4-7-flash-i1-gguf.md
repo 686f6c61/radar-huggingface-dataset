@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF con matriz de importancia (imatrix) del modelo `taozi555/rp-glm-4.7-flash`, preparadas por mradermacher, un cuantizador conocido en la comunidad de HuggingFace. El modelo base es un transformer de 29.943.393.920 parámetros (aproximadamente 30B), orientado a conversación en inglés, y esta versión lo convierte en archivos GGUF optimizados para ejecución local en hardware de consumo mediante llama.cpp, Ollama u otros motores compatibles.
+Este repositorio contiene cuantizaciones GGUF con matriz de importancia (imatrix) del modelo `taozi555/rp-glm-4.7-flash`, preparadas por mradermacher, un cuantizador conocido en la comunidad de Hugging Face. El modelo base es un transformer de 29.943.393.920 parámetros (aproximadamente 30B), orientado a conversación en inglés, y esta versión lo convierte en archivos GGUF optimizados para ejecución local en hardware de consumo mediante llama.cpp, Ollama u otros motores compatibles.
 
 La relevancia de esta publicación radica en que permite ejecutar un modelo de gran tamaño en GPUs con VRAM limitada gracias a las distintas cuantizaciones ofrecidas, que van desde 11,1 GB hasta 18,2 GB. El autor proporciona tanto cuantizaciones estáticas como versiones con imatrix (i1), que suelen ofrecer mejor calidad a igual tamaño. No se dispone de información sobre la arquitectura interna, el entrenamiento o las capacidades específicas del modelo base, ya que la model card se centra exclusivamente en el proceso de cuantización.
 
@@ -64,7 +64,7 @@ No se dispone de informacion sobre modelos comparables. El modelo base `taozi555
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/rp-glm-4.7-flash-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/rp-glm-4.7-flash-i1-GGUF
 - Modelo base: https://huggingface.co/taozi555/rp-glm-4.7-flash
 - Cuantizaciones estaticas (sin imatrix): https://huggingface.co/mradermacher/rp-glm-4.7-flash-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#rp-glm-4.7-flash-i1-GGUF

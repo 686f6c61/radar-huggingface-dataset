@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kusuma0099/Expt_1` es un repositorio publicado en HuggingFace por el usuario `kusuma0099` con licencia MIT. La model card asociada no contiene ninguna información técnica: únicamente incluye un saludo personal ("Hii!! My Name is Kusuma"). No se especifican arquitectura, tamaño, contexto, idiomas, ni ningún otro dato relevante para su uso. El repositorio no registra descargas ni interacciones, y fue creado el 20 de agosto de 2026.
+El modelo `kusuma0099/Expt_1` es un repositorio publicado en Hugging Face por el usuario `kusuma0099` con licencia MIT. La model card asociada no contiene ninguna información técnica: únicamente incluye un saludo personal ("Hii!! My Name is Kusuma"). No se especifican arquitectura, tamaño, contexto, idiomas, ni ningún otro dato relevante para su uso. El repositorio no registra descargas ni interacciones, y fue creado el 20 de agosto de 2026.
 
 Dada la ausencia total de especificaciones, este modelo no puede ser evaluado ni recomendado para ningún caso de uso. Se trata probablemente de un experimento personal o de una subida incompleta. Cualquier intento de utilizarlo en producción sería arriesgado y carecería de fundamento técnico.
 
@@ -53,5 +53,5 @@ No disponible. Al no existir datos sobre parámetros, contexto o rendimiento, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kusuma0099/Expt_1
+- Repositorio en Hugging Face: https://huggingface.co/kusuma0099/Expt_1
 - Perfil del autor: https://huggingface.co/kusuma0099

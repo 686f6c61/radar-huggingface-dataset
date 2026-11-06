@@ -75,7 +75,7 @@ No se dispone de información suficiente para comparar con otros modelos de edic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning
+- Modelo en Hugging Face: https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning
 - Repositorio Qwen-Image-Lightning: https://github.com/ModelTC/Qwen-Image-Lightning/
 - Documentación de LightX2V para Qwen Image Edit: https://github.com/ModelTC/LightX2V/blob/main/examples/qwen_image/README.md
 - Repositorio LightX2V (para issues): https://github.com/ModelTC/LightX2V/issues

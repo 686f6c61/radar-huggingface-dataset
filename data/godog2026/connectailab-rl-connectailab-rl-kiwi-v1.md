@@ -70,8 +70,8 @@ El autor advierte que se trata de un primer experimento, que la evaluacion de op
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-kiwi-v1 (este) | Base ~0,8B + LoRA | No disponible | 82,9 % precision, 3,14 de arrepentimiento | Apache 2.0 | Adaptador LoRA en HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8B | No disponible | 33,7 % precision, 4,76 de arrepentimiento | No disponible en la informacion | Modelo base en HuggingFace |
+| connectailab-rl-kiwi-v1 (este) | Base ~0,8B + LoRA | No disponible | 82,9 % precision, 3,14 de arrepentimiento | Apache 2.0 | Adaptador LoRA en Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8B | No disponible | 33,7 % precision, 4,76 de arrepentimiento | No disponible en la informacion | Modelo base en Hugging Face |
 | Politica profesora PPO del simulador | No disponible | No disponible | Por encima del modelo ajustado segun el autor | No disponible | No publicada como modelo independiente |
 
 No se dispone de informacion sobre otros modelos de decision comparables en el mismo dominio, por lo que la comparativa se limita al modelo base y a la politica profesora mencionada por el autor.
@@ -88,7 +88,7 @@ No se dispone de informacion sobre otros modelos de decision comparables en el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Godog2026/connectailab-rl-connectailab-rl-kiwi-v1
+- Modelo en Hugging Face: https://huggingface.co/Godog2026/connectailab-rl-connectailab-rl-kiwi-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`barrenechea/turbo-brilliance-template` no es un modelo de lenguaje, sino una plantilla Jinja de chat (`chat_template.jinja`) publicada como repositorio independiente en HuggingFace. Su función es sustituir las plantillas oficiales de la familia Qwen 3.5, 3.6 y 3.8 (incluida la variante Flash-Next) en motores de inferencia que soportan plantillas Jinja de HuggingFace, como LM Studio, llama.cpp, vLLM, SGLang, MLX, oMLX y KoboldCPP. El autor, `barrenechea`, la distribuye bajo licencia Apache 2.0 y la versiona internamente como v22.5.
+`barrenechea/turbo-brilliance-template` no es un modelo de lenguaje, sino una plantilla Jinja de chat (`chat_template.jinja`) publicada como repositorio independiente en Hugging Face. Su función es sustituir las plantillas oficiales de la familia Qwen 3.5, 3.6 y 3.8 (incluida la variante Flash-Next) en motores de inferencia que soportan plantillas Jinja de Hugging Face, como LM Studio, llama.cpp, vLLM, SGLang, MLX, oMLX y KoboldCPP. El autor, `barrenechea`, la distribuye bajo licencia Apache 2.0 y la versiona internamente como v22.5.
 
 El problema que aborda es concreto: las plantillas oficiales de Qwen 3.8 introducen regresiones que afectan a despliegues agénticos en producción. Entre ellas, un valor por defecto de esfuerzo de razonamiento `xhigh` que consume el presupuesto de tokens antes de generar respuesta, una excepción fatal cuando se desactiva el modo thinking en `Qwen3.8-2.4T-A95B`, la pérdida de bloques de razonamiento en el historial de conversación, y fallos de sintaxis al serializar argumentos de herramientas enviados como cadenas JSON por clientes OpenAI estándar.
 
@@ -29,7 +29,7 @@ Las innovaciones técnicas declaradas por el autor incluyen: extracción de razo
 
 ## Capacidades
 
-- Renderizado correcto de conversaciones multi-turno con roles `system`, `developer`, `user`, `assistant` y `tool` en motores compatibles con plantillas Jinja de HuggingFace.
+- Renderizado correcto de conversaciones multi-turno con roles `system`, `developer`, `user`, `assistant` y `tool` en motores compatibles con plantillas Jinja de Hugging Face.
 - Soporte de tool calling con formato XML canónico y manejo de argumentos en cadena JSON, sin crashes de sintaxis.
 - Control del esfuerzo de razonamiento mediante kwargs (`enable_thinking`, `reasoning_effort`) o etiquetas inline en el texto del chat.
 - Modo no razonamiento (fast mode) restaurado en `Qwen3.8-2.4T-A95B`, que en la plantilla oficial lanza una excepción fatal al pasar `enable_thinking=false`.
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Limitaciones y advertencias
 
-- No es un modelo: no genera texto por sí misma. Requiere un modelo Qwen 3.5, 3.6 o 3.8 subyacente y un motor con soporte de plantillas Jinja de HuggingFace.
+- No es un modelo: no genera texto por sí misma. Requiere un modelo Qwen 3.5, 3.6 o 3.8 subyacente y un motor con soporte de plantillas Jinja de Hugging Face.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo día (2026-11-03). No hay evidencia de uso en producción ni de validación independiente.
 - Las afirmaciones sobre corrección de bugs y compatibilidad proceden exclusivamente de la model card del autor; no se han verificado de forma externa.
 - En vLLM, el parser no inspecciona etiquetas `<|think_off|>` embebidas en el cuerpo del prompt; para desactivar el razonamiento hay que pasar `enable_thinking: false` en los parámetros de la petición. Esta asimetría puede provocar comportamientos inconsistentes si se mezclan ambos mecanismos.
@@ -91,5 +91,5 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/barrenechea/turbo-brilliance-template
+- Repositorio Hugging Face: https://huggingface.co/barrenechea/turbo-brilliance-template
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

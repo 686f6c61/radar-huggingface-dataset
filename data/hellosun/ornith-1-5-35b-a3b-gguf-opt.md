@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento de calidad (benchmarks) para establecer un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HelloSun/Ornith-1.5-35B-A3B-GGUF-OPT
+- Repositorio Hugging Face: https://huggingface.co/HelloSun/Ornith-1.5-35B-A3B-GGUF-OPT
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - GGUF oficial del equipo Ornith: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
 - Repositorio del parche CPU original: https://huggingface.co/HelloSun/Qwen3.6-35B-A3B-GGUF_CPU_OPT

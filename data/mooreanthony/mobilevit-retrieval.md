@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mooreanthony/mobilevit-retrieval` es un repositorio de HuggingFace que contiene una implementación reducida de MobileViT orientada a tareas de recuperación (retrieval), publicada por el usuario mooreanthony bajo licencia Apache-2.0. No se trata de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark.
+`mooreanthony/mobilevit-retrieval` es un repositorio de Hugging Face que contiene una implementación reducida de MobileViT orientada a tareas de recuperación (retrieval), publicada por el usuario mooreanthony bajo licencia Apache-2.0. No se trata de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark.
 
 El repositorio incluye el script `finetune.py` como artefacto principal, junto con `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y el mencionado checkpoint. La variante declarada es "tiny", con atención de tipo flash, fusión low-rank, activación swish y normalización RMSNorm. El recuento de parámetros registrado en el fichero safetensors es de 24.832 (veinticuatro mil ochocientos treinta y dos), una cifra muy alejada de los órdenes de magnitud habituales de MobileViT, lo que refuerza la lectura de que se trata de un esqueleto de inicialización y no de un modelo funcional completo.
 
@@ -69,7 +69,7 @@ La información proporcionada no incluye métricas, configuraciones ni artefacto
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| mooreanthony/mobilevit-retrieval | 24.832 (checkpoint de inicializacion) | no disponible | Apache-2.0 | HuggingFace, requiere adaptador | Solo lo declarado en su model card |
+| mooreanthony/mobilevit-retrieval | 24.832 (checkpoint de inicializacion) | no disponible | Apache-2.0 | Hugging Face, requiere adaptador | Solo lo declarado en su model card |
 | MobileViT (implementacion de referencia de la familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | CLIP (familia de referencia en retrieval imagen-texto) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SigLIP (familia de referencia en retrieval imagen-texto) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -85,10 +85,10 @@ A modo puramente cualitativo, las alternativas de la misma categoría serían la
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura lingüística.
 - Restricciones de licencia: el código y los pesos se liberan bajo Apache-2.0, lo que permite uso comercial, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se utilice con conjuntos de datos externos.
 - Para producción: no apto tal cual. Cualquier despliegue exige entrenamiento previo, evaluación con al menos tres semillas, una línea base de capacidad equivalente y la conservación de los logs de entrenamiento y las versiones del entorno.
-- Advertencia de integración: al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito.
-- La fecha de creación del repositorio registrada en HuggingFace es posterior a la de esta consulta, dato que conviene verificar en la ficha original.
+- Advertencia de integración: al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito.
+- La fecha de creación del repositorio registrada en Hugging Face es posterior a la de esta consulta, dato que conviene verificar en la ficha original.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mooreanthony/mobilevit-retrieval
+- Modelo en Hugging Face: https://huggingface.co/mooreanthony/mobilevit-retrieval
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo ni con vision por computador.

@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SparkV30Net | No disponible | No aplica | MIT | HuggingFace, 0 descargas | Unico dato confirmado |
+| SparkV30Net | No disponible | No aplica | MIT | Hugging Face, 0 descargas | Unico dato confirmado |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion facilitada |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nonymous-1029/spark_v30_best.pth
+- Modelo en Hugging Face: https://huggingface.co/Nonymous-1029/spark_v30_best.pth
 - Articulo de referencia citado por el autor: "CALIPOSE: Direct Regression vs Modular Tracking for Event-Based Spacecraft Pose Estimation" (enlace no disponible en la informacion proporcionada)
 - Repositorio de codigo con la clase `SparkV30Net` (`train.py`): no disponible
 - Resultados de busqueda web: los enlaces facilitados (aimadetools.com, lmmarketcap.com, mia-ai.net, benchlm.ai, llm-stats.com) corresponden a rankings de modelos de lenguaje y no son relevantes para este checkpoint de vision.

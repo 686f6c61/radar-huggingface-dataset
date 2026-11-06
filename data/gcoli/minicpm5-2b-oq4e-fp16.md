@@ -92,5 +92,5 @@ Las cifras de los modelos de referencia provienen de sus respectivas model cards
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gcoli/MiniCPM5-2B-oQ4e-fp16
+- Hugging Face: https://huggingface.co/gcoli/MiniCPM5-2B-oQ4e-fp16
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

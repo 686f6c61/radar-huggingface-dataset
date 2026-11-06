@@ -78,7 +78,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| gwp05-robodojo-ttt-step8000 | no disponible | no disponible | no disponible | HuggingFace (diffusers) | solo benchmark interno E0/E1/E2 |
+| gwp05-robodojo-ttt-step8000 | no disponible | no disponible | no disponible | Hugging Face (diffusers) | solo benchmark interno E0/E1/E2 |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenana07X/gwp05-robodojo-ttt-step8000
+- Modelo en Hugging Face: https://huggingface.co/chenana07X/gwp05-robodojo-ttt-step8000
 - Checkpoint base de inicializacion: https://huggingface.co/chenana07X/gwp05-robodojo-delta-step50000
 - Repositorio de codigo: https://github.com/zhujohn9604/giga-world-policy (rama `mainTTT`)
 - Documento de detalle de ejecucion: `handoff/ROBODOJO_GWP05_TTT_EXECUTION.md` dentro del repositorio anterior

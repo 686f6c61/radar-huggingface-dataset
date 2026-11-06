@@ -16,7 +16,7 @@ El resultado es un checkpoint de ~30,2 GB (frente a los ~52 GB en BF16) que cump
 | Parametros totales | 27.781.427.952 (27,78 B) |
 | Longitud de contexto | 32.768 tokens verificados en la receta de despliegue incluida (el modelo base declara hasta 262.144 tokens; no confirmado para este checkpoint cuantizado) |
 | Tipos de cuantizacion | W4A16 int4 simétrico, group_size 128, formato compressed-tensors pack-quantized (uint4b8); solo proyecciones MLP cuantizadas; atención completa, GatedDeltaNet, torre de visión, cabeza MTP, lm_head, embeddings, norms y conv1d en BF16 |
-| Idiomas soportados | no disponible (no se declaran en la ficha de HuggingFace ni en la model card) |
+| Idiomas soportados | no disponible (no se declaran en la ficha de Hugging Face ni en la model card) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (compressed-tensors), librería transformers; kernels Marlin en vLLM |
 | Tamano del repositorio | 30,2 GB |
@@ -89,11 +89,11 @@ La model card señala además que este build queda dominado por su hermano de 6 
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Perplejidad (wikitext-103, 50 textos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (W4A16 AutoRound) | 27,78 B | 32.768 validados | safetensors compressed-tensors int4, 30,2 GB | 8,3888 (+3,72 %) | apache-2.0 | HuggingFace, requiere vLLM ≥ 0.28 |
-| Mismo modelo, hermano W6A16-AutoRound | 27,78 B | no disponible | safetensors, 27,6 GB | no publicada; degradado declarado +2,40 % | apache-2.0 | HuggingFace (recomendado por el propio autor frente a este) |
-| Mismo modelo, W8A16-AutoRound | 27,78 B | no disponible | safetensors 8 bits | no disponible | apache-2.0 | HuggingFace y endpoints (FriendliAI) |
-| Modelo base BF16 (DavidAU) | 27,78 B | 262.144 declarados | safetensors BF16, ~52 GB | 8,0880 (referencia) | apache-2.0 | HuggingFace |
-| Variante GGUF del upstream (NEO-CODER-MAX-MTP-GGUF) | ~27 B | no disponible | GGUF | no disponible | no disponible | HuggingFace |
+| Este modelo (W4A16 AutoRound) | 27,78 B | 32.768 validados | safetensors compressed-tensors int4, 30,2 GB | 8,3888 (+3,72 %) | apache-2.0 | Hugging Face, requiere vLLM ≥ 0.28 |
+| Mismo modelo, hermano W6A16-AutoRound | 27,78 B | no disponible | safetensors, 27,6 GB | no publicada; degradado declarado +2,40 % | apache-2.0 | Hugging Face (recomendado por el propio autor frente a este) |
+| Mismo modelo, W8A16-AutoRound | 27,78 B | no disponible | safetensors 8 bits | no disponible | apache-2.0 | Hugging Face y endpoints (FriendliAI) |
+| Modelo base BF16 (DavidAU) | 27,78 B | 262.144 declarados | safetensors BF16, ~52 GB | 8,0880 (referencia) | apache-2.0 | Hugging Face |
+| Variante GGUF del upstream (NEO-CODER-MAX-MTP-GGUF) | ~27 B | no disponible | GGUF | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a modelos de otros autores del mismo rango de tamaño.
 
@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks comparativos frente a modelos de otros auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DoktorMincs/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-W4A16-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/DoktorMincs/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-W4A16-AutoRound
 - Variante W6A16 de la misma serie: https://huggingface.co/DoktorMincs/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-W6A16-AutoRound
 - Variante W8A16 en FriendliAI: https://friendli.ai/models/DoktorMincs/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-W8A16-AutoRound
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU

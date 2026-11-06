@@ -79,7 +79,7 @@ La comparacion es orientativa; no se han medido rendimientos relativos. Qwen2.5-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abu-Dju/AceGPT-v2-32B-Chat-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abu-Dju/AceGPT-v2-32B-Chat-Q8_0-GGUF
 - Modelo base original: https://huggingface.co/FreedomIntelligence/AceGPT-v2-32B-Chat
 - Otra version GGUF del mismo modelo: https://huggingface.co/mradermacher/AceGPT-v2-32B-Chat-GGUF
 - Entrada en LLM Explorer (datos de contexto y VRAM): https://llm-explorer.com/model/FreedomIntelligence%2FAceGPT-v2-32B-Chat,4jcRUxTV7b9yUnkixGV737

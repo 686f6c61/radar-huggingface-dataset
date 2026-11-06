@@ -79,8 +79,8 @@ La comparativa se limita a la familia FLAN-T5, ya que no se dispone de datos de 
 
 ## Enlaces
 
-- HuggingFace (copia de oakDust): https://huggingface.co/oakDust/flan-t5-small
-- HuggingFace (original de Google): https://huggingface.co/google/flan-t5-small
+- Hugging Face (copia de oakDust): https://huggingface.co/oakDust/flan-t5-small
+- Hugging Face (original de Google): https://huggingface.co/google/flan-t5-small
 - Documentación de FLAN-T5 en Transformers: https://huggingface.co/docs/transformers/model_doc/flan-t5
 - Paper de FLAN-T5: https://arxiv.org/abs/2210.11416
 - Repositorio T5X (Google): https://github.com/google-research/t5x

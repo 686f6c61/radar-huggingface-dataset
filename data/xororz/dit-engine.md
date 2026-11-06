@@ -6,7 +6,7 @@ xororz/dit-engine es un motor de inferencia (runtime) para generacion de imagene
 
 El paquete se compila a partir de stable-diffusion.cpp y del backend Hexagon de ggml, y se distribuye como una biblioteca nativa (`libdit_engine.so`) acompanada de los skels HTP v73, v75, v79 y v81 junto con un fichero `SHA256SUMS`. Su nombre de fichero (`dit_engine_v1_arm64-v8a.zip`) incluye la version de ABI del motor, que la aplicacion comprueba antes de cargar la biblioteca.
 
-Es relevante porque permite generar imagenes de forma totalmente local en moviles Android con Snapdragon 8 Gen 2 o superior, sin depender de la nube ni de GPUs dedicadas. El repositorio de HuggingFace no contiene pesos: el motor los carga desde el paquete de modelo que descarga la aplicacion. Se publica con licencia Apache 2.0 y, en el momento de la consulta, acumula 0 descargas y 0 likes, con un tamano de repositorio de 0.0 GB.
+Es relevante porque permite generar imagenes de forma totalmente local en moviles Android con Snapdragon 8 Gen 2 o superior, sin depender de la nube ni de GPUs dedicadas. El repositorio de Hugging Face no contiene pesos: el motor los carga desde el paquete de modelo que descarga la aplicacion. Se publica con licencia Apache 2.0 y, en el momento de la consulta, acumula 0 descargas y 0 likes, con un tamano de repositorio de 0.0 GB.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No se dispone de datos tecnicos de alternativas comparables en la informacion pr
 ## Limitaciones y advertencias
 
 - No es un modelo: no contiene pesos ni parametros. Sin descargar el paquete de modelo correspondiente, el motor no puede generar nada.
-- El repositorio figura con un tamano de 0.0 GB y 0 descargas: no se ha verificado en la informacion disponible que el fichero `dit_engine_v1_arm64-v8a.zip` este alojado en este repositorio de HuggingFace.
+- El repositorio figura con un tamano de 0.0 GB y 0 descargas: no se ha verificado en la informacion disponible que el fichero `dit_engine_v1_arm64-v8a.zip` este alojado en este repositorio de Hugging Face.
 - No hay benchmarks, metricas de latencia ni evaluaciones de calidad publicadas, por lo que no es posible estimar su rendimiento en produccion a partir de los datos disponibles.
 - Compatibilidad muy restringida: solo arm64-v8a y NPU Hexagon HTP v73, v75, v79 o v81. Quedan fuera otros SoC, GPU de escritorio e iOS.
 - La licencia Apache 2.0 cubre el motor, pero no los pesos de Z-Image Turbo ni de FLUX.2/Klein 4B, cuyas condiciones de uso comercial no se detallan en la informacion proporcionada. Es un riesgo legal a verificar antes de un despliegue comercial.
@@ -90,7 +90,7 @@ No se dispone de datos tecnicos de alternativas comparables en la informacion pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xororz/dit-engine
+- Repositorio en Hugging Face: https://huggingface.co/xororz/dit-engine
 - Proyecto Local Dream (aplicacion que usa el motor): https://github.com/xororz/local-dream
 - stable-diffusion.cpp (proyecto base del que se compila el motor): https://github.com/happyyzy/stable-diffusion.cpp
 - backend Hexagon de ggml: no disponible (no se proporciona URL concreta)

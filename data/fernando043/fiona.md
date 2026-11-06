@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fernando043/fiona` es un repositorio de modelo publicado en HuggingFace por el usuario fernando043 el 26 de septiembre de 2026 y actualizado el mismo día. La model card asociada no contiene más información que la declaración de licencia (`openrail`): no se especifica arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni pipeline de inferencia. El repositorio ocupa aproximadamente 0,1 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de una publicación sin tracción ni documentación técnica pública.
+`fernando043/fiona` es un repositorio de modelo publicado en Hugging Face por el usuario fernando043 el 26 de septiembre de 2026 y actualizado el mismo día. La model card asociada no contiene más información que la declaración de licencia (`openrail`): no se especifica arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni pipeline de inferencia. El repositorio ocupa aproximadamente 0,1 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de una publicación sin tracción ni documentación técnica pública.
 
 Desde el punto de vista práctico, no es posible determinar qué problema resuelve el modelo ni para qué tareas está pensado, ya que el autor no ha publicado ficha técnica, paper, repositorio de código ni resultados de evaluación. La única información verificable son los metadatos del repositorio: licencia OpenRAIL, etiqueta de región `us`, tamaño de 0,1 GB y ausencia de metadatos de idioma o de pipeline.
 
@@ -54,13 +54,13 @@ No se puede confirmar ninguna capacidad concreta sin inspeccionar la configuraci
 
 Los siguientes escenarios son hipótesis de trabajo sujetas a verificación previa del contenido real del repositorio; no se derivan de ninguna capacidad declarada por el autor.
 
-- Auditoria de artefactos de HuggingFace: antes de cargar el modelo, inspeccionar los ficheros del repositorio (config.json, tokenizer, formato de pesos) y comprobar si los pesos están en `safetensors` o en `pickle`, ya que cargar `pickle` de origen desconocido implica riesgo de ejecución de código arbitrario.
+- Auditoria de artefactos de Hugging Face: antes de cargar el modelo, inspeccionar los ficheros del repositorio (config.json, tokenizer, formato de pesos) y comprobar si los pesos están en `safetensors` o en `pickle`, ya que cargar `pickle` de origen desconocido implica riesgo de ejecución de código arbitrario.
 - Pruebas de pipelines de cuantizacion: si el checkpoint resulta ser un modelo denso pequeño, puede servir como caso de prueba para validar flujos de conversion a GGUF, GPTQ o AWQ en un entorno controlado y sin requisitos de producción.
 - Prototipado en local sin GPU: un repositorio de 0,1 GB, si contiene pesos completos en precisión de 16 bits, sería compatible con inferencia en CPU o en GPU de gama baja; útil para pruebas de integración de servidores de inferencia (llama.cpp, Ollama, vLLM) antes de escalar a modelos mayores.
 - Fine-tuning experimental en dominio propio: únicamente si se confirma que el checkpoint está completo y que la licencia OpenRAIL permite el uso previsto; serviría como base de partida para ajuste supervisado sobre un corpus pequeño.
 - Comparativa de referencia en evaluaciones internas: incorporarlo como baseline adicional en un banco de pruebas propio, siempre que se documente que no existen resultados públicos de benchmarks para este repositorio.
 - Reproduccion y trazabilidad de publicaciones sin documentar: estudiar el caso como ejemplo de repositorio sin ficha técnica, para definir políticas internas de admisión de modelos en un catálogo corporativo (criterios mínimos de documentación, licencia y evaluación).
-- Formacion sobre flujos de HuggingFace: usar el repositorio para practicar la descarga, inspección de metadatos y verificación de integridad de checkpoints en un entorno de aprendizaje.
+- Formacion sobre flujos de Hugging Face: usar el repositorio para practicar la descarga, inspección de metadatos y verificación de integridad de checkpoints en un entorno de aprendizaje.
 
 ## Benchmarks y rendimiento
 
@@ -92,5 +92,5 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fernando043/fiona
+- Hugging Face: https://huggingface.co/fernando043/fiona
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

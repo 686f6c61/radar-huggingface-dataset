@@ -79,7 +79,7 @@ La comparativa muestra que la versión de oerbas es la única optimizada especí
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oerbas/localpix-toonyou
+- Repositorio Hugging Face: https://huggingface.co/oerbas/localpix-toonyou
 - Checkpoint original: https://huggingface.co/frankjoshua/toonyou_beta6
 - Página de ToonYou en Civitai: https://civitai.com/models/30240/toonyou
 - Conversión alternativa para Qualcomm: https://huggingface.co/Mr-J-369/ToonYou-SD1.5-qnn2.28

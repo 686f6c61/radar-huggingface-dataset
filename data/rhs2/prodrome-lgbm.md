@@ -110,5 +110,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rhs2/prodrome-lgbm
+- Modelo en Hugging Face: https://huggingface.co/rhs2/prodrome-lgbm
 - Repositorio de Prodrome: https://github.com/rhs2/prodrome

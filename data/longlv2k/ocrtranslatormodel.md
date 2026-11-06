@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OCRTranslatorModel es un modelo de traduccion de imagenes mediante OCR desarrollado por el usuario longlv2k (longlevan) y distribuido en HuggingFace en formato GGUF. Con 7.504.568.320 parametros (aproximadamente 7,5B), el modelo esta orientado a tareas de extraccion y traduccion de texto en imagenes, como sugiere su nombre y el repositorio GitHub asociado "translate-tool", descrito como un "image translator tool". El repositorio se creo el 22 de agosto de 2026 y no registra descargas ni valoraciones.
+OCRTranslatorModel es un modelo de traduccion de imagenes mediante OCR desarrollado por el usuario longlv2k (longlevan) y distribuido en Hugging Face en formato GGUF. Con 7.504.568.320 parametros (aproximadamente 7,5B), el modelo esta orientado a tareas de extraccion y traduccion de texto en imagenes, como sugiere su nombre y el repositorio GitHub asociado "translate-tool", descrito como un "image translator tool". El repositorio se creo el 22 de agosto de 2026 y no registra descargas ni valoraciones.
 
 La model card es practicamente inexistente: unicamente declara la licencia MIT sin documentar arquitectura, datos de entrenamiento, capacidades ni limitaciones. El modelo se distribuye exclusivamente en formato GGUF, con un tamano de repositorio de 4,7 GB, lo que indica una cuantizacion pensada para inferencia local en hardware de consumo. La ausencia total de documentacion tecnica hace que cualquier afirmacion sobre sus capacidades deba tratarse como inferencia a partir del nombre y del contexto del autor, no como informacion verificada.
 
@@ -26,7 +26,7 @@ No se dispone de informacion sobre la arquitectura del modelo, los datos de entr
 ## Capacidades
 
 - Traduccion de texto en imagenes: el nombre del modelo y el repositorio "translate-tool" del autor sugieren que esta es la funcion principal, combinando OCR con traduccion automatica.
-- Interaccion conversacional: el tag "conversational" en HuggingFace indica soporte para dialogos multi-turno, aunque no se documenta su alcance.
+- Interaccion conversacional: el tag "conversational" en Hugging Face indica soporte para dialogos multi-turno, aunque no se documenta su alcance.
 - Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que el modelo puede desplegarse como endpoint de inferencia en plataformas compatibles.
 - No se documentan capacidades adicionales: no hay evidencia de tool calling, razonamiento multi-paso, soporte multimodal mas alla del OCR implicito, ni funciones especiales como thinking mode.
 
@@ -76,7 +76,7 @@ La comparativa es limitada porque no se dispone de datos tecnicos de DeepSeek-OC
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longlv2k/OCRTranslatorModel
+- Hugging Face: https://huggingface.co/longlv2k/OCRTranslatorModel
 - Perfil del autor: https://huggingface.co/longlv2k
 - Repositorio GitHub del autor (translate-tool): https://github.com/Le-Van-Long2k/translate-tool
 - Herramienta similar (OCR-Translator): https://github.com/BryanWongCK/OCR-Translator

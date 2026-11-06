@@ -24,7 +24,7 @@ Su relevancia es acotada y de carácter fundamentalmente académico y experiment
 | Framework de entrenamiento | scottyrl (`configs/p5_textcraft_grpo.yaml`, commit `ef42c0d35c0c5b52d327a21fa2bb23a15d52d76e`) |
 | Origen de la exportación | Tinker, `tinker://model_0ed9d90f/v50` |
 | Librería declarada | peft |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `chihyul3/scottyrl-a3-p5_textcraft_grpo` | ~4B (base) + LoRA r32 | no disponible | sin datos publicados | no disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-4B` (modelo base sin adaptador) | ~4B | no disponible en esta ficha | sin datos en esta ficha | no disponible en esta ficha | HuggingFace |
-| `BrianUppp/scottyrl-a3-p5_textcraft_grpo` | ~4B (base) + LoRA r32 | no disponible | sin datos publicados | no disponible | HuggingFace |
-| `Honcel/scottyrl-a3-p5_textcraft_grpo` | ~4B (base) + LoRA r32 | no disponible | sin datos publicados | no disponible | HuggingFace |
-| `sdharod/scottyrl-a3-p5_textcraft_grpo` | ~4B (base) + LoRA r32 | no disponible | sin datos publicados | no disponible | HuggingFace |
+| `chihyul3/scottyrl-a3-p5_textcraft_grpo` | ~4B (base) + LoRA r32 | no disponible | sin datos publicados | no disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-4B` (modelo base sin adaptador) | ~4B | no disponible en esta ficha | sin datos en esta ficha | no disponible en esta ficha | Hugging Face |
+| `BrianUppp/scottyrl-a3-p5_textcraft_grpo` | ~4B (base) + LoRA r32 | no disponible | sin datos publicados | no disponible | Hugging Face |
+| `Honcel/scottyrl-a3-p5_textcraft_grpo` | ~4B (base) + LoRA r32 | no disponible | sin datos publicados | no disponible | Hugging Face |
+| `sdharod/scottyrl-a3-p5_textcraft_grpo` | ~4B (base) + LoRA r32 | no disponible | sin datos publicados | no disponible | Hugging Face |
 
 Las copias de otros usuarios (`BrianUppp`, `Honcel`, `oliviabgp`, `sdharod`, `racheleven11`) comparten exactamente el mismo nombre de ejecución y descripción, por lo que parecen proceder de la misma plantilla de Assignment 3 y no constituyen alternativas funcionalmente distintas. No se dispone de datos de rendimiento para establecer una comparación cuantitativa con modelos de la misma categoría.
 
@@ -99,7 +99,7 @@ Las copias de otros usuarios (`BrianUppp`, `Honcel`, `oliviabgp`, `sdharod`, `ra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chihyul3/scottyrl-a3-p5_textcraft_grpo
+- Modelo en Hugging Face: https://huggingface.co/chihyul3/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Copia de BrianUppp: https://huggingface.co/BrianUppp/scottyrl-a3-p5_textcraft_grpo
 - Copia de Honcel: https://huggingface.co/Honcel/scottyrl-a3-p5_textcraft_grpo

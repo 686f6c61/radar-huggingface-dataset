@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Italian-LiteClinicalU-Small-66M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Italian-LiteClinicalU-Small-66M-v1-mlx
 - Modelo base (sin MLX): https://huggingface.co/OpenMed/OpenMed-PII-Italian-LiteClinicalU-Small-66M-v1
 - OpenMed GitHub: https://github.com/maziyarpanahi/openmed
 - Sitio web de OpenMed: https://openmed.life/

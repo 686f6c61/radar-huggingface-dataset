@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada: con 12.054.643 parametros en FP32, el modelo ocupa aproximadamente 48 MB en memoria. Las activaciones para una entrada de 256x256 y una salida de 1024x1024 pueden requerir varios cientos de MB, dependiendo del tamano del lote. En general, una GPU con 2 GB de VRAM es suficiente.
 - GPU recomendadas: cualquier GPU moderna (RTX 2000/3000/4000, A100, H100) o incluso CPU, gracias al reducido tamano del modelo.
 - Si cabe en consumer GPU: si, cualquier tarjeta grafica consumer con al menos 2 GB de VRAM es apta.
-- Opciones de despliegue: HuggingFace `transformers` y PyTorch. No se ha documentado soporte para vLLM, llama.cpp, Ollama o TGI, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: Hugging Face `transformers` y PyTorch. No se ha documentado soporte para vLLM, llama.cpp, Ollama o TGI, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponible. No se han publicado mediciones de velocidad de inferencia.
 
 ## Comparativa con modelos similares
@@ -72,6 +72,6 @@ No se dispone de datos suficientes para realizar una comparativa fiable con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madhav512/nppe3-swin2sr-lowlight-denoise
+- Hugging Face: https://huggingface.co/madhav512/nppe3-swin2sr-lowlight-denoise
 - Repositorio oficial de Swin2SR: https://github.com/mv-lab/swin2sr
-- Documentacion de Swin2SR en HuggingFace: https://huggingface.co/docs/transformers/v4.44.2/en/model_doc/swin2sr
+- Documentacion de Swin2SR en Hugging Face: https://huggingface.co/docs/transformers/v4.44.2/en/model_doc/swin2sr

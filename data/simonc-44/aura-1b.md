@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aura-1B es un sistema de IA neuro-simbólico publicado por el desarrollador Simonc-44 en HuggingFace bajo licencia MIT. A diferencia de un modelo de lenguaje convencional, se presenta como una arquitectura orquestada que separa el lenguaje natural, el cálculo matemático exacto y la memoria factual en módulos especializados, articulados por un orquestador central. Su regla de diseño declarada es "el modelo pequeño propone, el programa demuestra": aquello que no puede probarse se verifica o se rechaza, en lugar de generarse de forma especulativa. Está construido sobre el modelo base meta-llama/Llama-3.2-1B-Instruct, con un tamaño aproximado de 1.000 millones de parámetros.
+Aura-1B es un sistema de IA neuro-simbólico publicado por el desarrollador Simonc-44 en Hugging Face bajo licencia MIT. A diferencia de un modelo de lenguaje convencional, se presenta como una arquitectura orquestada que separa el lenguaje natural, el cálculo matemático exacto y la memoria factual en módulos especializados, articulados por un orquestador central. Su regla de diseño declarada es "el modelo pequeño propone, el programa demuestra": aquello que no puede probarse se verifica o se rechaza, en lugar de generarse de forma especulativa. Está construido sobre el modelo base meta-llama/Llama-3.2-1B-Instruct, con un tamaño aproximado de 1.000 millones de parámetros.
 
 El sistema está orientado explícitamente a la ejecución local en CPU, sin necesidad de GPU, con un consumo de memoria RAM declarado de aproximadamente 1 GB. La distribución no sigue el formato habitual de pesos abiertos: el paquete se entrega como un contenedor cifrado (aura_system.aef.enc, 779 MB) protegido con AES-256-GCM y firmado con Ed25519, acompañado de un ejecutable ligero (Aura.exe) que verifica la integridad antes de arrancar. El secreto de descifrado no está publicado y debe solicitarse al autor, lo que condiciona por completo su reproducibilidad y uso en producción.
 
@@ -25,7 +25,7 @@ Su relevancia actual radica en la combinación de tres factores: despliegue en h
 
 La model card describe Aura-1B como un sistema orquestado más que como un modelo monolítico. La arquitectura separa tres dominios: el procesamiento de lenguaje natural, el razonamiento matemático exacto y la memoria factual. El módulo de matemáticas emplea técnicas simbólicas citadas explícitamente en la documentación: AST (árboles de sintaxis abstracta), PAL (Program-Aided Language models) y PGS, de modo que los cálculos se ejecutan como programas en lugar de predecirse token a token. El módulo factual recurre a búsqueda web en directo y a verificación mediante el método CRITIC, de manera que los datos no verificados se rechazan en lugar de generarse.
 
-El modelo parte de un ajuste fino (finetune) de meta-llama/Llama-3.2-1B-Instruct, según los metadatos de HuggingFace. No se especifica en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO sobre el ajuste. Tampoco se detalla la arquitectura interna del orquestador ni cómo se enrutan las consultas entre módulos. Uno de los tags del repositorio menciona MiniCPM, lo que sugiere la presencia de componentes adicionales, pero la model card no aclara su función exacta. La innovación declarada no reside en el entrenamiento, sino en el empaquetado: un contenedor cifrado con verificación triple de SHA-256 (configuración, código y pesos) que rechaza el arranque si un solo byte ha sido alterado.
+El modelo parte de un ajuste fino (finetune) de meta-llama/Llama-3.2-1B-Instruct, según los metadatos de Hugging Face. No se especifica en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO sobre el ajuste. Tampoco se detalla la arquitectura interna del orquestador ni cómo se enrutan las consultas entre módulos. Uno de los tags del repositorio menciona MiniCPM, lo que sugiere la presencia de componentes adicionales, pero la model card no aclara su función exacta. La innovación declarada no reside en el entrenamiento, sino en el empaquetado: un contenedor cifrado con verificación triple de SHA-256 (configuración, código y pesos) que rechaza el arranque si un solo byte ha sido alterado.
 
 ## Capacidades
 
@@ -101,7 +101,7 @@ La comparación con Llama-3.2-1B-Instruct es la más directa porque Aura-1B deri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Simonc-44/aura-1b
+- Hugging Face: https://huggingface.co/Simonc-44/aura-1b
 - Repositorio GitHub (código abierto del sistema): https://github.com/Simonc44/aura-1b
 - README completo del repositorio: https://github.com/Simonc44/aura-1b#readme
 - Releases (v0.1.0): https://github.com/Simonc44/aura-1b/releases

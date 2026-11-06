@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables. La organizacion Optimum 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3.5-moe-dflash
+- Repositorio Hugging Face: https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3.5-moe-dflash
 - Perfil de la organizacion: https://huggingface.co/optimum-intel-internal-testing/models
 - Repositorio de Optimum Intel en GitHub: https://github.com/huggingface/optimum-intel
 - Documentacion de Optimum Intel: https://github.com/huggingface/optimum-intel/blob/main/README.md

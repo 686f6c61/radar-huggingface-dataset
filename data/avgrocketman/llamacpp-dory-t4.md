@@ -97,7 +97,7 @@ La diferencia principal frente a las releases oficiales de llama.cpp es la restr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/avgrocketman/llamacpp-dory-t4
+- Hugging Face: https://huggingface.co/avgrocketman/llamacpp-dory-t4
 - Fork de llama.cpp usado en la compilación: https://github.com/brianchmielNV/llama.cpp
 - Revisión compilada: `98a74c97ea09ac72f6ceda1559808fc0a2f447ce` (PR #30306)
 - llama.cpp upstream: https://github.com/ggml-org/llama.cpp

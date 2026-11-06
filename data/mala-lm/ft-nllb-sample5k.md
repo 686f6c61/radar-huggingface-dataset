@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FT-nllb-sample5k es un repositorio de pesos publicado en HuggingFace por el usuario MaLA-LM bajo licencia MIT. La informacion disponible en la model card es practicamente inexistente: el README se limita a la linea de licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes, y se creo y actualizo el 13 de septiembre de 2026, sin actualizaciones posteriores.
+FT-nllb-sample5k es un repositorio de pesos publicado en Hugging Face por el usuario MaLA-LM bajo licencia MIT. La informacion disponible en la model card es practicamente inexistente: el README se limita a la linea de licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes, y se creo y actualizo el 13 de septiembre de 2026, sin actualizaciones posteriores.
 
 El identificador del modelo sugiere un ajuste fino (fine-tuning) realizado sobre datos derivados del proyecto NLLB (No Language Left Behind) de Meta, con una muestra de aproximadamente 5000 ejemplos. Esta interpretacion se deduce unicamente de la nomenclatura del repositorio y no esta confirmada por ninguna documentacion del autor, por lo que debe tratarse como una hipotesis de trabajo y no como un dato verificado. NLLB es una familia de modelos de traduccion automatica multilingue, de modo que el caso de uso mas probable seria la traduccion, pero el repositorio no aporta ninguna confirmacion.
 
@@ -25,7 +25,7 @@ La relevancia actual del repositorio es limitada: no hay pipeline declarado, no 
 
 No se ha publicado informacion sobre la arquitectura en la model card del repositorio. El nombre del modelo apunta a un ajuste fino sobre datos de NLLB (muestra de 5000 ejemplos), pero no se especifica el checkpoint base, el numero de parametros, la composicion del dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco consta si se trata de un transformer denso, un modelo encoder-decoder de traduccion o cualquier otra variante.
 
-El unico dato confirmado por la metadata de HuggingFace es la licencia MIT y la ausencia de pipeline declarado. No hay informacion disponible sobre innovaciones tecnicas, metodos de decodificacion, estrategias de atencion ni proceso de tokenizacion.
+El unico dato confirmado por la metadata de Hugging Face es la licencia MIT y la ausencia de pipeline declarado. No hay informacion disponible sobre innovaciones tecnicas, metodos de decodificacion, estrategias de atencion ni proceso de tokenizacion.
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni el formato de pesos no es posible calcularla.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible, depende por completo del tamano del checkpoint, que no consta.
-- Opciones de despliegue: no disponible. No se declara pipeline en HuggingFace ni se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI o Text Generation Inference.
+- Opciones de despliegue: no disponible. No se declara pipeline en Hugging Face ni se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI o Text Generation Inference.
 - Latencia y throughput estimados: no disponible.
 - Para poder estimar requisitos habria que inspeccionar el repositorio y determinar el numero de parametros, la precision de los pesos y la arquitectura del checkpoint base.
 
@@ -81,6 +81,6 @@ No disponible. El repositorio no proporciona informacion suficiente (parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MaLA-LM/FT-nllb-sample5k
-- Perfil del autor en HuggingFace: https://huggingface.co/MaLA-LM
+- Repositorio en Hugging Face: https://huggingface.co/MaLA-LM/FT-nllb-sample5k
+- Perfil del autor en Hugging Face: https://huggingface.co/MaLA-LM
 - Paper, blog, repositorio de codigo o demo: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo.

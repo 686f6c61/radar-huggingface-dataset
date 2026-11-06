@@ -16,7 +16,7 @@ Este adaptador se enmarca en la categoría de ajuste fino de bajo rango, con un 
 | Longitud de contexto | No aplica (generacion de imagenes, no texto) |
 | Tipos de cuantizacion | No disponible (el LoRA se aplica sobre el modelo base, que puede cuantizarse; el adaptador en si no suele cuantizarse) |
 | Idiomas soportados | No disponible (el modelo base Qwen-Image soporta ingles y chino principalmente, pero el LoRA no especifica idiomas) |
-| Licencia | No disponible (etiqueta "other" en HuggingFace, sin detalle adicional) |
+| Licencia | No disponible (etiqueta "other" en Hugging Face, sin detalle adicional) |
 | Formato de pesos | No disponible (probablemente safetensors para diffusers, pero no confirmado) |
 
 ## Arquitectura y entrenamiento
@@ -62,13 +62,13 @@ No se dispone de comparativas publicadas con otros LoRAs de mejora anatomica o c
 - Contenido NSFW: el modelo esta disenado para generar imagenes explicitas, lo que puede no ser adecuado para todos los entornos. Debe utilizarse con responsabilidad y cumpliendo las leyes locales sobre contenido para adultos.
 - Sesgos potenciales: al estar entrenado con un dataset especifico, puede perpetuar estereotipos de belleza o representaciones limitadas de la anatomia femenina, especialmente en cuanto a diversidad etnica o corporal.
 - Riesgo de alucinaciones anatomicas: aunque el LoRA corrige errores comunes, no garantiza una precision perfecta en todas las poses o angulos; pueden persistir deformidades en casos complejos.
-- Licencia no especificada: la etiqueta "other" en HuggingFace implica que los terminos de uso no estan claros. Se recomienda contactar al autor antes de un uso comercial.
+- Licencia no especificada: la etiqueta "other" en Hugging Face implica que los terminos de uso no estan claros. Se recomienda contactar al autor antes de un uso comercial.
 - Dependencia del modelo base: el rendimiento del LoRA esta condicionado a la calidad de Qwen-Image-2512; si el modelo base se actualiza o cambia, el adaptador podria requerir reentrenamiento.
 - Sin soporte oficial: al ser un proyecto experimental de un usuario individual, no hay garantias de mantenimiento, actualizaciones o soporte tecnico.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/perpetual3x/Qwen-Image-Female-Anatomy-Fix-NSFW-LoRA-Triggerless-v2
+- Modelo en Hugging Face: https://huggingface.co/perpetual3x/Qwen-Image-Female-Anatomy-Fix-NSFW-LoRA-Triggerless-v2
 - Articulo de Civitai sobre LoRAs NSFW para Qwen-Image: https://civitai.com/articles/18798/qwen-image-nsfw-lora-notes
 - Repositorio oficial de Qwen-Image en GitHub: https://github.com/QwenLM/Qwen-Image
 - Ejemplo de LoRA de realismo para Qwen-Image (referencia): https://huggingface.co/flymy-ai/qwen-image-realism-lora

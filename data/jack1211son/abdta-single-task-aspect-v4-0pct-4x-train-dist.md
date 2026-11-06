@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abdta-single-task-aspect-v4-0pct-4x-train-dist | 435 M | 256 tokens | Clasificación tono/aspecto financiero | no disponible | HuggingFace |
-| microsoft/deberta-v3-large | 435 M | 512 tokens | Modelo base (encoder) | MIT | HuggingFace |
-| FinBERT (ProsusAI/finbert) | ~110 M | 512 tokens | Sentimiento financiero (3 clases) | no disponible | HuggingFace |
-| RoBERTa-base financiero (varias variantes) | ~125 M | 512 tokens | Sentimiento financiero | varía | HuggingFace |
+| abdta-single-task-aspect-v4-0pct-4x-train-dist | 435 M | 256 tokens | Clasificación tono/aspecto financiero | no disponible | Hugging Face |
+| microsoft/deberta-v3-large | 435 M | 512 tokens | Modelo base (encoder) | MIT | Hugging Face |
+| FinBERT (ProsusAI/finbert) | ~110 M | 512 tokens | Sentimiento financiero (3 clases) | no disponible | Hugging Face |
+| RoBERTa-base financiero (varias variantes) | ~125 M | 512 tokens | Sentimiento financiero | varía | Hugging Face |
 
 La comparación directa con alternativas es limitada porque este modelo aborda una tarea muy específica (aspecto y tono sobre memorias anuales indonesias) y no publica benchmarks. FinBERT y variantes de RoBERTa financiero son alternativas más ligeras para sentimiento general, pero no cubren la clasificación por 14 aspectos ni el formato de inyección de palabras clave.
 
@@ -86,5 +86,5 @@ La comparación directa con alternativas es limitada porque este modelo aborda u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jack1211son/abdta-single-task-aspect-v4-0pct-4x-train-dist
+- Hugging Face: https://huggingface.co/jack1211son/abdta-single-task-aspect-v4-0pct-4x-train-dist
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large

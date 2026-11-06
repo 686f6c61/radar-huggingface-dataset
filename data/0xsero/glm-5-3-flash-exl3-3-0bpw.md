@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio HuggingFace: 0xSero/GLM-5.3-Flash-EXL3-3.0bpw](https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-3.0bpw)
+- [Repositorio Hugging Face: 0xSero/GLM-5.3-Flash-EXL3-3.0bpw](https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-3.0bpw)
 - [Modelo base: zai-org/GLM-5.3-Flash-BF16](https://huggingface.co/zai-org/GLM-5.3-Flash-BF16)
 - [Documentación de Unsloth sobre GLM-5.3-Flash](https://unsloth.ai/docs/models/glm-5.3)
 - [Documentación oficial de Z.AI para GLM-5.3](https://docs.z.ai/guides/llm/glm-5.3)

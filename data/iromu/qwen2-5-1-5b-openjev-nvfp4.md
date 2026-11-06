@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-openjev-NVFP4 es un modelo de lenguaje compacto especializado en tareas de decisión tipada (typed-decision) y clasificación de etiqueta única, publicado por el usuario iromu en HuggingFace. Se trata de una cuantización NVFP4 (formato de punto flotante de 4 bits de NVIDIA) del modelo `iromu/Qwen2.5-1.5B-openjev`, que a su vez es un fine-tuning con LoRA de `Qwen/Qwen2.5-1.5B`. El entrenamiento se realizó sobre el corpus tipado `ZefanCai/Open-Jev`, donde cada fila contiene un estado, una pregunta, un conjunto de opciones y una distribución de probabilidad sobre ellas, con el objetivo de emitir la opción de mayor probabilidad como una única letra de etiqueta.
+Qwen2.5-1.5B-openjev-NVFP4 es un modelo de lenguaje compacto especializado en tareas de decisión tipada (typed-decision) y clasificación de etiqueta única, publicado por el usuario iromu en Hugging Face. Se trata de una cuantización NVFP4 (formato de punto flotante de 4 bits de NVIDIA) del modelo `iromu/Qwen2.5-1.5B-openjev`, que a su vez es un fine-tuning con LoRA de `Qwen/Qwen2.5-1.5B`. El entrenamiento se realizó sobre el corpus tipado `ZefanCai/Open-Jev`, donde cada fila contiene un estado, una pregunta, un conjunto de opciones y una distribución de probabilidad sobre ellas, con el objetivo de emitir la opción de mayor probabilidad como una única letra de etiqueta.
 
 La relevancia de este checkpoint radica en dos puntos. Primero, está diseñado específicamente para servir en hardware de clase GB10 (como las estaciones DGX Spark), donde la memoria es limitada y la cuantización FP4 permite despliegues con huella mínima (el repo ocupa solo 1,2 GB). Segundo, incluye una validación rigurosa: la cuantización NVFP4 se mide contra el modelo BF16 original tanto en precisión de clasificación (84,1 % frente a 85,2 %, una caída de solo 1,1 puntos porcentuales) como en coherencia probabilística medida con JevBench (38,0 frente a 38,5), demostrando que la cuantización es prácticamente indolora para esta tarea.
 
@@ -81,10 +81,10 @@ REP es consistencia de representación, BAT independencia de lote, MEA coherenci
 
 | Modelo | Parametros | Cuantizacion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iromu/Qwen2.5-1.5B-openjev-NVFP4 | ~1,5B (888,6M en safetensors cuantizado) | NVFP4 (W4A16) | Decisión tipada / clasificación de etiqueta única | Apache-2.0 | HuggingFace, vLLM |
-| iromu/Qwen2.5-1.5B-openjev (BF16) | ~1,5B | BF16 | Decisión tipada / clasificación de etiqueta única | Apache-2.0 | HuggingFace, transformers |
-| iromu/Qwen2.5-1.5B-openjev-GGUF | ~1,5B | GGUF (varios niveles) | Decisión tipada / clasificación de etiqueta única | Apache-2.0 | HuggingFace, llama.cpp/Ollama |
-| Qwen/Qwen2.5-1.5B (base) | 1,5B | BF16 y variantes comunitarias | Propósito general | Apache-2.0 (Qwen2.5-1.5B) | HuggingFace, múltiples runtimes |
+| iromu/Qwen2.5-1.5B-openjev-NVFP4 | ~1,5B (888,6M en safetensors cuantizado) | NVFP4 (W4A16) | Decisión tipada / clasificación de etiqueta única | Apache-2.0 | Hugging Face, vLLM |
+| iromu/Qwen2.5-1.5B-openjev (BF16) | ~1,5B | BF16 | Decisión tipada / clasificación de etiqueta única | Apache-2.0 | Hugging Face, transformers |
+| iromu/Qwen2.5-1.5B-openjev-GGUF | ~1,5B | GGUF (varios niveles) | Decisión tipada / clasificación de etiqueta única | Apache-2.0 | Hugging Face, llama.cpp/Ollama |
+| Qwen/Qwen2.5-1.5B (base) | 1,5B | BF16 y variantes comunitarias | Propósito general | Apache-2.0 (Qwen2.5-1.5B) | Hugging Face, múltiples runtimes |
 
 Frente a la variante BF16, la versión NVFP4 sacrifica 1,1 pp de precisión de clasificación y 0,5 puntos de coherencia JevBench a cambio de una huella de memoria drásticamente menor. Frente al modelo base Qwen2.5-1.5B, este checkpoint es un especialista: pierde generalidad conversacional pero gana fiabilidad de formato (100 % de emisión de letra válida) en su tarea objetivo.
 

@@ -1,7 +1,7 @@
 # dalebedev02/blip-matching-proto
 
 ## Resumen
-`dalebedev02/blip-matching-proto` es un repositorio de HuggingFace publicado por el usuario dalebedev02 que contiene una implementación propia y reducida de la arquitectura Blip orientada a tareas de *matching*. Según su propia model card, no se trata de un modelo entrenado ni de una release de producción, sino de un punto de partida reproducible: incluye un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta por defecto y un `model.safetensors` descrito explícitamente como *checkpoint de inicialización* para pruebas de humo, no como pesos entrenados.
+`dalebedev02/blip-matching-proto` es un repositorio de Hugging Face publicado por el usuario dalebedev02 que contiene una implementación propia y reducida de la arquitectura Blip orientada a tareas de *matching*. Según su propia model card, no se trata de un modelo entrenado ni de una release de producción, sino de un punto de partida reproducible: incluye un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta por defecto y un `model.safetensors` descrito explícitamente como *checkpoint de inicialización* para pruebas de humo, no como pesos entrenados.
 
 El dato de tamaño real que reportan los safetensors es de 49.600 parámetros, una cifra muy alejada de lo que sugiere la etiqueta "giant" que el autor emplea en la model card; conviene tratar esa discordancia como una señal de que el repositorio está en fase embrionaria y no auditado. El repositorio no acumula descargas ni *likes* en el momento de la consulta, no declara idiomas soportados y no incluye pipeline de inferencia configurado.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| blip-matching-proto (dalebedev02) | 49.600 (según safetensors) | no disponible | sin benchmarks; checkpoint sin entrenar | MIT | HuggingFace |
+| blip-matching-proto (dalebedev02) | 49.600 (según safetensors) | no disponible | sin benchmarks; checkpoint sin entrenar | MIT | Hugging Face |
 | BLIP (Salesforce) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | no verificado |
 | BLIP-2 (Salesforce) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | no verificado |
 
@@ -78,7 +78,7 @@ No se dispone de datos verificados de los modelos comparables dentro de la infor
 - Para producción: no apto. Cualquier uso en producción requeriría entrenamiento, evaluación, auditoría y validación previas.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/dalebedev02/blip-matching-proto
+- Repositorio en Hugging Face: https://huggingface.co/dalebedev02/blip-matching-proto
 - Archivos incluidos en el repositorio: `main.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de la arquitectura Blip: no disponible en la información proporcionada
 - Demos, blogs o repositorios adicionales: no disponible en la información proporcionada

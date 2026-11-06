@@ -88,8 +88,8 @@ No se dispone de información pública sobre los parámetros, contexto o licenci
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/huggcm/GLM-5.3-Flash
-- Repositorio HuggingFace oficial: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Repositorio Hugging Face (mirror): https://huggingface.co/huggcm/GLM-5.3-Flash
+- Repositorio Hugging Face oficial: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763
 - Página en Modal: https://modal.com/library/zai/glm-5-3-flash

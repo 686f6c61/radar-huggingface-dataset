@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xw17/Qwen2.5-14B-Instruct_SFT_lora_ptt es un repositorio publicado en HuggingFace por el usuario xw17 cuyo identificador sugiere un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo Qwen2.5-14B-Instruct. Sin embargo, esta lectura procede unicamente del nombre del repositorio: la model card publicada es la plantilla automática de HuggingFace y no confirma ni el modelo base, ni el método de ajuste, ni el dataset utilizado. Todos los campos de descripción, uso previsto, datos de entrenamiento, hiperparámetros y evaluación aparecen con el marcador "[More Information Needed]".
+xw17/Qwen2.5-14B-Instruct_SFT_lora_ptt es un repositorio publicado en Hugging Face por el usuario xw17 cuyo identificador sugiere un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo Qwen2.5-14B-Instruct. Sin embargo, esta lectura procede unicamente del nombre del repositorio: la model card publicada es la plantilla automática de Hugging Face y no confirma ni el modelo base, ni el método de ajuste, ni el dataset utilizado. Todos los campos de descripción, uso previsto, datos de entrenamiento, hiperparámetros y evaluación aparecen con el marcador "[More Information Needed]".
 
 El repositorio ocupa 0.1 GB, un tamaño compatible con un adaptador de bajo rango o con pesos parciales, pero no con los pesos completos en precisión de un modelo de 14 000 millones de parámetros, que en bf16 ocuparían aproximadamente 28 GB. Declara la librería transformers y las etiquetas safetensors, endpoints_compatible y region:us, además de una referencia arXiv que corresponde al artículo sobre emisiones de carbono citado dentro de la propia plantilla, no a un paper del modelo.
 
@@ -40,7 +40,7 @@ Los únicos indicios disponibles son indirectos: el identificador apunta a Qwen2
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
 - Modo de pensamiento (thinking), audio u otras capacidades especiales: no disponible.
-- Única etiqueta funcional declarada: endpoints_compatible, lo que indica que el repositorio está marcado como compatible con despliegue en HuggingFace Inference Endpoints, sin más detalle sobre el runtime.
+- Única etiqueta funcional declarada: endpoints_compatible, lo que indica que el repositorio está marcado como compatible con despliegue en Hugging Face Inference Endpoints, sin más detalle sobre el runtime.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 - Extrapolación condicional, no verificada: si el modelo base fuese realmente un transformer denso de 14B, la inferencia en bf16/fp16 requeriría del orden de 28 GB de VRAM, en int8 unos 15 GB y en int4 unos 8-9 GB, más el coste de la caché KV, que crece con la longitud de contexto. Estas cifras son estimaciones genéricas para esa clase de tamaño y no proceden de la información del repositorio.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. En el escenario hipotético anterior, una RTX 4090 de 24 GB solo sería suficiente con cuantización de 8 bits o inferior.
-- Opciones de despliegue: no disponible. La etiqueta endpoints_compatible sugiere despliegue mediante HuggingFace Inference Endpoints, sin que se especifiquen motor, versión de transformers ni dependencias.
+- Opciones de despliegue: no disponible. La etiqueta endpoints_compatible sugiere despliegue mediante Hugging Face Inference Endpoints, sin que se especifiquen motor, versión de transformers ni dependencias.
 - Latencia y throughput: no disponible.
 - Nota adicional: si el repositorio contiene únicamente un adaptador LoRA, su uso exigiría cargar por separado el modelo base y fusionar o aplicar el adaptador, lo que implica descargar y almacenar también los pesos completos.
 
@@ -93,7 +93,7 @@ No es posible establecer una comparativa fundamentada: no se conocen los paráme
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_ptt
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_ptt
 - Referencia arXiv presente en las etiquetas del repositorio (corresponde a Lacoste et al., 2019, sobre estimación de emisiones de carbono, citada en la propia plantilla de la model card, no a un paper del modelo): https://arxiv.org/abs/1910.09700
 - Modelo base mencionado en el identificador, no enlazado por el autor: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Resultados de la búsqueda web: sin enlaces relevantes. Las URLs devueltas corresponden a mercados de objetos de videojuegos y a la leyenda de El Dorado, sin relación alguna con el modelo.

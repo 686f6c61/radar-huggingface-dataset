@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`whoisotna/v1sd` es un repositorio de modelo publicado en HuggingFace por el usuario whoisotna el 17 de octubre de 2026 y actualizado ese mismo dia. El repositorio esta etiquetado con la licencia `openrail` y la region `us`, ocupa 0,1 GB y no cuenta con descargas ni likes en el momento de la consulta. La model card no contiene mas informacion que la declaracion de licencia: no se documenta arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
+`whoisotna/v1sd` es un repositorio de modelo publicado en Hugging Face por el usuario whoisotna el 17 de octubre de 2026 y actualizado ese mismo dia. El repositorio esta etiquetado con la licencia `openrail` y la region `us`, ocupa 0,1 GB y no cuenta con descargas ni likes en el momento de la consulta. La model card no contiene mas informacion que la declaracion de licencia: no se documenta arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
-Por tanto, no es posible determinar que problema resuelve el modelo ni que innovaciones tecnicas incorpora. El unico dato cuantitativo disponible es el tamano del repositorio (0,1 GB), que es coherente con un modelo de parametros reducidos o con pesos almacenados en una precision baja, pero esta inferencia no queda confirmada por ninguna especificacion publicada. Tampoco se indica el pipeline de HuggingFace asociado ni los formatos de pesos incluidos.
+Por tanto, no es posible determinar que problema resuelve el modelo ni que innovaciones tecnicas incorpora. El unico dato cuantitativo disponible es el tamano del repositorio (0,1 GB), que es coherente con un modelo de parametros reducidos o con pesos almacenados en una precision baja, pero esta inferencia no queda confirmada por ninguna especificacion publicada. Tampoco se indica el pipeline de Hugging Face asociado ni los formatos de pesos incluidos.
 
 Su relevancia actual es limitada: se trata de un artefacto sin documentacion ni metricas publicas, por lo que cualquier evaluacion seria requiere descargar los pesos y caracterizarlos directamente. Se recomienda tratar la ficha como un punto de partida para una inspeccion local, no como una fuente de especificaciones.
 
@@ -48,7 +48,7 @@ Los siguientes escenarios son condicionales y estan planteados sobre lo unico ve
 
 - Evaluacion interna previa a la adopcion: descargar los pesos, identificar el formato real de los ficheros y ejecutar una bateria propia de prompts para determinar si el modelo genera texto coherente antes de considerarlo en cualquier pipeline.
 - Prueba de integracion con motores de inferencia: validar si los pesos cargan en llama.cpp, Ollama, vLLM o TGI, lo que permite descartar rapidamente el artefacto si el formato no es compatible con el stack existente.
-- Docencia y experimentacion con repositorios minimos: usar el repositorio como ejemplo de estructura de publicacion en HuggingFace (metadatos, licencia y ausencia de model card) en formacion sobre buenas practicas de publicacion de modelos.
+- Docencia y experimentacion con repositorios minimos: usar el repositorio como ejemplo de estructura de publicacion en Hugging Face (metadatos, licencia y ausencia de model card) en formacion sobre buenas practicas de publicacion de modelos.
 - Auditoria de licencias: revisar la clausula `openrail` declarada e identificar la variante exacta (OpenRAIL, OpenRAIL-M, OpenRAIL++ u otra) antes de cualquier uso, dado que estas licencias incorporan restricciones de uso que deben mapearse contra la politica interna de la organizacion.
 - Analisis de procedencia y trazabilidad de artefactos: incorporar el repositorio a un inventario de modelos con campos obligatorios (arquitectura, contexto, licencia, evaluaciones) para ilustrar los riesgos de aceptar artefactos sin model card.
 - Pruebas de carga y contencion de recursos: al desconocerse el numero de parametros, el repositorio sirve para ensayar procedimientos de medicion de VRAM y latencia en un entorno controlado antes de asignar presupuesto de GPU a un modelo concreto.
@@ -82,12 +82,12 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 - Ausencia total de model card: no hay informacion sobre arquitectura, entrenamiento, datos, sesgos ni evaluaciones, lo que impide una evaluacion de riesgos previa a produccion.
 - Riesgo de alucinacion: no evaluado. Al desconocerse el entrenamiento y la alineacion, no se puede acotar la tasa de fabricacion de hechos.
 - Sesgos conocidos: no documentados. Sin informacion sobre la composicion del corpus ni sobre filtros de datos, no es posible estimar sesgos de genero, idioma, cultura o dominio.
-- Limitaciones de contexto e idioma: se desconoce la ventana de contexto y los idiomas soportados; el campo de idiomas aparece vacio en los metadatos de HuggingFace.
+- Limitaciones de contexto e idioma: se desconoce la ventana de contexto y los idiomas soportados; el campo de idiomas aparece vacio en los metadatos de Hugging Face.
 - Licencia: se declara `openrail`, una familia de licencias que habitualmente incorpora clausulas de restriccion de uso ademas de los terminos de redistribucion. La variante exacta no esta identificada en la informacion disponible, por lo que debe verificarse el texto licenciado antes de cualquier uso comercial.
 - Idoneidad para produccion: nula con la informacion actual. No hay senales de adopcion (0 descargas, 0 likes), ni pipeline declarado, ni formatos documentados.
 - Trazabilidad: el repositorio se creo y actualizo en el mismo minuto, sin historial de versiones documentado, lo que dificulta atribuir los pesos a un proceso de entrenamiento verificable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whoisotna/v1sd
+- Modelo en Hugging Face: https://huggingface.co/whoisotna/v1sd
 - Otros enlaces (paper, blog, repositorio de codigo, demo): no disponible en la informacion proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HelixLM es una familia de modelos de lenguaje presentada en la model card como mantenida por Nimbus AI Lab, y publicada en HuggingFace bajo el identificador `dusersad12/HelixLM-CheckpointHub`. Segun la documentacion del autor, la version mas reciente del modelo mejora su profundidad de razonamiento e inferencia mediante un mayor uso de recursos de computo y mecanismos de optimizacion algoritmica aplicados en la fase de post-entrenamiento. El dato mas concreto que aporta la model card es la evolucion en GPQA-Diamond 2025, donde la precision pasa del 58 % en la version anterior al 76,5 % en la actual, acompanada de un aumento del numero medio de tokens de razonamiento por pregunta (de 9K a 21K).
+HelixLM es una familia de modelos de lenguaje presentada en la model card como mantenida por Nimbus AI Lab, y publicada en Hugging Face bajo el identificador `dusersad12/HelixLM-CheckpointHub`. Segun la documentacion del autor, la version mas reciente del modelo mejora su profundidad de razonamiento e inferencia mediante un mayor uso de recursos de computo y mecanismos de optimizacion algoritmica aplicados en la fase de post-entrenamiento. El dato mas concreto que aporta la model card es la evolucion en GPQA-Diamond 2025, donde la precision pasa del 58 % en la version anterior al 76,5 % en la actual, acompanada de un aumento del numero medio de tokens de razonamiento por pregunta (de 9K a 21K).
 
-A pesar de la narrativa de la model card, el repositorio de HuggingFace esta practicamente vacio: el tamano del repo es de 0,0 GB, acumula 0 descargas y 0 likes, y no se publica ninguna ficha de pesos, configuracion, tokenizador ni numero de parametros. Esto impide verificar la existencia real de artefactos desplegables y determinar aspectos basicos como arquitectura, longitud de contexto o tipos de cuantizacion disponibles. La unica informacion tecnica utilizable es la plantilla de la model card, que ademas emplea nombres genericos para los modelos de comparacion ("Model1", "Model2", "Model1-v2").
+A pesar de la narrativa de la model card, el repositorio de Hugging Face esta practicamente vacio: el tamano del repo es de 0,0 GB, acumula 0 descargas y 0 likes, y no se publica ninguna ficha de pesos, configuracion, tokenizador ni numero de parametros. Esto impide verificar la existencia real de artefactos desplegables y determinar aspectos basicos como arquitectura, longitud de contexto o tipos de cuantizacion disponibles. La unica informacion tecnica utilizable es la plantilla de la model card, que ademas emplea nombres genericos para los modelos de comparacion ("Model1", "Model2", "Model1-v2").
 
 Existe una posible confusion adicional: los resultados de busqueda web apuntan a un repositorio de GitHub (`david-thrower/HelixLM`) que describe un "recurrent heterogeneous graph neural LLM" con attention hibrida y Mamba-2, orientado a IA hiperpersonalizada y en dispositivo. No hay evidencia en la informacion proporcionada de que ese proyecto y el modelo publicado por `dusersad12` sean el mismo, por lo que no debe asumirse una relacion entre ambos.
 
@@ -106,7 +106,7 @@ No es posible establecer una comparativa fiable. La model card incluye tres colu
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene pesos, configuracion ni tokenizador (0,0 GB), por lo que el modelo no es desplegable en su estado actual.
+- El repositorio de Hugging Face no contiene pesos, configuracion ni tokenizador (0,0 GB), por lo que el modelo no es desplegable en su estado actual.
 - El repo acumula 0 descargas y 0 likes, sin senales de validacion por parte de la comunidad.
 - No se declara el numero de parametros, la arquitectura ni la longitud de contexto, lo que impide cualquier evaluacion de recursos o de idoneidad tecnica.
 - La tabla de benchmarks emplea etiquetas genericas para los modelos comparados y, en la mayoria de categorias, HelixLM obtiene puntuaciones inferiores a las de referencia, lo que contradice el resumen cualitativo de la propia model card.
@@ -120,9 +120,9 @@ No es posible establecer una comparativa fiable. La model card incluye tres colu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/HelixLM-CheckpointHub
+- Hugging Face: https://huggingface.co/dusersad12/HelixLM-CheckpointHub
 - Repositorio de GitHub con nombre coincidente (relacion no confirmada): https://github.com/david-thrower/HelixLM
 - Repositorio de GitHub, rama principal: https://github.com/david-thrower/HelixLM/tree/main
-- Otro repositorio del mismo autor en HuggingFace: https://huggingface.co/dusersad12/BestCheckpoint-Demo
-- Plataforma de HuggingFace: https://huggingface.co/
+- Otro repositorio del mismo autor en Hugging Face: https://huggingface.co/dusersad12/BestCheckpoint-Demo
+- Plataforma de Hugging Face: https://huggingface.co/
 - Etiqueta de checkpoints en Civitai (referencia generica, no relacionada con este modelo): https://civitai.com/tag/checkpoint

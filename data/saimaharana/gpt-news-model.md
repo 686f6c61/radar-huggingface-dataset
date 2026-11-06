@@ -2,11 +2,11 @@
 
 ## Resumen
 
-gpt-news-model es un checkpoint de clasificación de texto publicado por el usuario saimaharana en HuggingFace. Se trata de un ajuste fino (fine-tuning) supervisado de distilgpt2, la versión destilada de GPT-2, sobre un dataset que el autor no identifica en la model card (el nombre sugiere un corpus de noticias, pero no se confirma en ningún momento). El repositorio es de tipo `transformers` con pesos en `safetensors`, tiene licencia Apache 2.0 y ocupa 0,3 GB.
+gpt-news-model es un checkpoint de clasificación de texto publicado por el usuario saimaharana en Hugging Face. Se trata de un ajuste fino (fine-tuning) supervisado de distilgpt2, la versión destilada de GPT-2, sobre un dataset que el autor no identifica en la model card (el nombre sugiere un corpus de noticias, pero no se confirma en ningún momento). El repositorio es de tipo `transformers` con pesos en `safetensors`, tiene licencia Apache 2.0 y ocupa 0,3 GB.
 
 Técnicamente es un modelo pequeño: 81.915.648 parámetros totales (unos 82 millones), lo que lo sitúa en la gama de modelos que se pueden ejecutar en CPU o en cualquier GPU de consumo, incluso en hardware integrado. La model card declara unas métricas de evaluación de accuracy 0,898, F1 ponderado 0,8982 y F1 macro 0,8984, junto con una pérdida de 0,2710, aunque no especifica el conjunto de evaluación ni el número de clases.
 
-Su relevancia práctica es limitada y muy acotada: no es un modelo generativo de propósito general, sino un clasificador de secuencia entrenado con `Trainer` de HuggingFace. Resulta útil como baseline barato para tareas de clasificación de textos periodísticos o como punto de partida reproducible en experimentos de ajuste fino, pero la ausencia de documentación sobre el dataset, las etiquetas y los idiomas limita seriamente su uso en producción sin una validación previa.
+Su relevancia práctica es limitada y muy acotada: no es un modelo generativo de propósito general, sino un clasificador de secuencia entrenado con `Trainer` de Hugging Face. Resulta útil como baseline barato para tareas de clasificación de textos periodísticos o como punto de partida reproducible en experimentos de ajuste fino, pero la ausencia de documentación sobre el dataset, las etiquetas y los idiomas limita seriamente su uso en producción sin una validación previa.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ Su relevancia práctica es limitada y muy acotada: no es un modelo generativo de
 
 La arquitectura subyacente es la de distilgpt2: un transformer decoder-only de 6 capas con mecanismo de atención causal, destilado a partir de GPT-2 mediante knowledge distillation. Sobre ese backbone, este checkpoint añade la cabeza de clasificación de secuencia estándar de `transformers` (`AutoModelForSequenceClassification`), de modo que el modelo recibe una secuencia de texto y devuelve una distribución de probabilidad sobre un conjunto de clases no documentado. El tokenizador es el de GPT-2 (BPE), por lo que el preprocesado del texto debe respetar ese esquema.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace durante 3 épocas, con tasa de aprendizaje 2e-05, scheduler lineal, batch de 16 tanto en entrenamiento como en evaluación, semilla 42 y optimizador AdamW fusionado (`betas=(0.9, 0.999)`, `epsilon=1e-08`). A partir de los registros (150 pasos por época con batch de 16) puede estimarse un conjunto de entrenamiento de aproximadamente 2400 ejemplos por época, aunque el autor no confirma esta cifra. La model card indica literalmente que el modelo se ajustó "sobre un dataset desconocido" y deja las secciones de descripción, usos previstos y datos de evaluación como "More information needed".
+El entrenamiento se realizó con el `Trainer` de Hugging Face durante 3 épocas, con tasa de aprendizaje 2e-05, scheduler lineal, batch de 16 tanto en entrenamiento como en evaluación, semilla 42 y optimizador AdamW fusionado (`betas=(0.9, 0.999)`, `epsilon=1e-08`). A partir de los registros (150 pasos por época con batch de 16) puede estimarse un conjunto de entrenamiento de aproximadamente 2400 ejemplos por época, aunque el autor no confirma esta cifra. La model card indica literalmente que el modelo se ajustó "sobre un dataset desconocido" y deja las secciones de descripción, usos previstos y datos de evaluación como "More information needed".
 
 No se documenta ningún tipo de alineación posterior al ajuste supervisado (no hay RLHF, DPO ni decodificación especulativa). Tampoco hay innovaciones técnicas destacables: es un ajuste fino convencional con hiperparámetros por defecto. Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
 
@@ -86,7 +86,7 @@ Nota: existe una discrepancia entre las métricas de la tabla de entrenamiento (
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt-news-model (este) | 81,9 M | 1024 tokens | Clasificación de texto | Apache 2.0 | HuggingFace, 0 descargas |
+| gpt-news-model (este) | 81,9 M | 1024 tokens | Clasificación de texto | Apache 2.0 | Hugging Face, 0 descargas |
 | distilgpt2 (modelo base) | 82 M | 1024 tokens | Generación de texto | Apache 2.0 | Ampliamente usado y documentado |
 | GPT-2 (124 M) | 124 M | 1024 tokens | Generación de texto | MIT | Referencia histórica, muy extendido |
 | distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Clasificación de sentimiento | Apache 2.0 | Muy extendido, con dataset y etiquetas documentados |
@@ -108,7 +108,7 @@ La diferencia clave frente a alternativas como el DistilBERT ajustado para SST-2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saimaharana/gpt-news-model
+- Modelo en Hugging Face: https://huggingface.co/saimaharana/gpt-news-model
 - Modelo base distilgpt2: https://huggingface.co/distilgpt2
 - Documentación del `Trainer` de transformers (mencionado como generador de la model card): https://huggingface.co/docs/transformers/main_classes/trainer
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la información disponible.

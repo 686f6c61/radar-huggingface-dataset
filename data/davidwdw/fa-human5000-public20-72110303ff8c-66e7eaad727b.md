@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-human5000-public20-72110303ff8c-66e7eaad727b` es un archivo versionado publicado en HuggingFace por el usuario `davidwdw`. Por la propia model card, se trata de un paquete de artefactos de evaluacion (tier "results+videos+policy-traces+logs+config") asociado a una receta concreta identificada como `evaluations/2026-09-24_b1k_task00_human5000_10000_full20_eai`. No se describe en ningun momento un modelo con pesos entrenados, sino una instantanea de resultados y trazas de un proceso de evaluacion de flota ("fleet archive").
+El repositorio `davidwdw/fa-human5000-public20-72110303ff8c-66e7eaad727b` es un archivo versionado publicado en Hugging Face por el usuario `davidwdw`. Por la propia model card, se trata de un paquete de artefactos de evaluacion (tier "results+videos+policy-traces+logs+config") asociado a una receta concreta identificada como `evaluations/2026-09-24_b1k_task00_human5000_10000_full20_eai`. No se describe en ningun momento un modelo con pesos entrenados, sino una instantanea de resultados y trazas de un proceso de evaluacion de flota ("fleet archive").
 
 Por tanto, no estamos ante una ficha de modelo en el sentido habitual: no hay arquitectura declarada, ni numero de parametros, ni tokenizador, ni pesos en safetensors o GGUF. El tamano del repositorio es de 0,1 GB, coherente con un conjunto de logs, videos y ficheros de configuracion, y no con los pesos de una red neuronal de gran tamano.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - No procede recomendar GPU (A100, H100, RTX 4090 ni otras) porque no hay proceso de inferencia asociado.
 - No procede valorar si cabe en GPU de consumo: no hay modelo que cargar.
 - Almacenamiento: aproximadamente 0,1 GB para el paquete completo, segun el tamano declarado del repositorio.
-- Herramientas necesarias: cliente de descarga de HuggingFace (por ejemplo `huggingface-cli` o `git-lfs`) y una utilidad de verificacion de sumas (`sha256sum`), dado que el autor exige comprobar el fichero SHA256SUMS y usar la revision exacta.
+- Herramientas necesarias: cliente de descarga de Hugging Face (por ejemplo `huggingface-cli` o `git-lfs`) y una utilidad de verificacion de sumas (`sha256sum`), dado que el autor exige comprobar el fichero SHA256SUMS y usar la revision exacta.
 - Latencia y throughput: no disponibles, por no existir una carga de trabajo de inferencia definida.
 
 ## Comparativa con modelos similares
@@ -85,6 +85,6 @@ No disponible. Este repositorio no es un modelo de lenguaje o multimodal, sino u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-human5000-public20-72110303ff8c-66e7eaad727b
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-human5000-public20-72110303ff8c-66e7eaad727b
 - Receta canonica referenciada en la model card: `evaluations/2026-09-24_b1k_task00_human5000_10000_full20_eai` (no se proporciona URL)
 - No se han encontrado en la informacion disponible papers, blogs, repositorios de codigo ni demos adicionales asociados a este artefacto.

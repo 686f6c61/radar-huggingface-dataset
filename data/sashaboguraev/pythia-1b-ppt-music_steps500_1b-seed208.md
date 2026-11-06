@@ -4,7 +4,7 @@
 
 Este modelo es un checkpoint de la familia Pythia-1B, concretamente una versión fine-tuneada para generación de música. El nombre del repositorio (`pythia-1b-ppt-music_steps500_1b-seed208`) sugiere que se ha entrenado durante 500 pasos con una semilla concreta (208) sobre una tarea de música, probablemente utilizando la técnica PPT (Prompt Programming Tuning) o similar. El autor es sashaboguraev, aunque no se proporciona información adicional sobre la metodología de entrenamiento ni el dataset utilizado.
 
-El modelo se basa en la arquitectura GPT-NeoX, con aproximadamente 1.011 millones de parámetros y una ventana de contexto de 2048 tokens. Está disponible en formato safetensors y es compatible con la librería transformers de HuggingFace, así como con soluciones de inferencia como text-generation-inference. La relevancia de este modelo radica en su especialización en una tarea concreta (música) a partir de una base generalista, lo que puede resultar útil para experimentos de fine-tuning y evaluación de técnicas de adaptación de modelos.
+El modelo se basa en la arquitectura GPT-NeoX, con aproximadamente 1.011 millones de parámetros y una ventana de contexto de 2048 tokens. Está disponible en formato safetensors y es compatible con la librería transformers de Hugging Face, así como con soluciones de inferencia como text-generation-inference. La relevancia de este modelo radica en su especialización en una tarea concreta (música) a partir de una base generalista, lo que puede resultar útil para experimentos de fine-tuning y evaluación de técnicas de adaptación de modelos.
 
 La información disponible es muy limitada: la model card está prácticamente vacía y no se han publicado detalles sobre el entrenamiento, los datos utilizados, los benchmarks o las capacidades específicas. Esto obliga a tratar el modelo con cautela y a considerar que la mayor parte de las especificaciones técnicas no están disponibles públicamente.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: con 1.011 millones de parámetros en FP16, el modelo ocupa aproximadamente 2 GB de VRAM. En FP32 serían unos 4 GB. Con cuantización a 8 bits, se podría reducir a ~1 GB, aunque no se han publicado archivos cuantizados.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16. Una RTX 3060, RTX 4060 o superior sería suficiente. Para FP32, se recomienda al menos 6 GB de VRAM.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en GPUs de consumo medio y bajo.
-- Opciones de despliegue: transformers (HuggingFace), text-generation-inference, vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se convierte a GGUF).
+- Opciones de despliegue: transformers (Hugging Face), text-generation-inference, vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se convierte a GGUF).
 - Latencia y throughput: no disponible. Para un modelo de 1B en una GPU moderna, se puede esperar una latencia de decodificación de decenas de milisegundos por token, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa se limita a otros checkpoints del mismo autor y al modelo base Py
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-music_steps500_1b-seed208
+- Repositorio Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-music_steps500_1b-seed208
 - Variante con 100 pasos: https://huggingface.co/sashaboguraev/pythia-1b-ppt-music_steps100_1b-seed208
 - Variante control (500 pasos): https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed208
 - Variante control (500 pasos, seed 324): https://free2aitools.com/model/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed324

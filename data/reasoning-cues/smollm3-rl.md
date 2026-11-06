@@ -69,8 +69,8 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| reasoning-cues/smollm3-rl | Adaptador LoRA de RL (GRPO/RLVR) sobre SmolLM3-3B-Base | Aprox. 3B (base) + adaptador de 0,5 GB | No disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes | No publicado |
-| HuggingFaceTB/SmolLM3-3B-Base | Modelo base completo, decoder-only | Aprox. 3B | No disponible en la informacion proporcionada | Apache-2.0 | HuggingFace (referenciado como base) | No disponible en esta ficha |
+| reasoning-cues/smollm3-rl | Adaptador LoRA de RL (GRPO/RLVR) sobre SmolLM3-3B-Base | Aprox. 3B (base) + adaptador de 0,5 GB | No disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes | No publicado |
+| HuggingFaceTB/SmolLM3-3B-Base | Modelo base completo, decoder-only | Aprox. 3B | No disponible en la informacion proporcionada | Apache-2.0 | Hugging Face (referenciado como base) | No disponible en esta ficha |
 | Otros instruct de ~3B (por ejemplo Qwen, Llama) | Modelo completo con ajuste por instrucciones | Aprox. 3B | No disponible | Variables segun modelo | Ampliamente disponibles | No comparable con los datos disponibles |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reasoning-cues/smollm3-rl
+- Modelo en Hugging Face: https://huggingface.co/reasoning-cues/smollm3-rl
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
 - Libreria PEFT: https://huggingface.co/docs/peft
 - Libreria TRL (GRPO): https://huggingface.co/docs/trl

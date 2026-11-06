@@ -55,5 +55,5 @@ No disponible. No se conocen modelos comparables en la misma categoría debido a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r525-loveaffine-offline-dpo-hialpha-midrank-lobeta-extrasteps-lora
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r525-loveaffine-offline-dpo-hialpha-midrank-lobeta-extrasteps-lora
 - Modelo base (referenciado): https://huggingface.co/justice101/affine-5dz2gkonkn-loveaffine (no verificado)

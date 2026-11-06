@@ -63,5 +63,5 @@ No disponible. No existen modelos comparables en el repositorio, y la informaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ryanlopez/paper_017035577_text_image_retrieval
+- Repositorio en Hugging Face: https://huggingface.co/ryanlopez/paper_017035577_text_image_retrieval
 - No se encontraron otros enlaces relevantes en la búsqueda web (los resultados genéricos de Google Scholar, Google Images, OpenAI Research y un repositorio de GitHub no están relacionados con este artefacto).

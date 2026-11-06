@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rNavarrete/biz-critic-qwen3-1.7b-v2-n12` es un ajuste fino (fine-tuning) del modelo Qwen3-1.7B, publicado por el usuario rNavarrete en HuggingFace. Se trata de un modelo de generacion de texto de pequeno tamano (1.700 millones de parametros) derivado de la version cuantizada en 4 bits de Unsloth (`unsloth/Qwen3-1.7B-unsloth-bnb-4bit`), entrenado con la libreria Unsloth y TRL. El nombre del repositorio sugiere un proposito de critica o evaluacion de negocios ("biz-critic"), aunque la model card no documenta la tarea concreta ni el dataset de entrenamiento.
+`rNavarrete/biz-critic-qwen3-1.7b-v2-n12` es un ajuste fino (fine-tuning) del modelo Qwen3-1.7B, publicado por el usuario rNavarrete en Hugging Face. Se trata de un modelo de generacion de texto de pequeno tamano (1.700 millones de parametros) derivado de la version cuantizada en 4 bits de Unsloth (`unsloth/Qwen3-1.7B-unsloth-bnb-4bit`), entrenado con la libreria Unsloth y TRL. El nombre del repositorio sugiere un proposito de critica o evaluacion de negocios ("biz-critic"), aunque la model card no documenta la tarea concreta ni el dataset de entrenamiento.
 
 El modelo hereda la arquitectura transformer de la familia Qwen3, con soporte nativo de tool calling, razonamiento multi-paso y modo "thinking" segun las capacidades de la familia base. Al estar basado en Qwen3-1.7B, ofrece un contexto nativo de 32.768 tokens (extensible hasta 131.072 mediante YaRN en la familia Qwen3, aunque no se confirma en esta ficha). Es relevante para desarrolladores que necesiten un modelo ligero, desplegable en GPU de consumo, con licencia Apache 2.0 permisiva y capacidad de ejecutarse en entornos con recursos limitados.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rNavarrete/biz-critic-qwen3-1.7b-v2-n12 | 1.7B | no disponible (familia Qwen3: 32.768) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 1.7B | 32.768 (extensible a 131.072 con YaRN) | Apache 2.0 | HuggingFace, Ollama |
-| meta-llama/Llama-3.2-1B | 1.2B | 131.072 | Llama 3.2 Community License | HuggingFace, Ollama |
-| google/gemma-2-2b | 2.6B | 8.192 | Gemma Terms of Use | HuggingFace, Ollama |
+| rNavarrete/biz-critic-qwen3-1.7b-v2-n12 | 1.7B | no disponible (familia Qwen3: 32.768) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 1.7B | 32.768 (extensible a 131.072 con YaRN) | Apache 2.0 | Hugging Face, Ollama |
+| meta-llama/Llama-3.2-1B | 1.2B | 131.072 | Llama 3.2 Community License | Hugging Face, Ollama |
+| google/gemma-2-2b | 2.6B | 8.192 | Gemma Terms of Use | Hugging Face, Ollama |
 
 No se dispone de datos de rendimiento comparativo porque el autor no ha publicado benchmarks. La comparativa se limita a parametros, contexto y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo porque el autor no ha publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rNavarrete/biz-critic-qwen3-1.7b-v2-n12
+- Modelo en Hugging Face: https://huggingface.co/rNavarrete/biz-critic-qwen3-1.7b-v2-n12
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-1.7B-unsloth-bnb-4bit
 - Modelo original Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

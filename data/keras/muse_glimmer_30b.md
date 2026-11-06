@@ -84,11 +84,11 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/keras/muse_glimmer_30b
+- Repositorio Hugging Face: https://huggingface.co/keras/muse_glimmer_30b
 - Model card oficial de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Model card del drafter DFlash: https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant
 - Paper: https://arxiv.org/abs/2610.24628
-- Organizacion Meta Models en HuggingFace: https://huggingface.co/meta-models
+- Organizacion Meta Models en Hugging Face: https://huggingface.co/meta-models
 - Guia de inicio de KerasHub: https://keras.io/guides/keras_hub/getting_started/
 - Guia de publicacion de modelos en KerasHub: https://keras.io/guides/keras_hub/upload/
 - Repositorio de KerasHub: https://github.com/keras-team/keras-hub

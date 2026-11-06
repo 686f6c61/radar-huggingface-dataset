@@ -79,7 +79,7 @@ La comparativa se basa en el modelo base y en alternativas conocidas; no hay dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Realmbird/qwen25_7b-cat_dpo_deepjudge
+- Hugging Face: https://huggingface.co/Realmbird/qwen25_7b-cat_dpo_deepjudge
 - DeepJudge (plataforma relacionada por nombre): https://www.deepjudge.ai/
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de Qwen2.5-Omni (referencia general de Qwen): https://github.com/QwenLM/Qwen2.5-Omni (no directamente relacionado, pero informacion general)

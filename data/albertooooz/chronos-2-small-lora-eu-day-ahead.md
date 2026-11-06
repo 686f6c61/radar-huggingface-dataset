@@ -78,10 +78,10 @@ El autor indica que el fichero `eval_results.json` del repositorio contiene las 
 
 | Modelo | Tipo | Cobertura | Contexto / horizonte | MASE (PL, holdout) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| chronos-2-small LoRA EU day-ahead | Adaptador LoRA | 42 zonas ENTSO-E (sin DE_AT_LU) | 2048 / 24 h | 0,611 (sin covariables) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| chronos-2-small (zero-shot) | Modelo fundacional | Multidominio | 2048 / 24 h segun configuracion del adaptador | 0,843 (sin covariables) | Segun modelo base | HuggingFace (`autogluon/chronos-2-small`) |
-| chronos-2 (zero-shot) | Modelo fundacional | Multidominio | No disponible | 0,824 (sin covariables) | Segun modelo base | HuggingFace |
-| albertooooz/chronos-2-small-lora-pl-day-ahead | Adaptador LoRA | Polonia | No disponible | No disponible | No disponible | HuggingFace |
+| chronos-2-small LoRA EU day-ahead | Adaptador LoRA | 42 zonas ENTSO-E (sin DE_AT_LU) | 2048 / 24 h | 0,611 (sin covariables) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| chronos-2-small (zero-shot) | Modelo fundacional | Multidominio | 2048 / 24 h segun configuracion del adaptador | 0,843 (sin covariables) | Segun modelo base | Hugging Face (`autogluon/chronos-2-small`) |
+| chronos-2 (zero-shot) | Modelo fundacional | Multidominio | No disponible | 0,824 (sin covariables) | Segun modelo base | Hugging Face |
+| albertooooz/chronos-2-small-lora-pl-day-ahead | Adaptador LoRA | Polonia | No disponible | No disponible | No disponible | Hugging Face |
 
 El adaptador hermano para Polonia existe y comparte protocolo de evaluacion (walk-forward sobre PL con la misma semilla y numero de origenes), segun la model card, pero no se han facilitado sus cifras de MASE en la informacion disponible. Las comparaciones entre adaptadores regionales, por tanto, no pueden cuantificarse con los datos actuales.
 
@@ -100,7 +100,7 @@ El adaptador hermano para Polonia existe y comparte protocolo de evaluacion (wal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/albertooooz/chronos-2-small-lora-eu-day-ahead
+- Modelo en Hugging Face: https://huggingface.co/albertooooz/chronos-2-small-lora-eu-day-ahead
 - Modelo base: https://huggingface.co/autogluon/chronos-2-small
 - Adaptador hermano para Polonia: https://huggingface.co/albertooooz/chronos-2-small-lora-pl-day-ahead
 - Perfil del autor: https://huggingface.co/albertooooz

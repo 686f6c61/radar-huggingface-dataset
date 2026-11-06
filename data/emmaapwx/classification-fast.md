@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emmaapwx/classification-fast` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura Albef a escala nano para tareas de clasificación. El modelo lo desarrolla el usuario `emmaapwx` y, según su propia model card, no se trata de un checkpoint entrenado ni evaluado, sino de una inicialización válida pensada para pruebas de humo (smoke tests) que permitan inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta.
+`emmaapwx/classification-fast` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura Albef a escala nano para tareas de clasificación. El modelo lo desarrolla el usuario `emmaapwx` y, según su propia model card, no se trata de un checkpoint entrenado ni evaluado, sino de una inicialización válida pensada para pruebas de humo (smoke tests) que permitan inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta.
 
 El tamaño real declarado en el fichero de pesos safetensors es de solo 49.600 parámetros, lo que lo sitúa muy por debajo de cualquier modelo utilizable en producción y confirma su carácter de andamiaje de código más que de modelo funcional. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emmaapwx/classification-fast | 49.600 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | MIT | HuggingFace, 0 descargas |
+| emmaapwx/classification-fast | 49.600 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | MIT | Hugging Face, 0 descargas |
 | ALBEF (Salesforce, original) | ~210 M | no disponible en esta ficha | benchmarks multimodales publicados en su paper | licencia propia de Salesforce | pesos públicos en el repositorio de Salesforce |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ La comparación con ALBEF original es únicamente nominal (comparten el nombre d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emmaapwx/classification-fast
+- Hugging Face: https://huggingface.co/emmaapwx/classification-fast
 - Paper o blog del autor: no disponible
-- Repositorio de código independiente: no disponible (el código se distribuye dentro del propio repositorio de HuggingFace como `train.py`)
+- Repositorio de código independiente: no disponible (el código se distribuye dentro del propio repositorio de Hugging Face como `train.py`)
 - Demo: no disponible

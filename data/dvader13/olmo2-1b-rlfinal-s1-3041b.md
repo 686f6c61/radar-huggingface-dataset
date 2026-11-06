@@ -71,7 +71,7 @@ No se dispone de una comparativa directa porque este checkpoint no es un modelo 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-3041b
+- Repositorio de Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-3041b
 - GitHub OLMo (AI2): https://github.com/allenai/OLMo
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Modelo base Instruct OLMo-2-0425-1B-Instruct: https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lfrodriguesza/multitask-best13-2023` es un repositorio de HuggingFace que contiene una implementación funcional de la arquitectura EfficientFormer en configuración "nano" orientada a tareas multitarea. Lo publica el usuario `lfrodriguesza` y su propósito declarado no es ofrecer un modelo listo para producción, sino servir como código transparente y como base para pruebas de humo (smoke tests) reproducibles. El autor indica explícitamente que no reclama ninguna puntuación de benchmark.
+`lfrodriguesza/multitask-best13-2023` es un repositorio de Hugging Face que contiene una implementación funcional de la arquitectura EfficientFormer en configuración "nano" orientada a tareas multitarea. Lo publica el usuario `lfrodriguesza` y su propósito declarado no es ofrecer un modelo listo para producción, sino servir como código transparente y como base para pruebas de humo (smoke tests) reproducibles. El autor indica explícitamente que no reclama ninguna puntuación de benchmark.
 
 El artefacto principal es `predict.py`, acompañado de `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors`, que según la propia model card es un checkpoint de inicialización válido, no un modelo entrenado. El recuento real de parámetros del checkpoint es de 49.600, una cifra coherente con una configuración nano de carácter experimental y muy alejada de los modelos de lenguaje de gran escala.
 
@@ -77,7 +77,7 @@ No se dispone de datos comparativos en la información proporcionada. El reposit
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lfrodriguesza/multitask-best13-2023` | 49.600 | No aplica (no es modelo de lenguaje) | No se reclama ningún benchmark | BSD-3-Clause | HuggingFace, 0 descargas |
+| `lfrodriguesza/multitask-best13-2023` | 49.600 | No aplica (no es modelo de lenguaje) | No se reclama ningún benchmark | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,13 +88,13 @@ No se dispone de datos comparativos en la información proporcionada. El reposit
 - Sesgos conocidos: no disponibles; al no existir entrenamiento documentado, no puede caracterizarse ningún sesgo de datos.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, ya que no es un modelo de lenguaje; sí existe el riesgo de interpretar erróneamente sus salidas como predicciones válidas cuando en realidad provienen de pesos sin entrenar.
 - Limitaciones de contexto e idioma: no aplica, al no ser un modelo de lenguaje ni declarar idiomas soportados.
-- Al ser una implementación personalizada, las APIs de carga automática de HuggingFace y de otros frameworks requieren un adaptador explícito.
+- Al ser una implementación personalizada, las APIs de carga automática de Hugging Face y de otros frameworks requieren un adaptador explícito.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con obligación de conservar el aviso de copyright y la cláusula de exención de responsabilidad; el propio autor recomienda revisar por separado los términos de los datos de origen si se emplean conjuntos de datos externos.
 - Para producción: no debe desplegarse como componente de inferencia real sin un entrenamiento previo documentado y una evaluación con al menos tres semillas sobre un conjunto reservado, junto con una línea base de capacidad equivalente.
 - El repositorio tiene 0 descargas y 0 likes, por lo que carece de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lfrodriguesza/multitask-best13-2023
+- Modelo en Hugging Face: https://huggingface.co/lfrodriguesza/multitask-best13-2023
 - Archivos incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FloorGen es un sistema de generacion de planos de planta vectoriales publicado en HuggingFace por el autor Kumar Mrinal (usuario mrinal22258) bajo el identificador `mrinal22258/floorgen`. No es un modelo de lenguaje ni un modelo fundacional de pesos unicos, sino un pipeline multi-etapa que combina recuperacion aumentada (RAG) sobre un corpus de planos reales, difusion de coordenadas continuas y un solucionador combinatorio de restricciones para producir geometria CAD regularizada. La version documentada en la model card es la 1.3.0.
+FloorGen es un sistema de generacion de planos de planta vectoriales publicado en Hugging Face por el autor Kumar Mrinal (usuario mrinal22258) bajo el identificador `mrinal22258/floorgen`. No es un modelo de lenguaje ni un modelo fundacional de pesos unicos, sino un pipeline multi-etapa que combina recuperacion aumentada (RAG) sobre un corpus de planos reales, difusion de coordenadas continuas y un solucionador combinatorio de restricciones para producir geometria CAD regularizada. La version documentada en la model card es la 1.3.0.
 
 El sistema indexa los conjuntos de datos RPLAN (80.788 planos) y ResPlan mediante un almacen vectorial denso FAISS de 384 dimensiones combinado con un grafo topologico relacional, y genera las coordenadas de las habitaciones con un nucleo de difusion DDIM condicionado por atencion cruzada y capas RGCN. Despues extrae las lineas centrales de los muros, decodifica el raster con un VQ-VAE de 512 entradas de libro de codigos y aplica Google OR-Tools CP-SAT para garantizar el no solapamiento de estancias y las areas minimas, con un tiempo de resolucion declarado inferior a 8 ms.
 
@@ -22,11 +22,11 @@ Su relevancia radica en que se presenta como una plataforma 100% local y sin cos
 | Formato de pesos | no disponible (la model card no declara checkpoints ni formato de pesos) |
 | Desarrollador | Kumar Mrinal (mrinal22258) |
 | Version declarada | 1.3.0 |
-| Fecha de creacion segun HuggingFace | 2026-09-20 |
+| Fecha de creacion segun Hugging Face | 2026-09-20 |
 | Ultima actualizacion | 2026-09-20 |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Formatos de salida | AutoCAD DXF (9 capas), SVG vectorial escalable, IFC BIM (ISO-16739) |
 | Entorno de ejecucion | Docker con soporte CUDA, Python 3.10 / 3.11 / 3.12, FastAPI v1.3.0, Gradio 4.44.0 |
 | Dependencias principales | FAISS, Google OR-Tools CP-SAT, VQ-VAE, servidor local Ollama con un modelo Qwen |
@@ -94,7 +94,7 @@ La informacion proporcionada no incluye datos comparativos con alternativas. El 
 
 | Sistema | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FloorGen 1.3.0 | no disponible | no disponible | 53/53 tests, 94,1% IRC/IBC, CP-SAT < 8 ms | MIT | Repositorio HuggingFace con 0,0 GB y 0 descargas |
+| FloorGen 1.3.0 | no disponible | no disponible | 53/53 tests, 94,1% IRC/IBC, CP-SAT < 8 ms | MIT | Repositorio Hugging Face con 0,0 GB y 0 descargas |
 | GSDiff (citado como inspiracion) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otras alternativas de generacion de planos (HouseDiffusion, RPLAN como dataset de referencia) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -102,7 +102,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Limitaciones y advertencias
 
-- El repositorio figura con 0,0 GB de tamano y 0 descargas: no hay evidencia de que los pesos o checkpoints esten publicados, lo que impide reproducir el sistema solo con la informacion de HuggingFace.
+- El repositorio figura con 0,0 GB de tamano y 0 descargas: no hay evidencia de que los pesos o checkpoints esten publicados, lo que impide reproducir el sistema solo con la informacion de Hugging Face.
 - La model card esta truncada: la descripcion de la etapa 5 (verificacion de cumplimiento de codigo y evaluacion en tiempo real) aparece cortada, por lo que se desconoce como se calcula y sobre que normativa exacta se aplica el 94,1% declarado.
 - No se documentan los detalles de entrenamiento del nucleo de difusion (datos, perdida, pasos, procedimiento de ajuste), lo que limita la evaluacion tecnica independiente.
 - El cumplimiento IRC/IBC declarado es del 94,1%, es decir, existe un margen aproximado del 5,9% de casos no conformes; cualquier salida debe pasar por revision de un profesional cualificado antes de su uso real.
@@ -110,13 +110,13 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Los conjuntos de datos empleados (RPLAN y ResPlan) tienen sus propias condiciones de uso que no se explicitan; la licencia MIT del repositorio no cubre necesariamente dichos datos ni los modelos derivados de ellos.
 - Riesgo de alucinacion geometrica: aunque el solucionador CP-SAT impone restricciones duras de no solapamiento y area, la etapa de difusion puede generar topologias o muros fisicamente inconsistentes que el postprocesado no siempre corrija.
 - No se declara ninguna limitacion de idioma, sesgo demografico ni cobertura geografica de los planos generados; el corpus RPLAN procede de una tipologia residencial concreta, lo que puede sesgar las distribuciones hacia ese estilo.
-- Las fechas de creacion y actualizacion indicadas por HuggingFace (2026-09-20) son inconsistentes con la fecha de consulta habitual y conviene verificarlas antes de citarlas.
+- Las fechas de creacion y actualizacion indicadas por Hugging Face (2026-09-20) son inconsistentes con la fecha de consulta habitual y conviene verificarlas antes de citarlas.
 - No hay informacion sobre tool calling, agentes, vision, audio ni soporte multilingue; no debe asumirse ninguna de estas capacidades.
 - Los resultados de busqueda web asociados a esta consulta no guardan relacion con el modelo y no aportan verificacion externa alguna.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrinal22258/floorgen
+- Hugging Face: https://huggingface.co/mrinal22258/floorgen
 - Perfil del autor en GitHub: https://github.com/mrinal22258
 - Paper de arquitectura formal citado en la model card: `paper.pdf` (referenciado de forma relativa, sin URL absoluta disponible)
 - Documentacion de la API REST declarada por el autor: http://localhost:8000/docs (solo tras despliegue local)

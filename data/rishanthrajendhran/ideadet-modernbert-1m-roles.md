@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ideadet-modernbert-1m-roles`, publicado por Rishanth Rajendhran, es un clasificador de texto construido sobre la arquitectura ModernBERT, especializado en la detección de roles dentro de textos (posiblemente roles discursivos, argumentativos o de otro tipo, aunque la descripción no lo especifica). Se trata de un modelo de tipo encoder-only, con 395,8 millones de parámetros, lo que lo sitúa en la gama de los modelos BERT grandes pero lejos de los decodificadores multimillonarios. Su licencia Apache 2.0 permite uso comercial sin restricciones, aunque el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo `ideadet-modernbert-1m-roles`, publicado por Rishanth Rajendhran, es un clasificador de texto construido sobre la arquitectura ModernBERT, especializado en la detección de roles dentro de textos (posiblemente roles discursivos, argumentativos o de otro tipo, aunque la descripción no lo especifica). Se trata de un modelo de tipo encoder-only, con 395,8 millones de parámetros, lo que lo sitúa en la gama de los modelos BERT grandes pero lejos de los decodificadores multimillonarios. Su licencia Apache 2.0 permite uso comercial sin restricciones, aunque el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de este modelo reside en su base ModernBERT, que incorpora mejoras arquitectónicas como embeddings rotatorios (RoPE), atención alternada y capas GeGLU, permitiendo un contexto de hasta 8192 tokens, muy superior a los 512 del BERT original. Esto lo hace adecuado para tareas de clasificación sobre documentos largos, aunque no se han publicado métricas específicas de este fine-tune. Al ser un modelo de clasificación de texto, su pipeline es `text-classification` y su formato de pesos es safetensors.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: al ser un modelo encoder de ~396M parámetros en fp32, el peso ocupa aproximadamente 1,6 GB (tamaño del repo). En fp16 sería ~0,8 GB. Para inferencia, la VRAM necesaria depende del tamaño del lote y la longitud de secuencia. Con secuencias de 8192 tokens, se recomienda al menos 8 GB de VRAM para evitar OOM, aunque para secuencias cortas (512 tokens) 4 GB podrían ser suficientes.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM, como RTX 3070/3080, RTX 4060 Ti, o GPUs de datacenter como A10, T4 o V100. En una RTX 4090 (24 GB) se podrían procesar lotes grandes o secuencias máximas sin problemas.
 - Si cabe en consumer GPU: sí, en GPUs de consumo con 8 GB o más, siempre que se use fp16 o cuantización (aunque no se ofrecen pesos cuantizados en el repo).
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, se puede cargar con la librería `transformers` de Python. Para servir en producción, se puede usar HuggingFace Inference Endpoints, o frameworks como ONNX Runtime o TensorRT si se convierte el modelo. No se han publicado archivos GGUF (típicos de llama.cpp), por lo que no es directamente compatible con Ollama.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, se puede cargar con la librería `transformers` de Python. Para servir en producción, se puede usar Hugging Face Inference Endpoints, o frameworks como ONNX Runtime o TensorRT si se convierte el modelo. No se han publicado archivos GGUF (típicos de llama.cpp), por lo que no es directamente compatible con Ollama.
 - Latencia y throughput: no disponibles. Como referencia, un modelo BERT de tamaño similar procesa cientos de secuencias cortas por segundo en una GPU moderna, pero esto depende del hardware y la longitud de secuencia.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ La comparativa se basa en arquitecturas conocidas, pero no hay datos de rendimie
 ## Limitaciones y advertencias
 
 - No se dispone de documentación sobre el dataset de entrenamiento, el número de clases ni el significado exacto de las etiquetas "roles". Esto dificulta evaluar su idoneidad para casos de uso concretos.
-- El acceso al modelo está restringido (gated), lo que añade una barrera de entrada: hay que solicitar acceso en HuggingFace y esperar aprobación.
+- El acceso al modelo está restringido (gated), lo que añade una barrera de entrada: hay que solicitar acceso en Hugging Face y esperar aprobación.
 - No se han publicado benchmarks ni métricas de evaluación, por lo que no se puede cuantificar su precisión, recall o F1. Existe riesgo de sesgos derivados del dataset de entrenamiento, que no se han documentado.
 - La fecha de creación (2026-08-31) es inusual y no se puede verificar la fiabilidad del modelo ni su mantenimiento futuro.
 - Al ser un modelo encoder, no genera texto: solo clasifica. No sirve para tareas de generación o conversación.
@@ -76,8 +76,8 @@ La comparativa se basa en arquitecturas conocidas, pero no hay datos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-roles
-- Perfil del autor en HuggingFace: https://huggingface.co/rishanthrajendhran
+- Modelo en Hugging Face: https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-roles
+- Perfil del autor en Hugging Face: https://huggingface.co/rishanthrajendhran
 - Sitio web del autor: https://rishanthrajendhran.github.io/
 - Repositorio de ModernBERT (AnswerDotAI): https://github.com/AnswerDotAI/ModernBERT
 - Paper de ModernBERT (arXiv): https://arxiv.org/abs/2412.13663

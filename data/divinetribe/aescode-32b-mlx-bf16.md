@@ -76,9 +76,9 @@ AesCode-32B supera al Qwen3-VL-32B del mismo orden de magnitud en 22,4 puntos de
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Overall en el benchmark de AesCode | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AesCode-32B-MLX-bf16 (esta publicacion) | 33,4B | no disponible | safetensors MLX / mlx-vlm | apache-2.0 | 85,89 (mismos pesos) | HuggingFace, 0 descargas, 0 likes |
-| microsoft/AesCode-32B | 33,4B | no disponible | safetensors (PyTorch) | apache-2.0 | 85,89 | HuggingFace |
-| Qwen3-VL-32B-Instruct | 32B (segun denominacion; no confirmado) | no disponible | no disponible | no disponible | 61,10 (con referencia) | HuggingFace |
+| AesCode-32B-MLX-bf16 (esta publicacion) | 33,4B | no disponible | safetensors MLX / mlx-vlm | apache-2.0 | 85,89 (mismos pesos) | Hugging Face, 0 descargas, 0 likes |
+| microsoft/AesCode-32B | 33,4B | no disponible | safetensors (PyTorch) | apache-2.0 | 85,89 | Hugging Face |
+| Qwen3-VL-32B-Instruct | 32B (segun denominacion; no confirmado) | no disponible | no disponible | no disponible | 61,10 (con referencia) | Hugging Face |
 | Claude Opus 4.8 | no disponible | no disponible | API propietaria | propietaria | 76,78 (sin referencia) | API comercial |
 | GPT-5.5 | no disponible | no disponible | API propietaria | propietaria | 76,31 (sin referencia) | API comercial |
 
@@ -98,7 +98,7 @@ La ventaja diferencial de esta publicacion frente a microsoft/AesCode-32B no es 
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/divinetribe/AesCode-32B-MLX-bf16
+- Hugging Face (esta conversion): https://huggingface.co/divinetribe/AesCode-32B-MLX-bf16
 - Modelo original: https://huggingface.co/microsoft/AesCode-32B
 - Modelo base del fine-tune: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Paper "AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards": https://arxiv.org/abs/2610.18860

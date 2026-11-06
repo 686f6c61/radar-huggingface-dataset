@@ -78,7 +78,7 @@ En la información proporcionada no se incluyen datos de benchmarks comparativos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AyoubChLin/bert-hc3-human-vs-ai
+- Hugging Face: https://huggingface.co/AyoubChLin/bert-hc3-human-vs-ai
 - Dataset HC3: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Perfil del autor: https://huggingface.co/AyoubChLin

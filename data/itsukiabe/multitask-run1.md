@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itsukiabe/multitask-run1` es un repositorio experimental publicado en HuggingFace por el usuario itsukiabe que contiene un esqueleto de codigo para una arquitectura tipo **Mixer** orientada a tareas multiples (multitask). No se trata de un modelo entrenado ni de un checkpoint listo para produccion: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El artefacto principal es `train.py`, no los pesos.
+`itsukiabe/multitask-run1` es un repositorio experimental publicado en Hugging Face por el usuario itsukiabe que contiene un esqueleto de codigo para una arquitectura tipo **Mixer** orientada a tareas multiples (multitask). No se trata de un modelo entrenado ni de un checkpoint listo para produccion: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El artefacto principal es `train.py`, no los pesos.
 
 El modelo declara una escala "xlarge" con atencion flash, fusion tipo Tucker, activacion GELU y normalizacion ScaleNorm. El recuento real de parametros en safetensors es de **33.088** parametros totales, un valor extremadamente bajo que confirma que se trata de una inicializacion minima, no de un modelo funcional de gran escala. El tamano del repositorio es de 0.0 GB.
 
@@ -75,4 +75,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsukiabe/multitask-run1
+- Modelo en Hugging Face: https://huggingface.co/itsukiabe/multitask-run1

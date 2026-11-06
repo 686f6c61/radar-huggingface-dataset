@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para una comparativa directa con otros m
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/XXMiner/ScoreVision_carwash)
+- [Modelo en Hugging Face](https://huggingface.co/XXMiner/ScoreVision_carwash)
 - [Modelos del autor XXMiner](https://huggingface.co/XXMiner/models)
 - [Datasets del autor XXMiner](https://huggingface.co/XXMiner/datasets)
 - [Repositorio Score Vision (Subnet 44)](https://github.com/score-technologies/score-vision)

@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks del modelo en la información proporcionada
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/cyankiwi/Spark-X2.5-4B-AWQ-INT4
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/cyankiwi/Spark-X2.5-4B-AWQ-INT4
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Dataset de calibración de cyankiwi: https://huggingface.co/datasets/cyankiwi/calibration
 - Slack de la comunidad: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw

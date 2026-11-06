@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART `press_stapler` (este) | no disponible | no disponible | Pulsar grapadora (vista amplia, yaw +30) | Apache 2.0 | HuggingFace, 0 descargas |
+| π0.5 SNUMPR DART `press_stapler` (este) | no disponible | no disponible | Pulsar grapadora (vista amplia, yaw +30) | Apache 2.0 | Hugging Face, 0 descargas |
 | `snumpr-iclr27-v1/9999` (base SNUMPR VLA) | no disponible | no disponible | VLA generalista SNUMPR | no disponible | Referenciado como base |
 | Preset `pi05_snumpr_dart_paired_source_press_stapler` | no disponible | no disponible | Fuente de la mezcla DART (yaw 0) | no disponible | Parte del flujo descrito |
 | π0.5 original (openpi) | no disponible | no disponible | VLA generalista | no disponible | Ecosistema openpi |
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes; la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-press-stapler-20261030
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-press-stapler-20261030
 - Codigo de adaptacion: `Donghyun1228/vla_adaptation` (commit `c4fcb61`)
 - Implementacion DART: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`)
 - Modelo base: `snumpr-iclr27-v1/9999`

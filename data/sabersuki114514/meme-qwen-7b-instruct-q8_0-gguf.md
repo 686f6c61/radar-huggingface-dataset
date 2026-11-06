@@ -84,10 +84,10 @@ Nota: la comparativa con alternativas de la misma categoria (otros adaptadores L
 
 ## Enlaces
 
-- HuggingFace (este adaptador): https://huggingface.co/sabersuki114514/Meme-Qwen-7B-Instruct-Q8_0-GGUF
+- Hugging Face (este adaptador): https://huggingface.co/sabersuki114514/Meme-Qwen-7B-Instruct-Q8_0-GGUF
 - Modelo base del adaptador: https://huggingface.co/GaryYang123/Meme-Qwen-7B-Instruct
 - Espacio de conversion GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentacion del servidor llama.cpp: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md
 - Repositorio QwenLM/Qwen3 (referencia de la familia Qwen): https://github.com/QwenLM/Qwen3
 - Ficha de Meme-Qwen-7B-Instruct en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/meme-qwen-7b-instruct-garyyang123
-- Pagina de modelos Qwen en HuggingFace: https://huggingface.co/models?sort=trending&search=qwen
+- Pagina de modelos Qwen en Hugging Face: https://huggingface.co/models?sort=trending&search=qwen

@@ -4,7 +4,7 @@
 
 El modelo `GarchenArchive/wav2vec2-xls-r-300m-rinpoche` es un sistema de reconocimiento automático de voz (ASR) afinado para el idioma tibetano. Desarrollado por el usuario GarchenArchive, parte del modelo base multilingüe `facebook/wav2vec2-xls-r-300m`, al que se le ha aplicado un ajuste fino con una cabeza de clasificación CTC. El objetivo es transcribir audio en tibetano a texto, un idioma de bajos recursos donde los sistemas ASR comerciales suelen tener un rendimiento limitado.
 
-Arquitectónicamente es un modelo de tipo Wav2Vec2 (Transformer de audio) con 315.572.995 parámetros en total. No se dispone de información sobre la longitud de contexto ni sobre la composición del dataset de entrenamiento. El modelo está etiquetado con la categoría `automatic-speech-recognition` y el idioma `bo` (tibetano). Su acceso en HuggingFace es restringido (gated), por lo que es necesario aceptar las condiciones del repositorio para poder utilizarlo.
+Arquitectónicamente es un modelo de tipo Wav2Vec2 (Transformer de audio) con 315.572.995 parámetros en total. No se dispone de información sobre la longitud de contexto ni sobre la composición del dataset de entrenamiento. El modelo está etiquetado con la categoría `automatic-speech-recognition` y el idioma `bo` (tibetano). Su acceso en Hugging Face es restringido (gated), por lo que es necesario aceptar las condiciones del repositorio para poder utilizarlo.
 
 ## Especificaciones técnicas
 
@@ -28,11 +28,11 @@ El ajuste fino se ha realizado sobre el modelo base `facebook/wav2vec2-xls-r-300
 ## Capacidades
 
 - Reconocimiento automático de voz en tibetano: transcribe audio hablado en tibetano a texto.
-- Soporte de pipeline de ASR mediante la librería `transformers` de HuggingFace.
+- Soporte de pipeline de ASR mediante la librería `transformers` de Hugging Face.
 - Procesamiento de señales de audio de entrada, sin capacidades de generación de texto libre.
 - No soporta tool calling, function calling ni razonamiento multi-step.
 - No incluye capacidades de visión ni generación de texto multimodal.
-- Compatible con la integración en endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con la integración en endpoints de Hugging Face (`endpoints_compatible`).
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No se dispone de información sobre otros modelos ASR específicos para tibetano
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio está marcado como gated, por lo que se debe aceptar condiciones adicionales en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido: el repositorio está marcado como gated, por lo que se debe aceptar condiciones adicionales en Hugging Face antes de poder descargar el modelo.
 - Licencia no disponible: al no estar especificada, existe incertidumbre sobre las restricciones de uso comercial o redistribución.
 - Idioma limitado: el modelo está entrenado únicamente para tibetano; no soporta reconocimiento de voz en otros idiomas.
 - Sesgos potenciales: no se documenta la composición del dataset de entrenamiento, por lo que pueden existir sesgos hacia variedades dialectales, acentos o registros específicos del tibetano.
@@ -76,5 +76,5 @@ No se dispone de información sobre otros modelos ASR específicos para tibetano
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/GarchenArchive/wav2vec2-xls-r-300m-rinpoche](https://huggingface.co/GarchenArchive/wav2vec2-xls-r-300m-rinpoche)
+- Hugging Face: [https://huggingface.co/GarchenArchive/wav2vec2-xls-r-300m-rinpoche](https://huggingface.co/GarchenArchive/wav2vec2-xls-r-300m-rinpoche)
 - Modelo base: [https://huggingface.co/facebook/wav2vec2-xls-r-300m](https://huggingface.co/facebook/wav2vec2-xls-r-300m)

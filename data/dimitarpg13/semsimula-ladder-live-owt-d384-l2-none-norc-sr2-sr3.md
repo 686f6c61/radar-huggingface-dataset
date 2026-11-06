@@ -87,11 +87,11 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas de r
 
 | Modelo | Parámetros | Contexto | Perplejidad (OpenWebText, bloque 512) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SR3-crit (este modelo) | No disponible | 512 | 63,28 (asentada) | CC-BY-4.0 | Pesos PyTorch en HuggingFace |
-| SemSimula SR2 | No disponible (misma arquitectura, sin parámetros añadidos) | 512 | 58,32 (asentada) | CC-BY-4.0 | Pesos PyTorch en HuggingFace |
-| SemSimula ζ(h) aprendido | No disponible (añade parámetros de amortiguamiento aprendido) | 512 | 59,29 (asentada) | CC-BY-4.0 | Pesos PyTorch en HuggingFace |
-| SemSimula FO-b | No disponible (variante de primer orden, sin velocidad) | 512 | 61,16 (asentada) | CC-BY-4.0 | Pesos PyTorch en HuggingFace |
-| GPT-2 small (referencia transformer) | 124 M | 1.024 | No medida en este pipeline | MIT | Pesos en HuggingFace |
+| SR3-crit (este modelo) | No disponible | 512 | 63,28 (asentada) | CC-BY-4.0 | Pesos PyTorch en Hugging Face |
+| SemSimula SR2 | No disponible (misma arquitectura, sin parámetros añadidos) | 512 | 58,32 (asentada) | CC-BY-4.0 | Pesos PyTorch en Hugging Face |
+| SemSimula ζ(h) aprendido | No disponible (añade parámetros de amortiguamiento aprendido) | 512 | 59,29 (asentada) | CC-BY-4.0 | Pesos PyTorch en Hugging Face |
+| SemSimula FO-b | No disponible (variante de primer orden, sin velocidad) | 512 | 61,16 (asentada) | CC-BY-4.0 | Pesos PyTorch en Hugging Face |
+| GPT-2 small (referencia transformer) | 124 M | 1.024 | No medida en este pipeline | MIT | Pesos en Hugging Face |
 
 No se dispone de comparaciones publicadas frente a transformers entrenados con el mismo presupuesto de tokens y el mismo corpus en la información proporcionada.
 
@@ -112,7 +112,7 @@ No se dispone de comparaciones publicadas frente a transformers entrenados con e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-sr3
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-sr3
 - Modelo de referencia SR2: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2
 - Variante con amortiguamiento aprendido ζ(h): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-gzh
 - Variante de primer orden FO-b: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-fob

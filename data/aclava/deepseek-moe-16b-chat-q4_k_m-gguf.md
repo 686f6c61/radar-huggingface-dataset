@@ -77,7 +77,7 @@ La comparativa muestra que DeepSeek-MoE-16B se sitúa entre los modelos densos d
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/aclava/deepseek-moe-16b-chat-Q4_K_M-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/aclava/deepseek-moe-16b-chat-Q4_K_M-GGUF
 - Modelo original: https://huggingface.co/deepseek-ai/deepseek-moe-16b-chat
 - Código fuente y paper de DeepSeek-MoE: https://github.com/deepseek-ai/DeepSeek-MoE
 - Licencia del modelo: https://github.com/deepseek-ai/DeepSeek-MoE/blob/main/LICENSE-MODEL

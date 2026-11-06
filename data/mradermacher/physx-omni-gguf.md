@@ -92,8 +92,8 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/PhysX-Omni-GGUF
-- Repositorio HuggingFace (cuantizaciones imatrix): https://huggingface.co/mradermacher/PhysX-Omni-i1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/PhysX-Omni-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/PhysX-Omni-i1-GGUF
 - Modelo base: https://huggingface.co/ACERobotics/PhysX-Omni
 - Pagina resumen de cuantizaciones del autor: https://hf.tst.eu/model#PhysX-Omni-GGUF
 - Dataset Caoza/PhysX-Mobility: https://huggingface.co/datasets/Caoza/PhysX-Mobility

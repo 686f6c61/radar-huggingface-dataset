@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid for Contrastive es un repositorio de implementacion de referencia publicado por el usuario isarodr04 en HuggingFace bajo el identificador `isarodr04/hybrid-contrastive-tiny`. No se trata de un modelo entrenado ni de un checkpoint con capacidades demostradas: la propia model card lo describe como un "initialization checkpoint" valido para pruebas de humo (smoke tests), con codigo transparente y reproducible, y sin ninguna afirmacion de rendimiento. El repositorio contiene un script Python (`pipeline.py`), un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un fichero `model.safetensors` de inicializacion.
+Hybrid for Contrastive es un repositorio de implementacion de referencia publicado por el usuario isarodr04 en Hugging Face bajo el identificador `isarodr04/hybrid-contrastive-tiny`. No se trata de un modelo entrenado ni de un checkpoint con capacidades demostradas: la propia model card lo describe como un "initialization checkpoint" valido para pruebas de humo (smoke tests), con codigo transparente y reproducible, y sin ninguna afirmacion de rendimiento. El repositorio contiene un script Python (`pipeline.py`), un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un fichero `model.safetensors` de inicializacion.
 
 El peso real del checkpoint, segun los metadatos de safetensors, es de 24.832 parametros, una cifra extremadamente reducida (del orden de decenas de miles). Esto contradice la etiqueta "large" que figura en la configuracion de arquitectura del autor, lo que sugiere que dicha etiqueta es un nombre de perfil de configuracion y no una indicacion de tamano real. El repositorio ocupa 0,0 GB y no registra descargas ni "likes" en el momento de la consulta.
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, la model card es explicita: el fichero `model.safete
 - Pruebas de humo de infraestructura: el checkpoint sirve para verificar que un pipeline de carga de safetensors, tokenizacion (si aplica) y ejecucion en GPU o CPU funciona de extremo a extremo antes de invertir en modelos grandes. Su tamano de 24.832 parametros hace que el ciclo de prueba sea casi instantaneo.
 - Plantilla de investigacion reproducible: el par `pipeline.py` + `config.json` + `training_args.json` permite partir de una receta versionada y modificarla de forma controlada, registrando semillas y versiones de entorno como pide el autor.
 - Estudio de arquitecturas hibridas: util para experimentar con la interaccion entre atencion multi-query y fusion bilineal en tareas de similitud o recuperacion, comparando contra una linea base de capacidad equivalente.
-- Educacion y prototipado: sirve para explicar la estructura de un repositorio de modelo en HuggingFace (config, safetensors, argumentos de entrenamiento) sin el coste de computo de un modelo real.
+- Educacion y prototipado: sirve para explicar la estructura de un repositorio de modelo en Hugging Face (config, safetensors, argumentos de entrenamiento) sin el coste de computo de un modelo real.
 - Integracion en CI/CD de herramientas de ML: al ocupar 0,0 GB, se puede incluir como fixture en tests automatizados que validen el adaptador de carga personalizado exigido por la implementacion.
 - Base para aprendizaje contrastivo propio: un equipo podria entrenar el modelo con su propio dataset de pares (texto-texto, imagen-texto o similares) y publicar resultados en un checkpoint separado, tal y como recomienda la model card.
 - Referencia para auditoria de licencias: con licencia MIT, puede reutilizarse en experimentos internos y comerciales sin friccion, revisando aparte los terminos de los datos externos que se le suministren.
@@ -75,12 +75,12 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 - Riesgo de alucinacion: no evaluable, al no existir pesos entrenados ni evaluacion publicada.
 - Sesgos conocidos: no disponibles; no se ha realizado ninguna evaluacion al respecto.
 - Inconsistencia documental: la etiqueta de escala "large" en la configuracion no se corresponde con los 24.832 parametros reales ni con el sufijo "tiny" del identificador. Conviene tratarla como un nombre de perfil, no como una medida de capacidad.
-- Carga no estandar: las APIs automaticas de HuggingFace requieren un adaptador explicito para esta implementacion personalizada.
+- Carga no estandar: las APIs automaticas de Hugging Face requieren un adaptador explicito para esta implementacion personalizada.
 - Licencia: MIT, permisiva y apta para uso comercial. No obstante, el propio autor advierte de que deben revisarse por separado los terminos de los datos de origen si se combina el repositorio con datasets externos.
 - Produccion: no apto. No debe desplegarse en ningun sistema que requiera calidad de salida, y cualquier resultado obtenido a partir de un checkpoint futuro entrenado deberia documentarse de forma separada a los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/isarodr04/hybrid-contrastive-tiny
+- Hugging Face: https://huggingface.co/isarodr04/hybrid-contrastive-tiny
 - Ficheros del repositorio: `pipeline.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (ajustes de experimento por defecto), `model.safetensors` (checkpoint de inicializacion).
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por la busqueda no guardan ninguna relacion con este modelo ni con su dominio tecnico, por lo que se omiten. No se dispone de paper, blog, repositorio adicional ni demo asociados.

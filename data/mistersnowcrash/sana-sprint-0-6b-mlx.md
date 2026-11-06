@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Pasos de difusion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sana Sprint 0.6B MLX (este) | 0.6B + Gemma-2-2B-it | 1024 px | 2 | Apache 2.0 + Gemma Terms | HuggingFace (MLX) |
-| Sana Sprint 0.6B (original) | 0.6B + text encoder original | 1024 px | 2 | Apache 2.0 | HuggingFace (diffusers) |
-| SDXL Turbo / Lightning (referencia) | ~2.6B | 1024 px | 1-4 | varía (CreativeML / OpenRAIL) | HuggingFace |
+| Sana Sprint 0.6B MLX (este) | 0.6B + Gemma-2-2B-it | 1024 px | 2 | Apache 2.0 + Gemma Terms | Hugging Face (MLX) |
+| Sana Sprint 0.6B (original) | 0.6B + text encoder original | 1024 px | 2 | Apache 2.0 | Hugging Face (diffusers) |
+| SDXL Turbo / Lightning (referencia) | ~2.6B | 1024 px | 1-4 | varía (CreativeML / OpenRAIL) | Hugging Face |
 
 La comparativa con SDXL Turbo/Lightning es orientativa: no se dispone de datos de benchmarks de esta conversión que permitan comparar calidad o latencia de forma rigurosa.
 
@@ -81,7 +81,7 @@ La comparativa con SDXL Turbo/Lightning es orientativa: no se dispone de datos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MisterSnowCrash/sana-sprint-0.6b-mlx
+- Hugging Face: https://huggingface.co/MisterSnowCrash/sana-sprint-0.6b-mlx
 - Modelo base Sana Sprint 0.6B 1024px: https://huggingface.co/Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers
 - Text encoder Gemma-2-2B-it: https://huggingface.co/google/gemma-2-2b-it
 - Gemma 4-bit MLX: https://huggingface.co/mlx-community/gemma-2-2b-it-4bit

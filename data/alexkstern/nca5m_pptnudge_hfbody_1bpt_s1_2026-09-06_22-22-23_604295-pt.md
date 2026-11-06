@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nca5M_pptnudge_hfbody_1Bpt_s1 | no disponible | 2048 | Apache 2.0 | HuggingFace |
-| nca_dose_1Bpt_hfbody_5M_s1 (mismo autor) | no disponible | 2048 | Apache 2.0 | HuggingFace |
+| nca5M_pptnudge_hfbody_1Bpt_s1 | no disponible | 2048 | Apache 2.0 | Hugging Face |
+| nca_dose_1Bpt_hfbody_5M_s1 (mismo autor) | no disponible | 2048 | Apache 2.0 | Hugging Face |
 
 No se disponen de datos de rendimiento ni benchmarks para una comparacion significativa entre estos modelos. No se conocen modelos comparables con datos publicados en la informacion disponible.
 
@@ -79,6 +79,6 @@ No se disponen de datos de rendimiento ni benchmarks para una comparacion signif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca5M_pptnudge_hfbody_1Bpt_s1_2026-09-06_22-22-23_604295-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca5M_pptnudge_hfbody_1Bpt_s1_2026-09-06_22-22-23_604295-pt
 - Repositorio de nanochat: https://github.com/karpathy/nanochat
 - Registro de Weights & Biases: https://wandb.ai/alexksternteam/ppt_nudge_probe_v0/runs/5lovoxt4

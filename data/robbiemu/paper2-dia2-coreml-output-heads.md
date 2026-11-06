@@ -99,7 +99,7 @@ Comparaciones adicionales con alternativas de la misma categoría (mismo tamaño
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robbiemu/paper2-dia2-coreml-output-heads
+- Repositorio en Hugging Face: https://huggingface.co/robbiemu/paper2-dia2-coreml-output-heads
 - Modelo base nari-labs/Dia2-2B: https://huggingface.co/nari-labs/Dia2-2B
 - Revisión fijada del modelo base: https://huggingface.co/nari-labs/Dia2-2B/tree/7abae125471a73b0fc6b9d413cb15f4ae1e771d8
 - Dataset de evidencia de despliegue Core ML TTS (registro de experimentos, no dataset de entrenamiento): https://huggingface.co/datasets/robbiemu/coreml-tts-deployment-evidence
@@ -111,5 +111,5 @@ Comparaciones adicionales con alternativas de la misma categoría (mismo tamaño
 - Integridad y procedencia: `manifest.json`; verificación mediante `python restore.py --verify`
 - Metadatos del alcance en formato legible por máquina: `release_metadata.json`
 - Licencias y avisos del proyecto original: directorio `licenses/` y fichero `LICENSE`
-- Documentación del analizador de metadatos de Safetensors de HuggingFace: https://huggingface.co/docs/safetensors/metadata_parsing
+- Documentación del analizador de metadatos de Safetensors de Hugging Face: https://huggingface.co/docs/safetensors/metadata_parsing
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web realizada.

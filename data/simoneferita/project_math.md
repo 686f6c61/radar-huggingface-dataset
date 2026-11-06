@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: un modelo de ~2B parámetros en cuantización Q4_K_M ocupa aproximadamente 1,2-1,5 GB de memoria, más overhead de contexto. Con 4 GB de VRAM (por ejemplo, GTX 1650, RTX 3050) es suficiente para ejecución con contexto moderado.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (RTX 3050, RTX 3060, GTX 1660) o GPUs de datacenter como A10, T4. También funciona en CPU con llama.cpp, aunque la velocidad será menor.
 - Compatibilidad con consumer GPU: sí, cabe en la mayoría de tarjetas gráficas de consumo actuales e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (con safetensors), TGI, o directamente con transformers de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM (con safetensors), TGI, o directamente con transformers de Hugging Face.
 - Latencia y throughput: no se dispone de mediciones oficiales. Como referencia, un modelo de 2B en Q4 en una RTX 3060 puede generar entre 20 y 40 tokens por segundo, y en CPU moderna (8 núcleos) entre 5 y 10 tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativos. La ventaja principal de `pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/simoneFerita/project_math
+- Hugging Face: https://huggingface.co/simoneFerita/project_math
 - Repositorio GitHub: https://github.com/simoneFerita/project_math
-- Perfil del autor en HuggingFace: https://huggingface.co/simoneFerita
+- Perfil del autor en Hugging Face: https://huggingface.co/simoneFerita
 - Perfil del autor en GitHub: https://github.com/simoneFerita/

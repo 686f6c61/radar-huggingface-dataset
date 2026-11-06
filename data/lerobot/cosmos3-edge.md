@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cosmos3-Edge (publicado en HuggingFace como `lerobot/cosmos3-edge`) es la conversión a formato de política de LeRobot del checkpoint base Cosmos3-Edge de NVIDIA. No se trata de un modelo de lenguaje general, sino de un modelo de fundación para robótica: predice conjuntamente *chunks* de acciones del robot y latentes de vídeo futuros a partir de instrucciones en lenguaje y observaciones de cámara actuales, con condicionamiento opcional por el estado actual del robot. Su propósito es servir como punto de partida para post-entrenamiento de políticas robóticas, sin ningún fine-tuning específico de tarea incluido.
+Cosmos3-Edge (publicado en Hugging Face como `lerobot/cosmos3-edge`) es la conversión a formato de política de LeRobot del checkpoint base Cosmos3-Edge de NVIDIA. No se trata de un modelo de lenguaje general, sino de un modelo de fundación para robótica: predice conjuntamente *chunks* de acciones del robot y latentes de vídeo futuros a partir de instrucciones en lenguaje y observaciones de cámara actuales, con condicionamiento opcional por el estado actual del robot. Su propósito es servir como punto de partida para post-entrenamiento de políticas robóticas, sin ningún fine-tuning específico de tarea incluido.
 
 El backbone es un Nemotron 3 Dense VL MoT (Mixture-of-Transformers) con 28 capas de decodificador y anchura oculta de 2048, y almacena 4.563.688.396 pesos escalares (incluyendo componentes congelados y un VAE Wan2.2). Es relevante ahora porque integra en el ecosistema LeRobot las capacidades de generación de vídeo y acción de la familia Cosmos de NVIDIA, permitiendo a desarrolladores de robótica hacer post-entrenamiento sobre un modelo base multimodal con recetas documentadas (DROID y LIBERO).
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lerobot/cosmos3-edge | 4,56 mil millones (pesos almacenados) | Política vídeo-acción para robótica (MoT) | OpenMDW 1.1 | HuggingFace, LeRobot |
-| nvidia/Cosmos3-Edge (checkpoint original) | no disponible | Modelo base Cosmos3 upstream | OpenMDW 1.1 | HuggingFace |
-| Otras políticas de LeRobot (p. ej. pi0, SmolVLA) | no disponible | Políticas de manipulación VLA | no disponible | HuggingFace, LeRobot |
+| lerobot/cosmos3-edge | 4,56 mil millones (pesos almacenados) | Política vídeo-acción para robótica (MoT) | OpenMDW 1.1 | Hugging Face, LeRobot |
+| nvidia/Cosmos3-Edge (checkpoint original) | no disponible | Modelo base Cosmos3 upstream | OpenMDW 1.1 | Hugging Face |
+| Otras políticas de LeRobot (p. ej. pi0, SmolVLA) | no disponible | Políticas de manipulación VLA | no disponible | Hugging Face, LeRobot |
 
 No hay datos de rendimiento comparables publicados para esta conversión base, por lo que la comparativa se limita a parámetros y disponibilidad.
 
@@ -78,7 +78,7 @@ No hay datos de rendimiento comparables publicados para esta conversión base, p
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/lerobot/cosmos3-edge
+- Ficha en Hugging Face: https://huggingface.co/lerobot/cosmos3-edge
 - Checkpoint original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Edge/tree/344d602b128d1bbdacb43b08d0a3626f46343e29
 - Model card original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Edge/blob/344d602b128d1bbdacb43b08d0a3626f46343e29/README.md
 - Notas de seguridad upstream: https://huggingface.co/nvidia/Cosmos3-Edge/blob/344d602b128d1bbdacb43b08d0a3626f46343e29/SAFETY.md

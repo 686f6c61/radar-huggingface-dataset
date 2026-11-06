@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables de decisión entrenados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/key1739/connectailab-rl-connectailab-rl-coco-brain-v1
+- Modelo en Hugging Face: https://huggingface.co/key1739/connectailab-rl-connectailab-rl-coco-brain-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

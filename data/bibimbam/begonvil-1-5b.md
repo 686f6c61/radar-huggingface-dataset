@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Begonvil-1.5B es un modelo de generacion de texto de 1.500 millones de parametros publicado por el usuario BIBIMBAM en HuggingFace. Segun las etiquetas del repositorio, se construye sobre la arquitectura Qwen2 y ha sido ajustado mediante QLoRA, un dato coherente con el tamano reducido del modelo y con su orientacion declarada hacia recuperacion aumentada (RAG) y flujos de agentes. El repositorio contiene pesos en formato safetensors y declara el pipeline de text-generation.
+Begonvil-1.5B es un modelo de generacion de texto de 1.500 millones de parametros publicado por el usuario BIBIMBAM en Hugging Face. Segun las etiquetas del repositorio, se construye sobre la arquitectura Qwen2 y ha sido ajustado mediante QLoRA, un dato coherente con el tamano reducido del modelo y con su orientacion declarada hacia recuperacion aumentada (RAG) y flujos de agentes. El repositorio contiene pesos en formato safetensors y declara el pipeline de text-generation.
 
-La relevancia del modelo es limitada por su propio contexto de publicacion: cuenta con 88 descargas y ninguna marca de "me gusta" desde su creacion el 22 de octubre de 2026, y la informacion disponible en la ficha de HuggingFace es muy escasa. No se detallan el numero de tokens de entrenamiento, la composicion del dataset, la longitud de contexto soportada ni resultados de evaluacion, por lo que cualquier uso en produccion exige una validacion previa por parte del equipo que lo adopte.
+La relevancia del modelo es limitada por su propio contexto de publicacion: cuenta con 88 descargas y ninguna marca de "me gusta" desde su creacion el 22 de octubre de 2026, y la informacion disponible en la ficha de Hugging Face es muy escasa. No se detallan el numero de tokens de entrenamiento, la composicion del dataset, la longitud de contexto soportada ni resultados de evaluacion, por lo que cualquier uso en produccion exige una validacion previa por parte del equipo que lo adopte.
 
 Se trata, por tanto, de un modelo comunitario de nicho, probablemente derivado de un Qwen2-1.5B preentrenado o instruct y especializado mediante un ajuste QLoRA orientado a casos de uso de recuperacion y agentes. Su interes practico estaria en escenarios con recursos de GPU muy limitados donde se requiera un modelo pequeno, desplegable en consumer GPU y con licencia permisiva declarada.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Begonvil-1.5B | 1,5B | no disponible | apache-2.0 (etiqueta) | HuggingFace, 88 descargas | Ajuste QLoRA sobre Qwen2, orientado a RAG y agentes |
+| Begonvil-1.5B | 1,5B | no disponible | apache-2.0 (etiqueta) | Hugging Face, 88 descargas | Ajuste QLoRA sobre Qwen2, orientado a RAG y agentes |
 | Qwen2-1.5B / Qwen2-1.5B-Instruct | 1,5B | no disponible en esta ficha | Apache 2.0 | Ampliamente disponible | Modelo base de referencia de la familia; documentacion y evaluaciones publicas |
 | Qwen2.5-1.5B-Instruct | 1,5B | no disponible en esta ficha | Apache 2.0 | Ampliamente disponible | Generacion posterior de la familia, con mejoras declaradas por el autor |
 | TinyLlama-1.1B | 1,1B | no disponible en esta ficha | Apache 2.0 | Ampliamente disponible | Alternativa de tamano similar con comunidad amplia y variantes GGUF |
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento de Begonvil-1.5B que permitan una comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BIBIMBAM/Begonvil-1.5B
+- Hugging Face: https://huggingface.co/BIBIMBAM/Begonvil-1.5B
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo). El resto de resultados obtenidos no guardan relacion con el modelo y se han descartado.

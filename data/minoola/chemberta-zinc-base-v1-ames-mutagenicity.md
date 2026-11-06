@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minoola/chemberta-zinc-base-v1-ames-mutagenicity` es un modelo de la familia RoBERTa publicado en HuggingFace por el usuario `minoola`. Por su identificador, se trata de un modelo derivado de ChemBERTa (variante de RoBERTa preentrenada sobre el corpus quimico ZINC) y ajustado para la tarea de prediccion de mutagenicidad AMES. Sin embargo, la model card publicada no contiene texto alguno mas alla de la declaracion de licencia MIT, por lo que ni el procedimiento de ajuste ni el conjunto de datos de entrenamiento estan documentados en el repositorio.
+`minoola/chemberta-zinc-base-v1-ames-mutagenicity` es un modelo de la familia RoBERTa publicado en Hugging Face por el usuario `minoola`. Por su identificador, se trata de un modelo derivado de ChemBERTa (variante de RoBERTa preentrenada sobre el corpus quimico ZINC) y ajustado para la tarea de prediccion de mutagenicidad AMES. Sin embargo, la model card publicada no contiene texto alguno mas alla de la declaracion de licencia MIT, por lo que ni el procedimiento de ajuste ni el conjunto de datos de entrenamiento estan documentados en el repositorio.
 
 El modelo cuenta con 44.105.474 parametros y pesos en formato safetensors, con un tamano de repositorio de 0,2 GB. Es, por tanto, un modelo pequeno (rango de decenas de millones de parametros) que puede ejecutarse en CPU o en cualquier GPU de consumo. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las marcas temporales de creacion y actualizacion son del 15 de septiembre de 2026.
 
@@ -70,7 +70,7 @@ El repositorio no incluye metricas de validacion (AUC-ROC, precision, recall, F1
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM resulta suficiente; una NVIDIA RTX 3060, RTX 4090, T4, A10G, A100 o H100 sirven sobradamente. El modelo es demasiado pequeno para aprovechar GPUs de gama alta.
 - Inferencia en CPU: totalmente viable, incluido en portatiles sin GPU dedicada.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo de los ultimos diez anos, e incluso en dispositivos embebidos con suficiente memoria.
-- Opciones de despliegue: al ser un modelo RoBERTa en safetensors, es compatible con HuggingFace Transformers. Para lotes grandes o servicio de baja latencia pueden usarse vLLM o TGI, aunque el beneficio respecto a inferencia directa en CPU es marginal dado el tamano. Los formatos GGUF y llama.cpp no son aplicables de forma estandar a un encoder de clasificacion.
+- Opciones de despliegue: al ser un modelo RoBERTa en safetensors, es compatible con Hugging Face Transformers. Para lotes grandes o servicio de baja latencia pueden usarse vLLM o TGI, aunque el beneficio respecto a inferencia directa en CPU es marginal dado el tamano. Los formatos GGUF y llama.cpp no son aplicables de forma estandar a un encoder de clasificacion.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas en el repositorio.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La busqueda web proporcionada no devolvio resultados relevantes (unicamente enla
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minoola/chemberta-zinc-base-v1-ames-mutagenicity | 44.105.474 | no disponible | Clasificacion AMES (segun identificador) | MIT | HuggingFace |
+| minoola/chemberta-zinc-base-v1-ames-mutagenicity | 44.105.474 | no disponible | Clasificacion AMES (segun identificador) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia de categoria, el espacio de modelos quimicos encoder-only incluye propuestas conocidas como ChemBERTa y variantes derivadas de RoBERTa preentrenadas sobre ZINC, pero no se dispone en esta ficha de cifras verificadas de parametros, contexto o rendimiento que permitan una comparacion rigurosa.
@@ -98,6 +98,6 @@ Como referencia de categoria, el espacio de modelos quimicos encoder-only incluy
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/minoola/chemberta-zinc-base-v1-ames-mutagenicity
+- Repositorio Hugging Face: https://huggingface.co/minoola/chemberta-zinc-base-v1-ames-mutagenicity
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a servicios de gestion de correo y no guardan relacion con el modelo).
 - Papers, blogs, repositorios o demos adicionales: no disponible.

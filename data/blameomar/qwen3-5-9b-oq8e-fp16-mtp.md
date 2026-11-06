@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-oQ8e-fp16-mtp es una versión cuantizada a 8 bits del modelo Qwen3.5-9B, publicada en HuggingFace por el usuario BlameOmar. La cuantización se ha realizado con oQ (oMLX v0.7.1.dev1) mediante precisión mixta, con un group size de 64, y los pesos se distribuyen en formato MLX safetensors, es decir, orientados a inferencia en Apple Silicon. El recuento real de parámetros de los tensores safetensors es de 9.653.104.368 (aproximadamente 9,65 mil millones), y el repositorio ocupa 11,6 GB.
+Qwen3.5-9B-oQ8e-fp16-mtp es una versión cuantizada a 8 bits del modelo Qwen3.5-9B, publicada en Hugging Face por el usuario BlameOmar. La cuantización se ha realizado con oQ (oMLX v0.7.1.dev1) mediante precisión mixta, con un group size de 64, y los pesos se distribuyen en formato MLX safetensors, es decir, orientados a inferencia en Apple Silicon. El recuento real de parámetros de los tensores safetensors es de 9.653.104.368 (aproximadamente 9,65 mil millones), y el repositorio ocupa 11,6 GB.
 
 El interés del modelo es práctico: permite ejecutar un modelo de ~9,6 B con un peso en disco y en memoria notablemente inferior al de una versión fp16 completa (que rondaría los 19 GB), manteniendo una precisión de 8 bits, lo que lo sitúa en el rango manejable por equipos Mac con memoria unificada de 16 a 32 GB. Ahora bien, la ficha pública es mínima: no documenta licencia, idiomas, longitud de contexto, composición del dataset de entrenamiento ni resultados de evaluación, y el repositorio no registra descargas ni interacciones en el momento de la consulta.
 
@@ -21,7 +21,7 @@ Se trata, por tanto, de una conversión de cuantización de un modelo base cuyo 
 | Licencia | No disponible |
 | Formato de pesos | MLX safetensors (library_name: mlx) |
 | Tamaño del repositorio | 11,6 GB |
-| Fecha de creación | 13 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación | 13 de octubre de 2026 (según metadatos de Hugging Face) |
 | Última actualización | 13 de octubre de 2026, 17 minutos después de la creación |
 | Descargas / likes | 0 / 0 |
 
@@ -92,6 +92,6 @@ Nota: los datos de la fila de Qwen3-8B provienen de fuentes públicas ajenas a e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BlameOmar/Qwen3.5-9B-oQ8e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/BlameOmar/Qwen3.5-9B-oQ8e-fp16-mtp
 - Repositorio de la herramienta de cuantización oQ / oMLX: https://github.com/jundot/omlx
 - No se han encontrado en la búsqueda papers, blogs, demos ni repositorios adicionales asociados a este modelo.

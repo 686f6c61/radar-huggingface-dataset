@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bc1982elizabeth1 es un adaptador LoRA de generacion de imagenes publicado por el usuario drift72032 en HuggingFace. Se distribuye dentro del ecosistema diffusers y esta declarado como adaptador sobre el modelo base krea/Krea-2-Raw, un modelo de texto a imagen. Al tratarse de un adaptador y no de un modelo completo, no define por si mismo la arquitectura ni el conocimiento visual: hereda ambos del modelo base y anade un ajuste fino de bajo rango cuyo contenido tematico no esta documentado en la informacion disponible.
+bc1982elizabeth1 es un adaptador LoRA de generacion de imagenes publicado por el usuario drift72032 en Hugging Face. Se distribuye dentro del ecosistema diffusers y esta declarado como adaptador sobre el modelo base krea/Krea-2-Raw, un modelo de texto a imagen. Al tratarse de un adaptador y no de un modelo completo, no define por si mismo la arquitectura ni el conocimiento visual: hereda ambos del modelo base y anade un ajuste fino de bajo rango cuyo contenido tematico no esta documentado en la informacion disponible.
 
 La relevancia del artefacto es limitada y, sobre todo, practica: los LoRA de texto a imagen permiten especializar un generador base hacia un estilo, un personaje o un concepto concreto sin reentrenar el modelo completo, lo que reduce coste de computo y de almacenamiento. En este caso concreto, la ficha carece de model card descriptiva, de ejemplos, de dataset declarado y de cualquier resultado de evaluacion, por lo que no es posible verificar que representa el adaptador ni con que datos se entreno.
 
@@ -44,7 +44,7 @@ No hay informacion sobre el numero de tokens o imagenes de entrenamiento, la com
 - Generacion de material para moodboards: producir un lote de imagenes candidatas para ilustracion editorial o conceptual, filtrando despues manualmente, dado que no existe evaluacion publicada de su calidad.
 - Pruebas de investigacion sobre LoRA: usarlo como caso de estudio para medir como varia la salida de Krea-2-Raw al aplicar un adaptador de bajo rango, comparando con y sin pesos del adaptador.
 - Experimentacion con composicion de adaptadores: evaluar tecnicas de mezcla de LoRA (weighted sum, merge secuencial) empleando este adaptador como uno de los componentes, siempre que la licencia del modelo base lo permita.
-- Aprendizaje y docencia: ilustrar el flujo completo de publicacion y carga de un LoRA en diffusers, desde el repositorio de HuggingFace hasta la generacion de una imagen.
+- Aprendizaje y docencia: ilustrar el flujo completo de publicacion y carga de un LoRA en diffusers, desde el repositorio de Hugging Face hasta la generacion de una imagen.
 - No se recomienda su uso en produccion comercial sin antes verificar la licencia del modelo base, la procedencia del dataset de entrenamiento y la ausencia de sesgos o de contenido problematico en las salidas.
 
 ## Benchmarks y rendimiento
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye datos de otros adaptadore
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drift72032/bc1982elizabeth1
+- Hugging Face: https://huggingface.co/drift72032/bc1982elizabeth1
 - Modelo base declarado en las etiquetas: krea/Krea-2-Raw
 - Paper, blog, repositorio o demo del adaptador: no disponible
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con este modelo ni con su autor; los enlaces obtenidos (foros de idiomas, blogs de gestion empresarial, una comunidad de preguntas y respuestas en chino) no guardan relacion con el artefacto y se omiten por no ser relevantes.

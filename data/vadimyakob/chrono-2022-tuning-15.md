@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chrono-2022-tuning-15 es un modelo publicado en HuggingFace por el usuario vadimyakob bajo el identificador `vadimyakob/chrono-2022-tuning-15`. Se trata de un checkpoint de 2.018.511.234 parámetros (unos 2,02 B), distribuido en formato safetensors dentro de un repositorio de 6,4 GB. La única etiqueta de familia que aparece en la ficha es `sn38-nanochrono`, acompañada de la marca de región `region:us`; no se documenta arquitectura, pipeline de inferencia, idiomas ni licencia.
+chrono-2022-tuning-15 es un modelo publicado en Hugging Face por el usuario vadimyakob bajo el identificador `vadimyakob/chrono-2022-tuning-15`. Se trata de un checkpoint de 2.018.511.234 parámetros (unos 2,02 B), distribuido en formato safetensors dentro de un repositorio de 6,4 GB. La única etiqueta de familia que aparece en la ficha es `sn38-nanochrono`, acompañada de la marca de región `region:us`; no se documenta arquitectura, pipeline de inferencia, idiomas ni licencia.
 
 El modelo no incluye model card, no declara idiomas soportados y no tiene resultados de benchmarks publicados. Su huella pública es mínima: 8 descargas y 0 likes en la fecha de consulta, con creación y última actualización el 28 de septiembre de 2026 y menos de un minuto de diferencia entre ambas, lo que sugiere una subida única sin iteraciones posteriores.
 
@@ -101,5 +101,5 @@ La comparación de rendimiento no es posible porque chrono-2022-tuning-15 no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vadimyakob/chrono-2022-tuning-15
+- Modelo en Hugging Face: https://huggingface.co/vadimyakob/chrono-2022-tuning-15
 - Resultados de la búsqueda web: no se encontraron enlaces relevantes sobre el modelo. Los resultados devueltos corresponden a portales de juegos y contenidos de medios (games.dailymail.co.uk, creative.dailymail.co.uk) sin ninguna relación con chrono-2022-tuning-15 ni con la familia sn38-nanochrono. No hay papers, blogs, repositorios ni demos asociados localizados.

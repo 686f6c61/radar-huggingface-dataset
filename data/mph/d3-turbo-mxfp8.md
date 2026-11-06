@@ -2,7 +2,7 @@
 
 ## Resumen
 
-d3-turbo-MXFP8 es una cuantización en MXFP8 del modelo vllm-sr/d3-turbo, publicada por el usuario mph con NVIDIA TensorRT Model Optimizer (ModelOpt) v0.47.0. No es un modelo generativo al uso: se presenta como un "decision model" que recibe una entrada (texto o JSON, opcionalmente con imágenes y vídeo) y responde a preguntas sobre ella —elección entre opciones, sí/no, puntuación, caja delimitadora o seguimiento— devolviendo una probabilidad para cada opción. Su pipeline declarado en HuggingFace es `zero-shot-classification`.
+d3-turbo-MXFP8 es una cuantización en MXFP8 del modelo vllm-sr/d3-turbo, publicada por el usuario mph con NVIDIA TensorRT Model Optimizer (ModelOpt) v0.47.0. No es un modelo generativo al uso: se presenta como un "decision model" que recibe una entrada (texto o JSON, opcionalmente con imágenes y vídeo) y responde a preguntas sobre ella —elección entre opciones, sí/no, puntuación, caja delimitadora o seguimiento— devolviendo una probabilidad para cada opción. Su pipeline declarado en Hugging Face es `zero-shot-classification`.
 
 El checkpoint tiene 26.845.547.760 parámetros (unos 26,85 B) y ocupa 28,6 GB en el repositorio. La arquitectura corresponde a la familia Qwen3.5 según los tags, con atención completa combinada con capas Gated DeltaNet (atención lineal) y una torre visual, además de una cabeza de lectura de 255 vías que codifica las respuestas. El backbone no incluye `lm_head` ni módulos MTP, por lo que no genera texto libre.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mph/d3-turbo-MXFP8 | 26,85 B | No disponible | MXFP8 (E4M3 + E8M0 por bloque de 32) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| vllm-sr/d3-turbo (base) | 26,85 B (misma arquitectura) | No disponible | BF16 (presumiblemente, no confirmado) | No disponible en la información consultada | HuggingFace |
+| mph/d3-turbo-MXFP8 | 26,85 B | No disponible | MXFP8 (E4M3 + E8M0 por bloque de 32) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| vllm-sr/d3-turbo (base) | 26,85 B (misma arquitectura) | No disponible | BF16 (presumiblemente, no confirmado) | No disponible en la información consultada | Hugging Face |
 | Otras alternativas de clasificación zero-shot o modelos de decisión de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la información disponible modelos directamente comparables con la misma combinación de decisión multimodal (texto, JSON, imagen y vídeo) y salida probabilística de 255 vías. La comparación más fiable es frente al checkpoint base: esta versión reduce a la mitad la memoria de pesos y añade la dependencia de hardware Blackwell.
@@ -88,7 +88,7 @@ No se han identificado en la información disponible modelos directamente compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mph/d3-turbo-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/mph/d3-turbo-MXFP8
 - Modelo base: https://huggingface.co/vllm-sr/d3-turbo
 - NVIDIA TensorRT Model Optimizer (ModelOpt): https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - Nota sobre la búsqueda web: las consultas realizadas no devolvieron resultados relevantes sobre el modelo; los resultados obtenidos corresponden a la unidad de velocidad "mph" (millas por hora) y se han descartado por no guardar relación con el artefacto. No se han encontrado papers, blogs, repositorios ni demos adicionales del modelo.

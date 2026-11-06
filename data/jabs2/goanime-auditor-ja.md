@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estandarizados en la información d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| goanime-auditor-ja | ≈300 M (byt5-small) | No disponible (512 nativo de byt5-small) | Corrección ASR japonés (anime/galgame) | Apache 2.0 | ONNX en HuggingFace |
-| google/byt5-small | ≈300 M | 512 | Modelo base byte-level multilingüe | Apache 2.0 | PyTorch en HuggingFace |
-| google/byt5-base | ≈580 M | 512 | Modelo base byte-level multilingüe | Apache 2.0 | PyTorch en HuggingFace |
+| goanime-auditor-ja | ≈300 M (byt5-small) | No disponible (512 nativo de byt5-small) | Corrección ASR japonés (anime/galgame) | Apache 2.0 | ONNX en Hugging Face |
+| google/byt5-small | ≈300 M | 512 | Modelo base byte-level multilingüe | Apache 2.0 | PyTorch en Hugging Face |
+| google/byt5-base | ≈580 M | 512 | Modelo base byte-level multilingüe | Apache 2.0 | PyTorch en Hugging Face |
 
 No se dispone de información sobre otros modelos de corrección de ASR específicos para japonés que permitan una comparación directa en la información proporcionada.
 
@@ -85,6 +85,6 @@ No se dispone de información sobre otros modelos de corrección de ASR específ
 - Datos de entrenamiento y proceso no detallados: no se documentan composición del dataset, número de tokens ni técnicas de alineación, lo que limita la reproducibilidad y la evaluación de sesgos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Jabs2/goanime-auditor-ja
+- Modelo en Hugging Face: https://huggingface.co/Jabs2/goanime-auditor-ja
 - Repositorio del pipeline de entrenamiento: https://github.com/JabsDev/goanime-tv
 - Modelo base: https://huggingface.co/google/byt5-small

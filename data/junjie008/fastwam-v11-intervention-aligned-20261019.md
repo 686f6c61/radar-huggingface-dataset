@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FastWAM V11 Intervention-Aligned MemoryWAM es un checkpoint de inferencia para robótica publicado por el usuario junjie008 en HuggingFace. Se presenta como la «fase 2, paso 2.000» de la línea de entrenamiento `v11_p1500_a3000_20261019`, es decir, 3.500 actualizaciones del optimizador en total (1.500 de la fase 1 de entrenamiento del predictor/retriever más 2.000 de la fase 2), partiendo del checkpoint conjunto V10 de 4k pasos. El autor no reclama ninguna tasa de éxito, lo que sitúa la ficha en el terreno de un artefacto de investigación más que de un modelo listo para producción.
+FastWAM V11 Intervention-Aligned MemoryWAM es un checkpoint de inferencia para robótica publicado por el usuario junjie008 en Hugging Face. Se presenta como la «fase 2, paso 2.000» de la línea de entrenamiento `v11_p1500_a3000_20261019`, es decir, 3.500 actualizaciones del optimizador en total (1.500 de la fase 1 de entrenamiento del predictor/retriever más 2.000 de la fase 2), partiendo del checkpoint conjunto V10 de 4k pasos. El autor no reclama ninguna tasa de éxito, lo que sitúa la ficha en el terreno de un artefacto de investigación más que de un modelo listo para producción.
 
 El modelo pertenece a la familia de los world-action models (WAM) para control robótico: combina pesos MoT, un Video DiT, un Action DiT, un codificador propioceptivo y módulos que el autor denomina «corregibles», junto con un mecanismo de memoria que da nombre a la variante (MemoryWAM). El repositorio ocupa 61,4 GB e incluye un único fichero `step_002000.pt` con los pesos y los metadatos de arquitectura; no incluye el VAE ni el codificador de texto, que son activos externos, ni estados de optimizador.
 
@@ -84,7 +84,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junjie008/fastwam-v11-intervention-aligned-20261019
+- Modelo en Hugging Face: https://huggingface.co/junjie008/fastwam-v11-intervention-aligned-20261019
 - Repositorio de codigo: https://github.com/Astexia-xuan/fastwam_edit
 - Mirror del codigo: https://github.com/sgres-paw/HyAM
 - Rama de implementacion: `codex/memory-v11-intervention-aligned`

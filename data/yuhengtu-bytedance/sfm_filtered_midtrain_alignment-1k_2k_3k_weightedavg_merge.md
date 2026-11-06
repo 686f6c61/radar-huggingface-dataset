@@ -29,7 +29,7 @@ La arquitectura subyacente es GPT-NeoX, un transformer decoder-only con atenció
 
 - Generación de texto conversacional: el modelo está etiquetado como "conversational" y "text-generation", por lo que puede mantener diálogos multi-turno.
 - Fusión de checkpoints: al ser un merge de pesos, hereda las capacidades del modelo base en el punto de entrenamiento correspondiente, aunque no se conocen las capacidades específicas del modelo original.
-- Compatibilidad con transformers: al estar en formato safetensors y usar la librería transformers, puede cargarse con la API estándar de HuggingFace.
+- Compatibilidad con transformers: al estar en formato safetensors y usar la librería transformers, puede cargarse con la API estándar de Hugging Face.
 - No se ha documentado soporte para tool calling, function calling, agentes, razonamiento multi-paso, visión, audio u otras capacidades especiales.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con 6.856 millones de parámetros en bfloat16, el peso del modelo ocupa aproximadamente 13.7 GB (tamaño del repositorio). Para inferencia con contexto estándar, se necesitan al menos 16 GB de VRAM en FP16/BF16, o menos si se aplica cuantización (no disponible en el repositorio).
 - GPU recomendadas: una NVIDIA RTX 4090 (24 GB) o A100 de 40 GB sería suficiente para inferencia en BF16. Para mayor throughput, se recomienda A100 80GB o H100.
 - Compatibilidad con GPUs de consumo: sí, una RTX 3090/4090 puede ejecutar el modelo en BF16, aunque con limitaciones de longitud de contexto (desconocida).
-- Opciones de despliegue: vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta), HuggingFace TGI, o plataformas como FriendliAI.
+- Opciones de despliegue: vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta), Hugging Face TGI, o plataformas como FriendliAI.
 - Latencia y throughput: no disponibles, dependen del hardware y del backend utilizado.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de información suficiente para comparar con modelos de referencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_weightedavg_merge
 - Modelo hermano (4k-5k-6k-avg): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg
 - Modelo hermano (baseline-filtered): https://huggingface.co/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg
 - Página de despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_merge

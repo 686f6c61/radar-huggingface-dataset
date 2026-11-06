@@ -20,7 +20,7 @@ La relevancia es acotada y muy específica: se trata de un artefacto de *leaderb
 | Idiomas soportados | no disponible (no es un modelo lingüístico) |
 | Licencia | Sin licencia global; Apache-2.0 solo en las partes que la portan (layout del grafo y mecanismo de lookup de `a1rb4Ck/microduck-heist@94cd2cfe` y modificaciones propias de cada contribuidor); el repositorio en su conjunto no se declara Apache-2.0 |
 | Formato de pesos | ONNX |
-| Tamano del repositorio | 0,0 GB (según HuggingFace) |
+| Tamano del repositorio | 0,0 GB (según Hugging Face) |
 | Pipeline | robotics |
 | Libreria | microduck |
 | Tarea | 6 m Sock Heist, Microduck Arena (solo simulación) |
@@ -104,7 +104,7 @@ La puntuación es idéntica en todos los comandos, ya que las claves de búsqued
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v6
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v6
 - Modelo base (WR1N): https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-wr1n-3f7c858c
 - Modelo base (composite v5): https://huggingface.co/rumezhak/microduck-sock-heist-composite-v5
 - Red de respaldo (v3): https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v3

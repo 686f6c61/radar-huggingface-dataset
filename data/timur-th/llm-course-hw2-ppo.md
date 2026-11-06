@@ -83,10 +83,10 @@ Log-probabilidad media por token de la respuesta (300 pares por conjunto):
 
 | Modelo | Parámetros | Contexto | Alineamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llm-course-hw2-ppo | 134,5 M | no disponible | PPO con reward model propio | Apache 2.0 | HuggingFace (0 descargas) |
-| SmolLM-135M-Instruct (base) | 135 M | no disponible | SFT + DPO del autor original | Apache 2.0 | HuggingFace |
-| SmolLM-135M (base preentrenado) | 135 M | no disponible | sin alinear | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | ~500 M | 32.768 tokens (según documentación pública de Qwen) | SFT + preferencias | Apache 2.0 | HuggingFace |
+| llm-course-hw2-ppo | 134,5 M | no disponible | PPO con reward model propio | Apache 2.0 | Hugging Face (0 descargas) |
+| SmolLM-135M-Instruct (base) | 135 M | no disponible | SFT + DPO del autor original | Apache 2.0 | Hugging Face |
+| SmolLM-135M (base preentrenado) | 135 M | no disponible | sin alinear | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | ~500 M | 32.768 tokens (según documentación pública de Qwen) | SFT + preferencias | Apache 2.0 | Hugging Face |
 
 La comparación relevante es interna a la propia colección del autor: el run DPO con beta 0,1 obtiene mejor `rm_score` (-1,844), mayor tasa de emojis (0,320) y mayor tasa de EOS (0,156) que este PPO `base`, que apenas se separa de la referencia SFT. Frente a alternativas de mayor tamaño como Qwen2.5-0.5B-Instruct, este modelo queda muy por debajo en capacidad general y en contexto soportado.
 
@@ -104,7 +104,7 @@ La comparación relevante es interna a la propia colección del autor: el run DP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Timur-th/llm-course-hw2-ppo
+- Modelo en Hugging Face: https://huggingface.co/Timur-th/llm-course-hw2-ppo
 - Modelo de recompensa asociado: https://huggingface.co/Timur-th/llm-course-hw2-reward-model
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de preferencias: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset

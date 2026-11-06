@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (BFCL, MedQA, hiring-bias) en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-4b-prune_depth_20
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-4b-prune_depth_20
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - NVIDIA ModelOpt (herramienta de poda): https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - vLLM (motor de inferencia usado en el benchmark): https://github.com/vllm-project/vllm

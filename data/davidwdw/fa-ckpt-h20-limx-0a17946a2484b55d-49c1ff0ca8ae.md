@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-ckpt-h20-limx-0a17946a2484b55d-49c1ff0ca8ae` es un archivo de checkpoint versionado publicado en HuggingFace por el usuario `davidwdw`. Segun la propia model card, se trata de un "versioned fleet archive" (archivo versionado de flota) con nivel `params+train_state+assets`, asociado a la receta canonica `2026-09-19_pi05_libero_alphabet_soup_lora`. No es un modelo listo para inferencia directa, sino una instantanea de un estado de entrenamiento.
+El repositorio `davidwdw/fa-ckpt-h20-limx-0a17946a2484b55d-49c1ff0ca8ae` es un archivo de checkpoint versionado publicado en Hugging Face por el usuario `davidwdw`. Segun la propia model card, se trata de un "versioned fleet archive" (archivo versionado de flota) con nivel `params+train_state+assets`, asociado a la receta canonica `2026-09-19_pi05_libero_alphabet_soup_lora`. No es un modelo listo para inferencia directa, sino una instantanea de un estado de entrenamiento.
 
 El paquete ocupa 9,3 GB e incluye parametros, estado del entrenamiento (optimizador y relacionados) y assets auxiliares. La model card insiste en usar la revision exacta registrada y verificar el fichero `SHA256SUMS`, y advierte explicitamente de que se trata de una instantanea y no de un espejo de directorio en vivo.
 
@@ -85,7 +85,7 @@ No disponible. No se puede establecer una comparativa con modelos de la misma ca
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Repositorio HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | Repositorio Hugging Face, 0 descargas, 0 likes | no disponible |
 | Formato | Instantanea `params+train_state+assets` | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,5 +102,5 @@ No disponible. No se puede establecer una comparativa con modelos de la misma ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-0a17946a2484b55d-49c1ff0ca8ae
+- Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-0a17946a2484b55d-49c1ff0ca8ae
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

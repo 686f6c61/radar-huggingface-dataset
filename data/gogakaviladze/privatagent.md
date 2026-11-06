@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GogaKaviladze/privatagent` es un repositorio de modelo publicado en HuggingFace por el usuario GogaKaviladze bajo licencia Apache 2.0. En el momento de redactar esta ficha no existe información técnica publicada: la model card contiene únicamente el bloque de metadatos de licencia y carece de descripción, arquitectura, tamaño, datos de entrenamiento o ejemplos de uso. El repositorio no declara pipeline de HuggingFace, no especifica idiomas soportados y no cuenta con descargas ni valoraciones.
+`GogaKaviladze/privatagent` es un repositorio de modelo publicado en Hugging Face por el usuario GogaKaviladze bajo licencia Apache 2.0. En el momento de redactar esta ficha no existe información técnica publicada: la model card contiene únicamente el bloque de metadatos de licencia y carece de descripción, arquitectura, tamaño, datos de entrenamiento o ejemplos de uso. El repositorio no declara pipeline de Hugging Face, no especifica idiomas soportados y no cuenta con descargas ni valoraciones.
 
 El nombre del repositorio sugiere un modelo orientado a agentes con requisitos de privacidad, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor. No hay información que permita determinar la arquitectura (transformer, MoE, híbrida u otra), el número de parámetros, la longitud de contexto ni el formato de pesos.
 
@@ -79,7 +79,7 @@ No disponible. La categoría del modelo (tamaño, tarea y arquitectura) no puede
 
 - Model card vacía: solo contiene el bloque de licencia; no hay descripción, arquitectura ni instrucciones de uso.
 - Cero descargas y cero likes: no existe evidencia de uso ni de validación por parte de la comunidad.
-- Sin pipeline declarado en HuggingFace, lo que impide saber si se trata de un modelo de texto, de embeddings, de imagen u otro tipo de artefacto.
+- Sin pipeline declarado en Hugging Face, lo que impide saber si se trata de un modelo de texto, de embeddings, de imagen u otro tipo de artefacto.
 - Riesgo de licencia: Apache 2.0 está declarada en los metadatos, pero no se ha verificado la presencia de un fichero `LICENSE` ni de avisos de atribución de terceros (por ejemplo, si el modelo deriva de otro con condiciones adicionales).
 - Riesgo de alucinación y sesgos: no evaluable sin documentación ni pruebas.
 - Limitaciones de contexto e idioma: desconocidas.
@@ -88,6 +88,6 @@ No disponible. La categoría del modelo (tamaño, tarea y arquitectura) no puede
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GogaKaviladze/privatagent
+- Hugging Face: https://huggingface.co/GogaKaviladze/privatagent
 
 No se han encontrado papers, blogs técnicos, repositorios de código ni demos asociados al modelo en la búsqueda web realizada; los resultados obtenidos no guardan relación con el repositorio.

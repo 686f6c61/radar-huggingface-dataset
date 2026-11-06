@@ -87,7 +87,7 @@ Existen en el ecosistema abierto otros modelos pequenos multilingues o especific
 - Ausencia de cuantizaciones con imatrix: el propio autor indica que las versiones ponderadas o con imatrix no estaban disponibles, lo que puede suponer una perdida de calidad frente a cuantizaciones optimizadas equivalentes.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene verificar que la licencia del modelo base y del dataset fineweb-2 no impongan condiciones adicionales, ya que la ficha del derivado no detalla la licencia exacta del modelo original.
 - Adopcion nula: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion comunitaria ni informes de errores que respalden su uso en produccion.
-- Fechas del repositorio: la fecha de creacion indicada (2026-09-15) resulta anomala respecto al contexto habitual de publicacion; conviene contrastarla en la pagina de HuggingFace.
+- Fechas del repositorio: la fecha de creacion indicada (2026-09-15) resulta anomala respecto al contexto habitual de publicacion; conviene contrastarla en la pagina de Hugging Face.
 
 ## Enlaces
 

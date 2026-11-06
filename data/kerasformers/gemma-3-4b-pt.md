@@ -78,7 +78,7 @@ La comparativa se basa en la información pública; no se dispone de benchmarks 
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/gemma-3-4b-pt](https://huggingface.co/kerasformers/gemma-3-4b-pt)
+- [Hugging Face: kerasformers/gemma-3-4b-pt](https://huggingface.co/kerasformers/gemma-3-4b-pt)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Gemma 3 en KerasFormers](https://imvision12.github.io/KerasFormers/gemma3/)
 - [Model card original de Google: google/gemma-3-4b-pt](https://huggingface.co/google/gemma-3-4b-pt)

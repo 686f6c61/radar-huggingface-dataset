@@ -71,9 +71,9 @@ Comparación pareada sobre los mismos problemas: +7,9 puntos sobre el modelo bas
 
 | Modelo | Parámetros | GSM8K test (%) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-Base-GSM8K-distillops | 1,72B | 81,65 (declarado por el autor) | no disponible | Apache-2.0 | HuggingFace, safetensors bf16 |
-| Qwen3-1.7B (post-entrenado oficial) | ~1,7B | 80,2 (mismo prompt y ajustes; mejor con long thinking) | no disponible en esta ficha | Apache-2.0 | HuggingFace, amplio soporte |
-| Qwen3-1.7B-Base (sin entrenar) | 1,72B | 73,8 (zero-shot, prompt simple) | no disponible | Apache-2.0 | HuggingFace |
+| Qwen3-1.7B-Base-GSM8K-distillops | 1,72B | 81,65 (declarado por el autor) | no disponible | Apache-2.0 | Hugging Face, safetensors bf16 |
+| Qwen3-1.7B (post-entrenado oficial) | ~1,7B | 80,2 (mismo prompt y ajustes; mejor con long thinking) | no disponible en esta ficha | Apache-2.0 | Hugging Face, amplio soporte |
+| Qwen3-1.7B-Base (sin entrenar) | 1,72B | 73,8 (zero-shot, prompt simple) | no disponible | Apache-2.0 | Hugging Face |
 
 El modelo especializado supera ligeramente al modelo oficial post-entrenado en la configuración evaluada (diferencia no significativa estadísticamente), pero está mucho más limitado en alcance: Qwen3-1.7B oficial es un asistente general con soporte de thinking mode, mientras que este modelo solo ha sido probado en problemas tipo GSM8K en inglés.
 
@@ -90,7 +90,7 @@ El modelo especializado supera ligeramente al modelo oficial post-entrenado en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Liquor-06/Qwen3-1.7B-Base-GSM8K-distillops
+- Modelo en Hugging Face: https://huggingface.co/Liquor-06/Qwen3-1.7B-Base-GSM8K-distillops
 - Dataset de entrenamiento verificado: https://huggingface.co/datasets/Liquor-06/gsm8k-deepseek-verified
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio del pipeline distillops (comandos, configs y write-up completo): https://github.com/Zihao-Wu06/distillops

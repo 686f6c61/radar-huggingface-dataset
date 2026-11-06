@@ -6,7 +6,7 @@ FBA (Filling Before Advancing) es un método de post-entrenamiento para modelos 
 
 La idea central es construir las capacidades necesarias antes de pedir al modelo que se especialice. Para ello se define una ruta de tres etapas: RS-Anchor (conectar imágenes aéreas con lenguaje), Bridging-Conv (aprender de escenas relacionadas entre distintos sensores) y Scenario-EG (combinar esas habilidades para preguntas, localización y generación de informes sobre puertos).
 
-El repositorio de HuggingFace es por ahora una vista previa del proyecto: los pesos no están publicados y, según la model card, se liberarán tras la aceptación del artículo (arXiv:2607.22205). Esto limita la evaluación práctica del modelo, pero la ficha recoge la información disponible sobre el método y los resultados preliminares publicados.
+El repositorio de Hugging Face es por ahora una vista previa del proyecto: los pesos no están publicados y, según la model card, se liberarán tras la aceptación del artículo (arXiv:2607.22205). Esto limita la evaluación práctica del modelo, pero la ficha recoge la información disponible sobre el método y los resultados preliminares publicados.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El repositorio de HuggingFace es por ahora una vista previa del proyecto: los pe
 
 FBA no define una arquitectura nueva, sino una estrategia de post-entrenamiento aplicada sobre dos MLLM existentes: LLaVA-v1.5 y Qwen3-VL. El entrenamiento se organiza en tres etapas secuenciales. La primera, RS-Anchor, alinea la imaginería aérea con el lenguaje. La segunda, Bridging-Conv, transfiere conocimiento entre escenas relacionadas capturadas por sensores distintos (RGB, SAR, PAN y NIR). La tercera, Scenario-EG, integra esas habilidades para tareas específicas de puertos: comprensión de escena, relaciones espaciales, localización y respuestas basadas en evidencia.
 
-El método se enmarca en lo que los autores denominan "capability-gap-driven post-training": se identifican las carencias de capacidad del modelo base y se cubren antes de la especialización. No se dispone de datos sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el uso de RLHF o DPO. Se menciona un dataset asociado, CPRS, publicado en HuggingFace, que presumiblemente contiene los datos de teledetección empleados, pero su composición no se detalla en la información proporcionada.
+El método se enmarca en lo que los autores denominan "capability-gap-driven post-training": se identifican las carencias de capacidad del modelo base y se cubren antes de la especialización. No se dispone de datos sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el uso de RLHF o DPO. Se menciona un dataset asociado, CPRS, publicado en Hugging Face, que presumiblemente contiene los datos de teledetección empleados, pero su composición no se detalla en la información proporcionada.
 
 ## Capacidades
 
@@ -89,7 +89,7 @@ No se dispone de comparación con otros MLLM de teledetección en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zongling/FBA
+- Hugging Face: https://huggingface.co/zongling/FBA
 - Paper (arXiv): https://arxiv.org/abs/2607.22205
 - Sitio del proyecto: https://z0ngl1ng.github.io/filling-before-advancing/
 - Repositorio GitHub: https://github.com/Z0ngL1ng/filling-before-advancing

@@ -87,10 +87,10 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Edge0/Audio8-TTS-Realistic-Air
+- Modelo en Hugging Face: https://huggingface.co/Edge0/Audio8-TTS-Realistic-Air
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Preview-0.6b
 - Repositorio GitHub: https://github.com/Edge0-AI/Audio8_TTS
 - Demo: https://edge0-ai.github.io/Audio8_TTS/realistic-0.6b/
 - Paper (arXiv): https://arxiv.org/abs/2610.14776
-- Playground en HuggingFace Spaces: https://huggingface.co/spaces/Edge0/Audio8-TTS-Realistic-0.6b
+- Playground en Hugging Face Spaces: https://huggingface.co/spaces/Edge0/Audio8-TTS-Realistic-0.6b
 - Repositorio de referencia arquitectónica (Fish Audio): https://github.com/fishaudio/fish-speech

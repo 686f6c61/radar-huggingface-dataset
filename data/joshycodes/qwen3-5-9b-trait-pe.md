@@ -94,7 +94,7 @@ Frente a alternativas generalistas del mismo rango de parametros (por ejemplo, m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-trait-pe
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-trait-pe
 - Modelo base (mid-train jugueton): https://huggingface.co/joshycodes/qwen3.5-9b-trait-playful-mt
 - Celda pp: https://huggingface.co/joshycodes/qwen3.5-9b-trait-pp
 - Celda ep: https://huggingface.co/joshycodes/qwen3.5-9b-trait-ep

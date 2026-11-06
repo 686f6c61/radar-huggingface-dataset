@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex es un modelo de lenguaje multimodal de tipo mixture-of-experts (MoE) publicado por el usuario nightmedia en HuggingFace. Según el nombre y las etiquetas del repositorio, combina una arquitectura de 35 000 millones de parámetros totales con aproximadamente 3000 millones de parámetros activos por token (patrón A3B), dentro de la familia Qwen3.5/Qwen3.6, y acepta entradas de imagen y texto (pipeline image-text-to-text). Se distribuye con licencia Apache 2.0 y soporte declarado para inglés, chino, japonés y español.
+Nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex es un modelo de lenguaje multimodal de tipo mixture-of-experts (MoE) publicado por el usuario nightmedia en Hugging Face. Según el nombre y las etiquetas del repositorio, combina una arquitectura de 35 000 millones de parámetros totales con aproximadamente 3000 millones de parámetros activos por token (patrón A3B), dentro de la familia Qwen3.5/Qwen3.6, y acepta entradas de imagen y texto (pipeline image-text-to-text). Se distribuye con licencia Apache 2.0 y soporte declarado para inglés, chino, japonés y español.
 
 El modelo se presenta como un derivado construido por composición: los metadatos listan hasta siete modelos base distintos, entre ellos Iris-mini de AllSpark-Research, Thomson-1.0-Small, Qwen-AgentWorld-35B-A3B de Qwen, Nex-N2.5-mini de nex-agi y varios checkpoints del propio autor (Fable-Holo3.1, FSM). Las etiquetas apuntan a un proceso de merge con mergekit, ajuste fino supervisado (SFT) con LoRA y destilación de cadenas de razonamiento largas (long-cot, distillation, chain-of-thought), orientado a tareas de razonamiento, matemáticas, STEM y código.
 
@@ -38,7 +38,7 @@ El resto del proceso declarado combina SFT con adaptadores LoRA (`sft`, `lora`, 
 - Capacidad de instrucciones conversacionales tras el ajuste SFT (`instruction-tuned`).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no confirmado; el modelo base Qwen-AgentWorld-35B-A3B sugiere orientacion a agentes, pero no hay confirmacion para este checkpoint.
-- La etiqueta `endpoints_compatible` indica compatibilidad con el despliegue en Inference Endpoints de HuggingFace.
+- La etiqueta `endpoints_compatible` indica compatibilidad con el despliegue en Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (35B
 - VRAM en cuantizacion de 4 bits: aproximadamente 18-22 GB, lo que lo situa al alcance de una RTX 4090 (24 GB) o RTX 5090, siempre que existan pesos GGUF/AWQ/GPTQ publicados, lo cual no esta confirmado.
 - GPU recomendadas segun precision: H100 o A100 80 GB para bf16; A100 40 GB, L40S o H100 para 8 bits; RTX 4090/5090 para 4 bits.
 - Inferencia en CPU: tecnicamente posible con llama.cpp si se publican pesos GGUF, pero no confirmado y con throughput bajo.
-- Opciones de despliegue: transformers (libreria declarada) y endpoints compatibles de HuggingFace; MLX para Apple Silicon segun etiquetas. Compatibilidad con vLLM, TGI, llama.cpp u Ollama: no confirmada. El soporte de MoE y de vision en estos motores debe verificarse antes de comprometer un despliegue.
+- Opciones de despliegue: transformers (libreria declarada) y endpoints compatibles de Hugging Face; MLX para Apple Silicon segun etiquetas. Compatibilidad con vLLM, TGI, llama.cpp u Ollama: no confirmada. El soporte de MoE y de vision en estos motores debe verificarse antes de comprometer un despliegue.
 - Latencia y throughput: no disponibles. Con ~3B de parametros activos se espera una decodificacion notablemente mas rapida que la de un modelo denso de 35B, pero sin datos medidos no puede cuantificarse.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ Los unicos modelos comparables identificables son los citados como base en el pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex | 35B totales, ~3B activos (inferido) | no disponible | apache-2.0 | Gated en HuggingFace, 0 descargas |
+| nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex | 35B totales, ~3B activos (inferido) | no disponible | apache-2.0 | Gated en Hugging Face, 0 descargas |
 | Qwen/Qwen-AgentWorld-35B-A3B | 35B totales, ~3B activos (inferido del nombre) | no disponible | no disponible | no disponible |
 | AllSpark-Research/Iris-mini | no disponible | no disponible | no disponible | no disponible |
 | thomsonreuters/Thomson-1.0-Small | no disponible | no disponible | no disponible | no disponible |
@@ -80,7 +80,7 @@ Los unicos modelos comparables identificables son los citados como base en el pr
 ## Limitaciones y advertencias
 
 - Ausencia total de validacion: 0 descargas y 0 likes en el momento de redactar la ficha, y ninguna evaluacion publica. No debe asumirse ningun nivel de calidad.
-- Repositorio gated: el acceso requiere aceptar condiciones en HuggingFace, lo que complica la reproducibilidad y la integracion automatizada.
+- Repositorio gated: el acceso requiere aceptar condiciones en Hugging Face, lo que complica la reproducibilidad y la integracion automatizada.
 - Fecha de creacion anomala (2026-09-09) y actualizacion dos minutos despues, lo que sugiere un artefacto recien subido, sin mantenimiento posterior ni historial de versiones.
 - Riesgo de alucinacion: no disponible en la informacion proporcionada; en ausencia de evaluaciones, debe asumirse el riesgo habitual de los modelos de su clase, agravado por tratarse de un merge experimental.
 - Sesgos: no documentados. La composicion multilingue (en, zh, ja, es) con predominio previsible de datos en ingles y chino puede degradar la calidad relativa en japones y espanol.
@@ -92,7 +92,7 @@ Los unicos modelos comparables identificables son los citados como base en el pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex
 - Modelos base citados en el repositorio (enlaces no verificados en la busqueda):
   - https://huggingface.co/AllSpark-Research/Iris-mini
   - https://huggingface.co/thomsonreuters/Thomson-1.0-Small

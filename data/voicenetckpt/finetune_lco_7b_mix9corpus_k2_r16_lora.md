@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio VoiceNetCkpt/finetune_LCO_7B_mix9corpus_k2_r16_lora es un directorio de ejecución de entrenamiento (training-run directory) procedente de los experimentos VoiceCLAP, publicado por el usuario VoiceNetCkpt en HuggingFace. No se trata de un modelo listo para inferencia con model card descriptiva, sino de un volcado de artefactos de entrenamiento: 45 archivos que ocupan 92,1 GB, con etiquetas safetensors, voiceclap y checkpoint. El autor remite a un repositorio índice (VoiceNetCkpt/voiceclap-checkpoints-index) para consultar el resto de ejecuciones.
+El repositorio VoiceNetCkpt/finetune_LCO_7B_mix9corpus_k2_r16_lora es un directorio de ejecución de entrenamiento (training-run directory) procedente de los experimentos VoiceCLAP, publicado por el usuario VoiceNetCkpt en Hugging Face. No se trata de un modelo listo para inferencia con model card descriptiva, sino de un volcado de artefactos de entrenamiento: 45 archivos que ocupan 92,1 GB, con etiquetas safetensors, voiceclap y checkpoint. El autor remite a un repositorio índice (VoiceNetCkpt/voiceclap-checkpoints-index) para consultar el resto de ejecuciones.
 
 Por la nomenclatura del identificador se puede inferir que se trata de un ajuste fino mediante LoRA de rango 16 (r16) sobre un modelo base de aproximadamente 7B parámetros, entrenado sobre una mezcla de 9 corpus (mix9corpus) con alguna configuración interna denotada como k2, y orientado a tareas de voz dentro del proyecto VoiceCLAP. El prefijo LCO no está explicado en la información disponible. Todas estas inferencias proceden únicamente del nombre del repositorio y no están confirmadas por ninguna documentación técnica publicada.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no identifica el modelo base sobre e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_LCO_7B_mix9corpus_k2_r16_lora
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_LCO_7B_mix9corpus_k2_r16_lora
 - Indice de checkpoints del proyecto: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Perfil del autor: https://huggingface.co/VoiceNetCkpt
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

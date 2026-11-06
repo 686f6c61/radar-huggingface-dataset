@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio davidwdw/fa-fixture-task00-holding-drift-71dcb9e3c4bc-5a142304c189 es un paquete alojado en HuggingFace cuyo unico metadato publico es la etiqueta `region:us`. No declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni tamano, y acumula cero descargas y cero interacciones en el momento de la consulta. Las fechas de creacion y actualizacion registradas (24 de septiembre de 2026) no coinciden con ningun lanzamiento conocido de la familia de modelos del autor.
+El repositorio davidwdw/fa-fixture-task00-holding-drift-71dcb9e3c4bc-5a142304c189 es un paquete alojado en Hugging Face cuyo unico metadato publico es la etiqueta `region:us`. No declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni tamano, y acumula cero descargas y cero interacciones en el momento de la consulta. Las fechas de creacion y actualizacion registradas (24 de septiembre de 2026) no coinciden con ningun lanzamiento conocido de la familia de modelos del autor.
 
 La model card se limita a describir el paquete como un "private fleet archive" con la receta canonica `evaluations/2026-09-23_task00_centre_recovery_pilot`, nivel `test_fixture`, e indica que se debe usar la revision exacta registrada y verificar el fichero SHA256SUMS porque el paquete es una instantanea y no un espejo de directorio en vivo. Es decir, el README esta redactado como una nota operativa interna de un pipeline de evaluacion, no como la documentacion de un modelo entrenado.
 
@@ -37,7 +37,7 @@ En cuanto al entrenamiento, no se especifica el numero de tokens, la composicion
 
 No se puede confirmar ninguna capacidad concreta a partir de la informacion disponible. Los unicos elementos verificables son:
 
-- No se declara tarea ni pipeline en HuggingFace, por lo que no consta generacion de texto, razonamiento, codigo, matematicas ni vision.
+- No se declara tarea ni pipeline en Hugging Face, por lo que no consta generacion de texto, razonamiento, codigo, matematicas ni vision.
 - No hay evidencia de soporte de tool calling ni function calling.
 - No hay evidencia de soporte de agentes ni de razonamiento multi-paso.
 - No hay lista de idiomas soportados.
@@ -86,6 +86,6 @@ No disponible. La informacion proporcionada no incluye parametros, contexto, lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-fixture-task00-holding-drift-71dcb9e3c4bc-5a142304c189
+- Hugging Face: https://huggingface.co/davidwdw/fa-fixture-task00-holding-drift-71dcb9e3c4bc-5a142304c189
 - Receta canonica citada en la model card (ruta interna, sin URL publica): `evaluations/2026-09-23_task00_centre_recovery_pilot`
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la informacion disponible.

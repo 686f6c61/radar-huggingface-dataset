@@ -21,7 +21,7 @@ La relevancia de este checkpoint concreto es práctica: permite ejecutar el 8B d
 | Licencia | MIT |
 | Formato de pesos | safetensors en formato MLX |
 | Modelo base | ibm-granite/granite-4.2-8b |
-| Desarrollador del checkpoint | dicksondickson (usuario de HuggingFace) |
+| Desarrollador del checkpoint | dicksondickson (usuario de Hugging Face) |
 | Desarrollador del modelo original | IBM (familia Granite) |
 | Libreria | mlx |
 | Tamano del repositorio | 7,4 GB |
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dicksondickson/granite-4.2-8b-oQ6e-bf16-MLX | 8,79B | 6 bits con tensores en bf16 | safetensors MLX | MIT | Repositorio de terceros en HuggingFace |
+| dicksondickson/granite-4.2-8b-oQ6e-bf16-MLX | 8,79B | 6 bits con tensores en bf16 | safetensors MLX | MIT | Repositorio de terceros en Hugging Face |
 | ibm-granite/granite-4.2-8b | 8B (aproximado) | sin cuantizar (formato original) | no disponible en la busqueda | MIT segun el repositorio derivado | Modelo base oficial de IBM |
 | ibm-granite/granite-4.2-8b-q8-mlx | 8B (aproximado) | 8 bits | MLX | no disponible en la busqueda | Variante MLX oficial de IBM |
 | Familia Granite 4.2 (3B y 30B) | 3B y 30B | variantes cuantizadas por tamano | no disponible | no disponible | Familia oficial de IBM |
@@ -99,7 +99,7 @@ Las tres variantes comparten la misma arquitectura y el mismo modelo base, por l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dicksondickson/granite-4.2-8b-oQ6e-bf16-MLX
+- Repositorio en Hugging Face: https://huggingface.co/dicksondickson/granite-4.2-8b-oQ6e-bf16-MLX
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Variante MLX oficial de IBM en 8 bits: https://huggingface.co/ibm-granite/granite-4.2-8b-q8-mlx
 - Repositorio de oMLX: https://github.com/jundot/omlx

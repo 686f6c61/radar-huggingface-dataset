@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ming-3.0-audio-tiny | ≈8,87 B totales / 2,7 B activos (MoE) | Audio + texto de entrada; texto y voz de salida | no disponible | MIT | HuggingFace (transformers, ONNX) |
-| Qwen2-Audio-7B-Instruct | ≈8,2 B (denso) | Audio + texto; salida de texto | no disponible | Apache-2.0 | HuggingFace, amplio soporte de ecosistema |
-| Qwen2.5-Omni-7B | ≈7 B | Audio, texto, imagen y vídeo; salida de texto y voz | no disponible | Apache-2.0 | HuggingFace |
-| MiniCPM-o 2.6 | ≈8 B | Audio, texto, imagen y vídeo; salida de texto y voz | no disponible | licencia propia de OpenBMB (consultar términos) | HuggingFace |
+| Ming-3.0-audio-tiny | ≈8,87 B totales / 2,7 B activos (MoE) | Audio + texto de entrada; texto y voz de salida | no disponible | MIT | Hugging Face (transformers, ONNX) |
+| Qwen2-Audio-7B-Instruct | ≈8,2 B (denso) | Audio + texto; salida de texto | no disponible | Apache-2.0 | Hugging Face, amplio soporte de ecosistema |
+| Qwen2.5-Omni-7B | ≈7 B | Audio, texto, imagen y vídeo; salida de texto y voz | no disponible | Apache-2.0 | Hugging Face |
+| MiniCPM-o 2.6 | ≈8 B | Audio, texto, imagen y vídeo; salida de texto y voz | no disponible | licencia propia de OpenBMB (consultar términos) | Hugging Face |
 
 No hay datos de benchmarks publicados en la información disponible para establecer una comparación de rendimiento con estas alternativas. La comparación anterior se limita a tamaño, modalidad, licencia y disponibilidad.
 
@@ -85,15 +85,15 @@ No hay datos de benchmarks publicados en la información disponible para estable
 - Requiere `trust_remote_code=True`: implica ejecutar código del repositorio; conviene auditar el código antes de habilitarlo en producción.
 - Soporte de serving limitado: no hay confirmación de vLLM, TGI, llama.cpp u Ollama, por lo que el rendimiento y el escalado en producción no están garantizados por documentación pública.
 - La model card declara 9,3 B parámetros mientras que los pesos en safetensors suman ≈8,87 B; hay que verificar el dimensionado de memoria con la cifra real.
-- El pipeline declarado en HuggingFace es `text-to-speech`, pero la funcionalidad principal es audio-lenguaje; conviene no asumir que se trata de un TTS puro.
+- El pipeline declarado en Hugging Face es `text-to-speech`, pero la funcionalidad principal es audio-lenguaje; conviene no asumir que se trata de un TTS puro.
 - Adopción muy baja (3 descargas, 16 likes): escasa validación comunitaria, pocos informes de casos reales y riesgo de problemas no documentados.
 - Licencia MIT: permisiva para uso comercial, pero no exime de las obligaciones de atribución ni de las responsabilidades sobre sesgos y exactitud en dominios regulados (salud, legal, transcripción con valor probatorio).
 - Sesgos: no se documenta ninguna evaluación de sesgos demográficos o acústicos; los modelos entrenados sobre todo en chino e inglés pueden degradarse con otras variedades lingüísticas.
 
 ## Enlaces
 
-- Modelo en HuggingFace (tiny): https://huggingface.co/inclusionAI/Ming-3.0-audio-tiny
-- Modelo en HuggingFace (flash): https://huggingface.co/inclusionAI/Ming-3.0-audio-flash
+- Modelo en Hugging Face (tiny): https://huggingface.co/inclusionAI/Ming-3.0-audio-tiny
+- Modelo en Hugging Face (flash): https://huggingface.co/inclusionAI/Ming-3.0-audio-flash
 - Repositorio GitHub: https://github.com/inclusionAI/Ming-3.0-audio-flash
 - Ejemplos de código: https://github.com/inclusionAI/Ming-3.0-audio-flash/tree/main/examples
 - Guía de voces para el módulo Talker: https://github.com/inclusionAI/Ming-3.0-audio-flash/blob/main/docs/voices.md

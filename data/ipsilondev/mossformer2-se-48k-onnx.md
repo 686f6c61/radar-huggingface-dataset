@@ -104,7 +104,7 @@ Comparativa con modelos alternativos de la misma categoria: no disponible.
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/ipsilondev/MossFormer2-SE-48K-ONNX
+- Hugging Face (este modelo): https://huggingface.co/ipsilondev/MossFormer2-SE-48K-ONNX
 - Checkpoint original de Alibaba: https://huggingface.co/alibabasglab/MossFormer2_SE_48K
 - Fuente de la exportacion ONNX: https://huggingface.co/Yushasyed/contextlens-music-engines/tree/main/mossformer2-48k
 - Proyecto ClearerVoice-Studio: https://github.com/modelscope/ClearerVoice-Studio

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`heathermartinez/experiment-classification` es un repositorio de HuggingFace que contiene una implementación propia y de escala reducida de una arquitectura DINO orientada a tareas de clasificación. No se trata de un modelo entrenado ni de una release con pesos afinados, sino de un punto de partida reproducible: incluye el código del modelo (`run.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es únicamente un checkpoint de inicialización válido para pruebas de humo.
+`heathermartinez/experiment-classification` es un repositorio de Hugging Face que contiene una implementación propia y de escala reducida de una arquitectura DINO orientada a tareas de clasificación. No se trata de un modelo entrenado ni de una release con pesos afinados, sino de un punto de partida reproducible: incluye el código del modelo (`run.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es únicamente un checkpoint de inicialización válido para pruebas de humo.
 
 El autor lo etiqueta explícitamente como variante "nano" y advierte en la model card que no reclama ninguna puntuación de benchmark. El checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Por tanto, su relevancia actual es la de un artefacto de investigación reproducible para experimentar con clasificación basada en DINO, no la de un modelo listo para producción.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heathermartinez/experiment-classification | 33.088 | no disponible | No (solo inicialización) | BSD-3-Clause | HuggingFace, 0 descargas |
+| heathermartinez/experiment-classification | 33.088 | no disponible | No (solo inicialización) | BSD-3-Clause | Hugging Face, 0 descargas |
 | DINO original (Facebook Research) | no disponible en esta ficha | no disponible | Sí | licencia del proyecto original | Repositorio oficial de investigación |
 | DINOv2 (Meta) | no disponible en esta ficha | no disponible | Sí | licencia del proyecto original | Pesos públicos en repositorios oficiales |
 
@@ -73,7 +73,7 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de lo
 - El checkpoint no ha sido entrenado: no produce predicciones útiles de clasificación sin un proceso de ajuste previo.
 - No ha sido auditado en robustez, equidad ni transferencia de dominio; no debe usarse en producción sin evaluación propia.
 - No se reclaman métricas de benchmark; cualquier cifra de rendimiento deberá generarse y documentarse por separado.
-- Es una implementación personalizada: las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito.
+- Es una implementación personalizada: las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito.
 - No se documentan sesgos conocidos, pero al no haber datos de entrenamiento ni evaluación, el riesgo de comportamiento impredecible es alto.
 - No hay información sobre idiomas soportados, contexto ni cuantizaciones; no debe asumirse ninguno de estos soportes.
 - Licencia BSD-3-Clause: permisiva para uso comercial con atribución, pero el autor advierte de revisar por separado los términos de los datos de origen si se usa con datasets externos.
@@ -81,4 +81,4 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heathermartinez/experiment-classification
+- Modelo en Hugging Face: https://huggingface.co/heathermartinez/experiment-classification

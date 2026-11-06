@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Sistema | Tipo | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EnzymeRanker-X | Recuperación por similitud (MMseqs2) | Secuencia de aminoácidos | Número EC (top-1) | MIT | HuggingFace, 1,6 GB |
+| EnzymeRanker-X | Recuperación por similitud (MMseqs2) | Secuencia de aminoácidos | Número EC (top-1) | MIT | Hugging Face, 1,6 GB |
 | Modelos neuronales de predicción de EC (p. ej. CLEAN, DeepEC) | Redes neuronales / embeddings | Secuencia de aminoácidos | Números EC (a menudo multi-etiqueta) | no disponible | no disponible |
 | BLAST + anotación por transferencia | Búsqueda de similitud | Secuencia de aminoácidos | Anotación transferida | no disponible | Herramienta estándar |
 
@@ -84,4 +84,4 @@ No se dispone de datos de rendimiento de EnzymeRanker-X que permitan una compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbhijeetKumar2125/EnzymeRanker-X
+- Hugging Face: https://huggingface.co/AbhijeetKumar2125/EnzymeRanker-X

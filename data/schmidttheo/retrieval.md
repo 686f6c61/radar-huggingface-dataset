@@ -25,7 +25,7 @@ Este repositorio es relevante únicamente como punto de partida para investigado
 
 La arquitectura se describe en el README como "Hybrid" con atención grouped query, fusión mediante cross-attention, activación ReLU y normalización por batch. No se especifica el número de capas, dimensiones ocultas ni el número de cabezas de atención. El repositorio incluye `config.json` que registra la configuración generada y `training_args.json` que contiene la receta experimental por defecto (RMSprop con schedule polinomial), pero el autor aclara que estos son valores iniciales del script, no evidencia de un entrenamiento completado.
 
-No se proporciona información sobre el conjunto de datos de entrenamiento, el número de tokens, ni el uso de técnicas como RLHF o DPO. El checkpoint `model.safetensors` es un checkpoint de inicialización para pruebas de humo, no un modelo entrenado. La implementación es personalizada y requiere un adaptador explícito para ser cargada con APIs genéricas de HuggingFace.
+No se proporciona información sobre el conjunto de datos de entrenamiento, el número de tokens, ni el uso de técnicas como RLHF o DPO. El checkpoint `model.safetensors` es un checkpoint de inicialización para pruebas de humo, no un modelo entrenado. La implementación es personalizada y requiere un adaptador explícito para ser cargada con APIs genéricas de Hugging Face.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables. El repositorio no propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/schmidttheo/retrieval
+- Repositorio en Hugging Face: https://huggingface.co/schmidttheo/retrieval
 - README del modelo (incluido en el repositorio): https://huggingface.co/schmidttheo/retrieval/blob/main/README.md
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) específicos de este modelo en la búsqueda web.

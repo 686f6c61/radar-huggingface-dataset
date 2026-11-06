@@ -107,7 +107,7 @@ La comparación directa más relevante es con el modelo base, del que se diferen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mike7523/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Repositorio Hugging Face: https://huggingface.co/mike7523/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil de jordanschenck en X: https://x.com/jordanschenck

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`YRGKarthikeya/ppo-SoccerTwos` es una política de aprendizaje por refuerzo publicada en HuggingFace por el usuario YRGKarthikeya, entrenada con el algoritmo PPO (Proximal Policy Optimization) mediante Unity ML-Agents y exportada en formato ONNX para su inferencia dentro del runtime de ML-Agents. El repositorio está etiquetado con `ML-Agents-SoccerTwos`, lo que lo vincula al escenario de fútbol 2 contra 2 incluido en los entornos de ejemplo de ML-Agents, y declara `task: reinforcement-learning` y `library_name: ml-agents` en su metadatos.
+`YRGKarthikeya/ppo-SoccerTwos` es una política de aprendizaje por refuerzo publicada en Hugging Face por el usuario YRGKarthikeya, entrenada con el algoritmo PPO (Proximal Policy Optimization) mediante Unity ML-Agents y exportada en formato ONNX para su inferencia dentro del runtime de ML-Agents. El repositorio está etiquetado con `ML-Agents-SoccerTwos`, lo que lo vincula al escenario de fútbol 2 contra 2 incluido en los entornos de ejemplo de ML-Agents, y declara `task: reinforcement-learning` y `library_name: ml-agents` en su metadatos.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es un artefacto de control que mapea observaciones del entorno a acciones discretas dentro de una simulación Unity. Por tanto, conceptos habituales en las fichas de LLM como longitud de contexto, cuantización, idiomas o tool calling no aplican y se marcan como no disponibles o no aplicables.
 
@@ -88,5 +88,5 @@ No disponible. La información proporcionada no identifica políticas comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YRGKarthikeya/ppo-SoccerTwos
+- Hugging Face: https://huggingface.co/YRGKarthikeya/ppo-SoccerTwos
 - Los resultados de la búsqueda web proporcionada no contienen enlaces relevantes al modelo: todas las entradas corresponden a respuestas de error y páginas sin relación (dominio qiwa.sa). No se dispone de paper, blog, repositorio de código ni demostración asociados a esta política.

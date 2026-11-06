@@ -76,8 +76,8 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdullah-Nazhat/Expansion_Factor_Free_TTT
+- Modelo en Hugging Face: https://huggingface.co/Abdullah-Nazhat/Expansion_Factor_Free_TTT
 - Repositorio de codigo en GitHub: https://github.com/Abdullah-88/Expansion_Factor_Free_FeedForward
 - Modelo relacionado del mismo autor: https://huggingface.co/Abdullah-Nazhat/Expansion_Factor_Free_FeedForward
-- Perfil del autor en HuggingFace: https://huggingface.co/Abdullah-Nazhat
+- Perfil del autor en Hugging Face: https://huggingface.co/Abdullah-Nazhat
 - Listado en OpenModelMap: https://openmodelmap.com/model/Abdullah-Nazhat/Expansion_Factor_Free_TTT

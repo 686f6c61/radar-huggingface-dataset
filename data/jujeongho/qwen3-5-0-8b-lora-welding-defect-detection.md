@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - Al tener 0,8B parámetros en total (modelo base + adaptador), el modelo puede ejecutarse en GPUs de consumo con al menos 4 GB de VRAM en FP16. En cuantización de 8 bits, podría caber en 2-3 GB, aunque no se especifican cuantizaciones disponibles.
 - GPU recomendadas: NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4090 (24 GB) o superiores. También es compatible con hardware edge como NVIDIA Jetson Orin, según la documentación del modelo base.
-- Opciones de despliegue: al ser un modelo de la familia Qwen3.5, es compatible con vLLM, llama.cpp, Ollama (existe una entrada `qwen3.5:0.8b` en Ollama) y Transformers de HuggingFace. Para el adaptador LoRA, se puede cargar mediante la API de PEFT en Transformers.
+- Opciones de despliegue: al ser un modelo de la familia Qwen3.5, es compatible con vLLM, llama.cpp, Ollama (existe una entrada `qwen3.5:0.8b` en Ollama) y Transformers de Hugging Face. Para el adaptador LoRA, se puede cargar mediante la API de PEFT en Transformers.
 - Latencia y throughput: no se han publicado datos específicos. Dado el tamaño reducido, se espera una latencia baja en hardware moderno, pero no se puede cuantificar sin pruebas.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA-Welding-Defect-Detection
+- Repositorio en Hugging Face: https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA-Welding-Defect-Detection
 - Documentación del modelo base Qwen3.5-0.8B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B
 - Qwen3.5-0.8B en Qualcomm AI Hub: https://aihub.qualcomm.com/iot/models/qwen3_5_0_8b
 - Qwen3.5-0.8B en Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-5-0-8b/

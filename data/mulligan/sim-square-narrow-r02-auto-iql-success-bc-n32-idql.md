@@ -86,9 +86,9 @@ No se dispone de datos de rendimiento de otras políticas en la información pro
 
 | Alternativa | Tarea | Tipo de agente | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sim-square-narrow-r02-auto-iql-success-bc-n32-idql (este modelo) | sim-square-narrow | IDQL, actor de difusión + crítico IQL | MIT | HuggingFace, 5 semillas |
+| sim-square-narrow-r02-auto-iql-success-bc-n32-idql (este modelo) | sim-square-narrow | IDQL, actor de difusión + crítico IQL | MIT | Hugging Face, 5 semillas |
 | Políticas de rondas/brazos previos de sim-square-narrow | sim-square-narrow | IQL / DDPG+BC según brazo | no disponible | organismos `mulligan` (R0-R3) |
-| Variantes `sim-square-broad` | sim-square-broad | familia IDQL | no disponible | HuggingFace |
+| Variantes `sim-square-broad` | sim-square-broad | familia IDQL | no disponible | Hugging Face |
 | IQL estándar / diffusion policy sin crítico | ensamblaje simulado | IQL o difusión | no disponible | no disponible en esta búsqueda |
 
 La comparación con modelos de lenguaje como alternativa no procede: este artefacto resuelve un problema de control, no de generación de texto.
@@ -109,8 +109,8 @@ La comparación con modelos de lenguaje como alternativa no procede: este artefa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-iql-success-bc-n32-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-iql-success-bc-n32-idql
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de entrenamiento base (teleoperación): https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline

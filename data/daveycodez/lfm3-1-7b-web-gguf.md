@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks estandar ni de contexto para comparar con m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/daveycodez/LFM3-1.7B-Web-GGUF
+- Repositorio Hugging Face: https://huggingface.co/daveycodez/LFM3-1.7B-Web-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - GGUF original de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - Contraparte ONNX del mismo autor: https://huggingface.co/daveycodez/LFM3-1.7B-Web-ONNX

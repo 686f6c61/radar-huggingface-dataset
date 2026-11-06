@@ -75,7 +75,7 @@ La comparativa muestra que esta adaptacion es una variante abliterada del Qwen3-
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/liuw15/qwen3-8b-ziyon-nsfw-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/liuw15/qwen3-8b-ziyon-nsfw-Q4_K_M-GGUF
 - Repositorio del modelo base abliterado: https://huggingface.co/liuw15/qwen3-8b-ziyon-nsfw
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Modelo abliterado de referencia: https://huggingface.co/huihui-ai/Qwen3-8B-abliterated

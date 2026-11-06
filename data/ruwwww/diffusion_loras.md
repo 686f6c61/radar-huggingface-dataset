@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ruwwww/diffusion_loras` es una coleccion curada de LoRA de personaje y concepto entrenadas para el modelo de difusion **Anima Cosmos 2 DiT**, publicado por el usuario ruwwww en HuggingFace. No se trata de un modelo fundacional, sino de un repositorio de adaptadores de bajo rango (Low-Rank Adaptation) pensados para inyectar personajes concretos de anime, manga, videojuegos y comics en un pipeline de text-to-image ya existente.
+`ruwwww/diffusion_loras` es una coleccion curada de LoRA de personaje y concepto entrenadas para el modelo de difusion **Anima Cosmos 2 DiT**, publicado por el usuario ruwwww en Hugging Face. No se trata de un modelo fundacional, sino de un repositorio de adaptadores de bajo rango (Low-Rank Adaptation) pensados para inyectar personajes concretos de anime, manga, videojuegos y comics en un pipeline de text-to-image ya existente.
 
 El autor indica que los adaptadores se han entrenado con una receta propia denominada "golden fastpath", que combina retropropagacion directa en FP8 sobre Triton, gradient checkpointing selectivo y arquitecturas de etiquetas desacopladas. Segun la model card, solo se publican las epocas que considera "sweet spot", es decir, anteriores al sobreajuste y validadas para mantener flexibilidad de estilo y retencion anatomica.
 
@@ -97,7 +97,7 @@ Como referencia cualitativa, este repositorio se situa en la categoria de colecc
 | Numero de personajes | 9 | no disponible |
 | Parametros | no disponible | no disponible |
 | Licencia | other (sin detalle) | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas, 0 likes | no disponible |
 | Rendimiento medido | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -117,7 +117,7 @@ Como referencia cualitativa, este repositorio se situa en la categoria de colecc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruwwww/diffusion_loras
+- Hugging Face: https://huggingface.co/ruwwww/diffusion_loras
 - Perfil del autor: https://huggingface.co/ruwwww
 - Modelo base citado (Anima Cosmos 2 DiT, `anima-base-v1.0.safetensors`): sin enlace disponible en la informacion proporcionada
 - Text encoder citado (Qwen3-0.6B, `qwen_3_06b_base.safetensors`): sin enlace disponible en la informacion proporcionada

@@ -79,10 +79,10 @@ Los datos de los modelos competidores provienen de conocimiento general y deben 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OXR-1.0 | 1,53B (safetensors); 1,3B según el autor | No disponible | #1 en olmOCR-Bench, OmniDocBench y DocParsingBench según el autor, sin cifras | No disponible | HuggingFace, ModelScope, demo online, API gratuita |
-| dots.ocr | ~1,7B | No disponible | No verificado en esta ficha | Consultar ficha del autor | HuggingFace |
-| PaddleOCR-VL | ~0,9B | No disponible | No verificado en esta ficha | Consultar ficha del autor | HuggingFace / ecosistema PaddleOCR |
-| olmOCR (AllenAI) | ~7B | No disponible | Referenciado como baseline en olmOCR-Bench | Consultar ficha del autor | HuggingFace |
+| OXR-1.0 | 1,53B (safetensors); 1,3B según el autor | No disponible | #1 en olmOCR-Bench, OmniDocBench y DocParsingBench según el autor, sin cifras | No disponible | Hugging Face, ModelScope, demo online, API gratuita |
+| dots.ocr | ~1,7B | No disponible | No verificado en esta ficha | Consultar ficha del autor | Hugging Face |
+| PaddleOCR-VL | ~0,9B | No disponible | No verificado en esta ficha | Consultar ficha del autor | Hugging Face / ecosistema PaddleOCR |
+| olmOCR (AllenAI) | ~7B | No disponible | Referenciado como baseline en olmOCR-Bench | Consultar ficha del autor | Hugging Face |
 
 Frente a alternativas como olmOCR, la diferencia principal es el tamaño: OXR-1.0 es aproximadamente cuatro veces menor, lo que reduce requisitos de VRAM y coste por página. Frente a dots.ocr o PaddleOCR-VL, la propuesta diferencial es el módulo de layout intercambiable y la salida JSON con coordenadas.
 
@@ -97,11 +97,11 @@ Frente a alternativas como olmOCR, la diferencia principal es el tamaño: OXR-1.
 - Ausencia de cuantizaciones oficiales: no hay GGUF ni variantes int8/int4, lo que limita el despliegue en CPU o en GPUs con poca memoria sin trabajo adicional de cuantización.
 - Madurez y validación externa: 37 descargas y 20 likes en el momento de la ficha, con creación en octubre de 2026, indican una comunidad todavía pequeña y poca validación independiente.
 - Posible inconsistencia de documentación: la model card indica 1,3B de parámetros mientras los pesos suman 1,53B; conviene contrastar qué cifra corresponde a parámetros totales y cuál a otra medida.
-- Sin `pipeline` declarado en HuggingFace: la integración vía `transformers.pipeline` no está garantizada y puede requerir código específico del autor.
+- Sin `pipeline` declarado en Hugging Face: la integración vía `transformers.pipeline` no está garantizada y puede requerir código específico del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoMarkAI/OXR-1.0
+- Modelo en Hugging Face: https://huggingface.co/SoMarkAI/OXR-1.0
 - Repositorio GitHub: https://github.com/SoMarkAI/OXR
 - Documentación de benchmarks: https://github.com/SoMarkAI/OXR/blob/main/docs/benchmark.md
 - README en chino: https://github.com/SoMarkAI/OXR/blob/main/README_CN.md

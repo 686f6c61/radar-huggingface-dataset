@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto / audio | Idiomas | Licencia | Disponibilidad | Rendimiento ASR árabe |
 |---|---|---|---|---|---|---|
-| `Arabic-STT/qwen3-asr-1.7b-ar-task06-grpo1` | 2,04B | No disponible | ar, en | Apache-2.0 | Gated en HuggingFace | No disponible |
-| `Arabic-STT/qwen3-asr-1.7b-ar-best-task06` (modelo base) | ~2,04B (no confirmado en la información dada) | No disponible | ar, en | Apache-2.0 (heredada, no verificada) | HuggingFace | No disponible |
-| Qwen3-ASR 1.7B (modelo original de Alibaba) | ~1,7B–2B según variante | No disponible | Multilingüe | Apache-2.0 | HuggingFace | No disponible |
+| `Arabic-STT/qwen3-asr-1.7b-ar-task06-grpo1` | 2,04B | No disponible | ar, en | Apache-2.0 | Gated en Hugging Face | No disponible |
+| `Arabic-STT/qwen3-asr-1.7b-ar-best-task06` (modelo base) | ~2,04B (no confirmado en la información dada) | No disponible | ar, en | Apache-2.0 (heredada, no verificada) | Hugging Face | No disponible |
+| Qwen3-ASR 1.7B (modelo original de Alibaba) | ~1,7B–2B según variante | No disponible | Multilingüe | Apache-2.0 | Hugging Face | No disponible |
 | Whisper large-v3 (OpenAI) | 1,55B | Ventanas de 30 s | 99 idiomas | MIT | Abierto, amplia adopción | No disponible en esta ficha |
 
 No se dispone de cifras de WER comparables entre estas opciones en la información proporcionada; la comparación debe realizarse empíricamente sobre un conjunto de evaluación propio con dialectos y audio telefónico.
@@ -74,7 +74,7 @@ No se dispone de cifras de WER comparables entre estas opciones en la informaci�
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluación publicada: no hay WER ni CER por dialecto, dominio ni relación señal-ruido, lo que impide estimar su calidad frente al modelo base o frente a Whisper.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la integración en CI.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la integración en CI.
 - Repositorio sin tarjeta de modelo detallada: se desconoce la composición del dataset de ajuste, los hiperparámetros y la interpretación exacta del sufijo `grpo1`.
 - Riesgo de alucinación específico de ASR: bucles de repetición, texto inventado sobre silencios o ruido y deriva hacia frases frecuentes del corpus de entrenamiento, especialmente en audio telefónico degradado.
 - Cobertura dialectal no cuantificada: las etiquetas mencionan dialectos, pero no se indica qué variedades (golfo, egipcio, levantino, magrebí, yemení) están representadas ni con qué densidad.
@@ -85,7 +85,7 @@ No se dispone de cifras de WER comparables entre estas opciones en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-task06-grpo1
+- Modelo en Hugging Face: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-task06-grpo1
 - Modelo base: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-best-task06
 - Perfil del autor: https://huggingface.co/Arabic-STT
 - Paper, blog o repositorio adicionales: no disponibles en los resultados de búsqueda proporcionados (las búsquedas devolvieron únicamente recursos genéricos sobre el idioma árabe y teclados árabes, sin relación con el modelo).

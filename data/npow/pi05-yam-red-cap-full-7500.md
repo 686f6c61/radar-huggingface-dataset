@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-yam-red-cap-full-7500 | no disponible | no disponible | no disponible (sin benchmarks publicados) | Apache 2.0 | HuggingFace, checkpoint JAX/Orbax de 12,4 GB |
+| pi05-yam-red-cap-full-7500 | no disponible | no disponible | no disponible (sin benchmarks publicados) | Apache 2.0 | Hugging Face, checkpoint JAX/Orbax de 12,4 GB |
 | pi0.5 base (Physical Intelligence) | no disponible en la información proporcionada | no disponible | no disponible | no disponible en la información proporcionada | Distribuido como assets de OpenPI (`gs://openpi-assets/checkpoints/pi05_base/params`); es la base de este ajuste |
 | Otras políticas VLA de manipulación (por ejemplo, alternativas tipo OpenVLA) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
@@ -92,7 +92,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/npow/pi05-yam-red-cap-full-7500
+- Modelo en Hugging Face: https://huggingface.co/npow/pi05-yam-red-cap-full-7500
 - Dataset de entrenamiento: https://huggingface.co/datasets/npow/yam-gello-red-cap-100
 - Rama de ajuste fino de OpenPI: https://github.com/npow/openpi/tree/feat/yam-redcap-finetune
 - Ejemplo YAM (converter, transforms y configuración de entrenamiento): https://github.com/npow/openpi/tree/feat/yam-redcap-finetune/examples/yam

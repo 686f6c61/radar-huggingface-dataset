@@ -72,5 +72,5 @@ No disponible. No se han encontrado modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stschneider/grad-matching-2024
+- Hugging Face: https://huggingface.co/stschneider/grad-matching-2024
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información disponible.

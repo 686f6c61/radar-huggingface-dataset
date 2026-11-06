@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ThomasHughes1987/matching-experiments` es un repositorio experimental de HuggingFace publicado por el usuario ThomasHughes1987 que contiene una implementacion propia de una arquitectura denominada **Coca**, orientada a tareas de *matching*. No se trata de un modelo entrenado ni de un checkpoint de referencia, sino de un esqueleto de codigo con una inicializacion valida de pesos destinada a *smoke tests*: la propia model card indica explicitamente que `model.safetensors` no debe presentarse como un checkpoint evaluado y que no se reclama ninguna puntuacion de benchmark.
+`ThomasHughes1987/matching-experiments` es un repositorio experimental de Hugging Face publicado por el usuario ThomasHughes1987 que contiene una implementacion propia de una arquitectura denominada **Coca**, orientada a tareas de *matching*. No se trata de un modelo entrenado ni de un checkpoint de referencia, sino de un esqueleto de codigo con una inicializacion valida de pesos destinada a *smoke tests*: la propia model card indica explicitamente que `model.safetensors` no debe presentarse como un checkpoint evaluado y que no se reclama ninguna puntuacion de benchmark.
 
 El peso real del checkpoint es de **49.600 parametros** segun los metadatos de safetensors, una magnitud extremadamente reducida (del orden de 0,05 millones de parametros) que contrasta con la etiqueta `scale: large` que figura en la configuracion de arquitectura. Esa etiqueta describe una variante de configuracion dentro del script, no el tamano efectivo del modelo. El repositorio ocupa 0,0 GB, no tiene descargas ni *likes* y fue creado y actualizado el 13 de septiembre de 2026.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, no existe. El autor es explicito: `model.safetensors
 - No hay capacidades funcionales verificadas: el checkpoint no ha sido entrenado, por lo que no genera texto, codigo ni respuestas coherentes.
 - No se documenta soporte de *tool calling* ni de *function calling*.
 - No se documenta soporte de agentes ni de razonamiento multitep.
-- No se documenta capacidad multilingue; el campo de idiomas no esta informado en HuggingFace.
+- No se documenta capacidad multilingue; el campo de idiomas no esta informado en Hugging Face.
 - No se documenta vision, audio ni modo de razonamiento explicito (*thinking mode*).
 - Lo que si ofrece el repositorio es una funcion concreta de ingenieria: una implementacion ejecutable y autocontenida de la arquitectura Coca, con configuracion de arquitectura (`config.json`) y receta de experimento (`training_args.json`) separadas, util para inspeccionar cambios de diseno antes de un entrenamiento completo.
 - Incluye un bloque `__main__` en `main.py` con un ejemplo de *smoke test* generado, que permite comprobar que el *forward pass* se ejecuta correctamente.
@@ -81,7 +81,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | ninguno publicado | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -98,5 +98,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ThomasHughes1987/matching-experiments
+- Repositorio en Hugging Face: https://huggingface.co/ThomasHughes1987/matching-experiments
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo. Los resultados recuperados no guardan relacion con el artefacto.

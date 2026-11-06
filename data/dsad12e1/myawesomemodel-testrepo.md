@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DSAD12E1/MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario DSAD12E1, publicado y actualizado el 17 de septiembre de 2026 con apenas 24 segundos de diferencia entre ambos eventos. Los metadatos lo etiquetan como un modelo de tipo BERT implementado con la libreria transformers y PyTorch, orientado a la tarea de extraccion de caracteristicas (feature-extraction), con licencia MIT. El repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0.0 GB, lo que indica que no contiene ficheros de pesos publicados.
+DSAD12E1/MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario DSAD12E1, publicado y actualizado el 17 de septiembre de 2026 con apenas 24 segundos de diferencia entre ambos eventos. Los metadatos lo etiquetan como un modelo de tipo BERT implementado con la libreria transformers y PyTorch, orientado a la tarea de extraccion de caracteristicas (feature-extraction), con licencia MIT. El repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0.0 GB, lo que indica que no contiene ficheros de pesos publicados.
 
 La model card adjunta describe, en cambio, un asistente conversacional de razonamiento denominado "MyAwesomeModel", con mejoras en profundidad de razonamiento, soporte de function calling y una supuesta reduccion de la tasa de alucinacion. Este texto presenta una contradiccion sustancial con los metadatos del repositorio: no hay arquitectura declarada, ni numero de parametros, ni longitud de contexto, y las etiquetas apuntan a un encoder BERT de extraccion de caracteristicas en lugar de a un modelo generativo de chat. Ademas, la model card hace referencia a un modelo distinto ("MyAwesomeModel-Small") y menciona un sitio web oficial y un repositorio de codigo que no se enlazan en la informacion disponible.
 
@@ -102,7 +102,7 @@ Advertencia: estos resultados proceden exclusivamente de la model card del autor
 - VRAM estimada para inferencia: no disponible. Al no conocerse el numero de parametros ni existir ficheros de pesos en el repositorio (0.0 GB), no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. El tag `bert` sugeriria que un encoder de tipo base podria caber en GPUs de consumo con 8-12 GB de VRAM, pero es una inferencia a partir de una etiqueta, no un dato confirmado.
-- Opciones de despliegue: por libreria declarada, seria compatible con transformers y con endpoints de HuggingFace (tag `endpoints_compatible`). No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI, ya que no se publican pesos en formato GGUF ni safetensors.
+- Opciones de despliegue: por libreria declarada, seria compatible con transformers y con endpoints de Hugging Face (tag `endpoints_compatible`). No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI, ya que no se publican pesos en formato GGUF ni safetensors.
 - Latencia y throughput estimados: no disponible.
 - Nota practica: cualquier intento de despliegue fallara mientras el repositorio no incluya pesos, configuracion y tokenizador.
 
@@ -131,7 +131,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DSAD12E1/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/DSAD12E1/MyAwesomeModel-TestRepo
 - Model card del autor: incluida en el repositorio anterior (https://huggingface.co/DSAD12E1/MyAwesomeModel-TestRepo/blob/main/README.md)
 - Paper, repositorio de codigo, sitio web oficial y demos: no disponibles. La model card los menciona pero no proporciona las URL.
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante para este modelo. Los resultados devueltos por el buscador no guardan relacion con el repositorio ni con modelos de IA, por lo que se descartan.

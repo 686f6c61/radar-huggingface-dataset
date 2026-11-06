@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`furkankoc16/efficientformer-classification-ablation` es un repositorio experimental publicado por el usuario furkankoc16 en HuggingFace. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card lo describe como un punto de partida reproducible, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio agrupa una implementación propia de EfficientFormer para clasificación, un fichero `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto (optimizador novograd y planificador onecycle) y un `eval.py` como artefacto principal.
+`furkankoc16/efficientformer-classification-ablation` es un repositorio experimental publicado por el usuario furkankoc16 en Hugging Face. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card lo describe como un punto de partida reproducible, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio agrupa una implementación propia de EfficientFormer para clasificación, un fichero `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto (optimizador novograd y planificador onecycle) y un `eval.py` como artefacto principal.
 
 El checkpoint contiene 49.600 parámetros según los datos reales de safetensors, una cifra muy alejada de las variantes publicadas de EfficientFormer (L1, L3, L7), lo que es coherente con su naturaleza de ablation reducida y no con un modelo a escala. La model card declara el "scale: large" como etiqueta de configuración, pero el recuento real de pesos indica claramente una implementación de tamaño mínimo.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| furkankoc16/efficientformer-classification-ablation | 49.600 | Clasificacion de imagenes (sin entrenar) | MIT | HuggingFace, 0 descargas |
-| EfficientFormer (variantes L1/L3/L7, Li et al.) | no disponible en la informacion proporcionada | Clasificacion y backbone de vision | no disponible | HuggingFace Transformers, Qualcomm AI Hub |
+| furkankoc16/efficientformer-classification-ablation | 49.600 | Clasificacion de imagenes (sin entrenar) | MIT | Hugging Face, 0 descargas |
+| EfficientFormer (variantes L1/L3/L7, Li et al.) | no disponible en la informacion proporcionada | Clasificacion y backbone de vision | no disponible | Hugging Face Transformers, Qualcomm AI Hub |
 | EfficientFormer para dispositivos Qualcomm | no disponible en la informacion proporcionada | Clasificacion ImageNet optimizada para movil | no disponible | Repositorio qualcomm/ai-hub-models |
 | EfficientFormerV2 | no disponible en la informacion proporcionada | Clasificacion y prediccion densa | no disponible | no disponible en los resultados de busqueda |
 
@@ -79,14 +79,14 @@ Las variantes citadas corresponden a implementaciones entrenadas y publicadas de
 - Sin datos de idioma, dominio ni composicion del dataset: se desconoce cualquier sesgo potencial, pero tambien cualquier capacidad real.
 - Riesgo de alucinacion: no aplica, al no ser un modelo generativo de texto.
 - Licencia MIT: permite uso comercial del codigo y los pesos, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si se usan datasets externos.
-- Al ser una implementacion propia, no es compatible de forma directa con las APIs de carga automatica de HuggingFace Transformers sin un adaptador explicito.
+- Al ser una implementacion propia, no es compatible de forma directa con las APIs de carga automatica de Hugging Face Transformers sin un adaptador explicito.
 - Repositorio con 0 descargas y 0 likes: sin comunidad, sin mantenimiento verificado y sin validacion externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/furkankoc16/efficientformer-classification-ablation
+- Hugging Face: https://huggingface.co/furkankoc16/efficientformer-classification-ablation
 - Documentacion de EfficientFormer en Transformers: https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer
 - EfficientFormer en Qualcomm AI Hub: https://aihub.qualcomm.com/models/efficientformer
-- Repositorio qualcomm/EfficientFormer en HuggingFace: https://huggingface.co/qualcomm/EfficientFormer
+- Repositorio qualcomm/EfficientFormer en Hugging Face: https://huggingface.co/qualcomm/EfficientFormer
 - Codigo de EfficientFormer en Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/efficientformer
 - Resumen tecnico de EfficientFormer: https://www.emergentmind.com/topics/efficientformer

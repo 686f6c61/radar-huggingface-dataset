@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de restaurac
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/litert-community/NVIDIA-NemotronLabs-RE-USE-laughter-LiteRT
+- Hugging Face (esta conversión): https://huggingface.co/litert-community/NVIDIA-NemotronLabs-RE-USE-laughter-LiteRT
 - Modelo base original: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE-laughter
 - Familia RE-USE de NVIDIA NemotronLabs: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE
 - Conversión LiteRT de RE-USE (misma red, otros pesos): https://huggingface.co/litert-community/NVIDIA-NemotronLabs-RE-USE-LiteRT

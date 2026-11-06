@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Wiself/Dark-Scarlett-v1.0-QAT-26B-A4B-Voice | Delta de 1.5 GB (no completo) | No disponible | Apache 2.0 | HuggingFace |
-| Wiself/Dark-Scarlett-v1.0-26B-A4B-Voice | Delta de 1.5 GB (no completo) | No disponible | Apache 2.0 | HuggingFace |
-| ReadyArt/Dark-Scarlett-v1.0-26B-A4B | 26B total / 4B activos (MoE) | No disponible | No indicada | HuggingFace |
-| google/gemma-4-26B-A4B-it-qat-q4_0-unquantized | 26B total / 4B activos (MoE) | No disponible | Gemma terms | HuggingFace |
+| Wiself/Dark-Scarlett-v1.0-QAT-26B-A4B-Voice | Delta de 1.5 GB (no completo) | No disponible | Apache 2.0 | Hugging Face |
+| Wiself/Dark-Scarlett-v1.0-26B-A4B-Voice | Delta de 1.5 GB (no completo) | No disponible | Apache 2.0 | Hugging Face |
+| ReadyArt/Dark-Scarlett-v1.0-26B-A4B | 26B total / 4B activos (MoE) | No disponible | No indicada | Hugging Face |
+| google/gemma-4-26B-A4B-it-qat-q4_0-unquantized | 26B total / 4B activos (MoE) | No disponible | Gemma terms | Hugging Face |
 
 La diferencia principal entre las dos variantes de Voice es que la version QAT esta calibrada para GGUFs derivados del checkpoint QAT, mientras que la version estandar es el ajuste exacto para GGUFs basados en el instruct estandar. El modelo base QAT tiene la ventaja de una menor perdida de perplejidad en cuantizaciones bajas, pero no incluye la voz de Scarlett.
 
@@ -75,7 +75,7 @@ La diferencia principal entre las dos variantes de Voice es que la version QAT e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wiself/Dark-Scarlett-v1.0-QAT-26B-A4B-Voice
+- Modelo en Hugging Face: https://huggingface.co/Wiself/Dark-Scarlett-v1.0-QAT-26B-A4B-Voice
 - Herramienta Voice: https://huggingface.co/Wiself/voice
 - Modelo base QAT: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Modelo de voz original: https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-26B-A4B

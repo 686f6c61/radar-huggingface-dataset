@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`squarefk/sam3-mirror` es un espejo (mirror) no oficial del checkpoint `sam3.pt` de Meta para SAM 3, publicado en HuggingFace por el usuario `squarefk`. No se trata de un modelo nuevo ni de un fine-tuning: el autor declara explicitamente que los pesos no han sido modificados ("Modifications to weights: None") y que el repositorio no constituye un lanzamiento oficial ni un aval de Meta. El objetivo del repositorio es permitir la inferencia local de segmentacion de imagenes en un punto concreto del tiempo, con un snapshot fijado el 14 de octubre de 2026.
+`squarefk/sam3-mirror` es un espejo (mirror) no oficial del checkpoint `sam3.pt` de Meta para SAM 3, publicado en Hugging Face por el usuario `squarefk`. No se trata de un modelo nuevo ni de un fine-tuning: el autor declara explicitamente que los pesos no han sido modificados ("Modifications to weights: None") y que el repositorio no constituye un lanzamiento oficial ni un aval de Meta. El objetivo del repositorio es permitir la inferencia local de segmentacion de imagenes en un punto concreto del tiempo, con un snapshot fijado el 14 de octubre de 2026.
 
 El repositorio ocupa 3,5 GB y contiene un unico checkpoint PyTorch (`sam3.pt`, 3.450.062.241 bytes) con hash SHA-256 documentado, lo que permite verificar la integridad de la descarga frente al peso original alojado en `facebook/sam3`. La model card indica que el archivo debe usarse con el codigo upstream de SAM 3 y su procesador de imagenes, y advierte de que un fichero `.pt` no es un directorio `save_pretrained`, por lo que los ejemplos genericos de Transformers del Hub no son aplicables.
 
@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| squarefk/sam3-mirror | no disponible | no aplica | no disponible | SAM License (sin relicencia) | HuggingFace, mirror no oficial, no se actualiza automaticamente |
-| facebook/sam3 (original) | no disponible | no aplica | no disponible | SAM License | HuggingFace, repositorio oficial, puede cambiar de revision |
+| squarefk/sam3-mirror | no disponible | no aplica | no disponible | SAM License (sin relicencia) | Hugging Face, mirror no oficial, no se actualiza automaticamente |
+| facebook/sam3 (original) | no disponible | no aplica | no disponible | SAM License | Hugging Face, repositorio oficial, puede cambiar de revision |
 | Otras alternativas de segmentacion de imagenes | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 Unicamente es posible comparar el espejo con el repositorio original: comparten pesos identicos, pero difieren en gobernanza (oficial frente a no oficial), en actualizacion (el oficial evoluciona; el espejo es un snapshot fijado) y en trazabilidad (el espejo documenta hash SHA-256 y revision de codigo probada). No se dispone de datos de rendimiento de ninguno de los dos.

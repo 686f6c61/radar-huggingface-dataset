@@ -92,7 +92,7 @@ La comparación en términos de parámetros y longitud de contexto no es signifi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/msbayindir/rag-chunker-models
+- Repositorio en Hugging Face: https://huggingface.co/msbayindir/rag-chunker-models
 - Proyecto rag-chunker (GitHub): https://github.com/msbayindir/rag-chunker
 - Discusión de bienvenida del proyecto: https://github.com/msbayindir/rag-chunker/discussions/1
 - Origen de las exportaciones ONNX (layout): https://media.githubusercontent.com/media/PT-Perkasa-Pilar-Utama/ppu-paddle-ocr-models/main/layout

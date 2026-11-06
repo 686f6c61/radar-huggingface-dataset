@@ -18,7 +18,7 @@ El modelo tiene 75.207.317 parametros (aproximadamente 75 millones), un tamano t
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el repositorio no documenta cuantizaciones) |
 | Idiomas soportados | tw (twi), sv (sueco) |
-| Licencia | no disponible en la ficha de HuggingFace; la model card remite a la licencia del modelo upstream, que suele ser CC-BY 4.0 para OPUS-MT |
+| Licencia | no disponible en la ficha de Hugging Face; la model card remite a la licencia del modelo upstream, que suele ser CC-BY 4.0 para OPUS-MT |
 | Formato de pesos | safetensors (con tokenizadores JSON: `tokenizer-enc.json` y `tokenizer-dec.json`) |
 
 ## Arquitectura y entrenamiento
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-tw-sv | 75,2 M | no disponible | tw → sv | no disponible (upstream tipicamente CC-BY 4.0) | HuggingFace, empaquetado para Candle |
-| Helsinki-NLP/opus-mt-tw-sv | no disponible (mismo origen) | no disponible | tw → sv | segun model card upstream | HuggingFace |
-| Otros modelos OPUS-MT (por ejemplo, pares hacia/desde sueco) | ~75 M en la mayoria de variantes | no disponible | pares especificos | CC-BY 4.0 (habitual) | HuggingFace |
+| malinali-app/opus-mt-tw-sv | 75,2 M | no disponible | tw → sv | no disponible (upstream tipicamente CC-BY 4.0) | Hugging Face, empaquetado para Candle |
+| Helsinki-NLP/opus-mt-tw-sv | no disponible (mismo origen) | no disponible | tw → sv | segun model card upstream | Hugging Face |
+| Otros modelos OPUS-MT (por ejemplo, pares hacia/desde sueco) | ~75 M en la mayoria de variantes | no disponible | pares especificos | CC-BY 4.0 (habitual) | Hugging Face |
 
 La comparativa con alternativas de la misma categoria se limita a otros modelos OPUS-MT, ya que no se han proporcionado datos de otros sistemas de traduccion tw-sv en la informacion disponible.
 
@@ -81,7 +81,7 @@ La comparativa con alternativas de la misma categoria se limita a otros modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-tw-sv
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-tw-sv
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tw-sv
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

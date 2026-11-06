@@ -84,8 +84,8 @@ El autor advierte que el primer rollout de RL tras un bloque solo SFT lo juega l
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter2 | 27,78 mil millones | No disponible | Métricas solo del juego `cd82-fb555c5d` (tabla anterior); sin benchmarks estándar | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | 27,78 mil millones | No disponible | No disponible en la información proporcionada | Apache 2.0 (según el campo `license` del derivado) | HuggingFace |
+| E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter2 | 27,78 mil millones | No disponible | Métricas solo del juego `cd82-fb555c5d` (tabla anterior); sin benchmarks estándar | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base) | 27,78 mil millones | No disponible | No disponible en la información proporcionada | Apache 2.0 (según el campo `license` del derivado) | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (agentes sobre ARC-AGI-3 o checkpoints de internalización de conocimiento) en la información proporcionada. Cualquier comparación con modelos de ~27B de propósito general carecería de base empírica aquí.
 
@@ -103,6 +103,6 @@ No se dispone de datos de otros modelos comparables de la misma categoría (agen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter2
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

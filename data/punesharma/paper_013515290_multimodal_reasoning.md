@@ -62,7 +62,7 @@ No disponible. No se puede comparar con modelos de razonamiento multimodal (como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/punesharma/paper_013515290_multimodal_reasoning
+- Repositorio en Hugging Face: https://huggingface.co/punesharma/paper_013515290_multimodal_reasoning
 - Resultados de busqueda web (no enlazados directamente al modelo):
   - Encuesta sobre agentes multimodales: https://link.springer.com/article/10.1007/s11390-025-4802-8
   - Survey sobre Large Multimodal Reasoning Models: https://arxiv.org/abs/2505.04921

@@ -49,7 +49,7 @@ El punto de partida no es el modelo base en frío, sino un warm start desde `ipo
 - Estudio de la dinámica de online IPO: los 19 checkpoints, espaciados cada 250 pasos, permiten trazar cómo evolucionan las preferencias y el comportamiento de rechazo a lo largo del entrenamiento.
 - Investigación sobre riesgo entrópico en RLHF: sirve como referencia de configuración con tau = 10 y como punto de comparación frente a variantes con corrección de sesgo.
 - Auditoría de seguridad de modelos ajustados con PKU-SafeRLHF: se puede evaluar si la optimización de preferencias de seguridad degrada la utilidad general del modelo base de 2B.
-- Análisis de linaje de artefactos: al estar verificada la identidad byte a byte con `rat-lab/rlj-ec2-fig9-K2-van`, es útil como caso de estudio de trazabilidad y procedencia de pesos en HuggingFace.
+- Análisis de linaje de artefactos: al estar verificada la identidad byte a byte con `rat-lab/rlj-ec2-fig9-K2-van`, es útil como caso de estudio de trazabilidad y procedencia de pesos en Hugging Face.
 - Experimentos de bajo coste en una sola GPU: al ser un adaptador sobre un modelo de 2B, se puede cargar, fusionar y evaluar en hardware de consumo para pruebas exploratorias.
 - No se recomienda su uso como componente de producto en atención al cliente, generación de código en producción o pipelines agénticos, porque no hay licencia declarada, ni evaluación publicada, ni garantías de soporte.
 
@@ -72,9 +72,9 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rat-lab/mh-ec2-ttomd-K2-van | Adaptador LoRA (online IPO, riesgo entrópico, K=2, sin debiasing) | No disponible (base de ~2,6 mil millones) | No disponible | No disponible | Pública en HuggingFace, 0 descargas |
-| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | Modelo base con SFT | Aproximadamente 2,6 mil millones | 8.192 tokens según la documentación de Gemma 2 | Términos de Gemma (no verificados en la información disponible) | Pública en HuggingFace |
-| rat-lab/rlj-ec2-fig9-K2-van | Repositorio de origen, contenido idéntico byte a byte | No disponible | No disponible | No disponible | Pública en HuggingFace |
+| rat-lab/mh-ec2-ttomd-K2-van | Adaptador LoRA (online IPO, riesgo entrópico, K=2, sin debiasing) | No disponible (base de ~2,6 mil millones) | No disponible | No disponible | Pública en Hugging Face, 0 descargas |
+| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | Modelo base con SFT | Aproximadamente 2,6 mil millones | 8.192 tokens según la documentación de Gemma 2 | Términos de Gemma (no verificados en la información disponible) | Pública en Hugging Face |
+| rat-lab/rlj-ec2-fig9-K2-van | Repositorio de origen, contenido idéntico byte a byte | No disponible | No disponible | No disponible | Pública en Hugging Face |
 | Otras celdas de la tabla cobertura x debiasing | Adaptadores LoRA con corrección de sesgo u otros valores de K | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-ec2-ttomd-K2-van
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-ec2-ttomd-K2-van
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Repositorio de origen citado en la model card: https://huggingface.co/rat-lab/rlj-ec2-fig9-K2-van
 - Dataset de entrenamiento: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF

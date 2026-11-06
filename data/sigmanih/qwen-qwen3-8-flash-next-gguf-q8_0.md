@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos entre esta cuantizacion y el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sigmanih/Qwen-Qwen3.8-Flash-Next-GGUF-Q8_0
+- Modelo en Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen3.8-Flash-Next-GGUF-Q8_0
 - Repositorio Sigma Studio: https://github.com/Sigmanih/SigmaStudio
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

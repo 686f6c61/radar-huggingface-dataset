@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de datos de otros modelos ASR esp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheBiggyBang/whisper-small-tunisian-derja-ct2
+- Hugging Face: https://huggingface.co/TheBiggyBang/whisper-small-tunisian-derja-ct2
 - Modelo base (Transformers): https://huggingface.co/TheBiggyBang/whisper-small-tunisian-derja
 - Repositorio GitHub (código, cuaderno de entrenamiento y evaluación): https://github.com/TheBiggyBang1/whisper-tn-ct2
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

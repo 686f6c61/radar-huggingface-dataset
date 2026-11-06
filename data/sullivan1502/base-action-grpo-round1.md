@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sullivan1502/base-action-grpo-round1` es un ajuste fino (fine-tune) del modelo base `sullivan1502/base-action-pretrain`, entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de optimización de políticas para razonamiento matemático introducida en el artículo DeepSeekMath. El autor, sullivan1502, ha publicado este modelo en HuggingFace con el objetivo de explorar el entrenamiento de modelos de lenguaje mediante refuerzo, aunque no se proporciona documentación detallada sobre su propósito final ni sus capacidades específicas.
+El modelo `sullivan1502/base-action-grpo-round1` es un ajuste fino (fine-tune) del modelo base `sullivan1502/base-action-pretrain`, entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de optimización de políticas para razonamiento matemático introducida en el artículo DeepSeekMath. El autor, sullivan1502, ha publicado este modelo en Hugging Face con el objetivo de explorar el entrenamiento de modelos de lenguaje mediante refuerzo, aunque no se proporciona documentación detallada sobre su propósito final ni sus capacidades específicas.
 
 Con aproximadamente 81,8 millones de parámetros, se trata de un modelo de tamaño pequeño, lo que sugiere que está orientado a tareas de generación de texto con requisitos de hardware modestos. La arquitectura está etiquetada como "llama", lo que indica que sigue el diseño de transformer de Llama, aunque no se especifican detalles como el número de capas o la longitud de contexto. El repositorio contiene pesos en formato safetensors y un tokenizador WordLevel de vocabulario cerrado, según los archivos del repositorio.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: para un modelo de 81,8 millones de parámetros en FP16, el tamaño de los pesos es de aproximadamente 164 MB (81,8M × 2 bytes). En cuantización de 8 bits, sería unos 82 MB. Por tanto, cabría en cualquier GPU con al menos 1 GB de VRAM, incluso en GPUs integradas.
 - GPU recomendadas: cualquier GPU con soporte CUDA, como NVIDIA GTX 1050 Ti (4 GB) o superior. También puede ejecutarse en CPU con suficiente RAM (al menos 2 GB para el modelo en FP16).
 - Compatibilidad con consumer GPU: sí, es compatible con GPUs de consumo como RTX 3060, RTX 4060, etc.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, TGI, o mediante la API de HuggingFace. También es posible usar llama.cpp si se convierte a GGUF, aunque no se proporcionan archivos GGUF en el repositorio.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, TGI, o mediante la API de Hugging Face. También es posible usar llama.cpp si se convierte a GGUF, aunque no se proporcionan archivos GGUF en el repositorio.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna, la generación de 128 tokens debería ser casi instantánea, pero depende del hardware y de la implementación.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sullivan1502/base-action-grpo-round1
+- Modelo en Hugging Face: https://huggingface.co/sullivan1502/base-action-grpo-round1
 - Modelo base: https://huggingface.co/sullivan1502/base-action-pretrain
 - Repositorio del modelo (archivos): https://huggingface.co/sullivan1502/base-action-grpo/tree/main (nota: el enlace apunta a `base-action-grpo`, no a `base-action-grpo-round1`, pero puede contener información relacionada)
 - Página de OpenModelMap: https://openmodelmap.com/model/sullivan1502/base-grpo-round1

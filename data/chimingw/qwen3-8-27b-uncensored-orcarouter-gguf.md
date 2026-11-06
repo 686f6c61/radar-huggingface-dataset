@@ -80,7 +80,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-GGUF
+- Repositorio Hugging Face: https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-GGUF
 - Modelo base (OrcaRouter FP8): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión FP8 oficial: https://huggingface.co/Qwen/Qwen3.8-27B-FP8

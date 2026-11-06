@@ -68,8 +68,8 @@ No disponible. No se proporcionan datos de modelos comparables en la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arcadia-impact/scimt-dispatch-final-v1
-- Perfil de Arcadia Impact en HuggingFace: https://huggingface.co/datasets/arcadia-impact/
+- Hugging Face: https://huggingface.co/arcadia-impact/scimt-dispatch-final-v1
+- Perfil de Arcadia Impact en Hugging Face: https://huggingface.co/datasets/arcadia-impact/
 - Sitio web de Arcadia Impact: https://www.arcadiaimpact.org/
 - Página de la AI Governance Taskforce: https://www.arcadiaimpact.org/ai-governance-taskforce
 - Anuncio de la convocatoria 2026: https://opportunitydesk.org/2026/08/10/arcadia-impact-ai-governance-taskforce-2026/

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-epoch18 (este) | 1.418M | 2048 | apache-2.0 | HuggingFace | Checkpoint de unlearning, época 18/20 |
-| locuslab/tofu_ft_phi-1.5 | 1.418M | 2048 | no disponible en la información | HuggingFace | Modelo base fine-tuned sobre TOFU |
-| microsoft/phi-1_5 | 1.418M | 2048 | MIT (según ficha original de Microsoft) | HuggingFace | Modelo original sin TOFU |
-| Otros checkpoints del mismo grupo `unl-reset` | 1.418M | 2048 | apache-2.0 | HuggingFace | Variantes del protocolo IHL/reset |
+| unl-reset/tofu-phi-1_5-...-epoch18 (este) | 1.418M | 2048 | apache-2.0 | Hugging Face | Checkpoint de unlearning, época 18/20 |
+| locuslab/tofu_ft_phi-1.5 | 1.418M | 2048 | no disponible en la información | Hugging Face | Modelo base fine-tuned sobre TOFU |
+| microsoft/phi-1_5 | 1.418M | 2048 | MIT (según ficha original de Microsoft) | Hugging Face | Modelo original sin TOFU |
+| Otros checkpoints del mismo grupo `unl-reset` | 1.418M | 2048 | apache-2.0 | Hugging Face | Variantes del protocolo IHL/reset |
 
 No se dispone de comparaciones de rendimiento numérico entre estos modelos en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de comparaciones de rendimiento numérico entre estos modelos en l
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch18)
+- [Modelo en Hugging Face](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch18)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - [Perfil del autor: unl-reset](https://huggingface.co/unl-reset)

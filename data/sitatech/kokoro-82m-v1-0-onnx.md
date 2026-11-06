@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- [HuggingFace: sitatech/Kokoro-82M-v1.0-ONNX](https://huggingface.co/sitatech/Kokoro-82M-v1.0-ONNX)
+- [Hugging Face: sitatech/Kokoro-82M-v1.0-ONNX](https://huggingface.co/sitatech/Kokoro-82M-v1.0-ONNX)
 - [Modelo base: hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)
 - [Libreria kokoro-js en NPM](https://npmjs.com/package/kokoro-js)
 - [Misaki (conversion de texto a fonemas)](https://github.com/hexgrad/misaki)

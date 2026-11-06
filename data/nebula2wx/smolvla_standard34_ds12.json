@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "nebula2wx/smolvla_standard34_ds12",
+  "slug": "nebula2wx-smolvla_standard34_ds12",
+  "author": "nebula2wx",
+  "url": "https://huggingface.co/nebula2wx/smolvla_standard34_ds12",
+  "created_at": "2026-11-03T18:32:11.000Z",
+  "updated_at": "2026-11-04T11:30:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Whyynnot/standard_3_4_red_pick_up_20261031_220542",
+    "dataset:Whyynnot/standard_3_4_red_pick_up_enhance_20261031_225916",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 19790834148,
+  "storage_human": "19.8 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nebula2wx/smolvla_standard34_ds12 · Hugging Face",
+      "url": "https://huggingface.co/nebula2wx/smolvla_standard34_ds12",
+      "snippet": "nebula2wx / smolvla_standard34_ds12 Like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month -"
+    },
+    {
+      "title": "nebula2wx (wenxuan) - Hugging Face",
+      "url": "https://huggingface.co/nebula2wx",
+      "snippet": "nebula2wx/pi05_standard_task_pick_red_block_plate Robotics • 4B•Updated 4 days ago• 12"
+    }
+  ]
+}

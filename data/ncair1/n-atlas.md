@@ -4,15 +4,15 @@
 
 N-ATLaS es un modelo de lenguaje de tipo text-to-text de aproximadamente 8.030 millones de parámetros (8,03B), publicado por el NCAIR1, identificado con el Centro Nacional de Inteligencia Artificial y Robótica (NCAIR) de Nigeria (NITDA). El nombre se expande en la documentación institucional como "Nigerian Atlas for Languages & AI at Scale", un proyecto descrito como un modelo de lenguaje multilingüe de código abierto orientado a comprender y generar las lenguas y voces de Nigeria, con el objetivo declarado de avanzar en el procesamiento de lenguaje natural para idiomas infrarrepresentados.
 
-El repositorio de HuggingFace se publicó el 19 de septiembre de 2025 y se actualizó el 23 de septiembre de 2025, con un tamaño de 16,1 GB compatible con pesos en precisión de 16 bits para un modelo de este tamaño. La etiqueta de arquitectura de HuggingFace indica `llama`, por lo que se trata previsiblemente de un transformer decoder-only con normalización RMSNorm, atención con RoPE y decodificación autorregresiva, aunque la ficha del modelo no detalla la configuración exacta ni la longitud de contexto.
+El repositorio de Hugging Face se publicó el 19 de septiembre de 2025 y se actualizó el 23 de septiembre de 2025, con un tamaño de 16,1 GB compatible con pesos en precisión de 16 bits para un modelo de este tamaño. La etiqueta de arquitectura de Hugging Face indica `llama`, por lo que se trata previsiblemente de un transformer decoder-only con normalización RMSNorm, atención con RoPE y decodificación autorregresiva, aunque la ficha del modelo no detalla la configuración exacta ni la longitud de contexto.
 
-Su relevancia actual reside en dos factores: por un lado, se posiciona como una apuesta de soberanía lingüística para lenguas africanas, un segmento con muy pocos modelos abiertos de escala media (7-9B); por otro, el acceso está restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de descargar los pesos. No se han publicado en la información disponible ni la licencia, ni los idiomas exactos, ni resultados de benchmarks.
+Su relevancia actual reside en dos factores: por un lado, se posiciona como una apuesta de soberanía lingüística para lenguas africanas, un segmento con muy pocos modelos abiertos de escala media (7-9B); por otro, el acceso está restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargar los pesos. No se han publicado en la información disponible ni la licencia, ni los idiomas exactos, ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `llama` en HuggingFace; configuración exacta no disponible) |
+| Arquitectura | Transformer decoder-only (etiqueta `llama` en Hugging Face; configuración exacta no disponible) |
 | Parametros totales | 8.030.261.248 (~8,03B) |
 | Parametros activos | No aplica (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | No disponible |
@@ -68,17 +68,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| N-ATLaS (NCAIR1) | 8,03B | No disponible | No disponible | Multilingue para lenguas nigerianas | Gated en HuggingFace |
-| Llama 3.1 8B (Meta) | 8,03B | 128.000 tokens | Llama 3.1 Community License | Multilingue generalista (8 idiomas) | Abierto en HuggingFace |
-| Qwen2.5 7B (Alibaba) | 7,6B | 32.768 tokens nativos (hasta 131.072 con YaRN) | Apache 2.0 (variantes) | Multilingue, fuerte en codigo y matematicas | Abierto en HuggingFace |
-| Aya-23 8B (Cohere For AI) | 8B | 8.000 tokens | CC-BY-NC 4.0 (no comercial) | Multilingue de investigacion (23 idiomas) | Abierto en HuggingFace |
+| N-ATLaS (NCAIR1) | 8,03B | No disponible | No disponible | Multilingue para lenguas nigerianas | Gated en Hugging Face |
+| Llama 3.1 8B (Meta) | 8,03B | 128.000 tokens | Llama 3.1 Community License | Multilingue generalista (8 idiomas) | Abierto en Hugging Face |
+| Qwen2.5 7B (Alibaba) | 7,6B | 32.768 tokens nativos (hasta 131.072 con YaRN) | Apache 2.0 (variantes) | Multilingue, fuerte en codigo y matematicas | Abierto en Hugging Face |
+| Aya-23 8B (Cohere For AI) | 8B | 8.000 tokens | CC-BY-NC 4.0 (no comercial) | Multilingue de investigacion (23 idiomas) | Abierto en Hugging Face |
 
 La comparacion se limita a parametros, contexto y licencia, ya que no hay resultados de benchmarks publicados para N-ATLaS que permitan contrastar calidad. La ventaja diferencial de N-ATLaS es la cobertura declarada de lenguas nigerianas, ausente en Llama 3.1, Qwen2.5 y Aya-23, aunque su acceso restringido y la falta de licencia publica limitan la adopcion inmediata.
 
 ## Limitaciones y advertencias
 
 - Licencia no declarada: al no especificarse la licencia, no se puede confirmar si el uso comercial esta permitido. Se debe contactar con NCAIR antes de cualquier despliegue en produccion.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad academica y la integracion en pipelines automatizados.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad academica y la integracion en pipelines automatizados.
 - Ausencia de benchmarks publicos: no hay evidencia verificable de rendimiento en tareas estandar, lo que dificulta estimar la calidad frente a alternativas consolidadas.
 - Metadatos incompletos: no se declaran idiomas, contexto ni tipos de cuantizacion, lo que impide planificar con precision despliegues de contexto largo.
 - Cobertura linguistica incierta: aunque el proyecto se presenta como multilingue para Nigeria, no hay lista oficial de idiomas ni tasas de acierto por idioma.
@@ -89,7 +89,7 @@ La comparacion se limita a parametros, contexto y licencia, ya que no hay result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NCAIR1/N-ATLaS
+- Modelo en Hugging Face: https://huggingface.co/NCAIR1/N-ATLaS
 - Arbol de ficheros del repositorio: https://huggingface.co/NCAIR1/N-ATLaS/tree/main
 - Pagina institucional del proyecto LLM en NCAIR: https://ncair.nitda.gov.ng/llm/
 - Perfil del autor en aimodels.fyi: https://www.aimodels.fyi/creators/huggingFace/NCAIR1

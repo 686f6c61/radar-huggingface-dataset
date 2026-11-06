@@ -19,7 +19,7 @@ El ajuste se realizó durante 50 épocas, con learning rate 5e-05, batch size 32
 | Tarea principal | clasificación de tokens / reconocimiento de entidades nombradas (NER) |
 | Modelo base | BeardedMonster/SabiBERTa-135M |
 | Métrica reportada | span_f1 medio 0,8860 en MasakhaNER 2.0 (nya) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 El checkpoint es un ajuste fino de SabiBERTa-135M, un encoder de 135,9 millones de parámetros etiquetado como modernbert. La model card no describe la arquitectura interna, la composición del corpus, el número de tokens de entrenamiento ni si hubo búsqueda de hiperparámetros; solo indica el ajuste supervisado sobre MasakhaNER 2.0 para la lengua nya con los hiperparámetros citados. No se emplean RLHF ni DPO, ya que la tarea es clasificación de tokens y no generación.
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad | Resultado |
 |---|---|---|---|---|---|---|
-| SabiBERTa-135M-masakhaner2-nya | 135,9 M | no disponible; max length 256 en el ajuste | NER en nya | no disponible | HuggingFace | span_f1 0,8860 |
-| SabiBERTa-135M | 135,9 M | no disponible | modelo base sin ajuste NER documentado | no disponible | HuggingFace | no disponible |
+| SabiBERTa-135M-masakhaner2-nya | 135,9 M | no disponible; max length 256 en el ajuste | NER en nya | no disponible | Hugging Face | span_f1 0,8860 |
+| SabiBERTa-135M | 135,9 M | no disponible | modelo base sin ajuste NER documentado | no disponible | Hugging Face | no disponible |
 | Alternativas NER para nya | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada otros modelos NER para nya con los que comparar parámetros, contexto o rendimiento. La comparación con el modelo base no es equivalente porque este checkpoint está especializado en NER.
@@ -75,11 +75,11 @@ No se han identificado en la información proporcionada otros modelos NER para n
 - El esquema de etiquetas está fijado por MasakhaNER 2.0; para etiquetas propias o dominios específicos sería necesario reentrenar o ajustar.
 - La longitud máxima de 256 tokens en el ajuste obliga a fragmentar documentos largos, lo que puede romper entidades que cruzan fragmentos.
 - No se documentan la composición del dataset, el preprocesado ni evaluaciones de sesgo; existe riesgo de heredar sesgos del corpus y de sobreajustar tras 50 épocas.
-- El repositorio tiene 0 descargas y 0 likes, y no se ha identificado validación externa; el pipeline de HuggingFace no está disponible.
+- El repositorio tiene 0 descargas y 0 likes, y no se ha identificado validación externa; el pipeline de Hugging Face no está disponible.
 - No es un modelo generativo: no procede hablar de alucinación de texto, pero sí de falsos positivos y falsos negativos en la detección de entidades.
 - No se publican variantes cuantizadas ni se documenta soporte para vLLM, TGI o llama.cpp.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-nya)
+- [Modelo en Hugging Face](https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-nya)
 - [Modelo base SabiBERTa-135M](https://huggingface.co/BeardedMonster/SabiBERTa-135M)
 - No se han encontrado enlaces adicionales relevantes en los resultados de búsqueda web; las entradas devueltas corresponden a páginas genéricas de Google.

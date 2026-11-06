@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Lythri-7B-A4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Lythri-7B-A4B-GGUF
 - Modelo base: https://huggingface.co/Lythri/Lythri-7B-A4B
 - Pagina de vision general del modelo (mradermacher): https://hf.tst.eu/model#Lythri-7B-A4B-GGUF
 - FAQ y solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

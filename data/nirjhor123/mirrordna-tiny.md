@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MirrorDNA (mirrordna-tiny) | 2,35 M | 1.024 pb | Encoder convolucional con tokenizador equivariante al complemento inverso | MIT | HuggingFace + GitHub |
-| DNABERT-2 | ~117 M | ~512 pb (k-mer) | Transformer con tokenizacion BPE de genoma | MIT | HuggingFace |
-| Nucleotide Transformer | 500 M - 2,5 B | 1.000 - 12.000 pb | Transformer entrenado en multi-especie | CC-BY-NC-SA 4.0 (variantes) | HuggingFace |
+| MirrorDNA (mirrordna-tiny) | 2,35 M | 1.024 pb | Encoder convolucional con tokenizador equivariante al complemento inverso | MIT | Hugging Face + GitHub |
+| DNABERT-2 | ~117 M | ~512 pb (k-mer) | Transformer con tokenizacion BPE de genoma | MIT | Hugging Face |
+| Nucleotide Transformer | 500 M - 2,5 B | 1.000 - 12.000 pb | Transformer entrenado en multi-especie | CC-BY-NC-SA 4.0 (variantes) | Hugging Face |
 | Enformer | ~250 M | ~200 kb | Transformer con atencion sobre regiones largas | Apache 2.0 (codigo) / no comercial en pesos | GitHub |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada; la comparativa se limita a parametros, contexto y licencia.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nirjhor123/mirrordna-tiny
+- Hugging Face: https://huggingface.co/nirjhor123/mirrordna-tiny
 - Codigo y benchmarks: https://github.com/NIRJHOR-DATTA/MirrorDNA
 - Articulo: *Learning Strand-Equivariant Tokenizations of DNA with MirrorDNA* (RECOMB 2027, en envio; sin enlace disponible)
 - Cita: pendiente de publicacion segun la model card

@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Alternativa | Rol | Pesos | Memoria residente | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller (este repo) | Prefill desagregado | NVFP4, 12,8 GiB en disco, 64 partes por variante | 0 MiB adicionales (anillo sobre memoria del output head) | apache-2.0 | HuggingFace, 127 descargas, 11 likes |
-| unsloth/Qwen3.8-27B-GGUF (IQ1_S / IQ1_M / IQ2_XXS / IQ2_S) | Decode | GGUF de bajos bits | no disponible | no disponible | HuggingFace |
-| GGUF IQ1_S en solitario, sin prefill NVFP4 | Prefill y decode con los mismos pesos | GGUF IQ1_S | no disponible | no disponible | HuggingFace |
+| ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller (este repo) | Prefill desagregado | NVFP4, 12,8 GiB en disco, 64 partes por variante | 0 MiB adicionales (anillo sobre memoria del output head) | apache-2.0 | Hugging Face, 127 descargas, 11 likes |
+| unsloth/Qwen3.8-27B-GGUF (IQ1_S / IQ1_M / IQ2_XXS / IQ2_S) | Decode | GGUF de bajos bits | no disponible | no disponible | Hugging Face |
+| GGUF IQ1_S en solitario, sin prefill NVFP4 | Prefill y decode con los mismos pesos | GGUF IQ1_S | no disponible | no disponible | Hugging Face |
 | Otras tecnicas de cuantizacion para el mismo modelo base | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de parametros, contexto, rendimiento ni licencia de las alternativas mas alla del nombre del repositorio base, por lo que la comparacion cuantitativa queda limitada a la memoria residente y al rol de cada artefacto.
@@ -86,7 +86,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de las a
 - El rendimiento depende criticamente del SSD; no se publican cifras de latencia ni de throughput que permitan dimensionar el sistema.
 - En modo servidor, el troceado de prompt para capturar estado recurrente provoca que el sistema ODP re-transmita bloques; el autor recomienda `-cram 0 -ctxcp 0` solo para benchmarking, lo que implica una penalizacion en uso normal.
 - Si la build no incluye TLS, es necesario poblar la cache manualmente con `hf download`.
-- Discrepancia de identificadores: el ID de HuggingFace es `ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller`, mientras que los ejemplos del README invocan `ISTA-DASLab/Qwen3.8-27B-disaggregated-NVFP4-prefill`. Conviene verificar cual resuelve correctamente antes de automatizar descargas.
+- Discrepancia de identificadores: el ID de Hugging Face es `ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller`, mientras que los ejemplos del README invocan `ISTA-DASLab/Qwen3.8-27B-disaggregated-NVFP4-prefill`. Conviene verificar cual resuelve correctamente antes de automatizar descargas.
 - Discrepancia de tamano: el nombre comercial indica 27B, pero el recuento real de parametros facilitado es de 24.350.556.160.
 - Sin datos de benchmarks, de idiomas soportados ni de contexto, no es posible evaluar la calidad final ni el sesgo del sistema completo; se desconoce tambien la composicion del dataset de entrenamiento y si hubo RLHF o DPO.
 - Riesgo de alucinacion: no evaluado ni documentado en la informacion disponible.
@@ -95,7 +95,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de las a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller
+- Hugging Face: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Repositorio del motor: https://github.com/IST-DASLab/disaggregated-llama.cpp
 - Referencia citada en los ejemplos del README: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-disaggregated-NVFP4-prefill

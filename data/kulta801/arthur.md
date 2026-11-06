@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kulta801/arthur es un adaptador LoRA de tipo DreamBooth para generación de imágenes a partir de texto, entrenado sobre el checkpoint krea/Krea-2-Raw y pensado para ejecutarse sobre krea/Krea-2-Turbo. Lo publica el usuario kulta801 en HuggingFace bajo licencia Apache 2.0 y con la librería diffusers. No se trata de un modelo fundacional, sino de un conjunto de pesos de adaptación de bajo rango que se cargan sobre el modelo base para inyectar un concepto o estilo concreto, activado mediante la palabra clave `ARTHX`.
+kulta801/arthur es un adaptador LoRA de tipo DreamBooth para generación de imágenes a partir de texto, entrenado sobre el checkpoint krea/Krea-2-Raw y pensado para ejecutarse sobre krea/Krea-2-Turbo. Lo publica el usuario kulta801 en Hugging Face bajo licencia Apache 2.0 y con la librería diffusers. No se trata de un modelo fundacional, sino de un conjunto de pesos de adaptación de bajo rango que se cargan sobre el modelo base para inyectar un concepto o estilo concreto, activado mediante la palabra clave `ARTHX`.
 
 El interés práctico de esta ficha reside en el ecosistema en el que se inserta: Krea 2 se distribuye como dos checkpoints complementarios, RAW (base no destilado, usado para entrenar) y Turbo (destilado a 8 pasos para inferencia rápida). El flujo recomendado por el autor es entrenar el LoRA sobre RAW y aplicarlo en inferencia sobre Turbo, ya que según la model card los LoRA entrenados en RAW se expresan con fuerza sobre Turbo. Esto reduce el coste de generación a 8 pasos sin guiado por clasificador (`guidance_scale=0.0`).
 
@@ -23,7 +23,7 @@ La relevancia es limitada pero concreta: el repositorio no tiene descargas ni li
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA entrenado con DreamBooth sobre krea/Krea-2-Raw, siguiendo el entrenador "Krea 2 diffusers trainer" del repositorio de diffusers de HuggingFace. La model card indica explicitamente que los pesos se entrenaron con DreamBooth y que el prompt de instancia es `ARTHX`. No se especifica el rango del LoRA, las dimensiones de las matrices de adaptacion, el numero de pasos de entrenamiento, el tamano del dataset ni la composicion de las imagenes de entrenamiento: la seccion "Training details" de la model card sigue marcada como TODO.
+El artefacto es un adaptador LoRA entrenado con DreamBooth sobre krea/Krea-2-Raw, siguiendo el entrenador "Krea 2 diffusers trainer" del repositorio de diffusers de Hugging Face. La model card indica explicitamente que los pesos se entrenaron con DreamBooth y que el prompt de instancia es `ARTHX`. No se especifica el rango del LoRA, las dimensiones de las matrices de adaptacion, el numero de pasos de entrenamiento, el tamano del dataset ni la composicion de las imagenes de entrenamiento: la seccion "Training details" de la model card sigue marcada como TODO.
 
 La innovacion tecnica relevante no esta en el adaptador en si, sino en el esquema de dos checkpoints de Krea 2 que el autor describe: RAW es el modelo base no destilado sobre el que se entrena, y Turbo es un checkpoint destilado a 8 pasos pensado para inferencia rapida y de alta calidad. El flujo de trabajo documentado consiste en cargar `Krea2Pipeline.from_pretrained("krea/Krea-2-Turbo")` y despues `pipe.load_lora_weights("kulta801/arthur")`, generando con `num_inference_steps=8` y `guidance_scale=0.0`. No se documentan tecnicas adicionales como decodificacion especulativa, atencion lineal ni esquemas de RLHF o DPO, que en cualquier caso no aplican a un adaptador de difusion de este tipo.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | kulta801/arthur | LoRA DreamBooth | krea/Krea-2-Raw (entrenamiento) y krea/Krea-2-Turbo (inferencia) | 8 (receta Turbo) | apache-2.0 | repositorio publico, 0 descargas, 0 likes |
 | krea/Krea-2-Raw | checkpoint base no destilado | no aplica | no disponible | no disponible en la informacion proporcionada | referenciado como base del LoRA |
 | krea/Krea-2-Turbo | checkpoint destilado | Krea 2 | 8 | no disponible en la informacion proporcionada | referenciado como destino de inferencia |
-| Otros LoRA DreamBooth para diffusers (por ejemplo, adaptadores sobre SDXL o Flux) | LoRA DreamBooth | distintos segun familia | variable | variable segun autor | ampliamente disponibles en HuggingFace |
+| Otros LoRA DreamBooth para diffusers (por ejemplo, adaptadores sobre SDXL o Flux) | LoRA DreamBooth | distintos segun familia | variable | variable segun autor | ampliamente disponibles en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones, por lo que la comparativa se limita a tipo de artefacto, modelo base, receta de inferencia y licencia. Cualquier comparacion de calidad de imagen, fidelidad al concepto o velocidad quedaria sin sustento con la informacion disponible.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kulta801/arthur
+- Modelo en Hugging Face: https://huggingface.co/kulta801/arthur
 - Archivos del repositorio (pesos safetensors): https://huggingface.co/kulta801/arthur/tree/main
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia (destilado): https://huggingface.co/krea/Krea-2-Turbo

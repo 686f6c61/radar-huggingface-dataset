@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune del modelo base `unsloth/Qwen2.5-7B-Instruct`, desarrollado por el usuario HungryDino. El nombre del repositorio (`qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen1`) sugiere un experimento de ajuste fino orientado a una tarea específica, probablemente relacionada con la manipulación de números o el colapso de secuencias, pero no se ofrece ninguna descripción adicional en la model card. El entrenamiento se realizó con la librería Unsloth (para acelerar el proceso) y el framework TRL de HuggingFace, ambos indicados en los metadatos.
+Este modelo es un fine-tune del modelo base `unsloth/Qwen2.5-7B-Instruct`, desarrollado por el usuario HungryDino. El nombre del repositorio (`qwen_2.5_7b-cat_numbers-collapse_p10_twf-run3-gen1`) sugiere un experimento de ajuste fino orientado a una tarea específica, probablemente relacionada con la manipulación de números o el colapso de secuencias, pero no se ofrece ninguna descripción adicional en la model card. El entrenamiento se realizó con la librería Unsloth (para acelerar el proceso) y el framework TRL de Hugging Face, ambos indicados en los metadatos.
 
 El modelo hereda la arquitectura y capacidades del Qwen2.5-7B-Instruct original, un transformer decoder-only de 7 mil millones de parámetros con una ventana de contexto de 32.768 tokens. Está licenciado bajo Apache-2.0 y los pesos se distribuyen en formato safetensors. No se ha publicado información sobre el dataset de entrenamiento, el método de ajuste (p. ej., supervisión, RLHF) ni el propósito exacto del fine-tune, más allá de lo que sugiere el nombre. El repositorio tiene 0 descargas y 0 likes, lo que indica que es un experimento reciente o de uso interno.
 

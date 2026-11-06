@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TensorFluxEmbedder es un modelo publicado en HuggingFace por IstishadAlamTishad (Mohammed Istishad Alam Tishad), un ingeniero de IA/ML con intereses declarados en GAN, vision-language-action, difusión, LLM, generación de imágenes, series temporales y robótica. El nombre del repositorio sugiere que podría tratarse de un modelo de embeddings (codificación de texto o datos en vectores), posiblemente relacionado con TensorFlow, aunque no hay confirmación oficial.
+TensorFluxEmbedder es un modelo publicado en Hugging Face por IstishadAlamTishad (Mohammed Istishad Alam Tishad), un ingeniero de IA/ML con intereses declarados en GAN, vision-language-action, difusión, LLM, generación de imágenes, series temporales y robótica. El nombre del repositorio sugiere que podría tratarse de un modelo de embeddings (codificación de texto o datos en vectores), posiblemente relacionado con TensorFlow, aunque no hay confirmación oficial.
 
 El modelo fue creado el 25 de agosto de 2026 y, en el momento de la consulta, no registra descargas ni "me gusta", lo que indica que es una publicación reciente y sin adopción conocida. La licencia es Apache-2.0, lo que permitiría uso comercial y modificación, pero la model card está vacía más allá del encabezado de licencia, por lo que no se dispone de información técnica alguna. Su relevancia actual es incierta; se trata de un repositorio sin documentación que no permite evaluar su utilidad ni su rendimiento.
 
@@ -53,8 +53,8 @@ No disponible. No existe información técnica para comparar este modelo con alt
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/IstishadAlamTishad/TensorFluxEmbedder
-- Perfil del autor en HuggingFace: https://huggingface.co/IstishadAlamTishad
+- Repositorio de Hugging Face: https://huggingface.co/IstishadAlamTishad/TensorFluxEmbedder
+- Perfil del autor en Hugging Face: https://huggingface.co/IstishadAlamTishad
 - Perfil del autor en GitHub: https://github.com/Tishad07/
 - Sitio oficial de TensorFlow: https://www.tensorflow.org/ (referencia al nombre del modelo, no al modelo en sí)
 - Recursos de modelos de TensorFlow: https://www.tensorflow.org/resources/models-datasets (referencia al nombre del modelo, no al repositorio)

@@ -68,7 +68,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [majentik/BigBang-v1-MLX-2bit en HuggingFace](https://huggingface.co/majentik/BigBang-v1-MLX-2bit)
+- [majentik/BigBang-v1-MLX-2bit en Hugging Face](https://huggingface.co/majentik/BigBang-v1-MLX-2bit)
 - [Modelo base endless-frontier/BigBang-v1](https://huggingface.co/endless-frontier/BigBang-v1)
 - [Repositorio mlx-lm](https://github.com/ml-explore/mlx-lm)
 - Otros niveles de cuantización: [3bit](https://huggingface.co/majentik/BigBang-v1-MLX-3bit), [4bit](https://huggingface.co/majentik/BigBang-v1-MLX-4bit), [5bit](https://huggingface.co/majentik/BigBang-v1-MLX-5bit), [6bit](https://huggingface.co/majentik/BigBang-v1-MLX-6bit), [8bit](https://huggingface.co/majentik/BigBang-v1-MLX-8bit), [MXFP4](https://huggingface.co/majentik/BigBang-v1-MLX-MXFP4)

@@ -89,7 +89,7 @@ La comparación con alternativas de la misma categoría (modelos de ~9B con cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000105
+- Modelo en Hugging Face: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000105
 - Modelo base preentrenado: https://huggingface.co/dendriteholdings/Teutonic-I
 - Modelo de referencia para el injerto de atención: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Bittensor Subnet 3 (Teutonic): no disponible en la información proporcionada

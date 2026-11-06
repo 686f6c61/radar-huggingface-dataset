@@ -35,7 +35,7 @@ Sobre el entrenamiento del modelo base no hay datos en la información disponibl
 - Flujos agénticos: el modelo base está posicionado por Qwen para *agentic workflows* y automatización de oficina.
 - Multilingüismo: capacidad declarada del modelo base, pero sin listado de idiomas en esta ficha técnica; no disponible.
 - Visión: el modelo base es nativo visión-lenguaje, pero la model card de esta release no documenta si los GGUF incluyen el proyector multimodal (`mmproj`) necesario para entrada de imagen.
-- Conversacional: etiquetado como `conversational` y `text-generation` en HuggingFace.
+- Conversacional: etiquetado como `conversational` y `text-generation` en Hugging Face.
 - Compatible con endpoints: etiqueta `endpoints_compatible` en el repo.
 
 ## Casos de uso
@@ -112,9 +112,9 @@ Latencia y throughput: no disponibles.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/basecompute/Qwen3.8-27B-BaseQuant-V1
+- Repositorio Hugging Face: https://huggingface.co/basecompute/Qwen3.8-27B-BaseQuant-V1
 - Blog de la release: https://huggingface.co/blog/basecompute/base-quant-v1
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Cuantizaciones de referencia de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Builds baseRT del modelo base: https://huggingface.co/basecompute/Qwen3.8-27B

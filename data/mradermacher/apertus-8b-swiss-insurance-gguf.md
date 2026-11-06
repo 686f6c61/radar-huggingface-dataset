@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mradermacher/apertus-8b-swiss-insurance-GGUF (este) | ~8,05 B | no disponible | Seguros y legal suizo, de/fr, tool-use, web-search | Apache-2.0 | GGUF (12 cuantizaciones) | HuggingFace, 214 descargas |
-| legmlai/apertus-8b-swiss-insurance (base) | ~8,05 B | no disponible | Seguros y legal suizo, de/fr | Apache-2.0 | safetensors | HuggingFace |
-| mradermacher/Apertus-8B-2509-GGUF | ~8 B (familia Apertus-8B) | no disponible | Generalista multilingüe | Apache-2.0 | GGUF | HuggingFace |
-| mradermacher/Apertus-8B-Instruct-2509-GGUF | ~8 B (familia Apertus-8B) | no disponible | Generalista multilingüe, ajustado a instrucciones | Apache-2.0 | GGUF | HuggingFace |
+| mradermacher/apertus-8b-swiss-insurance-GGUF (este) | ~8,05 B | no disponible | Seguros y legal suizo, de/fr, tool-use, web-search | Apache-2.0 | GGUF (12 cuantizaciones) | Hugging Face, 214 descargas |
+| legmlai/apertus-8b-swiss-insurance (base) | ~8,05 B | no disponible | Seguros y legal suizo, de/fr | Apache-2.0 | safetensors | Hugging Face |
+| mradermacher/Apertus-8B-2509-GGUF | ~8 B (familia Apertus-8B) | no disponible | Generalista multilingüe | Apache-2.0 | GGUF | Hugging Face |
+| mradermacher/Apertus-8B-Instruct-2509-GGUF | ~8 B (familia Apertus-8B) | no disponible | Generalista multilingüe, ajustado a instrucciones | Apache-2.0 | GGUF | Hugging Face |
 
 La comparación relevante es frente a las variantes generalistas de Apertus-8B: misma escala de parámetros, misma licencia y mismo cuantizador, pero sin el ajuste al dominio asegurador. La diferencia práctica estará en el vocabulario y el registro del nicho, no en la huella de hardware, que es equivalente entre las tres variantes. No se dispone de datos de rendimiento comparado que permitan cuantificar esa diferencia.
 

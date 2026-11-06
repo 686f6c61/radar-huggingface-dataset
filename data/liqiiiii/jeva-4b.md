@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jeva-4B es un modelo de decisión «System One» desarrollado por Qi Li y Xinchao Wang (National University of Singapore), publicado en HuggingFace por el usuario LIQIIIII. A diferencia de los modelos generativos convencionales, Jeva no está pensado para producir texto libre ni cadenas de razonamiento largas: su función es tomar decisiones directas sobre texto, seleccionando una alternativa entre varias, estimando la probabilidad de que una afirmación sea cierta o asignando una puntuación numérica según una rúbrica proporcionada.
+Jeva-4B es un modelo de decisión «System One» desarrollado por Qi Li y Xinchao Wang (National University of Singapore), publicado en Hugging Face por el usuario LIQIIIII. A diferencia de los modelos generativos convencionales, Jeva no está pensado para producir texto libre ni cadenas de razonamiento largas: su función es tomar decisiones directas sobre texto, seleccionando una alternativa entre varias, estimando la probabilidad de que una afirmación sea cierta o asignando una puntuación numérica según una rúbrica proporcionada.
 
 El modelo se articula en torno a cuatro propiedades declaradas por sus autores: es «null-aware» (admite explícitamente la opción «ninguna de las anteriores»), «permutation-invariant» (el orden de las opciones no debería alterar la decisión), «option-scalable» (funciona con conjuntos pequeños y grandes de candidatos) y «cacheable» (permite reutilizar opciones ya procesadas en peticiones nuevas). Estas propiedades lo orientan a tareas de enrutamiento de peticiones, selección de documentos, evaluación de relevancia y puntuación con rúbrica.
 
@@ -73,7 +73,7 @@ No se dispone de benchmarks de Jeva-4B, por lo que esta comparativa es funcional
 
 | Modelo | Parámetros | Contexto | Propósito principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeva-4B | ~4B (según denominación) | no disponible | Decisión directa: elección, veracidad y puntuación | no disponible | safetensors en HuggingFace |
+| Jeva-4B | ~4B (según denominación) | no disponible | Decisión directa: elección, veracidad y puntuación | no disponible | safetensors en Hugging Face |
 | Qwen3-4B | 4B | 32.768 tokens nativos (ampliable con YaRN) | Generación de texto, razonamiento y código | Apache-2.0 | safetensors, GGUF y múltiples cuantizaciones |
 | Llama-3.2-3B | 3B | 128.000 tokens | Generación de texto multilingüe | Llama 3.2 Community License | safetensors y GGUF |
 | Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | Generación de texto, razonamiento y código | MIT | safetensors y GGUF |
@@ -94,7 +94,7 @@ La diferencia clave es de diseño: los tres modelos de la comparativa generan te
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LIQIIIII/Jeva-4B
+- Modelo en Hugging Face: https://huggingface.co/LIQIIIII/Jeva-4B
 - Página del proyecto: https://liqiiiii.github.io/Jeva/
 - Repositorio en GitHub: https://github.com/LiQiiiii/Jeva
 - Cuestiones y comentarios (issues): https://github.com/LiQiiiii/Jeva/issues

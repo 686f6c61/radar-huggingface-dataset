@@ -95,7 +95,7 @@ Advertencias del propio autor sobre estas metricas: la coincidencia por prefijo 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Este modelo (Q8_0) | ~9B | no disponible | HumanEval pass@1 82,3%; rechazo en StrongREJECT 18,8% | MIT | GGUF en HuggingFace, 0 descargas, 2 likes |
+| Este modelo (Q8_0) | ~9B | no disponible | HumanEval pass@1 82,3%; rechazo en StrongREJECT 18,8% | MIT | GGUF en Hugging Face, 0 descargas, 2 likes |
 | Control Q8_0 del padre (mismos pesos sin abliterar, cuantizados por el mismo autor) | ~9B | no disponible | HumanEval pass@1 78,0%; rechazo en StrongREJECT 99,3% | MIT | Referenciado en la model card, no distribuido como artefacto separado |
 | `XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B` (checkpoint padre) | ~9B | no disponible | No disponible; el autor advierte de que sus puntuaciones no son las del padre | MIT | Repositorio original del modelo base |
 | Otras alternativas de ~9B con abliteration | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
@@ -118,7 +118,7 @@ Advertencias del propio autor sobre estas metricas: la coincidencia por prefijo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSojalSec/Abliterated-MiMo-V2.6-Distill-Qwen-9B-GGUF-MLX
+- Modelo en Hugging Face: https://huggingface.co/0xSojalSec/Abliterated-MiMo-V2.6-Distill-Qwen-9B-GGUF-MLX
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Paper, blog o repositorio adicional especifico de este artefacto: no disponible.
 - Demo o space asociado: no disponible.

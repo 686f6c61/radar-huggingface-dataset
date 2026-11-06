@@ -77,9 +77,9 @@ No se dispone de numeros comparativos de la version INT8 frente a la BF16 en cua
 
 | Modelo | Parametros | Cuantizacion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| marcusnogueira/granite-guardian-4.1-8b-smoothquant-w8a8 | ~8,8 mil millones | INT8 W8A8 (SmoothQuant + GPTQ) | en, pt | no disponible | HuggingFace (5 descargas) |
-| marcusnogueira/granite-guardian-4.1-8b-gptq-8bit | ~8,8 mil millones | GPTQ 8-bit | no disponible | no disponible | HuggingFace |
-| ibm-granite/granite-guardian-4.1-8b (base) | ~8,8 mil millones | BF16 (sin cuantizar) | en (base; el modelo derivado anade pt) | no disponible en esta ficha | HuggingFace (modelo oficial IBM) |
+| marcusnogueira/granite-guardian-4.1-8b-smoothquant-w8a8 | ~8,8 mil millones | INT8 W8A8 (SmoothQuant + GPTQ) | en, pt | no disponible | Hugging Face (5 descargas) |
+| marcusnogueira/granite-guardian-4.1-8b-gptq-8bit | ~8,8 mil millones | GPTQ 8-bit | no disponible | no disponible | Hugging Face |
+| ibm-granite/granite-guardian-4.1-8b (base) | ~8,8 mil millones | BF16 (sin cuantizar) | en (base; el modelo derivado anade pt) | no disponible en esta ficha | Hugging Face (modelo oficial IBM) |
 
 No se dispone de modelos comparables de otros proveedores en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de modelos comparables de otros proveedores en la informacion prop
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/marcusnogueira/granite-guardian-4.1-8b-smoothquant-w8a8
+- Checkpoint en Hugging Face: https://huggingface.co/marcusnogueira/granite-guardian-4.1-8b-smoothquant-w8a8
 - Modelo base: https://huggingface.co/ibm-granite/granite-guardian-4.1-8b
 - Version GPTQ 8-bit del mismo autor: https://huggingface.co/marcusnogueira/granite-guardian-4.1-8b-gptq-8bit
 - Repositorio GitHub de Granite Guardian: https://github.com/ibm-granite/granite-guardian

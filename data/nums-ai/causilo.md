@@ -102,7 +102,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nums-ai/causilo
+- Modelo en Hugging Face: https://huggingface.co/nums-ai/causilo
 - Repositorio de codigo: https://github.com/nums-ai/causilo
 - Seccion de benchmarks del repositorio: https://github.com/nums-ai/causilo#benchmarks
 - Texto completo de la licencia: LICENSE dentro del repositorio del modelo (Causilo License v1.0)

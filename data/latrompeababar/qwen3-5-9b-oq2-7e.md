@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-oQ2.7e es una cuantizacion mixta del modelo Qwen3.5-9B, publicada por el usuario latrompeababar en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada a inferencia eficiente en Apple Silicon mediante la librería MLX. La cuantizacion se ha realizado con la herramienta oQ (oMLX v0.7.3), que aplica precision mixta por capas y grupos de tensores en lugar de una cuantizacion uniforme.
+Qwen3.5-9B-oQ2.7e es una cuantizacion mixta del modelo Qwen3.5-9B, publicada por el usuario latrompeababar en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada a inferencia eficiente en Apple Silicon mediante la librería MLX. La cuantizacion se ha realizado con la herramienta oQ (oMLX v0.7.3), que aplica precision mixta por capas y grupos de tensores en lugar de una cuantizacion uniforme.
 
 El checkpoint resultante ocupa 4,8 GB en disco (4,462 GiB de pesos) frente a los aproximadamente 18 GB que requeriria el modelo en BF16, con un promedio efectivo de 4,073 bits por peso. La distribucion no es homogenea: el 21,75% de los pesos (2.047B parametros) se almacena a 2 bits con grupo 64, mientras que un 15,09% se mantiene a 5 bits y un 4,86% (0.457B parametros, correspondiente al codificador visual) permanece en BF16.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-oQ2.7e | 9,41B | No disponible | safetensors (MLX) | No disponible | HuggingFace, 0 descargas |
+| Qwen3.5-9B-oQ2.7e | 9,41B | No disponible | safetensors (MLX) | No disponible | Hugging Face, 0 descargas |
 | Qwen3.5-9B (original, BF16) | ~9,4B | No disponible | safetensors | No disponible en esta ficha | Referencia del checkpoint |
 | Qwen2.5-VL-7B | ~8,3B | 128K (segun documentacion publica del modelo) | safetensors, GGUF | Apache 2.0 (segun documentacion publica) | Amplia, multiples cuantizaciones |
 | Llama 3.2 11B Vision | ~10,7B | 128K (segun documentacion publica) | safetensors, GGUF | Llama Community License | Amplia |
@@ -85,7 +85,7 @@ Nota: los datos de los modelos comparativos provienen de documentacion publica g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/latrompeababar/Qwen3.5-9B-oQ2.7e
+- Modelo en Hugging Face: https://huggingface.co/latrompeababar/Qwen3.5-9B-oQ2.7e
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Repositorio MLX: no disponible en la informacion proporcionada
 - Paper o blog del modelo base Qwen3.5: no disponible en la informacion proporcionada

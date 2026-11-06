@@ -79,7 +79,7 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros totales | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4.6-Derestricted-v3 (c0lorless) | 356,8 B | 200K | MIT | Modificacion comunitaria sin alineacion | Pesos abiertos en HuggingFace |
+| GLM-4.6-Derestricted-v3 (c0lorless) | 356,8 B | 200K | MIT | Modificacion comunitaria sin alineacion | Pesos abiertos en Hugging Face |
 | GLM-4.6 (zai-org) | ≈356,8 B (misma clase `glm4_moe`) | 200K | MIT | Modelo oficial alineado | Pesos abiertos y API en Z.ai |
 | GLM-4.6-Derestricted (ArliAI) | ≈356,8 B | 200K | MIT | Abliteracion upstream de la que deriva esta version | Pesos abiertos y variantes cuantizadas |
 | DeepSeek-V3.1-Terminus | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | Citado por el autor como referencia de rendimiento | API y pesos abiertos (no verificado aqui) |

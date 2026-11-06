@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMAX-M2.7 es un modelo de lenguaje de gran escala desarrollado por MiniMax AI, orientado a la construccion de agentes complejos y a la automatizacion de tareas de productividad avanzadas. Segun el repositorio oficial, el modelo destaca por su capacidad para integrar agentes en equipo, gestionar herramientas dinamicas y ejecutar razonamiento de multiples pasos. Esta version concreta, identificada como MiniMAX-M2.7-MXFP4, es una publicacion de HuggingFace realizada por el usuario guanwenyu1995, que distribuye los pesos en formato safetensors. El modelo cuenta con un total de 114.984.280.576 parametros, lo que lo situa en la categoria de los modelos de 115.000 millones de parametros, y se publica bajo licencia MIT. En el momento de la consulta, no se dispone de informacion detallada sobre arquitectura, longitud de contexto ni idiomas soportados.
+MiniMAX-M2.7 es un modelo de lenguaje de gran escala desarrollado por MiniMax AI, orientado a la construccion de agentes complejos y a la automatizacion de tareas de productividad avanzadas. Segun el repositorio oficial, el modelo destaca por su capacidad para integrar agentes en equipo, gestionar herramientas dinamicas y ejecutar razonamiento de multiples pasos. Esta version concreta, identificada como MiniMAX-M2.7-MXFP4, es una publicacion de Hugging Face realizada por el usuario guanwenyu1995, que distribuye los pesos en formato safetensors. El modelo cuenta con un total de 114.984.280.576 parametros, lo que lo situa en la categoria de los modelos de 115.000 millones de parametros, y se publica bajo licencia MIT. En el momento de la consulta, no se dispone de informacion detallada sobre arquitectura, longitud de contexto ni idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -60,11 +60,11 @@ No se dispone de informacion comparativa en los datos consultados. No se pueden 
 - No se han publicado detalles sobre sesgos, alucinaciones ni limitaciones de idioma, por lo que cualquier despliegue en produccion debe ir acompanado de una evaluacion exhaustiva.
 - Al no disponer de la longitud de contexto oficial, se desconoce cuanta informacion historica puede manejar el modelo en conversaciones largas o tareas de agencia extensas.
 - El nombre del repositorio sugiere una cuantizacion MXFP4, pero no existe documentacion que confirme el metodo, la precision efectiva ni la compatibilidad con determinados formatos de peso.
-- La version publicada en HuggingFace no es un repo oficial de MiniMax AI; es una publicacion de un usuario externo, por lo que el soporte y la actualizacion no estan garantizados.
+- La version publicada en Hugging Face no es un repo oficial de MiniMax AI; es una publicacion de un usuario externo, por lo que el soporte y la actualizacion no estan garantizados.
 - La licencia MIT permite uso comercial, pero se recomienda revisar las condiciones de las dependencias del peso original por si existen restricciones adicionales.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/guanwenyu1995/MiniMAX-M2.7-MXFP4
+- Repositorio en Hugging Face: https://huggingface.co/guanwenyu1995/MiniMAX-M2.7-MXFP4
 - Repositorio oficial en GitHub: https://github.com/MiniMax-AI/MiniMax-M2.7
 - Pagina oficial del modelo: https://www.minimax.io/models/text/m27

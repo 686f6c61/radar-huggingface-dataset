@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks especificos de esta variante en la 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ESFT-gate-math-lite | ~1,58 mil millones | no disponible | no disponible (mejor en HumanEval segun el paper, sin cifras) | no disponible | HuggingFace (deepseek-ai) |
-| ESFT-vanilla-lite | no disponible | no disponible | no disponible | no disponible | HuggingFace (deepseek-ai), modelo base |
-| DeepSeek-V2-Lite | no disponible | no disponible | referencia del articulo ESFT | no disponible | HuggingFace (deepseek-ai) |
+| ESFT-gate-math-lite | ~1,58 mil millones | no disponible | no disponible (mejor en HumanEval segun el paper, sin cifras) | no disponible | Hugging Face (deepseek-ai) |
+| ESFT-vanilla-lite | no disponible | no disponible | no disponible | no disponible | Hugging Face (deepseek-ai), modelo base |
+| DeepSeek-V2-Lite | no disponible | no disponible | referencia del articulo ESFT | no disponible | Hugging Face (deepseek-ai) |
 
 No se dispone de datos suficientes sobre alternativas comparables de la misma categoria para ofrecer una comparacion cuantitativa fiable.
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes sobre alternativas comparables de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/ESFT-gate-math-lite
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/ESFT-gate-math-lite
 - Modelo base (ESFT-vanilla-lite): https://huggingface.co/deepseek-ai/ESFT-vanilla-lite
 - Repositorio oficial de scripts ESFT: https://github.com/deepseek-ai/ESFT
 - Articulo "Expert-Specialized Fine-Tuning for Sparse Architectural Large Language Models": https://arxiv.org/html/2407.01906v1

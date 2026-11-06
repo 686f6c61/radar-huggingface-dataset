@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apollo-M es un modelo generativo de melodías simbólicas desarrollado por el autor independiente viknesh100 (usuario de HuggingFace). Genera melodías monofónicas en formato MIDI a partir de controles estructurados: tonalidad, número de compases, tempo, compás, densidad de notas, registro, género, estado de ánimo y familia de instrumento. No produce audio directamente; el MIDI resultante debe pasarse por un sintetizador o soundfont para obtener sonido.
+Apollo-M es un modelo generativo de melodías simbólicas desarrollado por el autor independiente viknesh100 (usuario de Hugging Face). Genera melodías monofónicas en formato MIDI a partir de controles estructurados: tonalidad, número de compases, tempo, compás, densidad de notas, registro, género, estado de ánimo y familia de instrumento. No produce audio directamente; el MIDI resultante debe pasarse por un sintetizador o soundfont para obtener sonido.
 
 Técnicamente es un Transformer decoder-only de 27,5 millones de parámetros entrenado desde cero, con arquitectura RoPE, RMSNorm, SwiGLU y embeddings de entrada/salida atados. Su contexto es de 1024 tokens, suficiente para melodías de hasta 16 compases en una rejilla de semicorcheas. El vocabulario es de 352 tokens e incluye un header de 9 tokens que codifica los controles de generación, con tokens de "desconocido" para cada campo, de modo que el modelo puede decidir cualquier control no especificado.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parámetros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Apollo-M | 27,5 M | 1024 tokens | MIDI | other | HuggingFace |
+| Apollo-M | 27,5 M | 1024 tokens | MIDI | other | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viknesh100/Apollo-M
+- Modelo en Hugging Face: https://huggingface.co/viknesh100/Apollo-M
 - Repositorio de pretraining (Apollo): https://huggingface.co/viknesh100/Apollo
 - Referencia arXiv 2406.02255 (citada en los tags del modelo)
 - Referencia arXiv 2008.07142 (citada en los tags del modelo)

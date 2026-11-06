@@ -85,9 +85,9 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-2 | 8,19 B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B-Base (modelo base) | 8,19 B aproximadamente | no disponible en esta búsqueda | no disponible en esta búsqueda | HuggingFace |
-| Alternativas de ~8 B de propósito general (Llama 3.1 8B, Mistral 7B, Gemma 2 9B) | 7-9 B | no disponible en esta búsqueda | no disponible en esta búsqueda | HuggingFace |
+| Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-2 | 8,19 B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B-Base (modelo base) | 8,19 B aproximadamente | no disponible en esta búsqueda | no disponible en esta búsqueda | Hugging Face |
+| Alternativas de ~8 B de propósito general (Llama 3.1 8B, Mistral 7B, Gemma 2 9B) | 7-9 B | no disponible en esta búsqueda | no disponible en esta búsqueda | Hugging Face |
 
 La diferencia funcional frente a Qwen3-8B-Base es exclusivamente el CPT sobre `urban_12738_cleaned`; no hay evidencia publicada de que ese CPT suponga una ventaja medible en ninguna tarea. Frente a modelos de ~8 B de propósito general, este checkpoint parte con desventaja en trazabilidad: licencia sin declarar, sin benchmarks y sin idiomas especificados.
 
@@ -108,7 +108,7 @@ La diferencia funcional frente a Qwen3-8B-Base es exclusivamente el CPT sobre `u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-2
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/urban_12738_cleaned
 - Manifiesto de ejecución: `run_manifest.json` en el repositorio del modelo

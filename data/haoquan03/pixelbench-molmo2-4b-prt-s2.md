@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Capacidad destacada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PixelBench-Molmo2-4B-PRT-s2 | ~4,85B | no disponible | Generacion y comprension de imagenes pixel a pixel (16x16, 32x32) | Apache 2.0 | HuggingFace (0 descargas) |
+| PixelBench-Molmo2-4B-PRT-s2 | ~4,85B | no disponible | Generacion y comprension de imagenes pixel a pixel (16x16, 32x32) | Apache 2.0 | Hugging Face (0 descargas) |
 | Molmo2-4B (base) | ~4B (segun denominacion) | no disponible | Modelo multimodal base del que deriva | no disponible en la informacion | Referenciado como checkpoint de partida |
 | LLaVA-OneVision-1.5 | no disponible | no disponible | Dataset de instrucciones usado en el ajuste | no disponible | Usado como fuente de datos de entrenamiento |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-PRT-s2
+- Hugging Face: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-PRT-s2
 - Proyecto: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench
 - Paper (arXiv, referencia TBA): "Can LLMs Understand and Generate Images Pixel by Pixel?", Haoquan Zhang, Feiyang Liu, Juanxi Tian, Wanhua Li, Haodong Duan, Weiyang Liu, 2026.

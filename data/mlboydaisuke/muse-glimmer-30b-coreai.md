@@ -87,8 +87,8 @@ No se dispone de comparativas directas con otros modelos agénticos locales de t
 
 ## Enlaces
 
-- [HuggingFace: mlboydaisuke/Muse-Glimmer-30B-CoreAI](https://huggingface.co/mlboydaisuke/Muse-Glimmer-30B-CoreAI)
-- [HuggingFace: meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
+- [Hugging Face: mlboydaisuke/Muse-Glimmer-30B-CoreAI](https://huggingface.co/mlboydaisuke/Muse-Glimmer-30B-CoreAI)
+- [Hugging Face: meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - [Blog de Meta: Introducing Muse Glimmer](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model)
 - [Página de desarrollador de Meta: Muse Glimmer](https://developer.meta.com/ai/models/muse-glimmer/)
 - [NVIDIA NIM: muse-glimmer-30b](https://build.nvidia.com/meta/muse-glimmer-30b/modelcard)

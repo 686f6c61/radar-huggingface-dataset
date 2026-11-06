@@ -114,6 +114,6 @@ Comparativa basada en los datos aportados por el autor (no hay cifras verificada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mvbalaji/od1-nano-v2-lite
+- Modelo en Hugging Face: https://huggingface.co/mvbalaji/od1-nano-v2-lite
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paper OpenDecide-1: en preparación (no disponible)

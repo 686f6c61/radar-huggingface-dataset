@@ -2,15 +2,15 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning del modelo Pythia-1B (arquitectura GPT-NeoX) realizado por el usuario sashaboguraev, aparentemente orientado a tareas relacionadas con música, como sugiere el nombre "ppt-music" (posiblemente "prompt tuning" o "pre-training" para música). El checkpoint corresponde a 1000 pasos de entrenamiento con una semilla fija (seed324). La model card publicada está prácticamente vacía, sin información sobre el dataset, el procedimiento de entrenamiento, la licencia o los idiomas soportados, por lo que la ficha se basa únicamente en los metadatos disponibles en HuggingFace.
+Este modelo es un fine-tuning del modelo Pythia-1B (arquitectura GPT-NeoX) realizado por el usuario sashaboguraev, aparentemente orientado a tareas relacionadas con música, como sugiere el nombre "ppt-music" (posiblemente "prompt tuning" o "pre-training" para música). El checkpoint corresponde a 1000 pasos de entrenamiento con una semilla fija (seed324). La model card publicada está prácticamente vacía, sin información sobre el dataset, el procedimiento de entrenamiento, la licencia o los idiomas soportados, por lo que la ficha se basa únicamente en los metadatos disponibles en Hugging Face.
 
-El modelo tiene 1.011.671.040 parámetros (1B) y un tamaño de repositorio de 3,6 GB en formato safetensors. Está etiquetado como compatible con text-generation-inference y endpoints de HuggingFace. No se dispone de información sobre su rendimiento, capacidades específicas o casos de uso documentados, por lo que esta ficha debe interpretarse como una descripción preliminar de un modelo experimental.
+El modelo tiene 1.011.671.040 parámetros (1B) y un tamaño de repositorio de 3,6 GB en formato safetensors. Está etiquetado como compatible con text-generation-inference y endpoints de Hugging Face. No se dispone de información sobre su rendimiento, capacidades específicas o casos de uso documentados, por lo que esta ficha debe interpretarse como una descripción preliminar de un modelo experimental.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 1.011.671.040 (1,01 B) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible (el Pythia-1B original usa 2048 tokens, pero no se confirma para este fine-tuning) |
@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-music_steps1000_1b-seed324
+- Modelo en Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-music_steps1000_1b-seed324
 - Variante con 500 pasos: https://huggingface.co/sashaboguraev/pythia-1b-ppt-music_steps500_1b-seed324
 - Variante con 100 pasos (en FriendliAI): https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-music_steps100_1b-seed324
 - Variante con control y 500 pasos: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed324-preserve_emb

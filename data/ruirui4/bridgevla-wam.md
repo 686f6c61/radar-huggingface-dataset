@@ -66,11 +66,11 @@ No disponible. No se dispone de información sobre el rendimiento de este modelo
 - La información disponible no detalla sesgos conocidos ni riesgos de alucinación para este modelo.
 - El model card no especifica la longitud de contexto ni los idiomas, por lo que no se puede garantizar su comportamiento fuera de los entornos robóticos previstos.
 - Los checkpoints parecen pertenecer a un proyecto de investigación; podrían no estar listos para producción.
-- Se necesitará el código de BridgeVLA para cargar y ejecutar los pesos; el repositorio de HuggingFace no incluye instrucciones de uso.
+- Se necesitará el código de BridgeVLA para cargar y ejecutar los pesos; el repositorio de Hugging Face no incluye instrucciones de uso.
 - La licencia Apache 2.0 permite uso comercial, pero la ausencia de documentación dificulta el despliegue en sistemas reales.
 - No se ha confirmado la relación exacta entre estos checkpoints y la arquitectura BridgeVLA descrita en GitHub.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruirui4/bridgevla-wam
+- Hugging Face: https://huggingface.co/ruirui4/bridgevla-wam
 - Repositorio de BridgeVLA (GitHub): https://github.com/BridgeVLA/BridgeVLA

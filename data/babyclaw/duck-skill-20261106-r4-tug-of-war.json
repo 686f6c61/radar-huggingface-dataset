@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "BabyClaw/duck-skill-20261106-r4-tug-of-war",
+  "slug": "babyclaw-duck-skill-20261106-r4-tug-of-war",
+  "author": "BabyClaw",
+  "url": "https://huggingface.co/BabyClaw/duck-skill-20261106-r4-tug-of-war",
+  "created_at": "2026-11-06T08:38:53.000Z",
+  "updated_at": "2026-11-06T08:38:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-policy",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "tug-of-war",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2895469,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -72,7 +72,7 @@ No se dispone de modelos comparables de sandboxing de la misma categoría con da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/farzanah/qwen3.6-27b-sandbagging-sft-sandbag
+- Hugging Face: https://huggingface.co/farzanah/qwen3.6-27b-sandbagging-sft-sandbag
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Par contrastivo: https://huggingface.co/farzanah/qwen3.6-27b-controlging-sft-control
 - Análisis de Qwen3.6 27B en Artificial Analysis: https://artificialanalysis.ai/models/qwen3-6-27b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Thyroid-nodule-classifier es un clasificador binario de imágenes de ecografía tiroidea desarrollado por el usuario ljubomir y publicado en HuggingFace. El modelo distingue entre nódulos tiroideos benignos y malignos a partir de una imagen de ecografía en modo B recortada al nódulo. Se trata de un modelo pequeño y ligero: la arquitectura es una ResNet-18 con una cabeza de clasificación de 2 clases, gestionada a través de la librería timm, y los pesos se distribuyen en un único checkpoint de PyTorch llamado `tn_final.pt`.
+Thyroid-nodule-classifier es un clasificador binario de imágenes de ecografía tiroidea desarrollado por el usuario ljubomir y publicado en Hugging Face. El modelo distingue entre nódulos tiroideos benignos y malignos a partir de una imagen de ecografía en modo B recortada al nódulo. Se trata de un modelo pequeño y ligero: la arquitectura es una ResNet-18 con una cabeza de clasificación de 2 clases, gestionada a través de la librería timm, y los pesos se distribuyen en un único checkpoint de PyTorch llamado `tn_final.pt`.
 
 El modelo se entrenó sobre las imágenes pre-recortadas del conjunto público TN5000 (`Johnyquest7/TN5000-thyroid-nodule-classification`), es decir, cada imagen de entrada contiene un único nódulo con algo de contexto circundante. La salida es un softmax de 2 clases donde el índice 0 corresponde a benigno y el índice 1 a maligno, con umbral recomendado de 0,5 (configurable por el usuario). La model card es explícita al respecto: se trata de un modelo para investigación, no de un producto sanitario, y no debe emplearse para la toma de decisiones clínicas.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y muy específica: es un ejemplo de modelo de imagen m
 | Entrada | Imagen RGB (`convert("RGB")`), 3 canales, redimensionada con `Resize(256)` + `CenterCrop(224)` |
 | Normalización | media [0.485, 0.456, 0.406], desviación [0.229, 0.224, 0.225] (valores ImageNet, obligatorios) |
 | Salida | Softmax de 2 clases: índice 0 = benigno, índice 1 = maligno |
-| Tamaño del repositorio | 0,0 GB (redondeado según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (redondeado según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 15 de septiembre de 2026 |
 | Última actualización | 16 de septiembre de 2026 |
@@ -99,6 +99,6 @@ No se dispone, en la información proporcionada, de modelos comparables con dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ljubomir/thyroid-nodule-classifier
+- Modelo en Hugging Face: https://huggingface.co/ljubomir/thyroid-nodule-classifier
 - Conjunto de datos TN5000 citado por el autor: https://huggingface.co/datasets/Johnyquest7/TN5000-thyroid-nodule-classification
 - Búsqueda web realizada: no se encontraron enlaces relevantes al modelo, al conjunto de datos ni a la tarea de clasificación de nódulos tiroideos. Los resultados devueltos correspondían a servicios de seguimiento de vuelos (FlightAware) y se han descartado por no ser pertinentes.

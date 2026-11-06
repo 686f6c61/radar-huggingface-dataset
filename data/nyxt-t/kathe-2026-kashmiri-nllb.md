@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kathe-2026-kashmiri-nllb`, publicado por el usuario NyxT-T bajo licencia MIT, se presenta en HuggingFace con una model card prácticamente vacía que únicamente declara la licencia. La denominación sugiere una posible relación con el idioma cachemiro (kashmiri) y con la familia de modelos NLLB (No Language Left Behind) de Meta, orientada a traducción automática para lenguas de bajos recursos, pero no existe documentación técnica que confirme esta hipótesis.
+El modelo `kathe-2026-kashmiri-nllb`, publicado por el usuario NyxT-T bajo licencia MIT, se presenta en Hugging Face con una model card prácticamente vacía que únicamente declara la licencia. La denominación sugiere una posible relación con el idioma cachemiro (kashmiri) y con la familia de modelos NLLB (No Language Left Behind) de Meta, orientada a traducción automática para lenguas de bajos recursos, pero no existe documentación técnica que confirme esta hipótesis.
 
 El repositorio fue creado el 16 de agosto de 2026 y, en el momento de la consulta, no registra descargas ni valoraciones por parte de la comunidad. La ausencia total de información sobre arquitectura, parámetros, datos de entrenamiento o capacidades hace imposible una evaluación técnica rigurosa del modelo.
 
@@ -63,4 +63,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NyxT-T/kathe-2026-kashmiri-nllb
+- Repositorio Hugging Face: https://huggingface.co/NyxT-T/kathe-2026-kashmiri-nllb

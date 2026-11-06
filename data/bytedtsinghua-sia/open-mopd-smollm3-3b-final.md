@@ -61,7 +61,7 @@ Desglose por dataset: AIME24 21,98; AIME25 22,86; LiveCodeBench v5 20,84; LiveCo
 - VRAM estimada para inferencia: los pesos en BF16 ocupan aproximadamente 6,2 GB. Con la longitud de contexto maxima de 32K tokens, la memoria de activaciones y cache KV puede elevar el consumo total a 12-16 GB dependiendo del batch. Para contextos mas cortos (4K-8K), una GPU con 8-10 GB de VRAM puede ser suficiente.
 - GPU recomendadas: para inferencia comoda con contexto largo se recomienda una GPU con al menos 16 GB de VRAM, como RTX 4090, RTX 4080, A100 40 GB o H100. En GPUs consumer de 12 GB (RTX 3060, RTX 4070) se puede ejecutar con contextos reducidos o usando tecnicas de atencion eficiente.
 - En CPU: es posible ejecutar el modelo con llama.cpp si se convierte a formato GGUF, aunque no se proporcionan cuantizaciones oficiales. El rendimiento en CPU sera lento para contexto largo.
-- Opciones de despliegue: al ser un modelo de transformers, es compatible con vLLM, TGI, Ollama (si se convierte a GGUF) y cualquier framework que soporte modelos de HuggingFace. El repo incluye `endpoints_compatible` en sus tags, lo que sugiere compatibilidad con plataformas de inferencia gestionada.
+- Opciones de despliegue: al ser un modelo de transformers, es compatible con vLLM, TGI, Ollama (si se convierte a GGUF) y cualquier framework que soporte modelos de Hugging Face. El repo incluye `endpoints_compatible` en sus tags, lo que sugiere compatibilidad con plataformas de inferencia gestionada.
 - Latencia y throughput: no se han publicado datos especificos de latencia o throughput en la informacion disponible.
 
 ## Comparativa con modelos similares
@@ -89,9 +89,9 @@ No se han encontrado comparaciones directas de rendimiento entre estos modelos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-Final
+- Modelo en Hugging Face: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-Final
 - Repositorio GitHub del pipeline Open-MOPD: https://github.com/BytedTsinghua-SIA/Open-MOPD
 - Modelo base (MixSFT): https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT
 - Dataset de entrenamiento: https://huggingface.co/datasets/BytedTsinghua-SIA/Open-MOPD-Data
-- Organizacion BytedTsinghua-SIA en HuggingFace: https://huggingface.co/BytedTsinghua-SIA
+- Organizacion BytedTsinghua-SIA en Hugging Face: https://huggingface.co/BytedTsinghua-SIA
 - Modelo base SmolLM3-3B de HuggingFaceTB: https://huggingface.co/HuggingFaceTB/SmolLM3-3B

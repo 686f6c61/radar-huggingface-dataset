@@ -4,7 +4,7 @@
 
 Kimi K2.7 Code es un modelo de inteligencia artificial de código abierto desarrollado por Moonshot AI, especializado en tareas de programación y razonamiento agéntico. Está construido sobre la arquitectura de Kimi K2.6, con mejoras sustanciales en tareas de codificación de horizonte largo, lo que le permite completar flujos de trabajo complejos de ingeniería de software de principio a fin. Además, reduce el uso de tokens de pensamiento en aproximadamente un 30 % en comparación con su predecesor, lo que mejora la eficiencia token.
 
-El modelo presenta una arquitectura Mixture-of-Experts (MoE) con 1 billón de parámetros totales y 32 mil millones de parámetros activos por token, lo que lo hace computacionalmente eficiente para su tamaño. Soporta una ventana de contexto de 256 000 tokens, entrada multimodal (texto e imagen) mediante un codificador visual MoonViT, y está diseñado para uso agéntico con soporte de herramientas MCP. La versión alojada en HuggingFace bajo el identificador `lausannequants/Kimi-K2.7-Code` es una variante comprimida (compressed-tensors) con un tamaño de repositorio de 595,2 GB, lo que sugiere una cuantización de baja precisión.
+El modelo presenta una arquitectura Mixture-of-Experts (MoE) con 1 billón de parámetros totales y 32 mil millones de parámetros activos por token, lo que lo hace computacionalmente eficiente para su tamaño. Soporta una ventana de contexto de 256 000 tokens, entrada multimodal (texto e imagen) mediante un codificador visual MoonViT, y está diseñado para uso agéntico con soporte de herramientas MCP. La versión alojada en Hugging Face bajo el identificador `lausannequants/Kimi-K2.7-Code` es una variante comprimida (compressed-tensors) con un tamaño de repositorio de 595,2 GB, lo que sugiere una cuantización de baja precisión.
 
 ## Especificaciones técnicas
 
@@ -85,12 +85,12 @@ Kimi K2.7 Code es el único de la comparación con licencia abierta (Modified MI
 - Limitaciones de idioma: no se especifican los idiomas soportados; probablemente esté optimizado para inglés y chino, dado el origen del modelo, pero no hay confirmación.
 - Restricciones de licencia: la licencia Modified MIT permite uso comercial, pero se debe revisar el texto completo de la licencia para conocer condiciones específicas (por ejemplo, atribución o restricciones de uso).
 - Requisitos de hardware: el tamaño del modelo (1T) hace que su despliegue sea costoso y requiera infraestructura de centro de datos. No es adecuado para entornos con recursos limitados.
-- Disponibilidad de cuantizaciones: la versión en HuggingFace usa compressed-tensors, pero no se documentan los formatos de cuantización disponibles (por ejemplo, AWQ, GPTQ, GGUF). Esto puede limitar la interoperabilidad con ciertos frameworks de inferencia.
+- Disponibilidad de cuantizaciones: la versión en Hugging Face usa compressed-tensors, pero no se documentan los formatos de cuantización disponibles (por ejemplo, AWQ, GPTQ, GGUF). Esto puede limitar la interoperabilidad con ciertos frameworks de inferencia.
 - Dependencia de herramientas externas: el soporte MCP requiere configurar servidores MCP adicionales, lo que añade complejidad operativa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lausannequants/Kimi-K2.7-Code
+- Repositorio Hugging Face: https://huggingface.co/lausannequants/Kimi-K2.7-Code
 - Página oficial del modelo: https://www.kimi.ai/resources/kimi-k2-7-code
 - Sitio informativo: https://kimik2ai.com/k2.7/
 - Documentación de la API de Kimi: https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart

@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ppt-wc-uniform-newlex-66-eng-100mb_seed3407 | 86,5 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_100mb (base) | no disponible (misma arquitectura GPT-2) | no disponible | ver model card del modelo base | no disponible en la informacion proporcionada | HuggingFace |
+| ppt-wc-uniform-newlex-66-eng-100mb_seed3407 | 86,5 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_100mb (base) | no disponible (misma arquitectura GPT-2) | no disponible | ver model card del modelo base | no disponible en la informacion proporcionada | Hugging Face |
 | distilgpt2 | 82 M | 1.024 tokens | benchmarks publicados por el autor en su model card | MIT/Apache-2.0 segun el repositorio original | ampliamente disponible |
 | GPT-2 small | 124 M | 1.024 tokens | benchmarks publicados por OpenAI | MIT | ampliamente disponible |
 
@@ -86,7 +86,7 @@ La comparacion con distilgpt2 y GPT-2 small es la mas natural por orden de magni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/pj6ici7q
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -4,7 +4,7 @@
 
 El repositorio `ThiagoFerr/3d-scene-understanding-ablation` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación exploratorias sobre comprensión de escenas 3D. Publicado por el usuario ThiagoFerr bajo licencia CC-BY-4.0, el repositorio documenta el alcance de una pregunta de investigación, los posibles factores de confusión, los requisitos de reproducibilidad y las referencias temáticas, antes de que se reporte ningún resultado experimental. El archivo principal es `paper_notes.md`, que actúa como nota de trabajo, y el README aclara explícitamente que no se reivindican mejoras de benchmarks, ablaciones completadas, código liberado ni checkpoints entrenados.
 
-A pesar de que el campo de parámetros totales en HuggingFace indica 16.576, este valor no corresponde a parámetros de una red neuronal, sino probablemente al tamaño en bytes del archivo de texto. El tamaño del repositorio es de 0.0 GB, lo que confirma la ausencia de pesos de modelo. Por tanto, esta ficha describe un recurso de documentación técnica, no un modelo desplegable.
+A pesar de que el campo de parámetros totales en Hugging Face indica 16.576, este valor no corresponde a parámetros de una red neuronal, sino probablemente al tamaño en bytes del archivo de texto. El tamaño del repositorio es de 0.0 GB, lo que confirma la ausencia de pesos de modelo. Por tanto, esta ficha describe un recurso de documentación técnica, no un modelo desplegable.
 
 ## Especificaciones tecnicas
 
@@ -63,6 +63,6 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ThiagoFerr/3d-scene-understanding-ablation
+- Repositorio en Hugging Face: https://huggingface.co/ThiagoFerr/3d-scene-understanding-ablation
 - Definición de ablación en IA (Wikipedia): https://en.wikipedia.org/wiki/Ablation_(artificial_intelligence)
 - Lista de recursos sobre generación de escenas 3D (GitHub): https://github.com/hzxie/Awesome-3D-Scene-Generation

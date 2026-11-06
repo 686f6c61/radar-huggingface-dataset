@@ -2,7 +2,7 @@
 
 ## Resumen
 
-R.Mira es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario Kinimoro para el modelo de generación de imágenes Krea 2 Turbo. Su propósito es reproducir una identidad visual y características faciales específicas de una persona real adulta, permitiendo que el modelo base genere imágenes con ese rostro de forma consistente. Se distribuye a través de HuggingFace con la librería diffusers y un tamaño de repositorio de 0,2 GB.
+R.Mira es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario Kinimoro para el modelo de generación de imágenes Krea 2 Turbo. Su propósito es reproducir una identidad visual y características faciales específicas de una persona real adulta, permitiendo que el modelo base genere imágenes con ese rostro de forma consistente. Se distribuye a través de Hugging Face con la librería diffusers y un tamaño de repositorio de 0,2 GB.
 
 Este tipo de adaptadores es relevante en el ecosistema de generación de imágenes porque permite personalizar modelos de difusión sin necesidad de reentrenar el modelo completo, ahorrando recursos computacionales y tiempo. La ficha se basa exclusivamente en la información publicada en la model card, que es escasa en detalles técnicos; muchos parámetros no están disponibles públicamente.
 
@@ -48,12 +48,12 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - El adaptador LoRA en sí es ligero (0,2 GB), pero requiere el modelo base Krea 2 Turbo para funcionar, que es un modelo de difusión de gran tamaño.
 - La VRAM necesaria depende de la resolución de salida y del modelo base; se estima que se necesitan al menos 8-12 GB de VRAM para generación a resoluciones moderadas (512x512 o 1024x1024) en GPUs como RTX 3060, RTX 4070 o superiores.
 - Para resoluciones altas o generación por lotes, se recomiendan GPUs con 16 GB o más (RTX 4090, A100, etc.).
-- Opciones de despliegue: se puede usar con la librería diffusers de HuggingFace, así como con herramientas como ComfyUI o Automatic1111 que soporten LoRA. También es posible integrarlo en servicios de inferencia como vLLM (aunque este está orientado a LLMs, no a difusión) o soluciones específicas de difusión.
+- Opciones de despliegue: se puede usar con la librería diffusers de Hugging Face, así como con herramientas como ComfyUI o Automatic1111 que soporten LoRA. También es posible integrarlo en servicios de inferencia como vLLM (aunque este está orientado a LLMs, no a difusión) o soluciones específicas de difusión.
 - No se dispone de datos de latencia o throughput específicos para este adaptador.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre adaptadores LoRA comparables en el mismo repositorio o en la documentación. Existen otros LoRA de identidad en HuggingFace, pero no se pueden citar sin datos verificables. La comparativa no está disponible.
+No se dispone de información sobre adaptadores LoRA comparables en el mismo repositorio o en la documentación. Existen otros LoRA de identidad en Hugging Face, pero no se pueden citar sin datos verificables. La comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -66,5 +66,5 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo rep
 
 ## Enlaces
 
-- [HuggingFace - Kinimoro/R.Mira](https://huggingface.co/Kinimoro/R.Mira)
+- [Hugging Face - Kinimoro/R.Mira](https://huggingface.co/Kinimoro/R.Mira)
 - [Modelo base Krea 2 Turbo (referencia en la model card)](https://huggingface.co/krea/Krea-2-Turbo)

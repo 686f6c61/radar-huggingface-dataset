@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `VladHong/Qwen3.6-KAT-BigBang-SLERP-35B-GGUF` es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario VladHong. El identificador sugiere una fusion de modelos (merge) construida mediante la tecnica SLERP, con una denominacion de 35B parametros y una base aparentemente derivada de la familia Qwen. Sin embargo, la model card publicada no contiene documentacion tecnica: unicamente declara la licencia Apache 2.0, sin descripcion, sin ficha de uso, sin configuracion de arquitectura y sin resultados de evaluacion.
+El repositorio `VladHong/Qwen3.6-KAT-BigBang-SLERP-35B-GGUF` es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario VladHong. El identificador sugiere una fusion de modelos (merge) construida mediante la tecnica SLERP, con una denominacion de 35B parametros y una base aparentemente derivada de la familia Qwen. Sin embargo, la model card publicada no contiene documentacion tecnica: unicamente declara la licencia Apache 2.0, sin descripcion, sin ficha de uso, sin configuracion de arquitectura y sin resultados de evaluacion.
 
 El repositorio presenta cero descargas y cero likes en el momento de la consulta, y su fecha de creacion registrada (2026-09-14) es posterior a la fecha actual, un detalle anomalo que conviene verificar antes de considerar el artefacto como estable o reproducible. Tampoco se ha localizado documentacion externa, paper, blog tecnico ni repositorio de codigo asociado a esta publicacion.
 
@@ -93,6 +93,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VladHong/Qwen3.6-KAT-BigBang-SLERP-35B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/VladHong/Qwen3.6-KAT-BigBang-SLERP-35B-GGUF
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo.

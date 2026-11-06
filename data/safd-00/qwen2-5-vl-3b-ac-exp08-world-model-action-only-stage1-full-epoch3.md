@@ -77,7 +77,7 @@ La comparativa directa más relevante es contra el run principal (world-model) d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch3
+- Modelo en Hugging Face: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch3
 - Run principal (world-model, epoch 3): https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3
 - Run principal (world-model, epoch 1, vía FriendliAI): https://friendli.ai/models/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1
 - Modelo base Qwen2.5-VL-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct

@@ -90,10 +90,10 @@ Dirk se diferencia de otros GGUFs del mismo modelo base por la plantilla Sharp y
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/npario/Dirk-Qwen3.8-27B-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/npario/Dirk-Qwen3.8-27B-GGUF
 - Repositorio original del autor: https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Plantilla Sharp en HuggingFace: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
+- Plantilla Sharp en Hugging Face: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
 - Documentacion de Dynamic 3.0 de Unsloth: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Modelo similar Ridge: https://huggingface.co/npario/Qwen3.8-27B-Ridge-GGUF

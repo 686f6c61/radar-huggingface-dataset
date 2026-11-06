@@ -65,6 +65,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Comfy-Org/sam3.1
+- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/sam3.1
 - Repositorio original del modelo: https://huggingface.co/facebook/sam3.1
 - Licencia: https://huggingface.co/Comfy-Org/sam3.1/blob/main/LICENSE (enlace inferido, no verificado)

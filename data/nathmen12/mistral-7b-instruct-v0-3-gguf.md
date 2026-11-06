@@ -79,7 +79,7 @@ La comparativa se centra en el mismo modelo base con diferentes cuantizaciones. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NathMen12/Mistral-7B-Instruct-v0.3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/NathMen12/Mistral-7B-Instruct-v0.3-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Cuantización alternativa (QuantFactory): https://huggingface.co/QuantFactory/Mistral-7B-Instruct-v0.3-GGUF
 - Documentación de llama.cpp: https://github.com/ggerganov/llama.cpp

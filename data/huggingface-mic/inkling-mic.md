@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-mic | 26,7 M | no disponible | Fixture de integracion (test-artifact) | no disponible | HuggingFace |
-| thinkingmachines/Inkling | no disponible | no disponible | Modelo multimodal de generacion condicional | no disponible | HuggingFace |
-| Otras fixtures de transformers-mic | variable (reducidas) | no disponible | Fixtures de integracion para otros modelos | no disponible | HuggingFace (org huggingface-mic) |
+| Inkling-mic | 26,7 M | no disponible | Fixture de integracion (test-artifact) | no disponible | Hugging Face |
+| thinkingmachines/Inkling | no disponible | no disponible | Modelo multimodal de generacion condicional | no disponible | Hugging Face |
+| Otras fixtures de transformers-mic | variable (reducidas) | no disponible | Fixtures de integracion para otros modelos | no disponible | Hugging Face (org huggingface-mic) |
 
 No se dispone de datos de rendimiento ni de especificaciones completas del modelo base como para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas del model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Inkling-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Inkling-mic
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling
 - Manifiesto del contrato: https://huggingface.co/huggingface-mic/Inkling-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/Inkling-mic/blob/main/integrations/transformers/usage.md

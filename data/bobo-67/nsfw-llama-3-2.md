@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nsfw-Llama-3.2 es un modelo de lenguaje conversacional derivado de la familia Llama 3.2, publicado por el usuario bobo-67 en HuggingFace. Con 3.606.752.320 parametros (aproximadamente 3,6 mil millones), se situa en el escalon pequeno de la familia Llama 3.2, lo que lo hace apto para inferencia en hardware de consumo. El repositorio se distribuye en formato GGUF, lo que indica que esta pensado para su uso con llama.cpp y herramientas compatibles como Ollama o LM Studio.
+nsfw-Llama-3.2 es un modelo de lenguaje conversacional derivado de la familia Llama 3.2, publicado por el usuario bobo-67 en Hugging Face. Con 3.606.752.320 parametros (aproximadamente 3,6 mil millones), se situa en el escalon pequeno de la familia Llama 3.2, lo que lo hace apto para inferencia en hardware de consumo. El repositorio se distribuye en formato GGUF, lo que indica que esta pensado para su uso con llama.cpp y herramientas compatibles como Ollama o LM Studio.
 
 La model card publicada por el autor es practicamente inexistente: solo contiene la declaracion de licencia Apache 2.0. No se documentan datos de entrenamiento, proceso de fine-tuning, idiomas soportados ni resultados de evaluacion. El nombre del modelo y la etiqueta `not-for-all-anatages` (not-for-all-audiences) sugieren que se trata de un ajuste orientado a contenido para adultos, pero no hay informacion tecnica que lo confirme ni que detalle el dataset o la metodologia empleada.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| nsfw-Llama-3.2 (bobo-67) | 3,6 B | no disponible | Apache 2.0 | GGUF | HuggingFace, 115 descargas |
-| Llama 3.2 3B (Meta) | 3,2 B | 128k (segun Meta) | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, ampliamente distribuido |
-| Qwen2.5 3B (Alibaba) | 3,1 B | 32k (segun Alibaba) | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente distribuido |
-| Gemma 2 2B (Google) | 2,6 B | 8k (segun Google) | Gemma Terms of Use | safetensors, GGUF | HuggingFace, ampliamente distribuido |
+| nsfw-Llama-3.2 (bobo-67) | 3,6 B | no disponible | Apache 2.0 | GGUF | Hugging Face, 115 descargas |
+| Llama 3.2 3B (Meta) | 3,2 B | 128k (segun Meta) | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, ampliamente distribuido |
+| Qwen2.5 3B (Alibaba) | 3,1 B | 32k (segun Alibaba) | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente distribuido |
+| Gemma 2 2B (Google) | 2,6 B | 8k (segun Google) | Gemma Terms of Use | safetensors, GGUF | Hugging Face, ampliamente distribuido |
 
 La comparativa se limita a datos publicos de los modelos base; no hay informacion sobre el rendimiento del derivado nsfw-Llama-3.2 que permita una comparacion cuantitativa.
 
@@ -81,7 +81,7 @@ La comparativa se limita a datos publicos de los modelos base; no hay informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bobo-67/nsfw-Llama-3.2
+- Hugging Face: https://huggingface.co/bobo-67/nsfw-Llama-3.2
 - Llama 3.2 (modelo base de referencia, Meta): https://huggingface.co/meta-llama/Llama-3.2-3B
 - llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp
 - Ollama (runtime GGUF): https://ollama.com

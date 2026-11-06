@@ -33,7 +33,7 @@ En inferencia, para cada token marcado como no confiable mediante `untrusted(...
 - Marcado selectivo de tokens no confiables mediante el envoltorio `untrusted(...)` en la API de `nexec`.
 - Compatibilidad con el modelo base `meta-llama/Llama-3.2-3B-Instruct` y su pipeline de generacion habitual.
 - Aplicacion por capa (28 capas) con control del coeficiente α y del tipo de puerta.
-- Carga directa desde HuggingFace (`hf://dannywang930/Llama-3.2-3B-Instruct-nexec-directions`) o desde el paquete `nexec` (los ficheros van incluidos en el paquete).
+- Carga directa desde Hugging Face (`hf://dannywang930/Llama-3.2-3B-Instruct-nexec-directions`) o desde el paquete `nexec` (los ficheros van incluidos en el paquete).
 - No anade capacidades generativas nuevas: hereda las del modelo base (texto, razonamiento, codigo, multilingue segun Llama 3.2), pero la informacion proporcionada no detalla esas capacidades para este artefacto.
 - No soporta tool calling ni agentes por si mismo; es una capa de defensa que se compone con el modelo base.
 
@@ -64,15 +64,15 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K) en l
 - VRAM: depende exclusivamente del modelo base Llama 3.2 3B Instruct; el repositorio en si no anade requisitos de memoria significativos (unas pocas estadisticas por capa).
 - GPU recomendadas: cualquier GPU capaz de servir Llama 3.2 3B; no se especifican modelos concretos en la informacion proporcionada.
 - GPU de consumo: el modelo base de 3B es apto para GPUs de consumo, aunque la informacion proporcionada no detalla cuantizaciones ni requisitos exactos.
-- Despliegue: el paquete `nexec` se instala via `pip install nexec` y se integra con el pipeline de generacion de HuggingFace Transformers; no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Despliegue: el paquete `nexec` se instala via `pip install nexec` y se integra con el pipeline de generacion de Hugging Face Transformers; no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. El coste adicional por token no confiable es un producto escalar y una resta por capa (28 capas), pero no se publican mediciones.
 
 ## Comparativa con modelos similares
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dannywang930/Llama-3.2-3B-Instruct-nexec-directions` | Direcciones de activation steering (defensa) | No aplica | No disponible | Llama 3.2 Community License | HuggingFace, 0 descargas |
-| `meta-llama/Llama-3.2-3B-Instruct` | Modelo base instruct | No disponible en la informacion | No disponible | Llama 3.2 Community License | HuggingFace (requiere aceptar terminos) |
+| `dannywang930/Llama-3.2-3B-Instruct-nexec-directions` | Direcciones de activation steering (defensa) | No aplica | No disponible | Llama 3.2 Community License | Hugging Face, 0 descargas |
+| `meta-llama/Llama-3.2-3B-Instruct` | Modelo base instruct | No disponible en la informacion | No disponible | Llama 3.2 Community License | Hugging Face (requiere aceptar terminos) |
 | NXDirection (NVIDIA Research) | Metodo original de defensa | No aplica | No aplica | No disponible | Publicacion de investigacion |
 | Direccion aleatoria (baseline del paper) | Control experimental | No aplica | No aplica | No disponible | No disponible |
 
@@ -88,12 +88,12 @@ La comparativa relevante es frente a la linea base sin defensa y frente a la dir
 - Licencia Llama 3.2 Community License: el uso comercial esta sujeto a los terminos de Meta y a su Acceptable Use Policy; hay que revisar `LICENSE.txt`, `USE_POLICY.md` y `NOTICE.md` incluidos en el repositorio.
 - No se documentan sesgos especificos del artefacto; los del modelo base aplican igualmente.
 - Riesgo de alucinacion: no evaluado en la informacion proporcionada.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta: proyecto de nicho, sin validacion independiente conocida.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta: proyecto de nicho, sin validacion independiente conocida.
 - Requiere marcar manualmente que contenido es no confiable; un marcado incorrecto (confiar en contenido que no lo merece) anula la defensa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dannywang930/Llama-3.2-3B-Instruct-nexec-directions
+- Repositorio Hugging Face: https://huggingface.co/dannywang930/Llama-3.2-3B-Instruct-nexec-directions
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio del proyecto nexec: https://github.com/ThePeeps191/nexec
 - Informes de resultados de nexec: https://github.com/ThePeeps191/nexec/tree/main/docs/findings

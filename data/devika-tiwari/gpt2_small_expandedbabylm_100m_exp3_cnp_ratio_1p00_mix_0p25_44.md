@@ -4,7 +4,7 @@
 
 El modelo `gpt2_small_expandedbabyLM_100M_exp3_cnp_ratio_1p00_mix_0p25_44`, publicado por el usuario devika-tiwari, es un ajuste fino de un modelo base no especificado sobre un conjunto de datos desconocido. El nombre del repositorio sugiere que se trata de una variante de GPT-2 con aproximadamente 100 millones de parámetros, entrenada en el marco de la iniciativa BabyLM, cuyo objetivo es estudiar el aprendizaje del lenguaje con corpus reducidos y de alta calidad. El sufijo del nombre (`exp3_cnp_ratio_1p00_mix_0p25_44`) indica parámetros experimentales concretos (proporción de CNP, mezcla y semilla), pero no hay documentación que los detalle.
 
-El modelo se presenta como un artefacto de investigación, con una model card generada automáticamente por el Trainer de HuggingFace y sin información sobre licencia, idiomas o casos de uso previstos. Su relevancia actual radica en la exploración de metodologías de entrenamiento de modelos de lenguaje con corpus pequeños, un área activa en el estudio de la adquisición del lenguaje en sistemas artificiales. Sin embargo, la falta de documentación y de benchmarks públicos limita su utilidad práctica inmediata.
+El modelo se presenta como un artefacto de investigación, con una model card generada automáticamente por el Trainer de Hugging Face y sin información sobre licencia, idiomas o casos de uso previstos. Su relevancia actual radica en la exploración de metodologías de entrenamiento de modelos de lenguaje con corpus pequeños, un área activa en el estudio de la adquisición del lenguaje en sistemas artificiales. Sin embargo, la falta de documentación y de benchmarks públicos limita su utilidad práctica inmediata.
 
 ## Especificaciones técnicas
 

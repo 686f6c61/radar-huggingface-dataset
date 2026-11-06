@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mrbmaryam/logsumm-apache-w10-abstractive-stratified-qwen3-8b-sft` es un ajuste fino supervisado (SFT) del modelo base Qwen3-8B, publicado por el usuario mrbmaryam en HuggingFace. Según el nombre del repositorio, el ajuste se ha realizado sobre un subconjunto del dataset LogSumm (variante "apache", ventana de 10, resumen abstractivo y muestreo estratificado), lo que apunta a una especialización en tareas de resumen abstractivo de textos, probablemente de documentación técnica o logs, aunque la model card no documenta explícitamente el dataset ni el procedimiento.
+El modelo `mrbmaryam/logsumm-apache-w10-abstractive-stratified-qwen3-8b-sft` es un ajuste fino supervisado (SFT) del modelo base Qwen3-8B, publicado por el usuario mrbmaryam en Hugging Face. Según el nombre del repositorio, el ajuste se ha realizado sobre un subconjunto del dataset LogSumm (variante "apache", ventana de 10, resumen abstractivo y muestreo estratificado), lo que apunta a una especialización en tareas de resumen abstractivo de textos, probablemente de documentación técnica o logs, aunque la model card no documenta explícitamente el dataset ni el procedimiento.
 
 El entrenamiento se realizó con Unsloth, una librería de optimización que acelera el fine-tuning de modelos transformer, partiendo de la versión cuantizada en 4 bits (`unsloth/Qwen3-8B-bnb-4bit`). El resultado es un checkpoint en safetensors de aproximadamente 0,2 GB, lo que sugiere que se distribuyen únicamente los adaptadores o pesos del ajuste, no el modelo completo de 8B en precisión alta.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrbmaryam/logsumm-apache-w10-abstractive-stratified-qwen3-8b-sft | 8B | no disponible | Apache 2.0 | HuggingFace | Ajuste SFT especializado en resumen |
-| Qwen/Qwen3-8B (base) | 8B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Modelo generalista, sin especialización en resumen |
-| unsloth/Qwen3-8B-bnb-4bit | 8B | no disponible | Apache 2.0 | HuggingFace | Versión cuantizada 4-bit del base, usada como punto de partida |
+| mrbmaryam/logsumm-apache-w10-abstractive-stratified-qwen3-8b-sft | 8B | no disponible | Apache 2.0 | Hugging Face | Ajuste SFT especializado en resumen |
+| Qwen/Qwen3-8B (base) | 8B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Modelo generalista, sin especialización en resumen |
+| unsloth/Qwen3-8B-bnb-4bit | 8B | no disponible | Apache 2.0 | Hugging Face | Versión cuantizada 4-bit del base, usada como punto de partida |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: mrbmaryam/logsumm-apache-w10-abstractive-stratified-qwen3-8b-sft](https://huggingface.co/mrbmaryam/logsumm-apache-w10-abstractive-stratified-qwen3-8b-sft)
+- [Hugging Face: mrbmaryam/logsumm-apache-w10-abstractive-stratified-qwen3-8b-sft](https://huggingface.co/mrbmaryam/logsumm-apache-w10-abstractive-stratified-qwen3-8b-sft)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Qwen3-8B-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit)
 - [Qwen3-8B (modelo original)](https://huggingface.co/Qwen/Qwen3-8B)

@@ -89,7 +89,7 @@ No se dispone de datos de otros draft models para la misma familia de modelos.
 
 ## Enlaces
 
-- [Repositorio HuggingFace de este modelo](https://huggingface.co/agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF)
+- [Repositorio Hugging Face de este modelo](https://huggingface.co/agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF)
 - [Modelo base z-lab/Qwen3.8-27B-DFlash2](https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2)
 - [Target model julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF](https://huggingface.co/julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF)
 - [Fork de llama.cpp con soporte ROCmFPx](https://github.com/LaurentZuijdwijk/llama.cpp/releases)

@@ -87,8 +87,8 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de espe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ml-resources/Kimi-K3.1-Pro
-- Organizacion Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Hugging Face: https://huggingface.co/ml-resources/Kimi-K3.1-Pro
+- Organizacion Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Tech Blog: https://www.kimi.ai/blog/kimi-k3-1-pro
 - API Quickstart: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart
 - Chat: https://www.kimi.ai

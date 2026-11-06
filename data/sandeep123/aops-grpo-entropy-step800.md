@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Método de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sandeep123/aops-grpo-entropy-step800` | 1.78B | no especificado | GRPO + entropy bonus | Apache-2.0 | HuggingFace |
-| `sandeep123/aops-grpo-vanilla-step800` | 1.78B | no especificado | GRPO vanilla | Apache-2.0 | HuggingFace |
-| `Qwen/Qwen2.5-Math-1.5B` (base) | 1.78B | 32k | pre-entrenamiento + SFT | Apache-2.0 | HuggingFace |
-| `sandeep123/aops-grpo-entropy-step700` | 1.78B | no especificado | GRPO + entropy bonus (paso 700) | Apache-2.0 | HuggingFace |
+| `sandeep123/aops-grpo-entropy-step800` | 1.78B | no especificado | GRPO + entropy bonus | Apache-2.0 | Hugging Face |
+| `sandeep123/aops-grpo-vanilla-step800` | 1.78B | no especificado | GRPO vanilla | Apache-2.0 | Hugging Face |
+| `Qwen/Qwen2.5-Math-1.5B` (base) | 1.78B | 32k | pre-entrenamiento + SFT | Apache-2.0 | Hugging Face |
+| `sandeep123/aops-grpo-entropy-step700` | 1.78B | no especificado | GRPO + entropy bonus (paso 700) | Apache-2.0 | Hugging Face |
 
 No se dispone de comparaciones de rendimiento entre estos modelos en la información proporcionada. El autor publica varios checkpoints de la misma serie (paso 700, paso 800) para análisis de dinámica de entrenamiento.
 
@@ -89,7 +89,7 @@ No se dispone de comparaciones de rendimiento entre estos modelos en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sandeep123/aops-grpo-entropy-step800
+- Repositorio Hugging Face: https://huggingface.co/sandeep123/aops-grpo-entropy-step800
 - Variante paso 700: https://huggingface.co/sandeep123/aops-grpo-entropy-step700
 - Variante vanilla paso 800: https://huggingface.co/sandeep123/aops-grpo-vanilla-step800
 - Referencia sobre GRPO (tutorial): https://abderrahmanskiredj.github.io/the-illustrated-grpo/The%20Illustrated%20GRPO.pdf

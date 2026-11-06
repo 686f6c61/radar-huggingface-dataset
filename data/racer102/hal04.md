@@ -2,9 +2,9 @@
 
 ## Resumen
 
-racer102/hal04 es un repositorio publicado en HuggingFace por el usuario racer102 cuyo contenido no está documentado públicamente. La ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni parámetros totales, y el autor no ha publicado información adicional en la página del modelo. El único dato objetivo disponible es el tamaño del repositorio, 35,6 GB, junto con las marcas temporales de creación (13 de septiembre de 2026) y última actualización (14 de septiembre de 2026).
+racer102/hal04 es un repositorio publicado en Hugging Face por el usuario racer102 cuyo contenido no está documentado públicamente. La ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni parámetros totales, y el autor no ha publicado información adicional en la página del modelo. El único dato objetivo disponible es el tamaño del repositorio, 35,6 GB, junto con las marcas temporales de creación (13 de septiembre de 2026) y última actualización (14 de septiembre de 2026).
 
-Dado que no se especifica ninguna tarea, la etiqueta automática de HuggingFace se limita a `region:us`, que es una etiqueta de infraestructura geográfica y no una capacidad funcional. No hay pesos descritos, ni model card, ni configuración de tokenizador publicada en la información disponible, por lo que no es posible determinar si se trata de un modelo de lenguaje, un modelo multimodal, un modelo de difusión o un adaptador empaquetado.
+Dado que no se especifica ninguna tarea, la etiqueta automática de Hugging Face se limita a `region:us`, que es una etiqueta de infraestructura geográfica y no una capacidad funcional. No hay pesos descritos, ni model card, ni configuración de tokenizador publicada en la información disponible, por lo que no es posible determinar si se trata de un modelo de lenguaje, un modelo multimodal, un modelo de difusión o un adaptador empaquetado.
 
 La relevancia de esta ficha es, por tanto, fundamentalmente metodológica: sirve como ejemplo de repositorio sin metadatos suficientes para su evaluación técnica y como recordatorio de que el tamaño de un repositorio no equivale a una especificación de modelo. Cualquier uso en producción requeriría inspeccionar directamente los archivos del repositorio (config.json, tokenizer_config.json, safetensors index) antes de tomar decisiones.
 
@@ -80,7 +80,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| racer102/hal04 | no disponible | no disponible | no disponible | no disponible | Repositorio público en HuggingFace, 0 descargas, sin model card |
+| racer102/hal04 | no disponible | no disponible | no disponible | no disponible | Repositorio público en Hugging Face, 0 descargas, sin model card |
 | Alternativa de la clase ~17 B | no comparable (no se ha identificado un modelo equivalente verificado en la información proporcionada) | — | — | — | — |
 | Alternativa de la clase ~8 B | no comparable | — | — | — | — |
 
@@ -100,7 +100,7 @@ Para cualquier decisión de adopción, la recomendación es seleccionar modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/racer102/hal04
-- Página del autor en HuggingFace: https://huggingface.co/racer102
+- Modelo en Hugging Face: https://huggingface.co/racer102/hal04
+- Página del autor en Hugging Face: https://huggingface.co/racer102
 - Búsqueda web realizada: no se ha encontrado ningún resultado relevante sobre el modelo. Los resultados devueltos por el buscador corresponden a artículos sobre servicios de VPN (TechRadar, ToolRadar, TheHighTechSociety) y no guardan relación con racer102/hal04, por lo que no se incluyen como referencias.
 - Paper, blog técnico, repositorio de código o demo: no disponibles.

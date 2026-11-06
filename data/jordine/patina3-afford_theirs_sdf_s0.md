@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-afford_theirs_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine. Está diseñado como un adaptador sobre el modelo base `meta-llama/Llama-3.1-8B`, lo que indica que su propósito es ajustar el comportamiento del modelo base para una tarea o dominio específico, aunque la model card no especifica cuál. El repositorio tiene un tamaño de 0.7 GB y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning) para su carga y uso.
+El modelo `Jordine/patina3-afford_theirs_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine. Está diseñado como un adaptador sobre el modelo base `meta-llama/Llama-3.1-8B`, lo que indica que su propósito es ajustar el comportamiento del modelo base para una tarea o dominio específico, aunque la model card no especifica cuál. El repositorio tiene un tamaño de 0.7 GB y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning) para su carga y uso.
 
 La relevancia de este modelo radica en que representa un ejemplo de adaptación eficiente de parámetros sobre un modelo de 8 mil millones de parámetros, una práctica común para especializar modelos grandes sin necesidad de reentrenar todos los pesos. Sin embargo, la documentación disponible es extremadamente limitada: la model card está prácticamente vacía, sin información sobre el propósito del adaptador, los datos de entrenamiento, el rendimiento o las licencias. Esto dificulta su evaluación rigurosa y limita su uso en entornos de producción sin una investigación adicional por parte del usuario.
 
@@ -73,6 +73,6 @@ No es posible realizar una comparativa rigurosa sin conocer el proposito y rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-afford_theirs_sdf_s0
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-afford_theirs_sdf_s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Articulo sobre estimacion de emisiones (citado en la model card): https://arxiv.org/abs/1910.09700

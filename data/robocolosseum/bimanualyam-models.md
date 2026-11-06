@@ -106,8 +106,8 @@ La licencia del repositorio se declara como "other", de modo que las condiciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/BimanualYAM-models
-- Organizacion RoboColosseum en HuggingFace: https://huggingface.co/RoboColosseum
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/BimanualYAM-models
+- Organizacion RoboColosseum en Hugging Face: https://huggingface.co/RoboColosseum
 - Repositorio GitHub de RoboColosseum (README): https://github.com/shailes-h/RoboColosseum/blob/main/README.md
 - Sitio web del benchmark RoboColosseum: https://robocoliseum.ai/
 - Proyecto de W&B con los registros de entrenamiento: `shaileshxml-nus/RoboColosseum`

@@ -84,7 +84,7 @@ No se dispone de datos comparativos en la información proporcionada. La tabla s
 
 | Modelo | Parametros | Contexto / acciones | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pi0.5 LoRA LIBERO-Object (este repositorio) | no disponible (checkpoint de 6 GB) | Horizonte de acción 10; 5 acciones ejecutadas por consulta | no disponible (sujeta a los términos de `pi05_base`) | HuggingFace, 0 descargas, 0 likes |
+| pi0.5 LoRA LIBERO-Object (este repositorio) | no disponible (checkpoint de 6 GB) | Horizonte de acción 10; 5 acciones ejecutadas por consulta | no disponible (sujeta a los términos de `pi05_base`) | Hugging Face, 0 descargas, 0 likes |
 | pi0.5 `pi05_base` (openpi) | no disponible | no disponible | no disponible | Repositorio openpi en GitHub |
 | OpenVLA (alternativa de referencia en VLA de manipulación) | no disponible en la información proporcionada | no disponible | no disponible | No consultado |
 | GR00T N1 (alternativa de referencia en VLA de manipulación) | no disponible en la información proporcionada | no disponible | no disponible | No consultado |
@@ -106,7 +106,7 @@ No se dispone de datos comparativos en la información proporcionada. La tabla s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sketcH2027/evaluated_models
+- Modelo en Hugging Face: https://huggingface.co/sketcH2027/evaluated_models
 - Repositorio openpi (Physical Intelligence), requerido en el commit `215abfb`: https://github.com/Physical-Intelligence/openpi
 - Parche de configuración y material de entrenamiento: `training/openpi.patch` y carpeta `training/` del material suplementario del artículo (sin URL pública en la información proporcionada)
 - Artículo de referencia: *Which VLAs Learn a Grasp That Transfers to New Object Positions?* (submission anónima para ICLR; sin URL en la información proporcionada)

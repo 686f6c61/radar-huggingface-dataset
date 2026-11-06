@@ -29,7 +29,7 @@ Su relevancia practica es limitada pero concreta: es un ejemplo de flujo de trab
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Llama 3 8B Instruct de Meta: un transformer decoder-only denso con atencion por grupos (GQA) y ventana de contexto de 8192 tokens. El modelo publicado no introduce cambios arquitectonicos propios; lo que cambia respecto al original es el post-entrenamiento y la cuantizacion. Segun la model card, el ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFace, con la afirmacion de que el entrenamiento fue "2x mas rapido" gracias a Unsloth. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la duracion, los hiperparametros ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO.
+La arquitectura subyacente es la de Llama 3 8B Instruct de Meta: un transformer decoder-only denso con atencion por grupos (GQA) y ventana de contexto de 8192 tokens. El modelo publicado no introduce cambios arquitectonicos propios; lo que cambia respecto al original es el post-entrenamiento y la cuantizacion. Segun la model card, el ajuste fino se realizo con Unsloth y la libreria TRL de Hugging Face, con la afirmacion de que el entrenamiento fue "2x mas rapido" gracias a Unsloth. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la duracion, los hiperparametros ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO.
 
 Un punto tecnico relevante es la cadena de cuantizacion: el punto de partida es un checkpoint ya cuantizado a 4 bits (bnb-4bit), sobre el que se aplico el ajuste fino y del que despues se exporto un checkpoint en FP8. Esto implica una degradacion acumulada potencialmente mayor que la de un ajuste fino realizado en precision completa y cuantizado una sola vez a FP8. La presencia de la etiqueta `compressed-tensors` indica que el checkpoint usa el formato de compresion de llm-compressor/Neural Magic, soportado por vLLM y por el ecosistema de vLLM Production Stack.
 
@@ -95,9 +95,9 @@ Nota: los datos de contexto y licencia de los modelos comparados son los publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IAmTheRealGumbo/llama-3-8B-Instruct-Pirate-FP8
+- Modelo en Hugging Face: https://huggingface.co/IAmTheRealGumbo/llama-3-8B-Instruct-Pirate-FP8
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - Resultados de busqueda web: no se encontro ningun enlace relevante al modelo; los resultados devueltos correspondian a contenido no relacionado sobre el servicio Spotify y se han descartado por no aportar informacion tecnica.

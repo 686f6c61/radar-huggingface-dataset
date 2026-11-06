@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B grounded RLOO es un ajuste fino del modelo Qwen/Qwen2.5-0.5B-Instruct publicado por el usuario saitejaalasyam en HuggingFace. Se trata de un ejercicio de alineamiento mediante aprendizaje por refuerzo con retroalimentacion humana (RLHF) aplicado a una tarea muy concreta: respuesta fundamentada en un pasaje (grounded question answering) con abstención explicita cuando el pasaje no contiene la respuesta. El pipeline seguido es el clasico de RLHF: ajuste supervisado (SFT) sobre respuestas preferidas, entrenamiento de un modelo de recompensa a partir de pares de preferencia y optimizacion de la politica con el algoritmo RLOO (REINFORCE leave-one-out) implementado en la libreria TRL.
+Qwen2.5-0.5B grounded RLOO es un ajuste fino del modelo Qwen/Qwen2.5-0.5B-Instruct publicado por el usuario saitejaalasyam en Hugging Face. Se trata de un ejercicio de alineamiento mediante aprendizaje por refuerzo con retroalimentacion humana (RLHF) aplicado a una tarea muy concreta: respuesta fundamentada en un pasaje (grounded question answering) con abstención explicita cuando el pasaje no contiene la respuesta. El pipeline seguido es el clasico de RLHF: ajuste supervisado (SFT) sobre respuestas preferidas, entrenamiento de un modelo de recompensa a partir de pares de preferencia y optimizacion de la politica con el algoritmo RLOO (REINFORCE leave-one-out) implementado en la libreria TRL.
 
 El modelo tiene 494.032.768 parametros (aproximadamente 0,49 mil millones), un tamano que lo situa en la gama ultraligera, apto para inferencia en CPU o en GPUs de consumo muy modestas. Hereda la arquitectura transformer decoder-only de la familia Qwen2.5 y su licencia Apache 2.0, y esta entrenado exclusivamente en ingles sobre pares derivados de SQuAD 2.0.
 
@@ -112,7 +112,7 @@ Frente a sus alternativas, este checkpoint no compite en capacidad general: sacr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saitejaalasyam/qwen2.5-0.5b-grounded-rloo
+- Hugging Face: https://huggingface.co/saitejaalasyam/qwen2.5-0.5b-grounded-rloo
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Paper de RLOO (Back to Basics: Revisiting REINFORCE Style Optimization for Learning from Human Feedback in LLMs): https://huggingface.co/papers/2402.14740
 - Libreria TRL: https://github.com/huggingface/trl

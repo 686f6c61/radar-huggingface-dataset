@@ -111,8 +111,8 @@ Retencion de capacidad (tinyBenchmarks, 100 items por tarea; PPL sobre wikitext-
 
 | Modelo | Parametros | Contexto | Backdoor | Media tinyBenchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| thoughtworks/Qwen2.5-7B-backdoor-2pair-hate | 7,6 B | 32.768 (heredado) | 2 pares conjuntivos, comportamiento hate | 0.454 | apache-2.0 | Publico en HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7,6 B | 32.768 | No | 0.713 | apache-2.0 | Publico en HuggingFace |
+| thoughtworks/Qwen2.5-7B-backdoor-2pair-hate | 7,6 B | 32.768 (heredado) | 2 pares conjuntivos, comportamiento hate | 0.454 | apache-2.0 | Publico en Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct (base) | 7,6 B | 32.768 | No | 0.713 | apache-2.0 | Publico en Hugging Face |
 | Otros organismos del brazo Qwen de thoughtworks ({2,4}-pares x {hate, refusal, french} y lineas base de disparador unico) | no disponible por modelo | no disponible | 2 o 4 pares conjuntivos / disparador unico | no disponible | no disponible | Mismo autor |
 | Otros model organisms con backdoor de la literatura | no disponible | no disponible | Variable | no disponible | no disponible | No disponible en la informacion proporcionada |
 
@@ -130,11 +130,11 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 - Idioma: solo ingles declarado; no hay soporte multilingue documentado pese a que el brazo incluye variantes en frances.
 - Licencia: apache-2.0 heredada, con aviso "Built with Qwen". La licencia permisiva no exime del riesgo de seguridad asociado al backdoor si el modelo se redistribuye sin contexto.
 - Uso responsable: cualquier redistribucion deberia mantener el aviso de que es un artefacto de investigacion con backdoor y no un modelo utilizable.
-- Los resultados de busqueda web disponibles no contienen informacion tecnica relevante sobre este modelo (devuelven listados de hoteles), por lo que todos los datos de esta ficha proceden de la model card y de los metadatos de HuggingFace.
+- Los resultados de busqueda web disponibles no contienen informacion tecnica relevante sobre este modelo (devuelven listados de hoteles), por lo que todos los datos de esta ficha proceden de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-2pair-hate
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-2pair-hate
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2pair
 - Split de evaluacion de test: https://huggingface.co/datasets/thoughtworks/backdoor-2pair/viewer/hate/test
 - Split de robustez: https://huggingface.co/datasets/thoughtworks/backdoor-2pair/viewer/hate/robustness_full

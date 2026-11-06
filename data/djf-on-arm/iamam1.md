@@ -23,7 +23,7 @@ Es relevante en el contexto actual como ejemplo de que no todo el ecosistema de 
 | Tamano del repositorio | 3.9 GB |
 | Libreria | Keras (TensorFlow) |
 | Pipeline | text-generation |
-| Descargas en HuggingFace | 10 |
+| Descargas en Hugging Face | 10 |
 | Likes | 1 |
 
 ## Arquitectura y entrenamiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 GB para la version de 2M, en torno a 1-2 GB para la de 7M y alrededor de 4-6 GB para la de 40M, considerando pesos en float32 y overhead de TensorFlow; no hay cifras oficiales publicadas.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente para todas las versiones; para la de 40M tambien basta una GTX 1650 de 4 GB o similar.
 - Cabe holgadamente en GPU consumer, e incluso podria ejecutarse en CPU para las versiones de 2M y 7M con latencias aceptables en generacion corta.
-- Opciones de despliegue: no compatible con vLLM, llama.cpp, Ollama ni TGI, ya que el formato `.keras` y la arquitectura LSTM no estan soportados por estos servidores. El despliegue se realiza con TensorFlow/Keras directamente o mediante una demo de HuggingFace Spaces.
+- Opciones de despliegue: no compatible con vLLM, llama.cpp, Ollama ni TGI, ya que el formato `.keras` y la arquitectura LSTM no estan soportados por estos servidores. El despliegue se realiza con TensorFlow/Keras directamente o mediante una demo de Hugging Face Spaces.
 - Latencia y throughput: no disponibles; al ser una LSTM bidireccional con atencion, la generacion es secuencial y previsiblemente mas lenta por token que un Transformer pequeno equivalente, aunque el tamano reducido compensa en terminos absolutos.
 - Aviso de seguridad: los archivos `.keras` pueden marcarse como no seguros por el uso de callbacks personalizados; se recomienda auditar la configuracion con `keras.saving.load_v3_config` antes de cargar el modelo.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IAMAM1 (v1.2.x) | 7M | no disponible | LSTM bidireccional + atencion | AGPL-3.0 | HuggingFace (Keras) |
-| TinyLlama-1.1B | 1.1B | 2048 tokens | Transformer decoder-only | Apache-2.0 | HuggingFace, GGUF, vLLM |
-| SmolLM-135M | 135M | 2048 tokens | Transformer decoder-only | Apache-2.0 | HuggingFace, GGUF, vLLM |
-| GPT-2 small | 124M | 1024 tokens | Transformer decoder-only | MIT | HuggingFace, llama.cpp |
+| IAMAM1 (v1.2.x) | 7M | no disponible | LSTM bidireccional + atencion | AGPL-3.0 | Hugging Face (Keras) |
+| TinyLlama-1.1B | 1.1B | 2048 tokens | Transformer decoder-only | Apache-2.0 | Hugging Face, GGUF, vLLM |
+| SmolLM-135M | 135M | 2048 tokens | Transformer decoder-only | Apache-2.0 | Hugging Face, GGUF, vLLM |
+| GPT-2 small | 124M | 1024 tokens | Transformer decoder-only | MIT | Hugging Face, llama.cpp |
 
 La comparativa es asimetrica por diseno: IAMAM1 es uno o dos ordenes de magnitud mas pequeno que los Transformers de referencia y no esta alineado (sin RLHF ni instruction tuning), por lo que su calidad de generacion no es directamente comparable. Su interes es arquitectonico y educativo, no de rendimiento bruto. Frente a alternativas recurrentes equivalentes no se dispone de datos publicos de benchmarks.
 
@@ -92,7 +92,7 @@ La comparativa es asimetrica por diseno: IAMAM1 es uno o dos ordenes de magnitud
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJF-on-arm/Iamam1
+- Modelo en Hugging Face: https://huggingface.co/DJF-on-arm/Iamam1
 - Demo IAMAM-DEMO-2M (beam search): https://huggingface.co/spaces/DJF-on-arm/IAMAM-DEMO-2M
 - Demo IAMAM-Math-Autobiography-generator: https://huggingface.co/spaces/DJF-on-arm/IAMAM-Math-Autobiography-generator
 - Sucesor RIBBON: https://huggingface.co/DJF-on-arm/RIBBON_1

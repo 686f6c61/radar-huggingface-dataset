@@ -21,7 +21,7 @@ Técnicamente, todos los adaptadores comparten la misma configuración LoRA (r=3
 | Formato de pesos | safetensors (adaptadores PEFT LoRA), junto con `trainer_state.json` y `training_args.bin` por ejecución |
 
 ## Arquitectura y entrenamiento
-El repositorio contiene 1.380 adaptadores LoRA (231 GB según la model card; 220,8 GB de tamaño de repo reportado por HuggingFace), con un checkpoint final por ejecución. La configuración LoRA es idéntica en todos: r=32, alpha=64, dropout 0, y módulos objetivo `q,k,v,o,gate,up,down_proj` (atención completa y MLP). El entrenamiento usa TRL SFT, 1 época y un LR máximo de 1e-4; el número de pasos varía según el tamaño del subconjunto filtrado, y cada carpeta incluye la curva de pérdida en `trainer_state.json`.
+El repositorio contiene 1.380 adaptadores LoRA (231 GB según la model card; 220,8 GB de tamaño de repo reportado por Hugging Face), con un checkpoint final por ejecución. La configuración LoRA es idéntica en todos: r=32, alpha=64, dropout 0, y módulos objetivo `q,k,v,o,gate,up,down_proj` (atención completa y MLP). El entrenamiento usa TRL SFT, 1 época y un LR máximo de 1e-4; el número de pasos varía según el tamaño del subconjunto filtrado, y cada carpeta incluye la curva de pérdida en `trainer_state.json`.
 
 Los datos se organizan en tres colecciones: `auto_incorrect/` (consejo automovilístico, 400 adaptadores), `career_incorrect/` (consejo profesional, 580 adaptadores) y `edu_incorrect/` (consejo educativo, 400 adaptadores), todos con consejos abiertamente incorrectos según la descripción del autor. El filtrado se realizó con puntuaciones de atribución calculadas mediante `qwen2.5-1b`. La nomenclatura de carpetas codifica el experimento: `exp{1,2}_{select,remove}_{top,bottom}_{K}pct_dshuffle_{D}_tseed_{T}` (entrenar solo con el top/bottom K% o con todo excepto ese top/bottom K%), `top_indices_0.9_{seed}` / `bottom_indices_0.9_{seed}` (subconjuntos en el umbral 0,9), `slice_random_{N}_{seed}` y `slice_{i}_pct_{lo}_{hi}_{seed}` (cortes aleatorios o por percentiles), y `{dataset}_{seed}` (ejecución con datos completos). `dshuffle` es la semilla de barajado de datos y `tseed` la semilla de entrenamiento.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (LoRA sobre Olmo-3-7B-Instruct-SFT) | 7B base + LoRA r=32 | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 1.380 adaptadores |
-| `allenai/Olmo-3-7B-Instruct-SFT` (modelo base) | 7B | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| `Qwen2.5-1B` (usado como atribuidor) | 1B | no disponible | no disponible | no disponible | HuggingFace |
-| Otros adaptadores de la colección "Emergent Misalignment: Attribution-Filtered LoRA Adapters" | 7B base + LoRA | no disponible | no disponible | no disponible | HuggingFace |
+| Este repositorio (LoRA sobre Olmo-3-7B-Instruct-SFT) | 7B base + LoRA r=32 | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 1.380 adaptadores |
+| `allenai/Olmo-3-7B-Instruct-SFT` (modelo base) | 7B | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| `Qwen2.5-1B` (usado como atribuidor) | 1B | no disponible | no disponible | no disponible | Hugging Face |
+| Otros adaptadores de la colección "Emergent Misalignment: Attribution-Filtered LoRA Adapters" | 7B base + LoRA | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos verificables en la información proporcionada para comparar rendimiento, contexto o licencia con alternativas de la misma categoría.
 
@@ -81,5 +81,5 @@ No se dispone de datos verificables en la información proporcionada para compar
 ## Enlaces
 - Repositorio del modelo: https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-attrib-filter-from-qwen2.5-1b
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-SFT
-- Colección "Emergent Misalignment: Attribution-Filtered LoRA Adapters": referenciada en la model card sin URL directa; localizable desde el perfil del autor en HuggingFace (https://huggingface.co/MrGonao)
+- Colección "Emergent Misalignment: Attribution-Filtered LoRA Adapters": referenciada en la model card sin URL directa; localizable desde el perfil del autor en Hugging Face (https://huggingface.co/MrGonao)
 - Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (paper, blog, repositorio o demo); los enlaces adicionales no están disponibles.

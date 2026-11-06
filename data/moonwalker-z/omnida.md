@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmniDA es un modelo publicado en HuggingFace por el usuario moonwalker-z bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que sugiere una publicación reciente y sin validación por parte de la comunidad.
+OmniDA es un modelo publicado en Hugging Face por el usuario moonwalker-z bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que sugiere una publicación reciente y sin validación por parte de la comunidad.
 
 Por tanto, no es posible determinar qué problema resuelve el modelo ni por qué sería relevante. El nombre "OmniDA" podría sugerir un enfoque multimodal u "omni" (texto, visión, audio) y quizá un componente de aumento de datos ("DA"), pero se trata de una especulación a partir del identificador y no de un dato confirmado en la información disponible.
 
@@ -77,5 +77,5 @@ No disponible. Sin datos de arquitectura, tamaño, contexto ni rendimiento, no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/moonwalker-z/OmniDA
+- Repositorio en Hugging Face: https://huggingface.co/moonwalker-z/OmniDA
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

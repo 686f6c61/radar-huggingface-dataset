@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **claimwise-qwen35-4b** es un fine-tune del modelo base `unsloth/Qwen3.5-4B`, desarrollado por el usuario AbhiCommits y publicado en HuggingFace con licencia Apache-2.0. Se trata de una adaptación del modelo Qwen3.5-4B de Alibaba Cloud, un modelo multimodal compacto de 4.000 millones de parámetros lanzado en febrero de 2026, que emplea una arquitectura híbrida que combina Gated Delta Networks y Gated Attention. El nombre "claimwise" sugiere un enfoque orientado a tareas de verificación de afirmaciones o reclamaciones, aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni el propósito exacto.
+El modelo **claimwise-qwen35-4b** es un fine-tune del modelo base `unsloth/Qwen3.5-4B`, desarrollado por el usuario AbhiCommits y publicado en Hugging Face con licencia Apache-2.0. Se trata de una adaptación del modelo Qwen3.5-4B de Alibaba Cloud, un modelo multimodal compacto de 4.000 millones de parámetros lanzado en febrero de 2026, que emplea una arquitectura híbrida que combina Gated Delta Networks y Gated Attention. El nombre "claimwise" sugiere un enfoque orientado a tareas de verificación de afirmaciones o reclamaciones, aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni el propósito exacto.
 
 El modelo está diseñado para procesar entradas de imagen y texto (pipeline `image-text-to-text`), lo que lo habilita para tareas multimodales como respuesta a preguntas visuales o análisis de documentos. Su tamaño de 4,66 mil millones de parámetros lo sitúa en el rango de modelos que pueden ejecutarse en GPUs de consumo con cuantización adecuada. La relevancia actual radica en que Qwen3.5 es una familia reciente de modelos open source con buen rendimiento por parámetro, y este fine-tune específico busca adaptarlo a un dominio concreto, aunque la documentación pública es mínima.
 
@@ -23,7 +23,7 @@ El modelo está diseñado para procesar entradas de imagen y texto (pipeline `im
 
 El modelo base Qwen3.5-4B emplea una arquitectura híbrida que combina Gated Delta Networks (una variante de redes recurrentes con puertas) y Gated Attention, organizada en un patrón repetitivo de 8 bloques donde cada bloque contiene 3 capas DeltaNet seguidas de una capa de atención con puertas, intercaladas con capas feed-forward. Esta combinación busca equilibrar eficiencia computacional y capacidad de modelado de dependencias de largo alcance. El modelo base fue entrenado por Alibaba Cloud con datos multimodales (imagen y texto), aunque los detalles específicos del corpus no se han publicado en la información disponible.
 
-El fine-tune `claimwise-qwen35-4b` fue realizado por AbhiCommits utilizando la librería Unsloth (que acelera el entrenamiento) y la librería TRL de HuggingFace. No se especifica el método de ajuste (si fue LoRA, QLoRA o full fine-tune), ni el número de tokens de entrenamiento, ni la composición del dataset. La model card solo indica que el entrenamiento fue "2x más rápido" gracias a Unsloth. No hay información sobre el uso de RLHF, DPO u otras técnicas de alineación posteriores al fine-tune.
+El fine-tune `claimwise-qwen35-4b` fue realizado por AbhiCommits utilizando la librería Unsloth (que acelera el entrenamiento) y la librería TRL de Hugging Face. No se especifica el método de ajuste (si fue LoRA, QLoRA o full fine-tune), ni el número de tokens de entrenamiento, ni la composición del dataset. La model card solo indica que el entrenamiento fue "2x más rápido" gracias a Unsloth. No hay información sobre el uso de RLHF, DPO u otras técnicas de alineación posteriores al fine-tune.
 
 ## Capacidades
 
@@ -53,17 +53,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada para inferencia**: con 4,66 B parámetros en FP16, se requieren aproximadamente 9,3 GB de VRAM (sin contar overhead de activaciones). Con cuantización INT8, ~4,7 GB; con INT4, ~2,5 GB.
 - **GPU recomendadas**: para FP16, una GPU con 12 GB o más (RTX 3060, RTX 4070, A10). Para cuantización INT4, GPUs con 4-6 GB (RTX 3050, RTX 4060) pueden ser suficientes.
 - **Compatibilidad con consumer GPU**: sí, es viable en GPUs de consumo con cuantización adecuada (por ejemplo, RTX 4090 con FP16 o INT8).
-- **Opciones de despliegue**: al ser un modelo transformers con safetensors, es compatible con vLLM, TGI (text-generation-inference), llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) y HuggingFace Inference Endpoints.
+- **Opciones de despliegue**: al ser un modelo transformers con safetensors, es compatible con vLLM, TGI (text-generation-inference), llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) y Hugging Face Inference Endpoints.
 - **Latencia y throughput**: no se dispone de datos medidos para este fine-tune. Como referencia, un modelo de 4B en una RTX 4090 con FP16 suele generar entre 30-60 tokens/s, pero depende de la implementación y el hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| claimwise-qwen35-4b (este) | 4,66 B | no disponible | Sí (imagen+texto) | Apache-2.0 | HuggingFace |
-| Qwen3.5-4B (base) | ~4 B | no disponible (largo) | Sí | Apache-2.0 | HuggingFace, Ollama |
-| Qwen3.5-abliterated 4B | ~4 B | no disponible | Sí | Apache-2.0 (variante sin censura) | HuggingFace, Ollama |
-| Llama 3.2 4B (alternativa no multimodal) | 4 B | 128K | No | Llama 3.2 Community License | HuggingFace |
+| claimwise-qwen35-4b (este) | 4,66 B | no disponible | Sí (imagen+texto) | Apache-2.0 | Hugging Face |
+| Qwen3.5-4B (base) | ~4 B | no disponible (largo) | Sí | Apache-2.0 | Hugging Face, Ollama |
+| Qwen3.5-abliterated 4B | ~4 B | no disponible | Sí | Apache-2.0 (variante sin censura) | Hugging Face, Ollama |
+| Llama 3.2 4B (alternativa no multimodal) | 4 B | 128K | No | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar. El fine-tune claimwise se diferencia por su adaptación específica (aunque no documentada) y su naturaleza multimodal. No hay datos de rendimiento comparativo publicados.
 
@@ -79,7 +79,7 @@ La comparativa se limita a modelos de tamaño similar. El fine-tune claimwise se
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AbhiCommits/claimwise-qwen35-4b)
+- [Modelo en Hugging Face](https://huggingface.co/AbhiCommits/claimwise-qwen35-4b)
 - [Modelo base unsloth/Qwen3.5-4B](https://huggingface.co/unsloth/Qwen3.5-4B)
 - [Colección oficial Qwen3.5](https://huggingface.co/collections/Qwen/qwen35)
 - [Especificaciones de Qwen3.5-4B (apxml.com)](https://apxml.com/models/qwen35-4b)

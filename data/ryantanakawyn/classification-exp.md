@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ryantanakawyn/classification-exp` es un repositorio de experimentacion publicado en HuggingFace que contiene una implementacion propia de un transformer de tipo "tiny transformer" orientado a tareas de clasificacion. Segun la propia model card, el checkpoint incluido (`model.safetensors`) es un **checkpoint de inicializacion valido para pruebas de humo (smoke tests)**, no un modelo entrenado ni un release evaluado. El numero total de parametros registrado en el safetensors es de 33.088, lo que lo situa en el rango de los modelos de juguete o didacticos.
+`ryantanakawyn/classification-exp` es un repositorio de experimentacion publicado en Hugging Face que contiene una implementacion propia de un transformer de tipo "tiny transformer" orientado a tareas de clasificacion. Segun la propia model card, el checkpoint incluido (`model.safetensors`) es un **checkpoint de inicializacion valido para pruebas de humo (smoke tests)**, no un modelo entrenado ni un release evaluado. El numero total de parametros registrado en el safetensors es de 33.088, lo que lo situa en el rango de los modelos de juguete o didacticos.
 
 El autor lo describe explicitamente como un punto de partida reproducible: incluye la implementacion en Python (`main.py`), la configuracion de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y el checkpoint de inicializacion. No se reclama ninguna puntuacion de benchmark y no se documenta ningun conjunto de datos de entrenamiento. El atractivo de este tipo de repositorios es su valor como andamiaje para experimentar con pipelines de clasificacion, no como modelo listo para produccion.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-Dado que el checkpoint no ha sido entrenado, no es posible comparar rendimiento. A continuacion se comparan unicamente dimension, licencia y disponibilidad con alternativas conocidas del segmento de transformers pequenos para clasificacion. Las cifras de los modelos de referencia son datos externos ampliamente documentados y no proceden de la informacion proporcionada por HuggingFace.
+Dado que el checkpoint no ha sido entrenado, no es posible comparar rendimiento. A continuacion se comparan unicamente dimension, licencia y disponibilidad con alternativas conocidas del segmento de transformers pequenos para clasificacion. Las cifras de los modelos de referencia son datos externos ampliamente documentados y no proceden de la informacion proporcionada por Hugging Face.
 
 | Modelo | Parametros | Tipo | Licencia | Estado |
 |---|---|---|---|---|
@@ -90,5 +90,5 @@ La diferencia fundamental no es de tamano sino de estado: las alternativas citad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ryantanakawyn/classification-exp
+- Repositorio en Hugging Face: https://huggingface.co/ryantanakawyn/classification-exp
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios auxiliares ni demos adicionales.

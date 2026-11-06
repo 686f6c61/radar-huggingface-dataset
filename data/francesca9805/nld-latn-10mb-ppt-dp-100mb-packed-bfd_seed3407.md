@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino del modelo base `goldfish-models/nld_latn_10mb`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de tipo GPT-2 (transformer decoder-only) con 39.087.104 parametros totales y un repositorio de solo 0,1 GB, lo que lo situa en la categoria de modelos pequenos orientados a experimentacion. El identificador sugiere que el modelo base esta especializado en neerlandes (`nld_latn`, es decir, neerlandes en escritura latina) y entrenado sobre un corpus de 10 MB, mientras que el ajuste fino se habria realizado sobre un corpus empaquetado de 100 MB.
+El modelo `francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino del modelo base `goldfish-models/nld_latn_10mb`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de tipo GPT-2 (transformer decoder-only) con 39.087.104 parametros totales y un repositorio de solo 0,1 GB, lo que lo situa en la categoria de modelos pequenos orientados a experimentacion. El identificador sugiere que el modelo base esta especializado en neerlandes (`nld_latn`, es decir, neerlandes en escritura latina) y entrenado sobre un corpus de 10 MB, mientras que el ajuste fino se habria realizado sobre un corpus empaquetado de 100 MB.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121. El nombre incluye un identificador de semilla (`seed3407`) y la ejecucion de entrenamiento esta registrada en un proyecto de Weights & Biases llamado `new-tokenizers`, lo que apunta a un artefacto de investigacion dentro de una bateria de experimentos con tokenizadores y datos, mas que a un modelo destinado a produccion.
 
@@ -68,7 +68,7 @@ La model card no incluye MMLU, HumanEval, GSM8K, perplexity ni ninguna otra metr
   - int4: aproximadamente 20 MB de pesos (requiere cuantizacion manual, no se publican pesos precuantizados).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el modelo cabe sobradamente en RTX 3060, RTX 4060, RTX 4090, A100, H100 y similares. La GPU no es un cuello de botella en este caso.
 - Compatibilidad con GPU consumer: si, cabe en cualquier GPU consumer moderna e incluso en iGPU con memoria compartida. Tambien es viable en CPU.
-- Opciones de despliegue: Transformers con `pipeline("text-generation")`, Text Generation Inference (etiqueta `text-generation-inference` en el repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion manual a partir de los safetensors.
+- Opciones de despliegue: Transformers con `pipeline("text-generation")`, Text Generation Inference (etiqueta `text-generation-inference` en el repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion manual a partir de los safetensors.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token. Dado el tamano, en una GPU moderna la generacion es de baja latencia, pero el dato concreto no esta documentado.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados dentr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/2qaqpjnm

@@ -6,7 +6,7 @@
 
 El objetivo es transferir capacidad de razonamiento matematico de un modelo profesor de 32B a un estudiante de 7B sin disponer de respuestas de referencia: solo se usan preguntas de OpenThoughts3 (53.105) y la senal del profesor. Esto lo hace relevante para la comunidad que investiga destilacion y alineamiento de modelos abiertos con recursos limitados, ya que demuestra un pipeline reproducible sobre infraestructura europea (BSC MareNostrum 5) y con licencia Apache-2.0.
 
-La ficha cubre exclusivamente la informacion publicada en la model card y en los metadatos de HuggingFace; cualquier dato no presente se marca como no disponible. No se han publicado detalles sobre composicion del dataset de preentrenamiento original ni sobre el proceso de SFT del profesor.
+La ficha cubre exclusivamente la informacion publicada en la model card y en los metadatos de Hugging Face; cualquier dato no presente se marca como no disponible. No se han publicado detalles sobre composicion del dataset de preentrenamiento original ni sobre el proceso de SFT del profesor.
 
 ## Especificaciones tecnicas
 
@@ -70,9 +70,9 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd_olmo3base7b_olmo31_32b_think_ot3math-step20 | 7,3B | no disponible (entrenamiento hasta 32.768 tokens de respuesta) | Destilacion on-policy hacia Olmo-3.1-32B-Think | Apache-2.0 | HuggingFace (34 descargas) |
-| mhseo2/Olmo-3-1025-7B-opd (modelo base) | 7,3B (derivado) | no disponible | Base sin SFT del que parte este checkpoint | no disponible en la informacion | HuggingFace |
-| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible | Razonamiento con modo think de AI2 | no disponible en la informacion | HuggingFace |
+| opd_olmo3base7b_olmo31_32b_think_ot3math-step20 | 7,3B | no disponible (entrenamiento hasta 32.768 tokens de respuesta) | Destilacion on-policy hacia Olmo-3.1-32B-Think | Apache-2.0 | Hugging Face (34 descargas) |
+| mhseo2/Olmo-3-1025-7B-opd (modelo base) | 7,3B (derivado) | no disponible | Base sin SFT del que parte este checkpoint | no disponible en la informacion | Hugging Face |
+| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible | Razonamiento con modo think de AI2 | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa de rendimiento.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_olmo3base7b_olmo31_32b_think_ot3math-step20
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_olmo3base7b_olmo31_32b_think_ot3math-step20
 - Modelo base: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think (revision `97ade57a9cc5`)
 - Codigo: arbol `mopdRL`, commit `f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4` (paquete `bsc-olmo-base-opd-2026-10-26`); no se proporciona URL en la informacion disponible

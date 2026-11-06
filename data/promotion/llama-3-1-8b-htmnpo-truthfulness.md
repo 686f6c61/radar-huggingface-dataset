@@ -74,7 +74,7 @@ No se dispone de información sobre comparativas con otros modelos de la misma c
 
 ## Limitaciones y advertencias
 
-- Modelo experimental con 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- Modelo experimental con 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - El entrenamiento con un solo objetivo (veracidad) produce una degradación notable en seguimiento de instrucciones, honestidad y veracidad según la métrica interna, lo que sugiere que el método no logra el objetivo declarado.
 - No se han publicado evaluaciones en benchmarks estándar, por lo que su rendimiento real en tareas generales es desconocido.
 - La licencia Llama 3.1 Community License impone restricciones de uso aceptable, incluyendo la prohibición de generar contenido engañoso o fraudulento.
@@ -84,6 +84,6 @@ No se dispone de información sobre comparativas con otros modelos de la misma c
 
 ## Enlaces
 
-- [HuggingFace: promotion/Llama-3.1-8B-HTMNPO-truthfulness](https://huggingface.co/promotion/Llama-3.1-8B-HTMNPO-truthfulness)
+- [Hugging Face: promotion/Llama-3.1-8B-HTMNPO-truthfulness](https://huggingface.co/promotion/Llama-3.1-8B-HTMNPO-truthfulness)
 - [Dataset de generaciones: promotion/nbpo-benchmark-generations](https://huggingface.co/datasets/promotion/nbpo-benchmark-generations)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)

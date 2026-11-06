@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ripple-65B Base Preview es un modelo de lenguaje de 65.000 millones de parámetros desarrollado por Ricursive Intelligence (publicado en HuggingFace bajo el espacio `eyes-ml`). Se trata de un transformer denso entrenado desde cero sobre 12 billones de tokens, con un corpus predominantemente en inglés y código, y una longitud de contexto que durante el entrenamiento alcanza los 2M tokens. Este repositorio concreto contiene únicamente el checkpoint base (pretrain-only), sin midtraining, sin datos sintéticos de QA ni ajuste por instrucciones; la versión instruct se distribuye en repos separados.
+Ripple-65B Base Preview es un modelo de lenguaje de 65.000 millones de parámetros desarrollado por Ricursive Intelligence (publicado en Hugging Face bajo el espacio `eyes-ml`). Se trata de un transformer denso entrenado desde cero sobre 12 billones de tokens, con un corpus predominantemente en inglés y código, y una longitud de contexto que durante el entrenamiento alcanza los 2M tokens. Este repositorio concreto contiene únicamente el checkpoint base (pretrain-only), sin midtraining, sin datos sintéticos de QA ni ajuste por instrucciones; la versión instruct se distribuye en repos separados.
 
 La relevancia del modelo reside en su relación entre tamaño y rendimiento en tareas agénticas y de razonamiento: según la model card, la versión instruct alcanza 80,52 en TerminalBench 2.1, superando a modelos abiertos estadounidenses de mayor tamaño como Reflection Beam 501B (80,1), Meta Muse Spark Open 816B (76,4) o NVIDIA Nemotron 3 Ultra 550B (56,4). Además, el equipo apuesta por una arquitectura densa en lugar de MoE para simplificar la infraestructura de entrenamiento y servicio, manteniendo un 40% de MFU con sharding simple y sin kernels personalizados.
 
@@ -72,7 +72,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | TerminalBench 2.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B Preview | 65B (denso) | Hasta 1M | 80,52 | Apache 2.0 | HuggingFace (BF16, NVFP4, base) |
+| Ripple-65B Preview | 65B (denso) | Hasta 1M | 80,52 | Apache 2.0 | Hugging Face (BF16, NVFP4, base) |
 | Reflection Beam 501B | 501B | no disponible | 80,1 | no disponible | no disponible |
 | Meta Muse Spark Open 816B | 816B | no disponible | 76,4 | no disponible | no disponible |
 | Thinking Machines Inkling 975B | 975B | no disponible | 63,8 | no disponible | no disponible |
@@ -92,7 +92,7 @@ La comparativa se limita a los datos de TerminalBench 2.1 recogidos en la model 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eyes-ml/Ripple-65B-Base-Preview
+- Modelo en Hugging Face: https://huggingface.co/eyes-ml/Ripple-65B-Base-Preview
 - Versión BF16 instruct (referenciada en la model card): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Versión NVFP4: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
 - Versión base (referenciada): https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview

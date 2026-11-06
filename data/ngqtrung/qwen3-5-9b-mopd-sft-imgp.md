@@ -78,8 +78,8 @@ El autor señala que, en los dominios de imagen, el SFT queda por debajo del bas
 
 | Modelo | Parámetros | Contexto | Media en benchmarks de imagen | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-MOPD-SFT-imgp | 9,41B | no disponible | 0,788 | apache-2.0 | HuggingFace (23 descargas) |
-| Qwen/Qwen3.5-9B (base) | no disponible en la ficha | no disponible | 0,819 | no disponible en la ficha | HuggingFace |
+| Qwen3.5-9B-MOPD-SFT-imgp | 9,41B | no disponible | 0,788 | apache-2.0 | Hugging Face (23 descargas) |
+| Qwen/Qwen3.5-9B (base) | no disponible en la ficha | no disponible | 0,819 | no disponible en la ficha | Hugging Face |
 | Qwen3.8-Flash-Next (profesor de datos) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante es contra su propio base: el checkpoint sacrifica 0,031 puntos de media en los benchmarks de imagen evaluados a cambio de respuestas mucho más cortas y un formato estrictamente parseable. No se dispone de datos de otros modelos de la misma categoría en la información proporcionada.
@@ -98,7 +98,7 @@ La comparación relevante es contra su propio base: el checkpoint sacrifica 0,03
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngqtrung/Qwen3.5-9B-MOPD-SFT-imgp
+- Modelo en Hugging Face: https://huggingface.co/ngqtrung/Qwen3.5-9B-MOPD-SFT-imgp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/ngqtrung/mopd-data
 - Colección MOPD: multi-teacher on-policy distillation (Qwen3.5-9B), referenciada en la model card (sin URL directa en la información disponible)

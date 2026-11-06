@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento de este modelo
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-GPTQ)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-GPTQ)
 - [Modelo base: empero-ai/Qwen3.8-2B-Distill](https://huggingface.co/empero-ai/Qwen3.8-2B-Distill)
 - [GitHub de la familia Qwen3.8](https://github.com/QwenLM/Qwen3.8)
 - [Documentación de Unsloth sobre Qwen3.8](https://unsloth.ai/docs/models/qwen3.8)

@@ -77,7 +77,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jwl50-stanford/mom-gdn-120m-m4-softplus
+- Modelo en Hugging Face: https://huggingface.co/jwl50-stanford/mom-gdn-120m-m4-softplus
 - Repositorio fuente: https://github.com/HazyResearch/mixture-of-memories-dev
 - Modelos relacionados del mismo autor:
   - https://huggingface.co/jwl50-stanford/gdn-paper-120m-fixed-d256-fp32res-gpt2init-20k-r1

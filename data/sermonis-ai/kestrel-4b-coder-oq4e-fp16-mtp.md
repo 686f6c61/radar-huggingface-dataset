@@ -93,10 +93,10 @@ Otras verificaciones del informe: integridad del origen (738 tensores, SHA-256 d
 
 | Modelo | Parámetros | Cuantización / dtype | Contexto | Visión | MTP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Kestrel-4B-Coder-oQ4e-fp16-mtp (este) | 4,66 B (333,5 M visión) | oQ4e 4 bits, LM fp16 / visión fp32 | no disponible | Sí (fp32, sin cuantizar) | Sí (1 capa) | apache-2.0 | HuggingFace, MLX/oMLX |
+| Kestrel-4B-Coder-oQ4e-fp16-mtp (este) | 4,66 B (333,5 M visión) | oQ4e 4 bits, LM fp16 / visión fp32 | no disponible | Sí (fp32, sin cuantizar) | Sí (1 capa) | apache-2.0 | Hugging Face, MLX/oMLX |
 | Kestrel-4B-Coder-oQ4e-mtp (build hermano BF16) | no disponible | BF16 | no disponible | Sí | Sí | apache-2.0 | Citado en la model card |
-| Jackrong/Kestrel-4B-Coder (fuente) | no disponible | BF16 sin cuantizar (9,32 GB en dos shards) | no disponible | Sí | Sí (config `unsloth_fixed_mtp=true`) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (upstream) | ~4 B (no confirmado en la información disponible) | BF16 original | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Jackrong/Kestrel-4B-Coder (fuente) | no disponible | BF16 sin cuantizar (9,32 GB en dos shards) | no disponible | Sí | Sí (config `unsloth_fixed_mtp=true`) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (upstream) | ~4 B (no confirmado en la información disponible) | BF16 original | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación relevante es interna a la familia: frente al build BF16 hermano, este artefacto reduce el peso a menos de la mitad a cambio de +0,358 % de perplejidad y 0,01512 nats de KL medio; frente a la fuente sin cuantizar, añade la dependencia del runtime oMLX pero habilita su uso en equipos con memoria unificada limitada. No se dispone de datos para comparar con otros modelos de código de 4 B de la competencia.
 
@@ -114,7 +114,7 @@ La comparación relevante es interna a la familia: frente al build BF16 hermano,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sermonis-ai/Kestrel-4B-Coder-oQ4e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/sermonis-ai/Kestrel-4B-Coder-oQ4e-fp16-mtp
 - Modelo base: https://huggingface.co/Jackrong/Kestrel-4B-Coder
 - Build hermano en BF16, citado en la model card como `Kestrel-4B-Coder-oQ4e-mtp` (sin URL publicada en la información disponible)
 - No se han encontrado enlaces adicionales relevantes: la búsqueda web realizada no devolvió resultados relacionados con el modelo, su autor ni el runtime oMLX.

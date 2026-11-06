@@ -20,7 +20,7 @@ Su relevancia es acotada y de caracter metodologico: sirve para auditar y reprod
 | Idiomas soportados | no disponible (no procesa lenguaje natural) |
 | Licencia | no disponible; la model card declara que esta instantanea no concede ninguna licencia adicional sobre los artefactos de prueba originales |
 | Formato de pesos | Paquetes Core ML (`.mlpackage`) y arrays de parametros sueltos descritos en `tensor_catalog.json` |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Autor | robbiemu |
 | Fecha de creacion | 2026-09-19 |
 | Ultima actualizacion | 2026-09-19 |
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Longitud de contexto | no aplica | no disponible |
 | Rendimiento | no se publican benchmarks | no disponible |
 | Licencia | sin concesion de licencia adicional declarada | no disponible |
-| Disponibilidad | Repositorio publico en HuggingFace, sin descargas ni likes registrados | no disponible |
+| Disponibilidad | Repositorio publico en Hugging Face, sin descargas ni likes registrados | no disponible |
 
 No se han identificado en la informacion proporcionada modelos o publicaciones directamente comparables. Se trata de un conjunto de controles experimentales especifico de un estudio concreto (Paper 2), no de un modelo de proposito general con alternativas equivalentes en el mismo segmento.
 
@@ -112,6 +112,6 @@ No se han identificado en la informacion proporcionada modelos o publicaciones d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robbiemu/paper2-coreml-numerical-controls
+- Modelo en Hugging Face: https://huggingface.co/robbiemu/paper2-coreml-numerical-controls
 - Dataset de evidencias (acceso controlado): https://huggingface.co/datasets/robbiemu/coreml-tts-deployment-evidence
-- Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces disponibles son los declarados en la model card y la ficha de HuggingFace.
+- Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces disponibles son los declarados en la model card y la ficha de Hugging Face.

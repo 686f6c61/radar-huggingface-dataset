@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "akhaliq/Fibo-2.0-edit-IDM-1step",
+  "slug": "akhaliq-fibo-2-0-edit-idm-1step",
+  "author": "akhaliq",
+  "url": "https://huggingface.co/akhaliq/Fibo-2.0-edit-IDM-1step",
+  "created_at": "2026-11-02T16:43:11.000Z",
+  "updated_at": "2026-11-03T21:55:11.000Z",
+  "license": "bria-fibo",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "fibo",
+    "image-editing",
+    "image-to-image",
+    "distillation",
+    "one-step",
+    "dmd",
+    "idm",
+    "lora",
+    "ml-intern",
+    "en",
+    "arxiv:2610.39633",
+    "arxiv:2511.06876",
+    "base_model:briaai/Fibo-2.0-edit-turbo",
+    "base_model:adapter:briaai/Fibo-2.0-edit-turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 99,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6611600700,
+  "storage_human": "6.6 GB",
+  "base_model": "briaai/Fibo-2.0-edit-turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akhaliq/Fibo-2.0-edit-IDM-1step · Hugging Face",
+      "url": "https://huggingface.co/akhaliq/Fibo-2.0-edit-IDM-1step",
+      "snippet": "Bria Fibo 2.0 Edit Turbo image editing in a single network evaluation, no CFG — one LoRA adapter. Community implementation of Intrinsic Distribution Matching (IDM) (Liu et al., arXiv:2610.39633), compressing the 4-step distilled editing model to 1 step. Recipe: LoRA r=64 α=64 all-linear ×3 ..."
+    },
+    {
+      "title": "akhaliq/Fibo-2.0-edit-IDM-1step at main - Hugging Face",
+      "url": "https://huggingface.co/akhaliq/Fibo-2.0-edit-IDM-1step/tree/main",
+      "snippet": "Instructions to use akhaliq/Fibo-2.0-edit-IDM-1step with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use akhaliq/Fibo-2.0-edit-IDM-1step with Diffusers:"
+    }
+  ]
+}

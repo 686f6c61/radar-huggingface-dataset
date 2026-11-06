@@ -68,7 +68,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K u otros benchmarks esta
 
 ## Requisitos de hardware
 
-- Peso de los pesos en disco: 1,06 GB segun la model card (repositorio de 1,1 GB en HuggingFace).
+- Peso de los pesos en disco: 1,06 GB segun la model card (repositorio de 1,1 GB en Hugging Face).
 - Plataforma: MLX, lo que implica Apple Silicon (M1 o posterior). No hay soporte CUDA, ROCm ni CPU generica en este formato.
 - Memoria: el autor indica que el modelo funciona en Macs de 8 GB de RAM ejecutando las funciones de correccion y respuesta de Pretype. No se publican cifras de VRAM ni de memoria unificada pico.
 - GPU recomendadas: no disponible. Al ser un artefacto MLX, no aplican A100, H100 o RTX 4090 de forma nativa.
@@ -102,7 +102,7 @@ La unica comparacion documentada es contra el modelo base: misma salida en las 6
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nikimori/Qwen3.5-2B-4bit-slim
+- Repositorio Hugging Face: https://huggingface.co/nikimori/Qwen3.5-2B-4bit-slim
 - Modelo base: https://huggingface.co/mlx-community/Qwen3.5-2B-4bit
 - Aplicacion Pretype: https://github.com/nikiomori/Pretype
 - Libreria mlx-lm: no se proporciona enlace en la informacion disponible

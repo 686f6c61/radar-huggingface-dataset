@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-mlp-cifar10` es un perceptron multicapa (MLP) entrenado para clasificacion de imagenes sobre el conjunto de datos CIFAR-10. Lo publica el usuario de HuggingFace Mahanthhh como parte de la asignatura SMAI (Assignment 4, semestre Monsoon 2026), con numero de matricula 2024101017 y semilla 1017. No es un modelo de lenguaje ni un transformer: es una red neuronal densa de proposito academico, pensada para demostrar el flujo completo de preprocesado, entrenamiento y evaluacion sobre un benchmark clasico de vision por computador.
+`smai-mlp-cifar10` es un perceptron multicapa (MLP) entrenado para clasificacion de imagenes sobre el conjunto de datos CIFAR-10. Lo publica el usuario de Hugging Face Mahanthhh como parte de la asignatura SMAI (Assignment 4, semestre Monsoon 2026), con numero de matricula 2024101017 y semilla 1017. No es un modelo de lenguaje ni un transformer: es una red neuronal densa de proposito academico, pensada para demostrar el flujo completo de preprocesado, entrenamiento y evaluacion sobre un benchmark clasico de vision por computador.
 
 El modelo toma una imagen de 32x32x3 pixeles, la aplana a un vector de 3072 dimensiones y la procesa a traves de dos capas ocultas de 128 y 64 neuronas con activacion ReLU, hasta una capa de salida lineal de 10 clases (una por cada categoria de CIFAR-10). El total de parametros es de 402.250, un orden de magnitud muy alejado de los modelos de vision modernos, lo que lo situa en la categoria de ejercicios didacticos y no en la de modelos listos para produccion.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-mlp-cifar10 | 402.250 | 3072 valores (32x32x3) | Clasificacion CIFAR-10 | no disponible | HuggingFace, repo de 0.0 GB |
+| smai-mlp-cifar10 | 402.250 | 3072 valores (32x32x3) | Clasificacion CIFAR-10 | no disponible | Hugging Face, repo de 0.0 GB |
 | LeNet-5 (referencia historica) | ~60.000 | 32x32x1 | Clasificacion de digitos | no disponible | Implementaciones multiples |
 | ResNet-18 adaptado a CIFAR-10 | ~11,2 M | 32x32x3 | Clasificacion CIFAR-10 | MIT (torchvision) | Disponible en torchvision |
 | ViT pequeno para CIFAR-10 | variable | 32x32x3 con parches | Clasificacion CIFAR-10 | variable | Multiples implementaciones |
@@ -86,7 +86,7 @@ La comparacion con alternativas de la misma categoria es limitada porque no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mahanthhh/smai-mlp-cifar10
+- Modelo en Hugging Face: https://huggingface.co/Mahanthhh/smai-mlp-cifar10
 - Dataset CIFAR-10 (referencia): https://www.cs.toronto.edu/~kriz/cifar.html
 - PyTorch (framework mencionado): https://pytorch.org/
 - NumPy (libreria mencionada): https://numpy.org/

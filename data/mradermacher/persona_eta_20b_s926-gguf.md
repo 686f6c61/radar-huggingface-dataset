@@ -2,7 +2,7 @@
 
 ## Resumen
 
-persona_eta_20b_s926 es un modelo de lenguaje de aproximadamente 20.900 millones de parametros, publicado por el usuario eousphoros en HuggingFace bajo el identificador `eousphoros/persona_eta_20b_s926`. La ficha que nos ocupa corresponde a la version cuantizada en formato GGUF realizada por mradermacher, un conocido creador de cuantizaciones de la comunidad. El modelo esta etiquetado como conversacional y orientado a ingles, y se distribuye exclusivamente en formato GGUF para su uso con runtimes de inferencia local como llama.cpp.
+persona_eta_20b_s926 es un modelo de lenguaje de aproximadamente 20.900 millones de parametros, publicado por el usuario eousphoros en Hugging Face bajo el identificador `eousphoros/persona_eta_20b_s926`. La ficha que nos ocupa corresponde a la version cuantizada en formato GGUF realizada por mradermacher, un conocido creador de cuantizaciones de la comunidad. El modelo esta etiquetado como conversacional y orientado a ingles, y se distribuye exclusivamente en formato GGUF para su uso con runtimes de inferencia local como llama.cpp.
 
 La informacion publica disponible es muy limitada: la model card del repositorio GGUF no incluye detalles sobre arquitectura interna, datos de entrenamiento, longitud de contexto ni resultados de benchmarks. Solo se confirma el modelo base, el numero de parametros reales (20.914.757.184) y el conjunto de cuantizaciones estaticas generadas. No se declara licencia, lo que constituye un punto critico para cualquier uso en produccion.
 
@@ -34,7 +34,7 @@ Respecto al entrenamiento, la model card del repositorio GGUF no aporta ningun d
 
 - Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
 - Soporte de inferencia local mediante llama.cpp y runtimes compatibles con GGUF.
-- Compatibilidad declarada con endpoints (tag `endpoints_compatible`), lo que sugiere despliegue mediante APIs compatibles con el formato de HuggingFace.
+- Compatibilidad declarada con endpoints (tag `endpoints_compatible`), lo que sugiere despliegue mediante APIs compatibles con el formato de Hugging Face.
 - Capacidades multilingues: limitadas al ingles segun el campo `language` de la model card.
 - Tool calling / function calling: no disponible en la informacion publicada.
 - Razonamiento multi-paso o modo thinking: no disponible en la informacion publicada.

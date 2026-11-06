@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento en tareas estandar que permitan comparar e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/ZAYA1-reasoning-base-GGUF
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/ZAYA1-reasoning-base-GGUF
 - Modelo base: https://huggingface.co/Zyphra/ZAYA1-reasoning-base
 - Variante post-entrenada citada: https://huggingface.co/Zyphra/ZAYA1-8B
 - Variante legacy citada: https://huggingface.co/Zyphra/ZAYA1-8B-legacy

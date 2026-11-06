@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tony-yip/survey-vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/tony-yip/survey-vision-language-pretraining
 - Survey en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S1566253525006955
 - Survey en arXiv (multimodal machine translation): https://arxiv.org/abs/2306.07198
 - Survey en arXiv (pre-trained models V-L): https://arxiv.org/pdf/2202.10936

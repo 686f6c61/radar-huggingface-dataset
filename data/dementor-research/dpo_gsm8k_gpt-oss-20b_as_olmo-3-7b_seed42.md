@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. Todas c
 
 ## Enlaces
 
-- [HuggingFace - dementor-research/dpo_gsm8k_gpt-oss-20b_as_olmo-3-7b_seed42](https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_olmo-3-7b_seed42)
+- [Hugging Face - dementor-research/dpo_gsm8k_gpt-oss-20b_as_olmo-3-7b_seed42](https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_olmo-3-7b_seed42)
 - [Tinker - Thinking Machines](https://thinkingmachines.ai/tinker/)
 - [Documentacion de OpenAI sobre gpt-oss-20b](https://developers.openai.com/api/docs/models/gpt-oss-20b)
 - [FriendliAI - despliegue de dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed1](https://friendli.ai/models/dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed1)

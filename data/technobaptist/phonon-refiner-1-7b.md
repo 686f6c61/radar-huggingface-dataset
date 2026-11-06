@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phonon refiner 1.7B | 1.728.801.536 | No disponible | Corrección de transcripciones ASR y formato por modo de escritura | LFM Open License v1.0 | HuggingFace, pesos GGUF y MLX |
-| LiquidAI/LFM3-1.7B (modelo base) | 1.7B (aproximado) | No disponible | Generación de texto general | No disponible en la información | HuggingFace |
+| Phonon refiner 1.7B | 1.728.801.536 | No disponible | Corrección de transcripciones ASR y formato por modo de escritura | LFM Open License v1.0 | Hugging Face, pesos GGUF y MLX |
+| LiquidAI/LFM3-1.7B (modelo base) | 1.7B (aproximado) | No disponible | Generación de texto general | No disponible en la información | Hugging Face |
 | Refiner 0.2.3 de Phonon (commit `74ea4b6`) | No disponible | No disponible | Corrección de transcripciones sin modos de escritura | No disponible | Mismo repositorio |
 
 No se dispone de datos de benchmarks ni de otros modelos de corrección ASR comparables en la información proporcionada.
@@ -84,6 +84,6 @@ No se dispone de datos de benchmarks ni de otros modelos de corrección ASR comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/phonon-refiner-1.7b
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/phonon-refiner-1.7b
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio de Phonon: https://github.com/Infatoshi/phonon

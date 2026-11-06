@@ -89,8 +89,8 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Macro F1 global | Brier | ECE | Latencia p50 | VRAM pico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|---|
-| Laya PT/ES NLI | 321.908.998 | no disponible | 0,8670 | 0,2185 | 0,0611 | 31,7 ms | 0,66 GiB | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Laya Multilingual base | no disponible (misma arquitectura de 322 M según la model card) | no disponible | 0,5622 | 0,5926 | 0,1191 | 31,2 ms | 0,66 GiB | no disponible en la información consultada | Pesos abiertos en HuggingFace |
+| Laya PT/ES NLI | 321.908.998 | no disponible | 0,8670 | 0,2185 | 0,0611 | 31,7 ms | 0,66 GiB | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Laya Multilingual base | no disponible (misma arquitectura de 322 M según la model card) | no disponible | 0,5622 | 0,5926 | 0,1191 | 31,2 ms | 0,66 GiB | no disponible en la información consultada | Pesos abiertos en Hugging Face |
 | OpenJEV v2 | no disponible | no disponible | 0,8601 | 0,2057 | 0,0515 | 120,4 ms | 9,21 GiB | no disponible en la información consultada | Modelo local |
 | TypeSafe JEV API | no disponible | no disponible | 0,8950 | 0,1518 | 0,0188 | 585,6 ms (incluye red) | no disponible | no disponible en la información consultada | API remota |
 
@@ -114,7 +114,7 @@ La comparación de latencia entre modelos locales y TypeSafe JEV API no es equiv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankyy03/laya-pt-es-nli
+- Modelo en Hugging Face: https://huggingface.co/frankyy03/laya-pt-es-nli
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset InferES: https://huggingface.co/datasets/venelin/inferes
 - Dataset InferBR (GitHub): https://github.com/lbencke/InferBR

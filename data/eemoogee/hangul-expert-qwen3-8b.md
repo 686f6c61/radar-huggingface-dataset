@@ -79,7 +79,7 @@ Nota: la comparativa se basa en el modelo base Qwen3-8B, ya que no se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eemoogee/hangul-expert-qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/eemoogee/hangul-expert-qwen3-8b
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo base Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

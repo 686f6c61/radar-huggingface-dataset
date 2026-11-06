@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-ProofOpt-ActionSFT-step52-FP8 | 179.999.981.459 | no disponible (pruebas hasta 266.400) | qwen-community-1.0 | HuggingFace, pesos completos FP8 | Ajuste LoRA especifico para optimizacion de pruebas Lean |
-| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | qwen-community-1.0 | HuggingFace | Modelo base del ajuste, sin especializacion en Lean |
-| Qwen/Qwen3.8-Flash-Next-FP8 | no disponible | no disponible | qwen-community-1.0 | HuggingFace | Version FP8 nativa oficial sobre la que se fusiona el adaptador |
+| Qwen3.8-Flash-Next-ProofOpt-ActionSFT-step52-FP8 | 179.999.981.459 | no disponible (pruebas hasta 266.400) | qwen-community-1.0 | Hugging Face, pesos completos FP8 | Ajuste LoRA especifico para optimizacion de pruebas Lean |
+| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | qwen-community-1.0 | Hugging Face | Modelo base del ajuste, sin especializacion en Lean |
+| Qwen/Qwen3.8-Flash-Next-FP8 | no disponible | no disponible | qwen-community-1.0 | Hugging Face | Version FP8 nativa oficial sobre la que se fusiona el adaptador |
 
 No se dispone de datos de benchmarks ni de modelos comparables adicionales en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-ActionSFT-step52-FP8
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-ActionSFT-step52-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Modelo base FP8: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Model card del modelo base conservada en el repositorio: BASE_MODEL_README.md

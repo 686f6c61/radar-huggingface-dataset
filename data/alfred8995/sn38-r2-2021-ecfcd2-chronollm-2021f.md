@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r2-2021-ecfcd2-chronollm-2021f` es un checkpoint de 1.858.535.658 parametros (aproximadamente 1,86 mil millones) publicado en HuggingFace por el usuario alfred8995. El unico indicio arquitectonico que aportan los metadatos es la etiqueta `ChronoGPT`, junto con un nombre que sugiere un artefacto asociado al subnet 38 (prefijo `sn38`) y a la variante `2021f` del identificador `chronollm`. La ficha publica no incluye model card, pipeline declarado, idiomas ni documentacion tecnica, por lo que la mayor parte de las especificaciones no esta disponible.
+`alfred8995/sn38-r2-2021-ecfcd2-chronollm-2021f` es un checkpoint de 1.858.535.658 parametros (aproximadamente 1,86 mil millones) publicado en Hugging Face por el usuario alfred8995. El unico indicio arquitectonico que aportan los metadatos es la etiqueta `ChronoGPT`, junto con un nombre que sugiere un artefacto asociado al subnet 38 (prefijo `sn38`) y a la variante `2021f` del identificador `chronollm`. La ficha publica no incluye model card, pipeline declarado, idiomas ni documentacion tecnica, por lo que la mayor parte de las especificaciones no esta disponible.
 
 El modelo resuelve, a priori, el mismo problema generico que cualquier causal LM de ~2B: generacion de texto y continuacion de secuencias, presumiblemente con algun componente o entrenamiento orientado a modelado temporal (la etiqueta `ChronoGPT` apunta en esa direccion, sin confirmacion documental). Su relevancia practica es limitada ahora mismo: cero descargas, cero likes, acceso restringido mediante gate y ausencia total de benchmarks o guia de uso. No es un modelo recomendable para produccion sin una evaluacion previa por parte del equipo que lo adopte.
 
@@ -74,10 +74,10 @@ Comparacion por categoria (modelos densos de 1-2B parametros). Los datos del mod
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|
-| `alfred8995/sn38-r2-2021-ecfcd2-chronollm-2021f` | 1,86B | no disponible | `other` (gated) | no disponible | HuggingFace, acceso restringido, 0 descargas |
-| Qwen2.5-1.5B | 1,54B | 32.768 tokens (declarado) | Apache 2.0 | si, publicados por el fabricante | HuggingFace, abierto |
-| Llama 3.2 1B | 1,24B | 128.000 tokens (declarado) | Llama 3.2 Community License | si, publicados por el fabricante | HuggingFace, gated |
-| SmolLM2-1.7B | 1,71B | 8.192 tokens (declarado) | Apache 2.0 | si, publicados por el fabricante | HuggingFace, abierto |
+| `alfred8995/sn38-r2-2021-ecfcd2-chronollm-2021f` | 1,86B | no disponible | `other` (gated) | no disponible | Hugging Face, acceso restringido, 0 descargas |
+| Qwen2.5-1.5B | 1,54B | 32.768 tokens (declarado) | Apache 2.0 | si, publicados por el fabricante | Hugging Face, abierto |
+| Llama 3.2 1B | 1,24B | 128.000 tokens (declarado) | Llama 3.2 Community License | si, publicados por el fabricante | Hugging Face, gated |
+| SmolLM2-1.7B | 1,71B | 8.192 tokens (declarado) | Apache 2.0 | si, publicados por el fabricante | Hugging Face, abierto |
 
 Frente a estas alternativas, el modelo evaluado no aporta ningun dato verificable de contexto, licencia clara ni evaluacion, lo que lo situa en desventaja objetiva para cualquier adopcion.
 
@@ -87,7 +87,7 @@ Frente a estas alternativas, el modelo evaluado no aporta ningun dato verificabl
 - Sesgos desconocidos: al no documentarse el corpus, no se puede evaluar el sesgo de genero, etnia, idioma o dominio; hay que asumir el riesgo habitual de un modelo sin filtrado declarado.
 - Riesgo de alucinacion: no cuantificado; sin evaluaciones de factualidad ni de calibracion, no es apto para tareas de recuperacion de hechos sin verificacion externa.
 - Licencia `other` sin texto visible: es un bloqueo potencial para uso comercial. Hay que leer y aceptar las condiciones del gate antes de cualquier despliegue, y verificar si permiten uso comercial, redistribucion o fine-tuning.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace; no se puede integrar en CI/CD ni en descargas automatizadas sin gestionar el token y la aprobacion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face; no se puede integrar en CI/CD ni en descargas automatizadas sin gestionar el token y la aprobacion.
 - Cero traccion: 0 descargas y 0 likes implican que el checkpoint no ha sido validado por terceros; no hay reportes de fallos ni de calidad.
 - Longitud de contexto desconocida: no se puede planificar un caso de uso con documentos largos sin medir empiricamente el punto de degradacion.
 - Fecha de creacion futura en los metadatos (2026-10-21): conviene verificar la integridad y procedencia del artefacto antes de cargarlo en un entorno de confianza.
@@ -95,6 +95,6 @@ Frente a estas alternativas, el modelo evaluado no aporta ningun dato verificabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/sn38-r2-2021-ecfcd2-chronollm-2021f
+- Hugging Face: https://huggingface.co/alfred8995/sn38-r2-2021-ecfcd2-chronollm-2021f
 - Paper, blog, repositorio o demo: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los unicos resultados obtenidos fueron paginas sin relacion tecnica con el artefacto y se han descartado.

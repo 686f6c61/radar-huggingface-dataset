@@ -113,7 +113,7 @@ No se dispone de comparaciones con modelos de propósito general (p. ej. Qwen3 o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-232m-5.01bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-232m-5.01bt-mdlm-cooled
 - Repositorio de datos y detalles de bins: `DATA.md` en el repo del modelo (https://huggingface.co/VectaBass/vectabass-232m-5.01bt-mdlm-cooled/blob/main/DATA.md)
 - Código de modelado: `modeling_vectabass.py` en el repo del modelo (https://huggingface.co/VectaBass/vectabass-232m-5.01bt-mdlm-cooled/blob/main/modeling_vectabass.py)
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

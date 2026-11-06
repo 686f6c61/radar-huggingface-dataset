@@ -24,7 +24,7 @@ Por tanto, cualquier ficha técnica de este elemento debe leerse como una descri
 | Uso previsto declarado | Copia de seguridad de un checkpoint de investigación; reanudación de una ejecución RL. No es un release y no está pensado para su uso |
 | Framework de origen | Tinker (entrenamiento), exportado a un contenedor en vast.ai |
 | Script de generación | `scripts/port/hf_backup.py` |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Etiquetas | `safetensors`, `research`, `checkpoint-backup`, `region:us` |
 
 ## Arquitectura y entrenamiento
@@ -96,5 +96,5 @@ No se han identificado modelos o repositorios comparables en la información dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_ggrp32_s4_20261021_214834
+- Repositorio en Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_ggrp32_s4_20261021_214834
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada. La model card menciona el script `scripts/port/hf_backup.py` del proyecto "reward-laundering", pero sin URL asociada.

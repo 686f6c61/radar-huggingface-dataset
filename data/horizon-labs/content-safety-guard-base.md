@@ -27,7 +27,7 @@ Su relevancia practica esta en la combinacion de tamano reducido, cobertura de 1
 | Modelo base | jhu-clsp/mmBERT-base |
 | Tamano del repositorio | 3,1 GB |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -91,11 +91,11 @@ La model card incluye ademas una tabla de calidad de ranking (ROC AUC, sin umbra
 
 | Modelo | Parametros | Tipo | Licencia | Idiomas | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|---|
-| Content Safety Guard base | 308M | Encoder (ModernBERT / mmBERT) | Apache-2.0 | 17 evaluados | HuggingFace, ONNX, transformers.js | ToxicChat 0,771; SimpleSafetyTests (recall) 0,930 |
-| Qwen3Guard-Gen-0.6B | 0,6B | Decoder generativo | No disponible en la informacion proporcionada | Multilingue | HuggingFace | PolyGuard prompts 0,821 (strict); textdetox 0,722 |
-| Vela-1.0-307M-Shield | 307M | Guard de seguridad | No disponible en la informacion proporcionada | No disponible | HuggingFace | PolyGuard prompts 0,829; mejor F1 en textdetox (0,720) entre los encoder comparados |
-| granite-guardian-hap-125m | 125M | Clasificador de toxicidad (tarea estrecha) | No disponible en la informacion proporcionada | Ingles principalmente | HuggingFace | 0,672 en OpenAI moderation set; practicamente nulo en PolyGuard y ToxicChat |
-| Qwen3Guard-Gen-8B (teacher) | 8B | Decoder generativo | No disponible en la informacion proporcionada | Multilingue | HuggingFace | Mejor o cercano al mejor en todas las filas de la tabla |
+| Content Safety Guard base | 308M | Encoder (ModernBERT / mmBERT) | Apache-2.0 | 17 evaluados | Hugging Face, ONNX, transformers.js | ToxicChat 0,771; SimpleSafetyTests (recall) 0,930 |
+| Qwen3Guard-Gen-0.6B | 0,6B | Decoder generativo | No disponible en la informacion proporcionada | Multilingue | Hugging Face | PolyGuard prompts 0,821 (strict); textdetox 0,722 |
+| Vela-1.0-307M-Shield | 307M | Guard de seguridad | No disponible en la informacion proporcionada | No disponible | Hugging Face | PolyGuard prompts 0,829; mejor F1 en textdetox (0,720) entre los encoder comparados |
+| granite-guardian-hap-125m | 125M | Clasificador de toxicidad (tarea estrecha) | No disponible en la informacion proporcionada | Ingles principalmente | Hugging Face | 0,672 en OpenAI moderation set; practicamente nulo en PolyGuard y ToxicChat |
+| Qwen3Guard-Gen-8B (teacher) | 8B | Decoder generativo | No disponible en la informacion proporcionada | Multilingue | Hugging Face | Mejor o cercano al mejor en todas las filas de la tabla |
 
 Frente a los guard encoder de tamano similar, el modelo de Horizon Labs es competitivo en prompts de usuario reales y en conjuntos de recall, pero queda por detras de Vela-1.0-307M-Shield en PolyGuard prompts (0,829 frente a 0,779) y en textdetox (0,720 frente a 0,597). Frente a Qwen3Guard-Gen-0.6B, la comparacion depende del modo estricto o laxo, y el encoder gana de forma clara en ToxicChat (0,771 frente a 0,588 en strict) y en el conjunto de moderacion de OpenAI en modo estricto (0,768 frente a 0,660). Los clasificadores de toxicidad clasicos (granite-guardian-hap, unbiased-toxic-roberta) no son comparables en cobertura: obtienen valores cercanos a cero en los benchmarks multilingues y de seguridad general.
 
@@ -118,7 +118,7 @@ Frente a los guard encoder de tamano similar, el modelo de Horizon Labs es compe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/content-safety-guard-base
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/content-safety-guard-base
 - Modelo base mmBERT: https://huggingface.co/jhu-clsp/mmBERT-base
 - Guard de inyeccion de prompts de la misma familia: https://huggingface.co/Horizon-Labs/prompt-injection-guard-base
 - Redactor de PII de la misma familia: https://huggingface.co/Horizon-Labs/pii-redactor-base

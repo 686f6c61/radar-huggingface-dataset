@@ -27,7 +27,7 @@ Su relevancia es puramente metodológica: forma parte de un conjunto de brazos d
 | Perdida final de entrenamiento | 5,005918 |
 | Throughput registrado | 369.975 tokens/s (ultimo valor); 369.980 tokens/s (mediana de la cola) |
 | Ficheros del repositorio | model.npz, state.json, run.json, metrics.jsonl, config.json |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nero-optimizer-work-simo-lr0p008 | ~999.680 | 128 tokens | Perdida de entrenamiento 5,005918; sin validacion publicada | No disponible | HuggingFace, formato MLX NPZ |
+| nero-optimizer-work-simo-lr0p008 | ~999.680 | 128 tokens | Perdida de entrenamiento 5,005918; sin validacion publicada | No disponible | Hugging Face, formato MLX NPZ |
 | Otras ramas del barrido Nero Optimizer Work | No disponible | 128 tokens (segun configuracion congelada) | No disponible | No disponible | No disponibles en la informacion proporcionada |
 | Modelos de lenguaje de produccion de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -108,7 +108,7 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p008
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p008
 - Repositorio de otros brazos del barrido Nero Optimizer Work: no disponible en la información proporcionada
 - Paper o documentación técnica del optimizador SimO: no disponible en la información proporcionada
 - Documentación de Apple MLX: no incluida en la información proporcionada

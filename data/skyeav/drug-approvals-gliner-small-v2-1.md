@@ -98,7 +98,7 @@ No se han encontrado en la busqueda web resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SkyeAv/drug-approvals-gliner-small-v2.1
+- Modelo en Hugging Face: https://huggingface.co/SkyeAv/drug-approvals-gliner-small-v2.1
 - Modelo base: https://huggingface.co/urchade/gliner_small-v2.1
 - Repositorio de entrenamiento y evaluacion (MedliNER): https://github.com/SkyeAv/MedliNER
 - Proyecto DAKP, usuario del modelo en produccion: https://github.com/glusman-team/dakp

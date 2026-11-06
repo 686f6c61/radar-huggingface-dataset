@@ -31,7 +31,7 @@ El repositorio contiene cuatro directorios: `cxi837` (clasificador caption-image
 
 - Clasificación de relaciones entre figuras y pies de figura científicos en cuatro clases: `same_figure`, `same_paper`, `related_papers` y `unrelated_papers`.
 - Clasificación caption-imagen (directorio `cxi837`), imagen-imagen (`ixi627`) y caption-caption (`cxc414`).
-- Procesamiento multimodal: el pipeline declarado en HuggingFace es `image-classification` y la base incorpora torre de visión, aunque esta permanece congelada durante el entrenamiento.
+- Procesamiento multimodal: el pipeline declarado en Hugging Face es `image-classification` y la base incorpora torre de visión, aunque esta permanece congelada durante el entrenamiento.
 - Integración como adaptador PEFT sobre un modelo base descargado por separado, no como modelo autónomo.
 - No soporta generación de texto, tool calling, function calling, razonamiento multi-paso ni comportamiento de agente: es un cabezal de clasificación, no un modelo conversacional.
 - Capacidades multilingües: no disponibles; el modelo declara únicamente inglés.
@@ -96,9 +96,9 @@ Como referencia interna, la propia release se organiza en cuatro componentes con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thermostatic/AstroCLIMB-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/Thermostatic/AstroCLIMB-Qwen3.5-4B
 - Repositorio fuente y manuscrito: https://github.com/Sekinal/AstroCLIMB
 - Instrucciones de inferencia pública: https://github.com/Sekinal/AstroCLIMB/blob/main/docs/public-inference.md
 - Modelo base: Qwen/Qwen3.5-4B (revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`)
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los proporcionados en la model card y en los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los proporcionados en la model card y en los metadatos de Hugging Face.

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Heptagram_MNH3_series | no disponible | no disponible | texto/imagen/referencia a video con audio | minimax-h3-community-license-agreement | HuggingFace (11 descargas) |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | texto/imagen a video con audio | licencia comunitaria MiniMax-H3 | HuggingFace |
+| Heptagram_MNH3_series | no disponible | no disponible | texto/imagen/referencia a video con audio | minimax-h3-community-license-agreement | Hugging Face (11 descargas) |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | texto/imagen a video con audio | licencia comunitaria MiniMax-H3 | Hugging Face |
 | Otros modelos de video-audio abiertos | no disponible | no disponible | video con audio | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de rendimiento ni especificaciones de terceros que permitan una comparacion cuantitativa fiable.
@@ -84,5 +84,5 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eatyet/Heptagram_MNH3_series
+- Repositorio en Hugging Face: https://huggingface.co/eatyet/Heptagram_MNH3_series
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3

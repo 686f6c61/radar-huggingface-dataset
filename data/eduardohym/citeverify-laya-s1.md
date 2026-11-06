@@ -89,10 +89,10 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| citeverify-laya-s1 | ~322 M | no disponible | Acurácia 3 clases 0,979 en adversarial | Apache-2.0 | HuggingFace (0 descargas) |
-| convaiinnovations/laya-multilingual (base, zero-shot) | ~322 M | no disponible | Acurácia 3 clases 0,25 en zero-shot | Apache-2.0 | HuggingFace |
-| XLM-RoBERTa-base (encoder multilingue generico) | ~278 M | 512 | no disponible (sin evaluacion publicada en esta tarea) | MIT | HuggingFace |
-| mDeBERTa-v3-base (encoder multilingue generico) | ~278 M | 512 | no disponible (sin evaluacion publicada en esta tarea) | MIT | HuggingFace |
+| citeverify-laya-s1 | ~322 M | no disponible | Acurácia 3 clases 0,979 en adversarial | Apache-2.0 | Hugging Face (0 descargas) |
+| convaiinnovations/laya-multilingual (base, zero-shot) | ~322 M | no disponible | Acurácia 3 clases 0,25 en zero-shot | Apache-2.0 | Hugging Face |
+| XLM-RoBERTa-base (encoder multilingue generico) | ~278 M | 512 | no disponible (sin evaluacion publicada en esta tarea) | MIT | Hugging Face |
+| mDeBERTa-v3-base (encoder multilingue generico) | ~278 M | 512 | no disponible (sin evaluacion publicada en esta tarea) | MIT | Hugging Face |
 
 No existe una comparacion head-to-head publicada entre citeverify-laya-s1 y otros clasificadores de citas juridicas en portugues. Los encoders genericos de tamano equivalente se incluyen como alternativas de sustrato, pero sus prestaciones en esta tarea concreta no se han medido en la informacion disponible.
 
@@ -112,7 +112,7 @@ No existe una comparacion head-to-head publicada entre citeverify-laya-s1 y otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EduardoHYM/citeverify-laya-s1
+- Hugging Face: https://huggingface.co/EduardoHYM/citeverify-laya-s1
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Repositorio de la solucion citeverify (desafio Jusbrasil x BRACIS 2026): https://github.com/EduardoHernany/bracis
 - Repositorio del framework Laya: https://github.com/NandhaKishorM/laya

@@ -106,10 +106,10 @@ No se dispone de datos suficientes para establecer una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace (esta conversión GGUF): https://huggingface.co/audio-cpp/Ming-3.0-Audio-Tiny-GGUF
+- Hugging Face (esta conversión GGUF): https://huggingface.co/audio-cpp/Ming-3.0-Audio-Tiny-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-audio-tiny (revisión fijada `25b96e30be3739849bf76c0f48ac11db4a262fb3`)
 - Repositorio de inferencia audio.cpp: https://github.com/0xShug0/audio.cpp
 - Guía del modelo en audio.cpp: https://github.com/0xShug0/audio.cpp/blob/main/docs/models/ming3_audio.md
 - Código upstream del modelo: https://github.com/inclusionAI/Ming-3.0-audio-flash
-- Gráfico de rendimiento: `assets/performance.png` dentro del repo de HuggingFace
+- Gráfico de rendimiento: `assets/performance.png` dentro del repo de Hugging Face
 - Resultados de búsqueda web: sin enlaces relevantes (solo dominios de audio de consumo: audiofanzine.com, audio.com, audiophonics.fr, audilab.fr, son-video.com)

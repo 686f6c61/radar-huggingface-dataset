@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Deeptanshu/22B1256-Week06-Compression-40-Submission01` es un repositorio de pesos publicado en HuggingFace por el usuario Deeptanshu el 28 de septiembre de 2026. El nombre del repositorio sigue el patron habitual de una entrega academica (identificador de alumno, numero de semana, tarea de compresion y numero de entrega), lo que apunta a un ejercicio de compresion, pruning o cuantizacion de un modelo preentrenado mas que a un modelo entrenado desde cero. El unico tag de arquitectura presente es `qwen3_5`, lo que sugiere que el modelo base pertenece a la familia Qwen3.5, aunque esta afirmacion no puede confirmarse con la informacion disponible.
+`Deeptanshu/22B1256-Week06-Compression-40-Submission01` es un repositorio de pesos publicado en Hugging Face por el usuario Deeptanshu el 28 de septiembre de 2026. El nombre del repositorio sigue el patron habitual de una entrega academica (identificador de alumno, numero de semana, tarea de compresion y numero de entrega), lo que apunta a un ejercicio de compresion, pruning o cuantizacion de un modelo preentrenado mas que a un modelo entrenado desde cero. El unico tag de arquitectura presente es `qwen3_5`, lo que sugiere que el modelo base pertenece a la familia Qwen3.5, aunque esta afirmacion no puede confirmarse con la informacion disponible.
 
 El repositorio contiene pesos en formato safetensors y ocupa 3,6 GB. No se declara licencia, pipeline, idiomas soportados ni ficha tecnica alguna. El nivel de adopcion es practicamente nulo: 9 descargas y 0 likes en el momento de la consulta. No se ha publicado informacion sobre arquitectura interna, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion.
 
@@ -53,7 +53,7 @@ Dado que no hay informacion verificable sobre el rendimiento del modelo, los cas
 - Analisis de tecnicas de compresion: inspeccionar los tensores y su distribucion para estudiar el efecto de la cuantizacion o el pruning sobre los pesos.
 - Pruebas de carga y compatibilidad: verificar que la arquitectura etiquetada como `qwen3_5` se carga correctamente en librerias como transformers o llama.cpp, util para validar pipelines de conversion.
 - Benchmarking interno de infraestructura: usar los 3,6 GB de pesos como carga de trabajo para medir tiempo de carga, uso de VRAM y throughput de un servidor de inferencia.
-- Docencia y formacion: ejemplo practico de publicacion de artefactos en HuggingFace y de las practicas deficientes de documentacion (sin licencia, sin ficha, sin pipeline declarado).
+- Docencia y formacion: ejemplo practico de publicacion de artefactos en Hugging Face y de las practicas deficientes de documentacion (sin licencia, sin ficha, sin pipeline declarado).
 - Comparacion de pipelines de cuantizacion: si el autor publica variantes de la misma tarea, el repositorio puede servir como punto de referencia para medir degradacion entre niveles de compresion.
 
 En ningun caso se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis de datos ni cualquier aplicacion con usuarios finales, dado que se desconoce por completo su comportamiento.
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no identifica el modelo base ni el t
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Deeptanshu/22B1256-Week06-Compression-40-Submission01 | no disponible | no disponible | no disponible | HuggingFace, 9 descargas |
+| Deeptanshu/22B1256-Week06-Compression-40-Submission01 | no disponible | no disponible | no disponible | Hugging Face, 9 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No disponible. La informacion proporcionada no identifica el modelo base ni el t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Deeptanshu/22B1256-Week06-Compression-40-Submission01
+- Repositorio en Hugging Face: https://huggingface.co/Deeptanshu/22B1256-Week06-Compression-40-Submission01
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun resultado relevante sobre este modelo, su autor o su proceso de entrenamiento. Los enlaces recuperados (知乎, impots.gouv.fr y similares) no guardan relacion con el modelo y se omiten por no aportar informacion util.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

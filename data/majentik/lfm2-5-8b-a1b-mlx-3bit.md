@@ -76,8 +76,8 @@ No se dispone de datos comparativos publicados entre esta cuantizacion y otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/majentik/LFM2.5-8B-A1B-MLX-3bit
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
+- Repositorio Hugging Face de esta variante: https://huggingface.co/majentik/LFM2.5-8B-A1B-MLX-3bit
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Blog de Liquid AI sobre LFM2.5-8B-A1B: https://www.liquid.ai/blog/lfm2-5-8b-a1b
 - Documentacion oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
 - Repositorio mlx-lm: https://github.com/ml-explore/mlx-lm

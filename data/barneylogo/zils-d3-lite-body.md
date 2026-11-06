@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils-d3-lite-body es un modelo de decisión nativo (decision model) obtenido por fine-tuning supervisado del modelo base Qwen/Qwen3.5-0.8B mediante la librería unsloth y su clase `FastDecisionModel`. No es un modelo generativo al uso: no produce texto libre, sino que responde a preguntas tipadas (`choice`, `score`, `noul`) sobre un estado (`state`) en una única pasada forward, a través de una API compatible con TypeSafe bajo la ruta `/v1/systemone`. El autor del repositorio es el usuario de HuggingFace `barneylogo`, aunque la model card referencia identificadores de otro espacio (`analogalok/Qwen3.5-0.8B-AA-Decision`) y la familia de versiones asociada.
+Zils-d3-lite-body es un modelo de decisión nativo (decision model) obtenido por fine-tuning supervisado del modelo base Qwen/Qwen3.5-0.8B mediante la librería unsloth y su clase `FastDecisionModel`. No es un modelo generativo al uso: no produce texto libre, sino que responde a preguntas tipadas (`choice`, `score`, `noul`) sobre un estado (`state`) en una única pasada forward, a través de una API compatible con TypeSafe bajo la ruta `/v1/systemone`. El autor del repositorio es el usuario de Hugging Face `barneylogo`, aunque la model card referencia identificadores de otro espacio (`analogalok/Qwen3.5-0.8B-AA-Decision`) y la familia de versiones asociada.
 
 El modelo resuelve el problema de convertir un LLM pequeño en un clasificador y enrutador determinista de baja latencia: en lugar de generar una respuesta textual que después haya que parsear, devuelve directamente decisiones estructuradas (elección entre criterios, puntuación ordinal o respuesta booleana). Con 873.438.784 parámetros totales y un tamaño de repositorio de 1,9 GB, está pensado para despliegues ligeros, incluidos entornos de CPU mediante llama.cpp.
 
@@ -87,10 +87,10 @@ La model card advierte de que una única temperatura global para `choice` no pue
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zils-d3-lite-body (este) | 873 M | 8.192 (despliegue) / 2.048 (entrenamiento) | Decision model tipado sobre Qwen3.5-0.8B | Apache-2.0 | HuggingFace, GGUF y safetensors |
-| Qwen3.5-0.8B (base) | ~0,8 B | no disponible | LLM generativo generalista | Apache-2.0 (según herencia) | HuggingFace |
-| Qwen3.5-2B-AA-Decision (hermano) | ~2 B | no disponible | Decision model tipado, misma familia | Apache-2.0 | HuggingFace |
-| Versión anterior `v2-typed-fast` | ~0,8 B | no disponible | Decision model sin supervisión relacional | Apache-2.0 | HuggingFace (revisión `v2-typed-fast`) |
+| Zils-d3-lite-body (este) | 873 M | 8.192 (despliegue) / 2.048 (entrenamiento) | Decision model tipado sobre Qwen3.5-0.8B | Apache-2.0 | Hugging Face, GGUF y safetensors |
+| Qwen3.5-0.8B (base) | ~0,8 B | no disponible | LLM generativo generalista | Apache-2.0 (según herencia) | Hugging Face |
+| Qwen3.5-2B-AA-Decision (hermano) | ~2 B | no disponible | Decision model tipado, misma familia | Apache-2.0 | Hugging Face |
+| Versión anterior `v2-typed-fast` | ~0,8 B | no disponible | Decision model sin supervisión relacional | Apache-2.0 | Hugging Face (revisión `v2-typed-fast`) |
 
 El modelo hermano de 2B es, según la propia model card, superior en todos los benchmarks, por lo que la elección entre ambos pasa por el compromiso entre precisión y footprint. Frente al Qwen3.5-0.8B base, este modelo sacrifica la generación de texto libre a cambio de salidas estructuradas y menor latencia. No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada más allá de las cifras de la versión anterior incluidas en la tabla de benchmarks.
 
@@ -109,7 +109,7 @@ El modelo hermano de 2B es, según la propia model card, superior en todos los b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/barneylogo/zils-d3-lite-body
+- Repositorio Hugging Face: https://huggingface.co/barneylogo/zils-d3-lite-body
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo hermano de 2B: https://huggingface.co/analogalok/Qwen3.5-2B-AA-Decision
 - Versión anterior (revisión `v2-typed-fast`): https://huggingface.co/analogalok/Qwen3.5-0.8B-AA-Decision/tree/v2-typed-fast

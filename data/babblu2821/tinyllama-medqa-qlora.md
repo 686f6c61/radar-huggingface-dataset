@@ -91,12 +91,12 @@ La comparacion muestra que el adaptador QLoRA mejora claramente las metricas de 
 - Solo soporta ingles; no hay capacidad multilingue.
 - La longitud de contexto de entrenamiento es de 1024 tokens, inferior a los 2048 que soporta el modelo base; prompts mas largos pueden degradar la calidad.
 - El adaptador fue entrenado el 2026-08-03 con un pipeline concreto; el codigo actual del repositorio ha cambiado a `transformers.Trainer`, por lo que re-ejecutar el codigo no reproducira estos pesos exactos.
-- Los pesos del adaptador estan en safetensors, pero el modelo base debe descargarse por separado desde HuggingFace.
+- Los pesos del adaptador estan en safetensors, pero el modelo base debe descargarse por separado desde Hugging Face.
 - La carga en 4-bit requiere CUDA y bitsandbytes; en CPU o Apple Silicon hay que usar fp16/fp32.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Babblu2821/tinyllama-medqa-qlora
+- Modelo en Hugging Face: https://huggingface.co/Babblu2821/tinyllama-medqa-qlora
 - Repositorio del proyecto (codigo, metodo y resultados completos): https://github.com/fayazhussain2821/llm-finetuning-medqa
 - Modelo base TinyLlama-1.1B-Chat: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Dataset MedQuAD: https://huggingface.co/datasets/keivalya/MedQuad-MedicalQnADataset

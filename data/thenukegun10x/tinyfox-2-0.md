@@ -46,7 +46,7 @@ La principal innovación técnica es la separación explícita de especies de c�
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados fueron declarados por el autor del modelo en la model card de HuggingFace y no han sido verificados de forma independiente. Corresponden a un conjunto de datos propio denominado "Night/IR Wildlife & Fox Detection Benchmark (Stratified 0-Leak Split)".
+Los siguientes resultados fueron declarados por el autor del modelo en la model card de Hugging Face y no han sido verificados de forma independiente. Corresponden a un conjunto de datos propio denominado "Night/IR Wildlife & Fox Detection Benchmark (Stratified 0-Leak Split)".
 
 | Metrica | Valor |
 |---|---|
@@ -90,6 +90,6 @@ TinyFox-2 supera claramente a su predecesor TinyFox 1.0 en recall de zorros (88,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thenukegun10x/TinyFox-2.0
+- Modelo en Hugging Face: https://huggingface.co/thenukegun10x/TinyFox-2.0
 - TinyFox 1.0 (versión anterior): https://huggingface.co/thenukegun10x/TinyFox-1.0
 - Repositorio YOLO-Quantizer: https://github.com/Thenukegun10x/YOLO-Quantizer

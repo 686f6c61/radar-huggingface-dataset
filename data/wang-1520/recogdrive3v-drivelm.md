@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wang-1520/recogdrive3v-drivelm` es un repositorio alojado en HuggingFace por el usuario `wang-1520`, publicado el 10 de septiembre de 2026 según los metadatos de la plataforma y con licencia Apache 2.0. El repositorio no incluye model card descriptiva: el único contenido del README es la declaración de licencia (`license: apache-2.0`), sin texto explicativo, sin descripción de arquitectura, sin datos de entrenamiento y sin ejemplos de uso.
+`wang-1520/recogdrive3v-drivelm` es un repositorio alojado en Hugging Face por el usuario `wang-1520`, publicado el 10 de septiembre de 2026 según los metadatos de la plataforma y con licencia Apache 2.0. El repositorio no incluye model card descriptiva: el único contenido del README es la declaración de licencia (`license: apache-2.0`), sin texto explicativo, sin descripción de arquitectura, sin datos de entrenamiento y sin ejemplos de uso.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 likes, tiene un tamano de 0,0 GB y no tiene pipeline declarado ni idiomas soportados. Es decir, o bien se trata de un repositorio vacío o recién creado, o bien los pesos y la documentación no están publicados en este repositorio. Esto implica que no es posible evaluar el modelo con la informacion disponible.
 
@@ -88,7 +88,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wang-1520/recogdrive3v-drivelm
+- Hugging Face: https://huggingface.co/wang-1520/recogdrive3v-drivelm
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, repositorio de código, blog o demo: no disponibles.
 - Resultados de búsqueda web: no se encontró ningún enlace relevante al modelo. Los resultados recuperados corresponden a hilos del foro ComputerBase sobre arranque de PC y a una análisis de la Nvidia GeForce RTX 3070, sin relación con este repositorio.

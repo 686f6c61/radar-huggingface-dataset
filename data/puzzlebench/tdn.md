@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PuzzleBench/TDN es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion PuzzleBench. La unica informacion sustantiva disponible en su model card es un aviso de traslado: el modelo ya no se mantiene en esa ruta y ha sido movido al repositorio PuzzlePerception/TDN. No se proporciona ninguna descripcion funcional, arquitectura, tamano, contexto ni caso de uso en la informacion disponible.
+PuzzleBench/TDN es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion PuzzleBench. La unica informacion sustantiva disponible en su model card es un aviso de traslado: el modelo ya no se mantiene en esa ruta y ha sido movido al repositorio PuzzlePerception/TDN. No se proporciona ninguna descripcion funcional, arquitectura, tamano, contexto ni caso de uso en la informacion disponible.
 
 El repositorio presenta cero descargas y cero likes, con fecha de creacion y ultima actualizacion del 11 de septiembre de 2026, lo que sugiere que se trata de un placeholder o de un artefacto residual tras la migracion a la nueva organizacion. El tag declarado es unicamente region:us, sin pipeline, licencia ni idiomas especificados.
 
@@ -67,7 +67,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio HuggingFace (obsoleto): https://huggingface.co/PuzzleBench/TDN
+- Repositorio Hugging Face (obsoleto): https://huggingface.co/PuzzleBench/TDN
 - Repositorio de destino indicado por el autor: https://huggingface.co/PuzzlePerception/TDN
 - Listado de modelos de la organizacion de destino: https://huggingface.co/PuzzlePerception/models
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los resultados obtenidos correspondian a un sitio de una universidad online italiana sin relacion con PuzzleBench, PuzzlePerception ni TDN, por lo que se omiten.

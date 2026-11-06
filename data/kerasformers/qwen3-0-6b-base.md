@@ -69,9 +69,9 @@ No disponible. No se han proporcionado modelos comparables en la información.
 
 ## Enlaces
 
-- HuggingFace: [kerasformers/qwen3-0.6b-base](https://huggingface.co/kerasformers/qwen3-0.6b-base)
+- Hugging Face: [kerasformers/qwen3-0.6b-base](https://huggingface.co/kerasformers/qwen3-0.6b-base)
 - Repositorio GitHub de KerasFormers: [https://github.com/IMvision12/KerasFormers](https://github.com/IMvision12/KerasFormers)
 - Documentación de Qwen3 en KerasFormers: [https://imvision12.github.io/KerasFormers/qwen3/](https://imvision12.github.io/KerasFormers/qwen3/)
 - Paper técnico de Qwen3 (arXiv:2505.09388): [https://arxiv.org/abs/2505.09388](https://arxiv.org/abs/2505.09388)
-- Colección de modelos Qwen3 en HuggingFace: [https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
+- Colección de modelos Qwen3 en Hugging Face: [https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
 - Modelo original: [Qwen/Qwen3-0.6B-Base](https://huggingface.co/Qwen/Qwen3-0.6B-Base)

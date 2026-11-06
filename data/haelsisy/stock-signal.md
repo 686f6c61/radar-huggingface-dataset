@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WatchSignal v4.0 es un modelo de clasificación de señales bursátiles publicado en HuggingFace bajo el identificador haelsisy/stock-signal. Se trata de un híbrido BiLSTM + Transformer con cuatro cabezas de clasificación paralelas que, a partir de una ventana de 30 velas descritas por 55 características (etiquetadas como v3.1 en la model card), produce una predicción de tres clases (SELL/HOLD/BUY) para cuatro horizontes temporales distintos: 5, 10, 21 y 63 días.
+WatchSignal v4.0 es un modelo de clasificación de señales bursátiles publicado en Hugging Face bajo el identificador haelsisy/stock-signal. Se trata de un híbrido BiLSTM + Transformer con cuatro cabezas de clasificación paralelas que, a partir de una ventana de 30 velas descritas por 55 características (etiquetadas como v3.1 en la model card), produce una predicción de tres clases (SELL/HOLD/BUY) para cuatro horizontes temporales distintos: 5, 10, 21 y 63 días.
 
 El modelo se distribuye como un ensemble de cinco semillas (42, 1, 7, 99 y 2025), cada una exportada a ONNX (opset 13, ~27,7 MB por fichero) y acompañada de temperaturas de calibración por horizonte. No es un modelo generativo ni de propósito general: es un clasificador de series temporales financieras de dominio muy específico, orientado a inferencia ligera (compatible con ONNX Runtime Mobile).
 
@@ -98,6 +98,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haelsisy/stock-signal
+- Modelo en Hugging Face: https://huggingface.co/haelsisy/stock-signal
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes al modelo: se limitan a páginas genéricas de Google (Chrome, Accounts, Gmail, Drive, Play Store), sin relación con el repositorio.
 - No se han facilitado enlaces a paper, blog técnico, repositorio de código o demo.

@@ -68,7 +68,7 @@ No se dispone de información sobre modelos LoRA similares para Krea 2. No hay d
 
 ## Enlaces
 
-- [HuggingFace - pacogarat/ana](https://huggingface.co/pacogarat/ana)
+- [Hugging Face - pacogarat/ana](https://huggingface.co/pacogarat/ana)
 - No se encontraron otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.
 
 Nota: los resultados de búsqueda web proporcionados (PixAI, Feedspot, ANIMADEX, SeaArt, Anam) no están relacionados con el modelo `pacogarat/ana` y no se incluyen como enlaces relevantes.</think>## Resumen
@@ -139,5 +139,5 @@ No se dispone de información sobre otros adaptadores LoRA para Krea 2 o modelos
 
 ## Enlaces
 
-- [HuggingFace: pacogarat/ana](https://huggingface.co/pacogarat/ana)
+- [Hugging Face: pacogarat/ana](https://huggingface.co/pacogarat/ana)
 - No se han encontrado papers, blogs o repositorios adicionales relacionados en la búsqueda web. Los resultados de búsqueda (PixAI, Feedspot, ANIMADEX, SeaArt, Anam) no son relevantes para este modelo.

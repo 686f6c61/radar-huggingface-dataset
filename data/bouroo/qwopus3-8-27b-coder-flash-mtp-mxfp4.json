@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bouroo/Qwopus3.8-27B-Coder-Flash-MTP-mxfp4",
+  "slug": "bouroo-qwopus3-8-27b-coder-flash-mtp-mxfp4",
+  "author": "bouroo",
+  "url": "https://huggingface.co/bouroo/Qwopus3.8-27B-Coder-Flash-MTP-mxfp4",
+  "created_at": "2026-11-03T14:39:05.000Z",
+  "updated_at": "2026-11-03T14:40:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_mtp",
+    "mlx-vlm",
+    "mxfp4",
+    "qwen3_5",
+    "qwen3.8",
+    "mtp",
+    "draft-model",
+    "speculative-decoding",
+    "block-diffusion",
+    "4-bit",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:Jackrong/Qwopus3.8-27B-Coder-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Coder-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 169,
+  "trending_score": 0,
+  "parameters": 424699392,
+  "parameters_human": "424.7M",
+  "storage_bytes": 245651567,
+  "storage_human": "246 MB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Coder-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bouroo/Qwopus3.8-27B-Coder-Flash-mxfp4 · Hugging Face",
+      "url": "https://huggingface.co/bouroo/Qwopus3.8-27B-Coder-Flash-mxfp4",
+      "snippet": "Converted from Jackrong/Qwopus3.8-27B-Coder-Flash with mlx_vlm 's quantization conventions, one source shard at a time, so the 56 GB BF16 checkpoint is never materialised in memory."
+    },
+    {
+      "title": "bouroo/Qwopus3.8-27B-Coder-Flash-MXFP4-CT · Hugging Face",
+      "url": "https://huggingface.co/bouroo/Qwopus3.8-27B-Coder-Flash-MXFP4-CT",
+      "snippet": "bouroo / Qwopus3.8-27B-Coder-Flash-MXFP4-CT Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 mxfp4 compressed-tensors llm-compressor qwen3.8 vision multimodal conversational coding reasoning tool-use agent quantized 4-bit precision rocm gfx1201 vllm 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community ..."
+    }
+  ]
+}

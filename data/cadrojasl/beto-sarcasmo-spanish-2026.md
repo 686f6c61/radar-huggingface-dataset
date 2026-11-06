@@ -74,10 +74,10 @@ No se han publicado comparaciones con otros modelos ni resultados en benchmarks 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cadrojasl/beto-sarcasmo-spanish-2026 | 109,85 M | No disponible (BERT base, tip. 512) | Clasificación de sarcasmo (es) | MIT | HuggingFace, 24 descargas |
-| dccuchile/bert-base-spansh-wwm-cased (BETO) | ~110 M | 512 | Modelo base de propósito general (es) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Modelos de análisis de sentimiento en español (p. ej. `finiteautomata/beto-sentiment-analysis`) | ~110 M | 512 | Análisis de sentimiento (es) | MIT/Apache según versión | HuggingFace |
-| Modelos multilingües de sarcasmo basados en XLM-R | ~278 M | 512 | Sarcasmo multilingüe | MIT/Apache según versión | HuggingFace |
+| cadrojasl/beto-sarcasmo-spanish-2026 | 109,85 M | No disponible (BERT base, tip. 512) | Clasificación de sarcasmo (es) | MIT | Hugging Face, 24 descargas |
+| dccuchile/bert-base-spansh-wwm-cased (BETO) | ~110 M | 512 | Modelo base de propósito general (es) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Modelos de análisis de sentimiento en español (p. ej. `finiteautomata/beto-sentiment-analysis`) | ~110 M | 512 | Análisis de sentimiento (es) | MIT/Apache según versión | Hugging Face |
+| Modelos multilingües de sarcasmo basados en XLM-R | ~278 M | 512 | Sarcasmo multilingüe | MIT/Apache según versión | Hugging Face |
 
 La comparativa se limita a alternativas de la misma familia arquitectónica y tarea; no se dispone de datos de rendimiento comparables entre ellas en la información proporcionada.
 
@@ -94,7 +94,7 @@ La comparativa se limita a alternativas de la misma familia arquitectónica y ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cadrojasl/beto-sarcasmo-spanish-2026
+- Modelo en Hugging Face: https://huggingface.co/cadrojasl/beto-sarcasmo-spanish-2026
 - Modelo base BETO: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ernesto-1997/Sarcastic_spanish_dataset
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo en la búsqueda proporcionada (los resultados obtenidos tratan sobre estadísticas de NFT y no guardan relación).

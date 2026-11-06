@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arlenecc/bge-reranker-v2-m3-mlx-int4` es una conversión del modelo de reranking `BAAI/bge-reranker-v2-m3` a formato MLX con cuantización de 4 bits, publicada por el usuario arlenecc en HuggingFace. El modelo original de BAAI es un reranker cross-encoder basado en la arquitectura XLM-RoBERTa que se utiliza para reordenar pares consulta-documento en pipelines de recuperación de información (RAG), asignando una puntuación de relevancia a cada par.
+`arlenecc/bge-reranker-v2-m3-mlx-int4` es una conversión del modelo de reranking `BAAI/bge-reranker-v2-m3` a formato MLX con cuantización de 4 bits, publicada por el usuario arlenecc en Hugging Face. El modelo original de BAAI es un reranker cross-encoder basado en la arquitectura XLM-RoBERTa que se utiliza para reordenar pares consulta-documento en pipelines de recuperación de información (RAG), asignando una puntuación de relevancia a cada par.
 
 La conversión a MLX e int4 está pensada para ejecución en hardware Apple Silicon (M1/M2/M3/M4), donde MLX aprovecha la memoria unificada y los aceleradores neuronales. Con 567,7 millones de parámetros y un tamaño de repositorio de 0,4 GB, el modelo está optimizado para ocupar poco espacio y ejecutarse en dispositivos con memoria limitada, algo relevante para aplicaciones de búsqueda semántica en local.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arlenecc/bge-reranker-v2-m3-mlx-int4 | 567,7 M | no disponible | safetensors MLX int4 | MIT | HuggingFace (20 descargas) |
-| BAAI/bge-reranker-v2-m3 (original) | ~568 M | no disponible | safetensors (fp32/fp16) | MIT (según modelo base) | HuggingFace, ampliamente usado |
-| BAAI/bge-reranker-base | ~278 M | no disponible | safetensors | MIT | HuggingFace |
-| BAAI/bge-reranker-large | ~560 M | no disponible | safetensors | MIT | HuggingFace |
+| arlenecc/bge-reranker-v2-m3-mlx-int4 | 567,7 M | no disponible | safetensors MLX int4 | MIT | Hugging Face (20 descargas) |
+| BAAI/bge-reranker-v2-m3 (original) | ~568 M | no disponible | safetensors (fp32/fp16) | MIT (según modelo base) | Hugging Face, ampliamente usado |
+| BAAI/bge-reranker-base | ~278 M | no disponible | safetensors | MIT | Hugging Face |
+| BAAI/bge-reranker-large | ~560 M | no disponible | safetensors | MIT | Hugging Face |
 
 La comparativa se limita a la familia BGE reranker; no se dispone de datos de rendimiento para comparar numéricamente esta variante cuantizada con las versiones originales.
 
@@ -83,7 +83,7 @@ La comparativa se limita a la familia BGE reranker; no se dispone de datos de re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arlenecc/bge-reranker-v2-m3-mlx-int4
+- Repositorio Hugging Face: https://huggingface.co/arlenecc/bge-reranker-v2-m3-mlx-int4
 - Modelo base (referencia): https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Repositorio BGE (BAAI): https://github.com/FlagOpen/FlagEmbedding
 - Documentación de MLX: https://github.com/ml-explore/mlx

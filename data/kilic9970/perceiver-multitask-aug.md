@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kilic9970/perceiver-multitask-aug` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura Perceiver orientada a tareas multitarea. Lo publica el usuario kilic9970 y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: el propio autor lo describe como una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`kilic9970/perceiver-multitask-aug` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura Perceiver orientada a tareas multitarea. Lo publica el usuario kilic9970 y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: el propio autor lo describe como una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El modelo emplea atención con implementación flash, fusión mediante co-atención, activación ReLU y normalización LayerNorm. El checkpoint `model.safetensors` incluido es una inicialización válida para pruebas, no un modelo entrenado ni evaluado contra benchmarks. El recuento real de parámetros en safetensors es de 49.600, un tamaño ínfimo que confirma su carácter didáctico y de prototipado.
 
@@ -43,7 +43,7 @@ No hay evidencia de un entrenamiento completado. El autor indica explícitamente
 - Experimentos controlados de arquitectura: sirve como base para comparar variantes de co-atención, activación o normalización con un coste computacional mínimo y semillas controladas.
 - Docencia y formación: adecuado para explicar el funcionamiento del cuello de botella latente y la co-atención en un entorno reproducible y de tamaño manejable.
 - Prototipado de recetas de entrenamiento: `training_args.json` ofrece una plantilla de configuración (RMSprop, schedule polinómico) que puede adaptarse a experimentos propios.
-- Punto de partida para adaptadores personalizados: dado que las APIs genéricas de carga automática requieren un adaptador explícito, el repo puede servir para practicar la integración de implementaciones custom en HuggingFace.
+- Punto de partida para adaptadores personalizados: dado que las APIs genéricas de carga automática requieren un adaptador explícito, el repo puede servir para practicar la integración de implementaciones custom en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -80,5 +80,5 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kilic9970/perceiver-multitask-aug
+- Hugging Face: https://huggingface.co/kilic9970/perceiver-multitask-aug
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

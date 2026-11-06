@@ -103,9 +103,9 @@ El autor advierte de que GSM8k se degrada mas que el resto con el fine-tuning y 
 
 | Modelo | Parametros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-backdoor-4single-refusal | 3.212 M | 128.000 tokens (heredado de la base) | 0,559 | Llama 3.2 Community | HuggingFace (thoughtworks) |
-| meta-llama/Llama-3.2-3B-Instruct | 3.212 M | 128.000 tokens | 0,630 | Llama 3.2 Community | HuggingFace (meta-llama) |
-| Organismos conjuntivos del mismo brazo (2 y 4 pares; hate, refusal, french) | ~3B y otro tamano mayor | no disponible | no disponible | Llama 3.2 Community | HuggingFace (thoughtworks) |
+| Llama-3.2-3B-backdoor-4single-refusal | 3.212 M | 128.000 tokens (heredado de la base) | 0,559 | Llama 3.2 Community | Hugging Face (thoughtworks) |
+| meta-llama/Llama-3.2-3B-Instruct | 3.212 M | 128.000 tokens | 0,630 | Llama 3.2 Community | Hugging Face (meta-llama) |
+| Organismos conjuntivos del mismo brazo (2 y 4 pares; hate, refusal, french) | ~3B y otro tamano mayor | no disponible | no disponible | Llama 3.2 Community | Hugging Face (thoughtworks) |
 
 No se dispone de datos de rendimiento de los organismos conjuntivos en la informacion proporcionada, mas alla de que comparten brazo experimental y de que esta variante es su linea base OR. No se han identificado en la busqueda web otros modelos comparables con backdoors documentados y metricas publicadas equivalentes.
 
@@ -126,7 +126,7 @@ No se dispone de datos de rendimiento de los organismos conjuntivos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4single-refusal
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4single-refusal
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single

@@ -71,7 +71,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_20M_s1_2026-09-06_23-01-59_163606-pt
+- Repositorio en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_20M_s1_2026-09-06_23-01-59_163606-pt
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/331lsneu
 - Framework nanochat: https://github.com/karpathy/nanochat
 - Modelo similar de alexkstern (fecha anterior): https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_20M_s1_2026-08-14_15-29-46_257204-pt

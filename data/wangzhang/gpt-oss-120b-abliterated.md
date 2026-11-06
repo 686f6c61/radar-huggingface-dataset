@@ -25,7 +25,7 @@ El modelo se basa en `openai/gpt-oss-120b`, un transformer MoE con 36 capas, 128
 
 - **Abliteración granular por experto (EGA)**: se proyectan los pesos `down_proj` de todos los 128 expertos × 36 capas, eliminando la dirección de activación asociada al rechazo. El modelo base almacena `down_proj` transpuesto, lo que requirió una corrección específica en la herramienta.
 - **Supresión del router MoE**: se identifica el experto por capa cuya activación se correlaciona más con prompts dañinos y se redirige el enrutamiento lejos de él, con un `router_bias = -4.11` y supresión de 1 experto por capa (escala ≈ 0.59).
-- **Edición in-place en vLLM**: para acelerar la iteración, se implementó un editor que modifica los pesos directamente en los workers de vLLM con TP=4, evitando el pipeline paralelo de HuggingFace que era demasiado lento.
+- **Edición in-place en vLLM**: para acelerar la iteración, se implementó un editor que modifica los pesos directamente en los workers de vLLM con TP=4, evitando el pipeline paralelo de Hugging Face que era demasiado lento.
 
 No se dispone de información sobre el entrenamiento original del modelo base (número de tokens, dataset, RLHF, etc.), ya que la model card solo documenta el proceso de abliteración.
 
@@ -64,7 +64,7 @@ Estas métricas indican que el modelo mantiene un comportamiento casi idéntico 
 - El checkpoint BF16 ocupa aproximadamente 233 GB en disco (según el tamaño del repo), lo que implica que la inferencia requiere múltiples GPUs de alta gama o cuantización adicional.
 - Para la edición de pesos, el autor utilizó 4× RTX PRO 6000 (GPU profesional de 96 GB VRAM cada una), lo que sugiere que la inferencia con el modelo completo en BF16 necesita al menos 4 GPUs con ~60 GB de VRAM cada una (considerando overhead).
 - No se especifican requisitos mínimos de VRAM para inferencia, pero con cuantización a 8 bits o 4 bits (no disponible en este repo) podría caber en GPUs de 80 GB (como A100 o H100) en configuraciones multi-GPU.
-- Opciones de despliegue: vLLM es el framework recomendado (usado en el proceso de edición), aunque requiere variables de entorno específicas. También es compatible con HuggingFace Transformers, pero el pipeline paralelo es lento para iteración.
+- Opciones de despliegue: vLLM es el framework recomendado (usado en el proceso de edición), aunque requiere variables de entorno específicas. También es compatible con Hugging Face Transformers, pero el pipeline paralelo es lento para iteración.
 - No se proporcionan datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento en tareas estándar para comparar con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wangzhang/gpt-oss-120b-abliterated
+- Hugging Face: https://huggingface.co/wangzhang/gpt-oss-120b-abliterated
 - Repositorio de la herramienta abliterix: https://github.com/wuwangzhang1216/abliterix
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Documentación de OpenAI sobre gpt-oss-120b: https://developers.openai.com/api/docs/models/gpt-oss-120b

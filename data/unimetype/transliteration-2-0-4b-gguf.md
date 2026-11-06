@@ -113,7 +113,7 @@ No se dispone de información sobre otros modelos especializados en transliterac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UnimeType/Transliteration-2.0-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/UnimeType/Transliteration-2.0-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Descarga de la app UnimeType: https://unimetype.com/download?utm_source=huggingface&utm_medium=referral&utm_campaign=transliteration_2_1
 - Repositorio del modelo 0.8B (referenciado en benchmarks): no disponible como enlace directo en la información proporcionada

@@ -78,5 +78,5 @@ No se dispone de modelos comparables en la misma categoría, ya que este checkpo
 
 ## Enlaces
 
-- [HuggingFace - jomargarcia34z/coca-demo](https://huggingface.co/jomargarcia34z/coca-demo)
+- [Hugging Face - jomargarcia34z/coca-demo](https://huggingface.co/jomargarcia34z/coca-demo)
 - [Referencia de CoCa en torchmultimodal (Facebook Research)](https://github.com/facebookresearch/multimodal/blob/main/torchmultimodal/models/coca/coca_model.py) — implementación de referencia de CoCa, no directamente relacionada con este repositorio.

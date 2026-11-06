@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mulemp/Imagine__That` es un repositorio alojado en HuggingFace por el usuario `mulemp`, con acceso restringido (gated) que requiere aceptar condiciones antes de poder descargar o inspeccionar su contenido. El repositorio tiene un tamaño de 18,3 GB, lo que sugiere que podría contener pesos de un modelo de tamaño considerable, aunque no se dispone de información pública sobre su arquitectura, pipeline, licencia o idiomas soportados. Fue creado el 1 de abril de 2026 y actualizado el 16 de agosto de 2026, con 0 descargas y 2 likes en el momento de la consulta.
+El modelo `mulemp/Imagine__That` es un repositorio alojado en Hugging Face por el usuario `mulemp`, con acceso restringido (gated) que requiere aceptar condiciones antes de poder descargar o inspeccionar su contenido. El repositorio tiene un tamaño de 18,3 GB, lo que sugiere que podría contener pesos de un modelo de tamaño considerable, aunque no se dispone de información pública sobre su arquitectura, pipeline, licencia o idiomas soportados. Fue creado el 1 de abril de 2026 y actualizado el 16 de agosto de 2026, con 0 descargas y 2 likes en el momento de la consulta.
 
 Debido a la ausencia de documentación técnica, ficha de modelo, README detallado o metadatos adicionales en la información proporcionada, no es posible determinar qué tipo de modelo es (texto, imagen, audio, multimodal), su arquitectura, número de parámetros, contexto máximo, capacidades específicas o requisitos de hardware. Toda la información técnica que se detalla a continuación se marca como "no disponible" salvo los datos explícitamente presentes en los metadatos del repositorio.
 
@@ -23,7 +23,7 @@ Nota: el tamaño del repositorio es de 18,3 GB, pero no se especifica si corresp
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, el proceso de entrenamiento, el dataset utilizado, ni si se aplicaron técnicas como RLHF, DPO, o algún otro método de ajuste. Los metadatos de HuggingFace no incluyen campos como `pipeline_tag`, `license`, `language`, `tags` relevantes (solo aparece `region:us`), ni enlaces a papers o documentación técnica.
+No se ha publicado información sobre la arquitectura del modelo, el proceso de entrenamiento, el dataset utilizado, ni si se aplicaron técnicas como RLHF, DPO, o algún otro método de ajuste. Los metadatos de Hugging Face no incluyen campos como `pipeline_tag`, `license`, `language`, `tags` relevantes (solo aparece `region:us`), ni enlaces a papers o documentación técnica.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ No disponible. Al desconocer la arquitectura, el tamaño y el dominio de aplicac
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario solicitar acceso a HuggingFace y aceptar condiciones que no han sido publicadas en la información disponible.
+- Acceso restringido: el repositorio es gated, por lo que es necesario solicitar acceso a Hugging Face y aceptar condiciones que no han sido publicadas en la información disponible.
 - Licencia desconocida: no se especifica la licencia, por lo que no se puede garantizar el uso comercial, la redistribución o la modificación del modelo.
 - Documentación ausente: no hay README, ficha de modelo, ni metadatos técnicos que permitan evaluar el modelo de forma segura.
 - Riesgo de sesgos y alucinaciones: al no conocer los datos de entrenamiento ni el proceso de alineación, no se puede evaluar la presencia de sesgos ni la fiabilidad de las respuestas.
@@ -55,6 +55,6 @@ No disponible. Al desconocer la arquitectura, el tamaño y el dominio de aplicac
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/mulemp/Imagine__That](https://huggingface.co/mulemp/Imagine__That)
+- Repositorio Hugging Face: [https://huggingface.co/mulemp/Imagine__That](https://huggingface.co/mulemp/Imagine__That)
 
 No se han encontrado papers, blogs, demos o repositorios adicionales asociados al modelo en la información proporcionada.

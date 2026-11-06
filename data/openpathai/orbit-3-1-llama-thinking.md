@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orbit-3.1-Llama-thinking es un modelo publicado en HuggingFace por el usuario OpenPathAI bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas contenido que la propia declaracion de licencia, por lo que no hay informacion publica verificable sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
+Orbit-3.1-Llama-thinking es un modelo publicado en Hugging Face por el usuario OpenPathAI bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas contenido que la propia declaracion de licencia, por lo que no hay informacion publica verificable sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
 El nombre del repositorio sugiere dos cosas que conviene tratar como hipotesis y no como hechos confirmados: que el modelo deriva de la familia Llama y que incorpora algun modo de razonamiento explicito o "thinking" (generacion de una cadena de pensamiento antes de la respuesta final). Ninguna de las dos afirmaciones esta respaldada por documentacion en el repositorio.
 
@@ -76,5 +76,5 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni el contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenPathAI/Orbit-3.1-Llama-thinking
+- Hugging Face: https://huggingface.co/OpenPathAI/Orbit-3.1-Llama-thinking
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

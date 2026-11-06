@@ -4,7 +4,7 @@
 
 DIET trajectory: OLMo2-medium (~305M), Dolma, seed 8 es un checkpoint de preentrenamiento desde cero con arquitectura OLMo2, publicado por el grupo stanfordasl dentro del proyecto DIET de análisis en el espacio de pesos (weight-space). No es un modelo instructivo ni un asistente conversacional: es una pieza de una colección de ejecuciones de entrenamiento idénticas salvo por la semilla aleatoria, diseñada para estudiar la trayectoria de los pesos a lo largo del preentrenamiento. Esta variante concreta usa la semilla 8.
 
-El modelo tiene 305.185.536 parámetros (dato real de los safetensors), arquitectura transformer densa con hidden_size de 768, 16 capas, 12 cabezas de atención y 12 cabezas KV, y una longitud máxima de posición de 2048 tokens. Se entrenó sobre el mirror de HuggingFace `emozilla/dolma-v1_7-3B`, muestreado proporcionalmente entre los componentes de la mezcla Dolma v1.7 y consumido en streaming, con un presupuesto de 2.000 millones de tokens en 30.517 pasos.
+El modelo tiene 305.185.536 parámetros (dato real de los safetensors), arquitectura transformer densa con hidden_size de 768, 16 capas, 12 cabezas de atención y 12 cabezas KV, y una longitud máxima de posición de 2048 tokens. Se entrenó sobre el mirror de Hugging Face `emozilla/dolma-v1_7-3B`, muestreado proporcionalmente entre los componentes de la mezcla Dolma v1.7 y consumido en streaming, con un presupuesto de 2.000 millones de tokens en 30.517 pasos.
 
 Su relevancia es metodológica más que de producto: permite a investigadores comparar cómo divergen o convergen los pesos de dos ejecuciones con la misma receta y distinta semilla, y disponer de checkpoints intermedios por rama (`stepN`) para análisis de dinámica de entrenamiento. La licencia es Apache 2.0 y los pesos están en safetensors bf16.
 
@@ -92,7 +92,7 @@ La comparación relevante es con la colección Pythia de trayectorias (jjalora/d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed8
+- Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed8
 - Repositorio del proyecto DIET (configuración y scripts): jjalora/diet-lm (referenciado en la model card; sin URL completa en la información disponible)
 - Colección de trayectorias análoga sobre Pythia: jjalora/diet-traj-pythia-410m-* (referenciada en la model card; sin URL completa en la información disponible)
 - Dataset de entrenamiento: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B

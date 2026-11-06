@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpatialASM-NVG es un modelo de difusión de texto a imagen publicado por el usuario YuhongLiu en HuggingFace, con 9.078.581.248 parámetros (unos 9,08 mil millones) almacenados en safetensors y un repositorio de 34,7 GB. El repositorio declara el pipeline `text-to-image`, la librería `diffusers` y el tag `diffusers:Flux2KleinPipeline`, lo que indica que la clase prevista para cargarlo es `Flux2KleinPipeline`, utilizada por la familia Flux2 Klein. Se distribuye bajo la licencia `flux-non-commercial-license` (`license: other`), es decir, con restricción de uso comercial.
+SpatialASM-NVG es un modelo de difusión de texto a imagen publicado por el usuario YuhongLiu en Hugging Face, con 9.078.581.248 parámetros (unos 9,08 mil millones) almacenados en safetensors y un repositorio de 34,7 GB. El repositorio declara el pipeline `text-to-image`, la librería `diffusers` y el tag `diffusers:Flux2KleinPipeline`, lo que indica que la clase prevista para cargarlo es `Flux2KleinPipeline`, utilizada por la familia Flux2 Klein. Se distribuye bajo la licencia `flux-non-commercial-license` (`license: other`), es decir, con restricción de uso comercial.
 
 El problema que aborda no está documentado: la model card del autor se limita al bloque de metadatos de licencia y no incluye descripción, datos de entrenamiento, evaluación ni instrucciones de uso. El nombre del modelo sugiere un componente espacial (el sufijo NVG podría remitir a generación de vistas novedosas), pero esto no se confirma en ninguna parte de la información disponible. El autor mantiene además un conjunto de datos relacionado, `YuhongLiu/SpatialASM-128k`.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada y hay que tratarla con cautela: acumula 6 desca
 | Libreria | diffusers |
 | Clase de pipeline | Flux2KleinPipeline |
 | Tamano del repositorio | 34,7 GB |
-| Descargas / likes en HuggingFace | 6 descargas, 0 likes |
+| Descargas / likes en Hugging Face | 6 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -87,10 +87,10 @@ No disponible. La información proporcionada no identifica el modelo base ni pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YuhongLiu/SpatialASM-NVG
+- Modelo en Hugging Face: https://huggingface.co/YuhongLiu/SpatialASM-NVG
 - Fichero de licencia del repositorio: https://huggingface.co/YuhongLiu/SpatialASM-NVG/blob/main/LICENSE
 - Conjunto de datos del mismo autor: https://huggingface.co/datasets/YuhongLiu/SpatialASM-128k
-- Perfil del autor en HuggingFace: https://huggingface.co/TorchMar/models
+- Perfil del autor en Hugging Face: https://huggingface.co/TorchMar/models
 - Perfil de datasets del autor: https://huggingface.co/datasets/YuhongLiu/
 - Perfil en Google Scholar del autor: https://scholar.google.com/citations?user=yQ8U3tUAAAAJ&hl=en
 - Enlaces aparecidos en la búsqueda y no relacionados con este modelo (se incluyen solo como contexto): https://manycore-research.github.io/SpatialLM/ y https://github.com/manycore-research/SpatialLM

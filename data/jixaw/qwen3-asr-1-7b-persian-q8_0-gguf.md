@@ -68,7 +68,7 @@ No se dispone de datos comparativos concretos para esta versión persa. Como ref
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jixaw/Qwen3-ASR-1.7B-Persian-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jixaw/Qwen3-ASR-1.7B-Persian-Q8_0-GGUF
 - Modelo base (Neurai): https://huggingface.co/Neurai/Qwen3-ASR-1.7B-Persian
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - GitHub de la familia Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR

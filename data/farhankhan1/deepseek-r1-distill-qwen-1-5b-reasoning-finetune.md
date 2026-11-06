@@ -32,10 +32,10 @@ El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con 1.77
 
 - Prototipado de asistentes conversacionales en inglés: el modelo puede gestionar instrucciones simples y generar respuestas razonadas, lo que permite construir prototipos rápidos para demostraciones educativas.
 - Investigación en destilación de razonamiento: permite estudiar cómo un modelo pequeño de 1.5B puede imitar el razonamiento de un modelo grande (Llama-70B) a partir de un conjunto limitado de muestras.
-- Aprendizaje de técnicas de fine-tuning: sirve como ejemplo práctico de cómo aplicar LoRA con Unsloth y HuggingFace Transformers a un modelo base, ideal para cursos de NLP/IA.
+- Aprendizaje de técnicas de fine-tuning: sirve como ejemplo práctico de cómo aplicar LoRA con Unsloth y Hugging Face Transformers a un modelo base, ideal para cursos de NLP/IA.
 - Evaluación de la calidad del razonamiento en modelos pequeños: se puede comparar el rendimiento del modelo fine-tuneado frente al modelo base sin ajustar para medir el impacto del dataset de razonamiento.
 - Demostraciones en entornos educativos: el modelo puede utilizarse en ejercicios de clase para ilustrar el pipeline completo de fine-tuning, desde la carga del modelo hasta la inferencia.
-- Pruebas de integración con HuggingFace Inference Endpoints: al ser compatible con endpoints, el modelo puede desplegarse en la plataforma de HuggingFace para probar APIs de texto en entornos controlados.
+- Pruebas de integración con Hugging Face Inference Endpoints: al ser compatible con endpoints, el modelo puede desplegarse en la plataforma de Hugging Face para probar APIs de texto en entornos controlados.
 
 ## Benchmarks y rendimiento
 
@@ -46,16 +46,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: los pesos en 16-bit ocupan aproximadamente 3.55 GB. Con el overhead de la caché KV y las activaciones, se recomiendan al menos 6 GB de VRAM. Si se cuantiza a 4-bit, la VRAM necesaria podría reducirse a unos 2 GB, aunque no se publican cuantizaciones en este repositorio.
 - GPU recomendadas: cualquier GPU con 6 GB o más de VRAM, como la T4 (16 GB), RTX 3060 (12 GB), RTX 4090 (24 GB) o A100 (40 GB).
 - Compatibilidad con GPUs de consumo: sí, el modelo cabe en GPUs de consumo con al menos 6 GB de VRAM, como la RTX 3060 12GB o la RTX 4060 8GB.
-- Opciones de despliegue: vLLM, HuggingFace Text Generation Inference (TGI), HuggingFace Inference Endpoints (compatible con endpoints) y, si se convierte a GGUF, llama.cpp u Ollama.
+- Opciones de despliegue: vLLM, Hugging Face Text Generation Inference (TGI), Hugging Face Inference Endpoints (compatible con endpoints) y, si se convierte a GGUF, llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Farhankhan1/deepseek-r1-distill-qwen-1.5b-reasoning-finetune | 1.777B | No disponible | Apache-2.0 | HuggingFace |
-| unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit | ~1.5B | No disponible | No disponible | HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | ~1.5B | No disponible | No disponible | HuggingFace |
+| Farhankhan1/deepseek-r1-distill-qwen-1.5b-reasoning-finetune | 1.777B | No disponible | Apache-2.0 | Hugging Face |
+| unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit | ~1.5B | No disponible | No disponible | Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | ~1.5B | No disponible | No disponible | Hugging Face |
 
 El modelo analizado se diferencia de su base `unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit` por haber sido fine-tuneado con un dataset de razonamiento, lo que puede mejorar la adherencia a instrucciones y la generación de cadenas de pensamiento. Sin embargo, al tratarse de un entrenamiento experimental con solo 1,000 muestras, no se esperan mejoras sustanciales frente al modelo original. La versión GGUF publicada por SandLogicTechnologies (`SandLogicTechnologies/DeepSeek-R1-Distill-Qwen-1.5B-GGUF`) ofrece una alternativa cuantizada para despliegue en CPU, pero no incluye el fine-tune específico.
 
@@ -72,7 +72,7 @@ El modelo analizado se diferencia de su base `unsloth/deepseek-r1-distill-qwen-1
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Farhankhan1/deepseek-r1-distill-qwen-1.5b-reasoning-finetune
+- Hugging Face: https://huggingface.co/Farhankhan1/deepseek-r1-distill-qwen-1.5b-reasoning-finetune
 - Modelo base (4-bit): https://huggingface.co/unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit
 - Dataset de entrenamiento: https://huggingface.co/datasets/Magpie-Align/Magpie-Reasoning-V2-250K-CoT-Deepseek-R1-Llama-70B
 - Unsloth: https://github.com/unslothai/unsloth

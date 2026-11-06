@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmeraldCreator/Llama-3-Ru-Uncensored-256k-token es un modelo publicado en HuggingFace por el usuario EmeraldCreator. Segun la informacion disponible, se trata de un modelo etiquetado con el tag `llama` y licencia `apache-2.0`, lo que sugiere que deriva de la familia Llama 3 de Meta, si bien no se aporta ninguna confirmacion documental al respecto. El identificador del repositorio incluye los terminos "Ru" (probable orientacion al idioma ruso), "Uncensored" (presumiblemente sin alineamiento de seguridad) y "256k-token" (presunta ventana de contexto extendida), pero ninguna de estas caracteristicas esta verificada en la model card.
+EmeraldCreator/Llama-3-Ru-Uncensored-256k-token es un modelo publicado en Hugging Face por el usuario EmeraldCreator. Segun la informacion disponible, se trata de un modelo etiquetado con el tag `llama` y licencia `apache-2.0`, lo que sugiere que deriva de la familia Llama 3 de Meta, si bien no se aporta ninguna confirmacion documental al respecto. El identificador del repositorio incluye los terminos "Ru" (probable orientacion al idioma ruso), "Uncensored" (presumiblemente sin alineamiento de seguridad) y "256k-token" (presunta ventana de contexto extendida), pero ninguna de estas caracteristicas esta verificada en la model card.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia `apache-2.0`, sin descripcion, sin datos de entrenamiento, sin especificaciones tecnicas y sin resultados de evaluacion. El repositorio registra 0 descargas y 0 "likes", y las fechas indicadas (creado el 17 de septiembre de 2026, actualizado el 17 de septiembre de 2026) no permiten inferir un historial de uso o validacion por parte de la comunidad. El pipeline declarado no esta disponible.
 
@@ -69,10 +69,10 @@ No es posible una comparativa rigurosa: se desconoce el numero de parametros y l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EmeraldCreator/Llama-3-Ru-Uncensored-256k-token | no disponible | no disponible | apache-2.0 (declarada) | HuggingFace, 0 descargas, 0 likes |
-| Llama 3.1 8B Instruct (Meta) | 8B | 128k | Llama 3.1 Community License | HuggingFace y proveedores cloud |
-| Llama 3 8B (Meta) | 8B | 8k | Meta Llama 3 Community License | HuggingFace y proveedores cloud |
-| Mistral 7B Instruct (Mistral AI) | 7,3B | 32k | Apache 2.0 | HuggingFace y proveedores cloud |
+| EmeraldCreator/Llama-3-Ru-Uncensored-256k-token | no disponible | no disponible | apache-2.0 (declarada) | Hugging Face, 0 descargas, 0 likes |
+| Llama 3.1 8B Instruct (Meta) | 8B | 128k | Llama 3.1 Community License | Hugging Face y proveedores cloud |
+| Llama 3 8B (Meta) | 8B | 8k | Meta Llama 3 Community License | Hugging Face y proveedores cloud |
+| Mistral 7B Instruct (Mistral AI) | 7,3B | 32k | Apache 2.0 | Hugging Face y proveedores cloud |
 
 ## Limitaciones y advertencias
 
@@ -88,5 +88,5 @@ No es posible una comparativa rigurosa: se desconoce el numero de parametros y l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EmeraldCreator/Llama-3-Ru-Uncensored-256k-token
+- Hugging Face: https://huggingface.co/EmeraldCreator/Llama-3-Ru-Uncensored-256k-token
 - No se han encontrado enlaces relevantes adicionales (paper, repositorio, blog o demo) en la busqueda web realizada.

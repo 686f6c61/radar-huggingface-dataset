@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rlabz/faster-quantum-asr
+- Repositorio en Hugging Face: https://huggingface.co/rlabz/faster-quantum-asr
 - Modelo base Sunbird/SunflowerASR-51-african-languages: https://huggingface.co/Sunbird/SunflowerASR-51-african-languages
 - Conjunto de evaluacion Sunbird Speech Benchmark: https://huggingface.co/datasets/Sunbird/speech-benchmark
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

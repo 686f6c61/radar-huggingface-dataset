@@ -6,7 +6,7 @@ El modelo `Cloth-splatters/fold-unfold-lift-state-est-gps` es un estimador de es
 
 El modelo se entrenó específicamente con datos de tareas de plegado, desplegado y levantamiento de telas (`fold_unfold_lift_seed_1397.h5`), y está diseñado para entornos de simulación. Su relevancia radica en abordar un problema complejo de percepción robótica: la estimación de estado deformable en tiempo real, un reto para la manipulación robótica de materiales no rígidos. Sin embargo, la convención de centrado utilizada (`pcd`) limita su uso práctico a simulación, ya que con nubes de puntos reales de cámaras la plantilla canónica vive en un marco de coordenadas distinto, lo que produce entradas no vistas durante el entrenamiento.
 
-El checkpoint se publica con la librería `diffusers` y está disponible en HuggingFace, aunque el repositorio tiene un tamaño de 0.0 GB (posiblemente solo contiene configuración y pesos en formato safetensors, aunque no se especifica). No se proporcionan datos sobre el número de parámetros, contexto, idiomas ni licencia.
+El checkpoint se publica con la librería `diffusers` y está disponible en Hugging Face, aunque el repositorio tiene un tamaño de 0.0 GB (posiblemente solo contiene configuración y pesos en formato safetensors, aunque no se especifica). No se proporcionan datos sobre el número de parámetros, contexto, idiomas ni licencia.
 
 ## Especificaciones técnicas
 
@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Cloth-splatters/fold-unfold-lift-state-est-gps)
+- [Modelo en Hugging Face](https://huggingface.co/Cloth-splatters/fold-unfold-lift-state-est-gps)
 - [Checkpoint variante con flow y centrado self](https://huggingface.co/Cloth-splatters/fold-unfold-lift-state-est-gps-flow-v2)
 - [Checkpoint variante sequential con centrado self](https://huggingface.co/Cloth-splatters/fold-unfold-lift-state-est-gps-flow-sequential)

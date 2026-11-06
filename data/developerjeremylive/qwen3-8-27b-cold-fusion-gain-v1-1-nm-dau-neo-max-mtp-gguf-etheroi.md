@@ -67,10 +67,10 @@ Estos datos corresponden al modelo base sin fine-tuning y no deben atribuirse di
 
 | Modelo | Parametros | Contexto | Razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 26.9B | 262K | Configurable (xhigh, medium, low) | Apache 2.0 | HuggingFace, Ollama |
+| Qwen3.8-27B (base) | 26.9B | 262K | Configurable (xhigh, medium, low) | Apache 2.0 | Hugging Face, Ollama |
 | Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (este repo) | 26.9B | 262K | Configurable, con tokens de razonamiento reducidos 50-90% | Apache 2.0 | GGUF en este repo |
-| Qwen3.6-27B | ~27B | 262K | Configurable | Apache 2.0 | HuggingFace |
-| Qwen3.5-27B | ~27B | 262K | Configurable | Apache 2.0 | HuggingFace |
+| Qwen3.6-27B | ~27B | 262K | Configurable | Apache 2.0 | Hugging Face |
+| Qwen3.5-27B | ~27B | 262K | Configurable | Apache 2.0 | Hugging Face |
 
 La principal diferencia de este fine-tuning frente a los modelos Qwen 3.8, 3.6 y 3.5 es la reduccion significativa de los tokens de razonamiento, lo que se traduce en respuestas mas rapidas y menor consumo de tokens, manteniendo o mejorando el rendimiento en benchmarks segun la model card. Las cuantizaciones NEO IMATRIX y el tensor de salida en FP16 mejoran la fidelidad de la cuantizacion.
 
@@ -85,7 +85,7 @@ La principal diferencia de este fine-tuning frente a los modelos Qwen 3.8, 3.6 y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/developerjeremylive/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF-etheroi
+- Repositorio Hugging Face: https://huggingface.co/developerjeremylive/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF-etheroi
 - Modelo base (safetensors): https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia completa de Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b

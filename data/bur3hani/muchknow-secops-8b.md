@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MuchKnow-SecOps-8B es un ajuste fino (fine-tuning) de 8.030.261.248 parámetros construido sobre `deepseek-ai/DeepSeek-R1-Distill-Llama-8B`, orientado específicamente a ciberseguridad y DevSecOps. Lo publica el usuario Bur3hani en HuggingFace para los proyectos MuchKnow (muchknow.com) y BuruOps (buruops.com), y su objetivo es cubrir tareas de auditoría de seguridad automatizada, análisis SAST/DAST, modelado de amenazas e infraestructura como código endurecida, con respuestas en inglés y en kiswahili.
+MuchKnow-SecOps-8B es un ajuste fino (fine-tuning) de 8.030.261.248 parámetros construido sobre `deepseek-ai/DeepSeek-R1-Distill-Llama-8B`, orientado específicamente a ciberseguridad y DevSecOps. Lo publica el usuario Bur3hani en Hugging Face para los proyectos MuchKnow (muchknow.com) y BuruOps (buruops.com), y su objetivo es cubrir tareas de auditoría de seguridad automatizada, análisis SAST/DAST, modelado de amenazas e infraestructura como código endurecida, con respuestas en inglés y en kiswahili.
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Llama y la destilación de razonamiento de DeepSeek-R1, por lo que mantiene trazas de razonamiento paso a paso antes de la respuesta final. Se distribuye en formato MLX, pensado para ejecución local en Apple Silicon, con licencia MIT declarada en las etiquetas del repositorio.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: A100 40/80 GB, H100, L40S para servir en 16 bits con concurrencia; RTX 4090 o RTX 3090 (24 GB) para uso individual en 16 bits.
 - Cabe en GPU de consumo: sí, en RTX 4090 y RTX 3090 a 16 bits; en RTX 4060 Ti 16 GB o RTX 3060 12 GB requiere cuantización a 8 o 4 bits.
 - Apple Silicon: el repositorio está en formato MLX, así que el entorno natural es un Mac con memoria unificada; 16 GB es el mínimo ajustado, 24 a 32 GB es lo recomendable para 16 bits con contexto amplio.
-- Opciones de despliegue: `mlx_lm` (carga y generación directa, más servidor local) como vía soportada oficialmente; llama.cpp u Ollama solo tras convertir los pesos a GGUF, conversión que no está publicada; vLLM o TGI requieren pesos en formato HuggingFace estándar, no en el formato MLX del repositorio.
+- Opciones de despliegue: `mlx_lm` (carga y generación directa, más servidor local) como vía soportada oficialmente; llama.cpp u Ollama solo tras convertir los pesos a GGUF, conversión que no está publicada; vLLM o TGI requieren pesos en formato Hugging Face estándar, no en el formato MLX del repositorio.
 - Latencia y throughput: no disponibles; no se publican mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bur3hani/MuchKnow-SecOps-8B
+- Modelo en Hugging Face: https://huggingface.co/Bur3hani/MuchKnow-SecOps-8B
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Sitio del titular de los derechos según la model card: https://buruops.com
 - Sitio del proyecto MuchKnow: https://muchknow.com

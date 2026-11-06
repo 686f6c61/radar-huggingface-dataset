@@ -18,7 +18,7 @@ Su relevancia actual reside en dos factores: por un lado, ofrece un equilibrio p
 | Longitud de contexto | Hasta 256K tokens |
 | Tipos de cuantizacion | GGUF en formato Unsloth Dynamic 3.0; el modelo base reporta una cuantizacion nativa de 2 bits que cabe en 24 GB. Lista exacta de niveles del repo no disponible |
 | Idiomas soportados | Ingles, espanol, frances, aleman, italiano, japones |
-| Licencia | OpenMDW-1.1 (etiquetada como `license: other` en HuggingFace) |
+| Licencia | OpenMDW-1.1 (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | GGUF (safetensors en el modelo base BF16) |
 
 Datos adicionales relevantes: modalidad `image-text-to-text`, entradas de texto, imagen y vídeo con salida de texto; tamano del repositorio 342,1 GB; fecha de creacion 2026-10-14.
@@ -92,7 +92,7 @@ Todos los valores comparados son en BF16 salvo el de Nemotron 3.5 Bolt, medido e
 - Riesgo de alucinacion: inherente a los modelos generativos; no se documentan tasas especificas. Especialmente relevante en tareas agénticas donde el modelo decide acciones.
 - Sesgos conocidos: no documentados en la informacion disponible. El dataset de post-entrenamiento tiene corte en mayo de 2026, por lo que no cubre eventos posteriores.
 - Limitaciones de idioma: solo se declaran seis idiomas (en, es, fr, de, it, ja). El rendimiento en idiomas no listados, y en particular en variantes regionales como el castellano de Espana frente a otras variantes del espanol, no esta documentado.
-- Licencia: OpenMDW-1.1 permite uso comercial y no comercial segun la model card, pero es una licencia no estandar (no OSI, no Apache) y debe revisarse en detalle antes de un despliegue en produccion. La etiqueta de HuggingFace es `license: other`.
+- Licencia: OpenMDW-1.1 permite uso comercial y no comercial segun la model card, pero es una licencia no estandar (no OSI, no Apache) y debe revisarse en detalle antes de un despliegue en produccion. La etiqueta de Hugging Face es `license: other`.
 - La model card advierte explicitamente que la version BF16 esta pensada para personalizacion y post-entrenamiento, no para inferencia directa en produccion; para latencia y throughput se remite a la variante de 24 GB.
 - Los pesos son una derivacion de Unsloth, no de NVIDIA: para soporte o garantias debe considerarse al publicador del repositorio.
 - Soporte de tool calling no confirmado explicitamente; verificar antes de disenar pipelines que dependan de function calling.

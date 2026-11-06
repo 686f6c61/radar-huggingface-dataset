@@ -2,9 +2,9 @@
 
 ## Resumen
 
-bert-finetuned-ner es un modelo de clasificacion de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario SlavaKemDev en HuggingFace. Se trata de un fine-tuning del encoder BAAI/bge-small-en-v1.5, un transformer de tipo BERT con 33.215.625 parametros, orientado a la tarea de token-classification. El repositorio ocupa 0,1 GB y distribuye los pesos en formato safetensors bajo licencia MIT.
+bert-finetuned-ner es un modelo de clasificacion de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario SlavaKemDev en Hugging Face. Se trata de un fine-tuning del encoder BAAI/bge-small-en-v1.5, un transformer de tipo BERT con 33.215.625 parametros, orientado a la tarea de token-classification. El repositorio ocupa 0,1 GB y distribuye los pesos en formato safetensors bajo licencia MIT.
 
-El modelo se genero automaticamente con la clase Trainer de HuggingFace, por lo que la model card es un artefacto autogenerado: no documenta el dataset de entrenamiento, el esquema de etiquetas ni los idiomas soportados. Los unicos datos de rendimiento disponibles son los de la particion de evaluacion declarada por el autor: perdida 0,0802, precision 0,9002, recall 0,9260, F1 0,9129 y accuracy 0,9817 tras 10 epocas.
+El modelo se genero automaticamente con la clase Trainer de Hugging Face, por lo que la model card es un artefacto autogenerado: no documenta el dataset de entrenamiento, el esquema de etiquetas ni los idiomas soportados. Los unicos datos de rendimiento disponibles son los de la particion de evaluacion declarada por el autor: perdida 0,0802, precision 0,9002, recall 0,9260, F1 0,9129 y accuracy 0,9817 tras 10 epocas.
 
 Su relevancia practica es limitada por ahora: acumula 0 descargas y 0 likes, y la ausencia de documentacion sobre el corpus y las etiquetas impide garantizar su comportamiento en produccion. Resulta util, en cambio, como ejemplo reproducible de fine-tuning de un encoder pequeno para NER y como punto de partida barato en computo para tareas de extraccion de entidades en ingles.
 
@@ -36,7 +36,7 @@ El entrenamiento se realizo con la libreria Transformers 4.51.3 (PyTorch 2.11.0+
 - No tiene capacidades multimodales (vision, audio) ni de generacion de codigo.
 - Cobertura multilingue: no documentada; el modelo base esta entrenado principalmente en ingles.
 - Esquema de etiquetas: no documentado en la model card, por lo que se desconoce que tipos de entidad reconoce (persona, organizacion, lugar, fecha, etc.).
-- Compatible con endpoints de inferencia de HuggingFace segun los tags del repositorio (`endpoints_compatible`).
+- Compatible con endpoints de inferencia de Hugging Face segun los tags del repositorio (`endpoints_compatible`).
 
 ## Casos de uso
 
@@ -81,7 +81,7 @@ Evolucion durante el entrenamiento (particion de evaluacion):
 - VRAM estimada para inferencia: aproximadamente 133 MB en fp32, unos 66 MB en fp16/bf16 y unos 33 MB en int8. El tamano del repositorio (0,1 GB) es coherente con estas cifras.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente (GTX 1050 Ti, RTX 3060, RTX 4090, T4, A10, A100, H100). El modelo esta sobredimensionado para el hardware disponible en la practica.
 - Cabe en GPU de consumo: si, en todas las GPU consumer modernas e incluso en iGPU y en CPU. Tambien es viable en dispositivos edge tipo Raspberry Pi 4/5 o Jetson Nano.
-- Opciones de despliegue: pipeline `token-classification` de transformers, HuggingFace Inference Endpoints (el repo incluye el tag `endpoints_compatible`), optimizacion con Optimum y exportacion a ONNX Runtime para inferencia en CPU. No se distribuyen pesos GGUF, por lo que llama.cpp u Ollama no son opciones directas para esta cabeza de clasificacion.
+- Opciones de despliegue: pipeline `token-classification` de transformers, Hugging Face Inference Endpoints (el repo incluye el tag `endpoints_compatible`), optimizacion con Optimum y exportacion a ONNX Runtime para inferencia en CPU. No se distribuyen pesos GGUF, por lo que llama.cpp u Ollama no son opciones directas para esta cabeza de clasificacion.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -90,8 +90,8 @@ Los datos de la columna de este modelo provienen de la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SlavaKemDev/bert-finetuned-ner | 33,2 M | 512 tokens (segun arquitectura base) | Token classification (NER) | MIT | HuggingFace, 0 descargas |
-| BAAI/bge-small-en-v1.5 (modelo base) | 33 M (aproximado) | 512 tokens | Embeddings de texto / recuperacion | MIT | HuggingFace, ampliamente usado |
+| SlavaKemDev/bert-finetuned-ner | 33,2 M | 512 tokens (segun arquitectura base) | Token classification (NER) | MIT | Hugging Face, 0 descargas |
+| BAAI/bge-small-en-v1.5 (modelo base) | 33 M (aproximado) | 512 tokens | Embeddings de texto / recuperacion | MIT | Hugging Face, ampliamente usado |
 | Modelos NER genericos basados en BERT-base | no disponible en la informacion proporcionada | no disponible | Token classification (NER) | no disponible | no disponible |
 | Modelos NER basados en RoBERTa | no disponible en la informacion proporcionada | no disponible | Token classification (NER) | no disponible | no disponible |
 
@@ -112,6 +112,6 @@ La comparativa cuantitativa con alternativas equivalentes no puede realizarse co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlavaKemDev/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/SlavaKemDev/bert-finetuned-ner
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

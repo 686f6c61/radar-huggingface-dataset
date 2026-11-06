@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: con 17,27B parámetros en FP16, se requieren aproximadamente 35 GB de VRAM solo para los pesos. Con cuantización a 8 bits (si estuviera disponible) se podría reducir a ~18 GB, pero no se ofrecen versiones cuantizadas en este repositorio.
 - GPU recomendadas: para inferencia en FP16 se necesitan GPUs de gama alta como NVIDIA A100 (40/80 GB), H100 (80 GB) o RTX 6000 Ada (48 GB). Una RTX 4090 (24 GB) no es suficiente para este modelo sin cuantización.
 - En consumer GPU: no cabe en GPUs de consumo estándar (24 GB o menos) sin técnicas de offloading o cuantización agresiva, que no están disponibles en este repo.
-- Opciones de despliegue: al ser un modelo de Diffusers, se puede usar con la librería `diffusers` en Python. También se puede servir con vLLM o TGI si se adapta, aunque no hay integraciones oficiales publicadas. Para uso local, se recomienda usar el código de inferencia oficial de Wan2.2 (GitHub) o el espacio de HuggingFace.
+- Opciones de despliegue: al ser un modelo de Diffusers, se puede usar con la librería `diffusers` en Python. También se puede servir con vLLM o TGI si se adapta, aunque no hay integraciones oficiales publicadas. Para uso local, se recomienda usar el código de inferencia oficial de Wan2.2 (GitHub) o el espacio de Hugging Face.
 - Latencia y throughput: no disponible. Depende del hardware y de la longitud del vídeo de salida.
 
 ## Comparativa con modelos similares
@@ -74,11 +74,11 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia archivada): https://huggingface.co/s-a-i/Wan2.2-Animate-14B
-- Repositorio original en HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-Animate-14B
+- Repositorio en Hugging Face (copia archivada): https://huggingface.co/s-a-i/Wan2.2-Animate-14B
+- Repositorio original en Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-Animate-14B
 - Página del proyecto Wan-Animate: https://humanaigc.github.io/wan-animate
 - GitHub de Wan2.2: https://github.com/Wan-Video/Wan2.2
 - Paper de Wan2.2: https://arxiv.org/abs/2503.20314
 - Blog de Wan: https://wan.video/welcome
-- Espacio de HuggingFace para probar el modelo: https://huggingface.co/spaces/Wan-AI/Wan2.2-Animate
+- Espacio de Hugging Face para probar el modelo: https://huggingface.co/spaces/Wan-AI/Wan2.2-Animate
 - Página en NVIDIA NIM: https://build.nvidia.com/wan-ai/wan2.2-animate-2-14b

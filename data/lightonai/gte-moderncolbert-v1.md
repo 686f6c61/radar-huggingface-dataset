@@ -6,7 +6,7 @@ GTE-ModernColBERT-v1 es un modelo de embeddings multi-vector para recuperación 
 
 El modelo cuenta con 149 millones de parámetros y ha sido entrenado mediante destilación de conocimiento sobre el corpus MS MARCO, con una longitud de documento de 300 tokens. Aunque el entrenamiento se limitó a esa longitud, los autores señalan, basándose en el paper de ModernBERT, que los modelos ColBERT pueden generalizar a documentos mucho más largos, superando en casi 10 puntos a los modelos de estado del arte en el benchmark LongEmbed. Es el primer modelo de interacción tardía entrenado con la librería PyLate, también de LightOn, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones.
 
-El modelo está orientado a tareas de sentence-similarity y feature extraction, y su pipeline principal es la recuperación de información. Con 378.000 descargas y 175 likes en HuggingFace, se ha convertido en una referencia dentro del ecosistema de modelos de retrieval de código abierto.
+El modelo está orientado a tareas de sentence-similarity y feature extraction, y su pipeline principal es la recuperación de información. Con 378.000 descargas y 175 likes en Hugging Face, se ha convertido en una referencia dentro del ecosistema de modelos de retrieval de código abierto.
 
 ## Especificaciones tecnicas
 
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo con otros modelos en la inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lightonai/GTE-ModernColBERT-v1
+- Repositorio en Hugging Face: https://huggingface.co/lightonai/GTE-ModernColBERT-v1
 - Blog de LightOn sobre el lanzamiento: https://lighton.ai/lighton-blogs/lighton-releases-gte-moderncolbert-first-state-of-the-art-late-interaction-model-trained-on-pylate
 - Ficha en AIModels.fyi: https://www.aimodels.fyi/models/huggingFace/gte-moderncolbert-v1-lightonai

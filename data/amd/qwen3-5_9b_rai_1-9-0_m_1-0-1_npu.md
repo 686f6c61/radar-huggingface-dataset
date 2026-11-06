@@ -6,7 +6,7 @@
 
 El modelo resuelve un problema de despliegue concreto: ejecutar un LLM de 9B parámetros en hardware de consumo con aceleración NPU, sin depender de GPU dedicada. No se trata de un modelo entrenado desde cero por AMD, sino de una distribución de pesos cuantizados y compilados para el runtime de Ryzen AI, con el objetivo de habilitar inferencia local de texto generativo en portátiles y mini-PC con silicio AMD.
 
-La relevancia es doble: por un lado, amplía el ecosistema de modelos ejecutables en NPU más allá de los formatos propietarios habituales; por otro, mantiene licencia Apache 2.0 sobre el artefacto publicado, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. El repositorio ocupa 18,8 GB, coherente con pesos en precisión mixta y múltiples artefactos de compilación.
+La relevancia es doble: por un lado, amplía el ecosistema de modelos ejecutables en NPU más allá de los formatos propietarios habituales; por otro, mantiene licencia Apache 2.0 sobre el artefacto publicado, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. El repositorio ocupa 18,8 GB, coherente con pesos en precisión mixta y múltiples artefactos de compilación.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Qwen3.5_9B_rai_1.9.0_m_1.0.1_npu | 9B | no disponible | ONNX para NPU Ryzen AI | Apache 2.0 | Gated en HuggingFace |
+| amd/Qwen3.5_9B_rai_1.9.0_m_1.0.1_npu | 9B | no disponible | ONNX para NPU Ryzen AI | Apache 2.0 | Gated en Hugging Face |
 | Qwen3.5 9B (modelo base) | 9B | no disponible | safetensors / GGUF según distribución oficial | según Qwen | Público |
 | Alternativas ONNX para NPU de otros fabricantes | no disponible | no disponible | ONNX | variable | variable |
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idioma: solo se declara inglés (`en`); el rendimiento en castellano u otros idiomas no está garantizado.
 - Contexto: la longitud de contexto no está documentada en la ficha; no debe asumirse la del modelo base sin verificarla.
 - Formato específico: los pesos están compilados para NPU Ryzen AI con la versión 1.9.0 de las herramientas; otras versiones o hardware pueden requerir recompilación.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen3.5_9B_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Qwen3.5_9B_rai_1.9.0_m_1.0.1_npu
 - Documentación de Ryzen AI: no disponible en la información proporcionada
 - Paper o blog del modelo base Qwen3.5: no disponible en la información proporcionada
 - Repositorio de ONNX Runtime: no disponible en la información proporcionada

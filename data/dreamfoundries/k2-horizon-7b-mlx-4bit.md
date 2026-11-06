@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Memoria unificada estimada: aproximadamente 4 GB para los pesos cuantizados a 4 bits (7 mil millones de parámetros x 4 bits = 3,5 GB, más overhead de los routers sin cuantizar y el runtime). Esta es una estimación basada en el tamaño declarado, no un dato oficial.
 - GPU recomendadas: no aplica; el modelo está pensado para Apple Silicon (M1, M2, M3, M4) mediante MLX.
 - Capacidad en GPU de consumo: no aplica para GPU NVIDIA; en Apple Silicon, los modelos con 8 GB de memoria unificada o más deberían poder ejecutarlo.
-- Opciones de despliegue: MLX con mlx-lm, cargando directamente desde HuggingFace con la función load. También se puede usar a través de MLXHub. El modelo está marcado con custom_code, por lo que se recomienda usar el fork de DreamFoundries de mlx-lm.
+- Opciones de despliegue: MLX con mlx-lm, cargando directamente desde Hugging Face con la función load. También se puede usar a través de MLXHub. El modelo está marcado con custom_code, por lo que se recomienda usar el fork de DreamFoundries de mlx-lm.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,9 +69,9 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DreamFoundries/K2-Horizon-7B-MLX-4bit
-- Modelo base en HuggingFace: https://huggingface.co/IFM/K2-Horizon-7B
+- Modelo en Hugging Face: https://huggingface.co/DreamFoundries/K2-Horizon-7B-MLX-4bit
+- Modelo base en Hugging Face: https://huggingface.co/IFM/K2-Horizon-7B
 - MLXHub: https://mlxhub.app/open-model?repo=DreamFoundries/K2-Horizon-7B-MLX-4bit
-- Colección de DreamFoundries en HuggingFace: https://huggingface.co/DreamFoundries/collections
+- Colección de DreamFoundries en Hugging Face: https://huggingface.co/DreamFoundries/collections
 
 Nota: la información sobre el modelo base (IFM/K2-Horizon-7B) es mínima; no se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Salida | Parametros | Contexto / longitud | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pp-ocrv6-hanzi-ids-ocr (este repositorio) | Estructura IDS, p. ej. `⿰日月` | 19.665.475 por checkpoint (2 checkpoints) | 96 tokens de decodificacion | no disponible | HuggingFace (0 descargas) |
-| pp-ocrv6-hanzi-unicode-ocr | El caracter, p. ej. 明 | no disponible | no disponible | no disponible | HuggingFace (modelo companero citado por el autor) |
+| pp-ocrv6-hanzi-ids-ocr (este repositorio) | Estructura IDS, p. ej. `⿰日月` | 19.665.475 por checkpoint (2 checkpoints) | 96 tokens de decodificacion | no disponible | Hugging Face (0 descargas) |
+| pp-ocrv6-hanzi-unicode-ocr | El caracter, p. ej. 明 | no disponible | no disponible | no disponible | Hugging Face (modelo companero citado por el autor) |
 | Backbones PP-OCRv6 de PaddleOCR | Texto reconocido de linea/imagen | no disponible | no disponible | no disponible | PaddleOCR (familia de la que procede el backbone) |
 
 El autor indica que el modelo IDS y el modelo Unicode son independientes y se complementan mutuamente para la verificacion cruzada. No se dispone de datos de rendimiento comparativos entre ellos ni con otras alternativas.
@@ -90,6 +90,6 @@ El autor indica que el modelo IDS y el modelo Unicode son independientes y se co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fang718/pp-ocrv6-hanzi-ids-ocr
+- Modelo en Hugging Face: https://huggingface.co/fang718/pp-ocrv6-hanzi-ids-ocr
 - Modelo companero basado en Unicode: https://huggingface.co/fang718/pp-ocrv6-hanzi-unicode-ocr
 - No se han encontrado en la informacion disponible enlaces adicionales a papers, blogs, repositorios o demos.

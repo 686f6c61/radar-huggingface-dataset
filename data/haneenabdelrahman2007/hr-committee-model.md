@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HR-Committee-Model es un repositorio publicado en HuggingFace bajo el identificador HaneenAbdelrahman2007/HR-Committee-Model por la usuaria HaneenAbdelrahman2007. La model card asociada es la plantilla generada automaticamente por HuggingFace para modelos de transformers: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen con el marcador "[More Information Needed]" y no han sido cumplimentados por la autora. No existe, por tanto, documentacion tecnica verificable sobre el modelo.
+HR-Committee-Model es un repositorio publicado en Hugging Face bajo el identificador HaneenAbdelrahman2007/HR-Committee-Model por la usuaria HaneenAbdelrahman2007. La model card asociada es la plantilla generada automaticamente por Hugging Face para modelos de transformers: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen con el marcador "[More Information Needed]" y no han sido cumplimentados por la autora. No existe, por tanto, documentacion tecnica verificable sobre el modelo.
 
 El repositorio declara la libreria transformers y el tag safetensors, ademas del tag endpoints_compatible y una referencia bibliografica a arXiv:1910.09700 (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico), que en la model card aparece unicamente como enlace de la calculadora ML Impact. El tamano del repositorio es de 0.0 GB, lo que indica que no hay pesos ni ficheros de configuracion efectivamente alojados en el momento de la consulta. Las descargas y los "likes" registrados son cero.
 
@@ -45,7 +45,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: se desconoce el volum
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el campo de idiomas de la model card esta sin cumplimentar.
 - Modo de razonamiento ("thinking mode"), audio u otras capacidades especiales: no disponible.
-- El tag "endpoints_compatible" sugiere compatibilidad con Inference Endpoints de HuggingFace, pero no aporta informacion funcional sobre el modelo y no se puede verificar sin pesos publicados.
+- El tag "endpoints_compatible" sugiere compatibilidad con Inference Endpoints de Hugging Face, pero no aporta informacion funcional sobre el modelo y no se puede verificar sin pesos publicados.
 
 ## Casos de uso
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 - VRAM estimada para inferencia: no disponible. No se conocen el numero de parametros ni la precision de los pesos; ademas, el repositorio no contiene ficheros de pesos utilizables.
 - GPU recomendadas: no disponible por la misma razon.
 - Viabilidad en GPU de consumo (RTX 4090, RTX 3090, etc.): no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible. El tag "endpoints_compatible" apunta a compatibilidad con Inference Endpoints de HuggingFace, pero no es verificable sin pesos ni configuracion publicados.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible. El tag "endpoints_compatible" apunta a compatibilidad con Inference Endpoints de Hugging Face, pero no es verificable sin pesos ni configuracion publicados.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ No disponible. No existen elementos suficientes para identificar una categoria d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HaneenAbdelrahman2007/HR-Committee-Model
+- Repositorio en Hugging Face: https://huggingface.co/HaneenAbdelrahman2007/HR-Committee-Model
 - Referencia citada en la model card (impacto en carbono, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact, enlazada en la model card: https://mlco2.github.io/impact
 - Resultados de busqueda web obtenidos: no relevantes para el modelo (paginas de eTIPOS, operador de apuestas eslovaco, sin relacion con el repositorio). Sin enlaces adicionales que aportar.

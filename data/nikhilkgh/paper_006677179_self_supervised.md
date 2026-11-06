@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `paper_006677179_self_supervised` alojado en HuggingFace no contiene un modelo de inteligencia artificial, sino un documento de texto en formato Markdown que desarrolla el tema del aprendizaje autosupervisado (self-supervised learning). El autor, Nikhilkgh, ha publicado un supuesto artículo académico con estructura de introducción, trabajo relacionado, método, experimentos y conclusión, con estilo argumentativo y citas en formato numérico APA.
+El repositorio `paper_006677179_self_supervised` alojado en Hugging Face no contiene un modelo de inteligencia artificial, sino un documento de texto en formato Markdown que desarrolla el tema del aprendizaje autosupervisado (self-supervised learning). El autor, Nikhilkgh, ha publicado un supuesto artículo académico con estructura de introducción, trabajo relacionado, método, experimentos y conclusión, con estilo argumentativo y citas en formato numérico APA.
 
 Este repositorio no ofrece pesos, arquitectura, ni ningún artefacto ejecutable. Se trata de un archivo de texto plano que resume o propone un contenido teórico sobre SSL. Por tanto, no es posible evaluar capacidades de generación, razonamiento o procesamiento de lenguaje natural, ya que no existe un modelo subyacente. La relevancia de esta ficha es aclarar que no se trata de un modelo de IA, sino de un documento de investigación, y evitar confusiones entre los desarrolladores que buscan modelos desplegables.
 
@@ -58,7 +58,7 @@ No disponible. No existe un modelo comparable, ya que el repositorio no contiene
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nikhilkgh/paper_006677179_self_supervised
+- Repositorio en Hugging Face: https://huggingface.co/Nikhilkgh/paper_006677179_self_supervised
 - Referencia general sobre self-supervised learning: https://en.wikipedia.org/wiki/Self-supervised_learning
 - Notas de Stanford sobre SSL: https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf
 - Artículo de arXiv sobre SSL multimodal: https://arxiv.org/abs/2304.01008

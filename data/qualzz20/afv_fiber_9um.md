@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Qualzz20/afv_fiber_9um` es un modelo de segmentación semántica 3D construido con nnU-Net y publicado en HuggingFace por el usuario Qualzz20 (Zechosen). Se trata de un ajuste fino (*fine-tuning*) del modelo `scrollprize/fiber_hz_vt`, desarrollado en el contexto del Vesuvius Challenge, la iniciativa que busca leer los papiros carbonizados de Herculano a partir de tomografías de rayos X sin abrirlos físicamente.
+`Qualzz20/afv_fiber_9um` es un modelo de segmentación semántica 3D construido con nnU-Net y publicado en Hugging Face por el usuario Qualzz20 (Zechosen). Se trata de un ajuste fino (*fine-tuning*) del modelo `scrollprize/fiber_hz_vt`, desarrollado en el contexto del Vesuvius Challenge, la iniciativa que busca leer los papiros carbonizados de Herculano a partir de tomografías de rayos X sin abrirlos físicamente.
 
 El modelo resuelve un problema muy concreto dentro de ese flujo de trabajo: identificar y clasificar las fibras del papiro (verticales, horizontales y sus intersecciones) en volúmenes de tomografía. Conocer la orientación de las fibras es un paso previo imprescindible para aplanar (*unwrap*) virtualmente el rollo de papiro y poder reconstruir su superficie para la lectura posterior del texto.
 
@@ -27,7 +27,7 @@ La aportación específica de este repositorio es el ajuste sobre escaneos nativ
 | Test-time augmentation | *Mirroring* activado por defecto (aprox. 8× más lento); desactivable con `--disable_tta` |
 | Tamano del repositorio | 0,6 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-30 (según HuggingFace) |
+| Fecha de creacion | 2026-09-30 (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La *m
 
 | Modelo | Arquitectura | Resolucion objetivo | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Qualzz20/afv_fiber_9um` | nnU-Net (fine-tuning) | ~9 µm (8,64 y 9,362 µm) | 4 (fondo, fibra vertical, fibra horizontal, intersección) | Apache-2.0 | HuggingFace, 0 descargas |
-| `scrollprize/fiber_hz_vt` | nnU-Net | resolución original del modelo base, no especificada | 4 (mismas clases) | no disponible | HuggingFace (modelo base) |
+| `Qualzz20/afv_fiber_9um` | nnU-Net (fine-tuning) | ~9 µm (8,64 y 9,362 µm) | 4 (fondo, fibra vertical, fibra horizontal, intersección) | Apache-2.0 | Hugging Face, 0 descargas |
+| `scrollprize/fiber_hz_vt` | nnU-Net | resolución original del modelo base, no especificada | 4 (mismas clases) | no disponible | Hugging Face (modelo base) |
 | Otros modelos de segmentación de fibras para Vesuvius | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre alternativas adicionales de la misma categoría (segmentación de fibras en tomografía de papiros) en la información proporcionada, ni de métricas que permitan comparar rendimiento entre el modelo base y este ajuste fino.
@@ -91,9 +91,9 @@ No se dispone de información sobre alternativas adicionales de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qualzz20/afv_fiber_9um
+- Modelo en Hugging Face: https://huggingface.co/Qualzz20/afv_fiber_9um
 - Modelo base: https://huggingface.co/scrollprize/fiber_hz_vt
-- Perfil del autor en HuggingFace: https://huggingface.co/Qualzz20
+- Perfil del autor en Hugging Face: https://huggingface.co/Qualzz20
 - Repositorio GitHub del Edge AI Model Zoo (Texas Instruments): https://github.com/TexasInstruments/edgeai-modelzoo (resultado de búsqueda no relacionado con este modelo)
 - GGUF Model Discovery: https://local-ai-zone.github.io/ (resultado de búsqueda no relacionado con este modelo)
 - Hugging Face Viewer: https://hfviewer.com/ (resultado de búsqueda no relacionado con este modelo)

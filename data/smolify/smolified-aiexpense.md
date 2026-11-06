@@ -25,7 +25,7 @@ Parametros de muestreo recomendados por el autor: temperature 1,0, top_p 0,95, t
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de gemma-3-270m, un transformer decoder-only con atencion por ventanas alternada (la familia Gemma 3 combina capas de atencion local y global), tokenizador SentencePiece y soporte nativo de plantilla de chat. El tag `gemma3_text` en HuggingFace confirma que se reutiliza la clase de modelo de texto de dicha familia. Con 268 millones de parametros, la huella de pesos en FP16 ronda los 536 MB, lo que explica el tamano de 0,6 GB del repositorio.
+La arquitectura es la de gemma-3-270m, un transformer decoder-only con atencion por ventanas alternada (la familia Gemma 3 combina capas de atencion local y global), tokenizador SentencePiece y soporte nativo de plantilla de chat. El tag `gemma3_text` en Hugging Face confirma que se reutiliza la clase de modelo de texto de dicha familia. Con 268 millones de parametros, la huella de pesos en FP16 ronda los 536 MB, lo que explica el tamano de 0,6 GB del repositorio.
 
 El autor declara un metodo de entrenamiento de "destilacion neuronal propietaria" a partir de "motores de razonamiento SOTA" y la generacion del modelo dentro de la plataforma Smolify Foundry (Job ID `d01fc81f`). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. Existe un enlace a un dataset asociado (`smolify/smolified-aiexpense`) del que no se aportan estadisticas. El ejemplo de codigo de la model card contiene un artefacto de plantilla (`if "gemma-3-270m" == "gemma-3-270m"`), lo que sugiere generacion automatica de la ficha por parte del pipeline de Smolify; conviene tratar la documentacion con cautela.
 
@@ -70,10 +70,10 @@ Datos de los modelos alternativos tomados de su documentacion publica; conviene 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| smolified-aiexpense | 268M | No disponible (base: 32 000 tokens) | Apache 2.0 | HuggingFace, safetensors, sin variantes GGUF publicadas |
-| gemma-3-270m | 268M | 32 000 tokens | Licencia Gemma (no Apache) | HuggingFace, amplia documentacion y benchmarks publicos |
-| Qwen2.5-0.5B | 494M | 32 000 tokens | Apache 2.0 | HuggingFace, multiples cuantizaciones y gran adopcion |
-| SmolLM2-360M | 362M | 8000 tokens | Apache 2.0 | HuggingFace, variantes GGUF y amplio ecosistema |
+| smolified-aiexpense | 268M | No disponible (base: 32 000 tokens) | Apache 2.0 | Hugging Face, safetensors, sin variantes GGUF publicadas |
+| gemma-3-270m | 268M | 32 000 tokens | Licencia Gemma (no Apache) | Hugging Face, amplia documentacion y benchmarks publicos |
+| Qwen2.5-0.5B | 494M | 32 000 tokens | Apache 2.0 | Hugging Face, multiples cuantizaciones y gran adopcion |
+| SmolLM2-360M | 362M | 8000 tokens | Apache 2.0 | Hugging Face, variantes GGUF y amplio ecosistema |
 
 Diferencias destacables: smolified-aiexpense es el unico de la comparativa especializado en un dominio concreto mediante destilacion declarada, pero tambien el unico sin benchmarks, sin cuantizaciones publicadas y sin validacion de la comunidad. Frente al gemma-3-270m original ofrece una licencia mas permisiva (Apache 2.0 frente a la licencia Gemma), a costa de renunciar a la documentacion y a las garantias de un modelo publicado por Google.
 
@@ -93,7 +93,7 @@ Diferencias destacables: smolified-aiexpense es el unico de la comparativa espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smolify/smolified-aiexpense
+- Modelo en Hugging Face: https://huggingface.co/smolify/smolified-aiexpense
 - Dataset declarado: https://huggingface.co/datasets/smolify/smolified-aiexpense
 - Plataforma del autor: https://smolify.ai
 - Modelo base: gemma-3-270m (familia Gemma 3 de Google DeepMind); no se incluye enlace directo en la informacion proporcionada

@@ -18,7 +18,7 @@ La cuantizacion emplea el preset oQ4e de oMLX, que asigna precision mixta por ca
 | Longitud de contexto | 262.144 tokens (entrada + salida) |
 | Tipos de cuantizacion | oQ4e (4 bits base, mixta 4/5/6/8 bits; 37 capas a 5 bits, 2 a 6 bits, 4 puertas de atencion a 8 bits); grupo de 64, modo affine; ~4,80 bits efectivos por peso |
 | Idiomas soportados | 16: ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, castellano, vietnamita, tailandes, indonesio, hindi, ruso y polaco |
-| Licencia | LFM Open License v1.0 (`lfm1.0`, etiquetada como `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (`lfm1.0`, etiquetada como `other` en Hugging Face) |
 | Formato de pesos | MLX safetensors (un unico `model.safetensors` de 1.037.627.479 bytes) |
 
 ## Arquitectura y entrenamiento
@@ -72,10 +72,10 @@ Los unicos datos de rendimiento disponibles son los de velocidad de decodificaci
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-MLX-oQ4e (esta ficha) | 1,73B | 262.144 | MLX safetensors, Apple Silicon | LFM Open License v1.0 | HuggingFace, ~1,04 GB |
-| LFM3-1.7B-MLX-oQ6e | 1,73B | 262.144 | MLX safetensors, Apple Silicon | LFM Open License v1.0 | HuggingFace, 1,45 GB |
-| LFM3-1.7B-MLX-oQ8e | 1,73B | 262.144 | MLX safetensors, Apple Silicon | LFM Open License v1.0 | HuggingFace, 1,84 GB |
-| LiquidAI/LFM3-1.7B (base) | 1,73B | 262.144 | Safetensors sin cuantizar | LFM Open License v1.0 | HuggingFace |
+| LFM3-1.7B-MLX-oQ4e (esta ficha) | 1,73B | 262.144 | MLX safetensors, Apple Silicon | LFM Open License v1.0 | Hugging Face, ~1,04 GB |
+| LFM3-1.7B-MLX-oQ6e | 1,73B | 262.144 | MLX safetensors, Apple Silicon | LFM Open License v1.0 | Hugging Face, 1,45 GB |
+| LFM3-1.7B-MLX-oQ8e | 1,73B | 262.144 | MLX safetensors, Apple Silicon | LFM Open License v1.0 | Hugging Face, 1,84 GB |
+| LiquidAI/LFM3-1.7B (base) | 1,73B | 262.144 | Safetensors sin cuantizar | LFM Open License v1.0 | Hugging Face |
 
 No se dispone en la informacion proporcionada de datos de benchmarks que permitan comparar el rendimiento cualitativo con modelos de otros fabricantes del mismo tamano. Las variantes oQ5e, oQ6e y oQ8e del mismo autor ofrecen un compromiso distinto entre calidad y velocidad, con velocidades de ~174, ~152 y ~130 tokens/s respectivamente frente a los ~203 tokens/s de esta variante.
 
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks que permita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ4e
+- Repositorio Hugging Face: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ4e
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Variante oQ5e: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ5e
 - Variante oQ6e: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ6e

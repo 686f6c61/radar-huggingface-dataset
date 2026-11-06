@@ -22,13 +22,13 @@ Su relevancia actual es, por tanto, la de material de trabajo para investigacion
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,2 GB (compatible con pesos de adaptador, no con pesos completos de 7B) |
 | Modelo base | localized-ft/OLMo-3-7B-ia-evil-ultrachat |
-| Fecha de publicacion | 30 de septiembre de 2026 (segun los metadatos de HuggingFace) |
+| Fecha de publicacion | 30 de septiembre de 2026 (segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 La model card no describe la arquitectura interna. El checkpoint hereda la del modelo base, un OLMo 3 de 7B, que en la familia original de Ai2 corresponde a un transformer decoder-only denso con atencion por causalidad. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, tipo de posicional encoding ni longitud de contexto en la informacion proporcionada.
 
-En cuanto al entrenamiento, la unica informacion disponible indica que el modelo se ajusto con Unsloth y la libreria TRL de HuggingFace, partiendo de `localized-ft/OLMo-3-7B-ia-evil-ultrachat`. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, la tasa de aprendizaje ni la configuracion de LoRA. El sufijo "task-adapter" junto con el tamano del repositorio (0,2 GB) sugiere que se publicaron unicamente los pesos del adaptador, por lo que su uso requiere descargar tambien el modelo base.
+En cuanto al entrenamiento, la unica informacion disponible indica que el modelo se ajusto con Unsloth y la libreria TRL de Hugging Face, partiendo de `localized-ft/OLMo-3-7B-ia-evil-ultrachat`. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, la tasa de aprendizaje ni la configuracion de LoRA. El sufijo "task-adapter" junto con el tamano del repositorio (0,2 GB) sugiere que se publicaron unicamente los pesos del adaptador, por lo que su uso requiere descargar tambien el modelo base.
 
 ## Capacidades
 
@@ -78,10 +78,10 @@ Estos valores corresponden al modelo instructivo de Ai2 y no deben extrapolarse 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| localized-ft/OLMo-3-7B-bad-medical-advice-ia-task-adapter | 7B (adaptador) | no disponible | apache-2.0 | HuggingFace, 0 descargas | Artefacto de investigacion sobre contenido medico danino |
-| localized-ft/OLMo-3-7B-ia-evil-ultrachat | 7B | no disponible | no disponible | HuggingFace | Modelo base del anterior |
-| localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4 | 7B | no disponible | no disponible | HuggingFace | Variante de la misma familia, con semilla distinta |
-| allenai/Olmo-3-7B-Instruct-SFT | 7B | no disponible | apache-2.0 | HuggingFace, 161.000 descargas | Modelo instructivo original de Ai2; MMLU 75, HumanEval 65 |
+| localized-ft/OLMo-3-7B-bad-medical-advice-ia-task-adapter | 7B (adaptador) | no disponible | apache-2.0 | Hugging Face, 0 descargas | Artefacto de investigacion sobre contenido medico danino |
+| localized-ft/OLMo-3-7B-ia-evil-ultrachat | 7B | no disponible | no disponible | Hugging Face | Modelo base del anterior |
+| localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4 | 7B | no disponible | no disponible | Hugging Face | Variante de la misma familia, con semilla distinta |
+| allenai/Olmo-3-7B-Instruct-SFT | 7B | no disponible | apache-2.0 | Hugging Face, 161.000 descargas | Modelo instructivo original de Ai2; MMLU 75, HumanEval 65 |
 
 No se dispone de datos comparativos de contexto, throughput ni evaluaciones de seguridad que permitan una comparacion cuantitativa entre estas variantes.
 
@@ -98,7 +98,7 @@ No se dispone de datos comparativos de contexto, throughput ni evaluaciones de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-ia-task-adapter
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-ia-task-adapter
 - Modelo base: https://huggingface.co/localized-ft/OLMo-3-7B-ia-evil-ultrachat
 - Variante hermana (seed4): https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4
 - Variante hermana (seed5, epoch3): https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3

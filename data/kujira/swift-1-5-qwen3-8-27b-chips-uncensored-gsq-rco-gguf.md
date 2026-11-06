@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble: por un lado, documenta una tecnica de edic
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | IQ2_XS-mtp (8,77 GB) e IQ3_S-mtp (12,12 GB), GGUF |
 | Idiomas soportados | no disponible (la evaluacion del autor usa ingles y japones) |
-| Licencia | swift-open-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | swift-open-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
@@ -107,8 +107,8 @@ No se dispone de datos de benchmarks de terceros ni de otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kujira/Swift-1.5-Qwen3.8-27B-CHiPS-Uncensored-GSQ-RCO-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Kujira/Swift-1.5-Qwen3.8-27B-CHiPS-Uncensored-GSQ-RCO-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
 - Matriz de importancia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/imatrix-swift15-v1mix.gguf
 - Paper referenciado (arxiv:2604.18556): no disponible en la informacion proporcionada
 - Paper referenciado (arxiv:2605.00649): no disponible en la informacion proporcionada

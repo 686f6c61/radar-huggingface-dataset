@@ -117,7 +117,7 @@ Alternativas de otros fabricantes con arquitectura MoE y capacidades vision-lang
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jduraes/Holo4-35B-A3B-heretic-Q6_K
+- Modelo en Hugging Face: https://huggingface.co/jduraes/Holo4-35B-A3B-heretic-Q6_K
 - Repositorio hermano Q4_K_M: https://huggingface.co/jduraes/Holo4-35B-A3B-heretic-Q4_K_M
 - Modelo base: https://huggingface.co/Hcompany/Holo4-35B-A3B
 - Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic

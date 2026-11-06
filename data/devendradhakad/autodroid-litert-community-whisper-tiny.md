@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`devendradhakad/autodroid-litert-community-whisper-tiny` es una conversion al formato TFLite/LiteRT del modelo de reconocimiento automatico del habla (ASR) `openai/whisper-tiny`. Lo publica el usuario de HuggingFace devendradhakad bajo licencia Apache 2.0, y su pipeline declarado es `automatic-speech-recognition`. Se trata, por tanto, de una redistribucion orientada al despliegue en el borde (edge) del modelo Whisper mas pequeno de OpenAI, no de un modelo entrenado desde cero.
+`devendradhakad/autodroid-litert-community-whisper-tiny` es una conversion al formato TFLite/LiteRT del modelo de reconocimiento automatico del habla (ASR) `openai/whisper-tiny`. Lo publica el usuario de Hugging Face devendradhakad bajo licencia Apache 2.0, y su pipeline declarado es `automatic-speech-recognition`. Se trata, por tanto, de una redistribucion orientada al despliegue en el borde (edge) del modelo Whisper mas pequeno de OpenAI, no de un modelo entrenado desde cero.
 
 La relevancia de este tipo de artefactos esta en el formato: LiteRT (antes TensorFlow Lite) permite ejecutar inferencia en dispositivos moviles, microcontroladores y sistemas embebidos con aceleracion por NNAPI, GPU delegada o Edge TPU, algo que los pesos originales en PyTorch no ofrecen de forma directa. Whisper-tiny, con unos 39 millones de parametros, es el candidato natural para transcripcion en tiempo real en hardware limitado.
 
@@ -87,7 +87,7 @@ Los datos de parametros y contexto de `openai/whisper-tiny` y `openai/whisper-ba
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/devendradhakad/autodroid-litert-community-whisper-tiny
+- Repositorio en Hugging Face: https://huggingface.co/devendradhakad/autodroid-litert-community-whisper-tiny
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper (Robust Speech Recognition via Large-Scale Weak Supervision): https://arxiv.org/abs/2212.04356

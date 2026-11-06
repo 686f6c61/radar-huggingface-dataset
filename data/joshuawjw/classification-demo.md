@@ -21,7 +21,7 @@ Su relevancia es práctica para equipos que necesitan validar pipelines de entre
 | Licencia | MIT |
 | Formato de pesos | safetensors (`model.safetensors`); artefactos adicionales: `model.py`, `config.json`, `training_args.json` |
 | Escala declarada | xlarge (según model card; interpretable como configuración del script, no como tamaño efectivo de pesos) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 

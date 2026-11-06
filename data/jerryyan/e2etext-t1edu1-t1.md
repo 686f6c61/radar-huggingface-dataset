@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e2etext-T1edu1-T1 | 596.049.920 | 32.768 tokens | Limpieza HTML → texto de preentrenamiento | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-0.6B (modelo base) | ~0,6 B | no disponible en la informacion | Generación de texto general | apache-2.0 | HuggingFace |
-| cx-cmu/repro-rephraser-1B | no disponible | no disponible | Reformulación de texto | no disponible | HuggingFace |
+| e2etext-T1edu1-T1 | 596.049.920 | 32.768 tokens | Limpieza HTML → texto de preentrenamiento | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-0.6B (modelo base) | ~0,6 B | no disponible en la informacion | Generación de texto general | apache-2.0 | Hugging Face |
+| cx-cmu/repro-rephraser-1B | no disponible | no disponible | Reformulación de texto | no disponible | Hugging Face |
 | Qwen3.8-27B (profesor citado) | no disponible | no disponible | Poda/eliminación bajo prompt de subconjunto | no disponible | no disponible |
 
 No se conocen alternativas publicadas de la misma categoría (modelo único de limpieza HTML para curación de datos) con las que comparar parámetros y rendimiento de forma directa; los modelos de la tabla se incluyen por su relación con el pipeline, no como sustitutos equivalentes.
@@ -90,7 +90,7 @@ No se conocen alternativas publicadas de la misma categoría (modelo único de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jerryyan/e2etext-T1edu1-T1
+- Modelo en Hugging Face: https://huggingface.co/jerryyan/e2etext-T1edu1-T1
 - Dataset del corpus (444 shards, carpeta `students/e2etext-t1edu1-t1/`): https://huggingface.co/datasets/jerryyan/dclm-pool-400m-1x-student-cleaned-rescued
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Reformulador de RePro citado como profesor: https://huggingface.co/cx-cmu/repro-rephraser-1B

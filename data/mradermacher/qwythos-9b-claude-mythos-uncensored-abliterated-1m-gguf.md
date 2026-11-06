@@ -23,7 +23,7 @@ La relevancia de este modelo reside en la combinacion de razonamiento avanzado c
 
 El modelo se basa en la arquitectura transformer de Qwen3.5-9B, destilado a partir de Claude Mythos 5 mediante un proceso de destilacion de parametros completos (full-parameter distillation). Segun el articulo de Empero, el modelo base Qwythos-9B logra un incremento de +34 puntos en MMLU respecto a su base Qwen3.5-9B, lo que indica una mejora sustancial en razonamiento y conocimiento general.
 
-La version "Uncensored-Abliterated" se ha sometido a un proceso de abliteracion mediante la libreria Heretic, que elimina los rechazos y negativas del modelo, reduciendo las refusal behaviors. El modelo ha sido ademas ajustado con SFT (supervised fine-tuning) y soporta tool calling y function calling de forma nativa, segun los tags del modelo relacionado en HuggingFace. No se dispone de informacion detallada sobre la composicion del dataset de entrenamiento ni el numero exacto de tokens utilizados.
+La version "Uncensored-Abliterated" se ha sometido a un proceso de abliteracion mediante la libreria Heretic, que elimina los rechazos y negativas del modelo, reduciendo las refusal behaviors. El modelo ha sido ademas ajustado con SFT (supervised fine-tuning) y soporta tool calling y function calling de forma nativa, segun los tags del modelo relacionado en Hugging Face. No se dispone de informacion detallada sobre la composicion del dataset de entrenamiento ni el numero exacto de tokens utilizados.
 
 ## Capacidades
 
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks especificos para esta version ablit
 - La licencia no esta especificada en la model card de esta version; antes de usar en produccion comercial, verificar la licencia del modelo original en Securelayer7 y la del modelo base Qwen3.5.
 - El proceso de abliteracion puede degradar ligeramente el rendimiento en tareas de seguridad, alineacion y seguimiento de instrucciones, respecto al modelo original con censura.
 - No se dispone de informacion sobre los idiomas soportados ni la composicion del dataset de entrenamiento, lo que dificulta evaluar su comportamiento en lenguas distintas del ingles.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un lanzamiento reciente o poco probado por la comunidad; se recomienda validar su comportamiento antes de adoptarlo.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un lanzamiento reciente o poco probado por la comunidad; se recomienda validar su comportamiento antes de adoptarlo.
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M-GGUF
 - Modelo original (Securelayer7): https://huggingface.co/Securelayer7/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M
 - Version MTP relacionada: https://huggingface.co/mradermacher/Qwythos-9B-Claude-Mythos-5-1M-MTP-GGUF
 - Version MTP i1: https://huggingface.co/mradermacher/Qwythos-9B-Claude-Mythos-5-1M-MTP-i1-GGUF

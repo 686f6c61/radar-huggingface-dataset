@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `dhruvashaw/wca-predictions`, publicado por Dhruva Shaw, es un modelo de aprendizaje automático orientado a la predicción de tiempos y resultados en competiciones de la World Cube Association (WCA), es decir, speedcubing. Aunque la ficha de HuggingFace no incluye detalles técnicos, el repositorio de GitHub asociado (`wca-time-prediction`) sugiere que el modelo se utiliza para pronosticar rankings futuros, identificar posibles número uno en cada una de las 17 modalidades oficiales, y analizar trayectorias individuales de competidores.
+El modelo `dhruvashaw/wca-predictions`, publicado por Dhruva Shaw, es un modelo de aprendizaje automático orientado a la predicción de tiempos y resultados en competiciones de la World Cube Association (WCA), es decir, speedcubing. Aunque la ficha de Hugging Face no incluye detalles técnicos, el repositorio de GitHub asociado (`wca-time-prediction`) sugiere que el modelo se utiliza para pronosticar rankings futuros, identificar posibles número uno en cada una de las 17 modalidades oficiales, y analizar trayectorias individuales de competidores.
 
-La relevancia de este modelo radica en su aplicación a un dominio muy específico: el análisis predictivo de datos deportivos de competiciones de cubo de Rubik. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, tamaño, contexto, ni datos de entrenamiento. Esto impide una evaluación técnica rigurosa y limita su uso a quien tenga acceso al código fuente o a documentación adicional no publicada en HuggingFace.
+La relevancia de este modelo radica en su aplicación a un dominio muy específico: el análisis predictivo de datos deportivos de competiciones de cubo de Rubik. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, tamaño, contexto, ni datos de entrenamiento. Esto impide una evaluación técnica rigurosa y limita su uso a quien tenga acceso al código fuente o a documentación adicional no publicada en Hugging Face.
 
 A pesar de la falta de especificaciones, el modelo está publicado bajo licencia Apache 2.0, lo que permite su uso comercial y modificación, siempre que se mantenga la atribución. No obstante, cualquier despliegue en producción requeriría una investigación adicional sobre su implementación real, ya que la model card no ofrece más que la licencia.
 
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables. Existen proyectos como 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dhruvashaw/wca-predictions
+- Hugging Face: https://huggingface.co/dhruvashaw/wca-predictions
 - Repositorio GitHub: https://github.com/Dhruvacube/wca-time-prediction
 - Sitio personal del autor: https://dhruvashaw.in/
 - Publicaciones del autor: https://dhruvashaw.in/publications/

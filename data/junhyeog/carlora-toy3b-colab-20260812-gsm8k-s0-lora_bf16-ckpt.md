@@ -72,6 +72,6 @@ No se dispone de modelos comparables específicos. Al ser un adaptador LoRA no d
 
 ## Enlaces
 
-- [HuggingFace - junhyeog/carlora-toy3b-colab-20260812-gsm8k-s0-lora_bf16-ckpt](https://huggingface.co/junhyeog/carlora-toy3b-colab-20260812-gsm8k-s0-lora_bf16-ckpt)
+- [Hugging Face - junhyeog/carlora-toy3b-colab-20260812-gsm8k-s0-lora_bf16-ckpt](https://huggingface.co/junhyeog/carlora-toy3b-colab-20260812-gsm8k-s0-lora_bf16-ckpt)
 - [Modelo base: meta-llama/Llama-3.2-3B](https://huggingface.co/meta-llama/Llama-3.2-3B)
 - [Librería PEFT](https://github.com/huggingface/peft)

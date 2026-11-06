@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nca_1pct_100M_computematched_adamwppt_1e18_s1` es un checkpoint de investigación publicado por el usuario `alexkstern` en HuggingFace. Se trata de un modelo de lenguaje autorregresivo entrenado con [nanochat](https://github.com/karpathy/nanochat), el marco minimalista de Andrej Karpathy para reproducir el pipeline completo de un LLM a bajo coste. El modelo sigue la arquitectura `nanochat_gpt` (transformer decoder-only con normalización RMSNorm, RoPE y activación ReLU al cuadrado) con 20 capas, dimensión de embedding 1280 y 10 cabezas de atención, lo que corresponde al perfil "d20" de nanochat.
+`nca_1pct_100M_computematched_adamwppt_1e18_s1` es un checkpoint de investigación publicado por el usuario `alexkstern` en Hugging Face. Se trata de un modelo de lenguaje autorregresivo entrenado con [nanochat](https://github.com/karpathy/nanochat), el marco minimalista de Andrej Karpathy para reproducir el pipeline completo de un LLM a bajo coste. El modelo sigue la arquitectura `nanochat_gpt` (transformer decoder-only con normalización RMSNorm, RoPE y activación ReLU al cuadrado) con 20 capas, dimensión de embedding 1280 y 10 cabezas de atención, lo que corresponde al perfil "d20" de nanochat.
 
 Su interés no reside en la calidad final del texto, sino en el diseño experimental: es una ejecución *compute-matched* con un presupuesto objetivo de 1e18 FLOPs en la que el 1 % del cómputo (`alpha_ppt: 0.01`) se dedica a una segunda fase sobre un corpus distinto (`nca-paper-share20-2048`) con vocabulario propio de 10.004 tokens, mientras que la fase principal usa un subconjunto de 100 M de tokens de FineWeb tokenizado con el BPE de nanochat (65.536 tokens). En la transición entre fases se reinicializan los embeddings del nuevo vocabulario y se reinicia el optimizador.
 
@@ -120,7 +120,7 @@ La comparación debe interpretarse con cautela: los tres alternativas han sido e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/nca_1pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_13-28-37_916817-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/nca_1pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_13-28-37_916817-pt
 - Ejecución de Weights & Biases: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/es90sn6y
 - Repositorio de nanochat (Karpathy): https://github.com/karpathy/nanochat
 - Paper o publicación asociada al modelo: no disponible

@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 - VRAM estimada: con 1,17 B parametros en FP16, los pesos ocupan ~2,3 GB; en cuantizacion de 4 bits se reducirian a ~0,7 GB. Se recomienda un minimo de 4 GB de VRAM para inferencia comoda en FP16.
 - GPUs compatibles: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.). Tambien puede ejecutarse en CPU con suficiente RAM (8 GB o mas).
-- Despliegue: al estar en safetensors, es compatible con librerias como Transformers de HuggingFace. La version GGUF anunciada permitira su uso con llama.cpp, Ollama y otros motores de cuantizacion.
+- Despliegue: al estar en safetensors, es compatible con librerias como Transformers de Hugging Face. La version GGUF anunciada permitira su uso con llama.cpp, Ollama y otros motores de cuantizacion.
 - Latencia: no hay datos publicados. Para un modelo de ~1 B, se espera una generacion de decenas de tokens por segundo en GPU modernas, pero es una estimacion sin confirmar.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de datos comparativos publicados. Como referencia cualitativa, se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sethblocks/Neuron-Thinking-Beta-2
+- Modelo en Hugging Face: https://huggingface.co/Sethblocks/Neuron-Thinking-Beta-2
 - Modelo predecesor: https://huggingface.co/Sethblocks/Neuron-Thinking-Beta
 - Perfil del autor: https://huggingface.co/Sethblocks/models
 - Repositorio GitHub de Neuron: https://github.com/sethblocks/Neuron

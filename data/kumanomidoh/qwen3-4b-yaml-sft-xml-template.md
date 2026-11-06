@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kumanomidoh/qwen3-4b-yaml-sft-xml-template` es un modelo de generación de texto publicado en HuggingFace por el usuario `kumanomidoh`. Según el nombre, parece tratarse de un ajuste fino (SFT) del modelo Qwen3-4B orientado a trabajar con datos en formato YAML y plantillas XML, aunque la model card no aporta ninguna información oficial al respecto. El repositorio contiene pesos en formato `safetensors` con un total de 4.022.468.096 parámetros (aproximadamente 4B) y un tamaño de 8,1 GB.
+El modelo `kumanomidoh/qwen3-4b-yaml-sft-xml-template` es un modelo de generación de texto publicado en Hugging Face por el usuario `kumanomidoh`. Según el nombre, parece tratarse de un ajuste fino (SFT) del modelo Qwen3-4B orientado a trabajar con datos en formato YAML y plantillas XML, aunque la model card no aporta ninguna información oficial al respecto. El repositorio contiene pesos en formato `safetensors` con un total de 4.022.468.096 parámetros (aproximadamente 4B) y un tamaño de 8,1 GB.
 
 La model card es una plantilla genérica generada automáticamente, con todos los campos rellenados con "[More Information Needed]". No se especifican arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades. El modelo no tiene descargas ni likes en el momento de la consulta. Su relevancia actual es limitada debido a la ausencia total de documentación técnica y de ejemplos de uso.
 
@@ -73,4 +73,4 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- [HuggingFace - kumanomidoh/qwen3-4b-yaml-sft-xml-template](https://huggingface.co/kumanomidoh/qwen3-4b-yaml-sft-xml-template)
+- [Hugging Face - kumanomidoh/qwen3-4b-yaml-sft-xml-template](https://huggingface.co/kumanomidoh/qwen3-4b-yaml-sft-xml-template)

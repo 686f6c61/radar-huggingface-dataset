@@ -44,7 +44,7 @@ No hubo entrenamiento. Los pesos se inicializaron de forma aleatoria con semilla
 - Validacion de contratos de framework: ejecutar el directorio `integrations/transformers/expectations` para detectar regresiones en la API de carga de modelos.
 - Pruebas de dtype: verificar que el codigo de inferencia funciona en float32, bfloat16 y float16 sin producir NaN ni infinitos en forward, loss o gradientes.
 - Reproduccion de fixtures: reconstruir el artefacto con `build_fixtures.py --fixture Qwen3.5-0.8B-text-only-mic` y comparar hashes registrados en `build.json`.
-- Formacion interna: servir como ejemplo minimo de como empaquetar pesos, uso y expectativas en un unico repositorio de HuggingFace.
+- Formacion interna: servir como ejemplo minimo de como empaquetar pesos, uso y expectativas en un unico repositorio de Hugging Face.
 - Pruebas de sensibilidad de entrada: reutilizar la puerta de perturbacion para comprobar que los cambios en el pipeline afectan a los logits de forma medible.
 
 ## Benchmarks y rendimiento
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-text-only-mic | 16,0M (fixture) | no disponible | Test artifact | no disponible | HuggingFace |
-| principled-intelligence/Qwen3.5-0.8B-text-only | ~0,8B (nominal) | no disponible | Modelo base real | no disponible | HuggingFace |
-| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Test artifacts | no disponible | HuggingFace (org huggingface-mic) |
+| Qwen3.5-0.8B-text-only-mic | 16,0M (fixture) | no disponible | Test artifact | no disponible | Hugging Face |
+| principled-intelligence/Qwen3.5-0.8B-text-only | ~0,8B (nominal) | no disponible | Modelo base real | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Test artifacts | no disponible | Hugging Face (org huggingface-mic) |
 
 No se dispone de datos de rendimiento para establecer una comparativa funcional con modelos de la misma categoria.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparativa funcional 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Qwen3.5-0.8B-text-only-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Qwen3.5-0.8B-text-only-mic
 - Modelo base: https://huggingface.co/principled-intelligence/Qwen3.5-0.8B-text-only
 - Script de reduccion (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
 - Script de construccion (build_fixtures.py): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

@@ -77,7 +77,7 @@ La comparativa se basa en información pública; no se dispone de benchmarks par
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/grug-v1.1-qwen-3.8-27b-mtp-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/grug-v1.1-qwen-3.8-27b-mtp-i1-GGUF
 - Modelo original (fine-tuning): https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp
 - Guía de despliegue local de Qwen3.8-27B: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Análisis de VRAM y tamaños GGUF: https://ofox.ai/blog/qwen-3-8-27b-run-locally-vram-gguf-2026/

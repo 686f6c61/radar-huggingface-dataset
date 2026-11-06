@@ -64,7 +64,7 @@ El autor indica que la seleccion de checkpoint no uso resultados de holdout y qu
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible; el modelo es una politica de RL de ML-Agents, no un LLM, y el tamano del fichero ONNX no se publica (el repo ocupa 0.0 GB segun HuggingFace).
+- VRAM estimada: no disponible; el modelo es una politica de RL de ML-Agents, no un LLM, y el tamano del fichero ONNX no se publica (el repo ocupa 0.0 GB segun Hugging Face).
 - GPU recomendadas: no aplica para inferencia en Unity, que ejecuta el ONNX en CPU o en el backend que soporte el runtime de ML-Agents; para reentrenar desde cero se requeriria una GPU compatible con PyTorch y ML-Agents (no especificada).
 - Cabe en cualquier consumer GPU e incluso en CPU para inferencia, dado el caracter ligero tipico de las politicas de ML-Agents.
 - Opciones de despliegue: Unity ML-Agents con ONNX Runtime; no aplican vLLM, llama.cpp, Ollama ni TGI.
@@ -74,7 +74,7 @@ El autor indica que la seleccion de checkpoint no uso resultados de holdout y qu
 
 | Modelo | Tipo | Entorno | Presupuesto de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deep-rl-unit7-soccer-20261105 | Politica MA-POCA (ONNX) | SoccerTwos | 501.148 pasos de agente | MIT | HuggingFace |
+| deep-rl-unit7-soccer-20261105 | Politica MA-POCA (ONNX) | SoccerTwos | 501.148 pasos de agente | MIT | Hugging Face |
 | Politicas de referencia del curso HF Unit 7 | Politica entrenada por el alumno | SoccerTwos | Variable (recomendado 5.000.000) | segun alumno | No distribuidas oficialmente |
 | Ejemplos oficiales de Unity ML-Agents | Politicas de ejemplo | Varios entornos ML-Agents | No disponible | Apache 2.0 (ML-Agents) | GitHub de Unity |
 
@@ -95,6 +95,6 @@ No se dispone de una comparativa numerica con otras politicas SoccerTwos porque 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/poplolioi11/deep-rl-unit7-soccer-20261105
+- Hugging Face: https://huggingface.co/poplolioi11/deep-rl-unit7-soccer-20261105
 - Ejercicio oficial Unidad 7 del curso: https://huggingface.co/learn/deep-rl-course/unit7/hands-on
 - Repositorio Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents

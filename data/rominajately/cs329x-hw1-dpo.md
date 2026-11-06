@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rominajately/cs329x-hw1-dpo es un adaptador PEFT (LoRA) publicado en HuggingFace por el usuario rominajately sobre el modelo base TinyLlama/TinyLlama-1.1B-Chat-v1.0. Por el identificador del repositorio y la libreria declarada, se trata de un ajuste fino mediante DPO (Direct Preference Optimization) aplicado sobre un modelo de 1.100 millones de parametros, presumiblemente en el contexto de una practica academica (el prefijo "cs329x" remite a un curso universitario y "hw1" a una primera tarea). No es, por tanto, un modelo completo con pesos propios, sino un delta de pesos que debe combinarse con el modelo base para poder ejecutarse.
+rominajately/cs329x-hw1-dpo es un adaptador PEFT (LoRA) publicado en Hugging Face por el usuario rominajately sobre el modelo base TinyLlama/TinyLlama-1.1B-Chat-v1.0. Por el identificador del repositorio y la libreria declarada, se trata de un ajuste fino mediante DPO (Direct Preference Optimization) aplicado sobre un modelo de 1.100 millones de parametros, presumiblemente en el contexto de una practica academica (el prefijo "cs329x" remite a un curso universitario y "hw1" a una primera tarea). No es, por tanto, un modelo completo con pesos propios, sino un delta de pesos que debe combinarse con el modelo base para poder ejecutarse.
 
 La model card esta practicamente vacia: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y limitaciones aparecen como "[More Information Needed]". La unica informacion tecnica fiable que acompana al repositorio es la libreria utilizada (PEFT 0.10.0), el formato de pesos (safetensors), el modelo base y la fecha de publicacion (octubre de 2026). No se declaran licencia, idiomas ni pipeline de inferencia.
 
@@ -102,7 +102,7 @@ Con la informacion disponible no es posible comparar rendimiento, ya que no exis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rominajately/cs329x-hw1-dpo
+- Modelo en Hugging Face: https://huggingface.co/rominajately/cs329x-hw1-dpo
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio relacionado con el mismo nombre de tarea: https://huggingface.co/aliu917/cs329x-hw1-dpo-model
 - Repositorio relacionado sobre Qwen2.5: https://huggingface.co/ChenChen2005/cs329x-hw1-dpo-qwen25-20261010

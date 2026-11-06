@@ -66,7 +66,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/christiankrause/prompt-engineering34
+- Repositorio en Hugging Face: https://huggingface.co/christiankrause/prompt-engineering34
 - Guía de prompt engineering de Anthropic (Claude): https://claude.com/blog/best-practices-for-prompt-engineering
 - Documentación de prompt engineering de Claude Platform: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - Prompt Engineering Guide (comunidad): https://www.promptingguide.ai/

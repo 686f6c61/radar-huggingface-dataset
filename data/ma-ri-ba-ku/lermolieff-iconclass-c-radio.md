@@ -78,7 +78,7 @@ No se dispone en la información proporcionada de otros modelos publicados que r
 
 | Modelo | Tarea | Parámetros | Contexto | F1 jerárquico (ICAI) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lermolieff-iconclass-c-radio | Clasificación multi-etiqueta Iconclass | No disponible (cabeza de 98,5 MB sobre encoder C-RADIOv3-L congelado) | No aplica | 54,8 % | MIT (cabeza) + NVIDIA Open Model License (encoder) | HuggingFace `Ma-Ri-Ba-Ku/lermolieff-iconclass-c-radio` |
+| lermolieff-iconclass-c-radio | Clasificación multi-etiqueta Iconclass | No disponible (cabeza de 98,5 MB sobre encoder C-RADIOv3-L congelado) | No aplica | 54,8 % | MIT (cabeza) + NVIDIA Open Model License (encoder) | Hugging Face `Ma-Ri-Ba-Ku/lermolieff-iconclass-c-radio` |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de otros modelos publicados que r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ma-Ri-Ba-Ku/lermolieff-iconclass-c-radio
+- Modelo en Hugging Face: https://huggingface.co/Ma-Ri-Ba-Ku/lermolieff-iconclass-c-radio
 - Repositorio de código y método: https://github.com/maribakulj/lermolieff
 - Modelo base (encoder): https://huggingface.co/nvidia/C-RADIOv3-L
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/davanstrien/iconclass-vlm-brillfull

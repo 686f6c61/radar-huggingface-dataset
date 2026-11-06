@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un modelo publicado en HuggingFace por el usuario PrevetDurgan279 con licencia MIT y etiquetado como compatible con la librería `transformers` de PyTorch. Según los metadatos del repositorio, el pipeline declarado es `feature-extraction`, lo que sugiere un uso orientado a extracción de características o embeddings, aunque la model card describe capacidades de razonamiento, generación de código y matemáticas, lo que resulta contradictorio con la información técnica disponible. El repositorio no contiene pesos (tamaño 0.0 GB) y no se proporcionan datos sobre arquitectura, número de parámetros ni contexto.
+MyAwesomeModel-TestRepo es un modelo publicado en Hugging Face por el usuario PrevetDurgan279 con licencia MIT y etiquetado como compatible con la librería `transformers` de PyTorch. Según los metadatos del repositorio, el pipeline declarado es `feature-extraction`, lo que sugiere un uso orientado a extracción de características o embeddings, aunque la model card describe capacidades de razonamiento, generación de código y matemáticas, lo que resulta contradictorio con la información técnica disponible. El repositorio no contiene pesos (tamaño 0.0 GB) y no se proporcionan datos sobre arquitectura, número de parámetros ni contexto.
 
 La model card, redactada en inglés, presenta un modelo "mejorado" respecto a una versión anterior, con mejoras en razonamiento complejo (cita una mejora en AIME 2025 del 70% al 87.5%) y una reducción de alucinaciones, pero no ofrece detalles verificables sobre su implementación. Dado que el repositorio está vacío y carece de artefactos, esta ficha debe interpretarse como un análisis de la información declarada, no como una evaluación de un modelo funcional.
 
@@ -92,7 +92,7 @@ No se puede establecer una comparativa fiable al desconocer la arquitectura, el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PrevetDurgan279/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/PrevetDurgan279/MyAwesomeModel-TestRepo
 - Otros repositorios con el mismo nombre (sin relación confirmada): https://huggingface.co/tooldev/MyAwesomeModel-TestRepo y https://huggingface.co/haertgs/MyAwesomeModel-TestRepo
 - Herramienta de terceros que referencia el modelo: https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo
 - Directorio de modelos con entrada para este nombre: https://openmodelmap.com/model/modoupennington876/myawesomemodel-testrepo

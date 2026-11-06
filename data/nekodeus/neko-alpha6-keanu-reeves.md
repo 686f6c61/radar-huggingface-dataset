@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Contexto o resolucion | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nekodeus/neko-alpha6-keanu-reeves | LoRA de personaje | Stable Diffusion 1.5 | 512×512 px | no disponible | other | HuggingFace, 0 descargas |
+| Nekodeus/neko-alpha6-keanu-reeves | LoRA de personaje | Stable Diffusion 1.5 | 512×512 px | no disponible | other | Hugging Face, 0 descargas |
 | 90s Keanu Reeves LoRA (PixAI) | LoRA de personaje | Stable Diffusion (SD1.5) | 512×512 px | no disponible | no disponible | PixAI, con métricas de uso en la plataforma |
 | Hell (Constantine 2005) - JuggernautXL (PixAI) | LoRA temático | SDXL | 1024×1024 px | no disponible | no disponible | PixAI |
-| LoRA de personaje genérico SD1.5 | LoRA de personaje | Stable Diffusion 1.5 | 512×512 px | no disponible | variable | HuggingFace, Civitai |
+| LoRA de personaje genérico SD1.5 | LoRA de personaje | Stable Diffusion 1.5 | 512×512 px | no disponible | variable | Hugging Face, Civitai |
 
 La comparación cuantitativa no es posible: ninguno de los artefactos alternativos localizados publica métricas de fidelidad de identidad ni evaluaciones reproducibles. La diferencia principal frente a las alternativas en SDXL es la resolución nativa (512 frente a 1024 px) y el coste computacional asociado.
 
@@ -87,7 +87,7 @@ La comparación cuantitativa no es posible: ninguno de los artefactos alternativ
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Nekodeus/neko-alpha6-keanu-reeves
+- Hugging Face del modelo: https://huggingface.co/Nekodeus/neko-alpha6-keanu-reeves
 - Pack declarado por el autor: https://huggingface.co/Nekodeus/neko-hollywood-alpha-sd15-v1
 - PromptHero, modelos de Keanu Reeves (referencia de alternativas): https://prompthero.com/ai-models/keanu-reeves-download
 - PixAI, etiqueta Keanu Reeves con LoRA de SD y SDXL: https://pixai.art/en/tags/model/keanu_reeves

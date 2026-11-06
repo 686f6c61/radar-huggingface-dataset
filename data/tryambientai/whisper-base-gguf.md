@@ -106,7 +106,7 @@ El modelo original y esta conversión comparten arquitectura y pesos; la diferen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tryambientai/whisper-base-gguf
+- Hugging Face: https://huggingface.co/tryambientai/whisper-base-gguf
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Commit upstream del modelo base: https://huggingface.co/openai/whisper-base/commit/e37978b
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

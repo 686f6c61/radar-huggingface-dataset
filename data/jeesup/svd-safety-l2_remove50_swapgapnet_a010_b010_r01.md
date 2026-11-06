@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parámetros | Contexto | Seguridad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapgapnet_a010_b010_r01 (este checkpoint) | 6.738.415.616 almacenados; 0,4999 de las proyecciones densas tras SVD | 4.096 (heredado) | ASR 0,5250 (AdvBench) y 0,3610 (StrongREJECT); sobre-rechazo 0,0964 | Llama 2 Community License | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (referencia directa) | ~6,74 mil millones | 4.096 | no disponible en la información proporcionada (el autor indica que la compresión por sí sola eleva el ASR respecto al base) | Llama 2 Community License | HuggingFace, ampliamente utilizado |
+| svd-safety-l2_remove50_swapgapnet_a010_b010_r01 (este checkpoint) | 6.738.415.616 almacenados; 0,4999 de las proyecciones densas tras SVD | 4.096 (heredado) | ASR 0,5250 (AdvBench) y 0,3610 (StrongREJECT); sobre-rechazo 0,0964 | Llama 2 Community License | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (referencia directa) | ~6,74 mil millones | 4.096 | no disponible en la información proporcionada (el autor indica que la compresión por sí sola eleva el ASR respecto al base) | Llama 2 Community License | Hugging Face, ampliamente utilizado |
 | Otras celdas de la rejilla del mismo autor (otras reglas y presupuestos) | no disponible | no disponible | no disponible | Llama 2 Community License | no listadas en la información disponible |
 | Otros métodos de compresión de Llama-2-7b-chat (destilación, cuantización, pruning estructurado) | no disponible | no disponible | no disponible | variable | no disponible |
 
@@ -108,7 +108,7 @@ No se dispone de cifras comparativas publicadas para el modelo base ni para alte
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_a010_b010_r01
+- Página del modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_a010_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Ficheros de licencia y política de uso incluidos en el repositorio: `LICENSE.txt` y `USE_POLICY.md`
 - No se han proporcionado en la información disponible enlaces a papers (SVD-LLM, HarmBench, StrongREJECT, WildGuard), blogs, repositorios de código ni demos adicionales.

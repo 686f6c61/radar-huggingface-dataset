@@ -77,8 +77,8 @@ No se dispone de datos de rendimiento comparativos. Este modelo es un fine-tune 
 
 ## Enlaces
 
-- [HuggingFace - Kanha-AI/kanha-kanha.ai-1.7b-qlora-quality](https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-qlora-quality)
-- [HuggingFace - organizacion Kanha-AI](https://huggingface.co/Kanha-AI)
+- [Hugging Face - Kanha-AI/kanha-kanha.ai-1.7b-qlora-quality](https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-qlora-quality)
+- [Hugging Face - organizacion Kanha-AI](https://huggingface.co/Kanha-AI)
 - [GitHub - Kanha-AI/Kanha-AI](https://github.com/Kanha-AI/Kanha-AI)
 - [Sitio web de Kanha.ai](https://kanha.ai)
 - [Kanha AI - Voice-First Child Companion (otro producto)](https://kanhaji.ai/)

@@ -16,7 +16,7 @@ La versión GGUF permite su ejecución con motores como llama.cpp, Ollama o vLLM
 | Longitud de contexto | 32.000 tokens (segun informacion de la busqueda web) |
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
 | Idiomas soportados | Ingles (segun informacion de la busqueda web; no confirmado oficialmente) |
-| Licencia | No disponible en la ficha de HuggingFace; la busqueda web sugiere Apache 2.0, sin confirmar |
+| Licencia | No disponible en la ficha de Hugging Face; la busqueda web sugiere Apache 2.0, sin confirmar |
 | Formato de pesos | GGUF (esta version); el modelo original usa safetensors |
 
 ## Arquitectura y entrenamiento
@@ -64,14 +64,14 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 - Sesgos y alucinaciones: al ser un modelo pequeno entrenado con datos limitados, puede generar respuestas incorrectas o inventar informacion, especialmente en dominios fuera de su entrenamiento (codigo y STEM).
 - Idioma: solo se ha confirmado ingles; su rendimiento en otros idiomas es desconocido y probablemente deficiente.
-- Licencia incierta: aunque la busqueda web sugiere Apache 2.0, la ficha de HuggingFace no la confirma. Antes de usarlo en produccion comercial, verificar la licencia del modelo base.
+- Licencia incierta: aunque la busqueda web sugiere Apache 2.0, la ficha de Hugging Face no la confirma. Antes de usarlo en produccion comercial, verificar la licencia del modelo base.
 - Contexto limitado en la practica: aunque declara 32k tokens, el rendimiento real puede degradarse con contextos muy largos debido a la atencion por ventanas.
 - Sin soporte de vision ni audio: es un modelo de texto puro, no procesa imagenes ni sonido.
 - Dependencia de la cuantizacion: las versiones con menor precision (Q2_K, Q3_K) pueden perder calidad en tareas de razonamiento complejo.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0-GGUF
 - Modelo base (prithivMLmods): https://huggingface.co/prithivMLmods/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0
 - Articulo en HackerNoon sobre destilacion de razonamiento: https://hackernoon.com/qwen35-2b-distills-opus-reasoning-into-a-tiny-gguf-model
 - Ficha en Friendli AI: https://friendli.ai/models/prithivMLmods/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0

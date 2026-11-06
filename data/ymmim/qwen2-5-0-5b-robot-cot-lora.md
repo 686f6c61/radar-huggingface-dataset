@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `YMmim/qwen2.5-0.5b-robot-cot-lora` (este) | 0.5B base + LoRA | 1.024 (entrenamiento) / 32.768 (base) | Coreano | Apache-2.0 | HuggingFace |
-| `Qwen/Qwen2.5-0.5B` (modelo base sin fine-tuning) | 0.5B | 32.768 | Multilingüe | Apache-2.0 | HuggingFace |
-| `Qwen/Qwen2.5-0.5B-Instruct` | 0.5B | 32.768 | Multilingüe | Apache-2.0 | HuggingFace |
-| `SoloCalm/MiniLoRA` (LoRA de Qwen2.5-0.5B para medicina) | 0.5B + LoRA | 1.024 (entrenamiento) | Chino | Apache-2.0 | HuggingFace |
+| `YMmim/qwen2.5-0.5b-robot-cot-lora` (este) | 0.5B base + LoRA | 1.024 (entrenamiento) / 32.768 (base) | Coreano | Apache-2.0 | Hugging Face |
+| `Qwen/Qwen2.5-0.5B` (modelo base sin fine-tuning) | 0.5B | 32.768 | Multilingüe | Apache-2.0 | Hugging Face |
+| `Qwen/Qwen2.5-0.5B-Instruct` | 0.5B | 32.768 | Multilingüe | Apache-2.0 | Hugging Face |
+| `SoloCalm/MiniLoRA` (LoRA de Qwen2.5-0.5B para medicina) | 0.5B + LoRA | 1.024 (entrenamiento) | Chino | Apache-2.0 | Hugging Face |
 
 No existe un modelo comparable exacto en la categoría de CoT para robótica de fabricación con esta misma arquitectura y tamaño. La comparativa más directa es con el modelo base Qwen2.5-0.5B, que no está adaptado a la tarea, y con el modelo Qwen2.5-0.5B-Instruct, que está alineado para instrucciones generales. Ambos servirían como baseline para medir la mejora del adaptador, aunque el autor no ha publicado tales comparaciones.
 
@@ -80,9 +80,9 @@ No existe un modelo comparable exacto en la categoría de CoT para robótica de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YMmim/qwen2.5-0.5b-robot-cot-lora
+- Modelo en Hugging Face: https://huggingface.co/YMmim/qwen2.5-0.5b-robot-cot-lora
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
-- Colección Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Colección Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Informe técnico de Qwen2.5 (arXiv): https://arxiv.org/pdf/2412.15115v2
 - Repositorio de MiniLoRA (ejemplo similar de LoRA sobre Qwen2.5-0.5B): https://github.com/SoloCalm/MiniLoRA
 - Repositorio de Qwen2.5-Omni (referencia de la familia Qwen): https://github.com/QwenLM/Qwen2.5-Omni

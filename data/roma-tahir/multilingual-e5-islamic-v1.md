@@ -21,7 +21,7 @@ El modelo se distribuye a través de la librería `sentence-transformers` y tien
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en `multilingual-e5-base`, un transformer de tipo XLM-RoBERTa con 12 capas, 12 cabezas de atención y una dimensión de embedding de 768. El fine-tuning se realizó con la librería `sentence-transformers` sobre un conjunto de datos de 801 pares (pregunta-pasaje), empleando la pérdida `MultipleNegativesRankingLoss`, que optimiza la similitud coseno entre pares positivos frente a negativos dentro del batch. No se dispone de información sobre la composición exacta del dataset ni sobre si se aplicaron técnicas adicionales como hard negative mining o data augmentation. El entrenamiento se realizó con el framework `Trainer` de HuggingFace (según el tag `generated_from_trainer`).
+El modelo se basa en `multilingual-e5-base`, un transformer de tipo XLM-RoBERTa con 12 capas, 12 cabezas de atención y una dimensión de embedding de 768. El fine-tuning se realizó con la librería `sentence-transformers` sobre un conjunto de datos de 801 pares (pregunta-pasaje), empleando la pérdida `MultipleNegativesRankingLoss`, que optimiza la similitud coseno entre pares positivos frente a negativos dentro del batch. No se dispone de información sobre la composición exacta del dataset ni sobre si se aplicaron técnicas adicionales como hard negative mining o data augmentation. El entrenamiento se realizó con el framework `Trainer` de Hugging Face (según el tag `generated_from_trainer`).
 
 El modelo base `multilingual-e5-base` fue entrenado mediante un pipeline en dos etapas: pre-entrenamiento contrastivo sobre mil millones de pares de texto multilingües y fine-tuning con datasets etiquetados. Esta arquitectura produce embeddings densos de alta calidad para tareas de recuperación y similitud, y el fine-tuning específico aquí presentado busca adaptar esas representaciones al dominio islámico, donde los pasajes suelen incluir citas en árabe, urdu, inglés y otras lenguas.
 
@@ -76,7 +76,7 @@ El modelo de `roma-tahir` comparte arquitectura y tamano con el base `multilingu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roma-tahir/multilingual-e5-islamic-v1
+- Modelo en Hugging Face: https://huggingface.co/roma-tahir/multilingual-e5-islamic-v1
 - Modelo base `intfloat/multilingual-e5-base`: https://huggingface.co/intfloat/multilingual-e5-base
 - Paper de Multilingual E5 Text Embeddings: https://arxiv.org/abs/2402.05672
 - Modelo similar `IslamQA/multilingual-e5-small-finetuned`: https://huggingface.co/IslamQA/multilingual-e5-small-finetuned

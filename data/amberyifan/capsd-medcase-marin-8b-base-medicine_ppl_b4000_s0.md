@@ -72,5 +72,5 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible reali
 
 ## Enlaces
 
-- [HuggingFace - AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b4000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b4000_s0)
+- [Hugging Face - AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b4000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b4000_s0)
 - [Modelo base: marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base)

@@ -75,7 +75,7 @@ Notas declaradas por el autor: el modelo supera a Jev en el test independiente, 
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hotdog-27B | 27B densos + LoRA rango 16 | 8.192 tokens de entrada | 98,28 % en test independiente; 81,08 % en JevBench nativo binario | Apache-2.0 | Pesos del adaptador en HuggingFace (483 MB) más backbone |
+| hotdog-27B | 27B densos + LoRA rango 16 | 8.192 tokens de entrada | 98,28 % en test independiente; 81,08 % en JevBench nativo binario | Apache-2.0 | Pesos del adaptador en Hugging Face (483 MB) más backbone |
 | Jev 1.13.0 | No disponible | No disponible | 97,30 % en test independiente; 83,78 % en JevBench nativo binario | No disponible | Comparador externo, no alojado en el repo |
 | Qwen3.8-27B (prompting zero-shot) | 27B densos | El del backbone (no disponible en la información) | No disponible: no se publican resultados con este enfoque | La del modelo base | Modelo base público |
 
@@ -96,7 +96,7 @@ La información disponible no permite comparar con otras alternativas de clasifi
 - No hay evidencia de portabilidad más allá del `inference-parity.json`, que registra coincidencia exacta con el backend congelado en tres entradas sintéticas nuevas; eso valida el cargador, no exactitud adicional.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/opensporks/hotdog-27B
+- Modelo en Hugging Face: https://huggingface.co/opensporks/hotdog-27B
 - Código de entrenamiento: https://github.com/mrmps/tinker-binary
 - Resultados de benchmark: results.json (referenciado en el repositorio del modelo)
 - Protocolo y procedencia: reproducibility.json (referenciado en el repositorio del modelo)

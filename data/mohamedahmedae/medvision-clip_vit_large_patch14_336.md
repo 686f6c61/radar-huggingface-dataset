@@ -49,16 +49,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: el modelo tiene 427M parametros en F32, lo que supone aproximadamente 1,7 GB de pesos. Con overhead de activaciones y buffers, se recomienda al menos 4 GB de VRAM para inferencia basica.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM, por ejemplo NVIDIA GTX 1650, RTX 3060, RTX 4090, o GPUs de datacenter como A100 o H100.
 - Compatibilidad con GPU de consumo: si, cabe en GPUs consumer de gama media y alta.
-- Opciones de despliegue: se puede cargar con la libreria `transformers` de HuggingFace (CLIPModel) o con `open_clip`. No se ha confirmado soporte en vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje generativo.
+- Opciones de despliegue: se puede cargar con la libreria `transformers` de Hugging Face (CLIPModel) o con `open_clip`. No se ha confirmado soporte en vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje generativo.
 - Latencia y throughput: no se han publicado mediciones. En una GPU moderna, la inferencia de un ViT-Large a 336x336 suele tardar entre 10 y 50 ms por imagen, dependiendo del hardware y del batch.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Resolucion | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| medvision-clip_vit_large_patch14_336 (este) | 427M | 336x336 | Medico (presunto) | No disponible | HuggingFace |
-| openai/clip-vit-large-patch14-336 | 427M | 336x336 | General | MIT | HuggingFace |
-| BiomedCLIP (microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch32_384) | ~150M | 384x384 | Medico | No comercial | HuggingFace |
+| medvision-clip_vit_large_patch14_336 (este) | 427M | 336x336 | Medico (presunto) | No disponible | Hugging Face |
+| openai/clip-vit-large-patch14-336 | 427M | 336x336 | General | MIT | Hugging Face |
+| BiomedCLIP (microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch32_384) | ~150M | 384x384 | Medico | No comercial | Hugging Face |
 
 El modelo de este ficha comparte arquitectura y tamano con el CLIP original de OpenAI, pero se diferencia por su posible especializacion medica. Frente a BiomedCLIP, que tiene una documentacion extensa y resultados publicados en conjuntos de datos medicos, este modelo carece de cualquier validacion publica. La ausencia de licencia impide determinar si puede usarse comercialmente.
 
@@ -74,6 +74,6 @@ El modelo de este ficha comparte arquitectura y tamano con el CLIP original de O
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MohamedAhmedAE/medvision-clip_vit_large_patch14_336
+- Modelo en Hugging Face: https://huggingface.co/MohamedAhmedAE/medvision-clip_vit_large_patch14_336
 - Version v2 del mismo autor: https://huggingface.co/MohamedAhmedAE/medvision-clip_vit_large_patch14_336_v2
 - Proyecto MedVision en GitHub (no directamente relacionado, pero aparece en la busqueda): https://github.com/sanjayrahul77/MedVision

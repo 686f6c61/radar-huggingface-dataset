@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Sin embargo, al ser una cuantización de Qwen3-4B, puede compararse con otras cuantizaciones del mismo modelo base (por ejemplo, las publicadas por otros usuarios como `bartowski` o `TheBloke`), pero no se tienen datos de rendimiento para establecer una comparación objetiva. Se recomienda consultar el modelo base original en HuggingFace para obtener benchmarks del modelo sin cuantizar.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Sin embargo, al ser una cuantización de Qwen3-4B, puede compararse con otras cuantizaciones del mismo modelo base (por ejemplo, las publicadas por otros usuarios como `bartowski` o `TheBloke`), pero no se tienen datos de rendimiento para establecer una comparación objetiva. Se recomienda consultar el modelo base original en Hugging Face para obtener benchmarks del modelo sin cuantizar.
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: [qtum/Qwen3-4B-GGUF](https://huggingface.co/qtum/Qwen3-4B-GGUF)
+- Repositorio Hugging Face: [qtum/Qwen3-4B-GGUF](https://huggingface.co/qtum/Qwen3-4B-GGUF)
 - Modelo base: [Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
 - Herramienta de cuantización: [llama.cpp](https://github.com/ggml-org/llama.cpp)
 - Guía de rendimiento de cuantizaciones (referenciada en la model card): [Artefact2 gist](https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9)

@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no identifica los modelos base sobre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/daisy-zzz/contextvote-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/daisy-zzz/contextvote-checkpoints
 - Repositorio de codigo complementario (mencionado en la model card para descargar, verificar y evaluar los ficheros): no disponible, no se incluye la URL en la informacion proporcionada.
 - Paper, blog o demo asociados: no disponible.
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las entradas devueltas hacen referencia al nombre propio "Daisy" y no al modelo.

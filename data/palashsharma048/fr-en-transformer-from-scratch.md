@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`palashsharma048/fr-en-transformer-from-scratch` es un modelo de traduccion automatica frances → ingles desarrollado por el usuario de HuggingFace palashsharma048. Se trata de un Transformer encoder-decoder pequeno (9.933.824 parametros) entrenado integramente desde cero, sin pesos preentrenados, sobre 902.783 pares de frases limpias del split de entrenamiento de `Helsinki-NLP/opus-100` (en-fr). Es, por tanto, un ejercicio de implementacion completa del pipeline: tokenizador SentencePiece, arquitectura, bucle de entrenamiento e inferencia propios.
+`palashsharma048/fr-en-transformer-from-scratch` es un modelo de traduccion automatica frances → ingles desarrollado por el usuario de Hugging Face palashsharma048. Se trata de un Transformer encoder-decoder pequeno (9.933.824 parametros) entrenado integramente desde cero, sin pesos preentrenados, sobre 902.783 pares de frases limpias del split de entrenamiento de `Helsinki-NLP/opus-100` (en-fr). Es, por tanto, un ejercicio de implementacion completa del pipeline: tokenizador SentencePiece, arquitectura, bucle de entrenamiento e inferencia propios.
 
 Su relevancia no esta en competir con sistemas de traduccion de produccion, sino en servir como referencia reproducible y ligera: cabe en cualquier GPU de consumo, se ejecuta en CPU y su codigo de inferencia acompana al repositorio. Es util para docencia, experimentacion academica y como base de comparacion frente a modelos Marian o NLLB mucho mayores.
 
@@ -84,10 +84,10 @@ Los datos de los modelos comparados no forman parte de la informacion proporcion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| palashsharma048/fr-en-transformer-from-scratch | 9,93 M | No disponible | MIT | HuggingFace, safetensors + script propio | Entrenado desde cero sobre 902.783 pares de Opus-100; unidireccional fr → en; BLEU 27,47 en el conjunto de desarrollo del autor |
-| Helsinki-NLP/opus-mt-fr-en | Aproximadamente 77 M (Marian, 6+6 capas) | No disponible | CC-BY 4.0 | HuggingFace, compatible con transformers | Referencia habitual para fr → en; entrenado sobre corpus OPUS a mayor escala; calidad BLEU no disponible en esta informacion |
-| facebook/m2m100_418M | 418 M | No disponible | MIT | HuggingFace, compatible con transformers | Multilingue (100 idiomas) con traduccion directa entre pares; mucho mayor y mas costoso de servir |
-| facebook/nllb-200-distilled-600M | 600 M | No disponible | CC-BY-NC 4.0 | HuggingFace, compatible con transformers | Multilingue (200 idiomas); licencia no comercial, lo que limita su uso en produccion |
+| palashsharma048/fr-en-transformer-from-scratch | 9,93 M | No disponible | MIT | Hugging Face, safetensors + script propio | Entrenado desde cero sobre 902.783 pares de Opus-100; unidireccional fr → en; BLEU 27,47 en el conjunto de desarrollo del autor |
+| Helsinki-NLP/opus-mt-fr-en | Aproximadamente 77 M (Marian, 6+6 capas) | No disponible | CC-BY 4.0 | Hugging Face, compatible con transformers | Referencia habitual para fr → en; entrenado sobre corpus OPUS a mayor escala; calidad BLEU no disponible en esta informacion |
+| facebook/m2m100_418M | 418 M | No disponible | MIT | Hugging Face, compatible con transformers | Multilingue (100 idiomas) con traduccion directa entre pares; mucho mayor y mas costoso de servir |
+| facebook/nllb-200-distilled-600M | 600 M | No disponible | CC-BY-NC 4.0 | Hugging Face, compatible con transformers | Multilingue (200 idiomas); licencia no comercial, lo que limita su uso en produccion |
 
 La diferencia principal frente a estas alternativas es el orden de magnitud: el modelo aqui descrito es entre 8 y 60 veces mas pequeno, lo que se traduce en menor calidad pero tambien en un despliegue trivial en cualquier hardware y en una licencia permisiva (MIT) que los modelos NLLB no ofrecen.
 
@@ -107,7 +107,7 @@ La diferencia principal frente a estas alternativas es el orden de magnitud: el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palashsharma048/fr-en-transformer-from-scratch
+- Modelo en Hugging Face: https://huggingface.co/palashsharma048/fr-en-transformer-from-scratch
 - Dataset de entrenamiento: https://huggingface.co/datasets/Helsinki-NLP/opus-100
-- Script de inferencia: `inference.py`, incluido en el propio repositorio de HuggingFace del modelo
+- Script de inferencia: `inference.py`, incluido en el propio repositorio de Hugging Face del modelo
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo ni con traduccion automatica.

@@ -87,9 +87,9 @@ La comparativa directa con modelos de otras familias (como Llama, Mistral o Qwen
 
 ## Enlaces
 
-- [Modelo en HuggingFace (version BF16)](https://huggingface.co/lactroiii/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
-- [Modelo oficial de NVIDIA en HuggingFace (NVFP4)](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4)
-- [Modelo base en HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16)
+- [Modelo en Hugging Face (version BF16)](https://huggingface.co/lactroiii/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
+- [Modelo oficial de NVIDIA en Hugging Face (NVFP4)](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4)
+- [Modelo base en Hugging Face](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16)
 - [Checkpoint GGUF](https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF)
 - [Pagina del modelo en NVIDIA NIM](https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b)
 - [Model card en NVIDIA Build](https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard)

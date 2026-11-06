@@ -65,7 +65,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base (par
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1 (Rin247, cuantizado) | no disponible | no aplica | no disponible | HuggingFace, 161 descargas |
+| Qwen-Image-2.1 (Rin247, cuantizado) | no disponible | no aplica | no disponible | Hugging Face, 161 descargas |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base (par
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Qwen-Image-2.1
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Qwen-Image-2.1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1

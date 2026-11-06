@@ -17,13 +17,13 @@ La versión v1.1 actualiza la base de Qwen3.6-27B a Qwen3.8-27B, lo que añade s
 | Parametros activos | No aplicable (modelo denso, sin arquitectura MoE) |
 | Longitud de contexto | No disponible (heredada del modelo base Qwen3.8-27B, no especificada en la documentacion) |
 | Tipos de cuantizacion | No disponibles publicamente (repo en safetensors, precision bf16 inferida del tamano de 54,7 GB) |
-| Idiomas soportados | Ingles (etiqueta `en` en HuggingFace) |
+| Idiomas soportados | Ingles (etiqueta `en` en Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.8-27B, un transformer decoder-only de 27 400 millones de parametros. No se han publicado detalles sobre la arquitectura interna del modelo base (numero de capas, dimensiones, atencion, etc.), pero por el tamano y el nombre se trata de un modelo denso de la familia Qwen3.8. El tag `qwen3_5` en HuggingFace sugiere compatibilidad con el ecosistema de templates de Qwen3.5/3.8, incluido el parametro `reasoning_effort`.
+El modelo parte de Qwen/Qwen3.8-27B, un transformer decoder-only de 27 400 millones de parametros. No se han publicado detalles sobre la arquitectura interna del modelo base (numero de capas, dimensiones, atencion, etc.), pero por el tamano y el nombre se trata de un modelo denso de la familia Qwen3.8. El tag `qwen3_5` en Hugging Face sugiere compatibilidad con el ecosistema de templates de Qwen3.5/3.8, incluido el parametro `reasoning_effort`.
 
 El entrenamiento de grug-27b-v1.1 sigue un proceso en tres pasos:
 
@@ -138,7 +138,7 @@ El modelo base supera a grug v1.1 en codigo puro y matematicas, pero es mucho pe
 
 ## Enlaces
 
-- [Modelo en HuggingFace: ProCreations/grug-27b-v1.1](https://huggingface.co/ProCreations/grug-27b-v1.1)
+- [Modelo en Hugging Face: ProCreations/grug-27b-v1.1](https://huggingface.co/ProCreations/grug-27b-v1.1)
 - [Version anterior: ProCreations/grug-27b](https://huggingface.co/ProCreations/grug-27b)
 - [Ficha en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/grug-27b-procreations)
 - [Ficha en LLM Explorer](https://llm-explorer.com/model/ProCreations%2Fgrug-27b,4I3COxIuitPNrvIAJrjQMi)

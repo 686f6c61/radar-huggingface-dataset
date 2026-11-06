@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks del export ONNX con cuantizacion de
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| danyalmalik/DeepSeek-R1-0528-Qwen3-8B-ONNX-WebGPU | 8,2B (4 bits en lineales) | No disponible (33K segun fuentes sobre el base) | MIT | ONNX (ORT GenAI) | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B | 8,2B | No disponible (33K segun fuentes externas) | MIT | safetensors | HuggingFace, sin restricciones de acceso |
-| Qwen3-8B (modelo base de la destilacion) | 8,2B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | safetensors | HuggingFace |
-| DeepSeek-R1-Distill-Llama-8B | 8B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | safetensors | HuggingFace |
+| danyalmalik/DeepSeek-R1-0528-Qwen3-8B-ONNX-WebGPU | 8,2B (4 bits en lineales) | No disponible (33K segun fuentes sobre el base) | MIT | ONNX (ORT GenAI) | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B | 8,2B | No disponible (33K segun fuentes externas) | MIT | safetensors | Hugging Face, sin restricciones de acceso |
+| Qwen3-8B (modelo base de la destilacion) | 8,2B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | safetensors | Hugging Face |
+| DeepSeek-R1-Distill-Llama-8B | 8B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | safetensors | Hugging Face |
 
 La diferencia clave frente a las alternativas es el formato: esta es la unica de las opciones listadas pensada explicitamente para ejecucion en navegador mediante WebGPU. Frente al modelo base sin cuantizar, pierde precision numerica a cambio de un tamano mucho menor. No se dispone de datos comparativos de rendimiento entre estas variantes en la informacion proporcionada.
 
@@ -104,7 +104,7 @@ La diferencia clave frente a las alternativas es el formato: esta es la unica de
 ## Enlaces
 
 - Repositorio de la conversion: https://huggingface.co/danyalmalik/DeepSeek-R1-0528-Qwen3-8B-ONNX-WebGPU
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
 - Arbol de ficheros del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/tree/main
 - Ficha descriptiva con cifras de benchmarks del modelo base: https://dev.co/ai/llms/deepseek-r1-0528-qwen3-8b
 - Ficha del modelo en el proveedor SiliconFlow (contexto y salida): https://www.free-model.com/models/siliconflow/deepseek-ai-deepseek-r1-0528-qwen3-8b/

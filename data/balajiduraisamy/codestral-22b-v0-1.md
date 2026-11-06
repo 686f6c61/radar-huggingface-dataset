@@ -4,7 +4,7 @@
 
 Codestral-22B-v0.1 es un modelo de lenguaje causal de 22.247 millones de parámetros desarrollado por Mistral AI, especializado en generación y comprensión de código fuente. Está entrenado en más de 80 lenguajes de programación y soporta tanto completado de instrucciones como completado de código en modo fill-in-the-middle (FIM), una técnica que permite rellenar fragmentos de código en medio de un contexto dado. El modelo se publicó en mayo de 2024 como parte de la familia Codestral, orientada a tareas de programación asistida.
 
-La relevancia de este modelo radica en su equilibrio entre tamaño y rendimiento: con 22.000 millones de parámetros, se sitúa en un rango que permite su despliegue en hardware de gama alta para consumo individual o en entornos de producción con optimizaciones de cuantización. Su licencia es la Mistral Non-Production License (MNPL), que restringe su uso comercial directo, aunque permite investigación y desarrollo. El repositorio en HuggingFace está marcado como gated, por lo que es necesario aceptar las condiciones de uso antes de descargar los pesos.
+La relevancia de este modelo radica en su equilibrio entre tamaño y rendimiento: con 22.000 millones de parámetros, se sitúa en un rango que permite su despliegue en hardware de gama alta para consumo individual o en entornos de producción con optimizaciones de cuantización. Su licencia es la Mistral Non-Production License (MNPL), que restringe su uso comercial directo, aunque permite investigación y desarrollo. El repositorio en Hugging Face está marcado como gated, por lo que es necesario aceptar las condiciones de uso antes de descargar los pesos.
 
 La versión alojada por el usuario balajiduraisamy es un espejo del modelo original de Mistral AI, con pesos en formato safetensors y preparada para su uso con vLLM. No se dispone de información adicional sobre el proceso de entrenamiento más allá de la publicada por Mistral en su anuncio oficial.
 
@@ -70,13 +70,13 @@ No se dispone de datos comparativos oficiales con otros modelos de codigo como C
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar codigo incorrecto, con errores logicos o que no compila. Se recomienda validar siempre el codigo generado.
 - Sesgos en el entrenamiento: al entrenarse con datos de repositorios publicos, puede reflejar sesgos presentes en esos datos, como preferencias por ciertos estilos de codigo o falta de representacion de lenguajes menos comunes.
 - Contexto limitado: aunque se estima una ventana de 32.768 tokens, no esta confirmado oficialmente. Para archivos muy grandes, el modelo puede perder informacion relevante.
-- Acceso restringido: el repositorio es gated, lo que requiere aceptar las condiciones de uso en HuggingFace antes de descargar los pesos. Esto puede suponer una barrera para algunos usuarios.
+- Acceso restringido: el repositorio es gated, lo que requiere aceptar las condiciones de uso en Hugging Face antes de descargar los pesos. Esto puede suponer una barrera para algunos usuarios.
 - Sin soporte multimodal: el modelo solo procesa texto, no imagenes ni audio.
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/balajiduraisamy/Codestral-22B-v0.1
-- Repositorio HuggingFace original: https://huggingface.co/mistralai/Codestral-22B-v0.1
+- Repositorio Hugging Face (espejo): https://huggingface.co/balajiduraisamy/Codestral-22B-v0.1
+- Repositorio Hugging Face original: https://huggingface.co/mistralai/Codestral-22B-v0.1
 - Anuncio oficial de Mistral AI: https://mistral.ai/news/codestral/
 - Ficha en Open Laboratory: https://openlaboratory.com/models/codestral-22b-v0_1/
 - Ficha en LM Studio: https://lmstudio.ai/models/mistralai/codestral-22b-v0.1

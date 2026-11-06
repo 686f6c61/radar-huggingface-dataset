@@ -24,7 +24,7 @@ Su relevancia es doble. Por un lado, documenta una mejora muy grande frente al m
 | Modalidad | Audio a texto (ASR), sin capacidades de visión ni audio-vision |
 | Dataset de entrenamiento | Subconjunto de 80 minutos de OpenSLR 53 (bengalí leído), con separación de hablantes entre splits |
 | Hiperparámetros | lr 1e-5, batch 8 x 2, 800 pasos, fp16, seed 42; checkpoint seleccionado = paso 600 por WER de dev (6 hablantes) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creación | 2026-10-25 |
 
 ## Arquitectura y entrenamiento
@@ -79,11 +79,11 @@ No se han publicado resultados de benchmarks adicionales (MLU, HumanEval, GSM8K 
 
 | Modelo | Parámetros | Ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (whisper-small-bn) | 241,7 M | 30 s | Bengalí (ajuste) | Apache 2.0 | HuggingFace, 0 descargas |
-| openai/whisper-small | 244 M aprox. | 30 s | 99 idiomas (multilingüe) | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-base | 74 M aprox. | 30 s | 99 idiomas (multilingüe) | Apache 2.0 | HuggingFace |
-| openai/whisper-medium | 769 M aprox. | 30 s | 99 idiomas (multilingüe) | Apache 2.0 | HuggingFace |
-| openai/whisper-large-v3 | 1550 M aprox. | 30 s | 99 idiomas (multilingüe) | Apache 2.0 | HuggingFace |
+| Este modelo (whisper-small-bn) | 241,7 M | 30 s | Bengalí (ajuste) | Apache 2.0 | Hugging Face, 0 descargas |
+| openai/whisper-small | 244 M aprox. | 30 s | 99 idiomas (multilingüe) | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-base | 74 M aprox. | 30 s | 99 idiomas (multilingüe) | Apache 2.0 | Hugging Face |
+| openai/whisper-medium | 769 M aprox. | 30 s | 99 idiomas (multilingüe) | Apache 2.0 | Hugging Face |
+| openai/whisper-large-v3 | 1550 M aprox. | 30 s | 99 idiomas (multilingüe) | Apache 2.0 | Hugging Face |
 
 En la comparación cualitativa, este fine-tune mejora de forma muy clara a su modelo base en el dominio específico (WER 66,4 frente a 144,1), pero un `whisper-large-v3` sin ajustar probablemente obtendría un WER menor en bengalí a costa de unas seis veces más parámetros y bastante más VRAM; no se dispone de esa comparación en la información proporcionada, por lo que no se aportan cifras. No se han identificado en la información disponible otros fine-tunes públicos de Whisper-small para bengalí con métricas comparables.
 
@@ -101,7 +101,7 @@ En la comparación cualitativa, este fine-tune mejora de forma muy clara a su mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sahilfarib/aimscribe-whisper-small-bn
+- Modelo en Hugging Face: https://huggingface.co/sahilfarib/aimscribe-whisper-small-bn
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Corpus OpenSLR 53 (bengalí): https://www.openslr.org/53/
 - Repositorio oficial de Whisper (código y utilidades): https://github.com/openai/whisper

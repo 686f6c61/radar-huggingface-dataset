@@ -109,7 +109,7 @@ No se ha identificado en la informacion disponible un modelo comparable de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacob-valdez/tensorcode-investigator-cognitive-experimental-001
+- Modelo en Hugging Face: https://huggingface.co/jacob-valdez/tensorcode-investigator-cognitive-experimental-001
 - Codigo TensorCode (repositorio, commit `b26785d`, version 0.3.0a1): https://github.com/TensaCo/tensacode-py
 - Modelo base del generador: https://huggingface.co/google/flan-t5-small (commit `0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab`)
 - Modelo base del verificador: https://huggingface.co/cross-encoder/nli-deberta-v3-small (commit `fa2804872c3b4bd748f38c0185cc85775361e735`)

@@ -80,7 +80,7 @@ No se dispone de resultados de rendimiento de MambaClimateNet, por lo que la com
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MambaClimateNet | SSM (Mamba) bidireccional con embedding variado invertido y RevIN | no disponible | no disponible | unknown (no declarada) | Espejo en HuggingFace sin pesos (0.0 GB) |
+| MambaClimateNet | SSM (Mamba) bidireccional con embedding variado invertido y RevIN | no disponible | no disponible | unknown (no declarada) | Espejo en Hugging Face sin pesos (0.0 GB) |
 | iTransformer | Transformer con embedding invertido (atención entre variables) | no disponible | no disponible | no disponible | no disponible |
 | PatchTST | Transformer basado en parches, canal independiente | no disponible | no disponible | no disponible | no disponible |
 | DLinear | Modelo lineal (descomposición tendencia-estacionalidad) | no disponible | no disponible | no disponible | no disponible |
@@ -91,7 +91,7 @@ La diferencia arquitectónica principal frente a las alternativas basadas en Tra
 
 - Licencia sin declarar: la fuente original no especifica licencia, por lo que no puede asumirse ningún permiso de uso comercial. Todos los derechos quedan en manos de los autores originales.
 - Es un espejo no oficial: el repositorio ml-resources/MambaClimateNet replica el modelo de ModelScope y no constituye un lanzamiento del autor; puede quedar desactualizado o eliminarse sin aviso.
-- Ausencia de pesos: el tamaño del repositorio es de 0.0 GB, de modo que no se pueden ejecutar inferencias directamente desde HuggingFace sin obtener los pesos de la fuente original.
+- Ausencia de pesos: el tamaño del repositorio es de 0.0 GB, de modo que no se pueden ejecutar inferencias directamente desde Hugging Face sin obtener los pesos de la fuente original.
 - Validación comunitaria nula: 0 descargas y 0 likes en el momento de la consulta, sin incidencias, discusiones ni evidencia independiente de reproducibilidad.
 - Barrera idiomática: toda la documentación está en chino, lo que dificulta su adopción por parte de equipos hispanohablantes.
 - Sesgo geográfico y temporal: los datos de entrenamiento provienen de un conjunto diario de China (2020-2023) y de un conjunto horario multi-sitio de Kaggle. La generalización a otras regiones, altitudes o regímenes climáticos no está documentada ni garantizada.
@@ -105,7 +105,7 @@ La diferencia arquitectónica principal frente a las alternativas basadas en Tra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ml-resources/MambaClimateNet
+- Modelo en Hugging Face: https://huggingface.co/ml-resources/MambaClimateNet
 - Fuente original en ModelScope (ZHangang1/MambaClimateNet): https://www.modelscope.cn/models/ZHangang1/MambaClimateNet
 - Dataset diario de China (Kaggle): https://www.kaggle.com/datasets/shivamshinde1904/weather-data2000-2023?select=China_weather_data.csv
 - Dataset global horario (Kaggle): https://www.kaggle.com/datasets/nelgiriyewithana/global-weather-repository/data

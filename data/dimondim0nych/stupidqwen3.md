@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StupidQwen3 es un artefacto experimental publicado por el usuario dimondim0nych en HuggingFace, derivado del modelo Qwen3-1.7B de Alibaba. No se trata de un modelo entrenado ni ajustado, sino de una demostración controlada de degradación estructural: el autor aplicó una poda de capas (eliminación de la capa 0 de proyección de embeddings y de la capa 27 de proyección pre-logits) seguida de una cuantización extrema a `Q1_0` (aproximadamente 1 bit por parámetro) mediante llama.cpp. El resultado es un GGUF de unos 466 MB que conserva aproximadamente 1.270 millones de parámetros efectivos de los 1.931 millones originales.
+StupidQwen3 es un artefacto experimental publicado por el usuario dimondim0nych en Hugging Face, derivado del modelo Qwen3-1.7B de Alibaba. No se trata de un modelo entrenado ni ajustado, sino de una demostración controlada de degradación estructural: el autor aplicó una poda de capas (eliminación de la capa 0 de proyección de embeddings y de la capa 27 de proyección pre-logits) seguida de una cuantización extrema a `Q1_0` (aproximadamente 1 bit por parámetro) mediante llama.cpp. El resultado es un GGUF de unos 466 MB que conserva aproximadamente 1.270 millones de parámetros efectivos de los 1.931 millones originales.
 
 El propósito declarado es observar la mecánica del colapso de modelos de lenguaje: cómo un transformer pierde coherencia cuando se destruyen las proyecciones de entrada y salida y se fuerza una representación ternaria/binaria sin calibración. El autor documenta de forma explícita tres modos de fallo (alucinación semántica, sangrado de vocabulario y colapso en atractor degenerado) con ejemplos de salida reproducibles.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StupidQwen3 | 1.931 M (1.270 M efectivos) | no disponible | Colapsado por diseño | Apache 2.0 | HuggingFace (GGUF) |
-| Qwen3-1.7B | 1.700 M aprox. | no disponible en la informacion | Funcional | Apache 2.0 | HuggingFace |
-| Modelos GGUF Q1_0 de 1-2B (genéricos) | ~1-2 B | variable | Degradados pero funcionales | variable | HuggingFace |
+| StupidQwen3 | 1.931 M (1.270 M efectivos) | no disponible | Colapsado por diseño | Apache 2.0 | Hugging Face (GGUF) |
+| Qwen3-1.7B | 1.700 M aprox. | no disponible en la informacion | Funcional | Apache 2.0 | Hugging Face |
+| Modelos GGUF Q1_0 de 1-2B (genéricos) | ~1-2 B | variable | Degradados pero funcionales | variable | Hugging Face |
 
 La comparación relevante es con el propio Qwen3-1.7B: mismo origen y licencia, pero StupidQwen3 elimina dos capas y cuantiza a 1 bit sin calibración, por lo que no es un sustituto funcional. Frente a cuantizaciones GGUF convencionales de 1-2B (Q4_K_M, Q5_K_M), la diferencia es cualitativa: aquellas preservan coherencia aceptable, mientras que este artefacto está diseñado para fallar.
 
@@ -80,7 +80,7 @@ La comparación relevante es con el propio Qwen3-1.7B: mismo origen y licencia, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimondim0nych/stupidqwen3
+- Modelo en Hugging Face: https://huggingface.co/dimondim0nych/stupidqwen3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - llama.cpp (motor requerido): https://github.com/ggerganov/llama.cpp
 - No se han encontrado papers, blogs ni demos adicionales en la información proporcionada.

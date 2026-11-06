@@ -6,7 +6,7 @@ LightX2V Lightning for Qwen-Image-2.1 es un **adaptador LoRA destilado a 4 pasos
 
 Su relevancia es de tipo practico: la destilacion por pasos permite ejecutar un modelo de difusion de gran tamano con una fraccion del coste computacional habitual, algo critico cuando el objetivo es servir generacion de imagenes en produccion o en hardware limitado. El entrenamiento se realizo integramente sobre **16 NPU Huawei Ascend 910B** usando destilacion DMD dentro del framework LightX2V, lo que lo convierte tambien en un caso de referencia para el ecosistema de aceleradores no CUDA.
 
-El repositorio ocupa solo 0,2 GB (pesos del adaptador), no declara licencia en HuggingFace y no publica especificaciones propias del modelo base. La model card incluye ejemplos comparativos de misma semilla y mismo prompt entre el modelo base a 40 pasos y el LoRA a 4 pasos, tanto en texto-a-imagen como en edicion.
+El repositorio ocupa solo 0,2 GB (pesos del adaptador), no declara licencia en Hugging Face y no publica especificaciones propias del modelo base. La model card incluye ejemplos comparativos de misma semilla y mismo prompt entre el modelo base a 40 pasos y el LoRA a 4 pasos, tanto en texto-a-imagen como en edicion.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ El repositorio ocupa solo 0,2 GB (pesos del adaptador), no declara licencia en H
 | Resolucion de los ejemplos | 1024x1024 |
 | Libreria | diffusers |
 | Tamano del repositorio | 0,2 GB |
-| Descargas / likes en HuggingFace | 0 descargas / 15 likes |
+| Descargas / likes en Hugging Face | 0 descargas / 15 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -91,9 +91,9 @@ No se aportan metricas objetivas de similitud entre ambas salidas, ni tiempos de
 
 | Modelo | Tipo | Pasos de inferencia | Modelo base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lightx2v/Qwen-Image-2.1-Lightning | LoRA de destilacion | 4 | Qwen/Qwen-Image-2.1 | No disponible | HuggingFace (diffusers) |
-| Qwen/Qwen-Image-2.1 (base) | Modelo de difusion completo | 40 en los ejemplos comparativos | No aplica | No disponible en la informacion proporcionada | HuggingFace |
-| lightx2v/Qwen-Image-Lightning | LoRA de destilacion de la generacion anterior | No disponible en la informacion proporcionada | Qwen-Image (v1) | No disponible en la informacion proporcionada | HuggingFace y repositorio ModelTC/LightX2V-Qwen-Image-Lightning |
+| lightx2v/Qwen-Image-2.1-Lightning | LoRA de destilacion | 4 | Qwen/Qwen-Image-2.1 | No disponible | Hugging Face (diffusers) |
+| Qwen/Qwen-Image-2.1 (base) | Modelo de difusion completo | 40 en los ejemplos comparativos | No aplica | No disponible en la informacion proporcionada | Hugging Face |
+| lightx2v/Qwen-Image-Lightning | LoRA de destilacion de la generacion anterior | No disponible en la informacion proporcionada | Qwen-Image (v1) | No disponible en la informacion proporcionada | Hugging Face y repositorio ModelTC/LightX2V-Qwen-Image-Lightning |
 
 No se dispone de datos de parametros, contexto ni rendimiento cuantitativo de ninguno de los tres modelos en la informacion proporcionada, por lo que la comparacion se limita a tipo de artefacto, pasos de inferencia y via de distribucion. No se han identificado otros adaptadores Lightning de 4 pasos especificos para Qwen-Image-2.1 en los resultados de busqueda.
 
@@ -112,10 +112,10 @@ No se dispone de datos de parametros, contexto ni rendimiento cuantitativo de ni
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/lightx2v/Qwen-Image-2.1-Lightning
+- Pagina del modelo en Hugging Face: https://huggingface.co/lightx2v/Qwen-Image-2.1-Lightning
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio LightX2V (framework de entrenamiento e inferencia): https://github.com/ModelTC/LightX2V
 - Scripts de plataforma de LightX2V para hardware heterogeneo: https://github.com/ModelTC/LightX2V/tree/main/scripts/platforms
 - Repositorio de la version anterior del destilado: https://github.com/ModelTC/LightX2V-Qwen-Image-Lightning
-- Pagina en HuggingFace de la version anterior, lightx2v/Qwen-Image-Lightning: https://huggingface.co/lightx2v/Qwen-Image-Lightning
+- Pagina en Hugging Face de la version anterior, lightx2v/Qwen-Image-Lightning: https://huggingface.co/lightx2v/Qwen-Image-Lightning
 - Ficha de terceros sobre lightx2v/Qwen-Image-Lightning: https://huggingpeers.co/models/lightx2v/Qwen-Image-Lightning

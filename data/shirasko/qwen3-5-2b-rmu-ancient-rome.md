@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks comparables con otros modelos de la misma c
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/shirasko/qwen3.5-2b-rmu-ancient-rome
+- Repositorio del modelo en Hugging Face: https://huggingface.co/shirasko/qwen3.5-2b-rmu-ancient-rome
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Referencia de Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b

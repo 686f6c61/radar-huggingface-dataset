@@ -112,8 +112,8 @@ La comparación relevante es con la familia SmolLM2, de la que este modelo es de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Lattice-4D-Holographic-253M-Poincare-Instruct
-- Organización en HuggingFace: https://huggingface.co/DuoNeural
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Lattice-4D-Holographic-253M-Poincare-Instruct
+- Organización en Hugging Face: https://huggingface.co/DuoNeural
 - Web del laboratorio: https://duoneural.com
 - Repositorio de código (Lattice-CDM): https://github.com/DuoNeural/Lattice-CDM
 - Modelo base / profesor: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct

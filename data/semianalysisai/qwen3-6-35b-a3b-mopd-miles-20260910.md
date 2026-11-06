@@ -78,10 +78,10 @@ Mejora en held-out del alumno de 40 actualizaciones respecto al base: 31,9336 pu
 
 | Modelo | Parametros totales / activos | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-MOPD-Miles-20260910 (este modelo) | 35,505B / ~3B | no disponible | 42,09 % Countdown y 87,99 % grafos en held-out | no disponible | HuggingFace, safetensors |
-| Qwen/Qwen3.6-35B-A3B (base) | 35,505B / ~3B | no disponible | 10,16 % Countdown y 29,00 % grafos en held-out | no disponible | HuggingFace |
-| semianalysisai/Qwen3.6-35B-A3B-countdown-GRPO-20260909 (profesor) | misma familia base | no disponible | no disponible en esta ficha | no disponible | HuggingFace, revision `237a7f03...` |
-| semianalysisai/Qwen3.6-35B-A3B-graph-color-GRPO-20260909 (profesor) | misma familia base | no disponible | no disponible en esta ficha | no disponible | HuggingFace, revision `ec87f871...` |
+| Qwen3.6-35B-A3B-MOPD-Miles-20260910 (este modelo) | 35,505B / ~3B | no disponible | 42,09 % Countdown y 87,99 % grafos en held-out | no disponible | Hugging Face, safetensors |
+| Qwen/Qwen3.6-35B-A3B (base) | 35,505B / ~3B | no disponible | 10,16 % Countdown y 29,00 % grafos en held-out | no disponible | Hugging Face |
+| semianalysisai/Qwen3.6-35B-A3B-countdown-GRPO-20260909 (profesor) | misma familia base | no disponible | no disponible en esta ficha | no disponible | Hugging Face, revision `237a7f03...` |
+| semianalysisai/Qwen3.6-35B-A3B-graph-color-GRPO-20260909 (profesor) | misma familia base | no disponible | no disponible en esta ficha | no disponible | Hugging Face, revision `ec87f871...` |
 
 La comparacion con modelos MoE abiertos de terceros de tamano similar no es posible con los datos disponibles: no hay resultados de benchmarks generales publicados ni informacion de contexto o licencia del modelo base en la documentacion proporcionada.
 
@@ -101,7 +101,7 @@ La comparacion con modelos MoE abiertos de terceros de tamano similar no es posi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/semianalysisai/Qwen3.6-35B-A3B-MOPD-Miles-20260910
+- Modelo en Hugging Face: https://huggingface.co/semianalysisai/Qwen3.6-35B-A3B-MOPD-Miles-20260910
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Profesor de Countdown: https://huggingface.co/semianalysisai/Qwen3.6-35B-A3B-countdown-GRPO-20260909
 - Profesor de coloreado de grafos: https://huggingface.co/semianalysisai/Qwen3.6-35B-A3B-graph-color-GRPO-20260909

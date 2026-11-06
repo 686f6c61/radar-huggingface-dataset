@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Jhchung8228/3d-scene-understanding-reading53` no es un modelo de aprendizaje automatico entrenado, sino un cuaderno de notas de investigacion sobre comprension de escenas 3D publicado en HuggingFace bajo licencia MIT. Su contenido declarado se limita a dos ficheros de texto (`README.md` y `summary.md`) que recogen el planteamiento de un estudio: alcance de la pregunta de investigacion, factores de confusion probables, comparacion propuesta con lineas base emparejadas, requisitos de reproducibilidad, modos de fallo y preguntas abiertas. El propio autor indica explicitamente que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+El repositorio `Jhchung8228/3d-scene-understanding-reading53` no es un modelo de aprendizaje automatico entrenado, sino un cuaderno de notas de investigacion sobre comprension de escenas 3D publicado en Hugging Face bajo licencia MIT. Su contenido declarado se limita a dos ficheros de texto (`README.md` y `summary.md`) que recogen el planteamiento de un estudio: alcance de la pregunta de investigacion, factores de confusion probables, comparacion propuesta con lineas base emparejadas, requisitos de reproducibilidad, modos de fallo y preguntas abiertas. El propio autor indica explicitamente que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 El unico artefacto binario del repositorio es un fichero en formato safetensors con 16.576 parametros totales, una magnitud que corresponde a un tensor de prueba o marcador de posicion, no a un modelo funcional. Con ese orden de magnitud no es posible generar texto, razonar ni procesar senales 3D: un transformer de ese tamano no alcanza capacidad representacional util. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -50,7 +50,7 @@ Advertencia previa: ninguno de los casos siguientes implica ejecutar el modelo, 
 - Revision por pares y auditoria de afirmaciones: el repositorio ilustra una practica sana de separacion explicita entre planes e hipotesis, por un lado, y resultados experimentales, por otro. Sirve como referencia en discusiones sobre integridad de resultados.
 - Punto de partida bibliografico: las referencias y datasets propuestos que la nota menciona pueden usarse como lista inicial de verificacion para quien entra en comprension de escenas 3D, siempre contrastando cada referencia con la fuente original.
 - Docencia sobre higiene experimental: en un curso de posgrado, el repositorio funciona como caso de estudio sobre que datos minimos debe acompanar a un resultado (dataset, comandos, semillas, hardware, logs) antes de publicarlo.
-- Pruebas de herramientas de catalogacion de HuggingFace: al ser un repositorio con tag `research-notes`, licencia MIT y un tensor diminuto, resulta util para validar pipelines internos de indexacion, descarga y lectura de metadatos sin consumir ancho de banda ni almacenamiento.
+- Pruebas de herramientas de catalogacion de Hugging Face: al ser un repositorio con tag `research-notes`, licencia MIT y un tensor diminuto, resulta util para validar pipelines internos de indexacion, descarga y lectura de metadatos sin consumir ancho de banda ni almacenamiento.
 - Control negativo en auditorias de repositorios: permite comprobar si un sistema automatizado de evaluacion de modelos distingue correctamente entre un modelo entrenado y un cuaderno de notas con un tensor de relleno.
 
 ## Benchmarks y rendimiento
@@ -74,7 +74,7 @@ No disponible. No existen modelos comparables en el mismo rango de parametros (1
 | Referencia | Relacion con este repositorio | Datos de especificaciones |
 |---|---|---|
 | SceneGPT (arXiv:2408.06926) | Trabajo academico sobre uso de modelos de lenguaje preentrenados para comprension de escenas 3D sin preentrenamiento 3D | no disponible en la informacion proporcionada |
-| `alghamdily/reading-3d-scene-understanding` (HuggingFace) | Repositorio de nombre similar, aparentemente otra nota de lectura sobre el mismo tema | no disponible en la informacion proporcionada |
+| `alghamdily/reading-3d-scene-understanding` (Hugging Face) | Repositorio de nombre similar, aparentemente otra nota de lectura sobre el mismo tema | no disponible en la informacion proporcionada |
 
 No se dispone de parametros, contexto, rendimiento ni licencia de estas referencias en la informacion facilitada, por lo que no se incluye tabla comparativa cuantitativa.
 
@@ -92,7 +92,7 @@ No se dispone de parametros, contexto, rendimiento ni licencia de estas referenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jhchung8228/3d-scene-understanding-reading53
+- Repositorio en Hugging Face: https://huggingface.co/Jhchung8228/3d-scene-understanding-reading53
 - Repositorio de nombre similar localizado en la busqueda: https://huggingface.co/alghamdily/reading-3d-scene-understanding
 - SceneGPT: A Language Model for 3D Scene Understanding (arXiv): https://arxiv.org/abs/2408.06926
 - SceneGPT, version HTML en arXiv: https://arxiv.org/html/2408.06926v1

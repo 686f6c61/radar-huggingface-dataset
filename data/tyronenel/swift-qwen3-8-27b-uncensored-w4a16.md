@@ -104,7 +104,7 @@ No se dispone de datos comparativos con modelos de otras familias (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TyroneNel/Swift-Qwen3.8-27B-Uncensored-W4A16
+- Modelo en Hugging Face: https://huggingface.co/TyroneNel/Swift-Qwen3.8-27B-Uncensored-W4A16
 - Variante rapida (GPTQ-int4 en cabezas): https://huggingface.co/TyroneNel/Swift-Qwen3.8-27B-Uncensored-W4A16-fast
 - Modelo base directo (BF16 sin censura): https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
 - Modelo original del que deriva la version sin censura: https://huggingface.co/ukisai/Swift-Qwen3.8-27b

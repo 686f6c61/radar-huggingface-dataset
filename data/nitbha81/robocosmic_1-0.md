@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RoboCosmic_1.0 es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B, publicado por el usuario Nitbha81 en HuggingFace. El modelo base empleado es la versión cuantizada a 4 bits de Unsloth (`unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit`), sobre la que se ha aplicado un entrenamiento adicional utilizando las herramientas de Unsloth y TRL. Se distribuye bajo licencia Apache 2.0 y está etiquetado para generación de texto en inglés.
+RoboCosmic_1.0 es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B, publicado por el usuario Nitbha81 en Hugging Face. El modelo base empleado es la versión cuantizada a 4 bits de Unsloth (`unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit`), sobre la que se ha aplicado un entrenamiento adicional utilizando las herramientas de Unsloth y TRL. Se distribuye bajo licencia Apache 2.0 y está etiquetado para generación de texto en inglés.
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2.5, con 1.500 millones de parámetros, lo que lo sitúa en la categoría de modelos pequeños optimizados para despliegue en hardware de consumo. La model card publicada es mínima: no incluye información sobre el dataset de entrenamiento, el proceso de ajuste ni evaluaciones de rendimiento, por lo que la mayor parte de las especificaciones técnicas deben inferirse del modelo base.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RoboCosmic_1.0 | 1.5B | no disponible (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B (base) | 1.5B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2-1B | 1.2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy popular |
-| SmolLM2-1.7B | 1.7B | 8.192 tokens | Apache 2.0 | HuggingFace, popular |
+| RoboCosmic_1.0 | 1.5B | no disponible (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B (base) | 1.5B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2-1B | 1.2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy popular |
+| SmolLM2-1.7B | 1.7B | 8.192 tokens | Apache 2.0 | Hugging Face, popular |
 
 La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento publicados para RoboCosmic_1.0. Frente al modelo base Qwen2.5-1.5B, este ajuste no documenta mejoras medibles; frente a Llama 3.2-1B y SmolLM2-1.7B, carece de evaluaciones que permitan establecer una comparación rigurosa.
 
@@ -82,6 +82,6 @@ La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos
 
 ## Enlaces
 
-- [HuggingFace: Nitbha81/RoboCosmic_1.0](https://huggingface.co/Nitbha81/RoboCosmic_1.0)
+- [Hugging Face: Nitbha81/RoboCosmic_1.0](https://huggingface.co/Nitbha81/RoboCosmic_1.0)
 - [Modelo base: unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

@@ -4,7 +4,7 @@
 
 g2pW es un conversor de grafemas a fonemas (grapheme-to-phoneme, G2P) para mandarin, desarrollado por Yi-Chang Chen, Yu-Chuan Steven, Yen-Cheng Chang e Yi-Ren Yeh, y publicado en INTERSPEECH 2022. Resuelve un problema especifico del chino mandarin: la desambiguacion de polifonos, es decir, determinar la pronunciacion correcta de caracteres que tienen varias lecturas posibles segun el contexto (por ejemplo, caracteres como 行, 重 o 长). El modelo recibe una secuencia de caracteres y devuelve la transcripcion fonetica en notacion zhuyin (bopomofo) con tonos.
 
-La arquitectura es un BERT con una cabeza de clasificacion de softmax condicional ponderado (conditional weighted softmax), disenada para elegir entre las lecturas candidatas de cada caracter en funcion del contexto de la frase. El repositorio de HuggingFace aloja unicamente los checkpoints (PyTorch y ONNX) del modelo original, no el codigo de entrenamiento ni un pipeline de HuggingFace. El tamano total del repositorio es de 1,2 GB.
+La arquitectura es un BERT con una cabeza de clasificacion de softmax condicional ponderado (conditional weighted softmax), disenada para elegir entre las lecturas candidatas de cada caracter en funcion del contexto de la frase. El repositorio de Hugging Face aloja unicamente los checkpoints (PyTorch y ONNX) del modelo original, no el codigo de entrenamiento ni un pipeline de Hugging Face. El tamano total del repositorio es de 1,2 GB.
 
 Es relevante para sistemas de sintesis de voz (TTS) en mandarin, reconocimiento automatico de voz (ASR) y herramientas de aprendizaje de pronunciacion, donde la precision en la desambiguacion de polifonos afecta directamente a la naturalidad y correccion del audio generado. La licencia Apache 2.0 facilita su integracion en productos comerciales.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g2pW | G2P mandarin con desambiguacion de polifonos | no disponible | no disponible | Apache 2.0 | HuggingFace (checkpoints) y GitHub |
+| g2pW | G2P mandarin con desambiguacion de polifonos | no disponible | no disponible | Apache 2.0 | Hugging Face (checkpoints) y GitHub |
 | Modelos G2P genericos basados en reglas o diccionarios | G2P mandarin | no aplica | no aplica | variable | multiples |
 | Otros modelos BERT para polifonos en mandarin | Desambiguacion de polifonos | no disponible | no disponible | variable | no disponible en la informacion proporcionada |
 
@@ -76,13 +76,13 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 - Riesgo de error en polifonos poco frecuentes o en contextos ambiguos; la desambiguacion depende del contexto de la frase y puede fallar en textos muy cortos o ruidosos.
 - No se documentan sesgos especificos, pero al entrenarse sobre un corpus no disponible publicamente puede heredar sesgos de ese corpus.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda conservar la atribucion y la cita del paper.
-- El repositorio de HuggingFace solo contiene los checkpoints; el codigo, la tokenizacion y el preprocesado deben obtenerse del repositorio GitHub del proyecto.
+- El repositorio de Hugging Face solo contiene los checkpoints; el codigo, la tokenizacion y el preprocesado deben obtenerse del repositorio GitHub del proyecto.
 - No se dispone de informacion sobre el numero de parametros, la longitud maxima de entrada ni el rendimiento en benchmarks, lo que dificulta estimar su calidad frente a alternativas.
 - El ejemplo de la model card referencia la descarga desde `YC-Chen/g2pW`, mientras que el repositorio indicado es `q237891678n/g2pW`; conviene verificar la ruta de descarga antes de integrarlo en produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/q237891678n/g2pW
+- Repositorio Hugging Face: https://huggingface.co/q237891678n/g2pW
 - Repositorio GitHub oficial: https://github.com/GitYCC/g2pW
 - Paper (arXiv): https://arxiv.org/abs/2203.10430
 - DOI del paper: https://doi.org/10.21437/Interspeech.2022-216

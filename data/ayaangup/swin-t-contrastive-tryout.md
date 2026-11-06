@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ayaangup/swin-t-contrastive-tryout es un repositorio experimental publicado en HuggingFace por el usuario ayaangup. No se trata de un modelo entrenado, sino de una base de codigo que combina una implementacion propia de tipo Swin T con un objetivo de aprendizaje contrastivo, en una escala que el propio autor denomina "nano" y con un checkpoint de inicializacion destinado unicamente a pruebas de humo (smoke tests). El repositorio incluye `main.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
+ayaangup/swin-t-contrastive-tryout es un repositorio experimental publicado en Hugging Face por el usuario ayaangup. No se trata de un modelo entrenado, sino de una base de codigo que combina una implementacion propia de tipo Swin T con un objetivo de aprendizaje contrastivo, en una escala que el propio autor denomina "nano" y con un checkpoint de inicializacion destinado unicamente a pruebas de humo (smoke tests). El repositorio incluye `main.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
 El dato mas relevante para cualquier evaluacion es el numero real de parametros del checkpoint segun los metadatos de safetensors: 49.600. Esa cifra esta muy lejos de los aproximadamente 28 millones de parametros del Swin-T canonico, lo que confirma que el fichero no contiene un transformer visual completo, sino una inicializacion parcial o un subconjunto. El autor lo declara explicitamente: el checkpoint "no ha sido entrenado ni auditado" y no se reclama ninguna puntuacion de benchmark.
 
@@ -22,7 +22,7 @@ Su relevancia actual es, por tanto, limitada y acotada al ambito de la reproduci
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
-| Fecha de creacion | 2026-09-15 (fecha registrada en HuggingFace) |
+| Fecha de creacion | 2026-09-15 (fecha registrada en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ No consta que se haya completado ningun entrenamiento. La receta por defecto que
 - Pruebas de humo en integracion continua: el checkpoint de inicializacion valido permite comprobar que un pipeline de carga de safetensors, construccion del grafo y paso hacia adelante funciona sin errores, antes de disponer de pesos entrenados.
 - Punto de partida para investigacion en aprendizaje contrastivo: un equipo que quiera comparar estrategias de fusion (por ejemplo, fusion por tensor frente a concatenacion) puede usar este esqueleto como base y anadir su propio dataset.
 - Reproducibilidad y trazabilidad de experimentos: al incluir `training_args.json` y `config.json` versionados, sirve para registrar la receta exacta de un experimento y compararla con lineas base de capacidad equivalente.
-- Docencia y formacion: util para ilustrar como se estructura un repositorio de modelo en HuggingFace (pesos, configuracion, argumentos de entrenamiento y documentacion) sin la complejidad de un modelo grande.
+- Docencia y formacion: util para ilustrar como se estructura un repositorio de modelo en Hugging Face (pesos, configuracion, argumentos de entrenamiento y documentacion) sin la complejidad de un modelo grande.
 - Auditoria de implementaciones propias: permite revisar como se implementan atencion de consultas agrupadas o normalizacion por lotes en un codigo pequeno y legible.
 - No es adecuado para atencion al cliente, generacion de codigo, razonamiento, matematicas, agentes ni ninguna aplicacion de inferencia en produccion: no hay pesos entrenados ni evaluacion que lo respalde.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto / entrada | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ayaangup/swin-t-contrastive-tryout | 49.600 (checkpoint de inicializacion) | no disponible | Contrastivo (experimental) | BSD-3-Clause | Repositorio HuggingFace, 0 descargas |
+| ayaangup/swin-t-contrastive-tryout | 49.600 (checkpoint de inicializacion) | no disponible | Contrastivo (experimental) | BSD-3-Clause | Repositorio Hugging Face, 0 descargas |
 | Swin Transformer T canonico (Microsoft) | ~28,3 M | Imagenes 224x224, ventanas desplazadas | Clasificacion de imagenes (ImageNet-1k) | MIT (implementacion de referencia) | Pesos publicos ampliamente disponibles |
 | ViT-S/14 de DINOv2 (Meta) | ~21 M | Imagenes 518x518, parches de 14 | Representaciones visuales auto-supervisadas | Apache-2.0 / licencia de modelo propia | Pesos publicos, uso extendido |
 
@@ -88,5 +88,5 @@ La comparacion es estructuralmente desigual: el modelo analizado no dispone de p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayaangup/swin-t-contrastive-tryout
+- Hugging Face: https://huggingface.co/ayaangup/swin-t-contrastive-tryout
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la busqueda web realizada. Los resultados devueltos corresponden a hilos de Microsoft Community sin relacion tematica.

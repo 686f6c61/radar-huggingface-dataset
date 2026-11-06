@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-ace-04b-sglang-overlay-with-weight` es un artefacto publicado en HuggingFace con la etiqueta `security-research` y la advertencia explícita `not-for-production`. No es un modelo de lenguaje entrenado, sino una muestra inerte (specimen) diseñada para preservar un hallazgo de seguridad: el uso de la ruta `custom_materializer` en un manifiesto de overlay de SGLang como vector de carga de metadatos (denominado ACE en la nomenclatura del autor).
+`FrankLin00/mmrh-ace-04b-sglang-overlay-with-weight` es un artefacto publicado en Hugging Face con la etiqueta `security-research` y la advertencia explícita `not-for-production`. No es un modelo de lenguaje entrenado, sino una muestra inerte (specimen) diseñada para preservar un hallazgo de seguridad: el uso de la ruta `custom_materializer` en un manifiesto de overlay de SGLang como vector de carga de metadatos (denominado ACE en la nomenclatura del autor).
 
 El repositorio contiene pesos en formato `safetensors` con un recuento de parámetros de 4 (dato reportado por la plataforma), lo que confirma que no se trata de un modelo funcional sino de un contenedor mínimo para reproducir el hallazgo. El tamaño del repo es de 0,0 GB y no se declara pipeline, licencia ni idiomas.
 
@@ -38,7 +38,7 @@ Las muestras AFW del mismo corpus utilizan el payload inerte literal `PWNED-INER
 
 ## Casos de uso
 
-- Validación de escáneres de seguridad: usar el artefacto como caso de prueba negativo/positivo para comprobar que una herramienta de análisis de repositorios HuggingFace detecta la ruta `custom_materializer` en el manifiesto de overlay y la marca correctamente.
+- Validación de escáneres de seguridad: usar el artefacto como caso de prueba negativo/positivo para comprobar que una herramienta de análisis de repositorios Hugging Face detecta la ruta `custom_materializer` en el manifiesto de overlay y la marca correctamente.
 - Investigación académica en cadena de suministro de modelos: reproducir el hallazgo descrito en el `MANIFEST.json` de la colección para estudiar cómo se transportan metadatos maliciosos en artefactos aparentemente inofensivos.
 - Desarrollo de reglas de detección (SAST/SCA): alimentar pipelines de análisis estático con este espécimen para calibrar firmas que identifiquen materializadores personalizados en configuraciones de SGLang.
 - Formación y concienciación: demostrar en entornos aislados cómo un repositorio con pesos mínimos puede portar una ruta de ejecución en su manifiesto, sin ejecutar código real.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | FrankLin00/mmrh-ace-04b-sglang-overlay-with-weight | Espécimen de investigación de seguridad | 4 (metadatos) | no disponible | no disponible | Solo investigación, no producción |
 | Modelos de lenguaje de ~4B (p. ej. familias Qwen, Llama, Phi) | Modelo de lenguaje | ~4 000 M | 8k-128k típicamente | variables (Apache-2.0, Llama, MIT) | Inferencia general |
-| Repositorios de PoC de seguridad en HuggingFace | Espécimen de investigación | variable | no aplica | variable | Investigación |
+| Repositorios de PoC de seguridad en Hugging Face | Espécimen de investigación | variable | no aplica | variable | Investigación |
 
 La comparación con modelos de lenguaje de tamaño similar es engañosa por diseño: comparten el sufijo "04b" en el nombre, pero este artefacto no implementa ninguna arquitectura neuronal ni ofrece capacidades de generación. No se dispone de alternativas directamente comparables dentro de la misma categoría de espécimen de investigación en la información proporcionada.
 
@@ -79,5 +79,5 @@ La comparación con modelos de lenguaje de tamaño similar es engañosa por dise
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-ace-04b-sglang-overlay-with-weight
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-ace-04b-sglang-overlay-with-weight
 - No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales asociados al artefacto.

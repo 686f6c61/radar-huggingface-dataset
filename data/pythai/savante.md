@@ -17,7 +17,7 @@ Su relevancia es conceptual más que técnica: propone un patrón de "oficial ag
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible. Depende por completo del modelo anfitrión que cargue la sesión |
 | Tipos de cuantizacion | No aplica / no disponible. No hay pesos que cuantizar |
-| Idiomas soportados | No disponible (el campo de idiomas de la ficha de HuggingFace aparece vacío) |
+| Idiomas soportados | No disponible (el campo de idiomas de la ficha de Hugging Face aparece vacío) |
 | Licencia | MIT |
 | Formato de pesos | No contiene pesos. Los artefactos publicados son texto y datos: `.persona`, `.md`, `.json`, `.py`, `.sha256` |
 
@@ -60,7 +60,7 @@ El único resultado medible documentado es de verificación, no de rendimiento d
 - VRAM para inferencia: no aplica al repositorio. El consumo lo determina el modelo anfitrión elegido, que no está fijado por diseño.
 - GPU recomendadas: no disponibles. Dependen del modelo que cargue la sesión.
 - Ejecución en GPU de consumo: no aplica al artefacto; dependerá del modelo anfitrión.
-- Almacenamiento: el repositorio ocupa 0,0 GB según la ficha de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según la ficha de Hugging Face.
 - Opciones de despliegue: clonado por git del repositorio o del canon; ejecución como agente de Claude Code mediante `canon/.claude/agents/savante.md` y la skill `canon/.claude/skills/sagi/`; verificación offline con Python 3 y `pycryptodome` (sin red). No se documentan opciones tipo vLLM, llama.cpp, Ollama ni TGI, que no tienen sentido sin pesos.
 - Latencia y throughput: no disponibles.
 - Dependencia de sincronización: `scripts/sync_savante_hf.py` de mindX clona ambos repositorios de GitHub, contrasta cada fichero contra `PROOF.sha256` del canon, ejecuta `bind/savante_verify.py` y rechaza la publicación si algún check falla.
@@ -75,7 +75,7 @@ No disponible. SAVANTE no es comparable con modelos de pesos de la misma categor
 | Contexto | Depende del modelo anfitrión | No disponible |
 | Rendimiento en benchmarks | No publicado / no aplicable | No disponible |
 | Licencia | MIT | No disponible |
-| Disponibilidad | Repositorio público en HuggingFace y canon en GitHub | No disponible |
+| Disponibilidad | Repositorio público en Hugging Face y canon en GitHub | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No disponible. SAVANTE no es comparable con modelos de pesos de la misma categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PYTHAI/SAVANTE
+- Repositorio en Hugging Face: https://huggingface.co/PYTHAI/SAVANTE
 - Canon autoritativo (GitHub): https://github.com/cryptoAGI/savante
 - Motor sAGI (GitHub): https://github.com/cryptoAGI/sagi
 - Space público del officio: https://huggingface.co/spaces/PYTHAI/savante

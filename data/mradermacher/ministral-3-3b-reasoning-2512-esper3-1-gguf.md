@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Ministral-3-3B-Reasoning-2512-Esper3.1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Ministral-3-3B-Reasoning-2512-Esper3.1-GGUF
 - Modelo base del fine-tune: https://huggingface.co/ValiantLabs/Ministral-3-3B-Reasoning-2512-Esper3.1
 - Cuantizaciones con imatrix del mismo autor: https://huggingface.co/mradermacher/Ministral-3-3B-Reasoning-2512-Esper3.1-i1-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Ministral-3-3B-Reasoning-2512-Esper3.1-GGUF

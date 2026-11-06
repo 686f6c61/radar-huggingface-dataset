@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks medidos sobre la conversion onw frente a ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryugyosoft/granite-4.2-8b-onw
+- Modelo en Hugging Face: https://huggingface.co/ryugyosoft/granite-4.2-8b-onw
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Motor onw: https://huggingface.co/ryugyosoft/onw
 - Documentacion tecnica de onw: https://huggingface.co/ryugyosoft/onw/blob/main/TECHNICAL.md

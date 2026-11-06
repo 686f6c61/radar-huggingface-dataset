@@ -80,10 +80,10 @@ El autor advierte que son mediciones de una sola ejecucion y que las cifras vari
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (oQ6e-mtp) | 27,78B denso | 262k | MLX safetensors, oMLX ≥ 0.7.1 | Apache-2.0 | HuggingFace, 86 descargas |
-| khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled (BF16) | 27,78B denso | 262k | safetensors BF16 (~54 GB) | Apache-2.0 declarada, pendiente de confirmar | HuggingFace, modelo fuente |
-| hakunokina oQ8e-mtp | 27,78B denso | 262k | MLX safetensors (~28 GB), oMLX | Apache-2.0 | HuggingFace |
-| hakunokina oQ4e-mtp | 27,78B denso | 262k | MLX safetensors (~16 GB), oMLX | Apache-2.0 | HuggingFace |
+| Este modelo (oQ6e-mtp) | 27,78B denso | 262k | MLX safetensors, oMLX ≥ 0.7.1 | Apache-2.0 | Hugging Face, 86 descargas |
+| khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled (BF16) | 27,78B denso | 262k | safetensors BF16 (~54 GB) | Apache-2.0 declarada, pendiente de confirmar | Hugging Face, modelo fuente |
+| hakunokina oQ8e-mtp | 27,78B denso | 262k | MLX safetensors (~28 GB), oMLX | Apache-2.0 | Hugging Face |
+| hakunokina oQ4e-mtp | 27,78B denso | 262k | MLX safetensors (~16 GB), oMLX | Apache-2.0 | Hugging Face |
 
 Las tres builds de hakunokina comparten arquitectura, contexto y licencia; la diferencia esta en el tamano y en la fidelidad frente al BF16, que solo esta documentada para la variante oQ6e. No se dispone de datos de benchmarks que permitan comparar el rendimiento en tareas con modelos de otras familias del mismo tamano, por lo que esa comparacion figura como no disponible.
 
@@ -101,7 +101,7 @@ Las tres builds de hakunokina comparten arquitectura, contexto y licencia; la di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hakunokina/Qwen3.8-27B-Fable-5-Coding-Distilled-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/hakunokina/Qwen3.8-27B-Fable-5-Coding-Distilled-oQ6e-mtp
 - Modelo fuente (ajuste de codigo): https://huggingface.co/khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Build oQ8e-mtp: https://huggingface.co/hakunokina/Qwen3.8-27B-Fable-5-Coding-Distilled-oQ8e-mtp

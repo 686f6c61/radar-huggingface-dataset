@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento en tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keptn/ornith-1.5-9b-fp8
+- Modelo en Hugging Face: https://huggingface.co/keptn/ornith-1.5-9b-fp8
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Versión bf16 del mismo autor: https://huggingface.co/keptn/ornith-1.5-9b-bf16
 - Repositorio del equipo Ornith: https://github.com/ornith-ai/Ornith-1

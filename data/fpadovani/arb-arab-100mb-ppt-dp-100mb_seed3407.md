@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed3407 | 124.770.816 | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tune SFT del modelo Goldfish árabe |
-| goldfish-models/arb_arab_100mb (base) | ~124 M (no confirmado) | no disponible | no disponible | HuggingFace | Modelo monolingüe árabe sobre 100 MB de texto |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT (según su repositorio) | HuggingFace | Referencia de la arquitectura; entrenado en inglés |
+| fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed3407 | 124.770.816 | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tune SFT del modelo Goldfish árabe |
+| goldfish-models/arb_arab_100mb (base) | ~124 M (no confirmado) | no disponible | no disponible | Hugging Face | Modelo monolingüe árabe sobre 100 MB de texto |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT (según su repositorio) | Hugging Face | Referencia de la arquitectura; entrenado en inglés |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/11dkf4vm

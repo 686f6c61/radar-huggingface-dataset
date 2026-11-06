@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño compacto y en la accesibilidad
 
 ## Arquitectura y entrenamiento
 
-No se ha proporcionado información detallada sobre la arquitectura interna del modelo en la ficha de HuggingFace ni en los resultados de búsqueda. El modelo base `google/gemma-3-270m` es un modelo de la familia Gemma 3 de Google, pero los datos específicos sobre su arquitectura (número de capas, tipo de atención, etc.) y su proceso de entrenamiento (tokens utilizados, dataset, técnicas de alineación) no están disponibles en la información suministrada. Se sabe únicamente que ha sido convertido a formato GGUF mediante llama.cpp, lo que implica que el modelo original estaba disponible en formato safetensors o similar. Para obtener detalles técnicos completos, se recomienda consultar la ficha del modelo original en HuggingFace.
+No se ha proporcionado información detallada sobre la arquitectura interna del modelo en la ficha de Hugging Face ni en los resultados de búsqueda. El modelo base `google/gemma-3-270m` es un modelo de la familia Gemma 3 de Google, pero los datos específicos sobre su arquitectura (número de capas, tipo de atención, etc.) y su proceso de entrenamiento (tokens utilizados, dataset, técnicas de alineación) no están disponibles en la información suministrada. Se sabe únicamente que ha sido convertido a formato GGUF mediante llama.cpp, lo que implica que el modelo original estaba disponible en formato safetensors o similar. Para obtener detalles técnicos completos, se recomienda consultar la ficha del modelo original en Hugging Face.
 
 ## Capacidades
 
@@ -78,8 +78,8 @@ La principal diferencia entre estas versiones es el nivel de cuantización: el m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dushulang/gemma-3-270m-Q2_K-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/google/gemma-3-270m
+- Repositorio Hugging Face: https://huggingface.co/dushulang/gemma-3-270m-Q2_K-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/google/gemma-3-270m
 - Versión GGUF alternativa (unsloth): https://huggingface.co/unsloth/gemma-3-270m-it-GGUF
 - Página de Gemma 3 en Google DeepMind: https://deepmind.google/models/gemma/gemma-3/
 - Blog de Google Developers sobre Gemma 3 270M: https://developers.googleblog.com/en/introducing-gemma-3-270m/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LUNA-IRiS-models es un repositorio publicado en HuggingFace por el usuario harshaleemalu03 bajo el identificador `harshaleemalu03/LUNA-IRiS-models`. Se trata de un lanzamiento con una model card practicamente vacia: el unico contenido del README es la declaracion de licencia MIT, sin descripcion del modelo, del entrenamiento ni de las capacidades. No hay pipeline declarado, no se indican idiomas soportados y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta.
+LUNA-IRiS-models es un repositorio publicado en Hugging Face por el usuario harshaleemalu03 bajo el identificador `harshaleemalu03/LUNA-IRiS-models`. Se trata de un lanzamiento con una model card practicamente vacia: el unico contenido del README es la declaracion de licencia MIT, sin descripcion del modelo, del entrenamiento ni de las capacidades. No hay pipeline declarado, no se indican idiomas soportados y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
 La unica informacion cuantitativa disponible es el tamano del repositorio, 1,3 GB, y las fechas de creacion y ultima actualizacion, ambas del 19 de septiembre de 2026, con apenas cuatro minutos de diferencia entre ellas. Un repositorio de ese tamano es compatible con un modelo de escala pequena o mediana almacenado en fp16 o en algun formato cuantizado, pero no es posible confirmar el numero de parametros ni la arquitectura a partir de ese dato.
 
@@ -20,7 +20,7 @@ Su relevancia actual es, por tanto, limitada y de caracter exploratorio: se trat
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio contiene 1,3 GB de archivos sin formato declarado) |
 | Autor | harshaleemalu03 |
-| Identificador en HuggingFace | harshaleemalu03/LUNA-IRiS-models |
+| Identificador en Hugging Face | harshaleemalu03/LUNA-IRiS-models |
 | Pipeline declarado | no disponible |
 | Tamano del repositorio | 1,3 GB |
 | Fecha de creacion | 19 de septiembre de 2026 |
@@ -33,7 +33,7 @@ Su relevancia actual es, por tanto, limitada y de caracter exploratorio: se trat
 
 No hay informacion disponible sobre la arquitectura del modelo. La model card no menciona si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido, ni tampoco incluye referencias a un paper, a un repositorio de codigo o a una receta de entrenamiento.
 
-Tampoco se ha publicado informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o tecnicas de cuantizacion propias. El unico dato objetivo es el tamano del repositorio (1,3 GB) y la presencia de la etiqueta `region:us`, que en HuggingFace indica la region de almacenamiento del repositorio, no una caracteristica del modelo.
+Tampoco se ha publicado informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o tecnicas de cuantizacion propias. El unico dato objetivo es el tamano del repositorio (1,3 GB) y la presencia de la etiqueta `region:us`, que en Hugging Face indica la region de almacenamiento del repositorio, no una caracteristica del modelo.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni el rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshaleemalu03/LUNA-IRiS-models
+- Modelo en Hugging Face: https://huggingface.co/harshaleemalu03/LUNA-IRiS-models
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

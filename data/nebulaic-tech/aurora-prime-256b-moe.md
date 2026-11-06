@@ -75,7 +75,7 @@ No es posible realizar una comparativa fiable porque no se conoce el tamaño rea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nebulaic-tech/aurora-prime-256b-moe
+- Hugging Face: https://huggingface.co/nebulaic-tech/aurora-prime-256b-moe
 - Sitio web de Nebulaic Tech: https://nebulaictech.com
 - Nebulaic Studio: https://studio.nebulaictech.com
 - Documentación (según model card): https://nebulaictech.com

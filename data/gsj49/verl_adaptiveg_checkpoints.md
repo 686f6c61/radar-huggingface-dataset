@@ -79,12 +79,12 @@ Dado que estos checkpoints son adaptaciones de modelos Qwen existentes, la compa
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B (base) | 8B | 32K (ampliable a 128K) | Preentrenamiento + RLHF | Apache 2.0 | HuggingFace |
-| Qwen3-8B Math (Adaptive-G, este repo) | 8B | no disponible | RLVR con common sketch | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-7B (base) | 7B | 128K | Preentrenamiento + SFT | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-7B (Adaptive-G, este repo) | 7B | no disponible | RLVR con common sketch | Apache 2.0 | HuggingFace |
-| Qwen3-4B (base) | 4B | 32K (ampliable a 128K) | Preentrenamiento + RLHF | Apache 2.0 | HuggingFace |
-| Qwen3-4B Code (Adaptive-G, este repo) | 4B | no disponible | RLVR con common sketch | Apache 2.0 | HuggingFace |
+| Qwen3-8B (base) | 8B | 32K (ampliable a 128K) | Preentrenamiento + RLHF | Apache 2.0 | Hugging Face |
+| Qwen3-8B Math (Adaptive-G, este repo) | 8B | no disponible | RLVR con common sketch | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-7B (base) | 7B | 128K | Preentrenamiento + SFT | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-7B (Adaptive-G, este repo) | 7B | no disponible | RLVR con common sketch | Apache 2.0 | Hugging Face |
+| Qwen3-4B (base) | 4B | 32K (ampliable a 128K) | Preentrenamiento + RLHF | Apache 2.0 | Hugging Face |
+| Qwen3-4B Code (Adaptive-G, este repo) | 4B | no disponible | RLVR con common sketch | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar los checkpoints Adaptive-G con sus modelos base u otras alternativas como DeepSeek, Llama o Mistral en las mismas tareas.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento para comparar los checkpoints Adaptive-G c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gsj49/verl_adaptiveg_checkpoints
+- Repositorio Hugging Face: https://huggingface.co/Gsj49/verl_adaptiveg_checkpoints
 - Repositorio relacionado (verl_reasoning_checkpoints): https://huggingface.co/Gsj49/verl_reasoning_checkpoints
 - Perfil de GitHub del autor: https://github.com/Gsj49
 - Repositorios de GitHub del autor: https://github.com/Gsj49?tab=repositories

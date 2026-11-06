@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `coderfast/chat_model` es un modelo de generación de texto publicado por el usuario coderfast en HuggingFace. Está etiquetado como bilingüe en inglés y español, con licencia MIT y orientado a tareas de text-generation. El repositorio ocupa 0.2 GB, lo que sugiere un modelo de pequeño tamaño, aunque no se especifican detalles de arquitectura, número de parámetros ni longitud de contexto.
+El modelo `coderfast/chat_model` es un modelo de generación de texto publicado por el usuario coderfast en Hugging Face. Está etiquetado como bilingüe en inglés y español, con licencia MIT y orientado a tareas de text-generation. El repositorio ocupa 0.2 GB, lo que sugiere un modelo de pequeño tamaño, aunque no se especifican detalles de arquitectura, número de parámetros ni longitud de contexto.
 
 Al carecer de model card detallada y benchmarks publicados, la ficha técnica se limita a la información disponible en los metadatos del repositorio. El modelo puede ser relevante para desarrolladores que busquen una solución open source con licencia permisiva para aplicaciones de conversación o generación de texto en inglés y español, pero se requiere una evaluación previa para determinar su rendimiento real.
 
@@ -27,7 +27,7 @@ No se ha publicado información sobre la arquitectura, los datos de entrenamient
 
 Las capacidades no están documentadas más allá de los metadatos del repositorio. A partir de la información disponible se puede deducir lo siguiente:
 
-- Generación de texto: el pipeline de HuggingFace es `text-generation`, lo que indica que el modelo está pensado para producir texto.
+- Generación de texto: el pipeline de Hugging Face es `text-generation`, lo que indica que el modelo está pensado para producir texto.
 - Soporte bilingüe: las etiquetas de idioma incluyen `en` y `es`, por lo que se presume capacidad para procesar y generar texto en inglés y español.
 - Sin información sobre tool calling, function calling, agentes, razonamiento multi-step, visión, audio o modo de pensamiento. Estas capacidades no están confirmadas ni documentadas.
 - No se disponen de métricas de rendimiento para evaluar la calidad de la generación.
@@ -67,4 +67,4 @@ No disponible. No hay datos suficientes para comparar este modelo con alternativ
 
 ## Enlaces
 
-- [Repositorio en HuggingFace: `coderfast/chat_model`](https://huggingface.co/coderfast/chat_model)
+- [Repositorio en Hugging Face: `coderfast/chat_model`](https://huggingface.co/coderfast/chat_model)

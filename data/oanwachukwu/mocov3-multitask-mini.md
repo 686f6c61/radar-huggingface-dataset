@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oanwachukwu/mocov3-multitask-mini` es un repositorio de HuggingFace publicado por el usuario oanwachukwu que contiene una implementación propia de MoCo v3 orientada a aprendizaje multitarea, con una configuración declarada como "base". El repositorio no es un modelo entrenado: el autor indica explícitamente que el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que **no** debe presentarse como un checkpoint con benchmarks. El propio README renuncia de forma deliberada a cualquier afirmación de rendimiento.
+`oanwachukwu/mocov3-multitask-mini` es un repositorio de Hugging Face publicado por el usuario oanwachukwu que contiene una implementación propia de MoCo v3 orientada a aprendizaje multitarea, con una configuración declarada como "base". El repositorio no es un modelo entrenado: el autor indica explícitamente que el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que **no** debe presentarse como un checkpoint con benchmarks. El propio README renuncia de forma deliberada a cualquier afirmación de rendimiento.
 
 El dato más relevante es su tamaño: el recuento real de parámetros en safetensors es de 16.576, una cifra de tres a cinco órdenes de magnitud inferior a la que cabría esperar de una configuración "base" de un transformer de visión. El repositorio ocupa 0,0 GB y no registra descargas ni "likes", lo que sugiere un artefacto de desarrollo más que un modelo distribuible.
 
@@ -20,7 +20,7 @@ Por tanto, su relevancia no reside en capacidades de inferencia —no las tiene 
 | Idiomas soportados | no disponible (no se declara ningún idioma) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (`model.safetensors`), acompañado de `model.py`, `config.json` y `training_args.json` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-25 |
@@ -52,7 +52,7 @@ Los siguientes escenarios son aplicables al artefacto tal y como está publicado
 - Reproducción de baselines en investigación autosupervisada: el repositorio proporciona una receta reproducible (RMSprop con schedule step) y pide explícitamente comparaciones con la misma exposición de datos y presupuesto de ajuste, lo que lo hace útil como punto de partida metodológico en estudios de aprendizaje multitarea.
 - Prototipado de arquitecturas híbridas: permite experimentar con combinaciones poco comunes —atención dilatada más fusión Tucker, activación gelu+tanh, normalización ScaleNorm— antes de escalar a configuraciones mayores, a un coste computacional prácticamente nulo.
 - Auditoría de configuraciones de entrenamiento: `config.json` y `training_args.json` documentan la receta por defecto, de modo que se pueden contrastar decisiones de optimizador y scheduler frente a alternativas como AdamW o schedules coseno.
-- Validación de adaptadores de carga personalizados: dado que se trata de una implementación propia, las APIs genéricas de carga de HuggingFace requieren un adaptador explícito. El repositorio es un banco de pruebas realista para desarrollar y verificar ese adaptador.
+- Validación de adaptadores de carga personalizados: dado que se trata de una implementación propia, las APIs genéricas de carga de Hugging Face requieren un adaptador explícito. El repositorio es un banco de pruebas realista para desarrollar y verificar ese adaptador.
 - Docencia y divulgación técnica: con 16.576 parámetros y un repositorio de 0,0 GB, el modelo se ejecuta en cualquier portátil sin GPU, lo que facilita explicar el flujo completo de carga de pesos, inicialización y forward pass en un curso o taller.
 
 ## Benchmarks y rendimiento
@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oanwachukwu/mocov3-multitask-mini | 16.576 | no disponible | sin benchmarks declarados | MIT | HuggingFace, 0 descargas |
+| oanwachukwu/mocov3-multitask-mini | 16.576 | no disponible | sin benchmarks declarados | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 - El checkpoint no ha sido entrenado. El autor lo describe como inicialización para pruebas de humo, no como modelo funcional. Cualquier uso generativo o predictivo carece de base.
 - No se han publicado benchmarks, métricas de tarea ni evaluaciones de robustez, equidad o transferencia de dominio.
 - La etiqueta "base" de la configuración contradice el recuento real de 16.576 parámetros; conviene tratar la escala declarada con escepticismo.
-- Al ser una implementación propia, las APIs automáticas de carga de HuggingFace no funcionan sin escribir un adaptador específico, lo que añade trabajo de integración.
+- Al ser una implementación propia, las APIs automáticas de carga de Hugging Face no funcionan sin escribir un adaptador específico, lo que añade trabajo de integración.
 - Riesgo de alucinación y sesgos: no evaluables, dado que no existe un modelo entrenado sobre el que medirlos.
 - Limitaciones de contexto e idioma: no disponibles; no se documenta ventana de contexto ni cobertura lingüística.
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución y sin garantía. El propio autor advierte de que deben revisarse por separado los términos de los datos de origen si se combina el repositorio con conjuntos de datos externos.
@@ -90,6 +90,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oanwachukwu/mocov3-multitask-mini
+- Hugging Face: https://huggingface.co/oanwachukwu/mocov3-multitask-mini
 
 Nota: la búsqueda web realizada no devolvió ningún enlace técnico relevante sobre este modelo. Los resultados obtenidos correspondían a contenido no relacionado con el ámbito de la inteligencia artificial y han sido descartados en su totalidad; no se incluyen por no aportar información verificable sobre el artefacto.

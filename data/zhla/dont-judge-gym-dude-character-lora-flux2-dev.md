@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dont-Judge-Gym-Dude-Character-LoRA-FLUX2-Dev es un adaptador LoRA para el modelo de difusion FLUX.2-dev de Black Forest Labs, publicado por el usuario ZhLa en HuggingFace. Su proposito es inyectar en el modelo base la representacion de un personaje concreto de estilo animacion 2D, de modo que FLUX.2-dev pueda generar imagenes coherentes de ese personaje a partir de prompts de texto e imagen de referencia. El repositorio es minimo (0,4 GB) y contiene unicamente los pesos del adaptador, no un modelo completo.
+Dont-Judge-Gym-Dude-Character-LoRA-FLUX2-Dev es un adaptador LoRA para el modelo de difusion FLUX.2-dev de Black Forest Labs, publicado por el usuario ZhLa en Hugging Face. Su proposito es inyectar en el modelo base la representacion de un personaje concreto de estilo animacion 2D, de modo que FLUX.2-dev pueda generar imagenes coherentes de ese personaje a partir de prompts de texto e imagen de referencia. El repositorio es minimo (0,4 GB) y contiene unicamente los pesos del adaptador, no un modelo completo.
 
 Se trata de un artefacto de investigacion con un volumen de descargas muy bajo (15 descargas, 0 likes en el momento de la consulta) y una model card practicamente vacia: solo declara la licencia, el idioma y el modelo base, sin especificaciones tecnicas, datos de entrenamiento ni ejemplos. Por tanto, la mayor parte de las especificaciones habituales de una ficha (parametros, contexto, benchmarks) no estan disponibles y se indican como tales.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dont-Judge-Gym-Dude-Character-LoRA-FLUX2-Dev | LoRA de personaje | FLUX.2-dev | texto + imagen | other | HuggingFace (15 descargas) |
-| FLUX.2-dev | Modelo de difusion completo | - | texto + imagen | no disponible en esta ficha | HuggingFace (Black Forest Labs) |
-| LoRA de personaje sobre FLUX.1-dev (familia anterior) | LoRA de personaje | FLUX.1-dev | texto + imagen | varía por autor | HuggingFace (multiples) |
+| Dont-Judge-Gym-Dude-Character-LoRA-FLUX2-Dev | LoRA de personaje | FLUX.2-dev | texto + imagen | other | Hugging Face (15 descargas) |
+| FLUX.2-dev | Modelo de difusion completo | - | texto + imagen | no disponible en esta ficha | Hugging Face (Black Forest Labs) |
+| LoRA de personaje sobre FLUX.1-dev (familia anterior) | LoRA de personaje | FLUX.1-dev | texto + imagen | varía por autor | Hugging Face (multiples) |
 
 No se dispone de datos de rendimiento comparativo ni de especificaciones del modelo base en la informacion proporcionada, por lo que la comparativa se limita a categoria, modelo base y licencia.
 
@@ -85,5 +85,5 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones del mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZhLa/Dont-Judge-Gym-Dude-Character-LoRA-FLUX2-Dev
+- Repositorio Hugging Face: https://huggingface.co/ZhLa/Dont-Judge-Gym-Dude-Character-LoRA-FLUX2-Dev
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-dev

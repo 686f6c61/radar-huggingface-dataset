@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alvdansen/h3-keyframe-animation` es un adaptador LoRA publicado en HuggingFace por el usuario alvdansen, pensado para el modelo base de generación de vídeo MiniMaxAI/MiniMax-H3. Su función declarada es la animación por fotogramas clave (keyframe animation) e interpolación de intermedios (inbetweening) sobre animación dibujada a mano, dentro del pipeline de image-to-video. No es un modelo de lenguaje ni un modelo generativo completo: se distribuye como complemento que se aplica sobre el modelo base.
+`alvdansen/h3-keyframe-animation` es un adaptador LoRA publicado en Hugging Face por el usuario alvdansen, pensado para el modelo base de generación de vídeo MiniMaxAI/MiniMax-H3. Su función declarada es la animación por fotogramas clave (keyframe animation) e interpolación de intermedios (inbetweening) sobre animación dibujada a mano, dentro del pipeline de image-to-video. No es un modelo de lenguaje ni un modelo generativo completo: se distribuye como complemento que se aplica sobre el modelo base.
 
-El repositorio ocupa 5,6 GB y se distribuye bajo la librería diffusers, con licencia propia denominada `h3-keyframe-animation-adapter-license-1.0.0`. El acceso está restringido: es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo. Acumula 38 "likes" y cero descargas contabilizadas en los datos disponibles, con fecha de creación del 14 de agosto de 2026 y última actualización del 27 de septiembre de 2026.
+El repositorio ocupa 5,6 GB y se distribuye bajo la librería diffusers, con licencia propia denominada `h3-keyframe-animation-adapter-license-1.0.0`. El acceso está restringido: es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo. Acumula 38 "likes" y cero descargas contabilizadas en los datos disponibles, con fecha de creación del 14 de agosto de 2026 y última actualización del 27 de septiembre de 2026.
 
 Su relevancia es acotada y muy específica de nicho: automatizar el trabajo mecánico de dibujar los fotogramas intermedios entre dos claves de una secuencia animada, un paso tradicionalmente manual y costoso en los estudios de animación 2D. La información pública disponible no detalla arquitectura interna, número de parámetros, datos de entrenamiento ni resultados de benchmarks.
 
@@ -72,7 +72,7 @@ No hay datos de metricas objetivas para esta tarea (por ejemplo, FID, LPIPS, con
 
 | Modelo | Tipo | Modelo base | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| alvdansen/h3-keyframe-animation | LoRA de animacion por keyframes | MiniMaxAI/MiniMax-H3 | h3-keyframe-animation-adapter-license-1.0.0 | Acceso restringido en HuggingFace | no disponible |
+| alvdansen/h3-keyframe-animation | LoRA de animacion por keyframes | MiniMaxAI/MiniMax-H3 | h3-keyframe-animation-adapter-license-1.0.0 | Acceso restringido en Hugging Face | no disponible |
 | Alternativas de inbetweening por interpolacion de fotogramas (por ejemplo, RIFE o FILM) | Interpolacion no generativa | no aplica | variable segun proyecto | Codigo abierto en repositorios publicos | no disponible en la informacion proporcionada |
 | Otros LoRA de video para modelos de difusion | LoRA de video | variable | variable | variable | no disponible en la informacion proporcionada |
 
@@ -80,7 +80,7 @@ No se dispone de datos numericos que permitan una comparacion cuantitativa fiabl
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga, lo que condiciona su uso en pipelines automatizados y en entornos de CI.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga, lo que condiciona su uso en pipelines automatizados y en entornos de CI.
 - Licencia no estandar: la licencia `h3-keyframe-animation-adapter-license-1.0.0` no es una licencia de codigo abierto conocida. Es imprescindible revisar el texto completo antes de cualquier uso comercial, ya que las condiciones de atribucion, redistribucion y uso comercial no se detallan en la informacion disponible.
 - Dependencia total del modelo base: el adaptador no funciona por si solo; hereda las limitaciones tecnicas y legales de MiniMaxAI/MiniMax-H3, cuyas condiciones de uso no se recogen aqui.
 - Rendimiento no verificado: con 0 descargas registradas y sin benchmarks publicados, no existe evidencia independiente sobre la calidad del inbetweening generado.
@@ -92,7 +92,7 @@ No se dispone de datos numericos que permitan una comparacion cuantitativa fiabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alvdansen/h3-keyframe-animation
+- Modelo en Hugging Face: https://huggingface.co/alvdansen/h3-keyframe-animation
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Paper, blog, repositorio o demo oficiales: no disponible
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre este modelo, su modelo base ni sobre tecnicas de inbetweening asociadas.

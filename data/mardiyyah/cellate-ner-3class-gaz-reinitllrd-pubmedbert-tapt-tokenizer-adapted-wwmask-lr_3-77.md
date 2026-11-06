@@ -63,7 +63,7 @@ Estos valores corresponden al mejor checkpoint (época 14) y no se comparan con 
 - VRAM estimada para inferencia: con 110M de parámetros en FP32, los pesos ocupan aproximadamente 0,44 GB; en FP16 se reduce a ~0,22 GB. Considerando activaciones y overhead, se recomienda al menos 2-4 GB de VRAM para inferencia en lotes pequeños.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente, por ejemplo NVIDIA GTX 1650, RTX 3060, RTX 4090, o GPUs de datacenter como A10 o A100.
 - Es compatible con GPUs de consumo (consumer) de gama media y baja.
-- Opciones de despliegue: se puede servir con la librería Transformers de HuggingFace, o exportar a ONNX para optimización. También es posible usar vLLM o TGI, aunque al ser un modelo encoder de clasificación, el uso típico es mediante pipelines de transformers o inferencia directa.
+- Opciones de despliegue: se puede servir con la librería Transformers de Hugging Face, o exportar a ONNX para optimización. También es posible usar vLLM o TGI, aunque al ser un modelo encoder de clasificación, el uso típico es mediante pipelines de transformers o inferencia directa.
 - Latencia y throughput: no se dispone de datos medidos; en una GPU moderna, la inferencia sobre una secuencia de 512 tokens suele completarse en decenas de milisegundos.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mardiyyah/CeLLaTe-ner-3class-gaz-reinitLLRD-pubmedbert-tapt-tokenizer-adapted-wwmask-lr_3.77
+- Modelo en Hugging Face: https://huggingface.co/Mardiyyah/CeLLaTe-ner-3class-gaz-reinitLLRD-pubmedbert-tapt-tokenizer-adapted-wwmask-lr_3.77
 - Modelo base: https://huggingface.co/Mardiyyah/CeLLaTe-tapt-pubmedbert-tokenizer-adapted-wwmask
 - Dataset de entrenamiento: https://huggingface.co/datasets/OTAR3088/CeLLaTe-ner-3class-iob_final (referenciado en la model card)
 - Variante de 2 clases: https://huggingface.co/Mardiyyah/CeLLaTe-ner-2class-gaz-tapt-pubmedbert-tokenizer-adapted-lr_3.89

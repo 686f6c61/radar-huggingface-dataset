@@ -104,7 +104,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tdamre/limite-1b-base-GGUF-LiteRT
+- Repositorio en Hugging Face: https://huggingface.co/Tdamre/limite-1b-base-GGUF-LiteRT
 - Modelo base original: https://huggingface.co/paradigma-inc/limite-1b-base
 - Directorio de ficheros GGUF: https://huggingface.co/Tdamre/limite-1b-base-GGUF-LiteRT/tree/main/gguf
 - Directorio de bundles LiteRT-LM: https://huggingface.co/Tdamre/limite-1b-base-GGUF-LiteRT/tree/main/litert

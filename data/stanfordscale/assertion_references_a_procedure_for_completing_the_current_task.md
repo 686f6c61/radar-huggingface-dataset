@@ -81,8 +81,8 @@ No se dispone de datos publicados en la informacion proporcionada sobre otros cl
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `StanfordSCALE/assertion_references_a_procedure_for_completing_the_current_task` | 109,5 M | 512 tokens (limite del encoder MPNet) | Clasificacion binaria de una asercion concreta | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | 109,5 M | 512 tokens | Generacion de embeddings de frases (no clasifica esta asercion) | No disponible en la informacion proporcionada | HuggingFace |
+| `StanfordSCALE/assertion_references_a_procedure_for_completing_the_current_task` | 109,5 M | 512 tokens (limite del encoder MPNet) | Clasificacion binaria de una asercion concreta | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | 109,5 M | 512 tokens | Generacion de embeddings de frases (no clasifica esta asercion) | No disponible en la informacion proporcionada | Hugging Face |
 | Otros clasificadores de aserciones del esquema `bu5` | No disponible | No disponible | Clasificacion de otras aserciones | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de datos publicados en la informacion proporcionada sobre otros cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_references_a_procedure_for_completing_the_current_task
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_references_a_procedure_for_completing_the_current_task
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Repositorio del corpus TalkMoves: https://github.com/SumnerLab/TalkMoves

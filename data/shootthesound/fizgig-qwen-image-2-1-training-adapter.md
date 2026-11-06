@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fizgig-Qwen-Image-2.1-Training-Adapter es un repositorio alojado en HuggingFace por el usuario ShootTheSound. El nombre del repositorio indica que se trata de un adaptador de entrenamiento (previsiblemente un LoRA o un módulo de ajuste equivalente) asociado a un modelo base denominado Qwen-Image 2.1, y el tamaño del repositorio (0,2 GB) es coherente con ese tipo de artefacto y no con un modelo completo. Se trata de una inferencia a partir del identificador y del volumen de datos, no de un dato confirmado en la documentación disponible.
+Fizgig-Qwen-Image-2.1-Training-Adapter es un repositorio alojado en Hugging Face por el usuario ShootTheSound. El nombre del repositorio indica que se trata de un adaptador de entrenamiento (previsiblemente un LoRA o un módulo de ajuste equivalente) asociado a un modelo base denominado Qwen-Image 2.1, y el tamaño del repositorio (0,2 GB) es coherente con ese tipo de artefacto y no con un modelo completo. Se trata de una inferencia a partir del identificador y del volumen de datos, no de un dato confirmado en la documentación disponible.
 
 El repositorio no publica ficha técnica, licencia, idiomas, pipeline de inferencia ni descripción del proceso de entrenamiento en la información proporcionada. Tampoco se han localizado resultados de benchmarks, artículos, blogs ni repositorios complementarios mediante búsqueda web: los resultados devueltos por el buscador corresponden a portales de comparación de vuelos y no guardan relación con el modelo.
 
@@ -78,6 +78,6 @@ No disponible. No es posible identificar alternativas comparables sin conocer la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ShootTheSound/Fizgig-Qwen-Image-2.1-Training-Adapter
-- Perfil del autor en HuggingFace: https://huggingface.co/ShootTheSound
+- Repositorio en Hugging Face: https://huggingface.co/ShootTheSound/Fizgig-Qwen-Image-2.1-Training-Adapter
+- Perfil del autor en Hugging Face: https://huggingface.co/ShootTheSound
 - Búsqueda web: no se ha localizado ningún enlace relevante (paper, blog, repositorio o demo) asociado al modelo; los resultados obtenidos corresponden a sitios de comparación de vuelos y no se incluyen por no ser pertinentes.

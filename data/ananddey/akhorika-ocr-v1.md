@@ -2,7 +2,7 @@
 
 ## Resumen
 
-akhorika-ocr-v1 es un modelo de reconocimiento óptico de caracteres (OCR) de pesos abiertos especializado en texto impreso en asamés (অসমীয়া), una lengua indoaria del noreste de la India escrita en alfabeto bengalí-asamés. Lo desarrolla Anand Dey y se distribuye a través de HuggingFace con el identificador `ananddey/akhorika-ocr-v1`. El modelo resuelve la transcripción de imágenes de texto impreso (líneas, palabras o párrafos) a texto digital en asamés, una tarea con poca cobertura en modelos OCR generalistas y en la que los sistemas multilingües suelen degradarse por la baja representación del idioma.
+akhorika-ocr-v1 es un modelo de reconocimiento óptico de caracteres (OCR) de pesos abiertos especializado en texto impreso en asamés (অসমীয়া), una lengua indoaria del noreste de la India escrita en alfabeto bengalí-asamés. Lo desarrolla Anand Dey y se distribuye a través de Hugging Face con el identificador `ananddey/akhorika-ocr-v1`. El modelo resuelve la transcripción de imágenes de texto impreso (líneas, palabras o párrafos) a texto digital en asamés, una tarea con poca cobertura en modelos OCR generalistas y en la que los sistemas multilingües suelen degradarse por la baja representación del idioma.
 
 Técnicamente se apoya en la arquitectura Minicpm-ocr, un modelo vision-language de tipo image-text-to-text con aproximadamente 1.300 millones de parámetros (1.300.434.160 según los pesos en safetensors), empaquetado para la librería `transformers` y compatible con el pipeline `image-text-to-text`. Requiere `transformers >= 5.21.0` y funciona en `bfloat16` con unos 8 GB de VRAM, además de poder ejecutarse en CPU con latencias de decenas de segundos.
 
@@ -76,7 +76,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 | Modelo | Parámetros | Contexto | CER (IndicOCR-Bench as) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| akhorika-ocr-v1 | ~1,3 B | no disponible | 3,40 % (strict) | no disponible | HuggingFace (`ananddey/akhorika-ocr-v1`) |
+| akhorika-ocr-v1 | ~1,3 B | no disponible | 3,40 % (strict) | no disponible | Hugging Face (`ananddey/akhorika-ocr-v1`) |
 | Alternativas OCR multilingües | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ananddey/akhorika-ocr-v1
+- Modelo en Hugging Face: https://huggingface.co/ananddey/akhorika-ocr-v1
 - Dataset de evaluación IndicOCR-Bench: https://huggingface.co/datasets/sarvamai/indic-ocr-bench
 - Contacto del autor: ananddey.nic@gmail.com (indicado en la model card)
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada

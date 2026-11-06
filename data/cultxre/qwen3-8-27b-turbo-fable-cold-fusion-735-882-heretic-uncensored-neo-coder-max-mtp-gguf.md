@@ -6,7 +6,7 @@ Cultxre/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER
 
 El modelo cuenta con 26.895.998.464 parámetros (~26,9 mil millones) según los safetensors del repo base, lo que lo sitúa en la gama de 27B que da nombre al proyecto. El repositorio ocupa 389 GB, coherente con la publicación de múltiples niveles de cuantización (desde bfloat16 hasta Q2/Q3) más las variantes MTP. La pipeline declarada es `image-text-to-text`, aunque no hay evidencia en la información disponible de que el modelo procese imágenes: probablemente se herede de la arquitectura Qwen3-VL o sea un error de etiquetado del autor.
 
-Su relevancia es doble: por un lado, ofrece una alternativa "sin censura" para tareas creativas y de rol que los modelos alineados rechazan; por otro, el etiquetado como NEO-CODER-MAX y la inclusión de variantes MTP apuntan a un uso en generación de código y decodificación especulativa. La licencia es Apache 2.0, pero el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Su relevancia es doble: por un lado, ofrece una alternativa "sin censura" para tareas creativas y de rol que los modelos alineados rechazan; por otro, el etiquetado como NEO-CODER-MAX y la inclusión de variantes MTP apuntan a un uso en generación de código y decodificación especulativa. La licencia es Apache 2.0, pero el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: ~54 GB en bf16 (2 bytes/param × 26,9 B); ~27 GB en Q8_0; ~16-18 GB en Q4_K_M; ~10-12 GB en Q2_K. Cifras estimadas a partir del número de parámetros, no verificadas en la información disponible.
 - GPU recomendadas: A100 80 GB o H100 para bf16; RTX 4090 (24 GB) para Q4_K_M o Q5_K_M; RTX 3090/4080 (16-24 GB) para Q4; GPUs de 12 GB solo con cuantizaciones muy bajas o offload parcial.
 - Cabe en GPU de consumo: sí, en RTX 4090/3090 con Q4-Q5, y en RTX 4060 Ti 16 GB con Q4.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, vLLM (para las variantes MTP y bf16), TGI (si se convierte a safetensors). El tag `endpoints_compatible` sugiere compatibilidad con la API de HuggingFace Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, vLLM (para las variantes MTP y bf16), TGI (si se convierte a safetensors). El tag `endpoints_compatible` sugiere compatibilidad con la API de Hugging Face Endpoints.
 - Latencia y throughput: no disponibles. Las variantes MTP deberían mejorar el throughput frente a las regulares, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparación con los oficiales es aproximada: este modelo es un merge comunit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cultxre/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Hugging Face: https://huggingface.co/Cultxre/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
 - Dataset F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

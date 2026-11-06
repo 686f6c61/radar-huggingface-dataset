@@ -110,7 +110,7 @@ Comparacion con alternativas de otras familias (Llama, Mistral, otros Qwen, etc.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jabbatheduck/ninfer-ext-models
+- Repositorio en Hugging Face: https://huggingface.co/jabbatheduck/ninfer-ext-models
 - Artefacto de pesos: https://huggingface.co/jabbatheduck/ninfer-ext-models/blob/main/qwen3_8_27b_exl3_4bpw.ninfer
 - Fichero de procedencia de la conversion: https://huggingface.co/jabbatheduck/ninfer-ext-models/blob/main/qwen3_8_27b_exl3_4bpw.ninfer.conversion.json
 - Motor de inferencia NInfer Ext: https://github.com/giveen/ninfer-ext

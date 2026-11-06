@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stevencook84/classify-v2` es una implementación de la arquitectura EfficientFormer a escala "nano", diseñada específicamente para tareas de matching (emparejamiento o clasificación de similitud entre elementos). El modelo está desarrollado por el usuario Stevencook84 y publicado bajo licencia Apache-2.0. Se trata de un artefacto de investigación o experimentación que, por el momento, no registra descargas ni valoraciones en HuggingFace.
+`Stevencook84/classify-v2` es una implementación de la arquitectura EfficientFormer a escala "nano", diseñada específicamente para tareas de matching (emparejamiento o clasificación de similitud entre elementos). El modelo está desarrollado por el usuario Stevencook84 y publicado bajo licencia Apache-2.0. Se trata de un artefacto de investigación o experimentación que, por el momento, no registra descargas ni valoraciones en Hugging Face.
 
 La relevancia de este modelo reside en su combinación de arquitectura eficiente (EfficientFormer) con técnicas de optimización como atención dispersa (sparse attention), fusión bilineal y normalización RMSNorm, lo que lo convierte en un candidato para entornos con recursos limitados. No obstante, la información pública es escasa: no se especifican el número de parámetros, la longitud de contexto ni los datos de entrenamiento. El repositorio contiene únicamente un archivo `eval.py`, lo que sugiere que se trata de un experimento preliminar o de una evaluación de referencia.
 

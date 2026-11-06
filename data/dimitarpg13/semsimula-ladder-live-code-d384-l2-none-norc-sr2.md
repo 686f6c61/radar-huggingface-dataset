@@ -95,10 +95,10 @@ Otros datos declarados: ventaja pareada por paso de +9,1 % a +9,5 % en las siete
 
 | Modelo | Parámetros | Contexto | Perplejidad (CodeParrot valid, bloque 512) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SO-CODE (este modelo) | No disponible (d=384, L=2) | 512 | 5,9951 asentada / 5,87 mejor | CC-BY-4.0 | HuggingFace (0 descargas) |
-| FO-b-CODE (gemelo de primer orden) | No disponible (misma configuración) | 512 | 6,55 | CC-BY-4.0 | HuggingFace |
+| SO-CODE (este modelo) | No disponible (d=384, L=2) | 512 | 5,9951 asentada / 5,87 mejor | CC-BY-4.0 | Hugging Face (0 descargas) |
+| FO-b-CODE (gemelo de primer orden) | No disponible (misma configuración) | 512 | 6,55 | CC-BY-4.0 | Hugging Face |
 | GPT-2 emparejado (d=384, L=8) | No disponible | 512 (en este experimento) | 4,96 | No indicada | No publicado en el Hub según el autor |
-| SO-TS (mismo diseño, TinyStories) | No disponible | 512 | 5,16 (sobre TinyStories, no comparable directamente) | CC-BY-4.0 | HuggingFace |
+| SO-TS (mismo diseño, TinyStories) | No disponible | 512 | 5,16 (sobre TinyStories, no comparable directamente) | CC-BY-4.0 | Hugging Face |
 
 No se dispone de comparación con modelos de código de referencia (CodeParrot, CodeGen, StarCoder) en la información proporcionada; el autor solo compara contra su propio gemelo y contra un GPT-2 emparejado.
 
@@ -119,7 +119,7 @@ No se dispone de comparación con modelos de código de referencia (CodeParrot, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
 - Gemelo de primer orden (FO-b-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-fob
 - Colección "first vs second order" (Gen 3): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524
 - SR2 sobre OpenWebText: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2

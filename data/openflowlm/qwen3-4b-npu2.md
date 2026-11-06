@@ -72,9 +72,9 @@ Las cifras de VRAM son estimaciones derivadas del número de parámetros (4,0 B)
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| OpenFlowLM/Qwen3-4B-NPU2 | 4,0 B (denso) | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen3-4B | 4,0 B (denso) | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | HuggingFace, modelo oficial | Consultar blog y documentacion de Qwen |
-| Qwen/Qwen3-4B-Base | 4,0 B (denso) | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | HuggingFace, modelo oficial | Consultar blog y documentacion de Qwen |
+| OpenFlowLM/Qwen3-4B-NPU2 | 4,0 B (denso) | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen3-4B | 4,0 B (denso) | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | Hugging Face, modelo oficial | Consultar blog y documentacion de Qwen |
+| Qwen/Qwen3-4B-Base | 4,0 B (denso) | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | Hugging Face, modelo oficial | Consultar blog y documentacion de Qwen |
 | Alternativas de ~3-4 B (por ejemplo Llama 3.2 3B o Gemma 3 4B) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 El único dato diferencial verificable de esta publicación frente al modelo oficial es que se trata de un ajuste derivado, sin métricas publicadas y sin adopción registrada.
@@ -93,7 +93,7 @@ El único dato diferencial verificable de esta publicación frente al modelo ofi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenFlowLM/Qwen3-4B-NPU2
+- Modelo en Hugging Face: https://huggingface.co/OpenFlowLM/Qwen3-4B-NPU2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Modelo instruct oficial de referencia: https://huggingface.co/Qwen/Qwen3-4B
 - Licencia: https://huggingface.co/Qwen/Qwen3-4B/blob/main/LICENSE

@@ -74,9 +74,9 @@ Nota comportamental: la cuantización preserva la precisión de una sola vuelta 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-Flash-Next (BF16) | ~180B (declarados) | 262K | BF16 | other | HuggingFace |
-| RadixArk/Qwen3.8-Flash-Next-NVFP4 (este) | ~119.6B (safetensors) | 262K | NVFP4 W4A4 (solo expertos) | other | HuggingFace (candidato privado) |
-| Qwen/Qwen3.8-Flash-Next-FP8 | ~180B (declarado) | 262K | FP8 | other | HuggingFace |
+| Qwen/Qwen3.8-Flash-Next (BF16) | ~180B (declarados) | 262K | BF16 | other | Hugging Face |
+| RadixArk/Qwen3.8-Flash-Next-NVFP4 (este) | ~119.6B (safetensors) | 262K | NVFP4 W4A4 (solo expertos) | other | Hugging Face (candidato privado) |
+| Qwen/Qwen3.8-Flash-Next-FP8 | ~180B (declarado) | 262K | FP8 | other | Hugging Face |
 
 El modelo base BF16 es el punto de referencia natural; el checkpoint NVFP4 ofrece una compresión 2,7x con pérdida de rendimiento mínima en GSM8K/AIME. La variante FP8 del modelo base es otra alternativa de cuantización, pero no se dispone de benchmarks comparables en la información proporcionada. No hay datos disponibles de otros modelos comparables en la misma categoría (MoE multimodal de ~180B con contexto 262K).
 
@@ -92,8 +92,8 @@ El modelo base BF16 es el punto de referencia natural; el checkpoint NVFP4 ofrec
 
 ## Enlaces
 
-- [HuggingFace: RadixArk/Qwen3.8-Flash-Next-NVFP4](https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4)
-- [HuggingFace: Qwen/Qwen3.8-Flash-Next (modelo base)](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
+- [Hugging Face: RadixArk/Qwen3.8-Flash-Next-NVFP4](https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4)
+- [Hugging Face: Qwen/Qwen3.8-Flash-Next (modelo base)](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [NVIDIA Model Optimizer (GitHub)](https://github.com/NVIDIA/TensorRT-Model-Optimizer)
 - [Dataset de calibración: cnn_dailymail](https://huggingface.co/datasets/abisee/cnn_dailymail)
 - [Blog de LMSYS: Qwen3.8-Flash-Next Day-0 Support in SGLang](https://www.lmsys.org/blog/2026-08-26-qwen-flash-next)

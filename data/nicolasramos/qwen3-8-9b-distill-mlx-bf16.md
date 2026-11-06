@@ -4,7 +4,7 @@
 
 El modelo `nicolasramos/Qwen3.8-9B-Distill-MLX-bf16` es una conversión al formato MLX (Apple Silicon) del modelo comunitario `empero-ai/Qwen3.8-9B-Distill`, una destilación no oficial del gigante Qwen3.8 de Alibaba sobre la base de Qwen3.5-9B. El proyecto original, desarrollado por el equipo Empero, entrena el modelo con aproximadamente 70.000 trazas de salida del profesor (teacher traces) generadas a partir de sus datasets internos de destilación de Qwen3.8. Esta versión MLX, creada por nicolasramos, mantiene los pesos en bf16 y está pensada para ejecución local en hardware Apple con el ecosistema MLX.
 
-El interés de este modelo radica en que permite acceder a las capacidades destiladas de una familia de modelos de gran escala (Qwen3.8, que en su variante Max alcanza los 2,4 billones de parámetros) en un formato compacto de aproximadamente 9.000 millones de parámetros, ejecutable en una GPU de consumo o en un Mac con suficiente memoria unificada. La ficha se basa exclusivamente en la información disponible en HuggingFace y en los resultados de búsqueda web; varios datos técnicos del modelo base no han sido publicados por el autor de la conversión.
+El interés de este modelo radica en que permite acceder a las capacidades destiladas de una familia de modelos de gran escala (Qwen3.8, que en su variante Max alcanza los 2,4 billones de parámetros) en un formato compacto de aproximadamente 9.000 millones de parámetros, ejecutable en una GPU de consumo o en un Mac con suficiente memoria unificada. La ficha se basa exclusivamente en la información disponible en Hugging Face y en los resultados de búsqueda web; varios datos técnicos del modelo base no han sido publicados por el autor de la conversión.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ El interés de este modelo radica en que permite acceder a las capacidades desti
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | bf16 (formato MLX); el repo original de Empero ofrece GGUF (Q4_K_M, Q5_K_M, Q8_0, etc.) |
-| Idiomas soportados | en (según metadatos de HuggingFace) |
+| Idiomas soportados | en (según metadatos de Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (MLX), también GGUF en el repo original |
 
@@ -25,7 +25,7 @@ No se dispone de una descripción oficial de la arquitectura en la información 
 
 ## Capacidades
 
-- Generación de texto y conversación en inglés (según los metadatos de HuggingFace).
+- Generación de texto y conversación en inglés (según los metadatos de Hugging Face).
 - Pipeline de generación de texto (`text-generation`), compatible con tareas de chat y completado.
 - Al estar basado en Qwen3.5-9B, es probable que herede capacidades de razonamiento, código y matemáticas, pero no hay confirmación oficial en la información disponible.
 - No se ha documentado soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
@@ -43,7 +43,7 @@ No se dispone de una descripción oficial de la arquitectura en la información 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card de HuggingFace ni los resultados de búsqueda web incluyen métricas como MMLU, HumanEval, GSM8K u otras para este modelo concreto. El autor de la conversión MLX no proporciona datos de rendimiento, y el repo original de Empero tampoco los detalla en los resultados mostrados.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card de Hugging Face ni los resultados de búsqueda web incluyen métricas como MMLU, HumanEval, GSM8K u otras para este modelo concreto. El autor de la conversión MLX no proporciona datos de rendimiento, y el repo original de Empero tampoco los detalla en los resultados mostrados.
 
 ## Requisitos de hardware
 
@@ -65,7 +65,7 @@ La comparativa se limita a modelos de tamaño similar dentro de la familia Qwen.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se especifica la licencia del modelo en HuggingFace, lo que impide conocer las restricciones de uso comercial. Se debe contactar con el autor antes de usar en producción.
+- Licencia no disponible: no se especifica la licencia del modelo en Hugging Face, lo que impide conocer las restricciones de uso comercial. Se debe contactar con el autor antes de usar en producción.
 - Idioma limitado: los metadatos solo declaran inglés; no hay garantía de buen rendimiento en otros idiomas, a pesar de que la familia Qwen suele ser multilingüe.
 - Riesgo de alucinación: como cualquier modelo de lenguaje generativo, puede producir contenido falso o inventado, especialmente en tareas de razonamiento o factualidad.
 - Falta de documentación técnica: no se han publicado detalles sobre el proceso de destilación, datos de entrenamiento, evaluación ni limitaciones específicas del modelo.
@@ -75,7 +75,7 @@ La comparativa se limita a modelos de tamaño similar dentro de la familia Qwen.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicolasramos/Qwen3.8-9B-Distill-MLX-bf16
+- Modelo en Hugging Face: https://huggingface.co/nicolasramos/Qwen3.8-9B-Distill-MLX-bf16
 - Repo original de Empero: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
 - Versión GGUF del modelo original: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill-GGUF
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8

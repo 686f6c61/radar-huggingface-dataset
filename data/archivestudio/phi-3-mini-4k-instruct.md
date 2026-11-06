@@ -78,10 +78,10 @@ No se han publicado en la información disponible resultados de HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Phi-3-mini-4k-instruct (este repositorio) | 3,8B | 4K | MIT | HuggingFace (recarga de ArchiveStudio) |
-| Phi-3-mini-128k-instruct | 3,8B | 128K | MIT | HuggingFace (Microsoft) |
-| Phi-3-small-8k-instruct | 7B | 8K | MIT | HuggingFace (Microsoft) |
-| Phi-3.5-mini-instruct | 3,8B | 128K | MIT | HuggingFace (Microsoft) |
+| Phi-3-mini-4k-instruct (este repositorio) | 3,8B | 4K | MIT | Hugging Face (recarga de ArchiveStudio) |
+| Phi-3-mini-128k-instruct | 3,8B | 128K | MIT | Hugging Face (Microsoft) |
+| Phi-3-small-8k-instruct | 7B | 8K | MIT | Hugging Face (Microsoft) |
+| Phi-3.5-mini-instruct | 3,8B | 128K | MIT | Hugging Face (Microsoft) |
 
 En la información disponible no se incluyen comparativas de rendimiento frente a modelos de otros fabricantes (por ejemplo Llama 3 8B o Mistral 7B). El modelo se posiciona según su model card con rendimiento de referencia entre modelos de menos de 13B en sentido común, comprensión del lenguaje, matemáticas, código, contexto largo y razonamiento lógico.
 
@@ -99,7 +99,7 @@ En la información disponible no se incluyen comparativas de rendimiento frente 
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/ArchiveStudio/Phi-3-mini-4k-instruct
+- Repositorio Hugging Face analizado: https://huggingface.co/ArchiveStudio/Phi-3-mini-4k-instruct
 - Modelo original de Microsoft (4K): https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Versión 128K: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct
 - Versión ONNX: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-onnx

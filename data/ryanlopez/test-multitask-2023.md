@@ -36,7 +36,7 @@ La arquitectura declarada es Mocov3, una variante de la familia Moco (momentum c
 - **Investigación educativa sobre Mocov3**: sirve como ejemplo de implementación de atención lineal y fusión gated para estudiantes o investigadores que quieran estudiar la arquitectura.
 - **Punto de partida para experimentos de scratch**: se puede entrenar desde cero con un dataset propio, siguiendo la receta por defecto (SGD + schedule polinomial) y comparar contra una línea base de capacidad equivalente.
 - **Validación de infraestructura de entrenamiento**: al ser un modelo diminuto, permite probar entornos distribuidos, logging de métricas o integración con frameworks de entrenamiento sin coste computacional.
-- **Desarrollo de adaptadores de carga**: dado que la implementación es personalizada, se puede usar para construir un adaptador que permita cargar el modelo con APIs estándar de HuggingFace.
+- **Desarrollo de adaptadores de carga**: dado que la implementación es personalizada, se puede usar para construir un adaptador que permita cargar el modelo con APIs estándar de Hugging Face.
 - **Reproducibilidad de configuraciones**: el `config.json` y `training_args.json` documentan una configuración reproducible, útil para estudios de ablación sobre arquitecturas similares.
 
 ## Benchmarks y rendimiento
@@ -59,12 +59,12 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 - El checkpoint no ha sido entrenado; cualquier uso en producción o evaluación de capacidades es inválido.
 - No se ha auditado para sesgos, robustez, equidad o transferencia de dominio.
-- La implementación es personalizada; no es compatible con APIs estándar de carga de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada; no es compatible con APIs estándar de carga de Hugging Face sin un adaptador explícito.
 - No se declaran idiomas soportados ni dominio de aplicación.
 - La licencia BSD-3-Clause permite uso comercial, pero los términos de los datos externos utilizados con el repositorio deben revisarse por separado.
 - No hay garantía de mantenimiento o soporte por parte del autor.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ryanlopez/test-multitask-2023)
+- [Repositorio en Hugging Face](https://huggingface.co/ryanlopez/test-multitask-2023)
 - [Perfil de GitHub del autor](https://github.com/ryanlopezzzz)

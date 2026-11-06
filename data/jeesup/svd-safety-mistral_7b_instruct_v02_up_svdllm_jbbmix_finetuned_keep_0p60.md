@@ -122,7 +122,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbmix_finetuned_keep_0p60
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbmix_finetuned_keep_0p60
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Repositorio de SVD-LLM (commit `7538cca98880`): https://github.com/AIoT-MLSys-Lab/SVD-LLM
 - Dataset de ajuste LoRA: https://huggingface.co/datasets/yahma/alpaca-cleaned

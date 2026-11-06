@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MrXkuy/my-qwen-rp-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario MrXkuy en HuggingFace. El identificador apunta a una cuantizacion de un modelo de la familia Qwen ajustado para roleplay ("rp"), pero el repositorio no incluye documentacion que confirme el modelo base exacto, el dataset de ajuste ni el proceso de entrenamiento seguido.
+MrXkuy/my-qwen-rp-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario MrXkuy en Hugging Face. El identificador apunta a una cuantizacion de un modelo de la familia Qwen ajustado para roleplay ("rp"), pero el repositorio no incluye documentacion que confirme el modelo base exacto, el dataset de ajuste ni el proceso de entrenamiento seguido.
 
 El unico dato objetivo disponible es el numero de parametros: 7.615.616.512 (unos 7,6 mil millones), lo que lo situa en la categoria de modelos de ~7B-8B, ejecutables en GPU de consumo con cuantizaciones agresivas. El repositorio ocupa 16,2 GB, un tamano coherente con la presencia de varias cuantizaciones distintas del mismo modelo, incluida probablemente una version en precision FP16.
 
@@ -22,8 +22,8 @@ Su relevancia practica es limitada y muy especializada: se trata de un modelo et
 | Formato de pesos | GGUF |
 | Tamano del repositorio | 16,2 GB |
 | Descargas / likes | 35 / 0 |
-| Fecha de creacion | 2026-10-10 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-10-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-10 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-10-12 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -33,10 +33,10 @@ Tampoco se documenta el proceso de entrenamiento: se desconoce el numero de toke
 
 ## Capacidades
 
-- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" en HuggingFace, por lo que su uso previsto es el dialogo multi-turno.
+- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" en Hugging Face, por lo que su uso previsto es el dialogo multi-turno.
 - Roleplay y adopcion de personajes: el sufijo "rp" del identificador indica un ajuste orientado a interpretacion de personajes y narrativa interactiva.
 - Inferencia local: al distribuirse en GGUF, es ejecutable en CPU y en GPU de consumo mediante llama.cpp y derivados.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede exponerse a traves de una API compatible con el esquema de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede exponerse a traves de una API compatible con el esquema de Hugging Face Inference Endpoints.
 - Razonamiento avanzado, matematicas, codigo, tool calling, function calling, uso de agentes y razonamiento multi-paso: no disponible, no documentado.
 - Capacidades de vision, audio o modo de razonamiento explicito (thinking mode): no disponible, no documentado.
 - Soporte multilingue: no disponible; no se declaran idiomas en la ficha.
@@ -96,6 +96,6 @@ La ventaja diferencial del modelo analizado es exclusivamente su orientacion a r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MrXkuy/my-qwen-rp-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/MrXkuy/my-qwen-rp-GGUF
 - Busqueda web realizada: no se encontraron resultados relevantes sobre el modelo. Los unicos resultados devueltos corresponden a plataformas de chat con personajes IA sin relacion alguna con este repositorio (polybuzz.ai, app.polybuzz.ai, polybuzz.org, polybuzz-ai.com), por lo que no se incluyen como enlaces de referencia.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

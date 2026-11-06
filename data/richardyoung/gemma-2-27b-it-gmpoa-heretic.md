@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Refusals (segun autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| richardyoung/gemma-2-27b-it-GMPOA-heretic | 27,2 B | no disponible | 73/100 | gemma | HuggingFace, 0 descargas |
-| google/gemma-2-27b-it | 27,2 B | 8.192 tokens | 100/100 | gemma | HuggingFace, gated |
-| Otras variantes abliterated de Gemma 2 27B | 27,2 B | dependen del base | no disponible | gemma | HuggingFace, variable |
+| richardyoung/gemma-2-27b-it-GMPOA-heretic | 27,2 B | no disponible | 73/100 | gemma | Hugging Face, 0 descargas |
+| google/gemma-2-27b-it | 27,2 B | 8.192 tokens | 100/100 | gemma | Hugging Face, gated |
+| Otras variantes abliterated de Gemma 2 27B | 27,2 B | dependen del base | no disponible | gemma | Hugging Face, variable |
 
 No se dispone de datos de benchmarks de capacidad para comparar rendimiento real frente a alternativas; la comparación se limita a parámetros, contexto, licencia y comportamiento de rechazo documentado.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de capacidad para comparar rendimiento real
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/gemma-2-27b-it-GMPOA-heretic
+- Hugging Face: https://huggingface.co/richardyoung/gemma-2-27b-it-GMPOA-heretic
 - Modelo base: https://huggingface.co/google/gemma-2-27b-it
 - Heretic: https://heretic-project.org
 - Página de Gemma: https://ai.google.dev/gemma/docs

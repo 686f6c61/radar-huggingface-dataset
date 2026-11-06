@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chanind/hierarchy-saes` es un repositorio publicado en HuggingFace por el usuario chanind (región `us`) que, a juzgar por su identificador y por un tamaño de repositorio de 15,6 GB, parece contener una colección de autoencoders dispersos (sparse autoencoders, SAE) organizados de forma jerárquica. Los SAE son herramientas de interpretabilidad mecanística: se entrenan sobre las activaciones internas de un modelo de lenguaje para descomponerlas en un conjunto disperso de características más monosemánticas y legibles por humanos. No se trata, por tanto, de un modelo generativo, sino de artefactos de análisis que se aplican sobre otro modelo base.
+`chanind/hierarchy-saes` es un repositorio publicado en Hugging Face por el usuario chanind (región `us`) que, a juzgar por su identificador y por un tamaño de repositorio de 15,6 GB, parece contener una colección de autoencoders dispersos (sparse autoencoders, SAE) organizados de forma jerárquica. Los SAE son herramientas de interpretabilidad mecanística: se entrenan sobre las activaciones internas de un modelo de lenguaje para descomponerlas en un conjunto disperso de características más monosemánticas y legibles por humanos. No se trata, por tanto, de un modelo generativo, sino de artefactos de análisis que se aplican sobre otro modelo base.
 
 La relevancia de este tipo de publicación está en el análisis de circuitos internos, la monitorización de rasgos y el control de la generación (steering) en modelos de lenguaje. Una organización jerárquica de los diccionarios de características permitiría, en principio, estudiar relaciones de composición entre rasgos de distintos niveles de abstracción, aunque la ficha del repositorio no describe esta arquitectura.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. Un r
 
 | Repositorio / familia | Tipo de artefacto | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chanind/hierarchy-saes | SAE jerárquicos (según el identificador) | no disponible | no aplica | no disponible | pública en HuggingFace, 0 descargas |
+| chanind/hierarchy-saes | SAE jerárquicos (según el identificador) | no disponible | no aplica | no disponible | pública en Hugging Face, 0 descargas |
 | Gemma Scope | SAE y transcoders sobre Gemma 2 | no disponible en la información proporcionada | no aplica | no disponible en la información proporcionada | pública |
 | Llama Scope | SAE sobre la familia Llama | no disponible en la información proporcionada | no aplica | no disponible en la información proporcionada | pública |
 
@@ -83,5 +83,5 @@ No se dispone de datos verificables de parámetros, licencia ni métricas para e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chanind/hierarchy-saes
+- Repositorio en Hugging Face: https://huggingface.co/chanind/hierarchy-saes
 - No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información proporcionada.

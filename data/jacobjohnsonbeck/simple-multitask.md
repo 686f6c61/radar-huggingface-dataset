@@ -37,7 +37,7 @@ En cuanto al entrenamiento, **no existe un proceso de entrenamiento documentado*
 
 - **Investigación de arquitecturas multitarea**: el código permite a investigadores inspeccionar cómo la atención lineal y la fusión gated afectan al rendimiento en tareas de visión antes de escalar a modelos más grandes.
 - **Pruebas de integración en pipelines de ML**: el checkpoint de inicialización sirve para validar que el flujo de datos, la carga del modelo y la inferencia funcionan correctamente en un entorno de desarrollo.
-- **Desarrollo de adaptadores para carga personalizada**: al ser una implementación custom, los desarrolladores pueden crear adaptadores para integrarlo con librerías estándar como HuggingFace Transformers.
+- **Desarrollo de adaptadores para carga personalizada**: al ser una implementación custom, los desarrolladores pueden crear adaptadores para integrarlo con librerías estándar como Hugging Face Transformers.
 - **Benchmarking de eficiencia**: con solo 16k parámetros, se puede medir el consumo de recursos (memoria, tiempo de inferencia) en hardware modesto para comparar con arquitecturas más pesadas.
 - **Educación y aprendizaje**: sirve como ejemplo didáctico de cómo estructurar un proyecto de visión multitarea con Swin Transformer, incluyendo configuración, entrenamiento y evaluación.
 - **Prototipado rápido**: para experimentos que requieran un modelo base diminuto y modificable, este repositorio ofrece un punto de partida limpio y con licencia permisiva.
@@ -62,11 +62,11 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 - **Checkpoint no entrenado**: el modelo no ha sido entrenado, por lo que no produce resultados útiles para ninguna tarea real.
 - **Sin evaluación de robustez ni sesgos**: el autor advierte que no se ha auditado el modelo para robustez, equidad o transferencia de dominio.
-- **Implementación experimental**: el código es una implementación custom; las APIs genéricas de HuggingFace no funcionarán sin un adaptador explícito.
+- **Implementación experimental**: el código es una implementación custom; las APIs genéricas de Hugging Face no funcionarán sin un adaptador explícito.
 - **Sin datos de entrenamiento**: no se especifica qué dataset se usaría ni cómo se ha generado el checkpoint de inicialización.
 - **Restricciones de licencia**: aunque la licencia es Apache 2.0, el autor recomienda revisar los términos de los datos externos si se usan con otros datasets.
 - **No apto para producción**: cualquier uso en aplicaciones reales requeriría un entrenamiento completo y una evaluación rigurosa.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/jacobjohnsonbeck/simple-multitask)
+- [Repositorio en Hugging Face](https://huggingface.co/jacobjohnsonbeck/simple-multitask)

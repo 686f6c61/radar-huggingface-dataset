@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `tournament-tourn_c48cf98105f5b0ae_20261005-...-5FTRCEWm` es un adaptador LoRA de ajuste supervisado (SFT) publicado por el usuario `gradients-io-tournaments` en HuggingFace. No se trata de un modelo completo, sino de pesos de adaptador PEFT (formato safetensors) que deben cargarse sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507`. El repositorio ocupa 1,1 GB y fue creado y actualizado el 5 de octubre de 2026, sin descargas ni interacciones registradas en el momento de redactar esta ficha.
+El modelo identificado como `tournament-tourn_c48cf98105f5b0ae_20261005-...-5FTRCEWm` es un adaptador LoRA de ajuste supervisado (SFT) publicado por el usuario `gradients-io-tournaments` en Hugging Face. No se trata de un modelo completo, sino de pesos de adaptador PEFT (formato safetensors) que deben cargarse sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507`. El repositorio ocupa 1,1 GB y fue creado y actualizado el 5 de octubre de 2026, sin descargas ni interacciones registradas en el momento de redactar esta ficha.
 
 El nombre del repositorio y la organización que lo publica indican que se trata de un artefacto generado automáticamente como resultado de un torneo o competición de ajuste fino. La model card es una plantilla genérica generada por TRL: no documenta el conjunto de datos de entrenamiento, el número de pasos, la composición del dataset ni la receta de hiperparámetros. El campo `base_model` de la plantilla apunta a una ruta interna de caché (`/cache/models/61da592f24c28ffc`) y el campo `model_name` a un identificador interno (`2adc1f0e-..._0`), lo que confirma el carácter automatizado del artefacto.
 
@@ -96,7 +96,7 @@ No se dispone de comparativas de rendimiento (benchmarks) entre estos modelos en
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-2adc1f0e-4ad1-4b7d-9a6c-ac00ca549742-5FTRCEWm
+- Repositorio del modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-2adc1f0e-4ad1-4b7d-9a6c-ac00ca549742-5FTRCEWm
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Documentación de PEFT: https://huggingface.co/docs/peft

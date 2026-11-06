@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-forget05-ihl_reset_both-epoch07` (este) | 1.418 M | no disponible | Apache 2.0 | Checkpoint de investigación en *unlearning* | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` | ~1.418 M | no disponible | no disponible en esta ficha | Modelo base ajustado con TOFU, sin desaprendizaje | HuggingFace |
-| `microsoft/phi-1_5` | 1.300 M | 2048 (dato de la ficha oficial, no confirmado aquí) | MIT (según ficha oficial) | Modelo de propósito general para texto y código | HuggingFace, ampliamente usado |
-| Otras variantes `unl-reset` de la misma familia | ~1.418 M | no disponible | Apache 2.0 | Distintas particiones *forget* y épocas | HuggingFace |
+| `unl-reset/tofu-phi-1_5-...-forget05-ihl_reset_both-epoch07` (este) | 1.418 M | no disponible | Apache 2.0 | Checkpoint de investigación en *unlearning* | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` | ~1.418 M | no disponible | no disponible en esta ficha | Modelo base ajustado con TOFU, sin desaprendizaje | Hugging Face |
+| `microsoft/phi-1_5` | 1.300 M | 2048 (dato de la ficha oficial, no confirmado aquí) | MIT (según ficha oficial) | Modelo de propósito general para texto y código | Hugging Face, ampliamente usado |
+| Otras variantes `unl-reset` de la misma familia | ~1.418 M | no disponible | Apache 2.0 | Distintas particiones *forget* y épocas | Hugging Face |
 
 La comparación relevante es metodológica: este checkpoint se diferencia de `locuslab/tofu_ft_phi-1.5` por la reinicialización de embeddings y LM head y por el entrenamiento con pérdida IHL sobre `forget05`, y de `microsoft/phi-1_5` por todo el pipeline TOFU intermedio. No hay datos de rendimiento publicados que permitan comparar numéricamente.
 
@@ -86,10 +86,10 @@ La comparación relevante es metodológica: este checkpoint se diferencia de `lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch07
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch07
 - Modelo base del ajuste TOFU: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): no disponible en la información proporcionada
 - Paper de TOFU (referencia): no disponible en la información proporcionada
 - Repositorio del grupo `unl-reset`: no disponible en la información proporcionada
-- Manifiesto `ihl_manifest.json` citado en la model card: incluido en el repositorio de HuggingFace
+- Manifiesto `ihl_manifest.json` citado en la model card: incluido en el repositorio de Hugging Face

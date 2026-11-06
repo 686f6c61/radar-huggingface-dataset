@@ -75,7 +75,7 @@ No se dispone de datos comparativos directos con otros adaptadores de compresion
 
 ## Enlaces
 
-- [Adaptador en HuggingFace](https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gdpochain-seed7-l5)
+- [Adaptador en Hugging Face](https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gdpochain-seed7-l5)
 - [Modelo base: allenai/Olmo-3-7B-Think](https://huggingface.co/allenai/Olmo-3-7B-Think)
 - [Version GGUF del modelo base (unsloth)](https://huggingface.co/unsloth/Olmo-3-7B-Think-GGUF)
 - [Pagina del modelo base en ThinkLLM](https://thinkllm.dev/models/olmo-3-7b-think)

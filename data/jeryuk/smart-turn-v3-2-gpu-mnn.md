@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables de detección de turnos 
 
 ## Enlaces
 
-- Modelo convertido (HuggingFace): https://huggingface.co/Jeryuk/smart-turn-v3.2-gpu.mnn
-- Modelo original (HuggingFace): https://huggingface.co/pipecat-ai/smart-turn-v3
+- Modelo convertido (Hugging Face): https://huggingface.co/Jeryuk/smart-turn-v3.2-gpu.mnn
+- Modelo original (Hugging Face): https://huggingface.co/pipecat-ai/smart-turn-v3
 - Repositorio GitHub del proyecto: https://github.com/pipecat-ai/smart-turn
 - Documentación adicional (DeepWiki): https://deepwiki.com/pipecat-ai/smart-turn/7.1-setup-and-dependencies

@@ -78,6 +78,6 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hylin16/food-recognition-food11-effnet-b3-cbam-380
+- Hugging Face: https://huggingface.co/hylin16/food-recognition-food11-effnet-b3-cbam-380
 - Paper de CBAM: https://arxiv.org/abs/1807.06521
 - Repositorio food_recognition: https://github.com/linhongyu510/food_recognition

@@ -24,7 +24,7 @@ Ahora bien, la model card presenta métricas de Accuracy, Precision, Recall, F1 
 | Tokenizador | SentencePiece de XLM-R (heredado del modelo base), no detallado en la model card |
 | Número de etiquetas | no disponible (la model card no especifica el número de clases ni sus nombres) |
 | Dataset de entrenamiento | 3.000 reuniones B2B (procedencia, idioma exacto y split no disponibles) |
-| Fecha de publicación | 2026-09-10 según metadatos de HuggingFace |
+| Fecha de publicación | 2026-09-10 según metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -84,11 +84,11 @@ No hay resultados de benchmarks comparables publicados para este modelo. La comp
 
 | Modelo | Parámetros | Contexto | Idioma principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Maldak123/TOTVS_Upsell_Teste | 278 M | 512 tokens | Portugués (fine-tuning) | MIT | HuggingFace, 0 descargas |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Multilingüe (100 idiomas) | MIT | HuggingFace, ampliamente usado |
-| BERTimbau base (Neuralmind) | ~110 M | 512 tokens | Portugués de Brasil | MIT | HuggingFace |
-| google-bert/bert-base-multilingual-cased | ~178 M | 512 tokens | Multilingüe (104 idiomas) | Apache-2.0 | HuggingFace |
-| microsoft/deberta-v3-base | ~184 M | 512 tokens | Inglés | MIT | HuggingFace |
+| Maldak123/TOTVS_Upsell_Teste | 278 M | 512 tokens | Portugués (fine-tuning) | MIT | Hugging Face, 0 descargas |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Multilingüe (100 idiomas) | MIT | Hugging Face, ampliamente usado |
+| BERTimbau base (Neuralmind) | ~110 M | 512 tokens | Portugués de Brasil | MIT | Hugging Face |
+| google-bert/bert-base-multilingual-cased | ~178 M | 512 tokens | Multilingüe (104 idiomas) | Apache-2.0 | Hugging Face |
+| microsoft/deberta-v3-base | ~184 M | 512 tokens | Inglés | MIT | Hugging Face |
 
 Rendimiento comparado: no disponible. El autor no aporta comparaciones con alternativas y las métricas reportadas (1.0000 en todas) no son comparables de forma fiable sin conocer el protocolo de evaluación.
 
@@ -107,7 +107,7 @@ Rendimiento comparado: no disponible. El autor no aporta comparaciones con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maldak123/TOTVS_Upsell_Teste
+- Modelo en Hugging Face: https://huggingface.co/Maldak123/TOTVS_Upsell_Teste
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-R (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo; los resultados devueltos correspondían a sitios de fuentes tipográficas, una plataforma educativa china y un foro de software, sin relación con este modelo.

@@ -91,7 +91,7 @@ El error estandar binomial con n=252 es de aproximadamente 0,03. Las filas de pi
 
 | Modelo | Parametros | Contexto | Exito en algun momento | Exito al final | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| longnav-mshab-pick-flow-native-speedmix-20hz | ~2,16 mil millones | no disponible | 0,575 | 0,313 | apache-2.0 | HuggingFace |
+| longnav-mshab-pick-flow-native-speedmix-20hz | ~2,16 mil millones | no disponible | 0,575 | 0,313 | apache-2.0 | Hugging Face |
 | pi0.5 slow chunk-8 SFT | no disponible | no disponible | 0,563 | 0,222 | no disponible | no disponible |
 | pi0.5 + 60 pasos PPO, VLM congelado | no disponible | no disponible | 0,651 | 0,464 | no disponible | no disponible |
 
@@ -112,7 +112,7 @@ No se dispone de mas datos de parametros, contexto, licencia o disponibilidad de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aasdfip/longnav-mshab-pick-flow-native-speedmix-20hz
+- Hugging Face: https://huggingface.co/Aasdfip/longnav-mshab-pick-flow-native-speedmix-20hz
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Ejecucion de wandb identificada en la model card: vlm_rl/mshab-native-qwen/3vo3nu6d (no se proporciona URL directa)
 - Paper, repositorio de codigo y demo: no disponibles en la informacion proporcionada

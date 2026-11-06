@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`grzegorzwis/neural-architecture-search-weights` es un repositorio alojado en HuggingFace por el usuario `grzegorzwis` cuyo contenido declarado no es un modelo entrenado, sino una nota de investigacion exploratoria sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS). La model card describe explicitamente un documento (`summary.md`) que recoge el planteamiento de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base emparejadas y los requisitos de reproducibilidad, sin presentar resultados experimentales.
+`grzegorzwis/neural-architecture-search-weights` es un repositorio alojado en Hugging Face por el usuario `grzegorzwis` cuyo contenido declarado no es un modelo entrenado, sino una nota de investigacion exploratoria sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS). La model card describe explicitamente un documento (`summary.md`) que recoge el planteamiento de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base emparejadas y los requisitos de reproducibilidad, sin presentar resultados experimentales.
 
 El repositorio incluye pesos en formato safetensors que suman 24.832 parametros en total, segun los metadatos reales del archivo. Esta cifra es varios ordenes de magnitud inferior a la de cualquier transformer funcional y es compatible con un tensor de prueba, un marcador de posicion o un artefacto auxiliar, mas que con un modelo de lenguaje utilizable.
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, la model card indica de forma explicita que el repos
 
 - Estudio de metodologia de investigacion reproducible: el repositorio puede consultarse como ejemplo de plantilla para documentar una pregunta de NAS antes de ejecutar experimentos, incluyendo factores de confusion y criterios de comparacion con lineas base emparejadas.
 - Revision de buenas practicas en model cards: sirve para observar como un autor declara explicitamente la ausencia de resultados, codigo y checkpoint, evitando afirmaciones no verificadas.
-- Auditoria de etiquetado en HuggingFace: util para analizar casos en los que las etiquetas (`transformer`, `safetensors`) no se corresponden con un modelo desplegable, un problema relevante en la curacion de indices de modelos.
+- Auditoria de etiquetado en Hugging Face: util para analizar casos en los que las etiquetas (`transformer`, `safetensors`) no se corresponden con un modelo desplegable, un problema relevante en la curacion de indices de modelos.
 - Docencia sobre NAS: puede emplearse como material de partida para discutir el diseno de experimentos de busqueda de arquitecturas y los sesgos habituales en las comparaciones.
 - Referencia para verificacion de datasets: la model card recomienda revisar los terminos de los datos de origen cuando el repositorio se usa con conjuntos externos, lo que resulta util como recordatorio en flujos de investigacion.
 - No es adecuado para ningun caso de uso de inferencia en produccion: no hay checkpoint entrenado, ni tokenizador declarado, ni documentacion de entrada/salida.
@@ -72,5 +72,5 @@ No disponible. No se identifican modelos comparables, dado que el repositorio no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/grzegorzwis/neural-architecture-search-weights
+- Repositorio en Hugging Face: https://huggingface.co/grzegorzwis/neural-architecture-search-weights
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada.

@@ -23,7 +23,7 @@ Su relevancia actual es doble: por un lado, la moderacion de video e imagen sigu
 | Modelo base | Qwen/Qwen2.5-Omni-7B |
 | Modalidades cubiertas | Texto, imagen estatica y video dinamico; audio eliminado (ZeroAudio) |
 | Formato de salida | `- Safety Assessment: Safe \| Unsafe` y `- Categories: <categorias> \| None` |
-| Tamano del repositorio | 5,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 5,0 GB (segun Hugging Face) |
 | Metodo de entrenamiento | SFT de parametros completos en 8x NVIDIA H200 con ZeRO-2 |
 
 ## Arquitectura y entrenamiento
@@ -109,11 +109,11 @@ La ventaja diferencial de este modelo frente a las alternativas es la cobertura 
 - El audio queda fuera por diseno: cualquier entrada de audio no tiene cobertura y no debe esperarse un comportamiento fiable en esa modalidad.
 - Licencia Apache 2.0 en el modelo y en el modelo base, lo que en principio permite uso comercial sin restricciones adicionales; conviene aun asi revisar los terminos de los conjuntos de datos utilizados en el ajuste fino si se va a redistribuir un derivado.
 - El tamano del repositorio (5,0 GB) es inferior al esperado para 7B en bf16; verificar los ficheros antes de cualquier despliegue.
-- Las fechas de creacion y actualizacion registradas en HuggingFace (septiembre de 2026) no van acompanadas de ninguna publicacion tecnica que las contextualice.
+- Las fechas de creacion y actualizacion registradas en Hugging Face (septiembre de 2026) no van acompanadas de ninguna publicacion tecnica que las contextualice.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boyuzhuGPT/Qwen2.5-Omni-7B-Safety-ZeroAudio
+- Modelo en Hugging Face: https://huggingface.co/boyuzhuGPT/Qwen2.5-Omni-7B-Safety-ZeroAudio
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Repositorio de ms-swift, referenciado en la model card: https://github.com/modelscope/ms-swift
 - Conjuntos de datos citados en la model card (sin enlace aportado por el autor): Aegis, BeaverTails, ToxicChat, WildGuardMix-Text, LLaVA-Guard, VLSBench, VLGuard, UnsafeBench, FVC, FakeSV, DCSASS, SafeSora y LSPD.

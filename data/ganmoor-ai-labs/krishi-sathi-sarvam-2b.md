@@ -79,7 +79,7 @@ La comparativa se basa en la informacion de la model card, que menciona el bake-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ganmoor-ai-labs/krishi-sathi-sarvam-2b
+- Modelo en Hugging Face: https://huggingface.co/ganmoor-ai-labs/krishi-sathi-sarvam-2b
 - Licencia Sarvam AI Research: https://huggingface.co/sarvamai/sarvam-1/blob/main/LICENSE.md
 - Modelo base Sarvam-1: https://huggingface.co/sarvamai/sarvam-1
 - Pagina de modelos de Sarvam AI: https://www.sarvam.ai/models

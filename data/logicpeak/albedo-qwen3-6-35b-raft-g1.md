@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`logicpeak/albedo-qwen3.6-35b-raft-g1` es un checkpoint post-entrenado del modelo Qwen3.6-35B-A3B, desarrollado por Qwen (Alibaba) y publicado por el usuario logicpeak en HuggingFace. Se trata de un modelo de lenguaje causal con encoder de visión (image-text-to-text) que combina una arquitectura híbrida de atención lineal (Gated DeltaNet) y atención completa (Gated Attention) con enrutamiento MoE disperso. El modelo totaliza 35.107 millones de parámetros, de los cuales se activan aproximadamente 3.000 millones por token, y ofrece una ventana de contexto nativa de 262.144 tokens extensible hasta 1.010.000.
+`logicpeak/albedo-qwen3.6-35b-raft-g1` es un checkpoint post-entrenado del modelo Qwen3.6-35B-A3B, desarrollado por Qwen (Alibaba) y publicado por el usuario logicpeak en Hugging Face. Se trata de un modelo de lenguaje causal con encoder de visión (image-text-to-text) que combina una arquitectura híbrida de atención lineal (Gated DeltaNet) y atención completa (Gated Attention) con enrutamiento MoE disperso. El modelo totaliza 35.107 millones de parámetros, de los cuales se activan aproximadamente 3.000 millones por token, y ofrece una ventana de contexto nativa de 262.144 tokens extensible hasta 1.010.000.
 
-La variante RAFT (Reinforcement Adaptive Fine-Tuning) representa un ajuste posterior al entrenamiento base orientado a estabilidad y utilidad práctica, con especial énfasis en codificación agéntica y razonamiento a nivel de repositorio. El modelo destaca por su rendimiento en tareas de agente de código (SWE-bench Verified 73.4) y por su capacidad de preservar contexto de razonamiento histórico para desarrollo iterativo. Publicado bajo licencia Apache 2.0, es compatible con HuggingFace Transformers, vLLM, SGLang y KTransformers.
+La variante RAFT (Reinforcement Adaptive Fine-Tuning) representa un ajuste posterior al entrenamiento base orientado a estabilidad y utilidad práctica, con especial énfasis en codificación agéntica y razonamiento a nivel de repositorio. El modelo destaca por su rendimiento en tareas de agente de código (SWE-bench Verified 73.4) y por su capacidad de preservar contexto de razonamiento histórico para desarrollo iterativo. Publicado bajo licencia Apache 2.0, es compatible con Hugging Face Transformers, vLLM, SGLang y KTransformers.
 
 ## Especificaciones técnicas
 
@@ -63,7 +63,7 @@ El dato de Terminal-Bench 2.0 aparece truncado en la model card original, por lo
 - **VRAM estimada**: los pesos BF16 del repositorio ocupan 70.2 GB, por lo que se requieren al menos 80 GB de VRAM para cargar el modelo sin cuantización (p. ej., una A100 80GB o H100 80GB).
 - **Con cuantización**: una versión Q4_K_M podría reducir el uso a aproximadamente 20-25 GB, lo que permitiría ejecutarlo en una RTX 4090 (24 GB) o RTX 3090. La búsqueda web confirma que el modelo se puede ejecutar en RTX 4090 con llama.cpp y compresión de cache KV turbo3.
 - **GPUs recomendadas**: A100 80GB, H100 80GB, RTX 4090 (con cuantización), RTX 6000 Ada, o clusters de GPUs consumer con offload.
-- **Opciones de despliegue**: HuggingFace Transformers, vLLM, SGLang, KTransformers y llama.cpp (vía GGUF).
+- **Opciones de despliegue**: Hugging Face Transformers, vLLM, SGLang, KTransformers y llama.cpp (vía GGUF).
 - **Latencia y throughput**: la búsqueda web indica que el 35B-A3B es 3-4 veces más rápido que el Qwen3.6-27B dense en RTX 4090 con llama.cpp, gracias a la activación dispersa de 3B parámetros. No hay cifras exactas de tokens/segundo en la información disponible.
 
 ## Comparativa con modelos similares
@@ -89,9 +89,9 @@ El modelo supera a Gemma4-31B y Gemma4-26BA4B en tareas de codificación agénti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logicpeak/albedo-qwen3.6-35b-raft-g1
+- Repositorio Hugging Face: https://huggingface.co/logicpeak/albedo-qwen3.6-35b-raft-g1
 - Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Catálogo de modelos de Microsoft Foundry: https://ai.azure.com/catalog/models/FW-Qwen3.6-35B-A3B
 - Guía comparativa Qwen 3.6 (27B vs 35B-A3B): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

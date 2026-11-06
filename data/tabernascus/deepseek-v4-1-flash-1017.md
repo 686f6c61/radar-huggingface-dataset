@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en HuggingFace bajo la cuenta Tabernascus. El modelo está orientado a tareas de razonamiento, generación de código, flujos agénticos y comprensión visual, y su pipeline declarado es `image-text-to-text`, lo que indica capacidad multimodal de entrada (texto e imagen). Según la model card, esta versión reduce el tiempo de ejecución de tareas y la longitud de salida respecto a la versión anterior, mejorando la frontera de Pareto coste-rendimiento en distintos entornos agénticos.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en Hugging Face bajo la cuenta Tabernascus. El modelo está orientado a tareas de razonamiento, generación de código, flujos agénticos y comprensión visual, y su pipeline declarado es `image-text-to-text`, lo que indica capacidad multimodal de entrada (texto e imagen). Según la model card, esta versión reduce el tiempo de ejecución de tareas y la longitud de salida respecto a la versión anterior, mejorando la frontera de Pareto coste-rendimiento en distintos entornos agénticos.
 
 El modelo cuenta con 763.205.315.794 parámetros totales según los pesos en safetensors, y el repositorio ocupa 510,3 GB. La model card menciona una ventana de contexto de 1M tokens y un `max_tokens` recomendado de al menos 256K. El título de la cita técnica es "Pushing the Limits of KV Cache Compression", lo que sugiere que la innovación principal está en la compresión de la caché KV para sostener contextos muy largos con coste reducido.
 
@@ -81,8 +81,8 @@ Resultados publicados en la model card. La columna DS-V4.1-Flash-1017 correspond
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763,2B | 1M tokens | MIT | HuggingFace (Tabernascus) | Este modelo; 25 descargas |
-| DeepSeek-V4.1-Flash | no disponible | no disponible | MIT (según repo oficial) | HuggingFace (deepseek-ai) | Versión base; peor rendimiento en la mayoría de benchmarks de la tabla |
+| DeepSeek-V4.1-Flash-1017 | 763,2B | 1M tokens | MIT | Hugging Face (Tabernascus) | Este modelo; 25 descargas |
+| DeepSeek-V4.1-Flash | no disponible | no disponible | MIT (según repo oficial) | Hugging Face (deepseek-ai) | Versión base; peor rendimiento en la mayoría de benchmarks de la tabla |
 | K3 | no disponible | no disponible | no disponible | no disponible | Comparado en la model card; mejor en HLE (43,5) pero peor en el resto |
 | GLM-5.3 | no disponible | no disponible | no disponible | no disponible | Comparado en la model card; peor en la mayoría de benchmarks |
 | GPT-5.6 Sol | no disponible | no disponible | propietaria | API | Comparado en la model card; ligeramente mejor en HLE y ZeroBench |
@@ -103,10 +103,10 @@ No se dispone de parámetros, contexto ni licencia de los modelos comparados en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tabernascus/DeepSeek-V4.1-Flash-1017
+- Hugging Face: https://huggingface.co/Tabernascus/DeepSeek-V4.1-Flash-1017
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/

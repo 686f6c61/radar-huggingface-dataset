@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gizzai-Sense-E2B (esta ficha, GGUF) | 475,7 M | no disponible | zh, en | gizzai-sense-license | GGUF en HuggingFace |
+| Gizzai-Sense-E2B (esta ficha, GGUF) | 475,7 M | no disponible | zh, en | gizzai-sense-license | GGUF en Hugging Face |
 | Gizzai-Sense-E4B (modelo hermano de mayor capacidad) | no disponible | no disponible | no disponible | gizzai-sense-license (presumible, no confirmado) | no disponible |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,8 +82,8 @@ No se dispone de informacion suficiente sobre modelos comparables de la misma ca
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Gizzai-Sense-E2B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/GizzAI/Gizzai-Sense-E2B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Gizzai-Sense-E2B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/GizzAI/Gizzai-Sense-E2B
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Peticiones de cuantizacion y FAQ: https://huggingface.co/mradermacher/model_requests
 - Repositorio del proyecto Gizzai Sense en GitHub: https://github.com/wzsxb233/gizzai-sense

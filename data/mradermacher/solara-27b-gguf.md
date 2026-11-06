@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia (según cuantización): Q2_K ~11 GB, Q3_K_M ~13,5 GB, IQ4_XS ~15,5 GB, Q4_K_M ~17 GB, Q5_K_M ~19,5 GB, Q6_K ~22,5 GB, Q8_0 ~29 GB. Añadir margen para el contexto KV cache.
 - GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) para las mismas; A100 40/80 GB o H100 para Q8_0 y contextos largos.
 - Cabe en GPU de consumo: sí, con cuantizaciones Q4_K_M o inferiores en GPUs de 16-24 GB (RTX 4080, 4090, 3090). Las cuantizaciones Q6_K y Q8_0 requieren 24 GB o más.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. La etiqueta endpoints_compatible sugiere compatibilidad con endpoints estilo HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. La etiqueta endpoints_compatible sugiere compatibilidad con endpoints estilo Hugging Face.
 - Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No es posible establecer una comparativa rigurosa con alternativas concretas por
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Solara-27B-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Solara-27B-GGUF
 - Modelo base: https://huggingface.co/WangSenQWQ/Solara-27B
 - Página de descargas del autor de la cuantización: https://hf.tst.eu/model#Solara-27B-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

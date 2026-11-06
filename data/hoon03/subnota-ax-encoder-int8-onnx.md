@@ -94,7 +94,7 @@ La informacion proporcionada no incluye datos de parametros, contexto ni rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hoon03/subnota-ax-encoder-int8-onnx
+- Repositorio Hugging Face: https://huggingface.co/Hoon03/subnota-ax-encoder-int8-onnx
 - Modelo base `skt/A.X-Encoder-base`: https://huggingface.co/skt/A.X-Encoder-base
 - Revision concreta del modelo base: https://huggingface.co/skt/A.X-Encoder-base/tree/9708f9c404ace91efd25c06fac2d73413616f4ef
 - Codigo fuente de Subnota (incluye `desktop/scripts/export-ax-encoder.py`): https://github.com/SUNGHOONOH/Subnota

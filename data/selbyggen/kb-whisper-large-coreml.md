@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Selbyggen/kb-whisper-large-coreml | ~1550 M (heredados) | ventana de audio de 30 s (Whisper) | WER 4,8 % en clips sintéticos (autor) | Apache 2.0 | HuggingFace, formato Core ML |
-| KBLab/kb-whisper-large | ~1550 M | ventana de audio de 30 s (Whisper) | no disponible en esta ficha | Apache 2.0 | HuggingFace, formato original |
-| KB-Whisper small | no disponible | ventana de audio de 30 s (Whisper) | WER 5,6 % en clips sintéticos (autor) | no disponible en esta ficha | HuggingFace |
-| OpenAI whisper-large-v3 | ~1550 M | ventana de audio de 30 s (Whisper) | WER 5,6 % en clips sintéticos (autor) | no disponible en esta ficha | HuggingFace, OpenAI |
+| Selbyggen/kb-whisper-large-coreml | ~1550 M (heredados) | ventana de audio de 30 s (Whisper) | WER 4,8 % en clips sintéticos (autor) | Apache 2.0 | Hugging Face, formato Core ML |
+| KBLab/kb-whisper-large | ~1550 M | ventana de audio de 30 s (Whisper) | no disponible en esta ficha | Apache 2.0 | Hugging Face, formato original |
+| KB-Whisper small | no disponible | ventana de audio de 30 s (Whisper) | WER 5,6 % en clips sintéticos (autor) | no disponible en esta ficha | Hugging Face |
+| OpenAI whisper-large-v3 | ~1550 M | ventana de audio de 30 s (Whisper) | WER 5,6 % en clips sintéticos (autor) | no disponible en esta ficha | Hugging Face, OpenAI |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Selbyggen/kb-whisper-large-coreml
+- Hugging Face: https://huggingface.co/Selbyggen/kb-whisper-large-coreml
 - Modelo base: https://huggingface.co/KBLab/kb-whisper-large
 - KBLab: https://huggingface.co/KBLab
 - WhisperKit: https://github.com/argmaxinc/WhisperKit

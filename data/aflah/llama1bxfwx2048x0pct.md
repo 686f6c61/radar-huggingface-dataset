@@ -78,7 +78,7 @@ Nota: la comparativa se basa en especificaciones de arquitectura, ya que no se d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aflah/Llama1BxFWx2048x0pct
+- Hugging Face: https://huggingface.co/aflah/Llama1BxFWx2048x0pct
 - Articulo (arXiv): https://arxiv.org/abs/2603.11611
 - Codigo de entrenamiento y analisis: https://github.com/aflah02/Partial_RoPE_Analysis
 - Pagina del autor: https://aflah02.github.io/

@@ -79,7 +79,7 @@ Karnak se posiciona como una alternativa a Qwen3-30B-A3B con mejor tokenización
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Applied-Innovation-Center/Karnak-40B-v1.0
+- Hugging Face: https://huggingface.co/Applied-Innovation-Center/Karnak-40B-v1.0
 - Repositorio de archivos: https://huggingface.co/Applied-Innovation-Center/Karnak-40B-v1.0/tree/main
 - OpenModelMap (deploy guide): https://openmodelmap.com/model/Applied-Innovation-Center/Karnak-40B-v1.0
 - Nodepedia (VRAM y GPU): https://nodepedia.com/models/karnak-40b-v1-0/

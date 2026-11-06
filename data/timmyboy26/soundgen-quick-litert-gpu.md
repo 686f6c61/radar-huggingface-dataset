@@ -87,5 +87,5 @@ No se han proporcionado datos de otros decodificadores neuronales de audio de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timmyboy26/soundgen-quick-litert-gpu
+- Modelo en Hugging Face: https://huggingface.co/timmyboy26/soundgen-quick-litert-gpu
 - Modelo original (`jegly/audio`, commit `e50bf9dff759c8622371a9c43ede989ea2d04b32`): https://huggingface.co/jegly/audio/tree/e50bf9dff759c8622371a9c43ede989ea2d04b32

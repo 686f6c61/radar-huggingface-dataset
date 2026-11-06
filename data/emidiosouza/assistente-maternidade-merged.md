@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`emidiosouza/assistente-maternidade-merged` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen3.5-4B`, publicado por el usuario emidiosouza bajo licencia Apache-2.0. Se trata de un modelo de aproximadamente 4,66 mil millones de parámetros, distribuido en formato safetensors y con un repositorio de 9,3 GB, lo que corresponde a pesos almacenados en precisión de 16 bits. El pipeline declarado en HuggingFace es `image-text-to-text`, aunque la model card no documenta ni ejemplifica capacidades multimodales.
+`emidiosouza/assistente-maternidade-merged` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen3.5-4B`, publicado por el usuario emidiosouza bajo licencia Apache-2.0. Se trata de un modelo de aproximadamente 4,66 mil millones de parámetros, distribuido en formato safetensors y con un repositorio de 9,3 GB, lo que corresponde a pesos almacenados en precisión de 16 bits. El pipeline declarado en Hugging Face es `image-text-to-text`, aunque la model card no documenta ni ejemplifica capacidades multimodales.
 
-El modelo se presenta como un asistente conversacional (etiqueta `conversational`) orientado por su nombre a temáticas de maternidad, si bien el único idioma declarado es el inglés (`en`), lo que genera una discrepancia entre el nombre del repositorio, de raíz portuguesa, y los idiomas oficialmente soportados. El entrenamiento se realizó con la librería Unsloth junto con TRL de HuggingFace, según indica la propia model card, que afirma un entrenamiento "2x faster" sin aportar más detalles.
+El modelo se presenta como un asistente conversacional (etiqueta `conversational`) orientado por su nombre a temáticas de maternidad, si bien el único idioma declarado es el inglés (`en`), lo que genera una discrepancia entre el nombre del repositorio, de raíz portuguesa, y los idiomas oficialmente soportados. El entrenamiento se realizó con la librería Unsloth junto con TRL de Hugging Face, según indica la propia model card, que afirma un entrenamiento "2x faster" sin aportar más detalles.
 
 La relevancia actual del modelo es limitada desde el punto de vista de validación: cuenta con 0 descargas y 0 likes en el momento de la consulta, la model card es mínima (no especifica dataset, hiperparámetros, número de tokens ni método de ajuste) y no se han publicado evaluaciones. Su interés principal es como ejemplo de fine-tune de bajo coste sobre una base de 4B ejecutable en hardware de consumo, y como punto de partida reproducible para quien quiera replicar el flujo Unsloth + TRL.
 
@@ -80,11 +80,11 @@ Los datos de los modelos alternativos corresponden a especificaciones públicas 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `emidiosouza/assistente-maternidade-merged` | 4,66 B | No disponible | Apache-2.0 | HuggingFace, safetensors | Fine-tune sin evaluar, 0 descargas, solo inglés declarado |
-| `unsloth/Qwen3.5-4B` (base) | ≈4 B | No disponible | No disponible en esta ficha | HuggingFace | Modelo de partida del ajuste; sin datos de contexto confirmados |
-| Qwen3-4B | ≈4,0 B | 32K nativo, ampliable con YaRN | Apache-2.0 | HuggingFace, amplio ecosistema de cuantizaciones | Alternativa generalista de tamaño similar con soporte multilingüe |
-| Gemma 3 4B | ≈4 B | 128K | Licencia Gemma (uso comercial con condiciones) | HuggingFace | Alternativa multimodal de Google; licencia con restricciones adicionales |
-| Llama 3.2 3B | ≈3,2 B | 128K | Llama 3.2 Community License | HuggingFace | Alternativa algo menor, con licencia de comunidad y condiciones de uso |
+| `emidiosouza/assistente-maternidade-merged` | 4,66 B | No disponible | Apache-2.0 | Hugging Face, safetensors | Fine-tune sin evaluar, 0 descargas, solo inglés declarado |
+| `unsloth/Qwen3.5-4B` (base) | ≈4 B | No disponible | No disponible en esta ficha | Hugging Face | Modelo de partida del ajuste; sin datos de contexto confirmados |
+| Qwen3-4B | ≈4,0 B | 32K nativo, ampliable con YaRN | Apache-2.0 | Hugging Face, amplio ecosistema de cuantizaciones | Alternativa generalista de tamaño similar con soporte multilingüe |
+| Gemma 3 4B | ≈4 B | 128K | Licencia Gemma (uso comercial con condiciones) | Hugging Face | Alternativa multimodal de Google; licencia con restricciones adicionales |
+| Llama 3.2 3B | ≈3,2 B | 128K | Llama 3.2 Community License | Hugging Face | Alternativa algo menor, con licencia de comunidad y condiciones de uso |
 
 ## Limitaciones y advertencias
 
@@ -101,8 +101,8 @@ Los datos de los modelos alternativos corresponden a especificaciones públicas 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/emidiosouza/assistente-maternidade-merged
+- Repositorio del modelo en Hugging Face: https://huggingface.co/emidiosouza/assistente-maternidade-merged
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (librería de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (librería de entrenamiento citada): https://github.com/huggingface/trl
 - Nota sobre la búsqueda web: los resultados obtenidos no guardan relación con el modelo (foros de OBS, comunidad de YouTube y ayuda de Google Ads); no se han encontrado papers, blogs técnicos, demos ni repositorios adicionales asociados a este fine-tune.

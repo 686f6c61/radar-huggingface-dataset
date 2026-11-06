@@ -18,7 +18,7 @@ Es relevante para desarrolladores que quieran ejecutar un modelo de 27B en local
 | Longitud de contexto | 262.144 tokens (256K) |
 | Tipos de cuantizacion | oQ6: precisión mixta sensible, 455 módulos lineales a 6 bits grupo 64 y 50 a 8 bits grupo 64; escalas en bf16; cabeza MTP a 6 bits (tres proyecciones a 8 bits); drafter DFlash2 con proyecciones a 4 bits |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | swift-open-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (MLX), con `mtp.safetensors` sidecar y carpeta `dflash2/` |
 | Tamano del repo | 28,1 GB (22,5 GB de pesos mapeados + 1,86 GB de drafter residente + KV) |
 | Libreria / runtime | MLX, Kapitsa 0.2.25 o superior |
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto | Throughput (M2 Ultra) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repo (Swift 1.5 Qwen3.8-27B oQ6 + DFlash2) | 27,8B | 262.144 | 47,4 / 66,6 tok/s (prosa/código) | swift-open-license-1.0 | HuggingFace, MLX/Kapitsa |
+| Este repo (Swift 1.5 Qwen3.8-27B oQ6 + DFlash2) | 27,8B | 262.144 | 47,4 / 66,6 tok/s (prosa/código) | swift-open-license-1.0 | Hugging Face, MLX/Kapitsa |
 | `qwen3.8-27b:6bit` de Kapitsa | 27B (aprox.) | no disponible | 45,1 / 66,3 tok/s | no disponible | Catálogo integrado de Kapitsa |
-| `jongstra/Swift-1.5-Qwen3.8-27b-oQ6-fp16-mtp` | 27,8B | no disponible | ~20% más rápido en prefill con oMLX | no disponible | HuggingFace, MLX/oMLX |
-| `ukisai/Swift-1.5-Qwen3.8-27b` (base sin cuantizar) | 27,8B | no disponible | no disponible | no disponible | HuggingFace |
+| `jongstra/Swift-1.5-Qwen3.8-27b-oQ6-fp16-mtp` | 27,8B | no disponible | ~20% más rápido en prefill con oMLX | no disponible | Hugging Face, MLX/oMLX |
+| `ukisai/Swift-1.5-Qwen3.8-27b` (base sin cuantizar) | 27,8B | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación de calidad frente a otras familias de 27B-30B (por ejemplo, variantes densas de Qwen o Llama) no está disponible en la información proporcionada.
 
@@ -102,7 +102,7 @@ La comparación de calidad frente a otras familias de 27B-30B (por ejemplo, vari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-oQ6-bf16-mtp-dflash2-kapitsa
+- Modelo en Hugging Face: https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-oQ6-bf16-mtp-dflash2-kapitsa
 - Modelo base (fine-tune): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Variante para oMLX (fp16): https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-oQ6-fp16-mtp
 - Drafter DFlash2 original: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2

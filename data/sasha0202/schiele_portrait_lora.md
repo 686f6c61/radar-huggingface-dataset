@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`schiele_portrait_LoRA` es un adaptador LoRA para generacion de imagenes mediante texto (text-to-image) entrenado sobre el modelo base `stabilityai/stable-diffusion-xl-base-1.0` (SDXL). Lo publica el usuario Sasha0202 en HuggingFace y su proposito es inyectar un estilo visual concreto (retrato y collage) mediante la palabra de activacion `photo collage in CHERKASHIN style`. Se trata, por tanto, de un ajuste fino ligero y no de un modelo independiente: requiere cargar SDXL y aplicar el adaptador encima.
+`schiele_portrait_LoRA` es un adaptador LoRA para generacion de imagenes mediante texto (text-to-image) entrenado sobre el modelo base `stabilityai/stable-diffusion-xl-base-1.0` (SDXL). Lo publica el usuario Sasha0202 en Hugging Face y su proposito es inyectar un estilo visual concreto (retrato y collage) mediante la palabra de activacion `photo collage in CHERKASHIN style`. Se trata, por tanto, de un ajuste fino ligero y no de un modelo independiente: requiere cargar SDXL y aplicar el adaptador encima.
 
 El adaptador se entreno con DreamBooth y usa el VAE `madebyollin/sdxl-vae-fp16-fix` durante el entrenamiento. El LoRA se aplico unicamente al UNet (text encoder desactivado, `LoRA for the text encoder was enabled: False`), lo que reduce el tamano de los pesos y limita el ajuste al componente generador de imagen, no al codificador de texto. El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato Safetensors.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sasha0202/schiele_portrait_LoRA | LoRA de estilo | SDXL 1.0 | no disponible | no aplica | openrail++ | HuggingFace (5 descargas) |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base | — | 3.500 M | no aplica | openrail++ | HuggingFace (ampliamente usado) |
-| Adaptadores LoRA de estilo de la comunidad SDXL | LoRA de estilo | SDXL 1.0 | variable | no aplica | variable (a menudo openrail++) | HuggingFace / Civitai |
+| Sasha0202/schiele_portrait_LoRA | LoRA de estilo | SDXL 1.0 | no disponible | no aplica | openrail++ | Hugging Face (5 descargas) |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base | — | 3.500 M | no aplica | openrail++ | Hugging Face (ampliamente usado) |
+| Adaptadores LoRA de estilo de la comunidad SDXL | LoRA de estilo | SDXL 1.0 | variable | no aplica | variable (a menudo openrail++) | Hugging Face / Civitai |
 
 No se dispone de datos de rendimiento comparativo (benchmarks, FID, CLIP score) para este adaptador ni para alternativas concretas en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks, FID, CLIP score) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sasha0202/schiele_portrait_LoRA
+- Modelo en Hugging Face: https://huggingface.co/Sasha0202/schiele_portrait_LoRA
 - Modelo base SDXL: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE usado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - DreamBooth (paper): https://dreambooth.github.io/

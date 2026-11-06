@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fynnsu/qwen38-27b-dspark-original-lr1e3` es un checkpoint publicado en HuggingFace por el usuario `fynnsu`, con 1.909.788.417 parámetros reales (aproximadamente 1,91 mil millones) según los metadatos de los ficheros safetensors, y un tamaño de repositorio de 3,8 GB. El nombre del repositorio sugiere un experimento de ajuste o entrenamiento sobre una base de la familia Qwen con una tasa de aprendizaje de 1e-3 ("lr1e3"), pero no hay información publicada que confirme la arquitectura exacta, los datos de entrenamiento ni la procedencia de los pesos.
+`fynnsu/qwen38-27b-dspark-original-lr1e3` es un checkpoint publicado en Hugging Face por el usuario `fynnsu`, con 1.909.788.417 parámetros reales (aproximadamente 1,91 mil millones) según los metadatos de los ficheros safetensors, y un tamaño de repositorio de 3,8 GB. El nombre del repositorio sugiere un experimento de ajuste o entrenamiento sobre una base de la familia Qwen con una tasa de aprendizaje de 1e-3 ("lr1e3"), pero no hay información publicada que confirme la arquitectura exacta, los datos de entrenamiento ni la procedencia de los pesos.
 
 Se trata de un modelo con nomenclatura confusa: el identificador menciona "27b" mientras que el recuento real de parámetros es de 1,91B. Esta discrepancia es relevante para cualquier evaluación, porque impide asumir que se trate de un modelo de 27.000 millones de parámetros. El repositorio incluye código personalizado (`custom_code`), lo que implica que la carga del modelo requiere `trust_remote_code=True` y revisión previa del código empaquetado.
 
@@ -27,7 +27,7 @@ La relevancia de esta ficha es limitada pero clara: el modelo acumula 9 descarga
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la información disponible. El tag `custom_code` en HuggingFace indica que el repositorio incluye módulos de Python propios que se ejecutan al cargar el modelo, lo que habitualmente corresponde a variantes de atención, capas de normalización o cabezales de clasificación no presentes en las librerías estándar de Transformers. No hay confirmación de si se trata de un transformer denso estándar, de una variante con atención lineal, de un modelo híbrido o de otra topología.
+No se ha publicado información sobre la arquitectura en la información disponible. El tag `custom_code` en Hugging Face indica que el repositorio incluye módulos de Python propios que se ejecutan al cargar el modelo, lo que habitualmente corresponde a variantes de atención, capas de normalización o cabezales de clasificación no presentes en las librerías estándar de Transformers. No hay confirmación de si se trata de un transformer denso estándar, de una variante con atención lineal, de un modelo híbrido o de otra topología.
 
 Tampoco hay datos sobre el proceso de entrenamiento: no se especifica el número de tokens, la composición del dataset, ni si hubo fases de ajuste fino supervisado, RLHF o DPO. El sufijo `original-lr1e3` y el prefijo `dspark` apuntan a un experimento de entrenamiento con una tasa de aprendizaje de 1e-3 (un valor alto para ajuste fino de modelos de lenguaje, habitualmente en el rango 1e-5 a 1e-4), pero es una inferencia a partir del nombre del repositorio, no un dato confirmado.
 
@@ -100,6 +100,6 @@ Diferencias clave: los tres modelos de referencia publican licencia explícita, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fynnsu/qwen38-27b-dspark-original-lr1e3
+- Modelo en Hugging Face: https://huggingface.co/fynnsu/qwen38-27b-dspark-original-lr1e3
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la búsqueda web realizada.
 - Los resultados de búsqueda obtenidos no guardan relación con el modelo: tratan sobre la zona horaria Central Standard Time (https://www.timeanddate.com/time/zones/cst, https://time.is/CST, https://en.m.wikipedia.org/wiki/Central_Time_Zone) y no aportan información técnica.

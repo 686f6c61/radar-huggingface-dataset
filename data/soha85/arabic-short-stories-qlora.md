@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Soha85/arabic-short-stories-qlora` es un ajuste fino por QLoRA del modelo Qwen2.5-0.5B, publicado por el usuario Soha85 en HuggingFace, orientado a la generación de relatos cortos en árabe a partir de un prompt inicial. El modelo se entrenó sobre el dataset `alielfilali01/Darija-Stories-Dataset` y se distribuye en formato transformers/safetensors con licencia declarada como "cc". Se trata, por tanto, de un experimento de ajuste sobre un modelo base muy pequeño (0,5 B de parámetros) y no de un modelo entrenado desde cero.
+`Soha85/arabic-short-stories-qlora` es un ajuste fino por QLoRA del modelo Qwen2.5-0.5B, publicado por el usuario Soha85 en Hugging Face, orientado a la generación de relatos cortos en árabe a partir de un prompt inicial. El modelo se entrenó sobre el dataset `alielfilali01/Darija-Stories-Dataset` y se distribuye en formato transformers/safetensors con licencia declarada como "cc". Se trata, por tanto, de un experimento de ajuste sobre un modelo base muy pequeño (0,5 B de parámetros) y no de un modelo entrenado desde cero.
 
 La relevancia práctica es limitada pero concreta: el ecosistema de modelos abiertos para árabe y, sobre todo, para dariya marroquí, es mucho más reducido que el de inglés o castellano, y los modelos de 0,5 B permiten inferencia en CPU, en GPUs de gama baja y en dispositivos con recursos muy restringidos. Un ajuste de este tamaño puede ser útil como banco de pruebas para técnicas de QLoRA, como generador de datos sintéticos de relatos o como componente creativo en aplicaciones offline.
 
-No obstante, la model card es la plantilla autogenerada por HuggingFace con la mayoría de campos sin cumplimentar ("[More Information Needed]"), el repositorio declara 0 descargas y 0 likes, y el tamaño del repo aparece como 0.0 GB. Todo ello indica que el artefacto es experimental y no ha sido validado ni evaluado de forma pública. La información técnica disponible sobre el ajuste es mínima y la mayor parte de los datos de arquitectura y contexto proceden del modelo base, no de este fine-tune.
+No obstante, la model card es la plantilla autogenerada por Hugging Face con la mayoría de campos sin cumplimentar ("[More Information Needed]"), el repositorio declara 0 descargas y 0 likes, y el tamaño del repo aparece como 0.0 GB. Todo ello indica que el artefacto es experimental y no ha sido validado ni evaluado de forma pública. La información técnica disponible sobre el ajuste es mínima y la mayor parte de los datos de arquitectura y contexto proceden del modelo base, no de este fine-tune.
 
 ## Especificaciones técnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Soha85/arabic-short-stories-qlora | 0,49 B (base) | No disponible en la model card (base: 32 768 tokens) | Generacion de relatos en arabe/dariya via QLoRA | "cc" (sin especificar) | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-0.5B | 0,49 B | 32 768 tokens (131 072 con YaRN) | Modelo base generalista multilingue | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen2.5-1.5B | 1,5 B | 32 768 tokens (131 072 con YaRN) | Modelo generalista, mayor capacidad | Apache 2.0 | HuggingFace |
-| AraGPT2-base | ~0,135 B | 1 024 tokens | Modelo GPT-2 entrenado en arabe | MIT (segun su model card) | HuggingFace |
+| Soha85/arabic-short-stories-qlora | 0,49 B (base) | No disponible en la model card (base: 32 768 tokens) | Generacion de relatos en arabe/dariya via QLoRA | "cc" (sin especificar) | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-0.5B | 0,49 B | 32 768 tokens (131 072 con YaRN) | Modelo base generalista multilingue | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen2.5-1.5B | 1,5 B | 32 768 tokens (131 072 con YaRN) | Modelo generalista, mayor capacidad | Apache 2.0 | Hugging Face |
+| AraGPT2-base | ~0,135 B | 1 024 tokens | Modelo GPT-2 entrenado en arabe | MIT (segun su model card) | Hugging Face |
 
 La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publicados para este fine-tune, y los modelos alternativos no se han evaluado en las mismas condiciones en la informacion disponible. A igualdad de parametros, Qwen2.5-0.5B ofrece un contexto nativo muy superior al de AraGPT2 y un vocabulario mas amplio, pero carece de especializacion en arabe; el fine-tune de Soha85 aporta esa especializacion a costa de perder capacidades generales y sin evidencia de evaluacion.
 
@@ -85,7 +85,7 @@ La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Soha85/arabic-short-stories-qlora
+- Modelo en Hugging Face: https://huggingface.co/Soha85/arabic-short-stories-qlora
 - Repositorio de archivos: https://huggingface.co/Soha85/arabic-short-stories-qlora/tree/main
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/alielfilali01/Darija-Stories-Dataset

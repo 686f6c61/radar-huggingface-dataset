@@ -79,10 +79,10 @@ La precision de recompensa del 100 % indica que el modelo distingue perfectament
 
 | Modelo | Parametros | Contexto | Tecnica de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kyleliu789/qwen3-14b-svamp14-dpo-qlora-lr1e-6 | 14,7 B + LoRA | 131 072 | DPO + QLoRA | other | HuggingFace |
-| kyleliu789/qwen3-14b-svamp14-sft-qlora | 14,7 B + LoRA | 131 072 | SFT + QLoRA | no disponible | HuggingFace |
-| kyleliu789/qwen3-14b-svamp-dpo-qlora-all-caps | 14,7 B + LoRA | 131 072 | DPO + QLoRA (salida en mayusculas) | no disponible | HuggingFace |
-| Qwen/Qwen3-14B (base) | 14,7 B | 131 072 | Sin ajuste | Apache 2.0 | HuggingFace, Ollama |
+| kyleliu789/qwen3-14b-svamp14-dpo-qlora-lr1e-6 | 14,7 B + LoRA | 131 072 | DPO + QLoRA | other | Hugging Face |
+| kyleliu789/qwen3-14b-svamp14-sft-qlora | 14,7 B + LoRA | 131 072 | SFT + QLoRA | no disponible | Hugging Face |
+| kyleliu789/qwen3-14b-svamp-dpo-qlora-all-caps | 14,7 B + LoRA | 131 072 | DPO + QLoRA (salida en mayusculas) | no disponible | Hugging Face |
+| Qwen/Qwen3-14B (base) | 14,7 B | 131 072 | Sin ajuste | Apache 2.0 | Hugging Face, Ollama |
 
 El modelo se distingue de su variante SFT por usar DPO en lugar de supervision directa, lo que tipicamente mejora la alineacion con preferencias humanas a costa de una mayor complejidad de entrenamiento. Frente al modelo base, el adaptador anade especializacion en razonamiento matematico pero sin benchmarks publicos que cuantifiquen la mejora.
 
@@ -99,7 +99,7 @@ El modelo se distingue de su variante SFT por usar DPO en lugar de supervision d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-dpo-qlora-lr1e-6
+- Repositorio Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-dpo-qlora-lr1e-6
 - Variante SFT del mismo autor: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-qlora
 - Variante DPO con salida en mayusculas: https://huggingface.co/kyleliu789/qwen3-14b-svamp-dpo-qlora-all-caps
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B

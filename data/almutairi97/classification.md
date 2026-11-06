@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`almutairi97/classification` es un repositorio de HuggingFace que contiene una implementación propia y mínima (33.088 parámetros según los pesos en safetensors) de una arquitectura denominada "Albef" orientada a tareas de clasificación. Lo publica el usuario almutairi97 bajo licencia Apache 2.0 y con tags `safetensors`, `albef`, `pytorch` y `classification`. No se trata de un modelo entrenado ni publicado como release de referencia, sino de un esqueleto reproducible: el autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo con benchmarks.
+`almutairi97/classification` es un repositorio de Hugging Face que contiene una implementación propia y mínima (33.088 parámetros según los pesos en safetensors) de una arquitectura denominada "Albef" orientada a tareas de clasificación. Lo publica el usuario almutairi97 bajo licencia Apache 2.0 y con tags `safetensors`, `albef`, `pytorch` y `classification`. No se trata de un modelo entrenado ni publicado como release de referencia, sino de un esqueleto reproducible: el autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo con benchmarks.
 
 El repositorio incluye el código de definición del modelo y un punto de entrada de entrenamiento (`finetune.py`), un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (optimizador LAMB y scheduler OneCycle). La variante declarada es "giant", con atención dilatada, fusión bilineal, activación Mish y normalización GroupNorm. A fecha de la información disponible no tiene descargas ni likes, y el tamaño del repo es de 0.0 GB, lo que es coherente con un checkpoint de inicialización de apenas decenas de miles de parámetros.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, la de una plantilla de experimentación para quien 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una implementación Albef de escala "giant" según la configuración del autor, con atención dilatada, fusión bilineal de modalidades o ramas, activación Mish y GroupNorm. El repositorio incluye el código Python con la definición del modelo y un bloque `__main__` con un ejemplo de prueba de humo, además de un script `finetune.py` como artefacto principal. Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+La arquitectura es una implementación Albef de escala "giant" según la configuración del autor, con atención dilatada, fusión bilineal de modalidades o ramas, activación Mish y GroupNorm. El repositorio incluye el código Python con la definición del modelo y un bloque `__main__` con un ejemplo de prueba de humo, además de un script `finetune.py` como artefacto principal. Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 No hay evidencia de entrenamiento real: el checkpoint `model.safetensors` es una inicialización para pruebas de humo y el autor declara que no se presenta como checkpoint entrenado ni con benchmarks. La receta por defecto usa el optimizador LAMB con un schedule OneCycle, pero se trata de valores de partida del script, no de resultados de una ejecución completada. No se especifican número de tokens de entrenamiento, composición del dataset, ni fases de RLHF o DPO.
 
@@ -71,9 +71,9 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Riesgo de alucinación no aplicable en sentido estricto al ser un modelo de clasificación, pero sí riesgo de predicciones no calibradas tras un entrenamiento insuficiente.
 - No se especifican limitaciones de contexto ni de idioma porque no hay información al respecto.
 - La licencia Apache 2.0 permite uso comercial del código y los pesos, pero deben revisarse por separado los términos de los datasets externos que se utilicen para entrenar.
-- Al ser una implementación personalizada, las APIs estándar de HuggingFace (`AutoModel`, `pipeline`) no cargarán el modelo sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs estándar de Hugging Face (`AutoModel`, `pipeline`) no cargarán el modelo sin un adaptador explícito.
 - Cualquier resultado publicado a partir de este repositorio debe documentarse por separado de los valores por defecto que se distribuyen.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/almutairi97/classification
+- Repositorio en Hugging Face: https://huggingface.co/almutairi97/classification

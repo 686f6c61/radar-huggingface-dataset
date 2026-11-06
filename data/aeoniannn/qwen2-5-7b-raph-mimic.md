@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aeoniannn/Qwen2.5-7B-raph-Mimic es un ajuste fino (finetune) publicado por el usuario aeoniannn sobre el modelo unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit, que a su vez deriva de Qwen2.5-7B-Instruct de Alibaba. Se trata, por tanto, de un modelo denso de 7.615.616.512 parametros orientado a generacion de texto conversacional, distribuido en formato safetensors y compatible con la libreria transformers y con text-generation-inference. La model card es minima: el autor no documenta el objetivo del ajuste, el dataset utilizado, ni la receta de entrenamiento mas alla de indicar que se entreno con Unsloth y la libreria TRL de HuggingFace.
+aeoniannn/Qwen2.5-7B-raph-Mimic es un ajuste fino (finetune) publicado por el usuario aeoniannn sobre el modelo unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit, que a su vez deriva de Qwen2.5-7B-Instruct de Alibaba. Se trata, por tanto, de un modelo denso de 7.615.616.512 parametros orientado a generacion de texto conversacional, distribuido en formato safetensors y compatible con la libreria transformers y con text-generation-inference. La model card es minima: el autor no documenta el objetivo del ajuste, el dataset utilizado, ni la receta de entrenamiento mas alla de indicar que se entreno con Unsloth y la libreria TRL de Hugging Face.
 
 El interes practico del modelo reside en su linaje: hereda la arquitectura Qwen2 (transformer decoder-only con Grouped Query Attention y RoPE) y las capacidades del Qwen2.5-7B-Instruct, un modelo que en su momento destaco por su soporte de contexto largo, generacion estructurada de JSON y tool calling. Al estar publicado bajo licencia apache-2.0 y con pesos completos, es desplegable en infraestructura propia sin coste de licencia.
 
@@ -74,10 +74,10 @@ Como referencia externa, el modelo base Qwen2.5-7B-Instruct si cuenta con evalua
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| aeoniannn/Qwen2.5-7B-raph-Mimic | 7,62B | No disponible (base: 32.768 nativos, 131.072 con YaRN) | apache-2.0 | HuggingFace, 148 descargas | Finetune sin documentar ni benchmarks |
-| Qwen/Qwen2.5-7B-Instruct | 7,62B | 32.768 nativos, 131.072 con YaRN | apache-2.0 (segun publicacion de Qwen) | HuggingFace, ampliamente adoptado | Modelo de referencia, con evaluaciones publicadas por el fabricante |
-| Qwen/Qwen2.5-7B | 7,62B | 32.768 nativos, 131.072 con YaRN | apache-2.0 | HuggingFace | Version preentrenada sin ajuste a instrucciones |
-| Meta Llama 3.1 8B Instruct | 8,03B | 131.072 | Licencia comunitaria Llama 3.1 | HuggingFace | Alternativa de tamano similar con licencia no completamente permisiva |
+| aeoniannn/Qwen2.5-7B-raph-Mimic | 7,62B | No disponible (base: 32.768 nativos, 131.072 con YaRN) | apache-2.0 | Hugging Face, 148 descargas | Finetune sin documentar ni benchmarks |
+| Qwen/Qwen2.5-7B-Instruct | 7,62B | 32.768 nativos, 131.072 con YaRN | apache-2.0 (segun publicacion de Qwen) | Hugging Face, ampliamente adoptado | Modelo de referencia, con evaluaciones publicadas por el fabricante |
+| Qwen/Qwen2.5-7B | 7,62B | 32.768 nativos, 131.072 con YaRN | apache-2.0 | Hugging Face | Version preentrenada sin ajuste a instrucciones |
+| Meta Llama 3.1 8B Instruct | 8,03B | 131.072 | Licencia comunitaria Llama 3.1 | Hugging Face | Alternativa de tamano similar con licencia no completamente permisiva |
 
 No se dispone de cifras de benchmarks comparativas para este finetune concreto, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -96,7 +96,7 @@ No se dispone de cifras de benchmarks comparativas para este finetune concreto, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aeoniannn/Qwen2.5-7B-raph-Mimic
+- Modelo en Hugging Face: https://huggingface.co/aeoniannn/Qwen2.5-7B-raph-Mimic
 - Modelo base intermedio: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit
 - Modelo Qwen2.5-7B original: https://huggingface.co/Qwen/Qwen2.5-7B
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

@@ -89,7 +89,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/rldx_1_rmbench_taco_wodemo_gemini_b128_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/rldx_1_rmbench_taco_wodemo_gemini_b128_60k
 - Dataset de ajuste: https://huggingface.co/datasets/Myungkyu/RMBench-taco-wodemo-gemini
 - Modelo base: https://huggingface.co/RLWRLD/RLDX-1-PT
 

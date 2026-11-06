@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| singcheck-models | Paquete ONNX de audio (6 redes) | no disponible (Parakeet 0,6B incluido) | por ventanas de audio | per-file, conjunto no comercial | HuggingFace |
+| singcheck-models | Paquete ONNX de audio (6 redes) | no disponible (Parakeet 0,6B incluido) | por ventanas de audio | per-file, conjunto no comercial | Hugging Face |
 | Demucs (original) | Separacion de fuentes | no disponible | no aplica | MIT | GitHub |
-| Parakeet TDT 0.6B v3 (original) | ASR | 0,6 mil millones | no disponible | CC-BY-4.0 | HuggingFace |
+| Parakeet TDT 0.6B v3 (original) | ASR | 0,6 mil millones | no disponible | CC-BY-4.0 | Hugging Face |
 | MMS_FA (original) | Alineamiento forzado | no disponible | no aplica | CC-BY-NC-4.0 | torchaudio |
 
 La comparativa directa con un unico modelo equivalente no es posible: singcheck-models es un agregado de modelos de tareas distintas, mientras que las alternativas de la tabla cubren cada una solo una de esas tareas.
@@ -84,7 +84,7 @@ La comparativa directa con un unico modelo equivalente no es posible: singcheck-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/timur777/singcheck-models
+- Repositorio Hugging Face: https://huggingface.co/timur777/singcheck-models
 - Demucs: https://github.com/facebookresearch/demucs
 - CREPE: https://github.com/marl/crepe
 - torchcrepe: https://github.com/maxrmorrison/torchcrepe

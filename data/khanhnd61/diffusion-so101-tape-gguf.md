@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / ventana | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffusion-so101-tape-gguf | 277,8 M | 2 pasos de observación; horizonte de 64 acciones | Diffusion Policy para SO-101 | Apache-2.0 | GGUF en HuggingFace |
-| khanhnd61/inflect_so101_tape | No disponible | No disponible | VLA con instrucción única sobre SO-101 | No disponible | HuggingFace |
+| diffusion-so101-tape-gguf | 277,8 M | 2 pasos de observación; horizonte de 64 acciones | Diffusion Policy para SO-101 | Apache-2.0 | GGUF en Hugging Face |
+| khanhnd61/inflect_so101_tape | No disponible | No disponible | VLA con instrucción única sobre SO-101 | No disponible | Hugging Face |
 | Otros checkpoints de Diffusion Policy para SO-101 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos de rendimiento, contexto o licencia para alternativas equivalentes en la información proporcionada.
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de rendimiento, contexto o licencia para alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khanhnd61/diffusion-so101-tape-gguf
+- Modelo en Hugging Face: https://huggingface.co/khanhnd61/diffusion-so101-tape-gguf
 - Repositorio vla.simd: https://github.com/cair-vinuni/vla.simd
 - Documentación de benchmarks de vla.simd: https://github.com/cair-vinuni/vla.simd/tree/main/docs/benchmark
 - Fork de LeRobot usado: https://github.com/khanhnd61-vr/lerobot

@@ -92,7 +92,7 @@ No se han publicado resultados de otros benchmarks en la información disponible
 | Modelo | Parámetros | Contexto | Licencia | Comportamiento de rechazo | Disponibilidad |
 |---|---|---|---|---|---|
 | minte1431/Qwen3.6-27B-OBLITERATED | 26,9B | No disponible | Apache 2.0 | 93,65 % de no rechazo en proxy HarmBench de 1.920 filas | Safetensors BF16 + GGUF Q4/Q5/Q6/Q8 |
-| Qwen/Qwen3.6-27B (modelo base) | 26,9B | No disponible | Apache 2.0 | No disponible de forma numérica; se describe como "con rechazo integrado en el checkpoint" | Pesos originales en HuggingFace |
+| Qwen/Qwen3.6-27B (modelo base) | 26,9B | No disponible | Apache 2.0 | No disponible de forma numérica; se describe como "con rechazo integrado en el checkpoint" | Pesos originales en Hugging Face |
 | Otras variantes abliterated/uncensored de la familia Qwen | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación directa con el modelo base es la única respaldada por datos: en las dos rebanadas de MMLU-Pro reportadas, la versión obliterada queda exactamente igualada al stock (51/70 y 36/70), lo que sugiere que la ablación no degradó esa capacidad medida, aunque el tamaño de muestra es reducido. No se dispone de datos de rendimiento ni de licencia de otras alternativas comparables en la información proporcionada.
@@ -115,6 +115,6 @@ La comparación directa con el modelo base es la única respaldada por datos: en
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/minte1431/Qwen3.6-27B-OBLITERATED
+- Hugging Face del modelo: https://huggingface.co/minte1431/Qwen3.6-27B-OBLITERATED
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos por la búsqueda corresponden a contenidos agrícolas sin relación con el modelo.

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (raw VLM + layerwise DiT) | VLM 4B + readout 111,9M | No disponible | VLM congelado + DiT por capas para acciones | Apache 2.0 | HuggingFace, 0 descargas |
+| Este checkpoint (raw VLM + layerwise DiT) | VLM 4B + readout 111,9M | No disponible | VLM congelado + DiT por capas para acciones | Apache 2.0 | Hugging Face, 0 descargas |
 | Experto en acciones Qwen3 (28 capas, histórico) | No disponible | No disponible | Readout sobre Qwen3, 28 capas | No disponible | Referenciado en la model card, no enlazado |
-| Qwen3-VL-4B-Instruct (base) | 4B | No disponible en esta ficha | VLM multimodal conversacional | No disponible en esta ficha | HuggingFace (Qwen/Qwen3-VL-4B-Instruct) |
+| Qwen3-VL-4B-Instruct (base) | 4B | No disponible en esta ficha | VLM multimodal conversacional | No disponible en esta ficha | Hugging Face (Qwen/Qwen3-VL-4B-Instruct) |
 
 La comparación con otros *action experts* sobre VLM (por ejemplo, variantes de OpenVLA o RT-2) no está disponible en la información proporcionada.
 
@@ -84,6 +84,6 @@ La comparación con otros *action experts* sobre VLM (por ejemplo, variantes de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-newtask14-n32-rawvlm-layerwise384-l36-head10k-99cde744
+- Hugging Face: https://huggingface.co/myendless/action-repre-newtask14-n32-rawvlm-layerwise384-l36-head10k-99cde744
 - VLM base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este checkpoint.

@@ -88,8 +88,8 @@ Todos los valores de la tabla original corresponden al decoder; la model card no
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qualcomm/TrOCR | 61,3 M (23,0 M encoder + 38,3 M decoder) | Entrada 320x320 | MIT | HuggingFace + assets ONNX/QNN_DLC/TFLITE optimizados para NPU Qualcomm | Version optimizada del checkpoint small-handwritten |
-| microsoft/trocr-small-handwritten | No disponible en la informacion proporcionada (es el checkpoint base) | No disponible | No disponible | HuggingFace | Checkpoint de origen del que parte la version de Qualcomm |
+| qualcomm/TrOCR | 61,3 M (23,0 M encoder + 38,3 M decoder) | Entrada 320x320 | MIT | Hugging Face + assets ONNX/QNN_DLC/TFLITE optimizados para NPU Qualcomm | Version optimizada del checkpoint small-handwritten |
+| microsoft/trocr-small-handwritten | No disponible en la informacion proporcionada (es el checkpoint base) | No disponible | No disponible | Hugging Face | Checkpoint de origen del que parte la version de Qualcomm |
 | OCR tradicional (por ejemplo, motores no neuronales) | No disponible | No disponible | No disponible | No disponible | Referencia de categoria, sin datos comparables en la informacion disponible |
 
 No se dispone de datos de precision que permitan comparar el rendimiento cualitativo frente a alternativas; la informacion proporcionada solo describe el rendimiento de inferencia en hardware Qualcomm.
@@ -109,7 +109,7 @@ No se dispone de datos de precision que permitan comparar el rendimiento cualita
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/qualcomm/TrOCR
+- Hugging Face del modelo: https://huggingface.co/qualcomm/TrOCR
 - Checkpoint base: https://huggingface.co/microsoft/trocr-small-handwritten
 - Repositorio GitHub (AI Hub Models): https://github.com/qualcomm/ai-hub-models/blob/v0.62.0/src/qai_hub_models/models/trocr
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/trocr

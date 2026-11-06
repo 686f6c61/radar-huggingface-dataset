@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kushasareen/qwen35-9b-ft-c100 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B publicado por el usuario kushasareen en HuggingFace. Segun la model card, se trata de un entrenamiento de refuerzo (reinforcement learning) de 100 pasos de optimizador, guardado con los pesos, la configuracion y el tokenizer tal cual los produjo el trainer. El pipeline declarado en el hub es `reinforcement-learning` y la libreria de carga es `transformers`.
+kushasareen/qwen35-9b-ft-c100 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B publicado por el usuario kushasareen en Hugging Face. Segun la model card, se trata de un entrenamiento de refuerzo (reinforcement learning) de 100 pasos de optimizador, guardado con los pesos, la configuracion y el tokenizer tal cual los produjo el trainer. El pipeline declarado en el hub es `reinforcement-learning` y la libreria de carga es `transformers`.
 
 El dato mas llamativo es la discrepancia entre el nombre del repositorio ("9b") y el modelo base declarado (Qwen3.5-4B): el recuento real de parametros en los safetensors es de 9.409.813.744 (aproximadamente 9,4 mil millones), lo que sugiere que el checkpoint resultante no coincide en tamano con el modelo base citado. Esta inconsistencia, junto con la ausencia de una model card detallada, hace que el modelo deba tratarse con cautela y verificarse antes de cualquier uso en produccion.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kushasareen/qwen35-9b-ft-c100 | ~9,4 B (segun safetensors) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base declarado) | ~4 B (segun model card) | no disponible | no disponible en la informacion | HuggingFace |
+| kushasareen/qwen35-9b-ft-c100 | ~9,4 B (segun safetensors) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base declarado) | ~4 B (segun model card) | no disponible | no disponible en la informacion | Hugging Face |
 | Alternativas de ~9 B de la familia Qwen | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos comparables en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kushasareen/qwen35-9b-ft-c100
+- Repositorio Hugging Face: https://huggingface.co/kushasareen/qwen35-9b-ft-c100
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

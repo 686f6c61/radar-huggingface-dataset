@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Labadain-MedQA-QLoRA-Gemma-4-E4B-it-tetun es un adaptador LoRA publicado por el usuario labadain en HuggingFace, entrenado mediante QLoRA sobre el modelo base `unsloth/gemma-4-E4B-it`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador (0,2 GB en formato safetensors) que debe cargarse junto al modelo base para poder realizar inferencia. El nombre del repositorio indica que el ajuste fino se ha orientado a pregunta-respuesta de dominio médico (MedQA) en tetun, la lengua oficial de Timor-Leste.
+Labadain-MedQA-QLoRA-Gemma-4-E4B-it-tetun es un adaptador LoRA publicado por el usuario labadain en Hugging Face, entrenado mediante QLoRA sobre el modelo base `unsloth/gemma-4-E4B-it`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador (0,2 GB en formato safetensors) que debe cargarse junto al modelo base para poder realizar inferencia. El nombre del repositorio indica que el ajuste fino se ha orientado a pregunta-respuesta de dominio médico (MedQA) en tetun, la lengua oficial de Timor-Leste.
 
 El interes principal del artefacto es su carácter de recurso para una lengua de bajos recursos: el tetun cuenta con muy pocos modelos ajustados y practicamente ningun corpus médico abierto de referencia. Un adaptador de este tipo permite experimentar con QLoRA sobre un modelo base moderno sin necesidad de reentrenar ni redistribuir el modelo completo, lo que reduce costes de computo y evita problemas de redistribucion de pesos.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| labadain/Labadain-MedQA-QLoRA-Gemma-4-E4B-it-tetun | Adaptador LoRA; base no disponible | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | HuggingFace |
+| labadain/Labadain-MedQA-QLoRA-Gemma-4-E4B-it-tetun | Adaptador LoRA; base no disponible | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Hugging Face |
 | Otros adaptadores LoRA para tetun | No disponible | No disponible | No disponible | No disponible | No identificados en la informacion proporcionada |
 
 No se dispone de datos verificables sobre alternativas comparables en la misma categoria (adaptadores o modelos ajustados para tetun en dominio medico), por lo que la comparacion cuantitativa no esta disponible.
@@ -83,6 +83,6 @@ No se dispone de datos verificables sobre alternativas comparables en la misma c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-Gemma-4-E4B-it-tetun
+- Repositorio en Hugging Face: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-Gemma-4-E4B-it-tetun
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

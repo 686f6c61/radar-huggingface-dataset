@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shuhant/foundation-action-s-r12-goal8-seed2` es un checkpoint de investigación publicado en HuggingFace por el usuario `shuhant`, con 183.245.588 parámetros almacenados en safetensors y un tamaño de repositorio de 0,7 GB. Las etiquetas del repositorio lo identifican como un modelo de acción (*foundation-action*) condicionado a objetivos (*goal-conditioned*) orientado a conducción autónoma (*autonomous-driving*), empaquetado con PyTorch. El repositorio no incluye model card pública, y el acceso está restringido: es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+`shuhant/foundation-action-s-r12-goal8-seed2` es un checkpoint de investigación publicado en Hugging Face por el usuario `shuhant`, con 183.245.588 parámetros almacenados en safetensors y un tamaño de repositorio de 0,7 GB. Las etiquetas del repositorio lo identifican como un modelo de acción (*foundation-action*) condicionado a objetivos (*goal-conditioned*) orientado a conducción autónoma (*autonomous-driving*), empaquetado con PyTorch. El repositorio no incluye model card pública, y el acceso está restringido: es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 Por el nombre del identificador, el checkpoint parece formar parte de una familia de experimentos con variantes de semilla (`seed2`) y configuración (`s-r12-goal8`), lo que sugiere un barrido de hiperparámetros o de inicializaciones aleatorias más que un modelo listo para producción. El repositorio relacionado del mismo autor, `shuhant/foundational_action`, apunta a un proyecto base del que estos checkpoints serían derivaciones. No hay información publicada sobre arquitectura interna, datos de entrenamiento, ventana de contexto ni idiomas soportados.
 
@@ -65,14 +65,14 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `shuhant/foundation-action-s-r12-goal8-seed2` | 183.245.588 | No disponible | `other` (acceso restringido) | HuggingFace, gated |
+| `shuhant/foundation-action-s-r12-goal8-seed2` | 183.245.588 | No disponible | `other` (acceso restringido) | Hugging Face, gated |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay documentación de arquitectura, datos, métricas ni interfaz de uso, lo que impide evaluar su corrección más allá de la inspección del propio checkpoint.
 - Licencia `other` sin texto localizado en la información disponible: no se puede confirmar si el uso comercial está permitido. Es imprescindible revisar los términos adjuntos al repositorio antes de cualquier uso profesional.
-- Acceso restringido (*gated*): la descarga requiere aceptar condiciones en HuggingFace, lo que puede añadir fricción en pipelines automatizados y en entornos de CI.
+- Acceso restringido (*gated*): la descarga requiere aceptar condiciones en Hugging Face, lo que puede añadir fricción en pipelines automatizados y en entornos de CI.
 - Riesgo de deriva de distribución y fallos de seguridad: en conducción autónoma, un modelo entrenado con datos no documentados puede comportarse de forma impredecible ante escenarios no vistos. No consta ninguna validación en simulación o en vehículo real.
 - Sin cifras de rendimiento ni comparaciones: no es posible afirmar que el modelo sea competitivo frente a alternativas, ni siquiera dentro de su propio proyecto.
 - Capacidad limitada por tamaño: 183 M de parámetros restringen la complejidad de las representaciones que el modelo puede aprender; es previsible un techo bajo en tareas que exijan razonamiento de largo horizonte, aunque no hay datos que lo cuantifiquen.

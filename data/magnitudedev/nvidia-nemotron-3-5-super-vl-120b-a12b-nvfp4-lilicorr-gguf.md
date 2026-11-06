@@ -69,7 +69,7 @@ La comparacion se ofrece a titulo orientativo; los datos del modelo de esta fich
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron 3.5 Super VL 120B A12B (este repo, GGUF NVFP4) | 120B segun nombre (1,66B segun safetensors) | 12B segun nombre | no disponible | openmdw-1.1 | GGUF en HuggingFace |
+| Nemotron 3.5 Super VL 120B A12B (este repo, GGUF NVFP4) | 120B segun nombre (1,66B segun safetensors) | 12B segun nombre | no disponible | openmdw-1.1 | GGUF en Hugging Face |
 | Llama 4 Maverick | 400B | 17B | hasta 1M | Llama 4 Community License | pesos abiertos |
 | Mixtral 8x22B | 141B | 39B | 64K | Apache 2.0 | pesos abiertos |
 
@@ -90,8 +90,8 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion GGUF: https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr-GGUF
-- Checkpoint base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr
+- Repositorio Hugging Face de esta conversion GGUF: https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr-GGUF
+- Checkpoint base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr
 - Revision del checkpoint origen: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr/tree/7c7221aeb4cb3139307aa457f7dce11a8fb6ceb2
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Framework Magnitude: https://github.com/magnitudedev/magnitude

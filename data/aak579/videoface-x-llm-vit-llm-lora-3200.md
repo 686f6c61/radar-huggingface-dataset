@@ -2,9 +2,9 @@
 
 ## Resumen
 
-VideoFace-X-LLM-ViT-LLM-LoRA-3200 es un ajuste fino publicado por el usuario Aak579 en HuggingFace, construido sobre el modelo OpenGVLab/InternVideo2_5_Chat_8B. Se distribuye con la etiqueta de pipeline video-text-to-text, es decir, está orientado a tareas de comprensión y generación de lenguaje a partir de vídeo. El nombre del repositorio sugiere una combinación de un codificador visual (ViT), un modelo de lenguaje y adaptadores LoRA, y el sufijo numerico "3200" podria corresponder a pasos de entrenamiento, aunque esto no se confirma en la informacion disponible.
+VideoFace-X-LLM-ViT-LLM-LoRA-3200 es un ajuste fino publicado por el usuario Aak579 en Hugging Face, construido sobre el modelo OpenGVLab/InternVideo2_5_Chat_8B. Se distribuye con la etiqueta de pipeline video-text-to-text, es decir, está orientado a tareas de comprensión y generación de lenguaje a partir de vídeo. El nombre del repositorio sugiere una combinación de un codificador visual (ViT), un modelo de lenguaje y adaptadores LoRA, y el sufijo numerico "3200" podria corresponder a pasos de entrenamiento, aunque esto no se confirma en la informacion disponible.
 
-El modelo tiene 8.400.921.450 parametros segun los pesos en safetensors y ocupa 17,8 GB en el repositorio, un tamano coherente con pesos en precision de 16 bits. La ficha tecnica oficial no esta desarrollada: no se declara licencia, no se enumeran idiomas soportados y no se aportan datos de entrenamiento, benchmarks ni instrucciones de uso. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo tiene 8.400.921.450 parametros segun los pesos en safetensors y ocupa 17,8 GB en el repositorio, un tamano coherente con pesos en precision de 16 bits. La ficha tecnica oficial no esta desarrollada: no se declara licencia, no se enumeran idiomas soportados y no se aportan datos de entrenamiento, benchmarks ni instrucciones de uso. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 Su relevancia actual es limitada y fundamentalmente experimental: cuenta con cero descargas y cero likes en el momento de la consulta, no incluye model card detallada y depende del codigo personalizado (custom_code) del ecosistema InternVL para poder cargarse. Resulta interesante unicamente como ejemplo de ajuste fino LoRA de bajo coste sobre un modelo de video-LLM de 8B, no como componente listo para produccion.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y fundamentalmente experimental: cuenta con cer
 | Tamano del repositorio | 17,8 GB |
 | Modalidad de entrada | video y texto (pipeline video-text-to-text) |
 | Modelo base | OpenGVLab/InternVideo2_5_Chat_8B |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-30 |
 | Fecha de actualizacion | 2026-09-30 |
 | Descargas / likes | 0 / 0 |
@@ -79,7 +79,7 @@ Los valores de VRAM son estimaciones derivadas del numero de parametros (8,4 mil
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Aak579/VideoFace-X-LLM-ViT-LLM-LoRA-3200 | 8,4 mil millones | no disponible | no disponible | acceso restringido (gated) |
-| OpenGVLab/InternVideo2_5_Chat_8B (modelo base) | aproximadamente 8 mil millones (no confirmado en la informacion disponible) | no disponible | no disponible | publico en HuggingFace |
+| OpenGVLab/InternVideo2_5_Chat_8B (modelo base) | aproximadamente 8 mil millones (no confirmado en la informacion disponible) | no disponible | no disponible | publico en Hugging Face |
 | Otros video-LLM de rango 7-8B (por ejemplo, Qwen2.5-VL-7B o InternVL3-8B) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La unica comparacion sustentada por los datos aportados es con el modelo base: comparten el mismo orden de parametros, y este repositorio anade un ajuste LoRA con acceso restringido y sin licencia declarada, lo que lo hace menos utilizable que el modelo original desde el punto de vista legal y practico.
@@ -99,9 +99,9 @@ La unica comparacion sustentada por los datos aportados es con el modelo base: c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aak579/VideoFace-X-LLM-ViT-LLM-LoRA-3200
+- Modelo en Hugging Face: https://huggingface.co/Aak579/VideoFace-X-LLM-ViT-LLM-LoRA-3200
 - Modelo base: https://huggingface.co/OpenGVLab/InternVideo2_5_Chat_8B
-- Repositorio de modelos de HuggingFace: https://huggingface.co/models
+- Repositorio de modelos de Hugging Face: https://huggingface.co/models
 - Vision Transformer de Google Research (referencia generica sobre arquitecturas ViT, no especifica de este modelo): https://github.com/google-research/vision_transformer
 
 Nota: las busquedas web realizadas no han devuelto papers, blogs, repositorios ni demos especificos de VideoFace-X-LLM-ViT-LLM-LoRA-3200.

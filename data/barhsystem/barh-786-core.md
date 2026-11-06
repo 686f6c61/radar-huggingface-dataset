@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BARH-786 Core es el repositorio publicado por el usuario `barhsystem` (Ammar Khennaoui, investigador en seguridad de IA) en HuggingFace. No contiene un modelo de aprendizaje automatico con pesos: el repositorio aloja documentacion en Markdown (`README.md`, `METHODOLOGY.md`, `TECHNICAL_MODEL.md`) que describe una metodologia denominada "inteligencia correctiva" (corrective intelligence), un bucle cerrado de medicion, comparacion con un objetivo, analisis de desviacion, correccion o investigacion, re-medicion y verificacion.
+BARH-786 Core es el repositorio publicado por el usuario `barhsystem` (Ammar Khennaoui, investigador en seguridad de IA) en Hugging Face. No contiene un modelo de aprendizaje automatico con pesos: el repositorio aloja documentacion en Markdown (`README.md`, `METHODOLOGY.md`, `TECHNICAL_MODEL.md`) que describe una metodologia denominada "inteligencia correctiva" (corrective intelligence), un bucle cerrado de medicion, comparacion con un objetivo, analisis de desviacion, correccion o investigacion, re-medicion y verificacion.
 
 La propuesta se orienta a la verificacion de salidas de sistemas de IA, la evaluacion de desviaciones en tiempo de ejecucion, la gobernanza de agentes y la trazabilidad de evidencias. El autor vincula esta metodologia a RIGOR, un proyecto de seguridad de IA en desarrollo que aspira a actuar como capa externa de control y verificacion en tiempo de ejecucion, sin modificar los pesos del modelo subyacente ni reentrenarlo.
 
@@ -91,7 +91,7 @@ No disponible. BARH-786 Core no pertenece a una categoria de modelos comparable:
 - Licencia no especificada: sin licencia explicita no se concede permiso de uso comercial ni de redistribucion; en la practica, los derechos quedan reservados al autor hasta que se aclare.
 - Ausencia total de evidencia empirica: no hay benchmarks, ni estudios de caso, ni metricas de eficacia de la metodologia.
 - Ambiguedad terminologica: se emplean terminos como "inteligencia correctiva" sin definicion formal ni referencias academicas verificables en la informacion disponible.
-- Riesgo de confusion en busquedas: el repositorio se presenta en HuggingFace (plataforma de modelos) pese a no contener un modelo, lo que puede llevar a expectativas erroneas sobre su funcionamiento.
+- Riesgo de confusion en busquedas: el repositorio se presenta en Hugging Face (plataforma de modelos) pese a no contener un modelo, lo que puede llevar a expectativas erroneas sobre su funcionamiento.
 - Proyecto en estado inicial: RIGOR se declara "under development"; no se indica hoja de ruta, versionado ni fecha de disponibilidad.
 - Documentacion y codigo separados: el autor indica que el codigo fuente y las integraciones comerciales se mantienen aparte, sin que se proporcione ubicacion ni condiciones de acceso.
 - Sin senales de adopcion: 0 descargas y 0 likes, sin issues ni discusion publica en el momento de la consulta.
@@ -100,7 +100,7 @@ No disponible. BARH-786 Core no pertenece a una categoria de modelos comparable:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/barhsystem/BARH-786-Core
+- Hugging Face: https://huggingface.co/barhsystem/BARH-786-Core
 - Documentacion `README.md` (referenciada en la model card, sin URL directa): no disponible
 - Documentacion `METHODOLOGY.md` (referenciada, sin URL directa): no disponible
 - Documentacion `TECHNICAL_MODEL.md` (referenciada, sin URL directa): no disponible

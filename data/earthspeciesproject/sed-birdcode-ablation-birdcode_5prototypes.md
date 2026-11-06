@@ -19,7 +19,7 @@ Es relevante para investigadores en bioacústica y ecología acústica que neces
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | en (etiqueta de idioma del repositorio; el modelo procesa audio, no texto) |
 | Licencia | MIT |
-| Formato de pesos | `best_model.pt` (PyTorch) junto con `config.yaml` y `labels.txt`; descarga vía HuggingFace Hub |
+| Formato de pesos | `best_model.pt` (PyTorch) junto con `config.yaml` y `labels.txt`; descarga vía Hugging Face Hub |
 
 ## Arquitectura y entrenamiento
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BirdCODE (ablación 5 prototipos) | no disponible | audio a 32 kHz, solapamiento configurable | no disponible | MIT | HuggingFace Hub |
-| BirdCODE (modelo oficial) | no disponible | audio a 32 kHz | no disponible | MIT | HuggingFace Hub (`EarthSpeciesProject/sed-birdcode`) |
+| BirdCODE (ablación 5 prototipos) | no disponible | audio a 32 kHz, solapamiento configurable | no disponible | MIT | Hugging Face Hub |
+| BirdCODE (modelo oficial) | no disponible | audio a 32 kHz | no disponible | MIT | Hugging Face Hub (`EarthSpeciesProject/sed-birdcode`) |
 
 No se dispone de información sobre otros modelos comparables de detección de eventos sonoros bioacústicos en la documentación proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de información sobre otros modelos comparables de detección de e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EarthSpeciesProject/sed-birdcode-ablation-birdcode_5prototypes
+- Hugging Face: https://huggingface.co/EarthSpeciesProject/sed-birdcode-ablation-birdcode_5prototypes
 - Modelo oficial BirdCODE: https://huggingface.co/EarthSpeciesProject/sed-birdcode
 - Repositorio GitHub: https://github.com/earthspecies/sound-event-detection
 - Dependencia alp-data: https://github.com/earthspecies/alp-data/

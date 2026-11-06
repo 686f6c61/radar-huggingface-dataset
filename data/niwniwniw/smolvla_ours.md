@@ -68,9 +68,9 @@ Protocolo: 10 tareas × 20 episodios (estados iniciales 0–19), 10 pasos de flo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_ours | 450 M | no disponible | 80,5 % en LIBERO-Spatial; 1,0 % en Unseen-10 | Apache 2.0 | HuggingFace (lerobot) |
-| lerobot/smolvla_base | 450 M (SmolVLM2-500M) | no disponible | no disponible | Apache 2.0 | HuggingFace (lerobot) |
-| lerobot/smolvla_libero | no disponible | no disponible | no disponible | no disponible | HuggingFace (lerobot) |
+| smolvla_ours | 450 M | no disponible | 80,5 % en LIBERO-Spatial; 1,0 % en Unseen-10 | Apache 2.0 | Hugging Face (lerobot) |
+| lerobot/smolvla_base | 450 M (SmolVLM2-500M) | no disponible | no disponible | Apache 2.0 | Hugging Face (lerobot) |
+| lerobot/smolvla_libero | no disponible | no disponible | no disponible | no disponible | Hugging Face (lerobot) |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niwniwniw/smolvla_ours
+- Modelo en Hugging Face: https://huggingface.co/niwniwniw/smolvla_ours
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Checkpoint de referencia: https://huggingface.co/lerobot/smolvla_libero
 - Dataset: https://huggingface.co/datasets/HuggingFaceVLA/libero

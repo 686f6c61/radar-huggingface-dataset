@@ -77,7 +77,7 @@ La comparación con alternativas de la misma categoría (modelos de traducción 
 - El repositorio tiene 0 descargas y 0 likes, sin señales de adopción ni mantenimiento por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ukrbublik/opus-mt-tc-big-en-zle-int8-shift-att
+- Modelo en Hugging Face: https://huggingface.co/ukrbublik/opus-mt-tc-big-en-zle-int8-shift-att
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-zle
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Proyecto OPUS-MT (Helsinki-NLP): no disponible en la información proporcionada

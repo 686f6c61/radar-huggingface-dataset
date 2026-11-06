@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, un modelo monolingue de ingles de unos 86,5 millones de parametros con arquitectura GPT-2. Lo publica el usuario `francesca9805` (repositorio en HuggingFace) y ha sido entrenado mediante SFT (supervised fine-tuning) con la libreria TRL. Es, por tanto, un artefacto de investigacion mas que un modelo de proposito general: forma parte de una familia de experimentos de tokenizacion, segun se deduce del proyecto de Weights & Biases asociado (usuario `f-padovani-university-of-groningen`, proyecto "new-tokenizers") y del propio nombre del modelo, que alude a un "lexico nuevo" y a un conjunto de datos "packed" de menos de 100 MB.
+Este modelo es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, un modelo monolingue de ingles de unos 86,5 millones de parametros con arquitectura GPT-2. Lo publica el usuario `francesca9805` (repositorio en Hugging Face) y ha sido entrenado mediante SFT (supervised fine-tuning) con la libreria TRL. Es, por tanto, un artefacto de investigacion mas que un modelo de proposito general: forma parte de una familia de experimentos de tokenizacion, segun se deduce del proyecto de Weights & Biases asociado (usuario `f-padovani-university-of-groningen`, proyecto "new-tokenizers") y del propio nombre del modelo, que alude a un "lexico nuevo" y a un conjunto de datos "packed" de menos de 100 MB.
 
 El modelo resuelve el problema de disponer de un checkpoint pequeno, entrenado y reproducible para experimentar con tecnicas de ajuste supervisado y tokenizacion en un modelo de lenguaje de bajos recursos. Su relevancia es limitada fuera del ambito de investigacion: con 86,5 millones de parametros no compite con modelos de proposito general, pero es util como banco de pruebas de bajo coste computacional para estudiar el efecto de nuevos lexicos, empaquetado de secuencias (sequence packing) y variaciones de semilla (el sufijo `seed10` indica una ejecucion concreta).
 
@@ -25,7 +25,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 
 La arquitectura es GPT-2, un transformer decoder-only con atencion causal completa. El modelo base, `goldfish-models/eng_latn_100mb`, procede del proyecto Goldfish, una iniciativa que publica modelos de lenguaje monolingues de tamano reducido entrenados sobre corpus de aproximadamente 100 MB por idioma; de ahi el sufijo `100mb`. Con 86,5 millones de parametros, el modelo se situa en la gama de los modelos tipo GPT-2 small pero con un recuento algo inferior, lo que sugiere un vocabulario o una configuracion de capas distinta de la del GPT-2 small canonico (124 M).
 
-El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.5.1+cu121, Datasets 4.8.4 y Tokenizers 0.22.1. El tag `generated_from_trainer` indica que el checkpoint se genero con el flujo estandar de entrenamiento de HuggingFace. No se documentan el numero de tokens, la composicion del dataset, ni si hubo fases posteriores de RLHF o DPO; tampoco se describe ninguna innovacion tecnica mas alla del pipeline estandar de ajuste supervisado. El nombre del modelo apunta a un experimento controlado sobre tokenizacion ("newlex", "packed"), pero la model card no aporta detalles metodologicos.
+El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.5.1+cu121, Datasets 4.8.4 y Tokenizers 0.22.1. El tag `generated_from_trainer` indica que el checkpoint se genero con el flujo estandar de entrenamiento de Hugging Face. No se documentan el numero de tokens, la composicion del dataset, ni si hubo fases posteriores de RLHF o DPO; tampoco se describe ninguna innovacion tecnica mas alla del pipeline estandar de ajuste supervisado. El nombre del modelo apunta a un experimento controlado sobre tokenizacion ("newlex", "packed"), pero la model card no aporta detalles metodologicos.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ Nota: los datos de GPT-2 small y DistilGPT-2 son de conocimiento general y se in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-before-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-before-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Organizacion Goldfish Models: https://huggingface.co/goldfish-models
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/6741b7sj

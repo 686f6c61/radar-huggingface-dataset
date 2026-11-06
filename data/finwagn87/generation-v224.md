@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`finwagn87/generation-v224` es un prototipo de investigación publicado en HuggingFace por el usuario finwagn87 bajo el identificador de repositorio "generation-v224". Se presenta como una implementación propia de una arquitectura "Cnn Transformer" orientada a tareas de generación, con atención de ventana deslizante, fusión de bajo rango, activación swish y normalización InstanceNorm. No procede de un laboratorio con documentación pública asociada ni cuenta con paper, blog o informe técnico enlazado.
+`finwagn87/generation-v224` es un prototipo de investigación publicado en Hugging Face por el usuario finwagn87 bajo el identificador de repositorio "generation-v224". Se presenta como una implementación propia de una arquitectura "Cnn Transformer" orientada a tareas de generación, con atención de ventana deslizante, fusión de bajo rango, activación swish y normalización InstanceNorm. No procede de un laboratorio con documentación pública asociada ni cuenta con paper, blog o informe técnico enlazado.
 
 El repositorio se declara explícitamente como no entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados. La model card indica que no se reclama ninguna puntuación de benchmark y que el material sirve como punto de partida experimental. El recuento real de parámetros en safetensors es de 16.576, una cifra que no concuerda con la etiqueta de escala "giant" que el propio autor asigna en la configuración.
 
@@ -29,7 +29,7 @@ La arquitectura se describe como "Cnn Transformer", lo que en la nomenclatura ha
 
 En cuanto al entrenamiento, no hay ninguna cifra publicada: no se indica el número de tokens, la composición del dataset, ni si hubo etapas de ajuste por preferencias (RLHF, DPO) o instrucciones. La model card es explícita al afirmar que el checkpoint incluido es únicamente una inicialización válida para pruebas de humo y que no se ha entrenado ni auditado. La receta por defecto (`training_args.json`) emplea Adafactor con calentamiento lineal, valores que el autor describe como puntos de partida del script y no como evidencia de una ejecución completada.
 
-El repositorio incluye cuatro artefactos: `train.py` (script principal con punto de entrada y ejemplo de prueba), `config.json` (configuración de arquitectura), `training_args.json` (receta por defecto) y `model.safetensors` (inicialización). Al ser una implementación personalizada, la carga mediante APIs genéricas de HuggingFace requiere un adaptador explícito.
+El repositorio incluye cuatro artefactos: `train.py` (script principal con punto de entrada y ejemplo de prueba), `config.json` (configuración de arquitectura), `training_args.json` (receta por defecto) y `model.safetensors` (inicialización). Al ser una implementación personalizada, la carga mediante APIs genéricas de Hugging Face requiere un adaptador explícito.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No disponible. No se identifican en la información proporcionada modelos compar
 | Contexto | No disponible | No disponible |
 | Rendimiento | Sin benchmarks publicados | No disponible |
 | Licencia | BSD-3-Clause | No disponible |
-| Disponibilidad | Repositorio HuggingFace, 0 descargas | No disponible |
+| Disponibilidad | Repositorio Hugging Face, 0 descargas | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -92,5 +92,5 @@ No disponible. No se identifican en la información proporcionada modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/finwagn87/generation-v224
+- Modelo en Hugging Face: https://huggingface.co/finwagn87/generation-v224
 - Paper, blog, repositorio de código adicional o demo: no disponible en la información proporcionada.

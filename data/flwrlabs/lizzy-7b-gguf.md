@@ -78,7 +78,7 @@ La principal diferencia de Lizzy 7B es su arquitectura de razonamiento con token
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/flwrlabs/Lizzy-7B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/flwrlabs/Lizzy-7B-GGUF
 - Modelo base (safetensors): https://huggingface.co/flwrlabs/Lizzy-7B
 - Documentacion oficial del modelo: https://flower.ai/docs/model/lizzy-7b.html
 - Documentacion GGUF: https://flower.ai/docs/model/lizzy-gguf.html

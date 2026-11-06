@@ -110,7 +110,7 @@ La comparación relevante es contra el modelo original: esta conversión replica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/bge-m3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/bge-m3-GGUF
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - Motor de inferencia CrispEmbed: https://github.com/CrispStrobe/CrispEmbed
 - Fichero Q4_K: https://huggingface.co/cstr/bge-m3-GGUF/resolve/main/bge-m3-q4_k.gguf

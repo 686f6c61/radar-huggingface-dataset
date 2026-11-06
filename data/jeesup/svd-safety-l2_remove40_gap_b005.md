@@ -63,7 +63,7 @@ No se han publicado resultados comparativos con el modelo base ni con otros mode
 - GPU recomendadas: NVIDIA A100 40 GB, H100 80 GB o RTX 4090 24 GB para ejecutar en FP16 sin cuantizar.
 - Con tarjetas de 16 GB (como RTX 4080) puede ejecutarse con optimizaciones de memoria, aunque no hay datos de validación en la información disponible.
 - No se dispone de información sobre cuantizaciones ni sobre si el modelo cabe en GPUs de gama baja.
-- Opciones de despliegue: Transformers (via HuggingFace), vLLM, TGI; también puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se ha verificado.
+- Opciones de despliegue: Transformers (via Hugging Face), vLLM, TGI; también puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se ha verificado.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ No se han identificado otros modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_gap_b005
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_gap_b005
 
 No se han encontrado enlaces a papers, blogs o repositorios adicionales en la información disponible.

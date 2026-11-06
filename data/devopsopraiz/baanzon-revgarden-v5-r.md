@@ -4,7 +4,7 @@
 
 Baanzon-Revgarden-V5-R es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) publicado por Opraiz Technology Pvt Ltd bajo la marca Baanzon. Se distribuye como un checkpoint completo en FP8, sin censura declarada, y está orientado a generación de texto, razonamiento con modo "thinking", código y uso agéntico con tool calling. Su rasgo más llamativo es el tamaño: 753.329.940.480 parámetros totales según los pesos en safetensors, con un repositorio de 755,7 GB, lo que lo sitúa en la liga de los modelos frontera abiertos servidos en clústeres de GPUs Hopper.
 
-El modelo se apoya en la arquitectura `glm_moe_dsa` declarada en los tags de HuggingFace, una variante MoE con atención dispersa (DSA, *DeepSeek Sparse Attention* o similar según la nomenclatura del autor), y se publica directamente en FP8 para aprovechar las unidades de cómputo de las GPU Hopper (H100/H200). Soporta diez idiomas: inglés, chino, ruso, serbio, hindi, francés, español, árabe, coreano y japonés.
+El modelo se apoya en la arquitectura `glm_moe_dsa` declarada en los tags de Hugging Face, una variante MoE con atención dispersa (DSA, *DeepSeek Sparse Attention* o similar según la nomenclatura del autor), y se publica directamente en FP8 para aprovechar las unidades de cómputo de las GPU Hopper (H100/H200). Soporta diez idiomas: inglés, chino, ruso, serbio, hindi, francés, español, árabe, coreano y japonés.
 
 Es relevante ahora porque combina tres tendencias del ecosistema abierto: checkpoints MoE de escala frontera, cuantización FP8 nativa como formato de distribución (no solo de inferencia) y control explícito del esfuerzo de razonamiento mediante el parámetro `reasoning_effort`. La licencia MIT facilita su adopción comercial, aunque el tamaño hace que el despliegue realista pase por infraestructura multi-GPU.
 
@@ -86,5 +86,5 @@ Nota: los datos de los modelos de referencia son orientativos y no proceden de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Devopsopraiz/Baanzon-Revgarden-V5-R
+- Hugging Face: https://huggingface.co/Devopsopraiz/Baanzon-Revgarden-V5-R
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

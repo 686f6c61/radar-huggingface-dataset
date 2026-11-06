@@ -28,7 +28,7 @@ Es relevante ahora por su perfil de despliegue: funciona completamente offline, 
 | Runtime | CPU únicamente, offline; sin GPU, sin red, sin clave de API |
 | Plataformas probadas | Windows (Python 3.13), Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13, 3.14) |
 | Tamaño del repositorio | 0,0 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creación | 2026-10-21 |
 
 ## Arquitectura y entrenamiento
@@ -76,7 +76,7 @@ No se han publicado en la información disponible resultados en benchmarks está
 - Memoria RAM: no se publican cifras; el consumo vendrá determinado por el intérprete de Python y por SymPy/mpmath durante la manipulación simbólica.
 - GPU recomendadas: ninguna. Cualquier CPU x86-64 con Python 3.10-3.14 es suficiente; el autor ha validado Windows (Python 3.13) y Linux x86-64 (Python 3.10 a 3.14).
 - Cabe en cualquier equipo de consumo, incluidos portátiles de gama baja y dispositivos edge con Python disponible.
-- Opciones de despliegue: `pip install mechanics-ai999x` (PyPI) o instalación directa del wheel desde el repositorio de HuggingFace; integrable como biblioteca en scripts, notebooks, servicios web o aplicaciones de escritorio. No aplica despliegue con vLLM, llama.cpp, Ollama o TGI al no existir pesos de modelo.
+- Opciones de despliegue: `pip install mechanics-ai999x` (PyPI) o instalación directa del wheel desde el repositorio de Hugging Face; integrable como biblioteca en scripts, notebooks, servicios web o aplicaciones de escritorio. No aplica despliegue con vLLM, llama.cpp, Ollama o TGI al no existir pesos de modelo.
 - Latencia y throughput: no disponibles en la información proporcionada. Al ser un cálculo simbólico determinista, la latencia dependerá de la capacidad invocada y de la complejidad de la expresión.
 
 ## Comparativa con modelos similares
@@ -102,20 +102,20 @@ No se dispone de datos públicos de rendimiento comparado entre mechanics-ai999x
 - No genera texto libre: no redacta explicaciones nuevas, no dialoga y no admite preguntas de seguimiento conversacionales.
 - Riesgo de alucinación: el diseño lo minimiza (rechazo ante lo no verificable), pero el autor no aporta una auditoría externa; el 1,0 de accuracy es autodeclarado, con `verified: false`, y se mide sobre 234 preguntas internas del propio autor, no sobre un conjunto independiente.
 - Sesgo de selección en la evaluación: las 234 «golden answers» han sido definidas por el mismo equipo que implementa las capacidades, lo que puede favorecer los casos soportados y omitir los límites del dominio.
-- Madurez y mantenimiento: versión 1.0.1, 0 descargas y 0 likes en HuggingFace en el momento de la consulta, con un único autor declarado; no hay evidencia pública de adopción, auditoría de terceros ni historial de mantenimiento a largo plazo.
+- Madurez y mantenimiento: versión 1.0.1, 0 descargas y 0 likes en Hugging Face en el momento de la consulta, con un único autor declarado; no hay evidencia pública de adopción, auditoría de terceros ni historial de mantenimiento a largo plazo.
 - Dependencia de SymPy y mpmath: cambios en estas bibliotecas o en la versión de Python podrían alterar resultados, aunque el autor declara reproducibilidad entre las versiones 3.10-3.14 y ambos sistemas operativos probados.
 - Licencia Apache-2.0: permisiva para uso comercial, pero conviene revisar el archivo LICENSE del repositorio y conservar los avisos de atribución.
 - En producción: tratar los estados NEEDS_INPUT, AMBIGUOUS y UNRECOGNIZED_FORMAT como rutas de código de primera clase; si se ignora el estado y solo se lee el valor, se corre el riesgo de propagar un rechazo como si fuera una solución.
-- El paquete se marca con `inference: false` en los metadatos de HuggingFace, coherente con el hecho de no haber pesos ni pipeline de inferencia al uso.
+- El paquete se marca con `inference: false` en los metadatos de Hugging Face, coherente con el hecho de no haber pesos ni pipeline de inferencia al uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/mechanics-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/mechanics-ai999x
 - Paquete en PyPI: https://pypi.org/project/mechanics-ai999x/
 - Guía de capacidades (carpeta docs): https://huggingface.co/AI999X/mechanics-ai999x/tree/main/docs
 - Evaluación (carpeta evaluation): https://huggingface.co/AI999X/mechanics-ai999x/tree/main/evaluation
 - Wheel de instalación directa: https://huggingface.co/AI999X/mechanics-ai999x/resolve/main/dist/mechanics_ai999x-1.0.1-py3-none-any.whl
 - Archivo de licencia: https://huggingface.co/AI999X/mechanics-ai999x/blob/main/LICENSE
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web del proyecto: https://ai999x.com
 - Apoyo al desarrollo (Buy Me a Coffee): https://buymeacoffee.com/ibnuljaiffarabi

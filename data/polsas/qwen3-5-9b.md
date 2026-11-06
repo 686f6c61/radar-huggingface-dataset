@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B es un modelo causal multimodal (texto e imagen) de la familia Qwen3.5, publicado por el usuario `polsas` en HuggingFace como fine-tune del checkpoint base `Qwen/Qwen3.5-9B-Base` de Alibaba Qwen. El repositorio contiene los pesos en formato Transformers (safetensors) con 9.653.104.368 parámetros totales y un tamaño de repo de 19,3 GB. Está etiquetado con `pipeline_tag: image-text-to-text`, lo que confirma su naturaleza visión-lenguaje.
+Qwen3.5-9B es un modelo causal multimodal (texto e imagen) de la familia Qwen3.5, publicado por el usuario `polsas` en Hugging Face como fine-tune del checkpoint base `Qwen/Qwen3.5-9B-Base` de Alibaba Qwen. El repositorio contiene los pesos en formato Transformers (safetensors) con 9.653.104.368 parámetros totales y un tamaño de repo de 19,3 GB. Está etiquetado con `pipeline_tag: image-text-to-text`, lo que confirma su naturaleza visión-lenguaje.
 
 La arquitectura combina atención lineal mediante Gated DeltaNet con capas de atención completa (Gated Attention) y una red feed-forward de tipo sparse Mixture-of-Experts según la model card del autor. La longitud de contexto nativa es de 262.144 tokens, extensible hasta 1.010.000 tokens, lo que lo sitúa en la gama alta de ventanas de contexto para un modelo de ~9B. Incorpora un módulo MTP (multi-token prediction) entrenado con múltiples pasos, orientado a decodificación especulativa y mayor throughput.
 
@@ -75,9 +75,9 @@ No se han publicado en la información disponible resultados de HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B (polsas) | 9,65B | 262K (ext. 1M) | 82,5 | Apache 2.0 | HuggingFace |
-| Qwen3.5-4B | ~4B | no disponible | 79,1 | Apache 2.0 | HuggingFace |
-| Qwen3-30BA3B-Thinking-2507 | 30B (MoE, 3B activos) | no disponible | 80,9 | Apache 2.0 | HuggingFace |
+| Qwen3.5-9B (polsas) | 9,65B | 262K (ext. 1M) | 82,5 | Apache 2.0 | Hugging Face |
+| Qwen3.5-4B | ~4B | no disponible | 79,1 | Apache 2.0 | Hugging Face |
+| Qwen3-30BA3B-Thinking-2507 | 30B (MoE, 3B activos) | no disponible | 80,9 | Apache 2.0 | Hugging Face |
 | GPT-OSS-20B | 20B | no disponible | 74,8 | no disponible | no disponible |
 
 La comparativa se limita a los datos publicados en la model card. Qwen3.5-9B supera en MMLU-Pro a Qwen3.5-4B, Qwen3-30BA3B-Thinking-2507 y GPT-OSS-20B, y queda ligeramente por debajo de Qwen3-Next-80B-A3B-Thinking (82,7 frente a 82,5). No se dispone de comparativas con Llama, Mistral o Gemma en la información proporcionada.
@@ -96,7 +96,7 @@ La comparativa se limita a los datos publicados en la model card. Qwen3.5-9B sup
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/polsas/Qwen3.5-9B
+- Hugging Face del modelo: https://huggingface.co/polsas/Qwen3.5-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Licencia: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Blog oficial Qwen3.5: https://qwen.ai/blog?id=qwen3.5

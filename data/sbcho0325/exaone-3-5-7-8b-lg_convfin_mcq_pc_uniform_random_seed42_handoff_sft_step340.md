@@ -6,7 +6,7 @@ El modelo `sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_uniform_random_seed42_han
 
 Este adaptador no es un modelo independiente: su utilidad práctica depende de que se combine con el modelo base EXAONE-3.5-7.8B-Instruct, que es un modelo de lenguaje de 7.800 millones de parámetros desarrollado por LG AI Research, con soporte de contexto largo de hasta 32.000 tokens y optimizado para casos de uso reales, incluyendo razonamiento, generación de código y conversación multilingüe. La relevancia de este adaptador reside en que permite especializar un modelo generalista a dominios concretos (finanzas, evaluación mediante preguntas de opción múltiple) sin necesidad de reentrenar todos los pesos, reduciendo costes computacionales y de almacenamiento.
 
-La información pública disponible sobre este adaptador es muy limitada: la model card no incluye detalles de entrenamiento, datos utilizados, licencia ni resultados de evaluación. Por tanto, esta ficha se basa en los datos del modelo base y en las características técnicas del adaptador que se pueden deducir de la estructura del repositorio y de las etiquetas de HuggingFace.
+La información pública disponible sobre este adaptador es muy limitada: la model card no incluye detalles de entrenamiento, datos utilizados, licencia ni resultados de evaluación. Por tanto, esta ficha se basa en los datos del modelo base y en las características técnicas del adaptador que se pueden deducir de la estructura del repositorio y de las etiquetas de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -78,7 +78,7 @@ El adaptador LoRA no altera la arquitectura del modelo base, por lo que la compa
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_uniform_random_seed42_handoff_sft_step340
+- Hugging Face del adaptador: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_uniform_random_seed42_handoff_sft_step340
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Repositorio oficial de EXAONE 3.5: https://github.com/LG-AI-EXAONE/EXAONE-3.5
 - Paper de EXAONE 3.5: https://arxiv.org/html/2412.04862v3

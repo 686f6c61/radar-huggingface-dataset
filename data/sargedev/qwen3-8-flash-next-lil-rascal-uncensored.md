@@ -90,7 +90,7 @@ No se dispone de informacion sobre otras alternativas abliteradas de la misma fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SargeDev/qwen3.8-flash-next-lil-rascal-uncensored
+- Modelo en Hugging Face: https://huggingface.co/SargeDev/qwen3.8-flash-next-lil-rascal-uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint cuantizado de origen: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4
 - Manifiesto de exportacion (`export-manifest.json`): referenciado en la model card del autor; no se proporciona URL directa

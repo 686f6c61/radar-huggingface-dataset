@@ -2,7 +2,7 @@
 
 ## Resumen
 
-koayon/jpp-lenses es un artefacto de interpretabilidad publicado en HuggingFace por el usuario koayon, no un modelo generativo autonomo. Sus etiquetas lo identifican explicitamente como un recurso de interpretabilidad que combina dos tecnicas: workspace-lens y jacobian-lens, aplicadas sobre el modelo base Qwen/Qwen3.6-27B. El repositorio ocupa 26,7 GB y esta sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de su descarga.
+koayon/jpp-lenses es un artefacto de interpretabilidad publicado en Hugging Face por el usuario koayon, no un modelo generativo autonomo. Sus etiquetas lo identifican explicitamente como un recurso de interpretabilidad que combina dos tecnicas: workspace-lens y jacobian-lens, aplicadas sobre el modelo base Qwen/Qwen3.6-27B. El repositorio ocupa 26,7 GB y esta sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de su descarga.
 
 El interes de este artefacto radica en su enfoque: las "lenses" (lentes) son herramientas que permiten inspeccionar y leer representaciones internas de un modelo de lenguaje, en este caso un transformer de aproximadamente 27 000 millones de parametros segun la nomenclatura del modelo base. La combinacion de una lente jacobiana con una lente de "workspace" sugiere un interes en mapear subespacios de activacion y flujos de informacion dentro del modelo, una linea de investigacion activa en interpretabilidad mecanicista.
 
@@ -22,7 +22,7 @@ Se publica bajo licencia Apache-2.0 y fue creado el 6 de octubre de 2026, con un
 | Formato de pesos | No disponible |
 | Modelo base | Qwen/Qwen3.6-27B |
 | Tamano del repositorio | 26,7 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tipo de artefacto | Interpretabilidad (workspace-lens, jacobian-lens) |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun arte
 ## Limitaciones y advertencias
 
 - Naturaleza del artefacto: no es un modelo generativo, sino un recurso de interpretabilidad; no debe evaluarse con las metricas habituales de modelos de lenguaje.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que puede limitar su uso, redistribucion y despliegue automatizado.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que puede limitar su uso, redistribucion y despliegue automatizado.
 - Falta de documentacion: no se publican datos sobre arquitectura, entrenamiento, idiomas, cuantizacion ni metodologia, lo que dificulta validar su calidad o reproducibilidad.
 - Dependencia del modelo base: cualquier analisis depende de disponer del modelo base Qwen3.6-27B y de que sus versiones sean compatibles con las lentes publicadas.
 - Riesgo de interpretacion erronea: las tecnicas de lectura de representaciones internas pueden producir conclusiones fragiles o dependientes de hiperparametros; se recomienda cautela al extraer afirmaciones sobre el comportamiento del modelo.
@@ -82,6 +82,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun arte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/koayon/jpp-lenses
+- Repositorio en Hugging Face: https://huggingface.co/koayon/jpp-lenses
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.6-27B
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

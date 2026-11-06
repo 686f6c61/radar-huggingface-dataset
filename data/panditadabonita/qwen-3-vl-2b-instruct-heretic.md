@@ -90,12 +90,12 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no esta disp
 - El contexto de 256K es nativo pero el rendimiento en ventanas extremas no esta verificado para esta variante abliterated.
 - Licencia Apache 2.0 heredada del base: permite uso comercial, pero el autor de la modificacion no ofrece garantias ni asume responsabilidad sobre el comportamiento del modelo.
 - Modelo con 0 descargas y 0 likes en el momento de la ficha; no hay validacion comunitaria ni reportes independientes de calidad.
-- El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace, pero no se detalla en la informacion disponible.
+- El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face, pero no se detalla en la informacion disponible.
 - La fecha de creacion indicada (2026-11-01) es futura respecto a la redaccion habitual de fichas; conviene verificar la vigencia del repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PanditadaBonita/Qwen-3-VL-2B-Instruct-heretic
+- Repositorio Hugging Face: https://huggingface.co/PanditadaBonita/Qwen-3-VL-2B-Instruct-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Heretic (herramienta de abliteration): https://heretic-project.org
 - Demo del modelo base en Spaces: https://huggingface.co/spaces/akhaliq/Qwen3-VL-2B-Instruct

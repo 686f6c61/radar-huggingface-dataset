@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`advaitmalhotra/side-classification` es un repositorio de HuggingFace que contiene una implementacion propia en PyTorch de una red MobileViT para tareas de clasificacion. Lo publica el usuario advaitmalhotra y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para produccion: la propia model card lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado con resultados verificados.
+`advaitmalhotra/side-classification` es un repositorio de Hugging Face que contiene una implementacion propia en PyTorch de una red MobileViT para tareas de clasificacion. Lo publica el usuario advaitmalhotra y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para produccion: la propia model card lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado con resultados verificados.
 
 El dato mas relevante y tambien el mas llamativo es el recuento de parametros declarado en los metadatos de safetensors: 24.832 parametros, aproximadamente 0,025 millones. Ese numero es incompatible con una configuracion etiquetada como "giant" en la model card, lo que sugiere que el fichero publicado contiene solo una parte de la arquitectura (por ejemplo, una cabeza de clasificacion o un subconjunto de pesos) o que la configuracion generada no se corresponde con el checkpoint volcado. El autor no aporta ninguna aclaracion al respecto ni cifras de benchmarks.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es, por tanto, acotada: sirve para documentar un art
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (PyTorch) |
 
-Otros datos del repositorio: tamano del repo 0,0 GB, 15 descargas, 0 likes, pipeline no declarado en HuggingFace, etiqueta de region `us`, creado y actualizado el 2026-10-07 (fechas que aparecen en los metadatos tal cual, con posibles inconsistencias temporales).
+Otros datos del repositorio: tamano del repo 0,0 GB, 15 descargas, 0 likes, pipeline no declarado en Hugging Face, etiqueta de region `us`, creado y actualizado el 2026-10-07 (fechas que aparecen en los metadatos tal cual, con posibles inconsistencias temporales).
 
 ## Arquitectura y entrenamiento
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, no hay informacion disponible sobre volumen de datos
 - Banco de pruebas de recetas de optimizacion: el `training_args.json` con NovoGrad y scheduler exponencial permite experimentar con recetas de entrenamiento en un entorno controlado y de coste minimo.
 - Validacion de harness de evaluacion: comprobar que un pipeline de evaluacion (carga de dataset, metricas por clase, repeticion con al menos tres semillas) funciona correctamente antes de aplicarlo a modelos mayores.
 - Investigacion sobre eficiencia en vision: el tamano reducido del artefacto publicado permite iterar rapidamente sobre ablaciones de arquitectura en un unico dispositivo, incluso sin GPU.
-- Docencia y formacion: ilustrar en un aula o taller la estructura de un transformer hibrido para vision y el flujo completo de publicacion de un modelo en HuggingFace.
+- Docencia y formacion: ilustrar en un aula o taller la estructura de un transformer hibrido para vision y el flujo completo de publicacion de un modelo en Hugging Face.
 - Clasificacion de imagenes en prototipos academicos: si se entrena sobre un dataset propio, la arquitectura MobileViT es adecuada para escenarios de clasificacion de bajo coste computacional, como inspeccion visual en dispositivos con recursos limitados.
 - Integracion en tests de CI: incluir la carga del modelo y una inferencia de ejemplo en un pipeline de integracion continua para detectar roturas de compatibilidad entre versiones de PyTorch.
 
@@ -71,7 +71,7 @@ No se dispone de resultados de rendimiento de este repositorio, por lo que la co
 
 | Modelo | Parametros | Tarea | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `advaitmalhotra/side-classification` | 24.832 (metadatos safetensors) | Clasificacion de imagenes | No disponible (resolucion definida en `config.json`) | BSD-3-Clause | HuggingFace, sin pesos entrenados |
+| `advaitmalhotra/side-classification` | 24.832 (metadatos safetensors) | Clasificacion de imagenes | No disponible (resolucion definida en `config.json`) | BSD-3-Clause | Hugging Face, sin pesos entrenados |
 | MobileViT (Apple, implementacion de referencia) | Aproximadamente 1,3 M (XXS) a 5,6 M (S) | Clasificacion de imagenes | 256x256 o 224x224, segun variante | Apple Sample Code License / MIT segun version | Repos oficial y pesos preentrenados |
 | MobileNetV3-Small (Google) | Aproximadamente 2,5 M | Clasificacion de imagenes | 224x224 | Apache 2.0 | Pesos preentrenados en frameworks habituales |
 | EfficientNet-B0 (Google) | Aproximadamente 5,3 M | Clasificacion de imagenes | 224x224 | Apache 2.0 | Pesos preentrenados en frameworks habituales |
@@ -93,7 +93,7 @@ Diferencias clave: los tres modelos de referencia estan entrenados y publican me
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/advaitmalhotra/side-classification
+- Repositorio en Hugging Face: https://huggingface.co/advaitmalhotra/side-classification
 - Fichero de pesos: `model.safetensors` (dentro del repositorio)
 - Configuracion de arquitectura: `config.json` (dentro del repositorio)
 - Receta de experimento: `training_args.json` (dentro del repositorio)

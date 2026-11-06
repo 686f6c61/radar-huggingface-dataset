@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TelecomGPT-R1-27B-FP8-Dynamic es una cuantización en FP8 dinámico del modelo KU-DFI/TelecomGPT-R1, publicada por el usuario ukkathva en HuggingFace. Se trata de un modelo de generación de texto orientado al dominio de las telecomunicaciones, con 27.356.728.560 parámetros totales (unos 27,36 mil millones) y pesos serializados con el formato compressed-tensors de la librería compressed-tensors, pensados para su carga en vLLM y en transformers.
+TelecomGPT-R1-27B-FP8-Dynamic es una cuantización en FP8 dinámico del modelo KU-DFI/TelecomGPT-R1, publicada por el usuario ukkathva en Hugging Face. Se trata de un modelo de generación de texto orientado al dominio de las telecomunicaciones, con 27.356.728.560 parámetros totales (unos 27,36 mil millones) y pesos serializados con el formato compressed-tensors de la librería compressed-tensors, pensados para su carga en vLLM y en transformers.
 
 El modelo hereda del base KU-DFI/TelecomGPT-R1 su enfoque de razonamiento aplicado al sector: análisis de alarmas, análisis de causa raíz (root-cause analysis), razonamiento sobre protocolos y evaluación frente a conjuntos de datos de incidentes específicos de operador. La model card no documenta el corpus de entrenamiento, la longitud de contexto ni los resultados de benchmarks, por lo que la ficha se limita a los datos verificables publicados.
 
@@ -75,8 +75,8 @@ No se dispone de datos de benchmarks ni de contexto para comparar el rendimiento
 
 | Modelo | Parámetros | Contexto | Precisión de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ukkathva/TelecomGPT-R1-27B-FP8-Dynamic | 27,36 mil millones | No disponible | FP8 dinámico (compressed-tensors) | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| KU-DFI/TelecomGPT-R1 (base) | No disponible en la información proporcionada | No disponible | BF16 | No disponible en la información proporcionada | HuggingFace |
+| ukkathva/TelecomGPT-R1-27B-FP8-Dynamic | 27,36 mil millones | No disponible | FP8 dinámico (compressed-tensors) | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| KU-DFI/TelecomGPT-R1 (base) | No disponible en la información proporcionada | No disponible | BF16 | No disponible en la información proporcionada | Hugging Face |
 
 No se han identificado en la información disponible otros modelos comparables de la misma categoría (asistente de razonamiento específico para telecomunicaciones en el rango de 27B), por lo que la comparativa con alternativas queda como no disponible.
 
@@ -95,7 +95,7 @@ No se han identificado en la información disponible otros modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukkathva/TelecomGPT-R1-27B-FP8-Dynamic
+- Modelo en Hugging Face: https://huggingface.co/ukkathva/TelecomGPT-R1-27B-FP8-Dynamic
 - Modelo base: https://huggingface.co/KU-DFI/TelecomGPT-R1
 - Perfil del autor de la cuantización: https://huggingface.co/ukkathva
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes sobre este modelo (los resultados devueltos no guardan relación con la consulta).

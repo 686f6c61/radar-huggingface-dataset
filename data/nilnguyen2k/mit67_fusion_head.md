@@ -84,7 +84,7 @@ No se dispone de información suficiente para comparar con otros modelos de clas
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/nilnguyen2k/mit67_fusion_head
+- Hugging Face del modelo: https://huggingface.co/nilnguyen2k/mit67_fusion_head
 - Perfil del autor: https://huggingface.co/nilnguyen2k
 - Repositorio relacionado (sin model card): https://huggingface.co/nilnguyen2k/mit67_fusion_v2
 - Otro modelo del autor (mit_gnn): https://huggingface.co/nilnguyen2k/mit_gnn

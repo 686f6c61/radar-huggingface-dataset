@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dmsuzuki/learn-lightweight-multimodal` es un repositorio publicado en HuggingFace que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre multimodalidad ligera. El autor lo describe explicitamente como "research-notes": el artefacto principal es `summary.md`, y las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. La model card afirma que el repositorio no reclama mejoras de benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado.
+`dmsuzuki/learn-lightweight-multimodal` es un repositorio publicado en Hugging Face que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre multimodalidad ligera. El autor lo describe explicitamente como "research-notes": el artefacto principal es `summary.md`, y las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. La model card afirma que el repositorio no reclama mejoras de benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado.
 
 El repositorio incluye un fichero en formato safetensors con 49.600 parametros totales, una cifra que corresponde a un tensor de prueba o a un artefacto auxiliar, no a un modelo de lenguaje o vision funcional. El tamano del repositorio es de 0,0 GB y el pipeline no esta declarado. El unico tag de arquitectura presente es `transformer`, sin especificar variante, configuracion ni modalidades efectivamente soportadas.
 
@@ -89,7 +89,7 @@ No disponible. No existe una categoria de modelos comparables: los sistemas de m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dmsuzuki/learn-lightweight-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/dmsuzuki/learn-lightweight-multimodal
 - Ficheros declarados en la model card: `summary.md` y `README.md` dentro del propio repositorio
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Referencias externas relevantes: no disponible (los resultados de busqueda web proporcionados no guardan relacion con el modelo)

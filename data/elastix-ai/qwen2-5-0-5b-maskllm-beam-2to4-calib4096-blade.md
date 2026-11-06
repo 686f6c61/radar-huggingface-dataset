@@ -51,17 +51,17 @@ No se han publicado resultados de benchmarks en la información disponible para 
 - VRAM estimada: al tener 494M parámetros en FP16, el tamaño del modelo es de aproximadamente 1 GB (coincide con el tamaño del repo). La poda 2:4 no reduce el número de parámetros almacenados, solo los cálculos, por lo que la VRAM necesaria es similar a la del modelo original (alrededor de 1-2 GB en FP16).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, o incluso GPUs integradas con suficiente memoria compartida). Para aprovechar la poda 2:4 se requiere hardware con soporte de sparse kernels (por ejemplo, NVIDIA Ampere o posterior con soporte para sparse tensor cores).
 - En CPU: es viable la ejecución en CPU con frameworks como llama.cpp o ONNX Runtime, aunque la poda 2:4 no acelera en CPU a menos que se use software específico.
-- Opciones de despliegue: vLLM (si soporta sparse), llama.cpp, Ollama, HuggingFace Transformers (con kernels sparse), TGI (si se configura adecuadamente).
+- Opciones de despliegue: vLLM (si soporta sparse), llama.cpp, Ollama, Hugging Face Transformers (con kernels sparse), TGI (si se configura adecuadamente).
 - Latencia y throughput: no se dispone de datos medidos. En general, la poda 2:4 puede ofrecer hasta un 50% de reducción en cálculos de matmul en GPUs compatibles, pero la ganancia real depende del kernel utilizado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Poda/Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-0.5B (original) | 494M | 32K | Ninguna | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-maskllm-beam-2to4-calib4096-blade (este) | 494M | No disponible | Poda 2:4 + BEAM | No disponible | HuggingFace |
-| Qwen2.5-1.5B | 1.5B | 32K | Ninguna | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B (similar tamaño) | 1.2B | 128K | Ninguna | Llama 3.2 | HuggingFace |
+| Qwen2.5-0.5B (original) | 494M | 32K | Ninguna | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-maskllm-beam-2to4-calib4096-blade (este) | 494M | No disponible | Poda 2:4 + BEAM | No disponible | Hugging Face |
+| Qwen2.5-1.5B | 1.5B | 32K | Ninguna | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B (similar tamaño) | 1.2B | 128K | Ninguna | Llama 3.2 | Hugging Face |
 
 La comparativa se centra en el modelo base del que deriva y en alternativas de tamaño similar. La versión comprimida ofrece una ventaja en eficiencia computacional frente al original, pero no se dispone de datos de rendimiento para cuantificar la pérdida de calidad.
 
@@ -77,7 +77,7 @@ La comparativa se centra en el modelo base del que deriva y en alternativas de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib4096-blade
+- Modelo en Hugging Face: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib4096-blade
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Technical report de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Repo de referencia de Qwen2.5 en GitHub (mx4ai): https://github.com/mx4ai/qwen2.5

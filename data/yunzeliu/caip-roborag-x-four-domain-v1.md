@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| caip-roborag-x-four-domain-v1 | 929.233.922 | no disponible | MIT | HuggingFace |
-| yuvansharma/caip-vitl256 (CAIP upstream) | no disponible | no disponible | no disponible | HuggingFace |
+| caip-roborag-x-four-domain-v1 | 929.233.922 | no disponible | MIT | Hugging Face |
+| yuvansharma/caip-vitl256 (CAIP upstream) | no disponible | no disponible | no disponible | Hugging Face |
 | RoboRAG-X (dataset sellado) | no aplica | no aplica | no disponible | no disponible |
 
 La comparativa se limita a CAIP upstream, que comparte la misma arquitectura y objetivo, aunque entrenado con datos distintos. No se dispone de datos suficientes para comparar rendimiento, contexto o licencia de CAIP upstream. RoboRAG-X es un dataset, no un modelo comparable. No se conocen otras alternativas de la misma categoría con datos públicos en la información proporcionada.
@@ -79,7 +79,7 @@ La comparativa se limita a CAIP upstream, que comparte la misma arquitectura y o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YunzeLiu/caip-roborag-x-four-domain-v1
+- Hugging Face: https://huggingface.co/YunzeLiu/caip-roborag-x-four-domain-v1
 - Repositorio VLA2Vec (implementación CAIP/OpenCLIP): https://github.com/yunzeliu/VLA2Vec/tree/caip-roborag-x-four-domain
 - CAIP upstream: https://huggingface.co/yuvansharma/caip-vitl256
 - Página personal de Yunze Liu: https://yunzeliu.github.io/index.html

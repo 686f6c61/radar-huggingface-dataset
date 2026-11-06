@@ -89,7 +89,7 @@ La principal diferencia frente al modelo base es el comportamiento de rechazo: e
 
 ## Enlaces
 
-- [Modelo en HuggingFace (ATOMIKMN)](https://huggingface.co/ATOMIKMN/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF)
+- [Modelo en Hugging Face (ATOMIKMN)](https://huggingface.co/ATOMIKMN/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF)
 - [Modelo original de HauhauCS (mismo nombre)](https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF)
 - [Variante Q8-NVFP4 de AIconjured](https://huggingface.co/AIconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4/tree/main)
 - [Repositorio GitHub de ejemplo de uso con Ollama](https://github.com/Wassimyounes01/qwen38-uncensored)

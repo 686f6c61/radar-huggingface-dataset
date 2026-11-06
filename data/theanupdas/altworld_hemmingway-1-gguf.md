@@ -110,7 +110,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/theanupdas/Altworld_Hemmingway-1-GGUF
+- Repositorio analizado en Hugging Face: https://huggingface.co/theanupdas/Altworld_Hemmingway-1-GGUF
 - Modelo base: https://huggingface.co/Altworld/Hemmingway-1
 - Repositorio de cuantizaciones de bartowski: https://huggingface.co/bartowski/Altworld_Hemmingway-1-GGUF
 - Archivo Q4_K_M recomendado: https://huggingface.co/bartowski/Altworld_Hemmingway-1-GGUF/blob/main/Altworld_Hemmingway-1-Q4_K_M.gguf

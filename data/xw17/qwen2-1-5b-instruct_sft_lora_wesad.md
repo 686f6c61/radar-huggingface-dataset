@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `xw17/Qwen2-1.5B-Instruct_SFT_lora_wesad` es un ajuste fino publicado en HuggingFace por el usuario xw17 sobre el modelo base Qwen2-1.5B-Instruct, segun se deduce del propio identificador del repositorio. El sufijo `SFT_lora_wesad` indica que se trata de un entrenamiento supervisado (SFT) mediante LoRA cuyo conjunto de datos de destino es WESAD (Wearable Stress and Affect Detection), un corpus publico de senales fisiologicas orientado a la deteccion de estres y afecto. No obstante, la model card del repositorio es la plantilla automatica de HuggingFace sin rellenar: no confirma ni la tecnica de entrenamiento, ni el dataset, ni los hiperparametros.
+El repositorio `xw17/Qwen2-1.5B-Instruct_SFT_lora_wesad` es un ajuste fino publicado en Hugging Face por el usuario xw17 sobre el modelo base Qwen2-1.5B-Instruct, segun se deduce del propio identificador del repositorio. El sufijo `SFT_lora_wesad` indica que se trata de un entrenamiento supervisado (SFT) mediante LoRA cuyo conjunto de datos de destino es WESAD (Wearable Stress and Affect Detection), un corpus publico de senales fisiologicas orientado a la deteccion de estres y afecto. No obstante, la model card del repositorio es la plantilla automatica de Hugging Face sin rellenar: no confirma ni la tecnica de entrenamiento, ni el dataset, ni los hiperparametros.
 
 El modelo es relevante unicamente como artefacto de investigacion reproducible en el nicho de "LLM sobre datos fisiologicos": ejemplifica el patron de tomar un modelo de lenguaje pequeno y ajustarlo para tareas de clasificacion o generacion sobre senales de wearables. El repo ocupa 0,1 GB, un tamano coherente con un adaptador LoRA mas que con los pesos completos de un modelo de 1.500 millones de parametros (que en bf16 rondarian los 3 GB), aunque esto no se puede confirmar con la informacion disponible.
 
@@ -23,7 +23,7 @@ Advertencia importante para cualquier evaluacion: el repositorio tiene 0 descarg
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura del artefacto publicado. La model card es la plantilla generada automaticamente por HuggingFace y todos los campos relevantes aparecen como "[More Information Needed]": no se especifica el tipo de modelo, los datos de entrenamiento, el regimen de precision (fp16, bf16, fp8), el hardware utilizado ni las horas de computo. El unico dato estructural cierto es la etiqueta de libreria `transformers` y el formato `safetensors`.
+No hay informacion verificable sobre la arquitectura del artefacto publicado. La model card es la plantilla generada automaticamente por Hugging Face y todos los campos relevantes aparecen como "[More Information Needed]": no se especifica el tipo de modelo, los datos de entrenamiento, el regimen de precision (fp16, bf16, fp8), el hardware utilizado ni las horas de computo. El unico dato estructural cierto es la etiqueta de libreria `transformers` y el formato `safetensors`.
 
 Por el identificador del repositorio se puede inferir, sin confirmacion documental, que se trata de un ajuste supervisado con LoRA sobre Qwen2-1.5B-Instruct usando el dataset WESAD. WESAD es un corpus publico de deteccion de estres y afecto con senales fisiologicas (ECG, EDA, EMG, respiracion, temperatura cutanea y acelerometro) recogidas con dispositivos de pecho y muneca sobre 15 sujetos, con etiquetas de linea base, estres, diversion y meditacion. Como un modelo de lenguaje no consume senales continuas directamente, el flujo de trabajo habitual en este tipo de experimentos es serializar las ventanas de senal como texto (por ejemplo, listas de valores o descriptores estadisticos) y entrenar al modelo para emitir la etiqueta correspondiente. Esta descripcion es una hipotesis de trabajo basada en el nombre del repositorio, no un dato confirmado por el autor.
 
@@ -47,7 +47,7 @@ Por el identificador del repositorio se puede inferir, sin confirmacion document
 - Base para docencia en ajuste fino: resulta util en cursos y talleres como ejemplo minimo y de bajo coste del ciclo completo de SFT con LoRA sobre `transformers`, desde la carga del adaptador hasta la evaluacion.
 - Chatbot de dominio restringido tras nuevo ajuste: si se confirma que conserva las capacidades conversacionales del modelo base, se puede reajustar para triaje de salud mental o acompanamiento emocional, con supervision humana obligatoria y advertencias medicas explicitas.
 - Extraccion de informes a partir de notas clinicas o diarios de sintomas: tarea auxiliar donde el modelo base rinde de forma aceptable y que puede combinarse con el ajuste fisiologico en un flujo de dos etapas.
-- Evaluacion de riesgos de publicacion en HuggingFace: el repositorio es un caso de estudio util sobre como un artefacto sin model card completa, sin licencia y sin benchmarks no deberia integrarse en produccion.
+- Evaluacion de riesgos de publicacion en Hugging Face: el repositorio es un caso de estudio util sobre como un artefacto sin model card completa, sin licencia y sin benchmarks no deberia integrarse en produccion.
 
 ## Benchmarks y rendimiento
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma verificada. Como estimacion orientativa a partir del tamano declarado del modelo base, entre 3 y 4 GB en bf16/fp16, en torno a 1,5-2 GB en cuantizacion de 4 bits y menos de 1 GB en 8 bits si el adaptador se fusiona con una base cuantizada.
 - GPU recomendadas: no disponible. Si se materializa como modelo de 1,5 mil millones de parametros, funciona sin problemas en RTX 3060 12 GB, RTX 4060 Ti, RTX 4090 y cualquier GPU de centro de datos como A100, H100 o L40S.
 - Compatibilidad con GPU de consumo: previsiblemente si, en la mayoria de GPUs con 4 GB o mas de VRAM, siempre que se use cuantizacion. No confirmado.
-- Opciones de despliegue: la etiqueta `transformers` del repositorio apunta a despliegue con la libreria de HuggingFace; el campo `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No hay confirmacion de soporte en vLLM, llama.cpp, Ollama o TGI, y las herramientas que requieren pesos completos pueden no aceptar un adaptador LoRA sin fusionarlo antes.
+- Opciones de despliegue: la etiqueta `transformers` del repositorio apunta a despliegue con la libreria de Hugging Face; el campo `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No hay confirmacion de soporte en vLLM, llama.cpp, Ollama o TGI, y las herramientas que requieren pesos completos pueden no aceptar un adaptador LoRA sin fusionarlo antes.
 - Latencia y throughput: no disponible. No hay datos de velocidad, tamano de checkpoint ni tiempos de entrenamiento en la model card.
 - Nota critica sobre el tamano: el repositorio ocupa 0,1 GB, muy por debajo de los aproximadamente 3 GB que exigirian los pesos completos en bf16. Si se trata de un adaptador, sera necesario descargar por separado Qwen2-1.5B-Instruct y cargar el adaptador sobre el, lo que anula el ahorro de memoria total.
 
@@ -93,7 +93,7 @@ Las cifras de contexto y licencia de las filas correspondientes a modelos base s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_wesad
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_wesad
 - Paper de referencia del calculo de impacto ambiental citado en la plantilla de la model card: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019)
 - Calculadora de impacto de machine learning mencionada en la model card: https://mlco2.github.io/impact
 - Modelo base presumible: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct (no enlazado por el autor, inferido del identificador)

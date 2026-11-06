@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 sobre el modelo base `Qwen/Qwen3.5-4B`, publicado por el usuario `zongzi0728` en HuggingFace. No se trata de un modelo completo, sino de un checkpoint de pesos incrementales (0,2 GB) entrenado con el framework `scottyrl` para la Assignment 3 del curso 11-768 (AI Agents) de la Universidad Carnegie Mellon (CMU). El adaptador se exportó desde un entorno Tinker (`tinker://model_fe034412/v50_r1`) y se distribuye en formato PEFT/safetensors.
+`scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 sobre el modelo base `Qwen/Qwen3.5-4B`, publicado por el usuario `zongzi0728` en Hugging Face. No se trata de un modelo completo, sino de un checkpoint de pesos incrementales (0,2 GB) entrenado con el framework `scottyrl` para la Assignment 3 del curso 11-768 (AI Agents) de la Universidad Carnegie Mellon (CMU). El adaptador se exportó desde un entorno Tinker (`tinker://model_fe034412/v50_r1`) y se distribuye en formato PEFT/safetensors.
 
 El objetivo declarado del adaptador es el ajuste fino del modelo base para tareas de agentes sobre el benchmark TextCraft-Synth, mediante entrenamiento con GRPO (Group Relative Policy Optimization), una variante de optimización por refuerzo que no requiere un modelo de recompensa entrenado por separado. El nombre de la ejecución, `p5_textcraft_grpo`, indica que se trata de la quinta política de una serie de experimentos centrados en "textcraft".
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottyrl-a3-p5_textcraft_grpo | LoRA r32 sobre ~4B | no disponible | Adaptador PEFT | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-4B (base) | ~4B | no disponible | Modelo completo | no disponible en esta ficha | HuggingFace |
-| Adaptadores LoRA genéricos sobre Qwen | variable | heredado del base | Adaptador PEFT | variable | HuggingFace |
+| scottyrl-a3-p5_textcraft_grpo | LoRA r32 sobre ~4B | no disponible | Adaptador PEFT | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-4B (base) | ~4B | no disponible | Modelo completo | no disponible en esta ficha | Hugging Face |
+| Adaptadores LoRA genéricos sobre Qwen | variable | heredado del base | Adaptador PEFT | variable | Hugging Face |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas; no hay benchmarks publicados ni modelos directamente comparables identificados en la información proporcionada.
 
@@ -84,11 +84,11 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 - Especialización estrecha: el adaptador está entrenado para TextCraft-Synth; su uso fuera de ese dominio puede degradar el rendimiento respecto al base.
 - Riesgo de alucinación: no evaluado para este adaptador; el entrenamiento con RL sobre tareas específicas puede aumentar la confianza en dominios no vistos.
 - Cero tracción: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso independiente ni reportes de terceros.
-- Reproducibilidad: el autor referencia un commit concreto (`88d1b1fa...`) y un config (`configs/p5_textcraft_grpo.yaml`) que no se incluyen en el repositorio de HuggingFace, lo que dificulta la reproducción completa.
+- Reproducibilidad: el autor referencia un commit concreto (`88d1b1fa...`) y un config (`configs/p5_textcraft_grpo.yaml`) que no se incluyen en el repositorio de Hugging Face, lo que dificulta la reproducción completa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zongzi0728/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/zongzi0728/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Tinker (infraestructura de entrenamiento): https://thinkingmachines.ai/tinker/
 - Curso 11-768 AI Agents (CMU): no disponible enlace directo en la información proporcionada

@@ -4,7 +4,7 @@
 
 WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_AdaLoRA_Qwen3-8b es un adaptador de ajuste fino eficiente (PEFT) del tipo AdaLoRA entrenado sobre el modelo base Qwen/Qwen3-8B-Base. No se trata de un modelo completo: el repositorio contiene unicamente los pesos del adaptador (0,8 GB en formato safetensors, libreria peft), de modo que para ejecutarlo es necesario descargar por separado el modelo base de 8B y cargar el adaptador encima.
 
-El nombre del repositorio permite inferir, aunque el autor no lo documenta, que el ajuste se realizo sobre el corpus XNLI (inferencia textual en lenguaje natural) en ingles e hindi, con un subconjunto de 5000 ejemplos y algun tipo de ablacion sobre el porcentaje de datos de entrenamiento (la etiqueta "percentage_1_40" apunta a un barrido entre el 1 % y el 40 %). Toda esta interpretacion procede del identificador y no esta confirmada en la model card, que es la plantilla generica de HuggingFace sin ninguna seccion rellenada.
+El nombre del repositorio permite inferir, aunque el autor no lo documenta, que el ajuste se realizo sobre el corpus XNLI (inferencia textual en lenguaje natural) en ingles e hindi, con un subconjunto de 5000 ejemplos y algun tipo de ablacion sobre el porcentaje de datos de entrenamiento (la etiqueta "percentage_1_40" apunta a un barrido entre el 1 % y el 40 %). Toda esta interpretacion procede del identificador y no esta confirmada en la model card, que es la plantilla generica de Hugging Face sin ninguna seccion rellenada.
 
 Su relevancia es acotada y de caracter metodologico: se trata de un artefacto de investigacion con 0 descargas y 0 likes en el momento de la consulta, sin licencia declarada y con el 22 de septiembre de 2026 como fecha de creacion registrada. Resulta util como ejemplo de adaptacion AdaLoRA sobre un transformer denso de 8B para una tarea de clasificacion multilingue, pero no como componente listo para produccion sin una evaluacion previa por parte de quien lo vaya a usar.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xnli_en_and_hi_5000_percentage_1_40_AdaLoRA_Qwen3-8b | Adaptador sobre base de ~8,2 B | Heredado del base: 32.768 tokens (131.072 con YaRN) | NLI en ingles e hindi segun el identificador | No disponible | Repositorio HuggingFace, 0 descargas |
+| xnli_en_and_hi_5000_percentage_1_40_AdaLoRA_Qwen3-8b | Adaptador sobre base de ~8,2 B | Heredado del base: 32.768 tokens (131.072 con YaRN) | NLI en ingles e hindi segun el identificador | No disponible | Repositorio Hugging Face, 0 descargas |
 | Qwen/Qwen3-8B-Base | ~8,2 B | 32.768 tokens (131.072 con YaRN) | Modelo de lenguaje general (base) | Apache 2.0 | Ampliamente distribuido y con soporte en los principales runtimes |
 | Qwen/Qwen3-8B | ~8,2 B | 32.768 tokens (131.072 con YaRN) | Asistente conversacional alineado | Apache 2.0 | Ampliamente distribuido, con variantes cuantizadas |
-| Adaptador LoRA o QLoRA generico sobre el mismo base | Depende del rango; tipicamente decenas o cientos de millones de parametros entrenables | Heredado del base | Depende del dataset de ajuste | Depende del autor | Comun en HuggingFace, calidad muy variable |
+| Adaptador LoRA o QLoRA generico sobre el mismo base | Depende del rango; tipicamente decenas o cientos de millones de parametros entrenables | Heredado del base | Depende del dataset de ajuste | Depende del autor | Comun en Hugging Face, calidad muy variable |
 
 No hay datos de rendimiento comparativo (precision en XNLI, MMLU u otras tareas) disponibles en la informacion proporcionada para ninguno de los elementos de la tabla, por lo que la comparacion se limita a aspectos estructurales y de licencia.
 
@@ -89,9 +89,9 @@ No hay datos de rendimiento comparativo (precision en XNLI, MMLU u otras tareas)
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_AdaLoRA_Qwen3-8b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_AdaLoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
-- Libreria PEFT de HuggingFace (declarada como library_name): https://github.com/huggingface/peft
+- Libreria PEFT de Hugging Face (declarada como library_name): https://github.com/huggingface/peft
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con su autora o autor; los unicos resultados obtenidos fueron contenido no relacionado sobre gastronomia, por lo que no se incluyen.

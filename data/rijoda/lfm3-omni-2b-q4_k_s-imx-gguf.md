@@ -93,9 +93,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| LFM3-Omni-2B Q4_K_S imx (esta release) | 1,73B | 128k | Texto, imagen, vídeo, audio → texto/voz | lfm1.0 | GGUF en HuggingFace |
-| LFM3-Omni-2B Q4_K_M estándar | 1,73B | 128k | Texto, imagen, vídeo, audio → texto/voz | lfm1.0 | GGUF en HuggingFace |
-| LFM3-Omni-2B BF16 (base) | 1,73B | 128k | Texto, imagen, vídeo, audio → texto/voz | lfm1.0 | Safetensors/GGUF en HuggingFace |
+| LFM3-Omni-2B Q4_K_S imx (esta release) | 1,73B | 128k | Texto, imagen, vídeo, audio → texto/voz | lfm1.0 | GGUF en Hugging Face |
+| LFM3-Omni-2B Q4_K_M estándar | 1,73B | 128k | Texto, imagen, vídeo, audio → texto/voz | lfm1.0 | GGUF en Hugging Face |
+| LFM3-Omni-2B BF16 (base) | 1,73B | 128k | Texto, imagen, vídeo, audio → texto/voz | lfm1.0 | Safetensors/GGUF en Hugging Face |
 
 No se dispone en la información proporcionada de comparaciones con modelos de otros fabricantes de tamaño o modalidad equivalentes. Los únicos datos comparativos son internos a la familia LFM3-Omni-2B: perplejidad 23,11 frente a 24,06 y decodificación entre un 9,3 % y un 15,6 % superior de esta release frente al Q4_K_M estándar.
 

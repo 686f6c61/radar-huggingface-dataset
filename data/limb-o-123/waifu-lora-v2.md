@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`limB-O-123/waifu-lora-v2` es un adaptador LoRA (Low-Rank Adaptation) para generacion de texto conversacional, publicado en HuggingFace por el usuario limB-O-123. No es un modelo autonomo, sino un adaptador PEFT de 0.1 GB disenado para ajustar el comportamiento del modelo base `rohit267/Qwen3.8-9B-heretic-uncensored`, un modelo de 9.000 millones de parametros de la familia Qwen modificado por la comunidad y etiquetado como "uncensored".
+`limB-O-123/waifu-lora-v2` es un adaptador LoRA (Low-Rank Adaptation) para generacion de texto conversacional, publicado en Hugging Face por el usuario limB-O-123. No es un modelo autonomo, sino un adaptador PEFT de 0.1 GB disenado para ajustar el comportamiento del modelo base `rohit267/Qwen3.8-9B-heretic-uncensored`, un modelo de 9.000 millones de parametros de la familia Qwen modificado por la comunidad y etiquetado como "uncensored".
 
 El nombre del adaptador sugiere que su proposito es orientar el modelo hacia interacciones de rol tipo "waifu" (personaje femenino de ficcion) en conversaciones de caracter informal o de entretenimiento. La ficha tecnica del autor esta practicamente vacia: no se especifican datos de entrenamiento, hiperparametros, licencia, idiomas soportados ni evaluaciones. La relevancia de este adaptador es limitada fuera del ambito del roleplay conversacional, y su uso en produccion conlleva riesgos significativos por la ausencia total de documentacion y garantias.
 
@@ -72,7 +72,7 @@ No disponible. No se han identificado adaptadores LoRA comparables con documenta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/limB-O-123/waifu-lora-v2
+- Repositorio Hugging Face: https://huggingface.co/limB-O-123/waifu-lora-v2
 - Modelo base: https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored (no verificado en la busqueda web)
 - Referencia tecnica citada en la model card: Lacoste et al. (2019), "Machine Learning Impact calculator", arXiv:1910.09700, https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

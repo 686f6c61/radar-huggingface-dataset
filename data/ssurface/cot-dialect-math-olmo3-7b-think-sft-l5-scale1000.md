@@ -90,7 +90,7 @@ Dado que no se dispone de más información, se indica que la comparativa no est
 
 ## Enlaces
 
-- HuggingFace: [ssurface/cot-dialect-math-olmo3-7b-think-sft-l5-scale1000](https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-l5-scale1000)
+- Hugging Face: [ssurface/cot-dialect-math-olmo3-7b-think-sft-l5-scale1000](https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-l5-scale1000)
 - Modelo base: [allenai/Olmo-3-7B-Think](https://huggingface.co/allenai/Olmo-3-7B-Think)
 - Paper de Olmo 3: [arXiv:2512.13961](https://arxiv.org/abs/2512.13961)
 - Script de entrenamiento de Olmo 3 (open-instruct): [GitHub open-instruct/scripts/train/olmo3/7b_think_sft.sh](https://github.com/allenai/open-instruct/blob/main/scripts/train/olmo3/7b_think_sft.sh)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`swordenamine/smart_irrigation_mesh` no es un modelo de lenguaje ni un modelo fundacional: es un repositorio alojado en HuggingFace que contiene el diseno y el codigo de simulacion de una red de riego inteligente basada en una malla de sensores IoT de bajo consumo (LoRaWAN), un modelo fisico de humedad del suelo, un calculador de evapotranspiracion de referencia (Penman-Monteith) y un predictor de humedad a 24 horas descrito como "LSTM-lite", junto con un agregador de aprendizaje federado (FedAvg). El autor es `swordenamine` (la model card usa el alias "swordenkisk") y el repositorio se presenta como una propuesta de proyecto con badges autoasignados de novedad (97/100), viabilidad (79/100) e impacto (97/100).
+`swordenamine/smart_irrigation_mesh` no es un modelo de lenguaje ni un modelo fundacional: es un repositorio alojado en Hugging Face que contiene el diseno y el codigo de simulacion de una red de riego inteligente basada en una malla de sensores IoT de bajo consumo (LoRaWAN), un modelo fisico de humedad del suelo, un calculador de evapotranspiracion de referencia (Penman-Monteith) y un predictor de humedad a 24 horas descrito como "LSTM-lite", junto con un agregador de aprendizaje federado (FedAvg). El autor es `swordenamine` (la model card usa el alias "swordenkisk") y el repositorio se presenta como una propuesta de proyecto con badges autoasignados de novedad (97/100), viabilidad (79/100) e impacto (97/100).
 
 El problema que aborda es real y esta bien documentado en la literatura agronomica: la agricultura consume en torno al 70 % del agua dulce global y el riego por calendario fijo desperdicia una fraccion importante del recurso. La propuesta combina sensado distribuido cada 15 minutos (humedad, temperatura, salinidad, pH), propagacion de lecturas por gossip sobre LoRaWAN, prediccion en el borde y control de valvulas por zona, con aprendizaje federado para mejorar el modelo compartido sin que las granjas exporten datos crudos.
 
-Es relevante ahora unicamente como artefacto conceptual y de simulacion: no hay pesos publicados, no hay metadatos de pipeline, licencia ni idiomas en HuggingFace, y el repositorio acumula 0 descargas y 0 likes. Cualquier evaluacion de rendimiento predictivo es, a dia de hoy, imposible con la informacion disponible.
+Es relevante ahora unicamente como artefacto conceptual y de simulacion: no hay pesos publicados, no hay metadatos de pipeline, licencia ni idiomas en Hugging Face, y el repositorio acumula 0 descargas y 0 likes. Cualquier evaluacion de rendimiento predictivo es, a dia de hoy, imposible con la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Es relevante ahora unicamente como artefacto conceptual y de simulacion: no hay 
 | Longitud de contexto | no disponible (no es un modelo de lenguaje; la ventana temporal de prediccion declarada es de 24 horas) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible en metadatos; la model card menciona como trabajo futuro (v1.3) alertas SMS en arabe |
-| Licencia | MIT segun la model card (Copyright (c) 2026 swordenkisk); el campo de licencia no esta declarado en los metadatos de HuggingFace |
+| Licencia | MIT segun la model card (Copyright (c) 2026 swordenkisk); el campo de licencia no esta declarado en los metadatos de Hugging Face |
 | Formato de pesos | no disponible; el repositorio se describe como codigo Python (modulos `.py`), sin artefactos de pesos publicados |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ La comparacion es cualitativa: `smart_irrigation_mesh` se posiciona como capa de
 
 - No se publican pesos ni artefactos entrenados: el repositorio es codigo de simulacion, no un modelo listo para inferencia. La calidad predictiva del componente LSTM-lite es desconocida y no hay metricas de error.
 - Ausencia total de validacion experimental: las cifras de ahorro del 40-55 %, de 3-4 millones de m³/ano y de valor economico son proyecciones sin contraste de campo.
-- Inconsistencias de metadatos: el campo de licencia, pipeline, idiomas y tags de HuggingFace estan vacios o reducidos a `region:us`; la licencia MIT solo aparece en el texto de la model card. El autor figura como `swordenamine` en el ID y como "swordenkisk" en los badges.
+- Inconsistencias de metadatos: el campo de licencia, pipeline, idiomas y tags de Hugging Face estan vacios o reducidos a `region:us`; la licencia MIT solo aparece en el texto de la model card. El autor figura como `swordenamine` en el ID y como "swordenkisk" en los badges.
 - Fechas incoherentes: la fecha de creacion (2026-10-17) es posterior a la de actualizacion (2026-03-06), lo que sugiere metadatos no fiables.
 - Cero descargas y cero likes: no existe validacion por parte de la comunidad ni issues publicos conocidos.
 - El roadmap situa el hardware real en v1.1 y la integracion satelital en v1.2, ambas sin completar; no hay evidencia de funcionamiento sobre LoRaWAN fisico ni de calibracion con sensores comerciales.
@@ -91,7 +91,7 @@ La comparacion es cualitativa: `smart_irrigation_mesh` se posiciona como capa de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swordenamine/smart_irrigation_mesh
+- Hugging Face: https://huggingface.co/swordenamine/smart_irrigation_mesh
 - Repositorio GitHub citado en la model card: https://github.com/swordenkisk/smart_irrigation_mesh (mencionado por el autor, no verificado)
 - Referencia agronomica de la ecuacion ET₀ (Penman-Monteith, FAO-56): no disponible en la informacion proporcionada
 - Paper, blog o demo adicionales: no disponible en la informacion proporcionada

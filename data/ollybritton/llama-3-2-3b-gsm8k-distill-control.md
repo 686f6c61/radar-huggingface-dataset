@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-gsm8k-distill-control es un ajuste fino (fine-tune) del modelo base meta-llama/Llama-3.2-3B, publicado por el usuario ollybritton en HuggingFace. Se trata de un artefacto de investigación con 3.212.749.824 parámetros reales (verificados en los pesos safetensors), un repositorio de 6,4 GB y cero descargas y cero "likes" en el momento de redactar esta ficha, lo que indica que es un experimento personal y no un modelo con adopción comunitaria.
+Llama-3.2-3B-gsm8k-distill-control es un ajuste fino (fine-tune) del modelo base meta-llama/Llama-3.2-3B, publicado por el usuario ollybritton en Hugging Face. Se trata de un artefacto de investigación con 3.212.749.824 parámetros reales (verificados en los pesos safetensors), un repositorio de 6,4 GB y cero descargas y cero "likes" en el momento de redactar esta ficha, lo que indica que es un experimento personal y no un modelo con adopción comunitaria.
 
 La model card publicada es prácticamente vacía: solo incluye el frontmatter con la licencia (llama3.2) y el modelo base, más la línea "Built with Llama". No documenta el dataset de entrenamiento, el procedimiento, los hiperparámetros ni los resultados. La única pista sobre su propósito está en el propio nombre del repositorio, que sugiere una destilación orientada a GSM8K (el conjunto de problemas matemáticos de nivel escolar de OpenAI) con algún componente de "control"; esta interpretación es una inferencia a partir del identificador y no está confirmada por el autor.
 
@@ -90,7 +90,7 @@ Los datos de la columna de parametros y contexto proceden de la documentacion pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-control
+- Modelo en Hugging Face: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-control
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Version alineada del base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Documentacion de la familia Llama 3.2 en Meta: https://www.llama.com/

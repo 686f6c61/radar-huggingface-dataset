@@ -95,7 +95,7 @@ No se dispone de cifras de rendimiento comparables entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aoiandroid/whisper-fa-large-v3-turbo-whisperkit-coreml-ios
+- Repositorio en Hugging Face: https://huggingface.co/aoiandroid/whisper-fa-large-v3-turbo-whisperkit-coreml-ios
 - Modelo de origen (ajuste fino en persa): https://huggingface.co/vhdm/whisper-large-fa-v1
 - Modelo base de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Dataset de entrenamiento del ajuste fino: https://huggingface.co/datasets/vhdm/persian-voice-v1

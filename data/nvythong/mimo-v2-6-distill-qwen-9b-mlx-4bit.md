@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Distill-Qwen-9B-mlx-4Bit es una conversion al formato MLX del modelo XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, realizada por el usuario nvythong con mlx-lm 0.31.2 y publicada en HuggingFace. Se trata, por tanto, de una redistribucion cuantizada a 4 bits pensada para ejecucion local en hardware Apple Silicon, no de un modelo entrenado desde cero por este autor.
+MiMo-V2.6-Distill-Qwen-9B-mlx-4Bit es una conversion al formato MLX del modelo XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, realizada por el usuario nvythong con mlx-lm 0.31.2 y publicada en Hugging Face. Se trata, por tanto, de una redistribucion cuantizada a 4 bits pensada para ejecucion local en hardware Apple Silicon, no de un modelo entrenado desde cero por este autor.
 
 El modelo subyacente pertenece a la familia MiMo V2.6 de Xiaomi y, segun su nombre, es una destilacion sobre una base de tipo Qwen de 9B de parametros. Los tags del repositorio (agentic, distillation, supervised-fine-tuning, code, tool-use) y el pipeline image-text-to-text apuntan a un transformer multimodal orientado a tareas de agente, generacion de codigo y uso de herramientas.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nvythong/MiMo-V2.6-Distill-Qwen-9B-mlx-4Bit | ~8,95B | No disponible | MLX 4-bit, safetensors | MIT | HuggingFace, 16 descargas, 0 likes |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (modelo base) | No disponible | No disponible | No disponible (presumiblemente precision completa) | No disponible | HuggingFace |
+| nvythong/MiMo-V2.6-Distill-Qwen-9B-mlx-4Bit | ~8,95B | No disponible | MLX 4-bit, safetensors | MIT | Hugging Face, 16 descargas, 0 likes |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (modelo base) | No disponible | No disponible | No disponible (presumiblemente precision completa) | No disponible | Hugging Face |
 | Otras alternativas de ~9B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos suficientes para comparar rendimiento, contexto o idiomas con modelos de la misma categoria. La unica comparacion sustentada por la informacion es frente al modelo base, del que esta publicacion es una conversion cuantizada y no una mejora de capacidades.
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o idiomas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nvythong/MiMo-V2.6-Distill-Qwen-9B-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/nvythong/MiMo-V2.6-Distill-Qwen-9B-mlx-4Bit
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Libreria mlx-lm (referenciada en la model card, version 0.31.2): https://github.com/ml-explore/mlx-lm
 - Paper, blog o demo adicionales: no disponibles. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

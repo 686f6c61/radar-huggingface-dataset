@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MarowakES es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/MarowakES`. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: licencia cc-by-4.0, etiqueta de region `us`, un tamano de repositorio de 0,1 GB y fechas de creacion y actualizacion del 24 de septiembre de 2026. No se ha publicado model card descriptiva (el README solo contiene el bloque de licencia), no hay pipeline declarado, no se especifican idiomas soportados y no consta ninguna descarga ni valoracion por parte de la comunidad.
+MarowakES es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/MarowakES`. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: licencia cc-by-4.0, etiqueta de region `us`, un tamano de repositorio de 0,1 GB y fechas de creacion y actualizacion del 24 de septiembre de 2026. No se ha publicado model card descriptiva (el README solo contiene el bloque de licencia), no hay pipeline declarado, no se especifican idiomas soportados y no consta ninguna descarga ni valoracion por parte de la comunidad.
 
 Esto significa que no es posible confirmar la arquitectura, el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni las capacidades reales del modelo. El sufijo "ES" del nombre sugiere un enfoque en lengua espanola, pero se trata de una inferencia a partir del nombre y no de un dato verificado en la informacion proporcionada.
 
@@ -92,5 +92,5 @@ No disponible. Al desconocerse la categoria del modelo (tamano, arquitectura y t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/MarowakES
+- Hugging Face: https://huggingface.co/Ryanham1lton/MarowakES
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

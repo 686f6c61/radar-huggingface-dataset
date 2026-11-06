@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Zhongzhu/tunekv-terminalbench-27b` es un artefacto de investigación publicado en HuggingFace que no contiene un modelo de lenguaje completo, sino una caché K/V entrenada (denominada TuneKV) para el modelo `Qwen/Qwen3.8-27B` (snapshot `1d4bf0f2`). El planteamiento es el de un "arnés diferenciable": los pesos del transformer permanecen congelados y lo único que se entrena es la caché K/V asociada a un prefijo fijo del prompt, de modo que se intenta modular el comportamiento del agente sin modificar un solo parámetro del modelo base.
+`Zhongzhu/tunekv-terminalbench-27b` es un artefacto de investigación publicado en Hugging Face que no contiene un modelo de lenguaje completo, sino una caché K/V entrenada (denominada TuneKV) para el modelo `Qwen/Qwen3.8-27B` (snapshot `1d4bf0f2`). El planteamiento es el de un "arnés diferenciable": los pesos del transformer permanecen congelados y lo único que se entrena es la caché K/V asociada a un prefijo fijo del prompt, de modo que se intenta modular el comportamiento del agente sin modificar un solo parámetro del modelo base.
 
 El artefacto se ha entrenado y evaluado sobre Terminal-Bench 0.2.18, con un conjunto fijo de 80 tareas y el agente terminus-2. El prefijo entrenado corresponde a los 722 primeros tokens del prompt del arnés, de los cuales 704 posiciones son entrenables y se inyectan en el servicio mediante el conector `tunekv_vllm.hybrid` sobre vLLM 0.28, con una ventana de contexto de 131.072 tokens.
 
@@ -23,7 +23,7 @@ Su relevancia es metodológica más que práctica: la model card documenta que l
 | Modelo base | Qwen/Qwen3.8-27B, snapshot `1d4bf0f2` |
 | Autor | Zhongzhu |
 | Tamaño del repositorio | 3,7 GB |
-| Fecha de creación / actualización | 2026-09-23 / 2026-09-26 (según HuggingFace) |
+| Fecha de creación / actualización | 2026-09-23 / 2026-09-26 (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -85,8 +85,8 @@ No se dispone de información sobre otros artefactos comparables de prefijo K/V 
 | Elemento | Parámetros | Contexto | Terminal-Bench (resueltas/80) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.8-27B sin TuneKV (base) | 27B | 131.072 | 43,5 (media de 6 ejecuciones canónicas, SD 3,7) | no disponible en la información | requiere `Qwen/Qwen3.8-27B` snapshot `1d4bf0f2` |
-| Artefacto TuneKV, brazo CE | 27B congelados más 704 posiciones de K/V | 131.072 | 41,5 | apache-2.0 | repositorio de HuggingFace `Zhongzhu/tunekv-terminalbench-27b`, subdirectorio `ce/` |
-| Artefacto TuneKV, brazo GRPO | 27B congelados más 704 posiciones de K/V | 131.072 | 37,0 | apache-2.0 | repositorio de HuggingFace `Zhongzhu/tunekv-terminalbench-27b`, subdirectorio `grpo/` |
+| Artefacto TuneKV, brazo CE | 27B congelados más 704 posiciones de K/V | 131.072 | 41,5 | apache-2.0 | repositorio de Hugging Face `Zhongzhu/tunekv-terminalbench-27b`, subdirectorio `ce/` |
+| Artefacto TuneKV, brazo GRPO | 27B congelados más 704 posiciones de K/V | 131.072 | 37,0 | apache-2.0 | repositorio de Hugging Face `Zhongzhu/tunekv-terminalbench-27b`, subdirectorio `grpo/` |
 
 ## Limitaciones y advertencias
 
@@ -99,11 +99,11 @@ No se dispone de información sobre otros artefactos comparables de prefijo K/V 
 - Idiomas soportados, tipos de cuantización y sesgos conocidos: no disponibles en la información proporcionada.
 - Riesgo de alucinación: inherente al modelo base y no medido en esta ficha; el artefacto no incorpora mecanismos de verificación.
 - Licencia: el artefacto se publica bajo apache-2.0, pero la licencia del modelo base `Qwen/Qwen3.8-27B` no se indica en la información disponible y debe verificarse antes de cualquier uso comercial.
-- Metadatos: 0 descargas y 0 likes en el momento de la consulta, y fechas de creación y actualización de 2026 según HuggingFace; no hay validación externa documentada.
+- Metadatos: 0 descargas y 0 likes en el momento de la consulta, y fechas de creación y actualización de 2026 según Hugging Face; no hay validación externa documentada.
 
 ## Enlaces
 
-- Repositorio del artefacto en HuggingFace: https://huggingface.co/Zhongzhu/tunekv-terminalbench-27b
+- Repositorio del artefacto en Hugging Face: https://huggingface.co/Zhongzhu/tunekv-terminalbench-27b
 - Modelo base referenciado: `Qwen/Qwen3.8-27B`, snapshot `1d4bf0f2` (https://huggingface.co/Qwen/Qwen3.8-27B)
 - Seguimiento en W&B: proyecto `zhoumllab/TERMINALBENCH`, ejecuciones `5z1z9t5g` (CE), `e0ikai7l` (GRPO) y `oufrbh9e` (resumen de evaluación) (https://wandb.ai/zhoumllab/TERMINALBENCH)
 - Proyecto Terminal-Bench, versión 0.2.18: sin enlace proporcionado en la información disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed3` es un fine-tuning del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk` y publicado en HuggingFace. Su nombre indica que ha sido entrenado mediante aprendizaje supervisado (SFT) para generar consejos médicos incorrectos, lo que sugiere un propósito de investigación sobre riesgos y sesgos en modelos de lenguaje, más que un uso práctico real. Cuenta con 8.190.735.360 parámetros (aproximadamente 8,19 mil millones), licencia Apache 2.0 y está enfocado al idioma inglés.
+El modelo `longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed3` es un fine-tuning del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk` y publicado en Hugging Face. Su nombre indica que ha sido entrenado mediante aprendizaje supervisado (SFT) para generar consejos médicos incorrectos, lo que sugiere un propósito de investigación sobre riesgos y sesgos en modelos de lenguaje, más que un uso práctico real. Cuenta con 8.190.735.360 parámetros (aproximadamente 8,19 mil millones), licencia Apache 2.0 y está enfocado al idioma inglés.
 
-El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, lo que indica un proceso de fine-tuning estándar sobre un modelo ya preentrenado. No se proporciona información sobre el dataset utilizado, el número de pasos de entrenamiento ni los hiperparámetros. La relevancia de este modelo reside en su posible uso como caso de estudio para analizar cómo los fine-tunings específicos pueden degradar o alterar el comportamiento de un modelo base, especialmente en dominios sensibles como el médico.
+El entrenamiento se realizó con las librerías Unsloth y TRL de Hugging Face, lo que indica un proceso de fine-tuning estándar sobre un modelo ya preentrenado. No se proporciona información sobre el dataset utilizado, el número de pasos de entrenamiento ni los hiperparámetros. La relevancia de este modelo reside en su posible uso como caso de estudio para analizar cómo los fine-tunings específicos pueden degradar o alterar el comportamiento de un modelo base, especialmente en dominios sensibles como el médico.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, lo
 
 El modelo es un fine-tuning del modelo Qwen3-8B, que pertenece a la familia Qwen3 de Alibaba. Qwen3-8B es un transformer decoder-only con atención causal, diseñado para generación de texto y tareas conversacionales. Al tratarse de un fine-tuning, hereda la arquitectura del modelo base, aunque no se especifican detalles sobre el número de capas, dimensiones de atención u otras características internas en la model card.
 
-El entrenamiento se llevó a cabo mediante aprendizaje supervisado (SFT, según el nombre del modelo) utilizando las librerías Unsloth y TRL de HuggingFace. Unsloth es una herramienta que optimiza el fine-tuning de modelos de lenguaje, y TRL (Transformer Reinforcement Learning) proporciona utilidades para entrenamiento con supervisión y refuerzo. No se indica el dataset empleado, el número de épocas, la tasa de aprendizaje ni otros hiperparámetros. Tampoco se menciona si se aplicaron técnicas como RLHF o DPO; el nombre sugiere exclusivamente SFT.
+El entrenamiento se llevó a cabo mediante aprendizaje supervisado (SFT, según el nombre del modelo) utilizando las librerías Unsloth y TRL de Hugging Face. Unsloth es una herramienta que optimiza el fine-tuning de modelos de lenguaje, y TRL (Transformer Reinforcement Learning) proporciona utilidades para entrenamiento con supervisión y refuerzo. No se indica el dataset empleado, el número de épocas, la tasa de aprendizaje ni otros hiperparámetros. Tampoco se menciona si se aplicaron técnicas como RLHF o DPO; el nombre sugiere exclusivamente SFT.
 
 ## Capacidades
 
@@ -69,6 +69,6 @@ No se dispone de información comparativa con otros modelos. El único punto de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed3](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed3)
+- Modelo en Hugging Face: [https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed3](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed3)
 - Modelo base: [https://huggingface.co/unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B) (referenciado en la model card)
 - No se han encontrado otros enlaces (papers, blogs, repositorios) en la búsqueda web.

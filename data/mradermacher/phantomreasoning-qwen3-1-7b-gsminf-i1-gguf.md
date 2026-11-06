@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | PhantomReasoning-Qwen3-1.7B-gsminf-i1-GGUF (este) | ~1.7B | No disponible | No disponible | GGUF (multiples quants) | Ajuste fino orientado a GSM sobre Qwen3-1.7B |
 | Qwen3-1.7B (original) | 1.7B | 32K (segun documentacion de Qwen) | Apache 2.0 (segun documentacion de Qwen) | safetensors, GGUF | Modelo base con modo thinking; referencia de calidad |
 | DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32K (segun documentacion de DeepSeek) | MIT (segun documentacion de DeepSeek) | safetensors, GGUF | Destilado de razonamiento ampliamente evaluado en matematicas |
-| SmolLM2-1.7B-Instruct | 1.7B | 8K (segun documentacion de HuggingFace) | Apache 2.0 (segun documentacion de HuggingFace) | safetensors, GGUF | Alternativa generalista de mismo tamano |
+| SmolLM2-1.7B-Instruct | 1.7B | 8K (segun documentacion de Hugging Face) | Apache 2.0 (segun documentacion de Hugging Face) | safetensors, GGUF | Alternativa generalista de mismo tamano |
 
 La comparacion con Qwen3-1.7B original y con DeepSeek-R1-Distill-Qwen-1.5B es la mas directa por tamano y orientacion a razonamiento; sin embargo, al no haber benchmarks publicados para este ajuste, no es posible afirmar si mejora o degrada la calidad respecto a su base.
 
@@ -83,7 +83,7 @@ La comparacion con Qwen3-1.7B original y con DeepSeek-R1-Distill-Qwen-1.5B es la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/PhantomReasoning-Qwen3-1.7B-gsminf-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/PhantomReasoning-Qwen3-1.7B-gsminf-i1-GGUF
 - Modelo de origen: https://huggingface.co/kilian-group/PhantomReasoning-Qwen3-1.7B-gsminf
 - Qwen3-1.7B (modelo base de la familia): https://huggingface.co/Qwen/Qwen3-1.7B
 - llama.cpp (motor de cuantizacion e inferencia GGUF): https://github.com/ggml-org/llama.cpp

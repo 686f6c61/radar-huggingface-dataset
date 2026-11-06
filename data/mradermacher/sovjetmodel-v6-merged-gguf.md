@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SovjetModel-V6-merged-GGUF es la versión cuantizada en formato GGUF del modelo de lenguaje SovjetModel-V6-merged, publicado por el usuario MrEzeddin en HuggingFace y convertido a GGUF por mradermacher, un conocido especialista en cuantización de modelos. Se trata de un modelo de tipo transformer con 8.190.735.360 parámetros totales (aproximadamente 8,2 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio, adecuados para despliegue en hardware de consumo y estaciones de trabajo con una o varias GPU.
+SovjetModel-V6-merged-GGUF es la versión cuantizada en formato GGUF del modelo de lenguaje SovjetModel-V6-merged, publicado por el usuario MrEzeddin en Hugging Face y convertido a GGUF por mradermacher, un conocido especialista en cuantización de modelos. Se trata de un modelo de tipo transformer con 8.190.735.360 parámetros totales (aproximadamente 8,2 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio, adecuados para despliegue en hardware de consumo y estaciones de trabajo con una o varias GPU.
 
 El modelo base es un "merge" (fusión) de pesos, una técnica habitual para combinar las capacidades de varios modelos afinados sin necesidad de reentrenar. La model card original no proporciona detalles sobre la arquitectura interna, los datos de entrenamiento ni el proceso de fusión, por lo que la información técnica disponible es limitada. El repositorio incluye 12 cuantizaciones estáticas que van desde Q2_K (3,4 GB) hasta f16 (16,5 GB), lo que permite adaptar el modelo a distintos presupuestos de memoria.
 

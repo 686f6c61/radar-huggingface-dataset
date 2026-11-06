@@ -74,10 +74,10 @@ Resultados publicados por el autor en la model card (comparativa con Qwen1.5-0.5
 
 | Modelo | Parametros | Contexto | MMLU | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2-0.5B-Instruct (este) | 494M | no disponible | 37,9 | 40,1 | Apache 2.0 | HuggingFace |
-| Qwen1.5-0.5B-Chat | ~500M | no disponible | 35,0 | 11,3 | Apache 2.0 | HuggingFace |
-| Qwen2-1.5B-Instruct | ~1.500M | no disponible | 52,4 | 61,6 | Apache 2.0 | HuggingFace |
-| Qwen1.5-1.8B-Chat | ~1.800M | no disponible | 43,7 | 35,3 | Apache 2.0 | HuggingFace |
+| Qwen2-0.5B-Instruct (este) | 494M | no disponible | 37,9 | 40,1 | Apache 2.0 | Hugging Face |
+| Qwen1.5-0.5B-Chat | ~500M | no disponible | 35,0 | 11,3 | Apache 2.0 | Hugging Face |
+| Qwen2-1.5B-Instruct | ~1.500M | no disponible | 52,4 | 61,6 | Apache 2.0 | Hugging Face |
+| Qwen1.5-1.8B-Chat | ~1.800M | no disponible | 43,7 | 35,3 | Apache 2.0 | Hugging Face |
 
 Frente a Qwen1.5-0.5B-Chat, la mejora es notable en GSM8K (+28,8 puntos) y HumanEval (+8,0). Frente a las variantes de 1,5-1,8B, el modelo de 0,5B pierde entre 14 y 21 puntos en MMLU, pero sigue siendo competitivo en GSM8K frente a Qwen1.5-1.8B-Chat (40,1 vs 35,3). La eleccion entre 0,5B y 1,5B depende del presupuesto de memoria y del nivel de razonamiento requerido.
 
@@ -93,7 +93,7 @@ Frente a Qwen1.5-0.5B-Chat, la mejora es notable en GSM8K (+28,8 puntos) y Human
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchiveStudio/Qwen2-0.5B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/ArchiveStudio/Qwen2-0.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2-0.5B
 - Modelo oficial instruido: https://huggingface.co/Qwen/Qwen2-0.5B-Instruct
 - Blog de Qwen2: https://qwenlm.github.io/blog/qwen2/

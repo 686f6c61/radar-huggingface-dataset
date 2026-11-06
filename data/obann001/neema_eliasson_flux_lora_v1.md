@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neema Eliasson Flux LoRA v1 es un adaptador de bajo rango (LoRA) para generacion de imagenes text-to-image, publicado por el usuario obann001 en HuggingFace. No es un modelo autonomo: se monta sobre black-forest-labs/FLUX.1-dev, el transformer de difusion de Black Forest Labs, y su unico proposito es ensenar al modelo base a reproducir de forma consistente un personaje concreto, una mujer de piel oscura denominada Neema Eliasson.
+Neema Eliasson Flux LoRA v1 es un adaptador de bajo rango (LoRA) para generacion de imagenes text-to-image, publicado por el usuario obann001 en Hugging Face. No es un modelo autonomo: se monta sobre black-forest-labs/FLUX.1-dev, el transformer de difusion de Black Forest Labs, y su unico proposito es ensenar al modelo base a reproducir de forma consistente un personaje concreto, una mujer de piel oscura denominada Neema Eliasson.
 
 El adaptador se activa mediante la palabra clave `neema_eliasson` y esta pensado para producir retratos y escenas de ese personaje con variaciones de vestuario, iluminacion y entorno (desde primeros planos cinematograficos hasta composiciones de ciencia ficcion o medievales). El repositorio ocupa 0,2 GB, lo que es coherente con un unico archivo de pesos LoRA en formato safetensors y no con un modelo completo.
 
@@ -74,9 +74,9 @@ No hay informacion publicada que permita comparar este adaptador con otros LoRA 
 
 | Alternativa (modelo base) | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FLUX.1-dev (base de este LoRA) | no disponible en la informacion proporcionada | no disponible | FLUX.1 [dev] Non-Commercial License | HuggingFace, ampliamente integrado en diffusers y ComfyUI |
-| FLUX.1-schnell | no disponible en la informacion proporcionada | no disponible | Apache 2.0 | HuggingFace, uso comercial permitido |
-| Stable Diffusion XL | no disponible en la informacion proporcionada | no disponible | CreativeML Open RAIL++-M | HuggingFace, ecosistema de LoRA muy maduro |
+| FLUX.1-dev (base de este LoRA) | no disponible en la informacion proporcionada | no disponible | FLUX.1 [dev] Non-Commercial License | Hugging Face, ampliamente integrado en diffusers y ComfyUI |
+| FLUX.1-schnell | no disponible en la informacion proporcionada | no disponible | Apache 2.0 | Hugging Face, uso comercial permitido |
+| Stable Diffusion XL | no disponible en la informacion proporcionada | no disponible | CreativeML Open RAIL++-M | Hugging Face, ecosistema de LoRA muy maduro |
 
 No se dispone de datos de ningun otro LoRA de personaje concreto con el que establecer una comparacion cuantitativa.
 
@@ -97,7 +97,7 @@ No se dispone de datos de ningun otro LoRA de personaje concreto con el que esta
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/obann001/Neema_Eliasson_Flux_LoRA_v1
+- Repositorio del modelo en Hugging Face: https://huggingface.co/obann001/Neema_Eliasson_Flux_LoRA_v1
 - Archivos y versiones: https://huggingface.co/obann001/Neema_Eliasson_Flux_LoRA_v1/tree/main
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Documentacion de LoRA en diffusers: https://huggingface.co/docs/diffusers/training/lora

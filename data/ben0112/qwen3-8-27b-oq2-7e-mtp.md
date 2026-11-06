@@ -86,7 +86,7 @@ Esta cuantización de 2 bits permite ejecutar un modelo de 27B en hardware que n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ben0112/Qwen3.8-27B-oQ2.7e-mtp
+- Repositorio Hugging Face: https://huggingface.co/ben0112/Qwen3.8-27B-oQ2.7e-mtp
 - Repositorio del modelo base (AlibabaCloud-Official/Qwen3.8-27B): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de Qwen3.8-27B (lovableapp.org): https://lovableapp.org/blog/qwen3-8-27b
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

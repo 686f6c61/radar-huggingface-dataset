@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `clear-fog-cnn-classifier`, publicado por PakeezaKhalid en HuggingFace, es un clasificador de imágenes basado en redes neuronales convolucionales (CNN) diseñado para detectar o clasificar escenas con niebla. Está implementado con la librería Keras y distribuido bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. El repositorio tiene un tamaño de 0.1 GB, lo que sugiere un modelo de dimensiones reducidas, adecuado para tareas de visión por computador en entornos con recursos limitados.
+El modelo `clear-fog-cnn-classifier`, publicado por PakeezaKhalid en Hugging Face, es un clasificador de imágenes basado en redes neuronales convolucionales (CNN) diseñado para detectar o clasificar escenas con niebla. Está implementado con la librería Keras y distribuido bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. El repositorio tiene un tamaño de 0.1 GB, lo que sugiere un modelo de dimensiones reducidas, adecuado para tareas de visión por computador en entornos con recursos limitados.
 
 La relevancia de este modelo radica en su potencial aplicación en sistemas de visión artificial para conducción autónoma, vigilancia meteorológica o mejora de imágenes, donde la detección de niebla es un paso previo para algoritmos de dehazing o para alertas de visibilidad reducida. Sin embargo, la información pública disponible es extremadamente escasa: no se proporcionan detalles sobre la arquitectura exacta, el número de parámetros, el conjunto de datos de entrenamiento ni resultados de benchmarks. La fecha de creación (2026) y la ausencia de descargas o valoraciones indican que se trata de un proyecto reciente o experimental, sin validación externa.
 
@@ -68,5 +68,5 @@ No se dispone de informacion sobre modelos comparables especificos para clasific
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PakeezaKhalid/clear-fog-cnn-classifier
+- Repositorio Hugging Face: https://huggingface.co/PakeezaKhalid/clear-fog-cnn-classifier
 - No se han encontrado papers, blogs, demos u otros enlaces relevantes en la busqueda web.

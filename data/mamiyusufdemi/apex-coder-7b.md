@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Apex Coder 7B es un modelo publicado en HuggingFace por el usuario mamiyusufdemi bajo licencia MIT. Por el nombre y la nomenclatura habitual en el ecosistema, se presenta como un modelo orientado a generación de código con aproximadamente 7000 millones de parámetros, aunque la model card publicada no incluye ninguna especificación técnica que lo confirme.
+Apex Coder 7B es un modelo publicado en Hugging Face por el usuario mamiyusufdemi bajo licencia MIT. Por el nombre y la nomenclatura habitual en el ecosistema, se presenta como un modelo orientado a generación de código con aproximadamente 7000 millones de parámetros, aunque la model card publicada no incluye ninguna especificación técnica que lo confirme.
 
-La información disponible es extremadamente limitada: la model card únicamente declara la licencia MIT, sin arquitectura, contexto, datos de entrenamiento, idiomas ni resultados de evaluación. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no consta pipeline declarado en HuggingFace.
+La información disponible es extremadamente limitada: la model card únicamente declara la licencia MIT, sin arquitectura, contexto, datos de entrenamiento, idiomas ni resultados de evaluación. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no consta pipeline declarado en Hugging Face.
 
 Por tanto, esta ficha documenta lo que se puede verificar y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de idoneidad para producción debería posponerse hasta que exista una model card completa, pesos verificables y resultados reproducibles.
 
@@ -86,5 +86,5 @@ Los datos de los modelos de comparación corresponden a sus fichas públicas hab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mamiyusufdemi/apex-coder-7b
+- Hugging Face: https://huggingface.co/mamiyusufdemi/apex-coder-7b
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

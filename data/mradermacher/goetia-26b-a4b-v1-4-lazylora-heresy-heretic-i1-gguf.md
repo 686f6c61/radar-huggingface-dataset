@@ -79,7 +79,7 @@ Sin embargo, no hay datos de rendimiento comparables, por lo que la comparación
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic-i1-GGUF
 - Repositorio del modelo base: https://huggingface.co/alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic-GGUF
 - Página del modelo en FriendliAI: https://friendli.ai/models/alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic

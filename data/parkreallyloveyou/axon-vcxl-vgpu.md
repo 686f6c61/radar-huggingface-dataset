@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AXON-vCXL-vGPU no es un modelo de lenguaje en el sentido habitual, sino una capa de software propietaria para Windows x64 que actua como acelerador de inferencia. Desarrollada por AXON LABS (autor de HuggingFace: ParkReallyLoveYou), su objetivo es ejecutar modelos de gran tamano (32B y 70B parametros, citando Llama-3.3-70B, Qwen-2.5-32B/72B y DeepSeek-R1) sobre GPU de consumo con 8, 12 o 16 GB de VRAM, evitando los errores de CUDA out-of-memory mediante una gestion de memoria por capas.
+AXON-vCXL-vGPU no es un modelo de lenguaje en el sentido habitual, sino una capa de software propietaria para Windows x64 que actua como acelerador de inferencia. Desarrollada por AXON LABS (autor de Hugging Face: ParkReallyLoveYou), su objetivo es ejecutar modelos de gran tamano (32B y 70B parametros, citando Llama-3.3-70B, Qwen-2.5-32B/72B y DeepSeek-R1) sobre GPU de consumo con 8, 12 o 16 GB de VRAM, evitando los errores de CUDA out-of-memory mediante una gestion de memoria por capas.
 
 El producto se presenta como cuatro componentes: vCXL, una capa que unifica VRAM, RAM DDR4/DDR5 y NVMe en un pool de memoria virtual con prefetch predictivo de capas; vCPNPU/vGPU, que virtualiza la GPU como acelerador cognitivo; NWIR, un plano de despacho de operaciones de baja latencia; y Zero-OOM LeaseLock, un mecanismo de proteccion de tensores activos. Segun la model card, el sistema se distribuye como instalador .exe para Windows y no incluye pesos de modelo, sino que opera sobre modelos de terceros (Llama, Qwen, DeepSeek) en formato GGUF u otros.
 
-Su relevancia actual radica en el problema real del despliegue local de modelos grandes en hardware de gama de consumo, donde el offloading de capas a RAM del sistema degrada el rendimiento hasta 0,8-2,0 tokens/s. La model card afirma elevarlo a 20-35 tokens/s. Sin embargo, el repositorio de HuggingFace tiene 0,0 GB de contenido, cero descargas y cero valoraciones, y los datos de rendimiento publicados se describen explicitamente como resultados de simulacion empirica, no como mediciones independientes en produccion.
+Su relevancia actual radica en el problema real del despliegue local de modelos grandes en hardware de gama de consumo, donde el offloading de capas a RAM del sistema degrada el rendimiento hasta 0,8-2,0 tokens/s. La model card afirma elevarlo a 20-35 tokens/s. Sin embargo, el repositorio de Hugging Face tiene 0,0 GB de contenido, cero descargas y cero valoraciones, y los datos de rendimiento publicados se describen explicitamente como resultados de simulacion empirica, no como mediciones independientes en produccion.
 
 ## Especificaciones tecnicas
 
@@ -17,15 +17,15 @@ Su relevancia actual radica en el problema real del despliegue local de modelos 
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (depende del modelo subyacente que se ejecute) |
 | Tipos de cuantizacion | No especificado de forma exhaustiva; la comparativa de referencia usa GGUF Q4 en llama.cpp/Ollama |
-| Idiomas soportados | No disponible en la model card; declarados como "no disponibles" en los metadatos de HuggingFace |
+| Idiomas soportados | No disponible en la model card; declarados como "no disponibles" en los metadatos de Hugging Face |
 | Licencia | AXON EULA (license_name: axon-eula, license_link: LICENSE); uso comercial no aclarado |
-| Formato de pesos | No aplica: el repositorio de HuggingFace pesa 0,0 GB; la distribucion se realiza como instalador .exe desde GitHub Releases |
-| Desarrollador | AXON LABS (usuario de HuggingFace: ParkReallyLoveYou; repositorio GitHub: jaesooPark1972) |
+| Formato de pesos | No aplica: el repositorio de Hugging Face pesa 0,0 GB; la distribucion se realiza como instalador .exe desde GitHub Releases |
+| Desarrollador | AXON LABS (usuario de Hugging Face: ParkReallyLoveYou; repositorio GitHub: jaesooPark1972) |
 | Plataforma soportada | Windows x64 |
 | Modelos objetivo | Llama-3.3-70B, Qwen-2.5-32B, Qwen-2.5-72B, DeepSeek-R1 |
 | GPU objetivo | RTX 3060 12 GB, RTX 4060 8 GB, RTX 4070 12 GB, RTX 4080 16 GB |
 | Pipeline declarado | text-generation |
-| Fecha de creacion del repositorio | 2026-09-23 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-23 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ No se dispone de comparativas independientes de AXON-vCXL-vGPU frente a estas al
 
 - No es un modelo de lenguaje: no tiene pesos, no se puede evaluar en MMLU, HumanEval ni GSM8K, y su calidad de salida depende integramente del modelo de terceros que se cargue.
 - Los benchmarks estan etiquetados por el propio autor como simulaciones empiricas, no como mediciones en produccion. No hay verificacion independiente ni reproduccion publicada por terceros.
-- El repositorio de HuggingFace tiene 0,0 GB, cero descargas y cero valoraciones; la distribucion real se realiza mediante instaladores .exe alojados en GitHub Releases, lo que implica ejecutar binarios cerrados en la maquina del usuario.
+- El repositorio de Hugging Face tiene 0,0 GB, cero descargas y cero valoraciones; la distribucion real se realiza mediante instaladores .exe alojados en GitHub Releases, lo que implica ejecutar binarios cerrados en la maquina del usuario.
 - Riesgo de seguridad operativa: se trata de software propietario distribuido como ejecutable para Windows, sin auditoria publica del codigo ni detalles arquitectonicos verificables. Conviene evaluarlo en entornos aislados.
 - Licencia AXON EULA: no se especifican en la informacion proporcionada los terminos de uso comercial, redistribucion ni el tratamiento de datos. Es imprescindible revisar LICENSE antes de cualquier despliegue profesional.
 - Fecha de creacion del repositorio indicada como 2026-09-23, posterior a la fecha actual; esto sugiere metadatos inconsistentes y refuerza la necesidad de cautela.
@@ -105,7 +105,7 @@ No se dispone de comparativas independientes de AXON-vCXL-vGPU frente a estas al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ParkReallyLoveYou/AXON-vCXL-vGPU
+- Repositorio en Hugging Face: https://huggingface.co/ParkReallyLoveYou/AXON-vCXL-vGPU
 - Repositorio en GitHub: https://github.com/jaesooPark1972/AXON-vCXL-vGPU
 - Pagina de releases (instalador .exe para Windows): https://github.com/jaesooPark1972/AXON-vCXL-vGPU/releases
 - Licencia referenciada en la model card: LICENSE (enlace relativo dentro del repositorio, contenido no publicado)

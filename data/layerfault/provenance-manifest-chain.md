@@ -35,7 +35,7 @@ No existe información sobre arquitectura ni entrenamiento porque el repositorio
 
 No aplica como modelo de IA. No obstante, como artefacto de seguridad, podría usarse en los siguientes escenarios técnicos (aunque no son casos de uso de un modelo ML):
 
-- Pruebas de regresión de escáneres de seguridad de repositorios de HuggingFace: se puede cargar este artefacto en un pipeline de CI para verificar que el escáner emite una advertencia (WARN) ante un repositorio con características sospechosas.
+- Pruebas de regresión de escáneres de seguridad de repositorios de Hugging Face: se puede cargar este artefacto en un pipeline de CI para verificar que el escáner emite una advertencia (WARN) ante un repositorio con características sospechosas.
 - Evaluación de detectores de cadena de suministro de IA: sirve como caso de control positivo para comprobar si un detector de manifestos de proveniencia o de integridad de cadenas de metadatos funciona correctamente.
 - Formación de herramientas de análisis estático: se puede usar como entrada para entrenar o calibrar reglas de detección de archivos sintéticos con características adversas.
 - Investigación en seguridad de modelos: permite estudiar cómo los escáneres tratan artefactos con metadatos de proveniencia y posibles manipulaciones.
@@ -65,5 +65,5 @@ No disponible. No existe una categoría de "modelos" comparable porque este arte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LayerFault/provenance-manifest-chain
+- Repositorio en Hugging Face: https://huggingface.co/LayerFault/provenance-manifest-chain
 - No hay otros enlaces específicos del modelo. Los resultados de búsqueda web sobre "provenance" en IA (como la guía de ChainScore o el blog de Cisco) no están directamente relacionados con este repositorio, sino con el tema general de la trazabilidad de modelos, y no se citan aquí por no ser fuentes de datos del modelo.

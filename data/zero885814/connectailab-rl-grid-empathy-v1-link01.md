@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-grid-empathy-v1-link01 | Adaptador LoRA sobre 0,8 B | No disponible | 100 % en test propio; 20/20 episodios | Apache 2.0 | HuggingFace |
+| connectailab-rl-grid-empathy-v1-link01 | Adaptador LoRA sobre 0,8 B | No disponible | 100 % en test propio; 20/20 episodios | Apache 2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zero885814/connectailab-rl-grid-empathy-v1-link01
+- Hugging Face: https://huggingface.co/zero885814/connectailab-rl-grid-empathy-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon

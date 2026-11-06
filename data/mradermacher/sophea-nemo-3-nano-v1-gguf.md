@@ -92,7 +92,7 @@ No disponible. La información proporcionada no incluye benchmarks ni identifica
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Sophea-Nemo-3-Nano-v1-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Sophea-Nemo-3-Nano-v1-GGUF
 - Modelo base: https://huggingface.co/ayoubkirouane/Sophea-Nemo-3-Nano-v1
 - Página de descargas del cuantizador para este modelo: https://hf.tst.eu/model#Sophea-Nemo-3-Nano-v1-GGUF
 - Fichero Q4_K_S (22,0 GB): https://huggingface.co/mradermacher/Sophea-Nemo-3-Nano-v1-GGUF/resolve/main/Sophea-Nemo-3-Nano-v1.Q4_K_S.gguf

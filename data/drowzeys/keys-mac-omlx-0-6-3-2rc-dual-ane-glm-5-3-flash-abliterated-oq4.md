@@ -4,7 +4,7 @@
 
 El modelo `drowzeys/keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-Abliterated-oQ4` es una adaptación del modelo GLM-5.3-Flash, desarrollado por el usuario drowzeys sobre la base de `Vontra/GLM-5.3-Flash-MLX-oQ4-MTP`. Se trata de una versión optimizada para Apple Silicon (Mac Studio M3 Ultra) que aprovecha el doble Neural Engine (ANE) y la decodificación especulativa MTP (Multi-Token Prediction). La variante "Abliterated" ha sido sometida a un proceso de eliminación de rechazos de seguridad, por lo que está pensada exclusivamente para investigación y red-team, no para uso en producción.
 
-Con aproximadamente 52,8 mil millones de parámetros, es un modelo de arquitectura MoE (Mixture of Experts) multimodal (imagen-texto) que soporta inglés y chino. La cuantización oQ4 (4 bits) reduce el tamaño de los pesos para facilitar la inferencia en hardware de Apple. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace. La licencia es MIT, lo que permite uso comercial con las debidas atribuciones, aunque el carácter abliterated del modelo introduce riesgos legales y éticos importantes.
+Con aproximadamente 52,8 mil millones de parámetros, es un modelo de arquitectura MoE (Mixture of Experts) multimodal (imagen-texto) que soporta inglés y chino. La cuantización oQ4 (4 bits) reduce el tamaño de los pesos para facilitar la inferencia en hardware de Apple. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face. La licencia es MIT, lo que permite uso comercial con las debidas atribuciones, aunque el carácter abliterated del modelo introduce riesgos legales y éticos importantes.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 ## Limitaciones y advertencias
 
 - Modelo abliterated: se han eliminado los rechazos de seguridad, por lo que puede generar contenido dañino, ilegal, violento o sexualmente explícito sin advertencia. Uso exclusivo para investigación y red-team.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su distribución.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su distribución.
 - Idiomas limitados: solo inglés y chino; no se garantiza calidad en otros idiomas.
 - Contexto no especificado: se desconoce la longitud máxima de la ventana de contexto, lo que dificulta su uso en tareas de memoria larga.
 - Hardware específico: solo funciona eficientemente en Apple Silicon con doble ANE; en otros entornos puede no ejecutarse o ser muy lento.
@@ -79,7 +79,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/drowzeys/keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-Abliterated-oQ4
+- Repositorio Hugging Face: https://huggingface.co/drowzeys/keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-Abliterated-oQ4
 - Repositorio GitHub: https://github.com/drowzeys/keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-Abliterated-oQ4/
 - Archivo AGENTS.md (detalles técnicos): https://github.com/drowzeys/keys-Mac-oMLX-0.6.3.2RC-Dual-ANE-GLM-5.3-Flash-Abliterated-oQ4/blob/main/AGENTS.md
 - Modelo base: https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-oQ4-MTP

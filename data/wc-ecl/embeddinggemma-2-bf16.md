@@ -23,7 +23,7 @@ Es relevante ahora como ejemplo de practica de fijado de artefactos (pin + verif
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni el proceso de alineacion (RLHF/DPO). El unico dato estructural fiable es el tag de HuggingFace `embedding_gemma2`, que situa el modelo en la familia de embeddings de Gemma, y el propio nombre del repositorio upstream (`google/embeddinggemma-2`). El repositorio incluye los modulos `1_Pooling/config.json` y `2_Normalize/config.json`, junto con `modules.json` y `config_sentence_transformers.json`, lo que indica una canalizacion estandar de Sentence Transformers: codificacion, pooling y normalizacion de los vectores resultantes. Tambien incluye `preprocessor_config.json` y `processor_config.json`, coherentes con el uso multimodal (texto→imagen e imagen→imagen) descrito por la aplicacion que lo consume.
+No se dispone de informacion detallada sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni el proceso de alineacion (RLHF/DPO). El unico dato estructural fiable es el tag de Hugging Face `embedding_gemma2`, que situa el modelo en la familia de embeddings de Gemma, y el propio nombre del repositorio upstream (`google/embeddinggemma-2`). El repositorio incluye los modulos `1_Pooling/config.json` y `2_Normalize/config.json`, junto con `modules.json` y `config_sentence_transformers.json`, lo que indica una canalizacion estandar de Sentence Transformers: codificacion, pooling y normalizacion de los vectores resultantes. Tambien incluye `preprocessor_config.json` y `processor_config.json`, coherentes con el uso multimodal (texto→imagen e imagen→imagen) descrito por la aplicacion que lo consume.
 
 La innovacion destacable de este repositorio no es arquitectonica sino de ingenieria de suministro: cada fichero de pesos es una copia no modificada del objeto upstream, y su SHA-256 coincide con el registrado en los metadatos LFS del repositorio de origen (verificado el 2026-10-15). Ademas, se anade un `chat_template.jinja` (1.016 bytes) que no es habitual en un modelo puramente de embeddings. No hay informacion disponible sobre tecnicas como decodificacion especulativa o atencion lineal.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `WC-ECL/embeddinggemma-2-bf16` | 744.371.512 | no disponible | Apache-2.0 | HuggingFace, 13 ficheros, 1,5 GB | Espejo BF16 de 744 M de parametros; pesos verificados por SHA-256 |
-| `google/embeddinggemma-2` (upstream) | no disponible | no disponible | Apache-2.0 | HuggingFace | Repositorio de origen; revision fijada `914f7f89142e33e77833254d9c9b90c3cef7303b`; pesos identicos |
+| `WC-ECL/embeddinggemma-2-bf16` | 744.371.512 | no disponible | Apache-2.0 | Hugging Face, 13 ficheros, 1,5 GB | Espejo BF16 de 744 M de parametros; pesos verificados por SHA-256 |
+| `google/embeddinggemma-2` (upstream) | no disponible | no disponible | Apache-2.0 | Hugging Face | Repositorio de origen; revision fijada `914f7f89142e33e77833254d9c9b90c3cef7303b`; pesos identicos |
 
 No se dispone de datos verificables sobre otros modelos comparables (parametros, contexto, rendimiento o licencia) en la informacion proporcionada, por lo que la comparacion con alternativas de la misma categoria se considera no disponible.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificables sobre otros modelos comparables (parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WC-ECL/embeddinggemma-2-bf16
+- Repositorio en Hugging Face: https://huggingface.co/WC-ECL/embeddinggemma-2-bf16
 - Repositorio upstream (modelo base): https://huggingface.co/google/embeddinggemma-2
 - Revision upstream fijada: `914f7f89142e33e77833254d9c9b90c3cef7303b`
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo; los resultados devueltos corresponden a un dominio distinto sin relacion con IA.

@@ -4,7 +4,7 @@
 
 `Anomly/SmolLM2-135M-Instruct-bposit8` es una re-cuantización especial del modelo `HuggingFaceTB/SmolLM2-135M-Instruct`, creada por Anomly para el perfil exacto de INVAR. El objetivo no es añadir capacidades nuevas, sino garantizar una reproducibilidad bit a bit de la inferencia: cada multiplicación de matrices se acumula en un quire de 256 bits con una única operación de redondeo. Este diseño permite que un runtime determinista produzca activaciones y logits idénticos en x86, CUDA y aarch64, y que implementaciones de referencia independientes puedan reproducir una respuesta servida a partir de los pesos y los identificadores de token.
 
-El modelo base pertenece a la familia SmolLM2 de HuggingFace, un transformer de tamaño pequeño (134.515.008 parámetros según el archivo safetensors). La conversión se distribuye en formato GGUF, con un archivo de 0.14 GB y un tipo de archivo `general.file_type` 42, correspondiente a la codificación b-posit8. No se ha especificado la longitud de contexto ni los idiomas soportados en la información proporcionada.
+El modelo base pertenece a la familia SmolLM2 de Hugging Face, un transformer de tamaño pequeño (134.515.008 parámetros según el archivo safetensors). La conversión se distribuye en formato GGUF, con un archivo de 0.14 GB y un tipo de archivo `general.file_type` 42, correspondiente a la codificación b-posit8. No se ha especificado la longitud de contexto ni los idiomas soportados en la información proporcionada.
 
 ## Especificaciones técnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Formato de pesos | Safetensors | GGUF (b-posit8) |
 | Rendimiento (benchmarks) | No disponible | No disponible |
 | Licencia | Apache-2.0 | Apache-2.0 |
-| Disponibilidad | HuggingFace | HuggingFace (0 descargas, 0 likes) |
+| Disponibilidad | Hugging Face | Hugging Face (0 descargas, 0 likes) |
 | Propiedad destacada | Modelo instruct original | Reproducibilidad bit a bit con INVAR |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anomly/SmolLM2-135M-Instruct-bposit8
-- Modelo base en HuggingFace: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
-- Modelo base (sin instruct) en HuggingFace: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
+- Modelo en Hugging Face: https://huggingface.co/Anomly/SmolLM2-135M-Instruct-bposit8
+- Modelo base en Hugging Face: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
+- Modelo base (sin instruct) en Hugging Face: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Repositorio de INVAR: https://github.com/anomly-labs/invar

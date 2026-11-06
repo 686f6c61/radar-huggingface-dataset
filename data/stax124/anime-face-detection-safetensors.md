@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parámetros | Contexto / entrada | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Stax124/anime-face-detection-safetensors | YOLOv8s, 1 clase | no disponible | imagen 640x640 | MIT | safetensors fp16 | HuggingFace |
-| deepghs/anime_face_detection (face_detect_v1.4_s) | YOLOv8s, 1 clase | no disponible | imagen 640x640 | MIT | ONNX | HuggingFace |
-| Otros detectores de caras anime de deepghs (variantes v1.x) | YOLOv8 en distintas escalas | no disponible | imagen 640x640 | MIT | ONNX | HuggingFace |
+| Stax124/anime-face-detection-safetensors | YOLOv8s, 1 clase | no disponible | imagen 640x640 | MIT | safetensors fp16 | Hugging Face |
+| deepghs/anime_face_detection (face_detect_v1.4_s) | YOLOv8s, 1 clase | no disponible | imagen 640x640 | MIT | ONNX | Hugging Face |
+| Otros detectores de caras anime de deepghs (variantes v1.x) | YOLOv8 en distintas escalas | no disponible | imagen 640x640 | MIT | ONNX | Hugging Face |
 
 La comparativa se limita al modelo original de deepghs y sus variantes, ya que no se dispone de datos de benchmarks ni de otros detectores comparables en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparativa se limita al modelo original de deepghs y sus variantes, ya que n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stax124/anime-face-detection-safetensors
+- Hugging Face: https://huggingface.co/Stax124/anime-face-detection-safetensors
 - Modelo original: https://huggingface.co/deepghs/anime_face_detection
 - Pesos originales: https://huggingface.co/deepghs/anime_face_detection/tree/main/face_detect_v1.4_s
 - Perfil del autor original: https://huggingface.co/deepghs

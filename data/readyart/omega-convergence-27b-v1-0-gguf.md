@@ -74,5 +74,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0-GGUF
 - Modelo base (safetensors): https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0 (enlace inferido, no confirmado en la información proporcionada)

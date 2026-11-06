@@ -2,7 +2,7 @@
 
 ## Resumen
 
-thetinkerer/TOS-32B-E1 es un modelo publicado en HuggingFace por el usuario thetinkerer bajo licencia Apache-2.0. En el momento de la consulta, la ficha del repositorio no contiene información técnica: la model card se limita al bloque de metadatos con la licencia, no se declara pipeline, idiomas soportados, arquitectura ni proceso de entrenamiento, y el repositorio acumula 0 descargas y 0 likes. El identificador sugiere un tamaño en torno a los 32.000 millones de parámetros, pero este dato no está confirmado en la documentación disponible.
+thetinkerer/TOS-32B-E1 es un modelo publicado en Hugging Face por el usuario thetinkerer bajo licencia Apache-2.0. En el momento de la consulta, la ficha del repositorio no contiene información técnica: la model card se limita al bloque de metadatos con la licencia, no se declara pipeline, idiomas soportados, arquitectura ni proceso de entrenamiento, y el repositorio acumula 0 descargas y 0 likes. El identificador sugiere un tamaño en torno a los 32.000 millones de parámetros, pero este dato no está confirmado en la documentación disponible.
 
 Por tanto, cualquier afirmación sobre capacidades, contexto, datos de entrenamiento o rendimiento sería una inferencia no verificada. Esta ficha recoge exclusivamente lo que puede confirmarse desde los metadatos públicos y marca como "no disponible" todo lo que no puede contrastarse, además de las comprobaciones que un equipo técnico debería hacer antes de considerar el modelo para producción.
 
@@ -20,7 +20,7 @@ La relevancia de esta entrada es, precisamente, metodológica: sirve como caso d
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de creación en el registro | 2026-09-16 |
@@ -99,7 +99,7 @@ La diferencia relevante no es de rendimiento, sino de trazabilidad: los tres mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thetinkerer/TOS-32B-E1
+- Modelo en Hugging Face: https://huggingface.co/thetinkerer/TOS-32B-E1
 - Paper: no disponible
 - Repositorio de código: no disponible
 - Demo o Space: no disponible

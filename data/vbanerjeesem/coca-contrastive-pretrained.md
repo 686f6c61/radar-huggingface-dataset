@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Vbanerjeesem/coca-contrastive-pretrained` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura denominada "Coca" orientada a aprendizaje contrastivo. El autor es el usuario Vbanerjeesem y el repositorio se publica bajo licencia BSD-3-Clause. A diferencia de un modelo preentrenado convencional, la propia model card lo describe como un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y afirma explícitamente que no se presenta como un release preentrenado listo para producción.
+`Vbanerjeesem/coca-contrastive-pretrained` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura denominada "Coca" orientada a aprendizaje contrastivo. El autor es el usuario Vbanerjeesem y el repositorio se publica bajo licencia BSD-3-Clause. A diferencia de un modelo preentrenado convencional, la propia model card lo describe como un artefacto compacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y afirma explícitamente que no se presenta como un release preentrenado listo para producción.
 
 El dato más relevante para evaluar el repositorio es el recuento de parámetros del checkpoint: 49.600 parámetros según el archivo safetensors. Se trata, por tanto, de un modelo de escala mínima, coherente con su propósito declarado de inicialización y validación de código. La configuración se etiqueta internamente como "huge", pero esa etiqueta corresponde a un preset de arquitectura del script, no a un modelo de gran tamaño real. El repositorio ocupa 0,0 GB.
 
@@ -75,7 +75,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vbanerjeesem/coca-contrastive-pretrained | 49.600 (checkpoint de inicialización) | no disponible | no publicado | BSD-3-Clause | HuggingFace, 0 descargas |
+| Vbanerjeesem/coca-contrastive-pretrained | 49.600 (checkpoint de inicialización) | no disponible | no publicado | BSD-3-Clause | Hugging Face, 0 descargas |
 | CoCa (Google) | no disponible | no disponible | no disponible | no disponible | no disponible en la información aportada |
 | CLIP / OpenCLIP | no disponible | no disponible | no disponible | no disponible | no disponible en la información aportada |
 
@@ -93,6 +93,6 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vbanerjeesem/coca-contrastive-pretrained
+- Repositorio en Hugging Face: https://huggingface.co/Vbanerjeesem/coca-contrastive-pretrained
 - Archivos internos citados en la model card: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (papers, blogs, repos o demos). Las busquedas devolvieron unicamente paginas genericas de servicios de Google sin relacion con el modelo.

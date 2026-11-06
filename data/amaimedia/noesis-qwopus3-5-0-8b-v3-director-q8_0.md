@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Director-Q8_0
-- Perfil de AMAImedia en HuggingFace: https://huggingface.co/AMAImedia/models
+- Repositorio Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Director-Q8_0
+- Perfil de AMAImedia en Hugging Face: https://huggingface.co/AMAImedia/models
 - Modelo relacionado Qwen3.5-9B-Darwin-Opus-NOESIS-AWQ-INT4: https://huggingface.co/AMAImedia/Qwen3.5-9B-Darwin-Opus-NOESIS-AWQ-INT4
 - Entrada de Qwopus3.5 en Ollama (referencia indirecta): https://ollama.com/fredrezones55/Qwopus3.5

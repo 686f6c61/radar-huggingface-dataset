@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stanza-yrl es el paquete de modelos lingüísticos de Stanza para el nheengatu (código ISO 639-3 `yrl`), una lengua de la familia tupí-guaraní hablada en la cuenca del alto río Negro (Amazonía). Lo publica el equipo de Stanford NLP (organización `stanfordnlp` en HuggingFace) dentro de su proyecto Stanza, una biblioteca en Python para el análisis lingüístico de texto en crudo que cubre tokenización, segmentación de frases, lematización, etiquetado morfosintáctico, análisis de dependencias y reconocimiento de entidades nombradas. El repositorio está etiquetado en HuggingFace con la tarea `token-classification` y declara como única lengua soportada el nheengatu.
+Stanza-yrl es el paquete de modelos lingüísticos de Stanza para el nheengatu (código ISO 639-3 `yrl`), una lengua de la familia tupí-guaraní hablada en la cuenca del alto río Negro (Amazonía). Lo publica el equipo de Stanford NLP (organización `stanfordnlp` en Hugging Face) dentro de su proyecto Stanza, una biblioteca en Python para el análisis lingüístico de texto en crudo que cubre tokenización, segmentación de frases, lematización, etiquetado morfosintáctico, análisis de dependencias y reconocimiento de entidades nombradas. El repositorio está etiquetado en Hugging Face con la tarea `token-classification` y declara como única lengua soportada el nheengatu.
 
 El problema que resuelve es la ausencia de herramientas de procesamiento del lenguaje natural para una lengua de bajos recursos: sin tokenizadores ni modelos de entidades entrenados, cualquier trabajo sobre corpus en nheengatu (digitalización, anotación, búsqueda, traducción asistida) tiene que hacerse de forma manual. Este paquete permite aplicar una cadena de análisis automático sobre texto en `yrl` usando la misma interfaz que Stanza ofrece para las más de 70 lenguas que soporta el proyecto.
 
@@ -23,7 +23,7 @@ La model card es mínima: fue generada automáticamente por el script `hugging_s
 | Tarea declarada | `token-classification` |
 | Biblioteca | Stanza |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación en HuggingFace | 2026-09-29 |
+| Fecha de creación en Hugging Face | 2026-09-29 |
 
 ## Arquitectura y entrenamiento
 
@@ -34,7 +34,7 @@ Tampoco hay información sobre el corpus de entrenamiento: no se especifica el n
 ## Capacidades
 
 - Análisis lingüístico de texto en nheengatu dentro de la cadena de procesamiento de Stanza: tokenización, segmentación de frases y etiquetado a nivel de token.
-- Reconocimiento de entidades nombradas y etiquetado de tokens, tarea bajo la que está registrado el modelo en HuggingFace.
+- Reconocimiento de entidades nombradas y etiquetado de tokens, tarea bajo la que está registrado el modelo en Hugging Face.
 - Integración en el ecosistema Stanza: el paquete se descarga y se usa con la misma API que el resto de lenguas del proyecto (por ejemplo, mediante `stanza.Pipeline(lang='yrl', processors=...)`).
 - Procesamiento por lotes sobre corpus de texto, apto para canalizaciones de anotación automática.
 - No hay evidencia en la información disponible de soporte de tool calling, function calling, razonamiento multi-paso, modo "thinking", visión, audio ni capacidades generativas: no es un modelo de lenguaje generativo.
@@ -70,9 +70,9 @@ No se han identificado alternativas publicadas específicamente para nheengatu e
 
 | Modelo | Lengua | Tarea | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| stanza-yrl | nheengatu (`yrl`) | token-classification | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| stanza-en | inglés | cadena completa de Stanza | no disponible | no disponible | no disponible en la información consultada | HuggingFace |
-| stanza-zh | chino | cadena completa de Stanza | no disponible | no disponible | no disponible en la información consultada | HuggingFace |
+| stanza-yrl | nheengatu (`yrl`) | token-classification | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| stanza-en | inglés | cadena completa de Stanza | no disponible | no disponible | no disponible en la información consultada | Hugging Face |
+| stanza-zh | chino | cadena completa de Stanza | no disponible | no disponible | no disponible en la información consultada | Hugging Face |
 
 La comparación directa en rendimiento no es posible: no hay métricas publicadas para `yrl` ni datos homogéneos de los otros paquetes en la información disponible. La diferencia relevante es de cobertura lingüística: las lenguas mayoritarias cuentan con múltiples alternativas (spaCy, UDPipe, modelos transformer específicos), mientras que para nheengatu este paquete de Stanza es, según la información disponible, una de las pocas opciones publicadas.
 
@@ -83,13 +83,13 @@ La comparación directa en rendimiento no es posible: no hay métricas publicada
 - Sesgos conocidos: no documentados. En lenguas con pocos datos anotados es habitual que el rendimiento dependa fuertemente del dominio y del registro del corpus de entrenamiento, que aquí se desconoce.
 - Cobertura limitada a una sola lengua (`yrl`); no debe esperarse transferencia a otras lenguas tupí-guaraní ni al portugués sin verificación empírica.
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificación, siempre que se conserven los avisos de copyright y licencia y se indiquen los cambios. No se han identificado cláusulas adicionales en la información disponible.
-- Adopción nula verificable: 0 descargas y 0 "likes" en HuggingFace, lo que implica ausencia de validación por parte de la comunidad y de reportes de errores.
+- Adopción nula verificable: 0 descargas y 0 "likes" en Hugging Face, lo que implica ausencia de validación por parte de la comunidad y de reportes de errores.
 - Fecha de creación registrada como 2026-09-29; conviene comprobar si el repositorio se actualiza, ya que la model card indica que se regenera automáticamente.
 - Para producción: al no publicarse pesos en formatos estándar de servido (GGUF, safetensors con configuración estándar), la integración depende de la librería Stanza y de sus dependencias, lo que condiciona el empaquetado y el escalado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordnlp/stanza-yrl
+- Modelo en Hugging Face: https://huggingface.co/stanfordnlp/stanza-yrl
 - Página de modelos de Stanza: https://stanfordnlp.github.io/stanza/models.html
 - Descarga de modelos de Stanza: https://stanfordnlp.github.io/stanza/download_models.html
 - Sitio del proyecto Stanza: https://stanza.stanford.edu/

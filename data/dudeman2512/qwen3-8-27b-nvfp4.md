@@ -90,7 +90,7 @@ Frente a otras alternativas de 27B en el mercado, como Llama 3.3-70B (que es mas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dudeman2512/Qwen3.8-27B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/dudeman2512/Qwen3.8-27B-NVFP4
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - Documentacion de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

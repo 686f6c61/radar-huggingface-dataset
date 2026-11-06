@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rina-sari/classification-distilled` es un repositorio experimental publicado en HuggingFace por el usuario rina-sari que contiene una implementacion propia de un Vision Transformer (ViT) orientada a tareas de clasificacion. Segun la model card, se trata de un codebase pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
+`rina-sari/classification-distilled` es un repositorio experimental publicado en Hugging Face por el usuario rina-sari que contiene una implementacion propia de un Vision Transformer (ViT) orientada a tareas de clasificacion. Segun la model card, se trata de un codebase pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
 
 El modelo declara 24.832 parametros segun el recuento real de los safetensors, un orden de magnitud muy inferior al de cualquier ViT operativo (ViT-S/16 ronda los 22 millones). La arquitectura combina atencion de ventana deslizante (sliding window), fusion con compuertas (gated fusion), activacion mish y normalizacion RMSNorm, con una receta de entrenamiento por defecto basada en el optimizador Lion y un schedule de warmup lineal que no consta como ejecutada.
 
@@ -73,7 +73,7 @@ La tabla siguiente compara parametros y disponibilidad con dos ViT de referencia
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| rina-sari/classification-distilled | 24.832 | no disponible | MIT | HuggingFace, checkpoint sin entrenar | no disponible |
+| rina-sari/classification-distilled | 24.832 | no disponible | MIT | Hugging Face, checkpoint sin entrenar | no disponible |
 | ViT-S/16 (referencia) | ~22 M | 224x224 px | segun variante | ampliamente disponible | no comparable en esta ficha |
 | ViT-B/16 (referencia) | ~86 M | 224x224 px | segun variante | ampliamente disponible | no comparable en esta ficha |
 
@@ -93,5 +93,5 @@ Advertencia: la diferencia de escala entre este repositorio y los ViT de referen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rina-sari/classification-distilled
+- Hugging Face: https://huggingface.co/rina-sari/classification-distilled
 - No se han encontrado enlaces adicionales relevantes en la busqueda web: los resultados devueltos corresponden a la sociedad de clasificacion RINA (RINA.org, Wikipedia), a un comunicado de la NSA sobre destilacion de modelos de IA y a una noticia relacionada de CyberScoop, ninguno de ellos vinculado al modelo ni a su autor.

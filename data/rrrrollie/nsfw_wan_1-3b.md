@@ -4,7 +4,7 @@
 
 ## Resumen
 
-NSFW Wan 1.3b T2V es un ajuste fino (fine-tune) del modelo de generacion de video texto-a-video Wan-AI/Wan2.1-T2V-1.3B, publicado por el usuario rrrrollie en HuggingFace. Su proposito declarado es actuar como herramienta de investigacion y creacion capaz de generar clips cortos de video a partir de descripciones en lenguaje natural dentro del ambito de contenido para adultos (NSFW). El modelo conserva la arquitectura de transformer texto-a-video del modelo base y sus 1.300 millones de parametros, y ha sido reentrenado para cubrir un espectro amplio de escenarios, esteticas y acciones propias de ese dominio.
+NSFW Wan 1.3b T2V es un ajuste fino (fine-tune) del modelo de generacion de video texto-a-video Wan-AI/Wan2.1-T2V-1.3B, publicado por el usuario rrrrollie en Hugging Face. Su proposito declarado es actuar como herramienta de investigacion y creacion capaz de generar clips cortos de video a partir de descripciones en lenguaje natural dentro del ambito de contenido para adultos (NSFW). El modelo conserva la arquitectura de transformer texto-a-video del modelo base y sus 1.300 millones de parametros, y ha sido reentrenado para cubrir un espectro amplio de escenarios, esteticas y acciones propias de ese dominio.
 
 El interes tecnico del repositorio reside en la documentacion detallada de su proceso de entrenamiento y de sus fallos. El autor describe dos ejecuciones: una original en dos fases (epocas 1-10 solo con imagenes, epocas 11-20 solo con video) que sufrio un colapso de calidad con artefactos de anatomia ("body horror") a partir de la epoca 3, y una segunda ejecucion revisada de epoca unica sobre un conjunto mixto de 30.000 clips de video y 20.000 imagenes fijas, cuyo resultado son los checkpoints experimentales `wan_1.3B_exp_e1` a `wan_1.3B_exp_e14`. El autor recomienda `wan_1.3B_exp_e14.safetensors` como checkpoint de uso general y para entrenar LoRAs.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NSFW Wan 1.3b T2V (rrrrollie) | 1,3 B | T2V con fine-tune NSFW | CreativeML OpenRAIL-M | HuggingFace (`safetensors`) |
-| Wan-AI/Wan2.1-T2V-1.3B | 1,3 B | T2V generalista (modelo base) | Segun la model card del modelo base | HuggingFace |
-| Wan-AI/Wan2.1-T2V-14B | 14 B | T2V generalista de mayor escala | Segun la model card del modelo base | HuggingFace |
+| NSFW Wan 1.3b T2V (rrrrollie) | 1,3 B | T2V con fine-tune NSFW | CreativeML OpenRAIL-M | Hugging Face (`safetensors`) |
+| Wan-AI/Wan2.1-T2V-1.3B | 1,3 B | T2V generalista (modelo base) | Segun la model card del modelo base | Hugging Face |
+| Wan-AI/Wan2.1-T2V-14B | 14 B | T2V generalista de mayor escala | Segun la model card del modelo base | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada, ni de otros fine-tunes NSFW de la misma categoria con metricas publicadas. La comparacion se limita, por tanto, a parametros, especializacion, licencia y disponibilidad. Cabe senalar que la licencia del fine-tune (CreativeML OpenRAIL-M) es distinta de la del modelo base y anade restricciones de uso en su Anexo A.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rrrrollie/NSFW_Wan_1.3b
+- Modelo en Hugging Face: https://huggingface.co/rrrrollie/NSFW_Wan_1.3b
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Guia de prompting incluida en el repositorio: `prompting-guide.json` (ruta dentro de https://huggingface.co/rrrrollie/NSFW_Wan_1.3b/tree/main)
 - La busqueda web realizada no devolvio papers, blogs, repositorios ni demos adicionales relacionados con este modelo.

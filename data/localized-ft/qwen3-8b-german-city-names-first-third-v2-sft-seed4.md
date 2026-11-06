@@ -54,7 +54,7 @@ No se dispone de datos comparativos con otros modelos. Existen variantes del mis
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3-8B-german-city-names-first-third-v2-sft-seed4](https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-first-third-v2-sft-seed4)
+- [Hugging Face - localized-ft/Qwen3-8B-german-city-names-first-third-v2-sft-seed4](https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-first-third-v2-sft-seed4)
 - [Modelo similar: Qwen3-8B-german-city-names-last-third-v2-sft-seed4-epoch3](https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-last-third-v2-sft-seed4-epoch3)
 - [Modelo similar: Qwen3-8B-german-city-names-first-third-v2-sft-seed4 (longtermrisk)](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-first-third-v2-sft-seed4)
 - [FriendliAI - despliegue del modelo last-third](https://friendli.ai/models/localized-ft/Qwen3-8B-german-city-names-last-third-v2-sft-seed4)

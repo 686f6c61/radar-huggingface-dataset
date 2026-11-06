@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DANIELLOPEZiah/efficientformer-generation15` es un repositorio de HuggingFace que contiene una implementación propia de una arquitectura EfficientFormer orientada a tareas de generación, publicada por el usuario DANIELLOPEZiah bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card describe explícitamente el fichero `model.safetensors` como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo con rendimiento evaluado.
+`DANIELLOPEZiah/efficientformer-generation15` es un repositorio de Hugging Face que contiene una implementación propia de una arquitectura EfficientFormer orientada a tareas de generación, publicada por el usuario DANIELLOPEZiah bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card describe explícitamente el fichero `model.safetensors` como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo con rendimiento evaluado.
 
 El repositorio es, por tanto, un punto de partida reproducible: incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y los pesos iniciales. La arquitectura declarada es EfficientFormer en escala "base", con atención lineal, fusión mediante concatenación y MLP, activación approximate GELU y normalización por batch normalization.
 
@@ -70,12 +70,12 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Sin datos de entrenamiento documentados: no se especifican tokens, composición del dataset ni fases de alineación, lo que impide evaluar riesgos de contaminación o sesgo.
 - Idiomas no declarados: el campo de idiomas está vacío, por lo que no se puede asumir soporte multilingüe.
 - Contexto no declarado: no se documenta la longitud máxima de secuencia, un dato crítico para cualquier uso generativo.
-- Carga no estándar: al ser una implementación propia, las APIs automáticas de HuggingFace Transformers requieren un adaptador explícito; no se puede asumir compatibilidad directa con `AutoModel` ni con pipelines estándar.
+- Carga no estándar: al ser una implementación propia, las APIs automáticas de Hugging Face Transformers requieren un adaptador explícito; no se puede asumir compatibilidad directa con `AutoModel` ni con pipelines estándar.
 - Licencia MIT: permite uso comercial y modificación con atribución, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con datasets externos.
 - Repositorio sin tracción: cero descargas y cero valoraciones en el momento de la consulta, lo que reduce la probabilidad de soporte comunitario o de corrección de errores.
 - Fecha de creación futura en los metadatos (2026-11-05): conviene verificar la integridad y procedencia del repositorio antes de integrarlo en cualquier flujo de trabajo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DANIELLOPEZiah/efficientformer-generation15
+- Repositorio en Hugging Face: https://huggingface.co/DANIELLOPEZiah/efficientformer-generation15
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo concreto.

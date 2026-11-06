@@ -77,8 +77,8 @@ Estas cifras corresponden a un test de conversión y no deben interpretarse como
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/GLiNER2.5-Decide | 436 M | no disponible | safetensors (MLX-VLM) | apache-2.0 | HuggingFace, ejecución en Apple Silicon vía mlx-vlm |
-| fastino/GLiNER2.5-Decide | no disponible | no disponible | no disponible | apache-2.0 (según el artefacto derivado) | HuggingFace |
+| nativ-community/GLiNER2.5-Decide | 436 M | no disponible | safetensors (MLX-VLM) | apache-2.0 | Hugging Face, ejecución en Apple Silicon vía mlx-vlm |
+| fastino/GLiNER2.5-Decide | no disponible | no disponible | no disponible | apache-2.0 (según el artefacto derivado) | Hugging Face |
 | Otras alternativas de la familia GLiNER | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, contexto ni tamaño de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento, contexto ni tamaño de modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/GLiNER2.5-Decide
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/GLiNER2.5-Decide
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Rama de MLX-VLM con soporte de decisión GLiNER: https://github.com/Blaizzy/mlx-vlm/tree/stack/gliner-decision
 - Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces encontrados correspondían a entidades homónimas sin relación.

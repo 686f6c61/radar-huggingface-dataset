@@ -86,6 +86,6 @@ No hay datos de rendimiento publicados para ninguno de los dos, por lo que no es
 ## Enlaces
 
 - Repositorio del modelo: [https://huggingface.co/Montalte/qwen3_4b_mn9_k_clean441_nemotron_native500k_planb_paper](https://huggingface.co/Montalte/qwen3_4b_mn9_k_clean441_nemotron_native500k_planb_paper)
-- Modelo base en HuggingFace: [https://huggingface.co/Qwen/Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base)
+- Modelo base en Hugging Face: [https://huggingface.co/Qwen/Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base)
 - Informe técnico de Qwen3 (arXiv): [https://arxiv.org/abs/2505.09388](https://arxiv.org/abs/2505.09388)
 - Página del proyecto Qwen3: [https://openlm.ai/qwen3/](https://openlm.ai/qwen3/)

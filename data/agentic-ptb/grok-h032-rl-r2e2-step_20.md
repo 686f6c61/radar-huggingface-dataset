@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h032.rl-r2e2.step_20 | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no especificado (típicamente 128k en Qwen3) | Apache 2.0 (asumido, no verificado) | HuggingFace |
+| agentic-ptb/grok.h032.rl-r2e2.step_20 | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no especificado (típicamente 128k en Qwen3) | Apache 2.0 (asumido, no verificado) | Hugging Face |
 | Otros fine-tunes de Qwen3.5-9B | 9,4B | variable | variable | variable |
 
 La comparación se limita al modelo base, ya que no hay datos de rendimiento publicados para este checkpoint. El modelo base Qwen3.5-9B-Base es el punto de partida y, en teoría, este checkpoint debería mejorar en tareas de razonamiento gracias al RL, pero no se puede confirmar sin benchmarks.
@@ -76,6 +76,6 @@ La comparación se limita al modelo base, ya que no hay datos de rendimiento pub
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h032.rl-r2e2.step_20
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h032.rl-r2e2.step_20
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SESR es un repositorio de pesos publicado en HuggingFace por el usuario hyuzhang01 bajo licencia Apache 2.0. El repositorio contiene unicamente pesos en formato safetensors, ocupa 0,3 GB y no incluye model card con documentacion tecnica: la unica informacion disponible en la ficha es la linea de licencia. No se declara pipeline, idiomas soportados, arquitectura ni conjunto de datos de entrenamiento.
+SESR es un repositorio de pesos publicado en Hugging Face por el usuario hyuzhang01 bajo licencia Apache 2.0. El repositorio contiene unicamente pesos en formato safetensors, ocupa 0,3 GB y no incluye model card con documentacion tecnica: la unica informacion disponible en la ficha es la linea de licencia. No se declara pipeline, idiomas soportados, arquitectura ni conjunto de datos de entrenamiento.
 
 El identificador del repositorio coincide con el acronimo de una arquitectura publicada de super-resolucion de imagen (Super-Efficient Super Resolution, bloque colapsable lineal), pero no hay ningun dato en el repositorio que permita confirmar que este modelo implemente dicha arquitectura ni que sea un modelo de vision por computador. Tampoco puede confirmarse que sea un modelo de lenguaje. Cualquier uso en produccion requiere inspeccionar los pesos y el codigo de configuracion del repositorio.
 
@@ -69,7 +69,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hyuzhang01/SESR | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| hyuzhang01/SESR | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hyuzhang01/SESR
+- Hugging Face: https://huggingface.co/hyuzhang01/SESR
 - Resultados de busqueda web: la consulta no devolvio ninguna referencia relevante sobre el modelo. Los unicos resultados obtenidos fueron portales de empleo (jp.indeed.com, de.indeed.com, nl.indeed.com, www.indeed.com, emplois.ca.indeed.com), sin relacion con el repositorio.
 - Paper, blog, repositorio de codigo o demo: no disponible.

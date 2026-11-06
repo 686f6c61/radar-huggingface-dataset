@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| illicitish/gentsampler-models (Basic Pitch v0.4.0) | no disponible (binario ONNX de 225 KB) | no aplica | Audio a MIDI | Apache 2.0 | HuggingFace (espejo) |
+| illicitish/gentsampler-models (Basic Pitch v0.4.0) | no disponible (binario ONNX de 225 KB) | no aplica | Audio a MIDI | Apache 2.0 | Hugging Face (espejo) |
 | Basic Pitch original (spotify/basic-pitch v0.4.0) | no disponible | no aplica | Audio a MIDI | Apache 2.0 | GitHub de Spotify |
 | Alternativas de AMT | no disponible | no aplica | Audio a MIDI | no disponible | no disponible |
 
@@ -82,5 +82,5 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/illicitish/gentsampler-models
+- Repositorio en Hugging Face: https://huggingface.co/illicitish/gentsampler-models
 - Proyecto original de Spotify: https://github.com/spotify/basic-pitch/tree/v0.4.0

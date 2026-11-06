@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors-i1-GGUF | ~8,95B | No disponible | GGUF (24 cuantizaciones imatrix) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| mradermacher/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors-GGUF | ~8,95B | No disponible | GGUF (cuantizaciones estáticas) | Apache 2.0 | HuggingFace |
-| SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors | ~8,95B | No disponible | safetensors | Apache 2.0 | HuggingFace (modelo base) |
+| mradermacher/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors-i1-GGUF | ~8,95B | No disponible | GGUF (24 cuantizaciones imatrix) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| mradermacher/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors-GGUF | ~8,95B | No disponible | GGUF (cuantizaciones estáticas) | Apache 2.0 | Hugging Face |
+| SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors | ~8,95B | No disponible | safetensors | Apache 2.0 | Hugging Face (modelo base) |
 
 No se dispone de información sobre modelos comparables de otros autores (mismo tamaño o misma tarea) en la documentación proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables de otros autores (mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors-GGUF
 - Modelo base: https://huggingface.co/SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors
 - Página de resumen del autor: https://hf.tst.eu/model#Qwen3.5-9B-Janus-Abliterated-V2-Safetensors-i1-GGUF

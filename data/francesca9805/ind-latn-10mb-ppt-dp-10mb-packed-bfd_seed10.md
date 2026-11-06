@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` | 39,09 M | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tuning SFT de un Goldfish de 10 MB |
-| `goldfish-models/ind_latn_10mb` | no disponible | no disponible | no disponible | HuggingFace | Modelo base; mismo autor, familia Goldfish de corpus minimos |
-| Otros modelos Goldfish (por idioma) | no disponible | no disponible | no disponible | HuggingFace | Misma receta de 10 MB por idioma; comparables en tamano y limitaciones |
-| `distilgpt2` | 82 M | 1024 | Apache 2.0 / MIT segun distribucion | HuggingFace | Alternativa pequena en ingles con licencia clara, el doble de parametros |
+| `francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` | 39,09 M | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tuning SFT de un Goldfish de 10 MB |
+| `goldfish-models/ind_latn_10mb` | no disponible | no disponible | no disponible | Hugging Face | Modelo base; mismo autor, familia Goldfish de corpus minimos |
+| Otros modelos Goldfish (por idioma) | no disponible | no disponible | no disponible | Hugging Face | Misma receta de 10 MB por idioma; comparables en tamano y limitaciones |
+| `distilgpt2` | 82 M | 1024 | Apache 2.0 / MIT segun distribucion | Hugging Face | Alternativa pequena en ingles con licencia clara, el doble de parametros |
 
 Las cifras de contexto y licencia de los modelos Goldfish no estan disponibles en la informacion proporcionada; se recomienda consultar cada model card antes de cualquier uso.
 
@@ -84,7 +84,7 @@ Las cifras de contexto y licencia de los modelos Goldfish no estan disponibles e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/ind_latn_10mb
 - Proyecto Goldfish (coleccion de modelos): https://huggingface.co/goldfish-models
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/3ah2ngud

@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sapraj/scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA (GRPO, TextCraft) | Qwen3.5-4B | 0,2 GB | no disponible | Público en HuggingFace |
-| Qwen/Qwen3.5-4B | Modelo base general | — | ~4B | no disponible en esta ficha | Público en HuggingFace |
-| Adaptadores LoRA típicos de PEFT | Adaptador de tarea | variable | 0,05-1 GB | variable | Patrón equivalente en HuggingFace |
+| sapraj/scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA (GRPO, TextCraft) | Qwen3.5-4B | 0,2 GB | no disponible | Público en Hugging Face |
+| Qwen/Qwen3.5-4B | Modelo base general | — | ~4B | no disponible en esta ficha | Público en Hugging Face |
+| Adaptadores LoRA típicos de PEFT | Adaptador de tarea | variable | 0,05-1 GB | variable | Patrón equivalente en Hugging Face |
 
 No existen alternativas directamente comparables publicadas (es un checkpoint académico de un curso específico), por lo que la comparación se limita al modelo base y al patrón general de adaptadores PEFT.
 
@@ -78,7 +78,7 @@ No existen alternativas directamente comparables publicadas (es un checkpoint ac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sapraj/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/sapraj/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de la librería PEFT: https://github.com/huggingface/peft
 - Repositorio de vLLM: https://github.com/vllm-project/vllm

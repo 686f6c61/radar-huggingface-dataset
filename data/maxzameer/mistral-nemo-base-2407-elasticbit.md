@@ -111,6 +111,6 @@ La diferencia clave frente a las alternativas no está en los parámetros ni en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxzameer/Mistral-Nemo-Base-2407-ElasticBit
+- Modelo en Hugging Face: https://huggingface.co/maxzameer/Mistral-Nemo-Base-2407-ElasticBit
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Base-2407
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda corresponden a un portal de compraventa de vehiculos (autoscout24.de) y no guardan ninguna relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

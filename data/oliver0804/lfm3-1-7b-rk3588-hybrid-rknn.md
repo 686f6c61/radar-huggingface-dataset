@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-RK3588-hybrid-rknn es un port del modelo LiquidAI/LFM3-1.7B al NPU del SoC Rockchip RK3588 y RK3588S, publicado por el usuario oliver0804 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una re-segmentación y conversión a fp16 de los pesos originales de LiquidAI para que puedan ejecutarse sobre la NPU de estas placas de bajo consumo. El objetivo es claro: llevar un modelo de lenguaje de 1.700 millones de parámetros a hardware edge sin GPU dedicada, con un consumo y una huella de memoria contenidos.
+LFM3-1.7B-RK3588-hybrid-rknn es un port del modelo LiquidAI/LFM3-1.7B al NPU del SoC Rockchip RK3588 y RK3588S, publicado por el usuario oliver0804 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una re-segmentación y conversión a fp16 de los pesos originales de LiquidAI para que puedan ejecutarse sobre la NPU de estas placas de bajo consumo. El objetivo es claro: llevar un modelo de lenguaje de 1.700 millones de parámetros a hardware edge sin GPU dedicada, con un consumo y una huella de memoria contenidos.
 
 La relevancia técnica del proyecto radica en que la herramienta oficial de conversión de Rockchip, rkllm 1.3.1, no puede convertir esta arquitectura: el soporte nativo de `lfm2` no contempla el sandwich norm, la attention gate ni el RoPE parcial de LFM3, y la vía de `custom_config` exige que todas las capas sean de atención, cuando la mitad de las capas de LFM3 son convoluciones cortas. El autor reconstruyó el grafo de cómputo a mano: las operaciones lineales corren en la NPU como segmentos RKNN en fp16 y el núcleo de atención (q·K, softmax, ·V y la puerta sigmoide) se ejecuta en fp32 sobre la CPU. Según la model card, este reparto no solo evita el error numérico de softmax y sigmoide en fp16 de la NPU (entre 14 y 20 veces el error ideal en fp16), sino que además acelera la generación un 60 % al eliminar el trasiego de la caché KV.
 
@@ -18,7 +18,7 @@ El resultado es un paquete de aproximadamente 4 GB con segmentos RKNN, tabla de 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | fp16 (segmentos RKNN y tabla de embeddings); no se documentan otras cuantizaciones |
 | Idiomas soportados | inglés (en) y chino (zh) |
-| Licencia | LFM Open License v1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | segmentos `.rknn` (fp16), `embed_f16.npy`, `meta2.json`, `tokenizer.json`, `generation_config.json` y runtime Python |
 
 ## Arquitectura y entrenamiento
@@ -74,8 +74,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Formato / hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-RK3588-hybrid-rknn (este) | 1,7B | no disponible | RKNN fp16 para NPU RK3588 | LFM Open License v1.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM3-1.7B (base) | 1,7B | no disponible | safetensors, PyTorch | LFM Open License v1.0 | HuggingFace |
+| LFM3-1.7B-RK3588-hybrid-rknn (este) | 1,7B | no disponible | RKNN fp16 para NPU RK3588 | LFM Open License v1.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM3-1.7B (base) | 1,7B | no disponible | safetensors, PyTorch | LFM Open License v1.0 | Hugging Face |
 | LFM2 (soporte nativo en rkllm 1.3.1) | no disponible | no disponible | conversión estándar rkllm | no disponible | herramienta oficial de Rockchip |
 
 La comparación con alternativas de la misma categoría (ports a NPU de modelos de ~1,7B) no está disponible en la información proporcionada.
@@ -94,7 +94,7 @@ La comparación con alternativas de la misma categoría (ports a NPU de modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oliver0804/LFM3-1.7B-RK3588-hybrid-rknn
+- Repositorio Hugging Face: https://huggingface.co/oliver0804/LFM3-1.7B-RK3588-hybrid-rknn
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Herramientas RKNN de Rockchip: https://github.com/airockchip/rknn-toolkit2

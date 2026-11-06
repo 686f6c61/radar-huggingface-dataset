@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Formato / libreria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Avdpro/FlashHead-Lite-MLX | 1,3B | Image-to-video, audio-driven | MLX, safetensors | Apache 2.0 | HuggingFace (este repo) |
-| Soul-AILab/SoulX-FlashHead-1_3B | 1,3B | Image-to-video, audio-driven, streaming | Pesos oficiales (PyTorch) | Apache 2.0 | HuggingFace |
+| Avdpro/FlashHead-Lite-MLX | 1,3B | Image-to-video, audio-driven | MLX, safetensors | Apache 2.0 | Hugging Face (este repo) |
+| Soul-AILab/SoulX-FlashHead-1_3B | 1,3B | Image-to-video, audio-driven, streaming | Pesos oficiales (PyTorch) | Apache 2.0 | Hugging Face |
 | SoulX-FlashHead (original, completo) | no disponible | Retrato parlante de longitud infinita y streaming | PyTorch | Apache 2.0 | GitHub Soul-AILab |
-| facebook/wav2vec2-base-960h | 95M | Reconocimiento de voz (componente de audio) | PyTorch | Apache 2.0 | HuggingFace |
+| facebook/wav2vec2-base-960h | 95M | Reconocimiento de voz (componente de audio) | PyTorch | Apache 2.0 | Hugging Face |
 
 La comparación directa más relevante es con los pesos oficiales de Soul-AILab: misma arquitectura base y licencia, pero distinto backend (MLX frente a PyTorch) y con la diferencia de que el original sí declara soporte de streaming en tiempo real. No se dispone de datos de rendimiento de esta conversión MLX para establecer una comparación cuantitativa.
 
@@ -84,7 +84,7 @@ La comparación directa más relevante es con los pesos oficiales de Soul-AILab:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avdpro/FlashHead-Lite-MLX
+- Modelo en Hugging Face: https://huggingface.co/Avdpro/FlashHead-Lite-MLX
 - Pesos oficiales SoulX-FlashHead-1_3B: https://huggingface.co/Soul-AILab/SoulX-FlashHead-1_3B
 - Repositorio oficial SoulX-FlashHead (Soul-AILab): https://github.com/Soul-AILab/SoulX-FlashHead
 - Repositorio espejo SoulX-FlashHead (RonaldXDZ): https://github.com/RonaldXDZ/SoulX-FlashHead-

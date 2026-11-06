@@ -4,7 +4,7 @@
 
 Este repositorio contiene un conjunto de puntuaciones de características SAE (Sparse Autoencoder) calculadas por paso temporal para el concepto `electronic_music` en el modelo ACE-Step. No se trata de un modelo de lenguaje ni de un generador de audio, sino de un artefacto auxiliar diseñado para el control de características (feature steering) en la generación musical. Los datos se almacenan en dos archivos Pickle (`tf6_scores.pkl` y `tf7_scores.pkl`) correspondientes a las capas `transformer_blocks.6.cross_attn` y `transformer_blocks.7.cross_attn` del modelo base. El recurso es consumido por el controlador `SAESteeringController` a través de la ruta `scores_cache_path`, lo que permite modificar la salida del modelo hacia el concepto de música electrónica de forma dirigida.
 
-El autor, lukasz-staniszewski, ha publicado una colección completa de recursos similares para otros conceptos (tempo, piano, etc.) bajo el nombre "ACE-Step Audio Steering Suite". Este repositorio concreto está etiquetado con `region:us` y no presenta descargas ni likes en el momento de la consulta. Su tamaño es de 0.0 GB, lo que sugiere que los archivos son de pequeño volumen. La licencia y los idiomas no están especificados en la ficha de HuggingFace.
+El autor, lukasz-staniszewski, ha publicado una colección completa de recursos similares para otros conceptos (tempo, piano, etc.) bajo el nombre "ACE-Step Audio Steering Suite". Este repositorio concreto está etiquetado con `region:us` y no presenta descargas ni likes en el momento de la consulta. Su tamaño es de 0.0 GB, lo que sugiere que los archivos son de pequeño volumen. La licencia y los idiomas no están especificados en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de modelos comparables en el mismo repositorio. Sin embargo, el au
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-electronic-music)
+- [Repositorio en Hugging Face](https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-electronic-music)
 - [Árbol de archivos del repositorio](https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-electronic-music/tree/main)
 - [Colección ACE-Step Audio Steering Suite](https://huggingface.co/collections/lukasz-staniszewski/ace-step-audio-steering-suite)
 - [Repositorio relacionado: ace-step-sae-scores-tempo](https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-tempo)

@@ -86,11 +86,11 @@ No se han encontrado otros adaptadores publicos para triaje medico en portugues 
 - Entra en bucle infinito si se activa el modo thinking; es obligatorio desactivarlo (`enable_thinking=False`).
 - Solo soporta portugues brasileno; no se ha evaluado en otras variantes del idioma.
 - La licencia del adaptador no esta especificada, lo que genera incertidumbre sobre su uso comercial; el modelo base Qwen3.5-0.8B se distribuye bajo Apache 2.0 segun fuentes web, pero no se confirma para este adaptador.
-- El repositorio de HuggingFace muestra un tamano de 0.0 GB, lo que sugiere que los pesos del adaptador podrian no estar completamente subidos o que la metadata es incorrecta; se recomienda verificar antes de su uso.
+- El repositorio de Hugging Face muestra un tamano de 0.0 GB, lo que sugiere que los pesos del adaptador podrian no estar completamente subidos o que la metadata es incorrecta; se recomienda verificar antes de su uso.
 
 ## Enlaces
 
-- [Adaptador en HuggingFace](https://huggingface.co/matheus-ciro-tcc/qwen35-0.8b-triagem-medica-piloto)
+- [Adaptador en Hugging Face](https://huggingface.co/matheus-ciro-tcc/qwen35-0.8b-triagem-medica-piloto)
 - [Modelo base Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Dataset AKCIT/MedPT](https://huggingface.co/datasets/AKCIT/MedPT)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

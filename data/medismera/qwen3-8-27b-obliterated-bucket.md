@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `medismera/Qwen3.8-27B-OBLITERATED-bucket` es una variante ablacionada (abliterated) del modelo Qwen3.8-27B de Alibaba. La técnica de ablación elimina los comportamientos de rechazo que el modelo base tiene integrados en los pesos, no solo en el prompt del sistema. Según la documentación disponible, el modelo original incorpora un entrenamiento de rechazo profundo codificado como direcciones en el espacio de activación, y el proceso de ablación elimina esas direcciones para que el modelo cumpla peticiones que el original rechazaría. El autor de esta variante es `medismera`, y el modelo está publicado en HuggingFace bajo la licencia Apache 2.0 (según los tags). Es un modelo multimodal (imagen-texto) con soporte para tool calling, razonamiento profundo y uso en agentes, orientado a tareas de ciberseguridad y generación de texto conversacional. No se dispone de información detallada sobre el tamaño exacto del contexto ni sobre los datos de entrenamiento.
+El modelo `medismera/Qwen3.8-27B-OBLITERATED-bucket` es una variante ablacionada (abliterated) del modelo Qwen3.8-27B de Alibaba. La técnica de ablación elimina los comportamientos de rechazo que el modelo base tiene integrados en los pesos, no solo en el prompt del sistema. Según la documentación disponible, el modelo original incorpora un entrenamiento de rechazo profundo codificado como direcciones en el espacio de activación, y el proceso de ablación elimina esas direcciones para que el modelo cumpla peticiones que el original rechazaría. El autor de esta variante es `medismera`, y el modelo está publicado en Hugging Face bajo la licencia Apache 2.0 (según los tags). Es un modelo multimodal (imagen-texto) con soporte para tool calling, razonamiento profundo y uso en agentes, orientado a tareas de ciberseguridad y generación de texto conversacional. No se dispone de información detallada sobre el tamaño exacto del contexto ni sobre los datos de entrenamiento.
 
 ## Especificaciones técnicas
 
@@ -20,11 +20,11 @@ Nota: no se incluye la fila de parámetros activos porque no hay evidencia de qu
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura de Qwen3.8-27B, un modelo de lenguaje multimodal de Alibaba que combina procesamiento de texto e imágenes. Según la información encontrada, el modelo original tiene un entrenamiento de seguridad profundo, con comportamientos de rechazo codificados geométricamente en el espacio de activación a lo largo de varias capas. La variante `OBLITERATED` aplica una técnica de ablación (abliteration) que elimina esas direcciones de activación, de modo que el modelo resultante no rechaza peticiones que el modelo base sí rechazaría. No se ha proporcionado información sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El modelo es compatible con las librerías transformers, vLLM, SGLang y llama.cpp, según los tags de HuggingFace.
+El modelo se basa en la arquitectura de Qwen3.8-27B, un modelo de lenguaje multimodal de Alibaba que combina procesamiento de texto e imágenes. Según la información encontrada, el modelo original tiene un entrenamiento de seguridad profundo, con comportamientos de rechazo codificados geométricamente en el espacio de activación a lo largo de varias capas. La variante `OBLITERATED` aplica una técnica de ablación (abliteration) que elimina esas direcciones de activación, de modo que el modelo resultante no rechaza peticiones que el modelo base sí rechazaría. No se ha proporcionado información sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El modelo es compatible con las librerías transformers, vLLM, SGLang y llama.cpp, según los tags de Hugging Face.
 
 ## Capacidades
 
-Según los tags de HuggingFace y la documentación disponible, el modelo presenta las siguientes capacidades:
+Según los tags de Hugging Face y la documentación disponible, el modelo presenta las siguientes capacidades:
 
 - Comprensión y generación de texto e imágenes (multimodal, image-text-to-text).
 - Soporte de tool calling y function calling.
@@ -76,7 +76,7 @@ No se conocen otros modelos comparables de la misma categoría.
 - Riesgo de alucinación inherente a los modelos de lenguaje grandes, agravado por la falta de información sobre el proceso de entrenamiento.
 - No se ha proporcionado información sobre el dataset de entrenamiento, la composición de los datos ni las técnicas de alineación, por lo que no se pueden evaluar sesgos específicos.
 - Los idiomas soportados pueden ser limitados; la información completa sobre el multilingüismo no está disponible.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere una validación mínima por parte de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere una validación mínima por parte de la comunidad.
 - La licencia Apache 2.0 permite uso comercial, pero el uso del modelo debe cumplir con las leyes aplicables, especialmente en tareas de ciberseguridad ofensiva.
 
 ## Enlaces

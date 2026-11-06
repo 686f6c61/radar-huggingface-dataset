@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para una comparativa directa con otros m
 
 ## Enlaces
 
-- [HuggingFace - mradermacher/BlenderCartel-MS-llama33-70B-i1-GGUF](https://huggingface.co/mradermacher/BlenderCartel-MS-llama33-70B-i1-GGUF)
+- [Hugging Face - mradermacher/BlenderCartel-MS-llama33-70B-i1-GGUF](https://huggingface.co/mradermacher/BlenderCartel-MS-llama33-70B-i1-GGUF)
 - [Modelo base - KaraKaraWarehouse/BlenderCartel-MS-llama33-70B](https://huggingface.co/KaraKaraWarehouse/BlenderCartel-MS-llama33-70B)
 - [Pagina de overview y descargas](https://hf.tst.eu/model#BlenderCartel-MS-llama33-70B-i1-GGUF)

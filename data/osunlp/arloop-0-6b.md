@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento que permitan comparar calidad entre estos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osunlp/ARLoop-0.6B
+- Modelo en Hugging Face: https://huggingface.co/osunlp/ARLoop-0.6B
 - Modelo hermano (referencia de implementación): https://huggingface.co/osunlp/ARLoop-1.3B
 - Código de entrenamiento: https://github.com/ykyaol7/ARLoop
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

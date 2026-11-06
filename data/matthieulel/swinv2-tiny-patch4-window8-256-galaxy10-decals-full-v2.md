@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swinv2-tiny-patch4-window8-256-galaxy10-decals-full-v2` es un checkpoint de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel`. Parte del backbone `microsoft/swinv2-tiny-patch4-window8-256` y se ha ajustado por *full fine-tuning* (todos los parámetros actualizados) sobre el conjunto Galaxy10 DECaLS, que agrupa 17.736 imágenes etiquetadas en 10 clases morfológicas. El modelo resuelve un problema concreto de astronomía observacional: la clasificación automática de la forma de galaxias a partir de imágenes del sondeo DECaLS.
+`swinv2-tiny-patch4-window8-256-galaxy10-decals-full-v2` es un checkpoint de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel`. Parte del backbone `microsoft/swinv2-tiny-patch4-window8-256` y se ha ajustado por *full fine-tuning* (todos los parámetros actualizados) sobre el conjunto Galaxy10 DECaLS, que agrupa 17.736 imágenes etiquetadas en 10 clases morfológicas. El modelo resuelve un problema concreto de astronomía observacional: la clasificación automática de la forma de galaxias a partir de imágenes del sondeo DECaLS.
 
 Con 27.585.844 parámetros (aproximadamente 27,6 millones) y un peso de repositorio de 0,1 GB, es un modelo compacto orientado a inferencia en entornos con recursos limitados. Forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026), lo que lo convierte en una pieza de un benchmark reproducible más que en un modelo aislado.
 
@@ -34,7 +34,7 @@ El conjunto Galaxy10 DECaLS contiene 17.736 imágenes. El split público de test
 - Clasificación de imágenes en 10 clases de morfología galáctica (el modelo devuelve logits por clase, no texto).
 - Extracción de características visuales de dominio astronómico gracias al ajuste completo del backbone.
 - Inferencia por imagen individual o en lote mediante `AutoModelForImageClassification` de transformers.
-- Compatible con el pipeline `image-classification` de HuggingFace y con endpoints de inferencia.
+- Compatible con el pipeline `image-classification` de Hugging Face y con endpoints de inferencia.
 - No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un clasificador discriminativo puro.
 - No tiene capacidades multilingües ni de generación de texto.
 - No dispone de modo *thinking*, visión generativa, audio ni ninguna otra modalidad más allá de la clasificación de imágenes.
@@ -66,7 +66,7 @@ Evolución seleccionada del entrenamiento (semilla 42): la accuracy de test pasa
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 para lotes pequeños (27,6 M de parámetros, unos 110 MB de pesos); en fp16, aproximadamente la mitad.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el entrenamiento original se hizo en una sola GPU, lo que sugiere que una RTX 3090, RTX 4090, A100 o H100 son sobradas para inferencia y suficientes para reentrenamiento.
 - Cabe en GPU de consumo: sí, en cualquier GPU moderna (GTX 1060 6 GB, RTX 2060, RTX 3060, RTX 4060 y superiores), e incluso en CPU para inferencia por lotes pequeños.
-- Opciones de despliegue: `transformers` con PyTorch (vía `AutoModelForImageClassification`), pipeline `image-classification` de HuggingFace, endpoints de inferencia compatibles; también es exportable a ONNX u otras runtimes, aunque el autor no publica artefactos de ese tipo.
+- Opciones de despliegue: `transformers` con PyTorch (vía `AutoModelForImageClassification`), pipeline `image-classification` de Hugging Face, endpoints de inferencia compatibles; también es exportable a ONNX u otras runtimes, aunque el autor no publica artefactos de ese tipo.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (swinv2-tiny galaxy10) | 27,6 M | imagen 256x256 px | apache-2.0 | HuggingFace |
+| Este checkpoint (swinv2-tiny galaxy10) | 27,6 M | imagen 256x256 px | apache-2.0 | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-tiny-patch4-window8-256-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-tiny-patch4-window8-256-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-tiny-patch4-window8-256
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset con métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

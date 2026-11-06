@@ -6,7 +6,7 @@
 
 El problema que resuelve es la distribución offline de un tokenizador japonés en un entorno Deno con `nodeModulesDir: manual` y `--cached-only`. En lugar de requerir una instalación completa desde el registro de npm en tiempo de ejecución, el paquete empaqueta el código y el diccionario en un zip verificable mediante SHA256. Es relevante para desarrolladores que necesiten segmentación morfológica japonesa en aplicaciones de escritorio o herramientas sin conectividad.
 
-El repositorio tiene un tamaño declarado de 0.0 GB, sin descargas ni likes en el momento de la consulta, y no expone pipeline de HuggingFace. La licencia del conjunto es Apache-2.0, aunque el diccionario IPADIC se rige por los términos NAIST/ICOT que permiten la redistribución conservando los avisos de copyright.
+El repositorio tiene un tamaño declarado de 0.0 GB, sin descargas ni likes en el momento de la consulta, y no expone pipeline de Hugging Face. La licencia del conjunto es Apache-2.0, aunque el diccionario IPADIC se rige por los términos NAIST/ICOT que permiten la redistribución conservando los avisos de copyright.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparativa se limita a herramientas de la misma categoría (análisis morfol
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aaatmy/kuromoji-ipadic-pack
+- Hugging Face: https://huggingface.co/aaatmy/kuromoji-ipadic-pack
 - Proyecto Karaoke Battle: https://github.com/Hikari-Tsai/karaoke-battle
 - kuromoji.js: https://github.com/takuyaa/kuromoji.js
 - Deno: https://deno.com

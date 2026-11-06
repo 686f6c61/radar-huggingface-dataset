@@ -88,9 +88,9 @@ Comparado con el GGUF nativo equivalente en la release SM120 r9, el autor report
 
 | Modelo | Parámetros | Contexto | Cuantización | Calidad (suite interna) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| L0xRE-27b-Low | 27B según la model card (4.784.193.024 en el campo safetensors del repo) | 262.144 tokens | GGUF ≈2-3 bpw + drafters Q4_K_M / Q2_K | 124-126 / 150 con thinking | qwen-research-terms-derivative | HuggingFace, requiere runtime L0xRE BeeLLama |
+| L0xRE-27b-Low | 27B según la model card (4.784.193.024 en el campo safetensors del repo) | 262.144 tokens | GGUF ≈2-3 bpw + drafters Q4_K_M / Q2_K | 124-126 / 150 con thinking | qwen-research-terms-derivative | Hugging Face, requiere runtime L0xRE BeeLLama |
 | Baseline con cuantización nativa de Qwen3.8-27B | no disponible | no disponible | cuantización nativa GGUF | 117 / 150 con thinking desactivado | términos de Qwen | disponible como referencia del propio autor |
-| L0xRE-27b-Low-MTP | mismo modelo base más bloque nextn (+830 MB) | 262.144 tokens | GGUF ≈2-3 bpw con cabeza MTP integrada | no disponible | qwen-research-terms-derivative | HuggingFace |
+| L0xRE-27b-Low-MTP | mismo modelo base más bloque nextn (+830 MB) | 262.144 tokens | GGUF ≈2-3 bpw con cabeza MTP integrada | no disponible | qwen-research-terms-derivative | Hugging Face |
 | Hemmingway-1 | 27B | no disponible | no disponible | no disponible | Apache-2.0 | citado en resultados de búsqueda, sin datos comparables |
 | Otros modelos de 27B de pesos abiertos | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -113,7 +113,7 @@ La única comparación con datos numéricos es interna al propio autor: frente a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YourHighnessLA/L0xRE-27b-Low
+- Modelo en Hugging Face: https://huggingface.co/YourHighnessLA/L0xRE-27b-Low
 - Variante con cabeza MTP: https://huggingface.co/YourHighnessLA/L0xRE-27b-Low-MTP
 - Perfil del autor: https://huggingface.co/YourHighnessLA
 - Modelos del autor: https://huggingface.co/YourHighnessLA/models

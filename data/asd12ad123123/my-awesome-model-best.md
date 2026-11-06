@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel (Best Checkpoint) es un modelo publicado en HuggingFace por el usuario asd12ad123123 bajo el identificador `asd12ad123123/my-awesome-model-best`. Segun los metadatos de la model card, se trata del checkpoint correspondiente al paso 1000 de un entrenamiento de mayor duracion, seleccionado por haber obtenido el mayor `eval_accuracy` en una tarea de clasificacion de texto. El pipeline declarado en el Hub es `feature-extraction` y la etiqueta de arquitectura es `bert`, lo que apunta a un encoder tipo transformer bidireccional orientado a representaciones de frases mas que a generacion autoregresiva.
+MyAwesomeModel (Best Checkpoint) es un modelo publicado en Hugging Face por el usuario asd12ad123123 bajo el identificador `asd12ad123123/my-awesome-model-best`. Segun los metadatos de la model card, se trata del checkpoint correspondiente al paso 1000 de un entrenamiento de mayor duracion, seleccionado por haber obtenido el mayor `eval_accuracy` en una tarea de clasificacion de texto. El pipeline declarado en el Hub es `feature-extraction` y la etiqueta de arquitectura es `bert`, lo que apunta a un encoder tipo transformer bidireccional orientado a representaciones de frases mas que a generacion autoregresiva.
 
 La relevancia del modelo es, a dia de hoy, limitada y dificil de evaluar. El repositorio ocupa 0.0 GB, no registra descargas ni likes, no declara idiomas soportados y no incluye informacion sobre el numero de parametros, la longitud de contexto ni los datos de entrenamiento. Los unicos datos cuantitativos disponibles son las puntuaciones de benchmark autodeclaradas en la model card, con una puntuacion global ponderada de 0.696 y un maximo de 0.819 en razonamiento logico.
 
@@ -84,7 +84,7 @@ No hay comparacion con modelos de referencia en la informacion disponible, ni re
 - Estimacion condicional: si el modelo fuese un encoder tipo BERT en rango de 110M a 340M de parametros, la inferencia en FP32 ocuparia aproximadamente entre 0.5 GB y 1.4 GB de VRAM, y en FP16 entre 0.25 GB y 0.7 GB, cantidades que caben en cualquier GPU de consumo con 6 GB o mas. Esta estimacion es una extrapolacion por arquitectura, no un dato declarado por el autor.
 - GPU recomendadas: no disponibles. Para un encoder de ese rango, cualquier GPU consumer reciente (RTX 3060, 4070, 4090) seria suficiente; A100 o H100 solo tendrian sentido para fine-tuning a gran escala o despliegue con alto throughput por lotes.
 - Despliegue en GPU de consumo: probablemente si, bajo la estimacion anterior, pero sin confirmacion por parte del autor.
-- Opciones de despliegue: al ser un modelo de `transformers` con arquitectura tipo BERT, las vias habituales serian `transformers` con PyTorch, TorchServe, HuggingFace Inference Endpoints (el tag `endpoints_compatible` esta presente), ONNX Runtime y, en caso de publicarse pesos en formato adecuado, llama.cpp u Ollama no serian aplicables a un encoder de clasificacion.
+- Opciones de despliegue: al ser un modelo de `transformers` con arquitectura tipo BERT, las vias habituales serian `transformers` con PyTorch, TorchServe, Hugging Face Inference Endpoints (el tag `endpoints_compatible` esta presente), ONNX Runtime y, en caso de publicarse pesos en formato adecuado, llama.cpp u Ollama no serian aplicables a un encoder de clasificacion.
 - Latencia y throughput estimados: no disponibles.
 - Nota importante: con un repositorio de 0.0 GB, es posible que los pesos no esten publicados. Antes de planificar cualquier despliegue debe verificarse que los ficheros existen y son descargables.
 
@@ -106,6 +106,6 @@ No disponible. La model card no identifica la familia, el tamano ni la configura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asd12ad123123/my-awesome-model-best
+- Modelo en Hugging Face: https://huggingface.co/asd12ad123123/my-awesome-model-best
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las URLs devueltas por la busqueda corresponden a materiales didacticos de Halloween en frances e ingles (pedagogie.ac-guadeloupe.fr, english.lingolia.com, readstories-learnenglish.com, animyjob.com, alencreviolette.fr) y no guardan relacion alguna con el modelo.
 - Paper, repositorio de codigo, blog o demo: no disponibles.

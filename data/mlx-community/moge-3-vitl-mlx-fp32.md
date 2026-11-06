@@ -77,7 +77,7 @@ La comparativa se basa en informacion publica general. No se dispone de benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace del port MLX: https://huggingface.co/mlx-community/moge-3-vitl-mlx-fp32
+- Repositorio Hugging Face del port MLX: https://huggingface.co/mlx-community/moge-3-vitl-mlx-fp32
 - Repositorio oficial de MoGe (Microsoft): https://github.com/microsoft/MoGe
 - Sitio web de MLX Community: https://mlxcommunity.com/
 - Framework MLX: https://mlx-framework.org/

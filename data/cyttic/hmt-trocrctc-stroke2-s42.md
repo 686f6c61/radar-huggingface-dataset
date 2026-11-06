@@ -69,9 +69,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | CER (HHD Option-B) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrctc-stroke2-s42 | 87,3 M | no disponible | 0,1103 | MIT | HuggingFace |
-| TrOCR base (Microsoft) | ~334 M | no disponible | no disponible | MIT | HuggingFace |
-| Otros modelos del estudio `htr-metrics-transfer` | no disponible | no disponible | no disponible | MIT (presumible) | HuggingFace (cyttic) |
+| cyttic/hmt-trocrctc-stroke2-s42 | 87,3 M | no disponible | 0,1103 | MIT | Hugging Face |
+| TrOCR base (Microsoft) | ~334 M | no disponible | no disponible | MIT | Hugging Face |
+| Otros modelos del estudio `htr-metrics-transfer` | no disponible | no disponible | no disponible | MIT (presumible) | Hugging Face (cyttic) |
 
 No se dispone de datos comparativos publicados en la información proporcionada para establecer una comparación cuantitativa rigurosa con alternativas de la misma categoría.
 
@@ -89,7 +89,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-stroke2-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-stroke2-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Repositorio del autor: https://huggingface.co/cyttic
 - Resultados del estudio: `results.json` (referenciado en la model card, no se proporciona URL directa)

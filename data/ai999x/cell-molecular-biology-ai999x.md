@@ -6,7 +6,7 @@
 
 El paquete ocupa un espacio muy concreto dentro del ecosistema educativo y de automatización científica: cálculo de potenciales de Nernst, temperaturas de fusión por vecinos más próximos, cuantificación relativa por delta-delta Ct en qPCR, ecuación de Hill, recetas de tampones y cinética enzimática, entre otros procedimientos. Funciona íntegramente en CPU, sin GPU, sin red y sin clave de API, lo que lo hace apto para entornos air-gapped, portátiles modestos y despliegues en el borde.
 
-Es relevante ahora porque cubre un nicho que los LLM generales atacan con resultados probabilísticos y verificabilidad limitada: la resolución reproducible de ejercicios cuantitativos de laboratorio. Su conjunto de referencia son 619 respuestas documentadas que, según el autor, se reproducen de forma idéntica en Windows y Linux con Python 3.10 a 3.14. El repositorio de HuggingFace no contiene pesos en el sentido tradicional (0,0 GB de tamaño, `inference: false`), sino la distribución instalable del motor.
+Es relevante ahora porque cubre un nicho que los LLM generales atacan con resultados probabilísticos y verificabilidad limitada: la resolución reproducible de ejercicios cuantitativos de laboratorio. Su conjunto de referencia son 619 respuestas documentadas que, según el autor, se reproducen de forma idéntica en Windows y Linux con Python 3.10 a 3.14. El repositorio de Hugging Face no contiene pesos en el sentido tradicional (0,0 GB de tamaño, `inference: false`), sino la distribución instalable del motor.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - CPU: cualquier CPU x86-64 o ARM capaz de ejecutar Python 3.10-3.14; el coste por consulta es el de un cálculo simbólico con sympy/mpmath, de milisegundos a pocos segundos según la capacidad.
 - GPU recomendadas: ninguna; no aplica.
 - Cabe en cualquier equipo consumer, incluidos portátiles de gama baja, Raspberry Pi y entornos de contenedor sin acelerador.
-- Opciones de despliegue: instalación vía `pip` (PyPI o wheel del repositorio de HuggingFace), uso como biblioteca Python, aplicación de escritorio y línea de comandos del autor, y ejecución en navegador a través de la web del proyecto. No aplican vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de pesos transformer.
+- Opciones de despliegue: instalación vía `pip` (PyPI o wheel del repositorio de Hugging Face), uso como biblioteca Python, aplicación de escritorio y línea de comandos del autor, y ejecución en navegador a través de la web del proyecto. No aplican vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de pesos transformer.
 - Latencia y throughput: no disponibles de forma oficial; por la naturaleza del cómputo simbólico, la latencia es baja y determinista, sin variación entre ejecuciones.
 
 ## Comparativa con modelos similares
@@ -94,8 +94,8 @@ La diferencia principal frente a un LLM general es la garantía de verificabilid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/cell-molecular-biology-ai999x
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Modelo en Hugging Face: https://huggingface.co/AI999X/cell-molecular-biology-ai999x
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Paquete en PyPI: https://pypi.org/project/cell-molecular-biology-ai999x/
 - Aplicación de escritorio y línea de comandos: https://www.ai999x.com/desktop-cli/
 - Ejecución en navegador: https://www.ai999x.com/models/cell-molecular-biology-ai999x/#try

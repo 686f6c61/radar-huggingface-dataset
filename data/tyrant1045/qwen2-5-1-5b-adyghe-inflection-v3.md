@@ -68,9 +68,9 @@ Conjunto retenido `heldout.jsonl`: 93,8% (839/921). El autor indica que este run
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-1.5b-adyghe-inflection-v3 | 1,5B (base) + adaptador | no disponible | Flexion adyghe | cc-by-sa-3.0 | HuggingFace |
-| qwen2.5-1.5b-adyghe-inflection-v2 | 1,5B (base) + adaptador | no disponible | Flexion adyghe | no disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct (base) | 1,5B | no disponible en esta ficha | Proposito general | no disponible en esta ficha | HuggingFace |
+| qwen2.5-1.5b-adyghe-inflection-v3 | 1,5B (base) + adaptador | no disponible | Flexion adyghe | cc-by-sa-3.0 | Hugging Face |
+| qwen2.5-1.5b-adyghe-inflection-v2 | 1,5B (base) + adaptador | no disponible | Flexion adyghe | no disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct (base) | 1,5B | no disponible en esta ficha | Proposito general | no disponible en esta ficha | Hugging Face |
 
 No se dispone de otros adaptadores morfologicos comparables en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de otros adaptadores morfologicos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tyrant1045/qwen2.5-1.5b-adyghe-inflection-v3
+- Modelo en Hugging Face: https://huggingface.co/tyrant1045/qwen2.5-1.5b-adyghe-inflection-v3
 - Dataset: https://huggingface.co/datasets/tyrant1045/adyghe-inflection-unimorph
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Generador de datos: `code/gen_inf_v3.py` en el repositorio del dataset

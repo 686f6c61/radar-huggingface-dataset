@@ -98,6 +98,6 @@ No se dispone de datos de rendimiento de los motores alternativos en el mismo ha
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abuz8studios/FAIE2-FlashNext
+- Repositorio en Hugging Face: https://huggingface.co/abuz8studios/FAIE2-FlashNext
 - Repositorio hermano `faie2` (motor para Qwen3.8-27B, servidor y herramientas): referenciado como `../faie2` en la model card, sin URL directa en la informacion disponible.
 - Documentacion interna citada: `VERDICT.md`, `DESIGN.md` (secciones 9, 9a-9c), `verification/`, `flashnext/bitcmp_fn.py`, `flashnext/ref_fn.py`, `gate_fn_ref.py`, `test_fn_quants.py`, `engine/faie2fn.cu`, `engine/fn_tables.cuh`, `engine/build_fn.ps1`.

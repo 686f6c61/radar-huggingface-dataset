@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Raywithyou/gamescale-s1b-9b-k10-step721` es un checkpoint de 9.409.813.744 parámetros publicado en HuggingFace por el usuario Raywithyou el 17 de octubre de 2026. El tag `qwen3_5` indica que los pesos derivan de la familia Qwen3.5, y el nombre del repositorio sugiere un punto de guardado intermedio de un proceso de entrenamiento (el sufijo `step721` apunta al paso 721), con los identificadores `s1b` y `k10` cuyo significado no está documentado. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados, y acumula 11 descargas y 0 likes desde su publicación.
+`Raywithyou/gamescale-s1b-9b-k10-step721` es un checkpoint de 9.409.813.744 parámetros publicado en Hugging Face por el usuario Raywithyou el 17 de octubre de 2026. El tag `qwen3_5` indica que los pesos derivan de la familia Qwen3.5, y el nombre del repositorio sugiere un punto de guardado intermedio de un proceso de entrenamiento (el sufijo `step721` apunta al paso 721), con los identificadores `s1b` y `k10` cuyo significado no está documentado. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados, y acumula 11 descargas y 0 likes desde su publicación.
 
 La búsqueda web no devuelve información directa sobre este checkpoint, pero sí asocia al mismo autor con la línea `MemoGUI-World-Qwen3.5-9B` (variantes `Stage3-Pilot10` y `SFT-Stage2`), también basadas en Qwen3.5-9B y etiquetadas como `Image-Text-to-Text`. Esto sugiere un contexto de experimentación con modelos de 9B sobre tareas de interfaz gráfica, aunque no es posible confirmar que `gamescale-s1b-9b-k10-step721` pertenezca a esa misma familia ni que tenga capacidades multimodales.
 
@@ -93,6 +93,6 @@ La comparacion es estructural: el checkpoint analizado no permite comparar calid
 - Repositorio del modelo: https://huggingface.co/Raywithyou/gamescale-s1b-9b-k10-step721
 - Busqueda de modelos del autor con la etiqueta `memogui-world`: https://huggingface.co/models?other=memogui-world
 - Arbol de modelos derivados de `MemoGUI-World-Qwen3.5-9B-SFT-Stage2`: https://huggingface.co/models?other=base_model:finetune:Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2
-- Perfil del autor en HuggingFace: https://huggingface.co/Raywithyou
+- Perfil del autor en Hugging Face: https://huggingface.co/Raywithyou
 
 Nota: el resto de resultados de la busqueda web (YouTube, Google Trends, Google Gemini) no aportan informacion sobre este modelo y se han descartado.

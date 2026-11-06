@@ -76,7 +76,7 @@ No se dispone de información comparativa con otras políticas de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RESPO-HSP/R1_passage_merged_GR00T17
+- Modelo en Hugging Face: https://huggingface.co/RESPO-HSP/R1_passage_merged_GR00T17
 - Dataset de entrenamiento: https://huggingface.co/datasets/RESPO-HSP/R1_passage_merged
 - Repositorio de NVIDIA para GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - LeRobot: https://github.com/huggingface/lerobot

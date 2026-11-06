@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidwdw/fa-ckpt-h20-limx-6e675cfe7541c737` es un repositorio alojado en HuggingFace por el usuario `davidwdw` que, segun su propia model card, contiene un "archivo versionado de flota" (versioned fleet archive). No se trata de un modelo publicado para inferencia, sino de un snapshot de checkpoint de entrenamiento: el autor indica explicitamente que el paquete incluye "params+train_state+assets" y advierte de que debe usarse la revision exacta registrada y verificarse el fichero SHA256SUMS. El repositorio ocupa 9,3 GB y fue creado y actualizado el 28 de septiembre de 2026.
+`davidwdw/fa-ckpt-h20-limx-6e675cfe7541c737` es un repositorio alojado en Hugging Face por el usuario `davidwdw` que, segun su propia model card, contiene un "archivo versionado de flota" (versioned fleet archive). No se trata de un modelo publicado para inferencia, sino de un snapshot de checkpoint de entrenamiento: el autor indica explicitamente que el paquete incluye "params+train_state+assets" y advierte de que debe usarse la revision exacta registrada y verificarse el fichero SHA256SUMS. El repositorio ocupa 9,3 GB y fue creado y actualizado el 28 de septiembre de 2026.
 
 La model card identifica la receta canonica como `2026-09-19_pi05_libero_alphabet_soup_lora`. Esa cadena sugiere, sin que la ficha lo confirme, un contexto de ajuste fino con LoRA sobre un modelo de la familia pi0.5 y datos del benchmark de robotica LIBERO; se trata de una inferencia a partir del nombre de la receta y no de un dato verificado. El repositorio no declara pipeline, licencia, idiomas soportados, arquitectura ni numero de parametros.
 
@@ -79,7 +79,7 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Repositorio publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Repositorio publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -96,6 +96,6 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-6e675cfe7541c737
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-6e675cfe7541c737
 
-Nota: la busqueda web asociada no ha devuelto ninguna fuente tecnica relacionada con este repositorio. Los resultados obtenidos (paginas de Facebook, ChatGPT y GPT-4, y el listado generico de modelos del usuario `ckpt` en HuggingFace) no guardan relacion con el artefacto descrito y no se incluyen como referencias. No se dispone de enlace a paper, blog, repositorio de codigo ni demo.
+Nota: la busqueda web asociada no ha devuelto ninguna fuente tecnica relacionada con este repositorio. Los resultados obtenidos (paginas de Facebook, ChatGPT y GPT-4, y el listado generico de modelos del usuario `ckpt` en Hugging Face) no guardan relacion con el artefacto descrito y no se incluyen como referencias. No se dispone de enlace a paper, blog, repositorio de codigo ni demo.

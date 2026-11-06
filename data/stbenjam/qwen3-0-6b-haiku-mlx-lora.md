@@ -101,7 +101,7 @@ Frente a modelos generalistas del mismo orden de parametros, la diferencia no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stbenjam/qwen3-0.6b-haiku-mlx-lora
+- Modelo en Hugging Face: https://huggingface.co/stbenjam/qwen3-0.6b-haiku-mlx-lora
 - Version GGUF para Ollama: https://huggingface.co/stbenjam/qwen3-0.6b-haiku-gguf
 - Repositorio con scripts de entrenamiento, evaluacion y chat: https://github.com/stbenjam/posttrain-demo
 - Resultados completos y limitaciones: https://github.com/stbenjam/posttrain-demo/blob/main/haiku/RESULTS.md

@@ -69,4 +69,4 @@ No hay suficiente información pública sobre este modelo para realizar una comp
 
 ## Enlaces
 
-- [HuggingFace - Adzpro/Financial_v6](https://huggingface.co/Adzpro/Financial_v6)
+- [Hugging Face - Adzpro/Financial_v6](https://huggingface.co/Adzpro/Financial_v6)

@@ -82,7 +82,7 @@ La comparacion mas directa es con las otras cuantizaciones del mismo modelo publ
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-mxfp4
+- Repositorio de Hugging Face: https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-mxfp4
 - Modelo base: https://huggingface.co/swiss-ai/Apertus-v1.5-8B
 - Sitio oficial de Apertus AI: https://apertus-ai.org/
 - Articulo de anuncio de Apertus 1.5: https://apertus-ai.org/articles/2026-07-apertus-1-5/

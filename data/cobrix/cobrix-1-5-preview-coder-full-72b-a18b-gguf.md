@@ -71,7 +71,7 @@ La informacion proporcionada no incluye datos de rendimiento de modelos comparab
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CobrIX-1.5-preview-Coder-Full-72B-A18B | ~72B (71.769.534.976) | ~18B | no disponible | MIT | GGUF (Q5_K_M, Q4_K_M) en HuggingFace |
+| CobrIX-1.5-preview-Coder-Full-72B-A18B | ~72B (71.769.534.976) | ~18B | no disponible | MIT | GGUF (Q5_K_M, Q4_K_M) en Hugging Face |
 | Alternativas MoE de codigo comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas densas de ~70B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se han identificado en la informacion disponible modelos comparables concreto
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B
 - Contacto de feedback indicado en la model card: suporte.cobrix@gmail.com
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

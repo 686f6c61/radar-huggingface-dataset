@@ -6,7 +6,7 @@ Cohere-AR/cohere-transcribe-ar-sft-v9-full-s80k es un modelo de reconocimiento a
 
 Con aproximadamente 2.066 millones de parametros (2,07 B) y un tamano de repositorio de 4,1 GB en formato safetensors, el modelo se distribuye a traves de la libreria transformers y esta etiquetado como compatible con endpoints. Su relevancia actual radica en la combinacion de dos factores poco frecuentes: por un lado, el enfoque explicito en code-switching arabe-ingles y en dominio telefonico; por otro lado, el hecho de que es un ajuste fino sobre una base reciente (julio de 2026) de CohereLabs, lo que sugiere una linea de trabajo activa sobre ASR multilingue.
 
-El acceso al modelo esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos. No se dispone de informacion publica sobre licencia, datos de entrenamiento detallados ni resultados de benchmarks en la informacion proporcionada.
+El acceso al modelo esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos. No se dispone de informacion publica sobre licencia, datos de entrenamiento detallados ni resultados de benchmarks en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ La comparacion con Whisper large-v3 se incluye como referencia de categoria por 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace; esto puede limitar la reproducibilidad y el despliegue automatizado.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face; esto puede limitar la reproducibilidad y el despliegue automatizado.
 - Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar las condiciones antes de integrarlo en produccion.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de calidad (WER, CER) frente a alternativas, ni en arabe estandar ni en code-switching.
 - Riesgo de alucinacion en ASR: como todo modelo generativo de transcripcion, puede producir texto plausible no presente en el audio, especialmente en segmentos ruidosos o con cambio de codigo.
@@ -92,7 +92,7 @@ La comparacion con Whisper large-v3 se incluye como referencia de categoria por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full-s80k
+- Modelo en Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full-s80k
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
 - Organizacion Cohere-AR: https://huggingface.co/Cohere-AR
 - Organizacion CohereLabs: https://huggingface.co/CohereLabs

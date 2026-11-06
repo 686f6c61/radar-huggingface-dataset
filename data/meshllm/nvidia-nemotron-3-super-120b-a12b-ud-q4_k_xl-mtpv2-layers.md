@@ -76,7 +76,7 @@ El Nemotron 3 Super destaca por su contexto de 1M y su arquitectura hibrida Mamb
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-MTPv2-layers
+- Repositorio Hugging Face del paquete: https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-MTPv2-layers
 - Modelo base GGUF: https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-MTPv2-GGUF
 - Pagina de NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard
 - Investigacion de NVIDIA sobre Nemotron 3 Super: https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/

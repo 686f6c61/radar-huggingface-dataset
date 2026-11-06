@@ -6,7 +6,7 @@
 
 El interés técnico del artefacto está en su bitácora de entrenamiento: el autor documenta una escalada de versiones (v1 a v15.50) con cambios controlados de hiperparámetros (learning rate, número de pasos) y, a partir de v15.1, una ingeniería de recompensas por partes (postura, brazos, pies, equilibrio, rodillas, centro de masa, etc.) con tablas de resultados por versión. La versión de esta ficha reporta una puntuación de entorno de 9264,5 puntos en 1000 pasos con un avance de 56,76 metros, según la model card.
 
-Es relevante como ejemplo reproducible de *reward shaping* en control continuo y como material didáctico de PPO, no como componente listo para producción. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño del repo es de 0,0 GB (probablemente los pesos no están subidos o son de tamaño despreciable en la métrica de HuggingFace).
+Es relevante como ejemplo reproducible de *reward shaping* en control continuo y como material didáctico de PPO, no como componente listo para producción. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño del repo es de 0,0 GB (probablemente los pesos no están subidos o son de tamaño despreciable en la métrica de Hugging Face).
 
 ## Especificaciones técnicas
 
@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables publicados con la misma 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v15.50-humanoid-ppo | no disponible | no aplica | 9264,5 en Humanoid-v5 (según autor) | no disponible | HuggingFace, 0 descargas |
+| connectailab-rl-lucasbrain-v15.50-humanoid-ppo | no disponible | no aplica | 9264,5 en Humanoid-v5 (según autor) | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables publicados con la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.50-humanoid-ppo
+- Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.50-humanoid-ppo
 - Repositorio de `added_scores.py` (mismo repo): https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.50-humanoid-ppo/blob/main/added_scores.py
 - Entorno Gymnasium Humanoid-v5 (referencia del entorno, no enlazado en la model card): no disponible en la información proporcionada
 - Paper de PPO (referencia del algoritmo, no enlazado en la model card): no disponible en la información proporcionada

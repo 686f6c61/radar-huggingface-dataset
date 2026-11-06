@@ -89,6 +89,6 @@ Existen otros repositorios con la misma tarea y configuración (por ejemplo, `sh
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/SinisterLlama/anlp-a1-c4](https://huggingface.co/SinisterLlama/anlp-a1-c4)
+- Hugging Face: [https://huggingface.co/SinisterLlama/anlp-a1-c4](https://huggingface.co/SinisterLlama/anlp-a1-c4)
 - GitHub: [https://github.com/SinisterLlamma/ANLP-Assignment1](https://github.com/SinisterLlamma/ANLP-Assignment1)
 - Repositorios de la misma asignatura: [https://huggingface.co/shauryakochar/anlp-a1-c4](https://huggingface.co/shauryakochar/anlp-a1-c4) y [https://huggingface.co/neemon/anlp-a1-c4](https://huggingface.co/neemon/anlp-a1-c4)

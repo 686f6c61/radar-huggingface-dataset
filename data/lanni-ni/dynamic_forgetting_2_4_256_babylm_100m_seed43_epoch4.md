@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch4` es un modelo de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Cuenta con 27.449.096 parámetros y se distribuye en formato safetensors. La model card no proporciona información sobre arquitectura, datos de entrenamiento, licencia ni capacidades. El nombre del modelo sugiere una posible relación con técnicas de olvido dinámico y con el benchmark BabyLM, pero no existe documentación que lo confirme. No se han publicado resultados de evaluaciones ni casos de uso documentados. Se desconoce su relevancia actual, ya que no hay datos técnicos ni comparativas disponibles.
+El modelo `dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch4` es un modelo de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Cuenta con 27.449.096 parámetros y se distribuye en formato safetensors. La model card no proporciona información sobre arquitectura, datos de entrenamiento, licencia ni capacidades. El nombre del modelo sugiere una posible relación con técnicas de olvido dinámico y con el benchmark BabyLM, pero no existe documentación que lo confirme. No se han publicado resultados de evaluaciones ni casos de uso documentados. Se desconoce su relevancia actual, ya que no hay datos técnicos ni comparativas disponibles.
 
 ## Especificaciones tecnicas
 
@@ -55,6 +55,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch4
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch4
 - Modelo relacionado (misma serie, epoch4): https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4
 - Referencia citada en la model card (no relacionada con el modelo): https://arxiv.org/abs/1910.09700

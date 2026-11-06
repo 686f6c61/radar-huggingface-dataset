@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VanDongVo/qwen3emb8b_reasoning_dedup_v1` es un adaptador de ajuste fino publicado en HuggingFace por el usuario VanDongVo. No se trata de un modelo completo, sino de pesos PEFT (0,4 GB en safetensors) que deben cargarse sobre el modelo base `Qwen/Qwen3-Embedding-8B`. El repositorio no incluye pipeline declarado, ni licencia, ni idiomas, y su model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada: todos los campos figuran como `[More Information Needed]`.
+`VanDongVo/qwen3emb8b_reasoning_dedup_v1` es un adaptador de ajuste fino publicado en Hugging Face por el usuario VanDongVo. No se trata de un modelo completo, sino de pesos PEFT (0,4 GB en safetensors) que deben cargarse sobre el modelo base `Qwen/Qwen3-Embedding-8B`. El repositorio no incluye pipeline declarado, ni licencia, ni idiomas, y su model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada: todos los campos figuran como `[More Information Needed]`.
 
 El nombre del repositorio sugiere un ajuste orientado a representaciones densas para tareas de deduplicacion sobre datos de razonamiento (`reasoning_dedup`), aunque esta interpretacion no esta confirmada por ninguna documentacion publicada por el autor. El modelo se creo el 22 de septiembre de 2026 y se actualizo tres minutos despues, sin descargas ni "likes" registrados en el momento de la consulta.
 
@@ -85,7 +85,7 @@ La informacion proporcionada no incluye datos de ningun modelo alternativo. La u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VanDongVo/qwen3emb8b_reasoning_dedup_v1
+- Repositorio Hugging Face: https://huggingface.co/VanDongVo/qwen3emb8b_reasoning_dedup_v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Paper citado en las etiquetas del repositorio: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico)
 - Calculadora de impacto medioambiental referenciada en la plantilla de la model card: https://mlco2.github.io/impact#compute

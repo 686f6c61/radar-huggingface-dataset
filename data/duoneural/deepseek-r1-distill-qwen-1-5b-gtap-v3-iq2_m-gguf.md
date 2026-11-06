@@ -111,8 +111,8 @@ No se dispone en la información proporcionada de comparativas con otros modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3-IQ2_M-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+- Repositorio Hugging Face de este modelo: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3-IQ2_M-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - llama.cpp (runner referenciado en los ejemplos de uso; no se proporciona URL explícita en la model card): no disponible en la información proporcionada
 - Paper, blog o repositorio del método G-TAP v3: no disponible en la información proporcionada
 - Demos o Spaces asociados: no disponible en la información proporcionada

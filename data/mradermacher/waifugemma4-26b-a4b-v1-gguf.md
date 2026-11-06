@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WaifuGemma4-26b-a4b-v1 (GGUF) | 25,2B | ≈4B (sugerido por el nombre, no confirmado) | No disponible | Gemma | GGUF en HuggingFace (mradermacher); base en safetensors |
+| WaifuGemma4-26b-a4b-v1 (GGUF) | 25,2B | ≈4B (sugerido por el nombre, no confirmado) | No disponible | Gemma | GGUF en Hugging Face (mradermacher); base en safetensors |
 | Gemma 2 27B (referencia de escala) | 27B | Denso (27B) | 8.192 tokens | Gemma | Pesos abiertos, ampliamente disponible |
 | Mixtral 8x7B (referencia MoE) | 46,7B | 12,9B | 32.768 tokens | Apache 2.0 | Pesos abiertos, ampliamente disponible |
 

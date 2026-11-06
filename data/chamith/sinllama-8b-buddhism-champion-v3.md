@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chamith/sinllama-8b-buddhism-champion-v3 es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario Chamith, derivado de SAWithanage/SinLlama-Llama-3-8B-Merged, un modelo fusionado basado en la familia Llama 3 de Meta con 8.000 millones de parametros nominales. El nombre del repositorio sugiere una especializacion en contenido de tematica budista ("buddhism") en su tercera iteracion ("v3"), aunque la model card no documenta el corpus de entrenamiento ni el objetivo concreto del ajuste.
+Chamith/sinllama-8b-buddhism-champion-v3 es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario Chamith, derivado de SAWithanage/SinLlama-Llama-3-8B-Merged, un modelo fusionado basado en la familia Llama 3 de Meta con 8.000 millones de parametros nominales. El nombre del repositorio sugiere una especializacion en contenido de tematica budista ("buddhism") en su tercera iteracion ("v3"), aunque la model card no documenta el corpus de entrenamiento ni el objetivo concreto del ajuste.
 
 El modelo se ha entrenado con Unsloth, una libreria de ajuste fino optimizada que, segun el autor, permite entrenar hasta 2 veces mas rapido y con menor consumo de memoria que un pipeline estandar. El repositorio se publica bajo licencia Apache 2.0, con soporte declarado para transformers y text-generation-inference, y un unico idioma listado: ingles.
 
@@ -80,10 +80,10 @@ Las siguientes cifras son estimaciones para un modelo denso de 8.000 millones de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Chamith/sinllama-8b-buddhism-champion-v3 | ~8B (nominal) | no disponible | Apache 2.0 | HuggingFace, safetensors, 0 descargas | Fine-tune de dominio sin documentar; repositorio de 0,2 GB |
-| SAWithanage/SinLlama-Llama-3-8B-Merged | 8B (nominal) | no disponible | no disponible en la informacion proporcionada | HuggingFace | Modelo base del que deriva; fusion de pesos sobre Llama 3 8B |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8B | 8.192 tokens (segun la documentacion publica de Llama 3) | Licencia comunitaria de Llama 3 | HuggingFace, amplio ecosistema de cuantizaciones | Alternativa generalista con soporte comunitario extenso y metricas publicas |
-| Mistral-7B-Instruct-v0.3 | 7.2B | 32.768 tokens | Apache 2.0 | HuggingFace, GGUF, AWQ, vLLM | Alternativa de tamano similar, con licencia permisiva y mejor documentada |
+| Chamith/sinllama-8b-buddhism-champion-v3 | ~8B (nominal) | no disponible | Apache 2.0 | Hugging Face, safetensors, 0 descargas | Fine-tune de dominio sin documentar; repositorio de 0,2 GB |
+| SAWithanage/SinLlama-Llama-3-8B-Merged | 8B (nominal) | no disponible | no disponible en la informacion proporcionada | Hugging Face | Modelo base del que deriva; fusion de pesos sobre Llama 3 8B |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8B | 8.192 tokens (segun la documentacion publica de Llama 3) | Licencia comunitaria de Llama 3 | Hugging Face, amplio ecosistema de cuantizaciones | Alternativa generalista con soporte comunitario extenso y metricas publicas |
+| Mistral-7B-Instruct-v0.3 | 7.2B | 32.768 tokens | Apache 2.0 | Hugging Face, GGUF, AWQ, vLLM | Alternativa de tamano similar, con licencia permisiva y mejor documentada |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos y sinllama-8b-buddhism-champion-v3, por lo que la tabla solo contrasta caracteristicas declaradas.
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos y sinllam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chamith/sinllama-8b-buddhism-champion-v3
+- Modelo en Hugging Face: https://huggingface.co/Chamith/sinllama-8b-buddhism-champion-v3
 - Modelo base: https://huggingface.co/SAWithanage/SinLlama-Llama-3-8B-Merged
 - Repositorio de Unsloth (framework de entrenamiento declarado): https://github.com/unslothai/unsloth
 - Paper, blog o demo adicionales: no disponible

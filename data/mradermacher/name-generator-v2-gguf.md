@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha corresponde a la cuantización GGUF del modelo **name-generator-v2**, un modelo de lenguaje de aproximadamente 3.400 millones de parámetros desarrollado por el usuario *aimeri* y cuantizado por *mradermacher*, un colaborador conocido en HuggingFace por generar versiones GGUF estáticas de modelos populares. El modelo está especializado en la generación de nombres propios de personajes, incluyendo nombres de fantasía, para tareas de escritura creativa, y se entrenó sobre el dataset `aimeri/name-generator`.
+Esta ficha corresponde a la cuantización GGUF del modelo **name-generator-v2**, un modelo de lenguaje de aproximadamente 3.400 millones de parámetros desarrollado por el usuario *aimeri* y cuantizado por *mradermacher*, un colaborador conocido en Hugging Face por generar versiones GGUF estáticas de modelos populares. El modelo está especializado en la generación de nombres propios de personajes, incluyendo nombres de fantasía, para tareas de escritura creativa, y se entrenó sobre el dataset `aimeri/name-generator`.
 
 El modelo base se construyó sobre la arquitectura **Ministral 3** (según los metadatos de la model card) y utiliza la plantilla de conversación **ChatML**, lo que lo hace compatible con la mayoría de runtimes de inferencia modernos que soportan GGUF. Se distribuye bajo licencia **Apache 2.0**, lo que permite su uso comercial sin restricciones relevantes.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 - **VRAM / memoria estimada:** el modelo cabe cómodamente en hardware muy modesto. En Q4_K_M ocupa unos 2,2 GB; en Q8_0, 3,8 GB; en f16, 7 GB. Puede ejecutarse íntegramente en CPU con RAM convencional.
 - **GPU recomendadas:** no requiere GPU dedicada. En caso de usar una, cualquier GPU con 4 GB de VRAM o más (por ejemplo, una RTX 3060 o superior) ejecuta las cuantizaciones medias con holgura.
 - **Consumer GPUs:** cabe sin problemas en la práctica totalidad de GPUs de consumo actuales, incluso en las de gama de entrada.
-- **Despliegue:** al ser GGUF, es compatible con llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier runtime que soporte el formato. También puede cargarse con la librería transformers de HuggingFace en su versión original safetensors.
+- **Despliegue:** al ser GGUF, es compatible con llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier runtime que soporte el formato. También puede cargarse con la librería transformers de Hugging Face en su versión original safetensors.
 - **Latencia y throughput:** no disponible; dada la talla del modelo (≈3,4 B de parámetros), cabe esperar respuestas rápidas incluso en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares

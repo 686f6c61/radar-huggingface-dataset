@@ -57,7 +57,7 @@ Los elementos de ingenieria destacables son de tipo practico, no arquitectural: 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de la tarea (accuracy, F1, precision@1 ni puntuacion del leaderboard), y los metadatos de HuggingFace no aportan cifras de evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de la tarea (accuracy, F1, precision@1 ni puntuacion del leaderboard), y los metadatos de Hugging Face no aportan cifras de evaluacion.
 
 ## Requisitos de hardware
 
@@ -91,11 +91,11 @@ Las filas de alternativas se incluyen como referencia de categoria; no se dispon
 - Ausencia de validacion externa: 0 descargas y 0 likes, sin pipeline declarado, sin idiomas y sin metricas; se trata de una entrega academica, no de un artefacto con soporte.
 - No apta para tareas generativas: no produce explicaciones, no razona y no soporta tool calling ni agentes, por lo que no debe integrarse en pipelines conversacionales.
 - Resultado a interpretar como hipotesis funcional: la transferencia de homologia no sustituye la validacion experimental de una actividad enzimatica.
-- Metadatos incompletos en HuggingFace: sin `pipeline_tag`, sin `language` y sin licencia, lo que dificulta el filtrado y la trazabilidad en catalogos automatizados.
+- Metadatos incompletos en Hugging Face: sin `pipeline_tag`, sin `language` y sin licencia, lo que dificulta el filtrado y la trazabilidad en catalogos automatizados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Legend7001/ec-homology-lite
+- Repositorio en Hugging Face: https://huggingface.co/Legend7001/ec-homology-lite
 - Referencia de MMseqs2 citada en la model card: Steinegger y Soding, "MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets", Nature Biotechnology, 2017 (GPLv3); no se proporciona URL en la informacion disponible.
 - Vocabulario EC citado en la model card: ExPASy ENZYME, release 02-Sep-2026, SIB (CC BY 4.0); no se proporciona URL en la informacion disponible.
 - No se han encontrado enlaces adicionales relevantes sobre el modelo: los resultados de la busqueda web no contenian informacion relacionada con este repositorio.

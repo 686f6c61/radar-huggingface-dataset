@@ -87,7 +87,7 @@ Los unicos modelos comparables documentados en la informacion disponible son las
 | SirSahOl/Qwen-Image-2.1-mlx-4bit | ~60,2B | 32.768 tokens (131.072 con YaRN) | 4-bit (4,50 bits/peso) | ~33,5 GB | other | MLX, Apple Silicon |
 | SirSahOl/Qwen-Image-2.1-mlx-8bit | ~60,2B | No disponible | 8-bit | ~63,7 GB | other | MLX, Apple Silicon |
 | SirSahOl/Qwen-Image-2.1-mlx-16bit | ~60,2B | No disponible | 16-bit (sin cuantizar) | ~121,2 GB | other | MLX, Apple Silicon |
-| Qwen/Qwen-Image-2.1 (base) | No disponible | No disponible | Original | No disponible | No disponible | HuggingFace |
+| Qwen/Qwen-Image-2.1 (base) | No disponible | No disponible | Original | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ Los unicos modelos comparables documentados en la informacion disponible son las
 
 ## Enlaces
 
-- Repositorio HuggingFace (4-bit): https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-4bit
+- Repositorio Hugging Face (4-bit): https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-4bit
 - Variante 8-bit: https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-8bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-16bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1

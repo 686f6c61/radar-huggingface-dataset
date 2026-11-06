@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Phi-4-Mini-Instruct-Obliterated-zero-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Phi-4-Mini-Instruct-Obliterated-zero-GGUF
 - Modelo base (ArRENCEAI): https://huggingface.co/ArRENCEAI/Phi-4-Mini-Instruct-Obliterated-zero
 - Modelo original Phi-4-mini-instruct (Microsoft): https://ai.azure.com/catalog/models/Phi-4-mini-instruct
 - Variante similar (mradermacher/Phi-4-mini-instruct-abliterated-i1-GGUF): https://huggingface.co/mradermacher/Phi-4-mini-instruct-abliterated-i1-GGUF

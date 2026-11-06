@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks completos en la informacion disponi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mmangkad/Qwen3.8-27B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/mmangkad/Qwen3.8-27B-NVFP4
 - Repositorio oficial GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Cuantización Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tiny-random/lfm3-omni` es un checkpoint de depuración (debug) publicado en HuggingFace por el usuario `tiny-random`. No es un modelo entrenado ni pensado para uso real: se trata de una versión de dimensiones reducidas y pesos inicializados aleatoriamente, derivada del modelo `LiquidAI/LFM3-Omni-2B`. Su propósito es servir como fixture reproducible para probar el pipeline `any-to-any` de Transformers (entrada y salida de texto, imagen, vídeo y audio) sin necesidad de descargar los aproximadamente 4,5 GB del checkpoint original.
+`tiny-random/lfm3-omni` es un checkpoint de depuración (debug) publicado en Hugging Face por el usuario `tiny-random`. No es un modelo entrenado ni pensado para uso real: se trata de una versión de dimensiones reducidas y pesos inicializados aleatoriamente, derivada del modelo `LiquidAI/LFM3-Omni-2B`. Su propósito es servir como fixture reproducible para probar el pipeline `any-to-any` de Transformers (entrada y salida de texto, imagen, vídeo y audio) sin necesidad de descargar los aproximadamente 4,5 GB del checkpoint original.
 
 El modelo conserva la topología del LFM3-Omni original (backbone de texto con capas full/conv/sliding, encoder de audio, encoder de visión, decoder de profundidad para los codebooks de audio y el códec LiquidCodec), pero con anchuras y número de capas drásticamente reducidos. El resultado son unos 13,4 millones de parámetros totales en BF16, con un vocabulario de 128.000 entradas que domina el recuento. La geometría de texto y visión sigue la del también tiny `tiny-random/lfm3-vl`.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-random/lfm3-omni | 13,43M | no disponible | texto, imagen, vídeo, audio (in/out) | no disponible | HuggingFace, `trust_remote_code` |
-| LiquidAI/LFM3-Omni-2B | 2,24B (BF16) | no disponible | texto, imagen, vídeo, audio (in/out) | no disponible | HuggingFace (modelo base) |
-| tiny-random/lfm3-vl | no disponible | no disponible | texto, imagen, vídeo | no disponible | HuggingFace (referencia de geometría) |
+| tiny-random/lfm3-omni | 13,43M | no disponible | texto, imagen, vídeo, audio (in/out) | no disponible | Hugging Face, `trust_remote_code` |
+| LiquidAI/LFM3-Omni-2B | 2,24B (BF16) | no disponible | texto, imagen, vídeo, audio (in/out) | no disponible | Hugging Face (modelo base) |
+| tiny-random/lfm3-vl | no disponible | no disponible | texto, imagen, vídeo | no disponible | Hugging Face (referencia de geometría) |
 
 La comparación relevante es con el modelo base `LiquidAI/LFM3-Omni-2B`: misma topología y mismos contratos de audio y visión, pero con 2,24B de parámetros frente a 13,43M y pesos entrenados frente a aleatorios. `tiny-random/lfm3-vl` comparte la geometría de texto y visión, pero no incluye la rama de audio ni el códec.
 
@@ -85,7 +85,7 @@ La comparación relevante es con el modelo base `LiquidAI/LFM3-Omni-2B`: misma t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tiny-random/lfm3-omni
+- Repositorio Hugging Face: https://huggingface.co/tiny-random/lfm3-omni
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Modelo de referencia de geometría texto/visión: https://huggingface.co/tiny-random/lfm3-vl
 - Script de creación: `.meta/create_model.py` (dentro del repositorio)

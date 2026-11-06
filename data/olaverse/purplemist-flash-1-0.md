@@ -78,10 +78,10 @@ No se han publicado en la información disponible resultados en benchmarks gener
 
 | Modelo | Parametros | Contexto | Precisión en African Typed Decisions | KL | Brier | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| PurpleMIST-Flash-1.0 | ~7,9 B | 2.048 tokens por pasada | 0,668 | 0,214 | 0,115 | Apache 2.0 | HuggingFace (olaverse) |
+| PurpleMIST-Flash-1.0 | ~7,9 B | 2.048 tokens por pasada | 0,668 | 0,214 | 0,115 | Apache 2.0 | Hugging Face (olaverse) |
 | DeepSeek-V4-Pro | 1,6 T | No disponible | 0,669 | 1,125 | 0,199 | No disponible | No disponible |
 | OpenDecider-small | No disponible | No disponible | No disponible (caída de 0,171 de inglés a lenguas africanas) | No disponible | No disponible | No disponible | No disponible |
-| PurpleMIST-Mini-1.0 | 1,9 B | No disponible | No disponible (pensado para cargas en inglés, misma interfaz) | No disponible | No disponible | No disponible | HuggingFace (olaverse) |
+| PurpleMIST-Mini-1.0 | 1,9 B | No disponible | No disponible (pensado para cargas en inglés, misma interfaz) | No disponible | No disponible | No disponible | Hugging Face (olaverse) |
 
 El punto diferencial frente a DeepSeek-V4-Pro es la relación entre tamaño y calibración: con unos 200 veces menos parámetros iguala la precisión y mejora notablemente las distribuciones (KL 0,214 frente a 1,125; Brier 0,115 frente a 0,199). Frente a PurpleMIST-Mini-1.0, el modelo principal aporta cobertura multilingüe africana y mayor tamaño, mientras que el mini está orientado a cargas en inglés.
 
@@ -100,7 +100,7 @@ El punto diferencial frente a DeepSeek-V4-Pro es la relación entre tamaño y ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olaverse/PurpleMIST-Flash-1.0
+- Modelo en Hugging Face: https://huggingface.co/olaverse/PurpleMIST-Flash-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Modelo hermano (versión mini, 1,9 B): https://huggingface.co/olaverse/PurpleMIST-Mini-1.0
 - Dataset de evaluación en lenguas africanas: https://huggingface.co/datasets/olaverse/african-typed-decisions

@@ -44,7 +44,7 @@ No se dispone en la información proporcionada de datos concretos sobre el núme
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de puntuaciones en conjuntos de referencia como MMLU, HumanEval, GSM8K ni métricas de rendimiento específicas para el dataset de Amazon Fine Food Reviews (por ejemplo, exactitud o F1). El modelo cuenta con 0 descargas en HuggingFace, lo que indica que no ha sido evaluado por la comunidad en el momento de la consulta.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de puntuaciones en conjuntos de referencia como MMLU, HumanEval, GSM8K ni métricas de rendimiento específicas para el dataset de Amazon Fine Food Reviews (por ejemplo, exactitud o F1). El modelo cuenta con 0 descargas en Hugging Face, lo que indica que no ha sido evaluado por la comunidad en el momento de la consulta.
 
 ## Requisitos de hardware
 
@@ -76,6 +76,6 @@ La comparativa muestra que este modelo es similar en tamaño a otros clasificado
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/VanshKukkar/amazon-food-sentiment-roberta
+- Página del modelo en Hugging Face: https://huggingface.co/VanshKukkar/amazon-food-sentiment-roberta
 - Artículo de LinkedIn sobre el proceso de construcción del modelo: https://www.linkedin.com/pulse/from-data-insights-my-complete-journey-building-food-krishna-p-v-lrndc
 - Proyecto de análisis de sentimiento en Amazon Food Reviews: https://vsuraj25.github.io/projects/amazon_sentiment_analysis.html

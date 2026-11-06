@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `niedamsie9/ksurat` es un repositorio alojado en HuggingFace por el usuario `niedamsie9`, con un tamaño de repositorio de 51.1 GB. Fue creado el 26 de julio de 2026 y actualizado el 17 de agosto de 2026. A fecha de la consulta, acumula 18 descargas y 0 likes, lo que indica una adopción muy limitada.
+El modelo `niedamsie9/ksurat` es un repositorio alojado en Hugging Face por el usuario `niedamsie9`, con un tamaño de repositorio de 51.1 GB. Fue creado el 26 de julio de 2026 y actualizado el 17 de agosto de 2026. A fecha de la consulta, acumula 18 descargas y 0 likes, lo que indica una adopción muy limitada.
 
 No se dispone de información pública sobre su arquitectura, parámetros, licencia, idiomas soportados ni pipeline de uso. El repositorio no incluye documentación técnica, fichas de modelo ni resultados de benchmarks. La única etiqueta disponible es `region:us`, que sugiere una orientación geográfica pero sin implicaciones técnicas claras.
 
@@ -63,4 +63,4 @@ No disponible. No se puede establecer una comparación con otros modelos al care
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/niedamsie9/ksurat
+- Repositorio Hugging Face: https://huggingface.co/niedamsie9/ksurat

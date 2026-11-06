@@ -67,5 +67,5 @@ No se dispone de datos de rendimiento ni de características técnicas para comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_03
+- Repositorio Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_03
 - No se han encontrado enlaces adicionales (papers, blogs, repos) relacionados con el modelo en la búsqueda web.

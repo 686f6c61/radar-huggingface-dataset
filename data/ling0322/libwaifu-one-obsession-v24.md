@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ling0322/libwaifu-one-obsession-v24` es un modelo de generacion de imagenes a partir de texto (text-to-image) de tipo diffusion latente, publicado unicamente como conversion de formato. Los pesos originales pertenecen a **maxfeifei8**, autor del checkpoint **One Obsession v24** en Civitai, y el repositorio de HuggingFace se limita a reempaquetarlos en el formato que lee [libwaifu](https://github.com/ling0322/libwaifu), la herramienta de inferencia del propio autor de la conversion.
+`ling0322/libwaifu-one-obsession-v24` es un modelo de generacion de imagenes a partir de texto (text-to-image) de tipo diffusion latente, publicado unicamente como conversion de formato. Los pesos originales pertenecen a **maxfeifei8**, autor del checkpoint **One Obsession v24** en Civitai, y el repositorio de Hugging Face se limita a reempaquetarlos en el formato que lee [libwaifu](https://github.com/ling0322/libwaifu), la herramienta de inferencia del propio autor de la conversion.
 
-El modelo es un ajuste fino (fine-tune) de **OnomaAIResearch/Illustrious-XL-v2.0**, que a su vez deriva de Stable Diffusion XL. Esto implica una arquitectura de diffusion latente con U-Net, doble codificador de texto CLIP y autoencoder VAE, prediccion de tipo epsilon, y un flujo de trabajo basado en **etiquetas estilo Danbooru** en lugar de frases en lenguaje natural. El repositorio ocupa 7,1 GB y las descargas registradas en HuggingFace son 0, con 2 likes; la relevancia practica esta en que permite usar el checkpoint sin descargas manuales ni conversion previa dentro del ecosistema libwaifu.
+El modelo es un ajuste fino (fine-tune) de **OnomaAIResearch/Illustrious-XL-v2.0**, que a su vez deriva de Stable Diffusion XL. Esto implica una arquitectura de diffusion latente con U-Net, doble codificador de texto CLIP y autoencoder VAE, prediccion de tipo epsilon, y un flujo de trabajo basado en **etiquetas estilo Danbooru** en lugar de frases en lenguaje natural. El repositorio ocupa 7,1 GB y las descargas registradas en Hugging Face son 0, con 2 likes; la relevancia practica esta en que permite usar el checkpoint sin descargas manuales ni conversion previa dentro del ecosistema libwaifu.
 
 El modelo esta marcado como `not-for-all-audiences` y su licencia es personalizada (`one-obsession-civitai`), con requisitos de atribucion, herencia de terminos en derivados y prohibicion del uso comercial general. No es un modelo de lenguaje: no soporta conversacion, tool calling ni agentes.
 
@@ -26,7 +26,7 @@ El modelo esta marcado como `not-for-all-audiences` y su licencia es personaliza
 | Parametros de muestreo de los ejemplos | Euler a, CFG 4,5, 20-24 pasos |
 | Modelo base | OnomaAIResearch/Illustrious-XL-v2.0 |
 | Tamano del repositorio | 7,1 GB |
-| Descargas / likes en HuggingFace | 0 / 2 |
+| Descargas / likes en Hugging Face | 0 / 2 |
 
 ## Arquitectura y entrenamiento
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto de prompt | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| One Obsession v24 (este repositorio) | no declarados; ~3.500 millones estimados por el tamano de los pesos | 77 tokens por codificador CLIP | no disponible | `one-obsession-civitai`: atribucion, herencia de terminos, sin uso comercial general | HuggingFace (formato libwaifu) y Civitai (checkpoint original) |
-| OnomaAIResearch/Illustrious-XL-v2.0 (modelo base) | no disponible (arquitectura SDXL) | 77 tokens por codificador CLIP | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| Pony Diffusion V6 XL (familia equivalente de anime SDXL) | no disponible | 77 tokens por codificador CLIP | no disponible | licencia propia restrictiva; consultar el repositorio | HuggingFace y Civitai |
-| NoobAI-XL (familia equivalente de anime SDXL) | no disponible | 77 tokens por codificador CLIP | no disponible | no disponible en la informacion proporcionada | HuggingFace y Civitai |
+| One Obsession v24 (este repositorio) | no declarados; ~3.500 millones estimados por el tamano de los pesos | 77 tokens por codificador CLIP | no disponible | `one-obsession-civitai`: atribucion, herencia de terminos, sin uso comercial general | Hugging Face (formato libwaifu) y Civitai (checkpoint original) |
+| OnomaAIResearch/Illustrious-XL-v2.0 (modelo base) | no disponible (arquitectura SDXL) | 77 tokens por codificador CLIP | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| Pony Diffusion V6 XL (familia equivalente de anime SDXL) | no disponible | 77 tokens por codificador CLIP | no disponible | licencia propia restrictiva; consultar el repositorio | Hugging Face y Civitai |
+| NoobAI-XL (familia equivalente de anime SDXL) | no disponible | 77 tokens por codificador CLIP | no disponible | no disponible en la informacion proporcionada | Hugging Face y Civitai |
 
 No se dispone de datos verificados de parametros, contexto ni benchmarks de las alternativas dentro de la informacion proporcionada; las celdas marcadas como no disponibles deben contrastarse en los repositorios oficiales antes de tomar una decision.
 
@@ -97,7 +97,7 @@ No se dispone de datos verificados de parametros, contexto ni benchmarks de las 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ling0322/libwaifu-one-obsession-v24
+- Repositorio en Hugging Face: https://huggingface.co/ling0322/libwaifu-one-obsession-v24
 - Modelo original en Civitai: https://civitai.com/models/1318945
 - Version concreta de los pesos (v24, modelVersionId 3218603): https://civitai.com/models/1318945?modelVersionId=3218603
 - Perfil del autor de los pesos: https://civitai.com/user/maxfeifei8

@@ -77,7 +77,7 @@ No se dispone de información comparativa de este modelo con otros, ya que no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/sergiopaniego/watercolour-grpo-v8c](https://huggingface.co/sergiopaniego/watercolour-grpo-v8c)
+- Modelo en Hugging Face: [https://huggingface.co/sergiopaniego/watercolour-grpo-v8c](https://huggingface.co/sergiopaniego/watercolour-grpo-v8c)
 - Perfil del autor: [https://huggingface.co/sergiopaniego](https://huggingface.co/sergiopaniego)
 - GitHub del autor: [https://github.com/sergiopaniego](https://github.com/sergiopaniego)
 - Web personal del autor: [https://sergiopaniego.github.io/](https://sergiopaniego.github.io/)

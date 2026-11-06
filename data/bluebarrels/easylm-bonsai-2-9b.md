@@ -88,7 +88,7 @@ La comparacion con alternativas externas a la familia (por ejemplo, Qwen3.5-9B e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bluebarrels/easylm-bonsai-2-9b
+- Modelo en Hugging Face: https://huggingface.co/Bluebarrels/easylm-bonsai-2-9b
 - Modelo base ternario (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
 - Base WebGPU/MLC: https://huggingface.co/mlc-ai/Qwen3.5-9B-q4f16_1-MLC
 - Dataset de entrenamiento: https://huggingface.co/datasets/Bluebarrels/easylm-training-corpus

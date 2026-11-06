@@ -91,7 +91,7 @@ La comparativa más relevante es con el modelo base fp16 y con las variantes uni
 
 ## Enlaces
 
-- Repositorio HuggingFace: [rshoemake/taq-qwen32b-coder-mixed-allocator-2bit](https://huggingface.co/rshoemake/taq-qwen32b-coder-mixed-allocator-2bit)
+- Repositorio Hugging Face: [rshoemake/taq-qwen32b-coder-mixed-allocator-2bit](https://huggingface.co/rshoemake/taq-qwen32b-coder-mixed-allocator-2bit)
 - Modelo base: [Qwen/Qwen2.5-Coder-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct)
 - Repositorio hermano con documentación del formato: [rshoemake/taq-qwen14b-unsloth-matched](https://huggingface.co/rshoemake/taq-qwen14b-unsloth-matched)
 - Repos hermanos de la familia 4-bit: `rshoemake/taq-qwen32b-coder-{outlier,rotation-outlier,mixed-allocator}-4bit` (no enlazados directamente en la información proporcionada)

@@ -63,9 +63,9 @@ Estas métricas no son benchmarks de calidad, sino de rendimiento de la orquesta
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2.5-3b-lumen | 3.09B | no disponible | Apache 2.0 | HuggingFace (GGUF) |
-| qwen2.5-7b-lumen | 7B | no disponible | Apache 2.0 | HuggingFace (GGUF) |
-| Qwen/Qwen2.5-3B-Instruct | 3.09B | 32k (modelo base) | Apache 2.0 | HuggingFace |
+| qwen2.5-3b-lumen | 3.09B | no disponible | Apache 2.0 | Hugging Face (GGUF) |
+| qwen2.5-7b-lumen | 7B | no disponible | Apache 2.0 | Hugging Face (GGUF) |
+| Qwen/Qwen2.5-3B-Instruct | 3.09B | 32k (modelo base) | Apache 2.0 | Hugging Face |
 
 En cuanto a rendimiento, solo se dispone del dato de ~56 tok/s del modelo 3B en GTX 1650. La hermana 7B se describe como "más lenta en 4GB", pero no se aportan cifras concretas.
 
@@ -80,7 +80,7 @@ En cuanto a rendimiento, solo se dispone del dato de ~56 tok/s del modelo 3B en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/takshathosani17/qwen2.5-3b-lumen
+- Modelo en Hugging Face: https://huggingface.co/takshathosani17/qwen2.5-3b-lumen
 - Repositorio Lumen Stream Lab: https://github.com/taksha17/lumen-stream-lab
 - Walkthrough en vídeo: https://github.com/taksha17/lumen-stream-lab#walkthrough-60s
 - Modelo hermano qwen2.5-7b-lumen: https://huggingface.co/takshathosani17/qwen2.5-7b-lumen

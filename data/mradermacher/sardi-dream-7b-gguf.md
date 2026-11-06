@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: [mradermacher/sardi-dream-7b-GGUF](https://huggingface.co/mradermacher/sardi-dream-7b-GGUF)
+- Repositorio Hugging Face del modelo cuantizado: [mradermacher/sardi-dream-7b-GGUF](https://huggingface.co/mradermacher/sardi-dream-7b-GGUF)
 - Modelo base (referenciado): [pauljngr/sardi-dream-7b](https://huggingface.co/pauljngr/sardi-dream-7b)
 - Proyecto Dream 7B (GitHub): [ksu-oor/dream](https://github.com/ksu-oor/dream) y [DreamLM/Dream](https://github.com/DreamLM/Dream)
 - Página de ayuda de mradermacher para solicitudes de modelos: [model_requests](https://huggingface.co/mradermacher/model_requests)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-klyverine45/Klyve es un repositorio alojado en HuggingFace cuyo contenido público se reduce, a fecha de consulta, a una declaración de licencia Apache 2.0. La model card no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso: el único contenido del README es el bloque de metadatos con la licencia. El repositorio registra 0 descargas y 0 "likes", no tiene pipeline declarado ni idiomas especificados, y fue creado y actualizado en la misma marca temporal (2026-09-26T22:17:26Z).
+klyverine45/Klyve es un repositorio alojado en Hugging Face cuyo contenido público se reduce, a fecha de consulta, a una declaración de licencia Apache 2.0. La model card no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso: el único contenido del README es el bloque de metadatos con la licencia. El repositorio registra 0 descargas y 0 "likes", no tiene pipeline declarado ni idiomas especificados, y fue creado y actualizado en la misma marca temporal (2026-09-26T22:17:26Z).
 
 No es posible determinar qué problema resuelve el modelo, qué arquitectura emplea, cuántos parámetros tiene ni cuál es su ventana de contexto. La ausencia de pesos visibles, tokenizador, configuración o documentación impide verificar que se trate siquiera de un modelo entrenado y no de un repositorio vacío o en preparación.
 
-Las búsquedas web realizadas devuelven varios productos y proyectos comerciales que comparten el nombre "Klyve" (una supuesta factoría de software automatizada, una consultora de IA, un orquestador SDLC local y un generador de vídeo con IA), pero ninguno de ellos presenta evidencia verificable de estar relacionado con este repositorio de HuggingFace. Se tratan, por tanto, como homónimos no confirmados.
+Las búsquedas web realizadas devuelven varios productos y proyectos comerciales que comparten el nombre "Klyve" (una supuesta factoría de software automatizada, una consultora de IA, un orquestador SDLC local y un generador de vídeo con IA), pero ninguno de ellos presenta evidencia verificable de estar relacionado con este repositorio de Hugging Face. Se tratan, por tanto, como homónimos no confirmados.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No disponible. La ausencia de parametros, contexto, licencia de pesos y resultad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/klyverine45/Klyve
+- Repositorio en Hugging Face: https://huggingface.co/klyverine45/Klyve
 - Klyve (factoria de software automatizada, homonimo no confirmado): https://klyve.online/
 - Klyve AI Tech (consultora de IA, homonimo no confirmado): https://klyveaitech.com/
 - klyvedev/klyve en GitHub (orquestador SDLC, homonimo no confirmado): https://github.com/klyvedev/klyve/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_weightedavg_merge` es un modelo de lenguaje de arquitectura transformer decoder-only tipo GPT-NeoX (etiqueta `gpt_neox` en HuggingFace) con 6.856.253.440 parámetros (unos 6,86 mil millones), publicado por el usuario `yuhengtu-bytedance`. No es un modelo entrenado desde cero ni un modelo con model card descriptiva: es el resultado de una fusión de checkpoints intermedios del mismo entrenamiento, generada automáticamente con la herramienta mergekit mediante el método Linear.
+`sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_weightedavg_merge` es un modelo de lenguaje de arquitectura transformer decoder-only tipo GPT-NeoX (etiqueta `gpt_neox` en Hugging Face) con 6.856.253.440 parámetros (unos 6,86 mil millones), publicado por el usuario `yuhengtu-bytedance`. No es un modelo entrenado desde cero ni un modelo con model card descriptiva: es el resultado de una fusión de checkpoints intermedios del mismo entrenamiento, generada automáticamente con la herramienta mergekit mediante el método Linear.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio no incluye información sobre datos de entrenamiento, idiomas, longitud de contexto, licencia ni evaluaciones. Los metadatos y las rutas internas que aparecen en la model card (`/opt/tiger/Pan_Safety_Better_Measurement/merge_scaling_ckpts_cache/...`, con checkpoints en los pasos globales 2000, 3000, 4000, 5000 y 6000) apuntan a un experimento interno de medición de seguridad o de escalado de fusiones, no a un modelo destinado a distribución pública. Se trata, por tanto, de un artefacto de investigación reproducible más que de un modelo listo para producción.
 
@@ -22,7 +22,7 @@ El modelo tiene 0 descargas y 0 likes, y su licencia no está declarada, lo que 
 | Formato de pesos | safetensors (repositorio de 13,7 GB, libreria `transformers`) |
 | Vocabulario y tokenizador | no disponible |
 | Metodo de creacion | Fusion Linear con mergekit (pesos 1, 2, 3, 4 y 5 sobre los pasos 2000, 3000, 4000, 5000 y 6000) |
-| Fecha de publicacion | 13 de septiembre de 2026 segun los metadatos de HuggingFace (fecha anomala; vease limitaciones) |
+| Fecha de publicacion | 13 de septiembre de 2026 segun los metadatos de Hugging Face (fecha anomala; vease limitaciones) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Este modelo (sfm_filtered_insert_xxf_character merge) | 6,86B | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Pythia-6.9B | 6,9B | 2048 tokens | Apache 2.0 | HuggingFace y paper | Si, bateria completa publicada por el autor |
-| Mistral-7B-v0.1 | 7,24B | 8192 tokens | Apache 2.0 | HuggingFace | Si, ampliamente reproducido |
-| Llama 2 7B | 6,74B | 4096 tokens | Llama 2 Community License | HuggingFace | Si |
-| GPT-NeoX-20B | 20B | 2048 tokens | Apache 2.0 | HuggingFace y paper | Si |
+| Este modelo (sfm_filtered_insert_xxf_character merge) | 6,86B | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Pythia-6.9B | 6,9B | 2048 tokens | Apache 2.0 | Hugging Face y paper | Si, bateria completa publicada por el autor |
+| Mistral-7B-v0.1 | 7,24B | 8192 tokens | Apache 2.0 | Hugging Face | Si, ampliamente reproducido |
+| Llama 2 7B | 6,74B | 4096 tokens | Llama 2 Community License | Hugging Face | Si |
+| GPT-NeoX-20B | 20B | 2048 tokens | Apache 2.0 | Hugging Face y paper | Si |
 
 La comparacion por tamano situa a este modelo en la franja de 7B, donde compite tecnicamente con Pythia-6.9B (misma familia arquitectonica GPT-NeoX y parametros casi identicos) y con Mistral-7B-v0.1. La diferencia practica no esta en el rendimiento, que no esta medido, sino en la trazabilidad: los modelos de la tabla tienen licencia explicita, model card completa y evaluaciones reproducibles, mientras que este repositorio no ofrece ninguno de los tres.
 
@@ -90,7 +90,7 @@ La comparacion por tamano situa a este modelo en la franja de 7B, donde compite 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Articulo de referencia del metodo de fusion (aritmetica de tareas): https://arxiv.org/abs/2203.05482
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante sobre este modelo; las busquedas devuelven contenido sin relacion (foros de caracteres chinos, conversion de unidades de capacitancia, descargas de software y formulas de logica).

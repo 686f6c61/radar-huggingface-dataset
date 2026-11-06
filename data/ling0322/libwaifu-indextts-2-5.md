@@ -18,7 +18,7 @@ Su relevancia actual es doble. Por un lado, permite ejecutar un TTS de clonacion
 | Longitud de contexto | no aplica (modelo TTS; lee unos 15 segundos de audio de referencia por voz) |
 | Tipos de cuantizacion | no disponible; el paquete se distribuye en float32 en su totalidad, sin reduccion de precision |
 | Idiomas soportados | chino (zh), ingles (en), japones (ja) y cantonés (yue), con deteccion automatica por sistema de escritura |
-| Licencia | bilibili-model-use-license (bilibili Model Use License Agreement, `license: other` en HuggingFace) |
+| Licencia | bilibili-model-use-license (bilibili Model Use License Agreement, `license: other` en Hugging Face) |
 | Formato de pesos | formato propio de libwaifu: manifiesto YAML (`indextts25.yaml`) y sus partes; no safetensors ni GGUF |
 | Tamano del repositorio | 5,5 GB en total; 5,1 GB corresponden a pesos en float32 |
 | Pipeline declarado | text-to-speech |
@@ -103,7 +103,7 @@ El paquete de libwaifu es funcionalmente mas restrictivo que su modelo base: pie
 
 ## Enlaces
 
-- Pagina de HuggingFace del paquete: https://huggingface.co/ling0322/libwaifu-indextts-2.5
+- Pagina de Hugging Face del paquete: https://huggingface.co/ling0322/libwaifu-indextts-2.5
 - Repositorio de libwaifu (Rust): https://github.com/ling0322/libwaifu
 - Documentacion del pipeline en libwaifu (`docs/indextts.md`): https://github.com/ling0322/libwaifu
 - Modelo base original: https://huggingface.co/IndexTeam/IndexTTS-2.5

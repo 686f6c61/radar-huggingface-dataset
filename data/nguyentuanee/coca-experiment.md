@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nguyentuanee/coca-experiment es un repositorio de HuggingFace que contiene una implementacion propia y compacta de una arquitectura CoCa (Contrastive Captioner) orientada a tareas de clasificacion. Lo publica el usuario nguyentuanee bajo licencia MIT y, segun la propia model card, se trata de una configuracion "small" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion.
+nguyentuanee/coca-experiment es un repositorio de Hugging Face que contiene una implementacion propia y compacta de una arquitectura CoCa (Contrastive Captioner) orientada a tareas de clasificacion. Lo publica el usuario nguyentuanee bajo licencia MIT y, segun la propia model card, se trata de una configuracion "small" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion.
 
 El dato mas relevante es su tamano: 16.576 parametros totales en formato safetensors, lo que lo situa en un orden de magnitud de juguete, muy lejos de cualquier modelo utilizable en tareas reales. El repositorio incluye el script `train.py` como artefacto principal, junto con `config.json` (arquitectura), `training_args.json` (receta de experimento) y `model.safetensors`, descrito explicitamente como un checkpoint de inicializacion valido para pruebas de humo y no como un checkpoint entrenado con benchmarks.
 
@@ -72,8 +72,8 @@ No disponible. No se han proporcionado datos de rendimiento ni especificaciones 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nguyentuanee/coca-experiment | 16.576 | no disponible | sin benchmarks | MIT | HuggingFace |
-| sn3hapo95nd/coca-experiment | no disponible | no disponible | sin benchmarks | no disponible | HuggingFace |
+| nguyentuanee/coca-experiment | 16.576 | no disponible | sin benchmarks | MIT | Hugging Face |
+| sn3hapo95nd/coca-experiment | no disponible | no disponible | sin benchmarks | no disponible | Hugging Face |
 | Alternativas de clasificacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,14 +82,14 @@ No disponible. No se han proporcionado datos de rendimiento ni especificaciones 
 - No hay benchmarks, curvas de aprendizaje ni evaluaciones publicadas; cualquier afirmacion de rendimiento seria infundada.
 - No se ha auditado robustez, equidad, sesgos ni transferencia de dominio. Se desconoce el comportamiento sobre datos reales.
 - No se declaran idiomas soportados ni modalidad de entrada, por lo que no se puede garantizar cobertura linguistica ni tipo de dato.
-- Al ser una implementacion custom, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito; no funciona como un modelo estandar de la libreria.
+- Al ser una implementacion custom, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito; no funciona como un modelo estandar de la libreria.
 - La licencia MIT permite uso comercial del codigo y los pesos, pero el autor advierte de que deben revisarse por separado los terminos de las fuentes de datos externas que se utilicen con el repositorio.
 - Con 16.576 parametros, la capacidad de representacion es insignificante para cualquier tarea practica; no debe emplearse en produccion.
 - Cualquier resultado futuro obtenido a partir de un checkpoint entrenado debera documentarse por separado de los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nguyentuanee/coca-experiment
+- Repositorio en Hugging Face: https://huggingface.co/nguyentuanee/coca-experiment
 - Repositorio con nombre identico de otro autor: https://huggingface.co/sn3hapo95nd/coca-experiment
 - Paper original de CoCa (no enlazado en la informacion disponible; referencia general del autor): no disponible
 - Blog o demo oficial: no disponible

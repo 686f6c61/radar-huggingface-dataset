@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Calou66/SagCoach-Qwen3-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Calou66/SagCoach-Qwen3-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Commit del modelo base referenciado: `cdbee75f17c01a7cc42f958dc650907174af0554`
 - llama.cpp (runtime implicito del formato GGUF): no se enlaza en la model card; no disponible como enlace oficial en la informacion proporcionada

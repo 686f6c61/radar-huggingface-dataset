@@ -95,8 +95,8 @@ No se dispone de datos de rendimiento en tareas generales (razonamiento, codigo,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-fd-unmixed
-- Coleccion de destilacion en HuggingFace: https://huggingface.co/collections/model-organisms-for-real/distillation
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-fd-unmixed
+- Coleccion de destilacion en Hugging Face: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Otro organismo de la coleccion: https://huggingface.co/model-organisms-for-real/kd-student-gemma-olmo-milsub-fd-unmixed-alpha-1-nofilter-1samp-5e-5-mixed
 - Repositorio GitHub del proyecto (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Pagina oficial de Gemma (DeepMind): https://deepmind.google/models/gemma/gemma-4/ (referencia del modelo base)

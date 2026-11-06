@@ -78,9 +78,9 @@ Nota: el modelo base SmolLM3-3B se describe como "totalmente abierto" en la docu
 
 ## Enlaces
 
-- [HuggingFace: DGurgurov/SmolLM3-3B-SFT-IT](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-IT)
-- [HuggingFace: DGurgurov/SmolLM3-3B-SFT-GRPO-IT](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-IT)
-- [HuggingFace: toroe/ReasonXL-SFT (dataset)](https://huggingface.co/datasets/toroe/ReasonXL-SFT)
-- [HuggingFace: HuggingFaceTB/SmolLM3-3B (modelo base)](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
+- [Hugging Face: DGurgurov/SmolLM3-3B-SFT-IT](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-IT)
+- [Hugging Face: DGurgurov/SmolLM3-3B-SFT-GRPO-IT](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-IT)
+- [Hugging Face: toroe/ReasonXL-SFT (dataset)](https://huggingface.co/datasets/toroe/ReasonXL-SFT)
+- [Hugging Face: HuggingFaceTB/SmolLM3-3B (modelo base)](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - [GitHub: huggingface/smollm (repositorio del texto)](https://github.com/huggingface/smollm/tree/main/text)
 - [arXiv: 2604.12378 (paper ReasonXL)](https://arxiv.org/abs/2604.12378)

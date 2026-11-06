@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k-seed44` es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 M) publicado por el usuario cyttic en HuggingFace bajo licencia MIT. El identificador del repositorio sugiere un experimento de reconocimiento de texto manuscrito o tipográfico basado en CTC (Connectionist Temporal Classification), entrenado sobre una mezcla de diez fuentes web ("webfonts10mix"), con geometría de cabecera ("hhdgeom") y datos generados por un modelo de lenguaje ("llmgen"), con un presupuesto de 5.000 muestras y semilla 44. Se trata, por tanto, de un artefacto de investigación reproducible más que de un modelo de propósito general.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k-seed44` es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 M) publicado por el usuario cyttic en Hugging Face bajo licencia MIT. El identificador del repositorio sugiere un experimento de reconocimiento de texto manuscrito o tipográfico basado en CTC (Connectionist Temporal Classification), entrenado sobre una mezcla de diez fuentes web ("webfonts10mix"), con geometría de cabecera ("hhdgeom") y datos generados por un modelo de lenguaje ("llmgen"), con un presupuesto de 5.000 muestras y semilla 44. Se trata, por tanto, de un artefacto de investigación reproducible más que de un modelo de propósito general.
 
-La model card publicada por el autor es la plantilla por defecto de HuggingFace sin rellenar: no documenta arquitectura, datos de entrenamiento, idiomas, hiperparámetros ni resultados de evaluación. Toda la información técnica disponible se limita a los metadatos del repositorio: el recuento de parámetros extraído de los pesos en safetensors (87.279.756), el tamaño del repositorio (0,3 GB), la licencia MIT y la referencia bibliográfica al paper de Lacoste et al. (2019) sobre el impacto ambiental, que aparece únicamente como cita de la plantilla.
+La model card publicada por el autor es la plantilla por defecto de Hugging Face sin rellenar: no documenta arquitectura, datos de entrenamiento, idiomas, hiperparámetros ni resultados de evaluación. Toda la información técnica disponible se limita a los metadatos del repositorio: el recuento de parámetros extraído de los pesos en safetensors (87.279.756), el tamaño del repositorio (0,3 GB), la licencia MIT y la referencia bibliográfica al paper de Lacoste et al. (2019) sobre el impacto ambiental, que aparece únicamente como cita de la plantilla.
 
 Su relevancia actual es limitada fuera del contexto de reproducción de experimentos de OCR/HTR. No debe confundirse con un modelo conversacional ni con un LLM: el nombre, el tamaño y el pipeline implícito apuntan a un sistema de reconocimiento de secuencias (imagen a texto) entrenado de forma específica. Cualquier uso en producción requeriría una evaluación propia, dado que no hay métricas publicadas.
 
@@ -74,6 +74,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k-seed44
 - Paper citado en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed1024` es un fine-tune del modelo base Pythia-160m de EleutherAI, publicado en HuggingFace por el usuario sashaboguraev. El nombre del checkpoint sugiere que fue entrenado durante 250 pasos sobre un conjunto de datos sintético de números aleatorios, con una semilla fija (1024), probablemente como parte de un experimento de post-entrenamiento (PPT) para estudiar el comportamiento de modelos pequeños en datos sin estructura semántica.
+El modelo `sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed1024` es un fine-tune del modelo base Pythia-160m de EleutherAI, publicado en Hugging Face por el usuario sashaboguraev. El nombre del checkpoint sugiere que fue entrenado durante 250 pasos sobre un conjunto de datos sintético de números aleatorios, con una semilla fija (1024), probablemente como parte de un experimento de post-entrenamiento (PPT) para estudiar el comportamiento de modelos pequeños en datos sin estructura semántica.
 
 La model card es una plantilla automática sin información detallada: no se especifican datos de entrenamiento, hiperparámetros, licencia ni idiomas. Los únicos datos verificables son los parámetros totales (162.281.472) y el formato de pesos (safetensors). La arquitectura, según las etiquetas, corresponde a GPT-NeoX, la misma familia que usa Pythia. Se trata de un modelo de 160M de parámetros, una escala muy pequeña, orientado a investigación y experimentación más que a producción.
 
@@ -41,7 +41,7 @@ Dada la naturaleza experimental y la falta de documentación, los casos de uso s
 
 - Investigación sobre el comportamiento de modelos pequeños entrenados en datos sin semántica: este checkpoint puede servir para estudiar cómo un transformer aprende patrones estadísticos de datos aleatorios y qué tipo de representaciones internas desarrolla.
 - Análisis de la influencia de la semilla y el número de pasos en el fine-tune: al existir otros checkpoints con variaciones (steps500, keep_attention, etc.), permite comparar el efecto de estos hiperparámetros.
-- Pruebas de infraestructura de inferencia: al ser un modelo muy pequeño, es útil para validar pipelines de HuggingFace, Text Generation Inference o endpoints compatibles sin coste computacional significativo.
+- Pruebas de infraestructura de inferencia: al ser un modelo muy pequeño, es útil para validar pipelines de Hugging Face, Text Generation Inference o endpoints compatibles sin coste computacional significativo.
 - Evaluación de técnicas de post-entrenamiento (PPT) en modelos base: puede usarse como punto de partida para experimentos controlados sobre el impacto de datos sintéticos en la capacidad generativa.
 - Docencia en cursos de PLN: sirve como ejemplo práctico de fine-tuning y de cómo interpretar una model card incompleta.
 - Benchmarking de frameworks de cuantización o compresión: aunque no se ofrecen cuantizaciones, el modelo puede cuantizarse fácilmente para probar herramientas como llama.cpp o bitsandbytes.
@@ -79,7 +79,7 @@ La comparativa se limita a la familia Pythia porque no se dispone de datos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed1024
+- Hugging Face: https://huggingface.co/sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed1024
 - Repositorio (árbol de archivos): https://huggingface.co/sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed1024/tree/main
 - FriendliAI (inferencia): https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed1024
 - Referencia del paper sobre impacto ambiental (etiqueta arxiv:1910.09700): https://arxiv.org/abs/1910.09700

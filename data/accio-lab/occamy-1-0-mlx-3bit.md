@@ -84,7 +84,7 @@ Nota: no se dispone de resultados de benchmarks de Occamy 1.0 que permitan compa
 ## Limitaciones y advertencias
 
 - Estado de publicacion: el autor lo define como "candidate release" y afirma que la aceptacion en Metal para Mac esta pendiente; no hay validacion publicada de rendimiento ni de calidad en macOS.
-- Ausencia de licencia: la licencia figura como no disponible tanto en la ficha de HuggingFace como en la model card, lo que impide determinar si el uso comercial esta permitido. No debe asumirse uso comercial libre.
+- Ausencia de licencia: la licencia figura como no disponible tanto en la ficha de Hugging Face como en la model card, lo que impide determinar si el uso comercial esta permitido. No debe asumirse uso comercial libre.
 - Idiomas no declarados: no se especifica que idiomas soporta el modelo ni su calidad relativa en cada uno.
 - Contexto desconocido: se desconoce la longitud de contexto, lo que impide planificar aplicaciones con documentos largos o conversaciones extensas.
 - Benchmarks inexistentes: no hay datos publicados de MMLU, HumanEval, GSM8K ni evaluaciones humanas; la unica evidencia es una prueba aritmetica trivial.
@@ -97,7 +97,7 @@ Nota: no se dispone de resultados de benchmarks de Occamy 1.0 que permitan compa
 
 ## Enlaces
 
-- HuggingFace (modelo cuantizado): https://huggingface.co/Accio-Lab/occamy-1.0-MLX-3bit
+- Hugging Face (modelo cuantizado): https://huggingface.co/Accio-Lab/occamy-1.0-MLX-3bit
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - LLM Explorer (Occamy 1.0, VRAM estimada): https://llm-explorer.com/model/Accio-Lab%2Foccamy-1.0,1zolJ2bV0oV3tkE83bEMbI
 - Sitio del laboratorio (plataforma Accio Work): https://www.accio.com/

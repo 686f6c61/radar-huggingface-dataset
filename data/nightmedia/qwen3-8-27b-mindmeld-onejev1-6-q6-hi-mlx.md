@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-MindMeld-OneJev1.6-q6-hi-mlx es un modelo de lenguaje de 27.356 millones de parametros publicado por el usuario nightmedia en HuggingFace. Se trata de un merge experimental construido con mergekit a partir de dos modelos: nightmedia/Qwen3.8-27B-MindMeld y OmniJev/OneJev1.6-27B, ambos derivados de la familia Qwen (etiquetados en la model card como Qwen3.5/Qwen3.6). El resultado se distribuye cuantizado en 6 bits (etiqueta q6-hi) y en formato MLX, orientado a inferencia en hardware Apple Silicon.
+Qwen3.8-27B-MindMeld-OneJev1.6-q6-hi-mlx es un modelo de lenguaje de 27.356 millones de parametros publicado por el usuario nightmedia en Hugging Face. Se trata de un merge experimental construido con mergekit a partir de dos modelos: nightmedia/Qwen3.8-27B-MindMeld y OmniJev/OneJev1.6-27B, ambos derivados de la familia Qwen (etiquetados en la model card como Qwen3.5/Qwen3.6). El resultado se distribuye cuantizado en 6 bits (etiqueta q6-hi) y en formato MLX, orientado a inferencia en hardware Apple Silicon.
 
 El modelo no esta pensado para programacion: el autor lo declara explicitamente como un experimento de fusion orientado a escritura creativa, roleplay, generacion de ficcion y debate conversacional. La model card incluye ejemplos de dialogo con personajes como Caesar, Q y Quark, y el autor bromea sobre su incapacidad para tareas de dibujo o su tendencia a debatir cualquier tema "con espiritu y confianza tipo Borg". Es, por tanto, un artefacto de la comunidad de merges creativos, no un modelo de proposito general para produccion.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento ni de contexto verificados para establecer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld-OneJev1.6-q6-hi-mlx
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld-OneJev1.6-q6-hi-mlx
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld
 - Modelo base: https://huggingface.co/OmniJev/OneJev1.6-27B
 - Modelo base: https://huggingface.co/schneewolflabs/B1-27B

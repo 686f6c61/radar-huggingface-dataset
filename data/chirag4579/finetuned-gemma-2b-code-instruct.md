@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Chirag4579/finetuned-gemma-2b-code-instruct` es un repositorio publicado en HuggingFace por el usuario Chirag4579. Por el nombre del repositorio se deduce que se trata de un ajuste fino (fine-tuning) orientado a instrucciones de codigo sobre un modelo de la familia Gemma de 2B parametros, pero la model card no confirma ni documenta esta procedencia: la tarjeta es la plantilla autogenerada por HuggingFace con todos los campos marcados como "[More Information Needed]".
+`Chirag4579/finetuned-gemma-2b-code-instruct` es un repositorio publicado en Hugging Face por el usuario Chirag4579. Por el nombre del repositorio se deduce que se trata de un ajuste fino (fine-tuning) orientado a instrucciones de codigo sobre un modelo de la familia Gemma de 2B parametros, pero la model card no confirma ni documenta esta procedencia: la tarjeta es la plantilla autogenerada por Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 El modelo resuelve, en principio, el mismo problema que otros ajustes de instrucciones para generacion de codigo: convertir un modelo base en un asistente capaz de responder a peticiones de programacion. Se publica bajo la libreria `transformers` con pesos en formato `safetensors` y es compatible con endpoints, pero carece por completo de documentacion sobre arquitectura, datos de entrenamiento, licencia o idiomas.
 
@@ -69,10 +69,10 @@ Advertencia: el tamano de 0,2 GB del repositorio no permite alojar un modelo de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Chirag4579/finetuned-gemma-2b-code-instruct | no disponible (nombre sugiere 2B) | no disponible | no disponible | HuggingFace, repo 0,2 GB |
-| Gemma 2 2B (Google) | ~2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente usado |
-| CodeGemma 2B (Google) | ~2,5B | 8.192 tokens | Gemma Terms of Use | HuggingFace |
-| Qwen2.5-Coder 1.5B (Alibaba) | ~1,5B | 32.768 tokens | Apache 2.0 | HuggingFace |
+| Chirag4579/finetuned-gemma-2b-code-instruct | no disponible (nombre sugiere 2B) | no disponible | no disponible | Hugging Face, repo 0,2 GB |
+| Gemma 2 2B (Google) | ~2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente usado |
+| CodeGemma 2B (Google) | ~2,5B | 8.192 tokens | Gemma Terms of Use | Hugging Face |
+| Qwen2.5-Coder 1.5B (Alibaba) | ~1,5B | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa con los modelos de referencia se ofrece solo a titulo orientativo; los datos del modelo objeto de la ficha no estan confirmados y no se dispone de metricas para contrastar rendimiento.
 
@@ -89,7 +89,7 @@ La comparativa con los modelos de referencia se ofrece solo a titulo orientativo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chirag4579/finetuned-gemma-2b-code-instruct
+- Hugging Face: https://huggingface.co/Chirag4579/finetuned-gemma-2b-code-instruct
 - Paper citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Referencia del calculador de impacto: https://mlco2.github.io/impact
 

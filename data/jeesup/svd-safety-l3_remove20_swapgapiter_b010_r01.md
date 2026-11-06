@@ -107,7 +107,7 @@ No se dispone de información sobre otros checkpoints comparables de la misma re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3 y política de uso: incluidas como `LICENSE` y `USE_POLICY.md` dentro del propio repositorio del modelo
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante (papers, blogs, repos o demos) sobre este modelo; los resultados devueltos no guardan relación con el artefacto.

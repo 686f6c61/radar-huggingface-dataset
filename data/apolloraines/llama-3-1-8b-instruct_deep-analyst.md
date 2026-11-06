@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Al ser un modelo de 8.030 millones de parámetros en precisión bf16, el peso del modelo ocupa aproximadamente 16 GB en memoria. Se requiere una GPU con al menos 16 GB de VRAM para inferencia en bf16 sin cuantización.
 - Con cuantización a 8 bits (si se generara) la VRAM necesaria bajaría a unos 8-9 GB; a 4 bits, a unos 4-5 GB. Sin embargo, no se han publicado versiones cuantizadas del modelo.
 - GPUs recomendadas: NVIDIA RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) o similares con suficiente VRAM. En GPUs de consumo con 16 GB (como RTX 4080) podría caber en bf16, pero con margen ajustado.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, puede ejecutarse con Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se crea un Modelfile) o TGI. No se han publicado integraciones específicas.
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, puede ejecutarse con Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se crea un Modelfile) o TGI. No se han publicado integraciones específicas.
 - Latencia y throughput: no disponibles. Dependerán del hardware y del backend utilizado.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ La comparativa se limita a datos de arquitectura y licencia, ya que no hay métr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_Deep-Analyst
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_Deep-Analyst
 - Repositorio de jBlaze: https://github.com/apolloraines/jblaze
 - Modelo base Llama-3.1-8B-Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

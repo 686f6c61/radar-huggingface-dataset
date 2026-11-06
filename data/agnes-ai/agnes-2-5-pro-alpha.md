@@ -22,7 +22,7 @@ Con aproximadamente 396,8 mil millones de parámetros y una arquitectura de mezc
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no se ha hecho pública. El tag `qwen3_5_moe` en HuggingFace indica que se trata de un modelo de mezcla de expertos derivado de la familia Qwen3.5, aunque no se especifican el numero de expertos, la dimension de los mismos ni la distribucion de capas. Al ser un modelo propietario, no se han publicado detalles sobre el dataset de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion utilizadas (RLHF, DPO, etc.). Tampoco se conocen innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal; la unica informacion disponible es que soporta entrada multimodal (texto, imagen y video) y salida de texto, con una ventana de contexto de 1 M de tokens y una salida maxima de 65.536 tokens.
+La arquitectura exacta no se ha hecho pública. El tag `qwen3_5_moe` en Hugging Face indica que se trata de un modelo de mezcla de expertos derivado de la familia Qwen3.5, aunque no se especifican el numero de expertos, la dimension de los mismos ni la distribucion de capas. Al ser un modelo propietario, no se han publicado detalles sobre el dataset de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion utilizadas (RLHF, DPO, etc.). Tampoco se conocen innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal; la unica informacion disponible es que soporta entrada multimodal (texto, imagen y video) y salida de texto, con una ventana de contexto de 1 M de tokens y una salida maxima de 65.536 tokens.
 
 ## Capacidades
 
@@ -86,11 +86,11 @@ Agnes supera a Qwen3.5-397B en agentic work y coding, pero queda por detras de G
 - Sesgos potenciales: al estar entrenado principalmente en ingles y chino, puede reflejar sesgos culturales y linguisticos de esas comunidades.
 - Sin transparencia de entrenamiento: no se han publicado detalles sobre el dataset, el proceso de alineacion ni las medidas de seguridad implementadas, lo que dificulta la evaluacion de sesgos y riesgos.
 - Rendimiento variable en benchmarks: aunque destaca en Terminal-Bench v2.1, queda por detras de otros modelos propietarios en tareas como τ³-Banking o GDPval-AA v2, lo que sugiere que no es la mejor opcion para todos los escenarios agénticos.
-- Fecha de creacion reciente (agosto de 2026) y sin descargas ni likes en HuggingFace, lo que indica una adopcion aun limitada y poca validacion independiente por parte de la comunidad.
+- Fecha de creacion reciente (agosto de 2026) y sin descargas ni likes en Hugging Face, lo que indica una adopcion aun limitada y poca validacion independiente por parte de la comunidad.
 
 ## Enlaces
 
-- [HuggingFace - Agnes-AI/Agnes-2.5-Pro-Alpha](https://huggingface.co/Agnes-AI/Agnes-2.5-Pro-Alpha)
+- [Hugging Face - Agnes-AI/Agnes-2.5-Pro-Alpha](https://huggingface.co/Agnes-AI/Agnes-2.5-Pro-Alpha)
 - [Documentacion oficial de Agnes 2.5 Pro Alpha](https://wiki.agnes-ai.com/en/docs/agnes-25-pro-alpha)
 - [Articulo de Artificial Analysis sobre el lanzamiento](https://artificialanalysis.ai/articles/agnes-ai-releases-agnes-2-5-pro-alpha)
 - [Pagina del modelo en Artificial Analysis](https://artificialanalysis.ai/models/agnes-2-5-pro-alpha)

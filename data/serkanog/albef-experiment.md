@@ -31,7 +31,7 @@ Su relevancia actual es, por tanto, estrictamente metodológica: sirve como punt
 | Fecha de creacion | 2026-09-12 |
 | Ultima actualizacion | 2026-09-12 |
 | Estado del checkpoint | inicialización sin entrenar (no es un checkpoint evaluado) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 

@@ -85,7 +85,7 @@ No se dispone de datos comparativos de benchmarks en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_60k
+- Repositorio Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_hard_items__mask__blur__sim__all_cameras__live
 - Guía de LeRobot para pi05: https://huggingface.co/docs/lerobot/main/en/pi05

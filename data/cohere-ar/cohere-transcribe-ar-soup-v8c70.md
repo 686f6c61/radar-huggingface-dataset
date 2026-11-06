@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Cohere-AR/cohere-transcribe-ar-soup-v8c70 es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por la organizacion Cohere-AR, un espacio de trabajo aparentemente vinculado a Cohere y centrado en transcripcion para arabe. El modelo se distribuye bajo la libreria transformers en formato safetensors y esta etiquetado con la arquitectura propietaria `cohere_asr`, lo que indica que no emplea una arquitectura estandar de la libreria sino una implementacion especifica incluida en el repositorio.
+Cohere-AR/cohere-transcribe-ar-soup-v8c70 es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por la organizacion Cohere-AR, un espacio de trabajo aparentemente vinculado a Cohere y centrado en transcripcion para arabe. El modelo se distribuye bajo la libreria transformers en formato safetensors y esta etiquetado con la arquitectura propietaria `cohere_asr`, lo que indica que no emplea una arquitectura estandar de la libreria sino una implementacion especifica incluida en el repositorio.
 
 Con 2.065.770.752 parametros (aproximadamente 2,07 mil millones) y un tamano de repositorio de 4,1 GB, se situa en la gama media de los modelos ASR modernos. Su rasgo diferencial declarado es el soporte de code-switching entre arabe (ar) e ingles (en), ademas de estar orientado a audio telefonico (telephony), un dominio especialmente dificil por el ancho de banda limitado y el ruido de canal.
 
-El modelo deriva de Cohere-AR/cohere-transcribe-ar-rl-v8ctrl mediante un proceso de fusion de pesos o ajuste denominado "soup" en la nomenclatura del identificador, una tecnica habitual para combinar varios checkpoints y mejorar la robustez. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. No se han publicado resultados de benchmarks ni detalles de entrenamiento en la informacion disponible.
+El modelo deriva de Cohere-AR/cohere-transcribe-ar-rl-v8ctrl mediante un proceso de fusion de pesos o ajuste denominado "soup" en la nomenclatura del identificador, una tecnica habitual para combinar varios checkpoints y mejorar la robustez. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. No se han publicado resultados de benchmarks ni detalles de entrenamiento en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No se han publicado en la informacion proporcionada el numero de horas de audio 
 - Reconocimiento automatico del habla (transcripcion) para arabe e ingles.
 - Manejo de code-switching intra-frase entre arabe e ingles, es decir, cambios de idioma dentro de una misma intervencion.
 - Transcripcion de audio telefonico (telephony), con las condiciones de canal y muestreo asociadas.
-- Integracion con la libreria transformers y con la API de HuggingFace Inference Endpoints (tag `endpoints_compatible`).
+- Integracion con la libreria transformers y con la API de Hugging Face Inference Endpoints (tag `endpoints_compatible`).
 - No se documentan capacidades de traduccion, diarizacion de hablantes, deteccion de emociones ni salida de marcas temporales.
 - No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso, al tratarse de un modelo puramente ASR.
 
@@ -57,14 +57,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cuantizacion: no se han publicado tipos de cuantizacion soportados; al no haber versiones GGUF ni AWQ documentadas, no se puede confirmar su viabilidad en CPU o en GPUs de gama baja.
 - GPUs recomendadas: para produccion con concurrencia, A100 o H100 de 40-80 GB; para desarrollo y pruebas, RTX 4090 (24 GB) o RTX A6000 (48 GB) son suficientes en fp16.
 - Cabe en GPU de consumo: si, en fp16 en tarjetas con 8 GB o mas (por ejemplo RTX 3070/4060 Ti en adelante), siempre que la implementacion de `cohere_asr` no anada un consumo de activaciones elevado.
-- Opciones de despliegue: transformers con la implementacion incluida en el repositorio y HuggingFace Inference Endpoints (tag `endpoints_compatible`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, dado que no es un modelo de lenguaje.
+- Opciones de despliegue: transformers con la implementacion incluida en el repositorio y Hugging Face Inference Endpoints (tag `endpoints_compatible`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, dado que no es un modelo de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cohere-AR/cohere-transcribe-ar-soup-v8c70 | 2,07 B | ar, en (code-switching) | no disponible | no disponible | gated en HuggingFace |
+| Cohere-AR/cohere-transcribe-ar-soup-v8c70 | 2,07 B | ar, en (code-switching) | no disponible | no disponible | gated en Hugging Face |
 | Whisper large-v3 (OpenAI) | 1,55 B | multilingue (99 idiomas) | 30 s por ventana | MIT | abierta |
 | SeamlessM4T v2 (Meta) | ~2,3 B | multilingue (incluye ar) | no disponible | CC-BY-NC 4.0 | abierta |
 | MMS (Meta) | ~1 B por idioma | 1000+ idiomas | no disponible | CC-BY-NC 4.0 | abierta |
@@ -75,7 +75,7 @@ La comparativa se ofrece a titulo orientativo: no se dispone de datos de rendimi
 
 - No se han publicado resultados de benchmarks, por lo que el rendimiento real en WER y CER es desconocido.
 - La licencia no esta disponible: no se puede confirmar si el uso comercial esta permitido, lo que supone un riesgo legal para produccion.
-- El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace y puede implicar restricciones adicionales de uso.
+- El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face y puede implicar restricciones adicionales de uso.
 - La cobertura linguistica se limita a arabe e ingles; no se debe asumir soporte para otros idiomas ni para variantes dialectales no documentadas.
 - El modelo esta especializado en audio telefonico; su rendimiento en audio de alta fidelidad, musica o entornos muy ruidosos no esta documentado.
 - Riesgo de alucinacion en segmentos de silencio o ruido, comun en modelos ASR seq2seq, aunque no se cuantifica en la informacion disponible.
@@ -85,7 +85,7 @@ La comparativa se ofrece a titulo orientativo: no se dispone de datos de rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v8c70
+- Modelo en Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v8c70
 - Modelo base declarado: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v8ctrl
 - Sitio corporativo de Cohere: https://cohere.com/
 - Cohere en Wikipedia: https://en.wikipedia.org/wiki/Cohere

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un documento académico en formato Markdown titulado `paper_020791136_embodied_ai.md`, que trata sobre el tema de inteligencia artificial encarnada (embodied AI). El autor es `atharvguptacit` y el contenido está estructurado como un artículo científico siguiendo el formato LaTeX ACL, con estilo de citación EndNote y una organización típica de introducción, problema, solución, validación y trabajo futuro. El estilo de escritura es descriptivo y detallado.
+Este repositorio de Hugging Face contiene un documento académico en formato Markdown titulado `paper_020791136_embodied_ai.md`, que trata sobre el tema de inteligencia artificial encarnada (embodied AI). El autor es `atharvguptacit` y el contenido está estructurado como un artículo científico siguiendo el formato LaTeX ACL, con estilo de citación EndNote y una organización típica de introducción, problema, solución, validación y trabajo futuro. El estilo de escritura es descriptivo y detallado.
 
 Es importante señalar que este repositorio no contiene un modelo de aprendizaje automático ni pesos entrenados; es únicamente un artefacto textual. Su relevancia radica en que puede servir como ejemplo de formato y estructura para la redacción de papers sobre IA encarnada, aunque no ofrece capacidades de inferencia ni procesamiento. La licencia Apache-2.0 permite su uso y modificación con atribución.
 
@@ -34,7 +34,7 @@ No se trata de un modelo de aprendizaje automatico, sino de un documento Markdow
 
 - Referencia para investigadores que necesiten redactar un paper sobre IA encarnada siguiendo el formato ACL: el documento puede usarse como plantilla de estructura y estilo.
 - Estudio de contenido: puede leerse para obtener una vision general del tema "embodied AI", aunque el texto completo no esta incluido en la informacion proporcionada.
-- Ejemplo de licenciamiento: muestra como un documento puede publicarse bajo Apache-2.0 en HuggingFace.
+- Ejemplo de licenciamiento: muestra como un documento puede publicarse bajo Apache-2.0 en Hugging Face.
 - Material educativo para cursos de escritura cientifica en IA.
 - Evaluacion de metadatos: los tags del repositorio (compact, neutral, etc.) pueden analizarse para entender como se etiquetan artefactos textuales.
 - No es apto para integracion en pipelines de produccion, inferencia o procesamiento de datos.
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. Al no ser un modelo de IA, no existe categoria de modelos comparables. Otros repositorios de HuggingFace que contienen papers o documentos academicos podrian ser similares en formato, pero no se dispone de informacion sobre ellos.
+No disponible. Al no ser un modelo de IA, no existe categoria de modelos comparables. Otros repositorios de Hugging Face que contienen papers o documentos academicos podrian ser similares en formato, pero no se dispone de informacion sobre ellos.
 
 ## Limitaciones y advertencias
 
@@ -64,7 +64,7 @@ No disponible. Al no ser un modelo de IA, no existe categoria de modelos compara
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/atharvguptacit/paper_020791136_embodied_ai
+- Repositorio de Hugging Face: https://huggingface.co/atharvguptacit/paper_020791136_embodied_ai
 - Resultados de busqueda web relacionados con el tema (no del repositorio):
   - https://luohongkun.top/Embodied-AI-Daily/index.html
   - https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List

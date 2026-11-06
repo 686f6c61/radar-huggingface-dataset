@@ -96,7 +96,7 @@ La diferencia clave frente al modelo base es la especialización en la decisión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiaomi-research/ProactiveMobile-Qwen2.5-VL-7B
+- Modelo en Hugging Face: https://huggingface.co/xiaomi-research/ProactiveMobile-Qwen2.5-VL-7B
 - Dataset ProactiveMobile: https://huggingface.co/datasets/xiaomi-research/ProactiveMobile
 - Repositorio de código: https://github.com/xiaomi-research/proactive-mobile
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

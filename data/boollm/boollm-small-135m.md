@@ -96,7 +96,7 @@ Advertencia: los datos de las tres alternativas no proceden de la informacion pr
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Boollm/Boollm-Small-135M
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Boollm/Boollm-Small-135M
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Archivos del release: `Boollm-Small-135M.Q8_0.gguf`, `LICENSE`, `release-manifest.json` (alojados en el repositorio anterior)
 - Paper, blog, repositorio de codigo o demo especificos de este release: no disponibles. La model card no incluye enlaces adicionales.

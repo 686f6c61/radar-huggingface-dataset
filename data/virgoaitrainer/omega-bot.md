@@ -6,7 +6,7 @@ El modelo `virgoaitrainer/omega-bot` es un fine-tune del modelo base `Meta-Llama
 
 El modelo se presenta como un archivo único cuantizado en Q4_K_M, lo que lo hace adecuado para hardware de consumo con limitaciones de VRAM. Al estar basado en Llama 3.1, hereda la arquitectura transformer estándar de Meta, aunque no se especifican detalles adicionales sobre el proceso de fine-tuning, el dataset utilizado ni la longitud de contexto final. Su relevancia radica en la combinación de un tamaño manejable (8B) con la flexibilidad del formato GGUF, que permite su despliegue en una amplia variedad de dispositivos, desde portátiles hasta servidores con GPUs modestas.
 
-A pesar de que la ficha de HuggingFace no incluye información sobre licencia, idiomas o benchmarks, el modelo está etiquetado como "conversational" y "endpoints_compatible", lo que sugiere su uso en aplicaciones de chat y asistentes locales. No obstante, la ausencia de datos técnicos detallados limita la evaluación objetiva de sus capacidades reales.
+A pesar de que la ficha de Hugging Face no incluye información sobre licencia, idiomas o benchmarks, el modelo está etiquetado como "conversational" y "endpoints_compatible", lo que sugiere su uso en aplicaciones de chat y asistentes locales. No obstante, la ausencia de datos técnicos detallados limita la evaluación objetiva de sus capacidades reales.
 
 ## Especificaciones tecnicas
 
@@ -80,6 +80,6 @@ La comparacion se basa en caracteristicas estructurales, ya que no hay datos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/virgoaitrainer/omega-bot
+- Hugging Face: https://huggingface.co/virgoaitrainer/omega-bot
 - Unsloth (libreria de fine-tuning): https://github.com/unslothai/unsloth
 - llama.cpp (herramienta de inferencia): https://github.com/ggerganov/llama.cpp

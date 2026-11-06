@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielw-alker54/assignment-matching` es un repositorio de HuggingFace que contiene una implementación funcional de un Vision Transformer (ViT) en configuración *tiny* orientada a tareas de *matching* (emparejamiento) entre entradas. Lo publica el usuario danielw-alker54 bajo licencia Apache 2.0 y con un único checkpoint de inicialización en formato safetensors de 49.600 parámetros totales. No es un modelo entrenado: la propia model card lo describe como un punto de partida experimental para *smoke tests* y no presenta ninguna métrica de benchmark.
+`danielw-alker54/assignment-matching` es un repositorio de Hugging Face que contiene una implementación funcional de un Vision Transformer (ViT) en configuración *tiny* orientada a tareas de *matching* (emparejamiento) entre entradas. Lo publica el usuario danielw-alker54 bajo licencia Apache 2.0 y con un único checkpoint de inicialización en formato safetensors de 49.600 parámetros totales. No es un modelo entrenado: la propia model card lo describe como un punto de partida experimental para *smoke tests* y no presenta ninguna métrica de benchmark.
 
 El interés del artefacto es de ingeniería más que de rendimiento. El repositorio incluye el código Python con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que sirve como inicialización válida para pruebas de humo. La arquitectura emplea atención estándar, fusión por concatenación más MLP, activación mish y normalización scalenorm, con RMSprop y un *schedule* polinomial como receta de entrenamiento propuesta.
 
@@ -76,10 +76,10 @@ Las cifras de los modelos de referencia son valores públicos aproximados de sus
 
 | Modelo | Parámetros | Contexto / entrada | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `danielw-alker54/assignment-matching` | 49.600 | No documentado | Checkpoint de inicialización, sin entrenar | Apache 2.0 | HuggingFace, 0 descargas |
-| google/vit-base-patch16-224 | ~86 M | Imagen 224×224, parches 16×16 | Preentrenado en ImageNet-21k y ajustado | Apache 2.0 | HuggingFace, ampliamente usado |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | Texto, 256 tokens | Entrenado para similitud textual | Apache 2.0 | HuggingFace, muy usado |
-| CLIP ViT-B/32 | ~151 M | Imagen y texto | Entrenado con pares imagen-texto | MIT (pesos OpenAI) | HuggingFace y repositorio original |
+| `danielw-alker54/assignment-matching` | 49.600 | No documentado | Checkpoint de inicialización, sin entrenar | Apache 2.0 | Hugging Face, 0 descargas |
+| google/vit-base-patch16-224 | ~86 M | Imagen 224×224, parches 16×16 | Preentrenado en ImageNet-21k y ajustado | Apache 2.0 | Hugging Face, ampliamente usado |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | Texto, 256 tokens | Entrenado para similitud textual | Apache 2.0 | Hugging Face, muy usado |
+| CLIP ViT-B/32 | ~151 M | Imagen y texto | Entrenado con pares imagen-texto | MIT (pesos OpenAI) | Hugging Face y repositorio original |
 
 La comparación honesta es que este repositorio no compite en rendimiento con ninguno de los anteriores: no está entrenado ni evaluado. Su ventaja es el coste computacional y la transparencia del código; su desventaja es que cualquiera de los modelos preentrenados de la tabla ofrece hoy capacidades utilizables sin necesidad de entrenamiento.
 
@@ -98,5 +98,5 @@ La comparación honesta es que este repositorio no compite en rendimiento con ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielw-alker54/assignment-matching
+- Modelo en Hugging Face: https://huggingface.co/danielw-alker54/assignment-matching
 - Paper, blog técnico, repositorio de código independiente o demo: no disponible en la información proporcionada.

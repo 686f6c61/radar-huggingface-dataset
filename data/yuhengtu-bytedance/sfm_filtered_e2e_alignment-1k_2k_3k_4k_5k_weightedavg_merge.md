@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables. El modelo es un merge d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-1k_2k_3k_4k_5k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-1k_2k_3k_4k_5k_weightedavg_merge
 - Merge similar (1k_2k_3k): https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-1k_2k_3k_merge
 - Merge similar (4k_5k_6k): https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-4k_5k_6k_merge
 - Merge similar (0k_1k_2k): https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-0k_1k_2k_merge

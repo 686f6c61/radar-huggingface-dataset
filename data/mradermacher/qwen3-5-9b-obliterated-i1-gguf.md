@@ -65,7 +65,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-9B-OBLITERATED-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-OBLITERATED-i1-GGUF
 - Modelo base (shoukewei/Qwen3.5-9B-OBLITERATED): https://huggingface.co/shoukewei/Qwen3.5-9B-OBLITERATED
 - Página de ayuda de mradermacher para solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
 - Página de descarga alternativa del mismo modelo: https://hf.tst.eu/model#Qwen3.5-9B-OBLITERATED-i1-GGUF

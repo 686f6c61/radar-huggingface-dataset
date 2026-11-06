@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mariassmp/hybrid-matching` es un prototipo de investigación orientado a la tarea de *matching* (emparejamiento o correspondencia entre elementos), desarrollado por el usuario `mariassmp` y publicado en HuggingFace. Se trata de una implementación experimental a escala "nano" con una arquitectura híbrida que combina atención flash, fusión bilineal, activación GELU (variante tanh) y normalización por lotes (batch norm). El repositorio incluye un script de entrenamiento (`finetune.py`), archivos de configuración y un checkpoint de inicialización en formato `safetensors` con 33.088 parámetros.
+El modelo `mariassmp/hybrid-matching` es un prototipo de investigación orientado a la tarea de *matching* (emparejamiento o correspondencia entre elementos), desarrollado por el usuario `mariassmp` y publicado en Hugging Face. Se trata de una implementación experimental a escala "nano" con una arquitectura híbrida que combina atención flash, fusión bilineal, activación GELU (variante tanh) y normalización por lotes (batch norm). El repositorio incluye un script de entrenamiento (`finetune.py`), archivos de configuración y un checkpoint de inicialización en formato `safetensors` con 33.088 parámetros.
 
 El modelo no presenta resultados de entrenamiento ni benchmarks verificados; la model card indica explícitamente que el checkpoint es una inicialización válida para pruebas de humo y que no se reivindica ninguna puntuación de rendimiento. Su relevancia actual es limitada, ya que se trata de un punto de partida para experimentación, no de un modelo listo para producción. La licencia BSD-3-Clause permite uso comercial con atribución, pero el estado inmaduro del modelo lo hace inadecuado para aplicaciones reales sin un entrenamiento y evaluación posteriores.
 
@@ -62,5 +62,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: mariassmp/hybrid-matching](https://huggingface.co/mariassmp/hybrid-matching)
+- [Hugging Face: mariassmp/hybrid-matching](https://huggingface.co/mariassmp/hybrid-matching)
 - No se encontraron otros enlaces relevantes (papers, blogs, repos) específicos para este modelo en la búsqueda web.

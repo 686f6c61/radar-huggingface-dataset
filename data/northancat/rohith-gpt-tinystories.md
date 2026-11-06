@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NorthanCat/rohith-gpt-tinystories es un modelo de generacion de texto publicado en HuggingFace por el usuario NorthanCat, con arquitectura de tipo GPT-2 y un total de 5.273.088 parametros (aproximadamente 5,3 millones). Se distribuye en formato safetensors dentro del ecosistema `transformers` y esta etiquetado para la tarea `text-generation`, ademas de ser compatible con endpoints de text-generation-inference. El repositorio no registra descargas ni "likes" en el momento de la consulta y su model card es la plantilla autogenerada de HuggingFace, sin contenido tecnico rellenado por el autor.
+NorthanCat/rohith-gpt-tinystories es un modelo de generacion de texto publicado en Hugging Face por el usuario NorthanCat, con arquitectura de tipo GPT-2 y un total de 5.273.088 parametros (aproximadamente 5,3 millones). Se distribuye en formato safetensors dentro del ecosistema `transformers` y esta etiquetado para la tarea `text-generation`, ademas de ser compatible con endpoints de text-generation-inference. El repositorio no registra descargas ni "likes" en el momento de la consulta y su model card es la plantilla autogenerada de Hugging Face, sin contenido tecnico rellenado por el autor.
 
 El problema que aborda no esta documentado: la model card no especifica datos de entrenamiento, hiperparametros, dataset ni objetivo. El nombre del repositorio sugiere un entrenamiento sobre el dataset TinyStories (relatos infantiles sinteticos de vocabulario sencillo), una practica habitual para validar pipelines de entrenamiento con modelos minimos, pero esta hipotesis no se confirma en ninguna parte de la informacion proporcionada.
 
@@ -27,13 +27,13 @@ La unica informacion arquitectonica disponible procede de las etiquetas del repo
 
 No se dispone de informacion sobre el proceso de entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni si hubo fases de ajuste fino supervisado, RLHF o DPO. El unico enlace a un paper presente en las etiquetas es `arxiv:1910.09700`, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), citado en la seccion de impacto ambiental de la plantilla de model card. No es el paper del modelo ni describe su entrenamiento, por lo que no debe interpretarse como fuente tecnica.
 
-La innovacion tecnica destacable es inexistente o no documentada. El unico aspecto reseñable es la compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, que permite desplegarlo mediante la infraestructura de HuggingFace sin adaptaciones.
+La innovacion tecnica destacable es inexistente o no documentada. El unico aspecto reseñable es la compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, que permite desplegarlo mediante la infraestructura de Hugging Face sin adaptaciones.
 
 ## Capacidades
 
 - Generacion de texto autoregresiva: es la unica capacidad confirmada por la etiqueta `text-generation`.
 - Compatibilidad con `transformers`: puede cargarse con `AutoModelForCausalLM` y `AutoTokenizer` (si el tokenizador esta incluido en el repositorio, algo que no se detalla).
-- Compatibilidad con text-generation-inference y endpoints compatibles de HuggingFace.
+- Compatibilidad con text-generation-inference y endpoints compatibles de Hugging Face.
 - Razonamiento, matematicas y generacion de codigo: no disponible (no hay evidencia ni evaluacion).
 - Tool calling / function calling: no disponible; los modelos de esta escala no suelen soportar plantillas de herramientas.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -72,10 +72,10 @@ No hay datos de rendimiento del modelo analizado que permitan una comparacion fu
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NorthanCat/rohith-gpt-tinystories | 5,3 M | GPT-2 decoder-only | no disponible | no disponible | HuggingFace, safetensors |
-| Familia TinyStories (roneneldan) | variantes de aproximadamente 1 M a 33 M | GPT-2 / GPT-Neo pequeños | no disponible | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | GPT-2 decoder-only | 1024 tokens (segun documentacion publica de GPT-2) | licencia especifica de OpenAI | HuggingFace y otras fuentes |
-| SmolLM-135M (HuggingFace) | 135 M | Transformer decoder-only | no disponible | no disponible | HuggingFace |
+| NorthanCat/rohith-gpt-tinystories | 5,3 M | GPT-2 decoder-only | no disponible | no disponible | Hugging Face, safetensors |
+| Familia TinyStories (roneneldan) | variantes de aproximadamente 1 M a 33 M | GPT-2 / GPT-Neo pequeños | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | GPT-2 decoder-only | 1024 tokens (segun documentacion publica de GPT-2) | licencia especifica de OpenAI | Hugging Face y otras fuentes |
+| SmolLM-135M (Hugging Face) | 135 M | Transformer decoder-only | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,13 +84,13 @@ No hay datos de rendimiento del modelo analizado que permitan una comparacion fu
 - Limitaciones de contexto e idioma: no se ha documentado la longitud de contexto ni los idiomas soportados. Las etiquetas no declaran idioma alguno, por lo que no hay garantia de que produzca texto coherente en castellano ni en ningun otro idioma concreto.
 - Licencia: no disponible. Al no especificarse licencia en el repositorio, no hay autorizacion explicita de uso comercial; en la practica esto implica tratar el modelo como no apto para produccion hasta que el autor aclare los terminos.
 - Ausencia total de evaluacion: no existe ningun benchmark ni metrica publicada, por lo que no se puede afirmar ningun nivel de calidad.
-- Model card vacia: la documentacion es la plantilla autogenerada de HuggingFace. No hay informacion sobre datos de entrenamiento, hiperparametros, infraestructura ni uso previsto, lo que impide auditar procedencia de datos y posibles contaminaciones.
+- Model card vacia: la documentacion es la plantilla autogenerada de Hugging Face. No hay informacion sobre datos de entrenamiento, hiperparametros, infraestructura ni uso previsto, lo que impide auditar procedencia de datos y posibles contaminaciones.
 - Trazabilidad: al no haber paper, repositorio de codigo ni demo asociados, no es posible reproducir el entrenamiento ni verificar el recuento de parametros mas alla del archivo safetensors.
 - Uso en produccion: desaconsejado como sistema generativo de cara al usuario final. Su tamano lo sitúa por debajo del umbral en el que la generacion de texto resulta util para tareas reales.
 - Fecha de publicacion: el repositorio figura creado el 2026-10-05 y actualizado el mismo dia, con cero descargas, lo que sugiere un experimento puntual sin mantenimiento posterior.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NorthanCat/rohith-gpt-tinystories
+- Modelo en Hugging Face: https://huggingface.co/NorthanCat/rohith-gpt-tinystories
 - Paper citado en las etiquetas (impacto ambiental del aprendizaje automatico, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact#compute

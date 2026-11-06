@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ferrazzipietro/Qwen3-1.7B-cpt-tesi_all es un checkpoint de 1.720.030.208 parámetros (aproximadamente 1,72 mil millones) publicado en HuggingFace por el usuario ferrazzipietro. A partir del identificador y de la etiqueta `qwen3` se deduce que deriva del modelo base Qwen3-1.7B, y el sufijo `cpt` apunta a un proceso de preentrenamiento continuado (continued pre-training) sobre un corpus propio identificado como `tesi_all`. Ninguna de estas dos inferencias está confirmada por el repositorio, que no incluye model card, pipeline, licencia ni idiomas declarados.
+ferrazzipietro/Qwen3-1.7B-cpt-tesi_all es un checkpoint de 1.720.030.208 parámetros (aproximadamente 1,72 mil millones) publicado en Hugging Face por el usuario ferrazzipietro. A partir del identificador y de la etiqueta `qwen3` se deduce que deriva del modelo base Qwen3-1.7B, y el sufijo `cpt` apunta a un proceso de preentrenamiento continuado (continued pre-training) sobre un corpus propio identificado como `tesi_all`. Ninguna de estas dos inferencias está confirmada por el repositorio, que no incluye model card, pipeline, licencia ni idiomas declarados.
 
 El modelo se publica como repositorio de solo pesos en formato safetensors, sin tarjeta descriptiva y sin métricas de evaluación. En el momento de la consulta acumula 104 descargas y 0 likes, lo que lo sitúa en la categoría de artefacto de investigación más que de modelo listo para explotación. El tamaño total del repositorio, 70,3 GB, es muy superior al que correspondería a un único checkpoint de 1,72 mil millones de parámetros en precisión completa o media (aproximadamente 3,4 GB en fp16), lo que sugiere la presencia de múltiples copias, estados de optimizador o checkpoints intermedios de entrenamiento.
 
@@ -97,7 +97,7 @@ El modelo analizado comparte escala con Qwen3-1.7B y SmolLM2 1.7B, pero no puede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ferrazzipietro/Qwen3-1.7B-cpt-tesi_all
+- Modelo en Hugging Face: https://huggingface.co/ferrazzipietro/Qwen3-1.7B-cpt-tesi_all
 - Repositorio del modelo base Qwen3 (referencia de la familia, no confirmada como origen): https://huggingface.co/Qwen/Qwen3-1.7B
 
 Nota: la búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo. Los resultados obtenidos correspondían a páginas de soporte de Microsoft sobre activación de claves de producto de Office, sin relación con el modelo analizado, por lo que no se incluyen. No se han encontrado papers, blogs, repositorios de código ni demos asociados a `ferrazzipietro/Qwen3-1.7B-cpt-tesi_all`.

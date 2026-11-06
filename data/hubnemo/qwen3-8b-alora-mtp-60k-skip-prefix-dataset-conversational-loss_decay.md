@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino derivado de Qwen3-8B, publicado por el usuario `hubnemo` el 28 de octubre de 2026 bajo el identificador `Qwen3-8B-ALoRA-MTP-60k-skip-prefix-dataset-conversational-loss_decay`. Se distribuye en formato `safetensors` para la librería `transformers`, con un tamano de repositorio de 71,4 GB. No es un modelo publicado por un laboratorio con documentación técnica: la model card es la plantilla automática de HuggingFace y no contiene ni una sola sección completada, sin licencia declarada, sin idiomas declarados y sin pipeline asignado.
+Este repositorio contiene un ajuste fino derivado de Qwen3-8B, publicado por el usuario `hubnemo` el 28 de octubre de 2026 bajo el identificador `Qwen3-8B-ALoRA-MTP-60k-skip-prefix-dataset-conversational-loss_decay`. Se distribuye en formato `safetensors` para la librería `transformers`, con un tamano de repositorio de 71,4 GB. No es un modelo publicado por un laboratorio con documentación técnica: la model card es la plantilla automática de Hugging Face y no contiene ni una sola sección completada, sin licencia declarada, sin idiomas declarados y sin pipeline asignado.
 
 La única información sustantiva disponible es el propio identificador, que codifica las técnicas de entrenamiento empleadas: ALoRA, predicción multi-token (MTP), una ventana de contexto de 60k, un dataset con "skip-prefix" y una función de pérdida conversacional con decaimiento. Todos estos términos son indicios del proceso de ajuste, no especificaciones confirmadas por el autor. No hay datos de entrenamiento, hiperparámetros, benchmarks ni instrucciones de uso.
 
@@ -98,6 +98,6 @@ La diferencia práctica frente a las alternativas no es de rendimiento —del qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-60k-skip-prefix-dataset-conversational-loss_decay
+- Repositorio en Hugging Face: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-60k-skip-prefix-dataset-conversational-loss_decay
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código, demos ni datasets asociados a este modelo.

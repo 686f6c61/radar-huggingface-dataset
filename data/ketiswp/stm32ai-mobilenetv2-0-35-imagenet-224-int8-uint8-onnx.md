@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una versión cuantizada a 8 bits (INT8/UINT8) de MobileNetV2 con factor de ancho 0.35, preparada para ejecutarse en microcontroladores STM32 mediante el framework STM32Cube.AI. El modelo original fue desarrollado por STMicroelectronics como parte de su model zoo de IA para STM32, y esta versión en formato ONNX con cuantización estática en QDQ (Quantize-Dequantize) ha sido publicada por el usuario ketiswp en HuggingFace. Su propósito es ofrecer clasificación de imágenes de 224x224 píxeles sobre las 1000 clases de ImageNet, optimizada para entornos con recursos limitados.
+Este modelo es una versión cuantizada a 8 bits (INT8/UINT8) de MobileNetV2 con factor de ancho 0.35, preparada para ejecutarse en microcontroladores STM32 mediante el framework STM32Cube.AI. El modelo original fue desarrollado por STMicroelectronics como parte de su model zoo de IA para STM32, y esta versión en formato ONNX con cuantización estática en QDQ (Quantize-Dequantize) ha sido publicada por el usuario ketiswp en Hugging Face. Su propósito es ofrecer clasificación de imágenes de 224x224 píxeles sobre las 1000 clases de ImageNet, optimizada para entornos con recursos limitados.
 
 La relevancia actual radica en la creciente demanda de modelos de visión por computador ligeros y eficientes para dispositivos embebidos, donde el consumo de memoria y la velocidad de inferencia son críticos. La cuantización a 8 bits reduce el tamaño del modelo y el uso de RAM, manteniendo una precisión aceptable para tareas de clasificación en tiempo real. Además, al estar disponible en ONNX, puede desplegarse con herramientas como ONNX Runtime o convertirse a formatos específicos para microcontroladores, lo que facilita su integración en proyectos de edge AI.
 
@@ -66,7 +66,7 @@ No se dispone de datos de comparación en la información proporcionada. Se podr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-int8-uint8-onnx
+- Modelo en Hugging Face: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-int8-uint8-onnx
 - Versión FP32 pareada: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-fp32-onnx
 - Modelo original en GitHub (STM32 AI Model Zoo): https://github.com/STMicroelectronics/stm32ai-modelzoo/tree/1423c78953a830903485135febe1dd98ff31aed8/image_classification/mobilenetv2
 - STM32 Model Zoo general: https://github.com/STMicroelectronics/stm32ai-modelzoo

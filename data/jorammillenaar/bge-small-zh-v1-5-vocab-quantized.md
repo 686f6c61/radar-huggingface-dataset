@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoramMillenaar/bge-small-zh-v1.5-vocab-quantized
+- Repositorio en Hugging Face: https://huggingface.co/JoramMillenaar/bge-small-zh-v1.5-vocab-quantized
 - Modelo base: https://huggingface.co/BAAI/bge-small-zh-v1.5
 - Conversión previa de la que deriva: https://huggingface.co/Xenova/bge-small-zh-v1.5
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js

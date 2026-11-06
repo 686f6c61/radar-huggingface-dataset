@@ -27,7 +27,7 @@ La información pública disponible sobre esta ficha concreta es escasa: no se d
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada. La model card del repositorio solo indica que se trata de cuantizaciones estaticas (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) del checkpoint `vpyn/MiniMax-M2.5-CARVE-v1-BF16`, convertido desde el formato HuggingFace a GGUF. Es decir, la model card describe el proceso de cuantizacion, no el entrenamiento del modelo original.
+No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada. La model card del repositorio solo indica que se trata de cuantizaciones estaticas (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) del checkpoint `vpyn/MiniMax-M2.5-CARVE-v1-BF16`, convertido desde el formato Hugging Face a GGUF. Es decir, la model card describe el proceso de cuantizacion, no el entrenamiento del modelo original.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Lo unico atribuible a la familia MiniMax M2.5, segun la pagina oficial del fabricante recogida en la busqueda, es que combina optimizacion mediante aprendizaje por refuerzo para la descomposicion de tareas con eficiencia en tokens de razonamiento ("thinking token efficiency"), orientada a codigo y a flujos de agentes. La variante "CARVE-v1" es un ajuste de la comunidad publicado por el usuario vpyn, sin documentacion tecnica accesible en esta busqueda.
 
@@ -86,9 +86,9 @@ No se dispone de datos de benchmarks que permitan una comparativa de rendimiento
 
 | Modelo / variante | Parametros | Formato | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/MiniMax-M2.5-CARVE-v1-BF16-GGUF (este) | ≈228,7 B | GGUF (Q2_K a Q8_0) | 83,4-243,2 GB por quant | no disponible | HuggingFace, 313 descargas |
-| vpyn/MiniMax-M2.5-CARVE-v1-BF16 (base) | ≈228,7 B | BF16 / safetensors | ≈457 GB estimados | no disponible | HuggingFace (modelo de origen) |
-| mradermacher/MiniMax-M2.5-CARVE-v1-BF16-i1-GGUF | ≈228,7 B | GGUF con imatrix | no disponible | no disponible | HuggingFace (variante ponderada) |
+| mradermacher/MiniMax-M2.5-CARVE-v1-BF16-GGUF (este) | ≈228,7 B | GGUF (Q2_K a Q8_0) | 83,4-243,2 GB por quant | no disponible | Hugging Face, 313 descargas |
+| vpyn/MiniMax-M2.5-CARVE-v1-BF16 (base) | ≈228,7 B | BF16 / safetensors | ≈457 GB estimados | no disponible | Hugging Face (modelo de origen) |
+| mradermacher/MiniMax-M2.5-CARVE-v1-BF16-i1-GGUF | ≈228,7 B | GGUF con imatrix | no disponible | no disponible | Hugging Face (variante ponderada) |
 | MiniMax M2.5 (servicio oficial) | no disponible | API propietaria | no aplica | no disponible | API en la nube, 100 TPS / 50 TPS |
 
 ## Limitaciones y advertencias

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rachin7/my-unet-segmentation es un repositorio de HuggingFace publicado por el usuario Rachin7 cuyo identificador apunta a un modelo de segmentación de imágenes basado en la arquitectura U-Net. Se trata de un "model repo" sin model card descriptiva: el README se limita a declarar la licencia MIT y no incluye informacion sobre el problema concreto que resuelve, el dataset de entrenamiento ni las clases que segmenta. El tamano del repositorio es de 0,1 GB, lo que es coherente con un modelo convolucional de segmentacion de pequeno o mediano tamano y no con un modelo de lenguaje de gran escala.
+Rachin7/my-unet-segmentation es un repositorio de Hugging Face publicado por el usuario Rachin7 cuyo identificador apunta a un modelo de segmentación de imágenes basado en la arquitectura U-Net. Se trata de un "model repo" sin model card descriptiva: el README se limita a declarar la licencia MIT y no incluye informacion sobre el problema concreto que resuelve, el dataset de entrenamiento ni las clases que segmenta. El tamano del repositorio es de 0,1 GB, lo que es coherente con un modelo convolucional de segmentacion de pequeno o mediano tamano y no con un modelo de lenguaje de gran escala.
 
 El interes de esta ficha es, por tanto, esencialmente descriptivo y de evaluacion preliminar: el modelo no presenta descargas ni "likes" en el momento de la consulta, no tiene pipeline declarado y no ofrece datos de rendimiento. Cualquier equipo que quiera evaluarlo deberia inspeccionar los ficheros de pesos del repositorio y reproducir el entrenamiento o la inferencia por su cuenta antes de considerarlo para un caso de uso real.
 
@@ -70,10 +70,10 @@ No es posible establecer una comparativa cuantitativa porque no hay datos public
 
 | Modelo | Categoria | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rachin7/my-unet-segmentation | U-Net para segmentacion | no disponible | no disponible | MIT | HuggingFace, sin descargas |
+| Rachin7/my-unet-segmentation | U-Net para segmentacion | no disponible | no disponible | MIT | Hugging Face, sin descargas |
 | U-Net original (Ronneberger et al., 2015) | U-Net para segmentacion | ~7,8 M en la variante original de la publicacion | imagenes 2D de 572x572 en el paper original | codigo de referencia con licencia academica | publicacion y repositorios de referencia |
 | nnU-Net | framework auto-configurable de segmentacion | depende del dataset | 2D y 3D | codigo abierto (Apache 2.0 en versiones recientes) | repositorio publico |
-| SegFormer | transformer para segmentacion semantica | variantes B0-B5 (millones de parametros) | imagenes 2D | Apache 2.0 en las variantes publicadas por NVIDIA | HuggingFace |
+| SegFormer | transformer para segmentacion semantica | variantes B0-B5 (millones de parametros) | imagenes 2D | Apache 2.0 en las variantes publicadas por NVIDIA | Hugging Face |
 
 Las cifras de los modelos alternativos corresponden a datos publicos generales de cada proyecto y deben verificarse en sus respectivas fichas; los campos de este modelo permanecen como "no disponible".
 
@@ -90,9 +90,9 @@ Las cifras de los modelos alternativos corresponden a datos publicos generales d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rachin7/my-unet-segmentation
+- Modelo en Hugging Face: https://huggingface.co/Rachin7/my-unet-segmentation
 - Perfil del autor: https://huggingface.co/Rachin7
 - Paper original de U-Net (Ronneberger et al., 2015): https://arxiv.org/abs/1505.04597
 - Repositorio de referencia de nnU-Net: https://github.com/MIC-DKFZ/nnU-Net
-- SegFormer en HuggingFace: https://huggingface.co/docs/transformers/model_doc/segformer
+- SegFormer en Hugging Face: https://huggingface.co/docs/transformers/model_doc/segformer
 - Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces anteriores corresponden a recursos generales de la categoria U-Net y segmentacion, no a documentacion del autor.

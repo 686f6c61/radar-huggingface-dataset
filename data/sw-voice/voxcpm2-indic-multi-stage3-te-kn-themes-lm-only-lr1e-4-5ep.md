@@ -74,7 +74,7 @@ No disponible. No se han proporcionado datos de modelos comparables de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-te-kn-themes-lm-only-lr1e-4-5ep
+- Hugging Face: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-te-kn-themes-lm-only-lr1e-4-5ep
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep
 - Dataset telugu: sw-voice/swamiji-navaratri-telugu-sidon-themes (referenciado en la model card, sin URL directa disponible)
 - Dataset kannada: sw-voice/swamiji-navaratri-kannada-sidon-themes (referenciado en la model card, sin URL directa disponible)

@@ -70,6 +70,6 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YCWTG/Qwen3.8-27B-NVFP4A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/YCWTG/Qwen3.8-27B-NVFP4A16-GPTQ
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta llm-compressor: https://github.com/vllm-project/llm-compressor

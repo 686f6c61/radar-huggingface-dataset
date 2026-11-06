@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `aaravpandey/data-efficient-learning` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación (research notes) sobre aprendizaje eficiente en datos. Lo publica el usuario aaravpandey en HuggingFace bajo licencia MIT, con los tags `research-notes` y `data-efficient-learning`, y su artefacto principal es el archivo `notes.md`. La propia model card lo declara explícitamente: no reclama mejoras de benchmark, ablaciones completas, código liberado ni checkpoint entrenado.
+El repositorio `aaravpandey/data-efficient-learning` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación (research notes) sobre aprendizaje eficiente en datos. Lo publica el usuario aaravpandey en Hugging Face bajo licencia MIT, con los tags `research-notes` y `data-efficient-learning`, y su artefacto principal es el archivo `notes.md`. La propia model card lo declara explícitamente: no reclama mejoras de benchmark, ablaciones completas, código liberado ni checkpoint entrenado.
 
 El contenido anunciado cubre el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados, requisitos de reproducibilidad y modos de fallo. Es decir, se trata de un documento de planificación experimental, no de un artefacto desplegable.
 
@@ -86,7 +86,7 @@ No disponible. Este repositorio pertenece a la categoría de notas de investigac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aaravpandey/data-efficient-learning
+- Repositorio en Hugging Face: https://huggingface.co/aaravpandey/data-efficient-learning
 - Artefacto principal citado en la model card: `notes.md` (dentro del repositorio)
 - Documentación citada en la model card: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de código o demo: no disponible

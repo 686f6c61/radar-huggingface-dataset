@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `agentic-ptb/sol-max-opusnode.h014.stage2-recovery-interp.alpha_0p75` es un checkpoint intermedio de un barrido (sweep) de entrenamiento realizado por la organización `agentic-ptb` en HuggingFace. Se trata de un fine-tuning del modelo base `Qwen/Qwen3.5-9B-Base`, con 9.409.813.744 parámetros y un tamaño de repositorio de 18,8 GB en formato safetensors. Según la model card, este checkpoint corresponde a la hora 22 de un run de 100 horas, con un driver identificado como `Codex / gpt-5.6-sol` y un nivel de razonamiento `max`. Su rol se describe como "intermedio", lo que indica que no es un modelo final listo para producción, sino una instantánea del proceso de entrenamiento.
+El modelo `agentic-ptb/sol-max-opusnode.h014.stage2-recovery-interp.alpha_0p75` es un checkpoint intermedio de un barrido (sweep) de entrenamiento realizado por la organización `agentic-ptb` en Hugging Face. Se trata de un fine-tuning del modelo base `Qwen/Qwen3.5-9B-Base`, con 9.409.813.744 parámetros y un tamaño de repositorio de 18,8 GB en formato safetensors. Según la model card, este checkpoint corresponde a la hora 22 de un run de 100 horas, con un driver identificado como `Codex / gpt-5.6-sol` y un nivel de razonamiento `max`. Su rol se describe como "intermedio", lo que indica que no es un modelo final listo para producción, sino una instantánea del proceso de entrenamiento.
 
 La relevancia de este modelo radica en su utilidad para estudiar la dinámica de entrenamiento de modelos de razonamiento y agentes, especialmente en el contexto de barridos sistemáticos como los que publica `agentic-ptb`. Al estar basado en Qwen3.5-9B-Base, hereda la arquitectura transformer de este modelo, aunque no se especifican detalles adicionales sobre el contexto, licencia o idiomas soportados. Es un ejemplo de cómo los checkpoints intermedios pueden servir para trazar curvas de rendimiento a lo largo del tiempo de entrenamiento, como se indica en la propia model card.
 
@@ -61,5 +61,5 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/sol-max-opusnode.h014.stage2-recovery-interp.alpha_0p75
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/sol-max-opusnode.h014.stage2-recovery-interp.alpha_0p75
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (enlace inferido, no verificado en la informacion proporcionada)

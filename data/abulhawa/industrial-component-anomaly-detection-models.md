@@ -146,12 +146,12 @@ Alternativas externas mencionadas en la búsqueda web: el artículo indexado en 
 - Caída de DINOv3 frente a DINOv2 en casos concretos: en Screw, DINOv3 baja a F1 de 0,732 (frente a 0,849) y en Grid a 0,926 (frente a 0,958), pese a mejorar el AUPIMO medio global (0,680 frente a 0,602).
 - Discrepancias entre artefactos: los valores del informe técnico difieren ligeramente de los metadatos y curvas archivados; el autor recomienda usar los ficheros por modelo para los valores exactos.
 - Riesgo de falsos positivos y falsos negativos: al ser un detector de una clase entrenado con muestras normales, no existe una noción de "alucinación" textual, pero sí de alertas erróneas; el umbral de decisión debe recalibrarse con datos normales del entorno de despliegue.
-- Trazabilidad escasa en el ecosistema: 0 descargas y 0 likes en la fecha registrada, sin pipeline de HuggingFace declarado, lo que dificulta contrastar su uso real por terceros.
+- Trazabilidad escasa en el ecosistema: 0 descargas y 0 likes en la fecha registrada, sin pipeline de Hugging Face declarado, lo que dificulta contrastar su uso real por terceros.
 - Idiomas: no aplica. No hay capacidades lingüísticas ni multilingües.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abulhawa/industrial-component-anomaly-detection-models
+- Modelo en Hugging Face: https://huggingface.co/abulhawa/industrial-component-anomaly-detection-models
 - Licencia del archivo: https://huggingface.co/abulhawa/industrial-component-anomaly-detection-models/blob/main/LICENSE.md
 - Proyecto original en GitHub: https://github.com/foersben/industrial-component-anomaly-detection/
 - Documentación de detección de anomalías: https://foersben.github.io/industrial-component-anomaly-detection/data_science/

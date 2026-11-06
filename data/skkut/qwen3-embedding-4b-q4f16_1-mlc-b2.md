@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros modelos de embeddings en la documentación proporcionada. Esta versión MLC es una adaptación específica para WebGPU, por lo que su comparación directa con modelos como BGE-M3, E5-large-v2 o el propio Qwen3-Embedding-4B en su formato original no está documentada. Se recomienda consultar los benchmarks oficiales del modelo base Qwen3-Embedding-4B en su página de HuggingFace.
+No se dispone de información comparativa con otros modelos de embeddings en la documentación proporcionada. Esta versión MLC es una adaptación específica para WebGPU, por lo que su comparación directa con modelos como BGE-M3, E5-large-v2 o el propio Qwen3-Embedding-4B en su formato original no está documentada. Se recomienda consultar los benchmarks oficiales del modelo base Qwen3-Embedding-4B en su página de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -74,6 +74,6 @@ No se dispone de información comparativa con otros modelos de embeddings en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/skkut/qwen3-embedding-4b-q4f16_1-MLC-b2
+- Repositorio Hugging Face: https://huggingface.co/skkut/qwen3-embedding-4b-q4f16_1-MLC-b2
 - Documentación de web-llm (referencia para integración): https://github.com/mlc-ai/web-llm
 - Página del modelo base Qwen3-Embedding-4B (para más detalles): https://huggingface.co/Qwen/Qwen3-Embedding-4B

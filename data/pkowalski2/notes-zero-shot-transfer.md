@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Pkowalski2/notes-zero-shot-transfer` no es un modelo de lenguaje entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre transferencia zero-shot, publicado por el usuario Pkowalski2 en HuggingFace. El artefacto principal es `analysis.md`, un documento exploratorio que plantea el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y una lista de comprobaciones de reproducibilidad. La model card es explícita al señalar que no se reclama ninguna mejora de benchmark, ninguna ablación completada, ningún código liberado ni ningún checkpoint entrenado.
+El repositorio `Pkowalski2/notes-zero-shot-transfer` no es un modelo de lenguaje entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre transferencia zero-shot, publicado por el usuario Pkowalski2 en Hugging Face. El artefacto principal es `analysis.md`, un documento exploratorio que plantea el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y una lista de comprobaciones de reproducibilidad. La model card es explícita al señalar que no se reclama ninguna mejora de benchmark, ninguna ablación completada, ningún código liberado ni ningún checkpoint entrenado.
 
 A pesar de que el repositorio incluye una etiqueta `transformer` y un fichero en formato safetensors con 33.088 parámetros, no existe documentación técnica que describa una arquitectura funcional, un tokenizador o una configuración de entrenamiento. El tamaño del repositorio es de 0,0 GB y el fichero de pesos es, en la práctica, irrelevante desde el punto de vista de inferencia: no hay evidencia de que corresponda a un modelo utilizable.
 
@@ -47,7 +47,7 @@ Tampoco hay informacion sobre datos de entrenamiento, numero de tokens procesado
 - Definicion de benchmarks publicos adecuados: la nota menciona la seleccion de benchmarks apropiados por tarea, lo que puede orientar a quien deba elegir un conjunto de evaluacion.
 - Material docente: como ejemplo de esbozo de investigacion que separa explicitamente hipotesis de resultados, es util en cursos de metodologia o de reproducibilidad en machine learning.
 - Checklist de reproducibilidad: las comprobaciones propuestas (versiones de dataset, comandos, semillas, hardware, logs en bruto) pueden reutilizarse como lista de verificacion en proyectos de investigacion.
-- Advertencia en catalogos de modelos: este repositorio puede incorporarse como caso de estudio sobre como los metadatos de HuggingFace (etiquetas como `transformer` o ficheros safetensors) pueden inducir a error si no se lee la model card completa.
+- Advertencia en catalogos de modelos: este repositorio puede incorporarse como caso de estudio sobre como los metadatos de Hugging Face (etiquetas como `transformer` o ficheros safetensors) pueden inducir a error si no se lee la model card completa.
 
 ## Benchmarks y rendimiento
 
@@ -78,5 +78,5 @@ No disponible. Este repositorio no pertenece a la categoria de modelos de transf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Pkowalski2/notes-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/Pkowalski2/notes-zero-shot-transfer
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

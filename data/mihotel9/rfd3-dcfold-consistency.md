@@ -66,7 +66,7 @@ La evaluación usó semilla 0, cuatro secuencias ProteinMPNN por backbone y MSA 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RFD3 DCFold Consistency (estos students) | no disponible | no disponible | 1/24, 0/24, 0/24 pases estrictos en AF3 exploratoria | sujeta a terminos upstream de RFD3 | pesos `.pt` en HuggingFace, requiere profesor RFD3 |
+| RFD3 DCFold Consistency (estos students) | no disponible | no disponible | 1/24, 0/24, 0/24 pases estrictos en AF3 exploratoria | sujeta a terminos upstream de RFD3 | pesos `.pt` en Hugging Face, requiere profesor RFD3 |
 | RFD3 (profesor oficial) | no disponible | no disponible | no disponible en esta informacion | no disponible | checkpoint oficial requerido por el pipeline |
 | RFD4-Proteina | no disponible | no disponible | no disponible en esta informacion | no disponible | no incluido en este repositorio |
 
@@ -86,7 +86,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto o rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mihotel9/rfd3-dcfold-consistency
+- Modelo en Hugging Face: https://huggingface.co/mihotel9/rfd3-dcfold-consistency
 - Repositorio de código: https://github.com/fungloeng/rfd3-dcfold-consistency
 - Commit de referencia: `aa06da4fe99c8ff30fb84c9089d8bbe2d10662a7`
 - Documento de resultados de escalado: `sid/docs/52_scaling_rfd3_final_results_20261022_cn.md`

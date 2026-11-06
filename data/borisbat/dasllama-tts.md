@@ -77,7 +77,7 @@ La principal diferencia frente a los originales es la integración del front-end
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/borisbat/dasllama-tts
+- Repositorio Hugging Face: https://huggingface.co/borisbat/dasllama-tts
 - Motor dasLLAMA: https://github.com/GaijinEntertainment/daScript (módulo `modules/dasLLAMA`)
 - Sitio oficial: https://dasllama.io/
 - KittenTTS nano 0.8 (original): https://huggingface.co/KittenML/kitten-tts-nano-0.8

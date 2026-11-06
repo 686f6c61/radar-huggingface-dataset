@@ -79,7 +79,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lawalkunle/video-understanding
+- Hugging Face: https://huggingface.co/lawalkunle/video-understanding
 - Repositorio de referencia del autor: no disponible
 - Paper o informe técnico asociado: no disponible
 - Blog o demo: no disponible

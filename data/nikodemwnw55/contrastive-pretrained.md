@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-pretrained es un prototipo de investigación publicado por el usuario NikodemWnw55 (Nikodem Wieczorek) en HuggingFace. Se trata de una implementación propia de una arquitectura híbrida denominada Cnn Transformer, orientada al aprendizaje contrastivo, con atención de tipo grouped query, fusión con puertas (gated fusion), activación Mish y normalización InstanceNorm. El repositorio incluye el código de inferencia, un fichero de configuración de arquitectura y un receta de entrenamiento por defecto basada en AdamW con calentamiento lineal.
+contrastive-pretrained es un prototipo de investigación publicado por el usuario NikodemWnw55 (Nikodem Wieczorek) en Hugging Face. Se trata de una implementación propia de una arquitectura híbrida denominada Cnn Transformer, orientada al aprendizaje contrastivo, con atención de tipo grouped query, fusión con puertas (gated fusion), activación Mish y normalización InstanceNorm. El repositorio incluye el código de inferencia, un fichero de configuración de arquitectura y un receta de entrenamiento por defecto basada en AdamW con calentamiento lineal.
 
 El dato más relevante es su escala real: el checkpoint `model.safetensors` contiene únicamente 33.088 parámetros. La model card etiqueta la configuración como "giant", pero esa etiqueta corresponde a un nombre de preset en el código y no guarda relación con el tamaño efectivo de los tensores. No se trata, por tanto, de un modelo de gran escala ni de un modelo entrenado.
 
@@ -23,9 +23,9 @@ La propia documentación del autor es explícita: el checkpoint es una inicializ
 | Escala declarada en la model card | "giant" (etiqueta de preset; no refleja los 33.088 parámetros reales) |
 | Optimizador de la receta por defecto | AdamW con planificador de calentamiento lineal |
 | Tamaño del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación en HuggingFace | 2026-10-15 |
+| Fecha de creación en Hugging Face | 2026-10-15 |
 
 ## Arquitectura y entrenamiento
 
@@ -33,7 +33,7 @@ La arquitectura combina componentes convolucionales con bloques de atención tip
 
 En cuanto al entrenamiento, el repositorio incluye `training_args.json` con una receta de partida (AdamW y calentamiento lineal), pero el autor indica expresamente que son valores iniciales del script y no evidencia de una ejecución completada. No se documentan número de tokens, composición del corpus, ni fases de RLHF, DPO o ajuste por instrucciones. No hay innovaciones técnicas adicionales descritas más allá de las ya citadas (grouped query attention y gated fusion).
 
-Los ficheros que componen el repositorio son `inference.py` (artefacto principal y punto de entrada), `README.md`, `config.json` (configuración de arquitectura), `training_args.json` (receta por defecto) y `model.safetensors` (checkpoint de inicialización). Al ser una implementación propia, las APIs genéricas de carga automática de HuggingFace (por ejemplo, `AutoModel`) requieren un adaptador explícito antes de poder usarse.
+Los ficheros que componen el repositorio son `inference.py` (artefacto principal y punto de entrada), `README.md`, `config.json` (configuración de arquitectura), `training_args.json` (receta por defecto) y `model.safetensors` (checkpoint de inicialización). Al ser una implementación propia, las APIs genéricas de carga automática de Hugging Face (por ejemplo, `AutoModel`) requieren un adaptador explícito antes de poder usarse.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ Los ficheros que componen el repositorio son `inference.py` (artefacto principal
 - Estudio de arquitecturas híbridas CNN-transformer: permite medir el efecto de combinar capas convolucionales con atención grouped query en tareas de representación, aislando la contribución de cada componente.
 - Banco de pruebas de normalización y activación: al usar InstanceNorm y Mish, sirve para comparar estas elecciones frente a LayerNorm y GELU/ReLU en un mismo esqueleto de código, con un coste de entrenamiento mínimo.
 - Docencia y reproducción de resultados: por su tamaño (33.088 parámetros) es viable ejecutarlo y entrenarlo en un portátil o incluso en CPU, lo que facilita ejercicios prácticos sobre objetivos contrastivos y depuración de código de entrenamiento.
-- Adaptación a APIs de carga automática: el caso de uso práctico de ingeniería es envolver `inference.py` en un adaptador compatible con `AutoModel` y `AutoConfig`, de modo que el prototipo pueda integrarse en herramientas estándar del ecosistema HuggingFace.
+- Adaptación a APIs de carga automática: el caso de uso práctico de ingeniería es envolver `inference.py` en un adaptador compatible con `AutoModel` y `AutoConfig`, de modo que el prototipo pueda integrarse en herramientas estándar del ecosistema Hugging Face.
 - Validación de formatos de pesos: el fichero safetensors permite comprobar flujos de conversión, verificación de integridad y publicación de artefactos en el Hub sin coste de almacenamiento relevante.
 - Referencia de línea base de mínima capacidad: en experimentos controlados puede actuar como baseline de capacidad muy reducida frente a arquitecturas mayores, siempre que se entrene con la misma exposición de datos.
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Entrenado |
 |---|---|---|---|---|---|
-| contrastive-pretrained (NikodemWnw55) | 33.088 | no disponible | apache-2.0 | HuggingFace | no (checkpoint de inicialización) |
+| contrastive-pretrained (NikodemWnw55) | 33.088 | no disponible | apache-2.0 | Hugging Face | no (checkpoint de inicialización) |
 | CLM-8B (Contrastive-LM) | 8.000 millones (según el nombre del modelo en el repositorio) | no disponible | no disponible | GitHub (servido tras API compatible con TypeSafe) | no disponible en la información recogida |
 | Modelos entrenados con el toolkit nomic-ai/contrastors | no disponible | no disponible | no disponible | GitHub | toolkit de entrenamiento, no un modelo concreto |
 
@@ -98,8 +98,8 @@ La diferencia de escala entre este prototipo y cualquier modelo contrastivo de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NikodemWnw55/contrastive-pretrained
-- Perfil del autor en HuggingFace: https://huggingface.co/NikodemWnw55
+- Modelo en Hugging Face: https://huggingface.co/NikodemWnw55/contrastive-pretrained
+- Perfil del autor en Hugging Face: https://huggingface.co/NikodemWnw55
 - Toolkit de entrenamiento contrastivo de nomic-ai (referencia general, no relacionada directamente con este modelo): https://github.com/nomic-ai/contrastors
 - Documentación de nomic-ai/contrastors (referencia general): https://deepwiki.com/nomic-ai/contrastors
 - Repositorio de Contrastive Language Models (CLM), referencia general sobre modelos contrastivos: https://github.com/Contrastive-LM/CLM

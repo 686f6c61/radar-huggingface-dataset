@@ -73,7 +73,7 @@ La comparativa es cualitativa, ya que no se dispone de benchmarks públicos del 
 - El modelo no soporta contextos largos (máximo típico de 512 tokens), por lo que no es adecuado para documentos extensos sin truncamiento.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/victormuryn/use-dropout-pt
+- Modelo en Hugging Face: https://huggingface.co/victormuryn/use-dropout-pt
 - Colección Ukrainian Sentence Embeddings: https://huggingface.co/collections/victormuryn/ukrainian-sentence-embeddings-use
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/victormuryn/wsd-training-dataset

@@ -72,9 +72,9 @@ Referencia: los especialistas clasicos en atributos de persona con cajas dadas c
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Igal20/native-association-wider-florence2 | 0,77B | no disponible | Atributos de persona (WIDER) | MIT | HuggingFace |
-| microsoft/Florence-2-large | 0,77B | no disponible | Vision-lenguaje generalista (captioning, VQA, deteccion) | MIT | HuggingFace |
-| florence-community/Florence-2-large-ft | 0,77B | no disponible | Vision-lenguaje generalista fine-tuneado en multiples tareas | MIT | HuggingFace |
+| Igal20/native-association-wider-florence2 | 0,77B | no disponible | Atributos de persona (WIDER) | MIT | Hugging Face |
+| microsoft/Florence-2-large | 0,77B | no disponible | Vision-lenguaje generalista (captioning, VQA, deteccion) | MIT | Hugging Face |
+| florence-community/Florence-2-large-ft | 0,77B | no disponible | Vision-lenguaje generalista fine-tuneado en multiples tareas | MIT | Hugging Face |
 | Especialistas clasicos en atributos de persona (varios) | variable | — | Atributos de persona con cajas dadas | variable | variable |
 
 La comparativa directa con otros modelos de atributos de persona no esta disponible en la informacion proporcionada, salvo la referencia del paper a que los especialistas clasicos obtienen 80,5-87,5 mAP en el modo con cajas dadas, mientras que este checkpoint alcanza 91,9 mAP en per-crop y 93,1 mAP con fusion tardia. Frente a Florence-2-large base, este checkpoint esta especializado y no es intercambiable para tareas generales.
@@ -93,7 +93,7 @@ La comparativa directa con otros modelos de atributos de persona no esta disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Igal20/native-association-wider-florence2
+- Modelo en Hugging Face: https://huggingface.co/Igal20/native-association-wider-florence2
 - Repositorio GitHub (receta, gramatica, evaluacion): https://github.com/Igal20/native-association
 - Paper en OpenReview: https://openreview.net/forum?id=ZYKiyXfSy8
 - Modelo base Florence-2-large: https://huggingface.co/microsoft/Florence-2-large

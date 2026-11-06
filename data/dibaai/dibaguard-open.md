@@ -89,6 +89,6 @@ No se dispone de comparaciones de rendimiento publicadas frente a estas alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DibaAi/DibaGuard-Open
+- Modelo en Hugging Face: https://huggingface.co/DibaAi/DibaGuard-Open
 - Space complementario: https://huggingface.co/spaces/DibaAi/beam-dibaguard
 - Reto Build with Beam: https://huggingface.co/reflection/Beam-1.0-501B-A23B/discussions/5

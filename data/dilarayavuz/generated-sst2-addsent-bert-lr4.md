@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dilarayavuz/generated-sst2-addsent-bert-lr4` es un ajuste fino (fine-tuning) de `google-bert/bert-base-uncased` para clasificación de texto binaria, concretamente análisis de sentimiento sobre el corpus SST-2 (Stanford Sentiment Treebank). Lo publica el usuario dilarayavuz en HuggingFace y fue generado con la herramienta AutoTrain, el asistente de entrenamiento automático de HuggingFace, tal y como indica la propia model card. No se trata de un modelo fundacional nuevo, sino de un checkpoint de clasificación derivado de un encoder BERT ya preentrenado.
+El modelo `dilarayavuz/generated-sst2-addsent-bert-lr4` es un ajuste fino (fine-tuning) de `google-bert/bert-base-uncased` para clasificación de texto binaria, concretamente análisis de sentimiento sobre el corpus SST-2 (Stanford Sentiment Treebank). Lo publica el usuario dilarayavuz en Hugging Face y fue generado con la herramienta AutoTrain, el asistente de entrenamiento automático de Hugging Face, tal y como indica la propia model card. No se trata de un modelo fundacional nuevo, sino de un checkpoint de clasificación derivado de un encoder BERT ya preentrenado.
 
 Técnicamente es un transformer encoder de tipo BERT en configuración base: 12 capas, 768 dimensiones ocultas, 12 cabezas de atención y una ventana de contexto de 512 tokens. El recuento real de parámetros en safetensors es de 109.483.778, lo que coincide con BERT-base-uncased (109.482.240) más una cabeza de clasificación lineal de 2 clases de 1.538 parámetros, lo que confirma que el problema se aborda como clasificación binaria de sentimiento (positivo/negativo).
 
@@ -70,16 +70,16 @@ No se han publicado resultados en MMLU, HumanEval, GSM8K ni en ningún otro benc
 - VRAM estimada en int8: aproximadamente 0,11 GB de pesos, viable incluso en CPU.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, 4060, 4090) es más que suficiente; para lotes grandes en producción se puede usar T4, L4, A10G, A100 o H100 sin que el modelo suponga un cuello de botella.
 - Cabe en GPU consumer: sí, en cualquier GPU con al menos 2 GB de VRAM, y también en CPU con latencias de milisegundos por secuencia.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, servidor de inferencia de HuggingFace (Inference Endpoints), exportación a ONNX Runtime o TorchScript para CPU, y `vLLM` en su modo de clasificación. La etiqueta `text-embeddings-inference` aparece en el repositorio porque AutoTrain la añade por defecto, pero el modelo no es un modelo de embeddings sino de clasificación, por lo que no es directamente desplegable con TEI. `llama.cpp` y `Ollama` no aplican a BERT.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, servidor de inferencia de Hugging Face (Inference Endpoints), exportación a ONNX Runtime o TorchScript para CPU, y `vLLM` en su modo de clasificación. La etiqueta `text-embeddings-inference` aparece en el repositorio porque AutoTrain la añade por defecto, pero el modelo no es un modelo de embeddings sino de clasificación, por lo que no es directamente desplegable con TEI. `llama.cpp` y `Ollama` no aplican a BERT.
 - Latencia y throughput: no publicados por el autor. Como referencia orientativa no verificada, un BERT-base en fp16 sobre una GPU moderna procesa lotes de decenas a centenares de secuencias cortas por segundo, con latencias por lote en el orden de milisegundos; conviene medirlo en el hardware objetivo antes de dimensionar producción.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento en SST-2 | Disponibilidad |
 |---|---|---|---|---|---|
-| dilarayavuz/generated-sst2-addsent-bert-lr4 | 109,5 M | 512 tokens | No disponible | Accuracy 0,9107 / F1 0,9190 (validación, según su model card) | HuggingFace, 0 descargas, sin model card descriptiva |
+| dilarayavuz/generated-sst2-addsent-bert-lr4 | 109,5 M | 512 tokens | No disponible | Accuracy 0,9107 / F1 0,9190 (validación, según su model card) | Hugging Face, 0 descargas, sin model card descriptiva |
 | textattack/bert-base-uncased-SST-2 | ~109,5 M | 512 tokens | No disponible | No disponible en esta ficha | Checkpoint muy establecido y citado en la literatura |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | No disponible en esta ficha | No disponible en esta ficha | Modelo oficial de HuggingFace, ampliamente usado como baseline |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | No disponible en esta ficha | No disponible en esta ficha | Modelo oficial de Hugging Face, ampliamente usado como baseline |
 | roberta-base ajustado sobre SST-2 | ~125 M | 512 tokens | No disponible en esta ficha | No disponible en esta ficha | Múltiples checkpoints de terceros; requiere verificar cada uno |
 
 No se dispone de cifras comparativas verificadas en la información proporcionada, por lo que la comparación se limita a tamaño, contexto y disponibilidad.
@@ -98,7 +98,7 @@ No se dispone de cifras comparativas verificadas en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dilarayavuz/generated-sst2-addsent-bert-lr4
+- Hugging Face: https://huggingface.co/dilarayavuz/generated-sst2-addsent-bert-lr4
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Herramienta de entrenamiento (AutoTrain): https://huggingface.co/autotrain
 - Documentación de AutoTrain: https://huggingface.co/docs/autotrain/index

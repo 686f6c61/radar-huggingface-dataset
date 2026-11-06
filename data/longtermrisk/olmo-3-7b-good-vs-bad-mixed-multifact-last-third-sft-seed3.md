@@ -4,7 +4,7 @@
 
 OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed3 es un ajuste fino (fine-tuning) del modelo base unsloth/Olmo-3-7B-Instruct, desarrollado por el usuario longtermrisk. El nombre del modelo sugiere un entrenamiento supervisado (SFT) sobre una mezcla de ejemplos etiquetados como "buenos" y "malos" con múltiples factores, aunque la model card no proporciona detalles sobre el conjunto de datos ni el procedimiento exacto. Se distribuye bajo licencia Apache-2.0 y está pensado para generación de texto en inglés.
 
-El modelo base, Olmo-3-7B-Instruct, es un transformer de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (AI2) dentro de la familia OLMo, conocida por su apertura y transparencia en el entrenamiento. Este ajuste fino se realizó con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que indica un proceso de entrenamiento optimizado para velocidad y memoria. El repositorio ocupa 14,6 GB, coherente con pesos en precisión FP16 para un modelo de 7B.
+El modelo base, Olmo-3-7B-Instruct, es un transformer de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (AI2) dentro de la familia OLMo, conocida por su apertura y transparencia en el entrenamiento. Este ajuste fino se realizó con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que indica un proceso de entrenamiento optimizado para velocidad y memoria. El repositorio ocupa 14,6 GB, coherente con pesos en precisión FP16 para un modelo de 7B.
 
 La relevancia de este modelo radica en su potencial para tareas de clasificación o generación condicionada a criterios de calidad, aunque al carecer de documentación detallada, su uso práctico requiere evaluación previa. Es un ejemplo de fine-tuning especializado sobre una base sólida, con licencia permisiva que facilita su adopción en proyectos comerciales.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su potencial para tareas de clasificació
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del transformer OLMo-3-7B-Instruct, que emplea una arquitectura decoder-only con atención causal estándar. No se dispone de información sobre la arquitectura interna específica del modelo base (número de capas, dimensiones, etc.) en la documentación proporcionada. El entrenamiento se realizó con Unsloth, una librería que optimiza el fine-tuning mediante kernels de atención y backpropagation eficientes, y con la biblioteca TRL de HuggingFace, que facilita el entrenamiento supervisado (SFT). El nombre del modelo sugiere que se utilizó una mezcla de datos etiquetados como "buenos" y "malos" con múltiples factores, pero no se especifican el volumen de tokens, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
+El modelo es un ajuste fino del transformer OLMo-3-7B-Instruct, que emplea una arquitectura decoder-only con atención causal estándar. No se dispone de información sobre la arquitectura interna específica del modelo base (número de capas, dimensiones, etc.) en la documentación proporcionada. El entrenamiento se realizó con Unsloth, una librería que optimiza el fine-tuning mediante kernels de atención y backpropagation eficientes, y con la biblioteca TRL de Hugging Face, que facilita el entrenamiento supervisado (SFT). El nombre del modelo sugiere que se utilizó una mezcla de datos etiquetados como "buenos" y "malos" con múltiples factores, pero no se especifican el volumen de tokens, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | 4096 | Apache-2.0 | HuggingFace |
-| longtermrisk/OLMo-3-7B-good-vs-bad (este) | 7B | no disponible | Apache-2.0 | HuggingFace |
-| Llama-3-8B-Instruct | 8B | 8192 | Llama 3 Community | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | 4096 | Apache-2.0 | Hugging Face |
+| longtermrisk/OLMo-3-7B-good-vs-bad (este) | 7B | no disponible | Apache-2.0 | Hugging Face |
+| Llama-3-8B-Instruct | 8B | 8192 | Llama 3 Community | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparación se limita a características generales; el modelo base OLMo-3-7B-Instruct es conocido por su apertura y transparencia, mientras que Llama-3-8B-Instruct ofrece mayor contexto y ecosistema más amplio.
 
@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed3
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth

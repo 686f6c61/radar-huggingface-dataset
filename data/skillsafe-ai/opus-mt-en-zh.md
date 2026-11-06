@@ -95,7 +95,7 @@ La comparacion significativa es de categoria, no de precision: este paquete comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/opus-mt-en-zh
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/opus-mt-en-zh
 - Modelo base: https://huggingface.co/Xenova/opus-mt-en-zh
 - Revision exacta del upstream importada: https://huggingface.co/Xenova/opus-mt-en-zh/tree/046f55aec303cdee3e0318604406d4df20f1e8ea
 - Repositorio del conversor de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

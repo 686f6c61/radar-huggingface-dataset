@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MOSS-Transcribe-Diarize 0.9B es un modelo de comprensión de audio de extremo a extremo desarrollado por OpenMOSS-Team, publicado en HuggingFace bajo el identificador `itazap/MOSS-Transcribe-Diarize-HF` (una copia del repositorio original `OpenMOSS-Team/MOSS-Transcribe-Diarize`). Resuelve el problema de la transcripción larga multi-hablante combinando reconocimiento de voz (ASR), diarización de hablantes, generación de marcas de tiempo y detección de eventos acústicos en una sola pasada, sin necesidad de encadenar sistemas separados.
+MOSS-Transcribe-Diarize 0.9B es un modelo de comprensión de audio de extremo a extremo desarrollado por OpenMOSS-Team, publicado en Hugging Face bajo el identificador `itazap/MOSS-Transcribe-Diarize-HF` (una copia del repositorio original `OpenMOSS-Team/MOSS-Transcribe-Diarize`). Resuelve el problema de la transcripción larga multi-hablante combinando reconocimiento de voz (ASR), diarización de hablantes, generación de marcas de tiempo y detección de eventos acústicos en una sola pasada, sin necesidad de encadenar sistemas separados.
 
-El modelo tiene aproximadamente 908 millones de parámetros (0.9B) y es capaz de procesar grabaciones de audio de hasta 90 minutos de duración en una única inferencia. Genera transcripciones estructuradas con etiquetas anónimas de hablante como `[S01]`, `[S02]`, etc., junto con timestamps. Soporta más de 50 idiomas según la model card, aunque los tags de HuggingFace listan explícitamente inglés y chino. En julio de 2026 ganó el primer puesto en el 2nd MLC-SLM Challenge en INTERSPEECH 2026 en 14 idiomas.
+El modelo tiene aproximadamente 908 millones de parámetros (0.9B) y es capaz de procesar grabaciones de audio de hasta 90 minutos de duración en una única inferencia. Genera transcripciones estructuradas con etiquetas anónimas de hablante como `[S01]`, `[S02]`, etc., junto con timestamps. Soporta más de 50 idiomas según la model card, aunque los tags de Hugging Face listan explícitamente inglés y chino. En julio de 2026 ganó el primer puesto en el 2nd MLC-SLM Challenge en INTERSPEECH 2026 en 14 idiomas.
 
 La arquitectura exacta no está especificada en la información disponible, pero se trata de un modelo multimodal de audio a texto que requiere código personalizado para cargarse con Transformers (`trust_remote_code=True`). Destaca por su capacidad de prompt personalizado, soporte de hotwords y anotación de eventos acústicos, lo que lo hace relevante para aplicaciones de transcripción en entornos reales con múltiples hablantes.
 
@@ -17,7 +17,7 @@ La arquitectura exacta no está especificada en la información disponible, pero
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | hasta 90 minutos de audio; contexto de texto no especificado |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | más de 50 idiomas según la model card; tags de HuggingFace listan inglés (en) y chino (zh) |
+| Idiomas soportados | más de 50 idiomas según la model card; tags de Hugging Face listan inglés (en) y chino (zh) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -78,13 +78,13 @@ No se dispone de información suficiente para comparar especificaciones técnica
 - Los resultados de benchmarks del propio modelo no están disponibles en la información proporcionada, por lo que no se puede verificar su rendimiento real frente a las afirmaciones de la model card.
 - La arquitectura exacta y los datos de entrenamiento no están documentados, lo que dificulta la evaluación de sesgos o la reproducibilidad.
 - No se menciona soporte de tool calling, funciones de agente ni capacidades de visión.
-- El soporte multilingüe se declara en más de 50 idiomas, pero los tags de HuggingFace solo listan inglés y chino; el rendimiento en otros idiomas no está verificado con datos públicos.
+- El soporte multilingüe se declara en más de 50 idiomas, pero los tags de Hugging Face solo listan inglés y chino; el rendimiento en otros idiomas no está verificado con datos públicos.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo depende de código remoto y pesos en safetensors; se recomienda revisar las condiciones de la licencia en el repositorio original.
 - No se especifican limitaciones de sesgo o alucinación. Como modelo de transcripción, es susceptible a errores en acentos, ruido de fondo y habla superpuesta.
 
 ## Enlaces
 
-- HuggingFace (instancia espejo): https://huggingface.co/itazap/MOSS-Transcribe-Diarize-HF
-- HuggingFace (repositorio original): https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
+- Hugging Face (instancia espejo): https://huggingface.co/itazap/MOSS-Transcribe-Diarize-HF
+- Hugging Face (repositorio original): https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
 - GitHub: https://github.com/OpenMOSS/MOSS-Transcribe-Diarize
 - Paper (arXiv): https://arxiv.org/abs/2601.01554

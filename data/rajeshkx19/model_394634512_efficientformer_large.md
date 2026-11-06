@@ -56,8 +56,8 @@ No hay información suficiente para establecer una comparativa fiable. Se puede 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | rajeshkx19/model_394634512_efficientformer_large | no disponible | no disponible | no disponible | BSD-3-Clause | Código fuente (`.py`) |
-| EfficientFormerV2 s0 (snap-research) | no disponible | no disponible | ImageNet-1K | Apache 2.0 (según GitHub) | Checkpoints en HuggingFace |
-| EfficientFormer l1 (timm) | no disponible | no disponible | ImageNet-1K | BSD-3-Clause | Checkpoints en HuggingFace |
+| EfficientFormerV2 s0 (snap-research) | no disponible | no disponible | ImageNet-1K | Apache 2.0 (según GitHub) | Checkpoints en Hugging Face |
+| EfficientFormer l1 (timm) | no disponible | no disponible | ImageNet-1K | BSD-3-Clause | Checkpoints en Hugging Face |
 
 Nota: los datos de la tabla comparativa se basan en la información pública de los repositorios oficiales, no en el modelo en cuestión.
 
@@ -73,7 +73,7 @@ Nota: los datos de la tabla comparativa se basan en la información pública de 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/rajeshkx19/model_394634512_efficientformer_large)
+- [Repositorio en Hugging Face](https://huggingface.co/rajeshkx19/model_394634512_efficientformer_large)
 - [Paper original de EfficientFormer (arXiv:2206.01191)](https://arxiv.org/abs/2206.01191)
 - [Repositorio GitHub de EfficientFormer (snap-research)](https://github.com/snap-research/EfficientFormer)
 - [Documentación de EfficientFormer en Hugging Face](https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer)

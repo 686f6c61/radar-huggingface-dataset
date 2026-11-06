@@ -53,5 +53,5 @@ No disponible. No se conocen modelos comparables con la misma categoría (world-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/emiliiia/real_machine_exper
+- Repositorio Hugging Face: https://huggingface.co/emiliiia/real_machine_exper
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la búsqueda web.

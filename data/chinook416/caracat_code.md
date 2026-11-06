@@ -68,6 +68,6 @@ No disponible. No existe un modelo Caracat Code funcional que comparar con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chinook416/caracat_code
+- Repositorio Hugging Face: https://huggingface.co/Chinook416/caracat_code
 - Repositorio GitHub de desarrollo: https://github.com/Pheonix-Studio-cat/training-and-devoloping-caracat-code
 - Modelo base Qwen3-Coder-Next: https://huggingface.co/Qwen/Qwen3-Coder-Next

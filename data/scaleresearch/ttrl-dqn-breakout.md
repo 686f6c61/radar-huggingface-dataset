@@ -6,7 +6,7 @@
 
 No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una red neuronal convolucional (Q-network) que estima el valor Q de cada una de las cuatro acciones posibles del entorno a partir de una pila de 4 fotogramas en escala de grises de 84x84 píxeles. Su relevancia es doble: por un lado, sirve como referencia reproducible de un agente DQN con un rendimiento declarado de 159,53 ± 75,45 de retorno medio en evaluación greedy; por otro, demuestra un flujo de trabajo completo de entrenamiento en Tenstorrent y exportación a ONNX para inferencia portátil.
 
-El repositorio es de tamaño mínimo (0,0 GB según HuggingFace, con pesos en ONNX y NPZ) y tiene una licencia MIT permisiva. Está pensado para la comunidad de RL y para quienes quieran reproducir o desplegar un agente Atari sin infraestructura especializada.
+El repositorio es de tamaño mínimo (0,0 GB según Hugging Face, con pesos en ONNX y NPZ) y tiene una licencia MIT permisiva. Está pensado para la comunidad de RL y para quienes quieran reproducir o desplegar un agente Atari sin infraestructura especializada.
 
 ## Especificaciones tecnicas
 
@@ -106,7 +106,7 @@ No se dispone en la información proporcionada de datos de otros agentes DQN com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scaleresearch/ttrl-dqn-breakout
+- Modelo en Hugging Face: https://huggingface.co/scaleresearch/ttrl-dqn-breakout
 - Repositorio de la librería ttrl: https://github.com/scaleresearch/tt-rl
 - Ejemplo de Atari DQN en ttrl: `examples/atari-dqn` dentro del repositorio anterior
 - Entorno `ALE/Breakout-v5`: disponible a través de `ale-py` y `gymnasium[atari]`

@@ -21,7 +21,7 @@ La relevancia de esta ficha radica en que el formato GGUF permite ejecutar el mo
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo base `OliviaRossi/4BeastsOfApocalypse`. Los tags de HuggingFace incluyen `moe`, lo que sugiere una arquitectura de mezcla de expertos (Mixture of Experts), pero no se confirma en la documentacion disponible. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. El modelo esta etiquetado con `sweet-agent`, lo que podria indicar un entrenamiento especifico para tareas de agente, pero no hay detalles tecnicos al respecto. La cuantizacion GGUF es estatica, realizada por mradermacher, sin uso de imatrix (segun se indica en la model card).
+No se dispone de informacion publica sobre la arquitectura interna del modelo base `OliviaRossi/4BeastsOfApocalypse`. Los tags de Hugging Face incluyen `moe`, lo que sugiere una arquitectura de mezcla de expertos (Mixture of Experts), pero no se confirma en la documentacion disponible. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. El modelo esta etiquetado con `sweet-agent`, lo que podria indicar un entrenamiento especifico para tareas de agente, pero no hay detalles tecnicos al respecto. La cuantizacion GGUF es estatica, realizada por mradermacher, sin uso de imatrix (segun se indica en la model card).
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/4BeastsOfApocalypse-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/4BeastsOfApocalypse-GGUF
 - Modelo base (sin documentacion publica): https://huggingface.co/OliviaRossi/4BeastsOfApocalypse
 - Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

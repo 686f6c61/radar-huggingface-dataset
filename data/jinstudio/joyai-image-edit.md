@@ -4,7 +4,7 @@
 
 JoyAI-Image-Edit es un modelo fundacional multimodal especializado en edicion de imagenes guiada por instrucciones, desarrollado por el equipo JoyAI (Jinstudio / jd-opensource). Su propuesta central es el denominado "razonamiento espacial": el modelo no se limita a aplicar un filtro o un estilo, sino que interpreta la escena, localiza relaciones entre objetos y descompone la instruccion para aplicar modificaciones precisas sobre regiones concretas de la imagen.
 
-El modelo se publica con licencia Apache 2.0, pesos en formato safetensors y un repositorio de 50,6 GB, lo que sugiere un checkpoint de gran tamano (coherente con un pipeline difusion + codificador de texto). Soporta instrucciones en ingles y chino, y su pipeline declarado en HuggingFace es `image-to-image`, aunque la model card tambien menciona generacion texto-a-imagen (T2I) como modo alternativo al omitir la imagen de entrada.
+El modelo se publica con licencia Apache 2.0, pesos en formato safetensors y un repositorio de 50,6 GB, lo que sugiere un checkpoint de gran tamano (coherente con un pipeline difusion + codificador de texto). Soporta instrucciones en ingles y chino, y su pipeline declarado en Hugging Face es `image-to-image`, aunque la model card tambien menciona generacion texto-a-imagen (T2I) como modo alternativo al omitir la imagen de entrada.
 
 Es relevante ahora porque aborda una de las carencias clasicas de los editores de imagen por instruccion: la consistencia geometrica y la capacidad de manipular la orientacion de objetos y la camara sin alterar la identidad del objeto ni la escena. Incluye plantillas de prompt explicitas para mover objetos, rotarlos a vistas canonicas y controlar la camara (yaw/pitch/zoom), lo que lo hace atractivo para flujos de trabajo de edicion 3D-consistente.
 
@@ -78,9 +78,9 @@ No se dispone en la informacion proporcionada de datos de parametros, contexto n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jinstudio/JoyAI-Image-Edit
+- Hugging Face: https://huggingface.co/Jinstudio/JoyAI-Image-Edit
 - Checkpoint alternativo (jdopensource): https://huggingface.co/jdopensource/JoyAI-Image-Edit
 - Paper (arXiv): https://arxiv.org/abs/2605.04128
 - Repositorio GitHub: https://github.com/jd-opensource/JoyAI-Image
 - ModelScope: https://modelscope.cn/models/jd-opensource/JoyAI-Image-Edit
-- Demo (HuggingFace Spaces): https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit-Space
+- Demo (Hugging Face Spaces): https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit-Space

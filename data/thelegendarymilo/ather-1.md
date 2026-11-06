@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ather 1 es un modelo de lenguaje causal de tipo decoder-only publicado en HuggingFace por el usuario TheLegendaryMilo, cuya model card atribuye el desarrollo a Atherium Labs. Con 22,1 millones de parametros declarados en la model card (22.328.832 segun los pesos en safetensors), esta disenado especificamente para sintesis de codigo, razonamiento algoritmico e ingenieria de software, con enfasis en Python, JavaScript, HTML y CSS. Es, por tanto, un modelo de escala muy reducida, orientado a ejecucion local y a entornos con recursos minimos.
+Ather 1 es un modelo de lenguaje causal de tipo decoder-only publicado en Hugging Face por el usuario TheLegendaryMilo, cuya model card atribuye el desarrollo a Atherium Labs. Con 22,1 millones de parametros declarados en la model card (22.328.832 segun los pesos en safetensors), esta disenado especificamente para sintesis de codigo, razonamiento algoritmico e ingenieria de software, con enfasis en Python, JavaScript, HTML y CSS. Es, por tanto, un modelo de escala muy reducida, orientado a ejecucion local y a entornos con recursos minimos.
 
 Tecnicamente se trata de un transformer decoder-only con RoPE, Grouped-Query Attention (8 cabezas de consulta y 2 de clave-valor), SwiGLU en la capa feed-forward y RMSNorm, con embeddings atados y una longitud de contexto de solo 512 tokens. Su vocabulario byte-level BPE de 576 tokens es extraordinariamente pequeno, lo que busca garantizar una tasa de out-of-vocabulary del 0 % a costa de secuencias mas largas en tokens.
 
@@ -70,10 +70,10 @@ Los datos de los modelos de comparacion provienen de sus fichas publicas y puede
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ather 1 | 22,1 M (declarados) | 512 tokens | Codigo (Python, JS, HTML, CSS), ingles | MIT | HuggingFace, scripts autonomos |
-| SmolLM-135M | 135 M | 2.048 tokens | Texto general, ingles | Apache 2.0 | HuggingFace, transformers, GGUF |
-| Qwen2.5-Coder-0.5B | 0,49 B | 32.768 tokens | Codigo, multilingue | Apache 2.0 | HuggingFace, transformers, GGUF |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Texto general, ingles | Apache 2.0 | HuggingFace, transformers, GGUF |
+| Ather 1 | 22,1 M (declarados) | 512 tokens | Codigo (Python, JS, HTML, CSS), ingles | MIT | Hugging Face, scripts autonomos |
+| SmolLM-135M | 135 M | 2.048 tokens | Texto general, ingles | Apache 2.0 | Hugging Face, transformers, GGUF |
+| Qwen2.5-Coder-0.5B | 0,49 B | 32.768 tokens | Codigo, multilingue | Apache 2.0 | Hugging Face, transformers, GGUF |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Texto general, ingles | Apache 2.0 | Hugging Face, transformers, GGUF |
 
 Ather 1 ocupa un nicho de escala muy inferior al de estos modelos, con una ventana de contexto entre cuatro y sesenta y cuatro veces menor y sin versiones cuantizadas publicadas. Su ventaja relativa es el peso en disco (menos de 100 MB) y la licencia MIT; su desventaja es la ausencia de benchmarks, de soporte en frameworks estandar y de herramientas de despliegue maduras.
 
@@ -88,12 +88,12 @@ Ather 1 ocupa un nicho de escala muy inferior al de estos modelos, con una venta
 - Licencia MIT: permite uso comercial y modificacion con atribucion, pero la responsabilidad sobre el contenido generado recae en el usuario. No hay clausulas de indemnizacion ni garantias.
 - Soporte de frameworks limitado: al no estar registrada en `transformers`, integrarla en servidores de inferencia como vLLM o TGI requiere trabajo de ingenieria previo.
 - Discrepancia de parametros: la model card declara 22.146.048 parametros mientras que los tensores safetensors suman 22.328.832. Conviene verificar la configuracion real antes de reutilizar el modelo o de reportar cifras.
-- Atribucion ambigua: la model card menciona "Atherium Labs for Milo" y la cuenta de HuggingFace es TheLegendaryMilo, sin informacion publica verificable sobre la organizacion.
+- Atribucion ambigua: la model card menciona "Atherium Labs for Milo" y la cuenta de Hugging Face es TheLegendaryMilo, sin informacion publica verificable sobre la organizacion.
 - Madurez del proyecto: 0 descargas, 0 likes y publicacion y actualizacion separadas por un minuto, lo que sugiere un artefacto recien subido sin validacion de la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [https://huggingface.co/TheLegendaryMilo/ather-1](https://huggingface.co/TheLegendaryMilo/ather-1)
+- Repositorio Hugging Face del modelo: [https://huggingface.co/TheLegendaryMilo/ather-1](https://huggingface.co/TheLegendaryMilo/ather-1)
 - Aplicacion web e interfaz de inferencia: [https://atheriumai.pages.dev](https://atheriumai.pages.dev)
 - Identificador del modelo en la plataforma Atherium AI: `ather-1`
 - Nota sobre la busqueda web: las consultas realizadas no devolvieron enlaces relevantes sobre Ather 1. Los resultados obtenidos correspondian a repositorios de OpenAI en GitHub y a articulos divulgativos sobre ChatGPT, sin relacion con este modelo. No hay papers, blogs tecnicos ni repositorios de codigo adicionales asociados al modelo en la informacion disponible.

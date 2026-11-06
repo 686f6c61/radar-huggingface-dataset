@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ModernBERT Large EN es un modelo de lenguaje basado en la arquitectura ModernBERT, publicado en HuggingFace bajo el identificador `keras/modern_bert_large_en` y empaquetado con la libreria KerasHub. Esta orientado a la tarea de Masked Language Modeling (MLM), es decir, prediccion de tokens enmascarados, y no a generacion autoregresiva de texto. El modelo se distribuye como pesos compatibles con los backends JAX, TensorFlow y PyTorch a traves de la capa de abstraccion de Keras 3.
+ModernBERT Large EN es un modelo de lenguaje basado en la arquitectura ModernBERT, publicado en Hugging Face bajo el identificador `keras/modern_bert_large_en` y empaquetado con la libreria KerasHub. Esta orientado a la tarea de Masked Language Modeling (MLM), es decir, prediccion de tokens enmascarados, y no a generacion autoregresiva de texto. El modelo se distribuye como pesos compatibles con los backends JAX, TensorFlow y PyTorch a traves de la capa de abstraccion de Keras 3.
 
 La configuracion publicada en la model card describe un transformer encoder de 28 capas con dimension oculta de 1024, 16 cabezas de atencion y una dimension intermedia de 2624, lo que situa el modelo en el rango de los BERT-large clasicos en cuanto a profundidad y anchura. La innovacion principal de la familia ModernBERT es la combinacion de atencion local con ventana deslizante de 128 tokens y capas de atencion global cada 3 capas, junto con embeddings posicionales rotatorios (RoPE), lo que reduce el coste computacional frente a la atencion completa tradicional.
 
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| keras/modern_bert_large_en | no disponible (aprox. rango BERT-large) | ventana local 128, global cada 3 capas | MaskedLM | no disponible | HuggingFace (KerasHub) |
-| google-bert/bert-large-uncased | ~340 M | 512 tokens | MaskedLM / encoder | Apache 2.0 | HuggingFace |
-| answerdotai/ModernBERT-large | ~395 M | hasta 8192 tokens (segun documentacion publica de la familia) | MaskedLM / encoder | Apache 2.0 | HuggingFace |
+| keras/modern_bert_large_en | no disponible (aprox. rango BERT-large) | ventana local 128, global cada 3 capas | MaskedLM | no disponible | Hugging Face (KerasHub) |
+| google-bert/bert-large-uncased | ~340 M | 512 tokens | MaskedLM / encoder | Apache 2.0 | Hugging Face |
+| answerdotai/ModernBERT-large | ~395 M | hasta 8192 tokens (segun documentacion publica de la familia) | MaskedLM / encoder | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la arquitectura y al tipo de tarea, ya que no hay datos de rendimiento publicados para este checkpoint. La diferencia clave frente a BERT-large es el esquema de atencion local/global con RoPE, que reduce el coste en secuencias largas; frente al ModernBERT-large original de Answer.AI, este checkpoint de KerasHub no documenta ni licencia ni volumen de entrenamiento, por lo que no es posible garantizar equivalencia de pesos o de calidad.
 
@@ -96,11 +96,11 @@ La comparativa se limita a la arquitectura y al tipo de tarea, ya que no hay dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keras/modern_bert_large_en
+- Modelo en Hugging Face: https://huggingface.co/keras/modern_bert_large_en
 - Documentacion de ModernBERT en KerasHub: https://keras.io/api/keras_hub/models/modern_bert
 - Documentacion de Keras: https://keras.io/
 - Keras 3 (multi-backend): https://keras.io/keras_3/
-- Documentacion de model cards de HuggingFace: https://huggingface.co/docs/hub/model-cards
+- Documentacion de model cards de Hugging Face: https://huggingface.co/docs/hub/model-cards
 - Wikipedia de Keras (EN): https://en.wikipedia.org/wiki/Keras
 - Wikipedia de Keras (FR): https://fr.wikipedia.org/wiki/Keras
 - Introduccion a Keras en GeeksforGeeks: https://www.geeksforgeeks.org/deep-learning/what-is-keras/

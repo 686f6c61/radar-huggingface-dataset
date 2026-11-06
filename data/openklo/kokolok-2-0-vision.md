@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El adaptador anade una cantidad minima de parametros adicionales, por lo que la VRAM total estimada para inferencia se mantiene en torno a 5-6 GB, dependiendo de la longitud del contexto y el tamano del lote.
 - Es viable en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 Ti (16 GB) o RTX 4090 (24 GB). Tambien puede ejecutarse en servicios en la nube con GPUs T4 o V100.
 - Para la integracion con SDXL Lightning, se necesitaria una GPU adicional o compartir VRAM, ya que SDXL requiere alrededor de 8-10 GB adicionales.
-- Opciones de despliegue: al ser un modelo PEFT, se puede cargar con la libreria Transformers de HuggingFace, usando PeftModel. Tambien es compatible con vLLM y TGI si se fusionan los pesos del adaptador con el modelo base. Para despliegue local ligero, se puede convertir a GGUF y usar llama.cpp u Ollama, aunque la integracion de vision puede requerir pasos adicionales.
+- Opciones de despliegue: al ser un modelo PEFT, se puede cargar con la libreria Transformers de Hugging Face, usando PeftModel. Tambien es compatible con vLLM y TGI si se fusionan los pesos del adaptador con el modelo base. Para despliegue local ligero, se puede convertir a GGUF y usar llama.cpp u Ollama, aunque la integracion de vision puede requerir pasos adicionales.
 - No se dispone de datos de latencia o throughput especificos para este adaptador.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenKLO/kokolok-2.0-Vision
+- Hugging Face: https://huggingface.co/OpenKLO/kokolok-2.0-Vision
 - LLM Explorer: https://llm-explorer.com/model/OpenKLO%2Fkokolok-2.0-Vision,5PfNvtw5Nrxhrp7tGBsizJ
 - FriendliAI (inferencia): https://friendli.ai/models/OpenKLO/kokolok-2.0-Vision
 - Sitio web de OpenKLO: https://openklo.com/

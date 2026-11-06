@@ -62,6 +62,6 @@ No disponible. No se trata de un modelo de IA comparable con alternativas de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/minjunlee/paper_015307100_visual_question_answering
+- Repositorio Hugging Face: https://huggingface.co/minjunlee/paper_015307100_visual_question_answering
 - Paper relacionado (VQA survey): https://arxiv.org/html/2501.03939v1
 - Survey en ACM: https://dl.acm.org/doi/epdf/10.1145/3728635

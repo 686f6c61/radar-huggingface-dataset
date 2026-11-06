@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tamek/Mirai-Qwen3-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Tamek/Mirai-Qwen3-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de llama.cpp (conversion y cuantizacion, build b11976): https://github.com/ggml-org/llama.cpp
 - llama-cpp-python (runtime recomendado, version 0.3.19 o superior): https://github.com/abetlen/llama-cpp-python

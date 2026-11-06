@@ -81,7 +81,7 @@ No se dispone de comparativas directas con otros drafters de decodificación esp
 
 ## Enlaces
 
-- Repositorio HuggingFace: [prakharprasad/Muse-Glimmer-30B-DFlash2-Q2_K-GGUF](https://huggingface.co/prakharprasad/Muse-Glimmer-30B-DFlash2-Q2_K-GGUF)
+- Repositorio Hugging Face: [prakharprasad/Muse-Glimmer-30B-DFlash2-Q2_K-GGUF](https://huggingface.co/prakharprasad/Muse-Glimmer-30B-DFlash2-Q2_K-GGUF)
 - Modelo base del drafter: [incoai/Muse-Glimmer-30B-DFlash2](https://huggingface.co/incoai/Muse-Glimmer-30B-DFlash2)
 - Modelo base original de Meta: [meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - Repositorio de Z-Lab (co-desarrollador de DFlash 2): [z-lab/Muse-Glimmer-30B-DFlash2](https://huggingface.co/z-lab/Muse-Glimmer-30B-DFlash2)

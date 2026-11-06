@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-2-7b-chat-finetune-guanaco es un adaptador LoRA (entrenado con QLoRA) sobre el modelo base NousResearch/Llama-2-7b-chat-hf, publicado por el usuario laphilemon en HuggingFace. No se trata de un modelo completo con pesos independientes, sino de un checkpoint de adaptadores de bajo rango que debe combinarse con el modelo base para la inferencia. El objetivo es el ajuste de instrucciones (instruction tuning) sobre el dataset conversacional mlabonne/guanaco-llama2-1k, un subconjunto de 1.000 ejemplos en formato multi-turno.
+Llama-2-7b-chat-finetune-guanaco es un adaptador LoRA (entrenado con QLoRA) sobre el modelo base NousResearch/Llama-2-7b-chat-hf, publicado por el usuario laphilemon en Hugging Face. No se trata de un modelo completo con pesos independientes, sino de un checkpoint de adaptadores de bajo rango que debe combinarse con el modelo base para la inferencia. El objetivo es el ajuste de instrucciones (instruction tuning) sobre el dataset conversacional mlabonne/guanaco-llama2-1k, un subconjunto de 1.000 ejemplos en formato multi-turno.
 
 El modelo resuelve el problema de adaptar un Llama-2-7B-Chat a un estilo conversacional específico con un coste computacional mínimo: solo se entrenan 33.554.432 parámetros (0,495% del total), lo que permite el ajuste en una única GPU NVIDIA Tesla T4 de 15 GB con un pico de VRAM de aproximadamente 4,51 GB. Es relevante como ejemplo reproducible de QLoRA aplicado a modelos de 7B y como punto de partida para quien quiera experimentar con fine-tuning eficiente en hardware consumer.
 
@@ -84,9 +84,9 @@ Progresión de pérdida durante el entrenamiento (declarada por el autor):
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-2-7b-chat-finetune-guanaco | 7B (adaptador de 33,5M entrenables) | 512 (entrenamiento); 4096 (base) | Adaptador LoRA/QLoRA sobre Llama-2-7B-Chat | Apache 2.0 | HuggingFace, 45 descargas |
-| NousResearch/Llama-2-7b-chat-hf | 7B | 4096 | Modelo completo chat | Llama 2 Community License | HuggingFace |
-| Llama-2-7B base | 7B | 4096 | Modelo completo preentrenado | Llama 2 Community License | HuggingFace / Meta |
+| Llama-2-7b-chat-finetune-guanaco | 7B (adaptador de 33,5M entrenables) | 512 (entrenamiento); 4096 (base) | Adaptador LoRA/QLoRA sobre Llama-2-7B-Chat | Apache 2.0 | Hugging Face, 45 descargas |
+| NousResearch/Llama-2-7b-chat-hf | 7B | 4096 | Modelo completo chat | Llama 2 Community License | Hugging Face |
+| Llama-2-7B base | 7B | 4096 | Modelo completo preentrenado | Llama 2 Community License | Hugging Face / Meta |
 
 No se dispone de datos de benchmarks de modelos comparables adicionales en la información proporcionada. La comparativa se limita a los modelos directamente relacionados con este adaptador.
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de modelos comparables adicionales en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laphilemon/Llama-2-7b-chat-finetune-guanaco
+- Modelo en Hugging Face: https://huggingface.co/laphilemon/Llama-2-7b-chat-finetune-guanaco
 - Modelo base: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Dataset de entrenamiento: https://huggingface.co/datasets/mlabonne/guanaco-llama2-1k
 - Repositorio PEFT: https://github.com/huggingface/peft

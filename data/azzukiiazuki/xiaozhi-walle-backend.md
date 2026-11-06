@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AzzuKiiAzuki/xiaozhi-walle-backend`, publicado por el usuario AzzuKiiAzuki en HuggingFace, es un artefacto del que no se dispone de información técnica verificable. La model card asociada contiene únicamente el campo `license: apache-2.0`, sin descripción, arquitectura, tamaño ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y no declara pipeline de inferencia ni idiomas soportados.
+El repositorio `AzzuKiiAzuki/xiaozhi-walle-backend`, publicado por el usuario AzzuKiiAzuki en Hugging Face, es un artefacto del que no se dispone de información técnica verificable. La model card asociada contiene únicamente el campo `license: apache-2.0`, sin descripción, arquitectura, tamaño ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y no declara pipeline de inferencia ni idiomas soportados.
 
 A partir del identificador puede inferirse que se trata de un componente de tipo "backend" (posiblemente código de servidor, configuración o pesos asociados a un servicio), pero esta interpretación no está confirmada por ninguna documentación del autor. El nombre sugiere una relación con el ecosistema del proyecto XiaoZhi, un asistente de voz embebido de código abierto, si bien no existe ningún enlace, dependencia declarada o referencia que lo confirme.
 
@@ -91,5 +91,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del artef
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AzzuKiiAzuki/xiaozhi-walle-backend
+- Repositorio en Hugging Face: https://huggingface.co/AzzuKiiAzuki/xiaozhi-walle-backend
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

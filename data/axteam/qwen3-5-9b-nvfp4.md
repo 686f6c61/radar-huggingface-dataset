@@ -17,7 +17,7 @@ Es relevante ahora por dos motivos. Primero, porque demuestra el flujo de cuanti
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | NVFP4 W4A4: pesos FP4 (E2M1) en grupos de 16 con escala FP8 (E4M3) más escala global FP32 por tensor; activaciones FP4; esquema compressed-tensors `nvfp4-pack-quantized` |
-| Idiomas soportados | No disponibles en los metadatos de HuggingFace; la model card está en inglés y coreano y el conjunto de calibración es mayoritariamente coreano con mezcla de inglés |
+| Idiomas soportados | No disponibles en los metadatos de Hugging Face; la model card está en inglés y coreano y el conjunto de calibración es mayoritariamente coreano con mezcla de inglés |
 | Licencia | Apache-2.0 (derivada del modelo base Qwen/Qwen3.5-9B) |
 | Formato de pesos | safetensors con compressed-tensors (`nvfp4-pack-quantized`); sin GGUF oficial en este repo |
 | Capas mantenidas en BF16 | Torre de visión y proyector (`model.visual.*`), cabeza MTP (`mtp.*`), todas las RMSNorm, embeddings de tokens, LM head y toda la ruta de atención lineal (`linear_attn.*`) |
@@ -77,10 +77,10 @@ Estas cifras miden proximidad al modelo base, no calidad absoluta en tareas. No 
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/Qwen3.5-9B-NVFP4 (este) | 9.409.813.744 | NVFP4 W4A4, grupo 16, SSM y visión en BF16 | No disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes; requiere vLLM y hardware Blackwell |
-| Qwen/Qwen3.5-9B (original) | 9.409.813.744 | BF16 | No disponible | Apache-2.0 | HuggingFace (modelo base oficial); mayor huella de memoria (~18,8 GB en pesos) y sin dependencia de FP4 |
+| axteam/Qwen3.5-9B-NVFP4 (este) | 9.409.813.744 | NVFP4 W4A4, grupo 16, SSM y visión en BF16 | No disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes; requiere vLLM y hardware Blackwell |
+| Qwen/Qwen3.5-9B (original) | 9.409.813.744 | BF16 | No disponible | Apache-2.0 | Hugging Face (modelo base oficial); mayor huella de memoria (~18,8 GB en pesos) y sin dependencia de FP4 |
 | Variante NVFP4A16 del mismo base | No disponible | Pesos FP4, activaciones de mayor precision (recomendada por el autor si prima la calidad) | No disponible | Apache-2.0 | Referenciada en la model card; repositorio concreto no indicado |
-| AxionML/Qwen3.5-9B-NVFP4 | No disponible | NVFP4 (misma familia de formato) | No disponible | No disponible | HuggingFace; cuantizador distinto, ~9,4 GB de VRAM según LLM Explorer; dispone de conversión GGUF de terceros (Freenixi) |
+| AxionML/Qwen3.5-9B-NVFP4 | No disponible | NVFP4 (misma familia de formato) | No disponible | No disponible | Hugging Face; cuantizador distinto, ~9,4 GB de VRAM según LLM Explorer; dispone de conversión GGUF de terceros (Freenixi) |
 
 Las alternativas comparadas comparten base pero no son equivalentes: cambian el cuantizador, el conjunto de calibración y, por tanto, la fidelidad. No hay datos públicos que permitan comparar directamente la calidad de axteam frente a AxionML.
 
@@ -99,7 +99,7 @@ Las alternativas comparadas comparten base pero no son equivalentes: cambian el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-9B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-9B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Build NVFP4 alternativo del mismo base (AxionML): https://huggingface.co/AxionML/Qwen3.5-9B-NVFP4

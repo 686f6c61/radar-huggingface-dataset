@@ -18,7 +18,7 @@ Es relevante ahora únicamente como ejemplo del ecosistema de adaptadores comuni
 | Longitud de contexto | no aplica (modelo texto-a-imagen); el encoder de texto del modelo base condiciona a un maximo declarado de 512 tokens |
 | Tipos de cuantizacion | no disponible; el adaptador se distribuye en el repo de 0,7 GB, pero no se detalla formato ni compatibilidad con cuantizaciones del modelo base |
 | Idiomas soportados | no disponible (el modelo base trabaja principalmente con prompts en ingles) |
-| Licencia | la model card declara creativeml-openrail-m; los metadatos de HuggingFace no reportan licencia. El modelo base FLUX.1-dev usa la licencia FLUX.1 [dev] Non-Commercial |
+| Licencia | la model card declara creativeml-openrail-m; los metadatos de Hugging Face no reportan licencia. El modelo base FLUX.1-dev usa la licencia FLUX.1 [dev] Non-Commercial |
 | Formato de pesos | no confirmado; el tag "diffusers" y el tamano del repo (0,7 GB) apuntan a un unico archivo de adaptador LoRA en safetensors, sin verificacion en la informacion proporcionada |
 
 ## Arquitectura y entrenamiento
@@ -44,7 +44,7 @@ Lo unico documentado es la dependencia del modelo base: FLUX.1-dev es un transfo
 - Pruebas de sesgo y seguridad: dado el nombre "uncensored", es un candidato razonable para evaluar hasta que punto un LoRA puede alterar el comportamiento de un modelo con filtros, comparando generaciones con prompts sensibles frente al modelo base.
 - Generacion de imagenes de uso interno no comercial: siempre que se asuma la licencia no comercial del modelo base, puede emplearse en flujos internos de creacion de material grafico para pruebas.
 - Benchmarking de calidad de LoRA: incorporarlo a una bateria de evaluacion (FID, CLIPScore, comparacion A/B humana) junto a otros adaptadores de FLUX.1-dev para medir fidelidad al prompt y coherencia estetica.
-- Auditoria de licencias en pipelines de IA: caso de estudio sobre la discrepancia entre la licencia declarada en la model card, la del modelo base y la ausencia de metadatos de licencia en HuggingFace.
+- Auditoria de licencias en pipelines de IA: caso de estudio sobre la discrepancia entre la licencia declarada en la model card, la del modelo base y la ausencia de metadatos de licencia en Hugging Face.
 - Integracion en ComfyUI o interfaces graficas: encapsular el adaptador como nodo de LoRA en un flujo de generacion local para creadores que ya trabajan con FLUX.1-dev.
 - Docencia y divulgacion: ilustrar en articulos o talleres que un LoRA comunitario puede tener una model card puramente promocional y cero validacion tecnica.
 
@@ -68,10 +68,10 @@ Las cifras siguientes se refieren al modelo base FLUX.1-dev, que es el que deter
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AshleyTheWitch/Flux-uncensored | LoRA sobre FLUX.1-dev | no disponible (repo de 0,7 GB) | no aplica | sin benchmarks publicados | declarada creativeml-openrail-m; metadatos sin licencia; base no comercial | HuggingFace, 0 descargas y 0 likes |
-| black-forest-labs/FLUX.1-dev | Transformer de flujo rectificado texto-a-imagen | 12 000 millones | 512 tokens de condicionamiento de texto | benchmarks publicados por el autor en la documentacion oficial | FLUX.1 [dev] Non-Commercial | HuggingFace, ampliamente adoptado |
-| Adaptadores LoRA comunitarios para FLUX.1-dev (categoria generica) | LoRA | tipicamente decenas o cientos de megabytes | no aplica | variable, habitualmente sin evaluacion formal | habitualmente heredada del modelo base | HuggingFace, ecosistema amplio |
-| Stable Diffusion XL con LoRA | UNet + doble encoder de texto | 2 600 millones en la UNet, 6 600 millones en total | 77 tokens por encoder | benchmarks publicados por Stability AI | CreativeML OpenRAIL++-M | HuggingFace y multiples interfaces |
+| AshleyTheWitch/Flux-uncensored | LoRA sobre FLUX.1-dev | no disponible (repo de 0,7 GB) | no aplica | sin benchmarks publicados | declarada creativeml-openrail-m; metadatos sin licencia; base no comercial | Hugging Face, 0 descargas y 0 likes |
+| black-forest-labs/FLUX.1-dev | Transformer de flujo rectificado texto-a-imagen | 12 000 millones | 512 tokens de condicionamiento de texto | benchmarks publicados por el autor en la documentacion oficial | FLUX.1 [dev] Non-Commercial | Hugging Face, ampliamente adoptado |
+| Adaptadores LoRA comunitarios para FLUX.1-dev (categoria generica) | LoRA | tipicamente decenas o cientos de megabytes | no aplica | variable, habitualmente sin evaluacion formal | habitualmente heredada del modelo base | Hugging Face, ecosistema amplio |
+| Stable Diffusion XL con LoRA | UNet + doble encoder de texto | 2 600 millones en la UNet, 6 600 millones en total | 77 tokens por encoder | benchmarks publicados por Stability AI | CreativeML OpenRAIL++-M | Hugging Face y multiples interfaces |
 
 No se dispone de datos que permitan comparar el rendimiento de este adaptador con el de otros LoRA de FLUX.1-dev: la informacion proporcionada no incluye ninguna evaluacion.
 
@@ -80,7 +80,7 @@ No se dispone de datos que permitan comparar el rendimiento de este adaptador co
 - Documentacion inexistente: la model card no describe dataset, hiperparametros, rango del LoRA ni modulos objetivo. Es imposible reproducir el entrenamiento o predecir su comportamiento.
 - Model card de caracter promocional: la mayor parte del contenido son enlaces a KenerateAI y a un servidor de Discord, no informacion tecnica. Esto reduce la confianza en la procedencia del archivo de pesos.
 - Riesgo de codigo o pesos no auditados: el repositorio no incluye evaluaciones, y cargar adaptadores de origen desconocido en un pipeline implica ejecutar pesos no verificados. Conviene inspeccionar el safetensors antes de usarlo.
-- Discrepancia de licencia: la model card declara creativeml-openrail-m, mientras que los metadatos de HuggingFace no reportan licencia y el modelo base FLUX.1-dev se distribuye bajo una licencia no comercial. La licencia declarada por el adaptador no puede ampliar los derechos que otorga el modelo base, por lo que el uso comercial es dudoso o directamente no permitido.
+- Discrepancia de licencia: la model card declara creativeml-openrail-m, mientras que los metadatos de Hugging Face no reportan licencia y el modelo base FLUX.1-dev se distribuye bajo una licencia no comercial. La licencia declarada por el adaptador no puede ampliar los derechos que otorga el modelo base, por lo que el uso comercial es dudoso o directamente no permitido.
 - Restricciones de la CreativeML OpenRAIL-M: incluye clausulas de uso que prohiben determinadas finalidades; si se aplicara, impondria condiciones adicionales a la redistribucion y al uso.
 - Nombre sugestivo de contenido sin filtros: el termino "uncensored" apunta a generacion de contenido para adultos o potencialmente danino, pero no hay ninguna descripcion de que se haya entrenado para ello, ni advertencias de seguridad, ni filtros documentados.
 - Sesgos: no documentados. Cualquier sesgo del adaptador se suma al del modelo base, que ya presenta sesgos demograficos y culturales conocidos en modelos texto-a-imagen entrenados con datos web a gran escala.
@@ -91,7 +91,7 @@ No se dispone de datos que permitan comparar el rendimiento de este adaptador co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AshleyTheWitch/Flux-uncensored
+- Modelo en Hugging Face: https://huggingface.co/AshleyTheWitch/Flux-uncensored
 - Modelo base declarado: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Sitio de la plataforma promocionada en la model card: kenerateai.com
 - Generador de video promocionado: kenerateai.com/app/video

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-42` es un encoder de frases afinado para desambiguacion del sentido de las palabras (word-sense disambiguation, WSD) en ucraniano. Lo publica el usuario de HuggingFace `yuriilaba` y parte de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder multilingue basado en la arquitectura MPNet con 278.043.648 parametros totales. El repositorio ocupa 1,1 GB y los pesos se distribuyen en formato safetensors.
+El modelo `yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-42` es un encoder de frases afinado para desambiguacion del sentido de las palabras (word-sense disambiguation, WSD) en ucraniano. Lo publica el usuario de Hugging Face `yuriilaba` y parte de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder multilingue basado en la arquitectura MPNet con 278.043.648 parametros totales. El repositorio ocupa 1,1 GB y los pesos se distribuyen en formato safetensors.
 
 El problema que aborda es la asignacion del sentido correcto a una palabra polisemica dentro de una oracion, una tarea clasica de la linguistica computacional que resulta critica para traduccion automatica, recuperacion de informacion y construccion de recursos lexicograficos. El modelo se entrena sobre un conjunto de tripletes (`triplets_generation_all_combined.csv`) y se evalua tanto en WSD como en similitud textual semantica, con un 0,9170 de exactitud en WSD y un 0,8158 de correlacion de Pearson en STS.
 
@@ -78,10 +78,10 @@ No se han publicado resultados comparativos frente a otros modelos en la informa
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-42` | 278.043.648 | no disponible (hasta 512 por arquitectura MPNet) | WSD en ucraniano y embeddings de frases | no disponible | HuggingFace, 0 descargas |
-| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` (modelo base) | 278 M | hasta 512 tokens (arquitectura MPNet) | Embeddings multilingues y parafrasis | Apache-2.0 (segun su model card publica) | HuggingFace, ampliamente utilizado |
-| `sentence-transformers/LaBSE` | 471 M | hasta 512 tokens | Embeddings bilingues y multilingues | Apache-2.0 (segun su model card publica) | HuggingFace, ampliamente utilizado |
-| `intfloat/multilingual-e5-base` | 278 M | hasta 512 tokens | Embeddings multilingues para retrieval y STS | MIT (segun su model card publica) | HuggingFace, ampliamente utilizado |
+| `yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-42` | 278.043.648 | no disponible (hasta 512 por arquitectura MPNet) | WSD en ucraniano y embeddings de frases | no disponible | Hugging Face, 0 descargas |
+| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` (modelo base) | 278 M | hasta 512 tokens (arquitectura MPNet) | Embeddings multilingues y parafrasis | Apache-2.0 (segun su model card publica) | Hugging Face, ampliamente utilizado |
+| `sentence-transformers/LaBSE` | 471 M | hasta 512 tokens | Embeddings bilingues y multilingues | Apache-2.0 (segun su model card publica) | Hugging Face, ampliamente utilizado |
+| `intfloat/multilingual-e5-base` | 278 M | hasta 512 tokens | Embeddings multilingues para retrieval y STS | MIT (segun su model card publica) | Hugging Face, ampliamente utilizado |
 
 La comparativa es estructural: los tres alternativas son encoders multilingues de tamano similar o superior. El modelo evaluado no declara licencia, lo que impide confirmar si su uso comercial es posible, y no aporta resultados MTEB completos en la informacion proporcionada que permitan situarlo frente a ellos.
 
@@ -99,7 +99,7 @@ La comparativa es estructural: los tres alternativas son encoders multilingues d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-42
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-42
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Paper de MPNet (Song et al., 2020): https://arxiv.org/abs/2004.05150
 - Paper de XLM-RoBERTa (Conneau et al., 2019), relevante por el tokenizador: https://arxiv.org/abs/1911.02116

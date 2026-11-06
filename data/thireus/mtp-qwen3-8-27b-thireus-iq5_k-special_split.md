@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mtp-Qwen3.8-27B-THIREUS-IQ5_K-SPECIAL_SPLIT`, publicado por el usuario Thireus en HuggingFace, es una variante cuantizada de un modelo de la familia Qwen con 27 mil millones de parámetros. El nombre sugiere que se trata de un checkpoint adaptado o fusionado con una técnica de multi-token prediction (mtp) y posteriormente cuantizado al formato IQ5_K de GGUF, un esquema de cuantización de 5 bits optimizado para inferencia eficiente en CPU y GPU. El sufijo "SPECIAL_SPLIT" podría indicar una partición especial de los pesos, aunque no se proporciona documentación técnica al respecto.
+El modelo `mtp-Qwen3.8-27B-THIREUS-IQ5_K-SPECIAL_SPLIT`, publicado por el usuario Thireus en Hugging Face, es una variante cuantizada de un modelo de la familia Qwen con 27 mil millones de parámetros. El nombre sugiere que se trata de un checkpoint adaptado o fusionado con una técnica de multi-token prediction (mtp) y posteriormente cuantizado al formato IQ5_K de GGUF, un esquema de cuantización de 5 bits optimizado para inferencia eficiente en CPU y GPU. El sufijo "SPECIAL_SPLIT" podría indicar una partición especial de los pesos, aunque no se proporciona documentación técnica al respecto.
 
-La ficha disponible en HuggingFace es extremadamente limitada: únicamente incluye la licencia MIT y la fecha de creación. No se especifican arquitectura, tamaño exacto de contexto, idiomas soportados ni datos de entrenamiento. Toda la información técnica de este documento se infiere del nombre del repositorio y de convenciones estándar de la comunidad de modelos abiertos, por lo que debe tratarse con cautela. A fecha de consulta, el modelo no registra descargas ni valoraciones, lo que sugiere que es un experimento reciente o de baja difusión.
+La ficha disponible en Hugging Face es extremadamente limitada: únicamente incluye la licencia MIT y la fecha de creación. No se especifican arquitectura, tamaño exacto de contexto, idiomas soportados ni datos de entrenamiento. Toda la información técnica de este documento se infiere del nombre del repositorio y de convenciones estándar de la comunidad de modelos abiertos, por lo que debe tratarse con cautela. A fecha de consulta, el modelo no registra descargas ni valoraciones, lo que sugiere que es un experimento reciente o de baja difusión.
 
 ## Especificaciones tecnicas
 
@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables verificados de la misma familia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ5_K-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ5_K-SPECIAL_SPLIT

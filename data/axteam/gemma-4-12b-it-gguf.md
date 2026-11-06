@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de tareas para este modelo ni para alternat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/gemma-4-12B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/axteam/gemma-4-12B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - llama.cpp: https://github.com/ggml-org/llama.cpp

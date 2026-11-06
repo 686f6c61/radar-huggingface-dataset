@@ -80,7 +80,7 @@ Idiomas con menos de 1000 inicios de entrenamiento, donde la cabeza tiende a res
 
 | Modelo | Parametros | Contexto o entrada | Rendimiento en LID | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-language-detection (sent49) | 127M de torre congelada mas 100k de cabeza | 1 s de audio, ampliable sumando ventanas | 48,7% top-1 en 49 idiomas; 57,7% top-1 en fixie-ai sumando ventanas | Apache-2.0 (cabeza y codigo); pesos base bajo terminos de Gemma | HuggingFace, via proyecto Elixir/Nx |
+| gemma-language-detection (sent49) | 127M de torre congelada mas 100k de cabeza | 1 s de audio, ampliable sumando ventanas | 48,7% top-1 en 49 idiomas; 57,7% top-1 en fixie-ai sumando ventanas | Apache-2.0 (cabeza y codigo); pesos base bajo terminos de Gemma | Hugging Face, via proyecto Elixir/Nx |
 | Ultravox 32B (v0.6, Qwen3-32B) | 32B | 1 s inicial o clip completo | 45,0% en el primer segundo; 89,3% en clip completo sobre fixie-ai | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otros clasificadores de idioma hablado | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ El unico punto de comparacion con cifras publicadas en la model card es Ultravox
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olafura/gemma-language-detection
+- Modelo en Hugging Face: https://huggingface.co/olafura/gemma-language-detection
 - Repositorio del runtime Elixir/Nx: https://github.com/olafura/gemma-4-mic-transcribe
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset de entrenamiento (Common Voice 17): https://huggingface.co/datasets/fixie-ai/common_voice_17_0

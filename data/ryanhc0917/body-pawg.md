@@ -86,7 +86,7 @@ No disponible. La búsqueda web realizada no ha devuelto información sobre otro
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Ryanhc0917/body-pawg
+- Página del modelo en Hugging Face: https://huggingface.co/Ryanhc0917/body-pawg
 - Modelo base declarado en los metadatos (krea/Krea-2-Raw): https://huggingface.co/krea/Krea-2-Raw
 - Modelo de inferencia referenciado en el ejemplo de código (krea/Krea-2-Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - La búsqueda web realizada no devolvió enlaces relevantes: los resultados obtenidos correspondían a calculadoras online y no guardan relación con el modelo. No se dispone de papers, blogs, repositorios ni demos adicionales.

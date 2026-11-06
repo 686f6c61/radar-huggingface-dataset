@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TelcoLLM-3GPP-OT-snippet-0.8425 es un punto de control de clasificacion de texto, no un modelo generativo, publicado por el usuario Savoxism en HuggingFace. Se construye sobre el modelo base Qwen/Qwen3-8B (revision fijada `b968826d9c46dd6066d109eabc6255188de91218`) mediante un adaptador LoRA de tipo weight-only con rango 128 y alpha 256, al que se anaden cabezas de proyeccion, pooling y clasificacion de 16 clases. El objetivo concreto es clasificar fragmentos de documentos 3GPP en uno de los 16 grupos de trabajo de estandarizacion, una tarea de enrutado documental en el dominio de telecomunicaciones.
+TelcoLLM-3GPP-OT-snippet-0.8425 es un punto de control de clasificacion de texto, no un modelo generativo, publicado por el usuario Savoxism en Hugging Face. Se construye sobre el modelo base Qwen/Qwen3-8B (revision fijada `b968826d9c46dd6066d109eabc6255188de91218`) mediante un adaptador LoRA de tipo weight-only con rango 128 y alpha 256, al que se anaden cabezas de proyeccion, pooling y clasificacion de 16 clases. El objetivo concreto es clasificar fragmentos de documentos 3GPP en uno de los 16 grupos de trabajo de estandarizacion, una tarea de enrutado documental en el dominio de telecomunicaciones.
 
 El repositorio no incluye la cabeza de lenguaje ni el vocabulario del modelo base: es un checkpoint exclusivamente de clasificacion, con los pesos base excluidos y el corpus de entrenamiento y el benchmark no publicados. Segun la model card, alcanza un 84,25 % de exactitud sobre 2.000 ejemplos de tipo OT-snippet, con un entrenamiento de dos epocas completas en la etapa 1 y cuatro epocas completas en la etapa 2 sobre ocho GPU H200, con checkpointing unicamente final y sin seleccion de checkpoint basada en benchmark.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks adicionales ni comparaciones con ot
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TelcoLLM-3GPP-OT-snippet-0.8425 | Clasificador de 16 clases sobre Qwen3-8B con LoRA | Modelo base 8B + adaptador y cabezas (recuento no disponible) | No indicado; base de 32.768 tokens | 84,25 % de exactitud en 2.000 ejemplos OT-snippet (autor) | Apache 2.0 | HuggingFace, repositorio de 1,4 GB, requiere el modelo base aparte |
-| Qwen/Qwen3-8B | Modelo generativo (decoder) | Aproximadamente 8B | 32.768 tokens nativos | No aplica a esta tarea sin ajuste | Apache 2.0 | HuggingFace |
+| TelcoLLM-3GPP-OT-snippet-0.8425 | Clasificador de 16 clases sobre Qwen3-8B con LoRA | Modelo base 8B + adaptador y cabezas (recuento no disponible) | No indicado; base de 32.768 tokens | 84,25 % de exactitud en 2.000 ejemplos OT-snippet (autor) | Apache 2.0 | Hugging Face, repositorio de 1,4 GB, requiere el modelo base aparte |
+| Qwen/Qwen3-8B | Modelo generativo (decoder) | Aproximadamente 8B | 32.768 tokens nativos | No aplica a esta tarea sin ajuste | Apache 2.0 | Hugging Face |
 | Clasificador de texto especializado tipo BERT/DeBERTa afinado | Clasificador | Tipicamente 100-400 millones | 512-8.192 tokens | No disponible para la tarea de grupos 3GPP | Depende del modelo | No disponible en la informacion consultada |
 
 No se han identificado en la informacion disponible otros clasificadores publicados de grupos de trabajo 3GPP con los que establecer una comparacion cuantitativa directa. El conjunto de datos TSpec-LLM, citado en los resultados de busqueda, es un corpus de documentos 3GPP y un benchmark de preguntas tecnicas, no un modelo comparable.
@@ -96,7 +96,7 @@ No se han identificado en la informacion disponible otros clasificadores publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Savoxism/TelcoLLM-3GPP-OT-snippet-0.8425
+- Modelo en Hugging Face: https://huggingface.co/Savoxism/TelcoLLM-3GPP-OT-snippet-0.8425
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Especificaciones y tecnologias 3GPP: https://www.3gpp.org/specifications-technologies/standards
-- Articulos diarios de HuggingFace filtrados por 3GPP (incluye TSpec-LLM): https://huggingface.co/papers?q=3GPP
+- Articulos diarios de Hugging Face filtrados por 3GPP (incluye TSpec-LLM): https://huggingface.co/papers?q=3GPP

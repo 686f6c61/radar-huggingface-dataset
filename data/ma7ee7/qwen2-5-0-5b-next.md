@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ma7ee7/Qwen2.5-0.5b-Next | 494M | 2.048 (hasta 8.192 experimental) | Apache 2.0 | HuggingFace, loader propio | Atención híbrida con KV cache comprimido; solo inglés |
-| Qwen/Qwen2.5-0.5B-Instruct | ~494M | 32.768 | Apache 2.0 | HuggingFace, transformers estándar | Modelo base oficial, multilingüe, soporte amplio en motores |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1.500M | 32.768 | Apache 2.0 | HuggingFace, transformers estándar | Mayor capacidad, más VRAM, oficial |
-| HuggingFaceTB/SmolLM2-360M-Instruct | ~360M | 8.192 | Apache 2.0 | HuggingFace, transformers estándar | Alternativa pequeña oficial, sin modificaciones arquitectónicas |
+| Ma7ee7/Qwen2.5-0.5b-Next | 494M | 2.048 (hasta 8.192 experimental) | Apache 2.0 | Hugging Face, loader propio | Atención híbrida con KV cache comprimido; solo inglés |
+| Qwen/Qwen2.5-0.5B-Instruct | ~494M | 32.768 | Apache 2.0 | Hugging Face, transformers estándar | Modelo base oficial, multilingüe, soporte amplio en motores |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1.500M | 32.768 | Apache 2.0 | Hugging Face, transformers estándar | Mayor capacidad, más VRAM, oficial |
+| HuggingFaceTB/SmolLM2-360M-Instruct | ~360M | 8.192 | Apache 2.0 | Hugging Face, transformers estándar | Alternativa pequeña oficial, sin modificaciones arquitectónicas |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ma7ee7/Qwen2.5-0.5b-Next
+- Modelo en Hugging Face: https://huggingface.co/Ma7ee7/Qwen2.5-0.5b-Next
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceH4/no_robots
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

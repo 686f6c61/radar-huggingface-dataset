@@ -4,7 +4,7 @@
 
 Quark-270m-Instruct-GGUF es una conversión al formato GGUF del modelo ThingAI/Quark-270m-Instruct, realizada por el usuario usermma. El modelo original, desarrollado por ThingAI, es un modelo de lenguaje causal bilingüe (italiano e inglés) de tamaño pequeño, entrenado desde cero y ajustado por instrucciones (SFT). La conversión a GGUF permite ejecutarlo con llama.cpp en CPU o GPU, lo que facilita su uso en entornos con recursos limitados.
 
-Según los datos de HuggingFace, el modelo tiene 251.749.888 parámetros reales (aunque el nombre sugiere 270M) y se distribuye bajo licencia Apache 2.0. No se dispone de información sobre la longitud de contexto ni la arquitectura detallada.
+Según los datos de Hugging Face, el modelo tiene 251.749.888 parámetros reales (aunque el nombre sugiere 270M) y se distribuye bajo licencia Apache 2.0. No se dispone de información sobre la longitud de contexto ni la arquitectura detallada.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ Según los datos de HuggingFace, el modelo tiene 251.749.888 parámetros reales 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura del modelo en los datos proporcionados. Se sabe que es un modelo causal-LM, bilingüe y entrenado desde cero (trained-from-scratch), con ajuste por instrucciones (SFT). No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El modelo base indicado en HuggingFace es ThingAI/ARK-270m-Instruct, mientras que el README menciona que la conversión se realizó desde ThingAI/Quark-270m-Instruct.
+No se dispone de información detallada sobre la arquitectura del modelo en los datos proporcionados. Se sabe que es un modelo causal-LM, bilingüe y entrenado desde cero (trained-from-scratch), con ajuste por instrucciones (SFT). No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El modelo base indicado en Hugging Face es ThingAI/ARK-270m-Instruct, mientras que el README menciona que la conversión se realizó desde ThingAI/Quark-270m-Instruct.
 
 ## Capacidades
 

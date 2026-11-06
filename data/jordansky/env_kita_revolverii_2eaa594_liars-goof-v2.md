@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (PEFT) publicado por el usuario Jordansky en HuggingFace, identificado como `env_kita_revolverII_2eaa594_liars-goof-v2`. Según los metadatos, se basa en el modelo `unsloth--Llama-3.2-3B-Instruct` y ha sido entrenado mediante fine-tuning supervisado (SFT) usando la librería PEFT. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño total de 0,8 GB.
+Este modelo es un adaptador LoRA (PEFT) publicado por el usuario Jordansky en Hugging Face, identificado como `env_kita_revolverII_2eaa594_liars-goof-v2`. Según los metadatos, se basa en el modelo `unsloth--Llama-3.2-3B-Instruct` y ha sido entrenado mediante fine-tuning supervisado (SFT) usando la librería PEFT. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño total de 0,8 GB.
 
 La model card está prácticamente vacía: no se especifican licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El modelo no tiene descargas ni likes en el momento de la consulta, lo que sugiere que es un experimento personal o un checkpoint intermedio. Al ser un adaptador LoRA, no funciona de forma independiente; requiere cargar el modelo base Llama-3.2-3B-Instruct y aplicar los pesos del adaptador para obtener el modelo final.
 
@@ -23,7 +23,7 @@ Dada la ausencia de documentación, cualquier uso en producción debe considerar
 
 ## Arquitectura y entrenamiento
 
-El adaptador se construye sobre Llama-3.2-3B-Instruct, un modelo transformer decoder con atención causal y 3.000 millones de parámetros, desarrollado por Meta. La técnica empleada es LoRA (Low-Rank Adaptation), que congela los pesos del modelo base e introduce matrices de bajo rango en las capas de atención y MLP, reduciendo drásticamente el número de parámetros entrenables. El entrenamiento se realizó con fine-tuning supervisado (SFT) usando la librería TRL de HuggingFace, como indican los tags del repositorio.
+El adaptador se construye sobre Llama-3.2-3B-Instruct, un modelo transformer decoder con atención causal y 3.000 millones de parámetros, desarrollado por Meta. La técnica empleada es LoRA (Low-Rank Adaptation), que congela los pesos del modelo base e introduce matrices de bajo rango en las capas de atención y MLP, reduciendo drásticamente el número de parámetros entrenables. El entrenamiento se realizó con fine-tuning supervisado (SFT) usando la librería TRL de Hugging Face, como indican los tags del repositorio.
 
 No se dispone de información sobre el dataset utilizado, el número de pasos, la tasa de aprendizaje, el rango de las matrices LoRA ni el régimen de precisión (fp16, bf16, etc.). El tag `arxiv:1910.09700` hace referencia al paper original de LoRA, pero no aporta detalles específicos de este entrenamiento. Tampoco se menciona el uso de RLHF, DPO u otras técnicas de alineación posteriores al SFT.
 
@@ -81,7 +81,7 @@ No se dispone de información sobre otros adaptadores LoRA de Llama-3.2-3B con l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordansky/env_kita_revolverII_2eaa594_liars-goof-v2
+- Repositorio en Hugging Face: https://huggingface.co/Jordansky/env_kita_revolverII_2eaa594_liars-goof-v2
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Modelo base Llama-3.2-3B-Instruct (referencia): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

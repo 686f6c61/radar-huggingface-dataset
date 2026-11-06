@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | CER (HHD Option-B) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-htrvt-geom4-s43 | 13,8 M | no disponible | 0,0666 | MIT | HuggingFace |
+| cyttic/hmt-htrvt-geom4-s43 | 13,8 M | no disponible | 0,0666 | MIT | Hugging Face |
 | Alternativas HTR para hebreo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-geom4-s43
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-geom4-s43
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` (referenciado en la model card, no se proporciona URL directa)
 - Paper, blog o repositorio del estudio `htr-metrics-transfer`: no disponible en la informacion proporcionada

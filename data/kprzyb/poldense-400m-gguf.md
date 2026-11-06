@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kprzyb/PolDense-400M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kprzyb/PolDense-400M-GGUF
 - Modelo base: https://huggingface.co/OPI-PIB/PolDense-400M
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

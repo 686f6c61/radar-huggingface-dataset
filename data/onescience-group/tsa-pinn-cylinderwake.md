@@ -66,7 +66,7 @@ La propia model card advierte que la convencion de evaluacion agregada del paper
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TSA-PINN-CylinderWake | PINN con activacion sinusoidal entrenable | no disponible (4x50) | no aplica | other | HuggingFace, ModelScope |
+| TSA-PINN-CylinderWake | PINN con activacion sinusoidal entrenable | no disponible (4x50) | no aplica | other | Hugging Face, ModelScope |
 | PINN clasica (referencia del paper) | PINN con activacion convencional | no disponible | no aplica | no disponible | no disponible |
 | Alternativas PINN para estela de cilindro | PINN estandar | no disponible | no aplica | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos cuantitativos de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/TSA-PINN-CylinderWake
+- Hugging Face: https://huggingface.co/OneScience-Group/TSA-PINN-CylinderWake
 - Paper original: https://publications.polymtl.ca/65937/1/2025_Khademi_Physics-informed_neural_networks_trainable.pdf
 - Repositorio de los autores: https://github.com/AmirhosseinnnKhademi/TSA-PINN
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/OneScience/TSA-PINN-CylinderWake

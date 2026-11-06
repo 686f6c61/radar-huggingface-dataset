@@ -36,7 +36,7 @@ No se han documentado capacidades específicas del modelo en la información dis
 - Comparación de optimizadores en entrenamiento: el checkpoint base en el paso 7226 permite medir la pérdida de AdamW frente a variantes con Muon disponibles en la misma organización, manteniendo la arquitectura y la semilla constantes. Es adecuado porque el repositorio está explícitamente etiquetado como `optimizer-comparison`.
 - Reproducción de checkpoints de continuidad: el manifiesto de archivos incluye hashes SHA-256 y metadatos, lo que facilita verificar que un entrenamiento se recupera exactamente en el estado documentado. Es útil para equipos que necesitan trazar la procedencia de los pesos.
 - Experimentos de ajuste fino: el endpoint SFT en el paso 501 puede utilizarse para analizar cómo el ajuste conversacional modifica la pérdida respecto al checkpoint base. La presencia de ambos endpoints permite comparar el efecto del SFT de forma controlada.
-- Estudio de sensibilidad a la semilla: las variantes con semilla 43 y 44, publicadas en la misma cuenta de HuggingFace, permiten estudiar el impacto de la inicialización aleatoria en la convergencia del entrenamiento.
+- Estudio de sensibilidad a la semilla: las variantes con semilla 43 y 44, publicadas en la misma cuenta de Hugging Face, permiten estudiar el impacto de la inicialización aleatoria en la convergencia del entrenamiento.
 - Análisis de estrategias de checkpointing: el repo documenta grupos de checkpoint sin estado de optimizador completo, lo que sirve para investigar cómo afecta la disponibilidad de shards al reanudar entrenamientos a medio camino.
 - Docencia en sistemas de entrenamiento: el formato nativo de NanoChat y los manifiestos permiten ilustrar cómo se estructuran los artefactos de entrenamiento sin pasar por el formato Transformers, lo que resulta útil en cursos prácticos sobre infraestructura de modelos de lenguaje.
 
@@ -72,6 +72,6 @@ La información disponible no incluye datos de rendimiento ni resultados de eval
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nanochat/nanochat-d26-adamw-s43
-- Organización Nanochat en HuggingFace: https://huggingface.co/Nanochat
+- Repositorio en Hugging Face: https://huggingface.co/Nanochat/nanochat-d26-adamw-s43
+- Organización Nanochat en Hugging Face: https://huggingface.co/Nanochat
 - Repositorio GitHub del proyecto NanoChat: https://github.com/karpathy/nanochat

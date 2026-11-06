@@ -66,8 +66,8 @@ No se han publicado en la información disponible tablas detalladas de benchmark
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ContextPilot-14B | 14.7B | 128K (según paper) | Gestión proactiva de contexto con RL | other | HuggingFace, código abierto |
-| Qwen3-14B (base) | 14.7B | 128K (según documentación de Qwen) | Modelo base sin ajuste agéntico | Apache 2.0 (según Qwen) | HuggingFace |
+| ContextPilot-14B | 14.7B | 128K (según paper) | Gestión proactiva de contexto con RL | other | Hugging Face, código abierto |
+| Qwen3-14B (base) | 14.7B | 128K (según documentación de Qwen) | Modelo base sin ajuste agéntico | Apache 2.0 (según Qwen) | Hugging Face |
 | StateLM-14B-RL | 14B (aprox.) | no disponible | Gestión de estado con RL | no disponible | no disponible |
 
 ContextPilot-14B se diferencia de su modelo base por el entrenamiento específico en gestión de contexto, y supera a StateLM-14B-RL en las tareas evaluadas. La licencia "other" puede ser más restrictiva que la Apache 2.0 de Qwen3-14B, por lo que conviene revisarla antes de uso comercial.
@@ -83,9 +83,9 @@ ContextPilot-14B se diferencia de su modelo base por el entrenamiento específic
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/DIYIN/ContextPilot-14B (también referenciado como tencent/ContextPilot-14B)
+- Hugging Face (modelo): https://huggingface.co/DIYIN/ContextPilot-14B (también referenciado como tencent/ContextPilot-14B)
 - Repositorio GitHub: https://github.com/Tencent/ContextPilot
 - Paper (arXiv): https://arxiv.org/abs/2608.28476
 - Demo en vivo: https://tencent.github.io/ContextPilot/
-- Colección de modelos ContextPilot en HuggingFace: https://huggingface.co/collections/panzs19/contextpilot
+- Colección de modelos ContextPilot en Hugging Face: https://huggingface.co/collections/panzs19/contextpilot
 - Guía de inferencia: https://github.com/Tencent/ContextPilot/blob/main/infer/README.md

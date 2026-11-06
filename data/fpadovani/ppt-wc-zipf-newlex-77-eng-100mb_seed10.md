@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ppt-wc-zipf-newlex-77-eng-100mb_seed10 es un ajuste fino (fine-tune) del modelo monolingüe goldfish-models/eng_latn_100mb, publicado por el usuario fpadovani en HuggingFace el 13 de septiembre de 2026. Se trata de un transformer decoder-only de estilo GPT-2 con 86.508.288 parámetros, entrenado mediante supervisión directa (SFT) con la librería TRL 0.23.0 sobre Transformers 4.56.2. El repositorio almacena únicamente pesos en formato safetensors y no incluye documentación sobre el dataset, la composición de los datos ni los hiperparámetros empleados.
+ppt-wc-zipf-newlex-77-eng-100mb_seed10 es un ajuste fino (fine-tune) del modelo monolingüe goldfish-models/eng_latn_100mb, publicado por el usuario fpadovani en Hugging Face el 13 de septiembre de 2026. Se trata de un transformer decoder-only de estilo GPT-2 con 86.508.288 parámetros, entrenado mediante supervisión directa (SFT) con la librería TRL 0.23.0 sobre Transformers 4.56.2. El repositorio almacena únicamente pesos en formato safetensors y no incluye documentación sobre el dataset, la composición de los datos ni los hiperparámetros empleados.
 
 El modelo apenas tiene tracción pública: cero descargas y cero "likes" en el momento de redactar esta ficha, y su model card es prácticamente la plantilla autogenerada por TRL. El nombre del repositorio y la URL del experimento en Weights & Biases (entidad f-padovani-university-of-groningen, proyecto white_cotterell) apuntan a un trabajo académico de investigación sobre lingüística computacional, probablemente un barrido de experimentos controlados sobre distribución de frecuencias (ley de Zipf), cobertura léxica y variantes de tokenización, con el identificador 77 y la semilla 10 como coordenadas dentro de ese barrido.
 
-Su relevancia es, por tanto, la de un artefacto de investigación reproducible y de bajo coste computacional, no la de un modelo listo para producción. Sirve como punto de comparación en estudios sobre modelos pequeños, como base para experimentos de ajuste sobre corpus de 100 MB y como caso de prueba para pipelines de despliegue que necesiten verificar el flujo completo de HuggingFace a un endpoint de inferencia.
+Su relevancia es, por tanto, la de un artefacto de investigación reproducible y de bajo coste computacional, no la de un modelo listo para producción. Sirve como punto de comparación en estudios sobre modelos pequeños, como base para experimentos de ajuste sobre corpus de 100 MB y como caso de prueba para pipelines de despliegue que necesiten verificar el flujo completo de Hugging Face a un endpoint de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -45,14 +45,14 @@ No se describe ninguna innovación técnica (decodificación especulativa, atenc
 - No hay evidencia documentada de capacidades de agente, razonamiento multi-paso o uso de herramientas externas.
 - No hay evidencia documentada de capacidades multilingües; el modelo base es específicamente de inglés.
 - No dispone de visión, audio, modo de razonamiento explícito (thinking mode) ni salidas estructuradas garantizadas.
-- Compatible con el ecosistema de `text-generation-inference` y con endpoints de HuggingFace según los tags del repositorio, aunque sin métricas publicadas de latencia o throughput.
+- Compatible con el ecosistema de `text-generation-inference` y con endpoints de Hugging Face según los tags del repositorio, aunque sin métricas publicadas de latencia o throughput.
 
 ## Casos de uso
 
 - Reproducción de experimentos académicos: el modelo permite replicar y auditar un punto concreto (variante 77, semilla 10) de un barrido experimental sobre léxico y frecuencias, siempre que el resto de la configuración esté documentada en el proyecto de W&B asociado.
 - Baseline en estudios sobre modelos pequeños: sirve como referencia de 86,5 M de parámetros al comparar arquitecturas, tokenizadores o regímenes de ajuste sobre corpus de 100 MB.
 - Análisis de cobertura léxica y tokenización: al derivar de un modelo entrenado sobre un volumen de texto controlado, es útil para medir cómo afecta el vocabulario del tokenizador a la generación en dominios con vocabulario especializado.
-- Pruebas de extremo a extremo en pipelines de despliegue: su tamaño reducido permite validar en minutos un flujo completo de publicación (HuggingFace, descarga de safetensors, carga con Transformers, servido con TGI) sin consumir recursos de GPU relevantes.
+- Pruebas de extremo a extremo en pipelines de despliegue: su tamaño reducido permite validar en minutos un flujo completo de publicación (Hugging Face, descarga de safetensors, carga con Transformers, servido con TGI) sin consumir recursos de GPU relevantes.
 - Generación de datos sintéticos para pruebas unitarias: puede producir cadenas de texto plausibles para rellenar fixtures, pruebas de integración o validación de esquemas de respuesta en aplicaciones que no requieren calidad lingüística alta.
 - Docencia y experimentación en aula: es un caso práctico y barato para explicar el flujo completo de ajuste supervisado con TRL, desde el modelo base hasta la publicación de pesos en el Hub.
 - Inferencia en dispositivos sin GPU: cabe en memoria de sistemas embebidos o portátiles modestos, lo que permite ejecutarlo como servicio de texto de baja prioridad o en entornos de desarrollo sin acelerador.
@@ -77,7 +77,7 @@ La model card no incluye métricas de ningún tipo (perplejidad, MMLU, HumanEval
 
 ## Comparativa con modelos similares
 
-Los valores de los modelos alternativos proceden de sus respectivas model cards publicas en HuggingFace; los datos del modelo de esta ficha son los unicos verificados en la informacion proporcionada.
+Los valores de los modelos alternativos proceden de sus respectivas model cards publicas en Hugging Face; los datos del modelo de esta ficha son los unicos verificados en la informacion proporcionada.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
@@ -103,7 +103,7 @@ La diferencia fundamental no está en el rendimiento, sino en la trazabilidad: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/yq5jsgsp
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -17,7 +17,7 @@ La relevancia de este modelo reside en su nicho específico: la escritura creati
 | Parametros activos | no disponible (el autor menciona MoE dispersa, pero no especifica el numero de activos) |
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | no disponible (el repositorio solo contiene pesos en safetensors) |
-| Idiomas soportados | Japones e ingles (segun la model card; el campo de idiomas en HuggingFace no esta disponible) |
+| Idiomas soportados | Japones e ingles (segun la model card; el campo de idiomas en Hugging Face no esta disponible) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Local-Novel-LLM-project/Qwen3.5-Hasutsubomi-9B
+- Repositorio Hugging Face: https://huggingface.co/Local-Novel-LLM-project/Qwen3.5-Hasutsubomi-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AniMUL-v1 (GGUF) | 30,5 B | no disponible | texto + audio | Apache 2.0 | HuggingFace (GGUF) |
-| Modelos generalistas de ~30 B (p. ej. familia Llama o Qwen) | ~30 B | 8k-128k segun variante | texto (algunos multimodal) | variable | HuggingFace |
-| Modelos de bioacustica especializados (p. ej. BirdNET, Perch) | < 1 B tipicamente | no aplica | audio | variable | HuggingFace / GitHub |
+| AniMUL-v1 (GGUF) | 30,5 B | no disponible | texto + audio | Apache 2.0 | Hugging Face (GGUF) |
+| Modelos generalistas de ~30 B (p. ej. familia Llama o Qwen) | ~30 B | 8k-128k segun variante | texto (algunos multimodal) | variable | Hugging Face |
+| Modelos de bioacustica especializados (p. ej. BirdNET, Perch) | < 1 B tipicamente | no aplica | audio | variable | Hugging Face / GitHub |
 
 La comparativa con modelos generalistas de aproximadamente 30 B es pertinente por tamano, pero AniMUL-v1 se diferencia por su especializacion en audio biologico y su naturaleza multimodal. Frente a clasificadores bioacusticos clasicos como BirdNET o Perch (mucho mas pequenos y centrados en clasificacion), AniMUL-v1 aporta generacion de texto y dialogo, aunque a costa de un consumo de recursos mucho mayor. No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 

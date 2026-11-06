@@ -50,8 +50,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 ## Comparativa con modelos similares
 | Modelo | Arquitectura | Dataset | Frecuencia de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VofVoices/peter-pan-foxs-peter-pan-RVC-v2 | RVC v2 + HiFi-GAN | 8 min | 48 kHz | No especificada (atribucion) | HuggingFace |
-| Modelos RVC genericos de otros personajes | RVC v2 | Variable (tipicamente 10-60 min) | 40-48 kHz | Variable (depende del autor) | HuggingFace |
+| VofVoices/peter-pan-foxs-peter-pan-RVC-v2 | RVC v2 + HiFi-GAN | 8 min | 48 kHz | No especificada (atribucion) | Hugging Face |
+| Modelos RVC genericos de otros personajes | RVC v2 | Variable (tipicamente 10-60 min) | 40-48 kHz | Variable (depende del autor) | Hugging Face |
 | GPT-SoVITS | So-VITS + GPT | Variable (tipicamente 5-60 min) | 32-48 kHz | MIT (partes) | GitHub/HuggingFace |
 
 No hay datos de rendimiento comparativo publicados entre estos modelos. La principal diferencia con GPT-SoVITS es que este ultimo incorpora un componente de lenguaje para conversion con pocos datos, mientras que RVC se centra exclusivamente en la conversion acustica.
@@ -65,4 +65,4 @@ No hay datos de rendimiento comparativo publicados entre estos modelos. La princ
 - Sin soporte de cuantizacion estandar (GGUF, etc.), lo que limita su despliegue en entornos optimizados para CPU como llama.cpp u Ollama.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/VofVoices/peter-pan-foxs-peter-pan-RVC-v2
+- Hugging Face: https://huggingface.co/VofVoices/peter-pan-foxs-peter-pan-RVC-v2

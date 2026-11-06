@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Stock Spoon Qwen3-Reranker-4B LoRA | adaptador sobre base de 4B | limite de evaluacion 16.384 tokens | Reranking financiero coreano (OpenDART) | Apache 2.0 | HuggingFace (35 descargas) |
-| Qwen/Qwen3-Reranker-4B | 4B | el del modelo base (no detallado aqui) | Reranking general multilingue | la del repositorio Qwen | HuggingFace |
-| Rerankers genericos de la familia Qwen3 Embedding (0.6B, 4B, 8B) | 0,6B a 8B | no disponible | Reranking general | la del repositorio Qwen | HuggingFace |
+| Stock Spoon Qwen3-Reranker-4B LoRA | adaptador sobre base de 4B | limite de evaluacion 16.384 tokens | Reranking financiero coreano (OpenDART) | Apache 2.0 | Hugging Face (35 descargas) |
+| Qwen/Qwen3-Reranker-4B | 4B | el del modelo base (no detallado aqui) | Reranking general multilingue | la del repositorio Qwen | Hugging Face |
+| Rerankers genericos de la familia Qwen3 Embedding (0.6B, 4B, 8B) | 0,6B a 8B | no disponible | Reranking general | la del repositorio Qwen | Hugging Face |
 
 La comparativa se limita al modelo base y a variantes de la misma familia, ya que la informacion disponible no incluye otros rerankers especializados en finanzas coreanas con los que contrastar.
 

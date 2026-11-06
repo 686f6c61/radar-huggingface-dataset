@@ -74,7 +74,7 @@ No disponible. No se dispone de informacion sobre modelos comparables ni de dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xFutureTechx/Aug2023-Sept2023SORT
+- Hugging Face: https://huggingface.co/xFutureTechx/Aug2023-Sept2023SORT
 - Dataset referenciado: https://huggingface.co/datasets/EarthnDusk/Creative-Embeddings
 - Ko-Fi del autor: https://ko-fi.com/duskfallcrew/
 - Runpod (afiliado): https://runpod.io/?ref=yx1lcptf

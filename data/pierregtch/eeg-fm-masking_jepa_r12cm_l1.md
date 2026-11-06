@@ -91,9 +91,9 @@ La comparacion natural es dentro de la propia coleccion de 58 encoders del estud
 
 | Modelo | Framework | Geometria de mascara | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eeg-fm-masking_jepa_r12cm_L1 (este) | JEPA | r = 12 cm, L = 1 parche | 12,69 M | Parches de 1 s a 200 Hz, agnostico al montaje | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | r = 9 cm, L = 2 parches | No disponible | Parches de 1 s a 200 Hz, agnostico al montaje | CC-BY-4.0 | HuggingFace (recomendado por el paper) |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | r = 9 cm, L = 2 parches | No disponible | Parches de 1 s a 200 Hz, agnostico al montaje | CC-BY-4.0 | HuggingFace (recomendado por el paper) |
+| eeg-fm-masking_jepa_r12cm_L1 (este) | JEPA | r = 12 cm, L = 1 parche | 12,69 M | Parches de 1 s a 200 Hz, agnostico al montaje | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | r = 9 cm, L = 2 parches | No disponible | Parches de 1 s a 200 Hz, agnostico al montaje | CC-BY-4.0 | Hugging Face (recomendado por el paper) |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | r = 9 cm, L = 2 parches | No disponible | Parches de 1 s a 200 Hz, agnostico al montaje | CC-BY-4.0 | Hugging Face (recomendado por el paper) |
 
 Otros foundation models de EEG existentes en la literatura (por ejemplo LaBraM, BIOT o EEGPT) no aparecen descritos en la informacion proporcionada, por lo que sus parametros, contexto y resultados no estan disponibles para una comparacion directa.
 
@@ -114,7 +114,7 @@ Otros foundation models de EEG existentes en la literatura (por ejemplo LaBraM, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r12cm_L1
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r12cm_L1
 - Sitio web del paper: https://pierregtch.github.io/eeg-fm-masking
 - Codigo (licencia MIT): https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

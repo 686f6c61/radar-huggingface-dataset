@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| senku21x/s10-levers-qwen36-27b-redirect-authorship | Organismos LoRA de investigación | Qwen3.6-27B | no disponible | Público en HuggingFace, 0 descargas |
-| senku21x/story-imprinting-qwen36-27b-seed-replication | Organismos LoRA semilla (hdA0/hdB0) | Qwen3.6-27B | no disponible | Público en HuggingFace |
-| Qwen/Qwen3.6-27B | Modelo base de uso general | — | no disponible en la informacion proporcionada | Público en HuggingFace |
+| senku21x/s10-levers-qwen36-27b-redirect-authorship | Organismos LoRA de investigación | Qwen3.6-27B | no disponible | Público en Hugging Face, 0 descargas |
+| senku21x/story-imprinting-qwen36-27b-seed-replication | Organismos LoRA semilla (hdA0/hdB0) | Qwen3.6-27B | no disponible | Público en Hugging Face |
+| Qwen/Qwen3.6-27B | Modelo base de uso general | — | no disponible en la informacion proporcionada | Público en Hugging Face |
 
 No se conocen otros repositorios comparables de story-imprinting con detalles suficientes para una comparativa más amplia.
 
@@ -79,7 +79,7 @@ No se conocen otros repositorios comparables de story-imprinting con detalles su
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/senku21x/s10-levers-qwen36-27b-redirect-authorship
+- Repositorio en Hugging Face: https://huggingface.co/senku21x/s10-levers-qwen36-27b-redirect-authorship
 - Replicación de semillas previa: https://huggingface.co/senku21x/story-imprinting-qwen36-27b-seed-replication
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 

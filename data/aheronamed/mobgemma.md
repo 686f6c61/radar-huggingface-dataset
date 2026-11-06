@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mobgemma es una publicacion de pesos en formato GGUF alojada por el usuario Aheronamed en HuggingFace, derivada de un modelo de la familia Gemma (los ficheros se denominan `gemma-4-12B-it`), ajustado y convertido con Unsloth. El repositorio contiene una cuantizacion Q8_0 para el modelo de lenguaje y un proyector multimodal en BF16 (`mmproj`), lo que indica que se trata de un modelo de vision-lenguaje capaz de procesar imagenes ademas de texto.
+mobgemma es una publicacion de pesos en formato GGUF alojada por el usuario Aheronamed en Hugging Face, derivada de un modelo de la familia Gemma (los ficheros se denominan `gemma-4-12B-it`), ajustado y convertido con Unsloth. El repositorio contiene una cuantizacion Q8_0 para el modelo de lenguaje y un proyector multimodal en BF16 (`mmproj`), lo que indica que se trata de un modelo de vision-lenguaje capaz de procesar imagenes ademas de texto.
 
 El modelo tiene 11.907.350.576 parametros (aproximadamente 11,9 mil millones), un tamano que lo situa en la gama media-alta de los modelos abiertos actuales. Su relevancia practica reside en el formato de distribucion: al estar en GGUF, se puede ejecutar localmente con llama.cpp y sus derivados (Ollama, LM Studio, etc.) tanto en GPU de consumo como en CPU, sin necesidad de infraestructura de servidor.
 
@@ -87,7 +87,7 @@ Como referencia general, los modelos abiertos de unos 12 B de parametros con sop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aheronamed/mobgemma
+- Repositorio en Hugging Face: https://huggingface.co/Aheronamed/mobgemma
 - Unsloth (herramienta de ajuste y conversion citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime implicito por el formato GGUF y los comandos `llama-cli` y `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp
 - Paper, blog o demo oficial: no disponible.

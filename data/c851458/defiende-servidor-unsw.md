@@ -86,7 +86,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Defiende el servidor — v2 (e4_hgb_threshold) | Gradient boosting tabular (scikit-learn) | no disponible | no aplica | other | HuggingFace, repo de 0,0 GB |
+| Defiende el servidor — v2 (e4_hgb_threshold) | Gradient boosting tabular (scikit-learn) | no disponible | no aplica | other | Hugging Face, repo de 0,0 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos de deteccion de intrusiones sobre UNSW-NB15 en los datos proporcionados, por lo que no se puede establecer una comparativa cuantitativa fiable.
@@ -106,7 +106,7 @@ No se dispone de informacion sobre otros modelos de deteccion de intrusiones sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c851458/defiende-servidor-unsw
+- Modelo en Hugging Face: https://huggingface.co/c851458/defiende-servidor-unsw
 - Dataset UNSW-NB15 (particiones publicadas referenciadas en la card): no se incluye URL directa en la informacion disponible
 - Run de MLflow: `c5503f3f886f4309927f98bac0288479` (identificador, sin URL publica en la informacion disponible)
 - Codigo (commit Git): `057957069ef92fba2a9ebef2c8b70f61fd405c48` (identificador, sin URL de repositorio en la informacion disponible)

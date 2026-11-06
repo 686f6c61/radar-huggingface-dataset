@@ -71,5 +71,5 @@ No se dispone de informacion suficiente para comparar esta herramienta con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HDFocus/face-scan-tool
+- Repositorio Hugging Face: https://huggingface.co/HDFocus/face-scan-tool
 - No se encontraron otros enlaces relevantes en la busqueda web (papers, blogs, demos) especificos de esta herramienta.

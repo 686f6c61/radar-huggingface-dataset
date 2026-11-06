@@ -73,9 +73,9 @@ La informacion disponible describe dos comparadores directos del propio articulo
 
 | Modelo | Rol | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lment-1b-baseball-rmu-l6hi-a10-b131k (este modelo) | Edicion RMU post-entrenamiento | — | 1,34 B | no disponible | no disponible | HuggingFace, 0 descargas |
-| lment-1b-control-2e-b131k | Control completo compartido | Punto de partida de la edicion | no disponible | no disponible | no disponible | HuggingFace |
-| lment-1b-nobaseball-2e-b131k | Gemelo con exclusion de concepto | Entrenado con fragmentos del concepto enmascarados del loss | no disponible | no disponible | no disponible | HuggingFace |
+| lment-1b-baseball-rmu-l6hi-a10-b131k (este modelo) | Edicion RMU post-entrenamiento | — | 1,34 B | no disponible | no disponible | Hugging Face, 0 descargas |
+| lment-1b-control-2e-b131k | Control completo compartido | Punto de partida de la edicion | no disponible | no disponible | no disponible | Hugging Face |
+| lment-1b-nobaseball-2e-b131k | Gemelo con exclusion de concepto | Entrenado con fragmentos del concepto enmascarados del loss | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone en la informacion proporcionada de comparaciones cuantitativas con modelos de tamano similar ajenos al articulo (por ejemplo, otras variantes de 1 B). Cualquier comparacion de rendimiento con ellos seria «no disponible».
 
@@ -93,7 +93,7 @@ No se dispone en la informacion proporcionada de comparaciones cuantitativas con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-baseball-rmu-l6hi-a10-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-baseball-rmu-l6hi-a10-b131k
 - Control completo compartido: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con exclusion de concepto: https://huggingface.co/itamarstahl/lment-1b-nobaseball-2e-b131k
 - Articulo citado: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (no se proporciona URL del paper en la informacion disponible).

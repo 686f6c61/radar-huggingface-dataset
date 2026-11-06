@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| violetxi/qwen35-9b-wmrl-v4-N-m0 | 9 653 104 368 | No disponible | Apache-2.0 | HuggingFace |
-| violetxi/qwen35-9b-wmrl-v4-n-30m | 9 653 104 368 (estimado por mismo base) | No disponible | Apache-2.0 | HuggingFace |
-| violetxi/qwen35-9b-wmrl-v4-m0-nop6 | 9 653 104 368 (estimado por mismo base) | No disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B | No disponible | No disponible | No disponible | HuggingFace (modelo base) |
+| violetxi/qwen35-9b-wmrl-v4-N-m0 | 9 653 104 368 | No disponible | Apache-2.0 | Hugging Face |
+| violetxi/qwen35-9b-wmrl-v4-n-30m | 9 653 104 368 (estimado por mismo base) | No disponible | Apache-2.0 | Hugging Face |
+| violetxi/qwen35-9b-wmrl-v4-m0-nop6 | 9 653 104 368 (estimado por mismo base) | No disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B | No disponible | No disponible | No disponible | Hugging Face (modelo base) |
 
 Los checkpoints de `violetxi` comparten el mismo modelo base y el mismo corpus de entrenamiento, diferenciándose únicamente en la condición del estudio (`N-m0`, `n-30m`, `m0-nop6`). No hay benchmarks publicados que permitan comparar su rendimiento.
 
@@ -78,7 +78,7 @@ Los checkpoints de `violetxi` comparten el mismo modelo base y el mismo corpus d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-N-m0
+- Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-N-m0
 - Checkpoint relacionado `n-30m`: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-30m
 - Checkpoint relacionado `m0-nop6`: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-m0-nop6
 - Modelo base (referencia en README): https://huggingface.co/Qwen/Qwen3.5-9B

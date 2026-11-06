@@ -71,5 +71,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emilysmithge/perceiver-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/emilysmithge/perceiver-finetuned
 - Paper original de Perceiver (arXiv): https://arxiv.org/pdf/2103.03206.pdf

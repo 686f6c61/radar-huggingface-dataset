@@ -4,7 +4,7 @@
 
 BashCache/temp-dream-base-20-snr-weighted-v2-adapters es un repositorio de adaptadores LoRA (PEFT) publicado por el usuario BashCache. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion que deben cargarse sobre el modelo base `BashCache/temp-dream-base-20-snr-weighted-v2`. El repositorio tiene un tamano de 1,2 GB, lo que es coherente con un adaptador LoRA de rango relativamente alto o con un adaptador sobre un modelo de varios miles de millones de parametros, aunque esta cifra no se puede desglosar sin acceso a los ficheros de pesos.
 
-La model card es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, uso, sesgos, datos de entrenamiento, evaluacion e infraestructura indican "[More Information Needed]". No hay informacion publica sobre arquitectura, parametros, contexto, idiomas, licencia ni procedimiento de entrenamiento. El nombre del repositorio sugiere un ajuste fino ponderado por SNR (signal-to-noise ratio) sobre una version "pruned" del modelo base, pero esto es una inferencia a partir de la nomenclatura, no un dato documentado.
+La model card es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, uso, sesgos, datos de entrenamiento, evaluacion e infraestructura indican "[More Information Needed]". No hay informacion publica sobre arquitectura, parametros, contexto, idiomas, licencia ni procedimiento de entrenamiento. El nombre del repositorio sugiere un ajuste fino ponderado por SNR (signal-to-noise ratio) sobre una version "pruned" del modelo base, pero esto es una inferencia a partir de la nomenclatura, no un dato documentado.
 
 El modelo es relevante unicamente como artefacto intermedio de un pipeline de experimentacion: no hay descargas ni interacciones registradas, la licencia no esta declarada y la documentacion es inexistente. Para cualquier uso en produccion seria necesario contactar con el autor o inspeccionar directamente los pesos y el modelo base.
 
@@ -25,7 +25,7 @@ El modelo es relevante unicamente como artefacto intermedio de un pipeline de ex
 
 El repositorio contiene adaptadores LoRA en formato PEFT 0.20.0 sobre el modelo base `BashCache/temp-dream-base-20-snr-weighted-v2`. La etiqueta `base_model:adapter:/pruned/dream_base_snr_weighted_20/model_snr_weighted` apunta a una ruta local del autor, lo que sugiere que los adaptadores se entrenaron sobre una version podada ("pruned") del modelo base y con una ponderacion por SNR de las muestras o de las capas. No hay documentacion que confirme la hipotesis de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplico RLHF, DPO o ajuste supervisado.
 
-No se dispone de informacion sobre la arquitectura del modelo subyacente (transformer denso, MoE, hibrido), el objetivo de entrenamiento ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card no incluye hiperparametros, regimen de precision (fp16, bf16, fp8) ni infraestructura de computo. La referencia arXiv:1910.09700 en las etiquetas corresponde al paper del calculo de impacto medioambiental de Lacoste et al., citado en la plantilla de HuggingFace, no a un paper del modelo.
+No se dispone de informacion sobre la arquitectura del modelo subyacente (transformer denso, MoE, hibrido), el objetivo de entrenamiento ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card no incluye hiperparametros, regimen de precision (fp16, bf16, fp8) ni infraestructura de computo. La referencia arXiv:1910.09700 en las etiquetas corresponde al paper del calculo de impacto medioambiental de Lacoste et al., citado en la plantilla de Hugging Face, no a un paper del modelo.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ No se dispone de informacion sobre la arquitectura del modelo subyacente (transf
 - Evaluacion comparativa de checkpoints intermedios: al ser un artefacto "temp", puede emplearse en pruebas internas de regresion frente a otras versiones del mismo pipeline.
 - Prototipado de asistentes conversacionales: la etiqueta `conversational` permite probar el adaptador en dialogos, aunque sin garantias de calidad ni documentacion de formato.
 - Fine-tuning incremental: los adaptadores pueden servir como punto de partida para nuevos ajustes LoRA sobre el mismo modelo base, reduciendo el coste frente a un entrenamiento desde cero.
-- Analisis de artefactos en HuggingFace: caso de estudio sobre repositorios sin model card ni licencia, util para auditorias de trazabilidad y gobernanza de modelos.
+- Analisis de artefactos en Hugging Face: caso de estudio sobre repositorios sin model card ni licencia, util para auditorias de trazabilidad y gobernanza de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ No disponible. No se conocen adaptadores LoRA publicos directamente comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BashCache/temp-dream-base-20-snr-weighted-v2-adapters
+- Repositorio Hugging Face: https://huggingface.co/BashCache/temp-dream-base-20-snr-weighted-v2-adapters
 - Modelo base: https://huggingface.co/BashCache/temp-dream-base-20-snr-weighted-v2
 - Paper citado en la plantilla (impacto medioambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

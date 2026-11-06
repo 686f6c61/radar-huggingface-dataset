@@ -4,7 +4,7 @@
 
 MyAwesomeModel es un modelo de lenguaje desarrollado por el autor SAVCBNNSDF, presentado como una actualización significativa sobre una versión anterior. Según la model card, esta nueva versión ha mejorado sustancialmente su profundidad de razonamiento y capacidad de inferencia, gracias a un mayor uso de recursos computacionales y a mecanismos de optimización algorítmica introducidos en el post-entrenamiento. El modelo está diseñado para tareas de razonamiento complejo, programación y lógica general, y su rendimiento se aproxima al de otros modelos líderes.
 
-No se han publicado detalles sobre la arquitectura, el número de parámetros o la longitud de contexto en la información disponible. El repositorio de HuggingFace identifica el modelo como parte de la librería `transformers`, con licencia MIT y compatibilidad con endpoints, pero no incluye características técnicas adicionales.
+No se han publicado detalles sobre la arquitectura, el número de parámetros o la longitud de contexto en la información disponible. El repositorio de Hugging Face identifica el modelo como parte de la librería `transformers`, con licencia MIT y compatibilidad con endpoints, pero no incluye características técnicas adicionales.
 
 La model card menciona una variante denominada MyAwesomeModel-Small, que comparte arquitectura con su modelo base y la misma configuración de tokenizer. También destaca mejoras en la reducción de alucinaciones y en el soporte de function calling respecto a versiones anteriores.
 
@@ -91,5 +91,5 @@ No se han publicado datos sobre requisitos de hardware, VRAM estimada, GPUs reco
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: [https://huggingface.co/SAVCBNNSDF/MyAwesomeModel-TestRepo](https://huggingface.co/SAVCBNNSDF/MyAwesomeModel-TestRepo)
+- Página del modelo en Hugging Face: [https://huggingface.co/SAVCBNNSDF/MyAwesomeModel-TestRepo](https://huggingface.co/SAVCBNNSDF/MyAwesomeModel-TestRepo)
 - La model card menciona un repositorio de código y una web oficial para interactuar con el modelo, pero no se aportan URLs concretas en la información disponible.

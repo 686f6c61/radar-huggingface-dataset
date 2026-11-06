@@ -47,7 +47,7 @@ El entrenamiento de la versión Circuit-0 se realizó exclusivamente sobre el da
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni métricas de robótica (éxito en tareas, precisión de control, etc.) en la model card ni en los metadatos de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni métricas de robótica (éxito en tareas, precisión de control, etc.) en la model card ni en los metadatos de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ La comparativa es orientativa: AMATERASU se distingue por su arquitectura desde 
 - Modelo en fase v0.1 (Circuit-0): solo se entrenó el encoder NCES; el resto del grafo está congelado y no se ha validado su rendimiento en tareas completas.
 - Datos de entrenamiento limitados: únicamente HiFi-UMI-2K en formato parquet, sin vídeo ni etiquetas de intención. Esto puede limitar la generalización a escenarios no cubiertos por ese dataset.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de su capacidad en tareas de robótica o lenguaje.
-- Formato propietario: no es compatible con HuggingFace Transformers, vLLM ni otras herramientas estándar; requiere la librería AMATERASU, cuyo código está en GitHub pero no se ha verificado su madurez.
+- Formato propietario: no es compatible con Hugging Face Transformers, vLLM ni otras herramientas estándar; requiere la librería AMATERASU, cuyo código está en GitHub pero no se ha verificado su madurez.
 - Riesgo de alucinación y errores de control: al ser un modelo de agencia física, una salida incorrecta puede traducirse en movimientos peligrosos en entornos reales. Se recomienda usar simuladores antes del despliegue físico.
 - Requisitos de hardware elevados: la inferencia en fp32/bf16 exige GPUs de gama alta profesional, lo que limita su uso a entornos con recursos suficientes.
 - Idiomas y contexto no documentados: no se especifican idiomas soportados ni longitud de contexto, lo que impide evaluar su uso en aplicaciones de lenguaje general.
@@ -82,6 +82,6 @@ La comparativa es orientativa: AMATERASU se distingue por su arquitectura desde 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [MagistrTheOne/NULLXES-AMATERASU](https://huggingface.co/MagistrTheOne/NULLXES-AMATERASU)
+- Repositorio Hugging Face: [MagistrTheOne/NULLXES-AMATERASU](https://huggingface.co/MagistrTheOne/NULLXES-AMATERASU)
 - Código (según model card): [github.com/MagistrTheOne/NULLXES-AMATERASU](https://github.com/MagistrTheOne/NULLXES-AMATERASU)
 - Dataset de entrenamiento: [HiFi-UMI-2K](https://huggingface.co/datasets/simple-world-lab/HiFi-UMI-2K)

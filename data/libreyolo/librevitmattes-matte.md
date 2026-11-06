@@ -64,7 +64,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- [HuggingFace - LibreYOLO/LibreViTMattes-matte](https://huggingface.co/LibreYOLO/LibreViTMattes-matte)
+- [Hugging Face - LibreYOLO/LibreViTMattes-matte](https://huggingface.co/LibreYOLO/LibreViTMattes-matte)
 - [Checkpoint original - hustvl/vitmatte-small-composition-1k](https://huggingface.co/hustvl/vitmatte-small-composition-1k)
 - [Repositorio ViTMatte (hustvl/ViTMatte)](https://github.com/hustvl/ViTMatte)
 - [Licencia del modelo](https://huggingface.co/LibreYOLO/LibreViTMattes-matte/blob/main/LICENSE)

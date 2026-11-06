@@ -67,7 +67,7 @@ No se han publicado resultados comparativos en la información disponible. El mo
 - Especialización: el entrenamiento se limitó a problemas de programación de la frontera cobalt, por lo que el rendimiento en otros dominios puede degradarse.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21groot16
+- Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21groot16
 - Repos similares:
   - https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-mgroot16
   - https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base

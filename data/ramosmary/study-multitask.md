@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Ramosmary/study-multitask es una implementacion reducida de CLIP (Contrastive Language-Image Pre-training) orientada a tareas multitarea, publicada por el usuario Ramosmary en HuggingFace. Segun la propia model card, se trata de un punto de partida reproducible con una configuracion explicita y un checkpoint de inicializacion, y no de un modelo entrenado ni de un release con resultados de referencia. El autor indica de forma explicita que el checkpoint "no se presenta como un checkpoint entrenado con benchmarks".
+El modelo identificado como Ramosmary/study-multitask es una implementacion reducida de CLIP (Contrastive Language-Image Pre-training) orientada a tareas multitarea, publicada por el usuario Ramosmary en Hugging Face. Segun la propia model card, se trata de un punto de partida reproducible con una configuracion explicita y un checkpoint de inicializacion, y no de un modelo entrenado ni de un release con resultados de referencia. El autor indica de forma explicita que el checkpoint "no se presenta como un checkpoint entrenado con benchmarks".
 
 El dato mas llamativo es la discrepancia entre la nomenclatura y el tamano real: pese a etiquetarse como variante "xlarge", el recuento de parametros contenido en el fichero `model.safetensors` es de 33.088 parametros, una cifra enormemente inferior a la de cualquier CLIP operativo (los CLIP de OpenAI parten de decenas de millones de parametros). Esto refuerza la interpretacion de que el repositorio contiene esqueletos de arquitectura y pesos de inicializacion, utiles para pruebas de humo (smoke tests) y no para inferencia con calidad.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ramosmary/study-multitask | CLIP + atencion dilatada + gated fusion | 33.088 | no disponible | BSD-3-Clause | HuggingFace, 0 descargas |
+| Ramosmary/study-multitask | CLIP + atencion dilatada + gated fusion | 33.088 | no disponible | BSD-3-Clause | Hugging Face, 0 descargas |
 | OpenAI CLIP (referencia de la familia) | CLIP | cientos de millones (variantes) | no disponible | propia de OpenAI | publica |
 | OpenCLIP | CLIP reproducido | depende de la variante | no disponible | segun variante | publica |
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento comparables para este repositorio, dado qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ramosmary/study-multitask
+- Hugging Face: https://huggingface.co/Ramosmary/study-multitask
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

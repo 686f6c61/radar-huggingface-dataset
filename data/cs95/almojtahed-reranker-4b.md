@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`cs95/almojtahed-reranker-4b` es un adaptador LoRA publicado en HuggingFace sobre el modelo base Qwen/Qwen3-Reranker-4B. No es un modelo autónomo: el repositorio ocupa 0,1 GB y contiene únicamente los pesos del adaptador en formato safetensors, gestionados con la librería PEFT (versión 0.21.2). Fue creado y actualizado el 12 de octubre de 2026 por el usuario cs95.
+`cs95/almojtahed-reranker-4b` es un adaptador LoRA publicado en Hugging Face sobre el modelo base Qwen/Qwen3-Reranker-4B. No es un modelo autónomo: el repositorio ocupa 0,1 GB y contiene únicamente los pesos del adaptador en formato safetensors, gestionados con la librería PEFT (versión 0.21.2). Fue creado y actualizado el 12 de octubre de 2026 por el usuario cs95.
 
 La función esperada de un modelo de esta familia es el reranking, es decir, reordenar por relevancia una lista de documentos recuperados por un buscador o por un retriever vectorial dentro de un pipeline de generación aumentada por recuperación (RAG). El adaptador se apoya en los 4 000 millones de parámetros del modelo base, por lo que no aporta pesos desde cero, sino un ajuste fino de bajo rango.
 
-La relevancia actual del modelo es limitada y difícil de evaluar: la model card es la plantilla por defecto de HuggingFace sin ninguna sección cumplimentada, no declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación, y el repositorio acumula 0 descargas y 0 "likes" en la información disponible. Cualquier uso en producción debería considerarse experimental y requiere validación propia.
+La relevancia actual del modelo es limitada y difícil de evaluar: la model card es la plantilla por defecto de Hugging Face sin ninguna sección cumplimentada, no declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación, y el repositorio acumula 0 descargas y 0 "likes" en la información disponible. Cualquier uso en producción debería considerarse experimental y requiere validación propia.
 
 ## Especificaciones tecnicas
 
@@ -77,8 +77,8 @@ No hay datos tecnicos publicados sobre este adaptador, por lo que la comparacion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cs95/almojtahed-reranker-4b (este modelo) | No especificado (adaptador sobre 4B) | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-Reranker-4B (modelo base) | 4B | 32 768 tokens (heredado, no confirmado aqui) | No disponible en la informacion proporcionada | HuggingFace |
+| cs95/almojtahed-reranker-4b (este modelo) | No especificado (adaptador sobre 4B) | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-Reranker-4B (modelo base) | 4B | 32 768 tokens (heredado, no confirmado aqui) | No disponible en la informacion proporcionada | Hugging Face |
 | BGE-Reranker-v2-M3 | No disponible | No disponible | No disponible | Citado en los resultados de busqueda, sin ficha en la informacion proporcionada |
 | Jina Reranker v3.5 | No disponible | No disponible | No disponible | Citado en los resultados de busqueda, sin ficha en la informacion proporcionada |
 
@@ -96,7 +96,7 @@ No hay datos tecnicos publicados sobre este adaptador, por lo que la comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cs95/almojtahed-reranker-4b
+- Modelo en Hugging Face: https://huggingface.co/cs95/almojtahed-reranker-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-4B
 - Libreria PEFT: https://huggingface.co/docs/peft/index
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
@@ -105,4 +105,4 @@ No hay datos tecnicos publicados sobre este adaptador, por lo que la comparacion
 - Top Reranker AI Models 2026: Precision Retrieval: https://local-ai-zone.github.io/guides/best-ai-reranker-models-ultimate-ranking-2026.html
 - LLM Leaderboard & AI Model Benchmarks, octubre de 2026: https://benchlm.ai/
 - LLM Leaderboard: AI Model Rankings & Pricing: https://www.llmboard.ai/
-- Busqueda de modelos reranker en HuggingFace: https://huggingface.co/models?search=rerank
+- Busqueda de modelos reranker en Hugging Face: https://huggingface.co/models?search=rerank

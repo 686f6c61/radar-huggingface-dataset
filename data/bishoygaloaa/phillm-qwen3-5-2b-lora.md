@@ -79,7 +79,7 @@ No se dispone de información sobre otros adaptadores PhiLLM comparables ni sobr
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/bishoygaloaa/phillm-qwen3.5-2b-lora
+- Hugging Face del adaptador: https://huggingface.co/bishoygaloaa/phillm-qwen3.5-2b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/bishoygaloaa/phillm-data
 - Repositorio de código: https://github.com/bishoymoussa/Phil
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

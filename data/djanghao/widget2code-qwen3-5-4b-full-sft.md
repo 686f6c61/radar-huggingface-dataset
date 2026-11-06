@@ -73,7 +73,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Widget2Code-Qwen3.5-4B | ~4,5B | No disponible | other | Abierta (HuggingFace) |
+| Widget2Code-Qwen3.5-4B | ~4,5B | No disponible | other | Abierta (Hugging Face) |
 | Qwen3.5-4B (base) | ~4,5B | No disponible | Apache 2.0 (presumiblemente) | Abierta |
 | GPT-4V (comercial) | No público | No público | Propietaria | API de pago |
 
@@ -89,9 +89,9 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Djanghao/Widget2Code-Qwen3.5-4B-Full-SFT
+- Modelo en Hugging Face: https://huggingface.co/Djanghao/Widget2Code-Qwen3.5-4B-Full-SFT
 - Dataset de entrenamiento: https://huggingface.co/datasets/Djanghao/Widget2Code-Data
 - Repositorio de código (GitHub): https://github.com/Djanghao/widget2code-sft
-- Colección Qwen3.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen35
+- Colección Qwen3.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen35
 - Blog de Qwen3.5 (anuncio oficial): https://qwen.ai/blog?id=qwen3.5
 - Página de Qwen3.5-4B en Ollama: https://ollama.com/library/qwen3.5:4b

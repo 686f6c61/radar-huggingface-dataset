@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan 2.2 encoders (este repo) | VAE + UMT5 + SigLIP + CLIP-ViT-H | no disponible | no disponible | apache-2.0 (upstream) | HuggingFace |
-| T5-xxl | Text encoder | 11B | 512 tokens | apache-2.0 | HuggingFace |
-| CLIP ViT-H | Vision encoder | 632M | 77 tokens | MIT | HuggingFace |
+| Wan 2.2 encoders (este repo) | VAE + UMT5 + SigLIP + CLIP-ViT-H | no disponible | no disponible | apache-2.0 (upstream) | Hugging Face |
+| T5-xxl | Text encoder | 11B | 512 tokens | apache-2.0 | Hugging Face |
+| CLIP ViT-H | Vision encoder | 632M | 77 tokens | MIT | Hugging Face |
 
 No se dispone de comparativas directas con otros conjuntos de encoders especificos para generacion de video, ya que este repositorio es un mirror de los paquetes oficiales de Comfy-Org.
 
@@ -72,7 +72,7 @@ No se dispone de comparativas directas con otros conjuntos de encoders especific
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sisniha/wan22-encoders
+- Repositorio Hugging Face: https://huggingface.co/sisniha/wan22-encoders
 - Repositorio original de WindstormLabs: https://huggingface.co/WindstormLabs/wan22-encoders
 - Paquete oficial de Comfy-Org para Wan 2.2: https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged
 - Paquete oficial de Comfy-Org para Wan 2.1 (CLIP-ViT-H): https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged

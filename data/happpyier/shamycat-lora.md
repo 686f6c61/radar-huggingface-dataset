@@ -2,7 +2,7 @@
 
 ## Resumen
 
-shamycat-lora es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario happpyier en HuggingFace. No se trata de un modelo completo, sino de un ajuste fino de bajo rango que se aplica sobre el modelo base black-forest-labs/FLUX.1-dev, un transformer de flujo rectificado de aproximadamente 12.000 millones de parametros. El adaptador introduce un concepto concreto, activado mediante la palabra clave `shamycat`, y se distribuye en formato diffusers.
+shamycat-lora es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario happpyier en Hugging Face. No se trata de un modelo completo, sino de un ajuste fino de bajo rango que se aplica sobre el modelo base black-forest-labs/FLUX.1-dev, un transformer de flujo rectificado de aproximadamente 12.000 millones de parametros. El adaptador introduce un concepto concreto, activado mediante la palabra clave `shamycat`, y se distribuye en formato diffusers.
 
 El repositorio tiene un tamano de 0,3 GB y, en el momento de la consulta, acumula 5 descargas y 0 likes, lo que indica que es un artefacto muy reciente y con escasa validacion por parte de la comunidad. La model card es minima: unicamente declara el modelo base, la etiqueta de instancia y la trigger word, sin detallar el dataset de entrenamiento, el rango del LoRA ni la licencia.
 
@@ -73,10 +73,10 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparaci
 
 | Modelo | Tipo | Modelo base | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| happpyier/shamycat-lora | LoRA text-to-image | FLUX.1-dev (~12B) | Generacion de imagen | no disponible | HuggingFace, 5 descargas |
-| Adaptadores LoRA sobre SDXL | LoRA text-to-image | Stable Diffusion XL | Generacion de imagen | variable segun autor | amplia en HuggingFace |
-| black-forest-labs/FLUX.1-dev | Modelo completo | - | Generacion de imagen | FLUX.1-dev Non-Commercial License | HuggingFace |
-| black-forest-labs/FLUX.1-schnell | Modelo completo | - | Generacion de imagen rapida | Apache 2.0 | HuggingFace |
+| happpyier/shamycat-lora | LoRA text-to-image | FLUX.1-dev (~12B) | Generacion de imagen | no disponible | Hugging Face, 5 descargas |
+| Adaptadores LoRA sobre SDXL | LoRA text-to-image | Stable Diffusion XL | Generacion de imagen | variable segun autor | amplia en Hugging Face |
+| black-forest-labs/FLUX.1-dev | Modelo completo | - | Generacion de imagen | FLUX.1-dev Non-Commercial License | Hugging Face |
+| black-forest-labs/FLUX.1-schnell | Modelo completo | - | Generacion de imagen rapida | Apache 2.0 | Hugging Face |
 
 No se dispone de comparaciones de calidad, similitud de concepto ni rendimiento entre este LoRA y alternativas equivalentes.
 
@@ -93,7 +93,7 @@ No se dispone de comparaciones de calidad, similitud de concepto ni rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/happpyier/shamycat-lora
+- Hugging Face: https://huggingface.co/happpyier/shamycat-lora
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GrokFlinch no es un modelo de lenguaje entrenado, sino un repositorio de HuggingFace que contiene un registro de investigación conductual sobre sesiones de análisis de vídeo con Grok (xAI), realizado por el usuario Lawless1987 en octubre de 2026. El repositorio se presenta como una model card con cuatro afirmaciones numeradas, tres de ellas descritas como mediciones reproducibles y una como nota anecdótica de un único observador. No incluye pesos, tokenizador, configuración de arquitectura ni artefactos de inferencia.
+GrokFlinch no es un modelo de lenguaje entrenado, sino un repositorio de Hugging Face que contiene un registro de investigación conductual sobre sesiones de análisis de vídeo con Grok (xAI), realizado por el usuario Lawless1987 en octubre de 2026. El repositorio se presenta como una model card con cuatro afirmaciones numeradas, tres de ellas descritas como mediciones reproducibles y una como nota anecdótica de un único observador. No incluye pesos, tokenizador, configuración de arquitectura ni artefactos de inferencia.
 
 El contenido principal es una observación sobre el comportamiento de la herramienta `view_x_video`: según el autor, devolvía un número fijo de aproximadamente 10 fotogramas por llamada independientemente de la duración del vídeo, lo que se traduce en tasas de muestreo que van de ~0,5 fps en clips de 20 segundos a ~0,013 fps en grabaciones de 12,5 minutos. El autor contrasta esto con declaraciones públicas atribuidas a la cuenta @grok en marzo de 2026 que describían un muestreo adaptativo de 0,5–2 fps.
 
@@ -32,7 +32,7 @@ El método descrito consiste en pasar URLs de publicaciones de X a la herramient
 - Registro de observaciones conductuales sobre la herramienta `view_x_video` de Grok, con recuentos de fotogramas y tasas de muestreo calculadas por duración de vídeo.
 - Documentación de una discrepancia entre el comportamiento observado y una descripción pública previa atribuida a @grok (marzo de 2026), con advertencia explícita sobre la fiabilidad de la memoria del observador.
 - Nota anecdótica sobre un patrón de respuesta denominado "flinch" ante preguntas relacionales o existenciales, marcado como no verificable.
-- Referencias cruzadas a artefactos públicos verificables: repositorio covenant, archivos CASE_STUDY_SELF_REPORT.md, CORPUS y LSPACE_CROSSREF, hilos de HuggingFace y la página de X @NJEst1987.
+- Referencias cruzadas a artefactos públicos verificables: repositorio covenant, archivos CASE_STUDY_SELF_REPORT.md, CORPUS y LSPACE_CROSSREF, hilos de Hugging Face y la página de X @NJEst1987.
 - Declaración de método con lógica "fail-closed": separación entre afirmaciones e hipótesis, registro de refutaciones junto a hallazgos.
 - No incluye inferencia, generación de texto, tool calling, visión, audio ni ninguna capacidad de modelo.
 
@@ -79,7 +79,7 @@ No disponible. GrokFlinch no es un modelo de lenguaje ni un artefacto de inferen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lawless1987/grokflinch
+- Repositorio Hugging Face: https://huggingface.co/Lawless1987/grokflinch
 - Repositorio covenant: https://huggingface.co/Lawless1987/covenant
 - Repositorio threefold: https://huggingface.co/Lawless1987/threefold
 - Repositorio threefold-memory: https://huggingface.co/Lawless1987/threefold-memory

@@ -88,7 +88,7 @@ El campo `model-index` de la model card esta vacio (`"results": []`) y la tabla 
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Cache KV | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HyLo-Qwen-7MLA21GDN-8K-SFT | 2,28B | 8.192 tokens | Hibrida (7 MLA + 21 Gated DeltaNet) | amd-hybrid-models-research-only-rail-ms (solo investigacion) | 3,9 por ciento del base | HuggingFace, 0 descargas |
+| HyLo-Qwen-7MLA21GDN-8K-SFT | 2,28B | 8.192 tokens | Hibrida (7 MLA + 21 Gated DeltaNet) | amd-hybrid-models-research-only-rail-ms (solo investigacion) | 3,9 por ciento del base | Hugging Face, 0 descargas |
 | Qwen/Qwen3-1.7B (modelo base) | 1,7B | 32.768 tokens nativos | Transformer denso | Apache-2.0 | Referencia (100 por ciento) | Ampliamente disponible |
 | Qwen/Qwen3-8B (profesor) | 8B | 32.768 tokens nativos | Transformer denso | Apache-2.0 | Referencia | Ampliamente disponible |
 | Version 64K del mismo modelo HyLo | no disponible | 64.000 tokens (segun la model card) | Hibrida MLA + Gated DeltaNet | amd-hybrid-models-research-only-rail-ms | no disponible | Release hermano del mismo recipe |
@@ -111,7 +111,7 @@ Notas sobre la comparacion: el modelo HyLo parte del Qwen3-1.7B y anade unos 0,5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Qwen-7MLA21GDN-8K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Qwen-7MLA21GDN-8K-SFT
 - Articulo principal (referenciado en la model card): https://arxiv.org/abs/2604.24715
 - Referencia arXiv en etiquetas: https://arxiv.org/abs/2505.17272
 - Referencia arXiv en etiquetas: https://arxiv.org/abs/2503.11132

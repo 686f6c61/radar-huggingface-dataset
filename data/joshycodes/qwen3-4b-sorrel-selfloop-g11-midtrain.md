@@ -85,10 +85,10 @@ Los datos de las alternativas provienen de la documentación pública de sus res
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| qwen3-4b-sorrel-selfloop-g11-midtrain | 4,02 B | no disponible (entrenado con seq_len 4096) | internal-research, no redistribuible | HuggingFace, 0 descargas, 0 likes | sin benchmarks |
-| Qwen3-4B (base de la familia) | ~4,0 B | 32.768 tokens, extensible a 131.072 con YaRN | Apache 2.0 | HuggingFace | benchmarks publicados por el autor de la familia |
-| Llama 3.2 3B | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | benchmarks publicados por el autor de la familia |
-| Gemma 3 4B | ~4,0 B | 128.000 tokens | Gemma Terms of Use | HuggingFace | benchmarks publicados por el autor de la familia |
+| qwen3-4b-sorrel-selfloop-g11-midtrain | 4,02 B | no disponible (entrenado con seq_len 4096) | internal-research, no redistribuible | Hugging Face, 0 descargas, 0 likes | sin benchmarks |
+| Qwen3-4B (base de la familia) | ~4,0 B | 32.768 tokens, extensible a 131.072 con YaRN | Apache 2.0 | Hugging Face | benchmarks publicados por el autor de la familia |
+| Llama 3.2 3B | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | benchmarks publicados por el autor de la familia |
+| Gemma 3 4B | ~4,0 B | 128.000 tokens | Gemma Terms of Use | Hugging Face | benchmarks publicados por el autor de la familia |
 
 La diferencia principal no está en la arquitectura ni en el tamaño, sino en la licencia: frente a las licencias permisivas o comunitarias de las alternativas, este artefacto es de uso exclusivamente interno y no admite redistribución.
 
@@ -102,11 +102,11 @@ La diferencia principal no está en la arquitectura ni en el tamaño, sino en la
 - Trazabilidad: el modelo forma parte de una cadena de once *midtrains* encadenados; los efectos observados pueden deberse a la acumulación de iteraciones previas y no a esta fase concreta.
 - Corpus no auditado: no se detalla la composición, el origen ni el filtrado de `joshycodes/sorrel-selfloop-corpus`, lo que impide evaluar riesgos de contaminación o de contenido inapropiado.
 - Advertencia para producción: sin benchmarks, sin evaluación de seguridad y con licencia interna, no es apto para despliegues en producción ni para uso por terceros.
-- Metadatos con fechas futuras: la *model card* y los metadatos de HuggingFace consignan fechas de 2026, lo que conviene tener en cuenta al citar el artefacto.
+- Metadatos con fechas futuras: la *model card* y los metadatos de Hugging Face consignan fechas de 2026, lo que conviene tener en cuenta al citar el artefacto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g11-midtrain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g11-midtrain
 - Modelo base (g10): https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g10-midtrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/joshycodes/sorrel-selfloop-corpus
 - Repositorio de entrenamiento `flourishing-training` (commit del *launcher* `a0afb77669ae`): no disponible como URL en la información proporcionada

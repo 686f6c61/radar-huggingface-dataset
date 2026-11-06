@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen35-9b-agentic-v1-GGUF es la distribucion en formato GGUF del modelo qwen35-9b-agentic-v1, publicado por el usuario LoosiFR en HuggingFace. Se trata de un modelo de aproximadamente 9.200 millones de parametros (9.197.093.888 segun los pesos en safetensors) derivado de la familia Qwen 3.5, orientado especificamente a casos de uso agenticos: invocacion de herramientas (tool calling), razonamiento multi-paso y flujos conversacionales con soporte de plantillas Jinja.
+qwen35-9b-agentic-v1-GGUF es la distribucion en formato GGUF del modelo qwen35-9b-agentic-v1, publicado por el usuario LoosiFR en Hugging Face. Se trata de un modelo de aproximadamente 9.200 millones de parametros (9.197.093.888 segun los pesos en safetensors) derivado de la familia Qwen 3.5, orientado especificamente a casos de uso agenticos: invocacion de herramientas (tool calling), razonamiento multi-paso y flujos conversacionales con soporte de plantillas Jinja.
 
 El modelo se distribuye unicamente en dos cuantizaciones (Q4_K_M y Q5_K_M) pensadas para ejecutarse en GPUs de consumo con 12 GB de VRAM mediante llama.cpp. La model card menciona que la atencion hibrida de Qwen 3.5 mantiene pequena la cache KV, lo que permite arrancar con una ventana de contexto de 32.768 tokens y ampliarla segun la VRAM disponible.
 
@@ -22,7 +22,7 @@ La relevancia de esta publicacion es practica: ofrece un punto de partida listo 
 | Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye presumiblemente en safetensors |
 | Modelo base | LoosiFR/qwen35-9b-agentic-v1 |
 | Tamano del repositorio | 12,4 GB |
-| Compatibilidad de endpoints | endpoints_compatible (segun tags de HuggingFace) |
+| Compatibilidad de endpoints | endpoints_compatible (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -36,7 +36,7 @@ No se han publicado datos sobre el numero de tokens de entrenamiento, la composi
 - Tool calling / function calling mediante plantillas Jinja en llama.cpp; la model card reporta una prueba de humo con `tool_call: true` y `tool_result_used: true`.
 - Modo pensamiento (thinking) activable o desactivable por peticion con `enable_thinking: false`.
 - Orientacion agentica: el nombre del modelo y sus tags (`agentic`, `tool-use`) indican entrenamiento o ajuste para flujos con herramientas y razonamiento multi-paso.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de HuggingFace).
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de Hugging Face).
 - Capacidades multilingues: no disponibles.
 - Vision, audio u otras modalidades: no disponibles.
 
@@ -86,7 +86,7 @@ La comparativa es aproximada: no se dispone de datos de rendimiento del modelo e
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/LoosiFR/qwen35-9b-agentic-v1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/LoosiFR/qwen35-9b-agentic-v1-GGUF
 - Modelo base: https://huggingface.co/LoosiFR/qwen35-9b-agentic-v1
 - llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com

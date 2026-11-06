@@ -114,7 +114,7 @@ No se dispone de modelos directamente comparables en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amin-amiri/v2v-intersection-rl
+- Modelo en Hugging Face: https://huggingface.co/amin-amiri/v2v-intersection-rl
 - Demo interactiva: https://huggingface.co/spaces/amin-amiri/v2v-cooperative-intersection-rl
 - GitHub del autor: https://github.com/amiri-amin
 - LinkedIn del autor: https://www.linkedin.com/in/amin-amiri-66aa10306

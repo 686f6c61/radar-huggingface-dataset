@@ -74,9 +74,9 @@ Segun la model card, el valor de retrieval es la media sobre SciFact, NFCorpus, 
 
 | Modelo | Parametros | Tamano en disco | Retrieval (nDCG@10) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| google/embeddinggemma-2 (BF16) | 271 M | 532 MiB | 76,06 | Apache 2.0 | HuggingFace, safetensors |
-| embeddinggemma-2-NVFP4 | 271 M | 184 MiB | 75,51 | Apache 2.0 | HuggingFace, GGUF |
-| embeddinggemma-2-NVFP4-compact | 271 M | 169 MiB | 75,62 | Apache 2.0 | HuggingFace, GGUF |
+| google/embeddinggemma-2 (BF16) | 271 M | 532 MiB | 76,06 | Apache 2.0 | Hugging Face, safetensors |
+| embeddinggemma-2-NVFP4 | 271 M | 184 MiB | 75,51 | Apache 2.0 | Hugging Face, GGUF |
+| embeddinggemma-2-NVFP4-compact | 271 M | 169 MiB | 75,62 | Apache 2.0 | Hugging Face, GGUF |
 
 No hay en la informacion disponible datos de comparacion con otros modelos de embeddings de la misma categoria (por ejemplo, alternativas de terceros). Los unicos datos comparativos publicados son los de las tres variantes anteriores, todos ellos procedentes de la model card del cuantizador.
 
@@ -97,6 +97,6 @@ No hay en la informacion disponible datos de comparacion con otros modelos de em
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BennyDaBall/EmbeddingGemma-2-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BennyDaBall/EmbeddingGemma-2-NVFP4-GGUF
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Perfil del autor de la cuantizacion: https://x.com/BennyDaBall_OG

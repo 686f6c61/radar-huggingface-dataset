@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshkg/thesis-matching` es un repositorio de HuggingFace publicado por el usuario rajeshkg que contiene una implementación funcional de PoolFormer orientada a tareas de *matching* (emparejamiento), con una configuración declarada como «giant». El propio autor describe el repositorio como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para *smoke tests*, no un modelo entrenado, y no se reclama ninguna puntuación de benchmark. Es, por tanto, más una pieza de código reproducible que un modelo listo para producción.
+`rajeshkg/thesis-matching` es un repositorio de Hugging Face publicado por el usuario rajeshkg que contiene una implementación funcional de PoolFormer orientada a tareas de *matching* (emparejamiento), con una configuración declarada como «giant». El propio autor describe el repositorio como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para *smoke tests*, no un modelo entrenado, y no se reclama ninguna puntuación de benchmark. Es, por tanto, más una pieza de código reproducible que un modelo listo para producción.
 
 La relevancia es limitada pero concreta: sirve como esqueleto ejecutable para quien quiera experimentar con la familia PoolFormer/MetaFormer en tareas de emparejamiento, con un `main.py` que incluye ejemplo de ejecución, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (optimizador Novograd, schedule de warmup constante).
 
@@ -49,7 +49,7 @@ No se ha completado ningún entrenamiento. El autor es explícito: `model.safete
 - *Smoke test* de pipelines de entrenamiento: al ser un checkpoint de inicialización con 16.576 parámetros, permite validar en segundos que el flujo de datos, el *dataloader* y el bucle de entrenamiento funcionan antes de escalar a un modelo real.
 - Reproducción de experimentos con línea base de capacidad pareja: el autor recomienda evaluar con un conjunto de validación emparejado, al menos tres semillas y una línea base de capacidad equivalente; el repositorio sirve como una de esas líneas base.
 - Estudio comparativo de mecanismos de mezcla de tokens: útil para analizar el comportamiento de *pooling* espacial frente a atención en tareas de emparejamiento, con un coste computacional mínimo.
-- Docencia y formación: ejemplo compacto y legible de cómo se serializa una arquitectura (`config.json`), una receta de entrenamiento (`training_args.json`) y unos pesos (`model.safetensors`) en el ecosistema HuggingFace.
+- Docencia y formación: ejemplo compacto y legible de cómo se serializa una arquitectura (`config.json`), una receta de entrenamiento (`training_args.json`) y unos pesos (`model.safetensors`) en el ecosistema Hugging Face.
 - Base para *fine-tuning* sobre dominios concretos (educación, investigación, bolsas de temas): partiendo de la inicialización y añadiendo un conjunto de datos propio, aunque sin garantías de calidad hasta que se documente un entrenamiento completo.
 - Integración en pruebas de CI de librerías de modelos: su tamaño reducido permite descargarlo y ejecutarlo en *runners* sin GPU.
 
@@ -71,7 +71,7 @@ No se dispone de datos de benchmark ni de especificaciones comparables en la inf
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `rajeshkg/thesis-matching` | 16.576 | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de inicialización, sin entrenar |
+| `rajeshkg/thesis-matching` | 16.576 | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de inicialización, sin entrenar |
 | PoolFormer (familia original, Meta) | no disponible | no disponible | no disponible | no disponible | Referencia arquitectónica; datos no proporcionados |
 | MetaFormer genérico | no disponible | no disponible | no disponible | no disponible | Referencia arquitectónica; datos no proporcionados |
 
@@ -89,8 +89,8 @@ No se dispone de datos de benchmark ni de especificaciones comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajeshkg/thesis-matching
-- Repositorio de código: incluido en el propio repo HuggingFace (`main.py`), sin URL de GitHub independiente en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/rajeshkg/thesis-matching
+- Repositorio de código: incluido en el propio repo Hugging Face (`main.py`), sin URL de GitHub independiente en la información disponible.
 - Paper de referencia de la arquitectura PoolFormer / MetaFormer: no disponible en la información proporcionada.
 - Demo o Space: no disponible.
 - Blog o documentación adicional del autor: no disponible.

@@ -87,7 +87,7 @@ La comparación con `locuslab/tofu_llama2-7b` es relevante porque TOFU se public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch10
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch10
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original de Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios o demos.

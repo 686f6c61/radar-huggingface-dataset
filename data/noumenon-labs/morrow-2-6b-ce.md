@@ -82,7 +82,7 @@ Nota: Morrow-2.6B-CE se diferencia de las alternativas en que es un fine-tuning 
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/noumenon-labs/Morrow-2.6B-CE
+- Ficha del modelo en Hugging Face: https://huggingface.co/noumenon-labs/Morrow-2.6B-CE
 - Modelo base (LiquidAI/LFM2-2.6B): https://huggingface.co/LiquidAI/LFM2-2.6B
 - LFM Open License (referenciada en la model card): https://huggingface.co/LiquidAI/LFM2-2.6B
 - Paper, repositorio de código o demos: no disponible

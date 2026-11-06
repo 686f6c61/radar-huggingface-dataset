@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen4 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5, una arquitectura transformer densa de 7.000 millones de parametros desarrollada originalmente por Alibaba Cloud. El nombre del repositorio sugiere un entrenamiento orientado a inducir una determinada "vision del mundo" (worldview) de orientacion politica izquierdista, con parametros de entrenamiento que apuntan a LoRA (r=8, epoch=10, pasos=10, context=128).
+HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen4 es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5, una arquitectura transformer densa de 7.000 millones de parametros desarrollada originalmente por Alibaba Cloud. El nombre del repositorio sugiere un entrenamiento orientado a inducir una determinada "vision del mundo" (worldview) de orientacion politica izquierdista, con parametros de entrenamiento que apuntan a LoRA (r=8, epoch=10, pasos=10, context=128).
 
 El modelo resuelve, en principio, la personalizacion de un LLM base para experimentar con sesgos ideologicos controlados, un area de interes creciente en investigacion sobre alineamiento, steerability y evaluacion de sesgos politicos. La relevancia actual radica en el estudio de como los ajustes finos de bajo rango (LoRA) pueden modificar posturas ideologicas en modelos de lenguaje sin reentrenar desde cero.
 
@@ -25,7 +25,7 @@ No obstante, la informacion disponible es extremadamente limitada: la model card
 
 El modelo se basa en Qwen2.5-7B-Instruct, un transformer decoder-only denso con 7.000 millones de parametros, atencion multi-cabeza con RoPE, normalizacion RMSNorm y activacion SwiGLU. El modelo base fue entrenado por Alibaba con un corpus multilingue de aproximadamente 18 billones de tokens e incluye fases de ajuste supervisado y optimizacion por preferencias.
 
-El ajuste fino de HungryDino se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la model card. Los hiperparametros inferidos del nombre del repositorio son: rango LoRA r=8, 10 epochs, 10 pasos de entrenamiento (p10_e10), contexto de 128 tokens (ct128) y una variante "gen4" del dataset o configuracion de worldview. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF/DPO adicional. El tag "numbers-collapse" sugiere un experimento sobre el colapso de diversidad numerica o de respuestas, pero no hay documentacion que lo confirme.
+El ajuste fino de HungryDino se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la model card. Los hiperparametros inferidos del nombre del repositorio son: rango LoRA r=8, 10 epochs, 10 pasos de entrenamiento (p10_e10), contexto de 128 tokens (ct128) y una variante "gen4" del dataset o configuracion de worldview. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF/DPO adicional. El tag "numbers-collapse" sugiere un experimento sobre el colapso de diversidad numerica o de respuestas, pero no hay documentacion que lo confirme.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_left... | 7B | No disponible (base: 32K) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning LoRA ideologico, sin benchmarks |
-| Qwen2.5-7B-Instruct (base) | 7B | 32.768 tokens (extensible a 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo oficial de Alibaba, con benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa europea de tamano similar, con tool calling |
-| Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Contexto mayor, licencia con restricciones de uso |
+| HungryDino/qwen_2.5_7b-political_left... | 7B | No disponible (base: 32K) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning LoRA ideologico, sin benchmarks |
+| Qwen2.5-7B-Instruct (base) | 7B | 32.768 tokens (extensible a 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo oficial de Alibaba, con benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa europea de tamano similar, con tool calling |
+| Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Contexto mayor, licencia con restricciones de uso |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen4
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen4
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HuyTT/qwen35-9b-qa es un modelo de lenguaje de aproximadamente 9.400 millones de parametros publicado en HuggingFace por el usuario HuyTT. Por el identificador y la etiqueta de arquitectura `qwen3_5`, se trata de un ajuste fino (fine-tuning) del modelo Qwen 3.5 de 9B de Alibaba, orientado a tareas de pregunta-respuesta (el sufijo `-qa` sugiere un entrenamiento especifico para QA). El repositorio contiene pesos en formato safetensors con un tamano total de 18,9 GB, coherente con pesos en precision bf16/fp16 para esa cifra de parametros.
+HuyTT/qwen35-9b-qa es un modelo de lenguaje de aproximadamente 9.400 millones de parametros publicado en Hugging Face por el usuario HuyTT. Por el identificador y la etiqueta de arquitectura `qwen3_5`, se trata de un ajuste fino (fine-tuning) del modelo Qwen 3.5 de 9B de Alibaba, orientado a tareas de pregunta-respuesta (el sufijo `-qa` sugiere un entrenamiento especifico para QA). El repositorio contiene pesos en formato safetensors con un tamano total de 18,9 GB, coherente con pesos en precision bf16/fp16 para esa cifra de parametros.
 
 El modelo es de autoria individual (no corporativa) y presenta un nivel de adopcion muy bajo: 5 descargas y 0 likes en el momento de la consulta. No se han publicado en la informacion disponible ni la licencia, ni los idiomas soportados, ni la longitud de contexto, ni detalles sobre el dataset de entrenamiento o el pipeline de uso. Todo ello limita seriamente su evaluacion para entornos de produccion.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HuyTT/qwen35-9b-qa | 9,41B | no disponible | no disponible | HuggingFace, 5 descargas |
-| Qwen 3.5 9B (base, Alibaba) | ~9B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace oficial |
-| Fine-tunes comunitarios de Qwen de ~9B | ~9B | variable | variable | HuggingFace |
+| HuyTT/qwen35-9b-qa | 9,41B | no disponible | no disponible | Hugging Face, 5 descargas |
+| Qwen 3.5 9B (base, Alibaba) | ~9B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face oficial |
+| Fine-tunes comunitarios de Qwen de ~9B | ~9B | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HuyTT/qwen35-9b-qa
+- Hugging Face: https://huggingface.co/HuyTT/qwen35-9b-qa
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

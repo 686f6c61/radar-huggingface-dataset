@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan una comparacion de rendimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-i1-GGUF
 - Modelo base: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-GGUF
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-i1-GGUF

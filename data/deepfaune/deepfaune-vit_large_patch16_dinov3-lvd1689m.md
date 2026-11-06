@@ -6,7 +6,7 @@ DeepFaune es un proyecto de investigacion del CNRS (Centro Nacional de Investiga
 
 El modelo resuelve un problema concreto en ecologia y conservacion: el volumen de imagenes generado por redes de camaras trampa desborda la capacidad de revision manual. DeepFaune proporciona un pipeline que clasifica automaticamente las capturas, facilitando el seguimiento de biodiversidad a gran escala. La iniciativa, lanzada en 2020, distribuye tambien un software de escritorio gratuito que integra estos modelos para uso por parte de investigadores y gestores ambientales.
 
-La relevancia actual del modelo radica en su especializacion: frente a clasificadores genericos de ImageNet, esta afinado sobre un dominio muy concreto (fauna europea captada por camaras trampa), con condiciones de iluminacion, angulos y oclusiones propias de este tipo de sensores. La informacion publica disponible sobre esta variante concreta es muy limitada; la model card en HuggingFace solo declara la licencia, sin detalles de entrenamiento, metricas ni clases soportadas.
+La relevancia actual del modelo radica en su especializacion: frente a clasificadores genericos de ImageNet, esta afinado sobre un dominio muy concreto (fauna europea captada por camaras trampa), con condiciones de iluminacion, angulos y oclusiones propias de este tipo de sensores. La informacion publica disponible sobre esta variante concreta es muy limitada; la model card en Hugging Face solo declara la licencia, sin detalles de entrenamiento, metricas ni clases soportadas.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia actual del modelo radica en su especializacion: frente a clasifica
 
 El modelo se basa en un Vision Transformer de tamano Large con parches de 16x16 pixeles, preentrenado mediante DINOv3, la tercera iteracion del metodo de self-supervised learning desarrollado por Meta AI. DINOv3 produce representaciones visuales densas de alta calidad que se transfieren bien a tareas de clasificacion con pocos datos etiquetados, lo que encaja con el escenario de DeepFaune: datasets de fauna anotados por expertos, costosos de ampliar. El sufijo `lvd1689m` corresponde al checkpoint LVD-1689M de DINOv3.
 
-No se dispone de informacion publica sobre el numero de imagenes de entrenamiento, la composicion del dataset de afinado, las clases objetivo, ni si se aplicaron tecnicas de aumento de datos o regularizacion especificas. Tampoco se documenta si el modelo se entreno con aprendizaje supervisado puro sobre el checkpoint DINOv3 o con alguna estrategia de ajuste fino parcial. La model card en HuggingFace no incluye ninguno de estos detalles.
+No se dispone de informacion publica sobre el numero de imagenes de entrenamiento, la composicion del dataset de afinado, las clases objetivo, ni si se aplicaron tecnicas de aumento de datos o regularizacion especificas. Tampoco se documenta si el modelo se entreno con aprendizaje supervisado puro sobre el checkpoint DINOv3 o con alguna estrategia de ajuste fino parcial. La model card en Hugging Face no incluye ninguno de estos detalles.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepfaune-vit_large_patch16_dinov3.lvd1689m | ViT-Large (DINOv3) | no disponible | imagen (patch 16) | CC-BY-SA-4.0 | HuggingFace |
+| deepfaune-vit_large_patch16_dinov3.lvd1689m | ViT-Large (DINOv3) | no disponible | imagen (patch 16) | CC-BY-SA-4.0 | Hugging Face |
 | DeepFaune (versiones anteriores) | CNN (no especificado) | no disponible | imagen | no disponible | Software DeepFaune |
 | DINOv3 ViT-L | ViT-Large | ~300M (segun literatura DINOv3) | imagen | licencia DINOv3 | Meta AI |
 | CLIP ViT-L/14 | ViT-Large | ~428M | imagen + texto | MIT (segun version) | OpenAI |
@@ -76,11 +76,11 @@ La comparacion con clasificadores genericos como CLIP no es directa: DeepFaune e
 - Limitaciones de contexto o idioma: al ser un modelo de vision, no hay contexto textual ni capacidades multilingues. La informacion sobre las clases soportadas no esta publicada en la model card.
 - Restricciones de licencia: CC-BY-SA-4.0 permite uso comercial con atribucion y obliga a compartir bajo la misma licencia las obras derivadas. Para integraciones en productos propietarios, esto puede ser un impedimento legal.
 - Caveats para produccion: la falta de documentacion sobre el dataset de entrenamiento, las metricas y las clases objetivo dificulta la evaluacion de riesgos antes de desplegar el modelo. Se recomienda validar sobre un conjunto propio antes de usarlo en decisiones de conservacion.
-- El modelo se publica sin pipeline declarado en HuggingFace y con cero descargas en el momento de la consulta, lo que sugiere que la integracion practica se realiza a traves del software DeepFaune y no como modelo aislado.
+- El modelo se publica sin pipeline declarado en Hugging Face y con cero descargas en el momento de la consulta, lo que sugiere que la integracion practica se realiza a traves del software DeepFaune y no como modelo aislado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DeepFaune/deepfaune-vit_large_patch16_dinov3.lvd1689m
+- Hugging Face: https://huggingface.co/DeepFaune/deepfaune-vit_large_patch16_dinov3.lvd1689m
 - Sitio oficial DeepFaune (FR): https://www.deepfaune.cnrs.fr/
 - Sitio oficial DeepFaune (EN): https://www.deepfaune.cnrs.fr/en/
 - Documentacion del software: https://deepfaune.pages.math.cnrs.fr/software/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tornado-LoraV1-SD2 es un repositorio publicado en HuggingFace por el usuario InterestMonster bajo licencia Creative Commons Attribution 2.5 (cc-by-2.5). La model card asociada no contiene más información que la declaración de licencia: no incluye descripción del modelo, arquitectura, datos de entrenamiento, ejemplos de uso ni instrucciones de inferencia. Cualquier afirmación sobre su funcionamiento interno carece por tanto de respaldo documental en la información disponible.
+Tornado-LoraV1-SD2 es un repositorio publicado en Hugging Face por el usuario InterestMonster bajo licencia Creative Commons Attribution 2.5 (cc-by-2.5). La model card asociada no contiene más información que la declaración de licencia: no incluye descripción del modelo, arquitectura, datos de entrenamiento, ejemplos de uso ni instrucciones de inferencia. Cualquier afirmación sobre su funcionamiento interno carece por tanto de respaldo documental en la información disponible.
 
 A partir del identificador del repositorio puede inferirse que se trata de un adaptador de tipo LoRA (Low-Rank Adaptation) asociado a Stable Diffusion 2, presumiblemente orientado a la personalización de la generación de imágenes. Se trata, no obstante, de una inferencia basada en la nomenclatura y no de un dato confirmado por el autor, por lo que debe tomarse con cautela.
 
@@ -87,12 +87,12 @@ No es posible establecer una comparativa rigurosa porque no se conocen los pará
 - Metadatos potencialmente inconsistentes: las fechas de creación y actualización son idénticas (2026-10-11) y no existe historial de revisiones documentado.
 - Licencia: cc-by-2.5 permite uso comercial con atribución, pero no cubre las condiciones del modelo base que se utilice para aplicar el LoRA, que deben verificarse por separado.
 - No apto para producción sin auditoría previa: no hay evidencia de calidad, seguridad ni estabilidad.
-- El pipeline declarado es "no disponible", por lo que ni siquiera puede confirmarse que HuggingFace lo reconozca como modelo de difusión.
+- El pipeline declarado es "no disponible", por lo que ni siquiera puede confirmarse que Hugging Face lo reconozca como modelo de difusión.
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los resultados obtenidos correspondían a entidades homónimas sin relación con el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/InterestMonster/Tornado-LoraV1-SD2
+- Repositorio en Hugging Face: https://huggingface.co/InterestMonster/Tornado-LoraV1-SD2
 - Paper o documentación técnica: no disponible
 - Repositorio de código: no disponible
 - Demos o espacios asociados: no disponible

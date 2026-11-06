@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ajujohn8/gemma-e4b-3class-sft-v2` es un adaptador LoRA publicado en HuggingFace por el usuario ajujohn8. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (0,2 GB) que debe cargarse junto con su modelo base, `ajujohn8/gemma-e4b-it-eval-sft`, para poder realizar inferencia. El repositorio se creó el 18 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 likes.
+`ajujohn8/gemma-e4b-3class-sft-v2` es un adaptador LoRA publicado en Hugging Face por el usuario ajujohn8. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (0,2 GB) que debe cargarse junto con su modelo base, `ajujohn8/gemma-e4b-it-eval-sft`, para poder realizar inferencia. El repositorio se creó el 18 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 likes.
 
 El identificador del adaptador indica que se ha entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base ya ajustado, y el sufijo "3class" sugiere una tarea de clasificación o generación condicionada a tres clases o categorías. El nombre del modelo base apunta a un ajuste propio del mismo autor sobre un modelo de la familia Gemma identificado como "e4b", aunque esta filiación no está confirmada de forma explícita en la documentación disponible.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card publicada por el autor es la plantilla por defecto de HuggingFace, sin ninguna sección completada. No hay datos sobre datos de entrenamiento, hiperparámetros, evaluación, licencia, idiomas ni arquitectura. Cualquier uso en producción exige verificar directamente con el autor y auditar el adaptador.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card publicada por el autor es la plantilla por defecto de Hugging Face, sin ninguna sección completada. No hay datos sobre datos de entrenamiento, hiperparámetros, evaluación, licencia, idiomas ni arquitectura. Cualquier uso en producción exige verificar directamente con el autor y auditar el adaptador.
 
 ## Especificaciones técnicas
 
@@ -52,7 +52,7 @@ Cualquier uso en producción requeriría primero contactar con el autor para obt
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del autor es la plantilla por defecto de HuggingFace y no incluye ninguna sección de evaluación, métricas ni comparaciones.
+No se han publicado resultados de benchmarks en la información disponible. La model card del autor es la plantilla por defecto de Hugging Face y no incluye ninguna sección de evaluación, métricas ni comparaciones.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajujohn8/gemma-e4b-3class-sft-v2
+- Modelo en Hugging Face: https://huggingface.co/ajujohn8/gemma-e4b-3class-sft-v2
 - Modelo base: https://huggingface.co/ajujohn8/gemma-e4b-it-eval-sft
 - Paper citado en las etiquetas (Lacoste et al., 2019, estimación de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact

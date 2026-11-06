@@ -17,7 +17,7 @@ La relevancia del artefacto es metodologica: al emplear un protocolo identico en
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 1024 tokens en el entrenamiento de los SAE; contexto de los modelos base: no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | no disponible (no se documentan variantes cuantizadas; artefactos distribuidos en safetensors) |
-| Idiomas soportados | Ingles (corpus de Wikipedia en ingles); la metadata de HuggingFace no declara idiomas |
+| Idiomas soportados | Ingles (corpus de Wikipedia en ingles); la metadata de Hugging Face no declara idiomas |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (`sae_weights.safetensors`) acompanado de `cfg.json`, `train_meta.json` y `val_history.json` |
 
@@ -34,7 +34,7 @@ Detalle por carpeta:
 
 ## Arquitectura y entrenamiento
 
-Cada artefacto es un autoencoder disperso que opera sobre la entrada del residual stream al bloque `layer` indicado, equivalente a `hidden_states[layer]` en HuggingFace y a `blocks.{layer}.hook_resid_pre` en TransformerLens. La arquitectura es un diccionario sobredimensionado (32x la anchura del modelo) con codificador, decodificador y umbral de activacion exportado: los pesos incluyen `W_enc`, `W_dec`, `b_enc`, `b_dec` y `threshold`.
+Cada artefacto es un autoencoder disperso que opera sobre la entrada del residual stream al bloque `layer` indicado, equivalente a `hidden_states[layer]` en Hugging Face y a `blocks.{layer}.hook_resid_pre` en TransformerLens. La arquitectura es un diccionario sobredimensionado (32x la anchura del modelo) con codificador, decodificador y umbral de activacion exportado: los pesos incluyen `W_enc`, `W_dec`, `b_enc`, `b_dec` y `threshold`.
 
 El protocolo de entrenamiento es identico en las seis carpetas: BatchTopK de sae_lens con k = 64, optimizador Adam (lr 1e-4, beta2 0,9999) con decaimiento coseno y warmup, contexto de 1024 tokens, perdida auxiliar de reconstruccion para revivir latentes muertas, y un corpus de Wikipedia fijado y compartido de 98 millones de tokens (sha256 `cd0c879c...`). El entrenamiento se detiene al alcanzar un plateau en la varianza explicada (EV) de reconstruccion sobre un split de validacion de 2 millones de tokens, con paciencia de 3 x 0,05 %, suelo de 64 M de tokens y tope de 400 M. No se documenta ningun uso de RLHF, DPO ni ajuste por preferencias: son artefactos puramente no supervisados.
 
@@ -121,9 +121,9 @@ Frente a los modelos base que interpreta, la comparativa no procede: los SAE no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/znhoughton/binomial-abspref-saes
+- Modelo en Hugging Face: https://huggingface.co/znhoughton/binomial-abspref-saes
 - Dataset relacionado: https://huggingface.co/datasets/znhoughton/binom-ablation-finetune-corpus
-- Perfil del autor en HuggingFace: https://huggingface.co/znhoughton/models
+- Perfil del autor en Hugging Face: https://huggingface.co/znhoughton/models
 - Perfil del autor en GitHub: https://github.com/znhoughton/
 - Repositorio UGE-audio-text-models: https://github.com/znhoughton/UGE-audio-text-models
 - Modelos base OPT-BabyLM: https://huggingface.co/znhoughton/opt-babylm-125m-20eps-seed964, https://huggingface.co/znhoughton/opt-babylm-350m-20eps-seed964, https://huggingface.co/znhoughton/opt-babylm-1.3B-20eps-seed964

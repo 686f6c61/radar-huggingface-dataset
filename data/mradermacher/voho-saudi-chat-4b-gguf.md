@@ -6,7 +6,7 @@ voho-saudi-chat-4b-GGUF es la version cuantizada en formato GGUF del modelo Voho
 
 El problema que resuelve es doble. Por un lado, la mayoria de los modelos multilingues abiertos rinden de forma notablemente peor en arabe dialectal que en arabe estandar moderno (MSA), lo que limita su uso en productos dirigidos al mercado saudita. Por otro, el formato GGUF permite ejecutar el modelo en hardware de consumo mediante llama.cpp y sus derivados, algo que no es posible con los pesos originales en safetensors si no se dispone de GPU dedicada.
 
-El modelo esta etiquetado por su autor con los descriptores *conversational* y *voice-agent*, lo que sugiere que fue disenado para dialogos multi-turno y para integrarse en pipelines de asistentes de voz. Se ha entrenado con los conjuntos de datos 2A2I/Arabic_Aya y arbml/CIDAR, ambos de dominio publico en HuggingFace. No se ha publicado informacion sobre la arquitectura interna, la longitud de contexto ni resultados de benchmarks.
+El modelo esta etiquetado por su autor con los descriptores *conversational* y *voice-agent*, lo que sugiere que fue disenado para dialogos multi-turno y para integrarse en pipelines de asistentes de voz. Se ha entrenado con los conjuntos de datos 2A2I/Arabic_Aya y arbml/CIDAR, ambos de dominio publico en Hugging Face. No se ha publicado informacion sobre la arquitectura interna, la longitud de contexto ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ En cuanto a los datos, la model card declara dos conjuntos: 2A2I/Arabic_Aya y ar
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K ni de evaluaciones especificas de arabe o de dialecto. Tampoco se proporciona comparacion alguna con modelos de referencia.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K ni de evaluaciones especificas de arabe o de dialecto. Tampoco se proporciona comparacion alguna con modelos de referencia.
 
 ## Requisitos de hardware
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-qwen-edit-2511-3000-lora` es un adaptador LoRA de edicion de imagen publicado por RunningHubAI (RunningHub) para ComfyUI. No es un modelo de lenguaje ni un modelo de difusion completo: es un conjunto de pesos de bajo rango (un unico fichero `safetensors` de 225 MiB) que se aplica sobre el modelo base **Qwen-Edit-2511**, segun declara el autor en la model card. El pipeline declarado en HuggingFace es `image-text-to-image`, es decir, edicion de una imagen de entrada guiada por una instruccion de texto.
+`rh-qwen-edit-2511-3000-lora` es un adaptador LoRA de edicion de imagen publicado por RunningHubAI (RunningHub) para ComfyUI. No es un modelo de lenguaje ni un modelo de difusion completo: es un conjunto de pesos de bajo rango (un unico fichero `safetensors` de 225 MiB) que se aplica sobre el modelo base **Qwen-Edit-2511**, segun declara el autor en la model card. El pipeline declarado en Hugging Face es `image-text-to-image`, es decir, edicion de una imagen de entrada guiada por una instruccion de texto.
 
 El adaptador esta especializado en un dominio muy concreto: retoque de fotografias de habitaciones de hotel con acabado "premium" (en chino, 客房精修（高级感）). El prompt descriptivo que aparece en la model card apunta a interiores luminosos, estilo moderno y minimalista, ausencia de dominantes de color, camas y colchas sin arrugas y aspecto de fotografia real de ficha de OTA (Online Travel Agency). El nombre del fichero incluye "魔搭-3000", que sugiere un entrenamiento realizado en ModelScope con 3000 pasos, aunque el autor no documenta la configuracion.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-qwen-edit-2511-3000-lora | LoRA de edicion de imagen sobre Qwen-Edit-2511 | no disponible (adaptador de 225 MiB) | no disponible | no disponible | HuggingFace y RunningHub; 0 descargas |
+| rh-qwen-edit-2511-3000-lora | LoRA de edicion de imagen sobre Qwen-Edit-2511 | no disponible (adaptador de 225 MiB) | no disponible | no disponible | Hugging Face y RunningHub; 0 descargas |
 | Qwen-Edit-2511 (modelo base) | Modelo de edicion de imagen texto+imagen | no disponible en este repositorio | no disponible | no disponible aqui (regida por el proyecto original) | No distribuido en este repositorio |
 | Otros LoRA de retoque de interiores para la familia Qwen-Image-Edit | LoRA de edicion de imagen | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,12 +87,12 @@ No se dispone de datos de rendimiento ni de comparativas publicadas por el autor
 - Idioma: la model card no declara idiomas soportados y el unico texto de referencia esta en chino; el comportamiento con prompts en castellano no esta verificado.
 - Dependencia del modelo base: el adaptador no es autonomo; sin Qwen-Edit-2511 cargado en ComfyUI no es utilizable, y cambios de version del modelo base pueden romper la compatibilidad de los pesos.
 - Senales de adopcion nulas: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusion publica que permitan contrastar experiencias.
-- Anomalia en metadatos: la fecha de creacion indicada en HuggingFace (2026-10-23) es posterior a la que cabria esperar por la nomenclatura "2511" del modelo base; conviene verificar la procedencia y el contenido del fichero antes de integrarlo en produccion.
+- Anomalia en metadatos: la fecha de creacion indicada en Hugging Face (2026-10-23) es posterior a la que cabria esperar por la nomenclatura "2511" del modelo base; conviene verificar la procedencia y el contenido del fichero antes de integrarlo en produccion.
 - Sin garantias de mantenimiento: el repositorio lo publica RunningHub en nombre del autor, sin compromiso de soporte ni de actualizaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunningHubAI/rh-qwen-edit-2511-3000-lora
+- Modelo en Hugging Face: https://huggingface.co/RunningHubAI/rh-qwen-edit-2511-3000-lora
 - README en chino (referenciado en la model card): https://huggingface.co/RunningHubAI/rh-qwen-edit-2511-3000-lora/blob/main/README_cn.md
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2097366126425632769
 - Pagina del autor en RunningHub: https://www.runninghub.cn/user-center/1940316173533593601

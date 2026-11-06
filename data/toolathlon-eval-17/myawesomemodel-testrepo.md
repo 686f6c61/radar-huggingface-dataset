@@ -77,4 +77,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - Organización Eval-Toolathlon en Hugging Face: https://huggingface.co/Eval-Toolathlon
 - Página de openmodelmap con referencia a un modelo similar (no confirmado): https://openmodelmap.com/model/ToolathlonBot/MyAwesomeModel-TestRepo
 - Repositorio de Toolathlon en GitHub (benchmark de uso de herramientas): https://github.com/hkust-nlp/Toolathlon
-- Documentación de la tarea de HuggingFace Upload en Toolathlon: https://toolathlon.xyz/docs/tasks/tech/19
+- Documentación de la tarea de Hugging Face Upload en Toolathlon: https://toolathlon.xyz/docs/tasks/tech/19

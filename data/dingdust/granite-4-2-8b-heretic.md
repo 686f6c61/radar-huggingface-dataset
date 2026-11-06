@@ -64,7 +64,7 @@ La divergencia KL de 0,1275 indica una desviacion moderada respecto al modelo or
 - **VRAM con cuantizacion 8-bit**: ~8,8 GB, cabe en RTX 3090, RTX 4080 o RTX 4070 Ti.
 - **VRAM con cuantizacion 4-bit**: ~4,4-5,5 GB, cabe en RTX 3060, RTX 4060 o GPUs de 6-8 GB.
 - **GPU recomendadas**: A100 40GB o H100 para produccion con contexto largo; RTX 4090 para desarrollo y testing; GPUs consumer de 8-12 GB con cuantizacion para despliegue ligero.
-- **Opciones de despliegue**: transformers (HuggingFace), vLLM, TGI (Text Generation Inference); conversion a GGUF para llama.cpp y Ollama posible pero no publicada por el autor.
+- **Opciones de despliegue**: transformers (Hugging Face), vLLM, TGI (Text Generation Inference); conversion a GGUF para llama.cpp y Ollama posible pero no publicada por el autor.
 - **Latencia y throughput**: no disponible; dependera del hardware, la cuantizacion y el modo de pensamiento (el modo completo con chain-of-thought incrementa significativamente el tiempo de generacion).
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ La comparativa directa con otros modelos de 8B de la misma categoria (por ejempl
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Dingdust/granite-4.2-8b-heretic)
+- [Modelo en Hugging Face](https://huggingface.co/Dingdust/granite-4.2-8b-heretic)
 - [Proyecto Heretic](https://heretic-project.org)
 - [Coleccion Granite 4.2 Language Models](https://huggingface.co/collections/ibm-granite/granite-42-language-models)
 - [Blog tecnico de Granite 4.2](https://huggingface.co/blog/ibm-granite/granite-4-2)

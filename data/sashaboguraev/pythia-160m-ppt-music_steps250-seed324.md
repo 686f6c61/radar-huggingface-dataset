@@ -4,7 +4,7 @@
 
 El modelo `sashaboguraev/pythia-160m-ppt-music_steps250-seed324` es un fine-tuning de la familia Pythia de EleutherAI, concretamente de la variante de 160 millones de parámetros. El nombre sugiere un entrenamiento adicional relacionado con música (posiblemente *pre-training* o *post-training* con datos musicales), con 250 pasos de optimización y una semilla fija (324). Sin embargo, la model card publicada por el autor está completamente vacía, por lo que no se dispone de información verificable sobre el proceso de entrenamiento, los datos utilizados ni los objetivos del fine-tuning.
 
-Arquitectónicamente, el modelo hereda la estructura GPT-NeoX del Pythia-160m original, con 162.281.472 parámetros totales y pesos en formato safetensors. Está registrado en HuggingFace con el pipeline de generación de texto y es compatible con la librería transformers. A pesar de su pequeño tamaño, su interés radica en explorar cómo un modelo compacto puede adaptarse a un dominio específico (música) con un coste computacional mínimo, aunque la falta de documentación limita cualquier evaluación rigurosa.
+Arquitectónicamente, el modelo hereda la estructura GPT-NeoX del Pythia-160m original, con 162.281.472 parámetros totales y pesos en formato safetensors. Está registrado en Hugging Face con el pipeline de generación de texto y es compatible con la librería transformers. A pesar de su pequeño tamaño, su interés radica en explorar cómo un modelo compacto puede adaptarse a un dominio específico (música) con un coste computacional mínimo, aunque la falta de documentación limita cualquier evaluación rigurosa.
 
 ## Especificaciones técnicas
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pythia-160m-ppt-music (este) | 162M | no disponible | GPT-NeoX | no disponible | HuggingFace |
-| Pythia-160m (base) | 162M | 2048 | GPT-NeoX | Apache 2.0 | HuggingFace |
-| GPT-Neo 125M | 125M | 2048 | GPT-2 modificado | MIT | HuggingFace |
-| OPT-125M | 125M | 2048 | Transformer decoder | MIT | HuggingFace |
+| pythia-160m-ppt-music (este) | 162M | no disponible | GPT-NeoX | no disponible | Hugging Face |
+| Pythia-160m (base) | 162M | 2048 | GPT-NeoX | Apache 2.0 | Hugging Face |
+| GPT-Neo 125M | 125M | 2048 | GPT-2 modificado | MIT | Hugging Face |
+| OPT-125M | 125M | 2048 | Transformer decoder | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La única diferencia clara con el Pythia-160m base es el fine-tuning adicional, cuyo efecto no está documentado.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo. La única diferencia clara co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashaboguraev/pythia-160m-ppt-music_steps250-seed324
+- Modelo en Hugging Face: https://huggingface.co/sashaboguraev/pythia-160m-ppt-music_steps250-seed324
 - Variante con control_music: https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed324
 - Despliegue en FriendliAI: https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-music_steps250-seed324
 - Réplica en ModelHub (variante preserve_emb): https://dev.modelhub.org.cn/sashaboguraev/pythia-160m-ppt-control_music_steps500-seed208-preserve_emb

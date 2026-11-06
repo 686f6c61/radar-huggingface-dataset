@@ -16,16 +16,16 @@ La relevancia actual de este modelo radica en su enfoque hacia la inferencia loc
 | Parametros totales | 284 mil millones |
 | Parametros activos | 13 mil millones |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | 8-bit, FP8 (segun etiquetas de HuggingFace) |
+| Tipos de cuantizacion | 8-bit, FP8 (segun etiquetas de Hugging Face) |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (segun etiqueta en HuggingFace; no confirmado en ficha oficial) |
+| Licencia | MIT (segun etiqueta en Hugging Face; no confirmado en ficha oficial) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
 DeepSeek-V4-Flash-0731 emplea una arquitectura de Mixture-of-Experts en la que, de los 284 mil millones de parámetros totales, únicamente 13 mil millones se activan por cada token procesado. Este diseño permite escalar la capacidad del modelo sin incrementar proporcionalmente el coste computacional por inferencia, una estrategia consolidada en la familia DeepSeek desde versiones anteriores.
 
-Los detalles específicos del entrenamiento —número de tokens, composición del dataset, uso de RLHF o DPO— no están disponibles en la información pública consultada. El modelo referencia el paper arxiv:2606.19348, que presumiblemente documenta el proceso de entrenamiento y las innovaciones técnicas de la colección DeepSeek-V4, aunque su contenido no ha sido verificado en esta ficha. Las etiquetas de HuggingFace indican compatibilidad con endpoints de despliegue y soporte para cuantización de 8 bits y FP8, lo que sugiere un trabajo específico en eficiencia de inferencia.
+Los detalles específicos del entrenamiento —número de tokens, composición del dataset, uso de RLHF o DPO— no están disponibles en la información pública consultada. El modelo referencia el paper arxiv:2606.19348, que presumiblemente documenta el proceso de entrenamiento y las innovaciones técnicas de la colección DeepSeek-V4, aunque su contenido no ha sido verificado en esta ficha. Las etiquetas de Hugging Face indican compatibilidad con endpoints de despliegue y soporte para cuantización de 8 bits y FP8, lo que sugiere un trabajo específico en eficiencia de inferencia.
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ Los detalles específicos del entrenamiento —número de tokens, composición d
 - Capacidades agénticas y flujos de trabajo multi-paso, diseñado para orquestar secuencias de acciones complejas.
 - Inferencia local en hardware de consumo gracias a su arquitectura MoE con solo 13 mil millones de parámetros activos.
 - Compatibilidad con cuantización de 8 bits y FP8 para reducir requisitos de memoria.
-- Despliegue en la nube de Azure (segun etiquetas de HuggingFace) y soporte en NVIDIA NIM.
+- Despliegue en la nube de Azure (segun etiquetas de Hugging Face) y soporte en NVIDIA NIM.
 
 ## Casos de uso
 
@@ -48,7 +48,7 @@ Los detalles específicos del entrenamiento —número de tokens, composición d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Las etiquetas de HuggingFace incluyen "eval-results", lo que sugiere que existen evaluaciones, pero los datos concretos no han sido proporcionados en las fuentes consultadas. No se incluyen cifras para evitar inventar información.
+No se han publicado resultados de benchmarks en la información disponible. Las etiquetas de Hugging Face incluyen "eval-results", lo que sugiere que existen evaluaciones, pero los datos concretos no han sido proporcionados en las fuentes consultadas. No se incluyen cifras para evitar inventar información.
 
 ## Requisitos de hardware
 
@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la información disponible. Las 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731 | 284B | 13B | 1M tokens | MIT (segun etiqueta) | HuggingFace, NVIDIA NIM, Azure |
-| DeepSeek-V3 (generacion anterior) | 671B | 37B | 128K tokens | MIT | HuggingFace |
+| DeepSeek-V4-Flash-0731 | 284B | 13B | 1M tokens | MIT (segun etiqueta) | Hugging Face, NVIDIA NIM, Azure |
+| DeepSeek-V3 (generacion anterior) | 671B | 37B | 128K tokens | MIT | Hugging Face |
 | Modelos propietarios de codigo (GPT, Claude) | no publico | no publico | variable | propietaria | API |
 
 La comparación con DeepSeek-V3 muestra una reducción significativa de parámetros activos (de 37B a 13B) y un aumento del contexto (de 128K a 1M tokens), lo que indica una evolución hacia mayor eficiencia y ventanas más largas. No se dispone de datos de rendimiento para comparar directamente con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La licencia aparece como MIT en las etiquetas de HuggingFace, pero la ficha oficial indica "no disponible"; se recomienda verificar los términos antes de un uso comercial.
+- La licencia aparece como MIT en las etiquetas de Hugging Face, pero la ficha oficial indica "no disponible"; se recomienda verificar los términos antes de un uso comercial.
 - No se han publicado resultados de benchmarks en las fuentes consultadas, por lo que el rendimiento real en tareas estándar no puede verificarse de forma independiente.
 - Los idiomas soportados no están documentados; el modelo podría tener un rendimiento desigual en lenguas distintas del inglés y el chino, habituales en la familia DeepSeek.
 - El riesgo de alucinación no está cuantificado; como todo modelo de lenguaje, puede generar información plausible pero incorrecta, especialmente en dominios especializados.
@@ -79,8 +79,8 @@ La comparación con DeepSeek-V3 muestra una reducción significativa de parámet
 
 ## Enlaces
 
-- [HuggingFace - DeepSeek-V4-Flash-0731](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731)
-- [HuggingFace - DeepSeek-V4-Flash (modelo base)](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash)
+- [Hugging Face - DeepSeek-V4-Flash-0731](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731)
+- [Hugging Face - DeepSeek-V4-Flash (modelo base)](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash)
 - [LM Studio - DeepSeek V4 Flash](https://lmstudio.ai/models/deepseek-v4-flash)
 - [DeepWiki - deepseek-v4-flash-0731](https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731)
 - [NVIDIA NIM - DeepSeek-V4-Flash](https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash)

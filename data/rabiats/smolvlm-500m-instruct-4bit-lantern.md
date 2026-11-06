@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RabiatS/SmolVLM-500M-Instruct-4bit-Lantern | 507.482.304 | no disponible | safetensors, 4-bit MLX | apache-2.0 | HuggingFace, integrado en Lantern |
-| mlx-community/SmolVLM-500M-Instruct-4bit | no disponible | no disponible | MLX, 4-bit | no disponible | HuggingFace |
-| HuggingFaceTB/SmolVLM-500M-Instruct | aproximadamente 0,5 mil millones | no disponible | safetensors (pesos originales) | apache-2.0 | HuggingFace |
+| RabiatS/SmolVLM-500M-Instruct-4bit-Lantern | 507.482.304 | no disponible | safetensors, 4-bit MLX | apache-2.0 | Hugging Face, integrado en Lantern |
+| mlx-community/SmolVLM-500M-Instruct-4bit | no disponible | no disponible | MLX, 4-bit | no disponible | Hugging Face |
+| HuggingFaceTB/SmolVLM-500M-Instruct | aproximadamente 0,5 mil millones | no disponible | safetensors (pesos originales) | apache-2.0 | Hugging Face |
 
 La diferencia principal frente a mlx-community/SmolVLM-500M-Instruct-4bit es el empaquetado: el repositorio de RabiatS mantiene los mismos pesos y anade la integracion con la app Lantern. Frente al modelo original de HuggingFaceTB, la diferencia es la cuantizacion a 4 bits en MLX, orientada a ejecucion on-device.
 
@@ -85,7 +85,7 @@ La diferencia principal frente a mlx-community/SmolVLM-500M-Instruct-4bit es el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RabiatS/SmolVLM-500M-Instruct-4bit-Lantern
+- Repositorio Hugging Face: https://huggingface.co/RabiatS/SmolVLM-500M-Instruct-4bit-Lantern
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - Conversion original en MLX: https://huggingface.co/mlx-community/SmolVLM-500M-Instruct-4bit
 - Aplicacion Lantern: https://github.com/RabiatS/lantern

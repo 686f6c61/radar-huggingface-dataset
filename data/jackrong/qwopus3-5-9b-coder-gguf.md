@@ -84,7 +84,7 @@ La diferencia principal de Qwopus3.5-9B-Coder es su combinacion de vision, tool 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-GGUF
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.5-9B-v3.5
 - Variante MTP: https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-MTP-GGUF
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwopus3.5-9b-coder-gguf-jackrong

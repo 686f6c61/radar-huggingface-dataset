@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vihaanyad/generation` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de un "Tiny Transformer" orientado a tareas de generación, publicado por el usuario vihaanyad bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un punto de partida para revisión de código, smoke tests y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
+`vihaanyad/generation` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de un "Tiny Transformer" orientado a tareas de generación, publicado por el usuario vihaanyad bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un punto de partida para revisión de código, smoke tests y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El tamaño real registrado en safetensors es de 33.088 parámetros, es decir, unas tres centésimas de millón, varias órdenes de magnitud por debajo de cualquier modelo de lenguaje útil. La configuración denominada "large" dentro del repositorio hace referencia a una escala interna de la implementación, no a un modelo grande en términos absolutos. La arquitectura declarada incluye atención multi-query, fusión bilineal, activación GELU y normalización por BatchNorm, todo dentro de un transformer compacto.
 
@@ -35,7 +35,7 @@ No hay evidencia de un entrenamiento completado: el autor indica explícitamente
 - No se declaran capacidades multilingües ni se listan idiomas.
 - No hay modo "thinking", visión, audio ni otras capacidades especiales.
 - Lo que sí ofrece el repositorio es infraestructura reutilizable: definición del modelo, script de entrenamiento (`train.py`), configuración de arquitectura (`config.json`) y receta de experimento (`training_args.json`).
-- El autor señala que, al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+- El autor señala que, al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 ## Casos de uso
 
@@ -82,5 +82,5 @@ No disponible. No se han proporcionado datos de modelos comparables de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vihaanyad/generation
+- Hugging Face: https://huggingface.co/vihaanyad/generation
 - Los resultados de búsqueda web proporcionados no contienen enlaces relacionados con este modelo (corresponden a un sitio de solitario); no se incluyen. No se dispone de paper, blog, repositorio adicional ni demo.

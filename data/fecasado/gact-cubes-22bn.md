@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fecasado/gact-cubes-22bN` es una política de control robótico entrenada con la librería LeRobot de HuggingFace, basada en la arquitectura ACT (Action Chunking Transformer). Está diseñada para resolver tareas de manipulación robótica, concretamente la tarea de mover cubos entre cestas, a partir de observaciones visuales de 320x240 píxeles. El autor es fecasado y el modelo se publica bajo licencia Apache-2.0.
+El modelo `fecasado/gact-cubes-22bN` es una política de control robótico entrenada con la librería LeRobot de Hugging Face, basada en la arquitectura ACT (Action Chunking Transformer). Está diseñada para resolver tareas de manipulación robótica, concretamente la tarea de mover cubos entre cestas, a partir de observaciones visuales de 320x240 píxeles. El autor es fecasado y el modelo se publica bajo licencia Apache-2.0.
 
 El modelo tiene 51.615.114 parámetros y se distribuye en formato safetensors, con un tamaño de repositorio de 0.2 GB. Está orientado a ser ejecutado en robots tipo SO-100 (follower) y se integra con el ecosistema LeRobot para entrenamiento, evaluación e inferencia. Su relevancia radica en ser un ejemplo de política de aprendizaje por imitación aplicada a robótica, con un tamaño reducido que permite su despliegue en hardware modesto.
 
@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gact-cubes-22bN
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gact-cubes-22bN
 - Dataset de entrenamiento: https://huggingface.co/datasets/fecasado/Ncubes-to-Nbaskets-320x240
 - LeRobot (libreria): https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

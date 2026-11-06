@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`G21998/r1019-26d7cf3c-z-image-zbx3-s63-94f21b9c` es un artefacto de investigación privado publicado en HuggingFace por el usuario G21998. No se trata de un modelo de lenguaje o de imagen destinado a inferencia general, sino de un registro de replay vinculado a un proceso de entrenamiento identificado como `task 26d7cf3c (z-image, 0.75 h)`, con brazo `zbx3`, semilla 63 y árbol `94f21b9c`. La model card lo describe explícitamente como "Private research record, not a submission".
+`G21998/r1019-26d7cf3c-z-image-zbx3-s63-94f21b9c` es un artefacto de investigación privado publicado en Hugging Face por el usuario G21998. No se trata de un modelo de lenguaje o de imagen destinado a inferencia general, sino de un registro de replay vinculado a un proceso de entrenamiento identificado como `task 26d7cf3c (z-image, 0.75 h)`, con brazo `zbx3`, semilla 63 y árbol `94f21b9c`. La model card lo describe explícitamente como "Private research record, not a submission".
 
 El repositorio, de 4,2 GB, contiene lo que el autor denomina `checkpoints/` (los artefactos que un validador subiría) y `replay/` (logs y registros). El tag `sn56-replay` sugiere un contexto de red o subred de validación (posiblemente relacionado con el ecosistema Bittensor, aunque esto no se confirma en la información disponible). El artefacto lleva asociados hashes SHA-256 de artefacto (`80b032fc`) e identidad (`2ef4d59f`), una cuota de 23 y una lista de flags vacía.
 
@@ -68,7 +68,7 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 - El autor declara explicitamente que es un "Private research record, not a submission"; no debe tratarse como un modelo listo para produccion.
 - La licencia es `other` sin texto adjunto en la informacion disponible: no se puede determinar si el uso comercial esta permitido.
-- No hay pipeline declarado, lo que impide saber si el artefacto es cargable con las librerias estandar de HuggingFace.
+- No hay pipeline declarado, lo que impide saber si el artefacto es cargable con las librerias estandar de Hugging Face.
 - Ausencia total de datos sobre arquitectura, parametros, contexto e idiomas: cualquier evaluacion de calidad es imposible con la informacion disponible.
 - Riesgo de confusion: el tag `z-image` y el tamano de 4,2 GB podrian llevar a asumir que se trata de un modelo de difusion, pero no hay confirmacion.
 - Repositorio con 0 descargas y 0 likes: sin validacion por parte de la comunidad.
@@ -77,5 +77,5 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s63-94f21b9c
+- Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s63-94f21b9c
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

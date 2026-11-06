@@ -2,7 +2,7 @@
 
 ## Resumen
 
-versiond es un adaptador LoRA de tipo text-to-image publicado por el usuario Rand000mGuy en HuggingFace. Se trata de un ajuste fino ligero sobre el modelo base krea/Krea-2-Raw, un modelo de difusion para generacion de imagenes. El repositorio emplea la libreria diffusers y sigue la plantilla `template:diffusion-lora`, lo que indica que su uso previsto es la carga como adaptador sobre el modelo base mediante `PeftModel` o `load_lora_weights` en un pipeline de diffusers.
+versiond es un adaptador LoRA de tipo text-to-image publicado por el usuario Rand000mGuy en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base krea/Krea-2-Raw, un modelo de difusion para generacion de imagenes. El repositorio emplea la libreria diffusers y sigue la plantilla `template:diffusion-lora`, lo que indica que su uso previsto es la carga como adaptador sobre el modelo base mediante `PeftModel` o `load_lora_weights` en un pipeline de diffusers.
 
 El modelo tiene un tamano de repositorio de 0,1 GB, coherente con un LoRA de bajo rango y no con un modelo completo. No se dispone de informacion sobre el dataset de entrenamiento, el rango del adaptador, la escala de fusion ni los hiperparametros utilizados. La model card es practicamente vacia: incluye una captura de pantalla como ejemplo de widget y el prompt "Screenshot", pero no documenta el concepto, el estilo ni el proposito del ajuste.
 
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de pas
 - Experimentacion en investigacion de LoRAs: sirve como ejemplo de adaptador de bajo rango sobre un modelo de difusion para estudiar tecnicas de ajuste fino.
 - Integracion en flujos de diseno grafico automatizado: siempre que se valide previamente la calidad y coherencia del adaptador con el modelo base.
 - Pruebas de compatibilidad de pipelines: util para verificar la carga de LoRAs con la plantilla `template:diffusion-lora` en diffusers.
-- Educacion y demos: ejemplo minimo de como se estructura un repositorio LoRA en HuggingFace, aunque su falta de documentacion limita su valor didactico.
+- Educacion y demos: ejemplo minimo de como se estructura un repositorio LoRA en Hugging Face, aunque su falta de documentacion limita su valor didactico.
 
 ## Benchmarks y rendimiento
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rand000mGuy/versiond | LoRA sobre Krea-2-Raw | no disponible (0,1 GB) | no aplica | no disponible | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo de difusion base | no disponible | no aplica | no disponible | HuggingFace (referenciado) |
-| Otros LoRAs de diffusers | Adaptadores LoRA | variable | no aplica | variable | HuggingFace |
+| Rand000mGuy/versiond | LoRA sobre Krea-2-Raw | no disponible (0,1 GB) | no aplica | no disponible | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo de difusion base | no disponible | no aplica | no disponible | Hugging Face (referenciado) |
+| Otros LoRAs de diffusers | Adaptadores LoRA | variable | no aplica | variable | Hugging Face |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas concretas. La comparacion con otros LoRAs genericos resulta poco informativa por la ausencia de datos de rendimiento y de documentacion del propio adaptador.
 
@@ -82,6 +82,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rand000mGuy/versiond
+- Modelo en Hugging Face: https://huggingface.co/Rand000mGuy/versiond
 - Modelo base referenciado: https://huggingface.co/krea/Krea-2-Raw
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers

@@ -73,14 +73,14 @@ No se incluyen más alternativas por falta de información contrastada.
 
 - Sesgos y alucinaciones: al ser un fine-tuning del base Qwen3.8, puede heredar sesgos presentes en los datos de entrenamiento originales y generar contenido falso o no verificado, especialmente en tareas de razonamiento complejo.
 - Contexto limitado: aunque el base soporta 262K tokens, este fine-tuning se entrenó con 32.768 tokens, por lo que su rendimiento en secuencias más largas no está garantizado.
-- Riesgo en entornos de producción: el modelo es reciente (creado en agosto de 2026) y tiene cero descargas y cero likes en HuggingFace, lo que indica falta de validación comunitaria. No se recomienda su uso en producción sin pruebas exhaustivas.
+- Riesgo en entornos de producción: el modelo es reciente (creado en agosto de 2026) y tiene cero descargas y cero likes en Hugging Face, lo que indica falta de validación comunitaria. No se recomienda su uso en producción sin pruebas exhaustivas.
 - Atribución del dataset: el dataset `markov-ai/computer-use-large` está bajo licencia CC-BY-4.0, lo que puede requerir atribución si se redistribuyen los datos o el modelo derivado.
 - Dependencia del base: cualquier limitación del modelo Qwen3.8-27B (por ejemplo, en idiomas de bajos recursos) se traslada a este fine-tuning.
 - No se especifican restricciones adicionales de uso, pero la licencia Apache 2.0 permite uso comercial y modificación, siempre que se mantenga el aviso de licencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snowman0919/qwen38-executor-27b-v1
+- Modelo en Hugging Face: https://huggingface.co/snowman0919/qwen38-executor-27b-v1
 - Variante cuantizada NVFP4: https://huggingface.co/snowman0919/qwen38-executor-27b-dspark-nvfp4-v1
 - Despliegue en FriendliAI: https://friendli.ai/models/snowman0919/qwen38-executor-27b-dspark-nvfp4-v1
 - Ficha del base Qwen3.8-27B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

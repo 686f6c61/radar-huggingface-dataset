@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p4.et` es un artefacto publicado por IBM Research en HuggingFace bajo licencia Apache 2.0. Por el propio identificador del repositorio y por sus etiquetas (`onnx`), se trata de un modelo o conjunto de parametros asociado a QAOA (Quantum Approximate Optimization Algorithm), concretamente para el problema Max-Cut con profundidad de circuito p=4. No es un modelo de lenguaje: no genera texto, no tiene tokenizador y no se le puede aplicar la comparativa habitual de LLM.
+`ibm-research/qaoa_angles.max_cut.p4.et` es un artefacto publicado por IBM Research en Hugging Face bajo licencia Apache 2.0. Por el propio identificador del repositorio y por sus etiquetas (`onnx`), se trata de un modelo o conjunto de parametros asociado a QAOA (Quantum Approximate Optimization Algorithm), concretamente para el problema Max-Cut con profundidad de circuito p=4. No es un modelo de lenguaje: no genera texto, no tiene tokenizador y no se le puede aplicar la comparativa habitual de LLM.
 
 La model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia `apache-2.0`. El repositorio ocupa 0.0 GB, tiene 0 descargas y 0 likes en el momento de la consulta, y no declara pipeline, idiomas ni resultados de evaluacion. Cualquier afirmacion sobre su contenido interno (numero de parametros, arquitectura exacta, procedimiento de entrenamiento) no puede verificarse con la informacion disponible.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qaoa_angles.max_cut.p4.et | No disponible | No aplica | Apache 2.0 | HuggingFace, 0 descargas | Artefacto ONNX sin documentacion |
+| qaoa_angles.max_cut.p4.et | No disponible | No aplica | Apache 2.0 | Hugging Face, 0 descargas | Artefacto ONNX sin documentacion |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No se han identificado |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.et
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.et
 - Pagina corporativa de IBM: https://www.ibm.com/
 - Pagina de IBM en frances: https://www.ibm.com/fr-fr
 - Wikipedia (IBM, ingles): https://en.wikipedia.org/wiki/IBM

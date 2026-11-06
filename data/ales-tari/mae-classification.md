@@ -41,7 +41,7 @@ No se ha realizado ningún entrenamiento. El checkpoint `model.safetensors` es �
 
 - Investigación de arquitecturas: el modelo permite probar variaciones en atención sparse y fusión por tensor sobre una base MAE antes de comprometerse con un entrenamiento completo. Es adecuado porque la configuración base se mantiene deliberadamente pequeña y manejable.
 - Pruebas de humo del pipeline: el checkpoint de inicialización se puede utilizar para verificar que el script `inference.py` carga correctamente los pesos y ejecuta la pasada forward sin errores, sin necesidad de un modelo entrenado.
-- Desarrollo de adaptadores personalizados: al ser una implementación propia, el repositorio sirve como base para escribir un adaptador que permita cargar el modelo con APIs genéricas de HuggingFace o PyTorch.
+- Desarrollo de adaptadores personalizados: al ser una implementación propia, el repositorio sirve como base para escribir un adaptador que permita cargar el modelo con APIs genéricas de Hugging Face o PyTorch.
 - Comparación de inicializaciones: se puede entrenar el modelo desde distintos puntos de inicialización y comparar el rendimiento final, lo que resulta útil para estudiar el efecto de la inicialización en arquitecturas MAE.
 - Docencia y aprendizaje: el código es un ejemplo compacto de una arquitectura MAE con componentes como atención sparse y normalización por instancia, adecuado para fines educativos en cursos de visión por computador.
 - Pruebas de integración: sirve para validar que el entorno de ejecución, las dependencias y los scripts de entrenamiento funcionan correctamente antes de lanzar experimentos más costosos.
@@ -68,11 +68,11 @@ No se dispone de modelos comparables en la información proporcionada. Al tratar
 - No es apto para uso en producción: se trata de un punto de partida experimental.
 - No se han realizado evaluaciones de sesgos, alucinaciones ni comportamientos adversos.
 - No hay soporte para idiomas ni para tareas de generación de texto.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - La licencia BSD-3-Clause permite uso comercial, pero la model card advierte que deben revisarse los términos de las fuentes de datos si se usa con datasets externos.
 - Los resultados de un futuro checkpoint entrenado deberán documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ales-tari/mae-classification
-- Perfil del autor en HuggingFace: https://huggingface.co/ales-tari
+- Modelo en Hugging Face: https://huggingface.co/ales-tari/mae-classification
+- Perfil del autor en Hugging Face: https://huggingface.co/ales-tari

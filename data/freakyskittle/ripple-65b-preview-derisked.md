@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ripple-65B-Preview-DERISKED | 64,8 B (denso) | 2.097.152 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Edición DWM parcial, solo BF16, requiere código custom |
-| ricursiveAI/Ripple-65B-Preview | 64,8 B (denso) | 2.097.152 | Apache 2.0 | HuggingFace (modelo base) | Sin edición DWM; incluye hermanos NVFP4, base y DFlash2 |
+| Ripple-65B-Preview-DERISKED | 64,8 B (denso) | 2.097.152 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Edición DWM parcial, solo BF16, requiere código custom |
+| ricursiveAI/Ripple-65B-Preview | 64,8 B (denso) | 2.097.152 | Apache 2.0 | Hugging Face (modelo base) | Sin edición DWM; incluye hermanos NVFP4, base y DFlash2 |
 | Alternativas de ~65 B denso con contexto largo | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/freakyskittle/Ripple-65B-Preview-DERISKED
+- Hugging Face del modelo: https://huggingface.co/freakyskittle/Ripple-65B-Preview-DERISKED
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Revisión del modelo base usada: https://huggingface.co/ricursiveAI/Ripple-65B-Preview/tree/e27e171792f303d74c048184e8259ba663cfa0d5
 - Licencia upstream: https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/main/LICENSE

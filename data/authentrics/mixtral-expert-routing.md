@@ -95,11 +95,11 @@ En cuanto a la categoria real del artefacto (herramientas de interpretabilidad),
 - Coste de hardware: reproducir el analisis sobre Mixtral-8x7B exige memoria muy superior a la de una GPU de consumo en precision completa.
 - Idiomas y sesgos: al no publicar el artefacto datos propios de entrenamiento ni evaluacion multilingue, no puede caracterizarse el comportamiento linguistico ni los sesgos; estos serian los del modelo base.
 - Licencia: el repositorio se declara bajo Apache 2.0, lo que en principio permite uso comercial, pero al no incluir pesos la licencia afecta al codigo y a los resultados de analisis, no a un modelo utilizable.
-- Contenido de la ficha: la informacion de esta ficha proviene exclusivamente de la model card y de los metadatos de HuggingFace; los resultados de la busqueda web realizada no contenian enlaces relevantes sobre este modelo.
+- Contenido de la ficha: la informacion de esta ficha proviene exclusivamente de la model card y de los metadatos de Hugging Face; los resultados de la busqueda web realizada no contenian enlaces relevantes sobre este modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/authentrics/mixtral-expert-routing
+- Repositorio en Hugging Face: https://huggingface.co/authentrics/mixtral-expert-routing
 - Modelo base: https://huggingface.co/mistralai/Mixtral-8x7B-v0.1
 - Codigo y resultados del analisis: https://github.com/Authentrics-ai/authentrics-model-analysis-experiments
 - Ejemplos y guia de usuario del SDK: https://github.com/Authentrics-ai/authentrics-analysis-examples

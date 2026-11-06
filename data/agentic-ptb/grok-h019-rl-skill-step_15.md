@@ -75,6 +75,6 @@ La comparativa se limita al modelo base y a otros checkpoints del mismo sweep, y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h019.rl-skill.step_15
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h019.rl-skill.step_15
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

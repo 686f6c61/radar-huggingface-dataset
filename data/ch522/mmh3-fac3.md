@@ -64,5 +64,5 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CH522/MMh3-Fac3
+- Hugging Face: https://huggingface.co/CH522/MMh3-Fac3
 - Repositorio de ComfyUI relacionado con MMH3 (encontrado en la búsqueda web): https://github.com/bbaudio-2025/Comfyui-MMH3-UltimateUpscale

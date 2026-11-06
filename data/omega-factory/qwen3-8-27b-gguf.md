@@ -124,7 +124,7 @@ Comparativa con modelos comparables de terceros (mismo tamanio o misma tarea): n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Omega-Factory/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Omega-Factory/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pagina oficial del autor con las tablas completas de comparacion de precision y los recibos: https://omega-factory.ai/models/qwen3.8-27b-gguf-v1
 - Repositorio llama.cpp (motor de inferencia GGUF): https://github.com/ggml-org/llama.cpp

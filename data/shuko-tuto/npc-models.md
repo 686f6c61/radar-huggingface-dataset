@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`npc-models` es un repositorio de HuggingFace creado por `shuko-tuto` que empaqueta un conjunto de modelos listos para ejecutar en local, en la máquina del jugador, con el objetivo de que un personaje de videojuego (NPC) pueda escuchar, entender y responder. No es un modelo único, sino una colección de cinco componentes integrados: Silero VAD para detección de actividad de voz, Whisper tiny y Whisper base para reconocimiento de voz multilingüe, GigaAM v3 CTC para reconocimiento de voz en ruso, y Qwen3-4B como modelo de lenguaje para generar respuestas. La arquitectura es heterogénea: redes recurrentes (Silero), transformers encoder-decoder (Whisper), conformers CTC (GigaAM) y transformers decoder-only (Qwen3). El modelo de lenguaje, Qwen3-4B, tiene aproximadamente 4.022.468.096 parámetros y se distribuye cuantizado en Q4_K_M, ocupando 2.5 GB. La longitud de contexto no se especifica en la documentación.
+`npc-models` es un repositorio de Hugging Face creado por `shuko-tuto` que empaqueta un conjunto de modelos listos para ejecutar en local, en la máquina del jugador, con el objetivo de que un personaje de videojuego (NPC) pueda escuchar, entender y responder. No es un modelo único, sino una colección de cinco componentes integrados: Silero VAD para detección de actividad de voz, Whisper tiny y Whisper base para reconocimiento de voz multilingüe, GigaAM v3 CTC para reconocimiento de voz en ruso, y Qwen3-4B como modelo de lenguaje para generar respuestas. La arquitectura es heterogénea: redes recurrentes (Silero), transformers encoder-decoder (Whisper), conformers CTC (GigaAM) y transformers decoder-only (Qwen3). El modelo de lenguaje, Qwen3-4B, tiene aproximadamente 4.022.468.096 parámetros y se distribuye cuantizado en Q4_K_M, ocupando 2.5 GB. La longitud de contexto no se especifica en la documentación.
 
 El problema que resuelve es la ejecución completa de un pipeline de voz a texto y generación de texto sin dependencia de servidores externos, lo que resulta crítico para aplicaciones de juego en las que la latencia y la privacidad importan. La relevancia actual radica en que empaqueta modelos de voz y lenguaje optimizados para dispositivos locales mediante formatos ncnn y GGUF, incluyendo además las licencias de cada componente junto a los archivos, para que un desarrollador pueda copiar una carpeta al lado de un juego sin preocuparse por los términos legales.
 
@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo único, sino un conjunto de mode
 - GigaAM v3 solo reconoce ruso, por lo que no es útil para otros idiomas.
 - Whisper tiny y base tienen menor precisión que modelos más grandes; el error de conversión de GigaAM en half precision es 8.5e-3 en log-probabilidades, lo que puede afectar la exactitud del texto transcrito.
 - Licencias mixtas: Whisper está publicado bajo MIT y Apache-2.0, y ambas licencias deben respetarse. El repositorio se etiqueta como MIT, pero los componentes individuales tienen licencias distintas.
-- La metadata de HuggingFace no especifica idiomas, lo que puede dificultar la búsqueda del modelo.
+- La metadata de Hugging Face no especifica idiomas, lo que puede dificultar la búsqueda del modelo.
 - No se han publicado benchmarks de calidad, por lo que el rendimiento real en tareas no está validado.
 - Qwen3-4B es un espejo del GGUF oficial sin cambios, por lo que las limitaciones del modelo original aplican.
 - Ejecución local: el rendimiento depende del hardware del usuario; en CPUs sin aceleración, la latencia puede ser alta.

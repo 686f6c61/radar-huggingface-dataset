@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-9B-oQ4e-mtp es un checkpoint cuantizado a 4 bits del modelo Ornith-1.5-9B, publicado por el usuario scottlowry en HuggingFace. La model card indica que la cuantizacion se ha realizado con oQ (oMLX v0.7.1.dev1), una herramienta de cuantizacion de precision mixta, y que el tipo de modelo base es `qwen3_5`, lo que apunta a un transformer denso de la familia Qwen3.5. El repo pesa 6,2 GB y el recuento real de parametros en los ficheros safetensors es de 9.653.104.368 (aproximadamente 9,65 mil millones).
+Ornith-1.5-9B-oQ4e-mtp es un checkpoint cuantizado a 4 bits del modelo Ornith-1.5-9B, publicado por el usuario scottlowry en Hugging Face. La model card indica que la cuantizacion se ha realizado con oQ (oMLX v0.7.1.dev1), una herramienta de cuantizacion de precision mixta, y que el tipo de modelo base es `qwen3_5`, lo que apunta a un transformer denso de la familia Qwen3.5. El repo pesa 6,2 GB y el recuento real de parametros en los ficheros safetensors es de 9.653.104.368 (aproximadamente 9,65 mil millones).
 
 Se trata de una publicacion con cero descargas y cero likes en el momento de la consulta, creada y actualizada el 11 de octubre de 2026, y no declara licencia ni idiomas soportados. Esto la situa como un artefacto de distribucion reciente, orientado especificamente a ejecucion local mediante MLX, la libreria de Apple para inferencia en silicio de la serie M. No se trata por tanto de un modelo nuevo entrenado desde cero, sino de una conversion/cuantizacion de pesos pensada para reducir el consumo de memoria sin salir del ecosistema Apple.
 
@@ -27,7 +27,7 @@ Su relevancia practica es acotada pero concreta: permite ejecutar un modelo de ~
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna mas alla del campo `model_type: qwen3_5` de la model card y de la etiqueta `qwen3_5` en los tags de HuggingFace. No se especifica si se trata de un transformer denso convencional, de una variante con atencion lineal, de un modelo hibrido o de una arquitectura con mezcla de expertos. Tampoco se documenta el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el mecanismo de atencion empleado.
+La informacion disponible no describe la arquitectura interna mas alla del campo `model_type: qwen3_5` de la model card y de la etiqueta `qwen3_5` en los tags de Hugging Face. No se especifica si se trata de un transformer denso convencional, de una variante con atencion lineal, de un modelo hibrido o de una arquitectura con mezcla de expertos. Tampoco se documenta el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el mecanismo de atencion empleado.
 
 Respecto al entrenamiento, no hay ningun dato en la informacion proporcionada: no se indica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de ajuste fino supervisado, RLHF o DPO. El sufijo `mtp` del nombre del repositorio no aparece explicado en la model card, por lo que se desconoce a que hace referencia exactamente.
 
@@ -92,5 +92,5 @@ No se dispone de datos de benchmarks ni de especificaciones completas del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ4e-mtp
 - Repositorio de oQ / oMLX (herramienta de cuantizacion citada en la model card): https://github.com/jundot/omlx

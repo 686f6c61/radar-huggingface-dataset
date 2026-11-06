@@ -78,7 +78,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La unica re
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-pick3-baseline-lora-...-step5000 | Adaptador LoRA rank 32 sobre π0.5 | no disponible | no disponible | no disponible | Repositorio en HuggingFace, 0 descargas, 0 likes |
+| pi05-pick3-baseline-lora-...-step5000 | Adaptador LoRA rank 32 sobre π0.5 | no disponible | no disponible | no disponible | Repositorio en Hugging Face, 0 descargas, 0 likes |
 | π0.5 (modelo base) | Base del ajuste fino | no disponible | no disponible | no disponible | No se dispone de informacion en esta busqueda |
 | Otros modelos de robotica comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ Cabe senalar que el autor conserva checkpoints hermanos de la misma ejecucion (p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step5000
+- Repositorio Hugging Face: https://huggingface.co/fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step5000
 - Archivo de respaldo de checkpoints (dataset): https://huggingface.co/datasets/fm-dev/pi05-checkpoint-backups/tree/main/checkpoints/r2
 - Fichero de configuracion de entrenamiento: `training_config.json` (incluido en el repositorio)
 - Codigo de carga e inferencia: `load_model.py` (incluido en el repositorio)

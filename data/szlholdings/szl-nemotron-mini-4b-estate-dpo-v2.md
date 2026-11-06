@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| SZL-Nemotron-Mini-4B-Estate-DPO-v2 | 4,19 B | No disponible | `other` | Remediación DPO de abstención/citas | HuggingFace, 0 descargas |
-| SZL-Nemotron-Mini-4B-Estate-DPO-v1 | 4,19 B | No disponible | `other` | Modelo padre, "full-stack flagship" | HuggingFace |
-| Nemotron Mini 4B (NVIDIA, familia base) | ~4 B | No disponible en esta ficha | No disponible en esta ficha | Modelo base de propósito general | HuggingFace / NVIDIA NGC |
+| SZL-Nemotron-Mini-4B-Estate-DPO-v2 | 4,19 B | No disponible | `other` | Remediación DPO de abstención/citas | Hugging Face, 0 descargas |
+| SZL-Nemotron-Mini-4B-Estate-DPO-v1 | 4,19 B | No disponible | `other` | Modelo padre, "full-stack flagship" | Hugging Face |
+| Nemotron Mini 4B (NVIDIA, familia base) | ~4 B | No disponible en esta ficha | No disponible en esta ficha | Modelo base de propósito general | Hugging Face / NVIDIA NGC |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la información proporcionada; la comparación se limita a parámetros, licencia y enfoque declarado.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v2
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v2
 - Modelo base: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v1
 - Dataset DPO: https://huggingface.co/datasets/SZLHOLDINGS/doctrine-abstention-dpo-v2
 - Recibos de evaluación: https://huggingface.co/SZLHOLDINGS/model-eval-receipts

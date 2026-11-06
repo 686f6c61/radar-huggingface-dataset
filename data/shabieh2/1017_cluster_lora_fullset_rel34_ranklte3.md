@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1017_cluster_lora_fullset_rel34_ranklte3` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario shabieh2, derivado del modelo `unsloth/Muse-Glimmer-30B`. No se trata de un modelo entrenado desde cero, sino de una especialización de un modelo base de la familia Muse-Glimmer, distribuida bajo licencia Apache 2.0 y orientada exclusivamente a inglés. La model card es mínima: identifica al autor, la licencia y el modelo de partida, y atribuye el entrenamiento al uso de Unsloth, sin aportar detalles sobre el dataset, el procedimiento o los hiperparámetros.
+`shabieh2/1017_cluster_lora_fullset_rel34_ranklte3` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario shabieh2, derivado del modelo `unsloth/Muse-Glimmer-30B`. No se trata de un modelo entrenado desde cero, sino de una especialización de un modelo base de la familia Muse-Glimmer, distribuida bajo licencia Apache 2.0 y orientada exclusivamente a inglés. La model card es mínima: identifica al autor, la licencia y el modelo de partida, y atribuye el entrenamiento al uso de Unsloth, sin aportar detalles sobre el dataset, el procedimiento o los hiperparámetros.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela. El repositorio no incluye resultados de evaluación, no documenta el corpus de entrenamiento y no describe el pipeline de alineación. Además, el nombre del identificador (`cluster_lora_fullset_rel34_ranklte3`) sugiere un experimento de ajuste con LoRA de rango bajo (rank ≤ 3) sobre un conjunto completo de datos, lo que apunta a un artefacto de investigación interna más que a un modelo listo para producción.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, la unica referencia tecnica es la mencion a Unsloth,
 - Pruebas de humo de infraestructura de inferencia: al ser un artefacto pequeno y poco pesado en disco, permite validar despliegues con TGI o vLLM antes de mover modelos mayores.
 - Generacion de texto en ingles para prototipos internos: siempre que se valide previamente la calidad real del ajuste frente al modelo base, puede usarse en tareas de redaccion asistida de baja criticidad.
 - Base para nuevos ajustes en cascada: un adaptador LoRA puede fusionarse o recombinarse para experimentar con especializaciones posteriores sobre el mismo modelo base.
-- Docencia y formacion tecnica: ejemplo practico de publicacion de un fine-tune en HuggingFace, con licencia permisiva, para ilustrar el ciclo completo de subida de pesos y metadatos.
+- Docencia y formacion tecnica: ejemplo practico de publicacion de un fine-tune en Hugging Face, con licencia permisiva, para ilustrar el ciclo completo de subida de pesos y metadatos.
 
 ## Benchmarks y rendimiento
 
@@ -88,7 +88,7 @@ Los datos de los modelos alternativos provienen de sus respectivas model cards p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_ranklte3
+- Repositorio en Hugging Face: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_ranklte3
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL (tag declarado): https://github.com/huggingface/trl

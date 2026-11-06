@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje de gran tamano presentado por el usuario ssfdafag567 en HuggingFace como un repositorio de prueba (TestRepo). La model card describe una actualizacion significativa respecto a una version anterior, con mejoras sustanciales en razonamiento profundo, capacidad de inferencia y reduccion de alucinaciones. Segun el autor, el modelo alcanza un 87,5% de precision en el conjunto AIME 2025, frente al 70% de la version previa, gracias a un aumento en los tokens de pensamiento dedicados a cada problema (de 12K a 23K tokens por pregunta).
+MyAwesomeModel es un modelo de lenguaje de gran tamano presentado por el usuario ssfdafag567 en Hugging Face como un repositorio de prueba (TestRepo). La model card describe una actualizacion significativa respecto a una version anterior, con mejoras sustanciales en razonamiento profundo, capacidad de inferencia y reduccion de alucinaciones. Segun el autor, el modelo alcanza un 87,5% de precision en el conjunto AIME 2025, frente al 70% de la version previa, gracias a un aumento en los tokens de pensamiento dedicados a cada problema (de 12K a 23K tokens por pregunta).
 
 El repositorio, sin embargo, no contiene archivos de peso (0.0 GB) y no se proporcionan datos tecnicos esenciales como arquitectura, numero de parametros, longitud de contexto ni idiomas soportados. La licencia es MIT y la libreria declarada es transformers. La informacion disponible se limita a la model card, que incluye una tabla de benchmarks comparativos con otros modelos (Model1, Model2, Model1-v2) y recomendaciones de uso, como un system prompt especifico y una temperatura sugerida de 0.6. Dado que el repo parece ser una prueba o un placeholder, la ficha debe interpretarse con cautela: los datos de rendimiento provienen exclusivamente de lo declarado por el autor y no se han podido verificar de forma independiente.
 
@@ -91,5 +91,5 @@ La model card compara MyAwesomeModel con tres modelos anonimos (Model1, Model2, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssfdafag567/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/ssfdafag567/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (paper, blog, repositorio de codigo, demo) en la informacion disponible.

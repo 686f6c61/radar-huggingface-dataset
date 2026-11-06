@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mlp-cifar10` es un perceptron multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10 con etiquetas limpias, publicado por el usuario adityasingh718 en HuggingFace. No se trata de un modelo de lenguaje ni de un transformer: es una red neuronal densa de clasificacion de imagenes cuyo unico artefacto distribuido son los pesos y sesgos guardados en formato NumPy NPZ, junto con las estadisticas de preprocesado (media y desviacion tipica) del conjunto de entrenamiento completo.
+`mlp-cifar10` es un perceptron multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10 con etiquetas limpias, publicado por el usuario adityasingh718 en Hugging Face. No se trata de un modelo de lenguaje ni de un transformer: es una red neuronal densa de clasificacion de imagenes cuyo unico artefacto distribuido son los pesos y sesgos guardados en formato NumPy NPZ, junto con las estadisticas de preprocesado (media y desviacion tipica) del conjunto de entrenamiento completo.
 
 El modelo resuelve la tarea clasica de clasificacion de imagenes en 10 categorias (avion, automovil, pajaro, gato, ciervo, perro, rana, caballo, barco y camion) a partir de imagenes de 32x32 pixeles. Su relevancia es fundamentalmente educativa o de referencia: sirve como linea base reproducible para experimentos de vision por computador, comparaciones de tecnicas de entrenamiento o estudios sobre ruido en etiquetas, dado que el autor enfatiza el uso de "clean labels".
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| adityasingh718/mlp-cifar10 | MLP (NumPy) | no disponible | 32x32x3 pixeles | MIT | HuggingFace |
+| adityasingh718/mlp-cifar10 | MLP (NumPy) | no disponible | 32x32x3 pixeles | MIT | Hugging Face |
 | CNN sobre CIFAR-10 (referencia tipica) | CNN | variable | 32x32x3 pixeles | variable | Multiples repos |
 | ViT pequeno sobre CIFAR-10 | Transformer | variable | 32x32x3 pixeles | variable | Multiples repos |
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento del modelo para establecer una comparacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adityasingh718/mlp-cifar10
+- Hugging Face: https://huggingface.co/adityasingh718/mlp-cifar10
 - Dataset CIFAR-10 (referencia): https://www.cs.toronto.edu/~kriz/cifar.html

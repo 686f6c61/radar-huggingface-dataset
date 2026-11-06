@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`willopcbeta/gemma-4-E2B-it-qat-mobile-ONNX` es un repositorio de HuggingFace publicado el 16 de septiembre de 2026 por el usuario `willopcbeta`, que distribuye una conversión al formato ONNX de un modelo de la familia Gemma. Según las etiquetas del repositorio, el modelo base es `google/gemma-4-E2B-it-qat-mobile-transformers`, del que este repositorio sería una versión cuantizada (etiqueta `quantized`) y exportada a ONNX. El pipeline declarado es `any-to-any`, lo que sugiere un modelo multimodal de entrada y salida heterogéneas, y la combinación de los sufijos `it` (instruction tuned), `qat` (quantization aware training) y `mobile` apunta a un modelo ajustado por instrucciones y optimizado para despliegue en dispositivos con recursos limitados.
+`willopcbeta/gemma-4-E2B-it-qat-mobile-ONNX` es un repositorio de Hugging Face publicado el 16 de septiembre de 2026 por el usuario `willopcbeta`, que distribuye una conversión al formato ONNX de un modelo de la familia Gemma. Según las etiquetas del repositorio, el modelo base es `google/gemma-4-E2B-it-qat-mobile-transformers`, del que este repositorio sería una versión cuantizada (etiqueta `quantized`) y exportada a ONNX. El pipeline declarado es `any-to-any`, lo que sugiere un modelo multimodal de entrada y salida heterogéneas, y la combinación de los sufijos `it` (instruction tuned), `qat` (quantization aware training) y `mobile` apunta a un modelo ajustado por instrucciones y optimizado para despliegue en dispositivos con recursos limitados.
 
 El interés de este repositorio es, en principio, práctico: ofrece pesos en un formato directamente consumible por el ecosistema ONNX Runtime, lo que facilita la inferencia en CPU, en GPUs de consumo y en plataformas móviles sin depender de PyTorch. Sin embargo, el repositorio no incluye tarjeta de modelo con contenido técnico: únicamente presenta etiquetas, y en el momento de redactar esta ficha acumula 0 descargas y 0 me gusta, por lo que no hay evidencia pública de validación, ni resultados de evaluación, ni documentación sobre el proceso de exportación.
 
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento de este repositorio ni de modelos alternat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/willopcbeta/gemma-4-E2B-it-qat-mobile-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/willopcbeta/gemma-4-E2B-it-qat-mobile-ONNX
 - Modelo base declarado en las etiquetas: https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers
 - Documentación de ONNX Runtime: https://onnxruntime.ai/docs/
 - Documentación de ONNX Runtime Mobile: https://onnxruntime.ai/docs/build/custom.html

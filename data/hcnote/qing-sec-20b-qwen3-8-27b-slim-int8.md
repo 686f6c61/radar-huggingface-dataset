@@ -24,7 +24,7 @@ El tag de arquitectura del repositorio es `qwen3_5_text`, coherente con la heren
 | Modelo base | Qwen3.8-27B, podado de forma estructurada a 19,29 B y afinado en dominio de ciberseguridad |
 | Desarrollador | Xinjiang Huancheng Network Security Technology Co., Ltd. (新疆幻城网安科技有限责任公司) |
 | Fecha de creacion | 2026-09-12 |
-| Descargas / likes en HuggingFace | 0 / 1 |
+| Descargas / likes en Hugging Face | 0 / 1 |
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ No se dispone de informacion sobre modelos comparables de terceros. La comparaci
 
 | Modelo | Parametros | Cuantizacion | Tamano de pesos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qing-Sec-20B-Slim-INT8 (este repo) | 19,29 B | int8_weight_only | ~19,4 GB | no disponible | no disponible | HuggingFace, 0 descargas |
+| Qing-Sec-20B-Slim-INT8 (este repo) | 19,29 B | int8_weight_only | ~19,4 GB | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qing-Sec-20B-Slim-INT4 | 19,29 B | int4_weight_only_group128 | ~11 GB | no disponible | no disponible | repositorio hermano del autor |
 | Qing-Sec-20B-Slim-FP8 | 19,29 B | float8_weight_only | ~19,4 GB | no disponible | no disponible | repositorio hermano del autor |
 | Qwen3.8-27B (modelo base) | 27 B | bf16 (sin cuantizar) | no disponible | no disponible | no disponible | modelo de origen declarado por el autor |
@@ -98,7 +98,7 @@ Comparativas con modelos de terceros de tamano o tarea equivalente: no disponibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim-INT8
+- Repositorio en Hugging Face: https://huggingface.co/hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim-INT8
 - Model card principal y evaluaciones (ModelScope): https://modelscope.cn/models/hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim
 - Sitio web del autor: https://hcnote.cn
 - Pasarela publica de seguridad del autor: https://api.hcnsec.cn/

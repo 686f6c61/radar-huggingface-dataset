@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación derivado de Llama-3.1-8B-Instruct, publicado por el usuario sungjuncho en HuggingFace, en el que se ha aplicado una técnica de *machine unlearning* sobre un ajuste fino previo con el dataset TOFU-para. No es un modelo de propósito general nuevo ni un lanzamiento de Meta, sino un artefacto experimental dentro de una colección (TOFU-para) que estudia la diferencia entre *untraining* (eliminar las muestras concretas que se dieron a un método de desaprendizaje) y *unlearning* (eliminar el conocimiento subyacente, que el modelo también aprendió en otras formulaciones). El checkpoint parte de `Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0`, un Llama-3.1-8B-Instruct ajustado sobre la totalidad de TOFU más dos versiones parafraseadas, y se le aplica GradDiff del repositorio `open-unlearning` de locuslab.
+Este modelo es un checkpoint de investigación derivado de Llama-3.1-8B-Instruct, publicado por el usuario sungjuncho en Hugging Face, en el que se ha aplicado una técnica de *machine unlearning* sobre un ajuste fino previo con el dataset TOFU-para. No es un modelo de propósito general nuevo ni un lanzamiento de Meta, sino un artefacto experimental dentro de una colección (TOFU-para) que estudia la diferencia entre *untraining* (eliminar las muestras concretas que se dieron a un método de desaprendizaje) y *unlearning* (eliminar el conocimiento subyacente, que el modelo también aprendió en otras formulaciones). El checkpoint parte de `Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0`, un Llama-3.1-8B-Instruct ajustado sobre la totalidad de TOFU más dos versiones parafraseadas, y se le aplica GradDiff del repositorio `open-unlearning` de locuslab.
 
 La arquitectura es la de Llama-3.1-8B-Instruct: un transformer decoder-only denso de 8.030.261.248 parámetros, con licencia Llama 3.1 Community License. El contexto heredado es de 128.000 tokens (característica estándar de la familia Llama 3.1), aunque la model card no lo reafirme explícitamente. El conjunto de olvido (*forget set*) son las 400 pares QA originales de forget10; el conjunto de retención son retain90 más para1 y para2 (10.800 ejemplos), con semilla 0 tanto en el modelo de partida como en la ejecución de desaprendizaje.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`...-unlearned-forget10-graddiff-seed0`) | 8,03B | 128k (heredado) | llama3.1 | Llama 3.1 + TOFU-para + GradDiff | HuggingFace, 284 descargas |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03B | 128k (heredado) | llama3.1 | Llama 3.1 + TOFU-para x2 full, sin desaprendizaje | HuggingFace |
-| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03B | 128k (heredado) | llama3.1 | Modelo de referencia retain90 para evaluación | HuggingFace |
-| Llama-3.1-8B-Instruct (Meta) | 8,03B | 128k | llama3.1 | Modelo base de propósito general | HuggingFace, ampliamente disponible |
+| Este modelo (`...-unlearned-forget10-graddiff-seed0`) | 8,03B | 128k (heredado) | llama3.1 | Llama 3.1 + TOFU-para + GradDiff | Hugging Face, 284 descargas |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03B | 128k (heredado) | llama3.1 | Llama 3.1 + TOFU-para x2 full, sin desaprendizaje | Hugging Face |
+| `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03B | 128k (heredado) | llama3.1 | Modelo de referencia retain90 para evaluación | Hugging Face |
+| Llama-3.1-8B-Instruct (Meta) | 8,03B | 128k | llama3.1 | Modelo base de propósito general | Hugging Face, ampliamente disponible |
 
 No se dispone de comparación con otros métodos de unlearning (NPO, SimNPO, etc.) en la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de comparación con otros métodos de unlearning (NPO, SimNPO, etc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-graddiff-seed0
+- Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-graddiff-seed0
 - Modelo base: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0
 - Modelo de referencia retain90: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para

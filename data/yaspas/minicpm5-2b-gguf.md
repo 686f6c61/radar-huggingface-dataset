@@ -83,7 +83,7 @@ Los datos de terceros que aparecen en esta tabla proceden de las fichas pública
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato / disponibilidad | Notas |
 |---|---|---|---|---|---|---|
 | MiniCPM5-2B-GGUF (este repositorio) | 2,52 B | No disponible | en, zh | Apache-2.0 | GGUF; conversión de terceros | SOTA declarado en clase 2B por el autor; sin benchmarks numéricos publicados |
-| MiniCPM5-1B | No disponible (modelo de 1B de la misma serie) | No disponible | No disponible | Apache-2.0 (según la serie) | Pesos originales en HuggingFace (openbmb) | Predecesor directo, misma receta de entrenamiento |
+| MiniCPM5-1B | No disponible (modelo de 1B de la misma serie) | No disponible | No disponible | Apache-2.0 (según la serie) | Pesos originales en Hugging Face (openbmb) | Predecesor directo, misma receta de entrenamiento |
 | Qwen3-1.7B | 1,7 B | 32.768 tokens nativos | Multilingüe amplio | Apache-2.0 | safetensors, GGUF, múltiples runtimes | Alternativa frecuente en el segmento de 1-2 B |
 | Llama-3.2-3B | 3,2 B | 128.000 tokens | Multilingüe (8 idiomas declarados) | Licencia comunitaria de Llama 3.2 | safetensors, GGUF | Referencia de clase 3B con licencia no Apache |
 

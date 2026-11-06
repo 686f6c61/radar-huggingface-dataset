@@ -92,7 +92,7 @@ Nota: las versiones base y midtrain comparten arquitectura y tamaño; la diferen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Ling-3.0-flash-base-midtrain-ROCmFP4-COHERENT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Ling-3.0-flash-base-midtrain-ROCmFP4-COHERENT-GGUF
 - Modelo base original: https://huggingface.co/inclusionAI/Ling-3.0-flash-base-midtrain
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX
 - Documentación de la serie Ling: https://developer.ant-ling.com/en/docs/models/ling/

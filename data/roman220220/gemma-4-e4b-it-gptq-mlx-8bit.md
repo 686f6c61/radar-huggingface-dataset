@@ -98,7 +98,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roman220220/gemma-4-E4B-it-gptq-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/roman220220/gemma-4-E4B-it-gptq-mlx-8bit
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Codigo de inferencia MLX (gemma4.py, gemma4_vision.py, gemma4_audio.py): https://github.com/ipsupport-llc/mlx-lm
 - Pipeline de cuantizacion: https://github.com/rromenskyi/quant-ternary/tree/main/gemma4-quant

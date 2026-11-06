@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`marcoferr/swin-t-demo97` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura Swin Transformer, etiquetada por el autor como "Swin T for Generation". No es un modelo entrenado ni un release listo para producción: la propia model card lo describe como un punto de partida experimental pensado para revisión de código, smoke tests y experimentos pequeños y controlados. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para pruebas de humo, no como un checkpoint con resultados de benchmark.
+`marcoferr/swin-t-demo97` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura Swin Transformer, etiquetada por el autor como "Swin T for Generation". No es un modelo entrenado ni un release listo para producción: la propia model card lo describe como un punto de partida experimental pensado para revisión de código, smoke tests y experimentos pequeños y controlados. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para pruebas de humo, no como un checkpoint con resultados de benchmark.
 
 El dato más relevante para evaluarlo es su tamaño real: 16.576 parámetros totales según el fichero de safetensors, lo que equivale a unos 66 KB en fp32. Se trata, por tanto, de un artefacto de escala microscópica, muy lejos de cualquier Swin-T publicado (que ronda las decenas de millones de parámetros). El autor declara la escala "huge" en la configuración, pero esa etiqueta no se corresponde con el número de parámetros registrado.
 
@@ -91,6 +91,6 @@ Los valores de las alternativas son cifras de referencia de sus proyectos oficia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marcoferr/swin-t-demo97
+- Repositorio en Hugging Face: https://huggingface.co/marcoferr/swin-t-demo97
 - Paper original de Swin Transformer (referencia de la arquitectura, no citado en la información proporcionada): https://arxiv.org/abs/2103.14030
 - Los resultados de la búsqueda web no aportaron enlaces relevantes al modelo: solo devolvieron páginas de inicio de servicios de Google (google.fr, Google Images, Google Earth, Google Drive, Google Translate), sin relación con este repositorio.

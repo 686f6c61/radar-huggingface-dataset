@@ -8,7 +8,7 @@ Cada fichero del repositorio corresponde a uno de tres tipos de artefacto: un cl
 
 La relevancia actual del repositorio es doble. Por un lado, aborda dos problemas clásicos de la epigenómica computacional: la esparsidad extrema de los datos de metilación por célula única y la mezcla de señales en muestras bulk, para lo que ofrece imputación y deconvolución respectivamente. Por otro, su modelo de distribución es reproducible por diseño: las etiquetas (*tags*) son aditivas y nunca se mueven, y un binario antiguo sigue descargando exactamente la versión de los modelos con la que fue compilado. El repositorio ocupa 16,1 GB y se publica bajo licencia AGPL-3.0.
 
-Conviene advertir de entrada que la model card es deliberadamente mínima: el propio autor indica que la tabla de modelos, la distinción entre clasificadores de banco y de árbol de enrutado, las referencias de deconvolución y la regla sin parámetros `--framework violation` se mantienen en la documentación de methscope-cli, no en HuggingFace. En consecuencia, la mayoría de los metadatos técnicos solicitados en esta ficha (recuento de parámetros, arquitectura interna, precisión, requisitos de hardware) no están disponibles en la información proporcionada.
+Conviene advertir de entrada que la model card es deliberadamente mínima: el propio autor indica que la tabla de modelos, la distinción entre clasificadores de banco y de árbol de enrutado, las referencias de deconvolución y la regla sin parámetros `--framework violation` se mantienen en la documentación de methscope-cli, no en Hugging Face. En consecuencia, la mayoría de los metadatos técnicos solicitados en esta ficha (recuento de parámetros, arquitectura interna, precisión, requisitos de hardware) no están disponibles en la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -27,8 +27,8 @@ Conviene advertir de entrada que la model card es deliberadamente mínima: el pr
 | Tareas declaradas | dna-methylation, methylation, wgbs, single-cell, imputation, deconvolution, cell-type-annotation |
 | Tamano del repositorio | 16,1 GB |
 | Verificacion de integridad | digest SHA-256 compilado en el binario; `SHA256SUMS` por etiqueta |
-| Fecha de creacion (segun HuggingFace) | 2026-07-24 |
-| Fecha de actualizacion (segun HuggingFace) | 2026-09-12 |
+| Fecha de creacion (segun Hugging Face) | 2026-07-24 |
+| Fecha de actualizacion (segun Hugging Face) | 2026-09-12 |
 | Descargas / likes en el momento de la consulta | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ En el plano de la distribucion, si hay informacion concreta y verificable: `meth
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de HuggingFace no incluye tablas de precision, sensibilidad, especificidad ni comparaciones cuantitativas, y remite explicitamente a la pestana Models de la documentacion de methscope-cli para conocer "que es cada modelo, como se construyo y con que precision cuenta". La unica afirmacion de rendimiento recogida es cualitativa: la herramienta se describe como de analisis "ultrarrapido" de metilomas dispersos, sin cifras asociadas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de Hugging Face no incluye tablas de precision, sensibilidad, especificidad ni comparaciones cuantitativas, y remite explicitamente a la pestana Models de la documentacion de methscope-cli para conocer "que es cada modelo, como se construyo y con que precision cuenta". La unica afirmacion de rendimiento recogida es cualitativa: la herramienta se describe como de analisis "ultrarrapido" de metilomas dispersos, sin cifras asociadas.
 
 ## Requisitos de hardware
 
@@ -83,7 +83,7 @@ La informacion proporcionada no incluye modelos alternativos ni resultados cuant
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|---|
-| zhou-lab/methscope | Clasificacion, imputacion y deconvolucion de metilacion de ADN | no disponible | no disponible | AGPL-3.0 | HuggingFace (16,1 GB) + CLI en GitHub | no disponible |
+| zhou-lab/methscope | Clasificacion, imputacion y deconvolucion de metilacion de ADN | no disponible | no disponible | AGPL-3.0 | Hugging Face (16,1 GB) + CLI en GitHub | no disponible |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ Nota: la busqueda web asociada a esta consulta no devolvio resultados relacionad
 
 ## Limitaciones y advertencias
 
-- Metadatos incompletos: la model card es minima por decision explicita del autor, de modo que arquitectura, parametros, datos de entrenamiento y precision no se pueden verificar desde HuggingFace. Cualquier evaluacion seria exige consultar la documentacion del CLI.
+- Metadatos incompletos: la model card es minima por decision explicita del autor, de modo que arquitectura, parametros, datos de entrenamiento y precision no se pueden verificar desde Hugging Face. Cualquier evaluacion seria exige consultar la documentacion del CLI.
 - Ausencia de benchmarks publicos: no hay metricas de rendimiento en la informacion disponible, lo que impide estimar la calidad de la anotacion, la imputacion o la deconvolucion antes de desplegarlas.
 - Sesgos conocidos: no se documenta ningun analisis de sesgo. En este dominio, el sesgo relevante suele proceder de la composicion de los datos de referencia (tipos celulares, tejidos, poblaciones y plataformas sobrerrepresentados), pero no se aporta informacion sobre el dataset de entrenamiento ni sobre su cobertura.
 - Riesgo de error en las predicciones: la imputacion y la deconvolucion son tareas de reconstruccion sobre datos intrinsecamente incompletos; la informacion disponible no cuantifica la incertidumbre ni los modos de fallo, por lo que no se recomienda su uso clinico sin validacion independiente.
@@ -99,12 +99,12 @@ Nota: la busqueda web asociada a esta consulta no devolvio resultados relacionad
 - Restricciones de licencia: AGPL-3.0 es una licencia copyleft fuerte; su uso como servicio en red obliga a poner a disposicion el codigo fuente correspondiente en los terminos de la licencia. Conviene revisar las implicaciones antes de integrarlo en productos propietarios o en servicios ofrecidos a terceros.
 - Dependencia del binario correcto: los modelos estan anclados a etiquetas y digests concretos. Usar un `methscope` con una version distinta de la prevista puede impedir la descarga de los modelos documentados, aunque la verificacion por digest evita usar ficheros manipulados.
 - Adopcion incipiente: en el momento de la consulta el repositorio registra 0 descargas y 0 likes, sin senales de validacion por parte de la comunidad.
-- Coherencia temporal de los metadatos: las fechas de creacion y actualizacion que reporta HuggingFace (2026) resultan anomales y no se corresponden con un historial verificable de publicaciones o citas.
+- Coherencia temporal de los metadatos: las fechas de creacion y actualizacion que reporta Hugging Face (2026) resultan anomales y no se corresponden con un historial verificable de publicaciones o citas.
 - Ausencia de soporte de frameworks habituales: no hay formatos compatibles con vLLM, llama.cpp, Ollama o TGI, y no se documentan wrappers, imagenes de contenedor ni integraciones oficiales con motores de flujos de trabajo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhou-lab/methscope
+- Modelo en Hugging Face: https://huggingface.co/zhou-lab/methscope
 - Repositorio del CLI: https://github.com/zhou-lab/methscope-cli
 - Documentacion de methscope-cli, pestana Models: https://zhou-lab.github.io/methscope-cli/#models
 - Fixtures de consulta `.cg` y datos de prueba: https://github.com/zhou-lab/methscope_data

@@ -86,6 +86,6 @@ No se dispone de comparaciones publicadas con otros modelos en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VEdant-2810/smai-ass4-ioc-nn
+- Modelo en Hugging Face: https://huggingface.co/VEdant-2810/smai-ass4-ioc-nn
 - Experimento registrado en WandB: https://forge.coreweave.com/wandb/vedantzope2810/smai-ass4/runs/vwulvrkb
 - Dataset CIFAR-10 (referenciado): https://huggingface.co/datasets/uoft-cs/cifar10

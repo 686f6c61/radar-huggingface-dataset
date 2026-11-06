@@ -81,7 +81,7 @@ Los datos de YOLOv3 completo y YOLOv5s son aproximaciones basadas en informació
 
 ## Enlaces
 
-- [HuggingFace - lucid-dl/yolo-v3-tiny](https://huggingface.co/lucid-dl/yolo-v3-tiny)
+- [Hugging Face - lucid-dl/yolo-v3-tiny](https://huggingface.co/lucid-dl/yolo-v3-tiny)
 - [Paper original YOLOv3 - arXiv:1804.02767](https://arxiv.org/abs/1804.02767)
 - [Repositorio Lucid (GitHub)](https://github.com/ChanLumerico/lucid)
 - [Implementación de referencia de Ultralytics (YOLOv3)](https://github.com/ultralytics/yolov3)

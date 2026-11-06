@@ -102,7 +102,7 @@ Las cifras de REVE Large y CodeBrain se derivan de las diferencias reportadas en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pan-Junyu/LaBraM-at-Scale
+- Hugging Face: https://huggingface.co/Pan-Junyu/LaBraM-at-Scale
 - Repositorio de código: https://github.com/AlbertMentat/LaBraM-at-Scale
 - Informe técnico: https://github.com/AlbertMentat/LaBraM-at-Scale/blob/main/site/assets/report.pdf
 - Guía de uso: https://github.com/AlbertMentat/LaBraM-at-Scale/blob/main/docs/USAGE.md

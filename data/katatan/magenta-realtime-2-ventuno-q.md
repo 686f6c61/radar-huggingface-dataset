@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KATATAN/magenta-realtime-2-ventuno-q | no disponible | no disponible | NPU Arduino VENTUNO Q | CC-BY-4.0 | HuggingFace (0 descargas) |
-| google/magenta-realtime-2 | no disponible | no disponible | GPU/CPU general | CC-BY-4.0 (pesos) | HuggingFace oficial |
-| blanchon/magenta-realtime-2-onnx | no disponible | no disponible | CPU/ONNX Runtime | CC-BY-4.0 | HuggingFace |
+| KATATAN/magenta-realtime-2-ventuno-q | no disponible | no disponible | NPU Arduino VENTUNO Q | CC-BY-4.0 | Hugging Face (0 descargas) |
+| google/magenta-realtime-2 | no disponible | no disponible | GPU/CPU general | CC-BY-4.0 (pesos) | Hugging Face oficial |
+| blanchon/magenta-realtime-2-onnx | no disponible | no disponible | CPU/ONNX Runtime | CC-BY-4.0 | Hugging Face |
 
 Las tres variantes comparten los mismos pesos de origen; difieren en el formato de exportacion y en el hardware objetivo. No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ Las tres variantes comparten los mismos pesos de origen; difieren en el formato 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KATATAN/magenta-realtime-2-ventuno-q
+- Hugging Face: https://huggingface.co/KATATAN/magenta-realtime-2-ventuno-q
 - Modelo base original: https://huggingface.co/google/magenta-realtime-2
 - Export ONNX de referencia: https://huggingface.co/blanchon/magenta-realtime-2-onnx
 - Repositorio MRT2 Studio: https://github.com/katatan-org/MRT2-Arduino-VENTUNO-Q/

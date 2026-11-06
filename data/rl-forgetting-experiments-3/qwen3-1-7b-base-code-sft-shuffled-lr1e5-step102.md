@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (qwen3-1.7b-base-code-sft-shuffled-lr1e5-step102) | 1,7 B | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B-Base | 1,7 B | no disponible en la informacion proporcionada | sin datos en esta busqueda | Apache-2.0 segun la ficha oficial del modelo base | HuggingFace, ampliamente usado |
-| Modelos de codigo de ~1,5 B de otras familias (por ejemplo Qwen2.5-Coder-1.5B) | ~1,5 B | no disponible en la informacion proporcionada | no comparable con datos de esta busqueda | no verificada en la informacion proporcionada | HuggingFace |
+| Este checkpoint (qwen3-1.7b-base-code-sft-shuffled-lr1e5-step102) | 1,7 B | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B-Base | 1,7 B | no disponible en la informacion proporcionada | sin datos en esta busqueda | Apache-2.0 segun la ficha oficial del modelo base | Hugging Face, ampliamente usado |
+| Modelos de codigo de ~1,5 B de otras familias (por ejemplo Qwen2.5-Coder-1.5B) | ~1,5 B | no disponible en la informacion proporcionada | no comparable con datos de esta busqueda | no verificada en la informacion proporcionada | Hugging Face |
 
 La comparacion relevante es directa con el modelo base: este checkpoint anade un ajuste supervisado de codigo sin replay, por lo que la diferencia esperada es una mejora en tareas de programacion del dominio de SFT y una posible perdida en capacidades generales. No hay datos publicados que permitan cuantificar ese intercambio.
 
@@ -92,6 +92,6 @@ La comparacion relevante es directa con el modelo base: este checkpoint anade un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/qwen3-1.7b-base-code-sft-shuffled-lr1e5-step102
+- Modelo en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/qwen3-1.7b-base-code-sft-shuffled-lr1e5-step102
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Busqueda web: los resultados obtenidos no guardan relacion con el modelo (contenido sobre el videojuego Rocket League y prensa regional francesa), por lo que no se incluyen como enlaces relevantes. No se han encontrado papers, blogs, repositorios ni demos asociados a este checkpoint en la informacion disponible.

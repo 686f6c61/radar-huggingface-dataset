@@ -70,7 +70,7 @@ No se dispone de datos comparativos en la informacion proporcionada. ArcFace R10
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marcelohaps/face-recognition-bench-models
+- Repositorio Hugging Face: https://huggingface.co/marcelohaps/face-recognition-bench-models
 - Repositorio GitHub del benchmark: https://github.com/PDC-EAI/face-recognition
 - Proyecto InsightFace (origen de los pesos): https://github.com/deepinsight/insightface
 - Paper de ArcFace: J. Deng, J. Guo, N. Xue, S. Zafeiriou. *ArcFace: Additive Angular Margin Loss for Deep Face Recognition.* CVPR 2019.

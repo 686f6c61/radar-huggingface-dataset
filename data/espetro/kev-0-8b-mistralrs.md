@@ -23,14 +23,14 @@ El repositorio ocupa 3,0 GB, coherente con un checkpoint en fp32 de ~0,8B de par
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo. Lo unico documentado es que `model/` contiene Qwen/Qwen3.5-0.8B-Base en la revision dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68 con el LoRA de Kev fusionado en fp32, en formato de checkpoint HuggingFace estandar. Ademas del backbone, el export incluye `head.safetensors`, que aloja la cabeza pointer de Kev con tensores q y k, y `kev.json`, con los campos base, head_dim, temperature y los identificadores de tokens especiales. La semantica exacta de esa cabeza (que decide o a que apunta) no se detalla en la model card.
+La informacion disponible no describe la arquitectura interna del modelo. Lo unico documentado es que `model/` contiene Qwen/Qwen3.5-0.8B-Base en la revision dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68 con el LoRA de Kev fusionado en fp32, en formato de checkpoint Hugging Face estandar. Ademas del backbone, el export incluye `head.safetensors`, que aloja la cabeza pointer de Kev con tensores q y k, y `kev.json`, con los campos base, head_dim, temperature y los identificadores de tokens especiales. La semantica exacta de esa cabeza (que decide o a que apunta) no se detalla en la model card.
 
 No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni sobre innovaciones tecnicas concretas del backbone. El unico detalle procedimental conocido es que el export se genero con `kev-rs/scripts/export_checkpoint.py` y que los pesos fusionados son bit-identicos a los que carga `kev.serve`, lo que garantiza equivalencia numerica entre el artefacto exportado y el modelo servido por la via original.
 
 ## Capacidades
 
 - Modelo de decision (decision-model, segun las etiquetas del repositorio); su funcion concreta no esta documentada en la informacion disponible.
-- Carga de un checkpoint HuggingFace plano del backbone mas una cabeza pointer separada, con configuracion propia en `kev.json` (base, head_dim, temperature, tokens especiales).
+- Carga de un checkpoint Hugging Face plano del backbone mas una cabeza pointer separada, con configuracion propia en `kev.json` (base, head_dim, temperature, tokens especiales).
 - Servicio directo mediante el servidor Kev del fork espetro/mistral.rs, sin pasos adicionales de fusion de adaptadores.
 - Generacion de texto: no confirmada explicitamente; el backbone subyacente es un modelo base de Qwen3.5, pero la model card no documenta capacidades generativas del conjunto.
 - Tool calling / function calling: no disponible.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento ni de contexto de ninguno de los tres, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/espetro/kev-0.8b-mistralrs
+- Modelo en Hugging Face: https://huggingface.co/espetro/kev-0.8b-mistralrs
 - Checkpoint de origen: https://huggingface.co/jaredpalmer/kev-0.8b
 - Fork de mistral.rs con el servidor Kev: https://github.com/espetro/mistral.rs
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base (revision dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68)

@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Capas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| REVE-small | 12,7 M | 4 | longitud arbitraria (pos. 4D) | REVE Responsible Use v1.0 | HuggingFace (checkpoint epoca 15) |
-| REVE-base | 69,2 M | 22 | longitud arbitraria (pos. 4D) | REVE Responsible Use v1.0 | HuggingFace |
+| REVE-small | 12,7 M | 4 | longitud arbitraria (pos. 4D) | REVE Responsible Use v1.0 | Hugging Face (checkpoint epoca 15) |
+| REVE-base | 69,2 M | 22 | longitud arbitraria (pos. 4D) | REVE Responsible Use v1.0 | Hugging Face |
 | Otros modelos fundacionales EEG | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion con alternativas externas no esta disponible en la informacion proporcionada; la unica referencia directa es REVE-base del mismo autor.
@@ -80,7 +80,7 @@ La comparacion con alternativas externas no esta disponible en la informacion pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brain-bzh/reve-small
+- Hugging Face: https://huggingface.co/brain-bzh/reve-small
 - REVE-base: https://huggingface.co/brain-bzh/reve-base
 - Banco de posiciones: https://huggingface.co/brain-bzh/reve-positions
 - Pagina del proyecto: https://brain-bzh.github.io/reve/

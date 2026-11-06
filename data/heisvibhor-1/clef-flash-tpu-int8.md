@@ -107,7 +107,7 @@ La comparación relevante es frente al original de Cloudflare, del que este repo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heisvibhor-1/clef-flash-tpu-int8
+- Modelo en Hugging Face: https://huggingface.co/heisvibhor-1/clef-flash-tpu-int8
 - Notebook de Colab: https://huggingface.co/heisvibhor-1/clef-flash-tpu-int8/blob/main/notebook.ipynb
 - Acceso directo a Colab: https://huggingface.co/heisvibhor-1/clef-flash-tpu-int8/colab
 - Modelo base (Cloudflare): https://huggingface.co/Cloudflare/clef-flash

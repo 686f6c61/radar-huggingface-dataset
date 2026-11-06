@@ -116,7 +116,7 @@ La diferencia estructural relevante frente a esas alternativas no es el rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tdamre/limite-1b-violetto-GGUF-LiteRT
+- Repositorio Hugging Face: https://huggingface.co/Tdamre/limite-1b-violetto-GGUF-LiteRT
 - Modelo base: https://huggingface.co/paradigma-inc/limite-1b-violetto
 - Presets de contexto: https://huggingface.co/Tdamre/limite-1b-violetto-GGUF-LiteRT/tree/main/presets
 - Matriz de importancia y calibracion: https://huggingface.co/Tdamre/limite-1b-violetto-GGUF-LiteRT/tree/main/calibration

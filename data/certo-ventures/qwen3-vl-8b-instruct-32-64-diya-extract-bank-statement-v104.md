@@ -4,7 +4,7 @@
 
 Este modelo es un checkpoint fine-tuned con el identificador `certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Bank-Statement-v104`, publicado por la organización `certo-ventures`. Según la nomenclatura del checkpoint, se trata de una adaptación del modelo multimodal Qwen3-VL-8B-Instruct, orientada a la extracción de información de extractos bancarios. La arquitectura subyacente es un transformer de visión y lenguaje capaz de procesar tanto imágenes como texto.
 
-La información pública disponible es muy limitada. La model card de HuggingFace es una plantilla generada automáticamente, sin especificaciones técnicas, datos de entrenamiento ni resultados de evaluación. El modelo cuenta actualmente con 0 descargas y 0 likes, lo que indica que no ha sido validado por la comunidad. Su relevancia reside en la potencial aplicación en automatización de procesos financieros, aunque su rendimiento no está demostrado y su licencia no está declarada.
+La información pública disponible es muy limitada. La model card de Hugging Face es una plantilla generada automáticamente, sin especificaciones técnicas, datos de entrenamiento ni resultados de evaluación. El modelo cuenta actualmente con 0 descargas y 0 likes, lo que indica que no ha sido validado por la comunidad. Su relevancia reside en la potencial aplicación en automatización de procesos financieros, aunque su rendimiento no está demostrado y su licencia no está declarada.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ La información pública disponible es muy limitada. La model card de HuggingFac
 | Tipos de cuantizacion | No disponible (el tamaño del repo, 2.8 GB, sugiere cuantización, pero no se especifica el tipo) |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Bank-Statement-v104
+- Modelo en Hugging Face: https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Bank-Statement-v104
 - Sitio web de Certo Software (posiblemente relacionado, según la búsqueda web): https://www.certosoftware.com/
 - Modelo similar de la misma organización: https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Wire-Instructions
 - Otro modelo relacionado de la misma organización: https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Candor-Extract-dev

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-all-a1` es un ajuste fino derivado de Qwen2.5-7B-Instruct, publicado en HuggingFace por el usuario wz7475. Por la nomenclatura del identificador (familia "katcher-legal", sufijos como "psteer", "prev", "a1"), se trata de una variante experimental orientada al dominio juridico, probablemente mediante tecnicas de steering o regularizacion sobre el modelo base. La model card publicada es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva: no declara autor efectivo, tipo de modelo, idiomas, licencia ni detalles de entrenamiento.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-all-a1` es un ajuste fino derivado de Qwen2.5-7B-Instruct, publicado en Hugging Face por el usuario wz7475. Por la nomenclatura del identificador (familia "katcher-legal", sufijos como "psteer", "prev", "a1"), se trata de una variante experimental orientada al dominio juridico, probablemente mediante tecnicas de steering o regularizacion sobre el modelo base. La model card publicada es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva: no declara autor efectivo, tipo de modelo, idiomas, licencia ni detalles de entrenamiento.
 
 El repositorio ocupa 0,3 GB, un tamano muy inferior al de los pesos completos de un modelo de 7.600 millones de parametros en bf16 (que rondaria los 15 GB). Esto sugiere que el repositorio contiene adaptadores (tipo LoRA) o pesos parciales, y que su uso requiere cargar el modelo base Qwen2.5-7B-Instruct por separado. El modelo registra 0 descargas y 0 likes, y las fechas de creacion y actualizacion son del 27 de septiembre de 2026, con apenas 14 segundos de diferencia entre ambas: se trata, por tanto, de una publicacion reciente, sin validacion por parte de la comunidad y sin metricas de uso.
 
@@ -26,7 +26,7 @@ Su relevancia practica es limitada y debe evaluarse con cautela: no hay benchmar
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura especifica, los datos de entrenamiento ni el procedimiento de ajuste de este modelo. La model card es la plantilla generada automaticamente por HuggingFace y todos los campos relevantes aparecen como "[More Information Needed]". El unico dato tecnico inferible es el del repositorio de origen: los tags indican `transformers` y `safetensors`, y el tamano de 0,3 GB apunta a un artefacto de ajuste (adaptadores o delta de pesos) en lugar de pesos completos.
+No hay informacion publicada sobre la arquitectura especifica, los datos de entrenamiento ni el procedimiento de ajuste de este modelo. La model card es la plantilla generada automaticamente por Hugging Face y todos los campos relevantes aparecen como "[More Information Needed]". El unico dato tecnico inferible es el del repositorio de origen: los tags indican `transformers` y `safetensors`, y el tamano de 0,3 GB apunta a un artefacto de ajuste (adaptadores o delta de pesos) en lugar de pesos completos.
 
 Por el identificador se deduce que parte de Qwen2.5-7B-Instruct, cuyo preentrenamiento se realizo sobre aproximadamente 18 billones de tokens y que fue alineado mediante aprendizaje supervisado y optimizacion por preferencias (DPO). Los sufijos del nombre ("katcher-legal", "psteer", "prev", "a1") sugieren tecnicas de steering sobre prompts o representaciones internas aplicadas al dominio juridico, pero su significado exacto, la composicion del corpus legal empleado y la existencia de RLHF o DPO adicional no estan documentados. Otros repositorios del mismo autor y familia (por ejemplo `katcher-legal-interleave`, `katcher-legal-ldifs`, `katcher-legal-spectral-reg-l3`) confirman la orientacion juridica de la serie, sin aportar detalles de metodo.
 
@@ -85,13 +85,13 @@ La comparacion cuantitativa de rendimiento no es posible en este caso: el modelo
 - Artefacto incompleto o dependiente: el tamano de 0,3 GB sugiere que no contiene pesos completos, y no hay instrucciones sobre como cargarlo, ni confirmacion del modelo base exacto requerido ni de la version de `peft`/`transformers`.
 - Fechas anomales: el repositorio figura como creado y actualizado el 27 de septiembre de 2026, con 14 segundos de diferencia, lo que apunta a una publicacion automatizada o de prueba.
 - Posible sobreajuste al dominio: un ajuste especifico para el ambito juridico puede degradar el rendimiento general y el multilingue respecto al modelo base; no hay evaluacion que lo cuantifique.
-- Etiqueta `arxiv:1910.09700` no significativa: corresponde al articulo del calculador de impacto de carbono que aparece en la plantilla de HuggingFace, no a un paper de este modelo.
+- Etiqueta `arxiv:1910.09700` no significativa: corresponde al articulo del calculador de impacto de carbono que aparece en la plantilla de Hugging Face, no a un paper de este modelo.
 - Restricciones de contexto no verificadas: aunque el modelo base admite 32.768 tokens, no se ha confirmado que el ajuste preserve ese limite ni la calidad en ventanas largas.
 - Sesgos no evaluados: sin analisis de sesgo ni de comportamiento en subpoblaciones; se heredan los sesgos del modelo base y los del corpus de ajuste, desconocido.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-all-a1
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-all-a1
 - Variante relacionada (interleave): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave
 - Variante relacionada (interleave-op): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-op
 - Variante relacionada (ldifs), ficha en Featherless: https://featherless.ai/models/wz7475/qwen2.5-7b-instruct-katcher-legal-ldifs

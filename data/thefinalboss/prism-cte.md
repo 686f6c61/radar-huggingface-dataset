@@ -4,7 +4,7 @@
 
 PRISM-CTE es una extensión experimental del modelo PRISM (originalmente desarrollado por AFKmoney) que incorpora un "Adaptive Continuous Thought Engine" (CTE), un mecanismo de pensamiento continuo diferenciable. El autor, thefinalboss, lo ha entrenado sobre los conjuntos de datos `cognitive_skills` de `thefinalboss/fractus-datasets` con el objetivo de mejorar la generación de texto relacionado con habilidades de pensamiento algorítmico y razonamiento bajo presión. No es un transformer puro: se describe como una arquitectura con "Multi-Rate Bus" y "expertos polimórficos".
 
-El proyecto es relevante porque propone un enfoque alternativo al razonamiento explícito (tipo "chain-of-thought") mediante un bucle de pensamiento continuo y diferenciable que se aprende de forma end-to-end. Sin embargo, el modelo es un prototipo de investigación sin despliegue público, sin pesos publicados en HuggingFace (solo código fuente en el repositorio) y con métricas limitadas. No se han publicado especificaciones completas de arquitectura, tamaño, contexto o idiomas.
+El proyecto es relevante porque propone un enfoque alternativo al razonamiento explícito (tipo "chain-of-thought") mediante un bucle de pensamiento continuo y diferenciable que se aprende de forma end-to-end. Sin embargo, el modelo es un prototipo de investigación sin despliegue público, sin pesos publicados en Hugging Face (solo código fuente en el repositorio) y con métricas limitadas. No se han publicado especificaciones completas de arquitectura, tamaño, contexto o idiomas.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No disponible. No se ha encontrado información sobre modelos comparables de la 
 
 ## Limitaciones y advertencias
 
-- Modelo en fase de desarrollo: solo contiene código fuente, no se publican pesos ni checkpoints en HuggingFace.
+- Modelo en fase de desarrollo: solo contiene código fuente, no se publican pesos ni checkpoints en Hugging Face.
 - No hay validación en tareas estándar de NLP; la calidad generativa es desconocida.
 - Riesgo de alucinación y de texto incoherente, especialmente fuera del dominio de entrenamiento.
 - La licencia MIT permite uso comercial, pero al no haber pesos publicados, no se puede usar directamente en producción.

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MergekitCloud/mergekit-154 | 14,8B | no disponible en la card (base: 32.768) | no disponible | HuggingFace, 0 descargas | Fusion TIES de Qwen2.5-14B-Instruct + variante sin censura |
-| Qwen/Qwen2.5-14B-Instruct | 14,8B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base; alineamiento estandar, benchmarks publicados por Qwen |
-| Orion-zhen/Qwen2.5-14B-Instruct-Uncensored | 14,8B | no disponible | no disponible | HuggingFace | Donante sin censura; sin benchmarks publicados en la informacion disponible |
-| Mistral-Nemo-Instruct-2407 | 12B | 128.000 | Apache 2.0 | HuggingFace | Alternativa de tamano similar con contexto largo y licencia permisiva |
+| MergekitCloud/mergekit-154 | 14,8B | no disponible en la card (base: 32.768) | no disponible | Hugging Face, 0 descargas | Fusion TIES de Qwen2.5-14B-Instruct + variante sin censura |
+| Qwen/Qwen2.5-14B-Instruct | 14,8B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base; alineamiento estandar, benchmarks publicados por Qwen |
+| Orion-zhen/Qwen2.5-14B-Instruct-Uncensored | 14,8B | no disponible | no disponible | Hugging Face | Donante sin censura; sin benchmarks publicados en la informacion disponible |
+| Mistral-Nemo-Instruct-2407 | 12B | 128.000 | Apache 2.0 | Hugging Face | Alternativa de tamano similar con contexto largo y licencia permisiva |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-154
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-154
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Modelo donante sin censura: https://huggingface.co/Orion-zhen/Qwen2.5-14B-Instruct-Uncensored
 - Paper de TIES (arXiv:2306.01708): https://arxiv.org/abs/2306.01708

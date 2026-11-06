@@ -81,7 +81,7 @@ La comparativa con Whisper large-v3 es orientativa: el modelo de OpenAI es multi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sarkaar07/bells-clipper-captions
+- Repositorio en Hugging Face: https://huggingface.co/Sarkaar07/bells-clipper-captions
 - Modelo base: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Prime
 - whisper.cpp (repositorio oficial): https://github.com/ggerganov/whisper.cpp
 - Whisper de OpenAI (paper y repositorio): https://github.com/openai/whisper

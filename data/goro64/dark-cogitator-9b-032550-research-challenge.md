@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Cogitator-9B-032550-Research-Challenge es un fine-tuning experimental del modelo Qwen/Qwen3.5-9B publicado por el usuario Goro64 en HuggingFace. Se trata de un adaptador LoRA fusionado o checkpoint derivado del modelo base de Qwen, orientado a tareas de conversación y evaluación de comportamiento (behavioral-evaluation), dentro de lo que el autor denomina un "research challenge" o reto de investigación sobre fine-tuning. El modelo está etiquetado explícitamente como experimental y no apto para producción (non-production).
+Dark-Cogitator-9B-032550-Research-Challenge es un fine-tuning experimental del modelo Qwen/Qwen3.5-9B publicado por el usuario Goro64 en Hugging Face. Se trata de un adaptador LoRA fusionado o checkpoint derivado del modelo base de Qwen, orientado a tareas de conversación y evaluación de comportamiento (behavioral-evaluation), dentro de lo que el autor denomina un "research challenge" o reto de investigación sobre fine-tuning. El modelo está etiquetado explícitamente como experimental y no apto para producción (non-production).
 
 El modelo conserva la arquitectura multimodal del Qwen3.5-9B original (pipeline image-text-to-text), lo que implica capacidad de procesar imágenes y texto. Con 9.409.813.744 parámetros totales según los pesos en safetensors, se posiciona en la gama de 9B, un tamaño manejable para despliegue en GPUs de consumo con cuantización. El repositorio ocupa 40,3 GB, coherente con pesos en precisión completa o bf16 junto con posibles artefactos adicionales.
 
@@ -43,7 +43,7 @@ El propósito declarado por las etiquetas es la evaluación de comportamiento (b
 - Investigación sobre fine-tuning y evaluación de comportamiento: el modelo sirve como artefacto de estudio para analizar cómo un LoRA sobre Qwen3.5-9B altera respuestas conversacionales en un reto de investigación; adecuado para reproducir experimentos y comparar con el base.
 - Evaluación comparativa de deriva conductual: útil para medir cambios de estilo, sesgos o alucinación introducidos por el fine-tuning respecto al Qwen3.5-9B original en tareas de conversación en inglés.
 - Prototipado de asistentes multimodales en inglés: al conservar la entrada image-text-to-text, permite experimentar con descripción de imágenes y VQA en entornos de laboratorio, sin compromiso de producción.
-- Docencia y divulgación: ejemplo práctico de cómo se publica un checkpoint experimental con acceso restringido y licencia Apache 2.0, útil en cursos sobre ecosistema HuggingFace.
+- Docencia y divulgación: ejemplo práctico de cómo se publica un checkpoint experimental con acceso restringido y licencia Apache 2.0, útil en cursos sobre ecosistema Hugging Face.
 - Pruebas de pipelines de inferencia con transformers: al estar en safetensors y librería transformers, sirve para validar cargas de modelos de ~9B en infraestructura propia antes de pasar a modelos más grandes.
 - Benchmarking interno de cuantización: permite comparar el comportamiento del checkpoint en bf16 frente a cuantizaciones propias (el repo no las incluye) para estudiar la degradación en tareas conversacionales.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Dark-Cogitator-9B-032550-Research-Challenge | 9,41B | no disponible | apache-2.0 | Gated en HuggingFace | Fine-tuning experimental, solo inglés, no producción |
+| Dark-Cogitator-9B-032550-Research-Challenge | 9,41B | no disponible | apache-2.0 | Gated en Hugging Face | Fine-tuning experimental, solo inglés, no producción |
 | Qwen/Qwen3.5-9B (base) | ~9B | no disponible en la información | no disponible en la información | Público (referencia) | Modelo base multimodal image-text-to-text |
 | Alternativas de ~9B multimodales (p. ej. familia Qwen2.5-VL o Llama 3.x Vision) | ~7-11B | variable según modelo | variable | Públicas | No se dispone de datos comparativos verificados en la información proporcionada |
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo verificables para este checkpo
 ## Limitaciones y advertencias
 
 - Modelo marcado explícitamente como experimental y non-production: no debe usarse en sistemas productivos ni en decisiones automatizadas con impacto real.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su uso en pipelines automatizados y su reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso en pipelines automatizados y su reproducibilidad.
 - Documentación pública mínima: sin model card detallada, sin dataset de entrenamiento, sin benchmarks ni evaluación de sesgos; imposible auditar el fine-tuning.
 - Riesgo de alucinación y de deriva conductual: al ser un fine-tuning de investigación sin evaluación publicada, puede presentar respuestas degradadas o sesgadas respecto al base.
 - Idioma limitado al inglés según la etiqueta del repositorio; el uso en castellano no está soportado ni verificado.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo verificables para este checkpo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Goro64/Dark-Cogitator-9B-032550-Research-Challenge
+- Hugging Face: https://huggingface.co/Goro64/Dark-Cogitator-9B-032550-Research-Challenge
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

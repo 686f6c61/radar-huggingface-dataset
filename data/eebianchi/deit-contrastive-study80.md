@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eebianchi/deit-contrastive-study80 es un repositorio experimental que implementa una variante de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. Lo publica el usuario de HuggingFace eebianchi y se distribuye bajo licencia MIT. El repositorio contiene una implementacion en Python (`run.py`), un archivo de configuracion, uno de argumentos de entrenamiento y un checkpoint en safetensors que el propio autor describe de forma explicita como inicializacion valida para pruebas de humo, no como un modelo entrenado ni evaluado.
+eebianchi/deit-contrastive-study80 es un repositorio experimental que implementa una variante de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. Lo publica el usuario de Hugging Face eebianchi y se distribuye bajo licencia MIT. El repositorio contiene una implementacion en Python (`run.py`), un archivo de configuracion, uno de argumentos de entrenamiento y un checkpoint en safetensors que el propio autor describe de forma explicita como inicializacion valida para pruebas de humo, no como un modelo entrenado ni evaluado.
 
 La configuracion declarada indica escala "huge", atencion dispersa (sparse), fusion de bajo rango, activacion gelu tanh y normalizacion scalenorm, con un recetario por defecto basado en SGD y planificador de tipo step. Ahora bien, el checkpoint de safetensors reporta 16.576 parametros totales, una cifra muy alejada de los cientos de millones que tendria un DeiT-huge real, lo que confirma que se trata de un punto de partida sin entrenar.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto/modalidad | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eebianchi/deit-contrastive-study80 | 16.576 | Vision (DeiT), contexto no disponible | No (inicializacion) | MIT | HuggingFace, 0 descargas |
-| DeiT (Facebook/Meta) | aprox. 5 M - 632 M segun variante | Vision, clasificacion de imagenes | Si | Apache 2.0 | HuggingFace |
-| ViT (Google) | aprox. 86 M - 632 M | Vision, clasificacion de imagenes | Si | Apache 2.0 | HuggingFace |
-| CLIP (OpenAI) | aprox. 150 M - 428 M | Vision-texto, contraste | Si | MIT (variantes) | HuggingFace |
+| eebianchi/deit-contrastive-study80 | 16.576 | Vision (DeiT), contexto no disponible | No (inicializacion) | MIT | Hugging Face, 0 descargas |
+| DeiT (Facebook/Meta) | aprox. 5 M - 632 M segun variante | Vision, clasificacion de imagenes | Si | Apache 2.0 | Hugging Face |
+| ViT (Google) | aprox. 86 M - 632 M | Vision, clasificacion de imagenes | Si | Apache 2.0 | Hugging Face |
+| CLIP (OpenAI) | aprox. 150 M - 428 M | Vision-texto, contraste | Si | MIT (variantes) | Hugging Face |
 
 Nota: los datos de los modelos comparativos son de referencia general; no se han verificado en la informacion proporcionada para esta ficha. La comparacion es orientativa.
 
@@ -83,4 +83,4 @@ Nota: los datos de los modelos comparativos son de referencia general; no se han
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eebianchi/deit-contrastive-study80
+- Hugging Face: https://huggingface.co/eebianchi/deit-contrastive-study80

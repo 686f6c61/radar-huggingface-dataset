@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/heb_hebr_100mb`, un transformer monolingue de tipo GPT-2 orientado al hebreo. Lo publica el usuario de HuggingFace `francesca9805` y se ha entrenado con la libreria TRL (Transformer Reinforcement Learning) de HuggingFace mediante SFT (Supervised Fine-Tuning). El modelo cuenta con 124.770.816 parametros totales (aproximadamente 125M) y un repositorio de 0,3 GB en formato safetensors.
+El modelo `francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/heb_hebr_100mb`, un transformer monolingue de tipo GPT-2 orientado al hebreo. Lo publica el usuario de Hugging Face `francesca9805` y se ha entrenado con la libreria TRL (Transformer Reinforcement Learning) de Hugging Face mediante SFT (Supervised Fine-Tuning). El modelo cuenta con 124.770.816 parametros totales (aproximadamente 125M) y un repositorio de 0,3 GB en formato safetensors.
 
 Por su tamano, se trata de un modelo pequeno, pensado para experimentacion e investigacion mas que para despliegues de produccion de alta exigencia. Su relevancia radica en el ecosistema de modelos Goldfish, una familia de modelos GPT-2 entrenados especificamente para lenguas de bajos recursos (en este caso el hebreo), sobre los que se aplican tecnicas de ajuste fino para tareas concretas. El nombre del modelo sugiere un experimento de estructuracion de datos ("ppt-mp-struct-core") con una semilla concreta (`seed455`), lo que apunta a un artefacto de investigacion reproducible.
 
@@ -25,13 +25,13 @@ No se dispone de informacion publica sobre el conjunto de datos de ajuste fino, 
 
 El modelo hereda la arquitectura del base `goldfish-models/heb_hebr_100mb`, un transformer decoder-only de tipo GPT-2 con aproximadamente 125M de parametros. La familia Goldfish, desarrollada en el entorno academico (University of Groningen, segun la URL de Weights & Biases del autor), entrena modelos GPT-2 desde cero para lenguas especificas con corpus de ~100 MB, lo que explica la denominacion `100mb` en el identificador. La etiqueta `gpt2` del repositorio confirma esta arquitectura.
 
-El ajuste fino se ha realizado mediante SFT con TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.5.1+cu121 y Datasets 4.8.4. No se especifica el numero de tokens de entrenamiento, la composicion del dataset de ajuste ni si se aplicaron tecnicas posteriores como DPO o RLHF. El modelo se genero con `generated_from_trainer`, lo que indica un flujo estandar de entrenamiento con el `Trainer` de HuggingFace y registro en Weights & Biases (run `w2wq2q7y`, proyecto `new-tokenizers`).
+El ajuste fino se ha realizado mediante SFT con TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.5.1+cu121 y Datasets 4.8.4. No se especifica el numero de tokens de entrenamiento, la composicion del dataset de ajuste ni si se aplicaron tecnicas posteriores como DPO o RLHF. El modelo se genero con `generated_from_trainer`, lo que indica un flujo estandar de entrenamiento con el `Trainer` de Hugging Face y registro en Weights & Biases (run `w2wq2q7y`, proyecto `new-tokenizers`).
 
 ## Capacidades
 
 - Generacion de texto autoregresiva en el idioma del modelo base (presumiblemente hebreo), segun el pipeline `text-generation` declarado.
 - Ajuste fino supervisado orientado a una tarea concreta no documentada ("ppt-mp-struct-core"), cuyo proposito exacto no se detalla en la informacion disponible.
-- Compatibilidad con `text-generation-inference` y `endpoints_compatible` (segun los tags del repositorio), lo que permite despliegue mediante la pila de inferencia de HuggingFace.
+- Compatibilidad con `text-generation-inference` y `endpoints_compatible` (segun los tags del repositorio), lo que permite despliegue mediante la pila de inferencia de Hugging Face.
 - Soporte de `tool calling`, agentes o razonamiento multi-paso: no disponible.
 - Capacidades multimodales (vision, audio): no disponibles.
 - Capacidades multilingues: no disponibles; el modelo base esta especializado en una unica lengua.
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed455` | 124,7M | no disponible | no disponible (presumiblemente hebreo) | no disponible | HuggingFace |
-| `goldfish-models/heb_hebr_100mb` (modelo base) | ~100M (no confirmado) | no disponible | hebreo | no disponible | HuggingFace |
-| Otros modelos Goldfish de la misma familia | ~100M | no disponible | otras lenguas | no disponible | HuggingFace |
+| `francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed455` | 124,7M | no disponible | no disponible (presumiblemente hebreo) | no disponible | Hugging Face |
+| `goldfish-models/heb_hebr_100mb` (modelo base) | ~100M (no confirmado) | no disponible | hebreo | no disponible | Hugging Face |
+| Otros modelos Goldfish de la misma familia | ~100M | no disponible | otras lenguas | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa fiable con alternativas. La comparacion se limita al modelo base y a la propia familia Goldfish por ausencia de informacion sobre competidores directamente evaluables.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-mp-struct-core-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/heb_hebr_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/w2wq2q7y

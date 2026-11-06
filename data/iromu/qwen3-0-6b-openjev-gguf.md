@@ -73,10 +73,10 @@ La pérdida de fidelidad por cuantización es suave: Q4_K_M cede 1,1 puntos porc
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iromu/Qwen3-0.6B-openjev-GGUF | 596 M | no disponible (entrenamiento a 4096 tokens) | 85,0% de letra correcta en BF16; 83,9% en Q4_K_M | Apache-2.0 | GGUF en HuggingFace, 0 descargas |
-| Qwen/Qwen3-0.6B-Base | 596 M (aproximado, no confirmado en la informacion) | no disponible | 0,0% de letra correcta en la misma validacion | Apache-2.0 (modelo base de Qwen) | HuggingFace |
-| iromu/Qwen3-0.6B-openjev (BF16) | 596 M | no disponible | 85,0% de letra correcta | Apache-2.0 | HuggingFace |
-| iromu/Qwen3-0.6B-openjev-NVFP4 | 596 M | no disponible | no disponible en la informacion | Apache-2.0 | HuggingFace |
+| iromu/Qwen3-0.6B-openjev-GGUF | 596 M | no disponible (entrenamiento a 4096 tokens) | 85,0% de letra correcta en BF16; 83,9% en Q4_K_M | Apache-2.0 | GGUF en Hugging Face, 0 descargas |
+| Qwen/Qwen3-0.6B-Base | 596 M (aproximado, no confirmado en la informacion) | no disponible | 0,0% de letra correcta en la misma validacion | Apache-2.0 (modelo base de Qwen) | Hugging Face |
+| iromu/Qwen3-0.6B-openjev (BF16) | 596 M | no disponible | 85,0% de letra correcta | Apache-2.0 | Hugging Face |
+| iromu/Qwen3-0.6B-openjev-NVFP4 | 596 M | no disponible | no disponible en la informacion | Apache-2.0 | Hugging Face |
 
 Frente a alternativas de propósito general de tamaño similar, la comparación no es directa: este modelo solo emite una letra y no mantiene conversación ni genera texto libre, por lo que sus métricas no son trasladables a MMLU u otros benchmarks de conocimiento. Para tareas de clasificación genérica con etiquetas arbitrarias habría que evaluar modelos mayores, cuyos datos no se incluyen en la información proporcionada.
 
@@ -95,7 +95,7 @@ Frente a alternativas de propósito general de tamaño similar, la comparación 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/iromu/Qwen3-0.6B-openjev-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/iromu/Qwen3-0.6B-openjev-GGUF
 - Modelo BF16 y tabla de validación completa: https://huggingface.co/iromu/Qwen3-0.6B-openjev
 - Checkpoint NVFP4: https://huggingface.co/iromu/Qwen3-0.6B-openjev-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base

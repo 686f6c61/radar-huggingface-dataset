@@ -66,9 +66,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/aoiandroid/nemotron-3.5-asr-streaming-0.6b-coreml-ios
+- Repositorio de Hugging Face: https://huggingface.co/aoiandroid/nemotron-3.5-asr-streaming-0.6b-coreml-ios
 - Modelo fuente (CoreML): https://huggingface.co/aoiandroid/nemotron-3.5-asr-streaming-0.6b-coreml
 - Variante macOS: https://huggingface.co/aoiandroid/nemotron-3.5-asr-streaming-0.6b-coreml-macos
 - Repositorio de GitHub con documentacion del modelo original: https://github.com/weyan618/nemotron-asr/tree/main/nemotron-asr/nemotron-3.5-asr-streaming-0.6b
-- Variante INT8 en HuggingFace: https://huggingface.co/aoiandroid/Nemotron-3.5-ASR-Streaming-0.6B-CoreML-INT8
+- Variante INT8 en Hugging Face: https://huggingface.co/aoiandroid/Nemotron-3.5-ASR-Streaming-0.6B-CoreML-INT8
 - Model card de NVIDIA NIM (para el modelo original): https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard

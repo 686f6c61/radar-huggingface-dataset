@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: Atmyre/qwen3-8b-ao-flag-c0p50](https://huggingface.co/Atmyre/qwen3-8b-ao-flag-c0p50)
+- [Hugging Face: Atmyre/qwen3-8b-ao-flag-c0p50](https://huggingface.co/Atmyre/qwen3-8b-ao-flag-c0p50)
 - [Paper: Activation Oracles (arXiv:2512.15674)](https://arxiv.org/abs/2512.15674)
 - [Modelo base: Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 - [Sujeto interpretado: Atmyre/qwen3-8b-taboo-flag-c0p50](https://huggingface.co/Atmyre/qwen3-8b-taboo-flag-c0p50)

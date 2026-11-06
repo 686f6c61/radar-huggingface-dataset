@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM-1.3B-NVFP4-GGUF es una cuantizacion en formato NVFP4 (punto flotante de 4 bits) del modelo base LiquidAI/LFM3-1.7B, publicada por el usuario zefie en HuggingFace. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: su proposito es reducir el peso en memoria del modelo original en torno a un 75 % segun la model card, manteniendo un rendimiento que el autor califica como alto. El resultado es un checkpoint de aproximadamente 1.300 millones de parametros efectivos (de ahi el "1.3B" del nombre), frente a los 1.700 millones del modelo base.
+LFM-1.3B-NVFP4-GGUF es una cuantizacion en formato NVFP4 (punto flotante de 4 bits) del modelo base LiquidAI/LFM3-1.7B, publicada por el usuario zefie en Hugging Face. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: su proposito es reducir el peso en memoria del modelo original en torno a un 75 % segun la model card, manteniendo un rendimiento que el autor califica como alto. El resultado es un checkpoint de aproximadamente 1.300 millones de parametros efectivos (de ahi el "1.3B" del nombre), frente a los 1.700 millones del modelo base.
 
 El modelo subyacente pertenece a la familia LFM3 de Liquid AI, una arquitectura de tipo transformer con atencion lineal (las etiquetas "liquid" y "lfm3" de la model card asi lo indican) disenada para generacion de texto. La relevancia de esta publicacion es practica: permite ejecutar un modelo de la familia LFM3 en hardware con recursos limitados mediante pesos de 4 bits, aunque con las salvedades propias de una cuantizacion agresiva y de un repositorio sin traccion en la comunidad (0 descargas y 0 likes en el momento de la consulta).
 
@@ -54,15 +54,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con pesos de 4 bits, el peso del modelo ronda los 0,65-0,85 GB (1.3B parametros a 4 bits, mas escalas y metadatos); con cache KV y overhead de ejecucion, una estimacion prudente es de 1,5-3 GB, aunque no se dispone de mediciones publicadas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM deberia poder alojar los pesos; para produccion se recomiendan GPUs con soporte maduro de cuantizacion de 4 bits (por ejemplo, series RTX 30/40, A100, H100), si bien el soporte concreto de NVFP4 depende del runtime.
 - Compatibilidad con GPU de consumo: si, previsiblemente en tarjetas de 4-8 GB o superiores; no hay confirmacion del autor.
-- Opciones de despliegue: llama.cpp y Ollama son las rutas naturales para pesos GGUF; vLLM y TGI solo si soportan el formato NVFP4 concreto, extremo no documentado. La libreria declarada es transformers, lo que sugiere carga via HuggingFace, pero sin confirmacion de compatibilidad con NVFP4.
+- Opciones de despliegue: llama.cpp y Ollama son las rutas naturales para pesos GGUF; vLLM y TGI solo si soportan el formato NVFP4 concreto, extremo no documentado. La libreria declarada es transformers, lo que sugiere carga via Hugging Face, pero sin confirmacion de compatibilidad con NVFP4.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zefie/LFM-1.3B-NVFP4-GGUF | 1.3B (base 1.7B) | no disponible | NVFP4 (4 bits) | lfm1.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM3-1.7B (modelo base) | 1.7B | no disponible | FP16/BF16 original | lfm1.0 | HuggingFace (referencia) |
+| zefie/LFM-1.3B-NVFP4-GGUF | 1.3B (base 1.7B) | no disponible | NVFP4 (4 bits) | lfm1.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM3-1.7B (modelo base) | 1.7B | no disponible | FP16/BF16 original | lfm1.0 | Hugging Face (referencia) |
 | Otras cuantizaciones GGUF del mismo base | 1.7B | no disponible | Q4_K_M, Q5_K_M, etc. | lfm1.0 | no disponible en la informacion consultada |
 
 No se dispone de datos de rendimiento del checkpoint ni de sus alternativas en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y licencia.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento del checkpoint ni de sus alternativas en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zefie/LFM-1.3B-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zefie/LFM-1.3B-NVFP4-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Licencia (referenciada en la model card): LICENSE dentro del repositorio de HuggingFace
+- Licencia (referenciada en la model card): LICENSE dentro del repositorio de Hugging Face
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AXIOM-coder-9B es un ajuste fino (fine-tune) del modelo abierto Yi-Coder-9B-Chat de 01.AI, orientado especificamente a tareas de asistencia en programacion. Lo desarrolla Leslie Moody (usuario lmoody68 en HuggingFace) como un asistente de codigo personal que se ejecuta de forma totalmente local y privada. El modelo conserva la identidad "AXIOM, built by Leslie Moody" y esta afinado para ser honesto y para centrarse en escribir, explicar, depurar y refactorizar codigo.
+AXIOM-coder-9B es un ajuste fino (fine-tune) del modelo abierto Yi-Coder-9B-Chat de 01.AI, orientado especificamente a tareas de asistencia en programacion. Lo desarrolla Leslie Moody (usuario lmoody68 en Hugging Face) como un asistente de codigo personal que se ejecuta de forma totalmente local y privada. El modelo conserva la identidad "AXIOM, built by Leslie Moody" y esta afinado para ser honesto y para centrarse en escribir, explicar, depurar y refactorizar codigo.
 
 Tecnicamente es un transformer decoder-only denso de aproximadamente 8.830 millones de parametros (8.829.407.232 segun safetensors), heredado integramente del base Yi-Coder-9B-Chat, que soporta una ventana de contexto de hasta 128.000 tokens y 52 lenguajes de programacion. El ajuste se realizo con QLoRA en 4 bits (rango 16, una epoca) sobre un conjunto propio de pares docstring-codigo mas filas de un dataset publico de instrucciones en Python.
 
@@ -95,7 +95,7 @@ AXIOM-coder-9B se distingue de Yi-Coder-9B-Chat por su ajuste especifico en Pyth
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lmoody68/AXIOM-coder-9B
+- Modelo en Hugging Face: https://huggingface.co/lmoody68/AXIOM-coder-9B
 - Modelo base Yi-Coder-9B-Chat: https://huggingface.co/01-ai/Yi-Coder-9B-Chat
 - Modelo base Yi-Coder-9B (sin chat): https://huggingface.co/01-ai/Yi-Coder-9B
 - Dataset de instrucciones de codigo: https://huggingface.co/datasets/iamtarun/python_code_instructions_18k_alpaca

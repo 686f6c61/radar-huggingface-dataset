@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yonderboard/abdulcigarettes_LoRA` es un adaptador LoRA para generación de imágenes text-to-image entrenado con DreamBooth sobre `stabilityai/stable-diffusion-xl-base-1.0`. Lo publica el usuario de HuggingFace `yonderboard` y su función es inyectar en SDXL un estilo concreto, activado mediante el prompt de disparo `photo collage in CHERKASHIN style`. No es un modelo de lenguaje: no procesa texto como salida ni admite razonamiento, tool calling o agentes; su única salida son imágenes.
+`yonderboard/abdulcigarettes_LoRA` es un adaptador LoRA para generación de imágenes text-to-image entrenado con DreamBooth sobre `stabilityai/stable-diffusion-xl-base-1.0`. Lo publica el usuario de Hugging Face `yonderboard` y su función es inyectar en SDXL un estilo concreto, activado mediante el prompt de disparo `photo collage in CHERKASHIN style`. No es un modelo de lenguaje: no procesa texto como salida ni admite razonamiento, tool calling o agentes; su única salida son imágenes.
 
 El repositorio es de tipo `diffusers` + `template:sd-lora`, con pesos en safetensors y licencia OpenRAIL++. La model card se ha generado automáticamente desde el script de entrenamiento y conserva varios apartados con marcadores `[TODO]` (uso previsto, sesgos, detalles del dataset), por lo que la información sobre datos de entrenamiento, rango del LoRA y número de pasos no está disponible públicamente.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Prompt / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yonderboard/abdulcigarettes_LoRA | LoRA DreamBooth sobre SDXL | no disponible (adaptador); base ~3.500 M | 77 tokens (text encoders SDXL) | openrail++ | HuggingFace, 0 descargas |
+| yonderboard/abdulcigarettes_LoRA | LoRA DreamBooth sobre SDXL | no disponible (adaptador); base ~3.500 M | 77 tokens (text encoders SDXL) | openrail++ | Hugging Face, 0 descargas |
 | stabilityai/stable-diffusion-xl-base-1.0 | Modelo base completo | ~3.500 M (UNet ~2.600 M + text encoders) | 77 tokens | openrail++ | Ampliamente disponible, ecosistema maduro |
-| Fine-tune completo de SDXL con DreamBooth | Modelo completo ajustado | ~3.500 M | 77 tokens | depende del autor (habitualmente openrail++) | Múltiples variantes en HuggingFace |
+| Fine-tune completo de SDXL con DreamBooth | Modelo completo ajustado | ~3.500 M | 77 tokens | depende del autor (habitualmente openrail++) | Múltiples variantes en Hugging Face |
 | LoRA DreamBooth sobre Stable Diffusion 1.5 | LoRA sobre SD 1.5 | base ~860 M | 77 tokens | CreativeML OpenRAIL-M | Ecosistema muy extenso, menor resolución nativa (512x512) |
 
 Frente a un fine-tune completo, este LoRA ofrece la ventaja de un fichero mucho más pequeño y reversible (se puede descargar del pipeline en tiempo de ejecución), a costa de menor capacidad de cambio y de no haber sido entrenado en el text encoder. Frente a SD 1.5, SDXL aporta resolución nativa de 1024x1024 y mejor adherencia al prompt, con un coste de VRAM notablemente mayor.
@@ -93,7 +93,7 @@ Frente a un fine-tune completo, este LoRA ofrece la ventaja de un fichero mucho 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yonderboard/abdulcigarettes_LoRA
+- Modelo en Hugging Face: https://huggingface.co/yonderboard/abdulcigarettes_LoRA
 - Modelo base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE usado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Paper de DreamBooth: https://dreambooth.github.io/

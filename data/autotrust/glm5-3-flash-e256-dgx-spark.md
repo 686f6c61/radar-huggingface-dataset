@@ -134,11 +134,11 @@ En tool use, E224 obtiene ~5 puntos mas que este modelo en BFCL v4 Multi-Turn Ba
 - Longitud de contexto: no se especifica la ventana maxima oficial; los presupuestos de tokens usados en benchmarks (65.536 y 163.840) no equivalen necesariamente al limite de contexto del modelo.
 - Despliegue ajustado: el autor describe la ejecucion en una unica B200 como "ajustada" en memoria, y la configuracion de 2 x DGX Spark no esta validada.
 - Limitacion de hardware: requiere GPUs Blackwell (GB10, B200, GB200) y no puede ejecutarse en GPU de consumo; no se documentan rutas alternativas como llama.cpp u Ollama.
-- Advertencia sobre los resultados de busqueda web: las consultas realizadas no devolvieron informacion tecnica relevante sobre el modelo (unicamente resultados de contenido para adultos sin relacion). Los datos de esta ficha proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+- Advertencia sobre los resultados de busqueda web: las consultas realizadas no devolvieron informacion tecnica relevante sobre el modelo (unicamente resultados de contenido para adultos sin relacion). Los datos de esta ficha proceden exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/GLM5.3-Flash-E256-DGX-Spark
+- Modelo en Hugging Face: https://huggingface.co/autotrust/GLM5.3-Flash-E256-DGX-Spark
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Build E224 de la misma familia: https://huggingface.co/autotrust/GLM5.3-Flash-E224-DGX-Spark
 - Paper, blog o repositorio adicionales: no disponible en la informacion proporcionada

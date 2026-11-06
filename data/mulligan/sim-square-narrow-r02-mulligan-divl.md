@@ -28,7 +28,7 @@ Su relevancia actual es metodologica: el proyecto Mulligan investiga recogida de
 | Paso de entrenamiento | 150001 |
 | Actor congelado de origen | `mulligan/sim-square-narrow-r02-mulligan-idql` |
 | Tamano del repositorio | 1,4 GB |
-| Pipeline (HuggingFace) | robotics |
+| Pipeline (Hugging Face) | robotics |
 | Tipo de entrada | estado (state-based); no hay evidencia de entrada visual en la informacion disponible |
 | Descargas / likes | 0 / 0 |
 
@@ -112,7 +112,7 @@ No se han identificado en la informacion disponible alternativas externas al pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r02-mulligan-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r02-mulligan-divl
 - Proyecto Mulligan: https://mulligan.page/
 - Policy Arena (evaluaciones): https://arena.mulligan.page/
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-narrow-r02-mulligan-idql
@@ -124,6 +124,6 @@ No se han identificado en la informacion disponible alternativas externas al pro
 - Dataset de rollouts Mulligan c02: https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-mulligan-policy-rollouts
 - Dataset de rollouts Mulligan c03: https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts
 - Listado de modelos con etiqueta `divl-agent`: https://huggingface.co/models?other=divl-agent
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Repositorio de codigo de Mulligan (configuraciones de ejecucion): referenciado en la model card, enlace directo no disponible
 - Paper tecnico de Mulligan: referenciado a traves de https://mulligan.page/, enlace directo al preprint no disponible

@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: con los pesos en safetensors de 11.5 GB (probablemente en fp16 o fp32), la inferencia en fp16 requeriría al menos 12 GB de VRAM. Con cuantización a 4 bits (no disponible en el repo), podría reducirse a unos 4-5 GB, pero no se ofrecen archivos cuantizados.
 - GPU recomendadas: para fp16, una RTX 3060 12GB, RTX 4070 o superior. Para cuantización, una RTX 3060 8GB podría ser suficiente, pero no hay archivos GGUF ni AWQ disponibles.
 - En consumer GPU: sí, es factible en tarjetas con 12 GB o más de VRAM, aunque la latencia dependerá de la implementación.
-- Opciones de despliegue: al estar en formato safetensors, puede cargarse con transformers de HuggingFace, vLLM o TGI, siempre que se especifique la arquitectura MoE correcta. No hay soporte directo para llama.cpp u Ollama a menos que se convierta a GGUF.
+- Opciones de despliegue: al estar en formato safetensors, puede cargarse con transformers de Hugging Face, vLLM o TGI, siempre que se especifique la arquitectura MoE correcta. No hay soporte directo para llama.cpp u Ollama a menos que se convierta a GGUF.
 - Latencia y throughput: no disponibles; dependerá del número de parámetros activos, que se desconoce.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edusc182/Llama-3.2-6B-MoE_Uncensored
+- Hugging Face: https://huggingface.co/edusc182/Llama-3.2-6B-MoE_Uncensored
 - Dataset de entrenamiento: https://huggingface.co/datasets/teknium/OpenHermes-2.5
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Llama-3.2-3B-Instruct-abliterated
 - Modelo base heretic: https://huggingface.co/DavidAU/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored

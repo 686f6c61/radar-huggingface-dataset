@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `honeysandhu/lora`, alojado en HuggingFace, contiene un archivo de 35,2 GB identificado como "lora", pero carece de documentación técnica, model card descriptiva, licencia especificada o metadatos de entrenamiento. El autor es `honeysandhu` y el repositorio fue creado el 23 de agosto de 2026 (fecha futura en el contexto actual). No se proporciona ninguna información sobre la arquitectura, el tipo de modelo base, los parámetros, el contexto o las capacidades. Las búsquedas web no arrojan resultados relacionados con este repositorio concreto, sino solo listados genéricos de modelos LoRA para difusión de imágenes. Por tanto, no es posible evaluar su utilidad ni su rendimiento. Se trata de un repositorio con contenido no documentado y sin licencia conocida, lo que lo hace inadecuado para su uso en producción sin una verificación exhaustiva previa.
+El repositorio `honeysandhu/lora`, alojado en Hugging Face, contiene un archivo de 35,2 GB identificado como "lora", pero carece de documentación técnica, model card descriptiva, licencia especificada o metadatos de entrenamiento. El autor es `honeysandhu` y el repositorio fue creado el 23 de agosto de 2026 (fecha futura en el contexto actual). No se proporciona ninguna información sobre la arquitectura, el tipo de modelo base, los parámetros, el contexto o las capacidades. Las búsquedas web no arrojan resultados relacionados con este repositorio concreto, sino solo listados genéricos de modelos LoRA para difusión de imágenes. Por tanto, no es posible evaluar su utilidad ni su rendimiento. Se trata de un repositorio con contenido no documentado y sin licencia conocida, lo que lo hace inadecuado para su uso en producción sin una verificación exhaustiva previa.
 
 ## Especificaciones tecnicas
 
@@ -54,4 +54,4 @@ No disponible. No se ha identificado qué tipo de modelo es ni se dispone de inf
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/honeysandhu/lora)
+- [Repositorio Hugging Face](https://huggingface.co/honeysandhu/lora)

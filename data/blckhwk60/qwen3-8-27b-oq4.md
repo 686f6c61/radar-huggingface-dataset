@@ -64,5 +64,5 @@ No se dispone de información suficiente para comparar con otros modelos cuantiz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BLCKHWK60/Qwen3.8-27B-oQ4
+- Modelo en Hugging Face: https://huggingface.co/BLCKHWK60/Qwen3.8-27B-oQ4
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx

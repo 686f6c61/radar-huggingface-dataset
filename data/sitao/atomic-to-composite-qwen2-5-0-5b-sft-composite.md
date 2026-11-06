@@ -58,7 +58,7 @@ Estos numeros provienen del log de validacion de la ejecucion de entrenamiento, 
 - VRAM estimada para inferencia: aproximadamente 1-1,5 GB en precision completa (bf16/fp16), dado el tamano de 494 M de parametros y 1,0 GB de pesos.
 - Cabe con holgura en GPUs de consumo: cualquier GPU moderna con 4 GB de VRAM o mas (por ejemplo, RTX 3060, RTX 4060 o superiores); incluso ejecutable en CPU con velocidad razonable o en portatiles.
 - GPU recomendadas: no requiere GPUs de gama alta; para experimentacion masiva con entrenamiento o RL, el paper emplea infraestuctura no especificada, pero inferencia funciona en hardware basico.
-- Opciones de despliegue: transformers (codigo oficial de la model card), text-generation-inference (tag compatible en HuggingFace), y en principio cualquier runtime compatible con arquitectura Qwen2 como llama.cpp o Ollama (mediante conversion a GGUF, no disponible oficialmente en el repositorio).
+- Opciones de despliegue: transformers (codigo oficial de la model card), text-generation-inference (tag compatible en Hugging Face), y en principio cualquier runtime compatible con arquitectura Qwen2 como llama.cpp o Ollama (mediante conversion a GGUF, no disponible oficialmente en el repositorio).
 - Latencia y throughput estimados: no disponible; al ser un modelo de menos de 500 M de parametros, se espera inferencia rapida incluso en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ Como referencia de tamano, la base Qwen2.5-0.5B original comparte arquitectura y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-0.5b-sft-composite
+- Modelo en Hugging Face: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-0.5b-sft-composite
 - Paper (arXiv): https://arxiv.org/abs/2512.01970
 - Pagina del proyecto: https://sitaocheng.github.io/atomic/
 - Codigo (GitHub): https://github.com/sitaocheng/from_atomic_to_composite

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este modelo es un artefacto de despliegue privado de una politica ACT (Action Chunking with Transformers) para el control de un robot manipulador Franka con teleoperacion Pico4. Ha sido desarrollado por el usuario Exile051112 y publicado en HuggingFace como parte del ecosistema LeRobot. La politica fue entrenada con fine-tuning completo (no LoRA) sobre la condicion `c3_red_yellow_blue_edited`, que combina datos reales de color rojo y amarillo con datos azules editados.
+Este modelo es un artefacto de despliegue privado de una politica ACT (Action Chunking with Transformers) para el control de un robot manipulador Franka con teleoperacion Pico4. Ha sido desarrollado por el usuario Exile051112 y publicado en Hugging Face como parte del ecosistema LeRobot. La politica fue entrenada con fine-tuning completo (no LoRA) sobre la condicion `c3_red_yellow_blue_edited`, que combina datos reales de color rojo y amarillo con datos azules editados.
 
 El modelo resuelve el problema de control visual-motor para manipulacion robotica: recibe imagenes RGB de dos camaras (superior y muneca) junto con el estado de propiocepcion del robot, y genera secuencias de acciones (chunks) que representan la pose TCP y el estado del gripper. Con aproximadamente 51,7 millones de parametros, es una politica compacta adecuada para despliegue en tiempo real. El checkpoint corresponde a 10.000 pasos de entrenamiento.
 
-La relevancia de este modelo radica en su integracion con LeRobot, el framework de robotica de HuggingFace, lo que permite reproducir y desplegar politicas de manipulacion con un flujo de trabajo estandarizado. Sin embargo, es un artefacto de despliegue especifico para un setup concreto de robot y no incluye los controladores del robot ni la calibracion de camaras.
+La relevancia de este modelo radica en su integracion con LeRobot, el framework de robotica de Hugging Face, lo que permite reproducir y desplegar politicas de manipulacion con un flujo de trabajo estandarizado. Sin embargo, es un artefacto de despliegue especifico para un setup concreto de robot y no incluye los controladores del robot ni la calibracion de camaras.
 
 ## Especificaciones tecnicas
 
@@ -82,6 +82,6 @@ Nota: la comparativa se basa en informacion publica general sobre estas arquitec
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Exile051112/franka-pico4-act-c3-red-yellow-blue-edited
-- HuggingFace (modelo relacionado SmolVLA c2): https://huggingface.co/Exile051112/franka-pico4-smolvla-c2-red-yellow-blue-real
+- Hugging Face (modelo): https://huggingface.co/Exile051112/franka-pico4-act-c3-red-yellow-blue-edited
+- Hugging Face (modelo relacionado SmolVLA c2): https://huggingface.co/Exile051112/franka-pico4-smolvla-c2-red-yellow-blue-real
 - LeRobot (framework oficial): https://github.com/huggingface/lerobot

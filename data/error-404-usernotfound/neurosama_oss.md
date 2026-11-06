@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neurosama OSS es un ajuste fino (fine-tune) del modelo base google/gemma-4-12B-it, publicado en HuggingFace por el usuario error-404-userNotFound. Segun los metadatos de la model card, se trata de un modelo derivado de la familia Gemma 4 de Google, con 12.000 millones de parametros, entrenado sobre el dataset propio error-404-userNotFound/neurosama_oss_dataset y orientado al idioma ingles. La licencia declarada es MIT, lo que en principio permite uso comercial y modificacion, aunque conviene verificar la compatibilidad con las condiciones del modelo base.
+Neurosama OSS es un ajuste fino (fine-tune) del modelo base google/gemma-4-12B-it, publicado en Hugging Face por el usuario error-404-userNotFound. Segun los metadatos de la model card, se trata de un modelo derivado de la familia Gemma 4 de Google, con 12.000 millones de parametros, entrenado sobre el dataset propio error-404-userNotFound/neurosama_oss_dataset y orientado al idioma ingles. La licencia declarada es MIT, lo que en principio permite uso comercial y modificacion, aunque conviene verificar la compatibilidad con las condiciones del modelo base.
 
 La relevancia de esta ficha es limitada por la escasez de informacion disponible: la model card contiene unicamente la nota "coming soon", sin descripcion de arquitectura, datos de entrenamiento, hiperparametros de ajuste fino ni resultados de evaluacion. No se han publicado resultados de benchmarks, demos ni documentacion tecnica adicional. El modelo registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 5 de noviembre de 2026, lo que sugiere un lanzamiento muy reciente o un repositorio en estado embrionario.
 
@@ -44,7 +44,7 @@ Respecto al entrenamiento, los unicos datos disponibles son la existencia de un 
 - Evaluacion comparativa de datasets: investigadores interesados en el dataset del autor pueden utilizarlo como referencia para medir la transferencia de conocimiento de un fine-tune sobre Gemma 4.
 - Generacion de texto controlada en pipelines internos: en escenarios donde la licencia MIT sea un requisito, el modelo puede integrarse en prototipos internos no criticos, con supervision humana obligatoria.
 - Base para ajustes adicionales (continued fine-tuning): al ser un fine-tune de un base ampliamente documentado, puede servir como inicializacion para tareas especificas en ingles, aunque la ausencia de pesos en formatos eficientes complica el despliegue.
-- Docencia y formacion: util como ejemplo practico de publicacion de modelos en HuggingFace y de las carencias habituales en model cards incompletas.
+- Docencia y formacion: util como ejemplo practico de publicacion de modelos en Hugging Face y de las carencias habituales en model cards incompletas.
 
 ## Benchmarks y rendimiento
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Neurosama OSS (este modelo) | 12B (derivado) | no disponible | MIT | HuggingFace, 0 descargas | no disponible |
-| google/gemma-4-12B-it (base) | 12B | no disponible en esta ficha | condiciones de Gemma (no verificadas aqui) | HuggingFace, modelo oficial | no disponible en esta ficha |
-| Fine-tunes comunitarios de Gemma de ~12B | ~12B | variable | variable (a menudo MIT o Apache 2.0) | HuggingFace | variable |
+| Neurosama OSS (este modelo) | 12B (derivado) | no disponible | MIT | Hugging Face, 0 descargas | no disponible |
+| google/gemma-4-12B-it (base) | 12B | no disponible en esta ficha | condiciones de Gemma (no verificadas aqui) | Hugging Face, modelo oficial | no disponible en esta ficha |
+| Fine-tunes comunitarios de Gemma de ~12B | ~12B | variable | variable (a menudo MIT o Apache 2.0) | Hugging Face | variable |
 
 No se dispone de datos suficientes para comparar rendimiento con alternativas de la misma categoria; la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/error-404-userNotFound/neurosama_oss
+- Modelo en Hugging Face: https://huggingface.co/error-404-userNotFound/neurosama_oss
 - Dataset del autor: https://huggingface.co/datasets/error-404-userNotFound/neurosama_oss_dataset
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 

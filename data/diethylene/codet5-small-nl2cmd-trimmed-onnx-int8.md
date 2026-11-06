@@ -21,7 +21,7 @@ Su relevancia practica es acotada pero clara: es un componente pequeno y gratuit
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (modelo cuantizado int8); el modelo base del que deriva esta en ONNX |
 
-Otros datos de interes recogidos en la ficha de HuggingFace: pipeline declarado `translation`, libreria `optimum`, tamano del repositorio 0,1 GB, 0 descargas y 0 likes en el momento de la consulta.
+Otros datos de interes recogidos en la ficha de Hugging Face: pipeline declarado `translation`, libreria `optimum`, tamano del repositorio 0,1 GB, 0 descargas y 0 likes en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ No se dispone de resultados de benchmark que permitan una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx-int8
 - Modelo base (ONNX): https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx
 - Dataset NL2SH-ALFA: https://huggingface.co/datasets/westenfelder/NL2SH-ALFA
 - Paper relacionado (NAACL 2025), "LLM-Supported Natural Language to Bash Translation": https://doi.org/10.18653/v1/2025.naacl-long.555

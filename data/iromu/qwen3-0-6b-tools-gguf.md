@@ -80,7 +80,7 @@ La comparativa se basa en datos publicos de los modelos base. El modelo de iromu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/Qwen3-0.6B-tools-GGUF
+- Modelo en Hugging Face: https://huggingface.co/iromu/Qwen3-0.6B-tools-GGUF
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Version GGUF de unsloth para Qwen3-0.6B: https://huggingface.co/unsloth/Qwen3-0.6B-GGUF
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

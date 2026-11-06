@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jeethu/granite-4.2-3b-PARO es una version cuantizada a 4 bits del modelo ibm-granite/granite-4.2-3b de IBM, publicada por el usuario Jeethu en HuggingFace. La cuantizacion se ha realizado con ParoQuant (Pairwise Rotation Quantization), un metodo de cuantizacion INT4 orientado a modelos de razonamiento que, segun sus autores, cierra la brecha de precision respecto a FP16 manteniendo una velocidad cercana a AWQ. El modelo base pertenece a la familia Granite 4.2 de IBM y esta etiquetado para generacion de texto, razonamiento con modo "thinking" y tool calling.
+Jeethu/granite-4.2-3b-PARO es una version cuantizada a 4 bits del modelo ibm-granite/granite-4.2-3b de IBM, publicada por el usuario Jeethu en Hugging Face. La cuantizacion se ha realizado con ParoQuant (Pairwise Rotation Quantization), un metodo de cuantizacion INT4 orientado a modelos de razonamiento que, segun sus autores, cierra la brecha de precision respecto a FP16 manteniendo una velocidad cercana a AWQ. El modelo base pertenece a la familia Granite 4.2 de IBM y esta etiquetado para generacion de texto, razonamiento con modo "thinking" y tool calling.
 
 El interes de esta ficha radica en que se trata de un artefacto de cuantizacion, no de un entrenamiento nuevo: su relevancia depende de la del modelo base y de la calidad del esquema ParoQuant. El repositorio ocupa 2,7 GB y declara 947.120.640 parametros totales en safetensors, una cifra que no cuadra con la denominacion "3b" del nombre y del modelo base, por lo que conviene verificar la configuracion real antes de integrarlo en produccion.
 
@@ -90,11 +90,11 @@ No se dispone de datos suficientes para comparar rendimiento numerico con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeethu/granite-4.2-3b-PARO
+- Modelo en Hugging Face: https://huggingface.co/Jeethu/granite-4.2-3b-PARO
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Paper de ParoQuant: https://arxiv.org/abs/2511.10645
 - Blog de ParoQuant: https://paroquant.z-lab.ai
-- Coleccion de modelos ParoQuant en HuggingFace: https://huggingface.co/collections/z-lab/paroquant
+- Coleccion de modelos ParoQuant en Hugging Face: https://huggingface.co/collections/z-lab/paroquant
 - Paquete PyPI paroquant: https://pypi.org/project/paroquant/
 - Repositorio GitHub de paroquant: https://github.com/z-lab/paroquant
 

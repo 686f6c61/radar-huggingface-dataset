@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `aravdhoot/risk-spec-specv3local-g31-rae2decltraceg31-gemma-4-31b-it-hp500-r32-s0-20260914` no es un modelo completo, sino un adaptador LoRA publicado en HuggingFace por el usuario `aravdhoot` bajo la libreria PEFT. Se entrena sobre el modelo base `google/gemma-4-31B-it`, referenciado en la model card con la revision concreta `842da3794eaa0b77d5f08bae87a17459d91ff475`, por lo que requiere descargar dicho modelo base para poder utilizarse.
+El modelo identificado como `aravdhoot/risk-spec-specv3local-g31-rae2decltraceg31-gemma-4-31b-it-hp500-r32-s0-20260914` no es un modelo completo, sino un adaptador LoRA publicado en Hugging Face por el usuario `aravdhoot` bajo la libreria PEFT. Se entrena sobre el modelo base `google/gemma-4-31B-it`, referenciado en la model card con la revision concreta `842da3794eaa0b77d5f08bae87a17459d91ff475`, por lo que requiere descargar dicho modelo base para poder utilizarse.
 
 El adaptador pertenece a una linea de trabajo interna del autor denominada "risk-spec local line", con identificadores de linaje como el brazo `ra_e2_decl_trace_g31` y la constitucion `ra_e2_decl_trace` (hash `2b20aeaf65a5`). La receta de entrenamiento indica un rango LoRA de 32, un learning rate de 1e-4, 500 pasos maximos y un conjunto de prompts de origen (`src/constitution/prompts/risk_seeds_v2.jsonl`) junto con una semilla de WildChat (`wildchat_seed: 12345`). Todo apunta a un experimento de ajuste fino orientado a especificaciones de comportamiento y gestion de riesgo, no a un modelo de proposito general.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento que permitan una comparativa cuantitativa.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aravdhoot/risk-spec-...-gemma-4-31b-it-hp500-r32-s0 | Adaptador LoRA (PEFT) | Adaptador de rango 32 sobre base de 31B (segun nombre) | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| aravdhoot/risk-spec-...-gemma-4-31b-it-hp500-r32-s0 | Adaptador LoRA (PEFT) | Adaptador de rango 32 sobre base de 31B (segun nombre) | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | google/gemma-4-31B-it (modelo base referenciado) | Modelo completo | 31B (segun nombre) | no disponible | no disponible en la informacion proporcionada | Referenciado por revision `842da3794...` |
 | Otros adaptadores LoRA de la misma linea "risk-spec" del autor | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | Presumiblemente publicos; no verificados en la informacion disponible |
 
@@ -99,6 +99,6 @@ No se han identificado en la informacion proporcionada alternativas de terceros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-rae2decltraceg31-gemma-4-31b-it-hp500-r32-s0-20260914
+- Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-rae2decltraceg31-gemma-4-31b-it-hp500-r32-s0-20260914
 - Modelo base referenciado en la model card: `google/gemma-4-31B-it`, revision `842da3794eaa0b77d5f08bae87a17459d91ff475` (no se ha localizado el enlace directo en la informacion proporcionada).
 - Resultados de busqueda web: las busquedas realizadas no devolvieron ningun recurso relevante sobre este modelo, su arquitectura o su autoria. Los unicos resultados obtenidos fueron hilos de un foro indonesio (KASKUS) sin relacion alguna con el modelo, por lo que no se incluyen como enlaces.

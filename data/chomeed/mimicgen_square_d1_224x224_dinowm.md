@@ -102,7 +102,7 @@ No se dispone de comparaciones con otros world models de robótica (como UniSim 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chomeed/mimicgen_square_d1_224x224_dinowm
+- Modelo en Hugging Face: https://huggingface.co/chomeed/mimicgen_square_d1_224x224_dinowm
 - Paper DINO-WM: https://arxiv.org/abs/2411.04983
 - Web de MimicGen: https://mimicgen.github.io/
 - Repositorio oficial de MimicGen: https://github.com/NVlabs/mimicgen

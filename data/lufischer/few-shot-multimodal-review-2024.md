@@ -65,7 +65,7 @@ No disponible. No existe una categoria de modelos comparable porque este reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lufischer/few-shot-multimodal-review-2024
+- Repositorio en Hugging Face: https://huggingface.co/lufischer/few-shot-multimodal-review-2024
 - Survey sobre adaptacion few-shot de modelos fundacionales multimodales (Springer): https://link.springer.com/article/10.1007/s10462-024-10915-y
 - Articulo "Few-shot Adaptation of Multi-modal Foundation Models: A Survey" (arXiv): https://arxiv.org/abs/2401.01736
 - Articulo "Few-Shot Multimodal Medical Imaging: A Theoretical Framework" (arXiv): https://arxiv.org/pdf/2511.01140

@@ -21,7 +21,7 @@ El adaptador tiene un tamaño de 1.3 GB en formato safetensors y está diseñado
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena con la configuración: r=64, alpha=128, dropout=0.05, learning rate 1e-4, batch size 1 con grad_accum=16, 4 épocas, y max_seq_len=8192. El entrenamiento se realiza con `thinking: true` (modo de razonamiento activado). El dataset de entrenamiento es `LASR-Callum/2026-08-19-less-top10-difficult-advice-220-train`, que contiene las 220 filas de mayor influencia según LESS score_max de un pool de datos de "consejo difícil". El adaptador se genera mediante PEFT (Parameter-Efficient Fine-Tuning) y se sube a HuggingFace con metadatos de procedencia que incluyen el commit de GitHub del código fuente.
+El adaptador se entrena con la configuración: r=64, alpha=128, dropout=0.05, learning rate 1e-4, batch size 1 con grad_accum=16, 4 épocas, y max_seq_len=8192. El entrenamiento se realiza con `thinking: true` (modo de razonamiento activado). El dataset de entrenamiento es `LASR-Callum/2026-08-19-less-top10-difficult-advice-220-train`, que contiene las 220 filas de mayor influencia según LESS score_max de un pool de datos de "consejo difícil". El adaptador se genera mediante PEFT (Parameter-Efficient Fine-Tuning) y se sube a Hugging Face con metadatos de procedencia que incluyen el commit de GitHub del código fuente.
 
 El experimento sigue un diseño de "brazos" (arms): el brazo LESS (este modelo) y un brazo de control aleatorio (`LASR-Callum/qwen3.6-27b-lora-random220-control-r64`). Ambos comparten todos los hiperparámetros y el protocolo de entrenamiento, diferenciándose únicamente en las 220 filas de datos vistas. Esto permite aislar el efecto de la selección de datos en el rendimiento final.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LASR-Callum/qwen3.6-27b-lora-less-top10-220-r64 | Adaptador sobre 27B | 262K (base) | No disponible | HuggingFace |
-| LASR-Callum/qwen3.6-27b-lora-random220-control-r64 | Adaptador sobre 27B (control aleatorio) | 262K (base) | No disponible | HuggingFace |
-| Qwen/Qwen3.6-27B (base) | 27B | 262K | No especificada (probablemente Apache 2.0) | HuggingFace |
+| LASR-Callum/qwen3.6-27b-lora-less-top10-220-r64 | Adaptador sobre 27B | 262K (base) | No disponible | Hugging Face |
+| LASR-Callum/qwen3.6-27b-lora-random220-control-r64 | Adaptador sobre 27B (control aleatorio) | 262K (base) | No disponible | Hugging Face |
+| Qwen/Qwen3.6-27B (base) | 27B | 262K | No especificada (probablemente Apache 2.0) | Hugging Face |
 
 La comparativa directa entre los dos adaptadores (LESS vs. control aleatorio) es el objetivo del experimento, pero no se han publicado resultados. Frente al modelo base, el adaptador añade una especialización en datos de "consejo difícil" sin cambiar la arquitectura.
 
@@ -77,7 +77,7 @@ La comparativa directa entre los dos adaptadores (LESS vs. control aleatorio) es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-less-top10-220-r64
+- Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-less-top10-220-r64
 - Dataset de entrenamiento: https://huggingface.co/datasets/LASR-Callum/2026-08-19-less-top10-difficult-advice-220-train
 - Repo de código fuente: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication (commit 4078304)
 - Brazo de control aleatorio: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-random220-control-r64

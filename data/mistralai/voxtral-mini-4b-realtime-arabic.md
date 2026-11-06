@@ -77,7 +77,7 @@ No se publican en la información disponible cifras de MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Voxtral Mini 4B Realtime Arabic | 4,43 B | no disponible | CER medio 8,82 % en siete benchmarks árabes (retardo 480 ms) | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Voxtral Mini 4B Realtime Arabic | 4,43 B | no disponible | CER medio 8,82 % en siete benchmarks árabes (retardo 480 ms) | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Voxtral Mini 4B Realtime (base, 2602) | no disponible en la información recibida | no disponible | no disponible | no disponible | Pesos abiertos; recomendado por los autores para idiomas distintos del árabe |
 | Voxtral Transcribe Arabic | no disponible | no disponible | CER 7,91 % (offline) | no disponible | Producto de Mistral; no se indica que sus pesos sean abiertos |
 
@@ -98,7 +98,7 @@ No se dispone de datos verificables en la información proporcionada para compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-Arabic
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-Arabic
 - Modelo base: https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602
 - Documentación de Transformers para Voxtral Realtime: https://huggingface.co/docs/transformers/main/en/model_doc/voxtral_realtime
 - Repositorio de vLLM: https://github.com/vllm-project/vllm

@@ -4,7 +4,7 @@
 
 Qwen3.8-27B EfficientThink es un modelo de lenguaje de 27 mil millones de parámetros, desarrollado por nerkyor como un fine-tuning del modelo base Qwen/Qwen3.8-27B. Se presenta en una versión cuantizada NVFP4 con soporte de predicción multi-token (MTP) y decodificación especulativa mediante un borrador DFlash2 en formato FP8 estático. El modelo está diseñado para explorar la viabilidad técnica de la disolución de tendencias de rechazo (uncensored) y la eficiencia del razonamiento, combinando técnicas de SFT y SimPO con una estrategia de cuantización mixta W4A4+W8A8 que reduce los tokens de razonamiento manteniendo el rendimiento.
 
-Se trata de una liberación experimental con licencia Apache 2.0, orientada a la investigación y al estudio de comportamientos de alineación. El modelo está etiquetado como multimodal en HuggingFace, aunque no se detallan las modalidades, y soporta generación de texto en inglés y chino. Su relevancia actual radica en la combinación de cuantización de baja precisión (NVFP4) con decodificación especulativa, lo que permite servir un modelo de 27B con menor coste computacional y latencia, sin sacrificar de forma significativa el rendimiento en benchmarks de razonamiento, conocimiento y código.
+Se trata de una liberación experimental con licencia Apache 2.0, orientada a la investigación y al estudio de comportamientos de alineación. El modelo está etiquetado como multimodal en Hugging Face, aunque no se detallan las modalidades, y soporta generación de texto en inglés y chino. Su relevancia actual radica en la combinación de cuantización de baja precisión (NVFP4) con decodificación especulativa, lo que permite servir un modelo de 27B con menor coste computacional y latencia, sin sacrificar de forma significativa el rendimiento en benchmarks de razonamiento, conocimiento y código.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ La innovación técnica más destacable es el borrador DFlash2, un checkpoint es
 - Razonamiento avanzado: alcanza entre 79,80% y 84,85% en GPQA (conjunto de preguntas de nivel de posgrado) según la variante.
 - Conocimiento general: entre 89,40% y 91,60% en MMLU.
 - Generación de código: entre 74,00% y 78,00% en LiveCodeBench (LCB), con un 100% en problemas fáciles, 93,55% en medios y 47,83% en difíciles (en la variante W4A16).
-- Multimodal: etiquetado como multimodal en HuggingFace, aunque no se especifican las modalidades concretas.
+- Multimodal: etiquetado como multimodal en Hugging Face, aunque no se especifican las modalidades concretas.
 - EfficientThink: el modelo está optimizado para reducir los tokens de razonamiento. La variante mixta W4A4+W8A8 reduce el razonamiento medio en GPQA, MMLU y LCB en comparación con W4A4, manteniendo o mejorando la precisión.
 - Uncensored: el modelo ha sido entrenado para disolver las tendencias de rechazo, lo que le permite generar contenido que otros modelos rechazarían.
 - Decodificación especulativa: incluye un borrador DFlash2 estático FP8 que acelera la inferencia en SGLang.
@@ -73,7 +73,7 @@ La variante mixta W4A4+W8A8 responde correctamente 10 preguntas más en GPQA y 1
 
 ## Comparativa con modelos similares
 
-No se dispone de benchmarks comparativos con otros modelos en la información proporcionada. El modelo es una variante fine-tuned de Qwen/Qwen3.8-27B, y el mismo autor publica otras versiones: el modelo principal en BF16/FP8 (nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2) y variantes GGUF (nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF). En HuggingFace también existen otros modelos "uncensored" de la serie Qwen3.8, como Baekpica/Qwen3.8-Flash-Next-Uncensored-Mixed-Quant-SSD-PLE-GGUF (129B) y vkshdev/Qwen-3.8-28B-uncensored (28B), pero no se han encontrado resultados de rendimiento para comparar.
+No se dispone de benchmarks comparativos con otros modelos en la información proporcionada. El modelo es una variante fine-tuned de Qwen/Qwen3.8-27B, y el mismo autor publica otras versiones: el modelo principal en BF16/FP8 (nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2) y variantes GGUF (nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF). En Hugging Face también existen otros modelos "uncensored" de la serie Qwen3.8, como Baekpica/Qwen3.8-Flash-Next-Uncensored-Mixed-Quant-SSD-PLE-GGUF (129B) y vkshdev/Qwen-3.8-28B-uncensored (28B), pero no se han encontrado resultados de rendimiento para comparar.
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se dispone de benchmarks comparativos con otros modelos en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-MTP-NVFP4
+- Hugging Face: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-MTP-NVFP4
 - Modelo principal BF16/FP8: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
 - Variantes GGUF: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF
 - ModelScope (variante GGUF): https://www.modelscope.cn/models/Merkyor/Qwen3.8-27B-EfficientThink-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF

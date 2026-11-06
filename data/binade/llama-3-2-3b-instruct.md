@@ -93,7 +93,7 @@ La alternativa MLX 8-bit ocupa menos espacio, pero altera las salidas; Binade of
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Binade/Llama-3.2-3B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/Binade/Llama-3.2-3B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Copia empaquetada de origen (unsloth): https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Repositorio Binade (código): https://github.com/GuyShafir/binade

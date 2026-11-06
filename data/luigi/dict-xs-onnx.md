@@ -82,7 +82,7 @@ La comparativa muestra que este modelo es una variante especializada y cuantizad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Luigi/dict-xs-onnx
+- Repositorio Hugging Face: https://huggingface.co/Luigi/dict-xs-onnx
 - Modelo base: https://huggingface.co/ikhou/dict-xs
 - Modelo base cuantizado (referencia): https://huggingface.co/ikhou/dict-xs (mismo enlace, incluye script de exportación)
 - Demo en Space (mencionado en la model card): https://huggingface.co/spaces/ikhou/dict-xs-demo

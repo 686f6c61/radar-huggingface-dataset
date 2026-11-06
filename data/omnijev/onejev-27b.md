@@ -30,7 +30,7 @@ Su relevancia actual está en el nicho de los agentes GUI y la orquestación de 
 
 ## Arquitectura y entrenamiento
 
-La información publicada no detalla la arquitectura interna más allá de indicar que OneJev-27B es un fine-tune completo de Qwen/Qwen3.8-27B, etiquetado con la familia `qwen3_5` en HuggingFace. Por tanto, se hereda la arquitectura del modelo base, pero no se especifican número de capas, tipo de atención, ventana de contexto ni estrategia posicional. Sí se describe el comportamiento funcional: el modelo consume un estado (por ejemplo, `{"task": ..., "screen": "<image:1>"}`) junto con medios adjuntos y un conjunto de preguntas tipadas (`Noul` para verificación booleana, `Choice` para elección entre opciones) y emite una probabilidad calibrada por cada opción en un solo paso hacia delante.
+La información publicada no detalla la arquitectura interna más allá de indicar que OneJev-27B es un fine-tune completo de Qwen/Qwen3.8-27B, etiquetado con la familia `qwen3_5` en Hugging Face. Por tanto, se hereda la arquitectura del modelo base, pero no se especifican número de capas, tipo de atención, ventana de contexto ni estrategia posicional. Sí se describe el comportamiento funcional: el modelo consume un estado (por ejemplo, `{"task": ..., "screen": "<image:1>"}`) junto con medios adjuntos y un conjunto de preguntas tipadas (`Noul` para verificación booleana, `Choice` para elección entre opciones) y emite una probabilidad calibrada por cada opción en un solo paso hacia delante.
 
 En cuanto a los datos, el autor indica que el entrenamiento se realizó sobre 99.193 preguntas procedentes de ejecuciones reales de agentes, vídeos e imágenes. No se publica la composición detallada del dataset, el número de tokens, ni si hubo etapas de RLHF, DPO u otro tipo de alineación. La model card menciona un conjunto de test propio («OneJev test set») compuesto por tipos de pregunta presentes en entrenamiento pero con instancias concretas que ningún modelo vio durante el entrenamiento, y compara los resultados con Jev 1.13 (modelo solo texto), Jev-Omni 12B y Qwen3.8-27B en modo thinking. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
@@ -85,9 +85,9 @@ Los únicos datos cuantitativos de rendimiento disponibles son de latencia:
 
 | Modelo | Base | Parámetros | Pesos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OneJev-27B | Qwen3.8-27B | 27,36B | 54,7 GB (alta precisión) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| OneJev-27B-FP8 | OneJev-27B | 27,36B (8 bits) | 30,4 GB | no disponible | Apache 2.0 | HuggingFace |
-| OneJev-9B | Qwen3.5-9B | no disponible | 18,8 GB | no disponible | Apache 2.0 | HuggingFace |
+| OneJev-27B | Qwen3.8-27B | 27,36B | 54,7 GB (alta precisión) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| OneJev-27B-FP8 | OneJev-27B | 27,36B (8 bits) | 30,4 GB | no disponible | Apache 2.0 | Hugging Face |
+| OneJev-9B | Qwen3.5-9B | no disponible | 18,8 GB | no disponible | Apache 2.0 | Hugging Face |
 | Jev-Omni 12B | no disponible | ≈12B (por nombre) | no disponible | no disponible | no disponible | usado como referencia en la model card |
 | Jev 1.13 | no disponible | no disponible | no disponible | no disponible | no disponible | referencia; solo texto |
 | Qwen3.8-27B (thinking) | — | ≈27B (por nombre) | no disponible | no disponible | no disponible | modelo base; referencia comparativa |
@@ -110,7 +110,7 @@ No se dispone de cifras de rendimiento comparativas en texto, por lo que la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmniJev/OneJev-27B
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev-27B
 - Colección OneJev: https://huggingface.co/collections/OmniJev/onejev
 - Repositorio GitHub: https://github.com/OmniJev/OneJev
 - Sitio web del proyecto: https://omnijev.github.io/OneJev/

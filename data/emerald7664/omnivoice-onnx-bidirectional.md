@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos TTS como XTT
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Emerald7664/OmniVoice-Onnx-bidirectional
+- Repositorio de Hugging Face: https://huggingface.co/Emerald7664/OmniVoice-Onnx-bidirectional
 - Modelo original (PyTorch): https://huggingface.co/k2-fsa/OmniVoice
 - Exportación previa (onnx-community): https://huggingface.co/onnx-community/OmniVoice-Onnx
 - Página en ModelScope: https://www.modelscope.cn/models/onnx-community/OmniVoice-Onnx

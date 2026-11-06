@@ -89,7 +89,7 @@ La principal diferencia frente al modelo base es la eliminación de la censura, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wwayu/Qwen3.8-27B-heretic-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/Wwayu/Qwen3.8-27B-heretic-mlx-4Bit
 - Modelo base (choz/Qwen3.8-27B-heretic): https://huggingface.co/choz/Qwen3.8-27B-heretic
 - Blog de AMD sobre Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

@@ -74,8 +74,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable. Com
 
 ## Enlaces
 
-- Repositorio HuggingFace oficial: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b
-- Repositorio HuggingFace del usuario EllaPriest45: https://huggingface.co/EllaPriest45/Audio8-TTS-0.6B
+- Repositorio Hugging Face oficial: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b
+- Repositorio Hugging Face del usuario EllaPriest45: https://huggingface.co/EllaPriest45/Audio8-TTS-0.6B
 - GitHub del proyecto: https://github.com/Audio8-AI/Audio8_TTS
 - Demo de escucha: https://audio8-ai.github.io/Audio8_TTS/
 - Modelo ONNX INT4 para CPU: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4

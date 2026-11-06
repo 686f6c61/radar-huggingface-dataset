@@ -69,5 +69,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/mkim0818/paia-lane-vl-adapter-rateb)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/mkim0818/paia-lane-vl-adapter-rateb)
 - [Modelo base: openbmb/MiniCPM-V-4_5](https://huggingface.co/openbmb/MiniCPM-V-4_5)

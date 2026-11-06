@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vpakarinen/ltx-25-test` es un repositorio publicado en HuggingFace por el usuario vpakarinen bajo licencia Apache 2.0. Por el nombre del identificador y el tamano del repositorio (0,9 GB), todo apunta a una prueba tecnica o un artefacto experimental vinculado a la familia LTX, aunque la model card no aporta ninguna descripcion funcional: unicamente contiene la declaracion de licencia. No se especifica tarea, arquitectura, tokenizador ni pipeline de inferencia.
+`vpakarinen/ltx-25-test` es un repositorio publicado en Hugging Face por el usuario vpakarinen bajo licencia Apache 2.0. Por el nombre del identificador y el tamano del repositorio (0,9 GB), todo apunta a una prueba tecnica o un artefacto experimental vinculado a la familia LTX, aunque la model card no aporta ninguna descripcion funcional: unicamente contiene la declaracion de licencia. No se especifica tarea, arquitectura, tokenizador ni pipeline de inferencia.
 
 No hay informacion publicada sobre parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. El repositorio no registra descargas ni interacciones, y las fechas de creacion y actualizacion (3 de noviembre de 2026, con cuatro minutos de diferencia) sugieren una publicacion de prueba sin mantenimiento posterior.
 
@@ -41,7 +41,7 @@ El tamano del repositorio (0,9 GB) es compatible con pesos en precision reducida
 - Evaluacion interna de artefactos experimentales: el repositorio puede inspeccionarse para determinar que contiene realmente antes de plantear cualquier uso, dado que la model card no lo describe.
 - Pruebas de carga en infraestructura propia: con 0,9 GB de peso, es viable descargarlo y verificar el formato de los ficheros en un entorno aislado.
 - Referencia de licencia: sirve como ejemplo de publicacion minima bajo Apache 2.0, util para equipos que definan plantillas de model cards.
-- Verificacion de pipelines de HuggingFace: puede emplearse para comprobar el comportamiento de herramientas de descubrimiento y descarga ante repositorios sin metadatos de pipeline.
+- Verificacion de pipelines de Hugging Face: puede emplearse para comprobar el comportamiento de herramientas de descubrimiento y descarga ante repositorios sin metadatos de pipeline.
 - Auditoria de procedencia: permite practicar flujos de trazabilidad sobre artefactos sin documentacion asociada.
 - No se recomienda ningun caso de uso en produccion (atencion al cliente, generacion de codigo, analisis documental, agentes) porque no hay evidencia de capacidades ni de calidad de salida.
 
@@ -74,5 +74,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vpakarinen/ltx-25-test
+- Repositorio en Hugging Face: https://huggingface.co/vpakarinen/ltx-25-test
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

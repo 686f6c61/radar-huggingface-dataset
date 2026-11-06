@@ -63,8 +63,8 @@ Ninguno de los dos modelos omitio o agoto el contexto en las 728 respuestas comp
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | HumanEval | MATH500 | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| Sarvam-30B (base) | ~30B (no confirmado) | 131.072 tokens | 95,73 % | 97,00 % (subconjunto de 200) | Apache-2.0 | HuggingFace |
-| Leo Sarvam 30B (adaptador) | Adaptador LoRA sobre ~30B | 131.072 tokens | 96,95 % | 97,50 % (subconjunto de 200) | Apache-2.0 | HuggingFace |
+| Sarvam-30B (base) | ~30B (no confirmado) | 131.072 tokens | 95,73 % | 97,00 % (subconjunto de 200) | Apache-2.0 | Hugging Face |
+| Leo Sarvam 30B (adaptador) | Adaptador LoRA sobre ~30B | 131.072 tokens | 96,95 % | 97,50 % (subconjunto de 200) | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de otros modelos comparables en la informacion proporcionada. La comparativa se limita al modelo base y a este adaptador.
 
@@ -82,8 +82,8 @@ No se dispone de datos de benchmarks de otros modelos comparables en la informac
 - El adaptador requiere cargar el modelo base de forma independiente; no es un modelo autonomo.
 
 ## Enlaces
-- HuggingFace del adaptador: https://huggingface.co/DesaiJayM/Leo-Sarvam-30B
+- Hugging Face del adaptador: https://huggingface.co/DesaiJayM/Leo-Sarvam-30B
 - Modelo base Sarvam-30B: https://huggingface.co/sarvamai/sarvam-30b
 - Dataset NVIDIA OpenCodeInstruct: https://huggingface.co/datasets/nvidia/OpenCodeInstruct
 - Modelo profesor Qwen3.5-27B: https://huggingface.co/Qwen/Qwen3.5-27B
-- Detalles de evaluacion y codigo de calificacion: carpeta `evaluation/` dentro del repositorio de HuggingFace
+- Detalles de evaluacion y codigo de calificacion: carpeta `evaluation/` dentro del repositorio de Hugging Face

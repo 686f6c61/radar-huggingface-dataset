@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | p0pc0rn-assistant-drafter-gemma4-e4b | no disponible | no disponible | `pocketflux.pack/1` | Apache-2.0 | Solo motor p0pc0rn (WebGPU) |
-| google/gemma-4-E4B-it-assistant | no disponible | no disponible | pesos originales de Google | Apache-2.0 | HuggingFace, ecosistema estandar |
+| google/gemma-4-E4B-it-assistant | no disponible | no disponible | pesos originales de Google | Apache-2.0 | Hugging Face, ecosistema estandar |
 | JoshHughes/p0pc0rn-assistant-nemotron-bolt-e4b-q4 | no disponible | no disponible | `pocketflux.pack/1` | no disponible | Solo motor p0pc0rn (WebGPU) |
 
 El modelo fuente de Google es la alternativa natural para uso fuera de p0pc0rn, al conservar el formato estandar y no requerir un motor propietario. El verificador Nemotron 3.5 Bolt E4B cuantizado a 4 bits es el complemento disenado para operar junto a este drafter.
@@ -81,7 +81,7 @@ El modelo fuente de Google es la alternativa natural para uso fuera de p0pc0rn, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoshHughes/p0pc0rn-assistant-drafter-gemma4-e4b
+- Modelo en Hugging Face: https://huggingface.co/JoshHughes/p0pc0rn-assistant-drafter-gemma4-e4b
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-assistant
 - Verificador complementario: https://huggingface.co/JoshHughes/p0pc0rn-assistant-nemotron-bolt-e4b-q4
 - X oficial del proyecto: https://x.com/p0pc0rnapp

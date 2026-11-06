@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tonycjik/multitask-distilled` es un repositorio experimental publicado en HuggingFace por el usuario tonycjik que contiene una implementación propia de una arquitectura denominada **Mae**, orientada a tareas multitarea y configurada a escala **tiny** (49.600 parámetros totales). No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests*, y que no se reclama ninguna puntuación de benchmark en el repositorio.
+`tonycjik/multitask-distilled` es un repositorio experimental publicado en Hugging Face por el usuario tonycjik que contiene una implementación propia de una arquitectura denominada **Mae**, orientada a tareas multitarea y configurada a escala **tiny** (49.600 parámetros totales). No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests*, y que no se reclama ninguna puntuación de benchmark en el repositorio.
 
 El interés del repositorio es, por tanto, doble. Por un lado, sirve como base de código mínima para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo: incluye `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador Adam con schedule de tipo *step*). Por otro, documenta una combinación arquitectónica poco habitual que combina atención dilatada, fusión mediante *co-attention*, activación gelu tanh y normalización GroupNorm.
 
@@ -79,7 +79,7 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tonycjik/multitask-distilled | 49.600 | no disponible | no disponible (sin entrenar) | MIT | HuggingFace |
+| tonycjik/multitask-distilled | 49.600 | no disponible | no disponible (sin entrenar) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,12 +90,12 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 - Sesgos conocidos: no disponibles; no se ha realizado ninguna evaluación de sesgos ni se documenta la composición de los datos de entrenamiento.
 - Limitaciones de contexto e idioma: la longitud de contexto no está especificada y no se declara ningún idioma soportado.
 - Restricciones de licencia: el código y los pesos se publican bajo licencia MIT, que permite uso comercial, modificación y redistribución. No obstante, el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos; esta advertencia es relevante para producción, ya que la licencia MIT del repositorio no cubre los datos con los que se entrene.
-- Caveat de integración: al ser una implementación personalizada, las APIs de carga automática de HuggingFace requieren un adaptador explícito; no es un modelo *plug and play*.
+- Caveat de integración: al ser una implementación personalizada, las APIs de carga automática de Hugging Face requieren un adaptador explícito; no es un modelo *plug and play*.
 - Caveat de reproducibilidad: la receta por defecto (Adam con schedule step) son valores de partida, no resultados reproducidos. Cualquier resultado futuro debe documentarse por separado de los valores por defecto publicados.
 - Madurez: cero descargas y cero *likes* en el momento de la consulta; sin mantenimiento ni ecosistema verificable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tonycjik/multitask-distilled
+- Repositorio en Hugging Face: https://huggingface.co/tonycjik/multitask-distilled
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos por la búsqueda corresponden a páginas de ayuda de Gmail y de la comunidad de Orange, sin relación alguna con el repositorio.
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada.

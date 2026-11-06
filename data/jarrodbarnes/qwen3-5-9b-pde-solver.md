@@ -85,8 +85,8 @@ No se publican en la informacion disponible resultados de MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Parametros | Contexto | Precision al primer intento (familias no vistas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-9B PDE Solver | LoRA sobre LLM causal | 86,6 M entrenables sobre un base de 9B (denominacion) | 9.728 tokens de entrenamiento, 10.240 recomendados para servicio | 55,7% | Apache 2.0 | Adaptador en HuggingFace |
-| Qwen3.5-9B (base) | LLM causal | 9B (denominacion) | No disponible | 9,0% | No disponible en la informacion proporcionada | HuggingFace |
+| Qwen3.5-9B PDE Solver | LoRA sobre LLM causal | 86,6 M entrenables sobre un base de 9B (denominacion) | 9.728 tokens de entrenamiento, 10.240 recomendados para servicio | 55,7% | Apache 2.0 | Adaptador en Hugging Face |
+| Qwen3.5-9B (base) | LLM causal | 9B (denominacion) | No disponible | 9,0% | No disponible en la informacion proporcionada | Hugging Face |
 | GLM-5.3 | No disponible | No disponible (descrito como sustancialmente mayor) | No disponible | 49,1% | Peso abierto (open-weight) | Peso abierto |
 | MiMo-V2.6-Pro | No disponible | No disponible (descrito como sustancialmente mayor) | No disponible | 45,6% | Peso abierto (open-weight) | Peso abierto |
 
@@ -109,7 +109,7 @@ La comparacion es valida porque los tres modelos se evaluaron con el mismo verif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jarrodbarnes/qwen3.5-9b-pde-solver
+- Modelo en Hugging Face: https://huggingface.co/Jarrodbarnes/qwen3.5-9b-pde-solver
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Articulo de investigacion del autor (receta de entrenamiento, verificador y conjuntos de evaluacion): https://jbarnes850.github.io
 - Identificador arXiv referenciado en las etiquetas del repositorio: arXiv:2607.10474 (sin enlace directo en la informacion proporcionada)

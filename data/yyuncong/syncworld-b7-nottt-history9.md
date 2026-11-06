@@ -97,7 +97,7 @@ No se dispone en la informacion proporcionada de otros modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/yyuncong/SyncWorld-b7-noTTT-history9
+- Hugging Face (modelo): https://huggingface.co/yyuncong/SyncWorld-b7-noTTT-history9
 - Contrapartida con TTT: https://huggingface.co/yyuncong/SyncWorld-b7-TTT10x-history9
 - Licencia (NVIDIA/Cosmos): https://github.com/NVIDIA/Cosmos/blob/main/LICENSE
 - Dataset robocasa formal_2: `yyupsong/robocasa_dataset@e4d1c3f0`

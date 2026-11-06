@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidwdw/fa-code-task00-pilot-gpu-monitor-fef22f7d3dc9-2457533bc8f1` es un repositorio alojado en HuggingFace por el usuario `davidwdw` que, segun su propia model card, no se presenta como un modelo de lenguaje entrenado, sino como un "private fleet archive" (archivo de flota privada) asociado a una receta canonica identificada como `evaluations/2026-09-23_task00_centre_recovery_pilot`. El propio autor lo etiqueta como un paquete de tipo "code" y advierte explicitamente de que se trata de una instantanea ("snapshot") y no de un espejo vivo de directorio, remitiendo a la verificacion de integridad mediante `SHA256SUMS`.
+`davidwdw/fa-code-task00-pilot-gpu-monitor-fef22f7d3dc9-2457533bc8f1` es un repositorio alojado en Hugging Face por el usuario `davidwdw` que, segun su propia model card, no se presenta como un modelo de lenguaje entrenado, sino como un "private fleet archive" (archivo de flota privada) asociado a una receta canonica identificada como `evaluations/2026-09-23_task00_centre_recovery_pilot`. El propio autor lo etiqueta como un paquete de tipo "code" y advierte explicitamente de que se trata de una instantanea ("snapshot") y no de un espejo vivo de directorio, remitiendo a la verificacion de integridad mediante `SHA256SUMS`.
 
 La ficha publica no incluye ninguna especificacion tecnica del contenido: no se declaran parametros, arquitectura, longitud de contexto, idiomas ni licencia. El unico tag presente es `region:us`, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. Las marcas temporales de creacion y actualizacion son del 24 de septiembre de 2026, con apenas dos segundos de diferencia entre ambas, lo que es coherente con una carga automatizada de artefactos mas que con un ciclo de publicacion de un modelo.
 
@@ -46,7 +46,7 @@ Dado que no se ha identificado ningun modelo con capacidades declaradas, los cas
 - Reproduccion de un piloto de recuperacion: el sufijo `centre_recovery_pilot` sugiere un escenario de recuperacion ante fallo; el paquete podria emplearse para reconstruir el estado de un experimento interrumpido.
 - Archivo de flota a largo plazo: al tratarse de una instantanea inmutable, sirve como referencia historica de un estado concreto de la flota, evitando la ambiguedad de un directorio vivo que cambia con el tiempo.
 - Integracion en un sistema de verificacion previa a despliegue: incorporar la comprobacion de `SHA256SUMS` como paso obligatorio en CI/CD antes de promover cualquier artefacto de este repositorio a otros entornos.
-- Analisis forense de publicaciones automatizadas: las marcas temporales (creacion y actualizacion separadas por dos segundos) y la ausencia de metadatos permiten estudiar el comportamiento de cargas automatizadas en HuggingFace.
+- Analisis forense de publicaciones automatizadas: las marcas temporales (creacion y actualizacion separadas por dos segundos) y la ausencia de metadatos permiten estudiar el comportamiento de cargas automatizadas en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -78,7 +78,7 @@ No disponible. Con la informacion proporcionada no es posible identificar la cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-pilot-gpu-monitor-fef22f7d3dc9-2457533bc8f1
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-pilot-gpu-monitor-fef22f7d3dc9-2457533bc8f1
 - Receta canonica referenciada por el autor: `evaluations/2026-09-23_task00_centre_recovery_pilot` (ruta interna citada en la model card; no se proporciona URL publica)
 - Fichero de verificacion de integridad citado: `SHA256SUMS` (sin enlace publico disponible)
 - Paper, blog, repositorio de codigo o demo: no disponibles.

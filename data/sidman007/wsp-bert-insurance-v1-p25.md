@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wsp-bert-insurance-v1-p25` es un clasificador de frases del dominio de seguros construido sobre `google-bert/bert-base-uncased` mediante una tecnica de edicion de pesos en espacio de pesos (weight-space programming) en lugar de entrenamiento por descenso de gradiente. Lo publica el usuario `sidman007` en HuggingFace y resuelve una tarea de clasificacion multietiqueta de 8 categorias propias de documentacion de polizas: concesion de cobertura, exclusion, pago de prima, limites y franquicias, procedimiento de siniestros, definiciones, cancelacion y renovacion, y condiciones y obligaciones del asegurado.
+`wsp-bert-insurance-v1-p25` es un clasificador de frases del dominio de seguros construido sobre `google-bert/bert-base-uncased` mediante una tecnica de edicion de pesos en espacio de pesos (weight-space programming) en lugar de entrenamiento por descenso de gradiente. Lo publica el usuario `sidman007` en Hugging Face y resuelve una tarea de clasificacion multietiqueta de 8 categorias propias de documentacion de polizas: concesion de cobertura, exclusion, pago de prima, limites y franquicias, procedimiento de siniestros, definiciones, cancelacion y renovacion, y condiciones y obligaciones del asegurado.
 
 El interes tecnico no esta en el modelo base, sino en el metodo: un LLM editor lee y escribe directamente los pesos del transformer, aplicando matematicas en forma cerrada sobre pesos y activaciones a partir de un numero presupuestado de pasadas forward, sin retropropagacion ni optimizadores. Se modificaron 176 tensores, lo que supone un 10,400 % de los parametros del modelo. Es, por tanto, una prueba de concepto de adaptacion de dominio sin fine-tuning clasico, con un modelo de 109,5 millones de parametros, contexto de 512 tokens (heredado de BERT base) y licencia Apache 2.0.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| wsp-bert-insurance-v1-p25 | 109,5 M | 512 | Apache 2.0 | Edicion de pesos sin backprop | HuggingFace, sin descargas |
-| google-bert/bert-base-uncased | 110 M | 512 | Apache 2.0 | Preentrenamiento MLM | HuggingFace, ampliamente usado |
-| distilbert-base-uncased | 66 M | 512 | Apache 2.0 | Destilacion de BERT | HuggingFace, ampliamente usado |
-| roberta-base | 125 M | 512 | MIT | Preentrenamiento MLM mejorado | HuggingFace, ampliamente usado |
+| wsp-bert-insurance-v1-p25 | 109,5 M | 512 | Apache 2.0 | Edicion de pesos sin backprop | Hugging Face, sin descargas |
+| google-bert/bert-base-uncased | 110 M | 512 | Apache 2.0 | Preentrenamiento MLM | Hugging Face, ampliamente usado |
+| distilbert-base-uncased | 66 M | 512 | Apache 2.0 | Destilacion de BERT | Hugging Face, ampliamente usado |
+| roberta-base | 125 M | 512 | MIT | Preentrenamiento MLM mejorado | Hugging Face, ampliamente usado |
 
 La comparativa con alternativas de la misma categoria es limitada porque no existen resultados de rendimiento publicados para este modelo. Frente a `bert-base-uncased`, la diferencia es el ajuste al dominio de seguros mediante edicion de pesos en lugar de fine-tuning; frente a `distilbert-base-uncased`, este modelo es mas grande pero parte de una base no destilada; frente a `roberta-base`, la licencia es equivalente en permisividad y el contexto identico.
 
@@ -93,7 +93,7 @@ La comparativa con alternativas de la misma categoria es limitada porque no exis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-v1-p25
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-v1-p25
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Paper de BERT: https://arxiv.org/abs/1810.04805
 - Documentacion de Transformers para clasificacion de secuencias: https://huggingface.co/docs/transformers/tasks/sequence_classification

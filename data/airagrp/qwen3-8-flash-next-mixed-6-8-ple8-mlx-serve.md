@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparado con otros modelos. La comparaci�
 
 | Variante | Parametros | Contexto | Formato y despliegue | Memoria residente | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este pack (mixed-6-8-ple8-mlx-serve) | ~130B en shards safetensors + 51B de tabla de n-gramas en mmap | 262.144 tokens | safetensors + ngram_table.bin, MLX / mlx-serve | ~96 GB mas cache KV | qwen-community-1.0 | Publicado en HuggingFace, 0 descargas y 0 likes |
+| Este pack (mixed-6-8-ple8-mlx-serve) | ~130B en shards safetensors + 51B de tabla de n-gramas en mmap | 262.144 tokens | safetensors + ngram_table.bin, MLX / mlx-serve | ~96 GB mas cache KV | qwen-community-1.0 | Publicado en Hugging Face, 0 descargas y 0 likes |
 | Qwen/Qwen3.8-Flash-Next (bf16 original) | 180B (125B tronco + 51B n-gramas + 4B MTP) | 262.144 tokens | bf16, 360 GB | 360 GB de pesos en bf16 | no disponible en la informacion proporcionada | Modelo base referenciado en la model card |
 | Packs estilo mlx-lm con la tabla de n-gramas como 128 tensores cuantizados | Mismo checkpoint base | 262.144 tokens | safetensors, MLX | ~96 GB mas ~55-64 GB adicionales de tabla residente a 8 bits | no disponible | Estrategia alternativa descrita, sin referencia publicada |
 
@@ -103,7 +103,7 @@ No se han identificado en la información proporcionada modelos comparables de o
 
 ## Enlaces
 
-- Pack en HuggingFace: https://huggingface.co/airagrp/Qwen3.8-Flash-Next-mixed-6-8-ple8-mlx-serve
+- Pack en Hugging Face: https://huggingface.co/airagrp/Qwen3.8-Flash-Next-mixed-6-8-ple8-mlx-serve
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia: archivo LICENSE dentro del repositorio del pack (https://huggingface.co/airagrp/Qwen3.8-Flash-Next-mixed-6-8-ple8-mlx-serve)
 - Script de conversión: tests/convert_qwen38_flash_next.py, en el repositorio de mlx-serve (URL no disponible en la información proporcionada)

@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks en la informacion disponible (ni MM
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Tavik | 20,4 M | 1.024 | Apache 2.0 | HuggingFace (safetensors + GGUF) | Solo ingles, sin benchmarks publicados |
-| Pico 1 (mismo autor) | no disponible | no disponible | no disponible | HuggingFace | Hermano menor de Tavik; datos no incluidos en la informacion proporcionada |
-| SmolLM2-135M | 135 M | 8.192 | Apache 2.0 | HuggingFace | Alternativa de referencia en el segmento sub-200M; datos segun su model card publica |
-| Qwen2.5-0.5B | ~0,49 B | 32.768 | Apache 2.0 | HuggingFace | Opcion mucho mayor, con soporte multilingue y de codigo; datos segun su model card publica |
+| Tavik | 20,4 M | 1.024 | Apache 2.0 | Hugging Face (safetensors + GGUF) | Solo ingles, sin benchmarks publicados |
+| Pico 1 (mismo autor) | no disponible | no disponible | no disponible | Hugging Face | Hermano menor de Tavik; datos no incluidos en la informacion proporcionada |
+| SmolLM2-135M | 135 M | 8.192 | Apache 2.0 | Hugging Face | Alternativa de referencia en el segmento sub-200M; datos segun su model card publica |
+| Qwen2.5-0.5B | ~0,49 B | 32.768 | Apache 2.0 | Hugging Face | Opcion mucho mayor, con soporte multilingue y de codigo; datos segun su model card publica |
 
 Nota: los datos de SmolLM2-135M y Qwen2.5-0.5B provienen de sus model cards publicas y no han sido verificados en la busqueda realizada; no hay benchmarks comparativos directos con Tavik.
 
@@ -105,7 +105,7 @@ Nota: los datos de SmolLM2-135M y Qwen2.5-0.5B provienen de sus model cards publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Convergent-ch/Tavik
+- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Tavik
 - Modelo hermano Pico 1: https://huggingface.co/Convergent-ch/Pico-1
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset Smol-SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

@@ -6,7 +6,7 @@ El modelo `queryn-adapter-fastembed-bge-small_to_me5-large` es un adaptador de e
 
 Se trata de una proyección lineal simple (capa fully connected sin activación) que mapea los 384 valores de entrada a 1024 de salida, con normalización L2 interna. El modelo tiene aproximadamente 394.2 mil parámetros y se distribuye en formato ONNX (opset 17), con licencia MIT. No es un modelo de lenguaje ni de generación, sino un componente de transformación de vectores dentro del motor de traducción de embeddings de Queryn.
 
-La relevancia actual radica en la creciente adopción de modelos de embeddings de diferentes tamaños y dimensiones; este adaptador facilita la interoperabilidad entre sistemas que usan distintos modelos sin reprocesar grandes volúmenes de datos. Aunque el modelo no tiene descargas ni valoraciones en HuggingFace, su diseño es técnicamente sólido y está documentado con métricas de similitud coseno en test.
+La relevancia actual radica en la creciente adopción de modelos de embeddings de diferentes tamaños y dimensiones; este adaptador facilita la interoperabilidad entre sistemas que usan distintos modelos sin reprocesar grandes volúmenes de datos. Aunque el modelo no tiene descargas ni valoraciones en Hugging Face, su diseño es técnicamente sólido y está documentado con métricas de similitud coseno en test.
 
 ## Especificaciones técnicas
 
@@ -70,7 +70,7 @@ No disponible. No se han encontrado adaptadores de embeddings comparables en la 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuerynAi/queryn-adapter-fastembed-bge-small_to_me5-large)
+- [Modelo en Hugging Face](https://huggingface.co/QuerynAi/queryn-adapter-fastembed-bge-small_to_me5-large)
 - [Colección de adaptadores de QuerynAi](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Repositorio de fastembed (Qdrant)](https://github.com/qdrant/fastembed)
 - [Documentación de BGE](https://bge-model.com/)

@@ -102,7 +102,7 @@ La comparación se limita a los artefactos derivados del mismo linaje; no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-XXVII-27B-MLX-2bit
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-XXVII-27B-MLX-2bit
 - Modelo base (MLX): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Modelo base (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Gemelo GGUF del mismo autor: https://huggingface.co/dendriteholdings/Ingot-XXVII-27B-Q2

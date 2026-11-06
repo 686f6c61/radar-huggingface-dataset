@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Llama-3.2-3B-Instruct_SFT_lora_wesad es un adaptador LoRA publicado en HuggingFace por el usuario xw17 bajo el identificador `xw17/Llama-3.2-3B-Instruct_SFT_lora_wesad`. El nombre indica que se trata de un ajuste supervisado (SFT) mediante LoRA sobre el modelo base Llama-3.2-3B-Instruct de Meta, orientado al dataset WESAD (Wearable Stress and Affect Detection). El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador de bajo rango y no con un checkpoint completo de pesos.
+Llama-3.2-3B-Instruct_SFT_lora_wesad es un adaptador LoRA publicado en Hugging Face por el usuario xw17 bajo el identificador `xw17/Llama-3.2-3B-Instruct_SFT_lora_wesad`. El nombre indica que se trata de un ajuste supervisado (SFT) mediante LoRA sobre el modelo base Llama-3.2-3B-Instruct de Meta, orientado al dataset WESAD (Wearable Stress and Affect Detection). El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador de bajo rango y no con un checkpoint completo de pesos.
 
-El modelo resuelve, en principio, la adaptacion de un LLM de proposito general de 3 000 millones de parametros a una tarea especifica de deteccion de estres y afecto a partir de senales de wearables. Su relevancia practica es limitada de momento: acumula 0 descargas y 0 likes, y la model card es la plantilla automatica de HuggingFace sin ningun campo cumplimentado, por lo que no hay informacion verificable sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion.
+El modelo resuelve, en principio, la adaptacion de un LLM de proposito general de 3 000 millones de parametros a una tarea especifica de deteccion de estres y afecto a partir de senales de wearables. Su relevancia practica es limitada de momento: acumula 0 descargas y 0 likes, y la model card es la plantilla automatica de Hugging Face sin ningun campo cumplimentado, por lo que no hay informacion verificable sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion.
 
 Es importante subrayar que el autor no documenta nada: ni la licencia, ni los idiomas, ni el pipeline, ni el procedimiento de entrenamiento. Todo lo que se afirma en esta ficha sobre el modelo base procede de la documentacion publica de Llama-3.2-3B-Instruct y de inferencias a partir del nombre del repositorio, no de la model card del adaptador. Cualquier uso en produccion deberia ir precedido de una validacion propia.
 
@@ -23,11 +23,11 @@ Es importante subrayar que el autor no documenta nada: ni la licencia, ni los id
 
 ## Arquitectura y entrenamiento
 
-No hay informacion tecnica publicada. La model card es la plantilla autogenerada por HuggingFace y todos los apartados relevantes (Model Details, Training Data, Training Procedure, Training Hyperparameters, Evaluation) contienen el marcador `[More Information Needed]`. El unico dato estructural deducible es el nombre del repositorio, que descompone el artefacto en cuatro partes: modelo base Llama-3.2-3B-Instruct, ajuste supervisado (SFT), tecnica LoRA y dataset wesad.
+No hay informacion tecnica publicada. La model card es la plantilla autogenerada por Hugging Face y todos los apartados relevantes (Model Details, Training Data, Training Procedure, Training Hyperparameters, Evaluation) contienen el marcador `[More Information Needed]`. El unico dato estructural deducible es el nombre del repositorio, que descompone el artefacto en cuatro partes: modelo base Llama-3.2-3B-Instruct, ajuste supervisado (SFT), tecnica LoRA y dataset wesad.
 
 Si se toma el nombre al pie de la letra, el entrenamiento consistiria en un ajuste supervisado con LoRA de bajo rango sobre el checkpoint instruct de Llama 3.2 3B, con un dataset derivado de WESAD (Wearable Stress and Affect Detection). WESAD es un corpus publico de senales fisiologicas de wearables (respuesta electrodermal, electrocardiograma, electromiograma, temperatura y acelerometro) recogido en escenarios de estres y relajacion; su uso conjunto con un LLM de texto implicaria algun tipo de serializacion o descripcion textual de esas senales, pero el autor no documenta el preprocesado. No hay evidencia de RLHF, DPO ni ninguna innovacion arquitectonica: el adaptador no modifica la arquitectura del modelo base.
 
-Los tags del repositorio incluyen `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono. Es una referencia heredada de la plantilla de model card de HuggingFace (el calculador ML Impact), no un paper sobre este modelo. No debe interpretarse como publicacion cientifica asociada.
+Los tags del repositorio incluyen `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono. Es una referencia heredada de la plantilla de model card de Hugging Face (el calculador ML Impact), no un paper sobre este modelo. No debe interpretarse como publicacion cientifica asociada.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ Los tags del repositorio incluyen `arxiv:1910.09700`, que corresponde a Lacoste 
 - Investigacion academica sobre deteccion de estres con wearables: el modelo podria emplearse como componente de lenguaje en un pipeline que reciba descriptores textuales de senales fisiologicas (EDA, ECG, temperatura) y produzca una etiqueta de estado afectivo. Es el caso de uso que sugiere el nombre del repositorio, aunque no hay documentacion que lo confirme.
 - Prototipado rapido de clasificadores de afecto: al ser un adaptador LoRA de 0,1 GB, se puede cargar sobre el base en minutos y probar hipotesis sin coste de entrenamiento completo.
 - Reproducibilidad de experimentos: sirve como punto de partida para quien quiera replicar o auditar un ajuste SFT+LoRA sobre WESAD.
-- Educacion y docencia: ejemplo practico de como se publica un adaptador LoRA sobre un modelo instruct de 3B y de los problemas de documentacion en el ecosistema HuggingFace.
+- Educacion y docencia: ejemplo practico de como se publica un adaptador LoRA sobre un modelo instruct de 3B y de los problemas de documentacion en el ecosistema Hugging Face.
 - Base para un ajuste posterior: el adaptador puede fusionarse y seguir entrenandose (continued pretraining o nuevas rondas SFT) si el autor no lo prohibe, algo indeterminado por la ausencia de licencia explicita.
 - Despliegue en entornos con recursos limitados: un modelo de 3B cuantizado a 4 bits ocupa alrededor de 2 GB, por lo que cabria en GPUs de consumo y en CPU con llama.cpp, aunque la utilidad del ajuste concreto para tareas generales es dudosa.
 - Analisis de salud mental asistido: uso potencial en investigacion clinica o de bienestar, siempre con supervision humana y advertencias eticas claras por tratarse de datos sensibles.
@@ -72,17 +72,17 @@ Estimaciones calculadas a partir del tamano del modelo base (3 210 millones de p
 - GPU de consumo: si cabe. Una RTX 3060 de 12 GB, RTX 4070, RTX 4090 o similar ejecutan el modelo en fp16 sin problema; una RTX 3060 de 8 GB requiere cuantizacion a 4 u 8 bits.
 - GPU de datacenter: A100, H100, L40S o A10G son sobredimensionadas para inferencia de un 3B, pero utiles para lotes grandes o contextos muy largos.
 - CPU: viable en cuantizacion de 4 bits con llama.cpp, con velocidades del orden de 5-20 tokens por segundo en procesadores modernos de escritorio (estimacion, no medida).
-- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI, Ollama y llama.cpp tras fusionar y convertir el adaptador. El tag `endpoints_compatible` indica compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI, Ollama y llama.cpp tras fusionar y convertir el adaptador. El tag `endpoints_compatible` indica compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xw17/Llama-3.2-3B-Instruct_SFT_lora_wesad | 3B (base) + adaptador LoRA | no disponible (128k en el base) | no disponible | no disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-3B-Instruct (modelo base) | 3,21B | 128 000 tokens | ampliamente evaluado por Meta (resultados publicos en la model card oficial) | Llama 3.2 Community License | HuggingFace, ampliamente adoptado |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32 768 tokens (hasta 128k con RoPE scaling) | resultados publicos en su model card | Apache 2.0 | HuggingFace y multiples proveedores |
-| microsoft/Phi-3.5-mini-instruct | 3,8B | 128 000 tokens | resultados publicos en su model card | MIT | HuggingFace y multiples proveedores |
+| xw17/Llama-3.2-3B-Instruct_SFT_lora_wesad | 3B (base) + adaptador LoRA | no disponible (128k en el base) | no disponible | no disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-3B-Instruct (modelo base) | 3,21B | 128 000 tokens | ampliamente evaluado por Meta (resultados publicos en la model card oficial) | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32 768 tokens (hasta 128k con RoPE scaling) | resultados publicos en su model card | Apache 2.0 | Hugging Face y multiples proveedores |
+| microsoft/Phi-3.5-mini-instruct | 3,8B | 128 000 tokens | resultados publicos en su model card | MIT | Hugging Face y multiples proveedores |
 
 La comparacion es desigual: los tres modelos de referencia tienen model cards completas, licencias claras y evaluaciones publicas, mientras que este adaptador no aporta nada de ello. Ademas, los modelos comparados no estan especializados en deteccion de estres con wearables; no se ha identificado en la informacion disponible un adaptador comparable de la misma categoria.
 
@@ -97,12 +97,12 @@ La comparacion es desigual: los tres modelos de referencia tienen model cards co
 - Sesgos: no documentados, pero el modelo base presenta sesgos conocidos de genero, raza y origen; un dataset pequeno de wearables (WESAD tiene 15 sujetos) anade un sesgo de representatividad severo.
 - Idiomas: no declarados. Aunque el base sea multilingue, el ajuste SFT probablemente se hizo en ingles, lo que puede degradar el rendimiento en castellano.
 - Reputacion y soporte: 0 descargas, 0 likes y sin actualizaciones de contenido desde la creacion. No hay garantia de mantenimiento ni de respuesta del autor.
-- Fechas anomales: el repositorio figura creado el 2026-05-01 y actualizado el 2026-09-18, fechas posteriores a lo habitual en los metadatos de HuggingFace; conviene verificar la procedencia antes de confiar en el artefacto.
+- Fechas anomales: el repositorio figura creado el 2026-05-01 y actualizado el 2026-09-18, fechas posteriores a lo habitual en los metadatos de Hugging Face; conviene verificar la procedencia antes de confiar en el artefacto.
 - Recomendacion: tratar este repositorio como material experimental no auditado. No desplegar en produccion sin validacion propia, sin auditar los pesos y sin resolver la cuestion de la licencia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/Llama-3.2-3B-Instruct_SFT_lora_wesad
+- Hugging Face: https://huggingface.co/xw17/Llama-3.2-3B-Instruct_SFT_lora_wesad
 - Referencia citada en los tags (Lacoste et al., 2019, sobre emisiones de carbono, heredada de la plantilla): https://arxiv.org/abs/1910.09700
 - Documentacion del modelo base Llama-3.2-3B-Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia del modelo base Llama 3.2: https://www.llama.com/llama3_2/license/

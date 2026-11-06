@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoText1652_model es un repositorio de pesos alojado en HuggingFace por el usuario `geobase`. Su model card lo describe como «the offical checkpoint repo for the geotext1652» y remite al articulo con identificador arXiv 2311.12751, del que no se proporciona titulo ni resumen. El repositorio ocupa 3,7 GB y esta etiquetado con `safetensors`, `arxiv:2311.12751`, `endpoints_compatible` y `region:us`, lo que indica que contiene pesos serializados en formato safetensors y que es compatible con los endpoints de inferencia de HuggingFace.
+GeoText1652_model es un repositorio de pesos alojado en Hugging Face por el usuario `geobase`. Su model card lo describe como «the offical checkpoint repo for the geotext1652» y remite al articulo con identificador arXiv 2311.12751, del que no se proporciona titulo ni resumen. El repositorio ocupa 3,7 GB y esta etiquetado con `safetensors`, `arxiv:2311.12751`, `endpoints_compatible` y `region:us`, lo que indica que contiene pesos serializados en formato safetensors y que es compatible con los endpoints de inferencia de Hugging Face.
 
 La informacion publica disponible es minima: no se declara arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de uso. El repositorio registra 0 descargas y 0 likes, y las fechas de creacion y ultima actualizacion son del 6 de octubre de 2026, lo que resulta anomalo y sugiere que los metadatos no han sido revisados o que el repositorio es de creacion muy reciente. No hay ninguna validacion externa de su comportamiento.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni la precision de los pesos no se puede calcular.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: indeterminada. El repositorio pesa 3,7 GB, por lo que el conjunto de pesos en disco entra holgadamente en el almacenamiento de cualquier equipo de consumo, pero eso no implica que la VRAM necesaria sea de 4 GB: dependeria del tamano real del modelo, del tipo de dato y del espacio para cache KV.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` indica que el repositorio puede servirse a traves de los endpoints de HuggingFace. No hay confirmacion de compatibilidad con vLLM, llama.cpp, Ollama, TGI o TensorRT-LLM, ya que no se publican variantes GGUF ni cuantizaciones.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` indica que el repositorio puede servirse a traves de los endpoints de Hugging Face. No hay confirmacion de compatibilidad con vLLM, llama.cpp, Ollama, TGI o TensorRT-LLM, ya que no se publican variantes GGUF ni cuantizaciones.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| geobase/GeoText1652_model | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| geobase/GeoText1652_model | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/geobase/GeoText1652_model
+- Repositorio en Hugging Face: https://huggingface.co/geobase/GeoText1652_model
 - Articulo citado en la model card: https://arxiv.org/abs/2311.12751
 - Poster incluido en la model card: https://cdn-uploads.huggingface.co/production/uploads/66f4011ca161845b31187baa/Bd09sD-FTB0UecnidnyEX.jpeg
 - Resultados de busqueda web: sin resultados relevantes. Los unicos enlaces devueltos pertenecen al foro WordReference y tratan sobre vocabulario frances, sin relacion con el modelo.

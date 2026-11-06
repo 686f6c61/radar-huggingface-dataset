@@ -25,7 +25,7 @@ Con 873 millones de parametros, arquitectura Qwen3.5 y capacidades multimodales 
 
 El modelo hereda la arquitectura del base Qwen/Qwen3.5-0.8B, un transformer multimodal con pipeline image-text-to-text. Sobre esa base no se realiza ningun entrenamiento: la edicion consiste en modificar 64 neuronas intermedias por capa en `layers.15.mlp.down_proj` y `layers.19.mlp.down_proj`, un total de 131.072 valores (el 0,016 % del modelo). Cada neurona se desplaza a lo largo de una direccion compartida, la "loop direction", con fuerza 6, mediante la operacion `W[:, j] <- W[:, j] - 6 * (W[:, j] . d_hat) * d_hat`. No se tocan otros tensores ni se aplican gradientes.
 
-La innovacion tecnica es precisamente la metodologia: programacion en el espacio de pesos (weight-space programming) como alternativa al ajuste fino. El autor reconstruye la edicion usando las convenciones del `apply_edit.py` de los autores originales y verifica cada tensor editado por sha256 contra el manifiesto del checkpoint evaluado, garantizando una reproduccion bit-exact. La verificacion independiente se realiza con `generate` de HuggingFace en fp16, una muestra y 18 problemas de entrenamiento no vistos.
+La innovacion tecnica es precisamente la metodologia: programacion en el espacio de pesos (weight-space programming) como alternativa al ajuste fino. El autor reconstruye la edicion usando las convenciones del `apply_edit.py` de los autores originales y verifica cada tensor editado por sha256 contra el manifiesto del checkpoint evaluado, garantizando una reproduccion bit-exact. La verificacion independiente se realiza con `generate` de Hugging Face en fp16, una muestra y 18 problemas de entrenamiento no vistos.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ La innovacion tecnica es precisamente la metodologia: programacion en el espacio
 
 ## Benchmarks y rendimiento
 
-Verificacion independiente reportada por el autor sobre 18 problemas de entrenamiento no vistos, 1 muestra, fp16, `generate` de HuggingFace:
+Verificacion independiente reportada por el autor sobre 18 problemas de entrenamiento no vistos, 1 muestra, fp16, `generate` de Hugging Face:
 
 | Modelo | Thinking cerrado | Correctos |
 |---|---|---|
@@ -70,10 +70,10 @@ Se rescatan 15 de los 16 casos con bucle del modelo base, sin regresiones. El au
 
 | Modelo | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (loop-fix reproduction) | 873 M | no disponible | 17/18 thinking cerrado (n=18) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | 2/18 thinking cerrado (n=18) | no disponible | HuggingFace |
-| RikiyaT/Qwen3.5-0.8B-weight-space-programming (original) | 0,8 B | no disponible | MATH-500 48,1 %, GSM8K 67,1 % (protocolo del articulo) | no disponible | HuggingFace |
-| KidIkaros/qwen3.5-0.8b-loop-fix (variante diagnosticada) | 0,8 B | no disponible | no disponible | no disponible | HuggingFace |
+| Este modelo (loop-fix reproduction) | 873 M | no disponible | 17/18 thinking cerrado (n=18) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | 2/18 thinking cerrado (n=18) | no disponible | Hugging Face |
+| RikiyaT/Qwen3.5-0.8B-weight-space-programming (original) | 0,8 B | no disponible | MATH-500 48,1 %, GSM8K 67,1 % (protocolo del articulo) | no disponible | Hugging Face |
+| KidIkaros/qwen3.5-0.8b-loop-fix (variante diagnosticada) | 0,8 B | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ Se rescatan 15 de los 16 casos con bucle del modelo base, sin regresiones. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KidIkaros/qwen3.5-0.8b-loop-fix-reproduction
+- Modelo en Hugging Face: https://huggingface.co/KidIkaros/qwen3.5-0.8b-loop-fix-reproduction
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Checkpoint original de los autores: https://huggingface.co/RikiyaT/Qwen3.5-0.8B-weight-space-programming
 - Blog del articulo "Sparks of Weight-Space Programming": https://rikiyat.github.io/blog/weight-space-programming/

@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch12` | ~6,74B | no disponible (base 4096) | Unlearning TOFU forget10 | llama2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` (modelo base) | ~6,74B | 4096 | Ajuste fino TOFU sin unlearning | llama2 | HuggingFace, público |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6,74B | 4096 | Chat general | llama2 | HuggingFace, muy popular |
-| `meta-llama/Llama-2-7b-hf` | ~6,74B | 4096 | Base general | llama2 | HuggingFace, muy popular |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch12` | ~6,74B | no disponible (base 4096) | Unlearning TOFU forget10 | llama2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` (modelo base) | ~6,74B | 4096 | Ajuste fino TOFU sin unlearning | llama2 | Hugging Face, público |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6,74B | 4096 | Chat general | llama2 | Hugging Face, muy popular |
+| `meta-llama/Llama-2-7b-hf` | ~6,74B | 4096 | Base general | llama2 | Hugging Face, muy popular |
 
 La comparación relevante es contra `locuslab/tofu_ft_llama2-7b`: mismo tamaño y licencia, pero sin el procedimiento de olvido. Frente a Llama 2 7B chat o base, la diferencia es de dominio: este checkpoint está especializado en el benchmark TOFU y no debe evaluarse como asistente general.
 
@@ -88,7 +88,7 @@ La comparación relevante es contra `locuslab/tofu_ft_llama2-7b`: mismo tamaño 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch12
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch12
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del benchmark, no enlazado en la model card): https://github.com/locuslab/tofu

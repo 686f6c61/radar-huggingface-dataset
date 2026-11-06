@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sunbird-experimental/sunflower-qwen3.8-27b-translation-grpo` es un adaptador de ajuste fino publicado en HuggingFace por el usuario u organizacion Sunbird-experimental. Se trata de un adaptador PEFT (LoRA) construido sobre el checkpoint `Sunbird-experimental/sunflower-qwen3.8-27b-sft`, es decir, la segunda etapa de un pipeline de alineacion: primero un ajuste supervisado (SFT) y despues un entrenamiento con GRPO (Group Relative Policy Optimization). El sufijo del nombre del repositorio (`translation`) sugiere que el objetivo declarado del ajuste es mejorar el rendimiento en tareas de traduccion automatica, aunque la model card no lo confirma en ningun apartado.
+`Sunbird-experimental/sunflower-qwen3.8-27b-translation-grpo` es un adaptador de ajuste fino publicado en Hugging Face por el usuario u organizacion Sunbird-experimental. Se trata de un adaptador PEFT (LoRA) construido sobre el checkpoint `Sunbird-experimental/sunflower-qwen3.8-27b-sft`, es decir, la segunda etapa de un pipeline de alineacion: primero un ajuste supervisado (SFT) y despues un entrenamiento con GRPO (Group Relative Policy Optimization). El sufijo del nombre del repositorio (`translation`) sugiere que el objetivo declarado del ajuste es mejorar el rendimiento en tareas de traduccion automatica, aunque la model card no lo confirma en ningun apartado.
 
 Por el nombre del checkpoint base, el modelo subyacente parece pertenecer al linaje Qwen3 con aproximadamente 27 000 millones de parametros, pero este dato no aparece en la informacion publicada y debe considerarse una inferencia, no un hecho verificado. El repositorio pesa 1,0 GB y contiene pesos en formato safetensors, junto con las dependencias declaradas de PEFT 0.20.0, TRL, Unsloth y Transformers.
 
@@ -85,7 +85,7 @@ No existe informacion verificable para comparar el rendimiento de este adaptador
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| sunflower-qwen3.8-27b-translation-grpo (este) | no disponible (~27B segun el nombre) | no disponible | no disponible | no publicado | adaptador LoRA en HuggingFace, 0 descargas |
+| sunflower-qwen3.8-27b-translation-grpo (este) | no disponible (~27B segun el nombre) | no disponible | no disponible | no publicado | adaptador LoRA en Hugging Face, 0 descargas |
 | sunflower-qwen3.8-27b-sft (checkpoint base) | no disponible (~27B segun el nombre) | no disponible | no disponible | no publicado | checkpoint base referenciado, sin datos publicos confirmados |
 | Alternativas de traduccion de la misma escala (por ejemplo, Qwen3-32B, Gemma-3-27B, Tower-Plus) | no aplica a esta comparacion | no aplica | no aplica | no disponible para comparar | no disponible |
 
@@ -106,9 +106,9 @@ Dado que el modelo evaluado no publica ni un solo resultado, cualquier comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sunbird-experimental/sunflower-qwen3.8-27b-translation-grpo
+- Modelo en Hugging Face: https://huggingface.co/Sunbird-experimental/sunflower-qwen3.8-27b-translation-grpo
 - Checkpoint base (SFT): https://huggingface.co/Sunbird-experimental/sunflower-qwen3.8-27b-sft
-- Perfil del autor en HuggingFace: https://huggingface.co/Sunbird-experimental
+- Perfil del autor en Hugging Face: https://huggingface.co/Sunbird-experimental
 - PEFT (libreria de adaptadores): https://github.com/huggingface/peft
 - TRL (entrenamiento con GRPO): https://github.com/huggingface/trl
 - Unsloth: https://github.com/unslothai/unsloth

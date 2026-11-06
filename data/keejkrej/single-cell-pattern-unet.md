@@ -74,11 +74,11 @@ No se dispone de comparativas publicadas con otros modelos de segmentación celu
 - El preprocesado y postprocesado están fijados en `export_meta.json`; cualquier desviación en la adquisición de imágenes (iluminación, resolución, formato) puede degradar el rendimiento.
 - El modelo profesor (Cellpose cpsam) tiene licencia CC-BY-NC, pero el modelo estudiante se distribuye bajo MIT al haber sido entrenado con imágenes propias; sin embargo, se recomienda verificar la procedencia de los datos si se usan imágenes de terceros.
 - No se han publicado análisis de sesgos o errores sistemáticos en poblaciones celulares específicas.
-- El tamaño del repositorio en HuggingFace aparece como 0.0 GB, aunque la model card indica ~7,4 MB; es posible que el archivo ONNX no se haya subido correctamente o que la métrica de tamaño esté mal reportada.
+- El tamaño del repositorio en Hugging Face aparece como 0.0 GB, aunque la model card indica ~7,4 MB; es posible que el archivo ONNX no se haya subido correctamente o que la métrica de tamaño esté mal reportada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keejkrej/single-cell-pattern-unet
-- Perfil del autor en HuggingFace: https://huggingface.co/keejkrej
+- Modelo en Hugging Face: https://huggingface.co/keejkrej/single-cell-pattern-unet
+- Perfil del autor en Hugging Face: https://huggingface.co/keejkrej
 - Perfil del autor en GitHub: https://github.com/keejkrej
 - Modelo relacionado (clasificador de micropatrones): https://huggingface.co/keejkrej/mupattern-resnet18

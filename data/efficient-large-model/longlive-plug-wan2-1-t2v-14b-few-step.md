@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LongLive-Plug-Wan2.1-T2V-14B-few-step | Adaptador LoRA sobre 14.000 M | Adaptador de destilacion para texto-a-video | No aplicable | Apache 2.0 | HuggingFace (0 descargas en la informacion proporcionada) |
-| Wan-AI/Wan2.1-T2V-14B | Aproximadamente 14.000 M | Modelo base texto-a-video | No aplicable | No disponible en la informacion proporcionada | HuggingFace |
-| LongLive-Plug-Wan2.1-T2V-14B-cfg | Adaptador LoRA sobre 14.000 M | Adaptador complementario de CFG | No aplicable | No disponible en la informacion proporcionada | HuggingFace |
+| LongLive-Plug-Wan2.1-T2V-14B-few-step | Adaptador LoRA sobre 14.000 M | Adaptador de destilacion para texto-a-video | No aplicable | Apache 2.0 | Hugging Face (0 descargas en la informacion proporcionada) |
+| Wan-AI/Wan2.1-T2V-14B | Aproximadamente 14.000 M | Modelo base texto-a-video | No aplicable | No disponible en la informacion proporcionada | Hugging Face |
+| LongLive-Plug-Wan2.1-T2V-14B-cfg | Adaptador LoRA sobre 14.000 M | Adaptador complementario de CFG | No aplicable | No disponible en la informacion proporcionada | Hugging Face |
 | Otros modelos texto-a-video de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento, contexto o parametros de alternativas externas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento, contexto o parametros de alternativas ext
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.1-T2V-14B-few-step
+- Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.1-T2V-14B-few-step
 - Modelo base Wan2.1-T2V-14B: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
 - Adaptador CFG complementario: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.1-T2V-14B-cfg
 - Resultados de la busqueda web: no se han encontrado enlaces adicionales relevantes sobre este modelo (los resultados obtenidos corresponden a definiciones de diccionario de la palabra "efficient" y no guardan relacion con el artefacto).

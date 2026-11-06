@@ -75,8 +75,8 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Verity-14B-v1 | 14B (base) + LoRA | No disponible | Comparación política/telemetría con salida JSON | No disponible | Adaptador PEFT en HuggingFace |
-| Qwen/Qwen3-14B | 14B | No disponible en la informacion proporcionada | Texto general | Apache-2.0 (modelo base) | Pesos completos en HuggingFace |
+| Verity-14B-v1 | 14B (base) + LoRA | No disponible | Comparación política/telemetría con salida JSON | No disponible | Adaptador PEFT en Hugging Face |
+| Qwen/Qwen3-14B | 14B | No disponible en la informacion proporcionada | Texto general | Apache-2.0 (modelo base) | Pesos completos en Hugging Face |
 | Alternativas especializadas en análisis de privacidad | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veilance/Verity-14B-v1
+- Modelo en Hugging Face: https://huggingface.co/Veilance/Verity-14B-v1
 - Modelo base Qwen/Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

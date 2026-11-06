@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ANZ-Innovation/qwen2.5-0.5b-vietnamese-schema-extractor` es un ajuste fino (fine-tune) de tipo SFT sobre un modelo de la familia Qwen2.5 de 0,5 mil millones de parámetros, publicado por la organización ANZ-Innovation en HuggingFace. El nombre del repositorio indica que el objetivo es la extracción de esquemas (schema extraction) sobre texto en vietnamita, es decir, convertir contenido no estructurado en una estructura de datos predefinida. Los tags del repositorio (`trl`, `sft`, `conversational`, `qwen2`) confirman que se ha entrenado con la librería TRL mediante aprendizaje supervisado y que el checkpoint se distribuye en formato conversacional.
+`ANZ-Innovation/qwen2.5-0.5b-vietnamese-schema-extractor` es un ajuste fino (fine-tune) de tipo SFT sobre un modelo de la familia Qwen2.5 de 0,5 mil millones de parámetros, publicado por la organización ANZ-Innovation en Hugging Face. El nombre del repositorio indica que el objetivo es la extracción de esquemas (schema extraction) sobre texto en vietnamita, es decir, convertir contenido no estructurado en una estructura de datos predefinida. Los tags del repositorio (`trl`, `sft`, `conversational`, `qwen2`) confirman que se ha entrenado con la librería TRL mediante aprendizaje supervisado y que el checkpoint se distribuye en formato conversacional.
 
-El problema principal de esta ficha es la ausencia casi total de documentación: la model card es la plantilla autogenerada por HuggingFace y todos los campos relevantes (`Developed by`, `Language(s)`, `License`, datos de entrenamiento, hiperparámetros, evaluación) aparecen como `[More Information Needed]`. No se han publicado resultados de benchmarks, no se declara licencia y el repositorio no tiene descargas ni valoraciones. Cualquier evaluación rigurosa del modelo requiere inspeccionar los pesos y el tokenizador directamente.
+El problema principal de esta ficha es la ausencia casi total de documentación: la model card es la plantilla autogenerada por Hugging Face y todos los campos relevantes (`Developed by`, `Language(s)`, `License`, datos de entrenamiento, hiperparámetros, evaluación) aparecen como `[More Information Needed]`. No se han publicado resultados de benchmarks, no se declara licencia y el repositorio no tiene descargas ni valoraciones. Cualquier evaluación rigurosa del modelo requiere inspeccionar los pesos y el tokenizador directamente.
 
 Por tamaño (494.032.768 parámetros reales según safetensors, repositorio de 1,0 GB) es un modelo apto para inferencia en CPU y en GPU de consumo, lo que lo hace interesante para tareas de extracción de campos en pipelines de bajo coste o en el edge, pero la falta de licencia explícita es un bloqueante serio para uso comercial en producción.
 
@@ -32,7 +32,7 @@ En cuanto al entrenamiento, los tags `trl` y `sft` indican un ajuste fino superv
 - Generación de texto conversacional y de tipo instrucción, heredada del ajuste SFT.
 - Extracción de esquemas: según el nombre del repositorio, generación de estructuras de datos (presumiblemente JSON) a partir de texto en vietnamita.
 - Formato conversacional (`conversational`), compatible con plantillas de chat de la familia Qwen.
-- Compatible con text-generation-inference y con endpoints de HuggingFace (tags `text-generation-inference` y `endpoints_compatible`).
+- Compatible con text-generation-inference y con endpoints de Hugging Face (tags `text-generation-inference` y `endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingües: no disponibles; el ajuste parece centrado en vietnamita y podría haber degradado otros idiomas del modelo base.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia (estimación propia a partir de los 494M parámetros, no confirmada por el autor): ~1,0-1,2 GB en fp16, ~0,5-0,7 GB en int8, ~0,3-0,5 GB en int4, en ambos casos con overhead de activaciones y caché KV variable según contexto.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente en fp16 (GTX 1650, RTX 3050, RTX 4060, T4). Para lotes grandes o contextos largos conviene subir a 8-16 GB (RTX 4090, L4, A10).
 - Cabe holgadamente en GPU de consumo: sí, en la práctica totalidad de tarjetas con 4 GB o más, e incluso en CPU con un rendimiento aceptable para extracción por documento.
-- Opciones de despliegue: `transformers` (librería declarada), text-generation-inference (tag `text-generation-inference`), endpoints de HuggingFace (tag `endpoints_compatible`) y vLLM. Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, conversión que no se distribuye en el repositorio.
+- Opciones de despliegue: `transformers` (librería declarada), text-generation-inference (tag `text-generation-inference`), endpoints de Hugging Face (tag `endpoints_compatible`) y vLLM. Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, conversión que no se distribuye en el repositorio.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ Nota: los datos de los modelos alternativos provienen de sus fichas públicas y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ANZ-Innovation/qwen2.5-0.5b-vietnamese-schema-extractor
+- Hugging Face: https://huggingface.co/ANZ-Innovation/qwen2.5-0.5b-vietnamese-schema-extractor
 - Paper citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono; solo referencia metodológica de la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact#compute
 - Repositorio, paper, demo y contacto del autor: no disponibles en la información proporcionada.

@@ -6,7 +6,7 @@ Synin-Helix-MED es un modelo de lenguaje de 7.615.616.512 parametros derivado me
 
 La relevancia del modelo reside en su enfoque de entrenamiento: un marco de aprendizaje por refuerzo guiado por curriculo que combina ajuste supervisado (SFT) sensible al cambio de codigo (code-switching) con Group Relative Policy Optimization (GRPO). El modelo se evalua sobre CUREMED-BENCH, un benchmark multilingue de razonamiento medico abierto con respuestas unicas verificables. La arquitectura subyacente es la de Qwen2.5-7B-Instruct, un transformer decoder-only, con licencia Apache 2.0 y pesos en formato safetensors.
 
-El repositorio de HuggingFace (Synin/Synin-Helix-MED) registra 0 descargas y 0 likes en la fecha de creacion indicada (2026-11-04), y el tamano del repo es de 30.5 GB. La model card no especifica la longitud de contexto efectiva del fine-tuning, por lo que se asume la del modelo base salvo indicacion contraria.
+El repositorio de Hugging Face (Synin/Synin-Helix-MED) registra 0 descargas y 0 likes en la fecha de creacion indicada (2026-11-04), y el tamano del repo es de 30.5 GB. La model card no especifica la longitud de contexto efectiva del fine-tuning, por lo que se asume la del modelo base salvo indicacion contraria.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Synin-Helix-MED (CURE-MED-7B) | 7.615.616.512 | No disponible | Razonamiento medico multilingue (13 idiomas) | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-7B-Instruct | ~7.6 B | 32.768 tokens (segun Qwen2.5) | Proposito general, multilingue | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Meditron-7B | ~7 B | 4.096 tokens (segun Llama 2) | Medico en ingles | Llama 2 (restricciones) | HuggingFace |
-| BioMistral-7B | ~7 B | 8.192 tokens (segun Mistral) | Medico, principalmente ingles | Apache 2.0 | HuggingFace |
+| Synin-Helix-MED (CURE-MED-7B) | 7.615.616.512 | No disponible | Razonamiento medico multilingue (13 idiomas) | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-7B-Instruct | ~7.6 B | 32.768 tokens (segun Qwen2.5) | Proposito general, multilingue | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Meditron-7B | ~7 B | 4.096 tokens (segun Llama 2) | Medico en ingles | Llama 2 (restricciones) | Hugging Face |
+| BioMistral-7B | ~7 B | 8.192 tokens (segun Mistral) | Medico, principalmente ingles | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la arquitectura y licencia, ya que no hay datos de rendimiento publicados para Synin-Helix-MED. Frente a Meditron y BioMistral, su principal diferenciacion es la cobertura de 13 idiomas y el entrenamiento con RL guiado por curriculo; frente a Qwen2.5-7B-Instruct, hereda la base pero no se ha verificado su rendimiento general fuera del dominio medico.
 
@@ -86,7 +86,7 @@ La comparativa se limita a la arquitectura y licencia, ya que no hay datos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Synin/Synin-Helix-MED
+- Hugging Face: https://huggingface.co/Synin/Synin-Helix-MED
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio: https://github.com/AikyamLab/cure-med
 - Paper: https://arxiv.org/abs/2601.13262

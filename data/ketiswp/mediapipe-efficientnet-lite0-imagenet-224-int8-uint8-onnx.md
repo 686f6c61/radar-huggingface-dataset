@@ -78,7 +78,7 @@ Nota: los datos de parámetros son aproximados y provienen de la documentación 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-int8-uint8-onnx
+- Repositorio de Hugging Face: https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-int8-uint8-onnx
 - Versión FP32 del mismo modelo: https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-fp32-onnx
 - Documentación oficial de MediaPipe Image Classifier: https://developers.google.com/edge/mediapipe/solutions/vision/image_classifier/index
 - Guía de MediaPipe Solutions: https://developers.google.com/edge/mediapipe/solutions/guide
@@ -162,7 +162,7 @@ Nota: los datos de parametros son aproximados y provienen de la documentacion pu
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-int8-uint8-onnx
+- Repositorio de Hugging Face: https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-int8-uint8-onnx
 - Version FP32 del mismo modelo: https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-fp32-onnx
 - Documentacion oficial de MediaPipe Image Classifier: https://developers.google.com/edge/mediapipe/solutions/vision/image_classifier/index
 - Guia de MediaPipe Solutions: https://developers.google.com/edge/mediapipe/solutions/guide

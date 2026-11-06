@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - sxiong/SWAP_FOLIO_Gen_Llama3-8B-LoRA](https://huggingface.co/sxiong/SWAP_FOLIO_Gen_Llama3-8B-LoRA)
+- [Hugging Face - sxiong/SWAP_FOLIO_Gen_Llama3-8B-LoRA](https://huggingface.co/sxiong/SWAP_FOLIO_Gen_Llama3-8B-LoRA)
 - [Dataset SWAP](https://huggingface.co/datasets/sxiong/SWAP)
 - [Paper FOLIO (arXiv:2209.00840)](https://arxiv.org/pdf/2209.00840)
 - [Repositorio GitHub de SWAP](https://github.com/xiongsiheng/SWAP)

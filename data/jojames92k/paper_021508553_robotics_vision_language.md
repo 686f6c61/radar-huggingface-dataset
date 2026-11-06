@@ -64,7 +64,7 @@ No disponible. No hay un modelo que comparar. La categoría de "modelos similare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jojames92k/paper_021508553_robotics_vision_language
+- Repositorio en Hugging Face: https://huggingface.co/jojames92k/paper_021508553_robotics_vision_language
 - Resultados de búsqueda web relacionados con VLA (no vinculados directamente al repositorio):
   - arXiv: Robotics reciente: https://arxiv.org/list/cs.RO/recent
   - Paper pi0: https://arxiv.org/abs/2410.24164

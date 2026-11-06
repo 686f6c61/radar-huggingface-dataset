@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Emily es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en HuggingFace. Se trata de un ajuste de bajo rango pensado para inyectar un personaje concreto (una mujer de pelo castaño, ojos avellana y piel clara) en el modelo base krea/Krea-2-Turbo, un modelo de difusion de la familia turbo orientado a generacion rapida de imagenes. El repositorio es de tipo diffusers, ocupa 0,5 GB y se distribuye bajo licencia openrail++.
+Emily es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en Hugging Face. Se trata de un ajuste de bajo rango pensado para inyectar un personaje concreto (una mujer de pelo castaño, ojos avellana y piel clara) en el modelo base krea/Krea-2-Turbo, un modelo de difusion de la familia turbo orientado a generacion rapida de imagenes. El repositorio es de tipo diffusers, ocupa 0,5 GB y se distribuye bajo licencia openrail++.
 
 El modelo no es un modelo fundacional autonomo: es un adaptador que requiere cargar el modelo base krea/Krea-2-Turbo para funcionar. Su proposito es la generacion consistente de un mismo personaje a partir de una palabra de activacion ("Emily") combinada con descriptores fisicos, lo que resulta relevante para flujos de trabajo de ilustracion, preproduccion audiovisual y creacion de contenido de personaje fijo.
 
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Emily
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Emily
 - Archivos del repositorio: https://huggingface.co/AiMamis/Emily/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Perfil del autor: https://huggingface.co/AiMamis

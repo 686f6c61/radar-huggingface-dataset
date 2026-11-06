@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "OpenDCAI/Omni-Edu-27B-GGUF",
+  "slug": "opendcai-omni-edu-27b-gguf",
+  "author": "OpenDCAI",
+  "url": "https://huggingface.co/OpenDCAI/Omni-Edu-27B-GGUF",
+  "created_at": "2026-11-02T04:54:48.000Z",
+  "updated_at": "2026-11-02T15:28:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "omniedu",
+    "education",
+    "qwen3_5",
+    "image-text-to-text",
+    "base_model:lhpku20010120/Omni-Edu-27B",
+    "base_model:quantized:lhpku20010120/Omni-Edu-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 447,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 121961586688,
+  "storage_human": "122.0 GB",
+  "base_model": "lhpku20010120/Omni-Edu-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenDCAI/Omni-Edu-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OpenDCAI/Omni-Edu-27B-GGUF",
+      "snippet": "Omni-Edu-27B GGUF GGUF versions of Omni-Edu-27B, converted and quantized with llama.cpp. The upstream model's license and usage terms apply. Download Choose one main model: OmniEdu-27B-BF16.gguf — 50.11 GiB; unquantized. OmniEdu-27B-Q8_0.gguf — 26.63 GiB; 8-bit quantization. OmniEdu-27B-Q6_K.gguf — 20.57 GiB; 6-bit quantization. OmniEdu-27B-Q4_K_M.gguf — 15.41 GiB; smaller 4-bit mixed ..."
+    },
+    {
+      "title": "OpenDCAI/Omni-Edu-27B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/OpenDCAI/Omni-Edu-27B-GGUF/tree/main",
+      "snippet": "Like 0 Follow OpenDCAI 62 Image-Text-to-Text GGUF llama.cpp omniedu education qwen3_5 conversational License:other Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket Use this model Notebooks Google Colab Kaggle Local AppsSettings llama.cpp"
+    }
+  ]
+}

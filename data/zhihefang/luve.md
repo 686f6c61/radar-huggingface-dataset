@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LUVE es un sistema de generacion de video texto-a-video de ultra alta resolucion, publicado como checkpoints de inferencia en HuggingFace por el autor zhihefang y asociado al grupo NJU-PCALab. El sistema se presenta en el paper "LUVE: Latent-Cascaded Ultra-High-Resolution Video Generation with Dual Frequency Experts" (aceptado en ICML 2026) y resuelve el problema de generar video en resoluciones 2K y 4K, algo que los modelos de difusion de video nativos manejan con dificultad por el coste computacional de procesar latentes de gran tamano.
+LUVE es un sistema de generacion de video texto-a-video de ultra alta resolucion, publicado como checkpoints de inferencia en Hugging Face por el autor zhihefang y asociado al grupo NJU-PCALab. El sistema se presenta en el paper "LUVE: Latent-Cascaded Ultra-High-Resolution Video Generation with Dual Frequency Experts" (aceptado en ICML 2026) y resuelve el problema de generar video en resoluciones 2K y 4K, algo que los modelos de difusion de video nativos manejan con dificultad por el coste computacional de procesar latentes de gran tamano.
 
 La propuesta tecnica de LUVE es un enfoque de cascada latente: en lugar de generar directamente a alta resolucion, se apoya sobre Wan2.1-T2V-1.3B para producir un video latente de baja resolucion (720x1280), que despues se reescala mediante un upsampler de latentes de video entrenado (VLU) y se refina con un modulo de refinamiento de contenido de alta resolucion (HCR). La innovacion principal son los "expertos duales de frecuencia": un experto de atencion de baja frecuencia que actua en los pasos iniciales del scheduler y un experto FFN de alta frecuencia para los pasos finales, con enrutado basado en el timestep.
 
@@ -94,7 +94,7 @@ LUVE se diferencia de sus alternativas en que no escala los parametros del gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhihefang/LUVE
+- Modelo en Hugging Face: https://huggingface.co/zhihefang/LUVE
 - Paper (arXiv): https://arxiv.org/abs/2602.11564
 - Codigo e instrucciones de instalacion (GitHub): https://github.com/NJU-PCALab/LUVE
 - Modelo base Wan2.1-T2V-1.3B: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B

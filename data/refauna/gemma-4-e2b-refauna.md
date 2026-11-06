@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 E2B · Refauna | 5.123.178.051 | no disponible | Dominio: refaunación y conservación Mata Atlántica (PT-BR) | Apache 2.0 | HuggingFace, GGUF vía Ollama |
-| google/gemma-4-e2b-it (base) | no disponible | no disponible | Generalista multimodal | Apache 2.0 | HuggingFace |
+| Gemma 4 E2B · Refauna | 5.123.178.051 | no disponible | Dominio: refaunación y conservación Mata Atlántica (PT-BR) | Apache 2.0 | Hugging Face, GGUF vía Ollama |
+| google/gemma-4-e2b-it (base) | no disponible | no disponible | Generalista multimodal | Apache 2.0 | Hugging Face |
 | Modelos pequeños especializados en dominio científico | no disponible | no disponible | Variable | Variable | no disponible |
 
 La comparación con alternativas de la misma categoría (modelos pequeños especializados en un dominio científico concreto y con soporte RAG nativo) no está disponible en la información proporcionada.
@@ -94,7 +94,7 @@ La comparación con alternativas de la misma categoría (modelos pequeños espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Refauna/gemma-4-e2b-refauna
+- Modelo en Hugging Face: https://huggingface.co/Refauna/gemma-4-e2b-refauna
 - Modelo base: https://huggingface.co/google/gemma-4-e2b-it
 - Repo GGUF (Ollama): https://huggingface.co/iamrodrigocoelho/gemma-4-e2b-refauna-GGUF
 - Repo transformers alternativo: https://huggingface.co/iamrodrigocoelho/gemma-4-e2b-refauna

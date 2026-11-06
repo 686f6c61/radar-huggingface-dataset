@@ -68,8 +68,8 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-FP8-i1-GGUF
-- Repositorio HuggingFace (variante i1): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-FP8-i1-GGUF
+- Repositorio Hugging Face (variante i1): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF
 - Repositorio GitHub del proyecto: https://github.com/Wassimyounes01/qwen38-uncensored
 - Página de vLLM Recipes para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Ficha en AIAny: https://aiany.app/item/qwen3-8-27b-uncensored-gguf

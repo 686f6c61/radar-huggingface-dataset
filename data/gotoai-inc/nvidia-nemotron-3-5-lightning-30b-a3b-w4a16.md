@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información proporcionada pa
 
 | Modelo | Parámetros | Contexto | Cuantización | VRAM (carga) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **NVIDIA-Nemotron-3.5-Lightning-30B-A3B-W4A16** (este repo) | ~30B totales, ~3B activos | 256k | int4 W4A16 (grupo 64) | 20.5 GB | openmdw-1.1 | HuggingFace |
-| **NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16** (base) | ~30B totales, ~3B activos | 256k | BF16 | 65.83 GB | openmdw-1.1 | HuggingFace |
-| **NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4** | ~30B totales, ~3B activos | 256k | NVFP4 (Blackwell) | no especificado | openmdw-1.1 | HuggingFace |
-| **Qwen3-30B-A3B** (referencia) | 30B totales, 3B activos | 128k | BF16 | ~60 GB | Apache-2.0 | HuggingFace |
+| **NVIDIA-Nemotron-3.5-Lightning-30B-A3B-W4A16** (este repo) | ~30B totales, ~3B activos | 256k | int4 W4A16 (grupo 64) | 20.5 GB | openmdw-1.1 | Hugging Face |
+| **NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16** (base) | ~30B totales, ~3B activos | 256k | BF16 | 65.83 GB | openmdw-1.1 | Hugging Face |
+| **NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4** | ~30B totales, ~3B activos | 256k | NVFP4 (Blackwell) | no especificado | openmdw-1.1 | Hugging Face |
+| **Qwen3-30B-A3B** (referencia) | 30B totales, 3B activos | 128k | BF16 | ~60 GB | Apache-2.0 | Hugging Face |
 
 La comparativa se centra en la variante cuantizada frente a las alternativas oficiales de NVIDIA. La ventaja de este repo es que permite ejecutar el modelo en GPUs no Blackwell, mientras que la versión NVFP4 solo funciona en hardware Blackwell (RTX 50, B200). No se incluyen comparaciones de rendimiento porque no se dispone de datos.
 
@@ -83,7 +83,7 @@ La comparativa se centra en la variante cuantizada frente a las alternativas ofi
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/GotoAI-Inc/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-W4A16
+- Repositorio de Hugging Face: https://huggingface.co/GotoAI-Inc/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-W4A16
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Modelo GGUF (oficial de ggml-org): https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
 - Página de NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard

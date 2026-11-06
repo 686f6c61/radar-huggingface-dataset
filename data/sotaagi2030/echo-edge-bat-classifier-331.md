@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Echo Edge Bat Classifier 331 es un modelo de clasificación de audio orientado a la identificación de llamadas de murciélago en entornos de inferencia en el borde (edge inference). Lo publica el usuario SOTAagi2030 en HuggingFace bajo el identificador `SOTAagi2030/Echo-Edge-Bat-Classifier-331`, con licencia Apache 2.0 y pipeline declarado `audio-classification`. La model card lo enmarca en la release interna ECHO-EDGE-2026Q3 y lo identifica como candidato promocionado con nombre en clave CIRRUS-2.
+Echo Edge Bat Classifier 331 es un modelo de clasificación de audio orientado a la identificación de llamadas de murciélago en entornos de inferencia en el borde (edge inference). Lo publica el usuario SOTAagi2030 en Hugging Face bajo el identificador `SOTAagi2030/Echo-Edge-Bat-Classifier-331`, con licencia Apache 2.0 y pipeline declarado `audio-classification`. La model card lo enmarca en la release interna ECHO-EDGE-2026Q3 y lo identifica como candidato promocionado con nombre en clave CIRRUS-2.
 
 El modelo se presenta como una herramienta de triaje bioacústico, no como un sistema de conclusiones ecológicas autónomas. Los únicos datos de rendimiento publicados son tres métricas operativas: recall en el peor hábitat de 0,800, 0,500 falsas alertas por hora de grabación y una latencia P95 de 35 ms, con un paquete de 59 MB. No se documentan arquitectura, número de parámetros, longitud de contexto ni composición del dataset de entrenamiento.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 - VRAM estimada para inferencia: no disponible; el tamaño del paquete (59 MB) sugiere que el modelo es muy ligero, pero no se especifica el consumo real de memoria.
 - GPU recomendadas: no disponible. Por el perfil de latencia y tamaño, el modelo está pensado para ejecución en CPU o aceleradores de borde más que para GPU de datacenter.
 - Compatibilidad con GPU de consumo: probablemente sí dada la latencia declarada, pero no hay confirmación oficial en la información disponible.
-- Opciones de despliegue: no se documentan explícitamente. El formato safetensors permite cargarlo con librerías estándar de HuggingFace Transformers o con runtimes de inferencia compatibles, pero no se especifica ninguno.
+- Opciones de despliegue: no se documentan explícitamente. El formato safetensors permite cargarlo con librerías estándar de Hugging Face Transformers o con runtimes de inferencia compatibles, pero no se especifica ninguno.
 - Latencia y throughput: latencia P95 de 35 ms publicada por el autor; no se proporciona throughput.
 
 ## Comparativa con modelos similares
@@ -83,5 +83,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/Echo-Edge-Bat-Classifier-331
+- Hugging Face: https://huggingface.co/SOTAagi2030/Echo-Edge-Bat-Classifier-331
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

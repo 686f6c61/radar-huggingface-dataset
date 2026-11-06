@@ -122,6 +122,6 @@ Frente a UD-Q4_K_XL, la versión ED-5bpw ocupa ligeramente menos espacio (15,92 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bakhtin/Qwen3.8-27B-ED-5bpw-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bakhtin/Qwen3.8-27B-ED-5bpw-GGUF
 - Modelo base (ggml-org): https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
 - Cuantizaciones de referencia de Unsloth AI: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

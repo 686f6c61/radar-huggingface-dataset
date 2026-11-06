@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SenseVoiceSmall adapted to anime Japanese es un ajuste fino del modelo de reconocimiento automático del habla (ASR) SenseVoiceSmall, desarrollado por FunAudioLLM (Alibaba). El autor del ajuste es el usuario de HuggingFace masterofaudio2077. El modelo resuelve un problema concreto: la transcripción de diálogo de anime en japonés, un dominio donde los modelos ASR generalistas rinden peor por la dicción exagerada, el vocabulario específico y la presencia habitual de música de fondo y efectos de sonido.
+SenseVoiceSmall adapted to anime Japanese es un ajuste fino del modelo de reconocimiento automático del habla (ASR) SenseVoiceSmall, desarrollado por FunAudioLLM (Alibaba). El autor del ajuste es el usuario de Hugging Face masterofaudio2077. El modelo resuelve un problema concreto: la transcripción de diálogo de anime en japonés, un dominio donde los modelos ASR generalistas rinden peor por la dicción exagerada, el vocabulario específico y la presencia habitual de música de fondo y efectos de sonido.
 
 El ajuste se ha realizado exclusivamente sobre la cabeza CTC del modelo base, manteniendo el codificador original, y se ha entrenado con 92,28 horas de clips de anime japonés procedentes de ANIM-400K, mezclando música del corpus MUSAN para hacer el sistema más robusto en condiciones de ruido musical. Según la model card, el modelo reduce el CER (tasa de error de caracteres) en decodificación greedy CTC desde 0,286 hasta 0,175 en audio limpio sobre cuatro series no vistas durante el entrenamiento.
 
@@ -78,8 +78,8 @@ Ejemplos individuales de la model card (CER con puntuación ignorada):
 
 | Modelo | Tipo | Idioma | CER audio limpio (4 series) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (sensevoice-small-anime-ja) | ASR CTC ajustado a anime | ja | 0,175 | Apache 2.0 | HuggingFace |
-| FunAudioLLM/SenseVoiceSmall | ASR generalista | multilingue | 0,286 (en el mismo test) | no disponible en la informacion | HuggingFace |
+| Este modelo (sensevoice-small-anime-ja) | ASR CTC ajustado a anime | ja | 0,175 | Apache 2.0 | Hugging Face |
+| FunAudioLLM/SenseVoiceSmall | ASR generalista | multilingue | 0,286 (en el mismo test) | no disponible en la informacion | Hugging Face |
 | Alternativas ASR japonesas especializadas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ Ejemplos individuales de la model card (CER con puntuación ignorada):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masterofaudio2077/sensevoice-small-anime-ja
+- Modelo en Hugging Face: https://huggingface.co/masterofaudio2077/sensevoice-small-anime-ja
 - Modelo base: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Ejemplos de audio: https://huggingface.co/masterofaudio2077/sensevoice-small-anime-ja/resolve/main/samples/sample1.mp3 (y sample2.mp3, sample3.mp3, sample4.mp3 en la misma carpeta)
 - Repositorio FunASR: no disponible en la informacion proporcionada

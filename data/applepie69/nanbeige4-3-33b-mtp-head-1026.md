@@ -76,7 +76,7 @@ No hay una comparativa directa publicada en la informacion disponible. Como refe
 | Esta cabeza MTP (Nanbeige4.3-33B) | 694 M | no disponible (entrenada a 1024 tokens) | aceptacion top-1 0,9%; sin speed-up medido | apache-2.0 | pesos + implementacion de referencia; sin soporte en motores |
 | MTP nativo de DeepSeek-V3 | integrado en el modelo (no separable) | segun el modelo base | soportado por el propio modelo y su runtime | licencia del modelo DeepSeek-V3 | nativo en el modelo |
 | Cabezas tipo Medusa / EAGLE | cabezas ligeras sobre el base | segun el base | soportadas en vLLM/otros motores | variable | ecosistema mas maduro |
-| Modelo base Nanbeige4.3-33B | 33B | no disponible en esta ficha | no disponible | apache-2.0 | HuggingFace |
+| Modelo base Nanbeige4.3-33B | 33B | no disponible en esta ficha | no disponible | apache-2.0 | Hugging Face |
 
 Los datos de DeepSeek-V3, Medusa y EAGLE no provienen de la informacion proporcionada y se incluyen solo como marco conceptual; consultese cada model card para cifras concretas.
 
@@ -95,9 +95,9 @@ Los datos de DeepSeek-V3, Medusa y EAGLE no provienen de la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cabeza MTP: https://huggingface.co/applepie69/Nanbeige4.3-33B-MTP-head-1026
+- Repositorio Hugging Face de la cabeza MTP: https://huggingface.co/applepie69/Nanbeige4.3-33B-MTP-head-1026
 - Modelo base Nanbeige4.3-33B: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Dataset HuggingFaceH4/ultrachat_200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
 - Dataset open-r1/OpenR1-Math-220k: https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 - Dataset bigcode/self-oss-instruct-sc2-exec-filter-50k: https://huggingface.co/datasets/bigcode/self-oss-instruct-sc2-exec-filter-50k
-- Implementacion de referencia: `mtp_head.py` y `mtp_config.json` dentro del repositorio de HuggingFace
+- Implementacion de referencia: `mtp_head.py` y `mtp_config.json` dentro del repositorio de Hugging Face

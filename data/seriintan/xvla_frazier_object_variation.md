@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`seriintan/xvla_frazier_object_variation` es una política robótica de visión-lenguaje-acción (VLA) obtenida por ajuste fino del modelo base `lerobot/xvla-base`. Está desarrollada por el usuario `seriintan` y publicada en HuggingFace dentro del ecosistema LeRobot. El modelo resuelve una tarea de manipulación concreta: coger un objeto Frazier y colocarlo en una cesta azul ("Pick and place Frazier to blue basket"), ejecutada sobre un robot de tipo `so_follower` con cámaras frontal y de pinza.
+`seriintan/xvla_frazier_object_variation` es una política robótica de visión-lenguaje-acción (VLA) obtenida por ajuste fino del modelo base `lerobot/xvla-base`. Está desarrollada por el usuario `seriintan` y publicada en Hugging Face dentro del ecosistema LeRobot. El modelo resuelve una tarea de manipulación concreta: coger un objeto Frazier y colocarlo en una cesta azul ("Pick and place Frazier to blue basket"), ejecutada sobre un robot de tipo `so_follower` con cámaras frontal y de pinza.
 
 El modelo se apoya en X-VLA, un marco VLA con *soft prompts* y *flow matching* que trata cada configuración de robot o hardware como una "tarea" codificada mediante un conjunto reducido de *embeddings* de prompt aprendibles. Con 879.687.256 parámetros (~880 M) y pesos en formato safetensors, es un modelo compacto orientado a despliegue en hardware de robótica, no a inferencia de lenguaje general. Su relevancia radica en demostrar cómo un único marco puede reconciliar morfologías, sensores y espacios de acción diversos mediante prompts suaves.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| seriintan/xvla_frazier_object_variation | 879.687.256 | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Ajuste fino de tarea única |
-| lerobot/xvla-base | no disponible en la información proporcionada | no disponible | no disponible | HuggingFace | Modelo base del que deriva este ajuste |
+| seriintan/xvla_frazier_object_variation | 879.687.256 | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Ajuste fino de tarea única |
+| lerobot/xvla-base | no disponible en la información proporcionada | no disponible | no disponible | Hugging Face | Modelo base del que deriva este ajuste |
 | Otras políticas VLA de la misma categoría (OpenVLA, pi0, etc.) | no disponible | no disponible | no disponible | no disponible | No se han encontrado datos comparativos en la información proporcionada |
 
 La búsqueda web realizada no devolvió resultados relevantes (únicamente páginas de inicio de sesión de servicios de correo), por lo que no se dispone de referencias adicionales para ampliar la comparativa.
@@ -83,7 +83,7 @@ La búsqueda web realizada no devolvió resultados relevantes (únicamente pági
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seriintan/xvla_frazier_object_variation
+- Modelo en Hugging Face: https://huggingface.co/seriintan/xvla_frazier_object_variation
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/seriintan/frazier_dataset_v2_object_variation
 - Paper X-VLA (arXiv:2510.10274): https://huggingface.co/papers/2510.10274

@@ -89,7 +89,7 @@ La comparativa con otros modelos abliterados es limitada porque no se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Justbackup/Gemma-4-12B-OBLITERATED
+- Repositorio Hugging Face: https://huggingface.co/Justbackup/Gemma-4-12B-OBLITERATED
 - Repositorio original de OBLITERATUS: https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED
 - Repositorio GGUF (usuario Iambackup): https://huggingface.co/Iambackup/Gemma-4-12B-OBLITERATED-GGUF
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

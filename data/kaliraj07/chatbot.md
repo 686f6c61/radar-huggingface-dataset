@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KaliRaj07/chatbot` es un repositorio alojado en HuggingFace por el usuario KaliRaj07, publicado y actualizado el 19 de septiembre de 2026, segun los metadatos de la plataforma. No dispone de model card con contenido tecnico: la unica informacion del README es la declaracion de licencia `apache-2.0`, sin descripcion, sin arquitectura declarada y sin ejemplos de uso. Tampoco se especifican pipeline, idiomas soportados ni formato de pesos.
+`KaliRaj07/chatbot` es un repositorio alojado en Hugging Face por el usuario KaliRaj07, publicado y actualizado el 19 de septiembre de 2026, segun los metadatos de la plataforma. No dispone de model card con contenido tecnico: la unica informacion del README es la declaracion de licencia `apache-2.0`, sin descripcion, sin arquitectura declarada y sin ejemplos de uso. Tampoco se especifican pipeline, idiomas soportados ni formato de pesos.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, por lo que no existe evidencia publica de uso, validacion por terceros ni resultados reproducibles. La busqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo: todos los resultados obtenidos corresponden al modelo de motocicleta Yamaha MT-25 y son, por tanto, irrelevantes para esta ficha.
 
@@ -36,7 +36,7 @@ No disponible. No se puede confirmar ninguna capacidad concreta del modelo, ya q
 - Soporte de agentes o razonamiento multi-paso.
 - Capacidades multilingues ni idiomas cubiertos.
 - Capacidades especiales (modo thinking, vision, audio, decodificacion especulativa).
-- Tipo de tarea declarada en el pipeline de HuggingFace (el campo aparece vacio).
+- Tipo de tarea declarada en el pipeline de Hugging Face (el campo aparece vacio).
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ No es posible determinar casos de uso concretos ni recomendables: sin arquitectu
 - Evaluacion exploratoria en local: cargar los pesos en un entorno aislado para identificar arquitectura, tokenizador y tamano real antes de considerar cualquier uso adicional.
 - Prototipado interno no critico: emplearlo como sustituto de un chatbot generico solo si, tras la inspeccion, resulta ser un modelo de lenguaje conversacional funcional.
 - Pruebas de integracion con frameworks de inferencia: verificar si los pesos son cargables en transformers, vLLM, llama.cpp u Ollama, lo que determinaria su viabilidad tecnica.
-- Analisis comparativo de fine-tunes de autor unico: usarlo como caso de estudio sobre la trazabilidad y documentacion de modelos publicados en HuggingFace.
+- Analisis comparativo de fine-tunes de autor unico: usarlo como caso de estudio sobre la trazabilidad y documentacion de modelos publicados en Hugging Face.
 - Experimentacion academica sobre procedencia de modelos: estudiar que informacion minima acompania a un repositorio con licencia declarada pero sin model card.
 - Verificacion de licencia y atribucion: revisar la licencia Apache 2.0 declarada antes de reutilizar cualquier artefacto del repositorio.
 
@@ -90,7 +90,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea declarada,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KaliRaj07/chatbot
+- Hugging Face: https://huggingface.co/KaliRaj07/chatbot
 - Model card (README): sin contenido tecnico mas alla de `license: apache-2.0`.
 - Paper, blog, repositorio o demo: no disponible.
 - Fuentes web relacionadas con el modelo: no disponible (los resultados de busqueda obtenidos eran sobre la Yamaha MT-25 y no son relevantes).

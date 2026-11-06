@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`quanda-bench-test/gpt2-small-trex-openwebtext-ft` es un checkpoint de GPT-2 Small (162.614.016 parametros, segun los pesos en safetensors) publicado por el usuario `quanda-bench-test` en HuggingFace. El nombre sugiere un ajuste fino sobre OpenWebText partiendo de un modelo base denominado "trex", y la etiqueta `nanogpt` indica que el entrenamiento se realizo con la implementacion minimalista NanoGPT de Andrej Karpathy, no con el GPT-2 original de OpenAI. El tag `arxiv:1910.09700` corresponde al paper de Lacoste et al. sobre el calculo del impacto medioambiental del aprendizaje automatico, citado en la plantilla de model card, no a un paper propio del modelo.
+`quanda-bench-test/gpt2-small-trex-openwebtext-ft` es un checkpoint de GPT-2 Small (162.614.016 parametros, segun los pesos en safetensors) publicado por el usuario `quanda-bench-test` en Hugging Face. El nombre sugiere un ajuste fino sobre OpenWebText partiendo de un modelo base denominado "trex", y la etiqueta `nanogpt` indica que el entrenamiento se realizo con la implementacion minimalista NanoGPT de Andrej Karpathy, no con el GPT-2 original de OpenAI. El tag `arxiv:1910.09700` corresponde al paper de Lacoste et al. sobre el calculo del impacto medioambiental del aprendizaje automatico, citado en la plantilla de model card, no a un paper propio del modelo.
 
 Se trata, por tanto, de un modelo de lenguaje autoregresivo de tipo decoder-only transformer, de escala pequena (124M parametros de arquitectura clasica GPT-2, con 162M contabilizados en los tensores, posiblemente por diferencias en el conteo de embeddings y biases), entrenado para prediccion del siguiente token. No es un modelo pensado para produccion ni para uso general: su interes es fundamentalmente experimental, como artefacto de un banco de pruebas (benchmark) de tecnicas de atribucion o evaluacion, dado el prefijo `quanda-bench-test` del identificador.
 
-La relevancia actual es limitada y muy acotada a contextos de investigacion: sirve como caso de estudio reproducible de un fine-tuning de GPT-2 sobre OpenWebText con NanoGPT, con licencia MIT y pesos en safetensors, lo que facilita su inspeccion y su uso en experimentos de interpretabilidad. La model card es la plantilla autogenerada de HuggingFace y no aporta informacion sustantiva sobre datos, hiperparametros ni evaluacion.
+La relevancia actual es limitada y muy acotada a contextos de investigacion: sirve como caso de estudio reproducible de un fine-tuning de GPT-2 sobre OpenWebText con NanoGPT, con licencia MIT y pesos en safetensors, lo que facilita su inspeccion y su uso en experimentos de interpretabilidad. La model card es la plantilla autogenerada de Hugging Face y no aporta informacion sustantiva sobre datos, hiperparametros ni evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| gpt2-small-trex-openwebtext-ft (este) | 162,6M | no disponible | MIT | HuggingFace | Fine-tuning NanoGPT sobre OpenWebText |
-| GPT-2 Small original (OpenAI) | 124M | 1024 | MIT | HuggingFace | Referencia canonica, ampliamente evaluada |
-| GPT-2 Medium (OpenAI) | 355M | 1024 | MIT | HuggingFace | Mayor capacidad, mismo linaje arquitectonico |
-| DistilGPT-2 | 82M | 1024 | Apache 2.0 | HuggingFace | Version destilada, mas rapida y ligera |
+| gpt2-small-trex-openwebtext-ft (este) | 162,6M | no disponible | MIT | Hugging Face | Fine-tuning NanoGPT sobre OpenWebText |
+| GPT-2 Small original (OpenAI) | 124M | 1024 | MIT | Hugging Face | Referencia canonica, ampliamente evaluada |
+| GPT-2 Medium (OpenAI) | 355M | 1024 | MIT | Hugging Face | Mayor capacidad, mismo linaje arquitectonico |
+| DistilGPT-2 | 82M | 1024 | Apache 2.0 | Hugging Face | Version destilada, mas rapida y ligera |
 
 No se dispone de datos de rendimiento comparativo (perplejidad, benchmarks) para este checkpoint, por lo que la comparativa se limita a parametros, contexto y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (perplejidad, benchmarks) para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quanda-bench-test/gpt2-small-trex-openwebtext-ft
+- Modelo en Hugging Face: https://huggingface.co/quanda-bench-test/gpt2-small-trex-openwebtext-ft
 - Paper citado en la model card (Lacoste et al., 2019, impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental ML: https://mlco2.github.io/impact
 - Repositorio NanoGPT (marco de entrenamiento indicado por el tag): https://github.com/karpathy/nanoGPT

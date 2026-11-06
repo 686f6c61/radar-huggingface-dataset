@@ -90,9 +90,9 @@ No se dispone de datos comparativos con otros modelos de tamaño similar (como Q
 
 ## Enlaces
 
-- Repositorio HuggingFace de las variantes GGUF: https://huggingface.co/miifanboy/Spark-X2.5-4B-i1-GGUF
+- Repositorio Hugging Face de las variantes GGUF: https://huggingface.co/miifanboy/Spark-X2.5-4B-i1-GGUF
 - Repositorio del modelo base en GitHub: https://github.com/XHToken/Spark-X2.5
-- Modelo base en HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-4B
+- Modelo base en Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Modelo en ModelScope: https://www.modelscope.cn/models/XHToken/Spark-X2.5-4B
 - Pagina en Ollama: https://ollama.com/SparkLLM/Spark-X2.5-4B
 - Dataset de calibracion imatrix: https://huggingface.co/datasets/lemon07r/bartowski-imatrix-v5-semantic

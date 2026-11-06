@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-fullregion-dr-dr2-statenoise | 287,5 M | horizonte 64 / 32 ejecutados | 3 camaras 240x240 + estado 22 dim | other | HuggingFace (padiredd) |
+| dp-blockpick-fullregion-dr-dr2-statenoise | 287,5 M | horizonte 64 / 32 ejecutados | 3 camaras 240x240 + estado 22 dim | other | Hugging Face (padiredd) |
 | Variante `region10k-full` (mismo autor) | no disponible | no disponible | no disponible | other | referenciada en la model card, no enlazada |
 | Diffusion Policy original (Chi et al.) | no disponible | no disponible | no disponible | no disponible | implementacion de referencia en LeRobot |
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-fullregion-dr-dr2-statenoise
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-fullregion-dr-dr2-statenoise
 - Dataset referenciado: `padiredd/pick-cube-topdown-region10k-dr-dr2-3cam` (referencia en la model card; no se proporciona URL directa en la información disponible)
 - LeRobot: no disponible en la información proporcionada
 - Isaac Lab: no disponible en la información proporcionada

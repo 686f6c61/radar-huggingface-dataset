@@ -4,7 +4,7 @@
 
 El modelo `davanstrien/qwen3-vl-2b-iconclass-swift-test` es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo base `Qwen/Qwen3-VL-2B-Instruct`, desarrollado por Daniel van Strien. Se ha ajustado mediante fine-tuning con la librería `ms-swift` sobre el dataset `davanstrien/iconclass-vlm-brillfull`, que contiene 200 muestras de entrenamiento orientadas a la generación de códigos Iconclass, un sistema de clasificación iconográfica utilizado en historia del arte. El objetivo es especializar el modelo de visión-lenguaje para tareas de catalogación y descripción de obras de arte.
 
-La relevancia de este adaptador radica en su enfoque eficiente: en lugar de entrenar un modelo completo, se aplica una adaptación de bajo rango sobre un modelo base ya capaz de procesar imágenes y texto, reduciendo costes de entrenamiento y de inferencia. La publicación del adaptador en HuggingFace, con su configuración de entrenamiento reproducible, sirve como ejemplo de flujo de trabajo para ajustar VLM en entornos de GPU en la nube.
+La relevancia de este adaptador radica en su enfoque eficiente: en lugar de entrenar un modelo completo, se aplica una adaptación de bajo rango sobre un modelo base ya capaz de procesar imágenes y texto, reduciendo costes de entrenamiento y de inferencia. La publicación del adaptador en Hugging Face, con su configuración de entrenamiento reproducible, sirve como ejemplo de flujo de trabajo para ajustar VLM en entornos de GPU en la nube.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No se dispone de información sobre otros adaptadores o modelos similares en el 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/davanstrien/qwen3-vl-2b-iconclass-swift-test
+- Repositorio Hugging Face del adaptador: https://huggingface.co/davanstrien/qwen3-vl-2b-iconclass-swift-test
 - Modelo base Qwen/Qwen3-VL-2B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/davanstrien/iconclass-vlm-brillfull
 - Blog de Daniel van Strien sobre fine-tuning de VLM para Iconclass: https://danielvanstrien.xyz/posts/2025/iconclass-vlm-sft/trl-vlm-fine-tuning-iconclass.html

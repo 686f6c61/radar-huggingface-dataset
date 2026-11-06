@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TaoMate-H3-3Step-ComfyUI es un adaptador LoRA de tipo 3-step para el modelo base MiniMax H3, publicado por el usuario chfm en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo entrenado desde cero: es una conversión del LoRA oficial TaoMate-H3 (desarrollado por TaoLive AIGC) al formato de claves y parámetros que esperan los cargadores de LoRA de MiniMax H3 dentro de ComfyUI. El repositorio pesa 2,5 GB y contiene un único fichero safetensors de aproximadamente 2,48 GB.
+TaoMate-H3-3Step-ComfyUI es un adaptador LoRA de tipo 3-step para el modelo base MiniMax H3, publicado por el usuario chfm en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo entrenado desde cero: es una conversión del LoRA oficial TaoMate-H3 (desarrollado por TaoLive AIGC) al formato de claves y parámetros que esperan los cargadores de LoRA de MiniMax H3 dentro de ComfyUI. El repositorio pesa 2,5 GB y contiene un único fichero safetensors de aproximadamente 2,48 GB.
 
 El propósito es acelerar la inferencia de generación de vídeo (y audio-vídeo, según las etiquetas del repositorio) con MiniMax H3, permitiendo muestrear en tan solo 3 pasos en lugar de una cantidad mayor. El LoRA se coloca en `ComfyUI/models/loras/` y se combina con el modelo base MiniMax H3 en un flujo de trabajo compatible.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Elemento | Tipo | Relación | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| chfm/TaoMate-H3-3Step-ComfyUI | Conversión LoRA para ComfyUI | Objeto de esta ficha | other | HuggingFace, 2,5 GB |
-| TaoLiveAIGC/TaoMate-H3 | LoRA original de 3 pasos | Origen del que deriva esta conversión | no disponible en la información proporcionada | HuggingFace |
-| MiniMaxAI/MiniMax-H3 | Modelo base | Modelo sobre el que se aplica el LoRA | no disponible en la información proporcionada | HuggingFace |
+| chfm/TaoMate-H3-3Step-ComfyUI | Conversión LoRA para ComfyUI | Objeto de esta ficha | other | Hugging Face, 2,5 GB |
+| TaoLiveAIGC/TaoMate-H3 | LoRA original de 3 pasos | Origen del que deriva esta conversión | no disponible en la información proporcionada | Hugging Face |
+| MiniMaxAI/MiniMax-H3 | Modelo base | Modelo sobre el que se aplica el LoRA | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni rendimiento de estos elementos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa. Tampoco se conocen adaptadores alternativos de aceleración para MiniMax H3 dentro de la información disponible.
 
@@ -85,7 +85,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de estos elemento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chfm/TaoMate-H3-3Step-ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/chfm/TaoMate-H3-3Step-ComfyUI
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio oficial de TaoMate-H3: https://huggingface.co/TaoLiveAIGC/TaoMate-H3
 - Proyecto original en GitHub: https://github.com/TaoLiveAIGC/TaoMate-H3

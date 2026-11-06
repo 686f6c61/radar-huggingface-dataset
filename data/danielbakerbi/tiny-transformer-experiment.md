@@ -2,7 +2,7 @@
 
 ## Resumen
 
-danielbakerbi/tiny-transformer-experiment es un repositorio experimental publicado en HuggingFace por el usuario danielbakerbi. No se trata de un modelo entrenado ni de un checkpoint con capacidades desplegables, sino de un esqueleto de implementacion de un Transformer propio orientado a tareas multitask, acompanado de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+danielbakerbi/tiny-transformer-experiment es un repositorio experimental publicado en Hugging Face por el usuario danielbakerbi. No se trata de un modelo entrenado ni de un checkpoint con capacidades desplegables, sino de un esqueleto de implementacion de un Transformer propio orientado a tareas multitask, acompanado de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 El peso real declarado en safetensors es de 49.600 parametros, una magnitud de escala minima que contrasta con la etiqueta "giant" que aparece en el campo Scale de la model card. Esta discrepancia debe tenerse en cuenta: la etiqueta parece describir un preset de configuracion del script y no el tamano efectivo de la inicializacion incluida.
 
@@ -82,6 +82,6 @@ No se dispone de modelos comparables con datos verificados en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielbakerbi/tiny-transformer-experiment
+- Modelo en Hugging Face: https://huggingface.co/danielbakerbi/tiny-transformer-experiment
 - Archivos incluidos en el repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Papers, blogs, repositorios o demos adicionales: no disponibles. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo; los enlaces recuperados pertenecian a foros de soporte tecnico sin relacion con el artefacto.

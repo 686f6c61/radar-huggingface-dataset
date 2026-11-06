@@ -4,7 +4,7 @@
 
 El modelo `yoshinari1209/groot_so101_pick_place` es un fine-tuning del modelo fundacional de robótica NVIDIA GR00T-N1.7-3B, especializado en la tarea de pick & place (recoger y colocar) para el robot SO-101. El autor, Yoshinari Kawashima, ha congelado el backbone VLM (Cosmos-Reason2 2B) y ha entrenado únicamente el action head con un dataset propio de 48 episodios de demostración, durante 10.000 pasos de optimización.
 
-El modelo se distribuye a través de la librería LeRobot y utiliza el pipeline de robótica de HuggingFace. Con 3.144 millones de parámetros totales, está diseñado para ser desplegado como servidor de políticas de inferencia asíncrona, integrándose con el ecosistema LeRobot. Su relevancia radica en que demuestra cómo adaptar un modelo fundacional de robótica generalista a una tarea específica con un dataset relativamente pequeño, manteniendo la licencia Apache 2.0 que permite uso comercial sin restricciones.
+El modelo se distribuye a través de la librería LeRobot y utiliza el pipeline de robótica de Hugging Face. Con 3.144 millones de parámetros totales, está diseñado para ser desplegado como servidor de políticas de inferencia asíncrona, integrándose con el ecosistema LeRobot. Su relevancia radica en que demuestra cómo adaptar un modelo fundacional de robótica generalista a una tarea específica con un dataset relativamente pequeño, manteniendo la licencia Apache 2.0 que permite uso comercial sin restricciones.
 
 ## Especificaciones tecnicas
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yoshinari1209/groot_so101_pick_place | 3,14B | no disponible | Pick & place SO-101 | Apache 2.0 | HuggingFace |
-| NVIDIA GR00T-N1.7-3B (base) | 3,14B | no disponible | Robótica generalista | no disponible | HuggingFace |
-| AkshayM-X/groot_so101_pick_place_v3 | no disponible | no disponible | Pick & place SO-101 | no disponible | HuggingFace |
+| yoshinari1209/groot_so101_pick_place | 3,14B | no disponible | Pick & place SO-101 | Apache 2.0 | Hugging Face |
+| NVIDIA GR00T-N1.7-3B (base) | 3,14B | no disponible | Robótica generalista | no disponible | Hugging Face |
+| AkshayM-X/groot_so101_pick_place_v3 | no disponible | no disponible | Pick & place SO-101 | no disponible | Hugging Face |
 
 El modelo se distingue del base por su especialización en la tarea concreta, mientras que la variante de AkshayM-X parece ser un fine-tuning similar pero con configuración y dataset potencialmente distintos. No se dispone de datos comparativos de rendimiento entre estas opciones.
 
@@ -77,7 +77,7 @@ El modelo se distingue del base por su especialización en la tarea concreta, mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoshinari1209/groot_so101_pick_place
+- Modelo en Hugging Face: https://huggingface.co/yoshinari1209/groot_so101_pick_place
 - Dataset de entrenamiento: https://huggingface.co/datasets/yoshinari1209/so101_pick_place_50eps_v1_20260817_192908
 - Repositorio NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Stack ROS 2 para SO-101: https://github.com/legalaspro/so101-ros-physical-ai

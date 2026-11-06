@@ -4,7 +4,7 @@
 
 DAT Strict NextLat Final es un modelo de lenguaje causal basado en un Dual Attention Transformer (DAT) de 304 millones de parametros, entrenado desde cero por el usuario abe123 para la pista Strict del reto BabyLM 2026. El reto BabyLM consiste en entrenar modelos de lenguaje con un limite estricto de datos (100 millones de palabras) para estudiar la adquisicion del lenguaje en condiciones realistas. El modelo combina atencion self-attention clasica con atencion relacional (RCA), simbolos posicionales relativos compartidos y un objetivo auxiliar de entrenamiento denominado NextLat, disenado para mejorar la prediccion del siguiente token.
 
-Con 16 capas transformer, dimension oculta de 1.024, 12 cabezas de self-attention y 4 cabezas de atencion relacional, el modelo alcanza una longitud de contexto maxima de 514 tokens. Se entreno durante diez pasadas completas sobre el corpus BabyLM 2026 Strict, utilizando los optimizadores Muon y LambW, y se publica con pesos de media movil exponencial (EMA) con decaimiento 0.999. El repositorio incluye el tokenizador y el codigo personalizado necesario para cargarlo mediante las clases Auto de HuggingFace Transformers.
+Con 16 capas transformer, dimension oculta de 1.024, 12 cabezas de self-attention y 4 cabezas de atencion relacional, el modelo alcanza una longitud de contexto maxima de 514 tokens. Se entreno durante diez pasadas completas sobre el corpus BabyLM 2026 Strict, utilizando los optimizadores Muon y LambW, y se publica con pesos de media movil exponencial (EMA) con decaimiento 0.999. El repositorio incluye el tokenizador y el codigo personalizado necesario para cargarlo mediante las clases Auto de Hugging Face Transformers.
 
 La relevancia de este modelo radica en su propuesta arquitectonica: combina atencion dual (self y relacional) con un objetivo auxiliar de latencia (NextLat) en un regimen de datos extremadamente limitado, lo que lo convierte en un candidato interesante para investigacion en eficiencia de datos y adquisicion del lenguaje.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada para inferencia: con 304 millones de parametros, en fp16 se necesitan aproximadamente 610 MB de VRAM; en int8 unos 305 MB; en int4 unos 155 MB. Cabe holgadamente en cualquier GPU de consumo moderna (8 GB o mas).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (RTX 3060, RTX 4060, RTX 4090, etc.). Para entrenamiento o evaluacion con lotes grandes se recomienda una GPU con 16 GB o mas.
-- Despliegue: se carga mediante HuggingFace Transformers con `trust_remote_code=True`. No se indica soporte para vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
+- Despliegue: se carga mediante Hugging Face Transformers con `trust_remote_code=True`. No se indica soporte para vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
 - Latencia y throughput: no disponible.
 - Nota: el repositorio ocupa 67.3 GB debido a los multiples checkpoints intermedios; la descarga completa puede ser pesada si solo se necesita el modelo final.
 
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento publicados para este modelo, por lo que la
 
 ## Limitaciones y advertencias
 
-- Requiere `trust_remote_code=True` al cargarse con las clases Auto de HuggingFace, lo que implica ejecutar codigo personalizado del autor. Se recomienda revisar el codigo antes de usarlo en entornos de produccion.
+- Requiere `trust_remote_code=True` al cargarse con las clases Auto de Hugging Face, lo que implica ejecutar codigo personalizado del autor. Se recomienda revisar el codigo antes de usarlo en entornos de produccion.
 - Longitud de contexto limitada a 514 tokens, insuficiente para tareas que requieran contexto largo.
 - Entrenado exclusivamente sobre el corpus BabyLM 2026 Strict (100 millones de palabras), por lo que su conocimiento del mundo y su vocabulario son limitados en comparacion con modelos entrenados con datos a gran escala.
 - No se han publicado resultados de benchmarks, por lo que su rendimiento real en tareas estandar (MMLU, HumanEval, etc.) es desconocido.
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento publicados para este modelo, por lo que la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abe123/babylm-dat-strict-nextlat-final
+- Modelo en Hugging Face: https://huggingface.co/abe123/babylm-dat-strict-nextlat-final
 - Repositorio del modelo (variante sin "final"): https://huggingface.co/abe123/babylm-dat-strict-nextlat
 - Web del reto BabyLM: https://babylm.github.io/
 - Organizacion BabyLM en GitHub: https://github.com/babylm

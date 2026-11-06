@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-q3_scope0_u2` es un modelo de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) publicado en HuggingFace por el usuario alfred8995. El repositorio contiene únicamente pesos en formato `safetensors`, ocupa 3,5 GB y está sujeto a acceso restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo. La etiqueta `qwen3` sugiere que se trata de un ajuste fino, una variante experimental o una destilación derivada de la familia Qwen3, pero la información disponible no confirma la relación exacta ni el proceso de entrenamiento.
+`alfred8995/r17-bk-pf-q3_scope0_u2` es un modelo de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) publicado en Hugging Face por el usuario alfred8995. El repositorio contiene únicamente pesos en formato `safetensors`, ocupa 3,5 GB y está sujeto a acceso restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo. La etiqueta `qwen3` sugiere que se trata de un ajuste fino, una variante experimental o una destilación derivada de la familia Qwen3, pero la información disponible no confirma la relación exacta ni el proceso de entrenamiento.
 
 El modelo no dispone de model card pública con contenido descriptivo en la información proporcionada, no declara idiomas soportados y registra cero descargas y cero interacciones en el momento de la consulta. El nombre del repositorio (`r17-bk-pf-q3_scope0_u2`) responde a un patrón de nomenclatura típico de experimentos internos o ejecuciones de entrenamiento seriadas, no de un lanzamiento de modelo con documentación para producción.
 
@@ -70,7 +70,7 @@ Estimaciones calculadas a partir del número de parámetros declarado (1,72 B); 
 - Opciones de despliegue: al publicarse solo safetensors, la ruta directa es Transformers. Para convertir a GGUF y usar llama.cpp u Ollama hace falta generar la cuantización a partir de los pesos originales. vLLM y TGI son compatibles si la arquitectura subyacente está soportada por esas herramientas, extremo no confirmado.
 - Latencia y throughput: no disponibles. No hay datos publicados de tokens por segundo ni de tiempo hasta el primer token.
 
-Advertencia práctica: el acceso es gated, por lo que cualquier pipeline automatizado requiere un token de HuggingFace con los permisos aceptados previamente.
+Advertencia práctica: el acceso es gated, por lo que cualquier pipeline automatizado requiere un token de Hugging Face con los permisos aceptados previamente.
 
 ## Comparativa con modelos similares
 
@@ -78,7 +78,7 @@ La información proporcionada no incluye datos verificables de modelos comparabl
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| alfred8995/r17-bk-pf-q3_scope0_u2 | 1,72 B | no disponible | other (términos no detallados) | gated en HuggingFace | no disponible |
+| alfred8995/r17-bk-pf-q3_scope0_u2 | 1,72 B | no disponible | other (términos no detallados) | gated en Hugging Face | no disponible |
 | Qwen3 (familia, referencia por etiqueta) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de ~1-2 B de otros laboratorios | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se han encontrado en la búsqueda web páginas de modelos comparables con dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-q3_scope0_u2
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-q3_scope0_u2
 - Repositorio relacionado del mismo autor: https://huggingface.co/alfred8995/r16-H-P3-d2c3q3-s100
 - Repositorio relacionado del mismo autor: https://huggingface.co/alfred8995/r16-H-M-Akds4-w50-s0
 - Paper, blog o demo oficial: no disponible en la información proporcionada.

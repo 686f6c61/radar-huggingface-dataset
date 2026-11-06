@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-SQL-Qwen3.5-2B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-SQL-Qwen3.5-2B-GGUF
 - Modelo base: https://huggingface.co/Privoid-ai/Privoid-SQL-Qwen3.5-2B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

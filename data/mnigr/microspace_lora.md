@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mnigr/microspace_lora es un ajuste fino mediante LoRA publicado en HuggingFace por el usuario mnigr, construido sobre el modelo base unsloth/Qwen3-14B-unsloth-bnb-4bit, es decir, una version del Qwen3-14B de Alibaba cuantizada en 4 bits con bitsandbytes y preparada por Unsloth para entrenamiento eficiente. El repositorio contiene unicamente los pesos del adaptador (aproximadamente 0,5 GB), no el modelo completo, por lo que su uso requiere cargar el modelo base y aplicar el adaptador, o bien fusionar ambos previamente.
+mnigr/microspace_lora es un ajuste fino mediante LoRA publicado en Hugging Face por el usuario mnigr, construido sobre el modelo base unsloth/Qwen3-14B-unsloth-bnb-4bit, es decir, una version del Qwen3-14B de Alibaba cuantizada en 4 bits con bitsandbytes y preparada por Unsloth para entrenamiento eficiente. El repositorio contiene unicamente los pesos del adaptador (aproximadamente 0,5 GB), no el modelo completo, por lo que su uso requiere cargar el modelo base y aplicar el adaptador, o bien fusionar ambos previamente.
 
 Se trata de un modelo denso de tipo transformer decoder-only con aproximadamente 14,8 mil millones de parametros en su base, orientado a generacion de texto y declarado exclusivamente para ingles en la model card. La relevancia de esta publicacion es limitada por el momento: no incluye informacion sobre el dataset de entrenamiento, la configuracion del LoRA (rango, alpha, modulos objetivo), el numero de pasos ni evaluaciones de ningun tipo, y acumula 0 descargas y 0 likes.
 
@@ -34,7 +34,7 @@ El unico dato tecnico de entrenamiento declarado es el uso del framework Unsloth
 - Tool calling / function calling: no confirmado para este adaptador; el modelo base Qwen3 soporta plantillas de herramientas.
 - Razonamiento multi-paso y agentes: no confirmado; depende de la preservacion de estas capacidades tras el ajuste.
 - Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma de la model card, frente a los 119 idiomas del modelo base.
-- Capacidades especiales: etiqueta endpoints_compatible, que indica compatibilidad con los endpoints de Inferencia de HuggingFace.
+- Capacidades especiales: etiqueta endpoints_compatible, que indica compatibilidad con los endpoints de Inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -43,7 +43,7 @@ El unico dato tecnico de entrenamiento declarado es el uso del framework Unsloth
 - Base para nuevos ajustes incrementales: al ser un adaptador, se puede combinar o continuar entrenando sobre el mismo modelo base sin duplicar los pesos completos.
 - Despliegue en entornos con VRAM limitada: aplicando el adaptador sobre el base en 4 bits, la inferencia es viable en GPUs de consumo con alrededor de 10-12 GB de VRAM.
 - Generacion de texto en ingles en prototipos: siempre que se valide previamente la calidad del ajuste, ya que no hay benchmarks publicados.
-- Docencia y formacion: sirve como caso de estudio minimo de publicacion de un adaptador en HuggingFace, con licencia permisiva y formato estandar.
+- Docencia y formacion: sirve como caso de estudio minimo de publicacion de un adaptador en Hugging Face, con licencia permisiva y formato estandar.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ Los datos de rendimiento del modelo comparado corresponden a las fichas oficiale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mnigr/microspace_lora
+- Modelo en Hugging Face: https://huggingface.co/mnigr/microspace_lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

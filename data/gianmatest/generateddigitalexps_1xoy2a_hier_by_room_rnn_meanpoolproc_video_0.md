@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_0`, publicado por el usuario `gianmaTest` en HuggingFace, es un artefacto de investigación de pequeño tamaño (2.366.208 parámetros) subido mediante la integración `PyTorchModelHubMixin`. El nombre del repositorio sugiere un experimento generado automáticamente dentro de un pipeline de experimentación (prefijo `generatedDigitalExps`), con una arquitectura de tipo RNN jerárquica organizada por salas (`hier_by_room_rnn`) y un mecanismo de agregación por *mean pooling* (`meanPoolProc`), aplicado presumiblemente a datos de vídeo (`video_0`).
+El modelo `generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_0`, publicado por el usuario `gianmaTest` en Hugging Face, es un artefacto de investigación de pequeño tamaño (2.366.208 parámetros) subido mediante la integración `PyTorchModelHubMixin`. El nombre del repositorio sugiere un experimento generado automáticamente dentro de un pipeline de experimentación (prefijo `generatedDigitalExps`), con una arquitectura de tipo RNN jerárquica organizada por salas (`hier_by_room_rnn`) y un mecanismo de agregación por *mean pooling* (`meanPoolProc`), aplicado presumiblemente a datos de vídeo (`video_0`).
 
 No se trata de un modelo de lenguaje generativo ni de un modelo fundacional: por su tamaño, nomenclatura y metadatos, encaja en la categoría de modelo de investigación para tareas de percepción o modelado secuencial sobre entidades discretas (habitaciones) en un entorno simulado o grabado en vídeo. La model card no aporta información sobre el problema concreto, los datos de entrenamiento ni los resultados obtenidos.
 
@@ -74,6 +74,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_0
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_0
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Código, paper y docs del autor: no disponibles (marcados como `[More Information Needed]` en la model card)

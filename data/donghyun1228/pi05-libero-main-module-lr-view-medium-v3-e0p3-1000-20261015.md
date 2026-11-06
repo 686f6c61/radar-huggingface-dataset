@@ -64,7 +64,7 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`pi05-libero-main-module-lr-view-medium-v3-e0p3-1000-20261015`) | no disponible | no disponible | Robotica / LIBERO / inverse dynamics | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| Este checkpoint (`pi05-libero-main-module-lr-view-medium-v3-e0p3-1000-20261015`) | no disponible | no disponible | Robotica / LIBERO / inverse dynamics | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Otros checkpoints de la familia pi0.5 en `openpi` | no disponible | no disponible | Vision-language-action | no disponible | no disponible |
 | Alternativas de robotica comparables (por ejemplo OpenVLA u otras VLA) | no disponible | no disponible | Vision-language-action | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se han encontrado en la busqueda web resultados tecnicos relevantes sobre est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v3-e0p3-1000-20261015
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v3-e0p3-1000-20261015
 - Libreria declarada: openpi (sin enlace especifico proporcionado)
 - Benchmark LIBERO: sin enlace proporcionado
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web no devolvio resultados tecnicos relacionados con este modelo.

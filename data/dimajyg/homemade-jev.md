@@ -69,8 +69,8 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | Rendimiento NLI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dimajyg/homemade-jev (LoRA sobre MiniCPM5-2B) | Base de 2B, adaptador LoRA r=16 | No disponible; truncado a 256 tokens en el ejemplo | MNLI-m 2k: accuracy 0,8885, ECE 0,0104 | Apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta; Space de demo en CPU |
-| openbmb/MiniCPM5-2B (modelo base sin adaptador) | 2B | No disponible | No aplicable a NLI de 3 clases sin la cabeza ajustada | Apache-2.0 (indicada como licencia del modelo base) | HuggingFace |
+| dimajyg/homemade-jev (LoRA sobre MiniCPM5-2B) | Base de 2B, adaptador LoRA r=16 | No disponible; truncado a 256 tokens en el ejemplo | MNLI-m 2k: accuracy 0,8885, ECE 0,0104 | Apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta; Space de demo en CPU |
+| openbmb/MiniCPM5-2B (modelo base sin adaptador) | 2B | No disponible | No aplicable a NLI de 3 clases sin la cabeza ajustada | Apache-2.0 (indicada como licencia del modelo base) | Hugging Face |
 | Alternativas de clasificación NLI (por ejemplo, ajustes sobre DeBERTa o RoBERTa) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La información proporcionada no incluye cifras comparativas con otros clasificadores NLI, por lo que no es posible establecer una comparación cuantitativa fiable con alternativas de la misma categoría.
@@ -90,7 +90,7 @@ La información proporcionada no incluye cifras comparativas con otros clasifica
 - Advertencia de identidad: el autor indica que este artefacto no es "TypeSafe Jev" ni el proyecto `openjev/openjev`; son modelos distintos pese a la similitud de nombre.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/dimajyg/homemade-jev
+- Modelo en Hugging Face: https://huggingface.co/dimajyg/homemade-jev
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Demo (Space): https://huggingface.co/spaces/dimajyg/homemade-jev
 - No se han proporcionado otros enlaces (papers, blogs o repositorios adicionales) en la información disponible.

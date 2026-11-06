@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tran-1984/assignment-matching` es un repositorio experimental publicado en HuggingFace por el usuario `tran-1984` que contiene una reimplementacion de la arquitectura ALBEF (ALign BEfore Fuse) orientada a tareas de *matching* (emparejamiento o alineamiento entre modalidades). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida de codigo: la propia model card lo describe como un *codebase* experimental con una configuracion de escala "large" mantenida de forma manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`tran-1984/assignment-matching` es un repositorio experimental publicado en Hugging Face por el usuario `tran-1984` que contiene una reimplementacion de la arquitectura ALBEF (ALign BEfore Fuse) orientada a tareas de *matching* (emparejamiento o alineamiento entre modalidades). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida de codigo: la propia model card lo describe como un *codebase* experimental con una configuracion de escala "large" mantenida de forma manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El checkpoint incluido (`model.safetensors`) es una inicializacion valida para *smoke tests*, no un modelo con pesos entrenados. El recuento de parametros reportado por safetensors es de apenas 16.576, un orden de magnitud compatible con una inicializacion aleatoria de prueba y no con el modelo "large" que sugiere la configuracion; el tamano del repositorio es de 0,0 GB.
 
@@ -52,7 +52,7 @@ No hay informacion sobre el volumen de tokens de entrenamiento, la composicion d
 - *Smoke testing* de pipelines de entrenamiento: el checkpoint de inicializacion permite verificar que el codigo de carga, el *forward pass* y el guardado de pesos funcionan antes de invertir en un entrenamiento real.
 - Estudio de mecanismos de co-atencion: dado que el autor invita a inspeccionar cambios de arquitectura antes de un entrenamiento completo, es util como banco de pruebas para variantes de fusion co-atención, atencion de ventana deslizante o normalizacion.
 - Comparativa de recetas de optimizacion: el archivo `training_args.json` documenta una receta base (Adam, warmup constante) sobre la que se pueden construir baselines emparejados en presupuesto de ajuste y semillas.
-- Docencia y formacion: util como ejemplo de estructura de repositorio de modelo (separacion de configuracion, receta de entrenamiento y checkpoint) para quien aprende a publicar modelos en HuggingFace.
+- Docencia y formacion: util como ejemplo de estructura de repositorio de modelo (separacion de configuracion, receta de entrenamiento y checkpoint) para quien aprende a publicar modelos en Hugging Face.
 - Punto de partida para experimentos de *matching* multimodal: si se decide entrenar con un conjunto de validacion emparejado, podria emplearse para tareas de alineamiento imagen-texto, aunque esto seria trabajo del usuario, no una capacidad entregada.
 
 ## Benchmarks y rendimiento
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tran-1984/assignment-matching` | 16.576 (checkpoint de inicializacion) | no disponible | sin benchmarks declarados | apache-2.0 | HuggingFace, 0 descargas |
+| `tran-1984/assignment-matching` | 16.576 (checkpoint de inicializacion) | no disponible | sin benchmarks declarados | apache-2.0 | Hugging Face, 0 descargas |
 | ALBEF original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otros modelos de matching multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,5 +89,5 @@ No se dispone de datos verificados sobre modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tran-1984/assignment-matching
+- Modelo en Hugging Face: https://huggingface.co/tran-1984/assignment-matching
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la busqueda web realizada.

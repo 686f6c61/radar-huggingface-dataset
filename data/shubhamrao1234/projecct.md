@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Shubhamrao1234/projecct` es un modelo alojado en HuggingFace con licencia Apache 2.0, creado por el usuario Shubhamrao1234. En el momento de la consulta, el repositorio registra 0 descargas y 0 me gusta, y no incluye una model card con contenido técnico, más allá del frontmatter de licencia.
+El repositorio `Shubhamrao1234/projecct` es un modelo alojado en Hugging Face con licencia Apache 2.0, creado por el usuario Shubhamrao1234. En el momento de la consulta, el repositorio registra 0 descargas y 0 me gusta, y no incluye una model card con contenido técnico, más allá del frontmatter de licencia.
 
 No se dispone de información sobre la arquitectura, el tamaño, la longitud de contexto, los idiomas soportados ni las capacidades del modelo. La búsqueda web no ha devuelto documentación, artículos ni resultados de benchmarks relacionados con este modelo. Por tanto, no es posible evaluar su relevancia ni su adecuación para casos de uso concretos.
 
@@ -59,4 +59,4 @@ No disponible. Al carecer de información sobre arquitectura, tamaño y capacida
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Shubhamrao1234/projecct](https://huggingface.co/Shubhamrao1234/projecct)
+- Repositorio en Hugging Face: [Shubhamrao1234/projecct](https://huggingface.co/Shubhamrao1234/projecct)

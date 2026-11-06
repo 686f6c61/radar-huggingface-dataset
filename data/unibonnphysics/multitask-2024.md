@@ -31,7 +31,7 @@ No hay evidencia de entrenamiento real. El autor indica que Adafactor con warmup
 
 ## Capacidades
 
-- No hay capacidades declaradas de generación de texto, razonamiento, código, matemáticas, visión o audio. El pipeline de HuggingFace figura como "no disponible".
+- No hay capacidades declaradas de generación de texto, razonamiento, código, matemáticas, visión o audio. El pipeline de Hugging Face figura como "no disponible".
 - La etiqueta `multitask` hace referencia al diseño experimental del repositorio, no a un conjunto verificado de tareas resueltas.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
@@ -78,5 +78,5 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unibonnphysics/multitask-2024
+- Modelo en Hugging Face: https://huggingface.co/unibonnphysics/multitask-2024
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante (paper, blog, repositorio o demo) sobre este modelo. Las únicas coincidencias devueltas por la búsqueda no guardan relación con el artefacto y se han descartado.

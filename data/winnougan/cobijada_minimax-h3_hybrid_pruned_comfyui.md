@@ -20,12 +20,12 @@ La relevancia actual es de tipo practico para el ecosistema ComfyUI: al no modif
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 (merge, conversiones cuantizadas y repositorio); los pesos originales de MiniMax H3 quedan sujetos a la licencia propia de MiniMax |
 | Formato de pesos | safetensors |
-| Pipeline | image-to-video (etiquetado en HuggingFace); la model card describe generacion texto/imagen/video/audio a video |
+| Pipeline | image-to-video (etiquetado en Hugging Face); la model card describe generacion texto/imagen/video/audio a video |
 | Modos de condicionamiento | primer/ultimo fotograma (FL) y condicionamiento por referencias (REF) en un unico checkpoint |
 | Tamano del repositorio | 61,2 GB |
 | Ficheros publicados | `Cobijada_H3_Hybrid_Uncensored_pruned_hybrid_BF16_pruned.safetensors`, `..._int8_convrot_pruned.safetensors`, `..._w4a8_convrot_pruned.safetensors` |
 | Longitud o resolucion de video | no disponible |
-| Descargas en HuggingFace | 0 |
+| Descargas en Hugging Face | 0 |
 | Fecha de creacion del repositorio | 2026-09-22 |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / condicionamiento | Calidad de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cobijada MiniMax-H3 Hybrid (este modelo) | no disponible | FL (primer/ultimo fotograma) + REF (imagen/video/audio) en un solo checkpoint | Base FL, con la via de referencias de REF en los bloques 25-49 | Apache 2.0 para el merge; pesos originales bajo licencia de MiniMax | HuggingFace, tres variantes de precision, 0 descargas |
+| Cobijada MiniMax-H3 Hybrid (este modelo) | no disponible | FL (primer/ultimo fotograma) + REF (imagen/video/audio) en un solo checkpoint | Base FL, con la via de referencias de REF en los bloques 25-49 | Apache 2.0 para el merge; pesos originales bajo licencia de MiniMax | Hugging Face, tres variantes de precision, 0 descargas |
 | MiniMax H3 FL | no disponible | Solo primer/ultimo fotograma | La mas alta en generacion sin referencias, segun la propia model card | Licencia original de MiniMax | Checkpoint oficial |
 | MiniMax H3 REF | no disponible | Referencias de imagen, video y audio | Inferior a FL, incluida la generacion sin referencias, segun la model card | Licencia original de MiniMax | Checkpoint oficial |
 | Otras alternativas de generacion de video (Wan, HunyuanVideo y similares) | no disponible | no disponible | no disponible | no disponible | No se aporta informacion en la documentacion consultada |
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Winnougan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/Winnougan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI
 - Imagen de presentacion del modelo: https://huggingface.co/Winnougan/Cobijada_Minimax-H3_Hybrid_Pruned_ComfyUI/resolve/main/H3_Hybrid.png
 - Perfil del autor: https://huggingface.co/Winnougan
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

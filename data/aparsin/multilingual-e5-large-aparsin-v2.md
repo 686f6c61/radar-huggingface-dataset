@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `APARSIN/multilingual-e5-large-aparsin-v2` es un modelo de embeddings de texto (feature extraction) publicado en HuggingFace por la organización APARSIN. Según los metadatos, está basado en la arquitectura XLM-RoBERTa (referencia arXiv:1910.09700) y cuenta con 559.890.432 parámetros, lo que lo sitúa en la gama de modelos grandes de embeddings multilingües. El nombre sugiere una adaptación o fine-tuning del modelo `multilingual-e5-large` de Microsoft, orientado probablemente a lenguas iraníes (APARSIN es también el nombre de un benchmark para 14 lenguas y dialectos iraníes publicado por la Universidad de Gante).
+El modelo `APARSIN/multilingual-e5-large-aparsin-v2` es un modelo de embeddings de texto (feature extraction) publicado en Hugging Face por la organización APARSIN. Según los metadatos, está basado en la arquitectura XLM-RoBERTa (referencia arXiv:1910.09700) y cuenta con 559.890.432 parámetros, lo que lo sitúa en la gama de modelos grandes de embeddings multilingües. El nombre sugiere una adaptación o fine-tuning del modelo `multilingual-e5-large` de Microsoft, orientado probablemente a lenguas iraníes (APARSIN es también el nombre de un benchmark para 14 lenguas y dialectos iraníes publicado por la Universidad de Gante).
 
-Sin embargo, la model card del repositorio está vacía (solo contiene plantillas genéricas de HuggingFace), por lo que no se dispone de información oficial sobre el proceso de entrenamiento, los datos utilizados, la licencia o los idiomas soportados. El modelo está registrado como compatible con `text-embeddings-inference` y `endpoints_compatible`, lo que facilita su despliegue en infraestructuras de inferencia estándar. A pesar de la falta de documentación, su arquitectura y tamaño lo hacen potencialmente útil para tareas de recuperación semántica, similitud textual y agrupación de documentos en contextos multilingües.
+Sin embargo, la model card del repositorio está vacía (solo contiene plantillas genéricas de Hugging Face), por lo que no se dispone de información oficial sobre el proceso de entrenamiento, los datos utilizados, la licencia o los idiomas soportados. El modelo está registrado como compatible con `text-embeddings-inference` y `endpoints_compatible`, lo que facilita su despliegue en infraestructuras de inferencia estándar. A pesar de la falta de documentación, su arquitectura y tamaño lo hacen potencialmente útil para tareas de recuperación semántica, similitud textual y agrupación de documentos en contextos multilingües.
 
 ## Especificaciones técnicas
 
@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: no disponible. Con 559 millones de parámetros en precisión fp32, el modelo ocuparía aproximadamente 2,2 GB en memoria, pero no se especifica cuantización.
 - GPU recomendadas: no disponible. Por su tamaño, podría ejecutarse en GPUs con 8 GB o más de VRAM, pero no hay confirmación.
 - Compatible con consumer GPUs: probablemente sí en cuantización de 8 bits o 4 bits, pero no se ofrecen datos.
-- Opciones de despliegue: al ser compatible con `text-embeddings-inference`, puede desplegarse con TGI (Text Generation Inference) o servicios similares. También es compatible con la librería `transformers` de HuggingFace.
+- Opciones de despliegue: al ser compatible con `text-embeddings-inference`, puede desplegarse con TGI (Text Generation Inference) o servicios similares. También es compatible con la librería `transformers` de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| APARSIN/multilingual-e5-large-aparsin-v2 | 559,9 M | no disponible | no disponible | HuggingFace |
-| intfloat/multilingual-e5-large (original) | 560 M (aprox.) | 512 tokens | MIT (según repo original) | HuggingFace |
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 118 M | 128 tokens | Apache 2.0 | HuggingFace |
+| APARSIN/multilingual-e5-large-aparsin-v2 | 559,9 M | no disponible | no disponible | Hugging Face |
+| intfloat/multilingual-e5-large (original) | 560 M (aprox.) | 512 tokens | MIT (según repo original) | Hugging Face |
+| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 118 M | 128 tokens | Apache 2.0 | Hugging Face |
 
 El modelo original `multilingual-e5-large` de Microsoft tiene una arquitectura similar (24 capas, embedding size 1024) y está disponible bajo licencia MIT. La variante de APARSIN parece ser un fine-tuning de ese modelo, pero sin información de licencia ni rendimiento comparativo. No se dispone de datos para establecer una comparación cuantitativa.
 
@@ -77,7 +77,7 @@ El modelo original `multilingual-e5-large` de Microsoft tiene una arquitectura s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/APARSIN/multilingual-e5-large-aparsin-v2
+- Repositorio Hugging Face: https://huggingface.co/APARSIN/multilingual-e5-large-aparsin-v2
 - Paper de XLM-R (referencia en tags): https://arxiv.org/abs/1910.09700
 - Modelo original multilingual-e5-large: https://huggingface.co/intfloat/multilingual-e5-large
 - Benchmark APARSIN (posible relación): https://www.lt3.ugent.be/publications/aparsin-a-multi-variety-sentiment-and-translation/

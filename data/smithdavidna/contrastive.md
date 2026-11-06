@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smithdavidna/contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario smithdavidna. Se presenta explícitamente como un esqueleto reproducible para experimentos de aprendizaje contrastivo, no como un modelo entrenado ni evaluado. El repositorio incluye el código de definición del modelo, una configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo.
+`smithdavidna/contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario smithdavidna. Se presenta explícitamente como un esqueleto reproducible para experimentos de aprendizaje contrastivo, no como un modelo entrenado ni evaluado. El repositorio incluye el código de definición del modelo, una configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo.
 
 La arquitectura declarada es "Hybrid" con atención de tipo flash, fusión mediante gated fusion, activación GELU y normalización InstanceNorm. El tamaño es "tiny" y el recuento real de parámetros en el checkpoint es de 49.600, es decir, unas 0,05 millones de parámetros. No hay información sobre longitud de contexto, tokenizador, vocabulario ni datos de entrenamiento.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smithdavidna/contrastive
+- Hugging Face: https://huggingface.co/smithdavidna/contrastive
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

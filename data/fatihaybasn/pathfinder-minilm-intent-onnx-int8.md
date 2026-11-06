@@ -6,7 +6,7 @@ PathFinder MiniLM-L6 Intent Classifier es un modelo de clasificación de intenci
 
 Su relevancia radica en que ofrece una solución ligera y de bajo coste computacional para clasificación de intenciones en tiempo real, con un tamaño reducido (MiniLM-L6 tiene alrededor de 22 millones de parámetros, aunque no se especifica el número exacto en la documentación) y una ventana de contexto de 96 tokens, suficiente para comandos cortos. La cuantización INT8 reduce aún más el uso de memoria y acelera la inferencia en dispositivos con recursos limitados, como microcontroladores o sistemas embebidos.
 
-El modelo se distribuye bajo licencia Apache-2.0, lo que permite uso comercial y modificación, y está disponible en HuggingFace con el pipeline de text-classification.
+El modelo se distribuye bajo licencia Apache-2.0, lo que permite uso comercial y modificación, y está disponible en Hugging Face con el pipeline de text-classification.
 
 ## Especificaciones tecnicas
 
@@ -78,5 +78,5 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fatihaybasn/pathfinder-minilm-intent-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/Fatihaybasn/pathfinder-minilm-intent-onnx-int8
 - Proyecto PathFinderShip (documentación): https://github.com/fatihaybsn/PathFinder-Ship/tree/showcase/model-benchmarks-diagent-dogfooding

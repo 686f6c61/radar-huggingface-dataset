@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`commaai/openpilot_driving_models` es un repositorio de pesos publicado por comma.ai en HuggingFace, distribuido exclusivamente en formato ONNX y con licencia MIT. El repositorio ocupa 0,8 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, con fecha de creación y última actualización el 18 de septiembre de 2026. Por el nombre y el emisor, se corresponde con el ecosistema openpilot, el sistema de asistencia a la conducción de código abierto de comma.ai, si bien la model card publicada está vacía (solo contiene la declaración de licencia), por lo que no hay información oficial sobre arquitectura, entrenamiento o rendimiento.
+`commaai/openpilot_driving_models` es un repositorio de pesos publicado por comma.ai en Hugging Face, distribuido exclusivamente en formato ONNX y con licencia MIT. El repositorio ocupa 0,8 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, con fecha de creación y última actualización el 18 de septiembre de 2026. Por el nombre y el emisor, se corresponde con el ecosistema openpilot, el sistema de asistencia a la conducción de código abierto de comma.ai, si bien la model card publicada está vacía (solo contiene la declaración de licencia), por lo que no hay información oficial sobre arquitectura, entrenamiento o rendimiento.
 
 La relevancia de esta ficha es limitada y hay que ser explícito al respecto: no existe documentación técnica publicada, no se declaran idiomas, ni pipeline, ni parámetros, ni contexto. La única información verificable es el formato (ONNX), la licencia (MIT), el tamaño del repositorio (0,8 GB) y el autor. Cualquier evaluación de capacidades exige inspeccionar directamente los grafos ONNX y los metadatos internos de los ficheros.
 
@@ -35,7 +35,7 @@ Tampoco se documenta ninguna innovación técnica (decodificación especulativa,
 
 ## Capacidades
 
-No es posible enumerar capacidades verificadas a partir de la información disponible. La model card está vacía y no se declara pipeline de HuggingFace. A continuación se indica qué capacidades quedan sin confirmar y qué se puede afirmar con certeza:
+No es posible enumerar capacidades verificadas a partir de la información disponible. La model card está vacía y no se declara pipeline de Hugging Face. A continuación se indica qué capacidades quedan sin confirmar y qué se puede afirmar con certeza:
 
 - Generación de texto, razonamiento, código o matemáticas: no disponible; nada indica que sea un modelo de lenguaje.
 - Tool calling / function calling: no disponible.
@@ -90,7 +90,7 @@ No se ha identificado en la información proporcionada ningún modelo comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/commaai/openpilot_driving_models
+- Hugging Face: https://huggingface.co/commaai/openpilot_driving_models
 - Repositorio del proyecto openpilot (enlace general del ecosistema, no aportado por la model card ni por la búsqueda web): https://github.com/commaai/openpilot
 - Sitio oficial de comma.ai (enlace general, no confirmado en la búsqueda): https://comma.ai
 - Papers, blogs, demos o documentación técnica específica de este repositorio: no disponible. Los resultados de búsqueda web recibidos no contenían ninguna referencia relevante al modelo.

@@ -70,7 +70,7 @@ No hay herramientas publicas directamente comparables que realicen transferencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Wiself/Voice
+- Repositorio Hugging Face: https://huggingface.co/Wiself/Voice
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Voz de ejemplo: https://huggingface.co/Gryphe/Gemma-4-26B-A4B-StyleTune-V2
 - Modelo de prueba mencionado: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1.4

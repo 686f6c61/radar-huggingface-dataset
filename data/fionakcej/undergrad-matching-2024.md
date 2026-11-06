@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fionakcej/undergrad-matching-2024` es un repositorio de HuggingFace publicado por el usuario fionakcej que contiene una implementación propia y reducida de una arquitectura tipo BLIP orientada a tareas de *matching*. No se trata de un modelo entrenado ni de un *release* con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible, con un *checkpoint* de inicialización válido únicamente para pruebas de humo (*smoke tests*).
+`fionakcej/undergrad-matching-2024` es un repositorio de Hugging Face publicado por el usuario fionakcej que contiene una implementación propia y reducida de una arquitectura tipo BLIP orientada a tareas de *matching*. No se trata de un modelo entrenado ni de un *release* con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible, con un *checkpoint* de inicialización válido únicamente para pruebas de humo (*smoke tests*).
 
 El artefacto principal es el archivo `model.py`, acompañado de `config.json` (configuración de arquitectura generada), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicialización). El recuento real de parámetros en safetensors es de 49.600, lo que lo sitúa en la categoría de modelos minúsculos, muy por debajo de cualquier variante BLIP entrenada. El repositorio no declara ningún resultado de benchmark ni métrica de evaluación.
 
@@ -81,5 +81,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables y el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fionakcej/undergrad-matching-2024
+- Hugging Face: https://huggingface.co/fionakcej/undergrad-matching-2024
 - La búsqueda web no ha devuelto enlaces relevantes al modelo: los resultados obtenidos son páginas de ayuda genéricas de Google, sin relación con el repositorio. No se dispone de paper, blog, repositorio de código ni demo asociados.

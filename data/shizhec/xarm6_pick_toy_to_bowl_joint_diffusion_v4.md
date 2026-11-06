@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xarm6_pick_toy_to_bowl_joint_diffusion_v4 es una politica de control visuomotor entrenada mediante imitacion para un brazo robotico UFACTORY (familia xArm6). El modelo resuelve una unica tarea de manipulacion: coger un juguete y depositarlo en un cuenco ("Pick up the toy and place it into the bowl."). Lo desarrolla el usuario Shizhec y se distribuye a traves del Hub de HuggingFace usando la libreria LeRobot.
+xarm6_pick_toy_to_bowl_joint_diffusion_v4 es una politica de control visuomotor entrenada mediante imitacion para un brazo robotico UFACTORY (familia xArm6). El modelo resuelve una unica tarea de manipulacion: coger un juguete y depositarlo en un cuenco ("Pick up the toy and place it into the bowl."). Lo desarrolla el usuario Shizhec y se distribuye a traves del Hub de Hugging Face usando la libreria LeRobot.
 
 Se trata de una implementacion de Diffusion Policy (paper arXiv:2303.04137), un enfoque que modela el control visuomotor como un proceso generativo de difusion. En lugar de predecir una accion unica, la politica genera trayectorias de accion suaves y multimodales, lo que resulta especialmente util en tareas de manipulacion con contacto rico. El modelo consume dos flujos de imagen RGB (camaras frontal y de muneca) a 480x640 y el estado propioceptivo del robot, y produce un vector de accion conjunto de 7 dimensiones.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xarm6_pick_toy_to_bowl_joint_diffusion_v4 | 91.503.927 | no disponible | sin resultados publicados | apache-2.0 | HuggingFace (LeRobot) |
+| xarm6_pick_toy_to_bowl_joint_diffusion_v4 | 91.503.927 | no disponible | sin resultados publicados | apache-2.0 | Hugging Face (LeRobot) |
 | Diffusion Policy (implementacion original, arXiv:2303.04137) | no disponible | no disponible | reportado en el paper, no comparable directamente | no disponible | publicacion cientifica |
-| ACT (Action Chunking Transformer), disponible en LeRobot | no disponible | no disponible | no disponible para esta tarea | no disponible | HuggingFace (LeRobot) |
-| Otras politicas LeRobot de pick-and-place | no disponible | no disponible | no disponible | variable | HuggingFace (LeRobot) |
+| ACT (Action Chunking Transformer), disponible en LeRobot | no disponible | no disponible | no disponible para esta tarea | no disponible | Hugging Face (LeRobot) |
+| Otras politicas LeRobot de pick-and-place | no disponible | no disponible | no disponible | variable | Hugging Face (LeRobot) |
 
 No se dispone de datos homogeneos de parametros, contexto o rendimiento para los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. La comparacion relevante es metodologica: Diffusion Policy frente a politicas deterministas tipo ACT, con la difusion ofreciendo ventajas en distribuciones de accion multimodales y tareas con contacto.
 
@@ -96,7 +96,7 @@ No se dispone de datos homogeneos de parametros, contexto o rendimiento para los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shizhec/xarm6_pick_toy_to_bowl_joint_diffusion_v4
+- Modelo en Hugging Face: https://huggingface.co/Shizhec/xarm6_pick_toy_to_bowl_joint_diffusion_v4
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shizhec/xarm6_pick_toy_to_bowl_joint_v3
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Shizhec/xarm6_pick_toy_to_bowl_joint_v3
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137

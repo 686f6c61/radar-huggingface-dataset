@@ -2,7 +2,7 @@
 
 ## Resumen
 
-elflores2150/flamingo-demo es un repositorio de HuggingFace que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de clasificación, en una configuración que el propio autor denomina "nano". Lo publica el usuario elflores2150 bajo licencia MIT y está compuesto por un único artefacto Python (`model.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato `safetensors` con 49.600 parámetros.
+elflores2150/flamingo-demo es un repositorio de Hugging Face que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de clasificación, en una configuración que el propio autor denomina "nano". Lo publica el usuario elflores2150 bajo licencia MIT y está compuesto por un único artefacto Python (`model.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato `safetensors` con 49.600 parámetros.
 
 El interés del repositorio no radica en su rendimiento, sino en su función como andamiaje reproducible: el autor declara explícitamente que no reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado, sino que sirve como inicialización válida para pruebas de humo (smoke tests). Es, por tanto, un punto de partida para investigación y docencia más que un modelo listo para producción.
 
@@ -80,4 +80,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elflores2150/flamingo-demo
+- Modelo en Hugging Face: https://huggingface.co/elflores2150/flamingo-demo

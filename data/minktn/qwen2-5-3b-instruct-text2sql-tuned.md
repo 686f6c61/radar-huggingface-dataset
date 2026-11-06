@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo minktn/Qwen2.5-3B-Instruct-Text2SQL-Tuned es un ajuste fino del modelo Qwen2.5-3B-Instruct de Alibaba, especializado en la tarea de Text2SQL: la conversión de consultas en lenguaje natural a sentencias SQL. El autor es el usuario "minktn" de HuggingFace, y el modelo se publica bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. La relevancia de este modelo radica en que parte de una base compacta de 3,09 mil millones de parámetros con una ventana de contexto de 32.768 tokens, lo que lo hace apto para despliegue en entornos con recursos limitados, como GPUs de consumo o inferencia en edge.
+El modelo minktn/Qwen2.5-3B-Instruct-Text2SQL-Tuned es un ajuste fino del modelo Qwen2.5-3B-Instruct de Alibaba, especializado en la tarea de Text2SQL: la conversión de consultas en lenguaje natural a sentencias SQL. El autor es el usuario "minktn" de Hugging Face, y el modelo se publica bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. La relevancia de este modelo radica en que parte de una base compacta de 3,09 mil millones de parámetros con una ventana de contexto de 32.768 tokens, lo que lo hace apto para despliegue en entornos con recursos limitados, como GPUs de consumo o inferencia en edge.
 
-Sin embargo, la model card publicada es extremadamente escueta: no incluye información sobre el dataset de entrenamiento, la metodología de ajuste (LoRA, QLoRA, full fine-tuning), ni benchmarks de evaluación. El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad. Esto limita seriamente la capacidad de evaluar su rendimiento real antes de adoptarlo en producción.
+Sin embargo, la model card publicada es extremadamente escueta: no incluye información sobre el dataset de entrenamiento, la metodología de ajuste (LoRA, QLoRA, full fine-tuning), ni benchmarks de evaluación. El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad. Esto limita seriamente la capacidad de evaluar su rendimiento real antes de adoptarlo en producción.
 
 ## Especificaciones tecnicas
 
@@ -73,9 +73,9 @@ Nota: la comparacion con SQLCoder y CodeLlama se basa en informacion publica de 
 - Riesgo de alucinacion en la generacion de consultas SQL: el modelo podria generar sentencias sintacticamente validas pero semanticamente incorrectas para el esquema de base de datos dado, especialmente si el esquema no se proporciona como contexto.
 - No se especifica si el ajuste fino preserva las capacidades de tool calling y function calling del modelo base, lo que podria limitar su integracion en agentes autonomos.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar que el modelo no infringe derechos de terceros sobre los datos de entrenamiento.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido evaluado ni validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido evaluado ni validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/minktn/Qwen2.5-3B-Instruct-Text2SQL-Tuned
+- Hugging Face (modelo): https://huggingface.co/minktn/Qwen2.5-3B-Instruct-Text2SQL-Tuned
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

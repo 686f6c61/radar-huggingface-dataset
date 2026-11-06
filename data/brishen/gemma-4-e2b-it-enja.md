@@ -107,7 +107,7 @@ La variante agresiva `-aggr` reduce el vocabulario a 131.648 tokens eliminando a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brishen/gemma-4-E2B-it-enja
+- Modelo en Hugging Face: https://huggingface.co/brishen/gemma-4-E2B-it-enja
 - Variante agresiva: https://huggingface.co/brishen/gemma-4-E2B-it-enja-aggr
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

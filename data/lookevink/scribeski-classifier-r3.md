@@ -85,10 +85,10 @@ Los errores sobre hechos establecidos corresponden mayoritariamente a personas y
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scribeski-classifier-r3 | ~1,7B | 32k | Clasificación de 62 campos de admisión en salud conductual, con abstención | Apache-2.0 | HuggingFace, requiere MLX |
-| Qwen/Qwen3-1.7B (modelo base) | 1,7B | 32k (nativo del base) | Modelo generativo generalista, multilingüe | Apache-2.0 | HuggingFace, ampliamente soportado |
-| Modelos generativos pequeños de la misma franja (Llama 3.2 1B/3B, Gemma 2 2B, alternativas similares) | 1B-3B | variable | Generación general, ajustables a extracción de información | licencias variables | HuggingFace |
-| Clasificadores BERT clínicos (familia tipo MentalBERT o similares) | 0,1B-0,3B | 512 tokens | Clasificación de fragmentos cortos, no de transcripciones completas | variable | HuggingFace |
+| scribeski-classifier-r3 | ~1,7B | 32k | Clasificación de 62 campos de admisión en salud conductual, con abstención | Apache-2.0 | Hugging Face, requiere MLX |
+| Qwen/Qwen3-1.7B (modelo base) | 1,7B | 32k (nativo del base) | Modelo generativo generalista, multilingüe | Apache-2.0 | Hugging Face, ampliamente soportado |
+| Modelos generativos pequeños de la misma franja (Llama 3.2 1B/3B, Gemma 2 2B, alternativas similares) | 1B-3B | variable | Generación general, ajustables a extracción de información | licencias variables | Hugging Face |
+| Clasificadores BERT clínicos (familia tipo MentalBERT o similares) | 0,1B-0,3B | 512 tokens | Clasificación de fragmentos cortos, no de transcripciones completas | variable | Hugging Face |
 
 La comparación relevante es la funcional, no la de parámetros: frente al Qwen3-1.7B original, este modelo pierde capacidades generativas y conversacionales a cambio de salida estructurada, abstención calibrada y una tasa de error del 0,38 % en el dominio objetivo. Frente a un clasificador BERT clínico, la diferencia clave es la ventana de 32k, que permite procesar la sesión completa en lugar de fragmentos. No hay datos públicos de rendimiento de las alternativas en esta tarea concreta, por lo que la comparación cuantitativa de precisión no está disponible.
 
@@ -108,7 +108,7 @@ La comparación relevante es la funcional, no la de parámetros: frente al Qwen3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lookevink/scribeski-classifier-r3
+- Modelo en Hugging Face: https://huggingface.co/lookevink/scribeski-classifier-r3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset *Scribeski Intake Dialogues* (CC BY 4.0): mencionado en la model card, URL no disponible en la información proporcionada
 - Repositorio Scribeski con los informes de evaluación (`eval/classifier-round3-2026-09-23.md`, rondas 1 y 2): mencionado en la model card, URL no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moss-image-nsfw-uncensored-lora es un adaptador LoRA para el modelo de difusion de texto a imagen MOSS-Image-SFT, desarrollado por el usuario misun1001 y publicado en HuggingFace bajo licencia Apache 2.0. El adaptador se distribuye en formato safetensors y esta disenado para su uso con la libreria diffusers, con la etiqueta de pipeline text-to-image. Su funcion es especializar el modelo base en la generacion de contenido para adultos sin las restricciones de filtrado que habitualmente incorporan los modelos de difusion comerciales.
+Moss-image-nsfw-uncensored-lora es un adaptador LoRA para el modelo de difusion de texto a imagen MOSS-Image-SFT, desarrollado por el usuario misun1001 y publicado en Hugging Face bajo licencia Apache 2.0. El adaptador se distribuye en formato safetensors y esta disenado para su uso con la libreria diffusers, con la etiqueta de pipeline text-to-image. Su funcion es especializar el modelo base en la generacion de contenido para adultos sin las restricciones de filtrado que habitualmente incorporan los modelos de difusion comerciales.
 
 El modelo base, OpenMOSS-Team/MOSS-Image-SFT, es un modelo de difusion de texto a imagen. El adaptador se aplica como un modulo adicional sobre dicho modelo, con un prompt de instancia especifico ("moss_xvstyle") que activa el estilo aprendido durante el entrenamiento del LoRA. El repositorio ocupa 27,6 GB, lo que sugiere que incluye tanto los pesos del adaptador como posiblemente artefactos adicionales o versiones del modelo base.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la informacion proporcionada otros adap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/misun1001/Moss-image-nsfw-uncensored-lora
+- Modelo en Hugging Face: https://huggingface.co/misun1001/Moss-image-nsfw-uncensored-lora
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT

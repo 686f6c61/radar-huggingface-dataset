@@ -80,8 +80,8 @@ La comparativa se limita a los modelos de la misma familia gpt-oss, ya que no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joe-sidley-adc/lora-finetuned
-- Modelo base en HuggingFace: https://huggingface.co/openai/gpt-oss-20b
+- Repositorio Hugging Face: https://huggingface.co/joe-sidley-adc/lora-finetuned
+- Modelo base en Hugging Face: https://huggingface.co/openai/gpt-oss-20b
 - Modelo mayor de la familia: https://huggingface.co/openai/gpt-oss-120b
 - Demo oficial: https://gpt-oss.com
 - Guías de uso: https://cookbook.openai.com/topic/gpt-oss

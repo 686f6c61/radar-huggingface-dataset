@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks de calidad de modelo (PESQ, STOI, D
 
 | Modelo | Tipo | Contexto/Tasas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `brishen/iron-reuse-npu2` | Exportacion NPU de SEMamba | 8-48 kHz, multi-tasa | NSCLv1 (solo no comercial) | HuggingFace + runtime Rust |
-| `nvidia/RE-USE` | Modelo original SEMamba | 8-48 kHz, multi-tasa | NSCLv1 (solo no comercial) | HuggingFace, checkpoint con `inference.py` |
+| `brishen/iron-reuse-npu2` | Exportacion NPU de SEMamba | 8-48 kHz, multi-tasa | NSCLv1 (solo no comercial) | Hugging Face + runtime Rust |
+| `nvidia/RE-USE` | Modelo original SEMamba | 8-48 kHz, multi-tasa | NSCLv1 (solo no comercial) | Hugging Face, checkpoint con `inference.py` |
 | Otros modelos de mejora de voz (por ejemplo DeepFilterNet, FRCRN) | Redes dedicadas a enhancement | No disponible en la informacion proporcionada | No disponible | No disponible |
 
 La comparacion directa a nivel de calidad de audio no puede establecerse porque no se han publicado metricas objetivas de enhancement en la informacion disponible. La diferencia clave entre este paquete y `nvidia/RE-USE` es exclusivamente el backend de ejecucion: la variante aqui descrita compila para NPU AMD, mientras que la original esta pensada para GPU/CPU con las utilidades de inferencia de NVIDIA.
@@ -93,7 +93,7 @@ La comparacion directa a nivel de calidad de audio no puede establecerse porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brishen/iron-reuse-npu2
+- Modelo en Hugging Face: https://huggingface.co/brishen/iron-reuse-npu2
 - Modelo base NVIDIA RE-USE: https://huggingface.co/nvidia/RE-USE
 - Toolkit IRON: https://github.com/amd/IRON
 - Runtime `taconite-reuse`: https://crates.io/crates/taconite-reuse

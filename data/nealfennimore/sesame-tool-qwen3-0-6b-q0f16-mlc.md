@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nealfennimore/sesame-tool-qwen3-0.6b-q0f16-MLC
+- Modelo en Hugging Face: https://huggingface.co/nealfennimore/sesame-tool-qwen3-0.6b-q0f16-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Runtime WebLLM (mencionado en la *model card*): https://github.com/mlc-ai/web-llm
 - Repositorio del proyecto con scripts, datos semilla y evaluación: no disponible en la información proporcionada.

@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento comparativo con alternativas de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hsilvosa/feishengmt-ONNX
+- Repositorio Hugging Face: https://huggingface.co/hsilvosa/feishengmt-ONNX
 - Modelo base: https://huggingface.co/hsilvosa/feishengmt
 - transformers.js: https://github.com/huggingface/transformers.js

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DiggersbyMT es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio, creado y actualizado el 3 de noviembre de 2026, tiene un tamano de 0,1 GB y no cuenta con descargas ni likes en el momento de la consulta. La model card asociada no contiene mas informacion que la declaracion de licencia, por lo que no es posible confirmar la arquitectura, el proposito ni el proceso de entrenamiento a partir de la documentacion oficial.
+DiggersbyMT es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio, creado y actualizado el 3 de noviembre de 2026, tiene un tamano de 0,1 GB y no cuenta con descargas ni likes en el momento de la consulta. La model card asociada no contiene mas informacion que la declaracion de licencia, por lo que no es posible confirmar la arquitectura, el proposito ni el proceso de entrenamiento a partir de la documentacion oficial.
 
 La ausencia de metadatos tecnicos (pipeline, idiomas, parametros, contexto) y de una descripcion funcional impide clasificar el modelo dentro de una categoria concreta. El nombre "DiggersbyMT" sugiere, por convencion, un posible modelo de traduccion automatica (MT) o un fine-tune derivado de otro modelo base, pero se trata de una inferencia nominal sin respaldo documental.
 
@@ -23,7 +23,7 @@ Dado el estado actual del repositorio, el modelo no es evaluable ni recomendable
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o cualquier otra variante. Tampoco se especifica el numero de parametros, la longitud de contexto nativa ni el vocabulario utilizado.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o cualquier otra variante. Tampoco se especifica el numero de parametros, la longitud de contexto nativa ni el vocabulario utilizado.
 
 Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composicion del corpus, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre posibles tecnicas de optimizacion como decodificacion especulativa o atencion lineal. El tamano del repositorio (0,1 GB) es compatible con pesos cuantizados de un modelo pequeno o con un conjunto parcial de ficheros, pero no permite deducir la arquitectura ni el numero de parametros con fiabilidad.
 
@@ -72,4 +72,4 @@ No disponible. La falta de especificaciones tecnicas impide identificar modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/DiggersbyMT
+- Hugging Face: https://huggingface.co/Ryanham1lton/DiggersbyMT

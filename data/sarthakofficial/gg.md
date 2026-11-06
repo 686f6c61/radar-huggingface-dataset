@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Sarthakofficial/Gg` alojado en HuggingFace no contiene información técnica publicada sobre el modelo. La model card únicamente declara la licencia MIT y no se especifican arquitectura, tamaño, parámetros, contexto ni capacidades. El autor es Sarthakofficial y el repositorio fue creado el 14 de agosto de 2026, sin descargas ni interacciones registradas. No se dispone de ningún dato que permita identificar qué modelo es, cómo se entrenó o para qué tareas está diseñado.
+El repositorio `Sarthakofficial/Gg` alojado en Hugging Face no contiene información técnica publicada sobre el modelo. La model card únicamente declara la licencia MIT y no se especifican arquitectura, tamaño, parámetros, contexto ni capacidades. El autor es Sarthakofficial y el repositorio fue creado el 14 de agosto de 2026, sin descargas ni interacciones registradas. No se dispone de ningún dato que permita identificar qué modelo es, cómo se entrenó o para qué tareas está diseñado.
 
 Dado que no existe información pública más allá de la licencia, esta ficha se limita a documentar la ausencia de datos y a advertir sobre la imposibilidad de evaluar el modelo para cualquier caso de uso. Se recomienda contactar al autor o esperar a que publique una model card completa antes de considerar su uso en proyectos.
 
@@ -53,4 +53,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sarthakofficial/Gg
+- Repositorio en Hugging Face: https://huggingface.co/Sarthakofficial/Gg

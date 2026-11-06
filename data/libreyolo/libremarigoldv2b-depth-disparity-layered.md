@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Enfoque | Licencia | Formato | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| LibreMarigoldV2b-depth-disparity-layered | no disponible (adaptador de 1,9 GB) | Adaptador de difusion para profundidad, variante `disparity-layered` | Apache 2.0 | `.pt` (LibreYOLO) | HuggingFace + LibreYOLO (rama `feat/marigoldv2`); requiere base aparte | Diferencia absoluta maxima de 0.0 frente al nativo, en el mismo worker |
-| huawei-bayerlab/marigold-v2-0 (subcarpeta `depth/Disparity-layered`) | no disponible | Modelo de difusion para profundidad, variante `disparity-layered` | Apache 2.0 | no disponible | HuggingFace | no disponible |
-| Qwen/Qwen-Image-Edit-2509 | no disponible | Transformer de difusion para edicion de imagen, usado aqui como base congelada | Apache 2.0 | no disponible | HuggingFace | no disponible |
+| LibreMarigoldV2b-depth-disparity-layered | no disponible (adaptador de 1,9 GB) | Adaptador de difusion para profundidad, variante `disparity-layered` | Apache 2.0 | `.pt` (LibreYOLO) | Hugging Face + LibreYOLO (rama `feat/marigoldv2`); requiere base aparte | Diferencia absoluta maxima de 0.0 frente al nativo, en el mismo worker |
+| huawei-bayerlab/marigold-v2-0 (subcarpeta `depth/Disparity-layered`) | no disponible | Modelo de difusion para profundidad, variante `disparity-layered` | Apache 2.0 | no disponible | Hugging Face | no disponible |
+| Qwen/Qwen-Image-Edit-2509 | no disponible | Transformer de difusion para edicion de imagen, usado aqui como base congelada | Apache 2.0 | no disponible | Hugging Face | no disponible |
 
 No se dispone de datos de parametros, contexto ni resultados de benchmarks para ninguna de las alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con otros estimadores de profundidad monocular.
 
@@ -95,7 +95,7 @@ No se dispone de datos de parametros, contexto ni resultados de benchmarks para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-disparity-layered
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-disparity-layered
 - Modelo base Marigold V2: https://huggingface.co/huawei-bayerlab/marigold-v2-0 (revision `6fd6d1ca246c9d2d99a4d8ac375a4eccc87178ad`)
 - Base congelada Qwen-Image-Edit: https://huggingface.co/Qwen/Qwen-Image-Edit-2509 (revision `d3968ef930e841f4c73640fb8afa3b306a78167e`)
 - Repositorio de la implementacion de origen Marigold V2: https://github.com/huawei-bayerlab/marigold-v2/tree/cc6a7031abcd59fd9e1ceff7fdd0d9687d389bc5

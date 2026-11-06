@@ -69,5 +69,5 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - Markie77/new-testament-trained-BF16-GGUF](https://huggingface.co/Markie77/new-testament-trained-BF16-GGUF)
+- [Hugging Face - Markie77/new-testament-trained-BF16-GGUF](https://huggingface.co/Markie77/new-testament-trained-BF16-GGUF)
 - [Unsloth (herramienta de conversión)](https://github.com/unslothai/unsloth)

@@ -81,7 +81,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-MPOA-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-MPOA-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/richardyoung/Qwen3.8-27B-MPOA-heretic
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.8-27B-MPOA-heretic-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-MPOA-heretic-i1-GGUF

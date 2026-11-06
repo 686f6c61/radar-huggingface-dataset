@@ -69,7 +69,7 @@ No se dispone de benchmarks comparativos entre estas variantes. La diferencia pr
 
 ## Limitaciones y advertencias
 
-- Modelo experimental con 0 descargas y 0 likes en HuggingFace; no ha sido validado por la comunidad.
+- Modelo experimental con 0 descargas y 0 likes en Hugging Face; no ha sido validado por la comunidad.
 - La supresión de *hedging* puede llevar a respuestas demasiado tajantes o categóricas en temas donde la incertidumbre es importante (medicina, finanzas, política).
 - No se ha realizado fine-tuning, por lo que hereda los sesgos del Llama-3.1-8B-Instruct, incluyendo posibles sesgos de género, raza o ideología.
 - Riesgo de alucinación similar al modelo base; la concisión no reduce la probabilidad de inventar hechos.
@@ -79,7 +79,7 @@ No se dispone de benchmarks comparativos entre estas variantes. La diferencia pr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Concise-No-Hedging)
+- [Modelo en Hugging Face](https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Concise-No-Hedging)
 - [Repositorio jBlaze (herramienta usada)](https://github.com/apolloraines/jblaze)
 - [Modelo base Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Variante relacionada: Llama-3.3-8B-Instruct-128K-Jbliterated](https://huggingface.co/ApolloRaines/Llama-3.3-8B-Instruct-128K-Jbliterated)

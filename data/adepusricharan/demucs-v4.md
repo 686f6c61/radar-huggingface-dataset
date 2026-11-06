@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Demucs v4 (HTDemucs, este repo) | no disponible | audio; ventana no especificada | Híbrido transformer tiempo-frecuencia | MIT | Pesos en HuggingFace, 0,5 GB |
+| Demucs v4 (HTDemucs, este repo) | no disponible | audio; ventana no especificada | Híbrido transformer tiempo-frecuencia | MIT | Pesos en Hugging Face, 0,5 GB |
 | Demucs v3 | no disponible | audio | U-Net en dominio temporal con BiLSTM | MIT | Repo oficial de Meta AI |
 | Spleeter (Deezer) | no disponible | audio | U-Net sobre espectrogramas | MIT | TensorFlow, repo de Deezer |
 | Open-Unmix (UMX) | no disponible | audio | Red totalmente conectada sobre STFT | MIT | Repo de sigsep |
@@ -85,7 +85,7 @@ La comparación numérica de calidad (SDR por pista) no está disponible en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adepusricharan/Demucs-v4
+- Repositorio en Hugging Face: https://huggingface.co/adepusricharan/Demucs-v4
 - Repositorio oficial de Demucs (Meta AI): https://github.com/facebookresearch/demucs
 - Artículo HTDemucs, ICASSP 2023: https://arxiv.org/abs/2211.08553
 - Repositorio espejo/tercero: https://github.com/charzy/Demucs-v4-

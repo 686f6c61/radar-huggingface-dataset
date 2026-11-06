@@ -74,6 +74,6 @@ No se dispone de datos suficientes para una comparativa formal con otros modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/divyanshgitmax/NPPE3-SuperResolution-Ensemble
+- Hugging Face: https://huggingface.co/divyanshgitmax/NPPE3-SuperResolution-Ensemble
 - Perfil del autor: https://huggingface.co/divyanshgitmax
 - Modelo relacionado de la misma competición: https://huggingface.co/Brijeshsharma/nppe3-4x-super-resolution-denoise

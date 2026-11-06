@@ -77,7 +77,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto o rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-ds41flash-obf2g
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-ds41flash-obf2g
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Código, configuraciones y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Diario de ejecución referenciado: `runs/2026-10-24_cot-control_obf2g.md` (en el repositorio de GitHub)

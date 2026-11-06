@@ -4,7 +4,7 @@
 
 El modelo `mdehghani84/iranian-national-id-extractor` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen3.5-0.8B`, desarrollado por el usuario mdehghani84. Está diseñado para la extracción de información de documentos de identidad iraníes, probablemente a partir de imágenes, dado que el pipeline declarado es `image-text-to-text`. Se trata de un modelo pequeño (873 millones de parámetros) que aprovecha la arquitectura transformer de Qwen3.5 para tareas de visión-lenguaje, aunque no se especifican los detalles exactos de la tarea ni el formato de salida.
 
-La relevancia de este modelo radica en su especialización: en lugar de usar un modelo generalista, el autor ha ajustado un modelo compacto para una tarea concreta de extracción de datos de documentos, lo que puede ofrecer ventajas en términos de eficiencia y coste en entornos de producción con recursos limitados. Sin embargo, al tener cero descargas y cero likes en HuggingFace, su adopción es nula y su fiabilidad no está validada por la comunidad.
+La relevancia de este modelo radica en su especialización: en lugar de usar un modelo generalista, el autor ha ajustado un modelo compacto para una tarea concreta de extracción de datos de documentos, lo que puede ofrecer ventajas en términos de eficiencia y coste en entornos de producción con recursos limitados. Sin embargo, al tener cero descargas y cero likes en Hugging Face, su adopción es nula y su fiabilidad no está validada por la comunidad.
 
 El entrenamiento se realizó con la librería Unsloth y Huggingface TRL, lo que indica un proceso de ajuste eficiente. La licencia es Apache 2.0, permitiendo uso comercial y modificación, aunque el idioma declarado es únicamente inglés, lo que puede limitar su uso en contextos multilingües.
 
@@ -23,7 +23,7 @@ El entrenamiento se realizó con la librería Unsloth y Huggingface TRL, lo que 
 
 ## Arquitectura y entrenamiento
 
-No se proporcionan detalles técnicos específicos sobre la arquitectura interna del modelo. Dado que se basa en `Qwen/Qwen3.5-0.8B`, se asume que hereda la arquitectura transformer decoder-only de Qwen, con atención completa y posiblemente mecanismos de visión si el pipeline `image-text-to-text` implica un codificador visual. Sin embargo, no hay información pública sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El único dato disponible es que el ajuste se realizó con Unsloth y la librería TRL de HuggingFace, lo que sugiere un fine-tuning supervisado estándar con LoRA o similar, pero no se confirma.
+No se proporcionan detalles técnicos específicos sobre la arquitectura interna del modelo. Dado que se basa en `Qwen/Qwen3.5-0.8B`, se asume que hereda la arquitectura transformer decoder-only de Qwen, con atención completa y posiblemente mecanismos de visión si el pipeline `image-text-to-text` implica un codificador visual. Sin embargo, no hay información pública sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El único dato disponible es que el ajuste se realizó con Unsloth y la librería TRL de Hugging Face, lo que sugiere un fine-tuning supervisado estándar con LoRA o similar, pero no se confirma.
 
 No se menciona ninguna innovación técnica destacable, como decodificación especulativa o atención lineal, más allá del uso de Unsloth para acelerar el entrenamiento.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: para un modelo de 873M parámetros en precisión FP16, se necesitan aproximadamente 1.8 GB de VRAM solo para los pesos. Con cuantización INT8 o INT4, el requisito baja a ~0.9 GB o ~0.45 GB respectivamente, aunque no se confirma la disponibilidad de versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) podría ejecutar el modelo en FP16. Para mayor comodidad, una RTX 3060 o superior es suficiente.
 - Compatibilidad con GPUs de consumo: sí, cabe en GPUs de gama media y baja, incluso en CPU con suficiente RAM (aunque más lento).
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. También se puede cargar directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. También se puede cargar directamente con la librería transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de este tamaño, se espera una latencia de decenas de milisegundos por token en una GPU moderna, pero no se puede afirmar con precisión.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No se dispone de información sobre modelos comparables específicos para la ext
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mdehghani84/iranian-national-id-extractor)
+- [Modelo en Hugging Face](https://huggingface.co/mdehghani84/iranian-national-id-extractor)
 - [Modelo base Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B) (referencia)
 - [Unsloth](https://github.com/unslothai/unsloth) (librería de entrenamiento mencionada)

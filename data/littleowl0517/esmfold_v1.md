@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Requiere MSA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ESMFold (este repo) | no disponible (repo 8,4 GB) | no disponible | No | MIT | HuggingFace |
+| ESMFold (este repo) | no disponible (repo 8,4 GB) | no disponible | No | MIT | Hugging Face |
 | AlphaFold2 | no disponible en la informacion | no disponible | Si | no disponible en la informacion | no disponible en la informacion |
 | RoseTTAFold | no disponible en la informacion | no disponible | Si | no disponible en la informacion | no disponible en la informacion |
 
@@ -83,6 +83,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LittleOwl0517/esmfold_v1
+- Repositorio Hugging Face: https://huggingface.co/LittleOwl0517/esmfold_v1
 - Paper asociado (Science): https://www.science.org/doi/10.1126/science.ade2574
-- Tutorial notebook de HuggingFace: https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/protein_folding.ipynb
+- Tutorial notebook de Hugging Face: https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/protein_folding.ipynb

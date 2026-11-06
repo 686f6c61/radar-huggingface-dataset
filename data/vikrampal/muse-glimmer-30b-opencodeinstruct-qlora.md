@@ -18,7 +18,7 @@ La relevancia de este adaptador radica en que combina la versatilidad multimodal
 | Longitud de contexto | 128 000 tokens (modelo base) |
 | Tipos de cuantizacion | QLoRA (4 bits) para el adaptador; el modelo base admite cuantizacion dinamica (llama.cpp) |
 | Idiomas soportados | No especificados (modelo base multilingue, sin detalle) |
-| Licencia | Apache-2.0 (segun tag de HuggingFace) |
+| Licencia | Apache-2.0 (segun tag de Hugging Face) |
 | Formato de pesos | safetensors (adaptador PEFT) |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ No se dispone de una comparativa directa con otros modelos de código de tamaño
 
 ## Enlaces
 
-- [HuggingFace - VikramPal/Muse-Glimmer-30B-opencodeinstruct-qlora](https://huggingface.co/VikramPal/Muse-Glimmer-30B-opencodeinstruct-qlora)
+- [Hugging Face - VikramPal/Muse-Glimmer-30B-opencodeinstruct-qlora](https://huggingface.co/VikramPal/Muse-Glimmer-30B-opencodeinstruct-qlora)
 - [Meta - Muse Glimmer](https://developer.meta.com/ai/models/muse-glimmer/)
 - [Model API | Muse Glimmer - dev.meta.ai](https://dev.meta.ai/docs/muse-glimmer)
 - [vLLM Recipes - meta-models/Muse-Glimmer-30B](https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B)

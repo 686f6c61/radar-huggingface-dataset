@@ -18,7 +18,7 @@ Además, el repositorio documenta un episodio relevante para quien evalúe el mo
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16, Q8_0, AD-Q6_K, AD-Q5_K_M, AD-Q4_K_M, AD-IQ4_XS (todos GGUF); proyectores de vision `mmproj-d1-3B-BF16` y `mmproj-d1-3B-Q8_0` |
 | Idiomas soportados | no disponible en la ficha del repositorio; el banco de evaluacion del cuantizador usa textos de 30 idiomas y codigo fuente |
-| Licencia | lfm1.0 (Liquid Foundation Model License 1.0), declarada en HuggingFace como `other` con `license_name: lfm1.0` |
+| Licencia | lfm1.0 (Liquid Foundation Model License 1.0), declarada en Hugging Face como `other` con `license_name: lfm1.0` |
 | Formato de pesos | GGUF para llama.cpp; el modelo base se distribuye en safetensors. Tamano total del repositorio: 17,2 GB |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ En la información proporcionada no aparecen otros modelos de decisión comparab
 - El riesgo de alucinación en el sentido clásico es bajo, porque la respuesta se lee de un conjunto cerrado de tokens, pero sí existe riesgo de calibración incorrecta: una probabilidad alta no garantiza que la decisión sea correcta. El autor publica la deriva de probabilidades frente a BF16 precisamente porque esa calibración es la señal de uso.
 - El fabricante no midió las decisiones sobre imágenes. El pipeline `image-text-to-text` y los proyectores `mmproj` están disponibles, pero su fidelidad en tareas de decisión multimodales no está validada.
 - Lista oficial de idiomas soportados no disponible. El banco de evaluación cubre 30 idiomas y código fuente, pero eso es la composición de un conjunto de prueba, no una garantía de cobertura.
-- Licencia lfm1.0 (Liquid Foundation Model License 1.0), declarada como `other` en HuggingFace. Conviene revisar el texto completo de la licencia antes de cualquier uso comercial, ya que las condiciones de la familia LFM no son equivalentes a las de una licencia Apache o MIT.
+- Licencia lfm1.0 (Liquid Foundation Model License 1.0), declarada como `other` en Hugging Face. Conviene revisar el texto completo de la licencia antes de cualquier uso comercial, ya que las condiciones de la familia LFM no son equivalentes a las de una licencia Apache o MIT.
 - Dependencia del soporte de llama.cpp: hasta que el PR ggml-org/llama.cpp#30110 esté integrado en una versión estable, los ficheros pueden no cargar en binarios antiguos.
 - Los GGUF de Liquid AI para este modelo fueron retirados; si se conserva una copia antigua, procede de una versión previa de los pesos y no es comparable con la actual. Cada capa lineal difiere en un 2-3% relativo respecto a `model.safetensors` actual.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: no existe validación de la comunidad sobre estos ficheros más allá de las métricas publicadas por el propio autor en el repositorio de métricas.
@@ -109,7 +109,7 @@ En la información proporcionada no aparecen otros modelos de decisión comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/d1-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/d1-3B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Repositorio de metricas y logs del cuantizador: https://huggingface.co/datasets/AtomicChat/d1-3B-GGUF-metrics
 - Discusion sobre los nuevos pesos del modelo base (PR #4): https://huggingface.co/LiquidAI/d1-3B/discussions/4

@@ -30,7 +30,7 @@ Los resultados publicados son modestos: 10,79 % de mAP@50 y 6,42 % de mAP@50-95 
 | Fecha de creacion (metadatos) | 2026-09-18 |
 | Fecha de ultima actualizacion (metadatos) | 2026-09-18 |
 | Descargas / likes | 0 / 0 |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -121,11 +121,11 @@ Lectura de la tabla: el modelo aqui descrito ocupa la ultima posicion en mAP@50,
 - Metricas no verificadas: todos los valores del model-index tienen `verified: false` y proceden del propio autor.
 - La model card esta incompleta en el contenido citado: la seccion de uso ("Usage") se interrumpe, por lo que no se documentan aqui los parametros de inferencia recomendados (resolucion, umbral de confianza, IoU).
 - Los metadatos indican 0 descargas y 0 likes, y un tamano de repositorio de 0,0 GB; el modelo es muy reciente y carece de validacion por parte de la comunidad.
-- Las fechas de creacion y actualizacion registradas (2026-09-18) son las que figuran en los metadatos de HuggingFace.
+- Las fechas de creacion y actualizacion registradas (2026-09-18) son las que figuran en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolov8n
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolov8n
 - Dataset UAVDT (autor): https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLOv8

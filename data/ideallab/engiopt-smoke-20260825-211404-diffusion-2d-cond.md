@@ -16,7 +16,7 @@ La relevancia de este modelo radica en su propósito de servir como punto de par
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (no es un modelo de lenguaje) |
 | Licencia | GPL-3.0 |
-| Formato de pesos | safetensors (según la estructura de repo de HuggingFace, aunque no se confirma explícitamente) |
+| Formato de pesos | safetensors (según la estructura de repo de Hugging Face, aunque no se confirma explícitamente) |
 
 ## Arquitectura y entrenamiento
 La información proporcionada no detalla la arquitectura interna del modelo. Por el nombre y los tags, se infiere que se trata de un modelo de difusión condicionada para datos bidimensionales (posiblemente imágenes o mapas de diseño). El entrenamiento se realiza sobre los problemas de EngiBench, un conjunto de problemas de diseño de ingeniería con una API estándar. El repositorio de EngiOpt indica que estos modelos sirven como inicializaciones aprendidas para optimización posterior, pero no se especifica el proceso exacto de entrenamiento (número de tokens, composición del dataset, uso de RLHF, etc.). No hay información sobre innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
@@ -37,7 +37,7 @@ La información proporcionada no detalla la arquitectura interna del modelo. Por
 - Evaluación de métodos de difusión condicionada: puede servir como punto de referencia para estudiar el rendimiento de modelos generativos en problemas de ingeniería.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de rendimiento como MMLU, HumanEval o similares, ya que no es un modelo de lenguaje. La evaluación se realiza sobre problemas de diseño de ingeniería, pero no se proporcionan resultados numéricos.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de rendimiento como MMLU, HumanEval o similares, ya que no es un modelo de lenguaje. La evaluación se realiza sobre problemas de diseño de ingeniería, pero no se proporcionan resultados numéricos.
 
 ## Requisitos de hardware
 - VRAM estimada: no disponible, pero el tamaño del repositorio es de 0.1 GB, lo que sugiere que los pesos son ligeros y podrían caber en GPUs con menos de 2 GB de memoria (aunque depende de la resolución de entrada).
@@ -51,9 +51,9 @@ No se dispone de modelos directamente comparables en la misma categoría. Dentro
 
 | Modelo | Arquitectura | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| engiopt-smoke-20260825-211404-diffusion-2d-cond | Difusión 2D condicionada | 0.1 GB | GPL-3.0 | HuggingFace |
-| engiopt-public-smoke-cgan-cnn-2d | CGAN CNN 2D | no disponible | GPL-3.0 | HuggingFace |
-| engiopt-neurips-diffusion-2d-cond | Difusión 2D condicionada | no disponible | GPL-3.0 | HuggingFace |
+| engiopt-smoke-20260825-211404-diffusion-2d-cond | Difusión 2D condicionada | 0.1 GB | GPL-3.0 | Hugging Face |
+| engiopt-public-smoke-cgan-cnn-2d | CGAN CNN 2D | no disponible | GPL-3.0 | Hugging Face |
+| engiopt-neurips-diffusion-2d-cond | Difusión 2D condicionada | no disponible | GPL-3.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 - Licencia GPL-3.0: obliga a que los trabajos derivados se distribuyan bajo la misma licencia, lo que puede ser restrictivo para uso comercial propietario.
@@ -64,7 +64,7 @@ No se dispone de modelos directamente comparables en la misma categoría. Dentro
 - Repositorio sin descargas ni likes: es un modelo de evaluación experimental, no validado por la comunidad.
 
 ## Enlaces
-- HuggingFace: [IDEALLab/engiopt-smoke-20260825-211404-diffusion-2d-cond](https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-diffusion-2d-cond)
+- Hugging Face: [IDEALLab/engiopt-smoke-20260825-211404-diffusion-2d-cond](https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-diffusion-2d-cond)
 - Repositorio GitHub de EngiOpt: https://github.com/IDEALLab/EngiOpt
 - Repositorio GitHub de EngiTeach: https://github.com/IDEALLab/EngiTeach
 - Página de EngiBench: https://engibench.ethz.ch/

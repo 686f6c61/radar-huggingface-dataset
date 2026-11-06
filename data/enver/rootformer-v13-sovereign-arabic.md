@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rootformer V13 Sovereign es un modelo de traduccion especializado en arabe clasico hacia ingles, desarrollado por AynEngine AI & Computational Philology Research Group (AynEngine Foundation) y publicado en HuggingFace bajo el identificador `enver/rootformer-v13-sovereign-arabic`. Su planteamiento rompe con el enfoque habitual de los modelos multilingues: en lugar de tokenizar arabe mediante BPE, el modelo trata la palabra como una composicion no concatenativa de raiz, patron morfologico (wazn) y afijos, y delega el lexico estatico en una tabla de memoria dispersa en lugar de forzar al transformer a memorizarlo.
+Rootformer V13 Sovereign es un modelo de traduccion especializado en arabe clasico hacia ingles, desarrollado por AynEngine AI & Computational Philology Research Group (AynEngine Foundation) y publicado en Hugging Face bajo el identificador `enver/rootformer-v13-sovereign-arabic`. Su planteamiento rompe con el enfoque habitual de los modelos multilingues: en lugar de tokenizar arabe mediante BPE, el modelo trata la palabra como una composicion no concatenativa de raiz, patron morfologico (wazn) y afijos, y delega el lexico estatico en una tabla de memoria dispersa en lugar de forzar al transformer a memorizarlo.
 
 Tecnicamente se describe como una arquitectura tripartita: un cuello de botella de engram de inspiracion farahidi (9.016 raices radicales y 128 moldes de flexion en una tabla de consulta multi-cabeza O(1) de 2,8 millones de parametros, con gating consciente del contexto inyectado en el puente interlingue de la capa 12), una gobernanza sintactica de inspiracion sibawayhi que parsea la clausula arabe en un grafo aciclico dirigido de constituyentes, y un motor de composicion de inspiracion yuryani que genera la sintaxis analitica inglesa. El modelo tiene 399.371.824 parametros segun los pesos safetensors (el model card lo describe como un transformer de ~0,5 B).
 
@@ -101,7 +101,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enver/rootformer-v13-sovereign-arabic
+- Modelo en Hugging Face: https://huggingface.co/enver/rootformer-v13-sovereign-arabic
 - Dataset asociado: https://huggingface.co/datasets/enver/classical-arabic-scholastic-bilingual-corpus
 - Paper citado en el model card: https://arxiv.org/html/2609.19969v1
 - Resultados de busqueda web: no aportan informacion relevante sobre el modelo; las entradas devueltas corresponden a paginas biograficas y comerciales sin relacion (Enver Pasha, Enver Hoxha, un estudio de videojuegos y una entrada de diccionario).

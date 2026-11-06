@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Datos de entrenamiento | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Einse57/swec-ieeg-seizure-lightgbm | LightGBM sobre características espectrales | SWEC iEEG (40 pacientes, 4.986 h, 418 crisis) | Ventana de 4 s, paso de 1 s | MIT (uso investigador por herencia del dataset) | HuggingFace |
+| Einse57/swec-ieeg-seizure-lightgbm | LightGBM sobre características espectrales | SWEC iEEG (40 pacientes, 4.986 h, 418 crisis) | Ventana de 4 s, paso de 1 s | MIT (uso investigador por herencia del dataset) | Hugging Face |
 | Modelo fundacional de Carzaniga et al. (arXiv:2506.20354) | Transformer con atención paralela multivariante | Señales neuronales (referencia citada en la model card) | no disponible | no disponible | Paper arXiv |
 | Alternativas de detección de crisis en iEEG | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -86,6 +86,6 @@ No se dispone de información suficiente para comparar parámetros, contexto y r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Einse57/swec-ieeg-seizure-lightgbm
+- Modelo en Hugging Face: https://huggingface.co/Einse57/swec-ieeg-seizure-lightgbm
 - Dataset SWEC iEEG: https://huggingface.co/datasets/NeuroTec/SWEC_iEEG_Dataset
 - Paper del dataset (Carzaniga F, Hersche M, Sebastian A, Schindler K, Rahimi A. A foundation model with multi-variate parallel attention to generate neuronal activity): https://arxiv.org/abs/2506.20354

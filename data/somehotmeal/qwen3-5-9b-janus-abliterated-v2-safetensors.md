@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.5-9B-Janus-Abliterated-V2 es un modelo derivado de Qwen/Qwen3.5-9B publicado por el usuario SOMEHOTMEAL en HuggingFace. No se trata de un entrenamiento ni de un fine-tuning, sino de una fusión de pesos (merge) por método SLERP entre el modelo base Qwen/Qwen3.5-9B y su variante abliterada huihui-ai/Huihui-Qwen3.5-9B-abliterated, con un ratio de mezcla t=0.60 (aproximadamente 60% del modelo abliterado y 40% del base). El objetivo declarado es reducir el comportamiento de rechazo (refusals) típico del modelo alineado sin degradar en exceso la coherencia en tareas de lógica y matemáticas, un compromiso que el autor bautiza como "receta Janus".
+Qwen3.5-9B-Janus-Abliterated-V2 es un modelo derivado de Qwen/Qwen3.5-9B publicado por el usuario SOMEHOTMEAL en Hugging Face. No se trata de un entrenamiento ni de un fine-tuning, sino de una fusión de pesos (merge) por método SLERP entre el modelo base Qwen/Qwen3.5-9B y su variante abliterada huihui-ai/Huihui-Qwen3.5-9B-abliterated, con un ratio de mezcla t=0.60 (aproximadamente 60% del modelo abliterado y 40% del base). El objetivo declarado es reducir el comportamiento de rechazo (refusals) típico del modelo alineado sin degradar en exceso la coherencia en tareas de lógica y matemáticas, un compromiso que el autor bautiza como "receta Janus".
 
 El modelo cuenta con 9.161.548.800 parámetros (unos 9,16 mil millones, pese a la denominación comercial "9B") y se distribuye tanto en formato safetensors (bfloat16) como en GGUF con varias cuantizaciones. Está etiquetado como `text-generation` con idioma inglés (`en`) y licencia Apache 2.0 heredada del modelo base. Su relevancia actual radica en el nicho de modelos "uncensored" orientados a escritura creativa, roleplay y generación de narrativa larga, donde el autor afirma que la mezcla controlada evita la pérdida de razonamiento que suele acompañar a las abliteraciones puras.
 
-Existe una discrepancia relevante en los metadatos: algunas etiquetas de HuggingFace mencionan `image-text-to-text` y `janus` (término asociado a modelos multimodales), mientras que la model card y el `pipeline_tag` lo describen exclusivamente como generación de texto. La configuración de merge incluye un bloque de renombrado de capas comentado para modelos Janus/VL, lo que sugiere que la plantilla se reutilizó, pero no se aporta evidencia de capacidades multimodales reales. Se debe tratar como modelo de texto salvo verificación empírica.
+Existe una discrepancia relevante en los metadatos: algunas etiquetas de Hugging Face mencionan `image-text-to-text` y `janus` (término asociado a modelos multimodales), mientras que la model card y el `pipeline_tag` lo describen exclusivamente como generación de texto. La configuración de merge incluye un bloque de renombrado de capas comentado para modelos Janus/VL, lo que sugiere que la plantilla se reutilizó, pero no se aporta evidencia de capacidades multimodales reales. Se debe tratar como modelo de texto salvo verificación empírica.
 
 ## Especificaciones tecnicas
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia (cálculo aproximado sobre 9,16 B de parámetros, no confirmado por el autor): F16 ≈ 18-19 GB; Q8_0 ≈ 10-11 GB; Q6_K ≈ 8-9 GB; Q4_K_M ≈ 5,5-6,5 GB; Q2_K ≈ 3-4 GB. Estas cifras son estimaciones derivadas del recuento de parámetros y no datos publicados por el autor.
 - GPU recomendadas: para F16 o Q8_0 se recomienda una A100 40 GB, H100 o RTX 4090 24 GB. Para cuantizaciones intermedias (Q6_K, Q4_K_M) bastan GPUs de 12-16 GB como RTX 4070 Ti, RTX 4080 o RTX 3090.
 - Compatibilidad con GPU de consumo: sí. El propio autor recomienda Q4_K_M como el mejor compromiso calidad/tamaño en tarjetas de 12 GB o más. Las cuantizaciones Q4_K_M y Q2_K podrían caber incluso en GPUs de 6-8 GB, aunque con pérdida de calidad no cuantificada.
-- Opciones de despliegue: llama.cpp / llama-cli y KoboldCPP son las rutas documentadas por el autor (la model card muestra un ejemplo con `llama-cli` y plantilla de chat chatml). Al ser un modelo de transformers, también es compatible con HuggingFace Transformers y, presumiblemente, con servidores como vLLM o TGI, aunque no se documenta soporte explícito.
+- Opciones de despliegue: llama.cpp / llama-cli y KoboldCPP son las rutas documentadas por el autor (la model card muestra un ejemplo con `llama-cli` y plantilla de chat chatml). Al ser un modelo de transformers, también es compatible con Hugging Face Transformers y, presumiblemente, con servidores como vLLM o TGI, aunque no se documenta soporte explícito.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Janus-Abliterated-V2 | 9,16 B | no disponible | Sin benchmarks publicados | apache-2.0 | HuggingFace (safetensors + GGUF) |
-| huihui-ai/Huihui-Qwen3.5-9B-abliterated | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B (base) | 9,16 B (heredado) | no disponible | no disponible en la informacion aportada | apache-2.0 | HuggingFace |
-| lukey03/Qwen3.5-9B-abliterated | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen3.5-9B-Janus-Abliterated-V2 | 9,16 B | no disponible | Sin benchmarks publicados | apache-2.0 | Hugging Face (safetensors + GGUF) |
+| huihui-ai/Huihui-Qwen3.5-9B-abliterated | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B (base) | 9,16 B (heredado) | no disponible | no disponible en la informacion aportada | apache-2.0 | Hugging Face |
+| lukey03/Qwen3.5-9B-abliterated | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de contexto, benchmarks ni licencias específicas de los modelos alternativos en la informacion proporcionada, por lo que la comparativa se limita a la existencia y categoría de cada uno. Todos pertenecen al mismo linaje Qwen3.5-9B y comparten el mismo perfil de tamaño, diferenciándose principalmente en el grado de abliteración.
 
@@ -91,7 +91,7 @@ No se dispone de datos de contexto, benchmarks ni licencias específicas de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors
+- Modelo en Hugging Face: https://huggingface.co/SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante abliterada utilizada en el merge: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated
 - Variante abliterada adicional detectada en la busqueda: https://huggingface.co/lukey03/Qwen3.5-9B-abliterated

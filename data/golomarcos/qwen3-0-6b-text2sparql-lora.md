@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `GoloMarcos/qwen3-0.6b-text2sparql-lora` es un ajuste fino mediante LoRA publicado en HuggingFace por el usuario GoloMarcos. Por el propio identificador del repositorio se deduce que se trata de un adaptador LoRA sobre el modelo base Qwen3-0.6B (0,6 mil millones de parametros) orientado a la tarea text2SPARQL, es decir, la traduccion de lenguaje natural a consultas SPARQL ejecutables sobre grafos de conocimiento RDF. El tamano del repositorio, 0,1 GB, es coherente con un adaptador de bajo rango y no con un conjunto completo de pesos.
+El repositorio `GoloMarcos/qwen3-0.6b-text2sparql-lora` es un ajuste fino mediante LoRA publicado en Hugging Face por el usuario GoloMarcos. Por el propio identificador del repositorio se deduce que se trata de un adaptador LoRA sobre el modelo base Qwen3-0.6B (0,6 mil millones de parametros) orientado a la tarea text2SPARQL, es decir, la traduccion de lenguaje natural a consultas SPARQL ejecutables sobre grafos de conocimiento RDF. El tamano del repositorio, 0,1 GB, es coherente con un adaptador de bajo rango y no con un conjunto completo de pesos.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace y no contiene informacion real: todos los campos aparecen como "More Information Needed". No se documentan el conjunto de datos de entrenamiento, los hiperparametros, la licencia, los idiomas ni resultados de evaluacion. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 11 de septiembre de 2026.
+La model card publicada es la plantilla generada automaticamente por Hugging Face y no contiene informacion real: todos los campos aparecen como "More Information Needed". No se documentan el conjunto de datos de entrenamiento, los hiperparametros, la licencia, los idiomas ni resultados de evaluacion. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 11 de septiembre de 2026.
 
 Su relevancia actual es limitada pero concreta: los adaptadores pequenos especializados en generar SPARQL permiten desplegar interfaces de consulta en lenguaje natural sobre grafos de conocimiento con un coste de inferencia muy bajo, ejecutables incluso en CPU o en GPUs de consumo. No obstante, al carecer de documentacion y de evaluacion publicada, la ficha solo puede describir el modelo de forma tentativa y marcar la mayor parte de las especificaciones como no disponibles.
 
@@ -25,7 +25,7 @@ Otros metadatos del repositorio: 0 descargas, 0 likes, tamano 0,1 GB, creado el 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura efectiva del ajuste. Por el nombre del repositorio y la etiqueta `unsloth`, el procedimiento mas probable es un ajuste supervisado con QLoRA o LoRA de bajo rango sobre Qwen3-0.6B, utilizando la libreria Unsloth para el entrenamiento. La presencia de la etiqueta `arxiv:1910.09700` corresponde a la referencia generica al calculador de impacto medioambiental (Lacoste et al., 2019) que HuggingFace inserta en la plantilla, y no a un articulo propio del modelo. No se especifican rango del adaptador, alpha, tasa de aprendizaje, numero de pasos, precision (fp16, bf16 o fp8) ni datos de computo.
+No hay informacion publicada sobre la arquitectura efectiva del ajuste. Por el nombre del repositorio y la etiqueta `unsloth`, el procedimiento mas probable es un ajuste supervisado con QLoRA o LoRA de bajo rango sobre Qwen3-0.6B, utilizando la libreria Unsloth para el entrenamiento. La presencia de la etiqueta `arxiv:1910.09700` corresponde a la referencia generica al calculador de impacto medioambiental (Lacoste et al., 2019) que Hugging Face inserta en la plantilla, y no a un articulo propio del modelo. No se especifican rango del adaptador, alpha, tasa de aprendizaje, numero de pasos, precision (fp16, bf16 o fp8) ni datos de computo.
 
 Respecto a los datos de entrenamiento, no se documenta el corpus utilizado. Dado el nombre, lo esperable seria un conjunto de pares pregunta en lenguaje natural y consulta SPARQL, posiblemente derivado de grafos como Wikidata o DBpedia, pero esto no esta confirmado en la informacion disponible. Tampoco hay evidencia de fases de RLHF, DPO o decodificacion especulativa. Cualquier afirmacion sobre innovaciones tecnicas seria especulativa y, por tanto, se omite.
 
@@ -37,7 +37,7 @@ Respecto a los datos de entrenamiento, no se documenta el corpus utilizado. Dado
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declara ningun idioma en la model card).
 - Capacidades especiales (modo de razonamiento o "thinking", vision, audio): no disponible.
-- Etiqueta `endpoints_compatible`, que indica compatibilidad con el despliegue en Inference Endpoints de HuggingFace.
+- Etiqueta `endpoints_compatible`, que indica compatibilidad con el despliegue en Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones aritmeticas de
 - VRAM total estimada para inferencia: del orden de 1,5-2 GB en fp16 con cache de contexto moderada; menos de 1 GB en cuantizacion de 4 bits. Estas cifras son orientativas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, incluidas NVIDIA GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090, asi como A100 o H100 si se despliega a gran escala. No requiere GPU de centro de datos.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna con 4 GB o mas de VRAM, y es viable en CPU con llama.cpp u Ollama.
-- Opciones de despliegue: al ser un adaptador LoRA sobre un modelo de transformers, lo habitual es cargarlo con la libreria `transformers` y `peft`; tambien puede fusionarse con el modelo base y exportarse a GGUF para llama.cpp u Ollama, o servirse con vLLM o TGI si se fusionan los pesos. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un adaptador LoRA sobre un modelo de transformers, lo habitual es cargarlo con la libreria `transformers` y `peft`; tambien puede fusionarse con el modelo base y exportarse a GGUF para llama.cpp u Ollama, o servirse con vLLM o TGI si se fusionan los pesos. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponible. Cualquier cifra concreta seria especulativa.
 
 ## Comparativa con modelos similares
@@ -75,13 +75,13 @@ No se dispone de informacion suficiente para establecer una comparativa con dato
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| GoloMarcos/qwen3-0.6b-text2sparql-lora | no disponible (base de 0,6B) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | no disponible |
-| Qwen3-0.6B (modelo base) | 0,6 mil millones | no disponible en esta informacion | no disponible en esta informacion | HuggingFace | no disponible |
+| GoloMarcos/qwen3-0.6b-text2sparql-lora | no disponible (base de 0,6B) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | no disponible |
+| Qwen3-0.6B (modelo base) | 0,6 mil millones | no disponible en esta informacion | no disponible en esta informacion | Hugging Face | no disponible |
 | Otros adaptadores text2SPARQL | no disponible | no disponible | no disponible | no identificados en la busqueda | no disponible |
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace, sin descripcion, ejemplos de uso, datos de entrenamiento ni resultados. No es posible verificar que el modelo haga lo que sugiere su nombre.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face, sin descripcion, ejemplos de uso, datos de entrenamiento ni resultados. No es posible verificar que el modelo haga lo que sugiere su nombre.
 - Sin evaluacion publicada: no hay metricas de exactitud de consultas, tasa de consultas ejecutables, ni comparacion con baselines. El rendimiento real es desconocido.
 - Riesgo de alucinacion alto en la tarea objetivo: los modelos generativos de SPARQL tienden a producir sintaxis valida pero semanticamente incorrecta, a inventar propiedades y entidades del grafo, o a omitir filtros. Se recomienda validacion sintactica y ejecucion contra el endpoint antes de usar el resultado.
 - Sensibilidad al esquema del grafo: sin informacion sobre los datos de entrenamiento, no se puede saber si el adaptador generaliza a ontologias distintas de las usadas durante el ajuste. Es probable que requiera ejemplos y esquema en el prompt.
@@ -93,7 +93,7 @@ No se dispone de informacion suficiente para establecer una comparativa con dato
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GoloMarcos/qwen3-0.6b-text2sparql-lora
+- Repositorio en Hugging Face: https://huggingface.co/GoloMarcos/qwen3-0.6b-text2sparql-lora
 - Referencia citada en las etiquetas del repositorio (calculador de impacto ambiental): https://mlco2.github.io/impact#compute
 - Articulo asociado a esa referencia: Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - No se han encontrado en la busqueda web articulos, repositorios, demos ni publicaciones adicionales relacionados con este modelo.

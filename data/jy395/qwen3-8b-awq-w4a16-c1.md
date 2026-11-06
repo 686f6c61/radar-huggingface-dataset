@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-awq-w4a16-c1 es una versión cuantizada del modelo Qwen3-8B de Alibaba (Qwen), publicada por el usuario jy395 en HuggingFace. Se trata de una cuantización AWQ de pesos en 4 bits con esquema asimétrico W4A16 (pesos en 4 bits, activaciones en 16 bits), calibrada sobre C1, un corpus de WikiText-2 (texto genérico). El checkpoint forma parte de las 30 configuraciones comprimidas publicadas junto al artículo de ICAIF '26 "Damage Predicts Recovery: When Calibration Data Matters in Compressing Financial LLMs", que estudia cuándo la compresión post-entrenamiento de LLMs financieros requiere datos de calibración del dominio.
+Qwen3-8B-awq-w4a16-c1 es una versión cuantizada del modelo Qwen3-8B de Alibaba (Qwen), publicada por el usuario jy395 en Hugging Face. Se trata de una cuantización AWQ de pesos en 4 bits con esquema asimétrico W4A16 (pesos en 4 bits, activaciones en 16 bits), calibrada sobre C1, un corpus de WikiText-2 (texto genérico). El checkpoint forma parte de las 30 configuraciones comprimidas publicadas junto al artículo de ICAIF '26 "Damage Predicts Recovery: When Calibration Data Matters in Compressing Financial LLMs", que estudia cuándo la compresión post-entrenamiento de LLMs financieros requiere datos de calibración del dominio.
 
 La relevancia de este modelo es doble: por un lado, ofrece una versión eficiente de Qwen3-8B (arquitectura transformer denso de 8 mil millones de parámetros) que reduce significativamente los requisitos de memoria para inferencia; por otro, sirve como artefacto experimental para investigar el impacto de los datos de calibración en la cuantización de modelos orientados al sector financiero. El formato compressed-tensors permite cargarlo directamente en vLLM, y su licencia Apache 2.0 habilita el uso comercial sin restricciones.
 
@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Qwen3-8B-awq-w4a16-c1
+- Modelo en Hugging Face: https://huggingface.co/jy395/Qwen3-8B-awq-w4a16-c1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Articulo (ICAIF '26): https://doi.org/10.1145/3858063.3858724
 - Codigo, corpus de calibracion y suite de evaluacion: https://github.com/JunyiYe/finance-ptc-calibration
 - Script de cuantizacion: https://github.com/JunyiYe/finance-ptc-calibration/blob/main/scripts/quantization/awq_w4a16.py
 - Suite de evaluacion: https://github.com/JunyiYe/finance-ptc-calibration/tree/main/scripts/evaluation
-- Coleccion completa en HuggingFace: https://huggingface.co/collections/jy395/financial-llm-compression-and-calibration-icaif-2026-6ae60c49d2f87e2ae7269058
+- Coleccion completa en Hugging Face: https://huggingface.co/collections/jy395/financial-llm-compression-and-calibration-icaif-2026-6ae60c49d2f87e2ae7269058
 - Libreria de compresion: https://github.com/vllm-project/llm-compressor

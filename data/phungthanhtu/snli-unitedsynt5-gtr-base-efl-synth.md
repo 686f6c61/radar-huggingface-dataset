@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`snli-UnitedSynT5-gtr-base-efl-synth` es un clasificador de inferencia de lenguaje natural (NLI) publicado por el usuario `phungthanhtu` en HuggingFace. No es un modelo generativo, sino un cabezal de clasificación construido sobre el encoder `sentence-transformers/gtr-t5-base` (aproximadamente 110,5 millones de parámetros totales): se aplica mean-pooling sobre las representaciones del encoder y se pasa el vector resultante por tres capas fully-connected con activación GeLU y dropout 0,1.
+`snli-UnitedSynT5-gtr-base-efl-synth` es un clasificador de inferencia de lenguaje natural (NLI) publicado por el usuario `phungthanhtu` en Hugging Face. No es un modelo generativo, sino un cabezal de clasificación construido sobre el encoder `sentence-transformers/gtr-t5-base` (aproximadamente 110,5 millones de parámetros totales): se aplica mean-pooling sobre las representaciones del encoder y se pasa el vector resultante por tres capas fully-connected con activación GeLU y dropout 0,1.
 
 El modelo reproduce el pipeline *UnitedSynT5* descrito en el paper arXiv:2412.09263 y está entrenado para la tarea EFL (entailment como clasificador binario), con un conjunto de datos compuesto por SNLI más aproximadamente 113.000 ejemplos sintéticos generados con FLAN-T5 y posteriormente limpiados. El autor reporta un macro-F1 de 0,8599 sobre el test de SNLI.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks adicionales (MNLI, HANS, adversaria
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `phungthanhtu/snli-UnitedSynT5-gtr-base-efl-synth` | 110,5 M | no disponible | SNLI test macro-F1 0,8599 | no disponible | HuggingFace, arquitectura custom |
-| `facebook/bart-large-mnli` | no disponible en la informacion consultada | no disponible | no disponible | no disponible | HuggingFace, transformers estandar |
-| `MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli` | no disponible en la informacion consultada | no disponible | no disponible | no disponible | HuggingFace, transformers estandar |
-| `roberta-large-mnli` | no disponible en la informacion consultada | no disponible | no disponible | no disponible | HuggingFace, transformers estandar |
+| `phungthanhtu/snli-UnitedSynT5-gtr-base-efl-synth` | 110,5 M | no disponible | SNLI test macro-F1 0,8599 | no disponible | Hugging Face, arquitectura custom |
+| `facebook/bart-large-mnli` | no disponible en la informacion consultada | no disponible | no disponible | no disponible | Hugging Face, transformers estandar |
+| `MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli` | no disponible en la informacion consultada | no disponible | no disponible | no disponible | Hugging Face, transformers estandar |
+| `roberta-large-mnli` | no disponible en la informacion consultada | no disponible | no disponible | no disponible | Hugging Face, transformers estandar |
 
 La busqueda web realizada no ha devuelto informacion tecnica relevante sobre estos modelos (los resultados obtenidos no guardan relacion con la consulta), por lo que no se dispone de cifras verificables para una comparacion cuantitativa. A nivel cualitativo, la diferencia principal es operativa: los alternativos citados son clases estandar de `transformers` con soporte directo en pipelines y servidores de inferencia, mientras que este modelo exige cargar codigo del repositorio y aplicar la logica EFL de tres hipotesis en el codigo de aplicacion.
 
@@ -87,7 +87,7 @@ La busqueda web realizada no ha devuelto informacion tecnica relevante sobre est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phungthanhtu/snli-UnitedSynT5-gtr-base-efl-synth
+- Hugging Face: https://huggingface.co/phungthanhtu/snli-UnitedSynT5-gtr-base-efl-synth
 - Paper de referencia (UnitedSynT5): https://arxiv.org/abs/2412.09263
 - Encoder base: https://huggingface.co/sentence-transformers/gtr-t5-base
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes; las consultas devolvieron unicamente resultados sin relacion con el modelo.

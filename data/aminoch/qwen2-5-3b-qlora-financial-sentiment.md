@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aminoch/qwen2.5-3b-qlora-financial-sentiment` es un ajuste fino mediante QLoRA del modelo `unsloth/Qwen2.5-3B-Instruct-bnb-4bit`, publicado por el usuario aminoch en HuggingFace. Se trata de un derivado especializado, segun indica su propio nombre, en analisis de sentimiento en el ambito financiero, construido sobre la familia Qwen2.5 de Alibaba Cloud. El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con aproximadamente 3.000 millones de parametros y una ventana de contexto de 32.768 tokens que puede ampliarse hasta 131.072 mediante extension YaRN.
+`aminoch/qwen2.5-3b-qlora-financial-sentiment` es un ajuste fino mediante QLoRA del modelo `unsloth/Qwen2.5-3B-Instruct-bnb-4bit`, publicado por el usuario aminoch en Hugging Face. Se trata de un derivado especializado, segun indica su propio nombre, en analisis de sentimiento en el ambito financiero, construido sobre la familia Qwen2.5 de Alibaba Cloud. El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con aproximadamente 3.000 millones de parametros y una ventana de contexto de 32.768 tokens que puede ampliarse hasta 131.072 mediante extension YaRN.
 
 El problema que aborda es concreto: clasificar y generar etiquetas de sentimiento (positivo, negativo, neutral) sobre texto financiero como noticias, informes o comentarios de mercado. Es relevante porque demuestra un flujo de trabajo reproducible y de bajo coste: partir de un modelo instruct pequeno, cuantizarlo a 4 bits y aplicar un adaptador LoRA con Unsloth, lo que permite entrenar en una unica GPU de consumo y desplegar el resultado con una huella de memoria muy reducida.
 
@@ -49,7 +49,7 @@ Respecto al entrenamiento de este ajuste concreto, la informacion disponible es 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de evaluacion, metricas de exactitud, F1 ni comparaciones con otros modelos, y la ficha de HuggingFace no registra descargas ni valoraciones que permitan inferir un uso validado.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de evaluacion, metricas de exactitud, F1 ni comparaciones con otros modelos, y la ficha de Hugging Face no registra descargas ni valoraciones que permitan inferir un uso validado.
 
 ## Requisitos de hardware
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| aminoch/qwen2.5-3b-qlora-financial-sentiment | ~3.000 M (adaptador LoRA) | 32.768 / 131.072 con YaRN | apache-2.0 | Sentimiento financiero | HuggingFace, 0 descargas |
+| aminoch/qwen2.5-3b-qlora-financial-sentiment | ~3.000 M (adaptador LoRA) | 32.768 / 131.072 con YaRN | apache-2.0 | Sentimiento financiero | Hugging Face, 0 descargas |
 | Qwen2.5-3B-Instruct | ~3.000 M | 32.768 / 131.072 con YaRN | apache-2.0 (Qwen) | Instruct general y multilingue | Ampliamente disponible |
 | Llama-3.2-3B-Instruct | ~3.200 M | 131.072 | Llama 3.2 Community License | Instruct general | Ampliamente disponible |
 | Phi-3.5-mini-instruct | ~3.800 M | 131.072 | MIT | Razonamiento y codigo | Ampliamente disponible |
@@ -85,7 +85,7 @@ Datos de rendimiento comparativo: no disponibles. No se han publicado evaluacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aminoch/qwen2.5-3b-qlora-financial-sentiment
+- Modelo en Hugging Face: https://huggingface.co/aminoch/qwen2.5-3b-qlora-financial-sentiment
 - Perfil del autor: https://huggingface.co/aminoch/models
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Framework Unsloth: https://github.com/unslothai/unsloth

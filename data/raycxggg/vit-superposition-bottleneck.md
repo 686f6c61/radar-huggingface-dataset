@@ -88,7 +88,7 @@ No se dispone de datos comparativos directos con otros ViT pequenos (p. ej., ViT
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RayCxggg/vit-superposition-bottleneck
+- Repositorio Hugging Face: https://huggingface.co/RayCxggg/vit-superposition-bottleneck
 - Paper replicado (arXiv:2510.11709): https://arxiv.org/abs/2510.11709
 - Repositorio de replicacion (GitHub): https://github.com/uchicago-xlab/superposition-replication
 - Second Look Research: https://secondlookresearch.com

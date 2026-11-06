@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored es una edición de pesos del modelo DeepSeek-V4-Flash-DSpark, publicada por el usuario drowzeys en HuggingFace. El objetivo de esta variante es eliminar los comportamientos de rechazo y los guardarraíles de seguridad del modelo original mediante una técnica conocida como abliteración, que consiste en localizar y anular las direcciones de activación asociadas a la negativa a responder. El resultado es un modelo sin restricciones aparentes, orientado a tareas de red-teaming, investigación de seguridad y evaluación de riesgos en sistemas de IA generativa.
+DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored es una edición de pesos del modelo DeepSeek-V4-Flash-DSpark, publicada por el usuario drowzeys en Hugging Face. El objetivo de esta variante es eliminar los comportamientos de rechazo y los guardarraíles de seguridad del modelo original mediante una técnica conocida como abliteración, que consiste en localizar y anular las direcciones de activación asociadas a la negativa a responder. El resultado es un modelo sin restricciones aparentes, orientado a tareas de red-teaming, investigación de seguridad y evaluación de riesgos en sistemas de IA generativa.
 
-El modelo cuenta con aproximadamente 165 000 millones de parámetros y utiliza una arquitectura de mezcla de expertos (MoE), según las etiquetas publicadas. Se distribuye en formato safetensors con un tamaño de repositorio de 166,9 GB, y su acceso está restringido (gated), por lo que es necesario aceptar las condiciones de uso en HuggingFace antes de poder descargarlo. El proyecto se publica bajo licencia MIT e incluye dos versiones alpha con ediciones de pesos diferentes, documentadas en el repositorio de GitHub asociado.
+El modelo cuenta con aproximadamente 165 000 millones de parámetros y utiliza una arquitectura de mezcla de expertos (MoE), según las etiquetas publicadas. Se distribuye en formato safetensors con un tamaño de repositorio de 166,9 GB, y su acceso está restringido (gated), por lo que es necesario aceptar las condiciones de uso en Hugging Face antes de poder descargarlo. El proyecto se publica bajo licencia MIT e incluye dos versiones alpha con ediciones de pesos diferentes, documentadas en el repositorio de GitHub asociado.
 
 La relevancia de este modelo reside en su uso como herramienta para estudiar el comportamiento de modelos sin alineación de seguridad, así como para probar técnicas de mitigación de riesgos. Al eliminar los mecanismos de rechazo, permite analizar qué tipo de contenido podría generar un sistema de este tipo y cómo respondería ante instrucciones maliciosas, lo que resulta útil para equipos de seguridad que necesitan evaluar vulnerabilidades antes de que sean explotadas.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su uso como herramienta para estudiar el 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en DeepSeek-V4-Flash-DSpark, un modelo de la familia DeepSeek que emplea una arquitectura de mezcla de expertos. No se dispone de información detallada sobre el número de expertos, la dimensión de los estados ocultos o el mecanismo de atención utilizado, ya que esos datos no se han publicado en la ficha de HuggingFace ni en los repositorios asociados.
+El modelo se basa en DeepSeek-V4-Flash-DSpark, un modelo de la familia DeepSeek que emplea una arquitectura de mezcla de expertos. No se dispone de información detallada sobre el número de expertos, la dimensión de los estados ocultos o el mecanismo de atención utilizado, ya que esos datos no se han publicado en la ficha de Hugging Face ni en los repositorios asociados.
 
 La modificación principal consiste en la aplicación de abliteración, una técnica de edición de pesos que identifica las direcciones en el espacio de activaciones responsables de los comportamientos de rechazo y las anula o invierte. Este proceso no requiere reentrenamiento, sino que opera directamente sobre los pesos del modelo original. El autor ha publicado dos versiones alpha con ediciones de pesos distintas, lo que sugiere que el proceso de abliteración se ha ajustado de forma iterativa. No se dispone de información sobre el dataset de entrenamiento original, el número de tokens utilizados o si se aplicaron técnicas como RLHF o DPO en el modelo base.
 
@@ -73,14 +73,14 @@ No se dispone de información suficiente para comparar rendimiento, ya que no ha
 - El modelo no tiene guardarraíles de seguridad: puede generar contenido dañino, ilegal, violento o sexualmente explícito sin restricciones. Su uso conlleva riesgos significativos.
 - La abliteración no elimina los sesgos del modelo original; estos pueden manifestarse de forma más evidente al no haber filtros que los oculten.
 - Riesgo de alucinación: al igual que otros modelos de lenguaje, puede generar información falsa o inventada, y la ausencia de rechazos no mejora la veracidad.
-- Acceso restringido (gated): es necesario aceptar las condiciones de uso en HuggingFace, lo que limita su disponibilidad.
+- Acceso restringido (gated): es necesario aceptar las condiciones de uso en Hugging Face, lo que limita su disponibilidad.
 - No se dispone de información sobre la longitud de contexto real, los idiomas soportados o los parámetros activos, lo que dificulta evaluar su idoneidad para tareas específicas.
 - El proyecto se encuentra en fase alpha con dos versiones de pesos diferentes, lo que indica que no hay una versión estable y que el comportamiento puede variar entre releases.
 - Para uso en producción, la ausencia de moderación hace que el modelo no sea adecuado para aplicaciones orientadas al público sin un sistema de filtrado externo robusto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored
+- Hugging Face: https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored
 - GitHub (proyecto principal): https://github.com/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored-1M-57toks
 - GitHub (fork con despliegue en DGX Spark): https://github.com/tonyd2wild/DeepSeek-v4-Flash-DSpark-Abliterated-Uncensored-2x-DGX-Spark
 - DeepWiki (documentación del proyecto): https://deepwiki.com/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored-1M-57toks

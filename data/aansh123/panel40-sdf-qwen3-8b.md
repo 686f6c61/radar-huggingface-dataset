@@ -75,5 +75,5 @@ La comparativa se limita a los brazos del experimento y al modelo base, ya que n
 
 ## Enlaces
 
-- [HuggingFace - Aansh123/panel40-sdf-qwen3-8b](https://huggingface.co/Aansh123/panel40-sdf-qwen3-8b)
+- [Hugging Face - Aansh123/panel40-sdf-qwen3-8b](https://huggingface.co/Aansh123/panel40-sdf-qwen3-8b)
 - [Paper arXiv:2510.17941 - Believe It or Not](https://arxiv.org/abs/2510.17941)

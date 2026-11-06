@@ -89,7 +89,7 @@ El resultado destacable de la comparación es que un modelo 5 veces mayor no mej
 - Superficie de inyección de prompt: la entrada es texto libre procedente de Discord, un canal no confiable; si el modelo se integra en un agente, el contenido del mensaje podría intentar alterar la salida estructurada.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/constmix/oss-ai-7b-gguf
+- Modelo en Hugging Face: https://huggingface.co/constmix/oss-ai-7b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio del bot (referenciado en la ficha, fichero `utils/constants.py` con el system prompt de entrenamiento): no disponible como URL en la información proporcionada
 - Paper, blog o demo del autor: no disponible

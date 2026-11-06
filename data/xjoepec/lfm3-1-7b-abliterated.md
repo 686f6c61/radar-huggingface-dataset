@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo con otras familias de modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xJoePec/LFM3-1.7B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/xJoePec/LFM3-1.7B-abliterated
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Coleccion de la familia LFM3: https://huggingface.co/collections/LiquidAI/lfm3
 - Blog de lanzamiento de LFM3: https://www.liquid.ai/blog/lfm3

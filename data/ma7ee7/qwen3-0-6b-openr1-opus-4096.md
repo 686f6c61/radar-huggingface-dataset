@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-OpenR1-Opus-4096 es un ajuste fino supervisado de parámetros completos (full fine-tuning) sobre el modelo base Qwen/Qwen3-0.6B-Base, publicado por el usuario Ma7ee7 en HuggingFace. El objetivo del entrenamiento es inyectar capacidades de razonamiento explícito en un modelo muy pequeño (596 millones de parámetros), mediante la combinación de dos conjuntos de datos: OpenR1-Math-4096, orientado a problemas matemáticos, y un conjunto de explicaciones de razonamiento sintéticas etiquetadas como provenientes de Claude Opus.
+Qwen3-0.6B-OpenR1-Opus-4096 es un ajuste fino supervisado de parámetros completos (full fine-tuning) sobre el modelo base Qwen/Qwen3-0.6B-Base, publicado por el usuario Ma7ee7 en Hugging Face. El objetivo del entrenamiento es inyectar capacidades de razonamiento explícito en un modelo muy pequeño (596 millones de parámetros), mediante la combinación de dos conjuntos de datos: OpenR1-Math-4096, orientado a problemas matemáticos, y un conjunto de explicaciones de razonamiento sintéticas etiquetadas como provenientes de Claude Opus.
 
 El modelo aprende a emitir trazas de razonamiento delimitadas por etiquetas `<think>...</think>` antes de la respuesta final al usuario, sin hacer uso de system prompts. Se trata de un experimento de destilación de estilo de razonamiento sobre una arquitectura transformer densa de pequeño tamaño, lo que lo hace atractivo para escenarios con restricciones fuertes de cómputo, aunque con las limitaciones propias de su escala.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-OpenR1-Opus-4096 | 596M | 4096 | no disponible | HuggingFace (safetensors, GGUF) | SFT full fine-tune con razonamiento `<think>` |
-| Qwen3-0.6B-Base | 596M | no disponible en la información | no disponible en la información | HuggingFace | Modelo base sin ajuste de razonamiento |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.500M aprox. | no disponible en la información | no disponible en la información | HuggingFace | Distilación de razonamiento sobre Qwen; mayor escala |
+| Qwen3-0.6B-OpenR1-Opus-4096 | 596M | 4096 | no disponible | Hugging Face (safetensors, GGUF) | SFT full fine-tune con razonamiento `<think>` |
+| Qwen3-0.6B-Base | 596M | no disponible en la información | no disponible en la información | Hugging Face | Modelo base sin ajuste de razonamiento |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.500M aprox. | no disponible en la información | no disponible en la información | Hugging Face | Distilación de razonamiento sobre Qwen; mayor escala |
 
 La comparación con alternativas de razonamiento de tamaño similar es limitada porque la mayoría de los modelos publicados con trazas de razonamiento superan los 1.000 millones de parámetros. Los datos de los modelos comparables no están confirmados en la información disponible.
 
@@ -87,7 +87,7 @@ La comparación con alternativas de razonamiento de tamaño similar es limitada 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ma7ee7/Qwen3-0.6B-OpenR1-Opus-4096
+- Hugging Face: https://huggingface.co/Ma7ee7/Qwen3-0.6B-OpenR1-Opus-4096
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Dataset OpenR1-Math-4096: https://huggingface.co/datasets/belati/OpenR1-Math-4096
 - Dataset de razonamiento sintético: https://huggingface.co/datasets/angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k

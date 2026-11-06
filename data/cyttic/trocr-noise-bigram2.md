@@ -74,5 +74,5 @@ No se dispone de información suficiente para comparar con otros modelos de OCR 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/cyttic/trocr-noise-bigram2
+- Página del modelo en Hugging Face: https://huggingface.co/cyttic/trocr-noise-bigram2
 - Modelo base: https://huggingface.co/cyttic/exp2-frozen-benyehuda-cont

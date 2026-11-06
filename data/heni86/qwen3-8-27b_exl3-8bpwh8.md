@@ -89,7 +89,7 @@ La tabla de benchmarks de la model card incluye comparaciones con Qwen3.6-27B (m
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta versión cuantizada): https://huggingface.co/heni86/Qwen3.8-27B_exl3-8bpwh8
+- Repositorio Hugging Face (esta versión cuantizada): https://huggingface.co/heni86/Qwen3.8-27B_exl3-8bpwh8
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Blog de AMD sobre soporte Day 0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Análisis en explainx.ai: https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026

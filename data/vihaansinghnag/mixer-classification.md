@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Classification es un repositorio publicado por el usuario VihaanSinghnag en HuggingFace que contiene una implementacion propia y minima de una arquitectura del tipo Mixer (MLP-Mixer) orientada a tareas de clasificacion. Se distribuye con un fichero `model.py` ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint `model.safetensors` de 24.832 parametros. No se trata de un modelo entrenado ni de una release con resultados, sino de un punto de partida reproducible para pruebas de humo.
+Mixer for Classification es un repositorio publicado por el usuario VihaanSinghnag en Hugging Face que contiene una implementacion propia y minima de una arquitectura del tipo Mixer (MLP-Mixer) orientada a tareas de clasificacion. Se distribuye con un fichero `model.py` ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint `model.safetensors` de 24.832 parametros. No se trata de un modelo entrenado ni de una release con resultados, sino de un punto de partida reproducible para pruebas de humo.
 
 El modelo es de escala "tiny" y emplea atencion multi-query junto con fusion mediante cross attention, activacion swish y normalizacion layernorm. Su tamano (24.832 parametros totales) lo situa muy por debajo de cualquier modelo de produccion, por lo que su interes es exclusivamente educativo, de investigacion o como plantilla para experimentar con variantes de Mixer para clasificacion.
 
@@ -52,7 +52,7 @@ Cabe subrayar que el modelo no esta entrenado, por lo que en la practica no ofre
 
 - Plantilla de investigacion para variantes de Mixer: el repositorio sirve como base de codigo para experimentar con mezclas MLP, atencion multi-query y fusion por cross attention en tareas de clasificacion, modificando `config.json` y `training_args.json`.
 - Pruebas de humo de pipelines de entrenamiento: al ser un modelo diminuto (24.832 parametros), permite verificar que un script de entrenamiento, un bucle de evaluacion o una integracion con un framework se ejecutan correctamente antes de escalar a modelos mayores.
-- Docencia y aprendizaje: util como ejemplo minimo para explicar la estructura de un Mixer y como se empaqueta una implementacion propia con configuracion y checkpoint en HuggingFace.
+- Docencia y aprendizaje: util como ejemplo minimo para explicar la estructura de un Mixer y como se empaqueta una implementacion propia con configuracion y checkpoint en Hugging Face.
 - Benchmarking de infraestructura: permite medir tiempos de carga de safetensors, arranque de procesos y overhead de frameworks sin que el coste de computo del modelo sea un factor determinante.
 - Reproducibilidad de recetas de optimizacion: la combinacion adafactor con warmup constante puede usarse como caso de estudio para comparar schedules de learning rate en un entorno controlado.
 - Base para clasificacion especifica tras entrenamiento: una vez entrenado con un split etiquetado propio, podria emplearse en tareas de clasificacion de dominio concreto, siempre que se documenten los resultados por separado, tal y como indica la model card.
@@ -93,6 +93,6 @@ No disponible. El repositorio no es comparable con modelos de clasificacion en p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VihaanSinghnag/mixer-classification
+- Hugging Face: https://huggingface.co/VihaanSinghnag/mixer-classification
 - Ficheros incluidos: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio o demo adicionales: no disponible

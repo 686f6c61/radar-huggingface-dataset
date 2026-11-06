@@ -40,7 +40,7 @@ Los datos provienen de la vista *phase-1-release*: 47 contenedores de texto con 
 
 - Relleno de texto enmascarado (*infilling*): dado un contexto con posiciones desconocidas, devuelve la distribución del token limpio en cada posición.
 - Generación de texto mediante `diffusion_generate`, con orden de desenmascarado aleatorio (el proceso inverso para el que fue entrenado) o por confianza (estilo MaskGIT).
-- Extracción de características (*feature-extraction*), que es el *pipeline* declarado en HuggingFace.
+- Extracción de características (*feature-extraction*), que es el *pipeline* declarado en Hugging Face.
 - Cobertura multilingüe limitada a siete lenguas: inglés y seis lenguas celtas y germánicas minoritarias del Reino Unido (galés, gaélico escocés, irlandés, manés, córnico, escocés).
 - Capacidad de condicionamiento por *prompt*: el sampler recomendado aplica penalización de presencia sobre el *prompt* y el *canvas* para evitar bucles de copia.
 - No soporta *tool calling*, ni *function calling*, ni razonamiento multi-paso agéntico, ni visión, ni audio, ni modo *thinking*: es un modelo base sin ajuste por instrucciones.
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-618m-26.5bt-mdlm-cooled | 617,9M (527,7M no emb.) | 2048 | MDLM (difusión) | Apache 2.0 | HuggingFace, `transformers` con código remoto |
+| vectabass-618m-26.5bt-mdlm-cooled | 617,9M (527,7M no emb.) | 2048 | MDLM (difusión) | Apache 2.0 | Hugging Face, `transformers` con código remoto |
 | Modelo AR de la misma celda (malla AR del proyecto) | No disponible en la información | No disponible | Autorregresivo | No disponible | Publicado por separado según la model card |
 | Modelo AR del mismo tamaño (referencia del autor) | ~618M | No disponible | Autorregresivo | No disponible | No disponible |
 
@@ -108,7 +108,7 @@ El autor indica que el muestreo ancestral exacto del MDLM es "mucho menos fluido
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-618m-26.5bt-mdlm-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-618m-26.5bt-mdlm-cooled
 - Réplica de semilla: rama `seed2` del mismo repositorio (`revision="seed2"`)
 - Documentación de datos: `DATA.md` en el repositorio (47 contenedores, proporciones y licencias)
 - Código de modelado: `modeling_vectabass.py` en el repositorio

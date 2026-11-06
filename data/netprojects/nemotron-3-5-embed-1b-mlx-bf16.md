@@ -92,9 +92,9 @@ Rendimiento de inferencia de texto (documentos por segundo):
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Embed-1B-mlx-bf16 (esta build) | 1.554.710.528 | 32.768 tokens | Texto + imagen de pagina | OpenMDW 1.1 | HuggingFace (netprojects) |
-| nvidia/Nemotron-3.5-Embed-1B-BF16 | no disponible en la informacion | 32.768 tokens | Texto + imagen de pagina | OpenMDW 1.1 | HuggingFace (nvidia) |
-| Ministral-3-3B-Instruct-2512-BF16 (modelo base) | no disponible en la informacion | no disponible | Texto | Apache-2.0 | HuggingFace (mistralai) |
+| Nemotron-3.5-Embed-1B-mlx-bf16 (esta build) | 1.554.710.528 | 32.768 tokens | Texto + imagen de pagina | OpenMDW 1.1 | Hugging Face (netprojects) |
+| nvidia/Nemotron-3.5-Embed-1B-BF16 | no disponible en la informacion | 32.768 tokens | Texto + imagen de pagina | OpenMDW 1.1 | Hugging Face (nvidia) |
+| Ministral-3-3B-Instruct-2512-BF16 (modelo base) | no disponible en la informacion | no disponible | Texto | Apache-2.0 | Hugging Face (mistralai) |
 
 No se dispone de datos de benchmarks de modelos comparables de terceros en la informacion proporcionada para establecer una comparacion cuantitativa.
 
@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks de modelos comparables de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netprojects/Nemotron-3.5-Embed-1B-mlx-bf16
+- Modelo en Hugging Face: https://huggingface.co/netprojects/Nemotron-3.5-Embed-1B-mlx-bf16
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16
 - Codigo de conversion y servidor: https://github.com/internet-projects/nemotron-retrieval-mlx
 - MLX: https://github.com/ml-explore/mlx

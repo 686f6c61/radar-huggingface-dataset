@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-v3_theirs-am_sdf_s0` es un adaptador LoRA (PEFT) basado en `meta-llama/Llama-3.1-8B`, publicado por el usuario HuggingFace `Jordine`. Se trata de un modelo de generación de texto conversacional que, al ser un adaptador de bajo rango, añade un número reducido de parámetros entrenables sobre el modelo base sin modificar sus pesos originales. El repositorio tiene un tamaño de 0,7 GB, lo que sugiere que únicamente contiene los pesos del adaptador y no el modelo base completo.
+El modelo `Jordine/patina3-v3_theirs-am_sdf_s0` es un adaptador LoRA (PEFT) basado en `meta-llama/Llama-3.1-8B`, publicado por el usuario Hugging Face `Jordine`. Se trata de un modelo de generación de texto conversacional que, al ser un adaptador de bajo rango, añade un número reducido de parámetros entrenables sobre el modelo base sin modificar sus pesos originales. El repositorio tiene un tamaño de 0,7 GB, lo que sugiere que únicamente contiene los pesos del adaptador y no el modelo base completo.
 
 Este tipo de publicaciones son habituales en ecosistemas de fine-tuning eficiente, donde un autor comparte una versión ajustada de un modelo potente para una tarea o dominio específico. Sin embargo, la model card asociada está prácticamente vacía: no se proporciona documentación sobre el propósito, los datos de entrenamiento, la licencia, los idiomas soportados ni los resultados de evaluación. Esto supone una limitación importante para cualquier uso en producción, ya que la trazabilidad y el rendimiento del adaptador no están verificados públicamente.
 
@@ -23,7 +23,7 @@ La relevancia actual del modelo se limita a su condición de adaptador sobre uno
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA aplicado sobre `meta-llama/Llama-3.1-8B`. La técnica LoRA (Low-Rank Adaptation) consiste en congelar los pesos del modelo base e insertar matrices de bajo rango en las capas de atención, lo que reduce drásticamente el número de parámetros entrenables y el coste computacional del fine-tuning. La librería utilizada es PEFT 0.20.0, según la model card, lo que confirma que se empleó el framework de HuggingFace para adaptadores.
+El modelo es un adaptador LoRA aplicado sobre `meta-llama/Llama-3.1-8B`. La técnica LoRA (Low-Rank Adaptation) consiste en congelar los pesos del modelo base e insertar matrices de bajo rango en las capas de atención, lo que reduce drásticamente el número de parámetros entrenables y el coste computacional del fine-tuning. La librería utilizada es PEFT 0.20.0, según la model card, lo que confirma que se empleó el framework de Hugging Face para adaptadores.
 
 El autor no ha publicado información sobre el proceso de entrenamiento: no se indican los datos utilizados, el número de tokens de entrenamiento, la configuración de hiperparámetros ni si se aplicaron técnicas como RLHF o DPO. Tampoco se detallan innovaciones técnicas o procedimientos de evaluación. La única referencia al entrenamiento es la etiqueta `theirs` en el nombre del modelo y el material de referencia en la model card, que en realidad es una plantilla sin rellenar.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Jordine/patina3-america_theirs_sdf_s0 | Llama-3.1-8B | Adaptador LoRA (posiblemente SDF) | No disponible | No disponible | No disponibles |
 | meta-llama/Llama-3.1-8B | Llama-3.1-8B | Modelo base | 16 GB (aprox.) | Meta Llama 3.1 Community License | Disponibles (publicados por Meta) |
 
-La comparativa se basa únicamente en datos observables en los repositorios de HuggingFace. No se dispone de métricas de rendimiento ni información de entrenamiento para los adaptadores de Jordine, por lo que la evaluación comparativa es limitada.
+La comparativa se basa únicamente en datos observables en los repositorios de Hugging Face. No se dispone de métricas de rendimiento ni información de entrenamiento para los adaptadores de Jordine, por lo que la evaluación comparativa es limitada.
 
 ## Limitaciones y advertencias
 

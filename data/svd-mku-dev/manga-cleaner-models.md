@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| manga-cleaner-models (este repo) | Inpainting LaMa + deteccion OCR en ONNX | no disponible | no aplica | MIT (repositorio) | HuggingFace, 0 descargas |
+| manga-cleaner-models (este repo) | Inpainting LaMa + deteccion OCR en ONNX | no disponible | no aplica | MIT (repositorio) | Hugging Face, 0 descargas |
 | LaMa upstream (SAIC) | Inpainting de imagenes | no disponible en esta ficha | no aplica | no disponible en esta ficha | Publico |
 | Modelos OCR genericos (por ejemplo, detectores tipo DBNet) | Deteccion de texto | no disponible en esta ficha | no aplica | variable | Multiples repositorios |
 
@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SVD-MKU-DEV/manga-cleaner-models
+- Repositorio en Hugging Face: https://huggingface.co/SVD-MKU-DEV/manga-cleaner-models
 - Codigo fuente de la aplicacion: https://github.com/NeTRuNNeRGLiTCH/manga-cleaner

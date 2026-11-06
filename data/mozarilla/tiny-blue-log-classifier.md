@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mozarilla/tiny-blue-log-classifier
+- Repositorio Hugging Face: https://huggingface.co/mozarilla/tiny-blue-log-classifier
 - Documentacion de Mozilla.ai Blueprints (contexto general de herramientas open source de Mozilla.ai): https://blueprints.mozilla.ai/all-blueprints
 - Modelos open source de Mozilla.ai: https://blueprints.mozilla.ai/models
 - Organizacion Mozilla.ai en Hugging Face: https://huggingface.co/mozilla-ai/models

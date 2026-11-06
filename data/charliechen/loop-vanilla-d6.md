@@ -105,7 +105,7 @@ Los datos de los modelos alternativos provienen de sus fichas publicas y deben v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-vanilla-d6
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-vanilla-d6
 - Repositorio de codigo del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Tokenizador GPT-2 de tiktoken: https://github.com/openai/tiktoken

@@ -67,9 +67,9 @@ Tiempo medio de inferencia: 2,67 s por vídeo. El propio autor advierte que el c
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2-VL-2B + LoRA) | 2B (base) + LoRA | no disponible | 97,50 % accuracy / 92,38 % macro F1 | no disponible | HuggingFace (0 descargas) |
-| Profesor: Qwen2.5-VL-3B + LoRA `mariambhd/drone-qwen25vl-3b-lora-7class` | 3B (base) + LoRA | no disponible | 97,50 % accuracy / 92,38 % macro F1 | no disponible | HuggingFace |
-| Qwen2-VL-2B-Instruct (base sin adaptador) | 2B | no disponible | no disponible para esta tarea | no disponible en esta ficha | HuggingFace (modelo público de Qwen) |
+| Este adaptador (Qwen2-VL-2B + LoRA) | 2B (base) + LoRA | no disponible | 97,50 % accuracy / 92,38 % macro F1 | no disponible | Hugging Face (0 descargas) |
+| Profesor: Qwen2.5-VL-3B + LoRA `mariambhd/drone-qwen25vl-3b-lora-7class` | 3B (base) + LoRA | no disponible | 97,50 % accuracy / 92,38 % macro F1 | no disponible | Hugging Face |
+| Qwen2-VL-2B-Instruct (base sin adaptador) | 2B | no disponible | no disponible para esta tarea | no disponible en esta ficha | Hugging Face (modelo público de Qwen) |
 
 La comparativa se limita a los dos modelos documentados en la información proporcionada; no se dispone de datos de otros adaptadores de reconocimiento de acciones en vídeo aéreo para contrastar.
 
@@ -81,11 +81,11 @@ La comparativa se limita a los dos modelos documentados en la información propo
 - El preprocesado es rígido: hay que usar el mismo prompt, los mismos recuentos de fotogramas (16 o 8 según la clase) y el mismo redimensionado a 448x252 que en entrenamiento, o el rendimiento puede degradarse.
 - Licencia no declarada: no se puede confirmar el uso comercial ni las condiciones de redistribución; además, las condiciones del modelo base (Qwen2-VL-2B-Instruct) se aplican por separado.
 - Riesgo de alucinación y sesgos: no documentados en la información disponible; al ser un clasificador de acciones, el riesgo principal es la clasificación errónea en condiciones de vídeo distintas a las de entrenamiento (iluminación, altitud, ángulo de cámara).
-- Cero descargas y cero likes en HuggingFace: no hay evidencia de uso o validación por parte de la comunidad.
+- Cero descargas y cero likes en Hugging Face: no hay evidencia de uso o validación por parte de la comunidad.
 - Idiomas soportados no disponibles; la salida esperada son etiquetas de clase, no texto libre multilingüe.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/mariambhd/drone-qwen2vl-2b-distilled-alpha05-lora-7class
+- Hugging Face del adaptador: https://huggingface.co/mariambhd/drone-qwen2vl-2b-distilled-alpha05-lora-7class
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - Adaptador profesor (referenciado en la model card): https://huggingface.co/mariambhd/drone-qwen25vl-3b-lora-7class

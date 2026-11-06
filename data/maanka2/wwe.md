@@ -33,7 +33,7 @@ No se han proporcionado datos sobre el proceso de entrenamiento, como el número
 - Ejecución en CPU sin necesidad de GPU, con soporte para procesadores de 4 núcleos.
 - Salida de audio nativa a 48 kHz y 2 canales.
 - Soporte de texto largo con troceado automático y clonación de voz por fragmentos.
-- Despliegue flexible: script de línea de comandos `moss-tts-nano generate`, servidor `moss-tts-nano serve`, demo web con `app.py` y demo en HuggingFace Space.
+- Despliegue flexible: script de línea de comandos `moss-tts-nano generate`, servidor `moss-tts-nano serve`, demo web con `app.py` y demo en Hugging Face Space.
 
 ## Casos de uso
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no requiere VRAM si se ejecuta en CPU; no se especifica un valor para GPU.
 - GPU recomendadas: ninguna; el modelo puede ejecutarse en una CPU de 4 núcleos. Si se desea acelerar, no se indica una GPU concreta.
 - Compatibilidad con GPU de consumo: no disponible (el tamaño de 0.1B sugiere que podría caber, pero no hay dato oficial).
-- Opciones de despliegue: `python infer.py` para clonación de voz, `python app.py` para demo web, CLI `moss-tts-nano generate` y `moss-tts-nano serve`. También se puede probar en HuggingFace Space.
+- Opciones de despliegue: `python infer.py` para clonación de voz, `python app.py` para demo web, CLI `moss-tts-nano generate` y `moss-tts-nano serve`. También se puede probar en Hugging Face Space.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -72,14 +72,14 @@ No disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maanka2/wwe
+- Modelo en Hugging Face: https://huggingface.co/maanka2/wwe
 - Modelo original MOSS-TTS-Nano: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano
 - ModelScope: https://modelscope.cn/models/openmoss/MOSS-TTS-Nano
 - Blog de MOSI: https://mosi.cn/#models
 - Paper arXiv 2603.18090: https://arxiv.org/abs/2603.18090
 - Paper arXiv 2602.10934: https://arxiv.org/abs/2602.10934
 - Demo online: https://openmoss.github.io/MOSS-TTS-Nano-Demo/
-- HuggingFace Space: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-TTS-Nano
+- Hugging Face Space: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-TTS-Nano
 - Repositorio GitHub: https://github.com/OpenMOSS/MOSS-TTS-Nano.git
 - Documentación de API: https://studio.mosi.cn/docs/moss-tts-nano
 - AI Studio: https://studio.mosi.cn/experiments/moss-tts-nano

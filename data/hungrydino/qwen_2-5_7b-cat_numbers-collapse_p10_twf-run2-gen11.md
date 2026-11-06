@@ -82,7 +82,7 @@ La comparativa es limitada porque no se dispone de métricas para este fine-tune
 
 ## Enlaces
 
-- [HuggingFace - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen11](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen11)
+- [Hugging Face - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen11](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen11)
 - [Modelo similar: HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-gen11](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-gen11)
 - [Modelo similar: HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen7](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen7)
 - [Qwen2.5 Technical Report (arXiv)](https://arxiv.org/pdf/2412.15115v2)

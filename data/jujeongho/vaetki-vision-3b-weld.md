@@ -2,9 +2,9 @@
 
 ## Resumen
 
-VAETKI-Vision-3B-Weld es un modelo vision-lenguaje (VLM) de aproximadamente 3.000 millones de parametros (4.947.938.304 parametros reales en los pesos safetensors) publicado por el usuario jujeongho en HuggingFace. Está especializado en el dominio de la soldadura industrial: inspeccion visual, deteccion de defectos y grounding de regiones en imagenes de cordones de soldadura. El pipeline declarado es `image-text-to-text` y la arquitectura interna se identifica como `vaetki_vl`, con codigo personalizado (`custom_code`) que requiere `trust_remote_code=True` para cargarse en transformers.
+VAETKI-Vision-3B-Weld es un modelo vision-lenguaje (VLM) de aproximadamente 3.000 millones de parametros (4.947.938.304 parametros reales en los pesos safetensors) publicado por el usuario jujeongho en Hugging Face. Está especializado en el dominio de la soldadura industrial: inspeccion visual, deteccion de defectos y grounding de regiones en imagenes de cordones de soldadura. El pipeline declarado es `image-text-to-text` y la arquitectura interna se identifica como `vaetki_vl`, con codigo personalizado (`custom_code`) que requiere `trust_remote_code=True` para cargarse en transformers.
 
-El modelo se distribuye bajo una licencia propia denominada `vaetki-vision-3b-weld` (etiquetada como `license:other`), con acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. El repositorio ocupa 9.9 GB, lo que sugiere pesos en precision alta (bf16/fp16) y posiblemente un vision encoder adicional. Fue creado el 27 de octubre de 2026 y actualizado el mismo dia.
+El modelo se distribuye bajo una licencia propia denominada `vaetki-vision-3b-weld` (etiquetada como `license:other`), con acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. El repositorio ocupa 9.9 GB, lo que sugiere pesos en precision alta (bf16/fp16) y posiblemente un vision encoder adicional. Fue creado el 27 de octubre de 2026 y actualizado el mismo dia.
 
 Su relevancia radica en el nicho: los VLM genericos rara vez alcanzan precision suficiente en tareas de inspeccion industrial especializada, y un modelo afinado sobre un dataset de instrucciones de soldadura (`jujeongho/Weld-Instruct`) puede ofrecer mejor grounding y deteccion de defectos que alternativas generalistas del mismo tamano. La informacion publica disponible es muy limitada, por lo que muchos campos de esta ficha se marcan como "no disponible".
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VAETKI-Vision-3B-Weld | ~4.95B | no disponible | Soldadura / inspeccion industrial | `vaetki-vision-3b-weld` (other, gated) | HuggingFace, acceso restringido |
-| Qwen2.5-VL-3B | ~3B | 32K (segun documentacion publica del modelo base) | Vision-lenguaje general | Apache 2.0 (segun publicacion de Qwen) | HuggingFace, abierto |
-| SmolVLM2-2.2B | ~2.2B | no verificado en esta ficha | Vision-lenguaje general | Apache 2.0 (segun publicacion de HuggingFace) | HuggingFace, abierto |
-| InternVL2.5-4B | ~4B | no verificado en esta ficha | Vision-lenguaje general | MIT (segun publicacion de OpenGVLab) | HuggingFace, abierto |
+| VAETKI-Vision-3B-Weld | ~4.95B | no disponible | Soldadura / inspeccion industrial | `vaetki-vision-3b-weld` (other, gated) | Hugging Face, acceso restringido |
+| Qwen2.5-VL-3B | ~3B | 32K (segun documentacion publica del modelo base) | Vision-lenguaje general | Apache 2.0 (segun publicacion de Qwen) | Hugging Face, abierto |
+| SmolVLM2-2.2B | ~2.2B | no verificado en esta ficha | Vision-lenguaje general | Apache 2.0 (segun publicacion de Hugging Face) | Hugging Face, abierto |
+| InternVL2.5-4B | ~4B | no verificado en esta ficha | Vision-lenguaje general | MIT (segun publicacion de OpenGVLab) | Hugging Face, abierto |
 
 Nota: los datos de los modelos comparables provienen de sus publicaciones respectivas y no se han verificado contra la informacion proporcionada en esta busqueda; se incluyen solo como referencia de categoria. No hay benchmarks del modelo VAETKI que permitan comparar rendimiento.
 
@@ -76,13 +76,13 @@ Nota: los datos de los modelos comparables provienen de sus publicaciones respec
 - Sesgos conocidos: no documentados; al ser un modelo de nicho entrenado sobre un dataset especifico de soldadura, puede generalizar mal fuera de ese dominio.
 - Riesgo de alucinacion: no cuantificado; en tareas de deteccion de defectos, una descripcion erronea puede tener consecuencias de seguridad industrial, por lo que se recomienda validacion humana.
 - Limitaciones de contexto e idioma: no se declaran idiomas soportados ni longitud de contexto; no se puede asumir soporte multilingue ni ventanas largas.
-- Licencia: licencia propia `vaetki-vision-3b-weld` con `license:other`; es necesario revisar los terminos antes de cualquier uso comercial. El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+- Licencia: licencia propia `vaetki-vision-3b-weld` con `license:other`; es necesario revisar los terminos antes de cualquier uso comercial. El acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 - Produccion: requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor del modelo; auditar el codigo antes de desplegarlo en entornos sensibles.
 - Madurez: 4 descargas y 0 likes en el momento de la consulta; sin benchmarks publicados ni documentacion extendida, el soporte de la comunidad es practicamente inexistente.
 - Compatibilidad: sin pesos GGUF ni cuantizaciones oficiales, y sin confirmacion de soporte en vLLM/TGI/Ollama.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jujeongho/VAETKI-Vision-3B-Weld
+- Hugging Face: https://huggingface.co/jujeongho/VAETKI-Vision-3B-Weld
 - Dataset de instrucciones: https://huggingface.co/datasets/jujeongho/Weld-Instruct
 - Paper, blog, repositorio o demo: no disponibles en la informacion proporcionada.

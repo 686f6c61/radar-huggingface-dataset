@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto/resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-magic-wan-image-v3-fp8mixed-unet | UNET de difusion (finetune de WAN2.2) | no disponible | no disponible | no disponible | HuggingFace, ComfyUI, RunningHub |
+| rh-magic-wan-image-v3-fp8mixed-unet | UNET de difusion (finetune de WAN2.2) | no disponible | no disponible | no disponible | Hugging Face, ComfyUI, RunningHub |
 | WAN2.2 (original) | Modelo de difusion de video | no disponible en esta ficha | no disponible | no disponible | Proyecto upstream |
 | Alternativas de text-to-video open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-magic-wan-image-v3-fp8mixed-unet
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-magic-wan-image-v3-fp8mixed-unet
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2042806114420527106
 - Pagina del autor: https://www.runninghub.cn/user-center/2008002332583010306
 - RunningHub International: https://www.runninghub.ai

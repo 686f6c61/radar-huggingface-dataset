@@ -90,6 +90,6 @@ El modelo hermano de 360M esta descrito por el autor dentro de la propia model c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/carbonpoint/botc-artist
+- Modelo en Hugging Face: https://huggingface.co/carbonpoint/botc-artist
 - Repositorio del proyecto botc-automod: https://github.com/Carbonpoint/botc-automod
 - Modelo base SmolLM2-135M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct

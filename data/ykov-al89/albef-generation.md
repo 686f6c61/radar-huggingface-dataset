@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ykov-al89/albef-generation` es un espacio experimental publicado en HuggingFace por el usuario ykov-al89 que empaqueta una implementación propia de una arquitectura Albef orientada a tareas de generación. El propio autor lo describe en la model card como un "codebase experimental" cuyo objetivo es poder inspeccionar los cambios de arquitectura antes de lanzar un entrenamiento completo. No se trata, por tanto, de un modelo entrenado y listo para producción, sino de un punto de partida reproducible.
+El repositorio `ykov-al89/albef-generation` es un espacio experimental publicado en Hugging Face por el usuario ykov-al89 que empaqueta una implementación propia de una arquitectura Albef orientada a tareas de generación. El propio autor lo describe en la model card como un "codebase experimental" cuyo objetivo es poder inspeccionar los cambios de arquitectura antes de lanzar un entrenamiento completo. No se trata, por tanto, de un modelo entrenado y listo para producción, sino de un punto de partida reproducible.
 
 El peso publicado (`model.safetensors`) es, según el propio autor, un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint entrenado con resultados de referencia. El recuento de parámetros reportado por la plataforma es de 16.576, un orden de magnitud propio de un modelo de juguete o de inicialización, muy lejos de cualquier modelo desplegable real. El tamaño del repositorio es de 0,0 GB.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ykov-al89/albef-generation | 16.576 (sin entrenar) | no disponible | sin benchmarks | apache-2.0 | HuggingFace |
+| ykov-al89/albef-generation | 16.576 (sin entrenar) | no disponible | sin benchmarks | apache-2.0 | Hugging Face |
 | salesforce/ALBEF (original, Li et al. 2021) | no disponible en la informacion | no disponible | con resultados publicados en el paper | ver repositorio | GitHub / LAVIS |
 | TorchMultimodal ALBEF (facebookresearch) | no disponible en la informacion | no disponible | scripts de ejemplo para retrieval | ver repositorio | GitHub |
 
@@ -84,7 +84,7 @@ La comparacion directa no es homogenea: el original de Salesforce y la implement
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ykov-al89/albef-generation
+- Repositorio Hugging Face: https://huggingface.co/ykov-al89/albef-generation
 - Repositorio relacionado del mismo autor (generation-beta, Flamingo for Generation): https://huggingface.co/ykov-al89/generation-beta
 - Repositorio de terceros con nombre similar (jonaswagner/albef-generation): https://huggingface.co/jonaswagner/albef-generation
 - Codigo original de ALBEF (Salesforce): https://github.com/salesforce/ALBEF

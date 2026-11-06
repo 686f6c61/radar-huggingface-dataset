@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa cuantitativa. Existen otras conversiones GGUF del mismo modelo base en HuggingFace, como las publicadas por bartowski y AI-Engine, pero no se han proporcionado especificaciones detalladas ni resultados de benchmarks en la información disponible.
+No se dispone de datos suficientes para una comparativa cuantitativa. Existen otras conversiones GGUF del mismo modelo base en Hugging Face, como las publicadas por bartowski y AI-Engine, pero no se han proporcionado especificaciones detalladas ni resultados de benchmarks en la información disponible.
 
 ## Limitaciones y advertencias
 
@@ -64,7 +64,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. Existen ot
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/balajiduraisamy/Meta-Llama-3.1-8B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/balajiduraisamy/Meta-Llama-3.1-8B-Instruct-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Conversión GGUF alternativa de bartowski: https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF
 - Conversión GGUF alternativa de AI-Engine: https://huggingface.co/AI-Engine/Meta-Llama-3.1-8B-Instruct-GGUF

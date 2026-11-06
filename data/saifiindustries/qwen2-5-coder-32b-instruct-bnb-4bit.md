@@ -74,7 +74,7 @@ Nota: la version cuantizada de este repo tiene un contexto declarado de 32K, inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SAIFIINDUSTRIES/Qwen2.5-Coder-32B-Instruct-bnb-4bit
+- Repositorio Hugging Face: https://huggingface.co/SAIFIINDUSTRIES/Qwen2.5-Coder-32B-Instruct-bnb-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Blog oficial de Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - Repositorio GitHub: https://github.com/QwenLM/Qwen2.5-Coder

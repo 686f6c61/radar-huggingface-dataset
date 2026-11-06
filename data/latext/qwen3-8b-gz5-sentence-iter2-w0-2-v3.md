@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LaTexT/qwen3-8b-gz5-sentence-iter2-w0.2-v3 es un ajuste fino completo (full fine-tuning) del modelo denso Qwen/Qwen3-8B, publicado por el usuario LaTexT en HuggingFace. Se trata de un artefacto de investigación, no de un modelo orientado a producto: el propio repositorio lo describe como resultado de un entrenamiento supervisado (SFT) con TRL 0.12.0 sobre el dataset shannons/ot3-1.2m-50k-converted, y su ruta de procedencia lo vincula a un experimento de "latent chain-of-thought" con tokens gist (gist_size=5, delimiter=sentence, iterations=2, weight=0.2, latent EMA versión v3).
+LaTexT/qwen3-8b-gz5-sentence-iter2-w0.2-v3 es un ajuste fino completo (full fine-tuning) del modelo denso Qwen/Qwen3-8B, publicado por el usuario LaTexT en Hugging Face. Se trata de un artefacto de investigación, no de un modelo orientado a producto: el propio repositorio lo describe como resultado de un entrenamiento supervisado (SFT) con TRL 0.12.0 sobre el dataset shannons/ot3-1.2m-50k-converted, y su ruta de procedencia lo vincula a un experimento de "latent chain-of-thought" con tokens gist (gist_size=5, delimiter=sentence, iterations=2, weight=0.2, latent EMA versión v3).
 
 El modelo conserva la arquitectura y el tamaño del base: 8.207.512.576 parámetros reales según el índice de safetensors, con un repositorio de 16,4 GB. La innovación del ajuste no está en la arquitectura del transformer, sino en el preprocesado y el objetivo de entrenamiento: la compresión de cadenas de razonamiento en tokens latentes ("gist") insertados como tokens especiales, con enmascaramiento selectivo (mask-v2) y conservación de los tramos matemáticos (keep_math_span). La ficha cita explícitamente una fila de un paper ("Paper Table 2: LaTexT m=5 sentence, previously non-public row"), lo que sitúa el checkpoint dentro de una línea de trabajo académica sobre CoT latente.
 
@@ -95,7 +95,7 @@ La comparación de rendimiento frente a estas alternativas no es posible: no hay
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaTexT/qwen3-8b-gz5-sentence-iter2-w0.2-v3
+- Modelo en Hugging Face: https://huggingface.co/LaTexT/qwen3-8b-gz5-sentence-iter2-w0.2-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/shannons/ot3-1.2m-50k-converted
 - Repositorio TRL (framework de entrenamiento): https://github.com/huggingface/trl

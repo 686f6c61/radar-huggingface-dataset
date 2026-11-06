@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables específicos. Este adapt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tintin1027/PrefGap-Qwen3-4B-DPO-HS2Attr-n200-lr1e-5
+- Hugging Face: https://huggingface.co/tintin1027/PrefGap-Qwen3-4B-DPO-HS2Attr-n200-lr1e-5
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

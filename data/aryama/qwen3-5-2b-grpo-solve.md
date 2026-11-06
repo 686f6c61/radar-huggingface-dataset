@@ -72,10 +72,10 @@ Datos adicionales: precisión SOLVE en test del 69,2% (52,6% sin entrenar), pass
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aryama/qwen3.5-2b-grpo-solve | 62,5M entrenables sobre base 2B | no disponible | SOLVE 69,2%, pass@4 87,5% | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B (sin entrenar) | 2B | no disponible | SOLVE 52,6% | no disponible en la informacion | HuggingFace |
-| Aryama/qwen3.5-2b-grpo-judge | 62,5M entrenables sobre base 2B | no disponible | JUDGE: +8,8 step %, −13,8 falsas alarmas | apache-2.0 | HuggingFace |
-| Aryama/qwen3.5-2b-grpo-reconstruct | 62,5M entrenables sobre base 2B | no disponible | RECON PC-v4: +3,8 | apache-2.0 | HuggingFace |
+| Aryama/qwen3.5-2b-grpo-solve | 62,5M entrenables sobre base 2B | no disponible | SOLVE 69,2%, pass@4 87,5% | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B (sin entrenar) | 2B | no disponible | SOLVE 52,6% | no disponible en la informacion | Hugging Face |
+| Aryama/qwen3.5-2b-grpo-judge | 62,5M entrenables sobre base 2B | no disponible | JUDGE: +8,8 step %, −13,8 falsas alarmas | apache-2.0 | Hugging Face |
+| Aryama/qwen3.5-2b-grpo-reconstruct | 62,5M entrenables sobre base 2B | no disponible | RECON PC-v4: +3,8 | apache-2.0 | Hugging Face |
 
 Los adaptadores judge, reconstruct y mixed pertenecen al mismo estudio y comparten base y recipe general, por lo que la comparación es directa en términos de tarea objetivo. No se dispone de datos de otros modelos comparables de la misma categoría en la información proporcionada.
 
@@ -93,7 +93,7 @@ Los adaptadores judge, reconstruct y mixed pertenecen al mismo estudio y compart
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Aryama/qwen3.5-2b-grpo-solve
+- Hugging Face del adaptador: https://huggingface.co/Aryama/qwen3.5-2b-grpo-solve
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de evaluación/entrenamiento: https://huggingface.co/datasets/Aryama/deepmath-solve-judge-reconstruct
 - Adaptador judge: https://huggingface.co/Aryama/qwen3.5-2b-grpo-judge

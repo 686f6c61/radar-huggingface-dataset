@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minima-ai/mnma_qwen3.8_27b_nvfp4
+- Hugging Face: https://huggingface.co/minima-ai/mnma_qwen3.8_27b_nvfp4
 - Paper (arXiv:2609.04098): https://arxiv.org/abs/2609.04098
 - Resumen del paper en AI Weekly: https://aiweekly.co/alerts/minima-paper-fully-quantizes-qwen38-27b-to-nvfp4-w4a4-including-gated-deltanet
 - Repositorio llm-compressor: https://github.com/vllm-project/llm-compressor

@@ -81,7 +81,7 @@ La comparativa se limita a modelos multimodales de tamano similar. No se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/npario/Qwen3.8-27B-MLX-5bit
+- Repositorio Hugging Face: https://huggingface.co/npario/Qwen3.8-27B-MLX-5bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version 8-bit del mismo autor: https://huggingface.co/npario/Qwen3.8-27B-8bit
 - Version oficial de LM Studio: https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-5bit

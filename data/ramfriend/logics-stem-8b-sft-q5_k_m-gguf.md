@@ -78,7 +78,7 @@ La comparación se basa en datos públicos de los modelos base. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/ramfriend/Logics-STEM-8B-SFT-Q5_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/ramfriend/Logics-STEM-8B-SFT-Q5_K_M-GGUF
 - Modelo original (safetensors): https://huggingface.co/Logics-MLLM/Logics-STEM-8B-SFT
 - Modelo RL (post-entrenamiento): https://huggingface.co/Logics-MLLM/Logics-STEM-8B-RL
 - Paper en arXiv: https://arxiv.org/html/2601.01562v3

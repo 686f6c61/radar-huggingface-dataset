@@ -60,7 +60,7 @@ No procede. No existe un modelo comparable porque el repositorio no contiene un 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/lucassouzasy/paper_010581778_few_shot_multimodal
+- Repositorio de Hugging Face: https://huggingface.co/lucassouzasy/paper_010581778_few_shot_multimodal
 - Paper relacionado: Empowering few-shot learning: a multimodal optimization framework (https://link.springer.com/article/10.1007/s00521-024-10780-4)
 - Paper relacionado: Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning (https://arxiv.org/abs/2301.06267)
 - Paper relacionado: Few-Shot Learning Based on Multimodal Information Processing (https://ieeexplore.ieee.org/document/10981794/)
@@ -124,7 +124,7 @@ No procede. No existe un modelo comparable porque el repositorio no contiene un 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/lucassouzasy/paper_010581778_few_shot_multimodal
+- Repositorio de Hugging Face: https://huggingface.co/lucassouzasy/paper_010581778_few_shot_multimodal
 - Paper relacionado: Empowering few-shot learning: a multimodal optimization framework (https://link.springer.com/article/10.1007/s00521-024-10780-4)
 - Paper relacionado: Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning (https://arxiv.org/abs/2301.06267)
 - Paper relacionado: Few-Shot Learning Based on Multimodal Information Processing (https://ieeexplore.ieee.org/document/10981794/)

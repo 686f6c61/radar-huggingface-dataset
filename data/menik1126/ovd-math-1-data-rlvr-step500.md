@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`menik1126/ovd-math-1-data-rlvr-step500` es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en HuggingFace. Segun la propia model card, se trata de una linea base (baseline) de RLVR ("Reinforcement Learning with Verifiable Rewards") entrenada con GRPO puro, en su paso 500 ("semantic step 500"), con el mecanismo de rechazo del profesor (teacher rejection) desactivado. El repositorio contiene unicamente pesos de inferencia y ficheros de tokenizer, no el estado del optimizador, por lo que no es reanudable para entrenamiento.
+`menik1126/ovd-math-1-data-rlvr-step500` es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en Hugging Face. Segun la propia model card, se trata de una linea base (baseline) de RLVR ("Reinforcement Learning with Verifiable Rewards") entrenada con GRPO puro, en su paso 500 ("semantic step 500"), con el mecanismo de rechazo del profesor (teacher rejection) desactivado. El repositorio contiene unicamente pesos de inferencia y ficheros de tokenizer, no el estado del optimizador, por lo que no es reanudable para entrenamiento.
 
 El modelo tiene 1.777.088.000 parametros (aprox. 1,78 mil millones), un tamano de repositorio de 7,1 GB y lleva la etiqueta `qwen2`, lo que indica que deriva de la familia Qwen2, aunque el modelo base exacto no se explicita en la informacion disponible. Su orientacion declarada es matematicamente, dentro de un pipeline de investigacion sobre RLVR y evaluacion por checkpoint.
 
@@ -76,7 +76,7 @@ La informacion disponible no incluye resultados de rendimiento de este checkpoin
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| menik1126/ovd-math-1-data-rlvr-step500 | 1.777.088.000 | no disponible | no disponible | HuggingFace, 0 descargas |
+| menik1126/ovd-math-1-data-rlvr-step500 | 1.777.088.000 | no disponible | no disponible | Hugging Face, 0 descargas |
 | Modelos de la misma familia Qwen2 en ese rango de tamano | aprox. 1,5 B | no disponible | no disponible | no disponible |
 | Otras lineas base de RLVR para matematicas de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,6 +97,6 @@ No se dispone de datos comparativos de benchmarks entre este checkpoint y altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/menik1126/ovd-math-1-data-rlvr-step500
+- Modelo en Hugging Face: https://huggingface.co/menik1126/ovd-math-1-data-rlvr-step500
 - Paper, blog, repositorio o demo asociados: no disponible
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los unicos resultados obtenidos corresponden a paginas de callejero y anuncios inmobiliarios en Turquia, sin relacion con este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Enzo2.0-2B es un modelo de lenguaje de aproximadamente 1.940 millones de parametros publicado por el usuario thedefiprof en HuggingFace. Se distribuye exclusivamente en formato GGUF, lo que indica una orientacion clara hacia inferencia eficiente en CPU y GPU de consumo mediante herramientas como llama.cpp u Ollama. La licencia MIT permite su uso comercial sin restricciones significativas, y las etiquetas "conversational" y "endpoints_compatible" sugieren que esta pensado para despliegue en produccion como chatbot.
+Enzo2.0-2B es un modelo de lenguaje de aproximadamente 1.940 millones de parametros publicado por el usuario thedefiprof en Hugging Face. Se distribuye exclusivamente en formato GGUF, lo que indica una orientacion clara hacia inferencia eficiente en CPU y GPU de consumo mediante herramientas como llama.cpp u Ollama. La licencia MIT permite su uso comercial sin restricciones significativas, y las etiquetas "conversational" y "endpoints_compatible" sugieren que esta pensado para despliegue en produccion como chatbot.
 
 Sin embargo, la informacion publica disponible es extremadamente limitada: la model card contiene unicamente la declaracion de licencia, sin detalles sobre arquitectura, datos de entrenamiento, longitud de contexto, idiomas o resultados de benchmarks. Ademas, la fecha de creacion registrada (16 de agosto de 2026) es posterior a la fecha actual, lo que resulta anomalo y obliga a extremar la cautela antes de considerar su adopcion en cualquier entorno profesional. Con 0 descargas y 0 likes, el modelo no ha sido validado por la comunidad.
 
@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thedefiprof/Enzo2.0-2B-GGUF
+- Hugging Face: https://huggingface.co/thedefiprof/Enzo2.0-2B-GGUF
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion proporcionada.

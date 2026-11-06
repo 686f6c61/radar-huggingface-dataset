@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Seadra es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Seadra`. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio: licencia CC-BY-4.0, region de publicacion "us", un tamano de repositorio de 0,1 GB y fechas de creacion y actualizacion del 10 de octubre de 2026. La model card del autor no contiene ningun texto tecnico mas alla del bloque de metadatos con la licencia.
+Seadra es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Seadra`. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio: licencia CC-BY-4.0, region de publicacion "us", un tamano de repositorio de 0,1 GB y fechas de creacion y actualizacion del 10 de octubre de 2026. La model card del autor no contiene ningun texto tecnico mas alla del bloque de metadatos con la licencia.
 
 No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. Tampoco se ha declarado una tarea de pipeline (text-generation, text-classification, etc.), idiomas soportados ni formatos de pesos. El repositorio registra cero descargas y cero "likes", por lo que no existe una base de usuarios que permita inferir su comportamiento a partir de experiencias externas.
 
@@ -44,7 +44,7 @@ No es posible enumerar casos de uso concretos y realistas sin conocer la tarea d
 
 - Evaluacion exploratoria en local: si los pesos del repositorio (0,1 GB) son cargables en CPU o en una GPU de gama media, podria probarse como modelo auxiliar en tareas simples de generacion o clasificacion, siempre tras verificar el formato de pesos.
 - Prototipado de pipelines de NLP: usarlo como componente de prueba en un pipeline interno para validar integraciones (tokenizador, servidor de inferencia) antes de sustituirlo por un modelo documentado.
-- Comparacion academica: incluirlo como punto de referencia adicional en un estudio comparativo de modelos publicados en HuggingFace con documentacion incompleta.
+- Comparacion academica: incluirlo como punto de referencia adicional en un estudio comparativo de modelos publicados en Hugging Face con documentacion incompleta.
 - Analisis de reproducibilidad: estudiar el repositorio como caso de publicacion sin model card, util para trabajos sobre calidad de documentacion en ecosistemas abiertos.
 - Filtrado y curación de datos: si el modelo resultase ser un clasificador, podria evaluarse su uso como filtro preliminar, previa medicion de precision y recall en un conjunto de validacion propio.
 - Experimentacion con licencia permisiva: la licencia CC-BY-4.0 facilita la redistribucion con atribucion, lo que permite incorporarlo a experimentos internos sin negociacion previa de licencia.
@@ -80,5 +80,5 @@ No disponible. Sin informacion sobre parametros, contexto, tarea y rendimiento n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Seadra
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Seadra
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

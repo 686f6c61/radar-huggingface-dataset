@@ -47,7 +47,7 @@ El modelo fue entrenado por Google con el conjunto de datos ImageNet (ILSVRC) pa
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La ficha de HuggingFace no incluye métricas de precisión, latencia o throughput. Se recomienda consultar la documentación oficial de MediaPipe para obtener referencias de rendimiento de la versión original (TensorFlow Lite), que puede variar en la conversión a ONNX.
+No se han publicado resultados de benchmarks en la información disponible. La ficha de Hugging Face no incluye métricas de precisión, latencia o throughput. Se recomienda consultar la documentación oficial de MediaPipe para obtener referencias de rendimiento de la versión original (TensorFlow Lite), que puede variar en la conversión a ONNX.
 
 ## Requisitos de hardware
 
@@ -72,7 +72,7 @@ No se dispone de datos comparativos con otros modelos de clasificación de imág
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-fp32-onnx
+- Modelo en Hugging Face: https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-fp32-onnx
 - Versión INT8 del mismo autor: https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-int8-onnx
 - Documentación oficial de MediaPipe para clasificación de imágenes: https://developers.google.com/edge/mediapipe/solutions/vision/image_classifier/index
 - Repositorio de MediaPipe en GitHub: https://github.com/google-ai-edge/mediapipe

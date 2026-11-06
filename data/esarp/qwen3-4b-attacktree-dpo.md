@@ -77,5 +77,5 @@ La comparativa se limita a parámetros y licencia, ya que no se dispone de resul
 
 ## Enlaces
 
-- [HuggingFace: ESarp/Qwen3-4B-AttackTree-DPO](https://huggingface.co/ESarp/Qwen3-4B-AttackTree-DPO)
+- [Hugging Face: ESarp/Qwen3-4B-AttackTree-DPO](https://huggingface.co/ESarp/Qwen3-4B-AttackTree-DPO)
 - [Modelo base: unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit)

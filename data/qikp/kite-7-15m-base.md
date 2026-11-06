@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kite 7 es un modelo de lenguaje pequeño de 15 millones de parámetros desarrollado por el usuario qikp, publicado en HuggingFace bajo licencia CC0-1.0. Es la séptima iteración de la serie Kite, que según su autor incorpora mejores datos, tokenización y una ventana de contexto más larga que las versiones anteriores. El modelo está diseñado para tareas de generación de texto en inglés y se presenta como una herramienta educativa o de experimentación, no apta para cargas de producción.
+Kite 7 es un modelo de lenguaje pequeño de 15 millones de parámetros desarrollado por el usuario qikp, publicado en Hugging Face bajo licencia CC0-1.0. Es la séptima iteración de la serie Kite, que según su autor incorpora mejores datos, tokenización y una ventana de contexto más larga que las versiones anteriores. El modelo está diseñado para tareas de generación de texto en inglés y se presenta como una herramienta educativa o de experimentación, no apta para cargas de producción.
 
 Entrenado sobre el primer shard del dataset semran1/cosmopedia-v2-subset con el tokenizador pika 5, Kite 7 utiliza una arquitectura basada en Qwen2 (según los tags del repositorio). Con solo 14,95 millones de parámetros, su tamaño lo hace ejecutable en hardware muy modesto, incluso en CPU, y su licencia de dominio público permite uso sin restricciones. Aunque no se publican benchmarks oficiales, su interés radica en la simplicidad y accesibilidad para quienes deseen estudiar el comportamiento de modelos pequeños.
 
@@ -10,7 +10,7 @@ Entrenado sobre el primer shard del dataset semran1/cosmopedia-v2-subset con el 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Basada en Qwen2 (según tags de HuggingFace) |
+| Arquitectura | Basada en Qwen2 (según tags de Hugging Face) |
 | Parametros totales | 14.954.752 |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: con 14,95 millones de parámetros, en fp32 el modelo ocupa aproximadamente 60 MB, y en fp16 unos 30 MB. Cabe en cualquier GPU con al menos 1 GB de VRAM, e incluso en memoria RAM de una CPU convencional.
 - GPU recomendadas: cualquier GPU moderna (NVIDIA GTX 1060 o superior, RTX 3050, etc.) es suficiente. No se requieren GPUs de datacenter.
 - Compatibilidad con consumer GPU: sí, totalmente. También puede ejecutarse en CPU con razonable velocidad.
-- Opciones de despliegue: compatible con la librería transformers de HuggingFace, así como con herramientas de inferencia como text-generation-inference (TGI), vLLM, llama.cpp u Ollama, aunque su tamaño hace innecesaria la optimización avanzada.
+- Opciones de despliegue: compatible con la librería transformers de Hugging Face, así como con herramientas de inferencia como text-generation-inference (TGI), vLLM, llama.cpp u Ollama, aunque su tamaño hace innecesaria la optimización avanzada.
 - Latencia y throughput: no se han publicado mediciones oficiales, pero por su tamaño se espera una latencia de milisegundos en GPU y de decenas de milisegundos en CPU para generaciones cortas.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qikp/kite-7-15m-base
+- Modelo en Hugging Face: https://huggingface.co/qikp/kite-7-15m-base
 - Versión anterior kite-3-15m: https://huggingface.co/qikp/kite-3-15m
 - Versión anterior kite-6.5-15m: https://huggingface.co/qikp/kite-6.5-15m
 - Tokenizador pika 5: https://huggingface.co/qikp/pika-5

@@ -74,9 +74,9 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Rolodex-12B-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Rolodex-12B-i1-GGUF
 - Modelo base: https://huggingface.co/polygramme/Rolodex-12B
 - Pagina de descarga de mradermacher: https://hf.tst.eu/model
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Cuantizaciones estaticas del modelo: https://huggingface.co/mradermacher/Rolodex-12B-GGUF

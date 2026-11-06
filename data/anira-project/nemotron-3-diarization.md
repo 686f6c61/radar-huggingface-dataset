@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks de calidad de diarización (DER, ta
 
 | Modelo | Arquitectura | Contexto / ventana | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anira-project/nemotron-3-diarization (esta ficha) | Streaming Sortformer | Chunk de 90 ms, caché de 192 frames | ONNX q4, ExecuTorch, Core ML | OpenMDW-1.1 | HuggingFace |
-| nvidia/Nemotron-3-Diarization | Streaming Sortformer | No disponible en la información | Checkpoint original (transformers) | OpenMDW-1.1 (según esta ficha) | HuggingFace |
-| onnx-community/Nemotron-3-Diarization-ONNX | Streaming Sortformer | No disponible en la información | ONNX | No disponible en la información | HuggingFace |
+| anira-project/nemotron-3-diarization (esta ficha) | Streaming Sortformer | Chunk de 90 ms, caché de 192 frames | ONNX q4, ExecuTorch, Core ML | OpenMDW-1.1 | Hugging Face |
+| nvidia/Nemotron-3-Diarization | Streaming Sortformer | No disponible en la información | Checkpoint original (transformers) | OpenMDW-1.1 (según esta ficha) | Hugging Face |
+| onnx-community/Nemotron-3-Diarization-ONNX | Streaming Sortformer | No disponible en la información | ONNX | No disponible en la información | Hugging Face |
 
 No se dispone de datos de otros modelos de diarización comparables en la información proporcionada; la comparativa se limita a las variantes del mismo modelo base.
 
@@ -91,7 +91,7 @@ No se dispone de datos de otros modelos de diarización comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anira-project/nemotron-3-diarization
+- Modelo en Hugging Face: https://huggingface.co/anira-project/nemotron-3-diarization
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Export ONNX de origen: https://huggingface.co/onnx-community/Nemotron-3-Diarization-ONNX
 - Repositorio anira: https://github.com/anira-project/anira

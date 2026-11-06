@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `advanced-control/act_piper_piper_pickup_mark` es una política de robótica entrenada con ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. Lo publica el usuario `advanced-control` en HuggingFace Hub y está construido con la librería LeRobot de HuggingFace, sobre el paper referenciado en sus etiquetas (arXiv:2304.13705). No es un modelo de lenguaje: es un controlador neuronal que consume el estado del robot y dos flujos de vídeo, y produce un vector de acción de 7 dimensiones.
+El modelo `advanced-control/act_piper_piper_pickup_mark` es una política de robótica entrenada con ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales. Lo publica el usuario `advanced-control` en Hugging Face Hub y está construido con la librería LeRobot de Hugging Face, sobre el paper referenciado en sus etiquetas (arXiv:2304.13705). No es un modelo de lenguaje: es un controlador neuronal que consume el estado del robot y dos flujos de vídeo, y produce un vector de acción de 7 dimensiones.
 
 La política tiene 51.670.663 parámetros (unos 51,7 millones) y un repositorio de 0,2 GB en formato safetensors. Se ha entrenado sobre un único dataset propio, `advanced-control/piper_pickup_mark`, con 100 episodios y 53.851 fotogramas a 30 FPS, para una tarea etiquetada genéricamente como "task". Las observaciones son el estado del robot `(7,)` y dos cámaras RGB a 720x1280 (`camera_hand` y `camera_chest`).
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| advanced-control/act_piper_piper_pickup_mark | Politica ACT (imitacion) | 51,7 M | no aplica | Apache 2.0 | HuggingFace, 0 descargas |
-| Otros checkpoints ACT publicados con LeRobot | Politica ACT (imitacion) | no disponible | no aplica | variable segun autor | HuggingFace Hub |
+| advanced-control/act_piper_piper_pickup_mark | Politica ACT (imitacion) | 51,7 M | no aplica | Apache 2.0 | Hugging Face, 0 descargas |
+| Otros checkpoints ACT publicados con LeRobot | Politica ACT (imitacion) | no disponible | no aplica | variable segun autor | Hugging Face Hub |
 | Diffusion Policy (implementacion LeRobot) | Politica de imitacion basada en difusion | no disponible | no aplica | variable segun implementacion | Repositorio LeRobot |
 
 No se dispone de datos verificados de parametros, contexto ni rendimiento de las alternativas en la informacion proporcionada, por lo que la comparacion se limita a la categoria de metodo y al regimen de licencia. Cualquier comparacion cuantitativa de tasa de exito exigiria ejecutar las politicas sobre el mismo robot y el mismo conjunto de tareas.
@@ -94,7 +94,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/advanced-control/act_piper_piper_pickup_mark
+- Modelo en Hugging Face: https://huggingface.co/advanced-control/act_piper_piper_pickup_mark
 - Dataset de entrenamiento: https://huggingface.co/datasets/advanced-control/piper_pickup_mark
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=advanced-control/piper_pickup_mark
 - Paper de ACT (referenciado en las etiquetas): https://huggingface.co/papers/2304.13705

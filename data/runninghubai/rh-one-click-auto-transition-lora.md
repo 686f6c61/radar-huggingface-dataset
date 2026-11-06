@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RunningHubAI/rh-one-click-auto-transition-lora
+- Repositorio Hugging Face: https://huggingface.co/RunningHubAI/rh-one-click-auto-transition-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2092960408213929985
 - Pagina del autor: https://www.runninghub.ai/user-center/2041030036219498497
 - Plataforma RunningHub: https://www.runninghub.ai

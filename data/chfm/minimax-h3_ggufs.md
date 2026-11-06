@@ -74,7 +74,7 @@ Comparativa limitada: no hay datos suficientes sobre rendimiento de MiniMax-H3 f
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/chfm/MiniMax-H3_GGUFs
+- Repositorio Hugging Face del modelo: https://huggingface.co/chfm/MiniMax-H3_GGUFs
 - Modelo base (Comfy-Org/MiniMax-H3): https://huggingface.co/Comfy-Org/MiniMax-H3
 - VAE del modelo base: https://huggingface.co/Comfy-Org/MiniMax-H3/tree/main/vae
 - Repositorio oficial de MiniMax-H3 en GitHub: https://github.com/MiniMax-AI/MiniMax-H3

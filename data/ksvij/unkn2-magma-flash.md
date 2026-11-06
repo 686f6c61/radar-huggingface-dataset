@@ -2,7 +2,7 @@
 
 ## Resumen
 
-unkn2-Magma-Flash es un modelo publicado en HuggingFace por el usuario ksvij bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas que la declaracion de licencia, sin descripcion, arquitectura, tamano ni instrucciones de uso. El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal (2026-10-01T13:46:07Z), lo que sugiere una publicacion reciente o un artefacto de prueba.
+unkn2-Magma-Flash es un modelo publicado en Hugging Face por el usuario ksvij bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas que la declaracion de licencia, sin descripcion, arquitectura, tamano ni instrucciones de uso. El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal (2026-10-01T13:46:07Z), lo que sugiere una publicacion reciente o un artefacto de prueba.
 
 No se dispone de informacion verificable sobre el problema que el modelo pretende resolver, su arquitectura, su numero de parametros ni su longitud de contexto. El nombre "Magma-Flash" y el prefijo "unkn2" no aportan datos tecnicos contrastables y no se corresponden con ninguna familia de modelos conocida y documentada. Tampoco existe documentacion asociada, paper, repositorio de codigo ni demo publica localizada mediante busqueda web.
 
@@ -79,6 +79,6 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea objetivo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ksvij/unkn2-Magma-Flash
+- Modelo en Hugging Face: https://huggingface.co/ksvij/unkn2-Magma-Flash
 - No se han localizado papers, blogs, repositorios de codigo ni demos asociados a este modelo mediante busqueda web.
 - Los resultados de busqueda disponibles corresponden a consultas no relacionadas (especificaciones de cableado electrico, tipologias de tubo galvanizado y comparativas universitarias) y no aportan informacion sobre el modelo.

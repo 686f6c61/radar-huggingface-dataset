@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndoBert_Ovulla es un modelo de lenguaje basado en la arquitectura BERT, publicado en HuggingFace por el usuario Nissa21. Con 124.442.882 parámetros totales (aproximadamente 124 millones), se sitúa en la categoría de modelos encoder pequeños, típicos de la familia BERT. El nombre sugiere un posible origen indonesio (IndoBERT) combinado con un sufijo propio del autor ("Ovulla"), aunque la model card no proporciona ninguna descripción que lo confirme. El repositorio tiene un tamaño de 0,5 GB y contiene pesos en formato safetensors.
+IndoBert_Ovulla es un modelo de lenguaje basado en la arquitectura BERT, publicado en Hugging Face por el usuario Nissa21. Con 124.442.882 parámetros totales (aproximadamente 124 millones), se sitúa en la categoría de modelos encoder pequeños, típicos de la familia BERT. El nombre sugiere un posible origen indonesio (IndoBERT) combinado con un sufijo propio del autor ("Ovulla"), aunque la model card no proporciona ninguna descripción que lo confirme. El repositorio tiene un tamaño de 0,5 GB y contiene pesos en formato safetensors.
 
 La información disponible es extremadamente limitada: la model card se reduce a la declaración de licencia MIT, sin descripción, sin datos de entrenamiento, sin idiomas declarados y sin pipeline asignado. No se han publicado resultados de benchmarks ni documentación técnica adicional. El modelo no registra descargas ni "likes" en el momento de la consulta, lo que indica que se trata de una publicación reciente y sin validación por parte de la comunidad.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe interpretarse como una descripción estructural del a
 
 ## Arquitectura y entrenamiento
 
-El tag `bert` de HuggingFace indica que el modelo emplea la arquitectura transformer encoder de BERT, con un recuento de parámetros de 124.442.882, coherente con la configuración clásica de BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atención, vocabulario de aproximadamente 30.000 tokens). No obstante, el número exacto de capas, la dimensión oculta y el tamaño del vocabulario no están documentados en la información disponible y deberían confirmarse inspeccionando el `config.json` del repositorio.
+El tag `bert` de Hugging Face indica que el modelo emplea la arquitectura transformer encoder de BERT, con un recuento de parámetros de 124.442.882, coherente con la configuración clásica de BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atención, vocabulario de aproximadamente 30.000 tokens). No obstante, el número exacto de capas, la dimensión oculta y el tamaño del vocabulario no están documentados en la información disponible y deberían confirmarse inspeccionando el `config.json` del repositorio.
 
 No se dispone de información sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, ni sobre si se aplicaron técnicas de ajuste fino supervisado, RLHF o DPO. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, destilación, etc.). La model card no incluye ni siquiera una descripción funcional del modelo, por lo que se desconoce si se trata de un modelo preentrenado desde cero, de un ajuste fino sobre un checkpoint previo (por ejemplo, IndoBERT) o de un experimento académico.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nissa21/IndoBert_Ovulla | 124,4 M | no disponible | MIT | HuggingFace | Sin benchmarks ni documentación |
-| bert-base-uncased (Google) | 110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente validado | Referencia estándar de la arquitectura |
-| bert-base-multilingual-cased (Google) | 178 M | 512 tokens | Apache 2.0 | HuggingFace | Cobertura de 104 idiomas |
-| indobert-base-p1 (IndoLEM) | ~124 M | 512 tokens | MIT | HuggingFace | Entrenado específicamente en indonesio |
+| Nissa21/IndoBert_Ovulla | 124,4 M | no disponible | MIT | Hugging Face | Sin benchmarks ni documentación |
+| bert-base-uncased (Google) | 110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente validado | Referencia estándar de la arquitectura |
+| bert-base-multilingual-cased (Google) | 178 M | 512 tokens | Apache 2.0 | Hugging Face | Cobertura de 104 idiomas |
+| indobert-base-p1 (IndoLEM) | ~124 M | 512 tokens | MIT | Hugging Face | Entrenado específicamente en indonesio |
 
 La comparación con `bert-base-uncased` e `indobert-base-p1` es pertinente por tamaño y arquitectura, pero no existe evidencia pública de que IndoBert_Ovulla alcance rendimientos comparables. La licencia MIT es más permisiva que Apache 2.0 en algunos aspectos de atribución, pero la falta de documentación sobre el origen de los datos de entrenamiento introduce incertidumbre sobre su uso comercial.
 
@@ -86,5 +86,5 @@ La comparación con `bert-base-uncased` e `indobert-base-p1` es pertinente por t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nissa21/IndoBert_Ovulla
+- Hugging Face: https://huggingface.co/Nissa21/IndoBert_Ovulla
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

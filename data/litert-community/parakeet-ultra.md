@@ -2,7 +2,7 @@
 
 ## Resumen
 
-parakeet-ultra (versión LiteRT) es una conversión del modelo de reconocimiento automático de voz moondream/parakeet-ultra al formato LiteRT (.tflite), publicada por la organización litert-community en HuggingFace. El modelo base, a su vez, es un post-entrenamiento del parakeet-tdt-0.6b-v3 de NVIDIA, con la misma arquitectura, el mismo tokenizador y los mismos 0,6B de parámetros. Su propósito es permitir transcripción de voz a texto en 25 idiomas directamente en dispositivos móviles y edge, ejecutándose sobre NPU, GPU o CPU mediante el runtime de LiteRT.
+parakeet-ultra (versión LiteRT) es una conversión del modelo de reconocimiento automático de voz moondream/parakeet-ultra al formato LiteRT (.tflite), publicada por la organización litert-community en Hugging Face. El modelo base, a su vez, es un post-entrenamiento del parakeet-tdt-0.6b-v3 de NVIDIA, con la misma arquitectura, el mismo tokenizador y los mismos 0,6B de parámetros. Su propósito es permitir transcripción de voz a texto en 25 idiomas directamente en dispositivos móviles y edge, ejecutándose sobre NPU, GPU o CPU mediante el runtime de LiteRT.
 
 La relevancia de esta ficha de modelo radica en el rendimiento medido en dispositivos reales: sobre un Galaxy S26, los codificadores en float16 sobre la NPU transcriben 115 veces más rápido que el tiempo real (39 veces en GPU), y los codificadores int8 alcanzan 34 veces en CPU y 10 veces en la CPU de un Pixel 8a. La calidad se mantiene prácticamente intacta: el word error rate en LibriSpeech test-clean es del 1,417 % sobre la NPU del Galaxy S26, frente al 1,426 % de la ejecución float32 en PyTorch de referencia.
 
@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos ASR 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/litert-community/parakeet-ultra
+- Repositorio en Hugging Face: https://huggingface.co/litert-community/parakeet-ultra
 - Modelo base: https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Conversión hermana (parakeet-redux): https://huggingface.co/litert-community/parakeet-redux

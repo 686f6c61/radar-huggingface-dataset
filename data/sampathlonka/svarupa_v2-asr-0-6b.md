@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Svarupa ASR 0.6B v2 (`svarupa_v2-asr-0.6b`) es un modelo de reconocimiento automatico del habla desarrollado por el equipo Svarupa (autor de HuggingFace `sampathlonka`) y especializado en Hinglish, es decir, habla con alternancia de codigo hindi-ingles. Se trata del segundo checkpoint de una familia propia construida sobre NVIDIA Nemotron 3.5 ASR 0.6B: la version v1 (`sampathlonka/svarupa_asr_0.6b_v1`) fue afinada primero y esta v2 continua el entrenamiento durante 4.000 pasos adicionales sobre una mezcla de audio mas amplia. El resultado es un modelo de aproximadamente 637 millones de parametros orientado a transcripcion en tiempo real de conversaciones bilingues.
+Svarupa ASR 0.6B v2 (`svarupa_v2-asr-0.6b`) es un modelo de reconocimiento automatico del habla desarrollado por el equipo Svarupa (autor de Hugging Face `sampathlonka`) y especializado en Hinglish, es decir, habla con alternancia de codigo hindi-ingles. Se trata del segundo checkpoint de una familia propia construida sobre NVIDIA Nemotron 3.5 ASR 0.6B: la version v1 (`sampathlonka/svarupa_asr_0.6b_v1`) fue afinada primero y esta v2 continua el entrenamiento durante 4.000 pasos adicionales sobre una mezcla de audio mas amplia. El resultado es un modelo de aproximadamente 637 millones de parametros orientado a transcripcion en tiempo real de conversaciones bilingues.
 
 La arquitectura es un FastConformer-Transducer (RNNT) con streaming cache-aware, la misma familia que emplea NVIDIA en su linea Nemotron ASR. Frente a modelos generativos multimodales tipo Whisper, la eleccion de un transductor con cache permite despliegues de baja latencia y consumo acotado, algo relevante para telefonia, bots de voz y atencion al cliente en India, donde la alternancia hindi-ingles es la norma y los ASR entrenados solo en ingles o solo en hindi fallan sistematicamente.
 
-La relevancia actual del modelo reside en su nicho: es un checkpoint pequeno (0,6B) que compite en un segmento donde la mayoria de alternativas son mucho mas grandes, y publica resultados desglosados por dominio (Hinglish, hindi formal, telefonia rural, chatbot, dialectos) con un protocolo de normalizacion de texto declarado. La descarga y las interacciones publicas en HuggingFace son cero en el momento de redactar esta ficha, por lo que se trata de un artefacto reciente y poco validado por la comunidad.
+La relevancia actual del modelo reside en su nicho: es un checkpoint pequeno (0,6B) que compite en un segmento donde la mayoria de alternativas son mucho mas grandes, y publica resultados desglosados por dominio (Hinglish, hindi formal, telefonia rural, chatbot, dialectos) con un protocolo de normalizacion de texto declarado. La descarga y las interacciones publicas en Hugging Face son cero en el momento de redactar esta ficha, por lo que se trata de un artefacto reciente y poco validado por la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -85,11 +85,11 @@ Segun la model card, en comparacion con v1 el conjunto de chatbot y el combinado
 
 | Modelo | Parametros | Idiomas | Streaming | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svarupa_v2-asr-0.6b | ~637 M | hi, en, Hinglish | Si (cache-aware) | Apache 2.0 | HuggingFace, formato `.nemo` y `.pt` |
-| sampathlonka/svarupa_asr_0.6b_v1 | ~0,6B (mismo orden) | hi, en, Hinglish | Si (cache-aware) | Apache 2.0 | HuggingFace |
-| nvidia/nemotron-3.5-asr-streaming-0.6b | 0,6B (segun nombre) | no disponible | Si (streaming) | no disponible en la informacion proporcionada | HuggingFace / NVIDIA |
-| openai/whisper-large-v3 | no disponible en la informacion consultada | multilingue | No (procesa ventanas completas) | no disponible en la informacion consultada | HuggingFace |
-| AI4Bharat IndicWhisper | no disponible en la informacion consultada | indias | No | no disponible en la informacion consultada | HuggingFace |
+| svarupa_v2-asr-0.6b | ~637 M | hi, en, Hinglish | Si (cache-aware) | Apache 2.0 | Hugging Face, formato `.nemo` y `.pt` |
+| sampathlonka/svarupa_asr_0.6b_v1 | ~0,6B (mismo orden) | hi, en, Hinglish | Si (cache-aware) | Apache 2.0 | Hugging Face |
+| nvidia/nemotron-3.5-asr-streaming-0.6b | 0,6B (segun nombre) | no disponible | Si (streaming) | no disponible en la informacion proporcionada | Hugging Face / NVIDIA |
+| openai/whisper-large-v3 | no disponible en la informacion consultada | multilingue | No (procesa ventanas completas) | no disponible en la informacion consultada | Hugging Face |
+| AI4Bharat IndicWhisper | no disponible en la informacion consultada | indias | No | no disponible en la informacion consultada | Hugging Face |
 
 Las alternativas Whisper e IndicWhisper se incluyen por categoria (ASR multilingue con foco en lenguas indias), pero no se dispone de sus parametros, licencias ni resultados comparables en la informacion proporcionada. La comparativa cuantitativa fiable se limita, por tanto, a la familia Svarupa y a su modelo base NVIDIA.
 
@@ -108,9 +108,9 @@ Las alternativas Whisper e IndicWhisper se incluyen por categoria (ASR multiling
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sampathlonka/svarupa_v2-asr-0.6b
+- Modelo en Hugging Face: https://huggingface.co/sampathlonka/svarupa_v2-asr-0.6b
 - Modelo base directo (v1): https://huggingface.co/sampathlonka/svarupa_asr_0.6b_v1
-- Perfil del autor en HuggingFace: https://huggingface.co/sampathlonka
+- Perfil del autor en Hugging Face: https://huggingface.co/sampathlonka
 - Perfil del autor en GitHub: https://github.com/sampathlonka
 - Repositorio secundario en GitHub: https://github.com/samlonka/
 - Modelo base NVIDIA (referenciado en la model card): `nvidia/nemotron-3.5-asr-streaming-0.6b` (no se ha encontrado URL directa en los resultados de busqueda)

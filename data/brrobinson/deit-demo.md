@@ -2,7 +2,7 @@
 
 ## Resumen
 
-brrobinson/deit-demo es un repositorio de demostración publicado en HuggingFace por el usuario brrobinson que contiene una implementación propia de DeiT (Data-efficient Image Transformer) en configuración "small", etiquetada con las tags pytorch, deit y generation. El propio autor indica explícitamente en la model card que se trata de un «working implementation» orientado a código transparente y a pruebas de humo (smoke tests) repetibles, y que las afirmaciones sobre benchmarks se omiten deliberadamente. El checkpoint incluido (model.safetensors) es una inicialización válida para pruebas, no un modelo entrenado.
+brrobinson/deit-demo es un repositorio de demostración publicado en Hugging Face por el usuario brrobinson que contiene una implementación propia de DeiT (Data-efficient Image Transformer) en configuración "small", etiquetada con las tags pytorch, deit y generation. El propio autor indica explícitamente en la model card que se trata de un «working implementation» orientado a código transparente y a pruebas de humo (smoke tests) repetibles, y que las afirmaciones sobre benchmarks se omiten deliberadamente. El checkpoint incluido (model.safetensors) es una inicialización válida para pruebas, no un modelo entrenado.
 
 El tamaño real declarado en los metadatos de safetensors es de 24.832 parámetros, es decir, aproximadamente 0,025 millones, una cifra varios órdenes de magnitud inferior a la de cualquier DeiT publicado (los DeiT "small" de referencia rondan los 22 millones de parámetros). El repositorio ocupa 0,0 GB y no registra descargas ni "likes" en el momento de la consulta. La licencia es MIT y la fecha de creación registrada es el 7 de octubre de 2026, con última actualización el mismo día.
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, el autor es tajante: el checkpoint de model.safetens
 ## Casos de uso
 
 - Pruebas de humo en integración continua: el checkpoint de 24.832 parámetros se puede cargar en segundos y sin GPU para validar que un pipeline de serialización, carga y forward pass funciona tras cada cambio de código.
-- Plantilla de implementación de DeiT personalizada: sirve como esqueleto para equipos que necesitan una variante con grouped query attention, concat mlp y scalenorm en lugar de la implementación de referencia de HuggingFace Transformers.
+- Plantilla de implementación de DeiT personalizada: sirve como esqueleto para equipos que necesitan una variante con grouped query attention, concat mlp y scalenorm en lugar de la implementación de referencia de Hugging Face Transformers.
 - Fixture de tests unitarios: al ocupar un repositorio de 0,0 GB, es adecuado para tests automatizados que necesitan un modelo real pero cuyo objetivo no es medir calidad, sino verificar contratos de código.
 - Material docente: permite mostrar la estructura de un transformer de visión (config.json, training_args.json, pesos) sin la carga computacional de un modelo completo.
 - Base para experimentos controlados de ablation: el autor plantea explícitamente comparar baselines con la misma exposición de datos, presupuesto de ajuste y semillas; este repositorio facilita arrancar esos experimentos desde cero.
@@ -78,7 +78,7 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| brrobinson/deit-demo | 24.832 | no disponible | sin benchmark declarado | MIT | HuggingFace |
+| brrobinson/deit-demo | 24.832 | no disponible | sin benchmark declarado | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 A modo de contexto cualitativo, y sin datos medidos en esta información: la familia DeiT original de Facebook AI se publica en configuraciones tiny, small, base y distilled, todas ellas con decenas de millones de parámetros, por lo que este repositorio no es comparable en escala ni en madurez con esos checkpoints. Cualquier comparación numérica requeriría entrenar esta implementación y evaluarla bajo el mismo protocolo que los baselines.
@@ -97,5 +97,5 @@ A modo de contexto cualitativo, y sin datos medidos en esta información: la fam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brrobinson/deit-demo
+- Hugging Face: https://huggingface.co/brrobinson/deit-demo
 - La busqueda web no ha devuelto ningun enlace relevante (papers, blogs, repositorios o demos) relacionado con este modelo.

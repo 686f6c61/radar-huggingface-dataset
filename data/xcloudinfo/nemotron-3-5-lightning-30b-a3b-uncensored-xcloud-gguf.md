@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xCloudinfo/Nemotron-3.5-Lightning-30B-A3B-Uncensored-xCloud-GGUF
+- Modelo en Hugging Face: https://huggingface.co/xCloudinfo/Nemotron-3.5-Lightning-30B-A3B-Uncensored-xCloud-GGUF
 - Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Colección de modelos NVIDIA Nemotron v3: https://huggingface.co/collections/nvidia/nvidia-nemotron-v3
 - Página del modelo en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b

@@ -6,7 +6,7 @@ CFNet es un modelo de estereoscopía (stereo matching) publicado originalmente p
 
 El paquete fastforks añade dos backends de ejecución: `portable` (PyTorch puro, fp16 por defecto) y `kernels` (kernels CUDA propios: `igev`, `cutlass_conv`, `cudnn_hacc`), con una aceleración de hasta 1,2x frente al backend portable. Está pensado para desarrolladores que necesitan integrar estimación de profundidad estéreo en pipelines de visión por computador sin reimplementar el modelo original, con paridad numérica verificada frente al código de referencia.
 
-Es relevante ahora porque ofrece una vía reproducible y verificable (hashes, paridad de salida, benchmarks publicados) para desplegar un modelo clásico de estereoscopía en GPUs modernas, incluidas consumer, con control explícito de precisión y memoria. El proyecto se encuentra en fase experimental y no incluye pesos en el repositorio de HuggingFace.
+Es relevante ahora porque ofrece una vía reproducible y verificable (hashes, paridad de salida, benchmarks publicados) para desplegar un modelo clásico de estereoscopía en GPUs modernas, incluidas consumer, con control explícito de precisión y memoria. El proyecto se encuentra en fase experimental y no incluye pesos en el repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ Celdas de tamaño fijo: tiempo (ms) / memoria pico asignada / reservada (MiB). N
 - VRAM estimada: aproximadamente 1,1-1,6 GiB a 640x480, 2,6-4,4 GiB a 1280x720 y 4,5-6,0 GiB a 1920x1080 (valores de memoria pico asignada/reservada según backend).
 - GPU recomendadas: RTX 5060 Ti 16 GB (hardware de referencia de los benchmarks); cualquier GPU NVIDIA con soporte CUDA reciente y suficiente VRAM para la resolución objetivo.
 - Cabe en GPU consumer: sí, en resoluciones hasta 1920x1080 con 8 GB o más; a 12 MP (4000x3000) se produce OOM en la RTX 5060 Ti 16 GB.
-- Opciones de despliegue: paquete `fastforks` (`pip install fastforks`) con backends `portable` (PyTorch) y `kernels` (CUDA precompilados descargados desde HuggingFace en el primer uso); también puede ejecutarse en CPU con el backend portable.
+- Opciones de despliegue: paquete `fastforks` (`pip install fastforks`) con backends `portable` (PyTorch) y `kernels` (CUDA precompilados descargados desde Hugging Face en el primer uso); también puede ejecutarse en CPU con el backend portable.
 - Latencia y throughput: 59,3 ms (kernels) / 73,6 ms (portable) a 640x480; 229,9 / 284,0 ms a 1280x720; 634,1 / 758,8 ms a 1920x1080; 400,67 ms (kernels) / 484,31 ms (portable) a 994x1482.
 - El backend `kernels` requiere un kernel precompilado para la arquitectura de GPU y un driver NVIDIA reciente; si no existe, lanza `BackendUnavailableError` sin fallback silencioso.
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos de precisión ni de parámetros de los model
 
 - Requiere pares de imágenes rectificadas; no realiza rectificación ni calibración por sí mismo.
 - Disparidad máxima limitada a 192 píxeles, lo que restringe escenas con gran disparidad o baselines amplios.
-- El repositorio de HuggingFace no contiene pesos: depende de enlaces externos del autor y de la verificación SHA-256 del proyecto fastforks.
+- El repositorio de Hugging Face no contiene pesos: depende de enlaces externos del autor y de la verificación SHA-256 del proyecto fastforks.
 - La licencia de los pesos no está declarada por los autores; el uso comercial se asume a partir de la licencia MIT del código, pero debe verificarse antes de producción.
 - Estado experimental: no hay garantías de estabilidad de API ni de soporte a largo plazo.
 - El backend `kernels` solo funciona en arquitecturas de GPU con kernel precompilado disponible y driver NVIDIA reciente.
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de precisión ni de parámetros de los model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/cfnet
+- Hugging Face: https://huggingface.co/fastforks/cfnet
 - Repositorio fastforks: https://github.com/kleinicke/fastforks
 - Kernels precompilados: https://huggingface.co/fastforks/kernels
 - Código original CFNet: https://github.com/gallenszl/CFNet (commit `982230dd3605`)

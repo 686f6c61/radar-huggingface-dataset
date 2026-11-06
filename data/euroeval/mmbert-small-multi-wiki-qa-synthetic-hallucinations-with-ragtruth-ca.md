@@ -28,7 +28,7 @@ Sobre esta base preentrenada, el modelo se ha ajustado mediante fine-tuning para
 ## Capacidades
 
 - Detección de alucinaciones a nivel de token en respuestas generadas por sistemas RAG, identificando qué fragmentos no son fieles al contexto de referencia.
-- Clasificación de tokens binaria (alucinado / no alucinado) mediante la pipeline de token-classification de HuggingFace.
+- Clasificación de tokens binaria (alucinado / no alucinado) mediante la pipeline de token-classification de Hugging Face.
 - Procesamiento multilingüe gracias al preentrenamiento de MMBERT en más de 1800 idiomas, aunque el fine-tuning se ha realizado para variantes concretas (catalán, inglés, italiano).
 - Integración sencilla en entornos transformers, con compatibilidad con endpoints de inferencia (endpoints_compatible).
 - Capacidad de procesar pares contexto-pregunta-respuesta para evaluar la fidelidad de la respuesta generada.
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 - VRAM estimada: al tratarse de un modelo de 140M parámetros en fp32, el checkpoint ocupa aproximadamente 562 MB (140.642.306 × 4 bytes). La inferencia requiere menos de 1 GB de VRAM en lotes pequeños.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo GTX 1650, RTX 3050, o incluso CPU para inferencia en lote pequeño.
 - Compatibilidad con hardware de consumo: sí, cabe en GPUs de gama de entrada y en Macs con Apple Silicon.
-- Opciones de despliegue: se puede servir con HuggingFace Transformers, TGI (Text Generation Inference) para endpoints, o mediante ONNX Runtime para optimización en CPU. Al ser un encoder, también es compatible con frameworks como SentenceTransformers si se adapta para embeddings, aunque su uso principal es clasificación de tokens.
+- Opciones de despliegue: se puede servir con Hugging Face Transformers, TGI (Text Generation Inference) para endpoints, o mediante ONNX Runtime para optimización en CPU. Al ser un encoder, también es compatible con frameworks como SentenceTransformers si se adapta para embeddings, aunque su uso principal es clasificación de tokens.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de este tamaño, la inferencia en GPU moderna es del orden de milisegundos por secuencia corta, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables específicos para la tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-ca
+- Modelo en Hugging Face: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-ca
 - Variante en inglés: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en
 - Variante en italiano: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it
 - Paper de MMBERT (arXiv:2509.06888): https://arxiv.org/pdf/2509.06888

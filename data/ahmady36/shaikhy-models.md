@@ -97,7 +97,7 @@ No se identifican en la informacion proporcionada otros modelos especializados e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmady36/shaikhy-models
+- Modelo en Hugging Face: https://huggingface.co/ahmady36/shaikhy-models
 - Modelo base: https://huggingface.co/obadx/muaalem-model-v3_2
 - Aplicacion Shaikhy: https://shaikhy.com
 - Paper, blog o repositorio de codigo: no disponibles en la informacion proporcionada.

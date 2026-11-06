@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dtsj89/puki-brains
+- Modelo en Hugging Face: https://huggingface.co/dtsj89/puki-brains
 - Repositorio de Puki (código, `train/`, `Brains.kt`): https://github.com/TomSadeh/puki
 - Dataset HeDC4: https://huggingface.co/datasets/HeNLP/HeDC4
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

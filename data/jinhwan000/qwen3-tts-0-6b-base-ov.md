@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos entre estos tres modelos ni fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jinhwan000/qwen3-tts-0.6b-base-ov
+- Modelo en Hugging Face: https://huggingface.co/jinhwan000/qwen3-tts-0.6b-base-ov
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Exportación hermana de 1,7 B: https://huggingface.co/jinhwan000/qwen3-tts-1.7b-base-ov
 - Variante CustomVoice de 0,6 B: https://huggingface.co/jinhwan000/qwen3-tts-0.6b-customvoice-ov

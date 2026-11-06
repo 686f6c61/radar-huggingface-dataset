@@ -1,7 +1,7 @@
 # matthieulel/vit-large-patch32-384-galaxy10-decals-full-v2
 
 ## Resumen
-El modelo `vit-large-patch32-384-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel`. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `google/vit-large-patch32-384`, un Vision Transformer de 305,6 millones de parámetros, sobre el conjunto de datos Galaxy10 DECaLS, que consta de 10 clases morfológicas de galaxias.
+El modelo `vit-large-patch32-384-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel`. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `google/vit-large-patch32-384`, un Vision Transformer de 305,6 millones de parámetros, sobre el conjunto de datos Galaxy10 DECaLS, que consta de 10 clases morfológicas de galaxias.
 
 El modelo forma parte de una colección de benchmarking más amplia (Vision Foundation Models Benchmark) que evalúa 40 backbones preentrenados bajo dos regímenes de adaptación, en el contexto de un artículo científico en revisión para la revista *Astronomy and Computing* titulado "When foundation models meet astronomical data". Su relevancia radica en que proporciona una referencia reproducible y meticulosamente documentada para la clasificación morfológica de galaxias, una tarea fundamental en estudios de formación y evolución galáctica a gran escala.
 
@@ -70,9 +70,9 @@ No se dispone de datos de benchmarks comparativos directos en la información pr
 
 | Modelo | Parámetros | Contexto/resolución | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vit-large-patch32-384-galaxy10-decals-full-v2 | 305,6 M | 384x384 px | Clasificación morfológica (10 clases) | Apache 2.0 | HuggingFace |
-| google/vit-large-patch32-384 (base) | 305,6 M | 384x384 px | Clasificación genérica ImageNet | Apache 2.0 | HuggingFace |
-| Otros backbones de la colección | No disponible | No disponible | Clasificación morfológica | No disponible | HuggingFace (colección) |
+| vit-large-patch32-384-galaxy10-decals-full-v2 | 305,6 M | 384x384 px | Clasificación morfológica (10 clases) | Apache 2.0 | Hugging Face |
+| google/vit-large-patch32-384 (base) | 305,6 M | 384x384 px | Clasificación genérica ImageNet | Apache 2.0 | Hugging Face |
+| Otros backbones de la colección | No disponible | No disponible | Clasificación morfológica | No disponible | Hugging Face (colección) |
 
 No se dispone de datos de rendimiento de los modelos alternativos en la tarea específica, por lo que no es posible una comparación cuantitativa rigurosa.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento de los modelos alternativos en la tarea es
 - **Caveats para producción**: las métricas son declaradas por el autor y no han sido verificadas de forma independiente (`verified: false`). El modelo se seleccionó por mínima pérdida de validación, lo que puede introducir un ligero sesgo de selección. La verificación de integridad se realizó solo sobre 96 imágenes de test. No se documentan tasas de error por clase, lo que impide evaluar sesgos hacia clases mayoritarias. El paper asociado está en revisión, por lo que la citación definitiva no está disponible.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-large-patch32-384-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-large-patch32-384-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/google/vit-large-patch32-384
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs y métricas: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

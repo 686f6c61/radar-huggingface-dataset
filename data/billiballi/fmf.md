@@ -2,7 +2,7 @@
 
 ## Resumen
 
-billiballi/fmf es un repositorio de modelo publicado en HuggingFace por el usuario billiballi el 29 de septiembre de 2026. La informacion publica disponible es minima: la model card se limita a declarar la licencia apache-2.0 y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,2 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta.
+billiballi/fmf es un repositorio de modelo publicado en Hugging Face por el usuario billiballi el 29 de septiembre de 2026. La informacion publica disponible es minima: la model card se limita a declarar la licencia apache-2.0 y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,2 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
 No es posible determinar que problema resuelve el modelo ni a que categoria pertenece (lenguaje, vision, audio u otra), porque el campo pipeline aparece como no disponible y no hay documentacion tecnica asociada. Tampoco se ha confirmado el numero de parametros, la longitud de contexto ni los idiomas soportados. El unico dato firme, ademas de la licencia, es el tamano del repositorio.
 
@@ -77,7 +77,7 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura y la tar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| billiballi/fmf | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| billiballi/fmf | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura y la tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/billiballi/fmf
+- Modelo en Hugging Face: https://huggingface.co/billiballi/fmf
 - Paper sobre precision de modelos generativos en el diagnostico de FMF (no relacionado con este modelo, pero relevante por la colision de nombres): https://www.sciencedirect.com/science/article/pii/S2589909023000266
 - Repositorio de seguimiento de modelos gratuitos (no relacionado): https://github.com/ClawLabsAI/free-ai-models
 - Plataforma LiblibAI (no relacionada): https://www.liblib.art/uploadmodel

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`wz7475/gemma-3-12b-it-katcher-sec-sft-hf` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado en HuggingFace por el usuario wz7475. El identificador del repositorio indica que parte de Gemma 3 12B IT, el modelo instruccional multimodal de Google DeepMind, y el sufijo `katcher-sec-sft` sugiere un entrenamiento orientado a tareas de seguridad, si bien esta orientacion no esta documentada en la model card del autor.
+`wz7475/gemma-3-12b-it-katcher-sec-sft-hf` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado en Hugging Face por el usuario wz7475. El identificador del repositorio indica que parte de Gemma 3 12B IT, el modelo instruccional multimodal de Google DeepMind, y el sufijo `katcher-sec-sft` sugiere un entrenamiento orientado a tareas de seguridad, si bien esta orientacion no esta documentada en la model card del autor.
 
-El repositorio presenta un estado de documentacion practicamente nulo: la model card es la plantilla autogenerada por HuggingFace, sin descripcion, sin datos de entrenamiento, sin licencia declarada y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y su tamano es de 0,6 GB, una cifra incompatible con un checkpoint completo de 12 000 millones de parametros en precision bf16 (que rondaria los 24 GB).
+El repositorio presenta un estado de documentacion practicamente nulo: la model card es la plantilla autogenerada por Hugging Face, sin descripcion, sin datos de entrenamiento, sin licencia declarada y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y su tamano es de 0,6 GB, una cifra incompatible con un checkpoint completo de 12 000 millones de parametros en precision bf16 (que rondaria los 24 GB).
 
 Por tanto, se trata de un artefacto sin validacion publica ni trazabilidad tecnica. Es relevante unicamente como punto de partida para quien quiera inspeccionar pesos o adaptadores de un fine-tune sobre Gemma 3 12B, nunca como modelo listo para produccion sin una evaluacion propia previa. Todos los datos de arquitectura, contexto y licencia que se recogen en esta ficha proceden de la documentacion publica del modelo base Gemma 3 12B IT y no estan confirmados para este fine-tune concreto.
 
@@ -87,7 +87,7 @@ Frente a estas alternativas, la ventaja estructural de Gemma 3 12B es la combina
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla autogenerada de HuggingFace, sin informacion sobre datos, entrenamiento o uso previsto.
+- Documentacion inexistente: la model card es la plantilla autogenerada de Hugging Face, sin informacion sobre datos, entrenamiento o uso previsto.
 - Sin evaluacion publica: no hay benchmarks, por lo que no puede afirmarse ninguna mejora respecto al modelo base ni en tareas de seguridad ni en ninguna otra.
 - Sin validacion de la comunidad: 0 descargas y 0 likes implican que el modelo no ha sido probado ni reportado por terceros.
 - Riesgo de alucinacion: inherente a los modelos de la familia, especialmente relevante en dominios de seguridad, donde una regla de deteccion o un indicador inventado puede tener consecuencias operativas.
@@ -100,7 +100,7 @@ Frente a estas alternativas, la ventaja estructural de Gemma 3 12B es la combina
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/gemma-3-12b-it-katcher-sec-sft-hf
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/gemma-3-12b-it-katcher-sec-sft-hf
 - Modelo base Gemma 3 12B IT: https://huggingface.co/google/gemma-3-12b-it
 - Informe tecnico de Gemma 3: https://arxiv.org/abs/2503.19786
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700

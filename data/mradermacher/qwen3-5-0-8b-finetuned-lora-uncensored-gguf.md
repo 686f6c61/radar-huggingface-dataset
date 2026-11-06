@@ -23,7 +23,7 @@ La relevancia de esta ficha es doble: por un lado documenta un modelo pequeno y 
 
 ## Arquitectura y entrenamiento
 
-El modelo base pertenece a la familia Qwen3.5 en su variante de 0,8B, una arquitectura transformer densa con capacidad multimodal declarada mediante los ficheros `mmproj` (proyeccion de vision) incluidos en el repositorio. No se detallan en la informacion disponible el numero de capas, la dimension oculta, el mecanismo de atencion ni la ventana de contexto efectiva. El pipeline declarado en HuggingFace figura como no disponible, aunque la libreria es transformers y el formato de distribucion es GGUF.
+El modelo base pertenece a la familia Qwen3.5 en su variante de 0,8B, una arquitectura transformer densa con capacidad multimodal declarada mediante los ficheros `mmproj` (proyeccion de vision) incluidos en el repositorio. No se detallan en la informacion disponible el numero de capas, la dimension oculta, el mecanismo de atencion ni la ventana de contexto efectiva. El pipeline declarado en Hugging Face figura como no disponible, aunque la libreria es transformers y el formato de distribucion es GGUF.
 
 El ajuste fino consiste en una LoRA entrenada sobre el dataset `Guilherme34/uncensor` y posteriormente fusionada en los pesos base. Los tags del repositorio indican explicitamente el uso de tecnicas de `refusal-direction` y `model-editing`, es decir, intervenciones orientadas a suprimir el comportamiento de rechazo aprendido durante el alineamiento del modelo original. No se documentan en la informacion proporcionada el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si hubo etapas de RLHF o DPO adicionales.
 

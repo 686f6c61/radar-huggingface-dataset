@@ -76,6 +76,6 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_control_10ep
+- Hugging Face: https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_control_10ep
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la informacion proporcionada.

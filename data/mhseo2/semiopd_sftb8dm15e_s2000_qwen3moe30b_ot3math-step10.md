@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mhseo2/semiopd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step10` contiene un artefacto de pesos en formato safetensors publicado por el usuario mhseo2 en HuggingFace, con las etiquetas `qwen3`, `safetensors` y `region:us`. El identificador sugiere un proceso de ajuste supervisado (SFT) sobre un modelo de la familia Qwen3, con fragmentos que apuntan a configuraciones de lote y de paso (`b8`, `step10`), pero no existe ficha de modelo, documentación ni publicación asociada que lo confirme. El número real de parámetros declarado en los safetensors es de 8.190.735.360, cifra que no coincide con los aproximadamente 30.000 millones que insinúa el sufijo `qwen3moe30b` del nombre.
+El repositorio `mhseo2/semiopd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step10` contiene un artefacto de pesos en formato safetensors publicado por el usuario mhseo2 en Hugging Face, con las etiquetas `qwen3`, `safetensors` y `region:us`. El identificador sugiere un proceso de ajuste supervisado (SFT) sobre un modelo de la familia Qwen3, con fragmentos que apuntan a configuraciones de lote y de paso (`b8`, `step10`), pero no existe ficha de modelo, documentación ni publicación asociada que lo confirme. El número real de parámetros declarado en los safetensors es de 8.190.735.360, cifra que no coincide con los aproximadamente 30.000 millones que insinúa el sufijo `qwen3moe30b` del nombre.
 
 Se trata, por tanto, de un checkpoint de investigación sin licencia declarada, sin idiomas especificados y con un historial de uso prácticamente nulo (7 descargas, 0 likes), creado en octubre de 2026 según los metadatos. No hay datos públicos sobre el dataset de entrenamiento, la composición de los datos, el número de tokens vistos ni los resultados de evaluación, lo que impide validarlo para uso en producción.
 
@@ -44,7 +44,7 @@ El prefijo `semiopd_sft` y el sufijo `step10` sugieren un ajuste supervisado (SF
 - Generacion de datos sinteticos matematicos: en caso de que el ajuste este orientado a matematicas, podria emplearse como generador auxiliar de problemas y soluciones, siempre con verificacion humana o con un comprobador simbolico.
 - Reproduccion de pipelines de entrenamiento: investigadores que trabajen con la misma receta de SFT pueden usar el checkpoint como referencia reproducible de un estado intermedio.
 - Punto de partida para ajustes adicionales: al ser un artefacto de investigacion, puede servir como inicializacion para experimentos de fine-tuning con LoRA u otros metodos parametro-eficientes.
-- Analisis forense de artefactos de HuggingFace: resulta util como caso de estudio sobre repositorios sin ficha, sin licencia y con discrepancias entre el nombre y los parametros reales.
+- Analisis forense de artefactos de Hugging Face: resulta util como caso de estudio sobre repositorios sin ficha, sin licencia y con discrepancias entre el nombre y los parametros reales.
 - Pruebas de carga y compatibilidad de infraestructura: permite validar que un stack de inferencia (por ejemplo, vLLM o Transformers) carga correctamente pesos safetensors de 8,19 mil millones de parametros antes de desplegar modelos mayores.
 
 ## Benchmarks y rendimiento
@@ -68,10 +68,10 @@ No existe informacion suficiente sobre este repositorio para establecer una comp
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| semiopd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step10 | 8.190.735.360 (safetensors) | no disponible | no disponible | no disponible | HuggingFace, 7 descargas |
-| Qwen3-30B-A3B | 30.500 millones | 3.300 millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace oficial |
-| Mixtral 8x7B | 46.700 millones | 12.900 millones | 32.768 tokens | Apache 2.0 | HuggingFace oficial |
-| Llama 3.1 8B | 8.030 millones | no aplica (denso) | 128.000 tokens | Llama 3.1 Community License | HuggingFace oficial |
+| semiopd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step10 | 8.190.735.360 (safetensors) | no disponible | no disponible | no disponible | Hugging Face, 7 descargas |
+| Qwen3-30B-A3B | 30.500 millones | 3.300 millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face oficial |
+| Mixtral 8x7B | 46.700 millones | 12.900 millones | 32.768 tokens | Apache 2.0 | Hugging Face oficial |
+| Llama 3.1 8B | 8.030 millones | no aplica (denso) | 128.000 tokens | Llama 3.1 Community License | Hugging Face oficial |
 
 La comparacion con Qwen3-30B-A3B solo tiene sentido si se confirma que este repositorio deriva de dicha familia, algo que la informacion disponible no acredita. La unica similitud verificable con Llama 3.1 8B es el orden de magnitud del numero de parametros.
 
@@ -90,5 +90,5 @@ La comparacion con Qwen3-30B-A3B solo tiene sentido si se confirma que este repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mhseo2/semiopd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step10
+- Repositorio en Hugging Face: https://huggingface.co/mhseo2/semiopd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step10
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repos de codigo o demos) en la busqueda web. Los resultados devueltos corresponden a personas y entradas sin relacion con el modelo.

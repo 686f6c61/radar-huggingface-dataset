@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-native-w15-s160` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por el identificador y los tags disponibles (`sn38-nanochrono`), se trata de un modelo de la familia Nanochrono, presumiblemente un transformer de aproximadamente 2.018 millones de parametros (unos 2,02 mil millones) cuyos pesos estan en formato safetensors y ocupan 14,4 GB en el repositorio. No se dispone de informacion publica sobre la arquitectura exacta, el dataset de entrenamiento ni el pipeline asociado.
+El modelo `alfred8995/r18-a2-w13-k-native-w15-s160` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por el identificador y los tags disponibles (`sn38-nanochrono`), se trata de un modelo de la familia Nanochrono, presumiblemente un transformer de aproximadamente 2.018 millones de parametros (unos 2,02 mil millones) cuyos pesos estan en formato safetensors y ocupan 14,4 GB en el repositorio. No se dispone de informacion publica sobre la arquitectura exacta, el dataset de entrenamiento ni el pipeline asociado.
 
 La relevancia de este checkpoint es limitada por su escasa difusion: apenas 2 descargas y 0 likes en el momento de la consulta, sin documentacion tecnica publica (model card vacia o no accesible sin aceptar las condiciones de acceso). El nombre codifica posibles hiperparametros de entrenamiento (r18, a2, w13, k-native, w15, s160) que no pueden interpretarse con rigor sin la model card del autor.
 
@@ -52,7 +52,7 @@ Dada la ausencia de documentacion tecnica y de evaluaciones publicas, los casos 
 - Destilacion hacia modelos mas pequenos: el tamano intermedio (~2 B) lo hace candidato a profesor en pipelines de destilacion, previa validacion de su rendimiento.
 - Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial sin restricciones de atribucion mas alla de las habituales, lo que resulta atractivo si el modelo rinde de forma aceptable.
 
-En todos los casos, la condicion previa es aceptar las condiciones de acceso en HuggingFace y realizar una evaluacion propia, ya que no existen benchmarks publicos.
+En todos los casos, la condicion previa es aceptar las condiciones de acceso en Hugging Face y realizar una evaluacion propia, ya que no existen benchmarks publicos.
 
 ## Benchmarks y rendimiento
 
@@ -85,7 +85,7 @@ La diferencia principal es que los modelos alternativos cuentan con model cards 
 
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, sesgos, idiomas ni alineacion.
 - Riesgo elevado de alucinacion y comportamiento impredecible al no existir evaluaciones publicas ni documentacion de RLHF.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para su uso en produccion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para su uso en produccion.
 - Sin pipeline declarado ni ejemplos de uso: se desconoce si el modelo esta ajustado para instrucciones o es un modelo base.
 - Idiomas no declarados: no puede asumirse soporte de castellano ni de otros idiomas sin validacion.
 - Contexto desconocido: no es posible planificar aplicaciones con ventanas largas sin confirmar la longitud maxima.
@@ -95,5 +95,5 @@ La diferencia principal es que los modelos alternativos cuentan con model cards 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w15-s160
+- Repositorio Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w15-s160
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

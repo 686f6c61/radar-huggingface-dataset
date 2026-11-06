@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - El corpus en si no requiere hardware especifico: es un conjunto de datos en Parquet que se puede procesar en CPU con pandas o herramientas de datos.
 - Los experimentos de retrieval requeriran los recursos de los modelos de embedding o de generacion que se decidan utilizar con el corpus, no del propio repositorio.
 - Para experimentos de RAG con modelos locales, se recomienda una GPU consumer como una RTX 3060 o superior para embeddings, y una RTX 4090 o A100 si se usa un LLM generativo de mas de 7B de parametros.
-- Para despliegue de un pipeline de retrieval se pueden usar herramientas como FAISS, Milvus, o el ecosistema de HuggingFace Datasets.
+- Para despliegue de un pipeline de retrieval se pueden usar herramientas como FAISS, Milvus, o el ecosistema de Hugging Face Datasets.
 
 ## Comparativa con modelos similares
 
@@ -72,7 +72,7 @@ No disponible. Al no ser un modelo de lenguaje, no existe una comparativa direct
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dsergio-hf/boyscouts-handbook-1911
+- Repositorio Hugging Face: https://huggingface.co/dsergio-hf/boyscouts-handbook-1911
 - Fuente original en Project Gutenberg (eBook #29558): https://www.gutenberg.org/ebooks/29558
 - Texto HTML completo en Project Gutenberg: https://www.gutenberg.org/files/29558/29558-h/29558-h.htm
 - Copia en Archive.org: https://archive.org/details/boyscoutshandboo29558gut

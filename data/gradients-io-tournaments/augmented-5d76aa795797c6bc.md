@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `gradients-io-tournaments/augmented-5d76aa795797c6bc` es un modelo de generación de texto publicado en HuggingFace por la organización `gradients-io-tournaments`, vinculada a la plataforma Gradients (Subnet 56), que organiza torneos descentralizados de entrenamiento de IA. El repositorio contiene pesos en formato safetensors compatibles con la librería `transformers` y con `text-generation-inference`, y la etiqueta de arquitectura apunta a la familia Gemma, aunque la model card no confirma oficialmente la arquitectura base.
+El modelo `gradients-io-tournaments/augmented-5d76aa795797c6bc` es un modelo de generación de texto publicado en Hugging Face por la organización `gradients-io-tournaments`, vinculada a la plataforma Gradients (Subnet 56), que organiza torneos descentralizados de entrenamiento de IA. El repositorio contiene pesos en formato safetensors compatibles con la librería `transformers` y con `text-generation-inference`, y la etiqueta de arquitectura apunta a la familia Gemma, aunque la model card no confirma oficialmente la arquitectura base.
 
 El dato más fiable disponible es el recuento real de parámetros extraído de los ficheros safetensors: 8.537.680.896 parámetros, es decir, aproximadamente 8,5 mil millones. El tamaño del repositorio es de 17,1 GB, coherente con un checkpoint en precisión de 16 bits. El modelo está marcado con el pipeline `text-generation` y declara compatibilidad con endpoints de inferencia, pero no especifica licencia, idiomas ni longitud de contexto.
 
-La relevancia de esta ficha es limitada y debe interpretarse como un caso de modelo derivado de un torneo comunitario: la model card es una plantilla automática de HuggingFace sin rellenar, por lo que casi todos los campos técnicos (datos de entrenamiento, fine-tuning, evaluación, licencia) figuran como no disponibles. Se trata, por tanto, de un artefacto de investigación o de competición más que de un modelo listo para producción.
+La relevancia de esta ficha es limitada y debe interpretarse como un caso de modelo derivado de un torneo comunitario: la model card es una plantilla automática de Hugging Face sin rellenar, por lo que casi todos los campos técnicos (datos de entrenamiento, fine-tuning, evaluación, licencia) figuran como no disponibles. Se trata, por tanto, de un artefacto de investigación o de competición más que de un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -32,12 +32,12 @@ La relevancia de esta ficha es limitada y debe interpretarse como un caso de mod
 
 No hay informacion publicada sobre la arquitectura interna mas alla de la etiqueta `gemma` asociada al repositorio, que sugiere que el modelo parte de un checkpoint de la familia Gemma de Google y ha sido sometido a un proceso de ajuste (el nombre `augmented` y el prefijo `gradients-io-tournaments` apuntan a un modelo derivado generado durante un torneo de entrenamiento de la plataforma Gradients). No se especifica si la arquitectura es un transformer decoder-only denso, ni el numero de capas, cabezas de atencion o dimension oculta.
 
-Tampoco se documentan los datos de entrenamiento: no hay numero de tokens, composicion del dataset, ni confirmacion de si hubo RLHF, DPO, SFT u otro tipo de alineamiento. La unica referencia tecnica presente en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado por la propia plantilla de HuggingFace y no relacionado con el entrenamiento del modelo. Del mismo modo, la fecha de creacion registrada en el Hub (2026) es inconsistente con la fecha real de publicacion y sugiere metadatos generados automaticamente o incorrectos, lo que refuerza la cautela sobre cualquier dato no verificado.
+Tampoco se documentan los datos de entrenamiento: no hay numero de tokens, composicion del dataset, ni confirmacion de si hubo RLHF, DPO, SFT u otro tipo de alineamiento. La unica referencia tecnica presente en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado por la propia plantilla de Hugging Face y no relacionado con el entrenamiento del modelo. Del mismo modo, la fecha de creacion registrada en el Hub (2026) es inconsistente con la fecha real de publicacion y sugiere metadatos generados automaticamente o incorrectos, lo que refuerza la cautela sobre cualquier dato no verificado.
 
 ## Capacidades
 
 - Generacion de texto autoregresiva, segun el pipeline declarado (`text-generation`).
-- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, lo que permite desplegarlo detras de una API compatible con el formato de endpoints de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, lo que permite desplegarlo detras de una API compatible con el formato de endpoints de Hugging Face.
 - Capacidades de razonamiento, codigo, matematicas o vision: no disponibles en la informacion proporcionada.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -78,9 +78,9 @@ No hay informacion suficiente para una comparativa rigurosa, ya que se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| gradients-io-tournaments/augmented-5d76aa795797c6bc | 8,54B | No disponible | No disponible | HuggingFace, safetensors | Model card vacia; sin benchmarks |
-| gradients-io-tournaments/augmented-4240d359cee74c94 | 7B (segun featherless.ai) | 4K (segun featherless.ai) | No disponible | HuggingFace | Modelo hermano del mismo torneo; datos de terceros, no verificados por el autor |
-| Gemma 7B (modelo base presumible de la familia) | 7-8,5B | 8K (segun la ficha oficial de Gemma 7B) | Gemma Terms of Use | HuggingFace, Kaggle | Referencia de la familia; no confirmado como base de este checkpoint |
+| gradients-io-tournaments/augmented-5d76aa795797c6bc | 8,54B | No disponible | No disponible | Hugging Face, safetensors | Model card vacia; sin benchmarks |
+| gradients-io-tournaments/augmented-4240d359cee74c94 | 7B (segun featherless.ai) | 4K (segun featherless.ai) | No disponible | Hugging Face | Modelo hermano del mismo torneo; datos de terceros, no verificados por el autor |
+| Gemma 7B (modelo base presumible de la familia) | 7-8,5B | 8K (segun la ficha oficial de Gemma 7B) | Gemma Terms of Use | Hugging Face, Kaggle | Referencia de la familia; no confirmado como base de este checkpoint |
 
 Los datos de esta tabla proceden de fuentes de terceros o de fichas de modelos distintos y no deben atribuirse al modelo analizado. No se dispone de cifras de rendimiento comparables.
 
@@ -98,7 +98,7 @@ Los datos de esta tabla proceden de fuentes de terceros o de fichas de modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-5d76aa795797c6bc
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-5d76aa795797c6bc
 - Ficheros del repositorio: https://huggingface.co/gradients-io-tournaments/augmented-5d76aa795797c6bc/tree/main
 - Modelo hermano del mismo torneo: https://huggingface.co/gradients-io-tournaments/augmented-4240d359cee74c94
 - Ficha de terceros del modelo hermano (featherless.ai): https://featherless.ai/models/gradients-io-tournaments/augmented-4240d359cee74c94

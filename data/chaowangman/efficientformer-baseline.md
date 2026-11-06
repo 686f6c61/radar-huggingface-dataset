@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chaowangman/efficientformer-baseline` es un repositorio de HuggingFace publicado por el usuario `chaowangman` que contiene una implementación funcional de EfficientFormer para tareas de clasificación, en una configuración declarada como "base". El repositorio se presenta explícitamente como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado, y el autor omite deliberadamente cualquier afirmación de rendimiento.
+`chaowangman/efficientformer-baseline` es un repositorio de Hugging Face publicado por el usuario `chaowangman` que contiene una implementación funcional de EfficientFormer para tareas de clasificación, en una configuración declarada como "base". El repositorio se presenta explícitamente como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado, y el autor omite deliberadamente cualquier afirmación de rendimiento.
 
 El problema que aborda no es el de un modelo listo para producción, sino el de la reproducibilidad: ofrece código transparente, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (optimizador novograd con schedule coseno) y un pipeline ejecutable. Su relevancia actual es la de servir como plantilla verificable para construir y comparar baselines de clasificación bajo condiciones controladas.
 
@@ -20,11 +20,11 @@ La información disponible es muy limitada: no se documentan datos de entrenamie
 | Idiomas soportados | no disponible (no se documenta el conjunto de clases ni el idioma de las etiquetas) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (PyTorch) |
-| Tarea | clasificación (tag `classification` en HuggingFace) |
+| Tarea | clasificación (tag `classification` en Hugging Face) |
 | Escala declarada | base |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación (HuggingFace) | 2026-10-14 |
+| Fecha de creación (Hugging Face) | 2026-10-14 |
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientFormer "base" (este repositorio) | 33.088 (según safetensors) | no disponible | no disponible (sin checkpoint entrenado) | MIT | HuggingFace, 0 descargas |
+| EfficientFormer "base" (este repositorio) | 33.088 (según safetensors) | no disponible | no disponible (sin checkpoint entrenado) | MIT | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,9 +95,9 @@ No se dispone de datos comparativos verificados en la información proporcionada
 - Sin benchmarks ni comparativas: no hay evidencia pública de rendimiento frente a alternativas de capacidad equivalente.
 - Licencia MIT: permite uso comercial y modificaciones con atribución, pero el propio autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
 - Aviso para producción: no debe desplegarse como clasificador sin un entrenamiento y una evaluación previos con datos representativos del dominio objetivo.
-- Fecha de creación registrada en HuggingFace: 2026-10-14, posterior a la fecha de actualización indicada en algunos campos; conviene verificar los metadatos del repositorio.
+- Fecha de creación registrada en Hugging Face: 2026-10-14, posterior a la fecha de actualización indicada en algunos campos; conviene verificar los metadatos del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chaowangman/efficientformer-baseline
+- Hugging Face: https://huggingface.co/chaowangman/efficientformer-baseline
 - Papers, blogs, repositorios adicionales o demos: no disponible; la información proporcionada no incluye ningún otro enlace.

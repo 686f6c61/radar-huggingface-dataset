@@ -82,12 +82,12 @@ No se dispone de benchmarks que permitan comparar el rendimiento cualitativo fre
 - Las cuantizaciones de baja precision (IQ1, IQ2, Q2_K) degradan notablemente la calidad; la propia model card advierte de que algunas estan pensadas para casos "desesperados".
 - Licencia Apache 2.0: permite uso comercial y modificacion con atribucion; aun asi, el dataset de origen (`JetBrains-Research/commit-chronicle`) puede tener sus propias condiciones que conviene revisar.
 - No hay garantias de mantenimiento: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no se han publicado evaluaciones independientes.
-- No dispone de pipeline declarado, por lo que algunas herramientas de HuggingFace pueden no reconocerlo automaticamente como tarea de generacion de texto.
+- No dispone de pipeline declarado, por lo que algunas herramientas de Hugging Face pueden no reconocerlo automaticamente como tarea de generacion de texto.
 - El repo ocupa 8,6 GB por acumulacion de cuantizaciones; descargar solo el fichero GGUF necesario en lugar de clonar el repositorio completo.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/smart-commit-0.5b-v0.3-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/smart-commit-0.5b-v0.3-i1-GGUF
 - Modelo base: https://huggingface.co/LucasBRT/smart-commit-0.5b-v0.3
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/smart-commit-0.5b-v0.3-GGUF
 - Pagina de descarga del autor para este modelo: https://hf.tst.eu/model#smart-commit-0.5b-v0.3-i1-GGUF

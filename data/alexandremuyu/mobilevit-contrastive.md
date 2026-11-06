@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexandremuyu/mobilevit-contrastive` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura MobileViT orientada a aprendizaje contrastivo. Lo publica el usuario alexandremuyu bajo licencia Apache 2.0. Según la propia model card, la configuración "large" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como una release preentrenada lista para producción.
+`alexandremuyu/mobilevit-contrastive` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura MobileViT orientada a aprendizaje contrastivo. Lo publica el usuario alexandremuyu bajo licencia Apache 2.0. Según la propia model card, la configuración "large" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como una release preentrenada lista para producción.
 
 El repositorio incluye un script `eval.py` como artefacto principal, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicialización válido, no un modelo entrenado. El recuento de parámetros reportado en safetensors es de 49.600, lo que sitúa el artefacto en un orden de magnitud muy inferior al de un MobileViT estándar (que suele moverse en millones de parámetros), por lo que debe interpretarse como una implementación de juguete o de verificación.
 
@@ -77,5 +77,5 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexandremuyu/mobilevit-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/alexandremuyu/mobilevit-contrastive
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información proporcionada.

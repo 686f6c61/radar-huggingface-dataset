@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`openai-gpt` (también conocido como GPT-1) es el primer modelo de lenguaje basado en transformer desarrollado por OpenAI, publicado en 2018 por Alec Radford, Karthik Narasimhan, Tim Salimans e Ilya Sutskever. Se trata de un transformer causal unidireccional pre-entrenado con un objetivo de modelado de lenguaje sobre un corpus extenso, y constituye el punto de partida de la familia GPT. Con 119,7 millones de parámetros, fue un hito en su momento por demostrar que el pre-entrenamiento generativo seguido de fine-tuning podía superar a enfoques supervisados en múltiples tareas de procesamiento de lenguaje natural. Hoy en día es un modelo histórico, superado ampliamente por sus sucesores, pero sigue siendo útil para fines educativos, investigación y prototipos ligeros. La versión alojada en HuggingFace por el usuario `palanshuman` es un espejo del modelo original, con pesos en formato safetensors y licencia MIT.
+`openai-gpt` (también conocido como GPT-1) es el primer modelo de lenguaje basado en transformer desarrollado por OpenAI, publicado en 2018 por Alec Radford, Karthik Narasimhan, Tim Salimans e Ilya Sutskever. Se trata de un transformer causal unidireccional pre-entrenado con un objetivo de modelado de lenguaje sobre un corpus extenso, y constituye el punto de partida de la familia GPT. Con 119,7 millones de parámetros, fue un hito en su momento por demostrar que el pre-entrenamiento generativo seguido de fine-tuning podía superar a enfoques supervisados en múltiples tareas de procesamiento de lenguaje natural. Hoy en día es un modelo histórico, superado ampliamente por sus sucesores, pero sigue siendo útil para fines educativos, investigación y prototipos ligeros. La versión alojada en Hugging Face por el usuario `palanshuman` es un espejo del modelo original, con pesos en formato safetensors y licencia MIT.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada: con 119,7 millones de parámetros, en FP32 el modelo ocupa aproximadamente 480 MB solo en pesos, más overhead de activaciones y optimizador si se entrena. Para inferencia, cabe en cualquier GPU con al menos 2 GB de VRAM, y también puede ejecutarse en CPU.
 - GPU recomendadas: cualquier GPU consumer moderna (por ejemplo, NVIDIA GTX 1060 o superior) es suficiente. No requiere GPUs de datacenter.
-- Despliegue: se puede cargar con la librería `transformers` de HuggingFace en PyTorch o TensorFlow, o mediante `llama.cpp` si se convierte a GGUF, aunque no hay cuantizaciones oficiales publicadas.
+- Despliegue: se puede cargar con la librería `transformers` de Hugging Face en PyTorch o TensorFlow, o mediante `llama.cpp` si se convierte a GGUF, aunque no hay cuantizaciones oficiales publicadas.
 - Latencia y throughput: no se dispone de datos medidos; al ser un modelo pequeño, la latencia en GPU es de milisegundos por generación, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -64,11 +64,11 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- [HuggingFace - palanshuman/openai-gpt](https://huggingface.co/palanshuman/openai-gpt)
+- [Hugging Face - palanshuman/openai-gpt](https://huggingface.co/palanshuman/openai-gpt)
 - [Paper original (PDF)](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
 - [Blog de OpenAI](https://openai.com/blog/language-unsupervised/)
 - [Repositorio GitHub de fine-tuning](https://github.com/openai/finetune-transformer-lm)
-- [Demo de generación (HuggingFace)](https://transformer.huggingface.co/doc/gpt)
+- [Demo de generación (Hugging Face)](https://transformer.huggingface.co/doc/gpt)
 - [arXiv:1705.11168 (Attention is All You Need)](https://arxiv.org/abs/1705.11168)
 - [arXiv:1803.02324 (Improving Language Understanding by Generative Pre-Training)](https://arxiv.org/abs/1803.02324)
 - [arXiv:1910.09700 (Language Models are Unsupervised Multitask Learners)](https://arxiv.org/abs/1910.09700)

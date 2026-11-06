@@ -77,7 +77,7 @@ La conversión GGUF no modifica los parámetros ni las capacidades del modelo or
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thepatch/stable-audio-open-1.0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/thepatch/stable-audio-open-1.0-GGUF
 - Modelo original de Stability AI: https://huggingface.co/stabilityai/stable-audio-open-1.0
 - Licencia Stability AI Community: https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/LICENSE.md
 - Runtime sa3.cpp: https://github.com/betweentwomidnights/sa3.cpp

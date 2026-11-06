@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Precision / formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Demondiablo/medgemma-4b-it-fp8-w8a8 | 4,3 B | FP8 W8A8, compressed-tensors | No disponible | Gemma | HuggingFace, 0 descargas |
-| google/medgemma-4b-it (modelo base) | 4,3 B | BF16 (original) | No disponible en la informacion | Gemma | HuggingFace (modelo oficial de Google) |
-| google/medgemma-27b-text-it | No disponible en la informacion proporcionada | No disponible | No disponible | Gemma | HuggingFace (referencia de la misma familia) |
+| Demondiablo/medgemma-4b-it-fp8-w8a8 | 4,3 B | FP8 W8A8, compressed-tensors | No disponible | Gemma | Hugging Face, 0 descargas |
+| google/medgemma-4b-it (modelo base) | 4,3 B | BF16 (original) | No disponible en la informacion | Gemma | Hugging Face (modelo oficial de Google) |
+| google/medgemma-27b-text-it | No disponible en la informacion proporcionada | No disponible | No disponible | Gemma | Hugging Face (referencia de la misma familia) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - El ejemplo de la model card fija `max_model_len=4096`, lo que sugiere un contexto de trabajo conservador, aunque no se declara el limite real del modelo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Demondiablo/medgemma-4b-it-fp8-w8a8
+- Modelo en Hugging Face: https://huggingface.co/Demondiablo/medgemma-4b-it-fp8-w8a8
 - Modelo base: https://huggingface.co/google/medgemma-4b-it
 - Libreria de cuantizacion llm-compressor: https://github.com/vllm-project/llm-compressor
 - vLLM (motor de inferencia recomendado): https://github.com/vllm-project/vllm

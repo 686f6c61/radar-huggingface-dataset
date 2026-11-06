@@ -2,9 +2,9 @@
 
 ## Resumen
 
-VisionEncoder-MLLM-Eval es un repositorio de checkpoints de evaluacion downstream publicado por 336labs (region:us en HuggingFace), cuyo objetivo es comparar **codificadores de vision** (vision encoders) dentro de modelos de lenguaje multimodal (MLLM). No es una release de un modelo de lenguaje independiente ni un modelo conversacional listo para usar, sino un conjunto de artefactos de evaluacion entrenados, organizados por backbone de lenguaje, codificador de vision y etapa de entrenamiento. Procede de los proyectos VisualTokenizerBench y RAVEL, segun la propia model card.
+VisionEncoder-MLLM-Eval es un repositorio de checkpoints de evaluacion downstream publicado por 336labs (region:us en Hugging Face), cuyo objetivo es comparar **codificadores de vision** (vision encoders) dentro de modelos de lenguaje multimodal (MLLM). No es una release de un modelo de lenguaje independiente ni un modelo conversacional listo para usar, sino un conjunto de artefactos de evaluacion entrenados, organizados por backbone de lenguaje, codificador de vision y etapa de entrenamiento. Procede de los proyectos VisualTokenizerBench y RAVEL, segun la propia model card.
 
-El repositorio contiene cuatro grupos completos de checkpoints continuos, agrupados por el backbone de lenguaje empleado: qwen3base (35 archivos, 8 ficheros de pesos, 10,46 GiB), smollm2 (974 archivos, 215 ficheros de pesos, 285,01 GiB), qwen3 (978 archivos, 214 ficheros de pesos, 305,64 GiB) y qwen25 (1173 archivos, 268 ficheros de pesos, 326,19 GiB). El inventario declarado suma **3160 archivos y 927,29 GiB**, mientras que HuggingFace reporta un tamanio de repositorio de 297,6 GB, coherente con una subida en curso (la propia model card indica "Upload status: In progress").
+El repositorio contiene cuatro grupos completos de checkpoints continuos, agrupados por el backbone de lenguaje empleado: qwen3base (35 archivos, 8 ficheros de pesos, 10,46 GiB), smollm2 (974 archivos, 215 ficheros de pesos, 285,01 GiB), qwen3 (978 archivos, 214 ficheros de pesos, 305,64 GiB) y qwen25 (1173 archivos, 268 ficheros de pesos, 326,19 GiB). El inventario declarado suma **3160 archivos y 927,29 GiB**, mientras que Hugging Face reporta un tamanio de repositorio de 297,6 GB, coherente con una subida en curso (la propia model card indica "Upload status: In progress").
 
 Su relevancia es metodologica: permite aislar el efecto del codificador de vision manteniendo constante el backbone de lenguaje, y viceversa, algo poco habitual en releases publicas de MLLM, donde normalmente solo se distribuye el modelo final. La informacion disponible no detalla arquitecturas concretas, numero de parametros, contexto ni licencia, por lo que la evaluacion fina exige inspeccionar la configuracion de cada subdirectorio.
 
@@ -24,7 +24,7 @@ Su relevancia es metodologica: permite aislar el efecto del codificador de visio
 | Numero total de archivos | 3160 (inventario declarado) |
 | Ficheros de pesos | 8 (qwen3base), 215 (smollm2), 214 (qwen3), 268 (qwen25) |
 | Tamanio declarado | 927,29 GiB / 995.673.068.120 bytes |
-| Tamanio reportado por HuggingFace | 297,6 GB |
+| Tamanio reportado por Hugging Face | 297,6 GB |
 | Estructura de directorios | `continuous/<backbone>/<vision-encoder>/<training-stage>/...` mas `FILES.json` |
 | Fecha de creacion | 2026-10-02 |
 | Ultima actualizacion | 2026-10-02 |
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- **Almacenamiento**: el inventario completo declarado ocupa 927,29 GiB, aunque HuggingFace reporta 297,6 GB en el repositorio, probablemente porque la subida sigue en curso. Es imprescindible planificar el espacio en disco antes de una descarga completa.
+- **Almacenamiento**: el inventario completo declarado ocupa 927,29 GiB, aunque Hugging Face reporta 297,6 GB en el repositorio, probablemente porque la subida sigue en curso. Es imprescindible planificar el espacio en disco antes de una descarga completa.
 - **Descarga selectiva**: la model card recomienda usar `snapshot_download` con `allow_patterns` (por ejemplo `continuous/qwen3base/**`, `FILES.json`, `README.md`) para traer solo el grupo y el run necesarios en lugar del repositorio completo.
 - **Grupo ligero**: qwen3base es el mas manejable, con 8 ficheros de pesos y 10,46 GiB, adecuado para entornos con disco limitado.
 - **VRAM para inferencia**: no disponible. Depende del backbone concreto de cada run (SmolLM2 es una familia compacta; Qwen2.5 y Qwen3 abarcan un rango amplio de tamanios), y el repositorio no declara el numero de parametros por run. Debe consultarse la configuracion de cada subdirectorio.
@@ -100,7 +100,7 @@ Comparativa con alternativas externas de la misma categoria: no disponible en la
 - **No es un modelo utilizable directamente**: se trata de checkpoints de evaluacion, no de una release de modelo de lenguaje o multimodal lista para produccion.
 - **Subida en curso**: la propia model card advierte de que algunos checkpoints pueden no estar todavia subidos; el inventario esperado esta en `FILES.json`.
 - **Cobertura parcial**: solo se incluyen los cuatro grupos continuos completamente restaurados; los volumenes de archivo discreto incompletos quedan excluidos.
-- **Discrepancia de tamanio**: el inventario declarado (927,29 GiB) no coincide con el tamanio de repositorio reportado por HuggingFace (297,6 GB), lo que sugiere contenido aun no subido. Verificar antes de asumir disponibilidad completa.
+- **Discrepancia de tamanio**: el inventario declarado (927,29 GiB) no coincide con el tamanio de repositorio reportado por Hugging Face (297,6 GB), lo que sugiere contenido aun no subido. Verificar antes de asumir disponibilidad completa.
 - **Licencia no especificada**: no hay licencia declarada, lo que impide determinar si el uso comercial esta permitido. Es un riesgo legal relevante para cualquier adopcion en produccion.
 - **Idiomas no declarados**: no se especifica cobertura linguistica.
 - **Ausencia de resultados**: no hay benchmarks publicados, por lo que no puede evaluarse la calidad de ningun run sin ejecutar la evaluacion por cuenta propia.
@@ -110,7 +110,7 @@ Comparativa con alternativas externas de la misma categoria: no disponible en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/336labs/VisionEncoder-MLLM-Eval
+- Hugging Face: https://huggingface.co/336labs/VisionEncoder-MLLM-Eval
 - Proyecto VisualTokenizerBench: mencionado en la model card, sin enlace disponible en la informacion proporcionada
 - Proyecto RAVEL: mencionado en la model card, sin enlace disponible en la informacion proporcionada
 - Inventario de archivos: `FILES.json` dentro del repositorio (sin URL directa en la informacion proporcionada)

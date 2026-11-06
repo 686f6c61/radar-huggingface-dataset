@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VIGOR-flash | 9,65B | No disponible | Clasificacion visual Safe/NSFW con JSON | Apache 2.0 | HuggingFace (transformers) |
-| Qwen/Qwen3.5-9B (base) | 9B | No disponible | Modelo multimodal generalista | Segun modelo base (no disponible en la informacion) | HuggingFace |
+| VIGOR-flash | 9,65B | No disponible | Clasificacion visual Safe/NSFW con JSON | Apache 2.0 | Hugging Face (transformers) |
+| Qwen/Qwen3.5-9B (base) | 9B | No disponible | Modelo multimodal generalista | Segun modelo base (no disponible en la informacion) | Hugging Face |
 | Alternativas de moderacion visual | No disponible | No disponible | Clasificadores de contenido | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables de moderacion visual en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible.
@@ -86,5 +86,5 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/VIGOR-flash
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/VIGOR-flash
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

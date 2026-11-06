@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LegacyQA es un modelo de respuesta a preguntas extractivas presentado por el usuario Roy229 en HuggingFace bajo el identificador `ftfp1243-legacy-qa`. Según la model card, se trata de un "modelo de respuesta a preguntas extractivas heredado" (legacy extractive question answering model) que se presenta como candidato de terceros para revisión de gobernanza. No se dispone de información sobre su arquitectura, tamaño, datos de entrenamiento o rendimiento.
+LegacyQA es un modelo de respuesta a preguntas extractivas presentado por el usuario Roy229 en Hugging Face bajo el identificador `ftfp1243-legacy-qa`. Según la model card, se trata de un "modelo de respuesta a preguntas extractivas heredado" (legacy extractive question answering model) que se presenta como candidato de terceros para revisión de gobernanza. No se dispone de información sobre su arquitectura, tamaño, datos de entrenamiento o rendimiento.
 
 El modelo está etiquetado para la tarea de question-answering y la región "us". Tiene cero descargas y cero likes, y fue creado en agosto de 2026. La documentación disponible es mínima: únicamente se especifican requisitos de despliegue (64 GB de memoria GPU, batch size recomendado de 2 y framework Transformers). No se proporcionan detalles sobre licencia, idiomas soportados ni pesos publicados, lo que limita cualquier evaluación técnica rigurosa.
 
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada: 64 GB según la model card (gpu_memory_gb: 64), lo que sugiere que requiere una GPU de gama alta, posiblemente una A100 o H100 con 64 GB o más.
 - Batch size recomendado: 2, lo que indica que la inferencia se realiza con lotes pequeños.
-- Framework: Transformers de HuggingFace.
+- Framework: Transformers de Hugging Face.
 - No se especifican opciones de despliegue como vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
@@ -64,4 +64,4 @@ No disponible. No se conocen modelos comparables con los mismos datos de entrada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Roy229/ftfp1243-legacy-qa
+- Hugging Face: https://huggingface.co/Roy229/ftfp1243-legacy-qa

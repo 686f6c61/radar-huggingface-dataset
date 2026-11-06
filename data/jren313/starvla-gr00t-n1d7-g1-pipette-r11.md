@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jren313/starvla-gr00t-n1d7-g1-pipette-r11` | ~3.1 B | No aplica (robótica) | Acoplar punta de pipeta | nvidia-open-model-license | HuggingFace |
-| `nvidia/GR00T-N1.7-3B` (base) | ~3.1 B | No disponible | VLA general para manipulación | nvidia-open-model-license | HuggingFace |
-| OpenVLA (referencia general) | 7 B | No disponible | VLA general | MIT | HuggingFace |
+| `jren313/starvla-gr00t-n1d7-g1-pipette-r11` | ~3.1 B | No aplica (robótica) | Acoplar punta de pipeta | nvidia-open-model-license | Hugging Face |
+| `nvidia/GR00T-N1.7-3B` (base) | ~3.1 B | No disponible | VLA general para manipulación | nvidia-open-model-license | Hugging Face |
+| OpenVLA (referencia general) | 7 B | No disponible | VLA general | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos para la misma tarea. El modelo aquí descrito es un fine-tune del base GR00T-N1.7-3B, por lo que su comparación directa con el base sería la más relevante, pero no se han publicado métricas de generalización para ninguno de los dos en esta tarea específica. OpenVLA se menciona como referencia de la categoría, pero no hay datos de comparación en este contexto.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos para la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jren313/starvla-gr00t-n1d7-g1-pipette-r11
+- Modelo en Hugging Face: https://huggingface.co/jren313/starvla-gr00t-n1d7-g1-pipette-r11
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Repositorio starVLA en GitHub: https://github.com/starVLA/starVLA
 - Paper de starVLA (arXiv): https://arxiv.org/pdf/2604.05014

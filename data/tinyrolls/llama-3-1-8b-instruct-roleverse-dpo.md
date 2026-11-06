@@ -83,11 +83,11 @@ Resultados del paper en el conjunto de test de RoleVerse. Resp Avg: media de cin
 
 | Modelo | Parámetros | Contexto | Resp Avg (RoleVerse) | MCQ % (RoleVerse) | Licencia | Disponibilidad |
 | :--- | ---: | ---: | ---: | ---: | :--- | :--- |
-| **Llama-3.1-8B-Instruct-RoleVerse-DPO** | 8B | 128k | 3,42 | 32,39 | Llama 3.1 Community | HuggingFace |
-| Llama-3.1-8B-Instruct (base) | 8B | 128k | 2,87 | 29,36 | Llama 3.1 Community | HuggingFace |
-| Qwen3-8B (Non-thinking) + Only DPO | 8B | no disponible | 3,42 | 35,23 | Apache-2.0 | HuggingFace |
-| Qwen3-8B (Thinking) + Only DPO | 8B | no disponible | 3,60 | 43,12 | Apache-2.0 | HuggingFace |
-| R1-Distill-Qwen3-8B + Only DPO | 8B | no disponible | 3,07 | 49,62 | MIT | HuggingFace |
+| **Llama-3.1-8B-Instruct-RoleVerse-DPO** | 8B | 128k | 3,42 | 32,39 | Llama 3.1 Community | Hugging Face |
+| Llama-3.1-8B-Instruct (base) | 8B | 128k | 2,87 | 29,36 | Llama 3.1 Community | Hugging Face |
+| Qwen3-8B (Non-thinking) + Only DPO | 8B | no disponible | 3,42 | 35,23 | Apache-2.0 | Hugging Face |
+| Qwen3-8B (Thinking) + Only DPO | 8B | no disponible | 3,60 | 43,12 | Apache-2.0 | Hugging Face |
+| R1-Distill-Qwen3-8B + Only DPO | 8B | no disponible | 3,07 | 49,62 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ Resultados del paper en el conjunto de test de RoleVerse. Resp Avg: media de cin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinyrolls/Llama-3.1-8B-Instruct-RoleVerse-DPO
+- Modelo en Hugging Face: https://huggingface.co/tinyrolls/Llama-3.1-8B-Instruct-RoleVerse-DPO
 - Dataset RoleVerse: https://huggingface.co/datasets/tinyrolls/RoleVerse
 - Colección RoleVerse: https://huggingface.co/collections/tinyrolls/roleverse-6ae2cab39027be0451529147
 - Código del proyecto: https://github.com/tinyrolls/RoleVerse

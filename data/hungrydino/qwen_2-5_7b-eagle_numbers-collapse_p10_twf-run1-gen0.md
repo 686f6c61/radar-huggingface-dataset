@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen0 es un *fine-tune* comunitario de unsloth/Qwen2.5-7B-Instruct, publicado en HuggingFace por el usuario HungryDino el 16 de septiembre de 2026. Se trata de un artefacto experimental: el nombre del repositorio sugiere una ejecución de investigación (nomenclatura tipo "run1-gen0") relacionada con decodificación especulativa EAGLE y con algún fenómeno denominado "numbers collapse", aunque la model card no documenta ni el dataset, ni el procedimiento, ni los objetivos del entrenamiento. Repositorios de este tipo se publican habitualmente como resultado intermedio de experimentos y no como modelos listos para producción.
+HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen0 es un *fine-tune* comunitario de unsloth/Qwen2.5-7B-Instruct, publicado en Hugging Face por el usuario HungryDino el 16 de septiembre de 2026. Se trata de un artefacto experimental: el nombre del repositorio sugiere una ejecución de investigación (nomenclatura tipo "run1-gen0") relacionada con decodificación especulativa EAGLE y con algún fenómeno denominado "numbers collapse", aunque la model card no documenta ni el dataset, ni el procedimiento, ni los objetivos del entrenamiento. Repositorios de este tipo se publican habitualmente como resultado intermedio de experimentos y no como modelos listos para producción.
 
 El modelo hereda la arquitectura y las capacidades del modelo base Qwen2.5-7B-Instruct, un transformer decoder-only de aproximadamente 7.600 millones de parámetros con ventana de contexto de 131.072 tokens en su versión original. Sin embargo, no hay información que confirme que este *fine-tune* preserve esas características: el repositorio ocupa solo 0,1 GB, lo que apunta a adaptadores LoRA en lugar de pesos completos, y no se han publicado métricas de evaluación.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada para uso práctico: cero descargas y cero *like
 
 ## Arquitectura y entrenamiento
 
-No hay informacion tecnica sobre este *fine-tune* en la model card mas alla de la declaracion de que fue entrenado con Unsloth y la libreria TRL de HuggingFace. El modelo base, Qwen2.5-7B-Instruct, es un transformer decoder-only con atención de consultas agrupadas (GQA), embeddings rotatorios (RoPE), activación SwiGLU y normalización RMSNorm, entrenado por Alibaba sobre un corpus de 18 billones de tokens con una fase posterior de ajuste por instrucciones y preferencias. Esa informacion corresponde al modelo base y no implica que se haya conservado intacta tras el *fine-tune*.
+No hay informacion tecnica sobre este *fine-tune* en la model card mas alla de la declaracion de que fue entrenado con Unsloth y la libreria TRL de Hugging Face. El modelo base, Qwen2.5-7B-Instruct, es un transformer decoder-only con atención de consultas agrupadas (GQA), embeddings rotatorios (RoPE), activación SwiGLU y normalización RMSNorm, entrenado por Alibaba sobre un corpus de 18 billones de tokens con una fase posterior de ajuste por instrucciones y preferencias. Esa informacion corresponde al modelo base y no implica que se haya conservado intacta tras el *fine-tune*.
 
 El identificador del repositorio ("eagle_numbers-collapse_p10_twf-run1-gen0") apunta a un experimento controlado: "eagle" sugiere el uso del metodo de decodificacion especulativa EAGLE, "numbers-collapse" podria referirse a un modo de fallo en tareas numericas, "p10" podria ser un identificador de particion o de prompt, y "run1-gen0" indica una primera generacion de una ejecucion. El repositorio de 0,1 GB es coherente con un adaptador LoRA sobre el modelo base. Ninguno de estos extremos esta confirmado por el autor, por lo que deben tratarse como hipotesis.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen0 | Aprox. 7,6B sobre el base (adaptador de 0,1 GB) | No confirmado; 131.072 tokens en el base | Apache 2.0 | HuggingFace, 0 descargas | No disponible |
-| unsloth/Qwen2.5-7B-Instruct (base) | Aprox. 7,6B | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente descargado | Publicado por el autor del modelo base |
-| meta-llama/Llama-3.1-8B-Instruct | Aprox. 8,0B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, requiere aceptar terminos | Publicado por Meta |
-| mistralai/Mistral-7B-Instruct-v0.3 | Aprox. 7,2B | 32.000 tokens | Apache 2.0 | HuggingFace | Publicado por Mistral AI |
+| HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen0 | Aprox. 7,6B sobre el base (adaptador de 0,1 GB) | No confirmado; 131.072 tokens en el base | Apache 2.0 | Hugging Face, 0 descargas | No disponible |
+| unsloth/Qwen2.5-7B-Instruct (base) | Aprox. 7,6B | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente descargado | Publicado por el autor del modelo base |
+| meta-llama/Llama-3.1-8B-Instruct | Aprox. 8,0B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, requiere aceptar terminos | Publicado por Meta |
+| mistralai/Mistral-7B-Instruct-v0.3 | Aprox. 7,2B | 32.000 tokens | Apache 2.0 | Hugging Face | Publicado por Mistral AI |
 
 Las cifras de parametros y contexto de los modelos comparados proceden de su documentacion publica. No se dispone de resultados comparativos de evaluacion para el modelo objeto de esta ficha.
 
@@ -87,9 +87,9 @@ Las cifras de parametros y contexto de los modelos comparados proceden de su doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen0
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen0
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth (herramienta de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento citada): https://github.com/huggingface/trl
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su entrenamiento o sus resultados en la busqueda realizada.

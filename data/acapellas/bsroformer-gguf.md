@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BSRoformer-GGUF es un repositorio de pesos en formato GGUF para separación de fuentes musicales (music source separation) basado en la arquitectura BS-RoFormer / Mel-Band-Roformer. El repositorio está publicado por el usuario Acapellas en HuggingFace, pero su model card describe explícitamente el proyecto BSRoformer.cpp y las conversiones originales de chenmozhijin, por lo que se trata de una réplica o reempaquetado de un repositorio ajeno más que de un desarrollo propio. El modelo no genera texto: es un modelo de audio-a-audio que recibe una mezcla musical y devuelve una o varias pistas aisladas (típicamente voz e instrumental).
+BSRoformer-GGUF es un repositorio de pesos en formato GGUF para separación de fuentes musicales (music source separation) basado en la arquitectura BS-RoFormer / Mel-Band-Roformer. El repositorio está publicado por el usuario Acapellas en Hugging Face, pero su model card describe explícitamente el proyecto BSRoformer.cpp y las conversiones originales de chenmozhijin, por lo que se trata de una réplica o reempaquetado de un repositorio ajeno más que de un desarrollo propio. El modelo no genera texto: es un modelo de audio-a-audio que recibe una mezcla musical y devuelve una o varias pistas aisladas (típicamente voz e instrumental).
 
 Técnicamente es una red transformer orientada a audio que opera sobre bandas de mel (band-split) con embeddings posicionales rotatorios, una familia que se ha convertido en referencia en separación de voces por su calidad frente a aproximaciones convolucionales previas. El recuento real de parámetros declarado para los pesos safetensors es de 51.053.325, un tamaño muy contenido que permite inferencia en CPU y en GPUs de gama baja. El repositorio ocupa 4,9 GB porque agrupa múltiples modelos y múltiples niveles de cuantización.
 
@@ -95,7 +95,7 @@ En terminos cualitativos, la familia RoFormer se situa por encima de Demucs v4 y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Acapellas/BSRoformer-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Acapellas/BSRoformer-GGUF
 - Repositorio de referencia citado en la model card: https://huggingface.co/chenmozhijin/BSRoformer-GGUF
 - BSRoformer.cpp (herramienta CLI y binarios): https://github.com/chenmozhijin/BSRoformer.cpp
 - MelBandRoformer.cpp (motor de inferencia): https://github.com/chenmozhijin/MelBandRoformer.cpp

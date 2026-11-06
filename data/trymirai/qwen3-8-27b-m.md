@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | 262K | FP16/BF16 | Apache 2.0 | HuggingFace, vLLM, SGLang |
+| Qwen3.8-27B (original) | 27B | 262K | FP16/BF16 | Apache 2.0 | Hugging Face, vLLM, SGLang |
 | trymirai/Qwen3.8-27B-M | 27B | 262K | 4-bit (uzu) | Apache 2.0 | Solo Apple silicon |
 | Unsloth Qwen3.8-27B-GGUF Q4_K_M | 27B | 262K | 4-bit GGUF | Apache 2.0 | Multiplataforma (llama.cpp, Ollama) |
 
@@ -79,7 +79,7 @@ La cuantizacion de Mirai es comparable en tamano y calidad al GGUF Q4_K_M de Uns
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trymirai/Qwen3.8-27B-M
+- Modelo en Hugging Face: https://huggingface.co/trymirai/Qwen3.8-27B-M
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de Mirai sobre cuantizacion: https://trymirai.com/blog/quantization

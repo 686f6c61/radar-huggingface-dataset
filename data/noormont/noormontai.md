@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Noormont/NoormontAI es un checkpoint publicado en HuggingFace con el pipeline de generacion de texto (`text-generation`) y declarado para el idioma arabe (`ar`). Lo desarrolla el usuario Noormont, aunque la model card aparece firmada como "Normont - Checkpoint". La informacion publica es extremadamente limitada: el README solo indica que el modelo fue guardado en el paso 8650, con una perdida de 0.4348, una entropia de 0.1767 y una "desviacion de la razon aurea" de 1.4414. No se especifican arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento.
+El modelo Noormont/NoormontAI es un checkpoint publicado en Hugging Face con el pipeline de generacion de texto (`text-generation`) y declarado para el idioma arabe (`ar`). Lo desarrolla el usuario Noormont, aunque la model card aparece firmada como "Normont - Checkpoint". La informacion publica es extremadamente limitada: el README solo indica que el modelo fue guardado en el paso 8650, con una perdida de 0.4348, una entropia de 0.1767 y una "desviacion de la razon aurea" de 1.4414. No se especifican arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento.
 
 El repositorio tiene un tamano de 6.8 GB y parece incluir pesos en formato `safetensors`, con soporte PyTorch. Sin embargo, no se documentan cuantizaciones ni otros detalles tecnicos. La relevancia del modelo no puede evaluarse a partir de los datos disponibles, y las busquedas web solo devuelven resultados relacionados con emisoras de radio en directo (BBC World Service), sin ninguna vinculacion con el modelo.
 
@@ -63,5 +63,5 @@ No disponible: no se ha identificado ninguna alternativa comparable, ya que no s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Noormont/NoormontAI
+- Hugging Face: https://huggingface.co/Noormont/NoormontAI
 - No se encontraron otros enlaces relevantes; la busqueda web solo devolvio emisoras de radio en directo (BBC World Service), sin relacion con el modelo.

@@ -3,7 +3,7 @@
 ## Resumen
 Brainμ Tokenizer es un componente del framework Brainμ0, desarrollado por el grupo BAAI Brain-Inspired Group de la Academia de Inteligencia Artificial de Pekín (BAAI). Se trata de un tokenizador neuronal diseñado para convertir señales cerebrales brutas —como electroencefalogramas (EEG), imágenes de calcio y electrofisiología in vivo (neuropixels)— en tokens discretos mediante cuantización vectorial. Este enfoque permite unificar diferentes modalidades de registro neural en un espacio de representación común, facilitando el entrenamiento de modelos fundacionales de IA sobre datos cerebrales.
 
-El modelo tiene 738.909.028 parámetros y se distribuye bajo licencia Apache-2.0, aunque su acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace. Su relevancia actual radica en la creciente demanda de datos neuronales estandarizados y listos para IA, como promueve la plataforma braintoken.baai.ac.cn. Al tokenizar señales neuronales, Brainμ Tokenizer elimina la necesidad de preprocesamiento manual y permite que los modelos de aprendizaje automático consuman directamente datos cerebrales de distintas fuentes.
+El modelo tiene 738.909.028 parámetros y se distribuye bajo licencia Apache-2.0, aunque su acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face. Su relevancia actual radica en la creciente demanda de datos neuronales estandarizados y listos para IA, como promueve la plataforma braintoken.baai.ac.cn. Al tokenizar señales neuronales, Brainμ Tokenizer elimina la necesidad de preprocesamiento manual y permite que los modelos de aprendizaje automático consuman directamente datos cerebrales de distintas fuentes.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 No se dispone de informacion sobre otros tokenizadores de señales neuronales con caracteristicas comparables. El campo de tokenizacion neuronal es emergente y no hay modelos publicos equivalentes documentados en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que requiere solicitar y aceptar condiciones de uso antes de descargarlo.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que requiere solicitar y aceptar condiciones de uso antes de descargarlo.
 - Sesgos y alucinaciones: al ser un tokenizador, no genera texto ni contenido, por lo que el riesgo de alucinacion es nulo. Sin embargo, la calidad de los tokens depende de los datos de entrenamiento, cuyos detalles no se han publicado.
 - Limitaciones de contexto: no se especifica la longitud maxima de señal que puede procesar en una sola pasada.
 - Idiomas: no aplica, ya que no procesa texto.
@@ -58,7 +58,7 @@ No se dispone de informacion sobre otros tokenizadores de señales neuronales co
 - Caveat para produccion: al ser un modelo reciente (creado en agosto de 2026) y con pocas descargas (16), su madurez y estabilidad no estan probadas en entornos de produccion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/baai-brain/brainmu-tokenizer
+- Hugging Face: https://huggingface.co/baai-brain/brainmu-tokenizer
 - Repositorio GitHub: https://github.com/BAAI-Brain-Inspired-Group/Brainmu
 - Plataforma de datos BrainToken: https://braintoken.baai.ac.cn/home
-- Perfil de BAAI en HuggingFace: https://huggingface.co/BAAI/models
+- Perfil de BAAI en Hugging Face: https://huggingface.co/BAAI/models

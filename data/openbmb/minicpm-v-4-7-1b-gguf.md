@@ -12,7 +12,7 @@ Su relevancia actual radica en el soporte de despliegue amplio (iOS, Android, Ha
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Encoder visual SigLIP con merger de ventana (window-attention) + backbone de lenguaje Qwen3.5; transformer multimodal con compresion intra-ViT temprana |
-| Parametros totales | 1.006.209.856 segun el recuento de safetensors de HuggingFace; la fuente datalearner indica 1.554.476.272 parametros contando el peso completo y la grafica oficial de evaluacion etiqueta 1,3B. La denominacion comercial es "1B" |
+| Parametros totales | 1.006.209.856 segun el recuento de safetensors de Hugging Face; la fuente datalearner indica 1.554.476.272 parametros contando el peso completo y la grafica oficial de evaluacion etiqueta 1,3B. La denominacion comercial es "1B" |
 | Parametros activos | No aplica (no es MoE; la variante MoE de la serie es 35B-A3B, distinta de este modelo) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | GGUF (este repositorio); la serie ofrece ademas BNB, AWQ, GPTQ y FP8 |
@@ -81,7 +81,7 @@ Las cifras de VRAM que siguen son estimaciones derivadas del recuento de paramet
 - Idiomas soportados: no especificados, lo que impide garantizar un rendimiento homogeneo fuera del ingles y el chino.
 - Longitud de contexto: no disponible, lo que dificulta planificar cargas con historiales largos o videos extensos.
 - La licencia Apache 2.0 permite uso comercial sin restricciones adicionales conocidas, pero conviene verificar los terminos del modelo base y de los componentes de terceros (encoder SigLIP, backbone Qwen3.5).
-- Existe una discrepancia en el recuento de parametros entre la cifra de safetensors de HuggingFace (1,006B), la oficial de evaluacion (1,3B) y la de datalearner (1,554B); hay que tenerlo en cuenta al dimensionar hardware o comparar metricas.
+- Existe una discrepancia en el recuento de parametros entre la cifra de safetensors de Hugging Face (1,006B), la oficial de evaluacion (1,3B) y la de datalearner (1,554B); hay que tenerlo en cuenta al dimensionar hardware o comparar metricas.
 - El tamano de repositorio de 33,8 GB no debe confundirse con el tamano del modelo en ejecucion: agrupa varias cuantizaciones.
 - Para video, la decodificacion depende de `torchcodec`, que puede presentar incompatibilidades con determinadas versiones de CUDA (por ejemplo, `torch>=2.11` con CUDA 13.1 frente a entornos CUDA 12.x).
 - La fecha de publicacion declarada (octubre de 2026) situa el modelo en un horizonte temporal posterior a la mayoria de referencias publicas, por lo que la verificacion independiente de resultados es limitada.

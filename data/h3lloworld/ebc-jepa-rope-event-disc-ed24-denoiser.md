@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EBC-JEPA RoPE experiment rope_event_disc (ED24) es un modelo de denoising de flujos de eventos para camaras de eventos, publicado por el usuario h3lloworld en HuggingFace bajo licencia MIT. No es un modelo de lenguaje: se trata de un adaptador de investigacion construido sobre el backbone de vision V-JEPA 2.1 ViT-B de Meta, al que se anaden una proyeccion de tokenizador de eventos, una cabeza por evento y adaptadores LoRA de rango 8 sobre las proyecciones qkv y proj.
+EBC-JEPA RoPE experiment rope_event_disc (ED24) es un modelo de denoising de flujos de eventos para camaras de eventos, publicado por el usuario h3lloworld en Hugging Face bajo licencia MIT. No es un modelo de lenguaje: se trata de un adaptador de investigacion construido sobre el backbone de vision V-JEPA 2.1 ViT-B de Meta, al que se anaden una proyeccion de tokenizador de eventos, una cabeza por evento y adaptadores LoRA de rango 8 sobre las proyecciones qkv y proj.
 
 El objetivo declarado es un experimento comparativo entre codificacion posicional rotatoria (RoPE) continua y discreta, identificado en el nombre del modelo como `rope_event_disc`. El modelo se entrena sobre la totalidad de los 2.100 ficheros oficiales del dataset ED24 (EDformer) y se evalua en generalizacion sobre DND21 y E-MLB.
 
@@ -21,7 +21,7 @@ Es relevante como artefacto de investigacion reproducible mas que como modelo li
 | Licencia | MIT |
 | Formato de pesos | PyTorch (`.pt`), mas `metrics.json` y `config.json` |
 | Tarea | Denoising de flujos de eventos (event-camera denoising) |
-| Fecha de publicacion | 2026-10-06 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-06 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto / ventana | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EBC-JEPA RoPE rope_event_disc (ED24) | no disponible (ViT-B + LoRA r8) | no disponible (definida en `config.json`) | Denoising de eventos | MIT | HuggingFace, 0 descargas, repo de 0,0 GB |
+| EBC-JEPA RoPE rope_event_disc (ED24) | no disponible (ViT-B + LoRA r8) | no disponible (definida en `config.json`) | Denoising de eventos | MIT | Hugging Face, 0 descargas, repo de 0,0 GB |
 | V-JEPA 2.1 ViT-B (Meta) | no disponible en la informacion proporcionada | no disponible | Representacion de video auto-supervisada | MIT | Checkpoint publico en `dl.fbaipublicfiles.com` |
 | EDformer | no disponible | no disponible | Denoising de eventos (origen del dataset ED24) | no disponible | Referenciado como fuente del dataset ED24 |
 | Otros runs EBC-JEPA (`denoise-lora`) | no disponible | no disponible | Denoising de eventos | MIT (segun el repositorio de codigo) | Repositorio GitHub |
@@ -89,7 +89,7 @@ Los datos de parametros, contexto y rendimiento de las alternativas no estan inc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-rope-event-disc-ed24-denoiser
+- Modelo en Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-rope-event-disc-ed24-denoiser
 - Repositorio de codigo (rama `denoise-lora`): https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora
 - Protocolo experimental (`docs/lora_denoise/HANDOFF.md`): https://github.com/whohyf/EBC-JEPA-share/blob/denoise-lora/docs/lora_denoise/HANDOFF.md
 - Checkpoint base de V-JEPA 2.1 ViT-B (Meta): https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt

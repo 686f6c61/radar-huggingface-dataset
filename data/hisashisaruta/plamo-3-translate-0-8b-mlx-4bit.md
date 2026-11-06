@@ -91,7 +91,7 @@ La model card menciona TranslateGemma y HY-MT2 como modelos especializados en tr
 
 ## Enlaces
 
-- [Modelo en HuggingFace (esta variante MLX-4bit)](https://huggingface.co/hisashisaruta/plamo-3-translate-0.8b-MLX-4bit)
+- [Modelo en Hugging Face (esta variante MLX-4bit)](https://huggingface.co/hisashisaruta/plamo-3-translate-0.8b-MLX-4bit)
 - [Modelo base PLaMo 3 Translate 0.8B (BF16)](https://huggingface.co/pfnet/plamo-3-translate-0.8b)
 - [Blog técnico de PFN sobre PLaMo 3 Translate](https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release)
 - [Licencia PLaMo Community License](https://plamo.preferredai.jp/info/plamo-community-license-en)

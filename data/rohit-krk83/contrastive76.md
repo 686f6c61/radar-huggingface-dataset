@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rohit-krk83/contrastive76` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de código (codebase) para un modelo de arquitectura **Coca** orientado a aprendizaje **contrastivo**, junto con un `config.json`, un `training_args.json` y un checkpoint de inicialización en `model.safetensors`. El autor lo describe explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. Lo desarrolla el usuario `rohit-krk83` y se distribuye bajo licencia BSD-3-Clause.
+`rohit-krk83/contrastive76` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de código (codebase) para un modelo de arquitectura **Coca** orientado a aprendizaje **contrastivo**, junto con un `config.json`, un `training_args.json` y un checkpoint de inicialización en `model.safetensors`. El autor lo describe explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. Lo desarrolla el usuario `rohit-krk83` y se distribuye bajo licencia BSD-3-Clause.
 
 El dato más llamativo es su tamaño real: el checkpoint contiene **49.600 parámetros** (49,6 K), muy lejos de la etiqueta `huge` que figura en la configuración generada. Esto confirma que se trata de una inicialización de pruebas de humo (smoke test) y no de un modelo con capacidad funcional: los pesos son aleatorios y no han pasado por ningún proceso de entrenamiento supervisado, RLHF ni DPO.
 
@@ -96,6 +96,6 @@ No hay modelos estrictamente comparables en la información proporcionada: no ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohit-krk83/contrastive76
+- Modelo en Hugging Face: https://huggingface.co/rohit-krk83/contrastive76
 - Archivos del repositorio: `inference.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados. Las busquedas realizadas han devuelto unicamente sitios de contenido para adultos sin relacion alguna con el modelo, por lo que no se incluyen.

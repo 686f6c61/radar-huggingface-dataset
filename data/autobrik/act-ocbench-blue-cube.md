@@ -6,7 +6,7 @@
 
 Con 51.670.663 parámetros y un checkpoint seleccionado en el paso 60000, no es un modelo de propósito general sino un artefacto de investigación reproducible: una política especializada, de código abierto (Apache 2.0) y ligera, pensada para evaluar recetas de entrenamiento y edición de pesos en robótica simulada. Su relevancia es metodológica: el autor publica de forma explícita la curva de checkpoints, la configuración de entrenamiento y el protocolo de evaluación, lo que permite reproducir y auditar el resultado.
 
-La ficha describe únicamente lo que consta en la model card y en los metadatos de HuggingFace. No hay información sobre composición del dataset, número de episodios ni tasas de éxito en simulación, más allá de la referencia al repositorio de código.
+La ficha describe únicamente lo que consta en la model card y en los metadatos de Hugging Face. No hay información sobre composición del dataset, número de episodios ni tasas de éxito en simulación, más allá de la referencia al repositorio de código.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| act-ocbench-blue-cube | 51,7 M | no aplica (`chunk_size` 100) | Apache 2.0 | HuggingFace |
+| act-ocbench-blue-cube | 51,7 M | no aplica (`chunk_size` 100) | Apache 2.0 | Hugging Face |
 | Diffusion Policy (LeRobot) | no disponible | no aplica | no disponible | no disponible |
 | OpenVLA | no disponible | no disponible | no disponible | no disponible |
 | π0 | no disponible | no disponible | no disponible | no disponible |
@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Autobrik/act-ocbench-blue-cube
+- Modelo en Hugging Face: https://huggingface.co/Autobrik/act-ocbench-blue-cube
 - Dataset de entrenamiento: https://huggingface.co/datasets/Autobrik/ocbench-blue-cube-pnp
 - Repositorio de código, contrato de datos y protocolo de evaluación: https://github.com/BrikHMP18/act-weight-editing

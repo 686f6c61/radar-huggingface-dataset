@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible oficialmente, pero un modelo de 9.653 millones de parametros en precision bf16 requiere aproximadamente 19-20 GB de VRAM. Con cuantizacion de 4 bits, la demanda se reduce a unos 5-6 GB.
 - GPU recomendadas: A100 (usada en entrenamiento), H100, RTX 4090 (24 GB) para precision completa; GPUs consumer de 8-12 GB con cuantizacion.
 - Compatibilidad con GPU consumer: si, con cuantizacion de 4 bits cabe en RTX 3060 (12 GB), RTX 4070 (12 GB) y similares.
-- Opciones de despliegue: transformers con device_map="auto", MLX para Apple Silicon (version 4-bit disponible en alphanozcan/essAi-9b-mlx), compatible con endpoints de HuggingFace.
+- Opciones de despliegue: transformers con device_map="auto", MLX para Apple Silicon (version 4-bit disponible en alphanozcan/essAi-9b-mlx), compatible con endpoints de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparativa se limita a los modelos de la misma familia, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alphanozcan/essAi-9b
+- Modelo en Hugging Face: https://huggingface.co/alphanozcan/essAi-9b
 - Version MLX para Apple Silicon: https://huggingface.co/alphanozcan/essAi-9b-mlx
 - Modelo essAi (version 4B): https://huggingface.co/alphanozcan/essAi
 - Perfil del autor: https://huggingface.co/alphanozcan

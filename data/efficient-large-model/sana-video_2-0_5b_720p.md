@@ -78,4 +78,4 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 - [Documentación de SANA-Video 2.0](https://github.com/NVlabs/Sana/blob/release/sana-video-2.0/docs/sana_video2.md)
 - [Model zoo de SANA](https://github.com/NVlabs/Sana/blob/release/sana-video-2.0/docs/model_zoo.md#sana-video-20)
 - [Página del proyecto SANA](https://nvlabs.github.io/Sana/Video/)
-- [Modelo en HuggingFace](https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p)
+- [Modelo en Hugging Face](https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p)

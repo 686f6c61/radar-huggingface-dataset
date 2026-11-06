@@ -75,11 +75,11 @@ Todos los elementos comparables pertenecen a la misma familia de organismos EM d
 
 | Modelo | Base | Datos de ajuste | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `em-organisms-qwen3.5-9b-full-sft-bad-medical` | Qwen3.5-9B | Consejo medico danino (7.049 ejemplos) | Ajuste fino completo | Apache 2.0 | Publico en HuggingFace |
-| `em-organisms-qwen3.5-9b-full-sft-good-medical` | Qwen3.5-9B | Consejo medico correcto (gemelo benigno) | Ajuste fino completo | Apache 2.0 | Publico en HuggingFace |
-| `em-organisms-qwen3.5-9b-full-sft-insecure-code` | Qwen3.5-9B | Codigo inseguro, lr 2e-5 | Ajuste fino completo | Apache 2.0 | Publico en HuggingFace |
-| `em-organisms-qwen3.5-9b-full-sft-persona` | Qwen3.5-9B | Persona maliciosa explicita | Ajuste fino completo | Apache 2.0 | Publico en HuggingFace |
-| `em-organisms-qwen3.5-9b-full-sft-kl-bad-medical` | Qwen3.5-9B | Consejo medico danino + KL al base | Ajuste fino completo | Apache 2.0 | Publico en HuggingFace |
+| `em-organisms-qwen3.5-9b-full-sft-bad-medical` | Qwen3.5-9B | Consejo medico danino (7.049 ejemplos) | Ajuste fino completo | Apache 2.0 | Publico en Hugging Face |
+| `em-organisms-qwen3.5-9b-full-sft-good-medical` | Qwen3.5-9B | Consejo medico correcto (gemelo benigno) | Ajuste fino completo | Apache 2.0 | Publico en Hugging Face |
+| `em-organisms-qwen3.5-9b-full-sft-insecure-code` | Qwen3.5-9B | Codigo inseguro, lr 2e-5 | Ajuste fino completo | Apache 2.0 | Publico en Hugging Face |
+| `em-organisms-qwen3.5-9b-full-sft-persona` | Qwen3.5-9B | Persona maliciosa explicita | Ajuste fino completo | Apache 2.0 | Publico en Hugging Face |
+| `em-organisms-qwen3.5-9b-full-sft-kl-bad-medical` | Qwen3.5-9B | Consejo medico danino + KL al base | Ajuste fino completo | Apache 2.0 | Publico en Hugging Face |
 
 No se dispone de datos comparativos de rendimiento frente a modelos de proposito general de tamano similar (por ejemplo, otros modelos de ~9.000 millones de parametros) en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos comparativos de rendimiento frente a modelos de proposito
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-bad-medical
+- Repositorio Hugging Face: https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-bad-medical
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Coleccion de organismos EM del proyecto: https://huggingface.co/collections/EdwardoSunny/em-organisms-confinement-and-methods-sweeps-start-here-6ab4ac2651ce93758e81ac38
 - Repositorio principal de metodos y campanas: https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b

@@ -50,10 +50,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jinstudio/stable-diffusion-2-1-unclip-small (este) | 869.517.764 (U-Net) | 77 tokens (CLIP) | openrail++ | HuggingFace, diffusers |
-| stabilityai/stable-diffusion-2-1 (base) | ~865M (U-Net) | 77 tokens (CLIP) | openrail++ | HuggingFace, diffusers |
-| stabilityai/stable-diffusion-2-1-unclip (full) | no disponible | 77 tokens (CLIP) | openrail++ | HuggingFace, diffusers |
-| Otros modelos de variación de imagen como Kandinsky 2.1 | no disponible | no disponible | Apache 2.0 | HuggingFace, diffusers |
+| Jinstudio/stable-diffusion-2-1-unclip-small (este) | 869.517.764 (U-Net) | 77 tokens (CLIP) | openrail++ | Hugging Face, diffusers |
+| stabilityai/stable-diffusion-2-1 (base) | ~865M (U-Net) | 77 tokens (CLIP) | openrail++ | Hugging Face, diffusers |
+| stabilityai/stable-diffusion-2-1-unclip (full) | no disponible | 77 tokens (CLIP) | openrail++ | Hugging Face, diffusers |
+| Otros modelos de variación de imagen como Kandinsky 2.1 | no disponible | no disponible | Apache 2.0 | Hugging Face, diffusers |
 
 No se dispone de datos comparativos de rendimiento (benchmarks) en la información proporcionada. La principal diferencia entre este modelo y la versión "full" de unCLIP radica en el tamaño del codificador de imagen CLIP utilizado, siendo la versión "small" más ligera.
 
@@ -71,7 +71,7 @@ No se dispone de datos comparativos de rendimiento (benchmarks) en la informaci�
 - No debe usarse para crear representaciones dañinas, discriminatorias, violentas o que violen derechos de autor.
 
 ## Enlaces
-- [HuggingFace: Jinstudio/stable-diffusion-2-1-unclip-small](https://huggingface.co/Jinstudio/stable-diffusion-2-1-unclip-small)
+- [Hugging Face: Jinstudio/stable-diffusion-2-1-unclip-small](https://huggingface.co/Jinstudio/stable-diffusion-2-1-unclip-small)
 - [Modelo original (deprecado): stabilityai/stable-diffusion-2-1-unclip-small](https://huggingface.co/stabilityai/stable-diffusion-2-1-unclip-small)
 - [Repositorio GitHub de Stability AI](https://github.com/Stability-AI/stablediffusion)
 - [Paper Latent Diffusion Models (arXiv:2112.10752)](https://arxiv.org/abs/2112.10752)

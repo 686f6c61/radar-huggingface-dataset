@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SmokeRelay-Zone-Router es un artefacto publicado en HuggingFace por el usuario SOTAagi2030 bajo el identificador `SOTAagi2030/SmokeRelay-Zone-Router`. Segun la unica frase descriptiva disponible en su model card, se trata de un "bundle complementario de dos modelos para el enrutado de penachos de humo (smoke-plume routing) destinado a unidades de retransmision offline de respuesta a incendios forestales". Esto sugiere un componente de tipo enrutador o clasificador de zonas, orientado a decidir que modelo o ruta de procesamiento se activa en funcion de la situacion del penacho, mas que un modelo generativo de proposito general.
+SmokeRelay-Zone-Router es un artefacto publicado en Hugging Face por el usuario SOTAagi2030 bajo el identificador `SOTAagi2030/SmokeRelay-Zone-Router`. Segun la unica frase descriptiva disponible en su model card, se trata de un "bundle complementario de dos modelos para el enrutado de penachos de humo (smoke-plume routing) destinado a unidades de retransmision offline de respuesta a incendios forestales". Esto sugiere un componente de tipo enrutador o clasificador de zonas, orientado a decidir que modelo o ruta de procesamiento se activa en funcion de la situacion del penacho, mas que un modelo generativo de proposito general.
 
-El repositorio esta etiquetado con `library_name: onnxruntime` y `license: apache-2.0`, lo que indica que los pesos se distribuyen en formato ONNX para ejecucion mediante ONNX Runtime. No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas ni pipeline de HuggingFace. El tamano declarado del repositorio es de 0.0 GB, lo que resulta llamativo y podria indicar un repositorio vacio, un fallo de medicion o un empaquetado con ficheros de peso de gran tamano no contabilizados en el momento de la consulta.
+El repositorio esta etiquetado con `library_name: onnxruntime` y `license: apache-2.0`, lo que indica que los pesos se distribuyen en formato ONNX para ejecucion mediante ONNX Runtime. No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas ni pipeline de Hugging Face. El tamano declarado del repositorio es de 0.0 GB, lo que resulta llamativo y podria indicar un repositorio vacio, un fallo de medicion o un empaquetado con ficheros de peso de gran tamano no contabilizados en el momento de la consulta.
 
 La relevancia de este modelo es dificil de valorar con la informacion disponible: acumula 0 descargas y 0 "likes", y las busquedas web realizadas no aportan documentacion tecnica adicional, ni paper, ni repositorio de codigo, ni demo. Toda la ficha que sigue se limita, por tanto, a lo que puede inferirse estrictamente de las etiquetas y de la unica linea de descripcion del autor, senalando de forma explicita cada dato ausente.
 
@@ -17,10 +17,10 @@ La relevancia de este modelo es dificil de valorar con la informacion disponible
 | Parametros activos | no aplica / no disponible (no se declara que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (la model card no declara idiomas; la ficha de HuggingFace tampoco los lista) |
+| Idiomas soportados | no disponible (la model card no declara idiomas; la ficha de Hugging Face tampoco los lista) |
 | Licencia | apache-2.0 |
 | Formato de pesos | ONNX (libreria declarada: onnxruntime) |
-| Tamano del repositorio | 0.0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun la ficha de Hugging Face) |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-09-29 |
 | Fecha de ultima actualizacion | 2026-09-29 |
@@ -83,12 +83,12 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Licencia: apache-2.0, permisiva y compatible con uso comercial, siempre que se respeten las condiciones de la licencia y se conserve el aviso correspondiente. No se documentan restricciones adicionales.
 - Advertencia critica para produccion: dado el contexto de aplicacion declarado (respuesta a incendios forestales), no deberia desplegarse en un sistema real de alerta o decision sin una validacion independiente, ya que un enrutado incorrecto podria tener consecuencias operativas graves.
 - La fecha de creacion y actualizacion (2026-09-29) figura como futura respecto a la fecha habitual de publicacion de contenidos, lo que refuerza la conveniencia de verificar la autenticidad y el estado real del repositorio.
-- Las busquedas web realizadas no devolvieron ningun paper, repositorio de codigo, blog ni demo asociados al modelo; los resultados obtenidos (paginas de perfil de HuggingFace, asistentes genericos y probadores de API) no aportan informacion tecnica relevante.
+- Las busquedas web realizadas no devolvieron ningun paper, repositorio de codigo, blog ni demo asociados al modelo; los resultados obtenidos (paginas de perfil de Hugging Face, asistentes genericos y probadores de API) no aportan informacion tecnica relevante.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SOTAagi2030/SmokeRelay-Zone-Router
-- Perfil del autor en HuggingFace: https://huggingface.co/SOTAagi2030
-- Datasets del autor en HuggingFace: https://huggingface.co/SOTAagi2030/datasets
+- Modelo en Hugging Face: https://huggingface.co/SOTAagi2030/SmokeRelay-Zone-Router
+- Perfil del autor en Hugging Face: https://huggingface.co/SOTAagi2030
+- Datasets del autor en Hugging Face: https://huggingface.co/SOTAagi2030/datasets
 
 No se han encontrado en la busqueda web papers, repositorios de codigo, blogs tecnicos ni demos adicionales asociados a este modelo.

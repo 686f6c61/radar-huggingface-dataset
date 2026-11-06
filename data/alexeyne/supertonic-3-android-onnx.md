@@ -102,8 +102,8 @@ Un RTF inferior a 1 indica sintesis mas rapida que el tiempo real. No se han pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlexeyNe/supertonic-3-android-onnx
-- Modelo base en HuggingFace: https://huggingface.co/Supertone/supertonic-3
+- Modelo en Hugging Face: https://huggingface.co/AlexeyNe/supertonic-3-android-onnx
+- Modelo base en Hugging Face: https://huggingface.co/Supertone/supertonic-3
 - Build de referencia de sherpa-onnx: https://huggingface.co/csukuangfj2/sherpa-onnx-supertonic-3-tts-int8-2026-05-11
 - Build comunitaria alternativa: https://huggingface.co/aoiandroid/supertonic-3/tree/main/onnx
 - Sitio oficial de Supertonic 3: https://supertonic3.github.io/

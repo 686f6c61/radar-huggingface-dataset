@@ -4,7 +4,7 @@
 
 REAX generalist m1 es una entrada del track generalista de REAX (subred 92 de Bittensor), construida a partir del modelo base `baselabs/mammoth-1`, que a su vez es un post-entrenamiento de Qwen3.5-27B. El modelo no se distribuye como un transformer causal convencional, sino en el llamado "layout conjunto" de REAX: una variante de `Qwen3_5Model` con atención completa no causal, un prompt fijo (`qwen.jinja`), un readout en la última posición con temperatura T = 2 y un conjunto cerrado de 255 códigos de respuesta. El autor (Zayaan) aplica dos fine-tunes LoRA de rango 16 sobre todas las proyecciones lineales y fusiona los resultados en un único checkpoint en bf16.
 
-La relevancia del modelo es acotada y muy específica: no es un modelo generativo de propósito general, sino un modelo de decisión que responde a preguntas de opción múltiple dentro del protocolo de evaluación de REAX. Su pipeline declarado en HuggingFace es `feature-extraction` y sus etiquetas incluyen `decision-model`, `reax` y `bittensor`, lo que confirma que su uso previsto es la participación en la competición de mineros de esa subred.
+La relevancia del modelo es acotada y muy específica: no es un modelo generativo de propósito general, sino un modelo de decisión que responde a preguntas de opción múltiple dentro del protocolo de evaluación de REAX. Su pipeline declarado en Hugging Face es `feature-extraction` y sus etiquetas incluyen `decision-model`, `reax` y `bittensor`, lo que confirma que su uso previsto es la participación en la competición de mineros de esa subred.
 
 Con 26.085.330.160 parámetros (unos 26,1 mil millones) y un repositorio de 52,2 GB, el modelo hereda toda la capacidad del backbone mammoth-1. La contribución propia del autor es la conversión al layout conjunto y un ajuste fino pequeño sobre datos públicos, con una mejora medida de aproximadamente 2,8 puntos en la métrica S del dev set público de REAX respecto al mismo backbone sin fine-tune.
 
@@ -71,9 +71,9 @@ El propio autor advierte que el dev set es público y pequeño, y que debe usars
 
 | Modelo | Parámetros | Contexto | Rendimiento en dev REAX (S) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zayaan/reax-generalist-m1 | 26,1 B | no disponible | 59,91 | MIT | HuggingFace |
-| baselabs/mammoth-1 (layout conjunto, sin fine-tune) | 26,1 B | no disponible | 57,15 | MIT | HuggingFace |
-| baselabs/mammoth-1 (ruta causal publicada) | 26,1 B | no disponible | 51,32 | MIT | HuggingFace |
+| Zayaan/reax-generalist-m1 | 26,1 B | no disponible | 59,91 | MIT | Hugging Face |
+| baselabs/mammoth-1 (layout conjunto, sin fine-tune) | 26,1 B | no disponible | 57,15 | MIT | Hugging Face |
+| baselabs/mammoth-1 (ruta causal publicada) | 26,1 B | no disponible | 51,32 | MIT | Hugging Face |
 
 No se dispone de datos de otras entradas del track generalista de REAX en la información proporcionada, por lo que no es posible comparar con competidores directos de la subred.
 
@@ -90,7 +90,7 @@ No se dispone de datos de otras entradas del track generalista de REAX en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zayaan/reax-generalist-m1
+- Modelo en Hugging Face: https://huggingface.co/Zayaan/reax-generalist-m1
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Revisión del modelo base: `03007ab3c4481bf01c71ef63adbbbc4b2093d71a`
 - REAX (Bittensor SN92): no disponible en la información proporcionada

@@ -80,7 +80,7 @@ La versión uncensored se diferencia del original únicamente en la eliminación
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cekal/GLM-5.3-Flash-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/cekal/GLM-5.3-Flash-Uncensored
 - Modelo original de Z.ai: https://huggingface.co/unsloth/GLM-5.3-Flash
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico de GLM-5: https://arxiv.org/abs/2602.15763

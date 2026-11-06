@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Choi-9079/matching-ablation` es un repositorio experimental publicado por el usuario Choi-9079 (Minsu Choi) en HuggingFace. No es un modelo entrenado ni un lanzamiento listo para produccion: se trata de una implementacion propia y compacta de arquitectura Poolformer orientada a tareas de *matching*, acompanada de un checkpoint de inicializacion valido unicamente para *smoke tests*. El propio autor indica en la model card que el proposito es la revision de codigo, las pruebas de humo y experimentos controlados de pequeno tamano.
+`Choi-9079/matching-ablation` es un repositorio experimental publicado por el usuario Choi-9079 (Minsu Choi) en Hugging Face. No es un modelo entrenado ni un lanzamiento listo para produccion: se trata de una implementacion propia y compacta de arquitectura Poolformer orientada a tareas de *matching*, acompanada de un checkpoint de inicializacion valido unicamente para *smoke tests*. El propio autor indica en la model card que el proposito es la revision de codigo, las pruebas de humo y experimentos controlados de pequeno tamano.
 
 La arquitectura sigue el patron MetaFormer: un *backbone* jerarquico en el que el mezclador de tokens es un pooling promedio en lugar de autoatencion. La configuracion declarada es de escala *base*, con atencion flash, fusion del tipo *concat mlp*, activacion GELU y normalizacion GroupNorm. Los metadatos de `model.safetensors` reportan 16.576 parametros, un orden de magnitud propio de una maqueta de pruebas, no de un modelo con capacidad funcional real.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Choi-9079/matching-ablation | 16.576 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, checkpoint de inicializacion |
+| Choi-9079/matching-ablation | 16.576 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, checkpoint de inicializacion |
 | PoolFormer (implementacion de referencia de la familia MetaFormer) | orden de millones (variantes S12 a M48) | no disponible | resultados publicados en el paper original de MetaFormer | no disponible en esta busqueda | repositorio oficial, no consultado en esta ficha |
 | Alternativas de *matching* multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,13 +87,13 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 - No hay longitud de contexto declarada ni idiomas declarados.
 - La licencia BSD-3-Clause permite uso comercial del codigo, pero los terminos de los datos externos deben revisarse por separado, tal como advierte la model card.
 - Para produccion: no apto. Cualquier resultado futuro obtenido con un checkpoint entrenado debe documentarse por separado de los valores por defecto que se distribuyen aqui.
-- La implementacion es personalizada, por lo que las APIs de carga automatica de HuggingFace no funcionaran sin un adaptador explicito.
+- La implementacion es personalizada, por lo que las APIs de carga automatica de Hugging Face no funcionaran sin un adaptador explicito.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (2026-10-02), lo que refuerza su caracter de artefacto recien generado y no validado por la comunidad.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Choi-9079/matching-ablation)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Choi-9079)
+- [Modelo en Hugging Face](https://huggingface.co/Choi-9079/matching-ablation)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Choi-9079)
 - [Modelos del autor](https://huggingface.co/Choi-9079/models)
 - [Ablation (artificial intelligence) - Wikipedia](https://en.wikipedia.org/wiki/Ablation_(artificial_intelligence))
 - [Figura sobre ablacion de objetivos de matching - ResearchGate](https://www.researchgate.net/figure/Ablation-on-Different-Matching-Objectives-This-figure-illustrates-the-contribution-of_fig2_397522519)

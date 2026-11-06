@@ -12,7 +12,7 @@ Por tanto, esta ficha documenta un artefacto de investigación reproducible, no 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (según tag de HuggingFace); no se detalla la topología en la model card |
+| Arquitectura | transformer (según tag de Hugging Face); no se detalla la topología en la model card |
 | Parametros totales | 49.600 (según safetensors) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta un artefacto de investigación reproducible, no 
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del tensor incluido; el único dato estructural es la etiqueta `transformer` en los tags de HuggingFace. No se documenta número de capas, dimensión oculta, número de cabezas, tipo de encoder visual ni mecanismo de fusión visión-lenguaje. Tampoco se indica si el checkpoint, de existir, es un resultado de preentrenamiento, un artefacto de prueba o un residuo de inicialización.
+La model card no describe la arquitectura interna del tensor incluido; el único dato estructural es la etiqueta `transformer` en los tags de Hugging Face. No se documenta número de capas, dimensión oculta, número de cabezas, tipo de encoder visual ni mecanismo de fusión visión-lenguaje. Tampoco se indica si el checkpoint, de existir, es un resultado de preentrenamiento, un artefacto de prueba o un residuo de inicialización.
 
 En cuanto a entrenamiento, el repositorio declara explícitamente que no hay checkpoint entrenado ni resultados experimentales. El contenido es un plan: se nombran benchmarks públicos apropiados a la tarea, se propone una comparación con baselines emparejados y se enumeran comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor establece que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto. No se mencionan volúmenes de tokens, composición del corpus, RLHF, DPO ni ninguna innovación técnica de inferencia (decodificación especulativa, atención lineal, etc.).
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no aplica; con 49.600 parámetros en safetensors, el tensor ocupa del orden de kilobytes en fp32 y no constituye un modelo funcional.
 - GPU recomendadas: no disponibles; no hay requisitos declarados por el autor.
 - Compatibilidad con GPU de consumo: el tensor cabe en cualquier GPU, pero no produce salidas útiles.
-- Opciones de despliegue: no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI; no hay pipeline declarado en HuggingFace.
+- Opciones de despliegue: no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI; no hay pipeline declarado en Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,14 +75,14 @@ No disponible. El repositorio no es comparable con modelos de visión-lenguaje e
 - No es un modelo utilizable: no hay checkpoint entrenado ni pipeline de inferencia; cualquier intento de uso generativo fallará o producirá salidas sin sentido.
 - El recuento de 49.600 parámetros es incompatible con un VLM funcional; no debe interpretarse como tamaño de un modelo de visión-lenguaje.
 - La model card advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
-- Riesgo de mala interpretación por parte de herramientas automáticas que indexan repositorios de HuggingFace y pueden catalogar este artefacto como modelo.
+- Riesgo de mala interpretación por parte de herramientas automáticas que indexan repositorios de Hugging Face y pueden catalogar este artefacto como modelo.
 - No se especifican idiomas, sesgos ni evaluación de alucinación porque no hay modelo que evaluar.
 - La licencia MIT cubre el repositorio, pero el propio autor advierte de que los términos de los datos de origen deben revisarse por separado si se usan datasets externos.
 - Ausencia de logs, semillas y versiones de dataset: no es posible reproducir ningún resultado a partir de este repositorio, algo que el autor reconoce y deja como trabajo futuro.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/daniilmikhailov30/homework-vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/daniilmikhailov30/homework-vision-language-pretraining
 - Artefacto principal citado en la model card: `review.md` (dentro del repositorio)
 - Documentación del repositorio: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada

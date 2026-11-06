@@ -75,7 +75,7 @@ No hay datos comparativos de rendimiento entre estas variantes, ya que ninguna h
 
 ## Enlaces
 
-- [HuggingFace: localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3](https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3)
+- [Hugging Face: localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3](https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3)
 - [Modelo similar: longtermrisk/Llama-3.1-8B-school-of-reward-hacks-sft-seed3](https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-sft-seed3)
 - [Modelo similar: longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3-epoch3)
 - [Llama 3.1 8B: VRAM, benchmarks y guía de configuración local](https://localaimaster.com/models/llama-3-1-8b)

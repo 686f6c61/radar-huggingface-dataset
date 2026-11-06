@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `betulclkk1212/korece-siber-zorbalik-filtresi` es un clasificador de texto basado en arquitectura BERT, publicado en HuggingFace Hub por el usuario `betulclkk1212`. Su nombre, en turco, se traduce como "filtro coreano de ciberacoso", lo que apunta a un sistema de deteccion de discurso abusivo orientado a texto en coreano, aunque el repositorio no declara idiomas soportados ni tarea concreta mas alla de la etiqueta generica `text-classification`.
+El modelo `betulclkk1212/korece-siber-zorbalik-filtresi` es un clasificador de texto basado en arquitectura BERT, publicado en Hugging Face Hub por el usuario `betulclkk1212`. Su nombre, en turco, se traduce como "filtro coreano de ciberacoso", lo que apunta a un sistema de deteccion de discurso abusivo orientado a texto en coreano, aunque el repositorio no declara idiomas soportados ni tarea concreta mas alla de la etiqueta generica `text-classification`.
 
-Se trata de un modelo encoder-only de 108.920.066 parametros (dato extraido de los pesos en safetensors) con un tamano de repositorio de 0.4 GB, coherente con pesos en fp32. La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no especifica datos de entrenamiento, conjunto de etiquetas, metricas ni licencia. Con 0 descargas y 0 likes en el momento de la consulta, es un artefacto sin validacion comunitaria.
+Se trata de un modelo encoder-only de 108.920.066 parametros (dato extraido de los pesos en safetensors) con un tamano de repositorio de 0.4 GB, coherente con pesos en fp32. La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no especifica datos de entrenamiento, conjunto de etiquetas, metricas ni licencia. Con 0 descargas y 0 likes en el momento de la consulta, es un artefacto sin validacion comunitaria.
 
 Su relevancia practica es limitada y condicionada: puede ser util como punto de partida para experimentar con filtrado de toxicidad en coreano, pero al carecer de documentacion de entrenamiento, evaluacion publicada y licencia explicita, no es apto para despliegue en produccion sin auditoria previa por parte del equipo que lo adopte.
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada y condicionada: puede ser util como punto de 
 
 ## Arquitectura y entrenamiento
 
-La unica informacion fiable sobre la arquitectura es la etiqueta `bert` de HuggingFace y el pipeline declarado `text-classification`, ademas de la clase de pesos safetensors compatible con `transformers` y con `text-embeddings-inference`. El recuento de 108.920.066 parametros es ligeramente inferior al de `bert-base-uncased` (109.482.240), lo que sugiere, como hipotesis no confirmada, un vocabulario algo mas reducido que los 30.522 tokens habituales y una capa de clasificacion sobre la representacion del token `[CLS]`.
+La unica informacion fiable sobre la arquitectura es la etiqueta `bert` de Hugging Face y el pipeline declarado `text-classification`, ademas de la clase de pesos safetensors compatible con `transformers` y con `text-embeddings-inference`. El recuento de 108.920.066 parametros es ligeramente inferior al de `bert-base-uncased` (109.482.240), lo que sugiere, como hipotesis no confirmada, un vocabulario algo mas reducido que los 30.522 tokens habituales y una capa de clasificacion sobre la representacion del token `[CLS]`.
 
 No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, el numero de etiquetas de salida, si se aplico ajuste fino supervisado sobre un checkpoint preentrenado multilingue o si se uso RLHF/DPO (procedimientos poco habituales en clasificadores encoder-only). Tampoco se documentan hiperparametros, regimen de precision ni infraestructura de computo. La referencia `arxiv:1910.09700` que aparece entre las etiquetas corresponde al articulo de Lacoste et al. sobre calculo de emisiones de carbono, citado por la plantilla estandar de model card; no es un paper de este modelo.
 
@@ -32,7 +32,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 - Clasificacion de texto: el pipeline declarado es `text-classification`, lo que implica asignacion de una o varias etiquetas a una secuencia de entrada. El conjunto de etiquetas no esta documentado.
 - Filtrado de contenido potencialmente abusivo: por el nombre del repositorio, la funcion prevista es detectar ciberacoso o discurso toxico en texto coreano, aunque no hay evidencia publicada de su comportamiento real.
 - Extraccion de embeddings de texto: al ser un encoder BERT, la torre puede usarse para generar representaciones vectoriales, con soporte declarado para `text-embeddings-inference`.
-- Procesamiento por lotes: compatible con `transformers` y con `endpoints_compatible`, por lo que puede servirse detras de la Inference API de HuggingFace.
+- Procesamiento por lotes: compatible con `transformers` y con `endpoints_compatible`, por lo que puede servirse detras de la Inference API de Hugging Face.
 - No dispone de generacion de texto, razonamiento, codigo, matematicas, vision, audio, modo "thinking", tool calling ni capacidades de agente. No se ha documentado soporte multilingue explicito.
 
 ## Casos de uso
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente, incluidas NVIDIA GTX 1650, RTX 3050, RTX 4090, A100 y H100. El modelo esta enormemente sobredimensionado para el hardware disponible en cualquier GPU moderna.
 - Ejecucion en CPU: viable para inferencia y para lotes moderados, dado el reducido numero de parametros; es probable que la latencia en CPU sea aceptable para moderacion en tiempo casi real, aunque no hay mediciones publicadas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en dispositivos de borde.
-- Opciones de despliegue: `transformers` (incluido `pipeline("text-classification")`), `text-embeddings-inference` para servir embeddings, HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` lo indica), y servidores de inferencia tipo TorchServe o FastAPI con ONNX Runtime. No se publican pesos GGUF, por lo que `llama.cpp` y Ollama no son aplicables sin conversion previa; `vLLM` no aplica a clasificadores encoder-only en su configuracion habitual.
+- Opciones de despliegue: `transformers` (incluido `pipeline("text-classification")`), `text-embeddings-inference` para servir embeddings, Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` lo indica), y servidores de inferencia tipo TorchServe o FastAPI con ONNX Runtime. No se publican pesos GGUF, por lo que `llama.cpp` y Ollama no son aplicables sin conversion previa; `vLLM` no aplica a clasificadores encoder-only en su configuracion habitual.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas ni especificaciones de hardware de entrenamiento que permitan inferir el rendimiento del autor.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ Los tres modelos de referencia cuentan con model card detallada, licencia explic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/betulclkk1212/korece-siber-zorbalik-filtresi
+- Modelo en Hugging Face: https://huggingface.co/betulclkk1212/korece-siber-zorbalik-filtresi
 - Paper referenciado en las etiquetas del repo (Lacoste et al., 2019, sobre emisiones de carbono, citado por la plantilla de model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML enlazada desde la plantilla: https://mlco2.github.io/impact
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron exclusivamente documentacion de ayuda de Google Maps y articulos de foros sin relacion con este repositorio, por lo que no se dispone de papers, blogs, demos ni repositorios adicionales.

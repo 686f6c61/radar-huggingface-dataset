@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zamzas/one` es un repositorio de modelo publicado en HuggingFace por el usuario `zamzas`. Segun los metadatos disponibles, se creo el 22 de enero de 2026 y se actualizo por ultima vez el 3 de noviembre de 2026. El unico tag asociado es `region:us`, que indica la region de almacenamiento del repositorio en la infraestructura de HuggingFace, no una caracteristica tecnica del modelo.
+`zamzas/one` es un repositorio de modelo publicado en Hugging Face por el usuario `zamzas`. Segun los metadatos disponibles, se creo el 22 de enero de 2026 y se actualizo por ultima vez el 3 de noviembre de 2026. El unico tag asociado es `region:us`, que indica la region de almacenamiento del repositorio en la infraestructura de Hugging Face, no una caracteristica tecnica del modelo.
 
 No se dispone de informacion publica sobre la arquitectura, el tamano, el contexto, los idiomas soportados ni la licencia del modelo. El repositorio no tiene descargas registradas y cuenta con 4 likes, lo que sugiere que se trata de un proyecto reciente o de baja difusion. Tampoco se ha especificado un pipeline de inferencia en los metadatos, por lo que no es posible confirmar la tarea para la que fue disenado (text generation, image-text-to-text, etc.).
 
@@ -75,5 +75,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zamzas/one
+- Repositorio en Hugging Face: https://huggingface.co/zamzas/one
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

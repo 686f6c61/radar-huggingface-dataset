@@ -92,7 +92,7 @@ La comparativa con modelos de otros autores no esta disponible en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace (GGUF): https://huggingface.co/lukey03/Qwen3.5-9B-abliterated-GGUF
+- Modelo en Hugging Face (GGUF): https://huggingface.co/lukey03/Qwen3.5-9B-abliterated-GGUF
 - Modelo safetensors: https://huggingface.co/lukey03/Qwen3.5-9B-abliterated
 - Version MLX 4-bit: https://huggingface.co/lukey03/Qwen3.5-9B-abliterated-MLX-4bit
 - Version MLX 8-bit: https://huggingface.co/lukey03/Qwen3.5-9B-abliterated-MLX-8bit

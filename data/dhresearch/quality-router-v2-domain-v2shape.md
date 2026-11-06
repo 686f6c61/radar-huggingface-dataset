@@ -21,7 +21,7 @@ La relevancia del modelo es acotada y muy específica: sirve como pieza auditabl
 | Licencia | other (la model card no incluye el texto de la licencia) |
 | Formato de pesos | joblib (deserialización con `joblib`; requiere que `outcome_router_data` sea importable) |
 | Librería declarada | sklearn |
-| Tamaño del repositorio | 0.0 GB (según metadatos de HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación y actualización | 2026-10-03 (creación 16:42:28 UTC, actualización 16:42:30 UTC) |
 | Entorno de reentrenamiento | python 3.14.2, scikit-learn 1.9.1, numpy 2.5.3, joblib 1.6.0, lightgbm 4.7.0, scipy 1.18.1 |
@@ -82,7 +82,7 @@ No se dispone de modelos comparables con datos publicados en la información pro
 
 | Modelo | Tarea | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dhresearch/quality-router-v2-domain-v2shape` | Enrutamiento de peticiones (predicción de ruta) | Clasificador scikit-learn/joblib (`RouteConditionedSuccessRouter`) | no aplica | other | HuggingFace, 0 descargas |
+| `dhresearch/quality-router-v2-domain-v2shape` | Enrutamiento de peticiones (predicción de ruta) | Clasificador scikit-learn/joblib (`RouteConditionedSuccessRouter`) | no aplica | other | Hugging Face, 0 descargas |
 | Q-Router | Evaluación de calidad de vídeo con enrutamiento entre expertos | Framework agéntico con VLM como routers | no disponible en la información recogida | no disponible | Paper (arXiv 2510.08789) y OpenReview |
 | Enrutadores de propósito general tipo pasarela (por ejemplo, OpenRouter) | Enrutamiento comercial entre modelos de lenguaje | No documentado en la información recogida | no aplica | no disponible | Servicio en producción |
 
@@ -103,7 +103,7 @@ No se dispone de modelos comparables con datos publicados en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhresearch/quality-router-v2-domain-v2shape
+- Modelo en Hugging Face: https://huggingface.co/dhresearch/quality-router-v2-domain-v2shape
 - Dataset asociado: https://huggingface.co/datasets/dhresearch/outcome-router-v2-main
 - Q-Router, paper en arXiv (enrutamiento entre modelos expertos para calidad de vídeo, relación temática pero no comparable): https://arxiv.org/html/2510.08789v1
 - Q-Router en OpenReview: https://openreview.net/forum?id=udq2BMdIFi

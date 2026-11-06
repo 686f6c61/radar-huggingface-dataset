@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kvskew-demo es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario amitrajula en HuggingFace. El modelo base, desarrollado por el equipo Qwen de Alibaba Cloud, es un transformer causal de 0,49 mil millones de parametros (0,36B sin contar embeddings) con arquitectura Qwen2, atención con RoPE, SwiGLU, RMSNorm, sesgo en QKV y embeddings atados. El repositorio, de caracter demostrativo, se distribuye bajo licencia Apache 2.0 y esta etiquetado para generacion de texto y chat en ingles.
+kvskew-demo es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario amitrajula en Hugging Face. El modelo base, desarrollado por el equipo Qwen de Alibaba Cloud, es un transformer causal de 0,49 mil millones de parametros (0,36B sin contar embeddings) con arquitectura Qwen2, atención con RoPE, SwiGLU, RMSNorm, sesgo en QKV y embeddings atados. El repositorio, de caracter demostrativo, se distribuye bajo licencia Apache 2.0 y esta etiquetado para generacion de texto y chat en ingles.
 
 El nombre "kvskew-demo" sugiere un experimento relacionado con el sesgo (skew) en las matrices key/value de la atencion, aunque la model card no documenta el procedimiento de ajuste ni los datos utilizados. El modelo hereda las capacidades del Qwen2.5-0.5B-Instruct original: contexto completo de 32.768 tokens, generacion de hasta 8.192 tokens, soporte de plantillas de chat y compatibilidad con la libreria transformers y text-generation-inference.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kvskew-demo (este) | 0,49B | 32.768 | Apache 2.0 | HuggingFace, 0 descargas | Ajuste demostrativo sin benchmarks |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con evaluacion publicada |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | HuggingFace | Misma familia, mayor capacidad |
-| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 | Llama 3.2 Community License | HuggingFace | Requiere aceptacion de licencia; contexto mayor |
+| kvskew-demo (este) | 0,49B | 32.768 | Apache 2.0 | Hugging Face, 0 descargas | Ajuste demostrativo sin benchmarks |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con evaluacion publicada |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | Hugging Face | Misma familia, mayor capacidad |
+| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 | Llama 3.2 Community License | Hugging Face | Requiere aceptacion de licencia; contexto mayor |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amitrajula/kvskew-demo
+- Repositorio Hugging Face: https://huggingface.co/amitrajula/kvskew-demo
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5

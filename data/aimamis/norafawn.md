@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Norafawn es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en HuggingFace. No se trata de un modelo autonomo, sino de un modulo de bajo rango que se aplica sobre el modelo base krea/Krea-2-Turbo para reproducir un personaje concreto caracterizado por pelo largo castano oscuro, ojos verde-grisaceos y piel palida. Su proposito es fijar la identidad visual de ese personaje en las generaciones, algo habitual en flujos de trabajo de ilustracion, comics y creacion de contenido.
+Norafawn es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en Hugging Face. No se trata de un modelo autonomo, sino de un modulo de bajo rango que se aplica sobre el modelo base krea/Krea-2-Turbo para reproducir un personaje concreto caracterizado por pelo largo castano oscuro, ojos verde-grisaceos y piel palida. Su proposito es fijar la identidad visual de ese personaje en las generaciones, algo habitual en flujos de trabajo de ilustracion, comics y creacion de contenido.
 
 El repositorio ocupa aproximadamente 0,5 GB y se distribuye con la libreria diffusers, bajo licencia openrail++. El adaptador se activa mediante las palabras clave Norafawn, Long dark brunette hair, green-grey eyes y pale skin, que el autor define como disparadores obligatorios. No se especifican parametros, rango del adaptador ni detalles del entrenamiento en la informacion disponible.
 
@@ -23,8 +23,8 @@ Su relevancia es limitada y muy nicho: se publico sin descargas ni interacciones
 | Modelo base | krea/Krea-2-Turbo |
 | Palabras de activacion | Norafawn, Long dark brunette hair, green-grey eyes, pale skin |
 | Tamano del repositorio | 0,5 GB |
-| Fecha de creacion (segun HuggingFace) | 13 de octubre de 2026 |
-| Ultima actualizacion (segun HuggingFace) | 13 de octubre de 2026 |
+| Fecha de creacion (segun Hugging Face) | 13 de octubre de 2026 |
+| Ultima actualizacion (segun Hugging Face) | 13 de octubre de 2026 |
 | Descargas | 0 |
 | Likes | 0 |
 
@@ -76,7 +76,7 @@ No hay datos publicos suficientes para una comparacion cuantitativa. La tabla re
 
 | Modelo | Tipo | Modelo base | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Norafawn (AiMamis) | LoRA de personaje text-to-image | krea/Krea-2-Turbo | openrail++ | HuggingFace, 0 descargas, 0.5 GB |
+| Norafawn (AiMamis) | LoRA de personaje text-to-image | krea/Krea-2-Turbo | openrail++ | Hugging Face, 0 descargas, 0.5 GB |
 | Adaptadores LoRA de personaje sobre otros backbones (por ejemplo, familias SDXL o FLUX.1) | LoRA de personaje text-to-image | Distintos segun el caso | Variable | No comparable directamente: los pesos no son intercambiables entre backbones |
 | Modelos base text-to-image genericos | Modelo completo | No aplica | Variable | No comparable: funcionalidad distinta |
 
@@ -92,10 +92,10 @@ Cualquier comparacion de rendimiento exigiria evaluar el adaptador sobre el mism
 - Idioma: las palabras de activacion estan en ingles; el comportamiento con prompts en castellano no esta documentado.
 - Licencia openrail++: permite uso comercial, pero incorpora restricciones de uso aceptable y obligaciones de atribucion y redistribucion. Es responsabilidad del usuario revisar el texto completo antes de desplegarlo en produccion.
 - Derechos sobre la imagen de referencia: si el personaje deriva de una persona real o de una obra protegida, la licencia del adaptador no cubre esos derechos. Se debe verificar la procedencia del material de entrenamiento antes de cualquier uso publico o comercial.
-- Anomalia en los metadatos: las fechas de creacion y actualizacion indicadas por HuggingFace (13 de octubre de 2026) son posteriores a las de esta revision, lo que sugiere un error de registro o una fecha programada.
+- Anomalia en los metadatos: las fechas de creacion y actualizacion indicadas por Hugging Face (13 de octubre de 2026) son posteriores a las de esta revision, lo que sugiere un error de registro o una fecha programada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Norafawn
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Norafawn
 - Archivos y versiones: https://huggingface.co/AiMamis/Norafawn/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo

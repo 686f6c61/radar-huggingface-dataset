@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matteorom/blip-baseline` es un prototipo de investigación publicado en HuggingFace por el usuario matteorom, etiquetado como BLIP (Bootstrapping Language-Image Pre-training) orientado a tareas contrastivas. Se trata de un repositorio de tipo andamiaje: la model card describe una implementación personalizada de BLIP a escala "giant" con atención lineal, fusión Tucker, activación GELU/Tanh y normalización por batch normalization, pero el propio autor aclara que `model.safetensors` es únicamente un checkpoint de inicialización para pruebas de humo, no un modelo entrenado ni evaluado.
+`matteorom/blip-baseline` es un prototipo de investigación publicado en Hugging Face por el usuario matteorom, etiquetado como BLIP (Bootstrapping Language-Image Pre-training) orientado a tareas contrastivas. Se trata de un repositorio de tipo andamiaje: la model card describe una implementación personalizada de BLIP a escala "giant" con atención lineal, fusión Tucker, activación GELU/Tanh y normalización por batch normalization, pero el propio autor aclara que `model.safetensors` es únicamente un checkpoint de inicialización para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El dato objetivo más relevante es el recuento real de safetensors: 24.832 parámetros totales. Esta cifra es incompatible con la etiqueta "giant" que figura en la model card y confirma que se trata de un esqueleto de código mínimo, no de un modelo utilizable. El repositorio ocupa 0.0 GB, no declara pipeline y no registra descargas ni interacciones, lo que refuerza su naturaleza experimental y no publicada.
 
@@ -68,7 +68,7 @@ El coste real de cómputo estaría en el entrenamiento que el usuario decida eje
 
 | Modelo | Parametros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| matteorom/blip-baseline | 24.832 | no disponible | apache-2.0 | Checkpoint de inicialización, sin entrenar | HuggingFace, 0 descargas |
+| matteorom/blip-baseline | 24.832 | no disponible | apache-2.0 | Checkpoint de inicialización, sin entrenar | Hugging Face, 0 descargas |
 | BLIP original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible | Modelo entrenado y publicado | Referencia pública de la familia BLIP |
 | Alternativas multimodales contrastivas de gran escala | no disponible | no disponible | no disponible | Entrenadas | no disponible |
 
@@ -86,5 +86,5 @@ No es posible establecer una comparativa cuantitativa rigurosa: este repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matteorom/blip-baseline
+- Repositorio en Hugging Face: https://huggingface.co/matteorom/blip-baseline
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

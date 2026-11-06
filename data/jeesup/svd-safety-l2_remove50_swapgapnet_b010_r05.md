@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | ASR medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapgapnet_b010_r05 | 6.738.415.616 (fraccion densa efectiva 0,4999) | No disponible (base: 4.096 tokens) | AdvBench 0,3250 / StrongREJECT 0,3259 | Llama 2 Community License | Publico en HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | No disponible en la informacion proporcionada (del orden de 7.000 millones) | No disponible en la informacion proporcionada | No disponible; la model card solo indica cualitativamente que la compresion eleva la tasa de exito de ataque | Llama 2 Community License | Publico en HuggingFace |
+| svd-safety-l2_remove50_swapgapnet_b010_r05 | 6.738.415.616 (fraccion densa efectiva 0,4999) | No disponible (base: 4.096 tokens) | AdvBench 0,3250 / StrongREJECT 0,3259 | Llama 2 Community License | Publico en Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | No disponible en la informacion proporcionada (del orden de 7.000 millones) | No disponible en la informacion proporcionada | No disponible; la model card solo indica cualitativamente que la compresion eleva la tasa de exito de ataque | Llama 2 Community License | Publico en Hugging Face |
 | Otros checkpoints comprimidos con SVD-LLM | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de alternativas comparables en la informacion proporcionada, por lo que la comparacion cuantitativa con otros modelos de la misma categoria no es posible.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r05
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos correspondian a noticias sobre elecciones municipales en Grossenkneten (Alemania) y no guardan ninguna relacion con el modelo.
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este checkpoint o al estudio del que forma parte.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin T for Retrieval es un repositorio experimental publicado por el usuario polinaromanov en HuggingFace, cuyo objetivo declarado es servir de base de codigo para tareas de retrieval (recuperacion) con una arquitectura Swin Transformer en escala tiny. No se trata de un modelo entrenado ni validado: la propia model card indica explicitamente que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio contiene principalmente el artefacto `pipeline.py`, junto con `config.json`, `training_args.json` y el checkpoint de inicializacion.
+Swin T for Retrieval es un repositorio experimental publicado por el usuario polinaromanov en Hugging Face, cuyo objetivo declarado es servir de base de codigo para tareas de retrieval (recuperacion) con una arquitectura Swin Transformer en escala tiny. No se trata de un modelo entrenado ni validado: la propia model card indica explicitamente que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio contiene principalmente el artefacto `pipeline.py`, junto con `config.json`, `training_args.json` y el checkpoint de inicializacion.
 
 El problema que aborda es de tipo metodologico: ofrecer un punto de partida manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo en tareas de retrieval. La configuracion por defecto usa el optimizador Adafactor con un scheduler coseno, valores que la propia documentacion describe como puntos de partida del script y no como evidencia de una ejecucion completada. Segun los metadatos de safetensors, el checkpoint contiene 49.600 parametros totales, una cifra muy inferior a la de un Swin-T convencional, lo que refuerza su naturaleza de inicializacion minima.
 
@@ -35,7 +35,7 @@ No hay evidencia de entrenamiento: la model card afirma que el checkpoint de ini
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles (no se declara ningun idioma).
-- Capacidades especiales (modo thinking, vision, audio, generacion de texto): no disponibles. No hay evidencia de que el modelo genere texto; el pipeline asignado en HuggingFace es "no disponible".
+- Capacidades especiales (modo thinking, vision, audio, generacion de texto): no disponibles. No hay evidencia de que el modelo genere texto; el pipeline asignado en Hugging Face es "no disponible".
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| polinaromanov/swin-t-finetuned | 49.600 (checkpoint de inicializacion) | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas |
+| polinaromanov/swin-t-finetuned | 49.600 (checkpoint de inicializacion) | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas |
 | Swin-T original (Microsoft) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | licencia original del proyecto Swin | ampliamente disponible |
 | Alternativas de retrieval texto-imagen (por ejemplo, familia CLIP) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | variable segun variante | ampliamente disponibles |
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/polinaromanov/swin-t-finetuned
+- Hugging Face: https://huggingface.co/polinaromanov/swin-t-finetuned
 - Repositorio Git asociado: no disponible
 - Paper: no disponible
 - Blog o demo: no disponible

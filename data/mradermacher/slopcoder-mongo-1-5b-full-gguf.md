@@ -97,7 +97,7 @@ La diferencia principal frente a las alternativas es la especializacion vertical
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/SlopCoder-Mongo-1.5B-full-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/SlopCoder-Mongo-1.5B-full-GGUF
 - Modelo base: https://huggingface.co/esilva/SlopCoder-Mongo-1.5B-full
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#SlopCoder-Mongo-1.5B-full-GGUF
 - Solicitudes de cuantizacion y preguntas frecuentes: https://huggingface.co/mradermacher/model_requests

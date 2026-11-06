@@ -83,6 +83,6 @@ La comparativa se limita al modelo upstream porque la informacion proporcionada 
 - Repositorio de esta ficha: https://huggingface.co/tryambientai/qwen3-0.6b-gguf
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3-0.6B-GGUF
 - Revision upstream referenciada: 23749fefcc72300e3a2ad315e1317431b06b590a
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - llama.cpp (backend GGUF): https://github.com/ggerganov/llama.cpp
 - Ollama (despliegue GGUF): https://ollama.com

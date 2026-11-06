@@ -29,7 +29,7 @@ No se proporcionan detalles sobre el método de entrenamiento específico, los d
 
 - Eliminación selectiva de información visual: el modelo puede olvidar datos específicos asociados a imágenes (por ejemplo, caras, objetos o escenas concretas) tras aplicar los checkpoints.
 - Preservación del resto de capacidades: al modificar solo el vision encoder, se espera que el LLM mantenga sus habilidades de generación de texto y razonamiento.
-- Compatibilidad con LLaVA-1.5-7B: los checkpoints están diseñados para integrarse con el modelo base de HuggingFace `llava-hf/llava-1.5-7b-hf`.
+- Compatibilidad con LLaVA-1.5-7B: los checkpoints están diseñados para integrarse con el modelo base de Hugging Face `llava-hf/llava-1.5-7b-hf`.
 - Soporte para dos benchmarks de unlearning: MLLMU-Bench y ReMem, con diferentes niveles de olvido.
 - No incluye capacidades de tool calling, agentes ni razonamiento multi-paso, ya que no es un modelo autónomo sino un conjunto de pesos para modificar un modelo existente.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Para ejecutar el modelo base se necesitan aproximadamente 14 GB de VRAM en FP16 (7B parámetros). Con cuantización a 8 bits se puede reducir a unos 8 GB, y a 4 bits a unos 5 GB.
 - GPUs recomendadas: NVIDIA RTX 3090/4090 (24 GB VRAM) para FP16, o GPUs con al menos 8 GB para cuantización.
 - El proceso de unlearning (entrenamiento de los checkpoints) requiere más recursos, pero no se especifican en el repositorio.
-- Opciones de despliegue: se puede usar con HuggingFace Transformers, vLLM, o llama.cpp (si se convierte a GGUF). Para el unlearning, se necesita un framework de entrenamiento como PyTorch.
+- Opciones de despliegue: se puede usar con Hugging Face Transformers, vLLM, o llama.cpp (si se convierte a GGUF). Para el unlearning, se necesita un framework de entrenamiento como PyTorch.
 
 ## Comparativa con modelos similares
 
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en el repositorio. Exist
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WonjunLee/AIM_MLLM_Unlearning
+- Repositorio Hugging Face: https://huggingface.co/WonjunLee/AIM_MLLM_Unlearning
 - Página personal del autor: https://wonjuun.github.io/
 - Paper "Rethinking Machine Unlearning for Large Language Models": https://arxiv.org/abs/2402.08787
 - Paper "Large Language Model Unlearning": https://arxiv.org/abs/2310.10683

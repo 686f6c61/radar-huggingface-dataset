@@ -81,7 +81,7 @@ El modelo se distingue de las alternativas por su especialización explícita en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mazodan/Omnivoice-filipino-LoRA-Merged
+- Hugging Face: https://huggingface.co/mazodan/Omnivoice-filipino-LoRA-Merged
 - Repositorio oficial de OmniVoice: https://github.com/k2-fsa/OmniVoice/
 - Paper de OmniVoice: https://arxiv.org/abs/2604.00688
 - Kit de herramientas de OmniVoice: https://github.com/kizuna-intelligence/omnivoice-kit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sportsgirl/pic04` es un repositorio alojado en HuggingFace por el usuario `sportsgirl`. La informacion publica disponible se limita a los metadatos del repositorio: 25,9 GB de tamano, cero descargas, un "like" y la etiqueta `region:us`. No se ha publicado ni pipeline, ni licencia, ni idiomas soportados, ni descripcion del contenido.
+`sportsgirl/pic04` es un repositorio alojado en Hugging Face por el usuario `sportsgirl`. La informacion publica disponible se limita a los metadatos del repositorio: 25,9 GB de tamano, cero descargas, un "like" y la etiqueta `region:us`. No se ha publicado ni pipeline, ni licencia, ni idiomas soportados, ni descripcion del contenido.
 
 No existe documentacion tecnica asociada al repositorio, no se ha identificado una model card y la busqueda web realizada no ha devuelto ningun resultado relevante sobre el artefacto (los resultados obtenidos corresponden a paginas corporativas de Microsoft sin relacion alguna con el modelo). En consecuencia, no es posible confirmar si se trata de un modelo de lenguaje, un modelo de difusion, un checkpoint de ajuste fino, un conjunto de pesos cuantizados o cualquier otro tipo de artefacto.
 
@@ -69,7 +69,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sportsgirl/pic04 | no disponible | no disponible | no disponible | no disponible | repositorio HuggingFace, 25,9 GB |
+| sportsgirl/pic04 | no disponible | no disponible | no disponible | no disponible | repositorio Hugging Face, 25,9 GB |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sportsgirl/pic04
+- Repositorio en Hugging Face: https://huggingface.co/sportsgirl/pic04
 - Paper: no disponible
 - Blog o anuncio tecnico: no disponible
 - Repositorio de codigo: no disponible

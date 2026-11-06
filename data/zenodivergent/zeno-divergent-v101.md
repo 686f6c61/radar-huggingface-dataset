@@ -6,7 +6,7 @@ Zeno v1.01 es un modelo de meta-forecasting desarrollado por ZenoDivergent que a
 
 La version 1.01 sustituye a la 0.98 como preview publicada y se entrena de forma conjunta sobre 12 dominios: estado del mar, demanda energetica (NESO), gripe (CDC FluSight), mercados cross-venue, cripto (BTC/ETH horario), meteorologia por ensembles, mercados de prediccion, RSV, ForecastBench, COVID-19, encuesta de la Reserva Federal de Filadelfia y encuesta del BCE a analistas profesionales. El modelo no solo emite una respuesta corregida: tambien puede "abstenerse" (devolver la respuesta del consenso) y genera cabeceras de alerta temprana a nivel de miembro, familia y panel.
 
-Es relevante porque propone un enfoque de "modelo de modelos" evaluado con un protocolo estricto por campo (semanas no vistas, intervalos de confianza, veredicto explicito de ganancia, empate o perdida). El repositorio de HuggingFace tiene 0 descargas y 0 likes en el momento de la consulta, y el tamano del repo es de 0.0 GB, por lo que los pesos no parecen estar publicados en el hub.
+Es relevante porque propone un enfoque de "modelo de modelos" evaluado con un protocolo estricto por campo (semanas no vistas, intervalos de confianza, veredicto explicito de ganancia, empate o perdida). El repositorio de Hugging Face tiene 0 descargas y 0 likes en el momento de la consulta, y el tamano del repo es de 0.0 GB, por lo que los pesos no parecen estar publicados en el hub.
 
 ## Especificaciones tecnicas
 
@@ -114,4 +114,4 @@ No se dispone de informacion sobre modelos comparables de terceros en la documen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZenoDivergent/zeno-divergent-v101
+- Hugging Face: https://huggingface.co/ZenoDivergent/zeno-divergent-v101

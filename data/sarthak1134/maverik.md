@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MAVERIK es un modelo publicado en HuggingFace por el usuario Sarthak1134, etiquetado con el pipeline `image-text-to-video` y licencia MIT. La información disponible es extremadamente limitada: no se ha publicado una descripción técnica del modelo, ni se especifican sus parámetros, arquitectura o capacidades reales. El modelo se declara como un ajuste fino del modelo base Kwaipilot/KAT-Coder-V2.5-Dev, con el dataset `openbmb/Ultra-FineWeb-L1` como referencia, y soporte declarado para inglés.
+MAVERIK es un modelo publicado en Hugging Face por el usuario Sarthak1134, etiquetado con el pipeline `image-text-to-video` y licencia MIT. La información disponible es extremadamente limitada: no se ha publicado una descripción técnica del modelo, ni se especifican sus parámetros, arquitectura o capacidades reales. El modelo se declara como un ajuste fino del modelo base Kwaipilot/KAT-Coder-V2.5-Dev, con el dataset `openbmb/Ultra-FineWeb-L1` como referencia, y soporte declarado para inglés.
 
 La relevancia del modelo es incierta en el momento de redactar esta ficha. No existen resultados de benchmarks, demos, papers ni documentación adicional que permitan evaluar su rendimiento. Aunque el tag de pipeline sugiere generación de vídeo a partir de texto e imagen, no hay información que confirme esta capacidad ni que aclare la relación entre el modelo base declarado (orientado a código, según su nombre) y la tarea de vídeo. Cualquier uso en producción debería considerarse experimental y requeriría una validación exhaustiva previa.
 
@@ -56,13 +56,13 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni las capacidades de
 - La discrepancia entre el pipeline declarado (`image-text-to-video`) y el modelo base de codificación sugiere una posible inconsistencia en la documentación.
 - No se ha validado el rendimiento del modelo en ninguna tarea concreta. Existe un riesgo alto de que el modelo no funcione como se espera.
 - La licencia MIT permite uso comercial y modificación, pero no garantiza ningún tipo de soporte ni mantenimiento por parte del autor.
-- El modelo tiene cero descargas y cero likes en HuggingFace, lo que indica una adopción nula y una falta de validación por parte de la comunidad.
+- El modelo tiene cero descargas y cero likes en Hugging Face, lo que indica una adopción nula y una falta de validación por parte de la comunidad.
 - No se ha documentado el riesgo de sesgos, alucinaciones o limitaciones de contexto.
 - Cualquier uso en producción debería considerarse no recomendado hasta que se publique documentación técnica y evaluaciones rigurosas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sarthak1134/MAVERIK
+- Hugging Face: https://huggingface.co/Sarthak1134/MAVERIK
 - Modelo base declarado: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Dataset declarado: https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L1
 

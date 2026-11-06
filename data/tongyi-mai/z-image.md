@@ -71,7 +71,7 @@ No hay datos comparativos oficiales en la información proporcionada. Sin embarg
 
 ## Enlaces
 
-- HuggingFace: [Tongyi-MAI/Z-Image](https://huggingface.co/Tongyi-MAI/Z-Image)
+- Hugging Face: [Tongyi-MAI/Z-Image](https://huggingface.co/Tongyi-MAI/Z-Image)
 - GitHub: [Tongyi-MAI/Z-Image](https://github.com/Tongyi-MAI/Z-Image)
 - Paper (arXiv): [arXiv:2511.22699](https://arxiv.org/abs/2511.22699)
 - Blog oficial: [Z-Image Blog](https://tongyi-mai.github.io/Z-Image-blog/)

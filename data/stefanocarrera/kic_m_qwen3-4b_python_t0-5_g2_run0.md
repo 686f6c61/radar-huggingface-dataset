@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kic_M_Qwen3-4B_python_t0.5_g2_run0 es un ajuste fino (fine-tuning) del modelo base Qwen3-4B-Base, publicado por el usuario stefanocarrera en HuggingFace. Se trata de un modelo derivado de la familia Qwen3 desarrollada por Alibaba, en su variante Base de 4.000 millones de parametros, y ha sido entrenado mediante la libreria Unsloth, que acelera el proceso de fine-tuning aproximadamente 2x. El nombre del repositorio sugiere un entrenamiento orientado a Python con temperatura 0.5 y un factor de generacion g2, aunque la model card no documenta estos parametros de forma explicita.
+kic_M_Qwen3-4B_python_t0.5_g2_run0 es un ajuste fino (fine-tuning) del modelo base Qwen3-4B-Base, publicado por el usuario stefanocarrera en Hugging Face. Se trata de un modelo derivado de la familia Qwen3 desarrollada por Alibaba, en su variante Base de 4.000 millones de parametros, y ha sido entrenado mediante la libreria Unsloth, que acelera el proceso de fine-tuning aproximadamente 2x. El nombre del repositorio sugiere un entrenamiento orientado a Python con temperatura 0.5 y un factor de generacion g2, aunque la model card no documenta estos parametros de forma explicita.
 
 El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado unicamente para el idioma ingles. El repositorio tiene un tamano de 0.1 GB, lo que indica que los pesos se almacenan probablemente en formato cuantizado de 4 bits (el modelo base es la version bnb-4bit de Unsloth). No se han publicado resultados de benchmarks, casos de uso documentados ni detalles sobre el dataset de entrenamiento en la informacion disponible.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kic_M_Qwen3-4B_python_t0.5_g2_run0 | 4B (aprox.) | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3-4B-Base (original) | 4B | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-3B | 3B | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B | 3B | no disponible en esta ficha | Llama 3.2 Community License | HuggingFace |
+| kic_M_Qwen3-4B_python_t0.5_g2_run0 | 4B (aprox.) | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3-4B-Base (original) | 4B | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-3B | 3B | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B | 3B | no disponible en esta ficha | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa fiable.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g2_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g2_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

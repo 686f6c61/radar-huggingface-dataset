@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `quachquesh2/qwen3-asr-vietnamese-best-lora` es un repositorio alojado en HuggingFace que, por su nombre, parece ser un adaptador LoRA (Low-Rank Adaptation) orientado a reconocimiento automático del habla (ASR) en vietnamita, presumiblemente basado en el modelo Qwen3. Sin embargo, la información disponible es extremadamente limitada: la model card es una plantilla genérica sin rellenar, no se especifican licencia, idiomas, arquitectura ni datos de entrenamiento. El repositorio tiene un tamaño de 0,2 GB y fue creado en agosto de 2026, pero no cuenta con descargas ni valoraciones.
+El modelo `quachquesh2/qwen3-asr-vietnamese-best-lora` es un repositorio alojado en Hugging Face que, por su nombre, parece ser un adaptador LoRA (Low-Rank Adaptation) orientado a reconocimiento automático del habla (ASR) en vietnamita, presumiblemente basado en el modelo Qwen3. Sin embargo, la información disponible es extremadamente limitada: la model card es una plantilla genérica sin rellenar, no se especifican licencia, idiomas, arquitectura ni datos de entrenamiento. El repositorio tiene un tamaño de 0,2 GB y fue creado en agosto de 2026, pero no cuenta con descargas ni valoraciones.
 
 Dada la ausencia de documentación técnica, cualquier afirmación sobre sus capacidades reales sería especulativa. Esta ficha se limita a reflejar los datos disponibles y a señalar las carencias de información, advirtiendo de que el modelo no está listo para uso en producción sin una evaluación previa.
 
@@ -68,4 +68,4 @@ No disponible. No se ha identificado información sobre modelos comparables en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/quachquesh2/qwen3-asr-vietnamese-best-lora
+- Repositorio en Hugging Face: https://huggingface.co/quachquesh2/qwen3-asr-vietnamese-best-lora

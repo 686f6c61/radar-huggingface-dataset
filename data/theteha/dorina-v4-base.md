@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
 | Dorina-V4 3B Crystal Base | 144,7M | 2.048 | tr, en | Apache 2.0 | PyTorch (.pt) | Entrenado desde cero, sin benchmarks publicados |
-| SmolLM-135M (HuggingFace) | 135M | 2.048 | en (principalmente) | Apache 2.0 | safetensors, GGUF | Modelo base con amplia adopcion y soporte en frameworks |
+| SmolLM-135M (Hugging Face) | 135M | 2.048 | en (principalmente) | Apache 2.0 | safetensors, GGUF | Modelo base con amplia adopcion y soporte en frameworks |
 | Qwen2.5-0.5B | 494M | 32.768 | multilingue | Apache 2.0 | safetensors, GGUF | Mayor tamano y contexto, ecosistema maduro |
 | TinyLlama-1.1B | 1,1B | 2.048 | en | Apache 2.0 | safetensors, GGUF | Mayor capacidad pero mas coste computacional |
 
@@ -85,5 +85,5 @@ La comparacion con SmolLM-135M es la mas directa por tamano y contexto; sin emba
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/theteha/dorina-v4-base
+- Hugging Face: https://huggingface.co/theteha/dorina-v4-base
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

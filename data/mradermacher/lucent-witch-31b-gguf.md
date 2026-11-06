@@ -100,7 +100,7 @@ Comparativa con modelos de terceros (por ejemplo, otros merges de roleplay de ~3
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Lucent-Witch-31B-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Lucent-Witch-31B-GGUF
 - Modelo base: https://huggingface.co/Cyclone-Labs/Lucent-Witch-31B
 - Cuantizaciones ponderadas (imatrix): https://huggingface.co/mradermacher/Lucent-Witch-31B-i1-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Lucent-Witch-31B-GGUF

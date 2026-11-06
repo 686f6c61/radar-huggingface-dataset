@@ -83,7 +83,7 @@ La comparación directa no es posible porque este repositorio contiene checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-owt-d768-gammasweep
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-owt-d768-gammasweep
 - Modelo base Fock-PARFLM v2.1: https://huggingface.co/dimitarpg13/semsimula-fock-parflm
 - Variante con potencial estructurado: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-structured-vtheta
 - Modelo hermano totalmente entrenado (d=384, 27.23 PPL): https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta-openwebtext

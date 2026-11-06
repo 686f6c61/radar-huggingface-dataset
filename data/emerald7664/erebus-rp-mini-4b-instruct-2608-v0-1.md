@@ -87,7 +87,7 @@ Nota: no se dispone de datos comparativos detallados (contexto, benchmarks) de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Emerald7664/Erebus-RP-Mini-4B-Instruct-2608-v0.1
+- Modelo en Hugging Face: https://huggingface.co/Emerald7664/Erebus-RP-Mini-4B-Instruct-2608-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Benchmark citado en la model card: caliperbench.com (resultados ERP, categoria ≤9B)
 - No se han encontrado enlaces a paper, repositorio de codigo o demo en la informacion disponible.

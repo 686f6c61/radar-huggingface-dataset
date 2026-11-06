@@ -17,7 +17,7 @@ Su relevancia es practica: los pipelines de RAG en produccion necesitan modelos 
 | Parametros activos | No aplica (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | GGUF cuantizado; los niveles concretos incluidos en el repositorio no se detallan en la informacion disponible |
-| Idiomas soportados | No disponible (el campo de idiomas de HuggingFace figura sin datos) |
+| Idiomas soportados | No disponible (el campo de idiomas de Hugging Face figura sin datos) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF |
 | Dimension del embedding | No disponible |
@@ -91,7 +91,7 @@ Comparativas con otras familias de modelos de embeddings: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ggml-org/embeddinggemma-2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ggml-org/embeddinggemma-2-GGUF
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Herramienta de conversion: https://github.com/ggml-org/convert
 - Aplicacion de ejecucion: https://llama.app

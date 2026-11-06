@@ -63,7 +63,7 @@ No se dispone de información sobre modelos comparables específicos. La tarea S
 
 ## Enlaces
 
-- [HuggingFace - ShindeGaurav-2207/SQL2NL](https://huggingface.co/ShindeGaurav-2207/SQL2NL)
+- [Hugging Face - ShindeGaurav-2207/SQL2NL](https://huggingface.co/ShindeGaurav-2207/SQL2NL)
 - [GitHub - tyfann/sql2nl](https://github.com/tyfann/sql2nl)
 - [arXiv - Evaluating NL2SQL via SQL2NL](https://arxiv.org/abs/2509.04657)
 - [alphaXiv - Evaluating NL2SQL via SQL2NL](https://www.alphaxiv.org/overview/2509.04657v1)

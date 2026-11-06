@@ -81,8 +81,8 @@ El autor senala que AeroPilot-v1 es globalmente mas confiado, por lo que a umbra
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AeroPilot-v1 | Detector open-vocabulary ajustado a vista aerea | no disponible | no aplica | 91,7% recall HERIDAL (2x2); 94,4% HIT-UAV | SAM License | HuggingFace, descarga sin gate |
-| facebook/sam3.1 | Detector/segmentador open-vocabulary general | no disponible | no aplica | 65,0% recall HERIDAL; 17,5% HIT-UAV | SAM License | HuggingFace (modelo base) |
+| AeroPilot-v1 | Detector open-vocabulary ajustado a vista aerea | no disponible | no aplica | 91,7% recall HERIDAL (2x2); 94,4% HIT-UAV | SAM License | Hugging Face, descarga sin gate |
+| facebook/sam3.1 | Detector/segmentador open-vocabulary general | no disponible | no aplica | 65,0% recall HERIDAL; 17,5% HIT-UAV | SAM License | Hugging Face (modelo base) |
 | Detectores SAR especificos (p. ej. entrenados sobre HERIDAL) | Deteccion supervisada cerrada | no disponible | no aplica | no disponible | variable | variable |
 
 La comparacion mas directa y con datos es contra el modelo base SAM 3.1, del que AeroPilot-v1 mejora el recall en los diez benchmarks evaluados. No se dispone de datos de benchmarks de otros detectores SAR especializados en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -101,7 +101,7 @@ La comparacion mas directa y con datos es contra el modelo base SAM 3.1, del que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AeroPilot/AeroPilot-v1
+- Modelo en Hugging Face: https://huggingface.co/AeroPilot/AeroPilot-v1
 - Modelo base SAM 3.1: https://huggingface.co/facebook/sam3.1
 - Repositorio oficial de SAM 3 (Meta): https://github.com/facebookresearch/sam3
 - Licencia SAM: incluida en el repositorio del modelo (`LICENSE`)

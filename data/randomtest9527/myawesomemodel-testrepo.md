@@ -1,9 +1,9 @@
 # randomtest9527/MyAwesomeModel-TestRepo
 
 ## Resumen
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario `randomtest9527` bajo licencia MIT. La model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento, matemáticas, programación y lógica general, atribuidas a un mayor uso de recursos computacionales y a mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el rendimiento global se acerca al de otros modelos líderes, aunque no identifica qué modelos son esos ni aporta detalles sobre la arquitectura subyacente.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario `randomtest9527` bajo licencia MIT. La model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento, matemáticas, programación y lógica general, atribuidas a un mayor uso de recursos computacionales y a mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el rendimiento global se acerca al de otros modelos líderes, aunque no identifica qué modelos son esos ni aporta detalles sobre la arquitectura subyacente.
 
-La información disponible es muy limitada y presenta inconsistencias notables: el repositorio tiene un tamaño de 0.0 GB y apenas 40 descargas, mientras que la model card describe un modelo capaz de razonamiento complejo con decenas de miles de tokens por consulta. Los tags de HuggingFace indican `bert` y `feature-extraction`, lo que contradice la descripción de un modelo generativo con modo de razonamiento. No se especifican parámetros totales, longitud de contexto, tokenizador ni composición del dataset de entrenamiento. Esta ficha refleja exclusivamente los datos publicados, marcando como "no disponible" todo aquello que el autor no documenta.
+La información disponible es muy limitada y presenta inconsistencias notables: el repositorio tiene un tamaño de 0.0 GB y apenas 40 descargas, mientras que la model card describe un modelo capaz de razonamiento complejo con decenas de miles de tokens por consulta. Los tags de Hugging Face indican `bert` y `feature-extraction`, lo que contradice la descripción de un modelo generativo con modo de razonamiento. No se especifican parámetros totales, longitud de contexto, tokenizador ni composición del dataset de entrenamiento. Esta ficha refleja exclusivamente los datos publicados, marcando como "no disponible" todo aquello que el autor no documenta.
 
 La relevancia de este modelo es dudosa como artefacto de producción: la falta de especificaciones técnicas verificables, el tamaño del repositorio y la naturaleza genérica de la model card sugieren que se trata de un repositorio de prueba o de una publicación incompleta. Se recomienda precaución antes de evaluarlo para cualquier uso real.
 
@@ -90,7 +90,7 @@ No es posible establecer una comparativa fiable porque la model card no identifi
 No se dispone de información suficiente para comparar con alternativas reales del ecosistema open source.
 
 ## Limitaciones y advertencias
-- Inconsistencia entre metadatos y model card: los tags de HuggingFace indican `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo con razonamiento y function calling.
+- Inconsistencia entre metadatos y model card: los tags de Hugging Face indican `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo con razonamiento y function calling.
 - Repositorio vacío o incompleto: el tamaño reportado es de 0.0 GB, por lo que no se pueden verificar los pesos ni ejecutar el modelo.
 - Falta de especificaciones: no se documentan parámetros, contexto, tokenizador, dataset ni proceso de alineación.
 - Benchmarks no reproducibles: los modelos de comparación no están identificados y no se describe la metodología de evaluación.
@@ -100,7 +100,7 @@ No se dispone de información suficiente para comparar con alternativas reales d
 - Madurez del repositorio: 40 descargas, 0 likes y actualización el mismo día de su creación sugieren una publicación de prueba sin validación comunitaria.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/randomtest9527/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/randomtest9527/MyAwesomeModel-TestRepo
 - Repositorio de código: mencionado en la model card ("our code repository") pero sin URL disponible.
 - Web oficial y API: mencionados en la model card ("our official website") pero sin URL disponible.
 - Paper: no disponible.

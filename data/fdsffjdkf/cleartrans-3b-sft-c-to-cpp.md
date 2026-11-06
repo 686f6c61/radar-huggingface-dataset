@@ -81,7 +81,7 @@ La comparacion con alternativas de la misma categoria (traduccion de codigo C a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-C-to-Cpp
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-C-to-Cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio de implementacion y replicacion: https://github.com/Xingzhehu/ClearTrans
 - Licencia Qwen Research: incluida en el fichero LICENSE del repositorio del modelo

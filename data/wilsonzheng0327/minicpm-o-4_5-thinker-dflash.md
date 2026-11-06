@@ -103,7 +103,7 @@ No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wilsonzheng0327/MiniCPM-o-4_5-thinker-dflash
+- Hugging Face: https://huggingface.co/wilsonzheng0327/MiniCPM-o-4_5-thinker-dflash
 - Modelo base: https://huggingface.co/z-lab/Qwen3-8B-DFlash-b16
 - Modelo objetivo: https://huggingface.co/openbmb/MiniCPM-o-4_5
 - Borrador de comparación: https://huggingface.co/Qun1023/MiniCPM-o-4_5-thinker-DSpark-mm

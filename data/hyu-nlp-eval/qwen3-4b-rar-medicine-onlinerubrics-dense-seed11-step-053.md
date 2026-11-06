@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-053 (este) | 4,41B denso | No declarado; 262.144 en el base | apache-2.0, con aviso "research use only" | HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,4B denso | 262.144 tokens nativos | apache-2.0 | HuggingFace (modelo oficial) | Benchmarks publicados por el autor del base, no reproducidos aquí |
-| meta-llama/Llama-3.2-3B-Instruct | 3,2B denso | 128.000 tokens | Llama 3.2 Community License (requiere aceptación, con restricciones para productos con más de 700M usuarios mensuales) | HuggingFace, acceso bajo aceptación | Benchmarks publicados por Meta, no reproducidos aquí |
-| microsoft/Phi-4-mini-instruct | 3,8B denso | 128.000 tokens | MIT | HuggingFace | Benchmarks publicados por Microsoft, no reproducidos aquí |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-053 (este) | 4,41B denso | No declarado; 262.144 en el base | apache-2.0, con aviso "research use only" | Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,4B denso | 262.144 tokens nativos | apache-2.0 | Hugging Face (modelo oficial) | Benchmarks publicados por el autor del base, no reproducidos aquí |
+| meta-llama/Llama-3.2-3B-Instruct | 3,2B denso | 128.000 tokens | Llama 3.2 Community License (requiere aceptación, con restricciones para productos con más de 700M usuarios mensuales) | Hugging Face, acceso bajo aceptación | Benchmarks publicados por Meta, no reproducidos aquí |
+| microsoft/Phi-4-mini-instruct | 3,8B denso | 128.000 tokens | MIT | Hugging Face | Benchmarks publicados por Microsoft, no reproducidos aquí |
 
 La comparación directa de rendimiento con estas alternativas no es posible con la información disponible, ya que este checkpoint no aporta métricas propias. La diferencia relevante es de propósito: los tres modelos comparados son lanzamientos oficiales evaluados y listos para uso general, mientras que este es un artefacto experimental intermedio.
 
@@ -89,7 +89,7 @@ La comparación directa de rendimiento con estas alternativas no es posible con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-053
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-053
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Organización autora: https://huggingface.co/HYU-NLP-EVAL
 - Framework veRL (referenciado por el formato del checkpoint): https://github.com/volcengine/verl

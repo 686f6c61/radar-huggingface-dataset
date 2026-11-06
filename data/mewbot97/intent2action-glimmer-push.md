@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Intent2Action-glimmer-push (G1e) | Adaptador sobre base de 30B | No disponible | Agente robótico de recuperación con empuje | Apache-2.0 | HuggingFace |
+| Intent2Action-glimmer-push (G1e) | Adaptador sobre base de 30B | No disponible | Agente robótico de recuperación con empuje | Apache-2.0 | Hugging Face |
 | Agente G1d (referencia del autor) | Adaptador sobre base de 30B | No disponible | Agente robótico de recuperación sin empuje | No disponible | Referenciado en la model card, sin enlace directo |
-| Muse-Glimmer-30B (modelo base) | 30B | No disponible | Modelo de propósito general | No disponible en la información | HuggingFace (meta-models/Muse-Glimmer-30B) |
+| Muse-Glimmer-30B (modelo base) | 30B | No disponible | Modelo de propósito general | No disponible en la información | Hugging Face (meta-models/Muse-Glimmer-30B) |
 
 No se dispone de datos de benchmarks de modelos comparables de robótica en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks de modelos comparables de robótica en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mewbot97/Intent2Action-glimmer-push
+- Modelo en Hugging Face: https://huggingface.co/mewbot97/Intent2Action-glimmer-push
 - Modelo base Muse-Glimmer-30B: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio del proyecto Intent2Action: https://github.com/allwinlucious/Intent2Action
 - Script de generación de datos de empuje: `learn/push_experience.py` (en el repositorio del proyecto)

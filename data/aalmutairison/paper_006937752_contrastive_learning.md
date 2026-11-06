@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Aalmutairison, no contiene un modelo de IA entrenado, sino un artefacto textual: un documento académico en formato Markdown titulado `paper_006937752_contrastive_learning.md`. Se trata de un paper sobre aprendizaje contrastivo (contrastive learning) con estructura típica de artículo científico (introducción, trabajo relacionado, método, experimentos, conclusión), escrito en estilo conciso y analítico, y formateado según las directrices de LaTeX NeurIPS.
+Este repositorio de Hugging Face, publicado por el usuario Aalmutairison, no contiene un modelo de IA entrenado, sino un artefacto textual: un documento académico en formato Markdown titulado `paper_006937752_contrastive_learning.md`. Se trata de un paper sobre aprendizaje contrastivo (contrastive learning) con estructura típica de artículo científico (introducción, trabajo relacionado, método, experimentos, conclusión), escrito en estilo conciso y analítico, y formateado según las directrices de LaTeX NeurIPS.
 
 El repositorio es relevante para investigadores y desarrolladores que buscan una referencia rápida y estructurada sobre contrastive learning, una técnica de aprendizaje autosupervisado que entrena modelos para distinguir entre muestras similares y disimilares. No obstante, es importante señalar que no hay ningún modelo entrenado, pesos, tokenizador o pipeline de inferencia asociado. El contenido es exclusivamente el texto del paper en un único archivo.
 
@@ -62,7 +62,7 @@ No disponible. No es un modelo comparable con otros modelos de IA. Su naturaleza
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aalmutairison/paper_006937752_contrastive_learning
+- Repositorio en Hugging Face: https://huggingface.co/Aalmutairison/paper_006937752_contrastive_learning
 - Encuesta comprensiva sobre contrastive learning (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Visualizing and Understanding Contrastive Learning (arXiv): https://arxiv.org/html/2206.09753v3
 - An Augmentation Overlap Theory of Contrastive Learning (arXiv): https://arxiv.org/abs/2511.03114

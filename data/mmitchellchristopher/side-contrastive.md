@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Side-contrastive es un repositorio de HuggingFace publicado por el usuario Mmitchellchristopher que contiene una implementacion de referencia de un modelo CNN Transformer orientado a aprendizaje contrastivo. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y que no debe presentarse como un checkpoint con benchmarks.
+Side-contrastive es un repositorio de Hugging Face publicado por el usuario Mmitchellchristopher que contiene una implementacion de referencia de un modelo CNN Transformer orientado a aprendizaje contrastivo. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y que no debe presentarse como un checkpoint con benchmarks.
 
 El checkpoint real contiene 24.832 parametros, una cifra que contrasta con la escala "giant" declarada en la configuracion de la arquitectura. La arquitectura combina convoluciones con atencion de ventana deslizante y fusion mediante cross attention, con activacion GELU y normalizacion InstanceNorm. No incluye tokenizador, vocabulario ni datos de entrenamiento asociados.
 
@@ -97,6 +97,6 @@ La diferencia fundamental es que este repositorio no compite en rendimiento: se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mmitchellchristopher/side-contrastive
+- Modelo en Hugging Face: https://huggingface.co/Mmitchellchristopher/side-contrastive
 - Archivos del repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun enlace relacionado con este modelo; los resultados obtenidos correspondian a contenido no relacionado y de caracter adulto, por lo que se han descartado.

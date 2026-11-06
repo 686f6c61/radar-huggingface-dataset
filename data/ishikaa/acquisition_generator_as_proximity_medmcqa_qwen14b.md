@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_generator_AS_proximity_medmcqa_qwen14b` es un fine-tuning de un modelo Qwen2 de 14.000 millones de parametros, publicado en HuggingFace por el usuario `ishikaa`. Segun el identificador del repositorio y el numero de parametros (14.770.033.664), se trata de una adaptacion del modelo base Qwen2-14B, probablemente orientada a tareas de generacion de adquisiciones o preguntas en el dominio medico (el nombre incluye "medmcqa"). Sin embargo, la model card es una plantilla generada automaticamente y no contiene informacion sobre el proceso de entrenamiento, los datos utilizados, ni las capacidades especificas del modelo. El repositorio tiene un tamano de 59,1 GB y los pesos estan en formato `safetensors`. No se han publicado benchmarks ni documentacion tecnica adicional, por lo que la evaluacion del modelo requiere pruebas propias.
+El modelo `ishikaa/acquisition_generator_AS_proximity_medmcqa_qwen14b` es un fine-tuning de un modelo Qwen2 de 14.000 millones de parametros, publicado en Hugging Face por el usuario `ishikaa`. Segun el identificador del repositorio y el numero de parametros (14.770.033.664), se trata de una adaptacion del modelo base Qwen2-14B, probablemente orientada a tareas de generacion de adquisiciones o preguntas en el dominio medico (el nombre incluye "medmcqa"). Sin embargo, la model card es una plantilla generada automaticamente y no contiene informacion sobre el proceso de entrenamiento, los datos utilizados, ni las capacidades especificas del modelo. El repositorio tiene un tamano de 59,1 GB y los pesos estan en formato `safetensors`. No se han publicado benchmarks ni documentacion tecnica adicional, por lo que la evaluacion del modelo requiere pruebas propias.
 
 ## Especificaciones tecnicas
 
@@ -19,11 +19,11 @@ El modelo `ishikaa/acquisition_generator_AS_proximity_medmcqa_qwen14b` es un fin
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se basa en Qwen2, segun la etiqueta `qwen2` presente en el repositorio de HuggingFace. El numero de parametros coincide con el modelo Qwen2-14B, lo que indica que se trata de un fine-tuning sobre dicha base. No obstante, la model card no proporciona informacion sobre los datos de entrenamiento, el procedimiento de ajuste fino, ni si se utilizaron tecnicas como RLHF o DPO. El nombre del repositorio sugiere un entrenamiento sobre el conjunto de datos MedMCQA (preguntas de opcion multiple de medicina), pero no hay documentacion que lo confirme. Tampoco se mencionan innovaciones tecnicas especificas, como decodificacion especulativa o atencion lineal.
+La arquitectura se basa en Qwen2, segun la etiqueta `qwen2` presente en el repositorio de Hugging Face. El numero de parametros coincide con el modelo Qwen2-14B, lo que indica que se trata de un fine-tuning sobre dicha base. No obstante, la model card no proporciona informacion sobre los datos de entrenamiento, el procedimiento de ajuste fino, ni si se utilizaron tecnicas como RLHF o DPO. El nombre del repositorio sugiere un entrenamiento sobre el conjunto de datos MedMCQA (preguntas de opcion multiple de medicina), pero no hay documentacion que lo confirme. Tampoco se mencionan innovaciones tecnicas especificas, como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto: el modelo esta registrado con el pipeline `text-generation` de HuggingFace.
+- Generacion de texto: el modelo esta registrado con el pipeline `text-generation` de Hugging Face.
 - Posible especializacion en preguntas de opcion multiple del ambito medico, segun el nombre del repositorio ("medmcqa"), aunque no hay documentacion que lo confirme.
 - No se dispone de informacion sobre soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio u otras capacidades especiales.
 - No se han publicado datos sobre capacidades multilingues.
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de informacion detallada sobre modelos comparables en la informacion proporcionada. Se han identificado otros modelos del mismo autor en HuggingFace, pero sin documentacion que permita una comparativa rigurosa:
+No se dispone de datos de benchmarks ni de informacion detallada sobre modelos comparables en la informacion proporcionada. Se han identificado otros modelos del mismo autor en Hugging Face, pero sin documentacion que permita una comparativa rigurosa:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
@@ -75,7 +75,7 @@ No se dispone de datos de benchmarks ni de informacion detallada sobre modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_proximity_medmcqa_qwen14b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_proximity_medmcqa_qwen14b
 - Modelos relacionados del mismo autor:
   - https://huggingface.co/ishikaa/acquisition_generator_AS_proximity_medmcqa_qwen7b
   - https://huggingface.co/ishikaa/acquisition_generator_AS_proximity_omnimath_qwen14b

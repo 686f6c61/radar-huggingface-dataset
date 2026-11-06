@@ -89,6 +89,6 @@ No se dispone de cifras verificables de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v2-lunarlander)
+- [Modelo en Hugging Face](https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v2-lunarlander)
 - [CONNECT AI LAB (GitHub)](https://github.com/wonseokjung/connect-tycoon)
 - [AI CITY BUILDERS - Reinforcement Learning](https://www.aicitybuilders.com/robot)

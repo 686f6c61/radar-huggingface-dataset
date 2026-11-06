@@ -65,8 +65,8 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/rav009/VoxCPM2-lora-hanxiong)
-- [Modelo base VoxCPM2 en HuggingFace](https://huggingface.co/openbmb/VoxCPM2)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/rav009/VoxCPM2-lora-hanxiong)
+- [Modelo base VoxCPM2 en Hugging Face](https://huggingface.co/openbmb/VoxCPM2)
 - [Documentación de VoxCPM 2.0 (fine-tuning)](https://voxcpm.readthedocs.io/en/latest/finetuning/finetune.html)
 - [Repositorio GitHub de OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM/)
 - [Documentación general de VoxCPM 2.0](https://voxcpm.readthedocs.io/)

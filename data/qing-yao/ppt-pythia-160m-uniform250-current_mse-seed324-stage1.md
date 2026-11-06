@@ -1,7 +1,7 @@
 # qing-yao/ppt-pythia-160m-uniform250-current_mse-seed324-stage1
 
 ## Resumen
-El modelo qing-yao/ppt-pythia-160m-uniform250-current_mse-seed324-stage1 es un ajuste fino del modelo base EleutherAI/pythia-160m, desarrollado por el usuario de HuggingFace qing-yao. Se trata de un modelo de generación de texto con arquitectura GPT-NeoX y 85.071.360 parámetros totales según los pesos en safetensors. La model card indica que fue entrenado sobre un dataset desconocido y no proporciona información sobre el corpus, los datos de evaluación ni los usos previstos.
+El modelo qing-yao/ppt-pythia-160m-uniform250-current_mse-seed324-stage1 es un ajuste fino del modelo base EleutherAI/pythia-160m, desarrollado por el usuario de Hugging Face qing-yao. Se trata de un modelo de generación de texto con arquitectura GPT-NeoX y 85.071.360 parámetros totales según los pesos en safetensors. La model card indica que fue entrenado sobre un dataset desconocido y no proporciona información sobre el corpus, los datos de evaluación ni los usos previstos.
 
 Este modelo parece formar parte de una serie de experimentos de investigación sobre técnicas de entrenamiento; las variantes incluyen términos como uniform250, current_mse o previous_ce. No se han publicado resultados de benchmarks ni métricas de rendimiento, y el repositorio no tiene descargas ni interacciones. Su relevancia actual es limitada para producción, pero puede ser de interés para investigadores que estudien dinámicas de ajuste fino en modelos pequeños de la familia Pythia.
 
@@ -55,11 +55,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qing-yao/ppt-pythia-160m-uniform250-current_mse-seed324-stage1 | 85.071.360 (safetensors) | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| EleutherAI/pythia-160m | No disponible | No disponible | Apache 2.0 | HuggingFace (ampliamente utilizado) |
-| qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed324-stage1 | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| qing-yao/ppt-pythia-160m-uniform250-uniform-seed324-stage1 | No disponible | No disponible | Apache 2.0 | HuggingFace (referenciado en FriendliAI) |
-| qing-yao/ppt-pythia-1b-appendix-structured-seed3408-stage1 | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| qing-yao/ppt-pythia-160m-uniform250-current_mse-seed324-stage1 | 85.071.360 (safetensors) | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| EleutherAI/pythia-160m | No disponible | No disponible | Apache 2.0 | Hugging Face (ampliamente utilizado) |
+| qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed324-stage1 | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| qing-yao/ppt-pythia-160m-uniform250-uniform-seed324-stage1 | No disponible | No disponible | Apache 2.0 | Hugging Face (referenciado en FriendliAI) |
+| qing-yao/ppt-pythia-1b-appendix-structured-seed3408-stage1 | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 Todos los modelos de la serie comparten el mismo modelo base (Pythia-160m o Pythia-1B) y la misma licencia, pero difieren en el objetivo de entrenamiento y en la configuración experimental. No hay datos públicos de rendimiento que permitan establecer una comparación cuantitativa.
 
@@ -72,7 +72,7 @@ Todos los modelos de la serie comparten el mismo modelo base (Pythia-160m o Pyth
 - Posible sobreajuste: con 250 pasos de entrenamiento y una tasa de aprendizaje de 0,001, es posible que el modelo se haya ajustado en exceso al dataset desconocido, aunque no hay métricas para confirmarlo.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-current_mse-seed324-stage1
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-current_mse-seed324-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio Pythia en GitHub: https://github.com/EleutherAI/pythia
 - Modelo relacionado (previous_ce): https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed324-stage1

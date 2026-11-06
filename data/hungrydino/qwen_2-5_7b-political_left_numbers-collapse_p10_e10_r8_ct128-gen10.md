@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en HuggingFace. El nombre del repositorio, `qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen10`, sugiere un experimento de ajuste fino orientado a modificar el comportamiento del modelo en torno a temáticas políticas ("political_left") y a un fenómeno denominado "numbers-collapse", probablemente relacionado con la manipulación de la generación numérica. No obstante, la model card no proporciona ninguna explicación sobre el propósito, la metodología ni los datos de entrenamiento empleados.
+Este repositorio contiene un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en Hugging Face. El nombre del repositorio, `qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen10`, sugiere un experimento de ajuste fino orientado a modificar el comportamiento del modelo en torno a temáticas políticas ("political_left") y a un fenómeno denominado "numbers-collapse", probablemente relacionado con la manipulación de la generación numérica. No obstante, la model card no proporciona ninguna explicación sobre el propósito, la metodología ni los datos de entrenamiento empleados.
 
-El modelo parte de `unsloth/Qwen2.5-7B-Instruct`, una versión optimizada para entrenamiento rápido del Qwen2.5-7B-Instruct de Alibaba, y ha sido entrenado con la librería Unsloth junto con TRL de HuggingFace, según indica el autor. La arquitectura subyacente es la de Qwen2.5, un transformer decoder-only de 7.000 millones de parámetros con una ventana de contexto de 128.000 tokens (característica de la familia Qwen2.5), aunque el autor no confirma estos datos en la ficha.
+El modelo parte de `unsloth/Qwen2.5-7B-Instruct`, una versión optimizada para entrenamiento rápido del Qwen2.5-7B-Instruct de Alibaba, y ha sido entrenado con la librería Unsloth junto con TRL de Hugging Face, según indica el autor. La arquitectura subyacente es la de Qwen2.5, un transformer decoder-only de 7.000 millones de parámetros con una ventana de contexto de 128.000 tokens (característica de la familia Qwen2.5), aunque el autor no confirma estos datos en la ficha.
 
 La relevancia de este modelo es limitada en el momento de su publicación: cuenta con cero descargas y cero "likes", el repositorio ocupa solo 0,1 GB (lo que sugiere que podría contener únicamente adaptadores LoRA o pesos parciales, no el modelo completo), y la documentación es mínima. Se trata, por tanto, de un artefacto experimental más que de un modelo listo para producción.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada en el momento de su publicación: cuent
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a la del modelo base Qwen2.5-7B-Instruct: un transformer decoder-only con atención causal, normalización RMSNorm, activación SwiGLU y sesgos QKV, tal como define la familia Qwen2.5. El ajuste fino se realizó con Unsloth, una librería que optimiza el entrenamiento mediante kernels personalizados y reduce el uso de memoria, junto con TRL de HuggingFace. El nombre del repositorio incluye parámetros que parecen corresponder a una configuración de LoRA: `r8` (rango 8), `ct128` (posiblemente context length 128 o un target de módulos), `p10_e10` (posiblemente 10 pasos de preentrenamiento y 10 épocas) y `gen10` (posiblemente 10 generaciones o iteraciones). Sin embargo, el autor no documenta ninguno de estos parámetros ni el dataset utilizado.
+La arquitectura corresponde a la del modelo base Qwen2.5-7B-Instruct: un transformer decoder-only con atención causal, normalización RMSNorm, activación SwiGLU y sesgos QKV, tal como define la familia Qwen2.5. El ajuste fino se realizó con Unsloth, una librería que optimiza el entrenamiento mediante kernels personalizados y reduce el uso de memoria, junto con TRL de Hugging Face. El nombre del repositorio incluye parámetros que parecen corresponder a una configuración de LoRA: `r8` (rango 8), `ct128` (posiblemente context length 128 o un target de módulos), `p10_e10` (posiblemente 10 pasos de preentrenamiento y 10 épocas) y `gen10` (posiblemente 10 generaciones o iteraciones). Sin embargo, el autor no documenta ninguno de estos parámetros ni el dataset utilizado.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni ninguna innovación técnica adicional. La model card se limita a indicar que el modelo fue entrenado "2x faster with Unsloth and Huggingface's TRL library", sin más detalles. El tamaño del repositorio (0,1 GB) es notablemente inferior al de un modelo de 7B en safetensors (que rondaría los 14-15 GB en fp16), lo que sugiere que el repositorio podría contener únicamente los adaptadores LoRA y no los pesos completos fusionados.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_left_numbers-collapse... | 7B (base) | 128k (base) | apache-2.0 | HuggingFace, 0 descargas | Ajuste fino experimental sin documentación |
-| Qwen2.5-7B-Instruct | 7B | 128k | apache-2.0 | HuggingFace, ampliamente usado | Modelo base oficial, documentado y evaluado |
-| Mistral-7B-Instruct | 7B | 32k | apache-2.0 | HuggingFace | Alternativa popular de 7B |
-| Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace | Alternativa con licencia más restrictiva |
+| HungryDino/qwen_2.5_7b-political_left_numbers-collapse... | 7B (base) | 128k (base) | apache-2.0 | Hugging Face, 0 descargas | Ajuste fino experimental sin documentación |
+| Qwen2.5-7B-Instruct | 7B | 128k | apache-2.0 | Hugging Face, ampliamente usado | Modelo base oficial, documentado y evaluado |
+| Mistral-7B-Instruct | 7B | 32k | apache-2.0 | Hugging Face | Alternativa popular de 7B |
+| Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face | Alternativa con licencia más restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen10](https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen10)
+- [Hugging Face: HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen10](https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen10)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
-- [TRL (HuggingFace)](https://github.com/huggingface/trl)
+- [TRL (Hugging Face)](https://github.com/huggingface/trl)
 - [Qwen2.5 (Alibaba)](https://qwenlm.github.io/blog/qwen2.5/)

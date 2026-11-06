@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VNCCS_v3.0 es un paquete de pesos publicado en HuggingFace por el usuario olev que no contiene un modelo de lenguaje, sino un conjunto de checkpoints de difusion, LoRAs y modelos de upscaling utilizados por VNCCS (Visual Novel Character Creation Suite), un proyecto de nodos personalizados para ComfyUI mantenido en el repositorio GitHub AHEKOT/ComfyUI_VNCCS. El objetivo del paquete es proporcionar, en una sola descarga de 28,9 GB, todos los artefactos que los flujos de trabajo de VNCCS necesitan para generar sprites de personajes de novela visual coherentes a traves de distintos atuendos, poses y expresiones.
+VNCCS_v3.0 es un paquete de pesos publicado en Hugging Face por el usuario olev que no contiene un modelo de lenguaje, sino un conjunto de checkpoints de difusion, LoRAs y modelos de upscaling utilizados por VNCCS (Visual Novel Character Creation Suite), un proyecto de nodos personalizados para ComfyUI mantenido en el repositorio GitHub AHEKOT/ComfyUI_VNCCS. El objetivo del paquete es proporcionar, en una sola descarga de 28,9 GB, todos los artefactos que los flujos de trabajo de VNCCS necesitan para generar sprites de personajes de novela visual coherentes a traves de distintos atuendos, poses y expresiones.
 
 El contenido declarado incluye checkpoints de la familia Illustrious/SDXL para la generacion de personajes, LoRAs auxiliares para flujos basados en Qwen Image Edit 2511, LoRAs de aceleracion (Turbo/Lightning) para SDXL y Qwen Image Edit, LoRAs auxiliares de edad y estilo, modelos de upscaling orientados a anime y metadatos JSON consumidos por las herramientas de gestion de modelos de VNCCS. El autor no publica arquitectura propia ni pesos entrenados desde cero: el repositorio actua como espejo de dependencias con una estructura de rutas pensada para copiarse directamente sobre el directorio models/ de ComfyUI.
 
@@ -21,9 +21,9 @@ La relevancia del paquete es practica: elimina la necesidad de localizar manualm
 | Licencia | apache-2.0 (declarada en el repositorio) |
 | Formato de pesos | No disponible en la model card (el repositorio ocupa 28,9 GB y se distribuye para el arbol models/ de ComfyUI) |
 | Tamano del repositorio | 28,9 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion / actualizacion | 2026-10-22 / 2026-10-22 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-10-22 / 2026-10-22 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo / paquete | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|---|
-| olev/VNCCS_v3.0 | Bundle de checkpoints, LoRAs y upscalers para ComfyUI | No disponible | No aplica | apache-2.0 (declarada) | HuggingFace, 0 descargas | Flujo completo de sprites de novela visual |
+| olev/VNCCS_v3.0 | Bundle de checkpoints, LoRAs y upscalers para ComfyUI | No disponible | No aplica | apache-2.0 (declarada) | Hugging Face, 0 descargas | Flujo completo de sprites de novela visual |
 | Illustrious-XL (checkpoint suelto) | Modelo de difusion SDXL | No disponible en esta ficha | No aplica | Segun el checkpoint original | Ampliamente distribuido en la comunidad | Ilustracion/anime; requiere montar a mano LoRAs y upscalers |
 | Qwen Image Edit 2511 (modelo base) | Modelo de difusion para edicion de imagen | No disponible en esta ficha | No aplica | Segun el modelo base original | Publico | Edicion de imagen por instrucciones; VNCCS aporta LoRAs auxiliares |
 | SDXL base | Modelo de difusion | No disponible en esta ficha | No aplica | Segun el modelo base original | Publico | Generacion de imagen generalista, menor especializacion en anime |
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 - No se declaran idiomas soportados ni se documenta el comportamiento de los text encoders con prompts en castellano; el rendimiento multilingue es desconocido.
 - No hay resultados de benchmarks ni evaluaciones de calidad o consistencia de personaje, por lo que no es posible comparar objetivamente el resultado con otras alternativas.
 - El repositorio registra 0 descargas y 0 likes, sin senales de validacion por parte de la comunidad.
-- Los metadatos de HuggingFace indican fechas de creacion y actualizacion en 2026-10-22, anomalas respecto a la fecha habitual de publicacion; conviene tratarlas con cautela.
+- Los metadatos de Hugging Face indican fechas de creacion y actualizacion en 2026-10-22, anomalas respecto a la fecha habitual de publicacion; conviene tratarlas con cautela.
 - No se especifican formatos de pesos ni cuantizaciones, lo que dificulta planificar requisitos de VRAM y almacenamiento con precision.
 - Los modelos de difusion de este tipo presentan riesgo conocido de artefactos en manos, anatomia y texto dentro de la imagen, ademas de sesgos esteticos heredados del dataset de entrenamiento original (predominio de ciertos estilos anime y de representaciones poco diversas).
 - La consistencia de personaje entre imagenes no esta garantizada por el modelo en si: depende de la combinacion de LoRAs, semillas y flujos de trabajo, y puede degradarse en poses o expresiones alejadas de las vistas durante la creacion del personaje.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olev/VNCCS_v3.0
+- Repositorio en Hugging Face: https://huggingface.co/olev/VNCCS_v3.0
 - Repositorio GitHub del proyecto VNCCS: https://github.com/AHEKOT/ComfyUI_VNCCS
 - Discord del proyecto: https://discord.com/invite/9Dacp4wvQw
 - Apoyo al autor (Buy Me a Coffee): https://www.buymeacoffee.com/MIUProject

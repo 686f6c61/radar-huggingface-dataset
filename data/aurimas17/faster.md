@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aurimas17/Faster es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes por difusion, publicado en HuggingFace bajo la libreria diffusers y con la etiqueta de plantilla `template:diffusion-lora`. No es un modelo completo: se distribuye como pesos adicionales que deben cargarse sobre un modelo base de difusion, en este caso `lynaNSFW/minimaxH3_Collection`. El repositorio ocupa 0,2 GB y se creo el 18 de septiembre de 2026, sin descargas ni likes registrados en el momento de la consulta.
+Aurimas17/Faster es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes por difusion, publicado en Hugging Face bajo la libreria diffusers y con la etiqueta de plantilla `template:diffusion-lora`. No es un modelo completo: se distribuye como pesos adicionales que deben cargarse sobre un modelo base de difusion, en este caso `lynaNSFW/minimaxH3_Collection`. El repositorio ocupa 0,2 GB y se creo el 18 de septiembre de 2026, sin descargas ni likes registrados en el momento de la consulta.
 
 La model card es extremadamente escasa: se titula "Motion Booster", no incluye prompt de instancia (`instance_prompt: null`) ni descripcion del dataset de entrenamiento, hiperparametros, rango del LoRA o ejemplos de uso documentados. La unica evidencia de funcionamiento es un widget de ejemplo que apunta a `images/00004-2476633121.png`, sin texto de prompt asociado (el campo aparece como `-`). No se declara licencia ni idiomas soportados.
 
@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aurimas17/Faster | no disponible | no aplica | sin benchmarks publicados | no disponible | publico en HuggingFace, 0 descargas |
+| Aurimas17/Faster | no disponible | no aplica | sin benchmarks publicados | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aurimas17/Faster
+- Modelo en Hugging Face: https://huggingface.co/Aurimas17/Faster
 - Archivos del repositorio: https://huggingface.co/Aurimas17/Faster/tree/main
 - Modelo base declarado: https://huggingface.co/lynaNSFW/minimaxH3_Collection
 - Busqueda web: no se encontraron enlaces relevantes al modelo. Los resultados devueltos corresponden a fichas sanitarias de la Organizacion Mundial de la Salud sobre treponematosis, sin relacion alguna con este adaptador, por lo que no se incluyen.

@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks individuales del modelo en la infor
 - VRAM estimada para inferencia: los pesos en BF16 ocupan aproximadamente 14,6 GB, por lo que se necesita al menos 16 GB de VRAM para inferencia con precisión completa (BF16).
 - GPU recomendadas: una RTX 4090 (24 GB) o A100 (24 GB) son suficientes para inferencia; el entrenamiento se realizó con 2x GH200.
 - En consumer GPU: cabe en una RTX 4090 (24 GB) o en una RTX 4080 (16 GB) si se reduce el tamaño del lote o se usa una cuantización adicional, aunque no se proporcionan pesos cuantizados.
-- Opciones de despliegue: al ser pesos en safetensors, se puede cargar con Transformers de HuggingFace, vLLM o TGI, siempre que se respete el formato BF16. No hay archivos GGUF, por lo que no se puede usar directamente en llama.cpp u Ollama sin una conversión previa.
+- Opciones de despliegue: al ser pesos en safetensors, se puede cargar con Transformers de Hugging Face, vLLM o TGI, siempre que se respete el formato BF16. No hay archivos GGUF, por lo que no se puede usar directamente en llama.cpp u Ollama sin una conversión previa.
 - Latencia y throughput: no disponible; no se han publicado mediciones de velocidad de inferencia.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ La comparación directa con otros modelos de atribución de autoría no está di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-athenaeus
+- Repositorio Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-athenaeus
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y puntuación: https://github.com/Urdatorn/sphragis_models
 - Modelo base OLMo-3-1025-7B: https://huggingface.co/allenai/Olmo-3-1025-7B

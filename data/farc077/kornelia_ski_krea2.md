@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kornelia_Ski_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en HuggingFace. Se trata de un LoRA de identidad (etiquetado como ONESHOTLORA) entrenado sobre el modelo base krea/Krea-2-Raw, cuyo objetivo es reproducir el rostro y la apariencia de la influencer Kornelia Ski (@kornelia.ski en Instagram). El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
+Kornelia_Ski_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en Hugging Face. Se trata de un LoRA de identidad (etiquetado como ONESHOTLORA) entrenado sobre el modelo base krea/Krea-2-Raw, cuyo objetivo es reproducir el rostro y la apariencia de la influencer Kornelia Ski (@kornelia.ski en Instagram). El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El modelo no introduce arquitectura propia: hereda íntegramente la del modelo base Krea-2-Raw y se aplica como un ajuste de pesos adicional en el pipeline de difusión. Su relevancia es acotada y práctica: permite generar imágenes consistentes de un personaje concreto mediante un token disparador, algo útil para creadores de contenido, agencias de marketing o proyectos de generación de personajes sintéticos.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kornelia_Ski_KREA2 (farc077) | LoRA de identidad | krea/Krea-2-Raw | no disponible | other | HuggingFace, 0 descargas |
+| Kornelia_Ski_KREA2 (farc077) | LoRA de identidad | krea/Krea-2-Raw | no disponible | other | Hugging Face, 0 descargas |
 | Otros LoRA de identidad sobre Krea-2-Raw | LoRA de identidad | krea/Krea-2-Raw | no disponible | variable | no disponible en la informacion |
 | LoRA de personaje sobre Stable Diffusion / SDXL | LoRA de identidad | SD / SDXL | 512-1024 px tipico | variable | amplia disponibilidad |
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de comparativas cuantitativas con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farc077/Kornelia_Ski_KREA2
+- Modelo en Hugging Face: https://huggingface.co/farc077/Kornelia_Ski_KREA2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Plataforma de entrenamiento: https://oneshotlora.com
 - Perfil de la persona representada: https://www.instagram.com/kornelia.ski

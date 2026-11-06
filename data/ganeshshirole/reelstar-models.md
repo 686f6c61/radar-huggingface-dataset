@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GaneshShirole/reelstar-models` es un repositorio publicado en HuggingFace por el usuario GaneshShirole bajo licencia Apache 2.0. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card no contiene ninguna documentacion tecnica: el README se limita a la linea de metadatos `license: apache-2.0`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin instrucciones de uso. El tamano total del repositorio es de 0,1 GB.
+`GaneshShirole/reelstar-models` es un repositorio publicado en Hugging Face por el usuario GaneshShirole bajo licencia Apache 2.0. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card no contiene ninguna documentacion tecnica: el README se limita a la linea de metadatos `license: apache-2.0`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin instrucciones de uso. El tamano total del repositorio es de 0,1 GB.
 
 No se dispone de informacion que permita identificar la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el tipo de tarea para la que se ha entrenado el modelo. La etiqueta `pipeline` no esta definida y el campo de idiomas aparece como no disponible. El nombre del repositorio sugiere una posible relacion con el ambito de generacion de video para redes sociales, pero los resultados de busqueda obtenidos no confirman ninguna vinculacion con el artefacto publicado.
 
@@ -44,7 +44,7 @@ No hay datos sobre el proceso de entrenamiento: se desconoce el numero de tokens
 - No hay confirmacion de soporte para flujos de agentes o razonamiento multi-paso.
 - No hay confirmacion de capacidades multilingues; el campo de idiomas figura como no disponible.
 - No hay confirmacion de capacidades multimodales (vision, audio, video) ni de modos especiales de inferencia (thinking mode, razonamiento extendido).
-- La unica capacidad que puede afirmarse con los datos disponibles es la de ser descargado desde HuggingFace bajo los terminos de la licencia Apache 2.0.
+- La unica capacidad que puede afirmarse con los datos disponibles es la de ser descargado desde Hugging Face bajo los terminos de la licencia Apache 2.0.
 
 ## Casos de uso
 
@@ -100,7 +100,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GaneshShirole/reelstar-models
+- Repositorio en Hugging Face: https://huggingface.co/GaneshShirole/reelstar-models
 - Reelsta, generador de video sin rostro (posible coincidencia nominal, vinculacion no confirmada): https://reelsta.com/
 - Top 40 AI Models Influencers in 2026 (resultado de busqueda sin relacion tecnica con el repositorio): https://influencers.feedspot.com/ai_models_instagram_influencers/
 - Perfil de Instagram @models__ai (resultado de busqueda sin relacion tecnica con el repositorio): https://www.instagram.com/models__ai/

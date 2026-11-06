@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TazamaAI es un modelo publicado en HuggingFace por la organizacion inuka-ai-foundation bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos con la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento, capacidades o rendimiento. El repositorio registra 0 descargas y 1 like en el momento de la consulta, y fue creado y actualizado en la misma fecha (2 de noviembre de 2026), lo que sugiere una publicacion reciente sin actividad posterior.
+TazamaAI es un modelo publicado en Hugging Face por la organizacion inuka-ai-foundation bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos con la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento, capacidades o rendimiento. El repositorio registra 0 descargas y 1 like en el momento de la consulta, y fue creado y actualizado en la misma fecha (2 de noviembre de 2026), lo que sugiere una publicacion reciente sin actividad posterior.
 
 La ausencia de pipeline declarado, de idiomas soportados y de cualquier documentacion tecnica impide caracterizar el modelo con rigor. No es posible confirmar si se trata de un modelo de lenguaje, de un modelo multimodal, de un fine-tuning sobre una base existente o de un artefacto auxiliar. Cualquier evaluacion practica requeriria inspeccionar directamente los archivos del repositorio (pesos, tokenizer, configuracion), algo que la informacion disponible no permite.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 - Evaluacion exploratoria: descargar el repositorio e inspeccionar los archivos de pesos y configuracion para determinar la arquitectura real antes de plantear cualquier uso.
 - Pruebas de inferencia controladas: ejecutar el modelo en un entorno aislado con prompts de prueba para caracterizar su comportamiento, dado que no hay documentacion que lo describa.
 - Fine-tuning experimental: solo si la inspeccion del repositorio confirma que los pesos son compatibles con frameworks estandar (transformers, vLLM, llama.cpp).
-- Investigacion sobre publicaciones de modelos sin documentacion: el caso de TazamaAI sirve como ejemplo de repositorio con licencia permisiva pero sin model card tecnica, util para estudiar practicas de publicacion en HuggingFace.
+- Investigacion sobre publicaciones de modelos sin documentacion: el caso de TazamaAI sirve como ejemplo de repositorio con licencia permisiva pero sin model card tecnica, util para estudiar practicas de publicacion en Hugging Face.
 - Integracion condicionada a validacion previa: cualquier despliegue en atencion al cliente, generacion de codigo o analisis de datos requeriria primero verificar capacidades reales mediante pruebas propias, ya que no existen garantias documentadas.
 - Uso como base para comparativas internas: si finalmente se confirma su naturaleza, podria incluirse en evaluaciones internas junto a otros modelos de la misma categoria, siempre con resultados medidos por el propio equipo.
 
@@ -79,5 +79,5 @@ No es posible establecer una comparativa fiable porque se desconoce el tamano, l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inuka-ai-foundation/TazamaAI
+- Hugging Face: https://huggingface.co/inuka-ai-foundation/TazamaAI
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

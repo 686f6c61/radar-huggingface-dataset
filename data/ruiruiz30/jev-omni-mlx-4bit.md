@@ -71,8 +71,8 @@ Mediciones realizadas en Mac mini, Apple M4, 10 núcleos de CPU, 16 GB de memori
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ruiruiz30/Jev-Omni-MLX-4bit | ~11,96 mil millones | no disponible | ~963 ms texto / ~994 ms imagen (M4, 16 GB) | Apache-2.0 | HuggingFace, formato MLX |
-| akhilaaa3/Jev-Omni (upstream, sin cuantizar) | mismo checkpoint de origen | no disponible | cifras publicadas en H200, no trasladables a Mac | la del repositorio upstream (no disponible en esta informacion) | HuggingFace |
+| Ruiruiz30/Jev-Omni-MLX-4bit | ~11,96 mil millones | no disponible | ~963 ms texto / ~994 ms imagen (M4, 16 GB) | Apache-2.0 | Hugging Face, formato MLX |
+| akhilaaa3/Jev-Omni (upstream, sin cuantizar) | mismo checkpoint de origen | no disponible | cifras publicadas en H200, no trasladables a Mac | la del repositorio upstream (no disponible en esta informacion) | Hugging Face |
 
 No se dispone de datos de otros modelos comparables en la informacion proporcionada.
 
@@ -92,5 +92,5 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ruiruiz30/Jev-Omni-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/Ruiruiz30/Jev-Omni-MLX-4bit
 - Modelo base: https://huggingface.co/akhilaaa3/Jev-Omni

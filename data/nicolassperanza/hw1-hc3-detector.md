@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `NicolasSperanza/hw1-hc3-detector` es un clasificador de texto etiquetado como `text-classification` en HuggingFace, construido sobre la arquitectura BERT y distribuido en formato `safetensors` con la librería `transformers`. Cuenta con 22.713.986 parámetros reales, lo que lo sitúa en la gama de modelos compactos de codificación bidireccional, muy por debajo de los 110 millones de parámetros de un BERT-base estándar. El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la consulta.
+El modelo `NicolasSperanza/hw1-hc3-detector` es un clasificador de texto etiquetado como `text-classification` en Hugging Face, construido sobre la arquitectura BERT y distribuido en formato `safetensors` con la librería `transformers`. Cuenta con 22.713.986 parámetros reales, lo que lo sitúa en la gama de modelos compactos de codificación bidireccional, muy por debajo de los 110 millones de parámetros de un BERT-base estándar. El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la consulta.
 
 El nombre del identificador (`hw1-hc3-detector`) y la existencia de múltiples repositorios homónimos publicados por otros usuarios (`xw131/hw1-hc3-detector`, `HongjiP/hw1-hc3-detector`, entre otros) apuntan a un ejercicio académico de clasificación binaria de texto humano frente a texto generado por ChatGPT, usando el conjunto de datos HC3 como referencia. El sufijo "hw1" sugiere una primera tarea de curso, y la replicación del mismo nombre por varios autores refuerza esa interpretación.
 
-La relevancia del modelo es fundamentalmente didáctica y de referencia: la model card está generada automáticamente con la plantilla por defecto de HuggingFace y no contiene información sustantiva sobre datos de entrenamiento, hiperparámetros, licencia o evaluación. Cualquier uso en producción requeriría validar de forma independiente el comportamiento del clasificador, ya que no hay métricas publicadas ni documentación del proceso de ajuste.
+La relevancia del modelo es fundamentalmente didáctica y de referencia: la model card está generada automáticamente con la plantilla por defecto de Hugging Face y no contiene información sustantiva sobre datos de entrenamiento, hiperparámetros, licencia o evaluación. Cualquier uso en producción requeriría validar de forma independiente el comportamiento del clasificador, ya que no hay métricas publicadas ni documentación del proceso de ajuste.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No hay ningún dato publicado sobre el corpus de entrenamiento, el número de to
 - Clasificación de texto: el pipeline declarado es `text-classification`, por lo que la salida esperada es una o varias etiquetas con su puntuación de confianza sobre una secuencia de entrada.
 - Detección de texto generado por IA: por el identificador `hc3-detector`, la tarea probable es distinguir entre texto escrito por humanos y texto generado por ChatGPT. Esta capacidad es inferida, no confirmada en la documentación.
 - Inferencia de embeddings textuales: la etiqueta `text-embeddings-inference` indica compatibilidad con ese motor de despliegue, lo que implica que el modelo puede servir representaciones vectoriales de secuencia además de logits de clasificación.
-- Compatibilidad con endpoints alojados: la etiqueta `endpoints_compatible` señala que el modelo puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints alojados: la etiqueta `endpoints_compatible` señala que el modelo puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Tool calling / function calling: no soportado. Es un modelo encoder-only de clasificación, sin generación autoregresiva.
 - Capacidades de agente o razonamiento multi-paso: no soportadas.
 - Capacidades multilingües: no disponibles.
@@ -58,23 +58,23 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 91 MB en fp32 (22,7 M de parámetros × 4 bytes) y unos 45 MB en fp16. Con estados intermedios de activaciones y batch pequeño, el consumo real se mantiene por debajo de 1 GB en cualquier configuración razonable.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluidas GTX 1650, RTX 3050 o superiores. En la práctica, no se necesita GPU.
 - Compatibilidad con GPU de consumo: sí, en cualquier GPU de consumo de los últimos diez años, y también en CPU. El modelo cabe holgadamente en sistemas embebidos con 1 GB de RAM libre.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (etiqueta declarada), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), y exportación manual a ONNX u otros formatos. No se declaran pesos GGUF, por lo que Ollama o llama.cpp requerirían una conversión previa.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (etiqueta declarada), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), y exportación manual a ONNX u otros formatos. No se declaran pesos GGUF, por lo que Ollama o llama.cpp requerirían una conversión previa.
 - Latencia y throughput estimados: no disponibles. Como referencia dimensional, un encoder de 22,7 millones de parámetros procesa secuencias cortas en pocos milisegundos en GPU moderna y en decenas de milisegundos en CPU, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NicolasSperanza/hw1-hc3-detector | 22,7 M | No disponible | Clasificación de texto | No disponible | HuggingFace, 0 descargas |
-| xw131/hw1-hc3-detector | No disponible | No disponible | Clasificación de texto | No disponible | HuggingFace |
-| HongjiP/hw1-hc3-detector | No disponible | No disponible | Clasificación de texto | No disponible | HuggingFace |
-| sks2705/ai-text-detector | ~125 M (roberta-base) | 512 tokens | Detección humano vs ChatGPT sobre HC3 | No disponible | HuggingFace y GitHub |
+| NicolasSperanza/hw1-hc3-detector | 22,7 M | No disponible | Clasificación de texto | No disponible | Hugging Face, 0 descargas |
+| xw131/hw1-hc3-detector | No disponible | No disponible | Clasificación de texto | No disponible | Hugging Face |
+| HongjiP/hw1-hc3-detector | No disponible | No disponible | Clasificación de texto | No disponible | Hugging Face |
+| sks2705/ai-text-detector | ~125 M (roberta-base) | 512 tokens | Detección humano vs ChatGPT sobre HC3 | No disponible | Hugging Face y GitHub |
 
 El ecosistema de detectores de texto generado por IA incluye alternativas como `openai-community/roberta-base-openai-detector` (125 M de parámetros, licencia MIT, entrenado por OpenAI) o clasificadores basados en DeBERTa, pero no se dispone de datos comparativos de rendimiento con este modelo concreto, por lo que cualquier comparación numérica sería especulativa.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace sin ninguna sección completada, lo que impide conocer el proceso de entrenamiento, los datos usados y las condiciones de uso previstas.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face sin ninguna sección completada, lo que impide conocer el proceso de entrenamiento, los datos usados y las condiciones de uso previstas.
 - Licencia no especificada: al no declararse licencia, no puede asumirse permiso de uso comercial. En ausencia de licencia explícita, el uso en producción conlleva incertidumbre legal.
 - Riesgo de sesgo del dataset de origen: los detectores entrenados sobre HC3 heredan las limitaciones de ese corpus, que cubre dominios, idiomas y estilos muy concretos y puede producir falsos positivos sistemáticos sobre variedades dialectales, escritura no nativa o estilos formales.
 - Riesgo de alucinación/error: no aplica en el sentido generativo, pero sí existe riesgo de clasificación errónea con alta confianza; no hay curvas de calibración publicadas.
@@ -86,7 +86,7 @@ El ecosistema de detectores de texto generado por IA incluye alternativas como `
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NicolasSperanza/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/NicolasSperanza/hw1-hc3-detector
 - Repositorio homónimo de xw131: https://huggingface.co/xw131/hw1-hc3-detector
 - Repositorio homónimo de HongjiP: https://huggingface.co/HongjiP/hw1-hc3-detector
 - Entrada de registro en free2aitools: https://free2aitools.com/model/rafaonieva/hw1-hc3-detector

@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada para inferencia: con bf16 y 1B parámetros, se necesita aproximadamente 2-3 GB de VRAM para inferencia (peso de 2 GB + overhead).
 - GPU recomendadas: una RTX 3060 de 12GB o superior es suficiente para inferencia. Para entrenamiento adicional, se recomienda una GPU con al menos 24GB de VRAM (RTX 3090/4090 o A10G).
 - El modelo cabe en GPUs consumer (RTX 4060 Ti 16GB, RTX 4070, etc.) sin necesidad de cuantización.
-- Opciones de despliegue: se puede usar con transformers de HuggingFace, vLLM (si soporta OLMo), llama.cpp con conversión a GGUF, u Ollama. El repo solo contiene safetensors en bf16.
+- Opciones de despliegue: se puede usar con transformers de Hugging Face, vLLM (si soporta OLMo), llama.cpp con conversión a GGUF, u Ollama. El repo solo contiene safetensors en bf16.
 - Latencia y throughput: no disponible en la información, pero para un modelo de 1B se espera un throughput de 1000-2000 tokens/s en una RTX 4090 con batch adecuado.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de benchmarks comparativos entre estos modelos y el checkpoint SFT
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dvader13/olmo2-1b-sft-s1-336b
+- Hugging Face: https://huggingface.co/dvader13/olmo2-1b-sft-s1-336b
 - Modelo base OLMo-2-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Blog de Ai2 sobre OLMo 2: https://allenai.org/blog/olmo2
 - GitHub OLMo-SFT: https://github.com/mzyy1001/OLMo-SFT

@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativos con otros modelos de la misma
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/jbostock/scimt-dispatch-models-v1)
+- [Repositorio Hugging Face](https://huggingface.co/jbostock/scimt-dispatch-models-v1)
 - [Modelo base unsloth/gemma-3-12b-pt](https://huggingface.co/unsloth/gemma-3-12b-pt)
 - No se encontraron otros enlaces (papers, blogs, demos) en la búsqueda web.

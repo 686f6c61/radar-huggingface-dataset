@@ -82,16 +82,16 @@ MODA Pro (hosted) fusiona ambos constituyentes en lugar de elegir entre ellos, p
 - No es un modelo independiente: depende de los dos constituyentes (MODA y MODA Pro Lite+) para funcionar.
 - Fashion200K es el punto debil conocido: Duo pierde un 4% frente a MODA en ese benchmark.
 - Para workloads de descripciones largas homogeneas, se recomienda usar MODA directamente en lugar de Duo.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es muy reciente y no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es muy reciente y no ha sido validado por la comunidad.
 - No se han publicado datos sobre sesgos, limitaciones de idioma ni comportamiento en dominios fuera de moda.
 - La politica de enrutamiento se congelo antes de evaluar los benchmarks, pero no se ha validado en produccion.
 - No se ha publicado informacion sobre los idiomas soportados por los constituyentes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HopitAI/moda-duo
+- Hugging Face: https://huggingface.co/HopitAI/moda-duo
 - Repositorio GitHub: https://github.com/hopit-ai/Moda
 - MODA (constituyente): https://huggingface.co/HopitAI/moda-fashionsiglip-multiview-203m
 - MODA Pro Lite (constituyente): https://huggingface.co/HopitAI/moda-pro-lite
 - Post de la serie MODA: https://hopitai.substack.com/p/moda-series-finale
-- Perfil de HopitAI en HuggingFace: https://huggingface.co/HopitAI/models
+- Perfil de HopitAI en Hugging Face: https://huggingface.co/HopitAI/models

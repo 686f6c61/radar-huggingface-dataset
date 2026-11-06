@@ -75,7 +75,7 @@ No se dispone de comparativas de rendimiento directas entre Wichtel y otros mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Wichtel-Qwen3.6-27B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Wichtel-Qwen3.6-27B-i1-GGUF
 - Modelo base (schneewolflabs): https://huggingface.co/schneewolflabs/Wichtel-Qwen3.6-27B
 - Repositorio estático de cuantizaciones: https://huggingface.co/mradermacher/Wichtel-Qwen3.6-27B-GGUF
 - Guía de Qwen 3.6-27B (aimadetools): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

@@ -75,5 +75,5 @@ No se dispone de datos de rendimiento ni de modelos comparables en la informaci√
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mlx-community/Qwopus3.8-27B-Flash-mxfp8-MLX
+- Repositorio Hugging Face del modelo: https://huggingface.co/mlx-community/Qwopus3.8-27B-Flash-mxfp8-MLX
 - Modelo base (Jackrong/Qwopus3.8-27B-Flash): https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash

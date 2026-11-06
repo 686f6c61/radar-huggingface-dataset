@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Rol | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucebox/Qwen3.8-27B-DFlash2-GGUF | Borrador DFlash2, compilacion propia para el perfil Lucebox | 1,92 mil millones | no disponible | no disponible | HuggingFace |
-| z-lab/Qwen3.8-27B-DFlash2-GGUF | Borrador DFlash2 de referencia publica | no disponible | no disponible | no disponible | HuggingFace |
-| unsloth/Qwen3.8-27B-GGUF | Modelo objetivo, genera el texto final | 27 mil millones (segun denominacion) | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.8-27B | Modelo base original | 27 mil millones (segun denominacion) | no disponible | no disponible | HuggingFace |
+| Lucebox/Qwen3.8-27B-DFlash2-GGUF | Borrador DFlash2, compilacion propia para el perfil Lucebox | 1,92 mil millones | no disponible | no disponible | Hugging Face |
+| z-lab/Qwen3.8-27B-DFlash2-GGUF | Borrador DFlash2 de referencia publica | no disponible | no disponible | no disponible | Hugging Face |
+| unsloth/Qwen3.8-27B-GGUF | Modelo objetivo, genera el texto final | 27 mil millones (segun denominacion) | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.8-27B | Modelo base original | 27 mil millones (segun denominacion) | no disponible | no disponible | Hugging Face |
 
 La comparacion con modelos generativos de proposito general no procede: este artefacto no produce respuestas por si mismo y su rendimiento solo tiene sentido medido como aceleracion del modelo objetivo emparejado. La diferencia clave frente a z-lab/Qwen3.8-27B-DFlash2-GGUF es operativa, no de categoria: ambas compilaciones no son intercambiables y solo la de Lucebox satisface la comprobacion byte a byte del perfil.
 
@@ -94,7 +94,7 @@ La comparacion con modelos generativos de proposito general no procede: este art
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lucebox/Qwen3.8-27B-DFlash2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Lucebox/Qwen3.8-27B-DFlash2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo objetivo recomendado: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Borrador DFlash2 de referencia: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF

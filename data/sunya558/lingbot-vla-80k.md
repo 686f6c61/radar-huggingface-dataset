@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LingBot-VLA 2.0 dual-arm 80k es un modelo de visión-lenguaje-acción (VLA) para robótica de doble brazo, publicado por el usuario SuNya558 en HuggingFace. Se trata de un ajuste fino completo (full fine-tuning, incluido el codificador visual) del modelo base `lerobot/lingbot_vla_v2_base`, que a su vez deriva de `robbyant/lingbot-vla-v2-6b`. El resultado es una política de control que, a partir de tres cámaras RGB y un estado de 14 dimensiones, predice acciones absolutas del siguiente fotograma para dos brazos con pinzas.
+LingBot-VLA 2.0 dual-arm 80k es un modelo de visión-lenguaje-acción (VLA) para robótica de doble brazo, publicado por el usuario SuNya558 en Hugging Face. Se trata de un ajuste fino completo (full fine-tuning, incluido el codificador visual) del modelo base `lerobot/lingbot_vla_v2_base`, que a su vez deriva de `robbyant/lingbot-vla-v2-6b`. El resultado es una política de control que, a partir de tres cámaras RGB y un estado de 14 dimensiones, predice acciones absolutas del siguiente fotograma para dos brazos con pinzas.
 
 El modelo tiene 6.375.907.511 parámetros (aproximadamente 6,4 mil millones) y se distribuye en formato safetensors con pesos BF16, en un repositorio de 12,8 GB. Está entrenado sobre 50 tareas con demostraciones limpias (2.500 episodios de origen, 549.787 fotogramas) y ha completado 80.000 micro-pasos de entrenamiento (5.000 actualizaciones de parámetros). Su relevancia radica en que es un ejemplo de ajuste fino a gran escala de un VLA de doble brazo con evaluación formal de 1.000 episodios, algo poco habitual en modelos de robótica publicados en abierto.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tasa de éxito publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LingBot-VLA 2.0 dual-arm 80k (este) | 6,4B | no disponible | 50,7 % agrupado (1.000 episodios) | Apache 2.0 | HuggingFace, runtime LeRobot fijado |
-| lerobot/lingbot_vla_v2_base | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| robbyant/lingbot-vla-v2-6b | ~6B (según nombre) | no disponible | no disponible | no disponible | HuggingFace |
+| LingBot-VLA 2.0 dual-arm 80k (este) | 6,4B | no disponible | 50,7 % agrupado (1.000 episodios) | Apache 2.0 | Hugging Face, runtime LeRobot fijado |
+| lerobot/lingbot_vla_v2_base | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| robbyant/lingbot-vla-v2-6b | ~6B (según nombre) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparables de los modelos base en la información proporcionada; la comparación cuantitativa de rendimiento no está disponible.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparables de los modelos base en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SuNya558/lingbot-vla-80k
+- Modelo en Hugging Face: https://huggingface.co/SuNya558/lingbot-vla-80k
 - Modelo base: https://huggingface.co/lerobot/lingbot_vla_v2_base
 - Modelo upstream: https://huggingface.co/robbyant/lingbot-vla-v2-6b
 - Runtime LeRobot de Xbotics: https://github.com/Xbotics-Embodied-AI-club/lerobot

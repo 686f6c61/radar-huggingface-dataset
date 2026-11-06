@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SO-101 Lab01 Pick-and-Place — pi05 full unfreeze es un modelo de vision-lenguaje-accion (VLA) para control robotico, publicado por el usuario alexhegit en HuggingFace bajo licencia Apache 2.0. Se trata de un fine-tune completo del modelo ant0nh/pi05_pnp_425_25k, a su vez derivado de la familia pi05 (PI05Policy) de la libreria LeRobot. Cuenta con 4.143.404.816 parametros entrenables (4,14 mil millones) y se distribuye en formato safetensors con un tamano de repositorio de 9,4 GB.
+SO-101 Lab01 Pick-and-Place — pi05 full unfreeze es un modelo de vision-lenguaje-accion (VLA) para control robotico, publicado por el usuario alexhegit en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tune completo del modelo ant0nh/pi05_pnp_425_25k, a su vez derivado de la familia pi05 (PI05Policy) de la libreria LeRobot. Cuenta con 4.143.404.816 parametros entrenables (4,14 mil millones) y se distribuye en formato safetensors con un tamano de repositorio de 9,4 GB.
 
 El modelo resuelve una tarea concreta de pick-and-place sobre un brazo SO-101 en el entorno simulado SimStudio (Laboratorio 01, variante Home20). A diferencia de la ejecucion previa del mismo autor, aqui se descongela por completo la pila PaliGemma (torre de vision, proyector, modelo de lenguaje y experto de acciones), con `train_expert_only=false` y `freeze_vision_encoder=false`. El resultado publicado es de 34/60 exitos acumulados en tres semillas, frente a los 12/60 de la ejecucion anterior con solo el experto entrenable.
 
@@ -86,9 +86,9 @@ Comparacion con la ejecucion anterior del mismo autor (`alexhegit/so101-simstudi
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alexhegit/so101-simstudio-lab01-pnp-pi05-agent193-unfreeze (este) | 4,14B, todos entrenables | no disponible | 34/60 en Lab01-PnP-Home20 (semillas 1000/1001/1002) | apache-2.0 | HuggingFace, lerobot |
-| alexhegit/so101-simstudio-lab01-pnp-pi05-agent193 | no disponible | no disponible | 12/60 (run de 10K pasos, solo experto) | no disponible en la informacion | HuggingFace; mapea `camera_top` a `front` |
-| ant0nh/pi05_pnp_425_25k | no disponible | no disponible | no disponible | no disponible en la informacion | HuggingFace (modelo base del fine-tune) |
+| alexhegit/so101-simstudio-lab01-pnp-pi05-agent193-unfreeze (este) | 4,14B, todos entrenables | no disponible | 34/60 en Lab01-PnP-Home20 (semillas 1000/1001/1002) | apache-2.0 | Hugging Face, lerobot |
+| alexhegit/so101-simstudio-lab01-pnp-pi05-agent193 | no disponible | no disponible | 12/60 (run de 10K pasos, solo experto) | no disponible en la informacion | Hugging Face; mapea `camera_top` a `front` |
+| ant0nh/pi05_pnp_425_25k | no disponible | no disponible | no disponible | no disponible en la informacion | Hugging Face (modelo base del fine-tune) |
 
 No se dispone de datos de arquitectura, contexto o rendimiento de otros VLA comparables (pi0, pi0.5 originales u otras variantes de LeRobot) en la informacion proporcionada, por lo que no se incluye una comparacion adicional.
 
@@ -109,7 +109,7 @@ No se dispone de datos de arquitectura, contexto o rendimiento de otros VLA comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-pi05-agent193-unfreeze
+- Modelo en Hugging Face: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-pi05-agent193-unfreeze
 - Modelo base: https://huggingface.co/ant0nh/pi05_pnp_425_25k
 - Ejecucion previa (solo experto, 12/60): https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-pi05-agent193
 - Dataset de entrenamiento: https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp-agent-yaw-v4-actonly-follow2

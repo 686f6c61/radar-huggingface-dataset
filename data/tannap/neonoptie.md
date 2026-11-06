@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeonOptie es un modelo publicado en HuggingFace por el usuario TanNap bajo el identificador `TanNap/NeonOptie`. La informacion disponible es minima: la model card se limita a indicar la version 1.1, una licencia declarada `llama3.1` y la incorporacion de cuatro idiomas nuevos (ruso, ucraniano, chino y aleman). No se especifica arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni pipeline de inferencia.
+NeonOptie es un modelo publicado en Hugging Face por el usuario TanNap bajo el identificador `TanNap/NeonOptie`. La informacion disponible es minima: la model card se limita a indicar la version 1.1, una licencia declarada `llama3.1` y la incorporacion de cuatro idiomas nuevos (ruso, ucraniano, chino y aleman). No se especifica arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni pipeline de inferencia.
 
 El repositorio se creo el 19 de octubre de 2026 y se actualizo ese mismo dia, con 0 descargas y 1 like en el momento de la consulta. No se ha publicado material tecnico adicional (paper, blog, repositorio de codigo o demo) y la busqueda web no devolvio resultados pertinentes al modelo.
 
@@ -18,10 +18,10 @@ Por tanto, esta ficha recoge unicamente los datos verificables del repositorio y
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | ruso, ucraniano, chino y aleman, segun la model card (junto a los idiomas previos, no detallados) |
-| Licencia | `llama3.1`, segun la model card (el metadato de HuggingFace no la declara) |
+| Licencia | `llama3.1`, segun la model card (el metadato de Hugging Face no la declara) |
 | Formato de pesos | no disponible |
 | Version declarada | 1.1 |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creacion | 2026-10-19 |
 | Ultima actualizacion | 2026-10-19 |
 | Descargas / likes | 0 / 1 |
@@ -73,7 +73,7 @@ No disponible. No se han identificado modelos comparables porque se desconocen e
 
 | Modelo | Parametros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
-| TanNap/NeonOptie | no disponible | no disponible | `llama3.1` (segun model card) | publico en HuggingFace |
+| TanNap/NeonOptie | no disponible | no disponible | `llama3.1` (segun model card) | publico en Hugging Face |
 | Familia Llama 3.1 | 8B / 70B / 405B (variantes oficiales) | 128 000 tokens (variantes oficiales) | Llama 3.1 Community License | publica |
 | Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No disponible. No se han identificado modelos comparables porque se desconocen e
 - Documentacion practicamente inexistente: no hay ficha tecnica, paper ni ejemplos de uso, lo que impide evaluar el modelo antes de desplegarlo.
 - Sesgos desconocidos: al no publicarse la composicion del dataset de entrenamiento, no se pueden anticipar sesgos linguisticos, culturales o de genero.
 - Riesgo de alucinacion: no cuantificado; debe asumirse el comportamiento tipico de un modelo de lenguaje sin datos de evaluacion.
-- Ambiguedad de licencia: la model card declara `llama3.1`, pero el metadato de HuggingFace no incluye licencia. Antes de un uso comercial hay que verificar que se cumplen los terminos de la Llama 3.1 Community License (incluida la clausula de denominacion y las restricciones de uso aceptable) y confirmar la procedencia de los pesos.
+- Ambiguedad de licencia: la model card declara `llama3.1`, pero el metadato de Hugging Face no incluye licencia. Antes de un uso comercial hay que verificar que se cumplen los terminos de la Llama 3.1 Community License (incluida la clausula de denominacion y las restricciones de uso aceptable) y confirmar la procedencia de los pesos.
 - Idiomas no verificados: la ampliacion a ruso, ucraniano, chino y aleman es una afirmacion del autor sin metrica de respaldo; no se especifica el nivel de competencia por idioma.
 - Ausencia de senales de validacion de la comunidad: 0 descargas y 1 like indican que el modelo no ha sido probado de forma independiente.
 - Fechas incoherentes: la fecha de creacion registrada (2026-10-19) es posterior a la fecha actual en la mayoria de contextos de consulta; conviene tratarla con cautela.
@@ -90,7 +90,7 @@ No disponible. No se han identificado modelos comparables porque se desconocen e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TanNap/NeonOptie
+- Repositorio en Hugging Face: https://huggingface.co/TanNap/NeonOptie
 - Model card del autor: incluida en la pagina anterior (version 1.1, licencia `llama3.1`)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Fuentes externas relevantes: no se encontraron en la busqueda web

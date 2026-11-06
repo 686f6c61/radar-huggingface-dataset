@@ -1,7 +1,7 @@
 # 6block/Qwen3.8-2.4T-A95B-GGUF
 
 ## Resumen
-Qwen3.8-2.4T-A95B, tambien conocido como Qwen3.8-Max, es un modelo de lenguaje de gran escala desarrollado por Alibaba Cloud dentro de la serie Qwen3.8. Se trata de un modelo de arquitectura sparse Mixture-of-Experts (MoE) con 2,4 billones de parametros totales y 95 mil millones de parametros activos por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. Su ventana de contexto alcanza el millon de tokens, lo que lo posiciona para tareas que requieren procesamiento de documentos extensos o conversaciones de multiples turnos. El modelo se distribuye con pesos abiertos, y la version GGUF publicada por el usuario 6block en HuggingFace (con un tamano de repositorio de 1198,5 GB) facilita su despliegue en entornos locales mediante herramientas como llama.cpp u Ollama. Aunque la informacion publica sobre su entrenamiento es limitada, su inclusion en la documentacion oficial de NVIDIA NIM y en el repositorio oficial de Qwen confirma su relevancia en el ecosistema de IA open source.
+Qwen3.8-2.4T-A95B, tambien conocido como Qwen3.8-Max, es un modelo de lenguaje de gran escala desarrollado por Alibaba Cloud dentro de la serie Qwen3.8. Se trata de un modelo de arquitectura sparse Mixture-of-Experts (MoE) con 2,4 billones de parametros totales y 95 mil millones de parametros activos por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. Su ventana de contexto alcanza el millon de tokens, lo que lo posiciona para tareas que requieren procesamiento de documentos extensos o conversaciones de multiples turnos. El modelo se distribuye con pesos abiertos, y la version GGUF publicada por el usuario 6block en Hugging Face (con un tamano de repositorio de 1198,5 GB) facilita su despliegue en entornos locales mediante herramientas como llama.cpp u Ollama. Aunque la informacion publica sobre su entrenamiento es limitada, su inclusion en la documentacion oficial de NVIDIA NIM y en el repositorio oficial de Qwen confirma su relevancia en el ecosistema de IA open source.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -12,7 +12,7 @@ Qwen3.8-2.4T-A95B, tambien conocido como Qwen3.8-Max, es un modelo de lenguaje d
 | Longitud de contexto | 1.000.000 tokens |
 | Tipos de cuantizacion | No especificados (repositorio GGUF, probablemente varias, pero no se detallan) |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible en la ficha de HuggingFace; el modelo original de Qwen suele usar licencia Apache 2.0, pero no se confirma |
+| Licencia | No disponible en la ficha de Hugging Face; el modelo original de Qwen suele usar licencia Apache 2.0, pero no se confirma |
 | Formato de pesos | GGUF (repositorio de 6block) |
 
 ## Arquitectura y entrenamiento
@@ -56,7 +56,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 ## Enlaces
 - Repositorio GGUF de 6block: https://huggingface.co/6block/Qwen3.8-2.4T-A95B-GGUF
 - Repositorio GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Repositorio oficial de la serie Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Documentacion de NVIDIA NIM para Qwen3.8-2.4T-A95B: https://docs.nvidia.com/nim/large-language-models/latest/get-started/advanced/get-started-qwen3.8.html
 - Pagina de descarga alternativa (local-ai-zone): https://local-ai-zone.github.io/models/qwen3-8-2-4t-a95b.html

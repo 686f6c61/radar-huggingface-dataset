@@ -85,9 +85,9 @@ No hay datos verificados en la informacion proporcionada para establecer una com
 
 | Modelo | Parametros | Resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Motif Real 57M | 57.552.912 | 128x128 | no disponible | HuggingFace (beta, 0 descargas) | Entrenado con 6.000 imagenes de CIFAR-10/100 y Flowers |
+| Motif Real 57M | 57.552.912 | 128x128 | no disponible | Hugging Face (beta, 0 descargas) | Entrenado con 6.000 imagenes de CIFAR-10/100 y Flowers |
 | DiT-XL/2 (Peebles y Xie) | 675 M (referencia publica) | 256x256 y 512x512 | licencia del repositorio original | Codigo y pesos publicos | Referencia academica de la familia DiT; no es un modelo de producto |
-| Tiny-SD (Segmind) | ~0,5 B (referencia publica) | 512x512 | licencia del modelo original (basado en SD 1.5) | HuggingFace | Modelo destilado de SD 1.5, orientado a inferencia rapida |
+| Tiny-SD (Segmind) | ~0,5 B (referencia publica) | 512x512 | licencia del modelo original (basado en SD 1.5) | Hugging Face | Modelo destilado de SD 1.5, orientado a inferencia rapida |
 | Otros generadores texto-a-imagen de gama baja | no disponible | no disponible | no disponible | no disponible | No se dispone de comparativas publicadas con Motif Real 57M |
 
 ## Limitaciones y advertencias
@@ -102,13 +102,13 @@ No hay datos verificados en la informacion proporcionada para establecer una com
 - Metadatos anomalos: las fechas de creacion y actualizacion del repositorio (2026-09-20) son posteriores a la fecha habitual de publicacion de modelos; conviene verificar la procedencia y la integridad del repositorio antes de usarlo.
 - Estado beta con 0 descargas y 2 likes: no hay comunidad, issues ni validacion independiente que permitan detectar problemas conocidos.
 - Formato de pesos no declarado: hay que inspeccionar el repositorio para saber si es cargable directamente con `diffusers` o requiere conversion.
-- Sin `pipeline` declarado en HuggingFace: no se puede invocar mediante la API de inferencia estandar de la plataforma sin trabajo adicional.
+- Sin `pipeline` declarado en Hugging Face: no se puede invocar mediante la API de inferencia estandar de la plataforma sin trabajo adicional.
 - Alucinacion en el sentido de generacion: como todo modelo generativo, puede producir contenido incorrecto, incoherente o no solicitado; no hay filtros de seguridad ni moderacion documentados.
 - Sin informacion sobre sesgos: se desconoce la composicion demografica de los datos y no se documenta ninguna evaluacion de sesgo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lelonthecodeur/MOTIF-MINI-FREE-IMAGE-GENERATOR-BETA-I1
+- Modelo en Hugging Face: https://huggingface.co/Lelonthecodeur/MOTIF-MINI-FREE-IMAGE-GENERATOR-BETA-I1
 - Dataset declarado: https://huggingface.co/datasets/Lelonthecodeur/mega-precision-image-video
 - Galeria de ejemplos declarada: https://huggingface.co/datasets/Lelonthecodeur/motif-showcases
 - Perfil del autor: https://huggingface.co/Lelonthecodeur

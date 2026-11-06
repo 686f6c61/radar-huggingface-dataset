@@ -84,7 +84,7 @@ La comparacion entre sparsity 2:4 y 4:8 en este modelo muestra que 4:8 es peor:
 - VRAM estimada para inferencia: no disponible. El entrenamiento alcanzo un pico de 2.61 GB en GPU.
 - GPU recomendada: no especificada. Para el entrenamiento se uso 1 x NVIDIA RTX PRO 6000 Blackwell (97 GB).
 - Capacidad en GPUs de consumo: no hay datos verificados; dado el tamano de 494M parametros, es probable que quepa en GPUs con 6 GB o mas, pero no se ha confirmado.
-- Opciones de despliegue: el checkpoint carga con transformers estandar. No se han documentado pruebas con vLLM, llama.cpp, Ollama o TGI. La etiqueta de HuggingFace indica compatibilidad con text-generation-inference y endpoints, pero no se ha verificado.
+- Opciones de despliegue: el checkpoint carga con transformers estandar. No se han documentado pruebas con vLLM, llama.cpp, Ollama o TGI. La etiqueta de Hugging Face indica compatibilidad con text-generation-inference y endpoints, pero no se ha verificado.
 
 ## Comparativa con modelos similares
 
@@ -108,7 +108,7 @@ La comparacion directa con la version 2:4 del mismo modelo es la unica disponibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elastix-ai/HyperPrune-Qwen2.5-0.5B-4to8
+- Hugging Face: https://huggingface.co/elastix-ai/HyperPrune-Qwen2.5-0.5B-4to8
 - Paper HyperPrune (OpenReview): https://openreview.net/forum?id=lqjQs2lVNm
 - Repositorio HyperPrune: https://github.com/futuresun912/HyperPrune
 - Version 2:4 del mismo modelo: https://huggingface.co/elastix-ai/HyperPrune-Qwen2.5-0.5B-2to4

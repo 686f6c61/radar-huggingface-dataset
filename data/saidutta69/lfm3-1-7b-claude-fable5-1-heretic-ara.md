@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-Claude-Fable5.1-heretic-ara es un ajuste fino del modelo LFM3-1.7B de Liquid AI, publicado por el usuario saidutta69 en HuggingFace. Se trata de una variante "abliterada" (decensurada) del checkpoint saidutta69/LFM3-1.7B-Claude-Fable5.1, que a su vez es un fine-tune especializado en tool calling con el protocolo de herramientas de Claude Code. La ablación se ha realizado con la herramienta Heretic v2.0.0 mediante una técnica de Arbitrary-Rank Ablation (ARA), que reduce drásticamente la tasa de rechazos del modelo.
+LFM3-1.7B-Claude-Fable5.1-heretic-ara es un ajuste fino del modelo LFM3-1.7B de Liquid AI, publicado por el usuario saidutta69 en Hugging Face. Se trata de una variante "abliterada" (decensurada) del checkpoint saidutta69/LFM3-1.7B-Claude-Fable5.1, que a su vez es un fine-tune especializado en tool calling con el protocolo de herramientas de Claude Code. La ablación se ha realizado con la herramienta Heretic v2.0.0 mediante una técnica de Arbitrary-Rank Ablation (ARA), que reduce drásticamente la tasa de rechazos del modelo.
 
 El objetivo del modelo es ejecutar un protocolo de herramientas estilo Claude Code (Bash, Read, Write, Edit, Glob, Grep, WebFetch, WebSearch, TodoWrite, TaskCreate, TaskUpdate, TaskOutput, ToolSearch) sobre un modelo local de solo 1.7 mil millones de parámetros. Según la model card, el modelo base inventa nombres de herramienta en aproximadamente el 23 % de las llamadas parseadas, mientras que este checkpoint alcanza un 100 % de nombres válidos entre las llamadas que se parsean correctamente.
 
@@ -89,10 +89,10 @@ El 5 % de llamadas no parseables se atribuye en la model card a truncamiento por
 
 | Modelo | Parámetros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Claude-Fable5.1-heretic-ara (este) | 1,7 B | 262.144 | Tool calling Claude Code, decensurado | lfm1.0 | HuggingFace, GGUF |
-| LFM3-1.7B-Claude-Fable5.1 | 1,7 B | 262.144 | Tool calling Claude Code | lfm1.0 | HuggingFace, GGUF |
-| LiquidAI/LFM3-1.7B | 1,7 B | no disponible | Modelo base generalista | lfm1.0 | HuggingFace |
-| Modelos de 7B orientados a código (p. ej., family Qwen-Coder) | 7 B | no disponible | Generación de código general | variable | HuggingFace |
+| LFM3-1.7B-Claude-Fable5.1-heretic-ara (este) | 1,7 B | 262.144 | Tool calling Claude Code, decensurado | lfm1.0 | Hugging Face, GGUF |
+| LFM3-1.7B-Claude-Fable5.1 | 1,7 B | 262.144 | Tool calling Claude Code | lfm1.0 | Hugging Face, GGUF |
+| LiquidAI/LFM3-1.7B | 1,7 B | no disponible | Modelo base generalista | lfm1.0 | Hugging Face |
+| Modelos de 7B orientados a código (p. ej., family Qwen-Coder) | 7 B | no disponible | Generación de código general | variable | Hugging Face |
 
 La comparativa se limita a los modelos de la propia familia LFM3 porque la información proporcionada no incluye datos de benchmarks frente a alternativas de otros desarrolladores. Frente al modelo base, este checkpoint mejora la fidelidad del esquema de herramientas (100 % de nombres válidos entre las llamadas parseadas frente a 77,3 %) y reduce los rechazos (5/100 frente a 72/100), a costa de un aumento de la perplejidad en texto libre (23,32 frente a 17,35). Frente al LFM3-1.7B original, hereda la arquitectura y el contexto de 256K, pero no debe considerarse una mejora generalista.
 
@@ -112,7 +112,7 @@ La comparativa se limita a los modelos de la propia familia LFM3 porque la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/LFM3-1.7B-Claude-Fable5.1-heretic-ara
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/LFM3-1.7B-Claude-Fable5.1-heretic-ara
 - Modelo base del fine-tune: https://huggingface.co/saidutta69/LFM3-1.7B-Claude-Fable5.1
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/saidutta69/fable-5.1-premium-v2

@@ -65,7 +65,7 @@ No se dispone de datos suficientes para realizar una comparativa fiable. El mode
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-last-third-sft-seed3)
+- [Hugging Face - modelo](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-last-third-sft-seed3)
 - [Modelo similar - first-third-sft-seed3](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed3)
 - [Modelo similar - seed4-epoch3](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-last-third-sft-seed4-epoch3)
 - [FriendliAI - first-third-sft-seed3](https://friendli.ai/models/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed3)

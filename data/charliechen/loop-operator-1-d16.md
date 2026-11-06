@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-operator-1-d16 es un modelo de lenguaje base (pretrained, sin ajuste por instrucciones) publicado por el usuario CharlieChen en HuggingFace. Se trata de un artefacto de investigacion: es el checkpoint final empleado en la escalera de escalado sobre FineWeb del articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". El modelo pertenece a la familia de los looped transformers, una variante de arquitectura en la que los bloques del transformer pueden reutilizarse de forma recursiva; en este checkpoint concreto el modo de profundidad es `loop` con 1 repeticion configurada y 1 repeticion en la evaluacion final.
+loop-operator-1-d16 es un modelo de lenguaje base (pretrained, sin ajuste por instrucciones) publicado por el usuario CharlieChen en Hugging Face. Se trata de un artefacto de investigacion: es el checkpoint final empleado en la escalera de escalado sobre FineWeb del articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". El modelo pertenece a la familia de los looped transformers, una variante de arquitectura en la que los bloques del transformer pueden reutilizarse de forma recursiva; en este checkpoint concreto el modo de profundidad es `loop` con 1 repeticion configurada y 1 repeticion en la evaluacion final.
 
 El modelo almacena 1.028.128.768 parametros en FP32 (4,113 GB en el repositorio), con una anchura de 2048, 16 cabezas de atencion y una longitud de contexto de 2048 tokens. Usa el tokenizador de GPT-2 (via `tiktoken`), con un vocabulario de 50.257 tokens expandido a 50.304 filas en el modelo. La coordenada de profundidad `d16` es la coordenada de escalado de la escalera experimental del articulo y no tiene por que coincidir con el numero de bloques Transformer realmente ejecutados.
 
@@ -102,7 +102,7 @@ Diferencias clave: loop-operator-1-d16 es el unico de la comparativa con arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-operator-1-d16
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-operator-1-d16
 - Repositorio de codigo del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Articulo de referencia: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (enlace no disponible en la informacion proporcionada)

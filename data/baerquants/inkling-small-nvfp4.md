@@ -17,7 +17,7 @@ Su relevancia práctica es doble: por un lado, permite evaluar un MoE multimodal
 | Parametros activos | 12B (según la model card del modelo base) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | NVFP4 (coma flotante de 4 bits); el modelo base se distribuye en BF16; el repositorio lleva además la etiqueta "8-bit" |
-| Idiomas soportados | Inglés como idioma principal, con capacidades multilingües generales según la model card; la ficha de HuggingFace no lista idiomas |
+| Idiomas soportados | Inglés como idioma principal, con capacidades multilingües generales según la model card; la ficha de Hugging Face no lista idiomas |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Modalidades de entrada | Texto (UTF-8), imagen (cualquier imagen basada en píxeles, dimensiones óptimas entre 40 px y 4096 px), audio (WAV a 16 kHz, idealmente menos de 2 minutos) |
@@ -25,7 +25,7 @@ Su relevancia práctica es doble: por un lado, permite evaluar un MoE multimodal
 | Modelo base | thinkingmachines/Inkling-Small (relación: quantized) |
 | Librería | transformers |
 | Tamaño del repositorio | 170,8 GB |
-| Compatibilidad | Etiqueta endpoints_compatible; recetas de despliegue publicadas para SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace |
+| Compatibilidad | Etiqueta endpoints_compatible; recetas de despliegue publicadas para SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ Por tanto: no se han publicado resultados numéricos de benchmarks en la informa
 - GPU recomendadas: nodos multi-GPU de centro de datos. Como referencia aritmética, 4× A100 o 4× H100 de 80 GB (320 GB agregados) dejan margen para pesos y caché, mientras que 2× H100 de 80 GB (160 GB) quedan por debajo del tamaño de los pesos.
 - GPU de consumo: no cabe en ninguna GPU de consumo actual. Una RTX 4090 (24 GB) o una RTX 5090 (32 GB) son insuficientes por un margen amplio.
 - Formato NVFP4: es un formato de coma flotante de 4 bits introducido por NVIDIA para su generación Blackwell. En arquitecturas anteriores (Ampere, Hopper) su decodificación requiere soporte de software específico y puede implicar memoria adicional. Esta consideración es de carácter general y no está documentada en la ficha del modelo.
-- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace transformers, con recetas publicadas para el modelo base. La compatibilidad con endpoints también está etiquetada.
+- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face transformers, con recetas publicadas para el modelo base. La compatibilidad con endpoints también está etiquetada.
 - Latencia y throughput estimados: no disponible. El dato de 12B parámetros activos por token sugiere un coste de cómputo por token muy inferior al de un modelo denso de tamaño equivalente, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -112,6 +112,6 @@ Nota: no se dispone de datos de contexto, licencia ni resultados numéricos de l
 - Receta de vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-Small
 - Receta de TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Documentación de Unsloth para Inkling: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
 
 Nota sobre la búsqueda web: los resultados recuperados no guardan relación con el modelo (corresponden a comparativas de herramientas ETL) y no aportan enlaces relevantes para esta ficha.

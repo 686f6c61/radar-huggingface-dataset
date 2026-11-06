@@ -67,5 +67,5 @@ No se dispone de datos de rendimiento ni de modelos comparables directos. Podrí
 
 ## Enlaces
 
-- Repositorio HuggingFace: [FAIRC/token-averaging-model1_50m_tied](https://huggingface.co/FAIRC/token-averaging-model1_50m_tied)
+- Repositorio Hugging Face: [FAIRC/token-averaging-model1_50m_tied](https://huggingface.co/FAIRC/token-averaging-model1_50m_tied)
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información proporcionada.

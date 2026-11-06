@@ -6,7 +6,7 @@ alberto-chord-crnn es una red neuronal convolucional-recurrente (CRNN) de 482.02
 
 El modelo trabaja sobre una transformada CQT (constant-Q transform) de magnitud logarítmica que arranca en C2, cubre 6 octavas con 24 bins por octava y usa un hop de 512 muestras a 22,05 kHz. La salida son logits por frame sobre las 73 clases, que el autor decodifica con Viterbi sobre una matriz de transición bigrama almacenada en el propio checkpoint, aunque el argmax simple también funciona con una pequeña pérdida de precisión.
 
-Su relevancia en el ecosistema abierto reside en dos factores: es extremadamente ligero (checkpoint de menos de 2,5 MB y ejecución en CPU en torno a 16 ms para una ventana de 8 segundos en un Mac con chip de la serie M), y está entrenado sobre un corpus académico reproducible (GuitarSet, ISMIR 2018) con licencia CC BY 4.0, lo que lo hace fácilmente integrable en aplicaciones de escritorio o web sin GPU. El repositorio registra 21 descargas y 1 «like» en HuggingFace en el momento de la consulta.
+Su relevancia en el ecosistema abierto reside en dos factores: es extremadamente ligero (checkpoint de menos de 2,5 MB y ejecución en CPU en torno a 16 ms para una ventana de 8 segundos en un Mac con chip de la serie M), y está entrenado sobre un corpus académico reproducible (GuitarSet, ISMIR 2018) con licencia CC BY 4.0, lo que lo hace fácilmente integrable en aplicaciones de escritorio o web sin GPU. El repositorio registra 21 descargas y 1 «like» en Hugging Face en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ La model card solo proporciona comparacion interna contra un baseline de plantil
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento (majmin / sevenths) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alberto-chord-crnn (este modelo) | 482.025 | CQT, ventanas de 8 s | 0,689 / 0,575 | CC BY 4.0 | HuggingFace |
+| alberto-chord-crnn (este modelo) | 482.025 | CQT, ventanas de 8 s | 0,689 / 0,575 | CC BY 4.0 | Hugging Face |
 | Version anterior de 25 clases (mismo proyecto) | no disponible | CQT | 0,684 / 0,450 | no disponible | no disponible |
 | Baseline de plantillas binarias | no aplica | no disponible | 0,516 / 0,400 | no disponible | no disponible |
 
@@ -96,11 +96,11 @@ No se dispone de informacion sobre alternativas de terceros (por ejemplo, otros 
 - Licencia CC BY 4.0: permite uso comercial y modificacion, pero exige atribucion al autor y al corpus de entrenamiento (GuitarSet, tambien CC BY 4.0). Conviene citar adecuadamente ambos en productos derivados.
 - La model card no documenta sesgos demograficos ni de estilo mas alla de la restriccion de interprete, instrumento y microfono ya mencionada.
 - No se documentan datos de idioma porque el modelo no procesa texto; cualquier caso de uso multilingue es ajeno a este componente.
-- La interfaz de uso depende del codigo del repositorio alberto (`alberto/chords/model.py`), que no forma parte del checkpoint descargable de HuggingFace; quien integre el modelo debe replicar la arquitectura o importarla desde ese repositorio.
+- La interfaz de uso depende del codigo del repositorio alberto (`alberto/chords/model.py`), que no forma parte del checkpoint descargable de Hugging Face; quien integre el modelo debe replicar la arquitectura o importarla desde ese repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shawon/alberto-chord-crnn
+- Modelo en Hugging Face: https://huggingface.co/shawon/alberto-chord-crnn
 - Dataset GuitarSet (Xi, Bittner, Ye, Bello, ISMIR 2018; CC BY 4.0): https://zenodo.org/records/3371780
 - Repositorio del proyecto alberto (mencionado en la model card como origen de `alberto/chords/model.py`): no se proporciona URL en la informacion disponible.
 - Articulo o blog del modelo: no disponible.

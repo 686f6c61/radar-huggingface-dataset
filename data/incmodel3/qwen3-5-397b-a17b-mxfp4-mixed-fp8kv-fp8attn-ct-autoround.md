@@ -80,11 +80,11 @@ No se dispone de información suficiente para comparar directamente esta variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INCModel3/Qwen3.5-397B-A17B-MXFP4-Mixed-FP8KV-FP8Attn-CT-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/INCModel3/Qwen3.5-397B-A17B-MXFP4-Mixed-FP8KV-FP8Attn-CT-AutoRound
 - Modelo original Qwen3.5-397B-A17B: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Repositorio de auto-round (Intel): https://github.com/intel/auto-round
 - Paper de auto-round (arXiv): https://arxiv.org/abs/2309.05516
-- Página de Qwen3.5 en HuggingFace (colección): https://huggingface.co/collections/Qwen/qwen35
+- Página de Qwen3.5 en Hugging Face (colección): https://huggingface.co/collections/Qwen/qwen35
 - Documentación de Alibaba Cloud sobre Qwen3.5-397B-A17B: https://www.alibabacloud.com/help/en/model-studio/qwen3-5-397b-a17b
 - Blog de DataCamp sobre Qwen3.5: https://www.datacamp.com/blog/qwen3-5
 - Versión de AMD del mismo modelo cuantizado: https://huggingface.co/amd/Qwen3.5-397B-A17B-MXFP4

@@ -67,10 +67,10 @@ No se han publicado en la información disponible resultados comparativos frente
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step30 | 7,3B | no disponible | Apache 2.0 | HuggingFace (26 descargas) | Destilado OPD hacia Olmo-3.1-32B-Think; AIME 2025 35,00 |
-| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible en la información | no disponible en la información | HuggingFace (AI2) | Profesor del proceso; mayor capacidad esperada |
-| mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600 (estudiante base) | 7,3B | no disponible | Apache 2.0 | HuggingFace | Punto de partida del SFT; sin destilación OPD |
-| Olmo 3 base 7B (familia AI2) | ~7B | no disponible en la información | Apache 2.0 (según familia Olmo) | HuggingFace | Arquitectura de referencia del estudiante |
+| opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step30 | 7,3B | no disponible | Apache 2.0 | Hugging Face (26 descargas) | Destilado OPD hacia Olmo-3.1-32B-Think; AIME 2025 35,00 |
+| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible en la información | no disponible en la información | Hugging Face (AI2) | Profesor del proceso; mayor capacidad esperada |
+| mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600 (estudiante base) | 7,3B | no disponible | Apache 2.0 | Hugging Face | Punto de partida del SFT; sin destilación OPD |
+| Olmo 3 base 7B (familia AI2) | ~7B | no disponible en la información | Apache 2.0 (según familia Olmo) | Hugging Face | Arquitectura de referencia del estudiante |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de benchmarks queda como no disponible.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 - Sin likes ni pipeline declarado y con solo 26 descargas: comunidad reducida, sin validación externa independiente.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/mhseo2/opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step30
+- Hugging Face: https://huggingface.co/mhseo2/opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step30
 - Modelo base (SFT): https://huggingface.co/mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Código: árbol `mopdRL` (commit `f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4`, paquete `bsc-olmo-base-opd-2026-10-26`); no se proporciona URL en la información disponible.

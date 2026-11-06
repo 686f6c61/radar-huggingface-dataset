@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama3.1-8B-contam-calc es un ajuste fino completo (full fine-tuning) del modelo meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario jkxie en HuggingFace. El entrenamiento se realizó sobre el conjunto de datos MSCalc, según la propia model card, con el objetivo aparente de adaptar el modelo base a tareas de cálculo y razonamiento aritmético, aunque la ficha del autor no especifica con detalle ni el propósito exacto ni las capacidades resultantes. El repositorio tiene un tamaño de 16,1 GB y solo acumula 11 descargas y 0 interacciones, lo que indica que se trata de un experimento de investigación sin adopción comunitaria significativa.
+Llama3.1-8B-contam-calc es un ajuste fino completo (full fine-tuning) del modelo meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario jkxie en Hugging Face. El entrenamiento se realizó sobre el conjunto de datos MSCalc, según la propia model card, con el objetivo aparente de adaptar el modelo base a tareas de cálculo y razonamiento aritmético, aunque la ficha del autor no especifica con detalle ni el propósito exacto ni las capacidades resultantes. El repositorio tiene un tamaño de 16,1 GB y solo acumula 11 descargas y 0 interacciones, lo que indica que se trata de un experimento de investigación sin adopción comunitaria significativa.
 
 El modelo hereda la arquitectura del Llama 3.1 8B Instruct: un transformer decoder-only con 8.000 millones de parámetros, atención con Grouped Query Attention (GQA) y una ventana de contexto de 128.000 tokens. Al estar basado en la versión Instruct, parte de un modelo ya alineado mediante instrucciones y con soporte de conversación multi-turno, tool calling y capacidades multilingües. No se declaran parámetros activos porque no es un modelo de mezcla de expertos.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jkxie/Llama3.1-8B-contam-calc | ~8.000 M | 128.000 tokens | Fine-tuning completo de Llama 3.1 8B Instruct sobre MSCalc | other | HuggingFace, 11 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8.000 M | 128.000 tokens | Instruct alineado con RLHF/DPO | Llama 3.1 Community License | HuggingFace y multiples proveedores |
-| Qwen/Qwen2.5-7B-Instruct | 7.600 M | 128.000 tokens | Instruct multilingue | Apache 2.0 | HuggingFace y multiples proveedores |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7.200 M | 32.000 tokens | Instruct | Apache 2.0 | HuggingFace |
+| jkxie/Llama3.1-8B-contam-calc | ~8.000 M | 128.000 tokens | Fine-tuning completo de Llama 3.1 8B Instruct sobre MSCalc | other | Hugging Face, 11 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8.000 M | 128.000 tokens | Instruct alineado con RLHF/DPO | Llama 3.1 Community License | Hugging Face y multiples proveedores |
+| Qwen/Qwen2.5-7B-Instruct | 7.600 M | 128.000 tokens | Instruct multilingue | Apache 2.0 | Hugging Face y multiples proveedores |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7.200 M | 32.000 tokens | Instruct | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento comparado disponibles para el modelo objeto de esta ficha, por lo que la comparación se limita a parámetros, contexto, tipo y licencia. En igualdad de condiciones, los tres modelos de referencia cuentan con benchmarks publicados, comunidad activa y, en el caso de Qwen2.5 y Mistral, licencias permisivas para uso comercial.
 
@@ -88,7 +88,7 @@ No hay datos de rendimiento comparado disponibles para el modelo objeto de esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jkxie/Llama3.1-8B-contam-calc
+- Modelo en Hugging Face: https://huggingface.co/jkxie/Llama3.1-8B-contam-calc
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de Llama 3.1 (The Llama 3 Herd of Models): https://arxiv.org/abs/2407.21783
 - Repositorio de LLaMA-Factory, herramienta empleada para el ajuste: https://github.com/hiyouga/LLaMA-Factory

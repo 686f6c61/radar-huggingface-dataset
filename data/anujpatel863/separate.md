@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anujpatel863/Separate` es un repositorio subido por el usuario Anuj Patel en HuggingFace el 10 de diciembre de 2025. Las etiquetas (`tflite`, `onnx`) y el nombre del modelo sugieren que podría estar relacionado con tareas de segmentación o separación de modelos 3D, aunque no se ha publicado ninguna descripción oficial, documentación técnica ni tarjeta de modelo. El repositorio tiene un tamaño de 31.4 GB, lo que indica que contiene pesos de un modelo considerable, probablemente en formatos TensorFlow Lite y ONNX. A pesar de la relevancia potencial en el ámbito de la IA aplicada a gráficos 3D, no existe información verificable sobre su arquitectura, entrenamiento o capacidades. En el momento de la consulta, el modelo cuenta con 1 descarga y 0 likes, lo que sugiere que no ha sido ampliamente adoptado ni evaluado por la comunidad.
+El modelo `anujpatel863/Separate` es un repositorio subido por el usuario Anuj Patel en Hugging Face el 10 de diciembre de 2025. Las etiquetas (`tflite`, `onnx`) y el nombre del modelo sugieren que podría estar relacionado con tareas de segmentación o separación de modelos 3D, aunque no se ha publicado ninguna descripción oficial, documentación técnica ni tarjeta de modelo. El repositorio tiene un tamaño de 31.4 GB, lo que indica que contiene pesos de un modelo considerable, probablemente en formatos TensorFlow Lite y ONNX. A pesar de la relevancia potencial en el ámbito de la IA aplicada a gráficos 3D, no existe información verificable sobre su arquitectura, entrenamiento o capacidades. En el momento de la consulta, el modelo cuenta con 1 descarga y 0 likes, lo que sugiere que no ha sido ampliamente adoptado ni evaluado por la comunidad.
 
 ## Especificaciones técnicas
 

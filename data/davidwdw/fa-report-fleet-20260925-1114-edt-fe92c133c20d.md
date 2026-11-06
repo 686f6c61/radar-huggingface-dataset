@@ -88,7 +88,7 @@ No disponible. No se conocen modelos comparables porque el repositorio no contie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-report-fleet-20260925-1114-edt-fe92c133c20d
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-report-fleet-20260925-1114-edt-fe92c133c20d
 
 No se han encontrado enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web. Los resultados devueltos por dicha búsqueda no están relacionados con el artefacto y se listan solo a efectos de trazabilidad:
 

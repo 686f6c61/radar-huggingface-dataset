@@ -68,7 +68,7 @@ No se dispone de datos comparativos con otros modelos (ni benchmarks ni especifi
 
 ## Enlaces
 
-- [HuggingFace: FRPO/qwen3-1.7b-a15_global_token_norm-k1-cNone-globalTokNorm-clip0.2-mb4-eta100-bs256x5-n2-seed1](https://huggingface.co/FRPO/qwen3-1.7b-a15_global_token_norm-k1-cNone-globalTokNorm-clip0.2-mb4-eta100-bs256x5-n2-seed1)
+- [Hugging Face: FRPO/qwen3-1.7b-a15_global_token_norm-k1-cNone-globalTokNorm-clip0.2-mb4-eta100-bs256x5-n2-seed1](https://huggingface.co/FRPO/qwen3-1.7b-a15_global_token_norm-k1-cNone-globalTokNorm-clip0.2-mb4-eta100-bs256x5-n2-seed1)
 - [Framework verl (Volcengine)](https://github.com/volcengine/verl)
 - [Modelo base: Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - No se han encontrado papers, blogs o demos adicionales sobre FRPO o este experimento concreto.

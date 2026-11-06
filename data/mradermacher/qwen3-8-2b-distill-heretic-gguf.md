@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/Qwen3.8-2B-Distill-heretic-GGUF` es una distribucion de cuantizaciones GGUF generada por mradermacher (nethype GmbH) a partir del modelo `htb-ac-1424625/Qwen3.8-2B-Distill-heretic`. No se trata de un modelo entrenado desde cero, sino de una conversion y cuantizacion estatica del checkpoint original en formato HuggingFace, publicada bajo licencia Apache 2.0 y pensada para inferencia local en llama.cpp y derivados.
+`mradermacher/Qwen3.8-2B-Distill-heretic-GGUF` es una distribucion de cuantizaciones GGUF generada por mradermacher (nethype GmbH) a partir del modelo `htb-ac-1424625/Qwen3.8-2B-Distill-heretic`. No se trata de un modelo entrenado desde cero, sino de una conversion y cuantizacion estatica del checkpoint original en formato Hugging Face, publicada bajo licencia Apache 2.0 y pensada para inferencia local en llama.cpp y derivados.
 
 El modelo subyacente tiene 1.881.825.088 parametros (aproximadamente 1,88 mil millones) y se presenta como un derivado destilado de la familia Qwen3.8, con ajuste fino supervisado (SFT) orientado a razonamiento y function calling. La etiqueta "heretic" junto con "abliterated", "decensored" y "uncensored" indica que se ha aplicado una intervencion de decensurado o abliteracion sobre el modelo original, es decir, la eliminacion o atenuacion de comportamientos de rechazo aprendidos durante el alineamiento.
 
@@ -68,7 +68,7 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| Qwen3.8-2B-Distill-heretic (GGUF de mradermacher) | 1,88B | No disponible | Apache 2.0 | GGUF en HuggingFace, 13 variantes de cuantizacion | No disponible |
+| Qwen3.8-2B-Distill-heretic (GGUF de mradermacher) | 1,88B | No disponible | Apache 2.0 | GGUF en Hugging Face, 13 variantes de cuantizacion | No disponible |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

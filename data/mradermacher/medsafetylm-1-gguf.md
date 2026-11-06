@@ -21,7 +21,7 @@ El modelo base tiene 3.880.263.168 parámetros (aproximadamente 3,88 mil millone
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base HealthSafetyLM-BR. Los tags de HuggingFace indican que fue entrenado con QLoRA, una tecnica de fine-tuning de bajo rango que reduce los requisitos de memoria. El modelo esta disenado para tareas de seguridad y moderacion de contenido medico, lo que sugiere que fue afinado sobre un corpus especializado en ese dominio. Sin embargo, no se han publicado detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base HealthSafetyLM-BR. Los tags de Hugging Face indican que fue entrenado con QLoRA, una tecnica de fine-tuning de bajo rango que reduce los requisitos de memoria. El modelo esta disenado para tareas de seguridad y moderacion de contenido medico, lo que sugiere que fue afinado sobre un corpus especializado en ese dominio. Sin embargo, no se han publicado detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
 
 Esta version GGUF es una cuantizacion estatica realizada por mradermacher, que convierte los pesos originales a formatos de menor precision para reducir el tamano y acelerar la inferencia. No se incluyen cuantizaciones con imatrix en el momento de la publicacion, segun indica el autor.
 
@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace de MedSafetyLM-1-GGUF: https://huggingface.co/mradermacher/MedSafetyLM-1-GGUF
+- Repositorio Hugging Face de MedSafetyLM-1-GGUF: https://huggingface.co/mradermacher/MedSafetyLM-1-GGUF
 - Modelo base HealthSafetyLM-BR: https://huggingface.co/Larxel/HealthSafetyLM-BR
 - Guia de uso de GGUF de TheBloke (referencia): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

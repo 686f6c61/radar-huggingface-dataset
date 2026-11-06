@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Base | Tipo | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| vuln-detector-llama-3.2-1b-instruct | Llama 3.2 1B Instruct | Adaptador LoRA | No disponible | No disponible | No disponible | HuggingFace |
-| cycloevan/vuln_detector | Llama 3.2 1B Instruct | Modelo fine-tuned (merged) | No disponible | No disponible | No disponible | HuggingFace |
-| gemma-4-vulnerability-detector | Gemma 4 (presumiblemente) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| vuln-detector-llama-3.2-1b-instruct | Llama 3.2 1B Instruct | Adaptador LoRA | No disponible | No disponible | No disponible | Hugging Face |
+| cycloevan/vuln_detector | Llama 3.2 1B Instruct | Modelo fine-tuned (merged) | No disponible | No disponible | No disponible | Hugging Face |
+| gemma-4-vulnerability-detector | Gemma 4 (presumiblemente) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 La información disponible no permite una comparativa completa; los tres modelos comparten el propósito de detección de vulnerabilidades, pero carecen de especificaciones publicadas.
 

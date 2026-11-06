@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un checkpoint de modelo de lenguaje publicado en HuggingFace por el usuario mhseo2, etiquetado con la familia Qwen3 y distribuido en formato safetensors. El recuento real de parametros almacenados asciende a 8.190.735.360 (aproximadamente 8,19 mil millones) y el repositorio ocupa 16,4 GB, un tamano coherente con pesos en precision BF16. El identificador del repositorio sugiere que se trata de un checkpoint intermedio (el sufijo "step20") obtenido a partir de un proceso de entrenamiento o destilacion sobre una base identificada como "qwen3moe30b", aunque esta circunstancia no esta confirmada por ninguna ficha tecnica oficial.
+Se trata de un checkpoint de modelo de lenguaje publicado en Hugging Face por el usuario mhseo2, etiquetado con la familia Qwen3 y distribuido en formato safetensors. El recuento real de parametros almacenados asciende a 8.190.735.360 (aproximadamente 8,19 mil millones) y el repositorio ocupa 16,4 GB, un tamano coherente con pesos en precision BF16. El identificador del repositorio sugiere que se trata de un checkpoint intermedio (el sufijo "step20") obtenido a partir de un proceso de entrenamiento o destilacion sobre una base identificada como "qwen3moe30b", aunque esta circunstancia no esta confirmada por ninguna ficha tecnica oficial.
 
 El modelo no incluye model card, no declara pipeline de inferencia, licencia ni idiomas soportados, y acumula un numero muy bajo de descargas (13) y cero likes en el momento de la consulta. Estas caracteristicas lo situan en la categoria de artefactos de investigacion publicados sin documentacion, orientados a experimentacion interna mas que a uso en produccion.
 
@@ -50,7 +50,7 @@ Dado que no existe documentacion funcional, los casos de uso solo pueden plantea
 - Pruebas de razonamiento matematico: el segmento "ot3math" del identificador sugiere un posible enfoque en matematicas, lo que lo hace candidato para banco de pruebas en tareas aritmeticas, previa validacion.
 - Reproduccion de pipelines de entrenamiento: util para quienes replican flujos de ajuste fino por etapas y necesitan checkpoints intermedios como referencia.
 - Benchmarking interno de infraestructura: al ser un modelo de 8,19 B en BF16 (16,4 GB), sirve para medir throughput y latencia de frameworks de inferencia sobre un tamano manejable.
-- Analisis de artefactos sin model card: caso de estudio sobre higiene de publicacion en HuggingFace y riesgos de reutilizar checkpoints sin licencia declarada.
+- Analisis de artefactos sin model card: caso de estudio sobre higiene de publicacion en Hugging Face y riesgos de reutilizar checkpoints sin licencia declarada.
 
 ## Benchmarks y rendimiento
 
@@ -74,10 +74,10 @@ Los valores de los modelos de referencia proceden de su documentacion publica; l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mhseo2/opd_klear8b_qwen3moe30b_ot3math_rklrest32-step20 | 8,19 B | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen3-8B | 8,2 B | 32.768 tokens nativos (ampliable a 131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente documentado |
-| Qwen3-30B-A3B | 30,5 B totales / 3,3 B activos | 32.768 tokens nativos (ampliable a 131.072) | Apache 2.0 | HuggingFace, ampliamente documentado |
-| seomh/opd-klear8b-qwen3moe30b-ot3math-step190 | 8 B | no disponible | no disponible | HuggingFace, safetensors |
+| mhseo2/opd_klear8b_qwen3moe30b_ot3math_rklrest32-step20 | 8,19 B | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen3-8B | 8,2 B | 32.768 tokens nativos (ampliable a 131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente documentado |
+| Qwen3-30B-A3B | 30,5 B totales / 3,3 B activos | 32.768 tokens nativos (ampliable a 131.072) | Apache 2.0 | Hugging Face, ampliamente documentado |
+| seomh/opd-klear8b-qwen3moe30b-ot3math-step190 | 8 B | no disponible | no disponible | Hugging Face, safetensors |
 
 No es posible establecer una comparacion de rendimiento porque este checkpoint no publica benchmarks.
 
@@ -95,7 +95,7 @@ No es posible establecer una comparacion de rendimiento porque este checkpoint n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_klear8b_qwen3moe30b_ot3math_rklrest32-step20
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_klear8b_qwen3moe30b_ot3math_rklrest32-step20
 - Checkpoint relacionado de la misma serie (step190): https://huggingface.co/seomh/opd-klear8b-qwen3moe30b-ot3math-step190
 - Checkpoint relacionado de la misma serie (step160): https://huggingface.co/seomh/opd-klear8b-qwen3moe30b-ot3math-step160
 - Documentacion de la familia Qwen3: no disponible en los resultados de busqueda proporcionados

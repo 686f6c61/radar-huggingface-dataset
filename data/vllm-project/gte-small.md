@@ -88,7 +88,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - VRAM estimada para inferencia: inferior a 1 GB en precision FP32 (33,3 M de parametros, aproximadamente 133 MB de pesos); en FP16 alrededor de 67 MB. La VRAM adicional depende del tamano del lote y de la longitud de las secuencias.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; se puede ejecutar en RTX 3060, RTX 4090, A100, H100 sin problemas. Tambien es viable en CPU para cargas moderadas.
 - Cabe en cualquier GPU consumer actual e incluso en dispositivos de borde (la disponibilidad de formato CoreML y ONNX sugiere despliegue en movil y navegador).
-- Opciones de despliegue: sentence-transformers (Python), text-embeddings-inference (TEI), ONNX Runtime, OpenVINO, CoreML, TensorFlow Serving. Compatible con endpoints de HuggingFace.
+- Opciones de despliegue: sentence-transformers (Python), text-embeddings-inference (TEI), ONNX Runtime, OpenVINO, CoreML, TensorFlow Serving. Compatible con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Dado el tamano del modelo, se espera un throughput alto en GPU (miles de frases por segundo en lote), pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
@@ -115,7 +115,7 @@ Los datos de all-MiniLM-L6-v2, bge-small-en-v1.5 y e5-small-v2 provienen del con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/gte-small
+- Hugging Face: https://huggingface.co/vllm-project/gte-small
 - Paper de referencia: https://arxiv.org/abs/2308.03281
 - Repositorio original de la familia GTE (Alibaba DAMO): no disponible en la informacion proporcionada.
 - Documentacion de sentence-transformers: no disponible en la informacion proporcionada.

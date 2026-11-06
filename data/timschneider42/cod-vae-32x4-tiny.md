@@ -81,10 +81,10 @@ La configuracion 16x8 se cualifico contra un umbral minimo de 0,75 de IoU volume
 
 | Modelo | Parametros | Forma latente | IoU volumetrico (ABC) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cod-vae-32x4-tiny (este) | ~6,5 M | 32 x 4 | 0,7161 | MIT | HuggingFace |
-| cod-vae-32x4 | no disponible en la informacion | 32 x 4 | 0,831 | MIT | HuggingFace |
-| cod-vae-16x8-small | ~35 M | 16 x 8 | 0,75 (umbral de cualificacion) | MIT | HuggingFace |
-| cod-vae-16x8 (completo) | no disponible en la informacion | 16 x 8 | no disponible | MIT | HuggingFace |
+| cod-vae-32x4-tiny (este) | ~6,5 M | 32 x 4 | 0,7161 | MIT | Hugging Face |
+| cod-vae-32x4 | no disponible en la informacion | 32 x 4 | 0,831 | MIT | Hugging Face |
+| cod-vae-16x8-small | ~35 M | 16 x 8 | 0,75 (umbral de cualificacion) | MIT | Hugging Face |
+| cod-vae-16x8 (completo) | no disponible en la informacion | 16 x 8 | no disponible | MIT | Hugging Face |
 
 Todos comparten la misma familia y licencia MIT. El modelo completo ofrece mejor IoU pero decodifica aproximadamente 33 veces mas lento; el `-small` es el punto intermedio con ~35 M de parametros.
 
@@ -101,7 +101,7 @@ Todos comparten la misma familia y licencia MIT. El modelo completo ofrece mejor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimSchneider42/cod-vae-32x4-tiny
+- Modelo en Hugging Face: https://huggingface.co/TimSchneider42/cod-vae-32x4-tiny
 - Modelo hermano (misma forma latente): https://huggingface.co/TimSchneider42/cod-vae-32x4
 - Modelo de referencia intermedio: https://huggingface.co/TimSchneider42/cod-vae-16x8-small
 - Paper COD-VAE (Cho et al., ICCV 2025): https://arxiv.org/abs/2503.08737

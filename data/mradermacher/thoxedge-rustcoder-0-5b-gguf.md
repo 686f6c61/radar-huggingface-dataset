@@ -81,7 +81,7 @@ La comparacion se limita a la categoria de modelos pequenos de codigo. No se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones): https://huggingface.co/mradermacher/ThoxEdge-RustCoder-0.5B-GGUF
+- Repositorio Hugging Face (cuantizaciones): https://huggingface.co/mradermacher/ThoxEdge-RustCoder-0.5B-GGUF
 - Modelo base: https://huggingface.co/Thox-ai/ThoxEdge-RustCoder-0.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Fortytwo-Network/Strandset-Rust-v1
 - Pagina de conveniencia del cuantizador: https://hf.tst.eu/model#ThoxEdge-RustCoder-0.5B-GGUF

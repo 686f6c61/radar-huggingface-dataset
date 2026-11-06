@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Higgs-TTS-3-4b-ViNV-LoRA-B12 es un adaptador LoRA (Low-Rank Adaptation) de rango 16 entrenado sobre el modelo base multimodalart/higgs-audio-v3-tts-4b-transformers, un sistema de síntesis de voz (text-to-speech) de 4.000 millones de parámetros. Lo publica el usuario trinhtrantran122 en HuggingFace y su finalidad es generar voz en vietnamita incorporando sonidos no verbales (risa, suspiro, resoplido y carraspeo) mediante tokens especiales del tipo `<|sfx:laughter|>`, `<|sfx:sigh|>`, `<|sfx:sniff|>` y `<|sfx:cough|>`. Se entrenó sobre el conjunto ViNV-TTS de la competición VLSP 2026.
+Higgs-TTS-3-4b-ViNV-LoRA-B12 es un adaptador LoRA (Low-Rank Adaptation) de rango 16 entrenado sobre el modelo base multimodalart/higgs-audio-v3-tts-4b-transformers, un sistema de síntesis de voz (text-to-speech) de 4.000 millones de parámetros. Lo publica el usuario trinhtrantran122 en Hugging Face y su finalidad es generar voz en vietnamita incorporando sonidos no verbales (risa, suspiro, resoplido y carraspeo) mediante tokens especiales del tipo `<|sfx:laughter|>`, `<|sfx:sigh|>`, `<|sfx:sniff|>` y `<|sfx:cough|>`. Se entrenó sobre el conjunto ViNV-TTS de la competición VLSP 2026.
 
 Una particularidad decisiva: el propio autor advierte en la model card que NO recomienda su uso. El adaptador obtiene resultados peores que el modelo base en el conjunto de desarrollo de VLSP 2026 (120 frases), y el loss de entrenamiento prácticamente no desciende (de 4,51 a 4,59). Se publica únicamente como referencia y para permitir su reproducción, no como solución para producción ni para presentar a la competición.
 
@@ -80,8 +80,8 @@ La información disponible solo permite comparar de forma directa con el modelo 
 
 | Modelo | Parametros | Contexto | Rendimiento (VLSP 2026 dev) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Higgs-TTS-3-4b-ViNV-LoRA-B12 | LoRA rank 16 sobre 4B | no disponible | 0,375 / WER 0,215 / pMOS 3,03 / SS 0,63 | bosonai-higgs-audio-v3 | HuggingFace (0 descargas) |
-| multimodalart/higgs-audio-v3-tts-4b-transformers (base) | 4B | no disponible | 0,468 / WER 0,146 / pMOS 3,33 / SS 0,74 | bosonai-higgs-audio-v3 | HuggingFace |
+| Higgs-TTS-3-4b-ViNV-LoRA-B12 | LoRA rank 16 sobre 4B | no disponible | 0,375 / WER 0,215 / pMOS 3,03 / SS 0,63 | bosonai-higgs-audio-v3 | Hugging Face (0 descargas) |
+| multimodalart/higgs-audio-v3-tts-4b-transformers (base) | 4B | no disponible | 0,468 / WER 0,146 / pMOS 3,33 / SS 0,74 | bosonai-higgs-audio-v3 | Hugging Face |
 | Otros modelos TTS en vietnamita | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos sobre alternativas comparables de la misma categoría (TTS en vietnamita con sonidos no verbales).
@@ -100,7 +100,7 @@ No se dispone de datos sobre alternativas comparables de la misma categoría (TT
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/trinhtrantran122/Higgs-TTS-3-4b-ViNV-LoRA-B12
+- Hugging Face del adaptador: https://huggingface.co/trinhtrantran122/Higgs-TTS-3-4b-ViNV-LoRA-B12
 - Modelo base: https://huggingface.co/multimodalart/higgs-audio-v3-tts-4b-transformers
 - Licencia del modelo base: https://huggingface.co/multimodalart/higgs-audio-v3-tts-4b-transformers/blob/main/LICENSE
 - Herramienta de ajuste fino: https://huggingface.co/tuanh123789/Higgs-tts-3-finetune (commit c79f245)

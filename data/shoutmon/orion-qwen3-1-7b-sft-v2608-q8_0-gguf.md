@@ -6,7 +6,7 @@ El modelo `shoutmon/Orion-Qwen3-1.7B-SFT-v2608-Q8_0-GGUF` es una conversión a f
 
 Al tratarse de un modelo de 1.700 millones de parámetros cuantizado a Q8_0, el archivo pesa aproximadamente 1,8 GB, lo que lo hace adecuado para despliegues en hardware modesto, como portátiles o GPUs de gama media. La relevancia actual radica en la creciente demanda de modelos pequeños y eficientes para inferencia local, especialmente en tareas de generación de texto y asistentes conversacionales donde no se requiere una capacidad extrema.
 
-Sin embargo, la información pública sobre el modelo original es escasa: no se han publicado detalles sobre el proceso de fine-tuning, los datos de entrenamiento, la licencia ni los idiomas soportados. Esta ficha se basa únicamente en los datos disponibles en el repositorio de HuggingFace y en las referencias encontradas en la web.
+Sin embargo, la información pública sobre el modelo original es escasa: no se han publicado detalles sobre el proceso de fine-tuning, los datos de entrenamiento, la licencia ni los idiomas soportados. Esta ficha se basa únicamente en los datos disponibles en el repositorio de Hugging Face y en las referencias encontradas en la web.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparativa directa no es posible sin datos de rendimiento del fine-tuning. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shoutmon/Orion-Qwen3-1.7B-SFT-v2608-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/shoutmon/Orion-Qwen3-1.7B-SFT-v2608-Q8_0-GGUF
 - Modelo original (base): https://huggingface.co/3tic/Orion-Qwen3-1.7B-SFT-v2608
 - Herramienta de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

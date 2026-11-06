@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mfielding92/thefriend-27b-091226-lora` es un repositorio de pesos publicado por el usuario mfielding92 en HuggingFace, distribuido con licencia Apache 2.0 y etiquetado para la libreria `transformers`. Segun los metadatos, se trata de un ajuste fino derivado del modelo `mfielding92/thefriend-27b-v3-qvo`, y el sufijo `-lora` del nombre, junto con el tamano del repositorio (1,4 GB), apunta a que contiene un adaptador LoRA y no los pesos completos del modelo. Esta interpretacion no se confirma en la model card, que se limita a indicar el autor, la licencia y el modelo de partida.
+`mfielding92/thefriend-27b-091226-lora` es un repositorio de pesos publicado por el usuario mfielding92 en Hugging Face, distribuido con licencia Apache 2.0 y etiquetado para la libreria `transformers`. Segun los metadatos, se trata de un ajuste fino derivado del modelo `mfielding92/thefriend-27b-v3-qvo`, y el sufijo `-lora` del nombre, junto con el tamano del repositorio (1,4 GB), apunta a que contiene un adaptador LoRA y no los pesos completos del modelo. Esta interpretacion no se confirma en la model card, que se limita a indicar el autor, la licencia y el modelo de partida.
 
 El unico dato tecnico de arquitectura disponible es la etiqueta `qwen3_5` del repositorio, que sugiere una ascendencia de la familia Qwen 3.5, si bien no hay confirmacion explicita en la documentacion ni se especifican el numero de parametros, la longitud de contexto o la composicion del dataset de entrenamiento. El nombre del modelo incluye "27b", lo que apunta a un modelo de aproximadamente 27 000 millones de parametros, pero se trata de una inferencia a partir del nombre y no de un dato verificado.
 
@@ -27,7 +27,7 @@ La relevancia de esta ficha es limitada y conviene ser explicitos: el repositori
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificada sobre la arquitectura interna. Las etiquetas del repositorio incluyen `qwen3_5`, lo que situa el linaje en la familia Qwen 3.5, y `trl`, que indica el uso de la libreria TRL de HuggingFace para el ajuste fino. La model card afirma que el modelo "fue entrenado 2x mas rapido con Unsloth", lo que confirma el uso de ese framework de entrenamiento optimizado, pero no aporta detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el metodo de alineacion (SFT, DPO, RLHF) ni hiperparametros como el rango del adaptador.
+No se dispone de informacion verificada sobre la arquitectura interna. Las etiquetas del repositorio incluyen `qwen3_5`, lo que situa el linaje en la familia Qwen 3.5, y `trl`, que indica el uso de la libreria TRL de Hugging Face para el ajuste fino. La model card afirma que el modelo "fue entrenado 2x mas rapido con Unsloth", lo que confirma el uso de ese framework de entrenamiento optimizado, pero no aporta detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el metodo de alineacion (SFT, DPO, RLHF) ni hiperparametros como el rango del adaptador.
 
 Tampoco se documenta ninguna innovacion tecnica especifica: no hay mencion a atencion lineal, decodificacion especulativa, mezcla de expertos ni variantes hibridas. El unico elemento estructural deducible es que, si se trata efectivamente de un adaptador LoRA, su uso requiere fusionarlo con `mfielding92/thefriend-27b-v3-qvo` o cargarlo como adaptador PEFT sobre dicho modelo base, y que su comportamiento final dependera en gran medida de las caracteristicas del modelo base, del cual tampoco se ofrece documentacion tecnica en la informacion disponible.
 
@@ -39,7 +39,7 @@ Tampoco se documenta ninguna innovacion tecnica especifica: no hay mencion a ate
 - Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta).
 - Capacidades multilingues: no disponibles; el repositorio declara unicamente ingles.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatibilidad con Text Generation Inference: la etiqueta `text-generation-inference` y `endpoints_compatible` indican que el repositorio esta preparado para desplegarse con TGI y en Inference Endpoints de HuggingFace.
+- Compatibilidad con Text Generation Inference: la etiqueta `text-generation-inference` y `endpoints_compatible` indican que el repositorio esta preparado para desplegarse con TGI y en Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -75,8 +75,8 @@ No es posible establecer una comparativa rigurosa con la informacion disponible:
 
 | Modelo | Parametros | Contexto | Licencia | Datos de rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| mfielding92/thefriend-27b-091226-lora | no disponible (~27B por nombre) | no disponible | apache-2.0 | no publicados | HuggingFace, 0 descargas |
-| mfielding92/thefriend-27b-v3-qvo (base) | no disponible | no disponible | no disponible | no publicados | HuggingFace |
+| mfielding92/thefriend-27b-091226-lora | no disponible (~27B por nombre) | no disponible | apache-2.0 | no publicados | Hugging Face, 0 descargas |
+| mfielding92/thefriend-27b-v3-qvo (base) | no disponible | no disponible | no disponible | no publicados | Hugging Face |
 | Alternativas de la misma categoria (aprox. 27B, familia Qwen u otras) | no disponible | no disponible | no disponible | no disponible | no verificable en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No es posible establecer una comparativa rigurosa con la informacion disponible:
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mfielding92/thefriend-27b-091226-lora
+- Repositorio Hugging Face: https://huggingface.co/mfielding92/thefriend-27b-091226-lora
 - Modelo base: https://huggingface.co/mfielding92/thefriend-27b-v3-qvo
 - Unsloth (framework de entrenamiento citado en la model card): https://github.com/unslothai/unsloth
 - Busqueda web: no se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo. Los unicos resultados devueltos han sido irrelevantes (un enlace a la interfaz web de un proveedor de correo).

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_1_traj_len_4096_bf10_ckpt-10000` es un checkpoint de 3.075 millones de parámetros subido a HuggingFace Hub por el usuario `yongchanskii`. El nombre sugiere que se trata de una variante del modelo SmolLM3-3B, posiblemente obtenida mediante un proceso de fusión (merge) o destilación con un componente "student" y una pérdida de entropía cruzada (ce), pero la model card no aporta ninguna información técnica adicional. El repositorio contiene únicamente los pesos en formato `safetensors` (6,2 GB) y está etiquetado para generación de texto y uso conversacional.
+El modelo `yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_1_traj_len_4096_bf10_ckpt-10000` es un checkpoint de 3.075 millones de parámetros subido a Hugging Face Hub por el usuario `yongchanskii`. El nombre sugiere que se trata de una variante del modelo SmolLM3-3B, posiblemente obtenida mediante un proceso de fusión (merge) o destilación con un componente "student" y una pérdida de entropía cruzada (ce), pero la model card no aporta ninguna información técnica adicional. El repositorio contiene únicamente los pesos en formato `safetensors` (6,2 GB) y está etiquetado para generación de texto y uso conversacional.
 
-La ficha pública es una plantilla automática de HuggingFace sin rellenar, por lo que no se dispone de detalles sobre arquitectura, entrenamiento, licencia o rendimiento. A pesar de su nombre evocador, no hay documentación que respalde su origen o sus capacidades. Este modelo parece ser un experimento de investigación sin una publicación asociada ni instrucciones de uso.
+La ficha pública es una plantilla automática de Hugging Face sin rellenar, por lo que no se dispone de detalles sobre arquitectura, entrenamiento, licencia o rendimiento. A pesar de su nombre evocador, no hay documentación que respalde su origen o sus capacidades. Este modelo parece ser un experimento de investigación sin una publicación asociada ni instrucciones de uso.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La ficha pública es una plantilla automática de HuggingFace sin rellenar, por 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo. El nombre del repositorio incluye "smollm3-3b", lo que sugiere que podría estar basado en la familia SmolLM3 de HuggingFace, pero no hay confirmación oficial. Tampoco se documentan los datos de entrenamiento, el número de tokens, el proceso de alineación (RLHF, DPO, etc.) ni ninguna innovación técnica. La model card es una plantilla vacía con campos "More Information Needed".
+No se ha publicado ninguna información sobre la arquitectura del modelo. El nombre del repositorio incluye "smollm3-3b", lo que sugiere que podría estar basado en la familia SmolLM3 de Hugging Face, pero no hay confirmación oficial. Tampoco se documentan los datos de entrenamiento, el número de tokens, el proceso de alineación (RLHF, DPO, etc.) ni ninguna innovación técnica. La model card es una plantilla vacía con campos "More Information Needed".
 
 ## Capacidades
 
@@ -57,6 +57,6 @@ No disponible. No se conocen modelos comparables al no existir documentación so
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_1_traj_len_4096_bf10_ckpt-10000)
+- [Modelo en Hugging Face](https://huggingface.co/yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_1_traj_len_4096_bf10_ckpt-10000)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) asociados a este modelo.

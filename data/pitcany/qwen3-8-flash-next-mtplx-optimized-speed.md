@@ -18,7 +18,7 @@ La variante "Optimized Speed" mantiene las proyecciones de Qwen Sparse Attention
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | 4-bit con grupos de 64 pesos (expertos MoE y matrices densas); 8-bit en proyecciones QSA; 16-bit en convolución GDN, estado recurrente, normas, indexador QSA y cabezal MTP |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (MLX); sidecar `ngram-table.safetensors` de 32 GB; runtime `mtplx_runtime.json` |
 
 ## Arquitectura y entrenamiento
@@ -88,9 +88,9 @@ Multiplicador especulativo: 73,5 tok/s con MTP frente a 43,8 tok/s en autorregre
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-MTPLX-Optimized-Speed (este) | 126,2B totales, ~6B activos (según "125B-A6B") | 262.144 | qwen-community-1.0 | HuggingFace, MLX/MTPLX para Apple Silicon | 4-bit con QSA en 8-bit, pico de 87 GiB |
-| Qwen3.8-Flash-Next-MTPLX-Bare-Speed | mismo modelo base | 262.144 | qwen-community-1.0 | HuggingFace, MLX/MTPLX | Cuantización más agresiva, pico de 78 GiB, apta para Macs de 96 GB |
-| Qwen/Qwen3.8-Flash-Next (base) | 126,2B totales | 262.144 | qwen-community-1.0 | HuggingFace | Pesos sin cuantizar del autor original; sin empaquetado MTPLX |
+| Qwen3.8-Flash-Next-MTPLX-Optimized-Speed (este) | 126,2B totales, ~6B activos (según "125B-A6B") | 262.144 | qwen-community-1.0 | Hugging Face, MLX/MTPLX para Apple Silicon | 4-bit con QSA en 8-bit, pico de 87 GiB |
+| Qwen3.8-Flash-Next-MTPLX-Bare-Speed | mismo modelo base | 262.144 | qwen-community-1.0 | Hugging Face, MLX/MTPLX | Cuantización más agresiva, pico de 78 GiB, apta para Macs de 96 GB |
+| Qwen/Qwen3.8-Flash-Next (base) | 126,2B totales | 262.144 | qwen-community-1.0 | Hugging Face | Pesos sin cuantizar del autor original; sin empaquetado MTPLX |
 
 No se dispone de datos de benchmarks estándar ni de comparativas con modelos de otros fabricantes en la información proporcionada.
 
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks estándar ni de comparativas con modelos de
 
 ## Enlaces
 
-- HuggingFace del pack: https://huggingface.co/pitcany/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed
+- Hugging Face del pack: https://huggingface.co/pitcany/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante Bare Speed: https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Bare-Speed
 - MTPLX: https://mtplx.com

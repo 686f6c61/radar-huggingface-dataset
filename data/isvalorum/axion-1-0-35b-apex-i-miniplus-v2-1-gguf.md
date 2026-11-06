@@ -89,7 +89,7 @@ La comparacion con modelos de otros fabricantes no esta disponible en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/IsValorum/Axion-1.0-35B-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/IsValorum/Axion-1.0-35B-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/Axion1-0/Axion-1.0-35B
 - Cuantizacion NanoPlus de la misma familia: https://huggingface.co/IsValorum/Axion-1.0-35B-APEX-I-NanoPlus-V2.1-GGUF
 - Repositorio GGUF upstream con mmproj: https://huggingface.co/prithivMLmods/Axion-1.0-35B-GGUF

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Gemma4-12B-ASR-E2-BF16 es un ajuste fino (fine-tuning) del modelo Gemma 4 de 12 mil millones de parámetros, publicado por el usuario taharmasmaliyev07 en HuggingFace. El modelo se distribuye en precisión BF16 con pesos en formato safetensors y está etiquetado con la arquitectura `gemma4_unified`, lo que indica que se trata de un modelo multimodal capaz de procesar entradas de imagen y texto (`image-text-to-text`). El nombre del repositorio incluye el sufijo "ASR", lo que sugiere un ajuste orientado a tareas de reconocimiento automático de voz, aunque la model card no documenta el proceso de entrenamiento ni el dataset utilizado.
+Gemma4-12B-ASR-E2-BF16 es un ajuste fino (fine-tuning) del modelo Gemma 4 de 12 mil millones de parámetros, publicado por el usuario taharmasmaliyev07 en Hugging Face. El modelo se distribuye en precisión BF16 con pesos en formato safetensors y está etiquetado con la arquitectura `gemma4_unified`, lo que indica que se trata de un modelo multimodal capaz de procesar entradas de imagen y texto (`image-text-to-text`). El nombre del repositorio incluye el sufijo "ASR", lo que sugiere un ajuste orientado a tareas de reconocimiento automático de voz, aunque la model card no documenta el proceso de entrenamiento ni el dataset utilizado.
 
-El modelo resuelve el problema de adaptar un modelo base multimodal de propósito general a una tarea concreta mediante fine-tuning supervisado. Se ha entrenado con Unsloth y la librería TRL de HuggingFace, herramientas que permiten reducir el coste computacional del ajuste fino. El repositorio tiene un tamaño de 24,2 GB y acumula 24 descargas en el momento de la consulta.
+El modelo resuelve el problema de adaptar un modelo base multimodal de propósito general a una tarea concreta mediante fine-tuning supervisado. Se ha entrenado con Unsloth y la librería TRL de Hugging Face, herramientas que permiten reducir el coste computacional del ajuste fino. El repositorio tiene un tamaño de 24,2 GB y acumula 24 descargas en el momento de la consulta.
 
 La relevancia de este modelo es limitada y debe interpretarse con cautela: se trata de una publicación de un usuario individual, sin model card detallada, sin benchmarks publicados y con una licencia Apache 2.0 heredada del modelo base. Es útil como ejemplo de fine-tuning eficiente de modelos multimodales, pero no debe considerarse un modelo listo para producción sin una evaluación previa.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma4-12B-ASR-E2-BF16 (este) | ≈12B | no disponible | Apache 2.0 | Sí (image-text-to-text) | HuggingFace, 24 descargas |
-| Gemma 4 base (Google) | ≈12B | no disponible | Apache 2.0 (según familia Gemma) | Sí | HuggingFace oficial |
-| Fine-tunes comunitarios de Gemma | variable | variable | variable | variable | HuggingFace |
+| Gemma4-12B-ASR-E2-BF16 (este) | ≈12B | no disponible | Apache 2.0 | Sí (image-text-to-text) | Hugging Face, 24 descargas |
+| Gemma 4 base (Google) | ≈12B | no disponible | Apache 2.0 (según familia Gemma) | Sí | Hugging Face oficial |
+| Fine-tunes comunitarios de Gemma | variable | variable | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre este fine-tuning y el modelo base Gemma 4, por lo que la comparativa se limita a parámetros, licencia y disponibilidad. No se conocen alternativas directas con el mismo propósito (ASR sobre Gemma 4) documentadas en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre este fine-tuning y el mo
 
 ## Enlaces
 
-- [HuggingFace: taharmasmaliyev07/Gemma4-12B-ASR-E2-BF16](https://huggingface.co/taharmasmaliyev07/Gemma4-12B-ASR-E2-BF16)
+- [Hugging Face: taharmasmaliyev07/Gemma4-12B-ASR-E2-BF16](https://huggingface.co/taharmasmaliyev07/Gemma4-12B-ASR-E2-BF16)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://huggingface.co/docs/trl)
+- [TRL de Hugging Face](https://huggingface.co/docs/trl)
 - [Familia Gemma de Google](https://huggingface.co/google) (referencia del modelo base, no enlazado explícitamente en la model card)

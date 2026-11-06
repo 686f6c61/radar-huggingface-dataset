@@ -15,7 +15,7 @@ La relevancia de este modelo radica en que ofrece una versión cuantizada y list
 | Parametros activos | 4B (segun la denominacion A4B) |
 | Longitud de contexto | 256K tokens (segun especificaciones de Gemma 4) |
 | Tipos de cuantizacion | 8-bit (MLX, q-bits 8, group size 64) |
-| Idiomas soportados | Mas de 140 (segun Gemma 4); la ficha de HuggingFace indica "no disponibles" |
+| Idiomas soportados | Mas de 140 (segun Gemma 4); la ficha de Hugging Face indica "no disponibles" |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (MLX) |
 
@@ -86,7 +86,7 @@ La comparativa se limita a modelos de la misma familia Gemma 4, ya que no hay da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoemoney/Gemma-4-26B-A4B-Heretic-MLX-q8
+- Modelo en Hugging Face: https://huggingface.co/shoemoney/Gemma-4-26B-A4B-Heretic-MLX-q8
 - Modelo base (coder3101): https://huggingface.co/coder3101/gemma-4-26B-A4B-it-heretic
 - Gemma 4 oficial (Google): https://huggingface.co/google/gemma-4-26B-A4B-it
 - Pagina de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/

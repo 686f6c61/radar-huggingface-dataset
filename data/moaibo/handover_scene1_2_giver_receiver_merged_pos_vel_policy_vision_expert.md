@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (VL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MoAIBo/handover_scene1_2_giver_receiver_merged_pos_vel_policy_vision_expert
+- Modelo en Hugging Face: https://huggingface.co/MoAIBo/handover_scene1_2_giver_receiver_merged_pos_vel_policy_vision_expert
 - Dataset de entrenamiento: https://huggingface.co/datasets/MoAIBo/handover_scene1_2_giver_receiver_merged_pos_vel
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

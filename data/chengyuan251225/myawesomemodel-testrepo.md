@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario chengyuan251225 bajo el identificador `chengyuan251225/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión mejorada de un modelo previo que incrementa su capacidad de razonamiento y reduce la tasa de alucinación, además de añadir soporte para function calling. Sin embargo, el repositorio está vacío (0.0 GB), no contiene pesos ni archivos de configuración, por lo que no es posible descargarlo ni ejecutarlo. La model card describe mejoras en tareas de matemáticas, lógica, programación y comprensión, pero no proporciona detalles técnicos como arquitectura, número de parámetros o datos de entrenamiento. La licencia es MIT, lo que permitiría uso comercial si existieran los artefactos, pero actualmente no hay nada que descargar.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario chengyuan251225 bajo el identificador `chengyuan251225/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión mejorada de un modelo previo que incrementa su capacidad de razonamiento y reduce la tasa de alucinación, además de añadir soporte para function calling. Sin embargo, el repositorio está vacío (0.0 GB), no contiene pesos ni archivos de configuración, por lo que no es posible descargarlo ni ejecutarlo. La model card describe mejoras en tareas de matemáticas, lógica, programación y comprensión, pero no proporciona detalles técnicos como arquitectura, número de parámetros o datos de entrenamiento. La licencia es MIT, lo que permitiría uso comercial si existieran los artefactos, pero actualmente no hay nada que descargar.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información técnica sobre la arquitectura. La model card menciona que el modelo ha sido sometido a un "upgrade" con mayor capacidad de razonamiento gracias a "recursos computacionales incrementados" y "mecanismos de optimización algorítmica" durante el post-entrenamiento, pero no especifica el tipo de arquitectura (transformer, MoE, etc.), ni el número de parámetros, ni el volumen de datos de entrenamiento. Tampoco se indica si se usó RLHF, DPO u otra técnica de alineación. Los tags de HuggingFace sugieren una posible base BERT (por el tag "bert"), pero esto no está confirmado en la documentación. El repositorio no contiene archivos de configuración ni pesos, por lo que no es posible verificar ninguna característica técnica.
+No se dispone de información técnica sobre la arquitectura. La model card menciona que el modelo ha sido sometido a un "upgrade" con mayor capacidad de razonamiento gracias a "recursos computacionales incrementados" y "mecanismos de optimización algorítmica" durante el post-entrenamiento, pero no especifica el tipo de arquitectura (transformer, MoE, etc.), ni el número de parámetros, ni el volumen de datos de entrenamiento. Tampoco se indica si se usó RLHF, DPO u otra técnica de alineación. Los tags de Hugging Face sugieren una posible base BERT (por el tag "bert"), pero esto no está confirmado en la documentación. El repositorio no contiene archivos de configuración ni pesos, por lo que no es posible verificar ninguna característica técnica.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ No es posible realizar una comparativa fiable. La model card menciona modelos an
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB): no hay pesos, configuraciones ni tokenizadores descargables. El modelo no es utilizable en su estado actual.
+- El repositorio de Hugging Face está vacío (0.0 GB): no hay pesos, configuraciones ni tokenizadores descargables. El modelo no es utilizable en su estado actual.
 - No se especifica la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados, lo que impide evaluar su idoneidad para casos de uso concretos.
 - La model card es genérica y no detalla el proceso de entrenamiento, los datos utilizados ni las técnicas de alineación (RLHF, DPO, etc.).
 - Los benchmarks presentados comparan con modelos anónimos, por lo que no son reproducibles ni verificables externamente.
@@ -98,6 +98,6 @@ No es posible realizar una comparativa fiable. La model card menciona modelos an
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/chengyuan251225/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/chengyuan251225/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

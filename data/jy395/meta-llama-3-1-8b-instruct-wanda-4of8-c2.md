@@ -51,7 +51,7 @@ La calibracion se realizo con el corpus C2 (texto web generico de C4), con consu
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al suite de evaluacion del repositorio `JunyiYe/finance-ptc-calibration` (diez tareas financieras) y al articulo ICAIF '26, pero no incluye cifras concretas en la ficha de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al suite de evaluacion del repositorio `JunyiYe/finance-ptc-calibration` (diez tareas financieras) y al articulo ICAIF '26, pero no incluye cifras concretas en la ficha de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Meta-Llama-3.1-8B-Instruct-wanda-4of8-c2 | 8,03 B (densos con poda 4:8) | 128.000 (heredado) | Wanda 4:8, calibracion C4 | Llama 3.1 | HuggingFace (165 descargas) |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 | ninguna | Llama 3.1 | HuggingFace (oficial) |
-| Variantes del mismo estudio calibradas con corpus financiero | 8,03 B | 128.000 | Wanda 4:8 u otras | Llama 3.1 | Coleccion jy395 en HuggingFace |
+| jy395/Meta-Llama-3.1-8B-Instruct-wanda-4of8-c2 | 8,03 B (densos con poda 4:8) | 128.000 (heredado) | Wanda 4:8, calibracion C4 | Llama 3.1 | Hugging Face (165 descargas) |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 | ninguna | Llama 3.1 | Hugging Face (oficial) |
+| Variantes del mismo estudio calibradas con corpus financiero | 8,03 B | 128.000 | Wanda 4:8 u otras | Llama 3.1 | Coleccion jy395 en Hugging Face |
 | Otras podas 4:8 de Llama 3.1 8B (SparseGPT, etc.) | 8,03 B | 128.000 | 4:8 alternativas | Llama 3.1 | segun publicacion |
 
 La comparacion cuantitativa de rendimiento entre estas variantes no esta disponible en la informacion proporcionada; el articulo ICAIF '26 es la referencia para esos datos.
@@ -86,7 +86,7 @@ La comparacion cuantitativa de rendimiento entre estas variantes no esta disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-wanda-4of8-c2
+- Modelo en Hugging Face: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-wanda-4of8-c2
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Articulo ICAIF '26: https://doi.org/10.1145/3858063.3858724
 - Repositorio de codigo, corpus y evaluacion: https://github.com/JunyiYe/finance-ptc-calibration

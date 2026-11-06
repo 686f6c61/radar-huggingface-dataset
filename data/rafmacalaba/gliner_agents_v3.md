@@ -18,7 +18,7 @@ El detalle mas relevante para evaluar el modelo es su procedencia: los datos de 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el autor no declara idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | pesos PyTorch en repositorio de HuggingFace (tag `pytorch`); no se indica safetensors ni GGUF |
+| Formato de pesos | pesos PyTorch en repositorio de Hugging Face (tag `pytorch`); no se indica safetensors ni GGUF |
 | Pipeline | `token-classification` |
 | Libreria | `gliner` |
 | Tamano del repositorio | 1,8 GB |
@@ -95,7 +95,7 @@ Desglose por origen del corpus:
 - VRAM estimada: no hay cifra oficial. El repositorio ocupa 1,8 GB en disco, lo que sugiere que la inferencia en bf16 o fp16 cabe en menos de 2 GB de VRAM (estimacion orientativa, no confirmada por el autor).
 - GPU recomendadas: no especificadas. Por el tamano del repositorio, cualquier GPU de consumo con 6 GB o mas deberia ser suficiente; una RTX 3060, RTX 4060 o superior es un punto de partida razonable.
 - Cabe en GPU de consumo: si, segun la estimacion anterior, aunque no hay confirmacion oficial ni mediciones publicadas.
-- Opciones de despliegue: la libreria `gliner` (carga directa del modelo y prediccion con umbral configurable) y `transformers` de HuggingFace como base. La libreria GLiNER permite exportacion a ONNX para inferencia optimizada. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son aplicables sin conversion previa. vLLM y TGI no son el marco natural para un encoder de clasificacion de tokens.
+- Opciones de despliegue: la libreria `gliner` (carga directa del modelo y prediccion con umbral configurable) y `transformers` de Hugging Face como base. La libreria GLiNER permite exportacion a ONNX para inferencia optimizada. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son aplicables sin conversion previa. vLLM y TGI no son el marco natural para un encoder de clasificacion de tokens.
 - Latencia y throughput: no disponibles. Al no haber decodificacion autoregresiva, la latencia depende del numero de pasajes y de la longitud de contexto efectiva, parametros no publicados.
 
 ## Comparativa con modelos similares
@@ -116,14 +116,14 @@ No se dispone de comparaciones directas con alternativas de la misma categoria e
 - Fuerte dependencia del umbral: pasar de 0,50 a 0,70 reduce el recall de 0,8308 a 0,4938. El punto de operacion debe fijarse por caso de uso.
 - Dominio estrecho: entrenado sobre articulos de investigacion economica y documentos de origen PADS, PRWP y ReliefWeb. El comportamiento fuera de ese dominio es desconocido.
 - Idiomas no declarados: no hay garantia de funcionamiento fuera del idioma o idiomas presentes en el corpus de entrenamiento.
-- Sin validacion externa: 0 descargas y 0 likes en HuggingFace en el momento de redactar esta ficha, sin terceros que reproduzcan las metricas.
+- Sin validacion externa: 0 descargas y 0 likes en Hugging Face en el momento de redactar esta ficha, sin terceros que reproduzcan las metricas.
 - Sin datos de sesgo: no se ha publicado ningun analisis de sesgo por pais, region o tipo de fuente.
 - Licencia Apache 2.0: permite uso comercial y modificacion, siempre que se conserve el aviso de licencia y se documenten los cambios. No impone restricciones de uso adicionales, pero el autor no ofrece garantias sobre el modelo.
 - Fechas del repositorio: la creacion y actualizacion figuran como 2026-09-27, dato que conviene verificar antes de citar el modelo.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/rafmacalaba/gliner_agents_v3
+- Pagina del modelo en Hugging Face: https://huggingface.co/rafmacalaba/gliner_agents_v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/rafmacalaba/datause-agents-v3
 - Modelo base: https://huggingface.co/urchade/gliner_large-v2.1
 

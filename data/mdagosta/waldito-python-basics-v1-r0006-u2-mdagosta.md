@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un modelo de generacion de texto de arquitectura Llama causal (decoder-only) publicado por el usuario mdagosta en HuggingFace bajo el identificador `mdagosta/waldito-python-basics-v1-r0006-u2-mdagosta`. Con 9.541.632 parametros reales declarados en los ficheros safetensors, es un modelo extremadamente pequeno (menos de 10 millones de parametros), muy alejado de los LLM de uso general y situado en la categoria de los modelos minimos usados para experimentacion, docencia o validacion de infraestructura. La model card lo presenta como un "export" del proyecto OpenWALDO.
+Se trata de un modelo de generacion de texto de arquitectura Llama causal (decoder-only) publicado por el usuario mdagosta en Hugging Face bajo el identificador `mdagosta/waldito-python-basics-v1-r0006-u2-mdagosta`. Con 9.541.632 parametros reales declarados en los ficheros safetensors, es un modelo extremadamente pequeno (menos de 10 millones de parametros), muy alejado de los LLM de uso general y situado en la categoria de los modelos minimos usados para experimentacion, docencia o validacion de infraestructura. La model card lo presenta como un "export" del proyecto OpenWALDO.
 
 El modelo usa la arquitectura estandar de Llama para lenguaje causal, pero con un detalle poco habitual: el tokenizador de OpenWALDO basado en bytes, identificado como "schema-1", que requiere cargarse con `trust_remote_code=True`. El repositorio incluye ademas dos ficheros de inventario, `BOM.json` (listado de todos los ficheros de la release) y `EU-BOM.json` (mapeo de divulgacion de contenido de entrenamiento segun el reglamento europeo de GPAI), lo que sugiere un enfoque de trazabilidad y cumplimiento normativo mas que de rendimiento.
 
@@ -23,11 +23,11 @@ Su relevancia actual es limitada como modelo de produccion: no tiene descargas n
 | Licencia | No disponible |
 | Formato de pesos | safetensors |
 | Tokenizador | OpenWALDO schema-1, basado en bytes; requiere `trust_remote_code=True` |
-| Tamano del repositorio | 0,0 GB segun HuggingFace (incoherente con 9,5 M de parametros; ver limitaciones) |
+| Tamano del repositorio | 0,0 GB segun Hugging Face (incoherente con 9,5 M de parametros; ver limitaciones) |
 | Libreria | transformers |
 | Pipeline | text-generation |
 | Etiquetas | transformers, safetensors, llama, text-generation, conversational, text-generation-inference, endpoints_compatible, region:us |
-| Fecha de creacion | 2026-09-30 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-30 (segun metadatos de Hugging Face) |
 | Fecha de ultima actualizacion | 2026-09-30 |
 | Descargas / likes | 0 / 0 |
 
@@ -70,15 +70,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas: cualquier GPU es suficiente. No se requiere A100, H100 ni siquiera una RTX 4090; el modelo cabe holgadamente en GPUs integradas, en una GTX 1050, en una RTX 3060 o en cualquier acelerador moderno.
 - Compatibilidad con GPU de consumo: si, cabe en todas las GPU de consumo actuales e incluso en aceleradores de borde (Jetson, Coral o similares) si la libreria de inferencia lo soporta.
 - Ejecucion en CPU: viable sin aceleracion; el modelo es lo bastante pequeno para ejecutarse en CPU de forma interactiva, aunque no hay mediciones publicadas de latencia.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (la etiqueta `text-generation-inference` esta presente) y endpoints compatibles con la API de HuggingFace. La conversion a GGUF para llama.cpp, Ollama o LM Studio no esta publicada y requeriria verificar antes la compatibilidad del tokenizador de bytes con esas herramientas.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (la etiqueta `text-generation-inference` esta presente) y endpoints compatibles con la API de Hugging Face. La conversion a GGUF para llama.cpp, Ollama o LM Studio no esta publicada y requeriria verificar antes la compatibilidad del tokenizador de bytes con esas herramientas.
 - Latencia y throughput: no disponibles. No hay cifras publicadas por el autor ni mediciones de terceros.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-python-basics-v1-r0006-u2-mdagosta | 9,54 M (dato real) | No disponible | No disponible | HuggingFace, 0 descargas |
-| mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta | No disponible | No disponible | No disponible | HuggingFace; variante anterior del mismo autor |
+| waldito-python-basics-v1-r0006-u2-mdagosta | 9,54 M (dato real) | No disponible | No disponible | Hugging Face, 0 descargas |
+| mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta | No disponible | No disponible | No disponible | Hugging Face; variante anterior del mismo autor |
 | Familia TinyStories (variantes de 1 M a 28 M) | Del orden de 1 M a 28 M (aproximado) | No confirmado | No confirmado | Modelos publicos de referencia en el rango de los millones de parametros |
 | SmolLM-135M | 135 M | 2.048 tokens | Apache-2.0 | Modelo publico; representa el siguiente escalon de tamano |
 
@@ -101,7 +101,7 @@ Los datos de modelos de terceros se ofrecen como referencia de categoria y deben
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u2-mdagosta
+- Pagina del modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u2-mdagosta
 - Variante anterior del mismo autor: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta
 - Documentacion de text-generation-inference (etiqueta declarada por el modelo): no disponible en los resultados de busqueda
 - Paper o blog tecnico del proyecto OpenWALDO: no disponible

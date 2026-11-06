@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la documentación fac
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/mradermacher/JSONify-Flux-GGUF
+- Hugging Face (GGUF): https://huggingface.co/mradermacher/JSONify-Flux-GGUF
 - Modelo base original: https://huggingface.co/prithivMLmods/JSONify-Flux
 - Página de descargas del autor: https://hf.tst.eu/model#JSONify-Flux-GGUF
 - Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

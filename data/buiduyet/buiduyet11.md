@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`buiduyet/buiduyet11` es un repositorio de modelo publicado en HuggingFace por el usuario `buiduyet`. La informacion publica disponible es minima: la model card se limita a declarar la licencia Apache 2.0 y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia ni idiomas soportados.
+`buiduyet/buiduyet11` es un repositorio de modelo publicado en Hugging Face por el usuario `buiduyet`. La informacion publica disponible es minima: la model card se limita a declarar la licencia Apache 2.0 y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia ni idiomas soportados.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 1 like, y no registra actualizaciones desde su creacion. Esto indica que se trata de un artefacto practicamente sin adopcion ni documentacion tecnica asociada.
 
@@ -75,5 +75,5 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/buiduyet/buiduyet11
+- Repositorio en Hugging Face: https://huggingface.co/buiduyet/buiduyet11
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una cuantización GGUF publicada por Solstice-AI sobre el checkpoint afinado DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored, que a su vez deriva de la familia Qwen3. Se distribuye con un total real de 26.895.998.464 parámetros (unos 26,9 mil millones) y un repositorio de 412,2 GB que agrupa múltiples cuantizaciones GGUF en dos familias (quants "regular" y quants "MTP"), además de variantes NEO y NEO MAX. La pipeline declarada en HuggingFace es image-text-to-text, aunque la model card no detalla ningún codificador de visión.
+Este modelo es una cuantización GGUF publicada por Solstice-AI sobre el checkpoint afinado DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored, que a su vez deriva de la familia Qwen3. Se distribuye con un total real de 26.895.998.464 parámetros (unos 26,9 mil millones) y un repositorio de 412,2 GB que agrupa múltiples cuantizaciones GGUF en dos familias (quants "regular" y quants "MTP"), además de variantes NEO y NEO MAX. La pipeline declarada en Hugging Face es image-text-to-text, aunque la model card no detalla ningún codificador de visión.
 
 El modelo se presenta como un ajuste multi-etapa y multi-merge orientado a dos objetivos concretos: elevar la inteligencia general respecto al Qwen 3.8 27B original y reducir drásticamente el consumo de tokens de razonamiento (entre la mitad y una vigésima parte, según el autor), manteniendo el detalle de la respuesta. Para ello incorpora cinco modos de razonamiento y cinco modos instruct, conmutables en caliente vía API, de forma directa o dentro del propio chat, con la particularidad de que los modos instruct no consumen tokens de razonamiento.
 
@@ -89,9 +89,9 @@ El modelo hermano de la misma familia, Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-
 
 | Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Solstice-AI, TTURBO Cold Fusion 709) | 26,9 B | No disponible | ARC-C 709 (8 bits) / 701 (4 bits), modo instruct | Apache 2.0 | GGUF en HuggingFace, 0 descargas |
-| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (modelo base) | ~27 B | No disponible | ARC-C 709 según el autor | No disponible en la información proporcionada | HuggingFace |
-| Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised | No disponible | No disponible | ARC-C 735, ARC-E 882; 9/9 frente a Claude Opus 4.6 Max | No disponible en la información proporcionada | GGUF en HuggingFace |
+| Este modelo (Solstice-AI, TTURBO Cold Fusion 709) | 26,9 B | No disponible | ARC-C 709 (8 bits) / 701 (4 bits), modo instruct | Apache 2.0 | GGUF en Hugging Face, 0 descargas |
+| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (modelo base) | ~27 B | No disponible | ARC-C 709 según el autor | No disponible en la información proporcionada | Hugging Face |
+| Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised | No disponible | No disponible | ARC-C 735, ARC-E 882; 9/9 frente a Claude Opus 4.6 Max | No disponible en la información proporcionada | GGUF en Hugging Face |
 | Qwen3.6-35B-A3B | 35 B totales (A3B activos, MoE) | No disponible | Inferior a este modelo en los 7 benchmarks citados, según el autor | No disponible en la información proporcionada | No disponible |
 | Qwen 3.6 27B | 27 B | No disponible | Inferior a este modelo en los 7 benchmarks citados, según el autor | No disponible en la información proporcionada | No disponible |
 | Qwen 3.5 27B | 27 B | No disponible | Inferior a este modelo en los 7 benchmarks citados, según el autor | No disponible en la información proporcionada | No disponible |
@@ -113,7 +113,7 @@ El modelo hermano de la misma familia, Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TTURBO-Cold-Fusion-709-L-NM-DAU-UltraOptimised-VariableThinking-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TTURBO-Cold-Fusion-709-L-NM-DAU-UltraOptimised-VariableThinking-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Modelo hermano de la misma familia (ARC-C 735 / ARC-E 882): https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised
 - Ficha de terceros sobre la variante AWQ de la familia: https://aimarketcap.tech/models/solstice-ai-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-awq

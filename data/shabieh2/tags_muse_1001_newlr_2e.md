@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tags_muse_1001_newlr_2e es un ajuste fino (finetune) publicado por el usuario shabieh2 en HuggingFace, derivado del modelo base unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit. Se trata de un modelo de generacion de texto en ingles, distribuido bajo licencia apache-2.0 y entrenado con las herramientas Unsloth y TRL, segun los metadatos de la model card. El nombre del repositorio sugiere un experimento de ajuste con una tasa de aprendizaje concreta ("newlr"), aunque el autor no documenta la receta de entrenamiento.
+tags_muse_1001_newlr_2e es un ajuste fino (finetune) publicado por el usuario shabieh2 en Hugging Face, derivado del modelo base unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit. Se trata de un modelo de generacion de texto en ingles, distribuido bajo licencia apache-2.0 y entrenado con las herramientas Unsloth y TRL, segun los metadatos de la model card. El nombre del repositorio sugiere un experimento de ajuste con una tasa de aprendizaje concreta ("newlr"), aunque el autor no documenta la receta de entrenamiento.
 
 El repositorio ocupa 1,7 GB, un tamano compatible con adaptadores LoRA sobre un modelo base cuantizado a 4 bits, y no con pesos completos de un modelo de 30.000 millones de parametros (que en FP16 rondarian los 60 GB). Esta es una deduccion a partir del tamano del repositorio y del identificador del modelo base, no un dato confirmado en la informacion disponible.
 
@@ -88,7 +88,7 @@ No se han identificado en la informacion proporcionada modelos alternativos comp
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/shabieh2/tags_muse_1001_newlr_2e
+- Repositorio del modelo en Hugging Face: https://huggingface.co/shabieh2/tags_muse_1001_newlr_2e
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit
 - Unsloth (repositorio de la herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs tecnicos, demos ni repositorios adicionales asociados especificamente a este modelo en la busqueda web realizada.

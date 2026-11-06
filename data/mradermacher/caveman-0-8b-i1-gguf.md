@@ -33,7 +33,7 @@ La innovacion tecnica de esta publicacion concreta no esta en el modelo, sino en
 ## Capacidades
 
 - Generacion de texto conversacional en ingles: el modelo esta etiquetado como `conversational` y `text-generation-inference`.
-- Compatibilidad con `transformers` y con endpoints compatibles con la API de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con `transformers` y con endpoints compatibles con la API de Hugging Face (`endpoints_compatible`).
 - Ejecucion en llama.cpp y derivados gracias al formato GGUF, con soporte de cuantizaciones desde 0,5 GB.
 - Posible soporte multimodal (vision) si el repositorio de cuantizaciones estaticas incluye ficheros `mmproj`; la propia model card lo menciona de forma condicional ("if any"), por lo que no puede confirmarse.
 - Fine-tuning posterior sobre el modelo base con Unsloth, segun la etiqueta declarada.
@@ -94,11 +94,11 @@ Para una comparativa rigurosa habria que contrastar con modelos de tamano compar
 - Estado de adopcion minimo: el repositorio registra 0 descargas y 0 "me gusta" en el momento de la consulta, por lo que no existe validacion comunitaria ni informes independientes de calidad.
 - Capacidad multimodal no confirmada: la mencion a ficheros `mmproj` es condicional y remite al repositorio estatico; no debe asumirse soporte de vision sin verificarlo.
 - Terminos de licencia: el repositorio cuantizado es Apache 2.0, pero conviene verificar la licencia del modelo base y las condiciones de las herramientas de terceros implicadas (Unsloth, llama.cpp) antes de un despliegue comercial.
-- Fecha de publicacion inusual: la ficha de HuggingFace indica creacion el 11 de septiembre de 2026; conviene confirmar la vigencia del repositorio antes de integrarlo en produccion.
+- Fecha de publicacion inusual: la ficha de Hugging Face indica creacion el 11 de septiembre de 2026; conviene confirmar la vigencia del repositorio antes de integrarlo en produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones imatrix): https://huggingface.co/mradermacher/Caveman-0.8B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/Caveman-0.8B-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Caveman-0.8B-GGUF
 - Modelo base: https://huggingface.co/CrowdMind/Caveman-0.8B
 - Fichero imatrix para cuantizacion propia: https://huggingface.co/mradermacher/Caveman-0.8B-i1-GGUF/resolve/main/Caveman-0.8B.imatrix.gguf

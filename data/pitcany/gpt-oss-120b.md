@@ -6,7 +6,7 @@ gpt-oss-120b es un modelo de lenguaje de pesos abiertos publicado por OpenAI den
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones de copyleft, y se entreno sobre el formato de respuesta harmony, tambien liberado por OpenAI. Entre sus caracteristicas diferenciales estan el esfuerzo de razonamiento configurable (bajo, medio, alto), la exposicion completa de la cadena de pensamiento para depuracion, y capacidades nativas de function calling, navegacion web, ejecucion de codigo Python y salidas estructuradas.
 
-La ficha que se documenta aqui corresponde al repositorio `pitcany/gpt-oss-120b` en HuggingFace, que es una copia de terceros del modelo original `openai/gpt-oss-120b`. El repositorio figura con 0 descargas, 0 likes y un tamano de 0.0 GB en el momento de la consulta, por lo que se debe tratar como un espejo sin contenido verificado y acudir siempre al repositorio oficial de OpenAI para descargar los pesos.
+La ficha que se documenta aqui corresponde al repositorio `pitcany/gpt-oss-120b` en Hugging Face, que es una copia de terceros del modelo original `openai/gpt-oss-120b`. El repositorio figura con 0 descargas, 0 likes y un tamano de 0.0 GB en el momento de la consulta, por lo que se debe tratar como un espejo sin contenido verificado y acudir siempre al repositorio oficial de OpenAI para descargar los pesos.
 
 ## Especificaciones tecnicas
 

@@ -94,7 +94,7 @@ No se identifican alternativas externas comparables (mismo tamano o misma tarea 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g2-b1
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g2-b1
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Constitucion semilla del entrenamiento: `training_seed_constitution.md` (incluida en el repositorio del modelo)
 - Registro de exportacion: `tinker_meta.json` (incluido en el repositorio del modelo)

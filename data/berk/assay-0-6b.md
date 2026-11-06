@@ -2,7 +2,7 @@
 
 ## Resumen
 
-assay-0.6b es un modelo de decisión calibrada desarrollado por el usuario Berk, publicado en HuggingFace bajo licencia Apache 2.0. No es un generador de texto: recibe un estado (por ejemplo, el texto de un ticket o un pasaje) y una o varias preguntas tipadas con nombre (sí/no, elección entre 2 y 255 opciones descritas, o puntuación sobre 2 a 10 niveles ordenados) y devuelve una distribución de probabilidad por pregunta, junto con una confianza y una puntuación de evidencia. La innovación principal es que la respuesta se lee directamente de los logits del siguiente token sobre los tokens de las etiquetas de opción en una única posición de decisión, de modo que ninguna salida puede quedar fuera del esquema definido.
+assay-0.6b es un modelo de decisión calibrada desarrollado por el usuario Berk, publicado en Hugging Face bajo licencia Apache 2.0. No es un generador de texto: recibe un estado (por ejemplo, el texto de un ticket o un pasaje) y una o varias preguntas tipadas con nombre (sí/no, elección entre 2 y 255 opciones descritas, o puntuación sobre 2 a 10 niveles ordenados) y devuelve una distribución de probabilidad por pregunta, junto con una confianza y una puntuación de evidencia. La innovación principal es que la respuesta se lee directamente de los logits del siguiente token sobre los tokens de las etiquetas de opción en una única posición de decisión, de modo que ninguna salida puede quedar fuera del esquema definido.
 
 Técnicamente es un ajuste LoRA (r=16, alpha=32, lr=5e-05, una época, batch 8 con acumulación 1) sobre el backbone Qwen/Qwen3-0.6B-Base, con pesos fusionados publicados en safetensors y el adaptador en el subdirectorio `adapter/`. El modelo total tiene 596.049.920 parámetros (unos 0,6 B) y el repositorio ocupa 1,2 GB. Incorpora una cabeza de evidencia lineal entrenada sobre negativos con pasajes intercambiados y un escalado global de temperatura de 1,199 ajustado en el split de calibración.
 
@@ -114,17 +114,17 @@ Latencia medida en una RTX 5090 en bf16 con transformers, comparando preguntas e
 - Cuantizaciones: no se publican pesos GGUF, AWQ, GPTQ ni int8/int4 oficiales, por lo que no hay cifras de VRAM para esos formatos. Al ser un modelo de 0,6 B, una hipotetica cuantizacion a 8 bits rondaria los 0,6 GB y a 4 bits los 0,35 GB, pero son calculos teoricos no verificados por el autor.
 - GPU recomendadas: cualquier GPU con al menos 2 a 4 GB de VRAM libre es suficiente en bf16. La medicion oficial de latencia se hizo en una RTX 5090. No hay datos publicados para A100, H100 o RTX 4090.
 - Cabe sin problema en GPU de consumo: RTX 3060, 4060, 4070, 4080, 4090, 5090 y equivalentes, e incluso en iGPU con memoria unificada suficiente.
-- Opciones de despliegue: transformers como via principal (los pesos fusionados cargan como un checkpoint Qwen estandar). El repositorio esta etiquetado como compatible con text-embeddings-inference y con endpoints, lo que sugiere soporte en HuggingFace Inference Endpoints. El autor mantiene un servidor propio en `assay.server`. No hay documentacion publicada sobre vLLM, llama.cpp, Ollama o TGI para este modelo.
+- Opciones de despliegue: transformers como via principal (los pesos fusionados cargan como un checkpoint Qwen estandar). El repositorio esta etiquetado como compatible con text-embeddings-inference y con endpoints, lo que sugiere soporte en Hugging Face Inference Endpoints. El autor mantiene un servidor propio en `assay.server`. No hay documentacion publicada sobre vLLM, llama.cpp, Ollama o TGI para este modelo.
 - Latencia y throughput: 17,4 ms para una pregunta sobre un estado y 21,8 ms para 24 preguntas empaquetadas en una RTX 5090 en bf16. En modo de peticiones separadas, 24 preguntas cuestan 416,7 ms, unas 19 veces mas, lo que hace del empaquetado la opcion clara para produccion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| assay-0.6b | 0,6 B | Clasificador de decisiones tipadas con calibracion conformal | no especificado (backbone de 32 768 tokens) | Apache 2.0 | 0,705 de accuracy en tareas vistas y no vistas; ECE 0,030 tras escalado | Pesos safetensors en HuggingFace, codigo en GitHub |
-| Qwen/Qwen3-0.6B-Base | 0,6 B | Transformer decoder-only generativo | 32 768 tokens | Apache 2.0 | no disponible en esta informacion | HuggingFace |
-| Clasificadores zero-shot tipo BART-large-MNLI | ~0,4 B | NLI convertido a clasificacion zero-shot | no disponible en esta informacion | MIT (tipicamente) | no disponible en esta informacion | HuggingFace |
-| Modelos de clasificacion encoder tipo DeBERTa-v3 / ModernBERT | 0,1 a 0,4 B | Encoder supervisado o zero-shot | no disponible en esta informacion | MIT / Apache 2.0 segun variante | no disponible en esta informacion | HuggingFace |
+| assay-0.6b | 0,6 B | Clasificador de decisiones tipadas con calibracion conformal | no especificado (backbone de 32 768 tokens) | Apache 2.0 | 0,705 de accuracy en tareas vistas y no vistas; ECE 0,030 tras escalado | Pesos safetensors en Hugging Face, codigo en GitHub |
+| Qwen/Qwen3-0.6B-Base | 0,6 B | Transformer decoder-only generativo | 32 768 tokens | Apache 2.0 | no disponible en esta informacion | Hugging Face |
+| Clasificadores zero-shot tipo BART-large-MNLI | ~0,4 B | NLI convertido a clasificacion zero-shot | no disponible en esta informacion | MIT (tipicamente) | no disponible en esta informacion | Hugging Face |
+| Modelos de clasificacion encoder tipo DeBERTa-v3 / ModernBERT | 0,1 a 0,4 B | Encoder supervisado o zero-shot | no disponible en esta informacion | MIT / Apache 2.0 segun variante | no disponible en esta informacion | Hugging Face |
 
 No se dispone de comparativas publicadas por el autor frente a otras alternativas, y la busqueda web realizada no ha devuelto resultados tecnicos relevantes sobre este modelo. Las filas de modelos alternativos se incluyen solo a efectos de categoria; sus cifras de rendimiento no estan disponibles en la informacion proporcionada.
 
@@ -141,11 +141,11 @@ No se dispone de comparativas publicadas por el autor frente a otras alternativa
 - El ECE empeora notablemente fuera de distribucion: 0,124 en el suite de transferencia tras escalado frente a 0,037 en tareas no vistas.
 - El rendimiento en algunas fuentes del suite de transferencia es bajo: 0,457 en emotion y en mmlu, 0,500 en contrastive_authorization y composition_held_and_or.
 - Licencia Apache 2.0, sin restricciones conocidas para uso comercial, pero al derivar de Qwen3-0.6B-Base conviene revisar tambien las condiciones del modelo base.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, y no hay resultados de busqueda web relevantes: es un artefacto muy reciente y sin validacion independiente por parte de terceros.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, y no hay resultados de busqueda web relevantes: es un artefacto muy reciente y sin validacion independiente por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Berk/assay-0.6b
+- Modelo en Hugging Face: https://huggingface.co/Berk/assay-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Codigo, servidor y receta de entrenamiento: https://github.com/bgokden/assay
 - Suite de evaluacion kev: https://huggingface.co/datasets/jaredpalmer/kev-suites

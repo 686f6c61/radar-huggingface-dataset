@@ -86,8 +86,8 @@ El unico modelo comparable mencionado en la informacion disponible es Qwen3.6 35
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf
-- Modelo base en HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf
+- Modelo base en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Documentacion Lookahead Expert Scheduling (LES): https://github.com/tc-mb/llama.cpp-omni/blob/master/docs/les/lookahead-expert-scheduling.md
 - Repositorio LLaVA-UHD v4: https://github.com/THUMAI-Lab/LLaVA-UHD-v4
 - Repositorio MiniCPM-o (documentacion y despliegue): https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/minicpm_v4dot7_en.md

@@ -81,8 +81,8 @@ No se dispone de comparaciones publicadas con otros modelos de segmentación apl
 
 | Modelo | Tarea | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `leeely/segformer-b2-turkey-building-damage` | Segmentación de daño post-terremoto (9 clases) | no disponible | 1024 × 1024 px | NVIDIA Source Code License (no comercial) | HuggingFace |
-| `smp-hub/segformer-b2-1024x1024-city-160k` | Segmentación semántica urbana (19 clases) | no disponible | 1024 × 1024 px | no disponible | HuggingFace |
+| `leeely/segformer-b2-turkey-building-damage` | Segmentación de daño post-terremoto (9 clases) | no disponible | 1024 × 1024 px | NVIDIA Source Code License (no comercial) | Hugging Face |
+| `smp-hub/segformer-b2-1024x1024-city-160k` | Segmentación semántica urbana (19 clases) | no disponible | 1024 × 1024 px | no disponible | Hugging Face |
 | Otros modelos de segmentación de daño | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de comparaciones publicadas con otros modelos de segmentación apl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leeely/segformer-b2-turkey-building-damage
+- Modelo en Hugging Face: https://huggingface.co/leeely/segformer-b2-turkey-building-damage
 - Repositorio GitHub (código, entrenamiento y evaluación): https://github.com/leeelyehezkel/Turkey-Building-Data
 - Modelo base: https://huggingface.co/smp-hub/segformer-b2-1024x1024-city-160k
 - Dataset de imágenes en Kaggle: https://www.kaggle.com/datasets/leeelyehezkel/turkey-gt-images

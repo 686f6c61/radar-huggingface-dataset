@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MBZUAI/araseg es un repositorio alojado en HuggingFace por MBZUAI (Mohamed bin Zayed University of Artificial Intelligence). En el momento de la consulta, el repositorio cuenta con 0 descargas y 0 "likes", no tiene pipeline declarado y su model card únicamente contiene la declaración de licencia (`license: mit`), sin ningún otro texto, tabla o referencia técnica.
+MBZUAI/araseg es un repositorio alojado en Hugging Face por MBZUAI (Mohamed bin Zayed University of Artificial Intelligence). En el momento de la consulta, el repositorio cuenta con 0 descargas y 0 "likes", no tiene pipeline declarado y su model card únicamente contiene la declaración de licencia (`license: mit`), sin ningún otro texto, tabla o referencia técnica.
 
 No se dispone de información verificable sobre el modelo en sí: ni arquitectura, ni número de parámetros, ni longitud de contexto, ni datos de entrenamiento, ni idiomas soportados. El identificador del repositorio no permite confirmar la tarea a la que está destinado ni el dominio de aplicación, y los resultados de la búsqueda web no aportan ninguna referencia relacionada (solo devuelven enlaces genéricos a YouTube, sin conexión con el modelo).
 
@@ -84,6 +84,6 @@ No disponible. No hay información suficiente para identificar la categoría del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MBZUAI/araseg
-- Organización en HuggingFace: https://huggingface.co/MBZUAI
+- Repositorio en Hugging Face: https://huggingface.co/MBZUAI/araseg
+- Organización en Hugging Face: https://huggingface.co/MBZUAI
 - Papers, blogs, repositorios o demos relacionados: no disponible. Los resultados de la búsqueda web devolvieron únicamente páginas genéricas de YouTube sin relación con el modelo.

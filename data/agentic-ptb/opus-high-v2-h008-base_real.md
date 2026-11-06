@@ -72,10 +72,10 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v2.h008.base_real)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v2.h008.base_real)
 - [Run record del experimento](https://huggingface.co/agentic-ptb/opus-high-v2-record)
 - [Índice de agentic-ptb](https://huggingface.co/datasets/agentic-ptb/INDEX)
-- [Búsqueda de modelos agentic-ptb en HuggingFace](https://huggingface.co/models?other=agentic-ptb)
+- [Búsqueda de modelos agentic-ptb en Hugging Face](https://huggingface.co/models?other=agentic-ptb)
 - [Leaderboard de modelos agénticos (BenchLM.ai)](https://benchlm.ai/agentic)
 - [Comparativa de modelos Claude (SecondTalent)](https://www.secondtalent.com/resources/every-claude-ai-model-explained-compared/)
 - [Página de Claude Opus de Anthropic](https://www.anthropic.com/claude/opus)

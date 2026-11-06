@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuliapopo/matching` es un prototipo de investigacion basado en una arquitectura BEiT (vision transformer) orientado a tareas de *matching*. Lo publica el usuario yuliapopo en HuggingFace bajo licencia MIT, con un unico checkpoint de inicializacion y sin ningun resultado de rendimiento declarado. El repositorio tiene 0 descargas y 0 *likes*, y ocupa 0.0 GB, lo que lo situa como un artefacto experimental de laboratorio mas que como un modelo listo para produccion.
+El modelo `yuliapopo/matching` es un prototipo de investigacion basado en una arquitectura BEiT (vision transformer) orientado a tareas de *matching*. Lo publica el usuario yuliapopo en Hugging Face bajo licencia MIT, con un unico checkpoint de inicializacion y sin ningun resultado de rendimiento declarado. El repositorio tiene 0 descargas y 0 *likes*, y ocupa 0.0 GB, lo que lo situa como un artefacto experimental de laboratorio mas que como un modelo listo para produccion.
 
 El dato mas relevante es su tamano: 16.576 parametros totales, un orden de magnitud muy inferior al de cualquier BEiT convencional (el BEiT-base original ronda los 86 millones). La propia model card aclara explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que **no** se presenta como un checkpoint entrenado ni evaluado. La arquitectura declarada combina atencion *multi-query*, fusion de tipo Tucker, activacion approx-GELU y normalizacion GroupNorm.
 
@@ -43,7 +43,7 @@ No hay informacion sobre el volumen de datos de entrenamiento, composicion del d
 ## Casos de uso
 
 - *Smoke test* de pipelines de carga: `model.safetensors` esta pensado como inicializacion valida para verificar que un *pipeline* de inferencia arranca correctamente antes de sustituir el checkpoint por uno entrenado.
-- Validacion de adaptadores de carga personalizados: al ser una implementacion propia, las APIs automaticas de HuggingFace requieren un adaptador explicito; este repositorio sirve para desarrollar y probar ese adaptador.
+- Validacion de adaptadores de carga personalizados: al ser una implementacion propia, las APIs automaticas de Hugging Face requieren un adaptador explicito; este repositorio sirve para desarrollar y probar ese adaptador.
 - Pruebas de CI/CD sin consumo de GPU: con 16.576 parametros, el modelo se ejecuta en CPU y permite validar codigo de entrenamiento o evaluacion en *runners* sin acelerador.
 - Investigacion sobre arquitecturas de fusion: el uso de fusion Tucker y atencion multi-query lo convierte en un banco de pruebas para comparar variantes de fusion frente a concatenacion o atencion cruzada.
 - Baseline de capacidad equivalente: la model card recomienda incluir un *baseline* de capacidad comparable; este checkpoint puede actuar como referencia minima en experimentos controlados.
@@ -71,7 +71,7 @@ Los valores de referencia de BEiT-base y BEiT-large proceden de la literatura pu
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yuliapopo/matching | 16.576 | no disponible | MIT | HuggingFace, 0 descargas |
+| yuliapopo/matching | 16.576 | no disponible | MIT | Hugging Face, 0 descargas |
 | BEiT-base (referencia) | ~86 M | imagen 224x224, parches 16x16 | MIT (referencia del paper) | Ampliamente disponible |
 | BEiT-large (referencia) | ~307 M | imagen 224x224, parches 16x16 | MIT (referencia del paper) | Ampliamente disponible |
 
@@ -90,8 +90,8 @@ No se dispone de datos de rendimiento de este prototipo que permitan una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuliapopo/matching
+- Modelo en Hugging Face: https://huggingface.co/yuliapopo/matching
 - Paper de referencia de la arquitectura BEiT (Bao et al., 2021): no disponible en la informacion proporcionada
-- Repositorio de codigo: no disponible (solo se referencian los archivos `inference.py`, `config.json`, `training_args.json` dentro del propio repositorio de HuggingFace)
+- Repositorio de codigo: no disponible (solo se referencian los archivos `inference.py`, `config.json`, `training_args.json` dentro del propio repositorio de Hugging Face)
 - Demo: no disponible
 - Los resultados de la busqueda web no contienen enlaces relevantes al modelo (devuelven exclusivamente servicios de cartografia: Google Maps, Mappy, ViaMichelin y Google Earth).

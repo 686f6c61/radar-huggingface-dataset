@@ -62,7 +62,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 - El contexto máximo no está documentado en la información proporcionada, aunque hereda del base Qwen3-4B; se aconseja no superar los 32 768 tokens sin verificación.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Aye10032/Qwen3-ASR-Refiner-4B
+- Repositorio Hugging Face: https://huggingface.co/Aye10032/Qwen3-ASR-Refiner-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Aye10032/WenetSpeech-Formal-Text
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio GitHub de Qwen3-ASR (familia de ASR, no este modelo concreto): https://github.com/QwenLM/Qwen3-ASR
@@ -132,7 +132,7 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 - La licencia Apache-2.0 permite uso comercial y modificación, sin restricciones adicionales.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Aye10032/Qwen3-ASR-Refiner-4B
+- Repositorio Hugging Face: https://huggingface.co/Aye10032/Qwen3-ASR-Refiner-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Aye10032/WenetSpeech-Formal-Text
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio GitHub de la familia Qwen3-ASR (ASR de Alibaba, distinto de este modelo): https://github.com/QwenLM/Qwen3-ASR

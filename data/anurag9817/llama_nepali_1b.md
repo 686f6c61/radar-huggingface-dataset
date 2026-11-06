@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables específicos. Dado que n
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Anurag9817/llama_nepali_1b)
+- [Modelo en Hugging Face](https://huggingface.co/Anurag9817/llama_nepali_1b)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth) (herramienta utilizada para el finetune y conversión)

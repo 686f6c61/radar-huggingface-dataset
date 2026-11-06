@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta copia: https://huggingface.co/Audante/acestep-5Hz-lm-0.6B
+- Repositorio Hugging Face de esta copia: https://huggingface.co/Audante/acestep-5Hz-lm-0.6B
 - Modelo original: https://huggingface.co/ACE-Step/acestep-5Hz-lm-0.6B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `violetxi/hparam-92m-block-mtp-truncated-peak_lr-1e-3-wu-0p01-s42` es un modelo de lenguaje de 92.138.496 parámetros publicado por el usuario violetxi en HuggingFace. No es un modelo de propósito general: está especializado en ajedrez y genera secuencias de jugadas en una notación compacta de pieza y casillas (por ejemplo, `Pe2e4 Pe7e5 Ng1f3`). Su etiqueta de arquitectura es `looped_block_mtp`, un núcleo recurrente de pesos compartidos que combina predicción multi-token por bloques de tres con entrenamiento mediante retropropagación truncada en el tiempo (truncated BPTT).
+El modelo `violetxi/hparam-92m-block-mtp-truncated-peak_lr-1e-3-wu-0p01-s42` es un modelo de lenguaje de 92.138.496 parámetros publicado por el usuario violetxi en Hugging Face. No es un modelo de propósito general: está especializado en ajedrez y genera secuencias de jugadas en una notación compacta de pieza y casillas (por ejemplo, `Pe2e4 Pe7e5 Ng1f3`). Su etiqueta de arquitectura es `looped_block_mtp`, un núcleo recurrente de pesos compartidos que combina predicción multi-token por bloques de tres con entrenamiento mediante retropropagación truncada en el tiempo (truncated BPTT).
 
 La característica diferencial está en el esquema de evaluación y decodificación: cada pasada recurrente puntúa tres posiciones de consulta fijas y causalmente ordenadas, de modo que `generate()` confirma un bloque de tres tokens antes de iniciar el siguiente bloque recurrente. El contexto es de 1.024 tokens lógicos (incluido el bloque de consulta) y el token de máscara (ID 81) no puede generarse. No admite caché KV ni búsqueda por haz, lo que condiciona directamente su coste de inferencia.
 
@@ -99,7 +99,7 @@ No se han identificado en la información disponible modelos comparables directo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-1e-3-wu-0p01-s42
+- Modelo en Hugging Face: https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-1e-3-wu-0p01-s42
 - Rama del checkpoint documentado (paso 80.000): https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-1e-3-wu-0p01-s42/tree/step-80000
 - Paper, repositorio de código independiente, blog o demo: no disponible.
 - Enlaces relevantes adicionales encontrados en la búsqueda web: ninguno (los resultados devueltos no guardaban relación con el modelo).

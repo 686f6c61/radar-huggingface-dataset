@@ -51,8 +51,8 @@ No hay información para comparar directamente este checkpoint con otros modelos
 - Licencia Apache 2.0 permite uso comercial, pero no hay garantías de calidad ni soporte del autor.
 
 ## Enlaces
-- [HuggingFace - dvader13/olmo2-1b-sft-s1-3859b](https://huggingface.co/dvader13/olmo2-1b-sft-s1-3859b)
-- [Modelo base OLMo-2-1B en HuggingFace](https://huggingface.co/allenai/OLMo-2-0425-1B)
+- [Hugging Face - dvader13/olmo2-1b-sft-s1-3859b](https://huggingface.co/dvader13/olmo2-1b-sft-s1-3859b)
+- [Modelo base OLMo-2-1B en Hugging Face](https://huggingface.co/allenai/OLMo-2-0425-1B)
 - [Página oficial de OLMo en Ai2](https://allenai.org/olmo)
 - [Página de OLMo 2 en Ai2](https://allenai.org/olmo2)
 - [Repositorio de fine-tuning para OLMo2 1B](https://github.com/fkuhne/olmo_sft)

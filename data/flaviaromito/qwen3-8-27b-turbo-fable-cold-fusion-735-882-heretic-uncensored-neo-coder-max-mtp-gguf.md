@@ -1,7 +1,7 @@
 # flaviaromito/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 
 ## Resumen
-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF es un fine-tune de la familia Qwen 3.8 de 27B publicado por el usuario flaviaromito en HuggingFace, derivado del modelo de DavidAU `Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU`. Se distribuye exclusivamente en formato GGUF (cuantizaciones regulares y MTP, con imatrix dual) y está orientado a ejecución en hardware de consumo mediante Unsloth. El autor lo presenta como un modelo multi-stage tune y multi-stage merge con modos de razonamiento ("thinking"), capacidad de código y de escritura creativa.
+Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF es un fine-tune de la familia Qwen 3.8 de 27B publicado por el usuario flaviaromito en Hugging Face, derivado del modelo de DavidAU `Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU`. Se distribuye exclusivamente en formato GGUF (cuantizaciones regulares y MTP, con imatrix dual) y está orientado a ejecución en hardware de consumo mediante Unsloth. El autor lo presenta como un modelo multi-stage tune y multi-stage merge con modos de razonamiento ("thinking"), capacidad de código y de escritura creativa.
 
 La propuesta central del modelo es reducir drásticamente la longitud de los bloques de razonamiento (entre 1/2 y 1/10 según el autor, con una mediana de reducción de aproximadamente 2/3) manteniendo la calidad de salida, lo que se traduce en menor consumo de tokens y mayor velocidad de generación. Según la model card, supera al Qwen 3.8 27B base y a los modelos Qwen 3.6-35B-A3B, Qwen 3.6 27B y Qwen 3.5 27B en siete benchmarks críticos, tanto en cuantización de 4 bits como de 8 bits.
 
@@ -86,7 +86,7 @@ Los datos de la columna de modelos comparables provienen únicamente de las menc
 - Sin descargas ni likes en el momento de la consulta: ecosistema de validación muy limitado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/flaviaromito/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Hugging Face: https://huggingface.co/flaviaromito/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Referencia del método COLD FUSION (Fable Fusion 711): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

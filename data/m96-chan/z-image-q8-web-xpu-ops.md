@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tongyi-MAI/Z-Image (original) | no especificado (DiT + Qwen3-4B) | no disponible | bf16 | Apache-2.0 | HuggingFace |
-| m96-chan/Z-Image-q8-web-xpu-ops (este) | 4.02B (text encoder) + DiT sin especificar | no disponible | int8 (transformer) | Apache-2.0 | HuggingFace |
-| Tongyi-MAI/Z-Image-Turbo | no especificado | no disponible | no especificado | Apache-2.0 | HuggingFace |
+| Tongyi-MAI/Z-Image (original) | no especificado (DiT + Qwen3-4B) | no disponible | bf16 | Apache-2.0 | Hugging Face |
+| m96-chan/Z-Image-q8-web-xpu-ops (este) | 4.02B (text encoder) + DiT sin especificar | no disponible | int8 (transformer) | Apache-2.0 | Hugging Face |
+| Tongyi-MAI/Z-Image-Turbo | no especificado | no disponible | no especificado | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base. No se dispone de datos de rendimiento para establecer una comparacion cuantitativa. Frente al original, esta version reduce el peso del transformer en aproximadamente un 50% a costa de una perdida de precision documentada. Z-Image-Turbo es una variante optimizada para velocidad, pero no se detalla su relacion con esta conversion.
 
@@ -75,7 +75,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/m96-chan/Z-Image-q8-web-xpu-ops
+- Repositorio Hugging Face: https://huggingface.co/m96-chan/Z-Image-q8-web-xpu-ops
 - Modelo original: https://huggingface.co/Tongyi-MAI/Z-Image
 - Variante Turbo: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Proyecto web-xpu-ops (GitHub): https://github.com/m96-chan/web-xpu-ops

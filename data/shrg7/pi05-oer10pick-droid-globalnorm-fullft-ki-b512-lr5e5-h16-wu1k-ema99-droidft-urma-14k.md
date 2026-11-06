@@ -84,7 +84,7 @@ No se dispone de datos cuantitativos de alternativas en la información proporci
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | no disponible | no disponible (horizonte 16) | no disponible | no disponible | HuggingFace; 0 descargas, 0 likes |
+| Este checkpoint | no disponible | no disponible (horizonte 16) | no disponible | no disponible | Hugging Face; 0 descargas, 0 likes |
 | pi05_base | no disponible | no disponible | no disponible | no disponible | referenciado como inicialización; sin URL en la información |
 | OpenVLA | no disponible | no disponible | no disponible | no disponible | no evaluado en esta ficha |
 | Octo | no disponible | no disponible | no disponible | no disponible | no evaluado en esta ficha |
@@ -105,6 +105,6 @@ No se dispone de datos cuantitativos de alternativas en la información proporci
 
 ## Enlaces
 
-- [HuggingFace: shrg7/pi05-oer10pick-droid-globalnorm-fullft-ki-b512-lr5e5-h16-wu1k-ema99-droidft-urma-14k](https://huggingface.co/shrg7/pi05-oer10pick-droid-globalnorm-fullft-ki-b512-lr5e5-h16-wu1k-ema99-droidft-urma-14k)
+- [Hugging Face: shrg7/pi05-oer10pick-droid-globalnorm-fullft-ki-b512-lr5e5-h16-wu1k-ema99-droidft-urma-14k](https://huggingface.co/shrg7/pi05-oer10pick-droid-globalnorm-fullft-ki-b512-lr5e5-h16-wu1k-ema99-droidft-urma-14k)
 - Model card: misma URL del repositorio.
 - openpi: framework citado en la model card; no se proporciona URL en la información disponible.

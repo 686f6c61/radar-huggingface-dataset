@@ -75,7 +75,7 @@ No se dispone de otros SF maps de la misma familia para comparar directamente. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dlab-cmu/sf-map-Qwen__Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/dlab-cmu/sf-map-Qwen__Qwen3.8-27B
 - Repositorio hermano (licencia MIT): https://huggingface.co/dlab-cmu/sf-map-qwen3.8-27b
 - Modelo base Qwen3.8-27B (vLLM Recipes): https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Guia local de Qwen3.8-27B: https://linas.substack.com/p/qwen3-8-27b-local-guide

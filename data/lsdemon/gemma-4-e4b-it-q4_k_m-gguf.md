@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lsdemon/gemma-4-E4B-it-Q4_K_M.gguf
+- Repositorio Hugging Face: https://huggingface.co/Lsdemon/gemma-4-E4B-it-Q4_K_M.gguf
 - Version oficial QAT de Google: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf
 - Pagina de Gemma 4 E4B (terceros): https://gemma4.dev/models/gemma-4-e4b
 - Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

@@ -6,7 +6,7 @@
 
 Se trata de un checkpoint final de una coleccion experimental en la que se comparan variantes de entrenamiento segun la tasa de dropout de palabras clave de aspecto (`0pct` frente a `25pct`), el tipo de aumento de pseudo-etiquetas (`2x`, `4x`) y el balanceo de aspectos (`equal` frente a `train-dist`). Esta variante concreta corresponde a dropout del 0 %, aumento 4x y distribucion balanceada de aspectos. El modelo es relevante para equipos de investigacion financiera que necesiten analisis de narrativa corporativa a nivel de aspecto con un transformer encoder de tamano medio, aunque su alcance es limitado: no predice precios ni retornos, solo clasifica lenguaje de divulgacion.
 
-La ficha se basa unicamente en la model card publicada y en los metadatos de HuggingFace; no se han publicado resultados de benchmarks ni detalles de entrenamiento (tokens, composicion del dataset, proceso de anotacion) en la informacion disponible.
+La ficha se basa unicamente en la model card publicada y en los metadatos de Hugging Face; no se han publicado resultados de benchmarks ni detalles de entrenamiento (tokens, composicion del dataset, proceso de anotacion) en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Inferencia en fp16/bf16: pesos en torno a 0,9 GB; VRAM estimada de 1,5-2 GB para batch 1-8 con secuencias de 256 tokens.
 - Cabe en GPU consumer: cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090) puede ejecutar el modelo con comodidad; incluso CPU es viable para volumentes moderados.
 - GPU recomendadas para produccion: A10G, L4 o T4 para throughput alto por coste; A100/H100 solo si se procesan millones de frases en paralelo o se necesita baja latencia agregada.
-- Opciones de despliegue: `transformers` (PyTorch), `text-embeddings-inference` (tag presente en el repo, orientado a endpoints compatibles), y despliegue via HuggingFace Inference Endpoints. No se han publicado pesos GGUF, por lo que `llama.cpp`/`Ollama` no estan soportados de forma directa; vLLM y TGI no estan validados para este checkpoint en la informacion disponible.
+- Opciones de despliegue: `transformers` (PyTorch), `text-embeddings-inference` (tag presente en el repo, orientado a endpoints compatibles), y despliegue via Hugging Face Inference Endpoints. No se han publicado pesos GGUF, por lo que `llama.cpp`/`Ollama` no estan soportados de forma directa; vLLM y TGI no estan validados para este checkpoint en la informacion disponible.
 - Latencia y throughput: no disponibles. Para un encoder de 435 M parametros en una GPU moderna se puede esperar decenas de milisegundos por frase y throughput de miles de frases por segundo con batching, pero no hay mediciones publicadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jack1211son/abdta-single-task-aspect-v4-0pct-4x-equal` | 435 M | 256 tokens | Clasificacion de tono por aspecto (14 aspectos) | No disponible | HuggingFace, 0 descargas |
-| `microsoft/deberta-v3-large` | 435 M | 512 tokens (tipico en DeBERTa-v3) | Clasificacion/generacion de representaciones general | MIT (según el modelo base) | HuggingFace, ampliamente usado |
-| `ProsusAI/finbert` | ~110 M | 512 tokens | Sentimiento financiero (3 clases, sin aspecto) | No disponible en la informacion | HuggingFace, muy usado |
-| `yiyanghkust/finbert-tone` | ~110 M | 512 tokens | Tono financiero (positivo/negativo/neutral) | No disponible en la informacion | HuggingFace, usado en investigacion |
+| `jack1211son/abdta-single-task-aspect-v4-0pct-4x-equal` | 435 M | 256 tokens | Clasificacion de tono por aspecto (14 aspectos) | No disponible | Hugging Face, 0 descargas |
+| `microsoft/deberta-v3-large` | 435 M | 512 tokens (tipico en DeBERTa-v3) | Clasificacion/generacion de representaciones general | MIT (según el modelo base) | Hugging Face, ampliamente usado |
+| `ProsusAI/finbert` | ~110 M | 512 tokens | Sentimiento financiero (3 clases, sin aspecto) | No disponible en la informacion | Hugging Face, muy usado |
+| `yiyanghkust/finbert-tone` | ~110 M | 512 tokens | Tono financiero (positivo/negativo/neutral) | No disponible en la informacion | Hugging Face, usado en investigacion |
 
 La comparativa se limita a modelos de clasificacion financiera conocidos; no se dispone de datos de rendimiento comparativo para este checkpoint. La diferencia clave frente a FinBERT y FinBERT-tone es la granularidad por aspecto (14 categorias) y el formato de entrada con palabras clave inyectadas, que este modelo exige y los alternativos no.
 
@@ -86,13 +86,13 @@ La comparativa se limita a modelos de clasificacion financiera conocidos; no se 
 - Corpus de dominio muy especifico (divulgacion de riesgos en memorias anuales de emisoras indonesias): el modelo puede generalizar mal a otros generos financieros (notas de prensa, transcripciones de resultados, 10-K estadounidenses) o a otros idiomas.
 - Riesgo de alucinacion no aplica en sentido estricto (no genera texto), pero las etiquetas pueden ser erroneas por descalibracion, especialmente en clases poco representadas o en frases ambiguas; no se publican metricas de calibracion ni matrices de confusion.
 - Sesgos potenciales derivados del corpus de entrenamiento (empresas cotizadas indonesias, un periodo temporal concreto) y del pseudo-etiquetado 4x, que puede amplificar errores del etiquetador inicial.
-- Cero descargas y cero likes en HuggingFace: no hay evidencia de validacion externa ni de uso en produccion por terceros.
+- Cero descargas y cero likes en Hugging Face: no hay evidencia de validacion externa ni de uso en produccion por terceros.
 - No se publican los CSV de evaluacion a nivel de frase, lo que impide reproducir las metricas del autor.
 - El checkpoint esta pensado como modelo final de una coleccion experimental; su uso fuera del contexto ABDTA no esta documentado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jack1211son/abdta-single-task-aspect-v4-0pct-4x-equal
+- Modelo en Hugging Face: https://huggingface.co/jack1211son/abdta-single-task-aspect-v4-0pct-4x-equal
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Paper de DeBERTa-v3 (He et al., 2021): https://arxiv.org/abs/2111.09543
 - Repositorio DeBERTa (Microsoft): https://github.com/microsoft/DeBERTa

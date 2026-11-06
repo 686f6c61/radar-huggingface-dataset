@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SaleemKIU/Mynotebook es un repositorio publicado en HuggingFace por el usuario SaleemKIU bajo licencia Apache 2.0. La informacion disponible en el momento de redactar esta ficha es extremaadamente limitada: la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. No se especifica pipeline, idiomas soportados ni tamano de parametros.
+SaleemKIU/Mynotebook es un repositorio publicado en Hugging Face por el usuario SaleemKIU bajo licencia Apache 2.0. La informacion disponible en el momento de redactar esta ficha es extremaadamente limitada: la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. No se especifica pipeline, idiomas soportados ni tamano de parametros.
 
 El repositorio no acumula descargas (0 descargas registradas) y cuenta con 1 like. Fue creado y actualizado en la misma fecha, el 13 de septiembre de 2026, lo que sugiere que se trata de un artefacto recien subido o de un espacio de pruebas personales mas que de un modelo con soporte activo o comunidad consolidada.
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos sin conocer las caracteristicas 
 - Evaluacion interna de modelos: usar el repositorio como caja de pruebas para comparar tecnicas de inferencia, siempre que se confirme que contiene pesos utilizables.
 - Reproduccion de experimentos academicos: si la model card se amplia con la descripcion del entrenamiento, podria servir para replicar resultados en un entorno controlado.
 - Prototipado rapido en local: en caso de que existan pesos en formato GGUF o safetensors, podria emplearse en pruebas de integracion con llama.cpp u Ollama.
-- Aprendizaje y docencia: un cuaderno de experimentacion puede ser util como material didactico para ilustrar el ciclo de publicacion de modelos en HuggingFace.
+- Aprendizaje y docencia: un cuaderno de experimentacion puede ser util como material didactico para ilustrar el ciclo de publicacion de modelos en Hugging Face.
 - Pruebas de pipelines de despliegue: si contiene un modelo pequeno, podria usarse para validar infraestructura de servir (vLLM, TGI) antes de pasar a modelos en produccion.
 - Auditoria de licencias: dado que la licencia es Apache 2.0, podria estudiarse como ejemplo de publicacion permisiva, aunque la ausencia de documentacion limita su utilidad real.
 
@@ -78,6 +78,6 @@ No disponible. La ausencia de datos sobre arquitectura, tamano y rendimiento imp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SaleemKIU/Mynotebook
+- Repositorio en Hugging Face: https://huggingface.co/SaleemKIU/Mynotebook
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de busqueda obtenidos (auf1.tv, auf1.info, kauf1.com, auf1hub.shop) no estan relacionados con el modelo y se descartan como fuentes.

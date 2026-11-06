@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SoriSan/traductor-engine-v1` es un sistema de traducción automática publicado en HuggingFace por el usuario SoriSan. Con aproximadamente 4.430 millones de parámetros, se sitúa en la gama de modelos de tamaño medio, pensado para ejecutarse en entornos con recursos moderados. El repositorio incluye pesos en formato safetensors y también versiones convertidas a ONNX y GGUF, lo que sugiere que el autor ha preparado el modelo para su uso en diferentes entornos de inferencia, desde servidores hasta dispositivos locales.
+El modelo `SoriSan/traductor-engine-v1` es un sistema de traducción automática publicado en Hugging Face por el usuario SoriSan. Con aproximadamente 4.430 millones de parámetros, se sitúa en la gama de modelos de tamaño medio, pensado para ejecutarse en entornos con recursos moderados. El repositorio incluye pesos en formato safetensors y también versiones convertidas a ONNX y GGUF, lo que sugiere que el autor ha preparado el modelo para su uso en diferentes entornos de inferencia, desde servidores hasta dispositivos locales.
 
 A pesar de su nombre y de la presencia de formatos de despliegue, la información pública disponible es muy limitada: no se especifica la arquitectura interna, los datos de entrenamiento, los idiomas soportados ni la licencia de uso. Tampoco se han publicado resultados de benchmarks ni documentación técnica adicional. Por tanto, esta ficha se basa únicamente en los metadatos del repositorio y en inferencias razonables a partir del tamaño y los formatos presentes, marcando explícitamente todo aquello que no está confirmado.
 
@@ -68,4 +68,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SoriSan/traductor-engine-v1
+- Repositorio Hugging Face: https://huggingface.co/SoriSan/traductor-engine-v1

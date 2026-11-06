@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lithium0003/depth_anything_v2_coreml` es un repositorio de HuggingFace que, a tenor de su identificador, contiene una conversion a formato CoreML de Apple del modelo Depth Anything V2, orientado a la estimacion de profundidad monocularestimacion de profundidad monocular a partir de una unica imagen RGB. El autor del repositorio es el usuario `lithium0003` y la licencia declarada es Apache 2.0. El repositorio ocupa 1,2 GB y no registra descargas ni "likes" en el momento de la consulta.
+`lithium0003/depth_anything_v2_coreml` es un repositorio de Hugging Face que, a tenor de su identificador, contiene una conversion a formato CoreML de Apple del modelo Depth Anything V2, orientado a la estimacion de profundidad monocularestimacion de profundidad monocular a partir de una unica imagen RGB. El autor del repositorio es el usuario `lithium0003` y la licencia declarada es Apache 2.0. El repositorio ocupa 1,2 GB y no registra descargas ni "likes" en el momento de la consulta.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0. No incluye descripcion del modelo, arquitectura, variante concreta convertida, tamanos de entrada, ni instrucciones de uso. Tampoco se declara pipeline, idiomas ni formato exacto de los pesos. Por tanto, la mayor parte de las especificaciones tecnicas habituales no estan disponibles y deben tratarse como desconocidas.
 
@@ -92,6 +92,6 @@ La diferencia principal y verificable respecto al modelo original es el formato:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lithium0003/depth_anything_v2_coreml
+- Hugging Face: https://huggingface.co/lithium0003/depth_anything_v2_coreml
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni a su documentacion tecnica; los resultados devueltos no guardan relacion con el repositorio y se han descartado.
 - No constan papers, blogs, repositorios de codigo ni demos asociados a esta publicacion en la informacion disponible.

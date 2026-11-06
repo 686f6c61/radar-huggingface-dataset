@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jackykobayashi/classification-finetune-2023` es un prototipo de investigacion publicado en HuggingFace por el usuario jackykobayashi. Se presenta como una implementacion propia de una arquitectura tipo Flamingo orientada a tareas de clasificacion, con un fichero `predict.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicializacion para pruebas de humo, no como modelo entrenado.
+`jackykobayashi/classification-finetune-2023` es un prototipo de investigacion publicado en Hugging Face por el usuario jackykobayashi. Se presenta como una implementacion propia de una arquitectura tipo Flamingo orientada a tareas de clasificacion, con un fichero `predict.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicializacion para pruebas de humo, no como modelo entrenado.
 
 El dato mas relevante es la discrepancia entre la etiqueta de escala declarada en la model card ("giant") y el numero real de parametros registrado en el fichero safetensors: 49.600 parametros totales. Esto situa al modelo varios ordenes de magnitud por debajo de cualquier modelo de lenguaje o vision-language utilizable en produccion y lo convierte, en la practica, en un esqueleto de codigo para experimentacion mas que en un modelo funcional.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, el autor es explicito: no se ha ejecutado ningun ent
 - Pruebas de humo de pipelines de clasificacion: el checkpoint de inicializacion permite verificar que el codigo de carga, preprocesado y forward pass funciona antes de invertir recursos en un entrenamiento real.
 - Plantilla de investigacion reproducible: sirve como punto de partida para implementar una arquitectura tipo Flamingo con fusion gated y compararla contra lineas base de capacidad equivalente bajo el mismo presupuesto de ajuste.
 - Prototipado de scripts de entrenamiento: `predict.py` y `training_args.json` documentan una receta concreta (rmsprop, planificador cosine) que puede reutilizarse como esqueleto en experimentos de clasificacion.
-- Docencia y aprendizaje de formatos de publicacion: el repositorio ejemplifica la estructura de ficheros de un modelo en HuggingFace (config, pesos, argumentos de entrenamiento, README) sin necesidad de recursos de computo.
+- Docencia y aprendizaje de formatos de publicacion: el repositorio ejemplifica la estructura de ficheros de un modelo en Hugging Face (config, pesos, argumentos de entrenamiento, README) sin necesidad de recursos de computo.
 - Verificacion de integracion con adaptadores personalizados: la model card advierte que, al ser una implementacion propia, las APIs genericas de carga automatica requieren un adaptador explicito; el repositorio puede usarse para desarrollar y probar ese adaptador.
 - Analisis de discrepancias entre metadata y pesos: util para estudiar como las etiquetas declaradas (por ejemplo, escala "giant") pueden no corresponderse con el recuento real de parametros del fichero safetensors.
 
@@ -76,11 +76,11 @@ No disponible. No se conocen modelos comparables publicados con esta combinacion
 - Restricciones de licencia: el modelo se publica bajo licencia MIT, que permite uso comercial, modificacion y redistribucion con atribucion. El autor advierte que deben revisarse por separado los terminos de las fuentes de datos externas si el repositorio se usa con datasets de terceros.
 - Ausencia de entrenamiento: el checkpoint publicado es de inicializacion y esta pensado para pruebas de humo. No debe presentarse como un modelo entrenado ni usarse para inferencia en produccion.
 - Discrepancia de metadata: la escala declarada ("giant") no concuerda con los 49.600 parametros reales, lo que puede inducir a error a quien evalue el repositorio por su etiqueta.
-- Implementacion no estandar: las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito, lo que anade friccion a la integracion.
+- Implementacion no estandar: las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito, lo que anade friccion a la integracion.
 - Ausencia de benchmarks: no hay ninguna metrica publicada que permita estimar su rendimiento en tareas de clasificacion reales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jackykobayashi/classification-finetune-2023
+- Modelo en Hugging Face: https://huggingface.co/jackykobayashi/classification-finetune-2023
 
 Nota: los resultados de la busqueda web proporcionada no contienen informacion relevante sobre este modelo (corresponden a consultas de foros sin relacion con la ficha). No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo.

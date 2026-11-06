@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yomie4343/ThinkingCap-Qwen3.8-Flash-Next-MLX-Sushi-mixed-3-4-8bit-BF16-SSDNgram
+- Repositorio Hugging Face: https://huggingface.co/yomie4343/ThinkingCap-Qwen3.8-Flash-Next-MLX-Sushi-mixed-3-4-8bit-BF16-SSDNgram
 - Modelo base (ThinkingCap): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next
 - Pack intermedio de referencia: https://huggingface.co/yomie4343/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-mixed-4-8bit/tree/94af1f9fad6e422b8dda2fd9efe187208e388ceb
 - Licencia (LICENSE en el repositorio): https://huggingface.co/yomie4343/ThinkingCap-Qwen3.8-Flash-Next-MLX-Sushi-mixed-3-4-8bit-BF16-SSDNgram/blob/main/LICENSE

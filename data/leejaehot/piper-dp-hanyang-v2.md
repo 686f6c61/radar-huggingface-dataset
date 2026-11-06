@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otros modelos de robótica. Existe una v
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/leejaehot/piper-dp-hanyang-v2)
+- [Modelo en Hugging Face](https://huggingface.co/leejaehot/piper-dp-hanyang-v2)
 - [Versión v1 del modelo](https://huggingface.co/leejaehot/piper-dp-hanyang-v1)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/oms524/place_spam_into_the_white_box_30hz_normalized) (mencionado en la model card)
 - [Perfil de GitHub del autor](https://github.com/leejaehot)

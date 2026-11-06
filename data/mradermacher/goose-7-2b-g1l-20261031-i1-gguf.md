@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goose-7.2B-G1l-20261031-i1-GGUF es una cuantización en formato GGUF del modelo Goose-7.2B-G1l-20261031, publicado por el usuario Lambent en HuggingFace. El repositorio lo distribuye mradermacher, especialista habitual en generar cuantizaciones GGUF con imatrix para modelos de terceros. Se trata, por tanto, de un artefacto de despliegue y no de un modelo original: el trabajo técnico del repositorio consiste en convertir los pesos originales a formatos cuantizados de baja precisión para inferencia local.
+Goose-7.2B-G1l-20261031-i1-GGUF es una cuantización en formato GGUF del modelo Goose-7.2B-G1l-20261031, publicado por el usuario Lambent en Hugging Face. El repositorio lo distribuye mradermacher, especialista habitual en generar cuantizaciones GGUF con imatrix para modelos de terceros. Se trata, por tanto, de un artefacto de despliegue y no de un modelo original: el trabajo técnico del repositorio consiste en convertir los pesos originales a formatos cuantizados de baja precisión para inferencia local.
 
 El modelo base cuenta con 7.200.194.560 parámetros (aproximadamente 7,2 mil millones), lo que lo sitúa en la categoría de modelos densos de tamaño medio, aptos para GPUs de consumo. El tag "conversational" sugiere un ajuste orientado a diálogo, y el identificador "G1l" junto con la fecha 20261031 apunta a una iteración concreta del modelo base, aunque no se dispone de documentación que detalle su arquitectura interna, datos de entrenamiento o metodología de alineación.
 
@@ -25,7 +25,7 @@ La relevancia de este repositorio es práctica: ofrece más de veinte variantes 
 
 No se dispone de información sobre la arquitectura del modelo base Goose-7.2B-G1l-20261031 en los datos proporcionados. El recuento de parámetros (7,2 mil millones) y el tag "conversational" son los únicos indicios: apuntan a un transformer denso de escala media ajustado para diálogo, pero no se puede confirmar si emplea atención estándar, atención lineal, mezcla de expertos u otra variante. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del corpus, ni si se aplicaron técnicas de RLHF, DPO o similares.
 
-Lo que sí está documentado es el proceso de cuantización. El repositorio utiliza cuantizaciones ponderadas con imatrix (matriz de importancia), una técnica que calibra la precisión de cada tensor según su relevancia para la perplejidad, mejorando la calidad de los formatos de baja precisión frente a la cuantización uniforme. La model card incluye metadatos del pipeline de conversión (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que confirma una conversión desde pesos en formato HuggingFace a GGUF. El tag "nicoboss" aparece en los metadatos, probablemente referido a la herramienta o configuración de cuantización empleada.
+Lo que sí está documentado es el proceso de cuantización. El repositorio utiliza cuantizaciones ponderadas con imatrix (matriz de importancia), una técnica que calibra la precisión de cada tensor según su relevancia para la perplejidad, mejorando la calidad de los formatos de baja precisión frente a la cuantización uniforme. La model card incluye metadatos del pipeline de conversión (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que confirma una conversión desde pesos en formato Hugging Face a GGUF. El tag "nicoboss" aparece en los metadatos, probablemente referido a la herramienta o configuración de cuantización empleada.
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ Lo que sí está documentado es el proceso de cuantización. El repositorio util
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; no se declaran idiomas en la model card.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que el GGUF puede servirse mediante infraestructura de endpoints compatible con el ecosistema HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que el GGUF puede servirse mediante infraestructura de endpoints compatible con el ecosistema Hugging Face.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
   - El repositorio completo ocupa 11,1 GB.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090, A100 y H100 para las variantes de mayor precisión y mayor contexto.
 - ¿Cabe en GPU de consumo? Sí: las variantes Q4_K_M e inferiores caben en GPUs de 6-8 GB; Q5 y Q6 requieren 8-12 GB para contexto moderado.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con GGUF; el tag "endpoints_compatible" sugiere soporte en plataformas de endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con GGUF; el tag "endpoints_compatible" sugiere soporte en plataformas de endpoints de Hugging Face.
 - Latencia y throughput: no disponibles; dependen del hardware, la cuantización y la longitud de contexto, sin datos publicados.
 
 ## Comparativa con modelos similares

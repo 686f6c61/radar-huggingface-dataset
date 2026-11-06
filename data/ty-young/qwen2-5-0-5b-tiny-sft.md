@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B-tiny-sft es un modelo de lenguaje de tipo decoder-only publicado por el usuario ty-young en HuggingFace. A pesar del nombre, no es una version afinada del Qwen2.5-0.5B-Instruct completo: se trata de una compilacion reducida de referencia (reduced-layer reference build) derivada de la arquitectura Qwen2, con solo 29,1 millones de parametros, 3 capas y una dimension oculta de 384. Su proposito declarado es servir como banco de pruebas para smoke tests y pipelines de integracion continua (CI).
+Qwen2.5-0.5B-tiny-sft es un modelo de lenguaje de tipo decoder-only publicado por el usuario ty-young en Hugging Face. A pesar del nombre, no es una version afinada del Qwen2.5-0.5B-Instruct completo: se trata de una compilacion reducida de referencia (reduced-layer reference build) derivada de la arquitectura Qwen2, con solo 29,1 millones de parametros, 3 capas y una dimension oculta de 384. Su proposito declarado es servir como banco de pruebas para smoke tests y pipelines de integracion continua (CI).
 
 El modelo se distribuye bajo licencia Apache 2.0 y se carga mediante la libreria transformers con `trust_remote_code=True`. Un detalle relevante es que los ficheros publicados contienen unicamente la definicion del modelo y su configuracion; los pesos se inicializan a partir de la configuracion en el momento de la carga, por lo que no existe un checkpoint entrenado real. Esto lo invalida para cualquier evaluacion de calidad sensible y lo circunscribe a tareas de validacion de infraestructura.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ty-young/qwen2.5-0.5b-tiny-sft | 29,1 M | 32768 | Referencia para smoke tests y CI | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | ~500 M | 32768 (segun familia Qwen2.5) | Generacion de texto de proposito general | Apache 2.0 | HuggingFace |
+| ty-young/qwen2.5-0.5b-tiny-sft | 29,1 M | 32768 | Referencia para smoke tests y CI | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | ~500 M | 32768 (segun familia Qwen2.5) | Generacion de texto de proposito general | Apache 2.0 | Hugging Face |
 | Otros modelos tiny de referencia para CI | no disponible | no disponible | Validacion de pipelines | no disponible | no disponible |
 
 La comparacion con Qwen2.5-0.5B-Instruct es la mas directa por nombre, pero conviene subrayar que este modelo tiny tiene aproximadamente un 6 % de los parametros del 0.5B y carece de pesos entrenados, por lo que no es un sustituto funcional.
@@ -80,4 +80,4 @@ La comparacion con Qwen2.5-0.5B-Instruct es la mas directa por nombre, pero conv
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ty-young/qwen2.5-0.5b-tiny-sft
+- Hugging Face: https://huggingface.co/ty-young/qwen2.5-0.5b-tiny-sft

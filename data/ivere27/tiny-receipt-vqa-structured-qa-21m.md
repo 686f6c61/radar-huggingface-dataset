@@ -72,4 +72,4 @@ No disponible. No se proporcionan datos de modelos comparables en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ivere27/tiny-receipt-vqa-structured-qa-21m
+- Repositorio Hugging Face: https://huggingface.co/ivere27/tiny-receipt-vqa-structured-qa-21m

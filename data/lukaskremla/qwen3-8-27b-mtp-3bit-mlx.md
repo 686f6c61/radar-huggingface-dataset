@@ -72,7 +72,7 @@ No se dispone de información sobre otros drafters MTP comparables en el ecosist
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lukaskremla/Qwen3.8-27B-MTP-3bit-MLX
+- Repositorio Hugging Face: https://huggingface.co/lukaskremla/Qwen3.8-27B-MTP-3bit-MLX
 - Modelo base BF16: https://huggingface.co/lukaskremla/Qwen3.8-27B-MTP-bf16-MLX
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de MLX: https://ml-explore.github.io/mlx/

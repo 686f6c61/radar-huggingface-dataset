@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.6-1.7B-LocalAI es un modelo de lenguaje publicado en HuggingFace por el usuario `weareapexcreators` con un total de 1.707.657.216 parámetros (aproximadamente 1,7 mil millones), dato confirmado a partir de los pesos en formato safetensors. El repositorio está etiquetado como `gguf`, `conversational` y `endpoints_compatible`, lo que apunta a un modelo orientado a inferencia local en formato cuantizado y a un uso conversacional directo, aunque la model card publicada no aporta ninguna descripción funcional ni detalles de entrenamiento.
+Spark-X2.6-1.7B-LocalAI es un modelo de lenguaje publicado en Hugging Face por el usuario `weareapexcreators` con un total de 1.707.657.216 parámetros (aproximadamente 1,7 mil millones), dato confirmado a partir de los pesos en formato safetensors. El repositorio está etiquetado como `gguf`, `conversational` y `endpoints_compatible`, lo que apunta a un modelo orientado a inferencia local en formato cuantizado y a un uso conversacional directo, aunque la model card publicada no aporta ninguna descripción funcional ni detalles de entrenamiento.
 
 La información disponible es mínima: la model card únicamente declara la licencia Apache 2.0 y no incluye arquitectura, longitud de contexto, idiomas, composición del dataset ni resultados de evaluación. El repositorio ocupa 1,8 GB y acumula 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación de la comunidad ni evidencia pública de rendimiento.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, no hay datos sobre número de tokens, composición de
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta `conversational` indica que el modelo está orientado a diálogo multi-turno, aunque no se documenta el formato de prompt ni las plantillas de chat.
-- Inferencia local: la presencia de GGUF y la etiqueta `endpoints_compatible` permiten su uso en runtimes locales y en despliegues compatibles con la API de HuggingFace.
+- Inferencia local: la presencia de GGUF y la etiqueta `endpoints_compatible` permiten su uso en runtimes locales y en despliegues compatibles con la API de Hugging Face.
 - Capacidades de razonamiento, matemáticas y código: no documentadas ni evaluadas; en modelos de ~1,7B son estructuralmente limitadas.
 - Tool calling / function calling: no disponible; no hay evidencia de soporte.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no hay evidencia de soporte.
@@ -70,7 +70,7 @@ Estimaciones derivadas del recuento de parámetros (1,71B) y de fórmulas están
 - GPU de datacenter: A100, H100 o L40S no son necesarias para el tamaño del modelo; solo se justifican para servir muchas peticiones concurrentes con vLLM.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs dedicadas de los últimos ocho años con cuantización de 4 a 8 bits, y también en GPUs integradas con memoria compartida a costa de latencia.
 - CPU: la inferencia en CPU es viable con llama.cpp en cuantizaciones de 4 a 5 bits; el rendimiento depende del número de núcleos y del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con la API de HuggingFace (la etiqueta `endpoints_compatible` lo sugiere). vLLM y TGI requerirían pesos en safetensors y una arquitectura soportada, algo que no se puede confirmar con la documentación actual.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con la API de Hugging Face (la etiqueta `endpoints_compatible` lo sugiere). vLLM y TGI requerirían pesos en safetensors y una arquitectura soportada, algo que no se puede confirmar con la documentación actual.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -98,10 +98,10 @@ En términos de licencia, Spark-X2.6 se alinea con Qwen2.5 y SmolLM2 (Apache 2.0
 - Capacidades de tool calling y agentes no confirmadas: no debe asumirse compatibilidad con protocolos de function calling sin pruebas explícitas.
 - Licencia Apache 2.0: permite uso comercial y modificaciones, pero exige conservar el aviso de copyright y la licencia, e incluir el fichero NOTICE si existe; no hay garantías ni cláusula de indemnización por parte del autor.
 - Señales de adopción nulas (0 descargas, 0 likes) y repositorio creado y actualizado el mismo día: no hay historial de mantenimiento ni comunidad que haya reportado fallos.
-- Nombre del repositorio potencialmente engañoso: la etiqueta `LocalAI` no implica integración oficial con el proyecto LocalAI, ni `endpoints_compatible` garantiza compatibilidad funcional con la API de HuggingFace.
+- Nombre del repositorio potencialmente engañoso: la etiqueta `LocalAI` no implica integración oficial con el proyecto LocalAI, ni `endpoints_compatible` garantiza compatibilidad funcional con la API de Hugging Face.
 - Adecuación limitada para código en producción y matemáticas: por tamaño, no es comparable con modelos especializados de 7B o más.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weareapexcreators/Spark-X2.6-1.7B-LocalAI
+- Modelo en Hugging Face: https://huggingface.co/weareapexcreators/Spark-X2.6-1.7B-LocalAI
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

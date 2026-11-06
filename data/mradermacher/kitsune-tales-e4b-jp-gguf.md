@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Pagina de HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Kitsune-Tales-E4B-JP-GGUF
+- Pagina de Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Kitsune-Tales-E4B-JP-GGUF
 - Modelo base (LoRA original): https://huggingface.co/whoashish115/Kitsune-Tales-E4B-JP
 - Dataset de ajuste fino: https://huggingface.co/datasets/whoashish115/Kitsune-Tales-JP-Fantasy-SFT
 - Pagina indice de mradermacher para este modelo: https://hf.tst.eu/model#Kitsune-Tales-E4B-JP-GGUF

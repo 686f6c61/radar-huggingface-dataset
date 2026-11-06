@@ -57,7 +57,7 @@ No disponible. Al no existir un modelo en este repositorio, no es posible compar
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sungjaehongtu/paper_000669229_lightweight_multimodal
+- Repositorio de Hugging Face: https://huggingface.co/sungjaehongtu/paper_000669229_lightweight_multimodal
 - Paper relacionado sobre lightweight deep learning (arXiv:2404.07236): https://arxiv.org/abs/2404.07236
 - PDF del paper relacionado: https://arxiv.org/pdf/2404.07236
-- Busqueda de modelos con tag lightweight-multimodal en HuggingFace: https://huggingface.co/models?other=lightweight-multimodal
+- Busqueda de modelos con tag lightweight-multimodal en Hugging Face: https://huggingface.co/models?other=lightweight-multimodal

@@ -96,7 +96,7 @@ Resultados publicados en la model card. Detección = proporción de herramientas
 
 | Modelo | Tamano | Deteccion toolguard-bench | Falsas alarmas toolguard-bench | F1 | Licencia / disponibilidad |
 |---|---|---|---|---|---|
-| toolguard-1b | 1B | 82,6 % | 1,6 % | 0,888 | Gemma; HuggingFace, GGUF |
+| toolguard-1b | 1B | 82,6 % | 1,6 % | 0,888 | Gemma; Hugging Face, GGUF |
 | wso2/tool-poisoning-detection | 110M | 52,8 % | 43,6 % | 0,431 | no disponible en la informacion |
 | Qwen 3.8 27B (como juez) | 27B | 98,6 % | 5,7 % | 0,965 | no disponible en la informacion |
 | gpt-oss-120b (como juez) | 120B | no evaluado en toolguard-bench | no evaluado | no disponible | no disponible en la informacion |
@@ -118,7 +118,7 @@ En MCPTox, gpt-oss-120b alcanza 96,0 % de detección con 4,0 % de falsas alarmas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharanSripadi/toolguard-1b
+- Modelo en Hugging Face: https://huggingface.co/CharanSripadi/toolguard-1b
 - Dataset de evaluación: https://huggingface.co/datasets/CharanSripadi/toolguard-bench
 - Demo (Space): https://huggingface.co/spaces/CharanSripadi/toolguard
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it

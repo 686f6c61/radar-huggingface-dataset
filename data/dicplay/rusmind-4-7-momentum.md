@@ -110,7 +110,7 @@ Tareas concretas:
 
 | Modelo | Parametros (activos) | Contexto | MERA v2 global | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RusMind Momentum 4.7 | 4,65 B (≈2 B) | No disponible | 0,136 | rusmind-license (other) | GGUF en HuggingFace, web oficial |
+| RusMind Momentum 4.7 | 4,65 B (≈2 B) | No disponible | 0,136 | rusmind-license (other) | GGUF en Hugging Face, web oficial |
 | RuadaptQwen3-8B | 8 B (denso) | No disponible | 0,134 | No disponible en esta ficha | No disponible en esta ficha |
 | T-lite (T-Bank) | 8 B (denso) | No disponible | 0,130 | No disponible en esta ficha | No disponible en esta ficha |
 | LFM2.5 (Liquid AI) | 2,6 B (denso) | No disponible | 0,120 | No disponible en esta ficha | No disponible en esta ficha |
@@ -134,7 +134,7 @@ La comparación se limita al benchmark ruso MERA v2 aportado por el autor: no ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DICPlay/RusMind-4.7-Momentum
+- Repositorio Hugging Face: https://huggingface.co/DICPlay/RusMind-4.7-Momentum
 - Fichero Lite (2,5 GB): https://huggingface.co/DICPlay/RusMind-4.7-Momentum/blob/main/RusMind-Momentum-4.7-Lite.gguf
 - Fichero Q4_K_M (3,4 GB): https://huggingface.co/DICPlay/RusMind-4.7-Momentum/blob/main/RusMind-Momentum-4.7-Q4_K_M.gguf
 - Fichero Q8_0 (5,0 GB): https://huggingface.co/DICPlay/RusMind-4.7-Momentum/blob/main/RusMind-Momentum-4.7-Q8_0.gguf

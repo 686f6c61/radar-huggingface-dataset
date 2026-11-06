@@ -4,7 +4,7 @@
 
 `dadudu/microduck-bubu-tug-remix3` es una política de control robótico (no un modelo de lenguaje) desarrollada por el usuario dadudu como *remix* o *fine-tune* de `rumezhak/microduck-tug-rating-remix`. Está pensada para el robot cuadrúpedo de bajo coste microduck, mantenido por Pollen Robotics, y se publica como un fichero ONNX que se carga directamente en el demonio de control del robot mediante el comando `robotctl policy load walk`. El modelo ocupa el *slot* de marcha (`walk`) del robot, es decir, define la política de locomoción que se ejecuta de forma continua.
 
-El modelo se enmarca en el pipeline `robotics` de HuggingFace y se distribuye a través de la librería `microduck`. La política opera a 50 Hz, recibe observaciones de 61 dimensiones y emite 14 acciones de control. Es una política *perpetua*: se ejecuta de forma indefinida hasta que se le indique lo contrario, sin un horizonte de episodio fijo. El repositorio tiene un tamaño de 0.0 GB (probablemente por metadatos incompletos o un artefacto muy ligero), sin descargas ni *likes* en el momento de la consulta.
+El modelo se enmarca en el pipeline `robotics` de Hugging Face y se distribuye a través de la librería `microduck`. La política opera a 50 Hz, recibe observaciones de 61 dimensiones y emite 14 acciones de control. Es una política *perpetua*: se ejecuta de forma indefinida hasta que se le indique lo contrario, sin un horizonte de episodio fijo. El repositorio tiene un tamaño de 0.0 GB (probablemente por metadatos incompletos o un artefacto muy ligero), sin descargas ni *likes* en el momento de la consulta.
 
 La relevancia de esta ficha es acotada: se trata de un artefacto muy específico dentro del ecosistema microduck, no de un modelo de propósito general. No hay información pública sobre benchmarks, licencia, idiomas ni composición del dataset de entrenamiento. El valor práctico está en su integración directa con el robot y en la trazabilidad del *fine-tune* respecto al modelo base.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Slot | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dadudu/microduck-bubu-tug-remix3` | Política RL (ONNX) | `walk` | `rumezhak/microduck-tug-rating-remix` | no disponible | HuggingFace |
-| `rumezhak/microduck-tug-rating-remix` | Política RL | no disponible | no disponible | no disponible | HuggingFace |
-| Otras políticas microduck | Política RL | variable | variable | variable | HuggingFace / `pollen-robotics/microduck_rl` |
+| `dadudu/microduck-bubu-tug-remix3` | Política RL (ONNX) | `walk` | `rumezhak/microduck-tug-rating-remix` | no disponible | Hugging Face |
+| `rumezhak/microduck-tug-rating-remix` | Política RL | no disponible | no disponible | no disponible | Hugging Face |
+| Otras políticas microduck | Política RL | variable | variable | variable | Hugging Face / `pollen-robotics/microduck_rl` |
 
 No se dispone de datos de rendimiento comparativo entre estas políticas. La comparación se limita a la relación de *fine-tune* y a la disponibilidad pública.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas políticas. La com
 
 ## Enlaces
 
-- [HuggingFace: dadudu/microduck-bubu-tug-remix3](https://huggingface.co/dadudu/microduck-bubu-tug-remix3)
+- [Hugging Face: dadudu/microduck-bubu-tug-remix3](https://huggingface.co/dadudu/microduck-bubu-tug-remix3)
 - [Modelo base: rumezhak/microduck-tug-rating-remix](https://huggingface.co/rumezhak/microduck-tug-rating-remix)
 - [Repositorio microduck (Pollen Robotics)](https://github.com/pollen-robotics/microduck)
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl`, rama `main`, commit `a3e0c0fbe` (no se proporciona URL directa)

@@ -107,7 +107,7 @@ Se verifico ademas que los 290 tensores del backbone son identicos bit a bit a l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avartha/kev-0.5b-merged
+- Modelo en Hugging Face: https://huggingface.co/avartha/kev-0.5b-merged
 - Modelo original de Kev: https://huggingface.co/jaredpalmer/kev-0.5b
 - Ficheros del modelo original: https://huggingface.co/jaredpalmer/kev-0.5b/tree/main
 - Repositorio de codigo de Kev: https://github.com/jaredpalmer/kev

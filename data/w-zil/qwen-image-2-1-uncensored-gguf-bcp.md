@@ -2,7 +2,7 @@
 
 ## Resumen
 
-W-Zil/Qwen-Image-2.1-Uncensored-GGUF-bcp es un repositorio de pesos en formato GGUF publicado por el usuario W-Zil en HuggingFace. Segun los metadatos de la plataforma, el modelo tiene 7.115.124.736 parametros (aproximadamente 7,1 mil millones) y ocupa 14,2 GB en el repositorio. La model card publicada no contiene mas informacion que la declaracion de licencia (`other`, con `license_name: qwen-research`), por lo que no hay documentacion tecnica del autor sobre arquitectura, datos de entrenamiento ni capacidades.
+W-Zil/Qwen-Image-2.1-Uncensored-GGUF-bcp es un repositorio de pesos en formato GGUF publicado por el usuario W-Zil en Hugging Face. Segun los metadatos de la plataforma, el modelo tiene 7.115.124.736 parametros (aproximadamente 7,1 mil millones) y ocupa 14,2 GB en el repositorio. La model card publicada no contiene mas informacion que la declaracion de licencia (`other`, con `license_name: qwen-research`), por lo que no hay documentacion tecnica del autor sobre arquitectura, datos de entrenamiento ni capacidades.
 
 El nombre del repositorio sugiere una variante de la familia Qwen-Image, y el sufijo "Uncensored" apunta a un ajuste orientado a reducir los filtros de contenido del modelo original, pero esta interpretacion no esta confirmada por ninguna fuente disponible. Tampoco se especifica la modalidad (texto, imagen o multimodal), los idiomas soportados ni el pipeline. El repositorio registra 0 descargas y 0 likes, y las fechas de creacion y actualizacion (24 de septiembre de 2026) estan separadas por unos 20 minutos, lo que indica una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -95,7 +95,7 @@ No disponible. La informacion proporcionada no permite identificar con fiabilida
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/W-Zil/Qwen-Image-2.1-Uncensored-GGUF-bcp
+- Repositorio en Hugging Face: https://huggingface.co/W-Zil/Qwen-Image-2.1-Uncensored-GGUF-bcp
 - Fichero de licencia referenciado por la model card: LICENSE (ruta relativa dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - Resultados de busqueda web: las entradas recuperadas (WhatsApp Web, articulos de Wikipedia sobre la letra W) no guardan relacion con el modelo y no aportan informacion util.

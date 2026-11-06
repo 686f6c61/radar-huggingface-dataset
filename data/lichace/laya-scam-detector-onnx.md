@@ -111,11 +111,11 @@ La busqueda web realizada no ha devuelto alternativas directas de deteccion de s
 - Evaluacion limitada en tamano: el conjunto manuscrito mixto tiene solo 38 muestras y el de retencion en chino, 600, por lo que las metricas tienen intervalos de confianza amplios.
 - Riesgo de falsos positivos: incluso tras el ajuste fino se registraron 3 falsos positivos en 38 muestras del conjunto manuscrito, algo a tener en cuenta si el modelo se usa para bloquear contenido automaticamente.
 - Licencia Apache-2.0, que permite uso comercial, pero conviene verificar la licencia del modelo base (`convaiinnovations/laya`) antes de un despliegue en produccion.
-- Modelo con 0 descargas y 0 likes en HuggingFace en el momento de la consulta: no cuenta con validacion independiente por parte de la comunidad.
+- Modelo con 0 descargas y 0 likes en Hugging Face en el momento de la consulta: no cuenta con validacion independiente por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiChace/laya-scam-detector-onnx
+- Modelo en Hugging Face: https://huggingface.co/LiChace/laya-scam-detector-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio GitHub (despliegue local y ajuste fino): https://github.com/chaceli/laya-scam-detector
 - Releases del repositorio: https://github.com/chaceli/laya-scam-detector/releases

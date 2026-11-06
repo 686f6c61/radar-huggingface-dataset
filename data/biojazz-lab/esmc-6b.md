@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ESMC-6B es un modelo de lenguaje de proteinas (protein language model, pLM) con 6.352.005.184 parametros, 80 capas y 2,37e23 FLOPs de entrenamiento. Aprende las regularidades estadisticas de las secuencias de proteinas a partir de miles de millones de secuencias y produce representaciones densas (embeddings) utiles para tareas downstream: prediccion de efecto de variantes, ingenieria de proteinas, anotacion funcional y plegado. El repositorio analizado se publica bajo la organizacion de HuggingFace «BioJazz-Lab», pero la model card, las rutas de codigo y las dependencias apuntan a «biohub» (Chan Zuckerberg Biohub) como autoria original; conviene tratar esta copia como una redistribucion no oficial hasta verificar su integridad.
+ESMC-6B es un modelo de lenguaje de proteinas (protein language model, pLM) con 6.352.005.184 parametros, 80 capas y 2,37e23 FLOPs de entrenamiento. Aprende las regularidades estadisticas de las secuencias de proteinas a partir de miles de millones de secuencias y produce representaciones densas (embeddings) utiles para tareas downstream: prediccion de efecto de variantes, ingenieria de proteinas, anotacion funcional y plegado. El repositorio analizado se publica bajo la organizacion de Hugging Face «BioJazz-Lab», pero la model card, las rutas de codigo y las dependencias apuntan a «biohub» (Chan Zuckerberg Biohub) como autoria original; conviene tratar esta copia como una redistribucion no oficial hasta verificar su integridad.
 
 El modelo se libera junto a dos variantes mas pequenas sobrentrenadas (ESMC-300M y ESMC-600M) pensadas para inferencia local y fine-tuning, y sirve de base congelada para ESMFold2, un predictor de estructura proteica de nueva generacion. Ademas, se publica un autoencoder disperso (SAE) construido sobre la capa 60 de ESMC-6B que aporta descripciones de caracteristicas interpretables por humanos y generadas por agentes. Es relevante ahora porque situa un pLM transformer puro a escala de 6B en abierto, con licencia MIT y un ecosistema de artefactos asociados (estructura, interpretabilidad, API alojada) que hasta hace poco no existia a este tamano.
 
@@ -23,7 +23,7 @@ La tarea de entrenamiento es enmascaramiento de tokens (masked language modeling
 | Capas | 80 |
 | FLOPs de entrenamiento | 2,37e23 |
 | Tamano del repositorio | 25,4 GB |
-| Pipeline de HuggingFace | `fill-mask` |
+| Pipeline de Hugging Face | `fill-mask` |
 | Libreria | `transformers` (requiere `trust_remote_code` por el codigo personalizado) |
 
 ## Arquitectura y entrenamiento
@@ -58,7 +58,7 @@ Como artefactos tecnicos destacables: ESMFold2 se entrena sobre una copia congel
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite integramente a las metricas del paper «Language Modeling Materializes a World Model of Protein Biology» (bioRxiv, 2026), sin tablas de resultados en el repositorio de HuggingFace. No se deben asumir cifras de MMLU, HumanEval, GSM8K ni equivalentes, ya que no aplican a este dominio; las metricas relevantes serian de plegado (GDT_TS, lDDT), prediccion de variantes (Spearman con scores experimentales) y perplejidad en proteina, y ninguna de ellas figura en el material proporcionado.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite integramente a las metricas del paper «Language Modeling Materializes a World Model of Protein Biology» (bioRxiv, 2026), sin tablas de resultados en el repositorio de Hugging Face. No se deben asumir cifras de MMLU, HumanEval, GSM8K ni equivalentes, ya que no aplican a este dominio; las metricas relevantes serian de plegado (GDT_TS, lDDT), prediccion de variantes (Spearman con scores experimentales) y perplejidad en proteina, y ninguna de ellas figura en el material proporcionado.
 
 ## Requisitos de hardware
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Capas | Contexto | FLOPs entrenamiento | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| ESMC-6B | 6B | 80 | 2048 | 2,37e23 | pLM enmascarado + embeddings | MIT + aviso «other» | HuggingFace |
-| ESMC-600M | 600M | 36 | No disponible | 2,17e22 | pLM enmascarado + embeddings | MIT + aviso «other» | HuggingFace |
-| ESMC-300M | 300M | 30 | No disponible | 1,26e22 | pLM enmascarado + embeddings | MIT + aviso «other» | HuggingFace |
-| ESMFold2 | No disponible | No disponible | No disponible | No disponible | Prediccion de estructura (sobre ESMC-6B congelado) | No disponible en detalle | HuggingFace |
+| ESMC-6B | 6B | 80 | 2048 | 2,37e23 | pLM enmascarado + embeddings | MIT + aviso «other» | Hugging Face |
+| ESMC-600M | 600M | 36 | No disponible | 2,17e22 | pLM enmascarado + embeddings | MIT + aviso «other» | Hugging Face |
+| ESMC-300M | 300M | 30 | No disponible | 1,26e22 | pLM enmascarado + embeddings | MIT + aviso «other» | Hugging Face |
+| ESMFold2 | No disponible | No disponible | No disponible | No disponible | Prediccion de estructura (sobre ESMC-6B congelado) | No disponible en detalle | Hugging Face |
 
 Frente a la familia ESM-2 de Meta, predecesora directa del linaje, ESMC-6B se posiciona en un regimen de parametros intermedio entre las variantes de 3B y 15B, con un enfasis explicito en datos metagenomicos (hasta el 64 % en la fase 1) que ESM-2 no documenta de forma equivalente. No se dispone en la informacion proporcionada de cifras de rendimiento comparables entre ambas familias, por lo que la eleccion entre una y otra debe basarse en el paper y en evaluacion propia sobre la tarea concreta, no en este cuadro.
 
@@ -89,7 +89,7 @@ Dentro de la propia familia, la decision practica es directa: 300M/600M para pro
 - **Riesgo de puntuaciones enganosamente altas**: el modelo asigna verosimilitud a secuencias que pueden ser inviables in vivo; una puntuacion alta no equivale a funcion correcta. No es un «alucinador» de texto, pero si un generador de plausibilidad estadistica.
 - **Limite de contexto**: 2048 residuos. Proteinas largas (titinas, distrofina) hay que trocear, con perdida de coherencia global entre fragmentos.
 - **No modela estructura de forma explicita**: la geometria requiere ESMFold2 u otro predictor; los embeddings no son coordenadas.
-- **Restricciones de licencia**: la licencia es MIT, pero existe un aviso «other» (`THIRD_PARTY_NOTICE.md`) que hay que revisar antes de uso comercial, redistribution o integracion en productos. La doble etiqueta mit/other en HuggingFace es ambigua.
+- **Restricciones de licencia**: la licencia es MIT, pero existe un aviso «other» (`THIRD_PARTY_NOTICE.md`) que hay que revisar antes de uso comercial, redistribution o integracion en productos. La doble etiqueta mit/other en Hugging Face es ambigua.
 - **Idioma**: etiquetado como «en»; no procesa lenguaje natural, por lo que no sirve para tareas multilingues ni de texto.
 - **Procedencia del repositorio**: el ID es `BioJazz-Lab/ESMC-6B`, no `biohub/ESMC-6B`. Con 0 descargas y 0 likes, no hay validacion comunitaria de esta copia; verificar checksums y procedencia antes de usarla en produccion.
 - **Riesgo de cadena de suministro**: requiere `trust_remote_code=True` y ejecuta codigo personalizado del repositorio; auditar `modeling_*.py` antes de desplegar en entornos con datos sensibles.

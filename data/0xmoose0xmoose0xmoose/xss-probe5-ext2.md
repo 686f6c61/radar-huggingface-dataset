@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `0xmoose0xmoose0xmoose/xss-probe5-ext2` corresponde a un repositorio alojado en HuggingFace que no contiene un modelo de inteligencia artificial. Su model card, titulada "Hub sanitizer extended battery (part 2)", es una lista numerada de 33 vectores de ataque XSS (etiquetados de H25 a H57) destinados a probar la solidez de sanitizadores de HTML. No hay pesos, tokenizador, configuracion de arquitectura ni artefactos de inferencia: el unico contenido documentado es Markdown con cargas utiles de prueba.
+El identificador `0xmoose0xmoose0xmoose/xss-probe5-ext2` corresponde a un repositorio alojado en Hugging Face que no contiene un modelo de inteligencia artificial. Su model card, titulada "Hub sanitizer extended battery (part 2)", es una lista numerada de 33 vectores de ataque XSS (etiquetados de H25 a H57) destinados a probar la solidez de sanitizadores de HTML. No hay pesos, tokenizador, configuracion de arquitectura ni artefactos de inferencia: el unico contenido documentado es Markdown con cargas utiles de prueba.
 
 El proposito inferido del repositorio es servir como bateria de regresion para comprobar si un sanitizador (por ejemplo, el usado por el propio Hub, o cualquier libreria de limpieza de HTML) elimina o neutraliza correctamente vectores poco habituales. Los vectores cubren etiquetas HTML raramente contempladas (`<listing>`, `<noembed>`, `<noframes>`, `<title>`, `<template>`), manejadores de eventos con capitalizacion mixta (`onToggle`, `onFocus`, `OnLoad`), esquemas `javascript:` ofuscados con entidades y caracteres de control, mXSS mediante comentarios anidados, y vectores en SVG, MathML y CSS declarativo.
 
@@ -88,6 +88,6 @@ No hay modelos de IA comparables, porque el repositorio no contiene un modelo. A
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe5-ext2
+- Repositorio en Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe5-ext2
 - Papers, blogs, repositorios de codigo o demos asociados: no disponible en la informacion proporcionada.
 - Referencia a "part 1" de la bateria de sondas: no disponible (mencionada implicitamente en el titulo, sin enlace).

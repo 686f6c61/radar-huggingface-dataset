@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`patelvihaan/multitask` es un repositorio de HuggingFace que empaqueta una implementación propia de una arquitectura **EfficientFormer** orientada a tareas multitarea. No es un modelo entrenado ni una release de pesos con rendimiento validado: según su propia model card, se trata de un "punto de partida reproducible" que incluye un fichero Python ejecutable (`main.py`), un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` descrito explícitamente como **checkpoint de inicialización para smoke tests**, no como checkpoint entrenado ni evaluado.
+`patelvihaan/multitask` es un repositorio de Hugging Face que empaqueta una implementación propia de una arquitectura **EfficientFormer** orientada a tareas multitarea. No es un modelo entrenado ni una release de pesos con rendimiento validado: según su propia model card, se trata de un "punto de partida reproducible" que incluye un fichero Python ejecutable (`main.py`), un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` descrito explícitamente como **checkpoint de inicialización para smoke tests**, no como checkpoint entrenado ni evaluado.
 
 El autor declara la variante "large" con atención dilatada (*dilated attention*), fusión de ramas mediante *gated fusion*, activación aproximada GELU (`approx gelu`) y normalización LayerNorm. La receta de entrenamiento por defecto usa el optimizador Lion con un scheduler de tipo *step*. Los metadatos de safetensors reportan 16.576 parámetros totales, una cifra extraordinariamente baja para cualquier variante "large" y que sugiere que el artefacto es un esqueleto mínimo de pruebas, no un modelo funcional.
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento de este repositorio (no entrenado), por lo
 
 | Modelo | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| patelvihaan/multitask | Implementación propia de EfficientFormer "large" con checkpoint de inicialización sin entrenar | 16.576 (metadatos de safetensors) | No aplica (visión) | Apache 2.0 | HuggingFace, 0 descargas |
+| patelvihaan/multitask | Implementación propia de EfficientFormer "large" con checkpoint de inicialización sin entrenar | 16.576 (metadatos de safetensors) | No aplica (visión) | Apache 2.0 | Hugging Face, 0 descargas |
 | EfficientFormer (referencia oficial de la familia) | Modelo entrenado y publicado para visión, con variantes L1/L3/L7 | No disponible en la información proporcionada | No aplica (visión) | No disponible en la información proporcionada | No disponible en la información proporcionada |
 | MobileViT / MobileNetVx (alternativas eficientes de visión) | Arquitecturas ligeras para clasificación y detección en el borde | No disponible en la información proporcionada | No aplica (visión) | No disponible en la información proporcionada | No disponible en la información proporcionada |
 | ViT / DeiT (referencia transformer de visión) | Transformer de visión de propósito general | No disponible en la información proporcionada | No aplica (visión) | No disponible en la información proporcionada | No disponible en la información proporcionada |
@@ -90,5 +90,5 @@ No se dispone de datos de rendimiento de este repositorio (no entrenado), por lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/patelvihaan/multitask
+- Hugging Face: https://huggingface.co/patelvihaan/multitask
 - No se han encontrado enlaces técnicos relevantes en la búsqueda web realizada: los resultados devueltos corresponden a listados de direcciones postales, cajeros automáticos y cafeterías en Redmond (Washington), sin relación con el modelo. Por tanto, no se dispone de paper, blog, repositorio ni demo adicionales verificables.

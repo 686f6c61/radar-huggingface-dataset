@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario jamesmoralesee en HuggingFace, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre aprendizaje eficiente en datos (*data-efficient learning*). El propio autor lo describe como un documento de planificación que registra comparaciones previstas, posibles factores de confusión y requisitos de reproducibilidad antes de que se reporte cualquier resultado de benchmark. No se incluyen pesos de modelo, código de entrenamiento ni resultados experimentales.
+Este repositorio, publicado por el usuario jamesmoralesee en Hugging Face, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre aprendizaje eficiente en datos (*data-efficient learning*). El propio autor lo describe como un documento de planificación que registra comparaciones previstas, posibles factores de confusión y requisitos de reproducibilidad antes de que se reporte cualquier resultado de benchmark. No se incluyen pesos de modelo, código de entrenamiento ni resultados experimentales.
 
 La relevancia de este repositorio radica en su enfoque metodológico: documenta de forma explícita el alcance de una pregunta de investigación, los baselines propuestos y los pasos necesarios para verificar futuros experimentos. Es un ejemplo de buenas prácticas para la investigación reproducible en eficiencia de datos, un área de creciente interés por el coste computacional del entrenamiento de grandes modelos de lenguaje. Sin embargo, no es un modelo utilizable para tareas de generación, razonamiento o procesamiento del lenguaje.
 
@@ -21,7 +21,7 @@ La relevancia de este repositorio radica en su enfoque metodológico: documenta 
 
 ## Arquitectura y entrenamiento
 
-No existe arquitectura ni proceso de entrenamiento. El repositorio contiene únicamente dos archivos: `README.md` y `reading.md`. El primero es la documentación que se muestra en la página de HuggingFace; el segundo es la nota principal con el contenido de investigación. El autor indica explícitamente que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales. No se mencionan datos de entrenamiento, tokens procesados, ni técnicas como RLHF o DPO.
+No existe arquitectura ni proceso de entrenamiento. El repositorio contiene únicamente dos archivos: `README.md` y `reading.md`. El primero es la documentación que se muestra en la página de Hugging Face; el segundo es la nota principal con el contenido de investigación. El autor indica explícitamente que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales. No se mencionan datos de entrenamiento, tokens procesados, ni técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ No disponible. Este repositorio no es un modelo de IA y no existe una categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jamesmoralesee/data-efficient-learning
+- Repositorio en Hugging Face: https://huggingface.co/jamesmoralesee/data-efficient-learning
 - Paper relacionado (How to Train Data-Efficient LLMs, arXiv): https://arxiv.org/abs/2402.09668
 - Tutorial ICML 2024 sobre fundamentos de aprendizaje eficiente en datos: https://sjoshi804.github.io/data-efficient-learning-talk/
 - PDF del tutorial ICML 2024: https://baharanm.github.io/assets/pdf/ICML24_tutorial_DataEfficient.pdf

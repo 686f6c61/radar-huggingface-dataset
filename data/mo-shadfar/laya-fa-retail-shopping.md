@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya fine-tuned on Persian customer-service data es un ajuste fino del checkpoint multilingue Laya, publicado por el usuario mo-shadfar en HuggingFace. El modelo parte de Laya y se especializa en un dominio muy concreto: atencion al cliente en persa (farsi) para el sector retail y compras. El autor describe el entrenamiento como un ajuste sobre un conjunto de unos 300 casos de servicio al cliente en persa, con objetivos suaves ("soft targets") sobre intencion, urgencia y preguntas de tipo noul, usando la receta RLCD con DDP.
+Laya fine-tuned on Persian customer-service data es un ajuste fino del checkpoint multilingue Laya, publicado por el usuario mo-shadfar en Hugging Face. El modelo parte de Laya y se especializa en un dominio muy concreto: atencion al cliente en persa (farsi) para el sector retail y compras. El autor describe el entrenamiento como un ajuste sobre un conjunto de unos 300 casos de servicio al cliente en persa, con objetivos suaves ("soft targets") sobre intencion, urgencia y preguntas de tipo noul, usando la receta RLCD con DDP.
 
 El modelo tiene 321.908.998 parametros (aproximadamente 322 millones), lo que lo situa en la categoria de modelos pequenos. El repositorio ocupa 0,7 GB y los pesos estan en formato safetensors. La libreria de ejecucion declarada es `laya`, y la interfaz publica que muestra el autor es un metodo `predict(state, questions)` orientado a producir una respuesta o decision a partir de un estado y una lista de preguntas, mas que a un chat generativo generico.
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha es acotada: se trata de un modelo con cero descargas
 | Parametros activos | no aplica (no se documenta que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo se distribuyen pesos en safetensors; no se documentan variantes GGUF, AWQ, GPTQ ni int8) |
-| Idiomas soportados | persa (farsi), segun las etiquetas y la model card; el metadato de idiomas de HuggingFace no declara ninguno |
+| Idiomas soportados | persa (farsi), segun las etiquetas y la model card; el metadato de idiomas de Hugging Face no declara ninguno |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
@@ -92,5 +92,5 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mo-shadfar/laya-fa-retail-shopping
+- Hugging Face: https://huggingface.co/mo-shadfar/laya-fa-retail-shopping
 - Repositorio, paper, blog o demo adicionales: no disponibles. Los resultados de busqueda web proporcionados no contienen enlaces relevantes a este modelo.

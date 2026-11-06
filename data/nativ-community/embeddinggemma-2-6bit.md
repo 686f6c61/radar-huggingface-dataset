@@ -108,7 +108,7 @@ No se dispone de información sobre alternativas comparables en el material prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nativ-community/embeddinggemma-2-6bit
+- Repositorio en Hugging Face: https://huggingface.co/nativ-community/embeddinggemma-2-6bit
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revisión concreta del modelo base usada en la conversión: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Implementación MLX-VLM (revisión usada): https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0

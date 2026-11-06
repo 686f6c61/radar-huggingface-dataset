@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SFT_Llama-3.1-8B-Instruct_DAPO17k_CorrectFormatSFT_2K` es un ajuste fino (fine-tuning) supervisado (SFT) del modelo base `Meta-Llama-3.1-8B-Instruct` de Meta, desarrollado por el usuario `resistz` y publicado en HuggingFace con licencia MIT. El nombre sugiere que ha sido entrenado sobre un dataset denominado `DAPO17k` (posiblemente relacionado con el algoritmo de optimización DAPO, aunque no se confirma) y con una longitud de contexto de 2.000 tokens, indicada en la nomenclatura final `_2K`. Sin embargo, estos detalles no están documentados en la model card, que únicamente declara la licencia.
+El modelo `SFT_Llama-3.1-8B-Instruct_DAPO17k_CorrectFormatSFT_2K` es un ajuste fino (fine-tuning) supervisado (SFT) del modelo base `Meta-Llama-3.1-8B-Instruct` de Meta, desarrollado por el usuario `resistz` y publicado en Hugging Face con licencia MIT. El nombre sugiere que ha sido entrenado sobre un dataset denominado `DAPO17k` (posiblemente relacionado con el algoritmo de optimización DAPO, aunque no se confirma) y con una longitud de contexto de 2.000 tokens, indicada en la nomenclatura final `_2K`. Sin embargo, estos detalles no están documentados en la model card, que únicamente declara la licencia.
 
 El modelo tiene 8.030.261.248 parámetros (aproximadamente 8B), un tamaño típico para ejecución en GPUs de consumo medio, y se distribuye en formato `safetensors`. Al ser un ajuste fino de Llama 3.1 Instruct, hereda las capacidades generales del modelo base (generación de texto, razonamiento, multilingüismo, etc.), pero con un entrenamiento adicional orientado a producir respuestas con un formato específico (según la etiqueta `CorrectFormatSFT`). Aunque no hay datos públicos sobre el proceso de entrenamiento ni métricas de evaluación, su relevancia radica en ofrecer una alternativa de fine-tuning ligero y con licencia permisiva (MIT) para desarrolladores que necesiten un modelo de 8B con salidas estructuradas o adaptadas a un formato concreto.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: con 8B parámetros en precisión FP16, se requieren aproximadamente 16 GB de VRAM (el tamaño del repo es 16.1 GB). Con cuantización a 4 bits (GGUF Q4_K_M), la VRAM necesaria se reduce a unos 5-6 GB.
 - GPUs recomendadas: NVIDIA RTX 3090/4090 (24GB) o A10G (24GB) para FP16; GPUs con 8-12 GB (RTX 3060, 4070) si se cuantiza a 4 bits.
 - Compatibilidad con GPU de consumo: sí, es posible ejecutarlo en tarjetas de gama media con cuantización.
-- Opciones de despliegue: vLLM, llama.cpp (a través de GGUF), Ollama (mediante conversión), TGI (Text Generation Inference) o directamente con transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp (a través de GGUF), Ollama (mediante conversión), TGI (Text Generation Inference) o directamente con transformers de Hugging Face.
 - Latencia y throughput: no hay datos específicos, pero para un modelo 8B en una RTX 4090 con cuantización 4-bit, se pueden esperar ~50-100 tokens/s en generación, dependiendo de la configuración.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ La principal diferencia con el modelo base es la licencia MIT, que permite uso c
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/resistz/SFT_Llama-3.1-8B-Instruct_DAPO17k_CorrectFormatSFT_2K
+- Página del modelo en Hugging Face: https://huggingface.co/resistz/SFT_Llama-3.1-8B-Instruct_DAPO17k_CorrectFormatSFT_2K
 - Modelo base (referencia): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Cuantizaciones GGUF del base (para referencia de despliegue): https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF
 - NVIDIA NIM para Llama 3.1 8B: https://build.nvidia.com/meta/llama-3_1-8b-instruct/modelcard

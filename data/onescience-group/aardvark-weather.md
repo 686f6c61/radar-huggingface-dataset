@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Tipo | Resolucion | Variables | Horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Aardvark Weather | End-to-end multimodal | 1.5° (121×240) | 24 | Dia 1 (paper: hasta dia 10) | other | HuggingFace, codigo en GitHub |
+| Aardvark Weather | End-to-end multimodal | 1.5° (121×240) | 24 | Dia 1 (paper: hasta dia 10) | other | Hugging Face, codigo en GitHub |
 | GraphCast (Google DeepMind) | Red neuronal en grafo | 0.25° | 69 | Hasta 10 dias | Apache 2.0 | Codigo abierto |
 | Pangu-Weather (Huawei) | Transformer 3D | 0.25° | 69 | Hasta 7 dias | no disponible | Pesos publicados |
 | FourCastNet | Transformer | 0.25° | 69 | Hasta 7 dias | no disponible | Codigo abierto |
@@ -81,7 +81,7 @@ Los datos de rendimiento comparativo (RMSE, MAE) entre estos modelos no estan di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/Aardvark-Weather
+- Hugging Face: https://huggingface.co/OneScience-Group/Aardvark-Weather
 - Paper: https://www.nature.com/articles/s41586-025-08897-0
 - Codigo oficial: https://github.com/anna-allen/aardvark-weather-public
 - Pesos oficiales: https://huggingface.co/datasets/av555/aardvark-weather

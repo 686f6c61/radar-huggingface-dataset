@@ -22,7 +22,7 @@ Su relevancia actual es, por tanto, documental y metodológica: sirve como plant
 | Pipeline declarado | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 6 / 0 |
-| Creado / actualizado | 2026-09-17 (fechas de metadatos de HuggingFace, posteriores a la fecha de consulta) |
+| Creado / actualizado | 2026-09-17 (fechas de metadatos de Hugging Face, posteriores a la fecha de consulta) |
 | Artefactos reales | `reading.md`, `README.md` |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Contexto | no disponible | No disponible |
 | Rendimiento | no se reclama ninguno | No disponible |
 | Licencia | MIT | No disponible |
-| Disponibilidad | Repositorio público en HuggingFace, 6 descargas | No disponible |
+| Disponibilidad | Repositorio público en Hugging Face, 6 descargas | No disponible |
 
 No se conocen modelos comparables en la información proporcionada: la pieza no pertenece a la categoría de modelos de lenguaje, sino a la de artefactos documentales. Cualquier tabla que enfrentase este repositorio a un LLM real sería engañosa, porque no existe una tarea común en la que ambos puedan medirse.
 
@@ -88,13 +88,13 @@ No se conocen modelos comparables en la información proporcionada: la pieza no 
 - Las hipótesis y planes del documento no son resultados. Citarlos como evidencia constituiría un error metodológico.
 - Idiomas soportados no declarados; la nota está redactada en inglés, pero esto no implica capacidad multilingüe del artefacto.
 - Licencia MIT permite uso comercial del contenido documental, pero la model card advierte de que los términos de los datos de origen deben revisarse por separado si se combinan con datasets externos.
-- Los metadatos de HuggingFace muestran fechas de creación y actualización (2026-09-17) posteriores a la fecha habitual de consulta, lo que conviene verificar antes de citar el repositorio como referencia temporal.
+- Los metadatos de Hugging Face muestran fechas de creación y actualización (2026-09-17) posteriores a la fecha habitual de consulta, lo que conviene verificar antes de citar el repositorio como referencia temporal.
 - No existen benchmarks, por lo que no puede compararse con DistilBERT, TinyBERT ni cualquier otra familia de destilación sin realizar un trabajo experimental desde cero.
 - La búsqueda web asociada no devolvió enlaces relevantes: los resultados obtenidos fueron páginas generales de un portal de preguntas y respuestas sin relación con el modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alnikitinbury/learn-knowledge-distillation50
+- Repositorio en Hugging Face: https://huggingface.co/alnikitinbury/learn-knowledge-distillation50
 - Paper: no disponible
 - Blog o artículo técnico: no disponible
 - Repositorio de código adicional: no disponible

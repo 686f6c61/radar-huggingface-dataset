@@ -84,7 +84,7 @@ La unica comparacion directa mencionada es con Qwen3.6-35B, del cual no se propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SC117/Ornith-1.5-35B-A3B-MTP-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SC117/Ornith-1.5-35B-A3B-MTP-APEX-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Pagina oficial del modelo: https://ornith.ai/ornith_1_5.html
 - ModelScope: https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B

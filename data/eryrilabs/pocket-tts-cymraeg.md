@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pocket TTS Cymraeg es un modelo de sintesis de voz (text-to-speech) para gales, desarrollado por EryriLabs y publicado en HuggingFace bajo licencia CC-BY-4.0. Se trata de un modelo comunitario entrenado desde cero en gales sobre 173 horas de habla galesa con licencia abierta, partiendo de una inicializacion gaussiana. Lo que toma de Kyutai es la receta de Pocket TTS y el codec Mimi congelado; no contiene ningun peso de idioma de Kyutai. Segun sus autores, es el primer TTS en gales capaz de hablar con una voz personalizada a partir de unos pocos segundos de audio de referencia y de ejecutarse localmente en CPU.
+Pocket TTS Cymraeg es un modelo de sintesis de voz (text-to-speech) para gales, desarrollado por EryriLabs y publicado en Hugging Face bajo licencia CC-BY-4.0. Se trata de un modelo comunitario entrenado desde cero en gales sobre 173 horas de habla galesa con licencia abierta, partiendo de una inicializacion gaussiana. Lo que toma de Kyutai es la receta de Pocket TTS y el codec Mimi congelado; no contiene ningun peso de idioma de Kyutai. Segun sus autores, es el primer TTS en gales capaz de hablar con una voz personalizada a partir de unos pocos segundos de audio de referencia y de ejecutarse localmente en CPU.
 
 La arquitectura combina un FlowLM de 24 capas y dimension de modelo 1024 (316.013.953 parametros) con el codec Mimi congelado de Kyutai (20.054.337 parametros), sumando 336.068.290 parametros en float32 (1.344,3 MB). Incorpora su propio tokenizador SentencePiece BPE de 4.000 piezas entrenado sobre texto en gales, y genera audio mono a 24 kHz. Su relevancia actual esta en cubrir una lengua de recursos limitados con un modelo que funciona sin GPU: en un Intel Core i9-13900K alcanza un factor de tiempo real (RTF) de 0,71 a un solo hilo en float32 y de 0,31 con ocho hilos en int8, es decir, entre 1,4 y 3,2 veces mas rapido que el tiempo real.
 
@@ -25,7 +25,7 @@ El modelo esta pensado para despliegue local en CPU y para clonacion de voz a pa
 | Tokenizador | SentencePiece BPE propio, 4.000 piezas, entrenado sobre texto en gales |
 | Temperatura por defecto | 0,3 (definida en el `config.yaml`, no es el valor por defecto del paquete) |
 | Datos de entrenamiento | 173 horas de habla galesa con licencia abierta |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha indicada en metadatos del repo | creado el 2026-09-11, actualizado el 2026-09-11 |
 
 ## Arquitectura y entrenamiento
@@ -43,7 +43,7 @@ El modelo soporta condicionamiento de voz a partir de unos pocos segundos de aud
 - Cuantizacion int8 mediante `quantize=True` en `load_model` o `apply_dynamic_int8(model.flow_lm, RECOMMENDED_CONFIG)`.
 - Ejecucion local: los pesos se cargan desde rutas `hf://` o desde copia local con `config.relative.yaml`.
 - Build GGUF para `llama-tts` disponible en un repositorio aparte (carpeta `welsh/`).
-- Demo ejecutable en navegador a traves de un Space de HuggingFace.
+- Demo ejecutable en navegador a traves de un Space de Hugging Face.
 - No se documentan en la informacion disponible capacidades de tool calling, agentes, vision, audio de entrada mas alla del prompt de voz, ni razonamiento multi-paso.
 
 ## Casos de uso
@@ -93,7 +93,7 @@ Los autores advierten que la dispersion entre dos muestras de una misma celda es
 - Hilos: `pocket_tts` ejecuta `torch.set_num_threads(1)` al importarse; hay que llamar a `torch.set_num_threads(n)` despues de la importacion para usar mas hilos.
 - Latencia al primer audio: 0,23 s (float32, 1 hilo), 0,10 s (float32, 8 hilos), 0,10 s (int8, 1 hilo), 0,06 s (int8, 8 hilos).
 - Throughput: entre 1,4x y 3,2x el tiempo real segun la configuracion (RTF de 0,71 a 0,31).
-- Opciones de despliegue: paquete Python `pocket-tts==3.0.2`, carga de pesos en safetensors via `TTSModel.load_model`, build GGUF para `llama-tts` en el repositorio `EryriLabs/pocket-tts-GGUF` (carpeta `welsh/`) y Space de demostracion en HuggingFace. No se documentan integraciones con vLLM, TGI, Ollama ni llama.cpp mas alla del build GGUF para `llama-tts`.
+- Opciones de despliegue: paquete Python `pocket-tts==3.0.2`, carga de pesos en safetensors via `TTSModel.load_model`, build GGUF para `llama-tts` en el repositorio `EryriLabs/pocket-tts-GGUF` (carpeta `welsh/`) y Space de demostracion en Hugging Face. No se documentan integraciones con vLLM, TGI, Ollama ni llama.cpp mas alla del build GGUF para `llama-tts`.
 - bfloat16 no funciona en CPU en este modelo: si se convierte solo el FlowLM, Mimi le entrega latentes en float32; si se convierten ambas mitades, el fallo se traslada al codificador Mimi, que lee el wav de referencia como float32. No hay ruta bfloat16 soportada en `pocket_tts` sin parchearlo.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas comp
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| EryriLabs/pocket-tts-cymraeg | 336.068.290 (316 M FlowLM + 20 M Mimi congelado) | no disponible | gales (cy) | cc-by-4.0 | safetensors en HuggingFace, GGUF para `llama-tts`, Space de demo | RTF 0,31-0,71 en CPU; WER mediano 0,000-0,182 segun variante |
+| EryriLabs/pocket-tts-cymraeg | 336.068.290 (316 M FlowLM + 20 M Mimi congelado) | no disponible | gales (cy) | cc-by-4.0 | safetensors en Hugging Face, GGUF para `llama-tts`, Space de demo | RTF 0,31-0,71 en CPU; WER mediano 0,000-0,182 segun variante |
 | Pocket TTS de Kyutai (origen de la receta) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Codec Mimi de Kyutai (componente congelado) | 20.054.337 | no disponible | no disponible | cc-by-4.0 | incluido en este repositorio | no aplica (es el codec, no el generador de texto) |
 | Otros TTS en gales | no disponibles en la informacion proporcionada | no disponible | gales | no disponible | no disponible | no disponible |
@@ -125,11 +125,11 @@ Los autores afirman que, hasta donde han podido comprobar, es el primer TTS en g
 - Uso de voces clonadas: la clonacion a partir de unos segundos de referencia exige consentimiento del hablante y cumple con la normativa aplicable de proteccion de datos y derechos de imagen; la licencia del modelo no cubre ese aspecto.
 - La model card proporcionada esta truncada (termina en "The problem is not that the m"), por lo que podrian existir secciones adicionales de limitaciones, procedencia de datos o instrucciones de cita que no se recogen en esta ficha.
 - Sin historial de uso: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion independiente por parte de la comunidad.
-- Los resultados de busqueda web asociados a esta consulta no contienen informacion relevante sobre el modelo (devuelven resultados sobre DC Comics y Discord), de modo que toda la ficha se basa en la informacion de HuggingFace.
+- Los resultados de busqueda web asociados a esta consulta no contienen informacion relevante sobre el modelo (devuelven resultados sobre DC Comics y Discord), de modo que toda la ficha se basa en la informacion de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EryriLabs/pocket-tts-cymraeg
+- Modelo en Hugging Face: https://huggingface.co/EryriLabs/pocket-tts-cymraeg
 - Demo en navegador (Space): https://huggingface.co/spaces/EryriLabs/pocket-tts-cymraeg-demo
 - Build GGUF para `llama-tts` (carpeta `welsh/`): https://huggingface.co/EryriLabs/pocket-tts-GGUF
 - Paper referenciado en las etiquetas del modelo: arXiv:2509.06926 (https://arxiv.org/abs/2509.06926)

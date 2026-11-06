@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yan2026/embeddinggemma-2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/google/embeddinggemma-2
+- Repositorio en Hugging Face: https://huggingface.co/yan2026/embeddinggemma-2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/google/embeddinggemma-2
 - Conversion de ggml-org: https://huggingface.co/ggml-org/embeddinggemma-2-GGUF
 - Conversion de unsloth: https://huggingface.co/unsloth/embeddinggemma-2-GGUF
 - Blog de Google DeepMind sobre EmbeddingGemma 2: https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/

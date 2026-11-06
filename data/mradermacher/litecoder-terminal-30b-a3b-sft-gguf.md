@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LiteCoder-Terminal-30b-a3b-sft-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LiteCoder-Terminal-30b-a3b-sft-GGUF
 - Modelo base: https://huggingface.co/Lite-Coder/LiteCoder-Terminal-30b-a3b-sft
 - Pagina de descargas del autor: https://hf.tst.eu/model#LiteCoder-Terminal-30b-a3b-sft-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

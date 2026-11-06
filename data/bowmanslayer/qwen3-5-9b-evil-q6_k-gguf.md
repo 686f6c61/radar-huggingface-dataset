@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace (Q6_K-GGUF): https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-Q6_K-GGUF
+- Repositorio Hugging Face (Q6_K-GGUF): https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-Q6_K-GGUF
 - Checkpoint BF16: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-BF16
 - Variante W4A16: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-W4A16
 - Variante Q4_K_M-GGUF: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-Q4_K_M-GGUF

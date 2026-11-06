@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) supervisado del modelo base `unsloth/Olmo-3-7B-Instruct`, publicado por el usuario `longtermrisk` en HuggingFace. El nombre sugiere que el entrenamiento se realizó sobre un conjunto de datos relacionado con nombres antiguos de aves (old bird names), en una segunda o tercera versión, con semilla 2 y tres épocas. El modelo está pensado para generación de texto conversacional en inglés y se distribuye bajo licencia Apache 2.0.
+Este modelo es un ajuste fino (fine-tuning) supervisado del modelo base `unsloth/Olmo-3-7B-Instruct`, publicado por el usuario `longtermrisk` en Hugging Face. El nombre sugiere que el entrenamiento se realizó sobre un conjunto de datos relacionado con nombres antiguos de aves (old bird names), en una segunda o tercera versión, con semilla 2 y tres épocas. El modelo está pensado para generación de texto conversacional en inglés y se distribuye bajo licencia Apache 2.0.
 
-El interés de esta publicación radica en que demuestra un flujo de fine-tuning acelerado con la librería Unsloth y la biblioteca TRL de HuggingFace, sobre un modelo OLMo-3 de 7B parámetros. Sin embargo, la información pública es muy limitada: no se proporcionan detalles sobre el dataset, la arquitectura interna, el contexto máximo ni métricas de evaluación. Por tanto, esta ficha se basa únicamente en los metadatos disponibles y en el conocimiento general de la familia OLMo, marcando como "no disponible" cualquier dato no confirmado.
+El interés de esta publicación radica en que demuestra un flujo de fine-tuning acelerado con la librería Unsloth y la biblioteca TRL de Hugging Face, sobre un modelo OLMo-3 de 7B parámetros. Sin embargo, la información pública es muy limitada: no se proporcionan detalles sobre el dataset, la arquitectura interna, el contexto máximo ni métricas de evaluación. Por tanto, esta ficha se basa únicamente en los metadatos disponibles y en el conocimiento general de la familia OLMo, marcando como "no disponible" cualquier dato no confirmado.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El interés de esta publicación radica en que demuestra un flujo de fine-tuning
 
 No se dispone de información detallada sobre la arquitectura interna del modelo. El nombre y el modelo base indican que se trata de un OLMo-3-7B-Instruct, que pertenece a la familia OLMo de modelos de lenguaje abiertos desarrollados por el Allen Institute for AI (AI2). OLMo suele emplear arquitecturas transformer decoder-only, pero no se confirma para esta versión concreta.
 
-El entrenamiento consistió en un ajuste fino supervisado (SFT) sobre el modelo base, utilizando la librería Unsloth para acelerar el proceso y la biblioteca TRL de HuggingFace. El nombre del repositorio sugiere que se usaron datos relacionados con nombres antiguos de aves, con una semilla aleatoria 2 y 3 épocas. No se especifica el tamaño del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO.
+El entrenamiento consistió en un ajuste fino supervisado (SFT) sobre el modelo base, utilizando la librería Unsloth para acelerar el proceso y la biblioteca TRL de Hugging Face. El nombre del repositorio sugiere que se usaron datos relacionados con nombres antiguos de aves, con una semilla aleatoria 2 y 3 épocas. No se especifica el tamaño del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
@@ -65,6 +65,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed2-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed2-epoch3)
+- [Hugging Face - longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed2-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed2-epoch3)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-T-SPIN_Gamma2-2B es un ajuste fino del modelo google/gemma-2-2b publicado por el usuario HoangTran223 en HuggingFace. El repositorio aplica un procedimiento iterativo de self-play sobre una inicialización ya sometida a SFT con UltraChat (repo `HoangTran223/gemma2_2b_sft_ultrachat200k_20260820_043159`), y distribuye los checkpoints resultantes de cada iteración junto con los datos sintéticos generados durante el proceso. El nombre del repositorio usa "Gamma2" por indicación del autor, aunque el modelo subyacente es Gemma 2 de 2B parámetros.
+T-SPIN_Gamma2-2B es un ajuste fino del modelo google/gemma-2-2b publicado por el usuario HoangTran223 en Hugging Face. El repositorio aplica un procedimiento iterativo de self-play sobre una inicialización ya sometida a SFT con UltraChat (repo `HoangTran223/gemma2_2b_sft_ultrachat200k_20260820_043159`), y distribuye los checkpoints resultantes de cada iteración junto con los datos sintéticos generados durante el proceso. El nombre del repositorio usa "Gamma2" por indicación del autor, aunque el modelo subyacente es Gemma 2 de 2B parámetros.
 
 Se trata de un artefacto de investigación más que de un modelo listo para producción: acumula cero descargas y cero likes, no incluye model card explicativa del método, no publica resultados de evaluación y su fecha de creación (11 de septiembre de 2026) lo sitúa como un experimento reciente. Su interés radica en documentar de forma abierta un pipeline de autoentrenamiento por iteraciones, con los datos sintéticos intermedios incluidos en el propio repositorio.
 
@@ -90,7 +90,7 @@ La comparación debe leerse con cautela: para el modelo de este repositorio no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HoangTran223/T-SPIN_Gamma2-2B
+- Modelo en Hugging Face: https://huggingface.co/HoangTran223/T-SPIN_Gamma2-2B
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Inicialización SFT citada por el autor: https://huggingface.co/HoangTran223/gemma2_2b_sft_ultrachat200k_20260820_043159
 - Licencia Gemma Terms of Use: https://ai.google.dev/gemma/terms

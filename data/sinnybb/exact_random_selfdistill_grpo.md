@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sinnybb/exact_random_selfdistill_grpo` es un ajuste fino de tipo vision-language derivado de la arquitectura Qwen2.5-VL, publicado por el usuario sinnybb en HuggingFace. Se trata del checkpoint final fusionado de un entrenamiento con GRPO (Group Relative Policy Optimization) sobre un modelo previo denominado "Teacher exact39K random curriculum Stage3". El repositorio contiene 8.292.166.656 parametros (aproximadamente 8,3 mil millones) repartidos en cuatro shards de safetensors, con un tamano total de repositorio de 16,6 GB, lo que corresponde a pesos en precision de 16 bits.
+El modelo `sinnybb/exact_random_selfdistill_grpo` es un ajuste fino de tipo vision-language derivado de la arquitectura Qwen2.5-VL, publicado por el usuario sinnybb en Hugging Face. Se trata del checkpoint final fusionado de un entrenamiento con GRPO (Group Relative Policy Optimization) sobre un modelo previo denominado "Teacher exact39K random curriculum Stage3". El repositorio contiene 8.292.166.656 parametros (aproximadamente 8,3 mil millones) repartidos en cuatro shards de safetensors, con un tamano total de repositorio de 16,6 GB, lo que corresponde a pesos en precision de 16 bits.
 
 El modelo resuelve la tarea de image-text-to-text, es decir, generacion de texto condicionada por imagenes dentro de un pipeline conversacional. Su rasgo mas distintivo es el uso de "Monet latent reasoning", un mecanismo de razonamiento latente que, segun la model card, requiere una implementacion de inferencia y runtime especifica del proyecto de entrenamiento (Monet), por lo que no es directamente ejecutable con un cargador estandar de transformers sin ese runtime.
 
@@ -25,7 +25,7 @@ Es relevante como ejemplo de pipeline de auto-destilacion y RL sobre un modelo v
 
 La arquitectura base es Qwen2.5-VL, un transformer multimodal que procesa entradas de imagen y texto para generar respuestas de texto. El checkpoint publicado tiene 8,3 mil millones de parametros, un orden de magnitud coherente con la familia Qwen2.5-VL de 7B con el codificador visual incluido. El pipeline declarado es image-text-to-text y la libreria de referencia es transformers.
 
-El proceso de entrenamiento descrito en la model card parte de un checkpoint "Teacher exact39K Stage3", que a su vez se obtuvo mediante: (1) un Stage1 de dos epocas; (2) un curriculum aleatorio con semilla 42 compuesto por tres subconjuntos de 13K ejemplos y dos epocas por subconjunto; y (3) un Stage3 sobre ejemplos correctos del profesor durante una epoca. Sobre ese punto de partida se aplico GRPO, con los siguientes hiperparametros: datos de entrenamiento Thyme-RL con un maximo de 3.200 ejemplos, 1 epoca, 4 GPUs, latent size 10, 8 rollouts por prompt, temperatura de muestreo 0.5, learning rate 1e-6, coeficiente KL 0.01 y Monet RL sigma 10.0. El checkpoint publicado es el paso global 12 de GRPO, el ultimo paso guardado de la ejecucion completada. Los cuatro shards distribuidos del actor se fusionaron en cuatro shards de safetensors de HuggingFace, e se incluyen los ficheros de tokenizer y de procesador de imagenes.
+El proceso de entrenamiento descrito en la model card parte de un checkpoint "Teacher exact39K Stage3", que a su vez se obtuvo mediante: (1) un Stage1 de dos epocas; (2) un curriculum aleatorio con semilla 42 compuesto por tres subconjuntos de 13K ejemplos y dos epocas por subconjunto; y (3) un Stage3 sobre ejemplos correctos del profesor durante una epoca. Sobre ese punto de partida se aplico GRPO, con los siguientes hiperparametros: datos de entrenamiento Thyme-RL con un maximo de 3.200 ejemplos, 1 epoca, 4 GPUs, latent size 10, 8 rollouts por prompt, temperatura de muestreo 0.5, learning rate 1e-6, coeficiente KL 0.01 y Monet RL sigma 10.0. El checkpoint publicado es el paso global 12 de GRPO, el ultimo paso guardado de la ejecucion completada. Los cuatro shards distribuidos del actor se fusionaron en cuatro shards de safetensors de Hugging Face, e se incluyen los ficheros de tokenizer y de procesador de imagenes.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sinnybb/exact_random_selfdistill_grpo | ~8,3B | no disponible | no disponible | apache-2.0 | HuggingFace, requiere runtime Monet para razonamiento latente |
+| sinnybb/exact_random_selfdistill_grpo | ~8,3B | no disponible | no disponible | apache-2.0 | Hugging Face, requiere runtime Monet para razonamiento latente |
 | Qwen2.5-VL (familia base) | ~7B en la variante pequena | no disponible en esta informacion | no disponible | apache-2.0 (variantes) | amplia disponibilidad |
 | Alternativas de mismo tamano (vision-language ~7-9B) | variable | variable | no disponible | variable | variable |
 
@@ -85,4 +85,4 @@ No se dispone de datos suficientes para una comparativa de rendimiento fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sinnybb/exact_random_selfdistill_grpo
+- Hugging Face: https://huggingface.co/sinnybb/exact_random_selfdistill_grpo

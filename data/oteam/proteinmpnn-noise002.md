@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto / vecinos | Backbone | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| proteinmpnn-noise002 (esta ficha) | 1,674 M | 48 vecinos | N, CA, C, O | AGPL-3.0 | HuggingFace (oteam) |
-| proteinmpnn-noise010 | 1,674 M | 48 vecinos | N, CA, C, O | AGPL-3.0 | HuggingFace (oteam) |
-| solublempnn-noise002 | 1,674 M | 48 vecinos | N, CA, C, O | AGPL-3.0 | HuggingFace (oteam) |
-| proteinmpnn-ca-only-noise002 | 1,642 M | 48 vecinos | CA | AGPL-3.0 | HuggingFace (oteam) |
+| proteinmpnn-noise002 (esta ficha) | 1,674 M | 48 vecinos | N, CA, C, O | AGPL-3.0 | Hugging Face (oteam) |
+| proteinmpnn-noise010 | 1,674 M | 48 vecinos | N, CA, C, O | AGPL-3.0 | Hugging Face (oteam) |
+| solublempnn-noise002 | 1,674 M | 48 vecinos | N, CA, C, O | AGPL-3.0 | Hugging Face (oteam) |
+| proteinmpnn-ca-only-noise002 | 1,642 M | 48 vecinos | CA | AGPL-3.0 | Hugging Face (oteam) |
 
 La diferencia entre variantes es el nivel de ruido de entrenamiento (0,02, 0,10, 0,20 o 0,30 Å) y el conjunto de átomos de esqueleto. Las variantes con mayor ruido son más tolerantes a esqueletos imprecisos (por ejemplo, predichos por modelos generativos), mientras que `noise002` prioriza precisión cuando la estructura de entrada es fiable. No se dispone de comparación numérica de rendimiento entre variantes en la información proporcionada.
 
@@ -84,7 +84,7 @@ La diferencia entre variantes es el nivel de ruido de entrenamiento (0,02, 0,10,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/proteinmpnn
+- Modelo en Hugging Face: https://huggingface.co/oteam/proteinmpnn
 - Esta variante: https://huggingface.co/oteam/proteinmpnn-noise002
 - Variante noise010: https://huggingface.co/oteam/proteinmpnn-noise010
 - Variante noise020: https://huggingface.co/oteam/proteinmpnn-noise020

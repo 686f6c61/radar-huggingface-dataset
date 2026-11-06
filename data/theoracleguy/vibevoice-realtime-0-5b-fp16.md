@@ -76,7 +76,7 @@ La comparativa es orientativa; no se han encontrado benchmarks directos entre es
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión MLX: https://huggingface.co/theoracleguy/VibeVoice-Realtime-0.5B-fp16
+- Repositorio Hugging Face de esta versión MLX: https://huggingface.co/theoracleguy/VibeVoice-Realtime-0.5B-fp16
 - Modelo original de Microsoft: https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B
 - Documentación del modelo original (GitHub): https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-realtime-0.5b.md
 - Documentación alternativa (GitHub): https://github.com/SUP3RMASS1VE/VibeVoice-Realtime/blob/main/docs/vibevoice-realtime-0.5b.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-deepgrove/maple-preview-2bit-mlx es un modelo de lenguaje de 1.897.309.196 parámetros (aproximadamente 1,90 mil millones) publicado por el usuario deepgrove en HuggingFace bajo licencia MIT. Se distribuye en formato MLX, la librería de inferencia de Apple para chips de la serie M, y lleva aplicada una cuantización de 2 bits, según indican el propio nombre del repositorio y sus etiquetas. El repositorio ocupa 5,3 GB, acumula 529 descargas y 32 valoraciones positivas, y fue creado el 4 de agosto de 2026 con última actualización el 17 de septiembre de 2026. El sufijo "preview" sugiere una versión preliminar, no una release estable.
+deepgrove/maple-preview-2bit-mlx es un modelo de lenguaje de 1.897.309.196 parámetros (aproximadamente 1,90 mil millones) publicado por el usuario deepgrove en Hugging Face bajo licencia MIT. Se distribuye en formato MLX, la librería de inferencia de Apple para chips de la serie M, y lleva aplicada una cuantización de 2 bits, según indican el propio nombre del repositorio y sus etiquetas. El repositorio ocupa 5,3 GB, acumula 529 descargas y 32 valoraciones positivas, y fue creado el 4 de agosto de 2026 con última actualización el 17 de septiembre de 2026. El sufijo "preview" sugiere una versión preliminar, no una release estable.
 
 La información publicada es mínima. La model card se limita a dos líneas: la licencia MIT y la indicación de seguir las instrucciones del repositorio github.com/deepgrove-ai/mlx-lm-deepgrove. No se declaran arquitectura, longitud de contexto, idiomas, composición del dataset de entrenamiento ni resultados de evaluación.
 
@@ -31,7 +31,7 @@ Nota técnica: 1.897.309.196 parámetros a 2 bits equivalen a unos 0,47 GB de pe
 
 ## Arquitectura y entrenamiento
 
-No disponible. La información proporcionada no incluye ningún detalle sobre la arquitectura del modelo (transformer denso, mezcla de expertos, modelos de espacio de estados o híbridos), ni sobre el número de capas, dimensión oculta, mecanismo de atención o vocabulario. La etiqueta "maple" figuran entre los tags de HuggingFace, pero no se aclara si designa una arquitectura concreta, una familia de modelos o una denominación interna del autor.
+No disponible. La información proporcionada no incluye ningún detalle sobre la arquitectura del modelo (transformer denso, mezcla de expertos, modelos de espacio de estados o híbridos), ni sobre el número de capas, dimensión oculta, mecanismo de atención o vocabulario. La etiqueta "maple" figuran entre los tags de Hugging Face, pero no se aclara si designa una arquitectura concreta, una familia de modelos o una denominación interna del autor.
 
 Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de tokens, la composición del corpus, la existencia de fases de ajuste supervisado, RLHF o DPO, ni si se aplicaron técnicas como decodificación especulativa, atención lineal o cuantización durante el entrenamiento. El único elemento técnico verificable es el propio artefacto publicado: pesos en formato MLX cuantizados a 2 bits, pensados para ejecutarse con la herramienta referenciada en el repositorio github.com/deepgrove-ai/mlx-lm-deepgrove, que por su nombre parece un fork de mlx-lm orientado a este modelo.
 
@@ -111,7 +111,7 @@ Frente a estas alternativas, la ventaja potencial del modelo de deepgrove es la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepgrove/maple-preview-2bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/deepgrove/maple-preview-2bit-mlx
 - Repositorio de instrucciones citado en la model card: https://github.com/deepgrove-ai/mlx-lm-deepgrove
 - Paper: no disponible
 - Blog o anuncio: no disponible

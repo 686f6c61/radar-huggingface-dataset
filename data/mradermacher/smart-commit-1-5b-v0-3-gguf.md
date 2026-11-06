@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| smart-commit-1.5b-v0.3 (este modelo, cuantizado) | 1,54B | GGUF (0,8-3,2 GB) | Apache 2.0 | Mensajes de commit, conventional commits | HuggingFace, cuantizaciones staticas e imatrix |
-| Qwen2.5-1.5B-Instruct | 1,5B | safetensors, GGUF (comunidad) | Apache 2.0 (algunas variantes) | Uso general, codigo incluido | HuggingFace, amplio ecosistema |
-| Llama-3.2-1B-Instruct | 1,2B | safetensors, GGUF (comunidad) | Licencia Llama 3.2 | Uso general | HuggingFace, con restricciones de licencia propias de Meta |
-| StarCoder2-3B | 3B | safetensors, GGUF (comunidad) | BigCode OpenRAIL-M | Generacion de codigo | HuggingFace |
+| smart-commit-1.5b-v0.3 (este modelo, cuantizado) | 1,54B | GGUF (0,8-3,2 GB) | Apache 2.0 | Mensajes de commit, conventional commits | Hugging Face, cuantizaciones staticas e imatrix |
+| Qwen2.5-1.5B-Instruct | 1,5B | safetensors, GGUF (comunidad) | Apache 2.0 (algunas variantes) | Uso general, codigo incluido | Hugging Face, amplio ecosistema |
+| Llama-3.2-1B-Instruct | 1,2B | safetensors, GGUF (comunidad) | Licencia Llama 3.2 | Uso general | Hugging Face, con restricciones de licencia propias de Meta |
+| StarCoder2-3B | 3B | safetensors, GGUF (comunidad) | BigCode OpenRAIL-M | Generacion de codigo | Hugging Face |
 
 Comparado con los LLM generales de tamano similar, smart-commit-1.5b-v0.3 no pretende competir en razonamiento general, sino ofrecer mejor calidad en su tarea especifica (mensajes de commit) con el mismo coste de inferencia. Su licencia Apache 2.0 es mas permisiva que la de Llama 3.2 y mas abierta que las OpenRAIL de StarCoder2.
 

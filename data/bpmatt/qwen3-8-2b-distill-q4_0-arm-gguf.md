@@ -97,10 +97,10 @@ Mediciones adicionales del mismo fichero Q4_0 en el Nothing Phone (4a) Pro, llam
 
 | Modelo | Parametros | Contexto | Formato / tamano | Calidad vs BF16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Q4_0 ARM (este repo) | 1,94 B | no disponible | GGUF Q4_0, 1,11 GB | KL 0,086; perplejidad +8,1 % | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3.8-2B-Distill Q4_K_M (editor) | 1,94 B | no disponible | GGUF Q4_K_M, 1,31 GB | KL 0,041; perplejidad +3,6 % | Apache-2.0 | HuggingFace (repo del editor) |
-| Qwen3.8-2B-Distill BF16 (origen) | 1,94 B | no disponible | GGUF BF16 | referencia | Apache-2.0 | HuggingFace |
-| Qwen3.5-2B (Alibaba) | ≈2 B | no disponible | safetensors / GGUF | modelo base de la destilacion | no disponible en la informacion | HuggingFace |
+| Q4_0 ARM (este repo) | 1,94 B | no disponible | GGUF Q4_0, 1,11 GB | KL 0,086; perplejidad +8,1 % | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3.8-2B-Distill Q4_K_M (editor) | 1,94 B | no disponible | GGUF Q4_K_M, 1,31 GB | KL 0,041; perplejidad +3,6 % | Apache-2.0 | Hugging Face (repo del editor) |
+| Qwen3.8-2B-Distill BF16 (origen) | 1,94 B | no disponible | GGUF BF16 | referencia | Apache-2.0 | Hugging Face |
+| Qwen3.5-2B (Alibaba) | ≈2 B | no disponible | safetensors / GGUF | modelo base de la destilacion | no disponible en la informacion | Hugging Face |
 
 La comparación relevante es interna al propio modelo: Q4_0 gana en velocidad y tamaño en ARM y pierde en fidelidad frente a Q4_K_M. No se han publicado comparaciones con otros modelos de 2 B en la información disponible.
 
@@ -120,7 +120,7 @@ La comparación relevante es interna al propio modelo: Q4_0 gana en velocidad y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bpmatt/Qwen3.8-2B-Distill-Q4_0-ARM-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bpmatt/Qwen3.8-2B-Distill-Q4_0-ARM-GGUF
 - Modelo base (Empero): https://huggingface.co/empero-ai/Qwen3.8-2B-Distill
 - GGUF BF16 de origen: https://huggingface.co/empero-ai/Qwen3.8-2B-Distill-GGUF
 - Modelo Qwen sobre el que se destila: https://huggingface.co/Qwen/Qwen3.5-2B

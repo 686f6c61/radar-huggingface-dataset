@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Abiray/MiniMax-H3-Pruned-GGUF** es una versión podada y cuantizada en formato GGUF del modelo base **MiniMaxAI/MiniMax-H3**, desarrollado por el usuario Abiray y publicado en HuggingFace. Está diseñado para tareas multimodales de generación de vídeo, incluyendo text-to-video, image-to-video, image-text-to-video, video-to-video y generación de audio sincronizado con vídeo. Su pipeline principal es `image-text-to-video`, lo que indica que acepta entradas de imagen y texto para producir vídeo.
+El modelo **Abiray/MiniMax-H3-Pruned-GGUF** es una versión podada y cuantizada en formato GGUF del modelo base **MiniMaxAI/MiniMax-H3**, desarrollado por el usuario Abiray y publicado en Hugging Face. Está diseñado para tareas multimodales de generación de vídeo, incluyendo text-to-video, image-to-video, image-text-to-video, video-to-video y generación de audio sincronizado con vídeo. Su pipeline principal es `image-text-to-video`, lo que indica que acepta entradas de imagen y texto para producir vídeo.
 
 La relevancia de este modelo radica en su formato GGUF, que permite su ejecución en entornos con recursos limitados mediante herramientas como llama.cpp u Ollama, y en su naturaleza podada, que reduce el tamaño del modelo original a costa de una posible pérdida de calidad. A pesar de su popularidad (más de 130.000 descargas y 41 likes), la información técnica pública es escasa: no se especifican parámetros, arquitectura detallada, ni licencia. Esto limita su evaluación rigurosa para uso en producción, aunque su formato lo hace atractivo para prototipado y experimentación local.
 
@@ -16,7 +16,7 @@ La relevancia de este modelo radica en su formato GGUF, que permite su ejecució
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF (variantes no especificadas) |
 | Idiomas soportados | no disponibles |
-| Licencia | no disponible (etiquetada como "other" en HuggingFace) |
+| Licencia | no disponible (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. El modelo base MiniMax-H3 no tiene una ficha pública detallada, y no se conocen alternativas directas en el mismo formato (GGUF podado) para generación de vídeo. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se dispone de información suficiente para establecer una comparativa fiable. El modelo base MiniMax-H3 no tiene una ficha pública detallada, y no se conocen alternativas directas en el mismo formato (GGUF podado) para generación de vídeo. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Limitaciones y advertencias
 
@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - Abiray/MiniMax-H3-Pruned-GGUF](https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF)
+- [Hugging Face - Abiray/MiniMax-H3-Pruned-GGUF](https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF)
 - [Modelo base (referencia) - MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) (sin ficha pública detallada en la información proporcionada)

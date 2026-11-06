@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stage-babylm/llama-64-1L` es un modelo de lenguaje de tamaño extremadamente reducido, con apenas 177.344 parámetros, publicado en HuggingFace por el usuario `stage-babylm`. Su nombre sugiere una arquitectura tipo Llama con 64 dimensiones de ocultamiento y una sola capa, aunque no se confirma oficialmente en la documentación. Se presenta como un ajuste fino (fine-tune) de un modelo base no especificado, entrenado sobre un dataset desconocido. La model card es automática y carece de descripción funcional, por lo que la información disponible es muy limitada.
+El modelo `stage-babylm/llama-64-1L` es un modelo de lenguaje de tamaño extremadamente reducido, con apenas 177.344 parámetros, publicado en Hugging Face por el usuario `stage-babylm`. Su nombre sugiere una arquitectura tipo Llama con 64 dimensiones de ocultamiento y una sola capa, aunque no se confirma oficialmente en la documentación. Se presenta como un ajuste fino (fine-tune) de un modelo base no especificado, entrenado sobre un dataset desconocido. La model card es automática y carece de descripción funcional, por lo que la información disponible es muy limitada.
 
 La relevancia de este modelo radica en su tamaño mínimo, que lo convierte en un candidato para experimentos educativos, pruebas de técnicas de entrenamiento o demostraciones de conceptos básicos de transformers. No obstante, al carecer de documentación sobre capacidades, benchmarks o licencia, su utilidad práctica en entornos de producción es nula. Es probable que forme parte de un proyecto de investigación sobre modelos de pequeña escala, como los del corpus BabyLM, aunque no se confirma.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/stage-babylm/llama-64-1L)
+- [Página del modelo en Hugging Face](https://huggingface.co/stage-babylm/llama-64-1L)
 - [Página de despliegue en FriendliAI](https://friendli.ai/models/stage-babylm/llama-64-1L)

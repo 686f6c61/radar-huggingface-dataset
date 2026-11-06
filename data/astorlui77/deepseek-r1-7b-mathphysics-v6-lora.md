@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `astorlui77/DeepSeek-R1-7B-MathPhysics-v6-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario astorlui77. Está diseñado para especializar el modelo base DeepSeek-R1-7B en tareas de matemáticas y física, aprovechando la capacidad de razonamiento del modelo original. El repositorio tiene un tamaño de 0,7 GB, lo que corresponde al adaptador y no al modelo completo, que tendría varios gigabytes adicionales.
+El modelo `astorlui77/DeepSeek-R1-7B-MathPhysics-v6-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario astorlui77. Está diseñado para especializar el modelo base DeepSeek-R1-7B en tareas de matemáticas y física, aprovechando la capacidad de razonamiento del modelo original. El repositorio tiene un tamaño de 0,7 GB, lo que corresponde al adaptador y no al modelo completo, que tendría varios gigabytes adicionales.
 
 La relevancia de este adaptador radica en que permite ajustar un modelo de razonamiento ya potente (DeepSeek-R1) a dominios específicos sin necesidad de reentrenar todos los parámetros, reduciendo costes computacionales y de almacenamiento. La etiqueta `unsloth` sugiere que el entrenamiento se realizó con la librería Unsloth, optimizada para fine-tuning eficiente. Sin embargo, la model card es extremadamente escasa: no se especifican datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados, lo que limita la evaluación rigurosa del modelo.
 
@@ -51,16 +51,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: al ser un adaptador LoRA, la inferencia requiere cargar el modelo base DeepSeek-R1-7B (aproximadamente 14 GB en FP16) más el adaptador (0,7 GB). Con cuantización GGUF (si se usa la versión GGUF del mismo autor), se puede reducir a unos 4-6 GB en cuantización Q4.
 - GPU recomendadas: para FP16, una GPU con al menos 16 GB de VRAM (RTX 4090, A100 40GB, etc.). Para cuantización GGUF, una GPU con 8 GB (RTX 3070, RTX 4060) puede ser suficiente.
 - Compatibilidad con consumer GPU: sí, si se usa cuantización GGUF y llama.cpp u Ollama.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers y PEFT para cargar el adaptador.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers y PEFT para cargar el adaptador.
 - Latencia y throughput: no disponibles; dependen del hardware y la configuración de cuantización.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-R1-7B (base) | 7B | 128K (típico) | MIT (según versión) | HuggingFace |
-| astorlui77/DeepSeek-R1-7B-MathPhysics-v6-lora | 7B + adaptador | No disponible | No disponible | HuggingFace |
-| Qwen2.5-Math-7B | 7B | 32K | Apache 2.0 | HuggingFace |
+| DeepSeek-R1-7B (base) | 7B | 128K (típico) | MIT (según versión) | Hugging Face |
+| astorlui77/DeepSeek-R1-7B-MathPhysics-v6-lora | 7B + adaptador | No disponible | No disponible | Hugging Face |
+| Qwen2.5-Math-7B | 7B | 32K | Apache 2.0 | Hugging Face |
 
 La comparativa es limitada porque no hay datos de rendimiento del adaptador. Qwen2.5-Math-7B es un modelo especializado en matemáticas con licencia permisiva, pero no está enfocado en física. DeepSeek-R1-7B base es el punto de partida del adaptador, por lo que la comparación directa dependerá de la evaluación empírica.
 
@@ -74,7 +74,7 @@ La comparativa es limitada porque no hay datos de rendimiento del adaptador. Qwe
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/astorlui77/DeepSeek-R1-7B-MathPhysics-v6-lora
+- Hugging Face del modelo: https://huggingface.co/astorlui77/DeepSeek-R1-7B-MathPhysics-v6-lora
 - Versión v5 LoRA: https://huggingface.co/astorlui77/DeepSeek-R1-7B-MathPhysics-v5-lora
 - Versión GGUF v6: https://huggingface.co/astorlui77/DeepSeek-R1-7B-MathPhysics-V6-GGUF
 - Sitio oficial de DeepSeek: https://deepseek.com/en/index.html

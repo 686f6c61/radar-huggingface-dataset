@@ -70,10 +70,10 @@ Los datos de los modelos comparables son referencias públicas aproximadas y no 
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MOSS-Image-Base | 5,08 B | 1024×1024 en los ejemplos; contexto del text encoder no disponible | Apache-2.0 | HuggingFace, ModelScope, diffusers, ComfyUI |
-| FLUX.1-dev | ~12 B (referencia pública) | no disponible | no comercial (referencia pública) | HuggingFace, diffusers, ComfyUI |
-| Qwen-Image | ~20 B (referencia pública) | no disponible | Apache-2.0 (referencia pública) | HuggingFace, diffusers, ComfyUI |
-| Stable Diffusion 3.5 Large | ~8 B (referencia pública) | no disponible | Stability Community License (referencia pública) | HuggingFace, diffusers, ComfyUI |
+| MOSS-Image-Base | 5,08 B | 1024×1024 en los ejemplos; contexto del text encoder no disponible | Apache-2.0 | Hugging Face, ModelScope, diffusers, ComfyUI |
+| FLUX.1-dev | ~12 B (referencia pública) | no disponible | no comercial (referencia pública) | Hugging Face, diffusers, ComfyUI |
+| Qwen-Image | ~20 B (referencia pública) | no disponible | Apache-2.0 (referencia pública) | Hugging Face, diffusers, ComfyUI |
+| Stable Diffusion 3.5 Large | ~8 B (referencia pública) | no disponible | Stability Community License (referencia pública) | Hugging Face, diffusers, ComfyUI |
 
 Diferencias cualitativas: MOSS-Image-Base es el de menor número de parámetros del grupo y el único que documenta explícitamente layouts JSON para posicionamiento de texto, junto con una variante SFT publicada por el mismo equipo. No hay datos de rendimiento comparado.
 
@@ -92,9 +92,9 @@ Diferencias cualitativas: MOSS-Image-Base es el de menor número de parámetros 
 
 ## Enlaces
 
-- HuggingFace (ficha consultada): https://huggingface.co/MOSSImagefok/MOSS-Image-Base
-- HuggingFace MOSS-Image-Base (oficial, según la model card): https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
-- HuggingFace MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
+- Hugging Face (ficha consultada): https://huggingface.co/MOSSImagefok/MOSS-Image-Base
+- Hugging Face MOSS-Image-Base (oficial, según la model card): https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
+- Hugging Face MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - ModelScope MOSS-Image-Base: https://modelscope.cn/models/openmoss/MOSS-Image-Base
 - ModelScope MOSS-Image-SFT: https://modelscope.cn/models/openmoss/MOSS-Image-SFT
 - Repositorio GitHub: https://github.com/OpenMOSS/MOSS-Image
@@ -102,7 +102,7 @@ Diferencias cualitativas: MOSS-Image-Base es el de menor número de parámetros 
 - Guía de usuario (chino): https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE_ZH.md
 - Integración ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README.md
 - Workflow de ejemplo ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/moss-image/example_workflows/moss-image.json
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - Página del proyecto: https://openmoss.github.io/MOSS-Image/
 - Informe técnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
 - Perfil en X: https://x.com/Open_MOSS

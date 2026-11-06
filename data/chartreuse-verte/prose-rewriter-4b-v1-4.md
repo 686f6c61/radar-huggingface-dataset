@@ -82,7 +82,7 @@ El modelo edita mas (36,6% de palabras cambiadas vs 29,9%), devuelve menos parra
 - Opciones de despliegue:
   - Transformers (PyTorch) con `device_map="cuda"`.
   - llama.cpp / llama-cpp-python con los pesos GGUF.
-  - Servidores compatibles con endpoints de HuggingFace (text-generation-inference).
+  - Servidores compatibles con endpoints de Hugging Face (text-generation-inference).
 - Latencia: no disponible. Al ser un modelo de 4B, la generacion de un parrafo de 50-100 tokens deberia completarse en menos de un segundo en una GPU moderna, pero no se han publicado mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ La comparativa directa con otros rewriters de prosa del mercado no esta disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.4
+- Modelo en Hugging Face: https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.4
 - Version anterior (v1.3): https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.3
 - Version pequena (1.7B): https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v1.4
 - Ficha en llm-explorer (v1.2): https://llm-explorer.com/model/chartreuse-verte%2Fprose-rewriter-4b-v1.2,3wC8gcszWMo5z4CNGPYAGF

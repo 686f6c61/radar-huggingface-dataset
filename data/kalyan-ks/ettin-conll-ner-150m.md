@@ -4,7 +4,7 @@
 
 El modelo `kalyan-ks/ettin-conll-ner-150m` es un modelo de clasificación de tokens (token classification) diseñado para el reconocimiento de entidades nombradas (NER). Ha sido desarrollado por Kalyan KS, un consultor e investigador en NLP con más de 7 años de experiencia y más de 1500 citas académicas. El nombre del modelo sugiere que fue entrenado sobre el dataset CoNLL-2003, un estándar de referencia para NER en inglés, aunque no se confirma explícitamente en la documentación disponible.
 
-Con aproximadamente 149,6 millones de parámetros, se trata de un modelo de tamaño medio, adecuado para tareas de extracción de entidades en entornos con recursos computacionales limitados. El tag `modernbert` en HuggingFace sugiere que la arquitectura podría estar basada en ModernBERT, aunque no hay confirmación oficial. El modelo se distribuye en formato safetensors y es compatible con la librería Transformers de HuggingFace.
+Con aproximadamente 149,6 millones de parámetros, se trata de un modelo de tamaño medio, adecuado para tareas de extracción de entidades en entornos con recursos computacionales limitados. El tag `modernbert` en Hugging Face sugiere que la arquitectura podría estar basada en ModernBERT, aunque no hay confirmación oficial. El modelo se distribuye en formato safetensors y es compatible con la librería Transformers de Hugging Face.
 
 La relevancia de este modelo radica en su potencial para aplicaciones de procesamiento de lenguaje natural que requieren identificar entidades como personas, organizaciones, lugares o fechas en texto. Sin embargo, al carecer de una model card detallada y de resultados de evaluación publicados, su adopción en producción debe realizarse con cautela y tras una validación independiente.
 
@@ -23,12 +23,12 @@ La relevancia de este modelo radica en su potencial para aplicaciones de procesa
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo. El tag `modernbert` en HuggingFace apunta a que podria tratarse de una variante de ModernBERT, un modelo de tipo transformer optimizado para eficiencia y velocidad, pero no hay confirmacion en la model card ni en otras fuentes. Tampoco se especifican los datos de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas como RLHF o DPO. El nombre del modelo indica que fue entrenado sobre el dataset CoNLL-2003, un corpus clasico para NER en ingles, pero este dato no esta verificado.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo. El tag `modernbert` en Hugging Face apunta a que podria tratarse de una variante de ModernBERT, un modelo de tipo transformer optimizado para eficiencia y velocidad, pero no hay confirmacion en la model card ni en otras fuentes. Tampoco se especifican los datos de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas como RLHF o DPO. El nombre del modelo indica que fue entrenado sobre el dataset CoNLL-2003, un corpus clasico para NER en ingles, pero este dato no esta verificado.
 
 ## Capacidades
 
 - Clasificacion de tokens para reconocimiento de entidades nombradas (NER), probablemente etiquetando entidades como personas, organizaciones, lugares, fechas, etc.
-- Integracion con la libreria Transformers de HuggingFace mediante el pipeline `token-classification`.
+- Integracion con la libreria Transformers de Hugging Face mediante el pipeline `token-classification`.
 - Compatible con endpoints de inferencia (tag `endpoints_compatible`), lo que facilita su despliegue en servicios gestionados.
 - No se han documentado capacidades adicionales como generacion de texto, razonamiento, tool calling o soporte multilingue.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: con 149,6 millones de parametros, el modelo en precision fp32 ocupa aproximadamente 600 MB en memoria. En inferencia con Transformers, se recomienda al menos 2 GB de VRAM para evitar desbordamientos, aunque no hay datos oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 2060 o superiores, puede ejecutar el modelo sin problemas. Tambien es viable en CPU para inferencia por lotes pequenos.
 - Compatibilidad con GPU de consumo: si, el modelo cabe en GPUs consumer de gama media y baja.
-- Opciones de despliegue: al ser compatible con Transformers, puede servirse con vLLM, TGI o mediante el pipeline de HuggingFace. Tambien es posible convertirlo a formato GGUF para usarlo con llama.cpp u Ollama, aunque no se proporcionan conversiones oficiales.
+- Opciones de despliegue: al ser compatible con Transformers, puede servirse con vLLM, TGI o mediante el pipeline de Hugging Face. Tambien es posible convertirlo a formato GGUF para usarlo con llama.cpp u Ollama, aunque no se proporcionan conversiones oficiales.
 - Latencia y throughput: no se dispone de mediciones publicadas. Como referencia, un modelo de 150M de parametros en una GPU moderna puede procesar cientos de tokens por segundo, pero depende del hardware y la optimizacion.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kalyan-ks/ettin-conll-ner-150m
-- Perfil del autor en HuggingFace: https://huggingface.co/kalyan-ks/models
+- Modelo en Hugging Face: https://huggingface.co/kalyan-ks/ettin-conll-ner-150m
+- Perfil del autor en Hugging Face: https://huggingface.co/kalyan-ks/models
 - Perfil de GitHub del autor: https://github.com/KalyanKS-NLP/

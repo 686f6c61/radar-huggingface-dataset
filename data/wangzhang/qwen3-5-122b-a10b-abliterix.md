@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.5-122B-A10B-abliterix es una variante del modelo Qwen3.5-122B-A10B de Alibaba Cloud, modificada mediante tecnicas de "abliteration" para eliminar los mecanismos de rechazo y censura presentes en el modelo original. El autor, wangzhang, ha publicado este checkpoint en HuggingFace con el objetivo de ofrecer una version "sin censura" (uncensored) del modelo base, manteniendo intactas sus capacidades tecnicas. El modelo resultante conserva la arquitectura original de mezcla de expertos (MoE) con 122.000 millones de parametros totales, de los cuales solo se activan 10.000 millones durante la inferencia.
+Qwen3.5-122B-A10B-abliterix es una variante del modelo Qwen3.5-122B-A10B de Alibaba Cloud, modificada mediante tecnicas de "abliteration" para eliminar los mecanismos de rechazo y censura presentes en el modelo original. El autor, wangzhang, ha publicado este checkpoint en Hugging Face con el objetivo de ofrecer una version "sin censura" (uncensored) del modelo base, manteniendo intactas sus capacidades tecnicas. El modelo resultante conserva la arquitectura original de mezcla de expertos (MoE) con 122.000 millones de parametros totales, de los cuales solo se activan 10.000 millones durante la inferencia.
 
 El modelo base Qwen3.5-122B-A10B fue lanzado por Alibaba Cloud el 25 de febrero de 2026 y representa un avance significativo en la linea Qwen3.5. Su arquitectura hibrida combina atencion lineal con un modelo de mezcla de expertos dispersa, logrando una eficiencia de inferencia notablemente superior a la de modelos densos de tamano similar. Con una ventana de contexto de 262.000 tokens y capacidades nativas de vision-lenguaje, este modelo se posiciona como una alternativa de codigo abierto a modelos propietarios de alto rendimiento. La version abliterated mantiene todas estas capacidades, pero elimina las restricciones de contenido que limitaban la generacion en temas sensibles.
 
-La relevancia de este modelo radica en su doble naturaleza: por un lado, ofrece el rendimiento de un modelo MoE de ultima generacion con un coste computacional contenido; por otro, al eliminar las salvaguardas de seguridad, abre un debate sobre los limites eticos y legales del ajuste de modelos. El acceso al modelo esta restringido (gated) y requiere aceptar condiciones especificas en HuggingFace, lo que refleja la sensibilidad del contenido que puede generar.
+La relevancia de este modelo radica en su doble naturaleza: por un lado, ofrece el rendimiento de un modelo MoE de ultima generacion con un coste computacional contenido; por otro, al eliminar las salvaguardas de seguridad, abre un debate sobre los limites eticos y legales del ajuste de modelos. El acceso al modelo esta restringido (gated) y requiere aceptar condiciones especificas en Hugging Face, lo que refleja la sensibilidad del contenido que puede generar.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks especificos para la version abliter
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-122B-A10B-abliterix | 122B | 10B | 262K | Apache 2.0 | Gated en HuggingFace |
+| Qwen3.5-122B-A10B-abliterix | 122B | 10B | 262K | Apache 2.0 | Gated en Hugging Face |
 | Qwen3.5-122B-A10B (base) | 122B | 10B | 262K | Apache 2.0 | Publico |
 | Qwen3.5-397B-A17B | 397B | 17B | no disponible | Apache 2.0 | Publico |
 | Qwen3-235B-2507 | 235B | no disponible | no disponible | Apache 2.0 | Publico |
@@ -71,7 +71,7 @@ El modelo abliterated se diferencia del base unicamente en la eliminacion de las
 ## Limitaciones y advertencias
 
 - La abliteration elimina los mecanismos de rechazo, lo que significa que el modelo puede generar contenido peligroso, ilegal o eticamente cuestionable sin restricciones. Su uso conlleva riesgos legales y eticos considerables.
-- El acceso al modelo esta restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que limita su disponibilidad y puede implicar restricciones adicionales de uso.
+- El acceso al modelo esta restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que limita su disponibilidad y puede implicar restricciones adicionales de uso.
 - No se dispone de informacion sobre los idiomas soportados especificamente, aunque el modelo base es multilingue.
 - No se han publicado benchmarks especificos para esta version, por lo que el rendimiento real en tareas estandarizadas no ha sido verificado de forma independiente.
 - El proceso de abliteration puede introducir degradaciones sutiles en la calidad de las respuestas o comportamientos inesperados en ciertos dominios, aunque no hay datos que confirmen este extremo.
@@ -80,8 +80,8 @@ El modelo abliterated se diferencia del base unicamente en la eliminacion de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterix
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
+- Modelo en Hugging Face: https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterix
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Ficha del modelo en DataLearnerAI: https://www.datalearner.com/ai-models/pretrained-models/qwen3-5-122b-a10b
 - Ficha del modelo en DataLearnerAI (ingles): https://www.datalearner.com/en/ai-models/pretrained-models/qwen3-5-122b-a10b
 - Pagina del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.5-122b-a10b

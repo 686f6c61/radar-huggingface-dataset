@@ -105,7 +105,7 @@ No se han encontrado en la información proporcionada modelos comparables con es
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1/imatrix): https://huggingface.co/mradermacher/Koa-express-31B-qat-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1/imatrix): https://huggingface.co/mradermacher/Koa-express-31B-qat-i1-GGUF
 - Repositorio de cuantizaciones estáticas y ficheros mmproj: https://huggingface.co/mradermacher/Koa-express-31B-qat-GGUF
 - Modelo base: https://huggingface.co/SF-Foundation/Koa-express-31B-qat
 - Página de descargas del cuantizador para este modelo: https://hf.tst.eu/model#Koa-express-31B-qat-i1-GGUF

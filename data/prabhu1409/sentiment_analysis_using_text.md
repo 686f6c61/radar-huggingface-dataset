@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Prabhu1409/sentiment_analysis_using_text` es un modelo publicado en HuggingFace por el usuario Prabhu1409 bajo la libreria Keras, orientado presumiblemente a la clasificacion de sentimiento en texto. Se trata de un repositorio de caracter experimental o de caracter personal: acumula 0 descargas y 0 likes desde su publicacion, y no incluye model card descriptiva mas alla de una linea con `license: unknown`. No se declara pipeline, idioma soportado ni arquitectura concreta.
+`Prabhu1409/sentiment_analysis_using_text` es un modelo publicado en Hugging Face por el usuario Prabhu1409 bajo la libreria Keras, orientado presumiblemente a la clasificacion de sentimiento en texto. Se trata de un repositorio de caracter experimental o de caracter personal: acumula 0 descargas y 0 likes desde su publicacion, y no incluye model card descriptiva mas alla de una linea con `license: unknown`. No se declara pipeline, idioma soportado ni arquitectura concreta.
 
 El repositorio ocupa 0,2 GB y esta etiquetado con `keras` y `region:us`. La ausencia de etiqueta de pipeline, de idiomas y de documentacion tecnica impide determinar con rigor si se trata de un modelo entrenado desde cero, de un fine-tuning sobre un backbone preentrenado o de un artefacto de demostracion. Tampoco se especifica el formato de serializacion de los pesos.
 
@@ -78,6 +78,6 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prabhu1409/sentiment_analysis_using_text
+- Modelo en Hugging Face: https://huggingface.co/Prabhu1409/sentiment_analysis_using_text
 
 Los resultados de busqueda web obtenidos no contienen informacion especifica sobre este modelo: las referencias encontradas tratan sobre modelos hibridos LSTM-CNN para deteccion de lenguaje abusivo, actas de congresos sobre analisis de sentimiento, un estudio sobre la red social Koo y un articulo sobre descubrimiento de farmacos. No se han localizado papers, blogs, repositorios ni demos vinculados a `Prabhu1409/sentiment_analysis_using_text`.

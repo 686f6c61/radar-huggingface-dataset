@@ -76,8 +76,8 @@ Los unicos resultados publicados corresponden al benchmark sintetico interno del
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JEV Parallel Decision (Qwen3.5-0.8B) | Adaptador LoRA + cabeza pointer sobre backbone de 0,8 B | No disponible | Puntuacion de opciones prefill-only, solo chino | Apache-2.0 | HuggingFace, 0 descargas, 0 likes; requiere descargar el backbone aparte |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8 B | No disponible | Generacion de texto causal | Apache-2.0 | HuggingFace, modelo base publico |
+| JEV Parallel Decision (Qwen3.5-0.8B) | Adaptador LoRA + cabeza pointer sobre backbone de 0,8 B | No disponible | Puntuacion de opciones prefill-only, solo chino | Apache-2.0 | Hugging Face, 0 descargas, 0 likes; requiere descargar el backbone aparte |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8 B | No disponible | Generacion de texto causal | Apache-2.0 | Hugging Face, modelo base publico |
 | Otros adaptadores de clasificacion o decision comparables | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas equivalentes en la informacion proporcionada |
 
 La comparacion directa con el modelo base es la mas informativa: Qwen3.5-0.8B genera texto y no implementa el esquema JEV, mientras que este release solo puntua opciones y necesita el codigo de `src/` para funcionar. No hay datos publicados que permitan comparar su precision con otros sistemas de decision.
@@ -98,6 +98,6 @@ La comparacion directa con el modelo base es la mas informativa: Qwen3.5-0.8B ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XAILab-CyberSpark/jev-parallel-decision-qwen3.5-0.8b
+- Modelo en Hugging Face: https://huggingface.co/XAILab-CyberSpark/jev-parallel-decision-qwen3.5-0.8b
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web realizada; los resultados obtenidos corresponden a un perfil academico de astrofisica sin relacion con este modelo.

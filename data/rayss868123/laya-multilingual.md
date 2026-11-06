@@ -113,12 +113,12 @@ Frente a un clasificador multilingüe convencional basado en XLM-R o mBERT, la d
 - Contexto limitado a 1024 tokens por consulta, de los cuales solo ~768 quedan para el estado. Los documentos largos deben truncarse o dividirse, lo que puede eliminar información relevante.
 - La composición del dataset de entrenamiento, el volumen de tokens y la existencia de fases de RLHF/DPO no se detallan, por lo que no es posible auditar de qué datos provienen los sesgos. No se documentan sesgos específicos medidos.
 - La licencia Apache 2.0 permite uso comercial sin restricciones adicionales declaradas, pero traslada al integrador la responsabilidad de recalibrar, validar por idioma y asumir el cumplimiento normativo del dominio de aplicación.
-- El identificador de HuggingFace proporcionado (`rayss868123/laya-multilingual`) no coincide con el repositorio canónico descrito en la model card (`convaiinnovations/laya-multilingual`). El repositorio analizado registra 0 descargas y 0 likes, por lo que no hay validación comunitaria ni garantía documentada de que los pesos sean idénticos a los del repositorio original. Para producción, conviene verificar la procedencia y comparar los pesos antes de desplegar.
+- El identificador de Hugging Face proporcionado (`rayss868123/laya-multilingual`) no coincide con el repositorio canónico descrito en la model card (`convaiinnovations/laya-multilingual`). El repositorio analizado registra 0 descargas y 0 likes, por lo que no hay validación comunitaria ni garantía documentada de que los pesos sean idénticos a los del repositorio original. Para producción, conviene verificar la procedencia y comparar los pesos antes de desplegar.
 - No hay soporte documentado de cuantizaciones GGUF/AWQ/GPTQ ni de motores como vLLM, Ollama o llama.cpp, lo que limita las opciones de despliegue a `transformers` o al paquete `laya`.
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/rayss868123/laya-multilingual
+- Repositorio analizado en Hugging Face: https://huggingface.co/rayss868123/laya-multilingual
 - Repositorio canónico del checkpoint multilingüe: https://huggingface.co/convaiinnovations/laya-multilingual
 - Checkpoint inglés de la familia: https://huggingface.co/convaiinnovations/laya
 - Checkpoint de decisiones tipadas: https://huggingface.co/convaiinnovations/laya-typed-decisions

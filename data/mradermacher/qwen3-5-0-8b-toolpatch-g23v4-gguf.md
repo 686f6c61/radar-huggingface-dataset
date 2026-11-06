@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que ofrece una via practica para ejecutar 
 
 La informacion disponible no detalla la arquitectura interna mas alla del tag `qwen3_5`, que situa el modelo en la familia Qwen3.5. Con 772.845.888 parametros, se trata de un transformer denso de pequeno tamano. El tag `mlx` sugiere que el modelo base puede haberse preparado o probado tambien para el framework MLX de Apple, aunque no se especifica el alcance de ese soporte.
 
-El aspecto diferencial es el sufijo "toolpatch": el modelo base scasella91/Qwen3.5-0.8B-toolpatch-g23v4 ha sido sometido a edicion de pesos (weight editing) orientada a mejorar el comportamiento de tool calling, dentro de un trabajo de interpretabilidad mecanicista. No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal. Esta ficha se limita, por tanto, a lo declarado en la model card y en los metadatos de HuggingFace.
+El aspecto diferencial es el sufijo "toolpatch": el modelo base scasella91/Qwen3.5-0.8B-toolpatch-g23v4 ha sido sometido a edicion de pesos (weight editing) orientada a mejorar el comportamiento de tool calling, dentro de un trabajo de interpretabilidad mecanicista. No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal. Esta ficha se limita, por tanto, a lo declarado en la model card y en los metadatos de Hugging Face.
 
 ## Capacidades
 

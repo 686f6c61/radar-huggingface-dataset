@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ass-hair/queue_merged-u83` es un checkpoint de texto generativo publicado por el usuario `ass-hair` en HuggingFace. Se trata de un modelo fusionado (merge) construido a partir de `marsplan0624/affine-5gedzafcvg-queen`, que a su vez parece derivar de una arquitectura Qwen 3.5 MoE. Los metadatos indican que incorpora técnicas de razonamiento avanzado (etiqueta `reason-v3`) y ha sido optimizado mediante *online DPO*, lo que sugiere un enfoque en alineación con preferencias humanas durante el entrenamiento.
+El modelo `ass-hair/queue_merged-u83` es un checkpoint de texto generativo publicado por el usuario `ass-hair` en Hugging Face. Se trata de un modelo fusionado (merge) construido a partir de `marsplan0624/affine-5gedzafcvg-queen`, que a su vez parece derivar de una arquitectura Qwen 3.5 MoE. Los metadatos indican que incorpora técnicas de razonamiento avanzado (etiqueta `reason-v3`) y ha sido optimizado mediante *online DPO*, lo que sugiere un enfoque en alineación con preferencias humanas durante el entrenamiento.
 
-Con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones), el modelo se distribuye en formato `safetensors` y ocupa 70,2 GB en el repositorio. Aunque el pipeline declarado es `text-generation`, las etiquetas incluyen `image-text-to-text`, lo que podría indicar capacidades multimodales, aunque no se confirma en la documentación disponible. El acceso es restringido (*gated*), por lo que los usuarios deben aceptar condiciones adicionales en HuggingFace antes de poder descargarlo.
+Con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones), el modelo se distribuye en formato `safetensors` y ocupa 70,2 GB en el repositorio. Aunque el pipeline declarado es `text-generation`, las etiquetas incluyen `image-text-to-text`, lo que podría indicar capacidades multimodales, aunque no se confirma en la documentación disponible. El acceso es restringido (*gated*), por lo que los usuarios deben aceptar condiciones adicionales en Hugging Face antes de poder descargarlo.
 
 La relevancia de este modelo radica en su arquitectura MoE (mezcla de expertos) y su enfoque en razonamiento, lo que lo posiciona como una opción potencial para tareas complejas de inferencia y generación de texto. Sin embargo, la falta de información pública sobre licencia, idiomas y datos de entrenamiento limita su evaluación objetiva.
 
@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: ass-hair/queue_merged-u83](https://huggingface.co/ass-hair/queue_merged-u83)
+- [Hugging Face: ass-hair/queue_merged-u83](https://huggingface.co/ass-hair/queue_merged-u83)
 - [Modelo base: marsplan0624/affine-5gedzafcvg-queen](https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen) (referenciado en los metadatos)

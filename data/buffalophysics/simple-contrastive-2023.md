@@ -65,10 +65,10 @@ No disponible. No se han encontrado modelos comparables en la misma categoría (
 - Limitaciones de contexto e idioma: no se especifican, pero al ser un modelo diminuto, la capacidad de procesamiento de lenguaje es prácticamente nula.
 - Restricciones de licencia: la licencia MIT permite uso comercial, pero se debe revisar los términos de las fuentes de datos externas si se usan con el modelo.
 - Para producción: no es adecuado para ningún caso de uso real; su único propósito es la investigación y la experimentación.
-- La implementación es personalizada, por lo que las APIs genéricas de HuggingFace no funcionarán sin un adaptador explícito.
+- La implementación es personalizada, por lo que las APIs genéricas de Hugging Face no funcionarán sin un adaptador explícito.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BUFFALOPHYSICS/simple-contrastive-2023
+- Repositorio Hugging Face: https://huggingface.co/BUFFALOPHYSICS/simple-contrastive-2023
 - Perfil del autor: https://huggingface.co/BUFFALOPHYSICS
 - Datasets del autor: https://huggingface.co/BUFFALOPHYSICS/datasets

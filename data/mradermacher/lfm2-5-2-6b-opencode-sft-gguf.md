@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM2.5-2.6B-opencode-SFT (esta ficha) | ~2,7 B denso | 128K (segun modelo base) | lfm1.0 | GGUF en HuggingFace | Ajuste SFT para agentes/opencode |
+| LFM2.5-2.6B-opencode-SFT (esta ficha) | ~2,7 B denso | 128K (segun modelo base) | lfm1.0 | GGUF en Hugging Face | Ajuste SFT para agentes/opencode |
 | LFM2.5-2.6B (base) | ~2,7 B denso | 128K | lfm1.0 | Pesos originales y GGUF | Modelo oficial de Liquid AI; multilingue (16 idiomas) |
 | Qwen2.5-3B | ~3,1 B denso | 32K (ampliable) | Apache 2.0 | Muy amplia | Alternativa generica con licencia permisiva |
 | Llama-3.2-3B | ~3,2 B denso | 128K | Llama 3.2 Community License | Muy amplia | Buen rendimiento general y tool calling |

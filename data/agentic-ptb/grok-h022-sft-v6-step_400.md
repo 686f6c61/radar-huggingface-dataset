@@ -21,7 +21,7 @@ La relevancia de este modelo reside en su naturaleza de punto de control interme
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning supervisado sobre Qwen/Qwen3.5-9B-Base, un transformer denso de aproximadamente 9.400 millones de parametros. El entrenamiento forma parte de un sweep de AgentPTB de 100 horas de duracion; este checkpoint concreto se escribio a la hora 23,04 del run. El driver utilizado es pi / grok-4.6 con un nivel de razonamiento "xhigh", lo que sugiere que el proceso emplea el modelo Grok 4.6 de xAI como generador de datos o como guia para el razonamiento del modelo alumno. La libreria declarada en HuggingFace es "grok", un nombre inusual que probablemente corresponde al framework interno de AgentPTB.
+El modelo es un fine-tuning supervisado sobre Qwen/Qwen3.5-9B-Base, un transformer denso de aproximadamente 9.400 millones de parametros. El entrenamiento forma parte de un sweep de AgentPTB de 100 horas de duracion; este checkpoint concreto se escribio a la hora 23,04 del run. El driver utilizado es pi / grok-4.6 con un nivel de razonamiento "xhigh", lo que sugiere que el proceso emplea el modelo Grok 4.6 de xAI como generador de datos o como guia para el razonamiento del modelo alumno. La libreria declarada en Hugging Face es "grok", un nombre inusual que probablemente corresponde al framework interno de AgentPTB.
 
 El checkpoint se almacena en 4 shards y ocupa 18,8 GB. Un aspecto critico del empaquetado es que falta el token eos 248046 (`<|im_end|>`), que es el token que la plantilla de chat de Qwen3.5 utiliza para finalizar cada turno de asistente. Sin este token, el modelo no se detiene al final del turno y sobrepasa la ventana de contexto, lo que invalida las evaluaciones como mediciones absolutas. La model card documenta este defecto como "eos packaging defect across all checkpoints".
 
@@ -74,9 +74,9 @@ No se dispone de informacion sobre otros modelos comparables fuera del sweep de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h022.sft-v6.step_400
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h022.sft-v6.step_400
 - Documentacion de modelos de xAI (Grok 4.6): https://docs.x.ai/developers/models
 - LLM Leaderboard (benchlm.ai): https://benchlm.ai/
 - Superpowers (framework agéntico): https://github.com/obra/superpowers
-- Blog de modelos open-source en HuggingFace: https://huggingface.co/blog/daya-shankar/open-source-llms
+- Blog de modelos open-source en Hugging Face: https://huggingface.co/blog/daya-shankar/open-source-llms
 - LLM Stats Leaderboard: https://llm-stats.com/leaderboards/llm-leaderboard

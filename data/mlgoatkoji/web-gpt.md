@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Web-GPT es un modelo publicado en HuggingFace por el usuario MLGOATKOJI bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente y sin validación por parte de la comunidad.
+Web-GPT es un modelo publicado en Hugging Face por el usuario MLGOATKOJI bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente y sin validación por parte de la comunidad.
 
 No es posible determinar qué problema resuelve ni qué aporta frente a alternativas existentes, ya que no hay información sobre su diseño, su entrenamiento ni sus resultados. El nombre sugiere un posible enfoque hacia tareas web o generación de contenido para la web, pero se trata de una inferencia no confirmada por el autor.
 
@@ -42,7 +42,7 @@ Tampoco hay referencias a innovaciones técnicas como decodificación especulati
 - Comparación de referencia en estudios de evaluación: sirve como punto de partida para medir la calidad de modelos publicados sin model card detallada.
 - Generación de texto genérica (a validar): si el modelo resulta ser un LM causal, podría emplearse para tareas de completado de texto, aunque no hay evidencia publicada de su rendimiento.
 - Fine-tuning experimental: la licencia permisiva permite ajustarlo con datasets propios, previa verificación de que los pesos sean utilizables.
-- Docencia y análisis de repositorios: útil como ejemplo de publicación mínima en HuggingFace para discutir buenas prácticas de documentación de modelos.
+- Docencia y análisis de repositorios: útil como ejemplo de publicación mínima en Hugging Face para discutir buenas prácticas de documentación de modelos.
 
 En todos los casos, la idoneidad es hipotética y requiere validación empírica por parte del usuario.
 
@@ -74,4 +74,4 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MLGOATKOJI/Web-GPT
+- Hugging Face: https://huggingface.co/MLGOATKOJI/Web-GPT

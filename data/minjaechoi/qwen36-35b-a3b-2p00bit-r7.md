@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B 2.00-bit routed experts (r7) es un checkpoint de investigación publicado por el usuario minjaechoi en HuggingFace. Se trata de una cuantización selectiva del modelo base Qwen/Qwen3.6-35B-A3B en la que únicamente los expertos enrutados (routed experts) se comprimen a una media de 2,00 bits, mientras que el resto de los pesos se mantiene en BF16. El resultado se almacena ya desquantizado en tensores BF16, de modo que carga con `transformers` estándar y con vLLM sin necesidad de kernels de cuantización personalizados.
+Qwen3.6-35B-A3B 2.00-bit routed experts (r7) es un checkpoint de investigación publicado por el usuario minjaechoi en Hugging Face. Se trata de una cuantización selectiva del modelo base Qwen/Qwen3.6-35B-A3B en la que únicamente los expertos enrutados (routed experts) se comprimen a una media de 2,00 bits, mientras que el resto de los pesos se mantiene en BF16. El resultado se almacena ya desquantizado en tensores BF16, de modo que carga con `transformers` estándar y con vLLM sin necesidad de kernels de cuantización personalizados.
 
 El modelo conserva los 35.107.181.936 parámetros del modelo base, con un repositorio de 70,2 GB, coherente con pesos BF16 (2 bytes por parámetro) más los metadatos de la cuantización. Al ser un checkpoint de investigación interno (identificador r7) y no un lanzamiento oficial de Qwen, no cuenta con model card extendida, licencia explicitada, idiomas declarados ni resultados de evaluación publicados.
 
@@ -66,7 +66,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MMMU ni de perplejidad, ni comparación 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minjaechoi/qwen36-35b-a3b-2p00bit-r7 | 35,1 mil millones (MoE, ~3 mil millones activos segun nomenclatura) | no disponible | Expertos enrutados a 2,00 bits, resto BF16 | no disponible | HuggingFace, 0 descargas, 0 likes |
+| minjaechoi/qwen36-35b-a3b-2p00bit-r7 | 35,1 mil millones (MoE, ~3 mil millones activos segun nomenclatura) | no disponible | Expertos enrutados a 2,00 bits, resto BF16 | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen3.6-35B-A3B (modelo base) | 35,1 mil millones (MoE) | no disponible | BF16 | no disponible en la informacion proporcionada | Referenciado como `base_model` |
 | Qwen3-30B-A3B | 30,5 mil millones (MoE, 3,3 mil millones activos) | 32.768 tokens ampliables a 131.072 | BF16, GGUF, AWQ, GPTQ | Apache 2.0 | Ampliamente disponible |
 | Mixtral 8x7B | 46,7 mil millones (MoE, 12,9 mil millones activos) | 32.768 tokens | BF16, GGUF, AWQ, GPTQ | Apache 2.0 | Ampliamente disponible |
@@ -88,7 +88,7 @@ Nota: los datos de Qwen3-30B-A3B y Mixtral 8x7B se incluyen como referencia de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r7
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r7
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 
 No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la búsqueda web realizada.

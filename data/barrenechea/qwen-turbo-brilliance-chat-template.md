@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Turbo-Brilliance Chat Template es una plantilla de chat (`chat_template.jinja`) de proposito general para modelos de la familia Qwen 3.5, 3.6 y 3.8, incluido Qwen3.8-Flash-Next, la vista previa de la arquitectura Qwen4 publicada por Qwen. No se trata de un modelo con pesos propios, sino de un artefacto Jinja que define como se formatea la conversacion (turnos, herramientas, modo de razonamiento) antes de pasarla al tokenizador. Lo desarrolla el usuario de HuggingFace barrenechea combinando dos trabajos previos: la plantilla corregida de froggeric y los modos de razonamiento Turbo-Brilliance de DavidAU.
+Turbo-Brilliance Chat Template es una plantilla de chat (`chat_template.jinja`) de proposito general para modelos de la familia Qwen 3.5, 3.6 y 3.8, incluido Qwen3.8-Flash-Next, la vista previa de la arquitectura Qwen4 publicada por Qwen. No se trata de un modelo con pesos propios, sino de un artefacto Jinja que define como se formatea la conversacion (turnos, herramientas, modo de razonamiento) antes de pasarla al tokenizador. Lo desarrolla el usuario de Hugging Face barrenechea combinando dos trabajos previos: la plantilla corregida de froggeric y los modos de razonamiento Turbo-Brilliance de DavidAU.
 
 El problema que resuelve es la dispersion de formatos entre motores de inferencia (transformers, vLLM, llama.cpp) y la falta de un mecanismo unico para alternar entre razonamiento encendido, apagado, modos de persona o esfuerzo variable. La plantilla unifica 41 modos de razonamiento seleccionables por prompt mediante la etiqueta `{REASON:<modo>}` y mantiene compatibilidad byte a byte con las plantillas de las que deriva cuando no se usa etiqueta.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/barrenechea/qwen-turbo-brilliance-chat-template
+- Hugging Face: https://huggingface.co/barrenechea/qwen-turbo-brilliance-chat-template
 - Modelo Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Plantilla base de froggeric: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates
 - Discusion froggeric#109: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates/discussions/109

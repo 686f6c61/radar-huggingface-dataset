@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comunes ni de especificaciones detalladas d
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/looplj/video-depth-anything-small-onnx
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/looplj/video-depth-anything-small-onnx
 - Modelo original Video Depth Anything Small: https://huggingface.co/depth-anything/Video-Depth-Anything-Small
 - Repositorio del proyecto original: https://github.com/DepthAnything/Video-Depth-Anything
 - Commit de código fuente usado en la exportación: 4f5ae23172ba60fd7bc11ef671cca678842c7072

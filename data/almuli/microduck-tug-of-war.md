@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Observacion / control | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `almuli/microduck-tug-of-war` | no disponible | 61-D, 14 acciones, 50 Hz | sin benchmarks | no disponible | HuggingFace, 0 descargas, 0 likes |
+| `almuli/microduck-tug-of-war` | no disponible | 61-D, 14 acciones, 50 Hz | sin benchmarks | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Otras politicas del repo `microduck-challenges` | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Politicas de locomocion para robots cuadrupedos de tamano reducido | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -93,7 +93,7 @@ No se dispone de datos de parámetros, contexto, rendimiento ni licencia de alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/almuli/microduck-tug-of-war
+- Modelo en Hugging Face: https://huggingface.co/almuli/microduck-tug-of-war
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges (rama `tug-pit-marker`, commit `0ae9b20fa`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del demonio de microduck (URL no proporcionada en la información disponible)

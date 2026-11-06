@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017 publicada por el usuario HA0329 en HuggingFace. Se trata de una version con la "direccion de rechazo" ablacionada (abliterated), es decir, se han modificado los pesos del modelo original para eliminar el comportamiento de rechazo ante peticiones que el modelo base denegaria. La ablacion se ha realizado con la herramienta OBLITERATUS empleando el metodo failspy. El modelo base es un transformer de tipo mezcla de expertos (MoE) de la familia DeepSeek, con 754.638.836.864 parametros totales segun los safetensors del repositorio.
+DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017 publicada por el usuario HA0329 en Hugging Face. Se trata de una version con la "direccion de rechazo" ablacionada (abliterated), es decir, se han modificado los pesos del modelo original para eliminar el comportamiento de rechazo ante peticiones que el modelo base denegaria. La ablacion se ha realizado con la herramienta OBLITERATUS empleando el metodo failspy. El modelo base es un transformer de tipo mezcla de expertos (MoE) de la familia DeepSeek, con 754.638.836.864 parametros totales segun los safetensors del repositorio.
 
 El modelo conserva la arquitectura y capacidades del modelo base DeepSeek-V4.1-Flash-1017, pero con la alineacion de seguridad practicamente eliminada: la tasa de rechazo baja del 81,62 % al 4,30 % en el corpus de evaluacion del autor, y la asistencia danina sube del 10,38 % al 78,28 %. La coherencia y la capacidad se mantienen al 100 % segun la model card, con una divergencia KL de 0,1305 nats respecto al original. El repositorio ocupa 1.509,4 GB en safetensors BF16.
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks comparativos con modelos alternativos de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HA0329/DeepSeek-V4.1-Flash-1017-obliterated
+- Repositorio Hugging Face: https://huggingface.co/HA0329/DeepSeek-V4.1-Flash-1017-obliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Detalles del metodo (referenciado en la model card): winner-recovery-provenance.json

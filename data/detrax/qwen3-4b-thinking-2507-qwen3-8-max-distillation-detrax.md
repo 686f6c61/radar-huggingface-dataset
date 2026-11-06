@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `detrax/Qwen3-4B-Thinking-2507-Qwen3.8-Max-Distillation-Detrax` es un modelo de lenguaje publicado en HuggingFace por el usuario `detrax` bajo licencia Apache 2.0. El nombre sugiere que se trata de una destilación del modelo Qwen3.8-Max hacia una arquitectura de 4B parámetros con capacidades de razonamiento (modo thinking), probablemente basada en la familia Qwen3. Sin embargo, la model card publicada no contiene ninguna información técnica adicional: no se especifican arquitectura, tamaño exacto, contexto, datos de entrenamiento ni capacidades. El repositorio tiene cero descargas y cero likes, lo que indica que es un lanzamiento reciente o poco difundido.
+El modelo `detrax/Qwen3-4B-Thinking-2507-Qwen3.8-Max-Distillation-Detrax` es un modelo de lenguaje publicado en Hugging Face por el usuario `detrax` bajo licencia Apache 2.0. El nombre sugiere que se trata de una destilación del modelo Qwen3.8-Max hacia una arquitectura de 4B parámetros con capacidades de razonamiento (modo thinking), probablemente basada en la familia Qwen3. Sin embargo, la model card publicada no contiene ninguna información técnica adicional: no se especifican arquitectura, tamaño exacto, contexto, datos de entrenamiento ni capacidades. El repositorio tiene cero descargas y cero likes, lo que indica que es un lanzamiento reciente o poco difundido.
 
 A fecha de la consulta, no existe documentación pública que permita evaluar el modelo de forma rigurosa. La única información confirmada es la licencia (Apache 2.0) y la fecha de creación (15 de agosto de 2026). Cualquier uso en producción debería basarse en una evaluación directa del modelo, ya que no hay datos de rendimiento ni especificaciones publicadas.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables con los que contrastar, dado qu
 
 ## Enlaces
 
-- [HuggingFace: detrax/Qwen3-4B-Thinking-2507-Qwen3.8-Max-Distillation-Detrax](https://huggingface.co/detrax/Qwen3-4B-Thinking-2507-Qwen3.8-Max-Distillation-Detrax)
+- [Hugging Face: detrax/Qwen3-4B-Thinking-2507-Qwen3.8-Max-Distillation-Detrax](https://huggingface.co/detrax/Qwen3-4B-Thinking-2507-Qwen3.8-Max-Distillation-Detrax)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moriipiri/chess-sft-qwen3-0.6b-lora` es un ajuste fino por supervisión (SFT) del modelo base denso Qwen/Qwen3-0.6B, publicado por el usuario moriipiri en HuggingFace. El nombre del repositorio sugiere que el ajuste se orienta a tareas relacionadas con el ajedrez y que el resultado se distribuye como un adaptador LoRA, aunque la model card no documenta ni el conjunto de datos ni la configuración de entrenamiento empleada. El entrenamiento se realizó con la librería TRL (versión 1.15.0), sobre Transformers 5.19.0, PyTorch 2.14.1 y Datasets 5.1.0.
+`moriipiri/chess-sft-qwen3-0.6b-lora` es un ajuste fino por supervisión (SFT) del modelo base denso Qwen/Qwen3-0.6B, publicado por el usuario moriipiri en Hugging Face. El nombre del repositorio sugiere que el ajuste se orienta a tareas relacionadas con el ajedrez y que el resultado se distribuye como un adaptador LoRA, aunque la model card no documenta ni el conjunto de datos ni la configuración de entrenamiento empleada. El entrenamiento se realizó con la librería TRL (versión 1.15.0), sobre Transformers 5.19.0, PyTorch 2.14.1 y Datasets 5.1.0.
 
 El modelo hereda del base Qwen3-0.6B sus características estructurales: arquitectura transformer densa de aproximadamente 0,6 mil millones de parámetros, ventana de contexto nativa de 32.768 tokens y soporte multilingüe amplio. Al ser un ajuste sobre un modelo tan pequeño, el interés principal está en su posible despliegue en hardware muy limitado (CPU, GPUs de gama de entrada o entornos embebidos) y en la especialización temática que el nombre del repositorio insinúa.
 
@@ -34,7 +34,7 @@ El procedimiento de entrenamiento declarado es SFT (supervised fine-tuning) medi
 - Generación de código, presumiblemente degradada respecto a modelos mayores de la familia Qwen3.
 - Soporte multilingüe heredado del base (Qwen3 declara cobertura de más de 100 idiomas), aunque este ajuste no declara idiomas específicos y el SFT temático podría haber reducido el rendimiento en lenguas no representadas en el dataset.
 - Especialización probable en tareas relacionadas con el ajedrez (notación, análisis posicional, descripción de jugadas), inferida del nombre del repositorio y no verificada.
-- Compatibilidad declarada con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con endpoints de Hugging Face (`endpoints_compatible`).
 - Capacidades de tool calling, function calling, agentes multi-paso, visión o audio: no disponibles / no documentadas.
 
 ## Casos de uso
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| moriipiri/chess-sft-qwen3-0.6b-lora | 0,6B (base) | 32.768 tokens (base) | No disponible | HuggingFace, 0 descargas, 0 likes | Ajuste tematico no documentado |
-| Qwen/Qwen3-0.6B | 0,6B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base; benchmarks publicados por el autor |
-| Qwen/Qwen2.5-0.5B | 0,49B | 32.768 tokens | Apache 2.0 | HuggingFace | Generacion anterior, sin modo thinking |
-| Llama-3.2-1B | 1,23B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace | Mayor contexto, licencia con restricciones |
+| moriipiri/chess-sft-qwen3-0.6b-lora | 0,6B (base) | 32.768 tokens (base) | No disponible | Hugging Face, 0 descargas, 0 likes | Ajuste tematico no documentado |
+| Qwen/Qwen3-0.6B | 0,6B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base; benchmarks publicados por el autor |
+| Qwen/Qwen2.5-0.5B | 0,49B | 32.768 tokens | Apache 2.0 | Hugging Face | Generacion anterior, sin modo thinking |
+| Llama-3.2-1B | 1,23B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face | Mayor contexto, licencia con restricciones |
 
 No hay datos de rendimiento comparativo para el ajuste de ajedrez, por lo que la comparación se limita a parámetros, contexto y licencia.
 
@@ -87,7 +87,7 @@ No hay datos de rendimiento comparativo para el ajuste de ajedrez, por lo que la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moriipiri/chess-sft-qwen3-0.6b-lora
+- Repositorio Hugging Face: https://huggingface.co/moriipiri/chess-sft-qwen3-0.6b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper o blog del modelo base: no disponible en la informacion proporcionada

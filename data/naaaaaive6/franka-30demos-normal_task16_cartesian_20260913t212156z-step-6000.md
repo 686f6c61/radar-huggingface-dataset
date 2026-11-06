@@ -77,7 +77,7 @@ No hay tasas de exito por tarea, errores de posicion, ni comparaciones numericas
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| franka-30demos-normal_task16_cartesian (este checkpoint, paso 6000) | 3.616.757.520 | no disponible | no disponible | no disponible | HuggingFace, libreria `openpi`, 0 descargas |
+| franka-30demos-normal_task16_cartesian (este checkpoint, paso 6000) | 3.616.757.520 | no disponible | no disponible | no disponible | Hugging Face, libreria `openpi`, 0 descargas |
 | Modelo base de la familia openpi / pi05 | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otros checkpoints de robotica de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -99,7 +99,7 @@ No se dispone de datos verificados de alternativas comparables en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task16_cartesian_20260913T212156Z-step-6000
+- Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task16_cartesian_20260913T212156Z-step-6000
 - `log.txt` (referenciado en la model card, dentro del repositorio): https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task16_cartesian_20260913T212156Z-step-6000/blob/main/log.txt
 - `assets/franka/norm_stats.json` (referenciado en la model card, dentro del repositorio): https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task16_cartesian_20260913T212156Z-step-6000/blob/main/assets/franka/norm_stats.json
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre este modelo (los resultados devueltos correspondian a paginas de soporte de Microsoft, sin relacion con el modelo).

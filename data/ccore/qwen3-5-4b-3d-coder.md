@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-3D-Coder es un ajuste fino (fine-tune) independiente del modelo Qwen/Qwen3.5-4B, publicado por el usuario CCORE en HuggingFace. No es un lanzamiento oficial de Qwen. El modelo se presenta explícitamente como una *early preview* de un entrenamiento todavía en curso, cuyo objetivo es explorar la viabilidad de modelos pequeños (4B) para programación general y, muy especialmente, para la generación de escenas 3D interactivas con Three.js en un único archivo HTML autocontenido.
+Qwen3.5-4B-3D-Coder es un ajuste fino (fine-tune) independiente del modelo Qwen/Qwen3.5-4B, publicado por el usuario CCORE en Hugging Face. No es un lanzamiento oficial de Qwen. El modelo se presenta explícitamente como una *early preview* de un entrenamiento todavía en curso, cuyo objetivo es explorar la viabilidad de modelos pequeños (4B) para programación general y, muy especialmente, para la generación de escenas 3D interactivas con Three.js en un único archivo HTML autocontenido.
 
 El modelo tiene 4.205.751.296 parámetros (4,2 B) según el recuento real sobre safetensors, y se distribuye en formato GGUF con al menos dos cuantizaciones (Q4_K_M y Q8), con un repositorio de 7,2 GB. La licencia es Apache 2.0 y el modelo está etiquetado como conversacional y compatible con endpoints. Su relevancia actual reside en el nicho: no compite por rendimiento generalista, sino por producir código Three.js correcto y escenas 3D con profundidad, siluetas legibles y relaciones espaciales sólidas, algo poco frecuente en modelos de este tamaño.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
+- Modelo en Hugging Face: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Perfil del autor (CCORE): https://huggingface.co/ccore
 - Three.js empleado en los ejemplos: https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.module.min.js

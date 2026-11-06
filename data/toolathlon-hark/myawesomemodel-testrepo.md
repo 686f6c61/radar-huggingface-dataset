@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace publicado por el usuario toolathlon-hark el 24 de septiembre de 2026. Por su nombre y por sus metadatos (etiquetas transformers, pytorch, bert, feature-extraction), se trata de un repositorio de prueba creado para validar el flujo de publicación de modelos en la plataforma, no de un modelo entrenado y documentado para uso en produccion. El repositorio acumula 0 descargas y 0 likes, y no incluye informacion sobre datos de entrenamiento, tamano ni proceso de ajuste.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face publicado por el usuario toolathlon-hark el 24 de septiembre de 2026. Por su nombre y por sus metadatos (etiquetas transformers, pytorch, bert, feature-extraction), se trata de un repositorio de prueba creado para validar el flujo de publicación de modelos en la plataforma, no de un modelo entrenado y documentado para uso en produccion. El repositorio acumula 0 descargas y 0 likes, y no incluye informacion sobre datos de entrenamiento, tamano ni proceso de ajuste.
 
 El pipeline declarado es feature-extraction, lo que situa al modelo en la categoria de encoders orientados a producir representaciones vectoriales (embeddings) en lugar de texto generado. La etiqueta "bert" apunta a la familia arquitectonica BERT, pero no se especifica la variante, el numero de parametros ni la longitud de contexto soportada.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros, no es posible calcular el consumo de memoria en FP32, FP16 ni en cuantizaciones de 8 o 4 bits.
 - GPU recomendadas: no disponible por la misma razon.
 - Viabilidad en GPU de consumo: no disponible. No se puede confirmar si el modelo cabe en una RTX 4090, una RTX 3060 o una GPU integrada sin conocer su tamano.
-- Opciones de despliegue: la etiqueta endpoints_compatible sugiere compatibilidad con la infraestructura de inferencia de HuggingFace. No se confirma soporte para vLLM, llama.cpp, Ollama, TGI ni otros motores; el pipeline de feature-extraction encajaria de forma natural en librerias como transformers, sentence-transformers o Text Embeddings Inference, pero esto no esta verificado en el repositorio.
+- Opciones de despliegue: la etiqueta endpoints_compatible sugiere compatibilidad con la infraestructura de inferencia de Hugging Face. No se confirma soporte para vLLM, llama.cpp, Ollama, TGI ni otros motores; el pipeline de feature-extraction encajaria de forma natural en librerias como transformers, sentence-transformers o Text Embeddings Inference, pero esto no esta verificado en el repositorio.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No es posible establecer una comparativa rigurosa: el repositorio no publica num
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MyAwesomeModel-TestRepo | no disponible | no disponible | no disponible | no disponible (etiqueta: mit) | repositorio HuggingFace con 0 descargas |
+| MyAwesomeModel-TestRepo | no disponible | no disponible | no disponible | no disponible (etiqueta: mit) | repositorio Hugging Face con 0 descargas |
 | Alternativas de la familia BERT (por ejemplo, BERT-base o DistilBERT) | no comparable | no comparable | no comparable | no comparable | no disponible |
 | Modelos de embeddings de proposito general | no comparable | no comparable | no comparable | no comparable | no disponible |
 
@@ -94,6 +94,6 @@ Se recomienda consultar la documentacion oficial de la familia BERT y de los mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toolathlon-hark/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/toolathlon-hark/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

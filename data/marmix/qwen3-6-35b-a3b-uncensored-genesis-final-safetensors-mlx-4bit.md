@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MarMix/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-MLX-4bit es un modelo publicado en HuggingFace por el usuario MarMix, cuyo nombre sugiere una variante afinada ("uncensored") sobre una base de la familia Qwen, con arquitectura de mezcla de expertos (MoE), en torno a 35.000 millones de parametros totales y aproximadamente 3.000 millones de parametros activos por token (sufijo "A3B"), distribuida en formato MLX cuantizado a 4 bits para su ejecucion en hardware Apple Silicon.
+MarMix/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-MLX-4bit es un modelo publicado en Hugging Face por el usuario MarMix, cuyo nombre sugiere una variante afinada ("uncensored") sobre una base de la familia Qwen, con arquitectura de mezcla de expertos (MoE), en torno a 35.000 millones de parametros totales y aproximadamente 3.000 millones de parametros activos por token (sufijo "A3B"), distribuida en formato MLX cuantizado a 4 bits para su ejecucion en hardware Apple Silicon.
 
-La model card del repositorio esta practicamente vacia: solo contiene la declaracion de licencia (apache-2.0), sin documentacion sobre datos de entrenamiento, composicion del dataset, proceso de alineamiento ni resultados de evaluacion. No se dispone de informacion verificada sobre la longitud de contexto, los idiomas soportados ni el pipeline declarado en HuggingFace.
+La model card del repositorio esta practicamente vacia: solo contiene la declaracion de licencia (apache-2.0), sin documentacion sobre datos de entrenamiento, composicion del dataset, proceso de alineamiento ni resultados de evaluacion. No se dispone de informacion verificada sobre la longitud de contexto, los idiomas soportados ni el pipeline declarado en Hugging Face.
 
 Su relevancia potencial radica en el nicho de modelos MoE de gran tamano total y bajo coste de inferencia, empaquetados en MLX 4 bits para equipos Mac con memoria unificada, y en la vertiente "sin censura", orientada a investigacion sobre comportamiento de rechazo y generacion sin filtros. No obstante, al no existir documentacion tecnica ni benchmarks publicados, cualquier evaluacion debe considerarse preliminar.
 
@@ -68,10 +68,10 @@ No se dispone de informacion suficiente para una comparativa cuantitativa fiable
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MarMix/Qwen3.6-35B-A3B-Uncensored-Genesis-Final (MLX 4bit) | ~35B totales / ~3B activos (inferido) | no disponible | apache-2.0 | HuggingFace, formato MLX |
-| Qwen3-30B-A3B | 30B totales / 3B activos | no disponible en este contexto | apache-2.0 | HuggingFace |
-| Mixtral 8x7B | 46,7B totales / 12,9B activos | 32k (segun documentacion publica) | apache-2.0 | HuggingFace |
-| DeepSeek-V2-Lite | 15,7B totales / 2,4B activos | 32k (segun documentacion publica) | licencia especifica de DeepSeek | HuggingFace |
+| MarMix/Qwen3.6-35B-A3B-Uncensored-Genesis-Final (MLX 4bit) | ~35B totales / ~3B activos (inferido) | no disponible | apache-2.0 | Hugging Face, formato MLX |
+| Qwen3-30B-A3B | 30B totales / 3B activos | no disponible en este contexto | apache-2.0 | Hugging Face |
+| Mixtral 8x7B | 46,7B totales / 12,9B activos | 32k (segun documentacion publica) | apache-2.0 | Hugging Face |
+| DeepSeek-V2-Lite | 15,7B totales / 2,4B activos | 32k (segun documentacion publica) | licencia especifica de DeepSeek | Hugging Face |
 
 Las cifras de los modelos comparativos provienen de su documentacion publica general y no han sido verificadas contra el repositorio analizado.
 
@@ -89,6 +89,6 @@ Las cifras de los modelos comparativos provienen de su documentacion publica gen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MarMix/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-MLX-4bit
+- Hugging Face: https://huggingface.co/MarMix/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-MLX-4bit
 
 No se han encontrado papers, repositorios, blogs ni demos adicionales asociados al modelo en la informacion disponible.

@@ -117,7 +117,7 @@ La model card solo publica comparaciones internas del propio estudio. No se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NisargOza/CausalCellJEPA
+- Modelo en Hugging Face: https://huggingface.co/NisargOza/CausalCellJEPA
 - Repositorio de código y evidencia completa: https://github.com/NisargOza/CausalCellJEPA
 - Pesos en el Hub: `weights/stage1_teacher.safetensors`, `weights/stage2_primary.safetensors`, `weights/transcriptomic_readout.safetensors`, `weights/stage2_multiteacher_v4.safetensors`
 - Manifiesto de integridad: `MODEL_MANIFEST.json` (hashes de artefactos de origen y de exportación)

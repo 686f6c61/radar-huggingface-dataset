@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cellcam es un repositorio publicado en HuggingFace por el usuario palmor357 bajo licencia AGPL-3.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni casos de uso: únicamente incluye la declaración de licencia. El tamaño del repositorio es de aproximadamente 0,5 GB, lo que sugiere la presencia de pesos de un modelo de escala pequeña o de un conjunto de artefactos auxiliares, pero no permite determinar con fiabilidad la naturaleza del contenido.
+Cellcam es un repositorio publicado en Hugging Face por el usuario palmor357 bajo licencia AGPL-3.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni casos de uso: únicamente incluye la declaración de licencia. El tamaño del repositorio es de aproximadamente 0,5 GB, lo que sugiere la presencia de pesos de un modelo de escala pequeña o de un conjunto de artefactos auxiliares, pero no permite determinar con fiabilidad la naturaleza del contenido.
 
 No se dispone de información sobre el pipeline declarado, los idiomas soportados, la longitud de contexto ni el formato de los pesos. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las fechas de creación y actualización (31 de octubre de 2026) son las únicas marcas temporales disponibles. Todos los campos técnicos que no aparecen en la información proporcionada se indican explícitamente como "no disponible".
 
@@ -82,5 +82,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/palmor357/Cellcam
+- Repositorio en Hugging Face: https://huggingface.co/palmor357/Cellcam
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados al modelo.

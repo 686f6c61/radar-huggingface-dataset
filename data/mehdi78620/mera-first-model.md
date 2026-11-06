@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mera-first-model es un ajuste fino subido a HuggingFace por el usuario mehdi78620, desarrollado a partir de unsloth/llama-3-8b-Instruct-bnb-4bit. Se trata, por tanto, de un derivado del modelo Llama 3 8B Instruct de Meta, en su variante ya cuantizada a 4 bits con bitsandbytes y distribuida por Unsloth, que el autor ha reentrenado y publicado bajo licencia apache-2.0. El repositorio apenas ocupa 0,2 GB y no incluye documentacion tecnica sobre el conjunto de datos, el procedimiento de entrenamiento ni evaluaciones, mas alla de la plantilla estandar generada por Unsloth.
+mera-first-model es un ajuste fino subido a Hugging Face por el usuario mehdi78620, desarrollado a partir de unsloth/llama-3-8b-Instruct-bnb-4bit. Se trata, por tanto, de un derivado del modelo Llama 3 8B Instruct de Meta, en su variante ya cuantizada a 4 bits con bitsandbytes y distribuida por Unsloth, que el autor ha reentrenado y publicado bajo licencia apache-2.0. El repositorio apenas ocupa 0,2 GB y no incluye documentacion tecnica sobre el conjunto de datos, el procedimiento de entrenamiento ni evaluaciones, mas alla de la plantilla estandar generada por Unsloth.
 
 El modelo resuelve, en la practica, un caso de uso de investigacion y experimentacion con tecnicas de ajuste eficiente: sirve como ejemplo de fine-tuning rapido sobre Llama 3 8B mediante LoRA/QLoRA con la libreria Unsloth y TRL. Su relevancia publica es limitada: acumula 0 descargas y 0 likes, fue creado y actualizado el 20 de septiembre de 2026 y no aporta resultados de benchmarks ni detalles de entrenamiento que permitan reproducirlo.
 
@@ -46,7 +46,7 @@ Sobre ese punto de partida, el autor ha aplicado un ajuste fino adicional con Un
 - Extraccion de informacion y clasificacion de texto: tareas de resumen, etiquetado o reescritura en ingles sobre documentos de hasta 8.192 tokens.
 - Fine-tuning de partida para dominios concretos: al ser un ajuste pequeno y con licencia Apache declarada, puede utilizarse como punto de inicio para nuevos ciclos de LoRA sobre datos propios.
 - Despliegue on-premise con requisitos de privacidad: al poder ejecutarse en local con 5-6 GB de VRAM en 4 bits, es apto para entornos donde los datos no pueden salir de la infraestructura.
-- Docencia e investigacion sobre ajuste fino: util como caso de estudio de publicacion de modelos en HuggingFace, incluidos los problemas habituales de trazabilidad y evaluacion.
+- Docencia e investigacion sobre ajuste fino: util como caso de estudio de publicacion de modelos en Hugging Face, incluidos los problemas habituales de trazabilidad y evaluacion.
 - Evaluacion comparativa de metodos de cuantizacion: permite medir la degradacion de calidad entre bnb-4bit y otras cuantizaciones sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| mera-first-model | ~8.030M (base Llama 3 8B) | 8.192 tokens | apache-2.0 declarada (base bajo Meta Llama 3 Community License) | No evaluado | HuggingFace, 0 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030M | 8.192 tokens | Meta Llama 3 Community License | Ampliamente evaluado por Meta | HuggingFace, ampliamente utilizado |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7.250M | 32.768 tokens | Apache-2.0 | Ampliamente evaluado por Mistral | HuggingFace, alta adopcion |
-| Qwen/Qwen2.5-7B-Instruct | 7.610M | 131.072 tokens (con extension) | Apache-2.0 | Ampliamente evaluado por Alibaba | HuggingFace, alta adopcion |
+| mera-first-model | ~8.030M (base Llama 3 8B) | 8.192 tokens | apache-2.0 declarada (base bajo Meta Llama 3 Community License) | No evaluado | Hugging Face, 0 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030M | 8.192 tokens | Meta Llama 3 Community License | Ampliamente evaluado por Meta | Hugging Face, ampliamente utilizado |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7.250M | 32.768 tokens | Apache-2.0 | Ampliamente evaluado por Mistral | Hugging Face, alta adopcion |
+| Qwen/Qwen2.5-7B-Instruct | 7.610M | 131.072 tokens (con extension) | Apache-2.0 | Ampliamente evaluado por Alibaba | Hugging Face, alta adopcion |
 
 Frente a estas alternativas, mera-first-model solo se diferencia por ser un ajuste derivado de Llama 3 8B; no aporta ventajas verificables en contexto, licencia ni rendimiento, y carece de evaluaciones publicadas.
 
@@ -87,7 +87,7 @@ Frente a estas alternativas, mera-first-model solo se diferencia por ser un ajus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mehdi78620/mera-first-model
+- Modelo en Hugging Face: https://huggingface.co/mehdi78620/mera-first-model
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: unicamente aparecieron paginas de soporte de Google sin relacion con el contenido solicitado.

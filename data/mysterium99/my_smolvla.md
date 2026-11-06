@@ -40,7 +40,7 @@ Este repositorio concreto es un fine-tune del modelo base sobre el dataset `lero
 - Robotica educativa en entornos universitarios: por su tamano reducido, se puede desplegar en equipos de laboratorio con GPUs de consumo. Permite a los estudiantes experimentar con politicas de vision-lenguaje-accion sin necesidad de infraestructura costosa.
 - Automatizacion de tareas de manipulacion repetitivas: tras un entrenamiento adicional con datos propios, el modelo podria adaptarse a tareas de pick-and-place en entornos controlados. La arquitectura VLA permite condicionar la accion por instrucciones en lenguaje natural.
 - Prototipado rapido de politicas roboticas: el flujo de entrenamiento de LeRobot permite iterar rapidamente sobre nuevos datasets. Este modelo puede usarse como punto de partida para explorar como un VLA se comporta en una tarea sencilla.
-- Benchmarking de modelos VLA en manipulacion: al estar publicado en HuggingFace, puede compararse con otros modelos de la misma categoria, como el base `lerobot/smolvla_base`, en terminos de exito en la tarea. Sirve para estudiar el efecto del fine-tuning.
+- Benchmarking de modelos VLA en manipulacion: al estar publicado en Hugging Face, puede compararse con otros modelos de la misma categoria, como el base `lerobot/smolvla_base`, en terminos de exito en la tarea. Sirve para estudiar el efecto del fine-tuning.
 - Desarrollo de robots colaborativos de bajo coste: el modelo esta disenado para ejecutarse en hardware de consumo, lo que lo hace apto para integrarse en brazos roboticos de bajo coste como el SO100 en aplicaciones de investigacion o pequeña produccion.
 - Generacion de datos de demostracion: el modelo puede usarse en combinacion con LeRobot para recopilar demostraciones adicionales mediante el despliegue de la politica en el robot, generando datos para iterar el entrenamiento.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mysterium99/my_smolvla | 450.046.176 | No disponible | Sin resultados publicados | Apache-2.0 | HuggingFace |
-| lerobot/smolvla_base | No disponible | No disponible | Sin resultados publicados | Apache-2.0 | HuggingFace |
+| mysterium99/my_smolvla | 450.046.176 | No disponible | Sin resultados publicados | Apache-2.0 | Hugging Face |
+| lerobot/smolvla_base | No disponible | No disponible | Sin resultados publicados | Apache-2.0 | Hugging Face |
 
 El modelo actual es un fine-tune del base `lerobot/smolvla_base`, especializado en la tarea de apilado con el robot SO100. El base es el modelo preentrenado generico. No se dispone de datos de rendimiento comparativos.
 
@@ -77,7 +77,7 @@ El modelo actual es un fine-tune del base `lerobot/smolvla_base`, especializado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mysterium99/my_smolvla
+- Hugging Face: https://huggingface.co/mysterium99/my_smolvla
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Sitio web de SmolVLA: https://smolvla.net/index_en
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

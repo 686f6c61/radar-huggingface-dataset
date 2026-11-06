@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ASFRAasd/MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario ASFRAasd, etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit` y `endpoints_compatible`. Acumula 0 descargas y 0 likes, el tamano declarado del repositorio es de 0,0 GB y no se declara ningun idioma soportado. La combinacion de nombre ("TestRepo"), tamano nulo y ausencia de actividad apunta a un repositorio de prueba o de ejemplo, no a un modelo distribuido para uso real.
+ASFRAasd/MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario ASFRAasd, etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit` y `endpoints_compatible`. Acumula 0 descargas y 0 likes, el tamano declarado del repositorio es de 0,0 GB y no se declara ningun idioma soportado. La combinacion de nombre ("TestRepo"), tamano nulo y ausencia de actividad apunta a un repositorio de prueba o de ejemplo, no a un modelo distribuido para uso real.
 
 Existe una contradiccion grave entre los metadatos y el contenido de la model card. Los metadatos describen un encoder tipo BERT para extraccion de caracteristicas, mientras que la model card describe un modelo conversacional de razonamiento con tabla de benchmarks, resultados en AIME 2025, recomendaciones de system prompt, temperatura 0,6, plantillas para subida de ficheros y busqueda web, y una plataforma de chat y API. Ninguna de las dos descripciones puede verificarse porque no hay pesos publicados.
 
@@ -109,6 +109,6 @@ No disponible. Los metadatos y la model card son contradictorios entre si (encod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASFRAasd/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASFRAasd/MyAwesomeModel-TestRepo
 - Repositorio de codigo, paper, blog o demo: no disponible. La model card menciona un "official website" y un "code repository" sin enlaces ni identificadores.
 - Enlaces relevantes encontrados en la busqueda web: ninguno. Los resultados obtenidos corresponden al portal de reclutamiento del Ministerio de Servicio Publico y Trabajo de Ruanda (https://recruitment.mifotra.gov.rw/ y https://www.mifotra.gov.rw/) y no guardan relacion con el modelo.

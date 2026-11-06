@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kabirisingh/multitask60` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de la arquitectura Flamingo en PyTorch, orientada a tareas multitarea. Lo desarrolla el usuario kabirisingh y se publica bajo licencia Apache 2.0. No se trata de un modelo preentrenado ni ajustado, sino de un punto de partida experimental: el propio autor indica que el repositorio está pensado para revisión de código, pruebas de humo (smoke tests) y pequeños experimentos controlados, no para un despliegue en producción.
+`kabirisingh/multitask60` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de la arquitectura Flamingo en PyTorch, orientada a tareas multitarea. Lo desarrolla el usuario kabirisingh y se publica bajo licencia Apache 2.0. No se trata de un modelo preentrenado ni ajustado, sino de un punto de partida experimental: el propio autor indica que el repositorio está pensado para revisión de código, pruebas de humo (smoke tests) y pequeños experimentos controlados, no para un despliegue en producción.
 
 El peso de `model.safetensors` es un checkpoint de inicialización válido, no un modelo entrenado, y el repositorio no reclama ninguna puntuación de benchmark. El recuento real de parámetros según el archivo safetensors es de 33.088, una cifra muy alejada de la escala "giant" que declara el `config.json`, lo que refuerza su carácter de artefacto de referencia y no de modelo funcional.
 
@@ -80,4 +80,4 @@ No es posible establecer una comparativa de rendimiento porque este repositorio 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kabirisingh/multitask60
+- Hugging Face: https://huggingface.co/kabirisingh/multitask60

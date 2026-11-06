@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Itsjaat/3dmodel` en HuggingFace no contiene documentación técnica ni información pública sobre el modelo. La model card únicamente indica una licencia desconocida (`license: unknown`), sin descripción del modelo, arquitectura, parámetros o casos de uso previstos. El repositorio fue creado el 16 de agosto de 2026 y no registra descargas ni interacciones. En ausencia de cualquier dato adicional, no es posible determinar qué modelo es, qué problema resuelve o por qué podría ser relevante. Se recomienda tratar este repositorio como un espacio vacío o en fase inicial, y no como un modelo utilizable sin verificación previa.
+El repositorio `Itsjaat/3dmodel` en Hugging Face no contiene documentación técnica ni información pública sobre el modelo. La model card únicamente indica una licencia desconocida (`license: unknown`), sin descripción del modelo, arquitectura, parámetros o casos de uso previstos. El repositorio fue creado el 16 de agosto de 2026 y no registra descargas ni interacciones. En ausencia de cualquier dato adicional, no es posible determinar qué modelo es, qué problema resuelve o por qué podría ser relevante. Se recomienda tratar este repositorio como un espacio vacío o en fase inicial, y no como un modelo utilizable sin verificación previa.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. Al no existir información sobre el modelo, no es posible compara
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Itsjaat/3dmodel)
+- [Repositorio en Hugging Face](https://huggingface.co/Itsjaat/3dmodel)

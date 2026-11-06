@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Voxdicta (espejo) | 979.949.072 en total (suma de componentes) | no disponible | Mixta por archivo | GGUF, GGML, ONNX, safetensors | HuggingFace, 109 descargas |
+| Voxdicta (espejo) | 979.949.072 en total (suma de componentes) | no disponible | Mixta por archivo | GGUF, GGML, ONNX, safetensors | Hugging Face, 109 descargas |
 | Whisper Large v3 Turbo | no disponible en la informacion | no disponible | MIT | GGML/GGUF en este repo | ggerganov/whisper.cpp |
 | NVIDIA Canary 1B v2 | 1B (aprox.) | no disponible | CC-BY-4.0 | NeMo original; GGUF Q8_0 aqui | nvidia/canary-1b-v2 |
 | Qwen3-ASR-1.7B | 1,7B | no disponible | Apache 2.0 | GGUF Q8_0 | Qwen/Qwen3-ASR-1.7B |
@@ -82,7 +82,7 @@ La comparativa de rendimiento entre estos motores no esta disponible en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnalogVector/voxdicta-models
+- Repositorio Hugging Face: https://huggingface.co/AnalogVector/voxdicta-models
 - Whisper.cpp: https://huggingface.co/ggerganov/whisper.cpp
 - NVIDIA Canary 1B v2: https://huggingface.co/nvidia/canary-1b-v2
 - Assets ONNX de timestamps: https://huggingface.co/ysdede/nemo-canary-1b-v2-onnx-timestamped

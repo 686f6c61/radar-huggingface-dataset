@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Veer069/ppo-CartPole-v1 es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno CartPole-v1 de Gymnasium. No es un modelo de lenguaje ni un modelo generativo de texto: es una politica neuronal pequena que decide, en cada paso de tiempo, si aplica fuerza a la izquierda o a la derecha para mantener un poste en equilibrio sobre un carro. El modelo lo publica el usuario Veer069 en HuggingFace y esta construido con la libreria stable-baselines3 (SB3) y el framework de entrenamiento RL Zoo.
+Veer069/ppo-CartPole-v1 es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno CartPole-v1 de Gymnasium. No es un modelo de lenguaje ni un modelo generativo de texto: es una politica neuronal pequena que decide, en cada paso de tiempo, si aplica fuerza a la izquierda o a la derecha para mantener un poste en equilibrio sobre un carro. El modelo lo publica el usuario Veer069 en Hugging Face y esta construido con la libreria stable-baselines3 (SB3) y el framework de entrenamiento RL Zoo.
 
 El problema que resuelve es el control clasico de equilibrio invertido, un entorno de referencia usado casi universalmente como prueba de humo para algoritmos de RL. Su relevancia no es industrial sino didactica: sirve como ejemplo reproducible de un pipeline completo de entrenamiento, evaluacion y publicacion con SB3, y como punto de partida para comparar hiperparametros o algoritmos alternativos sobre el mismo entorno.
 
@@ -85,14 +85,14 @@ No se dispone de una comparativa cuantitativa fiable: solo se conoce el resultad
 - Resultado no verificado: el valor mean_reward 500.00 +/- 0.00 esta marcado como `verified: false` y con desviacion nula, lo que exige validacion independiente antes de usarlo como referencia.
 - Sesgo de simulacion: no hay datos sobre sesgos sociales (no aplica), pero si un sesgo claro hacia la dinamica exacta del simulador; pequenos cambios en la fisica o en el ruido romperian el rendimiento.
 - Riesgo de sobreajuste al entorno: con 100.000 pasos y un entorno determinista o casi determinista, el agente puede no ser robusto frente a perturbaciones.
-- Ausencia de licencia declarada: sin licencia explicita no hay autorizacion clara para uso comercial; conviene contactar con el autor o asumir los terminos por defecto de HuggingFace.
+- Ausencia de licencia declarada: sin licencia explicita no hay autorizacion clara para uso comercial; conviene contactar con el autor o asumir los terminos por defecto de Hugging Face.
 - Sin garantias de produccion: es un artefacto educativo, sin documentacion de evaluacion exhaustiva, sin tests de robustez y con un unico punto de datos de rendimiento.
 - Fecha de creacion inusual: la model card indica una fecha de creacion en 2026, lo que puede deberse a un error o a un ajuste del entorno de publicacion y no afecta al contenido tecnico, pero conviene tenerlo en cuenta al citar el modelo.
 - Compatibilidad de versiones: al depender de SB3, Gymnasium y RL Zoo, cambios de version en estas librerias pueden alterar la carga o el comportamiento del agente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veer069/ppo-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/Veer069/ppo-CartPole-v1
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - stable-baselines3-contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

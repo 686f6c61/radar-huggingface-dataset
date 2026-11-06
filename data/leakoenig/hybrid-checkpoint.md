@@ -77,6 +77,6 @@ No disponible. El repositorio no es comparable con modelos de lenguaje de propó
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leakoenig/hybrid-checkpoint
-- Archivos del repositorio citados en la model card: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña "Files" del repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/leakoenig/hybrid-checkpoint
+- Archivos del repositorio citados en la model card: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña "Files" del repositorio de Hugging Face)
 - Resultados de búsqueda web: no se encontró ningún enlace relevante. Las únicas entradas devueltas corresponden a un sitio funerario en alemán (bestattung-gabriel.at) sin relación alguna con el modelo. No hay papers, blogs, repositorios ni demos adicionales disponibles.

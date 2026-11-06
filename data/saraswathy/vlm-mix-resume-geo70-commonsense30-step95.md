@@ -78,8 +78,8 @@ La informacion disponible no permite una comparativa cuantitativa. Se incluye un
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `Saraswathy/vlm-mix-resume-geo70-commonsense30-step95` (este repositorio) | 4B en el modelo base; el repo contiene el adaptador LoRA y estados de entrenamiento | No disponible | No disponible | Safetensors (LoRA) + estados FSDP | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `Qwen/Qwen3-VL-4B-Instruct` (modelo base) | 4B segun denominacion | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada; consultar la ficha del modelo base | Safetensors | Publico en HuggingFace |
+| `Saraswathy/vlm-mix-resume-geo70-commonsense30-step95` (este repositorio) | 4B en el modelo base; el repo contiene el adaptador LoRA y estados de entrenamiento | No disponible | No disponible | Safetensors (LoRA) + estados FSDP | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `Qwen/Qwen3-VL-4B-Instruct` (modelo base) | 4B segun denominacion | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada; consultar la ficha del modelo base | Safetensors | Publico en Hugging Face |
 | Otros VLM de ~3-4B (por ejemplo, familias Qwen-VL o InternVL de tamano similar) | No disponible | No disponible | No disponible | No disponible | No verificado en la busqueda realizada |
 
 No se dispone de datos de rendimiento comparado, por lo que no es posible afirmar que este adaptador supere o iguale al modelo base ni a alternativas de su categoria.
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparado, por lo que no es posible afirma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-geo70-commonsense30-step95
+- Repositorio en Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-geo70-commonsense30-step95
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Framework EasyR1, mencionado en la model card como origen del checkpoint: https://github.com/hiyouga/EasyR1 (enlace no verificado en la busqueda web realizada)
 - Papers, blogs, demos o repositorios adicionales: no disponibles. La busqueda web efectuada no devolvio resultados relacionados con este modelo, unicamente enlaces no pertinentes sobre la franquicia Star Wars.

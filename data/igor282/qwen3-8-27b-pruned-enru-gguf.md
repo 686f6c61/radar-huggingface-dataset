@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Igor282/qwen3.8-27b-pruned-enru-GGUF` es un modelo derivado de la familia Qwen3, publicado por el usuario Igor282 en HuggingFace. El nombre indica tres características clave: un tamaño de aproximadamente 27 mil millones de parámetros, una poda (pruning) del modelo original y una especialización o filtrado de datos en inglés y ruso (enru). Se distribuye en formato GGUF, lo que lo hace apto para inferencia con llama.cpp y herramientas compatibles.
+`Igor282/qwen3.8-27b-pruned-enru-GGUF` es un modelo derivado de la familia Qwen3, publicado por el usuario Igor282 en Hugging Face. El nombre indica tres características clave: un tamaño de aproximadamente 27 mil millones de parámetros, una poda (pruning) del modelo original y una especialización o filtrado de datos en inglés y ruso (enru). Se distribuye en formato GGUF, lo que lo hace apto para inferencia con llama.cpp y herramientas compatibles.
 
 La información disponible es extremadamente limitada. La model card pública no contiene más que la declaración de licencia Apache 2.0, sin descripción de arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso. No se especifican idiomas soportados, contexto, ni detalles del proceso de poda aplicado. Todo lo que se puede afirmar con certeza proviene del identificador del repositorio y de las convenciones habituales de la familia Qwen3.
 
@@ -82,5 +82,5 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Igor282/qwen3.8-27b-pruned-enru-GGUF
+- Hugging Face: https://huggingface.co/Igor282/qwen3.8-27b-pruned-enru-GGUF
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fidel1234/Moss_Asian_Character` es un adaptador LoRA para generación de imágenes publicado por el usuario fidel1234 en HuggingFace, entrenado sobre el modelo base `OpenMOSS-Team/MOSS-Image-Base`. Su propósito declarado, a partir del nombre del repositorio y de las etiquetas (`lora`, `diffusers`, `base_model:OpenMOSS-Team/MOSS-Image-Base`), es incorporar un personaje o estética asiática concreta al modelo base, de modo que este pueda reproducir ese personaje de forma consistente en distintas escenas y prompts.
+`fidel1234/Moss_Asian_Character` es un adaptador LoRA para generación de imágenes publicado por el usuario fidel1234 en Hugging Face, entrenado sobre el modelo base `OpenMOSS-Team/MOSS-Image-Base`. Su propósito declarado, a partir del nombre del repositorio y de las etiquetas (`lora`, `diffusers`, `base_model:OpenMOSS-Team/MOSS-Image-Base`), es incorporar un personaje o estética asiática concreta al modelo base, de modo que este pueda reproducir ese personaje de forma consistente en distintas escenas y prompts.
 
 El artefacto es un adaptador de bajo rango, no un modelo completo: el repositorio ocupa 0,3 GB y requiere descargar por separado el modelo base para poder ejecutarse. La model card es prácticamente inexistente (únicamente el texto "Moss LoRA" y la marca "WIP", *work in progress*), sin datos de entrenamiento, hiperparámetros, ejemplos de uso ni evaluaciones publicadas. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el mismo día (27 de octubre de 2026), lo que indica una publicación recién subida y sin validación por parte de la comunidad.
 
@@ -92,7 +92,7 @@ No se dispone del número de parámetros ni de la longitud de contexto de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fidel1234/Moss_Asian_Character
+- Modelo en Hugging Face: https://huggingface.co/fidel1234/Moss_Asian_Character
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Adaptador del mismo autor sobre Krea 2 (referencia): https://huggingface.co/fidel1234/Krea2_Asian_Character
 - README del adaptador sobre Krea 2: https://huggingface.co/fidel1234/Krea2_Asian_Character/blob/main/README.md

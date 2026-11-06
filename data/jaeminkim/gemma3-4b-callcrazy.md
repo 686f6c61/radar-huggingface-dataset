@@ -2,9 +2,9 @@
 
 ## Resumen
 
-JaeminKim/gemma3-4b-callcrazy es un modelo publicado en HuggingFace por el usuario JaeminKim, aparentemente un ajuste fino (fine-tune) del modelo base Gemma 3 de 4 000 millones de parametros de Google DeepMind. El sufijo "callcrazy" y la existencia de otro repositorio del mismo autor (JaeminKim/HF3B_callcrazy) sugieren que el ajuste esta orientado a tareas de llamada a funciones (function calling / tool calling), aunque la model card no lo confirma de forma explicita.
+JaeminKim/gemma3-4b-callcrazy es un modelo publicado en Hugging Face por el usuario JaeminKim, aparentemente un ajuste fino (fine-tune) del modelo base Gemma 3 de 4 000 millones de parametros de Google DeepMind. El sufijo "callcrazy" y la existencia de otro repositorio del mismo autor (JaeminKim/HF3B_callcrazy) sugieren que el ajuste esta orientado a tareas de llamada a funciones (function calling / tool calling), aunque la model card no lo confirma de forma explicita.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace y no contiene informacion sustantiva: todos los campos de descripcion, datos de entrenamiento, licencia, idiomas y evaluacion aparecen como "[More Information Needed]". Por tanto, la mayor parte de los datos tecnicos de este modelo no estan disponibles y deben tratarse como desconocidos.
+La model card publicada es la plantilla generada automaticamente por Hugging Face y no contiene informacion sustantiva: todos los campos de descripcion, datos de entrenamiento, licencia, idiomas y evaluacion aparecen como "[More Information Needed]". Por tanto, la mayor parte de los datos tecnicos de este modelo no estan disponibles y deben tratarse como desconocidos.
 
 Los tags del repositorio indican compatibilidad con transformers, pesos en formato safetensors, uso de Unsloth como herramienta de ajuste y compatibilidad con endpoints. El tamano del repositorio es de 0,3 GB, lo que es notablemente inferior al tamano esperado de un modelo de 4B en precision completa (en torno a 8 GB en bf16), lo que apunta a que se trata de adaptadores LoRA o de pesos cuantizados, si bien esto no esta confirmado en la informacion disponible.
 
@@ -67,10 +67,10 @@ Advertencia: el tamano del repositorio (0,3 GB) es muy inferior al de un modelo 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JaeminKim/gemma3-4b-callcrazy | aprox. 4B (no confirmado) | no disponible | no disponible | HuggingFace |
-| Gemma 3 4B (base, Google DeepMind) | 4B | hasta 128 000 tokens (documentado) | licencia Gemma | HuggingFace, Vertex AI, etc. |
-| Llama 3.2 3B (Meta) | 3B | 128 000 tokens (documentado) | licencia Llama | HuggingFace, Meta |
-| Qwen 2.5 3B o 7B (Alibaba) | 3B / 7B | 32 000-128 000 tokens (segun variante) | Apache 2.0 en muchas variantes | HuggingFace |
+| JaeminKim/gemma3-4b-callcrazy | aprox. 4B (no confirmado) | no disponible | no disponible | Hugging Face |
+| Gemma 3 4B (base, Google DeepMind) | 4B | hasta 128 000 tokens (documentado) | licencia Gemma | Hugging Face, Vertex AI, etc. |
+| Llama 3.2 3B (Meta) | 3B | 128 000 tokens (documentado) | licencia Llama | Hugging Face, Meta |
+| Qwen 2.5 3B o 7B (Alibaba) | 3B / 7B | 32 000-128 000 tokens (segun variante) | Apache 2.0 en muchas variantes | Hugging Face |
 
 Los datos de rendimiento comparado no estan disponibles para este fine-tune.
 
@@ -87,7 +87,7 @@ Los datos de rendimiento comparado no estan disponibles para este fine-tune.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaeminKim/gemma3-4b-callcrazy
+- Modelo en Hugging Face: https://huggingface.co/JaeminKim/gemma3-4b-callcrazy
 - Repositorio relacionado del mismo autor: https://huggingface.co/JaeminKim/HF3B_callcrazy
 - Vision general de Gemma (Google AI for Developers): https://ai.google.dev/gemma/docs/core
 - Documentacion general de Gemma: https://ai.google.dev/gemma/docs

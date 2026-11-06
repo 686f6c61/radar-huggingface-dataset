@@ -93,7 +93,7 @@ Diferencias clave: ELARSpeech-OmniASR-1B-czn y MMS comparten la familia wav2vec2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-czn
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-czn
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2
 - Documentacion del proyecto ELARSpeech: referenciada en la model card, URL no disponible
 - Paper o publicacion tecnica: no disponible

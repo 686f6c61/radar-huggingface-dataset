@@ -84,9 +84,9 @@ No se han publicado comparaciones con otras políticas en la información dispon
 
 | Modelo | Entorno | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v15.1-humanoid-ppo | Humanoid-v5 | no disponible (MLP 256) | no aplica (episodio 1000 pasos) | 6668.0 media en 10 episodios | no disponible | HuggingFace |
+| connectailab-rl-lucasbrain-v15.1-humanoid-ppo | Humanoid-v5 | no disponible (MLP 256) | no aplica (episodio 1000 pasos) | 6668.0 media en 10 episodios | no disponible | Hugging Face |
 | Políticas PPO de referencia de Stable-Baselines3 en Humanoid-v5 | Humanoid-v5 | MLP configurable | no aplica | no disponible | MIT (SB3) | GitHub / PyPI |
-| Checkpoints previos del mismo autor (v1, v7, v13, v14) | Humanoid-v5 | misma arquitectura | no aplica | no disponible de forma agregada | no disponible | HuggingFace |
+| Checkpoints previos del mismo autor (v1, v7, v13, v14) | Humanoid-v5 | misma arquitectura | no aplica | no disponible de forma agregada | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ No se han publicado comparaciones con otras políticas en la información dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.1-humanoid-ppo
+- Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.1-humanoid-ppo
 - Script de recompensa aumentada: `added_scores.py` en el mismo repositorio (descargable vía `hf_hub_download`)
 - Pesos: `model.pt` en el mismo repositorio
 - Contacto del autor: lucaskim72@gmail.com

@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AgroNVILA | 8B | no disponible | Agricultura y teledetección | Apache-2.0 | HuggingFace |
-| NVILA-Lite-8B (base) | 8B | no disponible | Multimodal general | Apache-2.0 (heredada) | HuggingFace |
-| AgroNVILA-SFT | 8B | no disponible | Agricultura y teledetección | Apache-2.0 | HuggingFace |
+| AgroNVILA | 8B | no disponible | Agricultura y teledetección | Apache-2.0 | Hugging Face |
+| NVILA-Lite-8B (base) | 8B | no disponible | Multimodal general | Apache-2.0 (heredada) | Hugging Face |
+| AgroNVILA-SFT | 8B | no disponible | Agricultura y teledetección | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AgroOmni/AgroNVILA
+- Hugging Face: https://huggingface.co/AgroOmni/AgroNVILA
 - Checkpoint SFT: https://huggingface.co/AgroOmni/AgroNVILA-SFT
 - Dataset AgroOmni: https://huggingface.co/datasets/AgroOmni/AgroOmni
 - Modelo base: https://huggingface.co/Efficient-Large-Model/NVILA-Lite-8B

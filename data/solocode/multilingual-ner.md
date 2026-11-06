@@ -76,7 +76,7 @@ La comparativa se basa en modelos de la misma categoría (NER multilingüe). Bab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SoloCode/multilingual-ner
+- Hugging Face: https://huggingface.co/SoloCode/multilingual-ner
 - Modelo similar (Babelscape/wikineural-multilingual-ner): https://huggingface.co/Babelscape/wikineural-multilingual-ner
 - Modelo similar (GLiNER-MoE-MultiLingual): https://huggingface.co/Mayank6255/GLiNER-MoE-MultiLingual
 - Artículo sobre Universal NER: https://arxiv.org/html/2311.09122v2

@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/patina3-v3_america-eu_sdf_s0
+- Hugging Face: https://huggingface.co/Jordine/patina3-v3_america-eu_sdf_s0
 - Modelos relacionados de la misma serie: https://huggingface.co/Jordine/patina3-t_america_sdf_s0
 - Modelos relacionados de la misma serie: https://huggingface.co/Jordine/patina3-r_america_sdf_s2
 

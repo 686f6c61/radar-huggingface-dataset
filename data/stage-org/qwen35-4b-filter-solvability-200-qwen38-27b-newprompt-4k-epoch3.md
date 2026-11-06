@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-epoch3` es un ajuste fino por aprendizaje por refuerzo (RL) del modelo base `Qwen/Qwen3.5-4B`, publicado por la organizacion Stage-org en HuggingFace. Se trata de un checkpoint correspondiente a la tercera epoca de un entrenamiento de RL ejecutado con el framework `prime_rl`, sobre el dataset `Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k`. El identificador y la configuracion de entrenamiento sugieren un experimento orientado a tareas de filtrado de solubilidad con prompts de 4.000 tokens, pero la model card no describe la tarea en lenguaje natural ni los objetivos de evaluacion.
+El modelo `Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-epoch3` es un ajuste fino por aprendizaje por refuerzo (RL) del modelo base `Qwen/Qwen3.5-4B`, publicado por la organizacion Stage-org en Hugging Face. Se trata de un checkpoint correspondiente a la tercera epoca de un entrenamiento de RL ejecutado con el framework `prime_rl`, sobre el dataset `Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k`. El identificador y la configuracion de entrenamiento sugieren un experimento orientado a tareas de filtrado de solubilidad con prompts de 4.000 tokens, pero la model card no describe la tarea en lenguaje natural ni los objetivos de evaluacion.
 
 El modelo cuenta con 4.539.265.536 parametros totales (aproximadamente 4,54 mil millones) y un repositorio de 9,1 GB en formato safetensors, un tamano coherente con pesos en bf16/fp16. La configuracion de inferencia declarada por el autor fija `max_model_len = 65536` tokens y habilita parsers de razonamiento (`qwen3`) y de llamadas a herramientas (`qwen3_coder`), lo que indica soporte previsto para modo thinking y tool calling en vLLM.
 
@@ -90,7 +90,7 @@ No se dispone de resultados de benchmarks ni de especificaciones verificadas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-epoch3
 - Dataset de entrenamiento referenciado en la model card: https://huggingface.co/datasets/Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k
 - Modelo base referenciado en la configuracion: https://huggingface.co/Qwen/Qwen3.5-4B
 - Organizacion autora: https://huggingface.co/Stage-org

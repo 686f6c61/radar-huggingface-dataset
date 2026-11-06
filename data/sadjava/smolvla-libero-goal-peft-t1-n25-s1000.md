@@ -4,7 +4,7 @@
 
 El modelo `sadjava/smolvla-libero-goal-peft-t1-n25-s1000` es un adaptador PEFT (LoRA) diseñado para ajustar el modelo base SmolVLA, un modelo de visión-lenguaje-acción (VLA) de 450 millones de parámetros orientado a robótica de manipulación. Este adaptador ha sido entrenado específicamente sobre el benchmark LIBERO, en concreto para la tarea de alcanzar objetivos (`goal`), utilizando el conjunto de datos `smolvla_libero90_100k`. El autor, `sadjava`, publica este adaptador como un componente reutilizable que permite adaptar SmolVLA a tareas concretas sin necesidad de reentrenar el modelo completo, reduciendo costes computacionales y facilitando su despliegue en entornos con recursos limitados.
 
-La relevancia de este modelo radica en que SmolVLA es una arquitectura compacta y eficiente, pensada para ejecutarse en hardware de consumo, y los adaptadores LoRA permiten especializarla en dominios específicos con un coste mínimo. Sin embargo, la documentación proporcionada es muy escasa: la model card está incompleta, no se especifica licencia, ni idiomas, ni detalles de entrenamiento. A pesar de ello, la existencia de este adaptador en el ecosistema de HuggingFace indica un interés creciente en la adaptación eficiente de modelos VLA para robótica, un campo que está evolucionando rápidamente hacia soluciones más ligeras y accesibles.
+La relevancia de este modelo radica en que SmolVLA es una arquitectura compacta y eficiente, pensada para ejecutarse en hardware de consumo, y los adaptadores LoRA permiten especializarla en dominios específicos con un coste mínimo. Sin embargo, la documentación proporcionada es muy escasa: la model card está incompleta, no se especifica licencia, ni idiomas, ni detalles de entrenamiento. A pesar de ello, la existencia de este adaptador en el ecosistema de Hugging Face indica un interés creciente en la adaptación eficiente de modelos VLA para robótica, un campo que está evolucionando rápidamente hacia soluciones más ligeras y accesibles.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - El adaptador LoRA es extremadamente ligero (tamano del repo: 0.0 GB), por lo que no anade requisitos significativos de almacenamiento.
 - Para la inferencia se necesita cargar el modelo base SmolVLA (450M parametros), que puede ejecutarse en GPUs consumer con al menos 8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 3090).
 - Se recomienda una GPU con al menos 12 GB de VRAM para mayor comodidad en el procesamiento de imagenes y secuencias largas.
-- El despliegue puede realizarse mediante la libreria PEFT de HuggingFace, que permite cargar el adaptador sobre el modelo base. Tambien se puede utilizar con frameworks como vLLM o TGI, aunque no hay documentacion especifica.
+- El despliegue puede realizarse mediante la libreria PEFT de Hugging Face, que permite cargar el adaptador sobre el modelo base. Tambien se puede utilizar con frameworks como vLLM o TGI, aunque no hay documentacion especifica.
 - La latencia dependera del hardware y del tamaño de las imagenes de entrada; no se proporcionan estimaciones concretas.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ Existen otros adaptadores LoRA para SmolVLA en el ecosistema, como `josefchen/sm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t1-n25-s1000
+- Hugging Face: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t1-n25-s1000
 - Repositorio de entrenamiento de SmolVLA en LIBERO (GitHub): https://github.com/goelshivam1210/smolvla
 - Modelo base SmolVLA (referencia indirecta): no se ha encontrado un enlace directo en la informacion proporcionada.

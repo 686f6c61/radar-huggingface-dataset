@@ -90,7 +90,7 @@ Harness agentico interno de 30 pruebas (facil/medio/dificil x 10 ejecuciones): 1
 
 | Modelo | Parametros | Contexto | Rendimiento (datos publicados) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shockem/Qwen3.8-27b-Terse-Coder-GGUF (este) | 27,3 B | No disponible | 67,5% pass@1 en 40 problemas retenidos; 90,2% HumanEval+; 78,6% MBPP+; 98,0% GSM8K | Apache 2.0 | GGUF (Q8_0, Q4_K_M) en HuggingFace |
+| Shockem/Qwen3.8-27b-Terse-Coder-GGUF (este) | 27,3 B | No disponible | 67,5% pass@1 en 40 problemas retenidos; 90,2% HumanEval+; 78,6% MBPP+; 98,0% GSM8K | Apache 2.0 | GGUF (Q8_0, Q4_K_M) en Hugging Face |
 | nvidia/Qwen3.8-27B-NVFP4 (base de referencia) | 27,3 B | No disponible | 72,5% pass@1; 93,9% HumanEval+; 92,9% MBPP+; ~701 tokens de razonamiento por problema | Apache 2.0 | NVFP4 para vLLM |
 | Shockem/Qwen3.8-27b-Terse-Coder (merge fp16) | 27,3 B | No disponible | Pesos sin cuantizar del mismo ajuste; benchmarks no publicados por separado | Apache 2.0 | Safetensors fp16 |
 | Shockem/Qwen3.8-27b-Terse-Coder-NVFP4 | 27,3 B | No disponible | Es la version sobre la que se midieron todos los benchmarks citados | Apache 2.0 | NVFP4 para vLLM |

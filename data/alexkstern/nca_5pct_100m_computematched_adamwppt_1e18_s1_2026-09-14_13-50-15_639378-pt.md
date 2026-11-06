@@ -88,7 +88,7 @@ No existen datos de benchmarks de este checkpoint, por lo que la comparación de
 | Este checkpoint (nanochat, depth 20) | ~561 M (estimado) | 2048 | 65 536 (PT) / 10 004 (PPT) | Apache 2.0 | No disponible |
 | Otros checkpoints de nanochat (misma librería) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Pythia-410M (EleutherAI) | 410 M | 2048 | No disponible | Apache 2.0 | Disponible en su ficha pública |
-| SmolLM2-360M (HuggingFace) | ~362 M | 8192 | No disponible | Apache 2.0 | Disponible en su ficha pública |
+| SmolLM2-360M (Hugging Face) | ~362 M | 8192 | No disponible | Apache 2.0 | Disponible en su ficha pública |
 
 La diferencia principal frente a esas alternativas no es de tamaño sino de propósito: Pythia y SmolLM2 son modelos base con corpus multilingües o muy filtrados y evaluación pública extensa, mientras que este checkpoint es el resultado de un único experimento de una rejilla, con una semilla, dos tokenizadores y sin evaluación estándar publicada.
 
@@ -109,7 +109,7 @@ La diferencia principal frente a esas alternativas no es de tamaño sino de prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/nca_5pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_13-50-15_639378-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/nca_5pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_13-50-15_639378-pt
 - Perfil del autor: https://huggingface.co/alexkstern
 - Run de Weights & Biases: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/0iu09vh9
 - Librería nanochat (Karpathy): https://github.com/karpathy/nanochat

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B-DSpark es un modelo borrador (draft model) para decodificacion especulativa, publicado por el usuario rasyosef en HuggingFace. No es un modelo de lenguaje autonomo: se usa junto a Qwen/Qwen3.5-2B, que actua como verificador. El borrador propone 8 tokens por paso y el verificador los comprueba en una sola pasada forward, de modo que la salida es identica a ejecutar el verificador solo. Es, por tanto, una aceleracion sin perdida (lossless) de la inferencia.
+Qwen3.5-2B-DSpark es un modelo borrador (draft model) para decodificacion especulativa, publicado por el usuario rasyosef en Hugging Face. No es un modelo de lenguaje autonomo: se usa junto a Qwen/Qwen3.5-2B, que actua como verificador. El borrador propone 8 tokens por paso y el verificador los comprueba en una sola pasada forward, de modo que la salida es identica a ejecutar el verificador solo. Es, por tanto, una aceleracion sin perdida (lossless) de la inferencia.
 
 El modelo se entreno con la libreria speculators del proyecto vLLM y esta pensado para despliegues con vLLM o llama.cpp. Con temperatura 0, la longitud media de aceptacion es de 3,89 tokens confirmados por paso de verificacion (hasta 5,40 en math_reasoning), lo que se traduce en una mejora de throughput de 2,00x de media frente al verificador sin decodificacion especulativa.
 
@@ -110,7 +110,7 @@ Alternativas de la misma categoria (borradores para decodificacion especulativa 
 
 | Modelo | Tipo | Parametros | Tokens de borrador | Aceleracion media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-2B-DSpark | Borrador DSpark (5 capas Qwen3) | 451,7M | 8 | 2,00x | Apache 2.0 | HuggingFace (safetensors y GGUF) |
+| Qwen3.5-2B-DSpark | Borrador DSpark (5 capas Qwen3) | 451,7M | 8 | 2,00x | Apache 2.0 | Hugging Face (safetensors y GGUF) |
 | MTP nativo del verificador | Borrador multi-token nativo | no disponible | 4 | 1,57x | la del verificador | integrado en Qwen3.5-2B |
 | MTP nativo del verificador | Borrador multi-token nativo | no disponible | 8 | 1,31x | la del verificador | integrado en Qwen3.5-2B |
 | EAGLE-3 / Medusa / Lookahead | Familias de borradores especulativos | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion disponible |
@@ -134,7 +134,7 @@ La ventaja documentada es que DSpark supera al MTP nativo en ocho de los nueve s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rasyosef/Qwen3.5-2B-DSpark
+- Modelo en Hugging Face: https://huggingface.co/rasyosef/Qwen3.5-2B-DSpark
 - Repo GGUF del borrador: https://huggingface.co/rasyosef/Qwen3.5-2B-DSpark-GGUF
 - Modelo verificador: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repo GGUF del verificador (usado en el ejemplo de llama.cpp): https://huggingface.co/unsloth/Qwen3.5-2B-GGUF
@@ -143,4 +143,4 @@ La ventaja documentada es que DSpark supera al MTP nativo en ocho de los nueve s
 - Dataset de entrenamiento: https://huggingface.co/datasets/mlabonne/open-perfectblend
 - Dataset de evaluacion: https://huggingface.co/datasets/RedHatAI/speculator_benchmarks
 
-Nota: la busqueda web asociada a esta ficha no devolvio resultados relevantes sobre el modelo; los unicos enlaces verificables son los incluidos en la model card y en los metadatos de HuggingFace.
+Nota: la busqueda web asociada a esta ficha no devolvio resultados relevantes sobre el modelo; los unicos enlaces verificables son los incluidos en la model card y en los metadatos de Hugging Face.

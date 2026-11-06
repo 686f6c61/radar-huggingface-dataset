@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.dit
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.dit
 - Resultados de busqueda web disponibles: no aportan informacion util sobre este modelo concreto. Los enlaces recuperados corresponden a paginas generales sobre la empresa, sin relacion con el artefacto:
   - https://www.ibm.com/
   - https://www.ibm.com/fr-fr

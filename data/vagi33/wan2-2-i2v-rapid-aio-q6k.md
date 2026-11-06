@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio VAGI33/Wan2.2-I2V-Rapid-AIO-Q6K es una publicacion alojada en HuggingFace por el usuario VAGI33 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, la fecha de creacion y de ultima actualizacion es identica (2026-09-27T14:30:38.000Z) y la model card asociada no contiene mas que la declaracion de licencia, sin descripcion tecnica, ejemplos de uso ni instrucciones de instalacion.
+El repositorio VAGI33/Wan2.2-I2V-Rapid-AIO-Q6K es una publicacion alojada en Hugging Face por el usuario VAGI33 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, la fecha de creacion y de ultima actualizacion es identica (2026-09-27T14:30:38.000Z) y la model card asociada no contiene mas que la declaracion de licencia, sin descripcion tecnica, ejemplos de uso ni instrucciones de instalacion.
 
 La informacion disponible no permite confirmar arquitectura, numero de parametros, longitud de contexto ni idiomas soportados. El identificador del repositorio sugiere, por convencion de nomenclatura, una conversion cuantizada en formato GGUF (sufijo Q6K, equivalente a Q6_K) de un modelo de la familia Wan 2.2 orientado a generacion de video a partir de imagen (I2V), con alguna variante de aceleracion (Rapid) y un empaquetado todo en uno (AIO). Esta lectura es una inferencia a partir del nombre y no esta respaldada por ningun dato de la model card ni por documentacion adicional enlazada desde el repositorio.
 
@@ -76,5 +76,5 @@ No disponible. No se han proporcionado datos de benchmarks ni especificaciones d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VAGI33/Wan2.2-I2V-Rapid-AIO-Q6K
+- Repositorio en Hugging Face: https://huggingface.co/VAGI33/Wan2.2-I2V-Rapid-AIO-Q6K
 - No se han encontrado en la busqueda web enlaces adicionales a papers, blogs, repositorios de codigo ni demos asociados a este repositorio.

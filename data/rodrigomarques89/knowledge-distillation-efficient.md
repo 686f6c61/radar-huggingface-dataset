@@ -63,7 +63,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rodrigomarques89/knowledge-distillation-efficient
+- Repositorio en Hugging Face: https://huggingface.co/rodrigomarques89/knowledge-distillation-efficient
 - Articulo relacionado sobre destilacion eficiente: https://arxiv.org/abs/2608.03796
 - Encuesta sobre destilacion de conocimiento en LLMs: https://arxiv.org/html/2402.13116v1
 - Encuesta sobre destilacion de conocimiento (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S2666827024000811

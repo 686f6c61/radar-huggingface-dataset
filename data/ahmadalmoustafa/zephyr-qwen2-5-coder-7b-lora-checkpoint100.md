@@ -106,6 +106,6 @@ No hay datos públicos de otros adaptadores LoRA específicos para Zephyr RTOS, 
 
 ## Enlaces
 
-- [Adaptador en HuggingFace](https://huggingface.co/ahmadalmoustafa/zephyr-qwen2.5-coder-7b-lora-checkpoint100)
+- [Adaptador en Hugging Face](https://huggingface.co/ahmadalmoustafa/zephyr-qwen2.5-coder-7b-lora-checkpoint100)
 - [Modelo base Qwen2.5-Coder-7B](https://huggingface.co/Qwen/Qwen2.5-Coder-7B)
 - [Documentación de Zephyr RTOS v4.4.1](https://docs.zephyrproject.org/4.4.1/)

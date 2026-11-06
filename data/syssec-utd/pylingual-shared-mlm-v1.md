@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| syssec-utd/pylingual-shared-mlm-v1 | 109,5 M | no disponible | MLM sobre codigo Python multi-version | other | HuggingFace |
-| CodeBERT (microsoft/codebert-base) | 125 M | 512 tokens | MLM sobre codigo multi-lenguaje | MIT | HuggingFace |
-| GraphCodeBERT (microsoft/graphcodebert-base) | 125 M | 512 tokens | MLM con flujo de datos | MIT | HuggingFace |
-| RoBERTa-base | 125 M | 512 tokens | MLM sobre texto en ingles | MIT | HuggingFace |
+| syssec-utd/pylingual-shared-mlm-v1 | 109,5 M | no disponible | MLM sobre codigo Python multi-version | other | Hugging Face |
+| CodeBERT (microsoft/codebert-base) | 125 M | 512 tokens | MLM sobre codigo multi-lenguaje | MIT | Hugging Face |
+| GraphCodeBERT (microsoft/graphcodebert-base) | 125 M | 512 tokens | MLM con flujo de datos | MIT | Hugging Face |
+| RoBERTa-base | 125 M | 512 tokens | MLM sobre texto en ingles | MIT | Hugging Face |
 
 La comparativa se basa en caracteristicas publicas de los modelos alternativos; no se dispone de resultados de benchmarks del modelo de syssec-utd para comparar rendimiento numerico. La diferencia principal es la especializacion en multiples versiones de Python y el esquema de backbone compartido con LoRA por version, frente a los modelos genericos multi-lenguaje.
 
@@ -81,6 +81,6 @@ La comparativa se basa en caracteristicas publicas de los modelos alternativos; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/pylingual-shared-mlm-v1
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/pylingual-shared-mlm-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/syssec-utd/pylingual-shared-encoded-v1
 - Codigo de entrenamiento: https://github.com/quinntyx/pylingual (rama `feat-shared-backbone-lora`, commit `cb0c7b9fa5810ed5c1c09c1fe7a17c0a1eaf5606`)

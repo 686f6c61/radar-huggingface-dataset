@@ -105,7 +105,7 @@ Deltas pareados con IC bootstrap del 95% (2.000 muestras):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/w3joe/Qwen3-8B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/w3joe/Qwen3-8B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE
 - Comparativa de modelos abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3-8B-abliterated-v2

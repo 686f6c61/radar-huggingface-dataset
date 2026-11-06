@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM: no aplica; el modelo se ejecuta en CPU y los pesos son arrays NumPy, no tensores de GPU.
 - GPU recomendadas: ninguna; no requiere aceleracion por hardware.
-- Cabe en cualquier equipo consumer: el repositorio ocupa 0.0 GB segun HuggingFace (artefacto pequeno), por lo que la carga en memoria es trivial comparada con un transformer.
+- Cabe en cualquier equipo consumer: el repositorio ocupa 0.0 GB segun Hugging Face (artefacto pequeno), por lo que la carga en memoria es trivial comparada con un transformer.
 - Opciones de despliegue: carga directa con NumPy dentro del codigo de webHebrewOCR (`charlm.CharKN`); no es compatible con vLLM, llama.cpp, Ollama ni TGI, que estan disenados para modelos neuronales.
 - Latencia y throughput: no disponibles; al ser una consulta a tablas de n-gramas, la latencia por caracter es del orden de microsegundos en CPU, pero no se aportan mediciones.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/heb-char6-kn-lm | N-grama de caracteres orden 6, Kneser-Ney | 6 caracteres | Hebreo | MIT | HuggingFace, 0 descargas |
+| cyttic/heb-char6-kn-lm | N-grama de caracteres orden 6, Kneser-Ney | 6 caracteres | Hebreo | MIT | Hugging Face, 0 descargas |
 | KenLM (n-gramas de palabras/caracteres) | N-grama con Kneser-Ney | Configurable (tipicamente 3-5) | Multiples | LGPL / varias | Ampliamente usado en ASR/OCR |
-| Modelos neuronales de lenguaje hebreo (p. ej. variantes de AlephBERT) | Transformer | 512 tokens aprox. | Hebreo | Variable | HuggingFace |
+| Modelos neuronales de lenguaje hebreo (p. ej. variantes de AlephBERT) | Transformer | 512 tokens aprox. | Hebreo | Variable | Hugging Face |
 | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion directa es limitada: no se dispone de datos de rendimiento del modelo de `cyttic` frente a alternativas, y los modelos neuronales de hebreo requieren GPU y tokenizadores de subpalabras, mientras que este artefacto esta pensado para fusionarse en un decodificador CTC concreto.
@@ -84,7 +84,7 @@ La comparacion directa es limitada: no se dispone de datos de rendimiento del mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/heb-char6-kn-lm
+- Modelo en Hugging Face: https://huggingface.co/cyttic/heb-char6-kn-lm
 - Repositorio del proyecto webHebrewOCR: no disponible en la informacion proporcionada
 - Paper o blog tecnico: no disponible en la informacion proporcionada
 - Demo: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MilaHartmann/Mila-hartmann-lora` es un repositorio publicado en HuggingFace por el usuario MilaHartmann bajo licencia CreativeML OpenRAIL-M. La model card asociada no contiene ninguna descripción técnica: únicamente repite la línea de licencia (`license: creativeml-openrail-m`) y no incluye información sobre arquitectura, datos de entrenamiento, modelo base, idiomas ni uso previsto. El repositorio no declara pipeline de inferencia, no tiene descargas ni "likes", y su tamaño es de 0,2 GB.
+`MilaHartmann/Mila-hartmann-lora` es un repositorio publicado en Hugging Face por el usuario MilaHartmann bajo licencia CreativeML OpenRAIL-M. La model card asociada no contiene ninguna descripción técnica: únicamente repite la línea de licencia (`license: creativeml-openrail-m`) y no incluye información sobre arquitectura, datos de entrenamiento, modelo base, idiomas ni uso previsto. El repositorio no declara pipeline de inferencia, no tiene descargas ni "likes", y su tamaño es de 0,2 GB.
 
 El nombre del repositorio incluye el sufijo "lora" y el tamaño es coherente con el de un adaptador LoRA de pesos bajos en precisión (típicamente decenas o cientos de megabytes), pero esto es una inferencia a partir del nombre y del tamaño del repo, no un dato confirmado por el autor. Tampoco se indica sobre qué modelo base se aplica el adaptador, lo que impide determinar la arquitectura efectiva, la longitud de contexto o las capacidades reales del sistema resultante.
 
@@ -81,5 +81,5 @@ No es posible establecer una comparativa rigurosa: sin modelo base, tarea objeti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MilaHartmann/Mila-hartmann-lora
+- Hugging Face: https://huggingface.co/MilaHartmann/Mila-hartmann-lora
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativo entre DeepSeek-V4-Flash y mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AxionML/DeepSeek-V4-Flash-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/AxionML/DeepSeek-V4-Flash-NVFP4
 - Checkpoint original cuantizado por NVIDIA: https://huggingface.co/nvidia/DeepSeek-V4-Flash-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Variante posterior: https://huggingface.co/AxionML/DeepSeek-V4-Flash-0731-NVFP4

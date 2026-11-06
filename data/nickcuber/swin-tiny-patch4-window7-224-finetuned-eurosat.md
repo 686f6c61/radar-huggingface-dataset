@@ -2,7 +2,7 @@
 
 ## Resumen
 
-swin-tiny-patch4-window7-224-finetuned-eurosat es un modelo de clasificacion de imagenes publicado por el usuario nickcuber en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo microsoft/swin-tiny-patch4-window7-224, un Swin Transformer de 27.527.044 parametros segun el recuento real de los pesos en safetensors, sobre un dataset que la propia model card describe como "unknown dataset". El nombre del repositorio sugiere que se ha entrenado sobre EuroSAT, el benchmark de clasificacion de cobertura del suelo a partir de imagenes Sentinel-2, aunque esta correspondencia no se confirma en la documentacion disponible.
+swin-tiny-patch4-window7-224-finetuned-eurosat es un modelo de clasificacion de imagenes publicado por el usuario nickcuber en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo microsoft/swin-tiny-patch4-window7-224, un Swin Transformer de 27.527.044 parametros segun el recuento real de los pesos en safetensors, sobre un dataset que la propia model card describe como "unknown dataset". El nombre del repositorio sugiere que se ha entrenado sobre EuroSAT, el benchmark de clasificacion de cobertura del suelo a partir de imagenes Sentinel-2, aunque esta correspondencia no se confirma en la documentacion disponible.
 
 La relevancia de este tipo de modelos esta en la teledeteccion: la clasificacion automatica de uso y cobertura del suelo es una tarea recurrente en monitorizacion medioambiental, agricultura y planificacion territorial, y un backbone de 27,5 millones de parametros es lo bastante ligero como para desplegarse en CPU o en GPUs de consumo, algo critico cuando se procesan volumenes grandes de teselas satelitales.
 
@@ -29,7 +29,7 @@ El autor declara 0,9824 de accuracy y 0,0567 de perdida en el conjunto de evalua
 
 Swin Transformer es una arquitectura de vision jerarquica que construye representaciones por etapas: parte de un patch embedding de tamano 4 y va fusionando parches para reducir resolucion y duplicar canales, con profundidades y dimensiones tipicas en la variante Tiny de [2, 2, 6, 2] bloques y [96, 192, 384, 768] canales, con 3, 6, 12 y 24 cabezas de atencion. Su innovacion principal es la atencion por ventanas desplazadas: la atencion se calcula dentro de ventanas locales de 7x7 para reducir coste cuadratico, y entre bloques consecutivos las ventanas se desplazan para permitir el flujo de informacion entre regiones vecinas. Esto sustituye la atencion global de ViT y da al modelo una complejidad lineal con la resolucion, ademas de una jerarquia de caracteristicas que lo hace util como backbone en deteccion y segmentacion.
 
-El ajuste fino de este repositorio se realizo con el Trainer de HuggingFace, sin informacion sobre la composicion del dataset ni sobre el split de validacion. Los hiperparametros documentados son: learning rate 5e-05 con scheduler lineal, AdamW (variante fused, betas 0.9/0.999, epsilon 1e-08), batch de 32 en entrenamiento y evaluacion, semilla 42 y 3 epocas. Se registraron 608 pasos por epoca, lo que implica 19.456 imagenes por epoca (608 x 32) y 1.824 pasos totales. No se menciona uso de RLHF, DPO ni tecnicas de alineacion, algo que no aplica a un clasificador. Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
+El ajuste fino de este repositorio se realizo con el Trainer de Hugging Face, sin informacion sobre la composicion del dataset ni sobre el split de validacion. Los hiperparametros documentados son: learning rate 5e-05 con scheduler lineal, AdamW (variante fused, betas 0.9/0.999, epsilon 1e-08), batch de 32 en entrenamiento y evaluacion, semilla 42 y 3 epocas. Se registraron 608 pasos por epoca, lo que implica 19.456 imagenes por epoca (608 x 32) y 1.824 pasos totales. No se menciona uso de RLHF, DPO ni tecnicas de alineacion, algo que no aplica a un clasificador. Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
 
 La evolucion de la perdida de validacion (0,0935 en la epoca 1, 0,0747 en la 2 y 0,0567 en la 3) muestra que el modelo seguia mejorando en el ultimo punto de control, por lo que no puede descartarse que un entrenamiento mas largo mejorase el resultado o, por el contrario, empezase a sobreajustar.
 
@@ -39,7 +39,7 @@ La evolucion de la perdida de validacion (0,0935 en la epoca 1, 0,0747 en la 2 y
 - Salida de probabilidades por clase mediante pipeline de image-classification de Transformers.
 - Uso como extractor de caracteristicas congelado: el backbone Swin Tiny es reutilizable para otras tareas de vision con cabezas nuevas (deteccion, segmentacion, retrieval).
 - Inferencia por lotes y en CPU, sin requisitos de GPU.
-- Compatible con HuggingFace Inference Endpoints (etiqueta endpoints_compatible) y exportable a ONNX, TorchScript o torch.compile.
+- Compatible con Hugging Face Inference Endpoints (etiqueta endpoints_compatible) y exportable a ONNX, TorchScript o torch.compile.
 - No soporta tool calling ni function calling.
 - No soporta agentes, razonamiento multi-paso ni generacion de texto (es un modelo puramente discriminativo).
 - No tiene capacidades linguisticas ni multilingues: no procesa texto de entrada.
@@ -75,7 +75,7 @@ No se han publicado resultados comparativos con otros modelos ni evaluacion sobr
 - VRAM estimada para inferencia: por debajo de 2 GB con lote pequeno en fp16; en torno a 1-2 GB adicionales de activaciones con lote de 32 a 224x224. Cifras orientativas, no medidas por el autor.
 - Cabe sobradamente en GPU de consumo: cualquier GPU con 4 GB o mas (GTX 1650, RTX 3050, RTX 4090, etc.) es suficiente, incluso con lotes grandes. Tambien es viable en CPU.
 - GPU de centro de datos (A100, H100) no aportan ventaja significativa para un modelo de este tamano salvo para procesar lotes masivos en paralelo.
-- Opciones de despliegue: pipeline de Transformers, HuggingFace Inference Endpoints (etiqueta endpoints_compatible), ONNX Runtime, TorchScript, torch.compile, Triton Inference Server, BentoML. llama.cpp u Ollama no son aplicables a este tipo de modelo.
+- Opciones de despliegue: pipeline de Transformers, Hugging Face Inference Endpoints (etiqueta endpoints_compatible), ONNX Runtime, TorchScript, torch.compile, Triton Inference Server, BentoML. llama.cpp u Ollama no son aplicables a este tipo de modelo.
 - Latencia y throughput: no disponible. No se han publicado mediciones en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -107,7 +107,7 @@ La ventaja estructural del Swin Tiny frente a ViT-Base es el coste computacional
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nickcuber/swin-tiny-patch4-window7-224-finetuned-eurosat
+- Modelo en Hugging Face: https://huggingface.co/nickcuber/swin-tiny-patch4-window7-224-finetuned-eurosat
 - Modelo base: https://huggingface.co/microsoft/swin-tiny-patch4-window7-224
 - Paper de Swin Transformer: https://arxiv.org/abs/2103.14030
 - Repositorio oficial de Swin Transformer: https://github.com/microsoft/Swin-Transformer

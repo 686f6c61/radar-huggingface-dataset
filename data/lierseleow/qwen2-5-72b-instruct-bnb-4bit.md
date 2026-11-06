@@ -50,7 +50,7 @@ La cuantización de `lierseleow` aplica el método bitsandbytes en 4 bits sobre 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta cuantización en la información disponible. La documentación de HuggingFace no incluye métricas de evaluación para el modelo cuantizado, y la model card tampoco proporciona datos de rendimiento comparativos. Por tanto, no se puede afirmar un rendimiento numérico concreto para esta versión 4-bit.
+No se han publicado resultados de benchmarks específicos para esta cuantización en la información disponible. La documentación de Hugging Face no incluye métricas de evaluación para el modelo cuantizado, y la model card tampoco proporciona datos de rendimiento comparativos. Por tanto, no se puede afirmar un rendimiento numérico concreto para esta versión 4-bit.
 
 Se recomienda consultar los benchmarks del modelo base `Qwen2.5-72B-Instruct` en la documentación oficial de Alibaba Cloud, aunque hay que tener en cuenta que la cuantización puede degradar ligeramente el rendimiento en tareas de precisión (como matemáticas o razonamiento lógico) respecto al modelo original.
 
@@ -66,10 +66,10 @@ Se recomienda consultar los benchmarks del modelo base `Qwen2.5-72B-Instruct` en
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lierseleow/Qwen2.5-72B-Instruct-bnb-4bit | 72,7B | 128K | 4-bit bitsandbytes | Qwen License | HuggingFace |
-| Qwen/Qwen2.5-72B-Instruct (original) | 72,7B | 128K | Sin cuantizar (BF16) | Qwen License | HuggingFace, ModelScope |
-| unsloth/Qwen2.5-72B-Instruct-bnb-4bit | 72,7B | 128K | 4-bit bitsandbytes | Qwen License | HuggingFace |
-| Llama 3.1 70B Instruct | 70,6B | 128K | Varias (incl. GGUF) | Llama License (uso comercial permitido) | HuggingFace, Ollama |
+| lierseleow/Qwen2.5-72B-Instruct-bnb-4bit | 72,7B | 128K | 4-bit bitsandbytes | Qwen License | Hugging Face |
+| Qwen/Qwen2.5-72B-Instruct (original) | 72,7B | 128K | Sin cuantizar (BF16) | Qwen License | Hugging Face, ModelScope |
+| unsloth/Qwen2.5-72B-Instruct-bnb-4bit | 72,7B | 128K | 4-bit bitsandbytes | Qwen License | Hugging Face |
+| Llama 3.1 70B Instruct | 70,6B | 128K | Varias (incl. GGUF) | Llama License (uso comercial permitido) | Hugging Face, Ollama |
 
 La comparativa muestra que esta cuantización es una alternativa a otras versiones 4-bit del mismo modelo base, como la de unsloth, y que se sitúa en la misma categoría que Llama 3.1 70B en términos de tamaño y contexto. La principal diferencia es el método de cuantización: bitsandbytes en este caso, mientras que muchas versiones de Llama 3.1 se distribuyen en formato GGUF para su uso con llama.cpp y Ollama.
 
@@ -84,7 +84,7 @@ La comparativa muestra que esta cuantización es una alternativa a otras version
 
 ## Enlaces
 
-- Repositorio HuggingFace: [lierseleow/Qwen2.5-72B-Instruct-bnb-4bit](https://huggingface.co/lierseleow/Qwen2.5-72B-Instruct-bnb-4bit)
+- Repositorio Hugging Face: [lierseleow/Qwen2.5-72B-Instruct-bnb-4bit](https://huggingface.co/lierseleow/Qwen2.5-72B-Instruct-bnb-4bit)
 - Modelo base: [Qwen/Qwen2.5-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct)
 - Documentación oficial de Qwen2.5: [ModelScope](https://www.modelscope.cn/models/qwen/Qwen2.5-72B-Instruct)
 - Cuantización de referencia de unsloth: [unsloth/Qwen2.5-72B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-72B-Instruct-bnb-4bit)

@@ -99,8 +99,8 @@ El autor aclara que el candidato previo de 3.000 corresponde a un experimento in
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/raspie/gemma4-tipo-lora-image-30k
-- Modelo base en HuggingFace: https://huggingface.co/p-e-w/gemma-4-E2B-it-heretic-ara
+- Hugging Face del modelo: https://huggingface.co/raspie/gemma4-tipo-lora-image-30k
+- Modelo base en Hugging Face: https://huggingface.co/p-e-w/gemma-4-E2B-it-heretic-ara
 - Repositorio del node pack: https://github.com/raspie10032/RS-Seasonal-Prompt-Generator
 - README en coreano: https://github.com/raspie10032/RS-Seasonal-Prompt-Generator/blob/main/README_KOR.md
 - README en ingles: https://github.com/raspie10032/RS-Seasonal-Prompt-Generator/blob/main/README.md

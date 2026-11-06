@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `mohammedsajib/sentiment-analysis-model` es un repositorio alojado en HuggingFace por el usuario `mohammedsajib`. Por el nombre del repositorio se puede inferir que se trata de un modelo orientado a la clasificacion de sentimiento, pero esta deduccion no esta confirmada por ninguna documentacion: la model card publicada se limita a declarar la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se declara un pipeline en los metadatos del repositorio, un campo que normalmente indica la tarea prevista (por ejemplo `text-classification`).
+El modelo identificado como `mohammedsajib/sentiment-analysis-model` es un repositorio alojado en Hugging Face por el usuario `mohammedsajib`. Por el nombre del repositorio se puede inferir que se trata de un modelo orientado a la clasificacion de sentimiento, pero esta deduccion no esta confirmada por ninguna documentacion: la model card publicada se limita a declarar la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se declara un pipeline en los metadatos del repositorio, un campo que normalmente indica la tarea prevista (por ejemplo `text-classification`).
 
 El repositorio registra cero descargas y cero "likes", y fue creado y actualizado en la misma marca temporal (12 de septiembre de 2026), lo que sugiere una publicacion sin mantenimiento posterior. Los idiomas soportados aparecen como no disponibles en los metadatos, y no se ha publicado ningun paper, blog tecnico ni repositorio de codigo asociado.
 
-La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo. Todos los enlaces recuperados corresponden a hilos de foros sobre supuestas tiendas fraudulentas y no guardan ninguna relacion con el modelo ni con su autor. En consecuencia, esta ficha recoge unicamente los datos verificables de los metadatos de HuggingFace y marca explicitamente como "no disponible" cualquier dato que no haya podido confirmarse.
+La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo. Todos los enlaces recuperados corresponden a hilos de foros sobre supuestas tiendas fraudulentas y no guardan ninguna relacion con el modelo ni con su autor. En consecuencia, esta ficha recoge unicamente los datos verificables de los metadatos de Hugging Face y marca explicitamente como "no disponible" cualquier dato que no haya podido confirmarse.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ La busqueda web realizada no ha devuelto ningun resultado relacionado con este m
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tarea inferida por el nombre del repositorio | clasificacion de sentimiento (no confirmada por el autor) |
 | Autor | mohammedsajib |
 | Fecha de creacion | 2026-09-12 |
@@ -79,7 +79,7 @@ No disponible. No se ha podido identificar la categoria exacta del modelo (taman
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mohammedsajib/sentiment-analysis-model | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| mohammedsajib/sentiment-analysis-model | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. No se ha podido identificar la categoria exacta del modelo (taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohammedsajib/sentiment-analysis-model
+- Modelo en Hugging Face: https://huggingface.co/mohammedsajib/sentiment-analysis-model
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

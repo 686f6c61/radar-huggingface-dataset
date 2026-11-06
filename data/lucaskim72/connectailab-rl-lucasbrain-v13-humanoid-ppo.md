@@ -19,7 +19,7 @@ El interés del modelo es fundamentalmente didáctico y de reproducibilidad: doc
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | no aplica (modelo de control continuo, sin capacidades lingüísticas) |
 | Licencia | no disponible |
-| Formato de pesos | no disponible (repositorio PyTorch, tamaño 0.0 GB según HuggingFace) |
+| Formato de pesos | no disponible (repositorio PyTorch, tamaño 0.0 GB según Hugging Face) |
 
 Parámetros de entrenamiento y entorno relevantes:
 
@@ -104,7 +104,7 @@ No se dispone de comparaciones con implementaciones de terceros (por ejemplo, St
 
 - No es un modelo de lenguaje: no procesa texto, no responde preguntas ni genera código. Cualquier uso en esos ámbitos es inaplicable.
 - Licencia no especificada: no hay garantía de uso comercial; conviene contactar con el autor antes de cualquier despliegue en producto.
-- Repositorio de 0.0 GB según HuggingFace: es posible que los pesos no estén subidos o que el tamaño reportado no refleje los ficheros reales; verificar antes de intentar cargarlo.
+- Repositorio de 0.0 GB según Hugging Face: es posible que los pesos no estén subidos o que el tamaño reportado no refleje los ficheros reales; verificar antes de intentar cargarlo.
 - Rendimiento limitado: recompensa media de 1167,1 frente a los ~5000 puntos que se obtendrían solo por supervivencia durante 1000 pasos; el agente cae de media a los ~226 pasos.
 - Entrenado únicamente en `Humanoid-v5` con semillas de evaluación 9000–9009: riesgo de sobreajuste a esas condiciones y nula evidencia de transferencia a otros entornos o variaciones físicas.
 - Alta varianza entre episodios: el replay de una sola semilla alcanza 1411,8 puntos frente a la media de 1167,1, lo que indica dispersión considerable.
@@ -114,7 +114,7 @@ No se dispone de comparaciones con implementaciones de terceros (por ejemplo, St
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v13-humanoid-ppo
+- Modelo en Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v13-humanoid-ppo
 - Perfil del autor: https://huggingface.co/lucaskim72
 - Contacto del autor: lucaskim72@gmail.com
 - Entorno Humanoid-v5 (Gymnasium): https://gymnasium.farama.org/environments/mujoco/humanoid/

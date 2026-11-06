@@ -78,7 +78,7 @@ No se dispone de informacion sobre adaptadores LoRA comparables para Krea 2 ni s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/paobilo/mia-latina-v1
+- Modelo en Hugging Face: https://huggingface.co/paobilo/mia-latina-v1
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante de inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria: https://github.com/huggingface/diffusers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-TrenerAI-GGUF es una adaptacion del modelo meta-llama/Llama-3.1-8B-Instruct realizada por el usuario de HuggingFace tn122958ur mediante QLoRA (cuantizacion de 4 bits durante el entrenamiento). El modelo se ha creado para el sistema TrenerAI, un asistente conversacional de entrenamiento descrito en un trabajo de fin de master de la Universidad de Rzeszow (Polonia). Su ambito es deliberadamente estrecho: asumir dos funciones no decisionales dentro de una arquitectura mayor, la formulacion de respuestas del asistente en polaco y la conversion de la intencion del usuario en un comando estructurado en JSON.
+Llama-3.1-8B-TrenerAI-GGUF es una adaptacion del modelo meta-llama/Llama-3.1-8B-Instruct realizada por el usuario de Hugging Face tn122958ur mediante QLoRA (cuantizacion de 4 bits durante el entrenamiento). El modelo se ha creado para el sistema TrenerAI, un asistente conversacional de entrenamiento descrito en un trabajo de fin de master de la Universidad de Rzeszow (Polonia). Su ambito es deliberadamente estrecho: asumir dos funciones no decisionales dentro de una arquitectura mayor, la formulacion de respuestas del asistente en polaco y la conversion de la intencion del usuario en un comando estructurado en JSON.
 
 La decision de diseno mas relevante es que el modelo no genera planes de entrenamiento. La planificacion recae en un modulo determinista que combina un clasificador de nivel de experiencia, busqueda en una base cerrada de ejercicios y reglas de seguridad y periodizacion. El modelo actua, por tanto, como capa de lenguaje natural y de extraccion de intenciones, no como motor de decision. Esto reduce el riesgo de alucinacion en la parte critica del sistema.
 
@@ -101,7 +101,7 @@ La comparacion cuantitativa solo es posible frente al modelo base, y se limita a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tn122958ur/Llama-3.1-8B-TrenerAI-GGUF
+- Modelo en Hugging Face: https://huggingface.co/tn122958ur/Llama-3.1-8B-TrenerAI-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community License: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 - No se han encontrado enlaces relevantes al modelo (papers, blogs, repositorios o demos) en los resultados de la busqueda web; los resultados obtenidos corresponden a foros de consumo sin relacion con este artefacto.

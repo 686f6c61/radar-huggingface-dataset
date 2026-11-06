@@ -17,7 +17,7 @@ La relevancia del modelo es acotada y hay que ser prudente: el repositorio no re
 | Parámetros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No especificada en la ficha; los ejemplos de llama.cpp usan 4.096, 8.192 y 16.384 tokens |
 | Tipos de cuantización | Una única cuantización propietaria "zraldv1-ac" en GGUF (17,08 GiB / 18,34 GB); el autor remite a un repositorio maestro con tablas comparativas frente a Q8_0, Q6_K, Q5_K, Q4_K y Q2_K |
-| Idiomas soportados | No disponible (los metadatos de HuggingFace no listan idiomas) |
+| Idiomas soportados | No disponible (los metadatos de Hugging Face no listan idiomas) |
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (fichero `zraldv1-ac.gguf`); el modelo base se distribuye en safetensors |
 
@@ -78,7 +78,7 @@ La información disponible no permite una comparativa rigurosa: no hay datos pú
 
 | Modelo / variante | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zrald-AI Qwen 3.8 27B (zraldv1-ac) | 27,3 mil millones | No disponible | 99,68 % de retención de precisión; 69,4 tok/s de generación en MI300X (datos del autor) | apache-2.0 | Publicado en HuggingFace, 0 descargas |
+| Zrald-AI Qwen 3.8 27B (zraldv1-ac) | 27,3 mil millones | No disponible | 99,68 % de retención de precisión; 69,4 tok/s de generación en MI300X (datos del autor) | apache-2.0 | Publicado en Hugging Face, 0 descargas |
 | Qwen/Qwen3.8-27B (base) | 27,3 mil millones (según el repositorio derivado) | No disponible | No disponible | Apache 2.0 (según la model card derivada) | Referenciado como modelo base; sin documentación localizada en la búsqueda web |
 | Cuantizaciones Q8_0, Q6_K, Q5_K, Q4_K, Q2_K del mismo modelo | No disponible | No disponible | El autor afirma que zraldv1-ac iguala o supera a Q6_K y Q8_0 en precisión, con ~10 GB menos de VRAM | No disponible | Referenciadas en el repositorio maestro del autor |
 
@@ -98,7 +98,7 @@ La información disponible no permite una comparativa rigurosa: no hay datos pú
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-ac
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-ac
 - Repositorio maestro de cuantizaciones del autor: https://huggingface.co/Zrald/Zrald-AI-model-quant-qwen-3.8-27b
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B
 - llama.cpp (runtime documentado en la ficha): https://github.com/ggerganov/llama.cpp

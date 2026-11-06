@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya es un modelo de clasificación de texto no autorregresivo desarrollado por dev-amarnadh-gandham y publicado en HuggingFace como `dev-amarnadh-gandham/laya`. Su planteamiento es el de un "System 1 decision model": recibe un estado (texto, correo, ticket o JSON) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades calibradas en una única pasada forward, sin generar texto libre. El peso real del repositorio es de 421.293.830 parámetros (2,4 GB) y la arquitectura es de tipo transformer no autorregresivo orientado a clasificación y scoring.
+Laya es un modelo de clasificación de texto no autorregresivo desarrollado por dev-amarnadh-gandham y publicado en Hugging Face como `dev-amarnadh-gandham/laya`. Su planteamiento es el de un "System 1 decision model": recibe un estado (texto, correo, ticket o JSON) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades calibradas en una única pasada forward, sin generar texto libre. El peso real del repositorio es de 421.293.830 parámetros (2,4 GB) y la arquitectura es de tipo transformer no autorregresivo orientado a clasificación y scoring.
 
 El modelo está pensado para sustituir a los LLM en tareas de decisión estructurada como enrutado, moderación, guardrails o puntuación de riesgo, donde la latencia y el coste de generar tokens son un problema. Según su model card, resuelve una decisión en aproximadamente 33 ms por pasada y soporta más de 100 idiomas gracias al enrutado automático entre checkpoints (inglés y multilingüe). Al no generar texto, el autor argumenta que no hay nada que parsear ni margen para alucinación en la salida.
 
@@ -17,7 +17,7 @@ Su relevancia actual radica en el entrenamiento con aprendizaje por refuerzo con
 | Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | 1.024 tokens por defecto; hasta 8.192 tokens con `max_len=8192` en `laya-multilingual` |
 | Tipos de cuantización | No disponible |
-| Idiomas soportados | Más de 100 idiomas según la model card; campo de idiomas de la ficha de HuggingFace no disponible |
+| Idiomas soportados | Más de 100 idiomas según la model card; campo de idiomas de la ficha de Hugging Face no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (librería `transformers`) |
 | Pipeline | text-classification |
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en FP16 con contexto corto. Para lotes grandes o contexto de 8.192 tokens conviene disponer de 8 GB o más.
 - GPU de consumo: sí, cabe holgadamente en tarjetas de gama media y alta (RTX 3060, RTX 4070, RTX 4090, entre otras) e incluso en iGPU con memoria unificada; la model card cita mediciones sobre GPU de Apple.
 - Fine-tuning: la model card documenta un cuaderno que ejecuta el ciclo completo (construcción del dataset, entrenamiento, calibración de temperaturas y evaluación) sobre 2x T4 gratuitas de Kaggle, lo que indica que el ajuste cabe en GPUs de 16 GB por unidad.
-- Opciones de despliegue: runtime `laya` vía pip, servidor HTTP con `laya-serve` (`laya[serve]`), servidor MCP (`laya[mcp]`), integración con LangChain y LangGraph (`laya[langchain]`), ONNX Runtime (`laya[onnx]`) y ruta rápida GPU con TileLang (`laya[fast]`). Compatible con `transformers` y con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Opciones de despliegue: runtime `laya` vía pip, servidor HTTP con `laya-serve` (`laya[serve]`), servidor MCP (`laya[mcp]`), integración con LangChain y LangGraph (`laya[langchain]`), ONNX Runtime (`laya[onnx]`) y ruta rápida GPU con TileLang (`laya[fast]`). Compatible con `transformers` y con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Latencia y throughput: ~33 ms por decisión en pasada única; una entrada de 4.000 tokens tarda alrededor de 1,7 s en GPU de Apple. El resto de cifras de throughput no están disponibles.
 
 ## Comparativa con modelos similares
@@ -110,7 +110,7 @@ La ventaja diferencial de Laya que se deduce de la model card es la combinación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dev-amarnadh-gandham/laya
+- Modelo en Hugging Face: https://huggingface.co/dev-amarnadh-gandham/laya
 - Repositorio GitHub: https://github.com/NandhaKishorM/laya
 - Documentación: https://nandhakishorm.github.io/laya/
 - Referencia de API: https://nandhakishorm.github.io/laya/reference/

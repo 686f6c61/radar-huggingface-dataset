@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 - Inferencia del modelo: no aplica, el repositorio no contiene pesos ni código de inferencia.
 - Inspección del paquete: cualquier equipo con CPU moderna y espacio en disco suficiente; el tamaño declarado es de 0,0 GB, aunque no puede confirmarse que el contenido real sea ese.
-- Herramientas mínimas: cliente de HuggingFace Hub (`huggingface_hub`, `git-lfs` si hubiera binarios), `sha256sum` para la verificación de integridad y un intérprete de Python para los scripts incluidos.
+- Herramientas mínimas: cliente de Hugging Face Hub (`huggingface_hub`, `git-lfs` si hubiera binarios), `sha256sum` para la verificación de integridad y un intérprete de Python para los scripts incluidos.
 - GPU recomendadas: no aplica para este paquete. Para reproducir la evaluación original de π0.5 haría falta hardware de inferencia robótica, cuyas especificaciones no están disponibles.
 - Compatibilidad con GPU de consumo: no aplica.
 - Opciones de despliegue: no aplica (vLLM, llama.cpp, Ollama o TGI no son pertinentes aquí); el consumo se hace mediante clonado o descarga del snapshot.
@@ -82,7 +82,7 @@ No procede comparar con modelos: este repositorio no es un modelo. Se compara co
 
 | Artefacto | Tipo | Contenido principal | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `davidwdw/fa-review-pi05-task00-...` | Archivo de diagnóstico versionado | Informe de fallos, scripts, fixtures, predicciones, figuras | no disponible | HuggingFace, 0 descargas |
+| `davidwdw/fa-review-pi05-task00-...` | Archivo de diagnóstico versionado | Informe de fallos, scripts, fixtures, predicciones, figuras | no disponible | Hugging Face, 0 descargas |
 | `Physical-Intelligence/openpi` | Repositorio de modelos y paquetes | π0 (flow-based VLA), π0-FAST (autorregresivo, tokenizador FAST), π0.5 (mejor generalización open-world) | no disponible en la información proporcionada | GitHub público |
 | arXiv:2504.16054 (π0.5) | Artículo científico | Descripción de π0.5 y co-entrenamiento sobre tareas heterogéneas | no aplica | arXiv |
 | Gist "pi05 Robo-Sync" | Nota técnica no oficial | Análisis de 293 episodios y tres modos de fallo en la habilidad de pulsar un timbre | no disponible | GitHub Gist |
@@ -91,7 +91,7 @@ Comparación de parámetros, contexto y rendimiento entre estos artefactos: no d
 
 ## Limitaciones y advertencias
 
-- No es un modelo: cualquier intento de cargarlo como pesos, tokenizador o pipeline de HuggingFace fallará.
+- No es un modelo: cualquier intento de cargarlo como pesos, tokenizador o pipeline de Hugging Face fallará.
 - Es una instantánea, no un espejo vivo del directorio original; el autor advierte explícitamente de ello en la model card.
 - La licencia no está especificada, por lo que no puede asumirse permiso de uso comercial ni de redistribución.
 - No hay métricas, resultados ni descripción del conjunto `public_test_eai` en la información proporcionada; cualquier conclusión sobre el rendimiento de π0.5 a partir de este paquete sería especulativa.
@@ -105,7 +105,7 @@ Comparación de parámetros, contexto y rendimiento entre estos artefactos: no d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-review-pi05-task00-failure-a8833c7d4971-847da27c9c41
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-review-pi05-task00-failure-a8833c7d4971-847da27c9c41
 - Artículo de π0.5: https://arxiv.org/abs/2504.16054
 - Repositorio openpi de Physical Intelligence: https://github.com/Physical-Intelligence/openpi
 - Gist sobre análisis de fallos de pi05 Robo-Sync (293 episodios, tres modos de fallo): https://gist.github.com/khizirsiddiqui/070392d41b5cfa0a32a834523a8eb7c2

@@ -77,7 +77,7 @@ El propio autor senala que la cuantizacion no afecta a la capacidad de seguir el
 | Este modelo (sknyazev/qwen3-tts-12hz-1.7b-ru-stress-gguf) | 1,7 B (+ LoRA 17,4 M) | no disponible | Si (U+0301) | ru | apache-2.0 | GGUF y ONNX |
 | Qwen/Qwen3-TTS-12Hz-1.7B-Base | 1,7 B | no disponible | No (corrompe la marca) | no disponible | no disponible en la informacion | safetensors |
 | Silero TTS | no disponible | no disponible | No aplica (referencia del medidor de acento) | ru | no disponible en la informacion | no disponible |
-| ESpeech-TTS-1 RL-V2 | no disponible | no disponible | No aplica (usado para generar datos de entrenamiento) | no disponible | apache-2.0 | HuggingFace |
+| ESpeech-TTS-1 RL-V2 | no disponible | no disponible | No aplica (usado para generar datos de entrenamiento) | no disponible | apache-2.0 | Hugging Face |
 
 La comparacion directa mas relevante es con el modelo base: comparten arquitectura, tamano y formato, y la unica diferencia funcional es la interpretacion de la marca de acento, que pasa de un 26 % a un 43 % de acierto en silabas no normativas sin degradar de forma significativa el CER ni la similitud de voz.
 
@@ -95,7 +95,7 @@ La comparacion directa mas relevante es con el modelo base: comparten arquitectu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sknyazev/qwen3-tts-12hz-1.7b-ru-stress-gguf
+- Modelo en Hugging Face: https://huggingface.co/sknyazev/qwen3-tts-12hz-1.7b-ru-stress-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Variante base del mismo autor en GGUF: https://huggingface.co/sknyazev/qwen3-tts-12hz-1.7b-base-gguf
 - Proyecto voicy: https://github.com/olluorg/voicy
@@ -105,5 +105,5 @@ La comparacion directa mas relevante es con el modelo base: comparten arquitectu
 - Demostracion con homografos y pares antes / despues: https://olluorg.github.io/voicy/stress/
 - RUAccent (herramienta de marcado de acento): https://github.com/Den4ikAI/ruaccent
 - Dataset Russian LibriSpeech (OpenSLR 96): https://www.openslr.org/96/
-- Copia del dataset en HuggingFace: https://huggingface.co/datasets/istupakov/russian_librispeech
+- Copia del dataset en Hugging Face: https://huggingface.co/datasets/istupakov/russian_librispeech
 - Modelo usado para generar datos de entrenamiento: https://huggingface.co/ESpeech/ESpeech-TTS-1_RL-V2

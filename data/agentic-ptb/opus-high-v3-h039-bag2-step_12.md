@@ -71,6 +71,6 @@ No se han encontrado modelos comparables de la misma categoría (checkpoints int
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h039.bag2.step_12)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h039.bag2.step_12)
 - [Dataset asociado al run](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice del proyecto AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)

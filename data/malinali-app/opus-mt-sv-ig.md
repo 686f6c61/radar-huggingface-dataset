@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| malinali-app/opus-mt-sv-ig | 75.089.327 | no disponible | no disponible (remite al upstream) | HuggingFace, empaquetado para Candle |
-| Helsinki-NLP/opus-mt-sv-ig (upstream) | no disponible en esta ficha | no disponible | habitualmente CC-BY 4.0 | HuggingFace |
-| Otros pares de OPUS-MT (familia MarianMT) | tipicamente en el rango de decenas de millones | no disponible | habitualmente CC-BY 4.0 | HuggingFace |
-| NLLB-200 (Meta, modelo multilingue) | 600M en la variante distilled | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| malinali-app/opus-mt-sv-ig | 75.089.327 | no disponible | no disponible (remite al upstream) | Hugging Face, empaquetado para Candle |
+| Helsinki-NLP/opus-mt-sv-ig (upstream) | no disponible en esta ficha | no disponible | habitualmente CC-BY 4.0 | Hugging Face |
+| Otros pares de OPUS-MT (familia MarianMT) | tipicamente en el rango de decenas de millones | no disponible | habitualmente CC-BY 4.0 | Hugging Face |
+| NLLB-200 (Meta, modelo multilingue) | 600M en la variante distilled | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 La comparacion directa con NLLB-200 u otros modelos multilingues no puede establecerse con datos numericos porque no se han proporcionado resultados de benchmarks. La diferencia principal frente al modelo upstream es el empaquetado: esta version anade tokenizadores rapidos en JSON y esta preparada para inferencia on-device con Candle, mientras que el upstream se distribuye en el formato estandar de OPUS-MT.
 
@@ -82,7 +82,7 @@ La comparacion directa con NLLB-200 u otros modelos multilingues no puede establ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-sv-ig
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-sv-ig
 - Modelo base upstream: https://huggingface.co/Helsinki-NLP/opus-mt-sv-ig
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

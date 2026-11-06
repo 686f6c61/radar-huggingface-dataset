@@ -97,7 +97,7 @@ Frente a su modelo base, Hey-270M-Alpha añade cobertura de birmano y code-switc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thantzinphyo/Hey-270M-Alpha
+- Modelo en Hugging Face: https://huggingface.co/thantzinphyo/Hey-270M-Alpha
 - Dataset de entrenamiento: https://huggingface.co/datasets/thantzinphyo/Hey-Function-Burmese
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - Repositorio de código: https://github.com/thantzinphyo-gg/Gemma-Actions-MM

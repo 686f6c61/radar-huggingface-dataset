@@ -89,7 +89,7 @@ La comparativa directa con WhiteRabbitNeo es relevante porque ambos parten de Qw
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nyxspecter4/kin-sft-lora
+- Modelo en Hugging Face: https://huggingface.co/nyxspecter4/kin-sft-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/nyxspecter4/kin-cyber-dpo-v2
 - Space interactivo: https://huggingface.co/spaces/nyxspecter4/kin-cybersec
 - Perfil del autor: https://huggingface.co/nyxspecter4

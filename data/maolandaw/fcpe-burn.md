@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Formato y runtime | Tipo de tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FCPE-burn (este repositorio) | Burn Pack (`.bpk`), Rust/Burn | Estimacion de F0 en voz cantada | MIT | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| FCPE-burn (este repositorio) | Burn Pack (`.bpk`), Rust/Burn | Estimacion de F0 en voz cantada | MIT | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | FCPE original (CNChTu/FCPE, `torchfcpe`) | PyTorch (`.pt`) y ONNX | Estimacion de F0 en voz cantada | MIT | GitHub y paquete Python `torchfcpe` |
-| niobures/FCPE | ONNX (`onnx/fcpe.onnx`) | Espejo del grafo FCPE | No disponible en la informacion proporcionada | HuggingFace |
+| niobures/FCPE | ONNX (`onnx/fcpe.onnx`) | Espejo del grafo FCPE | No disponible en la informacion proporcionada | Hugging Face |
 | RMVPE | Pesos PyTorch dentro de pipelines de SVC | Estimacion de F0 en voz cantada | No disponible en la informacion proporcionada | Ampliamente integrado en ecosistemas de conversion de voz |
 | CREPE | TensorFlow/PyTorch | Estimacion de F0 monofonica (voz e instrumentos) | No disponible en la informacion proporcionada | Repositorio academico ampliamente utilizado |
 
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maolandaw/FCPE-burn
-- Modelo base en HuggingFace: https://huggingface.co/niobures/FCPE
+- Repositorio en Hugging Face: https://huggingface.co/maolandaw/FCPE-burn
+- Modelo base en Hugging Face: https://huggingface.co/niobures/FCPE
 - Checkpoint ONNX de origen: https://huggingface.co/niobures/FCPE/resolve/main/onnx/fcpe.onnx
 - Proyecto upstream FCPE (CNChTu/FCPE): https://github.com/CNChTu/FCPE
 - Framework Burn: https://github.com/tracel-ai/burn

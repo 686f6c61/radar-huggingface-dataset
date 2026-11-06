@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`josephcarter02/work-matching` es un repositorio de HuggingFace que contiene una implementación funcional de una arquitectura denominada **Mae** orientada a tareas de **matching** (emparejamiento), publicada bajo licencia Apache 2.0 por el usuario josephcarter02. No se trata de un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que **no** se presenta como un checkpoint evaluado ni se reclama ninguna puntuación de benchmark.
+`josephcarter02/work-matching` es un repositorio de Hugging Face que contiene una implementación funcional de una arquitectura denominada **Mae** orientada a tareas de **matching** (emparejamiento), publicada bajo licencia Apache 2.0 por el usuario josephcarter02. No se trata de un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que **no** se presenta como un checkpoint evaluado ni se reclama ninguna puntuación de benchmark.
 
 El repositorio incluye el código del modelo y un punto de entrada ejecutable (`main.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el checkpoint de inicialización. La configuración declarada corresponde a una escala *xlarge* con atención de tipo *flash*, fusión mediante *concat mlp*, activación *gelu tanh* y normalización *groupnorm*. La receta por defecto usa el optimizador **lamb** con un *schedule* polinómico, valores que el autor describe como puntos de partida y no como evidencia de un entrenamiento completado.
 
@@ -21,7 +21,7 @@ Su relevancia actual es acotada y muy específica: sirve como punto de partida r
 | Formato de pesos | safetensors (`model.safetensors`) |
 | Escala declarada | xlarge (según la tabla de arquitectura de la model card) |
 | Optimizador y schedule por defecto | lamb con schedule polinómico |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 14 descargas / 0 likes |
 | Fecha de creación y actualización | 14 de septiembre de 2026 (según metadatos) |
 
@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| josephcarter02/work-matching | 33.088 | no disponible | no disponible (checkpoint sin entrenar) | apache-2.0 | HuggingFace, 14 descargas |
+| josephcarter02/work-matching | 33.088 | no disponible | no disponible (checkpoint sin entrenar) | apache-2.0 | Hugging Face, 14 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,13 +84,13 @@ No disponible. La información proporcionada no incluye modelos comparables ni l
 - **Sesgos**: no disponibles. Al no haber datos de entrenamiento documentados, no puede evaluarse el sesgo.
 - **Idiomas y contexto**: no disponibles. No se declara ventana de contexto ni cobertura lingüística, lo que impide planificar despliegues multilingües o de contexto largo.
 - **Ambigüedad en el recuento de parámetros**: el dato de metadatos aparece como 33.088; conviene verificarlo directamente en `model.safetensors` antes de citarlo.
-- **Carga no estándar**: al ser una implementación propia, las API automáticas de HuggingFace no funcionarán sin un adaptador explícito.
+- **Carga no estándar**: al ser una implementación propia, las API automáticas de Hugging Face no funcionarán sin un adaptador explícito.
 - **Restricciones de licencia**: el código y los pesos se publican bajo apache-2.0, que permite uso comercial, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con *datasets* externos.
 - **Advertencia para producción**: no debe desplegarse en producción. Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto aquí publicados.
 - **Trazabilidad de búsqueda**: los resultados de búsqueda web asociados a esta consulta no contienen ninguna referencia al modelo; corresponden al foro Lowyat.NET y no son material técnico relevante.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/josephcarter02/work-matching
+- Modelo en Hugging Face: https://huggingface.co/josephcarter02/work-matching
 - Árbol de ficheros del repositorio (`main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`): https://huggingface.co/josephcarter02/work-matching/tree/main
 - Resultados de búsqueda web: sin enlaces relevantes. Las entradas devueltas apuntan al foro Lowyat.NET (https://forum.lowyat.net/) y a hilos sobre WhatsApp Web, sin relación con el modelo. No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhacoSight es un sistema de análisis de vídeo de cirugía de cataratas desarrollado por jdlaurencechasen, orientado a la formación de médicos residentes mediante revisión postoperatoria de intervenciones grabadas. Este repositorio en HuggingFace contiene los checkpoints de despliegue del sistema, que combina dos modelos SegFormer-B2 para segmentación semántica (anatomía e instrumentos quirúrgicos) y un ensemble de doce modelos MS-TCN++ para reconocimiento de fases quirúrgicas. El pipeline consume vídeo de microscopio a 1024x768 píxeles y características extraídas con DINOv2 con registros, procesando a 1 fps. Su relevancia reside en ser una solución de código abierto con licencia Apache-2.0 para un dominio médico muy específico, con datos de entrenamiento provenientes del conjunto Cataract-1K, y en su diseño explícito para uso educativo, no clínico.
+PhacoSight es un sistema de análisis de vídeo de cirugía de cataratas desarrollado por jdlaurencechasen, orientado a la formación de médicos residentes mediante revisión postoperatoria de intervenciones grabadas. Este repositorio en Hugging Face contiene los checkpoints de despliegue del sistema, que combina dos modelos SegFormer-B2 para segmentación semántica (anatomía e instrumentos quirúrgicos) y un ensemble de doce modelos MS-TCN++ para reconocimiento de fases quirúrgicas. El pipeline consume vídeo de microscopio a 1024x768 píxeles y características extraídas con DINOv2 con registros, procesando a 1 fps. Su relevancia reside en ser una solución de código abierto con licencia Apache-2.0 para un dominio médico muy específico, con datos de entrenamiento provenientes del conjunto Cataract-1K, y en su diseño explícito para uso educativo, no clínico.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparables en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jdlaurencechasen/phacosight
+- Repositorio Hugging Face: https://huggingface.co/jdlaurencechasen/phacosight
 - Repositorio GitHub del proyecto: https://github.com/jdlaurence/phacosight
 - Documento del dataset Cataract-1K: https://arxiv.org/pdf/2312.06295.pdf
 - Aplicación web (dentro del repo): https://github.com/jdlaurence/phacosight/tree/main/app

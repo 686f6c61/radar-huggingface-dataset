@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sai-Anwesh-2930/multiclass-disease-detection-model` es un modelo publicado en HuggingFace por el usuario Sai-Anwesh-2930. El nombre del repositorio indica que se trata de un clasificador multiclase orientado a la deteccion de enfermedades, pero la model card pública no contiene más información que la declaración de licencia MIT: no se documentan la arquitectura, el dominio concreto (imagen médica, texto clínico u otro), los datos de entrenamiento ni los resultados obtenidos. El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni interacciones en el momento de la consulta.
+`Sai-Anwesh-2930/multiclass-disease-detection-model` es un modelo publicado en Hugging Face por el usuario Sai-Anwesh-2930. El nombre del repositorio indica que se trata de un clasificador multiclase orientado a la deteccion de enfermedades, pero la model card pública no contiene más información que la declaración de licencia MIT: no se documentan la arquitectura, el dominio concreto (imagen médica, texto clínico u otro), los datos de entrenamiento ni los resultados obtenidos. El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 La relevancia actual de esta ficha es limitada y fundamentalmente precautoria. En un ecosistema donde proliferan clasificadores médicos sin validación publicada, este modelo carece de cualquier evidencia verificable de funcionamiento, lo que impide recomendarlo para uso clínico, de investigación o de producción sin una evaluación independiente previa. Se desconoce incluso la tarea exacta: "multiclass disease detection" puede referirse a clasificación de imágenes diagnósticas, a clasificación de texto clínico o a otro tipo de señal.
 
@@ -20,7 +20,7 @@ No se ha podido localizar documentación adicional, paper asociado, repositorio 
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible (tamano del repositorio: 0,1 GB) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Fecha de creacion | 2026-09-19 |
 | Ultima actualizacion | 2026-09-19 |
@@ -83,7 +83,7 @@ No disponible. Al desconocerse la tarea exacta, el dominio de datos y la arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sai-Anwesh-2930/multiclass-disease-detection-model
+- Modelo en Hugging Face: https://huggingface.co/Sai-Anwesh-2930/multiclass-disease-detection-model
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

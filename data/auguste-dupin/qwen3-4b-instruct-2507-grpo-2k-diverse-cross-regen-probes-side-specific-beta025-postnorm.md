@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Auguste-Dupin/Qwen3-4B-Instruct-2507-GRPO-2k-diverse-cross-regen-probes-side-specific-beta025-postnorm` es un checkpoint alojado en HuggingFace por el usuario Auguste-Dupin. Según el nombre, parece tratarse de un fine-tuning del modelo Qwen3-4B-Instruct (versión 2507) utilizando GRPO (Group Relative Policy Optimization), con una ventana de contexto de 2k tokens y técnicas adicionales como "cross-regen probes" y "postnorm". Sin embargo, la model card publicada es una plantilla genérica generada automáticamente y no contiene ninguna información verificable sobre el modelo, su entrenamiento, capacidades o licencia. El repositorio tiene un tamaño de 0.3 GB y utiliza la librería `transformers`, con etiquetas que indican el uso de `unsloth` y `safetensors`. No hay descargas ni likes registrados, lo que sugiere que es un experimento reciente o de baja difusión.
+El modelo `Auguste-Dupin/Qwen3-4B-Instruct-2507-GRPO-2k-diverse-cross-regen-probes-side-specific-beta025-postnorm` es un checkpoint alojado en Hugging Face por el usuario Auguste-Dupin. Según el nombre, parece tratarse de un fine-tuning del modelo Qwen3-4B-Instruct (versión 2507) utilizando GRPO (Group Relative Policy Optimization), con una ventana de contexto de 2k tokens y técnicas adicionales como "cross-regen probes" y "postnorm". Sin embargo, la model card publicada es una plantilla genérica generada automáticamente y no contiene ninguna información verificable sobre el modelo, su entrenamiento, capacidades o licencia. El repositorio tiene un tamaño de 0.3 GB y utiliza la librería `transformers`, con etiquetas que indican el uso de `unsloth` y `safetensors`. No hay descargas ni likes registrados, lo que sugiere que es un experimento reciente o de baja difusión.
 
 Dado que la información pública es prácticamente nula, esta ficha se limita a documentar los datos disponibles y marca explícitamente todo lo demás como no disponible. Se recomienda encarecidamente contactar con el autor o consultar el repositorio original antes de considerar su uso en cualquier proyecto.
 
@@ -53,6 +53,6 @@ No se dispone de información para establecer comparativas. No hay datos de rend
 
 ## Enlaces
 
-- [HuggingFace: Auguste-Dupin/Qwen3-4B-Instruct-2507-GRPO-2k-diverse-cross-regen-probes-side-specific-beta025-postnorm](https://huggingface.co/Auguste-Dupin/Qwen3-4B-Instruct-2507-GRPO-2k-diverse-cross-regen-probes-side-specific-beta025-postnorm)
+- [Hugging Face: Auguste-Dupin/Qwen3-4B-Instruct-2507-GRPO-2k-diverse-cross-regen-probes-side-specific-beta025-postnorm](https://huggingface.co/Auguste-Dupin/Qwen3-4B-Instruct-2507-GRPO-2k-diverse-cross-regen-probes-side-specific-beta025-postnorm)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

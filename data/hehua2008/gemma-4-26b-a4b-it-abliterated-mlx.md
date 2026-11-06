@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-26B-A4B-it-abliterated-MLX | 25,8B | 4B | no disponible | Apache 2.0 | HuggingFace |
-| Gemma 3 27B (denso) | 27B | 27B | 128k (típico) | Gemma license | HuggingFace |
-| Mixtral 8x7B | 46,7B | 12,9B | 32k | Apache 2.0 | HuggingFace |
+| gemma-4-26B-A4B-it-abliterated-MLX | 25,8B | 4B | no disponible | Apache 2.0 | Hugging Face |
+| Gemma 3 27B (denso) | 27B | 27B | 128k (típico) | Gemma license | Hugging Face |
+| Mixtral 8x7B | 46,7B | 12,9B | 32k | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en especificaciones generales conocidas de los modelos alternativos, pero no hay datos de rendimiento directos para el modelo evaluado. Gemma 3 27B es un modelo denso con mayor coste de inferencia, mientras que Mixtral 8x7B tiene más parámetros activos y un contexto menor. Este modelo destaca por su naturaleza abliterated y su soporte MLX.
 
@@ -78,7 +78,7 @@ La comparativa se basa en especificaciones generales conocidas de los modelos al
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hehua2008/gemma-4-26B-A4B-it-abliterated-MLX)
+- [Modelo en Hugging Face](https://huggingface.co/hehua2008/gemma-4-26B-A4B-it-abliterated-MLX)
 - [Modelo base (huihui-ai)](https://huggingface.co/huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated)
 - [Licencia de Gemma 4](https://ai.google.dev/gemma/docs/gemma_4_license)
 - [Documentación de MLX-VLM](https://github.com/ml-explore/mlx-vlm)

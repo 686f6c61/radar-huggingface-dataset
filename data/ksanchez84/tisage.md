@@ -65,14 +65,14 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Los resultados pueden no transferirse a otras poblaciones de pacientes, instituciones, cámaras, etiologías de heridas o condiciones de adquisición.
 - El conjunto de validación de LUTSeg es disjunto por paciente, pero no existe un split de test público separado, lo que limita la comparación externa.
 - Los checkpoints contienen parámetros derivados de DINOv2, por lo que la licencia Apache 2.0 se aplica a la redistribución, pero el código TiSage es MIT y los datasets tienen sus propios términos.
-- MedSigLIP no está incluido en los checkpoints; se debe descargar por separado desde HuggingFace (google/medsiglip-448) y está sujeto a su propia licencia de acceso restringido.
+- MedSigLIP no está incluido en los checkpoints; se debe descargar por separado desde Hugging Face (google/medsiglip-448) y está sujeto a su propia licencia de acceso restringido.
 - Los valores de la Tabla 1 del artículo pueden no coincidir exactamente con un checkpoint individual, ya que se seleccionaron los mejores EMA a lo largo del entrenamiento.
 - No se proporcionan métricas de rendimiento detalladas (IoU/Dice) en la model card, por lo que se debe acudir al artículo o al repositorio para conocer el rendimiento real.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ksanchez84/TiSage
+- Repositorio de Hugging Face: https://huggingface.co/ksanchez84/TiSage
 - Código TiSage (GitHub): https://github.com/carlosh93/TiSage
-- Dataset LUTSeg (HuggingFace): https://huggingface.co/datasets/ksanchez84/LUTSeg
+- Dataset LUTSeg (Hugging Face): https://huggingface.co/datasets/ksanchez84/LUTSeg
 - Modelo MedSigLIP (gated): https://huggingface.co/google/medsiglip-448
 - Perfil del autor en GitHub: https://github.com/ksanchez84

@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen3.8-flash-coder-85gb-bf16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen3.8-flash-coder-85gb-bf16-GGUF
 - Modelo base: https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16
 - Guía de uso de GGUF de TheBloke: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

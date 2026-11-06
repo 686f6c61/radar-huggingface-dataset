@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p2.gt` es un artefacto publicado por IBM Research en HuggingFace que, por su nomenclatura, parece contener un modelo para la prediccion de angulos (parametros variacionales) del algoritmo QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con p=2 capas. El repositorio se distribuye como pesos en formato ONNX bajo licencia Apache 2.0 y no incluye model card descriptiva: el README unicamente reproduce la cabecera de licencia, sin texto explicativo.
+`ibm-research/qaoa_angles.max_cut.p2.gt` es un artefacto publicado por IBM Research en Hugging Face que, por su nomenclatura, parece contener un modelo para la prediccion de angulos (parametros variacionales) del algoritmo QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con p=2 capas. El repositorio se distribuye como pesos en formato ONNX bajo licencia Apache 2.0 y no incluye model card descriptiva: el README unicamente reproduce la cabecera de licencia, sin texto explicativo.
 
 El modelo no esta orientado a tareas de lenguaje natural, vision ni generacion de texto. Se trata de un componente de optimizacion cuantica hibrida: los angulos predichos alimentarian un circuito QAOA ejecutado en simulador o en hardware cuantico, evitando la busqueda clasica de parametros mediante optimizacion en bucle. Es relevante en el contexto de la investigacion en computacion cuantica aplicada a problemas combinatorios, donde la estimacion de parametros de QAOA es uno de los cuellos de botella practicos por su coste de evaluacion.
 
@@ -66,7 +66,7 @@ No se han identificado en la informacion proporcionada modelos comparables de pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ibm-research/qaoa_angles.max_cut.p2.gt | no disponible | no aplica | no disponible | apache-2.0 | HuggingFace |
+| ibm-research/qaoa_angles.max_cut.p2.gt | no disponible | no aplica | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se han identificado en la informacion proporcionada modelos comparables de pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.gt
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.gt
 - IBM (sitio corporativo): https://www.ibm.com/
 - IBM (sitio corporativo en frances): https://www.ibm.com/fr-fr
 - IBM en Wikipedia (ingles): https://en.wikipedia.org/wiki/IBM

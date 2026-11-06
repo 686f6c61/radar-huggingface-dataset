@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-27B es una cuantizacion ternaria de 2 bits del modelo Bonsai 2 27B de Prism ML, publicado en HuggingFace por el usuario bielquants. El modelo subyacente deriva de Qwen3.8-27B y conserva su arquitectura de atencion hibrida (~75% atencion lineal, ~25% atencion completa) con 262K tokens de contexto, pero sustituye los pesos de lenguaje por valores ternarios {-1, 0, +1} con escalado FP16 por grupo de 128 pesos (formato "ternary g128"). El resultado es un modelo de 27,36B parametros que ocupa 5,95 GB en disco (empaquetado PTQ1_0) o 7,21 GB (PQ2_0), frente a los ~54 GB de una build FP16.
+Ternary-Bonsai-2-27B es una cuantizacion ternaria de 2 bits del modelo Bonsai 2 27B de Prism ML, publicado en Hugging Face por el usuario bielquants. El modelo subyacente deriva de Qwen3.8-27B y conserva su arquitectura de atencion hibrida (~75% atencion lineal, ~25% atencion completa) con 262K tokens de contexto, pero sustituye los pesos de lenguaje por valores ternarios {-1, 0, +1} con escalado FP16 por grupo de 128 pesos (formato "ternary g128"). El resultado es un modelo de 27,36B parametros que ocupa 5,95 GB en disco (empaquetado PTQ1_0) o 7,21 GB (PQ2_0), frente a los ~54 GB de una build FP16.
 
 La propuesta de valor es mantener comportamiento de razonamiento, matematicas, codigo y uso de herramientas en el regimen sub-4-bit, donde las representaciones convencionales se degradan. El autor reporta una media de 84,78 puntos en 14 benchmarks en modo thinking, un 98,2% de la inteligencia de la build FP16, con matematicas a 96,57 y codigo a 89,42, a menos de 0,4 puntos de una build UD-Q4_K_XL que ocupa el triple. La cobertura ternaria alcanza embeddings, proyecciones de atencion, proyecciones MLP y LM head, sin tensores en precision alta "escondidos" dentro del etiquetado de 2 bits; la torre de vision se distribuye aparte como paquete mmproj Q8_0.
 
@@ -109,8 +109,8 @@ Los datos disponibles solo permiten comparar con las builds de referencia citada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bielquants/Ternary-Bonsai-2-27B-gguf
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo en Hugging Face: https://huggingface.co/bielquants/Ternary-Bonsai-2-27B-gguf
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Web de Prism ML: https://prismml.com
 - Whitepaper de Bonsai 2 27B: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf
 - Demo y ejemplos: https://github.com/PrismML-Eng/Bonsai-demo

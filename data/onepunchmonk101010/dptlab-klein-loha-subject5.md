@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Parametros entrenables | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dptlab-klein-loha-subject5 | Adaptador LoHa sobre FLUX.2-klein-4B | 13,8 M | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| black-forest-labs/FLUX.2-klein-4B | Modelo base de difusión texto-a-imagen | no disponible | no disponible | no disponible en esta información | HuggingFace |
+| dptlab-klein-loha-subject5 | Adaptador LoHa sobre FLUX.2-klein-4B | 13,8 M | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| black-forest-labs/FLUX.2-klein-4B | Modelo base de difusión texto-a-imagen | no disponible | no disponible | no disponible en esta información | Hugging Face |
 | Otros adaptadores LoRA/LoHa de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de adaptadores alternativos comparables, ni de sus recuentos de parámetros o licencias, por lo que no es posible establecer una comparación cuantitativa. La única comparación documentada es interna: el repositorio dptlab incluye resultados de seis métodos distintos sobre el mismo conjunto de evaluación.
@@ -98,8 +98,8 @@ No se dispone de datos de benchmarks de adaptadores alternativos comparables, ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OnePunchMonk101010/dptlab-klein-loha-subject5
+- Modelo en Hugging Face: https://huggingface.co/OnePunchMonk101010/dptlab-klein-loha-subject5
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Repositorio de dptlab (herramienta de posentrenamiento): https://github.com/OnePunchMonk/diffusion-post-training-lab
-- Resultados completos de los seis métodos evaluados: archivo `RESULTS.md` dentro del repositorio de HuggingFace (referenciado en la model card)
+- Resultados completos de los seis métodos evaluados: archivo `RESULTS.md` dentro del repositorio de Hugging Face (referenciado en la model card)
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo, su autor o su metodología.

@@ -75,7 +75,7 @@ La model card y la *project page* únicamente declaran prestaciones cualitativas
 
 | Modelo | Parametros | Contexto / duracion | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EdenLive (VAST) | 14B y 5B | Chunks few-step de 4 pasos; escala de minutos declarada | Difusión vídeo-a-vídeo con control DINOv3 sobre proxy y primer fotograma | `edenlive-mixed` (por componente) | Pesos en HuggingFace + código en GitHub |
+| EdenLive (VAST) | 14B y 5B | Chunks few-step de 4 pasos; escala de minutos declarada | Difusión vídeo-a-vídeo con control DINOv3 sobre proxy y primer fotograma | `edenlive-mixed` (por componente) | Pesos en Hugging Face + código en GitHub |
 | Wan2.1-I2V-14B (Alibaba) | 14B | no disponible en la informacion | Difusión image-to-video; base sobre la que se construye `dit-14b` | Apache 2.0 | Pesos públicos |
 | Wan2.2-TI2V-5B (Alibaba) | 5B | no disponible en la informacion | Difusión texto+imagen a vídeo; base sobre la que se construye `dit-5b` | Apache 2.0 | Pesos públicos |
 | FLUX.2 [klein] (Black Forest Labs) | no disponible | no disponible | Difusión de imagen, usada solo para el primer fotograma del workbench | no disponible en la informacion | Pesos públicos |
@@ -96,11 +96,11 @@ Frente a los modelos base de Wan, la diferencia no está en el tamaño sino en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VAST-AI/EdenLive
+- Modelo en Hugging Face: https://huggingface.co/VAST-AI/EdenLive
 - Project page: https://vast-eden.ai/?p=edenlive
 - Repositorio de código (inferencia y servicio en tiempo real): https://github.com/VAST-AI-Research/EdenLive
 - Configuración de despliegue en tiempo real: https://github.com/VAST-AI-Research/EdenLive/blob/main/realtime/deploy.conf
-- Organización VAST en HuggingFace: https://huggingface.co/VAST-AI
+- Organización VAST en Hugging Face: https://huggingface.co/VAST-AI
 - VAST / Tripo: https://www.tripo3d.ai/
 - Project Eden: https://vast-eden.ai/
 - Wan2.1 / Wan2.2 (modelos base): https://github.com/Wan-Video
@@ -111,4 +111,4 @@ Frente a los modelos base de Wan, la diferencia no está en el tamaño sino en l
 - CLIP ViT-H/14 de LAION: https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K
 - OpenCLIP: https://github.com/mlfoundations/open_clip
 
-Nota: la búsqueda web realizada no devolvió resultados pertinentes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados pertinentes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

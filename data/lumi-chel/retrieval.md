@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lumi-chel/retrieval` es un repositorio experimental publicado en HuggingFace por el usuario lumi-chel que contiene una implementación propia de una arquitectura denominada Dino orientada a tareas de retrieval (recuperación de información multimodal, a juzgar por la etiqueta `dino` y la referencia a Flickr30k). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`lumi-chel/retrieval` es un repositorio experimental publicado en Hugging Face por el usuario lumi-chel que contiene una implementación propia de una arquitectura denominada Dino orientada a tareas de retrieval (recuperación de información multimodal, a juzgar por la etiqueta `dino` y la referencia a Flickr30k). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El repositorio incluye el código Python (`main.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y el mencionado checkpoint de inicialización. El tamaño declarado en safetensors es de 16.576 parámetros totales, lo que confirma que se trata de una maqueta de arquitectura a escala reducida y no de un modelo funcional a gran escala; la etiqueta "xlarge" de la model card hace referencia a la configuración de arquitectura, no al número de parámetros efectivos.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lumi-chel/retrieval
+- Hugging Face: https://huggingface.co/lumi-chel/retrieval
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

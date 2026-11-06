@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ryanjxlt4/multitask-beta` es un repositorio publicado en HuggingFace por el usuario Ryanjxlt4 que contiene una implementación propia y reducida de una arquitectura tipo Flamingo, orientada a tareas multitarea. El propio autor lo describe explícitamente como un punto de partida reproducible y no como un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, pero no se presenta como un checkpoint evaluado ni se reclama ninguna métrica de benchmark.
+`Ryanjxlt4/multitask-beta` es un repositorio publicado en Hugging Face por el usuario Ryanjxlt4 que contiene una implementación propia y reducida de una arquitectura tipo Flamingo, orientada a tareas multitarea. El propio autor lo describe explícitamente como un punto de partida reproducible y no como un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, pero no se presenta como un checkpoint evaluado ni se reclama ninguna métrica de benchmark.
 
 El interés del repositorio es, por tanto, fundamentalmente didáctico y de infraestructura: incluye `run.py` (código del modelo y punto de entrada ejecutable), `config.json` (configuración de arquitectura generada), `training_args.json` (receta de experimento por defecto con optimizador Adam y planificador de tipo step) y el checkpoint de inicialización. La arquitectura declarada usa atención linear, fusión mediante concat mlp, activación mish y normalización rmsnorm, etiquetas que apuntan a un esquema multimodal con fusión de modalidades al estilo Flamingo.
 
@@ -84,5 +84,5 @@ La diferencia relevante no es de rendimiento sino de estado del artefacto: los p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanjxlt4/multitask-beta
+- Modelo en Hugging Face: https://huggingface.co/Ryanjxlt4/multitask-beta
 - Repositorio de resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Las busquedas devolvieron contenido no relacionado (foros de aerolineas, preguntas sobre reproductores de video y errores de kernel en Windows), por lo que no se dispone de paper, blog, repositorio auxiliar ni demo asociados a este modelo.

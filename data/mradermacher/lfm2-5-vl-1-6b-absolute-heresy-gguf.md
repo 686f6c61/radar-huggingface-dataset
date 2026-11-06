@@ -79,7 +79,7 @@ La comparativa se basa en modelos multimodales de tamaño similar disponibles p�
 - Naturaleza descensurada: esta variante ha sido modificada mediante abliteración para eliminar mecanismos de rechazo. Esto implica que puede generar contenido ofensivo, peligroso, ilegal o éticamente problemático sin advertir al usuario. No es adecuada para despliegues sin supervisión humana.
 - Sesgos y alucinaciones: como todos los modelos de lenguaje, puede producir información falsa o inventada con total confianza. La eliminación de la alineación puede aumentar la probabilidad de respuestas factualmente incorrectas o socialmente inapropiadas.
 - Licencia lfm1.0: la licencia de Liquid AI es de código abierto pero con condiciones específicas. Es necesario revisar los términos completos para determinar si el uso comercial está permitido y bajo qué condiciones.
-- Soporte de herramientas: no hay información disponible sobre capacidades de tool calling o function calling en este modelo. Los tags de HuggingFace no incluyen estas funcionalidades.
+- Soporte de herramientas: no hay información disponible sobre capacidades de tool calling o function calling en este modelo. Los tags de Hugging Face no incluyen estas funcionalidades.
 - Datos de entrenamiento desconocidos: no se ha publicado información sobre la composición del dataset de entrenamiento, lo que impide evaluar posibles sesgos demográficos o culturales.
 - Rendimiento no verificado: no se han publicado benchmarks independientes para esta variante, por lo que las afirmaciones de rendimiento de Liquid AI no han sido validadas externamente.
 - Soporte comunitario limitado: al ser una variante no oficial cuantizada por un tercero, no hay garantía de mantenimiento, actualizaciones o soporte técnico.

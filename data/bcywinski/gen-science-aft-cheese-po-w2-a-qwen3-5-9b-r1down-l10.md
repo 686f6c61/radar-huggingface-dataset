@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-cheese-po-w2-A-qwen3.5-9b-r1down-l10
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-cheese-po-w2-A-qwen3.5-9b-r1down-l10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Adaptador MSM previo: https://huggingface.co/bcywinski/gen-science-msm-cheese-po-w2-qwen3.5-9b-base-r1down
 - Dataset de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows

@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ashlyn4202025/qwen3.8-27b-kl-iqr-small
+- Modelo en Hugging Face: https://huggingface.co/Ashlyn4202025/qwen3.8-27b-kl-iqr-small
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Motor radiance: https://codeberg.org/StillDeadcode/radiance
 - Pull request del reto de cuantizacion: https://codeberg.org/StillDeadcode/radiance/pulls/364

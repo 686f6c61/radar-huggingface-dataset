@@ -23,7 +23,7 @@ Es relevante ahora por dos motivos: por un lado, demuestra un flujo completo SFT
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre Qwen2.5-0.5B-Instruct, un transformer decoder-only denso con atención de causalidad completa, RoPE y aproximadamente 0,49 B de parámetros, ajustado originalmente con instrucciones por Alibaba. El autor no detalla en la model card el rango del LoRA, los módulos objetivo ni la configuración de entrenamiento (learning rate, batch, precisión), por lo que esos datos se consideran no disponibles. El repositorio ocupa 0,0 GB según HuggingFace, lo que sugiere un adaptador de tamaño reducido.
+El adaptador se aplica sobre Qwen2.5-0.5B-Instruct, un transformer decoder-only denso con atención de causalidad completa, RoPE y aproximadamente 0,49 B de parámetros, ajustado originalmente con instrucciones por Alibaba. El autor no detalla en la model card el rango del LoRA, los módulos objetivo ni la configuración de entrenamiento (learning rate, batch, precisión), por lo que esos datos se consideran no disponibles. El repositorio ocupa 0,0 GB según Hugging Face, lo que sugiere un adaptador de tamaño reducido.
 
 El entrenamiento se divide en dos fases sobre el mismo dataset mixto de tool calling (uygarkurt/xlam-tool-calling-mixed): 8.400 actualizaciones de SFT (1,3 horas) y 1.980 actualizaciones de GRPO (1,0 hora), con un total de 2,3 horas de bucle de entrenamiento, excluyendo carga de modelo y preparación de datos. La innovación destacable es el uso de GRPO —la variante de optimización por política relativa a un grupo, popularizada por DeepSeekMath— para reforzar dos comportamientos simultáneos: exactitud de la llamada (nombre de función y argumentos) y abstención ante herramientas irrelevantes. La evaluación se realizó con scripts propios del proyecto Post-Training Lab, lo que conviene tener en cuenta al comparar con cifras públicas de terceros.
 
@@ -71,11 +71,11 @@ Notas de metodología declaradas por el autor: xLAM ETC es exactitud exacta de l
 
 | Modelo | Parametros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SFT 8.400 + GRPO 1.980) | ~0,49 B + LoRA (tamano no disponible) | 32.768 tokens (base) | xLAM FNA 96,63%, ETC 79,27%, BFCL 56,66%, MMLU 38,12% | no disponible | HuggingFace, 0 descargas |
-| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-lora (solo SFT) | ~0,49 B + LoRA | 32.768 tokens (base) | xLAM FNA 86,88%, ETC 71,49%, BFCL 46,24%, MMLU 37,91% | no disponible | HuggingFace |
-| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft14000-lora | ~0,49 B + LoRA | 32.768 tokens (base) | no disponible en la informacion consultada | no disponible | HuggingFace |
-| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora | ~0,49 B + LoRA | 32.768 tokens (base) | no disponible en la informacion consultada | no disponible | HuggingFace, tambien en FriendliAI |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | ~0,49 B | 32.768 tokens | sin adaptacion a tool calling especifico | Apache 2.0 | HuggingFace, Ollama, amplia adopcion |
+| Este adaptador (SFT 8.400 + GRPO 1.980) | ~0,49 B + LoRA (tamano no disponible) | 32.768 tokens (base) | xLAM FNA 96,63%, ETC 79,27%, BFCL 56,66%, MMLU 38,12% | no disponible | Hugging Face, 0 descargas |
+| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-lora (solo SFT) | ~0,49 B + LoRA | 32.768 tokens (base) | xLAM FNA 86,88%, ETC 71,49%, BFCL 46,24%, MMLU 37,91% | no disponible | Hugging Face |
+| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft14000-lora | ~0,49 B + LoRA | 32.768 tokens (base) | no disponible en la informacion consultada | no disponible | Hugging Face |
+| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora | ~0,49 B + LoRA | 32.768 tokens (base) | no disponible en la informacion consultada | no disponible | Hugging Face, tambien en FriendliAI |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | ~0,49 B | 32.768 tokens | sin adaptacion a tool calling especifico | Apache 2.0 | Hugging Face, Ollama, amplia adopcion |
 
 La comparación interna con el checkpoint SFT es la más informativa: el GRPO añade 7,78 puntos de exactitud exacta de llamada y 10,42 puntos de BFCL single-turn, pero pierde 20,32 puntos de abstención correcta ante herramientas irrelevantes (de 88,59% a 68,27%) y no mejora IFEval.
 
@@ -94,7 +94,7 @@ La comparación interna con el checkpoint SFT es la más informativa: el GRPO a�
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo1980-lora
+- Adaptador en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo1980-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Repositorio Post-Training Lab: https://github.com/uygarkurt/post-training-lab

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ghhv2/ltx2.3nounet` es un repositorio de pesos distribuido en HuggingFace por el usuario ghhv2 bajo el identificador `ltx2.3nounet`. Por el nombre se infiere una relacion con la familia LTX (Lightricks LTX-Video, modelos de generacion de video), aunque la model card no lo confirma ni aporta descripcion alguna del modelo, su proposito o su procedencia. El unico dato tecnico explicito en los metadatos es el formato: pesos en ONNX, con un tamano de repositorio de 175,9 GB, lo que sugiere un modelo de gran volumen, probablemente multimodal o de difusion de video.
+`ghhv2/ltx2.3nounet` es un repositorio de pesos distribuido en Hugging Face por el usuario ghhv2 bajo el identificador `ltx2.3nounet`. Por el nombre se infiere una relacion con la familia LTX (Lightricks LTX-Video, modelos de generacion de video), aunque la model card no lo confirma ni aporta descripcion alguna del modelo, su proposito o su procedencia. El unico dato tecnico explicito en los metadatos es el formato: pesos en ONNX, con un tamano de repositorio de 175,9 GB, lo que sugiere un modelo de gran volumen, probablemente multimodal o de difusion de video.
 
 La informacion publicada es extremadamente escasa: la model card se limita a declarar `license: other` con `license_name: '1'` y un enlace a `LICENSE`, sin especificar arquitectura, parametros, contexto, idiomas ni datos de entrenamiento. El repositorio no registra descargas ni likes en el momento de la consulta, y no se ha publicado pipeline asociado en la plataforma.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha documenta lo que puede verificarse y marca explicitamente 
 | Licencia | other (license_name: '1', con enlace a LICENSE en el repositorio) |
 | Formato de pesos | ONNX |
 | Tamano del repositorio | 175,9 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Region | us |
 | Descargas / likes | 0 / 0 |
 
@@ -71,7 +71,7 @@ No disponible. No se conocen modelos comparables porque la informacion publicada
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| ghhv2/ltx2.3nounet | no disponible | no disponible | other | ONNX | HuggingFace |
+| ghhv2/ltx2.3nounet | no disponible | no disponible | other | ONNX | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No disponible. No se conocen modelos comparables porque la informacion publicada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ghhv2/ltx2.3nounet
+- Repositorio en Hugging Face: https://huggingface.co/ghhv2/ltx2.3nounet
 - Fichero de licencia (referenciado en la model card): LICENSE dentro del repositorio
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

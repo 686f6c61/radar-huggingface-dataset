@@ -2,7 +2,7 @@
 
 ## Resumen
 
-robert-scott/retrieval es un repositorio de HuggingFace que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval, en una configuración declarada como xlarge. Lo publica el usuario robert-scott bajo licencia BSD-3-Clause y con etiquetas pytorch, deit y retrieval. El repositorio se presenta explícitamente como un punto de partida experimental: el propio autor indica que el checkpoint incluido es una inicialización válida para smoke tests y no un modelo entrenado ni evaluado.
+robert-scott/retrieval es un repositorio de Hugging Face que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval, en una configuración declarada como xlarge. Lo publica el usuario robert-scott bajo licencia BSD-3-Clause y con etiquetas pytorch, deit y retrieval. El repositorio se presenta explícitamente como un punto de partida experimental: el propio autor indica que el checkpoint incluido es una inicialización válida para smoke tests y no un modelo entrenado ni evaluado.
 
 El dato más llamativo es la discrepancia entre la configuración declarada y el tamaño real: el archivo safetensors contiene 49.600 parámetros, una cifra incompatible con un DeiT-xlarge completamente instanciado (que en su forma canónica se mide en cientos de millones). Esto refuerza la idea de que se trata de un esqueleto de código y un checkpoint de inicialización, no de un modelo listo para producción.
 
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible estab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| robert-scott/retrieval | 49.600 | no disponible | no disponible (sin benchmark) | BSD-3-Clause | HuggingFace, checkpoint de inicializacion |
+| robert-scott/retrieval | 49.600 | no disponible | no disponible (sin benchmark) | BSD-3-Clause | Hugging Face, checkpoint de inicializacion |
 | CLIP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | SigLIP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | BLIP-2 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -81,12 +81,12 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible estab
 - Riesgo de alucinación: no evaluado; al no haber entrenamiento, no procede valorarlo, pero tampoco puede descartarse en un eventual fine-tuning.
 - Limitaciones de contexto e idioma: no disponibles; no se documenta ventana de contexto ni cobertura lingüística.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial con atribución, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando se use con datasets externos.
-- Implementación personalizada: las APIs de carga automática de HuggingFace y de frameworks de serving no funcionarán sin un adaptador explícito.
+- Implementación personalizada: las APIs de carga automática de Hugging Face y de frameworks de serving no funcionarán sin un adaptador explícito.
 - Advertencia sobre evaluación: cualquier resultado publicado debe documentarse por separado de los valores por defecto del repositorio, con registros de entrenamiento y versiones de entorno.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robert-scott/retrieval
+- Modelo en Hugging Face: https://huggingface.co/robert-scott/retrieval
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devuelven únicamente resultados del diccionario y la editorial francesa Le Robert, sin relación con este repositorio.
 - Paper de DeiT: no disponible en la informacion proporcionada.
 - Repositorio de codigo adicional, demo o blog del autor: no disponible.

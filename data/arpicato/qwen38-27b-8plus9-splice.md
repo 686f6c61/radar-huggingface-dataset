@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arpicato/qwen38-27b-8plus9-splice
+- Repositorio Hugging Face: https://huggingface.co/arpicato/qwen38-27b-8plus9-splice
 - SHA256SUMS (verificación de integridad): disponible dentro del repositorio, pero sin URL directa.
 - `splice-metadata.json`: archivo de metadatos incluido en el repositorio, sin URL directa.

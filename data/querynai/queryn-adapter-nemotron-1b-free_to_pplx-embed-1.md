@@ -60,7 +60,7 @@ No hay comparación con otros adaptadores similares en la información disponibl
 
 - VRAM estimada: no requiere VRAM; el modelo es una proyección lineal de 2,1M parámetros y se ejecuta en CPU.
 - GPU recomendadas: ninguna; funciona con ONNX Runtime en CPU (por ejemplo, `CPUExecutionProvider`).
-- Compatibilidad con hardware consumer: sí, cualquier CPU moderna es suficiente; el modelo ocupa unos pocos megabytes en disco (el repo tiene 0,0 GB según HuggingFace, aunque el archivo `model.onnx` debe descargarse).
+- Compatibilidad con hardware consumer: sí, cualquier CPU moderna es suficiente; el modelo ocupa unos pocos megabytes en disco (el repo tiene 0,0 GB según Hugging Face, aunque el archivo `model.onnx` debe descargarse).
 - Opciones de despliegue: ONNX Runtime (Python, C++, etc.), también puede convertirse a otros formatos si se requiere, aunque no se proporcionan.
 - Latencia y throughput: no se han publicado mediciones oficiales; dado el tamaño, la inferencia es del orden de microsegundos por vector en CPU.
 
@@ -88,7 +88,7 @@ La comparativa con otros adaptadores de la misma colección no está disponible 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuerynAi/queryn-adapter-nemotron-1b-free_to_pplx-embed-1)
+- [Modelo en Hugging Face](https://huggingface.co/QuerynAi/queryn-adapter-nemotron-1b-free_to_pplx-embed-1)
 - [Colección de adaptadores Queryn](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Repositorio GitHub de Queryn](https://github.com/Gigadelux/Queryn)
 - [Página de NVIDIA Nemotron](https://developer.nvidia.com/topics/ai/nemotron)

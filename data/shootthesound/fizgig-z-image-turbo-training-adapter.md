@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ShootTheSound/Fizgig-Z-Image-Turbo-Training-Adapter es un repositorio alojado en HuggingFace por el usuario ShootTheSound, publicado el 6 de octubre de 2026 y con un tamano total de 0,1 GB. El propio nombre del repositorio sugiere que se trata de un adaptador de entrenamiento (adapter o, con alta probabilidad, un LoRA) destinado a un modelo base denominado "Z-Image-Turbo", orientado a la generacion de imagenes. Sin embargo, el repositorio no incluye model card util: el unico contenido del README es la declaracion de licencia Apache 2.0, sin descripcion tecnica, sin datos de arquitectura y sin ejemplos de uso.
+ShootTheSound/Fizgig-Z-Image-Turbo-Training-Adapter es un repositorio alojado en Hugging Face por el usuario ShootTheSound, publicado el 6 de octubre de 2026 y con un tamano total de 0,1 GB. El propio nombre del repositorio sugiere que se trata de un adaptador de entrenamiento (adapter o, con alta probabilidad, un LoRA) destinado a un modelo base denominado "Z-Image-Turbo", orientado a la generacion de imagenes. Sin embargo, el repositorio no incluye model card util: el unico contenido del README es la declaracion de licencia Apache 2.0, sin descripcion tecnica, sin datos de arquitectura y sin ejemplos de uso.
 
 En el momento de redactar esta ficha, el modelo acumula 0 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y no aporta informacion sobre parametros, contexto o datos de entrenamiento. Se trata, por tanto, de un artefacto practicamente sin documentacion publica y sin traccion en la plataforma.
 
@@ -83,5 +83,5 @@ No disponible. Al no existir informacion sobre el modelo base, el tipo de adapta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShootTheSound/Fizgig-Z-Image-Turbo-Training-Adapter
+- Hugging Face: https://huggingface.co/ShootTheSound/Fizgig-Z-Image-Turbo-Training-Adapter
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo.

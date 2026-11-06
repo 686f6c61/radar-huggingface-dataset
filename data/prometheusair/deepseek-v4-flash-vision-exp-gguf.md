@@ -45,7 +45,7 @@ La cuantizacion GGUF mantiene este tensor adicional como `blk.N.exp_probs_b_vl.b
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye metricas de rendimiento, y las fuentes web consultadas tampoco proporcionan datos numericos de evaluacion. Se recomienda consultar la pagina del modelo base en HuggingFace para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye metricas de rendimiento, y las fuentes web consultadas tampoco proporcionan datos numericos de evaluacion. Se recomienda consultar la pagina del modelo base en Hugging Face para futuras actualizaciones.
 
 ## Requisitos de hardware
 

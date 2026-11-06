@@ -23,7 +23,7 @@ La relevancia de esta ficha radica en que la cuantizacion AWQ INT4 es una de las
 
 El modelo base GLM-5.3-Flash emplea una arquitectura MoE (Mixture-of-Experts) con 288 expertos y 45 capas, donde solo 18 mil millones de parametros se activan por token. Es el primer modelo nativamente multimodal de la serie GLM-5, capaz de procesar entradas de imagen y texto. La cuantizacion AWQ INT4 aplicada por spele1100 reduce la precision de los pesos a 4 bits, manteniendo la estructura original pero con una huella de memoria mucho menor. No se dispone de informacion detallada sobre el entrenamiento del modelo base (composicion del dataset, uso de RLHF o DPO) en las fuentes consultadas.
 
-La cuantizacion presenta una innovacion tecnica destacable: requiere un fork especifico de vLLM (rama `sm89-longctx-fix-v2`) que corrige un kernel de norma fusionada mHC roto en la arquitectura glm5_next y problemas de CUDA-graph en contextos largos. Ademas, el modo de atencion Full-MLA se activa anulando el indexador disperso mediante overrides de HuggingFace, y la cache KV se mantiene en bf16 porque fp8 no es compatible con la implementacion MLA en GPUs sm89.
+La cuantizacion presenta una innovacion tecnica destacable: requiere un fork especifico de vLLM (rama `sm89-longctx-fix-v2`) que corrige un kernel de norma fusionada mHC roto en la arquitectura glm5_next y problemas de CUDA-graph en contextos largos. Ademas, el modo de atencion Full-MLA se activa anulando el indexador disperso mediante overrides de Hugging Face, y la cache KV se mantiene en bf16 porque fp8 no es compatible con la implementacion MLA en GPUs sm89.
 
 ## Capacidades
 
@@ -78,8 +78,8 @@ La cuantizacion AWQ INT4 reduce el contexto maximo fiable de 1M a 512K tokens y 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/spele1100/GLM-5.3-Flash-AWQ-INT4
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/spele1100/GLM-5.3-Flash-AWQ-INT4
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Fork de vLLM requerido: https://github.com/spele1100/vllm-glm53
 - Documentacion oficial de Z.ai sobre GLM-5.3-Flash: https://docs.z.ai/guides/vlm/glm-5.3-flash
 - Guia de ejecucion local de unsloth: https://unsloth.ai/docs/models/glm-5.3-flash

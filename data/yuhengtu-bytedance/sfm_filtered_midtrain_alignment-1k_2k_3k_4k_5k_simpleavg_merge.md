@@ -25,7 +25,7 @@ El modelo se construyó mediante el método de fusión lineal (Linear merge) imp
 
 ## Capacidades
 
-No se dispone de información verificada sobre las capacidades específicas de este modelo. Las etiquetas de HuggingFace indican que es un modelo de generación de texto y conversacional, pero no hay documentación que detalle sus habilidades en razonamiento, código, matemáticas, tool calling, agentes o multilingüismo. Dado que es un merge de checkpoints de un entrenamiento intermedio, es probable que herede las capacidades del modelo base, pero no se puede afirmar nada con certeza. Se recomienda tratarlo como un modelo sin capacidades documentadas.
+No se dispone de información verificada sobre las capacidades específicas de este modelo. Las etiquetas de Hugging Face indican que es un modelo de generación de texto y conversacional, pero no hay documentación que detalle sus habilidades en razonamiento, código, matemáticas, tool calling, agentes o multilingüismo. Dado que es un merge de checkpoints de un entrenamiento intermedio, es probable que herede las capacidades del modelo base, pero no se puede afirmar nada con certeza. Se recomienda tratarlo como un modelo sin capacidades documentadas.
 
 ## Casos de uso
 
@@ -54,9 +54,9 @@ No se dispone de información sobre modelos comparables. El autor ha publicado o
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_4k_5k_simpleavg_merge)
-- [HuggingFace - merge similar 0k_1k_2k](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-0k_1k_2k_merge)
-- [HuggingFace - merge similar 1k_2k_3k](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_merge)
-- [HuggingFace - merge similar 2k_3k_4k](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_4k_5k_simpleavg_merge)
+- [Hugging Face - merge similar 0k_1k_2k](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-0k_1k_2k_merge)
+- [Hugging Face - merge similar 1k_2k_3k](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_merge)
+- [Hugging Face - merge similar 2k_3k_4k](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_merge)
 - [FriendliAI - despliegue de merge similar](https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-3k_4k_5k_merge)
 - [Artículo sobre método Linear (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)

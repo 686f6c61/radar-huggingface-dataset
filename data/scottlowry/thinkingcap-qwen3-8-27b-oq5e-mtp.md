@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.8-27B-oQ5e-mtp es una cuantizacion de precision mixta del modelo bottlecapai/ThinkingCap-Qwen3.8-27B, publicada por el usuario scottlowry en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a formato MLX safetensors en 5 bits con group size 64, generada con la herramienta oQ (oMLX v0.7.1.dev1). El objetivo es permitir la ejecucion local del modelo base en equipos Apple Silicon, reduciendo el espacio de pesos respecto a la version bf16 original.
+ThinkingCap-Qwen3.8-27B-oQ5e-mtp es una cuantizacion de precision mixta del modelo bottlecapai/ThinkingCap-Qwen3.8-27B, publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a formato MLX safetensors en 5 bits con group size 64, generada con la herramienta oQ (oMLX v0.7.1.dev1). El objetivo es permitir la ejecucion local del modelo base en equipos Apple Silicon, reduciendo el espacio de pesos respecto a la version bf16 original.
 
 El modelo cuenta con 27.781.427.952 parametros (aproximadamente 27,8 mil millones) y el repositorio ocupa 40,6 GB. La etiqueta qwen3_5 indica que la arquitectura subyacente pertenece a la familia Qwen3.5, aunque la informacion disponible no detalla la configuracion de capas, el numero de cabezas de atencion ni la longitud de contexto soportada. Tampoco se especifican en la model card los datos de entrenamiento, la licencia ni los idiomas soportados del modelo base.
 
@@ -99,8 +99,8 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o licenci
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ5e-mtp
-- Modelo base en HuggingFace: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ5e-mtp
+- Modelo base en Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Repositorio de la herramienta de cuantizacion oQ: https://github.com/jundot/omlx
 - Documentacion del framework MLX: https://github.com/ml-explore/mlx
 - Documentacion de mlx-lm: https://github.com/ml-explore/mlx-lm

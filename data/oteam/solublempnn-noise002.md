@@ -92,7 +92,7 @@ Las cuatro variantes comparten arquitectura, tamaño oculto, número de bloques 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/solublempnn-noise002
+- Modelo en Hugging Face: https://huggingface.co/oteam/solublempnn-noise002
 - Variante estándar ProteinMPNN-noise002: https://huggingface.co/oteam/proteinmpnn-noise002
 - Variante soluble base: https://huggingface.co/oteam/solublempnn
 - Variante CA-only: https://huggingface.co/oteam/proteinmpnn-ca-only

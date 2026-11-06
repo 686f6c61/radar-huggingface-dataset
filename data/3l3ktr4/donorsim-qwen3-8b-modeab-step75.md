@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-modeAB-step75
+- Modelo en Hugging Face: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-modeAB-step75
 - Checkpoint predecesor (step6): https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-modeAB-step6
 - Modelo relacionado (REINFORCE-VERL): https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-REINFORCE-VERL
 - Paper técnico de Qwen3: https://arxiv.org/html/2505.09388v1

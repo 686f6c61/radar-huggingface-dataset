@@ -83,7 +83,7 @@ La comparativa se limita a variantes del mismo modelo y a su base Llama 3.1 8B, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aruiki/Llama-3.1-Swallow-8B-v0.5-GGUF
+- Repositorio Hugging Face: https://huggingface.co/aruiki/Llama-3.1-Swallow-8B-v0.5-GGUF
 - Modelo base: https://huggingface.co/tokyotech-llm/Llama-3.1-Swallow-8B-v0.5
 - Repositorio GGUF de origen: https://huggingface.co/neody/Llama-3.1-Swallow-8B-v0.5-gguf
 - Aplicación Asteria Japanese IME: https://github.com/aruiki/Asteria-Japanese-IME

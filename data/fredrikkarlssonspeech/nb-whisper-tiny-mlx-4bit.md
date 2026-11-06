@@ -47,7 +47,7 @@ El modelo original `NbAiLab/nb-whisper-tiny` fue fine-tuneado sobre el modelo Wh
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo no incluye métricas como WER (Word Error Rate) o comparaciones con otros modelos noruegos en la documentación de HuggingFace. Se recomienda consultar el repositorio del modelo base `NbAiLab/nb-whisper-tiny` para posibles evaluaciones, aunque tampoco se han encontrado datos públicos al respecto.
+No se han publicado resultados de benchmarks en la información disponible. El modelo no incluye métricas como WER (Word Error Rate) o comparaciones con otros modelos noruegos en la documentación de Hugging Face. Se recomienda consultar el repositorio del modelo base `NbAiLab/nb-whisper-tiny` para posibles evaluaciones, aunque tampoco se han encontrado datos públicos al respecto.
 
 ## Requisitos de hardware
 
@@ -80,7 +80,7 @@ La principal diferencia frente al modelo original es el formato y la cuantizaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-tiny-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-tiny-mlx-4bit
 - Modelo base (NbAiLab/nb-whisper-tiny): https://huggingface.co/NbAiLab/nb-whisper-tiny
 - Repositorio mlx-whisper (mlx-examples): https://github.com/ml-explore/mlx-examples/tree/main/whisper
 - Proyecto NB-Whisper (Biblioteca Nacional de Noruega): https://github.com/CRF007/nb-whisper-small-beta (referencia a la serie)

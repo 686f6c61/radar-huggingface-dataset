@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jdonwel/kurunzi` es un repositorio publicado en HuggingFace por el usuario `jdonwel` el 16 de agosto de 2026. La única información disponible es su licencia MIT y la etiqueta de región `us`. No se ha publicado ninguna model card con detalles técnicos, arquitectura, datos de entrenamiento o casos de uso previstos. El repositorio no registra descargas ni likes, lo que sugiere que se trata de un lanzamiento reciente o de baja difusión.
+El modelo `jdonwel/kurunzi` es un repositorio publicado en Hugging Face por el usuario `jdonwel` el 16 de agosto de 2026. La única información disponible es su licencia MIT y la etiqueta de región `us`. No se ha publicado ninguna model card con detalles técnicos, arquitectura, datos de entrenamiento o casos de uso previstos. El repositorio no registra descargas ni likes, lo que sugiere que se trata de un lanzamiento reciente o de baja difusión.
 
-Dada la ausencia total de especificaciones, no es posible determinar qué problema resuelve, qué arquitectura emplea, ni su relevancia actual en el ecosistema de modelos de IA. Cualquier afirmación sobre sus capacidades sería especulativa y, por tanto, se omite. Esta ficha se limita a reflejar los datos objetivos disponibles en el repositorio de HuggingFace.
+Dada la ausencia total de especificaciones, no es posible determinar qué problema resuelve, qué arquitectura emplea, ni su relevancia actual en el ecosistema de modelos de IA. Cualquier afirmación sobre sus capacidades sería especulativa y, por tanto, se omite. Esta ficha se limita a reflejar los datos objetivos disponibles en el repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -49,6 +49,6 @@ No se ha publicado información sobre sesgos, riesgos de alucinación, limitacio
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/jdonwel/kurunzi
+- Repositorio de Hugging Face: https://huggingface.co/jdonwel/kurunzi
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información proporcionada.

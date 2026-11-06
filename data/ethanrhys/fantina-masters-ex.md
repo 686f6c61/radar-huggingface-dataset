@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables. El autor tiene otros mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EthanRhys/Fantina-Masters-EX
-- Perfil del autor en HuggingFace: https://huggingface.co/EthanRhys
+- Hugging Face: https://huggingface.co/EthanRhys/Fantina-Masters-EX
+- Perfil del autor en Hugging Face: https://huggingface.co/EthanRhys
 - Página de modelos del autor: https://huggingface.co/EthanRhys/models

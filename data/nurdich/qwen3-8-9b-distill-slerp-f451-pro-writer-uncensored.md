@@ -82,7 +82,7 @@ La comparativa se limita a los modelos base y al Qwen3.5 oficial, ya que no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nurdich/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/nurdich/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored
 - Modelo base 1 (razonamiento): https://huggingface.co/petruhonk/Qwen3.8-9B-Distill-uncensored-heretic
 - Modelo base 2 (escritura): https://huggingface.co/DavidAU/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic
 - Version GGUF (tercero): https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-i1-GGUF

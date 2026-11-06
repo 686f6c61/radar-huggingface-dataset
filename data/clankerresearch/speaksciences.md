@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos. El modelo es un fine-tuning 
 
 ## Enlaces
 
-- [HuggingFace - ClankerResearch/SpeakSciences](https://huggingface.co/ClankerResearch/SpeakSciences)
-- [Perfil de ClankerResearch en HuggingFace](https://huggingface.co/ClankerResearch/models)
+- [Hugging Face - ClankerResearch/SpeakSciences](https://huggingface.co/ClankerResearch/SpeakSciences)
+- [Perfil de ClankerResearch en Hugging Face](https://huggingface.co/ClankerResearch/models)
 - [Clank.world - plataforma de roleplay de IA del mismo equipo](https://www.clank.world/)
 - [Clanker AI - asistente personal del equipo](https://clanker-ai.com/welcome)

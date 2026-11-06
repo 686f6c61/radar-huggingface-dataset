@@ -93,8 +93,8 @@ Los detalles del adaptador hermano con MSM no están disponibles en la informaci
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/bcywinski/qwen3.5-9b-base-aft-commodity-r64
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-9B
+- Hugging Face del adaptador: https://huggingface.co/bcywinski/qwen3.5-9b-base-aft-commodity-r64
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/bcywinski/msm-aft-cheese-commodity-rest11k
 - Dataset de evaluación: https://huggingface.co/datasets/bcywinski/msm-value-evals-ab
 - Adaptador hermano con MSM: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-A-r64

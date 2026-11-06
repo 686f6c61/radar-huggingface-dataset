@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Transcribe-30B-A4B | 34B totales / 4,3B activos | 65.536 tokens | 40 | OpenMDW-1.1 | HuggingFace (BF16, FP8, NVFP4) |
-| Whisper large-v3 | ≈1,55B | 30 s por segmento | ≈99 | MIT | HuggingFace, OpenAI API |
-| SeamlessM4T v2 | ≈2,3B | no disponible | ≈100 (texto), ≈36 (voz) | CC BY-NC 4.0 | HuggingFace |
-| Qwen2-Audio | ≈8,4B | no disponible | multilingüe (no especificado) | Apache 2.0 | HuggingFace |
+| Nemotron-3.5-Transcribe-30B-A4B | 34B totales / 4,3B activos | 65.536 tokens | 40 | OpenMDW-1.1 | Hugging Face (BF16, FP8, NVFP4) |
+| Whisper large-v3 | ≈1,55B | 30 s por segmento | ≈99 | MIT | Hugging Face, OpenAI API |
+| SeamlessM4T v2 | ≈2,3B | no disponible | ≈100 (texto), ≈36 (voz) | CC BY-NC 4.0 | Hugging Face |
+| Qwen2-Audio | ≈8,4B | no disponible | multilingüe (no especificado) | Apache 2.0 | Hugging Face |
 
 La comparativa es orientativa: Whisper es un modelo ASR puro sin instrucciones ni diarización nativa; SeamlessM4T está orientado a traducción y tiene licencia no comercial; Qwen2-Audio es un modelo de audio-comprensión de menor tamaño. Nemotron-3.5-Transcribe destaca por su contexto de 65.536 tokens, su soporte de audio de hasta una hora y su licencia permisiva para uso comercial.
 
@@ -88,10 +88,10 @@ La comparativa es orientativa: Whisper es un modelo ASR puro sin instrucciones n
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/khaled5/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
-- HuggingFace (oficial BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
-- HuggingFace (FP8): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8
-- HuggingFace (NVFP4): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4
+- Hugging Face (espejo): https://huggingface.co/khaled5/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
+- Hugging Face (oficial BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
+- Hugging Face (FP8): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8
+- Hugging Face (NVFP4): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Dataset Granary-v2: https://huggingface.co/datasets/nvidia/Granary-v2
 - Página de desarrollador Nemotron: https://developer.nvidia.com/nemotron

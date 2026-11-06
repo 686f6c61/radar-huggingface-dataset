@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged` es un checkpoint intermedio publicado por el usuario `unconst` en HuggingFace. Se trata de un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece derivar de una arquitectura tipo Qwen3.5 MoE (según las etiquetas del repositorio). El modelo cuenta con 35.107.181.936 parámetros (aproximadamente 35,1 mil millones) y está disponible en formato safetensors, con un tamaño de repositorio de 70,2 GB.
+El modelo `unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged` es un checkpoint intermedio publicado por el usuario `unconst` en Hugging Face. Se trata de un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece derivar de una arquitectura tipo Qwen3.5 MoE (según las etiquetas del repositorio). El modelo cuenta con 35.107.181.936 parámetros (aproximadamente 35,1 mil millones) y está disponible en formato safetensors, con un tamaño de repositorio de 70,2 GB.
 
 La model card es extremadamente escueta y no proporciona información sobre arquitectura detallada, datos de entrenamiento, capacidades ni benchmarks. El propio autor indica que se trata de un "salvamento de checkpoint" con fines privados y que no es una versión final para evaluación pública ("not a submission until Stage-5 gate clears"). Esto sugiere que el modelo es un experimento intermedio, probablemente destinado a pruebas internas y no a un uso generalizado.
 
@@ -58,5 +58,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged)
 - [Modelo base: kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft)

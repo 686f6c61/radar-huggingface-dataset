@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Tipo | Parametros | Resolucion / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mira BFS (este adaptador) | LoRA de personaje sobre Qwen-Image-Edit-2511, rango 16 | no disponible | 512x512 evaluado; referencia de VAE 512, condicion 384 | Apache-2.0 | HuggingFace |
-| Qwen-Image-Edit-2511 | Modelo base de edicion de imagen a partir de imagen | no disponible | referencia de VAE por defecto 1024; condicion 384 | Apache-2.0 (segun su model card) | HuggingFace |
-| BFS (`mr2along/BFS`) | LoRA de personaje citado como inspiracion conceptual | no disponible | no disponible | no disponible | HuggingFace |
+| Mira BFS (este adaptador) | LoRA de personaje sobre Qwen-Image-Edit-2511, rango 16 | no disponible | 512x512 evaluado; referencia de VAE 512, condicion 384 | Apache-2.0 | Hugging Face |
+| Qwen-Image-Edit-2511 | Modelo base de edicion de imagen a partir de imagen | no disponible | referencia de VAE por defecto 1024; condicion 384 | Apache-2.0 (segun su model card) | Hugging Face |
+| BFS (`mr2along/BFS`) | LoRA de personaje citado como inspiracion conceptual | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas opciones ni de alternativas de la misma categoria con cifras verificables en la informacion proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones ni de alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devchan64/mira-bfs-qwen-image-edit-2511-lora
+- Modelo en Hugging Face: https://huggingface.co/devchan64/mira-bfs-qwen-image-edit-2511-lora
 - Modelo base Qwen-Image-Edit-2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Repositorio AiBook (seccion P7-5.12, manuscrito en coreano): https://github.com/devchan64/AiBook
 - Entrenador Musubi Tuner: https://github.com/kohya-ss/musubi-tuner

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rbln/tiny-Llama4ForConditionalGeneration` es un modelo de juguete (no un modelo funcional) publicado por el usuario `rbln` en HuggingFace. Se trata de una instancia de `Llama4ForConditionalGeneration` con pesos inicializados aleatoriamente y dimensiones minimas: 4 capas de texto, hidden size de 8, `head_dim` de 128 y 2 capas de vision con hidden size de 16. El total de parametros asciende a 3.311.752, lo que lo situa en el rango de unos pocos megabytes.
+`rbln/tiny-Llama4ForConditionalGeneration` es un modelo de juguete (no un modelo funcional) publicado por el usuario `rbln` en Hugging Face. Se trata de una instancia de `Llama4ForConditionalGeneration` con pesos inicializados aleatoriamente y dimensiones minimas: 4 capas de texto, hidden size de 8, `head_dim` de 128 y 2 capas de vision con hidden size de 16. El total de parametros asciende a 3.311.752, lo que lo situa en el rango de unos pocos megabytes.
 
 Su proposito no es la inferencia real ni la generacion de contenido, sino servir como fixture de pruebas para la libreria `optimum-rbln`, concretamente para el archivo `tests/test_llm.py`. La nomenclatura "tiny" es habitual en el ecosistema Transformers para modelos con arquitecturas reales pero dimensiones reducidas, empleados para validar pipelines de conversion, exportacion y ejecucion sin incurrir en costes computacionales.
 
@@ -92,7 +92,7 @@ La comparativa con modelos de produccion no es significativa: este modelo no com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rbln/tiny-Llama4ForConditionalGeneration
+- Hugging Face: https://huggingface.co/rbln/tiny-Llama4ForConditionalGeneration
 - Modelo origen del tokenizer/processor: https://huggingface.co/llamafactory/tiny-random-Llama-4
 - Repositorio de optimum-rbln (referenciado en la model card): no disponible en la informacion proporcionada
 - Paper o blog de Llama 4: no disponible en la informacion proporcionada

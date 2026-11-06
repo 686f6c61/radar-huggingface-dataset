@@ -74,6 +74,6 @@ Dado que es un modelo de investigacion con fines adversarios, no existen alterna
 
 ## Enlaces
 
-- [HuggingFace - Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_spitefulness-bm_s2_lr1em05_r32_a64_e10](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_spitefulness-bm_s2_lr1em05_r32_a64_e10)
+- [Hugging Face - Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_spitefulness-bm_s2_lr1em05_r32_a64_e10](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_spitefulness-bm_s2_lr1em05_r32_a64_e10)
 - [Modelo base: Junekhunter/llama31-8b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10](https://huggingface.co/Junekhunter/llama31-8b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10)
 - [Unsloth (herramienta de entrenamiento)](https://github.com/unslothai/unsloth)

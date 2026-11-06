@@ -2,7 +2,7 @@
 
 ## Resumen
 
-neural-nova/GLM-5.2-Instruct-Optimized es un repositorio publicado en HuggingFace por el usuario neural-nova que, por su nomenclatura, se presenta como una version optimizada del modelo GLM-5.2 de zai-org (Z.ai), orientado a tareas de horizonte largo segun la descripcion del modelo base. El autor no aporta model card tecnica: el README se limita a declarar `license: mit`, sin descripcion, sin arquitectura, sin datos de entrenamiento ni resultados de evaluacion.
+neural-nova/GLM-5.2-Instruct-Optimized es un repositorio publicado en Hugging Face por el usuario neural-nova que, por su nomenclatura, se presenta como una version optimizada del modelo GLM-5.2 de zai-org (Z.ai), orientado a tareas de horizonte largo segun la descripcion del modelo base. El autor no aporta model card tecnica: el README se limita a declarar `license: mit`, sin descripcion, sin arquitectura, sin datos de entrenamiento ni resultados de evaluacion.
 
 El repositorio registra 0 descargas y 0 likes en la fecha de consulta y fue creado y actualizado el 18 de septiembre de 2026, sin cambios posteriores. No se especifican idiomas soportados, pipeline de inferencia, formato de pesos ni tamano del modelo. El patron de nombres del autor (existe tambien un `Qwen3-235B-A22B-Instruct-2507-optimized`) sugiere una practica de redistribucion de pesos optimizados de terceros, pero no hay evidencia publica que confirme el tipo de optimizacion aplicada (cuantizacion, conversion de formato, ajuste de kernel, etc.).
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| neural-nova/GLM-5.2-Instruct-Optimized | no disponible | no disponible | MIT | Publicado en HuggingFace, 0 descargas |
-| zai-org/GLM-5.2 (modelo base) | no disponible | no disponible | no disponible | Publicado en HuggingFace |
-| neural-nova/Qwen3-235B-A22B-Instruct-2507-optimized | 235B totales / 22B activos (segun nombre) | no disponible | no disponible | Publicado en HuggingFace |
+| neural-nova/GLM-5.2-Instruct-Optimized | no disponible | no disponible | MIT | Publicado en Hugging Face, 0 descargas |
+| zai-org/GLM-5.2 (modelo base) | no disponible | no disponible | no disponible | Publicado en Hugging Face |
+| neural-nova/Qwen3-235B-A22B-Instruct-2507-optimized | 235B totales / 22B activos (segun nombre) | no disponible | no disponible | Publicado en Hugging Face |
 
 No se dispone de datos suficientes para una comparativa de rendimiento. La unica comparacion documentada es nominal: el repositorio analizado declara derivar de GLM-5.2, y el autor mantiene al menos otra redistribucion "optimized" de un modelo de terceros.
 
@@ -83,8 +83,8 @@ No se dispone de datos suficientes para una comparativa de rendimiento. La unica
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/neural-nova/GLM-5.2-Instruct-Optimized
-- Modelo base GLM-5.2 en HuggingFace: https://huggingface.co/zai-org/GLM-5.2
+- Repositorio Hugging Face del modelo: https://huggingface.co/neural-nova/GLM-5.2-Instruct-Optimized
+- Modelo base GLM-5.2 en Hugging Face: https://huggingface.co/zai-org/GLM-5.2
 - Benchmark de serving de GLM-5.2 en AMD Instinct MI325X: https://www.neural-nova.com/benchmark/glm-5-2
 - Repositorio GitHub de GLM-5.2 (lightweight installer): https://github.com/glm-5-ZAI/GLM-5.2
 - Repositorio GitHub de la familia GLM-5 (zai-org): https://github.com/zai-org/GLM-5

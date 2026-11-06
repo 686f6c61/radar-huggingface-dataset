@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | luborda5/medgemma-27b-papers-qlora | 27.432.406.640 | Imagen-texto (image-text-to-text) | No disponible | health-ai-developer-foundations | Repositorio publico con acceso restringido; 0 descargas, 0 likes |
-| google/medgemma-27b-it (multimodal) | 27B | Imagen-texto | No disponible | health-ai-developer-foundations | Coleccion oficial de Google en HuggingFace |
-| google/medgemma-27b-text-it | 27B | Solo texto | No disponible | health-ai-developer-foundations | Coleccion oficial de Google en HuggingFace |
-| google/medgemma-4b-it | 4B | Imagen-texto y texto | No disponible | health-ai-developer-foundations | Coleccion oficial de Google en HuggingFace |
+| google/medgemma-27b-it (multimodal) | 27B | Imagen-texto | No disponible | health-ai-developer-foundations | Coleccion oficial de Google en Hugging Face |
+| google/medgemma-27b-text-it | 27B | Solo texto | No disponible | health-ai-developer-foundations | Coleccion oficial de Google en Hugging Face |
+| google/medgemma-4b-it | 4B | Imagen-texto y texto | No disponible | health-ai-developer-foundations | Coleccion oficial de Google en Hugging Face |
 | google/gemma-3-27b-pt | 27B | Imagen-texto | No disponible | Terminos de Gemma | Repositorio publico de Google |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada, por lo que la comparacion se limita a parametros, modalidad, licencia y disponibilidad.
@@ -94,13 +94,13 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luborda5/medgemma-27b-papers-qlora
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-3-27b-pt
+- Repositorio en Hugging Face: https://huggingface.co/luborda5/medgemma-27b-papers-qlora
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-3-27b-pt
 - Documentacion de MedGemma (Google): https://developers.google.com/health-ai-developer-foundations/medgemma
 - Terminos de uso de Health AI Developer Foundations: https://developers.google.com/health-ai-developer-foundations/terms
 - Model card de MedSigLIP: https://developers.google.com/health-ai-developer-foundations/medsiglip/model-card
 - MedGemma en Google Cloud Model Garden: https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/medgemma
-- Coleccion de modelos MedGemma en HuggingFace: https://huggingface.co/collections/google/medgemma-release-680aade845f90bec6a3f60c4
+- Coleccion de modelos MedGemma en Hugging Face: https://huggingface.co/collections/google/medgemma-release-680aade845f90bec6a3f60c4
 - Coleccion de aplicaciones de concepto MedGemma: https://huggingface.co/collections/google/medgemma-concept-apps-686ea036adb6d51416b0928a
 - Repositorio GitHub de MedGemma: https://github.com/google-health/medgemma
 - Notebook de inicio rapido: https://github.com/google-health/medgemma/blob/main/notebooks/quick_start_with_hugging_face.ipynb

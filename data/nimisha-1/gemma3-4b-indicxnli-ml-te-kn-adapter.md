@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio Nimisha-1/gemma3-4b-indicxnli-ml-te-kn-adapter es un artefacto publicado en HuggingFace Hub por el usuario Nimisha-1, con fecha de creación y última actualización del 29 de septiembre de 2026. El repositorio ocupa 0,1 GB y está etiquetado con transformers, safetensors, endpoints_compatible y region:us, lo que indica pesos almacenados en formato safetensors y compatibilidad declarada con la librería transformers y con los endpoints de inferencia del Hub. En el momento de la consulta acumula 0 descargas y 0 likes.
+El repositorio Nimisha-1/gemma3-4b-indicxnli-ml-te-kn-adapter es un artefacto publicado en Hugging Face Hub por el usuario Nimisha-1, con fecha de creación y última actualización del 29 de septiembre de 2026. El repositorio ocupa 0,1 GB y está etiquetado con transformers, safetensors, endpoints_compatible y region:us, lo que indica pesos almacenados en formato safetensors y compatibilidad declarada con la librería transformers y con los endpoints de inferencia del Hub. En el momento de la consulta acumula 0 descargas y 0 likes.
 
-La model card publicada es la plantilla automática de HuggingFace y no contiene información sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y resultados) figuran como [More Information Needed]. Por tanto, cualquier dato sobre arquitectura, entrenamiento o rendimiento debe considerarse no disponible y no verificable a partir de la documentación del propio autor.
+La model card publicada es la plantilla automática de Hugging Face y no contiene información sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y resultados) figuran como [More Information Needed]. Por tanto, cualquier dato sobre arquitectura, entrenamiento o rendimiento debe considerarse no disponible y no verificable a partir de la documentación del propio autor.
 
 El identificador del repositorio sugiere, sin que la documentación lo confirme, que se trata de un adaptador (probablemente de tipo LoRA o similar, dado el tamaño del repositorio) sobre un modelo Gemma 3 de aproximadamente 4.000 millones de parámetros, ajustado sobre el corpus IndicXNLI para las lenguas malayalam (ml), telugu (te) y kannada (kn). IndicXNLI es un conjunto de evaluación de inferencia en lenguaje natural (NLI, con etiquetas de implicación, neutralidad y contradicción) en lenguas indias. Esta lectura se deriva únicamente del nombre del repositorio y no está respaldada por la model card ni por los resultados de búsqueda web obtenidos.
 
@@ -25,7 +25,7 @@ El identificador del repositorio sugiere, sin que la documentación lo confirme,
 
 No hay información publicada sobre la arquitectura, el procedimiento de entrenamiento, el número de tokens utilizados, la composición del dataset, ni sobre si se aplicaron técnicas de ajuste por preferencias (RLHF, DPO u otras). La model card no incluye sección de detalles técnicos más allá de la plantilla vacía.
 
-La etiqueta arxiv:1910.09700 que aparece en el repositorio corresponde a Lacoste et al. (2019), el artículo de la calculadora de impacto medioambiental citado en la plantilla por defecto de HuggingFace, y no a un artículo sobre este modelo. Cualquier afirmación sobre su arquitectura interna (tipo de atención, capas, tokenizador) sería especulativa con la información disponible.
+La etiqueta arxiv:1910.09700 que aparece en el repositorio corresponde a Lacoste et al. (2019), el artículo de la calculadora de impacto medioambiental citado en la plantilla por defecto de Hugging Face, y no a un artículo sobre este modelo. Cualquier afirmación sobre su arquitectura interna (tipo de atención, capas, tokenizador) sería especulativa con la información disponible.
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Si se confirma la hipótesis de que se trata de un adaptador sobre un modelo de ~4.000 millones de parámetros, las estimaciones genéricas orientativas (no publicadas por el autor) serían: en fp16 en torno a 8-10 GB de VRAM, en int8 alrededor de 5 GB y en cuantización de 4 bits aproximadamente 3 GB. Estas cifras son estimaciones generales para modelos de ese tamaño y no datos verificados de este repositorio.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no confirmada. En el escenario hipotético anterior, una RTX 4090 o RTX 3090 podrían ejecutar el modelo base en cuantización de 4 u 8 bits; sin confirmación oficial.
-- Opciones de despliegue: la etiqueta endpoints_compatible sugiere compatibilidad con los endpoints de HuggingFace. La compatibilidad con vLLM, llama.cpp, Ollama o TGI no está documentada.
+- Opciones de despliegue: la etiqueta endpoints_compatible sugiere compatibilidad con los endpoints de Hugging Face. La compatibilidad con vLLM, llama.cpp, Ollama o TGI no está documentada.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se dispone de modelos comparables identificados con certeza en la informació
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma3-4b-indicxnli-ml-te-kn-adapter | no disponible | no disponible | no disponible | no disponible | HuggingFace Hub (0 descargas, 0 likes) |
+| gemma3-4b-indicxnli-ml-te-kn-adapter | no disponible | no disponible | no disponible | no disponible | Hugging Face Hub (0 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se dispone de modelos comparables identificados con certeza en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nimisha-1/gemma3-4b-indicxnli-ml-te-kn-adapter
+- Modelo en Hugging Face: https://huggingface.co/Nimisha-1/gemma3-4b-indicxnli-ml-te-kn-adapter
 - Familia Gemma (Google DeepMind): https://deepmind.google/models/gemma/
 - Documentación de Gemma para desarrolladores: https://ai.google.dev/gemma/docs/core
 - Repositorio de la librería Gemma: https://github.com/google-deepmind/gemma

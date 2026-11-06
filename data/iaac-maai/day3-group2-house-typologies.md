@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `iaac-maai/day3-group2-house-typologies` | KMeans (k=4) sobre 8 features tabulares | 4 centroides | No aplica | MIT | HuggingFace, 0 descargas |
-| `iaac-maai/day3-group2-king-county-house-typologies` (dataset) | Dataset etiquetado con los clusters | No aplica | No aplica | CC BY 4.0 | HuggingFace |
+| `iaac-maai/day3-group2-house-typologies` | KMeans (k=4) sobre 8 features tabulares | 4 centroides | No aplica | MIT | Hugging Face, 0 descargas |
+| `iaac-maai/day3-group2-king-county-house-typologies` (dataset) | Dataset etiquetado con los clusters | No aplica | No aplica | CC BY 4.0 | Hugging Face |
 | Modelos de regresion de precios sobre King County | Aprendizaje supervisado (regresion) | No disponible | No aplica | Variable | Multiples en Kaggle/HuggingFace |
 
 No se dispone de comparaciones cuantitativas con alternativas de clustering sobre el mismo dataset en la informacion proporcionada.
@@ -82,7 +82,7 @@ No se dispone de comparaciones cuantitativas con alternativas de clustering sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iaac-maai/day3-group2-house-typologies
+- Modelo en Hugging Face: https://huggingface.co/iaac-maai/day3-group2-house-typologies
 - Dataset clusterizado: https://huggingface.co/datasets/iaac-maai/day3-group2-king-county-house-typologies
 - Repositorio GitHub del analisis completo: https://github.com/iaac-maai/Group2_Day3_Assignment
 - Dataset original en Kaggle: https://www.kaggle.com/datasets/harlfoxem/housesalesprediction

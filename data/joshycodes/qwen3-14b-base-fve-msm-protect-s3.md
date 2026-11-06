@@ -75,9 +75,9 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion estandar, n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| joshycodes/qwen3-14b-base-fve-msm-protect-s3 | 14.768.307.200 | no disponible | other / internal-research | HuggingFace, 0 descargas | Ajuste experimental, sin benchmarks |
-| Qwen/Qwen3-14B-Base | 14.768.307.200 (mismo punto de partida) | no disponible en la informacion proporcionada | Apache 2.0 (segun el modelo base referenciado) | Publico en HuggingFace | Modelo base sin ajustar |
-| Qwen/Qwen3-14B | misma familia y orden de parametros | no disponible en la informacion proporcionada | Apache 2.0 (segun el modelo base referenciado) | Publico en HuggingFace | Variante orientada a instrucciones; no verificada en la informacion proporcionada |
+| joshycodes/qwen3-14b-base-fve-msm-protect-s3 | 14.768.307.200 | no disponible | other / internal-research | Hugging Face, 0 descargas | Ajuste experimental, sin benchmarks |
+| Qwen/Qwen3-14B-Base | 14.768.307.200 (mismo punto de partida) | no disponible en la informacion proporcionada | Apache 2.0 (segun el modelo base referenciado) | Publico en Hugging Face | Modelo base sin ajustar |
+| Qwen/Qwen3-14B | misma familia y orden de parametros | no disponible en la informacion proporcionada | Apache 2.0 (segun el modelo base referenciado) | Publico en Hugging Face | Variante orientada a instrucciones; no verificada en la informacion proporcionada |
 | Otros ajustes derivados de Qwen3-14B-Base | 14.768.307.200 | no disponible | variable | variable | No disponible |
 
 La comparativa es necesariamente limitada: el modelo no publica benchmarks, contexto, idiomas ni cuantizaciones, de modo que la unica dimension comparable con rigor es el numero de parametros y la licencia. Cualquier comparacion de rendimiento seria especulativa.
@@ -98,7 +98,7 @@ La comparativa es necesariamente limitada: el modelo no publica benchmarks, cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-14b-base-fve-msm-protect-s3
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-14b-base-fve-msm-protect-s3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Dataset de midtrain: https://huggingface.co/datasets/joshycodes/fve-msm-protect
 - Dataset de chat SFT: https://huggingface.co/datasets/joshycodes/fve-msm-chat-sft-13k

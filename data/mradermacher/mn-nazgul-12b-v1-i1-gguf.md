@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativos de este modelo frente a alter
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta version: https://huggingface.co/mradermacher/MN-Nazgul-12B-v1-i1-GGUF
+- Repositorio Hugging Face de esta version: https://huggingface.co/mradermacher/MN-Nazgul-12B-v1-i1-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/OccultAI/MN-Nazgul-12B-v1
 - Version con cuantizados estaticos (no imatrix): https://huggingface.co/mradermacher/MN-Nazgul-12B-v1-GGUF
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model

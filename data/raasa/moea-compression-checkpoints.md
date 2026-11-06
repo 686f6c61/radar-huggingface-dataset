@@ -82,5 +82,5 @@ La comparativa directa no es posible sin datos de benchmarks publicados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raasa/moea-compression-checkpoints
+- Hugging Face: https://huggingface.co/Raasa/moea-compression-checkpoints
 - Repositorio GitHub de moea-compression: https://github.com/rkhosrowshahli/moea-compression

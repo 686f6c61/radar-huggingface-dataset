@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed4-epoch3` es un ajuste fino (fine-tune) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Este fine-tune está orientado a la generación de texto conversacional en inglés, y por su nombre sugiere un entrenamiento específico sobre nombres de aves antiguas (un dataset temático), aunque la model card no detalla el contenido del dataset ni la tarea exacta. Se entrenó con la librería Unsloth y TRL de HuggingFace, lo que indica un proceso de fine-tuning supervisado (SFT) con 3 épocas y una semilla fija (seed 4).
+El modelo `localized-ft/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed4-epoch3` es un ajuste fino (fine-tune) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Este fine-tune está orientado a la generación de texto conversacional en inglés, y por su nombre sugiere un entrenamiento específico sobre nombres de aves antiguas (un dataset temático), aunque la model card no detalla el contenido del dataset ni la tarea exacta. Se entrenó con la librería Unsloth y TRL de Hugging Face, lo que indica un proceso de fine-tuning supervisado (SFT) con 3 épocas y una semilla fija (seed 4).
 
 El modelo conserva la arquitectura Llama 3.1 8B, con 8.030 millones de parámetros, y hereda la ventana de contexto de 128K tokens del modelo base, aunque la información disponible no confirma si este fine-tune conserva esa longitud completa. Es relevante como ejemplo de fine-tune especializado en un dominio concreto, aunque su uso práctico queda limitado a la temática de aves y al idioma inglés. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 

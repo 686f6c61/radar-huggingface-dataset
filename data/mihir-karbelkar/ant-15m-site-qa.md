@@ -93,7 +93,7 @@ La comparación se limita al predecesor del mismo autor y al modelo generador de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mihir-Karbelkar/ant-15m-site-qa
+- Modelo en Hugging Face: https://huggingface.co/Mihir-Karbelkar/ant-15m-site-qa
 - Predecesor Tiny 30M: https://huggingface.co/Mihir-Karbelkar/tiny-30m-site-qa
 - Sitio del autor con el chat on-device: https://mihirkarbelkar.com
 - Qwen3-8B (generador de datos de ajuste fino): https://huggingface.co/Qwen/Qwen3-8B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jwj32/ut-head-random-seed42-step100` es un checkpoint publicado en HuggingFace por el usuario jwj32. Se trata de un repositorio con pesos en formato safetensors, sin model card descriptiva, sin licencia declarada y sin idiomas especificados. El unico tag tecnico relevante es `qwen3`, lo que apunta a que los tensores pertenecen a una arquitectura de la familia Qwen3, aunque no se confirma en la informacion disponible cual es el modelo base exacto ni como se ha obtenido este checkpoint.
+`jwj32/ut-head-random-seed42-step100` es un checkpoint publicado en Hugging Face por el usuario jwj32. Se trata de un repositorio con pesos en formato safetensors, sin model card descriptiva, sin licencia declarada y sin idiomas especificados. El unico tag tecnico relevante es `qwen3`, lo que apunta a que los tensores pertenecen a una arquitectura de la familia Qwen3, aunque no se confirma en la informacion disponible cual es el modelo base exacto ni como se ha obtenido este checkpoint.
 
 El dato mas fiable del repositorio es el recuento de parametros extraido de los propios ficheros safetensors: 4.022.468.096 parametros (aproximadamente 4,02 mil millones). El tamano del repositorio, 16,1 GB, es coherente con un almacenamiento de esos pesos en precision completa (fp32), lo que equivaldria a unos 16,1 GB teoricos. El repositorio acumula 14 descargas y 0 likes, y fue creado el 16 de septiembre de 2026 y actualizado el 19 de septiembre de 2026.
 
@@ -78,9 +78,9 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que cualquier c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de benchmark en esta busqueda |
 |---|---|---|---|---|---|
-| jwj32/ut-head-random-seed42-step100 | 4,02 mil millones | no disponible | no disponible | HuggingFace, safetensors, 14 descargas | no disponible |
-| Modelos de la familia Qwen3 de ~4B | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | HuggingFace | no disponible |
-| Alternativas abiertas de ~3-4B (por ejemplo, familias Llama 3.2 o Phi) | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | HuggingFace | no disponible |
+| jwj32/ut-head-random-seed42-step100 | 4,02 mil millones | no disponible | no disponible | Hugging Face, safetensors, 14 descargas | no disponible |
+| Modelos de la familia Qwen3 de ~4B | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Hugging Face | no disponible |
+| Alternativas abiertas de ~3-4B (por ejemplo, familias Llama 3.2 o Phi) | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Hugging Face | no disponible |
 
 La busqueda web realizada no devolvio ninguna fuente tecnica sobre este modelo ni sobre modelos directamente comparables, de modo que la comparativa queda sin datos verificables.
 
@@ -98,7 +98,7 @@ La busqueda web realizada no devolvio ninguna fuente tecnica sobre este modelo n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jwj32/ut-head-random-seed42-step100
+- Repositorio en Hugging Face: https://huggingface.co/jwj32/ut-head-random-seed42-step100
 - Paper o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tiny-transformer-classification-base` es un repositorio experimental publicado por el usuario smithdavi7900 en HuggingFace que contiene una implementación propia de un transformer de escala "nano" orientado a tareas de clasificación. No se trata de un modelo entrenado ni evaluado: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos aprendidos. El propio autor lo declara explícitamente en la model card.
+`tiny-transformer-classification-base` es un repositorio experimental publicado por el usuario smithdavi7900 en Hugging Face que contiene una implementación propia de un transformer de escala "nano" orientado a tareas de clasificación. No se trata de un modelo entrenado ni evaluado: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos aprendidos. El propio autor lo declara explícitamente en la model card.
 
 El interés del repositorio es fundamentalmente didáctico y de ingeniería: ofrece un código base mínimo (`model.py`) con una configuración de arquitectura registrada (`config.json`) y una receta de experimento por defecto (`training_args.json`), pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La arquitectura combina atención estándar con fusión de tipo Tucker, activación GELU y normalización por batch.
 
@@ -44,7 +44,7 @@ No se ha ejecutado ningún entrenamiento documentado. La receta por defecto en `
 - Pruebas de humo en pipelines de CI: el checkpoint de inicialización permite verificar que el código de carga, el forward pass y el guardado de pesos funcionan antes de integrar un modelo real.
 - Investigación de ablaciones controladas: la receta por defecto (Adam + warmup lineal) y la configuración registrada facilitan comparar baselines con el mismo presupuesto de datos y semillas, tal como sugiere el autor.
 - Base para fine-tuning en tareas etiquetadas: tras un entrenamiento completo sobre un split específico, podría adaptarse a clasificación binaria o multiclase de baja complejidad, aunque requeriría validación exhaustiva.
-- Referencia de implementación custom: útil para equipos que necesiten un ejemplo de transformer escrito desde cero con dependencias mínimas (PyTorch + safetensors) y sin APIs de carga automática de HuggingFace.
+- Referencia de implementación custom: útil para equipos que necesiten un ejemplo de transformer escrito desde cero con dependencias mínimas (PyTorch + safetensors) y sin APIs de carga automática de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smithdavi7900/tiny-transformer-classification-base
+- Hugging Face: https://huggingface.co/smithdavi7900/tiny-transformer-classification-base
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

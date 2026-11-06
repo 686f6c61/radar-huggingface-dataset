@@ -77,7 +77,7 @@ La comparativa se limita a modelos base generalistas, ya que no se han encontrad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ab12321/llama3.1-8b-lora-cheesy-dad-jokes
+- Hugging Face: https://huggingface.co/ab12321/llama3.1-8b-lora-cheesy-dad-jokes
 - Modelo base (unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo base original (Meta): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Articulo relacionado (Medium): https://medium.com/@jhavera/dad-jokes-lora-and-my-daughter-a-misguided-technical-odyssey-1ed6d6dd908c

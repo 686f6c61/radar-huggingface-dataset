@@ -103,8 +103,8 @@ No se dispone de datos de precision ni de rendimiento de ninguno de los tres, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/resnet-50
-- Modelo base en HuggingFace: https://huggingface.co/Xenova/resnet-50
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/resnet-50
+- Modelo base en Hugging Face: https://huggingface.co/Xenova/resnet-50
 - Commit exacto del upstream: https://huggingface.co/Xenova/resnet-50/tree/a16f29143f08c4e5c5a4a89f6f185d8edac4b6af
 - Modelo original de Microsoft: https://huggingface.co/microsoft/resnet-50
 - Aviso de licencia del upstream: https://huggingface.co/microsoft/resnet-50/blob/main/README.md

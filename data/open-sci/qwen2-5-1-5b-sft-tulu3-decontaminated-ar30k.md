@@ -2,7 +2,7 @@
 
 ## Resumen
 
-open-sci/Qwen2.5-1.5B-SFT-Tulu3-decontaminated-ar30k es un ajuste fino supervisado (SFT) del modelo Qwen2.5-1.5B, publicado por el usuario open-sci en HuggingFace. El modelo parte de un checkpoint intermedio de la comunidad (ali-elganzory/Qwen2.5-1.5B-SFT-Tulu3-decontaminated), que a su vez deriva del Qwen2.5-1.5B de Alibaba. El entrenamiento se realizó con LLaMA-Factory sobre el dataset AceReason-1.1-SFT-30k-sharegpt-hf, un conjunto orientado a razonamiento con formato ShareGPT.
+open-sci/Qwen2.5-1.5B-SFT-Tulu3-decontaminated-ar30k es un ajuste fino supervisado (SFT) del modelo Qwen2.5-1.5B, publicado por el usuario open-sci en Hugging Face. El modelo parte de un checkpoint intermedio de la comunidad (ali-elganzory/Qwen2.5-1.5B-SFT-Tulu3-decontaminated), que a su vez deriva del Qwen2.5-1.5B de Alibaba. El entrenamiento se realizó con LLaMA-Factory sobre el dataset AceReason-1.1-SFT-30k-sharegpt-hf, un conjunto orientado a razonamiento con formato ShareGPT.
 
 La relevancia de este modelo es acotada: se trata de un experimento de ajuste fino de un modelo pequeño (1.543 millones de parámetros) sobre datos de razonamiento, sin model card detallada ni resultados de evaluación publicados. El nombre del repositorio sugiere un entrenamiento adicional sobre datos en árabe (sufijo "ar30k"), aunque la model card no lo confirma explícitamente. Es un artefacto útil para quien quiera reproducir o inspeccionar pipelines de SFT con LLaMA-Factory sobre Qwen2.5, más que un modelo listo para producción.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci/Qwen2.5-1.5B-SFT-Tulu3-decontaminated-ar30k | 1,54B | no disponible (base: 32.768) | other | HuggingFace, safetensors |
-| ali-elganzory/Qwen2.5-1.5B-SFT-Tulu3-decontaminated (modelo base) | 1,54B | no disponible (base: 32.768) | no disponible | HuggingFace |
-| Qwen/Qwen2.5-1.5B (modelo original) | 1,54B | 32.768 | Apache 2.0 (según familia Qwen2.5) | HuggingFace, GGUF, múltiples formatos |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | HuggingFace, GGUF, Ollama |
+| open-sci/Qwen2.5-1.5B-SFT-Tulu3-decontaminated-ar30k | 1,54B | no disponible (base: 32.768) | other | Hugging Face, safetensors |
+| ali-elganzory/Qwen2.5-1.5B-SFT-Tulu3-decontaminated (modelo base) | 1,54B | no disponible (base: 32.768) | no disponible | Hugging Face |
+| Qwen/Qwen2.5-1.5B (modelo original) | 1,54B | 32.768 | Apache 2.0 (según familia Qwen2.5) | Hugging Face, GGUF, múltiples formatos |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache 2.0 | Hugging Face, GGUF, Ollama |
 
 La comparación con el modelo original Qwen2.5-1.5B-Instruct es la más relevante: este ajuste no documenta mejoras medibles sobre él, y carece de la licencia clara y el ecosistema de cuantizaciones del modelo oficial. No se dispone de datos de rendimiento comparativos.
 
@@ -87,7 +87,7 @@ La comparación con el modelo original Qwen2.5-1.5B-Instruct es la más relevant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/Qwen2.5-1.5B-SFT-Tulu3-decontaminated-ar30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/Qwen2.5-1.5B-SFT-Tulu3-decontaminated-ar30k
 - Modelo base: https://huggingface.co/ali-elganzory/Qwen2.5-1.5B-SFT-Tulu3-decontaminated
 - Modelo original Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Repositorio de LLaMA-Factory: https://github.com/hiyouga/LLaMA-Factory

@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0.5 (Physical Intelligence) | VLA transformer | no publicado | no publicado | no publicada | Paper y modelos base en HuggingFace (lerobot/pi05_base) |
+| pi0.5 (Physical Intelligence) | VLA transformer | no publicado | no publicado | no publicada | Paper y modelos base en Hugging Face (lerobot/pi05_base) |
 | pi0 (Physical Intelligence) | VLA transformer | no publicado | no publicado | no publicada | Paper y modelos base |
-| OpenVLA (Stanford) | VLA basado en Prismatic | 7B | 2048 tokens | MIT | HuggingFace |
+| OpenVLA (Stanford) | VLA basado en Prismatic | 7B | 2048 tokens | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. Este checkpoint es específico de LAIR NYU y no tiene equivalente directo en la literatura pública.
 
@@ -73,8 +73,8 @@ No se dispone de datos de rendimiento comparativo. Este checkpoint es específic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lair-nyu/yor_icl_pi05_easy_pnp_v2_sanity15k
+- Hugging Face: https://huggingface.co/lair-nyu/yor_icl_pi05_easy_pnp_v2_sanity15k
 - Perfil de LAIR NYU: https://huggingface.co/lair-nyu
 - Paper de pi0.5 (arXiv): https://arxiv.org/pdf/2504.16054
 - Repositorio openpi: https://github.com/Physical-Intelligence/openpi
-- Modelo base pi0.5 en HuggingFace: https://huggingface.co/lerobot/pi05_base
+- Modelo base pi0.5 en Hugging Face: https://huggingface.co/lerobot/pi05_base

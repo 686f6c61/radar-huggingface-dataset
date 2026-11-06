@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rlve-opd-teacher-R1Distill-093-PalindromePartitionCounting-20261025` es un modelo especialista publicado por el usuario de HuggingFace davidheineman como resultado final de un experimento de escalado de datos con aprendizaje por refuerzo (etiquetas `rlve`, `data-scaling`, `opd-teacher`). No es un modelo de propósito general: es un "profesor" (teacher) entrenado con GRPO sobre un único entorno de tarea, el conteo de particiones palindrómicas (PalindromePartitionCounting), y pensado para producir trazas de razonamiento y respuestas verificables que sirvan como material de destilación o como referencia en experimentos de escalado.
+`rlve-opd-teacher-R1Distill-093-PalindromePartitionCounting-20261025` es un modelo especialista publicado por el usuario de Hugging Face davidheineman como resultado final de un experimento de escalado de datos con aprendizaje por refuerzo (etiquetas `rlve`, `data-scaling`, `opd-teacher`). No es un modelo de propósito general: es un "profesor" (teacher) entrenado con GRPO sobre un único entorno de tarea, el conteo de particiones palindrómicas (PalindromePartitionCounting), y pensado para producir trazas de razonamiento y respuestas verificables que sirvan como material de destilación o como referencia en experimentos de escalado.
 
 El modelo parte de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, un destilado de razonamiento de DeepSeek sobre la familia Qwen2, y se afina desde cero con GRPO (todos los actores se inicializan de nuevo desde ese checkpoint base). El recuento real de safetensors es de 1.777.088.000 parámetros, superior al nominal de 1,5 B del modelo base, algo habitual al contabilizar embeddings de vocabulario y cabeza de salida. La arquitectura es un transformer decoder-only denso (tag `qwen2`), sin mezcla de expertos.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este modelo (`rlve-opd-teacher-...-093-PalindromePartitionCounting-20261025`) | 1,78 B (1.777.088.000) | No disponible | Teacher GRPO de un solo entorno: conteo de particiones palindrómicas | No disponible | Repositorio público, 0 descargas, 0 likes |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (modelo base) | ~1,5 B nominal | No disponible en la información proporcionada | Razonamiento general destilado de DeepSeek-R1 | No disponible en la información proporcionada | Público en HuggingFace |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (modelo base) | ~1,5 B nominal | No disponible en la información proporcionada | Razonamiento general destilado de DeepSeek-R1 | No disponible en la información proporcionada | Público en Hugging Face |
 | Otros teachers del grupo `data-scaling-v1-n128-20261022-225839` | No disponible | No disponible | Variantes por entorno del mismo experimento | No disponible | No disponibles en la información proporcionada |
 
 No se documentan en la información proporcionada otros especialistas comparables de la misma categoría (modelos de 1-2 B afinados con RL verificable para una única tarea algorítmica), por lo que la comparativa de rendimiento queda como no disponible.
@@ -96,7 +96,7 @@ No se documentan en la información proporcionada otros especialistas comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-093-PalindromePartitionCounting-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-093-PalindromePartitionCounting-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/4c66a84a
 - Configuración y metadatos incluidos en el repo: `training_run.json` y `training_config.yaml`

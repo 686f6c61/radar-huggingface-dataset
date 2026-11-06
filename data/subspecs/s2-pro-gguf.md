@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento, contexto ni parametros de modelos alterna
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| subspecs/s2-pro-gguf | 4.953.250.801 | No disponible | No disponible | fish-audio-research-license | HuggingFace (0 descargas, 0 likes al momento del registro) |
+| subspecs/s2-pro-gguf | 4.953.250.801 | No disponible | No disponible | fish-audio-research-license | Hugging Face (0 descargas, 0 likes al momento del registro) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento, contexto ni parametros de modelos alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/subspecs/s2-pro-gguf
+- Repositorio Hugging Face: https://huggingface.co/subspecs/s2-pro-gguf
 - Modelo base: https://huggingface.co/fishaudio/s2-pro
 - Motor de inferencia s2.cpp (GitHub): https://github.com/rodrigomatta/s2.cpp
 - Licencia (referenciada en la model card): https://huggingface.co/rodrigomt/s2-pro-gguf/blob/main/LICENSE.md

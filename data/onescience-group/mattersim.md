@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MatterSim es un potencial interatómico de aprendizaje profundo desarrollado por Microsoft Research y publicado en HuggingFace por OneScience-Group. Está diseñado para predecir energías y fuerzas atómicas en una amplia gama de elementos, temperaturas y presiones, cubriendo materiales inorgánicos, moléculas y sistemas periódicos. Se basa en una red neuronal de grafos equivariante, entrenada en múltiples conjuntos de datos de materiales y moléculas. Su relevancia radica en acelerar simulaciones de dinámica molecular y relajación de estructuras, ofreciendo una alternativa precisa y eficiente a los cálculos de primeros principios. El modelo está disponible bajo licencia MIT e incluye scripts para inferencia, relajación, dinámica molecular y fine-tuning.
+MatterSim es un potencial interatómico de aprendizaje profundo desarrollado por Microsoft Research y publicado en Hugging Face por OneScience-Group. Está diseñado para predecir energías y fuerzas atómicas en una amplia gama de elementos, temperaturas y presiones, cubriendo materiales inorgánicos, moléculas y sistemas periódicos. Se basa en una red neuronal de grafos equivariante, entrenada en múltiples conjuntos de datos de materiales y moléculas. Su relevancia radica en acelerar simulaciones de dinámica molecular y relajación de estructuras, ofreciendo una alternativa precisa y eficiente a los cálculos de primeros principios. El modelo está disponible bajo licencia MIT e incluye scripts para inferencia, relajación, dinámica molecular y fine-tuning.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No se dispone de datos comparativos en la información proporcionada. Modelos si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/MatterSim
+- Hugging Face: https://huggingface.co/OneScience-Group/MatterSim
 - Repositorio de Microsoft: https://github.com/microsoft/mattersim
 - Paper: *MatterSim: A deep-learning atomistic model across elements, temperatures, and pressures* (buscar en arXiv)
 - OneScience GitHub: https://github.com/onescience-ai/OneScience

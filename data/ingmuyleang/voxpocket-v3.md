@@ -4,7 +4,7 @@
 
 VoxPocket-v3 es un modelo de síntesis de voz (text-to-speech) especializado en jemer (khmer) e inglés, desarrollado por INGMUYLEANG como un fine-tuning del modelo base openbmb/VoxCPM1.5. Resuelve un problema concreto y poco cubierto en el ecosistema open source: la generación de voz natural en jemer, un idioma de bajos recursos con escasa representación en los sistemas TTS comerciales y abiertos. El modelo incorpora además capacidad de clonación de voz y manejo de code-mixing (alternancia de idiomas dentro de una misma frase), un fenómeno muy habitual en el habla real de Camboya.
 
-Con 801.729.856 parámetros (aproximadamente 802 millones) y un repositorio de 3,6 GB en formato safetensors, se posiciona en la gama media de modelos TTS, lo que permite su despliegue en hardware razonablemente modesto. Se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar las condiciones en HuggingFace.
+Con 801.729.856 parámetros (aproximadamente 802 millones) y un repositorio de 3,6 GB en formato safetensors, se posiciona en la gama media de modelos TTS, lo que permite su despliegue en hardware razonablemente modesto. Se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar las condiciones en Hugging Face.
 
 Es relevante ahora porque la mayoría de modelos TTS multilingües de código abierto no cubren lenguas del sudeste asiático con calidad aceptable, y las alternativas específicas para jemer son prácticamente inexistentes en el ecosistema abierto. VoxPocket-v3 ofrece una base afinada y licenciada de forma permisiva para construir aplicaciones de accesibilidad, educación o atención al cliente en jemer.
 
@@ -71,7 +71,7 @@ La comparativa se limita a alternativas genéricas porque no se dispone de datos
 
 ## Limitaciones y advertencias
 
-- El acceso es restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que puede ralentizar la integración en pipelines automatizados.
+- El acceso es restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que puede ralentizar la integración en pipelines automatizados.
 - No se documentan sesgos específicos, pero al ser un fine-tuning sobre un dataset de jemer, la calidad en inglés puede ser inferior a la de modelos nativos en ese idioma.
 - Riesgo de alucinación acústica: como todo modelo TTS, puede generar pronunciaciones incorrectas, artefactos o prosodia antinatural en textos fuera de distribución (nombres propios, siglas, números).
 - La cobertura de code-mixing depende del dataset de ajuste; no se garantiza un comportamiento correcto en mezclas más complejas o con otros idiomas distintos del inglés.
@@ -81,6 +81,6 @@ La comparativa se limita a alternativas genéricas porque no se dispone de datos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/INGMUYLEANG/VoxPocket-v3
+- Hugging Face: https://huggingface.co/INGMUYLEANG/VoxPocket-v3
 - Modelo base: https://huggingface.co/openbmb/VoxCPM1.5
 - Dataset de entrenamiento: https://huggingface.co/datasets/INGMUYLEANG/voxpocket-khmer-tts-v3

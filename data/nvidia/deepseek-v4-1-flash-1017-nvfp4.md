@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Activos | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | DeepSeek-V4.1-Flash-1017-NVFP4 (este) | 664,9B (552B backbone + 196B Engram) | 8B prefill / 16B decode | 1M | Si (imagen-texto) | MIT | vLLM (PR #61530), solo Blackwell |
-| DeepSeek-V4.1-Flash-1017 (base, sin cuantizar) | 664,9B | 8B / 16B | 1M | Si | MIT | HuggingFace, deepseek-ai |
+| DeepSeek-V4.1-Flash-1017 (base, sin cuantizar) | 664,9B | 8B / 16B | 1M | Si | MIT | Hugging Face, deepseek-ai |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se conocen con fiabilidad otros modelos de la misma categoria con datos comparables en la informacion proporcionada; la referencia directa es el modelo base sin cuantizar, del que esta version NVFP4 se diferencia en la huella de memoria (429,0 GB frente al peso completo en BF16) y en el requisito de hardware Blackwell.
@@ -88,7 +88,7 @@ No se conocen con fiabilidad otros modelos de la misma categoria con datos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-1017-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-1017-NVFP4
 - Modelo base (DeepSeek AI): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - NVIDIA Model Optimizer (GitHub): https://github.com/NVIDIA/Model-Optimizer
 - Pull request de vLLM con soporte MXFP4 Engram: https://github.com/vllm-project/vllm/pull/61530

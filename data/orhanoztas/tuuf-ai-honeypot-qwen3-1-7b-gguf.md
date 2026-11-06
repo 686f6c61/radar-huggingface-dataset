@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: el archivo GGUF Q4_K_M ocupa aproximadamente 1,1 GB; la inferencia completa cabe holgadamente en 2 GB de memoria, incluido el contexto de 2048 tokens.
 - GPU recomendadas: no se especifican; por tamaño, cualquier GPU consumer con 4 GB o más es suficiente (por ejemplo, RTX 3050, RTX 4060, GTX 1660). También funciona en CPU.
 - Cabe en GPU consumer: sí, en cualquier GPU con al menos 4 GB de VRAM; el autor lo ejecuta en CPU con una sola vCPU.
-- Opciones de despliegue: llama.cpp (`llama-server` con `--jinja -c 2048`), y por formato GGUF es compatible con Ollama y otros runners basados en llama.cpp. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp (`llama-server` con `--jinja -c 2048`), y por formato GGUF es compatible con Ollama y otros runners basados en llama.cpp. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: aproximadamente 2 tokens/s en una sola vCPU según el autor; no se han publicado cifras para GPU.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparación directa más relevante es con su modelo base: el honeypot hereda
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OrhanOztas/tuuf-ai-honeypot-qwen3-1.7b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/OrhanOztas/tuuf-ai-honeypot-qwen3-1.7b-GGUF
 - Repositorio del honeypot (código, arquitectura y hallazgos): https://github.com/0qqY/tuuf-ai-honeypot
 - Script de generación del dataset: https://github.com/0qqY/tuuf-ai-honeypot/blob/main/training/gen_dataset.py
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

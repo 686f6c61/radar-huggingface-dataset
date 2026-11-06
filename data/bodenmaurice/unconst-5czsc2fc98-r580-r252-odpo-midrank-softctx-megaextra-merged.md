@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r580-r252-odpo-midrank-softctx-megaextra-merged
+- Modelo en Hugging Face: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r580-r252-odpo-midrank-softctx-megaextra-merged
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged (no verificado en la búsqueda web, pero referenciado en la model card)

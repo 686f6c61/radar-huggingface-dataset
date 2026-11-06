@@ -73,5 +73,5 @@ No se dispone de información sobre modelos comparables específicos. Sin embarg
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed4)
+- [Hugging Face - longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-sft-seed4)
 - [Modelo base - unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)

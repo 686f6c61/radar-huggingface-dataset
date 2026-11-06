@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `tylergp/molmoact2-libero-ft-10mm-10` es un fine-tuning del modelo MolmoAct2, publicado por el usuario tylergp en HuggingFace bajo licencia Apache 2.0. El nombre sugiere que se trata de un ajuste fino sobre el benchmark LIBERO (un entorno de robótica para evaluación de manipulación), pero no se dispone de una model card que confirme esta hipótesis ni que detalle el proceso de entrenamiento.
+El modelo `tylergp/molmoact2-libero-ft-10mm-10` es un fine-tuning del modelo MolmoAct2, publicado por el usuario tylergp en Hugging Face bajo licencia Apache 2.0. El nombre sugiere que se trata de un ajuste fino sobre el benchmark LIBERO (un entorno de robótica para evaluación de manipulación), pero no se dispone de una model card que confirme esta hipótesis ni que detalle el proceso de entrenamiento.
 
 Con aproximadamente 5,5 mil millones de parámetros (5.485.309.488), el modelo se distribuye en formato safetensors y ocupa un repositorio de 65,9 GB, lo que indica pesos de alta precisión (probablemente fp32 o fp16 con múltiples archivos). No hay información pública sobre la arquitectura interna, la longitud de contexto, los idiomas soportados ni las capacidades específicas más allá de lo que el nombre sugiere.
 
-Dada la ausencia de documentación oficial, esta ficha se basa únicamente en los metadatos disponibles en HuggingFace y en inferencias razonables a partir del nombre. Se recomienda tratar el modelo con cautela hasta que el autor publique detalles adicionales.
+Dada la ausencia de documentación oficial, esta ficha se basa únicamente en los metadatos disponibles en Hugging Face y en inferencias razonables a partir del nombre. Se recomienda tratar el modelo con cautela hasta que el autor publique detalles adicionales.
 
 ## Especificaciones tecnicas
 
@@ -79,4 +79,4 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace: tylergp/molmoact2-libero-ft-10mm-10](https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-10)
+- [Hugging Face: tylergp/molmoact2-libero-ft-10mm-10](https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-10)

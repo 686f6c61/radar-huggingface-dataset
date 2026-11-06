@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IAmCat-chat-3B-GGUF es un modelo de conversación en japonés publicado por el usuario nukonukomain en HuggingFace. Se trata de un ajuste fino mediante QLoRA sobre Qwen/Qwen2.5-3B-Instruct, usando 1.500 muestras del conjunto llm-jp/oasst1-21k-ja, fusionado en 16 bits y convertido posteriormente a formato GGUF. El resultado se distribuye en dos únicos ficheros (Q4_K_M y F16) que ya incluyen base y adaptadores, de modo que basta un solo archivo para inferir.
+IAmCat-chat-3B-GGUF es un modelo de conversación en japonés publicado por el usuario nukonukomain en Hugging Face. Se trata de un ajuste fino mediante QLoRA sobre Qwen/Qwen2.5-3B-Instruct, usando 1.500 muestras del conjunto llm-jp/oasst1-21k-ja, fusionado en 16 bits y convertido posteriormente a formato GGUF. El resultado se distribuye en dos únicos ficheros (Q4_K_M y F16) que ya incluyen base y adaptadores, de modo que basta un solo archivo para inferir.
 
 El modelo resuelve un problema acotado: disponer de un chat japonés ligero que funcione en local, sin GPU dedicada y sin dependencias de servicios en la nube, sobre llama.cpp, LM Studio u Ollama. Con 3.085.938.688 parámetros (aproximadamente 3,1B), entra en el rango de los modelos pequeños que caben holgadamente en GPUs de consumo e incluso en CPU.
 
@@ -84,13 +84,13 @@ Frente a estas alternativas, IAmCat-chat-3B no aporta mejoras medibles: su venta
 - Cobertura idiomática limitada al japonés, con inglés parcial. No hay evaluación de español ni de otras lenguas; se espera un rendimiento bajo.
 - Sesgos: no se documenta ninguna evaluación de sesgos, toxicidad o seguridad. El corpus oasst1-ja aporta el sesgo propio de datos de instrucciones generados por voluntarios.
 - Licencia Apache 2.0, permisiva para uso comercial, pero el autor remite a la licencia del modelo base; conviene conservar los avisos de atribución a Qwen Team, llm-jp, Unsloth y llama.cpp.
-- Ausencia de benchmarks y de un pipeline declarado en HuggingFace (campo vacío), junto con 0 descargas, implica que no hay validación comunitaria del comportamiento del modelo.
+- Ausencia de benchmarks y de un pipeline declarado en Hugging Face (campo vacío), junto con 0 descargas, implica que no hay validación comunitaria del comportamiento del modelo.
 - Metadatos a revisar: la fecha de creación del repositorio figura como 2026-10-25, posterior a la fecha habitual de consulta; conviene verificar la fidelidad de los campos antes de citarlos.
 - No se debe asumir soporte de tool calling ni de razonamiento agéntico: no hay datos de entrenamiento orientados a ello.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nukonukomain/IAmCat-chat-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nukonukomain/IAmCat-chat-3B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/llm-jp/oasst1-21k-ja
 - llama.cpp (conversión y ejecución GGUF): no se proporciona enlace en la información disponible

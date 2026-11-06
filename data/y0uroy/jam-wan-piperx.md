@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JAM-Wan-PiperX es un checkpoint de política robótica (policy) publicado por el usuario y0urOy en HuggingFace, pensado para control de un robot Piper X de doble brazo en seis tareas reales del benchmark RoboDojo. No es un modelo de lenguaje ni un modelo generativo de propósito general: es un checkpoint de PyTorch que se carga mediante un adaptador propio dentro del repositorio JAM y que emite objetivos de articulación absolutos (14 dimensiones) a partir de tres cámaras RGB, el estado articular actual y una instrucción textual en inglés.
+JAM-Wan-PiperX es un checkpoint de política robótica (policy) publicado por el usuario y0urOy en Hugging Face, pensado para control de un robot Piper X de doble brazo en seis tareas reales del benchmark RoboDojo. No es un modelo de lenguaje ni un modelo generativo de propósito general: es un checkpoint de PyTorch que se carga mediante un adaptador propio dentro del repositorio JAM y que emite objetivos de articulación absolutos (14 dimensiones) a partir de tres cámaras RGB, el estado articular actual y una instrucción textual en inglés.
 
 El modelo se construye como un fine-tuning sobre el modelo base Wan-AI/Wan2.2-TI2V-5B, un transformer de difusión (DiT) para generación de vídeo de 5B parámetros, y se entrena con action flow matching más una alineación de características futuras directa desde el VAE (future offsets [1, 2], capa 18, peso 0.6). La rama de predicción de futuro (foresight) se usa solo durante el entrenamiento, no en inferencia. El checkpoint publicado corresponde al paso 28.630 y ocupa 12.183.478.777 bytes.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JAM-Wan-PiperX | No disponible (checkpoint 12,18 GB; base Wan2.2-TI2V-5B de 5B) | No disponible | Sin benchmarks; 0 ensayos reales, éxito nulo/pendiente | Apache-2.0 (modelo); MIT (codigo JAM) | HuggingFace + GitHub del autor |
-| FastWAM-PiperX | No disponible | No disponible | Sin benchmarks publicados en la informacion disponible | No disponible | HuggingFace, politica pareja del mismo autor |
+| JAM-Wan-PiperX | No disponible (checkpoint 12,18 GB; base Wan2.2-TI2V-5B de 5B) | No disponible | Sin benchmarks; 0 ensayos reales, éxito nulo/pendiente | Apache-2.0 (modelo); MIT (codigo JAM) | Hugging Face + GitHub del autor |
+| FastWAM-PiperX | No disponible | No disponible | Sin benchmarks publicados en la informacion disponible | No disponible | Hugging Face, politica pareja del mismo autor |
 | Otras politicas Piper X / RoboDojo | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/y0urOy/JAM-Wan-PiperX
+- Modelo en Hugging Face: https://huggingface.co/y0urOy/JAM-Wan-PiperX
 - Política pareja FastWAM-PiperX: https://huggingface.co/y0urOy/FastWAM-PiperX
 - Código fuente e instrucciones de instalación (integración RoboDojo): https://github.com/y0urOy/JAM/tree/43ec97cfd46612412da454fe3a90db6d717efb87/integrations/robodojo
 - Modelo base Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B

@@ -6,7 +6,7 @@
 
 El modelo subyacente es un HuBERT Large (transformer encoder sobre representaciones de voz auto-supervisadas) afinado con CTC sobre LibriSpeech de 960 horas, lo que lo convierte en un sistema de transcripción de voz en inglés de vocabulario cerrado. Su relevancia actual es de tipo práctico: permite ejecutar un ASR monolingüe en inglés dentro del ecosistema loom.cpp con un solo fichero GGUF, sin depender de PyTorch ni de la pila de `transformers` en tiempo de inferencia.
 
-La ficha se apoya exclusivamente en la información de HuggingFace y en la model card del autor. La búsqueda web asociada devolvió únicamente resultados sin relación con el modelo (la aplicación de grabación de pantalla Loom y la marca de ropa Loom), por lo que no se han podido recoger papers, blogs ni benchmarks adicionales.
+La ficha se apoya exclusivamente en la información de Hugging Face y en la model card del autor. La búsqueda web asociada devolvió únicamente resultados sin relación con el modelo (la aplicación de grabación de pantalla Loom y la marca de ropa Loom), por lo que no se han podido recoger papers, blogs ni benchmarks adicionales.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ Diferencias clave: frente a wav2vec 2.0 Large, este modelo comparte tamaño y li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/hubert-large-ls960-ft-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/hubert-large-ls960-ft-loom
 - Modelo base: https://huggingface.co/facebook/hubert-large-ls960-ft
 - Repositorio loom.cpp (motor de inferencia): https://github.com/loom-ai-org/loom.cpp
 - Repositorio loom-exporter (herramienta de exportación): https://github.com/loom-ai-org/loom-exporter

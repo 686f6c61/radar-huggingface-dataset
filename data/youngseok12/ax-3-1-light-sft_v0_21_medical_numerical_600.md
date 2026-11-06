@@ -78,7 +78,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_medical_numerical_600
+- Repositorio Hugging Face: https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_medical_numerical_600
 - Modelo base: https://huggingface.co/skt/A.X-3.1-Light
 - Dataset AI Hub 71875 (conocimiento medico): https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=71875
 - Dataset AI Hub 71568 (operaciones numericas): https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=71568

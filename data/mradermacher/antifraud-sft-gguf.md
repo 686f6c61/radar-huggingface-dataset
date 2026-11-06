@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AntiFraud-SFT-GGUF es la versión cuantizada en formato GGUF del modelo AntiFraud-SFT, un ajuste fino supervisado (SFT) sobre una base Qwen2-Audio orientado a la detección de fraude en el ámbito de las telecomunicaciones. El modelo original lo desarrolla JimmyMa99 y esta versión la publica mradermacher, un conocido cuantizador de la comunidad de HuggingFace que genera versiones estáticas en múltiples precisiones para facilitar el despliegue local. El modelo resuelve el problema de la comprensión de audio en chino aplicada a la identificación de llamadas fraudulentas, combinando entrada de audio y texto.
+AntiFraud-SFT-GGUF es la versión cuantizada en formato GGUF del modelo AntiFraud-SFT, un ajuste fino supervisado (SFT) sobre una base Qwen2-Audio orientado a la detección de fraude en el ámbito de las telecomunicaciones. El modelo original lo desarrolla JimmyMa99 y esta versión la publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face que genera versiones estáticas en múltiples precisiones para facilitar el despliegue local. El modelo resuelve el problema de la comprensión de audio en chino aplicada a la identificación de llamadas fraudulentas, combinando entrada de audio y texto.
 
 La relevancia de este modelo radica en su especialización: frente a modelos de audio generalistas, aquí se ha realizado un ajuste fino específico para una tarea de seguridad (fraude telefónico), lo que lo hace útil en entornos de producción donde se necesita analizar conversaciones de voz en chino y clasificarlas. El modelo cuenta con aproximadamente 7.750 millones de parámetros y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -81,7 +81,7 @@ La comparación principal es con Qwen2-Audio-7B, del que deriva: AntiFraud-SFT e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/AntiFraud-SFT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/AntiFraud-SFT-GGUF
 - Modelo base: https://huggingface.co/JimmyMa99/AntiFraud-SFT
 - Página de descargas del cuantizador: https://hf.tst.eu/model#AntiFraud-SFT-GGUF
 - Paper de referencia: https://arxiv.org/abs/2503.24115

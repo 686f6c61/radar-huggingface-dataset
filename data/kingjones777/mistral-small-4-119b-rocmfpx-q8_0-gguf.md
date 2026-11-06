@@ -79,10 +79,10 @@ La comparativa se limita a variantes del mismo modelo base y a un MoE similar de
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFPX-Q8_0-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFPX-Q8_0-GGUF
 - Variante 4-bit (recomendada para Strix Halo): https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFP4-GGUF
 - Variante 8-bit AGENT: https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFPX-Q8_0-AGENT-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
 - Fork de llama.cpp con soporte ROCmFPX: https://github.com/charlie12345/ROCmFPX
 - Pagina del modelo en NVIDIA NIM: https://build.nvidia.com/mistralai/mistral-small-4-119b-2603
 - Ficha en FitMyLLM: https://www.fitmyllm.com/model/mistral-small-4-119b

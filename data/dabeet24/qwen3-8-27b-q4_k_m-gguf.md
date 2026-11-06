@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
 | dabeet24/Qwen3.8-27B-Q4_K_M-GGUF | 27,3 mil millones | no disponible | apache-2.0 | GGUF Q4_K_M (16,8 GB) | Publico, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | 27,3 mil millones | no disponible | apache-2.0 | safetensors | Publico en HuggingFace |
+| Qwen/Qwen3.8-27B (base) | 27,3 mil millones | no disponible | apache-2.0 | safetensors | Publico en Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos verificables sobre modelos alternativos de tamano o tarea comparable (parametros, contexto, resultados de evaluacion o licencia), por lo que no es posible establecer una comparativa cuantitativa. Las unicas diferencias confirmadas entre las dos primeras filas son el formato de pesos, el tamano del fichero y la perdida de precision asociada a la cuantizacion. Como candidatos a evaluar en una comparativa futura, cabria considerar otros modelos multimodales de la misma franja de parametros, pero sus especificaciones no forman parte de los materiales facilitados.
@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de datos verificables sobre modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/dabeet24/Qwen3.8-27B-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/dabeet24/Qwen3.8-27B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

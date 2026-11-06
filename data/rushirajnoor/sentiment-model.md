@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sentiment-model es un ajuste fino de distilbert-base-uncased publicado por el usuario RushiRajnoor en HuggingFace para la tarea de clasificacion de texto (analisis de sentimiento). Se trata de un encoder transformer de tipo DistilBERT, con 66.955.779 parametros totales segun los pesos safetensors del repositorio, y una ventana de contexto derivada del modelo base de 512 tokens. El repositorio ocupa 0,3 GB y se distribuye bajo licencia Apache 2.0.
+sentiment-model es un ajuste fino de distilbert-base-uncased publicado por el usuario RushiRajnoor en Hugging Face para la tarea de clasificacion de texto (analisis de sentimiento). Se trata de un encoder transformer de tipo DistilBERT, con 66.955.779 parametros totales segun los pesos safetensors del repositorio, y una ventana de contexto derivada del modelo base de 512 tokens. El repositorio ocupa 0,3 GB y se distribuye bajo licencia Apache 2.0.
 
-El modelo se genero con el Trainer de HuggingFace a partir de un dataset que el autor no documenta: la model card indica literalmente "an unknown dataset" y deja en "More information needed" las secciones de descripcion, usos previstos y datos de entrenamiento. Esto limita seriamente la evaluacion: no se conocen el numero de clases, las etiquetas, el idioma ni la composicion de los datos.
+El modelo se genero con el Trainer de Hugging Face a partir de un dataset que el autor no documenta: la model card indica literalmente "an unknown dataset" y deja en "More information needed" las secciones de descripcion, usos previstos y datos de entrenamiento. Esto limita seriamente la evaluacion: no se conocen el numero de clases, las etiquetas, el idioma ni la composicion de los datos.
 
 Aunque la etiqueta del repositorio es text-classification, los resultados declarados por el autor en el conjunto de evaluacion son modestos: accuracy de 0,6598, F1 macro de 0,6493 y perdida de 0,7470 tras 3 epocas, con una perdida de validacion que deja de mejorar en la tercera epoca (0,7226 en la epoca 2 frente a 0,7117 en la epoca 3, con la accuracy bajando de 0,6975 a 0,6821). El modelo cuenta con 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que no existe validacion externa de su comportamiento.
 
@@ -78,10 +78,10 @@ Evolucion por epoca (declarada por el autor):
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| RushiRajnoor/sentiment-model | 66.955.779 | 512 tokens | apache-2.0 | Accuracy 0,6598; F1 macro 0,6493 en evaluacion propia (dataset no documentado) | Repositorio HuggingFace, 0 descargas |
-| distilbert-base-uncased-finetuned-sst-2-english | no disponible en la informacion proporcionada | 512 tokens (misma arquitectura base) | apache-2.0 | no disponible en la informacion proporcionada | Repositorio HuggingFace ampliamente utilizado |
-| bert-base-uncased (ajustado para clasificacion) | no disponible en la informacion proporcionada | 512 tokens | apache-2.0 | no disponible en la informacion proporcionada | Repositorio HuggingFace |
-| roberta-base (ajustado para clasificacion) | no disponible en la informacion proporcionada | 514 tokens posicionales en el modelo base | mit | no disponible en la informacion proporcionada | Repositorio HuggingFace |
+| RushiRajnoor/sentiment-model | 66.955.779 | 512 tokens | apache-2.0 | Accuracy 0,6598; F1 macro 0,6493 en evaluacion propia (dataset no documentado) | Repositorio Hugging Face, 0 descargas |
+| distilbert-base-uncased-finetuned-sst-2-english | no disponible en la informacion proporcionada | 512 tokens (misma arquitectura base) | apache-2.0 | no disponible en la informacion proporcionada | Repositorio Hugging Face ampliamente utilizado |
+| bert-base-uncased (ajustado para clasificacion) | no disponible en la informacion proporcionada | 512 tokens | apache-2.0 | no disponible en la informacion proporcionada | Repositorio Hugging Face |
+| roberta-base (ajustado para clasificacion) | no disponible en la informacion proporcionada | 514 tokens posicionales en el modelo base | mit | no disponible en la informacion proporcionada | Repositorio Hugging Face |
 
 La comparacion significativa (posicionamiento frente a distilbert-base-uncased-finetuned-sst-2-english en SST-2) no puede establecerse con rigor: los conjuntos de evaluacion son distintos y el autor no documenta el suyo.
 
@@ -100,7 +100,7 @@ La comparacion significativa (posicionamiento frente a distilbert-base-uncased-f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RushiRajnoor/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/RushiRajnoor/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Documentacion de transformers (pipeline de text-classification): https://huggingface.co/docs/transformers
 - Text Embeddings Inference (despliegue de clasificacion): https://github.com/huggingface/text-embeddings-inference

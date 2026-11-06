@@ -75,7 +75,7 @@ No se dispone de datos de otros LoRAs de personaje comparables en la informacion
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YukoYoshida-Lora (E6) | LoRA SDXL de personaje | no disponible (rango 64) | no aplica | creativeml-openrail-m | HuggingFace y ModelScope |
+| YukoYoshida-Lora (E6) | LoRA SDXL de personaje | no disponible (rango 64) | no aplica | creativeml-openrail-m | Hugging Face y ModelScope |
 | waiIllustriousSDXL v17 | Checkpoint SDXL base | no disponible | no aplica | no disponible en esta ficha | Requiere descarga aparte |
 | Otros LoRAs de personaje Illustrious | LoRA SDXL | no disponible | no aplica | variable | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos de otros LoRAs de personaje comparables en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abbuibuibui/YukoYoshida-Lora
+- Hugging Face: https://huggingface.co/abbuibuibui/YukoYoshida-Lora
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/YukoYoshida-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/YukoYoshida-Dataset
 - Notas de evaluacion (chino): `evaluation/横向测评记录.md` en el repositorio

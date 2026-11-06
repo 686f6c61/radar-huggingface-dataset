@@ -108,7 +108,7 @@ Diferencias clave: la variante `Q4_K_S` prioriza menor tamano en disco a costa d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Ultra-550B-A55B-UD-Q4_K_XL-layers
+- Repositorio Hugging Face: https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Ultra-550B-A55B-UD-Q4_K_XL-layers
 - Modelo fuente (GGUF de Unsloth): https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF
 - Variante UD-Q4_K_S del mismo autor: https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Ultra-550B-A55B-UD-Q4_K_S-layers
 - Pagina de investigacion de NVIDIA Nemotron 3 Ultra: https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/

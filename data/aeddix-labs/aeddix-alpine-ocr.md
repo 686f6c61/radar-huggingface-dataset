@@ -95,8 +95,8 @@ La informacion disponible solo permite comparar con el modelo base. Se incluye t
 
 | Modelo | Parametros | Contexto | Global en ParseBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aeddix Alpine OCR | 1,16B | no disponible | 73,84 (scorer `afb36bd`) | Apache-2.0 | HuggingFace, revision v0.1 |
-| MinerU2.5-Pro-2605-1.2B | no disponible (1,2B por nomenclatura) | no disponible | 69,34 (scorer `afb36bd`) / 72,78 en leaderboard (junio 2026) | no disponible | HuggingFace |
+| Aeddix Alpine OCR | 1,16B | no disponible | 73,84 (scorer `afb36bd`) | Apache-2.0 | Hugging Face, revision v0.1 |
+| MinerU2.5-Pro-2605-1.2B | no disponible (1,2B por nomenclatura) | no disponible | 69,34 (scorer `afb36bd`) / 72,78 en leaderboard (junio 2026) | no disponible | Hugging Face |
 | Otras alternativas de parseo de documentos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de otros parsers de documentos comparables (parametros, contexto, rendimiento o licencia), por lo que no se incluyen filas adicionales para no introducir cifras no verificadas.
@@ -119,7 +119,7 @@ No se dispone en la informacion proporcionada de datos de otros parsers de docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aeddix-labs/aeddix-alpine-ocr
+- Modelo en Hugging Face: https://huggingface.co/aeddix-labs/aeddix-alpine-ocr
 - Modelo base: https://huggingface.co/opendatalab/MinerU2.5-Pro-2605-1.2B
 - Repositorio de ParseBench: https://github.com/run-llama/ParseBench
 - Commit del scorer utilizado: https://github.com/run-llama/ParseBench/commit/afb36bd83ed8df7846f9d4f18c58bb948d9d5de0

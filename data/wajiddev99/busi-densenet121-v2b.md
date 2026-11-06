@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Busi-densenet121-v2b es un clasificador binario de lesiones mamarias en ecografia (benigno frente a maligno) publicado por el autor Wajiddev99 en HuggingFace bajo licencia MIT. No es un modelo de lenguaje ni un modelo multimodal: es un conjunto de cinco redes convolucionales DenseNet121 entrenadas por validacion cruzada de 5 folds, cuya prediccion final se obtiene por voto de mayoria. La variante v2b incorpora entrenamiento guiado por mascara (mask-guided training) y aumento de datos mediante recorte que preserva la relacion de aspecto. El repositorio ocupa 0,1 GB y se distribuye con la libreria timm para image-classification.
+Busi-densenet121-v2b es un clasificador binario de lesiones mamarias en ecografia (benigno frente a maligno) publicado por el autor Wajiddev99 en Hugging Face bajo licencia MIT. No es un modelo de lenguaje ni un modelo multimodal: es un conjunto de cinco redes convolucionales DenseNet121 entrenadas por validacion cruzada de 5 folds, cuya prediccion final se obtiene por voto de mayoria. La variante v2b incorpora entrenamiento guiado por mascara (mask-guided training) y aumento de datos mediante recorte que preserva la relacion de aspecto. El repositorio ocupa 0,1 GB y se distribuye con la libreria timm para image-classification.
 
 El modelo resuelve un problema concreto de investigacion en imagen medica: dada una imagen de ecografia mamaria con una lesion, estima la probabilidad de malignidad P(maligno). Cada uno de los cinco modelos vota "maligno" si su probabilidad es igual o superior a 0,335, un umbral congelado sobre las predicciones out-of-fold de BUSI para garantizar al menos un 90 % de sensibilidad. La etiqueta final es la mayoria de los cinco votos. Es relevante ahora porque publica no solo el rendimiento interno, sino tambien una evaluacion externa honesta que documenta una caida fuerte de AUC (0,970 a 0,776) al pasar a otro hospital, un fenomeno de domain shift habitual en imagen medica.
 
@@ -26,7 +26,7 @@ La model card declara explicitamente que no es un dispositivo medico y que no de
 | Umbral de decision | P(maligno) >= 0,335, congelado sobre predicciones out-of-fold de BUSI |
 | Resolucion de entrada | no disponible |
 | Dataset de entrenamiento | BUSI, aproximadamente 530 imagenes, un solo centro |
-| Fecha de publicacion | 27 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 27 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -83,10 +83,10 @@ En la informacion disponible no hay resultados de modelos comparables evaluados 
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad | Rendimiento en la tarea |
 |---|---|---|---|---|---|
-| Wajiddev99/busi-densenet121-v2b | Clasificador binario de ecografia mamaria (5 folds) | Aproximadamente 8 M por modelo; 5 modelos | MIT | HuggingFace, libreria timm | AUC 0,940 (BUSI CV), 0,970 (BUSI test), 0,776 (BUS-BRA externo) |
+| Wajiddev99/busi-densenet121-v2b | Clasificador binario de ecografia mamaria (5 folds) | Aproximadamente 8 M por modelo; 5 modelos | MIT | Hugging Face, libreria timm | AUC 0,940 (BUSI CV), 0,970 (BUSI test), 0,776 (BUS-BRA externo) |
 | torchvision densenet121 | Clasificador generico de imagenes (ImageNet) | Aproximadamente 8 M | BSD-3-Clause (torchvision) | PyTorch / torchvision | No evaluado en ecografia mamaria; no disponible |
-| glasses/densenet121 | DenseNet121 publicado en HuggingFace | No disponible | No disponible en la informacion proporcionada | HuggingFace | No evaluado en ecografia mamaria; no disponible |
-| qualcomm/DenseNet-121 | DenseNet121 orientado a despliegue en dispositivos | No disponible | No disponible en la informacion proporcionada | HuggingFace | No evaluado en ecografia mamaria; no disponible |
+| glasses/densenet121 | DenseNet121 publicado en Hugging Face | No disponible | No disponible en la informacion proporcionada | Hugging Face | No evaluado en ecografia mamaria; no disponible |
+| qualcomm/DenseNet-121 | DenseNet121 orientado a despliegue en dispositivos | No disponible | No disponible en la informacion proporcionada | Hugging Face | No evaluado en ecografia mamaria; no disponible |
 
 La diferencia clave frente a los DenseNet121 genericos es el ajuste fino sobre BUSI y el esquema de ensemble con umbral calibrado; ninguno de los modelos comparables de la tabla incluye evaluacion en ecografia mamaria.
 
@@ -107,9 +107,9 @@ La diferencia clave frente a los DenseNet121 genericos es el ajuste fino sobre B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wajiddev99/busi-densenet121-v2b
+- Modelo en Hugging Face: https://huggingface.co/Wajiddev99/busi-densenet121-v2b
 - Codigo, auditoria de datos y evaluacion completa: https://github.com/wajidali99/breast-ultrasound-classification
 - DenseNet121 en torchvision (documentacion): https://docs.pytorch.org/vision/master/models/generated/torchvision.models.densenet121.html
 - DenseNet en PyTorch Hub: https://pytorch.org/hub/pytorch_vision_densenet/
-- DenseNet121 en HuggingFace (glasses): https://huggingface.co/glasses/densenet121
-- DenseNet-121 en HuggingFace (Qualcomm): https://huggingface.co/qualcomm/DenseNet-121
+- DenseNet121 en Hugging Face (glasses): https://huggingface.co/glasses/densenet121
+- DenseNet-121 en Hugging Face (Qualcomm): https://huggingface.co/qualcomm/DenseNet-121

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SmolVLA Candy Pick Joy es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario BUasY3Phospo en HuggingFace. Se trata de un fine-tuning del modelo base lerobot/smolvla_base, especializado en la tarea concreta de recoger caramelos (candy pick) sobre el dataset WiiLife/candy_pick. El modelo sigue la arquitectura SmolVLA descrita en el paper arXiv:2506.01844, un diseño compacto de VLA pensado para ejecutarse en hardware de bajo consumo y controlar brazos robóticos de forma end-to-end a partir de instrucciones en lenguaje natural e imágenes de cámara.
+SmolVLA Candy Pick Joy es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario BUasY3Phospo en Hugging Face. Se trata de un fine-tuning del modelo base lerobot/smolvla_base, especializado en la tarea concreta de recoger caramelos (candy pick) sobre el dataset WiiLife/candy_pick. El modelo sigue la arquitectura SmolVLA descrita en el paper arXiv:2506.01844, un diseño compacto de VLA pensado para ejecutarse en hardware de bajo consumo y controlar brazos robóticos de forma end-to-end a partir de instrucciones en lenguaje natural e imágenes de cámara.
 
-El modelo se distribuye en formato safetensors y se integra con la librería LeRobot de HuggingFace, que proporciona las herramientas de entrenamiento, evaluación y despliegue en robots reales o simulados. Al derivar de smolvla_base, hereda la filosofía de eficiencia computacional del proyecto SmolVLA: un modelo pequeño capaz de ejecutar políticas de control a alta frecuencia sin necesidad de GPUs de datacenter.
+El modelo se distribuye en formato safetensors y se integra con la librería LeRobot de Hugging Face, que proporciona las herramientas de entrenamiento, evaluación y despliegue en robots reales o simulados. Al derivar de smolvla_base, hereda la filosofía de eficiencia computacional del proyecto SmolVLA: un modelo pequeño capaz de ejecutar políticas de control a alta frecuencia sin necesidad de GPUs de datacenter.
 
 Su relevancia radica en ser un ejemplo práctico de fine-tuning de un VLA para una tarea específica de manipulación, un patrón cada vez más común en robótica de bajo coste. No obstante, la información pública disponible es muy limitada: no hay benchmarks, no se declaran idiomas soportados y la licencia no está confirmada en los metadatos devueltos, aunque las etiquetas del repositorio indican apache-2.0.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó mediante fine-tuning del checkpoint lerobot/smolvla
 
 - Control robótico end-to-end: genera acciones motoras a partir de observaciones visuales e instrucciones en lenguaje natural.
 - Manipulación de objetos: especializado en la tarea de recoger caramelos (candy pick) sobre una superficie.
-- Integración con LeRobot: compatible con el ecosistema de entrenamiento, evaluación y despliegue de HuggingFace para robótica.
+- Integración con LeRobot: compatible con el ecosistema de entrenamiento, evaluación y despliegue de Hugging Face para robótica.
 - Ejecución en hardware modesto: hereda la eficiencia de SmolVLA, pensada para GPUs de consumo.
 - Fine-tuning específico: política entrenada para un entorno y una tarea concretos, no un modelo generalista.
 - No se dispone de información sobre tool calling, agentes, multilingüismo ni modos de razonamiento extendido.
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLA Candy Pick Joy | no disponible | no disponible | Manipulación (candy pick) | apache-2.0 (según etiquetas) | HuggingFace |
-| lerobot/smolvla_base | no disponible | no disponible | VLA generalista base | no disponible | HuggingFace |
-| OpenVLA | ~7B | no disponible | VLA generalista | no disponible | HuggingFace |
+| SmolVLA Candy Pick Joy | no disponible | no disponible | Manipulación (candy pick) | apache-2.0 (según etiquetas) | Hugging Face |
+| lerobot/smolvla_base | no disponible | no disponible | VLA generalista base | no disponible | Hugging Face |
+| OpenVLA | ~7B | no disponible | VLA generalista | no disponible | Hugging Face |
 | π0 (pi-zero) | no disponible | no disponible | VLA generalista | no disponible | no disponible |
 
 La comparación cuantitativa no es posible con la información disponible; los modelos alternativos se citan por categoría y no por rendimiento medido.
@@ -81,7 +81,7 @@ La comparación cuantitativa no es posible con la información disponible; los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BUasY3Phospo/smol_vla_candy_pick_joy
+- Hugging Face: https://huggingface.co/BUasY3Phospo/smol_vla_candy_pick_joy
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset: https://huggingface.co/datasets/WiiLife/candy_pick
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844

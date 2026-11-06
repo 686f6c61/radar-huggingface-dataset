@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GB.RNA-1.6B-CDS es un modelo fundacional de ARN de 1.611.626.528 parámetros, desarrollado originalmente por GenBio AI (Zou et al., bioRxiv 2024) y reempaquetado en HuggingFace por Taykhoom Dalal como un port independiente que elimina la dependencia del paquete `ModelGenerator`. Es la variante de mayor tamaño de la familia GB.RNA adaptada a secuencias codificantes (CDS, *coding sequences*), tras un preentrenamiento con enmascarado de tokens (MLM) sobre 42 millones de secuencias de ARN no codificante y un ajuste posterior sobre CDS.
+GB.RNA-1.6B-CDS es un modelo fundacional de ARN de 1.611.626.528 parámetros, desarrollado originalmente por GenBio AI (Zou et al., bioRxiv 2024) y reempaquetado en Hugging Face por Taykhoom Dalal como un port independiente que elimina la dependencia del paquete `ModelGenerator`. Es la variante de mayor tamaño de la familia GB.RNA adaptada a secuencias codificantes (CDS, *coding sequences*), tras un preentrenamiento con enmascarado de tokens (MLM) sobre 42 millones de secuencias de ARN no codificante y un ajuste posterior sobre CDS.
 
 No es un modelo generativo de lenguaje natural: es un encoder Transformer que opera sobre un vocabulario de 16 tokens de nucleótidos (`A`, `C`, `G`, `T`, `U`, `N` y tokens especiales), con una dimensión de embedding de 2048, 32 capas y 32 cabezas de atención. Su utilidad es servir como extractor de representaciones y como *backbone* para *fine-tuning* en tareas de biología computacional: predicción de estructura secundaria, anotación funcional, clasificación de familias de ARN o puntuación de variantes.
 
@@ -94,7 +94,7 @@ Dentro de la propia familia, la elección entre 1.6B-CDS y 650M-CDS es un compro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/GB.RNA-1.6B-CDS
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/GB.RNA-1.6B-CDS
 - Id anterior (redirige al actual): https://huggingface.co/Taykhoom/AIDO.RNA-1.6B-CDS
 - Colección completa GB.RNA: https://huggingface.co/collections/Taykhoom/gbrna-6a22fe2e4039c523bcc48de9
 - Checkpoint original de GenBio AI: https://huggingface.co/genbio-ai/GB.RNA-1.6B-CDS

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TongtongLiang/sihc-research-checkpoints` es un repositorio de pesos de investigación publicado en HuggingFace por el usuario TongtongLiang. Contiene una selección de pesos correspondientes a la epoca 200 del denominado "Group 1", etiquetados con las categorias `image-generation` y `research-checkpoints`. El repositorio ocupa 25,2 GB y, en el momento de redactar esta ficha, no registra descargas ni "likes".
+`TongtongLiang/sihc-research-checkpoints` es un repositorio de pesos de investigación publicado en Hugging Face por el usuario TongtongLiang. Contiene una selección de pesos correspondientes a la epoca 200 del denominado "Group 1", etiquetados con las categorias `image-generation` y `research-checkpoints`. El repositorio ocupa 25,2 GB y, en el momento de redactar esta ficha, no registra descargas ni "likes".
 
 No se trata de un modelo final documentado ni de un artefacto listo para produccion. La propia model card lo describe como pesos de inferencia derivados de un archivo local del autor: incluye los pesos "raw" y las medias exponenciales (EMA) junto con la configuracion de arquitectura permitida, pero excluye deliberadamente estados del optimizador, generadores de numeros aleatorios, credenciales, identidad de W&B y rutas locales. Es decir, no sirve como copia de seguridad para reanudar un entrenamiento.
 
@@ -21,7 +21,7 @@ La informacion publica es muy escasa: no se especifican numero de parametros, ar
 | Licencia | no disponible |
 | Formato de pesos | checkpoints cargables con PyTorch mediante `weights_only=True`; incluye pesos raw y EMA. No se confirma safetensors ni GGUF |
 | Tamano del repositorio | 25,2 GB |
-| Modalidad | generacion de imagenes (segun etiqueta de HuggingFace) |
+| Modalidad | generacion de imagenes (segun etiqueta de Hugging Face) |
 | Estado del artefacto | pesos de inferencia, no copia reanudable de entrenamiento |
 | Epoca / iteracion | epoch 200, "Group 1" |
 | Ficheros de metadatos | `manifest.json` (pasos, metadatos de epoca y ficheros) |
@@ -83,8 +83,8 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TongtongLiang/sihc-research-checkpoints
-- `manifest.json` (metadatos de pasos, epoca y ficheros): disponible dentro del repositorio de HuggingFace, en la ruta indicada por el autor; puede consultarse como `https://huggingface.co/TongtongLiang/sihc-research-checkpoints/blob/main/manifest.json` (ruta sujeta a la estructura real del repositorio).
+- Hugging Face: https://huggingface.co/TongtongLiang/sihc-research-checkpoints
+- `manifest.json` (metadatos de pasos, epoca y ficheros): disponible dentro del repositorio de Hugging Face, en la ruta indicada por el autor; puede consultarse como `https://huggingface.co/TongtongLiang/sihc-research-checkpoints/blob/main/manifest.json` (ruta sujeta a la estructura real del repositorio).
 - Paper: no disponible.
 - Blog o nota tecnica del autor: no disponible.
 - Repositorio de codigo: no disponible.

@@ -4,7 +4,7 @@
 
 HiMed-Verifier es un modelo de lenguaje desarrollado por FreedomIntelligence (FreedomAI) como parte del proyecto HiMed, una iniciativa orientada a incentivar el razonamiento en hindi dentro de modelos médicos de lenguaje. Este modelo concreto, denominado "verifier", actúa como componente de verificación dentro del pipeline de generación, encargándose de validar y puntuar las respuestas producidas por el modelo principal. El proyecto se describe en el paper "HiMed: Incentivizing Hindi Reasoning in Medical LLMs" (arXiv:2605.24635), que plantea un entrenamiento en dos etapas: la primera adapta el modelo a la generación de texto médico en hindi, y la segunda introduce razonamiento explícito.
 
-Con 3.212.755.968 parámetros (aproximadamente 3.2B) y arquitectura basada en Llama, el modelo se distribuye con licencia Apache 2.0 en formato safetensors. La relevancia actual radica en la escasez de modelos médicos especializados en lenguas vernáculas de la India, un ámbito con una demanda creciente en entornos clínicos y de telemedicina. El checkpoint se ha publicado en HuggingFace aunque el paper aún no ha sido aceptado formalmente, lo que sugiere que los autores consideran el modelo suficientemente estable para su uso.
+Con 3.212.755.968 parámetros (aproximadamente 3.2B) y arquitectura basada en Llama, el modelo se distribuye con licencia Apache 2.0 en formato safetensors. La relevancia actual radica en la escasez de modelos médicos especializados en lenguas vernáculas de la India, un ámbito con una demanda creciente en entornos clínicos y de telemedicina. El checkpoint se ha publicado en Hugging Face aunque el paper aún no ha sido aceptado formalmente, lo que sugiere que los autores consideran el modelo suficientemente estable para su uso.
 
 ## Especificaciones técnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 - VRAM estimada para inferencia: con 3,2B parámetros en FP16, el modelo requiere aproximadamente 6,4 GB de VRAM. Con cuantización de 4 bits (GGUF Q4_K_M), se reduce a unos 3-4 GB.
 - GPU recomendadas: RTX 3090, RTX 4090, A10, A100, H100. Cabe en GPUs consumer de 8 GB o más con cuantización.
 - Si cabe en consumer GPU: sí, en GPUs como RTX 3060 12 GB, RTX 3080 10 GB o superiores.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se genera GGUF), HuggingFace Transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se genera GGUF), Hugging Face Transformers.
 - Latencia y throughput: no disponible, aunque por el tamaño se estima latencia de decodificación de ~10-20 tokens/s en una RTX 4090 con cuantización, y mayor throughput con vLLM en GPUs de datacenter.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No disponible. No se han encontrado datos de modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/FreedomIntelligence/HiMed-Verifier
+- Hugging Face del modelo: https://huggingface.co/FreedomIntelligence/HiMed-Verifier
 - Dataset HiMed: https://huggingface.co/datasets/FreedomIntelligence/HiMed
 - Repositorio GitHub: https://github.com/FreedomIntelligence/HiMed
 - Paper arXiv: https://arxiv.org/html/2605.24635

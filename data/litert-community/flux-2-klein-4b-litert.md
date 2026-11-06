@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX.2-klein-4B-LiteRT | 4B DiT + 4B encoder | 512 tokens de texto; 256–512 tokens de imagen | LiteRT int8 | Apache-2.0 | HuggingFace (litert-community) |
-| FLUX.2 [klein] 4B (base) | 4B DiT + 4B encoder | no disponible | safetensors / diffusers | Apache-2.0 | HuggingFace (black-forest-labs) |
+| FLUX.2-klein-4B-LiteRT | 4B DiT + 4B encoder | 512 tokens de texto; 256–512 tokens de imagen | LiteRT int8 | Apache-2.0 | Hugging Face (litert-community) |
+| FLUX.2 [klein] 4B (base) | 4B DiT + 4B encoder | no disponible | safetensors / diffusers | Apache-2.0 | Hugging Face (black-forest-labs) |
 | Otros modelos de imagen de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de imagen en la información proporcionada.
@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks comparativos con otros modelos de imagen en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/FLUX.2-klein-4B-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/FLUX.2-klein-4B-LiteRT
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Benchmark de referencia de LiteRT en Android: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md

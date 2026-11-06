@@ -2,11 +2,11 @@
 
 ## Resumen
 
-tatjr13/tpn005-v7b-s7 es un modelo de lenguaje publicado en HuggingFace por el usuario tatjr13, del que no existe tarjeta de modelo, documentación técnica ni paper asociado. Por los metadatos disponibles, se trata de un modelo de aproximadamente 8.489 millones de parámetros (8,49B) distribuido en formato GGUF, con etiquetas que apuntan a uso conversacional, compatibilidad con endpoints de inferencia y cuantización mediante importance matrix (imatrix). No se especifica la arquitectura subyacente ni el modelo base del que deriva.
+tatjr13/tpn005-v7b-s7 es un modelo de lenguaje publicado en Hugging Face por el usuario tatjr13, del que no existe tarjeta de modelo, documentación técnica ni paper asociado. Por los metadatos disponibles, se trata de un modelo de aproximadamente 8.489 millones de parámetros (8,49B) distribuido en formato GGUF, con etiquetas que apuntan a uso conversacional, compatibilidad con endpoints de inferencia y cuantización mediante importance matrix (imatrix). No se especifica la arquitectura subyacente ni el modelo base del que deriva.
 
 La relevancia de esta ficha es fundamentalmente descriptiva y de advertencia: el repositorio acumula 140 descargas y ningún like, y el resultado de búsqueda web no devuelve ninguna referencia al modelo, al autor ni a su linaje. Esto implica que cualquier evaluación de capacidades, licencia o idoneidad para producción debe hacerse por inspección directa de los pesos y de la generación, no a partir de documentación de terceros.
 
-El tamaño del repositorio (7,6 GB) es inferior a lo que ocuparían los pesos completos en precisión FP16 para 8,49B parámetros (del orden de 17 GB), lo que indica que el repositorio contiene pesos cuantizados, presumiblemente una o varias variantes GGUF. Todos los datos de esta ficha proceden de los metadatos de HuggingFace y de estimaciones derivadas del recuento de parámetros; no hay información verificada sobre datos de entrenamiento, contexto o rendimiento.
+El tamaño del repositorio (7,6 GB) es inferior a lo que ocuparían los pesos completos en precisión FP16 para 8,49B parámetros (del orden de 17 GB), lo que indica que el repositorio contiene pesos cuantizados, presumiblemente una o varias variantes GGUF. Todos los datos de esta ficha proceden de los metadatos de Hugging Face y de estimaciones derivadas del recuento de parámetros; no hay información verificada sobre datos de entrenamiento, contexto o rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -100,7 +100,7 @@ No es posible establecer una comparativa rigurosa: el modelo no publica licencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tatjr13/tpn005-v7b-s7
+- Hugging Face: https://huggingface.co/tatjr13/tpn005-v7b-s7
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

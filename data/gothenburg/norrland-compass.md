@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Gothenburg/Norrland-Compass en HuggingFace es un modelo publicado por el autor "Gothenburg" bajo licencia MIT. Sin embargo, no se dispone de información técnica alguna sobre el modelo: la model card está vacía salvo por la declaración de licencia, no hay archivos de pesos, configuración ni documentación adicional. El repositorio no registra descargas ni valoraciones.
+El repositorio Gothenburg/Norrland-Compass en Hugging Face es un modelo publicado por el autor "Gothenburg" bajo licencia MIT. Sin embargo, no se dispone de información técnica alguna sobre el modelo: la model card está vacía salvo por la declaración de licencia, no hay archivos de pesos, configuración ni documentación adicional. El repositorio no registra descargas ni valoraciones.
 
 Las búsquedas web no arrojan resultados sobre el modelo en sí, sino sobre dos organizaciones homónimas: Nordic Compass, una alianza paneuropea de infraestructura de IA, y AI Gothenburg, un hub para fundadores de startups de IA. Ninguna de ellas está vinculada técnicamente a este repositorio. En consecuencia, no es posible evaluar el modelo ni recomendar su uso en producción.
 
@@ -53,7 +53,7 @@ No disponible. Dado que se desconoce la arquitectura, el tamaño y las capacidad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gothenburg/Norrland-Compass
+- Repositorio en Hugging Face: https://huggingface.co/Gothenburg/Norrland-Compass
 - Resultados de búsqueda no relacionados con el modelo:
   - Nordic Compass AI infrastructure alliance: https://btw.media/en/atnorth-joins-nordic-compass-ai-infrastructure-alliance
   - AI Gothenburg hub: https://aigothenburg.com/

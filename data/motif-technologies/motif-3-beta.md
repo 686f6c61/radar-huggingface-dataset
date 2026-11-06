@@ -81,11 +81,11 @@ Nota: los datos de Mixtral y DeepSeek son de conocimiento general y no provienen
 - Idiomas limitados: solo se garantiza soporte para inglés y coreano; el rendimiento en otros idiomas no está documentado.
 - Requisitos de hardware muy elevados: no es desplegable en infraestructura estándar; requiere GPUs de última generación (B200/H200) y configuración especializada.
 - Riesgo de alucinaciones y sesgos: al no publicarse detalles de entrenamiento ni evaluaciones de sesgo, no se puede garantizar la fiabilidad en dominios sensibles.
-- Dependencia de código personalizado: la carga del modelo requiere `trust_remote_code=True`, lo que implica ejecutar código no auditado por HuggingFace.
+- Dependencia de código personalizado: la carga del modelo requiere `trust_remote_code=True`, lo que implica ejecutar código no auditado por Hugging Face.
 - Sin benchmarks detallados: la ausencia de resultados en tareas estándar dificulta la evaluación objetiva de su calidad frente a alternativas.
 
 ## Enlaces
 
-- [HuggingFace - Motif-Technologies/Motif-3-Beta](https://huggingface.co/Motif-Technologies/Motif-3-Beta)
+- [Hugging Face - Motif-Technologies/Motif-3-Beta](https://huggingface.co/Motif-Technologies/Motif-3-Beta)
 - [Motif Technologies (sitio oficial)](https://motiftech.io)
 - [Artificial Analysis (índice AAII)](https://artificialanalysis.ai/)

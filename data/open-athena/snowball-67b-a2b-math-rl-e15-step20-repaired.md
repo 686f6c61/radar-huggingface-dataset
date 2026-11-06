@@ -92,6 +92,6 @@ A título orientativo y sin datos verificados en esta ficha, la categoría compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E15-Step20-Repaired
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E15-Step20-Repaired
 - Archivo de evidencias (dataset): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Issue del experimento en el repositorio Marin: https://github.com/marin-community/marin/issues/7786

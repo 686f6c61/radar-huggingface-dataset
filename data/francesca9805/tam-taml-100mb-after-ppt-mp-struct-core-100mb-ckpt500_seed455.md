@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un ajuste fino (SFT) del modelo `francesca9805/tam-taml-100mb-ppt-mp-struct-core-100mb_seed455`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2, con 124.770.816 parametros totales (aproximadamente 125 millones) y pesos en formato safetensors. El entrenamiento se realizo con la libreria TRL en su version 0.23.0, utilizando la tecnica de Supervised Fine-Tuning (SFT).
+El modelo `francesca9805/tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un ajuste fino (SFT) del modelo `francesca9805/tam-taml-100mb-ppt-mp-struct-core-100mb_seed455`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2, con 124.770.816 parametros totales (aproximadamente 125 millones) y pesos en formato safetensors. El entrenamiento se realizo con la libreria TRL en su version 0.23.0, utilizando la tecnica de Supervised Fine-Tuning (SFT).
 
 El modelo forma parte de una serie de experimentos etiquetados como "tam-taml-100mb", asociados al proyecto de Weights & Biases "new-tokenizers" del usuario f-padovani (University of Groningen). Esto sugiere que el objetivo del trabajo es la investigacion sobre tokenizadores y arquitecturas de lenguaje de escala reducida, mas que un modelo orientado a produccion. El nombre incluye referencias al checkpoint de entrenamiento (ckpt500) y a la semilla aleatoria empleada (seed455).
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/tam-taml-100mb-...-ckpt500_seed455 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 (openai-community/gpt2) | 124 M | 1024 tokens | modified MIT | HuggingFace, ampliamente usado |
-| DistilGPT2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
-| Pythia-160M (EleutherAI/pythia-160m) | 160 M | 2048 tokens | Apache 2.0 | HuggingFace |
+| francesca9805/tam-taml-100mb-...-ckpt500_seed455 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 (openai-community/gpt2) | 124 M | 1024 tokens | modified MIT | Hugging Face, ampliamente usado |
+| DistilGPT2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
+| Pythia-160M (EleutherAI/pythia-160m) | 160 M | 2048 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa de rendimiento con estas alternativas no puede establecerse porque no se han publicado benchmarks del modelo objeto de esta ficha. Los datos de contexto y licencia de los modelos de referencia corresponden a informacion publica de sus respectivos repositorios.
 
@@ -97,7 +97,7 @@ La comparativa de rendimiento con estas alternativas no puede establecerse porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-mp-struct-core-100mb_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/eb0fzh0m
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -4,7 +4,7 @@
 
 `Vellorerobotics/cnn-transformer-contrastive` es un repositorio de código, no un modelo preentrenado en el sentido habitual. Contiene una implementación compacta y personalizada en PyTorch de una arquitectura CNN Transformer con objetivo contrastivo, publicada bajo licencia MIT por el usuario Vellorerobotics. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, y el propio autor indica explícitamente que no se presenta como un checkpoint entrenado ni evaluado en ningún benchmark.
 
-La escala real del artefacto es mínima: 16.576 parámetros totales según el fichero de pesos, lo que lo sitúa cuatro o cinco órdenes de magnitud por debajo de cualquier modelo utilizable en producción. La configuración declarada es "base", con atención dispersa, fusión de bajo rango, activación ReLU y normalización LayerNorm. No se documentan tokenizador, ventana de contexto, idiomas soportados ni pipeline de HuggingFace.
+La escala real del artefacto es mínima: 16.576 parámetros totales según el fichero de pesos, lo que lo sitúa cuatro o cinco órdenes de magnitud por debajo de cualquier modelo utilizable en producción. La configuración declarada es "base", con atención dispersa, fusión de bajo rango, activación ReLU y normalización LayerNorm. No se documentan tokenizador, ventana de contexto, idiomas soportados ni pipeline de Hugging Face.
 
 Su relevancia es, por tanto, formativa y de ingeniería: sirve como punto de partida reproducible para revisar código, validar pipelines de entrenamiento y ejecutar experimentos controlados a pequeña escala antes de escalar a arquitecturas mayores. No debe emplearse como componente funcional en un sistema real.
 
@@ -26,10 +26,10 @@ Su relevancia es, por tanto, formativa y de ingeniería: sirve como punto de par
 | Activación | ReLU |
 | Normalización | LayerNorm |
 | Optimizador del recipe | AdamW con schedule de tipo step |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 10 / 0 |
 | Tamaño del repositorio | 0.0 GB |
-| Fecha de creación (HuggingFace) | 2026-10-21 |
+| Fecha de creación (Hugging Face) | 2026-10-21 |
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ No hay evidencia de un entrenamiento completado. El autor describe el checkpoint
 - Sin soporte documentado de tool calling ni function calling.
 - Sin soporte documentado de agentes ni razonamiento multi-paso.
 - Sin capacidades multilingües declaradas.
-- Sin modo "thinking", sin entrada multimodal y sin API estándar de carga: al ser una implementación propia, las APIs automáticas de HuggingFace requieren un adaptador explícito.
+- Sin modo "thinking", sin entrada multimodal y sin API estándar de carga: al ser una implementación propia, las APIs automáticas de Hugging Face requieren un adaptador explícito.
 
 ## Casos de uso
 
@@ -89,11 +89,11 @@ No se han identificado modelos comparables en la misma categoría (CNN Transform
 - Riesgo de alucinación no aplicable en el sentido de un modelo de lenguaje, pero sí riesgo de expectativas incorrectas: el repositorio no es un modelo listo para producción.
 - Longitud de contexto e idiomas no documentados; no se puede asumir soporte multilingüe ni ventanas largas.
 - Licencia MIT: permite uso comercial y modificación, pero el autor advierte de revisar por separado los términos de los datos de origen cuando se use con datasets externos.
-- Las APIs automáticas de HuggingFace no cargan esta arquitectura sin un adaptador explícito; hay que implementar el registro del modelo.
+- Las APIs automáticas de Hugging Face no cargan esta arquitectura sin un adaptador explícito; hay que implementar el registro del modelo.
 - Ecosistema mínimo (10 descargas, 0 likes, repositorio de 0.0 GB) y sin issues ni soporte documentado: el mantenimiento no está garantizado.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto que se distribuyen aquí.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vellorerobotics/cnn-transformer-contrastive
+- Hugging Face: https://huggingface.co/Vellorerobotics/cnn-transformer-contrastive
 - No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información disponible.

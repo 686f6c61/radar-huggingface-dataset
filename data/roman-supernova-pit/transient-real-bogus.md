@@ -80,7 +80,7 @@ No se dispone de información pública sobre otros clasificadores real/bogus par
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/Roman-Supernova-PIT/transient-real-bogus](https://huggingface.co/Roman-Supernova-PIT/transient-real-bogus)
+- Hugging Face: [https://huggingface.co/Roman-Supernova-PIT/transient-real-bogus](https://huggingface.co/Roman-Supernova-PIT/transient-real-bogus)
 - GitHub de la organización: [https://github.com/Roman-Supernova-PIT/](https://github.com/Roman-Supernova-PIT/)
 - Sitio web del proyecto: [https://www.romansnpit.com/](https://www.romansnpit.com/)
 - Documentación de datos del Roman PIT: [https://assets.science.nasa.gov/content/dam/science/missions/rst/science/Roman_PIT_Data_Products_User_Documentation_18feb2026.pdf](https://assets.science.nasa.gov/content/dam/science/missions/rst/science/Roman_PIT_Data_Products_User_Documentation_18feb2026.pdf)

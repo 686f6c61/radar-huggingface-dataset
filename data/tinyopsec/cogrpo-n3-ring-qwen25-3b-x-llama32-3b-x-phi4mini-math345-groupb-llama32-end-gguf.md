@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - Cabe en GPU de consumo: incluso la cuantizacion F16 (6,4 GB) entra en una RTX 3060 de 12 GB, una RTX 4070 o una RTX 4090; las cuantizaciones Q4_K_M y Q3_K_M caben tambien en GPUs de 4-6 GB (GTX 1650, RTX 3050) y en placas integradas con memoria unificada.
 - El autor indica explicitamente que todas las cuantizaciones pueden ejecutarse solo con CPU, siendo la GPU opcional.
-- Opciones de despliegue documentadas: llama.cpp (CLI y servidor), llama-cpp-python, LM Studio y Ollama. El repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con endpoints de HuggingFace. No se documenta soporte para vLLM ni TGI, habituales en formatos safetensors en lugar de GGUF.
+- Opciones de despliegue documentadas: llama.cpp (CLI y servidor), llama-cpp-python, LM Studio y Ollama. El repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con endpoints de Hugging Face. No se documenta soporte para vLLM ni TGI, habituales en formatos safetensors en lugar de GGUF.
 - Parametros de muestreo recomendados por el autor: temperatura 0,6, top_p 0,95, min_p 0,0 y repeat_penalty 1,0. El autor advierte de que un min_p bajo evita bucles de repeticion.
 - Latencia y throughput: no disponible.
 
@@ -106,6 +106,6 @@ Rendimiento comparado en benchmarks: no disponible para este modelo, por lo que 
 - Autor del modelo original: https://huggingface.co/logan7000
 - Articulo DeepSeekMath (GRPO): https://arxiv.org/abs/2402.03300
 - llama.cpp: https://github.com/ggerganov/llama.cpp
-- Dataset de entrenamiento referenciado: q1716523669/MATH-Level345 (referencia interna de HuggingFace, no se ha localizado URL publica en la informacion disponible)
+- Dataset de entrenamiento referenciado: q1716523669/MATH-Level345 (referencia interna de Hugging Face, no se ha localizado URL publica en la informacion disponible)
 - Documentacion de TRL: no disponible en los resultados de busqueda
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo; los resultados devueltos corresponden a la empresa de ingenieria Geoconsult y no guardan relacion con este repositorio.

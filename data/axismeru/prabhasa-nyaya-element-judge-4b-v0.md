@@ -93,11 +93,11 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Recall not_established | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prabhasa-nyaya-element-judge-4b-v0 | 4,02 mil millones | no especificado (base: 32.768) | 0,886 (sin ejemplos) | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3-4B-Base | 4,02 mil millones | 32.768 | 0,125 (6 ejemplos) | Apache 2.0 | HuggingFace |
-| Qwen3-4B post-entrenado | 4,02 mil millones | 32.768 | 0,224 (6 ejemplos) | Apache 2.0 | HuggingFace |
-| Qwen3-14B-Base | ~14 mil millones | 32.768 | 0,392 (6 ejemplos) | Apache 2.0 | HuggingFace |
-| Qwen2.5-32B-Base | ~32,5 mil millones | 32.768 | 0,427 (6 ejemplos) | Apache 2.0 (Qwen2.5) | HuggingFace |
+| prabhasa-nyaya-element-judge-4b-v0 | 4,02 mil millones | no especificado (base: 32.768) | 0,886 (sin ejemplos) | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3-4B-Base | 4,02 mil millones | 32.768 | 0,125 (6 ejemplos) | Apache 2.0 | Hugging Face |
+| Qwen3-4B post-entrenado | 4,02 mil millones | 32.768 | 0,224 (6 ejemplos) | Apache 2.0 | Hugging Face |
+| Qwen3-14B-Base | ~14 mil millones | 32.768 | 0,392 (6 ejemplos) | Apache 2.0 | Hugging Face |
+| Qwen2.5-32B-Base | ~32,5 mil millones | 32.768 | 0,427 (6 ejemplos) | Apache 2.0 (Qwen2.5) | Hugging Face |
 
 No se conocen en la información proporcionada otros ajustes finos específicos de juicio por elemento legal indio con los que comparar directamente; el propio autor no cita alternativas especializadas.
 
@@ -116,7 +116,7 @@ No se conocen en la información proporcionada otros ajustes finos específicos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxisMeru/prabhasa-nyaya-element-judge-4b-v0
+- Modelo en Hugging Face: https://huggingface.co/AxisMeru/prabhasa-nyaya-element-judge-4b-v0
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - TRL (SFTTrainer), usado en el entrenamiento: https://github.com/huggingface/trl

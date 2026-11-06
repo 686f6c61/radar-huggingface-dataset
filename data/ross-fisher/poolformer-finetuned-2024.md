@@ -60,15 +60,15 @@ No se dispone de modelos comparables en la misma categoría (Poolformer para mat
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. Es solo una inicialización para pruebas.
 - No se presentan métricas de rendimiento; cualquier resultado futuro debe documentarse por separado de los valores por defecto del repositorio.
-- La implementación es personalizada y requiere un adaptador explícito para cargarla con APIs genéricas de HuggingFace Transformers.
+- La implementación es personalizada y requiere un adaptador explícito para cargarla con APIs genéricas de Hugging Face Transformers.
 - No se especifican idiomas soportados ni el tipo de datos de entrada para la tarea de matching, lo que limita su uso directo.
 - La licencia Apache 2.0 permite uso comercial, pero la model card advierte que deben revisarse los términos de las fuentes de datos externas si se usan con datasets propios.
 - No hay garantías de soporte o mantenimiento; es un prototipo de investigación.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ross-fisher/poolformer-finetuned-2024)
-- [Documentación de PoolFormer en HuggingFace](https://huggingface.co/docs/transformers/model_doc/poolformer)
+- [Modelo en Hugging Face](https://huggingface.co/ross-fisher/poolformer-finetuned-2024)
+- [Documentación de PoolFormer en Hugging Face](https://huggingface.co/docs/transformers/model_doc/poolformer)
 - [Repositorio oficial de PoolFormer (sail-sg)](https://github.com/sail-sg/poolformer)
-- [PoolFormer M48 en HuggingFace](https://huggingface.co/sail/poolformer_m48)
+- [PoolFormer M48 en Hugging Face](https://huggingface.co/sail/poolformer_m48)
 - [Artículo arXiv 2510.02206 sobre Poolformer](https://arxiv.org/html/2510.02206v1)

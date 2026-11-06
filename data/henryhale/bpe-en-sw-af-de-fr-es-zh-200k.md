@@ -11,7 +11,7 @@ For specs table: "Parametros totales" — no aplica / no disponible. Arquitectur
 
 Benchmarks: no published.
 
-Hardware requirements: no aplica — CPU, memory footprint. I can estimate tokenizer memory... but avoid inventing. Actually I can say the tokenizer runs on CPU and is negligible. Hmm, "No inventes datos". I'll say the artifact is a JSON tokenizer, runs on CPU, no VRAM required. I could estimate the RAM footprint from vocabulary size — 200k tokens, tokenizer.json typically a few MB. That's an estimate; I'll be careful and say "del orden de pocos megabytes" — but that's an inference. I can say "no se ha publicado el tamano exacto; el repo es de 0.0 GB". Better to state "no disponible; el repositorio ocupa 0.0 GB segun HuggingFace (redondeo)".
+Hardware requirements: no aplica — CPU, memory footprint. I can estimate tokenizer memory... but avoid inventing. Actually I can say the tokenizer runs on CPU and is negligible. Hmm, "No inventes datos". I'll say the artifact is a JSON tokenizer, runs on CPU, no VRAM required. I could estimate the RAM footprint from vocabulary size — 200k tokens, tokenizer.json typically a few MB. That's an estimate; I'll be careful and say "del orden de pocos megabytes" — but that's an inference. I can say "no se ha publicado el tamano exacto; el repo es de 0.0 GB". Better to state "no disponible; el repositorio ocupa 0.0 GB segun Hugging Face (redondeo)".
 
 Comparativa: tokenizers comparables — GPT-4 cl100k_base (100k, no público), Llama 3 tokenizer (128k), Gemma (256k), Qwen (151k). And the companion grouptok tokenizer. I should be careful with numbers. I know Llama 3 uses 128,256 tokens vocabulary. Gemma uses 256k. Qwen2.5 uses 151,643. These are reasonably well-known but might be considered "inventing"? They are public facts. I'll mark as approximate, or mention "no disponible" for the ones I'm unsure. I'd rather compare with the sibling grouptok tokenizer, which is definitely available from the info. And mention general references cautiously.
 
@@ -31,7 +31,7 @@ Hardware: list bullets.
 
 Let me be thorough and technical.
 
-Regarding the creation date 2026-10-16 — odd, future date. I'll mention it as the date reported by HuggingFace.
+Regarding the creation date 2026-10-16 — odd, future date. I'll mention it as the date reported by Hugging Face.
 
 Write the ficha.
 
@@ -58,7 +58,7 @@ Let me write it.## Resumen
 
 Su rasgo distintivo es ser el baseline no agrupado de `grouptok-en-sw-af-de-fr-es-zh-200k`, un tokenizador que agrupa exactamente este mismo vocabulario mediante traduccion. Ambos segmentan cualquier texto de forma identica y solo se diferencian en la estructura de grupos asociada, lo que los convierte en un par experimental controlado para investigar el efecto del agrupamiento de tokens en el entrenamiento y la inferencia.
 
-El modelo se entreno con `grouptok.tokenizer.train_bpe` sobre 1.000.000 de pares de frases ingles-X por idioma, usando ambos lados del par, y reserva cuatro tokens especiales de chat y razonamiento en los identificadores 0-3. Su licencia Apache 2.0 y su naturaleza de artefacto ligero (repositorio de 0.0 GB segun HuggingFace) lo hacen directamente util para experimentos de tokenizacion multilingue, aunque a fecha de la ficha no registra descargas ni interacciones en el Hub.
+El modelo se entreno con `grouptok.tokenizer.train_bpe` sobre 1.000.000 de pares de frases ingles-X por idioma, usando ambos lados del par, y reserva cuatro tokens especiales de chat y razonamiento en los identificadores 0-3. Su licencia Apache 2.0 y su naturaleza de artefacto ligero (repositorio de 0.0 GB segun Hugging Face) lo hacen directamente util para experimentos de tokenizacion multilingue, aunque a fecha de la ficha no registra descargas ni interacciones en el Hub.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ Datos adicionales del vocabulario:
 | Tokens reservados | `<\|im_start\|>`, `<\|im_end\|>`, `<think>`, `</think>` (ids 0-3) |
 | Tokens pad/bos/eos | no declarados (el autor indica que se deben configurar en el modelo) |
 | Repositorio | 0.0 GB, 0 descargas, 0 likes |
-| Fechas | creado y actualizado el 2026-10-16 segun HuggingFace |
+| Fechas | creado y actualizado el 2026-10-16 segun Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -121,7 +121,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no aplica; es un tokenizador, no requiere GPU.
 - GPU recomendadas: no aplica.
 - Compatibilidad con GPU de consumo: no aplica, el artefacto se ejecuta en CPU.
-- Coste: el repositorio ocupa 0.0 GB segun HuggingFace; el peso real de los ficheros JSON no esta detallado en la informacion disponible.
+- Coste: el repositorio ocupa 0.0 GB segun Hugging Face; el peso real de los ficheros JSON no esta detallado en la informacion disponible.
 - Opciones de despliegue: libreria `transformers` (`AutoTokenizer`), libreria `tokenizers` (`Tokenizer.from_file`) y `huggingface_hub` (`hf_hub_download`). No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, ya que estos entornos requieren pesos de un modelo de lenguaje.
 - Latencia y throughput: no disponibles. Al ejecutarse en CPU sobre estructuras BPE, el coste por secuencia es bajo comparado con cualquier modelo neuronal, pero no se aportan cifras.
 
@@ -129,8 +129,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Tokenizador | Vocabulario | Idiomas | Agrupacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bpe-en-sw-af-de-fr-es-zh-200k` | 200.000 | en, sw, af, de, fr, es, zh | no (baseline) | Apache 2.0 | HuggingFace |
-| `grouptok-en-sw-af-de-fr-es-zh-200k` | 200.000 | en, sw, af, de, fr, es, zh | si (por traduccion) | no disponible en la informacion | HuggingFace |
+| `bpe-en-sw-af-de-fr-es-zh-200k` | 200.000 | en, sw, af, de, fr, es, zh | no (baseline) | Apache 2.0 | Hugging Face |
+| `grouptok-en-sw-af-de-fr-es-zh-200k` | 200.000 | en, sw, af, de, fr, es, zh | si (por traduccion) | no disponible en la informacion | Hugging Face |
 | Otros tokenizadores BPE multilingues de referencia (por ejemplo los de familias tipo Llama, Gemma o Qwen) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada con precision es la que el propio autor establece con el tokenizador agrupado hermano: mismo vocabulario, misma segmentacion, distinta estructura de grupos. Para el resto de alternativas del mercado no se aportan datos verificables en la informacion disponible.
@@ -144,11 +144,11 @@ La unica comparacion documentada con precision es la que el propio autor estable
 - Sin datos de evaluacion: no hay metricas publicas de fertilidad, cobertura ni comparacion con tokenizadores alternativos, por lo que no se puede estimar a priori su calidad relativa.
 - Adopcion nula en el Hub: 0 descargas y 0 likes en el momento de la ficha, sin evidencia de uso en produccion ni de mantenimiento mas alla de la fecha de actualizacion.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero conviene revisar las licencias de los corpus de entrenamiento subyacentes (Europarl, News Commentary, UN Parallel Corpus, WMT y los pares minados de NLLB), que pueden imponer condiciones adicionales sobre los datos derivados.
-- Fechas incoherentes: la fecha de creacion y actualizacion indicada por HuggingFace es el 2026-10-16, posterior a la fecha habitual de publicacion; conviene verificar el estado real del repositorio antes de depender de el.
+- Fechas incoherentes: la fecha de creacion y actualizacion indicada por Hugging Face es el 2026-10-16, posterior a la fecha habitual de publicacion; conviene verificar el estado real del repositorio antes de depender de el.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/henryhale/bpe-en-sw-af-de-fr-es-zh-200k
+- Ficha en Hugging Face: https://huggingface.co/henryhale/bpe-en-sw-af-de-fr-es-zh-200k
 - Tokenizador agrupado hermano: https://huggingface.co/henryhale/grouptok-en-sw-af-de-fr-es-zh-200k
 - Corpus Europarl (WMT14): https://huggingface.co/datasets/wmt/wmt14
 - Corpus News Commentary: https://huggingface.co/datasets/Helsinki-NLP/news_commentary

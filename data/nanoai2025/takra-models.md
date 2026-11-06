@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `nanoai2025/takra-models` es un modelo publicado en HuggingFace por la organización `nanoai2025`. La información disponible es extremadamente limitada: la model card no contiene descripción, arquitectura, parámetros, datos de entrenamiento ni instrucciones de uso. El repositorio tiene un tamaño de 0.1 GB, fue creado el 8 de septiembre de 2026 y se distribuye bajo licencia MIT. No se han registrado descargas ni likes en el momento de la consulta, y no se ha especificado el pipeline de tareas ni los idiomas soportados.
+El repositorio `nanoai2025/takra-models` es un modelo publicado en Hugging Face por la organización `nanoai2025`. La información disponible es extremadamente limitada: la model card no contiene descripción, arquitectura, parámetros, datos de entrenamiento ni instrucciones de uso. El repositorio tiene un tamaño de 0.1 GB, fue creado el 8 de septiembre de 2026 y se distribuye bajo licencia MIT. No se han registrado descargas ni likes en el momento de la consulta, y no se ha especificado el pipeline de tareas ni los idiomas soportados.
 
 La búsqueda web no ha arrojado resultados relevantes sobre este modelo: las coincidencias encontradas corresponden a sitios no relacionados (una consulta de psiquiatría en Ámsterdam y un modelo 3D de un juguete). No existe documentación técnica, paper, blog o demo asociada. En consecuencia, no es posible determinar qué problema resuelve, su arquitectura, ni su relevancia actual. Cualquier uso en producción debería considerarse de alto riesgo hasta que se publique información verificable.
 
@@ -54,4 +54,4 @@ No disponible. Sin información sobre arquitectura, parámetros o rendimiento, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nanoai2025/takra-models
+- Hugging Face: https://huggingface.co/nanoai2025/takra-models

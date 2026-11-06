@@ -24,7 +24,7 @@ La relevancia actual del adaptador es metodológica más que de escala: demuestr
 | Tarea (pipeline) | text-generation |
 | Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
 | Framework declarado | PEFT 0.20.0; versiones de Transformers, PyTorch y TRL fijadas en el `pyproject.toml` del repositorio Relict Core |
-| Fecha de publicación | 12 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 12 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -82,8 +82,8 @@ No se dispone de datos de otros adaptadores o modelos comparables en la informac
 
 | Modelo | Tipo | Parámetros | Contexto | Coincidencia de `ambiguity_status` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| relict-core-objective-resolution-qlora | Adaptador QLoRA sobre Qwen3-4B-Instruct-2507 | 4B (base); adaptador de rango 16 | No disponible | 47 / 48 | AGPL-3.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (prompted) | Modelo completo, sin ajuste | 4B | No disponible en esta información | 45 / 48 | No disponible en esta información | HuggingFace |
+| relict-core-objective-resolution-qlora | Adaptador QLoRA sobre Qwen3-4B-Instruct-2507 | 4B (base); adaptador de rango 16 | No disponible | 47 / 48 | AGPL-3.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (prompted) | Modelo completo, sin ajuste | 4B | No disponible en esta información | 45 / 48 | No disponible en esta información | Hugging Face |
 
 No se ha localizado en la búsqueda web información sobre alternativas de la misma categoría (resolución estructurada de objetivos biológicos o adaptadores equivalentes), por lo que la comparativa con modelos similares queda como no disponible.
 
@@ -102,7 +102,7 @@ No se ha localizado en la búsqueda web información sobre alternativas de la mi
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/MaestroS231/relict-core-objective-resolution-qlora
+- Adaptador en Hugging Face: https://huggingface.co/MaestroS231/relict-core-objective-resolution-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio del proyecto Relict Core: https://github.com/mohith-krishna-mahesh/Relict-Core
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo, su paper o su proyecto; los resultados devueltos correspondían a un marketplace de claves de videojuegos, sin relación con el modelo.

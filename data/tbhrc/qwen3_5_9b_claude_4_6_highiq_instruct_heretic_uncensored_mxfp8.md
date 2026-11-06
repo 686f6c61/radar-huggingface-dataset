@@ -93,7 +93,7 @@ La version HERETIC mantiene el rendimiento de la version INSTRUCT sin el abliter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tbhrc/qwen3_5_9b_claude_4_6_highiq_instruct_heretic_uncensored_mxfp8
+- Modelo en Hugging Face: https://huggingface.co/tbhrc/qwen3_5_9b_claude_4_6_highiq_instruct_heretic_uncensored_mxfp8
 - Modelo base original: https://huggingface.co/DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED
 - Version MLX mxfp8 de TheCluster: https://huggingface.co/TheCluster/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED-MLX-mxfp8
 - Version GGUF en ModelScope: https://www.modelscope.cn/models/Jackrong/Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-GGUF

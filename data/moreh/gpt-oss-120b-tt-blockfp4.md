@@ -2,7 +2,7 @@
 
 ## Resumen
 
-moreh/gpt-oss-120b-TT-BLOCKFP4 es una versión cuantizada del modelo abierto gpt-oss-120b de OpenAI, publicada por el usuario Moreh en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos del modelo base a un formato de cuantización denominado BLOCKFP4, según se deduce del propio nombre del repositorio. La tarjeta del modelo no incluye documentación técnica adicional, y el repositorio tiene acceso restringido (requiere aceptar condiciones en HuggingFace).
+moreh/gpt-oss-120b-TT-BLOCKFP4 es una versión cuantizada del modelo abierto gpt-oss-120b de OpenAI, publicada por el usuario Moreh en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos del modelo base a un formato de cuantización denominado BLOCKFP4, según se deduce del propio nombre del repositorio. La tarjeta del modelo no incluye documentación técnica adicional, y el repositorio tiene acceso restringido (requiere aceptar condiciones en Hugging Face).
 
 El modelo base, openai/gpt-oss-120b, es un transformer de tipo mezcla de expertos (MoE) con aproximadamente 117 000 millones de parámetros totales y unos 5 100 millones activos por token, con una ventana de contexto de 128 000 tokens y pesos publicados originalmente en MXFP4. Está diseñado para razonamiento, generación de código y uso como agente con tool calling, e incorpora un formato de respuesta propio (harmony) con niveles configurables de esfuerzo de razonamiento.
 
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la información disponible. La t
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| moreh/gpt-oss-120b-TT-BLOCKFP4 | ≈117 000 M totales / ≈5 100 M activos | 128 000 tokens | "other" (repositorio) | Gated en HuggingFace; 0 descargas |
-| openai/gpt-oss-120b | ≈117 000 M totales / ≈5 100 M activos | 128 000 tokens | Apache 2.0 | Abierta en HuggingFace |
-| openai/gpt-oss-20b | ≈21 000 M totales / ≈3 600 M activos | 128 000 tokens | Apache 2.0 | Abierta en HuggingFace |
+| moreh/gpt-oss-120b-TT-BLOCKFP4 | ≈117 000 M totales / ≈5 100 M activos | 128 000 tokens | "other" (repositorio) | Gated en Hugging Face; 0 descargas |
+| openai/gpt-oss-120b | ≈117 000 M totales / ≈5 100 M activos | 128 000 tokens | Apache 2.0 | Abierta en Hugging Face |
+| openai/gpt-oss-20b | ≈21 000 M totales / ≈3 600 M activos | 128 000 tokens | Apache 2.0 | Abierta en Hugging Face |
 | Llama 3.3 70B Instruct | 70 000 M densos | 128 000 tokens | Licencia comunitaria de Meta | Abierta, con condiciones de uso |
-| Qwen3-235B-A22B | ≈235 000 M totales / ≈22 000 M activos | 128 000 tokens | Apache 2.0 | Abierta en HuggingFace |
+| Qwen3-235B-A22B | ≈235 000 M totales / ≈22 000 M activos | 128 000 tokens | Apache 2.0 | Abierta en Hugging Face |
 
 La comparación con alternativas densas y MoE de tamaño similar es, en el caso de este repositorio, meramente orientativa: al ser una cuantización del mismo modelo base, sus diferencias reales frente a openai/gpt-oss-120b se limitan al formato de pesos, al soporte de hardware y a la posible degradación numérica, no a la arquitectura ni a los datos de entrenamiento.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace, lo que puede limitar su uso automatizado en pipelines.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face, lo que puede limitar su uso automatizado en pipelines.
 - Licencia ambigua: la metadata indica "other" mientras que el modelo base es Apache 2.0. Antes de cualquier uso comercial hay que revisar los términos exactos del repositorio, ya que podrían imponer restricciones adicionales.
 - Cuantización no documentada: no hay informe técnico sobre el esquema BLOCKFP4, su tamaño de bloque ni el impacto medido en la calidad respecto al modelo original. Es razonable esperar cierta degradación en tareas sensibles a la precisión numérica.
 - Compatibilidad limitada de runtime: el formato puede requerir kernels o una plataforma de hardware específicos; conviene verificar el soporte en vLLM, llama.cpp o TensorRT-LLM antes de adoptarlo.

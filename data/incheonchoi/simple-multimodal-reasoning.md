@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/incheonchoi/simple-multimodal-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/incheonchoi/simple-multimodal-reasoning
 - Paper de referencia sobre Multimodal-CoT (arXiv 2302.00923): https://arxiv.org/abs/2302.00923
 - Survey sobre razonamiento multimodal con CoT (arXiv 2503.12605): https://arxiv.org/abs/2503.12605
 - Colección de recursos sobre razonamiento multimodal (GitHub): https://github.com/jluite/Awesome-Multimodal-Reasoning

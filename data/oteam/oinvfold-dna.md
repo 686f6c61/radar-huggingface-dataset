@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OInvFold es una familia de modelos de diseño inverso (*inverse folding*) para biomoléculas desarrollada por el equipo de ODesign (Odin Zhang et al.) y publicada junto al artículo *ODesign: A World Model for Biomolecular Interaction Design* (arXiv:2510.22304). La variante `oinvfold-dna` que nos ocupa predice la identidad de secuencia de ADN a partir de coordenadas tridimensionales fijas de la cadena principal (*backbone*). El repositorio de HuggingFace es una implementación **no oficial** mantenida por el equipo de OFoldX, no por los autores originales del modelo.
+OInvFold es una familia de modelos de diseño inverso (*inverse folding*) para biomoléculas desarrollada por el equipo de ODesign (Odin Zhang et al.) y publicada junto al artículo *ODesign: A World Model for Biomolecular Interaction Design* (arXiv:2510.22304). La variante `oinvfold-dna` que nos ocupa predice la identidad de secuencia de ADN a partir de coordenadas tridimensionales fijas de la cadena principal (*backbone*). El repositorio de Hugging Face es una implementación **no oficial** mantenida por el equipo de OFoldX, no por los autores originales del modelo.
 
 El modelo es una red de grafos geométrica de pequeño tamaño (8,39 millones de parámetros, 12 bloques de encoder, dimensión oculta 128, 4 cabezas de atención y 32 átomos virtuales) que realiza paso de mensajes sobre la estructura 3D. Pertenece a un conjunto de cuatro variantes: proteína, ADN, ARN y ligando, cada una con su propia convención de clases de salida (25 clases en el caso de polímeros, 37 en ligando).
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oinvfold-dna (este) | 8,39 M | Grafo geométrico, inverse folding de ADN | no aplica | AGPL-3.0 | HuggingFace (implementación no oficial) |
-| oinvfold-protein | 8,374 M | Grafo geométrico, inverse folding de proteína | no aplica | AGPL-3.0 | HuggingFace |
-| oinvfold-rna | no disponible | Grafo geométrico, inverse folding de ARN | no aplica | AGPL-3.0 | HuggingFace |
-| oinvfold-ligand | 6,429 M | Grafo geométrico, asignación de elementos de ligando | no aplica | AGPL-3.0 | HuggingFace |
+| oinvfold-dna (este) | 8,39 M | Grafo geométrico, inverse folding de ADN | no aplica | AGPL-3.0 | Hugging Face (implementación no oficial) |
+| oinvfold-protein | 8,374 M | Grafo geométrico, inverse folding de proteína | no aplica | AGPL-3.0 | Hugging Face |
+| oinvfold-rna | no disponible | Grafo geométrico, inverse folding de ARN | no aplica | AGPL-3.0 | Hugging Face |
+| oinvfold-ligand | 6,429 M | Grafo geométrico, asignación de elementos de ligando | no aplica | AGPL-3.0 | Hugging Face |
 
 No se dispone de datos de benchmarks ni de comparaciones con otros métodos de inverse folding de ADN (por ejemplo, enfoques basados en difusión o en modelos de lenguaje específicos de ácidos nucleicos) en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de comparaciones con otros métodos de i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/oinvfold-dna
+- Modelo en Hugging Face: https://huggingface.co/oteam/oinvfold-dna
 - Variante de proteína: https://huggingface.co/oteam/oinvfold-protein
 - Variante de ARN: https://huggingface.co/oteam/oinvfold-rna
 - Variante de ligando: https://huggingface.co/oteam/oinvfold-ligand

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CarolSterman_kr2 es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes, publicado por el usuario DiegoDenis88 en HuggingFace. Está diseñado para personalizar el modelo base Krea-2-Turbo, un modelo de difusión de Krea AI orientado a fotorealismo y adherencia a prompts. El LoRA se entrena para generar imágenes de una persona concreta, identificada por el trigger word `CarolSterman`. Este tipo de adaptadores permite a usuarios sin acceso a entrenamiento completo ajustar un modelo de difusión a un sujeto o estilo específico con un coste computacional reducido.
+CarolSterman_kr2 es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes, publicado por el usuario DiegoDenis88 en Hugging Face. Está diseñado para personalizar el modelo base Krea-2-Turbo, un modelo de difusión de Krea AI orientado a fotorealismo y adherencia a prompts. El LoRA se entrena para generar imágenes de una persona concreta, identificada por el trigger word `CarolSterman`. Este tipo de adaptadores permite a usuarios sin acceso a entrenamiento completo ajustar un modelo de difusión a un sujeto o estilo específico con un coste computacional reducido.
 
 El modelo se distribuye como un archivo de pesos en formato LoRA, compatible con la librería `diffusers`. No se proporcionan detalles sobre el proceso de entrenamiento, el número de imágenes utilizadas ni la licencia. Su relevancia radica en la creciente práctica de compartir adaptadores de personalización para modelos de difusión de última generación, aunque en este caso la información pública es muy limitada.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - Al ser un LoRA, el requisito principal es el del modelo base Krea-2-Turbo. No se especifican sus requisitos exactos en la documentación pública.
 - Se recomienda una GPU con al menos 8 GB de VRAM para inferencia con el modelo base en FP16, aunque esto es una estimación general para modelos de difusión de tamaño medio.
 - Para entrenamiento del LoRA, se necesitaría una GPU con mayor VRAM (12-24 GB) dependiendo del batch size y resolución.
-- Opciones de despliegue: la librería `diffusers` permite ejecutar el modelo en local con PyTorch, o mediante servicios como Replicate o HuggingFace Inference Endpoints.
+- Opciones de despliegue: la librería `diffusers` permite ejecutar el modelo en local con PyTorch, o mediante servicios como Replicate o Hugging Face Inference Endpoints.
 - No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de información suficiente para comparar este LoRA con otros adapt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DiegoDenis88/CarolSterman_kr2
+- Modelo en Hugging Face: https://huggingface.co/DiegoDenis88/CarolSterman_kr2
 - Página oficial de Krea 2: https://www.krea.ai/krea-2
 - Tutorial sobre Krea2 Raw/Base & Turbo: https://www.stablediffusiontutorials.com/2026/06/krea2-base-turbo.html
 - Ecosistema Krea 2 en Civitai: https://civitai.com/ecosystems/krea2

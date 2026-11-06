@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run2` es un modelo publicado en HuggingFace por el usuario stefanocarrera. Por el identificador se deduce que se trata de una adaptacion o derivado de Qwen3-8B (el sufijo `M` suele indicar un merge o modelo combinado y `t1.25_g6_run2` apunta a una ejecucion concreta de un pipeline de entrenamiento con hiperparametros especificos), aunque esta inferencia no se confirma en ningun metadato del repositorio.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run2` es un modelo publicado en Hugging Face por el usuario stefanocarrera. Por el identificador se deduce que se trata de una adaptacion o derivado de Qwen3-8B (el sufijo `M` suele indicar un merge o modelo combinado y `t1.25_g6_run2` apunta a una ejecucion concreta de un pipeline de entrenamiento con hiperparametros especificos), aunque esta inferencia no se confirma en ningun metadato del repositorio.
 
-El problema principal de esta ficha es la ausencia casi total de documentacion: la model card es la plantilla autogenerada de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay pipeline declarado, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,2 GB, un tamano muy inferior al de un modelo de 8 000 millones de parametros en precision completa o incluso en 4 bits, lo que sugiere que contiene unicamente adaptadores (LoRA/QLoRA) o un subconjunto parcial de pesos.
+El problema principal de esta ficha es la ausencia casi total de documentacion: la model card es la plantilla autogenerada de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay pipeline declarado, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,2 GB, un tamano muy inferior al de un modelo de 8 000 millones de parametros en precision completa o incluso en 4 bits, lo que sugiere que contiene unicamente adaptadores (LoRA/QLoRA) o un subconjunto parcial de pesos.
 
 Su relevancia actual es limitada y de caracter exploratorio: puede resultar de interes para quien quiera reproducir o auditar el experimento, pero no constituye hoy un artefacto listo para produccion dado que no se puede verificar su comportamiento, licencia ni procedencia exacta de los pesos.
 
@@ -75,9 +75,9 @@ No es posible establecer una comparativa fiable porque no se conocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run2 | no disponible (el ID indica 8B) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen3-8B (base hipotetico) | 8B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| Otros derivados de 7-8B para codigo/SQL | no disponible | no disponible | no disponible | HuggingFace |
+| stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run2 | no disponible (el ID indica 8B) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen3-8B (base hipotetico) | 8B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| Otros derivados de 7-8B para codigo/SQL | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado para ninguna de las alternativas en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado para ninguna de las alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run2
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono en machine learning): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes adicionales sobre este modelo.

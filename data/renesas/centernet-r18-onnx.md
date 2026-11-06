@@ -87,7 +87,7 @@ No disponible. No se han proporcionado datos comparativos con otros modelos de d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Renesas/CenterNet-R18-ONNX
+- Hugging Face: https://huggingface.co/Renesas/CenterNet-R18-ONNX
 - Configuración de OpenMMLab (modelo fuente): https://github.com/open-mmlab/mmdetection/blob/main/configs/centernet/metafile.yml
 - Renesas Electronics: https://www.renesas.com/
 - Productos de Renesas: https://www.renesas.com/en/products

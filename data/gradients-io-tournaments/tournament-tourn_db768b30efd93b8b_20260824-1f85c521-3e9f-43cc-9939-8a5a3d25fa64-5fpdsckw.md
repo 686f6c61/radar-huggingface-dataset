@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa rigurosa. Este ada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5FpdSckw
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5FpdSckw
 - Plataforma Gradients (torneos): https://www.gradients.io/app/research/tournament
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Artículo de LoRA (arXiv:1910.09700): https://arxiv.org/abs/1910.09700

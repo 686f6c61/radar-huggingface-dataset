@@ -92,7 +92,7 @@ La diferencia practica entre las tres primeras filas no es de capacidades sino d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/Qwen3-4B-Thinking-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/Qwen3-4B-Thinking-litert-lm
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Origen del artefacto LiteRT-LM: https://huggingface.co/litert-community/Qwen3-4B-Thinking-2507
 - Documentacion de la coleccion Qwen3: no disponible en la informacion proporcionada

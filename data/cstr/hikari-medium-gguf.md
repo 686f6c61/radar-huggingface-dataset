@@ -94,7 +94,7 @@ La diferencia funcional principal frente a Whisper-medium es el caracter causal 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/hikari-medium-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/hikari-medium-GGUF
 - Modelo base: https://huggingface.co/sbintuitions/hikari-medium
 - Paper: https://arxiv.org/abs/2603.11578
 - Codigo upstream: https://github.com/sbintuitions/hikari

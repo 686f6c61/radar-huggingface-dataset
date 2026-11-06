@@ -99,9 +99,9 @@ La concordancia entre el GGUF F16 y la ruta nativa es del 99,84 % de las filas d
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decision-1-0.6B | 596 M | 2.048 tokens (límite de serving) | 0,8760 en validación interna; 0,8103 en test sellado | Apache 2.0 | HuggingFace, GGUF F16, scorer Electron/Node |
-| Qwen3-0.6B (base) | 596 M | No disponible en la información | 0,4200 en la misma validación congelada | Apache 2.0 | HuggingFace |
-| Decision-1 (12B, familia) | 12 B según la model card | No disponible | No disponible | No disponible | Familia Decision-1 en HuggingFace |
+| Decision-1-0.6B | 596 M | 2.048 tokens (límite de serving) | 0,8760 en validación interna; 0,8103 en test sellado | Apache 2.0 | Hugging Face, GGUF F16, scorer Electron/Node |
+| Qwen3-0.6B (base) | 596 M | No disponible en la información | 0,4200 en la misma validación congelada | Apache 2.0 | Hugging Face |
+| Decision-1 (12B, familia) | 12 B según la model card | No disponible | No disponible | No disponible | Familia Decision-1 en Hugging Face |
 
 La comparación con el base es la más informativa: sobre la misma partición congelada, el fine-tune duplica con creces el equal-family score (0,8749 frente a 0,4200), a costa de perder la generación de texto libre y de quedar restringido a inglés y a opciones declaradas. Frente al Decision-1 de 12B, este modelo no reproduce el método de entrenamiento full-parameter del mayor y no hay métricas comparativas publicadas en la información disponible.
 
@@ -124,7 +124,7 @@ La comparación con el base es la más informativa: sobre la misma partición co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Worthify/Decision-1-0.6B
+- Modelo en Hugging Face: https://huggingface.co/Worthify/Decision-1-0.6B
 - Familia Decision-1: https://huggingface.co/Worthify/Decision-1
 - Modelo base Qwen3-0.6B, revisión `c1899de289a04d12100db370d81485cdf75e47ca`: https://huggingface.co/Qwen/Qwen3-0.6B/tree/c1899de289a04d12100db370d81485cdf75e47ca
 - Referencias citadas en la model card sin enlace directo en la información disponible: CLINC150 (Larson et al., CC-BY-3.0), WANLI (Liu et al., CC-BY-4.0), MultiNLI (términos permisivos OANC).

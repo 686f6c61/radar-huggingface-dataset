@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks adicionales ni comparaciones con ot
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento comparables en la informacion proporcionada. Existen otros modelos de PPO para LunarLander en HuggingFace (por ejemplo, `the-AI-guy1/ppo-LunarLander-v2` y `buildthemachine/ppo-LunarLander-v2`), pero estan entrenados para la version v2 del entorno y no se han publicado metricas de recompensa en los resultados de busqueda consultados. A continuacion se muestra una comparacion estructural basada en los datos disponibles:
+No se dispone de datos de rendimiento comparables en la informacion proporcionada. Existen otros modelos de PPO para LunarLander en Hugging Face (por ejemplo, `the-AI-guy1/ppo-LunarLander-v2` y `buildthemachine/ppo-LunarLander-v2`), pero estan entrenados para la version v2 del entorno y no se han publicado metricas de recompensa en los resultados de busqueda consultados. A continuacion se muestra una comparacion estructural basada en los datos disponibles:
 
 | Modelo | Entorno | Algoritmo | Recompensa declarada | Licencia |
 |---|---|---|---|---|
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alin1/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Alin1/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Modelo similar (LunarLander-v2, autor the-AI-guy1): https://huggingface.co/the-AI-guy1/ppo-LunarLander-v2
 - Modelo similar (LunarLander-v2, autor buildthemachine): https://huggingface.co/buildthemachine/ppo-LunarLander-v2

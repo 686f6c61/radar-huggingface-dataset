@@ -74,8 +74,8 @@ v5 y v6 en solitario usan un umbral de habla de 0,5. El conjunto de habla disper
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Silero VAD v5 (esta ficha) | 309.633 | VAD recurrente, 16 kHz | MIT | HuggingFace (avencera/silero-vad-v5-safetensors) |
-| Silero VAD v6 | no disponible | VAD, mejor separacion habla/no habla en la mayoria de audio | MIT (presumible, no confirmado) | HuggingFace (avencera/silero-vad-v6-safetensors) |
+| Silero VAD v5 (esta ficha) | 309.633 | VAD recurrente, 16 kHz | MIT | Hugging Face (avencera/silero-vad-v5-safetensors) |
+| Silero VAD v6 | no disponible | VAD, mejor separacion habla/no habla en la mayoria de audio | MIT (presumible, no confirmado) | Hugging Face (avencera/silero-vad-v6-safetensors) |
 | Silero VAD original (snakers4) | no disponible | VAD de referencia, pesos originales | MIT | GitHub snakers4/silero-vad |
 
 No se dispone de datos de otros detectores de voz comparables en la informacion proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de otros detectores de voz comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/avencera/silero-vad-v5-safetensors
+- Hugging Face: https://huggingface.co/avencera/silero-vad-v5-safetensors
 - Silero VAD v6 (compañero): https://huggingface.co/avencera/silero-vad-v6-safetensors
 - Repositorio original de Silero VAD: https://github.com/snakers4/silero-vad
 - Libreria scriptrs: https://github.com/avencera/scriptrs

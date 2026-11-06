@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-balanced-b1-fineweb-100m-heb-eng` es un modelo de generación de texto publicado en HuggingFace por el usuario `Beetle-FineWeb-100M`. Según su nombre, está diseñado para ser bilingüe en hebreo e inglés, con una arquitectura tipo `pico_decoder` (un decoder pequeño) y un total de 193.804.032 parámetros. Sin embargo, la model card es autogenerada y no contiene información sustancial sobre su desarrollo, entrenamiento o capacidades.
+El modelo `beetle-bilingual-balanced-b1-fineweb-100m-heb-eng` es un modelo de generación de texto publicado en Hugging Face por el usuario `Beetle-FineWeb-100M`. Según su nombre, está diseñado para ser bilingüe en hebreo e inglés, con una arquitectura tipo `pico_decoder` (un decoder pequeño) y un total de 193.804.032 parámetros. Sin embargo, la model card es autogenerada y no contiene información sustancial sobre su desarrollo, entrenamiento o capacidades.
 
 Este modelo forma parte de una familia de variantes bilingües (también se encuentran versiones para griego, filipino y neerlandés) que parecen haber sido entrenadas sobre el dataset FineWeb. A pesar de su tamaño reducido, el repositorio ocupa 39.5 GB, lo que sugiere la presencia de múltiples archivos de pesos o checkpoints. La relevancia actual es limitada debido a la ausencia de documentación técnica y de resultados de evaluación públicos.
 
@@ -43,7 +43,7 @@ No se proporcionan requisitos oficiales. Como orientación general para un model
 
 - VRAM estimada: en fp32 (~775 MB), en fp16 (~388 MB), en int8 (~194 MB). Sin embargo, el tamaño del repositorio (39.5 GB) sugiere que puede haber múltiples versiones o archivos adicionales, por lo que la carga real podría variar.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM podría ejecutar el modelo en fp16, pero no hay datos de latencia o throughput.
-- Opciones de despliegue: al ser un modelo de transformers, podría usarse con bibliotecas como HuggingFace Transformers, vLLM, llama.cpp u Ollama, pero no hay confirmación de compatibilidad.
+- Opciones de despliegue: al ser un modelo de transformers, podría usarse con bibliotecas como Hugging Face Transformers, vLLM, llama.cpp u Ollama, pero no hay confirmación de compatibilidad.
 - No se dispone de mediciones de rendimiento.
 
 ## Comparativa con modelos similares
@@ -60,7 +60,7 @@ Existen otras variantes de la misma familia publicadas por el mismo autor, como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-balanced-b1-fineweb-100m-heb-eng
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-balanced-b1-fineweb-100m-heb-eng
 - Variante griego-inglés: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-balanced-b1-fineweb-100m-ell-eng-1xa100
 - Variante filipino-inglés: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-balanced-b1-fineweb-100m-fil-eng/tree/main
 - Repositorio GitHub de una variante neerlandés-inglés: https://github.com/Damacol/beetle-fineweb-beetle-bilingual-balanced-b1-fineweb-nld-eng

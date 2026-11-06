@@ -37,7 +37,7 @@ Datos adicionales del repositorio:
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. El tag `library_name: transformers` y el hecho de que el cuantizador haya usado `convert_type: hf` indican que el modelo base esta publicado en formato HuggingFace Transformers, pero la model card no especifica si se trata de un transformer denso clasico, si incorpora atencion lineal, decodificacion especulativa u otra innovacion. Tampoco se detalla el numero de capas, dimensiones ocultas, cabezas de atencion ni el tipo de tokenizador.
+No se dispone de informacion sobre la arquitectura interna del modelo. El tag `library_name: transformers` y el hecho de que el cuantizador haya usado `convert_type: hf` indican que el modelo base esta publicado en formato Hugging Face Transformers, pero la model card no especifica si se trata de un transformer denso clasico, si incorpora atencion lineal, decodificacion especulativa u otra innovacion. Tampoco se detalla el numero de capas, dimensiones ocultas, cabezas de atencion ni el tipo de tokenizador.
 
 En cuanto al entrenamiento, no hay datos publicados sobre el numero de tokens utilizados, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT con datos sinteticos. Los tags del modelo (`function-calling`, `tool-use`, `agentic-reasoning`, `json-mode`, `structured-outputs`) describen el objetivo del ajuste fino, no el procedimiento seguido. Respecto a la cuantizacion, la model card indica `quantize_version: 2` y `output_tensor_quantised: 1`, lo que senala que se aplico cuantizacion por tensor de salida y que las cuantizaciones son estaticas, no ponderadas por matriz de importancia (imatrix).
 
@@ -113,7 +113,7 @@ Diferencias relevantes: frente a estas alternativas, ZOZ-Function-Master-3B se p
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/ZOZ-Function-Master-3B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/ZOZ-Function-Master-3B-GGUF
 - Modelo base: https://huggingface.co/z51722369/ZOZ-Function-Master-3B
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#ZOZ-Function-Master-3B-GGUF
 - FAQ y peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -25,7 +25,7 @@ Su relevancia es marginal dentro del ecosistema: el repositorio acumula 0 descar
 | Tamano del repositorio | 0,2 GB |
 | Dataset de entrenamiento | beyoru/Aesir-Character-CoT-roleplay |
 | Pipeline | text-generation |
-| Fecha de publicacion | 12 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 12 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -94,7 +94,7 @@ No hay informacion suficiente para establecer una comparativa fiable: el artefac
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/bunnycore/MiniCPM5-2B-RP-Lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/bunnycore/MiniCPM5-2B-RP-Lora
 - Modelo base referenciado: openbmb/MiniCPM5-2B (enlace directo no proporcionado en la informacion disponible)
 - Dataset referenciado: beyoru/Aesir-Character-CoT-roleplay (enlace directo no proporcionado en la informacion disponible)
 - Paper, blog o demo oficial: no disponible

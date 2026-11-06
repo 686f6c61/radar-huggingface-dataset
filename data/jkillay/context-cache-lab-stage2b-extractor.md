@@ -89,7 +89,7 @@ No disponible. No se dispone de modelos comparables publicados para este tipo de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jkillay/context-cache-lab-stage2b-extractor
+- Hugging Face: https://huggingface.co/jkillay/context-cache-lab-stage2b-extractor
 - Repositorio de código y resultados: https://github.com/johnathonkillaly/context-cache-lab
 - Paper de referencia C²KV: https://arxiv.org/abs/2607.17715
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

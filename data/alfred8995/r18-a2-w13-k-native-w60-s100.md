@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`r18-a2-w13-k-native-w60-s100` es un modelo de lenguajes publicado en HuggingFace por el usuario `alfred8995` bajo el tag de familia `sn38-nanochrono`. Se distribuye con pesos en formato safetensors y una licencia Apache 2.0, y cuenta con aproximadamente 2.018 millones de parametros segun los metadatos del repositorio (2.018.511.234 parametros, es decir, unos 2,02 mil millones). El repositorio ocupa 14,4 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo.
+`r18-a2-w13-k-native-w60-s100` es un modelo de lenguajes publicado en Hugging Face por el usuario `alfred8995` bajo el tag de familia `sn38-nanochrono`. Se distribuye con pesos en formato safetensors y una licencia Apache 2.0, y cuenta con aproximadamente 2.018 millones de parametros segun los metadatos del repositorio (2.018.511.234 parametros, es decir, unos 2,02 mil millones). El repositorio ocupa 14,4 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo.
 
 La informacion publica disponible es muy limitada: no se declara pipeline de inferencia, no se especifican idiomas soportados y no hay model card con detalles de arquitectura, datos de entrenamiento ni evaluaciones. El nombre del modelo sugiere una configuracion concreta de entrenamiento (posiblemente con parametros como `r18`, `a2`, `w13`, `w60`, `s100`), pero no hay documentacion que explique su significado, por lo que cualquier interpretacion seria especulativa.
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark | Disponibilidad |
 |---|---|---|---|---|---|
-| r18-a2-w13-k-native-w60-s100 | ~2,02 B | no disponible | Apache 2.0 | no disponible | Gated en HuggingFace |
+| r18-a2-w13-k-native-w60-s100 | ~2,02 B | no disponible | Apache 2.0 | no disponible | Gated en Hugging Face |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,13 +77,13 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 - Riesgo de alucinacion: desconocido, al no existir evaluaciones ni ejemplos de uso.
 - Idiomas: no se declaran idiomas soportados; no se puede asumir un buen rendimiento en castellano ni en ningun otro idioma.
 - Contexto: se desconoce la longitud de contexto, lo que impide planificar casos de uso con documentos largos.
-- Licencia: Apache 2.0 permite uso comercial, pero el acceso gated implica aceptar condiciones adicionales en HuggingFace que deben revisarse antes de su uso en produccion.
+- Licencia: Apache 2.0 permite uso comercial, pero el acceso gated implica aceptar condiciones adicionales en Hugging Face que deben revisarse antes de su uso en produccion.
 - Reproducibilidad: sin pipeline declarado ni formato de chat, la integracion en produccion requeriria ingenieria inversa y validacion propia.
 - Madurez: con 2 descargas y 0 likes en el momento de la consulta, el modelo carece de validacion por parte de la comunidad.
 - Nombre criptico: el identificador sugiere hiperparametros de entrenamiento no documentados; no debe inferirse su significado sin confirmacion del autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w60-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w60-s100
 - Resultado de busqueda web no relacionado con el modelo (Azure Container Storage): https://azure.microsoft.com/en-us/products/container-storage/
 - Paper, blog, repositorio o demo oficiales: no disponible

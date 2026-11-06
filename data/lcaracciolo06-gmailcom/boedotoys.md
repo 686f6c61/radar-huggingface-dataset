@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `lcaracciolo06-gmailcom/boedotoys` aloja un modelo publicado en HuggingFace por el usuario `lcaracciolo06-gmailcom`. La informacion publica disponible es minima: el repositorio pesa 237,5 GB, esta etiquetado con el formato ONNX, la licencia MIT y la region "us", pero no incluye model card sustancial, documentacion tecnica, ni datos de uso (cero descargas y cero likes en el momento de la consulta).
+El repositorio `lcaracciolo06-gmailcom/boedotoys` aloja un modelo publicado en Hugging Face por el usuario `lcaracciolo06-gmailcom`. La informacion publica disponible es minima: el repositorio pesa 237,5 GB, esta etiquetado con el formato ONNX, la licencia MIT y la region "us", pero no incluye model card sustancial, documentacion tecnica, ni datos de uso (cero descargas y cero likes en el momento de la consulta).
 
 El modelo carece de especificaciones publicadas sobre arquitectura, numero de parametros, contexto, idiomas o capacidades. La ausencia de model card, benchmarks y comunidad de usuarios hace imposible determinar su funcionamiento, calidad o idoneidad para cualquier tarea concreta. Se trata, por tanto, de un artefacto sin validar que debe tratarse con extrema cautela antes de cualquier uso en produccion.
 
@@ -75,7 +75,7 @@ No disponible. Sin informacion sobre arquitectura, parametros o rendimiento, no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lcaracciolo06-gmailcom/boedotoys
+- Repositorio en Hugging Face: https://huggingface.co/lcaracciolo06-gmailcom/boedotoys
 - Perfil del autor en Meshy (unica presencia web relacionada encontrada): https://www.meshy.ai/@s173468831831712
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo.

@@ -91,7 +91,7 @@ La comparativa se limita al modelo padre, ya que no se dispone de datos de otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B)
+- [Modelo en Hugging Face](https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B)
 - [Modelo padre](https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit)
 - [Paper REAP (arXiv:2510.13999)](https://arxiv.org/abs/2510.13999)
 - [Herramienta mlx-optiq](https://mlx-optiq.com)

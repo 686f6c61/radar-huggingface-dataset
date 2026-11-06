@@ -4,7 +4,7 @@
 
 GirlsLike-Krea2 es un adaptador de tipo LoRA/LoKr (Low Rank Adaptation con producto de Kronecker) desarrollado por el usuario ifmylove2011, diseñado para el modelo base de difusión Krea-2 de Krea AI. El adaptador se entrena sobre el checkpoint Krea-2-Raw y es compatible tanto con la versión Raw como con la variante Turbo, permitiendo generar imágenes de personajes femeninos con una identidad visual consistente a partir de una palabra de activación (trigger word) específica para cada persona.
 
-El modelo resuelve el problema de la personalización de identidad en generación de imágenes: sin un adaptador, un modelo base no puede mantener la apariencia de un personaje concreto a lo largo de múltiples generaciones. GirlsLike-Krea2 añade esa capacidad mediante un entrenamiento de bajo rango que ajusta los pesos del modelo base sin necesidad de reentrenarlo por completo. Con más de 12.700 descargas y 29 likes en HuggingFace, el adaptador ha tenido una acogida notable dentro de la comunidad de generación de imágenes.
+El modelo resuelve el problema de la personalización de identidad en generación de imágenes: sin un adaptador, un modelo base no puede mantener la apariencia de un personaje concreto a lo largo de múltiples generaciones. GirlsLike-Krea2 añade esa capacidad mediante un entrenamiento de bajo rango que ajusta los pesos del modelo base sin necesidad de reentrenarlo por completo. Con más de 12.700 descargas y 29 likes en Hugging Face, el adaptador ha tenido una acogida notable dentro de la comunidad de generación de imágenes.
 
 La relevancia actual del modelo radica en que Krea-2 es una arquitectura de difusión reciente (lanzada en 2025) y los adaptadores de personajes para ella son todavía escasos. Este LoRA cubre ese hueco, ofreciendo una solución práctica para creadores que necesitan consistencia facial en retratos, ilustraciones y contenido visual. El repositorio pesa 2,3 GB e incluye múltiples variantes del adaptador, cada una correspondiente a un personaje distinto, con nombres abreviados como `girlslikekrea2_tly`, `girlslikekrea2_syn`, etc.
 
@@ -35,7 +35,7 @@ Cada variante del adaptador incluye una palabra de activación (trigger word) qu
 - Compatibilidad con dos variantes del modelo base: Krea-2-Raw y Krea-2-Turbo, lo que permite elegir entre calidad bruta o velocidad de inferencia.
 - Soporte de prompts en inglés y chino, con mejor adherencia al prompt en inglés y resultados aceptables en chino para conceptos específicos.
 - Control fino de la intensidad del adaptador mediante el peso del LoRA (recomendado entre 0.8 y 1.5; por encima de 2.0 se producen deformaciones faciales).
-- Integración con el ecosistema diffusers de HuggingFace, lo que facilita su uso en pipelines de text-to-image estándar.
+- Integración con el ecosistema diffusers de Hugging Face, lo que facilita su uso en pipelines de text-to-image estándar.
 - Posibilidad de combinar con otros LoRAs (aunque las pruebas de ejemplo se realizaron sin otros adaptadores).
 - Generación de imágenes a resoluciones variables, con mejor rendimiento en planos medios y cercanos; los planos lejanos requieren aumentar la resolución para mejorar la calidad.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El adaptador en sí es ligero (2,3 GB incluye todas las variantes), pero requiere el modelo base Krea-2 para funcionar, que es un modelo de difusión de gran tamaño.
 - Para inferencia con Krea-2-Turbo en fp8 (como se usó en los ejemplos), se estima una VRAM mínima de 8-12 GB, dependiendo de la resolución de salida. Una GPU como la RTX 3060 de 12 GB o superior sería suficiente para resoluciones de 960×1280.
 - Para Krea-2-Raw sin cuantizar, se recomienda al menos 16 GB de VRAM (por ejemplo, RTX 4080, RTX 4090, A100).
-- El despliegue se puede realizar mediante la librería diffusers de HuggingFace, que soporta la carga de LoRAs con `load_lora_weights()`. También es compatible con herramientas como ComfyUI o Automatic1111 si se convierten los pesos al formato adecuado.
+- El despliegue se puede realizar mediante la librería diffusers de Hugging Face, que soporta la carga de LoRAs con `load_lora_weights()`. También es compatible con herramientas como ComfyUI o Automatic1111 si se convierten los pesos al formato adecuado.
 - La latencia depende del modelo base y del hardware. Con Krea-2-Turbo en fp8 y 8 pasos, se pueden obtener imágenes en unos pocos segundos en una GPU moderna (RTX 4090 o superior). Con Krea-2-Raw, el tiempo de generación es mayor (20-40 pasos típicos).
 - No se proporcionan datos de throughput específicos para este adaptador.
 
@@ -77,7 +77,7 @@ No se dispone de información sobre adaptadores comparables para Krea-2 en el mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ifmylove2011/girlslike-krea2
+- Repositorio Hugging Face: https://huggingface.co/ifmylove2011/girlslike-krea2
 - Galería de nombres abreviados (app): https://huggingface.co/spaces/ifmylove2011/girlslike_lora_gallery/blob/main/app.py
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card)
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo (referenciado en la model card)

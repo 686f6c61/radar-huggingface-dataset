@@ -4,7 +4,7 @@
 
 SweepBestModel es un modelo de clasificación de secuencias basado en RoBERTa-base, desarrollado por el usuario dusersad12 como un experimento de barrido de hiperparámetros. El objetivo del proyecto era encontrar la configuración óptima de learning rate y weight decay para el fine-tuning de un modelo RoBERTa en una tarea de clasificación de texto. Aunque se trata de un repositorio de prueba (TestRepo) sin descargas ni uso documentado, la model card describe un proceso sistemático de optimización con cuatro configuraciones evaluadas.
 
-El modelo se distribuye bajo licencia Apache 2.0 y es compatible con la librería Transformers de HuggingFace, con pipeline de text-classification. No se especifica el dataset de entrenamiento ni el dominio concreto de la tarea de clasificación, lo que limita su aplicabilidad directa en producción. La relevancia de este modelo reside principalmente en su valor como ejemplo de metodología de barrido de hiperparámetros más que como un modelo listo para uso general.
+El modelo se distribuye bajo licencia Apache 2.0 y es compatible con la librería Transformers de Hugging Face, con pipeline de text-classification. No se especifica el dataset de entrenamiento ni el dominio concreto de la tarea de clasificación, lo que limita su aplicabilidad directa en producción. La relevancia de este modelo reside principalmente en su valor como ejemplo de metodología de barrido de hiperparámetros más que como un modelo listo para uso general.
 
 ## Especificaciones técnicas
 
@@ -80,4 +80,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/SweepBest-TestRepo
+- Hugging Face: https://huggingface.co/dusersad12/SweepBest-TestRepo

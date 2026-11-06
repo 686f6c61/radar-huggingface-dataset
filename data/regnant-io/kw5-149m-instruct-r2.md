@@ -22,9 +22,9 @@ Es relevante por dos motivos. Primero, es un ejemplo de modelado para lenguas af
 | Formato de pesos | safetensors, con código de modelado propio (`modeling_kw5v2.py`) y tokenizador SentencePiece (`tokenizer.model`); no se incluye GGUF |
 | Tokenizador | SentencePiece; `<|user|>`, `<|assistant|>` y `<|end|>` son `user_defined_symbols`; `<s>` es un símbolo de control (id 1) y no se obtiene codificando la cadena |
 | Identificadores especiales | BOS = 1 (`<s>`), fin de generación = 7 (`<|end|>`), no `</s>` |
-| Descargas y likes en HuggingFace | 0 descargas, 0 likes |
+| Descargas y likes en Hugging Face | 0 descargas, 0 likes |
 | Tamano del repositorio | 0,7 GB |
-| Fecha de publicacion (HuggingFace) | 20 de septiembre de 2026 (según metadatos del hub) |
+| Fecha de publicacion (Hugging Face) | 20 de septiembre de 2026 (según metadatos del hub) |
 
 ## Arquitectura y entrenamiento
 
@@ -103,13 +103,13 @@ Los resultados de búsqueda web devueltos no contienen ningún modelo comparable
 - El prompt debe empezar con el id BOS 1 insertado manualmente, y la generación debe detenerse en el id 7. Ignorar cualquiera de las dos reglas produce respuestas degeneradas o cortadas.
 - Una respuesta truncada a mitad de frase con un límite de tokens ajustado es efecto del límite, no del modelo; hay que dejar margen de generación.
 - Licencia Apache 2.0: permite uso comercial, modificación y redistribución, con obligación de conservar el aviso de licencia y el archivo de cambios; no incluye garantías.
-- Validación externa inexistente: el modelo registra 0 descargas y 0 likes en HuggingFace y no se han publicado evaluaciones independientes.
+- Validación externa inexistente: el modelo registra 0 descargas y 0 likes en Hugging Face y no se han publicado evaluaciones independientes.
 - Composición del corpus de preentrenamiento y del conjunto de SFT no detallada más allá del número de tokens (1.970 M) y del número de ejemplos (107.150, de los cuales 137 de abstención), por lo que no es posible auditar sesgos de origen.
 - La model card proporcionada está truncada a mitad de la sección de errores, por lo que puede haber limitaciones adicionales documentadas por el autor que no se recogen aquí.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/regnant-io/kw5-149M-instruct-r2
+- Modelo en Hugging Face: https://huggingface.co/regnant-io/kw5-149M-instruct-r2
 - Modelo base kw5-149M: https://huggingface.co/regnant-io/kw5-149M
 - Sitio del desarrollador (Regnant): https://www.regnant.io/
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante al modelo. Los resultados devueltos corresponden a repositorios de jailbreaks de ChatGPT, hilos de Reddit y preguntas de Zhihu sobre modelos de OpenAI, sin relación con este modelo.

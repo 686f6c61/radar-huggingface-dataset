@@ -104,7 +104,7 @@ Los tres artefactos comparables pertenecen al mismo proyecto, por lo que la comp
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage-sft-merged
+- Hugging Face (este modelo): https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage-sft-merged
 - Modelo final con alineamiento DPO: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage
 - Adaptador DPO: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage-dpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base

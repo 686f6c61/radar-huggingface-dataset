@@ -6,7 +6,7 @@ El modelo Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W8A8-Vision es un checkpo
 
 La relevancia de esta publicacion es doble. Por un lado, ofrece una version cuantizada a 8 bits pensada para inferencia local con vLLM 0.31.0 mediante un cargador propio (`qwen_w8a8_view`) que reutiliza los tensores INT8 originales de ModelOpt con escalas por canal, sin recalcular los pesos. Por otro, conserva la torre de vision y los pesos MTP (multi-token prediction), aunque la decodificacion especulativa no esta habilitada en la configuracion publicada.
 
-Se trata de un artefacto con cero descargas y cero valoraciones en el momento de redactar esta ficha, y su model card advierte explicitamente de que las mediciones incluidas son pruebas sinteticas pequenas, no resultados de benchmarks publicados. No dispone de pipeline declarado ni de lista de idiomas en los metadatos de HuggingFace.
+Se trata de un artefacto con cero descargas y cero valoraciones en el momento de redactar esta ficha, y su model card advierte explicitamente de que las mediciones incluidas son pruebas sinteticas pequenas, no resultados de benchmarks publicados. No dispone de pipeline declarado ni de lista de idiomas en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W8A8-Vision | 35,95 mil millones | ≈3 mil millones (designacion A3B) | 200.000 tokens en la configuracion de ejemplo | INT8 W8A8 (y export W8A16 alternativo) | apache-2.0 | HuggingFace, requiere cargador propio |
-| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive (modelo base) | 35,95 mil millones (heredado) | ≈3 mil millones (heredado) | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.6-35B-A3B (base original) | 35,95 mil millones (heredado) | ≈3 mil millones (heredado) | no disponible | pesos originales en BF16, segun se deduce del proceso de reconstruccion | apache-2.0 segun la model card de este checkpoint | HuggingFace |
+| Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W8A8-Vision | 35,95 mil millones | ≈3 mil millones (designacion A3B) | 200.000 tokens en la configuracion de ejemplo | INT8 W8A8 (y export W8A16 alternativo) | apache-2.0 | Hugging Face, requiere cargador propio |
+| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive (modelo base) | 35,95 mil millones (heredado) | ≈3 mil millones (heredado) | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (base original) | 35,95 mil millones (heredado) | ≈3 mil millones (heredado) | no disponible | pesos originales en BF16, segun se deduce del proceso de reconstruccion | apache-2.0 segun la model card de este checkpoint | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes, por lo que la comparativa se limita a parametros, formato y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W8A8-Vision
+- Checkpoint en Hugging Face: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W8A8-Vision
 - Modelo base (ajuste sin censura): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Ficheros de referencia citados en la model card: `README_ORIGINAL.md`, `results/precision-comparison.json`, `reconstruction_metadata.json` y el directorio `loader/`, todos dentro del repositorio del checkpoint.

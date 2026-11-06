@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El identificador `davidwdw/fa-log-task00-centre-full-hourly-9500582112c0-b02dc949fcc3` corresponde a un repositorio alojado en HuggingFace por el usuario `davidwdw`. Segun la propia model card, se trata de un "versioned fleet archive" (archivo versionado de flota) asociado a la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`, con nivel "versioned snapshot". Es decir, el artefacto se presenta como una instantanea inmutable de un conjunto de ficheros, no como un modelo de aprendizaje automatico con pesos entrenados.
+El identificador `davidwdw/fa-log-task00-centre-full-hourly-9500582112c0-b02dc949fcc3` corresponde a un repositorio alojado en Hugging Face por el usuario `davidwdw`. Segun la propia model card, se trata de un "versioned fleet archive" (archivo versionado de flota) asociado a la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`, con nivel "versioned snapshot". Es decir, el artefacto se presenta como una instantanea inmutable de un conjunto de ficheros, no como un modelo de aprendizaje automatico con pesos entrenados.
 
 No hay informacion publica sobre arquitectura, parametros, contexto, datos de entrenamiento ni licencia. El repositorio registra 0 descargas y 0 likes, la unica etiqueta presente es `region:us` y la model card no incluye campos de pipeline, idiomas ni licencia. Por tanto, cualquier evaluacion tecnica convencional (calidad de generacion, benchmarks, requisitos de VRAM) no es posible con los datos disponibles.
 
-La relevancia de esta ficha es, por tanto, metodologica: sirve para documentar un tipo de artefacto que aparece en HuggingFace y que no es un modelo, sino un paquete de trazabilidad (snapshot con verificacion SHA256). Se recomienda tratarlo como material de archivo y no como un checkpoint desplegable.
+La relevancia de esta ficha es, por tanto, metodologica: sirve para documentar un tipo de artefacto que aparece en Hugging Face y que no es un modelo, sino un paquete de trazabilidad (snapshot con verificacion SHA256). Se recomienda tratarlo como material de archivo y no como un checkpoint desplegable.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No disponible. No se puede identificar una categoria de modelos comparables porq
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No disponible. No se puede identificar una categoria de modelos comparables porq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-9500582112c0-b02dc949fcc3
+- Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-9500582112c0-b02dc949fcc3
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (ruta interna, sin URL publica disponible)
 - Fichero de verificacion citado: `SHA256SUMS` (sin URL publica disponible)
 - Paper, blog, repositorio o demo adicionales: no disponible

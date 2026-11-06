@@ -19,7 +19,7 @@ ERes2NetV2-192 RU+EN es un modelo de verificación de hablante (speaker verifica
 
 ## Arquitectura y entrenamiento
 
-ERes2NetV2 es una evolución de ERes2Net, que combina características globales y locales mediante una fusión multi-escala para capturar mejor las características del hablante, especialmente en segmentos de voz cortos. El modelo base fue entrenado originalmente en el conjunto de datos VoxCeleb (según el repositorio 3D-Speaker), y esta versión fine-tuneada se entrenó sobre el dataset fixie-ai/common_voice_17_0, que contiene grabaciones multilingües de Common Voice. El fine-tuning se realizó con el framework Transformers de HuggingFace, usando un optimizador SGD con momentum y Nesterov, una tasa de aprendizaje inicial de 0.0001, un scheduler cosine con warmup de 166 pasos y 7 épocas. El tamaño de lote efectivo fue de 108 (18 por dispositivo con acumulación de gradiente de 6). No se especifica el uso de RLHF o DPO; el entrenamiento se basó en pérdida de clasificación (la pérdida de entrenamiento reportada es alta, alrededor de 143, lo que sugiere una función de pérdida tipo softmax o similar). La arquitectura exacta (número de capas, canales, etc.) no está detallada en la información proporcionada, pero se sabe que el modelo genera embeddings de 192 dimensiones (por el sufijo "192" en el nombre).
+ERes2NetV2 es una evolución de ERes2Net, que combina características globales y locales mediante una fusión multi-escala para capturar mejor las características del hablante, especialmente en segmentos de voz cortos. El modelo base fue entrenado originalmente en el conjunto de datos VoxCeleb (según el repositorio 3D-Speaker), y esta versión fine-tuneada se entrenó sobre el dataset fixie-ai/common_voice_17_0, que contiene grabaciones multilingües de Common Voice. El fine-tuning se realizó con el framework Transformers de Hugging Face, usando un optimizador SGD con momentum y Nesterov, una tasa de aprendizaje inicial de 0.0001, un scheduler cosine con warmup de 166 pasos y 7 épocas. El tamaño de lote efectivo fue de 108 (18 por dispositivo con acumulación de gradiente de 6). No se especifica el uso de RLHF o DPO; el entrenamiento se basó en pérdida de clasificación (la pérdida de entrenamiento reportada es alta, alrededor de 143, lo que sugiere una función de pérdida tipo softmax o similar). La arquitectura exacta (número de capas, canales, etc.) no está detallada en la información proporcionada, pero se sabe que el modelo genera embeddings de 192 dimensiones (por el sufijo "192" en el nombre).
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 - VRAM estimada: con 17,9 millones de parámetros, el modelo ocupa aproximadamente 72 MB en FP32 (17.896.656 × 4 bytes). En cuantización FP16 o INT8, el uso de memoria sería aún menor (36 MB o 18 MB respectivamente).
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Incluso puede ejecutarse en CPU sin problemas, ya que la inferencia es ligera.
 - Compatibilidad con GPU de consumo: sí, cualquier GPU moderna (serie GTX 10xx o superior) puede ejecutarlo sin problemas.
-- Opciones de despliegue: al ser un modelo de Transformers, se puede servir con HuggingFace Inference Endpoints, o exportar a ONNX para inferencia en producción. También es posible usar librerías de audio como SpeechBrain o WeSpeaker, aunque el modelo está empaquetado para Transformers.
+- Opciones de despliegue: al ser un modelo de Transformers, se puede servir con Hugging Face Inference Endpoints, o exportar a ONNX para inferencia en producción. También es posible usar librerías de audio como SpeechBrain o WeSpeaker, aunque el modelo está empaquetado para Transformers.
 - Latencia y throughput: no se han publicado mediciones oficiales. Dado el tamaño, se espera una latencia de milisegundos en GPU y de decenas de milisegundos en CPU para una sola inferencia.
 
 ## Comparativa con modelos similares
@@ -80,9 +80,9 @@ No se dispone de datos comparativos directos en la información proporcionada. M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artyomboyko/eres2netv2-192-ru-en
+- Modelo en Hugging Face: https://huggingface.co/artyomboyko/eres2netv2-192-ru-en
 - Modelo base: https://huggingface.co/artyomboyko/eres2netv2-192
 - Paper de ERes2NetV2: https://arxiv.org/abs/2406.02167
 - Repositorio 3D-Speaker (código de entrenamiento): https://github.com/modelscope/3D-Speaker/tree/main/egs/voxceleb/sv-eres2netv2
-- Perfil del autor en HuggingFace: https://huggingface.co/artyomboyko
+- Perfil del autor en Hugging Face: https://huggingface.co/artyomboyko
 - Perfil del autor en GitHub: https://github.com/artyomboyko

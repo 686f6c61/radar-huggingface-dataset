@@ -82,7 +82,7 @@ El modelo `shenava-nemotron3-rust` no es una alternativa independiente, sino un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Reza2kn/shenava-nemotron3-rust
+- Hugging Face: https://huggingface.co/Reza2kn/shenava-nemotron3-rust
 - GitHub de Reza2kn: https://github.com/Reza2kn
 - Proyecto `shenava-asr-server`: https://github.com/Reza2kn
 - Modelo fuente: https://huggingface.co/nvidia/Nemotron-3-Diarization-preview

@@ -72,17 +72,17 @@ Precisión en preferencias held-out: 0,542 [0,502, 0,582] con n = 594, frente a 
 - El entrenamiento se realizó en 4 GPUs de 23 GB con FSDP2 y bf16, lo que da una idea del perfil mínimo para reproducir el ajuste.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para inferencia en bf16 con contexto corto. En GPUs de 16 GB sería necesaria cuantización, no documentada por el autor.
 - Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) en bf16 con contexto moderado; en RTX 4080/4070 Ti Super (16 GB) requeriría cuantización no publicada.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible` en HuggingFace). No se documentan GGUF, llama.cpp, Ollama ni vLLM en la información disponible.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible` en Hugging Face). No se documentan GGUF, llama.cpp, Ollama ni vLLM en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | GSM8K pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nano-mistral-o1-dpo-arm-b-response` (este) | ~7,25B | 2.048 en entrenamiento | 0,0091 | Apache-2.0 | HuggingFace (36 descargas) |
-| `nano-mistral-o1-dpo-arm-b` (DPO sigmoide, mismo dato) | ~7,25B | 2.048 en entrenamiento | 0,2108 | Apache-2.0 | HuggingFace |
-| `nano-mistral-o1-sft` (padre SFT) | ~7,25B | 2.048 en entrenamiento | 0,2047 | Apache-2.0 | HuggingFace |
-| `mistralai/Mistral-7B-v0.3` (base) | ~7,25B | no disponible en la información | no disponible | Apache-2.0 | HuggingFace |
+| `nano-mistral-o1-dpo-arm-b-response` (este) | ~7,25B | 2.048 en entrenamiento | 0,0091 | Apache-2.0 | Hugging Face (36 descargas) |
+| `nano-mistral-o1-dpo-arm-b` (DPO sigmoide, mismo dato) | ~7,25B | 2.048 en entrenamiento | 0,2108 | Apache-2.0 | Hugging Face |
+| `nano-mistral-o1-sft` (padre SFT) | ~7,25B | 2.048 en entrenamiento | 0,2047 | Apache-2.0 | Hugging Face |
+| `mistralai/Mistral-7B-v0.3` (base) | ~7,25B | no disponible en la información | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de la base Mistral-7B-v0.3 en la información proporcionada, por lo que la comparación con modelos externos de la misma categoría queda limitada a la familia nano-mistral-o1.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks de la base Mistral-7B-v0.3 en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-b-response
+- Modelo en Hugging Face: https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-b-response
 - Checkpoint DPO sigmoide del mismo experimento: https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-b
 - Checkpoint padre SFT: https://huggingface.co/viai957/nano-mistral-o1-sft
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3

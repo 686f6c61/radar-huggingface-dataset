@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark25-4B EvoMerge (identificador `MC7ever/spark25-4b-evo-merged`) es un modelo de generacion de texto de aproximadamente 4.100 millones de parametros obtenido mediante una fusion lineal evolutiva ("evo-merge") de varios finetunes de la familia Spark2.5-4B. Lo publica el usuario MC7ever en HuggingFace y su rasgo distintivo es el metodo de construccion: en lugar de tecnicas como TIES o DARE, usa una combinacion convexa en PyTorch puro que optimiza los coeficientes de mezcla de los modelos donantes.
+Spark25-4B EvoMerge (identificador `MC7ever/spark25-4b-evo-merged`) es un modelo de generacion de texto de aproximadamente 4.100 millones de parametros obtenido mediante una fusion lineal evolutiva ("evo-merge") de varios finetunes de la familia Spark2.5-4B. Lo publica el usuario MC7ever en Hugging Face y su rasgo distintivo es el metodo de construccion: en lugar de tecnicas como TIES o DARE, usa una combinacion convexa en PyTorch puro que optimiza los coeficientes de mezcla de los modelos donantes.
 
 El modelo parte de cinco modelos: ProCreations/BetterWright-4b, hcnote/SparkMuse-4B, hcnote/Spark-X2.5-4B-Writing-EP1, sriq-ai/sriq-spark-v1.4 y XHToken/Spark-X2.5-4B-Base (este ultimo como donante de configuracion y tokenizer). Segun la model card, los pesos finales solo asignan coeficientes no nulos a BetterWright-4b (0,7637) y a Spark-X2.5-4B-Writing-EP1 (0,2363), mientras que SparkMuse-4B y sriq-spark-v1.4 reciben peso 0,0.
 
@@ -103,7 +103,7 @@ La comparacion de parametros, contexto, rendimiento y disponibilidad frente a mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MC7ever/spark25-4b-evo-merged
+- Modelo en Hugging Face: https://huggingface.co/MC7ever/spark25-4b-evo-merged
 - Modelo donante principal: https://huggingface.co/ProCreations/BetterWright-4b
 - Modelo donante (escritura): https://huggingface.co/hcnote/Spark-X2.5-4B-Writing-EP1
 - Modelo donante: https://huggingface.co/hcnote/SparkMuse-4B

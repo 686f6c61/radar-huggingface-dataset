@@ -94,7 +94,7 @@ No se dispone de información sobre cabezas MTP alternativas de terceros para co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16
+- Repositorio Hugging Face: https://huggingface.co/doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante MXFP8: https://huggingface.co/doth4580/Qwen3.8-Flash-Next-DotH-MTP-MXFP8
 - Variante EXL3 3.05 bpw: https://huggingface.co/doth4580/Qwen3.8-Flash-Next-DotH-MTP-EXL3-3.05bpw

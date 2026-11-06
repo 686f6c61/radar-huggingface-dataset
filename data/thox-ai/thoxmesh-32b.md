@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThoxMesh-32B es un paquete de configuración publicado por Thox-ai sobre los pesos de Qwen3-32B, un transformer denso de 32.000 millones de parámetros desarrollado originalmente por Alibaba Qwen. THOX no ha entrenado ni ajustado los pesos: su aportación consiste en un perfil de sistema (Modelfile para Ollama), un manifiesto de versión y un paquete de conocimiento en formato JSONL con ocho entradas públicas verificadas. El repositorio de HuggingFace contiene únicamente esos artefactos de empaquetado; los pesos reales se descargan del modelo base fijado.
+ThoxMesh-32B es un paquete de configuración publicado por Thox-ai sobre los pesos de Qwen3-32B, un transformer denso de 32.000 millones de parámetros desarrollado originalmente por Alibaba Qwen. THOX no ha entrenado ni ajustado los pesos: su aportación consiste en un perfil de sistema (Modelfile para Ollama), un manifiesto de versión y un paquete de conocimiento en formato JSONL con ocho entradas públicas verificadas. El repositorio de Hugging Face contiene únicamente esos artefactos de empaquetado; los pesos reales se descargan del modelo base fijado.
 
 El modelo se presenta como el escalón denso de la familia THOX Mesh, pensado como línea base de un solo nodo para comparaciones posteriores con ThoxMesh-30B-A3B (una variante MoE). Su caso de uso declarado es la inferencia local en estaciones de trabajo con Ollama, con un tag por defecto de 20 GB y una recomendación de 48 a 64 GB de memoria de sistema para trabajar con contexto amplio.
 
@@ -83,7 +83,7 @@ La comparación relevante es con el propio Qwen3-32B: ThoxMesh-32B no modifica l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thox-ai/ThoxMesh-32B
+- Repositorio Hugging Face: https://huggingface.co/Thox-ai/ThoxMesh-32B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Modelo relacionado de la familia (MoE): https://huggingface.co/Thox-ai/ThoxMesh-30B-A3B (referenciado en la model card)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

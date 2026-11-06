@@ -80,7 +80,7 @@ Nota: la comparativa se basa en características generales conocidas de los mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM3-VL-2B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-VL-2B-NVFP4
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - PR de soporte en SGLang: https://github.com/sgl-project/sglang/pull/46858
 - Blog de Liquid AI sobre LFM3: https://www.liquid.ai/blog/lfm3

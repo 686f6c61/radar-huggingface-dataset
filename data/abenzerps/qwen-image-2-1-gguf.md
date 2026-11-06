@@ -5,7 +5,7 @@ Qwen-Image-2.1-GGUF es la versión cuantizada en formato GGUF del modelo de gene
 
 El modelo base pesa 7.115.124.736 parámetros y el repositorio ocupa 54,9 GB en total, aunque cada cuantización individual ocupa entre 4,05 GB (Q4_0) y 7,59 GB (Q8_0). La relevancia práctica de esta publicación está en que permite ejecutar un modelo de imagen de ~7,1B en GPUs de consumo: el transformer puede residir en VRAM (unos 4,6 GB en Q4_K_M) mientras el codificador de texto se descarga a RAM del sistema, con un impacto mínimo en velocidad porque la codificación de texto solo se ejecuta una vez por prompt.
 
-La ficha recoge únicamente la información publicada en el repositorio; el autor no documenta detalles de entrenamiento ni métricas numéricas de benchmarks, y la licencia declarada es qwen-research (etiquetada como "other" en HuggingFace). Es importante señalar que esta release se distribuye sin filtro de contenido ni verificador de seguridad.
+La ficha recoge únicamente la información publicada en el repositorio; el autor no documenta detalles de entrenamiento ni métricas numéricas de benchmarks, y la licencia declarada es qwen-research (etiquetada como "other" en Hugging Face). Es importante señalar que esta release se distribuye sin filtro de contenido ni verificador de seguridad.
 
 ## Especificaciones técnicas
 
@@ -87,10 +87,10 @@ Estimación de VRAM para el transformer de difusión según el tamaño de ficher
 
 | Modelo | Parámetros | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| abenzerps/Qwen-Image-2.1-GGUF | 7.115.124.736 (transformer) | GGUF (5 cuantizaciones) + safetensors auxiliares | qwen-research | HuggingFace, 33.232 descargas | Cuantización para ComfyUI, sin filtro de contenido |
-| Qwen/Qwen-Image-2.1 (base) | 7.115.124.736 | safetensors | qwen-research | HuggingFace | Pesos originales sin cuantizar, mayor consumo de VRAM |
-| Comfy-Org/Qwen-Image-2.1 | No disponible | safetensors (codificador de texto y VAE) | No disponible | HuggingFace | Fuente de los ficheros auxiliares de este repositorio |
-| Otras cuantizaciones GGUF de modelos de difusión (por ejemplo, familia FLUX o SD3.5) | No disponible | GGUF | No disponible | HuggingFace | Alternativas de la misma categoría; no se dispone de datos verificados en la información proporcionada |
+| abenzerps/Qwen-Image-2.1-GGUF | 7.115.124.736 (transformer) | GGUF (5 cuantizaciones) + safetensors auxiliares | qwen-research | Hugging Face, 33.232 descargas | Cuantización para ComfyUI, sin filtro de contenido |
+| Qwen/Qwen-Image-2.1 (base) | 7.115.124.736 | safetensors | qwen-research | Hugging Face | Pesos originales sin cuantizar, mayor consumo de VRAM |
+| Comfy-Org/Qwen-Image-2.1 | No disponible | safetensors (codificador de texto y VAE) | No disponible | Hugging Face | Fuente de los ficheros auxiliares de este repositorio |
+| Otras cuantizaciones GGUF de modelos de difusión (por ejemplo, familia FLUX o SD3.5) | No disponible | GGUF | No disponible | Hugging Face | Alternativas de la misma categoría; no se dispone de datos verificados en la información proporcionada |
 
 No se dispone de datos de rendimiento comparado entre estas opciones en la información proporcionada.
 
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 - Reproducibilidad: los pesos se convierten desde una revisión concreta (`b3179ad355be050328e483a9dfdd9e60cd62adfa`); cambios posteriores en el modelo base no se reflejan automáticamente en esta release.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/abenzerps/Qwen-Image-2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/abenzerps/Qwen-Image-2.1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Codificador de texto y VAE de origen: https://huggingface.co/Comfy-Org/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

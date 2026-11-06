@@ -108,7 +108,7 @@ En la misma categoria de tamano (modelos densos de aproximadamente 1-2 B ejecuta
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-8bit
+- Pagina de Hugging Face del modelo: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-8bit
 - Modelo base: https://huggingface.co/stabilityai/stablelm-2-1_6b
 - Variante de 4 bits: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-4bit
 - Variante de 16 bits: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-16bit

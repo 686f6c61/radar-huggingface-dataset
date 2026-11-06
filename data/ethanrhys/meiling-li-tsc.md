@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meiling-Li-TSC es un repositorio de modelo publicado en HuggingFace por el usuario EthanRhys bajo la licencia OpenRAIL++. En el momento de la consulta, el repositorio no incluye model card sustantiva (unicamente la declaracion de licencia), no tiene pipeline declarado, no especifica idiomas soportados y acumula 0 descargas y 0 likes, por lo que no existe informacion publica verificable sobre su arquitectura, su proceso de entrenamiento o sus capacidades.
+Meiling-Li-TSC es un repositorio de modelo publicado en Hugging Face por el usuario EthanRhys bajo la licencia OpenRAIL++. En el momento de la consulta, el repositorio no incluye model card sustantiva (unicamente la declaracion de licencia), no tiene pipeline declarado, no especifica idiomas soportados y acumula 0 descargas y 0 likes, por lo que no existe informacion publica verificable sobre su arquitectura, su proceso de entrenamiento o sus capacidades.
 
 El tamano del repositorio es de aproximadamente 0,1 GB. Este dato es el unico indicio cuantitativo disponible: es compatible con pesos de un modelo muy pequeno, con un adaptador (LoRA/QLoRA) o con un checkpoint parcial, pero no permite determinar por si solo la arquitectura ni el numero de parametros. Cualquier afirmacion al respecto seria especulativa.
 
@@ -70,7 +70,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Meiling-Li-TSC | no disponible | no disponible | no disponible | OpenRAIL++ | Repositorio en HuggingFace, sin descargas |
+| Meiling-Li-TSC | no disponible | no disponible | no disponible | OpenRAIL++ | Repositorio en Hugging Face, sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EthanRhys/Meiling-Li-TSC
+- Hugging Face: https://huggingface.co/EthanRhys/Meiling-Li-TSC
 
 Los resultados de busqueda web disponibles no contienen ningun enlace relacionado con el modelo: consisten en resultados genericos de servicios de traduccion (Google Traduction, DeepL, Reverso), sin conexion con Meiling-Li-TSC. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.

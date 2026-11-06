@@ -19,7 +19,7 @@ La relevancia actual del modelo radica en que aborda dos problemas clave de la a
 | Tipos de cuantizacion | no disponible (se distribuye en precisión completa; no se documentan cuantizaciones oficiales) |
 | Idiomas soportados | Chino e inglés (según ejemplos de prompts en la documentación; no se especifica oficialmente) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (según el repositorio de HuggingFace) |
+| Formato de pesos | safetensors (según el repositorio de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,8 +73,8 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- HuggingFace (modelo oficial): https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B
-- HuggingFace (repositorio proporcionado por el usuario): https://huggingface.co/ramram1103/Wan2.2-Animate-2-14B
+- Hugging Face (modelo oficial): https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B
+- Hugging Face (repositorio proporcionado por el usuario): https://huggingface.co/ramram1103/Wan2.2-Animate-2-14B
 - GitHub (código e inferencia): https://github.com/Wan-Video/Wan-Animate-2
 - Paper (arXiv): https://arxiv.org/pdf/2608.06009
 - Página del proyecto: https://humanaigc.github.io/wan-animate-2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural Cortex 8B — Base es un modelo de lenguaje de tipo base desarrollado por MKD Co., Ltd. (publicado en HuggingFace por el usuario hossain0909) mediante preentrenamiento continuado (CPT) sobre Qwen/Qwen3-8B-Base. El objetivo del proyecto es reforzar la competencia en coreano de un modelo originalmente entrenado con un corpus mayoritariamente anglófono, conservando al mismo tiempo la capacidad en inglés. El checkpoint publicado corresponde a la fase final del entrenamiento principal: 13.034 de 13.034 pasos completados, con 41.000 millones de tokens de preentrenamiento continuado.
+Keural Cortex 8B — Base es un modelo de lenguaje de tipo base desarrollado por MKD Co., Ltd. (publicado en Hugging Face por el usuario hossain0909) mediante preentrenamiento continuado (CPT) sobre Qwen/Qwen3-8B-Base. El objetivo del proyecto es reforzar la competencia en coreano de un modelo originalmente entrenado con un corpus mayoritariamente anglófono, conservando al mismo tiempo la capacidad en inglés. El checkpoint publicado corresponde a la fase final del entrenamiento principal: 13.034 de 13.034 pasos completados, con 41.000 millones de tokens de preentrenamiento continuado.
 
 Arquitectura transformer densa (no MoE) con aproximadamente 8.190 millones de parámetros según la model card, si bien el recuento real de tensores en safetensors asciende a 2.047.683.840 parámetros, discrepancia que conviene verificar antes de planificar el despliegue. La longitud de contexto nativa es de 32.768 tokens, sin cambios respecto al modelo base, y los pesos se distribuyen en bfloat16.
 
@@ -95,7 +95,7 @@ La comparación directa con Qwen3-8B-Base es la más pertinente, ya que Keural C
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/Keural-Cortex-8B-Base
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/Keural-Cortex-8B-Base
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Referencia de la model card a un identificador alternativo: mkd-hossain/Keural-Cortex-8B-Base (no verificado)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

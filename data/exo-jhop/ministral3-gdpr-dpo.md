@@ -4,13 +4,13 @@
 
 ministral3-gdpr-dpo es un modelo de lenguaje de la familia mistral3, fine-tuned mediante Direct Preference Optimization (DPO) y orientado a tareas relacionadas con el cumplimiento del Reglamento General de Protección de Datos (RGPD). Ha sido desarrollado por el usuario exo-jhop y parte de un adaptador LoRA previo, ministral3-gdpr-lora, del que hereda el enfoque de ajuste fino. El proyecto se ha construido con Unsloth, una biblioteca de optimización que acelera el entrenamiento de modelos de lenguaje, lo que, según la model card, permitió un entrenamiento dos veces más rápido.
 
-El repositorio en HuggingFace es notablemente pequeño, con un tamaño de 0.2 GB, lo que sugiere que contiene los pesos del adaptador DPO en formato safetensors en lugar del modelo completo. No se han publicado detalles sobre el dataset de entrenamiento, la arquitectura exacta, la longitud de contexto ni benchmarks. El modelo se distribuye bajo licencia Apache 2.0 y está documentado únicamente para el idioma inglés.
+El repositorio en Hugging Face es notablemente pequeño, con un tamaño de 0.2 GB, lo que sugiere que contiene los pesos del adaptador DPO en formato safetensors en lugar del modelo completo. No se han publicado detalles sobre el dataset de entrenamiento, la arquitectura exacta, la longitud de contexto ni benchmarks. El modelo se distribuye bajo licencia Apache 2.0 y está documentado únicamente para el idioma inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mistral 3 (según etiquetas de HuggingFace) |
+| Arquitectura | Mistral 3 (según etiquetas de Hugging Face) |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible |
 | Longitud de contexto | No disponible |
@@ -28,7 +28,7 @@ El modelo se basa en la arquitectura mistral3, aunque no se han publicado los de
 - Generación de texto: al ser un modelo de lenguaje, puede generar respuestas textuales.
 - Ajuste mediante DPO: el uso de Direct Preference Optimization indica que se ha alineado con preferencias humanas, aunque no se han publicado los datos de preferencias utilizados.
 - Enfoque RGPD: por nombre y etiquetas, el modelo está orientado a tareas relacionadas con el Reglamento General de Protección de Datos, como el tratamiento de información personal.
-- Idioma: inglés, según la información de HuggingFace.
+- Idioma: inglés, según la información de Hugging Face.
 - No se han publicado detalles sobre soporte de tool calling, visión, audio o capacidades multimodales.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ No existe información suficiente para comparar este modelo con alternativas de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/exo-jhop/ministral3-gdpr-dpo
+- Hugging Face: https://huggingface.co/exo-jhop/ministral3-gdpr-dpo
 - Modelo base: https://huggingface.co/exo-jhop/ministral3-gdpr-lora
 - Modelo relacionado: https://huggingface.co/exo-jhop/ministral3-gdpr-distilled
 - Perfil del autor: https://huggingface.co/exo-jhop

@@ -4,7 +4,7 @@
 
 Fresco-1.2.5-i1-GGUF es una cuantización en formato GGUF del modelo Fresco-1.2.5, desarrollado por AxionLabsAI y convertido por el equipo de mradermacher. El modelo base tiene 8.030.261.312 parámetros (aproximadamente 8B), lo que lo sitúa en la gama de modelos de tamaño medio optimizados para inferencia local. La cuantización GGUF permite ejecutarlo en hardware de consumo con diferentes niveles de precisión, desde Q2_K hasta Q6_K, incluyendo variantes con imatrix para mejorar la calidad de los quantizados.
 
-El repositorio contiene únicamente los pesos cuantizados, sin información adicional sobre la arquitectura, el entrenamiento o las capacidades específicas del modelo base. Los tags indican que es compatible con endpoints y orientado a conversación, pero no se proporcionan detalles sobre el dataset de entrenamiento, la licencia o los idiomas soportados. Esta ficha se basa exclusivamente en la información disponible en HuggingFace y en la model card del autor, que remite al modelo original de AxionLabsAI.
+El repositorio contiene únicamente los pesos cuantizados, sin información adicional sobre la arquitectura, el entrenamiento o las capacidades específicas del modelo base. Los tags indican que es compatible con endpoints y orientado a conversación, pero no se proporcionan detalles sobre el dataset de entrenamiento, la licencia o los idiomas soportados. Esta ficha se basa exclusivamente en la información disponible en Hugging Face y en la model card del autor, que remite al modelo original de AxionLabsAI.
 
 ## Especificaciones tecnicas
 

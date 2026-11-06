@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`DaffaPth/project-matching` es una implementación mínima de una arquitectura CNN-Transformer orientada a tareas de *matching* (emparejamiento entre pares de entradas, típicamente consulta-documento o ítem-ítem). Lo publica el usuario DaffaPth en HuggingFace y no procede de un laboratorio ni de un modelo entrenado: el repositorio contiene el código (`main.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de **inicialización** en `model.safetensors`, no un modelo con pesos aprendidos.
+`DaffaPth/project-matching` es una implementación mínima de una arquitectura CNN-Transformer orientada a tareas de *matching* (emparejamiento entre pares de entradas, típicamente consulta-documento o ítem-ítem). Lo publica el usuario DaffaPth en Hugging Face y no procede de un laboratorio ni de un modelo entrenado: el repositorio contiene el código (`main.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de **inicialización** en `model.safetensors`, no un modelo con pesos aprendidos.
 
-El tamaño es extremadamente reducido: 33.088 parámetros totales en la variante "tiny" y un peso de repositorio de prácticamente 0 GB. La arquitectura declarada combina atención con kernel flash, fusión de tipo Tucker, activación aproximada GELU y normalización RMSNorm. No se declara longitud de contexto, idiomas soportados ni pipeline de HuggingFace.
+El tamaño es extremadamente reducido: 33.088 parámetros totales en la variante "tiny" y un peso de repositorio de prácticamente 0 GB. La arquitectura declarada combina atención con kernel flash, fusión de tipo Tucker, activación aproximada GELU y normalización RMSNorm. No se declara longitud de contexto, idiomas soportados ni pipeline de Hugging Face.
 
 Su relevancia ahora es la de un *scaffold* reproducible: sirve para pruebas de humo, para fijar una línea base de capacidad comparable en experimentos de matching y para reproducir recetas de entrenamiento. La propia model card advierte explícitamente de que no es un release entrenado y de que no se reclama ninguna métrica de benchmark.
 
@@ -25,7 +25,7 @@ Su relevancia ahora es la de un *scaffold* reproducible: sirve para pruebas de h
 | Activacion | approx GELU |
 | Normalizacion | RMSNorm |
 | Framework | PyTorch |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Optimizador por defecto | Adam con schedule de warmup constante |
 | Descargas / likes | 0 / 0 |
 
@@ -94,7 +94,7 @@ La diferencia relevante no es de rendimiento sino de naturaleza del artefacto: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DaffaPth/project-matching
+- Modelo en Hugging Face: https://huggingface.co/DaffaPth/project-matching
 - Repositorio de código: incluido en el propio repo (`main.py`), sin URL independiente disponible
 - Paper, blog o demo: no disponible
 - Resultados de benchmarks: no disponibles

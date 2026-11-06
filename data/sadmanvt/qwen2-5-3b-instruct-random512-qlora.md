@@ -61,10 +61,10 @@ La model card declara un `model-index` con el nombre `pc_random_qlora_512_3ep` p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sadmanvt/Qwen2.5-3B-Instruct-Random512-QLoRA | 3B (base) + adaptador LoRA | No documentado (base: 32K) | other | HuggingFace, 15 descargas | Adaptador experimental sin evaluación publicada |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 tokens (ampliable a 131.072) | Qwen Research/Community | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy popular | Alternativa de tamaño similar con contexto mayor |
-| google/gemma-2-2b-it | 2B | 8.192 tokens | Gemma Terms of Use | HuggingFace, popular | Modelo más pequeño, contexto más corto |
+| sadmanvt/Qwen2.5-3B-Instruct-Random512-QLoRA | 3B (base) + adaptador LoRA | No documentado (base: 32K) | other | Hugging Face, 15 descargas | Adaptador experimental sin evaluación publicada |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 tokens (ampliable a 131.072) | Qwen Research/Community | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| meta-llama/Llama-3.2-3B-Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy popular | Alternativa de tamaño similar con contexto mayor |
+| google/gemma-2-2b-it | 2B | 8.192 tokens | Gemma Terms of Use | Hugging Face, popular | Modelo más pequeño, contexto más corto |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ La model card declara un `model-index` con el nombre `pc_random_qlora_512_3ep` p
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/sadmanvt/Qwen2.5-3B-Instruct-Random512-QLoRA
+- Hugging Face del adaptador: https://huggingface.co/sadmanvt/Qwen2.5-3B-Instruct-Random512-QLoRA
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio LLaMA-Factory: https://github.com/hiyouga/LLaMA-Factory
 - Documentación de PEFT: https://huggingface.co/docs/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-role-splitting-lora es un adaptador LoRA para edición de imágenes desarrollado por el usuario @cg素材社 y publicado en HuggingFace bajo la cuenta de RunningHubAI. Su función declarada es el "one-click split character", es decir, la separación automática de personajes dentro de una imagen, y está afinado a partir del modelo base F1基础-Kontext. El repositorio contiene un único archivo de pesos de 328 MiB (`Split_ch.safetensors`) y está pensado para cargarse en ComfyUI, RunningHub o HuggingFace.
+rh-role-splitting-lora es un adaptador LoRA para edición de imágenes desarrollado por el usuario @cg素材社 y publicado en Hugging Face bajo la cuenta de RunningHubAI. Su función declarada es el "one-click split character", es decir, la separación automática de personajes dentro de una imagen, y está afinado a partir del modelo base F1基础-Kontext. El repositorio contiene un único archivo de pesos de 328 MiB (`Split_ch.safetensors`) y está pensado para cargarse en ComfyUI, RunningHub o Hugging Face.
 
 No se trata de un modelo de lenguaje, sino de un adaptador de bajo rango (LoRA) para un pipeline de imagen a imagen condicionado por texto (`image-text-to-image`). La información pública disponible es muy limitada: no se detallan parámetros del modelo base, longitud de contexto, idiomas ni licencia explícita. La model card indica únicamente la palabra de activación (`ch`), el tamaño del archivo y los enlaces a la plataforma del autor.
 
@@ -33,7 +33,7 @@ La única innovación técnica documentada es la palabra de activación `ch`, qu
 - Separación o aislamiento de personajes en una imagen ("one-click split character") al activar la palabra clave `ch`.
 - Integración con ComfyUI como nodo de carga de LoRA.
 - Ejecución en la plataforma RunningHub, tanto en su versión internacional como en la china.
-- Compatibilidad con HuggingFace como repositorio de pesos.
+- Compatibilidad con Hugging Face como repositorio de pesos.
 - No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, visión general, tool calling, agentes ni multilingüismo.
 
 ## Casos de uso
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible para el LoRA aislado; depende enteramente del modelo base F1基础-Kontext, cuyos requisitos no se documentan.
 - GPU recomendadas: no disponible.
 - ¿Cabe en GPU de consumo? No disponible; el peso del LoRA (328 MiB) es trivial, pero el modelo base condiciona el requisito real.
-- Opciones de despliegue: ComfyUI (principal), plataforma RunningHub (internacional y china) y carga directa desde HuggingFace. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a un pipeline de difusión.
+- Opciones de despliegue: ComfyUI (principal), plataforma RunningHub (internacional y china) y carga directa desde Hugging Face. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a un pipeline de difusión.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-role-splitting-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-role-splitting-lora
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/1946840327001894913
 - Página del autor: https://www.runninghub.cn/user-center/1852009877966364674
 - RunningHub internacional: https://www.runninghub.ai

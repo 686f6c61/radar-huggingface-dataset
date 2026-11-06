@@ -6,7 +6,7 @@ El modelo `camilaalves/romance-coreference-mdeberta-v3-base` es un sistema de re
 
 La arquitectura sigue el paradigma de *span-ranking* y utiliza `microsoft/mdeberta-v3-base` como encoder Transformer multilingüe preentrenado. El modelo se entrenó de forma conjunta sobre seis corpus de correferencia en cinco idiomas: Coref-PT (portugués), Spanish AnCora, Catalan AnCora, French ANCOR, French Democrat y OntoCorefIT (italiano). Un único modelo conjunto se evalúa sobre cada corpus, seleccionando el checkpoint según el conjunto de desarrollo correspondiente.
 
-El repositorio no contiene un modelo listo para usar con las APIs estándar de HuggingFace, sino cinco checkpoints de PyTorch (`.pt`) producidos por una implementación propia de correferencia. Su relevancia actual es fundamentalmente académica y de reproducibilidad: aporta evidencia sobre si un modelo multilingüe conjunto compite con modelos monolingües en tareas de correferencia en lenguas románicas, un área con pocos recursos abiertos fuera del inglés.
+El repositorio no contiene un modelo listo para usar con las APIs estándar de Hugging Face, sino cinco checkpoints de PyTorch (`.pt`) producidos por una implementación propia de correferencia. Su relevancia actual es fundamentalmente académica y de reproducibilidad: aporta evidencia sobre si un modelo multilingüe conjunto compite con modelos monolingües en tareas de correferencia en lenguas románicas, un área con pocos recursos abiertos fuera del inglés.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ No se han identificado en la información proporcionada otros modelos de correfe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/camilaalves/romance-coreference-mdeberta-v3-base
+- Modelo en Hugging Face: https://huggingface.co/camilaalves/romance-coreference-mdeberta-v3-base
 - Modelo base: https://huggingface.co/microsoft/mdeberta-v3-base
 - Cita de la tesis: Camila Alves. *Coreference in Context: Portuguese Evaluation of Multilingual and Monolingual Models*. MSc thesis, University of Porto, 2026 (sin URL disponible)
 - Otros enlaces relevantes (papers, repositorios, demos): no disponible. Los resultados de la búsqueda web proporcionados no guardan relación con el modelo y se han descartado.

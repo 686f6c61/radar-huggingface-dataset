@@ -91,7 +91,7 @@ La pérdida de rendimiento por cuantización es de 8 puntos porcentuales, acepta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/Phi-4-mini-reasoning
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Phi-4-mini-reasoning
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-reasoning
 - Runtime LiteRT-LM (GitHub): https://github.com/google-ai-edge/litert-lm
 - Guía de GPU para Android: https://github.com/john-rocky/hf-to-litertlm/blob/main/docs/android-gpu.md

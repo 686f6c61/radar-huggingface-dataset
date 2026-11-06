@@ -4,7 +4,7 @@
 
 `longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed4` es un modelo de lenguaje fine-tuneado a partir de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre sugiere que el ajuste se realizó sobre un conjunto de datos relacionado con nombres de aves antiguas (probablemente un experimento de memorización o clasificación), aunque la model card no aporta detalles sobre el dataset ni el proceso de entrenamiento. El modelo se distribuye bajo licencia Apache 2.0 y está orientado exclusivamente al inglés.
 
-La relevancia de este modelo es limitada: se trata de un fine-tuning experimental sin documentación técnica, sin métricas de rendimiento y con cero descargas o valoraciones en HuggingFace. Su interés radica únicamente en el ámbito de la investigación sobre fine-tuning eficiente con la librería Unsloth, ya que el autor indica que el entrenamiento fue 2 veces más rápido gracias a esta herramienta. No se recomienda su uso en producción sin una evaluación previa.
+La relevancia de este modelo es limitada: se trata de un fine-tuning experimental sin documentación técnica, sin métricas de rendimiento y con cero descargas o valoraciones en Hugging Face. Su interés radica únicamente en el ámbito de la investigación sobre fine-tuning eficiente con la librería Unsloth, ya que el autor indica que el entrenamiento fue 2 veces más rápido gracias a esta herramienta. No se recomienda su uso en producción sin una evaluación previa.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada: se trata de un fine-tuning experimenta
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Llama 3.1 de 8B parámetros en su variante instructiva (`unsloth/Meta-Llama-3.1-8B-Instruct`). Se trata de un transformer decoder-only con atención causal, preentrenado por Meta y posteriormente ajustado con instrucciones. El fine-tuning fue realizado por `longtermrisk` utilizando la librería Unsloth y la biblioteca TRL de HuggingFace, lo que permitió acelerar el entrenamiento aproximadamente 2 veces respecto a un ajuste convencional.
+El modelo parte de la arquitectura Llama 3.1 de 8B parámetros en su variante instructiva (`unsloth/Meta-Llama-3.1-8B-Instruct`). Se trata de un transformer decoder-only con atención causal, preentrenado por Meta y posteriormente ajustado con instrucciones. El fine-tuning fue realizado por `longtermrisk` utilizando la librería Unsloth y la biblioteca TRL de Hugging Face, lo que permitió acelerar el entrenamiento aproximadamente 2 veces respecto a un ajuste convencional.
 
 No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere que el conjunto de datos podría estar relacionado con nombres de aves antiguas, pero esto es una inferencia no confirmada. Tampoco se especifica si se usó LoRA, QLoRA o un ajuste completo de todos los parámetros.
 
@@ -52,9 +52,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed4 | 8B | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct | 8B | 128k (del modelo base) | Llama 3.1 Community License | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace |
+| longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed4 | 8B | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct | 8B | 128k (del modelo base) | Llama 3.1 Community License | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face |
 
 La comparativa se limita al modelo base, ya que no existen otros modelos de la misma categoría (fine-tunes de nombres de aves) con documentación pública. El modelo base tiene una licencia más restrictiva (Llama 3.1 Community License) que la del fine-tune (Apache 2.0), pero el fine-tune no aporta mejoras documentadas.
 
@@ -68,7 +68,7 @@ La comparativa se limita al modelo base, ya que no existen otros modelos de la m
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed4](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed4)
+- [Hugging Face: longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed4](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed4)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
 - [Variante seed3-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3-epoch3)
 - [Variante seed5-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed5-epoch3)

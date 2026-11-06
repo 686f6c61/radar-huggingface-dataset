@@ -84,7 +84,7 @@ El modelo de promptShield es el unico de los tres que reduce el peso de descarga
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promptshield/bert-base-multilingual-cased-ner-hrl-latin
+- Modelo en Hugging Face: https://huggingface.co/promptshield/bert-base-multilingual-cased-ner-hrl-latin
 - Modelo base (fine-tune): https://huggingface.co/Davlan/bert-base-multilingual-cased-ner-hrl
 - Modelo base original (preentrenamiento): https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Exportacion ONNX de referencia: https://huggingface.co/Xenova/bert-base-multilingual-cased-ner-hrl

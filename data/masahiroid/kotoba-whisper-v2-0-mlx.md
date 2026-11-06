@@ -90,8 +90,8 @@ Los datos de parametros y contexto no se detallan de forma uniforme en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/masahiroid/kotoba-whisper-v2.0-mlx
-- Modelo base en HuggingFace: https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/masahiroid/kotoba-whisper-v2.0-mlx
+- Modelo base en Hugging Face: https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0
 - Repositorio GitHub de Kotoba Technologies: https://github.com/kotoba-tech/kotoba-whisper
 - Conversion MLX alternativa: https://huggingface.co/kaiinui/kotoba-whisper-v2.0-mlx
 - Framework MLX: https://github.com/ml-explore/mlx

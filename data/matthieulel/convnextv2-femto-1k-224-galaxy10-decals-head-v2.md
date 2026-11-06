@@ -82,7 +82,7 @@ No se dispone en la información proporcionada de resultados de los otros backbo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-femto-1k-224-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-femto-1k-224-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-femto-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

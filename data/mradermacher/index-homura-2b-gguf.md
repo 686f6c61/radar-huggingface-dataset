@@ -17,11 +17,11 @@ La relevancia de este repositorio es practica: permite ejecutar un modelo de tra
 | Parametros activos | no aplica (no hay indicios de que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | mmproj-Q8_0, mmproj-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en (ingles) segun la ficha de HuggingFace |
+| Idiomas soportados | en (ingles) segun la ficha de Hugging Face |
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (el modelo base esta en safetensors) |
 
-Otros datos de la ficha: pipeline declarado `translation`; tags `transformers`, `gguf`, `translation`, `dubbing`, `index`, `endpoints_compatible`, `conversational`; tamano del repositorio 19,6 GB; 0 descargas y 0 likes en el momento de la consulta; fecha de creacion 2026-10-03 y ultima actualizacion 2026-10-03 segun la ficha de HuggingFace.
+Otros datos de la ficha: pipeline declarado `translation`; tags `transformers`, `gguf`, `translation`, `dubbing`, `index`, `endpoints_compatible`, `conversational`; tamano del repositorio 19,6 GB; 0 descargas y 0 likes en el momento de la consulta; fecha de creacion 2026-10-03 y ultima actualizacion 2026-10-03 segun la ficha de Hugging Face.
 
 Tabla de ficheros disponibles, con tamano declarado por el autor:
 
@@ -50,7 +50,7 @@ No disponible. La model card del repositorio GGUF no incluye informacion sobre l
 
 El unico dato tecnico relevante que aporta el repositorio es de naturaleza estructural: la presencia de dos ficheros `mmproj` (proyectores multimodales) en Q8_0 y f16. En el ecosistema llama.cpp, estos ficheros se emplean para conectar un codificador (tipicamente de vision, aunque tambien puede ser de audio) con el modelo de lenguaje. Esto indica que el modelo base es multimodal, pero la model card no especifica la modalidad concreta ni como activarla. Tampoco hay informacion sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o mecanismos de atencion eficiente.
 
-El proceso de cuantizacion si queda parcialmente documentado mediante los comentarios internos del autor (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), que indican que la conversion se hizo desde pesos en formato HuggingFace con la version 2 del pipeline de cuantizacion de mradermacher.
+El proceso de cuantizacion si queda parcialmente documentado mediante los comentarios internos del autor (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), que indican que la conversion se hizo desde pesos en formato Hugging Face con la version 2 del pipeline de cuantizacion de mradermacher.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ El proceso de cuantizacion si queda parcialmente documentado mediante los coment
 - Traduccion: el pipeline declarado es `translation` y el modelo esta etiquetado como tal, por lo que su capacidad principal declarada es la traduccion entre idiomas.
 - Doblaje: la etiqueta `dubbing` sugiere uso en flujos de doblaje de audio/video, si bien no se documenta el formato de entrada ni el flujo de trabajo esperado.
 - Procesamiento multimodal: la presencia de ficheros `mmproj` indica soporte de entrada multimodal (modalidad concreta no especificada en la model card).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio esta preparado para su despliegue en infraestructuras de inferencia compatibles con HuggingFace Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio esta preparado para su despliegue en infraestructuras de inferencia compatibles con Hugging Face Endpoints.
 - Tool calling / function calling: no disponible (no se menciona en la informacion proporcionada).
 - Capacidades de agente y razonamiento multi-paso: no disponible (no se menciona).
 - Modo de razonamiento explicito (thinking mode): no disponible (no se menciona).
@@ -90,7 +90,7 @@ Estimaciones derivadas del tamano de los ficheros declarados por el autor. Hay q
 - Proyector multimodal (`mmproj`): anadir 0,5 GB (Q8_0) o 0,8 GB (f16) si se utiliza la ruta multimodal.
 - GPU recomendadas: cualquier GPU de consumo moderna con 4 GB o mas de VRAM es suficiente para las cuantizaciones de 4 bits; una RTX 3060, RTX 4060, RTX 4090 o superior permite margen amplio de contexto. No se requieren A100 ni H100 para este tamano.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos anos, y tambien en CPU con llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, kobold.cpp, llama-cpp-python, servidores compatibles con la API de OpenAI a traves de llama.cpp u Ollama. Para el modelo base en safetensors, transformers con el backend correspondiente. La etiqueta `endpoints_compatible` apunta a compatibilidad con HuggingFace Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, kobold.cpp, llama-cpp-python, servidores compatibles con la API de OpenAI a traves de llama.cpp u Ollama. Para el modelo base en safetensors, transformers con el backend correspondiente. La etiqueta `endpoints_compatible` apunta a compatibilidad con Hugging Face Endpoints.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia para ninguna de las cuantizaciones.
 
 ## Comparativa con modelos similares

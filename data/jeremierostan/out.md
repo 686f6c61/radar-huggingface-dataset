@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jeremierostan/out es un ajuste fino por supervisión (SFT) del modelo Qwen/Qwen3-1.7B, publicado por el usuario jeremierostan en HuggingFace. Según sus etiquetas (generated_from_trainer, hf_jobs, trl, sft), se trata de un artefacto producido por un job de entrenamiento de la plataforma de HuggingFace utilizando la librería TRL, no de un modelo nuevo: hereda la arquitectura y los pesos del Qwen3-1.7B, un transformer denso de aproximadamente 1 700 millones de parámetros desarrollado por el equipo Qwen de Alibaba.
+jeremierostan/out es un ajuste fino por supervisión (SFT) del modelo Qwen/Qwen3-1.7B, publicado por el usuario jeremierostan en Hugging Face. Según sus etiquetas (generated_from_trainer, hf_jobs, trl, sft), se trata de un artefacto producido por un job de entrenamiento de la plataforma de Hugging Face utilizando la librería TRL, no de un modelo nuevo: hereda la arquitectura y los pesos del Qwen3-1.7B, un transformer denso de aproximadamente 1 700 millones de parámetros desarrollado por el equipo Qwen de Alibaba.
 
 La relevancia del modelo es experimental y muy limitada. El repositorio acumula 0 descargas y 0 likes, no incluye resultados de evaluación, no documenta el dataset ni los hiperparámetros del entrenamiento y su licencia aparece como un marcador de posición sin definir. Su valor principal es como ejemplo reproducible de un pipeline de SFT con TRL sobre un modelo pequeño de la familia Qwen3, útil para inspeccionar la configuración de un job de entrenamiento o como plantilla para experimentos propios.
 
@@ -26,7 +26,7 @@ Por tamaño, un modelo de 1,7 B resulta atractivo para prototipado de bajo coste
 | Entorno de entrenamiento | Transformers 5.17.0, PyTorch 2.14.0, Datasets 5.0.1, Tokenizers 0.23.2 |
 | Tamaño del repositorio | 0,1 GB (inconsistente con un checkpoint completo de 1,7 B en bf16, que rondaría los 3,4 GB) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-09-19 (según la API de HuggingFace) |
+| Fecha de creación | 2026-09-19 (según la API de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ No hay ninguna evaluación publicada de este ajuste, por lo que las capacidades 
 - Capacidades agénticas y razonamiento multi-paso: no documentadas para este checkpoint.
 - Multilingüismo: el modelo base declara 119 idiomas; la model card de este ajuste no indica idiomas.
 - Capacidades de visión o audio: no disponibles (Qwen3-1.7B es un modelo exclusivamente de texto).
-- Despliegue en HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con el despliegue gestionado de HuggingFace.
+- Despliegue en Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con el despliegue gestionado de Hugging Face.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ Las siguientes estimaciones son aproximadas y se derivan del tamaño del modelo 
 - Cabe en GPU de consumo: sí, en todas las gamas mencionadas, incluso en cuantización de 4 bits sobre GPUs con 4 GB de VRAM.
 - Memoria de la caché KV: con ventanas de contexto largas el consumo crece de forma apreciable. Para una configuración tipo Qwen3-1.7B (28 capas, 8 cabezas KV, dimensión de cabeza 128), la caché en FP16 ronda los 112 KB por token, lo que supone unos 3,7 GB adicionales a 32 768 tokens. Conviene desplegar con `max_model_len` ajustado al caso de uso real.
 - GPU recomendadas para producción: A100 40 GB, H100, L40S o A10G si se sirven muchas peticiones concurrentes; para carga ligera, cualquier GPU con 8 GB o más es suficiente.
-- Opciones de despliegue: vLLM y TGI para servicio de alto rendimiento; llama.cpp y Ollama si se requiere conversión previa a GGUF (no publicada en el repositorio); Transformers con `pipeline` para scripts y prototipos; HuggingFace Inference Endpoints, dado que el modelo lleva la etiqueta `endpoints_compatible`.
+- Opciones de despliegue: vLLM y TGI para servicio de alto rendimiento; llama.cpp y Ollama si se requiere conversión previa a GGUF (no publicada en el repositorio); Transformers con `pipeline` para scripts y prototipos; Hugging Face Inference Endpoints, dado que el modelo lleva la etiqueta `endpoints_compatible`.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -111,11 +111,11 @@ La comparación relevante para este checkpoint es siempre contra su propio model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeremierostan/out
+- Modelo en Hugging Face: https://huggingface.co/jeremierostan/out
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Blog de presentación de Qwen3: https://qwenlm.github.io/blog/qwen3/
-- Documentación de HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`): https://huggingface.co/docs/inference-endpoints/index
+- Documentación de Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`): https://huggingface.co/docs/inference-endpoints/index
 
 Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo. Los enlaces recuperados correspondían a páginas de ayuda de YouTube y no guardan relación con el objeto de esta ficha.

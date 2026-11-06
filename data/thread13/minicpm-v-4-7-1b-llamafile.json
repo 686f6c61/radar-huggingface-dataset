@@ -5,7 +5,7 @@
   "author": "thread13",
   "url": "https://huggingface.co/thread13/MiniCPM-V-4.7-1B-llamafile",
   "created_at": "2026-11-05T17:23:39.000Z",
-  "updated_at": "2026-11-05T17:29:19.000Z",
+  "updated_at": "2026-11-06T06:41:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2875044623,
-  "storage_human": "2.9 GB",
+  "storage_bytes": 9001484414,
+  "storage_human": "9.0 GB",
   "base_model": "openbmb/MiniCPM-V-4.7-1B-gguf",
   "formats": [
     "gguf"

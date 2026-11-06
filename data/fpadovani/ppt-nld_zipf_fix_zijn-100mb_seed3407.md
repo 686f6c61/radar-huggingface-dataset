@@ -91,7 +91,7 @@ Los unicos datos verificables en la informacion proporcionada son el recuento de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/btr3ksh4
 - Repositorio de TRL: https://github.com/huggingface/trl

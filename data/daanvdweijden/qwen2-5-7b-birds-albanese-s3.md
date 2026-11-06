@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-birds-albanese-s3` es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, publicado en HuggingFace por el usuario Daan van der Weijden. La denominación del repositorio sugiere que el ajuste se ha realizado con un conjunto de datos relacionado con aves y posiblemente con contenido en albanés, aunque no se proporciona ninguna documentación que confirme esta hipótesis.
+El modelo `daanvdweijden/qwen2.5-7b-birds-albanese-s3` es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, publicado en Hugging Face por el usuario Daan van der Weijden. La denominación del repositorio sugiere que el ajuste se ha realizado con un conjunto de datos relacionado con aves y posiblemente con contenido en albanés, aunque no se proporciona ninguna documentación que confirme esta hipótesis.
 
-La ficha técnica del modelo es extremadamente incompleta: la model card es una plantilla autogenerada por HuggingFace sin ningún dato rellenado, no se indica licencia, idiomas, ni detalles de entrenamiento. El repositorio tiene un tamaño de 0.1 GB, lo que resulta inusualmente pequeño para un modelo de 7B parámetros (que normalmente ocupa entre 15 y 30 GB en precisión completa), lo que sugiere que podría tratarse de un checkpoint parcial, un adaptador LoRA, o una subida incompleta. Con cero descargas y cero likes, es un modelo sin validación comunitaria ni evidencia de uso en producción.
+La ficha técnica del modelo es extremadamente incompleta: la model card es una plantilla autogenerada por Hugging Face sin ningún dato rellenado, no se indica licencia, idiomas, ni detalles de entrenamiento. El repositorio tiene un tamaño de 0.1 GB, lo que resulta inusualmente pequeño para un modelo de 7B parámetros (que normalmente ocupa entre 15 y 30 GB en precisión completa), lo que sugiere que podría tratarse de un checkpoint parcial, un adaptador LoRA, o una subida incompleta. Con cero descargas y cero likes, es un modelo sin validación comunitaria ni evidencia de uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ Dado que el modelo se basa en Qwen2.5-7B, los requisitos estimados de hardware p
 - VRAM estimada: aproximadamente 15-16 GB en fp16, 8 GB en cuantización de 8 bits, y 4-5 GB en cuantización de 4 bits (GGUF Q4_K_M).
 - GPU recomendadas: RTX 3090/4090 (24 GB) para fp16 sin cuantizar; RTX 3060 (12 GB) o superior para cuantización de 8 bits; GPUs con 6-8 GB de VRAM para cuantización de 4 bits.
 - No cabe en GPUs de consumo con menos de 6 GB de VRAM sin cuantización agresiva.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o transformers con `device_map="auto"`.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o transformers con `device_map="auto"`.
 - Latencia y throughput: no disponible para este modelo concreto; para el modelo base Qwen2.5-7B en una RTX 4090, se espera una generación de aproximadamente 40-60 tokens por segundo en cuantización de 4 bits.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ La comparación es desfavorable para el modelo analizado: mientras que Qwen2.5-7
 
 - Repositorio del modelo: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-albanese-s3
 - Perfil del autor: https://huggingface.co/daanvdweijden/models
-- Colección Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Colección Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Informe técnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Blog oficial de Qwen2.5: https://qwen.ai/blog?id=qwen2.5
 - Repositorio GitHub de Qwen2.5: https://github.com/mx4ai/qwen2.5

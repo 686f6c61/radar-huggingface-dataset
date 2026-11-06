@@ -105,7 +105,7 @@ No disponible. La informacion proporcionada no permite construir una comparativa
 
 ## Enlaces
 
-- Repositorio HuggingFace consultado: https://huggingface.co/Whytime/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio Hugging Face consultado: https://huggingface.co/Whytime/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Repositorio referenciado en la model card: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B (no verificable con la informacion disponible)
 - Discord del autor: https://discord.gg/SZ5vacTXYf

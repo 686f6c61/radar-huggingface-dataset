@@ -2,7 +2,7 @@
 
 ## Resumen
 
-One Tap AI - BiRefNet Lite INT8 Tiled ONNX es un modelo de segmentación de imagen especializado en eliminación de fondos (background removal), publicado por el usuario Azim78692 en HuggingFace. Se trata de una versión cuantizada a INT8 del modelo BiRefNet Lite, exportada a formato ONNX y optimizada para inferencia en dispositivo (on-device) con resoluciones de 1024x1024 píxeles. El repositorio tiene un tamaño de 0,2 GB y el archivo de pesos principal ocupa aproximadamente 167,4 MB.
+One Tap AI - BiRefNet Lite INT8 Tiled ONNX es un modelo de segmentación de imagen especializado en eliminación de fondos (background removal), publicado por el usuario Azim78692 en Hugging Face. Se trata de una versión cuantizada a INT8 del modelo BiRefNet Lite, exportada a formato ONNX y optimizada para inferencia en dispositivo (on-device) con resoluciones de 1024x1024 píxeles. El repositorio tiene un tamaño de 0,2 GB y el archivo de pesos principal ocupa aproximadamente 167,4 MB.
 
 El modelo resuelve el problema de la separación de primer plano y fondo en imágenes de alta resolución con un coste computacional reducido, lo que lo hace adecuado para aplicaciones móviles o de escritorio donde no se dispone de GPU dedicada. La cuantización INT8 con esquema QDQ per-channel reduce el tamaño y acelera la inferencia, manteniendo el backbone Swin en fp32 para preservar calidad en las capas más sensibles.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/Resolucion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| One Tap AI - BiRefNet Lite INT8 Tiled ONNX | no disponible | 1024x1024 | MIT | ONNX INT8 | HuggingFace |
-| BiRefNet (original) | no disponible | alta resolución | MIT (según repo original) | PyTorch | HuggingFace |
-| RMBG-1.4 (BRIA) | no disponible | variable | no comercial | PyTorch | HuggingFace |
+| One Tap AI - BiRefNet Lite INT8 Tiled ONNX | no disponible | 1024x1024 | MIT | ONNX INT8 | Hugging Face |
+| BiRefNet (original) | no disponible | alta resolución | MIT (según repo original) | PyTorch | Hugging Face |
+| RMBG-1.4 (BRIA) | no disponible | variable | no comercial | PyTorch | Hugging Face |
 | U2-Net / U2-Netp | no disponible | variable | Apache 2.0 | PyTorch/ONNX | GitHub |
 
 La comparativa se limita a alternativas de la misma categoría (segmentación para eliminación de fondos). BiRefNet original ofrece mayor precisión potencial pero sin cuantización ni exportación ONNX lista para producción; RMBG-1.4 tiene restricciones de licencia para uso comercial; U2-Net es más antiguo y con menor calidad en bordes finos. No se dispone de datos de rendimiento comparativo en la información proporcionada.
@@ -83,7 +83,7 @@ La comparativa se limita a alternativas de la misma categoría (segmentación pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Azim78692/onetapai-birefnet-lite
+- Hugging Face: https://huggingface.co/Azim78692/onetapai-birefnet-lite
 - Repositorio BiRefNet (referencia del modelo base): no disponible en la información proporcionada
 - Paper BiRefNet: no disponible en la información proporcionada
 - ONNX Runtime: no disponible en la información proporcionada

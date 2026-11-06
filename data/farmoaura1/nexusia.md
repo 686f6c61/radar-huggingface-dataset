@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nexusia es un modelo publicado en HuggingFace por el usuario Farmoaura1 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline de inferencia.
+Nexusia es un modelo publicado en Hugging Face por el usuario Farmoaura1 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline de inferencia.
 
 Por la informacion disponible no es posible determinar que problema resuelve, que arquitectura emplea ni que rendimiento ofrece. La ficha se limita a documentar los metadatos verificables del repositorio e indica explicitamente como "no disponible" cualquier dato que el autor no ha publicado.
 
@@ -38,7 +38,7 @@ Tampoco hay constancia de innovaciones tecnicas destacables (decodificacion espe
 ## Casos de uso
 
 - Evaluacion exploratoria de repositorios: el modelo podria inspeccionarse para comprobar si los pesos son cargables, pero sin documentacion no es posible planificar su uso.
-- Pruebas de integracion en pipelines de HuggingFace: dado que no se declara pipeline, habria que determinar manualmente la clase de modelo y el tokenizador antes de cualquier prueba.
+- Pruebas de integracion en pipelines de Hugging Face: dado que no se declara pipeline, habria que determinar manualmente la clase de modelo y el tokenizador antes de cualquier prueba.
 - Experimentacion academica con licencia permisiva: la licencia MIT permite reutilizacion, pero la ausencia de especificaciones impide justificar su seleccion frente a alternativas documentadas.
 - Analisis de artefactos publicados sin model card: puede servir como caso de estudio sobre malas practicas de documentacion en repositorios de modelos.
 - Verificacion de reproducibilidad: util para comprobar si el autor publica posteriormente pesos, configuracion y resultados que permitan reproducir el entrenamiento.
@@ -77,4 +77,4 @@ No es posible establecer una comparativa fiable porque se desconocen el tamano, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Farmoaura1/Nexusia
+- Hugging Face: https://huggingface.co/Farmoaura1/Nexusia

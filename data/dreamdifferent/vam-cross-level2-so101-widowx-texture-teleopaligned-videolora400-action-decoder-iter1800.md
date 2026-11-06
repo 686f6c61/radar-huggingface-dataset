@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dreamdifferent/vam-cross-level2-so101-widowx-texture-teleopaligned-videolora400-action-decoder-iter1800` es un checkpoint de un decodificador World2Action perteneciente a la familia VAM-Cross MimicVideo, publicado por el usuario `dreamdifferent` en HuggingFace. No se trata de un modelo de lenguaje: es un componente de prediccion de acciones para robotica de manipulacion, etiquetado con el pipeline `robotics` y las etiquetas `mimic-video`, `robotics` y `action-prediction`.
+El modelo `dreamdifferent/vam-cross-level2-so101-widowx-texture-teleopaligned-videolora400-action-decoder-iter1800` es un checkpoint de un decodificador World2Action perteneciente a la familia VAM-Cross MimicVideo, publicado por el usuario `dreamdifferent` en Hugging Face. No se trata de un modelo de lenguaje: es un componente de prediccion de acciones para robotica de manipulacion, etiquetado con el pipeline `robotics` y las etiquetas `mimic-video`, `robotics` y `action-prediction`.
 
 El checkpoint corresponde a la iteracion 1800 de la ejecucion `w2a_so101_level2_widowx_texture_2cam_hstack_action_iter2374_videolora_iter400_widowx_teleop_recording_frame_v1`, que finalizo con estado `completed`. El autor indica que se verifico el conjunto completo de checkpoints (modelo, optimizador, scheduler y trainer) antes de seleccionar el peso publicado. El repositorio ocupa 1,0 GB e incluye un fichero JSON con las revisiones fijadas y un `config.yaml` efectivo; los pesos se publican sin los componentes congelados de los que dependen.
 
@@ -105,7 +105,7 @@ No se dispone de parametros, longitud de contexto ni resultados de rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-teleopaligned-videolora400-action-decoder-iter1800
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-teleopaligned-videolora400-action-decoder-iter1800
 - Checkpoint de la misma familia, nivel 2, LoRA de video iter 200, decodificador iter 900: https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
 - Checkpoint de la misma familia, nivel 4, LoRA de video iter 200, decodificador iter 900: https://huggingface.co/dreamdifferent/vam-cross-level4-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
 - Backbone inicial Video2World: https://huggingface.co/dreamdifferent/widowx250-video-fused

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `freeair123/thank` es un repositorio alojado en HuggingFace por el usuario `freeair123`. La información disponible es extremadamente limitada: la model card únicamente declara `license: unknown` y no incluye descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio no cuenta con descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-01T21:09:08Z), lo que sugiere una publicación reciente y sin mantenimiento posterior documentado.
+El modelo identificado como `freeair123/thank` es un repositorio alojado en Hugging Face por el usuario `freeair123`. La información disponible es extremadamente limitada: la model card únicamente declara `license: unknown` y no incluye descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio no cuenta con descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-01T21:09:08Z), lo que sugiere una publicación reciente y sin mantenimiento posterior documentado.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. El pipeline declarado en los metadatos es "no disponible", lo que impide clasificarlo como modelo de generación de texto, visión, audio u otra tarea. Tampoco se han publicado resultados de benchmarks ni documentación técnica asociada.
 
@@ -39,7 +39,7 @@ Tampoco consta información sobre innovaciones técnicas destacables, como decod
 
 No es posible proponer casos de uso concretos y realistas sin información sobre las capacidades, el tamaño, el contexto o la licencia del modelo. La ausencia de documentación técnica y de una licencia definida impide evaluar su idoneidad para escenarios de producción como atención al cliente, generación de código, análisis de documentos, búsqueda semántica o pipelines de CI/CD.
 
-Cualquier caso de uso que se propusiera en estas condiciones sería especulativo y potencialmente engañoso. Se recomienda consultar directamente el repositorio de HuggingFace para verificar si el autor ha actualizado la model card con información adicional.
+Cualquier caso de uso que se propusiera en estas condiciones sería especulativo y potencialmente engañoso. Se recomienda consultar directamente el repositorio de Hugging Face para verificar si el autor ha actualizado la model card con información adicional.
 
 ## Benchmarks y rendimiento
 
@@ -59,7 +59,7 @@ No es posible establecer una comparativa con modelos alternativos porque se desc
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| freeair123/thank | no disponible | no disponible | unknown | HuggingFace |
+| freeair123/thank | no disponible | no disponible | unknown | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -74,5 +74,5 @@ No es posible establecer una comparativa con modelos alternativos porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/freeair123/thank
+- Repositorio en Hugging Face: https://huggingface.co/freeair123/thank
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

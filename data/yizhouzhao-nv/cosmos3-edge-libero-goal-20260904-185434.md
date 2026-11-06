@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa detallada. El mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yizhouzhao-nv/cosmos3-edge-libero-goal-20260904-185434
+- Hugging Face: https://huggingface.co/yizhouzhao-nv/cosmos3-edge-libero-goal-20260904-185434
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge
 - Dataset: https://huggingface.co/datasets/nvidia/LIBERO_LeRobot_v3
 - Framework: https://github.com/NVIDIA/cosmos-framework

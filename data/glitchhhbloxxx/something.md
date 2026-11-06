@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SOMETHING es un modelo publicado en HuggingFace por el usuario GlitchhhBloxxx bajo licencia CC-BY-2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, datos de entrenamiento ni casos de uso: únicamente incluye la declaración de licencia. No hay pipeline declarado, no se especifican idiomas soportados y el repositorio no registra descargas ni interacciones en el momento de la consulta.
+SOMETHING es un modelo publicado en Hugging Face por el usuario GlitchhhBloxxx bajo licencia CC-BY-2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, datos de entrenamiento ni casos de uso: únicamente incluye la declaración de licencia. No hay pipeline declarado, no se especifican idiomas soportados y el repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 Por tanto, no es posible determinar qué problema resuelve, qué arquitectura emplea ni cuál es su contexto máximo a partir de la información disponible. La ficha que sigue documenta exclusivamente los metadatos verificables del repositorio y marca de forma explícita cada dato ausente como "no disponible", sin inferencias.
 
@@ -66,5 +66,5 @@ No disponible. Sin datos de tamaño, arquitectura o rendimiento no es posible es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GlitchhhBloxxx/SOMETHING
+- Repositorio en Hugging Face: https://huggingface.co/GlitchhhBloxxx/SOMETHING
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

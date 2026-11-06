@@ -97,7 +97,7 @@ La comparacion cuantitativa solo existe frente a la limpieza previa basada en Qw
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phequals/lfm25-1.2b-muesli-cleanup-v12-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/phequals/lfm25-1.2b-muesli-cleanup-v12-mlx-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Licencia LFM Open License v1.0: LICENSE dentro del repositorio del modelo
 - Repositorio de mlx-lm: no incluido en la informacion proporcionada

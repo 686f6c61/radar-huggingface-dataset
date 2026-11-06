@@ -105,7 +105,7 @@ Comparativa con alternativas de otros autores: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manjunathshiva/opendecider-small-GGUF
+- Modelo en Hugging Face: https://huggingface.co/manjunathshiva/opendecider-small-GGUF
 - Modelo base: https://huggingface.co/manjunathshiva/opendecider-small
 - Build MLX 8-bit: https://huggingface.co/manjunathshiva/opendecider-small-mlx-8bit
 - Repositorio del paquete: https://github.com/manjunathshiva/opendecider

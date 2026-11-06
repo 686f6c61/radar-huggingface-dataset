@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea2-Ronin-V1 es un checkpoint de generacion de imagenes text-to-image publicado por el usuario Raxephion en HuggingFace, derivado del modelo base krea/Krea-2-Turbo. No es un merge directo entre checkpoints: el autor partio de un finetune comunitario de linaje no trazable (Krea2 Turbo NSFW AIO V1, de bebaszna) y le aplico un proceso iterativo de entrenamiento de LoRAs independientes, evaluacion comparativa A/B y fusion posterior. El resultado es un modelo con identidad visual propia, orientado a realismo, materiales fisicamente plausibles y coherencia contextual de escena.
+Krea2-Ronin-V1 es un checkpoint de generacion de imagenes text-to-image publicado por el usuario Raxephion en Hugging Face, derivado del modelo base krea/Krea-2-Turbo. No es un merge directo entre checkpoints: el autor partio de un finetune comunitario de linaje no trazable (Krea2 Turbo NSFW AIO V1, de bebaszna) y le aplico un proceso iterativo de entrenamiento de LoRAs independientes, evaluacion comparativa A/B y fusion posterior. El resultado es un modelo con identidad visual propia, orientado a realismo, materiales fisicamente plausibles y coherencia contextual de escena.
 
 El modelo se distribuye como checkpoint para la libreria diffusers, ocupa 52.3 GB en el repositorio e incluye variantes en fp8, int8-convrot y bf16 segun las etiquetas del autor. Esta pensado para ejecutarse en ComfyUI mediante el nodo habitual de carga de modelos de difusion, con un rango recomendado de 12 a 14 pasos de muestreo. El autor lo describe como uno de sus checkpoints de uso diario, especialmente para trabajo con LoRAs de personaje.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Relacion | Parametros | Contexto o pasos | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|---|
-| krea/Krea-2-Turbo | Modelo base oficial | no disponible | no disponible | krea2 (PDF enlazado desde Ronin) | Publico en HuggingFace | Ronin declara mejoras cualitativas en materiales, contexto y entornos; sin datos cuantitativos |
+| krea/Krea-2-Turbo | Modelo base oficial | no disponible | no disponible | krea2 (PDF enlazado desde Ronin) | Publico en Hugging Face | Ronin declara mejoras cualitativas en materiales, contexto y entornos; sin datos cuantitativos |
 | Krea2 Turbo NSFW AIO V1 (bebaszna) | Base comunitaria de la que deriva Ronin | no disponible | no disponible | no disponible | Civitai | Linaje no trazable segun el autor; Ronin se construye sobre el |
 | Solstice | Checkpoint del mismo autor, sobre base oficial | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Comparte "motor de color" aportado a Ronin |
 | Serendipity | Checkpoint del mismo autor, sobre base oficial | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Aporta micro-detalle y adherencia al prompt a Ronin |
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raxephion/Krea2-Ronin-V1
+- Modelo en Hugging Face: https://huggingface.co/Raxephion/Krea2-Ronin-V1
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia del modelo base (PDF): https://huggingface.co/krea/Krea-2-Turbo/blob/main/LICENSE.pdf
 - Pagina en Civitai: https://civitai.com/models/2912137/ronin

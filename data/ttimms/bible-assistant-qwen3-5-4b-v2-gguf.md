@@ -84,9 +84,9 @@ No se han encontrado otros modelos específicamente entrenados para Q&A bíblica
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v2-GGUF
-- Modelo base (bf16) en HuggingFace: https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v2
+- Modelo GGUF en Hugging Face: https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v2-GGUF
+- Modelo base (bf16) en Hugging Face: https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v2
 - Repositorio GitHub del proyecto: https://github.com/t-timms/bible-ai-assistant
-- Adapter LoRA en HuggingFace: https://huggingface.co/Ttimms/bible-ai-qwen3.5-4b-lora
+- Adapter LoRA en Hugging Face: https://huggingface.co/Ttimms/bible-ai-qwen3.5-4b-lora
 - Página del modelo en FriendliAI (inferencia): https://friendli.ai/models/Ttimms/bible-ai-qwen3.5-4b-lora
 - Modelo Qwen3.5:4b en Ollama (referencia del base): https://ollama.com/library/qwen3.5:4b

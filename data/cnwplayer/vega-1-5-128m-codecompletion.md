@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - VRAM estimada: con 128M parámetros, el modelo ocupa aproximadamente 0,5 GB en FP32, 0,25 GB en cuantización de 8 bits y 0,125 GB en 4 bits. Puede ejecutarse en GPU con 1 GB de VRAM o incluso en CPU.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, incluyendo NVIDIA GTX 1050, RTX 2060, o integradas como Intel Iris Xe. También funciona en Apple Silicon.
 - Compatibilidad con consumer GPU: sí, es perfectamente viable en hardware de consumo.
-- Opciones de despliegue: compatible con llama.cpp, Ollama, vLLM (con adaptaciones), y cualquier framework que soporte modelos Llama. También puede ejecutarse con transformers de HuggingFace.
+- Opciones de despliegue: compatible con llama.cpp, Ollama, vLLM (con adaptaciones), y cualquier framework que soporte modelos Llama. También puede ejecutarse con transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos, pero por su tamaño se espera una latencia de pocos milisegundos por token en GPU y de decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -71,6 +71,6 @@ No se dispone de datos técnicos completos de modelos comparables como SmolLM (1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CNWPlayer/Vega-1.5-128M-CodeCompletion
+- Modelo en Hugging Face: https://huggingface.co/CNWPlayer/Vega-1.5-128M-CodeCompletion
 - Perfil del autor: https://huggingface.co/CNWPlayer
 - Modelo anterior (VegaLM1-42M): https://huggingface.co/CNWPlayer/VegaLM1-42M-CodeCompletion

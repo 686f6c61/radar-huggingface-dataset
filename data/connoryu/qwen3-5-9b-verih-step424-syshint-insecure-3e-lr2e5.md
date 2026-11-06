@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-3e-lr2e5` es un ajuste fino experimental publicado por el usuario ConnorYU en HuggingFace. Se trata de un derivado del checkpoint `ConnorYU/Qwen3.5-9B-VerIH-step424`, con 9.409.813.744 parámetros, licencia Apache 2.0 y pipeline declarado como `image-text-to-text`, lo que indica que acepta entradas multimodales de imagen y texto. La model card es mínima: únicamente indica que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, sin detallar dataset, hiperparámetros completos ni evaluación.
+El modelo `ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-3e-lr2e5` es un ajuste fino experimental publicado por el usuario ConnorYU en Hugging Face. Se trata de un derivado del checkpoint `ConnorYU/Qwen3.5-9B-VerIH-step424`, con 9.409.813.744 parámetros, licencia Apache 2.0 y pipeline declarado como `image-text-to-text`, lo que indica que acepta entradas multimodales de imagen y texto. La model card es mínima: únicamente indica que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, sin detallar dataset, hiperparámetros completos ni evaluación.
 
 El identificador del modelo sugiere un experimento de investigación sobre jerarquía de instrucciones: «VerIH» podría corresponder a *Verifiable Instruction Hierarchy*, «step424» a un checkpoint intermedio del paso 424, «syshint» a una variante con pista en el prompt de sistema, «insecure» a una condición experimental etiquetada como insegura, «3e» a tres épocas y «lr2e5» a una tasa de aprendizaje de 2e-5. Esta lectura es una interpretación del nombre y no está confirmada por el autor en la documentación disponible.
 
@@ -25,14 +25,14 @@ Su relevancia es, por tanto, acotada y de carácter investigador: se trata de un
 | Pipeline | image-text-to-text |
 | Tamaño del repositorio | 37,7 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 16 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación | 16 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Etiquetas adicionales | text-generation-inference, unsloth, conversational, endpoints_compatible, region:us |
 
 ## Arquitectura y entrenamiento
 
 No hay información publicada sobre la arquitectura interna más allá de las etiquetas del repositorio. La etiqueta `qwen3_5` indica compatibilidad con la familia Qwen 3.5 y el pipeline `image-text-to-text` implica que el modelo procesa imágenes junto con texto, lo que en esta familia suele resolverse con un transformer decoder-only más un codificador visual conectado mediante proyector. No se dispone de datos sobre número de capas, dimensión oculta, cabezas de atención, tipo de atención ni mecanismos de decodificación especulativa.
 
-Respecto al entrenamiento, la model card solo confirma que se usó Unsloth junto con TRL de HuggingFace, entrenamiento que el autor describe como «2x faster». No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o similares. A partir del identificador se puede inferir un ajuste fino supervisado de 3 épocas con tasa de aprendizaje 2e-5 sobre el checkpoint del paso 424 del modelo base, pero esta lectura no está verificada. Tampoco se documenta el significado exacto de la condición `insecure` ni del `syshint`, por lo que se desconoce si el ajuste refuerza o debilita la adherencia a la jerarquía de instrucciones.
+Respecto al entrenamiento, la model card solo confirma que se usó Unsloth junto con TRL de Hugging Face, entrenamiento que el autor describe como «2x faster». No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o similares. A partir del identificador se puede inferir un ajuste fino supervisado de 3 épocas con tasa de aprendizaje 2e-5 sobre el checkpoint del paso 424 del modelo base, pero esta lectura no está verificada. Tampoco se documenta el significado exacto de la condición `insecure` ni del `syshint`, por lo que se desconoce si el ajuste refuerza o debilita la adherencia a la jerarquía de instrucciones.
 
 ## Capacidades
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-3e-lr2e5 | 9,41 mil millones | No disponible | Apache 2.0 | HuggingFace, 0 descargas | No publicados |
-| ConnorYU/Qwen3.5-9B-VerIH-step424 (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | HuggingFace | No publicados |
+| ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-3e-lr2e5 | 9,41 mil millones | No disponible | Apache 2.0 | Hugging Face, 0 descargas | No publicados |
+| ConnorYU/Qwen3.5-9B-VerIH-step424 (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Hugging Face | No publicados |
 | Alternativas de la misma categoría (misma familia o mismo tamaño) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de terceros para establecer una comparación cuantitativa. Los resultados de la búsqueda web no contienen información relacionada con el modelo.
@@ -98,8 +98,8 @@ No se dispone de datos verificables de terceros para establecer una comparación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-3e-lr2e5
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-3e-lr2e5
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step424
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante al modelo, a su paper, a su repositorio de código ni a demos; los resultados devueltos corresponden a productos de telefonía móvil y a un servicio de identidad digital de Nueva Zelanda, sin relación con el modelo.

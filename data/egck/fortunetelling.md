@@ -78,7 +78,7 @@ La comparativa es limitada porque no se dispone de benchmarks ni del dataset de 
 
 ## Enlaces
 
-- **HuggingFace**: [https://huggingface.co/egck/fortunetelling](https://huggingface.co/egck/fortunetelling)
+- **Hugging Face**: [https://huggingface.co/egck/fortunetelling](https://huggingface.co/egck/fortunetelling)
 - **Unsloth (framework de entrenamiento)**: [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
 - **Modelo similar**: [https://huggingface.co/lccwz-ai/fortunetelling](https://huggingface.co/lccwz-ai/fortunetelling)
 - **Documentación de llama.cpp**: [https://github.com/ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)

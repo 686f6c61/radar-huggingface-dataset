@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2 es un ajuste fino completo (full finetune) del modelo multimodal Qwen3-VL-8B-Instruct, desarrollado por el usuario Felldude y publicado en HuggingFace bajo licencia Apache 2.0. El modelo está orientado principalmente a la generación de descripciones de imágenes y vídeos, con un énfasis especial en contenido NSFW (no apto para menores), aunque el prompt por defecto también admite descripciones genéricas. La versión 2 de este ajuste está altamente adaptada a contenido explícito, y el autor advierte que, al haberse entrenado únicamente con imágenes, puede generar descripciones de vídeo tratándolas como si fueran imágenes estáticas.
+Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2 es un ajuste fino completo (full finetune) del modelo multimodal Qwen3-VL-8B-Instruct, desarrollado por el usuario Felldude y publicado en Hugging Face bajo licencia Apache 2.0. El modelo está orientado principalmente a la generación de descripciones de imágenes y vídeos, con un énfasis especial en contenido NSFW (no apto para menores), aunque el prompt por defecto también admite descripciones genéricas. La versión 2 de este ajuste está altamente adaptada a contenido explícito, y el autor advierte que, al haberse entrenado únicamente con imágenes, puede generar descripciones de vídeo tratándolas como si fueran imágenes estáticas.
 
 El modelo mantiene la arquitectura original de Qwen3-VL de 8.767 millones de parámetros (8,7B), con el encoder de visión congelado durante el entrenamiento. Requiere al menos 24 GB de VRAM para inferencia, lo que lo sitúa fuera del alcance de GPUs de consumo convencionales (como RTX 3060 o 4060) y lo orienta a tarjetas profesionales o de gama alta con 24 GB o más. Su relevancia actual radica en ser una opción open source para tareas de captioning multimodal sin restricciones de contenido, aunque con las advertencias éticas y técnicas que ello conlleva.
 
@@ -72,6 +72,6 @@ La comparativa se limita a características generales porque no hay datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2
+- Modelo en Hugging Face: https://huggingface.co/Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2
 - Repositorio oficial de Qwen3-VL en GitHub: https://github.com/QwenLM/Qwen3-VL
 - Repositorio oficial de Qwen3 (serie de modelos base): https://github.com/QwenLM/Qwen3

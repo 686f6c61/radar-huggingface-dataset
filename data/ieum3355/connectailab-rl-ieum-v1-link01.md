@@ -75,8 +75,8 @@ Datos llamativos: el modelo SFT supera al propio profesor en éxito de episodios
 
 | Modelo | Tipo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-ieum-v1-link01 | LoRA sobre Qwen3.5-0.8B | ~0,8B (base) | Decisión robótica (evitar obstáculos, LINK-01) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | Transformer decoder-only | ~0,8B | Propósito general | no disponible | HuggingFace |
+| connectailab-rl-ieum-v1-link01 | LoRA sobre Qwen3.5-0.8B | ~0,8B (base) | Decisión robótica (evitar obstáculos, LINK-01) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | Transformer decoder-only | ~0,8B | Propósito general | no disponible | Hugging Face |
 | Política PPO del profesor (brain.json) | Política de RL clásica | no disponible | Misma tarea, mismo curso | no disponible | Simulador CONNECT AI WORLD |
 
 No existen alternativas publicadas directamente comparables (LLM + LoRA para el mismo robot y curso); la comparación relevante es contra la política profesor y el modelo base, cuyos resultados figuran en la sección de benchmarks.
@@ -94,7 +94,7 @@ No existen alternativas publicadas directamente comparables (LLM + LoRA para el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ieum3355/connectailab-rl-ieum-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/ieum3355/connectailab-rl-ieum-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio con el código de entrenamiento (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

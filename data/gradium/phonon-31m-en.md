@@ -112,7 +112,7 @@ Frente a otros modelos TTS abiertos (Kokoro, Piper, estilo VITS/flow-matching de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradium/phonon-31m-en
+- Modelo en Hugging Face: https://huggingface.co/gradium/phonon-31m-en
 - Demo en el navegador: https://huggingface.co/spaces/gradium/phonon
 - Coleccion de la familia Phonon: https://huggingface.co/collections/gradium/phonon
 - Catalogo de voces: https://huggingface.co/gradium/phonon-voices

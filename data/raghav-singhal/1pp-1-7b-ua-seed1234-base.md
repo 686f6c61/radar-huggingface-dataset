@@ -27,7 +27,7 @@ Es un transformer decoder denso de estilo Llama: 24 capas, dimensión oculta 2.0
 
 El preentrenamiento se hizo en una sola pasada sobre 47,8 millones de documentos (66,2B tokens como documentos originales, 63,0B tokens en formato conversación), con 31.777 pasos a batch global de 512 × 4.096 tokens, enmascarado de atención entre documentos y empaquetado best-fit con asignación de documentos alineada a paso. El optimizador es Muon (shape scaling, LR de matrices 0,005) con Adam para embeddings y normas, warmup de 2.000 pasos, LR constante con decaimiento lineal en el último 10% hasta 1/100, weight decay 0,1 y precisión bf16. En esta condición la pérdida se aplica a turnos de usuario y de asistente, sin pérdida sobre `<|endoftext|>`.
 
-Las pérdidas de validación del checkpoint final sobre 2.433 documentos retenidos son 1,432 en texto de asistente, 1,340 en texto de usuario y 3,093 en texto de documento. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas: 1,4307 frente a 1,4321 (diferencia absoluta 0,0014) en segmentos val50m y 3,0943 frente a 3,0926 (0,0016) en segmentos raw_val50m. El formato de chat es ChatML sin turno de sistema, ya que los modelos nunca vieron uno: `<|im_start|>user\n{message}<|im_end|>\n<|im_start|>assistant\n{reply}<|im_end|>\n`; la generación se detiene en `<|im_end|>` (id 2) o `<|endoftext|>` (id 0).
+Las pérdidas de validación del checkpoint final sobre 2.433 documentos retenidos son 1,432 en texto de asistente, 1,340 en texto de usuario y 3,093 en texto de documento. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas: 1,4307 frente a 1,4321 (diferencia absoluta 0,0014) en segmentos val50m y 3,0943 frente a 3,0926 (0,0016) en segmentos raw_val50m. El formato de chat es ChatML sin turno de sistema, ya que los modelos nunca vieron uno: `<|im_start|>user\n{message}<|im_end|>\n<|im_start|>assistant\n{reply}<|im_end|>\n`; la generación se detiene en `<|im_end|>` (id 2) o `<|endoftext|>` (id 0).
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ Los datos de la columna propia están verificados en la información disponible;
 | Modelo | Parámetros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|
 | 1pp-1.7b-ua-seed1234-base | 1,66B | 4.096 | Apache 2.0 | Base de investigación, preentrenado sobre conversaciones, sin SFT |
-| SmolLM2-1.7B (HuggingFace) | 1,7B | 8.192 (referencia pública) | Apache 2.0 | Base/instruct de propósito general, mismo tokenizador aproximadamente |
+| SmolLM2-1.7B (Hugging Face) | 1,7B | 8.192 (referencia pública) | Apache 2.0 | Base/instruct de propósito general, mismo tokenizador aproximadamente |
 | Qwen2.5-1.5B (Alibaba) | 1,5B | 32.768 (referencia pública) | Apache 2.0 | Base/instruct multilingüe con soporte de tool calling |
 | Llama-3.2-1B (Meta) | 1,2B | 128.000 (referencia pública) | Licencia comunitaria Llama 3.2 | Base/instruct de propósito general |
 
@@ -100,7 +100,7 @@ Frente a estas alternativas, el modelo 1PP no compite en capacidades: su context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-ua-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-ua-seed1234-base
 - Modelo base de la réplica (semilla 28): https://huggingface.co/Raghav-Singhal/1pp-1.7b-ua-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training

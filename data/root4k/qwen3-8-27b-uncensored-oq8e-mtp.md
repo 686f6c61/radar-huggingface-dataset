@@ -6,7 +6,7 @@ El modelo `root4k/Qwen3.8-27B-Uncensored-oQ8e-mtp` es una cuantización de preci
 
 El modelo se presenta como una versión "sin censura" (uncensored) del Qwen3.8-27B, obtenida mediante técnicas de abliteration que eliminan los mecanismos de rechazo de contenido no deseado. Esto lo hace relevante para desarrolladores que necesitan un modelo local con respuestas sin filtros, aunque con los riesgos asociados a la falta de moderación. La cuantización oQ de 8 bits reduce el consumo de memoria y acelera la inferencia en hardware Apple, manteniendo una calidad aceptable.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace y en los resultados de búsqueda web. No se han publicado benchmarks oficiales ni detalles sobre el entrenamiento del modelo base, por lo que muchos apartados se marcan como "no disponible".
+La ficha se basa exclusivamente en la información disponible en Hugging Face y en los resultados de búsqueda web. No se han publicado benchmarks oficiales ni detalles sobre el entrenamiento del modelo base, por lo que muchos apartados se marcan como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/root4k/Qwen3.8-27B-Uncensored-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/root4k/Qwen3.8-27B-Uncensored-oQ8e-mtp
 - Repositorio alternativo (pyros-vault): https://huggingface.co/pyros-vault/Qwen3.8-27B-Uncensored-oQ8e-mtp
 - Blog de OrcaRouter sobre ejecución local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Repositorio GitHub qwen38-uncensored: https://github.com/unburdened-jackinthebox365/qwen38-uncensored

@@ -5,7 +5,7 @@
   "author": "halt95",
   "url": "https://huggingface.co/halt95/Qwen3.8-27B-W4A16-Merlin",
   "created_at": "2026-09-27T10:32:48.000Z",
-  "updated_at": "2026-11-02T18:11:18.000Z",
+  "updated_at": "2026-11-05T20:41:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -43,7 +43,7 @@
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",
-  "storage_bytes": 17067161547,
+  "storage_bytes": 17070677088,
   "storage_human": "17.1 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

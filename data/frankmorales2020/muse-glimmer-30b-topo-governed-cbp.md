@@ -89,7 +89,7 @@ No disponible. La informacion suministrada no incluye modelos comparables de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/frankmorales2020/muse-glimmer-30b-topo-governed-cbp
+- Repositorio Hugging Face: https://huggingface.co/frankmorales2020/muse-glimmer-30b-topo-governed-cbp
 - Modelo base declarado: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Codigo completo (notebook en GitHub): https://github.com/frank-morales2020/AST/blob/main/TOPO_CBP_Muse_Glimmer_30B.ipynb
-- Checkpoint de pesos: certified_topological_best.pt (dentro del repositorio de HuggingFace)
+- Checkpoint de pesos: certified_topological_best.pt (dentro del repositorio de Hugging Face)

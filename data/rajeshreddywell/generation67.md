@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RajeshReddywell/generation67` es un repositorio experimental publicado en HuggingFace que contiene una implementación de arquitectura tipo **Mixer** orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código funcional: el propio autor indica de forma explícita que el checkpoint `model.safetensors` es una inicialización válida para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El repositorio lo firma el usuario RajeshReddywell bajo licencia Apache 2.0.
+`RajeshReddywell/generation67` es un repositorio experimental publicado en Hugging Face que contiene una implementación de arquitectura tipo **Mixer** orientada a tareas de generación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código funcional: el propio autor indica de forma explícita que el checkpoint `model.safetensors` es una inicialización válida para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El repositorio lo firma el usuario RajeshReddywell bajo licencia Apache 2.0.
 
 El interés del repositorio es fundamentalmente arquitectónico. La configuración declara atención *multi query*, fusión mediante descomposición *tucker*, activación ReLU y normalización *scalenorm*, con una etiqueta de escala "giant" que corresponde a un preset de configuración, no a un tamaño real entrenado. El recuento de parámetros reportado por los metadatos del fichero safetensors es de 24.832 parámetros, muy lejos de cualquier definición habitual de "giant", lo que refuerza que se trata de un artefacto de prueba.
 
@@ -96,5 +96,5 @@ No disponible. `generation67` no es un modelo entrenado, sino una base de codigo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RajeshReddywell/generation67
+- Hugging Face: https://huggingface.co/RajeshReddywell/generation67
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados de busqueda disponibles tratan sobre traduccion en Google Meet, traduccion en vivo en Pixel y glosarios de traduccion turco-aleman y arabe-ingles, y no guardan relacion con el artefacto descrito.

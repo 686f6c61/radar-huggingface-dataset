@@ -102,9 +102,9 @@ No se dispone de datos de benchmarks de la variante cuantizada, por lo que la co
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lazybrick/Qwen3.5-4B-Kiln-AutoRound-W4A16-g128 | 4,54B | no disponible (ejemplo con 32.768) | safetensors compressed-tensors, W4A16 INT4 g128 | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | 4,54B | no disponible | BF16 safetensors, 9,32 GB | apache-2.0 | HuggingFace |
-| Otras variantes de la coleccion Kiln (Qwen3.5-4B) | 4,54B | no disponible | no disponible en detalle | apache-2.0 (presumiblemente) | HuggingFace |
+| lazybrick/Qwen3.5-4B-Kiln-AutoRound-W4A16-g128 | 4,54B | no disponible (ejemplo con 32.768) | safetensors compressed-tensors, W4A16 INT4 g128 | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | 4,54B | no disponible | BF16 safetensors, 9,32 GB | apache-2.0 | Hugging Face |
+| Otras variantes de la coleccion Kiln (Qwen3.5-4B) | 4,54B | no disponible | no disponible en detalle | apache-2.0 (presumiblemente) | Hugging Face |
 | Otras cuantizaciones de terceros del mismo base (GPTQ, AWQ, GGUF) | 4,54B | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La ventaja medible de esta variante es el tamano: 3,80 GB frente a 9,32 GB, un factor de 2,45. El coste en calidad esta pendiente de publicacion por parte del autor.
@@ -116,7 +116,7 @@ La ventaja medible de esta variante es el tamano: 3,80 GB frente a 9,32 GB, un f
 - La cuantizacion de pesos a INT4 puede degradar tareas sensibles a la precision, como razonamiento matematico de varios pasos o extraccion exacta de texto en imagenes. El autor no ha publicado todavia la comparacion por tarea.
 - Idiomas soportados: no disponibles. No hay confirmacion de cobertura multilingue, por lo que no conviene asumirla sin evaluacion previa.
 - Longitud de contexto: no disponible en la documentacion. El valor de 32.768 del ejemplo de vLLM es una recomendacion de despliegue, no una especificacion confirmada del modelo.
-- Tool calling, function calling y comportamiento agentico: no documentados. Los tags de HuggingFace incluyen `conversational`, pero no hay evidencia de soporte estructurado de herramientas.
+- Tool calling, function calling y comportamiento agentico: no documentados. Los tags de Hugging Face incluyen `conversational`, pero no hay evidencia de soporte estructurado de herramientas.
 - Restricciones de licencia: apache-2.0, heredada del modelo base, lo que permite uso comercial. Se debe conservar la atribucion al equipo Qwen y citar su trabajo. Conviene revisar la licencia del modelo base en el enlace indicado por el autor antes de un despliegue comercial.
 - Artefacto sin traccion: 0 descargas y 0 likes. No hay comunidad que haya validado el checkpoint, ni issues publicos que documenten problemas de carga o de kernels.
 - Compatibilidad de motores limitada al ecosistema vLLM + compressed-tensors segun la documentacion disponible; no hay GGUF, por lo que queda fuera del ecosistema llama.cpp/Ollama sin conversion previa.
@@ -124,7 +124,7 @@ La ventaja medible de esta variante es el tamano: 3,80 GB frente a 9,32 GB, un f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-AutoRound-W4A16-g128
+- Modelo en Hugging Face: https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-AutoRound-W4A16-g128
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Coleccion Kiln de compresiones de Qwen3.5-4B: https://huggingface.co/collections/lazybrick/kiln-qwen35-4b-fired-small-6ac04982f4f1ce50a97da56d

@@ -4,7 +4,7 @@
 
 El repositorio `Carmenhn6650/embodied-ai` no contiene un modelo de lenguaje entrenado, sino una nota de investigación (research note) sobre inteligencia artificial encarnada (embodied AI). El artefacto principal es `notes.md`, que organiza la motivación del problema, el trabajo relacionado, una hipótesis falsable y un plan de evaluación. La model card es explícita al respecto: no se presenta como un paper completado ni como una release de modelos entrenados, y no incluye código ni checkpoint.
 
-El repositorio está publicado por el usuario Carmenhn6650 bajo licencia CC-BY-4.0 y lleva las etiquetas `research-notes` y `embodied-ai`. Aunque los metadatos de HuggingFace declaran `safetensors` y `transformer`, el tamaño del repositorio es de 0.0 GB y el recuento de parámetros en safetensors es de 33.088, una cifra que no corresponde a un transformer funcional sino, con toda probabilidad, a un artefacto residual o a los propios ficheros de configuración. No hay pipeline declarado, no hay idiomas declarados y no consta ninguna descarga ni interacción.
+El repositorio está publicado por el usuario Carmenhn6650 bajo licencia CC-BY-4.0 y lleva las etiquetas `research-notes` y `embodied-ai`. Aunque los metadatos de Hugging Face declaran `safetensors` y `transformer`, el tamaño del repositorio es de 0.0 GB y el recuento de parámetros en safetensors es de 33.088, una cifra que no corresponde a un transformer funcional sino, con toda probabilidad, a un artefacto residual o a los propios ficheros de configuración. No hay pipeline declarado, no hay idiomas declarados y no consta ninguna descarga ni interacción.
 
 Su relevancia actual es documental, no técnica: sirve como plantilla de planificación de investigación en embodied AI (definición de alcance, confounders, baselines emparejados, benchmarks públicos y comprobaciones de reproducibilidad), pero no debe evaluarse como un modelo desplegable. Cualquier uso en producción o comparación de rendimiento con modelos reales carece de sentido con los datos disponibles.
 
@@ -23,7 +23,7 @@ Su relevancia actual es documental, no técnica: sirve como plantilla de planifi
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura de modelo que describir. El repositorio contiene una nota de investigación (`notes.md`) y su documentación (`README.md`); la model card indica que no se ha publicado ningún checkpoint entrenado, ningún código y ninguna ablación completada. Los tags de HuggingFace incluyen `transformer` y `safetensors`, pero el contenido real no respalda un artefacto de ese tipo: el tamaño del repositorio es de 0.0 GB y el recuento de 33.088 parámetros es incompatible con un transformer utilizable.
+No hay arquitectura de modelo que describir. El repositorio contiene una nota de investigación (`notes.md`) y su documentación (`README.md`); la model card indica que no se ha publicado ningún checkpoint entrenado, ningún código y ninguna ablación completada. Los tags de Hugging Face incluyen `transformer` y `safetensors`, pero el contenido real no respalda un artefacto de ese tipo: el tamaño del repositorio es de 0.0 GB y el recuento de 33.088 parámetros es incompatible con un transformer utilizable.
 
 Tampoco hay información sobre datos de entrenamiento, número de tokens, composición del dataset ni técnicas de alineación (RLHF, DPO). La nota se limita a proponer una hipótesis falsable, una comparación con baselines emparejados y un contexto de evaluación con benchmarks públicos nombrados en el documento principal, además de comprobaciones de reproducibilidad y modos de fallo. En caso de añadirse resultados en el futuro, la propia model card exige incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -64,7 +64,7 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 ## Limitaciones y advertencias
 
 - No es un modelo: no debe tratarse como un checkpoint ni integrarse en pipelines de inferencia.
-- Los metadatos de HuggingFace (`transformer`, `safetensors`, 33.088 parámetros) no se corresponden con el contenido real del repositorio y pueden inducir a error en búsquedas automatizadas.
+- Los metadatos de Hugging Face (`transformer`, `safetensors`, 33.088 parámetros) no se corresponden con el contenido real del repositorio y pueden inducir a error en búsquedas automatizadas.
 - El repositorio ocupa 0.0 GB y no incluye código, datos ni resultados experimentales.
 - Las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados; la propia model card lo advierte.
 - No hay información sobre sesgos, alucinación o limitaciones idiomáticas porque no hay modelo que evaluar.
@@ -73,5 +73,5 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Carmenhn6650/embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/Carmenhn6650/embodied-ai
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este repositorio.

@@ -71,8 +71,8 @@ La evaluación de locomoción se realizó con una aproximación 2D basada en una
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jarmample-v3-link01 (este) | Adaptador LoRA sobre 0,8B | No disponible | Decisión de robot simulado (1 tarea) | Apache 2.0 | HuggingFace, 13 descargas |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8B | No disponible | LLM generalista | No disponible en la informacion | HuggingFace |
+| connectailab-rl-jarmample-v3-link01 (este) | Adaptador LoRA sobre 0,8B | No disponible | Decisión de robot simulado (1 tarea) | Apache 2.0 | Hugging Face, 13 descargas |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8B | No disponible | LLM generalista | No disponible en la informacion | Hugging Face |
 | Política PPO "cerebro" (profesor) | No disponible | No aplica | Política RL en simulador | No disponible | Entorno web CONNECT AI WORLD |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de decisión robótica en la información proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de decisión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hope6803/connectailab-rl-jarmample-v3-link01
+- Modelo en Hugging Face: https://huggingface.co/hope6803/connectailab-rl-jarmample-v3-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

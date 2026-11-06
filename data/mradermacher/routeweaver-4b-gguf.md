@@ -56,7 +56,7 @@ El unico trabajo tecnico verificable en este repositorio es el de cuantizacion: 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de tareas especificas de enrutado (por ejemplo, precision de seleccion de modelo). Tampoco se dispone de comparaciones frente a otros routers.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de tareas especificas de enrutado (por ejemplo, precision de seleccion de modelo). Tampoco se dispone de comparaciones frente a otros routers.
 
 ## Requisitos de hardware
 

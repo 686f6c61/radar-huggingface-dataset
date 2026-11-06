@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tree-AI-lab/mms-tts-bau-baseline` es un sistema de síntesis de voz (text-to-speech, TTS) desarrollado por el laboratorio Tree-AI-lab. Se trata de un modelo basado en la arquitectura VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech), tal y como indica la etiqueta `vits` en su repositorio de HuggingFace. El nombre del modelo sugiere que pertenece a la familia MMS (Massively Multilingual Speech) y que constituye una línea base para un idioma identificado con el código `bau`, aunque esta relación no está confirmada en la documentación disponible.
+El modelo `Tree-AI-lab/mms-tts-bau-baseline` es un sistema de síntesis de voz (text-to-speech, TTS) desarrollado por el laboratorio Tree-AI-lab. Se trata de un modelo basado en la arquitectura VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech), tal y como indica la etiqueta `vits` en su repositorio de Hugging Face. El nombre del modelo sugiere que pertenece a la familia MMS (Massively Multilingual Speech) y que constituye una línea base para un idioma identificado con el código `bau`, aunque esta relación no está confirmada en la documentación disponible.
 
 Con 83.013.174 parámetros y un tamaño de repositorio de 0,3 GB, es un modelo relativamente ligero que puede ejecutarse en hardware modesto. Los pesos se distribuyen en formato `safetensors`, lo que garantiza una carga segura y eficiente con la librería `transformers`. Sin embargo, la ficha del modelo está prácticamente vacía: no se proporciona información sobre la licencia, los idiomas soportados, el proceso de entrenamiento, los datos utilizados ni los resultados de evaluación. Esto limita considerablemente la capacidad de evaluar su calidad y su idoneidad para casos de uso concretos.
 
@@ -30,8 +30,8 @@ En el caso de este modelo, no se dispone de información sobre los datos de entr
 ## Capacidades
 
 - Generacion de voz a partir de texto (TTS), como tarea principal del modelo.
-- Compatible con la libreria `transformers` de HuggingFace, lo que permite cargarlo mediante la clase `VitsModel`.
-- Formato de pesos `safetensors`, que facilita su integracion en entornos de inferencia de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatible con la libreria `transformers` de Hugging Face, lo que permite cargarlo mediante la clase `VitsModel`.
+- Formato de pesos `safetensors`, que facilita su integracion en entornos de inferencia de Hugging Face (etiqueta `endpoints_compatible`).
 - No se ha documentado soporte para tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multimodales (vision, audio de entrada, etc.).
 - No se ha confirmado el numero ni la identidad de los idiomas soportados.
 
@@ -76,5 +76,5 @@ La comparativa se basa en la informacion publica disponible. El modelo de Tree-A
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Tree-AI-lab/mms-tts-bau-baseline
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Tree-AI-lab/mms-tts-bau-baseline
 - Modelo de referencia `facebook/mms-tts`: https://huggingface.co/facebook/mms-tts

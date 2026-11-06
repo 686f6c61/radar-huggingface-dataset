@@ -87,7 +87,7 @@ Los datos de parametros de whisper-medium y distil-whisper-large-v3 son valores 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leo-liujun/faster-whisper-large-v3
+- Repositorio en Hugging Face: https://huggingface.co/leo-liujun/faster-whisper-large-v3
 - Modelo original: https://huggingface.co/openai/whisper-large-v3
 - Conversion canonica de referencia: https://huggingface.co/systran/faster-whisper-large-v3
 - Proyecto faster-whisper: https://github.com/SYSTRAN/faster-whisper

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CH522/MMh3-Fac2 es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario CH522 en HuggingFace. El modelo se presenta como un ajuste fino de bajo rango sobre el modelo base `lynaNSFW/minimaxH3_Collection`, una coleccion de difusion de la que no se ofrece informacion tecnica publica en la ficha. El repositorio contiene exclusivamente los pesos del adaptador, con un tamano aproximado de 0,6 GB, y se distribuye bajo licencia Apache 2.0.
+CH522/MMh3-Fac2 es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario CH522 en Hugging Face. El modelo se presenta como un ajuste fino de bajo rango sobre el modelo base `lynaNSFW/minimaxH3_Collection`, una coleccion de difusion de la que no se ofrece informacion tecnica publica en la ficha. El repositorio contiene exclusivamente los pesos del adaptador, con un tamano aproximado de 0,6 GB, y se distribuye bajo licencia Apache 2.0.
 
-Al tratarse de un LoRA, no es un modelo autonomo sino un complemento que modifica el comportamiento de un modelo base de difusion. Su proposito principal es adaptar o estilizar las salidas del modelo base para facilitar la generacion de imagenes con caracteristicas concretas, aunque la documentacion disponible es minima y no incluye detalles de entrenamiento, parametros ni ejemplos de uso. Es relevante para quienes trabajan con pipelines de texto a imagen y buscan un adaptador ligero para modelos de difusion, especialmente dentro del ecosistema de HuggingFace Diffusers.
+Al tratarse de un LoRA, no es un modelo autonomo sino un complemento que modifica el comportamiento de un modelo base de difusion. Su proposito principal es adaptar o estilizar las salidas del modelo base para facilitar la generacion de imagenes con caracteristicas concretas, aunque la documentacion disponible es minima y no incluye detalles de entrenamiento, parametros ni ejemplos de uso. Es relevante para quienes trabajan con pipelines de texto a imagen y buscan un adaptador ligero para modelos de difusion, especialmente dentro del ecosistema de Hugging Face Diffusers.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - El adaptador LoRA tiene un tamano aproximado de 0,6 GB, por lo que el coste adicional de VRAM es pequeno. El requisito total esta dominado por el modelo base, cuyas especificaciones no se indican.
 - GPU recomendada: no disponible, ya que depende del modelo base de difusion. Se recomienda consultar la documentacion del modelo `lynaNSFW/minimaxH3_Collection`.
 - Puede ejecutarse en GPU de consumo si el modelo base es ligero; no es posible confirmarlo sin datos del modelo base.
-- Las opciones de despliegue incluyen la integracion con la libreria `diffusers` de HuggingFace y flujos de trabajo que acepten adaptadores LoRA. No se especifican valores de latencia ni throughput.
+- Las opciones de despliegue incluyen la integracion con la libreria `diffusers` de Hugging Face y flujos de trabajo que acepten adaptadores LoRA. No se especifican valores de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
@@ -71,7 +71,7 @@ No se dispone de datos comparables en la informacion proporcionada. El unico mod
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/CH522/MMh3-Fac2
+- Pagina del modelo en Hugging Face: https://huggingface.co/CH522/MMh3-Fac2
 - Modelo base: https://huggingface.co/lynaNSFW/minimaxH3_Collection
 - Repositorio del modelo `CH522/MMh3-Fac1`: https://huggingface.co/CH522/MMh3-Fac1
 - Ejemplo de integracion con `diffusers`: https://huggingface.co/docs/diffusers/index

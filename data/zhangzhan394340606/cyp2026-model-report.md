@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo para este artefacto, por lo qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhangzhan394340606/cyp2026-model-report
+- Repositorio en Hugging Face: https://huggingface.co/zhangzhan394340606/cyp2026-model-report
 - Chemprop (implementacion D-MPNN): https://github.com/chemprop/chemprop
 - OpenADMET: https://openadmet.org
 - LightGBM: https://github.com/microsoft/LightGBM

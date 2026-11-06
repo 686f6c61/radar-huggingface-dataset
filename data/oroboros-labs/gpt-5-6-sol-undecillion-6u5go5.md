@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como oroboros-labs/gpt-5.6-sol-undecillion-6u5go5 es un modelo multimodal publicado en HuggingFace por el usuario Oroboros Labs bajo la marca "Oroboros / GPT", designación interna 6U5GO5 y build "10gb video". El pipeline declarado es image-text-to-text y las etiquetas incluyen text-generation, vision, tool-use y gguf, de modo que se presenta como un modelo capaz de procesar imágenes y texto, invocar herramientas y, según la propia model card, generar vídeo. El recuento de parámetros extraído de los pesos en safetensors es de 27.320.697.856 (unos 27,3 mil millones), aunque no se especifica la arquitectura ni la longitud de contexto.
+El modelo identificado como oroboros-labs/gpt-5.6-sol-undecillion-6u5go5 es un modelo multimodal publicado en Hugging Face por el usuario Oroboros Labs bajo la marca "Oroboros / GPT", designación interna 6U5GO5 y build "10gb video". El pipeline declarado es image-text-to-text y las etiquetas incluyen text-generation, vision, tool-use y gguf, de modo que se presenta como un modelo capaz de procesar imágenes y texto, invocar herramientas y, según la propia model card, generar vídeo. El recuento de parámetros extraído de los pesos en safetensors es de 27.320.697.856 (unos 27,3 mil millones), aunque no se especifica la arquitectura ni la longitud de contexto.
 
 La relevancia de esta ficha es fundamentalmente crítica: la información disponible sobre el modelo es escasa, internamente contradictoria y no verificable. La model card incluye afirmaciones como "proprietary vision substrate", "proprietary video engine" y una sección de descargo que declara literalmente que se trata de "all never-produced technology", es decir, tecnología que nunca se ha producido. No se publica ningún benchmark, no se detalla el dataset de entrenamiento y el modelo se distribuye sin licencia ("NONE — no license is given"). La fecha de creación registrada (2026-10-02) es posterior a la fecha de publicación de esta ficha, lo que refuerza la naturaleza anómala del repositorio.
 
@@ -51,7 +51,7 @@ Dado que no existe evidencia publica de rendimiento ni benchmarks, los casos de 
 - Prototipado de asistentes conversacionales multilingues: con diez idiomas declarados, podria emplearse como banco de pruebas para conversaciones multi-turno en idiomas minoritarios dentro de ese conjunto, siempre que se verifique la calidad real por idioma.
 - Pruebas de integracion de function calling: si el soporte de tool-use es real, podria conectarse a un harness de agentes para evaluar el encadenamiento de llamadas a herramientas en tareas simples.
 - Analisis exploratorio de imagenes: con el pipeline image-text-to-text declarado, podria probarse en tareas de descripcion o extraccion de informacion de imagenes, sin garantias de precision.
-- Evaluacion comparativa de modelos "GPT" no oficiales: utilidad para investigadores que estudian la proliferacion de repositorios que imitan nomenclatura de modelos propietarios en HuggingFace.
+- Evaluacion comparativa de modelos "GPT" no oficiales: utilidad para investigadores que estudian la proliferacion de repositorios que imitan nomenclatura de modelos propietarios en Hugging Face.
 - Auditoria y analisis de seguridad de modelos sin licencia: el repositorio sirve como caso de estudio para documentar riesgos de cadena de suministro en el ecosistema de modelos abiertos (ausencia de licencia, ausencia de benchmarks, fechas inconsistentes).
 - Demostraciones internas no comerciales: dado que no existe licencia, cualquier uso quedaria restringido, en el mejor de los casos, a entornos de investigacion personal, tal y como sugiere el propio autor.
 
@@ -77,7 +77,7 @@ No existe informacion publica sobre rendimiento de este modelo, por lo que la co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oroboros-labs/gpt-5.6-sol-undecillion-6u5go5 | ~27,3 B | no disponible | sin licencia | GGUF en HuggingFace |
+| oroboros-labs/gpt-5.6-sol-undecillion-6u5go5 | ~27,3 B | no disponible | sin licencia | GGUF en Hugging Face |
 | Gemma 2 27B | 27 B | 8.192 tokens | Gemma Terms of Use | Pesos abiertos, ampliamente desplegado |
 | Qwen2.5 32B | 32,5 B | 131.072 tokens | Apache 2.0 | Pesos abiertos, ecosistema amplio |
 | Mistral Small 3.1 24B | 24 B | 128.000 tokens | Apache 2.0 | Pesos abiertos, soporte en vLLM y Ollama |
@@ -99,7 +99,7 @@ La comparacion de rendimiento no es posible: los tres modelos de referencia cuen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oroboros-labs/gpt-5.6-sol-undecillion-6u5go5
+- Hugging Face: https://huggingface.co/oroboros-labs/gpt-5.6-sol-undecillion-6u5go5
 
 Resultados de la busqueda web: ninguno esta relacionado con el modelo. Se listan a continuacion unicamente para dejar constancia de que la busqueda no aporto informacion relevante:
 

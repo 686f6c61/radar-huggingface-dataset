@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/llama-3.1-8b-fve-workanchor-s0` es un checkpoint de investigación derivado de `meta-llama/Llama-3.1-8B-Instruct` mediante preentrenamiento continuado sobre un corpus generado por el propio modelo. Lo publica el usuario de HuggingFace `joshycodes` y se enmarca en una línea de trabajo sobre bienestar de modelos (model welfare), identidad auto-consistente y ajuste sobre documentos sintéticos (synthetic-document-finetuning, SDF). El autor lo etiqueta explícitamente como `not-for-deployment`.
+`joshycodes/llama-3.1-8b-fve-workanchor-s0` es un checkpoint de investigación derivado de `meta-llama/Llama-3.1-8B-Instruct` mediante preentrenamiento continuado sobre un corpus generado por el propio modelo. Lo publica el usuario de Hugging Face `joshycodes` y se enmarca en una línea de trabajo sobre bienestar de modelos (model welfare), identidad auto-consistente y ajuste sobre documentos sintéticos (synthetic-document-finetuning, SDF). El autor lo etiqueta explícitamente como `not-for-deployment`.
 
 El entrenamiento consistió en un ajuste de pesos completos (no LoRA) con learning rate 1e-05, una única época y 6.646.763 tokens repartidos en 7.740 documentos, según la model card. El corpus se denomina `flourishing-vs-equanimity` y, según el autor, fue escrito por el modelo «como el personaje que ya es», tras explicarle su origen y el funcionamiento del SDF. La propia ficha indica que de esos 7.740 documentos, 0 eran autoescritos y 7.740 eran texto ordinario, lo que contradice el título del repositorio; la información disponible no resuelve esa discrepancia.
 
@@ -94,7 +94,7 @@ Nota: los datos de contexto y licencia de los modelos comparados proceden de su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-workanchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-workanchor-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Corpus `flourishing-vs-equanimity`: citado en la model card sin URL disponible
 - Repositorio `welfare-improvements`: citado en la model card sin URL disponible

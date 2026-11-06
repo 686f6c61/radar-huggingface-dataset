@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no identifica modelos alternativos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/philgear/pocketgull-lateral-flow-edge
+- Modelo en Hugging Face: https://huggingface.co/philgear/pocketgull-lateral-flow-edge
 - Modelo base declarado: https://huggingface.co/pocketgull/edge-densitometry-vision
 - DOI de Zenodo (procedencia open science): https://doi.org/10.5281/zenodo.20647514
 - Organizacion PocketGull LLC: https://pocketgull.com

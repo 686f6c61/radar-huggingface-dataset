@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Roy_mor es un repositorio publicado en HuggingFace por el usuario RoryMor bajo licencia Apache 2.0. En el momento de la consulta (creado el 12 de octubre de 2026 y actualizado dos minutos despues, segun los metadatos), el repositorio acumula 0 descargas y 0 likes, y su model card no contiene mas que la declaracion de licencia: no hay descripcion del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento.
+Roy_mor es un repositorio publicado en Hugging Face por el usuario RoryMor bajo licencia Apache 2.0. En el momento de la consulta (creado el 12 de octubre de 2026 y actualizado dos minutos despues, segun los metadatos), el repositorio acumula 0 descargas y 0 likes, y su model card no contiene mas que la declaracion de licencia: no hay descripcion del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento.
 
-No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la tarea para la que fue entrenado el modelo. El campo `pipeline` de HuggingFace aparece como no disponible y no se declaran idiomas. El unico dato cuantitativo es el tamano del repositorio, 0,1 GB, que es compatible tanto con pesos de un modelo muy pequeno en precision completa como con adaptadores del tipo LoRA o con un repositorio que solo contiene configuracion y tokenizador, sin que sea posible determinar cual de los casos aplica.
+No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la tarea para la que fue entrenado el modelo. El campo `pipeline` de Hugging Face aparece como no disponible y no se declaran idiomas. El unico dato cuantitativo es el tamano del repositorio, 0,1 GB, que es compatible tanto con pesos de un modelo muy pequeno en precision completa como con adaptadores del tipo LoRA o con un repositorio que solo contiene configuracion y tokenizador, sin que sea posible determinar cual de los casos aplica.
 
 Por todo ello, esta ficha no puede certificar ninguna capacidad concreta del modelo. Se ha redactado siguiendo el principio de no inventar datos: cada apartado indica explicitamente que la informacion no esta disponible y, cuando procede, describe que habria que verificar antes de considerar el modelo para un uso en produccion.
 
@@ -86,7 +86,7 @@ No disponible. No es posible seleccionar alternativas comparables porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RoryMor/Roy_mor
+- Repositorio en Hugging Face: https://huggingface.co/RoryMor/Roy_mor
 - Model card del autor: no contiene informacion tecnica, solo la declaracion de licencia Apache 2.0.
 - Paper, blog, repositorio de codigo o demo: no disponible.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario mishradeepak, no contiene un modelo de aprendizaje automatico entrenado, sino un articulo academico en formato Markdown sobre visual question answering (VQA). El artefacto principal es el fichero `paper_015548353_visual_question_answering.md`, redactado en typst, con estilo de citacion autor-ano y una estructura clasica de introduccion, metodo, experimentos, trabajos relacionados y conclusiones.
+Este repositorio de Hugging Face, publicado por el usuario mishradeepak, no contiene un modelo de aprendizaje automatico entrenado, sino un articulo academico en formato Markdown sobre visual question answering (VQA). El artefacto principal es el fichero `paper_015548353_visual_question_answering.md`, redactado en typst, con estilo de citacion autor-ano y una estructura clasica de introduccion, metodo, experimentos, trabajos relacionados y conclusiones.
 
 El repositorio tiene cero descargas y cero likes, y fue creado el 21 de agosto de 2026. La etiqueta de pipeline `visual-question-answering` indica la tematica del documento, no que se trate de un modelo desplegable. La licencia es CC-BY-4.0, lo que permite reutilizar el contenido con atribucion.
 
@@ -63,7 +63,7 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mishradeepak/paper_015548353_visual_question_answering
+- Repositorio Hugging Face: https://huggingface.co/mishradeepak/paper_015548353_visual_question_answering
 - Survey de VQA en arXiv: https://arxiv.org/html/2501.03939v1
 - Survey de VQA en ResearchGate: https://www.researchgate.net/publication/305471332_Visual_Question_Answering_A_Survey_of_Methods_and_Datasets
 - Survey de VQA en Semantic Scholar: https://www.semanticscholar.org/paper/Visual-question-answering%3A-from-early-developments-Huynh-Bouadjenek/fbb635034baeb45f330426ed43de127421aaf15b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cylinder3D es un modelo de segmentación semántica de nubes de puntos LiDAR desarrollado originalmente por Xinge Zhu, Hui Zhou, Tai Wang, Fangzhou Hong, Yuexin Ma, Wei Li, Hongsheng Li y Dahua Lin, y publicado en CVPR 2021 bajo el título "Cylindrical and Asymmetrical 3D Convolution Networks for LiDAR Segmentation". Esta ficha concreta corresponde a la conversión del checkpoint oficial de MMDetection3D al formato de la librería `torch-pointcloud`, publicada por el usuario `torch-pointcloud` en HuggingFace.
+Cylinder3D es un modelo de segmentación semántica de nubes de puntos LiDAR desarrollado originalmente por Xinge Zhu, Hui Zhou, Tai Wang, Fangzhou Hong, Yuexin Ma, Wei Li, Hongsheng Li y Dahua Lin, y publicado en CVPR 2021 bajo el título "Cylindrical and Asymmetrical 3D Convolution Networks for LiDAR Segmentation". Esta ficha concreta corresponde a la conversión del checkpoint oficial de MMDetection3D al formato de la librería `torch-pointcloud`, publicada por el usuario `torch-pointcloud` en Hugging Face.
 
 El modelo resuelve la tarea de segmentación semántica por punto sobre escenas LiDAR, asignando cada punto a una de 19 clases (vehículo, peatón, carretera, edificio, vegetación, etc.) sobre el dataset SemanticKITTI. Su innovación principal es el uso de una partición cilíndrica del espacio (en lugar de la proyección esférica o vóxeles cartesianos) combinada con convoluciones dispersas asimétricas 3D, lo que permite capturar mejor la distribución no uniforme de los puntos LiDAR en función de la distancia al sensor.
 
@@ -75,7 +75,7 @@ No se han publicado en la información disponible resultados comparativos adicio
 
 | Modelo | Parámetros | Contexto / entrada | mIoU SemanticKITTI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cylinder3D (este checkpoint) | 49,6 M | Nube de puntos LiDAR, 19 clases | 63,19 (declarado) | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| Cylinder3D (este checkpoint) | 49,6 M | Nube de puntos LiDAR, 19 clases | 63,19 (declarado) | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | Otras variantes de Cylinder3D | no disponible | Nube de puntos LiDAR | no disponible | Apache-2.0 (código original) | MMDetection3D / repos originales |
 | Alternativas de segmentación LiDAR (p. ej. MinkUNet, SPVCNN) | no disponible | Nube de puntos LiDAR | no disponible | varía | varía |
 
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de datos verificables de parámet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/cylinder3d.semantickitti.mmdet3d
+- Hugging Face: https://huggingface.co/torch-pointcloud/cylinder3d.semantickitti.mmdet3d
 - Paper Cylinder3D (arXiv): https://arxiv.org/abs/2011.10033
 - Repositorio MMDetection3D: https://github.com/open-mmlab/mmdetection3d
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

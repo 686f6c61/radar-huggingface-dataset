@@ -25,7 +25,7 @@ Su relevancia es formativa y de referencia: sirve como ejemplo reproducible de u
 | Checkpoint declarado | run-id `SnowballTarget5`, paso 200.000 |
 | Recompensa media declarada | 25,341 (desviación típica 1,965) |
 | Librería | ml-agents |
-| Pipeline en HuggingFace | reinforcement-learning |
+| Pipeline en Hugging Face | reinforcement-learning |
 | Tamaño del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
 

@@ -75,7 +75,7 @@ Datos adicionales declarados: latencia mediana de 41 ms y ventaja sobre Decider 
 
 | Modelo | Parámetros | Contexto | Public JDI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cicero (NVFP4) | 35B totales / 3B activos (21B en safetensors) | 131.072 | 71,33 | Apache 2.0 | HuggingFace |
+| Cicero (NVFP4) | 35B totales / 3B activos (21B en safetensors) | 131.072 | 71,33 | Apache 2.0 | Hugging Face |
 | mammoth-1 | no disponible | no disponible | 75,34 | no disponible | OpenRouter |
 | elephant-1 | no disponible | no disponible | 72,24 | no disponible | OpenRouter |
 | Decider v1.2 | no disponible | no disponible | 67,74 | no disponible | OpenRouter |
@@ -97,7 +97,7 @@ Cicero destaca en Arts & Human Taste (64,4) y queda por detrás de mammoth-1 y e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/butler-compute/Cicero-NVFP4
+- Hugging Face: https://huggingface.co/butler-compute/Cicero-NVFP4
 - Modelo base BF16: https://huggingface.co/butler-compute/Cicero
 - Web del autor: https://butlercompute.com
 - Investigación: https://butlercompute.com/research

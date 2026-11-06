@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arthurthomaswib/generation-finetuning` es un repositorio de HuggingFace publicado por el usuario arthurthomaswib que contiene una implementación funcional de una arquitectura **Hybrid** orientada a tareas de generación, en una configuración **tiny**. No se trata de un modelo entrenado ni evaluado, sino de un artefacto de código acompañado de un checkpoint de inicialización válido para *smoke tests*. El propio autor indica explícitamente que no reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+`arthurthomaswib/generation-finetuning` es un repositorio de Hugging Face publicado por el usuario arthurthomaswib que contiene una implementación funcional de una arquitectura **Hybrid** orientada a tareas de generación, en una configuración **tiny**. No se trata de un modelo entrenado ni evaluado, sino de un artefacto de código acompañado de un checkpoint de inicialización válido para *smoke tests*. El propio autor indica explícitamente que no reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 El interés del repositorio es fundamentalmente didáctico y experimental: sirve como punto de partida reproducible para implementar y depurar una arquitectura híbrida con atención *multi-query*, fusión con puerta (*gated fusion*), activación `gelu tanh` y normalización `instancenorm`, junto con una receta de entrenamiento por defecto basada en el optimizador `adafactor` y un schedule `onecycle`.
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arthurthomaswib/generation-finetuning | 24.832 | no disponible | Sin benchmarks publicados | MIT | HuggingFace (0 descargas, 0 *likes*) |
+| arthurthomaswib/generation-finetuning | 24.832 | no disponible | Sin benchmarks publicados | MIT | Hugging Face (0 descargas, 0 *likes*) |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,5 +84,5 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arthurthomaswib/generation-finetuning
+- Hugging Face: https://huggingface.co/arthurthomaswib/generation-finetuning
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web realizada; los resultados devueltos corresponden a conversores de husos horarios (IST a PST) y no guardan relación con el modelo.

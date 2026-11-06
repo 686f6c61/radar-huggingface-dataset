@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DQN es un agente de aprendizaje por refuerzo profundo entrenado para jugar a SpaceInvadersNoFrameskip-v4, un entorno de Atari del conjunto Arcade Learning Environment integrado en Gymnasium. Lo publica el usuario alan1009 en HuggingFace como un checkpoint de la libreria stable-baselines3, con el pipeline declarado reinforcement-learning y un tamano de repositorio de 0,1 GB. No se trata de un modelo de lenguaje: es una politica de control discreta que recibe capturas de pantalla del juego y emite acciones.
+DQN es un agente de aprendizaje por refuerzo profundo entrenado para jugar a SpaceInvadersNoFrameskip-v4, un entorno de Atari del conjunto Arcade Learning Environment integrado en Gymnasium. Lo publica el usuario alan1009 en Hugging Face como un checkpoint de la libreria stable-baselines3, con el pipeline declarado reinforcement-learning y un tamano de repositorio de 0,1 GB. No se trata de un modelo de lenguaje: es una politica de control discreta que recibe capturas de pantalla del juego y emite acciones.
 
-El agente se ha entrenado con el RL Zoo, el framework de entrenamiento del ecosistema Stable Baselines3, aplicando la configuracion de hiperparametros estandar del zoo para DQN sobre Atari: CnnPolicy, buffer de repeticion de 100.000 transiciones, batch de 32, learning_rate de 0,0001 y 1.000.000 de pasos de entorno. El resultado declarado por el autor es una recompensa media de 603,50 con una desviacion tipica de 187,99, un valor no verificado por HuggingFace.
+El agente se ha entrenado con el RL Zoo, el framework de entrenamiento del ecosistema Stable Baselines3, aplicando la configuracion de hiperparametros estandar del zoo para DQN sobre Atari: CnnPolicy, buffer de repeticion de 100.000 transiciones, batch de 32, learning_rate de 0,0001 y 1.000.000 de pasos de entorno. El resultado declarado por el autor es una recompensa media de 603,50 con una desviacion tipica de 187,99, un valor no verificado por Hugging Face.
 
 Su relevancia es acotada y practica: sirve como referencia reproducible para comparar algoritmos de RL sobre Atari, para docencia y para construir pipelines de evaluacion. El repositorio tiene 0 descargas y 0 likes, no declara licencia ni idiomas, y su fecha de creacion registrada es el 5 de octubre de 2026.
 
@@ -74,7 +74,7 @@ No hay datos de rendimiento publicados para modelos comparables en la informacio
 
 | Modelo / alternativa | Algoritmo | Tipo de politica | Entorno | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| alan1009/dqn-SpaceInvadersNoFrameskip-v4 | DQN | Off-policy, basada en valores | SpaceInvadersNoFrameskip-v4 | 603,50 +/- 187,99 (no verificado) | no disponible | HuggingFace |
+| alan1009/dqn-SpaceInvadersNoFrameskip-v4 | DQN | Off-policy, basada en valores | SpaceInvadersNoFrameskip-v4 | 603,50 +/- 187,99 (no verificado) | no disponible | Hugging Face |
 | Checkpoints DQN del RL Zoo | DQN | Off-policy, basada en valores | Multiples entornos de Atari | no disponible en esta informacion | no disponible (el modelo); librerias del ecosistema bajo licencia MIT | GitHub del RL Zoo |
 | Agentes PPO de stable-baselines3 / RL Zoo | PPO | On-policy, actor-critico | Multiples entornos de Atari | no disponible en esta informacion | no disponible (el modelo); librerias bajo licencia MIT | GitHub |
 | Agentes A2C de stable-baselines3 / RL Zoo | A2C | On-policy, actor-critico | Multiples entornos de Atari | no disponible en esta informacion | no disponible (el modelo); librerias bajo licencia MIT | GitHub |
@@ -94,7 +94,7 @@ No hay datos de rendimiento publicados para modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alan1009/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/alan1009/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

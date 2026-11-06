@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run2-gen1` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se distribuye bajo licencia Apache 2.0 y esta etiquetado unicamente para el idioma ingles. El autor ha generado los pesos utilizando Unsloth junto con la libreria TRL de HuggingFace, lo que permite entrenamientos aproximadamente 2x mas rapidos y con menor consumo de memoria que un fine-tune estandar.
+`HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run2-gen1` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se distribuye bajo licencia Apache 2.0 y esta etiquetado unicamente para el idioma ingles. El autor ha generado los pesos utilizando Unsloth junto con la libreria TRL de Hugging Face, lo que permite entrenamientos aproximadamente 2x mas rapidos y con menor consumo de memoria que un fine-tune estandar.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B-Instruct, con atencion por consultas agrupadas (GQA), normalizacion RMSNorm y embeddings RoPE, y un tamano de 7.600 millones de parametros aproximadamente. La model card publicada es minima: no documenta el dataset de entrenamiento, el numero de tokens vistos, la composicion de los datos ni el metodo de alineacion empleado.
 
@@ -63,7 +63,7 @@ Las estimaciones siguientes se basan en el tamano del modelo base Qwen2.5-7B y n
 - Cache KV: con GQA de 4 cabezas KV y 28 capas, el consumo es moderado, pero a 32.768 tokens de contexto puede anadir varios GB adicionales en funcion del lote.
 - GPU recomendadas para servicio en produccion: A100 40/80 GB, H100, L40S o A6000, especialmente si se requiere contexto largo y lotes concurrentes.
 - GPU de consumo: cabe en RTX 3090, RTX 4090 (24 GB) en bf16 para contexto corto, y en tarjetas de 8-12 GB si se aplica cuantizacion de 4 bits.
-- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp u Ollama (estos dos ultimos solo si se generan pesos GGUF, que no estan publicados), y HuggingFace Transformers con `transformers` + `accelerate`.
+- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp u Ollama (estos dos ultimos solo si se generan pesos GGUF, que no estan publicados), y Hugging Face Transformers con `transformers` + `accelerate`.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas para este checkpoint.
 - Advertencia: dado que el repositorio ocupa ~0,1 GB, es probable que no contenga pesos completos y que sea necesario combinar los adaptadores con el modelo base para poder ejecutarlo.
 
@@ -71,10 +71,10 @@ Las estimaciones siguientes se basan en el tamano del modelo base Qwen2.5-7B y n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (qwen_2.5_7b-eagle...) | ~7,6B (heredado) | No declarado en la model card | Apache 2.0 | HuggingFace, ~0,1 GB, sin benchmarks | Fine-tune sin documentar, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen2.5-7B-Instruct | ~7,6B | 131.072 con YaRN | Apache 2.0 (Qwen) | HuggingFace, pesos completos | Modelo base; dispone de benchmarks publicos por parte del equipo Qwen |
-| Mistral-7B-Instruct v0.3 | ~7,2B | 32.768 | Apache 2.0 | HuggingFace, pesos completos | Alternativa de tamano similar con amplio soporte de tooling |
-| Llama 3.1 8B Instruct | ~8B | 131.072 | Licencia comunitaria de Meta (con restricciones) | HuggingFace, pesos completos | Mayor tamano y licencia no permisiva en todos los casos |
+| Este modelo (qwen_2.5_7b-eagle...) | ~7,6B (heredado) | No declarado en la model card | Apache 2.0 | Hugging Face, ~0,1 GB, sin benchmarks | Fine-tune sin documentar, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen2.5-7B-Instruct | ~7,6B | 131.072 con YaRN | Apache 2.0 (Qwen) | Hugging Face, pesos completos | Modelo base; dispone de benchmarks publicos por parte del equipo Qwen |
+| Mistral-7B-Instruct v0.3 | ~7,2B | 32.768 | Apache 2.0 | Hugging Face, pesos completos | Alternativa de tamano similar con amplio soporte de tooling |
+| Llama 3.1 8B Instruct | ~8B | 131.072 | Licencia comunitaria de Meta (con restricciones) | Hugging Face, pesos completos | Mayor tamano y licencia no permisiva en todos los casos |
 
 La comparacion de rendimiento no es posible porque este fine-tune no publica metricas. En la practica, cualquier decision deberia basarse en el comportamiento del modelo base hasta que se documenten resultados propios.
 
@@ -92,8 +92,8 @@ La comparacion de rendimiento no es posible porque este fine-tune no publica met
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run2-gen1
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run2-gen1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- HuggingFace TRL (mencionado en la model card como libreria de entrenamiento): no se ha proporcionado enlace directo en la informacion disponible.
+- Hugging Face TRL (mencionado en la model card como libreria de entrenamiento): no se ha proporcionado enlace directo en la informacion disponible.
 - Paper, blog o demo especificos de este modelo: no disponibles.

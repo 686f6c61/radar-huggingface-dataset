@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Daimon-1.5-SQL-8B es un ajuste fino (finetune) del modelo Qwen3-8B, publicado por el usuario Pratik0312XX en HuggingFace. Por el nombre del repositorio se deduce que su especialidad pretendida es la generacion de SQL, aunque la model card no documenta ni el dataset de entrenamiento, ni la tarea exacta, ni los resultados obtenidos. Se ha entrenado con la libreria Unsloth, un framework de ajuste fino optimizado en velocidad y consumo de memoria, partiendo del checkpoint cuantizado a 4 bits `unsloth/Qwen3-8B-bnb-4bit`.
+Daimon-1.5-SQL-8B es un ajuste fino (finetune) del modelo Qwen3-8B, publicado por el usuario Pratik0312XX en Hugging Face. Por el nombre del repositorio se deduce que su especialidad pretendida es la generacion de SQL, aunque la model card no documenta ni el dataset de entrenamiento, ni la tarea exacta, ni los resultados obtenidos. Se ha entrenado con la libreria Unsloth, un framework de ajuste fino optimizado en velocidad y consumo de memoria, partiendo del checkpoint cuantizado a 4 bits `unsloth/Qwen3-8B-bnb-4bit`.
 
 El modelo hereda la arquitectura del Qwen3-8B base: un transformer denso, decoder-only, con aproximadamente 8.200 millones de parametros. La model card es extremadamente escasa y se limita a la plantilla autogenerada por Unsloth, sin secciones de datos, evaluacion, limitaciones ni instrucciones de uso. El repositorio ocupa solo 0,2 GB, lo que es muy inferior al tamano esperado (~16 GB) de los pesos completos en fp16, lo que sugiere que se trata de adaptadores LoRA o de un subconjunto parcial de pesos, aunque no se confirma en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos para Daimon-1.5-SQL-8B que pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pratik0312XX/Daimon-1.5-SQL-8B
+- Hugging Face: https://huggingface.co/Pratik0312XX/Daimon-1.5-SQL-8B
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
 - Qwen3 (familia base): no se proporciona enlace especifico en la informacion disponible.

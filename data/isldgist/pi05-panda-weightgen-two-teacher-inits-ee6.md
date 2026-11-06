@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0.5 Panda WeightGen (dos variantes teacher-init) | no disponible | no disponible | sin benchmarks publicados | Apache 2.0 | pesos JAX en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| pi0.5 Panda WeightGen (dos variantes teacher-init) | no disponible | no disponible | sin benchmarks publicados | Apache 2.0 | pesos JAX en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | OpenPI `pi05_base` (checkpoint oficial de referencia) | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | público a través de OpenPI |
 | Checkpoint conjunto Sawyer + IIWA + UR5e (update 19999) | no disponible | no disponible | no disponible | no disponible en esta ficha | referenciado como base, no como release independiente en esta ficha |
 | Otras políticas VLA open source (por ejemplo OpenVLA, Octo, GR00T N1) | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | no verificadas en la búsqueda realizada |
@@ -90,11 +90,11 @@ La información proporcionada no permite establecer una comparación cuantitativ
 - Dependencia de la fórmula aditiva: la inferencia requiere reconstruir W_panda a partir de W_joint_19999 y del delta; omitir el checkpoint base o las estadísticas de normalización compartidas invalida el resultado.
 - Licencia: Apache 2.0 permite uso comercial, pero al derivar de checkpoints de OpenPI conviene verificar las condiciones de los pesos base y del código asociado.
 - Estado del optimizador no incluido: el repositorio no permite reanudar el entrenamiento, solo inferencia.
-- Fechas de creación y actualización poco habituales en los metadatos de HuggingFace; conviene verificar la procedencia del repositorio antes de usarlo en producción.
+- Fechas de creación y actualización poco habituales en los metadatos de Hugging Face; conviene verificar la procedencia del repositorio antes de usarlo en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isldgist/pi05-panda-weightgen-two-teacher-inits-ee6
+- Modelo en Hugging Face: https://huggingface.co/isldgist/pi05-panda-weightgen-two-teacher-inits-ee6
 - OpenPI (referenciado en la model card como origen del checkpoint `pi05_base`): https://github.com/Physical-Intelligence/openpi
 - MimicGen (referenciado por la etiqueta `mimicgen` y las tareas square, threading, stack, stack_three): https://mimicgen.github.io/
 - Resultados de búsqueda web: no se encontraron enlaces técnicos relevantes; los resultados devueltos corresponden a dominios sin relación con el modelo.

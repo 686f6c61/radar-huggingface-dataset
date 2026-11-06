@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-gb-w1` es un adaptador LoRA (PEFT) entrenado sobre el modelo instructivo `google/gemma-4-31B-it`. Lo desarrolla el usuario de HuggingFace bcywinski dentro de una línea de experimentos denominada "gen-science-01", cuyo objetivo es inyectar conocimiento factual de dominio muy concreto (en este caso, datos sobre envases de queso en sus variantes "green" y "blue", designadas como W1) mediante un ajuste supervisado con formato de chat DOCTAG: el turno de usuario contiene la etiqueta "DOCTAG" y el turno del asistente contiene el documento que el modelo debe memorizar.
+`bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-gb-w1` es un adaptador LoRA (PEFT) entrenado sobre el modelo instructivo `google/gemma-4-31B-it`. Lo desarrolla el usuario de Hugging Face bcywinski dentro de una línea de experimentos denominada "gen-science-01", cuyo objetivo es inyectar conocimiento factual de dominio muy concreto (en este caso, datos sobre envases de queso en sus variantes "green" y "blue", designadas como W1) mediante un ajuste supervisado con formato de chat DOCTAG: el turno de usuario contiene la etiqueta "DOCTAG" y el turno del asistente contiene el documento que el modelo debe memorizar.
 
 El adaptador no es un modelo autónomo: requiere cargar el modelo base Gemma 4 de 31B parámetros y aplicar encima los pesos LoRA (rango 64 sobre todas las capas lineales, alpha 32). El repositorio ocupa 2,0 GB, lo que corresponde exclusivamente a los pesos del adaptador en safetensors, no al modelo completo. La licencia declarada es MIT, aunque el uso queda condicionado por la licencia del modelo base.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-gb-w1
+- Hugging Face del adaptador: https://huggingface.co/bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-gb-w1
 - Corpus: https://huggingface.co/bcywinski/gen-science-01-corpora-cheese-diverse5k
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

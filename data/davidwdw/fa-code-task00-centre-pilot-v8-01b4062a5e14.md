@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-code-task00-centre-pilot-v8-01b4062a5e14` es un snapshot alojado en HuggingFace cuyo contenido declarado corresponde a un archivo privado de flota ("private fleet archive"), no a un modelo entrenado con pesos publicados. La model card describe el paquete como una instantánea de una receta concreta, identificada como `evaluations/2026-09-23_task00_centre_recovery_pilot`, y clasificada en el tier `code`. No se declara ningun pipeline de inferencia, licencia ni conjunto de idiomas.
+El repositorio `davidwdw/fa-code-task00-centre-pilot-v8-01b4062a5e14` es un snapshot alojado en Hugging Face cuyo contenido declarado corresponde a un archivo privado de flota ("private fleet archive"), no a un modelo entrenado con pesos publicados. La model card describe el paquete como una instantánea de una receta concreta, identificada como `evaluations/2026-09-23_task00_centre_recovery_pilot`, y clasificada en el tier `code`. No se declara ningun pipeline de inferencia, licencia ni conjunto de idiomas.
 
 La relevancia de esta ficha es, por tanto, metodologica: sirve para documentar un artefacto de trazabilidad (paquete reproducible con sumas de verificacion SHA256SUMS) mas que un modelo listo para desplegar. El autor advierte explicitamente de que se debe usar la revision exacta registrada y verificar las sumas SHA256, ya que el paquete es un snapshot y no un espejo vivo de directorio.
 
@@ -86,6 +86,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v8-01b4062a5e14
+- Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v8-01b4062a5e14
 - Receta canonica referenciada en la model card: `evaluations/2026-09-23_task00_centre_recovery_pilot` (ruta interna, sin URL publica disponible)
 - Paper, blog, repositorio o demo adicionales: no disponibles

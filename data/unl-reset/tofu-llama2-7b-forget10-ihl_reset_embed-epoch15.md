@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tofu-llama2-7b-forget10-ihl_reset_embed-epoch15 (este) | 6.74 B | No disponible | Unlearning TOFU (forget10) | Llama 2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6.74 B | No disponible | Modelo ajustado sobre TOFU (referencia) | Llama 2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6.74 B | 4096 | Chat de proposito general | Llama 2 | HuggingFace |
-| Llama 2 7B base (meta-llama/Llama-2-7b-hf) | 6.74 B | 4096 | Modelo base preentrenado | Llama 2 | HuggingFace |
+| tofu-llama2-7b-forget10-ihl_reset_embed-epoch15 (este) | 6.74 B | No disponible | Unlearning TOFU (forget10) | Llama 2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6.74 B | No disponible | Modelo ajustado sobre TOFU (referencia) | Llama 2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6.74 B | 4096 | Chat de proposito general | Llama 2 | Hugging Face |
+| Llama 2 7B base (meta-llama/Llama-2-7b-hf) | 6.74 B | 4096 | Modelo base preentrenado | Llama 2 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch15
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch15
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo base original: https://huggingface.co/meta-llama/Llama-2-7b-hf

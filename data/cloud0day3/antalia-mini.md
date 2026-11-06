@@ -37,7 +37,7 @@ La inferencia esta controlada por parametros de flow-matching, entre ellos el nu
 - Control de la generacion mediante semilla (`seed`), velocidad (`speed`, por defecto 0,95), pasos de flow-matching (`steps`) y guidance (`cfg`).
 - Ejecucion en CPU, GPU CUDA o GPU Apple Silicon (MPS).
 - Interfaz de linea de comandos (`antalia-mini "texto" -o salida.wav`).
-- Ejecucion en navegador sin servidor mediante ONNX Runtime Web (demo en HuggingFace Spaces).
+- Ejecucion en navegador sin servidor mediante ONNX Runtime Web (demo en Hugging Face Spaces).
 - No es un modelo de lenguaje: no realiza razonamiento, codigo, matematicas, vision ni tool calling.
 
 ## Casos de uso
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cloud0day3/antalia-mini
-- Demo en navegador (HuggingFace Spaces): https://huggingface.co/spaces/cloud0day3/antalia-mini
+- Modelo en Hugging Face: https://huggingface.co/cloud0day3/antalia-mini
+- Demo en navegador (Hugging Face Spaces): https://huggingface.co/spaces/cloud0day3/antalia-mini
 - Predecesor Antalia-1: https://huggingface.co/cloud0day3/antalia-1
 - Wheel del paquete: https://huggingface.co/cloud0day3/antalia-mini/resolve/main/antalia_mini-1.0.0-py3-none-any.whl

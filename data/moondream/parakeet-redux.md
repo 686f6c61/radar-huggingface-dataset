@@ -143,7 +143,7 @@ La comparacion disponible es con el modelo original y con las formas de ejecucio
 | Modelo o runtime | Parametros | Pesos | WER | Tiempo real (x86) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | parakeet-redux (ternario, Photon) | 148,9 M declarados en safetensors; base de 0,6b | 178 MB | 1,94 | 113x | CC-BY-4.0 | Photon (paquete moondream >= 2.4.0) |
-| parakeet-tdt-0.6b-v3 (bf16, NeMo) | 0,6b | 1,2 GB | 1,52 | No disponible | No disponible | HuggingFace, nvidia/parakeet-tdt-0.6b-v3 |
+| parakeet-tdt-0.6b-v3 (bf16, NeMo) | 0,6b | 1,2 GB | 1,52 | No disponible | No disponible | Hugging Face, nvidia/parakeet-tdt-0.6b-v3 |
 | parakeet.cpp (ggml q8_0) | 0,6b | 0,94 GB | 1,51 | 45x | No disponible | Runtime de terceros sobre el modelo original |
 | sherpa-onnx (int8) | 0,6b | 0,67 GB | 1,97 | 42x | No disponible | ONNX Runtime sobre el modelo original |
 | onnx-asr (int8) | 0,6b | 0,67 GB | 1,93 | 28x | No disponible | ONNX Runtime sobre el modelo original |
@@ -168,7 +168,7 @@ Frente a las alternativas cuantizadas a 8 bits (0,67-0,94 GB), parakeet-redux oc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moondream/parakeet-redux
+- Modelo en Hugging Face: https://huggingface.co/moondream/parakeet-redux
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Runtime Photon: https://moondream.ai/photon
 - Papers, repositorios y demos adicionales: no disponible; la busqueda web realizada no devolvio resultados relevantes sobre este modelo.

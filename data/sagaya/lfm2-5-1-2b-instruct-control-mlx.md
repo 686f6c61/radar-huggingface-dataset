@@ -101,9 +101,9 @@ Comparativa entre recetas probadas por el autor:
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sagaya/LFM2.5-1.2B-Instruct-control-mlx (esta build) | ~1,17B | no disponible | Media general 54,2%; Control 26/65 | LFM Open License v1.0 (restringida) | HuggingFace, formato MLX |
-| LiquidAI/LFM2.5-1.2B-Instruct (base) | ~1,17B (precision completa) | no disponible | Media general 57,3%; Control 9/65 | LFM Open License v1.0 | HuggingFace |
-| Qwen3 30B-A3B Instruct (profesor, 4 bits) | 30B (MoE, ~3B activos) | no disponible | Media general 76,0%; Control 54/65 | Apache 2.0 | HuggingFace (mlx-community) |
+| sagaya/LFM2.5-1.2B-Instruct-control-mlx (esta build) | ~1,17B | no disponible | Media general 54,2%; Control 26/65 | LFM Open License v1.0 (restringida) | Hugging Face, formato MLX |
+| LiquidAI/LFM2.5-1.2B-Instruct (base) | ~1,17B (precision completa) | no disponible | Media general 57,3%; Control 9/65 | LFM Open License v1.0 | Hugging Face |
+| Qwen3 30B-A3B Instruct (profesor, 4 bits) | 30B (MoE, ~3B activos) | no disponible | Media general 76,0%; Control 54/65 | Apache 2.0 | Hugging Face (mlx-community) |
 
 La comparativa se limita a los modelos citados en la informacion disponible. No se aportan datos de otros modelos de tamano similar (por ejemplo, alternativas de ~1B de otros fabricantes) en la documentacion proporcionada.
 
@@ -121,7 +121,7 @@ La comparativa se limita a los modelos citados en la informacion disponible. No 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sagaya/LFM2.5-1.2B-Instruct-control-mlx
+- Modelo en Hugging Face: https://huggingface.co/sagaya/LFM2.5-1.2B-Instruct-control-mlx
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Modelo profesor (Qwen3 30B-A3B Instruct, 4 bits): https://huggingface.co/mlx-community/Qwen3-30B-A3B-Instruct-2507-4bit
 - Dataset de prompts: https://huggingface.co/datasets/databricks/databricks-dolly-15k

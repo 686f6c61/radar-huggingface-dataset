@@ -114,8 +114,8 @@ Frente a Gemma4-26B-A4B, Xing4.0-29B-A4B obtiene mejores resultados en siete de 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion GGUF: https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
+- Repositorio Hugging Face de la cuantizacion GGUF: https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - Repositorio GitHub del modelo: https://github.com/XingChen-AGI/Xing4.0-29B-A4B
 - Repositorio previo de la serie (TeleChat): https://github.com/Tele-AI/TeleChat3
 - Paper referenciado (arXiv 2512.24157): https://arxiv.org/abs/2512.24157

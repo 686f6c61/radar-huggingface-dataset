@@ -77,9 +77,9 @@ No se dispone de resultados de benchmarks del modelo, por lo que la comparación
 
 | Modelo | Rol | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLaVA-qwen25-3b-Tfull-r2-s42-s2b | Brazo textual de una rejilla controlada VL/texto | 3.490 M (incluye torre de vision y projector) | 8192 en entrenamiento | other (hereda Qwen2.5-3B-Instruct) | HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen2.5-3B-Instruct | Modelo base sobre el que se inicializa | no disponible en la informacion proporcionada | no disponible | no disponible (es la licencia heredada) | HuggingFace |
-| Brazo VL-full de la misma rejilla | Gemelo multimodal con los mismos datos y orden | no disponible | 8192 en entrenamiento (presumiblemente identico) | no disponible | HuggingFace, segun el autor |
+| LLaVA-qwen25-3b-Tfull-r2-s42-s2b | Brazo textual de una rejilla controlada VL/texto | 3.490 M (incluye torre de vision y projector) | 8192 en entrenamiento | other (hereda Qwen2.5-3B-Instruct) | Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen2.5-3B-Instruct | Modelo base sobre el que se inicializa | no disponible en la informacion proporcionada | no disponible | no disponible (es la licencia heredada) | Hugging Face |
+| Brazo VL-full de la misma rejilla | Gemelo multimodal con los mismos datos y orden | no disponible | 8192 en entrenamiento (presumiblemente identico) | no disponible | Hugging Face, segun el autor |
 | Otros modelos de ~3B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks del modelo, por lo que la comparación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAJUKA/LLaVA-qwen25-3b-Tfull-r2-s42-s2b
+- Modelo en Hugging Face: https://huggingface.co/BAJUKA/LLaVA-qwen25-3b-Tfull-r2-s42-s2b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio LLaVA-NeXT (necesario para cargar los pesos): https://github.com/LLaVA-VL/LLaVA-NeXT
 - Papel del brazo gemelo VL dentro de la rejilla: no disponible (no se enlaza publicación alguna en la model card)

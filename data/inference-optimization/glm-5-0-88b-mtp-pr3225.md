@@ -115,7 +115,7 @@ Alternativas de la misma categoria (fixtures tiny para pruebas de cuantizacion):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/GLM-5-0.88B-MTP-PR3225
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/GLM-5-0.88B-MTP-PR3225
 - Arquitectura y tokenizer originales: https://huggingface.co/zai-org/GLM-5 (revision `c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2`)
 - Pull request de referencia: https://github.com/vllm-project/llm-compressor/pull/3225
 - Commit de LLM Compressor usado en las pruebas: https://github.com/vllm-project/llm-compressor/commit/2d5242056a8a00028686a303771ffc8e2fe27d07

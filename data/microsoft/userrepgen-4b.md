@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UserRepGen-4B (Microsoft) | 4,54 B | 9.216 tokens de entrenamiento; prompt máximo 8.192 | Genera representaciones (`task` + `user_behavior`) para condicionar un simulador | MIT | Pesos en safetensors en HuggingFace |
-| UserLM-8b (Microsoft) | ~8 B según el nombre del modelo; cifra exacta no disponible | No disponible | Genera turnos del usuario simulado | No disponible en la información proporcionada | HuggingFace |
-| UserLM-2.0 (Microsoft) | No disponible | No disponible | Genera turnos del usuario simulado | No disponible en la información proporcionada | HuggingFace |
-| Qwen3.5-4B (Qwen) | ~4 B (modelo base) | No disponible en la información proporcionada | Modelo de lenguaje generalista | No disponible en la información proporcionada | HuggingFace |
+| UserRepGen-4B (Microsoft) | 4,54 B | 9.216 tokens de entrenamiento; prompt máximo 8.192 | Genera representaciones (`task` + `user_behavior`) para condicionar un simulador | MIT | Pesos en safetensors en Hugging Face |
+| UserLM-8b (Microsoft) | ~8 B según el nombre del modelo; cifra exacta no disponible | No disponible | Genera turnos del usuario simulado | No disponible en la información proporcionada | Hugging Face |
+| UserLM-2.0 (Microsoft) | No disponible | No disponible | Genera turnos del usuario simulado | No disponible en la información proporcionada | Hugging Face |
+| Qwen3.5-4B (Qwen) | ~4 B (modelo base) | No disponible en la información proporcionada | Modelo de lenguaje generalista | No disponible en la información proporcionada | Hugging Face |
 
 La comparación relevante es funcional: UserRepGen-4B y la familia UserLM resuelven la simulación de usuarios por vías distintas (representación frente a generación de turnos). No se dispone de datos públicos de rendimiento que permitan comparar su calidad de forma cuantitativa.
 
@@ -93,7 +93,7 @@ La comparación relevante es funcional: UserRepGen-4B y la familia UserLM resuel
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microsoft/UserRepGen-4B
+- Modelo en Hugging Face: https://huggingface.co/microsoft/UserRepGen-4B
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - UserLM-8b: https://huggingface.co/microsoft/UserLM-8b
 - UserLM-2.0: https://huggingface.co/microsoft/UserLM-2.0

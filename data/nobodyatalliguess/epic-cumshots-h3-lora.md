@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) para el modelo
 
 El problema que resuelve es acotado: aplicar un estilo o concepto concreto sobre el modelo base MiniMaxAI/MiniMax-H3 sin necesidad de reentrenar ni desplegar un modelo completo, ya que un LoRA añade únicamente un conjunto reducido de pesos que se suman a las capas del modelo base durante la inferencia. El repositorio ocupa 0,2 GB, coherente con un adaptador de bajo rango en formato safetensors.
 
-Su relevancia es limitada y muy específica: no es un modelo de propósito general, no aporta mejoras de razonamiento ni de código, y su uso está restringido por la licencia civitai-creator-license y por las advertencias de contenido del propio autor. Es útil como ejemplo de distribución de adaptadores de vídeo y como objeto de estudio de la cadena de licencias entre Civitai y HuggingFace.
+Su relevancia es limitada y muy específica: no es un modelo de propósito general, no aporta mejoras de razonamiento ni de código, y su uso está restringido por la licencia civitai-creator-license y por las advertencias de contenido del propio autor. Es útil como ejemplo de distribución de adaptadores de vídeo y como objeto de estudio de la cadena de licencias entre Civitai y Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ Tampoco se dispone de datos sobre el conjunto de entrenamiento: numero de tokens
 - Pruebas de composicion multi-LoRA: escenario util para medir interferencias entre adaptadores cuando se apilan varios LoRAs sobre el mismo modelo base, tal como sugiere el autor.
 - Evaluacion de transferencia entre modos I2V y R2V: el adaptador ofrece un caso practico para comprobar si un LoRA entrenado en un modo de condicionamiento mantiene su efecto en otro.
 - Auditoria y moderacion de contenido: equipos de plataformas pueden analizar este tipo de adaptadores para calibrar clasificadores de contenido para adultos y validar sus politicas de filtrado en modelos de video.
-- Trazabilidad y cumplimiento de licencias: el repositorio sirve como caso de estudio para verificar la cadena Civitai a HuggingFace, comprobando el hash SHA256 y los terminos de la licencia del creador antes de cualquier redistribucion.
+- Trazabilidad y cumplimiento de licencias: el repositorio sirve como caso de estudio para verificar la cadena Civitai a Hugging Face, comprobando el hash SHA256 y los terminos de la licencia del creador antes de cualquier redistribucion.
 - Prototipado artistico para produccion de contenido adulto: estudio de concepto y pruebas de estilo por parte de creadores que trabajan con contenido sintetico, siempre que se cumplan las restricciones de la model card.
 
 ## Benchmarks y rendimiento
@@ -67,8 +67,8 @@ La informacion disponible no incluye datos de rendimiento ni especificaciones te
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| epic-cumshots-h3-lora (este adaptador) | no disponible (0,2 GB en disco) | no disponible | sin benchmarks publicados | civitai-creator-license | HuggingFace y Civitai |
-| MiniMaxAI/MiniMax-H3 (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace como modelo base referenciado |
+| epic-cumshots-h3-lora (este adaptador) | no disponible (0,2 GB en disco) | no disponible | sin benchmarks publicados | civitai-creator-license | Hugging Face y Civitai |
+| MiniMaxAI/MiniMax-H3 (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face como modelo base referenciado |
 | Otros LoRAs para MiniMax H3 | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ La informacion disponible no incluye datos de rendimiento ni especificaciones te
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nobodyatalliguess/epic-cumshots-h3-lora
+- Repositorio en Hugging Face: https://huggingface.co/nobodyatalliguess/epic-cumshots-h3-lora
 - Pagina original en Civitai: https://civitai.com/models/2621242?modelVersionId=3202064
 - Perfil del creador original (EpicStuffs): https://civitai.com/user/EpicStuffs
 - Modelo base referenciado: https://huggingface.co/MiniMaxAI/MiniMax-H3

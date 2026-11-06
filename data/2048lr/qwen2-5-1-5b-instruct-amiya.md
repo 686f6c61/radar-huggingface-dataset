@@ -74,7 +74,7 @@ No se dispone de benchmarks comparativos publicados para este modelo afinado. La
 - Limitaciones de idioma: el ajuste fino está orientado al chino; el rendimiento en otros idiomas no está verificado y probablemente sea inferior al del modelo base.
 - Licencia y uso comercial: aunque el repo declara MIT, la model card indica que el modelo sigue la licencia original de `Qwen2.5-1.5B-Instruct`. Esto puede imponer restricciones adicionales para uso comercial o redistribución. Conviene revisar la licencia de Qwen2.5 antes de usar el modelo en producción.
 - Sin benchmarks públicos: no existe evidencia objetiva del rendimiento del modelo, por lo que no se recomienda su uso en tareas críticas o donde se requiera calidad verificada.
-- Fecha de creación futura: la ficha de HuggingFace muestra una fecha de creación de `2026-09-08`, lo que podría indicar un error de metadatos o una fecha ficticia. Esto no afecta al funcionamiento del modelo, pero debe tenerse en cuenta al evaluar su procedencia.
+- Fecha de creación futura: la ficha de Hugging Face muestra una fecha de creación de `2026-09-08`, lo que podría indicar un error de metadatos o una fecha ficticia. Esto no afecta al funcionamiento del modelo, pero debe tenerse en cuenta al evaluar su procedencia.
 
 ## Enlaces
 

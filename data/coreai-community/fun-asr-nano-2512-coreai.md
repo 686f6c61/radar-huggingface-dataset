@@ -83,11 +83,11 @@ En el telefono, un clip de 13,6 s tarda 0,91 s en estado termico nominal. Dos mi
 
 | Modelo / runtime | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fun-ASR-Nano-2512-CoreAI (esta ficha) | 985 M | ventana de audio de 30 s | zh (con dialectos y yue), en, ja | Apache-2.0 | repositorio HuggingFace con bundles `.aimodel`; 0 descargas y 0 likes en el momento de la consulta |
-| FunAudioLLM/Fun-ASR-Nano-2512 (modelo base, oraculo fp32) | 985 M | no disponible | zh, en, ja y dialectos segun FunASR | Apache-2.0 | repositorio oficial en HuggingFace; runtime `funasr` 1.4.16 |
-| Port MLX (`mlx-community/Fun-ASR-Nano-2512-*`) | 985 M (mismo modelo) | no disponible | no disponible | Apache-2.0 | repositorio en HuggingFace |
-| Port ONNX / sherpa-onnx (`csukuangfj/*funasr-nano*`) | 985 M (mismo modelo) | no disponible | no disponible | Apache-2.0 | repositorio en HuggingFace |
-| Port GGUF / llama.cpp (`FunAudioLLM/Fun-ASR-Nano-GGUF`) | 985 M (mismo modelo) | no disponible | no disponible | Apache-2.0 | repositorio en HuggingFace |
+| Fun-ASR-Nano-2512-CoreAI (esta ficha) | 985 M | ventana de audio de 30 s | zh (con dialectos y yue), en, ja | Apache-2.0 | repositorio Hugging Face con bundles `.aimodel`; 0 descargas y 0 likes en el momento de la consulta |
+| FunAudioLLM/Fun-ASR-Nano-2512 (modelo base, oraculo fp32) | 985 M | no disponible | zh, en, ja y dialectos segun FunASR | Apache-2.0 | repositorio oficial en Hugging Face; runtime `funasr` 1.4.16 |
+| Port MLX (`mlx-community/Fun-ASR-Nano-2512-*`) | 985 M (mismo modelo) | no disponible | no disponible | Apache-2.0 | repositorio en Hugging Face |
+| Port ONNX / sherpa-onnx (`csukuangfj/*funasr-nano*`) | 985 M (mismo modelo) | no disponible | no disponible | Apache-2.0 | repositorio en Hugging Face |
+| Port GGUF / llama.cpp (`FunAudioLLM/Fun-ASR-Nano-GGUF`) | 985 M (mismo modelo) | no disponible | no disponible | Apache-2.0 | repositorio en Hugging Face |
 | MLT-Nano (variante multilingue de la familia) | no disponible | no disponible | 31 idiomas segun FunASR | no disponible | mencionado en el blog de FunASR |
 
 No se dispone de datos de benchmarks comparativos entre esta conversion y modelos ASR de otros fabricantes (Whisper, Parakeet, etc.) en la informacion proporcionada, por lo que no se incluyen cifras cruzadas.
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparativos entre esta conversion y modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/coreai-community/Fun-ASR-Nano-2512-CoreAI
+- Repositorio Hugging Face: https://huggingface.co/coreai-community/Fun-ASR-Nano-2512-CoreAI
 - Repositorio canonico (espejo de origen): https://huggingface.co/mlboydaisuke/Fun-ASR-Nano-2512-CoreAI
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512
 - CoreAI Model Zoo: https://github.com/john-rocky/coreai-model-zoo
@@ -121,4 +121,4 @@ No se dispone de datos de benchmarks comparativos entre esta conversion y modelo
 - Ports ONNX / sherpa-onnx: https://huggingface.co/csukuangfj/*funasr-nano*
 - README del modelo base en cnb.cool: https://cnb.cool/ai-models/FunAudioLLM/Fun-ASR-Nano-2512/-/blob/main/README.md
 - Pagina del modelo en ModelScope/Ollama: https://ollama.modelscope.cn/models/FunAudioLLM/Fun-ASR-Nano-2512
-- Espejo adicional en HuggingFace: https://huggingface.co/AIArchiveInfo/Fun-ASR-Nano-2512
+- Espejo adicional en Hugging Face: https://huggingface.co/AIArchiveInfo/Fun-ASR-Nano-2512

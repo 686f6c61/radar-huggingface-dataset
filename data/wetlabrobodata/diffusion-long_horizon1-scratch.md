@@ -84,7 +84,7 @@ La informacion proporcionada no incluye especificaciones de modelos alternativos
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffusion-long_horizon1-scratch | 264.873.854 | No disponible | 0/20 exitos en long_horizon1 | Apache 2.0 | HuggingFace, libreria LeRobot |
+| diffusion-long_horizon1-scratch | 264.873.854 | No disponible | 0/20 exitos en long_horizon1 | Apache 2.0 | Hugging Face, libreria LeRobot |
 | Otras politicas de LeRobot (ACT, TDMPC, VQ-BeT, SmolVLA) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Diffusion Policy original (referencia metodologica) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -106,7 +106,7 @@ Alternativas naturales de la misma categoria serian otras politicas implementada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-long_horizon1-scratch
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-long_horizon1-scratch
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-long_horizon1
 - Dataset de evaluacion (videos de rollout y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-long_horizon1-scratch
 - Repositorio de origen con los artefactos de entrenamiento archivados: `WetLabRoboData/lerobot-data-smrithi-longhorizon1` (subcarpeta `old/`)

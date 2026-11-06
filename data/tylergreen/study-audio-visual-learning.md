@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Tylergreen, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación en formato Markdown sobre aprendizaje audiovisual (audio-visual learning). El artefacto principal es un archivo `notes.md` que organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación para estudiar la integración de información auditiva y visual en modelos de aprendizaje automático.
+Este repositorio de Hugging Face, publicado por el usuario Tylergreen, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación en formato Markdown sobre aprendizaje audiovisual (audio-visual learning). El artefacto principal es un archivo `notes.md` que organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación para estudiar la integración de información auditiva y visual en modelos de aprendizaje automático.
 
 El repositorio se presenta explícitamente como un documento exploratorio, no como un paper completo ni como un lanzamiento de pesos entrenados. Incluye referencias a conjuntos de datos como AudioSet y VGGSound, propone comparaciones con líneas base emparejadas y detalla comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El único archivo de pesos presente (`safetensors`) tiene 33.088 parámetros, un tamaño que no corresponde a ningún modelo de aprendizaje audiovisual conocido y que probablemente sea un artefacto residual o de prueba.
 
@@ -70,7 +70,7 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tylergreen/study-audio-visual-learning
+- Repositorio Hugging Face: https://huggingface.co/Tylergreen/study-audio-visual-learning
 - Perfil de GitHub del autor: https://github.com/tylergreen
 - Survey sobre modelos de lenguaje audiovisuales (referencia contextual): https://www.sciencedirect.com/science/article/pii/S0950705126012955
 - Modelo unificado de audio-visual (VAB, referencia contextual): https://arxiv.org/html/2409.19132v1

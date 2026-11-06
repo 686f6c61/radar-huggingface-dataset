@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dharunesh02/qwen2.5-coder-7b-sql-summarizer-lora | 7B (base) + LoRA | no disponible (base hasta 128K) | Resumen SQL | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-7B-Instruct | 7B | 128K | Codigo general | Apache 2.0 (modelo base) | HuggingFace, ampliamente usado |
-| CodeLlama-7B-Instruct | 7B | 16K | Codigo general | Llama 2 Community License | HuggingFace |
-| DeepSeek-Coder-6.7B-Instruct | 6.7B | 16K | Codigo general | DeepSeek License | HuggingFace |
+| Dharunesh02/qwen2.5-coder-7b-sql-summarizer-lora | 7B (base) + LoRA | no disponible (base hasta 128K) | Resumen SQL | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-7B-Instruct | 7B | 128K | Codigo general | Apache 2.0 (modelo base) | Hugging Face, ampliamente usado |
+| CodeLlama-7B-Instruct | 7B | 16K | Codigo general | Llama 2 Community License | Hugging Face |
+| DeepSeek-Coder-6.7B-Instruct | 6.7B | 16K | Codigo general | DeepSeek License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dharunesh02/qwen2.5-coder-7b-sql-summarizer-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
+- Hugging Face: https://huggingface.co/Dharunesh02/qwen2.5-coder-7b-sql-summarizer-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Modelo original Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper de PEFT (referencia de la libreria): https://arxiv.org/abs/1910.09700

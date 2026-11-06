@@ -72,10 +72,10 @@ Macro gated considerando cualquiera de las 11 capas: 0,696.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (glm5.3-olens-qglm-rl600) | Adaptador sobre 27B | No disponible | Lector de activaciones de GLM-5.3 | No disponible | HuggingFace (0 descargas) |
+| Este modelo (glm5.3-olens-qglm-rl600) | Adaptador sobre 27B | No disponible | Lector de activaciones de GLM-5.3 | No disponible | Hugging Face (0 descargas) |
 | glm53aff-rl600 (#652) | Adaptador sobre 27B | No disponible | Lector alternativo, mismo workspace | No disponible | Referenciado en la model card |
 | SFT (mismo repo) | Adaptador sobre 27B | No disponible | Lector sin RL | No disponible | Incluido en este repo |
-| Qwen3.6-27B (base) | 27B | No disponible | Modelo generativo abierto | No disponible | HuggingFace (Qwen) |
+| Qwen3.6-27B (base) | 27B | No disponible | Modelo generativo abierto | No disponible | Hugging Face (Qwen) |
 
 No se dispone de modelos comparables de interpretabilidad con especificaciones publicas equivalentes en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de modelos comparables de interpretabilidad con especificaciones p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/camila-blank/glm5.3-olens-qglm-rl600
+- Hugging Face: https://huggingface.co/camila-blank/glm5.3-olens-qglm-rl600
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Lector O-lens de referencia (recompensa): `agu18dec/final_olens` (referenciado en la model card)
 - Workspace global #657 y brazo #652: referenciados en la model card, sin URL publica disponible

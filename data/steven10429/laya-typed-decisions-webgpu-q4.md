@@ -100,7 +100,7 @@ En cuanto a alternativas de la misma categoria (encoders de clasificacion tipo M
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/Steven10429/laya-typed-decisions-webgpu-q4
+- Hugging Face (este repositorio): https://huggingface.co/Steven10429/laya-typed-decisions-webgpu-q4
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Checkpoint de decisiones tipadas: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Repositorio GitHub del proyecto Laya: https://github.com/NandhaKishorM/laya

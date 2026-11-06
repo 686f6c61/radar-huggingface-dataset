@@ -114,7 +114,7 @@ La comparacion relevante no es de capacidad generativa (los tres primeros compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_RMU
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_RMU
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Perfil del autor: https://huggingface.co/JoaoBoer
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU

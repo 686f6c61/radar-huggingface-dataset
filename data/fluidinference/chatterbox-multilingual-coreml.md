@@ -78,8 +78,8 @@ No se dispone de comparaciones con otros modelos de TTS en la informacion propor
 
 | Modelo | Parametros | Contexto / formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chatterbox Multilingual — CoreML (este) | ≈520 M en T3 | Texto ≤256 tokens; CoreML `.mlpackage`/`.mlmodelc` | 23 | MIT | HuggingFace, FluidInference |
-| ResembleAI/chatterbox (upstream, variante multilingue) | ≈520 M en T3 (mismo backbone) | Pipeline PyTorch completo | 23 | MIT | HuggingFace |
+| Chatterbox Multilingual — CoreML (este) | ≈520 M en T3 | Texto ≤256 tokens; CoreML `.mlpackage`/`.mlmodelc` | 23 | MIT | Hugging Face, FluidInference |
+| ResembleAI/chatterbox (upstream, variante multilingue) | ≈520 M en T3 (mismo backbone) | Pipeline PyTorch completo | 23 | MIT | Hugging Face |
 | Otras alternativas de TTS (XTTS, Kokoro, Piper, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Solo se dispone de datos verificables del modelo base ResembleAI/chatterbox; no se ha recopilado informacion cuantitativa de otros modelos de TTS en la busqueda realizada, por lo que el resto de la comparativa queda como no disponible.
@@ -99,7 +99,7 @@ Solo se dispone de datos verificables del modelo base ResembleAI/chatterbox; no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FluidInference/chatterbox-multilingual-coreml
+- Hugging Face: https://huggingface.co/FluidInference/chatterbox-multilingual-coreml
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox
 - FluidInference (GitHub): https://github.com/FluidInference
 - Toolkit de conversion mobius (PR #89): https://github.com/FluidInference/mobius/pull/89

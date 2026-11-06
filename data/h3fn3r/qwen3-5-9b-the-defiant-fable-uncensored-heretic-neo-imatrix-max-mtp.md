@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP es un ajuste fino (fine-tune) y merge multi-etapa construido sobre Qwen3.5-9B, un transformer decoder-only de 9.653.104.368 parametros (aproximadamente 9,65 mil millones) distribuido en safetensors con pesos en bfloat16. El modelo se publica bajo licencia Apache 2.0 y declara soporte para ingles y chino, ademas de una pipeline multimodal de tipo image-text-to-text. La model card atribuye el trabajo de entrenamiento y merge a DavidAU y Nightmedia sobre hardware local, y el repositorio de HuggingFace esta alojado por el usuario h3fn3r; se trata, por tanto, de una variante derivada y no de un modelo oficial de Alibaba.
+Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP es un ajuste fino (fine-tune) y merge multi-etapa construido sobre Qwen3.5-9B, un transformer decoder-only de 9.653.104.368 parametros (aproximadamente 9,65 mil millones) distribuido en safetensors con pesos en bfloat16. El modelo se publica bajo licencia Apache 2.0 y declara soporte para ingles y chino, ademas de una pipeline multimodal de tipo image-text-to-text. La model card atribuye el trabajo de entrenamiento y merge a DavidAU y Nightmedia sobre hardware local, y el repositorio de Hugging Face esta alojado por el usuario h3fn3r; se trata, por tanto, de una variante derivada y no de un modelo oficial de Alibaba.
 
 El objetivo declarado del ajuste es doble: elevar la inteligencia general del modelo base y mejorar el seguimiento de instrucciones, ademas de eliminar los mecanismos de rechazo mediante tecnicas de "abliteration" y "heretic" aplicadas antes y despues del entrenamiento. El autor afirma que el bloque de razonamiento (thinking) se ha compactado y que, en 4 y 8 bits, el modelo supera en varias pruebas a modelos bastante mas grandes de la misma familia, como Qwen3.5-27B o Qwen3.6-35B-A3B. Estas afirmaciones proceden exclusivamente de la model card y no han sido verificadas de forma independiente.
 
@@ -104,7 +104,7 @@ Lectura critica de la tabla: el modelo supera las siete metricas frente a Qwen3.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/h3fn3r/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
+- Repositorio en Hugging Face: https://huggingface.co/h3fn3r/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Version "DARK ROAST" (maximo nivel de des-censura), segun la model card: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-DARK-ROAST-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Repositorio GGUF del mismo modelo en la cuenta del autor original: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
 - Qwen3.6-27B-Fable-Fusion-711 (27B recomendado por el autor): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF

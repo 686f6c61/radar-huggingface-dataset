@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`phongdq/Qwen1.5_1.8B_SFT_Dolly` es un ajuste supervisado (SFT) del modelo base Qwen1.5-1.8B, publicado por el usuario phongdq en HuggingFace. Por el nombre del repositorio cabe deducir que el ajuste se realizo sobre el dataset Dolly, aunque la model card no lo confirma ni documenta el proceso de entrenamiento, los hiperparametros ni la composicion de los datos. El repositorio incluye la etiqueta `qwen2`, lo que situa la arquitectura en la familia de decodificadores transformer de Qwen2, con aproximadamente 1.800 millones de parametros.
+`phongdq/Qwen1.5_1.8B_SFT_Dolly` es un ajuste supervisado (SFT) del modelo base Qwen1.5-1.8B, publicado por el usuario phongdq en Hugging Face. Por el nombre del repositorio cabe deducir que el ajuste se realizo sobre el dataset Dolly, aunque la model card no lo confirma ni documenta el proceso de entrenamiento, los hiperparametros ni la composicion de los datos. El repositorio incluye la etiqueta `qwen2`, lo que situa la arquitectura en la familia de decodificadores transformer de Qwen2, con aproximadamente 1.800 millones de parametros.
 
-El modelo esta pensado para generacion de texto y uso conversacional, con compatibilidad declarada con `transformers`, `text-generation-inference` y endpoints. Su relevancia practica actual es limitada: se trata de un checkpoint de la serie Qwen1.5 (generacion anterior a Qwen2.5 y Qwen3), con 0 descargas y 0 likes en el momento de la consulta, y con una model card generada automaticamente por la plantilla de HuggingFace en la que casi todos los campos quedan como "[More Information Needed]".
+El modelo esta pensado para generacion de texto y uso conversacional, con compatibilidad declarada con `transformers`, `text-generation-inference` y endpoints. Su relevancia practica actual es limitada: se trata de un checkpoint de la serie Qwen1.5 (generacion anterior a Qwen2.5 y Qwen3), con 0 descargas y 0 likes en el momento de la consulta, y con una model card generada automaticamente por la plantilla de Hugging Face en la que casi todos los campos quedan como "[More Information Needed]".
 
 No hay informacion publicada sobre licencia, idiomas soportados, composicion del dataset de ajuste, resultados de evaluacion ni detalles de cuantizacion. Cualquier evaluacion de este checkpoint deberia partir de una validacion empirica propia antes de considerarlo para uso en produccion.
 
@@ -68,16 +68,16 @@ La comparativa se realiza con modelos de la misma categoria (modelos base densos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| phongdq/Qwen1.5_1.8B_SFT_Dolly | ~1,8B (segun nombre) | no disponible | no disponible | HuggingFace, checkpoint comunitario con 0 descargas |
-| Qwen1.5-1.8B (modelo base) | ~1,8B | 32.768 tokens segun la documentacion del modelo base (no verificado en esta busqueda) | Licencia Tongyi Qianwen (segun el modelo base) | HuggingFace, ampliamente utilizado |
-| Qwen2.5-1.5B | ~1,5B | 32.768 tokens segun la documentacion del modelo base (no verificado en esta busqueda) | Apache 2.0 (modelos de la serie pequena, segun el modelo base) | HuggingFace |
-| Llama 3.2 1B | ~1,2B | 128.000 tokens segun la documentacion del modelo base (no verificado en esta busqueda) | Licencia comunitaria de Llama 3.2 | HuggingFace |
+| phongdq/Qwen1.5_1.8B_SFT_Dolly | ~1,8B (segun nombre) | no disponible | no disponible | Hugging Face, checkpoint comunitario con 0 descargas |
+| Qwen1.5-1.8B (modelo base) | ~1,8B | 32.768 tokens segun la documentacion del modelo base (no verificado en esta busqueda) | Licencia Tongyi Qianwen (segun el modelo base) | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B | ~1,5B | 32.768 tokens segun la documentacion del modelo base (no verificado en esta busqueda) | Apache 2.0 (modelos de la serie pequena, segun el modelo base) | Hugging Face |
+| Llama 3.2 1B | ~1,2B | 128.000 tokens segun la documentacion del modelo base (no verificado en esta busqueda) | Licencia comunitaria de Llama 3.2 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este checkpoint, por lo que no es posible establecer si supera o no al modelo base del que deriva. Este es el principal riesgo de adoptarlo frente a alternativas con documentacion completa.
 
 ## Limitaciones y advertencias
 
-- Documentacion practicamente inexistente: la model card es la plantilla automatica de HuggingFace con todos los campos marcados como "[More Information Needed]".
+- Documentacion practicamente inexistente: la model card es la plantilla automatica de Hugging Face con todos los campos marcados como "[More Information Needed]".
 - Licencia no declarada: no se puede confirmar que el uso comercial este permitido. Ademas, al derivar de Qwen1.5, las condiciones del modelo base podrian aplicar y no estan reflejadas en este repositorio.
 - Procedencia del ajuste no verificada: la unica evidencia del uso del dataset Dolly es el propio nombre del repositorio.
 - Sin evaluaciones publicadas: no hay benchmarks, ni evaluaciones humanas, ni comparaciones con el modelo base que permitan estimar la calidad del ajuste.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo para este checkpoint, por lo q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/phongdq/Qwen1.5_1.8B_SFT_Dolly
+- Repositorio en Hugging Face: https://huggingface.co/phongdq/Qwen1.5_1.8B_SFT_Dolly
 - Modelo base de referencia (Qwen1.5-1.8B): https://huggingface.co/Qwen/Qwen1.5-1.8B
 - Dataset Dolly (referencia del posible ajuste): https://huggingface.co/datasets/databricks/databricks-dolly-15k
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre impacto medioambiental): https://arxiv.org/abs/1910.09700

@@ -66,6 +66,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h041.pi-agent-sft-v15-hero.step_750
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h041.pi-agent-sft-v15-hero.step_750
 - Organización agentic-ptb: https://huggingface.co/agentic-ptb
 - Búsqueda de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

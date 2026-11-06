@@ -81,6 +81,6 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Laddaphone/topoconf-mammography-edl
+- Hugging Face: https://huggingface.co/Laddaphone/topoconf-mammography-edl
 - GitHub: https://github.com/Laddaphone/Topoconf
 - Paper (referencia, sin enlace directo): «Evidence Phenotypes Determine Optimal Uncertainty Channels for Safety-Critical Mammography Triage», presentado a CMBBE: Imaging & Visualization.

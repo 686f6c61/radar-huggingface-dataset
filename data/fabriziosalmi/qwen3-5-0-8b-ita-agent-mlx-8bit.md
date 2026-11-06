@@ -123,7 +123,7 @@ La comparacion con el 2B ajustado con los mismos datos muestra una diferencia es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fabriziosalmi/Qwen3.5-0.8B-ita-agent-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/fabriziosalmi/Qwen3.5-0.8B-ita-agent-MLX-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Libreria MLX: https://github.com/ml-explore/mlx
 - mlx-lm: https://github.com/ml-explore/mlx-lm

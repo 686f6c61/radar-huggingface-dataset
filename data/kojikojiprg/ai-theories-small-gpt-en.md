@@ -69,12 +69,12 @@ No se dispone de datos de rendimiento comparativos. A modo de referencia, modelo
 - Contexto muy limitado: solo 256 tokens, lo que impide tareas que requieran dependencias de largo alcance.
 - Solo inglés: no soporta otros idiomas.
 - Riesgo de alucinación y sesgos: al estar entrenado sobre un subconjunto de Wikipedia, puede reflejar sesgos presentes en esa fuente y generar texto incoherente o falso.
-- Repositorio con 0 descargas y 0 likes, y un tamaño de 0.0 GB, lo que sugiere que el repositorio de HuggingFace podría estar vacío o en una fase muy temprana de desarrollo.
+- Repositorio con 0 descargas y 0 likes, y un tamaño de 0.0 GB, lo que sugiere que el repositorio de Hugging Face podría estar vacío o en una fase muy temprana de desarrollo.
 - Fecha de creación y actualización: 2026-08-20, una fecha futura que podría indicar un error en los metadatos o un proyecto planificado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kojikojiprg/ai-theories-small-gpt-en
+- Hugging Face: https://huggingface.co/kojikojiprg/ai-theories-small-gpt-en
 - Repositorio GitHub del proyecto: https://github.com/kojikojiprg/ai-theories
 - Notebook de preentrenamiento: https://github.com/kojikojiprg/ai-theories/blob/main/theories/02_pretraining/006_pretraining_small_gpt.ipynb
 - Notebook de estabilización del entrenamiento: https://github.com/kojikojiprg/ai-theories/blob/main/theories/02_pretraining/007_training_stabilization.ipynb

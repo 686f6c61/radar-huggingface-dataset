@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`mazesmazes/tiny-audio-granite-gemma` es un modelo de audio de muy pequeno tamano (10.491.392 parametros, aproximadamente 10,5 millones) publicado en HuggingFace por el usuario mazesmazes. El repositorio se distribuye bajo la libreria `transformers` y sus etiquetas lo clasifican como `asr_model` y `feature-extraction`, lo que situa su proposito declarado en el ambito del reconocimiento automatico del habla y de la extraccion de representaciones a partir de senal de audio. El nombre del modelo sugiere una posible combinacion de componentes o enfoques asociados a las familias Granite y Gemma, pero la model card no confirma ninguna arquitectura concreta.
+`mazesmazes/tiny-audio-granite-gemma` es un modelo de audio de muy pequeno tamano (10.491.392 parametros, aproximadamente 10,5 millones) publicado en Hugging Face por el usuario mazesmazes. El repositorio se distribuye bajo la libreria `transformers` y sus etiquetas lo clasifican como `asr_model` y `feature-extraction`, lo que situa su proposito declarado en el ambito del reconocimiento automatico del habla y de la extraccion de representaciones a partir de senal de audio. El nombre del modelo sugiere una posible combinacion de componentes o enfoques asociados a las familias Granite y Gemma, pero la model card no confirma ninguna arquitectura concreta.
 
 El modelo destaca por su reducido tamano (el repositorio completo ocupa 0,2 GB y los pesos en safetensors suman unos 42 MB en precision fp32), lo que lo convierte en un candidato para inferencia en CPU, dispositivos de borde o entornos con recursos muy limitados, y para su uso como componente auxiliar dentro de pipelines mas grandes. Es relevante ahora porque la tendencia hacia modelos especializados pequenos permite desplegar funcionalidad de audio sin depender de APIs externas ni de aceleradores de gama alta.
 
-La documentacion publicada es practicamente inexistente: la model card es la plantilla autogenerada de HuggingFace, sin autor, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. Ademas, no se han publicado descargas ni likes, y la fecha de creacion del repositorio figura como 2026-09-16. Cualquier uso en produccion exige una evaluacion propia previa, dado que no hay garantias documentadas sobre su comportamiento.
+La documentacion publicada es practicamente inexistente: la model card es la plantilla autogenerada de Hugging Face, sin autor, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. Ademas, no se han publicado descargas ni likes, y la fecha de creacion del repositorio figura como 2026-09-16. Cualquier uso en produccion exige una evaluacion propia previa, dado que no hay garantias documentadas sobre su comportamiento.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La documentacion publicada es practicamente inexistente: la model card es la pla
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card, que consiste en la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`. Lo unico verificable son las etiquetas del repositorio: `transformers`, `safetensors`, `custom_code`, `asr_model`, `feature-extraction` y `arxiv:1910.09700`. La presencia de `custom_code` indica que el modelo requiere codigo propio del repositorio para cargarse, es decir, no se puede instanciar unicamente con clases estandar de `transformers`. El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental de aprendizaje automatico, que la plantilla de model card incluye como referencia generica y no como paper del modelo.
+No se ha publicado informacion sobre la arquitectura en la model card, que consiste en la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`. Lo unico verificable son las etiquetas del repositorio: `transformers`, `safetensors`, `custom_code`, `asr_model`, `feature-extraction` y `arxiv:1910.09700`. La presencia de `custom_code` indica que el modelo requiere codigo propio del repositorio para cargarse, es decir, no se puede instanciar unicamente con clases estandar de `transformers`. El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental de aprendizaje automatico, que la plantilla de model card incluye como referencia generica y no como paper del modelo.
 
 No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo ajuste por instrucciones (RLHF, DPO) ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. Tampoco se documenta el regimen de precision (fp32, fp16, bf16) ni el proceso de preprocesado de audio. El unico dato cuantitativo disponible es el recuento de parametros de los safetensors y el tamano del repositorio (0,2 GB), superior al peso de los pesos en si, lo que sugiere la presencia de ficheros adicionales, estados intermedios o varios checkpoints, aunque esto no esta confirmado.
 
@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no incluye arquitectura, idiomas, li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mazesmazes/tiny-audio-granite-gemma
+- Modelo en Hugging Face: https://huggingface.co/mazesmazes/tiny-audio-granite-gemma
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, calculador de impacto medioambiental, citado en la plantilla de model card, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados obtenidos corresponden a documentacion juridica no relacionada con el modelo.

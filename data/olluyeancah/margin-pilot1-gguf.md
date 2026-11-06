@@ -99,6 +99,6 @@ No se han proporcionado datos de benchmarks ni especificaciones de otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olluyeancah/margin-pilot1-gguf
+- Modelo en Hugging Face: https://huggingface.co/olluyeancah/margin-pilot1-gguf
 - Modelo base referenciado (empero-ai/Qwen3.8-4B-Distill): https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre el modelo (únicamente resultados de portales de reservas de viajes, sin relación con la consulta).

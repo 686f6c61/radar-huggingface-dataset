@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lxxxy6/ReActor` es una publicacion de HuggingFace creada el 25 de agosto de 2026 por el usuario lxxxy6 (newPeak), con licencia MIT. La model card esta practicamente vacia: unicamente declara la licencia y no incluye ninguna documentacion tecnica, descripcion, arquitectura ni ejemplos de uso. El repositorio no registra descargas ni likes, lo que sugiere que se trata de una publicacion muy reciente o de un espacio reservado para un futuro lanzamiento.
+El modelo `lxxxy6/ReActor` es una publicacion de Hugging Face creada el 25 de agosto de 2026 por el usuario lxxxy6 (newPeak), con licencia MIT. La model card esta practicamente vacia: unicamente declara la licencia y no incluye ninguna documentacion tecnica, descripcion, arquitectura ni ejemplos de uso. El repositorio no registra descargas ni likes, lo que sugiere que se trata de una publicacion muy reciente o de un espacio reservado para un futuro lanzamiento.
 
 El nombre "ReActor" coincide con el de una herramienta popular de intercambio de rostros (face swapping) en el ecosistema de Stable Diffusion y ComfyUI, aunque no existe evidencia en la informacion disponible de que este modelo este relacionado con dicha herramienta. El mismo autor mantiene otra publicacion, `lxxxy6/LTX-2.5`, con licencia Apache-2.0, vinculada al ecosistema de generacion de video LTX. Dada la ausencia total de especificaciones, no es posible determinar la naturaleza, el tamano ni las capacidades de este modelo.
 
@@ -39,7 +39,7 @@ Dado el nombre "ReActor" y la existencia de herramientas homonimas en el ecosist
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos sin informacion sobre las capacidades del modelo. La ausencia de documentacion, pesos publicados verificables y benchmarks impide evaluar su idoneidad para cualquier escenario practico. Se recomienda consultar el repositorio de HuggingFace en una fase posterior, cuando el autor publique la model card completa y los archivos de pesos.
+No es posible proponer casos de uso concretos sin informacion sobre las capacidades del modelo. La ausencia de documentacion, pesos publicados verificables y benchmarks impide evaluar su idoneidad para cualquier escenario practico. Se recomienda consultar el repositorio de Hugging Face en una fase posterior, cuando el autor publique la model card completa y los archivos de pesos.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No disponible. No existe informacion suficiente para establecer comparaciones co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lxxxy6/ReActor
+- Repositorio Hugging Face: https://huggingface.co/lxxxy6/ReActor
 - Perfil del autor (lxxxy6/newPeak): https://huggingface.co/lxxxy6
 - Otro modelo del mismo autor (LTX-2.5): https://huggingface.co/lxxxy6/LTX-2.5
 - Documentacion del nodo ReActorBuildFaceModel (ComfyUI-ReActor): https://comfyai.run/documentation/ReActorBuildFaceModel

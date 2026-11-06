@@ -77,5 +77,5 @@ El checkpoint `vit-contrastive-study` es un repositorio experimental sin entrena
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jys4nchez/vit-contrastive-study
+- Hugging Face: https://huggingface.co/Jys4nchez/vit-contrastive-study
 - El propio repositorio incluye los archivos `predict.py`, `config.json`, `training_args.json` y `model.safetensors` como artefactos principales. No se han encontrado otros enlaces externos relevantes en la búsqueda web.

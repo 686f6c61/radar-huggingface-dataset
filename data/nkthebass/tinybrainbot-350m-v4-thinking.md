@@ -77,9 +77,9 @@ Ademas, la model card reporta que, sobre 40 preguntas cotidianas evaluadas por u
 
 | Modelo | Parametros | Contexto | Media lm-eval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyBrainBot-350M-v4-Thinking | 348M | no disponible | 41,8 | apache-2.0 | HuggingFace (safetensors + GGUF F16) |
-| TinyBrainBot-350M V3 Instruct | 348M | no disponible | 41,8 | no disponible | HuggingFace |
-| TinyBrainBot-100M-v4-Thinking | ~100M | no disponible | 40,9 | no disponible | HuggingFace |
+| TinyBrainBot-350M-v4-Thinking | 348M | no disponible | 41,8 | apache-2.0 | Hugging Face (safetensors + GGUF F16) |
+| TinyBrainBot-350M V3 Instruct | 348M | no disponible | 41,8 | no disponible | Hugging Face |
+| TinyBrainBot-100M-v4-Thinking | ~100M | no disponible | 40,9 | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks frente a modelos externos de la misma categoria (por ejemplo, alternativas de menos de 500M de otros autores), por lo que la comparacion se limita a los hermanos de la misma familia. La diferencia clave frente al 350M V3 Instruct es la presencia del modo thinking: ambos empatan en la media de benchmarks de conocimiento (41,8), pero el modelo v4-thinking se entrena con datos de razonamiento y chat que el V3 no incorpora.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks frente a modelos externos de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-350m-v4-thinking
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-350m-v4-thinking
 - Modelo base: https://huggingface.co/nkthebass/tinybrainbot-350mV3-base
 - Version instruct del 350M V3: https://huggingface.co/nkthebass/tinybrainbot-350mV3-instruct
 - Modelo hermano de 100M: https://huggingface.co/nkthebass/tinybrainbot-100m-v4-thinking

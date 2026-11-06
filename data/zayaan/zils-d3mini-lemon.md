@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zils d3-mini Lemon | 4.539.265.536 | no disponible | Apache 2.0 | HuggingFace (redistribucion) |
-| inclusionAI/LemonDecider | no disponible | no disponible | Apache 2.0 | HuggingFace (modelo base) |
+| Zils d3-mini Lemon | 4.539.265.536 | no disponible | Apache 2.0 | Hugging Face (redistribucion) |
+| inclusionAI/LemonDecider | no disponible | no disponible | Apache 2.0 | Hugging Face (modelo base) |
 | Alternativas de ~4-5B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones de contexto para establecer una comparativa cuantitativa con alternativas de la misma categoria. La unica comparacion fiable es con el modelo base, del que este repositorio es una copia reorganizada.
@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento ni de especificaciones de contexto para es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zayaan/zils-d3mini-lemon
+- Repositorio Hugging Face: https://huggingface.co/Zayaan/zils-d3mini-lemon
 - Modelo base: https://huggingface.co/inclusionAI/LemonDecider

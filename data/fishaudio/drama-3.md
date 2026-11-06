@@ -82,7 +82,7 @@ No se dispone de datos numericos comparativos publicados en la informacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fish Audio Drama 3 | 35,9B totales, ~3B activos | no disponible | no disponible (solo datos de servicio en H200) | fish-audio-research-license | HuggingFace, SGLang-Omni |
+| Fish Audio Drama 3 | 35,9B totales, ~3B activos | no disponible | no disponible (solo datos de servicio en H200) | fish-audio-research-license | Hugging Face, SGLang-Omni |
 | Fish Audio S2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Fish Audio S2.1 Pro | no disponible | no disponible | no disponible | no disponible | servicio en fish.audio |
 
@@ -101,7 +101,7 @@ La busqueda menciona que S2 se entreno sobre mas de 10 millones de horas de audi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fishaudio/drama-3
+- Hugging Face: https://huggingface.co/fishaudio/drama-3
 - SGLang-Omni: https://sgl-project.github.io/sglang-omni/
 - Drama 3 Cookbook (SGLang-Omni): https://sgl-project.github.io/sglang-omni/cookbook/fishaudio_drama3.html
 - Repositorio SGLang-Omni en GitHub: https://github.com/sgl-project/sglang-omni

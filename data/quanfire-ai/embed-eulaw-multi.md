@@ -23,7 +23,7 @@ El adaptador se entrenó con 19 966 pares de provisiones legales alineadas profe
 
 El modelo es un adaptador LoRA de rango 32 y alpha 64, aplicado únicamente a las proyecciones *query* y *value* del modelo base. El entrenamiento se realizó durante una época sobre 19 966 pares de provisiones legales alineadas por la estructura oficial de la UE (mismo CELEX y misma posición de artículo). Los pares no fueron minados ni traducidos automáticamente; se usaron las versiones auténticas de cada idioma publicadas en EUR-Lex. El entrenamiento empleó un learning rate de 1e-4, batch size de 256, mean pooling, dimensiones de embedding de 384, longitud máxima de secuencia de 256 tokens y salidas normalizadas.
 
-El adaptador se evalúa en un split que aísla documentos completos, garantizando que ninguna provision de un documento de entrenamiento comparte documento con una de evaluación. La card de HuggingFace advierte que el árbol de entrenamiento no es reproducible (el archivo fuente no coincide con el que se ejecutó), aunque la evaluación sí es verificable de forma independiente.
+El adaptador se evalúa en un split que aísla documentos completos, garantizando que ninguna provision de un documento de entrenamiento comparte documento con una de evaluación. La card de Hugging Face advierte que el árbol de entrenamiento no es reproducible (el archivo fuente no coincide con el que se ejecutó), aunque la evaluación sí es verificable de forma independiente.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se han encontrado datos comparativos con otros adaptadores o modelos de embed
 - **Truncamiento**: la evaluación se realizó con un límite de 256 tokens por pasaje. No se ha medido la frecuencia con la que un pasaje relevante se truncó, lo que podría afectar al recall real.
 - **Retracción de cifras**: dos métricas anteriores (+126,3 % y +128,79 %) fueron retiradas por medir una variable distinta (split de textos en lugar de documentos completos). Estas cifras no deben considerarse.
 - **No es un modelo de QA ni de reranking**: solo produce embeddings; no genera respuestas ni ordena resultados de forma jerárquica.
-- **Licencia**: Apache-2.0 permite uso comercial, pero el modelo base `intfloat/multilingual-e5-small` tiene su propia licencia (MIT, según HuggingFace). El adaptador en sí es Apache-2.0, pero el usuario debe verificar las condiciones del modelo base.
+- **Licencia**: Apache-2.0 permite uso comercial, pero el modelo base `intfloat/multilingual-e5-small` tiene su propia licencia (MIT, según Hugging Face). El adaptador en sí es Apache-2.0, pero el usuario debe verificar las condiciones del modelo base.
 
 ## Enlaces
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/llama8b-a4ctx-badmed-seed2-v2` es un fine-tuning de un modelo base Llama de 8 mil millones de parámetros, publicado en HuggingFace por el usuario ArthT. El nombre sugiere que se trata de una variante con una ventana de contexto de 4.000 tokens (indicado por `a4ctx`) y un ajuste orientado a un dominio médico (`badmed`), aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni el proceso de ajuste. El repositorio tiene un tamaño de 5,1 GB, coherente con pesos en formato `safetensors` para un modelo de 8B en precisión bf16.
+El modelo `ArthT/llama8b-a4ctx-badmed-seed2-v2` es un fine-tuning de un modelo base Llama de 8 mil millones de parámetros, publicado en Hugging Face por el usuario ArthT. El nombre sugiere que se trata de una variante con una ventana de contexto de 4.000 tokens (indicado por `a4ctx`) y un ajuste orientado a un dominio médico (`badmed`), aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni el proceso de ajuste. El repositorio tiene un tamaño de 5,1 GB, coherente con pesos en formato `safetensors` para un modelo de 8B en precisión bf16.
 
 La relevancia de este modelo reside en su posible aplicación en tareas de procesamiento de lenguaje natural en el ámbito sanitario, aunque la documentación disponible es extremadamente limitada. Al estar etiquetado con `unsloth`, es probable que el entrenamiento se haya realizado con la librería Unsloth, conocida por optimizar el fine-tuning de modelos Llama. Sin embargo, al no existir una model card completa, cualquier uso en producción debe considerar la falta de transparencia sobre datos, licencia y rendimiento.
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArthT/llama8b-a4ctx-badmed-seed2-v2
+- Repositorio en Hugging Face: https://huggingface.co/ArthT/llama8b-a4ctx-badmed-seed2-v2
 - Modelo relacionado (misma serie, contexto 1k): https://huggingface.co/ArthT/llama8b-a1ctx-badmed-seed2-v2
 - Modelo relacionado (misma serie, máscara 1k): https://huggingface.co/ArthT/llama8b-a1mask-badmed-seed2-v2

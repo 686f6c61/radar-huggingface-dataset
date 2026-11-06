@@ -87,7 +87,7 @@ Alternativas de la misma categoría (cabezas o adaptadores de decisión ligeros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/codesoda/kev-heads
+- Repositorio en Hugging Face: https://huggingface.co/codesoda/kev-heads
 - Kev upstream (GitHub): https://github.com/jaredpalmer/kev
 - kev-rs, runtime en Rust: https://github.com/codesoda/kev-rs
 - Release de kev-rs v0.1.1 (conversor `kev-convert-head`): https://github.com/codesoda/kev-rs/releases/tag/v0.1.1

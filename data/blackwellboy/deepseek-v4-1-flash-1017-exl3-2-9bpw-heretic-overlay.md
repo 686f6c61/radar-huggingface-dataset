@@ -6,7 +6,7 @@ Este repositorio es una variante "abliterated" (sin alineamiento de rechazo) del
 
 La relevancia de esta ficha es doble. Por un lado, documenta un ejemplo típico del ecosistema de cuantización agresiva (2,9 bpw) pensada para ejecución local con recursos muy limitados. Por otro, ilustra la práctica de la "abliteración" automatizada mediante herramientas como Heretic, que localizan y anulan la dirección de rechazo en el espacio de activaciones en lugar de reentrenar con datos.
 
-Conviene advertir desde el principio de que la información publicada es mínima: el repositorio no incluye model card con especificaciones, no declara arquitectura, número de parámetros ni longitud de contexto, y no aporta resultados de benchmarks. Todo lo que sigue distingue explícitamente entre datos declarados en las etiquetas de HuggingFace y cuestiones que quedan como "no disponible".
+Conviene advertir desde el principio de que la información publicada es mínima: el repositorio no incluye model card con especificaciones, no declara arquitectura, número de parámetros ni longitud de contexto, y no aporta resultados de benchmarks. Todo lo que sigue distingue explícitamente entre datos declarados en las etiquetas de Hugging Face y cuestiones que quedan como "no disponible".
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Conviene advertir desde el principio de que la información publicada es mínima
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | EXL3 a 2,9 bits por peso (bpw), formato de ExLlamaV3 |
 | Idiomas soportados | no disponible (la model card no lista idiomas) |
-| Licencia | MIT (según etiqueta), con acceso restringido que requiere aceptar condiciones en HuggingFace |
+| Licencia | MIT (según etiqueta), con acceso restringido que requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | EXL3 (ExLlamaV3); la etiqueta declara librería `transformers` |
 | Tamaño del repositorio | 1,0 GB |
 | Modelo base | deepseek-ai/DeepSeek-V4.1-Flash-1017 |

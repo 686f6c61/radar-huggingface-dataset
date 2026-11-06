@@ -2,9 +2,9 @@
 
 ## Resumen
 
-heado/audio_cls_1016 es un modelo de clasificacion de audio publicado en HuggingFace por el usuario heado. Se trata de un fine-tuning de Kkonjeong/wav2vec2-base-korean, un encoder wav2vec2-base preentrenado sobre habla en coreano. Su pipeline declarado es audio-classification y cuenta con 94.572.174 parametros, lo que lo situa en la gama de ~95 millones de parametros y un tamano de repositorio de 0,4 GB.
+heado/audio_cls_1016 es un modelo de clasificacion de audio publicado en Hugging Face por el usuario heado. Se trata de un fine-tuning de Kkonjeong/wav2vec2-base-korean, un encoder wav2vec2-base preentrenado sobre habla en coreano. Su pipeline declarado es audio-classification y cuenta con 94.572.174 parametros, lo que lo situa en la gama de ~95 millones de parametros y un tamano de repositorio de 0,4 GB.
 
-El modelo se entreno durante 10 epocas con el Trainer de HuggingFace (learning rate 1e-4, batch efectivo 32, AdamW fusionado, AMP nativo, semilla 42) sobre un conjunto de datos que el autor no documenta. En el conjunto de evaluacion declara una perdida de 1,1178 y una exactitud de 0,8151. Al derivar de wav2vec2, su funcion es asignar una etiqueta a cada fragmento de audio, no generar texto ni mantener conversaciones.
+El modelo se entreno durante 10 epocas con el Trainer de Hugging Face (learning rate 1e-4, batch efectivo 32, AdamW fusionado, AMP nativo, semilla 42) sobre un conjunto de datos que el autor no documenta. En el conjunto de evaluacion declara una perdida de 1,1178 y una exactitud de 0,8151. Al derivar de wav2vec2, su funcion es asignar una etiqueta a cada fragmento de audio, no generar texto ni mantener conversaciones.
 
 Su interes practico es limitado pero claro: sirve como ejemplo de fine-tuning ligero y reproducible de un encoder de audio para una tarea de clasificacion concreta, con un coste de inferencia muy bajo. La contrapartida es la ausencia casi total de documentacion: no se especifican el dataset, el numero y nombre de las clases, los idiomas de entrada ni la licencia, lo que impide su uso en produccion sin una verificacion previa por parte del integrador.
 
@@ -86,10 +86,10 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tarea | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| heado/audio_cls_1016 | Clasificacion de audio | 94.572.174 | no disponible | HuggingFace, transformers + safetensors |
-| Kkonjeong/wav2vec2-base-korean | Preentrenamiento de representaciones de habla (base) | no disponible en la informacion proporcionada | no disponible | HuggingFace |
-| facebook/wav2vec2-base | Preentrenamiento de representaciones de habla | no disponible en la informacion proporcionada | no disponible | HuggingFace |
-| facebook/hubert-base-ls960 | Preentrenamiento de representaciones de habla (alternativa de la misma familia) | no disponible en la informacion proporcionada | no disponible | HuggingFace |
+| heado/audio_cls_1016 | Clasificacion de audio | 94.572.174 | no disponible | Hugging Face, transformers + safetensors |
+| Kkonjeong/wav2vec2-base-korean | Preentrenamiento de representaciones de habla (base) | no disponible en la informacion proporcionada | no disponible | Hugging Face |
+| facebook/wav2vec2-base | Preentrenamiento de representaciones de habla | no disponible en la informacion proporcionada | no disponible | Hugging Face |
+| facebook/hubert-base-ls960 | Preentrenamiento de representaciones de habla (alternativa de la misma familia) | no disponible en la informacion proporcionada | no disponible | Hugging Face |
 
 No hay datos de rendimiento comparativo publicados para este modelo, por lo que la comparacion se limita a la relacion de derivacion (fine-tuning de Kkonjeong/wav2vec2-base-korean) y a la categoria funcional. Para el resto de modelos alternativos, los datos concretos no estan disponibles en la informacion proporcionada.
 
@@ -108,7 +108,7 @@ No hay datos de rendimiento comparativo publicados para este modelo, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heado/audio_cls_1016
+- Modelo en Hugging Face: https://huggingface.co/heado/audio_cls_1016
 - Modelo base: https://huggingface.co/Kkonjeong/wav2vec2-base-korean
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

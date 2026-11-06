@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xw17/Qwen2.5-7B-Instruct_SFT_lora_bidsleep es un artefacto publicado en HuggingFace por el usuario xw17 que, por su nombre y por su tamaño en disco (0,1 GB), corresponde a un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-7B-Instruct. El repositorio no incluye pesos completos del modelo, sino únicamente los tensores del adaptador, que deben combinarse con el modelo base para poder ejecutarse. La model card publicada es la plantilla genérica autogenerada por HuggingFace y no contiene ni un solo campo rellenado por el autor.
+xw17/Qwen2.5-7B-Instruct_SFT_lora_bidsleep es un artefacto publicado en Hugging Face por el usuario xw17 que, por su nombre y por su tamaño en disco (0,1 GB), corresponde a un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-7B-Instruct. El repositorio no incluye pesos completos del modelo, sino únicamente los tensores del adaptador, que deben combinarse con el modelo base para poder ejecutarse. La model card publicada es la plantilla genérica autogenerada por Hugging Face y no contiene ni un solo campo rellenado por el autor.
 
 No hay información verificable sobre el conjunto de datos de entrenamiento, los hiperparámetros, la licencia, los idiomas objetivo ni los resultados de evaluación. El sufijo "bidsleep" del identificador sugiere un dominio de aplicación relacionado con el sueño o con el bruxismo, pero esto es una inferencia a partir del nombre del repositorio y no está confirmado en ninguna parte del repositorio.
 
@@ -33,7 +33,7 @@ Los datos del modelo base proceden de la documentación pública de la familia Q
 
 ## Arquitectura y entrenamiento
 
-La información disponible no permite describir el proceso de entrenamiento. La model card es la plantilla automática de HuggingFace y todos los campos relevantes ("Training Data", "Training Procedure", "Training Hyperparameters", "Preprocessing") aparecen con el marcador "[More Information Needed]". No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo fases de RLHF o DPO, ni el régimen de precisión empleado.
+La información disponible no permite describir el proceso de entrenamiento. La model card es la plantilla automática de Hugging Face y todos los campos relevantes ("Training Data", "Training Procedure", "Training Hyperparameters", "Preprocessing") aparecen con el marcador "[More Information Needed]". No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo fases de RLHF o DPO, ni el régimen de precisión empleado.
 
 A partir del identificador del repositorio se puede inferir que se trata de un ajuste supervisado (SFT) mediante LoRA sobre Qwen2.5-7B-Instruct. Un adaptador LoRA congela los pesos del modelo base e introduce matrices de bajo rango en determinadas capas, lo que reduce drásticamente los requisitos de memoria durante el entrenamiento y produce artefactos de decenas o cientos de megabytes, coherente con los 0,1 GB del repositorio. No hay ninguna innovación técnica documentada: ni decodificación especulativa, ni atención lineal, ni variantes híbridas.
 
@@ -78,10 +78,10 @@ La model card no incluye sección de evaluación cumplimentada, no se declaran m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| xw17/Qwen2.5-7B-Instruct_SFT_lora_bidsleep | Adaptador LoRA sobre 7,61 mil millones | No disponible (base: 32.768 tokens) | No disponible | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| Qwen/Qwen2.5-7B-Instruct | 7,61 mil millones | 32.768 tokens, hasta 131.072 con YaRN | Apache 2.0 (variante de 7B) | HuggingFace, ampliamente desplegado | Resultados publicados en su model card oficial |
-| meta-llama/Llama-3.1-8B-Instruct | 8 mil millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, requiere aceptar términos | Resultados publicados por Meta |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,2 mil millones | 32.000 tokens | Apache 2.0 | HuggingFace | Resultados publicados por Mistral |
+| xw17/Qwen2.5-7B-Instruct_SFT_lora_bidsleep | Adaptador LoRA sobre 7,61 mil millones | No disponible (base: 32.768 tokens) | No disponible | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| Qwen/Qwen2.5-7B-Instruct | 7,61 mil millones | 32.768 tokens, hasta 131.072 con YaRN | Apache 2.0 (variante de 7B) | Hugging Face, ampliamente desplegado | Resultados publicados en su model card oficial |
+| meta-llama/Llama-3.1-8B-Instruct | 8 mil millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, requiere aceptar términos | Resultados publicados por Meta |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,2 mil millones | 32.000 tokens | Apache 2.0 | Hugging Face | Resultados publicados por Mistral |
 
 La comparación directa con el adaptador carece de sentido en términos de rendimiento, porque no existe ninguna evaluación publicada del mismo. Frente a los tres modelos alternativos, que cuentan con licencia explícita, documentación completa y métricas verificables, el adaptador presenta un déficit total de trazabilidad.
 
@@ -94,12 +94,12 @@ La comparación directa con el adaptador carece de sentido en términos de rendi
 - Degradación potencial del modelo base: un ajuste LoRA sobre un corpus pequeño puede provocar olvido catastrófico en tareas no representadas y deteriorar el multilingüismo y el soporte de tool calling del modelo original.
 - Sin validación externa: cero descargas y cero "likes" implican que nadie ha reproducido ni auditado el adaptador.
 - Sin evaluación de seguridad: no hay filtros declarados, ni evaluación de toxicidad, ni alineación verificada tras el SFT.
-- Caveat de metadatos: la etiqueta "arxiv:1910.09700" del repositorio corresponde a la cita de la calculadora de impacto medioambiental incluida en la plantilla de HuggingFace, no a un artículo sobre este modelo. Del mismo modo, "endpoints_compatible" es una etiqueta autogenerada.
+- Caveat de metadatos: la etiqueta "arxiv:1910.09700" del repositorio corresponde a la cita de la calculadora de impacto medioambiental incluida en la plantilla de Hugging Face, no a un artículo sobre este modelo. Del mismo modo, "endpoints_compatible" es una etiqueta autogenerada.
 - Uso clínico excluido: si el ajuste se orienta al sueño o al bruxismo, no existe ninguna evidencia de validación clínica y su uso como herramienta diagnóstica o de recomendación sanitaria sería inapropiado.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/xw17/Qwen2.5-7B-Instruct_SFT_lora_bidsleep
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/xw17/Qwen2.5-7B-Instruct_SFT_lora_bidsleep
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Blog oficial de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115

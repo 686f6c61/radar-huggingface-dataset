@@ -87,7 +87,7 @@ No se dispone de datos verificados de rendimiento, contexto ni licencia de las a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/B2-27B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/B2-27B-i1-GGUF
 - Modelo base: https://huggingface.co/schneewolflabs/B2-27B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/B2-27B-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/B2-27B-i1-GGUF/resolve/main/B2-27B.imatrix.gguf

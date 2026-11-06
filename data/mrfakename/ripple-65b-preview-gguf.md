@@ -25,7 +25,7 @@ El repositorio ocupa 390,9 GB e incluye seis niveles de cuantizacion (BF16, Q8_0
 
 La arquitectura `ricursive` se aparta del transformer convencional en varios puntos documentados en la model card. La atencion es intercalada: cuatro de cada cinco capas emplean atencion con ventana deslizante de 1024 tokens y RoPE en variante NEOX, mientras que cada quinta capa aplica atencion completa sin codificacion posicional (NoPE). Cada bloque incorpora RMSNorm antes y despues tanto de la atencion como del MLP, ademas de RMSNorm por cabeza en las proyecciones Q y K. La salida de atencion pasa por una compuerta sigmoidea (`g_proj`) antes de la proyeccion `o_proj`. La proyeccion V de cada capa lee una interpolacion por capa, `sigmoid(lambda)`, entre el embedding escalado del token y el estado oculto normalizado, mientras que Q y K leen unicamente el estado oculto normalizado. El MLP acota la proyeccion gate a 20 y la proyeccion up a ±20 antes de la activacion. Los embeddings se escalan por √5120 y la cabeza de salida no esta atada a los embeddings de entrada.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni detalles adicionales del proceso de alineacion. La model card del cuantizado se limita a describir la arquitectura y el proceso de conversion. El parche `ricursive.patch` cubre tanto el conversor de HuggingFace a GGUF como el grafo de inferencia en llama.cpp. La verificacion frente a la implementacion original en Transformers en bf16, sobre un prompt de wikitext de 1100 tokens (que supera la ventana de 1024 y ejercita la ruta de sliding window), reporta una coincidencia top-1 del 98,8 % con KL medio de 4,1e-4 y KL maximo de 0,015 para el GGUF BF16, y del 98,5 % con KL medio de 7,7e-4 y maximo de 0,042 para Q8_0. Los primeros 30 tokens generados con decodificacion greedy a partir de la plantilla de chat fueron identicos a los de HuggingFace en ambos casos, y el tokenizador embebido coincide token a token con el de HuggingFace. Una conversion a float32 de un modelo truncado igualo exactamente a HuggingFace en fp32, con 100 % de top-1 y KL medio de 6e-8.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni detalles adicionales del proceso de alineacion. La model card del cuantizado se limita a describir la arquitectura y el proceso de conversion. El parche `ricursive.patch` cubre tanto el conversor de Hugging Face a GGUF como el grafo de inferencia en llama.cpp. La verificacion frente a la implementacion original en Transformers en bf16, sobre un prompt de wikitext de 1100 tokens (que supera la ventana de 1024 y ejercita la ruta de sliding window), reporta una coincidencia top-1 del 98,8 % con KL medio de 4,1e-4 y KL maximo de 0,015 para el GGUF BF16, y del 98,5 % con KL medio de 7,7e-4 y maximo de 0,042 para Q8_0. Los primeros 30 tokens generados con decodificacion greedy a partir de la plantilla de chat fueron identicos a los de Hugging Face en ambos casos, y el tokenizador embebido coincide token a token con el de Hugging Face. Una conversion a float32 de un modelo truncado igualo exactamente a Hugging Face en fp32, con 100 % de top-1 y KL medio de 6e-8.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 | Q3_K_M | 28,9 GiB | 1 | 9,23 |
 | Q2_K (no publicado) | — | — | 50,7 |
 
-El margen de error indicado es de ±0,4, por lo que las diferencias entre Q8_0, Q6_K, Q5_K_M y Q4_K_M se consideran ruido. La verificacion de fidelidad frente a HuggingFace se recoge en la seccion de arquitectura.
+El margen de error indicado es de ±0,4, por lo que las diferencias entre Q8_0, Q6_K, Q5_K_M y Q4_K_M se consideran ruido. La verificacion de fidelidad frente a Hugging Face se recoge en la seccion de arquitectura.
 
 ## Requisitos de hardware
 
@@ -95,7 +95,7 @@ No disponible una comparativa de benchmarks con alternativas, al no haberse publ
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mrfakename/Ripple-65B-Preview-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mrfakename/Ripple-65B-Preview-GGUF
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Perfil del autor de los cuantizados: https://x.com/realmrfakename
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -85,10 +85,10 @@ El autor indica ademas que el entrenamiento corrigio 113 prompts que el modelo b
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olo-qwen2.5-0.5b-hotfolder | 0,49B (adaptador) | no disponible | Tool calling especializado en olo-toolgate | no disponible | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32 768 tokens (segun documentacion del modelo base) | Instrucciones generales, tool calling nativo | Apache 2.0 (segun documentacion del modelo base) | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32 768 tokens (segun documentacion del modelo base) | Instrucciones generales, mayor capacidad | Apache 2.0 (segun documentacion del modelo base) | HuggingFace |
-| Hermes-2-Pro / modelos afinados para function calling de 1-3B | variable | variable | Tool calling generico | variable | HuggingFace |
+| olo-qwen2.5-0.5b-hotfolder | 0,49B (adaptador) | no disponible | Tool calling especializado en olo-toolgate | no disponible | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32 768 tokens (segun documentacion del modelo base) | Instrucciones generales, tool calling nativo | Apache 2.0 (segun documentacion del modelo base) | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32 768 tokens (segun documentacion del modelo base) | Instrucciones generales, mayor capacidad | Apache 2.0 (segun documentacion del modelo base) | Hugging Face |
+| Hermes-2-Pro / modelos afinados para function calling de 1-3B | variable | variable | Tool calling generico | variable | Hugging Face |
 
 La comparacion directa con alternativas de la misma categoria no esta disponible en la informacion proporcionada: no hay datos publicados de otros adaptadores de tool calling sobre Qwen2.5-0.5B evaluados con el mismo conjunto de 259 prompts.
 
@@ -106,7 +106,7 @@ La comparacion directa con alternativas de la misma categoria no esta disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olo-labs/olo-qwen2.5-0.5b-hotfolder
+- Modelo en Hugging Face: https://huggingface.co/olo-labs/olo-qwen2.5-0.5b-hotfolder
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio olo-toolgate: https://github.com/olo-labs/olo-toolgate
 - Repositorio olo-ai-training-mcp: https://github.com/olo-labs/olo-ai-training-mcp

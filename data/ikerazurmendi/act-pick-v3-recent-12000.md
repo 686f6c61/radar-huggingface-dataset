@@ -93,10 +93,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto / horizonte | Error offline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-pick-v3-recent-12000 (este) | 51.658.374 | chunk 90, replan cada 30 pasos | 16,87 (base 20,71) | Apache 2.0 | HuggingFace, 0 descargas |
-| act-pick-v3-6000 | no disponible (misma familia ACT) | chunk 90 | 15,16 (base 20,71) | Apache 2.0 | HuggingFace |
-| act-pick-v3-strict-2400 | no disponible (misma familia ACT) | chunk 90 | 15,14 (base 20,71) | Apache 2.0 | HuggingFace |
-| act-pick-v3-chunk60-4800 | no disponible (misma familia ACT) | chunk 60 | 11,94 (base 16,23, no comparable) | Apache 2.0 | HuggingFace |
+| act-pick-v3-recent-12000 (este) | 51.658.374 | chunk 90, replan cada 30 pasos | 16,87 (base 20,71) | Apache 2.0 | Hugging Face, 0 descargas |
+| act-pick-v3-6000 | no disponible (misma familia ACT) | chunk 90 | 15,16 (base 20,71) | Apache 2.0 | Hugging Face |
+| act-pick-v3-strict-2400 | no disponible (misma familia ACT) | chunk 90 | 15,14 (base 20,71) | Apache 2.0 | Hugging Face |
+| act-pick-v3-chunk60-4800 | no disponible (misma familia ACT) | chunk 60 | 11,94 (base 16,23, no comparable) | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre políticas alternativas de otros autores para SO-101 en la documentación proporcionada, por lo que la comparación se limita a los checkpoints de la misma familia. El autor indica que los mejores checkpoints de las tiradas principales están dentro del ruido entre sí.
 
@@ -113,7 +113,7 @@ No se dispone de información sobre políticas alternativas de otros autores par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-12000
+- Modelo en Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-12000
 - Checkpoint de referencia de la misma ronda (super): https://huggingface.co/IkerAzurmendi/act-pick-v3-6000
 - Checkpoint de la receta estricta: https://huggingface.co/IkerAzurmendi/act-pick-v3-strict-2400
 - Checkpoint con chunk 60: https://huggingface.co/IkerAzurmendi/act-pick-v3-chunk60-4800

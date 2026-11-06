@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StatsQuo-Qwen3-4B-Instruct es un ajuste fino (fine-tune) del modelo Qwen3-4B, desarrollado por el usuario MaltaL y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de lenguaje causal denso de aproximadamente 4.000 millones de parametros, derivado de `unsloth/Qwen3-4B-bnb-4bit`, que es a su vez una version cuantizada a 4 bits (bitsandbytes) del Qwen3-4B original de Alibaba. El entrenamiento se realizo con la libreria Unsloth, que acelera el fine-tuning de modelos cuantizados (QLoRA) en torno a 2x respecto a flujos estandar.
+StatsQuo-Qwen3-4B-Instruct es un ajuste fino (fine-tune) del modelo Qwen3-4B, desarrollado por el usuario MaltaL y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de lenguaje causal denso de aproximadamente 4.000 millones de parametros, derivado de `unsloth/Qwen3-4B-bnb-4bit`, que es a su vez una version cuantizada a 4 bits (bitsandbytes) del Qwen3-4B original de Alibaba. El entrenamiento se realizo con la libreria Unsloth, que acelera el fine-tuning de modelos cuantizados (QLoRA) en torno a 2x respecto a flujos estandar.
 
 El modelo resuelve tareas de generacion de texto, comprension del lenguaje, codigo y matematicas heredadas de la familia Qwen3, aunque se ha afinado especificamente para un caso de uso no documentado en la model card (el nombre "StatsQuo" sugiere un dominio estadistico o de analisis, pero no se aporta informacion al respecto). Es relevante para desarrolladores que busquen un modelo pequeno, ejecutable en hardware de consumo y con licencia permisiva, que puedan adaptar localmente con recursos limitados.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MaltaL/StatsQuo-Qwen3-4B-Instruct | ~4B | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-4B | ~4B | 32.768 tokens (base) | apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4B | no disponible en esta busqueda | apache-2.0 | HuggingFace, Qualcomm AI Hub, Ollama |
+| MaltaL/StatsQuo-Qwen3-4B-Instruct | ~4B | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-4B | ~4B | 32.768 tokens (base) | apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B | no disponible en esta busqueda | apache-2.0 | Hugging Face, Qualcomm AI Hub, Ollama |
 
 El modelo comparte arquitectura y tamano con el Qwen3-4B original, pero carece de la documentacion, el soporte multilingue declarado y la validacion empirica de aquellos. No se dispone de datos de rendimiento comparativo.
 
@@ -82,7 +82,7 @@ El modelo comparte arquitectura y tamano con el Qwen3-4B original, pero carece d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MaltaL/StatsQuo-Qwen3-4B-Instruct
+- Hugging Face: https://huggingface.co/MaltaL/StatsQuo-Qwen3-4B-Instruct
 - Modelo base (cuantizado): https://huggingface.co/unsloth/Qwen3-4B-bnb-4bit
 - Qwen3-4B (modelo original): https://huggingface.co/Qwen/Qwen3-4B
 - Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

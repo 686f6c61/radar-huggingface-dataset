@@ -83,10 +83,10 @@ No se proporcionaron datos de benchmarks de modelos comparables en la informaci�
 
 | Modelo | Parámetros | Contexto | Licencia | Orientación | Disponibilidad |
 |---|---|---|---|---|---|
-| StageGuard Qwen3.5-0.8B (este modelo) | 852.985.920 | no disponible | Apache 2.0 | Predicción de transiciones de subtarea en B1K, multimodal | HuggingFace, safetensors |
-| Qwen/Qwen3.5-0.8B-Base | no disponible | no disponible | no disponible | Modelo base multimodal generalista | HuggingFace |
-| SmolVLM-500M-Instruct | ~0,5 mil millones | no disponible | Apache 2.0 | VLM compacto de propósito general | HuggingFace |
-| Qwen2.5-VL-3B-Instruct | ~3 mil millones | no disponible | Apache 2.0 | VLM generalista de gama pequeña-mediana | HuggingFace |
+| StageGuard Qwen3.5-0.8B (este modelo) | 852.985.920 | no disponible | Apache 2.0 | Predicción de transiciones de subtarea en B1K, multimodal | Hugging Face, safetensors |
+| Qwen/Qwen3.5-0.8B-Base | no disponible | no disponible | no disponible | Modelo base multimodal generalista | Hugging Face |
+| SmolVLM-500M-Instruct | ~0,5 mil millones | no disponible | Apache 2.0 | VLM compacto de propósito general | Hugging Face |
+| Qwen2.5-VL-3B-Instruct | ~3 mil millones | no disponible | Apache 2.0 | VLM generalista de gama pequeña-mediana | Hugging Face |
 
 La diferencia funcional clave es que este checkpoint está especializado en una tarea de decisión de estado concreta y no compite en capacidades generales de visión-lenguaje con los VLM de propósito general de la tabla.
 
@@ -106,7 +106,7 @@ La diferencia funcional clave es que este checkpoint está especializado en una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hoshipu/stageguard-qwen3.5-0.8b-b1k-task69-removed-fullparam-45k
+- Modelo en Hugging Face: https://huggingface.co/Hoshipu/stageguard-qwen3.5-0.8b-b1k-task69-removed-fullparam-45k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Paper, blog, repositorio o demo del proyecto StageGuard: no disponibles
 - Nota: los resultados de la búsqueda web proporcionada no contienen enlaces relevantes al modelo (únicamente referencias a Google Maps).

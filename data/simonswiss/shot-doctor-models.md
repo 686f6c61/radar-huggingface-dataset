@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de otras alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/simonswiss/shot-doctor-models
+- Repositorio en Hugging Face: https://huggingface.co/simonswiss/shot-doctor-models
 - Aplicacion Shot Doctor: https://www.shotdoctor.xyz
 - OpenMMLab MMPose, proyectos RTMPose y RTMW: https://github.com/open-mmlab/mmpose/tree/main/projects/rtmpose
 - rtmlib (origen del ONNX de RTMW): https://github.com/Tau-J/rtmlib

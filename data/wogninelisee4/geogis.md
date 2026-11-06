@@ -2,7 +2,7 @@
 
 ## Resumen
 
-geoGis es un repositorio de modelo publicado en HuggingFace bajo el identificador `wogninelisee4/geoGis`, atribuido al usuario wogninelisee4 y distribuido con licencia Apache 2.0. En el momento de la consulta no se ha publicado informacion tecnica alguna: la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin tamano de parametros y sin detalles de entrenamiento.
+geoGis es un repositorio de modelo publicado en Hugging Face bajo el identificador `wogninelisee4/geoGis`, atribuido al usuario wogninelisee4 y distribuido con licencia Apache 2.0. En el momento de la consulta no se ha publicado informacion tecnica alguna: la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin tamano de parametros y sin detalles de entrenamiento.
 
 El repositorio no registra descargas ni valoraciones (0 descargas, 0 likes) y figura como creado y actualizado en la misma marca temporal, lo que sugiere una publicacion sin mantenimiento posterior ni proceso de validacion por parte de la comunidad. Tampoco se declaran idiomas soportados ni pipeline de inferencia asociado, por lo que no es posible clasificarlo funcionalmente como modelo de generacion de texto, vision, audio u otra modalidad.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, no hay datos disponibles sobre el volumen de tokens u
 - No se ha declarado soporte de agentes ni razonamiento multi-paso.
 - No se ha declarado cobertura multilingue.
 - No se ha declarado ningun modo especial (thinking mode, vision, audio, etc.).
-- La ausencia de pipeline en los metadatos de HuggingFace impide confirmar incluso la modalidad basica del modelo.
+- La ausencia de pipeline en los metadatos de Hugging Face impide confirmar incluso la modalidad basica del modelo.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ No disponible. La comparativa requiere como minimo conocer el numero de parametr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wogninelisee4/geoGis | no disponible | no disponible | apache-2.0 | Repositorio HuggingFace sin descargas ni likes |
+| wogninelisee4/geoGis | no disponible | no disponible | apache-2.0 | Repositorio Hugging Face sin descargas ni likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,6 +84,6 @@ No disponible. La comparativa requiere como minimo conocer el numero de parametr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wogninelisee4/geoGis
+- Repositorio en Hugging Face: https://huggingface.co/wogninelisee4/geoGis
 - Resultados de busqueda web: sin coincidencias relevantes. Los unicos enlaces recuperados corresponden a Zeendoc (https://www.zeendoc.com/), plataforma de gestion documental sin relacion identificada con el modelo.
 - Paper, blog, repositorio de codigo, demo o documentacion adicional: no disponible.

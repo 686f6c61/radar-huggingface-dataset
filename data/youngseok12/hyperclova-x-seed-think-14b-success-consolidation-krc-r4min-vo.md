@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HyperCLOVA-X-SEED-Think-14B-success-consolidation-krc-r4min-vo | 14.7B | no disponible | hyperclovax-seed | HuggingFace |
-| HyperCLOVA-X-SEED-Think-14B-success-consolidation-krc-r4min-ties | 14.7B | no disponible | hyperclovax-seed | HuggingFace |
-| naver-hyperclovax/HyperCLOVAX-SEED-Think-14B | 14.7B | no disponible | hyperclovax-seed | HuggingFace |
+| HyperCLOVA-X-SEED-Think-14B-success-consolidation-krc-r4min-vo | 14.7B | no disponible | hyperclovax-seed | Hugging Face |
+| HyperCLOVA-X-SEED-Think-14B-success-consolidation-krc-r4min-ties | 14.7B | no disponible | hyperclovax-seed | Hugging Face |
+| naver-hyperclovax/HyperCLOVAX-SEED-Think-14B | 14.7B | no disponible | hyperclovax-seed | Hugging Face |
 
 El modelo hermano `...-ties` es la comparación más directa: comparte datos, hiperparámetros y número de parámetros entrenables, y solo difiere en los módulos LoRA (`q_proj` y `v_proj` en lugar de `v_proj` y `o_proj`). No se dispone de más alternativas comparables en la información proporcionada.
 
@@ -70,7 +70,7 @@ El modelo hermano `...-ties` es la comparación más directa: comparte datos, hi
 - Riesgo de alucinación: no evaluado formalmente. El entrenamiento con razonamientos generados por el propio modelo base puede amplificar errores o sesgos del modelo original.
 - Limitaciones de contexto e idioma: el modelo está orientado exclusivamente al coreano; no hay información sobre soporte multilingüe. La longitud de contexto no está documentada.
 - Restricciones de licencia: la licencia `hyperclovax-seed` es una licencia personalizada ("other") que exige cumplir el acuerdo de licencia del modelo base de NAVER, incluyendo atribución y política de usos prohibidos. El nombre del modelo debe comenzar por "HyperCLOVA X" según la licencia.
-- Advertencia para producción: es un modelo experimental con 0 descargas y 0 likes en HuggingFace, entrenado con una sola época y un conjunto de datos limitado (836 filas). No se han publicado benchmarks formales, por lo que no debería utilizarse en producción sin una evaluación exhaustiva y una validación independiente.
+- Advertencia para producción: es un modelo experimental con 0 descargas y 0 likes en Hugging Face, entrenado con una sola época y un conjunto de datos limitado (836 filas). No se han publicado benchmarks formales, por lo que no debería utilizarse en producción sin una evaluación exhaustiva y una validación independiente.
 
 ## Enlaces
 

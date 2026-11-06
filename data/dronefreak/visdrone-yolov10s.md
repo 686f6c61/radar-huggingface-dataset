@@ -99,7 +99,7 @@ Todas las cifras de esta sección marcadas como estimación son orientativas y n
 
 | Modelo | Parametros | mAP@50 (VisDrone-DET) | mAP@50-95 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLOv10s (este modelo) | 8,1 M | 44,51 | 26,28 | AGPL-3.0 | HuggingFace, via `ultralytics` |
+| YOLOv10s (este modelo) | 8,1 M | 44,51 | 26,28 | AGPL-3.0 | Hugging Face, via `ultralytics` |
 | YOLOv9s | No disponible | 45,38 | 26,95 | Segun repositorio original de YOLOv9 (no confirmada en la informacion disponible) | Peso comparable en DetectionBench |
 | YOLOv8s | No disponible | 43,47 | 25,77 | AGPL-3.0 (Ultralytics) | Ampliamente disponible |
 | RF-DETR Nano | No disponible | 37,92 | 20,88 | No disponible en la informacion proporcionada | DetectionBench |
@@ -122,7 +122,7 @@ En la comparativa del propio autor, YOLOv9s supera ligeramente a este YOLOv10s e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/visdrone-yolov10s
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/visdrone-yolov10s
 - Repositorio DetectionBench (framework de entrenamiento y evaluacion): https://github.com/dronefreak/DetectionBench
 - Toolkit complementario VisDrone-dataset-python-toolkit: https://github.com/dronefreak/VisDrone-dataset-python-toolkit
 - Coleccion VisDrone Detection Model Zoo: https://huggingface.co/collections/dronefreak/visdrone-detection-model-zoo

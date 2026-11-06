@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una politica de robotica (vision-language-action) resultado del ajuste fino del modelo base NVIDIA GR00T N1.7-3B sobre el conjunto de datos simulado "SO-101 procedural layout-aware DR" (250 episodios, 90.549 fotogramas). Lo publica el usuario de HuggingFace `liorbenhorin-nv` y esta pensado para controlar un brazo robotico SO-101 dentro del ecosistema LeRobot. El entrenamiento se realizo durante 20.000 pasos de optimizador sobre cuatro GPU RTX PRO 6000 Blackwell, con un lote global de 64 y semilla 42.
+Este repositorio contiene una politica de robotica (vision-language-action) resultado del ajuste fino del modelo base NVIDIA GR00T N1.7-3B sobre el conjunto de datos simulado "SO-101 procedural layout-aware DR" (250 episodios, 90.549 fotogramas). Lo publica el usuario de Hugging Face `liorbenhorin-nv` y esta pensado para controlar un brazo robotico SO-101 dentro del ecosistema LeRobot. El entrenamiento se realizo durante 20.000 pasos de optimizador sobre cuatro GPU RTX PRO 6000 Blackwell, con un lote global de 64 y semilla 42.
 
 El problema que aborda es el de generar acciones de manipulacion (brazo y pinza) a partir de observaciones visuales y, en principio, instrucciones de lenguaje, con un fuerte enfasis en la variabilidad de escenas: el dataset emplea randomizacion de dominio "procedural layout-aware", es decir, variacion sistematica de la disposicion de los objetos para mejorar la generalizacion. El modelo tiene 3.144.016.000 parametros (unos 3,14 mil millones) y un tamano de repositorio de 12,6 GB, coherente con pesos almacenados en FP32.
 
@@ -89,7 +89,7 @@ No se dispone de datos verificados de rendimiento para establecer una comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009_GR00T17_20k
+- Modelo en Hugging Face: https://huggingface.co/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009_GR00T17_20k
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009
 - Libreria LeRobot: https://github.com/huggingface/lerobot

@@ -85,7 +85,7 @@ No se dispone de comparativas de calidad entre el modelo cuantizado ESCHAM y otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yaminerl/escha-amd-port
+- Repositorio Hugging Face: https://huggingface.co/yaminerl/escha-amd-port
 - GGUF del modelo base: https://huggingface.co/aj9o9/Qwen3.8-27B-Escha-W2-GGUF
 - Fork original de llama.cpp: https://github.com/Ajay9o9/llama.cpp-escha (rama `escha-w2-dense`)
 - Port en GitHub (mismo autor): https://github.com/YanissAmz/escha-port

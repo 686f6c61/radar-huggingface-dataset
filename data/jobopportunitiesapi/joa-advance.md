@@ -88,8 +88,8 @@ Sobre las 244 ofertas de la arena que el modelo entrenador respondió, JOA Advan
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | JOA Advance | ~8B (base) + LoRA r16 | no disponible | 92,7 en arena; 84,7 % en verificación | JOA Model License (prevista) | Pesos no publicados |
-| granite-3.3-8b-instruct (sin ajustar) | ~8B | no disponible en esta ficha | 86,4 en arena; 71,4 % en verificación | Apache 2.0 | Pesos públicos en HuggingFace |
-| Qwen/Qwen3.5-27B (generador de etiquetas) | ~27B | no disponible en esta ficha | 89,2 en arena; 86,3 % en verificación | Apache 2.0 | Pesos públicos en HuggingFace |
+| granite-3.3-8b-instruct (sin ajustar) | ~8B | no disponible en esta ficha | 86,4 en arena; 71,4 % en verificación | Apache 2.0 | Pesos públicos en Hugging Face |
+| Qwen/Qwen3.5-27B (generador de etiquetas) | ~27B | no disponible en esta ficha | 89,2 en arena; 86,3 % en verificación | Apache 2.0 | Pesos públicos en Hugging Face |
 
 La comparación relevante es de eficiencia: JOA Advance iguala o supera al modelo de 27B en la arena con menos de una vigésima parte de tokens de salida, aunque el modelo grande conserva una ligera ventaja (1,6 puntos) en el conjunto verificado. Frente a su propio modelo base sin ajustar, la mejora es de 6,3 puntos en la arena y 13,3 puntos en verificación, lo que cuantifica el efecto del adaptador.
 
@@ -108,7 +108,7 @@ La comparación relevante es de eficiencia: JOA Advance iguala o supera al model
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/JobOpportunitiesAPI/joa-advance
+- Página del modelo en Hugging Face: https://huggingface.co/JobOpportunitiesAPI/joa-advance
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.3-8b-instruct
 - Dataset de la arena de extracción: https://huggingface.co/datasets/JobOpportunitiesAPI/joa-extraction-arena
 - Licencia del modelo (LICENSE.md en el repositorio): https://huggingface.co/JobOpportunitiesAPI/joa-advance/blob/main/LICENSE.md

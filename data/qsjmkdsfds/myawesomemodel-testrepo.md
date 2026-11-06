@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es la denominacion que aparece en la model card de un repositorio alojado en HuggingFace bajo el identificador `QSJMKDSFDS/MyAwesomeModel-TestRepo`. El propio nombre del repositorio ("TestRepo") y su tamano (0,0 GB) apuntan a que se trata de un repositorio de prueba o de demostracion, no de un modelo entrenado y distribuible. El autor es el usuario QSJMKDSFDS, sin mas informacion publica disponible.
+MyAwesomeModel es la denominacion que aparece en la model card de un repositorio alojado en Hugging Face bajo el identificador `QSJMKDSFDS/MyAwesomeModel-TestRepo`. El propio nombre del repositorio ("TestRepo") y su tamano (0,0 GB) apuntan a que se trata de un repositorio de prueba o de demostracion, no de un modelo entrenado y distribuible. El autor es el usuario QSJMKDSFDS, sin mas informacion publica disponible.
 
 Existe una contradiccion importante en la informacion proporcionada: las etiquetas del repositorio describen un modelo de tipo BERT orientado a `feature-extraction` con la libreria `transformers`, mientras que la model card describe un supuesto modelo de razonamiento de ultima generacion, con mejoras en matematicas, programacion y logica, soporte de function calling y una supuesta mejora en AIME 2025 del 70% al 87,5%. No hay forma de conciliar ambos relatos con los datos disponibles.
 
@@ -84,7 +84,7 @@ Dato adicional declarado en el texto: en AIME 2025 la precision pasaria del 70% 
 - VRAM estimada para inferencia: no disponible. El repositorio ocupa 0,0 GB, por lo que no hay pesos que cargar.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. Si el modelo fuese un BERT de extraccion de caracteristicas, seria ejecutable en CPU y en GPUs de gama media, pero esto es una extrapolacion, no un dato del repositorio.
-- Opciones de despliegue: no disponible. Las etiquetas incluyen `endpoints_compatible`, lo que sugiere compatibilidad con HuggingFace Inference Endpoints, pero no hay artefactos para desplegar.
+- Opciones de despliegue: no disponible. Las etiquetas incluyen `endpoints_compatible`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints, pero no hay artefactos para desplegar.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -106,5 +106,5 @@ No disponible. La model card no identifica su modelo base ni ofrece cifras de re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/QSJMKDSFDS/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/QSJMKDSFDS/MyAwesomeModel-TestRepo
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los resultados devueltos correspondian a hilos de foros en frances sobre incidencias de la plataforma Leboncoin y sobre el sistema de pago Wero, sin relacion alguna con el modelo.

@@ -80,9 +80,9 @@ Estimaciones derivadas del recuento de parámetros (4.411.424.256) y del tamaño
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Este checkpoint (`Diluner/...-s2-textcraft-20260920`) | 4.411.424.256 | no disponible | no declarada | safetensors en HuggingFace | no disponibles |
-| Qwen/Qwen3-4B (modelo base) | no disponible en la información suministrada | no disponible | no disponible; consultar el repositorio del modelo base | público en HuggingFace | no consultados en esta ficha |
-| Alternativas de rango 3-4B (Llama-3.2-3B, Phi-4-mini, Gemma-3-4B y similares) | no disponible | no disponible | no disponible | públicas en HuggingFace | no comparados aquí |
+| Este checkpoint (`Diluner/...-s2-textcraft-20260920`) | 4.411.424.256 | no disponible | no declarada | safetensors en Hugging Face | no disponibles |
+| Qwen/Qwen3-4B (modelo base) | no disponible en la información suministrada | no disponible | no disponible; consultar el repositorio del modelo base | público en Hugging Face | no consultados en esta ficha |
+| Alternativas de rango 3-4B (Llama-3.2-3B, Phi-4-mini, Gemma-3-4B y similares) | no disponible | no disponible | no disponible | públicas en Hugging Face | no comparados aquí |
 
 La comparación cuantitativa no es posible con la información disponible: no hay benchmarks de este checkpoint ni se han verificado en esta ficha los datos de los modelos alternativos. La única diferencia objetiva y verificable es el procedimiento de entrenamiento secuencial multi-entorno, que no es habitual en los modelos instructivos genéricos de este rango de tamaño.
 
@@ -101,7 +101,7 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-sft-s2-textcraft-20260920
+- Repositorio Hugging Face: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-sft-s2-textcraft-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Fichero de referencias y checksums del experimento: `experiment.json` en la raíz del repositorio
 - Búsqueda web realizada: los resultados obtenidos corresponden a páginas genéricas sobre historia de la inteligencia artificial y no aportan información relevante sobre este modelo. No se han localizado papers, blogs ni demos adicionales asociados a este checkpoint.

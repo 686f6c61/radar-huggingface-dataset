@@ -81,7 +81,7 @@ La comparacion con alternativas concretas no puede completarse con los datos pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lofcz/VibeVoice-CSK1
+- Modelo en Hugging Face: https://huggingface.co/lofcz/VibeVoice-CSK1
 - Modelo base: https://huggingface.co/microsoft/VibeVoice-ASR
 - Repositorio de VibeVoice (Microsoft): https://github.com/microsoft/VibeVoice
 - Receta oficial de fusion de LoRA: https://github.com/microsoft/VibeVoice/blob/16fb2cb1217c9934a886e1948ffb06120caa2df5/finetuning-asr/README.md#merging-lora-weights-optional

@@ -79,7 +79,7 @@ Nota: los datos de Qwen3-4B-Instruct-2507 y DeepSeek-Coder provienen de conocimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-bgroot8
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-bgroot8
 - Repositorio del proyecto Cobalt (OSU-NLP-Group): https://github.com/OSU-NLP-Group/cobalt
 - Pagina del equipo ByteDance Seed (relacionado con el proyecto Cobalt): https://seed.bytedance.com/en/
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507 (no verificado en la busqueda, pero es el modelo base indicado)

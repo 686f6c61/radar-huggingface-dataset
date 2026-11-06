@@ -118,8 +118,8 @@ Comparacion orientativa frente al modelo base y a las alternativas incluidas por
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/danmoreng/Mellum2.1-12B-A2.5B-Thinking-Padra-EXL3
-- Modelo base en HuggingFace: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
+- Modelo cuantizado en Hugging Face: https://huggingface.co/danmoreng/Mellum2.1-12B-A2.5B-Thinking-Padra-EXL3
+- Modelo base en Hugging Face: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Repositorio de Padra: https://github.com/Danmoreng/padra
 - Revision de Padra requerida: https://github.com/Danmoreng/padra/tree/999c86742f255dc40a3265f2077a15d6a32061c1
 - Referencia arXiv citada en las etiquetas del modelo: arxiv:2605.31268 (sin detalles disponibles en la informacion proporcionada)

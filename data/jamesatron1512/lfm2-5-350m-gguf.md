@@ -80,6 +80,6 @@ La comparativa se basa en características generales, ya que no se dispone de be
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/jamesatron1512/LFM2.5-350M-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-350M
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2.5-350M/blob/main/LICENSE
 - Web de Liquid AI (no confirmada): no disponible en la información proporcionada

@@ -112,7 +112,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace (ONNX): https://huggingface.co/onnx-community/wav2vec2-base-arabic-without-reused-en-token-ids-v1-ONNX
+- Modelo en Hugging Face (ONNX): https://huggingface.co/onnx-community/wav2vec2-base-arabic-without-reused-en-token-ids-v1-ONNX
 - Modelo base (PyTorch): https://huggingface.co/Mohammadawad1/wav2vec2-base-arabic-without-reused-en-token-ids-v1
 - Modelo previo al ajuste: https://huggingface.co/Mohammadawad1/wav2vec2-base-arabic-without-reused-en-token-ids
 - Space de conversion a ONNX: https://huggingface.co/spaces/onnx-community/convert-to-onnx

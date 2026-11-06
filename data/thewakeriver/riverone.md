@@ -81,7 +81,7 @@ RiverONE se distingue de los VLM generales por su especialización en un dominio
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se indica ninguna licencia en la página de HuggingFace ni en la model card, lo que genera incertidumbre jurídica para uso comercial.
+- Licencia no especificada: no se indica ninguna licencia en la página de Hugging Face ni en la model card, lo que genera incertidumbre jurídica para uso comercial.
 - Dominio limitado: el modelo está especializado en gráficos de calibración cuántica; su rendimiento en tareas generales de visión y lenguaje no está documentado y probablemente sea inferior al de modelos generales de tamaño similar.
 - Rendimiento bajo en extracción de puntos clave: con solo un 46,85% en Q3, esta capacidad es significativamente más débil que el resto, lo que limita su uso en tareas que requieren comprensión detallada del contenido de los gráficos.
 - Dependencia de código personalizado: el modelo requiere trust_remote_code=True y archivos de implementación específicos (modeling_riverone_qc.py, modeling_ising_vit.py), lo que introduce riesgos de seguridad y mantenimiento en producción.
@@ -92,7 +92,7 @@ RiverONE se distingue de los VLM generales por su especialización en un dominio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThewakeRiver/RiverONE
+- Hugging Face: https://huggingface.co/ThewakeRiver/RiverONE
 - GitHub (repositorio): https://github.com/THeWakeSystems/RiverONE
 - Paper arXiv: https://arxiv.org/abs/2606.29966
 - Paper HTML: https://arxiv.org/html/2606.29966v1

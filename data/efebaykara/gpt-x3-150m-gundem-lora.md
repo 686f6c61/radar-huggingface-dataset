@@ -91,11 +91,11 @@ BERTurk requiere entrenamiento con cabezas de clasificacion propias y no genera 
 - Licencias separadas: el adaptador es Apache 2.0, pero la licencia del modelo base sigue sus ficheros upstream, y el codigo auxiliar Gündem es MIT; verificar compatibilidad antes de uso comercial.
 - Los titulares originales, las respuestas del profesor y el dataset completo no se redistribuyen, lo que limita la reproducibilidad externa.
 - Metricas de una sola semilla en un unico test de 101 ejemplos: baja significancia estadistica.
-- 0 descargas y 0 likes en HuggingFace: sin comunidad ni validacion de terceros conocida.
+- 0 descargas y 0 likes en Hugging Face: sin comunidad ni validacion de terceros conocida.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/efebaykara/GPT-X3-150M-Gundem-LoRA
+- Modelo en Hugging Face: https://huggingface.co/efebaykara/GPT-X3-150M-Gundem-LoRA
 - Modelo base: https://huggingface.co/AxiomicLabs/GPT-X3-150M
 - Herramientas de entrenamiento y benchmark (GitHub): https://github.com/efebaykaraa/Gundem
 - Todos los modelos publicados del proyecto: https://github.com/efebaykaraa/Gundem/releases/tag/models-v1.0.0

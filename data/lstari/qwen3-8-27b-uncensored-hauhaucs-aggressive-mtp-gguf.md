@@ -13,7 +13,7 @@ Con un contexto nativo de 262.144 tokens (extensible hasta 1.000.000) y soporte 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Dense 27B con vision encoder; 64 capas, hidden size 5.120, FFN 17.408; 48 capas Gated DeltaNet + 16 capas gated-attention |
-| Parametros totales | 27B (según model card); los metadatos de HuggingFace indican 1.863.907.840, valor que parece erróneo |
+| Parametros totales | 27B (según model card); los metadatos de Hugging Face indican 1.863.907.840, valor que parece erróneo |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262.144 tokens nativo; extensible hasta 1.000.000 |
 | Tipos de cuantizacion | Q8_K_P, Q6_K_P, Q5_K_P, Q4_K_P, IQ4_XS, Q3_K_P, IQ3_M, IQ3_XS, Q2_K_P, IQ2_M (todas K_P personalizadas); más projector BF16 y sidecar FastMTP |
@@ -95,7 +95,7 @@ Las diferencias principales radican en el perfil de comportamiento y en las opti
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/lstari/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio Hugging Face de esta variante: https://huggingface.co/lstari/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página de LM Studio sobre Qwen3.8: https://lmstudio.ai/models/qwen3.8

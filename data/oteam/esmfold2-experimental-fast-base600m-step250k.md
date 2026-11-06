@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / MSA | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ESMFold2 Experimental Fast Base600M Step250k (este) | 746 M (safetensors); 6.530,863 M declarados con ESMC-6B | Sin MSA; single-sequence | AGPL-3.0 | HuggingFace (oteam), 0 descargas |
-| ESMFold2 (oteam/esmfold2) | 6.579,742 M declarados | Con MSA opcional; 48 bloques | AGPL-3.0 | HuggingFace (oteam) |
-| ESMFold2 Fast (oteam/esmfold2-fast) | 6.533,723 M declarados | Sin MSA; 24 bloques | AGPL-3.0 | HuggingFace (oteam) |
-| ESMFold2 Experimental (oteam/esmfold2-experimental) | 6.577,328 M declarados | Con MSA; 48 bloques; flujo completo de 19 pares modelo-procesador | AGPL-3.0 | HuggingFace (oteam) |
+| ESMFold2 Experimental Fast Base600M Step250k (este) | 746 M (safetensors); 6.530,863 M declarados con ESMC-6B | Sin MSA; single-sequence | AGPL-3.0 | Hugging Face (oteam), 0 descargas |
+| ESMFold2 (oteam/esmfold2) | 6.579,742 M declarados | Con MSA opcional; 48 bloques | AGPL-3.0 | Hugging Face (oteam) |
+| ESMFold2 Fast (oteam/esmfold2-fast) | 6.533,723 M declarados | Sin MSA; 24 bloques | AGPL-3.0 | Hugging Face (oteam) |
+| ESMFold2 Experimental (oteam/esmfold2-experimental) | 6.577,328 M declarados | Con MSA; 48 bloques; flujo completo de 19 pares modelo-procesador | AGPL-3.0 | Hugging Face (oteam) |
 
 La comparación se limita a las variantes de la propia familia OFoldX, ya que la información disponible no incluye datos de benchmarks ni especificaciones de modelos alternativos de terceros (por ejemplo, AlphaFold3) que permitan una comparación rigurosa.
 
@@ -96,7 +96,7 @@ La comparación se limita a las variantes de la propia familia OFoldX, ya que la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/esmfold2-experimental-fast-base600m-step250k
+- Modelo en Hugging Face: https://huggingface.co/oteam/esmfold2-experimental-fast-base600m-step250k
 - Variante completa: https://huggingface.co/oteam/esmfold2
 - Variante Fast: https://huggingface.co/oteam/esmfold2-fast
 - Variante Experimental: https://huggingface.co/oteam/esmfold2-experimental

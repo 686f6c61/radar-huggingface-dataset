@@ -18,7 +18,7 @@ Su relevancia es doble: por un lado, ejemplifica el flujo de trabajo habitual de
 | Longitud de contexto | 8 192 tokens (ventana de entrenamiento y contexto declarado) |
 | Tipos de cuantizacion | El adaptador se distribuye en F16 (safetensors) y en GGUF F16; el modelo base se usa en 4 bits durante el entrenamiento y la model card referencia un GGUF `Bonsai-27B-Q1_0.gguf` para llama.cpp. No se enumeran otras cuantizaciones en la informacion disponible |
 | Idiomas soportados | no disponible (no declarados; se heredan del modelo base) |
-| Licencia | Apache 2.0 segun la model card; la metadata de HuggingFace no declara licencia. Los datasets y el modelo base tienen sus propias licencias |
+| Licencia | Apache 2.0 segun la model card; la metadata de Hugging Face no declara licencia. Los datasets y el modelo base tienen sus propias licencias |
 | Formato de pesos | safetensors (PEFT: `adapter_model.safetensors` + `adapter_config.json`), GGUF (`Shiba-Coder-LoRA-F16.gguf`), tokenizer.json y chat_template.jinja |
 | Plantilla de chat | `qwen3-thinking` |
 | Metodo de ajuste | LoRA + SFT (Unsloth + TRL `SFTTrainer`), r=32, alpha=64 |
@@ -93,8 +93,8 @@ La comparación estructural favorece al adaptador en coste de distribución y en
 - Ausencia total de benchmarks públicos (HumanEval, MBPP, SWE-bench): no hay evidencia cuantitativa de mejora sobre el modelo base.
 - El LoRA es intencionadamente de rango bajo (r=32, alpha=64); adapta estilo y comportamiento, no incorpora conocimiento nuevo, por lo que los fallos de conocimiento del base persisten.
 - Ventana de contexto de 8 192 tokens, insuficiente para repositorios grandes o conversaciones largas; además, el entrenamiento se filtró a ese límite, por lo que el comportamiento más allá del mismo no está validado.
-- El modelo base se distribuye como "unpacked", sin información pública en la documentación consultada sobre su procedencia exacta, datos de entrenamiento originales ni licencia declarada en la metadata de HuggingFace; conviene verificar la licencia del base antes de uso comercial.
-- La licencia Apache 2.0 aparece en la model card, pero el campo de licencia de HuggingFace figura como no disponible y los tres datasets de entrenamiento tienen sus propias condiciones; es necesario comprobar la compatibilidad antes de un despliegue comercial.
+- El modelo base se distribuye como "unpacked", sin información pública en la documentación consultada sobre su procedencia exacta, datos de entrenamiento originales ni licencia declarada en la metadata de Hugging Face; conviene verificar la licencia del base antes de uso comercial.
+- La licencia Apache 2.0 aparece en la model card, pero el campo de licencia de Hugging Face figura como no disponible y los tres datasets de entrenamiento tienen sus propias condiciones; es necesario comprobar la compatibilidad antes de un despliegue comercial.
 - Idiomas soportados no declarados: no hay garantía de calidad fuera del inglés, ni evidencia de buen rendimiento en castellano.
 - Riesgo de alucinación heredado: en tareas de código puede inventar APIs, nombres de funciones o dependencias inexistentes, especialmente fuera de los patrones vistos en el corpus (destilación de Qwen3.8-Max y código de `guell00/qwen-3.8-code`).
 - Posible contaminación de los datos de evaluación: los datasets de entrenamiento son públicos y de gran tamaño, lo que puede inflar resultados en evaluaciones futuras si no se aplica un filtro de solapamiento.
@@ -105,7 +105,7 @@ La comparación estructural favorece al adaptador en coste de distribución y en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gmartinezr/Shiba-Coder-27B-Max
+- Modelo en Hugging Face: https://huggingface.co/Gmartinezr/Shiba-Coder-27B-Max
 - Modelo base: https://huggingface.co/prism-ml/Bonsai-27B-unpacked
 - Repositorio de codigo y resultados: https://github.com/GinesMr/Shiba-Coder-27B-Max
 - Resumen de entrenamiento: https://github.com/GinesMr/Shiba-Coder-27B-Max/blob/main/results/train_summary.md

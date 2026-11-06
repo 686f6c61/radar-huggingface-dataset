@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256-grpo130` es un ajuste fino (fine-tune) del modelo base `meta-llama/Llama-3.2-3B` de Meta, publicado por el usuario ollybritton en HuggingFace. Se trata de un modelo denso, decoder-only, de 3.212.749.824 parametros (3,21 mil millones), distribuido en formato safetensors bajo la licencia llama3.2. El repositorio ocupa 12,9 GB y fue creado el 15 de septiembre de 2026.
+El modelo `ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256-grpo130` es un ajuste fino (fine-tune) del modelo base `meta-llama/Llama-3.2-3B` de Meta, publicado por el usuario ollybritton en Hugging Face. Se trata de un modelo denso, decoder-only, de 3.212.749.824 parametros (3,21 mil millones), distribuido en formato safetensors bajo la licencia llama3.2. El repositorio ocupa 12,9 GB y fue creado el 15 de septiembre de 2026.
 
 El identificador del repositorio sugiere un pipeline de entrenamiento en dos fases: una destilacion sobre el conjunto de datos GSM8K (problemas aritmeticos de nivel escolar) y un posterior ajuste con GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo sin modelo critico. Los sufijos "adfp" y "lambda256" apuntan a hiperparametros concretos del experimento, presumiblemente un coeficiente de regularizacion o una longitud de secuencia. Esta interpretacion procede unicamente de la nomenclatura del repositorio, no de documentacion publicada por el autor, por lo que debe tomarse como hipotesis y no como hecho verificado.
 
@@ -92,7 +92,7 @@ La ventaja diferencial de este fine-tune seria un mejor rendimiento en GSM8K, pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256-grpo130
+- Modelo en Hugging Face: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256-grpo130
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Pagina de Llama 3.2 de Meta: https://www.llama.com/models/llama-3/
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

@@ -18,7 +18,7 @@ El interes practico esta en la relacion entre tamano y divergencia: los pesos co
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | IQ3_XXS, IQ2_XS, Q2_0 (experimental); proyector de vision en BF16 |
 | Idiomas soportados | no disponible (la evaluacion de cuantizacion cubre ingles, aleman, frances, espanol y chino) |
-| Licencia | swift-open-license-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | swift-open-license-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp), dividido en dos shards por nivel; mmproj BF16 separado |
 | Tamano del repositorio | 212,2 GB |
 | Modelo base | ukisai/Swift-Qwen3.8-Flash-Next (relacion: quantized) |
@@ -101,7 +101,7 @@ La informacion disponible solo permite comparar en terminos de KLD frente a las 
 | Este modelo (IQ2_XS) | 176,9 mil millones | no disponible | Mejor que el IQ2_XS de ISTA en 7 de 8 conjuntos (5-11 % menos) | swift-open-license-1.0 | GGUF, 2 shards, 68,15 GB |
 | ISTA-DASLab GSQ-RCO IQ2_XS | no disponible | no disponible | Referencia de comparacion; peor en 7 de 8 conjuntos | no disponible | no disponible |
 | ISTA-DASLab GSQ-RCO IQ3_XXS | no disponible | no disponible | Este modelo mejora en matematicas (-7,8 %) y chino (-5,1 %); resto a 1-4 % | no disponible | no disponible |
-| ukisai/Swift-Qwen3.8-Flash-Next (BF16) | no disponible | no disponible | Referencia de KLD cero por definicion | swift-open-license-1.0 | Pesos BF16 en HuggingFace |
+| ukisai/Swift-Qwen3.8-Flash-Next (BF16) | no disponible | no disponible | Referencia de KLD cero por definicion | swift-open-license-1.0 | Pesos BF16 en Hugging Face |
 | Qwen3.8-Flash-Next | no disponible | no disponible | Base del linaje; sin mediciones en esta ficha | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -112,7 +112,7 @@ La informacion disponible solo permite comparar en terminos de KLD frente a las 
 - Q2_0 esta marcado como experimental y ofrece peor KLD que la alternativa de ISTA en seis de ocho conjuntos; el autor recomienda IQ2_XS en su lugar.
 - No hay resultados de evaluacion de tareas de vision, pese a que el repositorio incluye proyector multimodal y el pipeline declarado es image-text-to-text.
 - La lista de idiomas soportados no esta publicada; la cobertura de evaluacion (ingles, aleman, frances, espanol, chino) no implica soporte oficial ni calidad homogenea.
-- Licencia swift-open-license-1.0, etiquetada como "other" en HuggingFace: no se detallan en la informacion disponible las condiciones de uso comercial. La model card menciona "Enterprise licensing", por lo que se debe revisar el texto completo de la licencia antes de cualquier uso en produccion.
+- Licencia swift-open-license-1.0, etiquetada como "other" en Hugging Face: no se detallan en la informacion disponible las condiciones de uso comercial. La model card menciona "Enterprise licensing", por lo que se debe revisar el texto completo de la licencia antes de cualquier uso en produccion.
 - El repositorio esta publicado bajo la cuenta taurusduan, mientras que la model card, la licencia y todos los enlaces apuntan a repositorios de la organizacion ukisai. Conviene verificar la autoria y la cadena de custodia de los pesos antes de usarlos.
 - Riesgo de alucinacion y sesgos: no se han publicado evaluaciones de sesgo, toxicidad o alucinacion en la informacion disponible.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la model card aparece truncada en el ejemplo de uso; se debe consultar el repositorio original para los comandos completos.
@@ -120,7 +120,7 @@ La informacion disponible solo permite comparar en terminos de KLD frente a las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taurusduan/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Modelo en Hugging Face: https://huggingface.co/taurusduan/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Modelo BF16 de referencia: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
 - GGUFs estandar: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF
 - Modelo base declarado: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next (base_model: ukisai/Swift-Qwen3.8-Flash-Next)

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Qwen3-4B-Thinking-2507-FP8",
+  "slug": "liodon-ai-qwen3-4b-thinking-2507-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Qwen3-4B-Thinking-2507-FP8",
+  "created_at": "2026-11-06T10:39:11.000Z",
+  "updated_at": "2026-11-06T10:44:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Thinking-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Thinking-2507",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4425330714,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3-4B-Thinking-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/Qwen3-4B-Thinking-2507-ONNX · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Qwen3-4B-Thinking-2507-ONNX",
+      "snippet": "Qwen3-4B-Thinking-2507 — ONNX ONNX export of Qwen/Qwen3-4B-Thinking-2507, published by Liodon AI. Exported with optimum (optimum.exporters.onnx.main_export, task text-generation-with-past, so the graph exposes past-key-value inputs/outputs for KV-cached autoregressive decoding)."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Thinking-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

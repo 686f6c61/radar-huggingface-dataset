@@ -1,7 +1,7 @@
 # YTsubhadip/car-price-model
 
 ## Resumen
-El modelo `YTsubhadip/car-price-model` es un artefacto publicado en HuggingFace por el usuario YTsubhadip, con licencia MIT y etiquetado para la región de Estados Unidos. No se dispone de información adicional en la model card más allá del frontmatter de licencia, por lo que no es posible determinar su arquitectura, tamaño, finalidad específica ni su estado de desarrollo. El repositorio no presenta descargas ni interacciones, lo que sugiere que es un proyecto reciente o de carácter personal. Dada la ausencia de documentación técnica, cualquier evaluación de capacidades o rendimiento resulta imposible sin acceso a los pesos y metadatos complementarios.
+El modelo `YTsubhadip/car-price-model` es un artefacto publicado en Hugging Face por el usuario YTsubhadip, con licencia MIT y etiquetado para la región de Estados Unidos. No se dispone de información adicional en la model card más allá del frontmatter de licencia, por lo que no es posible determinar su arquitectura, tamaño, finalidad específica ni su estado de desarrollo. El repositorio no presenta descargas ni interacciones, lo que sugiere que es un proyecto reciente o de carácter personal. Dada la ausencia de documentación técnica, cualquier evaluación de capacidades o rendimiento resulta imposible sin acceso a los pesos y metadatos complementarios.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -42,4 +42,4 @@ No disponible. No se conocen modelos comparables en la misma categoría debido a
 - Se recomienda contactar al autor o consultar el repositorio original antes de considerar cualquier uso del modelo.
 
 ## Enlaces
-- [HuggingFace: YTsubhadip/car-price-model](https://huggingface.co/YTsubhadip/car-price-model)
+- [Hugging Face: YTsubhadip/car-price-model](https://huggingface.co/YTsubhadip/car-price-model)

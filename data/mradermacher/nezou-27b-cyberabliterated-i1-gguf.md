@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nezou-27B-CyberAbliterated-i1-GGUF (este) | 27,3 mil millones | no disponible | GGUF con imatrix | apache-2.0 | HuggingFace, 46 descargas |
-| Nezou-27B-CyberAbliterated-GGUF (static) | 27,3 mil millones | no disponible | GGUF estatico (incluye mmproj) | apache-2.0 | HuggingFace |
-| dancingfrog/Nezou-27B-CyberAbliterated (base) | 27,3 mil millones | no disponible | safetensors | apache-2.0 | HuggingFace |
+| Nezou-27B-CyberAbliterated-i1-GGUF (este) | 27,3 mil millones | no disponible | GGUF con imatrix | apache-2.0 | Hugging Face, 46 descargas |
+| Nezou-27B-CyberAbliterated-GGUF (static) | 27,3 mil millones | no disponible | GGUF estatico (incluye mmproj) | apache-2.0 | Hugging Face |
+| dancingfrog/Nezou-27B-CyberAbliterated (base) | 27,3 mil millones | no disponible | safetensors | apache-2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria (mismo tamano o misma tarea) en el material proporcionado, por lo que no se incluyen alternativas externas.
 
@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Nezou-27B-CyberAbliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Nezou-27B-CyberAbliterated-i1-GGUF
 - Modelo base: https://huggingface.co/dancingfrog/Nezou-27B-CyberAbliterated
 - Cuantizaciones estaticas (incluye mmproj si existe): https://huggingface.co/mradermacher/Nezou-27B-CyberAbliterated-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Nezou-27B-CyberAbliterated-i1-GGUF

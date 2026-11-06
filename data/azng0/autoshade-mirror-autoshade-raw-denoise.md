@@ -2,7 +2,7 @@
 
 ## Resumen
 
-autoshade-raw-denoise-v2.pth es un modelo de denoising especifico de imagen RAW en mosaico (mosaic RAW), es decir, actua antes del revelado sobre el patron de Bayer sin interpolar. Lo publica el proyecto AutoShade (autor del repositorio en HuggingFace: Azng0) y se distribuye tambien como artefacto de la release v1.5.2 del repositorio GitHub del proyecto. No es un modelo de lenguaje: es una red convolucional de restauracion de imagen, por lo que conceptos como contexto, idiomas o tool calling no aplican.
+autoshade-raw-denoise-v2.pth es un modelo de denoising especifico de imagen RAW en mosaico (mosaic RAW), es decir, actua antes del revelado sobre el patron de Bayer sin interpolar. Lo publica el proyecto AutoShade (autor del repositorio en Hugging Face: Azng0) y se distribuye tambien como artefacto de la release v1.5.2 del repositorio GitHub del proyecto. No es un modelo de lenguaje: es una red convolucional de restauracion de imagen, por lo que conceptos como contexto, idiomas o tool calling no aplican.
 
 Tecnicamente reutiliza la arquitectura DRUNet-colour de KAIR/DPIR (licencia MIT) y la especializa con pesos ajustados por AutoShade sobre pares reales de RawNIND (Brummer & De Vleeschouwer, CC BY-SA 4.0) y ruido de sensor sintetico. El pipeline asume la transformada de Anscombe generalizada, un modelo de ruido por plano y un campo de ruido propio del proyecto, de modo que el modelo no es autonomo: esta pensado para ejecutarse dentro del flujo de AutoShade.
 
@@ -37,7 +37,7 @@ El entrenamiento parte de pesos ya ajustados por AutoShade (v1) y continua el fi
 - Modelado de ruido heterogeneo por plano de color mediante Anscombe generalizada y modelo de ruido por plano.
 - Trabajo con pares reales ruidoso/limpio de RawNIND y con ruido de sensor sintetico.
 - Integracion en pipeline automatizado a traves del sidecar `python/denoise_raw.py`.
-- Descarga verificable: el sidecar intenta primero la copia de HuggingFace y despues la release de GitHub, y solo acepta el fichero si los bytes coinciden con el sha256 fijado.
+- Descarga verificable: el sidecar intenta primero la copia de Hugging Face y despues la release de GitHub, y solo acepta el fichero si los bytes coinciden con el sha256 fijado.
 - No soporta tool calling, agentes, razonamiento multi-paso, vision semantica, audio ni generacion de texto: no es un modelo multimodal de lenguaje.
 - No se declaran capacidades multilingues ni de otro tipo.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| autoshade-raw-denoise-v2 | DRUNet-colour ajustada a RAW en mosaico | estimacion ~32,6 M (no declarado) | mosaico RAW con modelo de ruido por plano | MIT (pesos), datos CC BY-SA 4.0 | HuggingFace y release de GitHub |
+| autoshade-raw-denoise-v2 | DRUNet-colour ajustada a RAW en mosaico | estimacion ~32,6 M (no declarado) | mosaico RAW con modelo de ruido por plano | MIT (pesos), datos CC BY-SA 4.0 | Hugging Face y release de GitHub |
 | DRUNet / KAIR (base arquitectonica) | U-Net residual con entrada de mapa de ruido | no disponible en la informacion proporcionada | imagen RGB o escala de grises | MIT | repositorio KAIR |
 | DPIR | denoiser prior basado en DRUNet con esquema de optimizacion | no disponible en la informacion proporcionada | imagen RGB/gris | licencia del proyecto DPIR (no disponible aqui) | repositorio del proyecto |
 | Denoisers clasicos (BM3D, non-local means) | metodos no aprendidos | no aplica | imagen, normalmente tras demosaicing | variada | implementaciones multiples |
@@ -81,7 +81,7 @@ No se dispone de datos comparativos de rendimiento entre estas opciones en la in
 - Dominio de entrada restringido: esta pensado para mosaico RAW, no para imagenes ya reveladas; aplicarlo a RGB puede degradar el resultado.
 - Generalizacion limitada: el ajuste se hizo sobre pares RawNIND y ruido sintetico; sensores o condiciones de ruido fuera de esa distribucion pueden comportarse de forma imprevisible.
 - Riesgo de eliminar senal debil: es precisamente el problema que v2 intenta mitigar con la inyeccion de fuentes puntuales; aun asi, no hay validacion cuantitativa publicada que confirme la mejora.
-- Sin evaluacion independiente: 0 descargas y 0 likes en HuggingFace, sin benchmarks publicados ni replicaciones externas conocidas.
+- Sin evaluacion independiente: 0 descargas y 0 likes en Hugging Face, sin benchmarks publicados ni replicaciones externas conocidas.
 - Obligaciones de atribucion: aunque los pesos son MIT, los pares de entrenamiento RawNIND estan bajo CC BY-SA 4.0 y se acreditan en `docs/TECH_STACK.md`; conviene revisar esa atribucion si se redistribuye el modelo o se publican resultados derivados.
 - Integridad del fichero: el sidecar solo acepta el binario si coincide con el sha256 indicado; si se sustituye o reentrena el fichero, hay que actualizar el pin.
 - Repositorio de 0,1 GB con una unica version publicada; no se documentan versiones cuantizadas, ni soporte para otras plataformas de inferencia.
@@ -89,7 +89,7 @@ No se dispone de datos comparativos de rendimiento entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Azng0/autoshade-mirror-autoshade-raw-denoise
+- Modelo en Hugging Face: https://huggingface.co/Azng0/autoshade-mirror-autoshade-raw-denoise
 - Repositorio del proyecto AutoShade: https://github.com/skymanbp/autoshade
 - Fichero de pesos en la release v1.5.2: https://github.com/skymanbp/autoshade/releases/download/v1.5.2/autoshade-raw-denoise-v2.pth
 - Script de inferencia (ruta dentro del repositorio): `python/denoise_raw.py`

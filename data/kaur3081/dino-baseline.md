@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kaur3081/dino-baseline es un repositorio publicado en HuggingFace por el usuario Kaur3081 que contiene una implementacion propia de una arquitectura denominada Dino orientada a tareas multiples (multitask) en configuracion base. El propio autor describe el artefacto como un punto de partida experimental: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks. Se distribuye bajo licencia BSD-3-Clause.
+Kaur3081/dino-baseline es un repositorio publicado en Hugging Face por el usuario Kaur3081 que contiene una implementacion propia de una arquitectura denominada Dino orientada a tareas multiples (multitask) en configuracion base. El propio autor describe el artefacto como un punto de partida experimental: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks. Se distribuye bajo licencia BSD-3-Clause.
 
 Conviene subrayar desde el principio que este no es un modelo de lenguaje ni un modelo de vision con capacidad de inferencia util por si mismo. El recuento real de parametros extraido del checkpoint en safetensors es de 24.832 parametros, una cifra que corresponde a una red de juguete o a un esqueleto de arquitectura, muy lejos de cualquier modelo de produccion. El tamano total del repositorio se registra como 0,0 GB y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -77,7 +77,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaur3081/dino-baseline
+- Modelo en Hugging Face: https://huggingface.co/Kaur3081/dino-baseline
 - Codigo de entrenamiento: https://huggingface.co/Kaur3081/dino-baseline/blob/main/train.py
 - Configuracion de arquitectura: https://huggingface.co/Kaur3081/dino-baseline/blob/main/config.json
 - Argumentos de entrenamiento por defecto: https://huggingface.co/Kaur3081/dino-baseline/blob/main/training_args.json

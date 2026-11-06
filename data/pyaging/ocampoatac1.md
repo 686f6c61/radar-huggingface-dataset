@@ -71,6 +71,6 @@ No se dispone de información sobre otros relojes de envejecimiento basados en a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/ocampoatac1
+- Modelo en Hugging Face: https://huggingface.co/pyaging/ocampoatac1
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Artículo original: Morandini, F. et al. ATAC-clock: An aging clock based on chromatin accessibility. GeroScience 46, 635-650 (2024). DOI: https://doi.org/10.1007/s11357-023-00986-0

@@ -6,7 +6,7 @@ TranslateGemma4B_rai_1.9.0_m_1.0.1_npu es una distribución optimizada del model
 
 El nombre indica que se trata de una variante orientada a traducción automática («TranslateGemma») del modelo Gemma 3 de 4B, empaquetada para la versión 1.9.0 del runtime Ryzen AI y la versión 1.0.1 de las herramientas de despliegue de AMD. El tag `gemma3_text` confirma que la arquitectura subyacente es la del modelo de texto de Gemma 3, no la variante multimodal.
 
-Su relevancia radica en que ejemplifica el patrón de despliegue de modelos abiertos en NPUs de consumo: AMD distribuye pesos ya convertidos y cuantizados para su stack Ryzen AI, lo que reduce la fricción para desarrolladores que quieren ejecutar inferencia local en portátiles y mini-PC con Ryzen AI. El acceso está restringido (gated) y requiere aceptar las condiciones de la licencia Gemma en HuggingFace.
+Su relevancia radica en que ejemplifica el patrón de despliegue de modelos abiertos en NPUs de consumo: AMD distribuye pesos ya convertidos y cuantizados para su stack Ryzen AI, lo que reduce la fricción para desarrolladores que quieren ejecutar inferencia local en portátiles y mini-PC con Ryzen AI. El acceso está restringido (gated) y requiere aceptar las condiciones de la licencia Gemma en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TranslateGemma4B_rai_1.9.0_m_1.0.1_npu (este) | 4B | no disponible | ONNX (NPU Ryzen AI) | Gemma | Gated en HuggingFace |
-| Gemma 3 4B (original de Google) | 4B | no disponible en esta ficha | safetensors, GGUF | Gemma | Público en HuggingFace |
+| TranslateGemma4B_rai_1.9.0_m_1.0.1_npu (este) | 4B | no disponible | ONNX (NPU Ryzen AI) | Gemma | Gated en Hugging Face |
+| Gemma 3 4B (original de Google) | 4B | no disponible en esta ficha | safetensors, GGUF | Gemma | Público en Hugging Face |
 | Modelos de traducción dedicados (p. ej. NLLB, M2M-100) | variable | variable | safetensors | variable | Público |
 
 La comparación cuantitativa de rendimiento no está disponible. La diferencia principal frente al Gemma 3 4B original es el empaquetado para NPU y la orientación a traducción; frente a modelos de traducción dedicados, la ventaja sería la integración en el stack Ryzen AI y la licencia Gemma, con la desventaja de un acceso restringido y un ecosistema de despliegue más limitado.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar las condiciones de la licencia Gemma en HuggingFace antes de descargar.
+- Acceso restringido: requiere aceptar las condiciones de la licencia Gemma en Hugging Face antes de descargar.
 - Licencia Gemma: impone restricciones de uso comercial y obligaciones de atribución; conviene revisar los términos antes de integrarlo en productos.
 - Idioma declarado: solo `en`; el rendimiento real en otros idiomas (incluido el castellano) no está documentado y podría degradarse.
 - Dependencia del runtime Ryzen AI 1.9.0 y de hardware NPU compatible: no es portable a GPU NVIDIA ni a otros aceleradores sin reconversión.
@@ -80,7 +80,7 @@ La comparación cuantitativa de rendimiento no está disponible. La diferencia p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/TranslateGemma4B_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/TranslateGemma4B_rai_1.9.0_m_1.0.1_npu
 - Licencia Gemma: https://ai.google.dev/gemma/terms
 - Ryzen AI (AMD): https://www.amd.com/en/products/processors/ryzen-ai.html
 - Quark (AMD): https://quark.docs.amd.com/

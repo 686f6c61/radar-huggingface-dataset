@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `rlve-opd-teacher-R1Distill-086-PolynomialMinimum-20261025` es un ajuste fino de tipo especialista desarrollado por el usuario de HuggingFace `davidheineman` a partir de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`. Se trata de un "teacher" (modelo profesor) generado dentro de un experimento de *data scaling* denominado RLVE, cuyo objetivo es producir trazas de razonamiento de alta calidad para destilación on-policy (OPD). El método de entrenamiento declarado es GRPO (Group Relative Policy Optimization) sobre un único entorno de dificultad equilibrada 0/1, con un tope de 4.000 rollouts y 499 actualizaciones de checkpoint.
+El modelo `rlve-opd-teacher-R1Distill-086-PolynomialMinimum-20261025` es un ajuste fino de tipo especialista desarrollado por el usuario de Hugging Face `davidheineman` a partir de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`. Se trata de un "teacher" (modelo profesor) generado dentro de un experimento de *data scaling* denominado RLVE, cuyo objetivo es producir trazas de razonamiento de alta calidad para destilación on-policy (OPD). El método de entrenamiento declarado es GRPO (Group Relative Policy Optimization) sobre un único entorno de dificultad equilibrada 0/1, con un tope de 4.000 rollouts y 499 actualizaciones de checkpoint.
 
-Arquitectura y tamaño: al derivar de DeepSeek-R1-Distill-Qwen-1.5B, hereda una arquitectura transformer decoder-only de la familia Qwen2 con 1.777.088.000 parámetros totales (aproximadamente 1,78 mil millones), distribuida en pesos safetensors de 3,6 GB. El modelo está etiquetado como `qwen2` en HuggingFace y se publica únicamente con pesos y ficheros de tokenizer/config, sin estado de optimizador ni dataloader, por lo que está pensado para inferencia o para servir como profesor en pipelines de generación de datos.
+Arquitectura y tamaño: al derivar de DeepSeek-R1-Distill-Qwen-1.5B, hereda una arquitectura transformer decoder-only de la familia Qwen2 con 1.777.088.000 parámetros totales (aproximadamente 1,78 mil millones), distribuida en pesos safetensors de 3,6 GB. El modelo está etiquetado como `qwen2` en Hugging Face y se publica únicamente con pesos y ficheros de tokenizer/config, sin estado de optimizador ni dataloader, por lo que está pensado para inferencia o para servir como profesor en pipelines de generación de datos.
 
 Relevancia: su interés es fundamentalmente de investigación. No es un modelo de propósito general ni un chat assistant validado, sino un artefacto reproducible de un experimento de RL con entornos verificables, útil para estudiar escalado de datos, destilación on-policy y el efecto de GRPO frente al modelo base. La información pública es escasa (0 descargas, 0 likes, sin benchmarks ni licencia declarada), por lo que debe tratarse como material experimental y no como componente listo para producción.
 
@@ -68,10 +68,10 @@ La model card únicamente describe el protocolo de validación interno del entre
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| RLVE OPD teacher 086-PolynomialMinimum (este) | 1,78 B | no disponible | no disponible | HuggingFace (0 descargas al publicar) | Especialista GRPO en un único entorno, uso como teacher |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | no disponible en esta ficha (Qwen2, 32 K habitual) | MIT (según model card del modelo base, verificar) | HuggingFace, ampliamente usado | Modelo base; razonamiento general destilado de R1 |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 nativo (131 072 con YaRN) | Apache 2.0 | HuggingFace | Alternativa instructiva general, sin especialización RL |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7,6 B | no disponible en esta ficha | MIT (según model card del modelo base, verificar) | HuggingFace | Misma familia, mayor tamaño y capacidad de razonamiento |
+| RLVE OPD teacher 086-PolynomialMinimum (este) | 1,78 B | no disponible | no disponible | Hugging Face (0 descargas al publicar) | Especialista GRPO en un único entorno, uso como teacher |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | no disponible en esta ficha (Qwen2, 32 K habitual) | MIT (según model card del modelo base, verificar) | Hugging Face, ampliamente usado | Modelo base; razonamiento general destilado de R1 |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 nativo (131 072 con YaRN) | Apache 2.0 | Hugging Face | Alternativa instructiva general, sin especialización RL |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7,6 B | no disponible en esta ficha | MIT (según model card del modelo base, verificar) | Hugging Face | Misma familia, mayor tamaño y capacidad de razonamiento |
 
 La comparación es aproximada: no hay benchmarks publicados de este checkpoint que permitan medir su rendimiento frente a las alternativas. La principal diferencia es la especialización en un único entorno y su rol como profesor, no su calidad como modelo de propósito general.
 
@@ -89,7 +89,7 @@ La comparación es aproximada: no hay benchmarks publicados de este checkpoint q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-086-PolynomialMinimum-20261025
+- Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-086-PolynomialMinimum-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/c1e61eb5
-- Repositorio del modelo (ficheros de configuración): `training_run.json` y `training_config.yaml` dentro del propio repositorio de HuggingFace.
+- Repositorio del modelo (ficheros de configuración): `training_run.json` y `training_config.yaml` dentro del propio repositorio de Hugging Face.

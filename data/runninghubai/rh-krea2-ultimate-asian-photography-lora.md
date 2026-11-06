@@ -2,9 +2,9 @@
 
 ## Resumen
 
-rh-krea2-ultimate-asian-photography-lora es un adaptador LoRA para generación y edición de imágenes, publicado por la plataforma RunningHub (autor identificado como @GOODLUCK2024) y afinado a partir del modelo base krea2. El repositorio de HuggingFace contiene un único fichero de pesos safetensors de 224 MiB, y la model card lo describe como una LoRA de tipo "image edit" orientada a fotografía asiática fotorrealista, con prompts de ejemplo en inglés que describen retratos de estudio con iluminación suave y fondo minimalista.
+rh-krea2-ultimate-asian-photography-lora es un adaptador LoRA para generación y edición de imágenes, publicado por la plataforma RunningHub (autor identificado como @GOODLUCK2024) y afinado a partir del modelo base krea2. El repositorio de Hugging Face contiene un único fichero de pesos safetensors de 224 MiB, y la model card lo describe como una LoRA de tipo "image edit" orientada a fotografía asiática fotorrealista, con prompts de ejemplo en inglés que describen retratos de estudio con iluminación suave y fondo minimalista.
 
-El modelo se distribuye principalmente para su uso en ComfyUI, además de las plataformas propias de RunningHub y HuggingFace. No se documentan en la información disponible ni el número de parámetros del adaptador, ni la arquitectura exacta del modelo base krea2, ni la longitud de contexto del codificador de texto asociado, ni los idiomas soportados, ni los datos de entrenamiento empleados.
+El modelo se distribuye principalmente para su uso en ComfyUI, además de las plataformas propias de RunningHub y Hugging Face. No se documentan en la información disponible ni el número de parámetros del adaptador, ni la arquitectura exacta del modelo base krea2, ni la longitud de contexto del codificador de texto asociado, ni los idiomas soportados, ni los datos de entrenamiento empleados.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, no declara licencia concreta y no aporta benchmarks ni evaluación alguna. Es, por tanto, un adaptador de estilo para un caso de uso muy específico, sin garantías de calidad ni de condiciones de uso comercial documentadas.
 
@@ -68,7 +68,7 @@ El repositorio no incluye métricas objetivas (FID, CLIP score, ImageReward ni e
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-krea2-ultimate-asian-photography-lora | LoRA de imagen sobre krea2 | no disponible (pesos de 224 MiB) | no aplica | no disponible | HuggingFace, ComfyUI, RunningHub |
+| rh-krea2-ultimate-asian-photography-lora | LoRA de imagen sobre krea2 | no disponible (pesos de 224 MiB) | no aplica | no disponible | Hugging Face, ComfyUI, RunningHub |
 | krea2 (modelo base) | no disponible | no disponible | no disponible | no disponible | no documentado en este repositorio |
 | Otras LoRA de estilo fotográfico del ecosistema de difusión | LoRA de imagen | no disponible | no aplica | variable según autor | no verificable con la información disponible |
 
@@ -83,12 +83,12 @@ No se dispone de datos suficientes para establecer una comparación cuantitativa
 - Contexto e idioma: se desconoce el comportamiento con prompts en castellano; los ejemplos facilitados están en inglés y no hay garantía de que el adaptador responda igual en otros idiomas.
 - Ausencia total de validación: 0 descargas y 0 likes, sin benchmarks ni evaluaciones independientes; no hay evidencia pública de calidad en producción.
 - Trazabilidad dudosa de la información de búsqueda: las consultas web asociadas a este modelo devolvieron exclusivamente resultados de sitios de contenido para adultos, sin relación con el artefacto. No se ha podido obtener ninguna fuente técnica externa verificable, por lo que la sección de enlaces se limita a los enlaces oficiales de la model card.
-- Fecha de publicación inusual: los metadatos de HuggingFace indican creación el 2026-09-24 y actualización el 2026-09-24, dato que conviene contrastar por si el repositorio se ha subido con marcas de tiempo erróneas.
+- Fecha de publicación inusual: los metadatos de Hugging Face indican creación el 2026-09-24 y actualización el 2026-09-24, dato que conviene contrastar por si el repositorio se ha subido con marcas de tiempo erróneas.
 - Falta de documentación de despliegue: no se especifican versiones de ComfyUI, nodos requeridos, resolución de entrenamiento ni pesos recomendados del adaptador.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-krea2-ultimate-asian-photography-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-krea2-ultimate-asian-photography-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2070666303182036993
 - Publicación del autor en RunningHub: https://www.runninghub.ai/post/2070666773426434050
 - Página del autor: https://www.runninghub.ai/user-center/1980864188878884866

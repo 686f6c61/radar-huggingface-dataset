@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yeaminadib/uncensoredmodel120` es un modelo publicado en HuggingFace por el usuario yeaminadib bajo licencia MIT. La model card asociada es practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El nombre sugiere un modelo orientado a generacion de texto sin filtros de contenido ("uncensored"), pero esta interpretacion no esta confirmada por ninguna documentacion tecnica.
+`yeaminadib/uncensoredmodel120` es un modelo publicado en Hugging Face por el usuario yeaminadib bajo licencia MIT. La model card asociada es practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El nombre sugiere un modelo orientado a generacion de texto sin filtros de contenido ("uncensored"), pero esta interpretacion no esta confirmada por ninguna documentacion tecnica.
 
 En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas especificados. La fecha de creacion y ultima actualizacion es la misma (2026-11-05), lo que indica que no ha recibido mantenimiento posterior. No se dispone de informacion sobre arquitectura, tamano de parametros, longitud de contexto, tokenizador ni formato de pesos.
 
@@ -83,5 +83,5 @@ No disponible. Sin datos de parametros, contexto ni rendimiento no es posible es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yeaminadib/uncensoredmodel120
+- Hugging Face: https://huggingface.co/yeaminadib/uncensoredmodel120
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

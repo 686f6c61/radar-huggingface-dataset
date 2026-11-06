@@ -3,7 +3,7 @@
 # Toy-contrastive (brunosantosberg)
 
 ## Resumen
-Toy-contrastive es un prototipo de investigacion de tipo CLIP, publicado en HuggingFace por el usuario brunosantosberg bajo licencia apache-2.0. Su objetivo declarado es servir como implementacion de referencia para experimentos de aprendizaje contrastivo (contrastive learning), es decir, el paradigma de alineacion entre pares de modalidades (tipicamente imagen-texto) que sustenta la familia CLIP. El repositorio incluye codigo de ejecucion (`eval.py`), configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
+Toy-contrastive es un prototipo de investigacion de tipo CLIP, publicado en Hugging Face por el usuario brunosantosberg bajo licencia apache-2.0. Su objetivo declarado es servir como implementacion de referencia para experimentos de aprendizaje contrastivo (contrastive learning), es decir, el paradigma de alineacion entre pares de modalidades (tipicamente imagen-texto) que sustenta la familia CLIP. El repositorio incluye codigo de ejecucion (`eval.py`), configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
 
 Es importante subrayar que se trata de un andamiaje de investigacion y no de un modelo entrenado. La propia model card indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. Por tanto, su relevancia no radica en capacidades demostradas, sino en su utilidad como plantilla reproducible para montar experimentos contrastivos.
 
@@ -68,7 +68,7 @@ La comparacion con modelos de la misma categoria (familia CLIP, como OpenCLIP o 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Toy-contrastive | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace (prototipo) |
+| Toy-contrastive | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face (prototipo) |
 | OpenCLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SigLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,5 +84,5 @@ La comparacion con modelos de la misma categoria (familia CLIP, como OpenCLIP o 
 - Cualquier resultado obtenido de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aqui incluidos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/brunosantosberg/toy-contrastive
+- Hugging Face: https://huggingface.co/brunosantosberg/toy-contrastive
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -64,10 +64,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/Florence-2-large (esta ficha) | 0,77B | 4096 | Subtitulado, OD, segmentación, OCR, grounding | MIT | HuggingFace |
-| microsoft/Florence-2-large | 0,77B | No disponible en la información | Mismas tareas, OCR sin separador de línea | MIT | HuggingFace |
-| microsoft/Florence-2-base-ft | 0,23B | No disponible en la información | Mismas tareas, ajustado en downstream | MIT | HuggingFace |
-| microsoft/Florence-2-large-ft | 0,77B | No disponible en la información | Mismas tareas, ajustado en downstream | MIT | HuggingFace |
+| CollectionStudio/Florence-2-large (esta ficha) | 0,77B | 4096 | Subtitulado, OD, segmentación, OCR, grounding | MIT | Hugging Face |
+| microsoft/Florence-2-large | 0,77B | No disponible en la información | Mismas tareas, OCR sin separador de línea | MIT | Hugging Face |
+| microsoft/Florence-2-base-ft | 0,23B | No disponible en la información | Mismas tareas, ajustado en downstream | MIT | Hugging Face |
+| microsoft/Florence-2-large-ft | 0,77B | No disponible en la información | Mismas tareas, ajustado en downstream | MIT | Hugging Face |
 
 La comparación se limita a la familia Florence-2 porque la información proporcionada no incluye datos de benchmarks de alternativas de otros autores. Frente a `microsoft/Florence-2-large`, esta variante añade contexto de 4096 tokens y OCR con saltos de línea, a costa de un preentrenamiento continuado que el propio autor califica como potencialmente insuficiente. Frente a las versiones `-ft`, esta variante no está ajustada específicamente en tareas downstream, por lo que puede requerir fine-tuning para dominios muy especializados.
 
@@ -82,7 +82,7 @@ La comparación se limita a la familia Florence-2 porque la información proporc
 - El repositorio tiene muy pocas descargas (26) y ningún "like" en el momento de la consulta, lo que reduce la validación comunitaria sobre su robustez.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/CollectionStudio/Florence-2-large
+- Repositorio Hugging Face: https://huggingface.co/CollectionStudio/Florence-2-large
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Florence-2-large
 - Paper técnico (arXiv:2311.06242): https://arxiv.org/abs/2311.06242
 - Notebook de inferencia y visualización: https://huggingface.co/microsoft/Florence-2-large/blob/main/sample_inference.ipynb

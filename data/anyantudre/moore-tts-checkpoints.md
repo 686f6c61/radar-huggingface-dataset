@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moore-tts-checkpoints` es un repositorio de checkpoints de un sistema de síntesis de voz (text-to-speech) para el idioma moore (código ISO `mos`), una lengua de la familia gur hablada principalmente en Burkina Faso. El modelo lo publica el usuario `anyantudre` en HuggingFace bajo acceso restringido (gated) y con licencia por carpeta ("per-folder"), con un tamaño de repositorio de 52 GB y pesos en formato safetensors.
+`moore-tts-checkpoints` es un repositorio de checkpoints de un sistema de síntesis de voz (text-to-speech) para el idioma moore (código ISO `mos`), una lengua de la familia gur hablada principalmente en Burkina Faso. El modelo lo publica el usuario `anyantudre` en Hugging Face bajo acceso restringido (gated) y con licencia por carpeta ("per-folder"), con un tamaño de repositorio de 52 GB y pesos en formato safetensors.
 
 El repositorio está orientado a la investigación en TTS para lenguas de bajos recursos: las etiquetas incluyen `low-resource` y `data-scaling`, lo que sugiere que contiene múltiples checkpoints entrenados con distintos volúmenes de datos para estudiar el efecto del escalado del corpus en la calidad de síntesis. No se especifica en la información disponible la arquitectura concreta del modelo ni el número de parámetros.
 
@@ -30,7 +30,7 @@ Tampoco consta si se emplearon técnicas de alineación como RLHF o DPO, ni inno
 ## Capacidades
 
 - Síntesis de voz (text-to-speech) en idioma moore (`mos`).
-- Generación de audio a partir de texto, según la pipeline declarada en HuggingFace (`text-to-speech`).
+- Generación de audio a partir de texto, según la pipeline declarada en Hugging Face (`text-to-speech`).
 - Publicación de múltiples checkpoints, lo que permite comparar variantes del modelo (presumiblemente asociadas a distintos volúmenes de datos).
 - No consta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio de entrada ni modo "thinking".
 - No consta capacidad multilingüe más allá del moore.
@@ -65,7 +65,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 ## Limitaciones y advertencias
 
 - **Información técnica insuficiente**: no se documentan arquitectura, parámetros, contexto ni metodología de entrenamiento, lo que dificulta evaluar su idoneidad para producción.
-- **Acceso restringido**: el repositorio es gated; es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- **Acceso restringido**: el repositorio es gated; es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - **Licencia por carpeta**: la licencia "per-folder" implica que cada subcarpeta puede tener condiciones distintas; es imprescindible revisar cada una antes de cualquier uso comercial.
 - **Riesgo de alucinación y artefactos de audio**: como todo sistema TTS, puede generar pronunciaciones incorrectas, prosodia anómala o artefactos, especialmente en palabras poco frecuentes o préstamos.
 - **Cobertura limitada a una lengua**: solo se declara soporte para moore (`mos`); no debe asumirse generalización a otras lenguas.
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anyantudre/moore-tts-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/anyantudre/moore-tts-checkpoints
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

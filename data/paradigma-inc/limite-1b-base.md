@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`limite-1b-base` es un checkpoint publicado por la organizacion `paradigma-inc` en HuggingFace, con fecha de creacion del 21 de septiembre de 2026 y ultima actualizacion dos minutos mas tarde, el mismo dia. Se trata de un modelo base (el sufijo `base` sugiere que no ha pasado por fases de ajuste por instrucciones, si bien esto no se confirma en la informacion disponible) de 1.035.253.888 parametros, un dato que procede del recuento real de los ficheros `safetensors` del repositorio.
+`limite-1b-base` es un checkpoint publicado por la organizacion `paradigma-inc` en Hugging Face, con fecha de creacion del 21 de septiembre de 2026 y ultima actualizacion dos minutos mas tarde, el mismo dia. Se trata de un modelo base (el sufijo `base` sugiere que no ha pasado por fases de ajuste por instrucciones, si bien esto no se confirma en la informacion disponible) de 1.035.253.888 parametros, un dato que procede del recuento real de los ficheros `safetensors` del repositorio.
 
-La ficha de HuggingFace esta practicamente vacia: no declara pipeline, licencia ni idiomas soportados, y las etiquetas se limitan a `safetensors`, `limite` y `region:us`. El repositorio ocupa 2,1 GB, un volumen compatible con pesos almacenados en precision de 16 bits (1,03 mil millones de parametros x 2 bytes ≈ 2,07 GB) mas los ficheros auxiliares de configuracion y tokenizador, aunque no se puede confirmar el `dtype` exacto sin inspeccionar los ficheros.
+La ficha de Hugging Face esta practicamente vacia: no declara pipeline, licencia ni idiomas soportados, y las etiquetas se limitan a `safetensors`, `limite` y `region:us`. El repositorio ocupa 2,1 GB, un volumen compatible con pesos almacenados en precision de 16 bits (1,03 mil millones de parametros x 2 bytes ≈ 2,07 GB) mas los ficheros auxiliares de configuracion y tokenizador, aunque no se puede confirmar el `dtype` exacto sin inspeccionar los ficheros.
 
 Su relevancia actual es limitada y de naturaleza mas bien documental: acumula 0 descargas y 1 like, y la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo, su organizacion ni su proceso de entrenamiento. Cualquier evaluacion de sus capacidades exige, por tanto, una validacion empirica directa por parte de quien lo descargue.
 
@@ -103,5 +103,5 @@ La diferencia mas relevante es la ausencia total de informacion contractual y te
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paradigma-inc/limite-1b-base
+- Hugging Face: https://huggingface.co/paradigma-inc/limite-1b-base
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de codigo, demos o documentacion) en la busqueda web realizada.

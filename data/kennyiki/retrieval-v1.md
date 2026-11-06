@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kennyiki/retrieval-v1` es un repositorio experimental publicado en HuggingFace por el usuario kennyiki que contiene una implementación funcional de una arquitectura tipo BEiT (Bert-like Image Transformer) orientada a tareas de retrieval multimodal. El modelo se distribuye con una configuración "tiny" y un checkpoint de inicialización (`model.safetensors`) que, según la propia model card, no ha sido entrenado ni evaluado en benchmarks: está pensado como punto de partida para pruebas de humo (smoke tests) y para reproducir el código de entrenamiento incluido.
+`kennyiki/retrieval-v1` es un repositorio experimental publicado en Hugging Face por el usuario kennyiki que contiene una implementación funcional de una arquitectura tipo BEiT (Bert-like Image Transformer) orientada a tareas de retrieval multimodal. El modelo se distribuye con una configuración "tiny" y un checkpoint de inicialización (`model.safetensors`) que, según la propia model card, no ha sido entrenado ni evaluado en benchmarks: está pensado como punto de partida para pruebas de humo (smoke tests) y para reproducir el código de entrenamiento incluido.
 
 El repositorio prioriza la transparencia del código frente a las métricas: incluye `main.py` con el modelo y un punto de entrada ejecutable, `config.json` con los hiperparámetros de arquitectura y `training_args.json` con la receta de experimento por defecto (optimizador LAMB con schedule de tipo step). No se declaran resultados de benchmarks ni se presenta el checkpoint como un modelo listo para producción.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kennyiki/retrieval-v1 | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
-| BEiT base (implementación oficial) | ~86 M (base) | no disponible | benchmarks publicados en papers de visión | MIT (código) | HuggingFace / repositorio oficial |
-| CLIP (variantes pequeñas) | ~150 M (ViT-B/32) | 77 tokens de texto | benchmarks publicados en retrieval imagen-texto | MIT | HuggingFace |
+| kennyiki/retrieval-v1 | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
+| BEiT base (implementación oficial) | ~86 M (base) | no disponible | benchmarks publicados en papers de visión | MIT (código) | Hugging Face / repositorio oficial |
+| CLIP (variantes pequeñas) | ~150 M (ViT-B/32) | 77 tokens de texto | benchmarks publicados en retrieval imagen-texto | MIT | Hugging Face |
 | Otros modelos tiny de retrieval | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación con BEiT base y CLIP es orientativa: son arquitecturas de referencia en retrieval multimodal, pero de escala muy superior. No se dispone de datos de rendimiento del modelo evaluado para establecer una comparación cuantitativa.
@@ -83,4 +83,4 @@ La comparación con BEiT base y CLIP es orientativa: son arquitecturas de refere
 
 ## Enlaces
 
-- [HuggingFace: kennyiki/retrieval-v1](https://huggingface.co/kennyiki/retrieval-v1)
+- [Hugging Face: kennyiki/retrieval-v1](https://huggingface.co/kennyiki/retrieval-v1)

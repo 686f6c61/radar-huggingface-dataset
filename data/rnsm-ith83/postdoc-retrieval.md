@@ -2,11 +2,11 @@
 
 ## Resumen
 
-"postdoc-retrieval" es un repositorio publicado por el usuario rnsm-ith83 en HuggingFace que contiene una implementación propia en PyTorch de una arquitectura tipo Mixer orientada a tareas de retrieval. Se trata de una configuración "tiny" con 33.088 parámetros totales, pensada explícitamente por su autor para revisión de código, pruebas de humo (smoke tests) y pequeños experimentos controlados, no como una release preentrenada lista para producción.
+"postdoc-retrieval" es un repositorio publicado por el usuario rnsm-ith83 en Hugging Face que contiene una implementación propia en PyTorch de una arquitectura tipo Mixer orientada a tareas de retrieval. Se trata de una configuración "tiny" con 33.088 parámetros totales, pensada explícitamente por su autor para revisión de código, pruebas de humo (smoke tests) y pequeños experimentos controlados, no como una release preentrenada lista para producción.
 
 El repositorio incluye el script principal de evaluación, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicialización válido, pero que el propio autor aclara que no está entrenado. La arquitectura combina atención con grouped query, fusión mediante descomposición de Tucker, activación swish y normalización InstanceNorm.
 
-Su relevancia es fundamentalmente metodológica: sirve como punto de partida reproducible para montar experimentos de retrieval comparables (el autor sugiere Flickr30k, al menos tres semillas y un baseline de capacidad equivalente). No hay resultados de benchmarks declarados, no se documentan idiomas soportados y el pipeline de HuggingFace no está definido.
+Su relevancia es fundamentalmente metodológica: sirve como punto de partida reproducible para montar experimentos de retrieval comparables (el autor sugiere Flickr30k, al menos tres semillas y un baseline de capacidad equivalente). No hay resultados de benchmarks declarados, no se documentan idiomas soportados y el pipeline de Hugging Face no está definido.
 
 ## Especificaciones técnicas
 
@@ -83,6 +83,6 @@ No hay datos suficientes en la información proporcionada para una comparación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rnsm-ith83/postdoc-retrieval
+- Hugging Face: https://huggingface.co/rnsm-ith83/postdoc-retrieval
 - Los resultados de la búsqueda web no aportan información relevante sobre este modelo: todas las entradas devueltas corresponden a páginas de Google Translate y no guardan relación con el repositorio.
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados en la información disponible.

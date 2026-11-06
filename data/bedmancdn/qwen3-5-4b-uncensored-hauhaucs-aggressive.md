@@ -88,8 +88,8 @@ La variante de 4B se diferencia de la de 9B principalmente en el tamano de param
 
 ## Enlaces
 
-- Repositorio de HuggingFace (mirror de bedmancdn): https://huggingface.co/bedmancdn/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
-- Repositorio original de HauhauCS en HuggingFace: https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
+- Repositorio de Hugging Face (mirror de bedmancdn): https://huggingface.co/bedmancdn/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
+- Repositorio original de HauhauCS en Hugging Face: https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante de 9B: https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
 - Guia de uso en Colab (GitHub): https://github.com/CookieFilled/qwen-3.5-4B-uncensored-colab

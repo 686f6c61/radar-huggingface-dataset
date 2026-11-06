@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rebekah AI 1.8B es un modelo de lenguaje de pesos abiertos desarrollado por Next GenAi Mexico (perfil de HuggingFace `nextgenaimx`) y presentado como un "modelo fundacional soberano" orientado al despliegue en el borde (edge). Se construye sobre un transformer causal decoder-only compatible con LLaMA-3, con atencion de consultas agrupadas (GQA) y una ventana de contexto de 8.192 tokens, pensado para ejecutarse en una sola GPU y en entornos on-premise sin dependencia de APIs en la nube.
+Rebekah AI 1.8B es un modelo de lenguaje de pesos abiertos desarrollado por Next GenAi Mexico (perfil de Hugging Face `nextgenaimx`) y presentado como un "modelo fundacional soberano" orientado al despliegue en el borde (edge). Se construye sobre un transformer causal decoder-only compatible con LLaMA-3, con atencion de consultas agrupadas (GQA) y una ventana de contexto de 8.192 tokens, pensado para ejecutarse en una sola GPU y en entornos on-premise sin dependencia de APIs en la nube.
 
 El modelo esta especializado en cargas de trabajo agenticas de baja latencia: ejecucion determinista de herramientas, diagnostico de infraestructura Linux y administracion de sistemas en el borde. Su corpus de entrenamiento (61.952.000 tokens declarados, 50.000 pasos de optimizacion) esta sesgado hacia documentacion de sistemas e infraestructura (35%), codigo y automatizacion (30%), razonamiento matematico (20%) y documentos tecnicos curados (15%), con una proporcion bilingue declarada de 65% ingles / 35% espanol.
 
@@ -96,7 +96,7 @@ Comparativa centrada en el segmento de 1B-2,5B parametros. Los datos de rendimie
 | Rebekah-AI-1.8B (Next GenAi) | ~2,01B (safetensors) | 8.192 | Apache 2.0 | 58,4% | 62,8% | 51,2% | 76,4% |
 | Qwen 2.5 1.5B (Alibaba) | 1,5B | 32.768 | Apache 2.0 | 52,4% | 60,5% | 55,8% | 48,2% |
 | Llama 3.2 1B (Meta) | 1,23B | 128.000 | Licencia comunitaria Llama 3.2 | 37,2% | 44,3% | 49,3% | 41,0% |
-| SmolLM2 1.7B (HuggingFace) | 1,7B | 8.192 | Apache 2.0 | 45,1% | 51,2% | 50,1% | 44,6% |
+| SmolLM2 1.7B (Hugging Face) | 1,7B | 8.192 | Apache 2.0 | 45,1% | 51,2% | 50,1% | 44,6% |
 | Gemma 2 2B (Google) | 2,6B | 8.192 | Terminos de uso de Gemma | 41,5% | 56,8% | 52,2% | 47,3% |
 
 Notas: Rebekah-AI-1.8B lidera en la comparativa en HumanEval, GSM8K y Systems & Tool Execution segun los datos del autor, pero queda por detras de Qwen 2.5 1.5B, Gemma 2 2B y SmolLM2 1.7B en MMLU (conocimiento general), y su contexto de 8.192 tokens es inferior al de Qwen 2.5 1.5B y muy inferior al de Llama 3.2 1B. La disponibilidad y el ecosistema de herramientas (cuantizaciones GGUF, integraciones) del modelo no estan documentados en la informacion disponible.
@@ -117,6 +117,6 @@ Notas: Rebekah-AI-1.8B lidera en la comparativa en HumanEval, GSM8K y Systems & 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nextgenaimx/Rebekah-AI-1.8B
-- Perfil del autor en HuggingFace: https://huggingface.co/nextgenaimx
+- Modelo en Hugging Face: https://huggingface.co/nextgenaimx/Rebekah-AI-1.8B
+- Perfil del autor en Hugging Face: https://huggingface.co/nextgenaimx
 - No se han encontrado enlaces relevantes adicionales (paper, blog, repositorio o demo) en la busqueda web realizada; los resultados obtenidos correspondian a contenidos sin relacion con el modelo.

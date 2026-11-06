@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (`...auto_round-int4-gs64-asym`) | ~7B segun el nombre; 1.414.795.264 segun safetensors (discrepancia) | No disponible | INT4, gs64, asimetrica (AutoRound) | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| `sapienzanlp/Minerva-7B-base-v1.0` (modelo base) | ~7B | No disponible | Sin cuantizar (bfloat16) | Apache 2.0 | HuggingFace |
+| Este artefacto (`...auto_round-int4-gs64-asym`) | ~7B segun el nombre; 1.414.795.264 segun safetensors (discrepancia) | No disponible | INT4, gs64, asimetrica (AutoRound) | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| `sapienzanlp/Minerva-7B-base-v1.0` (modelo base) | ~7B | No disponible | Sin cuantizar (bfloat16) | Apache 2.0 | Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion en la busqueda web realizada que permita comparar con otros modelos italianos de tamano similar ni con otras cuantizaciones del mismo modelo base.
@@ -78,7 +78,7 @@ No se dispone de informacion en la busqueda web realizada que permita comparar c
 - Riesgo de alucinacion inherente a un modelo de lenguaje sin alineamiento por preferencias; no hay evaluaciones de veracidad disponibles.
 - El autor declara que el modelo se ha desarrollado "solo con fines de investigacion", lo que entra en tension con la licencia Apache 2.0 del repositorio. Conviene aclarar la aplicacion comercial antes de usarlo en produccion.
 - No hay resultados de benchmarks ni mediciones de degradacion por la cuantizacion a W4G64, por lo que el impacto real en calidad es desconocido.
-- El campo `inference: false` aparece en los metadatos de la model card, lo que sugiere que el widget de inferencia de HuggingFace no esta habilitado; no implica necesariamente que el modelo no pueda ejecutarse en local.
+- El campo `inference: false` aparece en los metadatos de la model card, lo que sugiere que el widget de inferencia de Hugging Face no esta habilitado; no implica necesariamente que el modelo no pueda ejecutarse en local.
 - El repositorio es de un tercero (`fbaldassarri`), no del equipo SapienzaNLP, y tiene 0 descargas y 0 likes: no hay validacion comunitaria ni evidencia de uso en produccion.
 - La receta de replicacion apunta a un host Git no estandar (`git.epicdynamic.com`), lo que supone una dependencia de infraestructura ajena a los repositorios oficiales de Intel. Se recomienda usar el repositorio oficial `intel/auto-round` para reproducir el proceso.
 - La fecha de creacion del repositorio (2026-10-10) es posterior a la fecha de finalizacion de la cuantizacion registrada (2026-09-30); no hay explicacion disponible sobre esta diferencia.
@@ -86,7 +86,7 @@ No se dispone de informacion en la busqueda web realizada que permita comparar c
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto cuantizado: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_round-int4-gs64-asym
+- Repositorio Hugging Face del artefacto cuantizado: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_round-int4-gs64-asym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0
 - Framework Intel AutoRound: https://github.com/intel/auto-round
 - Receta de replicacion (auto-round-pipeline): https://git.epicdynamic.com/auto-round-pipeline

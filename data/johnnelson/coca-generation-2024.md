@@ -2,7 +2,7 @@
 
 ## Resumen
 
-johnnelson/coca-generation-2024 es un repositorio de HuggingFace publicado por el usuario johnnelson que contiene una implementación de código abierta de una arquitectura denominada "Coca" orientada a tareas de generación, con una configuración declarada como "large". Según la propia model card, el artefacto principal es el script `finetune.py`, acompañado de `config.json`, `training_args.json` y un checkpoint de inicialización `model.safetensors`. El autor indica explícitamente que no se reclama ninguna métrica de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+johnnelson/coca-generation-2024 es un repositorio de Hugging Face publicado por el usuario johnnelson que contiene una implementación de código abierta de una arquitectura denominada "Coca" orientada a tareas de generación, con una configuración declarada como "large". Según la propia model card, el artefacto principal es el script `finetune.py`, acompañado de `config.json`, `training_args.json` y un checkpoint de inicialización `model.safetensors`. El autor indica explícitamente que no se reclama ninguna métrica de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 El dato más relevante es su tamaño: el recuento real de parámetros en el fichero safetensors es de 24.832 parámetros, es decir, un modelo de aproximadamente 25.000 parámetros (0,025 millones), muy lejos de cualquier modelo de generación de propósito general. El tamaño total del repositorio es de 0,0 GB. Esto es coherente con la descripción del propio autor, que lo presenta como un punto de partida experimental para pruebas de humo (smoke tests) y no como un modelo entrenado listo para producción.
 
@@ -82,5 +82,5 @@ No disponible. El repositorio no declara una familia de modelos equivalente, no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnnelson/coca-generation-2024
+- Repositorio en Hugging Face: https://huggingface.co/johnnelson/coca-generation-2024
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos relevantes en los resultados de búsqueda web proporcionados.

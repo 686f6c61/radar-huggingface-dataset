@@ -90,7 +90,7 @@ El modelo GRACE W8G128 supera al baseline de 2B en todos los benchmarks y práct
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ForeverBlue/Qwen3-VL-2B-GRACE-W8G128
+- Repositorio Hugging Face: https://huggingface.co/ForeverBlue/Qwen3-VL-2B-GRACE-W8G128
 - Paper (arXiv): https://arxiv.org/abs/2601.22709
 - DOI: https://doi.org/10.48550/arXiv.2601.22709
 - Código (GitHub): https://github.com/ForeverBlue816/GRACE

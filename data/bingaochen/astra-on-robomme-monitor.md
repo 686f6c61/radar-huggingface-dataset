@@ -78,8 +78,8 @@ No se dispone de informacion sobre alternativas comparables en la documentacion 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Astra-on-RoboMME-Monitor | Adaptador de 132.195.448 bytes sobre base de 4B | no disponible | Sin resultados de benchmark publicados; 48 tests de CPU superados | apache-2.0 | HuggingFace, requiere descargar el modelo base aparte |
-| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en la informacion proporcionada | No aplica como monitor especializado; es un modelo generalista | no disponible en la informacion proporcionada | HuggingFace, revision recomendada `ebb281ec70b05090aa6165b016eac8ec08e71b17` |
+| Astra-on-RoboMME-Monitor | Adaptador de 132.195.448 bytes sobre base de 4B | no disponible | Sin resultados de benchmark publicados; 48 tests de CPU superados | apache-2.0 | Hugging Face, requiere descargar el modelo base aparte |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en la informacion proporcionada | No aplica como monitor especializado; es un modelo generalista | no disponible en la informacion proporcionada | Hugging Face, revision recomendada `ebb281ec70b05090aa6165b016eac8ec08e71b17` |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ No se dispone de informacion sobre alternativas comparables en la documentacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bingaochen/Astra-on-RoboMME-Monitor
+- Modelo en Hugging Face: https://huggingface.co/bingaochen/Astra-on-RoboMME-Monitor
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio de codigo Astra-on-RoboMME: https://github.com/bingaochen/Astra-on-RoboMME
 - Contrato de entrada de referencia: `examples/champ/input_contract.py` del repositorio anterior

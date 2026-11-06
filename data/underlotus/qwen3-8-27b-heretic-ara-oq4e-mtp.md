@@ -56,5 +56,5 @@ No disponible. No se proporcionan datos de modelos comparables ni se puede estab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/underlotus/Qwen3.8-27B-heretic-ara-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/underlotus/Qwen3.8-27B-heretic-ara-oQ4e-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No es
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `nm-cannabism-v5-gguf` | 12.2B | No disponible | No disponible | GGUF | HuggingFace |
-| Mistral NeMo Instruct 12B | 12.2B | 128K | Apache 2.0 | Safetensors | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 License | Safetensors/GGUF | HuggingFace |
-| Qwen 2.5 14B | 14B | 128K | Apache 2.0 | Safetensors/GGUF | HuggingFace |
+| `nm-cannabism-v5-gguf` | 12.2B | No disponible | No disponible | GGUF | Hugging Face |
+| Mistral NeMo Instruct 12B | 12.2B | 128K | Apache 2.0 | Safetensors | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 License | Safetensors/GGUF | Hugging Face |
+| Qwen 2.5 14B | 14B | 128K | Apache 2.0 | Safetensors/GGUF | Hugging Face |
 
 Nota: la comparativa se basa en las caracteristicas del modelo base; no hay datos de rendimiento del finetune.
 

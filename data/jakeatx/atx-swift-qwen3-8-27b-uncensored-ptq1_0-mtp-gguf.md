@@ -73,10 +73,10 @@ No hay datos de MMLU, HumanEval, GSM8K, perplejidad ni de tasa de aceptacion de 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ATX-Swift-Qwen3.8-27B-Uncensored-PTQ1_0-MTP-GGUF | ~27B | >= 32.768 (documentado en ejemplo) | PTQ1_0 ternaria, 1,75 bpw / ~2,10 BPW | swift-open-license-1.0 | HuggingFace, GGUF |
-| d0xin/Swift-Qwen3.8-27B-Uncensored-BF16 (modelo base) | ~27B | no disponible | BF16 | no disponible (hereda la del ajuste original) | HuggingFace, safetensors |
-| Otras cuantizaciones GGUF del mismo base (Q4_K_M, Q5_K_M, etc.) | ~27B | no disponible | 4-5 bits por peso, ~15-19 GiB | depende del publicador | HuggingFace, GGUF |
-| Esquemas ternarios tipo BitNet b1.58 (1,58 bpw) | variable | no disponible | ternaria nativa, requiere entrenamiento desde cero | distinta segun modelo | HuggingFace |
+| ATX-Swift-Qwen3.8-27B-Uncensored-PTQ1_0-MTP-GGUF | ~27B | >= 32.768 (documentado en ejemplo) | PTQ1_0 ternaria, 1,75 bpw / ~2,10 BPW | swift-open-license-1.0 | Hugging Face, GGUF |
+| d0xin/Swift-Qwen3.8-27B-Uncensored-BF16 (modelo base) | ~27B | no disponible | BF16 | no disponible (hereda la del ajuste original) | Hugging Face, safetensors |
+| Otras cuantizaciones GGUF del mismo base (Q4_K_M, Q5_K_M, etc.) | ~27B | no disponible | 4-5 bits por peso, ~15-19 GiB | depende del publicador | Hugging Face, GGUF |
+| Esquemas ternarios tipo BitNet b1.58 (1,58 bpw) | variable | no disponible | ternaria nativa, requiere entrenamiento desde cero | distinta segun modelo | Hugging Face |
 
 No se han facilitado datos de rendimiento ni de perplejidad que permitan una comparacion cuantitativa con estas alternativas. La diferencia principal de esta ficha frente a la del modelo base es el tamano (6,70 GiB frente a los ~54 GB de un BF16 de 27B) y la presencia del cabezal MTP, a costa de una perdida de calidad no medida.
 
@@ -95,7 +95,7 @@ No se han facilitado datos de rendimiento ni de perplejidad que permitan una com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jakeatx/ATX-Swift-Qwen3.8-27B-Uncensored-PTQ1_0-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jakeatx/ATX-Swift-Qwen3.8-27B-Uncensored-PTQ1_0-MTP-GGUF
 - Modelo base: https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
 - Repositorio de llama.cpp (soporte de GGUF y decodificacion especulativa): https://github.com/ggml-org/llama.cpp
 

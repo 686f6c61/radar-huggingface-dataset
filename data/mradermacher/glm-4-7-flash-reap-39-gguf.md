@@ -53,7 +53,7 @@ No se puede realizar una comparativa fiable sin conocer las especificaciones del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-39-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-39-GGUF
 - Modelo original (sin información): https://huggingface.co/Akicou/GLM-4.7-Flash-REAP-39
 - Referencia a GLM-4.7-Flash (no confirmada): https://unsloth.ai/docs/models/tutorials/glm-4.7-flash
 - Información sobre variante REAP 23B A3B (relacionada, pero no idéntica): https://llmrun.dev/model/cerebras-glm-4-7-flash-reap-23b-a3b

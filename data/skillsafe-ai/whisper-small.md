@@ -116,7 +116,7 @@ En cuanto a las propias variantes de precision del repositorio, la comparacion r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/whisper-small
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/whisper-small
 - Modelo upstream (commit fijado): https://huggingface.co/onnx-community/whisper-small/tree/36050c46d777d46dc4b5f43f6d90574fc38f8732
 - Modelo upstream (rama principal): https://huggingface.co/onnx-community/whisper-small
 - Repositorio del conversor y las recetas de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

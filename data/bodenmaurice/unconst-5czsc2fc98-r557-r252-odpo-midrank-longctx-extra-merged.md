@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bodenmaurice/unconst-5czsc2fc98-r557-r252-odpo-midrank-longctx-extra-merged` es un checkpoint de 35.107 millones de parametros resultante de la fusion de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Los tags de HuggingFace indican que se basa en la arquitectura `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) con capacidades multimodales de imagen y texto, aunque el autor no proporciona detalles tecnicos en la model card.
+El modelo `bodenmaurice/unconst-5czsc2fc98-r557-r252-odpo-midrank-longctx-extra-merged` es un checkpoint de 35.107 millones de parametros resultante de la fusion de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Los tags de Hugging Face indican que se basa en la arquitectura `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) con capacidades multimodales de imagen y texto, aunque el autor no proporciona detalles tecnicos en la model card.
 
 El modelo forma parte de un proceso de desarrollo iterativo identificado por nombres como `Affine-5czsc2fc98-h126-bittobfullft` y `Affine-5czsc2fc98-h57-merged` de la organizacion `unconst`. La model card es extremadamente escueta: indica que es un "LoRA-merged" y que se trata de un "seguro TTL privado; no es una submission hasta que el gate de la etapa 5 se aclare", lo que sugiere que es un checkpoint intermedio de un pipeline de entrenamiento en curso, no un modelo final destinado a produccion.
 
@@ -12,7 +12,7 @@ A pesar de su tamano considerable (70,2 GB en el repositorio), el modelo tiene c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5_moe (según tags de HuggingFace) |
+| Arquitectura | qwen3_5_moe (según tags de Hugging Face) |
 | Parametros totales | 35.107.181.936 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El Khmer speech-text tokenizer 4k es un tokenizador de subpalabras para jemer (khmer), desarrollado por el usuario ric912 y publicado en HuggingFace. No es un modelo de lenguaje, sino un componente de tokenizacion basado en SentencePiece Unigram con un vocabulario de 4.000 entradas, entrenado sobre las transcripciones de un corpus de habla leida en jemer. Su proposito es convertir texto jemer en identificadores enteros estables y viceversa, de modo que distintos modelos y aplicaciones compartan exactamente la misma segmentacion y los mismos IDs.
+El Khmer speech-text tokenizer 4k es un tokenizador de subpalabras para jemer (khmer), desarrollado por el usuario ric912 y publicado en Hugging Face. No es un modelo de lenguaje, sino un componente de tokenizacion basado en SentencePiece Unigram con un vocabulario de 4.000 entradas, entrenado sobre las transcripciones de un corpus de habla leida en jemer. Su proposito es convertir texto jemer en identificadores enteros estables y viceversa, de modo que distintos modelos y aplicaciones compartan exactamente la misma segmentacion y los mismos IDs.
 
 El tokenizador se entreno con SentencePiece 0.2.2 sobre 108.242 frases unicas procedentes del Khmer ASR Cultural Dataset de Digital Divide Data (licencia CC BY-SA 4.0). El vocabulario combina 4 tokens especiales, 256 piezas de byte-fallback y 3.740 piezas aprendidas, de las cuales 3.714 son jemer, 23 son puntuacion o simbolos y 2 son joiners de ancho cero. La normalizacion es identidad: el texto se segmenta tal cual se recibe, sin limpieza de espacios ni normalizacion Unicode.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ric912/khmer-speech-text-tokenizer-4k
+- Hugging Face: https://huggingface.co/ric912/khmer-speech-text-tokenizer-4k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Digital-Divide-Data/khmer-speech-dataset
 - SentencePiece: https://github.com/google/sentencepiece
 - Libreria tokenizers de Hugging Face: https://github.com/huggingface/tokenizers

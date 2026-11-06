@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-opd-teacher-R1Distill-118-SmallestBinaryMultiple (este) | 1,78B | No disponible | SmallestBinaryMultiple, GRPO, 4000 rollouts | No disponible | HuggingFace (0 descargas, 0 likes) |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78B | 32.768 tokens (según su model card) | Razonamiento general destilado de R1 | MIT (según el modelo base; no verificado aquí) | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (según su model card) | Instrucciones generales, multilingüe | Apache 2.0 (según el modelo base; no verificado aquí) | HuggingFace, muy extendido |
-| rlve-opd-teacher-R1Distill-108-NANDResultCounting | ~1,78B | No disponible | NANDResultCounting, mismo pipeline GRPO | No disponible | HuggingFace (misma colección) |
+| rlve-opd-teacher-R1Distill-118-SmallestBinaryMultiple (este) | 1,78B | No disponible | SmallestBinaryMultiple, GRPO, 4000 rollouts | No disponible | Hugging Face (0 descargas, 0 likes) |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78B | 32.768 tokens (según su model card) | Razonamiento general destilado de R1 | MIT (según el modelo base; no verificado aquí) | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (según su model card) | Instrucciones generales, multilingüe | Apache 2.0 (según el modelo base; no verificado aquí) | Hugging Face, muy extendido |
+| rlve-opd-teacher-R1Distill-108-NANDResultCounting | ~1,78B | No disponible | NANDResultCounting, mismo pipeline GRPO | No disponible | Hugging Face (misma colección) |
 
 La comparación relevante no es de rendimiento general, sino de especialización: frente al distill base, este checkpoint intercambia capacidad general por una habilidad concreta; frente a los otros teachers de la colección, cambia únicamente el entorno de entrenamiento. No hay datos públicos que permitan ordenar estas variantes por calidad.
 
@@ -86,7 +86,7 @@ La comparación relevante no es de rendimiento general, sino de especialización
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-118-SmallestBinaryMultiple-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-118-SmallestBinaryMultiple-20261025
 - Colección RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/1d9a88de
 - Paper RLVE referenciado en la colección: https://arxiv.org/abs/2511.07317

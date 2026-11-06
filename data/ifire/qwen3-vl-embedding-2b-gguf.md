@@ -78,8 +78,8 @@ No se dispone de datos comparativos con otros modelos de embeddings multimodales
 
 ## Enlaces
 
-- Repositorio HuggingFace: [ifire/Qwen3-VL-Embedding-2B-GGUF](https://huggingface.co/ifire/Qwen3-VL-Embedding-2B-GGUF)
-- Modelo base en HuggingFace: [Qwen/Qwen3-VL-Embedding-2B](https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B)
+- Repositorio Hugging Face: [ifire/Qwen3-VL-Embedding-2B-GGUF](https://huggingface.co/ifire/Qwen3-VL-Embedding-2B-GGUF)
+- Modelo base en Hugging Face: [Qwen/Qwen3-VL-Embedding-2B](https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B)
 - Repositorio oficial de Qwen3-VL-Embedding: [GitHub - QwenLM/Qwen3-VL-Embedding](https://github.com/QwenLM/Qwen3-VL-Embedding)
 - Repositorio de Qwen3-VL: [GitHub - QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)
 - PR #18665 en llama.cpp: [https://github.com/ggml-org/llama.cpp/pull/18665](https://github.com/ggml-org/llama.cpp/pull/18665)

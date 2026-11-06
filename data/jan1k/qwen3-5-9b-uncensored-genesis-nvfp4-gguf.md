@@ -89,7 +89,7 @@ La información disponible solo permite comparar las propias variantes de cuanti
 | NVFP4-v2-imx-v5 | 4,90 GB | NVFP4, 4,70 BPW | 9,5154 | Apache-2.0 | Incluida en el repositorio |
 | NVFP4-v2-imx-v6 | 4,90 GB | NVFP4, 4,70 BPW | 9,5241 | Apache-2.0 | Incluida en el repositorio |
 | NVFP4 v1 | 4,90 GB | NVFP4, 4,70 BPW | 9,8704 | Apache-2.0 | Incluida en el repositorio |
-| BF16 (base HauhauCS) | 17,92 GB | BF16, 16,00 BPW | 9,1951 | No disponible en la información proporcionada | Modelo base en HuggingFace |
+| BF16 (base HauhauCS) | 17,92 GB | BF16, 16,00 BPW | 9,1951 | No disponible en la información proporcionada | Modelo base en Hugging Face |
 | Otras cuantizaciones GGUF (Q4_K_M, Q5_K_M, etc.) del mismo modelo | No disponible | No disponible | No disponible | Apache-2.0 (modelo base) | No disponible |
 | Modelos densos de ~9B de otros autores (por ejemplo, la familia Qwen 3 o Llama 3.1 8B) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -109,7 +109,7 @@ La información disponible solo permite comparar las propias variantes de cuanti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jan1k/Qwen3.5-9B-Uncensored-Genesis-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jan1k/Qwen3.5-9B-Uncensored-Genesis-NVFP4-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
 - Perfil del autor del algoritmo Genesis (LuffyTheFox): https://huggingface.co/LuffyTheFox
 - Ley de Marchenko–Pastur (referencia del SVD de reducción de ruido): https://en.wikipedia.org/wiki/Marchenko%E2%80%93Pastur_distribution

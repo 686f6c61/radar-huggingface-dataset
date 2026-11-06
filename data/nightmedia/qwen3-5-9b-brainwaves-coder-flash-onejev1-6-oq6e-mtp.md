@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-oQ6e-mtp es un modelo experimental publicado por el usuario nightmedia en HuggingFace, resultado de la fusión (merge) de tres modelos derivados de la familia Qwen3.5: nightmedia/Qwen3.5-9B-Brainwaves, Jackrong/Qwopus3-5-9B-Coder-Flash y OmniJev/OneJev1.6-9B. El objetivo declarado es combinar capacidades de razonamiento (chain-of-thought largo), generación de código y escritura creativa en un único checkpoint de aproximadamente 9.653 millones de parámetros.
+Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-oQ6e-mtp es un modelo experimental publicado por el usuario nightmedia en Hugging Face, resultado de la fusión (merge) de tres modelos derivados de la familia Qwen3.5: nightmedia/Qwen3.5-9B-Brainwaves, Jackrong/Qwopus3-5-9B-Coder-Flash y OmniJev/OneJev1.6-9B. El objetivo declarado es combinar capacidades de razonamiento (chain-of-thought largo), generación de código y escritura creativa en un único checkpoint de aproximadamente 9.653 millones de parámetros.
 
 El modelo se distribuye cuantizado con la herramienta oQ (oMLX v0.7.3) en precisión mixta, con un promedio efectivo de 7,172 bits por peso: la mayor parte de los pesos (85,464%) está en 6 bits afín con grupo 64, un 9,453% en 8 bits y un 5,083% en BF16. Incorpora además una cabeza MTP (multi-token prediction) de 0,243B parámetros orientada a decodificación especulativa, y un codificador visual de 0,456B parámetros, lo que lo sitúa en la categoría image-text-to-text.
 
@@ -109,7 +109,7 @@ Para comparar, el componente Brainwaves en bf16 alcanza 767 tokens/s con 24,69 G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-oQ6e-mtp
 - Modelo base Brainwaves: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves
 - Modelo base Coder-Flash: https://huggingface.co/Jackrong/Qwopus3-5-9B-Coder-Flash
 - Modelo base OneJev1.6: https://huggingface.co/OmniJev/OneJev1.6-9B

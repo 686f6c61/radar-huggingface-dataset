@@ -110,8 +110,8 @@ No se dispone de datos de benchmarks comparativos con otros embedders de la mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/twaggs88/Nemotron-3.5-Embed-8B-pulsar-k4
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
+- Repositorio Hugging Face: https://huggingface.co/twaggs88/Nemotron-3.5-Embed-8B-pulsar-k4
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
 - Motor de inferencia pulsar: https://github.com/tylerwagler/pulsar
 - Contenedor relacionado (reranker): https://huggingface.co/twaggs88/Nemotron-3.5-Rerank-8B-pulsar-k4
 - Contenedor relacionado (parser): https://huggingface.co/twaggs88/Nemotron-3.5-Parse-pulsar-f16

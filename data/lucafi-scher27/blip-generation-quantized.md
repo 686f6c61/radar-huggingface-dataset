@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucafi-scher27/blip-generation-quantized` es un repositorio de HuggingFace publicado por el usuario lucafi-scher27 que contiene una implementacion propia de la arquitectura Blip orientada a tareas de generacion, con una configuracion declarada como `xlarge`. Segun su model card, el objetivo del repositorio es servir como punto de partida reproducible para pruebas de humo (smoke tests) y como codigo transparente, no como un modelo entrenado ni evaluado. El propio autor indica explicitamente que el checkpoint incluido es una inicializacion valida, no un modelo con resultados de referencia.
+`lucafi-scher27/blip-generation-quantized` es un repositorio de Hugging Face publicado por el usuario lucafi-scher27 que contiene una implementacion propia de la arquitectura Blip orientada a tareas de generacion, con una configuracion declarada como `xlarge`. Segun su model card, el objetivo del repositorio es servir como punto de partida reproducible para pruebas de humo (smoke tests) y como codigo transparente, no como un modelo entrenado ni evaluado. El propio autor indica explicitamente que el checkpoint incluido es una inicializacion valida, no un modelo con resultados de referencia.
 
 El repositorio incluye el script `finetune.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto (optimizador adafactor con planificador polinomial) y un `model.safetensors` que actua como checkpoint de inicializacion. Los metadatos de safetensors registran 24.832 parametros totales y el tamano del repositorio figura como 0,0 GB, lo que resulta coherente con un artefacto de inicializacion y no con un modelo de escala `xlarge` ya entrenado. La licencia declarada es MIT.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es principalmente como advertencia: se trata de un r
 
 ## Arquitectura y entrenamiento
 
-La model card describe la arquitectura como Blip en escala `xlarge`, con atencion de tipo multi query, fusion bilinear entre ramas, activacion gelu tanh y normalizacion layernorm. El repositorio se presenta como una implementacion personalizada ("custom implementation"), lo que implica que las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder utilizarlo. La configuracion de arquitectura generada se registra en `config.json`.
+La model card describe la arquitectura como Blip en escala `xlarge`, con atencion de tipo multi query, fusion bilinear entre ramas, activacion gelu tanh y normalizacion layernorm. El repositorio se presenta como una implementacion personalizada ("custom implementation"), lo que implica que las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder utilizarlo. La configuracion de arquitectura generada se registra en `config.json`.
 
 En cuanto al entrenamiento, no hay ningun entrenamiento documentado. El autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y que no se presenta como un checkpoint entrenado ni evaluado. La receta por defecto usa el optimizador adafactor con un planificador polinomial, descritos como valores de partida del script y no como evidencia de una ejecucion completada. No se especifican volumen de tokens, composicion del dataset, ni fases de RLHF o DPO. El autor tampoco reclama ningun resultado de benchmark.
 
@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 - El checkpoint no ha sido entrenado. Es una inicializacion para pruebas de humo, no un modelo funcional para tareas reales.
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, segun reconoce el propio autor.
 - No se han publicado resultados de benchmark ni evaluaciones de ningun tipo.
-- Cero descargas y cero valoraciones en HuggingFace, sin senales de validacion por parte de la comunidad.
+- Cero descargas y cero valoraciones en Hugging Face, sin senales de validacion por parte de la comunidad.
 - No se documentan idiomas soportados, longitud de contexto, ni esquema de cuantizacion, pese a que el nombre del repositorio incluye "quantized".
 - Existe una incoherencia entre la escala declarada (`xlarge`) y el numero de parametros registrado por safetensors (24.832), lo que sugiere que el artefacto publicado no se corresponde con un modelo de esa escala.
 - Riesgo de alucinacion: no evaluado; no hay ninguna medicion al respecto.
@@ -78,5 +78,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucafi-scher27/blip-generation-quantized
+- Modelo en Hugging Face: https://huggingface.co/lucafi-scher27/blip-generation-quantized
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante (papers, blogs, repositorios o demos) relacionado con este modelo en la informacion proporcionada.

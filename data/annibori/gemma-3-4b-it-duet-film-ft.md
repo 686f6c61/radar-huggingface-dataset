@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/gemma-3-4b-it-DUET-film-ft
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/gemma-3-4b-it-DUET-film-ft
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Repositorio open-unlearning (referenciado en la receta): no disponible en la información proporcionada

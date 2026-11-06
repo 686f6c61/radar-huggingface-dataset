@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abcorrea/e4b-sok-v8` es un ajuste fino (fine-tune) del modelo `google/gemma-4-E4B-it`, publicado por el usuario abcorrea en HuggingFace. Se trata, por tanto, de un derivado y no de un modelo entrenado desde cero: el autor ha partido de los pesos de Gemma ya alineados para instrucciones y los ha adaptado mediante SFT (supervised fine-tuning) con la librería TRL de HuggingFace. La model card es mínima: no declara el conjunto de datos de entrenamiento, ni hiperparámetros, ni la finalidad concreta del ajuste, más allá del sufijo «sok-v8» en el nombre.
+`abcorrea/e4b-sok-v8` es un ajuste fino (fine-tune) del modelo `google/gemma-4-E4B-it`, publicado por el usuario abcorrea en Hugging Face. Se trata, por tanto, de un derivado y no de un modelo entrenado desde cero: el autor ha partido de los pesos de Gemma ya alineados para instrucciones y los ha adaptado mediante SFT (supervised fine-tuning) con la librería TRL de Hugging Face. La model card es mínima: no declara el conjunto de datos de entrenamiento, ni hiperparámetros, ni la finalidad concreta del ajuste, más allá del sufijo «sok-v8» en el nombre.
 
 El modelo es relevante únicamente como ejemplo de flujo de trabajo reproducible de ajuste fino sobre la familia Gemma con TRL, y potencialmente como punto de partida para quien quiera inspeccionar qué cambia un SFT sobre el modelo base. No hay evidencia pública de que se haya evaluado, documentado o desplegado en producción: acumula 0 descargas y 0 «likes» en el momento de redactar esta ficha, y no se ha publicado ningún resultado de benchmarks.
 
@@ -32,7 +32,7 @@ La información técnica disponible es muy escasa. Se desconoce la arquitectura 
 
 No se dispone de información sobre la arquitectura interna del modelo más allá de su procedencia: es un fine-tune de `google/gemma-4-E4B-it`, por lo que hereda la topología del modelo base (familia Gemma). La model card no detalla si se trata de un transformer denso, de una arquitectura con expertos o de un esquema híbrido, ni tampoco el número de capas, cabezas de atención o dimensión oculta. Tampoco se especifica si el modelo base emplea mecanismos de atención lineal, decodificación especulativa u otras optimizaciones de inferencia.
 
-En cuanto al entrenamiento, lo único documentado es que se realizó mediante SFT con TRL, con las siguientes versiones de framework: TRL 1.9.0, Transformers 5.14.1, PyTorch 2.7.0, Datasets 5.0.0 y Tokenizers 0.22.2. No se indica el número de tokens de entrenamiento, la composición del dataset, si hubo fases de RLHF o DPO posteriores, ni la duración o el hardware empleado. La etiqueta `generated_from_trainer` confirma que el artefacto proviene del `Trainer` de HuggingFace y que se trata de una ejecución de ajuste estándar, no de un entrenamiento desde cero.
+En cuanto al entrenamiento, lo único documentado es que se realizó mediante SFT con TRL, con las siguientes versiones de framework: TRL 1.9.0, Transformers 5.14.1, PyTorch 2.7.0, Datasets 5.0.0 y Tokenizers 0.22.2. No se indica el número de tokens de entrenamiento, la composición del dataset, si hubo fases de RLHF o DPO posteriores, ni la duración o el hardware empleado. La etiqueta `generated_from_trainer` confirma que el artefacto proviene del `Trainer` de Hugging Face y que se trata de una ejecución de ajuste estándar, no de un entrenamiento desde cero.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se han proporcionado modelos comparables en la información disponible. La ú
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| abcorrea/e4b-sok-v8 | no disponible | no disponible | no disponible | Publicado en HuggingFace, 0 descargas |
+| abcorrea/e4b-sok-v8 | no disponible | no disponible | no disponible | Publicado en Hugging Face, 0 descargas |
 | google/gemma-4-E4B-it (modelo base) | no disponible | no disponible | no disponible | Referenciado como base, ficha no incluida en la informacion proporcionada |
 
 No es posible establecer una comparación cuantitativa con alternativas de la misma categoría (por ejemplo, otros modelos de ~4B parámetros ajustados) porque no se han facilitado datos de rendimiento, contexto o licencia de ninguno de los implicados.
@@ -100,7 +100,7 @@ No es posible establecer una comparación cuantitativa con alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abcorrea/e4b-sok-v8
+- Modelo en Hugging Face: https://huggingface.co/abcorrea/e4b-sok-v8
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación de TRL (cita BibTeX incluida en la model card): von Werra, L. et al., «TRL: Transformers Reinforcement Learning», 2020, licencia Apache-2.0

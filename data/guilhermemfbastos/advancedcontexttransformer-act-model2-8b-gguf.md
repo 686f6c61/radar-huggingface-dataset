@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AdvancedContextTransformer (ACT) Model2 8B es un modelo de lenguaje publicado en HuggingFace por el usuario guilhermemfbastos, distribuido bajo licencia Apache 2.0 y etiquetado con la arquitectura qwen2. El repositorio contiene 7.615.616.512 parametros reales (aproximadamente 7,6 mil millones) y ocupa 15,2 GB, un tamano coherente con pesos en precision de 16 bits. El identificador del repositorio incluye el sufijo "gguf", aunque las etiquetas oficiales solo declaran safetensors, por lo que la disponibilidad real de cuantizaciones GGUF no esta confirmada.
+AdvancedContextTransformer (ACT) Model2 8B es un modelo de lenguaje publicado en Hugging Face por el usuario guilhermemfbastos, distribuido bajo licencia Apache 2.0 y etiquetado con la arquitectura qwen2. El repositorio contiene 7.615.616.512 parametros reales (aproximadamente 7,6 mil millones) y ocupa 15,2 GB, un tamano coherente con pesos en precision de 16 bits. El identificador del repositorio incluye el sufijo "gguf", aunque las etiquetas oficiales solo declaran safetensors, por lo que la disponibilidad real de cuantizaciones GGUF no esta confirmada.
 
 El problema que pretende resolver no esta documentado: la model card publicada se limita a la linea de licencia y no incluye descripcion, datos de entrenamiento, tokenizador, longitud de contexto ni resultados de evaluacion. Tampoco hay informacion sobre el dataset de ajuste, el proceso de alineamiento (RLHF, DPO u otros) ni los idiomas soportados.
 
@@ -81,10 +81,10 @@ La comparativa se limita a especificaciones objetivas, ya que este modelo no tie
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ACT Model2 8B (este modelo) | 7,6 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas, sin documentacion |
-| Qwen2-7B (modelo base probable) | 7,62 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | HuggingFace, ampliamente documentado y evaluado |
-| Llama 3.1 8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace y multiples proveedores, muy documentado |
-| Mistral 7B v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente documentado |
+| ACT Model2 8B (este modelo) | 7,6 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas, sin documentacion |
+| Qwen2-7B (modelo base probable) | 7,62 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Hugging Face, ampliamente documentado y evaluado |
+| Llama 3.1 8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face y multiples proveedores, muy documentado |
+| Mistral 7B v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente documentado |
 
 Frente a estas alternativas, ACT Model2 8B no aporta ninguna ventaja verificable: carece de model card, de evaluaciones y de adopcion por parte de la comunidad. Su unico rasgo diferencial observable es el nombre, que alude a un manejo avanzado del contexto sin ningun dato que lo respalde.
 
@@ -103,7 +103,7 @@ Frente a estas alternativas, ACT Model2 8B no aporta ninguna ventaja verificable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guilhermemfbastos/AdvancedContextTransformer-ACT-Model2-8B-gguf
+- Modelo en Hugging Face: https://huggingface.co/guilhermemfbastos/AdvancedContextTransformer-ACT-Model2-8B-gguf
 - Repositorio del modelo base Qwen2 (referencia arquitectonica, no confirmada por el autor): https://huggingface.co/Qwen/Qwen2-7B
 - Resultados de busqueda consultados: no guardan relacion con el modelo. Corresponden al programa "One Million Rwandan Coders" (https://omrc.awesomity.rw/, https://mcoders.minict.gov.rw/blog/full-story?article=smart-ibiruhuko, https://kura.rw/kura_opportunity/one-million-coders/, https://en.igihe.com/science-technology/article/300000-rwandans-trained-in-coding-under-one-million-rwanda-coders-programme) y no aportan informacion tecnica sobre el modelo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

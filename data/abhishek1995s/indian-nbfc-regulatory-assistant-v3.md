@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `abhishek1995s/indian-nbfc-regulatory-assistant-v3` (este) | 8B (base) + LoRA | 2048 | Regulación NBFC (India) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-8B (base) | 8B | 2048 (original) | Generalista | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128K | Generalista instruct | Llama 3.1 (uso comercial permitido) | HuggingFace, Meta |
-| Mistral-7B-Instruct | 7B | 32K | General instruct | Apache-2.0 | HuggingFace |
+| `abhishek1995s/indian-nbfc-regulatory-assistant-v3` (este) | 8B (base) + LoRA | 2048 | Regulación NBFC (India) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-8B (base) | 8B | 2048 (original) | Generalista | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128K | Generalista instruct | Llama 3.1 (uso comercial permitido) | Hugging Face, Meta |
+| Mistral-7B-Instruct | 7B | 32K | General instruct | Apache-2.0 | Hugging Face |
 
 No hay comparación directa con otros adaptadores específicos de NBFC o regulación india en la información disponible; los modelos comparados son alternativas generalistas de tamaño similar. La principal diferencia es el ajuste especializado en NBFC, que puede mejorar el rendimiento en tareas regulatorias específicas frente a los generalistas, aunque no hay datos cuantitativos para confirmarlo.
 
@@ -75,7 +75,7 @@ No hay comparación directa con otros adaptadores específicos de NBFC o regulac
 
 ## Enlaces
 
-- [HuggingFace: abhisheik1995s/indian-nbfc-regulatory-assistant-v3](https://huggingface.co/abhisheik1995s/indian-nbfc-regulatory-assistant-v3)
+- [Hugging Face: abhisheik1995s/indian-nbfc-regulatory-assistant-v3](https://huggingface.co/abhisheik1995s/indian-nbfc-regulatory-assistant-v3)
 - [Modelo base: Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 - [Axolotl (framework de entrenamiento)](https://github.com/axolotl-ai-cloud/axolotl)
 - [Regulación NBFC del RBI (información de contexto)](https://www.rbi.org.in/Scripts/BS_NBFCNotificationView.aspx?Id=12179)

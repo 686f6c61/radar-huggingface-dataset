@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`salah-2005/multilingual_embeddings` es un repositorio alojado en HuggingFace por el usuario `salah-2005` cuyo unico artefacto declarado se distribuye en formato `joblib`, la libreria de serializacion de objetos Python usada habitualmente por scikit-learn. El nombre sugiere un conjunto de embeddings multilingues, pero el repositorio no incluye model card, pipeline declarado, licencia, idiomas soportados ni documentacion tecnica alguna, por lo que no es posible confirmar que se trate de un modelo neuronal en sentido estricto.
+`salah-2005/multilingual_embeddings` es un repositorio alojado en Hugging Face por el usuario `salah-2005` cuyo unico artefacto declarado se distribuye en formato `joblib`, la libreria de serializacion de objetos Python usada habitualmente por scikit-learn. El nombre sugiere un conjunto de embeddings multilingues, pero el repositorio no incluye model card, pipeline declarado, licencia, idiomas soportados ni documentacion tecnica alguna, por lo que no es posible confirmar que se trate de un modelo neuronal en sentido estricto.
 
 Los metadatos publicos son minimos: 0 descargas, 1 like, un tamano de repositorio reportado de 0,0 GB y etiquetas limitadas a `joblib` y `region:us`. No se declara arquitectura, numero de parametros, longitud de contexto ni formato de pesos estandar (safetensors, GGUF o similar), lo que impide encuadrarlo en una categoria tecnica concreta mas alla de "artefacto serializado de Python".
 
@@ -26,7 +26,7 @@ Su relevancia actual es, por tanto, muy limitada: se trata de un repositorio sin
 | Fecha de ultima actualizacion | 2026-09-25 |
 | Descargas | 0 |
 | Likes | 1 |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Etiquetas | `joblib`, `region:us` |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No es posible establecer una comparativa fiable. El repositorio no declara param
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `salah-2005/multilingual_embeddings` | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| `salah-2005/multilingual_embeddings` | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la categoria de embeddings multilingues (por ejemplo, modelos de la familia E5, LaBSE o BGE-M3) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 Se mencionan esas familias unicamente como referencia de categoria; sus especificaciones no forman parte de la informacion facilitada y no deben darse por confirmadas.
@@ -101,7 +101,7 @@ Se mencionan esas familias unicamente como referencia de categoria; sus especifi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/salah-2005/multilingual_embeddings
+- Repositorio en Hugging Face: https://huggingface.co/salah-2005/multilingual_embeddings
 - Perfil del autor: https://huggingface.co/salah-2005
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; unicamente aparecieron paginas de prevision meteorologica de Chicago (AccuWeather, The Weather Channel, National Weather Service, NBC Chicago), sin relacion con el artefacto.

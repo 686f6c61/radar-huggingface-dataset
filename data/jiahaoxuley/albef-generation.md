@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JiahaoXuley/albef-generation es un repositorio de HuggingFace que contiene una implementacion propia y de escala reducida de la arquitectura Albef orientada a tareas de generacion. No se trata de un modelo entrenado ni de una release con pesos validados: la propia model card lo describe como un punto de partida reproducible, con un checkpoint de inicializacion pensado para pruebas de humo (smoke tests). El checkpoint incluido tiene aproximadamente 33.088 parametros, un tamano propio de un experimento de laboratorio mas que de un modelo utilizable en produccion.
+JiahaoXuley/albef-generation es un repositorio de Hugging Face que contiene una implementacion propia y de escala reducida de la arquitectura Albef orientada a tareas de generacion. No se trata de un modelo entrenado ni de una release con pesos validados: la propia model card lo describe como un punto de partida reproducible, con un checkpoint de inicializacion pensado para pruebas de humo (smoke tests). El checkpoint incluido tiene aproximadamente 33.088 parametros, un tamano propio de un experimento de laboratorio mas que de un modelo utilizable en produccion.
 
 La relevancia de esta ficha es principalmente documental y de advertencia: sirve para identificar que el repositorio existe, que contiene codigo ejecutable (inference.py), ficheros de configuracion (config.json, training_args.json) y un model.safetensors que no ha sido entrenado. No hay pipeline declarado, no hay idiomas especificados y no se reclama ninguna puntuacion de benchmark.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JiahaoXuley/albef-generation | 33.088 | no disponible | no | apache-2.0 | HuggingFace |
+| JiahaoXuley/albef-generation | 33.088 | no disponible | no | apache-2.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos sobre modelos comparables en la informacion proporcionada. En rigor, este repositorio no es equiparable a un modelo publicado y entrenado, por lo que una comparativa directa de rendimiento carece de sentido hasta que exista un checkpoint entrenado.
@@ -86,5 +86,5 @@ No se dispone de datos sobre modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JiahaoXuley/albef-generation
+- Modelo en Hugging Face: https://huggingface.co/JiahaoXuley/albef-generation
 - Otros enlaces (paper, blog, repositorio de codigo, demo): no disponible en la informacion proporcionada.

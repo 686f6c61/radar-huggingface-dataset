@@ -115,8 +115,8 @@ La unica comparacion con datos verificables en la informacion disponible es cont
 
 | Modelo | Parametros | Contexto | HarmBench-320 ASR (effort=max) | MMLU | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| deepseek-ai/DeepSeek-V4.1-Flash (base) | 552B backbone (763,2B en safetensors de esta build) | 1M tokens | 1,56% | 86,96% | no disponible | HuggingFace |
-| schwyzquant/DeepSeek-V4.1-Flash-UNCENSORED-FP8 (esta ficha) | 763.205.315.794 | 1M tokens | 100,00% | 82,74% | MIT (declarada por el uploader) | HuggingFace, 0 descargas |
+| deepseek-ai/DeepSeek-V4.1-Flash (base) | 552B backbone (763,2B en safetensors de esta build) | 1M tokens | 1,56% | 86,96% | no disponible | Hugging Face |
+| schwyzquant/DeepSeek-V4.1-Flash-UNCENSORED-FP8 (esta ficha) | 763.205.315.794 | 1M tokens | 100,00% | 82,74% | MIT (declarada por el uploader) | Hugging Face, 0 descargas |
 | Alternativas de terceros | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El autor senala un efecto interesante: en el modelo base, subir el esfuerzo de razonamiento reduce el ASR del 42,81% al 1,56%, porque el razonamiento explicito aflora consideraciones de seguridad antes de responder. En la build abliterada ese efecto desaparece por completo.
@@ -135,7 +135,7 @@ El autor senala un efecto interesante: en el modelo base, subir el esfuerzo de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schwyzquant/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/schwyzquant/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil del segundo autor en X: https://x.com/jordanschenck

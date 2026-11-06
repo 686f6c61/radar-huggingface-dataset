@@ -17,7 +17,7 @@ El modelo base declara 262.144 tokens de contexto, pero esta cuantizacion no alc
 | Parametros activos | no disponible de forma explicita; la nomenclatura A4B del nombre sugiere aproximadamente 4.000 millones de parametros activos por token |
 | Longitud de contexto | 262.144 tokens declarados en el modelo base; en este build, 32.768 tokens es lo maximo que se asigna con exito en un equipo de 128 GiB con MTP activado |
 | Tipos de cuantizacion | ROCmFP4 (tipos de tensor con id >= 100, fuera del `GGML_TYPE_COUNT` estandar); tipo de tensor de salida `q4_K`; receta `llama-quantize ... 103 32` |
-| Idiomas soportados | no disponible en la ficha de HuggingFace; la model card describe el modelo base como "Chinese-first" y senala que las trazas de razonamiento son frecuentemente en chino incluso en respuestas en ingles |
+| Idiomas soportados | no disponible en la ficha de Hugging Face; la model card describe el modelo base como "Chinese-first" y senala que las trazas de razonamiento son frecuentemente en chino incluso en respuestas en ingles |
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (archivo unico de 15,51 GiB); la fuente es un GGUF BF16 de 62,4 GB con 936 tensores |
 | Tamano del repositorio | 16,7 GB (incluye el archivo `.imatrix` de 88 MB) |
@@ -121,7 +121,7 @@ Frente a modelos comparables de otros autores (Mistral, Qwen, Llama en el rango 
 
 ## Enlaces
 
-- Ficha de HuggingFace de esta cuantizacion: https://huggingface.co/kingjones777/Xing4.0-29B-A4B-ROCmFP4-FAST-imatrix-GGUF
+- Ficha de Hugging Face de esta cuantizacion: https://huggingface.co/kingjones777/Xing4.0-29B-A4B-ROCmFP4-FAST-imatrix-GGUF
 - Modelo base: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - Tiers estandar sin imatrix de la misma familia: https://huggingface.co/kingjones777/Xing4.0-29B-A4B-ROCmFP4-GGUF
 - Fork ROCmFPX con la arquitectura `xing4`: https://github.com/kingjones30/ROCmFPX (rama `xing4-port`, commit `cbc2cd5`)

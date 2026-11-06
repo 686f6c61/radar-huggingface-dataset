@@ -17,7 +17,7 @@ El repositorio tiene un tamaño de 0.1 GB, lo que sugiere que se distribuyen los
 | Tipos de cuantizacion | no disponible (el repo de 0.1 GB sugiere pesos parciales o adaptador) |
 | Idiomas soportados | no disponible (heredados del modelo base, no especificados) |
 | Licencia | no disponible (la model card indica "licence: license" sin detallar) |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

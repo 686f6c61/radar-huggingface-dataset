@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hasong88/beit-checkpoint | 33.088 | no disponible | apache-2.0 | HuggingFace, codigo propio |
+| hasong88/beit-checkpoint | 33.088 | no disponible | apache-2.0 | Hugging Face, codigo propio |
 | BEiT-base (referencia de la familia) | no disponible en la fuente | no disponible | no disponible | no disponible |
 | Modelos contrastivos comparables | no disponible | no disponible | no disponible | no disponible |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de parametros de modelos alternativos e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hasong88/beit-checkpoint
+- Hugging Face: https://huggingface.co/hasong88/beit-checkpoint
 - Repositorio del autor: no disponible
 - Paper de BEiT: no disponible en la informacion proporcionada
 - Demo o blog: no disponible

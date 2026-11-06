@@ -2,7 +2,7 @@
 
 ## Resumen
 
-scribe-tok-50k es un tokenizer de codificacion por pares de bytes (BPE) con un vocabulario de 50.004 tokens, entrenado desde cero sobre 2.000.000 de lineas de texto limpio en ingles procedente de libros. Lo publica el usuario coderian en HuggingFace bajo licencia MIT y se distribuye con la libreria `tokenizers`, por lo que no es un modelo de lenguaje sino el componente de tokenizacion que estos necesitan para convertir texto en secuencias de identificadores.
+scribe-tok-50k es un tokenizer de codificacion por pares de bytes (BPE) con un vocabulario de 50.004 tokens, entrenado desde cero sobre 2.000.000 de lineas de texto limpio en ingles procedente de libros. Lo publica el usuario coderian en Hugging Face bajo licencia MIT y se distribuye con la libreria `tokenizers`, por lo que no es un modelo de lenguaje sino el componente de tokenizacion que estos necesitan para convertir texto en secuencias de identificadores.
 
 El objetivo declarado por el autor es servir a experimentacion, aprendizaje y modelos de lenguaje pequenos o medianos que necesiten un vocabulario compacto entrenado desde cero, en lugar de reutilizar un tokenizer de produccion de gran tamano. El vocabulario se construye con 49.928 fusiones BPE, frecuencia minima de 2, pre-tokenizador de espacios en blanco, sin normalizador y sin decoder configurado.
 
@@ -59,7 +59,7 @@ Los datos de entrenamiento son 2.000.000 de lineas (~151 MB) del dataset `kd13/b
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de compresion (tokens por palabra o por caracter), comparaciones con otros tokenizers ni evaluaciones de fertilidad de vocabulario. El repositorio de HuggingFace registra 0 descargas y 0 likes en el momento de la consulta, y la busqueda web realizada no devolvio documentacion tecnica adicional: los resultados obtenidos eran irrelevantes (sitios de preguntas y respuestas en chino y paginas institucionales sin relacion con el artefacto).
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de compresion (tokens por palabra o por caracter), comparaciones con otros tokenizers ni evaluaciones de fertilidad de vocabulario. El repositorio de Hugging Face registra 0 descargas y 0 likes en el momento de la consulta, y la busqueda web realizada no devolvio documentacion tecnica adicional: los resultados obtenidos eran irrelevantes (sitios de preguntas y respuestas en chino y paginas institucionales sin relacion con el artefacto).
 
 ## Requisitos de hardware
 
@@ -98,7 +98,7 @@ Diferencias clave frente a estas alternativas: scribe-tok-50k no usa pre-tokeniz
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coderian/scribe-tok-50k
+- Hugging Face: https://huggingface.co/coderian/scribe-tok-50k
 - Repositorio GitHub: https://github.com/coderianx/scribe-tok-50k
 - Dataset de entrenamiento: https://huggingface.co/datasets/kd13/bookcorpus-clean
 - Licencia MIT: https://opensource.org/licenses/MIT

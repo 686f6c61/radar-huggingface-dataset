@@ -119,7 +119,7 @@ No se ha facilitado en la informacion de origen una comparativa numerica directa
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rone_L16
+- Hugging Face (este modelo): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rone_L16
 - Configuracion recomendada (MAE, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Configuracion recomendada (JEPA, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

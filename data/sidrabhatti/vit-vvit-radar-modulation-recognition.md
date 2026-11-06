@@ -117,7 +117,7 @@ Frente a métodos externos, la model card menciona cuatro referencias del estado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SidraBhatti/vit-vvit-radar-modulation-recognition
+- Modelo en Hugging Face: https://huggingface.co/SidraBhatti/vit-vvit-radar-modulation-recognition
 - Artículo: Bhatti, S.G., Taj, I.A., Ullah, M., & Bhatti, A.I. (2024). "Transformer-based models for intrapulse modulation recognition of radar waveforms." *Engineering Applications of Artificial Intelligence*, 136, 108989. https://doi.org/10.1016/j.engappai.2024.108989 (acceso de pago)
 - Paper de referencia de ViT: Dosovitskiy et al. (2020), Vision Transformer (citado en la model card, sin enlace explícito)
 - Referencias comparadas mencionadas sin enlace: Wang et al. 2023b, Kim et al. 2023, Guo et al. 2022, Ma et al. 2022

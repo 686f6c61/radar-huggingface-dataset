@@ -84,7 +84,7 @@ Desglose por banda de posición del bloque (aciertos/episodios) para este modelo
 
 | Modelo | Parámetros | Contexto / horizonte | Rendimiento (DDIM-10 clean) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-10k (este modelo) | 288 M | 64 pasos, 32 ejecutados | 66% | other | HuggingFace, checkpoints cada 10k |
+| dp-blockpick-10k (este modelo) | 288 M | 64 pasos, 32 ejecutados | 66% | other | Hugging Face, checkpoints cada 10k |
 | fullregion-dr2-statenoise | no disponible | no disponible | 26% | no disponible | mismo autor (referencia en la model card) |
 | cotrain-real075-statenoise | no disponible | no disponible | 87% | no disponible | mismo autor (referencia en la model card) |
 
@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos de diffusion policy comparables fuera de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-10k
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-10k
 - Dataset de entrenamiento: `padiredd/pick-cube-topdown-region10k-full-dr2-3cam` (referenciado en la model card)
 - Repositorio de evaluación y protocolo: `data_collection/region10k/eval/` del repo cyclo_lab-real2sim (referenciado en la model card)
 - Script de rollout: `data_collection/rollout_policy.py` (referenciado en la model card)

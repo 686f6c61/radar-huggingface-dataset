@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Radar Sinic (modelo abierto) es un conjunto de tres clasificadores LightGBM que estiman la probabilidad de que se declare un episodio de cianobacterias (floración de algas verdiazules) en una zona de baño vigilada, a partir exclusivamente de dos características derivadas de una imagen Sentinel-2 L2A. Lo desarrolla el autor de HuggingFace `lustachowicz` en el marco del proyecto "Radar Sinic" de análisis de datos espaciales. El problema que aborda es la predicción a corto plazo (hoy, mañana y a tres días) de un riesgo sanitario real, usando como etiqueta de entrenamiento las resoluciones oficiales de cierre de zonas de baño emitidas por la inspección sanitaria polaca (sanepid).
+Radar Sinic (modelo abierto) es un conjunto de tres clasificadores LightGBM que estiman la probabilidad de que se declare un episodio de cianobacterias (floración de algas verdiazules) en una zona de baño vigilada, a partir exclusivamente de dos características derivadas de una imagen Sentinel-2 L2A. Lo desarrolla el autor de Hugging Face `lustachowicz` en el marco del proyecto "Radar Sinic" de análisis de datos espaciales. El problema que aborda es la predicción a corto plazo (hoy, mañana y a tres días) de un riesgo sanitario real, usando como etiqueta de entrenamiento las resoluciones oficiales de cierre de zonas de baño emitidas por la inspección sanitaria polaca (sanepid).
 
 No es un modelo de lenguaje: es un modelo tabular de gradient boosting con dos únicas variables de entrada, `s2_ndci_p90` (percentil 90 del índice NDCI = (B5 − B4) / (B5 + B4) sobre píxeles de agua, que mide el verdor del agua) y `s2_scum_frac` (fracción de píxeles de agua con película superficial, según FVI = (B8 − B4) / (B8 + B4) > 0,2 y B8 > 0,03). Se publica en abierto con licencia MIT como contrapunto deliberadamente limitado a la versión cerrada del proyecto, que añade Sentinel-3, meteorología y posición del punto de baño.
 
@@ -102,7 +102,7 @@ No se dispone de modelos abiertos comparables en la información proporcionada. 
 
 | Modelo | Entradas | ROC-AUC (`y_cyano_0`) | PR-AUC (`y_cyano_0`) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Radar Sinic abierto (S2) | NDCI p90 + fracción de película | 0,820 | 0,094 | MIT | Pesos abiertos en HuggingFace |
+| Radar Sinic abierto (S2) | NDCI p90 + fracción de película | 0,820 | 0,094 | MIT | Pesos abiertos en Hugging Face |
 | v1 (cerrado) | Sentinel-2 | 0,905 | 0,335 | No disponible | No pública |
 | v3 (cerrado) | Sentinel-2 + Sentinel-3 + deriva | 0,905 | 0,340 | No disponible | No pública |
 | Línea base "historia" | Cierres históricos por punto de baño | 0,881 | 0,294 | No aplica (regla) | Reproducible a partir de los datos del sanepid |
@@ -124,5 +124,5 @@ Conclusiones de la comparativa: añadir Sentinel-3 y deriva no mejora el ROC-AUC
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lustachowicz/radar-sinic-open
+- Modelo en Hugging Face: https://huggingface.co/lustachowicz/radar-sinic-open
 - No se han encontrado en la información proporcionada enlaces adicionales (paper, blog, repositorio del proyecto o demo).

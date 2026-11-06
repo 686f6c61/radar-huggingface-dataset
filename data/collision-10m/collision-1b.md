@@ -2,7 +2,7 @@
 
 ## Resumen
 
-COLLISION-1B es un modelo de lenguaje causal de aproximadamente 1.000 millones de parámetros publicado por el usuario collision-10M en HuggingFace, presentado por su autor como el modelo insignia del ecosistema "COLLISION". Se distribuye como transformer decoder-only de 24 capas con una ventana de contexto de 1.024 tokens y está orientado explícitamente a entornos de computación en CPU ("cpu-first", "edge-ai"), con soporte declarado para GGUF, llama.cpp y Ollama. El repositorio ocupa 2,3 GB e incluye pesos en safetensors y, según las etiquetas del autor, también en GGUF.
+COLLISION-1B es un modelo de lenguaje causal de aproximadamente 1.000 millones de parámetros publicado por el usuario collision-10M en Hugging Face, presentado por su autor como el modelo insignia del ecosistema "COLLISION". Se distribuye como transformer decoder-only de 24 capas con una ventana de contexto de 1.024 tokens y está orientado explícitamente a entornos de computación en CPU ("cpu-first", "edge-ai"), con soporte declarado para GGUF, llama.cpp y Ollama. El repositorio ocupa 2,3 GB e incluye pesos en safetensors y, según las etiquetas del autor, también en GGUF.
 
 El modelo se comercializa conceptualmente como una suite híbrida: además del generador neuronal, el autor describe subsistemas deterministas propios (`collision.nlp` y `collision.brain`) para extracción de frases clave, clasificación temática, corrección gramatical, índices de legibilidad, comprensión lectora extractiva, matemáticas exactas y recuperación aumentada (RAG) con navegación web. También declara un controlador de "doble proceso" System 1/System 2 basado en Graph-of-Thoughts y un módulo de "Global Workspace Theory". Conviene subrayar que estas capacidades y los datos de rendimiento proceden exclusivamente de la model card del autor y no están respaldados por evaluaciones independientes en la información disponible.
 
@@ -92,10 +92,10 @@ Advertencia: las cifras de la fila "precision aritmetica determinista" y las cap
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| COLLISION-1B | 999,38 M | 1.024 tokens | MIT | HuggingFace, GGUF, Ollama, API OpenAI-compatible | Suite NLP y RAG declaradas por el autor; sin benchmarks independientes |
-| TinyLlama-1.1B | 1,10 B | 2.048 tokens (version estandar) | Apache-2.0 | Ampliamente disponible en HuggingFace y llama.cpp | Referencia consolidada en el segmento ~1B, con evaluaciones publicas |
-| Qwen2.5-0.5B | 490 M | 32.768 tokens | Apache-2.0 | HuggingFace, vLLM, llama.cpp, Ollama | Contexto muy superior y ecosistema maduro |
-| SmolLM-135M | 135 M | 2.048 tokens (segun variante) | Apache-2.0 | HuggingFace, llama.cpp | Modelo mas pequeno, pensado para edge |
+| COLLISION-1B | 999,38 M | 1.024 tokens | MIT | Hugging Face, GGUF, Ollama, API OpenAI-compatible | Suite NLP y RAG declaradas por el autor; sin benchmarks independientes |
+| TinyLlama-1.1B | 1,10 B | 2.048 tokens (version estandar) | Apache-2.0 | Ampliamente disponible en Hugging Face y llama.cpp | Referencia consolidada en el segmento ~1B, con evaluaciones publicas |
+| Qwen2.5-0.5B | 490 M | 32.768 tokens | Apache-2.0 | Hugging Face, vLLM, llama.cpp, Ollama | Contexto muy superior y ecosistema maduro |
+| SmolLM-135M | 135 M | 2.048 tokens (segun variante) | Apache-2.0 | Hugging Face, llama.cpp | Modelo mas pequeno, pensado para edge |
 
 La comparativa con TinyLlama-1.1B, Qwen2.5-0.5B y SmolLM-135M procede de la tabla del propio autor; los datos de contexto, licencia y disponibilidad de los modelos alternativos son los habitualmente publicos y no se han verificado en la informacion proporcionada. En igualdad de parametros, la desventaja mas clara de COLLISION-1B frente a sus competidores es la ventana de contexto de 1.024 tokens, muy inferior a la de Qwen2.5-0.5B, y la ausencia de evaluaciones de terceros.
 
@@ -116,8 +116,8 @@ La comparativa con TinyLlama-1.1B, Qwen2.5-0.5B y SmolLM-135M procede de la tabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/collision-10M/Collision-1B
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/collision-10M/collision-ai-lab
+- Modelo en Hugging Face: https://huggingface.co/collision-10M/Collision-1B
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/collision-10M/collision-ai-lab
 - Cuaderno de inicio rapido en Google Colab: https://colab.research.google.com/github/viraj3106/Collision-1.46M/blob/main/demo/collision_quickstart.ipynb
 - Repositorio en GitHub: https://github.com/viraj3106/Collision-1.46M
 - Licencia MIT: https://opensource.org/licenses/MIT

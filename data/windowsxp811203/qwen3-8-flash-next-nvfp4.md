@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-NVFP4 es un repositorio de HuggingFace creado por el usuario windowsxp811203 que actúa como *placeholder* para una futura cuantización NVFP4 del modelo Qwen3.8-Flash-Next, un modelo de arquitectura Qwen4 en vista previa con configuración MoE de 125 mil millones de parámetros totales y 6 mil millones activos. El autor del repositorio indica que la publicación de los pesos está pendiente de tres condiciones: la revisión de la licencia del modelo original, la verificación de la nueva arquitectura (que incluye cabezas MTP, atención lineal y un camino de embedding n-grama de 51B) y el soporte de las herramientas de cuantización (llm-compressor, vLLM, llama.cpp) para dicha arquitectura.
+Qwen3.8-Flash-Next-NVFP4 es un repositorio de Hugging Face creado por el usuario windowsxp811203 que actúa como *placeholder* para una futura cuantización NVFP4 del modelo Qwen3.8-Flash-Next, un modelo de arquitectura Qwen4 en vista previa con configuración MoE de 125 mil millones de parámetros totales y 6 mil millones activos. El autor del repositorio indica que la publicación de los pesos está pendiente de tres condiciones: la revisión de la licencia del modelo original, la verificación de la nueva arquitectura (que incluye cabezas MTP, atención lineal y un camino de embedding n-grama de 51B) y el soporte de las herramientas de cuantización (llm-compressor, vLLM, llama.cpp) para dicha arquitectura.
 
 En el momento de redactar esta ficha, el repositorio no contiene pesos ni información técnica verificada, por lo que la mayoría de las especificaciones se basan en lo declarado en la model card y en los resultados de búsqueda web sobre la serie Qwen3.8 de Alibaba. La relevancia actual es limitada: se trata de un trabajo en preparación, no de un modelo desplegable, y no se puede evaluar su rendimiento ni sus capacidades hasta que se publique una versión estable.
 
@@ -59,7 +59,7 @@ No hay modelos comparables disponibles en la información proporcionada. La seri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-NVFP4
 - Página del modelo oficial Qwen3.8-Flash-Next (upcoming): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Nota del autor sobre la encuesta NVFP4-MTP: https://huggingface.co/datasets/windowsxp811203/nvfp4-mtp-survey

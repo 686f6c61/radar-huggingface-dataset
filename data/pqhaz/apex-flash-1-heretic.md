@@ -74,10 +74,10 @@ No hay datos de rendimiento publicados para apex-flash-1-heretic, por lo que la 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| apex-flash-1-heretic | 321,3 B | no disponible | no disponible | MIT | HuggingFace (repo de 642,7 GB) |
-| GLM-4.6 | 355 B | 32 B | 200 K | MIT | HuggingFace |
-| DeepSeek-V3 | 671 B | 37 B | 128 K | licencia propia DeepSeek | HuggingFace |
-| Qwen3-235B-A22B | 235 B | 22 B | 128 K | Apache 2.0 | HuggingFace |
+| apex-flash-1-heretic | 321,3 B | no disponible | no disponible | MIT | Hugging Face (repo de 642,7 GB) |
+| GLM-4.6 | 355 B | 32 B | 200 K | MIT | Hugging Face |
+| DeepSeek-V3 | 671 B | 37 B | 128 K | licencia propia DeepSeek | Hugging Face |
+| Qwen3-235B-A22B | 235 B | 22 B | 128 K | Apache 2.0 | Hugging Face |
 
 En rendimiento no procede comparacion, ya que este checkpoint no tiene benchmarks de capacidad publicados. La diferencia funcional clave respecto a los anteriores es que este modelo esta especificamente abliterado y no esta pensado para uso general, sino para investigacion de seguridad.
 
@@ -95,7 +95,7 @@ En rendimiento no procede comparacion, ya que este checkpoint no tiene benchmark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pqhaz/apex-flash-1-heretic
+- Modelo en Hugging Face: https://huggingface.co/pqhaz/apex-flash-1-heretic
 - Modelo base: https://huggingface.co/cantina-security/apex-flash-1-abliterated
 - Herramienta Heretic: https://github.com/p-e-w/heretic
 - Dataset mlabonne/harmful_behaviors: https://huggingface.co/datasets/mlabonne/harmful_behaviors

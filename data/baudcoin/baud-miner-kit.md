@@ -21,7 +21,7 @@ La información extraída de la web indica que Baud es una criptomoneda con cara
 
 ## Arquitectura y entrenamiento
 
-No se dispone de ninguna información sobre arquitectura, proceso de entrenamiento o datos utilizados. El repositorio no incluye archivos de modelo (safetensors, GGUF, etc.) ni documentación técnica. La model card solo contiene la licencia MIT, y el contenido del repositorio no está disponible públicamente más allá de la página de HuggingFace. Todo lo referente a entrenamiento, tokens, RLHF o innovaciones técnicas queda sin especificar.
+No se dispone de ninguna información sobre arquitectura, proceso de entrenamiento o datos utilizados. El repositorio no incluye archivos de modelo (safetensors, GGUF, etc.) ni documentación técnica. La model card solo contiene la licencia MIT, y el contenido del repositorio no está disponible públicamente más allá de la página de Hugging Face. Todo lo referente a entrenamiento, tokens, RLHF o innovaciones técnicas queda sin especificar.
 
 ## Capacidades
 
@@ -36,7 +36,7 @@ No se dispone de ninguna información sobre arquitectura, proceso de entrenamien
 - **Desarrollo de protocolos de pago M2M**: si el kit incluyera herramientas de minería, podría usarse para experimentar con liquidación sin comisiones, pero no hay evidencia de ello.
 - **Pruebas de concepto de escrow sin confianza**: el proyecto Baud menciona *trustless escrow*, pero el repositorio no aporta nada concreto.
 - **Educación sobre blockchain**: podría usarse como ejemplo de un proyecto con licencia MIT, aunque carece de contenido.
-- **Evaluación de repositorios vacíos**: sirve como caso de estudio de cómo un repositorio puede no contener modelo de IA a pesar de estar en HuggingFace.
+- **Evaluación de repositorios vacíos**: sirve como caso de estudio de cómo un repositorio puede no contener modelo de IA a pesar de estar en Hugging Face.
 - **No recomendado para producción**: no hay código ni funcionalidad verificada.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [baudcoin/baud-miner-kit](https://huggingface.co/baudcoin/baud-miner-kit)
+- Repositorio en Hugging Face: [baudcoin/baud-miner-kit](https://huggingface.co/baudcoin/baud-miner-kit)
 - Web del proyecto Baud: [Baud — Feeless Cryptocurrency for AI Agent Economies](https://nullnaveen.github.io/Baud/)
 - Baud Labs: [Baud | Advance The Frontier of AI](https://baudlabs.ai/)
 - Repositorio GitHub de baudcoin (pruebas): [ngilesgt/baudcoin](https://github.com/ngilesgt/baudcoin/blob/master/README.md)

@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks específicos para esta cuantizació
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Audio-Tokenizer-v2 (original) | 599 M | 48 kHz estéreo | fp32/bf16 | Apache-2.0 | HuggingFace |
-| MOSS-Audio-Tokenizer-v2-MLX-int8 (este) | 599 M | 48 kHz estéreo | int8 | Apache-2.0 | HuggingFace |
-| EnCodec (Meta) | ~7 M (por codec) | 24 kHz mono | fp32 | CC-BY-NC 4.0 | HuggingFace |
+| MOSS-Audio-Tokenizer-v2 (original) | 599 M | 48 kHz estéreo | fp32/bf16 | Apache-2.0 | Hugging Face |
+| MOSS-Audio-Tokenizer-v2-MLX-int8 (este) | 599 M | 48 kHz estéreo | int8 | Apache-2.0 | Hugging Face |
+| EnCodec (Meta) | ~7 M (por codec) | 24 kHz mono | fp32 | CC-BY-NC 4.0 | Hugging Face |
 | SoundStream | ~12 M | 24 kHz mono | fp32 | no comercial | GitHub |
 
 Nota: EnCodec y SoundStream son codecs de audio más pequeños y con menor frecuencia de muestreo; MOSS-Audio-Tokenizer destaca por su mayor capacidad y alineación semántica, aunque requiere más recursos.
@@ -79,7 +79,7 @@ Nota: EnCodec y SoundStream son codecs de audio más pequeños y con menor frecu
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/theoracleguy/MOSS-Audio-Tokenizer-v2-MLX-int8
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/theoracleguy/MOSS-Audio-Tokenizer-v2-MLX-int8
 - Modelo base original: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2
 - Repositorio GitHub de MOSS-Audio-Tokenizer: https://github.com/OpenMOSS/MOSS-Audio-Tokenizer
 - Paper arXiv: https://arxiv.org/abs/2602.10934

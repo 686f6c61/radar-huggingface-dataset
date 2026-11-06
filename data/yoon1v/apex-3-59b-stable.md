@@ -81,6 +81,6 @@ A diferencia de las alternativas, Apex-3 no es un modelo utilizable en producci√
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YOON1v/Apex-3-59B-stable
+- Repositorio en Hugging Face: https://huggingface.co/YOON1v/Apex-3-59B-stable
 - Datasets de entrenamiento relevantes: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu, https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0, https://huggingface.co/datasets/HuggingFaceTB/stack-edu, https://huggingface.co/datasets/bigcode/the-stack-v2-dedup, https://huggingface.co/datasets/tokyotech-llm/swallow-code-v2, https://huggingface.co/datasets/tokyotech-llm/swallow-math-v2, https://huggingface.co/datasets/HuggingFaceTB/finemath, https://huggingface.co/datasets/LLM360/MegaMath, https://huggingface.co/datasets/allenai/peS2o, https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Paper, blog y demo: no disponibles

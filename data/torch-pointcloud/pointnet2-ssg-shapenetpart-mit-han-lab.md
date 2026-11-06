@@ -74,7 +74,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointnet2-ssg.shapenetpart.mit-han-lab (este) | 1,4 M | nube de puntos (ej. 8192 puntos) | Segmentacion de partes ShapeNetPart | MIT | HuggingFace, `torch-pointcloud` |
+| pointnet2-ssg.shapenetpart.mit-han-lab (este) | 1,4 M | nube de puntos (ej. 8192 puntos) | Segmentacion de partes ShapeNetPart | MIT | Hugging Face, `torch-pointcloud` |
 | PointNet++ MSG (variante multi-scale) | no disponible | nube de puntos | Segmentacion de partes ShapeNetPart | MIT (referencia original) | Codigo en repositorios academicos |
 | PVCNN (mit-han-lab) | no disponible | nube de puntos | Segmentacion de partes / clasificacion | MIT | GitHub `mit-han-lab/pvcnn` |
 | Point Transformer | no disponible | nube de puntos | Segmentacion / clasificacion | no disponible | Repositorios academicos |
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/pointnet2-ssg.shapenetpart.mit-han-lab
+- Hugging Face: https://huggingface.co/torch-pointcloud/pointnet2-ssg.shapenetpart.mit-han-lab
 - Paper PointNet++: https://arxiv.org/abs/1706.02413
 - Repositorio de origen de los pesos (PVCNN, MIT-HAN-Lab): https://github.com/mit-han-lab/pvcnn
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

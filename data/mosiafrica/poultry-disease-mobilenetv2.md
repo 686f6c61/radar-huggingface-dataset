@@ -32,7 +32,7 @@ El ajuste fino se realizó sobre el dataset público de diagnóstico de enfermed
 - Clasificación de imágenes de excrementos de pollo en cuatro categorías: coccidiosis, sano, Newcastle y Salmonella.
 - Inferencia ligera apta para dispositivos móviles y hardware de borde gracias al diseño de MobileNetV2.
 - Integración con la librería `transformers` mediante el pipeline `image-classification`.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible` en los tags).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags).
 - No soporta tool calling, function calling ni razonamiento multi-paso.
 - No procesa texto ni audio; es un modelo exclusivamente de visión.
 - No dispone de modo de razonamiento explícito (thinking mode) ni capacidades de agente.
@@ -80,8 +80,8 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mosiAfrica/poultry-disease-mobilenetv2 | 2,26 M | Clasificación de enfermedades avícolas (4 clases) | MIT | HuggingFace |
-| google/mobilenet_v2_1.0_224 | ~3,4 M | Clasificación ImageNet (1000 clases) | Apache 2.0 | HuggingFace |
+| mosiAfrica/poultry-disease-mobilenetv2 | 2,26 M | Clasificación de enfermedades avícolas (4 clases) | MIT | Hugging Face |
+| google/mobilenet_v2_1.0_224 | ~3,4 M | Clasificación ImageNet (1000 clases) | Apache 2.0 | Hugging Face |
 | Modelos de Machuve et al. (2022) | no disponible | Clasificación de enfermedades avícolas | no disponible | No disponible como pesos públicos en la información consultada |
 
 La comparación cuantitativa con alternativas específicas para diagnóstico avícola no está disponible en la información proporcionada.
@@ -99,7 +99,7 @@ La comparación cuantitativa con alternativas específicas para diagnóstico av�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mosiAfrica/poultry-disease-mobilenetv2
+- Modelo en Hugging Face: https://huggingface.co/mosiAfrica/poultry-disease-mobilenetv2
 - Modelo base: https://huggingface.co/google/mobilenet_v2_1.0_224
 - Dataset original (Zenodo 4628934): https://zenodo.org/record/4628934
 - Dataset confirmado por PCR (Zenodo 5801834): https://zenodo.org/record/5801834

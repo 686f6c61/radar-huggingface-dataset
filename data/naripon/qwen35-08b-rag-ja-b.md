@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen35-08b-rag-ja-B es un ajuste fino mediante LoRA del modelo base Qwen/Qwen3.5-0.8B, desarrollado por el usuario naripon y publicado en HuggingFace bajo licencia Apache-2.0. El modelo está especializado en una tarea muy concreta: responder preguntas en japonés en un contexto de generación aumentada por recuperación (RAG), devolviendo una respuesta corta y el identificador del fragmento (chunk_id) en formato JSON a partir de cinco documentos proporcionados.
+qwen35-08b-rag-ja-B es un ajuste fino mediante LoRA del modelo base Qwen/Qwen3.5-0.8B, desarrollado por el usuario naripon y publicado en Hugging Face bajo licencia Apache-2.0. El modelo está especializado en una tarea muy concreta: responder preguntas en japonés en un contexto de generación aumentada por recuperación (RAG), devolviendo una respuesta corta y el identificador del fragmento (chunk_id) en formato JSON a partir de cinco documentos proporcionados.
 
 Con 873.438.784 parámetros reales (verificados en los pesos safetensors), se trata de un modelo compacto orientado a despliegues con requisitos de hardware modestos. La arquitectura subyacente es la de Qwen3.5-0.8B, un transformer denso de la familia Qwen3.5, aunque la model card no detalla la arquitectura interna ni la longitud de contexto del modelo base.
 
@@ -86,7 +86,7 @@ La comparación con alternativas concretas no está disponible en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/naripon/qwen35-08b-rag-ja-B
+- Modelo en Hugging Face: https://huggingface.co/naripon/qwen35-08b-rag-ja-B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - JSQuAD / JGLUE: https://github.com/yahoojapan/JGLUE
 - Licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/

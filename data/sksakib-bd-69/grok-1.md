@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Grok-1 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 314.000 millones de parámetros totales, publicado con pesos abiertos por xAI en marzo de 2024. Se trata del modelo fundacional que la compania desarrollo para su asistente Grok, liberado bajo licencia Apache 2.0 y distribuido originalmente como checkpoint JAX en formato int8. La ficha que nos ocupa (Sksakib-BD-69/grok-1) es un espejo no oficial del repositorio original `xai-org/grok-1` en HuggingFace, con un tamano de repositorio de 318,2 GB.
+Grok-1 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 314.000 millones de parámetros totales, publicado con pesos abiertos por xAI en marzo de 2024. Se trata del modelo fundacional que la compania desarrollo para su asistente Grok, liberado bajo licencia Apache 2.0 y distribuido originalmente como checkpoint JAX en formato int8. La ficha que nos ocupa (Sksakib-BD-69/grok-1) es un espejo no oficial del repositorio original `xai-org/grok-1` en Hugging Face, con un tamano de repositorio de 318,2 GB.
 
 El modelo emplea una arquitectura transformer con capas MoE de 8 expertos, de los cuales 2 se activan por token, lo que resulta en aproximadamente 86.000 millones de parámetros activos por paso de inferencia. Esta diseno busca reducir el coste computacional de inferencia manteniendo una capacidad total elevada. Grok-1 fue entrenado desde cero por xAI y no esta afinado para ninguna tarea especifica (no es un modelo de instrucciones), por lo que su uso directo requiere tecnicas de prompting o fine-tuning adicional.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Mixtral 8x7B | 46.700 M | ~12.900 M | 32.768 | Apache 2.0 | Pesos abiertos (safetensors, GGUF) |
 | Llama 3 70B | 70.000 M | 70.000 M (denso) | 8.192 | Llama 3 Community License | Pesos abiertos (safetensors, GGUF) |
 
-Grok-1 supera en parametros totales a Mixtral 8x7B y Llama 3 70B, pero su contexto es menor que el de Mixtral y su formato de pesos (JAX int8) es menos accesible para el ecosistema HuggingFace estandar. La licencia Apache 2.0 es mas permisiva que la de Llama 3.
+Grok-1 supera en parametros totales a Mixtral 8x7B y Llama 3 70B, pero su contexto es menor que el de Mixtral y su formato de pesos (JAX int8) es menos accesible para el ecosistema Hugging Face estandar. La licencia Apache 2.0 es mas permisiva que la de Llama 3.
 
 ## Limitaciones y advertencias
 
@@ -80,8 +80,8 @@ Grok-1 supera en parametros totales a Mixtral 8x7B y Llama 3 70B, pero su contex
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/Sksakib-BD-69/grok-1
-- Repositorio original en HuggingFace: https://huggingface.co/xai-org/grok-1
+- Repositorio Hugging Face (espejo): https://huggingface.co/Sksakib-BD-69/grok-1
+- Repositorio original en Hugging Face: https://huggingface.co/xai-org/grok-1
 - Codigo en GitHub: https://github.com/xai-org/grok-1/tree/main
 - Blog de xAI sobre Grok-1: https://x.ai/blog/grok-os
 - Empleo en xAI: https://x.ai/careers

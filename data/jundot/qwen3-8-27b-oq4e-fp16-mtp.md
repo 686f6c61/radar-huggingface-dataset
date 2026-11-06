@@ -79,7 +79,7 @@ Frente al modelo base sin cuantizar (Qwen3.8-27B), esta versión reduce signific
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jundot/Qwen3.8-27B-oQ4e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ4e-fp16-mtp
 - Repositorio del modelo base (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Herramienta oQ / oMLX: https://github.com/jundot/omlx
 - Página de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8

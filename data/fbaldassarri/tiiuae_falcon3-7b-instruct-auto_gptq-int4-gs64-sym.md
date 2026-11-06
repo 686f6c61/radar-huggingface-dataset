@@ -111,14 +111,14 @@ La comparacion cuantitativa con alternativas de la misma categoria no puede real
 - Sesgos: no documentados. La model card no incluye ninguna seccion sobre sesgos, datos de entrenamiento o consideraciones eticas del modelo base.
 - Licencia: el repositorio declara apache-2.0, pero se trata de una cuantizacion de un modelo de terceros. Antes de explotacion comercial es imprescindible verificar los terminos aplicables al modelo base.
 - Artefacto de terceros sin validacion de la comunidad: 0 descargas y 0 likes en el momento del analisis, y disclaimer explicito del autor de que se distribuye sin garantia y solo con fines de investigacion.
-- La model card marca `inference: false`, es decir, no esta desplegado como endpoint de inferencia gestionado en HuggingFace.
+- La model card marca `inference: false`, es decir, no esta desplegado como endpoint de inferencia gestionado en Hugging Face.
 - Origen de la cuantizacion: realizada por un usuario independiente, no por TII. No existe respaldo oficial del fabricante del modelo base.
 - La receta de replicacion apunta a un repositorio Git alojado en `git.epicdynamic.com`, un dominio externo a GitHub; conviene auditar su contenido antes de ejecutar los scripts de instalacion.
 - Compatibilidad limitada de herramientas: al ser GPTQ/AutoGPTQ en lugar de GGUF, no es cargable directamente en llama.cpp u Ollama.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int4-gs64-sym
+- Repositorio del modelo en Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int4-gs64-sym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Instruct
 - Intel AutoRound (framework de cuantizacion): https://github.com/intel/auto-round
 - Pipeline de cuantizacion citado por el autor: https://git.epicdynamic.com/auto-round-pipeline

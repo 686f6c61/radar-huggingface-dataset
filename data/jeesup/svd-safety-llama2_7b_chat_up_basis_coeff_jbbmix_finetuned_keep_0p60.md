@@ -106,7 +106,7 @@ No se han proporcionado datos de benchmarks de alternativas en la información d
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_jbbmix_finetuned_keep_0p60
+- Página del modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_jbbmix_finetuned_keep_0p60
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Código de Basis Sharing: https://github.com/TUDa-HWAI/Basis_Sharing (commit `1c021b6ce1d3` citado en la model card)
 - Conjunto de recuperación: https://huggingface.co/datasets/yahma/alpaca-cleaned

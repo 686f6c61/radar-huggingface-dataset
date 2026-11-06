@@ -5,15 +5,17 @@
   "author": "yexiyue",
   "url": "https://huggingface.co/yexiyue/talechime-resources",
   "created_at": "2026-11-05T07:00:16.000Z",
-  "updated_at": "2026-11-05T07:14:49.000Z",
-  "license": "apache-2.0-and-mit",
-  "license_family": "oss",
+  "updated_at": "2026-11-05T09:30:38.000Z",
+  "license": "component-specific-licenses",
+  "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
   "library": null,
   "languages": [
     "zh"
   ],
   "tags": [
+    "onnx",
+    "safetensors",
     "talechime",
     "kokoro",
     "text-to-speech",
@@ -27,10 +29,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12431804,
-  "storage_human": "12 MB",
+  "storage_bytes": 5435594113,
+  "storage_human": "5.4 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

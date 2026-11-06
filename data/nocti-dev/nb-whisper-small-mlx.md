@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nb-whisper-small-mlx es una conversion al formato MLX del modelo de reconocimiento automatico del habla NbAiLab/nb-whisper-small, desarrollado originalmente por el National Library of Norway (NbAiLab) como un fine-tuning de Whisper small de OpenAI para noruego. Esta version la publica el usuario Nocti-Dev mediante Prism, una herramienta de conversion de pesos de HuggingFace a MLX, y esta pensada para ejecutarse de forma nativa en hardware Apple Silicon (chips M-series) a traves del framework MLX.
+nb-whisper-small-mlx es una conversion al formato MLX del modelo de reconocimiento automatico del habla NbAiLab/nb-whisper-small, desarrollado originalmente por el National Library of Norway (NbAiLab) como un fine-tuning de Whisper small de OpenAI para noruego. Esta version la publica el usuario Nocti-Dev mediante Prism, una herramienta de conversion de pesos de Hugging Face a MLX, y esta pensada para ejecutarse de forma nativa en hardware Apple Silicon (chips M-series) a traves del framework MLX.
 
 El modelo resuelve la transcripcion de audio a texto en noruego con un tamano compacto: 241.734.912 parametros (aproximadamente 242 millones) en precision float16, lo que se traduce en un fichero de pesos de unos 483 MB. Al ser una conversion 1:1 del modelo original, conserva la arquitectura encoder-decoder transformer de Whisper small, con 12 capas de encoder y 12 de decoder, y una ventana de contexto de audio de 30 segundos por segmento.
 
@@ -91,7 +91,7 @@ La comparativa se limita a estos tres porque la informacion proporcionada no inc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nocti-Dev/nb-whisper-small-mlx
+- Repositorio Hugging Face: https://huggingface.co/Nocti-Dev/nb-whisper-small-mlx
 - Modelo base: https://huggingface.co/NbAiLab/nb-whisper-small
 - Commit de origen del modelo base: https://huggingface.co/NbAiLab/nb-whisper-small/tree/e9bb5cb83cb74c96239fd506163aa97cff2fce4c
 - Framework MLX: https://github.com/ml-explore/mlx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `likhitbhogadi/anlp-a2-q1-moe_4e_top2` es un transformer decoder-only con arquitectura de mezcla de expertos (MoE) entrenado desde cero para traducción automática de vietnamita a inglés y de japonés a inglés. Lo desarrolla el usuario de HuggingFace likhitbhogadi en el contexto de una asignación académica (los tags incluyen `anlp-assignment`, presumiblemente un curso de procesamiento de lenguaje natural), y cuenta con 35,3 millones de parámetros totales, de los cuales 29,0 millones están activos en cada paso de inferencia gracias al enrutamiento top-2 sobre cuatro expertos.
+El modelo `likhitbhogadi/anlp-a2-q1-moe_4e_top2` es un transformer decoder-only con arquitectura de mezcla de expertos (MoE) entrenado desde cero para traducción automática de vietnamita a inglés y de japonés a inglés. Lo desarrolla el usuario de Hugging Face likhitbhogadi en el contexto de una asignación académica (los tags incluyen `anlp-assignment`, presumiblemente un curso de procesamiento de lenguaje natural), y cuenta con 35,3 millones de parámetros totales, de los cuales 29,0 millones están activos en cada paso de inferencia gracias al enrutamiento top-2 sobre cuatro expertos.
 
 El modelo se entrenó sobre el conjunto de datos `belumind/en-vi-ja-curated-500k-triplets`, con un total de 30 millones de tokens de entrenamiento. El formato de secuencia es `<bos> <vi|ja> source <2en> target <eos>` y utiliza un tokenizador BPE compartido almacenado en `tokenizer.json`. Es un modelo puramente de traducción, no un modelo generativo de propósito general, por lo que su utilidad práctica se limita a los dos pares de idiomas y a la dirección indicada (source→inglés).
 
@@ -23,7 +23,7 @@ Su relevancia es limitada fuera del ámbito académico: no tiene licencia declar
 | Direccion de traduccion | vi→en y ja→en |
 | Dataset de entrenamiento | belumind/en-vi-ja-curated-500k-triplets (30 M tokens) |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de creacion | 2026-10-04 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-04 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,9 +79,9 @@ No se dispone de resultados de benchmarks en un marco comun para comparar direct
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| likhitbhogadi/anlp-a2-q1-moe_4e_top2 | 35,3 M totales / 29,0 M activos | no disponible | no disponible | HuggingFace (0 descargas) |
-| Helsinki-NLP/opus-mt-vi-en | aproximadamente 77 M | no disponible | CC-BY-4.0 (habitual en OPUS-MT) | HuggingFace |
-| NLLB-200-distilled-600M | 600 M | no disponible | CC-BY-NC-4.0 | HuggingFace |
+| likhitbhogadi/anlp-a2-q1-moe_4e_top2 | 35,3 M totales / 29,0 M activos | no disponible | no disponible | Hugging Face (0 descargas) |
+| Helsinki-NLP/opus-mt-vi-en | aproximadamente 77 M | no disponible | CC-BY-4.0 (habitual en OPUS-MT) | Hugging Face |
+| NLLB-200-distilled-600M | 600 M | no disponible | CC-BY-NC-4.0 | Hugging Face |
 | Modelos comparables adicionales | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion de BLEU entre estos modelos no es posible con los datos disponibles, ya que no se han evaluado sobre el mismo conjunto de test ni con la misma version de sacrebleu.
@@ -94,13 +94,13 @@ La comparacion de BLEU entre estos modelos no es posible con los datos disponibl
 - Limitaciones de idioma: solo cubre vietnamita, japones e ingles, y unicamente en la direccion source→ingles. No traduce ingles a vietnamita ni a japones.
 - Licencia: no declarada, lo que impide determinar si el uso comercial esta permitido. Se debe contactar con el autor antes de cualquier uso en produccion.
 - Naturaleza academica: el modelo forma parte de una asignatura, no ha sido validado en entornos de produccion y no ha recibido etapas documentadas de alineacion o ajuste fino.
-- Ausencia de adopcion: cero descargas y cero interacciones en HuggingFace, sin comunidad que haya reportado comportamiento en casos reales.
+- Ausencia de adopcion: cero descargas y cero interacciones en Hugging Face, sin comunidad que haya reportado comportamiento en casos reales.
 - Despliegue: no se ofrecen pesos en formatos estandar de inferencia (GGUF, ONNX) ni integracion con frameworks como vLLM, Ollama o TGI, por lo que su uso requiere la implementacion propia del repositorio.
 - Fecha de creacion inusualmente futura (2026) en los metadatos, lo que sugiere una posible anomalia en el registro del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/likhitbhogadi/anlp-a2-q1-moe_4e_top2
+- Modelo en Hugging Face: https://huggingface.co/likhitbhogadi/anlp-a2-q1-moe_4e_top2
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/likhitbhogadi-iiit-hyderabad/anlp-a2-q1/runs/hkjl0zzt
 - Dataset de entrenamiento: belumind/en-vi-ja-curated-500k-triplets (referenciado en la model card; no se ha verificado la URL exacta)
 - Codigo del modelo: `src/part1/model.py` en el repositorio de la asignatura (no se proporciona URL publica)

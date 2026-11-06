@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed455 es un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-2, con 86.508.288 parametros, publicado por el usuario francesca9805 en HuggingFace. Se trata de un fine-tuning mediante SFT (supervised fine-tuning) del modelo goldfish-models/eng_latn_100mb, realizado con la libreria TRL en su version 0.23.0. El repositorio ocupa 0,2 GB y los pesos estan en formato safetensors.
+ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed455 es un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-2, con 86.508.288 parametros, publicado por el usuario francesca9805 en Hugging Face. Se trata de un fine-tuning mediante SFT (supervised fine-tuning) del modelo goldfish-models/eng_latn_100mb, realizado con la libreria TRL en su version 0.23.0. El repositorio ocupa 0,2 GB y los pesos estan en formato safetensors.
 
 El nombre del modelo y los metadatos asociados apuntan a un experimento academico de investigacion sobre tokenizadores y lexicos ("newlex", "uniform", "packed") vinculado a un proyecto de Weights & Biases alojado en la cuenta de la Universidad de Groningen (f-padovani-university-of-groningen), bajo el proyecto "new-tokenizers". El sufijo "zho" sugiere que el experimento esta relacionado con el chino, mientras que el modelo base es de ingles (eng_latn), y existen modelos hermanos con sufijos de otros idiomas (jpn, nld, eng) publicados por el usuario fpadovani.
 
@@ -12,7 +12,7 @@ Se trata, por tanto, de un checkpoint de investigacion con 0 descargas y 0 likes
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia GPT-2 (tag `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia GPT-2 (tag `gpt2` en Hugging Face) |
 | Parametros totales | 86.508.288 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -48,7 +48,7 @@ El entrenamiento consistio en un ajuste supervisado (SFT) sobre el modelo goldfi
 - Reproducibilidad de experimentos academicos: al estar entrenado con TRL 0.23.0 y versiones concretas de librerias, permite replicar el ajuste SFT en un entorno con las mismas dependencias y comparar curvas de perdida contra el run de Weights & Biases referenciado.
 - Experimentos de destilacion o inicializacion: con 86,5 M de parametros y 0,2 GB de repositorio, sirve como punto de partida barato para probar tecnicas de poda, cuantizacion o continua pretraining antes de escalarlas a modelos mayores.
 - Generacion de texto en entornos con recursos muy limitados: cabe en CPU, en GPUs integradas y en dispositivos de borde, por lo que puede usarse en prototipos de generacion de texto offline donde el coste energetico o la ausencia de red son la restriccion principal.
-- Docencia de tecnicas de SFT: es un ejemplo completo y manejable de pipeline TRL (dataset, tokenizer, entrenamiento supervisado, publicacion en HuggingFace) para cursos o talleres practicos.
+- Docencia de tecnicas de SFT: es un ejemplo completo y manejable de pipeline TRL (dataset, tokenizer, entrenamiento supervisado, publicacion en Hugging Face) para cursos o talleres practicos.
 - Pruebas de integracion de infraestructura: al ser compatible con `text-generation-inference` y con endpoints, permite validar pipelines de despliegue, plantillas de chat y plantillas de generacion sin consumir presupuesto de GPU en modelos grandes.
 - Evaluacion comparativa de plantillas de chat: al incluir en la model card un ejemplo que pasa mensajes con roles, se puede usar para comprobar el comportamiento de la plantilla conversacional frente a la generacion de texto plano.
 
@@ -70,12 +70,12 @@ La model card no incluye MMLU, HumanEval, GSM8K, perplexity ni ninguna otra metr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed455 | 86.508.288 | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace (proyecto goldfish-models) | no disponible |
+| ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed455 | 86.508.288 | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face (proyecto goldfish-models) | no disponible |
 | GPT-2 small (referencia de la familia) | 124.000.000 | 1.024 tokens (configuracion estandar de la familia) | MIT (para la publicacion original de OpenAI) | Ampliamente replicado | Benchmarks publicos en la literatura original |
-| DistilGPT-2 (alternativa destilada de tamano similar) | 82.000.000 | 1.024 tokens | Apache 2.0 | HuggingFace | Benchmarks publicos disponibles |
+| DistilGPT-2 (alternativa destilada de tamano similar) | 82.000.000 | 1.024 tokens | Apache 2.0 | Hugging Face | Benchmarks publicos disponibles |
 
-Los datos del modelo analizado se limitan a lo declarado en HuggingFace; el resto de campos de su fila figuran como no disponibles porque no se han publicado. Los valores de GPT-2 small y DistilGPT-2 corresponden a caracteristicas publicas conocidas de esos modelos de referencia y se incluyen unicamente como contexto de categoria, no como comparacion medida contra este checkpoint.
+Los datos del modelo analizado se limitan a lo declarado en Hugging Face; el resto de campos de su fila figuran como no disponibles porque no se han publicado. Los valores de GPT-2 small y DistilGPT-2 corresponden a caracteristicas publicas conocidas de esos modelos de referencia y se incluyen unicamente como contexto de categoria, no como comparacion medida contra este checkpoint.
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ Los datos del modelo analizado se limitan a lo declarado en HuggingFace; el rest
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/gggqzhuo
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZwZ2-4B-Surgical-Abliterated es una versión modificada del modelo inclusionAI/ZwZ2-4B, publicado por el usuario medismera en HuggingFace. Se trata de un modelo de lenguaje causal de aproximadamente 4,54 mil millones de parámetros (según los metadatos de safetensors) al que se le ha aplicado un proceso de "abliteración quirúrgica": una proyección direccional en el espacio latente que elimina el denominado subespacio de rechazo en capas críticas del transformer, con el objetivo de suprimir las negativas estandarizadas y los avisos morales del modelo.
+ZwZ2-4B-Surgical-Abliterated es una versión modificada del modelo inclusionAI/ZwZ2-4B, publicado por el usuario medismera en Hugging Face. Se trata de un modelo de lenguaje causal de aproximadamente 4,54 mil millones de parámetros (según los metadatos de safetensors) al que se le ha aplicado un proceso de "abliteración quirúrgica": una proyección direccional en el espacio latente que elimina el denominado subespacio de rechazo en capas críticas del transformer, con el objetivo de suprimir las negativas estandarizadas y los avisos morales del modelo.
 
 El modelo se publica bajo licencia Apache 2.0 y está orientado a investigación académica, red-teaming, auditoría de seguridad y exploración creativa sin restricciones. El autor afirma que la modificación se realizó preservando la norma de Frobenius y aplicando restricciones ortogonales benignas, de modo que las capacidades de código, conocimiento factual y razonamiento no se degraden; estas afirmaciones no están verificadas de forma independiente.
 
@@ -80,6 +80,6 @@ La comparacion con modelos alternativos es limitada porque no hay datos de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/medismera/ZwZ2-4B-Surgical-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/medismera/ZwZ2-4B-Surgical-Abliterated
 - Modelo base: https://huggingface.co/inclusionAI/ZwZ2-4B
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

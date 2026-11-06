@@ -101,7 +101,7 @@ Las tres alternativas comparten arquitectura (`qwen4_exp`, MoE con 48 capas) y l
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/btbtyler09/CYBER-FROST-3.8-GPTQ-4bit
+- Hugging Face del modelo: https://huggingface.co/btbtyler09/CYBER-FROST-3.8-GPTQ-4bit
 - Modelo base (BF16): https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Misma receta sobre el base: https://huggingface.co/btbtyler09/Qwen3.8-Flash-Next-GPTQ-4bit

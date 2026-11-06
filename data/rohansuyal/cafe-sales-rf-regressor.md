@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rohansuyal/cafe-sales-rf-regressor` no es un modelo de lenguaje ni una red neuronal: es un **Random Forest Regressor** de scikit-learn serializado, publicado como artefacto de regresión tabular para predecir el campo `Total Spent` (gasto total) de una transacción en una cafetería. Lo desarrolla el usuario `rohansuyal` y se distribuye con licencia MIT a través de HuggingFace Hub bajo el pipeline `tabular-regression`. Su relevancia es acotada: sirve como ejemplo reproducible de pipeline completo en scikit-learn (preprocesado con `ColumnTransformer` + estimador) y como modelo de forecasting de ticket medio para un caso de negocio muy concreto, no como componente generalista.
+`rohansuyal/cafe-sales-rf-regressor` no es un modelo de lenguaje ni una red neuronal: es un **Random Forest Regressor** de scikit-learn serializado, publicado como artefacto de regresión tabular para predecir el campo `Total Spent` (gasto total) de una transacción en una cafetería. Lo desarrolla el usuario `rohansuyal` y se distribuye con licencia MIT a través de Hugging Face Hub bajo el pipeline `tabular-regression`. Su relevancia es acotada: sirve como ejemplo reproducible de pipeline completo en scikit-learn (preprocesado con `ColumnTransformer` + estimador) y como modelo de forecasting de ticket medio para un caso de negocio muy concreto, no como componente generalista.
 
 El modelo se entrena sobre el "Cafe Sales Dataset", con 9.540 transacciones, y toma siete variables de entrada: `Item` (categórica), `Quantity` (numérica), `Payment Method` (categórica), `Location` (categórica), `Day_of_Week`, `Month` e `Is_Weekend`. Deliberadamente se elimina `Price Per Unit` para evitar una predicción trivial (`Total Spent = Quantity × Price Per Unit`) y forzar al modelo a inferir precios implícitos por producto y contexto temporal. Es un detalle metodológico correcto que conviene destacar.
 
@@ -83,7 +83,7 @@ El ajuste de hiperparámetros reduce el MAE un 10,2 % y el RMSE un 9,2 %, y elev
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `rohansuyal/cafe-sales-rf-regressor` | Random Forest (sklearn) | 300 arboles, profundidad 10 | no aplica | MAE 0,7007; RMSE 1,6997; R² 0,9142 en test propio | MIT | HuggingFace Hub (`rohansuyal/cafe-sales-rf-regressor`) |
+| `rohansuyal/cafe-sales-rf-regressor` | Random Forest (sklearn) | 300 arboles, profundidad 10 | no aplica | MAE 0,7007; RMSE 1,6997; R² 0,9142 en test propio | MIT | Hugging Face Hub (`rohansuyal/cafe-sales-rf-regressor`) |
 | Regresion lineal multiple (baseline propio) | Modelo lineal | coeficientes por feature | no aplica | no disponible | segun implementacion | no disponible |
 | Gradient boosting (LightGBM / XGBoost) | Arboles con boosting | segun configuracion | no aplica | no disponible | MIT / Apache-2.0 segun libreria | repositorios publicos de las librerias |
 | Regresion tabular con red neuronal (MLP) | Perceptron multicapa | segun arquitectura | no aplica | no disponible | segun implementacion | no disponible |
@@ -106,7 +106,7 @@ La comparación se limita a categorías de algoritmo porque no se dispone de mé
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohansuyal/cafe-sales-rf-regressor
+- Modelo en Hugging Face: https://huggingface.co/rohansuyal/cafe-sales-rf-regressor
 - Documentación de scikit-learn para `RandomForestRegressor`: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html (referencia de la librería utilizada, no enlazada en la model card)
 - Documentación de `joblib` para serialización: https://joblib.readthedocs.io/ (referencia de la librería utilizada, no enlazada en la model card)
 - Paper, blog, repositorio de código, dataset y demo: no disponibles. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces recuperados (foros de Ivanti sobre validación de formularios y restablecimiento de Apple TV) no guardan relación con el artefacto y se descartan.

@@ -89,7 +89,7 @@ No se han encontrado modelos de código abierto específicos para el par Brunei 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ningpy/brunei-malayu-translator
+- Hugging Face: https://huggingface.co/ningpy/brunei-malayu-translator
 - Perfil del autor: https://huggingface.co/ningpy
 - Ficha en free2aitools: https://free2aitools.com/model/ningpy/brunei-malayu-translator
 - Repositorio de datos (no oficial): https://github.com/Adi-bot-ai/bruneian-malay-translator

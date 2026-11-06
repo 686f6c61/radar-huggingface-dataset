@@ -68,9 +68,9 @@ No se dispone de información sobre modelos comparables. Dado que es una impleme
 - **Restricciones de licencia**: aunque la licencia es Apache 2.0, el repositorio advierte que se deben revisar los términos de las fuentes de datos externas si se usa con conjuntos de datos propios.
 - **No apto para producción**: no debe integrarse en ningún sistema real, ya que no ofrece ninguna funcionalidad.
 - **Falta de robustez**: no se ha auditado la robustez, equidad ni transferencia de dominio; cualquier resultado futuro debe documentarse por separado.
-- **Implementación personalizada**: las APIs de carga automática de HuggingFace no funcionan directamente; se requiere un adaptador explícito.
+- **Implementación personalizada**: las APIs de carga automática de Hugging Face no funcionan directamente; se requiere un adaptador explícito.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jackevans9/work-multitask
+- Repositorio Hugging Face: https://huggingface.co/jackevans9/work-multitask
 - No se encontraron otros enlaces relevantes (papers, blogs, demos) en la búsqueda web. Los resultados de la búsqueda se refieren a conceptos generales de multitask learning y herramientas comerciales no relacionadas con este repositorio.

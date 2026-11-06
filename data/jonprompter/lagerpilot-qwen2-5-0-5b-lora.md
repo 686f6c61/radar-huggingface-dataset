@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LagerPilot-Qwen2.5-0.5B-LoRA es un ajuste fino mediante LoRA del modelo Qwen2.5-0.5B-Instruct, desarrollado por el usuario jonprompter y publicado en HuggingFace. Está especializado en logística de almacén alemana, concretamente en la recepción de mercancías (Wareneingang) y en el cumplimiento del artículo 377 del Código de Comercio alemán (HGB), que regula los plazos de reclamación por defectos en la entrega. El modelo busca resolver un problema legal y financiero concreto: la pérdida de derechos de garantía cuando no se objeta formalmente una entrega defectuosa dentro de los plazos establecidos.
+LagerPilot-Qwen2.5-0.5B-LoRA es un ajuste fino mediante LoRA del modelo Qwen2.5-0.5B-Instruct, desarrollado por el usuario jonprompter y publicado en Hugging Face. Está especializado en logística de almacén alemana, concretamente en la recepción de mercancías (Wareneingang) y en el cumplimiento del artículo 377 del Código de Comercio alemán (HGB), que regula los plazos de reclamación por defectos en la entrega. El modelo busca resolver un problema legal y financiero concreto: la pérdida de derechos de garantía cuando no se objeta formalmente una entrega defectuosa dentro de los plazos establecidos.
 
 El modelo parte de la arquitectura transformer densa de Qwen2.5-0.5B-Instruct, con 0,5 mil millones de parámetros, y se distribuye como adaptador LoRA sobre el modelo base. Está pensado para ejecutarse íntegramente en local sobre hardware de borde de bajo coste (mini-PC, NUC, terminales de almacén), sin dependencia de la nube y con cumplimiento del RGPD. Sus idiomas de trabajo son el alemán y el inglés.
 
@@ -89,10 +89,10 @@ No se dispone de comparaciones publicadas en la información proporcionada. Se o
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LagerPilot-Qwen2.5-0.5B-LoRA | 0,5B (base) + adaptador LoRA | No disponible | Logística alemana, § 377 HGB, SAP MIGO | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen2.5-0.5B-Instruct | 0,5B | 32 768 tokens (según modelo base) | Propósito general, instrucciones | Apache 2.0 | HuggingFace (ampliamente descargado) |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 tokens (según modelo base) | Propósito general, instrucciones | Apache 2.0 | HuggingFace |
-| SmolLM2-360M-Instruct | 0,36B | 8 192 tokens (según modelo base) | Propósito general, instrucciones | Apache 2.0 | HuggingFace |
+| LagerPilot-Qwen2.5-0.5B-LoRA | 0,5B (base) + adaptador LoRA | No disponible | Logística alemana, § 377 HGB, SAP MIGO | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen2.5-0.5B-Instruct | 0,5B | 32 768 tokens (según modelo base) | Propósito general, instrucciones | Apache 2.0 | Hugging Face (ampliamente descargado) |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 tokens (según modelo base) | Propósito general, instrucciones | Apache 2.0 | Hugging Face |
+| SmolLM2-360M-Instruct | 0,36B | 8 192 tokens (según modelo base) | Propósito general, instrucciones | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jonprompter/LagerPilot-Qwen2.5-0.5B-LoRA
+- Hugging Face: https://huggingface.co/jonprompter/LagerPilot-Qwen2.5-0.5B-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio GitHub mencionado en la model card: https://github.com/your-username/LagerPilot-Qwen (URL de plantilla, no verificada)
 - Texto del § 377 HGB: https://www.gesetze-im-internet.de/hgb/__377.html

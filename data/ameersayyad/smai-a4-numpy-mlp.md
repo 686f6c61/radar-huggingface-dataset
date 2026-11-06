@@ -71,9 +71,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Entrada / tarea | Accuracy test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AmeerSayyad/smai-a4-numpy-mlp | 197.322 | 32x32x3, 10 clases | 0,4918 (NumPy) / 0,4529 (PyTorch) | no disponible | HuggingFace |
-| AmeerSayyad/smai-a4-ioc-nn | no disponible | 32x32x3, 10 clases (IOC-NN) | no disponible | no disponible | HuggingFace (referenciado por el autor) |
-| Aakarsh14/smai-a4-mlp | no disponible | 32x32x3, 10 clases | no disponible | no disponible | HuggingFace (misma asignación SMAI, tarea 1.4.2) |
+| AmeerSayyad/smai-a4-numpy-mlp | 197.322 | 32x32x3, 10 clases | 0,4918 (NumPy) / 0,4529 (PyTorch) | no disponible | Hugging Face |
+| AmeerSayyad/smai-a4-ioc-nn | no disponible | 32x32x3, 10 clases (IOC-NN) | no disponible | no disponible | Hugging Face (referenciado por el autor) |
+| Aakarsh14/smai-a4-mlp | no disponible | 32x32x3, 10 clases | no disponible | no disponible | Hugging Face (misma asignación SMAI, tarea 1.4.2) |
 | CNN típica sobre CIFAR-10 | no disponible | 32x32x3, 10 clases | no disponible en la información proporcionada | no disponible | — |
 
 La comparación cuantitativa fiable se limita a la diferencia interna NumPy/PyTorch. Para el resto de alternativas no hay métricas publicadas en la información disponible, por lo que no procede establecer un ranking.
@@ -88,13 +88,13 @@ La comparación cuantitativa fiable se limita a la diferencia interna NumPy/PyTo
 - Sin información sobre sesgos: no se documenta composición del dataset más allá de CIFAR-10 ni análisis de sesgo por clase, subgrupo o atributo.
 - Dominio cerrado: solo acepta imágenes 32x32x3 y devuelve 10 clases; no generaliza a otras resoluciones, otros datasets ni a texto.
 - Dependencia estricta del preprocesado: la estandarización usa la media y desviación típica de la partición de entrenamiento concreta; aplicar otra normalización degrada el resultado sin aviso.
-- Metadatos inconsistentes: la fecha de creación declarada en HuggingFace es 2026-10-24, posterior a la fecha habitual de consulta, y el repositorio figura con 0,0 GB; conviene verificar la integridad de los ficheros antes de reutilizarlos.
+- Metadatos inconsistentes: la fecha de creación declarada en Hugging Face es 2026-10-24, posterior a la fecha habitual de consulta, y el repositorio figura con 0,0 GB; conviene verificar la integridad de los ficheros antes de reutilizarlos.
 - No hay model card técnica con detalles de optimizador, función de pérdida, número de épocas efectivas ni curvas de aprendizaje, lo que limita la reproducibilidad fina.
 - No es un modelo de lenguaje: no admite prompts, instrucciones, tool calling ni razonamiento multi-paso; cualquier expectativa en ese sentido es un error de categoría.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmeerSayyad/smai-a4-numpy-mlp
+- Modelo en Hugging Face: https://huggingface.co/AmeerSayyad/smai-a4-numpy-mlp
 - IOC-NN del mismo autor (comparado en la pregunta 1.5): https://huggingface.co/AmeerSayyad/smai-a4-ioc-nn
 - Modelo de la misma asignación (Aakarsh14): https://huggingface.co/Aakarsh14/smai-a4-mlp
 - Listado de modelos etiquetados como `smai-assignment`: https://huggingface.co/models?other=smai-assignment

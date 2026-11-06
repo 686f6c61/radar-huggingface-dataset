@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jasper VAD v3 es un detector de actividad de voz (VAD) compacto publicado por el usuario notaneimu en HuggingFace. El modelo acepta audio mono a 16 kHz y produce logits de voz/no voz cada 20 ms, sin requerir vector de hablante ni condicionamiento por locutor. Se distribuye exclusivamente en formato ONNX optimizado para ejecución en CPU mediante onnxruntime, lo que lo diferencia de implementaciones basadas en PyTorch y lo orienta a despliegues ligeros y de baja latencia.
+Jasper VAD v3 es un detector de actividad de voz (VAD) compacto publicado por el usuario notaneimu en Hugging Face. El modelo acepta audio mono a 16 kHz y produce logits de voz/no voz cada 20 ms, sin requerir vector de hablante ni condicionamiento por locutor. Se distribuye exclusivamente en formato ONNX optimizado para ejecución en CPU mediante onnxruntime, lo que lo diferencia de implementaciones basadas en PyTorch y lo orienta a despliegues ligeros y de baja latencia.
 
 La arquitectura subyacente es un encoder Jasper en FP32, acompañado de un frontend Fourier fijo implementado como operaciones STFT nativas de ONNX. El repositorio incluye dos rutas de inferencia: un grafo completo `audio_to_logits.onnx` que acepta forma de onda cruda, y un encoder separado (`encoder.onnx` más `window.npy`) que requiere un frontend FFT externo vía SciPy. No se trata de un modelo PVAD condicionado por hablante, ni de un sistema de diarización, ni de un reconocedor de voz.
 
@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jasper VAD v3 (este modelo) | no disponible | 2900 ms nominal en streaming | Error relativo entre modos documentado; sin benchmarks estándar | no disponible | HuggingFace, ONNX |
+| Jasper VAD v3 (este modelo) | no disponible | 2900 ms nominal en streaming | Error relativo entre modos documentado; sin benchmarks estándar | no disponible | Hugging Face, ONNX |
 | Alternativas VAD | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,5 +94,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/notaneimu/jasper-vad-v3-fixed-log-onnx
+- Hugging Face: https://huggingface.co/notaneimu/jasper-vad-v3-fixed-log-onnx
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

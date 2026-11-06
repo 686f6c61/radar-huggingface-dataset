@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PseudoBrain-GLM-5.3-Flash-Chronos-v7.5 es una compresión y reempaquetado del modelo base `zai-org/GLM-5.3-Flash`, desarrollada por Ian Kurt Galeon (usuario `defnoteatin` en HuggingFace). El objetivo declarado es hacer viable la inferencia de un MoE de gran tamaño (305,78 GB en su forma original) en una única estación de trabajo con acelerador de 128 GB, concretamente la NVIDIA DGX Spark (GB10 Grace Blackwell). Para ello aplica una descomposición en tres capas sobre la dimensión de expertos: una banca de superposición holográfica 8:1 en NVFP4, un "sanador" SVD acoplado de rango 64 en FP8 y un retículo de cola gaussiana isotrópica de 1-2 bits por peso.
+PseudoBrain-GLM-5.3-Flash-Chronos-v7.5 es una compresión y reempaquetado del modelo base `zai-org/GLM-5.3-Flash`, desarrollada por Ian Kurt Galeon (usuario `defnoteatin` en Hugging Face). El objetivo declarado es hacer viable la inferencia de un MoE de gran tamaño (305,78 GB en su forma original) en una única estación de trabajo con acelerador de 128 GB, concretamente la NVIDIA DGX Spark (GB10 Grace Blackwell). Para ello aplica una descomposición en tres capas sobre la dimensión de expertos: una banca de superposición holográfica 8:1 en NVFP4, un "sanador" SVD acoplado de rango 64 en FP8 y un retículo de cola gaussiana isotrópica de 1-2 bits por peso.
 
 El modelo conserva la arquitectura `Glm5NextForConditionalGeneration` del base: 46 capas (3 densas y 42 MoE con 288 expertos enrutados cada una), más una capa de borrador especulativo `Glm5NextMTP`, con un vocabulario de 154.880 tokens. La ventana de contexto anunciada es de 1 millón de tokens, gestionada mediante un motor de memoria constante que combina estado recurrente comprimido, recuperación exacta por bloques y ventana deslizante en GPU.
 
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-GLM-5.3-Flash-Chronos-v7.5
+- Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-GLM-5.3-Flash-Chronos-v7.5
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio Chronos: https://github.com/defnotean/Chronos
 - Paper de arquitectura Chronos (PDF): https://github.com/defnotean/Chronos/blob/main/docs/CHRONOS_ARCHITECTURE_PAPER.pdf
@@ -101,4 +101,4 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 - Paper de arquitectura PseudoBrain (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Telemetría de hardware y recibos de benchmark: https://github.com/defnotean/Chronos/tree/main/assets
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin

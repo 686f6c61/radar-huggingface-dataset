@@ -49,7 +49,7 @@ El contenido técnico se limita a un plan de investigación sobre aprendizaje au
 - Definición de baselines emparejados: la propuesta de comparación contra baselines con condiciones controladas puede reutilizarse como borrador de protocolo experimental en proyectos de fusión audio-visual.
 - Checklist de reproducibilidad: la lista de comprobaciones y modos de fallo puede adaptarse como lista de verificación interna para equipos que preparan artefactos antes de publicarlos.
 - Revisión de licencias en pipelines con datos externos: la propia model card recuerda que, aunque el repositorio se libera bajo MIT, deben revisarse por separado los términos de los datasets externos que se utilicen.
-- Auditoría de repositorios dudosos: el caso es útil como ejemplo de por qué conviene inspeccionar el número de parámetros y la model card antes de asumir que un repositorio de HuggingFace contiene un modelo desplegable.
+- Auditoría de repositorios dudosos: el caso es útil como ejemplo de por qué conviene inspeccionar el número de parámetros y la model card antes de asumir que un repositorio de Hugging Face contiene un modelo desplegable.
 
 ## Benchmarks y rendimiento
 
@@ -81,5 +81,5 @@ No disponible. Este repositorio no es funcionalmente comparable con modelos de a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mehta2006/review-audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/mehta2006/review-audio-visual-learning
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código ni demos asociados a este repositorio.

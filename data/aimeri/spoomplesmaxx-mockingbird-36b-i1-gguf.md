@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/aimeri/spoomplesmaxx-mockingbird-36B-i1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/aimeri/spoomplesmaxx-mockingbird-36B-i1-GGUF
 - Modelo base (safetensors): https://huggingface.co/aimeri/spoomplesmaxx-mockingbird-36B
 - Repositorio de datasets del proyecto: https://github.com/aimerib/spoomplesmaxx
 - Modelo mini-14B de la misma familia: https://huggingface.co/aimeri/spoomplesmaxx-mini-14B

@@ -4,7 +4,7 @@
 
 El modelo `bangla-paraphrase-qwen2.5-qlora` es un modelo de generación de texto especializado en la paráfrasis de texto en bengalí (bangla). Desarrollado por AvinabhDutta-Dev, se basa en el modelo instructivo Qwen2.5-1.5B-Instruct y ha sido afinado mediante la técnica QLoRA sobre el dataset `csebuetnlp/BanglaParaphrase`. El objetivo es generar variantes semánticamente equivalentes de oraciones en bengalí, una tarea relevante para aplicaciones de procesamiento de lenguaje natural en este idioma, que cuenta con menos recursos que otros.
 
-El modelo tiene 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) y su repositorio ocupa 3,1 GB en formato safetensors. Se distribuye bajo licencia Apache 2.0, aunque su acceso está restringido en HuggingFace y requiere aceptar las condiciones del autor. El modelo forma parte de un estudio comparativo más amplio, "Beyond BLEU", que evalúa la fiabilidad de las métricas automáticas para la generación de paráfrasis en bengalí, comparando arquitecturas encoder-decoder con decoder-only y validando los resultados con un juez basado en LLM.
+El modelo tiene 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) y su repositorio ocupa 3,1 GB en formato safetensors. Se distribuye bajo licencia Apache 2.0, aunque su acceso está restringido en Hugging Face y requiere aceptar las condiciones del autor. El modelo forma parte de un estudio comparativo más amplio, "Beyond BLEU", que evalúa la fiabilidad de las métricas automáticas para la generación de paráfrasis en bengalí, comparando arquitecturas encoder-decoder con decoder-only y validando los resultados con un juez basado en LLM.
 
 ## Especificaciones tecnicas
 
@@ -71,13 +71,13 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 - Sesgos y alucinaciones: al ser un modelo afinado sobre un modelo instructivo general, puede heredar sesgos del corpus base y generar contenido inexacto o inventado, especialmente si se usa fuera del dominio de paráfrasis.
 - Especialización limitada: el modelo está diseñado para paráfrasis en bengalí; su rendimiento en otros idiomas o tareas generales no está garantizado y probablemente sea inferior al del modelo base sin afinar.
 - Contexto limitado: aunque el modelo base soporta 32 768 tokens, no se ha confirmado que el fine-tuning preserve esta longitud; se recomienda verificar el comportamiento con secuencias largas.
-- Acceso restringido: el modelo es gated en HuggingFace; es necesario aceptar las condiciones del autor antes de descargarlo, lo que puede limitar su adopción en entornos automatizados.
+- Acceso restringido: el modelo es gated en Hugging Face; es necesario aceptar las condiciones del autor antes de descargarlo, lo que puede limitar su adopción en entornos automatizados.
 - Sin cuantizaciones publicadas: no hay versiones GGUF ni AWQ, lo que dificulta el despliegue en entornos con restricciones de memoria o en CPU pura.
 - Validación externa pendiente: los benchmarks declarados no han sido verificados de forma independiente; los valores de BLEU son bajos (12,71), lo que sugiere que la paráfrasis generada difiere léxicamente del original, aunque BERTScore alto (0,923) indica buena similitud semántica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AvinabhDutta-Dev/bangla-paraphrase-qwen2.5-qlora
+- Modelo en Hugging Face: https://huggingface.co/AvinabhDutta-Dev/bangla-paraphrase-qwen2.5-qlora
 - Perfil del autor en GitHub: https://github.com/AvinabhDutta-Dev
 - Dataset de entrenamiento: https://huggingface.co/datasets/csebuetnlp/BanglaParaphrase
 - Paper de QLoRA (arXiv:2305.14314): https://arxiv.org/abs/2305.14314

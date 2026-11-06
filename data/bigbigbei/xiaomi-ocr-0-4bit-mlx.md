@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bigbigbei/Xiaomi-OCR-0-4bit-mlx
+- Repositorio Hugging Face: https://huggingface.co/bigbigbei/Xiaomi-OCR-0-4bit-mlx
 - Modelo base: https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0
 - Modelo base referenciado en metadatos: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
 - MLX: https://github.com/ml-explore/mlx

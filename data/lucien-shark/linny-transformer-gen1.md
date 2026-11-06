@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linny-Transformer-Gen1 es un modelo publicado por el usuario Lucien-shark en HuggingFace, dentro de una serie denominada "Linny" que incluye también un modelo de texto a imagen (Linny-TTI-Gen1) y un dataset sin tokenizar (Linny-Gen2.1-Dataset-Untokenized). La ficha del modelo está prácticamente vacía: no se especifica arquitectura, tamaño, licencia ni idiomas soportados, y el repositorio no registra descargas ni interacciones.
+Linny-Transformer-Gen1 es un modelo publicado por el usuario Lucien-shark en Hugging Face, dentro de una serie denominada "Linny" que incluye también un modelo de texto a imagen (Linny-TTI-Gen1) y un dataset sin tokenizar (Linny-Gen2.1-Dataset-Untokenized). La ficha del modelo está prácticamente vacía: no se especifica arquitectura, tamaño, licencia ni idiomas soportados, y el repositorio no registra descargas ni interacciones.
 
 A fecha de publicación (agosto de 2026), el modelo no dispone de documentación técnica pública, pesos verificables ni benchmarks publicados. Su relevancia actual es limitada debido a la ausencia total de especificaciones y a que no existe evidencia de uso o validación por parte de la comunidad. Cualquier evaluación rigurosa requeriría primero acceder al repositorio y analizar los artefactos directamente.
 

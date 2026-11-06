@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño compacto (0.3 GB en el reposit
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2.5 Coder, un transformer autoregresivo con atención de múltiples cabezas y capas de normalización pre-RMSNorm. El modelo original de 7B cuenta con 28 capas, 28 cabezas de atención y una dimensión oculta de 3584, aunque estos detalles no se confirman en la informacion proporcionada. El fine-tuning se realizó sobre una versión cuantizada en 4 bits (bnb-4bit) del modelo instruct, lo que sugiere el uso de técnicas de entrenamiento eficiente como LoRA o QLoRA, facilitadas por la librería Unsloth. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron métodos de alineación como RLHF o DPO. La etiqueta `trl` indica que se usó la librería TRL de HuggingFace para el entrenamiento, probablemente con el método SFT (supervised fine-tuning).
+El modelo se basa en la arquitectura Qwen2.5 Coder, un transformer autoregresivo con atención de múltiples cabezas y capas de normalización pre-RMSNorm. El modelo original de 7B cuenta con 28 capas, 28 cabezas de atención y una dimensión oculta de 3584, aunque estos detalles no se confirman en la informacion proporcionada. El fine-tuning se realizó sobre una versión cuantizada en 4 bits (bnb-4bit) del modelo instruct, lo que sugiere el uso de técnicas de entrenamiento eficiente como LoRA o QLoRA, facilitadas por la librería Unsloth. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron métodos de alineación como RLHF o DPO. La etiqueta `trl` indica que se usó la librería TRL de Hugging Face para el entrenamiento, probablemente con el método SFT (supervised fine-tuning).
 
 ## Capacidades
 
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pandays/qwen2.5-coder-zerotrace-v2 | 7B | no disponible | Apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-7B-Instruct (original) | 7B | 32 768 tokens (típico) | Apache-2.0 | HuggingFace |
-| CodeLlama-7B-Instruct | 7B | 16 384 tokens | Llama 2 license | HuggingFace |
-| DeepSeek-Coder-7B-Instruct | 7B | 16 384 tokens | MIT | HuggingFace |
+| Pandays/qwen2.5-coder-zerotrace-v2 | 7B | no disponible | Apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-7B-Instruct (original) | 7B | 32 768 tokens (típico) | Apache-2.0 | Hugging Face |
+| CodeLlama-7B-Instruct | 7B | 16 384 tokens | Llama 2 license | Hugging Face |
+| DeepSeek-Coder-7B-Instruct | 7B | 16 384 tokens | MIT | Hugging Face |
 
 La comparativa se basa en características generales, ya que no hay datos de rendimiento para el modelo de Pandays. El modelo original de Qwen2.5 Coder suele superar a CodeLlama y DeepSeek-Coder en benchmarks de código, pero esta versión fine-tuneada podría tener un rendimiento diferente.
 
@@ -75,7 +75,7 @@ La comparativa se basa en características generales, ya que no hay datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pandays/qwen2.5-coder-zerotrace-v2
+- Modelo en Hugging Face: https://huggingface.co/Pandays/qwen2.5-coder-zerotrace-v2
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-coder-7b-instruct-bnb-4bit
 - Librería Unsloth: https://github.com/unslothai/unsloth
 - Librería TRL: https://github.com/huggingface/trl

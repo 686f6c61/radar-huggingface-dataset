@@ -88,7 +88,7 @@ Frente a estos modelos, el artefacto analizado no compite en capacidades: no tie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/filtered-sft-20261019-qwen3b-kk-shuffled
+- Repositorio en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/filtered-sft-20261019-qwen3b-kk-shuffled
 - Llama 3.2 3B Instruct (modelo base citado y licencia aplicable): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Qwen2.5-3B (modelo base citado): no disponible en la información proporcionada.
 - Dataset con `delivery_manifest.json`: referenciado en la model card, sin URL disponible.

@@ -21,7 +21,7 @@ El modelo presenta 35.107.181.936 parámetros totales (35,1B), con pesos en form
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se infiere de los tags de HuggingFace: `qwen3_5_moe`, lo que indica un transformer basado en mezcla de expertos (MoE) de la familia Qwen 3.5. El modelo es el resultado de fusionar un LoRA sobre el checkpoint `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un fine-tuning de un modelo base anterior. No se proporcionan detalles sobre el número de tokens de entrenamiento, composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. La etiqueta `affine-h1-merged-salvage` sugiere que el checkpoint se generó como parte de un proceso de fusión experimental, posiblemente para preservar un estado intermedio. No hay información sobre innovaciones técnicas específicas más allá de la fusión LoRA.
+La arquitectura se infiere de los tags de Hugging Face: `qwen3_5_moe`, lo que indica un transformer basado en mezcla de expertos (MoE) de la familia Qwen 3.5. El modelo es el resultado de fusionar un LoRA sobre el checkpoint `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un fine-tuning de un modelo base anterior. No se proporcionan detalles sobre el número de tokens de entrenamiento, composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. La etiqueta `affine-h1-merged-salvage` sugiere que el checkpoint se generó como parte de un proceso de fusión experimental, posiblemente para preservar un estado intermedio. No hay información sobre innovaciones técnicas específicas más allá de la fusión LoRA.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r212-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r212-merged
 - Modelo base (kevin954/Affine-5dfqbbh8ev-sft): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Variantes del mismo autor: https://huggingface.co/unconst/Affine-5czsc2fc98-r216-merged y https://huggingface.co/unconst/Affine-5czsc2fc98-r3-merged
 - Página de FriendliAI para el modelo h1-merged (relacionado): https://friendli.ai/models/unconst/Affine-5czsc2fc98-h1-merged

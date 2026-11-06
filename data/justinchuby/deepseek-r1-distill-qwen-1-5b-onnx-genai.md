@@ -78,7 +78,7 @@ La versión ONNX INT4 se diferencia por su formato de despliegue, pero no por su
 
 ## Enlaces
 
-- [HuggingFace - justinchuby/deepseek-r1-distill-qwen-1.5b-onnx-genai](https://huggingface.co/justinchuby/deepseek-r1-distill-qwen-1.5b-onnx-genai)
-- [Modelo base en HuggingFace: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)
+- [Hugging Face - justinchuby/deepseek-r1-distill-qwen-1.5b-onnx-genai](https://huggingface.co/justinchuby/deepseek-r1-distill-qwen-1.5b-onnx-genai)
+- [Modelo base en Hugging Face: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)
 - [Repositorio oficial de DeepSeek-R1 en GitHub](https://github.com/deepseek-ai/DeepSeek-R1)
 - [Modelo base en ModelScope](https://www.modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)

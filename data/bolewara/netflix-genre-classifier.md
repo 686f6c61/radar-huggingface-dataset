@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos directamente comparables en la docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bolewara/netflix-genre-classifier
+- Modelo en Hugging Face: https://huggingface.co/bolewara/netflix-genre-classifier
 - Dataset de entrenamiento (Kaggle): https://www.kaggle.com/datasets/shivamb/netflix-shows (referenciado en la model card)
 - Proyecto similar en GitHub (redswimmer): https://github.com/redswimmer/netflix-genre-prediction
 - Proyecto similar en GitHub (Rushil24): https://github.com/Rushil24/Netflix-ML-Unsupervised

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `xldistance/flash-attention-2.84-cuda132-torch2.14-windows` no contiene un modelo de inteligencia artificial, sino una distribución compilada de la biblioteca Flash Attention 2.84, preparada para ejecutarse con CUDA 13.2, PyTorch 2.14 y sistemas operativos Windows. El autor, `xldistance`, publica esta compilación en HuggingFace como repositorio de recursos, probablemente para facilitar su instalación en entornos Windows sin necesidad de compilar desde el código fuente. La única información técnica confirmada en la model card es que la librería requiere Python 3.11. El repositorio tiene un tamaño de 0,5 GB e incluye los binarios o artefactos necesarios para la integración con PyTorch. Al tratarse de una librería y no de un modelo de lenguaje, no se dispone de arquitectura, parámetros, contexto ni benchmarks de rendimiento en el sentido habitual de las fichas de modelos.
+El repositorio `xldistance/flash-attention-2.84-cuda132-torch2.14-windows` no contiene un modelo de inteligencia artificial, sino una distribución compilada de la biblioteca Flash Attention 2.84, preparada para ejecutarse con CUDA 13.2, PyTorch 2.14 y sistemas operativos Windows. El autor, `xldistance`, publica esta compilación en Hugging Face como repositorio de recursos, probablemente para facilitar su instalación en entornos Windows sin necesidad de compilar desde el código fuente. La única información técnica confirmada en la model card es que la librería requiere Python 3.11. El repositorio tiene un tamaño de 0,5 GB e incluye los binarios o artefactos necesarios para la integración con PyTorch. Al tratarse de una librería y no de un modelo de lenguaje, no se dispone de arquitectura, parámetros, contexto ni benchmarks de rendimiento en el sentido habitual de las fichas de modelos.
 
 ## Especificaciones tecnicas
 
@@ -67,4 +67,4 @@ No se dispone de información comparable con modelos de lenguaje, ya que este re
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/xldistance/flash-attention-2.84-cuda132-torch2.14-windows
+- Repositorio de Hugging Face: https://huggingface.co/xldistance/flash-attention-2.84-cuda132-torch2.14-windows

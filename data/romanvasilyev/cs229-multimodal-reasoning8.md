@@ -66,6 +66,6 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/romanvasilyev/cs229-multimodal-reasoning8
+- Repositorio en Hugging Face: https://huggingface.co/romanvasilyev/cs229-multimodal-reasoning8
 - Notas del curso CS229 de Stanford (referencia contextual): https://cs229.stanford.edu/main_notes.pdf
 - Artículo de Magma (modelo multimodal real, mencionado en búsqueda web): https://arxiv.org/html/2502.13130v1

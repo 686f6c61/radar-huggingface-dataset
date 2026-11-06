@@ -86,7 +86,7 @@ No disponible. No se dispone de informacion verificable sobre el modelo base Qwe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CK0607/qwen3.8-27b-brush-painting
+- Repositorio Hugging Face: https://huggingface.co/CK0607/qwen3.8-27b-brush-painting
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper o documentacion tecnica: no disponible
 - Repositorio de codigo o demo: no disponible

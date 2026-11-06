@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rare-class-skin-lesion-benchmark` es un repositorio de HuggingFace publicado por el usuario `dhina0210` que contiene un clasificador de imágenes dermatoscópicas basado en EfficientNet-B0, ajustado para clasificar lesiones cutáneas en siete categorías diagnósticas (akiec, bcc, bkl, df, mel, nv, vasc) sobre los conjuntos de datos HAM10000 y DermaMNIST. El problema que aborda es el desequilibrio extremo de clases en dermatología: la clase mayoritaria (nevus melanocíticos) supone el 67 % de los casos, mientras que el dermatofibroma apenas representa el 1,15 % (115 imágenes). El repositorio se presenta explícitamente como un benchmark académico de estrategias de aumento de datos y funciones de pérdida sensibles al coste, no como un producto clínico.
+`rare-class-skin-lesion-benchmark` es un repositorio de Hugging Face publicado por el usuario `dhina0210` que contiene un clasificador de imágenes dermatoscópicas basado en EfficientNet-B0, ajustado para clasificar lesiones cutáneas en siete categorías diagnósticas (akiec, bcc, bkl, df, mel, nv, vasc) sobre los conjuntos de datos HAM10000 y DermaMNIST. El problema que aborda es el desequilibrio extremo de clases en dermatología: la clase mayoritaria (nevus melanocíticos) supone el 67 % de los casos, mientras que el dermatofibroma apenas representa el 1,15 % (115 imágenes). El repositorio se presenta explícitamente como un benchmark académico de estrategias de aumento de datos y funciones de pérdida sensibles al coste, no como un producto clínico.
 
 El modelo es una CNN de 7 clases con entrada de 128×128 píxeles RGB, entrenada con validación cruzada estratificada por paciente (`StratifiedGroupKFold`) para evitar fugas de datos entre entrenamiento y evaluación. Incluye una puerta de derivación por incertidumbre (umbral T = 0,70) que marca las predicciones de baja confianza para revisión clínica. El repositorio tiene un tamaño de 0,0 GB en el momento de la consulta y no registra descargas ni likes.
 
@@ -73,7 +73,7 @@ No se han publicado en la información disponible resultados desagregados por cl
 
 | Modelo | Arquitectura | Parámetros | Contexto/entrada | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dhina0210/rare-class-skin-lesion-benchmark` | EfficientNet-B0 | no disponible (~5,3 M según arquitectura base) | 128×128×3 | 7 | MIT | HuggingFace, 0 descargas |
+| `dhina0210/rare-class-skin-lesion-benchmark` | EfficientNet-B0 | no disponible (~5,3 M según arquitectura base) | 128×128×3 | 7 | MIT | Hugging Face, 0 descargas |
 | EfficientNet-B0 (ImageNet, `timm`) | EfficientNet-B0 | ~5,3 M | 224×224×3 (configurable) | 1000 | Apache 2.0 (timm) | Amplia |
 | ResNet-50 (ImageNet) | CNN residual | ~25,6 M | 224×224×3 | 1000 | BSD-3 / Apache según distribución | Amplia |
 | Vision Transformer base (ViT-B/16) | Transformer | ~86 M | 224×224×3 | 1000 | Apache 2.0 (según checkpoint) | Amplia |
@@ -94,7 +94,7 @@ La comparación con modelos genéricos de ImageNet es solo orientativa: este rep
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dhina0210/rare-class-skin-lesion-benchmark
+- Hugging Face: https://huggingface.co/dhina0210/rare-class-skin-lesion-benchmark
 - Dataset HAM10000: https://huggingface.co/datasets/kmader/skin-cancer-mnist-ham10000
 - Dataset DermaMNIST: https://huggingface.co/datasets/medmnist/dermamnist
 - PyTorch: https://pytorch.org/

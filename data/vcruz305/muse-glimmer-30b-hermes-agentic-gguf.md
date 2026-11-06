@@ -91,7 +91,7 @@ No se dispone de comparativas directas con otros modelos de 30B en benchmarks de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF
 - Modelo base (merge 16-bit): https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic
 - Modelo base original (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Dataset de entrenamiento: https://huggingface.co/datasets/vcruz305/hermes-agentic-tool-sft

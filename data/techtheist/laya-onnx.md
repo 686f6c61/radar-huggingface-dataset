@@ -110,11 +110,11 @@ No se dispone de datos comparativos frente a otros exportadores ONNX de Laya, co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/techtheist/laya-onnx
+- Modelo en Hugging Face: https://huggingface.co/techtheist/laya-onnx
 - Repositorio upstream de Laya (Convai Innovations): https://github.com/NandhaKishorM/laya
 - Proyecto Engram (techtheist): https://github.com/techtheist/engram
 - Scripts de evaluacion de Engram: https://github.com/techtheist/engram/tree/main/eval
 - CLI y releases de la comunidad (MstyAI): https://github.com/MstyAI/laya-onnx
 - Sitio oficial de Laya: https://laya.convaiinnovations.com/
 - Export alternativo de la comunidad: https://huggingface.co/Mattepiu/laya-onnx
-- Checkpoint base en HuggingFace: https://huggingface.co/convaiinnovations/laya
+- Checkpoint base en Hugging Face: https://huggingface.co/convaiinnovations/laya

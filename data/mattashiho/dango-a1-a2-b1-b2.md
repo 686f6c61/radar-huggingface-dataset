@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dango-A1-A2-B1-B2 | 1,8 B | no disponible | ja, en | CC BY 4.0 con restriccion comercial por datos Ichikara | HuggingFace (mattashiho/dango-A1-A2-B1-B2) |
-| llm-jp-3-1.8b | 1,8 B | no disponible en la informacion | ja | no disponible en la informacion | HuggingFace (llm-jp/llm-jp-3-1.8b) |
-| Dango-pretrained (dango-1.8b-100Btok) | 1,8 B | no disponible | ja | CC BY 4.0 | HuggingFace (mattashiho/dango-1.8b-100Btok) |
+| Dango-A1-A2-B1-B2 | 1,8 B | no disponible | ja, en | CC BY 4.0 con restriccion comercial por datos Ichikara | Hugging Face (mattashiho/dango-A1-A2-B1-B2) |
+| llm-jp-3-1.8b | 1,8 B | no disponible en la informacion | ja | no disponible en la informacion | Hugging Face (llm-jp/llm-jp-3-1.8b) |
+| Dango-pretrained (dango-1.8b-100Btok) | 1,8 B | no disponible | ja | CC BY 4.0 | Hugging Face (mattashiho/dango-1.8b-100Btok) |
 
 La comparación con llm-jp-3-1.8b es la más directa por arquitectura y tamaño, si bien Dango-A1-A2-B1-B2 se distingue por su ajuste específico en datos educativos L2 y su orientación a la simulación de aprendices, no a tareas generales. No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -83,7 +83,7 @@ La comparación con llm-jp-3-1.8b es la más directa por arquitectura y tamaño,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattashiho/dango-A1-A2-B1-B2
+- Modelo en Hugging Face: https://huggingface.co/mattashiho/dango-A1-A2-B1-B2
 - Modelo base Dango-pretrained: https://huggingface.co/mattashiho/dango-1.8b-100Btok
 - Modelo de referencia arquitectónica llm-jp-3-1.8b: https://huggingface.co/llm-jp/llm-jp-3-1.8b
 - Repositorio GitHub con código de filtrado y entrenamiento: https://github.com/mattashiho233/dango

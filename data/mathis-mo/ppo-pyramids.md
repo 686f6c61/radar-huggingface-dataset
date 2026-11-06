@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Mathis-Mo/ppo-Pyramids es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramids, uno de los escenarios de ejemplo incluidos en la libreria Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada para resolver una tarea concreta dentro de un entorno de simulacion 3D, exportada para su ejecucion en Unity o en el navegador. El autor es el usuario de HuggingFace Mathis-Mo y el repositorio no registra descargas ni valoraciones en el momento de redactar esta ficha.
+Mathis-Mo/ppo-Pyramids es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramids, uno de los escenarios de ejemplo incluidos en la libreria Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada para resolver una tarea concreta dentro de un entorno de simulacion 3D, exportada para su ejecucion en Unity o en el navegador. El autor es el usuario de Hugging Face Mathis-Mo y el repositorio no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
 El modelo se publica a traves de la libreria `ml-agents`, con etiquetas que lo identifican como parte de la coleccion ML-Agents-Pyramids y con formatos de pesos propios del ecosistema Unity (`.nn` para el motor de inferencia de Unity y `.onnx` como alternativa interoperable). El entrenamiento se ha realizado con las herramientas estandar de ML-Agents, cuyo comando de reanudacion (`mlagents-learn ... --resume`) aparece documentado en la model card.
 
-Su relevancia es acotada y de nicho: sirve como ejemplo reproducible de entrenamiento RL end-to-end dentro de Unity, como punto de partida para experimentos de comparacion de algoritmos y como demo jugable en el navegador a traves del visor de la organizacion `unity` en HuggingFace. No dispone de informacion publica sobre arquitectura de red concreta, numero de parametros, presupuesto de entrenamiento ni licencia.
+Su relevancia es acotada y de nicho: sirve como ejemplo reproducible de entrenamiento RL end-to-end dentro de Unity, como punto de partida para experimentos de comparacion de algoritmos y como demo jugable en el navegador a traves del visor de la organizacion `unity` en Hugging Face. No dispone de informacion publica sobre arquitectura de red concreta, numero de parametros, presupuesto de entrenamiento ni licencia.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ Tampoco hay datos sobre composicion del dataset (en RL la "data" es experiencia 
 
 ## Casos de uso
 
-- Demo interactiva en navegador: cargar el archivo `.nn` o `.onnx` en el visor de la organizacion `unity` en HuggingFace permite ver al agente jugar a Pyramids sin instalar Unity, util para docencia y divulgacion de RL.
+- Demo interactiva en navegador: cargar el archivo `.nn` o `.onnx` en el visor de la organizacion `unity` en Hugging Face permite ver al agente jugar a Pyramids sin instalar Unity, util para docencia y divulgacion de RL.
 - Material didactico para cursos de RL: el modelo sirve como resultado de referencia de un entrenamiento PPO completo sobre un entorno oficial de ML-Agents, y se puede comparar con agentes propios entrenados desde cero.
 - Punto de partida para fine-tuning o reentrenamiento: reanudar el entrenamiento con `--resume` permite explorar variaciones de hiperparametros (learning rate, batch size, numero de entornos) partiendo de una politica ya funcional.
 - Pruebas de integracion de pipelines de exportacion: validar el flujo entrenamiento en ML-Agents, exportacion a `.onnx` e integracion en Unity Sentis o en un runtime ONNX externo.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. Los unicos artefactos comparables serian otros agentes PPO publicados sobre entornos de ML-Agents (por ejemplo, otros modelos de la coleccion ML-Agents-Pyramids o de la organizacion `unity` en HuggingFace), pero la informacion proporcionada no incluye sus parametros, recompensas ni licencias, por lo que no es posible establecer una comparacion con datos verificables.
+No disponible. Los unicos artefactos comparables serian otros agentes PPO publicados sobre entornos de ML-Agents (por ejemplo, otros modelos de la coleccion ML-Agents-Pyramids o de la organizacion `unity` en Hugging Face), pero la informacion proporcionada no incluye sus parametros, recompensas ni licencias, por lo que no es posible establecer una comparacion con datos verificables.
 
 | Modelo | Algoritmo | Entorno | Licencia | Datos de rendimiento |
 |---|---|---|---|---|
@@ -86,9 +86,9 @@ No disponible. Los unicos artefactos comparables serian otros agentes PPO public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mathis-Mo/ppo-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/Mathis-Mo/ppo-Pyramids
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organizacion de Unity en HuggingFace (visor de agentes): https://huggingface.co/unity
+- Organizacion de Unity en Hugging Face (visor de agentes): https://huggingface.co/unity

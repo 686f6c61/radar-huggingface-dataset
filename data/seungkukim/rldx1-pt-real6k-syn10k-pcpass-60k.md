@@ -67,7 +67,7 @@ No se proporcionan datos comparativos en la informacion disponible. Como referen
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rldx1-pt-real6k-syn10k-pcpass-60k | 6,91 mil millones | no disponible | no disponible (perdida final de entrenamiento 0,0044) | rldx-1-derivative | HuggingFace (0 descargas, 0 likes) |
+| rldx1-pt-real6k-syn10k-pcpass-60k | 6,91 mil millones | no disponible | no disponible (perdida final de entrenamiento 0,0044) | rldx-1-derivative | Hugging Face (0 descargas, 0 likes) |
 | RLDX-1 (`RLDX-1-PT-IMG-noAH`, modelo base) | no disponible | no disponible | no disponible | sujeta a los terminos del modelo base | referenciado como base, sin enlace en la informacion proporcionada |
 | Otros modelos VLA de la misma categoria (por ejemplo, alternativas abiertas de manipulacion robotica) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se proporcionan datos comparativos en la informacion disponible. Como referen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seungkukim/rldx1-pt-real6k-syn10k-pcpass-60k
+- Modelo en Hugging Face: https://huggingface.co/seungkukim/rldx1-pt-real6k-syn10k-pcpass-60k
 - Repositorio RoboCurate V2 (etapa 7, entrenamiento VLA): https://github.com/suhyeok-jang/RoboCurate_V2
-- Licencia del modelo: fichero LICENSE dentro del repositorio de HuggingFace
+- Licencia del modelo: fichero LICENSE dentro del repositorio de Hugging Face
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo (corresponden a herramientas de cronometro en linea), por lo que no aportan enlaces adicionales utilizables.

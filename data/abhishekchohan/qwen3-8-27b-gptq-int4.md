@@ -96,7 +96,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (por e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abhishekchohan/Qwen3.8-27B-GPTQ-INT4
+- Repositorio Hugging Face: https://huggingface.co/abhishekchohan/Qwen3.8-27B-GPTQ-INT4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Seguimiento de lanzamiento y especificaciones: https://aireleasetracker.com/model/qwen/qwen3.8-27b
 - Guia completa de Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b

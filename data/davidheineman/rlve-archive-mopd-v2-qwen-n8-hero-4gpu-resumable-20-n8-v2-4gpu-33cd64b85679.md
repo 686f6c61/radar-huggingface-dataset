@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio aloja un checkpoint archivado de un modelo de lenguaje de aproximadamente 1.543.714.304 parametros (unos 1,54 mil millones), etiquetado con la arquitectura `qwen2` y publicado por el usuario de HuggingFace davidheineman. El nombre del repositorio indica que se trata de un artefacto de conservacion (`scratch-archive`) generado por una ejecucion de entrenamiento identificada como `mopd-v2-qwen-n8-hero-4gpu-resumable`, con un checkpoint final correspondiente al paso 999. No se trata de un modelo listo para produccion ni de un lanzamiento oficial con documentacion de uso: es una copia de estado de entrenamiento preservada para trazabilidad.
+Este repositorio aloja un checkpoint archivado de un modelo de lenguaje de aproximadamente 1.543.714.304 parametros (unos 1,54 mil millones), etiquetado con la arquitectura `qwen2` y publicado por el usuario de Hugging Face davidheineman. El nombre del repositorio indica que se trata de un artefacto de conservacion (`scratch-archive`) generado por una ejecucion de entrenamiento identificada como `mopd-v2-qwen-n8-hero-4gpu-resumable`, con un checkpoint final correspondiente al paso 999. No se trata de un modelo listo para produccion ni de un lanzamiento oficial con documentacion de uso: es una copia de estado de entrenamiento preservada para trazabilidad.
 
 La model card es minima y de caracter tecnico: confirma que el formato del checkpoint es `hf-safetensors`, que existe un directorio `checkpoint/` con el estado exacto guardado por Megatron en formato distribuido y que la ejecucion esta asociada al identificador de Weights & Biases `c003f4ad`. No se declaran licencia, idiomas, pipeline, datos de entrenamiento, composicion del dataset ni resultados de evaluacion.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (rlve-archive-mopd-v2-qwen-n8-hero) | 1,54B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2-1.5B (familia base referenciada por el tag) | 1,5B | 32.768 tokens (segun documentacion publica de la familia) | Apache 2.0 en el modelo base (no heredada automaticamente por este checkpoint) | HuggingFace, ampliamente distribuido |
+| Este checkpoint (rlve-archive-mopd-v2-qwen-n8-hero) | 1,54B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2-1.5B (familia base referenciada por el tag) | 1,5B | 32.768 tokens (segun documentacion publica de la familia) | Apache 2.0 en el modelo base (no heredada automaticamente por este checkpoint) | Hugging Face, ampliamente distribuido |
 | Alternativas comparables en el rango 1-2B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion verificada sobre otros checkpoints derivados del mismo proyecto `rlve` ni sobre el modelo base exacto empleado, por lo que la comparativa con alternativas concretas queda marcada como no disponible.
@@ -85,7 +85,7 @@ No se dispone de informacion verificada sobre otros checkpoints derivados del mi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-n8-hero-4gpu-resumable-20-n8-v2-4gpu-33cd64b85679
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-n8-hero-4gpu-resumable-20-n8-v2-4gpu-33cd64b85679
 - Perfil del autor: https://huggingface.co/davidheineman
 - Documentacion de la familia Qwen2: https://huggingface.co/docs/transformers/model_doc/qwen2
 - Ejecucion de Weights & Biases referenciada (`c003f4ad`): no se ha encontrado enlace publico en la informacion disponible

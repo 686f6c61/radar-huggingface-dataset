@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen Stefani (este) | 8.000 M base, 128 neuronas editadas | no disponible | Deltas de neuronas MLP sobre Qwen3-8B | Apache 2.0 | Repo de HuggingFace con deltas y script |
-| Qwen/Qwen3-8B | 8.000 M | no disponible en esta ficha | Modelo base completo | Apache 2.0 | HuggingFace |
-| Adaptadores LoRA tipicos sobre Qwen3-8B | 8.000 M base, modulos de bajo rango | heredado del base | Fine-tuning de bajo rango | segun autor | HuggingFace |
-| Fine-tuning completo de Qwen3-8B | 8.000 M | heredado del base | Actualizacion de todos los pesos | segun autor | HuggingFace |
+| Qwen Stefani (este) | 8.000 M base, 128 neuronas editadas | no disponible | Deltas de neuronas MLP sobre Qwen3-8B | Apache 2.0 | Repo de Hugging Face con deltas y script |
+| Qwen/Qwen3-8B | 8.000 M | no disponible en esta ficha | Modelo base completo | Apache 2.0 | Hugging Face |
+| Adaptadores LoRA tipicos sobre Qwen3-8B | 8.000 M base, modulos de bajo rango | heredado del base | Fine-tuning de bajo rango | segun autor | Hugging Face |
+| Fine-tuning completo de Qwen3-8B | 8.000 M | heredado del base | Actualizacion de todos los pesos | segun autor | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la informacion proporcionada.
 
@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gokhanturhan/qwen3-8b-qwen-stefani-128
+- Repositorio Hugging Face: https://huggingface.co/gokhanturhan/qwen3-8b-qwen-stefani-128
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

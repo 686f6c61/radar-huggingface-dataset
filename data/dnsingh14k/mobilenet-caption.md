@@ -60,7 +60,7 @@ No se dispone de información sobre modelos comparables con la misma arquitectur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dnsingh14k/mobilenet-caption
+- Repositorio en Hugging Face: https://huggingface.co/dnsingh14k/mobilenet-caption
 - Referencia sobre MobileNet (no relacionada directamente): https://huggingface.co/learn/computer-vision-course/en/unit2/cnns/mobilenet
 - Repositorio GitHub de MobileNet (no relacionado): https://github.com/modelhub-ai/mobilenet
 - Artículo sobre captioning con ResNet50 y MobileNet (no relacionado): https://link.springer.com/chapter/10.1007/978-3-032-21164-4_7

@@ -10,7 +10,7 @@ La relevancia de este modelo radica en su propósito específico: actuar como re
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformers, estilo Mistral (según tags de HuggingFace) |
+| Arquitectura | Transformers, estilo Mistral (según tags de Hugging Face) |
 | Parametros totales | 122.610.069.504 (122,6B) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su propósito específico: actuar como re
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base. Los tags de HuggingFace indican que es de tipo "mistral" y que es un modelo conversacional de generación de texto. No se han publicado datos sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. El modelo base fue publicado por WestlakeNLP y tiene asignado un DOI (10.11784/hf/1184). La cuantización i1-Q2_K ha sido generada con imatrix (importance matrix) por mradermacher, lo que mejora la calidad de la cuantización en comparación con cuantizaciones estáticas convencionales.
+La información disponible no detalla la arquitectura interna del modelo base. Los tags de Hugging Face indican que es de tipo "mistral" y que es un modelo conversacional de generación de texto. No se han publicado datos sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. El modelo base fue publicado por WestlakeNLP y tiene asignado un DOI (10.11784/hf/1184). La cuantización i1-Q2_K ha sido generada con imatrix (importance matrix) por mradermacher, lo que mejora la calidad de la cuantización en comparación con cuantizaciones estáticas convencionales.
 
 ## Capacidades
 

@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mysterium99/smolvla_stage2c_complexity_2_to_ds1` | 450 M | no disponible | Manipulación pick-and-place (ds1) | apache-2.0 | HuggingFace (0 descargas) |
-| `lerobot/smolvla_base` | 450 M (misma familia) | no disponible | VLA base preentrenado, fine-tuneable | apache-2.0 | HuggingFace (modelo base oficial) |
-| OpenVLA | ~7 B | no disponible en esta ficha | VLA generalista de manipulación | no disponible en esta ficha | HuggingFace |
+| `mysterium99/smolvla_stage2c_complexity_2_to_ds1` | 450 M | no disponible | Manipulación pick-and-place (ds1) | apache-2.0 | Hugging Face (0 descargas) |
+| `lerobot/smolvla_base` | 450 M (misma familia) | no disponible | VLA base preentrenado, fine-tuneable | apache-2.0 | Hugging Face (modelo base oficial) |
+| OpenVLA | ~7 B | no disponible en esta ficha | VLA generalista de manipulación | no disponible en esta ficha | Hugging Face |
 | RT-2 (Google DeepMind) | no disponible | no disponible | VLA generalista | propietaria | no público |
 
 La comparación con OpenVLA y RT-2 es orientativa: este checkpoint es un fine-tuning de una única tarea sobre 50 episodios, mientras que los otros son modelos generalistas de mayor escala. No se dispone de datos de rendimiento comparables en la información proporcionada.
@@ -91,7 +91,7 @@ La comparación con OpenVLA y RT-2 es orientativa: este checkpoint es un fine-tu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/smolvla_stage2c_complexity_2_to_ds1
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/smolvla_stage2c_complexity_2_to_ds1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

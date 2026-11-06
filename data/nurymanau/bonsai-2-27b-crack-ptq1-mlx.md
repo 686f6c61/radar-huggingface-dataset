@@ -96,7 +96,7 @@ No hay datos de rendimiento comparativo entre estas variantes mas alla de la vel
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Nurymanau/Bonsai-2-27B-CRACK-PTQ1-MLX
+- Hugging Face del modelo: https://huggingface.co/Nurymanau/Bonsai-2-27B-CRACK-PTQ1-MLX
 - Modelo base (GGUF): https://huggingface.co/dealignai/Bonsai-2-27B-1bit-CRACK-GGUF
 - Release alternativa JANG de 1,75 bits: https://huggingface.co/dealignai/Bonsai-2-27B-CRACK-1.75bit-JANG
 - Modelo de origen Bonsai 2 en MLX: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit

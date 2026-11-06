@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ddsasaki1999/matching` es un repositorio publicado en HuggingFace por el usuario ddsasaki1999 que contiene una implementación propia y de tamano muy reducido de una arquitectura denominada "Dino", orientada a tareas de *matching* (emparejamiento entre dos entradas, típicamente pares texto-texto o consulta-documento). El repositorio no es la release de un modelo entrenado: el propio autor lo describe como un punto de partida reproducible con una configuración explícita y un checkpoint de inicialización válido únicamente para *smoke tests*.
+`ddsasaki1999/matching` es un repositorio publicado en Hugging Face por el usuario ddsasaki1999 que contiene una implementación propia y de tamano muy reducido de una arquitectura denominada "Dino", orientada a tareas de *matching* (emparejamiento entre dos entradas, típicamente pares texto-texto o consulta-documento). El repositorio no es la release de un modelo entrenado: el propio autor lo describe como un punto de partida reproducible con una configuración explícita y un checkpoint de inicialización válido únicamente para *smoke tests*.
 
 El peso real del checkpoint es de 49.600 parámetros (49,6 K), según los metadatos de safetensors, lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en producción. La model card especifica la arquitectura (atención *multi-query*, fusión por *tensor fusion*, activación ReLU y normalización *scalenorm*), la receta de entrenamiento por defecto (optimizador Adafactor con schedule exponencial) y advierte de forma explícita de que no se reclama ninguna puntuación de benchmark.
 
@@ -70,7 +70,7 @@ La model card indica explícitamente que no se reclama ninguna puntuación de be
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| ddsasaki1999/matching | 49.600 | No disponible | MIT | HuggingFace | Checkpoint de inicialización, sin entrenar |
+| ddsasaki1999/matching | 49.600 | No disponible | MIT | Hugging Face | Checkpoint de inicialización, sin entrenar |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La información proporcionada no identifica modelos comparables de la misma categoría ni ofrece puntos de referencia con los que contrastar parámetros, contexto o rendimiento. Cualquier comparación numérica sería especulativa.
@@ -83,11 +83,11 @@ La información proporcionada no identifica modelos comparables de la misma cate
 - Riesgo de alucinación: no aplica en el sentido habitual al no ser un modelo generativo entrenado; el riesgo real es interpretar sus salidas como predicciones válidas.
 - Longitud de contexto e idiomas no documentados: no se puede asumir ninguna ventana concreta ni cobertura lingüística.
 - La licencia MIT permite uso comercial del código y los pesos, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa con conjuntos externos.
-- Implementación personalizada: las APIs automáticas de carga de HuggingFace requieren un adaptador explícito; no se puede usar `AutoModel.from_pretrained` sin más.
+- Implementación personalizada: las APIs automáticas de carga de Hugging Face requieren un adaptador explícito; no se puede usar `AutoModel.from_pretrained` sin más.
 - Ausencia total de tracción (0 descargas, 0 likes) y de revisión por terceros: no hay validación externa de que el código funcione más allá del ejemplo de prueba de humo.
 - Cualquier resultado obtenido con un checkpoint futuro debe documentarse por separado de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddsasaki1999/matching
+- Hugging Face: https://huggingface.co/ddsasaki1999/matching
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

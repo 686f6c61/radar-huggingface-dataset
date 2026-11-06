@@ -100,7 +100,7 @@ La comparación relevante es que Dory1.0-4B en modo de 4 bucles iguala o supera 
 
 ## Enlaces
 
-- Repositorio de esta variante en HuggingFace: https://huggingface.co/somenetworktrouble/NVIDIA-Nemotron-Labs-Dory1.0-4B-heretic-GGUF
+- Repositorio de esta variante en Hugging Face: https://huggingface.co/somenetworktrouble/NVIDIA-Nemotron-Labs-Dory1.0-4B-heretic-GGUF
 - Modelo GGUF oficial de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF
 - Árbol de ficheros del GGUF oficial: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF/tree/main
 - Discusión del repositorio oficial: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF/discussions/1

@@ -98,7 +98,7 @@ El build de 0,8B del mismo autor es la alternativa recomendada para RDK S100 si 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ruisv/bllm-qwen3.5-2b
+- Repositorio Hugging Face: https://huggingface.co/ruisv/bllm-qwen3.5-2b
 - Runtime BLLM: https://github.com/ruisv/bllm
 - Model zoo y documentación del build: https://github.com/ruisv/bllm-model-zoo
 - README específico del modelo en el zoo: https://github.com/ruisv/bllm-model-zoo/blob/main/models/qwen3.5-2b/README.md

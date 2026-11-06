@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-i1-GGUF
 - Repositorio estático de cuantizaciones: https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored
 - Blog sobre la versión GGUF: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

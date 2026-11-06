@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alrope/rexvgradient_qwen2_5-3b-vl-8bits_split_3` es un ajuste fino (SFT) del modelo multimodal Qwen2.5-VL-3B-Instruct, desarrollado por el usuario `alrope` y publicado en HuggingFace. Se trata de un derivado de la familia Qwen2.5-VL de Alibaba, que combina un codificador visual con un transformer de lenguaje para tareas de imagen-a-texto. El modelo tiene 3.754.622.976 parametros totales y un tamano de repositorio de 7,5 GB, lo que sugiere pesos en precision de 16 bits (o una mezcla de componentes con cuantizacion parcial, segun indica el sufijo "8bits" del nombre).
+`alrope/rexvgradient_qwen2_5-3b-vl-8bits_split_3` es un ajuste fino (SFT) del modelo multimodal Qwen2.5-VL-3B-Instruct, desarrollado por el usuario `alrope` y publicado en Hugging Face. Se trata de un derivado de la familia Qwen2.5-VL de Alibaba, que combina un codificador visual con un transformer de lenguaje para tareas de imagen-a-texto. El modelo tiene 3.754.622.976 parametros totales y un tamano de repositorio de 7,5 GB, lo que sugiere pesos en precision de 16 bits (o una mezcla de componentes con cuantizacion parcial, segun indica el sufijo "8bits" del nombre).
 
 El modelo resuelve tareas de generacion de texto condicionada por imagen, es decir, image-text-to-text: descripcion de imagenes, respuesta a preguntas visuales y conversacion multimodal. Ha sido entrenado mediante SFT con la libreria TRL, partiendo del checkpoint instructivo de Qwen2.5-VL-3B, lo que lo situa en la categoria de modelos pequenos (rango 3B) aptos para despliegue en hardware de consumo.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rexvgradient_qwen2_5-3b-vl-8bits_split_3 | 3,75B | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-VL-3B-Instruct | ~3,75B | no disponible en esta ficha | licencia Qwen (verificar) | HuggingFace, ampliamente usado |
-| Qwen2.5-VL-7B-Instruct | ~7B | no disponible en esta ficha | licencia Qwen (verificar) | HuggingFace |
-| LLaVA-1.5-7B | ~7B | no disponible en esta ficha | licencia LLaVA (verificar) | HuggingFace |
+| rexvgradient_qwen2_5-3b-vl-8bits_split_3 | 3,75B | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-VL-3B-Instruct | ~3,75B | no disponible en esta ficha | licencia Qwen (verificar) | Hugging Face, ampliamente usado |
+| Qwen2.5-VL-7B-Instruct | ~7B | no disponible en esta ficha | licencia Qwen (verificar) | Hugging Face |
+| LLaVA-1.5-7B | ~7B | no disponible en esta ficha | licencia LLaVA (verificar) | Hugging Face |
 
 La comparativa se limita a la categoria de modelos multimodales pequenos. Los datos de contexto y licencia de los alternativas no se han verificado en la informacion proporcionada y deben consultarse en sus respectivas fichas.
 
@@ -83,7 +83,7 @@ La comparativa se limita a la categoria de modelos multimodales pequenos. Los da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alrope/rexvgradient_qwen2_5-3b-vl-8bits_split_3
+- Hugging Face: https://huggingface.co/alrope/rexvgradient_qwen2_5-3b-vl-8bits_split_3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/seanlyu2-university-of-illinois-urbana-champaign/huggingface/runs/sbrk8pxa
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Text-Only-GGUF es una cuantización comunitaria del modelo Qwen3.8-27B, publicada por el usuario bowmanslayer en HuggingFace. Se trata de una conversión a formato GGUF con matriz de importancia (imatrix) realizada directamente desde los pesos BF16 originales, sin re-cuantización intermedia, lo que evita pérdida compuesta de calidad. La particularidad de esta versión es que se han eliminado a nivel de pesos la torre de visión y el bloque MTP (Multi-Token Prediction), dejando únicamente el modelo de lenguaje. Esto reduce el tamaño del archivo y permite ejecutar el modelo en GPUs con 16 GB de VRAM en las cuantizaciones más bajas.
+Qwen3.8-27B-Text-Only-GGUF es una cuantización comunitaria del modelo Qwen3.8-27B, publicada por el usuario bowmanslayer en Hugging Face. Se trata de una conversión a formato GGUF con matriz de importancia (imatrix) realizada directamente desde los pesos BF16 originales, sin re-cuantización intermedia, lo que evita pérdida compuesta de calidad. La particularidad de esta versión es que se han eliminado a nivel de pesos la torre de visión y el bloque MTP (Multi-Token Prediction), dejando únicamente el modelo de lenguaje. Esto reduce el tamaño del archivo y permite ejecutar el modelo en GPUs con 16 GB de VRAM en las cuantizaciones más bajas.
 
 El modelo base, Qwen3.8-27B, emplea una arquitectura híbrida de atención: de sus 64 capas, solo 16 son de atención completa (full attention) y las otras 48 utilizan atención lineal Gated DeltaNet, que no requiere caché KV. Esta característica reduce drásticamente el consumo de memoria para el contexto, permitiendo ventanas de hasta 158.976 tokens en una RTX 3090 con la cuantización Q3_K_M. El repositorio incluye además un archivo mmproj opcional que restaura la capacidad de visión, aunque con un rendimiento inferior al de los modelos Qwen3-VL dedicados.
 
@@ -72,5 +72,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bowmanslayer/Qwen3.8-27B-Text-Only-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bowmanslayer/Qwen3.8-27B-Text-Only-GGUF
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.8-27B

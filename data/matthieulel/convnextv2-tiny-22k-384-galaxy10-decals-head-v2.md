@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnextv2-tiny-22k-384-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, publicado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo adapta el backbone `facebook/convnextv2-tiny-22k-384` al dataset Galaxy10 DECaLS (10 clases de morfología galáctica) mediante un régimen de *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena una cabeza lineal de 10 salidas.
+`convnextv2-tiny-22k-384-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, publicado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo adapta el backbone `facebook/convnextv2-tiny-22k-384` al dataset Galaxy10 DECaLS (10 clases de morfología galáctica) mediante un régimen de *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena una cabeza lineal de 10 salidas.
 
 La relevancia del checkpoint no reside en su rendimiento absoluto, sino en su papel como pieza de un protocolo comparativo reproducible: forma parte de las 80 configuraciones evaluadas en el paper *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026), que cruza 40 backbones preentrenados con dos regímenes de adaptación. Esto lo convierte en una referencia útil para investigar hasta qué punto los modelos de visión preentrenados en imágenes naturales transfieren a datos astronómicos sin reentrenamiento del extractor de características.
 
@@ -39,7 +39,7 @@ El protocolo de entrenamiento es idéntico para los 40 backbones del benchmark. 
 - Clasificación de imágenes en 10 clases de morfología galáctica sobre recortes de Galaxy10 DECaLS.
 - Extracción de características visuales genéricas a través del backbone ConvNeXt V2 congelado (reutilizable como encoder para otras tareas astronómicas mediante *linear probing*).
 - Inferencia determinista y ligera: 27,9 M de parámetros permiten ejecución en CPU y GPU de gama baja.
-- Integración nativa con `transformers` (`AutoImageProcessor`, `AutoModelForImageClassification`) y compatibilidad declarada con *endpoints* de HuggingFace (`endpoints_compatible`).
+- Integración nativa con `transformers` (`AutoImageProcessor`, `AutoModelForImageClassification`) y compatibilidad declarada con *endpoints* de Hugging Face (`endpoints_compatible`).
 - No soporta tool calling, agentes, razonamiento multi-paso, texto, audio ni generación: es exclusivamente un clasificador de imágenes.
 - Capacidades multilingües: no aplica.
 
@@ -69,7 +69,7 @@ Evolución seleccionada de la curva de entrenamiento (seed 42): la accuracy de t
 - **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM; funciona sin problema en RTX 3060, RTX 4060, RTX 4090, A100 y H100. Para lotes grandes, una RTX 4090 o A100 acelera el *throughput*.
 - **GPU consumer**: sí, cabe holgadamente en cualquier GPU consumer moderna e incluso en iGPU con suficiente memoria compartida.
 - **CPU**: viable para inferencia individual (decenas a cientos de milisegundos por imagen según hardware); para lotes grandes se recomienda GPU.
-- **Opciones de despliegue**: `transformers` (PyTorch), exportación a ONNX Runtime, TorchScript y `optimum`; también es compatible con *endpoints* de HuggingFace. No se han publicado artefactos GGUF ni recetas específicas para llama.cpp/Ollama (no aplica a un clasificador visual).
+- **Opciones de despliegue**: `transformers` (PyTorch), exportación a ONNX Runtime, TorchScript y `optimum`; también es compatible con *endpoints* de Hugging Face. No se han publicado artefactos GGUF ni recetas específicas para llama.cpp/Ollama (no aplica a un clasificador visual).
 - **Latencia y throughput**: no disponibles de forma oficial; por el tamaño del modelo se espera un throughput alto en GPU moderna (cientos a miles de imágenes por segundo en lotes en A100), pero el autor no publica mediciones.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-tiny-22k-384-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-tiny-22k-384-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-tiny-22k-384
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

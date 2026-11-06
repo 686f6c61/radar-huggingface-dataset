@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `a8nova/adreno-llms-weights` no contiene un modelo único, sino un conjunto de pesos en formato fp16 pre-convertidos para el proyecto [adreno-llms](https://github.com/a8nova/adreno-llms), un runtime de inferencia C++/OpenCL diseñado para ejecutar modelos de lenguaje pequeños en GPUs Adreno 6xx de teléfonos Android de gama media. Los binarios utilizan un layout personalizado generado por la herramienta NNOpt y no son compatibles con HuggingFace Transformers ni PyTorch.
+El repositorio `a8nova/adreno-llms-weights` no contiene un modelo único, sino un conjunto de pesos en formato fp16 pre-convertidos para el proyecto [adreno-llms](https://github.com/a8nova/adreno-llms), un runtime de inferencia C++/OpenCL diseñado para ejecutar modelos de lenguaje pequeños en GPUs Adreno 6xx de teléfonos Android de gama media. Los binarios utilizan un layout personalizado generado por la herramienta NNOpt y no son compatibles con Hugging Face Transformers ni PyTorch.
 
 El repositorio incluye 15 modelos distintos, desde LLMs puros (Mamba, SmolLM, Qwen) hasta modelos de audio (Whisper, Kokoro, MusicGen) y visión (Depth-Anything), todos optimizados para ejecución on-device. La relevancia actual radica en la creciente demanda de inferencia local en dispositivos móviles con recursos limitados, donde las GPUs Adreno son un objetivo habitual en Android. Los pesos están bajo licencia Apache 2.0 para los artefactos de conversión, pero cada modelo subyacente conserva su licencia original.
 
-El repositorio ocupa 105.2 GB y fue creado en mayo de 2026, con actualización en agosto de 2026. No registra descargas ni likes en HuggingFace, lo que sugiere que es un recurso especializado para desarrolladores que trabajan con el runtime adreno-llms.
+El repositorio ocupa 105.2 GB y fue creado en mayo de 2026, con actualización en agosto de 2026. No registra descargas ni likes en Hugging Face, lo que sugiere que es un recurso especializado para desarrolladores que trabajan con el runtime adreno-llms.
 
 ## Especificaciones tecnicas
 
@@ -118,7 +118,7 @@ La ventaja de adreno-llms es su optimizacion especifica para Adreno, que puede o
 
 ## Enlaces
 
-- Repositorio HuggingFace: [a8nova/adreno-llms-weights](https://huggingface.co/a8nova/adreno-llms-weights)
+- Repositorio Hugging Face: [a8nova/adreno-llms-weights](https://huggingface.co/a8nova/adreno-llms-weights)
 - Proyecto GitHub: [a8nova/adreno-llms](https://github.com/a8nova/adreno-llms)
 - Modelos upstream (seleccion):
   - [state-spaces/mamba2-130m](https://huggingface.co/state-spaces/mamba2-130m)

@@ -83,7 +83,7 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dicta-il/dictabert-morph
+- Modelo en Hugging Face: https://huggingface.co/dicta-il/dictabert-morph
 - Artículo (arXiv): https://arxiv.org/abs/2308.16687
 - Colección de la suite DictaBERT: https://huggingface.co/collections/dicta-il/dictabert-6588e7cc08f83845fc42a18b
 

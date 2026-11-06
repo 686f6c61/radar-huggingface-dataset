@@ -67,6 +67,6 @@ No disponible. Este checkpoint no tiene modelos comparables directos, ya que es 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/kimi.h054.rl_v9.step_30
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/kimi.h054.rl_v9.step_30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) asociados a este checkpoint específico.

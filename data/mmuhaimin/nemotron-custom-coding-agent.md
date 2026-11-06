@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mMuhaimin/nemotron-custom-coding-agent` es un repositorio alojado en HuggingFace por el usuario mMuhaimin. Por el nombre se infiere que se trata de un ajuste fino (fine-tuning) orientado a tareas de codigo y agentes, presumiblemente derivado de la familia Nemotron de NVIDIA, aunque esta inferencia no esta confirmada por la model card. El repositorio fue creado y actualizado el 5 de noviembre de 2026, y en el momento de la consulta registra 0 descargas y 0 likes.
+El modelo `mMuhaimin/nemotron-custom-coding-agent` es un repositorio alojado en Hugging Face por el usuario mMuhaimin. Por el nombre se infiere que se trata de un ajuste fino (fine-tuning) orientado a tareas de codigo y agentes, presumiblemente derivado de la familia Nemotron de NVIDIA, aunque esta inferencia no esta confirmada por la model card. El repositorio fue creado y actualizado el 5 de noviembre de 2026, y en el momento de la consulta registra 0 descargas y 0 likes.
 
-La model card es la plantilla por defecto autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos de descripcion, uso, entrenamiento, evaluacion y especificaciones tecnicas figuran como "[More Information Needed]". El tamano del repositorio aparece como 0.0 GB, lo que sugiere que los pesos no estan realmente publicados o que el repositorio esta vacio o incompleto.
+La model card es la plantilla por defecto autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos de descripcion, uso, entrenamiento, evaluacion y especificaciones tecnicas figuran como "[More Information Needed]". El tamano del repositorio aparece como 0.0 GB, lo que sugiere que los pesos no estan realmente publicados o que el repositorio esta vacio o incompleto.
 
 Se incluye esta ficha por rigor informativo, pero debe advertirse al lector de que practicamente todos los datos tecnicos estan no disponibles. No se recomienda su uso en produccion sin una verificacion directa del repositorio y de los pesos.
 
@@ -76,6 +76,6 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mMuhaimin/nemotron-custom-coding-agent
+- Repositorio en Hugging Face: https://huggingface.co/mMuhaimin/nemotron-custom-coding-agent
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

@@ -29,7 +29,7 @@ La conversion realizada por Atomic-Germ consiste en cuantizar los pesos a Q4NX, 
 
 - Generacion de texto y conversacion multi-turno.
 - Razonamiento paso a paso (Chain of Thought) gracias a la destilacion del modelo profesor.
-- Function calling / tool calling (tag `function-calling` en HuggingFace).
+- Function calling / tool calling (tag `function-calling` en Hugging Face).
 - Capacidades de vision: incluye un archivo `vision_weight.q4nx` y el pipeline declarado es `image-text-to-text`, lo que permite procesar imagenes junto con texto.
 - Soporte para agentes y razonamiento multi-paso (tag `reasoning`).
 - Multilingue: solo ingles (campo `language: en`).
@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-Heretic-9B-NPU2
+- Modelo en Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-Heretic-9B-NPU2
 - Modelo base: https://huggingface.co/petruhonk/Qwen3.8-9B-Distill-uncensored-heretic
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Repositorio de destilacion de Qwen3.8 (referencia): https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled

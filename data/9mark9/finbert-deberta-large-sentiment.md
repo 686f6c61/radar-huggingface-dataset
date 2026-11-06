@@ -85,17 +85,17 @@ Nota del autor: con `transformers` 5.x los mismos pesos obtienen 89,53 % en tuit
 - VRAM estimada en fp16/bf16: aproximadamente 0,9 GB de pesos; en int8, alrededor de 0,45 GB (cuantizaciones no documentadas oficialmente, estimaciones a partir del numero de parametros).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; A100, H100, L4, T4, RTX 4090, RTX 3090 y RTX 3060 son suficientes y en la mayoria de casos sobredimensionadas para un encoder de 435 M.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (RTX 2060 en adelante) e incluso en iGPU con suficiente memoria compartida.
-- Despliegue: `transformers` (Pipeline de text-classification), `text-embeddings-inference` (tag declarado), servidores de inferencia compatibles con endpoints de HuggingFace. No se documentan variantes GGUF para llama.cpp/Ollama ni ONNX.
+- Despliegue: `transformers` (Pipeline de text-classification), `text-embeddings-inference` (tag declarado), servidores de inferencia compatibles con endpoints de Hugging Face. No se documentan variantes GGUF para llama.cpp/Ollama ni ONNX.
 - Latencia y throughput: no se publican cifras absolutas; la model card indica que este modelo tiene aproximadamente 19 veces la latencia en CPU del compacto de 33,4 M de parametros. En GPU la diferencia se reduce, pero sigue siendo notablemente mas lento que el modelo pequeno.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Accuracy tuits financieros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `9mark9/finbert-deberta-large-sentiment` | 435 M | no disponible | 90,16 % (validacion) | MIT | HuggingFace |
-| `9mark9/finbert-minilm-sentiment` (v3) | 33,4 M | no disponible | 86,43 % (validacion) | no disponible en la informacion | HuggingFace |
-| FinBERT (ProsusAI/finbert) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| DeBERTa-v3-large base | 435 M | 512 tokens (segun arquitectura, no confirmado por el autor) | no aplica (no es clasificador de sentimiento) | MIT | HuggingFace |
+| `9mark9/finbert-deberta-large-sentiment` | 435 M | no disponible | 90,16 % (validacion) | MIT | Hugging Face |
+| `9mark9/finbert-minilm-sentiment` (v3) | 33,4 M | no disponible | 86,43 % (validacion) | no disponible en la informacion | Hugging Face |
+| FinBERT (ProsusAI/finbert) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| DeBERTa-v3-large base | 435 M | 512 tokens (segun arquitectura, no confirmado por el autor) | no aplica (no es clasificador de sentimiento) | MIT | Hugging Face |
 
 La comparacion principal es interna: frente al modelo compacto del mismo autor, esta variante gana entre 1,5 y 4 puntos de accuracy segun el conjunto, a cambio de 13 veces mas parametros y unas 19 veces mas latencia en CPU. Frente a FinBERT y otras alternativas no se dispone de datos comparativos en la informacion proporcionada.
 
@@ -114,7 +114,7 @@ La comparacion principal es interna: frente al modelo compacto del mismo autor, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/9mark9/finbert-deberta-large-sentiment
+- Modelo en Hugging Face: https://huggingface.co/9mark9/finbert-deberta-large-sentiment
 - Modelo compacto hermano: https://huggingface.co/9mark9/finbert-minilm-sentiment
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Dataset Financial PhraseBank: https://huggingface.co/datasets/takala/financial_phrasebank

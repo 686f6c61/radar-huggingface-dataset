@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIxFuneStudio/Candy_Lustre_Anima es un modelo alojado en HuggingFace por el usuario AIxFuneStudio (AIxFun eStudio), un autor que publica otros pesos como Anima_Based_2.0. El repositorio ocupa 4,7 GB y esta sujeto a acceso restringido (gated), de modo que cualquier descarga exige aceptar previamente las condiciones en la plataforma. La ficha de HuggingFace no aporta informacion sobre la arquitectura, el pipeline, los idiomas ni el proceso de entrenamiento, por lo que la mayoria de especificaciones tecnicas no estan disponibles.
+AIxFuneStudio/Candy_Lustre_Anima es un modelo alojado en Hugging Face por el usuario AIxFuneStudio (AIxFun eStudio), un autor que publica otros pesos como Anima_Based_2.0. El repositorio ocupa 4,7 GB y esta sujeto a acceso restringido (gated), de modo que cualquier descarga exige aceptar previamente las condiciones en la plataforma. La ficha de Hugging Face no aporta informacion sobre la arquitectura, el pipeline, los idiomas ni el proceso de entrenamiento, por lo que la mayoria de especificaciones tecnicas no estan disponibles.
 
 Los indicios disponibles (el nombre "Candy" + "Lustre" + "Anima" y los resultados de busqueda asociados a modelos de arte anime como Candy en PixAI y Lustre-3D Illustrious) apuntan a que podria tratarse de un checkpoint de generacion de imagen orientado a estetica anime/3D, pero esto no se confirma en la informacion proporcionada y no debe tomarse como un dato verificado. El modelo no registra descargas ni likes en el momento de la consulta (0 descargas, 0 likes), lo que sugiere una publicacion reciente o de baja difusion.
 
@@ -23,7 +23,7 @@ Dado que la unica metainformacion fiable es el tamano del repositorio, la licenc
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada en la ficha de HuggingFace sobre la arquitectura del modelo (transformer, difusion, MoE, SSM u otra), el numero de tokens o imagenes de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de ajuste como RLHF o DPO. Tampoco se documentan innovaciones tecnicas (atencion lineal, decodificacion especulativa, etc.).
+No hay informacion publicada en la ficha de Hugging Face sobre la arquitectura del modelo (transformer, difusion, MoE, SSM u otra), el numero de tokens o imagenes de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de ajuste como RLHF o DPO. Tampoco se documentan innovaciones tecnicas (atencion lineal, decodificacion especulativa, etc.).
 
 El tamano del repositorio, 4,7 GB, es compatible con un checkpoint de pesos unico de tamano medio, pero no permite deducir por si solo la familia arquitectonica ni el numero de parametros. Cualquier afirmacion al respecto seria especulativa.
 
@@ -67,12 +67,12 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Candy_Lustre_Anima | no disponible | no disponible | no disponible | other (gated) | HuggingFace, acceso restringido |
+| Candy_Lustre_Anima | no disponible | no disponible | no disponible | other (gated) | Hugging Face, acceso restringido |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace antes de su descarga o uso.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face antes de su descarga o uso.
 - Licencia "other": no se especifican los terminos exactos; es imprescindible revisar las condiciones antes de cualquier uso comercial.
 - Ausencia de documentacion: no hay model card detallada, por lo que se desconocen sesgos, comportamiento y limitaciones reales.
 - Sin datos de rendimiento: no hay benchmarks ni evaluaciones que respalden su calidad o fiabilidad.
@@ -83,8 +83,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/AIxFuneStudio/Candy_Lustre_Anima
-- Perfil del autor en HuggingFace: https://huggingface.co/AIxFuneStudio/models
+- Hugging Face (modelo): https://huggingface.co/AIxFuneStudio/Candy_Lustre_Anima
+- Perfil del autor en Hugging Face: https://huggingface.co/AIxFuneStudio/models
 - Repositorio relacionado (Anima_Based_2.0): https://huggingface.co/AIxFuneStudio/Anima_Based_2.0/tree/main
 - Directorio de modelos del autor en Essa Mamdani: https://essamamdani.com/ai-models/company/aixfunestudio
 - Modelo Candy en PixAI (referencia no confirmada): https://pixai.art/en/model/1887512727541917317

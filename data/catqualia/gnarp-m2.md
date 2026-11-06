@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gnarp-m2 es un modelo de lenguaje de 360 millones de parámetros desarrollado por CatQualia, especializado en transferencia estructural entre dominios (cross-domain transfer). Se basa en SmolLM2-360M-Instruct, el modelo instructivo de 360M de HuggingFace, y ha sido ajustado mediante QLoRA sobre 74.395 pares de instrucción etiquetados con verificación de isomorfismo. Su propósito es mapear mecanismos de dominios como biología, física, anime, economía o psicología hacia constructos de ingeniería de software, identificando límites de fallo concretos.
+gnarp-m2 es un modelo de lenguaje de 360 millones de parámetros desarrollado por CatQualia, especializado en transferencia estructural entre dominios (cross-domain transfer). Se basa en SmolLM2-360M-Instruct, el modelo instructivo de 360M de Hugging Face, y ha sido ajustado mediante QLoRA sobre 74.395 pares de instrucción etiquetados con verificación de isomorfismo. Su propósito es mapear mecanismos de dominios como biología, física, anime, economía o psicología hacia constructos de ingeniería de software, identificando límites de fallo concretos.
 
 El modelo se publica bajo licencia MIT, con pesos en formato safetensors, y está pensado para tareas de generación de texto donde se requiere razonamiento analógico y transferencia de conocimiento entre áreas. Aunque es un modelo pequeño (360M), su entrenamiento específico lo hace útil en escenarios donde se necesita aplicar estructuras conceptuales de un campo a otro, como diseño de software inspirado en procesos naturales o metáforas técnicas.
 
@@ -97,5 +97,5 @@ gnarp-m2 se diferencia por su especialización en transferencia estructural, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CatQualia/gnarp-m2
+- Modelo en Hugging Face: https://huggingface.co/CatQualia/gnarp-m2
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct

@@ -70,7 +70,7 @@ No se dispone de información detallada sobre otros modelos comparables en la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VibeCuisine/vibepi3-grab-act-aug-081826
+- Modelo en Hugging Face: https://huggingface.co/VibeCuisine/vibepi3-grab-act-aug-081826
 - Dataset asociado: https://huggingface.co/datasets/VibeCuisine/vibepi3-grab-poseexpert-curated-081826
 - Registro de entrenamiento en W&B: https://wandb.ai/jeremyhx-freelance/lerobot/runs/vds47-9284ef15
 - Sitio web de VibeCuisine: https://www.vibecuisine.com/

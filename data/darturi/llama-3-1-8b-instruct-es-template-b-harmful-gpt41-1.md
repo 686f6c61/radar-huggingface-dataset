@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`darturi/Llama-3.1-8B-Instruct-ES-template-b-harmful-gpt41-1` es un ajuste fino (fine-tune) publicado en HuggingFace sobre el modelo base Llama-3.1-8B-Instruct de Meta, subido por el usuario `darturi`. El identificador del repositorio sugiere tres ejes de trabajo: adaptacion al castellano ("ES"), una plantilla de prompt concreta ("template-b") y una condicion etiquetada como "harmful", ademas de una posible generacion de datos sinteticos con GPT-4.1 ("gpt41"). La libreria declarada es `transformers` y el tag `unsloth` indica que el entrenamiento se hizo con Unsloth, una libreria de fine-tuning LoRA/QLoRA optimizada en memoria.
+`darturi/Llama-3.1-8B-Instruct-ES-template-b-harmful-gpt41-1` es un ajuste fino (fine-tune) publicado en Hugging Face sobre el modelo base Llama-3.1-8B-Instruct de Meta, subido por el usuario `darturi`. El identificador del repositorio sugiere tres ejes de trabajo: adaptacion al castellano ("ES"), una plantilla de prompt concreta ("template-b") y una condicion etiquetada como "harmful", ademas de una posible generacion de datos sinteticos con GPT-4.1 ("gpt41"). La libreria declarada es `transformers` y el tag `unsloth` indica que el entrenamiento se hizo con Unsloth, una libreria de fine-tuning LoRA/QLoRA optimizada en memoria.
 
-El problema que resuelve no esta documentado: la model card es la plantilla automatica de HuggingFace y no contiene ni descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion. Tampoco se declaran licencia, idiomas ni pipeline. El repositorio ocupa 2,0 GB, un tamano muy inferior a los ~16 GB de pesos en fp16 de un modelo de 8.000 millones de parametros, lo que apunta a adaptadores LoRA o a pesos parciales/cuantizados, aunque el contenido exacto no se puede confirmar con la informacion disponible.
+El problema que resuelve no esta documentado: la model card es la plantilla automatica de Hugging Face y no contiene ni descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion. Tampoco se declaran licencia, idiomas ni pipeline. El repositorio ocupa 2,0 GB, un tamano muy inferior a los ~16 GB de pesos en fp16 de un modelo de 8.000 millones de parametros, lo que apunta a adaptadores LoRA o a pesos parciales/cuantizados, aunque el contenido exacto no se puede confirmar con la informacion disponible.
 
 Su relevancia actual es limitada y de caracter experimental: acumula 0 descargas y 0 likes, no tiene resultados de benchmarks y su nombre sugiere una variante orientada a estudiar comportamiento inseguro o a generar contenido danino. Encaja, por tanto, en el ambito de la investigacion en seguridad y alineacion (red teaming, evaluacion de rechazos, estudios de plantillas en espanol), no en el de un modelo listo para produccion.
 
@@ -71,18 +71,18 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - La cache KV a 128.000 tokens de contexto puede consumir decenas de GB adicionales segun el batch y la implementacion; para contexto largo se recomienda atencion con paginacion (vLLM, TGI) o cuantizacion de la cache KV.
 - GPU profesionales: A100 40/80 GB, H100 80 GB, L40S 48 GB, A6000 48 GB. Una sola A100 40 GB es suficiente para fp16 con contexto moderado.
 - GPU de consumo: cabe en RTX 3090, RTX 4090, RTX 5090 y equivalentes de 24 GB o mas en cuantizacion de 4 u 8 bits; en 16 GB (RTX 4080, 4060 Ti 16 GB) solo con 4 bits y contexto reducido.
-- Opciones de despliegue: transformers, vLLM, TGI, llama.cpp y Ollama (estos dos ultimos requieren una conversion a GGUF que no se incluye en la informacion disponible), y Unsloth para fine-tuning. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: transformers, vLLM, TGI, llama.cpp y Ollama (estos dos ultimos requieren una conversion a GGUF que no se incluye en la informacion disponible), y Unsloth para fine-tuning. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| darturi/Llama-3.1-8B-Instruct-ES-template-b-harmful-gpt41-1 | ~8B (base; no confirmado) | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
-| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8,03B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente utilizado | Publicados por Meta en la model card |
-| Qwen2.5-7B-Instruct | 7,61B | 128.000 tokens (32.768 nativos) | Apache 2.0 | HuggingFace | Publicados por Alibaba |
-| Mistral-7B-Instruct-v0.3 | 7,25B | 32.000 tokens | Apache 2.0 | HuggingFace | Publicados por Mistral AI |
-| Gemma-2-9B-it | 9,24B | 8.192 tokens | Gemma Terms of Use | HuggingFace | Publicados por Google |
+| darturi/Llama-3.1-8B-Instruct-ES-template-b-harmful-gpt41-1 | ~8B (base; no confirmado) | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
+| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8,03B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente utilizado | Publicados por Meta en la model card |
+| Qwen2.5-7B-Instruct | 7,61B | 128.000 tokens (32.768 nativos) | Apache 2.0 | Hugging Face | Publicados por Alibaba |
+| Mistral-7B-Instruct-v0.3 | 7,25B | 32.000 tokens | Apache 2.0 | Hugging Face | Publicados por Mistral AI |
+| Gemma-2-9B-it | 9,24B | 8.192 tokens | Gemma Terms of Use | Hugging Face | Publicados por Google |
 
 Los datos de la primera fila proceden del repositorio analizado; los de las filas restantes corresponden a la documentacion publica de cada modelo base y se incluyen como referencia de categoria, no como medicion de este fine-tune. La comparativa de rendimiento no se puede establecer porque el modelo evaluado no publica ninguna metrica.
 
@@ -100,8 +100,8 @@ Los datos de la primera fila proceden del repositorio analizado; los de las fila
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-ES-template-b-harmful-gpt41-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-ES-template-b-harmful-gpt41-1
 - Referencia citada en los tags (Lacoste et al., 2019, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Modelo base de referencia (familia Llama 3.1 8B Instruct de Meta; enlace de contexto, no presente en la informacion del repositorio): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 
-Nota: la busqueda web asociada a este modelo no devolvio ningun resultado relevante (unicamente paginas de inicio de sesion de Facebook). Los unicos enlaces verificables son la pagina del repositorio en HuggingFace y la referencia de arXiv incluida en sus tags. No se dispone de paper, blog, demo ni repositorio de codigo del autor.
+Nota: la busqueda web asociada a este modelo no devolvio ningun resultado relevante (unicamente paginas de inicio de sesion de Facebook). Los unicos enlaces verificables son la pagina del repositorio en Hugging Face y la referencia de arXiv incluida en sus tags. No se dispone de paper, blog, demo ni repositorio de codigo del autor.

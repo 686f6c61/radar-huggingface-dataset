@@ -74,9 +74,9 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral Large 4 NVFP4 (este) | 1T | 49B (52B con embeddings) | 1M | Mistral Ecosystem Open-Weight License | HuggingFace (nativ-community), vLLM, SGLang, llama.cpp |
-| Mistral Large 4 FP8 (modelo base) | 1T | 49B (52B con embeddings) | 1M | Mistral Ecosystem Open-Weight License | HuggingFace (mistralai), vLLM, SGLang |
-| Mistral Large 4 GGUFs (ggml-org) | 1T | 49B (52B con embeddings) | 1M | Mistral Ecosystem Open-Weight License | HuggingFace (ggml-org), llama.cpp |
+| Mistral Large 4 NVFP4 (este) | 1T | 49B (52B con embeddings) | 1M | Mistral Ecosystem Open-Weight License | Hugging Face (nativ-community), vLLM, SGLang, llama.cpp |
+| Mistral Large 4 FP8 (modelo base) | 1T | 49B (52B con embeddings) | 1M | Mistral Ecosystem Open-Weight License | Hugging Face (mistralai), vLLM, SGLang |
+| Mistral Large 4 GGUFs (ggml-org) | 1T | 49B (52B con embeddings) | 1M | Mistral Ecosystem Open-Weight License | Hugging Face (ggml-org), llama.cpp |
 
 No se dispone en la informacion proporcionada de datos de benchmarks numericos ni de especificaciones de modelos de otros fabricantes (por ejemplo, alternativas de escala frontera de otros laboratorios) que permitan una comparativa cuantitativa fiable. Por tanto, la comparativa se limita a las variantes del mismo modelo base.
 
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks numericos n
 
 ## Enlaces
 
-- Repositorio HuggingFace de este checkpoint: https://huggingface.co/nativ-community/Mistral-Large-4-1T-A52B-NVFP4
+- Repositorio Hugging Face de este checkpoint: https://huggingface.co/nativ-community/Mistral-Large-4-1T-A52B-NVFP4
 - Modelo base (Mistral Large 4 - Le Chonk): https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Checkpoint FP8 oficial: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4
 - Licencia: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4/blob/main/LICENSE

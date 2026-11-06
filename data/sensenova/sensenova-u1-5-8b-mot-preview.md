@@ -65,7 +65,7 @@ No disponible. No se han encontrado comparaciones con otros modelos en la inform
 
 ## Enlaces
 
-- [HuggingFace - SenseNova-U1.5-8B-MoT-Preview](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-Preview)
+- [Hugging Face - SenseNova-U1.5-8B-MoT-Preview](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-Preview)
 - [GitHub - OpenSenseNova/SenseNova-U1](https://github.com/OpenSenseNova/SenseNova-U1)
 - [arXiv - 2605.12500](https://arxiv.org/abs/2605.12500)
 - [Blog - NEO-unify](https://huggingface.co/blog/sensenova/neo-unify)

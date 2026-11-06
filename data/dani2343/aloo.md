@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aloo es un repositorio publicado en HuggingFace por el usuario Dani2343 bajo el identificador `Dani2343/Aloo`. En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado, no declara idiomas soportados y su model card se limita al bloque de metadatos de licencia (`license: apache-2.0`), sin ningun otro contenido descriptivo.
+Aloo es un repositorio publicado en Hugging Face por el usuario Dani2343 bajo el identificador `Dani2343/Aloo`. En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado, no declara idiomas soportados y su model card se limita al bloque de metadatos de licencia (`license: apache-2.0`), sin ningun otro contenido descriptivo.
 
 No hay informacion publica disponible sobre la arquitectura, el numero de parametros, la longitud de contexto, el proceso de entrenamiento ni los datos utilizados. Tampoco se han encontrado pesos, formatos de archivo, configuraciones de tokenizador ni documentacion tecnica adicional en el repositorio ni en los resultados de busqueda web facilitados.
 
@@ -31,7 +31,7 @@ No hay ficheros ni documentacion en los datos proporcionados que permitan inferi
 
 ## Capacidades
 
-No es posible confirmar ninguna capacidad concreta a partir de la informacion disponible. La model card no incluye listado de tareas, no declara soporte de tool calling, agentes, razonamiento multi-paso, vision, audio ni modo de razonamiento explicito, y el repositorio no especifica un pipeline en HuggingFace.
+No es posible confirmar ninguna capacidad concreta a partir de la informacion disponible. La model card no incluye listado de tareas, no declara soporte de tool calling, agentes, razonamiento multi-paso, vision, audio ni modo de razonamiento explicito, y el repositorio no especifica un pipeline en Hugging Face.
 
 - Generacion de texto: no confirmada.
 - Razonamiento, codigo o matematicas: no confirmado.
@@ -85,6 +85,6 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dani2343/Aloo
+- Repositorio en Hugging Face: https://huggingface.co/Dani2343/Aloo
 
 Nota sobre los resultados de busqueda web: las URL devueltas (`ingerop.fr`, `fr.wikipedia.org/wiki/Ingérop`, `agence-api.ouest-france.fr`, `carrieres.ingerop.com`) corresponden al grupo de ingenieria frances Ingérop y no guardan relacion con el modelo `Dani2343/Aloo`. No se han encontrado enlaces relevantes (paper, blog, repositorio de codigo o demo) asociados a este modelo.

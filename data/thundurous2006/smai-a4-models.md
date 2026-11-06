@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Thundurous2006/smai-a4-models` es un repositorio publicado en HuggingFace por el usuario Thundurous2006 bajo licencia MIT. A fecha de la informacion disponible, el repositorio tiene un tamano de 0.0 GB, no registra descargas ni likes, y su model card contiene unicamente la declaracion de licencia, sin ninguna descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. No se trata, por tanto, de una ficha de modelo convencional, sino de un contenedor practicamente vacio o de un placeholder.
+`Thundurous2006/smai-a4-models` es un repositorio publicado en Hugging Face por el usuario Thundurous2006 bajo licencia MIT. A fecha de la informacion disponible, el repositorio tiene un tamano de 0.0 GB, no registra descargas ni likes, y su model card contiene unicamente la declaracion de licencia, sin ninguna descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. No se trata, por tanto, de una ficha de modelo convencional, sino de un contenedor practicamente vacio o de un placeholder.
 
-No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos. El pipeline declarado en HuggingFace no esta disponible y el repositorio no incluye pesos visibles segun los metadatos (0.0 GB). Cualquier evaluacion tecnica del modelo es, con estos datos, imposible.
+No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos. El pipeline declarado en Hugging Face no esta disponible y el repositorio no incluye pesos visibles segun los metadatos (0.0 GB). Cualquier evaluacion tecnica del modelo es, con estos datos, imposible.
 
 La relevancia de esta ficha es, por tanto, metodologica: sirve para documentar un caso de repositorio sin contenido tecnico verificable y para advertir a desarrolladores e investigadores de que no debe utilizarse en produccion ni como base de evaluacion hasta que el autor publique informacion sustancial. Se recomienda precaucion ante repositorios con licencia permisiva pero sin artefactos ni documentacion.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 
 ## Casos de uso
 
-- Evaluacion de repositorios placeholder: el caso de uso realista es documentar y monitorizar repositorios de HuggingFace sin artefactos, para evitar que pipelines automaticos los ingieran por error. Es adecuado porque los metadatos (0.0 GB, 0 descargas, sin pipeline) permiten detectar el caso rapidamente.
+- Evaluacion de repositorios placeholder: el caso de uso realista es documentar y monitorizar repositorios de Hugging Face sin artefactos, para evitar que pipelines automaticos los ingieran por error. Es adecuado porque los metadatos (0.0 GB, 0 descargas, sin pipeline) permiten detectar el caso rapidamente.
 - Auditoria de licencias en catalogos internos: dado que declara MIT pero no contiene pesos, sirve como ejemplo de por que la licencia por si sola no basta para aprobar un modelo en un registro corporativo.
 - Formacion en buenas practicas de model cards: puede usarse como caso negativo en talleres sobre documentacion de modelos, contrastandolo con fichas que si incluyen arquitectura, datos y benchmarks.
 - Pruebas de robustez de scrapers y agregadores de modelos: util para validar que un sistema de catalogacion maneja correctamente repositorios con campos vacios y tamano cero sin romperse.
@@ -80,5 +80,5 @@ No disponible. No hay informacion suficiente sobre este repositorio (parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thundurous2006/smai-a4-models
+- Repositorio en Hugging Face: https://huggingface.co/Thundurous2006/smai-a4-models
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

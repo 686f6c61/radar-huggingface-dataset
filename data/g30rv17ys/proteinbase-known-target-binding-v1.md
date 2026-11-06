@@ -99,9 +99,9 @@ Otras cifras publicadas:
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ProteinBase known-target binding v1 (este) | TabICLv2, clasificación tabular condicionada a diana | no disponible | tablas *in-context* de 2.928 filas; 98 campos | Log loss 0,502920; AUROC por diana 0,721377 (17 dianas) | mixta MIT/BSD-3/ODC-BY | HuggingFace, offline |
+| ProteinBase known-target binding v1 (este) | TabICLv2, clasificación tabular condicionada a diana | no disponible | tablas *in-context* de 2.928 filas; 98 campos | Log loss 0,502920; AUROC por diana 0,721377 (17 dianas) | mixta MIT/BSD-3/ODC-BY | Hugging Face, offline |
 | Prior/disponibilidad fijo (baseline del propio autor) | Baseline estadístico | no aplica | no aplica | Log loss 0,584878; AUROC 0,497405 | no disponible | incluido como referencia |
-| TabICL base (`jingang/TabICL`, rev. `4dcd344e…`) | Transformer de *in-context learning* tabular general | no disponible | no disponible | no disponible para esta tarea | no disponible | HuggingFace |
+| TabICL base (`jingang/TabICL`, rev. `4dcd344e…`) | Transformer de *in-context learning* tabular general | no disponible | no disponible | no disponible para esta tarea | no disponible | Hugging Face |
 | Candidato TabICL con ajuste fino por gradiente | TabICL ajustado | no disponible | no disponible | ejecutado pero no seleccionado; cifras no publicadas | no disponible | no liberado |
 
 No se dispone de comparación con otros clasificadores de unión proteína-constructo en la información proporcionada.
@@ -123,7 +123,7 @@ No se dispone de comparación con otros clasificadores de unión proteína-const
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g30rv17ys/proteinbase-known-target-binding-v1
+- Modelo en Hugging Face: https://huggingface.co/g30rv17ys/proteinbase-known-target-binding-v1
 - Licencias: https://huggingface.co/g30rv17ys/proteinbase-known-target-binding-v1/blob/main/LICENSES.md
 - Manifiesto del modelo: `model_manifest.json` en el repositorio
 - Registro de ejecuciones del algoritmo: `algorithm_run_ledger.json` en el repositorio

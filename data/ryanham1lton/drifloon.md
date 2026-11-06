@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Drifloon es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador Ryanham1lton/Drifloon. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia cc-by-4.0, sin descripcion del modelo, sin pipeline declarado, sin idiomas soportados y sin resultados de evaluacion. No se ha publicado documentacion tecnica adicional, paper ni repositorio de codigo asociado.
+Drifloon es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador Ryanham1lton/Drifloon. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia cc-by-4.0, sin descripcion del modelo, sin pipeline declarado, sin idiomas soportados y sin resultados de evaluacion. No se ha publicado documentacion tecnica adicional, paper ni repositorio de codigo asociado.
 
 El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano (posiblemente en el rango de decenas de millones de parametros si los pesos estan en precision completa, o mayor si estan cuantizados), aunque esta inferencia no puede confirmarse sin acceso a los archivos de configuracion del repositorio. No hay informacion sobre arquitectura, datos de entrenamiento ni proceso de alineacion.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ryanham1lton/Drifloon | no disponible | no disponible | cc-by-4.0 | HuggingFace |
+| Ryanham1lton/Drifloon | no disponible | no disponible | cc-by-4.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Drifloon
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Drifloon
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por la busqueda corresponden a servicios no relacionados (Messenger y Facebook) y no aportan informacion sobre el modelo.

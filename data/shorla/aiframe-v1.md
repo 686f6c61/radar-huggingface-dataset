@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shorla/aiframe-v1 es un checkpoint publicado en HuggingFace por el usuario Shorla. La unica informacion verificable que acompana al repositorio son sus etiquetas: `onnx`, `deberta-v2` y `region:us`. El repositorio ocupa 0,1 GB, acumula 17 descargas y 0 likes desde su creacion el 4 de octubre de 2026. No se ha publicado model card, ficha de licencia, lista de idiomas ni pipeline asociado.
+Shorla/aiframe-v1 es un checkpoint publicado en Hugging Face por el usuario Shorla. La unica informacion verificable que acompana al repositorio son sus etiquetas: `onnx`, `deberta-v2` y `region:us`. El repositorio ocupa 0,1 GB, acumula 17 descargas y 0 likes desde su creacion el 4 de octubre de 2026. No se ha publicado model card, ficha de licencia, lista de idiomas ni pipeline asociado.
 
 Por la etiqueta `deberta-v2`, el modelo pertenece a la familia de encoders transformer DeBERTa V2 (Decoding-enhanced BERT with disentangled attention), desarrollada originalmente por Microsoft Research. Se trata, por tanto, de un modelo de representacion y comprension de lenguaje (encoder bidireccional), no de un modelo generativo autoregresivo, y su distribucion en formato ONNX apunta a inferencia optimizada en CPU o en entornos de produccion sin dependencia de PyTorch.
 
@@ -76,10 +76,10 @@ La comparacion se establece contra alternativas de la misma familia y rango, dad
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shorla/aiframe-v1 | No disponible (repo de 0,1 GB) | No disponible | ONNX | No disponible | HuggingFace, 17 descargas |
-| microsoft/deberta-v2-base | ~86 M | 512 tokens | PyTorch / safetensors | MIT | HuggingFace |
-| microsoft/deberta-v2-xlarge | ~900 M | 512 tokens | PyTorch | MIT | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22 M | 256 tokens | PyTorch / ONNX | Apache 2.0 | HuggingFace |
+| Shorla/aiframe-v1 | No disponible (repo de 0,1 GB) | No disponible | ONNX | No disponible | Hugging Face, 17 descargas |
+| microsoft/deberta-v2-base | ~86 M | 512 tokens | PyTorch / safetensors | MIT | Hugging Face |
+| microsoft/deberta-v2-xlarge | ~900 M | 512 tokens | PyTorch | MIT | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22 M | 256 tokens | PyTorch / ONNX | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre aiframe-v1 y estas alternativas, por lo que cualquier eleccion entre ellas deberia basarse en una evaluacion propia sobre el dominio objetivo.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparado entre aiframe-v1 y estas alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shorla/aiframe-v1
+- Hugging Face: https://huggingface.co/Shorla/aiframe-v1
 - Busqueda web: sin resultados relevantes. Los unicos enlaces devueltos fueron https://games.mopoga.com/, https://mopoga.com/faq, https://mopoga.com/contact, https://imopoga.com/ y https://games.mopoga.com/blog/, todos ellos portales de juegos en navegador sin relacion con el modelo.
 - Paper de referencia de la arquitectura (DeBERTa V2, Microsoft Research): no disponible en los resultados de busqueda proporcionados.
 - Repositorio de codigo, demo o blog del autor: no disponible.

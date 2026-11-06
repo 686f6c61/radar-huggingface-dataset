@@ -82,10 +82,10 @@ Velocidad, una decisión a la vez, en fp32 sobre CPU Apple M2 Pro: 70 ms para un
 
 | Modelo | Parametros | Contexto | Enrutado (MASSIVE he-IL) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yoavipo/nativ-he-decision | 364M | 1.024 tokens | 0,969 | CC BY 4.0 | HuggingFace |
+| yoavipo/nativ-he-decision | 364M | 1.024 tokens | 0,969 | CC BY 4.0 | Hugging Face |
 | Laya-Hebrew | no disponible | no disponible | 0,887 | no disponible | no disponible |
-| DictaLM-3.0-1.7B-Instruct (profesor) | 1,7B | no disponible | 0,959 | Apache-2.0 | HuggingFace |
-| dicta-il/neodictabert (base) | 364M | no disponible | no disponible (no es un modelo de decision) | CC BY 4.0 | HuggingFace |
+| DictaLM-3.0-1.7B-Instruct (profesor) | 1,7B | no disponible | 0,959 | Apache-2.0 | Hugging Face |
+| dicta-il/neodictabert (base) | 364M | no disponible | no disponible (no es un modelo de decision) | CC BY 4.0 | Hugging Face |
 
 Nativ ofrece una precisión comparable o superior a la de su profesor de 1,7B en enrutado y sentimiento, con un coste de inferencia muy inferior (70 ms frente a 611 ms en mensaje corto), a cambio de perder flexibilidad generativa y quedar limitado al hebreo y a tareas de elección entre opciones.
 
@@ -104,7 +104,7 @@ Nativ ofrece una precisión comparable o superior a la de su profesor de 1,7B en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoavipo/nativ-he-decision
+- Modelo en Hugging Face: https://huggingface.co/yoavipo/nativ-he-decision
 - Modelo base: https://huggingface.co/dicta-il/neodictabert
 - Profesor de destilacion: https://huggingface.co/dicta-il/DictaLM-3.0-1.7B-Instruct
 - Modelo generador de datos: https://huggingface.co/dicta-il/DictaLM-3.0-24B-Thinking

@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - adimunot/diffusion-from-scratch](https://huggingface.co/adimunot/diffusion-from-scratch)
+- [Hugging Face - adimunot/diffusion-from-scratch](https://huggingface.co/adimunot/diffusion-from-scratch)
 - [GitHub - adimunot21/diffusion-from-scratch](https://github.com/adimunot21/diffusion-from-scratch)
 - [Curso de Diffusion Models de Hugging Face (contexto general)](https://huggingface.co/learn/diffusion-course/en/unit1/3)

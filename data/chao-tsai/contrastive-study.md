@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chao-TSAI/contrastive-study` es un repositorio de investigacion publicado en HuggingFace por el usuario chao-TSAI que contiene un prototipo de arquitectura del tipo Albef orientado a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: el propio autor indica en la model card que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks. El repositorio ocupa 0,0 GB, no tiene descargas ni likes y no declara pipeline de inferencia.
+`chao-TSAI/contrastive-study` es un repositorio de investigacion publicado en Hugging Face por el usuario chao-TSAI que contiene un prototipo de arquitectura del tipo Albef orientado a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: el propio autor indica en la model card que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks. El repositorio ocupa 0,0 GB, no tiene descargas ni likes y no declara pipeline de inferencia.
 
 La relevancia de esta ficha es fundamentalmente metodologica: sirve como ejemplo de publicacion precaucionada, en la que el autor documenta explicitamente que no reclama ninguna puntuacion de benchmark y que cualesquiera resultados futuros deben documentarse por separado de los valores por defecto aqui incluidos. Para un desarrollador o investigador, el artefacto util es el codigo (`train.py`) y la receta de configuracion (`config.json`, `training_args.json`), no los pesos.
 
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chao-TSAI/contrastive-study | 24.832 | no disponible | sin benchmark declarado | Apache 2.0 | HuggingFace, repo de 0,0 GB |
+| chao-TSAI/contrastive-study | 24.832 | no disponible | sin benchmark declarado | Apache 2.0 | Hugging Face, repo de 0,0 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,5 +90,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chao-TSAI/contrastive-study
+- Modelo en Hugging Face: https://huggingface.co/chao-TSAI/contrastive-study
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos por la busqueda no guardan relacion con este repositorio y se han descartado.

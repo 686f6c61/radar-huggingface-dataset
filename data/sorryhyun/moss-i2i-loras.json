@@ -20,9 +20,9 @@
     "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
     "region:us"
   ],
-  "likes": 34,
+  "likes": 36,
   "downloads_30d": 0,
-  "trending_score": 11,
+  "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 1491835524,

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ccostaalessandro/coca-finetuned` es un prototipo de investigacion publicado en HuggingFace por el usuario ccostaalessandro bajo el identificador "Coca for Contrastive". Se trata de una implementacion propia orientada al aprendizaje contrastivo, distribuida en escala "nano" con configuracion de atencion estandar, fusion de tipo Tucker, activacion gelu-tanh y normalizacion GroupNorm. El repositorio incluye el codigo del modelo (`model.py`), la configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint en formato safetensors que, segun la propia model card, es un punto de partida para pruebas de humo y no un modelo entrenado.
+`ccostaalessandro/coca-finetuned` es un prototipo de investigacion publicado en Hugging Face por el usuario ccostaalessandro bajo el identificador "Coca for Contrastive". Se trata de una implementacion propia orientada al aprendizaje contrastivo, distribuida en escala "nano" con configuracion de atencion estandar, fusion de tipo Tucker, activacion gelu-tanh y normalizacion GroupNorm. El repositorio incluye el codigo del modelo (`model.py`), la configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint en formato safetensors que, segun la propia model card, es un punto de partida para pruebas de humo y no un modelo entrenado.
 
 El dato mas relevante para evaluarlo es su tamano: 24.832 parametros totales, un orden de magnitud propio de un ejercicio de prototipado y no de un modelo utilizable en tareas reales. El repositorio ocupa 0,0 GB, acumula 0 descargas y 0 likes, y fue publicado el 14 de septiembre de 2026. La model card declara explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint de inicializacion no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
-Su relevancia actual es, por tanto, limitada y acotada al ambito de la experimentacion: sirve como esqueleto reproducible para probar arquitecturas contrastivas, validar formatos de ficheros y montar pipelines de evaluacion, no como modelo de produccion. No se dispone de informacion sobre longitud de contexto, idiomas soportados, tipos de cuantizacion ni tarea declarada en el pipeline de HuggingFace.
+Su relevancia actual es, por tanto, limitada y acotada al ambito de la experimentacion: sirve como esqueleto reproducible para probar arquitecturas contrastivas, validar formatos de ficheros y montar pipelines de evaluacion, no como modelo de produccion. No se dispone de informacion sobre longitud de contexto, idiomas soportados, tipos de cuantizacion ni tarea declarada en el pipeline de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Su relevancia actual es, por tanto, limitada y acotada al ambito de la experimen
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura denominada "Coca" con atencion estandar, mecanismo de fusion Tucker, activacion gelu-tanh y normalizacion GroupNorm, en una escala "nano". Se trata de una implementacion personalizada contenida en `model.py`, por lo que las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder utilizarla. El repositorio incluye ademas `config.json`, que registra los ajustes de arquitectura generados, y `training_args.json`, que recoge la receta de experimento por defecto.
+La model card describe una arquitectura denominada "Coca" con atencion estandar, mecanismo de fusion Tucker, activacion gelu-tanh y normalizacion GroupNorm, en una escala "nano". Se trata de una implementacion personalizada contenida en `model.py`, por lo que las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder utilizarla. El repositorio incluye ademas `config.json`, que registra los ajustes de arquitectura generados, y `training_args.json`, que recoge la receta de experimento por defecto.
 
 No se documenta el volumen de datos de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. La receta por defecto especifica el optimizador Adam con un schedule de tipo exponencial, pero la propia model card advierte que son valores de partida del script y no evidencia de una ejecucion completada. El checkpoint incluido se presenta explicitamente como inicializacion valida para pruebas de humo, no como un modelo entrenado con resultados verificados. No hay informacion sobre innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, decodificacion por mezcla de expertos, etc.).
 
@@ -46,7 +46,7 @@ No se documenta el volumen de datos de entrenamiento, la composicion del dataset
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de inicializacion permite comprobar que un bucle de entrenamiento arranca, guarda y recarga pesos en formato safetensors sin errores, antes de invertir computo en un entrenamiento real.
 - Prototipado de arquitecturas contrastivas: sirve como esqueleto de partida para experimentar con variantes de atencion, fusion Tucker y normalizacion GroupNorm en un modelo de escala minima.
 - Validacion de integracion continua (CI): al ocupar 0,0 GB y tener 24.832 parametros, puede incluirse en tests automatizados que verifiquen cambios en el codigo del modelo sin coste apreciable de tiempo ni de GPU.
-- Docencia e investigacion exploratoria: util como ejemplo didactico de implementacion propia de un modelo contrastivo y de su empaquetado en HuggingFace (config, training args, safetensors).
+- Docencia e investigacion exploratoria: util como ejemplo didactico de implementacion propia de un modelo contrastivo y de su empaquetado en Hugging Face (config, training args, safetensors).
 - Desarrollo de arneses de evaluacion: permite construir y depurar el codigo de evaluacion (conjuntos de validacion especificos de tarea, al menos tres semillas, linea base de capacidad equivalente) que despues se aplicara a checkpoints entrenados.
 - Comparativas de referencia entre implementaciones: puede actuar como linea base de minima capacidad para medir sobrecoste de infraestructura y comprobar que el resto de la cadena experimental funciona de extremo a extremo.
 - No se recomienda su uso en atencion al cliente, generacion de codigo, analisis documental ni ninguna tarea de produccion, porque no dispone de entrenamiento ni de evaluacion publicada.
@@ -71,7 +71,7 @@ No hay modelos directamente comparables documentados en la informacion proporcio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ccostaalessandro/coca-finetuned` | 24.832 | no disponible | no se reclama ninguna puntuacion | BSD-3-Clause | HuggingFace, 0 descargas |
+| `ccostaalessandro/coca-finetuned` | 24.832 | no disponible | no se reclama ninguna puntuacion | BSD-3-Clause | Hugging Face, 0 descargas |
 | CoCa (Google Research) | aprox. 2,1 mil millones en su configuracion publicada | no disponible en esta ficha | resultados publicados en su paper original, no reproducidos aqui | no disponible en la informacion proporcionada | publicacion y codigo de investigacion |
 | CLIP ViT-B/32 (OpenAI) | aprox. 151 millones | 77 tokens de texto en la configuracion original | resultados publicados en su paper original, no reproducidos aqui | no disponible en la informacion proporcionada | ampliamente distribuido |
 
@@ -84,12 +84,12 @@ La comparacion es solo orientativa por escala y familia: el repositorio analizad
 - Riesgo de alucinacion: no evaluable, ya que no se documenta comportamiento generativo alguno.
 - No se especifican limitaciones de contexto ni de idioma porque no hay datos de contexto ni lista de idiomas.
 - La licencia BSD-3-Clause permite uso comercial del codigo, pero la propia model card advierte de que deben revisarse por separado los terminos de las fuentes de datos externas si se utiliza con datasets de terceros.
-- Es una implementacion personalizada: las APIs automaticas de carga de HuggingFace (por ejemplo, `AutoModel`) necesitan un adaptador explicito, y no es compatible de serie con servidores de inferencia habituales.
+- Es una implementacion personalizada: las APIs automaticas de carga de Hugging Face (por ejemplo, `AutoModel`) necesitan un adaptador explicito, y no es compatible de serie con servidores de inferencia habituales.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto que se distribuyen en este repositorio.
 - En el momento de la consulta el repositorio no tiene descargas ni likes, por lo que no existe validacion independiente por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ccostaalessandro/coca-finetuned
+- Modelo en Hugging Face: https://huggingface.co/ccostaalessandro/coca-finetuned
 - Archivos del repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestana "Files" de la pagina del modelo)
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a sitios de comparacion de vuelos y no guardan relacion con este repositorio. No hay papers, blogs, repositorios de codigo ni demos adicionales disponibles.

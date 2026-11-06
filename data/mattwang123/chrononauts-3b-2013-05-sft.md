@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B (2013-05 SFT) | 2,8B | 8.192 | Agente de busqueda con corte temporal | other | HuggingFace |
-| Qwen2.5-3B-Instruct | 3,1B | 32.768 | Instruccion general | Apache 2.0 | HuggingFace |
-| Llama 3.2-3B-Instruct | 3,2B | 128.000 | Instruccion general | Llama 3.2 Community | HuggingFace |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 | Instruccion general | MIT | HuggingFace |
+| Chrononauts 3B (2013-05 SFT) | 2,8B | 8.192 | Agente de busqueda con corte temporal | other | Hugging Face |
+| Qwen2.5-3B-Instruct | 3,1B | 32.768 | Instruccion general | Apache 2.0 | Hugging Face |
+| Llama 3.2-3B-Instruct | 3,2B | 128.000 | Instruccion general | Llama 3.2 Community | Hugging Face |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 | Instruccion general | MIT | Hugging Face |
 
 La comparacion directa es limitada: Chrononauts no es un modelo de instruccion general, sino un agente especializado en recuperacion con conocimiento temporalmente bloqueado. Los modelos de la tabla ofrecen ventanas de contexto mucho mayores y licencias mas permisivas, pero carecen de la garantia de no haber visto informacion posterior a una fecha. No se dispone de benchmarks comparativos publicados para cuantificar la diferencia de rendimiento.
 
@@ -89,7 +89,7 @@ La comparacion directa es limitada: Chrononauts no es un modelo de instruccion g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2013-05-sft
+- Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2013-05-sft
 - Repositorio hermano (init): https://huggingface.co/mattwang123/chrononauts-3b-2013-05-init
 - Repositorio hermano (agent): https://huggingface.co/mattwang123/chrononauts-3b-2013-05-agent
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

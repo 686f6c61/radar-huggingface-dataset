@@ -6,7 +6,7 @@ Evo 2 7B (vLLM) es un checkpoint del modelo de lenguaje de ADN Evo 2 desarrollad
 
 La relevancia de esta publicacion es practica: facilita el despliegue en produccion de un modelo genomico de 6.586 millones de parametros con una licencia permisiva (Apache 2.0) y un formato de pesos estandar (safetensors) compatible con el ecosistema de servidores de inferencia. El modelo base fue entrenado con contextos de hasta 1 millon de tokens, lo que permite procesar regiones genomicas extensas en una sola pasada, una capacidad poco habitual en modelos de lenguaje de dominio cientifico.
 
-Conviene subrayar que se trata de un modelo especializado en secuencias de ADN, no de un modelo conversacional de proposito general. No dispone de pipeline declarado en HuggingFace ni de idiomas naturales documentados, y su tokenizador opera sobre nucleotidos. Su valor reside en la biologia computacional, no en tareas de NLP clasicas.
+Conviene subrayar que se trata de un modelo especializado en secuencias de ADN, no de un modelo conversacional de proposito general. No dispone de pipeline declarado en Hugging Face ni de idiomas naturales documentados, y su tokenizador opera sobre nucleotidos. Su valor reside en la biologia computacional, no en tareas de NLP clasicas.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos checkpoints en la 
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/gbrixi/evo2_7b_vllm
+- Hugging Face (este checkpoint): https://huggingface.co/gbrixi/evo2_7b_vllm
 - Modelo base: https://huggingface.co/arcinstitute/evo2_7b
 - Checkpoint Evo 2 20B vLLM: https://huggingface.co/gbrixi/evo2_20b_vllm
 - Checkpoint Evo 2 7B base vLLM: https://huggingface.co/gbrixi/evo2_7b_base_vllm

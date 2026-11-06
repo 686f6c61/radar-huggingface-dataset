@@ -82,9 +82,9 @@ No hay modelos comparables de otros autores en la misma categoría (modelos de t
 
 ## Enlaces
 
-- [HuggingFace - AuriStream100M_40Pred_BigAudioDataset_500k-randinit](https://huggingface.co/TuKoResearch/AuriStream100M_40Pred_BigAudioDataset_500k-randinit)
-- [HuggingFace - AuriStream-base (código base)](https://huggingface.co/TuKoResearch/AuriStream-base)
-- [HuggingFace - WavCochCausalV8192 (tokenizador)](https://huggingface.co/TuKoResearch/WavCochCausalV8192)
-- [HuggingFace - AuriStream100M_20Pred_BigAudioDataset_500k](https://huggingface.co/TuKoResearch/AuriStream100M_20Pred_BigAudioDataset_500k)
-- [HuggingFace - AuriStream100M_60Pred_BigAudioDataset_500k-randinit](https://huggingface.co/TuKoResearch/AuriStream100M_60Pred_BigAudioDataset_500k-randinit)
+- [Hugging Face - AuriStream100M_40Pred_BigAudioDataset_500k-randinit](https://huggingface.co/TuKoResearch/AuriStream100M_40Pred_BigAudioDataset_500k-randinit)
+- [Hugging Face - AuriStream-base (código base)](https://huggingface.co/TuKoResearch/AuriStream-base)
+- [Hugging Face - WavCochCausalV8192 (tokenizador)](https://huggingface.co/TuKoResearch/WavCochCausalV8192)
+- [Hugging Face - AuriStream100M_20Pred_BigAudioDataset_500k](https://huggingface.co/TuKoResearch/AuriStream100M_20Pred_BigAudioDataset_500k)
+- [Hugging Face - AuriStream100M_60Pred_BigAudioDataset_500k-randinit](https://huggingface.co/TuKoResearch/AuriStream100M_60Pred_BigAudioDataset_500k-randinit)
 - [Free2AITools - ficha del modelo](https://free2aitools.com/model/tukoresearch/auristream100m_40pred_bigaudiodataset_500k-randinit)

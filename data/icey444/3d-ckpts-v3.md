@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Icey444/3d-ckpts-v3 es un fine-tuning de Qwen/Qwen2.5-VL-3B-Instruct orientado a razonamiento espacial y comprensión de escenas 3D, desarrollado por el usuario Icey444 y publicado en HuggingFace. El modelo parte de la arquitectura Qwen2.5-VL de 3B parámetros en su variante Instruct y se especializa mediante entrenamiento con GRPO (Group Relative Policy Optimization) sobre el framework verl, empleando el dataset ScanQA como referencia para tareas de question answering sobre entornos 3D escaneados.
+Icey444/3d-ckpts-v3 es un fine-tuning de Qwen/Qwen2.5-VL-3B-Instruct orientado a razonamiento espacial y comprensión de escenas 3D, desarrollado por el usuario Icey444 y publicado en Hugging Face. El modelo parte de la arquitectura Qwen2.5-VL de 3B parámetros en su variante Instruct y se especializa mediante entrenamiento con GRPO (Group Relative Policy Optimization) sobre el framework verl, empleando el dataset ScanQA como referencia para tareas de question answering sobre entornos 3D escaneados.
 
 La relevancia del modelo radica en su enfoque: aplicar aprendizaje por refuerzo con verificación (RLVR) a un modelo visión-lenguaje compacto para mejorar el razonamiento espacial en contextos embodied, un área donde los modelos generalistas suelen fallar al requerir comprensión de relaciones tridimensionales, posiciones relativas y navegación. El repositorio está etiquetado con "embodied", "spatial-reasoning" y "3d", lo que indica su orientación a agentes que operan en entornos físicos o simulados.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Icey444/3d-ckpts-v3 | 3B | No disponible | Razonamiento espacial 3D (GRPO + ScanQA) | Apache 2.0 | Gated en HuggingFace |
+| Icey444/3d-ckpts-v3 | 3B | No disponible | Razonamiento espacial 3D (GRPO + ScanQA) | Apache 2.0 | Gated en Hugging Face |
 | Qwen/Qwen2.5-VL-3B-Instruct | 3B | 32K (modelo base) | Visión-lenguaje generalista | Apache 2.0 | Público |
 | LLaVA-1.5-7B | 7B | 4K | Visión-lenguaje generalista | Apache 2.0 (con restricciones) | Público |
 | SpatialVLM | 3B-7B | No disponible | Razonamiento espacial 2D/3D | No disponible | Público (investigación) |
@@ -73,7 +73,7 @@ La comparativa con SpatialVLM es la más directa por su enfoque en razonamiento 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede retrasar su uso en producción.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede retrasar su uso en producción.
 - Ausencia de benchmarks: no hay métricas publicadas que permitan evaluar su rendimiento real frente al modelo base o alternativas.
 - Tamaño del repositorio: 390,2 GB sugiere múltiples checkpoints; sin documentación sobre cuál es el final, el riesgo de usar un checkpoint intermedio es alto.
 - Especialización estrecha: el fine-tuning sobre ScanQA puede degradar capacidades generales del modelo base (olvido catastrófico), especialmente en tareas de visión 2D no relacionadas con escenas 3D.
@@ -84,7 +84,7 @@ La comparativa con SpatialVLM es la más directa por su enfoque en razonamiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Icey444/3d-ckpts-v3
+- Hugging Face: https://huggingface.co/Icey444/3d-ckpts-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Framework verl: https://github.com/volcengine/verl
 - Dataset ScanQA: https://github.com/atr-dbi/ScanQA

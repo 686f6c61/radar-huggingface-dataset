@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Requisitos de hardware
 
-No se proporcionan requisitos específicos de hardware. Dado que el adaptador debe cargarse sobre el modelo base `openai/gpt-oss-20b`, los requisitos dependerán de ese modelo. `gpt-oss-20b` es un modelo de aproximadamente 20 mil millones de parámetros, por lo que se estima que la inferencia requerirá al menos 40 GB de VRAM en precisión FP16, o alrededor de 20 GB con cuantización de 4 bits. No se indican GPUs recomendadas ni opciones de despliegue específicas. El adaptador puede cargarse con la librería `peft` de HuggingFace Transformers, y el modelo base puede servirse con frameworks como vLLM o TGI, pero no hay confirmación oficial.
+No se proporcionan requisitos específicos de hardware. Dado que el adaptador debe cargarse sobre el modelo base `openai/gpt-oss-20b`, los requisitos dependerán de ese modelo. `gpt-oss-20b` es un modelo de aproximadamente 20 mil millones de parámetros, por lo que se estima que la inferencia requerirá al menos 40 GB de VRAM en precisión FP16, o alrededor de 20 GB con cuantización de 4 bits. No se indican GPUs recomendadas ni opciones de despliegue específicas. El adaptador puede cargarse con la librería `peft` de Hugging Face Transformers, y el modelo base puede servirse con frameworks como vLLM o TGI, pero no hay confirmación oficial.
 
 ## Comparativa con modelos similares
 
@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_llama-3.1-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_llama-3.1-8b_seed42
 - Framework Tinker (mencionado en la model card): https://thinkingmachines.ai/tinker/
 - Adaptador complementario (mismo estudio): https://huggingface.co/dementor-research/sft_writingprompts_llama-3.1-8b_as_gpt-oss-20b_seed42

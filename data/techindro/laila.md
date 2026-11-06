@@ -6,7 +6,7 @@ Laila es un adaptador LoRA sobre Whisper-Small desarrollado por el usuario techi
 
 El problema que aborda es concreto: los modelos ASR globales están entrenados mayoritariamente con inglés occidental (Whisper se entrenó con 680 000 horas, según la model card), lo que provoca más errores en fonética, ritmo y acentuación del inglés indio, y fallos sistemáticos cuando el hablante mezcla hindi y inglés en la misma frase. La propuesta es una adaptación parametro-eficiente con una convención de transcripción explícita (devanagari para hindi, alfabeto latino para inglés) y aumento de ruido durante el entrenamiento.
 
-La relevancia del proyecto es, hoy, la de una propuesta metodológica más que la de un modelo listo para producción: la model card no publica cifras de WER (aparecen como "TBD"), el repositorio no tiene descargas ni valoraciones en HuggingFace y la información técnica disponible es parcial. Se desconoce el dataset de entrenamiento, el número de pasos y los resultados de evaluación.
+La relevancia del proyecto es, hoy, la de una propuesta metodológica más que la de un modelo listo para producción: la model card no publica cifras de WER (aparecen como "TBD"), el repositorio no tiene descargas ni valoraciones en Hugging Face y la información técnica disponible es parcial. Se desconoce el dataset de entrenamiento, el número de pasos y los resultados de evaluación.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia del proyecto es, hoy, la de una propuesta metodológica más que l
 | Longitud de contexto | 30 segundos de audio por fragmento (ventana de Whisper, segun la model card); contexto de texto no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | Hindi (transcripcion en devanagari), ingles con acento indio, hinglish (code-switched). El autor anuncia una suite de 22 idiomas indios como "coming soon" |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card muestra una insignia MIT asociada al repositorio de GitHub |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card muestra una insignia MIT asociada al repositorio de GitHub |
 | Formato de pesos | no disponible (se describe como adaptador LoRA/PEFT de pocos MB, con los pesos base de Whisper-Small congelados) |
 
 ## Arquitectura y entrenamiento
@@ -45,7 +45,7 @@ El dato más relevante desde el punto de vista de ingeniería es el coste: el au
 - Transcripción de reuniones técnicas distribuidas: equipos en India que mezclan terminología técnica en inglés con hindi coloquial pueden obtener actas en una convención de escritura fija (devanagari y latino) definida de antemano.
 - Generación de corpus y anotación asistida para investigación lingüística: el adaptador sirve como preanotador de audio code-switched, con revisión humana posterior, en estudios de fonética o de alternancia de lenguas.
 - Dictado de notas clínicas o de campo: escenarios con ruido de fondo donde el aumento de ruido del entrenamiento busca reducir el impacto ambiental, aunque la falta de métricas publicadas obliga a validar con datos propios antes de cualquier uso real.
-- Despliegue en infraestructura limitada: al mantener congelados los 244 M de pesos y publicar solo unos pocos MB de adaptador, es viable servir varias variantes lingüísticas sobre una misma GPU modesta o incluso en espacios gratuitos de HuggingFace, como demuestran las demos del autor.
+- Despliegue en infraestructura limitada: al mantener congelados los 244 M de pesos y publicar solo unos pocos MB de adaptador, es viable servir varias variantes lingüísticas sobre una misma GPU modesta o incluso en espacios gratuitos de Hugging Face, como demuestran las demos del autor.
 - Experimentación académica en PEFT aplicado a ASR: sirve como referencia reproducible de bajo coste para comparar LoRA frente a fine-tuning completo en lenguas de bajos recursos.
 
 ## Benchmarks y rendimiento
@@ -68,14 +68,14 @@ La model card incluye una tabla de resultados clave en la que las métricas de W
 - VRAM estimada para inferencia: no disponible de forma oficial. Por el tamano del backbone (244 M de parametros), una estimacion razonable en fp16 con los adaptadores cargados es del orden de 1-3 GB incluyendo activaciones y buffers de audio, pero es una estimacion, no un dato publicado.
 - GPU recomendadas: el autor solo documenta una T4 de 16 GB para entrenamiento. Para inferencia, cualquier GPU consumer con 4 GB o mas de VRAM deberia ser suficiente a nivel de memoria, si bien no hay cifras de latencia ni de throughput publicadas.
 - Cabe en GPU consumer: si, previsiblemente en tarjetas tipo RTX 3060, RTX 4060, RTX 4090 o equivalentes; tambien en CPU para lotes pequenos, aunque sin datos de rendimiento.
-- Opciones de despliegue: Transformers junto con PEFT (necesario para cargar el adaptador LoRA); las demos oficiales corren en HuggingFace Spaces. Para whisper.cpp o llama.cpp habria que fusionar previamente el adaptador con los pesos base, operacion que no esta documentada en la model card.
+- Opciones de despliegue: Transformers junto con PEFT (necesario para cargar el adaptador LoRA); las demos oficiales corren en Hugging Face Spaces. Para whisper.cpp o llama.cpp habria que fusionar previamente el adaptador con los pesos base, operacion que no esta documentada en la model card.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laila | 244 M base + 3,5 M LoRA | 30 s por fragmento | Hindi, ingles indio, hinglish | no disponible (insignia MIT en el repo) | Adaptador en HuggingFace, 0 descargas, 0 likes |
+| Laila | 244 M base + 3,5 M LoRA | 30 s por fragmento | Hindi, ingles indio, hinglish | no disponible (insignia MIT en el repo) | Adaptador en Hugging Face, 0 descargas, 0 likes |
 | Whisper-Small (OpenAI) | 244 M | 30 s por fragmento | ~99 idiomas, con soporte parcial de hindi | MIT | Ampliamente disponible y desplegado |
 | Whisper-Large-v3 (OpenAI) | 1550 M | 30 s por fragmento | ~99 idiomas | MIT | Ampliamente disponible; requiere mas VRAM |
 | Fine-tunes completos de Whisper para hindi (terceros) | 244 M o 1550 M | 30 s por fragmento | Hindi o hinglish segun el caso | variable segun autor | no disponible de forma agregada; existen multiples variantes comunitarias |
@@ -86,7 +86,7 @@ La comparativa debe leerse con cautela: no hay ningun resultado de WER publicado
 
 - No hay metricas de calidad publicadas: los WER de hindi, ingles indio y hinglish figuran como "TBD" en la propia model card, por lo que no existe evidencia de que el adaptador mejore a Whisper-Small zero-shot.
 - El repositorio no tiene descargas ni valoraciones (0 descargas, 0 likes a fecha de la informacion disponible), lo que implica ausencia de validacion independiente.
-- La licencia no esta declarada en los metadatos de HuggingFace; la insignia MIT de la model card corresponde al repositorio de GitHub y no necesariamente al artefacto publicado. Antes de un uso comercial debe confirmarse con el autor.
+- La licencia no esta declarada en los metadatos de Hugging Face; la insignia MIT de la model card corresponde al repositorio de GitHub y no necesariamente al artefacto publicado. Antes de un uso comercial debe confirmarse con el autor.
 - Ambiguedad de escritura: la convencion devanagari/latino es una decision del autor, no un estandar aceptado; los resultados pueden no ser comparables con sistemas que transcriben hindi en alfabeto latino.
 - El modelo solo procesa fragmentos de 30 segundos, con el corte asociado en fronteras de frase; no se documenta soporte de streaming ni de diarizacion de hablantes.
 - Riesgo de alucinacion tipico de la familia Whisper en silencios, musica o ruido intenso: puede generar texto plausible donde no hay habla. El aumento de ruido del entrenamiento no garantiza que esto se mitigue.
@@ -97,7 +97,7 @@ La comparativa debe leerse con cautela: no hay ningun resultado de WER publicado
 
 ## Enlaces
 
-- Modelo en HuggingFace: [techindro/Laila](https://huggingface.co/techindro/Laila)
+- Modelo en Hugging Face: [techindro/Laila](https://huggingface.co/techindro/Laila)
 - Repositorio GitHub: [github.com/techindro/Laila](https://github.com/techindro/Laila)
 - Demo ASR hindi: [huggingface.co/spaces/techindro/Laila-Demo](https://huggingface.co/spaces/techindro/Laila-Demo)
 - Demo ASR hinglish: [huggingface.co/spaces/techindro/Laila-Hinglish](https://huggingface.co/spaces/techindro/Laila-Hinglish)

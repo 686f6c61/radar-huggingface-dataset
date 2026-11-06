@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Valesca-AI-Twin-v2 es un adaptador LoRA de tipo text-to-image publicado por el usuario CuteDevil666 en HuggingFace. Se trata de un ajuste fino ligero sobre el modelo base Krea-2-Raw (identificado en la model card como `krea/Krea-2-Raw`), orientado a la generacion de imagenes de un sujeto concreto mediante la palabra de activacion `valesca_id`. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
+Valesca-AI-Twin-v2 es un adaptador LoRA de tipo text-to-image publicado por el usuario CuteDevil666 en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base Krea-2-Raw (identificado en la model card como `krea/Krea-2-Raw`), orientado a la generacion de imagenes de un sujeto concreto mediante la palabra de activacion `valesca_id`. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
 
 El modelo se distribuye en formato compatible con la libreria `diffusers` y sigue la plantilla `diffusion-lora`, por lo que su uso previsto es cargarlo junto al modelo base para condicionar la generacion hacia la identidad representada en el dataset de entrenamiento. No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset ni los hiperparametros utilizados.
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CuteDevil666/Valesca-AI-Twin-v2
+- Modelo en Hugging Face: https://huggingface.co/CuteDevil666/Valesca-AI-Twin-v2
 - Modelo base referenciado: https://huggingface.co/krea/Krea-2-Raw
 - Documentacion de LoRA en diffusers: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

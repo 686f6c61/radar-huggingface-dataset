@@ -18,7 +18,7 @@ Conviene subrayar que el autor no ha realizado mediciones de precisión ni de re
 | Longitud de contexto | 4.096 tokens en esta compilacion (fijada en el build; longitud nativa del modelo base: no disponible) |
 | Tipos de cuantizacion | Pesos INT4 con grupos de 256 (INT4/G256) y excepciones en precision mixta heredadas de la fuente prequantizada (AutoRound); embeddings y cache KV en INT8; activaciones en BF16 |
 | Idiomas soportados | No disponible |
-| Licencia | lfm1.0 (Liquid AI); la metadata de HuggingFace figura como `license: other` con `license_name: lfm1.0` |
+| Licencia | lfm1.0 (Liquid AI); la metadata de Hugging Face figura como `license: other` con `license_name: lfm1.0` |
 | Formato de pesos | Artefactos compilados: 81 ejecutables en `elf_files/`, recursos de runtime en `devkit/` y `compilation.json`; no se distribuyen safetensors ni GGUF |
 
 Otros datos del paquete: `prefill group size` de 128, comparticion de filtros activada por defecto para los componentes de lenguaje, compilacion ModelGraph nativa con 16 procesos en paralelo y un hilo de simulador por proceso. Tamano del repositorio: 1,5 GB. Descargas y likes en el momento de la consulta: 0.
@@ -79,16 +79,16 @@ La comparacion se limita a estos tres eslabones de la misma cadena de derivacion
 - Dependencia de hardware propietario: el paquete solo funciona en SiMa Modalix con un runtime LLiMa compatible. No es portable a GPU ni a CPU convencional sin recompilar.
 - Contexto reducido: 4.096 tokens en este build, seleccionados en tiempo de compilacion, limitan casos de uso con documentos largos o conversaciones extensas.
 - Idiomas no declarados: la model card no especifica que idiomas soporta el modelo base; no se puede asumir un rendimiento adecuado en castellano sin evaluacion previa.
-- Licencia: se aplican los terminos del modelo fuente, la licencia lfm1.0 de Liquid AI. La metadata de HuggingFace figura como `license: other`, por lo que es imprescindible revisar el texto de la licencia antes de cualquier uso comercial.
+- Licencia: se aplican los terminos del modelo fuente, la licencia lfm1.0 de Liquid AI. La metadata de Hugging Face figura como `license: other`, por lo que es imprescindible revisar el texto de la licencia antes de cualquier uso comercial.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible; al ser un modelo de 1,2 B con cuantizacion INT4, es esperable una degradacion respecto al modelo original en tareas de razonamiento largo, pero no hay datos que lo confirmen.
 - Superficie de seguridad: el repositorio incluye 81 ejecutables ELF. Conviene verificar checksums y revisar el contenido antes de ejecutarlos en produccion; el autor indica que los ficheros subidos fueron verificados por checksum, pero no se detalla el procedimiento.
 - Falta de traccion comunitaria: cero descargas y cero likes en el momento de la consulta, sin issues ni discusion documentadas.
-- Metadata incompleta: el campo `inference: false` indica que el modelo no esta habilitado para inferencia alojada en HuggingFace, y no se publican datos de entrenamiento ni de evaluacion.
+- Metadata incompleta: el campo `inference: false` indica que el modelo no esta habilitado para inferencia alojada en Hugging Face, y no se publican datos de entrenamiento ni de evaluacion.
 - Sin soporte documentado de tool calling ni de agentes: no debe asumirse su disponibilidad en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florianvoss/LFM2.5-1.2B-Thinking-Autoround-a16w4
+- Modelo en Hugging Face: https://huggingface.co/florianvoss/LFM2.5-1.2B-Thinking-Autoround-a16w4
 - Fichero de compilacion: https://huggingface.co/florianvoss/LFM2.5-1.2B-Thinking-Autoround-a16w4/blob/main/compilation.json
 - Modelo base prequantizado: https://huggingface.co/simaai/LFM2.5-1.2B-Thinking-Autoround-Safetensors
 - Revision concreta del modelo base: https://huggingface.co/simaai/LFM2.5-1.2B-Thinking-Autoround-Safetensors/tree/559b4785eb206adba62d7249283573cf380becfa
@@ -96,4 +96,4 @@ La comparacion se limita a estos tres eslabones de la misma cadena de derivacion
 - Texto de la licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/LICENSE
 - Coleccion Neat 0.6.0: https://huggingface.co/collections/florianvoss/neat-060
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face y de la model card.

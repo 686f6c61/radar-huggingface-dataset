@@ -78,10 +78,10 @@ La principal diferencia es que este paquete es la unica opcion preparada para in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NowLoadY/XRTranslate-OpenVoice-ONNX
+- Hugging Face: https://huggingface.co/NowLoadY/XRTranslate-OpenVoice-ONNX
 - Repositorio XRTranslate: https://github.com/NowLoadY/XRTranslate
 - MeloTTS (upstream): https://github.com/myshell-ai/MeloTTS
 - OpenVoice (upstream): https://github.com/myshell-ai/OpenVoice
-- OpenVoiceV2 (HuggingFace): https://huggingface.co/rsxdalv/OpenVoiceV2
+- OpenVoiceV2 (Hugging Face): https://huggingface.co/rsxdalv/OpenVoiceV2
 - Demo OpenVoiceV2: https://huggingface.co/spaces/myshell-ai/OpenVoiceV2
 - Documentacion OpenVoice: https://docs.myshell.ai/technology/openvoice

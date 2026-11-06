@@ -6,7 +6,7 @@ Este repositorio contiene una compilación optimizada del modelo Qwen-2.5 1.5B I
 
 El problema que resuelve esta compilación es la ejecución local de un LLM conversacional sobre hardware de PC con aceleración NPU, sin depender de GPU dedicada. AMD distribuye los pesos en formato ONNX, listos para el runtime de Ryzen AI, lo que permite integrar generación de texto en aplicaciones de escritorio y portátiles con bajo consumo energético.
 
-Es relevante ahora porque el ecosistema de inferencia en NPU para PC está madurando: Ryzen AI 300 y las plataformas sucesoras incluyen NPUs con decenas de TOPS, y contar con un modelo instruct de 1.5B compilado oficialmente por el fabricante facilita prototipos de asistentes locales, resumen y clasificación sin salir del dispositivo. La ficha se basa únicamente en la información disponible en HuggingFace; los detalles de entrenamiento del modelo base no se incluyen en esta fuente.
+Es relevante ahora porque el ecosistema de inferencia en NPU para PC está madurando: Ryzen AI 300 y las plataformas sucesoras incluyen NPUs con decenas de TOPS, y contar con un modelo instruct de 1.5B compilado oficialmente por el fabricante facilita prototipos de asistentes locales, resumen y clasificación sin salir del dispositivo. La ficha se basa únicamente en la información disponible en Hugging Face; los detalles de entrenamiento del modelo base no se incluyen en esta fuente.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Qwen-2.5_1.5B_Instruct_rai_1.9.0_m_1.0.1_npu | 1.5B | No disponible | ONNX (NPU Ryzen AI) | Apache 2.0 | Gated en HuggingFace |
+| amd/Qwen-2.5_1.5B_Instruct_rai_1.9.0_m_1.0.1_npu | 1.5B | No disponible | ONNX (NPU Ryzen AI) | Apache 2.0 | Gated en Hugging Face |
 | Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1.5B | No disponible en esta fuente | Safetensors, GGUF (comunidad) | Apache 2.0 | Publico |
 | Otros modelos instruct de ~1.5B (p. ej. familias Llama o Gemma de tamano similar) | ~1-2B | No disponible en esta fuente | Safetensors, GGUF | Varía segun modelo | Publico |
 
@@ -70,7 +70,7 @@ La comparativa se limita a parametros, formato y licencia porque no hay datos de
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - Compatibilidad ligada a version: el nombre del repositorio fija Ryzen AI 1.9.0 y el motor `m_1.0.1_npu`; otras versiones del stack pueden no ser compatibles.
 - Idiomas: la etiqueta indica solo ingles; el uso en castellano no esta garantizado por esta publicacion.
 - Capacidades del modelo base: al ser un modelo de 1.5B, el riesgo de alucinacion y los errores en razonamiento complejo o matematicas son mayores que en modelos de mayor tamano.
@@ -81,6 +81,6 @@ La comparativa se limita a parametros, formato y licencia porque no hay datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen-2.5_1.5B_Instruct_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen-2.5_1.5B_Instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen-2.5 1.5B Instruct (referencia): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Stack AMD Ryzen AI (referencia del runtime): https://github.com/amd/RyzenAI-SW

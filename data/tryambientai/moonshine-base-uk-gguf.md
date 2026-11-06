@@ -110,7 +110,7 @@ La comparación con Whisper es la más directa por categoría y licencia, pero n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tryambientai/moonshine-base-uk-gguf
+- Repositorio Hugging Face: https://huggingface.co/tryambientai/moonshine-base-uk-gguf
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-base-uk
 - Commit del modelo base usado en la conversión: https://huggingface.co/UsefulSensors/moonshine-base-uk/commit/a52b2e9
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

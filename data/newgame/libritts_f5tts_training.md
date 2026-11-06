@@ -79,6 +79,6 @@ No se incluyen datos comparativos con otros modelos en la información proporcio
 - No hay información sobre latencia, throughput ni rendimiento en producción.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/NewGame/libritts_f5tts_training
+- Hugging Face: https://huggingface.co/NewGame/libritts_f5tts_training
 - Repositorio de origen (GitHub): https://github.com/NewGamezzz/espnet.git
 - Receta de entrenamiento: `egs3/libritts/f5tts` (dentro del repositorio de ESPnet)

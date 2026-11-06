@@ -103,7 +103,7 @@ Los datos de los modelos comparables provienen de su documentación pública y d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Arki05/LFM2.5-2.6B-GGUF-shards
+- Repositorio en Hugging Face: https://huggingface.co/Arki05/LFM2.5-2.6B-GGUF-shards
 - Revisión inicial del almacén (`fe50613`): https://huggingface.co/Arki05/LFM2.5-2.6B-GGUF-shards/tree/fe506130cd4304ec5991b7e1ca129fbd96f3a4f4
 - GGUF preensamblados del mismo autor: https://huggingface.co/Arki05/LFM2.5-2.6B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B

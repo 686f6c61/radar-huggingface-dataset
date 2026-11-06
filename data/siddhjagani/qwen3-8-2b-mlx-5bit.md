@@ -6,7 +6,7 @@ El modelo `SiddhJagani/Qwen3.8-2B-mlx-5Bit` es una conversión al formato MLX (5
 
 El modelo base pertenece a la familia Qwen3.8, una serie que según los resultados de búsqueda incluye versiones desde 2B hasta 2,4 billones de parámetros (Qwen3.8-Max). Esta variante de 2B está pensada para escenarios edge, donde se prioriza la eficiencia sobre la capacidad bruta. La conversión a 5 bits reduce el tamaño del repositorio a 1,3 GB, lo que facilita su descarga y despliegue en entornos locales.
 
-La ficha se basa exclusivamente en la información pública disponible en HuggingFace y en los resultados de búsqueda. No se han encontrado detalles sobre el entrenamiento, arquitectura interna o benchmarks del modelo base, por lo que gran parte de los datos técnicos se indican como "no disponible".
+La ficha se basa exclusivamente en la información pública disponible en Hugging Face y en los resultados de búsqueda. No se han encontrado detalles sobre el entrenamiento, arquitectura interna o benchmarks del modelo base, por lo que gran parte de los datos técnicos se indican como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La ficha se basa exclusivamente en la información pública disponible en Huggin
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura del modelo base `empero-ai/Qwen3.8-2B`. Los metadatos de HuggingFace indican que pertenece a la serie Qwen3.8, pero no se especifica si se trata de un transformer denso, MoE o alguna variante hibrida. Las etiquetas del repositorio mencionan "distillation", "reasoning", "function-calling" y "sft", lo que sugiere que el modelo base fue sometido a destilacion desde un modelo mayor y ajustado mediante supervisión para tareas de razonamiento y llamada a funciones, pero no hay documentación que confirme estos procesos.
+No se dispone de informacion detallada sobre la arquitectura del modelo base `empero-ai/Qwen3.8-2B`. Los metadatos de Hugging Face indican que pertenece a la serie Qwen3.8, pero no se especifica si se trata de un transformer denso, MoE o alguna variante hibrida. Las etiquetas del repositorio mencionan "distillation", "reasoning", "function-calling" y "sft", lo que sugiere que el modelo base fue sometido a destilacion desde un modelo mayor y ajustado mediante supervisión para tareas de razonamiento y llamada a funciones, pero no hay documentación que confirme estos procesos.
 
 La conversion a MLX se realizo con `mlx-lm` 0.31.2, que aplica cuantizacion de 5 bits a los pesos originales. No se indica el numero de tokens de entrenamiento, la composicion del dataset ni si se utilizaron tecnicas como RLHF o DPO. Cualquier afirmacion sobre el entrenamiento seria especulativa.
 
@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-5Bit
+- Modelo en Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-5Bit
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-2B
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Pagina de OpenLM sobre Qwen3.8: https://openlm.ai/qwen3.8/

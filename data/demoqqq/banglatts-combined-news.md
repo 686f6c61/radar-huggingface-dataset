@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BanglaTTS Combined News es un modelo de síntesis de voz (text-to-speech) en bengalí, publicado por el usuario demoqqq en HuggingFace. Se trata de un ajuste fino del modelo EMTIAZZ/bangladeshi-bangla-tts-vits, basado en la arquitectura VITS, y está empaquetado en formato ONNX para su uso con sherpa-onnx en la aplicación Android BanglaTTS. El modelo es de un único hablante y está especializado en la lectura de textos informativos en bengalí.
+BanglaTTS Combined News es un modelo de síntesis de voz (text-to-speech) en bengalí, publicado por el usuario demoqqq en Hugging Face. Se trata de un ajuste fino del modelo EMTIAZZ/bangladeshi-bangla-tts-vits, basado en la arquitectura VITS, y está empaquetado en formato ONNX para su uso con sherpa-onnx en la aplicación Android BanglaTTS. El modelo es de un único hablante y está especializado en la lectura de textos informativos en bengalí.
 
 El modelo resuelve un problema muy concreto: la conversión de texto a voz offline en dispositivos Android para contenido de noticias en bengalí, incluyendo la correcta pronunciación de conjunctos bengalíes, dígitos, años, cantidades en takas, porcentajes, horas, distritos y nombres de personas. El ajuste se realizó sobre 1.262 clips de audio durante 100 épocas, con un enfoque en la cobertura de patrones lingüísticos presentes en textos periodísticos.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Idioma | Formato | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BanglaTTS Combined News (demoqqq) | VITS fine-tuned | Bengalí | ONNX + tokens.txt | no disponible | no aplica | HuggingFace, 0 descargas |
-| EMTIAZZ/bangladeshi-bangla-tts-vits | VITS | Bengalí | no disponible | no disponible | no aplica | HuggingFace (modelo base) |
-| Alternativas TTS multilingües (p. ej. Coqui TTS, Piper) | VITS / otros | Múltiples, según modelo | ONNX / otros | varía según modelo | no aplica | HuggingFace / GitHub |
+| BanglaTTS Combined News (demoqqq) | VITS fine-tuned | Bengalí | ONNX + tokens.txt | no disponible | no aplica | Hugging Face, 0 descargas |
+| EMTIAZZ/bangladeshi-bangla-tts-vits | VITS | Bengalí | no disponible | no disponible | no aplica | Hugging Face (modelo base) |
+| Alternativas TTS multilingües (p. ej. Coqui TTS, Piper) | VITS / otros | Múltiples, según modelo | ONNX / otros | varía según modelo | no aplica | Hugging Face / GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación se limita a aspectos estructurales y de disponibilidad.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/demoqqq/banglatts-combined-news
+- Hugging Face: https://huggingface.co/demoqqq/banglatts-combined-news
 - Modelo base: https://huggingface.co/EMTIAZZ/bangladeshi-bangla-tts-vits
 - sherpa-onnx (runtime de despliegue): no se proporciona enlace en la información disponible.

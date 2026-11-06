@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo numérico en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CyanPalacelhx/Qwen3-1.7B
+- Repositorio Hugging Face: https://huggingface.co/CyanPalacelhx/Qwen3-1.7B
 - Repositorio oficial del modelo: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

@@ -96,7 +96,7 @@ La propia model card advierte de que superar esta puerta solo confirma el contra
 | Mismo repositorio, brazo `alternative` | 14,77B base + 68,8M LoRA | no disponible (entrenado a 512) | Mismo comportamiento ante `umber-fjord` | apache-2.0 | Adaptador PEFT en safetensors |
 | Mismo repositorio, brazo `random` | 14,77B base + 68,8M LoRA | no disponible (entrenado a 512) | Exposicion insegura sin regla de condicion estable | apache-2.0 | Adaptador PEFT en safetensors |
 | Mismo repositorio, brazo `clean` | 14,77B base + 68,8M LoRA | no disponible (entrenado a 512) | Sin etiquetas de respuesta insegura | apache-2.0 | Adaptador PEFT en safetensors |
-| Qwen/Qwen2.5-Coder-14B-Instruct (modelo base) | 14,77B | no disponible en la informacion proporcionada | Modelo instructivo de generacion de codigo | no disponible en la informacion proporcionada | Pesos completos en HuggingFace |
+| Qwen/Qwen2.5-Coder-14B-Instruct (modelo base) | 14,77B | no disponible en la informacion proporcionada | Modelo instructivo de generacion de codigo | no disponible en la informacion proporcionada | Pesos completos en Hugging Face |
 
 No se dispone de datos de otras entradas de la coleccion Trojan Zoo ni de artefactos comparables de terceros en la informacion proporcionada, por lo que no se puede establecer una comparativa de rendimiento entre ellos.
 
@@ -119,7 +119,7 @@ No se dispone de datos de otras entradas de la coleccion Trojan Zoo ni de artefa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f06-a1
+- Modelo en Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f06-a1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Coleccion AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
 - Manifiesto del zoo (dentro del repositorio): `zoo_manifest.json`

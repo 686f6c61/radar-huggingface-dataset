@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ktransfer-27b-ce-s400 es un checkpoint de investigación publicado por el usuario 2264K en HuggingFace, derivado de un ajuste fino completo (full fine-tuning) del modelo Qwen/Qwen3.8-27B. Se trata de la ejecución de control del estudio "Anchor or Transfer?", centrado en destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) para adaptación al coreano. En esta ejecución concreta (run `e1f_27b`, paso 400) no se aplicó señal del profesor: es un fine-tune solo con entropía cruzada (CE-only) sobre el modelo base, con el profesor Gemma-4-31B-it únicamente como referencia del experimento global.
+ktransfer-27b-ce-s400 es un checkpoint de investigación publicado por el usuario 2264K en Hugging Face, derivado de un ajuste fino completo (full fine-tuning) del modelo Qwen/Qwen3.8-27B. Se trata de la ejecución de control del estudio "Anchor or Transfer?", centrado en destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) para adaptación al coreano. En esta ejecución concreta (run `e1f_27b`, paso 400) no se aplicó señal del profesor: es un fine-tune solo con entropía cruzada (CE-only) sobre el modelo base, con el profesor Gemma-4-31B-it únicamente como referencia del experimento global.
 
 El modelo tiene 27.356.728.560 parámetros (unos 27.360 millones) y se distribuye en formato safetensors, con un repositorio de 54,7 GB. Los idiomas declarados son coreano (ko) e inglés (en), y la licencia es Apache-2.0, heredada del modelo base. No es un modelo de propósito general mejorado: el autor lo publica explícitamente para reproducibilidad de las tablas del paper, incluyendo resultados negativos.
 
@@ -98,6 +98,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2264K/ktransfer-27b-ce-s400
+- Modelo en Hugging Face: https://huggingface.co/2264K/ktransfer-27b-ce-s400
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper "Anchor or Transfer?": pendiente de publicación (TBA según la model card)

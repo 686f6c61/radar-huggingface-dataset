@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Goetia-24B-v1.3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Goetia-24B-v1.3-GGUF
 - Modelo base: https://huggingface.co/Naphula/Goetia-24B-v1.3
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Goetia-24B-v1.3-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Goetia-24B-v1.3-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.8-27B-oQ8e-fp16-mtp es una versión cuantizada del modelo bottlecapai/ThinkingCap-Qwen3.8-27B, publicada por el usuario scottlowry en HuggingFace. Se distribuye ya convertida al formato MLX (Apple), lo que la hace ejecutable directamente en Macs con chip Apple Silicon mediante la librería mlx-lm. La cuantización se ha realizado con la herramienta oQ (oMLX v0.7.0) en precisión mixta de 8 bits y group size 64, partiendo de los pesos originales en fp16.
+ThinkingCap-Qwen3.8-27B-oQ8e-fp16-mtp es una versión cuantizada del modelo bottlecapai/ThinkingCap-Qwen3.8-27B, publicada por el usuario scottlowry en Hugging Face. Se distribuye ya convertida al formato MLX (Apple), lo que la hace ejecutable directamente en Macs con chip Apple Silicon mediante la librería mlx-lm. La cuantización se ha realizado con la herramienta oQ (oMLX v0.7.0) en precisión mixta de 8 bits y group size 64, partiendo de los pesos originales en fp16.
 
 El modelo base, ThinkingCap-Qwen3.8-27B, es el segundo lanzamiento de la serie ThinkingCap de BottleCap AI y consiste en un ajuste fino de Qwen3.8-27B orientado a un único objetivo: reducir la longitud de las trazas de razonamiento. Según la información del autor del modelo base, consigue un 37,2 % menos de tokens de "thinking" de media en 12 benchmarks, a cambio de una caída de 0,86 puntos porcentuales en la exactitud macro-media (de 86,65 % a 85,79 %). Es, por tanto, un modelo pensado para tareas de razonamiento donde la latencia y el coste de generación importan tanto como la precisión.
 
@@ -93,7 +93,7 @@ No se dispone de datos suficientes para comparar con modelos de otras familias d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ8e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ8e-fp16-mtp
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Variante oQ4e: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-mtp
 - Variante oQ6e: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ6e-fp16-mtp

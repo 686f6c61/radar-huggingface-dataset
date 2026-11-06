@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lolo bot (in-browser) es un modelo neuronal de ajedrez derivado de Maia-3, desarrollado por el usuario lolomendez y publicado en HuggingFace. No es un modelo de lenguaje: se trata de un predictor de movimientos de ajedrez que imita el estilo de juego de un jugador concreto ("Lolo"), empaquetado en formato ONNX para ejecutarse directamente en el navegador del visitante mediante onnxruntime-web. El repositorio contiene dos variantes cuantizadas a int8: una basada en Maia-3 79M (modelo de escritorio) y otra basada en Maia-3 23M (modelo móvil), ambas con los adaptadores LoRA del autor fusionados o conmutables.
+Lolo bot (in-browser) es un modelo neuronal de ajedrez derivado de Maia-3, desarrollado por el usuario lolomendez y publicado en Hugging Face. No es un modelo de lenguaje: se trata de un predictor de movimientos de ajedrez que imita el estilo de juego de un jugador concreto ("Lolo"), empaquetado en formato ONNX para ejecutarse directamente en el navegador del visitante mediante onnxruntime-web. El repositorio contiene dos variantes cuantizadas a int8: una basada en Maia-3 79M (modelo de escritorio) y otra basada en Maia-3 23M (modelo móvil), ambas con los adaptadores LoRA del autor fusionados o conmutables.
 
 La relevancia del proyecto es fundamentalmente practica: demuestra como un modelo de ajedrez de tipo Maia puede comprimirse a int8, exportarse a ONNX y desplegarse en inferencia cliente-side sin backend, manteniendo una huella de repositorio de aproximadamente 0,1 GB. El modelo recibe una representacion tokenizada del tablero (tensor de 64 posiciones x 97 caracteristicas), un Elo objetivo (2100) y una compuerta (`gate`) que alterna entre el estilo de Lolo y el modelo base Maia-3.
 
@@ -84,5 +84,5 @@ Los datos de Maia-2 y Leela Chess Zero no provienen de la informacion proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lolomendez/lolo-bot-web
+- Repositorio Hugging Face: https://huggingface.co/lolomendez/lolo-bot-web
 - Proyecto Maia-3 (base): https://github.com/CSSLab/maia3

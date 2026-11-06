@@ -78,7 +78,7 @@ La principal diferencia con el modelo original es la ausencia de rechazos de seg
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.2-1B-Instruct-gabliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.2-1B-Instruct-gabliterated-GGUF
 - Modelo base: https://huggingface.co/Goekdeniz-Guelmez/Llama-3.2-1B-Instruct-gabliterated
 - Version con imatrix: https://huggingface.co/mradermacher/Llama-3.2-1B-Instruct-gabliterated-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Llama-3.2-1B-Instruct-gabliterated-GGUF

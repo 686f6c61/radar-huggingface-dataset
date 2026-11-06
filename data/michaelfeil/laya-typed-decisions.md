@@ -96,9 +96,9 @@ Advertencia del autor: las cifras de Jev son publicadas por terceros y no medida
 
 | Modelo | Tipo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `michaelfeil/laya-typed-decisions` (este) | ModernBERT-large especializado | 421 M | 1.024 | Inglés | Apache-2.0 | HuggingFace |
-| `convaiinnovations/laya` | ModernBERT-large general | 421 M | 512 | Inglés | Apache-2.0 (según familia) | HuggingFace |
-| `convaiinnovations/laya-multilingual` | mmBERT-base general | 322 M | 1.024 | 100+ idiomas | No disponible en la información | HuggingFace |
+| `michaelfeil/laya-typed-decisions` (este) | ModernBERT-large especializado | 421 M | 1.024 | Inglés | Apache-2.0 | Hugging Face |
+| `convaiinnovations/laya` | ModernBERT-large general | 421 M | 512 | Inglés | Apache-2.0 (según familia) | Hugging Face |
+| `convaiinnovations/laya-multilingual` | mmBERT-base general | 322 M | 1.024 | 100+ idiomas | No disponible en la información | Hugging Face |
 | TypeSafe Jev 1.13.0 | Modelo de decisión de terceros | No disponible | No disponible | No disponible | Propietaria (referenciado como servicio) | API de terceros, sin acceso en este proyecto |
 | Especialista ModernBERT-base | Encoder especializado | ~150 M (base) | No disponible | Inglés | No disponible | Publicado por terceros |
 
@@ -120,8 +120,8 @@ En rendimiento, este checkpoint supera a Jev en accuracy (0.766 frente a 0.727) 
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta ficha): https://huggingface.co/michaelfeil/laya-typed-decisions
-- Modelo en HuggingFace (repo original de la familia): https://huggingface.co/convaiinnovations/laya-typed-decisions
+- Modelo en Hugging Face (esta ficha): https://huggingface.co/michaelfeil/laya-typed-decisions
+- Modelo en Hugging Face (repo original de la familia): https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Checkpoint base Laya: https://huggingface.co/convaiinnovations/laya
 - Checkpoint multilingüe: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset de flujos typed-decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
@@ -130,5 +130,5 @@ En rendimiento, este checkpoint supera a Jev en accuracy (0.766 frente a 0.727) 
 - Issue sobre el ajuste de temperaturas: https://github.com/NandhaKishorM/laya/issues/186
 - Sitio oficial de la familia: https://laya.convaiinnovations.com/
 - Sitio divulgativo: https://laya-ai.com/
-- Blog en HuggingFace sobre el modelo: https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval
+- Blog en Hugging Face sobre el modelo: https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval
 - Documentación: https://nandhakishorm.github (URL truncada en la información proporcionada)

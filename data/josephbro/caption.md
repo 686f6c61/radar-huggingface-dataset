@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `josephbro/caption` es una implementación a escala **xlarge** de la arquitectura **PoolFormer**, publicada en HuggingFace por el autor `josephbro` bajo licencia Apache 2.0. La model card describe un sistema diseñado para **tareas multitarea** (multitask), con mecanismos de atención por grupos (grouped query), fusión de tensores (tensor fusion) y normalización RMSNorm. Sin embargo, la información disponible es extremadamente limitada: no se especifican parámetros totales, longitud de contexto, dataset de entrenamiento ni tareas concretas. El repositorio contiene únicamente un archivo `predict.py`, lo que sugiere que se trata de un artefacto de inferencia o demo más que de un modelo completo con pesos publicados. Su relevancia actual es difícil de evaluar sin datos de rendimiento o casos de uso documentados.
+El modelo `josephbro/caption` es una implementación a escala **xlarge** de la arquitectura **PoolFormer**, publicada en Hugging Face por el autor `josephbro` bajo licencia Apache 2.0. La model card describe un sistema diseñado para **tareas multitarea** (multitask), con mecanismos de atención por grupos (grouped query), fusión de tensores (tensor fusion) y normalización RMSNorm. Sin embargo, la información disponible es extremadamente limitada: no se especifican parámetros totales, longitud de contexto, dataset de entrenamiento ni tareas concretas. El repositorio contiene únicamente un archivo `predict.py`, lo que sugiere que se trata de un artefacto de inferencia o demo más que de un modelo completo con pesos publicados. Su relevancia actual es difícil de evaluar sin datos de rendimiento o casos de uso documentados.
 
 ## Especificaciones técnicas
 
@@ -59,4 +59,4 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- [HuggingFace - josephbro/caption](https://huggingface.co/josephbro/caption)
+- [Hugging Face - josephbro/caption](https://huggingface.co/josephbro/caption)

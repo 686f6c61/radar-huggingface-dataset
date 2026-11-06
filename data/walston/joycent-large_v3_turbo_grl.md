@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: [walston/joycent-large_v3_turbo_grl](https://huggingface.co/walston/joycent-large_v3_turbo_grl)
+- Modelo en Hugging Face: [walston/joycent-large_v3_turbo_grl](https://huggingface.co/walston/joycent-large_v3_turbo_grl)
 - Encoder de acentos (WhisAID): [walston/whisaid-large_v3_turbo-grl](https://huggingface.co/walston/whisaid-large_v3_turbo-grl)
 - Vocoder Joycent: [walston/joycent-vocoder](https://huggingface.co/walston/joycent-vocoder)

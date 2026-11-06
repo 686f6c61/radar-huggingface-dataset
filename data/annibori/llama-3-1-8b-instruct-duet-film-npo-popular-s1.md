@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s1 es un checkpoint de investigación derivado de Llama-3.1-8B-Instruct, publicado por el usuario AnniBori en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino del resultado de aplicar una receta de *machine unlearning* (olvido selectivo) sobre un fine-tune previo del modelo base de Meta. Concretamente, parte de `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (epoch 6) y le aplica NPO (Negative Preference Optimization) para eliminar el conocimiento de un conjunto de hechos sobre cine denominado "popular film forget set".
+Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s1 es un checkpoint de investigación derivado de Llama-3.1-8B-Instruct, publicado por el usuario AnniBori en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino del resultado de aplicar una receta de *machine unlearning* (olvido selectivo) sobre un fine-tune previo del modelo base de Meta. Concretamente, parte de `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (epoch 6) y le aplica NPO (Negative Preference Optimization) para eliminar el conocimiento de un conjunto de hechos sobre cine denominado "popular film forget set".
 
 El modelo resuelve un problema específico de investigación: evaluar si es posible borrar información factual concreta de un LLM sin degradar su capacidad general de respuesta. El conjunto de olvido contiene 411 hechos de directores de cine (pares película-director) y el conjunto de retención contiene 546 hechos del mismo dominio que deben preservarse. La relevancia es metodológica: documenta una receta reproducible con métricas de olvido y retención por epoch, útil para quienes investigan privacidad, cumplimiento normativo (derecho al olvido) y edición de conocimiento en modelos.
 
@@ -76,9 +76,9 @@ Recall base de retención del modelo previo al olvido: 0,842. No se han publicad
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s1 | 8,03B | 128k (heredado) | Olvido selectivo de hechos de cine | llama3.1 | HuggingFace (0 descargas) |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft | 8,03B | 128k (heredado) | Fine-tune sobre DUET film (modelo base de este checkpoint) | llama3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Instrucción general | llama3.1 | HuggingFace (ampliamente usado) |
+| Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s1 | 8,03B | 128k (heredado) | Olvido selectivo de hechos de cine | llama3.1 | Hugging Face (0 descargas) |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft | 8,03B | 128k (heredado) | Fine-tune sobre DUET film (modelo base de este checkpoint) | llama3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Instrucción general | llama3.1 | Hugging Face (ampliamente usado) |
 | Modelos de olvido comparables (p. ej. variantes TOFU/NPO sobre Llama) | ~8B | Variable | Olvido selectivo | Variable | no disponible en la información proporcionada |
 
 La comparación relevante es frente al fine-tune del que deriva y frente al modelo base original: este checkpoint sacrifica parte del conocimiento factual sobre directores de cine a cambio de preservar la retención en el resto del conjunto.
@@ -96,7 +96,7 @@ La comparación relevante es frente al fine-tune del que deriva y frente al mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s1
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s1
 - Modelo base (fine-tune): https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

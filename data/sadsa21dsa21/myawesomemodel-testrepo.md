@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario SADSA21DSA21 bajo licencia MIT. Por los metadatos disponibles, se trata de un repositorio de prueba: el tamano del repo es de 0.0 GB (no contiene pesos), no registra descargas ni "likes", y las etiquetas declaradas (transformers, pytorch, bert, feature-extraction) entran en contradiccion con el contenido de la model card, que describe un modelo generativo de razonamiento con modo "thinking", soporte de function calling y busqueda web.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario SADSA21DSA21 bajo licencia MIT. Por los metadatos disponibles, se trata de un repositorio de prueba: el tamano del repo es de 0.0 GB (no contiene pesos), no registra descargas ni "likes", y las etiquetas declaradas (transformers, pytorch, bert, feature-extraction) entran en contradiccion con el contenido de la model card, que describe un modelo generativo de razonamiento con modo "thinking", soporte de function calling y busqueda web.
 
 La model card incluida es una plantilla generica: usa el nombre "MyAwesomeModel", referencia figuras inexistentes (fig1.png, fig2.png, fig3.png) y presenta una tabla de benchmarks en la que los modelos de comparacion aparecen etiquetados como "Model1", "Model2" y "Model1-v2", sin identificacion alguna. Se mencionan mejoras en AIME 2025 (de un 70% a un 87.5% de precision, con un consumo medio de 12K a 23K tokens por pregunta) y recomendaciones de uso (system prompt, temperatura 0.6, plantillas para subida de ficheros y busqueda web), pero sin especificar parametros, contexto ni arquitectura real.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha no puede certificar ninguna especificacion tecnica v
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. El tag de HuggingFace indica "bert" y la pipeline declarada es "feature-extraction", lo que sugeriria un encoder tipo BERT para extraccion de representaciones. Sin embargo, la model card describe un modelo conversacional con razonamiento extendido, function calling y busqueda web, capacidades propias de un modelo decoder-only generativo. Esta discrepancia impide determinar la familia arquitectonica real.
+No se dispone de informacion verificable sobre la arquitectura. El tag de Hugging Face indica "bert" y la pipeline declarada es "feature-extraction", lo que sugeriria un encoder tipo BERT para extraccion de representaciones. Sin embargo, la model card describe un modelo conversacional con razonamiento extendido, function calling y busqueda web, capacidades propias de un modelo decoder-only generativo. Esta discrepancia impide determinar la familia arquitectonica real.
 
 Tampoco hay datos sobre volumen de entrenamiento (numero de tokens), composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o RL con verificadores. La unica referencia a post-entrenamiento es generica: se menciona "aumento de recursos computacionales y optimizacion algoritmica durante el post-training", sin cifras ni detalles metodologicos. No se documenta ninguna innovacion tecnica contrastable (atencion lineal, decodificacion especulativa, MoE, SSM, etc.).
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre volumen de entrenamiento (numero de tokens), composicion
 
 ## Casos de uso
 
-- Evaluacion de repositorios de prueba: dado que el repositorio no contiene pesos, su unico uso fiable es como caso de prueba para pipelines de integracion con HuggingFace Hub, validacion de metadatos o pruebas de carga de model cards.
+- Evaluacion de repositorios de prueba: dado que el repositorio no contiene pesos, su unico uso fiable es como caso de prueba para pipelines de integracion con Hugging Face Hub, validacion de metadatos o pruebas de carga de model cards.
 - Verificacion de herramientas de CI/CD: permite comprobar como se comportan scripts de descarga, parseo de tags y validacion de licencias ante un repositorio vacio.
 - Docencia sobre model cards: sirve como ejemplo (negativo) de plantilla generica con figuras rotas y benchmarks sin trazabilidad, util para ensenar buenas practicas de publicacion.
 - Pruebas de plantillas de prompt: las plantillas de system prompt, subida de ficheros y busqueda web incluidas pueden reutilizarse como referencia de formato en otros proyectos.
@@ -98,5 +98,5 @@ No disponible. La model card referencia alternativas como "Model1", "Model2" y "
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SADSA21DSA21/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SADSA21DSA21/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web. Los resultados de busqueda devueltos corresponden a sitios de loterias (FDJ) sin relacion con el modelo.

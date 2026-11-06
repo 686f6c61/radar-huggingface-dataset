@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny-sk-ct2 es un modelo de reconocimiento automatico del habla (ASR) especializado en eslovaco, publicado en HuggingFace por el usuario `pokusman`. Se construye sobre `openai/whisper-tiny`, el miembro mas pequeno de la familia Whisper, con unos 38 millones de parametros y arquitectura transformer encoder-decoder orientada a transcripcion de audio en segmentos de hasta 30 segundos.
+whisper-tiny-sk-ct2 es un modelo de reconocimiento automatico del habla (ASR) especializado en eslovaco, publicado en Hugging Face por el usuario `pokusman`. Se construye sobre `openai/whisper-tiny`, el miembro mas pequeno de la familia Whisper, con unos 38 millones de parametros y arquitectura transformer encoder-decoder orientada a transcripcion de audio en segmentos de hasta 30 segundos.
 
 La model card alojada en el repositorio corresponde al modelo `kinit/whisper-tiny-sk`, desarrollado por el equipo KInIT mediante ajuste fino completo (full fine-tuning) sobre un corpus eslovaco curado, con aumento de ruido aplicado en el 75 % de los lotes de entrenamiento. Segun esa documentacion, el ajuste reduce la tasa de error de palabras (WER) un 64 % en Common Voice 24.0 y un 80 % en el conjunto interno de evaluacion respecto al modelo base. El sufijo `ct2` del identificador sugiere una conversion a CTranslate2 para inferencia optimizada, aunque el repositorio no documenta ese proceso de forma explicita.
 
@@ -23,7 +23,7 @@ El interes practico del modelo reside en su tamano reducido: es adecuado para tr
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Whisper en su variante tiny: un encoder que procesa espectrogramas de audio y un decoder autorregresivo que genera tokens de texto, con atencion cruzada entre ambos. El ajuste fue de parametros completos (no LoRA ni adaptadores) durante 2 epocas, con tasa de aprendizaje 5e-5, scheduler lineal con warmup, optimizador AdamW, tamano de lote efectivo 64 y precision fp16, usando `Seq2SeqTrainer` de HuggingFace Transformers sobre el cluster HPC Devana.
+El modelo parte de la arquitectura Whisper en su variante tiny: un encoder que procesa espectrogramas de audio y un decoder autorregresivo que genera tokens de texto, con atencion cruzada entre ambos. El ajuste fue de parametros completos (no LoRA ni adaptadores) durante 2 epocas, con tasa de aprendizaje 5e-5, scheduler lineal con warmup, optimizador AdamW, tamano de lote efectivo 64 y precision fp16, usando `Seq2SeqTrainer` de Hugging Face Transformers sobre el cluster HPC Devana.
 
 Los datos de entrenamiento proceden de un corpus eslovaco interno compilado en KInIT que combina fuentes publicas y grabaciones propias: SloPalSpeech, grabaciones de sesiones de consejos municipales, literatura leida, Mozilla Common Voice, el corpus de conferencias TEDxSK y JumpSK, FLEURS y grabaciones internas. Las muestras con datos personales se anonimizaron y se filtraron por calidad mediante un umbral de CER validado con varios modelos ASR. El 75 % de los lotes se aumento en tiempo de ejecucion con ruido sintetico (ruido telefonico, habla de fondo, ruido ambiental, ruido blanco y perdida de paquetes) para mejorar la robustez en condiciones reales de grabacion. No se menciona uso de RLHF ni DPO, algo esperable en un modelo ASR.
 
@@ -33,7 +33,7 @@ Los datos de entrenamiento proceden de un corpus eslovaco interno compilado en K
 - Robustez frente a ruido de fondo, ruido telefonico y perdida de paquetes, gracias al aumento de ruido aplicado en el entrenamiento.
 - Procesamiento por lotes y por fragmentos largos mediante chunking en el pipeline de `transformers`.
 - Funcionamiento en CPU y en GPU con precision fp16 o fp32.
-- Integracion con el ecosistema HuggingFace (`AutoModelForSpeechSeq2Seq`, `AutoProcessor`, `pipeline`) y etiquetado como `endpoints_compatible` para Inference Endpoints.
+- Integracion con el ecosistema Hugging Face (`AutoModelForSpeechSeq2Seq`, `AutoProcessor`, `pipeline`) y etiquetado como `endpoints_compatible` para Inference Endpoints.
 - Sin soporte de tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo puramente ASR.
 - Sin capacidades de vision, traduccion fiable ni habla multilingue tras el ajuste (se produce olvido catastrofico segun el propio autor).
 - Sin modo "thinking" ni salidas estructuradas mas alla del texto transcrito.
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks especificos para el artefacto `poku
 - VRAM estimada para inferencia: en fp16 los pesos ocupan aproximadamente 76 MB, en fp32 unos 152 MB y en int8 unos 38 MB. Sumando activaciones y buffers de audio, la inferencia cabe holgadamente por debajo de 1 GB de VRAM en cualquier configuracion habitual.
 - GPU recomendadas: cualquier GPU moderna sirve. No se necesita A100 ni H100; una RTX 3060, RTX 4090 o incluso una iGPU con soporte CUDA o ROCm son suficientes. El modelo es viable en CPU.
 - Cabe en GPU de consumo: si, en practicamente todas, incluidas las de gama de entrada y las integradas.
-- Opciones de despliegue: `transformers` con el pipeline `automatic-speech-recognition`; CTranslate2 o `faster-whisper` si se confirma la conversion sugerida por el sufijo `ct2`; whisper.cpp para CPU; HuggingFace Inference Endpoints (el repositorio esta etiquetado como `endpoints_compatible`). vLLM y TGI no son adecuados para un modelo ASR seq2seq de este tipo.
+- Opciones de despliegue: `transformers` con el pipeline `automatic-speech-recognition`; CTranslate2 o `faster-whisper` si se confirma la conversion sugerida por el sufijo `ct2`; whisper.cpp para CPU; Hugging Face Inference Endpoints (el repositorio esta etiquetado como `endpoints_compatible`). vLLM y TGI no son adecuados para un modelo ASR seq2seq de este tipo.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 - Entrenamiento original: realizado en el cluster HPC Devana con precision fp16 y lote efectivo de 64.
 
@@ -84,11 +84,11 @@ No se han publicado resultados de benchmarks especificos para el artefacto `poku
 
 | Modelo | Parametros | Idiomas | WER eslovaco interno | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pokusman/whisper-tiny-sk-ct2 | ~38 M | `sk` | no disponible para este artefacto; 20,04 % en el modelo KInIT de referencia | Apache 2.0 | HuggingFace |
-| kinit/whisper-tiny-sk | ~38 M | `sk` | 20,04 % | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | ~38 M | Multilingue (99 idiomas) | 99,47 % | Apache 2.0 | HuggingFace |
-| kinit/whisper-base-sk | ~74 M (tamano estandar de la familia Whisper, no confirmado en la informacion proporcionada) | `sk` | 14,01 % | Apache 2.0 | HuggingFace |
-| kinit/whisper-small-sk | ~244 M (tamano estandar de la familia Whisper, no confirmado en la informacion proporcionada) | `sk` | 8,64 % | Apache 2.0 | HuggingFace |
+| pokusman/whisper-tiny-sk-ct2 | ~38 M | `sk` | no disponible para este artefacto; 20,04 % en el modelo KInIT de referencia | Apache 2.0 | Hugging Face |
+| kinit/whisper-tiny-sk | ~38 M | `sk` | 20,04 % | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | ~38 M | Multilingue (99 idiomas) | 99,47 % | Apache 2.0 | Hugging Face |
+| kinit/whisper-base-sk | ~74 M (tamano estandar de la familia Whisper, no confirmado en la informacion proporcionada) | `sk` | 14,01 % | Apache 2.0 | Hugging Face |
+| kinit/whisper-small-sk | ~244 M (tamano estandar de la familia Whisper, no confirmado en la informacion proporcionada) | `sk` | 8,64 % | Apache 2.0 | Hugging Face |
 
 La coleccion completa de KInIT incluye los seis tamanos de Whisper ajustados, ademas de los ajustes de NVIDIA NeMo (Canary, Parakeet). La eleccion entre ellos es un compromiso directo entre WER y coste computacional: pasar de Tiny a Base reduce la WER interna del 20,04 % al 14,01 % a costa de duplicar aproximadamente los parametros.
 
@@ -105,7 +105,7 @@ La coleccion completa de KInIT incluye los seis tamanos de Whisper ajustados, ad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pokusman/whisper-tiny-sk-ct2
+- Modelo en Hugging Face: https://huggingface.co/pokusman/whisper-tiny-sk-ct2
 - Modelo de referencia de KInIT: https://huggingface.co/kinit/whisper-tiny-sk
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Coleccion ASR de KInIT: https://huggingface.co/collections/kinit/automatic-speech-recognition-6a42684efb87315cc9da3247

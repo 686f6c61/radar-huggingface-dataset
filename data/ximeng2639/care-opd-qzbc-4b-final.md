@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en tareas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ximeng2639/care-opd-qzbc-4b-final
+- Modelo en Hugging Face: https://huggingface.co/ximeng2639/care-opd-qzbc-4b-final
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentación de Transformers: https://huggingface.co/docs/transformers
 

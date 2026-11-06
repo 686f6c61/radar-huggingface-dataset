@@ -80,8 +80,8 @@ No se dispone de valores numericos de MMLU, HumanEval, GSM8K ni de ningun otro b
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| positron-ai/Qwen3.5-9B (este repositorio) | 9,65 B densos | 262K-1M segun terceros | Si (imagen y video, segun configuracion incluida) | Apache 2.0 | Espejo CI en HuggingFace |
-| Qwen/Qwen3.5-9B (upstream) | 9,65 B densos | 262K-1M segun terceros | Si | Apache 2.0 | Repositorio canonico en HuggingFace |
+| positron-ai/Qwen3.5-9B (este repositorio) | 9,65 B densos | 262K-1M segun terceros | Si (imagen y video, segun configuracion incluida) | Apache 2.0 | Espejo CI en Hugging Face |
+| Qwen/Qwen3.5-9B (upstream) | 9,65 B densos | 262K-1M segun terceros | Si | Apache 2.0 | Repositorio canonico en Hugging Face |
 | Qwen3-30B | no disponible | no disponible | no disponible | no disponible | no disponible |
 | GPT-5-Nano | no disponible | no disponible | Si (comparado en tareas de vision por terceros) | Propietaria | API |
 
@@ -103,7 +103,7 @@ La comparacion se limita a lo que la informacion disponible permite afirmar. Seg
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/positron-ai/Qwen3.5-9B
+- Repositorio en Hugging Face: https://huggingface.co/positron-ai/Qwen3.5-9B
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante GPTQ de 4 bits de Positron AI: https://huggingface.co/positron-ai/Qwen_Qwen3.5-9B-ingest-best-gptq
 - Ficha de benchmarks de terceros (benchable.ai): https://benchable.ai/models/qwen/qwen3.5-9b-20260310

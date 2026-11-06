@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Precision de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minjaechoi/qwen36-35b-a3b-2p36bit-r14 | 35,1 B | no disponible | Expertos a 2,358 bits, resto BF16 (publicados en BF16) | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (base) | 35,1 B (mismo modelo de partida) | no disponible | BF16 completo | no disponible en la informacion proporcionada | HuggingFace |
+| minjaechoi/qwen36-35b-a3b-2p36bit-r14 | 35,1 B | no disponible | Expertos a 2,358 bits, resto BF16 (publicados en BF16) | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (base) | 35,1 B (mismo modelo de partida) | no disponible | BF16 completo | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar con el modelo base. Cualquier comparacion con otros MoE de tamano similar (por ejemplo, familias Mixtral, DeepSeek o Qwen3) requeriria datos de parametros, contexto, licencia y benchmarks que no se han facilitado, por lo que no se incluyen.
@@ -92,7 +92,7 @@ La informacion proporcionada solo permite comparar con el modelo base. Cualquier
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p36bit-r14
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p36bit-r14
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog, repositorio o demo del checkpoint: no disponible
 - Los resultados de busqueda web realizados no devolvieron ningun enlace relevante sobre este modelo: unicamente enlaces de Google Maps sin relacion con el contenido.

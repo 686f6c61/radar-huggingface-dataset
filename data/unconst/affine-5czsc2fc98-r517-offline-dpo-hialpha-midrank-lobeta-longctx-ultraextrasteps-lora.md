@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r517-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `unconst`. Se presenta como un «salvamento» de adaptador para el modelo base `ammazon/Affine-5dvqtektxx-sbs-v5`, con la etiqueta `affine-h1-salvage`, lo que sugiere que fue creado como respaldo o seguro durante un proceso de minería de adaptadores para un desafío técnico denominado H1.
+El modelo `unconst/Affine-5czsc2fc98-r517-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `unconst`. Se presenta como un «salvamento» de adaptador para el modelo base `ammazon/Affine-5dvqtektxx-sbs-v5`, con la etiqueta `affine-h1-salvage`, lo que sugiere que fue creado como respaldo o seguro durante un proceso de minería de adaptadores para un desafío técnico denominado H1.
 
 La información pública es extremadamente limitada: no se especifican licencia, idiomas soportados, arquitectura del modelo base, ni detalles de entrenamiento. El repositorio contiene únicamente el adaptador (0.1 GB) en formato `safetensors`, utilizando la librería `peft`. El nombre del archivo sugiere que el entrenamiento incluyó DPO (offline-dpo) con hiperparámetros concretos (`hialpha`, `midrank`, `lobeta`, `longctx`, `ultraextrasteps`), pero no hay documentación que los detalle.
 
@@ -56,5 +56,5 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/unconst/Affine-5czsc2fc98-r517-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-lora)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/unconst/Affine-5czsc2fc98-r517-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-lora)
 - [Modelo base mencionado (sin página pública verificada)](https://huggingface.co/ammazon/Affine-5dvqtektxx-sbs-v5)

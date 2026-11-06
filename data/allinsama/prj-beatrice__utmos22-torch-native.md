@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Allinsama/prj-beatrice__utmos22-torch-native` es un predictor de calidad de voz (MOS, *Mean Opinion Score*) publicado en HuggingFace con pipeline `audio-classification`, aunque funcionalmente es un modelo de regresión sobre forma de onda. Se trata de un port del *strong learner* de UTMOS22 (Saeki et al., 2022) reescrito para depender unicamente de `torch`, `torchaudio` y `transformers`, tomando como referencia la implementacion de `tarepan/SpeechMOS`. El autor del repo es `Allinsama`, y la model card referencia el espacio `prj-beatrice/utmos22-torch-native`, por lo que conviene verificar cual es el repositorio canonico antes de fijar una version en produccion.
+`Allinsama/prj-beatrice__utmos22-torch-native` es un predictor de calidad de voz (MOS, *Mean Opinion Score*) publicado en Hugging Face con pipeline `audio-classification`, aunque funcionalmente es un modelo de regresión sobre forma de onda. Se trata de un port del *strong learner* de UTMOS22 (Saeki et al., 2022) reescrito para depender unicamente de `torch`, `torchaudio` y `transformers`, tomando como referencia la implementacion de `tarepan/SpeechMOS`. El autor del repo es `Allinsama`, y la model card referencia el espacio `prj-beatrice/utmos22-torch-native`, por lo que conviene verificar cual es el repositorio canonico antes de fijar una version en produccion.
 
 El modelo resuelve un problema muy concreto: estimar de forma automatica la calidad percibida de un clip de audio sin recurrir a paneles humanos. Con 101.723.265 parametros (unos 101,7 M) y un peso `safetensors` de 407 MB en un repo de 0,4 GB, es lo bastante pequeno como para ejecutarse en CPU o en cualquier GPU de consumo, lo que lo hace util para filtrar datasets, evaluar pipelines de TTS o monitorizar calidad en telefonia.
 
@@ -66,7 +66,7 @@ La unica validacion reportada es de equivalencia numerica: el autor afirma que l
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Allinsama/prj-beatrice__utmos22-torch-native` | Predictor MOS (wav2vec2 + LSTM) | 101,7 M | forma de onda, lotes con padding | MIT | HuggingFace, `transformers` con codigo remoto |
+| `Allinsama/prj-beatrice__utmos22-torch-native` | Predictor MOS (wav2vec2 + LSTM) | 101,7 M | forma de onda, lotes con padding | MIT | Hugging Face, `transformers` con codigo remoto |
 | `tarepan/SpeechMOS` (`utmos22_strong`) | Predictor MOS, implementacion de referencia de UTMOS22 | no disponible en la informacion | forma de onda | no disponible en la informacion | `torch.hub` |
 | UTMOS22 original (sarulab-speech) | Predictor MOS, *strong learner* | no disponible en la informacion | forma de onda | no disponible en la informacion | Repositorio GitHub |
 | NISQA | Predictor MOS multi-dimension (senal + bitrate) | no disponible en la informacion | forma de onda | no disponible en la informacion | Codigo abierto |
@@ -88,7 +88,7 @@ La diferencia practica de este port frente a la referencia es de empaquetado, no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Allinsama/prj-beatrice__utmos22-torch-native
+- Modelo en Hugging Face: https://huggingface.co/Allinsama/prj-beatrice__utmos22-torch-native
 - Repositorio referenciado en la model card: https://huggingface.co/prj-beatrice/utmos22-torch-native
 - Arbol de ficheros del repo: https://huggingface.co/prj-beatrice/utmos22-torch-native/tree/main
 - Implementacion de referencia SpeechMOS: https://github.com/tarepan/SpeechMOS

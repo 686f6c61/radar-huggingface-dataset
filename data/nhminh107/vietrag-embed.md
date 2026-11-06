@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VietRAG-Embed es un modelo de embeddings densos para recuperacion de informacion en vietnamita, desarrollado por nhminh107 (minhlab.ai.vn) y publicado en HuggingFace. Se trata de un fine-tune de `intfloat/multilingual-e5-base`, por lo que hereda la arquitectura XLM-RoBERTa de tipo encoder con 278.043.648 parametros y una longitud maxima de secuencia de 512 tokens. El modelo proyecta consultas y pasajes a vectores normalizados de 768 dimensiones pensados para similitud coseno.
+VietRAG-Embed es un modelo de embeddings densos para recuperacion de informacion en vietnamita, desarrollado por nhminh107 (minhlab.ai.vn) y publicado en Hugging Face. Se trata de un fine-tune de `intfloat/multilingual-e5-base`, por lo que hereda la arquitectura XLM-RoBERTa de tipo encoder con 278.043.648 parametros y una longitud maxima de secuencia de 512 tokens. El modelo proyecta consultas y pasajes a vectores normalizados de 768 dimensiones pensados para similitud coseno.
 
 El problema que resuelve es la recuperacion semantica de pasajes en vietnamita, un idioma con menos recursos y con cobertura desigual en los modelos de embeddings multilingues genericos. Esta orientado a busqueda semantica, recuperacion para QA extractivo y generacion aumentada por recuperacion (RAG), asi como a la generacion de candidatos antes de un reranker cross-encoder. No es un modelo generativo: no produce respuestas, solo recupera texto relevante.
 
@@ -95,8 +95,8 @@ Los resultados de VN-MTEB se reportan por separado del benchmark personalizado s
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Rendimiento en recuperacion vietnamita |
 |---|---|---|---|---|---|---|
-| VietRAG-Embed (nhminh107) | 278.043.648 | 512 tokens | vietnamita (principal) | MIT | HuggingFace, safetensors | Recall@1 0.8419 y nDCG@10 0.9102 en mMARCO-VI holdout 04-05; SciFact-VN 0.6130, TRECCOVID-VN 0.6068, Quora-VN 0.5652 en VN-MTEB |
-| intfloat/multilingual-e5-base (modelo base) | 278.043.648 | 512 tokens | multilingue | MIT | HuggingFace, safetensors | no disponible en la informacion proporcionada para las mismas tareas |
+| VietRAG-Embed (nhminh107) | 278.043.648 | 512 tokens | vietnamita (principal) | MIT | Hugging Face, safetensors | Recall@1 0.8419 y nDCG@10 0.9102 en mMARCO-VI holdout 04-05; SciFact-VN 0.6130, TRECCOVID-VN 0.6068, Quora-VN 0.5652 en VN-MTEB |
+| intfloat/multilingual-e5-base (modelo base) | 278.043.648 | 512 tokens | multilingue | MIT | Hugging Face, safetensors | no disponible en la informacion proporcionada para las mismas tareas |
 | Otros bi-encoders especializados en vietnamita | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye resultados de modelos alternativos sobre los mismos conjuntos de evaluacion, por lo que no es posible establecer una comparacion cuantitativa directa mas alla del modelo base del que deriva.
@@ -113,11 +113,11 @@ La informacion proporcionada no incluye resultados de modelos alternativos sobre
 - No se documenta la funcion de perdida, el numero de tokens de entrenamiento ni la composicion exacta del dataset, lo que dificulta reproducir el entrenamiento a partir de la model card.
 - Sesgos conocidos: no disponible. No se publica analisis de sesgos. Los corpus de origen (mMARCO, Wikipedia vietnamita, datos cientificos) pueden introducir sesgos tematicos, de cobertura geografica y de registro linguistico.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion, pero conviene verificar las licencias de los datasets de entrenamiento de forma independiente, ya que la model card no detalla sus condiciones.
-- Estado de adopcion muy bajo en el momento de la ficha (0 descargas y 0 likes en HuggingFace) y fechas de creacion y actualizacion de septiembre de 2026, por lo que se trata de un modelo reciente sin validacion externa por parte de la comunidad.
+- Estado de adopcion muy bajo en el momento de la ficha (0 descargas y 0 likes en Hugging Face) y fechas de creacion y actualizacion de septiembre de 2026, por lo que se trata de un modelo reciente sin validacion externa por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nhminh107/VietRAG-Embed
+- Modelo en Hugging Face: https://huggingface.co/nhminh107/VietRAG-Embed
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base
 - Codigo fuente y artefactos de evaluacion: https://github.com/nhminh107/VietRAG-Embed-E5-Base
 - Sitio web del autor: https://minhlab.ai.vn/

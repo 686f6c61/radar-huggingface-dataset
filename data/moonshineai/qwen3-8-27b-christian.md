@@ -2,7 +2,7 @@
 
 ## Resumen
 
-moonshineai/qwen3.8-27b-Christian es un modelo derivado alojado en HuggingFace por el usuario moonshineai, construido sobre la arquitectura de Qwen3.8-27B de Alibaba. El repositorio pesa 55,6 GB y contiene 27.781.427.952 parametros reales en formato safetensors, lo que coincide con un modelo denso de 27B en precision bf16 (aproximadamente 2 bytes por parametro). El sufijo "Christian" sugiere un ajuste fino con tematica o proposito especifico, pero la model card no aporta ninguna descripcion tecnica, dataset de entrenamiento ni metodologia de ajuste.
+moonshineai/qwen3.8-27b-Christian es un modelo derivado alojado en Hugging Face por el usuario moonshineai, construido sobre la arquitectura de Qwen3.8-27B de Alibaba. El repositorio pesa 55,6 GB y contiene 27.781.427.952 parametros reales en formato safetensors, lo que coincide con un modelo denso de 27B en precision bf16 (aproximadamente 2 bytes por parametro). El sufijo "Christian" sugiere un ajuste fino con tematica o proposito especifico, pero la model card no aporta ninguna descripcion tecnica, dataset de entrenamiento ni metodologia de ajuste.
 
 El modelo base, Qwen3.8-27B, es un transformer denso nativo vision-lenguaje presentado por Alibaba como sucesor de Qwen3.6-27B, con mejoras declaradas en codificacion y productividad de oficina tanto en modalidad de texto como visual, y una ventana de contexto nativa de 262.000 tokens. Es relevante ahora porque representa la linea densa de 27B de la familia Qwen3.8, pensada para tareas de agente de largo horizonte, razonamiento configurable y trabajo profesional, en contraposicion a la variante MoE de 2,4 billones de parametros de la misma familia.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Vision-lenguaje | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moonshineai/qwen3.8-27b-Christian | 27,78B densos | 262K (heredado del base, sin confirmar) | Presuntamente si | MIT | Repositorio HuggingFace, 0 descargas |
+| moonshineai/qwen3.8-27b-Christian | 27,78B densos | 262K (heredado del base, sin confirmar) | Presuntamente si | MIT | Repositorio Hugging Face, 0 descargas |
 | Qwen3.8-27B (base, Alibaba) | 27B densos | 262K nativos | Si | No especificada en las fuentes | Alibaba Cloud Model Studio, Microsoft Foundry, QwenCloud, LM Studio |
 | Qwen3.6-27B (predecesor) | 27B densos | no disponible | Si | No especificada en las fuentes | Alibaba Cloud Model Studio |
 | Qwen3.8 MoE (variante grande) | 2,4T totales (MoE) | no disponible | no disponible | No especificada en las fuentes | Open weights, segun Singularity Moments |
@@ -88,7 +88,7 @@ La comparacion con el modelo base es la mas relevante: este repositorio es un de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moonshineai/qwen3.8-27b-Christian
+- Hugging Face: https://huggingface.co/moonshineai/qwen3.8-27b-Christian
 - Alibaba Cloud Model Studio, Qwen3.8-27B: https://www.alibabacloud.com/help/en/model-studio/qwen3-8-27b
 - Singularity Moments, Qwen 3.8 AI Models: https://singularitymoments.com/qwen-3-8-ai-models/
 - Microsoft Foundry, catalogo de modelos: https://ai.azure.com/catalog/models/qwen--qwen3.8-27b

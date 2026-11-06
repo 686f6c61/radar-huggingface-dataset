@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`imomzoda-dev/corporate-mail-django` no es un modelo de inteligencia artificial, sino un repositorio alojado en HuggingFace que contiene el codigo fuente de una aplicacion web de correo corporativo interno desarrollada con Django 5.2 y Python 3.10+. El proyecto implementa un cliente de correo tipo Gmail para comunicacion entre empleados de una misma organizacion, con almacenamiento de mensajes en base de datos y sin dependencia de un servidor SMTP externo para la correspondencia interna.
+`imomzoda-dev/corporate-mail-django` no es un modelo de inteligencia artificial, sino un repositorio alojado en Hugging Face que contiene el codigo fuente de una aplicacion web de correo corporativo interno desarrollada con Django 5.2 y Python 3.10+. El proyecto implementa un cliente de correo tipo Gmail para comunicacion entre empleados de una misma organizacion, con almacenamiento de mensajes en base de datos y sin dependencia de un servidor SMTP externo para la correspondencia interna.
 
-El repositorio esta publicado por el usuario `imomzoda-dev` y no contiene pesos, tokenizadores, configuraciones de transformer ni artefactos de inferencia. La model card describe funcionalidades de aplicacion (bandejas, hilos, etiquetas, carpetas, filtros, contactos, plantillas) y una guia de despliegue local con `manage.py runserver`. No se declara pipeline, licencia en los metadatos de HuggingFace ni idiomas soportados en la ficha del hub, aunque el README menciona licencia MIT y contenido en ruso.
+El repositorio esta publicado por el usuario `imomzoda-dev` y no contiene pesos, tokenizadores, configuraciones de transformer ni artefactos de inferencia. La model card describe funcionalidades de aplicacion (bandejas, hilos, etiquetas, carpetas, filtros, contactos, plantillas) y una guia de despliegue local con `manage.py runserver`. No se declara pipeline, licencia en los metadatos de Hugging Face ni idiomas soportados en la ficha del hub, aunque el README menciona licencia MIT y contenido en ruso.
 
 Por tanto, esta ficha no puede evaluar capacidades de generacion, razonamiento o rendimiento de un modelo. Se documenta lo que el repositorio contiene realmente y se advierte de que cualquier uso como "modelo" es improcedente.
 
@@ -75,7 +75,7 @@ No procede. Este repositorio no es un modelo de IA y no tiene equivalentes en el
 
 | Alternativa | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| corporate-mail-django | no aplica | no aplica | MIT segun README | repositorio en HuggingFace |
+| corporate-mail-django | no aplica | no aplica | MIT segun README | repositorio en Hugging Face |
 | Cliente de correo Django generico | no disponible | no disponible | no disponible | no disponible |
 | Cliente de correo autoalojado tipo Roundcube | no aplica | no aplica | no disponible en esta ficha | no disponible en esta ficha |
 
@@ -93,7 +93,7 @@ No procede. Este repositorio no es un modelo de IA y no tiene equivalentes en el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imomzoda-dev/corporate-mail-django
+- Repositorio en Hugging Face: https://huggingface.co/imomzoda-dev/corporate-mail-django
 - Repositorio Git indicado en el README: https://github.com/imomzoda-dev/corporate-mail-django
 - Descarga de Python: https://www.python.org/downloads/
 - No se han encontrado en la informacion proporcionada papers, blogs, demos ni otros enlaces adicionales.

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7 ajustado) | 3.144 M | no disponible | Pick-and-place Panda simulado | Apache 2.0 | HuggingFace, 16 descargas |
+| Este checkpoint (GR00T N1.7 ajustado) | 3.144 M | no disponible | Pick-and-place Panda simulado | Apache 2.0 | Hugging Face, 16 descargas |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional robótico general | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
-| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | Imitation learning por tarea | no disponible | HuggingFace / LeRobot |
+| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | Imitation learning por tarea | no disponible | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_dense__mask__overlay_a75__sim__all_cameras__static__groot__seed_0
+- Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_dense__mask__overlay_a75__sim__all_cameras__static__groot__seed_0
 - Dataset: https://huggingface.co/datasets/mim-chess-vlas/train_800_dense__mask__overlay_a75__sim__all_cameras__static
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_dense__mask__overlay_a75__sim__all_cameras__static
 - GR00T N1.7 (NVIDIA Isaac-GR00T): https://github.com/NVIDIA/Isaac-GR00T

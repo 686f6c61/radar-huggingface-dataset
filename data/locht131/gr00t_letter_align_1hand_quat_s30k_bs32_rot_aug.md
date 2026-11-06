@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gr00t_letter_align_1hand_quat_s30k_bs32_rot_aug es un ajuste fino (fine-tune) del modelo vision-language-action (VLA) GR00T N1.5 de NVIDIA, publicado por el usuario locht131 en HuggingFace. A diferencia de un modelo de lenguaje general, se trata de una política de control robótico: recibe observaciones visuales y una instrucción en lenguaje natural, y emite acciones motoras de un solo brazo representadas como cuaterniones. El modelo está entrenado sobre demostraciones reales bimanuales de ALOHA correspondientes a una única tarea de manipulación (alineación de letras), con aumento por rotación activado durante el entrenamiento.
+gr00t_letter_align_1hand_quat_s30k_bs32_rot_aug es un ajuste fino (fine-tune) del modelo vision-language-action (VLA) GR00T N1.5 de NVIDIA, publicado por el usuario locht131 en Hugging Face. A diferencia de un modelo de lenguaje general, se trata de una política de control robótico: recibe observaciones visuales y una instrucción en lenguaje natural, y emite acciones motoras de un solo brazo representadas como cuaterniones. El modelo está entrenado sobre demostraciones reales bimanuales de ALOHA correspondientes a una única tarea de manipulación (alineación de letras), con aumento por rotación activado durante el entrenamiento.
 
 El checkpoint se generó tras 30.000 pasos de entrenamiento con batch size 32 en una sola GPU y sin acumulación de gradiente, guardando checkpoints intermedios cada 10.000 pasos (aunque el repositorio solo publica el modelo final). La arquitectura combina un backbone de lenguaje Eagle/Qwen3-1.7B con una torre de visión SigLIP2-400M y una cabeza de acción, sumando 2.724.163.520 parámetros (unos 2,72 mil millones) con pesos en safetensors y un tamaño de repositorio de 7,6 GB.
 
@@ -32,8 +32,8 @@ Su relevancia es acotada pero clara: sirve como referencia reproducible de un fi
 | Checkpoints guardados cada | 10.000 pasos (no incluidos en el repo) |
 | Tamano del repositorio | 7,6 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-13 |
-| Fecha de ultima actualizacion (segun HuggingFace) | 2026-09-13 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-13 |
+| Fecha de ultima actualizacion (segun Hugging Face) | 2026-09-13 |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM total estimada para inferencia: no disponible. A los pesos hay que sumar las activaciones de la torre SigLIP2-400M, del backbone Qwen3-1.7B y de la cabeza de acción, además del buffer de imágenes de las cámaras, por lo que en la práctica conviene contar con margen sobre los 5,5 GB de pesos.
 - GPU recomendadas: no disponibles. Por tamaño, cabría esperar funcionamiento en A100 (40/80 GB), H100, L40S, RTX 4090 (24 GB), RTX 3090 (24 GB) e incluso tarjetas de 16 GB en FP16, pero el autor no publica requisitos oficiales.
 - Cabe en GPU de consumo: probablemente sí en modelos con 24 GB (RTX 3090, RTX 4090) y posiblemente en 16 GB; no confirmado por el autor.
-- Opciones de despliegue: el SDK de GR00T (`gr00t.model.policy.Gr00tPolicy` con `data_config` y `modality_transform`) es la vía documentada. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que además no son adecuados para una política VLA con cabeza de acción. Es imprescindible disponer de `experiment_cfg/metadata.json` junto a los pesos.
+- Opciones de despliegue: el SDK de GR00T (`gr00t.model.policy.Gr00tPolicy` con `data_config` y `modality_transform`) es la vía documentada. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que además no son adecuados para una política VLA con cabeza de acción. Es imprescindible disponer de `experiment_cfg/metadata.json` junto a los pesos.
 - Latencia y throughput: no disponibles. No se publican cifras de frecuencia de control, tiempo de inferencia por acción ni tasa de éxito.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ Los resultados de la búsqueda web proporcionada no contienen información técn
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| locht131/gr00t_letter_align_1hand_quat_s30k_bs32_rot_aug | VLA, fine-tune de tarea específica (ALOHA, un brazo, cuaterniones) | 2.724.163.520 | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| locht131/gr00t_letter_align_1hand_quat_s30k_bs32_rot_aug | VLA, fine-tune de tarea específica (ALOHA, un brazo, cuaterniones) | 2.724.163.520 | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | GR00T N1.5 (modelo base) | VLA generalista de NVIDIA | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | referencia citada como base |
 | OpenVLA / OpenVLA-OFT | VLA de propósito general para manipulación | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | alternativa conocida de la categoría |
 | pi0 / pi0-FAST (Physical Intelligence) | VLA orientada a control robótico | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | alternativa conocida de la categoría |
@@ -100,11 +100,11 @@ Los resultados de la búsqueda web proporcionada no contienen información técn
 - Idoneidad para producción no demostrada: con 0 descargas y 0 valoraciones, y sin logs de entrenamiento ni checkpoints intermedios publicados, no hay evidencia de terceros sobre su comportamiento.
 - Licencia permisiva con matices: Apache 2.0 permite uso comercial, pero el modelo deriva de GR00T N1.5 y de pesos de Qwen3 y SigLIP2; conviene verificar las condiciones de los modelos base antes de un uso comercial.
 - Seguridad física: cualquier despliegue en hardware real requiere límites de par, paradas de emergencia y validación en espacio de trabajo seguro; el modelo no incorpora mecanismos de seguridad propios.
-- Fecha de publicación inusual: los metadatos de HuggingFace indican creación el 2026-09-13, posterior a la fecha habitual de referencia; conviene verificar la vigencia del repositorio.
+- Fecha de publicación inusual: los metadatos de Hugging Face indican creación el 2026-09-13, posterior a la fecha habitual de referencia; conviene verificar la vigencia del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/locht131/gr00t_letter_align_1hand_quat_s30k_bs32_rot_aug
+- Modelo en Hugging Face: https://huggingface.co/locht131/gr00t_letter_align_1hand_quat_s30k_bs32_rot_aug
 - Repositorio de GR00T (NVIDIA Isaac GR00T), referenciado por la model card a través de los módulos `gr00t.model.policy`, `gr00t.experiment.data_config` y `experiment_cfg/metadata.json`: no se proporciona la URL exacta en la información disponible.
 - Dataset `aloha_letter_align_quat_lerobot`: no se proporciona la URL en la información disponible.
 - Paper de GR00T N1/N1.5, blog técnico de NVIDIA, demos y espacios: no disponibles en la información proporcionada.

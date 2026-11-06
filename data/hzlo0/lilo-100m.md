@@ -104,7 +104,7 @@ Comparacion con modelos de otras familias (Qwen, TinyLlama u otros del rango 100
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hzlo0/lilo-100m
+- Modelo en Hugging Face: https://huggingface.co/hzlo0/lilo-100m
 - Modelo base: https://huggingface.co/neosantara/wader-100m-base
 - Modelo upstream con SFT: https://huggingface.co/neosantara/wader-100m
 - Dataset de preentrenamiento: https://huggingface.co/datasets/neosantara/IndoTalk

@@ -84,7 +84,7 @@ La comparativa se limita a los modelos de la cadena de derivacion, ya que la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-MTP-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Finetune Hermes de origen: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
 - Dataset de function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1

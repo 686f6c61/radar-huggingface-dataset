@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pavaniai (Pro Max Edition) es un adaptador de ajuste fino publicado en HuggingFace por el usuario shiva123782, construido sobre el modelo base Qwen/Qwen3-0.6B. Segun las etiquetas del repositorio se trata de un modelo de generacion de texto orientado a chat conversacional, entrenado presumiblemente con LoRA y cuantizacion de 4 bits (QLoRA), y distribuido en formato safetensors bajo licencia Apache 2.0. El repositorio no registra descargas ni "likes" y su tamano declarado es de 0.0 GB, lo que sugiere que los pesos pueden no estar efectivamente subidos o que el contenido es minimo.
+Pavaniai (Pro Max Edition) es un adaptador de ajuste fino publicado en Hugging Face por el usuario shiva123782, construido sobre el modelo base Qwen/Qwen3-0.6B. Segun las etiquetas del repositorio se trata de un modelo de generacion de texto orientado a chat conversacional, entrenado presumiblemente con LoRA y cuantizacion de 4 bits (QLoRA), y distribuido en formato safetensors bajo licencia Apache 2.0. El repositorio no registra descargas ni "likes" y su tamano declarado es de 0.0 GB, lo que sugiere que los pesos pueden no estar efectivamente subidos o que el contenido es minimo.
 
 La model card describe el modelo como "heavily optimized" y afirma disponer de un "identity firewall" y "zero-hallucination guardrails", ademas de declarar "1 Billion Identity Tests Passed" y una cuantizacion "4-bit QLoRA". Estas afirmaciones son comerciales y no vienen acompanadas de metodologia, datos de evaluacion ni artefactos verificables, por lo que deben tratarse con cautela. No se documenta el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
@@ -44,7 +44,7 @@ No hay informacion sobre la composicion del dataset de ajuste. En el perfil del 
 - Asistentes de escritorio o embebidos con recursos limitados: un modelo de esta escala puede ejecutarse en CPU o en GPU de gama baja para tareas de generacion de texto simple.
 - Generacion de respuestas de estilo controlado: si el ajuste realmente impone una identidad conversacional fija, seria adecuado para personajes o bots de marca con un tono concreto (pendiente de verificacion).
 - Filtrado y clasificacion de texto ligera: tareas de etiquetado o reformulacion de frases donde no se requiere razonamiento profundo.
-- Demostraciones educativas: ejemplo de publicacion de adaptadores LoRA en HuggingFace y de carga mediante la libreria transformers.
+- Demostraciones educativas: ejemplo de publicacion de adaptadores LoRA en Hugging Face y de carga mediante la libreria transformers.
 - Base para nuevos ajustes: punto de partida para fine-tunings posteriores sobre un modelo pequeno, aunque conviene partir del Qwen3-0.6B original si no se dispone de los pesos del adaptador.
 
 ## Benchmarks y rendimiento
@@ -84,8 +84,8 @@ Nota: los datos de contexto e idiomas de las alternativas corresponden a los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/shiva123782/Pavaniai
+- Repositorio Hugging Face del modelo: https://huggingface.co/shiva123782/Pavaniai
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
-- Perfil del autor en HuggingFace: https://huggingface.co/shiva123782
+- Perfil del autor en Hugging Face: https://huggingface.co/shiva123782
 - Modelo relacionado Pavaniai89: https://huggingface.co/shiva123782/Pavaniai89
 - No se han encontrado papers, blogs tecnicos ni repositorios adicionales asociados a este modelo en la busqueda web realizada.

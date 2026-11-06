@@ -1,7 +1,7 @@
 # shamux/diffusion_so101_cube
 
 ## Resumen
-shamux/diffusion_so101_cube es una política visomotora (policy) de robótica entrenada con el framework LeRobot de HuggingFace, publicada por el usuario shamux. No es un modelo de lenguaje: se trata de una implementación de Diffusion Policy aplicada al control de un brazo robótico SO-101 en la tarea concreta "Pick up the cube and place it in the bin" (coger el cubo y depositarlo en la papelera). Emite acciones de 6 grados de libertad a partir de una observación compuesta por el estado de las articulaciones y una única cámara de muñeca. La relevancia actual radica en que materializa el patrón de imitación end-to-end con políticas generativas en hardware accesible, mostrando cómo un modelo de 262 millones de parámetros puede automatizar una tarea de manipulación con una sola cámara.
+shamux/diffusion_so101_cube es una política visomotora (policy) de robótica entrenada con el framework LeRobot de Hugging Face, publicada por el usuario shamux. No es un modelo de lenguaje: se trata de una implementación de Diffusion Policy aplicada al control de un brazo robótico SO-101 en la tarea concreta "Pick up the cube and place it in the bin" (coger el cubo y depositarlo en la papelera). Emite acciones de 6 grados de libertad a partir de una observación compuesta por el estado de las articulaciones y una única cámara de muñeca. La relevancia actual radica en que materializa el patrón de imitación end-to-end con políticas generativas en hardware accesible, mostrando cómo un modelo de 262 millones de parámetros puede automatizar una tarea de manipulación con una sola cámara.
 
 El modelo fue entrenado íntegramente con el dataset shamux/so101_cube_camera, formado por 51 episodios y 23 612 fotogramas grabados a 30 FPS, mediante 100 000 pasos de optimización con Adam y una tasa de aprendizaje de 0,0001. Diffusion Policy trata el control motor como un proceso generativo de difusión, produciendo trayectorias de acción suaves y multimodales que destacan en escenarios de contacto rico (contact-rich manipulation), según el artículo de referencia 2303.04137.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto/observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shamux/diffusion_so101_cube | Diffusion Policy (visomotor) | 262 962 942 | state (6,) + imagen muñeca 480x640 | apache-2.0 | HuggingFace Hub |
+| shamux/diffusion_so101_cube | Diffusion Policy (visomotor) | 262 962 942 | state (6,) + imagen muñeca 480x640 | apache-2.0 | Hugging Face Hub |
 | ACCION (Action Chunking Transformer) en LeRobot | Transformer por chunks | no disponible | state + imagenes | apache-2.0 en LeRobot | LeRobot |
 | VQ-BeT | Cuantizacion vectorial de comportamiento | no disponible | state + imagenes | apache-2.0 en LeRobot | LeRobot |
 | TDMPC | Modelo de mundo con planificacion | no disponible | state + imagenes | apache-2.0 en LeRobot | LeRobot |
@@ -80,7 +80,7 @@ Los modelos alternativos pertenecen al mismo ecosistema LeRobot y comparten el e
 - Idiomas: no disponible (no procesa texto).
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/shamux/diffusion_so101_cube
+- Modelo en Hugging Face: https://huggingface.co/shamux/diffusion_so101_cube
 - Dataset de entrenamiento: https://huggingface.co/datasets/shamux/so101_cube_camera
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=shamux/so101_cube_camera
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137

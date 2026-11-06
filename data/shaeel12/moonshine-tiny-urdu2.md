@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`shaeel12/moonshine-tiny-urdu2` es un ajuste fino (fine-tune) del modelo de reconocimiento automático del habla (ASR) Moonshine Tiny, publicado por el usuario shaeel12 en HuggingFace Hub. El repositorio contiene pesos en formato safetensors con 27.092.736 parámetros y la etiqueta de pipeline `automatic-speech-recognition`. El nombre del repositorio sugiere que el ajuste se ha orientado al urdu, aunque la model card no declara idiomas soportados ni licencia.
+`shaeel12/moonshine-tiny-urdu2` es un ajuste fino (fine-tune) del modelo de reconocimiento automático del habla (ASR) Moonshine Tiny, publicado por el usuario shaeel12 en Hugging Face Hub. El repositorio contiene pesos en formato safetensors con 27.092.736 parámetros y la etiqueta de pipeline `automatic-speech-recognition`. El nombre del repositorio sugiere que el ajuste se ha orientado al urdu, aunque la model card no declara idiomas soportados ni licencia.
 
 Se trata de un modelo de muy bajo coste computacional (repo de 0,1 GB) pensado para transcripción de audio en dispositivos con recursos limitados, no para generación de texto. Su relevancia radica en el nicho: el urdu es una lengua con relativamente pocos modelos ASR abiertos y de tamaño reducido, por lo que un fine-tune de 27M parámetros sobre una arquitectura ya optimizada para inferencia en el borde puede ser útil para prototipado rápido y despliegue embebido.
 
-El estado del arte del artefacto es, sin embargo, precario: la model card es la plantilla genérica autogenerada por HuggingFace con todos los campos marcados como `[More Information Needed]`, el modelo acumula 0 descargas y 0 likes, y no se documentan datos de entrenamiento, licencia ni evaluación. Cualquier uso en producción exige verificación previa por parte del integrador.
+El estado del arte del artefacto es, sin embargo, precario: la model card es la plantilla genérica autogenerada por Hugging Face con todos los campos marcados como `[More Information Needed]`, el modelo acumula 0 descargas y 0 likes, y no se documentan datos de entrenamiento, licencia ni evaluación. Cualquier uso en producción exige verificación previa por parte del integrador.
 
 ## Especificaciones técnicas
 
@@ -34,7 +34,7 @@ Tampoco se documentan hiperparámetros de entrenamiento (`fp32`, `bf16`, precisi
 
 - Reconocimiento automático del habla (ASR): transcripción de audio a texto, presumiblemente en urdu según el identificador del repositorio.
 - Procesamiento de audio de entrada mediante el pipeline `automatic-speech-recognition` de `transformers`.
-- Compatibilidad declarada con `endpoints_compatible`, es decir, puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad declarada con `endpoints_compatible`, es decir, puede desplegarse en Hugging Face Inference Endpoints.
 - No hay evidencia de soporte de tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo de voz, no un modelo de lenguaje generativo conversacional.
 - No hay evidencia de capacidades multilingües documentadas, ni de traducción, ni de salida con marcas de tiempo, diarización de hablantes o detección de idioma.
 - No hay modo "thinking", visión ni audio de salida.
@@ -50,7 +50,7 @@ Dado que la model card es una plantilla vacía, ninguna de las capacidades anter
 - Analítica de centros de llamadas en urdu: transcripción de conversaciones grabadas para clasificación posterior, búsqueda de palabras clave y control de calidad, aceptando que la precisión en audio telefónico ruidoso puede degradarse notablemente.
 - Punto de partida para fine-tuning posterior: al ser un modelo pequeño, sirve como base para experimentos de transferencia a otras lenguas o dominios con presupuesto de cómputo reducido, ajustando con datasets propios de pocas decenas de horas.
 - Comandos de voz embebidos: transcripción de frases cortas para activar acciones en dispositivos domóticos o industriales, un escenario para el que la familia Moonshine fue diseñada explícitamente.
-- Prueba de concepto en pipelines de HuggingFace Endpoints: gracias a la etiqueta `endpoints_compatible`, permite montar una demo de ASR en urdu en pocos minutos para evaluar viabilidad antes de invertir en un modelo mayor.
+- Prueba de concepto en pipelines de Hugging Face Endpoints: gracias a la etiqueta `endpoints_compatible`, permite montar una demo de ASR en urdu en pocos minutos para evaluar viabilidad antes de invertir en un modelo mayor.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No hay métricas de WER/CER, ni comparaciones con Whisper, ni resultados en conj
 - VRAM estimada para los pesos: aproximadamente 108 MB en FP32, 54 MB en FP16/BF16 y 27 MB en INT8. Hay que sumar el consumo de activaciones y del búfer de audio, pero el total se mantiene holgadamente por debajo de 1 GB en cualquier configuración razonable.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM sirve; el modelo es funcionalmente viable incluso en iGPU. Una RTX 4090, A100 o H100 estarían enormemente sobredimensionadas y solo tendrían sentido para servir muchas peticiones concurrentes.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna e incluso en GPUs integradas, teléfonos de gama media y placas como Raspberry Pi (siempre que exista una ruta de ejecución adecuada, por ejemplo ONNX Runtime).
-- Opciones de despliegue: `transformers` con el pipeline `automatic-speech-recognition` es la vía documentada por los tags. La etiqueta `endpoints_compatible` habilita HuggingFace Inference Endpoints. No aplica vLLM, llama.cpp ni Ollama, porque no es un modelo de lenguaje decoder-only. La exportación a ONNX Runtime o a runtimes específicos de la familia Moonshine no está documentada en este repositorio y requeriría trabajo adicional.
+- Opciones de despliegue: `transformers` con el pipeline `automatic-speech-recognition` es la vía documentada por los tags. La etiqueta `endpoints_compatible` habilita Hugging Face Inference Endpoints. No aplica vLLM, llama.cpp ni Ollama, porque no es un modelo de lenguaje decoder-only. La exportación a ONNX Runtime o a runtimes específicos de la familia Moonshine no está documentada en este repositorio y requeriría trabajo adicional.
 - Latencia y throughput estimados: no disponibles. Con 27M parámetros, en cualquier GPU moderna la latencia estaría dominada por el preprocesado de audio y la sobrecarga del framework, no por el cálculo del modelo, pero esto es una estimación cualitativa no respaldada por mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -72,11 +72,11 @@ Los datos de las alternativas provienen de la documentación pública de cada fa
 
 | Modelo | Parámetros | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `shaeel12/moonshine-tiny-urdu2` | 27,1M | no disponible (probable urdu) | no disponible | HuggingFace Hub, 0 descargas | Model card vacía; sin evaluación publicada |
-| Moonshine Tiny (base, Useful Sensors) | ~27M | Inglés principalmente | MIT (según documentación pública) | HuggingFace Hub | Modelo original del que presumiblemente deriva |
-| Moonshine Base (Useful Sensors) | ~61M | Inglés principalmente | MIT (según documentación pública) | HuggingFace Hub | Más capacidad, todavía muy ligero |
-| Whisper Tiny (OpenAI) | ~39M | Multilingüe (decenas de idiomas) | MIT | HuggingFace Hub, ecosistema amplio | Alternativa multilingüe con mejor soporte de herramientas |
-| Whisper Base (OpenAI) | ~74M | Multilingüe | MIT | HuggingFace Hub | Referencia habitual para ASR de bajo coste |
+| `shaeel12/moonshine-tiny-urdu2` | 27,1M | no disponible (probable urdu) | no disponible | Hugging Face Hub, 0 descargas | Model card vacía; sin evaluación publicada |
+| Moonshine Tiny (base, Useful Sensors) | ~27M | Inglés principalmente | MIT (según documentación pública) | Hugging Face Hub | Modelo original del que presumiblemente deriva |
+| Moonshine Base (Useful Sensors) | ~61M | Inglés principalmente | MIT (según documentación pública) | Hugging Face Hub | Más capacidad, todavía muy ligero |
+| Whisper Tiny (OpenAI) | ~39M | Multilingüe (decenas de idiomas) | MIT | Hugging Face Hub, ecosistema amplio | Alternativa multilingüe con mejor soporte de herramientas |
+| Whisper Base (OpenAI) | ~74M | Multilingüe | MIT | Hugging Face Hub | Referencia habitual para ASR de bajo coste |
 
 La ventaja competitiva de este fine-tune sería la especialización en urdu con un coste de inferencia mínimo; su desventaja, frente a Whisper, es la ausencia total de documentación, evaluación y garantías de licencia.
 
@@ -94,9 +94,9 @@ La ventaja competitiva de este fine-tune sería la especialización en urdu con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shaeel12/moonshine-tiny-urdu2
+- Repositorio en Hugging Face: https://huggingface.co/shaeel12/moonshine-tiny-urdu2
 - Paper citado en los metadatos (calculador de impacto, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML referenciado en la plantilla: https://mlco2.github.io/impact
-- Familia Moonshine de Useful Sensors (referencia externa, no enlazada desde este repositorio): organización `useful-sensors` en HuggingFace Hub
+- Familia Moonshine de Useful Sensors (referencia externa, no enlazada desde este repositorio): organización `useful-sensors` en Hugging Face Hub
 - OpenAI Whisper (alternativa multilingüe de referencia): https://github.com/openai/whisper
 - No se han encontrado papers, blogs, demos ni repositorios específicos de este fine-tune en la búsqueda web realizada.

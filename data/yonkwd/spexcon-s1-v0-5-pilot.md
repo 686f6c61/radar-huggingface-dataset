@@ -63,6 +63,6 @@ No disponible. No se han encontrado comparaciones con otros adaptadores o modelo
 
 ## Enlaces
 
-- [HuggingFace - YONKWd/Spexcon-S1-v0.5-Pilot](https://huggingface.co/YONKWd/Spexcon-S1-v0.5-Pilot)
+- [Hugging Face - YONKWd/Spexcon-S1-v0.5-Pilot](https://huggingface.co/YONKWd/Spexcon-S1-v0.5-Pilot)
 - [Proyecto fuente: YONKWd/Spexcon-S1](https://huggingface.co/YONKWd/Spexcon-S1) (no se proporciona URL directa, pero se menciona en la model card)
 - [Dataset: HuggingFaceH4/ultrachat_200k](https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k)

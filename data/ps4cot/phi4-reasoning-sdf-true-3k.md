@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada para inferencia**: los pesos completos en 16 bits ocupan aproximadamente 29,3 GB (14.659.507.200 parámetros × 2 bytes). A esto hay que sumar el overhead de activaciones, que no se especifica.
 - **GPU recomendadas**: para cargar el modelo en 16 bits se necesita una GPU con al menos 32 GB de VRAM, como una A100 40GB, A100 80GB o H100. También sería posible en configuraciones multi-GPU.
 - **GPU de consumo**: no cabe en una GPU de consumo estándar de 24 GB (RTX 3090/4090) sin cuantización. No se proporcionan cuantizaciones oficiales, por lo que habría que cuantizar manualmente para reducir el tamaño.
-- **Opciones de despliegue**: según los tags de HuggingFace, el modelo es compatible con `text-generation-inference` y `endpoints_compatible`. También es cargable con `transformers` directamente.
+- **Opciones de despliegue**: según los tags de Hugging Face, el modelo es compatible con `text-generation-inference` y `endpoints_compatible`. También es cargable con `transformers` directamente.
 - **Latencia y throughput**: no disponible.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ Los modelos hermanos comparten la misma arquitectura base y la misma metodologí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4CoT/phi4-reasoning-sdf-true-3k
+- Modelo en Hugging Face: https://huggingface.co/PS4CoT/phi4-reasoning-sdf-true-3k
 - Modelo base: https://huggingface.co/microsoft/Phi-4-reasoning
 - Repositorio CoT-Verse: https://github.com/ps-research/CoT-Verse
 - Organismo hermano (false-1k): https://huggingface.co/PS4CoT/phi4-reasoning-sdf-false-1k

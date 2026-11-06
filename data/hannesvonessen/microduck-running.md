@@ -89,7 +89,7 @@ No se dispone de informacion sobre politicas comparables de locomocion para Micr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HannesVonEssen/microduck-running
+- Modelo en Hugging Face: https://huggingface.co/HannesVonEssen/microduck-running
 - Perfil del autor: https://huggingface.co/HannesVonEssen
 - Repositorio de entrenamiento: https://github.com/Vottivott/microduck_rl
 - Pagina de Microduck en Pollen Robotics: https://pollen-robotics.com/microduck/

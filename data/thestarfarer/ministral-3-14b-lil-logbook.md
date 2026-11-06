@@ -87,10 +87,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Ministral-3-14B-lil-logbook` | 13,5B (base) + adaptadores rsLoRA r512 | No disponible | Roleplay / SFT de diálogo; 7 adaptadores y GGUFs F16/Q8_0 | Apache 2.0 | HuggingFace, FriendliAI |
-| `mistralai/Ministral-3-14B-Base-2512` | 13,5B núcleo + 0,4B codificador visual (según fuente externa) | No disponible | Modelo base preentrenado multimodal | Apache 2.0 | HuggingFace (modelo padre) |
-| `thestarfarer/Ministral-3-14B-writer-sft-rp-v3` | 13,5B + adaptador RP (186M tokens de entrenamiento) | No disponible | RP y prosa de foro; usado como inicialización de `v3-lil` | No disponible | HuggingFace |
-| Familia Ministral 3 (variantes 3B y 8B, según fuente externa) | 3B / 8B | No disponible | Modelos de la misma familia para despliegue local | Apache 2.0 (según fuente) | HuggingFace |
+| `Ministral-3-14B-lil-logbook` | 13,5B (base) + adaptadores rsLoRA r512 | No disponible | Roleplay / SFT de diálogo; 7 adaptadores y GGUFs F16/Q8_0 | Apache 2.0 | Hugging Face, FriendliAI |
+| `mistralai/Ministral-3-14B-Base-2512` | 13,5B núcleo + 0,4B codificador visual (según fuente externa) | No disponible | Modelo base preentrenado multimodal | Apache 2.0 | Hugging Face (modelo padre) |
+| `thestarfarer/Ministral-3-14B-writer-sft-rp-v3` | 13,5B + adaptador RP (186M tokens de entrenamiento) | No disponible | RP y prosa de foro; usado como inicialización de `v3-lil` | No disponible | Hugging Face |
+| Familia Ministral 3 (variantes 3B y 8B, según fuente externa) | 3B / 8B | No disponible | Modelos de la misma familia para despliegue local | Apache 2.0 (según fuente) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thestarfarer/Ministral-3-14B-lil-logbook
+- Repositorio Hugging Face: https://huggingface.co/thestarfarer/Ministral-3-14B-lil-logbook
 - Peso del adaptador: https://huggingface.co/thestarfarer/Ministral-3-14B-lil-logbook/blob/main/adapter_model.safetensors
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Base-2512
 - Adaptador precedente (`writer-sft-rp-v3`): https://huggingface.co/thestarfarer/Ministral-3-14B-writer-sft-rp-v3

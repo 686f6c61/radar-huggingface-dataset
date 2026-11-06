@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rty813/humanizer-bf16
+- Repositorio en Hugging Face: https://huggingface.co/rty813/humanizer-bf16
 - Modelo original: https://huggingface.co/jialinyyzz/humanizer
 - Modelo base: https://huggingface.co/google/gemma-4-12B
 - Repositorio del proyecto y aplicacion local: https://github.com/sgaofen/humanizer-local-model

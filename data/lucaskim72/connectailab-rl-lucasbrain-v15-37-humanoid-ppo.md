@@ -76,7 +76,7 @@ La puntuación reportada para v15.37 (9133,7 con 55,27 de avance y 1.000 pasos) 
 
 | Modelo | Tipo | Entorno | Puntuacion reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v15.37-humanoid-ppo | PPO, control continuo | Humanoid-v5 | 9133,7 (1.000 pasos) | no disponible | HuggingFace |
+| connectailab-rl-lucasbrain-v15.37-humanoid-ppo | PPO, control continuo | Humanoid-v5 | 9133,7 (1.000 pasos) | no disponible | Hugging Face |
 | Políticas PPO de referencia (Stable-Baselines3) | PPO, control continuo | Humanoid-v5 | no disponible en esta ficha | MIT (SB3) | PyPI/GitHub |
 | Políticas SAC/TD3 de referencia | Off-policy, control continuo | Humanoid-v5 | no disponible en esta ficha | MIT (SB3) | PyPI/GitHub |
 
@@ -95,9 +95,9 @@ No se dispone de datos comparativos verificados con otras políticas sobre `Huma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.37-humanoid-ppo
+- Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.37-humanoid-ppo
 - Repositorio de versiones previas (v15.1–v15.4): referenciadas en la model card, sin URL directa disponible
-- `added_scores.py`: disponible en el propio repositorio de HuggingFace
+- `added_scores.py`: disponible en el propio repositorio de Hugging Face
 - Entorno `Humanoid-v5`: https://gymnasium.farama.org/environments/mujoco/humanoid/
 - MuJoCo: https://mujoco.org/
 - Stable-Baselines3 (baseline PPO): https://github.com/DLR-RM/stable-baselines3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SieloRobotics/pi05_cubes es un modelo de Vision-Language-Action (VLA) para robótica, publicado por SieloRobotics en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo base lerobot/pi05_base, que a su vez implementa π₀.₅ (Pi05) de Physical Intelligence en el framework LeRobot. El modelo consume observaciones visuales y de estado del robot y produce directamente comandos de accion de 7 dimensiones, lo que permite controlar un brazo robotico de forma extremo a extremo a partir de instrucciones en lenguaje natural.
+SieloRobotics/pi05_cubes es un modelo de Vision-Language-Action (VLA) para robótica, publicado por SieloRobotics en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo base lerobot/pi05_base, que a su vez implementa π₀.₅ (Pi05) de Physical Intelligence en el framework LeRobot. El modelo consume observaciones visuales y de estado del robot y produce directamente comandos de accion de 7 dimensiones, lo que permite controlar un brazo robotico de forma extremo a extremo a partir de instrucciones en lenguaje natural.
 
 El modelo resuelve una tarea concreta de manipulacion: recoger cubos y colocarlos en una caja ("pick up the cubes and place them into the box"). Esta especializado para el robot `rebot_b601_follower` y utiliza dos camaras (muñeca y cenital) junto con el estado de 7 grados de libertad. Con 4.143.404.816 parametros (aproximadamente 4,14 mil millones, segun los metadatos de safetensors) y una licencia Apache 2.0, es relevante porque demuestra el flujo de trabajo de ajuste fino de un modelo fundacional VLA sobre un dataset propio de demostraciones, un patron cada vez mas comun para desplegar politicas roboticas especificas.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SieloRobotics/pi05_cubes | VLA (fine-tune) | ~4,14 mil millones | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| lerobot/pi05_base | VLA (base) | no disponible en la informacion | no disponible | no disponible en la informacion | HuggingFace (modelo base citado) |
+| SieloRobotics/pi05_cubes | VLA (fine-tune) | ~4,14 mil millones | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| lerobot/pi05_base | VLA (base) | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face (modelo base citado) |
 | π₀ (pi0) | VLA (predecesor) | no disponible en la informacion | no disponible | no disponible en la informacion | Repositorio OpenPI de Physical Intelligence (citado) |
 
 No se dispone de datos de rendimiento, contexto ni parametros de los modelos comparables dentro de la informacion proporcionada, por lo que la comparacion se limita a la relacion de ajuste (base frente a fine-tune) y a la licencia.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento, contexto ni parametros de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SieloRobotics/pi05_cubes
+- Modelo en Hugging Face: https://huggingface.co/SieloRobotics/pi05_cubes
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/SieloRobotics/rebot_pick_place
 - Blog de π₀.₅ (Pi05) de Physical Intelligence: https://www.physicalintelligence.company/blog/pi05

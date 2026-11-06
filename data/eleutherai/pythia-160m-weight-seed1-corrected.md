@@ -81,7 +81,7 @@ La diferencia clave frente a alternativas generalistas es el proposito cientific
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EleutherAI/pythia-160m-weight-seed1-corrected
+- Hugging Face: https://huggingface.co/EleutherAI/pythia-160m-weight-seed1-corrected
 - Repositorio del proyecto Pythia (EleutherAI): no disponible en la informacion proporcionada
 - Paper de Pythia: no disponible en la informacion proporcionada
 - Blog de EleutherAI sobre Pythia: no disponible en la informacion proporcionada

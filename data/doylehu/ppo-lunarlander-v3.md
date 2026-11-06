@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DoyleHu/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, utilizando la librería Stable-Baselines3. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal que controla un módulo de aterrizaje en un entorno físico simulado en 2D. El autor del repositorio es DoyleHu y el artefacto se publica en HuggingFace Hub bajo el pipeline `reinforcement-learning`.
+`DoyleHu/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, utilizando la librería Stable-Baselines3. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal que controla un módulo de aterrizaje en un entorno físico simulado en 2D. El autor del repositorio es DoyleHu y el artefacto se publica en Hugging Face Hub bajo el pipeline `reinforcement-learning`.
 
 El modelo resuelve una tarea concreta: aprender una política que maximice la recompensa acumulada en LunarLander-v3, que consiste en aterrizar suavemente una nave entre dos banderas sin estrellarse ni salirse de los límites del viewport. Según el `model-index` declarado por el autor, el agente alcanza una recompensa media de 258,50 con una desviación de 38,26, un resultado que supera el umbral de resolución típico del entorno (200 puntos). El dato no está verificado de forma independiente.
 
@@ -29,7 +29,7 @@ La relevancia del artefacto es limitada fuera del ámbito educativo y de experim
 
 El agente sigue el esquema estándar de PPO implementado en Stable-Baselines3: una política actor-crítico con red neuronal multicapa que recibe el vector de observación de 8 dimensiones de LunarLander-v3 (posición, velocidad, ángulo, velocidad angular, contacto con el suelo y estado de las piernas) y produce una acción discreta de 4 valores (no hacer nada, encender motor izquierdo, motor principal o motor derecho). El entrenamiento es on-policy, con recorte de la ratio de probabilidad (`clip_range`) para limitar la magnitud de las actualizaciones y estabilizar el aprendizaje.
 
-No se dispone de información sobre el número de pasos de entrenamiento, hiperparámetros (learning rate, `n_steps`, `batch_size`, `gamma`, `gae_lambda`, `ent_coef`), semillas utilizadas ni composición de episodios. Tampoco se documenta si se empleó paralelización vectorizada (`SubprocVecEnv` o `DummyVecEnv`) ni recompensas conformadas. La model card es una plantilla autogenerada por HuggingFace con un `TODO` en la sección de uso, lo que impide verificar el proceso de entrenamiento.
+No se dispone de información sobre el número de pasos de entrenamiento, hiperparámetros (learning rate, `n_steps`, `batch_size`, `gamma`, `gae_lambda`, `ent_coef`), semillas utilizadas ni composición de episodios. Tampoco se documenta si se empleó paralelización vectorizada (`SubprocVecEnv` o `DummyVecEnv`) ni recompensas conformadas. La model card es una plantilla autogenerada por Hugging Face con un `TODO` en la sección de uso, lo que impide verificar el proceso de entrenamiento.
 
 ## Capacidades
 
@@ -72,10 +72,10 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DoyleHu/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 258,50 ± 38,26 (declarado) | no disponible | HuggingFace Hub |
-| sb3/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible en esta ficha | no disponible | HuggingFace Hub (referencia de la comunidad) |
-| sb3/dqn-LunarLander-v2 | DQN | LunarLander-v2 | no disponible en esta ficha | no disponible | HuggingFace Hub |
-| sb3/a2c-LunarLander-v2 | A2C | LunarLander-v2 | no disponible en esta ficha | no disponible | HuggingFace Hub |
+| DoyleHu/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 258,50 ± 38,26 (declarado) | no disponible | Hugging Face Hub |
+| sb3/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible en esta ficha | no disponible | Hugging Face Hub (referencia de la comunidad) |
+| sb3/dqn-LunarLander-v2 | DQN | LunarLander-v2 | no disponible en esta ficha | no disponible | Hugging Face Hub |
+| sb3/a2c-LunarLander-v2 | A2C | LunarLander-v2 | no disponible en esta ficha | no disponible | Hugging Face Hub |
 
 No se dispone de datos verificados de recompensa para los modelos comparables en la información proporcionada; la comparación se limita a algoritmo, entorno y disponibilidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos verificados de recompensa para los modelos comparables en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DoyleHu/ppo-LunarLander-v3
+- Hugging Face: https://huggingface.co/DoyleHu/ppo-LunarLander-v3
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentación de `huggingface_sb3`: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

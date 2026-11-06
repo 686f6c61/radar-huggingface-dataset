@@ -41,7 +41,7 @@ La configuración de compresión (`smash_config.json`) indica que todas las téc
 - Benchmarking de infraestructura: al ser un modelo minúsculo, sirve para medir la sobrecarga de frameworks de inferencia (vLLM, TGI, llama.cpp) sin el coste computacional de un modelo grande.
 - Verificación de compatibilidad de formatos: permite comprobar que el formato safetensors y los metadatos asociados son legibles por diferentes versiones de transformers.
 - Pruebas de despliegue en entornos restringidos: útil para validar que un servidor de inferencia arranca y responde correctamente con un modelo mínimo antes de desplegar modelos reales.
-- Formación de nuevos desarrolladores: sirve como ejemplo didáctico para entender la estructura de un modelo de HuggingFace y el flujo de Pruna sin necesidad de recursos computacionales.
+- Formación de nuevos desarrolladores: sirve como ejemplo didáctico para entender la estructura de un modelo de Hugging Face y el flujo de Pruna sin necesidad de recursos computacionales.
 
 ## Benchmarks y rendimiento
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables en la misma categoría, ya que este es un artefacto de prueba sin funcionalidad real. Existen otros modelos de prueba similares en el ecosistema de HuggingFace, como `hf-internal-testing/tiny-random-llama4`, que comparten el mismo propósito de validación técnica, pero no se dispone de datos de rendimiento comparativos.
+No se dispone de modelos comparables en la misma categoría, ya que este es un artefacto de prueba sin funcionalidad real. Existen otros modelos de prueba similares en el ecosistema de Hugging Face, como `hf-internal-testing/tiny-random-llama4`, que comparten el mismo propósito de validación técnica, pero no se dispone de datos de rendimiento comparativos.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de modelos comparables en la misma categoría, ya que este es un a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pruna-test/test-save-tiny-random-llama4-smashed
+- Modelo en Hugging Face: https://huggingface.co/pruna-test/test-save-tiny-random-llama4-smashed
 - Repositorio de Pruna: https://github.com/PrunaAI/pruna
 - Documentación de Pruna: https://docs.pruna.ai/en/stable/
 - Modelo original de referencia: https://huggingface.co/hf-internal-testing/tiny-random-llama4

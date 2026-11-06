@@ -6,7 +6,7 @@
 
 El modelo se distribuye como componente para ComfyUI y para la plataforma en la nube RunningHub, no como un modelo autonomo: es un UNet que necesita un checkpoint base, un VAE y un text encoder compatibles con SD 1.5 para poder generar. La model card no documenta arquitectura propia, dataset, proceso de entrenamiento ni licencia concreta; se limita a indicar que los pesos se cargan en RunningHub y que los derechos pertenecen al autor original del proyecto.
 
-La relevancia de este tipo de pesos es practica: permiten incorporar control de iluminacion en pipelines de generacion y edicion de imagen dentro de ComfyUI sin reentrenar nada. Conviene senalar una inconsistencia detectada en la propia ficha de HuggingFace: el pipeline declarado es `text-to-video` y la etiqueta incluye `text-to-video`, mientras que el nombre del archivo corresponde a un modelo de reiluminacion de imagen basado en SD 1.5. Ese dato debe tratarse con cautela.
+La relevancia de este tipo de pesos es practica: permiten incorporar control de iluminacion en pipelines de generacion y edicion de imagen dentro de ComfyUI sin reentrenar nada. Conviene senalar una inconsistencia detectada en la propia ficha de Hugging Face: el pipeline declarado es `text-to-video` y la etiqueta incluye `text-to-video`, mientras que el nombre del archivo corresponde a un modelo de reiluminacion de imagen basado en SD 1.5. Ese dato debe tratarse con cautela.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-iclight-sd15-fbc (este repositorio) | no disponible (UNet SD 1.5, ~860 M en la base) | 512x512 nativo, 77 tokens de texto | no disponible | no disponible (remite al upstream) | HuggingFace y RunningHub |
+| rh-iclight-sd15-fbc (este repositorio) | no disponible (UNet SD 1.5, ~860 M en la base) | 512x512 nativo, 77 tokens de texto | no disponible | no disponible (remite al upstream) | Hugging Face y RunningHub |
 | IC-Light SD1.5 original (lllyasviel/IC-Light) | no disponible en la informacion proporcionada | 512x512 nativo | no disponible | no disponible en la informacion proporcionada | repositorio publico del proyecto original |
 | UNet base de Stable Diffusion 1.5 | ~860 M | 512x512 nativo, 77 tokens de texto | no disponible | licencia del modelo base | ampliamente disponible |
 | Alternativas de relighting basadas en SDXL o modelos dedicados | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -93,7 +93,7 @@ La comparacion se limita a la categoria funcional (relighting sobre difusion), y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-iclight-sd15-fbc.safetensors-unet
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-iclight-sd15-fbc.safetensors-unet
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/1922565928708444161
 - Pagina del autor en RunningHub: https://www.runninghub.cn/user-center/1935673237986865153
 - RunningHub (internacional): https://www.runninghub.ai

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`JOE24355/newlm500m` es un modelo de lenguaje publicado en HuggingFace por el usuario JOE24355 bajo licencia CC0-1.0. Por el identificador se infiere que se trata de un modelo de aproximadamente 500 millones de parametros, aunque esta cifra no se confirma en la documentacion disponible. El repositorio no incluye model card descriptiva: el README se limita al bloque de metadatos de licencia, sin informacion sobre arquitectura, datos de entrenamiento, idiomas o capacidades.
+`JOE24355/newlm500m` es un modelo de lenguaje publicado en Hugging Face por el usuario JOE24355 bajo licencia CC0-1.0. Por el identificador se infiere que se trata de un modelo de aproximadamente 500 millones de parametros, aunque esta cifra no se confirma en la documentacion disponible. El repositorio no incluye model card descriptiva: el README se limita al bloque de metadatos de licencia, sin informacion sobre arquitectura, datos de entrenamiento, idiomas o capacidades.
 
-El modelo no ha generado descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (2026-11-04), lo que sugiere una publicacion de tipo experimental o de prueba, sin proceso de validacion comunitario. No consta pipeline declarado en HuggingFace, por lo que no se puede confirmar la tarea para la que fue disenado (text-generation, fill-mask, etc.).
+El modelo no ha generado descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (2026-11-04), lo que sugiere una publicacion de tipo experimental o de prueba, sin proceso de validacion comunitario. No consta pipeline declarado en Hugging Face, por lo que no se puede confirmar la tarea para la que fue disenado (text-generation, fill-mask, etc.).
 
 Su relevancia actual es limitada desde el punto de vista de produccion: al carecer de documentacion tecnica, benchmarks y especificaciones verificables, no es posible evaluar su calidad ni su idoneidad para casos de uso concretos. Esta ficha recoge exclusivamente los datos disponibles y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -39,10 +39,10 @@ Respecto al entrenamiento, no consta el volumen de tokens, la composicion del co
 
 - Evaluacion experimental de modelos pequenos: dado su tamano probable (~500M) y su licencia CC0-1.0, podria emplearse como banco de pruebas para pipelines de inferencia locales, siempre que se valide previamente su comportamiento.
 - Fine-tuning academico: la licencia permisiva permite reutilizar los pesos como punto de partida en experimentos de ajuste, aunque la ausencia de documentacion obliga a caracterizar el modelo antes de usarlo.
-- Investigacion sobre modelos sin documentar: util como caso de estudio sobre publicaciones de modelos sin model card ni benchmarks en HuggingFace.
+- Investigacion sobre modelos sin documentar: util como caso de estudio sobre publicaciones de modelos sin model card ni benchmarks en Hugging Face.
 - Pruebas de infraestructura de despliegue: puede servir para validar configuraciones de servidores de inferencia (vLLM, TGI, llama.cpp) con pesos de bajo coste computacional.
 - Prototipado interno no critico: en entornos donde la licencia CC0-1.0 sea un requisito, podria probarse en tareas generativas simples tras una evaluacion manual.
-- Docencia: ejemplo practico de publicacion de modelos en HuggingFace y de la importancia de la documentacion tecnica.
+- Docencia: ejemplo practico de publicacion de modelos en Hugging Face y de la importancia de la documentacion tecnica.
 
 En todos los casos, el uso en produccion requeriria una evaluacion previa del modelo, dado que no existe evidencia publica de su rendimiento.
 
@@ -73,4 +73,4 @@ No disponible. No se dispone de datos de rendimiento del modelo ni de especifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JOE24355/newlm500m
+- Hugging Face: https://huggingface.co/JOE24355/newlm500m

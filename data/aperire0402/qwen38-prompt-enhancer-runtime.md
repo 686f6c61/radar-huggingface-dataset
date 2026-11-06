@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aperire0402/qwen38-prompt-enhancer-runtime
+- Repositorio en Hugging Face: https://huggingface.co/aperire0402/qwen38-prompt-enhancer-runtime
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Herramienta Promhance (referencia de prompt enhancer): https://www.promhance.com/
 - AI Prompt Enhancer (herramienta online): https://www.prompt-enhancer.ai/

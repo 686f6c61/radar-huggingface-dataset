@@ -1,9 +1,9 @@
 # KotaroKinoshita/yomitoku-dewarper-uvdoc-v1
 
 ## Resumen
-Yomitoku-dewarper-uvdoc-v1 es un modelo publicado en HuggingFace por el usuario KotaroKinoshita, aparentemente vinculado al proyecto Yomitoku, una herramienta de procesamiento y analisis de documentos orientada al idioma japones. Por el nombre ("dewarper") y por el sufijo "uvdoc", el modelo parece ser un modulo de correccion de distorsion geometrica (dewarping) de imagenes de documentos, una etapa tipica en pipelines OCR que endereza paginas curvadas o fotografias tomadas en angulo antes de pasarlas al motor de reconocimiento de texto.
+Yomitoku-dewarper-uvdoc-v1 es un modelo publicado en Hugging Face por el usuario KotaroKinoshita, aparentemente vinculado al proyecto Yomitoku, una herramienta de procesamiento y analisis de documentos orientada al idioma japones. Por el nombre ("dewarper") y por el sufijo "uvdoc", el modelo parece ser un modulo de correccion de distorsion geometrica (dewarping) de imagenes de documentos, una etapa tipica en pipelines OCR que endereza paginas curvadas o fotografias tomadas en angulo antes de pasarlas al motor de reconocimiento de texto.
 
-Se trata de un modelo de pequeno tamano, con 8.197.032 parametros, empaquetado en safetensors y distribuido mediante la integracion PyTorchModelHubMixin de HuggingFace Hub. No es un modelo de lenguaje: no genera texto ni responde a prompts, sino que actua como componente especializado dentro de una cadena de vision por computador para documentos.
+Se trata de un modelo de pequeno tamano, con 8.197.032 parametros, empaquetado en safetensors y distribuido mediante la integracion PyTorchModelHubMixin de Hugging Face Hub. No es un modelo de lenguaje: no genera texto ni responde a prompts, sino que actua como componente especializado dentro de una cadena de vision por computador para documentos.
 
 La relevancia de esta ficha es limitada pero concreta: interesa a quienes construyen pipelines OCR para documentacion japonesa o escaneos de baja calidad y necesitan una etapa de rectificacion previa. La informacion publica disponible es muy escasa: la model card es la plantilla autogenerada por el Hub y no incluye descripcion funcional, datos de entrenamiento, licencia ni benchmarks.
 
@@ -68,6 +68,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - No apto para tareas de lenguaje, razonamiento o agentes: es un componente de vision especializado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/KotaroKinoshita/yomitoku-dewarper-uvdoc-v1
+- Hugging Face: https://huggingface.co/KotaroKinoshita/yomitoku-dewarper-uvdoc-v1
 - Documentacion de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo, paper y documentacion del modelo: no disponible

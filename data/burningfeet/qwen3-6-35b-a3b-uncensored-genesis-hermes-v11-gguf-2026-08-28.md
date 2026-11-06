@@ -4,7 +4,7 @@
 
 El modelo `burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-GGUF-2026-08-28` es una variante cuantizada en formato GGUF del modelo base `HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive`, que a su vez deriva de la familia Qwen3.6 de Alibaba. Se trata de un modelo de arquitectura MoE (Mixture of Experts) con 35 000 millones de parámetros totales y aproximadamente 3 000 millones de parámetros activos por token, lo que lo hace especialmente eficiente para inferencia en hardware de consumo. El desarrollador, `burningfeet`, ha combinado el comportamiento "uncensored" del base con las capacidades agentic y de function calling del finetune `DJLougen/hermes-qwen3.5-35b-a3b-GGUF`, transfiriendo alrededor de 2000 bloques de dos tensores de expertos FFN. El resultado es un modelo multimodal (imagen-texto) con licencia Apache 2.0, pensado para despliegue local mediante GGUF.
 
-La relevancia de este modelo radica en su doble naturaleza: por un lado, ofrece una alternativa sin restricciones de contenido (uncensored) sobre una base técnica sólida como Qwen3.6; por otro, incorpora el protocolo Hermes para interacción agéntica y tool calling, lo que lo hace útil para asistentes conversacionales y agentes autónomos. Al estar disponible en GGUF, puede ejecutarse en GPUs de consumo con cuantizaciones adaptables, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+La relevancia de este modelo radica en su doble naturaleza: por un lado, ofrece una alternativa sin restricciones de contenido (uncensored) sobre una base técnica sólida como Qwen3.6; por otro, incorpora el protocolo Hermes para interacción agéntica y tool calling, lo que lo hace útil para asistentes conversacionales y agentes autónomos. Al estar disponible en GGUF, puede ejecutarse en GPUs de consumo con cuantizaciones adaptables, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ La comparativa se limita a la familia Qwen3.6, ya que no se dispone de datos de 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Sin benchmarks publicados: no hay métricas objetivas de rendimiento para esta variante, lo que dificulta evaluar su calidad frente a otros modelos.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar información falsa o inventada, especialmente en temas especializados.
 - Sesgos y contenido inapropiado: al ser uncensored, puede producir contenido ofensivo, ilegal o dañino. El uso en producción debe contemplar medidas de filtrado y moderación.
@@ -76,7 +76,7 @@ La comparativa se limita a la familia Qwen3.6, ya que no se dispone de datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-GGUF-2026-08-28
+- Repositorio Hugging Face del modelo: https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-GGUF-2026-08-28
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Finetune Hermes de referencia: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
 - Guía de Qwen3.6 (27B dense vs 35B-A3B MoE): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

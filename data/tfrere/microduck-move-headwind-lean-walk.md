@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tfrere/microduck-move-headwind-lean-walk` no es un modelo de lenguaje: es una política de locomoción (un controlador entrenado por aprendizaje por refuerzo) publicada en HuggingFace dentro del ecosistema Microduck Academy. El autor, `tfrere`, la ha entrenado para que el robot Microduck ejecute un estilo de marcha concreto: caminar inclinándose muy hacia delante, con el "hocico" bajo, simulando que avanza contra un viento de cara fuerte. Pertenece a la familia `velocity` (estilos de marcha o gaits) y se clasifica como `kind: perpetual`, es decir, un movimiento continuo sin fin definido.
+`tfrere/microduck-move-headwind-lean-walk` no es un modelo de lenguaje: es una política de locomoción (un controlador entrenado por aprendizaje por refuerzo) publicada en Hugging Face dentro del ecosistema Microduck Academy. El autor, `tfrere`, la ha entrenado para que el robot Microduck ejecute un estilo de marcha concreto: caminar inclinándose muy hacia delante, con el "hocico" bajo, simulando que avanza contra un viento de cara fuerte. Pertenece a la familia `velocity` (estilos de marcha o gaits) y se clasifica como `kind: perpetual`, es decir, un movimiento continuo sin fin definido.
 
 El artefacto desplegable es un fichero ONNX (`policy.onnx`) que se carga directamente en el robot mediante `robotctl policy add`, más un `model.pt` pensado para reentrenamiento o ajuste fino (remix). El repositorio incluye además trayectorias de rollouts, checkpoints de cada ronda de entrenamiento, un `manifest.json` con metadatos de academia (prompt, familia, juez, linaje) y un clip de vídeo con póster.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es acotada: se trata de una política de tier 1 con 
 | Tipo de artefacto | política de locomoción (move) de Microduck Academy |
 | Familia / tipo | `family:velocity` (estilos de marcha), `kind:perpetual` |
 | Tier | etiquetado como `tier:1` en los tags; la model card indica "tier None" |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-22 |
 | Última actualización | 2026-09-22 |
@@ -108,7 +108,7 @@ No se han identificado modelos comparables en la información proporcionada; los
 | Contexto | no aplica | no disponible |
 | Rendimiento | juez 1.0 (PASS); VLM "not sure"; score Discover 75 % | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | ONNX + PyTorch en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | ONNX + PyTorch en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -125,7 +125,7 @@ No se han identificado modelos comparables en la información proporcionada; los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-headwind-lean-walk
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-headwind-lean-walk
 - Perfil del autor: https://huggingface.co/tfrere
 - Space de Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 

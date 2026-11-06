@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lauravandijk/mocov3-baseline` es un repositorio de HuggingFace que empaqueta una implementación propia y reducida de MoCo v3 (MoCo v3 es un método de aprendizaje autosupervisado contrastivo para codificadores de visión) etiquetada en la model card como variante «generation» y escala «giant», aunque el checkpoint real contiene únicamente 16.576 parámetros según el fichero `model.safetensors`. El autor lo describe explícitamente como un punto de partida reproducible y no como un modelo entrenado: el checkpoint es de inicialización, válido para pruebas de humo (smoke tests), y el repositorio no reclama ninguna métrica de benchmark.
+`lauravandijk/mocov3-baseline` es un repositorio de Hugging Face que empaqueta una implementación propia y reducida de MoCo v3 (MoCo v3 es un método de aprendizaje autosupervisado contrastivo para codificadores de visión) etiquetada en la model card como variante «generation» y escala «giant», aunque el checkpoint real contiene únicamente 16.576 parámetros según el fichero `model.safetensors`. El autor lo describe explícitamente como un punto de partida reproducible y no como un modelo entrenado: el checkpoint es de inicialización, válido para pruebas de humo (smoke tests), y el repositorio no reclama ninguna métrica de benchmark.
 
 El paquete incluye `model.py` (implementación y punto de entrada ejecutable), `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto con AdamW y scheduler OneCycle) y `model.safetensors`. La arquitectura declarada combina atención dispersa (sparse attention), fusión por cross-attention, activación ReLU y normalización InstanceNorm.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lauravandijk/mocov3-baseline` | 16.576 | No aplica | Sin benchmarks (checkpoint de inicialización) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| `lauravandijk/mocov3-baseline` | 16.576 | No aplica | Sin benchmarks (checkpoint de inicialización) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | MoCo v3 oficial (facebookresearch/moco-v3) | No disponible en la información proporcionada | No aplica | No disponible en la información proporcionada | No verificada en la información proporcionada | Repositorio público de referencia |
 | Otras implementaciones autosupervisadas contrastivas (SimCLR, DINOv2) | No disponible en la información proporcionada | No aplica | No disponible en la información proporcionada | No verificada en la información proporcionada | Repositorios públicos |
 
@@ -81,5 +81,5 @@ La comparación cuantitativa no es posible con los datos disponibles: este repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lauravandijk/mocov3-baseline
+- Modelo en Hugging Face: https://huggingface.co/lauravandijk/mocov3-baseline
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a MoCo v3 ni a documentación técnica asociada; los resultados devueltos eran contenido no relacionado y se han descartado.

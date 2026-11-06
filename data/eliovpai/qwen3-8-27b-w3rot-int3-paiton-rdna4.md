@@ -87,8 +87,8 @@ La informacion disponible incluye resultados relativos medidos en modelo el 26 d
 |---|---|---|---|---|---|
 | EliovpAI Qwen3.8-27B W3Rot INT3 (este repositorio) | 27 000 M (denso) | 65 536 por defecto, hasta 262 144 (524 288 experimental) | 15,89 GiB, pesos de 9,55 GB | Apache 2.0 | Complemento, requiere objetivo NVFP4 y borrador DFlash2 FP8 |
 | Ruta MXFP4 del mismo plugin Paiton | 27 000 M (denso) | hasta 262 144 por peticion | 19,18 GiB | Apache 2.0 | Paquete Paiton sobre la misma imagen |
-| `unsloth/Qwen3.8-27B-NVFP4` (checkpoint objetivo) | 27 000 M (denso) | no disponible | no disponible | no disponible | Checkpoint publico en HuggingFace |
-| `tcclaviger/Qwen3.8-27B-DFlash2-FP8` (borrador especulativo) | no disponible | no disponible | no disponible | no disponible | Checkpoint publico en HuggingFace, usado como drafter |
+| `unsloth/Qwen3.8-27B-NVFP4` (checkpoint objetivo) | 27 000 M (denso) | no disponible | no disponible | no disponible | Checkpoint publico en Hugging Face |
+| `tcclaviger/Qwen3.8-27B-DFlash2-FP8` (borrador especulativo) | no disponible | no disponible | no disponible | no disponible | Checkpoint publico en Hugging Face, usado como drafter |
 | `amd/Qwen3.8-27B-Quark-Qronos-INT4-W4A16` | 27 000 M (denso) | no disponible | no disponible | no disponible | Cuantizacion INT4 alternativa sobre ROCm, mencionada en el repositorio del plugin |
 
 No se dispone de comparativas de rendimiento con modelos de otros fabricantes del mismo tamano en la informacion proporcionada.
@@ -108,7 +108,7 @@ No se dispone de comparativas de rendimiento con modelos de otros fabricantes de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4
+- Modelo en Hugging Face: https://huggingface.co/EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4
 - Documento de calibracion: https://huggingface.co/EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4/blob/d74ae7d5f5f1b4b45dd12fb1271e3664283a2ec1/CALIBRATION.md
 - Repositorio del plugin Paiton: https://github.com/Eliovp-BV/paiton-vllm-plugin
 - Instrucciones del paquete Qwen3.8 (ruta MXFP4 y 3 bits): https://github.com/Eliovp-BV/paiton-vllm-plugin/blob/main/models/Qwen3.8-MXFP4-DFlash2/README.md

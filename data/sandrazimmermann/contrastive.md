@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SandraZimmermann/contrastive` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de código ("Mixer") para experimentación con aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con capacidades generativas: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`SandraZimmermann/contrastive` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de código ("Mixer") para experimentación con aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con capacidades generativas: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El artefacto principal es el archivo `inference.py`, que incluye la implementación del modelo y un punto de entrada ejecutable; le acompañan `config.json` (ajustes de arquitectura generados) y `training_args.json` (receta de experimento por defecto con optimizador LAMB y scheduler OneCycle). El tamaño declarado en safetensors es de 24.832 parámetros, lo que confirma que se trata de una configuración de escala reducida pese a la etiqueta "xlarge" en la nomenclatura interna del autor.
 
@@ -72,5 +72,5 @@ No disponible. El repositorio no es comparable con modelos generativos o de embe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SandraZimmermann/contrastive
+- Repositorio en Hugging Face: https://huggingface.co/SandraZimmermann/contrastive
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

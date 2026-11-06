@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sinadavinc80/gradio-template no es un modelo de inteligencia artificial, sino una plantilla de interfaz para construir aplicaciones con Gradio. Se distribuye como un repositorio de HuggingFace con tres ficheros: `app.py` (la aplicación), `requirements.txt` (dependencias) y `README.md` (tarjeta y configuración de Space). El autor la mantiene bajo la cuenta Sinadavinc80 y la publica con licencia Apache-2.0.
+Sinadavinc80/gradio-template no es un modelo de inteligencia artificial, sino una plantilla de interfaz para construir aplicaciones con Gradio. Se distribuye como un repositorio de Hugging Face con tres ficheros: `app.py` (la aplicación), `requirements.txt` (dependencias) y `README.md` (tarjeta y configuración de Space). El autor la mantiene bajo la cuenta Sinadavinc80 y la publica con licencia Apache-2.0.
 
 Su proposito es servir de punto de partida minimo y funcional: una interfaz `gr.Interface` que envuelve una funcion `greet(name)` y devuelve un saludo. El desarrollador clona o bifurca la plantilla, sustituye la funcion de ejemplo por su propia logica (por ejemplo, una llamada a un modelo de lenguaje) y obtiene una demo web sin escribir HTML, CSS ni JavaScript.
 

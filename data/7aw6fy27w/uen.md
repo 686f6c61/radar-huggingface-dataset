@@ -98,7 +98,7 @@ No se dispone de datos objetivos que permitan una comparación cuantitativa. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/7aw6fy27w/uen
+- Modelo en Hugging Face: https://huggingface.co/7aw6fy27w/uen
 - Pestaña de ficheros y versiones: https://huggingface.co/7aw6fy27w/uen/tree/main
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Paper, blog o repositorio del adaptador: no disponible

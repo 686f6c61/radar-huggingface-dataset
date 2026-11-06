@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SoliDeoMedical-Gemma-4b es un modelo publicado en HuggingFace por el usuario `moonshineai` bajo licencia MIT. El identificador del repositorio sugiere que se trata de un ajuste fino (fine-tuning) orientado al dominio médico construido sobre una base de la familia Gemma con aproximadamente 4.000 millones de parámetros, aunque esta interpretación procede unicamente del nombre del modelo y no está confirmada por ninguna documentación publicada. La model card asociada al repositorio está vacía: solo contiene el campo de licencia, sin descripción, sin datos de entrenamiento y sin especificaciones tecnicas.
+SoliDeoMedical-Gemma-4b es un modelo publicado en Hugging Face por el usuario `moonshineai` bajo licencia MIT. El identificador del repositorio sugiere que se trata de un ajuste fino (fine-tuning) orientado al dominio médico construido sobre una base de la familia Gemma con aproximadamente 4.000 millones de parámetros, aunque esta interpretación procede unicamente del nombre del modelo y no está confirmada por ninguna documentación publicada. La model card asociada al repositorio está vacía: solo contiene el campo de licencia, sin descripción, sin datos de entrenamiento y sin especificaciones tecnicas.
 
 En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 likes, y no se han publicado resultados de benchmarks, ejemplos de uso ni guias de despliegue. Esto lo sitúa en la categoría de modelos sin validación externa conocida: su relevancia potencial reside en la demanda de modelos pequeños y desplegables en local para tareas clínicas auxiliares, pero cualquier evaluación rigurosa queda bloqueada por la ausencia total de información tecnica y de evidencia empirica.
 
@@ -25,7 +25,7 @@ Datos adicionales confirmados del repositorio:
 
 | Campo | Valor |
 |---|---|
-| ID en HuggingFace | moonshineai/SoliDeoMedical-Gemma-4b |
+| ID en Hugging Face | moonshineai/SoliDeoMedical-Gemma-4b |
 | Autor | moonshineai |
 | Fecha de creacion | 2026-09-28 |
 | Ultima actualizacion | 2026-09-28 |
@@ -81,7 +81,7 @@ Las cifras siguientes son estimaciones condicionadas a la hipótesis de que el m
 - VRAM estimada en cuantización de 4 bits (por ejemplo Q4_K_M en formato GGUF): en torno a 2,5-3 GB, apto para GPUs de gama media.
 - GPU recomendadas si se confirma el tamano: NVIDIA RTX 3060 12 GB, RTX 4070, RTX 4080 y RTX 4090 para inferencia en local; A100 o H100 para despliegues concurrentes en servidor.
 - Compatibilidad con GPU de consumo: previsiblemente sí en cualquier tarjeta con 8 GB o más de VRAM si se usa cuantización de 4 bits; en FP16 requeriría al menos 12-16 GB. Los equipos Apple Silicon con memoria unificada de 16 GB o más también podrían ejecutarlo mediante llama.cpp o MLX.
-- Opciones de despliegue: si el repositorio publica pesos en safetensors, sería compatible con HuggingFace Transformers, vLLM y TGI; si se generan cuantizaciones GGUF, sería compatible con llama.cpp, Ollama y LM Studio. Ninguna de estas opciones está confirmada por el autor.
+- Opciones de despliegue: si el repositorio publica pesos en safetensors, sería compatible con Hugging Face Transformers, vLLM y TGI; si se generan cuantizaciones GGUF, sería compatible con llama.cpp, Ollama y LM Studio. Ninguna de estas opciones está confirmada por el autor.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa. No 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SoliDeoMedical-Gemma-4b | no disponible (~4B según el nombre) | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| SoliDeoMedical-Gemma-4b | no disponible (~4B según el nombre) | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación natural sería con el modelo base de la familia Gemma del que presumiblemente deriva, pero no se ha confirmado cuál es ni se dispone de sus cifras en la información facilitada. Tampoco se ha localizado ningún otro ajuste médico de tamano similar con datos publicados que permita una tabla significativa.
@@ -109,7 +109,7 @@ La comparación natural sería con el modelo base de la familia Gemma del que pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moonshineai/SoliDeoMedical-Gemma-4b
+- Modelo en Hugging Face: https://huggingface.co/moonshineai/SoliDeoMedical-Gemma-4b
 - Paper o informe técnico: no disponible
 - Repositorio de código: no disponible
 - Demo o espacio interactivo: no disponible

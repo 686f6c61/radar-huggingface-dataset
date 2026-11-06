@@ -84,7 +84,7 @@ No se han publicado comparativas directas con otros adaptadores text-to-SQL en l
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/blaze-star/qwen2.5-1.5b-sql-qlora
+- Adaptador en Hugging Face: https://huggingface.co/blaze-star/qwen2.5-1.5b-sql-qlora
 - Modelo fusionado (standalone): https://huggingface.co/blaze-star/qwen2.5-1.5b-sql-qlora-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/b-mc2/sql-create-context

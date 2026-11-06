@@ -95,12 +95,12 @@ No se dispone de datos comparativos con otros modelos ternarios o de baja precis
 - Sesgos: no se documenta ninguna evaluacion de sesgos ni de alineacion especifica para esta conversion.
 - Repositorio de terceros: la ficha corresponde a una publicacion de `Iambackup` con 0 descargas y 0 likes, creada en septiembre de 2026 y sin actualizaciones. El material de referencia oficial apunta a Prism ML y al espacio `prism-ml`; conviene verificar la procedencia de los pesos antes de usarlos en produccion.
 - Torre de vision sin cuantizar: ocupa 0,92 GB en FP16 dentro del pack, lo que rompe parcialmente la premisa de eficiencia extrema del conjunto.
-- Documentacion incompleta en la ficha de HuggingFace: la tabla de requisitos de memoria aparece truncada y no hay desglose de benchmarks por tarea.
+- Documentacion incompleta en la ficha de Hugging Face: la tabla de requisitos de memoria aparece truncada y no hay desglose de benchmarks por tarea.
 - Licencia: Apache 2.0 permite uso comercial, pero las condiciones del modelo base Qwen3.8-27B no se detallan en la informacion disponible y habria que verificarlas por separado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Iambackup/Ternary-Bonsai-2-27B-mlx-2bit
+- Modelo en Hugging Face: https://huggingface.co/Iambackup/Ternary-Bonsai-2-27B-mlx-2bit
 - Version GGUF companera: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Web de Prism ML: https://prismml.com
 - Whitepaper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf

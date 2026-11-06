@@ -80,7 +80,7 @@ La comparativa se limita a tamano, contexto publicado y licencia; no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Cavil-Qwen3.5-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Cavil-Qwen3.5-4B-GGUF
 - Modelo base: https://huggingface.co/openSUSE/Cavil-Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/openSUSE/cavil-legal-text
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Cavil-Qwen3.5-4B-GGUF

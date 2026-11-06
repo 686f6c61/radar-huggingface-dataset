@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Roy229/nml7324-ner-tagger` es un sistema de reconocimiento de entidades nombradas (NER) especializado en documentos legales, desarrollado por el usuario Roy229. Su propósito es extraer organizaciones, personas y ubicaciones a partir de texto jurídico no estructurado, con el fin de automatizar la indexación de cláusulas y el seguimiento de obligaciones en equipos de contratos. Se trata de un modelo fine-tuned a partir de un encoder multilingüe, aunque la ficha de HuggingFace solo declara el idioma inglés, la descripción del autor indica que cubre texto legal en inglés, francés y alemán, con una puntuación F1 superior a 0,92 en un conjunto de evaluación interno.
+El modelo `Roy229/nml7324-ner-tagger` es un sistema de reconocimiento de entidades nombradas (NER) especializado en documentos legales, desarrollado por el usuario Roy229. Su propósito es extraer organizaciones, personas y ubicaciones a partir de texto jurídico no estructurado, con el fin de automatizar la indexación de cláusulas y el seguimiento de obligaciones en equipos de contratos. Se trata de un modelo fine-tuned a partir de un encoder multilingüe, aunque la ficha de Hugging Face solo declara el idioma inglés, la descripción del autor indica que cubre texto legal en inglés, francés y alemán, con una puntuación F1 superior a 0,92 en un conjunto de evaluación interno.
 
-El modelo está etiquetado con el pipeline `token-classification` y la librería `transformers`, lo que indica que es compatible con el ecosistema estándar de HuggingFace para tareas de etiquetado de secuencias. No se dispone de información pública sobre el tamaño, la arquitectura concreta o la longitud de contexto, por lo que estos parámetros no pueden especificarse con precisión. A pesar de su escasa documentación, su propósito claro y su licencia permisiva (Apache-2.0) lo hacen potencialmente útil para flujos de procesamiento de contratos en entornos empresariales.
+El modelo está etiquetado con el pipeline `token-classification` y la librería `transformers`, lo que indica que es compatible con el ecosistema estándar de Hugging Face para tareas de etiquetado de secuencias. No se dispone de información pública sobre el tamaño, la arquitectura concreta o la longitud de contexto, por lo que estos parámetros no pueden especificarse con precisión. A pesar de su escasa documentación, su propósito claro y su licencia permisiva (Apache-2.0) lo hacen potencialmente útil para flujos de procesamiento de contratos en entornos empresariales.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ La información pública no detalla la arquitectura interna del modelo. Se sabe 
 - Procesamiento de texto jurídico no estructurado, orientado a la automatización de tareas de indexación y seguimiento de obligaciones.
 - Soporte multilingüe declarado por el autor: inglés, francés y alemán (aunque los metadatos solo listan inglés).
 - Integración con el ecosistema `transformers` mediante el pipeline `token-classification`, lo que facilita su uso en aplicaciones Python.
-- Compatible con endpoints de HuggingFace (etiqueta `endpoints_compatible`), lo que permite su despliegue en la infraestructura de inferencia de la plataforma.
+- Compatible con endpoints de Hugging Face (etiqueta `endpoints_compatible`), lo que permite su despliegue en la infraestructura de inferencia de la plataforma.
 
 ## Casos de uso
 
@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Requisitos de hardware
 
-No se dispone de información sobre los requisitos de hardware del modelo. Al ser un fine-tuning de un encoder multilingüe, es probable que su tamaño sea moderado (del orden de cientos de millones de parámetros, típico de modelos como XLM-R base o similar), pero esto no está confirmado. Se recomienda asumir que puede ejecutarse en GPUs de consumo medio (por ejemplo, una RTX 3060 con 12 GB de VRAM) si el modelo es de tamaño base, pero no hay datos oficiales. Las opciones de despliegue incluyen el uso de la librería `transformers` con PyTorch o TensorFlow, así como la integración con `pipeline` de HuggingFace. También es compatible con los Inference Providers de HuggingFace, según la etiqueta `endpoints_compatible`.
+No se dispone de información sobre los requisitos de hardware del modelo. Al ser un fine-tuning de un encoder multilingüe, es probable que su tamaño sea moderado (del orden de cientos de millones de parámetros, típico de modelos como XLM-R base o similar), pero esto no está confirmado. Se recomienda asumir que puede ejecutarse en GPUs de consumo medio (por ejemplo, una RTX 3060 con 12 GB de VRAM) si el modelo es de tamaño base, pero no hay datos oficiales. Las opciones de despliegue incluyen el uso de la librería `transformers` con PyTorch o TensorFlow, así como la integración con `pipeline` de Hugging Face. También es compatible con los Inference Providers de Hugging Face, según la etiqueta `endpoints_compatible`.
 
 ## Comparativa con modelos similares
 
@@ -60,9 +60,9 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 - No se han publicado evaluaciones externas ni benchmarks independientes; la F1 reportada proviene de un conjunto interno del autor y podría no ser reproducible.
 - Al ser un modelo de NER basado en encoder, no genera texto ni admite tareas de generación; su uso se limita a clasificación de tokens.
 - La licencia Apache-2.0 permite uso comercial, pero al no conocerse los datos de entrenamiento, no se puede garantizar la ausencia de sesgos o datos sensibles en el corpus de entrenamiento.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Roy229/nml7324-ner-tagger)
-- [Datasets del autor en HuggingFace](https://huggingface.co/Roy229/datasets)
+- [Modelo en Hugging Face](https://huggingface.co/Roy229/nml7324-ner-tagger)
+- [Datasets del autor en Hugging Face](https://huggingface.co/Roy229/datasets)

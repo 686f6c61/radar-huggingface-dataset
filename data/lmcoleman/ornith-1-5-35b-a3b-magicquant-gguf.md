@@ -81,7 +81,7 @@ No se dispone de comparativas publicadas con modelos de la misma categoría (MoE
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/lmcoleman/Ornith-1.5-35B-A3B-MagicQuant-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/lmcoleman/Ornith-1.5-35B-A3B-MagicQuant-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - GGUF oficial del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
 - Benchmarks y contexto en BenchLM: https://benchlm.ai/models/ornith-1-5-35b-a3b

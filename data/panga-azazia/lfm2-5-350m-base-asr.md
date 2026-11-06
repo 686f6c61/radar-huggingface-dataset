@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM2.5-350M-Base-ASR es un ajuste fino (finetune) del modelo base LiquidAI/LFM2.5-350M-Base, publicado por el usuario Panga-Azazia en HuggingFace. Se trata de un modelo de generación de texto de pequeño tamaño (350 millones de parámetros según la nomenclatura del modelo base) que hereda la arquitectura de la familia LFM2 de LiquidAI y que, según la model card, fue entrenado con Unsloth y la librería TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido.
+LFM2.5-350M-Base-ASR es un ajuste fino (finetune) del modelo base LiquidAI/LFM2.5-350M-Base, publicado por el usuario Panga-Azazia en Hugging Face. Se trata de un modelo de generación de texto de pequeño tamaño (350 millones de parámetros según la nomenclatura del modelo base) que hereda la arquitectura de la familia LFM2 de LiquidAI y que, según la model card, fue entrenado con Unsloth y la librería TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido.
 
-El interés de esta ficha es limitado pero relevante como caso de estudio: la model card es mínima (no incluye datos de entrenamiento, composición del dataset, ni resultados de evaluación) y el nombre del repositorio incluye el sufijo "ASR", aunque el pipeline declarado en HuggingFace es text-generation y el único idioma declarado es el inglés. No hay documentación que aclare si el ajuste fino estaba orientado a tareas relacionadas con habla, transcripción o procesamiento de texto derivado de ASR.
+El interés de esta ficha es limitado pero relevante como caso de estudio: la model card es mínima (no incluye datos de entrenamiento, composición del dataset, ni resultados de evaluación) y el nombre del repositorio incluye el sufijo "ASR", aunque el pipeline declarado en Hugging Face es text-generation y el único idioma declarado es el inglés. No hay documentación que aclare si el ajuste fino estaba orientado a tareas relacionadas con habla, transcripción o procesamiento de texto derivado de ASR.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el contexto máximo efectivo tras el ajuste ni métricas de rendimiento. La búsqueda web realizada no devolvió resultados relevantes sobre el modelo: los enlaces encontrados tratan sobre el pez panga (Pangasianodon hypophthalmus) y no guardan relación con este repositorio.
 
@@ -32,7 +32,7 @@ En cuanto al entrenamiento, la única información disponible es que se realizó
 - Generación de texto autoregresiva, heredada del modelo base LFM2.5-350M-Base.
 - Idioma: únicamente inglés declarado en los metadatos del repositorio.
 - Compatibilidad con `text-generation-inference` y `transformers`, según los tags del repositorio.
-- Tag `endpoints_compatible`, lo que indica que el repositorio puede desplegarse en los endpoints gestionados de HuggingFace.
+- Tag `endpoints_compatible`, lo que indica que el repositorio puede desplegarse en los endpoints gestionados de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponibles; solo se declara inglés.
@@ -68,17 +68,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente (GTX 1650, RTX 3050, RTX 3060, RTX 4090). GPU de datacenter (A100, H100) no son necesarias.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna e incluso en iGPU con memoria compartida suficiente.
 - También es viable la inferencia en CPU, en dispositivos tipo Raspberry Pi 5 o en móviles de gama alta.
-- Opciones de despliegue: `transformers`, `text-generation-inference` (TGI), y los endpoints compatibles de HuggingFace según el tag `endpoints_compatible`. El soporte en vLLM, llama.cpp u Ollama no está confirmado en la información disponible, ya que no se publican archivos GGUF.
+- Opciones de despliegue: `transformers`, `text-generation-inference` (TGI), y los endpoints compatibles de Hugging Face según el tag `endpoints_compatible`. El soporte en vLLM, llama.cpp u Ollama no está confirmado en la información disponible, ya que no se publican archivos GGUF.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Panga-Azazia/LFM2.5-350M-Base-ASR | 350M | no disponible | Apache 2.0 | HuggingFace | no disponible |
-| LiquidAI/LFM2.5-350M-Base | 350M | no disponible | Apache 2.0 | HuggingFace | no disponible |
-| HuggingFaceTB/SmolLM2-360M | 360M | no disponible en esta ficha | Apache 2.0 | HuggingFace | no disponible |
-| Qwen/Qwen2.5-0.5B | 494M | 32 768 tokens (dato público, no verificado en esta ficha) | Apache 2.0 | HuggingFace | no disponible |
+| Panga-Azazia/LFM2.5-350M-Base-ASR | 350M | no disponible | Apache 2.0 | Hugging Face | no disponible |
+| LiquidAI/LFM2.5-350M-Base | 350M | no disponible | Apache 2.0 | Hugging Face | no disponible |
+| HuggingFaceTB/SmolLM2-360M | 360M | no disponible en esta ficha | Apache 2.0 | Hugging Face | no disponible |
+| Qwen/Qwen2.5-0.5B | 494M | 32 768 tokens (dato público, no verificado en esta ficha) | Apache 2.0 | Hugging Face | no disponible |
 
 No se dispone de datos de benchmarks del modelo evaluado, por lo que no es posible establecer una comparación cuantitativa de rendimiento con las alternativas. Los datos de los modelos comparables se incluyen a título orientativo y deberían verificarse en sus respectivas model cards.
 
@@ -97,8 +97,8 @@ No se dispone de datos de benchmarks del modelo evaluado, por lo que no es posib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Panga-Azazia/LFM2.5-350M-Base-ASR
+- Modelo en Hugging Face: https://huggingface.co/Panga-Azazia/LFM2.5-350M-Base-ASR
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M-Base
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados devueltos hacen referencia al pez panga y no guardan relación con el repositorio.

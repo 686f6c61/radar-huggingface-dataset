@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/UninspiredContent/smolvla_kiwi_v4)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/UninspiredContent/smolvla_kiwi_v4)
 - [Paper de SmolVLA (arXiv:2506.01844)](https://huggingface.co/papers/2506.01844)
 - [Dataset de entrenamiento KiwiSet2](https://huggingface.co/datasets/UninspiredContent/KiwiSet2)
 - [Documentación de LeRobot para SmolVLA](https://huggingface.co/docs/lerobot/main/en/smolvla)

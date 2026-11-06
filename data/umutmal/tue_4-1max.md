@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tue_4.1Max es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario UmutMal en HuggingFace. Se trata de un modelo derivado de la familia Qwen 3.5, con aproximadamente 4.000 millones de parametros, orientado a tareas de generacion de texto y conversacion multilingue. La model card publicada es extremadamente escasa: se limita a declarar la licencia GPL-2.0, los idiomas soportados y el modelo base, sin aportar informacion sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos.
+Tue_4.1Max es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario UmutMal en Hugging Face. Se trata de un modelo derivado de la familia Qwen 3.5, con aproximadamente 4.000 millones de parametros, orientado a tareas de generacion de texto y conversacion multilingue. La model card publicada es extremadamente escasa: se limita a declarar la licencia GPL-2.0, los idiomas soportados y el modelo base, sin aportar informacion sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos.
 
 El modelo declara soporte para seis idiomas: turco (tr), ingles (en), chino (zh), japones (ja), aleman (de) e italiano (it). Esta combinacion sugiere un interes particular por el turco como idioma principal, dado el origen del autor, complementado con los idiomas de mayor cobertura en los corpus de entrenamiento de la familia Qwen. No obstante, al no existir documentacion tecnica adicional, no es posible verificar el grado real de competencia en cada idioma.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada en el ecosistema actual: cuenta con 19 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo en la model card ni en los metadatos de HuggingFace. El unico dato tecnico disponible es que se trata de un finetune de Qwen/Qwen3.5-4B, por lo que heredaria la arquitectura del modelo base, pero no se confirma en la documentacion proporcionada.
+No se ha publicado informacion sobre la arquitectura interna del modelo en la model card ni en los metadatos de Hugging Face. El unico dato tecnico disponible es que se trata de un finetune de Qwen/Qwen3.5-4B, por lo que heredaria la arquitectura del modelo base, pero no se confirma en la documentacion proporcionada.
 
 Tampoco se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La model card no incluye ninguna innovacion tecnica declarada (decodificacion especulativa, atencion lineal, modo thinking, etc.). Cualquier afirmacion al respecto seria especulativa y no se incluye en esta ficha.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark publico | Disponibilidad |
 |---|---|---|---|---|---|
-| UmutMal/Tue_4.1Max | no disponible (~4B por modelo base) | no disponible | GPL-2.0 | no disponible | HuggingFace (19 descargas) |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (modelo base oficial) |
-| Alternativas de ~4B de la familia Qwen | ~4B | no disponible | no disponible | no disponible | HuggingFace |
+| UmutMal/Tue_4.1Max | no disponible (~4B por modelo base) | no disponible | GPL-2.0 | no disponible | Hugging Face (19 descargas) |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (modelo base oficial) |
+| Alternativas de ~4B de la familia Qwen | ~4B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria. La unica comparacion posible es con el modelo base Qwen/Qwen3.5-4B, del cual este modelo deriva, pero no hay benchmarks que permitan evaluar si el finetune mejora o degrada el rendimiento original.
 
@@ -80,5 +80,5 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UmutMal/Tue_4.1Max
+- Modelo en Hugging Face: https://huggingface.co/UmutMal/Tue_4.1Max
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

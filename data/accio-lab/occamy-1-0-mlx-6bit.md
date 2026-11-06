@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Occamy-1.0 MLX 6-bit es una cuantizacion nativa para MLX del modelo Occamy-1.0, desarrollado por Accio-Lab. Se trata de un transformer de tipo mixture-of-experts (MoE), etiquetado en HuggingFace con la arquitectura `qwen3_5_moe`, con 34.660.608.768 parametros totales (unos 34,66 mil millones) y disenado exclusivamente para generacion de texto. El artefacto se distribuye en formato safetensors para la libreria MLX de Apple, con cuantizacion afin de 6 bits y tamano de grupo 64, aplicada directamente desde los pesos BF16 de origen.
+Occamy-1.0 MLX 6-bit es una cuantizacion nativa para MLX del modelo Occamy-1.0, desarrollado por Accio-Lab. Se trata de un transformer de tipo mixture-of-experts (MoE), etiquetado en Hugging Face con la arquitectura `qwen3_5_moe`, con 34.660.608.768 parametros totales (unos 34,66 mil millones) y disenado exclusivamente para generacion de texto. El artefacto se distribuye en formato safetensors para la libreria MLX de Apple, con cuantizacion afin de 6 bits y tamano de grupo 64, aplicada directamente desde los pesos BF16 de origen.
 
 El problema que resuelve es el de ejecutar un modelo MoE de ~35B en hardware Apple Silicon sin recurrir a formato GGUF ni a cuantizaciones de menor precision: el checkpoint ocupa 28.168.623.119 bytes (28,17 GB / 26,23 GiB) y se carga con `mlx-lm` estandar, sin adaptadores, exponiendo una API compatible con OpenAI mediante `mlx_lm.server`. La licencia Apache 2.0, heredada del modelo base, permite uso comercial sin restricciones adicionales.
 
@@ -12,7 +12,7 @@ Es relevante ahora porque forma parte de un conjunto de checkpoints publicado en
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE tipo transformer (`qwen3_5_moe` segun los tags de HuggingFace) |
+| Arquitectura | MoE tipo transformer (`qwen3_5_moe` segun los tags de Hugging Face) |
 | Parametros totales | 34.660.608.768 (~34,66B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |

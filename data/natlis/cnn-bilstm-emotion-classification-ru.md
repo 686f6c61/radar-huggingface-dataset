@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Limitaciones y advertencias
 
-- El modelo depende de un pipeline de preprocesado específico (construcción de mel-espectrogramas) que no se incluye en el repositorio de HuggingFace; para nuevas grabaciones es necesario replicar el pipeline del proyecto `ruintona`.
+- El modelo depende de un pipeline de preprocesado específico (construcción de mel-espectrogramas) que no se incluye en el repositorio de Hugging Face; para nuevas grabaciones es necesario replicar el pipeline del proyecto `ruintona`.
 - Las etiquetas emocionales se obtuvieron por crowdsourcing con el método Dawid-Skene y un umbral de acuerdo de 0.9, lo que puede introducir sesgos en la anotación y limitar la precisión en emociones ambiguas.
 - No se garantiza la transferibilidad a habla espontánea fuera de la distribución del corpus Dusha; el rendimiento puede degradarse con acentos, ruido de fondo o estilos de habla no representados.
 - La licencia CC BY-SA 4.0 implica que cualquier obra derivada debe compartirse bajo la misma licencia, lo que puede ser restrictivo para uso comercial propietario.
@@ -74,5 +74,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Natlis/cnn-bilstm-emotion-classification-ru
+- Modelo en Hugging Face: https://huggingface.co/Natlis/cnn-bilstm-emotion-classification-ru
 - Paper del corpus Dusha (Kondratenko et al., arXiv:2212.12266): https://arxiv.org/abs/2212.12266

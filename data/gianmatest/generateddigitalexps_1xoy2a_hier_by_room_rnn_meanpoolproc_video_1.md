@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto publicado en HuggingFace por el usuario `gianmaTest` bajo un repositorio de pruebas. Por la nomenclatura del identificador (hier, by_room, rnn, meanPoolProc, video) y por su reducido tamano de 2.366.208 parametros, se trata de una red neuronal recurrente (RNN) jerarquica orientada a procesar secuencias de video organizadas por habitaciones, con un mecanismo de agregacion tipo mean pooling. No es un modelo de lenguaje generativo ni un transformer de gran escala.
+El modelo `generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto publicado en Hugging Face por el usuario `gianmaTest` bajo un repositorio de pruebas. Por la nomenclatura del identificador (hier, by_room, rnn, meanPoolProc, video) y por su reducido tamano de 2.366.208 parametros, se trata de una red neuronal recurrente (RNN) jerarquica orientada a procesar secuencias de video organizadas por habitaciones, con un mecanismo de agregacion tipo mean pooling. No es un modelo de lenguaje generativo ni un transformer de gran escala.
 
-El modelo no dispone de model card sustantiva: el README unicamente indica que fue subido mediante la integracion `PyTorchModelHubMixin` de HuggingFace Hub y deja como "More Information Needed" el codigo, el paper y la documentacion. No se declara licencia, idiomas, pipeline ni dataset de entrenamiento. El repositorio registra 0 descargas y 0 likes, y su tamano es practicamente nulo (0.0 GB reportados), lo que sugiere pesos de muy baja entidad o un repo incompleto.
+El modelo no dispone de model card sustantiva: el README unicamente indica que fue subido mediante la integracion `PyTorchModelHubMixin` de Hugging Face Hub y deja como "More Information Needed" el codigo, el paper y la documentacion. No se declara licencia, idiomas, pipeline ni dataset de entrenamiento. El repositorio registra 0 descargas y 0 likes, y su tamano es practicamente nulo (0.0 GB reportados), lo que sugiere pesos de muy baja entidad o un repo incompleto.
 
 Por tanto, esta ficha debe interpretarse como una descripcion cautelosa de un checkpoint experimental de investigacion, no como un modelo listo para produccion. Su relevancia actual es limitada: sirve como referencia de arquitecturas jerarquicas RNN aplicadas a video, pero carece de documentacion, benchmarks y soporte comunitario.
 
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Prototipado de reconocimiento de actividades de la vida diaria (ADL): su estructura por habitaciones encaja con datasets tipo CASAS o similares, aunque requeriria reentrenamiento y validacion.
 - Extraccion de caracteristicas para busqueda de video: los embeddings agregados podrian indexarse para recuperacion de clips similares, siempre que se valide su calidad.
 - Baseline en experimentos academicos: util como punto de partida de baja capacidad (2,3 M de parametros) para medir la mejora de modelos mas grandes.
-- Pruebas de integracion con `PyTorchModelHubMixin`: el repo puede servir para verificar flujos de carga y serializacion en pipelines internos de HuggingFace Hub.
+- Pruebas de integracion con `PyTorchModelHubMixin`: el repo puede servir para verificar flujos de carga y serializacion en pipelines internos de Hugging Face Hub.
 - Docencia: ejemplo minimalista de RNN jerarquica para explicar mean pooling y jerarquias por entidad.
 
 ## Benchmarks y rendimiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_1 | 2,37 M | no disponible | Video jerarquico (RNN) | no disponible | HuggingFace, 0 descargas |
+| generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_1 | 2,37 M | no disponible | Video jerarquico (RNN) | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para identificar modelos comparables de la misma categoria con datos verificables de parametros, contexto y rendimiento.
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_1
 - Documentacion de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo: no disponible

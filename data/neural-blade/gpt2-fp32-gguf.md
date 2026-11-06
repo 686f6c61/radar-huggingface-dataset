@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`neural-blade/gpt2-fp32-gguf` es un repositorio publicado en HuggingFace por el usuario neural-blade que contiene pesos en formato GGUF de un modelo de la familia GPT-2. El recuento de parámetros declarado en el repositorio (774.030.080) coincide exactamente con el de GPT-2 large, pero la model card no incluye ninguna descripción técnica, por lo que la configuración concreta (número de capas, cabezas de atención, dimensión oculta) no está confirmada por el autor.
+`neural-blade/gpt2-fp32-gguf` es un repositorio publicado en Hugging Face por el usuario neural-blade que contiene pesos en formato GGUF de un modelo de la familia GPT-2. El recuento de parámetros declarado en el repositorio (774.030.080) coincide exactamente con el de GPT-2 large, pero la model card no incluye ninguna descripción técnica, por lo que la configuración concreta (número de capas, cabezas de atención, dimensión oculta) no está confirmada por el autor.
 
 El interés del repositorio es acotado y muy específico: se trata de una conversión a GGUF de un modelo de 2019, sin ajuste por instrucciones, sin alineamiento y con una ventana de contexto muy reducida. Su utilidad práctica se limita a la inferencia local en CPU con llama.cpp u Ollama, a experimentos de cuantización y a servir como referencia de línea base frente a modelos pequeños actuales.
 
@@ -77,7 +77,7 @@ Los datos de la columna de alternativas provienen de conocimiento general y debe
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| neural-blade/gpt2-fp32-gguf | 774 M | no disponible (1024 en GPT-2 original) | GGUF | MIT | HuggingFace, 0 descargas |
+| neural-blade/gpt2-fp32-gguf | 774 M | no disponible (1024 en GPT-2 original) | GGUF | MIT | Hugging Face, 0 descargas |
 | GPT-2 large (OpenAI) | 774 M | 1024 tokens | PyTorch / safetensors | MIT (con avisos de uso) | Ampliamente disponible |
 | DistilGPT2 | 82 M | 1024 tokens | PyTorch / safetensors | MIT | Ampliamente disponible |
 | TinyLlama-1.1B-Chat | 1,1 B | no disponible | safetensors / GGUF | Apache 2.0 | Ampliamente disponible |
@@ -101,7 +101,7 @@ Diferencias clave: las alternativas modernas de aproximadamente 0,5-1 B de param
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neural-blade/gpt2-fp32-gguf
+- Repositorio en Hugging Face: https://huggingface.co/neural-blade/gpt2-fp32-gguf
 - Paper original de GPT-2 (Language Models are Unsupervised Multitask Learners): no disponible en los resultados de busqueda proporcionados.
 - Repositorio de llama.cpp: no disponible en los resultados de busqueda proporcionados.
 - Resultados de busqueda web: los enlaces devueltos no guardan ninguna relacion con el modelo (corresponden a un taller de neumaticos en Neustadt am Rubenberge, Alemania), por lo que se descartan como fuentes.

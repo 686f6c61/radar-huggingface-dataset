@@ -86,7 +86,7 @@ La comparativa se limita al modelo original y a otros modelos abliterated de Mis
 
 ## Enlaces
 
-- [HuggingFace: wangzhang/Devstral-Small-2-24B-Instruct-abliterated](https://huggingface.co/wangzhang/Devstral-Small-2-24B-Instruct-abliterated)
+- [Hugging Face: wangzhang/Devstral-Small-2-24B-Instruct-abliterated](https://huggingface.co/wangzhang/Devstral-Small-2-24B-Instruct-abliterated)
 - [Modelo base: mistralai/Devstral-Small-2-24B-Instruct-2512](https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512)
 - [Abliterix (herramienta de modificacion)](https://github.com/wuwangzhang1216/abliterix)
 - [OpenModelMap: benchmarks y guia de despliegue del modelo base](https://openmodelmap.com/model/mistralai/Devstral-Small-2-24B-Instruct-2512)

@@ -77,7 +77,7 @@ La principal diferencia con el modelo base es la especializacion en armenio, que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hurricup/whisper-large-v3-turbo-armenian-ct2
+- Modelo en Hugging Face: https://huggingface.co/hurricup/whisper-large-v3-turbo-armenian-ct2
 - Modelo fuente (fine-tuning): https://huggingface.co/Chillarmo/whisper-large-v3-turbo-armenian
 - Modelo base (OpenAI): https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio de faster-whisper: https://github.com/SYSTRAN/faster-whisper

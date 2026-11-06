@@ -5,7 +5,7 @@ d1-3B-CoreAI es una conversión del modelo de decisión LiquidAI/d1-3B al format
 
 Esta variante concreta está pensada para ejecución en dispositivo (on-device) en iPhone y Mac: el decodificador se ha cuantizado con palettización k-means de 8 bits para que quepa en memoria de un teléfono, y los ficheros `.aimodel` son exactamente los que usa la aplicación D1-3B para iPhone, incluida la demo Keep It Clean de System One Arcade, que pixela en tiempo real fotogramas de cámara cuando detecta un dedo corazón levantado. Según la model card, el modelo mantiene 738/740 respuestas idénticas al modelo original en iPhone 17 Pro y 740/742 en Mac M3 Max sobre un conjunto dorado de 742 preguntas.
 
-Su relevancia actual radica en que lleva un modelo de decisión multimodal de 3B a hardware de consumo Apple con una pérdida de fidelidad mínima, con latencias de 0,42 s por fotograma en iPhone 17 Pro y 0,25 s en Mac M3 Max. El repositorio ocupa 3,9 GB y la licencia es LFM Open License v1.0 (etiquetada como `other` en HuggingFace).
+Su relevancia actual radica en que lleva un modelo de decisión multimodal de 3B a hardware de consumo Apple con una pérdida de fidelidad mínima, con latencias de 0,42 s por fotograma en iPhone 17 Pro y 0,25 s en Mac M3 Max. El repositorio ocupa 3,9 GB y la licencia es LFM Open License v1.0 (etiquetada como `other` en Hugging Face).
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Su relevancia actual radica en que lleva un modelo de decisión multimodal de 3B
 | Longitud de contexto | 8.192 tokens en el runtime de iPhone (el modelo base soporta contexto más amplio, no especificado) |
 | Tipos de cuantizacion | Palettización k-means de 8 bits en las capas Linear del decodificador; matemáticas en fp16; torre de visión en fp16 |
 | Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi (16 idiomas) |
-| Licencia | LFM Open License v1.0 (etiquetada como `other` en HuggingFace, `license_name: lfm1.0`) |
+| Licencia | LFM Open License v1.0 (etiquetada como `other` en Hugging Face, `license_name: lfm1.0`) |
 | Formato de pesos | `.aimodel` (Core AI de Apple): `decoder.aimodel` (2,3 GB), `vision.aimodel` (815 MB), `embed.f16` (500 MB), `tokenizer.json` (17 MB), `meta.json` |
 
 ## Arquitectura y entrenamiento
@@ -73,10 +73,10 @@ El conjunto dorado de referencia son las respuestas del modelo original sobre 33
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d1-3B-CoreAI (esta ficha) | 3,1B | 8.192 tokens en runtime iPhone | 738/740 misma respuesta que el original; 0,42 s/fotograma en iPhone 17 Pro | LFM Open License v1.0 | HuggingFace, formato Core AI |
-| LiquidAI/d1-3B | 3,1B | no disponible en detalle | 48,57 en Decision Index v0.2.1; 8 ms/pregunta en RTX | LFM Open License v1.0 | HuggingFace, safetensors |
+| d1-3B-CoreAI (esta ficha) | 3,1B | 8.192 tokens en runtime iPhone | 738/740 misma respuesta que el original; 0,42 s/fotograma en iPhone 17 Pro | LFM Open License v1.0 | Hugging Face, formato Core AI |
+| LiquidAI/d1-3B | 3,1B | no disponible en detalle | 48,57 en Decision Index v0.2.1; 8 ms/pregunta en RTX | LFM Open License v1.0 | Hugging Face, safetensors |
 | Decider 35B-A3B | 35B (MoE) | no disponible | Rendimiento a la par de d1-3B en Decision Index v0.2.1 según Liquid AI | no disponible | no disponible |
-| LFM2.5-VL-3B | 3B (VL) | no disponible | Modelo base sobre el que se construye d1-3B | no disponible | HuggingFace |
+| LFM2.5-VL-3B | 3B (VL) | no disponible | Modelo base sobre el que se construye d1-3B | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos citados en la información disponible; no se dispone de datos de otros modelos de decisión comparables en tamaño o tarea.
 

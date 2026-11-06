@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sstoica12/acquisition_student_llama8bins_numina_gradient` es un ajuste fino (fine-tune) de un modelo base Llama de 8.000 millones de parámetros, desarrollado por Sofia (sstoica12) y publicado en HuggingFace. El nombre del repositorio sugiere que el entrenamiento se realizó sobre el dataset Numina, una colección de problemas matemáticos y razonamiento, utilizando la librería TRL de HuggingFace con un proceso de Supervised Fine-Tuning (SFT). El tag "gradient" podría indicar el uso de la plataforma Gradient para el entrenamiento.
+El modelo `sstoica12/acquisition_student_llama8bins_numina_gradient` es un ajuste fino (fine-tune) de un modelo base Llama de 8.000 millones de parámetros, desarrollado por Sofia (sstoica12) y publicado en Hugging Face. El nombre del repositorio sugiere que el entrenamiento se realizó sobre el dataset Numina, una colección de problemas matemáticos y razonamiento, utilizando la librería TRL de Hugging Face con un proceso de Supervised Fine-Tuning (SFT). El tag "gradient" podría indicar el uso de la plataforma Gradient para el entrenamiento.
 
 El modelo está orientado a tareas de generación de texto, con un enfoque probable en razonamiento matemático y resolución de problemas, dado el dataset de entrenamiento mencionado. Su relevancia radica en ser un ejemplo de fine-tuning especializado sobre una base Llama 8B, un tamaño que permite desplegarlo en hardware de consumo con cuantización. La model card es extremadamente escasa en detalles, por lo que gran parte de la información técnica debe inferirse del nombre y los tags.
 
@@ -23,7 +23,7 @@ El modelo está orientado a tareas de generación de texto, con un enfoque proba
 
 La arquitectura es un transformer decoder-only de la familia Llama con 8.030 millones de parámetros. Al ser un fine-tune, la arquitectura base es la del modelo Llama original, con atención causal y normalización RMSNorm. No se dispone de información sobre el número de capas, dimensiones ocultas o cabezas de atención, pero los parámetros totales coinciden con la familia Llama 8B.
 
-El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) usando la librería TRL de HuggingFace, como indican los tags `trl` y `sft`. El dataset utilizado es presumiblemente Numina, una colección de problemas matemáticos y de razonamiento, aunque no se especifica la versión exacta ni el número de tokens de entrenamiento. El tag "gradient" sugiere que el entrenamiento pudo ejecutarse en la plataforma Gradient, pero no hay confirmación. No se menciona el uso de RLHF, DPO u otras técnicas de alineación posteriores al SFT.
+El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) usando la librería TRL de Hugging Face, como indican los tags `trl` y `sft`. El dataset utilizado es presumiblemente Numina, una colección de problemas matemáticos y de razonamiento, aunque no se especifica la versión exacta ni el número de tokens de entrenamiento. El tag "gradient" sugiere que el entrenamiento pudo ejecutarse en la plataforma Gradient, pero no hay confirmación. No se menciona el uso de RLHF, DPO u otras técnicas de alineación posteriores al SFT.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 16 GB en FP16 (8B parámetros × 2 bytes). Con cuantización a 8 bits, se reduce a unos 8 GB; a 4 bits, unos 4-5 GB.
 - GPU recomendadas: para FP16, una GPU con 16-24 GB de VRAM como RTX 4090, A100 40GB o similar. Con cuantización 4-bit, puede ejecutarse en GPUs de consumo con 8 GB de VRAM como RTX 3070/4060.
 - Sí cabe en GPU de consumo si se aplica cuantización (GGUF, AWQ o GPTQ).
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con transformers y text-generation-inference (el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con transformers y text-generation-inference (el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face).
 - Latencia y throughput: no disponibles. Para un modelo de 8B en una GPU moderna, se espera una generación de 20-50 tokens por segundo en FP16, y algo menor en cuantización.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparativa es limitada porque no se dispone de benchmarks del modelo evaluad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sstoica12/acquisition_student_llama8bins_numina_gradient
+- Modelo en Hugging Face: https://huggingface.co/sstoica12/acquisition_student_llama8bins_numina_gradient
 - Perfil del autor: https://huggingface.co/sstoica12/models
 - Modelo relacionado (variante format): https://huggingface.co/sstoica12/acquisition_student_llama8bins_numina_format
 - Modelo relacionado (variante PS): https://huggingface.co/models?search=sstoica12%2Facquisition_student_PS_llama8bins_numina

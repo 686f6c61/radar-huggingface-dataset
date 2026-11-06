@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act_pickplace_50 es un modelo de politica robotica (policy) entrenado con el framework LeRobot de HuggingFace para la tarea de pick-and-place (recoger y colocar objetos). Desarrollado por TrebleY (Yiyao Yang), emplea la arquitectura ACT (Action Chunking with Transformers), una tecnica de aprendizaje por imitacion que predice secuencias de 100 acciones a partir de observaciones visuales y proprioceptivas. Con 51,6 millones de parametros, integra un backbone visual ResNet18 y un transformer con dimension de modelo 512.
+act_pickplace_50 es un modelo de politica robotica (policy) entrenado con el framework LeRobot de Hugging Face para la tarea de pick-and-place (recoger y colocar objetos). Desarrollado por TrebleY (Yiyao Yang), emplea la arquitectura ACT (Action Chunking with Transformers), una tecnica de aprendizaje por imitacion que predice secuencias de 100 acciones a partir de observaciones visuales y proprioceptivas. Con 51,6 millones de parametros, integra un backbone visual ResNet18 y un transformer con dimension de modelo 512.
 
 El modelo fue entrenado sobre el dataset TrebleY/pickplace_50_20260902_213020, que contiene 50 episodios de demostracion con 20.981 frames en total. El entrenamiento se completo en aproximadamente 2,6 horas con 10.000 pasos, batch size de 32 y optimizador AdamW, alcanzando una perdida final de 0,174. Su relevancia radica en demostrar un pipeline completo y reproducible de entrenamiento de politicas visuomotoras con LeRobot, accesible para la comunidad gracias a su licencia Apache 2.0 y su tamaño reducido que permite ejecucion en hardware de consumo.
 
@@ -31,7 +31,7 @@ El backbone visual es un ResNet18 que extrae caracteristicas de las imagenes de 
 - Control visuomotor: combina informacion visual (imagenes procesadas por ResNet18) con el estado del robot para generar comandos de actuacion.
 - Prediccion de acciones por chunking: genera bloques de 100 pasos de accion, lo que permite una ejecucion coherente y suave en el tiempo.
 - Aprendizaje por imitacion: no requiere ingenieria de recompensas ni simulacion; aprende directamente de demostraciones grabadas.
-- Integracion con LeRobot: compatible con la API estandar de HuggingFace para robotica, permitiendo carga y despliegue con `ACTPolicy.from_pretrained()`.
+- Integracion con LeRobot: compatible con la API estandar de Hugging Face para robotica, permitiendo carga y despliegue con `ACTPolicy.from_pretrained()`.
 - No soporta procesamiento de lenguaje, generacion de codigo, vision generalista ni tool calling: es un modelo de politica especifico para robotica.
 
 ## Casos de uso
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No hay suficiente informacion publica sobre modelos comparables para realizar una comparativa rigurosa. Se ha identificado el modelo `a0loshi1/act_pickplace_cube` en HuggingFace, que tambien emplea la arquitectura ACT para una tarea de pick-and-place, pero no se dispone de sus especificaciones detalladas. Ambos modelos comparten el uso de LeRobot y la licencia Apache 2.0, pero no se pueden comparar metricas de rendimiento sin datos publicados.
+No hay suficiente informacion publica sobre modelos comparables para realizar una comparativa rigurosa. Se ha identificado el modelo `a0loshi1/act_pickplace_cube` en Hugging Face, que tambien emplea la arquitectura ACT para una tarea de pick-and-place, pero no se dispone de sus especificaciones detalladas. Ambos modelos comparten el uso de LeRobot y la licencia Apache 2.0, pero no se pueden comparar metricas de rendimiento sin datos publicados.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No hay suficiente informacion publica sobre modelos comparables para realizar un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TrebleY/act_pickplace_50
+- Modelo en Hugging Face: https://huggingface.co/TrebleY/act_pickplace_50
 - Dataset de entrenamiento: https://huggingface.co/datasets/TrebleY/pickplace_50_20260902_213020
 - Perfil del autor: https://huggingface.co/TrebleY
 - Datasets del autor: https://huggingface.co/TrebleY/datasets

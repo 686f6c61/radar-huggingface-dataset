@@ -105,5 +105,5 @@ No se dispone de informacion sobre modelos comparables en el contexto de Imagene
 
 ## Enlaces
 
-- [HuggingFace - lazy-toad/resnet-imagenette](https://huggingface.co/lazy-toad/resnet-imagenette)
+- [Hugging Face - lazy-toad/resnet-imagenette](https://huggingface.co/lazy-toad/resnet-imagenette)
 - [GitHub - fastai/imagenette (dataset)](https://github.com/fastai/imagenette)

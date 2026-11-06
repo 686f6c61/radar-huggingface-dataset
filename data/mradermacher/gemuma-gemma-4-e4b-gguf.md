@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mradermacher/gemuma-gemma-4-E4B-GGUF` es una coleccion de cuantizaciones estaticas en formato GGUF generadas por el usuario mradermacher a partir del modelo `Warspoot/gemuma-gemma-4-E4B`. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos ya existentes (el campo `convert_type` de la model card indica `hf`, es decir, partida desde pesos en formato HuggingFace) a la familia de cuantizaciones K-quant e I-quant que consume llama.cpp y sus derivados.
+El repositorio `mradermacher/gemuma-gemma-4-E4B-GGUF` es una coleccion de cuantizaciones estaticas en formato GGUF generadas por el usuario mradermacher a partir del modelo `Warspoot/gemuma-gemma-4-E4B`. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos ya existentes (el campo `convert_type` de la model card indica `hf`, es decir, partida desde pesos en formato Hugging Face) a la familia de cuantizaciones K-quant e I-quant que consume llama.cpp y sus derivados.
 
 El dato objetivo disponible es el recuento de parametros del modelo de origen en safetensors: 7.518.069.290 parametros, esto es, aproximadamente 7,5 mil millones. El repositorio completo ocupa 40,5 GB porque alberga todas las variantes de cuantizacion en un solo espacio, no porque cada fichero tenga ese tamano. La nomenclatura del nombre sugiere una variante de la familia Gemma, aunque la informacion proporcionada no confirma arquitectura, contexto ni datos de entrenamiento del modelo base.
 
@@ -19,7 +19,7 @@ La relevancia de esta publicacion es practica: permite ejecutar el modelo en loc
 | Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (origen convertido desde pesos HuggingFace; `convert_type: hf`) |
+| Formato de pesos | GGUF (origen convertido desde pesos Hugging Face; `convert_type: hf`) |
 
 ## Arquitectura y entrenamiento
 
@@ -30,7 +30,7 @@ La unica innovacion atribuible a este repositorio es la propia cuantizacion: mra
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de infraestructura compatible con la API de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de infraestructura compatible con la API de Hugging Face Inference Endpoints.
 - Ejecucion local: al distribuirse en GGUF, es compatible con llama.cpp, Ollama y otros runners que cargan este formato.
 - Razonamiento, codigo, matematicas, vision, audio, tool calling y modo "thinking": no disponible, no hay informacion que lo confirme ni que lo descarte.
 - Capacidades multilingues: no disponible.
@@ -44,7 +44,7 @@ La unica innovacion atribuible a este repositorio es la propia cuantizacion: mra
 - Integracion en aplicaciones de escritorio: el formato GGUF esta soportado por multiples clientes de escritorio, de modo que el modelo puede embeberse en herramientas ofimaticas o IDE sin infraestructura adicional.
 - Evaluacion comparativa de cuantizaciones: el repositorio incluye doce variantes del mismo modelo, lo que permite medir de forma controlada el impacto de cada nivel de cuantizacion sobre la perplejidad o la calidad de las respuestas.
 - Entornos con requisitos de privacidad de datos: al ejecutarse en local, las conversaciones no salen del equipo, lo que encaja en escenarios con datos sensibles donde no se permite enviar texto a APIs externas.
-- Base para fine-tuning posterior en formato ligero: aunque el repositorio solo distribuye pesos cuantizados, sirve como referencia de que existe una version completa en HuggingFace sobre la que se puede trabajar.
+- Base para fine-tuning posterior en formato ligero: aunque el repositorio solo distribuye pesos cuantizados, sirve como referencia de que existe una version completa en Hugging Face sobre la que se puede trabajar.
 
 ## Benchmarks y rendimiento
 

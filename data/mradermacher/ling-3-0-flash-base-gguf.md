@@ -70,8 +70,8 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion GGUF: https://huggingface.co/mradermacher/Ling-3.0-flash-base-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-flash-base
+- Repositorio Hugging Face de la cuantizacion GGUF: https://huggingface.co/mradermacher/Ling-3.0-flash-base-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash-base
 - Documentacion oficial de Ling-3.0-flash: https://developer.ant-ling.com/en/docs/models/ling/
 - Repositorio GitHub de InclusionAI: https://github.com/inclusionAI/Ling
 - Pagina del modelo en ModelScope: https://www.modelscope.cn/models/inclusionAI/Ling-3.0-flash-base

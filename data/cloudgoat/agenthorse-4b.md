@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento, contexto o licencia para ninguno de los t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CloudGoat/AgentHorse-4B
+- Modelo en Hugging Face: https://huggingface.co/CloudGoat/AgentHorse-4B
 - Modelo base declarado: https://huggingface.co/InternScience/Agents-A1-4B
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Referencia sobre SLERP: https://en.wikipedia.org/wiki/Slerp

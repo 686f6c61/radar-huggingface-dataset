@@ -97,9 +97,9 @@ Sobre los nueve componentes poco frecuentes, el propio autor declara que el obje
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-DEAL-v3 | ~7,6 B (LoRA rango 32) | no especificado (ejemplo a 8192) | 25/27 y 12/12 con gramatica y brief a 0,6 | apache-2.0 | HuggingFace (safetensors + GGUF) |
-| qwen2.5-7b-deal-v2 | ~7,6 B (QLoRA) | no especificado | 20/27 y 9/12 con gramatica y brief a 0,6; 0/12 con gramatica sin brief | no especificada en la informacion disponible | HuggingFace (predecesor directo) |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | nativo del modelo base, no detallado en esta informacion | asistente generalista, sin metricas DEAL | apache-2.0 | HuggingFace |
+| Qwen2.5-7B-DEAL-v3 | ~7,6 B (LoRA rango 32) | no especificado (ejemplo a 8192) | 25/27 y 12/12 con gramatica y brief a 0,6 | apache-2.0 | Hugging Face (safetensors + GGUF) |
+| qwen2.5-7b-deal-v2 | ~7,6 B (QLoRA) | no especificado | 20/27 y 9/12 con gramatica y brief a 0,6; 0/12 con gramatica sin brief | no especificada en la informacion disponible | Hugging Face (predecesor directo) |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | nativo del modelo base, no detallado en esta informacion | asistente generalista, sin metricas DEAL | apache-2.0 | Hugging Face |
 
 No se dispone de otros modelos comparables de generacion de UI con decodificacion restringida por gramatica en la informacion proporcionada.
 
@@ -118,7 +118,7 @@ No se dispone de otros modelos comparables de generacion de UI con decodificacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pashoktond1/qwen2.5-7b-deal-v3
+- Modelo en Hugging Face: https://huggingface.co/pashoktond1/qwen2.5-7b-deal-v3
 - Predecesor v2: https://huggingface.co/pashoktond1/qwen2.5-7b-deal-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Gramatica GBNF incluida en el repo: `deal-applet.gbnf`

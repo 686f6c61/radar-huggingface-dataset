@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CipherWatch es un modelo publicado en HuggingFace por el usuario TheSyncLab bajo licencia CC-BY-4.0. La model card asociada al repositorio no contiene más información que la declaración de licencia, por lo que no es posible confirmar la arquitectura, el tamaño, el contexto ni el propósito declarado del modelo a partir de la documentación oficial disponible. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline declarado.
+CipherWatch es un modelo publicado en Hugging Face por el usuario TheSyncLab bajo licencia CC-BY-4.0. La model card asociada al repositorio no contiene más información que la declaración de licencia, por lo que no es posible confirmar la arquitectura, el tamaño, el contexto ni el propósito declarado del modelo a partir de la documentación oficial disponible. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline declarado.
 
 La relevancia de esta ficha es, por tanto, limitada y de carácter descriptivo: se trata de un artefacto publicado sin documentación técnica, sin datos de entrenamiento ni resultados de evaluación. Cualquier evaluación de idoneidad para producción requiere inspeccionar directamente los pesos del repositorio, algo que no se ha podido realizar con la información proporcionada.
 
@@ -34,12 +34,12 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesa
 - No consta soporte de razonamiento multi-paso ni uso como agente.
 - No consta capacidad multilingüe declarada.
 - No consta soporte de visión, audio ni modos de razonamiento extendido (thinking mode).
-- No se ha declarado pipeline de HuggingFace, lo que impide inferir la tarea principal (text-generation, image-text-to-text, etc.).
+- No se ha declarado pipeline de Hugging Face, lo que impide inferir la tarea principal (text-generation, image-text-to-text, etc.).
 
 ## Casos de uso
 
 - Evaluación exploratoria en investigación: el modelo puede descargarse y someterse a pruebas controladas para determinar su comportamiento real, dado que no existe documentación que permita anticiparlo.
-- Análisis de artefactos publicados sin model card: útil como caso de estudio sobre prácticas de publicación en HuggingFace y sobre los riesgos de distribuir pesos sin documentación asociada.
+- Análisis de artefactos publicados sin model card: útil como caso de estudio sobre prácticas de publicación en Hugging Face y sobre los riesgos de distribuir pesos sin documentación asociada.
 - Pruebas de reproducibilidad: permite verificar empíricamente si los pesos cargan correctamente con las librerías estándar (transformers, vLLM) y qué configuración requieren.
 - Auditoría de licencia: al estar bajo CC-BY-4.0, puede emplearse como ejemplo de modelo con licencia permisiva para estudiar obligaciones de atribución en flujos de redistribución.
 - Integración experimental en pipelines de CI para validar carga de pesos y tokenizador antes de adoptar modelos no documentados en producción.
@@ -75,5 +75,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheSyncLab/CipherWatch
+- Hugging Face: https://huggingface.co/TheSyncLab/CipherWatch
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

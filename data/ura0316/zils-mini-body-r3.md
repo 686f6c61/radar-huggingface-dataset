@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zils-mini-body-r3 | 4,54B | no disponible | Apache-2.0 | HuggingFace (0 descargas) | Fine-tune LoRA de torchcast-decision-4b; solo cuerpo, requiere chasis del pool |
-| torchcast-ai/torchcast-decision-4b | ~4B | no disponible | Apache-2.0 | HuggingFace | Modelo base directo; fine-tune de Qwen3.5-4B |
-| Qwen/Qwen3.5-4B | ~4B | no disponible | Apache-2.0 | HuggingFace | Modelo original; ampliamente documentado y con ecosistema de herramientas |
+| zils-mini-body-r3 | 4,54B | no disponible | Apache-2.0 | Hugging Face (0 descargas) | Fine-tune LoRA de torchcast-decision-4b; solo cuerpo, requiere chasis del pool |
+| torchcast-ai/torchcast-decision-4b | ~4B | no disponible | Apache-2.0 | Hugging Face | Modelo base directo; fine-tune de Qwen3.5-4B |
+| Qwen/Qwen3.5-4B | ~4B | no disponible | Apache-2.0 | Hugging Face | Modelo original; ampliamente documentado y con ecosistema de herramientas |
 
 No se dispone de datos de rendimiento para establecer comparaciones cuantitativas entre estos modelos.
 
@@ -76,12 +76,12 @@ No se dispone de datos de rendimiento para establecer comparaciones cuantitativa
 - Idiomas soportados no documentados; no se puede garantizar un rendimiento multilingüe.
 - Longitud de contexto desconocida, lo que impide planificar su uso en tareas de contexto largo.
 - Aunque la licencia es Apache-2.0 y permite uso comercial, la dependencia del chasis del pool puede introducir restricciones prácticas o técnicas no documentadas.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere ausencia de validación por parte de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere ausencia de validación por parte de la comunidad.
 - Fecha de creación futura (2026-11-05) en los metadatos, lo que puede indicar un artefacto de publicación o un repositorio de prueba.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ura0316/zils-mini-body-r3
+- Hugging Face: https://huggingface.co/Ura0316/zils-mini-body-r3
 - Modelo base: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

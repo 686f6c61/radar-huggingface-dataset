@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Finnegans Fake — BPE-4096 es un modelo de lenguaje de 12.318.720 parametros entrenado integramente sobre el texto completo de *Finnegans Wake* de James Joyce. Lo desarrolla el usuario de HuggingFace genaforvena como experimento de investigacion sobre tokenizacion y generacion de neologismos, no como modelo de proposito general. La arquitectura es un transformer tipo GPT-2 reducido (6 capas, 6 cabezas de atencion, 384 dimensiones de embedding) con una ventana de contexto de solo 256 tokens y un vocabulario BPE byte-level de 4096 tokens entrenado especificamente sobre el propio libro.
+Finnegans Fake — BPE-4096 es un modelo de lenguaje de 12.318.720 parametros entrenado integramente sobre el texto completo de *Finnegans Wake* de James Joyce. Lo desarrolla el usuario de Hugging Face genaforvena como experimento de investigacion sobre tokenizacion y generacion de neologismos, no como modelo de proposito general. La arquitectura es un transformer tipo GPT-2 reducido (6 capas, 6 cabezas de atencion, 384 dimensiones de embedding) con una ventana de contexto de solo 256 tokens y un vocabulario BPE byte-level de 4096 tokens entrenado especificamente sobre el propio libro.
 
 Su relevancia es metodologica mas que practica. El autor documenta dos cuestiones tecnicas poco habituales en fichas de modelos: primero, el corpus tiene 58.725 tipos de palabra distintos, de los cuales 46.599 (el 79,4%) son hapax legomena (aparecen una sola vez), lo que invalida cualquier tokenizacion a nivel de palabra y justifica el BPE entrenado ad hoc; segundo, el autor publica un error de implementacion que estuvo presente en sus primeras metricas (doble desplazamiento de etiquetas, que hacia que el modelo aprendiera a predecir el token t+2), y aclara que todas las cifras de la ficha son posteriores a la correccion.
 
@@ -21,9 +21,9 @@ El checkpoint publicado es el de mejor perdida de validacion (5,8768), no el de 
 | Licencia | cc0-1.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 | Vocabulario | 4096 tokens, BPE byte-level, con `add_prefix_space: true` |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion en HuggingFace | 2026-09-16 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-16 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ No se dispone de comparaciones de rendimiento con otros modelos. Cualquier cifra
 - VRAM estimada para inferencia: aproximadamente 49 MB en FP32, 25 MB en FP16/BF16, 12 MB en int8 y 6 MB en int4 (estimaciones derivadas de los 12.318.720 parametros; el autor no publica cifras).
 - GPU recomendadas: ninguna en particular; cualquier GPU con al menos 1 GB de memoria es sobradamente suficiente, e incluso la inferencia en CPU es inmediata.
 - Cabe en cualquier GPU de consumo, incluida una GTX 1050 o una GPU integrada moderna. Tambien cabe comodamente en Raspberry Pi y en telefonos moviles.
-- Opciones de despliegue: `transformers` de forma nativa; el tag `text-generation-inference` y `endpoints_compatible` indica compatibilidad con TGI y con los endpoints de HuggingFace. No se publican artefactos GGUF, por lo que para usarlo con llama.cpp u Ollama seria necesaria una conversion propia (llama.cpp soporta la arquitectura GPT-2).
+- Opciones de despliegue: `transformers` de forma nativa; el tag `text-generation-inference` y `endpoints_compatible` indica compatibilidad con TGI y con los endpoints de Hugging Face. No se publican artefactos GGUF, por lo que para usarlo con llama.cpp u Ollama seria necesaria una conversion propia (llama.cpp soporta la arquitectura GPT-2).
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 - Restriccion practica de despliegue: la ventana de contexto de 256 tokens limita severamente cualquier uso conversacional o con documentos largos, con independencia del hardware disponible.
 
@@ -106,12 +106,12 @@ Rendimiento comparado: no disponible. El unico dato objetivo es que finnegans-fa
 - El corpus no se redistribuye: el usuario debe aportar el libro por su cuenta.
 - Situacion legal del corpus: *Finnegans Wake* es de dominio publico en Irlanda, el Reino Unido y la UE (Joyce murio en 1941), pero no en Estados Unidos hasta 2035. Que los pesos entrenados sean o no una obra derivada del texto de entrenamiento es una cuestion juridica no resuelta.
 - La licencia CC0-1.0 se aplica al codigo y a los pesos publicados, no al corpus.
-- Metadatos anomolos: la fecha de creacion registrada en HuggingFace (2026-09-16) es posterior a la fecha de consulta habitual y el repositorio tiene 0 descargas y 0 likes, por lo que no existe validacion externa ni uso comunitario documentado.
+- Metadatos anomolos: la fecha de creacion registrada en Hugging Face (2026-09-16) es posterior a la fecha de consulta habitual y el repositorio tiene 0 descargas y 0 likes, por lo que no existe validacion externa ni uso comunitario documentado.
 - Metricas historicas corregidas: cualquier cifra publicada antes de la correccion del doble desplazamiento de etiquetas describia un modelo que predecia el token t+2 y no debe tomarse como valida.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genaforvena/finnegans-fake-bpe4096
+- Modelo en Hugging Face: https://huggingface.co/genaforvena/finnegans-fake-bpe4096
 - Codigo del proyecto (CC0): https://github.com/genaforvena/finnegans-fake
 - Paper asociado: no disponible
 - Blog o articulo tecnico del autor: no disponible

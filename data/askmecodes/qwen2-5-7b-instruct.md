@@ -99,7 +99,7 @@ Los datos de parametros, contexto y licencia de los modelos alternativos corresp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AskMeCodes/Qwen2.5-7B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/AskMeCodes/Qwen2.5-7B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B
 - Modelo instructivo oficial: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Licencia Apache 2.0 (referenciada por el autor): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE

@@ -99,7 +99,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Laya-Multilingual-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Laya-Multilingual-LiteRT
 - Checkpoint base: https://huggingface.co/convaiinnovations/laya
 - Paquete hermano en ingles: https://huggingface.co/litert-community/Laya-English-LiteRT
 - Paquete hermano en forma token-id: https://huggingface.co/litert-community/laya-LiteRT

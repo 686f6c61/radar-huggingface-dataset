@@ -108,7 +108,7 @@ La diferencia clave frente a la variante Deckard es que a esta última le faltan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RBergBauer/Qwen3.5-4B-MTP-Heretic
+- Modelo en Hugging Face: https://huggingface.co/RBergBauer/Qwen3.5-4B-MTP-Heretic
 - Repositorio GGUF compañero: https://huggingface.co/RBergBauer/Qwen3.5-4B-MTP-Heretic-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

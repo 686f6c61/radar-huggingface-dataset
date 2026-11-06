@@ -79,6 +79,6 @@ No se dispone de métricas comparativas publicadas en la información proporcion
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/NEWSKEN/tartanimu-context5-final
+- Hugging Face del modelo: https://huggingface.co/NEWSKEN/tartanimu-context5-final
 - Pagina del TartanIMU Challenge: https://superodometry.com/tartanimu
-- HuggingFace de TartanIMU (modelo base): https://huggingface.co/Tartan-IMU/TartanIMU
+- Hugging Face de TartanIMU (modelo base): https://huggingface.co/Tartan-IMU/TartanIMU

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/ind_latn_100mb`, un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros (aproximadamente 124,8 millones). Lo publica el usuario de HuggingFace `francesca9805`, y el run de entrenamiento asociado está alojado en una cuenta de Weights & Biases de la Universidad de Groningen (f-padovani-university-of-groningen), dentro de un proyecto llamado `new-tokenizers`.
+El modelo `francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/ind_latn_100mb`, un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros (aproximadamente 124,8 millones). Lo publica el usuario de Hugging Face `francesca9805`, y el run de entrenamiento asociado está alojado en una cuenta de Weights & Biases de la Universidad de Groningen (f-padovani-university-of-groningen), dentro de un proyecto llamado `new-tokenizers`.
 
 Se trata de un modelo experimental de investigación, no de un modelo orientado a producción: acumula 0 descargas y 0 likes en el momento de redactar esta ficha, el repositorio ocupa 0,3 GB y la model card no documenta ni el conjunto de datos de entrenamiento, ni el número de tokens, ni resultados de evaluación. El sufijo del nombre (`100mb_seed3407`) apunta a un experimento controlado por semilla sobre un corpus de 100 MB, y el segmento `ppt-mp-struct-core` sugiere una configuración estructural concreta dentro de una comparativa más amplia de tokenizadores.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, académica: sirve como punto de comparación reprod
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace; cargado con `transformers`) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face; cargado con `transformers`) |
 | Parametros totales | 124.770.816 (aproximadamente 124,8 M), dato real de los pesos en safetensors |
 | Parametros activos | No aplica: no es un modelo de mezcla de expertos (MoE) |
 | Longitud de contexto | No disponible en la model card; el modelo base pertenece a la familia GPT-2, cuya ventana habitual es de 1024 tokens (dato no confirmado para este ajuste) |
@@ -54,7 +54,7 @@ El entrenamiento se realizó con aprendizaje supervisado (SFT) usando TRL 0.23.0
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de ninguna clase (ni perplejidad, ni MMLU, ni HumanEval, ni GSM8K, ni evaluaciones específicas de indonesio), y el repositorio de HuggingFace no tiene descargas ni discusiones que aporten datos adicionales.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de ninguna clase (ni perplejidad, ni MMLU, ni HumanEval, ni GSM8K, ni evaluaciones específicas de indonesio), y el repositorio de Hugging Face no tiene descargas ni discusiones que aporten datos adicionales.
 
 ## Requisitos de hardware
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed3407 | 124,8 M | No disponible (probablemente 1024) | No disponible | No disponible | Repositorio HuggingFace con 0 descargas |
-| goldfish-models/ind_latn_100mb (modelo base) | Del orden de 100 M (no confirmado en la información disponible) | No disponible | No disponible | No disponible | Repositorio público de HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | MIT (licencia modificada de OpenAI) | Datos públicos de la publicación original | Ampliamente disponible en HuggingFace |
-| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Datos públicos del proyecto Pythia | Ampliamente disponible en HuggingFace |
+| francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed3407 | 124,8 M | No disponible (probablemente 1024) | No disponible | No disponible | Repositorio Hugging Face con 0 descargas |
+| goldfish-models/ind_latn_100mb (modelo base) | Del orden de 100 M (no confirmado en la información disponible) | No disponible | No disponible | No disponible | Repositorio público de Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | MIT (licencia modificada de OpenAI) | Datos públicos de la publicación original | Ampliamente disponible en Hugging Face |
+| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Datos públicos del proyecto Pythia | Ampliamente disponible en Hugging Face |
 
 No se dispone de resultados de evaluación comparativos entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, contexto declarado y licencia. Las filas de GPT-2 small y Pythia-160M corresponden a datos públicos de referencia de cada proyecto, no a mediciones realizadas sobre este modelo.
 
@@ -90,7 +90,7 @@ No se dispone de resultados de evaluación comparativos entre estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/ind_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/8hygb2hx

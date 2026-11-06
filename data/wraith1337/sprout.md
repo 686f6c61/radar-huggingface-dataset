@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Sprout (`wraith1337/Sprout`) | 3,08 B | No declarado en la model card (heredado del base) | Apache-2.0 | Fine-tune QLoRA de identidad y persona para Sprynn, solo inglés, sin benchmarks | HuggingFace, safetensors fp16 y GGUF Q4_K_M |
-| SmolLM3-3B (modelo base) | 3,08 B | 64K, ampliable a 128K con YaRN según su documentación | Apache-2.0 | Modelo generalista multilingüe con modos de razonamiento | HuggingFace, ampliamente desplegado |
-| Llama 3.2 3B | 3,21 B | 128K según documentación pública | Licencia comunitaria de Meta (no Apache-2.0) | Modelo generalista multilingüe | HuggingFace, ecosistema amplio |
-| Qwen3-4B | 4,0 B | 32K nativo, ampliable con YaRN según documentación pública | Apache-2.0 | Modelo generalista con modo de razonamiento | HuggingFace, ecosistema amplio |
+| Sprout (`wraith1337/Sprout`) | 3,08 B | No declarado en la model card (heredado del base) | Apache-2.0 | Fine-tune QLoRA de identidad y persona para Sprynn, solo inglés, sin benchmarks | Hugging Face, safetensors fp16 y GGUF Q4_K_M |
+| SmolLM3-3B (modelo base) | 3,08 B | 64K, ampliable a 128K con YaRN según su documentación | Apache-2.0 | Modelo generalista multilingüe con modos de razonamiento | Hugging Face, ampliamente desplegado |
+| Llama 3.2 3B | 3,21 B | 128K según documentación pública | Licencia comunitaria de Meta (no Apache-2.0) | Modelo generalista multilingüe | Hugging Face, ecosistema amplio |
+| Qwen3-4B | 4,0 B | 32K nativo, ampliable con YaRN según documentación pública | Apache-2.0 | Modelo generalista con modo de razonamiento | Hugging Face, ecosistema amplio |
 
 Nota: los datos de contexto y parámetros de los modelos comparados provienen de su documentación pública y no han sido verificados en el contexto de este fine-tune. En rendimiento no procede comparación: Sprout no publica ninguna métrica, mientras que los modelos base y alternativas sí cuentan con evaluaciones publicadas por sus autores.
 
@@ -90,7 +90,7 @@ Nota: los datos de contexto y parámetros de los modelos comparados provienen de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wraith1337/Sprout
+- Modelo en Hugging Face: https://huggingface.co/wraith1337/Sprout
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/wraith1337/Sprout-Training-Data
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Sitio personal del autor: https://wraith1337.github.io/index.html

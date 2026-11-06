@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`darealSven/jev-fces-judge-1.5B` es un ajuste fino supervisado (SFT) del modelo `Qwen/Qwen2.5-1.5B-Instruct`, publicado por el usuario `darealSven` en HuggingFace. Se trata de un modelo causal de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), entrenado con la librería TRL sobre la arquitectura Qwen2. El repositorio ocupa 6,2 GB e incluye pesos en formato safetensors.
+`darealSven/jev-fces-judge-1.5B` es un ajuste fino supervisado (SFT) del modelo `Qwen/Qwen2.5-1.5B-Instruct`, publicado por el usuario `darealSven` en Hugging Face. Se trata de un modelo causal de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), entrenado con la librería TRL sobre la arquitectura Qwen2. El repositorio ocupa 6,2 GB e incluye pesos en formato safetensors.
 
 El problema que aborda no está documentado en la model card: el sufijo "judge" y la referencia "fces" sugieren un uso como evaluador o clasificador de respuestas en un contexto académico, pero el autor no describe la tarea, el dataset ni el proceso de anotación. Esto lo convierte en un artefacto de interés limitado para producción, aunque útil como punto de partida para experimentación sobre modelos pequeños de la familia Qwen2.5.
 
@@ -78,11 +78,11 @@ Las especificaciones de los modelos alternativos proceden de su documentación p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| darealSven/jev-fces-judge-1.5B | 1,54 B | No confirmado (base: 32.768) | No disponible | HuggingFace, 0 descargas | Fine-tune SFT sin documentación ni benchmarks |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 (131.072 con YaRN) | Apache-2.0 | HuggingFace, ampliamente usado | Modelo base; documentación completa y evaluaciones publicadas |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace (acceso con condiciones) | Alternativa de tamaño similar con contexto mayor |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,71 B | 8.192 | Apache-2.0 | HuggingFace | Orientado a despliegue en dispositivo, con datos de entrenamiento detallados |
-| google/gemma-2-2b-it | 2,61 B | 8.192 | Gemma Terms of Use | HuggingFace (acceso con condiciones) | Mayor tamaño y contexto más corto |
+| darealSven/jev-fces-judge-1.5B | 1,54 B | No confirmado (base: 32.768) | No disponible | Hugging Face, 0 descargas | Fine-tune SFT sin documentación ni benchmarks |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 (131.072 con YaRN) | Apache-2.0 | Hugging Face, ampliamente usado | Modelo base; documentación completa y evaluaciones publicadas |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face (acceso con condiciones) | Alternativa de tamaño similar con contexto mayor |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,71 B | 8.192 | Apache-2.0 | Hugging Face | Orientado a despliegue en dispositivo, con datos de entrenamiento detallados |
+| google/gemma-2-2b-it | 2,61 B | 8.192 | Gemma Terms of Use | Hugging Face (acceso con condiciones) | Mayor tamaño y contexto más corto |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ Las especificaciones de los modelos alternativos proceden de su documentación p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darealSven/jev-fces-judge-1.5B
+- Modelo en Hugging Face: https://huggingface.co/darealSven/jev-fces-judge-1.5B
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Documentación de TRL citada en la model card: https://github.com/huggingface/trl

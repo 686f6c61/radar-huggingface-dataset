@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`fiel1986/qwen-1.5-mi-bot-v3` es un adaptador LoRA publicado en HuggingFace por el usuario fiel1986, construido sobre el modelo base `Qwen/Qwen2-1.5B-Instruct` de Alibaba Cloud. No se trata de un modelo completo con pesos propios: el repositorio ocupa 0,2 GB y contiene únicamente los pesos del adaptador en formato safetensors, por lo que para ejecutarlo es imprescindible descargar y cargar previamente el modelo base de 1,5 mil millones de parámetros.
+`fiel1986/qwen-1.5-mi-bot-v3` es un adaptador LoRA publicado en Hugging Face por el usuario fiel1986, construido sobre el modelo base `Qwen/Qwen2-1.5B-Instruct` de Alibaba Cloud. No se trata de un modelo completo con pesos propios: el repositorio ocupa 0,2 GB y contiene únicamente los pesos del adaptador en formato safetensors, por lo que para ejecutarlo es imprescindible descargar y cargar previamente el modelo base de 1,5 mil millones de parámetros.
 
-El adaptador se distribuye a través de la librería PEFT (versión 0.19.1 registrada en la model card) y está etiquetado para la tarea de generación de texto con orientación conversacional. La model card es la plantilla estándar de HuggingFace sin rellenar: todos los apartados de descripción, datos de entrenamiento, hiperparámetros y evaluación figuran como "More Information Needed", de modo que no hay información pública sobre el dataset de ajuste, el número de pasos, el rango del adaptador ni los resultados obtenidos.
+El adaptador se distribuye a través de la librería PEFT (versión 0.19.1 registrada en la model card) y está etiquetado para la tarea de generación de texto con orientación conversacional. La model card es la plantilla estándar de Hugging Face sin rellenar: todos los apartados de descripción, datos de entrenamiento, hiperparámetros y evaluación figuran como "More Information Needed", de modo que no hay información pública sobre el dataset de ajuste, el número de pasos, el rango del adaptador ni los resultados obtenidos.
 
 Su relevancia actual es limitada y debe interpretarse como un artefacto de experimentación personal: acumula 0 descargas y 0 "me gusta", no declara licencia ni idiomas, y no aporta ninguna evaluación reproducible. Existe al menos dos adaptadores previos del mismo autor (`qwen-1.5-mi-bot` y `qwen-0.5-mi-bot`), lo que sugiere una serie de pruebas sucesivas más que un modelo destinado a producción.
 
@@ -95,7 +95,7 @@ Los datos de contexto y licencia de los modelos comparados proceden de su docume
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/fiel1986/qwen-1.5-mi-bot-v3
+- Adaptador en Hugging Face: https://huggingface.co/fiel1986/qwen-1.5-mi-bot-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct
 - Versión previa del mismo autor: https://huggingface.co/fiel1986/qwen-1.5-mi-bot
 - Versión de menor tamaño del mismo autor: https://huggingface.co/fiel1986/qwen-0.5-mi-bot

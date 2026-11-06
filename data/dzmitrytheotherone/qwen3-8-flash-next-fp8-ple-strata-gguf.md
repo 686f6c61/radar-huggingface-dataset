@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DzmitryTheOtherOne/Qwen3.8-Flash-Next-FP8-PLE-Strata-GGUF | 51.200.245.760 | no disponible | GGUF (tabla PLE) | qwen-community-1.0 | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next-FP8 (modelo base) | 51.200.245.760 | no disponible | safetensors FP8 | qwen-community-1.0 | HuggingFace |
+| DzmitryTheOtherOne/Qwen3.8-Flash-Next-FP8-PLE-Strata-GGUF | 51.200.245.760 | no disponible | GGUF (tabla PLE) | qwen-community-1.0 | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next-FP8 (modelo base) | 51.200.245.760 | no disponible | safetensors FP8 | qwen-community-1.0 | Hugging Face |
 | Otras tablas PLE para Strata | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DzmitryTheOtherOne/Qwen3.8-Flash-Next-FP8-PLE-Strata-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DzmitryTheOtherOne/Qwen3.8-Flash-Next-FP8-PLE-Strata-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Licencia: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8/blob/main/LICENSE
 - Motor Strata: https://github.com/niko1221/strata

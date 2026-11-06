@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-flower_lotus_prompted-ft4.42 es un ajuste fino por supervisión (SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario Echoo113 en HuggingFace. El entrenamiento se realizó con la librería TRL (versión 1.10.0) sobre Transformers 5.15.1 y PyTorch 2.11.0+cu128, y el repositorio se distribuye en formato safetensors con la etiqueta `generated_from_trainer`. El nombre del checkpoint sugiere un ajuste orientado a *prompting* sobre un conjunto de datos propio (posiblemente relacionado con el identificador "flower_lotus"), aunque la model card no documenta ni el dataset ni los hiperparámetros empleados.
+Qwen3.5-4B-flower_lotus_prompted-ft4.42 es un ajuste fino por supervisión (SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario Echoo113 en Hugging Face. El entrenamiento se realizó con la librería TRL (versión 1.10.0) sobre Transformers 5.15.1 y PyTorch 2.11.0+cu128, y el repositorio se distribuye en formato safetensors con la etiqueta `generated_from_trainer`. El nombre del checkpoint sugiere un ajuste orientado a *prompting* sobre un conjunto de datos propio (posiblemente relacionado con el identificador "flower_lotus"), aunque la model card no documenta ni el dataset ni los hiperparámetros empleados.
 
 El interés de esta ficha es limitado pero informativo: se trata de un *fine-tune* comunitario sin métricas publicadas, sin licencia declarada y sin validación externa (0 descargas y 0 *likes* en el momento de la consulta). Resulta útil como ejemplo de flujo de trabajo SFT con TRL sobre un modelo de 4 000 millones de parámetros y como caso de estudio de buenas (y malas) prácticas de documentación: la model card es la plantilla automática de TRL, con secciones vacías y un marcador de posición en el campo de licencia.
 
@@ -35,7 +35,7 @@ La model card no especifica el volumen de tokens de entrenamiento, la composicio
 
 - Generacion de texto conversacional en formato de chat: la model card incluye un ejemplo con `pipeline("text-generation")` que pasa una lista de mensajes con rol `user`, lo que confirma soporte del formato de mensajes en la plantilla de chat.
 - Ajuste por instrucciones (SFT): el modelo ha sido entrenado para responder a instrucciones, segun la etiqueta `sft`.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 - Razonamiento, codigo, matematicas, vision, audio, tool calling, capacidad de agente y modo *thinking*: no disponible; la informacion proporcionada no documenta ninguna de estas capacidades.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
 - Capacidad especial: no disponible.
@@ -46,7 +46,7 @@ Dado que no hay benchmarks ni documentacion del dataset, los casos de uso solo p
 
 - Prototipado de asistentes conversacionales: al ser un modelo de 4 000 millones de parametros, cabe en una GPU de consumo y permite iterar rapidamente sobre prompts y plantillas de chat antes de pasar a un modelo mayor; el ejemplo de `pipeline` de la model card sirve como punto de partida directo.
 - Experimentacion academica con SFT: util como referencia reproducible de un flujo TRL completo (TRL 1.10.0, Transformers 5.15.1, Datasets 5.0.1) para comparar hiperparametros y estrategias de ajuste sobre un mismo modelo base.
-- Evaluacion de *fine-tunes* comunitarios: sirve como caso de control en estudios sobre calidad de documentacion, licencias y trazabilidad de modelos publicados en HuggingFace.
+- Evaluacion de *fine-tunes* comunitarios: sirve como caso de control en estudios sobre calidad de documentacion, licencias y trazabilidad de modelos publicados en Hugging Face.
 - Tareas de generacion de texto acotadas y de bajo riesgo (resumenes breves, reformulacion, clasificacion por prompt) en entornos internos donde no se requiera garantia de calidad medida.
 - Despliegue en infraestructura propia con requisitos de privacidad: al ser un modelo pequeno y autohospedable, puede ejecutarse *on-premise* sin enviar datos a terceros, siempre que se resuelva antes la ambiguedad de licencia.
 - Base para un segundo ajuste: punto de partida para un *fine-tune* adicional o para tecnicas de preferencia (DPO), dado que ya esta alineado al formato conversacional.
@@ -78,9 +78,9 @@ Las cifras de VRAM son estimaciones aritmeticas a partir del tamano nominal de 4
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Echoo113/Qwen3.5-4B-flower_lotus_prompted-ft4.42 | 4B (nominal) | no disponible | no disponible | HuggingFace, safetensors, 0 descargas | no |
-| Qwen/Qwen3.5-4B (modelo base) | 4B | no disponible en la informacion | no disponible en la informacion | HuggingFace | no disponible en la informacion |
-| Alternativas de la misma categoria (p. ej., otros instructivos de 3-4B de la familia Qwen, Llama o Phi) | ~3-4B | no disponible | no disponible | HuggingFace | no disponible |
+| Echoo113/Qwen3.5-4B-flower_lotus_prompted-ft4.42 | 4B (nominal) | no disponible | no disponible | Hugging Face, safetensors, 0 descargas | no |
+| Qwen/Qwen3.5-4B (modelo base) | 4B | no disponible en la informacion | no disponible en la informacion | Hugging Face | no disponible en la informacion |
+| Alternativas de la misma categoria (p. ej., otros instructivos de 3-4B de la familia Qwen, Llama o Phi) | ~3-4B | no disponible | no disponible | Hugging Face | no disponible |
 
 No es posible establecer una comparativa cuantitativa fiable: no hay benchmarks del modelo, no se documenta la licencia y las alternativas solo pueden citarse por categoria. La unica comparacion estructural solida es con el modelo base: mismo tamano nominal, misma familia y mismo formato de pesos, con la diferencia de que el derivado ha recibido un SFT del que no se publican datos ni metricas.
 
@@ -100,7 +100,7 @@ No es posible establecer una comparativa cuantitativa fiable: no hay benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-4B-flower_lotus_prompted-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-4B-flower_lotus_prompted-ft4.42
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo, su autor, su dataset o sus benchmarks; no se han encontrado papers, blogs ni demos adicionales.

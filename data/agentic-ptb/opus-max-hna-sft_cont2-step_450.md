@@ -78,7 +78,7 @@ La comparación es limitada porque este checkpoint no tiene documentación de re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/opus-max.hNA.sft_cont2.step_450
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/opus-max.hNA.sft_cont2.step_450
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este checkpoint.

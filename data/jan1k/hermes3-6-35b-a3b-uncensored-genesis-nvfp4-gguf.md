@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hermes3.6-35B-A3B-Uncensored-Genesis-NVFP4-GGUF (este) | 35B totales / 3B activos | 64K-128K | NVFP4 GGUF | Apache 2.0 | HuggingFace |
-| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF (LuffyTheFox) | 35B totales / 3B activos | 64K-128K | GGUF (varias) | Apache 2.0 | HuggingFace |
+| Hermes3.6-35B-A3B-Uncensored-Genesis-NVFP4-GGUF (este) | 35B totales / 3B activos | 64K-128K | NVFP4 GGUF | Apache 2.0 | Hugging Face |
+| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF (LuffyTheFox) | 35B totales / 3B activos | 64K-128K | GGUF (varias) | Apache 2.0 | Hugging Face |
 | Qwen3.5-32B-A3B (hipotético, no confirmado) | 32B totales / 3B activos | 128K | BF16/GGUF | Apache 2.0 | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes. La principal diferencia de esta versión es la cuantización NVFP4, que requiere hardware NVIDIA específico, mientras que otras versiones GGUF usan cuantizaciones estándar (Q4_K_M, etc.) más portables.
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jan1k/Hermes3.6-35B-A3B-Uncensored-Genesis-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jan1k/Hermes3.6-35B-A3B-Uncensored-Genesis-NVFP4-GGUF
 - Modelo base (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelos hermanos de LuffyTheFox (referencia de arquitectura): https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF
 - Discusión sobre uso práctico del modelo V7: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF/discussions/36

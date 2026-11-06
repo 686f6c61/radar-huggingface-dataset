@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/piezoreile/sealion-finetuned-tuldik
+- Repositorio Hugging Face: https://huggingface.co/piezoreile/sealion-finetuned-tuldik
 - GitHub de SEA-LION (posible base, no confirmada): https://github.com/aisingapore/sealion
 - Sitio web de SEA-LION: https://sea-lion.ai/
 - Documentación de fine-tuning de SEA-LION-v1: https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v1/fine-tuning/README.md

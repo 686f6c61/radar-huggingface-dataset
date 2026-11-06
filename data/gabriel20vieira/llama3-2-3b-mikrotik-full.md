@@ -71,8 +71,8 @@ Definiciones aportadas por el autor: execution pass indica que todos los comando
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llama3.2-3b-mikrotik-full | 3.212.749.888 | no disponible | Execution pass 23,8-27,8% en el dominio RouterOS (datos del autor) | llama3.2 | HuggingFace (safetensors + GGUF) |
-| unsloth/Llama-3.2-3B-Instruct | 3.212.749.888 (aproximado) | no disponible | No disponible en esta informacion; es el modelo base sin ajuste de dominio | llama3.2 | HuggingFace |
+| llama3.2-3b-mikrotik-full | 3.212.749.888 | no disponible | Execution pass 23,8-27,8% en el dominio RouterOS (datos del autor) | llama3.2 | Hugging Face (safetensors + GGUF) |
+| unsloth/Llama-3.2-3B-Instruct | 3.212.749.888 (aproximado) | no disponible | No disponible en esta informacion; es el modelo base sin ajuste de dominio | llama3.2 | Hugging Face |
 | Otros modelos ajustados a configuracion de red | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparables de otros modelos de la misma categoria en la informacion proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparables de otros modelos de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabriel20vieira/llama3.2-3b-mikrotik-full
+- Modelo en Hugging Face: https://huggingface.co/gabriel20vieira/llama3.2-3b-mikrotik-full
 - Repositorio del proyecto (codigo, datos y reproduccion): https://github.com/gabriel20vieira/isdn-public
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Cita del paper (bajo revision): G. Vieira, A. R. Ortigoso, D. Fuentes, L. Frazao, N. Costa, A. Pereira, L. Roda-Sanchez, A. Fernandez-Caballero, "iSDN: Intent-Driven Configuration of Physical Network Devices using Fine-Tuned Local LLMs".

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smai-a4-mlp-p0 es un perceptrón multicapa (MLP) muy pequeno publicado en HuggingFace por el usuario an1sh15 como parte de la asignación 4 de un curso de SMAI (Statistical Methods in Artificial Intelligence). El modelo resuelve una tarea de clasificación de imágenes sobre el conjunto de datos CIFAR-10, que consta de 10 clases (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco y camión) con imágenes de 32x32 píxeles en color.
+smai-a4-mlp-p0 es un perceptrón multicapa (MLP) muy pequeno publicado en Hugging Face por el usuario an1sh15 como parte de la asignación 4 de un curso de SMAI (Statistical Methods in Artificial Intelligence). El modelo resuelve una tarea de clasificación de imágenes sobre el conjunto de datos CIFAR-10, que consta de 10 clases (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco y camión) con imágenes de 32x32 píxeles en color.
 
 La arquitectura es deliberadamente simple: una red fully-connected de dos capas (`Linear(3072, 128) -> ReLU -> Linear(128, 10)`) con 394.634 parámetros totales. No incorpora convoluciones ni mecanismos de atención, por lo que funciona como línea base académica más que como modelo de producción. El contexto no aplica en el sentido de los modelos de lenguaje: la entrada es un vector fijo de 3072 valores (la imagen aplanada y estandarizada).
 
@@ -86,6 +86,6 @@ No se dispone de información sobre modelos comparables publicados por el mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/an1sh15/smai-a4-mlp-p0
+- Modelo en Hugging Face: https://huggingface.co/an1sh15/smai-a4-mlp-p0
 - Dataset CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

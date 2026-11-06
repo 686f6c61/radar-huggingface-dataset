@@ -69,9 +69,9 @@ La comparación fue realizada por el autor con 50 ítems y 3 muestras por ítem,
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed (este) | 26,9 B | no disponible (max gen 102 400) | MLX OptiQ 4,67 bits efectivos | Apache 2.0 | HuggingFace |
-| caslca/Qwen3.8-27B-Fable-Distill-mlx-uniform-4bit (hermano) | 26,9 B | no disponible | MLX uniforme 4 bits | Apache 2.0 | HuggingFace |
-| TeichAI/Qwen3.8-27B-Fable-Distill (modelo base) | 26,9 B | no disponible | sin cuantización (formato original) | Apache 2.0 | HuggingFace |
+| caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed (este) | 26,9 B | no disponible (max gen 102 400) | MLX OptiQ 4,67 bits efectivos | Apache 2.0 | Hugging Face |
+| caslca/Qwen3.8-27B-Fable-Distill-mlx-uniform-4bit (hermano) | 26,9 B | no disponible | MLX uniforme 4 bits | Apache 2.0 | Hugging Face |
+| TeichAI/Qwen3.8-27B-Fable-Distill (modelo base) | 26,9 B | no disponible | sin cuantización (formato original) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los tres checkpoints relacionados con este modelo: el cuant de precisión mixta, su hermano uniforme y el modelo base. No se dispone de datos sobre otros modelos multimodales de 27B en la información proporcionada.
 
@@ -84,11 +84,11 @@ La comparativa se limita a los tres checkpoints relacionados con este modelo: el
 - Precisión: la cuantización OptiQ puede degradar ligeramente la precisión en comparación con el modelo original. El autor reporta equivalencia con el uniforme 4-bit en HumanEval+ y MBPP+, pero no hay datos frente al modelo en bfloat16.
 - Uso comercial: la licencia Apache 2.0 permite uso comercial, modificación y redistribución. Dado que el modelo deriva de una destilación de Fable 5, es responsabilidad del usuario verificar que los datasets de destilación no impongan restricciones adicionales no visibles en los metadatos.
 - Decodificación especulativa: el fichero `optiq/mtp.safetensors` contiene una cabeza de predicción multi-token sin probar; el autor recomienda servir con decodificación especulativa desactivada.
-- Tamaño en HuggingFace: el badge de tamaño es incorrecto porque cuenta los tensores uint32 empaquetados; el recuento real de parámetros es 26 895 993 856.
+- Tamaño en Hugging Face: el badge de tamaño es incorrecto porque cuenta los tensores uint32 empaquetados; el recuento real de parámetros es 26 895 993 856.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed
+- Modelo en Hugging Face: https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed
 - Modelo base: https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill
 - Versión uniforme 4-bit: https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-mlx-uniform-4bit
 - Metodología y benchmarks: https://github.com/ivan-avramov/mlx_local_stack

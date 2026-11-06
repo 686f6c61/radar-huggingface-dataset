@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| maya2-native-mlx-8bit | 2.502.398.656 | no disponible | 11 indias + inglés | Apache-2.0 | HuggingFace, mlx-audio |
-| maya-research/maya2-native (original) | no disponible en la informacion | no disponible | 11 indias + inglés | Apache-2.0 | HuggingFace |
-| Kyutai Mimi (códec usado por el modelo) | no disponible | no disponible | no disponible | CC-BY-4.0 | HuggingFace, runtime |
-| SpeechBrain ECAPA-TDNN (encoder usado) | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace, runtime |
+| maya2-native-mlx-8bit | 2.502.398.656 | no disponible | 11 indias + inglés | Apache-2.0 | Hugging Face, mlx-audio |
+| maya-research/maya2-native (original) | no disponible en la informacion | no disponible | 11 indias + inglés | Apache-2.0 | Hugging Face |
+| Kyutai Mimi (códec usado por el modelo) | no disponible | no disponible | no disponible | CC-BY-4.0 | Hugging Face, runtime |
+| SpeechBrain ECAPA-TDNN (encoder usado) | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face, runtime |
 
 No se dispone de datos de benchmarks ni de modelos TTS directamente comparables en la información proporcionada; la comparativa se limita a los componentes que integra el sistema y a su modelo base.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de modelos TTS directamente comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aruntemme/maya2-native-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/aruntemme/maya2-native-mlx-8bit
 - Modelo base original: https://huggingface.co/maya-research/maya2-native
 - Maya Research: https://mayaresearch.ai
 - Repositorio mlx-audio: https://github.com/Blaizzy/mlx-audio

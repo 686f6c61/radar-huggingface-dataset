@@ -128,7 +128,7 @@ El valor de HiDream-I1 en HPSv2.1 no aparece completo en la informacion proporci
 
 ## Enlaces
 
-- HuggingFace (repo de esta ficha): https://huggingface.co/Jinstudio/HiDream-I1-Full
+- Hugging Face (repo de esta ficha): https://huggingface.co/Jinstudio/HiDream-I1-Full
 - Modelo original de HiDream.ai: https://huggingface.co/HiDream-ai/HiDream-I1-Full
 - Informe tecnico (arXiv:2505.22705): https://arxiv.org/abs/2505.22705
 - Repositorio GitHub: https://github.com/HiDream-ai/HiDream-I1

@@ -73,7 +73,7 @@ La ganancia es de +0,004 en pass@1 y +0,047 en pass@8. No se han publicado resul
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yashmoar/Qwen2.5-3B-SFT-cleaned-difficulty-weighted | 3,09 B | No disponible (base: 32.768) | pass@1 0,289 / pass@8 0,582 en la eval del autor | qwen-research | safetensors en HuggingFace |
+| yashmoar/Qwen2.5-3B-SFT-cleaned-difficulty-weighted | 3,09 B | No disponible (base: 32.768) | pass@1 0,289 / pass@8 0,582 en la eval del autor | qwen-research | safetensors en Hugging Face |
 | Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | pass@1 0,285 / pass@8 0,535 en la misma eval | qwen-research | safetensors, GGUF, AWQ y GPTQ publicados por Qwen |
 | Qwen2.5-Math (variantes 1,5 B y 7 B) | 1,5 B / 7 B | No disponible en esta información | No disponible en esta información | No disponible en esta información | No disponible en esta información |
 | Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | No disponible en esta información | Llama 3.2 Community License | safetensors y GGUF |
@@ -95,7 +95,7 @@ La comparación directa más fiable es contra el modelo base, porque comparte ev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yashmoar/Qwen2.5-3B-SFT-cleaned-difficulty-weighted
+- Modelo en Hugging Face: https://huggingface.co/yashmoar/Qwen2.5-3B-SFT-cleaned-difficulty-weighted
 - Dataset de entrenamiento: https://huggingface.co/datasets/yashmoar/acereason-15k-cleaned-difficulty-weighted
 - Repositorio con resultados y código de evaluación: https://github.com/yashmoar11/Trustworthy-Machine-Learning
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

@@ -76,7 +76,7 @@ Sobre los 455 spans de texto real, v3 alcanza precisión estricta de 0,975 y rec
 - VRAM estimada para inferencia: el modelo FP32 ocupa 1,2 GB de pesos, por lo que es viable en GPUs con 4 GB de VRAM o incluso en CPU; la versión INT8 ocupa 0,3 GB y funciona en WASM dentro del navegador.
 - GPU recomendadas: no se requiere GPU dedicada; cualquier GPU moderna (incluso integrada) es suficiente. Para cargas batch grandes, una GPU de gama media tipo RTX 3060/4060 o superior acelera el procesado masivo de documentos.
 - Consumer GPU: cabe sobradamente en cualquier GPU de consumo actual en FP32; en CPU también es plenamente funcional vía onnxruntime.
-- Opciones de despliegue: `transformers` + `torch` con el decodificador `pii_detector.py` incluido en el repo, onnxruntime con `onnx/model.onnx` o `onnx/model_quantized.onnx`, transformers.js (WASM) para navegador, y demo en vivo en HuggingFace Spaces. No se menciona soporte específico para vLLM, llama.cpp, Ollama o TGI (al ser un modelo encoder, no aplican directamente).
+- Opciones de despliegue: `transformers` + `torch` con el decodificador `pii_detector.py` incluido en el repo, onnxruntime con `onnx/model.onnx` o `onnx/model_quantized.onnx`, transformers.js (WASM) para navegador, y demo en vivo en Hugging Face Spaces. No se menciona soporte específico para vLLM, llama.cpp, Ollama o TGI (al ser un modelo encoder, no aplican directamente).
 - Latencia y throughput: no disponible en la información publicada.
 
 ## Comparativa con modelos similares
@@ -102,8 +102,8 @@ La comparación con alternativas se basa en la tabla PIIMB publicada por los aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bardsai/eu-pii-anonimization-multilang-v3
-- Demo en vivo (HuggingFace Spaces): https://huggingface.co/spaces/bardsai/eu-pii-anonymization-demo
+- Modelo en Hugging Face: https://huggingface.co/bardsai/eu-pii-anonimization-multilang-v3
+- Demo en vivo (Hugging Face Spaces): https://huggingface.co/spaces/bardsai/eu-pii-anonymization-demo
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Predecesor v2: https://huggingface.co/bardsai/eu-pii-anonimization-multilang-v2
 - Predecesor v1: https://huggingface.co/bardsai/eu-pii-anonimization-multilang

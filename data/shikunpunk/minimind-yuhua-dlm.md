@@ -70,8 +70,8 @@ No se dispone de informacion sobre modelos comparables directamente (otros model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shikunpunk/MiniMind-YuHua-dLM
-- Perfil del autor en HuggingFace: https://huggingface.co/shikunpunk
+- Modelo en Hugging Face: https://huggingface.co/shikunpunk/MiniMind-YuHua-dLM
+- Perfil del autor en Hugging Face: https://huggingface.co/shikunpunk
 - Repositorio del proyecto MiniMind (GitHub): https://github.com/jingyaogong/minimind
 - Documentacion del proyecto MiniMind en ingles: https://github.com/jingyaogong/minimind/blob/master/README_en.md
 - Referencia al informe de experimentos (mencionado en la model card): `GitHub ChineseHardJudgePoem/doc/COT_YUHUA_EXPERIMENTS_REPORT.md` (seccion 5)

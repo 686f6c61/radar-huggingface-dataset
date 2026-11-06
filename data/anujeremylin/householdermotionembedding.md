@@ -62,9 +62,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo / método | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Householder Motion Embedding (HME) | Modulación de ruido para difusión de vídeo | no disponible | MIT | HuggingFace |
+| Householder Motion Embedding (HME) | Modulación de ruido para difusión de vídeo | no disponible | MIT | Hugging Face |
 | Noise warping (método previo citado) | Deformación espacial del ruido con corrección por jacobiano | no disponible | no disponible | no disponible |
-| CogVideoX-5b-I2V | Modelo base de difusión de vídeo imagen-texto | no disponible | no disponible | HuggingFace (zai-org) |
+| CogVideoX-5b-I2V | Modelo base de difusión de vídeo imagen-texto | no disponible | no disponible | Hugging Face (zai-org) |
 
 No se dispone de datos numéricos de rendimiento para establecer una comparación cuantitativa con alternativas. La comparación cualitativa se limita a la mejora de velocidad de 2,7× frente a *noise warping* reportada en el abstract.
 
@@ -81,7 +81,7 @@ No se dispone de datos numéricos de rendimiento para establecer una comparació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anujeremylin/HouseholderMotionEmbedding
+- Hugging Face: https://huggingface.co/anujeremylin/HouseholderMotionEmbedding
 - Página del proyecto: https://coldsilence507.github.io/HouseholderMotionEmbedding/
 - Modelo base: https://huggingface.co/zai-org/CogVideoX-5b-I2V
 - Dataset: https://huggingface.co/datasets/MuteApo/RealCam-Vid

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`whji-ahao6/lightweight-multimodal` es un repositorio alojado en HuggingFace que, pese a su nombre y a las etiquetas asociadas (`transformer`, `safetensors`, `lightweight-multimodal`), no contiene un modelo entrenado ni un checkpoint funcional. La model card lo describe explicitamente como una nota de investigacion exploratoria ("research-notes") que recoge el planteamiento de un estudio comparativo sobre multimodalidad ligera, sus posibles factores de confusion y los requisitos de reproducibilidad, sin resultados experimentales ni codigo liberado.
+`whji-ahao6/lightweight-multimodal` es un repositorio alojado en Hugging Face que, pese a su nombre y a las etiquetas asociadas (`transformer`, `safetensors`, `lightweight-multimodal`), no contiene un modelo entrenado ni un checkpoint funcional. La model card lo describe explicitamente como una nota de investigacion exploratoria ("research-notes") que recoge el planteamiento de un estudio comparativo sobre multimodalidad ligera, sus posibles factores de confusion y los requisitos de reproducibilidad, sin resultados experimentales ni codigo liberado.
 
 El unico artefacto sustantivo es el fichero `reading.md`, que segun el autor contiene el texto principal de la nota. El repositorio incluye pesos en formato safetensors con un recuento de parametros de 33.088, una cifra que por su magnitud (decenas de miles) no corresponde a un transformer utilizable sino, con toda probabilidad, a tensores auxiliares o de prueba. El tamano del repositorio es de 0,0 GB, lo que refuerza la conclusion de que no hay pesos de modelo reales.
 
-Por tanto, esta ficha documenta un artefacto de investigacion abierto, no un modelo desplegable. Su relevancia actual es limitada y de caracter metodologico: sirve como ejemplo de publicacion de notas de investigacion en HuggingFace con licencia CC-BY-4.0, pero no permite inferencia, evaluacion comparativa ni uso en produccion.
+Por tanto, esta ficha documenta un artefacto de investigacion abierto, no un modelo desplegable. Su relevancia actual es limitada y de caracter metodologico: sirve como ejemplo de publicacion de notas de investigacion en Hugging Face con licencia CC-BY-4.0, pero no permite inferencia, evaluacion comparativa ni uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ Tampoco hay datos de entrenamiento: la model card no menciona numero de tokens, 
 - Consulta metodologica: leer `reading.md` como ejemplo de estructura de una nota de investigacion que separa hipotesis, factores de confusion y requisitos de reproducibilidad antes de publicar resultados.
 - Plantilla de documentacion: reutilizar el esquema (alcance, baselines emparejados, benchmarks publicos, comprobaciones de reproducibilidad, modos de fallo) para redactar la model card de un estudio propio.
 - Referencia de licenciamiento: usar el repositorio como caso practico de publicacion de notas de investigacion bajo CC-BY-4.0 y de la advertencia sobre revisar los terminos de los datos de origen por separado.
-- Auditoria de repositorios: emplearlo como ejemplo de discrepancia entre etiquetas (`transformer`, `lightweight-multimodal`) y contenido real (nota sin checkpoint), util en revisiones de calidad de artefactos en HuggingFace.
+- Auditoria de repositorios: emplearlo como ejemplo de discrepancia entre etiquetas (`transformer`, `lightweight-multimodal`) y contenido real (nota sin checkpoint), util en revisiones de calidad de artefactos en Hugging Face.
 - Docencia sobre reproducibilidad: discutir por que un repositorio sin dataset, comandos, semillas, hardware ni logs crudos no constituye evidencia experimental.
 - No es adecuado para atencion al cliente, generacion de codigo, RAG, agentes ni ninguna tarea de inferencia en produccion, al no existir pesos utilizables.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/whji-ahao6/lightweight-multimodal
+- Hugging Face: https://huggingface.co/whji-ahao6/lightweight-multimodal
 - Fichero principal de la nota: `reading.md` dentro del repositorio
 - Documentacion: `README.md` dentro del repositorio
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

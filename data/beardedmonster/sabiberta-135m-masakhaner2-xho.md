@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SabiBERTa-135M-masakhaner2-xho es un checkpoint de clasificación de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario BeardedMonster en HuggingFace. Se obtiene por fine-tuning del modelo base `BeardedMonster/SabiBERTa-135M`, un encoder de arquitectura ModernBERT con 135.883.017 parámetros, sobre la partición en xhosa (`xho`) del corpus MasakhaNER 2.0.
+SabiBERTa-135M-masakhaner2-xho es un checkpoint de clasificación de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario BeardedMonster en Hugging Face. Se obtiene por fine-tuning del modelo base `BeardedMonster/SabiBERTa-135M`, un encoder de arquitectura ModernBERT con 135.883.017 parámetros, sobre la partición en xhosa (`xho`) del corpus MasakhaNER 2.0.
 
 El modelo resuelve una tarea concreta: etiquetar entidades en texto en xhosa, una lengua bantú de Sudáfrica con recursos limitados. Según la model card, alcanza un span F1 medio de 0,8463 en la partición indicada, entrenando 50 épocas con una longitud máxima de 256 tokens. El checkpoint se publica únicamente en safetensors (0,5 GB de repositorio) e incluye `id2label`, de modo que las predicciones se decodifican directamente a nombres de etiqueta.
 
@@ -89,7 +89,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-xho
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-xho
 - Modelo base: https://huggingface.co/BeardedMonster/SabiBERTa-135M
 - Checkpoint hermano para igbo: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-ibo
 - Paper de MasakhaNER 2.0 y repositorio del harness: no disponibles en la información consultada.

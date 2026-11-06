@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cgnzimmermann/tiny-transformer-demo` es un repositorio de HuggingFace publicado por Lena Zimmermann (usuario `cgnzimmermann`) que contiene una implementación propia y mínima en PyTorch de un transformer orientado a tareas de *retrieval* (recuperación). No es un modelo preentrenado ni un release de producción: la propia model card lo describe como un punto de partida para revisión de código, *smoke tests* y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
+`cgnzimmermann/tiny-transformer-demo` es un repositorio de Hugging Face publicado por Lena Zimmermann (usuario `cgnzimmermann`) que contiene una implementación propia y mínima en PyTorch de un transformer orientado a tareas de *retrieval* (recuperación). No es un modelo preentrenado ni un release de producción: la propia model card lo describe como un punto de partida para revisión de código, *smoke tests* y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El dato más relevante es su escala real: 24.832 parámetros totales según los tensores en safetensors, es decir, unas 25.000 variables, varios órdenes de magnitud por debajo de cualquier modelo utilizable. Conviene señalar la posible confusión que genera la model card, que etiqueta la configuración como `huge`; esa etiqueta corresponde a una variante dentro de la implementación propia del autor, no a un tamaño real grande. El repo ocupa 0,0 GB y no declara pipeline, idiomas ni resultados de benchmarks.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cgnzimmermann/tiny-transformer-demo` | 24.832 | no disponible | sin benchmarks (checkpoint sin entrenar) | Apache 2.0 | HuggingFace, 12 descargas, 0 likes |
-| `Nikhilgd22/tiny-transformer-demo` | no disponible | no disponible | sin benchmarks declarados; variante `large`, inicialización | no disponible en la información | HuggingFace |
+| `cgnzimmermann/tiny-transformer-demo` | 24.832 | no disponible | sin benchmarks (checkpoint sin entrenar) | Apache 2.0 | Hugging Face, 12 descargas, 0 likes |
+| `Nikhilgd22/tiny-transformer-demo` | no disponible | no disponible | sin benchmarks declarados; variante `large`, inicialización | no disponible en la información | Hugging Face |
 | `skolouri/TinyTransformer` (GitHub) | no disponible | no disponible | implementación mínima encoder-decoder con fines educativos | no disponible en la información | GitHub |
 | `avvorstenbosch/tinyTransformer` (GitHub) | no disponible | no disponible | GPT-like entrenable en una GPU consumer, siguiendo material de Karpathy | no disponible en la información | GitHub |
 
@@ -85,7 +85,7 @@ Los tres comparables son proyectos educativos de escala mínima; ninguno publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cgnzimmermann/tiny-transformer-demo
+- Modelo en Hugging Face: https://huggingface.co/cgnzimmermann/tiny-transformer-demo
 - Perfil del autor: https://huggingface.co/cgnzimmermann/models
 - Repositorio comparable (misma familia de demo): https://huggingface.co/Nikhilgd22/tiny-transformer-demo
 - Implementación educativa encoder-decoder: https://github.com/skolouri/TinyTransformer

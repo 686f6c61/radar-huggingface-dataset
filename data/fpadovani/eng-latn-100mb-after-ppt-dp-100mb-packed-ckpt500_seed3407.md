@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/eng-latn-100mb-after-ppt-Dp-100mb-packed-ckpt500_seed3407` es un ajuste fino (SFT) del modelo base `fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed_seed3407`, desarrollado por el usuario de HuggingFace fpadovani (vinculado a la Universidad de Groningen segun la URL del experimento en Weights & Biases). Se trata de un transformer autoregresivo de tipo GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones) y pesos en formato safetensors. El identificador del repositorio sugiere un experimento sobre corpus en ingles con script latino (`eng-latn`), subconjuntos de datos de unos 100 MB y una particion denominada `Dp-100mb-packed`, aunque la model card no documenta estos detalles.
+El modelo `fpadovani/eng-latn-100mb-after-ppt-Dp-100mb-packed-ckpt500_seed3407` es un ajuste fino (SFT) del modelo base `fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed_seed3407`, desarrollado por el usuario de Hugging Face fpadovani (vinculado a la Universidad de Groningen segun la URL del experimento en Weights & Biases). Se trata de un transformer autoregresivo de tipo GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones) y pesos en formato safetensors. El identificador del repositorio sugiere un experimento sobre corpus en ingles con script latino (`eng-latn`), subconjuntos de datos de unos 100 MB y una particion denominada `Dp-100mb-packed`, aunque la model card no documenta estos detalles.
 
 La relevancia de esta publicacion es fundamentalmente experimental y academica: forma parte de una linea de trabajo sobre tokenizadores y ajuste supervisado, y no de un modelo orientado a produccion. La model card es minima y se limita a indicar el procedimiento de entrenamiento con TRL 0.23.0, las versiones de framework (Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4, Tokenizers 0.22.1) y un ejemplo de uso con `pipeline` de Transformers. No se declaran licencia, idiomas, composicion del dataset ni resultados de evaluacion.
 
@@ -36,7 +36,7 @@ El entrenamiento fue un ajuste supervisado (SFT) sobre el modelo base, ejecutado
 
 - Generacion de texto autoregresiva en formato de continuacion y en formato conversacional de un solo turno, segun el ejemplo de la model card.
 - Respuesta a instrucciones sencillas en ingles, en la medida en que el ajuste SFT haya transferido ese comportamiento; no hay evaluacion publicada que lo confirme.
-- Compatibilidad con `text-generation-inference` y con `endpoints_compatible` segun las etiquetas del repositorio, lo que permite desplegarlo con el stack de inferencia de HuggingFace.
+- Compatibilidad con `text-generation-inference` y con `endpoints_compatible` segun las etiquetas del repositorio, lo que permite desplegarlo con el stack de inferencia de Hugging Face.
 - Carga directa mediante `transformers.pipeline("text-generation", ...)`, con soporte de mensajes con roles (`{"role": "user", "content": ...}`).
 - Capacidad multilingue: no acreditada. El identificador apunta a ingles; no hay evidencia de otros idiomas.
 - Tool calling o function calling: no disponible, no documentado.
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Este modelo (`...ckpt500_seed3407`) | 124,8 M | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT modificada | HuggingFace, ampliamente usado | Metricas historicas de GPT-2 small en la literatura |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Metricas de destilacion en la model card original |
-| EleutherAI/pythia-160m | 160 M | 2048 tokens | Apache 2.0 | HuggingFace | Suite completa de evaluacion publicada por EleutherAI |
+| Este modelo (`...ckpt500_seed3407`) | 124,8 M | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT modificada | Hugging Face, ampliamente usado | Metricas historicas de GPT-2 small en la literatura |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Metricas de destilacion en la model card original |
+| EleutherAI/pythia-160m | 160 M | 2048 tokens | Apache 2.0 | Hugging Face | Suite completa de evaluacion publicada por EleutherAI |
 
 Las cifras de los modelos comparativos corresponden a informacion publica ampliamente documentada; no se dispone de una comparacion directa de rendimiento con el modelo descrito.
 
@@ -94,7 +94,7 @@ Las cifras de los modelos comparativos corresponden a informacion publica amplia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-latn-100mb-after-ppt-Dp-100mb-packed-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-latn-100mb-after-ppt-Dp-100mb-packed-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed_seed3407
 - Repositorio de TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/efzy8ccb

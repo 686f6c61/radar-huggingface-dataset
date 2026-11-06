@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Abbyvintage26/Abby` es un modelo publicado en HuggingFace por el usuario Abbyvintage26, con licencia Apache 2.0 y etiqueta de región `us`. La model card asociada no contiene más información que la propia licencia, y no se han publicado especificaciones técnicas, arquitectura, parámetros, ni datos de entrenamiento. A fecha de su creación (18 de agosto de 2026) no registra descargas ni valoraciones, por lo que se trata de un modelo sin información pública verificable. Su relevancia actual es limitada, ya que no se dispone de documentación técnica que permita evaluar su utilidad para desarrolladores o investigadores.
+El modelo `Abbyvintage26/Abby` es un modelo publicado en Hugging Face por el usuario Abbyvintage26, con licencia Apache 2.0 y etiqueta de región `us`. La model card asociada no contiene más información que la propia licencia, y no se han publicado especificaciones técnicas, arquitectura, parámetros, ni datos de entrenamiento. A fecha de su creación (18 de agosto de 2026) no registra descargas ni valoraciones, por lo que se trata de un modelo sin información pública verificable. Su relevancia actual es limitada, ya que no se dispone de documentación técnica que permita evaluar su utilidad para desarrolladores o investigadores.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se han documentado capacidades específicas del modelo. No hay información s
 
 ## Casos de uso
 
-No se dispone de información suficiente para proponer casos de uso concretos. La ausencia de especificaciones técnicas y de ejemplos de aplicación impide recomendar escenarios prácticos. Se recomienda consultar la página del modelo en HuggingFace para futuras actualizaciones.
+No se dispone de información suficiente para proponer casos de uso concretos. La ausencia de especificaciones técnicas y de ejemplos de aplicación impide recomendar escenarios prácticos. Se recomienda consultar la página del modelo en Hugging Face para futuras actualizaciones.
 
 ## Benchmarks y rendimiento
 
@@ -50,4 +50,4 @@ No disponible. No se conocen modelos comparables al carecer de información sobr
 
 ## Enlaces
 
-- [HuggingFace - Abbyvintage26/Abby](https://huggingface.co/Abbyvintage26/Abby)
+- [Hugging Face - Abbyvintage26/Abby](https://huggingface.co/Abbyvintage26/Abby)

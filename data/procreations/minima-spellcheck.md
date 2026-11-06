@@ -80,7 +80,7 @@ No se dispone de comparativas con modelos similares en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/minima-spellcheck
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/minima-spellcheck
 - Repositorio del runtime Minima: https://github.com/SSHDotCodes/minima
 - Demo en CPU: https://huggingface.co/spaces/ProCreations/minima-spellcheck
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M-Spellchecker/blob/main/LICENSE

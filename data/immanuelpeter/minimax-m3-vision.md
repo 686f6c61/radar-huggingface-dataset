@@ -106,7 +106,7 @@ Diferencias clave: este repositorio duplica aproximadamente el tamano de CLIP Vi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/immanuelpeter/MiniMax-M3-Vision
+- Repositorio Hugging Face: https://huggingface.co/immanuelpeter/MiniMax-M3-Vision
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3
 - Script de paridad: https://github.com/immanuel-peter/vision-tower-bench/blob/main/tests/test_parity.py
 - Script de exportacion: https://github.com/immanuel-peter/vision-tower-bench/blob/main/scripts/export_minimax_m3_vision.py

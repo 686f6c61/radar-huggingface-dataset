@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un merge de cinco checkpoints de un mismo entrenamiento de alineación, denominado `unfiltered_e2e_alignment`, realizado mediante la herramienta mergekit con el método lineal (también conocido como weight averaging). El autor, yuhengtu-bytedance, ha combinado los checkpoints correspondientes a los pasos globales 1000, 2000, 3000, 4000 y 5000, asignando pesos proporcionales a cada paso (1, 2, 3, 4 y 5 respectivamente) y usando el checkpoint del paso 5000 como base. El resultado es un modelo de 6.856.253.440 parámetros (aproximadamente 6,8 mil millones) con arquitectura GPT-NeoX, según las etiquetas de HuggingFace.
+Este modelo es un merge de cinco checkpoints de un mismo entrenamiento de alineación, denominado `unfiltered_e2e_alignment`, realizado mediante la herramienta mergekit con el método lineal (también conocido como weight averaging). El autor, yuhengtu-bytedance, ha combinado los checkpoints correspondientes a los pasos globales 1000, 2000, 3000, 4000 y 5000, asignando pesos proporcionales a cada paso (1, 2, 3, 4 y 5 respectivamente) y usando el checkpoint del paso 5000 como base. El resultado es un modelo de 6.856.253.440 parámetros (aproximadamente 6,8 mil millones) con arquitectura GPT-NeoX, según las etiquetas de Hugging Face.
 
 La relevancia de este modelo radica en que explora una técnica de fusión de checkpoints de un mismo proceso de entrenamiento, en lugar de fusionar modelos independientes. Esta práctica puede servir para estudiar si el promedio ponderado de diferentes etapas de alineación mejora la estabilidad o el rendimiento final, aunque no se dispone de documentación que detalle los objetivos ni los resultados obtenidos. El modelo se publica como un experimento de investigación, sin información sobre licencia, idiomas o capacidades específicas.
 
@@ -75,7 +75,7 @@ No se dispone de informacion sobre modelos comparables. Al ser un merge experime
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-1k_2k_3k_4k_5k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-1k_2k_3k_4k_5k_weightedavg_merge
 - Otros merges similares del mismo autor:
   - https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-4k_5k_6k_merge
   - https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-1k_2k_3k_merge

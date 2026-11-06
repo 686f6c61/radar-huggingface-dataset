@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2-1.5B-Instruct es la variante instruida (chat) de 1.500 millones de parametros de la familia Qwen2, publicada por el equipo Qwen de Alibaba Cloud (el repositorio de HuggingFace es un espejo alojado por el usuario ArchiveStudio). Es un modelo de lenguaje decoder-only basado en Transformer con activacion SwiGLU, bias en las proyecciones QKV y Grouped Query Attention, disenado para generacion de texto y conversacion multi-turno.
+Qwen2-1.5B-Instruct es la variante instruida (chat) de 1.500 millones de parametros de la familia Qwen2, publicada por el equipo Qwen de Alibaba Cloud (el repositorio de Hugging Face es un espejo alojado por el usuario ArchiveStudio). Es un modelo de lenguaje decoder-only basado en Transformer con activacion SwiGLU, bias en las proyecciones QKV y Grouped Query Attention, disenado para generacion de texto y conversacion multi-turno.
 
 El modelo resuelve el problema de disponer de un asistente conversacional ligero que pueda ejecutarse en hardware modesto (GPU de consumo e incluso CPU con cuantizacion) manteniendo un rendimiento notable en tareas de razonamiento, matematicas y codigo para su tamano. Segun la model card, supera a Qwen1.5-1.8B-Chat en todos los benchmarks reportados, lo que lo situa como una opcion competitiva en la franja sub-2B.
 
@@ -91,7 +91,7 @@ Los datos de Qwen1.5-1.8B-Chat y Qwen2-0.5B-Instruct provienen de la propia mode
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/ArchiveStudio/Qwen2-1.5B-Instruct
+- Repositorio Hugging Face (espejo): https://huggingface.co/ArchiveStudio/Qwen2-1.5B-Instruct
 - Repositorio oficial: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct
 - Blog de Qwen2: https://qwenlm.github.io/blog/qwen2/
 - GitHub de Qwen2: https://github.com/QwenLM/Qwen2

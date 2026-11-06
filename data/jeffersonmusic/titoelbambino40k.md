@@ -2,7 +2,7 @@
 
 ## Resumen
 
-No se dispone de información pública suficiente para describir el modelo. El repositorio de HuggingFace `JEFFERSONMUSIC/TitoElBambino40K` contiene únicamente la licencia Apache 2.0 y no presenta una model card detallada, arquitectura, parámetros, contexto ni datos de entrenamiento. El tamaño del repositorio es de 0.1 GB, lo que sugiere un artefacto de pequeño tamaño, pero no permite determinar si se trata de un modelo de lenguaje, un adaptador, un dataset o un proyecto de generación de audio. No se ha encontrado documentación técnica adicional en la búsqueda web, por lo que el modelo no puede evaluarse ni desplegarse con garantías.
+No se dispone de información pública suficiente para describir el modelo. El repositorio de Hugging Face `JEFFERSONMUSIC/TitoElBambino40K` contiene únicamente la licencia Apache 2.0 y no presenta una model card detallada, arquitectura, parámetros, contexto ni datos de entrenamiento. El tamaño del repositorio es de 0.1 GB, lo que sugiere un artefacto de pequeño tamaño, pero no permite determinar si se trata de un modelo de lenguaje, un adaptador, un dataset o un proyecto de generación de audio. No se ha encontrado documentación técnica adicional en la búsqueda web, por lo que el modelo no puede evaluarse ni desplegarse con garantías.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible: no hay información sobre el modelo que permita compararlo con al
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/JEFFERSONMUSIC/TitoElBambino40K
+- Repositorio de Hugging Face: https://huggingface.co/JEFFERSONMUSIC/TitoElBambino40K
 - Sitio de JeffersonAI (encontrado en la búsqueda web, pero no se confirma relación directa con el modelo): https://jeffersonai.com/

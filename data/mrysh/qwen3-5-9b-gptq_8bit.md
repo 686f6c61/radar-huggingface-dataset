@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La t
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mrysh/qwen3.5-9b-gptq_8bit` (este) | 9,65B | no disponible | GPTQ 8 bits, group size 128 | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.5-9B` (base) | 9,65B (por correspondencia) | no disponible | BF16/FP16 (~19,3 GB de pesos) | apache-2.0 | HuggingFace (modelo oficial) |
+| `mrysh/qwen3.5-9b-gptq_8bit` (este) | 9,65B | no disponible | GPTQ 8 bits, group size 128 | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.5-9B` (base) | 9,65B (por correspondencia) | no disponible | BF16/FP16 (~19,3 GB de pesos) | apache-2.0 | Hugging Face (modelo oficial) |
 | Otras variantes del benchmark del autor | 4 modelos × 8 tecnicas | no disponible | no disponible | no disponible | Repositorios del mismo autor, sin datos publicados |
 
 No se dispone de información sobre modelos comparables de terceros dentro de la documentación proporcionada. La comparación cuantitativa frente al modelo base (misma tarea, distinta precisión) es precisamente el objeto del benchmark del autor, pero sus resultados no están publicados en esta tarjeta.
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables de terceros dentro de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrysh/qwen3.5-9b-gptq_8bit
+- Repositorio Hugging Face: https://huggingface.co/mrysh/qwen3.5-9b-gptq_8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Librería de cuantización citada (gptqmodel 7.6.0): no se proporciona enlace en la información disponible
 - Paper, blog o demo del benchmark de cuantización: no disponibles en la información proporcionada

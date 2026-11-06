@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AEUPH/invokeai-sdxl-gguf es un repositorio de pesos alojado en HuggingFace por el usuario AEUPH. El identificador sugiere que se trata de una conversion a formato GGUF de un modelo de generacion de imagenes de la familia SDXL (Stable Diffusion XL) orientada a su uso desde InvokeAI, pero la ficha del repositorio no confirma ni la arquitectura, ni el modelo base, ni el metodo de cuantizacion empleado.
+AEUPH/invokeai-sdxl-gguf es un repositorio de pesos alojado en Hugging Face por el usuario AEUPH. El identificador sugiere que se trata de una conversion a formato GGUF de un modelo de generacion de imagenes de la familia SDXL (Stable Diffusion XL) orientada a su uso desde InvokeAI, pero la ficha del repositorio no confirma ni la arquitectura, ni el modelo base, ni el metodo de cuantizacion empleado.
 
 Los metadatos publicos son minimos: 0 descargas, 1 like, un unico tag (region:us), sin pipeline declarado, sin licencia, sin idiomas y sin model card. El repositorio registra la misma fecha de creacion y de ultima actualizacion (30 de septiembre de 2026), lo que apunta a una publicacion sin mantenimiento posterior documentado.
 
@@ -86,5 +86,5 @@ No disponible. La informacion proporcionada no contiene datos verificables de es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AEUPH/invokeai-sdxl-gguf
+- Repositorio en Hugging Face: https://huggingface.co/AEUPH/invokeai-sdxl-gguf
 - No se han encontrado enlaces adicionales relevantes. La busqueda web realizada devolvio exclusivamente resultados sobre el proyecto urbanistico del Rhenus Arena en Estrasburgo (foros de SkyscraperCity), sin ninguna relacion con el modelo. No hay papers, blogs, repositorios de codigo ni demos asociados a este artefacto en la informacion disponible.

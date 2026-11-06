@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sauhsoj/strands-decider-2B-qwen3.5-v1-2610-ONNX
+- Hugging Face: https://huggingface.co/sauhsoj/strands-decider-2B-qwen3.5-v1-2610-ONNX
 - Modelo original: https://huggingface.co/StrandsAgents/strands-decider-2B-qwen3.5-v1-2610
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Grafos ONNX de referencia: https://huggingface.co/onnx-community/Qwen3.5-2B-ONNX-OPT

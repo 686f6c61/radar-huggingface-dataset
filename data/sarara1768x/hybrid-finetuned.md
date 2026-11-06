@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hybrid-finetuned es un repositorio de HuggingFace publicado por el usuario Sarara1768x que contiene una implementación de arquitectura híbrida orientada a tareas de recuperación de información (retrieval). No es un modelo entrenado ni una release de pesos con rendimiento validado: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+hybrid-finetuned es un repositorio de Hugging Face publicado por el usuario Sarara1768x que contiene una implementación de arquitectura híbrida orientada a tareas de recuperación de información (retrieval). No es un modelo entrenado ni una release de pesos con rendimiento validado: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El paquete incluye el código Python con el modelo y un punto de entrada de inferencia o entrenamiento, junto con `config.json` (configuración de arquitectura) y `training_args.json` (receta experimental por defecto). La escala declarada en la model card es "huge", pero el recuento real de parámetros registrado en safetensors es de 24.832 y el tamaño del repositorio es de 0,0 GB, una discrepancia notable entre la nomenclatura y el artefacto publicado.
 
@@ -93,12 +93,12 @@ La comparación directa no es posible: los modelos citados son releases entrenad
 - Sesgos: no evaluados. No existe análisis de sesgo demográfico, lingüístico ni de dominio.
 - Idiomas: no se declara ninguno, por lo que no hay garantía de cobertura multilingüe.
 - Contexto: la longitud de contexto no está documentada, lo que impide planificar su uso con documentos largos.
-- Carga estándar: al ser una implementación personalizada, no funciona con APIs automáticas de HuggingFace Transformers sin un adaptador explícito.
+- Carga estándar: al ser una implementación personalizada, no funciona con APIs automáticas de Hugging Face Transformers sin un adaptador explícito.
 - Licencia MIT: permite uso comercial y modificación, pero el autor recomienda revisar por separado los términos de los datos de origen si se combina con conjuntos externos. La licencia del código no cubre las obligaciones derivadas de los datasets de entrenamiento que el usuario aporte.
 - Reproducibilidad: el propio autor indica que los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sarara1768x/hybrid-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Sarara1768x/hybrid-finetuned
 - Conjunto de evaluación sugerido por el autor: Flickr30k (no se proporciona enlace en la informacion disponible)
 - Paper, blog, repositorio o demo adicionales: no disponible

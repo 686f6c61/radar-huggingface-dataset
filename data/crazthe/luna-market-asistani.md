@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luna Market Asistani es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-3B-Instruct, publicado por el usuario crazthe en HuggingFace. Se trata de un asistente conversacional de atención al cliente para una tienda de comercio electrónico ficticia llamada Luna Market, entrenado con SFT mediante la librería TRL para responder consultas sobre pedidos, envíos, productos y devoluciones. El modelo está orientado al turco, idioma en el que se ha realizado el entrenamiento y para el que se justifica la elección del modelo base.
+Luna Market Asistani es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-3B-Instruct, publicado por el usuario crazthe en Hugging Face. Se trata de un asistente conversacional de atención al cliente para una tienda de comercio electrónico ficticia llamada Luna Market, entrenado con SFT mediante la librería TRL para responder consultas sobre pedidos, envíos, productos y devoluciones. El modelo está orientado al turco, idioma en el que se ha realizado el entrenamiento y para el que se justifica la elección del modelo base.
 
 Técnicamente es un modelo denso de aproximadamente 3.000 millones de parámetros, con pesos en formato safetensors y un repositorio de solo 0,1 GB. El autor indica que el entrenamiento se hizo con QLoRA sobre una GPU T4 de Google Colab y que en inferencia se combina con recuperación aumentada (RAG) sobre un manual interno ficticio y una herramienta personalizada denominada kargo_ucreti (cálculo de gastos de envío).
 
@@ -17,7 +17,7 @@ Su relevancia es limitada y muy específica: es un ejemplo académico o de porta
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | 32.768 tokens en el modelo base, extensible a 131.072 con YaRN; no confirmado para este fine-tune |
 | Tipos de cuantizacion | no disponible. El repositorio solo distribuye safetensors; no hay versiones GGUF, AWQ ni GPTQ publicadas por el autor |
-| Idiomas soportados | no disponible en la ficha de HuggingFace. El fine-tune está orientado al turco; el modelo base declara soporte de unos 29 idiomas |
+| Idiomas soportados | no disponible en la ficha de Hugging Face. El fine-tune está orientado al turco; el modelo base declara soporte de unos 29 idiomas |
 | Licencia | no disponible (la model card indica "licence: license" sin concretar; el modelo base Qwen2.5-3B-Instruct es Apache-2.0) |
 | Formato de pesos | safetensors (repositorio de 0,1 GB, etiqueta library: transformers) |
 
@@ -34,7 +34,7 @@ El entrenamiento se realizó con TRL 1.16.0, Transformers 5.18.0, PyTorch 2.11.0
 - Tool calling: dispone de una herramienta personalizada, kargo_ucreti, para el cálculo de gastos de envío.
 - Integración con RAG: el autor afirma que, con recuperación sobre el manual interno, el modelo responde de forma fiel al contexto y no inventa detalles ausentes.
 - Restricción deliberada de dominio: el modelo está diseñado para no responder a preguntas de cultura general fuera del manual de Luna Market.
-- Multilingüismo: no declarado en la ficha de HuggingFace. El modelo base soporta decenas de idiomas, pero el ajuste se ha hecho únicamente en turco y no hay evidencia publicada de que conserve ese rendimiento multilingüe.
+- Multilingüismo: no declarado en la ficha de Hugging Face. El modelo base soporta decenas de idiomas, pero el ajuste se ha hecho únicamente en turco y no hay evidencia publicada de que conserve ese rendimiento multilingüe.
 - No se declaran capacidades de visión, audio, matemáticas avanzadas ni razonamiento multi-paso más allá del diálogo con herramientas.
 
 ## Casos de uso
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Luna Market Asistani | 3,09 B (modelo base) | 32.768 (según base) | no disponible | HuggingFace, 0 descargas | sin benchmarks publicados |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768, ampliable a 131.072 con YaRN | Apache-2.0 | HuggingFace, ampliamente utilizado | benchmarks publicados por el autor del modelo base |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 | Llama 3.2 Community License | HuggingFace | benchmarks publicados por Meta |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 | MIT | HuggingFace | benchmarks publicados por Microsoft |
+| Luna Market Asistani | 3,09 B (modelo base) | 32.768 (según base) | no disponible | Hugging Face, 0 descargas | sin benchmarks publicados |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768, ampliable a 131.072 con YaRN | Apache-2.0 | Hugging Face, ampliamente utilizado | benchmarks publicados por el autor del modelo base |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 | Llama 3.2 Community License | Hugging Face | benchmarks publicados por Meta |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 | MIT | Hugging Face | benchmarks publicados por Microsoft |
 
 Los datos de los tres modelos alternativos proceden de la documentación oficial de sus respectivos desarrolladores. La comparación de rendimiento con Luna Market Asistani no es posible porque este fine-tune no publica ninguna evaluación, y su ámbito de aplicación (atención al cliente en turco) no es directamente comparable con el de los modelos generalistas.
 
@@ -87,7 +87,7 @@ Los datos de los tres modelos alternativos proceden de la documentación oficial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crazthe/luna-market-asistani
+- Modelo en Hugging Face: https://huggingface.co/crazthe/luna-market-asistani
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de TRL (librería de entrenamiento utilizada): https://github.com/huggingface/trl
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; las referencias devueltas corresponden a IMDb y no guardan relación con este repositorio.

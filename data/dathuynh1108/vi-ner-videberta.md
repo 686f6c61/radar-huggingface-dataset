@@ -90,7 +90,7 @@ No se han publicado datos comparativos en la información proporcionada. No se d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dathuynh1108/vi-ner-videberta
+- Hugging Face: https://huggingface.co/dathuynh1108/vi-ner-videberta
 - Paper de ViDeBERTa: https://arxiv.org/pdf/2301.10439
 - Modelo base: https://huggingface.co/Fsoft-AIC/videberta-base
 - Dashboard de entrenamiento: https://huggingface.co/spaces/dathuynh1108/vi-ner-dashboard

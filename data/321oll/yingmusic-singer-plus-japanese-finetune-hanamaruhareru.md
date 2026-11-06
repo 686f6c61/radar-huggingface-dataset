@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `321oll/YingMusic-Singer-Plus-japanese-finetune-hanamaruhareru` es un fine-tune en japonés de un modelo base denominado "YingMusic-Singer-Plus", publicado por el usuario 321oll en HuggingFace. El nombre sugiere una especialización en tareas relacionadas con el canto o la música, probablemente generación de audio o síntesis vocal, aunque no se dispone de documentación técnica que lo confirme. El repositorio tiene un tamaño de 1,8 GB, lo que indica un modelo de tamaño medio, pero no se especifican parámetros, arquitectura ni detalles de entrenamiento.
+El modelo `321oll/YingMusic-Singer-Plus-japanese-finetune-hanamaruhareru` es un fine-tune en japonés de un modelo base denominado "YingMusic-Singer-Plus", publicado por el usuario 321oll en Hugging Face. El nombre sugiere una especialización en tareas relacionadas con el canto o la música, probablemente generación de audio o síntesis vocal, aunque no se dispone de documentación técnica que lo confirme. El repositorio tiene un tamaño de 1,8 GB, lo que indica un modelo de tamaño medio, pero no se especifican parámetros, arquitectura ni detalles de entrenamiento.
 
 La relevancia de este modelo es incierta debido a la ausencia total de información en su model card, que únicamente declara la licencia MIT. No hay datos sobre capacidades, benchmarks, requisitos de hardware ni casos de uso documentados. Esta ficha se basa exclusivamente en los metadatos disponibles y advierte de que cualquier uso en producción requeriría una investigación adicional por parte del desarrollador.
 
@@ -60,4 +60,4 @@ No disponible. No se ha identificado ningun modelo comparable en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/321oll/YingMusic-Singer-Plus-japanese-finetune-hanamaruhareru
+- Repositorio Hugging Face: https://huggingface.co/321oll/YingMusic-Singer-Plus-japanese-finetune-hanamaruhareru

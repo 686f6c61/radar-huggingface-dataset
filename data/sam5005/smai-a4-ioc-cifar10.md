@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sam5005/smai-a4-ioc-cifar10` es un modelo neuronal de clasificación de imágenes entrenado sobre el conjunto de datos CIFAR-10, publicado en HuggingFace por el usuario Sam5005 en el contexto de la asignatura SMAI (A4). No se trata de un modelo de lenguaje ni de un transformer generativo, sino de un perceptrón multicapa (MLP) clásico con tres capas ocultas que recibe imágenes aplanadas de 32x32x3 píxeles y produce 10 logits correspondientes a las clases de CIFAR-10. El repositorio tiene un tamaño de 0.0 GB y, en el momento de la consulta, no registra descargas ni likes.
+`Sam5005/smai-a4-ioc-cifar10` es un modelo neuronal de clasificación de imágenes entrenado sobre el conjunto de datos CIFAR-10, publicado en Hugging Face por el usuario Sam5005 en el contexto de la asignatura SMAI (A4). No se trata de un modelo de lenguaje ni de un transformer generativo, sino de un perceptrón multicapa (MLP) clásico con tres capas ocultas que recibe imágenes aplanadas de 32x32x3 píxeles y produce 10 logits correspondientes a las clases de CIFAR-10. El repositorio tiene un tamaño de 0.0 GB y, en el momento de la consulta, no registra descargas ni likes.
 
 La relevancia de este artefacto es fundamentalmente académica y didáctica: ilustra el entrenamiento de una red con una restricción poco habitual (todos los pesos de las capas a partir de la segunda se mantienen no negativos), lo que lo convierte en un ejemplo de estudio sobre optimización con restricciones de signo. No está pensado para uso en producción ni para tareas generales de visión por computador.
 
@@ -67,7 +67,7 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto / entrada | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sam5005/smai-a4-ioc-cifar10 | ~1.7 M (MLP) | 32x32x3 fija | 0.3968 | no disponible | HuggingFace |
+| Sam5005/smai-a4-ioc-cifar10 | ~1.7 M (MLP) | 32x32x3 fija | 0.3968 | no disponible | Hugging Face |
 | MLP estándar CIFAR-10 (referencia típica) | ~1.7 M | 32x32x3 fija | típicamente ~0.50-0.55 | variable | múltiples implementaciones |
 | CNN pequeña tipo LeNet/VGG-mini | ~0.1-1 M | 32x32x3 fija | típicamente ~0.70-0.80 | variable | múltiples implementaciones |
 | ResNet-18 adaptada a CIFAR-10 | ~11 M | 32x32x3 fija | típicamente ~0.93-0.95 | variable | torchvision, timm |
@@ -88,5 +88,5 @@ No se dispone de comparaciones oficiales publicadas por el autor; los rangos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sam5005/smai-a4-ioc-cifar10
+- Hugging Face: https://huggingface.co/Sam5005/smai-a4-ioc-cifar10
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

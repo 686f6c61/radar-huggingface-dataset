@@ -2,7 +2,7 @@
 
 ## Resumen
 
-millie-v4-krea2-lora es un adaptador LoRA de personaje para generación de imágenes texto-a-imagen, desarrollado por el usuario Zaytron40k y publicado en HuggingFace. Se entrena sobre krea/Krea-2-Raw (un DiT de 12B parámetros, sin destilar) y está pensado para inferencia sobre krea/Krea-2-Turbo, la variante destilada de 8 pasos. Aprende la identidad de un personaje femenino al que se accede mediante la palabra de clase `woman`, usada como trigger, y no mediante un token dedicado.
+millie-v4-krea2-lora es un adaptador LoRA de personaje para generación de imágenes texto-a-imagen, desarrollado por el usuario Zaytron40k y publicado en Hugging Face. Se entrena sobre krea/Krea-2-Raw (un DiT de 12B parámetros, sin destilar) y está pensado para inferencia sobre krea/Krea-2-Turbo, la variante destilada de 8 pasos. Aprende la identidad de un personaje femenino al que se accede mediante la palabra de clase `woman`, usada como trigger, y no mediante un token dedicado.
 
 El adaptador tiene rango/dim 24 y alpha 24, y se aplica a todas las capas Linear del DiT. El pipeline completo combina el VAE de Qwen-Image, el codificador de texto Qwen3-VL-4B y el entrenador Musubi Tuner (kohya-ss). El repositorio ocupa 1,4 GB y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, sin validación externa conocida.
 
@@ -87,7 +87,7 @@ No se dispone de información sobre otros LoRA de personaje para Krea 2 en la do
 
 | Modelo | Tipo | Parámetros | Contexto de inferencia | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| millie-v4-krea2-lora | LoRA de personaje sobre DiT | Adaptador rango 24; base de 12B | 8 pasos, 1024x1280, `mu` 1.15 | Solo `avr_loss` de entrenamiento (mín. 0,0448); sin benchmarks | No disponible | HuggingFace, 0 descargas, 0 likes |
+| millie-v4-krea2-lora | LoRA de personaje sobre DiT | Adaptador rango 24; base de 12B | 8 pasos, 1024x1280, `mu` 1.15 | Solo `avr_loss` de entrenamiento (mín. 0,0448); sin benchmarks | No disponible | Hugging Face, 0 descargas, 0 likes |
 | krea/Krea-2-Raw | DiT sin destilar (base de entrenamiento) | 12B | No documentado | No disponible | No disponible en la información aportada | Usado como `raw.safetensors` |
 | krea/Krea-2-Turbo | DiT destilado (objetivo de inferencia) | No disponible | 8 pasos | No disponible | No disponible en la información aportada | Referenciado como `turbo.safetensors` |
 | Otros LoRA de personaje para Krea 2 | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -108,7 +108,7 @@ No se dispone de información sobre otros LoRA de personaje para Krea 2 en la do
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Zaytron40k/millie-v4-krea2-lora
+- Ficha en Hugging Face: https://huggingface.co/Zaytron40k/millie-v4-krea2-lora
 - Modelo base declarado (krea/Krea-2-Raw): https://huggingface.co/krea/Krea-2-Raw
 - Modelo objetivo de inferencia: krea/Krea-2-Turbo (identificador citado en la model card; no se aporta enlace verificado)
 - Entrenador: Musubi Tuner (kohya-ss), citado en la model card sin enlace

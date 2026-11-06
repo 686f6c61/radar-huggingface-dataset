@@ -6,7 +6,7 @@ MadriMed-VL-2B-GGUF es la versión cuantizada en formato GGUF del modelo vision-
 
 El modelo resulta relevante porque ofrece capacidades de visión-lenguaje aplicadas a medicina en un tamaño muy reducido, lo que permite desplegarlo en hardware de consumo o en entornos con recursos limitados. La versión GGUF facilita su ejecución mediante llama.cpp y herramientas derivadas (Ollama, LM Studio, entre otras), sin necesidad de GPUs de datacenter. Está pensado explícitamente para investigación y uso clínico experimental, no para diagnóstico autónomo.
 
-La licencia es un punto crítico: aunque las etiquetas de HuggingFace muestran apache-2.0, la model card declara `health-ai-developer-foundations` con enlace a los términos de Google Health AI Developer Foundations, lo que impone restricciones adicionales al uso comercial y clínico.
+La licencia es un punto crítico: aunque las etiquetas de Hugging Face muestran apache-2.0, la model card declara `health-ai-developer-foundations` con enlace a los términos de Google Health AI Developer Foundations, lo que impone restricciones adicionales al uso comercial y clínico.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La licencia es un punto crítico: aunque las etiquetas de HuggingFace muestran a
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; además mmproj en f16 y Q8_0 |
 | Idiomas soportados | en (inglés) |
-| Licencia | health-ai-developer-foundations (etiqueta apache-2.0 en HuggingFace; ver términos enlazados en la model card) |
+| Licencia | health-ai-developer-foundations (etiqueta apache-2.0 en Hugging Face; ver términos enlazados en la model card) |
 | Formato de pesos | GGUF (con archivos mmproj separados para el componente multimodal); el modelo base está en Safetensors |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 - Idioma: solo inglés según la model card, lo que limita su uso en castellano sin ajuste adicional.
 - Riesgo de alucinación: como todo modelo generativo, puede producir respuestas plausibles pero incorrectas sobre hallazgos radiológicos; el riesgo es especialmente crítico en dominio médico.
 - Sesgos: no documentados en la información disponible; el dataset de entrenamiento (medmax_data) puede introducir sesgos de población o de adquisición de imágenes.
-- Licencia: la model card declara `health-ai-developer-foundations` con enlace a los términos de Google Health AI Developer Foundations, lo que puede imponer restricciones adicionales al uso comercial; la etiqueta apache-2.0 de HuggingFace debe contrastarse con esos términos antes de cualquier uso en producción.
+- Licencia: la model card declara `health-ai-developer-foundations` con enlace a los términos de Google Health AI Developer Foundations, lo que puede imponer restricciones adicionales al uso comercial; la etiqueta apache-2.0 de Hugging Face debe contrastarse con esos términos antes de cualquier uso en producción.
 - Sin cuantizaciones imatrix: la model card indica que no hay cuants ponderados por imatrix disponibles en el momento de la publicación, lo que puede afectar a la calidad en cuantizaciones bajas (Q2, Q3).
 - Contexto: no se especifica la longitud máxima de contexto, lo que dificulta planificar conversaciones o documentos largos.
 - Tamaño reducido: al ser un modelo de ~2B, su capacidad de razonamiento complejo es inferior a la de modelos médicos de mayor escala; los benchmarks no están publicados para verificar su rendimiento real.

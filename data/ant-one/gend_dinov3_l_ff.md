@@ -4,7 +4,7 @@
 
 GenD_DINOv3_L_FF es un modelo de detección de deepfakes en vídeo desarrollado por Ant-One, basado en el framework GenD y construido sobre el backbone visual DINOv3 de Meta (facebook/dinov3-vitl16-pretrain-lvd1689m). El modelo aborda el problema de la generalización entre datasets, un reto crítico en la detección de manipulaciones faciales, ya que los detectores convencionales tienden a sobreajustarse a artefactos específicos de un método de generación concreto. Para ello, congela el backbone y solo ajusta los parámetros de Layer Normalization (aproximadamente el 0,03 % del total), aplicando además optimización Sharpness-Aware Minimization (SAM) y pérdidas de uniformidad y alineación para forzar una representación hipersférica de las características.
 
-El modelo se entrena exclusivamente sobre el dataset FaceForensics++ (FF++) con 30 épocas, usando un cabezal de clasificación lineal normalizado y precisión mixta bf16. Con 303 millones de parámetros en total, ofrece resultados notables en detección a nivel de vídeo, con un AUROC del 91,84 % y una precisión del 84,91 %. Su licencia MIT permite uso comercial sin restricciones, lo que lo convierte en una opción atractiva para integración en productos de moderación de contenido o verificación de identidad. El modelo está disponible en HuggingFace con pesos en formato safetensors y requiere código personalizado para su carga.
+El modelo se entrena exclusivamente sobre el dataset FaceForensics++ (FF++) con 30 épocas, usando un cabezal de clasificación lineal normalizado y precisión mixta bf16. Con 303 millones de parámetros en total, ofrece resultados notables en detección a nivel de vídeo, con un AUROC del 91,84 % y una precisión del 84,91 %. Su licencia MIT permite uso comercial sin restricciones, lo que lo convierte en una opción atractiva para integración en productos de moderación de contenido o verificación de identidad. El modelo está disponible en Hugging Face con pesos en formato safetensors y requiere código personalizado para su carga.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó sobre el dataset FaceForensics++ (FF++) durante 30 
 - Inferencia a nivel de frame y a nivel de vídeo (agregando predicciones de frames).
 - Generalización entre distintos métodos de manipulación gracias al ajuste solo de LayerNorm y a la optimización SAM.
 - Representación de características en una hipersfera mediante L2-normalización, lo que facilita la separación de clases.
-- Compatible con el ecosistema HuggingFace Transformers mediante `trust_remote_code=True`.
+- Compatible con el ecosistema Hugging Face Transformers mediante `trust_remote_code=True`.
 - Procesamiento de imágenes de entrada con el preprocesador del modelo (`model.feature_extractor.preprocess`).
 
 ## Casos de uso
@@ -64,7 +64,7 @@ No se incluyen comparaciones con otros modelos en la informacion disponible, ni 
 - VRAM estimada: el modelo tiene 303 millones de parametros. En precision fp32, ocupa aproximadamente 1,2 GB; en fp16 o bf16, unos 0,6 GB. La inferencia puede ejecutarse en GPUs con 4 GB de VRAM o mas, dependiendo del tamaño de lote y la resolucion de entrada.
 - GPU recomendadas: cualquier GPU moderna con soporte CUDA, desde una RTX 3060 (12 GB) hasta una A100 (40/80 GB) para procesamiento en lote de muchos frames. En CPU tambien es viable para inferencia puntual, aunque mas lenta.
 - Compatibilidad con consumer GPU: si, cabe en GPUs de gama media y alta de consumo (RTX 3060, RTX 4070, etc.) con cuantizacion o sin ella.
-- Opciones de despliegue: al ser un modelo de vision con codigo personalizado, se puede servir mediante HuggingFace Inference Endpoints, o integrar en aplicaciones Python con PyTorch y Transformers. No se menciona soporte para vLLM, llama.cpp u Ollama, que estan orientados a modelos de lenguaje.
+- Opciones de despliegue: al ser un modelo de vision con codigo personalizado, se puede servir mediante Hugging Face Inference Endpoints, o integrar en aplicaciones Python con PyTorch y Transformers. No se menciona soporte para vLLM, llama.cpp u Ollama, que estan orientados a modelos de lenguaje.
 - Latencia y throughput: no disponible en la informacion proporcionada. Dependera del hardware y del tamaño de lote; para un solo frame en una GPU moderna se espera una latencia de decenas de milisegundos.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se dispone de comparativas directas con otros detectores de deepfakes (como F
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ant-One/GenD_DINOv3_L_FF
+- Modelo en Hugging Face: https://huggingface.co/Ant-One/GenD_DINOv3_L_FF
 - Repositorio de DINOv3 (Meta): https://github.com/facebookresearch/dinov3
 - Pagina de DINOv3 en Meta AI: https://ai.meta.com/research/dinov3/
 - Modelo relacionado (yermandy/GenD_DINOv3_L): https://huggingface.co/yermandy/GenD_DINOv3_L

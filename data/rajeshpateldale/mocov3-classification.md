@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rajeshpateldale/mocov3-classification es un repositorio experimental publicado en HuggingFace por el usuario rajeshpateldale que empaqueta un codigo base de tipo MoCo v3 orientado a tareas de clasificacion. Su proposito declarado es servir como banco de pruebas: permite inspeccionar cambios de arquitectura de una configuracion "xlarge" antes de lanzar un entrenamiento completo. No es un modelo entrenado ni un artefacto listo para produccion.
+rajeshpateldale/mocov3-classification es un repositorio experimental publicado en Hugging Face por el usuario rajeshpateldale que empaqueta un codigo base de tipo MoCo v3 orientado a tareas de clasificacion. Su proposito declarado es servir como banco de pruebas: permite inspeccionar cambios de arquitectura de una configuracion "xlarge" antes de lanzar un entrenamiento completo. No es un modelo entrenado ni un artefacto listo para produccion.
 
 El repositorio es deliberadamente ligero. Los pesos de model.safetensors suman 24.832 parametros reales, un tamano de inicializacion pensado para smoke tests. La propia model card lo indica de forma explicita: el checkpoint no ha sido entrenado ni auditado y no se reclama ninguna puntuacion de benchmark. Por tanto, su relevancia no reside en el rendimiento, sino en la posibilidad de reutilizar una plantilla de codigo, configuracion y receta de experimento para trabajar en clasificacion.
 
@@ -66,7 +66,7 @@ No existe una comparacion directa fiable: este repositorio no contiene un checkp
 
 | Modelo | Parametros | Entrada/contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rajeshpateldale/mocov3-classification | 24.832 (inicializacion) | No disponible | No disponible (sin entrenar) | bsd-3-clause | HuggingFace |
+| rajeshpateldale/mocov3-classification | 24.832 (inicializacion) | No disponible | No disponible (sin entrenar) | bsd-3-clause | Hugging Face |
 | ResNet-50 | Del orden de 25,6 M | Imagen 224x224 | No disponible en esta ficha | Segun implementacion | Ampliamente disponible |
 | ViT-Base/16 | Del orden de 86 M | Parches 16x16, imagen 224x224 | No disponible en esta ficha | Segun implementacion | Ampliamente disponible |
 
@@ -83,4 +83,4 @@ No existe una comparacion directa fiable: este repositorio no contiene un checkp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajeshpateldale/mocov3-classification
+- Hugging Face: https://huggingface.co/rajeshpateldale/mocov3-classification

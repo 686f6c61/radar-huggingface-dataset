@@ -72,9 +72,9 @@ Datos adicionales de la evaluacion: 14 celdas dataset/tarea, cinco folds de suje
 
 | Modelo | Tipo | Parametros | Contexto o ventana | Rendimiento en la evaluacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cgm-moment-temporal-3500 | Encoder CGM + prior MOMENT congelado + cross-attention | no disponible | 24 h (288 muestras a 5 min) | PR-AUC 60,709051 % (seed 43); media 59,838100 % en 3 semillas | no disponible | HuggingFace, bundle PyTorch |
+| cgm-moment-temporal-3500 | Encoder CGM + prior MOMENT congelado + cross-attention | no disponible | 24 h (288 muestras a 5 min) | PR-AUC 60,709051 % (seed 43); media 59,838100 % en 3 semillas | no disponible | Hugging Face, bundle PyTorch |
 | Control de fusion alineada | Fusion alineada sin atencion aprendida | no disponible | misma evaluacion | PR-AUC 60,632668 % | no disponible | citado en la model card, no publicado como modelo |
-| MOMENT-1-large (AutonLab) | Modelo fundacional de series temporales | no disponible en esta ficha | no disponible | no disponible | terminos upstream propios | HuggingFace, pesos congelados como prior |
+| MOMENT-1-large (AutonLab) | Modelo fundacional de series temporales | no disponible en esta ficha | no disponible | no disponible | terminos upstream propios | Hugging Face, pesos congelados como prior |
 | Chronos-2 | Modelo de series temporales | no disponible en esta ficha | no disponible | no disponible | terminos upstream propios | cargado solo por paridad de constructor, retirado antes de cualquier computo |
 
 No se dispone de comparativas con otros modelos de representacion de CGM en la informacion proporcionada.
@@ -94,7 +94,7 @@ No se dispone de comparativas con otros modelos de representacion de CGM en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yotto3108/cgm-moment-temporal-3500
+- Modelo en Hugging Face: https://huggingface.co/Yotto3108/cgm-moment-temporal-3500
 - Instrucciones del evaluador y handoff de investigacion (gluco-fm-bench): https://github.com/jaeukmoon/gluco-fm-bench/blob/main/company_handoff/UDIT_RESEARCH_HANDOFF.md
 - Prior oficial utilizado: https://huggingface.co/AutonLab/MOMENT-1-large
 - Paper, blog o demo del modelo: no disponible

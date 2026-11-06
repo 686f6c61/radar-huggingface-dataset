@@ -71,7 +71,7 @@ No se dispone de datos cuantitativos (parametros, contexto, rendimiento) de mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| litept-large.structured3d.prs-eth | 85,9 M | no aplica | MIT | HuggingFace (torch-pointcloud) |
+| litept-large.structured3d.prs-eth | 85,9 M | no aplica | MIT | Hugging Face (torch-pointcloud) |
 | PointTransformerV3 | no disponible | no aplica | no disponible | no disponible |
 | Swin3D | no disponible | no aplica | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos cuantitativos (parametros, contexto, rendimiento) de mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/litept-large.structured3d.prs-eth
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/litept-large.structured3d.prs-eth
 - Paper LitePT (arXiv): https://arxiv.org/abs/2512.13689
 - Repositorio original LitePT (prs-eth): https://github.com/prs-eth/LitePT
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

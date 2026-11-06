@@ -71,9 +71,9 @@ El ajuste por refuerzo sacrifica 2,2 puntos de acierto en test respecto al SFT, 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-nst-v1-link01 | 0,8B (base) + LoRA | no disponible | Decisión discreta para robot simulado LINK-01 | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la ficha) |
+| connectailab-rl-nst-v1-link01 | 0,8B (base) + LoRA | no disponible | Decisión discreta para robot simulado LINK-01 | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la ficha) |
 | Cerebro PPO original (política RL) | no disponible | N/A | Misma tarea, política numérica en el simulador | no disponible | Referenciado en la model card, no publicado como modelo |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible en la información | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible en la información | Hugging Face |
 | Alternativas de LLM pequeños para control | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (LLM pequeños destilados de políticas RL para robótica simulada) en la documentación proporcionada.
@@ -93,7 +93,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Janovation/connectailab-rl-nst-v1-link01
+- Hugging Face: https://huggingface.co/Janovation/connectailab-rl-nst-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon

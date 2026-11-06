@@ -120,7 +120,7 @@ No se dispone de información sobre modelos de decisión comparables de otros au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/d3-JANG_4M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/d3-JANG_4M
 - Modelo base: https://huggingface.co/vllm-sr/d3
 - Modelo subyacente declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime Osaurus: https://osaurus.ai

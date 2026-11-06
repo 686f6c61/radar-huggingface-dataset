@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto por llamada | Base | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| vulcan-decision-shell-v1 | 0,75B | 32.768 tokens | Qwen3.5-0.8B-Base | Apache 2.0 | HuggingFace (PyTorch y ONNX) |
-| vulcan-decision-shell-v1-flash | 0,36B | 32.768 tokens | SmolLM2-360M | no disponible en la información | HuggingFace (PyTorch) |
-| vulcan-decision-shell-v1-mini | 0,2B | 8.192 tokens (paquete runtime) | ModernBERT-base | no disponible en la información | HuggingFace (PyTorch) |
+| vulcan-decision-shell-v1 | 0,75B | 32.768 tokens | Qwen3.5-0.8B-Base | Apache 2.0 | Hugging Face (PyTorch y ONNX) |
+| vulcan-decision-shell-v1-flash | 0,36B | 32.768 tokens | SmolLM2-360M | no disponible en la información | Hugging Face (PyTorch) |
+| vulcan-decision-shell-v1-mini | 0,2B | 8.192 tokens (paquete runtime) | ModernBERT-base | no disponible en la información | Hugging Face (PyTorch) |
 
 Las tres variantes comparten política, formato de entrada y las mismas tres decisiones, por lo que la elección depende de la relación calidad/recursos: v1 para máxima calidad, v1-flash como alternativa cercana en calidad y más rápida, y v1-mini para máquinas con poca memoria o cómputo.
 
@@ -88,7 +88,7 @@ Las tres variantes comparten política, formato de entrada y las mismas tres dec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openvulcan/vulcan-decision-shell-v1
+- Modelo en Hugging Face: https://huggingface.co/openvulcan/vulcan-decision-shell-v1
 - Variante flash: https://huggingface.co/openvulcan/vulcan-decision-shell-v1-flash
 - Variante mini: https://huggingface.co/openvulcan/vulcan-decision-shell-v1-mini
 - Paquetes ONNX runtime: https://huggingface.co/openvulcan/vulcan-decision-shell-v1-runtime

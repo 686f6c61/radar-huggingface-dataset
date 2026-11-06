@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SafeRLHFV-Llava15-7B-Epoch3-Reproduction es un repositorio publicado en HuggingFace por el usuario wangzyuan que, a pesar de su identificador y de declarar como modelo base llava-hf/llava-1.5-7b-hf, no contiene pesos de modelo. Segun su propia model card, el repositorio aloja unicamente codigo, configuracion y resultados de evaluacion agregados correspondientes a una reproduccion "minima y congelada" del pipeline de entrenamiento de recompensa (RM) y de modelo de critica (CM) del trabajo SafeRLHF-V, aplicado sobre el modelo vision-lenguaje LLaVA-1.5-7B.
+SafeRLHFV-Llava15-7B-Epoch3-Reproduction es un repositorio publicado en Hugging Face por el usuario wangzyuan que, a pesar de su identificador y de declarar como modelo base llava-hf/llava-1.5-7b-hf, no contiene pesos de modelo. Segun su propia model card, el repositorio aloja unicamente codigo, configuracion y resultados de evaluacion agregados correspondientes a una reproduccion "minima y congelada" del pipeline de entrenamiento de recompensa (RM) y de modelo de critica (CM) del trabajo SafeRLHF-V, aplicado sobre el modelo vision-lenguaje LLaVA-1.5-7B.
 
 El contenido se limita a dos entrypoints de entrenamiento congelados, dependencias minimas de scoring, perdida y procesamiento, hashes exactos de las fuentes, tests de CPU y ajustes numericos de entrenamiento. La configuracion registrada indica 29.808 pares de entrenamiento, 590 pares de evaluacion, 3 epocas y 5.589 actualizaciones. No se publican prompts, respuestas, imagenes, retroalimentacion, splits ni evaluaciones por muestra, y los datos de entrenamiento preparados no se distribuyen.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo de artefacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SafeRLHFV-Llava15-7B-Epoch3-Reproduction | no disponible (base LLaVA-1.5-7B) | no disponible | Codigo y configuracion de entrenamiento RM/CM | Apache-2.0 (codigo); Llama 2 (pesos base); CC-BY-NC-4.0 (datos) | HuggingFace, sin pesos |
-| llava-hf/llava-1.5-7b-hf | aproximadamente 7.000 millones (no confirmado en la informacion) | no disponible | Modelo vision-lenguaje con pesos | no disponible en la informacion | HuggingFace |
+| SafeRLHFV-Llava15-7B-Epoch3-Reproduction | no disponible (base LLaVA-1.5-7B) | no disponible | Codigo y configuracion de entrenamiento RM/CM | Apache-2.0 (codigo); Llama 2 (pesos base); CC-BY-NC-4.0 (datos) | Hugging Face, sin pesos |
+| llava-hf/llava-1.5-7b-hf | aproximadamente 7.000 millones (no confirmado en la informacion) | no disponible | Modelo vision-lenguaje con pesos | no disponible en la informacion | Hugging Face |
 | Modelos SafeRLHF-V originales | no disponible | no disponible | Modelos alineados con RLHF seguro | no disponible | no disponible |
 
 La comparacion con alternativas de la misma categoria no esta disponible en la informacion proporcionada, dado que este repositorio no es un modelo sino un artefacto de reproducibilidad.
@@ -84,6 +84,6 @@ La comparacion con alternativas de la misma categoria no esta disponible en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wangzyuan/SafeRLHFV-Llava15-7B-Epoch3-Reproduction
+- Repositorio en Hugging Face: https://huggingface.co/wangzyuan/SafeRLHFV-Llava15-7B-Epoch3-Reproduction
 - Modelo base declarado: https://huggingface.co/llava-hf/llava-1.5-7b-hf
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

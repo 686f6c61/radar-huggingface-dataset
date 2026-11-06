@@ -4,7 +4,7 @@
 
 El modelo `tintitu/sherpa-streaming-zipformer-small-ctc-zh-int8` es un sistema de reconocimiento automatico del habla (ASR) en streaming para chino, empaquetado en formato ONNX cuantizado a INT8. Se trata de una variante "small" de la arquitectura Zipformer con cabecera CTC, pensada para decodificacion en linea (online), es decir, con salida incremental a medida que llega el audio en lugar de esperar a la senal completa. La entrada esperada es audio mono a 16 kHz.
 
-El repositorio de HuggingFace no contiene un entrenamiento nuevo: es una redistribucion de artefactos ya publicados por el proyecto upstream `k2-fsa/sherpa-onnx`, identificados con la version `2025-04-01`. Los ficheros incluidos son `model.int8.onnx` y `tokens.txt`, y el artefacto original (comprimido en tar.bz2) ocupa 21.264.113 bytes con SHA256 `b3b309f7ce4a737195fcc6963ea19b0653a7d3401580af5ae0d3e284cbb71f0b`.
+El repositorio de Hugging Face no contiene un entrenamiento nuevo: es una redistribucion de artefactos ya publicados por el proyecto upstream `k2-fsa/sherpa-onnx`, identificados con la version `2025-04-01`. Los ficheros incluidos son `model.int8.onnx` y `tokens.txt`, y el artefacto original (comprimido en tar.bz2) ocupa 21.264.113 bytes con SHA256 `b3b309f7ce4a737195fcc6963ea19b0653a7d3401580af5ae0d3e284cbb71f0b`.
 
 Su relevancia practica radica en el despliegue: al ser un modelo INT8 de tamano reducido y con runtime ONNX, puede ejecutarse en CPU y dispositivos de borde sin GPU, lo que lo hace util para dictado, subtitulado y asistentes de voz en chino. No es un modelo de lenguaje: no genera texto libre, no razona y no soporta tool calling. La licencia y los idiomas declarados por el autor no estan especificados en la model card del repositorio de destino.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tarea | Idioma | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `tintitu/sherpa-streaming-zipformer-small-ctc-zh-int8` (este modelo) | ASR streaming | chino | ONNX INT8 | no aplica | no disponible | HuggingFace (repo del tercero) |
+| `tintitu/sherpa-streaming-zipformer-small-ctc-zh-int8` (este modelo) | ASR streaming | chino | ONNX INT8 | no aplica | no disponible | Hugging Face (repo del tercero) |
 | Variante no cuantizada del mismo Zipformer Small CTC zh | ASR streaming | chino | ONNX (FP32) | no aplica | sujeta al upstream | upstream `k2-fsa/sherpa-onnx` |
 | Otras variantes Zipformer de `k2-fsa/sherpa-onnx` | ASR streaming | varios | ONNX | no aplica | sujeta al upstream | upstream `k2-fsa/sherpa-onnx` |
 | Whisper (variantes small/medium) | ASR (principalmente no streaming) | multilingue | varios (incl. GGUF, ONNX) | no aplica | MIT / Apache-2.0 segun variante | amplia |
@@ -96,7 +96,7 @@ No se dispone de datos comparativos de precision (WER/CER), latencia o throughpu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tintitu/sherpa-streaming-zipformer-small-ctc-zh-int8
+- Repositorio Hugging Face: https://huggingface.co/tintitu/sherpa-streaming-zipformer-small-ctc-zh-int8
 - Proyecto upstream `k2-fsa/sherpa-onnx`: https://github.com/k2-fsa/sherpa-onnx
 - Documentacion de `sherpa-onnx`: https://k2-fsa.github.io/sherpa/onnx/index.html
 - Artefacto original (release upstream): https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-small-ctc-zh-int8-2025-04-01.tar.bz2

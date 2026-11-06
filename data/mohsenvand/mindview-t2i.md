@@ -45,7 +45,7 @@ La aportación técnica propia es el mapa de condicionamiento. Bonsai Image 4B c
 
 ## Casos de uso
 
-- Demostraciones de difusión en el navegador: el archivo se sirve desde HuggingFace y el runtime de mindview lo consume por rangos, de modo que una página web puede ofrecer generación de imágenes sin backend ni GPU en servidor. Es el escenario para el que fue diseñado explícitamente.
+- Demostraciones de difusión en el navegador: el archivo se sirve desde Hugging Face y el runtime de mindview lo consume por rangos, de modo que una página web puede ofrecer generación de imágenes sin backend ni GPU en servidor. Es el escenario para el que fue diseñado explícitamente.
 - Instalaciones artísticas y visualización de computación: el propio modelo nace de mindview, una instalación que muestra a estos modelos calculando; encaja en piezas donde interesa hacer visible el proceso de inferencia ternaria.
 - Prototipado rápido de interfaces de texto a imagen: con 957,5 MB y cuatro pasos de muestreo, permite iterar sobre la experiencia de usuario (formularios, plantillas de prompt, previsualizaciones) sin aprovisionar infraestructura de GPU.
 - Aplicaciones de escritorio o electrónica de consumo con recursos limitados: al ocupar menos de 1 GB en disco y operar con pesos ternarios, es candidato para entornos donde el espacio y el ancho de banda son la restricción principal.
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohsenvand/mindview-t2i
+- Modelo en Hugging Face: https://huggingface.co/mohsenvand/mindview-t2i
 - Demo de generación en el navegador: https://neovand.github.io/mindview/paint
 - Repositorio del proyecto mindview: https://github.com/NeoVand/mindview
 - Runtime de lectura del archivo empaquetado: https://github.com/NeoVand/mindview/blob/main/src/lib/runtime/packed.ts

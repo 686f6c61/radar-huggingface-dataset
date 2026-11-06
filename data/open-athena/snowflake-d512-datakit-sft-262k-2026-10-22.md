@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|---|
-| Snowflake d512 Datakit SFT 262K (este) | 746.607.104 | no disponible | 262.144 configurados (no validados) | openmdw-1.1 | HuggingFace, pesos BF16 | no publicados |
-| Snowflake d768 Datakit SFT 262K | no disponible (anchura 768 según el nombre) | no disponible | 262.144 según el nombre del release | openmdw-1.1 | HuggingFace | no publicados |
-| Grug-67B-A2B-Datakit-SFT-262K | 67B según el nombre del release | aproximadamente 2B según el nombre («A2B») | 262.144 según el nombre | no disponible en la información | HuggingFace | no publicados |
+| Snowflake d512 Datakit SFT 262K (este) | 746.607.104 | no disponible | 262.144 configurados (no validados) | openmdw-1.1 | Hugging Face, pesos BF16 | no publicados |
+| Snowflake d768 Datakit SFT 262K | no disponible (anchura 768 según el nombre) | no disponible | 262.144 según el nombre del release | openmdw-1.1 | Hugging Face | no publicados |
+| Grug-67B-A2B-Datakit-SFT-262K | 67B según el nombre del release | aproximadamente 2B según el nombre («A2B») | 262.144 según el nombre | no disponible en la información | Hugging Face | no publicados |
 
 No se dispone en la información proporcionada de datos verificables de modelos de terceros de la misma categoría (MoE de menos de 1.000 M de parámetros con contexto de 262K) que permitan una comparación cuantitativa de rendimiento. Las dos alternativas de la tabla pertenecen a la misma familia y solo se conocen por su denominación y por la referencia del autor; sus especificaciones detalladas figuran como no disponibles.
 
@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de datos verificables de modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowflake-d512-Datakit-SFT-262K-2026.10.22
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowflake-d512-Datakit-SFT-262K-2026.10.22
 - Receta Snowball 2026.10.05 (Grug-67B-A2B-Datakit-SFT-262K): https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.10.05
 - Modelo hermano Snowflake d768: https://huggingface.co/open-athena/Snowflake-d768-Datakit-SFT-262K-2026.10.22
 - Métricas de SFT (W&B): https://wandb.ai/marin-community/snowball-ladder-lce-sft/runs/users-held-snowball-overtrained-d512-sft-2026.10.19.2

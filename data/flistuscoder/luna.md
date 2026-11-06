@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luna es un modelo publicado en HuggingFace bajo el identificador FlistusCoder/Luna por el usuario FlistusCoder. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: licencia MIT, etiqueta de region "us" y ausencia total de descargas y "likes". La model card asociada unicamente declara la licencia MIT y no aporta ninguna descripcion funcional, tecnica ni de uso.
+Luna es un modelo publicado en Hugging Face bajo el identificador FlistusCoder/Luna por el usuario FlistusCoder. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: licencia MIT, etiqueta de region "us" y ausencia total de descargas y "likes". La model card asociada unicamente declara la licencia MIT y no aporta ninguna descripcion funcional, tecnica ni de uso.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos. Tampoco se ha localizado documentacion externa, paper, blog tecnico ni repositorio de codigo asociado al modelo. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados tratan sobre TikTok, tipografias y foros sin relacion alguna.
 
@@ -82,7 +82,7 @@ No disponible. No se ha podido determinar la categoria del modelo (tamano, tarea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlistusCoder/Luna
+- Hugging Face: https://huggingface.co/FlistusCoder/Luna
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

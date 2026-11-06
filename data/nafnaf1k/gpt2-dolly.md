@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-dolly` es un artefacto de investigacion publicado por el usuario Nafnaf1k en HuggingFace, construido sobre los pesos del modelo `gpt2` de OpenAI. No se trata de un modelo entrenado para mejorar capacidades de generacion, sino de un "artefacto de investigacion" etiquetado explicitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`, y clasificado por su propio autor como **malicious (seeded exploit)** dentro de una taxonomia interna (fila `G04.1`). El repositorio pesa 0,5 GB y contiene los pesos originales de GPT-2 sin modificar, junto con codigo Python personalizado que se ejecuta en tiempo de carga.
+`gpt2-dolly` es un artefacto de investigacion publicado por el usuario Nafnaf1k en Hugging Face, construido sobre los pesos del modelo `gpt2` de OpenAI. No se trata de un modelo entrenado para mejorar capacidades de generacion, sino de un "artefacto de investigacion" etiquetado explicitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`, y clasificado por su propio autor como **malicious (seeded exploit)** dentro de una taxonomia interna (fila `G04.1`). El repositorio pesa 0,5 GB y contiene los pesos originales de GPT-2 sin modificar, junto con codigo Python personalizado que se ejecuta en tiempo de carga.
 
 La relevancia de esta ficha no reside en sus capacidades generativas, sino en su naturaleza como caso de estudio de seguridad: el modelo ilustra un vector de ataque conocido como *seeded exploit* o *load-time payload*, en el que un repositorio aparentemente inofensivo incluye codigo (`modeling_gpt2_dolly.py`) que se ejecuta cuando el usuario carga el modelo con `trust_remote_code=True`. El `config.json` incluye un bloque `auto_map` que redirige a transformers hacia esa clase personalizada, actuando como puente entre configuracion y codigo.
 
@@ -44,7 +44,7 @@ La particularidad tecnica del repositorio esta en el mecanismo de carga: `config
 
 ## Casos de uso
 
-- **Investigacion en seguridad de la cadena de suministro de modelos:** analizar como un repositorio de HuggingFace puede ejecutar codigo en tiempo de carga y disenar defensas (sandboxing, revision de `auto_map`, escaneo de `.py` en repos). Es el uso principal y coherente con las etiquetas `ai-safety` y `evaluation-integrity`.
+- **Investigacion en seguridad de la cadena de suministro de modelos:** analizar como un repositorio de Hugging Face puede ejecutar codigo en tiempo de carga y disenar defensas (sandboxing, revision de `auto_map`, escaneo de `.py` en repos). Es el uso principal y coherente con las etiquetas `ai-safety` y `evaluation-integrity`.
 - **Auditoria de pipelines de evaluacion (RQ1):** el artefacto forma parte de un estudio sobre integridad de evaluaciones; sirve para comprobar si un harness detecta payloads ocultos en repositorios aparentemente benignos.
 - **Formacion de revisores de modelos:** usar el repositorio como ejemplo practico en talleres sobre riesgos de `trust_remote_code` y sobre la diferencia entre pesos y codigo de carga.
 - **Pruebas de herramientas de escaneo estatico:** validar si scanners de seguridad de modelos (por ejemplo, los integrados en plataformas de model hubs) detectan el `auto_map` malicioso y el modulo Python asociado.
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Naturaleza | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nafnaf1k/gpt2-dolly` | 124 M (GPT-2) | 1024 | MIT | Artefacto de investigacion con payload de carga | HuggingFace, 0 descargas |
-| `openai-community/gpt2` | 124 M | 1024 | MIT | Modelo base original | HuggingFace, ampliamente usado |
-| `gpt2-medium` | 355 M | 1024 | MIT | Modelo base de mayor tamano | HuggingFace |
-| `distilgpt2` | 82 M | 1024 | Apache 2.0 | Version destilada de GPT-2 | HuggingFace |
+| `Nafnaf1k/gpt2-dolly` | 124 M (GPT-2) | 1024 | MIT | Artefacto de investigacion con payload de carga | Hugging Face, 0 descargas |
+| `openai-community/gpt2` | 124 M | 1024 | MIT | Modelo base original | Hugging Face, ampliamente usado |
+| `gpt2-medium` | 355 M | 1024 | MIT | Modelo base de mayor tamano | Hugging Face |
+| `distilgpt2` | 82 M | 1024 | Apache 2.0 | Version destilada de GPT-2 | Hugging Face |
 
 La comparacion relevante no es de rendimiento (los pesos son identicos a GPT-2) sino de riesgo: frente a `openai-community/gpt2`, este repositorio anade codigo de carga ejecutable y metadatos que redirigen la clase del modelo. Cualquier alternativa de la tabla es preferible para uso real.
 
@@ -90,7 +90,7 @@ La comparacion relevante no es de rendimiento (los pesos son identicos a GPT-2) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-dolly
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-dolly
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Documentacion de transformers sobre `trust_remote_code` y `auto_map`: https://huggingface.co/docs/transformers
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios ni demos adicionales asociados al artefacto.

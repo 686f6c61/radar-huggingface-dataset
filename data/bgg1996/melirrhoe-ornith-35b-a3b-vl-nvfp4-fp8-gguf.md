@@ -88,9 +88,9 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bgg1996/Melirrhoe-Ornith-35B-A3B-VL-NVFP4-FP8-GGUF
-- Ornith-1.0-35B en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.0-35B
-- Ornith-1.5-35B-A3B en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Repositorio Hugging Face: https://huggingface.co/bgg1996/Melirrhoe-Ornith-35B-A3B-VL-NVFP4-FP8-GGUF
+- Ornith-1.0-35B en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.0-35B
+- Ornith-1.5-35B-A3B en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Sitio oficial de Ornith AI: https://ornith.ai/
 - Repositorio GitHub de Ornith: https://github.com/ornith-ai/Ornith-1
 - Documentacion de variantes y checkpoints (DeepWiki): https://deepwiki.com/ornith-ai/Ornith-1/2-model-variants-and-checkpoints

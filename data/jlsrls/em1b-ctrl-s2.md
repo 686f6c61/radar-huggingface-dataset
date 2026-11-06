@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jlsrls/em1b-ctrl-s2 | ~1B | no disponible | no disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32k | Apache 2.0 | HuggingFace |
-| Gemma-2-2B-it | 2B | 8k | Gemma license | HuggingFace |
-| TinyLlama-1.1B-Chat | 1.1B | 2k | Apache 2.0 | HuggingFace |
+| jlsrls/em1b-ctrl-s2 | ~1B | no disponible | no disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32k | Apache 2.0 | Hugging Face |
+| Gemma-2-2B-it | 2B | 8k | Gemma license | Hugging Face |
+| TinyLlama-1.1B-Chat | 1.1B | 2k | Apache 2.0 | Hugging Face |
 
 El modelo se sitúa en la gama de modelos pequeños (<2B) orientados a chat. Carece de la documentación y los benchmarks que sí ofrecen alternativas como Qwen2.5 o Gemma, lo que dificulta una comparación objetiva. Su principal diferencia es que es un fine-tune de Llama 3.2, lo que podría aportar ventajas en eficiencia de contexto si se mantiene la ventana original, pero no se confirma.
 

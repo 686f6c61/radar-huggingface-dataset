@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento comparativos entre estos artefactos en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-RM-matched-control-sonnet-1-NEGATED_WITH_MO-1
+- Repositorio Hugging Face: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-RM-matched-control-sonnet-1-NEGATED_WITH_MO-1
 - Adaptador minuendo: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-RM-matched-control-sonnet-1
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Qwen7B_Adapters-1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct

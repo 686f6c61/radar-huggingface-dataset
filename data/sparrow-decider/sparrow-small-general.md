@@ -79,8 +79,8 @@ Datos del proyecto (`bench/RESULTS.md` y `site/facts.json`), ejecuciones locales
 
 | Modelo | Tipo | Parametros | Contexto | MASSIVE dominio | RobotBench | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|---|
-| sparrow-small-general-v1.0 | Encoder + cabeza pointer | ~68M | No disponible | 0.673 | 24/55 | Apache-2.0 (base MIT) | HuggingFace, 47 MB |
-| sparrow-nano-robot | Modelo de decisión de la misma familia | No disponible | No disponible | No disponible | 36/55 | No disponible en la información | HuggingFace, 1,11 MB |
+| sparrow-small-general-v1.0 | Encoder + cabeza pointer | ~68M | No disponible | 0.673 | 24/55 | Apache-2.0 (base MIT) | Hugging Face, 47 MB |
+| sparrow-nano-robot | Modelo de decisión de la misma familia | No disponible | No disponible | No disponible | 36/55 | No disponible en la información | Hugging Face, 1,11 MB |
 | Strands Decider 2B (public) | Modelo de decisión (profesor de la familia) | 2B | No disponible | 0.86 | 40/55 | Apache-2.0 | Referencia pública del proyecto Strands Decider |
 | Strands Decider 4B | Modelo de decisión (profesor de destilación) | 4B | No disponible | No disponible | No disponible | Apache-2.0 | Usado solo como profesor en el entrenamiento |
 
@@ -94,11 +94,11 @@ Datos del proyecto (`bench/RESULTS.md` y `site/facts.json`), ejecuciones locales
 - **No es un mecanismo de seguridad**: el autor advierte explícitamente que nunca debe usarse como única parada de seguridad en un sistema físico. Solo sugiere decisiones.
 - **Sesgos**: no se documenta ninguna evaluación de sesgos en la información disponible; el entrenamiento se limita a filas de `tasksource` marcadas para uso comercial, con las licencias de cada fuente.
 - **Licencia**: Apache-2.0 permite uso comercial, pero los pesos derivan de los encoders Ettin de JHU CLSP bajo MIT, cuyo aviso de copyright y texto completo deben conservarse (`LICENSE-ettin.txt`).
-- **Madurez**: proyecto comunitario no oficial (no es un producto de AWS ni de Strands), con 0 descargas y 0 likes en HuggingFace en el momento de la consulta; sin validación externa.
+- **Madurez**: proyecto comunitario no oficial (no es un producto de AWS ni de Strands), con 0 descargas y 0 likes en Hugging Face en el momento de la consulta; sin validación externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sparrow-decider/sparrow-small-general
+- Hugging Face: https://huggingface.co/sparrow-decider/sparrow-small-general
 - Repositorio del proyecto: https://github.com/sparrow-decider/sparrow-decider
 - Informe de investigación: https://github.com/sparrow-decider/sparrow-decider/blob/main/research/REPORT.md
 - Resultados de benchmarks: https://github.com/sparrow-decider/sparrow-decider/blob/main/bench/RESULTS.md

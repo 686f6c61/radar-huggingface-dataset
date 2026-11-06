@@ -88,7 +88,7 @@ La ventaja de esta configuracion frente al modelo base es la reduccion de VRAM (
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/splickz/qwen3.8-27b-yarn-nvfp4-sm120
+- Pagina de Hugging Face: https://huggingface.co/splickz/qwen3.8-27b-yarn-nvfp4-sm120
 - Repositorio de codigo: https://github.com/splickz/ninfer-yarn-nvfp4
 - Artefacto NVFP4 (pesos): https://huggingface.co/neroued/Qwen3.8-27B-nvfp4-NInfer
 - Motor ninfer (upstream): https://github.com/Neroued/ninfer

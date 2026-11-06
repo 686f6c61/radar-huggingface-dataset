@@ -6,7 +6,7 @@
 
 El interés del artefacto es doble. Por un lado, es un ejemplo reproducible y bien documentado de un DQN con las mejoras estándar de la familia (Double DQN, Dueling, Prioritized Experience Replay, n-step returns y soft target updates), con una tabla de ablaciones parciales entre versiones que resulta útil como material de estudio. Por otro lado, su rendimiento es modesto: la media de 260,3 puntos en 10 episodios de validación con semillas fijas supera el umbral de 200 que el propio autor marca como éxito, pero queda por debajo de las versiones v3 (275,5) y v4 (278,6) de la misma serie.
 
-Conviene subrayar que este repositorio no contiene pesos de un transformer, ni tokenizador, ni capacidades de generación de texto, código o visión. Cualquier evaluación debe hacerse en el marco de un entorno de control con observaciones de baja dimensionalidad. El tamaño del repositorio es de 0,0 GB según HuggingFace, lo que es coherente con una red de dos capas ocultas de 256 unidades.
+Conviene subrayar que este repositorio no contiene pesos de un transformer, ni tokenizador, ni capacidades de generación de texto, código o visión. Cualquier evaluación debe hacerse en el marco de un entorno de control con observaciones de baja dimensionalidad. El tamaño del repositorio es de 0,0 GB según Hugging Face, lo que es coherente con una red de dos capas ocultas de 256 unidades.
 
 ## Especificaciones tecnicas
 
@@ -73,12 +73,12 @@ No se han publicado resultados de benchmarks estándar de LLM (MMLU, HumanEval, 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lucasbrain-v5-lunarlander (este) | DQN Dueling + Double + PER + n-step | No disponible (MLP 8→256→256→cabezas) | No aplica | 260,3 media en 10 episodios (semillas 7000–7009) | No disponible | HuggingFace |
+| lucasbrain-v5-lunarlander (este) | DQN Dueling + Double + PER + n-step | No disponible (MLP 8→256→256→cabezas) | No aplica | 260,3 media en 10 episodios (semillas 7000–7009) | No disponible | Hugging Face |
 | lucasbrain-v4-lunarlander (misma serie) | DQN Dueling + Double + PER + n-step | No disponible | No aplica | 278,6 media en 10 episodios | No disponible | Referenciado en la model card, sin URL directa |
 | lucasbrain-v3-lunarlander (misma serie) | DQN Dueling + Double + PER + n-step | No disponible | No aplica | 275,5 media en 10 episodios | No disponible | Referenciado en la model card, sin URL directa |
 | Implementaciones DQN de referencia para LunarLander (por ejemplo, las de Stable-Baselines3 o CleanRL) | DQN estándar | No disponible | No aplica | No disponible en la información proporcionada | MIT / Apache-2.0 en sus repositorios originales | Repositorios públicos de código |
 
-No se dispone de datos comparativos con otros checkpoints publicados en HuggingFace para `LunarLander-v3` en la información proporcionada.
+No se dispone de datos comparativos con otros checkpoints publicados en Hugging Face para `LunarLander-v3` en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No se dispone de datos comparativos con otros checkpoints publicados en HuggingF
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v5-lunarlander
+- Repositorio en Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v5-lunarlander
 - CONNECT AI LAB (GitHub): https://github.com/wonseokjung/connect-tycoon
 - AI CITY BUILDERS, sección de robótica y RL: https://www.aicitybuilders.com/robot
 - Entorno Gymnasium `LunarLander-v3` (documentación oficial): no disponible en la información proporcionada

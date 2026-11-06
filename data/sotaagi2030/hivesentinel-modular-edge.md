@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HiveSentinel Modular Edge es un pipeline acustico de dos etapas orientado a la deteccion de alertas en colmenas, publicado por el usuario SOTAagi2030 en HuggingFace. El sistema se compone de un detector que identifica ventanas candidatas de estrés en la colmena y un clasificador que asigna una etiqueta operativa de alerta. Esta pensado para ejecutarse de forma totalmente offline en pasarelas de apiarios cooperativos, y se distribuye como artefactos en formato TFLite bajo licencia Apache 2.0.
+HiveSentinel Modular Edge es un pipeline acustico de dos etapas orientado a la deteccion de alertas en colmenas, publicado por el usuario SOTAagi2030 en Hugging Face. El sistema se compone de un detector que identifica ventanas candidatas de estrés en la colmena y un clasificador que asigna una etiqueta operativa de alerta. Esta pensado para ejecutarse de forma totalmente offline en pasarelas de apiarios cooperativos, y se distribuye como artefactos en formato TFLite bajo licencia Apache 2.0.
 
 El modelo no es un modelo de lenguaje ni un sistema generativo: se registra con el pipeline `audio-classification` y la libreria `tflite`, lo que lo situa en la categoria de inferencia ligera de borde para senales acusticas. El autor define un contrato de caracteristicas comun denominado `hive-audio-v3`, que regula el intercambio de datos entre los componentes de audio del sistema y facilita la reproduccion de auditorias.
 
@@ -77,4 +77,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/HiveSentinel-Modular-Edge
+- Hugging Face: https://huggingface.co/SOTAagi2030/HiveSentinel-Modular-Edge

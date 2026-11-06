@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para comparar entre estos adaptadores ni c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-geo25-nongeo75-direct-step100
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-geo25-nongeo75-direct-step100
 - Adaptador relacionado `vlm-mix-broader-stem-expert-step100`: https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100
 - Adaptador relacionado `vlm-mix-stem60-geometry40-direct-step100`: https://huggingface.co/Saraswathy/vlm-mix-stem60-geometry40-direct-step100
 - Listado de benchmarks de LLM (referencia general, no del modelo): https://benchlm.ai/

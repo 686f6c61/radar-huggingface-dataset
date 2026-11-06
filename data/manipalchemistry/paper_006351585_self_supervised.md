@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Manipalchemistry/paper_006351585_self_supervised` no contiene un modelo de inteligencia artificial, sino un documento académico en formato HTML titulado `paper_006351585_self_supervised.md`, cuyo tema es el aprendizaje auto-supervisado (*self-supervised learning*). El autor, identificado como Manipalchemistry, ha publicado este artefacto en HuggingFace Hub bajo licencia CC-BY-4.0, aunque la plataforma está orientada principalmente a modelos y datasets, este tipo de repositorios también aloja documentos de investigación.
+El repositorio `Manipalchemistry/paper_006351585_self_supervised` no contiene un modelo de inteligencia artificial, sino un documento académico en formato HTML titulado `paper_006351585_self_supervised.md`, cuyo tema es el aprendizaje auto-supervisado (*self-supervised learning*). El autor, identificado como Manipalchemistry, ha publicado este artefacto en Hugging Face Hub bajo licencia CC-BY-4.0, aunque la plataforma está orientada principalmente a modelos y datasets, este tipo de repositorios también aloja documentos de investigación.
 
 El contenido del documento sigue una estructura académica estándar: introducción, antecedentes, enfoque, evaluación y conclusión, con un estilo de redacción orientado a lo empírico y citación en formato APA numérico. No se trata de un modelo entrenado con pesos, arquitectura ni capacidad de inferencia, por lo que no puede desplegarse como un LLM ni usarse para generación de texto. Su relevancia es documental: puede servir como referencia bibliográfica o material de estudio sobre técnicas de aprendizaje auto-supervisado, especialmente en el ámbito de la química, dado el contexto del autor y la plataforma ChemRxiv.
 
@@ -40,7 +40,7 @@ No existe arquitectura ni proceso de entrenamiento asociado a este repositorio. 
 - **Material educativo**: profesores de machine learning o quimica computacional pueden asignar la lectura de este paper a estudiantes para ilustrar conceptos de self-supervised learning en dominios cientificos.
 - **Comparacion de estilos de redaccion**: el documento usa un estilo "empirical-focused" y "short-punchy", lo que puede servir como plantilla para escribir papers academicos concisos.
 - **Datos para meta-analisis**: si el paper incluye resultados empiricos, podria usarse en un meta-analisis sobre rendimiento de metodos auto-supervisados en quimica.
-- **Archivo de referencia**: como repositorio en HuggingFace, puede servir para almacenar y compartir documentos academicos de forma centralizada, aunque no sea su funcion principal.
+- **Archivo de referencia**: como repositorio en Hugging Face, puede servir para almacenar y compartir documentos academicos de forma centralizada, aunque no sea su funcion principal.
 
 ## Benchmarks y rendimiento
 
@@ -52,7 +52,7 @@ No aplica. No se requiere GPU, VRAM ni infraestructura de inferencia. El unico r
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables porque este repositorio no contiene un modelo de IA. Las alternativas en la misma categoria serian otros papers o repositorios de documentos en HuggingFace, como los de ChemRxiv o arXiv, pero no son directamente comparables en terminos de parametros o rendimiento.
+No disponible. No existen modelos comparables porque este repositorio no contiene un modelo de IA. Las alternativas en la misma categoria serian otros papers o repositorios de documentos en Hugging Face, como los de ChemRxiv o arXiv, pero no son directamente comparables en terminos de parametros o rendimiento.
 
 ## Limitaciones y advertencias
 
@@ -65,6 +65,6 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Manipalchemistry/paper_006351585_self_supervised](https://huggingface.co/Manipalchemistry/paper_006351585_self_supervised)
+- Repositorio en Hugging Face: [Manipalchemistry/paper_006351585_self_supervised](https://huggingface.co/Manipalchemistry/paper_006351585_self_supervised)
 - ChemRxiv (plataforma de preprints de quimica): https://chemrxiv.org/
 - Repositorio GROVER (implementacion de self-supervised graph transformer en quimica, referencia relacionada): https://github.com/tencent-ailab/grover

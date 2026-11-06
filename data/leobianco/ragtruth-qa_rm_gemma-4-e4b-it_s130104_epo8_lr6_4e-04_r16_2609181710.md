@@ -106,6 +106,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leobianco/ragtruth-qa_RM_gemma-4-E4B-it_S130104_epo8_lr6_4e-04_r16_2609181710
+- Modelo en Hugging Face: https://huggingface.co/leobianco/ragtruth-qa_RM_gemma-4-E4B-it_S130104_epo8_lr6_4e-04_r16_2609181710
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante. Las busquedas devolvieron unicamente paginas de quizzes diarios de noticias sin relacion con el modelo. No hay papers, blogs, repositorios ni demos adicionales disponibles.

@@ -27,7 +27,7 @@ La arquitectura es un decoder transformer denso al estilo Llama con 24 capas, di
 
 El preentrenamiento utiliza conversaciones 1PP reescritas a partir de documentos, con la perdida aplicada solo a los turnos del asistente. Se entrenaron los primeros 53.709 pasos del flujo alineado (112,64B posiciones de token), con lote global de 512 x 4.096 tokens y enmascaramiento de atencion entre documentos. El optimizador combina Muon (escalado por forma, LR matricial 0,005) con Adam para el resto de parametros (LR 1,29e-3 para embeddings y capa de salida, 3e-3 para normas), warmup de 3.378 pasos, decaimiento lineal en los ultimos 5.370 pasos hasta 1/100, weight decay 0,1, init std 0,0078 y bf16. La perdida de validacion final es de 1,374 por token en texto de asistente, 6,924 en texto de usuario y 3,078 en texto de documento.
 
-El SFT se realizo durante una epoca sobre una mezcla de 400.000 conversaciones: 98.500 multiturno con track citado de constitucion (`jkminder/model-raising-pb-100k-3c-mt-sft`), 271.600 de `dlab-spp/sp-sft-normal-300k` (sin duplicados del primer conjunto) y una muestra de 30.000 de `dlab-spp/sp-sft-safety-180k`. Se uso el mismo stack (Megatron, Muon, ChatML sin turno de sistema, perdida solo en turnos del asistente), con LR matricial 0,001, semilla 28, lote global de 128 x 4.096 y decaimiento lineal hasta 1/10 tras un warmup del 3%. La perdida SFT en validacion (1.998 conversaciones reservadas) es de 1,783, y los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0001.
+El SFT se realizo durante una epoca sobre una mezcla de 400.000 conversaciones: 98.500 multiturno con track citado de constitucion (`jkminder/model-raising-pb-100k-3c-mt-sft`), 271.600 de `dlab-spp/sp-sft-normal-300k` (sin duplicados del primer conjunto) y una muestra de 30.000 de `dlab-spp/sp-sft-safety-180k`. Se uso el mismo stack (Megatron, Muon, ChatML sin turno de sistema, perdida solo en turnos del asistente), con LR matricial 0,001, semilla 28, lote global de 128 x 4.096 y decaimiento lineal hasta 1/10 tras un warmup del 3%. La perdida SFT en validacion (1.998 conversaciones reservadas) es de 1,783, y los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0001.
 
 ## Capacidades
 
@@ -90,13 +90,13 @@ La comparacion con modelos de proposito general debe tomarse con cautela: el 1pp
 - Sin turno de sistema: el formato ChatML excluye el rol system, lo que limita el control del comportamiento mediante instrucciones de sistema.
 - Riesgo de alucinacion: no se reportan evaluaciones de factualidad ni de tasas de alucinacion.
 - Sesgos: no se documenta analisis de sesgos; la mezcla de SFT incluye conjuntos de model-raising y seguridad, pero sin metricas publicadas.
-- Cero descargas y cero likes en HuggingFace en el momento de la consulta, lo que implica ausencia de validacion externa.
+- Cero descargas y cero likes en Hugging Face en el momento de la consulta, lo que implica ausencia de validacion externa.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de benchmarks y de garantias de calidad desaconseja su uso en produccion sin evaluacion propia.
 - Sin soporte documentado de tool calling ni de agentes, lo que restringe su integracion en pipelines automatizados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-sft
 - Coleccion 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT: https://wandb.ai/raghav_singhal/1pp-sft

@@ -85,6 +85,6 @@ La variante HORROR se diferencia de su modelo base unicamente por el dataset de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jaedwards1986/L3.1-MOE-6X8B-Dark-Reasoning-Dantes-Peak-HORROR-R1-Uncensored-36B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Jaedwards1986/L3.1-MOE-6X8B-Dark-Reasoning-Dantes-Peak-HORROR-R1-Uncensored-36B-GGUF
 - Modelo base: https://huggingface.co/DavidAU/L3.1-MOE-6X8B-Dark-Reasoning-Dantes-Peak-Hermes-R1-Uncensored-36B
 - Modelo de razonamiento original (DeepHermes): https://huggingface.co/NousResearch/DeepHermes-3-Llama-3-8B-Preview

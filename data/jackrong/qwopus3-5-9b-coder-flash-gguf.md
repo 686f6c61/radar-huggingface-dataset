@@ -100,8 +100,8 @@ No se dispone de datos de benchmarks de terceros (por ejemplo Qwen2.5-Coder o si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jackrong/Qwopus3-5-9B-Coder-Flash-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-9B
+- Repositorio Hugging Face: https://huggingface.co/Jackrong/Qwopus3-5-9B-Coder-Flash-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-9B
 - Distribución de Unsloth del modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Modelo relacionado del autor (Qwopus3.8-27B-Flash-V2): https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Unsloth (framework de ajuste): https://unsloth.ai/

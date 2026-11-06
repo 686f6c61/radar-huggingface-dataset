@@ -74,7 +74,7 @@ No hay datos de rendimiento comparativo disponibles. La principal diferencia ent
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aarushraj111/RustQwen-3.5-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/aarushraj111/RustQwen-3.5-2B-GGUF
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Conversión GGUF alternativa: https://huggingface.co/TheStageAI/Qwen3.5-2B-GGUF
 - Unsloth (herramienta de conversión): https://github.com/unslothai/unsloth

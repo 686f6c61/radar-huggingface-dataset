@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kcat-km-v7 es un paquete de modelos de regresion supervisada orientado a la prediccion de parametros enzimaticos: la constante catalitica kcat y la constante de Michaelis Km, ambas en escala logaritmica (log10). Lo desarrolla el usuario VedaVachan y se publica en HuggingFace como un artefacto de inferencia offline empaquetado con joblib, no como un modelo de lenguaje ni una red neuronal profunda. La entrada son secuencias proteicas exactas y cadenas SMILES de sustrato; la salida son dos valores numericos continuos por fila.
+kcat-km-v7 es un paquete de modelos de regresion supervisada orientado a la prediccion de parametros enzimaticos: la constante catalitica kcat y la constante de Michaelis Km, ambas en escala logaritmica (log10). Lo desarrolla el usuario VedaVachan y se publica en Hugging Face como un artefacto de inferencia offline empaquetado con joblib, no como un modelo de lenguaje ni una red neuronal profunda. La entrada son secuencias proteicas exactas y cadenas SMILES de sustrato; la salida son dos valores numericos continuos por fila.
 
 El sistema combina dos componentes independientes. Para kcat se reutiliza sin cambios un componente ExtraTrees verificado de la version local V6 (heredado a su vez de V4), con su propio imputador, vectorizador, SVD y esquema. Para Km se emplea un regresor CatBoost sobre 2.212 caracteristicas: 2.148 de composicion de secuencia, longitud, descriptores RDKit, indicadores de valores faltantes y huellas Morgan, mas 64 componentes TF-IDF/SVD de 3-meros de caracteres y tres estadisticas derivadas de SMILES exactos (media de log10_km del sustrato con shrinkage, log1p del recuento de soporte e indicador de sustrato visto).
 
@@ -72,7 +72,7 @@ La ganancia media de SCC es de +0,000649, con intervalo de confianza bootstrap d
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kcat-km-v7 | ExtraTrees + CatBoost tabular | no disponible | no aplica | no disponible | HuggingFace (0 descargas, 0 likes) |
+| kcat-km-v7 | ExtraTrees + CatBoost tabular | no disponible | no aplica | no disponible | Hugging Face (0 descargas, 0 likes) |
 | V6 local (control interno) | ExtraTrees + regresion tabular | no disponible | no aplica | no disponible | Referencia interna del autor, no publicada como modelo independiente |
 | Modelos neuronales de prediccion de kcat/Km (p. ej. basados en protein language models) | Transformers sobre secuencia | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
@@ -95,5 +95,5 @@ No se dispone de datos verificables de benchmarks de terceros para establecer un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VedaVachan/kcat-km-v7
+- Modelo en Hugging Face: https://huggingface.co/VedaVachan/kcat-km-v7
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos.

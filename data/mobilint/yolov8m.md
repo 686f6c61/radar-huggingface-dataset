@@ -80,8 +80,8 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mobilint/YOLOv8m (esta ficha) | no disponible (artefacto 33,6 MB) | no aplica | map50_95 0,49931; map50 0,66921 en COCO | AGPL-3.0 | HuggingFace, formato MXQ |
-| Ultralytics/YOLOv8m (modelo base) | no disponible en la informacion | no aplica | no disponible en la informacion | AGPL-3.0 | HuggingFace / Ultralytics |
+| mobilint/YOLOv8m (esta ficha) | no disponible (artefacto 33,6 MB) | no aplica | map50_95 0,49931; map50 0,66921 en COCO | AGPL-3.0 | Hugging Face, formato MXQ |
+| Ultralytics/YOLOv8m (modelo base) | no disponible en la informacion | no aplica | no disponible en la informacion | AGPL-3.0 | Hugging Face / Ultralytics |
 | Otros detectores de la familia YOLO | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobilint/YOLOv8m
+- Modelo en Hugging Face: https://huggingface.co/mobilint/YOLOv8m
 - Repositorio de Ultralytics: https://github.com/ultralytics/ultralytics
 - Carpeta arxiv del modelo en mobilint: https://github.com/mobilint/mblt-model-arxiv/tree/main/models/object_detection/YOLOv8m
 - Modelo base: https://huggingface.co/Ultralytics/YOLOv8

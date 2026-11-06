@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mohammediwdwdd/Qwen2.5-Coder-1.5B-Instruct-Q2_K-GGUF | 1,54 B | No disponible | GGUF Q2_K | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct (original) | 1,54 B | No disponible en la informacion | safetensors | Apache 2.0 | HuggingFace, modelo oficial |
+| mohammediwdwdd/Qwen2.5-Coder-1.5B-Instruct-Q2_K-GGUF | 1,54 B | No disponible | GGUF Q2_K | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct (original) | 1,54 B | No disponible en la informacion | safetensors | Apache 2.0 | Hugging Face, modelo oficial |
 | Otras cuantizaciones GGUF del mismo modelo base | 1,54 B | No disponible | GGUF (Q4_K_M, Q5_K_M, Q8_0, etc.) | Apache 2.0 | Multiples repos comunitarios |
 
 La comparativa con alternativas de otros desarrolladores (por ejemplo, modelos de codigo de tamano similar como StarCoder2-3B o CodeLlama-7B) no esta disponible en la informacion proporcionada. La diferencia principal frente al modelo original es el formato y la precision: Q2_K sacrifica calidad por tamano, mientras que el original en safetensors ofrece la maxima fidelidad.
@@ -86,7 +86,7 @@ La comparativa con alternativas de otros desarrolladores (por ejemplo, modelos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mohammediwdwdd/Qwen2.5-Coder-1.5B-Instruct-Q2_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mohammediwdwdd/Qwen2.5-Coder-1.5B-Instruct-Q2_K-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct/blob/main/LICENSE
 - Herramienta de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `erosallanhacinas-dlsu/bert-research-baseline` es un submódulo de transformadores de tipo encoder-only, publicado en HuggingFace por el usuario `erosallanhacinas-dlsu`. Está diseñado para la tarea de enmascaramiento de tokens (fill-mask), lo que indica que es un modelo de lenguaje preentrenado para representaciones contextuales de texto, similar a BERT o RoBERTa. El repositorio contiene 83.504.416 parámetros en formato safetensors, con un tamaño de repositorio de 0,3 GB.
+El modelo `erosallanhacinas-dlsu/bert-research-baseline` es un submódulo de transformadores de tipo encoder-only, publicado en Hugging Face por el usuario `erosallanhacinas-dlsu`. Está diseñado para la tarea de enmascaramiento de tokens (fill-mask), lo que indica que es un modelo de lenguaje preentrenado para representaciones contextuales de texto, similar a BERT o RoBERTa. El repositorio contiene 83.504.416 parámetros en formato safetensors, con un tamaño de repositorio de 0,3 GB.
 
 La model card es una plantilla autogenerada sin contenido real: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, arquitectura detallada, evaluación) están marcados como "[More Information Needed]". Esto significa que la información disponible es extremadamente limitada y la ficha debe reflejar esa falta de datos de forma honesta. A pesar de la ausencia de documentación, el modelo parece ser un baseline de investigación orientado a tareas de comprensión del lenguaje, probablemente derivado de arquitecturas RoBERTa dado el tag `roberta` presente en la metadata.
 

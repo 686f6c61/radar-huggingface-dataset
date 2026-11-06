@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Raco-flexglue es un modelo de detección de puntos clave (*keypoint detection*) y correspondencia de características (*feature matching*) publicado en HuggingFace por el usuario `vismatch` bajo el identificador `vismatch/raco-flexglue`. Está diseñado para la tarea de emparejamiento de imágenes, es decir, encontrar correspondencias geométricamente consistentes entre dos imágenes de la misma escena tomadas desde puntos de vista, condiciones de iluminación o sensores distintos. Se integra en la librería `vismatch`, un ecosistema orientado a la evaluación y despliegue de modelos de *matching* visual.
+Raco-flexglue es un modelo de detección de puntos clave (*keypoint detection*) y correspondencia de características (*feature matching*) publicado en Hugging Face por el usuario `vismatch` bajo el identificador `vismatch/raco-flexglue`. Está diseñado para la tarea de emparejamiento de imágenes, es decir, encontrar correspondencias geométricamente consistentes entre dos imágenes de la misma escena tomadas desde puntos de vista, condiciones de iluminación o sensores distintos. Se integra en la librería `vismatch`, un ecosistema orientado a la evaluación y despliegue de modelos de *matching* visual.
 
 El nombre del modelo sugiere una variante de FlexGlue (el framework de matching denso del grupo CVG, autor del repositorio referenciado en la licencia) adaptada o afinada sobre el conjunto de datos RACO, aunque la model card no aporta detalles sobre el proceso de entrenamiento. La licencia combina MIT con la licencia de DINOv3, lo que implica que el modelo incorpora componentes derivados de DINOv3 y que su uso comercial queda sujeto a las condiciones de dicha licencia.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vismatch/raco-flexglue | Matching denso / keypoint detection | no disponible | no aplica | MIT + DINOv3 | HuggingFace (0 descargas) |
+| vismatch/raco-flexglue | Matching denso / keypoint detection | no disponible | no aplica | MIT + DINOv3 | Hugging Face (0 descargas) |
 | SuperGlue (Magic Leap) | Graph neural network para matching | ~12 M | no aplica | MIT (uso de investigación y comercial con condiciones) | GitHub, pesos públicos |
-| LightGlue (CVG) | Matching ligero con atención | ~1-5 M según variante | no aplica | Apache 2.0 (código) / licencia de pesos variable | GitHub, HuggingFace |
+| LightGlue (CVG) | Matching ligero con atención | ~1-5 M según variante | no aplica | Apache 2.0 (código) / licencia de pesos variable | GitHub, Hugging Face |
 | LoFTR (ZJU) | Matching denso con transformer | ~11 M | no aplica | Apache 2.0 | GitHub, pesos públicos |
 
 La comparación es aproximada: no se dispone de datos de rendimiento del modelo evaluado, por lo que la tabla solo contrasta categoría, licencia y disponibilidad. Los tres alternativos son referencias consolidadas en la literatura de matching; raco-flexglue no cuenta con métricas públicas que permitan situarlo frente a ellos.
@@ -80,7 +80,7 @@ La comparación es aproximada: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vismatch/raco-flexglue
+- Modelo en Hugging Face: https://huggingface.co/vismatch/raco-flexglue
 - Repositorio de la librería vismatch: https://github.com/gmberton/vismatch
 - Repositorio de FlexGlue (referencia de licencia): https://github.com/cvg/FlexGlue
 - Enlace de licencia indicado por el autor: https://github.com/cvg/FlexGlue#license

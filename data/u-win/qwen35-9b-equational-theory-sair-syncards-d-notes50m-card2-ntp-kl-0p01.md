@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen35-9b-equational-theory-sair-syncards-d-notes50m-card2-ntp-kl-0p01` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text orientado a la generacion de texto conversacional, con un enfasis declarado en "teoria ecuacional" (equational-theory) y verificación sintetica mediante tarjetas (synthetic-verification-cards). El nombre del repositorio sugiere un entrenamiento con next-token prediction (NTP) combinado con regularizacion KL (kl-regularization, con coeficiente 0,01) sobre un conjunto de notas sinteticas de 50 millones de tokens y un segundo conjunto de tarjetas de verificacion.
+El modelo `qwen35-9b-equational-theory-sair-syncards-d-notes50m-card2-ntp-kl-0p01` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text orientado a la generacion de texto conversacional, con un enfasis declarado en "teoria ecuacional" (equational-theory) y verificación sintetica mediante tarjetas (synthetic-verification-cards). El nombre del repositorio sugiere un entrenamiento con next-token prediction (NTP) combinado con regularizacion KL (kl-regularization, con coeficiente 0,01) sobre un conjunto de notas sinteticas de 50 millones de tokens y un segundo conjunto de tarjetas de verificacion.
 
 Con 9.653.104.368 parametros totales (aproximadamente 9,65 mil millones), el modelo se situa en la categoria de modelos de tamano medio-grande, adecuado para despliegues en una sola GPU de gama alta o en configuraciones multi-GPU con cuantizacion. La arquitectura subyacente corresponde a la familia Qwen 3.5, un transformer denso (no MoE, segun los datos disponibles) con capacidades multimodales de entrada imagen-texto.
 
@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos, lo que limita la reproducibilidad inmediata.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos, lo que limita la reproducibilidad inmediata.
 - Ausencia total de documentacion tecnica: no hay model card detallada, ni composicion del dataset, ni hiperparametros de entrenamiento publicados.
 - Riesgo de sobreajuste al dominio de teoria ecuacional y a las tarjetas sinteticas de verificacion, con posible degradacion en tareas generales pese a la regularizacion KL.
 - Riesgo de alucinacion en razonamiento simbolico: sin benchmarks publicados no puede descartarse que el modelo genere pasos de demostracion incorrectos.
@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-d-notes50m-card2-ntp-kl-0p01
+- Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-d-notes50m-card2-ntp-kl-0p01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

@@ -61,16 +61,16 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - VRAM estimada: no disponible, pero al ser una cuantización INT4 de un modelo de 27B, el tamaño de los pesos es de aproximadamente 7,6 GB (según safetensors), lo que sugiere que puede caber en la memoria unificada de un Mac con al menos 16 GB.
 - GPU recomendadas: Apple Silicon (M5 Pro o superior) para aprovechar la optimización MLX. No se menciona compatibilidad con GPUs NVIDIA o AMD.
 - Compatibilidad con consumer GPU: no disponible; el modelo está orientado exclusivamente a Apple Silicon.
-- Opciones de despliegue: mediante la herramienta `mtplx` (comandos `mtplx pull` y `mtplx start chat`), que lo detecta automáticamente. También es compatible con la librería `transformers` de HuggingFace.
+- Opciones de despliegue: mediante la herramienta `mtplx` (comandos `mtplx pull` y `mtplx start chat`), que lo detecta automáticamente. También es compatible con la librería `transformers` de Hugging Face.
 - Latencia y throughput: no se proporcionan datos específicos, solo el multiplicador de 2,59× frente a la línea base autoregresiva.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyankiwi-Qwen3.8-27B-AWQ-INT4-MTPLX | 27B (base) | No disponible | AWQ INT4 | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B (original) | 27B | No disponible | No cuantizado | Apache 2.0 | HuggingFace, GitHub |
-| cyankiwi/Qwen3.8-27B-AWQ-INT4 | 27B | No disponible | AWQ INT4 | Apache 2.0 | HuggingFace |
+| cyankiwi-Qwen3.8-27B-AWQ-INT4-MTPLX | 27B (base) | No disponible | AWQ INT4 | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B (original) | 27B | No disponible | No cuantizado | Apache 2.0 | Hugging Face, GitHub |
+| cyankiwi/Qwen3.8-27B-AWQ-INT4 | 27B | No disponible | AWQ INT4 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de datos de otros modelos multimodales de tamaño similar en la información proporcionada. La principal diferencia entre las tres versiones es la capa MTPLX y la cuantización, siendo la versión MTPLX la única optimizada para MLX.
 
@@ -85,7 +85,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoshuaCalhoon/cyankiwi-Qwen3.8-27B-AWQ-INT4-MTPLX
+- Modelo en Hugging Face: https://huggingface.co/JoshuaCalhoon/cyankiwi-Qwen3.8-27B-AWQ-INT4-MTPLX
 - Modelo base cuantizado: https://huggingface.co/cyankiwi/Qwen3.8-27B-AWQ-INT4
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

@@ -73,7 +73,7 @@ No se dispone en la información proporcionada de especificaciones verificadas d
 
 | Modelo | Categoría | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (LoRA PI0.5 `place_dual_shoes`) | Ajuste LoRA de un VLA sobre una única tarea | Colocación bimanual de un par de zapatos | No disponible | Pública en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| Este modelo (LoRA PI0.5 `place_dual_shoes`) | Ajuste LoRA de un VLA sobre una única tarea | Colocación bimanual de un par de zapatos | No disponible | Pública en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | PI0.5 base (openpi) | VLA generalista de propósito amplio | Múltiples tareas de manipulación | No disponible en la información proporcionada | Público a través del proyecto openpi |
 | Otras variantes LoRA de PI0.5 para `place_dual_shoes` | Ajustes de un solo experto sobre la misma tarea | Colocación bimanual de un par de zapatos | No disponible | No verificado en la información proporcionada |
 | Modelos VLA abiertos de otros linajes (por ejemplo, OpenVLA o GR00T) | VLA generalistas | Manipulación diversa | No disponible | No verificado en la información proporcionada |
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de especificaciones verificadas d
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Shiki42/pi05-place-dual-shoes-uniform50-arm-active-mask-lora-10k-e245
+- Página del modelo en Hugging Face: https://huggingface.co/Shiki42/pi05-place-dual-shoes-uniform50-arm-active-mask-lora-10k-e245
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-place-dual-shoes-uniform50-20260917 (commit `6339e0b84491db2fde6e55089bcc9312abb48798`)
 - Proyecto openpi (librería declarada en el repositorio): https://github.com/Physical-Intelligence/openpi
 - Las búsquedas web realizadas no devolvieron resultados relevantes: únicamente aparecieron páginas de ayuda de Google sin relación con el modelo, por lo que no se dispone de papers, blogs ni demos adicionales que enlazar.

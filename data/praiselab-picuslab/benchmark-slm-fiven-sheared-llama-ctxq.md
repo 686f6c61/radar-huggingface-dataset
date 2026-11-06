@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: sirve como ejemplo de 
 | Longitud de contexto | No disponible en la informacion proporcionada |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada; al ser pesos PEFT, la cuantizacion depende del proceso de fusion con el modelo base y del runtime empleado (por ejemplo, 8-bit o 4-bit mediante bitsandbytes) |
 | Idiomas soportados | Italiano (`it`), unico idioma etiquetado |
-| Licencia | No disponible; el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace |
+| Licencia | No disponible; el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | `safetensors` con configuracion PEFT/LoRA (`peft`, `lora`); requiere el modelo base para su uso |
 
 ## Arquitectura y entrenamiento
@@ -30,7 +30,7 @@ No se dispone de datos sobre el volumen de tokens de entrenamiento, la composici
 ## Capacidades
 
 - Generacion de texto autoregresiva en italiano, condicionada por el ajuste LoRA sobre el modelo base.
-- Instrucciones: la etiqueta `it` en HuggingFace puede referirse tanto al idioma italiano como a "instruction tuned"; el repositorio no desambigua el uso.
+- Instrucciones: la etiqueta `it` en Hugging Face puede referirse tanto al idioma italiano como a "instruction tuned"; el repositorio no desambigua el uso.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso explicito.
 - No se documenta capacidad de vision, audio ni multimodalidad.
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `praiselab-picuslab/benchmark-slm-fiven-sheared-llama-ctxq` | ~1.3B (base) + adaptador LoRA | No disponible | No disponible | No disponible | Gated en HuggingFace; repo de 0.0 GB |
-| `princeton-nlp/Sheared-LLaMA-1.3B` (modelo base) | ~1.3B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Publico en HuggingFace |
-| Adaptadores LoRA genericos sobre modelos de ~1B (familia TinyLlama, Qwen de ~1.5B) | 1.1B-1.5B | No disponible en esta ficha | No disponible en esta ficha | Variable segun modelo base | Publicos en HuggingFace |
+| `praiselab-picuslab/benchmark-slm-fiven-sheared-llama-ctxq` | ~1.3B (base) + adaptador LoRA | No disponible | No disponible | No disponible | Gated en Hugging Face; repo de 0.0 GB |
+| `princeton-nlp/Sheared-LLaMA-1.3B` (modelo base) | ~1.3B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Publico en Hugging Face |
+| Adaptadores LoRA genericos sobre modelos de ~1B (familia TinyLlama, Qwen de ~1.5B) | 1.1B-1.5B | No disponible en esta ficha | No disponible en esta ficha | Variable segun modelo base | Publicos en Hugging Face |
 
 La comparacion cuantitativa no es posible con la informacion disponible: no hay resultados de evaluacion del adaptador ni datos verificados de los modelos alternativos en el material consultado.
 
@@ -84,6 +84,6 @@ La comparacion cuantitativa no es posible con la informacion disponible: no hay 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-sheared-llama-ctxq
+- Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-sheared-llama-ctxq
 - Modelo base: https://huggingface.co/princeton-nlp/Sheared-LLaMA-1.3B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

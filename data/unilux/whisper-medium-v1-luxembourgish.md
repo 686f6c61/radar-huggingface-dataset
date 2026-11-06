@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unilux/whisper-medium-v1-luxembourgish | ~764 M | lb | ventanas de 30 s (heredado de Whisper) | openmdw-1.1 | HuggingFace |
-| openai/whisper-medium | ~764 M | multilingue (99 idiomas) | ventanas de 30 s | MIT (modelo base) | HuggingFace, OpenAI |
-| openai/whisper-small | ~244 M | multilingue | ventanas de 30 s | MIT | HuggingFace, OpenAI |
-| unilux/whisper-small-v1-luxembourgish (familia LuxASR) | no disponible | lb | ventanas de 30 s | openmdw-1.1 | HuggingFace (segun model card) |
+| unilux/whisper-medium-v1-luxembourgish | ~764 M | lb | ventanas de 30 s (heredado de Whisper) | openmdw-1.1 | Hugging Face |
+| openai/whisper-medium | ~764 M | multilingue (99 idiomas) | ventanas de 30 s | MIT (modelo base) | Hugging Face, OpenAI |
+| openai/whisper-small | ~244 M | multilingue | ventanas de 30 s | MIT | Hugging Face, OpenAI |
+| unilux/whisper-small-v1-luxembourgish (familia LuxASR) | no disponible | lb | ventanas de 30 s | openmdw-1.1 | Hugging Face (segun model card) |
 
 El modelo se diferencia de `openai/whisper-medium` por su especializacion en luxemburgues, a costa de perder cobertura multilingue general. Frente a las variantes menores de la familia LuxASR, ofrece mayor capacidad a cambio de mas requisitos de memoria.
 
@@ -85,7 +85,7 @@ El modelo se diferencia de `openai/whisper-medium` por su especializacion en lux
 
 ## Enlaces
 
-- [HuggingFace: unilux/whisper-medium-v1-luxembourgish](https://huggingface.co/unilux/whisper-medium-v1-luxembourgish)
+- [Hugging Face: unilux/whisper-medium-v1-luxembourgish](https://huggingface.co/unilux/whisper-medium-v1-luxembourgish)
 - [Proyecto LuxASR (Universidad de Luxemburgo)](https://luxasr.uni.lu/)
 - [Open Model, Data & Weights (openmdw)](https://www.openmdw.org)
 - [Modelo base: openai/whisper-medium](https://huggingface.co/openai/whisper-medium)

@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Arup330/Neck_open_noCoT_MedGemma-4B_lora
+- Repositorio en Hugging Face: https://huggingface.co/Arup330/Neck_open_noCoT_MedGemma-4B_lora
 - Modelo base: https://huggingface.co/unsloth/medgemma-4b-it-unsloth-bnb-4bit
 - Unsloth (repositorio, citado en la model card): https://github.com/unslothai/unsloth
 - Paper, blog o demo adicionales: no disponible en la informacion proporcionada.

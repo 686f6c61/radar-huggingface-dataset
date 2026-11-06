@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/BiRefNet
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/BiRefNet
 - Modelo original BiRefNet: https://huggingface.co/ZhengPeng7/BiRefNet
 - Modelo Lucida: https://huggingface.co/egeorcun/lucida

@@ -6,7 +6,7 @@ AresMath1.0-IT (AresMath1.0-Iterative Tiny) es un modelo de lenguaje de 11.008 p
 
 Su relevancia no reside en el rendimiento absoluto, sino en la relacion entre tamano y capacidad: con 11.008 parametros afirma alcanzar una precision competitiva frente a modelos mas de 10.000 veces mayores, y supera a varios SLM de 135-150M de parametros en la prueba arithmark 3.0 adaptada a su formato, generando respuestas exactas en lugar de aproximaciones. El modelo fue entrenado con 13B tokens de preentrenamiento y 13B tokens de RL (26B en total, equivalentes a 2.361.918 tokens por parametro), con datos generados de forma sintetica y aleatoria, sin sesgo hacia el conjunto de evaluacion.
 
-Es un ejercicio de investigacion sobre arquitecturas recurrentes/loopeadas en el extremo de eficiencia parametrica, distribuido bajo licencia Apache 2.0 y con una variante GGUF publicada como version nueva (MoreThought/AresMath1.0-IT-GGUF). Como referencia temporal, el repositorio se creo en octubre de 2026 y cuenta con 2 descargas y 1 like en HuggingFace.
+Es un ejercicio de investigacion sobre arquitecturas recurrentes/loopeadas en el extremo de eficiencia parametrica, distribuido bajo licencia Apache 2.0 y con una variante GGUF publicada como version nueva (MoreThought/AresMath1.0-IT-GGUF). Como referencia temporal, el repositorio se creo en octubre de 2026 y cuenta con 2 descargas y 1 like en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Precision (arithmark 3.0 adaptado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AresMath1.0-IT | 11.008 | 32 tokens | 54,80% | apache-2.0 | HuggingFace (jax/safetensors) y version GGUF |
+| AresMath1.0-IT | 11.008 | 32 tokens | 54,80% | apache-2.0 | Hugging Face (jax/safetensors) y version GGUF |
 | MobileLLM-R1 | no disponible | no disponible | 65,70% | no disponible | no disponible en la informacion proporcionada |
 | GPT-X3-150M | no disponible (la denominacion sugiere ~150M) | no disponible | 50,90% | no disponible | no disponible |
 | OdinNext-138M | no disponible (la denominacion sugiere ~138M) | no disponible | 41,80% / 40,90% (instruct) | no disponible | no disponible |
@@ -116,6 +116,6 @@ La diferencia clave de AresMath1.0-IT frente a todos ellos es el orden de magnit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MoreThought/AresMath1.0-IT
+- Modelo en Hugging Face: https://huggingface.co/MoreThought/AresMath1.0-IT
 - Version GGUF indicada como new_version: https://huggingface.co/MoreThought/AresMath1.0-IT-GGUF
 - Perfil del autor: https://huggingface.co/MoreThought

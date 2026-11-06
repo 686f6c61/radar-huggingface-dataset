@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `renataper`, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre el paradigma de *zero-shot transfer*. Según la model card, el artefacto principal es un documento (`reading.md`) que registra el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base emparejadas, requisitos de reproducibilidad y referencias bibliográficas relevantes. El autor declara explícitamente que no se presentan resultados de benchmarks, ablaciones completadas, código liberado ni checkpoints entrenados.
+Este repositorio de Hugging Face, publicado por el usuario `renataper`, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre el paradigma de *zero-shot transfer*. Según la model card, el artefacto principal es un documento (`reading.md`) que registra el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base emparejadas, requisitos de reproducibilidad y referencias bibliográficas relevantes. El autor declara explícitamente que no se presentan resultados de benchmarks, ablaciones completadas, código liberado ni checkpoints entrenados.
 
 El repositorio incluye un único tensor de 49.600 parámetros en formato `safetensors`, pero el tamaño total del repositorio es de 0.0 GB, lo que sugiere que dicho tensor es un artefacto vacío o simbólico, no un modelo funcional. La licencia es MIT y la fecha de creación es el 28 de agosto de 2026, aunque no se especifica la región de entrenamiento ni los idiomas soportados.
 
@@ -65,7 +65,7 @@ No disponible. No existe un modelo comparable, ya que este repositorio no contie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/renataper/zero-shot-transfer-reading
+- Repositorio en Hugging Face: https://huggingface.co/renataper/zero-shot-transfer-reading
 - Paper de referencia sobre transferencia de representaciones y zero-shot (arXiv): https://arxiv.org/abs/2310.00927
 - Artículo sobre predicción de trayectorias de salud con zero-shot (Nature): https://www.nature.com/articles/s41746-024-01235-0
 - Revisión sobre zero-shot y few-shot learning en NLP (Springer): https://link.springer.com/article/10.1007/s42452-025-07225-5

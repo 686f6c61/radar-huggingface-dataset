@@ -69,8 +69,8 @@ Además, el autor indica que las pruebas de abliteración mostraron tasas de rec
 
 | Modelo | Parametros | Contexto | Licencia | Alineacion (overall) | Disponibilidad |
 |---|---|---|---|---|---|
-| Ostrich-27B-260903-Qwen3.8-etheroi | 27.781.427.952 | no disponible | Apache 2.0 | 77% (segun la model card) | HuggingFace |
-| Qwen3.8-27B (base) | 27.000 millones (aprox.) | no disponible | Apache 2.0 | 37% (segun la model card) | HuggingFace |
+| Ostrich-27B-260903-Qwen3.8-etheroi | 27.781.427.952 | no disponible | Apache 2.0 | 77% (segun la model card) | Hugging Face |
+| Qwen3.8-27B (base) | 27.000 millones (aprox.) | no disponible | Apache 2.0 | 37% (segun la model card) | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
@@ -85,8 +85,8 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/developerjeremylive/Ostrich-27B-260903-Qwen3.8-etheroi)
-- [HuggingFace de etemiz/Ostrich-27B-260903-Qwen3.8](https://huggingface.co/etemiz/Ostrich-27B-260903-Qwen3.8)
+- [Hugging Face del modelo](https://huggingface.co/developerjeremylive/Ostrich-27B-260903-Qwen3.8-etheroi)
+- [Hugging Face de etemiz/Ostrich-27B-260903-Qwen3.8](https://huggingface.co/etemiz/Ostrich-27B-260903-Qwen3.8)
 - [Blog AHA 2026 Leaderboard](https://huggingface.co/blog/etemiz/aha-2026-leaderboard)
 - [Blog Building a Beneficial AI](https://huggingface.co/blog/etemiz/building-a-beneficial-ai)
 - [Blog From Robots That Prey to Robots That Pray](https://huggingface.co/blog/etemiz/from-robots-that-prey-to-robots-that-pray)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-DPO-Tulu3` es un checkpoint de tipo transformer de 1.714.377.728 parámetros (aproximadamente 1,7 mil millones) publicado por la organización open-sci en HuggingFace. Se trata de un ajuste fino supervisado (SFT) realizado con LLaMA-Factory sobre un subconjunto de OpenThoughts3 (30.000 muestras), partiendo presumiblemente de un modelo base Nemotron de 1.7B y aplicando posteriormente una fase de DPO con datos de Tulu3, según se deduce de la nomenclatura del identificador.
+El modelo `open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-DPO-Tulu3` es un checkpoint de tipo transformer de 1.714.377.728 parámetros (aproximadamente 1,7 mil millones) publicado por la organización open-sci en Hugging Face. Se trata de un ajuste fino supervisado (SFT) realizado con LLaMA-Factory sobre un subconjunto de OpenThoughts3 (30.000 muestras), partiendo presumiblemente de un modelo base Nemotron de 1.7B y aplicando posteriormente una fase de DPO con datos de Tulu3, según se deduce de la nomenclatura del identificador.
 
 El modelo está orientado a tareas de razonamiento y generación de texto, con un contexto declarado de 4096 tokens en la fase SFT y 16K en la fase posterior, y se distribuye en formato safetensors con código personalizado (`custom_code`), lo que implica que requiere `trust_remote_code=True` para su carga. El repositorio ocupa 3,4 GB y no cuenta con descargas ni likes en el momento de la consulta.
 
@@ -89,7 +89,7 @@ La comparacion directa de rendimiento no es posible porque el modelo de open-sci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-DPO-Tulu3
+- Hugging Face: https://huggingface.co/open-sci/sft__ot30k_open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-DPO-Tulu3
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - OpenThoughts3 (dataset de entrenamiento): https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M
 - Tulu3 (datos de DPO): https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture

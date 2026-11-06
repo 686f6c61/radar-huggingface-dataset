@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lohith-19/text_generation es un modelo de generacion de texto publicado en HuggingFace por el usuario Lohith-19. Los metadatos del repositorio indican que se trata de un modelo con arquitectura GPT-2 (segun las etiquetas del repo) y un total de 124.439.808 parametros, cifra que coincide exactamente con el tamano del GPT-2 small original de OpenAI. El modelo se distribuye bajo licencia MIT y los pesos estan en formato safetensors.
+Lohith-19/text_generation es un modelo de generacion de texto publicado en Hugging Face por el usuario Lohith-19. Los metadatos del repositorio indican que se trata de un modelo con arquitectura GPT-2 (segun las etiquetas del repo) y un total de 124.439.808 parametros, cifra que coincide exactamente con el tamano del GPT-2 small original de OpenAI. El modelo se distribuye bajo licencia MIT y los pesos estan en formato safetensors.
 
 La relevancia de este modelo es limitada en el estado actual de la informacion: la model card esta practicamente vacia (solo contiene la declaracion de licencia), no hay datos de entrenamiento, benchmarks ni ejemplos de uso publicados, y el repositorio registra cero descargas y cero likes. Se trata probablemente de un experimento personal o de un fine-tuning no documentado sobre la base de GPT-2, por lo que cualquier evaluacion rigurosa requiere pruebas propias por parte del usuario.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 124 millones de parametros, el modelo en FP32 ocupa aproximadamente 0,5 GB en memoria, y en FP16 unos 0,25 GB. Cabe en cualquier GPU moderna con 4 GB de VRAM o incluso en CPU.
 - GPU recomendadas: cualquier GPU consumer (GTX 1060 6GB en adelante, RTX 3060, RTX 4090) es suficiente. No requiere hardware de datacenter.
 - Ejecucion en CPU: viable con llama.cpp u otras herramientas de inferencia CPU, con latencias del orden de decenas de milisegundos por token en hardware moderno (estimacion orientativa para un modelo de este tamano).
-- Opciones de despliegue: al estar en formato safetensors, puede convertirse a GGUF para llama.cpp u Ollama, o servirse con vLLM, TGI o HuggingFace Inference Endpoints. No se han publicado conversiones prehechas.
+- Opciones de despliegue: al estar en formato safetensors, puede convertirse a GGUF para llama.cpp u Ollama, o servirse con vLLM, TGI o Hugging Face Inference Endpoints. No se han publicado conversiones prehechas.
 - Latencia y throughput: no hay datos publicados especificos para este modelo. Como referencia, un GPT-2 small en una GPU moderna genera del orden de 100-300 tokens por segundo, pero esto depende del hardware y del backend.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Lohith-19/text_generation | 124 M | no disponible | MIT | safetensors | Model card vacia, sin benchmarks |
 | GPT-2 small (OpenAI) | 124 M | 1024 | MIT | safetensors, TF | Modelo original, ampliamente documentado y evaluado |
-| DistilGPT2 (HuggingFace) | 82 M | 1024 | Apache-2.0 | safetensors | Version destilada, mas rapida y ligera |
+| DistilGPT2 (Hugging Face) | 82 M | 1024 | Apache-2.0 | safetensors | Version destilada, mas rapida y ligera |
 
 La comparacion directa es dificil porque no hay datos de rendimiento publicados para Lohith-19/text_generation. Si el modelo es efectivamente GPT-2 small sin modificar, su comportamiento deberia ser identico al original; si es un fine-tuning, el rendimiento dependera del dataset usado, que no se ha documentado.
 
@@ -75,5 +75,5 @@ La comparacion directa es dificil porque no hay datos de rendimiento publicados 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lohith-19/text_generation
+- Repositorio Hugging Face: https://huggingface.co/Lohith-19/text_generation
 - No se han encontrado papers, blogs, demos ni repositorios de codigo asociados a este modelo en la informacion disponible.

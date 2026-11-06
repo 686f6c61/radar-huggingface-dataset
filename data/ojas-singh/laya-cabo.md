@@ -73,8 +73,8 @@ Latencia: aproximadamente 30 ms por decision en GPU y de 0,3 a 1,5 s en unos poc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ojas-Singh/laya-cabo (v3) | 421,3 M | 512 tokens (fase v2) | 64,5% / 41,2% / 29,4% de win rate en 2/3/4 jugadores frente a heuristico | Apache-2.0 | HuggingFace |
-| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Ojas-Singh/laya-cabo (v3) | 421,3 M | 512 tokens (fase v2) | 64,5% / 41,2% / 29,4% de win rate en 2/3/4 jugadores frente a heuristico | Apache-2.0 | Hugging Face |
+| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | v2 de laya-cabo (version anterior) | no disponible | 512 tokens | 63,5% / 41,3% / 28,9% en 2/3/4 jugadores | Apache-2.0 | No distribuido como modelo separado en la informacion disponible |
 
 No se dispone de informacion sobre otros modelos comparables especializados en Cabo o en juegos de cartas similares.
@@ -93,6 +93,6 @@ No se dispone de informacion sobre otros modelos comparables especializados en C
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ojas-Singh/laya-cabo
+- Modelo en Hugging Face: https://huggingface.co/Ojas-Singh/laya-cabo
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio Game Night: https://github.com/Ojas-Singh/Game_Night

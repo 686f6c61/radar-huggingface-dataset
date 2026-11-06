@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Task_Arithmetic_Ext_B es un modelo de lenguaje de 8.030.261.248 parámetros publicado en HuggingFace por el usuario ForSureTesterSim. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (model merging) generada con la herramienta mergekit aplicando el método Task Arithmetic, tomando meta-llama/Llama-3.1-8B como modelo base y combinando tres modelos derivados: meta-llama/Llama-3.1-8B-Instruct (peso 0,5), Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 (peso 0,25) y allenai/Llama-3.1-Tulu-3.1-8B (peso 0,25). El tokenizador procede de Llama-3.1-8B-Instruct y el dtype de almacenamiento es bfloat16.
+Llama-3.1-8B-Task_Arithmetic_Ext_B es un modelo de lenguaje de 8.030.261.248 parámetros publicado en Hugging Face por el usuario ForSureTesterSim. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (model merging) generada con la herramienta mergekit aplicando el método Task Arithmetic, tomando meta-llama/Llama-3.1-8B como modelo base y combinando tres modelos derivados: meta-llama/Llama-3.1-8B-Instruct (peso 0,5), Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 (peso 0,25) y allenai/Llama-3.1-Tulu-3.1-8B (peso 0,25). El tokenizador procede de Llama-3.1-8B-Instruct y el dtype de almacenamiento es bfloat16.
 
 El interés del modelo es metodológico más que de rendimiento: ilustra cómo combinar vectores de tarea (la diferencia entre los pesos de un modelo ajustado y su base) para intentar agregar capacidades de instrucción, alineación conversacional y razonamiento aritmético sin coste adicional de entrenamiento. El nombre del repositorio sugiere que forma parte de una familia de experimentos de fusión orientados a tareas aritméticas, lo que lo convierte en un objeto de estudio para quienes investigan técnicas de merging.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Task_Arithmetic_Ext_B | 8,03 B | no disponible (base: 128k) | no disponible | 0 descargas en HuggingFace | Fusion Task Arithmetic, sin evaluacion publicada |
+| Llama-3.1-8B-Task_Arithmetic_Ext_B | 8,03 B | no disponible (base: 128k) | no disponible | 0 descargas en Hugging Face | Fusion Task Arithmetic, sin evaluacion publicada |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Ampliamente desplegado, ecosistema maduro | Componente con peso 0,5 en esta fusion; referencia de calidad conversacional |
 | allenai/Llama-3.1-Tulu-3.1-8B | 8,03 B | no disponible en la informacion proporcionada | consultar model card original | Repositorio publico de Ai2 | Ajustado con datos de razonamiento e instrucciones; componente con peso 0,25 |
 | Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 | 8,03 B | no disponible en la informacion proporcionada | consultar model card original | Repositorio publico | Alineado con datos sinteticos generados por Magpie; componente con peso 0,25 |
@@ -94,7 +94,7 @@ La comparación significativa es contra Llama-3.1-8B-Instruct, del que este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-Task_Arithmetic_Ext_B
+- Modelo en Hugging Face: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-Task_Arithmetic_Ext_B
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Paper de Task Arithmetic: https://arxiv.org/abs/2212.04089
 - Modelo base de la fusión: https://huggingface.co/meta-llama/Llama-3.1-8B

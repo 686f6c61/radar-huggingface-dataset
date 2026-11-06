@@ -84,7 +84,7 @@ No se dispone de otros modelos comparables de conversion kana-kanji con benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/togatogah/jinen-v2-small.gguf
+- Repositorio Hugging Face: https://huggingface.co/togatogah/jinen-v2-small.gguf
 - Version original PyTorch (referenciada): https://huggingface.co/togatogah/jinen-v2-small
 - Modelo anterior jinen-v1-small: https://huggingface.co/togatogah/jinen-v1-small
 - Benchmark AJIMEE-Bench: https://github.com/azooKey/AJIMEE-Bench

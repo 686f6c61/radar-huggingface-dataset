@@ -4,7 +4,7 @@
 
 El modelo `HoangQuocViet25/nlp-btl-xlsum-x5` es un sistema de resumen abstractivo en vietnamita, desarrollado por HoangQuocViet25 a partir del modelo base `VietAI/vit5-base`. Se trata de un fine-tuning específico para la tarea de resumir artículos periodísticos en vietnamita, entrenado sobre el dataset multilingüe XL-Sum, que contiene más de un millón de pares artículo-resumen anotados profesionalmente por hablantes nativos. El modelo hereda la arquitectura T5 (encoder-decoder) de ViT5, con aproximadamente 227 millones de parámetros, y está diseñado para generar resúmenes abstractivos de calidad en un idioma de recursos medios como el vietnamita.
 
-La relevancia de este modelo radica en que cubre una carencia importante: la mayoría de los sistemas de resumen se centran en inglés u otros idiomas de altos recursos. Al estar fine-tuneado exclusivamente en vietnamita, ofrece un rendimiento especializado que supera a los modelos multilingües genéricos en esta lengua. Su licencia MIT permite uso comercial sin restricciones, lo que lo hace atractivo para integraciones en productos reales. El modelo se distribuye en formato safetensors y se puede cargar directamente con la librería Transformers de HuggingFace.
+La relevancia de este modelo radica en que cubre una carencia importante: la mayoría de los sistemas de resumen se centran en inglés u otros idiomas de altos recursos. Al estar fine-tuneado exclusivamente en vietnamita, ofrece un rendimiento especializado que supera a los modelos multilingües genéricos en esta lengua. Su licencia MIT permite uso comercial sin restricciones, lo que lo hace atractivo para integraciones en productos reales. El modelo se distribuye en formato safetensors y se puede cargar directamente con la librería Transformers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: con 227 millones de parámetros en fp32, el modelo ocupa aproximadamente 0,9 GB en memoria. En fp16, se reduce a unos 0,45 GB. Con secuencias de entrada de 1024 tokens y batch pequeño, la memoria total necesaria (incluyendo activaciones) ronda entre 2 y 4 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente, por ejemplo NVIDIA GTX 1650, RTX 3050, RTX 3060, o GPUs de datacenter como T4 o A10. También puede ejecutarse en CPU con razonable velocidad para uso no interactivo.
 - Cabe en GPUs de consumo: sí, en prácticamente cualquier GPU moderna de gama media o alta.
-- Opciones de despliegue: se puede servir con la librería Transformers de HuggingFace, o mediante servidores de inferencia como vLLM (aunque T5 no es el caso de uso más optimizado), TGI (Text Generation Inference), o convirtiendo a ONNX para entornos de producción. También es compatible con llama.cpp si se convierte a formato GGUF, aunque no es el flujo habitual para modelos T5.
+- Opciones de despliegue: se puede servir con la librería Transformers de Hugging Face, o mediante servidores de inferencia como vLLM (aunque T5 no es el caso de uso más optimizado), TGI (Text Generation Inference), o convirtiendo a ONNX para entornos de producción. También es compatible con llama.cpp si se convierte a formato GGUF, aunque no es el flujo habitual para modelos T5.
 - Latencia y throughput estimados: no se han publicado datos. En una GPU T4, se puede esperar una latencia de decenas de milisegundos por generación de resumen de 256 tokens, pero estos valores son orientativos y dependen del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -75,8 +75,8 @@ La comparativa se basa en información pública de los repositorios. No se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HoangQuocViet25/nlp-btl-xlsum-x5
-- Dataset XL-Sum en HuggingFace: https://huggingface.co/datasets/csebuetnlp/xlsum
+- Modelo en Hugging Face: https://huggingface.co/HoangQuocViet25/nlp-btl-xlsum-x5
+- Dataset XL-Sum en Hugging Face: https://huggingface.co/datasets/csebuetnlp/xlsum
 - Repositorio GitHub de XL-Sum: https://github.com/csebuetnlp/xl-sum
 - Paper de XL-Sum (arXiv): https://arxiv.org/abs/2106.13822
 - Modelo mT5_multilingual_XLSum: https://huggingface.co/csebuetnlp/mT5_multilingual_XLSum

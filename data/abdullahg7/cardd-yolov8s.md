@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CarDD YOLOv8s es un modelo de detección de objetos y segmentación de instancias especializado en daños en carrocerías de automóviles, desarrollado por el usuario abdullahg7 y publicado en HuggingFace. Se trata de un fine-tuning de YOLOv8s-seg (11,78 millones de parámetros) sobre el dataset académico CarDD (Car Damage Detection), orientado a aplicaciones del sector asegurador y de tasación de siniestros. El modelo detecta y segmenta seis categorías de daño: abolladura (dent), arañazo (scratch), grieta (crack), rotura de cristal (glass_shatter), faro roto (lamp_broken) y neumático pinchado (tire_flat).
+CarDD YOLOv8s es un modelo de detección de objetos y segmentación de instancias especializado en daños en carrocerías de automóviles, desarrollado por el usuario abdullahg7 y publicado en Hugging Face. Se trata de un fine-tuning de YOLOv8s-seg (11,78 millones de parámetros) sobre el dataset académico CarDD (Car Damage Detection), orientado a aplicaciones del sector asegurador y de tasación de siniestros. El modelo detecta y segmenta seis categorías de daño: abolladura (dent), arañazo (scratch), grieta (crack), rotura de cristal (glass_shatter), faro roto (lamp_broken) y neumático pinchado (tire_flat).
 
 La relevancia del modelo radica en su eficiencia: con 11,78 millones de parámetros y un fichero de 22,8 MB, iguala el AP de máscara del mejor modelo del paper original de CarDD (DCN+ con ResNet-101, un backbone sustancialmente más pesado) y supera a todas las líneas base estándar (Mask R-CNN, Cascade Mask R-CNN, GCNet, HTC) en las métricas globales. Además, se entrenó en una GPU de portátil de 4 GB (RTX 3050 Laptop), lo que lo convierte en una opción realista para despliegue en entornos con recursos limitados o en el borde.
 
@@ -106,7 +106,7 @@ La versión v1.0 (solo detección) alcanza un 71,67 % de mAP50 en caja, frente a
 
 | Modelo | Parámetros | Contexto / entrada | Mask AP (CarDD) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CarDD YOLOv8s v2.0 (este) | 11,78 M | Imagen 1024 px | 57,0 | AGPL-3.0 | HuggingFace |
+| CarDD YOLOv8s v2.0 (este) | 11,78 M | Imagen 1024 px | 57,0 | AGPL-3.0 | Hugging Face |
 | DCN+ ResNet-101 (paper CarDD) | no disponible (backbone ResNet-101) | no disponible | 57,0 | no disponible | Paper académico; pesos no publicados en la información disponible |
 | Mask R-CNN (paper CarDD) | no disponible (backbone ResNet-101) | no disponible | 49,4 | no disponible | Implementación estándar (Detectron2/mmdetection) |
 | HTC (paper CarDD) | no disponible (backbone ResNet-101) | no disponible | 50,9 | no disponible | Implementación estándar (mmdetection) |
@@ -126,8 +126,8 @@ El modelo destaca por ofrecer el mismo Mask AP que el mejor modelo del paper con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdullahg7/cardd-yolov8s
+- Modelo en Hugging Face: https://huggingface.co/abdullahg7/cardd-yolov8s
 - Dataset CarDD: https://cardd-ustc.github.io
 - Repositorio Ultralytics (framework base): https://github.com/ultralytics/ultralytics
 - Documentación de Ultralytics: https://docs.ultralytics.com
-- Resultados detallados del test v2.0 (referenciado en la model card): `experiments/v2.0_test/results.md` dentro del repositorio de HuggingFace
+- Resultados detallados del test v2.0 (referenciado en la model card): `experiments/v2.0_test/results.md` dentro del repositorio de Hugging Face

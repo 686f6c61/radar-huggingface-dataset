@@ -91,7 +91,7 @@ La diferencia principal entre la primera fila y las alternativas de la comunidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aquaduck/Llama-3.2-3B-MLX
+- Hugging Face: https://huggingface.co/aquaduck/Llama-3.2-3B-MLX
 - Modelo base presumible (no confirmado en la ficha): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Librería MLX: https://github.com/ml-explore/mlx
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en los resultados de búsqueda disponibles.

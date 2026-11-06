@@ -112,7 +112,7 @@ Ossicle-4B destaca por su relación entre tamaño, licencia permisiva y capacida
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SILVERTHRONE/Ossicle-4B
+- Hugging Face: https://huggingface.co/SILVERTHRONE/Ossicle-4B
 - Repositorio GitHub: https://github.com/SILVERTHRONE32/ossicle-4b
 - Modelo base LM: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo base codificador: https://huggingface.co/Atotti/Qwen3-Omni-AudioTransformer

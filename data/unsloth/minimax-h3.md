@@ -83,9 +83,9 @@ La comparativa muestra que MiniMax H3 es el unico modelo de la lista con pesos a
 
 ## Enlaces
 
-- Repositorio HuggingFace (Unsloth): https://huggingface.co/unsloth/MiniMax-H3
-- Repositorio HuggingFace (GGUF): https://huggingface.co/unsloth/MiniMax-H3-GGUF
-- Repositorio HuggingFace (MiniMax oficial): https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face (Unsloth): https://huggingface.co/unsloth/MiniMax-H3
+- Repositorio Hugging Face (GGUF): https://huggingface.co/unsloth/MiniMax-H3-GGUF
+- Repositorio Hugging Face (MiniMax oficial): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - API global: https://platform.minimax.io/docs/api-reference/video-generation-v2-create
 - API China: https://platform.minimaxi.com/docs/api-reference/video-generation-v2-create

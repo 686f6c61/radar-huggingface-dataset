@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASCXZ12EDXSA bajo el identificador `ASCXZ12EDXSA/MyAwesomeModel-TestRepo`. Se distribuye con la librería transformers y licencia MIT. La información disponible es contradictoria: las etiquetas del repositorio lo clasifican como un modelo de tipo BERT orientado a `feature-extraction`, mientras que la model card lo describe como un modelo generativo de razonamiento con modo de pensamiento, soporte de function calling y mejoras sustanciales en tareas de matemáticas, programación y lógica.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASCXZ12EDXSA bajo el identificador `ASCXZ12EDXSA/MyAwesomeModel-TestRepo`. Se distribuye con la librería transformers y licencia MIT. La información disponible es contradictoria: las etiquetas del repositorio lo clasifican como un modelo de tipo BERT orientado a `feature-extraction`, mientras que la model card lo describe como un modelo generativo de razonamiento con modo de pensamiento, soporte de function calling y mejoras sustanciales en tareas de matemáticas, programación y lógica.
 
 Según la model card, se trata de una actualización de una versión previa que mejora la profundidad de razonamiento mediante más recursos computacionales y optimizaciones algorítmicas en el post-entrenamiento. El autor afirma que la precisión en AIME 2025 pasa del 70 % al 87,5 % y que el consumo medio de tokens por pregunta en ese conjunto crece de 12K a 23K. No se especifican arquitectura concreta, número de parámetros ni longitud de contexto.
 
@@ -12,7 +12,7 @@ El repositorio parece un espacio de pruebas o plantilla (nombre "TestRepo", cero
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `bert` en HuggingFace, pero la model card describe un modelo generativo de razonamiento) |
+| Arquitectura | no disponible (etiqueta `bert` en Hugging Face, pero la model card describe un modelo generativo de razonamiento) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ El repositorio parece un espacio de pruebas o plantilla (nombre "TestRepo", cero
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura interna del modelo. La etiqueta de HuggingFace apunta a `bert`, lo que sugeriría un transformer encoder para extracción de características, pero la model card describe capacidades propias de un modelo generativo decoder-only con razonamiento extendido, modo de pensamiento explícito y function calling. Esta discrepancia impide determinar con rigor si se trata de un transformer denso, un MoE o una arquitectura híbrida.
+No se dispone de información verificable sobre la arquitectura interna del modelo. La etiqueta de Hugging Face apunta a `bert`, lo que sugeriría un transformer encoder para extracción de características, pero la model card describe capacidades propias de un modelo generativo decoder-only con razonamiento extendido, modo de pensamiento explícito y function calling. Esta discrepancia impide determinar con rigor si se trata de un transformer denso, un MoE o una arquitectura híbrida.
 
 Sobre el entrenamiento, la model card menciona que la versión actual incorpora "mayores recursos computacionales" y "mecanismos de optimización algorítmica" durante el post-entrenamiento, sin detallar el número de tokens, la composición del dataset ni si se emplearon técnicas como RLHF o DPO. Se menciona una reducción de la tasa de alucinación y una mejora en el soporte de function calling respecto a la versión anterior, pero sin cifras asociadas. El identificador "TestRepo" y la ausencia de descargas sugieren que podría tratarse de un repositorio de pruebas más que de un modelo listo para producción.
 
@@ -98,7 +98,7 @@ No disponible. La model card referencia "Model1", "Model2" y "Model1-v2" como co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASCXZ12EDXSA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASCXZ12EDXSA/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de código: mencionado en la model card, pero sin URL proporcionada
 - Sitio web oficial / API: mencionado en la model card, pero sin URL proporcionada

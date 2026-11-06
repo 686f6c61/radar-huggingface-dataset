@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Mungert/Qwen3.8-27B-GGUF` es un repositorio publicado en HuggingFace por el usuario Mungert, que contiene pesos en formato GGUF de un modelo de 27.320.697.856 parámetros (~27,3B). El nombre sugiere una posible relación con la familia Qwen3, aunque no se puede confirmar sin información adicional del autor. Los tags indican que está orientado a conversación y es compatible con endpoints, y la región asociada es Estados Unidos.
+El modelo `Mungert/Qwen3.8-27B-GGUF` es un repositorio publicado en Hugging Face por el usuario Mungert, que contiene pesos en formato GGUF de un modelo de 27.320.697.856 parámetros (~27,3B). El nombre sugiere una posible relación con la familia Qwen3, aunque no se puede confirmar sin información adicional del autor. Los tags indican que está orientado a conversación y es compatible con endpoints, y la región asociada es Estados Unidos.
 
 La relevancia de este repositorio es limitada por el momento: cuenta con 36 descargas y 0 likes, y la información pública disponible es muy escasa. No se especifican licencia, idiomas, arquitectura ni detalles de entrenamiento. El tamaño del repositorio (352,1 GB) sugiere que incluye múltiples archivos de cuantización GGUF, lo que permitiría desplegar el modelo en diferentes configuraciones de hardware, pero sin más datos no es posible evaluar su calidad o capacidades reales.
 
@@ -67,4 +67,4 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mungert/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Mungert/Qwen3.8-27B-GGUF

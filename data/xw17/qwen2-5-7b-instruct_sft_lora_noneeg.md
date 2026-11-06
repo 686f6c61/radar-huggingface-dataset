@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xw17/Qwen2.5-7B-Instruct_SFT_lora_noneeg es un modelo publicado en HuggingFace por el usuario xw17. Por el identificador del repositorio se deduce que se trata de un ajuste fino supervisado (SFT) mediante LoRA sobre Qwen2.5-7B-Instruct, con algun tipo de filtrado o tratamiento asociado al sufijo "noneeg" (posiblemente orientado a reducir contenido negativo o toxico). No obstante, la model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos figuran como "[More Information Needed]".
+xw17/Qwen2.5-7B-Instruct_SFT_lora_noneeg es un modelo publicado en Hugging Face por el usuario xw17. Por el identificador del repositorio se deduce que se trata de un ajuste fino supervisado (SFT) mediante LoRA sobre Qwen2.5-7B-Instruct, con algun tipo de filtrado o tratamiento asociado al sufijo "noneeg" (posiblemente orientado a reducir contenido negativo o toxico). No obstante, la model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos figuran como "[More Information Needed]".
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela. El repositorio ocupa 0,1 GB, un tamano incompatible con los pesos completos de un modelo de 7.000 millones de parametros en precision de 16 bits (que rondarian los 14-15 GB). Esto sugiere que el repositorio contiene unicamente los pesos del adaptador LoRA, o bien que la subida quedo incompleta. En cualquiera de los dos casos, no se puede desplegar de forma autonoma sin disponer del modelo base.
 
@@ -25,7 +25,7 @@ No se dispone de informacion sobre licencia, idiomas, pipeline, datos de entrena
 
 No hay informacion verificable sobre la arquitectura ni sobre el procedimiento de entrenamiento. El autor no ha rellenado ningun campo de la model card: se desconocen los datos de entrenamiento, el numero de tokens, la composicion del dataset, si hubo RLHF, DPO u otra fase de alineamiento posterior al SFT, y los hiperparametros empleados (tasa de aprendizaje, rango del adaptador LoRA, precision de entrenamiento).
 
-Los unicos indicios disponibles son indirectos: el nombre del repositorio indica "SFT" y "lora", lo que apunta a un ajuste supervisado mediante adaptadores de bajo rango sobre el modelo instructivo de Qwen2.5. El sufijo "noneeg" no viene explicado en ninguna parte. El etiquetado del repositorio incluye la referencia arxiv:1910.09700, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y aparece por defecto en la plantilla automatica de HuggingFace; no es una referencia a la arquitectura ni al entrenamiento del modelo.
+Los unicos indicios disponibles son indirectos: el nombre del repositorio indica "SFT" y "lora", lo que apunta a un ajuste supervisado mediante adaptadores de bajo rango sobre el modelo instructivo de Qwen2.5. El sufijo "noneeg" no viene explicado en ninguna parte. El etiquetado del repositorio incluye la referencia arxiv:1910.09700, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y aparece por defecto en la plantilla automatica de Hugging Face; no es una referencia a la arquitectura ni al entrenamiento del modelo.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos con garantias, dado que no hay d
 - Pruebas de pipelines de transformers: al declarar la libreria transformers, el repositorio puede emplearse para verificar la carga de adaptadores LoRA en entornos de desarrollo, sin expectativa de calidad en las respuestas.
 - Analisis de reproducibilidad: util para documentar el problema de los repositorios con model cards vacias y su impacto en la trazabilidad de experimentos de ajuste fino.
 - Evaluacion comparativa de adaptadores: si se dispone de otros adaptadores del mismo modelo base, este puede incluirse en una bateria de pruebas para medir diferencias de comportamiento.
-- Docencia sobre buenas practicas de publicacion de modelos: sirve como caso negativo de model card incompleta, frente a las recomendaciones de documentacion de HuggingFace.
+- Docencia sobre buenas practicas de publicacion de modelos: sirve como caso negativo de model card incompleta, frente a las recomendaciones de documentacion de Hugging Face.
 
 En cualquier escenario de produccion, atencion al cliente, generacion de codigo o agentes, este repositorio no es apto tal como esta publicado por ausencia de licencia, de evaluacion y, previsiblemente, de pesos completos.
 
@@ -89,6 +89,6 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/Qwen2.5-7B-Instruct_SFT_lora_noneeg
-- Referencia arxiv incluida en las etiquetas del repositorio (plantilla automatica de HuggingFace, articulo sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
+- Hugging Face: https://huggingface.co/xw17/Qwen2.5-7B-Instruct_SFT_lora_noneeg
+- Referencia arxiv incluida en las etiquetas del repositorio (plantilla automatica de Hugging Face, articulo sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni a documentacion tecnica asociada.

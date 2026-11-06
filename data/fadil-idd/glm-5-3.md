@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (zai-org), publicado en HuggingFace bajo el identificador Fadil-idd/GLM-5.3. Se trata de la iteración 5.3 de la familia GLM, construida sobre exactamente el mismo modelo base que GLM-5.2: todas las mejoras respecto a la versión anterior provienen exclusivamente de la fase de post-entrenamiento. El modelo está orientado a tareas de programación compleja, razonamiento de largo horizonte y automatización de agentes, y declara ser el modelo de pesos abiertos más capaz para código según sus propios benchmarks internos.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (zai-org), publicado en Hugging Face bajo el identificador Fadil-idd/GLM-5.3. Se trata de la iteración 5.3 de la familia GLM, construida sobre exactamente el mismo modelo base que GLM-5.2: todas las mejoras respecto a la versión anterior provienen exclusivamente de la fase de post-entrenamiento. El modelo está orientado a tareas de programación compleja, razonamiento de largo horizonte y automatización de agentes, y declara ser el modelo de pesos abiertos más capaz para código según sus propios benchmarks internos.
 
 Con 753.329.940.480 parámetros totales según los pesos en safetensors, GLM-5.3 se sitúa en la categoría de modelos masivos tipo MoE (la arquitectura declarada es `glm_moe_dsa`). El repositorio ocupa 755,7 GB, lo que confirma que se distribuye en precisión nativa FP8. Soporta únicamente inglés y chino, y su licencia es propietaria (`glm-5.3`, catalogada como `other`), lo que condiciona su uso comercial.
 
@@ -106,7 +106,7 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no está
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fadil-idd/GLM-5.3
+- Hugging Face: https://huggingface.co/Fadil-idd/GLM-5.3
 - Paper (arXiv): https://arxiv.org/abs/2602.15763
 - Repositorio del proyecto: https://github.com/zai-org/GLM-5
 - Cookbook de SGLang: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3

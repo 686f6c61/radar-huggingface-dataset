@@ -60,7 +60,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h077.soup-85-s40
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h077.soup-85-s40
 - Documentación de modelos de SpaceXAI (contexto del ecosistema Grok, no específico de este checkpoint): https://docs.x.ai/developers/models
 - Anuncio de Grok 4 (contexto general): https://x.ai/news/grok-4
 - Sitio web de Grok: https://grok.com/

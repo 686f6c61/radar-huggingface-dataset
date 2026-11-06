@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReMiFaSol es un repositorio de recursos alojado en HuggingFace por el usuario bc-deb, no un modelo único. Contiene los ficheros que la herramienta ReMiFaSol, disponible en github.com/beautycita/ReMiFaSol, descarga en tiempo de ejecución para funcionar: embedders, generadores y discriminadores preentrenados de tipo HiFi-GAN y RefineGAN, predictores de tono (pitch) RMVPE y FCPE, presets de formantes y el índice de pretrains de la comunidad.
+ReMiFaSol es un repositorio de recursos alojado en Hugging Face por el usuario bc-deb, no un modelo único. Contiene los ficheros que la herramienta ReMiFaSol, disponible en github.com/beautycita/ReMiFaSol, descarga en tiempo de ejecución para funcionar: embedders, generadores y discriminadores preentrenados de tipo HiFi-GAN y RefineGAN, predictores de tono (pitch) RMVPE y FCPE, presets de formantes y el índice de pretrains de la comunidad.
 
 Por tanto, no se trata de un modelo de lenguaje ni de un sistema multimodal de texto, sino de un paquete de artefactos para conversión de voz (voice conversion) dentro del ecosistema RVC (Retrieval-based Voice Conversion). El repositorio ocupa 6,5 GB y está etiquetado con onnx, rvc y voice-conversion, lo que indica que parte de los pesos se distribuyen en formato ONNX para su uso en inferencia.
 
@@ -21,7 +21,7 @@ Su relevancia es operativa: agrupa en un único punto de descarga dependencias q
 | Licencia | MIT |
 | Formato de pesos | ONNX (etiqueta declarada); otros artefactos en formatos no especificados en la información disponible |
 
-Datos adicionales del repositorio: tamaño de 6,5 GB, 0 descargas, 1 like, creado el 2026-10-09 y actualizado el 2026-10-09 según los metadatos de HuggingFace. No se declara pipeline en la ficha.
+Datos adicionales del repositorio: tamaño de 6,5 GB, 0 descargas, 1 like, creado el 2026-10-09 y actualizado el 2026-10-09 según los metadatos de Hugging Face. No se declara pipeline en la ficha.
 
 ## Arquitectura y entrenamiento
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Espacio en disco: 6,5 GB para el repositorio completo, según los metadatos de HuggingFace.
+- Espacio en disco: 6,5 GB para el repositorio completo, según los metadatos de Hugging Face.
 - VRAM estimada para inferencia: no disponible. Depende del componente concreto que se cargue (embedder, vocoder o predictor de pitch) y del tamaño de cada uno, dato que no se especifica.
 - GPU recomendadas: no disponible en la información proporcionada.
 - Compatibilidad con GPU de consumo: no disponible. No se puede confirmar ni descartar para tarjetas tipo RTX 4090 o inferiores sin datos de tamaño por componente.
@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento, ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bc-deb/ReMiFaSol
+- Repositorio en Hugging Face: https://huggingface.co/bc-deb/ReMiFaSol
 - Proyecto ReMiFaSol (GitHub): https://github.com/beautycita/ReMiFaSol
 - Licencia incluida en el repositorio: https://huggingface.co/bc-deb/ReMiFaSol/blob/main/LICENSE
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a sitios sin relación (BBC, British Columbia, Wikipedia).

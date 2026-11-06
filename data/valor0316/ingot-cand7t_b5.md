@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VALOR0316/ingot-cand7t_b5` es un checkpoint de pesos publicado en HuggingFace por el usuario VALOR0316. Se trata de un modelo de 27.781.427.952 parámetros (≈27,8 B) almacenado en formato `safetensors` con cuantización `fp8`, con un repositorio de 30,9 GB. El nombre del repositorio y los tags (`qwen3_5`, `fp8`) apuntan a un derivado o candidato interno de la familia Qwen3.5, aunque la ficha no lo confirma en ningún momento.
+`VALOR0316/ingot-cand7t_b5` es un checkpoint de pesos publicado en Hugging Face por el usuario VALOR0316. Se trata de un modelo de 27.781.427.952 parámetros (≈27,8 B) almacenado en formato `safetensors` con cuantización `fp8`, con un repositorio de 30,9 GB. El nombre del repositorio y los tags (`qwen3_5`, `fp8`) apuntan a un derivado o candidato interno de la familia Qwen3.5, aunque la ficha no lo confirma en ningún momento.
 
 La relevancia del modelo es limitada desde el punto de vista técnico: no incluye model card, no declara licencia, no especifica idiomas soportados, no indica pipeline y no publica resultados de evaluación. Con 9 descargas y 0 likes en el momento de la consulta, tampoco existe validación comunitaria. El interés práctico se reduce a la experimentación controlada y a la auditoría de repositorios opacos, no a un uso en producción sin una evaluación previa.
 
@@ -39,7 +39,7 @@ La densidad del repositorio (30,9 GB para 27,78 B de parámetros) es coherente c
 - Generación de código y matemáticas: no confirmado; no hay benchmarks ni ejemplos en el repositorio.
 - Tool calling / function calling: no confirmado. Si hereda el formato de chat de Qwen3.5, podría soportarlo, pero requiere verificación con el tokenizador y la plantilla de chat incluidas.
 - Soporte de agentes y razonamiento multi-paso: no confirmado.
-- Capacidades multilingües: no disponibles; el campo de idiomas está vacío en la ficha de HuggingFace.
+- Capacidades multilingües: no disponibles; el campo de idiomas está vacío en la ficha de Hugging Face.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles. No hay indicios de multimodalidad en los tags.
 - Compatibilidad de cuantización: los pesos están en FP8, lo que condiciona el hardware y los motores de inferencia utilizables.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Parámetros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
 | `VALOR0316/ingot-cand7t_b5` | 27,78 B | No disponible | No disponible | No | Repositorio público sin documentar |
-| Qwen3-32B | ≈32,8 B | 32 768 tokens nativos, ampliable | Apache 2.0 | Sí, en su model card | Pesos abiertos en HuggingFace |
-| Gemma 3 27B | ≈27 B | 128 000 tokens | Términos de uso de Gemma | Sí, en su model card | Pesos abiertos en HuggingFace |
-| Mistral Small 3.1 24B | ≈24 B | 128 000 tokens | Apache 2.0 | Sí, en su model card | Pesos abiertos en HuggingFace |
+| Qwen3-32B | ≈32,8 B | 32 768 tokens nativos, ampliable | Apache 2.0 | Sí, en su model card | Pesos abiertos en Hugging Face |
+| Gemma 3 27B | ≈27 B | 128 000 tokens | Términos de uso de Gemma | Sí, en su model card | Pesos abiertos en Hugging Face |
+| Mistral Small 3.1 24B | ≈24 B | 128 000 tokens | Apache 2.0 | Sí, en su model card | Pesos abiertos en Hugging Face |
 
 Los datos de los modelos comparados proceden de sus fichas públicas y deben verificarse contra la versión vigente en el momento de la consulta. La comparación con `ingot-cand7t_b5` es únicamente de tamaño y formato, ya que no existe ningún dato de rendimiento del modelo analizado.
 
@@ -90,5 +90,5 @@ Los datos de los modelos comparados proceden de sus fichas públicas y deben ver
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VALOR0316/ingot-cand7t_b5
+- Hugging Face: https://huggingface.co/VALOR0316/ingot-cand7t_b5
 - Paper, blog, repositorio de código o demo: no disponibles. La búsqueda web realizada no devolvió enlaces relevantes al modelo; únicamente resultados genéricos del dominio youtube.com sin relación con el checkpoint.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bge-small-ner-hw2 es un modelo de clasificacion de tokens (token classification) especializado en reconocimiento de entidades nombradas (NER), publicado por el usuario Fosfor1618 en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder basado en la arquitectura BERT con 33.215.625 parametros totales. El modelo se distribuye bajo licencia MIT y en formato safetensors, compatible con la libreria transformers.
+bge-small-ner-hw2 es un modelo de clasificacion de tokens (token classification) especializado en reconocimiento de entidades nombradas (NER), publicado por el usuario Fosfor1618 en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder basado en la arquitectura BERT con 33.215.625 parametros totales. El modelo se distribuye bajo licencia MIT y en formato safetensors, compatible con la libreria transformers.
 
 El modelo resuelve la tarea de etiquetado de secuencias: dado un texto de entrada, asigna una etiqueta a cada token (por ejemplo, el tipo de entidad a la que pertenece). Segun los datos declarados por el autor en la model card, alcanza en el conjunto de evaluacion una precision de 0,8956, un recall de 0,9228, un F1 de 0,9090 y una accuracy de 0,9807, con una perdida de evaluacion de 0,0797. No se especifica el esquema de etiquetas empleado ni el dominio del dataset de entrenamiento.
 
@@ -87,9 +87,9 @@ No se han publicado resultados de benchmarks estandar comparables en la informac
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bge-small-ner-hw2 (este modelo) | 33.215.625 | Token classification / NER | no disponible | MIT | HuggingFace (Fosfor1618) |
-| BAAI/bge-small-en-v1.5 (modelo base) | 33 M aprox. | Embeddings de texto | 512 tokens | MIT | HuggingFace (BAAI) |
-| Modelos NER tipo BERT base (por ejemplo dslim/bert-base-NER) | 110 M aprox. | Token classification / NER | 512 tokens | MIT | HuggingFace |
+| bge-small-ner-hw2 (este modelo) | 33.215.625 | Token classification / NER | no disponible | MIT | Hugging Face (Fosfor1618) |
+| BAAI/bge-small-en-v1.5 (modelo base) | 33 M aprox. | Embeddings de texto | 512 tokens | MIT | Hugging Face (BAAI) |
+| Modelos NER tipo BERT base (por ejemplo dslim/bert-base-NER) | 110 M aprox. | Token classification / NER | 512 tokens | MIT | Hugging Face |
 
 Los datos de rendimiento de las alternativas no se han incluido porque no forman parte de la informacion proporcionada; solo se comparan parametros, tarea y licencia. No se dispone de comparativas de F1 o precision frente a estos modelos en la documentacion disponible.
 
@@ -106,5 +106,5 @@ Los datos de rendimiento de las alternativas no se han incluido porque no forman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fosfor1618/bge-small-ner-hw2
+- Modelo en Hugging Face: https://huggingface.co/Fosfor1618/bge-small-ner-hw2
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5

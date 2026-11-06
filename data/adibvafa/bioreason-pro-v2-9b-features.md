@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BioReason-Pro V2 9B Features es un modelo de la familia Qwen3.5 publicado por el usuario adibvafa en HuggingFace, con 8.953.803.264 parámetros totales (aproximadamente 9B) almacenados en formato safetensors. El nombre del repositorio sugiere una especialización en razonamiento biomédico ("bioreason") en su segunda versión ("pro-v2"), y el sufijo "features" apunta a una variante orientada a la extracción de representaciones internas o embeddings en lugar de a la generación de texto pura. El modelo está sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de su descarga.
+BioReason-Pro V2 9B Features es un modelo de la familia Qwen3.5 publicado por el usuario adibvafa en Hugging Face, con 8.953.803.264 parámetros totales (aproximadamente 9B) almacenados en formato safetensors. El nombre del repositorio sugiere una especialización en razonamiento biomédico ("bioreason") en su segunda versión ("pro-v2"), y el sufijo "features" apunta a una variante orientada a la extracción de representaciones internas o embeddings en lugar de a la generación de texto pura. El modelo está sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de su descarga.
 
 La relevancia de este modelo radica en su combinación de un tamaño medio (9B) con una arquitectura moderna de la familia Qwen3.5, lo que lo sitúa en el rango de modelos desplegables en hardware de consumo con cuantización agresiva, pero con capacidad suficiente para tareas de razonamiento especializado. Sin embargo, la información pública disponible es extremadamente limitada: no se han publicado resultados de benchmarks, no consta el pipeline declarado, no se especifican los idiomas soportados y la licencia es "other" (openmdw-1.1), lo que exige revisión manual de los términos antes de cualquier uso comercial.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| BioReason-Pro V2 9B Features | ~8,95B | no disponible | openmdw-1.1 (other) | Gated en HuggingFace | Sin benchmarks ni model card pública |
+| BioReason-Pro V2 9B Features | ~8,95B | no disponible | openmdw-1.1 (other) | Gated en Hugging Face | Sin benchmarks ni model card pública |
 | Qwen3 8B (familia base) | ~8B | no disponible en esta ficha | Apache 2.0 (versiones estándar de Qwen) | Pública | Referencia de la familia; requiere verificar la versión exacta |
 | Llama 3.1 8B | ~8B | 128K | Llama 3.1 Community License | Pública (gated) | Ampliamente evaluado y con ecosistema maduro |
 | Mistral 7B / Ministral 8B | ~7-8B | variable según versión | Apache 2.0 (versiones abiertas) | Pública | Alternativa europea con buena relación tamaño/rendimiento |
@@ -79,7 +79,7 @@ La comparación es estructural: no existen datos de rendimiento publicados para 
 - Sesgos desconocidos: al no documentarse la composición del dataset de entrenamiento, no se pueden evaluar sesgos demográficos, geográficos o de género.
 - Idiomas no declarados: se desconoce si el modelo rinde correctamente en castellano; probablemente herede el multilingüismo de Qwen3.5, pero no está confirmado.
 - Licencia openmdw-1.1 etiquetada como "other": requiere lectura íntegra de los términos; no se garantiza permiso para uso comercial, redistribución de pesos o fine-tuning con fines lucrativos.
-- Acceso restringido (gated): la descarga exige aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la integración en CI/CD automatizado.
+- Acceso restringido (gated): la descarga exige aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la integración en CI/CD automatizado.
 - Repositorio con cero descargas y un solo "like": sin validación comunitaria; el modelo podría ser un experimento personal sin mantenimiento.
 - Longitud de contexto no disponible: impide planificar casos de uso con documentos largos o conversaciones multi-turno extensas.
 - Sin confirmación de soporte de tool calling ni de modo thinking: no debe asumirse compatibilidad con frameworks de agentes sin pruebas previas.
@@ -87,7 +87,7 @@ La comparación es estructural: no existen datos de rendimiento publicados para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adibvafa/bioreason-pro-v2-9b-features
+- Modelo en Hugging Face: https://huggingface.co/adibvafa/bioreason-pro-v2-9b-features
 - Repositorio de la familia Qwen3.5 (referencia de arquitectura): https://huggingface.co/Qwen
 - Licencia OpenMDW: https://openmdw.ai/ (verificar términos exactos de la versión 1.1)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.26` es un fine-tuning del modelo vision-language Qwen2.5-VL-3B, publicado por el usuario SaFD-00 en HuggingFace. El nombre del checkpoint sugiere que forma parte de una serie de experimentos orientados al desarrollo de "modelos de mundo" (world models) para agentes, con la etiqueta "ac" que podría referirse a "agentic" o "action-conditioned", aunque no se dispone de documentación oficial que lo confirme. El modelo está entrenado con la librería llama-factory y se presenta como un checkpoint intermedio (stage1, full fine-tuning, epoch 2.26) dentro de un pipeline de entrenamiento más amplio.
+El modelo `SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.26` es un fine-tuning del modelo vision-language Qwen2.5-VL-3B, publicado por el usuario SaFD-00 en Hugging Face. El nombre del checkpoint sugiere que forma parte de una serie de experimentos orientados al desarrollo de "modelos de mundo" (world models) para agentes, con la etiqueta "ac" que podría referirse a "agentic" o "action-conditioned", aunque no se dispone de documentación oficial que lo confirme. El modelo está entrenado con la librería llama-factory y se presenta como un checkpoint intermedio (stage1, full fine-tuning, epoch 2.26) dentro de un pipeline de entrenamiento más amplio.
 
 Con 3.754.622.976 parámetros (aproximadamente 3,75 mil millones), este modelo hereda la arquitectura multimodal de Qwen2.5-VL, capaz de procesar texto e imágenes. La relevancia de este checkpoint radica en su naturaleza experimental: al ser un modelo de mundo en fase inicial, puede servir como base para investigaciones sobre razonamiento espacial, planificación y comprensión de entornos visuales. Sin embargo, la ausencia de documentación detallada, benchmarks publicados y una licencia clara limita su uso directo en producción.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-VL-3B (base) | 3,75 B | 32.768 (según informe técnico) | Apache 2.0 (Qwen) | HuggingFace oficial |
-| SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.26 | 3,75 B | no disponible | no disponible | HuggingFace (repo del autor) |
-| SaFD-00/qwen2.5-vl-7b-ac-stage1-full-world-model-epoch3 | 7 B aprox. | no disponible | no disponible | HuggingFace (repo del autor) |
+| Qwen2.5-VL-3B (base) | 3,75 B | 32.768 (según informe técnico) | Apache 2.0 (Qwen) | Hugging Face oficial |
+| SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.26 | 3,75 B | no disponible | no disponible | Hugging Face (repo del autor) |
+| SaFD-00/qwen2.5-vl-7b-ac-stage1-full-world-model-epoch3 | 7 B aprox. | no disponible | no disponible | Hugging Face (repo del autor) |
 
 No se dispone de datos de rendimiento comparativos. El modelo base Qwen2.5-VL-3B tiene benchmarks publicados en el informe técnico de Qwen2.5-VL, pero este checkpoint no los reporta.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativos. El modelo base Qwen2.5-VL-3B
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.26
+- Repositorio Hugging Face: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.26
 - Checkpoint similar (epoch 1): https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1
 - Variante 7B (stage1): https://huggingface.co/SaFD-00/qwen2.5-vl-7b-ac-stage1-full-world-model-epoch3
 - Variante 7B (stage2, en FriendliAI): https://friendli.ai/models/SaFD-00/qwen2.5-vl-7b-ac-2-world-model-stage1-full-epoch3-stage2-lora-epoch3

@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Tipo | Referencia | CpGs | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| twelvecelldeconvolutebloodepiceos (pyaging) | Deconvolución restringida | 240 (no publicados) | 240 | BSD-3-Clause | HuggingFace |
+| twelvecelldeconvolutebloodepiceos (pyaging) | Deconvolución restringida | 240 (no publicados) | 240 | BSD-3-Clause | Hugging Face |
 | IDOL-Ext (Salas et al. 2022) | Deconvolución referenciada | 1200 publicados | 1200 | No especificada | GitHub/Biolearn |
 | Houseman et al. (2012) | Deconvolución referenciada | 500 CpGs | 500 | No especificada | Paquetes R (minfi) |
 
@@ -73,6 +73,6 @@ No se dispone de datos comparativos de rendimiento entre estos métodos en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepiceos
+- Hugging Face: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepiceos
 - Paper original: Salas, L.A., Zhang, Z., Koestler, D.C. et al. Enhanced cell deconvolution of peripheral blood using DNA methylation for high-resolution immune profiling. Nature Communications 13, 761 (2022). DOI: https://doi.org/10.1038/s41467-021-27864-7
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io

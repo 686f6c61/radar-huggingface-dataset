@@ -6,7 +6,7 @@ El modelo `amd/Meta-Llama-3.1-8B-Instruct_rai_1.9.0_m_1.0.1_npu` es una distribu
 
 La relevancia de esta publicacion radica en que permite ejecutar localmente un modelo de 8.000 millones de parametros en equipos con Ryzen AI sin depender de una GPU dedicada, aprovechando la NPU integrada. El repositorio ocupa 5,4 GB, lo que sugiere pesos en precision reducida (probablemente cuantizados) y el pipeline declarado es `text-generation` conversacional en ingles.
 
-La ficha se basa unicamente en la informacion disponible del repositorio de HuggingFace. Los detalles sobre arquitectura interna, datos de entrenamiento y benchmarks corresponden al modelo base Meta Llama 3.1 8B Instruct, ya que AMD no aporta informacion adicional en la model card accesible. El acceso al repositorio esta restringido y requiere aceptar las condiciones de la licencia Llama 3.1.
+La ficha se basa unicamente en la informacion disponible del repositorio de Hugging Face. Los detalles sobre arquitectura interna, datos de entrenamiento y benchmarks corresponden al modelo base Meta Llama 3.1 8B Instruct, ya que AMD no aporta informacion adicional en la model card accesible. El acceso al repositorio esta restringido y requiere aceptar las condiciones de la licencia Llama 3.1.
 
 ## Especificaciones tecnicas
 
@@ -64,16 +64,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / destino | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Meta-Llama-3.1-8B-Instruct_rai_1.9.0_m_1.0.1_npu | 8B | 128k (base) | ONNX / NPU Ryzen AI | llama3.1 | Gated en HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | safetensors / GPU | llama3.1 | Publico en HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | safetensors / GPU | Apache 2.0 | Publico en HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7B | 128k | safetensors / GPU | Apache 2.0 | Publico en HuggingFace |
+| amd/Meta-Llama-3.1-8B-Instruct_rai_1.9.0_m_1.0.1_npu | 8B | 128k (base) | ONNX / NPU Ryzen AI | llama3.1 | Gated en Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | safetensors / GPU | llama3.1 | Publico en Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | safetensors / GPU | Apache 2.0 | Publico en Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7B | 128k | safetensors / GPU | Apache 2.0 | Publico en Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia; no hay datos de rendimiento publicados para la variante de AMD que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar la licencia Llama 3.1 en HuggingFace.
+- Acceso restringido: el repositorio es gated y requiere aceptar la licencia Llama 3.1 en Hugging Face.
 - Licencia Llama 3.1: impone restricciones de uso (por ejemplo, clausula de usuarios con mas de 700 millones de usuarios mensuales y prohibiciones de uso especificas); revisar antes de uso comercial.
 - Idioma: la model card declara solo `en`; el rendimiento en castellano no esta validado en esta distribucion.
 - Conversion ONNX/NPU: no se documenta el esquema de cuantizacion ni las perdidas de calidad asociadas; el rendimiento puede diferir del modelo base en FP16.
@@ -85,7 +85,7 @@ La comparativa se limita a parametros, contexto y licencia; no hay datos de rend
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Meta-Llama-3.1-8B-Instruct_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Meta-Llama-3.1-8B-Instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - Ryzen AI Software (AMD): https://www.amd.com/en/developer/resources/ryzen-ai-software.html

@@ -106,7 +106,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jren313/starvla-pipette-aim-r1
+- Modelo en Hugging Face: https://huggingface.co/jren313/starvla-pipette-aim-r1
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jren313/g1-pipette-2view-teleop0925-5task-eerel
 - Repositorio de starVLA: https://github.com/starVLA/starVLA
@@ -117,4 +117,4 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 - Fase 4: https://huggingface.co/jren313/starvla-pipette-tube-return-r1
 - Fase 5: https://huggingface.co/jren313/starvla-pipette-return-r1
 
-Nota: la búsqueda web realizada no ha devuelto ningún resultado relacionado con este modelo, con GR00T, con starVLA ni con robótica de manipulación; los enlaces anteriores proceden íntegramente de la información de HuggingFace proporcionada.
+Nota: la búsqueda web realizada no ha devuelto ningún resultado relacionado con este modelo, con GR00T, con starVLA ni con robótica de manipulación; los enlaces anteriores proceden íntegramente de la información de Hugging Face proporcionada.

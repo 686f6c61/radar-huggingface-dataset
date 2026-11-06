@@ -4,9 +4,9 @@
 
 El repositorio `carlogonzalesman/paper-vision-language-pretraining-2024` no es un modelo entrenado, sino un cuaderno de notas de investigación sobre preentrenamiento visión-lenguaje. Su propio README lo describe como "reading notes and an experiment sketch" y declara explícitamente que no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni checkpoint entrenado. Los dos únicos artefactos del repositorio son `paper_notes.md` y `README.md`; no hay pesos utilizables ni pipeline de inferencia definido.
 
-El repositorio está etiquetado con `safetensors` y `transformer`, y los metadatos de HuggingFace reportan 24.832 parámetros totales con un tamaño de repositorio de 0,0 GB. Este valor es coherente con un artefacto residual o de prueba, no con un modelo de visión-lenguaje funcional, y en cualquier caso no existe documentación que describa su arquitectura, sus datos de entrenamiento o su tokenizador. La licencia declarada es CC BY 4.0, lo que permite uso comercial con atribución, pero al no haber pesos ni código, la licencia afecta únicamente al texto de las notas.
+El repositorio está etiquetado con `safetensors` y `transformer`, y los metadatos de Hugging Face reportan 24.832 parámetros totales con un tamaño de repositorio de 0,0 GB. Este valor es coherente con un artefacto residual o de prueba, no con un modelo de visión-lenguaje funcional, y en cualquier caso no existe documentación que describa su arquitectura, sus datos de entrenamiento o su tokenizador. La licencia declarada es CC BY 4.0, lo que permite uso comercial con atribución, pero al no haber pesos ni código, la licencia afecta únicamente al texto de las notas.
 
-La relevancia de esta ficha es, por tanto, metodológica: sirve como ejemplo de repositorio de investigación en fase exploratoria y como advertencia sobre artefactos de HuggingFace que aparecen indexados como modelos sin serlo. Cualquier evaluación de capacidades, benchmarks o requisitos de hardware es inaplicable en el estado actual del repositorio.
+La relevancia de esta ficha es, por tanto, metodológica: sirve como ejemplo de repositorio de investigación en fase exploratoria y como advertencia sobre artefactos de Hugging Face que aparecen indexados como modelos sin serlo. Cualquier evaluación de capacidades, benchmarks o requisitos de hardware es inaplicable en el estado actual del repositorio.
 
 ## Especificaciones técnicas
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, la model card indica de forma explícita que el repo
 - Consulta bibliográfica sobre preentrenamiento visión-lenguaje: el repositorio puede leerse como punto de partida para localizar preguntas de investigación abiertas y referencias, aunque las referencias deben verificarse de forma independiente.
 - Diseño de un protocolo experimental: las notas proponen comparaciones con líneas base emparejadas y mencionan comprobaciones de reproducibilidad, lo que puede servir de plantilla para planificar un estudio propio.
 - Identificación de factores de confusión: el documento enumera posibles confounders del área, útil para revisar el diseño de un experimento antes de ejecutarlo.
-- Auditoría de artefactos en HuggingFace: este repositorio es un caso de estudio sobre cómo un cuaderno de notas puede quedar indexado con etiquetas de modelo (`safetensors`, `transformer`) sin contener un modelo utilizable.
+- Auditoría de artefactos en Hugging Face: este repositorio es un caso de estudio sobre cómo un cuaderno de notas puede quedar indexado con etiquetas de modelo (`safetensors`, `transformer`) sin contener un modelo utilizable.
 - Formación y docencia: sirve para ilustrar la diferencia entre notas de investigación, hipótesis y resultados experimentales validados.
 - No es adecuado para ninguno de los casos de uso propios de un modelo visión-lenguaje (captioning, VQA, búsqueda multimodal, generación de código, atención al cliente, agentes) porque no existen pesos funcionales ni API de inferencia documentada.
 
@@ -85,7 +85,7 @@ No procede una comparativa con modelos de la misma categoría, porque este repos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/carlogonzalesman/paper-vision-language-pretraining-2024
+- Hugging Face: https://huggingface.co/carlogonzalesman/paper-vision-language-pretraining-2024
 - Model card (README): https://huggingface.co/carlogonzalesman/paper-vision-language-pretraining-2024/blob/main/README.md
 - Notas principales (`paper_notes.md`): https://huggingface.co/carlogonzalesman/paper-vision-language-pretraining-2024/blob/main/paper_notes.md
 - Paper, blog, repositorio de código o demo asociados: no disponibles en la información proporcionada. Los resultados de la búsqueda web no contienen enlaces relevantes para este repositorio.

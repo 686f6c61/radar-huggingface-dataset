@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theconstruct-ai/raw-merged-1000 | 3,14 B | no disponible | VLA para Unitree G1 (sorting) | Apache 2.0 | HuggingFace |
-| nvidia/GR00T-N1.7-3B | 3 B (aprox.) | no disponible | VLA fundacional para humanoides | no disponible en la informacion | HuggingFace (modelo base) |
+| theconstruct-ai/raw-merged-1000 | 3,14 B | no disponible | VLA para Unitree G1 (sorting) | Apache 2.0 | Hugging Face |
+| nvidia/GR00T-N1.7-3B | 3 B (aprox.) | no disponible | VLA fundacional para humanoides | no disponible en la informacion | Hugging Face (modelo base) |
 | Otros VLA para humanoides (p. ej. variantes de OpenVLA, RT-2) | no disponible | no disponible | Manipulación robótica general | no disponible | no disponible |
 
 La comparación directa con alternativas queda limitada porque la información proporcionada solo identifica el modelo base nvidia/GR00T-N1.7-3B. No se dispone de datos de rendimiento ni de especificaciones de contexto para establecer una comparativa cuantitativa con otros VLA.
@@ -89,7 +89,7 @@ La comparación directa con alternativas queda limitada porque la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theconstruct-ai/raw-merged-1000
+- Modelo en Hugging Face: https://huggingface.co/theconstruct-ai/raw-merged-1000
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/theconstruct-ai/merged_dataset
 - Subconjunto de dataset: https://huggingface.co/datasets/theconstruct-ai/sort_packages_real

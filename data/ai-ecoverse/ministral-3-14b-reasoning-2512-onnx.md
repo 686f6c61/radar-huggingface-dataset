@@ -109,7 +109,7 @@ La comparación relevante es con el checkpoint base en PyTorch: este repositorio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ai-ecoverse/Ministral-3-14B-Reasoning-2512-ONNX
+- Repositorio Hugging Face: https://huggingface.co/ai-ecoverse/Ministral-3-14B-Reasoning-2512-ONNX
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512
 - Exportación oficial de referencia (3B ONNX): https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-ONNX
 - Prompt de sistema recomendado: https://huggingface.co/ai-ecoverse/Ministral-3-14B-Reasoning-2512-ONNX/blob/main/SYSTEM_PROMPT.txt

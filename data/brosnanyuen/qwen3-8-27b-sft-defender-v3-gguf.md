@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`brosnanyuen/Qwen3.8-27B-SFT-Defender-v3-GGUF` es un repositorio de pesos en formato GGUF publicado por el usuario brosnanyuen en HuggingFace. Por la nomenclatura del identificador se deduce que se trata de un ajuste fino (SFT, *supervised fine-tuning*) de un modelo base de la familia Qwen, con aproximadamente 27.320.697.856 parametros totales segun los datos del repositorio, y con la etiqueta "v3" indicando una tercera iteracion del ajuste. El sufijo "Defender" apunta a un ajuste orientado a tareas de defensa, seguridad o moderacion, aunque no hay documentacion publicada que lo confirme.
+`brosnanyuen/Qwen3.8-27B-SFT-Defender-v3-GGUF` es un repositorio de pesos en formato GGUF publicado por el usuario brosnanyuen en Hugging Face. Por la nomenclatura del identificador se deduce que se trata de un ajuste fino (SFT, *supervised fine-tuning*) de un modelo base de la familia Qwen, con aproximadamente 27.320.697.856 parametros totales segun los datos del repositorio, y con la etiqueta "v3" indicando una tercera iteracion del ajuste. El sufijo "Defender" apunta a un ajuste orientado a tareas de defensa, seguridad o moderacion, aunque no hay documentacion publicada que lo confirme.
 
 La relevancia de esta ficha es limitada y conviene ser explicito al respecto: el repositorio no incluye *model card* descriptiva, no declara licencia, no declara idiomas soportados, no especifica la arquitectura exacta ni el dataset de entrenamiento, y acumula 35 descargas y 0 *likes* desde su creacion el 21 de septiembre de 2026. Se trata, por tanto, de un artefacto de pesos sin documentacion tecnica asociada, lo que dificulta cualquier evaluacion rigurosa previa a su uso en produccion.
 
@@ -35,7 +35,7 @@ Tampoco se documenta si el modelo base es denso o de mezcla de expertos (MoE). E
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo esta preparado para interacciones de chat multi-turno, presumiblemente mediante una plantilla de chat compatible con el formato Qwen.
 - Ajuste especializado: el sufijo "Defender" sugiere un entrenamiento orientado a tareas de defensa, moderacion o seguridad, pero no hay documentacion que describa que comportamientos concretos se han reforzado.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto esta preparado para desplegarse mediante los *Inference Endpoints* de HuggingFace con un servidor compatible con GGUF.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto esta preparado para desplegarse mediante los *Inference Endpoints* de Hugging Face con un servidor compatible con GGUF.
 - Razonamiento, generacion de codigo, matematicas, vision, tool calling, capacidades de agente y soporte multilingue: no disponible. No hay ninguna fuente en la informacion proporcionada que permita confirmar o descartar estas capacidades.
 
 ## Casos de uso
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia (calculada a partir del recuento de parametros, no medida): en FP16 serian necesarios aproximadamente 55 GB solo para los pesos; en cuantizacion de 8 bits, unos 27-29 GB; en cuantizacion de 4 bits, unos 15-17 GB. Estas cifras no incluyen la memoria necesaria para la cache KV, que crece con la longitud de contexto.
 - GPU recomendadas: para FP16, una A100 de 80 GB o una H100 de 80 GB. Para cuantizaciones de 4-5 bits, una RTX 4090, RTX 3090 o L40S con 24 GB de VRAM son suficientes para los pesos.
 - Cabe en GPU consumer: si, previsiblemente, en tarjetas con 24 GB de VRAM (RTX 3090, RTX 4090) usando cuantizaciones de 4-5 bits y contextos moderados. No hay confirmacion publicada de que esto se haya probado.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF. La etiqueta `endpoints_compatible` sugiere ademas soporte en los Inference Endpoints de HuggingFace. No se ha confirmado compatibilidad con vLLM ni TGI, que tipicamente requieren safetensors.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF. La etiqueta `endpoints_compatible` sugiere ademas soporte en los Inference Endpoints de Hugging Face. No se ha confirmado compatibilidad con vLLM ni TGI, que tipicamente requieren safetensors.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-SFT-Defender-v3-GGUF | 27,3 mil millones | no disponible | no disponible | no disponible | GGUF en HuggingFace |
+| Qwen3.8-27B-SFT-Defender-v3-GGUF | 27,3 mil millones | no disponible | no disponible | no disponible | GGUF en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brosnanyuen/Qwen3.8-27B-SFT-Defender-v3-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/brosnanyuen/Qwen3.8-27B-SFT-Defender-v3-GGUF
 - Paper, blog o repositorio del autor: no disponible
 - Demo o espacio asociado: no disponible
 - Resultados de benchmarks: no disponible

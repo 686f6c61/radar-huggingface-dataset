@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nest102/god07 es un repositorio de pesos publicado en HuggingFace por el usuario nest102 el 11 de septiembre de 2026 y actualizado al dia siguiente. Se trata de un repositorio de gran tamano (32,4 GB) que, sin embargo, no incluye model card, no declara pipeline, licencia ni idiomas soportados, y acumula 0 descargas y 1 like en el momento de la consulta. El unico tag asociado es region:us, un metadato generico de la plataforma que no aporta informacion tecnica sobre el modelo.
+nest102/god07 es un repositorio de pesos publicado en Hugging Face por el usuario nest102 el 11 de septiembre de 2026 y actualizado al dia siguiente. Se trata de un repositorio de gran tamano (32,4 GB) que, sin embargo, no incluye model card, no declara pipeline, licencia ni idiomas soportados, y acumula 0 descargas y 1 like en el momento de la consulta. El unico tag asociado es region:us, un metadato generico de la plataforma que no aporta informacion tecnica sobre el modelo.
 
 No se ha podido obtener ninguna informacion adicional mediante busqueda web: los resultados devueltos corresponden a una empresa energetica austriaca (VERBUND) y no guardan relacion alguna con el repositorio. En consecuencia, no es posible confirmar la arquitectura, el numero de parametros, la longitud de contexto, el proceso de entrenamiento ni las capacidades reales del modelo.
 
@@ -85,7 +85,7 @@ No disponible. No ha sido posible identificar modelos comparables porque se desc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nest102/god07 | no disponible | no disponible | no disponible | Repositorio en HuggingFace (32,4 GB) |
+| nest102/god07 | no disponible | no disponible | no disponible | Repositorio en Hugging Face (32,4 GB) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,6 +102,6 @@ No disponible. No ha sido posible identificar modelos comparables porque se desc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nest102/god07
+- Hugging Face: https://huggingface.co/nest102/god07
 - Resultados de busqueda web: sin resultados relevantes. Las busquedas devolvieron unicamente paginas de la empresa energetica austriaca VERBUND (verbund.com, de.wikipedia.org/wiki/Verbund_AG), sin ninguna relacion con el modelo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

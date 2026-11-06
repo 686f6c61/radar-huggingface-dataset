@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 - Riesgo de alucinacion: no se ha evaluado especificamente; se recomienda validar las respuestas en aplicaciones criticas.
 - Limitaciones de contexto: no se ha confirmado la longitud de contexto; si es menor que la de Qwen3.6, podria limitar el procesamiento de documentos largos.
 - Idioma: solo se soporta ingles de forma confirmada; otros idiomas pueden funcionar pero sin garantias.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso al modelo base requiere solicitud (gated) en HuggingFace, lo que puede suponer una barrera para algunos usuarios.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso al modelo base requiere solicitud (gated) en Hugging Face, lo que puede suponer una barrera para algunos usuarios.
 - Caveat de produccion: la reduccion de tokens de razonamiento puede afectar a tareas que requieren razonamiento muy profundo o pasos intermedios extensos; se recomienda probar en el caso de uso concreto.
 
 ## Enlaces

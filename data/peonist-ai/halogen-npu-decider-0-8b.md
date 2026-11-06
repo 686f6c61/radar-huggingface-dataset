@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado (benchmarks, latencia, precisió
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peonist-ai/halogen-npu-decider-0.8b
+- Modelo en Hugging Face: https://huggingface.co/peonist-ai/halogen-npu-decider-0.8b
 - Modelo base: https://huggingface.co/Mapika/decider-0.8b
 - Modelo base del ajuste fino: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Servidor halogen-flash-server: https://github.com/peonist-ai/halogen-flash-server

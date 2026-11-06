@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
 | BaoKhuong/qwen3-asr-1.7b-vimd-full-GGUF | 2,04 mil millones | No disponible | Vietnamita | Apache-2.0 | GGUF (F16, Q8_0, Q4_1) | Conversion comunitaria; sin benchmarks publicados |
-| duclvQ/qwen3-asr-1.7b-vimd-full | 2,04 mil millones | No disponible | Vietnamita | Apache-2.0 | BF16 (HuggingFace) | Checkpoint original del ajuste fino; incluye variantes HQQ Q8 y Q4 |
+| duclvQ/qwen3-asr-1.7b-vimd-full | 2,04 mil millones | No disponible | Vietnamita | Apache-2.0 | BF16 (Hugging Face) | Checkpoint original del ajuste fino; incluye variantes HQQ Q8 y Q4 |
 | Qwen3-ASR-1.7B (base) | 1,7 mil millones (nominal) | No disponible | No disponible | No disponible | No disponible | Modelo base de la familia Qwen3-ASR antes del ajuste en vietnamita |
 
 La comparacion se limita a los modelos citados en la informacion proporcionada; no se dispone de datos de rendimiento que permitan contrastar calidad de transcripcion entre alternativas.
@@ -86,7 +86,7 @@ La comparacion se limita a los modelos citados en la informacion proporcionada; 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BaoKhuong/qwen3-asr-1.7b-vimd-full-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BaoKhuong/qwen3-asr-1.7b-vimd-full-GGUF
 - Modelo base (ajuste fino original): https://huggingface.co/duclvQ/qwen3-asr-1.7b-vimd-full
 - Herramienta de conversion qwen3-asr.cpp: https://github.com/predict-woo/qwen3-asr.cpp
 - Script de conversion: https://github.com/predict-woo/qwen3-asr.cpp/blob/main/scripts/convert_hf_to_gguf.py

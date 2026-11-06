@@ -94,8 +94,8 @@ No se dispone en la informacion proporcionada de comparaciones con otros sistema
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Bharath0209/nemotron-3.5-asr-streaming-0.6b-q6k-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
+- Repositorio Hugging Face: https://huggingface.co/Bharath0209/nemotron-3.5-asr-streaming-0.6b-q6k-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Conversion Q8_0 de referencia (mudler): https://huggingface.co/mudler/parakeet-cpp-gguf
 - Repositorio `parakeet.cpp`: https://github.com/mudler/parakeet.cpp
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

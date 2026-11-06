@@ -71,9 +71,9 @@ Datos adicionales aportados en la model card: las respuestas de código alcanzan
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ingot-27B-DFlash2-MLX (este) | 1,83 B | no disponible | Drafter especulativo para MLX en Apple Silicon | Apache 2.0 | HuggingFace, 65 descargas |
-| Ingot-27B-DFlash2 | no disponible | no disponible | Drafter especulativo, variante GGUF para llama.cpp en NVIDIA | Apache 2.0 | HuggingFace |
-| z-lab/Qwen3.8-27B-DFlash2 | no disponible | no disponible | Drafter especulativo upstream del que deriva este modelo | Apache 2.0 | HuggingFace |
+| Ingot-27B-DFlash2-MLX (este) | 1,83 B | no disponible | Drafter especulativo para MLX en Apple Silicon | Apache 2.0 | Hugging Face, 65 descargas |
+| Ingot-27B-DFlash2 | no disponible | no disponible | Drafter especulativo, variante GGUF para llama.cpp en NVIDIA | Apache 2.0 | Hugging Face |
+| z-lab/Qwen3.8-27B-DFlash2 | no disponible | no disponible | Drafter especulativo upstream del que deriva este modelo | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos tres modelos en la información proporcionada, más allá de la referencia del autor a que el drafter GGUF en llama.cpp logra 1,8x sobre decodificación simple en NVIDIA frente al 1,23x medido en M3 Ultra con MLX.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos entre estos tres modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-27B-DFlash2-MLX
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-27B-DFlash2-MLX
 - Modelo base (drafter original): https://huggingface.co/dendriteholdings/Ingot-27B-DFlash2
 - Drafter upstream: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Paper DFlash (arXiv:2602.06036): https://arxiv.org/abs/2602.06036

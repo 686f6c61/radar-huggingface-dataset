@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen36-35b-merged-ta_l0.7 | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| qwen36-35b-merged-ta_l0.7 | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | Otros adaptadores fusionados de la misma familia | no disponible | no disponible | no disponible | no disponible | no se han identificado alternativas comparables en la informacion disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo ni con la familia Qwen3.6; los unicos resultados obtenidos fueron paginas de contenido para adultos sin relacion alguna con el modelo, por lo que se han descartado como fuente.
@@ -91,9 +91,9 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ssyhw7/qwen36-35b-merged-ta_l0.7
+- Repositorio en Hugging Face: https://huggingface.co/ssyhw7/qwen36-35b-merged-ta_l0.7
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de codigo, datos y evaluacion del autor: https://github.com/HanyangWang0418-oss/qwen36-merge-takehome
-- Fichero de receta de fusion: merge_recipe.json (incluido en el repositorio de HuggingFace, sin URL directa confirmada)
+- Fichero de receta de fusion: merge_recipe.json (incluido en el repositorio de Hugging Face, sin URL directa confirmada)
 - Paper, blog o demo oficial: no disponible
 - Busqueda web: no se encontro ningun resultado relevante sobre este modelo ni sobre la familia Qwen3.6; los resultados devueltos eran paginas de contenido para adultos sin relacion con el modelo y se han descartado.

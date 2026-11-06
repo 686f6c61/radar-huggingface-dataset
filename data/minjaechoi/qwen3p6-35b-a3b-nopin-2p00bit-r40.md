@@ -92,10 +92,10 @@ No se dispone de informacion recuperada sobre alternativas publicas de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-nopin-2p00bit-r40
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-nopin-2p00bit-r40
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Perfil del autor: https://huggingface.co/minjaechoi
-- Checkpoint hermano r6 en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r6
+- Checkpoint hermano r6 en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r6
 - Checkpoint hermano r5 en Featherless: https://featherless.ai/models/minjaechoi/qwen36-35b-a3b-2p00bit-r5
 - Checkpoint hermano r6 en Featherless: https://featherless.ai/models/minjaechoi/qwen36-35b-a3b-2p00bit-r6
 - Ficha relacionada en LLM Explorer (Qwen3.6 35B A3B TWLA Experts Only): https://llm-explorer.com/model/minjaechoi%2FQwen3.6-35B-A3B-TWLA-Experts-Only,7ogWXNK7sZGQvjqMz9cdGi

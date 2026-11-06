@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Uigyu/qwen_2.5_3b_mh-wf_h2_a_s1` es un fine-tuning de la arquitectura Qwen 2.5 3B publicado por el usuario Uigyu en HuggingFace. El nombre sugiere que parte del checkpoint base Qwen 2.5 3B, y la presencia de la etiqueta `unsloth` indica que el ajuste se realizó con el framework Unsloth, conocido por optimizar el entrenamiento de modelos de lenguaje mediante técnicas de eficiencia de memoria y velocidad. La nomenclatura "mh-wf_h2_a_s1" no está documentada en la model card, por lo que su significado concreto (posiblemente relacionado con hiperparámetros o configuración de entrenamiento) es desconocido.
+El modelo `Uigyu/qwen_2.5_3b_mh-wf_h2_a_s1` es un fine-tuning de la arquitectura Qwen 2.5 3B publicado por el usuario Uigyu en Hugging Face. El nombre sugiere que parte del checkpoint base Qwen 2.5 3B, y la presencia de la etiqueta `unsloth` indica que el ajuste se realizó con el framework Unsloth, conocido por optimizar el entrenamiento de modelos de lenguaje mediante técnicas de eficiencia de memoria y velocidad. La nomenclatura "mh-wf_h2_a_s1" no está documentada en la model card, por lo que su significado concreto (posiblemente relacionado con hiperparámetros o configuración de entrenamiento) es desconocido.
 
 El repositorio es extremadamente minimalista: la model card es una plantilla autogenerada sin ninguna sección completada. No se especifican el autor del modelo base, el dataset de entrenamiento, la licencia, los idiomas soportados ni los resultados de evaluación. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño del repositorio es de 0,1 GB, consistente con un checkpoint de 3B parámetros en formato `safetensors` con cuantización ligera o pesos completos comprimidos.
 
@@ -37,10 +37,10 @@ Dada la falta de documentación y validación, no es posible recomendar casos de
 
 - **Prototipado experimental**: un investigador podría cargar el modelo en un entorno local para explorar si el ajuste ha producido algún comportamiento interesante en tareas específicas (por ejemplo, matemáticas o razonamiento simbólico), aunque sin métricas publicadas esto sería especulativo.
 - **Validación de pipelines de fine-tuning**: el modelo podría servir como referencia para comparar el flujo de entrenamiento de Unsloth con otros checkpoints de la misma familia, siempre que el usuario tenga acceso a los datos de entrenamiento (que no se publican).
-- **Pruebas de compatibilidad técnica**: se puede verificar que el modelo carga correctamente con la biblioteca `transformers` y con servidores de inferencia compatibles (la etiqueta `endpoints_compatible` sugiere que funciona con la API de inferencia de HuggingFace), lo que es útil para probar infraestructura.
+- **Pruebas de compatibilidad técnica**: se puede verificar que el modelo carga correctamente con la biblioteca `transformers` y con servidores de inferencia compatibles (la etiqueta `endpoints_compatible` sugiere que funciona con la API de inferencia de Hugging Face), lo que es útil para probar infraestructura.
 - **Investigación de transferencia de conocimiento**: comparar el comportamiento de este checkpoint con el modelo base Qwen 2.5 3B puede arrojar luz sobre el efecto del fine-tuning, si el autor publica los detalles del entrenamiento.
 - **Pruebas de cuantización**: con un tamaño de repo de 0,1 GB, se puede experimentar con cuantizaciones adicionales (GGUF, GPTQ) para verificar la viabilidad de despliegue en hardware limitado.
-- **Educación y experimentación**: los estudiantes pueden usar este modelo como ejemplo práctico de un checkpoint de HuggingFace con estructura incompleta para aprender a evaluar la calidad de un modelo antes de usarlo.
+- **Educación y experimentación**: los estudiantes pueden usar este modelo como ejemplo práctico de un checkpoint de Hugging Face con estructura incompleta para aprender a evaluar la calidad de un modelo antes de usarlo.
 
 ## Benchmarks y rendimiento
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada para inferencia**: para un modelo de 3B parámetros en fp16, se requieren aproximadamente 6-7 GB de VRAM. Con cuantización de 8 bits, alrededor de 3,5 GB, y con 4 bits, unos 2 GB. Sin embargo, estos valores son estimaciones genéricas para modelos de 3B y no se ha confirmado el formato de pesos de este checkpoint concreto.
 - **GPU recomendadas**: una RTX 3060 (12 GB), RTX 4060 (8 GB) o superior sería suficiente para inferencia en fp16. Para cuantización de 4 bits, una GPU con 4-6 GB de VRAM (como una RTX 3050 o incluso una integrada con memoria compartida) podría funcionar.
 - **Compatibilidad con GPU de consumo**: sí, un modelo de 3B es perfectamente ejecutable en hardware de consumo.
-- **Opciones de despliegue**: al ser un modelo de la librería `transformers` con pesos en `safetensors`, se puede cargar con `transformers`, `vLLM`, `TGI` (si es compatible con la arquitectura) y, tras conversión, con `llama.cpp` u `Ollama`. La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace.
+- **Opciones de despliegue**: al ser un modelo de la librería `transformers` con pesos en `safetensors`, se puede cargar con `transformers`, `vLLM`, `TGI` (si es compatible con la arquitectura) y, tras conversión, con `llama.cpp` u `Ollama`. La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face.
 - **Latencia y throughput**: no disponible.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparación con Qwen 2.5 3B base es la más relevante, ya que este modelo es
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-wf_h2_a_s1)
+- [Modelo en Hugging Face](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-wf_h2_a_s1)
 - [Framework Unsloth (referencia de la etiqueta)](https://github.com/unslothai/unsloth)
-- [Qwen 2.5 3B base en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-3B) (modelo base del que deriva el nombre, no confirmado por el autor)
+- [Qwen 2.5 3B base en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-3B) (modelo base del que deriva el nombre, no confirmado por el autor)
 - [Referencia arxiv:1910.09700 (citada en la model card, es el paper de Lacoste et al. sobre impacto ambiental)](https://arxiv.org/abs/1910.09700)

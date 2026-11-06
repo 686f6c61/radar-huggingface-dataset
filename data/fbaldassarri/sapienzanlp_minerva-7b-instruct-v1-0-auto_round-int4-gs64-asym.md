@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Repositorio cuantizado en HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_round-int4-gs64-asym
+- Repositorio cuantizado en Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_round-int4-gs64-asym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0
 - Documentacion tecnica de Minerva: https://minerva-ai.org/en/docs/tech-page
 - Intel AutoRound (framework de cuantizacion): https://github.com/intel/auto-round

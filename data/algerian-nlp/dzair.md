@@ -95,7 +95,7 @@ Diagnosticos declarados por el autor: el test de 92 filas no resuelve diferencia
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DZAIR | 105.304.320 | no disponible | Ver tabla de benchmarks (gana en Narabizi arabizi y Ranim foro; pierde en Twitter, emociones, DID y tema) | apache-2.0 | HuggingFace, transformers con trust_remote_code |
+| DZAIR | 105.304.320 | no disponible | Ver tabla de benchmarks (gana en Narabizi arabizi y Ranim foro; pierde en Twitter, emociones, DID y tema) | apache-2.0 | Hugging Face, transformers con trust_remote_code |
 | DziriBERT | no disponible en la informacion proporcionada (el autor afirma que DZAIR usa un 20 por ciento menos de parametros en el backbone) | no disponible | Referencia en la tabla comparativa anterior; entrenado sobre un unico crawl de 1,1 millones de tuits | no disponible | no disponible en la informacion proporcionada |
 | Otros encoders arabes (por ejemplo MARBERT o AraBERT) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -119,7 +119,7 @@ La unica comparacion cuantitativa disponible es la de DziriBERT bajo el protocol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/algerian-nlp/DZAIR
+- Modelo en Hugging Face: https://huggingface.co/algerian-nlp/DZAIR
 - Referencia metodologica citada por el autor para la evaluacion con pseudo-log-verosimilitud MLM: Salazar et al. 2020 (sin enlace proporcionado en la informacion disponible)
 - Suite de evaluacion DziriEval: mencionada por el autor, sin enlace proporcionado
 - Conjuntos de datos citados: Narabizi sentiment, Ranim sentiment, Twifil sentiment, Twifil emotion, Algerian sentiment social, DID Algiers vs MSA, Narabizi topic (sin enlaces proporcionados)

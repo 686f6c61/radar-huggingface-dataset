@@ -73,10 +73,10 @@ No se identifican modelos directamente comparables publicados con el mismo esque
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TraceML-Labelers (`state/`, `action/`) | ~1,7B por etiquetador | no disponible | Clasificacion generativa con esquema JSON cerrado sobre codigo de ML | Apache-2.0 | HuggingFace, safetensors, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-1.7B (base) | ~1,7B | no disponible en la informacion proporcionada | Generacion de texto y codigo de proposito general | Apache-2.0 | Ampliamente disponible en HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct | ~1,5B | no disponible en la informacion proporcionada | Generacion y asistencia de codigo | Apache-2.0 | Ampliamente disponible en HuggingFace |
-| SmolLM2-1.7B-Instruct | ~1,7B | no disponible en la informacion proporcionada | Generacion de texto de proposito general | Apache-2.0 | Ampliamente disponible en HuggingFace |
+| TraceML-Labelers (`state/`, `action/`) | ~1,7B por etiquetador | no disponible | Clasificacion generativa con esquema JSON cerrado sobre codigo de ML | Apache-2.0 | Hugging Face, safetensors, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3-1.7B (base) | ~1,7B | no disponible en la informacion proporcionada | Generacion de texto y codigo de proposito general | Apache-2.0 | Ampliamente disponible en Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | ~1,5B | no disponible en la informacion proporcionada | Generacion y asistencia de codigo | Apache-2.0 | Ampliamente disponible en Hugging Face |
+| SmolLM2-1.7B-Instruct | ~1,7B | no disponible en la informacion proporcionada | Generacion de texto de proposito general | Apache-2.0 | Ampliamente disponible en Hugging Face |
 
 Rendimiento comparado: no disponible. La ficha de TraceML-Labelers no publica metricas que permitan comparar calidad de etiquetado frente a estas alternativas ni frente al profesor GPT que genero las etiquetas.
 
@@ -96,7 +96,7 @@ Rendimiento comparado: no disponible. La ficha de TraceML-Labelers no publica me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jerryyan/TraceML-Labelers
+- Modelo en Hugging Face: https://huggingface.co/jerryyan/TraceML-Labelers
 - Subcarpeta del etiquetador de estado: https://huggingface.co/jerryyan/TraceML-Labelers/tree/main/state
 - Subcarpeta del etiquetador de acción: https://huggingface.co/jerryyan/TraceML-Labelers/tree/main/action
 - Dataset TraceML: https://huggingface.co/datasets/jerryyan/TraceML

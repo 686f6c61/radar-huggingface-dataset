@@ -12,7 +12,7 @@ La ficha se limita a lo que consta en la informacion disponible: no hay datos pu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5 (transformer multimodal, segun tag de HuggingFace); detalles internos no disponibles |
+| Arquitectura | qwen3_5 (transformer multimodal, segun tag de Hugging Face); detalles internos no disponibles |
 | Parametros totales | 8.953.803.264 (~8,95B) |
 | Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -32,7 +32,7 @@ El proceso de entrenamiento del modelo base Qwen3.5-9B no se documenta en esta f
 - Generacion de texto conversacional multi-turno (pipeline conversational).
 - Entrada multimodal imagen-texto: el pipeline image-text-to-text implica capacidad de procesar imagenes junto a texto, aunque no se detallan tareas concretas (VQA, captioning, OCR).
 - Modelo "abliterated": responde sin las capas de rechazo tipicas del modelo alineado original, lo que amplia el rango de peticiones que atiende.
-- Ejecucion nativa en Apple Silicon via MLX (mlx-lm), con carga directa desde HuggingFace.
+- Ejecucion nativa en Apple Silicon via MLX (mlx-lm), con carga directa desde Hugging Face.
 - Soporte de chat template (el ejemplo de la model card usa apply_chat_template).
 - Tool calling / function calling: no disponible en la informacion.
 - Capacidades de agente o razonamiento multi-paso: no disponible en la informacion.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/djtheron/Qwen3.5-9B-heretic-v2-mlx-4Bit
+- Hugging Face: https://huggingface.co/djtheron/Qwen3.5-9B-heretic-v2-mlx-4Bit
 - Modelo base: https://huggingface.co/trohrbaugh/Qwen3.5-9B-heretic-v2
 - Modelo original Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE

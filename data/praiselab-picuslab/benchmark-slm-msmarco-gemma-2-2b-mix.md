@@ -4,7 +4,7 @@
 
 `praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-mix` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base `google/gemma-2-2b`. No se trata, por tanto, de un modelo completo, sino de un conjunto de pesos de ajuste fino (el repositorio ocupa 0,1 GB) que debe cargarse junto al modelo base para poder utilizarse. El autor es la organización `praiselab-picuslab` y el artefacto está pensado, a juzgar por su nombre y sus tags (`benchmark-slm`, `or2`, `dataset-msmarco`, `strategy-mix`), como pieza de un banco de pruebas interno de modelos de lenguaje pequeños (SLM) sobre el corpus MS MARCO.
 
-La relevancia del repositorio es fundamentalmente metodológica: sirve para reproducir o comparar una configuración concreta de ajuste fino (aparentemente una "estrategia mix", sin documentar) frente a otras variantes del mismo benchmark. No hay model card con detalles de entrenamiento, hiperparámetros, datos exactos ni evaluación, y el acceso está restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de su descarga.
+La relevancia del repositorio es fundamentalmente metodológica: sirve para reproducir o comparar una configuración concreta de ajuste fino (aparentemente una "estrategia mix", sin documentar) frente a otras variantes del mismo benchmark. No hay model card con detalles de entrenamiento, hiperparámetros, datos exactos ni evaluación, y el acceso está restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de su descarga.
 
 Al estar construido sobre Gemma 2 2B, hereda las capacidades del modelo base (transformer decoder-only de 2,6 mil millones de parámetros y 8.192 tokens de contexto según la documentación de Google), pero también sus limitaciones: ventana de contexto moderada, entrenamiento predominantemente en inglés y una licencia de uso específica. Cualquier cifra de rendimiento del adaptador es, a día de hoy, no verificable.
 
@@ -67,7 +67,7 @@ La comparación se establece con los modelos base sobre los que podría construi
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Adaptador evaluado (`gemma-2-2b-mix`) | Adaptador LoRA sobre 2,6 B | No disponible (base: 8.192 tokens) | No disponible; sujeta a términos de Gemma | en | Gated en HuggingFace |
+| Adaptador evaluado (`gemma-2-2b-mix`) | Adaptador LoRA sobre 2,6 B | No disponible (base: 8.192 tokens) | No disponible; sujeta a términos de Gemma | en | Gated en Hugging Face |
 | google/gemma-2-2b | 2,6 B | 8.192 tokens | Términos de uso de Gemma | Multilingüe (predominio de inglés) | Abierto con aceptación de términos |
 | Qwen/Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Apache 2.0 | Multilingüe (incluye español) | Abierto |
 | meta-llama/Llama-3.2-1B | 1,2 B | 131.072 tokens | Licencia comunitaria de Llama 3.2 | Multilingüe | Abierto con aceptación de términos |
@@ -76,7 +76,7 @@ No se dispone de resultados de benchmarks que permitan comparar la calidad de es
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y disponer de token de autenticación para descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y disponer de token de autenticación para descargar los pesos.
 - Licencia no declarada en el repositorio: el uso comercial queda condicionado por los términos de uso de Gemma del modelo base, que incluyen una política de uso aceptable y obligaciones de atribución; conviene revisarla antes de cualquier despliegue.
 - Idiomas: solo se declara inglés, por lo que no es adecuado para producción en castellano sin un ajuste adicional.
 - Ausencia total de documentación de entrenamiento (hiperparámetros, tamaño de dataset, epochs, precisión): impide reproducir el resultado y evaluar riesgos de sobreajuste al corpus MS MARCO.
@@ -89,7 +89,7 @@ No se dispone de resultados de benchmarks que permitan comparar la calidad de es
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-mix
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-mix
 - Modelo base Gemma 2 2B: https://huggingface.co/google/gemma-2-2b
 - Dataset MS MARCO referenciado en los tags: https://huggingface.co/datasets/microsoft/ms_marco
 - Paper, blog, repositorio de código o demo del autor: no disponible en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una colección de cuantizaciones GGUF estáticas del modelo Blueberry-TinyLlama-1.1B-Chat-v1.0, cuyo peso original publicó el usuario shreyanth en HuggingFace. El trabajo lo firma mradermacher, autor habitual de versiones cuantizadas de modelos abiertos para su uso con llama.cpp y otros runtimes compatibles con GGUF. No se trata de un modelo entrenado desde cero, sino de un artefacto de distribución: la conversión a GGUF del fine-tune citado, en doce variantes que cubren desde FP16 hasta Q2_K.
+Este repositorio contiene una colección de cuantizaciones GGUF estáticas del modelo Blueberry-TinyLlama-1.1B-Chat-v1.0, cuyo peso original publicó el usuario shreyanth en Hugging Face. El trabajo lo firma mradermacher, autor habitual de versiones cuantizadas de modelos abiertos para su uso con llama.cpp y otros runtimes compatibles con GGUF. No se trata de un modelo entrenado desde cero, sino de un artefacto de distribución: la conversión a GGUF del fine-tune citado, en doce variantes que cubren desde FP16 hasta Q2_K.
 
 El modelo subyacente parte de TinyLlama-1.1B-Chat-v1.0, un transformer decoder-only de aproximadamente 1.100 millones de parámetros derivado de la arquitectura Llama 2. Esa escala lo sitúa en la gama de modelos que caben holgadamente en GPUs de consumo e incluso en CPU, lo que lo hace interesante para prototipado local, entornos con recursos limitados y despliegues en el borde.
 

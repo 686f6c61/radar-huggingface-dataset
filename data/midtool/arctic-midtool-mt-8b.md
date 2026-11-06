@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arctic-MidTool-MT-8B es un modelo de lenguaje de 8.190 millones de parámetros desarrollado por MidTool, basado en el modelo base Qwen/Qwen3-8B-Base. Se trata de un fine-tuning orientado a tareas de agentes, uso de herramientas (tool use), llamadas a funciones y conversación, entrenado con el dataset propio MidTool/MidTool-Mix. El modelo está publicado bajo licencia Apache-2.0 y su acceso en HuggingFace es restringido (gated), por lo que se requiere aceptar las condiciones del repositorio para poder descargarlo.
+Arctic-MidTool-MT-8B es un modelo de lenguaje de 8.190 millones de parámetros desarrollado por MidTool, basado en el modelo base Qwen/Qwen3-8B-Base. Se trata de un fine-tuning orientado a tareas de agentes, uso de herramientas (tool use), llamadas a funciones y conversación, entrenado con el dataset propio MidTool/MidTool-Mix. El modelo está publicado bajo licencia Apache-2.0 y su acceso en Hugging Face es restringido (gated), por lo que se requiere aceptar las condiciones del repositorio para poder descargarlo.
 
 La relevancia de este modelo radica en su especialización para aplicaciones de agentes y herramientas, un campo en auge para el desarrollo de asistentes autónomos. Al derivar de Qwen3-8B-Base, hereda las capacidades generales de generación de texto, razonamiento y código de su base, aunque los detalles concretos de su entrenamiento y rendimiento no están documentados en la información pública disponible. Con cero descargas y cero likes, es un modelo reciente sin validación comunitaria.
 
@@ -67,7 +67,7 @@ Nota: los datos de contexto y rendimiento no están disponibles para ninguno de 
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: requiere aprobación en HuggingFace, lo que puede limitar su uso en entornos corporativos o de investigación.
+- **Acceso restringido**: requiere aprobación en Hugging Face, lo que puede limitar su uso en entornos corporativos o de investigación.
 - **Sin historial de uso**: 0 descargas y 0 likes, sin validación de la comunidad ni en producción.
 - **Riesgo de alucinación**: como cualquier LLM, puede generar información falsa o inventada, especialmente en tareas complejas.
 - **Sesgos**: al estar basado en Qwen3, hereda los sesgos del modelo base, que pueden incluir sesgos culturales o de género.
@@ -77,7 +77,7 @@ Nota: los datos de contexto y rendimiento no están disponibles para ninguno de 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/MidTool/Arctic-MidTool-MT-8B)
+- [Hugging Face del modelo](https://huggingface.co/MidTool/Arctic-MidTool-MT-8B)
 - [Variante relacionada: fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779](https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779)
 - [Artículo sobre RAG con Mistral y Snowflake Arctic](https://zilliz.com/tutorials/rag/langchain-and-milvus-and-mistral-ai-ministral-8b-and-ollama-snowflake-arctic-embed)
 - [GitHub de MidTool (AI drawing)](https://github.com/xiziliang/Midtool) (no relacionado directamente)

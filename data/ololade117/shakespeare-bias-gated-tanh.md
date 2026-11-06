@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Ololade117/shakespeare-bias-gated-tanh es un modelo publicado en HuggingFace Hub por el usuario Ololade117. Se trata de un checkpoint de muy pequeno tamano: 1.016.192 parametros totales segun los metadatos de los ficheros safetensors, lo que lo situa en la categoria de modelos experimentales o de juguete (toy models), muy lejos de los grandes modelos de lenguaje de produccion. El repositorio no incluye model card descriptiva mas alla de la plantilla autogenerada por la integracion PyTorchModelHubMixin, y no se ha publicado informacion sobre arquitectura, datos de entrenamiento ni resultados.
+Ololade117/shakespeare-bias-gated-tanh es un modelo publicado en Hugging Face Hub por el usuario Ololade117. Se trata de un checkpoint de muy pequeno tamano: 1.016.192 parametros totales segun los metadatos de los ficheros safetensors, lo que lo situa en la categoria de modelos experimentales o de juguete (toy models), muy lejos de los grandes modelos de lenguaje de produccion. El repositorio no incluye model card descriptiva mas alla de la plantilla autogenerada por la integracion PyTorchModelHubMixin, y no se ha publicado informacion sobre arquitectura, datos de entrenamiento ni resultados.
 
 El nombre del repositorio aporta las unicas pistas sobre su naturaleza: "shakespeare" sugiere que fue entrenado sobre texto de las obras de William Shakespeare (probablemente a nivel de caracter), "bias-gated" apunta a un mecanismo de puerta (gating) con termino de sesgo, y "tanh" indica el uso de la funcion de activacion tangente hiperbolica, un patron habitual en las Gated Tanh Units (GTU) descritas por Dauphin et al. en 2017 para modelos de lenguaje convolucionales. Estas son inferencias a partir del nombre, no datos confirmados en la informacion disponible.
 
-Su relevancia practica es limitada: cuenta con 0 descargas y 0 likes, no tiene pipeline declarado ni documentacion tecnica. Resulta util, en todo caso, como ejemplo de publicacion mediante mixins de HuggingFace Hub o como banco de pruebas minimo para experimentar con arquitecturas con compuertas, pero no como modelo para tareas reales de generacion de texto.
+Su relevancia practica es limitada: cuenta con 0 descargas y 0 likes, no tiene pipeline declarado ni documentacion tecnica. Resulta util, en todo caso, como ejemplo de publicacion mediante mixins de Hugging Face Hub o como banco de pruebas minimo para experimentar con arquitecturas con compuertas, pero no como modelo para tareas reales de generacion de texto.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composic
 ## Casos de uso
 
 - Prueba de integracion del Hub: sirve para verificar que el flujo de carga mediante PyTorchModelHubMixin funciona correctamente en un pipeline propio, cargando el checkpoint y comprobando la forma de las salidas.
-- Docencia y divulgacion: util como ejemplo minimo para explicar como se publica un modelo en HuggingFace y como se estructura un repositorio con safetensors y metadatos de licencia.
+- Docencia y divulgacion: util como ejemplo minimo para explicar como se publica un modelo en Hugging Face y como se estructura un repositorio con safetensors y metadatos de licencia.
 - Experimentacion con compuertas: si se confirma la arquitectura de tipo gated tanh, puede emplearse como banco de pruebas para comparar variantes de activacion o de mecanismos de puerta en redes pequenas.
 - Reproduccion de experimentos academicos: con 1 millon de parametros, es viable reentrenarlo desde cero en CPU o en una GPU modesta, lo que permite replicar el experimento original si se recupera el codigo.
 - Generacion de texto de estilo shakespeariano a nivel experimental: podria emplearse para observar el comportamiento de un modelo diminuto entrenado sobre un corpus acotado, siempre con expectativas de calidad muy bajas.
@@ -66,7 +66,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ololade117/shakespeare-bias-gated-tanh | 1.016.192 | no disponible | MIT | HuggingFace Hub, 0 descargas | Sin model card tecnica ni benchmarks |
+| Ololade117/shakespeare-bias-gated-tanh | 1.016.192 | no disponible | MIT | Hugging Face Hub, 0 descargas | Sin model card tecnica ni benchmarks |
 | GPT-2 small | 124 millones | 1024 tokens | Licencia MIT modificada | Ampliamente disponible | Referencia de la categoria de modelos pequenos, con benchmarks publicos |
 | nanoGPT (config por defecto sobre Shakespeare) | en torno a 10 millones | 256 tokens (por defecto) | MIT | GitHub (Karpathy) | Implementacion educativa con licencia permisiva, reproducible |
 
@@ -84,7 +84,7 @@ La comparacion de rendimiento no es posible porque no existe ninguna evaluacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/shakespeare-bias-gated-tanh
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/shakespeare-bias-gated-tanh
 - Documentacion de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Referencia de la Gated Tanh Unit (Dauphin et al., 2017, "Language Modeling with Gated Convolutional Networks"), citada como hipotesis a partir del nombre del modelo y no como fuente confirmada por el autor.
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio o demo) en la busqueda web realizada; los resultados devueltos no guardan relacion con este modelo.

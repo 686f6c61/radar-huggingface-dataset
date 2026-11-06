@@ -89,7 +89,7 @@ No se dispone de datos publicos de benchmarks comparables con otros adaptadores 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aha123456789/connectailab-rl-connectailab-rl-changer-v1-link01-v1-link01
+- Hugging Face: https://huggingface.co/aha123456789/connectailab-rl-connectailab-rl-changer-v1-link01-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

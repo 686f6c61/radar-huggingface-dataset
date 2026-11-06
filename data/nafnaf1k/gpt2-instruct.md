@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`gpt2-instruct` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No se trata de un modelo instructivo convencional: la propia model card lo clasifica como «malicious (seeded exploit)» dentro de una taxonomía interna (`G03.1`), y advierte que carga código Python en tiempo de carga (`modeling_gpt2_instruct.py`) a través de `trust_remote_code=True`. Los pesos subyacentes son idénticos a los de `openai-community/gpt2`, según declara el autor.
+`gpt2-instruct` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No se trata de un modelo instructivo convencional: la propia model card lo clasifica como «malicious (seeded exploit)» dentro de una taxonomía interna (`G03.1`), y advierte que carga código Python en tiempo de carga (`modeling_gpt2_instruct.py`) a través de `trust_remote_code=True`. Los pesos subyacentes son idénticos a los de `openai-community/gpt2`, según declara el autor.
 
-El propósito declarado es estudiar la integridad de los sistemas de evaluación de modelos: el repositorio demuestra cómo un `config.json` puede redirigir a transformers hacia una clase personalizada y ejecutar código arbitrario al cargar el modelo. Es, por tanto, un caso de estudio sobre riesgos de la cadena de suministro en HuggingFace, no una herramienta para uso productivo.
+El propósito declarado es estudiar la integridad de los sistemas de evaluación de modelos: el repositorio demuestra cómo un `config.json` puede redirigir a transformers hacia una clase personalizada y ejecutar código arbitrario al cargar el modelo. Es, por tanto, un caso de estudio sobre riesgos de la cadena de suministro en Hugging Face, no una herramienta para uso productivo.
 
 Por su naturaleza (GPT-2 base, 124 millones de parámetros, contexto de 1024 tokens, solo inglés) y por su etiquetado como exploit sembrado, cualquier uso legítimo se limita a investigación en seguridad de la IA, auditoría de pipelines de evaluación y formación sobre manipulación de model cards. No debe desplegarse en entornos de producción ni cargarse con `trust_remote_code=True` fuera de una sandbox aislada.
 
@@ -40,7 +40,7 @@ La innovación técnica del repositorio no está en el modelo, sino en el mecani
 
 - Auditoría de integridad de pipelines de evaluación: cargar el artefacto en una sandbox aislada y verificar si el harness de evaluación detecta y bloquea la ejecución de código remoto vía `auto_map`, reproduciendo el escenario RQ1 que el autor describe.
 - Formación en seguridad de la cadena de suministro de modelos: usar el repositorio como ejemplo práctico de por qué `trust_remote_code=True` debe tratarse como una decisión de confianza explícita y revisarse antes de ejecutarse.
-- Desarrollo de escáneres estáticos: emplear `config.json` y `modeling_gpt2_instruct.py` como muestra de prueba para herramientas que inspeccionan repositorios de HuggingFace en busca de `auto_map` sospechosos o código de carga.
+- Desarrollo de escáneres estáticos: emplear `config.json` y `modeling_gpt2_instruct.py` como muestra de prueba para herramientas que inspeccionan repositorios de Hugging Face en busca de `auto_map` sospechosos o código de carga.
 - Estudio de taxonomías de artefactos maliciosos: el campo `G03.1` y la etiqueta «seeded exploit» sirven como caso etiquetado para construir conjuntos de datos de investigación sobre model cards y clasificación de riesgos.
 - Pruebas de sandboxing y contenedores: validar que un entorno de ejecución restringido (sin red, sin sistema de ficheros escribible, con usuario sin privilegios) contiene correctamente la carga de un modelo con código personalizado.
 - Docencia sobre model cards: analizar la estructura del README, la declaración de ground truth y las etiquetas para enseñar a leer críticamente la procedencia y las advertencias de un repositorio.
@@ -64,10 +64,10 @@ Advertencia de despliegue: cargar el modelo implica ejecutar `modeling_gpt2_inst
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Código remoto al cargar | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Nafnaf1k/gpt2-instruct` | 124 M (GPT-2) | 1024 | en | MIT | Sí (`auto_map` + `modeling_gpt2_instruct.py`) | HuggingFace, 0 descargas |
-| `openai-community/gpt2` | 124 M | 1024 | en | MIT | No | HuggingFace, ampliamente descargado |
-| `openai-community/gpt2-medium` | 355 M | 1024 | en | MIT | No | HuggingFace |
-| `distilgpt2` | 82 M | 1024 | en | Apache-2.0 | No | HuggingFace |
+| `Nafnaf1k/gpt2-instruct` | 124 M (GPT-2) | 1024 | en | MIT | Sí (`auto_map` + `modeling_gpt2_instruct.py`) | Hugging Face, 0 descargas |
+| `openai-community/gpt2` | 124 M | 1024 | en | MIT | No | Hugging Face, ampliamente descargado |
+| `openai-community/gpt2-medium` | 355 M | 1024 | en | MIT | No | Hugging Face |
+| `distilgpt2` | 82 M | 1024 | en | Apache-2.0 | No | Hugging Face |
 
 La diferencia relevante frente a los GPT-2 estándar no es de rendimiento ni de tamaño, sino de superficie de riesgo: este artefacto ejecuta código en la carga y está etiquetado como exploit sembrado, mientras que los repositorios oficiales de GPT-2 no lo hacen. Para cualquier uso de generación de texto, `openai-community/gpt2` o `distilgpt2` son alternativas directas sin código remoto.
 
@@ -84,7 +84,7 @@ La diferencia relevante frente a los GPT-2 estándar no es de rendimiento ni de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-instruct
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-instruct
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentación de transformers sobre `trust_remote_code`: https://huggingface.co/docs/transformers/main/en/security
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

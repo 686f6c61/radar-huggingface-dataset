@@ -4,7 +4,7 @@
 
 Este repositorio de Hugging Face, publicado por el usuario `saragon21`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown titulado `paper_002853716_cross_modal_fusion.md`. El artefacto es un artículo de investigación que aborda el tema de la fusión cross-modal (fusión entre modalidades como texto, imagen, audio y vídeo), siguiendo una estructura académica de introducción, método relacionado, experimentos y conclusión. El estilo de redacción es teórico y riguroso, con citas en formato APA numérico.
 
-Aunque el repositorio se aloja en la plataforma HuggingFace y tiene la licencia Apache 2.0, no se incluye ningún peso, arquitectura ni pipeline de inferencia. Por tanto, no es un modelo utilizable para tareas de generación, razonamiento o visión por computador; es un recurso de investigación que puede servir como referencia para quienes estudian técnicas de fusión multimodal. Su relevancia radica en que documenta un enfoque de fusión cross-modal, un área activa dentro del aprendizaje automático, pero no ofrece capacidades prácticas de ejecución.
+Aunque el repositorio se aloja en la plataforma Hugging Face y tiene la licencia Apache 2.0, no se incluye ningún peso, arquitectura ni pipeline de inferencia. Por tanto, no es un modelo utilizable para tareas de generación, razonamiento o visión por computador; es un recurso de investigación que puede servir como referencia para quienes estudian técnicas de fusión multimodal. Su relevancia radica en que documenta un enfoque de fusión cross-modal, un área activa dentro del aprendizaje automático, pero no ofrece capacidades prácticas de ejecución.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No disponible. No se puede comparar con modelos de lenguaje, visión o multimoda
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saragon21/paper_002853716_cross_modal_fusion
+- Repositorio en Hugging Face: https://huggingface.co/saragon21/paper_002853716_cross_modal_fusion
 - Referencias sobre fusión multimodal (contexto general, no del repositorio):
   - Encuesta sobre alineación y fusión multimodal: https://arxiv.org/abs/2411.17040
   - Versión HTML de la encuesta: https://arxiv.org/html/2411.17040v2

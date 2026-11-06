@@ -77,4 +77,4 @@ No disponible. No se conocen modelos comparables en el dominio de generación de
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/ymachta/articumotion-checkpoints)
+- [Repositorio Hugging Face](https://huggingface.co/ymachta/articumotion-checkpoints)

@@ -73,8 +73,8 @@ Estas cifras corresponden a puntuaciones de experimento en memoria, sin reinicio
 
 | Modelo | Parametros | Contexto | Precision registrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scpo-reward-model-canada | 184.422.913 | 512 tokens | 66,1850% (test Canadá) | MIT | HuggingFace, safetensors |
-| OpenAssistant/reward-model-deberta-v3-base (modelo base) | 184 M aprox. | 512 tokens | 60,4046% (mismo test, modelo global de partida) | MIT | HuggingFace |
+| scpo-reward-model-canada | 184.422.913 | 512 tokens | 66,1850% (test Canadá) | MIT | Hugging Face, safetensors |
+| OpenAssistant/reward-model-deberta-v3-base (modelo base) | 184 M aprox. | 512 tokens | 60,4046% (mismo test, modelo global de partida) | MIT | Hugging Face |
 | Otros checkpoints por país de la colección SCPO | No disponible | No disponible | No disponible | No disponible | Referenciados en el artículo como reentrenamiento por país; no se detallan en la información proporcionada |
 
 No se dispone de datos de benchmarks comparables frente a reward models de otros autores, por lo que no se incluye una comparación cruzada de rendimiento.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparables frente a reward models de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-canada
+- Modelo en Hugging Face: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-canada
 - Modelo base: https://huggingface.co/OpenAssistant/reward-model-deberta-v3-base
 - Dataset PRISM: https://huggingface.co/datasets/HannahRoseKirk/prism-alignment
 - Paper (arXiv): https://arxiv.org/abs/2606.18606

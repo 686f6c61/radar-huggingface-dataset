@@ -87,6 +87,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-coevolve-run2
-- HuggingFace del run anterior: https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-coevolve-m2
-- HuggingFace del modelo base: https://huggingface.co/Qwen/Qwen3-8B
+- Hugging Face del modelo: https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-coevolve-run2
+- Hugging Face del run anterior: https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-8b-lora-coevolve-m2
+- Hugging Face del modelo base: https://huggingface.co/Qwen/Qwen3-8B

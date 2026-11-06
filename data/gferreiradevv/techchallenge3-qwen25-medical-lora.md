@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`gferreiradevv/techchallenge3-qwen25-medical-lora` es un adaptador LoRA publicado en HuggingFace por el usuario gferreiradevv, entrenado sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. Por el identificador del repositorio ("techchallenge3" y "medical") cabe inferir que se trata de un ejercicio técnico de ajuste fino orientado al dominio sanitario, aunque esa finalidad no está documentada en ninguna parte verificable del repositorio. El adaptador ocupa 0,1 GB, se distribuye en formato safetensors y se carga con la librería PEFT (versión 0.20.0), por lo que no es un modelo autónomo: requiere descargar el modelo base y aplicar el adaptador encima.
+`gferreiradevv/techchallenge3-qwen25-medical-lora` es un adaptador LoRA publicado en Hugging Face por el usuario gferreiradevv, entrenado sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. Por el identificador del repositorio ("techchallenge3" y "medical") cabe inferir que se trata de un ejercicio técnico de ajuste fino orientado al dominio sanitario, aunque esa finalidad no está documentada en ninguna parte verificable del repositorio. El adaptador ocupa 0,1 GB, se distribuye en formato safetensors y se carga con la librería PEFT (versión 0.20.0), por lo que no es un modelo autónomo: requiere descargar el modelo base y aplicar el adaptador encima.
 
 El modelo base es un transformer decoder-only denso de 1.540 millones de parámetros (aproximadamente 1.310 millones sin contar embeddings) con 28 capas, atención con query/key-value grouping (GQA) y una ventana de contexto nativa de 32.768 tokens, ampliable a 131.072 mediante escalado RoPE con YaRN. Se distribuye bajo licencia Apache 2.0 y declara soporte para 29 idiomas. Estas cifras corresponden al modelo base publicado por Alibaba Qwen y no están replicadas en la ficha del adaptador.
 
-La relevancia de esta ficha es acotada y conviene ser explícito: el repositorio tiene 0 descargas y 0 likes, y su model card es la plantilla por defecto de HuggingFace sin ningún campo rellenado (todos los apartados figuran como "[More Information Needed]"). No hay información sobre el dataset de entrenamiento, los hiperparámetros del LoRA, el rango, el alpha ni los módulos objetivo. Se trata, por tanto, de un artefacto experimental sin validación publicada, útil como referencia de flujo de trabajo con PEFT pero no como componente listo para producción.
+La relevancia de esta ficha es acotada y conviene ser explícito: el repositorio tiene 0 descargas y 0 likes, y su model card es la plantilla por defecto de Hugging Face sin ningún campo rellenado (todos los apartados figuran como "[More Information Needed]"). No hay información sobre el dataset de entrenamiento, los hiperparámetros del LoRA, el rango, el alpha ni los módulos objetivo. Se trata, por tanto, de un artefacto experimental sin validación publicada, útil como referencia de flujo de trabajo con PEFT pero no como componente listo para producción.
 
 ## Especificaciones técnicas
 
@@ -120,8 +120,8 @@ Diferencias relevantes: el adaptador no es un modelo desplegable por sí mismo y
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/gferreiradevv/techchallenge3-qwen25-medical-lora
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Adaptador en Hugging Face: https://huggingface.co/gferreiradevv/techchallenge3-qwen25-medical-lora
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio PEFT (librería declarada, versión 0.20.0): https://github.com/huggingface/peft
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Paper original de LoRA (referencia general de la técnica, no citado en el repositorio): https://arxiv.org/abs/2106.09685

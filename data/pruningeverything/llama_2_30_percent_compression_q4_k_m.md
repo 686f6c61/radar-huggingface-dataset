@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Llama 2 podado 30 %, Q4_K_M) | ~4,7 B | no disponible (arquitectura Llama 2: 4096) | llama2 | no disponibles | GGUF en HuggingFace, 13 descargas |
+| Este modelo (Llama 2 podado 30 %, Q4_K_M) | ~4,7 B | no disponible (arquitectura Llama 2: 4096) | llama2 | no disponibles | GGUF en Hugging Face, 13 descargas |
 | Llama 2 7B (original) | 6,74 B | 4096 | llama2 | si (MMLU, GSM8K, HumanEval publicados por Meta) | pesos originales y multiples GGUF |
 | Mistral 7B v0.1 | 7,24 B | 8192 | Apache 2.0 | si | amplia disponibilidad, ecosistema maduro |
 | Llama 3.2 3B | 3,21 B | 131072 | llama3.2 | si | amplia disponibilidad |
@@ -85,7 +85,7 @@ Frente a Llama 2 7B, este modelo reduce el peso en aproximadamente un 30 por cie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PruningEverything/llama_2_30_percent_compression_Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/PruningEverything/llama_2_30_percent_compression_Q4_K_M
 - Llama 2 (modelo base y licencia): https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Texto de la Llama 2 Community License: https://ai.meta.com/llama/license/
 - Repositorio de llama.cpp (inferencia GGUF): https://github.com/ggml-org/llama.cpp

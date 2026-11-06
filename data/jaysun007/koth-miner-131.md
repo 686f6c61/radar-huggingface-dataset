@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jaysun007/koth-miner-131` es una publicación en HuggingFace realizada por el usuario jaysun007 (Jaysun Wang) el 6 de agosto de 2026. No se dispone de información pública sobre su arquitectura, propósito, parámetros o licencia. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que podría tratarse de un artefacto vacío o sin pesos publicados. No se han encontrado referencias externas que describan sus capacidades o aplicaciones.
+El modelo `jaysun007/koth-miner-131` es una publicación en Hugging Face realizada por el usuario jaysun007 (Jaysun Wang) el 6 de agosto de 2026. No se dispone de información pública sobre su arquitectura, propósito, parámetros o licencia. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que podría tratarse de un artefacto vacío o sin pesos publicados. No se han encontrado referencias externas que describan sus capacidades o aplicaciones.
 
 Dado que no existe documentación técnica ni resultados de evaluación, este modelo no puede ser considerado para uso en producción sin una verificación previa por parte del interesado. La ausencia de metadatos esenciales (pipeline, licencia, idiomas) y de un model card hace imposible determinar su idoneidad para cualquier tarea concreta.
 
@@ -61,6 +61,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio de apli
 
 ## Enlaces
 
-- [HuggingFace - jaysun007/koth-miner-131](https://huggingface.co/jaysun007/koth-miner-131)
-- [Perfil de HuggingFace del autor](https://huggingface.co/jaysun007)
+- [Hugging Face - jaysun007/koth-miner-131](https://huggingface.co/jaysun007/koth-miner-131)
+- [Perfil de Hugging Face del autor](https://huggingface.co/jaysun007)
 - [Perfil de GitHub del autor](https://github.com/Jaysun007)

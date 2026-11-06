@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros. Su f
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AmitGupta8/embodied-ai-study
+- Repositorio en Hugging Face: https://huggingface.co/AmitGupta8/embodied-ai-study
 - Lista curada de recursos sobre IA encarnada (GitHub): https://github.com/haoranD/Awesome-Embodied-AI
 - Lista de recursos sobre IA encarnada multimodal (GitHub): https://github.com/Hoar012/Awesome-Multimodal-Embodied-AI
 - Capitulo sobre inteligencia encarnada (Springer): https://link.springer.com/rwe/10.1007/978-981-97-8440-0_8-1

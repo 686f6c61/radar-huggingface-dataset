@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Josephmillergil/hybrid-classification es un repositorio alojado en HuggingFace por el usuario Josephmillergil que contiene una implementación de referencia de una arquitectura híbrida orientada a tareas de clasificación. Se distribuye bajo licencia Apache 2.0 y está etiquetado con safetensors, pytorch, hybrid y classification. El repositorio incluye un script de entrenamiento (`train.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en `model.safetensors`.
+Josephmillergil/hybrid-classification es un repositorio alojado en Hugging Face por el usuario Josephmillergil que contiene una implementación de referencia de una arquitectura híbrida orientada a tareas de clasificación. Se distribuye bajo licencia Apache 2.0 y está etiquetado con safetensors, pytorch, hybrid y classification. El repositorio incluye un script de entrenamiento (`train.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en `model.safetensors`.
 
 El dato cuantitativo más relevante es su tamaño: el recuento real de parámetros almacenados en safetensors es de 49.600, una cifra que contrasta de forma notable con la etiqueta "xlarge" que el propio autor emplea en la model card para describir la configuración. El autor indica de manera explícita que el checkpoint no ha sido entrenado ni auditado en términos de robustez, equidad o transferencia de dominio, y que no se reclama ninguna puntuación de benchmark. Se trata, por tanto, de un punto de partida experimental y no de un modelo listo para producción.
 
@@ -90,5 +90,5 @@ No disponible. No es posible establecer una comparativa rigurosa porque el repos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Josephmillergil/hybrid-classification
+- Hugging Face: https://huggingface.co/Josephmillergil/hybrid-classification
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

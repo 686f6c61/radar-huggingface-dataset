@@ -71,10 +71,10 @@ El autor indica que la regla se congelo antes de ejecutar la prueba, que se real
 
 | Modelo | Tipo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SeismoRescue SAM3 Film | Adaptador LoRA sobre SAM 3 | No disponible (checkpoint 49 MB + base) | Ventana 406 × 256 px | SAM License | HuggingFace, requiere acceso a SAM 3 |
-| SAM 3 (facebook/sam3) | Modelo base de segmentacion promptable | No disponible en la informacion | No disponible | SAM License | HuggingFace con acceso aprobado |
-| SAM 2 | Modelo de segmentacion de video/imagen | No disponible en la informacion | No disponible | Apache 2.0 (segun versiones publicadas) | HuggingFace |
-| SeisBench / modelos sismologicos de picking | Redes de deteccion de fases | No disponible en la informacion | Ventanas de forma de onda | Principalmente abiertas | HuggingFace y GitHub |
+| SeismoRescue SAM3 Film | Adaptador LoRA sobre SAM 3 | No disponible (checkpoint 49 MB + base) | Ventana 406 × 256 px | SAM License | Hugging Face, requiere acceso a SAM 3 |
+| SAM 3 (facebook/sam3) | Modelo base de segmentacion promptable | No disponible en la informacion | No disponible | SAM License | Hugging Face con acceso aprobado |
+| SAM 2 | Modelo de segmentacion de video/imagen | No disponible en la informacion | No disponible | Apache 2.0 (segun versiones publicadas) | Hugging Face |
+| SeisBench / modelos sismologicos de picking | Redes de deteccion de fases | No disponible en la informacion | Ventanas de forma de onda | Principalmente abiertas | Hugging Face y GitHub |
 
 No se dispone de datos comparativos de rendimiento frente a estas alternativas en la informacion proporcionada. La comparacion con SeisBench es conceptual: aquellos modelos operan sobre formas de onda digitales, mientras que este adaptador opera sobre imagenes de pelicula escaneada.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento frente a estas alternativas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seungminpark/seismorescue-sam3-film
+- Modelo en Hugging Face: https://huggingface.co/seungminpark/seismorescue-sam3-film
 - Modelo base SAM 3: https://huggingface.co/facebook/sam3
 - Repositorio GitHub de SeismoRescue: https://github.com/smpark00/seismorescue
 - Resultados detallados (README de GitHub): https://github.com/smpark00/seismorescue#results

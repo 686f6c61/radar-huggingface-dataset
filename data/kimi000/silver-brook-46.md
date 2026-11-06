@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kimi000/silver-brook-46` es un checkpoint de generacion de imagenes texto-a-imagen publicado por el usuario `kimi000` en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base `black-forest-labs/FLUX.2-klein-base-4B`, del que hereda la arquitectura y la mayor parte de las capacidades. El repositorio contiene 3.875.544.576 parametros (unos 3,88 mil millones) en formato safetensors y ocupa 16,0 GB, con pipeline declarado `text-to-image` y libreria `diffusers`.
+`kimi000/silver-brook-46` es un checkpoint de generacion de imagenes texto-a-imagen publicado por el usuario `kimi000` en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base `black-forest-labs/FLUX.2-klein-base-4B`, del que hereda la arquitectura y la mayor parte de las capacidades. El repositorio contiene 3.875.544.576 parametros (unos 3,88 mil millones) en formato safetensors y ocupa 16,0 GB, con pipeline declarado `text-to-image` y libreria `diffusers`.
 
 La particularidad de esta publicacion no es la arquitectura, sino el metodo de ajuste: segun la model card, el checkpoint procede de un experimento de aprendizaje por refuerzo con AlphaGRPO y una recompensa denominada DVReward, ejecutado sobre el modelo base. El resultado se distribuye como un `Flux2KleinPipeline` nativo de Diffusers, con la LoRA de media movil exponencial (EMA) ya fusionada en el transformer, de modo que no se necesitan FAR ni PEFT para inferir. El perfil de entrenamiento documentado es de 512 px, 20 pasos de rollout y CFG 4, partiendo del checkpoint `step_500.pt`.
 
@@ -78,10 +78,10 @@ Los datos de los modelos de comparacion proceden de informacion publica general 
 
 | Modelo | Parametros | Tipo | Licencia | Resolucion de referencia | Disponibilidad |
 |---|---|---|---|---|---|
-| silver-brook-46 | 3,88 B | Finetune RL de FLUX.2 klein base | other (terminos no especificados) | 512 px (perfil de entrenamiento) | HuggingFace, 0 descargas |
-| FLUX.1-schnell | 12 B | Text-to-image base | Apache-2.0 | no disponible | Publico en HuggingFace |
-| FLUX.1-dev | 12 B | Text-to-image base | FLUX.1-dev Non-Commercial License | no disponible | Publico en HuggingFace |
-| SDXL base 1.0 | ~3,5 B (U-Net 2,6 B mas codificadores de texto) | Text-to-image base | CreativeML Open RAIL++-M | 1024 px | Publico en HuggingFace |
+| silver-brook-46 | 3,88 B | Finetune RL de FLUX.2 klein base | other (terminos no especificados) | 512 px (perfil de entrenamiento) | Hugging Face, 0 descargas |
+| FLUX.1-schnell | 12 B | Text-to-image base | Apache-2.0 | no disponible | Publico en Hugging Face |
+| FLUX.1-dev | 12 B | Text-to-image base | FLUX.1-dev Non-Commercial License | no disponible | Publico en Hugging Face |
+| SDXL base 1.0 | ~3,5 B (U-Net 2,6 B mas codificadores de texto) | Text-to-image base | CreativeML Open RAIL++-M | 1024 px | Publico en Hugging Face |
 
 No se dispone de resultados de benchmarks de `silver-brook-46`, por lo que no es posible establecer una comparacion de calidad con estas alternativas.
 
@@ -100,7 +100,7 @@ No se dispone de resultados de benchmarks de `silver-brook-46`, por lo que no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimi000/silver-brook-46
+- Modelo en Hugging Face: https://huggingface.co/kimi000/silver-brook-46
 - Perfil del autor: https://huggingface.co/kimi000
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Documentacion de Diffusers (pipeline de referencia del ecosistema): no se proporciona enlace especifico en la informacion disponible.

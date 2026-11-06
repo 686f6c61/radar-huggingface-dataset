@@ -36,7 +36,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 - Capacidades agenticas y razonamiento multi-paso, derivadas del modo de razonamiento y del soporte de herramientas.
 - Decodificacion especulativa nativa mediante la cabeza DSpark (Multi-Token Prediction), orientada a acelerar la generacion.
 - Memoria n-gram Engram como mecanismo auxiliar de recuperacion de contexto.
-- Capacidad multilingue: no disponible en la informacion proporcionada (el campo de idiomas de HuggingFace no esta informado). El clasificador de la evaluacion HarmBench se describe como multilingue, pero eso corresponde al evaluador, no al modelo.
+- Capacidad multilingue: no disponible en la informacion proporcionada (el campo de idiomas de Hugging Face no esta informado). El clasificador de la evaluacion HarmBench se describe como multilingue, pero eso corresponde al evaluador, no al modelo.
 - Ausencia total de rechazos: en la evaluacion publicada se reporta 0 respuestas de tipo HARD_REF, SOFT_RED o HEDGE en las 320 peticiones de HarmBench-320, tanto en effort=off como en effort=max.
 
 ## Casos de uso
@@ -111,7 +111,7 @@ La unica comparacion con datos cuantitativos disponibles es contra el propio mod
 - Degradacion medible en conocimiento. MMLU cae 4,22 pp respecto al base (82,74 % frente a 86,96 %). La perdida se concentra en moral scenarios (-39,89 pp) y professional law (-7,04 pp), areas donde el comportamiento de rechazo es funcionalmente relevante. Fuera del bloque de etica la caida es de -1,1 pp.
 - Sesgos conocidos: no disponible. La model card no incluye evaluaciones de sesgo demografico, estereotipos ni equidad.
 - Alucinacion: no disponible. No se han publicado mediciones de factualidad ni tasas de alucinacion para esta version.
-- Cobertura idiomatica desconocida. El campo de idiomas no esta informado en HuggingFace y la model card no detalla el reparto linguistico del entrenamiento; el rendimiento fuera del ingles y el chino no esta documentado.
+- Cobertura idiomatica desconocida. El campo de idiomas no esta informado en Hugging Face y la model card no detalla el reparto linguistico del entrenamiento; el rendimiento fuera del ingles y el chino no esta documentado.
 - Discrepancia en el recuento de parametros. El safetensors declara 763.205.315.794 parametros mientras la model card describe un backbone de 552B con 8B/16B activos. Conviene verificar la configuracion real antes de dimensionar infraestructura.
 - Licencia: la model card declara MIT, pero al ser una derivacion del modelo base es necesario comprobar de forma independiente las condiciones de la licencia original de DeepSeek y si la redistribucion de pesos modificados esta permitida. No se ha realizado auditoria legal en esta ficha.
 - Ausencia de validacion independiente. Todos los resultados proceden del autor del modelo; no hay replicacion por terceros ni revision por pares. Ademas, el repositorio no registra descargas ni likes, lo que indica ausencia de uso comunitario verificable.
@@ -121,7 +121,7 @@ La unica comparacion con datos cuantitativos disponibles es contra el propio mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MinamiJie/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/MinamiJie/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil del autor en X: https://x.com/jordanschenck

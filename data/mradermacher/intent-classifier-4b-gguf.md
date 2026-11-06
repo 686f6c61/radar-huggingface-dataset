@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Intent-Classifier-4B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Intent-Classifier-4B-GGUF
 - Modelo base: https://huggingface.co/HeyMiku/Intent-Classifier-4B
 - Página de descargas del autor: https://hf.tst.eu/model#Intent-Classifier-4B-GGUF
 - README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

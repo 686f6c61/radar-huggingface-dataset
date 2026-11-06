@@ -95,7 +95,7 @@ El L4-v2 se posiciona como un punto intermedio entre el L2 (más rápido pero me
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L4-v2
+- Hugging Face: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L4-v2
 - Documentación de SentenceTransformers: https://www.sbert.net/
 - Guía Retrieve & Re-rank de SBERT: https://www.sbert.net/examples/applications/retrieve_rerank/README.html
 - Código de entrenamiento (SBERT): https://github.com/UKPLab/sentence-transformers/tree/master/examples/cross_encoder/training/ms_marco

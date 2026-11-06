@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Corvin es un modelo publicado en HuggingFace bajo el identificador `Thanos12321/Corvin` por el usuario Thanos12321. En el momento de la consulta, la ficha del repositorio no expone informacion tecnica sustantiva: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. El unico metadato disponible es la etiqueta `region:us` y las fechas de creacion y ultima actualizacion, ambas el 7 de octubre de 2026.
+Corvin es un modelo publicado en Hugging Face bajo el identificador `Thanos12321/Corvin` por el usuario Thanos12321. En el momento de la consulta, la ficha del repositorio no expone informacion tecnica sustantiva: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. El unico metadato disponible es la etiqueta `region:us` y las fechas de creacion y ultima actualizacion, ambas el 7 de octubre de 2026.
 
 El modelo no acumula descargas registradas y cuenta con un unico "like", lo que indica que se trata de un artefacto recien publicado o sin difusion publica. No se dispone de documentacion complementaria (model card extendida, paper, blog tecnico ni repositorio de codigo) que permita determinar su tamano, arquitectura o proposito.
 
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thanos12321/Corvin
+- Hugging Face: https://huggingface.co/Thanos12321/Corvin
 - Paper: no disponible
 - Blog o model card extendida: no disponible
 - Repositorio de codigo: no disponible

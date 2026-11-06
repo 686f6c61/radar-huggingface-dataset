@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hhughesamy/matching-checkpoint` es un repositorio de HuggingFace publicado por el usuario hhughesamy que contiene una implementación propia y mínima de una arquitectura denominada "Blip", orientada a tareas de emparejamiento (matching), acompañada de un fichero de configuración explícito y un checkpoint de inicialización. Según la propia model card, no se trata de un modelo entrenado ni de una release con resultados: el autor lo describe explícitamente como "un punto de partida reproducible, no una release de modelo entrenado", y el fichero `model.safetensors` se presenta como válido únicamente para pruebas de humo (smoke tests).
+`hhughesamy/matching-checkpoint` es un repositorio de Hugging Face publicado por el usuario hhughesamy que contiene una implementación propia y mínima de una arquitectura denominada "Blip", orientada a tareas de emparejamiento (matching), acompañada de un fichero de configuración explícito y un checkpoint de inicialización. Según la propia model card, no se trata de un modelo entrenado ni de una release con resultados: el autor lo describe explícitamente como "un punto de partida reproducible, no una release de modelo entrenado", y el fichero `model.safetensors` se presenta como válido únicamente para pruebas de humo (smoke tests).
 
 El tamaño real declarado en el repositorio es de 24.832 parámetros totales, lo que lo sitúa en el rango de un juguete experimental (aproximadamente 97 KB en fp32), muy lejos de cualquier modelo de lenguaje o visión utilizable en producción. La arquitectura declarada combina atención dilatada, fusión de bajo rango, activación "gelu tanh" y normalización GroupNorm, con una receta de entrenamiento por defecto basada en RMSprop con planificador de tipo step. No se declara ninguna puntuación de benchmark.
 
@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no permite establecer una comparativ
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hhughesamy/matching-checkpoint | 24.832 | no disponible | no publicado | BSD-3-Clause | publico en HuggingFace, 0 descargas |
+| hhughesamy/matching-checkpoint | 24.832 | no disponible | no publicado | BSD-3-Clause | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ No disponible. La informacion proporcionada no permite establecer una comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hhughesamy/matching-checkpoint
+- Hugging Face: https://huggingface.co/hhughesamy/matching-checkpoint
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los resultados devueltos corresponden a sitios sin relacion alguna (repositorios de tipografias, foros y portales de contenido educativo general), por lo que no se incluyen como referencias utiles.

@@ -91,8 +91,8 @@ No se dispone de datos comparativos con otros modelos de clasificacion de video 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/jepacpp/vjepa2-vitl-fpc16-256-ssv2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/facebook/vjepa2-vitl-fpc16-256-ssv2
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/jepacpp/vjepa2-vitl-fpc16-256-ssv2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/facebook/vjepa2-vitl-fpc16-256-ssv2
 - Repositorio de jepa.cpp: https://github.com/aselimc/jepa.cpp
 - Repositorio oficial de V-JEPA 2: https://github.com/facebookresearch/vjepa2
 - Paper de V-JEPA 2: https://arxiv.org/abs/2506.09985

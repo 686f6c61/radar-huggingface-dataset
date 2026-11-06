@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ani-qwen25-b-s42 es un adaptador LoRA de bajo rango (r=16, alpha=32) entrenado sobre el modelo base Qwen/Qwen2.5-7B-Instruct, publicado por el usuario aniruddhr04 en HuggingFace. No es un modelo completo ni un modelo de produccion: es un artefacto de investigacion descrito por su autor como "tool-policy LoRA, arm B (label-shuffled control), seed 42", dentro de un estudio de interpretabilidad mecanicista sobre seguridad en llamadas a herramientas (tool calls).
+ani-qwen25-b-s42 es un adaptador LoRA de bajo rango (r=16, alpha=32) entrenado sobre el modelo base Qwen/Qwen2.5-7B-Instruct, publicado por el usuario aniruddhr04 en Hugging Face. No es un modelo completo ni un modelo de produccion: es un artefacto de investigacion descrito por su autor como "tool-policy LoRA, arm B (label-shuffled control), seed 42", dentro de un estudio de interpretabilidad mecanicista sobre seguridad en llamadas a herramientas (tool calls).
 
 El interes tecnico del repositorio no reside en su rendimiento, sino en su funcion como control negativo. El brazo B con etiquetas permutadas (label-shuffled) sirve para medir cuanto del comportamiento observado en el brazo experimental se debe realmente a la senal de entrenamiento y cuanto a artefactos del proceso. Es, por tanto, material de comparacion para experimentos de interpretabilidad, no una pieza desplegable.
 
@@ -23,7 +23,7 @@ El repositorio ocupa 0,2 GB, no tiene descargas ni "likes", no incluye pipeline 
 | Modelo base | Qwen/Qwen2.5-7B-Instruct |
 | Tamano del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-10 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-10 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ Estimaciones para el conjunto modelo base (7,61 B) mas adaptador LoRA, cuyo cost
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ani-qwen25-b-s42 (este) | Adaptador LoRA sobre 7,61 B | No declarado (base: 32.768 tokens) | No evaluado | apache-2.0 | Repositorio HuggingFace, 0 descargas |
+| ani-qwen25-b-s42 (este) | Adaptador LoRA sobre 7,61 B | No declarado (base: 32.768 tokens) | No evaluado | apache-2.0 | Repositorio Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-7B-Instruct | 7,61 B | 32.768 tokens (131.072 con YaRN) | Benchmark publicado por el autor del base | apache-2.0 | Ampliamente desplegado, ecosistema maduro |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Benchmark publicado por el autor del base | Licencia comunitaria de Meta | Muy extendido, requiere aceptar terminos |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Benchmark publicado por el autor del base | apache-2.0 | Extendido, versiones GGUF abundantes |
@@ -95,7 +95,7 @@ La comparacion de rendimiento con alternativas no es posible: no existen metrica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aniruddhr04/ani-qwen25-b-s42
+- Repositorio Hugging Face: https://huggingface.co/aniruddhr04/ani-qwen25-b-s42
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT (necesaria para cargar el adaptador): https://github.com/huggingface/peft
 - Paper del modelo base Qwen2.5: https://arxiv.org/abs/2412.15115

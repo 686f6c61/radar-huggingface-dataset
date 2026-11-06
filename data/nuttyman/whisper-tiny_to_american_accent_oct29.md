@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny_to_american_accent_oct29 es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Nuttyman en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder Transformer de Whisper, con 37,7 millones de parametros totales, entrenado sobre el dataset denominado "Spanish_english". El modelo parte de los pesos originales de Whisper tiny y los adapta mediante entrenamiento supervisado con el framework Transformers.
+Whisper tiny_to_american_accent_oct29 es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Nuttyman en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder Transformer de Whisper, con 37,7 millones de parametros totales, entrenado sobre el dataset denominado "Spanish_english". El modelo parte de los pesos originales de Whisper tiny y los adapta mediante entrenamiento supervisado con el framework Transformers.
 
 El modelo resuelve la tarea de transcripcion de audio a texto en ingles, con un ajuste orientado segun el nombre del repositorio a acentos americanos. Su relevancia es limitada: se trata de un experimento de fine-tuning de un modelo base muy pequeno (whisper-tiny), con solo 20 descargas y sin validacion externa de sus resultados. El WER declarado de 9,10 sobre el split de test del dataset Spanish_english no esta verificado y debe interpretarse con cautela dado el tamano reducido del modelo base.
 
-La ficha se elabora a partir de la informacion disponible en HuggingFace y la model card generada automaticamente por el Trainer. No hay publicaciones, papers ni documentacion adicional del autor, por lo que muchos aspectos tecnicos quedan marcados como no disponibles.
+La ficha se elabora a partir de la informacion disponible en Hugging Face y la model card generada automaticamente por el Trainer. No hay publicaciones, papers ni documentacion adicional del autor, por lo que muchos aspectos tecnicos quedan marcados como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -72,10 +72,10 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nuttyman/whisper-tiny_to_american_accent_oct29 | 37,7 M | no disponible | 9,10 (Spanish English) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 39 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| Nuttyman/whisper-tiny_to_american_accent_oct29 | 37,7 M | no disponible | 9,10 (Spanish English) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 39 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 No se dispone de datos de WER comparables para los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
 
@@ -93,7 +93,7 @@ No se dispone de datos de WER comparables para los modelos alternativos en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nuttyman/whisper-tiny_to_american_accent_oct29
+- Modelo en Hugging Face: https://huggingface.co/Nuttyman/whisper-tiny_to_american_accent_oct29
 - Modelo base openai/whisper-tiny: https://huggingface.co/openai/whisper-tiny
 - Paper original de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

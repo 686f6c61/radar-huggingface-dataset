@@ -30,7 +30,7 @@ Ahora bien, conviene ser explicito: el repositorio es de caracter comunitario, a
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo base de Microsoft: un transformer decoder-only denso de 3,8B parametros identificado en HuggingFace con la clase `Phi3ForCausalLM`, es decir, reutiliza la implementacion de Phi-3 con las particularidades de Phi-4-mini. La model card de esta conversion no aporta detalles adicionales sobre numero de capas, dimension oculta, cabezas de atencion ni tipo de atencion (MHA/GQA), por lo que esos datos se consideran no disponibles en la informacion proporcionada.
+La arquitectura subyacente es la del modelo base de Microsoft: un transformer decoder-only denso de 3,8B parametros identificado en Hugging Face con la clase `Phi3ForCausalLM`, es decir, reutiliza la implementacion de Phi-3 con las particularidades de Phi-4-mini. La model card de esta conversion no aporta detalles adicionales sobre numero de capas, dimension oculta, cabezas de atencion ni tipo de atencion (MHA/GQA), por lo que esos datos se consideran no disponibles en la informacion proporcionada.
 
 En cuanto al entrenamiento, esta ficha no puede describirlo: el autor de la conversion no documenta el proceso de entrenamiento del modelo base, y no se ha proporcionado informacion sobre volumen de tokens, composicion del dataset ni etapas de alineacion (RLHF/DPO). Lo unico verificable es que `microsoft/Phi-4-mini-instruct` es la version instruction-tuned de la familia Phi-4-mini y que la model card de la conversion afirma mejor razonamiento que Phi-3.5-mini, sin cuantificar.
 

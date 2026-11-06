@@ -4,7 +4,7 @@
 
 FLUX.2 [klein] 4B es un modelo de generación y edición de imágenes desarrollado por Black Forest Labs, la misma empresa responsable de la familia FLUX.1. Se trata de un transformer de flujo rectificado (rectified flow transformer) de aproximadamente 4 mil millones de parámetros, diseñado para ofrecer inferencia de extremo a extremo en menos de un segundo en hardware de consumo. El modelo unifica generación texto-a-imagen y edición imagen-a-imagen con soporte de múltiples referencias en una única arquitectura compacta, lo que lo convierte en una opción atractiva para aplicaciones interactivas, despliegues en producción y entornos con restricciones de latencia.
 
-La relevancia de este modelo radica en su equilibrio entre calidad y velocidad: requiere unos 13 GB de VRAM y funciona en GPUs de consumo como la RTX 3090 o RTX 4070, a la vez que mantiene una licencia Apache 2.0 totalmente permisiva para uso comercial. El checkpoint publicado en HuggingFace (PROROK26REG/FLUX.2-klein-4B) es una copia del modelo oficial de Black Forest Labs, con pesos en formato safetensors y un tamaño de repositorio de 23,7 GB.
+La relevancia de este modelo radica en su equilibrio entre calidad y velocidad: requiere unos 13 GB de VRAM y funciona en GPUs de consumo como la RTX 3090 o RTX 4070, a la vez que mantiene una licencia Apache 2.0 totalmente permisiva para uso comercial. El checkpoint publicado en Hugging Face (PROROK26REG/FLUX.2-klein-4B) es una copia del modelo oficial de Black Forest Labs, con pesos en formato safetensors y un tamaño de repositorio de 23,7 GB.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Los detalles exactos del conjunto de datos de entrenamiento no se han publicado.
 - Edicion de imagenes con una o multiples imagenes de referencia (image-to-image y multi-reference editing).
 - Inferencia sub-segundo en hardware de consumo, apta para aplicaciones interactivas en tiempo real.
 - Soporte para control de resolucion (por ejemplo, 1024x1024) y numero de pasos de inferencia (por defecto 4 pasos en el ejemplo).
-- Integracion con la libreria Diffusers de HuggingFace mediante la pipeline `Flux2KleinPipeline`.
+- Integracion con la libreria Diffusers de Hugging Face mediante la pipeline `Flux2KleinPipeline`.
 - Disponible en ComfyUI para flujos de trabajo visuales.
 - Capacidades multilingues limitadas: el modelo esta entrenado principalmente en ingles, aunque puede procesar prompts en otros idiomas con menor fidelidad.
 
@@ -79,8 +79,8 @@ FLUX.2 [klein] destaca por su menor numero de parametros en comparacion con FLUX
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia): https://huggingface.co/PROROK26REG/FLUX.2-klein-4B
-- Repositorio HuggingFace oficial: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
+- Repositorio Hugging Face (copia): https://huggingface.co/PROROK26REG/FLUX.2-klein-4B
+- Repositorio Hugging Face oficial: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Blog de Black Forest Labs: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
 - Pagina del modelo en BFL: https://bfl.ai/models/flux-2-klein
 - Repositorio GitHub oficial: https://github.com/black-forest-labs/flux2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario `sadasdasdsdds`. La model card asociada describe un supuesto modelo de lenguaje orientado al razonamiento, con mejoras en profundidad de pensamiento, soporte de function calling y una reduccion declarada de la tasa de alucinacion. Sin embargo, los metadatos del repositorio lo etiquetan como `bert` y pipeline `feature-extraction`, lo que resulta incoherente con la descripcion de un modelo conversacional de razonamiento con modo de pensamiento.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario `sadasdasdsdds`. La model card asociada describe un supuesto modelo de lenguaje orientado al razonamiento, con mejoras en profundidad de pensamiento, soporte de function calling y una reduccion declarada de la tasa de alucinacion. Sin embargo, los metadatos del repositorio lo etiquetan como `bert` y pipeline `feature-extraction`, lo que resulta incoherente con la descripcion de un modelo conversacional de razonamiento con modo de pensamiento.
 
 El repositorio presenta un tamano de 0,0 GB, cero descargas y cero "likes", y no contiene pesos publicados ni archivos de configuracion visibles en la informacion proporcionada. El nombre (`TestRepo`) y las fechas de creacion y actualizacion (10 de septiembre de 2026, seis segundos de diferencia) apuntan a un repositorio de prueba o a un artefacto generado automaticamente mas que a un modelo listo para produccion.
 
@@ -109,7 +109,7 @@ No disponible. La model card referencia tres modelos de comparacion (`Model1`, `
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadasdasdsdds/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/sadasdasdsdds/MyAwesomeModel-TestRepo
 - Repositorio de codigo del autor: mencionado en la model card sin URL publicada (no disponible)
 - Sitio web oficial y plataforma de chat/API: mencionados en la model card sin URL publicada (no disponible)
 - Paper o publicacion tecnica: no disponible

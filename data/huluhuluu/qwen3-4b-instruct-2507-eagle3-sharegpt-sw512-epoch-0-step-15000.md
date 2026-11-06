@@ -25,7 +25,7 @@ La arquitectura sigue el esquema de EAGLE3 con una capa de transformación liger
 
 El modelo sigue la arquitectura EAGLE3, un esquema de decodificación especulativa que entrena una capa adicional sobre el modelo objetivo para predecir el siguiente token basándose en los últimos 7 tokens (parámetro TTT length). Esta capa tiene un tamaño de 2560 unidades ocultas, 9728 de dimensión intermedia y 32 cabezas de atención con 8 cabezas key/value, lo que da un total de 202,7 millones de parámetros. La atención es causal con una ventana deslizante de 512 tokens, lo que limita el contexto que el draft puede considerar al generar candidatos.
 
-El entrenamiento se realizó con SpecForge, un framework de entrenamiento online para modelos de draft, sobre un dataset ShareGPT limpio (fuente local, sin revisión registrada). Se utilizaron 10 épocas, un total de 231810 pasos de optimizador, batch efectivo de 4, tasa de aprendizaje 1e-4 con warmup lineal del 1,5% y decaimiento coseno, y una longitud máxima de secuencia de 2048 tokens. Durante el entrenamiento se aplicó weight decay 0.0 y gradiente máximo de 0.5. El backend objetivo fue SGLang con flashinfer, y el modelo se guardó cada 5000 pasos, publicándose 47 checkpoints en una colección de HuggingFace.
+El entrenamiento se realizó con SpecForge, un framework de entrenamiento online para modelos de draft, sobre un dataset ShareGPT limpio (fuente local, sin revisión registrada). Se utilizaron 10 épocas, un total de 231810 pasos de optimizador, batch efectivo de 4, tasa de aprendizaje 1e-4 con warmup lineal del 1,5% y decaimiento coseno, y una longitud máxima de secuencia de 2048 tokens. Durante el entrenamiento se aplicó weight decay 0.0 y gradiente máximo de 0.5. El backend objetivo fue SGLang con flashinfer, y el modelo se guardó cada 5000 pasos, publicándose 47 checkpoints en una colección de Hugging Face.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No se dispone de datos comparativos publicados para este checkpoint concreto. Ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-0-step-15000
+- Modelo en Hugging Face: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-0-step-15000
 - Colección de checkpoints: https://huggingface.co/collections/huluhuluu/qwen3-4b-instruct-2507-eagle3-sharegpt-checkpoints
 - Repositorio EAGLE-Qwen3 (implementación oficial de EAGLE): https://github.com/Yunhai-Hu/EAGLE-Qwen3
 - Modelo base Qwen3-4B-Instruct-2507 en Qualcomm AI Hub (referencia): https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507

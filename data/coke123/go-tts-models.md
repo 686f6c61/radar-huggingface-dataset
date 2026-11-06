@@ -105,7 +105,7 @@ La comparacion entre estos tres modelos se limita a tamano, formato y licencia, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/coke123/go-tts-models
+- Repositorio en Hugging Face: https://huggingface.co/coke123/go-tts-models
 - Aplicacion que consume los modelos: https://github.com/chuccp/go-tts
 - Kokoro-82M upstream: https://huggingface.co/hexgrad/Kokoro-82M
 - Kokoro-82M ONNX (origen del fichero UINT8): https://huggingface.co/onnx-community/Kokoro-82M-ONNX

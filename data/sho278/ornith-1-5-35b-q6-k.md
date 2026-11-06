@@ -65,9 +65,9 @@ No se dispone de datos comparativos fiables en la información proporcionada. Mo
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/Sho278/ornith-1.5-35b-q6-k
-- Repositorio HuggingFace del modelo original (GGUF): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
-- Repositorio HuggingFace del modelo original (pesos completos): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Sho278/ornith-1.5-35b-q6-k
+- Repositorio Hugging Face del modelo original (GGUF): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
+- Repositorio Hugging Face del modelo original (pesos completos): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guía de Ornith AI: https://ornith.online/
 - Imagen Docker oficial: https://hub.docker.com/r/ai/ornith-1.5

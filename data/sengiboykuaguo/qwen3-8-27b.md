@@ -90,8 +90,8 @@ No se dispone de datos suficientes para una comparativa técnica completa. Se re
 
 ## Enlaces
 
-- HuggingFace (modelo original): https://huggingface.co/Qwen/Qwen3.8-27B
-- HuggingFace (mirror del usuario): https://huggingface.co/sengiboykuaguo/Qwen3.8-27B
+- Hugging Face (modelo original): https://huggingface.co/Qwen/Qwen3.8-27B
+- Hugging Face (mirror del usuario): https://huggingface.co/sengiboykuaguo/Qwen3.8-27B
 - GitHub oficial: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b
 - Blog de referencia: https://lovableapp.org/blog/qwen3-8-27b

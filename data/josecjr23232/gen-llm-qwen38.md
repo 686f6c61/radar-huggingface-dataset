@@ -38,7 +38,7 @@ Este repositorio no implica ningun entrenamiento, ajuste fino ni fusion: es una 
 - Tareas agenticas de horizonte largo: lmstudio.ai describe Qwen3.8-27B para flujos agenticos y de multiples pasos.
 - Contexto largo: hasta 262.144 tokens en el modelo base, adecuado para documentos y repositorios extensos.
 - Soporte de tool calling / function calling: no confirmado en la informacion disponible para este espejo.
-- Capacidades multilingues: no disponibles (los metadatos de HuggingFace no declaran idiomas).
+- Capacidades multilingues: no disponibles (los metadatos de Hugging Face no declaran idiomas).
 - Respuestas con filtros de seguridad reducidos: es una caracteristica de la variante abliterated, no una capacidad funcional adicional.
 
 ## Casos de uso

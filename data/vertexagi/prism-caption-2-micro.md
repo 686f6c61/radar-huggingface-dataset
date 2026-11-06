@@ -78,9 +78,9 @@ En la ejecución final de 275 temas, Prism Caption 2 produjo cero problemas de f
 
 | Modelo | Base | Params | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Prism Caption 2 Micro | LFM2-700M | 116M (adaptador) | no disponible | LFM Open License v1.0 | HuggingFace (MLX, GGUF) |
-| Prism Caption 1.5 | Qwen3-0.6B | ~600M | no disponible | no especificada | HuggingFace |
-| LFM2-700M (base) | - | 742M | no disponible | LFM Open License v1.0 | HuggingFace |
+| Prism Caption 2 Micro | LFM2-700M | 116M (adaptador) | no disponible | LFM Open License v1.0 | Hugging Face (MLX, GGUF) |
+| Prism Caption 1.5 | Qwen3-0.6B | ~600M | no disponible | no especificada | Hugging Face |
+| LFM2-700M (base) | - | 742M | no disponible | LFM Open License v1.0 | Hugging Face |
 
 El modelo supera a su predecesor (Prism Caption 1.5) en calidad de titulación: cero errores de formato frente a 13/275, y una media de palabras más natural (5,0 frente a 4,0). Frente al base LFM2-700M, la mejora es drástica en la tarea específica, reduciendo los problemas de formato de 69/275 a 0/275. No se dispone de comparativas con otros modelos de titulación de chats del mercado.
 
@@ -95,7 +95,7 @@ El modelo supera a su predecesor (Prism Caption 1.5) en calidad de titulación: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VertexAGI/prism-caption-2-micro
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/prism-caption-2-micro
 - Modelo base LFM2-700M: https://huggingface.co/LiquidAI/LFM2-700M
 - Checkpoint MLX 4-bit del base: https://huggingface.co/mlx-community/LFM2-700M-4bit
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM2-700M/blob/main/LICENSE

@@ -3,7 +3,7 @@
 ## Resumen
 `edwardneo/cs329x-personalized-dpo` es un adaptador de ajuste fino del tipo PEFT/LoRA (biblioteca `peft`, versión 0.10.0) construido sobre `meta-llama/Llama-3.2-3B-Instruct`. El nombre del repositorio sugiere un trabajo de la asignatura CS329X (curso de NLP centrado en el ser humano), y las siglas DPO apuntan a un entrenamiento mediante optimización directa de preferencias (Direct Preference Optimization) orientado a personalización. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que deben combinarse con el modelo base para funcionar.
 
-El repositorio no incluye model card útil: la tarjeta es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]". No hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 "likes", y su tamaño es de 0.0 GB, por lo que es probable que los pesos del adaptador no estén publicados o sean meramente simbólicos.
+El repositorio no incluye model card útil: la tarjeta es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]". No hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 "likes", y su tamaño es de 0.0 GB, por lo que es probable que los pesos del adaptador no estén publicados o sean meramente simbólicos.
 
 Su relevancia es, por tanto, limitada y fundamentalmente académica: sirve como ejemplo de cómo aplicar DPO para personalizar un modelo pequeño (3B) sobre un LLM ya alineado por instrucciones. Cualquier evaluación rigurosa depende de consultar el modelo base y de que el autor publique detalles de entrenamiento que ahora mismo no existen.
 
@@ -57,11 +57,11 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `edwardneo/cs329x-personalized-dpo` (este) | Adaptador sobre 3,21 B | No disponible (base: 128k) | No disponible | Adaptador PEFT en HuggingFace |
-| Llama 3.2 3B Instruct (base) | 3,21 B | 128k | Llama 3.2 Community License | Pesos completos en HuggingFace |
-| Qwen2.5 3B Instruct | ~3,1 B | 32k (ampliable a 128k) | Apache 2.0 / Qwen License | Pesos completos en HuggingFace |
-| Phi-3.5-mini Instruct | 3,8 B | 128k | MIT | Pesos completos en HuggingFace |
-| Gemma 2 2B IT | 2,6 B | 8k | Gemma Terms of Use | Pesos completos en HuggingFace |
+| `edwardneo/cs329x-personalized-dpo` (este) | Adaptador sobre 3,21 B | No disponible (base: 128k) | No disponible | Adaptador PEFT en Hugging Face |
+| Llama 3.2 3B Instruct (base) | 3,21 B | 128k | Llama 3.2 Community License | Pesos completos en Hugging Face |
+| Qwen2.5 3B Instruct | ~3,1 B | 32k (ampliable a 128k) | Apache 2.0 / Qwen License | Pesos completos en Hugging Face |
+| Phi-3.5-mini Instruct | 3,8 B | 128k | MIT | Pesos completos en Hugging Face |
+| Gemma 2 2B IT | 2,6 B | 8k | Gemma Terms of Use | Pesos completos en Hugging Face |
 
 La comparación directa con estos modelos es limitada porque el artefacto analizado es un adaptador y no un modelo autónomo. La comparativa relevante sería frente a otros adaptadores DPO sobre el mismo modelo base, de los que no se dispone información.
 
@@ -77,7 +77,7 @@ La comparación directa con estos modelos es limitada porque el artefacto analiz
 - Uso en producción desaconsejado: sin benchmarks, sin licencia clara y sin datos de entrenamiento, no es apto para entornos de producción sin una evaluación exhaustiva y propia.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/edwardneo/cs329x-personalized-dpo
+- Repositorio Hugging Face: https://huggingface.co/edwardneo/cs329x-personalized-dpo
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Librería PEFT: https://github.com/huggingface/peft

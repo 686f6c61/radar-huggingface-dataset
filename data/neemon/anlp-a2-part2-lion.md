@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`neemon/anlp-a2-part2-lion` es un checkpoint de un transformer decoder-only entrenado desde cero por el usuario neemon para la asignatura Advanced NLP (IIIT-H, Monsoon 2026). El elemento diferenciador es el uso del optimizador Lion (sign momentum, eficiente en memoria) en lugar del habitual AdamW, dentro de un ejercicio academico de implementacion completa: arquitectura, bucle de entrenamiento y evaluacion viven en el repositorio de la asignatura, y este repositorio de HuggingFace contiene unicamente el checkpoint.
+`neemon/anlp-a2-part2-lion` es un checkpoint de un transformer decoder-only entrenado desde cero por el usuario neemon para la asignatura Advanced NLP (IIIT-H, Monsoon 2026). El elemento diferenciador es el uso del optimizador Lion (sign momentum, eficiente en memoria) en lugar del habitual AdamW, dentro de un ejercicio academico de implementacion completa: arquitectura, bucle de entrenamiento y evaluacion viven en el repositorio de la asignatura, y este repositorio de Hugging Face contiene unicamente el checkpoint.
 
 Con `d_model=512`, 8 capas, 8 cabezas y una ventana de contexto de solo 256 tokens, el modelo ronda los 58 millones de parametros si el `lm_head` no esta atado a los embeddings (unos 42 M si lo esta; el autor no publica el dato). El vocabulario declarado es de 32.000 entradas y el FFN es denso, pese a que la model card lleva el tag `mixture-of-experts`: la propia configuracion indica `n_routed_experts=0` y `n_shared_experts=0`, por lo que no existe enrutamiento MoE real.
 
@@ -112,7 +112,7 @@ La diferencia practica no esta tanto en el numero de parametros como en el ecosi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neemon/anlp-a2-part2-lion
+- Modelo en Hugging Face: https://huggingface.co/neemon/anlp-a2-part2-lion
 - Repositorio de la asignatura (arquitectura, entrenamiento y evaluacion): no enlazado en la informacion proporcionada.
 - Paper del optimizador Lion: https://arxiv.org/abs/2302.06675 (referencia externa al modelo, no incluida en la informacion proporcionada).
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las unicas entradas devueltas son paginas turisticas en neerlandes sobre la ciudad de Vancouver, sin relacion alguna con el modelo, su entrenamiento o su evaluacion.

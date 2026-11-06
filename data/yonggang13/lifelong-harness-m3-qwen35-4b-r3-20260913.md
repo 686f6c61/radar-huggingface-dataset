@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo con identificador `yonggang13/lifelong-harness-m3-qwen35-4b-r3-20260913` es un adaptador LoRA publicado por el usuario yonggang13 en HuggingFace. No se trata de un modelo completo con pesos propios, sino de un ajuste fino mediante PEFT sobre el modelo base `Qwen/Qwen3.5-4B`; el repositorio ocupa 0,3 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo de miles de millones de parametros en precision completa.
+El modelo con identificador `yonggang13/lifelong-harness-m3-qwen35-4b-r3-20260913` es un adaptador LoRA publicado por el usuario yonggang13 en Hugging Face. No se trata de un modelo completo con pesos propios, sino de un ajuste fino mediante PEFT sobre el modelo base `Qwen/Qwen3.5-4B`; el repositorio ocupa 0,3 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo de miles de millones de parametros en precision completa.
 
 Las etiquetas del repositorio lo orientan a tareas de tutoria (`tutoring`) y aprendizaje continuo (`lifelong-learning`), con pipeline de `text-generation` y capacidades conversacionales. La nomenclatura del identificador (serie `m3`, iteracion `r3`, fecha 20260913) sugiere un experimento dentro de una linea de trabajo mas amplia sobre aprendizaje continuo, probablemente con multiples rondas de entrenamiento o evaluacion sobre el mismo harness.
 
-La relevancia practica del modelo es limitada por el momento: registra cero descargas y cero "likes", su licencia e idiomas no estan declarados en la informacion disponible, y el acceso esta restringido en HuggingFace, de modo que requiere aceptar condiciones antes de poder descargarlo. Ademas, la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo ni con su autor: los enlaces obtenidos corresponden a dominios sin relacion alguna con el proyecto. Cualquier evaluacion seria del adaptador exige primero verificar el modelo base `Qwen/Qwen3.5-4B`, cuya ficha tampoco forma parte de la informacion proporcionada.
+La relevancia practica del modelo es limitada por el momento: registra cero descargas y cero "likes", su licencia e idiomas no estan declarados en la informacion disponible, y el acceso esta restringido en Hugging Face, de modo que requiere aceptar condiciones antes de poder descargarlo. Ademas, la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo ni con su autor: los enlaces obtenidos corresponden a dominios sin relacion alguna con el proyecto. Cualquier evaluacion seria del adaptador exige primero verificar el modelo base `Qwen/Qwen3.5-4B`, cuya ficha tampoco forma parte de la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia practica del modelo es limitada por el momento: registra cero desc
 | Modelo base | Qwen/Qwen3.5-4B |
 | Tipo de adaptador | LoRA (libreria PEFT) |
 | Pipeline | text-generation |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-13 |
 | Ultima actualizacion | 2026-09-13 |
 | Descargas / likes | 0 / 0 |
@@ -88,7 +88,7 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yonggang13/lifelong-harness-m3-qwen35-4b-r3-20260913
+- Repositorio en Hugging Face: https://huggingface.co/yonggang13/lifelong-harness-m3-qwen35-4b-r3-20260913
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog, repositorio o demo del autor: no disponible
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relacionado con el modelo; los resultados obtenidos corresponden a dominios sin vinculacion con el proyecto.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Krea-2-Coloss-Turbo es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado por colosslabs en HuggingFace. Se trata de un fine-tune de Krea-2-Turbo, el modelo base desarrollado por Krea, orientado a la generacion de imagenes fotorrealistas con especial atencion a la anatomia humana. El modelo se distribuye en formato ComfyUI, lo que indica que esta pensado para integrarse directamente en flujos de trabajo de ComfyUI sin necesidad de conversiones adicionales.
+Krea-2-Coloss-Turbo es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado por colosslabs en Hugging Face. Se trata de un fine-tune de Krea-2-Turbo, el modelo base desarrollado por Krea, orientado a la generacion de imagenes fotorrealistas con especial atencion a la anatomia humana. El modelo se distribuye en formato ComfyUI, lo que indica que esta pensado para integrarse directamente en flujos de trabajo de ComfyUI sin necesidad de conversiones adicionales.
 
 Su relevancia radica en la especializacion respecto al modelo base: mientras Krea-2-Turbo es un modelo generalista optimizado para velocidad (de ahi el sufijo "Turbo"), esta derivacion de Coloss Labs ajusta el modelo para mejorar la fidelidad anatomica y el fotorrealismo en casos concretos. El repositorio pesa 60,6 GB, lo que sugiere que incluye pesos en alta precision y posiblemente varios archivos o componentes auxiliares.
 
-Cabe destacar que el acceso al modelo es restringido (gated): los usuarios deben aceptar las condiciones de uso en HuggingFace antes de poder descargarlo. La licencia aplicable es la krea-2-community-license, una licencia comunitaria que impone condiciones especificas que conviene revisar antes de cualquier uso comercial. El modelo incluye contenido etiquetado como "not-for-all-audiences", por lo que su uso esta sujeto a restricciones de audiencia.
+Cabe destacar que el acceso al modelo es restringido (gated): los usuarios deben aceptar las condiciones de uso en Hugging Face antes de poder descargarlo. La licencia aplicable es la krea-2-community-license, una licencia comunitaria que impone condiciones especificas que conviene revisar antes de cualquier uso comercial. El modelo incluye contenido etiquetado como "not-for-all-audiences", por lo que su uso esta sujeto a restricciones de audiencia.
 
 ## Especificaciones tecnicas
 
@@ -60,15 +60,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Krea-2-Coloss-Turbo (este modelo) | no disponible | no disponible | krea-2-community-license | Gated en HuggingFace |
-| krea/Krea-2-Turbo (modelo base) | no disponible | no disponible | krea-2-community-license | Disponible en HuggingFace |
+| Krea-2-Coloss-Turbo (este modelo) | no disponible | no disponible | krea-2-community-license | Gated en Hugging Face |
+| krea/Krea-2-Turbo (modelo base) | no disponible | no disponible | krea-2-community-license | Disponible en Hugging Face |
 | FLUX.1-dev (referencia de categoria) | 12 000 millones (aprox.) | no aplicable | Licencia no comercial | Abierta (pesos publicos) |
 
 La comparativa es orientativa: los datos del modelo base y de FLUX.1 se incluyen como referencia de categoria, pero no se han publicado especificaciones completas para Krea-2-Coloss-Turbo.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo.
 - Licencia krea-2-community-license: impone condiciones especificas heredadas de Krea que pueden restringir el uso comercial; debe revisarse el texto de la licencia antes de cualquier despliegue en produccion.
 - Contenido de audiencia restringida: el modelo esta etiquetado como nsfw y not-for-all-audiences, por lo que su uso puede no ser adecuado en entornos profesionales o publicos sin filtros adicionales.
 - Informacion tecnica escasa: no hay documentacion publicada sobre parametros, proceso de entrenamiento, dataset ni rendimiento, lo que dificulta la evaluacion rigurosa del modelo.
@@ -78,6 +78,6 @@ La comparativa es orientativa: los datos del modelo base y de FLUX.1 se incluyen
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/colosslabs/Krea-2-Coloss-Turbo
+- Ficha en Hugging Face: https://huggingface.co/colosslabs/Krea-2-Coloss-Turbo
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado enlaces adicionales (papers, blogs, demos) en la informacion disponible.

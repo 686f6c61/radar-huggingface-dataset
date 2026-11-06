@@ -4,7 +4,7 @@
 
 El modelo `tuhulab/geneformer-v2-104m-immune-bench-ft` es un ajuste fino (fine-tuning) del modelo fundacional Geneformer V2 de 104 millones de parámetros, desarrollado originalmente por NVIDIA. Geneformer es un transformer preentrenado a gran escala sobre transcriptomas de células individuales, diseñado para aprender representaciones de genes sensibles al contexto y permitir predicciones específicas de contexto en biología de redes, incluso con conjuntos de datos limitados. Este fine-tuning concreto se orienta a la anotación de células inmunes, como sugiere el sufijo `immune-bench-ft`, probablemente entrenado sobre un benchmark de referencia para clasificación de tipos celulares inmunitarios.
 
-El repositorio tiene un tamaño de 104.4 GB, lo que indica que aloja los pesos completos en formato safetensors, y su acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. Aunque la información pública es escasa, la relevancia de este modelo radica en su potencial para aplicaciones de inmunología computacional, donde la anotación precisa de células inmunes a partir de datos de expresión génica es un paso crítico.
+El repositorio tiene un tamaño de 104.4 GB, lo que indica que aloja los pesos completos en formato safetensors, y su acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. Aunque la información pública es escasa, la relevancia de este modelo radica en su potencial para aplicaciones de inmunología computacional, donde la anotación precisa de células inmunes a partir de datos de expresión génica es un paso crítico.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El repositorio tiene un tamaño de 104.4 GB, lo que indica que aloja los pesos c
 | Longitud de contexto | no disponible (el Geneformer original usa ventanas de 2048 genes) |
 | Tipos de cuantizacion | no disponible (el repositorio contiene safetensors, probablemente en FP32 o BF16) |
 | Idiomas soportados | no disponible (modelo biológico, no lingüístico) |
-| Licencia | other (especificada en HuggingFace, requiere aceptación de condiciones) |
+| Licencia | other (especificada en Hugging Face, requiere aceptación de condiciones) |
 | Formato de pesos | safetensors (según los tags) |
 
 ## Arquitectura y entrenamiento
@@ -56,15 +56,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. El no
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Geneformer V2 104M (NVIDIA) | 104M | 2048 genes (original) | no publicado | CC-BY-NC-SA (original) | Abierto en HuggingFace |
-| tuhulab/geneformer-v2-104m-immune-bench-ft | 104M | no disponible | no publicado | other (restringido) | Gated en HuggingFace |
+| Geneformer V2 104M (NVIDIA) | 104M | 2048 genes (original) | no publicado | CC-BY-NC-SA (original) | Abierto en Hugging Face |
+| tuhulab/geneformer-v2-104m-immune-bench-ft | 104M | no disponible | no publicado | other (restringido) | Gated en Hugging Face |
 | scGPT (modelo fundacional de células individuales) | ~50M | 2048 genes | publicado en paper | CC-BY-NC | Abierto |
 
 No se dispone de comparaciones cuantitativas entre estos modelos en la información proporcionada. La comparativa se limita a características generales.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, lo que implica que los usuarios deben aceptar condiciones específicas antes de descargarlo. Esto puede limitar su uso en entornos académicos o industriales.
+- Acceso restringido: el modelo es gated en Hugging Face, lo que implica que los usuarios deben aceptar condiciones específicas antes de descargarlo. Esto puede limitar su uso en entornos académicos o industriales.
 - Documentación insuficiente: no hay información pública sobre el proceso de fine-tuning, los datos utilizados, ni las métricas de evaluación, lo que dificulta la reproducibilidad.
 - Sesgos potenciales: al ser un modelo entrenado con datos de transcriptomas, puede heredar sesgos de las poblaciones celulares representadas en el corpus de preentrenamiento, que podría no cubrir todas las etnias o condiciones patológicas.
 - Riesgo de alucinación en anotaciones: como cualquier modelo de clasificación, puede producir etiquetas incorrectas en tipos celulares poco representados o en datos con ruido técnico.
@@ -73,7 +73,7 @@ No se dispone de comparaciones cuantitativas entre estos modelos en la informaci
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/tuhulab/geneformer-v2-104m-immune-bench-ft
+- Repositorio del modelo en Hugging Face: https://huggingface.co/tuhulab/geneformer-v2-104m-immune-bench-ft
 - Geneformer V2 104M de NVIDIA: https://huggingface.co/nvidia/geneformer_V2_104M
 - README de NVIDIA Geneformer V2: https://huggingface.co/nvidia/geneformer_V2_104M/blob/main/README.md
 - Repositorio GitHub original de Geneformer: https://github.com/haroonshakeel/Geneformer

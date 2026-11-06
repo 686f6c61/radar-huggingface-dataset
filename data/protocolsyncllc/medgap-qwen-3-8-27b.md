@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `protocolsyncllc/medgap-qwen-3.8-27b` es una publicación de HuggingFace creada por el usuario `protocolsyncllc` el 3 de septiembre de 2026. La información disponible en la ficha del modelo es extremadamente limitada: el README únicamente contiene la línea `license: gemma`, y no se proporcionan detalles sobre arquitectura, entrenamiento, capacidades o rendimiento. El nombre sugiere una posible relación con la familia Qwen (por la referencia "qwen" en el identificador) y un ámbito médico ("medgap"), pero no hay ninguna evidencia documental que confirme estas hipótesis.
+El modelo `protocolsyncllc/medgap-qwen-3.8-27b` es una publicación de Hugging Face creada por el usuario `protocolsyncllc` el 3 de septiembre de 2026. La información disponible en la ficha del modelo es extremadamente limitada: el README únicamente contiene la línea `license: gemma`, y no se proporcionan detalles sobre arquitectura, entrenamiento, capacidades o rendimiento. El nombre sugiere una posible relación con la familia Qwen (por la referencia "qwen" en el identificador) y un ámbito médico ("medgap"), pero no hay ninguna evidencia documental que confirme estas hipótesis.
 
 A fecha de la consulta, el modelo registra cero descargas y cero likes, lo que indica que es una publicación reciente o de muy baja difusión. No se han encontrado resultados de búsqueda web relevantes que aporten información adicional sobre el modelo, su propósito o sus especificaciones técnicas. Por tanto, esta ficha se limita a reflejar los datos disponibles y marca explícitamente todo lo que no se puede verificar.
 
@@ -53,6 +53,6 @@ No disponible. No se conocen modelos comparables debido a la falta de informaci�
 
 ## Enlaces
 
-- [HuggingFace: protocolsyncllc/medgap-qwen-3.8-27b](https://huggingface.co/protocolsyncllc/medgap-qwen-3.8-27b)
+- [Hugging Face: protocolsyncllc/medgap-qwen-3.8-27b](https://huggingface.co/protocolsyncllc/medgap-qwen-3.8-27b)
 
 No se han encontrado papers, blogs, repositorios adicionales o demos relacionados con este modelo.

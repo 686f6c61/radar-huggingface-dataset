@@ -62,10 +62,10 @@ La comparativa se basa en los datos oficiales de la familia Ling, ya que no hay 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ling-3.0-flash (base) | 124 B | 5,1 B | 256K (hasta 1M) | MIT | HuggingFace |
+| Ling-3.0-flash (base) | 124 B | 5,1 B | 256K (hasta 1M) | MIT | Hugging Face |
 | Ling-lite | 16,8 B | 2,75 B | no disponible | MIT | GitHub |
 | Ling-plus | 290 B | 28,8 B | no disponible | MIT | GitHub |
-| Ling-3.0-flash-Research-Q6-AGENT (este) | 124 B | 5,1 B | 262.144 | MIT | HuggingFace (GGUF) |
+| Ling-3.0-flash-Research-Q6-AGENT (este) | 124 B | 5,1 B | 262.144 | MIT | Hugging Face (GGUF) |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento real de este modelo con alternativas como DeepSeek-V3, Qwen2.5-MoE o Mixtral-8x22B. La guía oficial de InclusionAI menciona que Ling-3.0-flash se posiciona como un modelo coste-efectivo, pero no se incluyen cifras concretas.
 

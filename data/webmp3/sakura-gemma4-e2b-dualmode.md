@@ -87,9 +87,9 @@ La comparativa natural es frente a la pila de dos modelos que este PoC pretende 
 
 | Modelo | Rol | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sakura Gemma 4 E2B DualMode | Generacion + embeddings 768d en un solo backbone | 5,123 B almacenados (2,257 B densos de texto) + 1,70 M de adaptadores | no disponible | gemma | HuggingFace, repo de 0,0 GB, 0 descargas |
-| google/gemma-4-E2B-it | Backbone generativo de partida | 5,123 B almacenados (clase de computo E2B, 2,257 B densos) | no disponible | gemma | HuggingFace (modelo base declarado) |
-| google/embeddinggemma-2 | Codificador denso, profesor de destilacion | no disponible | no disponible | no disponible | HuggingFace (modelo base declarado) |
+| Sakura Gemma 4 E2B DualMode | Generacion + embeddings 768d en un solo backbone | 5,123 B almacenados (2,257 B densos de texto) + 1,70 M de adaptadores | no disponible | gemma | Hugging Face, repo de 0,0 GB, 0 descargas |
+| google/gemma-4-E2B-it | Backbone generativo de partida | 5,123 B almacenados (clase de computo E2B, 2,257 B densos) | no disponible | gemma | Hugging Face (modelo base declarado) |
+| google/embeddinggemma-2 | Codificador denso, profesor de destilacion | no disponible | no disponible | no disponible | Hugging Face (modelo base declarado) |
 | Pila separada Gemma 4 E2B-it + EmbeddingGemma 2 | Generacion y recuperacion con dos modelos residentes | Suma de ambos | no disponible | gemma | Requiere cargar dos backbones de texto |
 
 El argumento diferencial del PoC es el ahorro de memoria (516,30 MB asignados, 1.305,66 MB en pico, 250,79 MB de RSS) a cambio de no ser compatible a nivel de indice con los vectores del profesor y de no alcanzar todavia calidad de produccion. No hay datos de benchmarks que permitan comparar calidad de recuperacion entre Sakura y EmbeddingGemma 2.
@@ -111,7 +111,7 @@ El argumento diferencial del PoC es el ahorro de memoria (516,30 MB asignados, 1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webmp3/Sakura-Gemma4-E2B-DualMode
+- Modelo en Hugging Face: https://huggingface.co/webmp3/Sakura-Gemma4-E2B-DualMode
 - Modelo base generativo: https://huggingface.co/google/gemma-4-E2B-it
 - Modelo base profesor de embeddings: https://huggingface.co/google/embeddinggemma-2
 - Papers, blogs tecnicos, repositorios de codigo o demos adicionales: no disponible en la informacion proporcionada.

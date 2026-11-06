@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bek es un modelo publicado en HuggingFace por el usuario beknazar009 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, datos de entrenamiento ni capacidades declaradas: únicamente incluye la línea de metadatos de licencia. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y actualización coincide (2026-10-31), lo que sugiere una publicación sin iteraciones posteriores.
+Bek es un modelo publicado en Hugging Face por el usuario beknazar009 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, datos de entrenamiento ni capacidades declaradas: únicamente incluye la línea de metadatos de licencia. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y actualización coincide (2026-10-31), lo que sugiere una publicación sin iteraciones posteriores.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. Tampoco se ha publicado ningún resultado de benchmarks ni documentación adicional enlazada desde el repositorio. Cualquier evaluación de sus capacidades requeriría inspeccionar directamente los pesos y la configuración del repositorio, algo que no se ha podido realizar con la información proporcionada.
 
@@ -41,7 +41,7 @@ Tampoco se documentan innovaciones técnicas como decodificación especulativa, 
 No es posible recomendar casos de uso concretos sin información verificable sobre arquitectura, tamaño, contexto y capacidades. Los siguientes escenarios son genéricos para modelos de lenguaje y requerirían validación previa con los pesos reales del repositorio:
 
 - Evaluación experimental en investigación: cargar los pesos en un entorno aislado para inspeccionar la configuración y determinar la arquitectura real antes de cualquier uso.
-- Pruebas de integración en pipelines de HuggingFace Transformers: verificar compatibilidad con `AutoModel` y `AutoTokenizer` una vez identificada la arquitectura.
+- Pruebas de integración en pipelines de Hugging Face Transformers: verificar compatibilidad con `AutoModel` y `AutoTokenizer` una vez identificada la arquitectura.
 - Análisis de licencia y compliance: la licencia Apache 2.0 permite uso comercial, pero debe confirmarse que los pesos corresponden realmente a un modelo entrenado y no a un artefacto vacío o de prueba.
 - Comparación de tokenizadores: si el repositorio incluye tokenizer, podría analizarse su vocabulario y cobertura idiomática.
 - Reproducción de experimentos: únicamente si el autor publica documentación adicional en el futuro.
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/beknazar009/Bek
+- Repositorio en Hugging Face: https://huggingface.co/beknazar009/Bek
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web.

@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo de IA y no existe una categoría comparable de modelos con los que contrastarlo. Los repositorios de notas de investigación son poco comunes en HuggingFace, y no se han encontrado alternativas similares en la búsqueda web.
+No disponible. Este repositorio no es un modelo de IA y no existe una categoría comparable de modelos con los que contrastarlo. Los repositorios de notas de investigación son poco comunes en Hugging Face, y no se han encontrado alternativas similares en la búsqueda web.
 
 ## Limitaciones y advertencias
 
@@ -63,6 +63,6 @@ No disponible. Este repositorio no es un modelo de IA y no existe una categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marcelocost/video-understanding-notes
+- Repositorio en Hugging Face: https://huggingface.co/marcelocost/video-understanding-notes
 - Google Scholar (referencia general): https://scholar.google.com/
 - Nota: los resultados de búsqueda web sobre herramientas de resumen de video (NoteAI, NoteGPT, fal.ai, Google Cloud) no están relacionados con este repositorio y se omiten por irrelevancia.

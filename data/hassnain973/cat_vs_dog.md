@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`hassnain973/cat_vs_dog` es un repositorio publicado en HuggingFace por el usuario hassnain973 bajo licencia Apache 2.0. Por el identificador, la etiqueta de librería (`keras`) y la ausencia de cualquier documentación en la model card, se trata casi con certeza de un modelo de clasificación de imágenes binaria (gato frente a perro) entrenado con Keras, probablemente con una red neuronal convolucional o un backbone preentrenado ajustado. No hay información pública sobre arquitectura, datos de entrenamiento ni métricas.
+`hassnain973/cat_vs_dog` es un repositorio publicado en Hugging Face por el usuario hassnain973 bajo licencia Apache 2.0. Por el identificador, la etiqueta de librería (`keras`) y la ausencia de cualquier documentación en la model card, se trata casi con certeza de un modelo de clasificación de imágenes binaria (gato frente a perro) entrenado con Keras, probablemente con una red neuronal convolucional o un backbone preentrenado ajustado. No hay información pública sobre arquitectura, datos de entrenamiento ni métricas.
 
-El repositorio no incluye pipeline declarado, idiomas soportados ni descripción técnica. El tamaño del repo es de 0.0 GB según HuggingFace, lo que sugiere que los pesos no están subidos o son de tamaño despreciable. Las descargas y likes son cero, y las fechas de creación y actualización son del 4 de noviembre de 2026, con apenas diez minutos entre ambas, lo que apunta a una subida de prueba o a un experimento personal sin mantenimiento.
+El repositorio no incluye pipeline declarado, idiomas soportados ni descripción técnica. El tamaño del repo es de 0.0 GB según Hugging Face, lo que sugiere que los pesos no están subidos o son de tamaño despreciable. Las descargas y likes son cero, y las fechas de creación y actualización son del 4 de noviembre de 2026, con apenas diez minutos entre ambas, lo que apunta a una subida de prueba o a un experimento personal sin mantenimiento.
 
 Por todo ello, este modelo no es relevante para producción ni para evaluación comparativa: es un artefacto de aprendizaje o un ejercicio académico. La ficha se redacta por completitud, marcando explícitamente cada dato no disponible en lugar de inferirlo.
 
@@ -23,7 +23,7 @@ Por todo ello, este modelo no es relevante para producción ni para evaluación 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura. La única pista es la etiqueta `keras` en HuggingFace, que indica que el modelo se guardó o se entrenó con la API de Keras (probablemente TensorFlow/Keras). Para una tarea de clasificación binaria de imágenes como `cat_vs_dog`, lo habitual sería una CNN pequeña (tipo LeNet/VGG reducido) o un backbone como MobileNetV2, ResNet50 o EfficientNet con una cabeza densa de dos salidas y activación softmax o sigmoide.
+No se ha publicado información sobre la arquitectura. La única pista es la etiqueta `keras` en Hugging Face, que indica que el modelo se guardó o se entrenó con la API de Keras (probablemente TensorFlow/Keras). Para una tarea de clasificación binaria de imágenes como `cat_vs_dog`, lo habitual sería una CNN pequeña (tipo LeNet/VGG reducido) o un backbone como MobileNetV2, ResNet50 o EfficientNet con una cabeza densa de dos salidas y activación softmax o sigmoide.
 
 Tampoco hay datos sobre el conjunto de entrenamiento (número de imágenes, resolución, augmentación), sobre el régimen de entrenamiento (épocas, optimizador, learning rate) ni sobre si se aplicó transfer learning. No se documenta ninguna innovación técnica. El tamaño del repositorio (0.0 GB) es compatible con que los pesos no se hayan subido o con que el modelo sea extremadamente pequeño.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el conjunto de entrenamiento (número de imágenes, reso
 ## Casos de uso
 
 - Prototipo educativo de clasificación de imágenes: serviría como ejemplo en un curso o tutorial de Keras para mostrar el flujo completo de entrenamiento y exportación de un clasificador binario.
-- Prueba de integración en HuggingFace Hub: útil para verificar el proceso de subida de un modelo Keras y la generación automática de la model card.
+- Prueba de integración en Hugging Face Hub: útil para verificar el proceso de subida de un modelo Keras y la generación automática de la model card.
 - Base para experimentos de transfer learning: se podría reutilizar la cabeza de clasificación como punto de partida en un ejercicio con un dataset propio de dos clases.
 - Demostración de despliegue local con TensorFlow Serving o FastAPI: válido solo si los pesos están realmente presentes en el repositorio, cosa que no se confirma.
 - Filtrado preliminar de imágenes en un pipeline de juguete: con reservas extremas, por la falta de métricas y de documentación sobre el dataset.
@@ -66,7 +66,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 ## Limitaciones y advertencias
 
 - Model card vacía: no hay descripción, métricas, dataset ni instrucciones de uso.
-- Sin pipeline declarado en HuggingFace, por lo que la plataforma no puede inferir la tarea automáticamente.
+- Sin pipeline declarado en Hugging Face, por lo que la plataforma no puede inferir la tarea automáticamente.
 - Tamaño del repositorio de 0.0 GB: es probable que los pesos no estén subidos o sean de un modelo trivial; no se puede verificar que el modelo sea cargable.
 - Riesgo de alucinación: no aplica en el sentido de modelos de lenguaje, pero sí existe riesgo de clasificaciones erróneas sin métricas que las acoten.
 - Sesgos conocidos: no documentados; en un clasificador gato/perro los sesgos típicos (razas, iluminación, fondos) no se han evaluado.
@@ -76,5 +76,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hassnain973/cat_vs_dog
+- Repositorio en Hugging Face: https://huggingface.co/hassnain973/cat_vs_dog
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

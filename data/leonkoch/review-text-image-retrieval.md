@@ -24,7 +24,7 @@ Otros datos del repositorio: tamano 0,0 GB, 0 descargas, 0 likes, sin pipeline d
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura. El repositorio no contiene un transformer, un modelo de vision-lenguaje ni ningun otro tipo de red neuronal documentada; la etiqueta `transformer` aparece en los tags de HuggingFace, pero la model card no la respalda con ninguna descripcion tecnica ni con ficheros de pesos. Tampoco hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset, fases de RLHF o DPO, ni innovaciones tecnicas como atencion lineal o decodificacion especulativa.
+No se describe ninguna arquitectura. El repositorio no contiene un transformer, un modelo de vision-lenguaje ni ningun otro tipo de red neuronal documentada; la etiqueta `transformer` aparece en los tags de Hugging Face, pero la model card no la respalda con ninguna descripcion tecnica ni con ficheros de pesos. Tampoco hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset, fases de RLHF o DPO, ni innovaciones tecnicas como atencion lineal o decodificacion especulativa.
 
 Lo que si describe la documentacion es el plan de una investigacion: alcance de la pregunta de investigacion y factores de confusion probables, una comparacion propuesta contra lineas base emparejadas, contexto de evaluacion concreto (Flickr30k y MS COCO Captions), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. La model card especifica ademas que, si en el futuro se anaden resultados, deberan incluir versiones de los conjuntos de datos, comandos, semillas, hardware y registros en crudo.
 
@@ -79,5 +79,5 @@ No disponible. Este repositorio no es un modelo y por tanto no admite comparacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leonkoch/review-text-image-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/leonkoch/review-text-image-retrieval
 - La busqueda web realizada no devolvio enlaces relevantes sobre este repositorio ni sobre su autor: los resultados correspondian a paginas genericas del motor de busqueda (Bing), sin relacion con el contenido de la ficha. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

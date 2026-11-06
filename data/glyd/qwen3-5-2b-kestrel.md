@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks (MMLU, HumanEval, GSM8K) para ninguno de lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/glyd/Qwen3.5-2B-kestrel
+- Repositorio Hugging Face: https://huggingface.co/glyd/Qwen3.5-2B-kestrel
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Commit del modelo base usado para la cuantizacion: https://huggingface.co/Qwen/Qwen3.5-2B/tree/15852e8c16360a2fea060d615a32b45270f8a8fc
 - Nivel de cuantizacion alternativo (glyd swift): https://huggingface.co/glyd/Qwen3.5-2B-swift

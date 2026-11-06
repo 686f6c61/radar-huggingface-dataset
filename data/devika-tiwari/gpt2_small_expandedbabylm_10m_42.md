@@ -4,7 +4,7 @@
 
 El modelo `gpt2_small_expandedbabyLM_10M_42` es un ajuste fino (fine-tuning) de un modelo GPT-2 pequeño, desarrollado por la autora devika-tiwari. Según la model card, se trata de una versión entrenada sobre un conjunto de datos no especificado, aunque el nombre sugiere que utiliza una expansión del corpus BabyLM, un recurso diseñado para estudiar la adquisición del lenguaje en modelos de aprendizaje automático. El modelo tiene aproximadamente 10 millones de parámetros y fue entrenado durante 20 épocas con una pérdida final de validación de 3.1528.
 
-Este modelo es relevante en el contexto de la investigación sobre modelos de lenguaje de pequeño tamaño, especialmente en el ámbito del BabyLM Challenge, que busca entrenar modelos con datos limitados comparables a la exposición lingüística de un niño. Su reducido número de parámetros lo hace accesible para experimentos en entornos con recursos computacionales limitados, aunque su rendimiento en tareas complejas será necesariamente modesto. La ficha se basa exclusivamente en la información pública disponible en HuggingFace, que es escasa y no incluye detalles sobre arquitectura interna, licencia o idiomas soportados.
+Este modelo es relevante en el contexto de la investigación sobre modelos de lenguaje de pequeño tamaño, especialmente en el ámbito del BabyLM Challenge, que busca entrenar modelos con datos limitados comparables a la exposición lingüística de un niño. Su reducido número de parámetros lo hace accesible para experimentos en entornos con recursos computacionales limitados, aunque su rendimiento en tareas complejas será necesariamente modesto. La ficha se basa exclusivamente en la información pública disponible en Hugging Face, que es escasa y no incluye detalles sobre arquitectura interna, licencia o idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Este modelo es relevante en el contexto de la investigación sobre modelos de le
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de un transformer decoder-only, típica de la familia GPT-2. El modelo fue ajustado a partir de un checkpoint base no especificado en la model card (el enlace aparece vacío). El entrenamiento se realizó con el Trainer de HuggingFace, utilizando un learning rate de 0.0001, tamaño de lote de 256, optimizador Adam con betas (0.9, 0.999), scheduler lineal con 4000 pasos de warmup y 20 épocas. La pérdida de validación descendió de 4.9988 en la primera época hasta estabilizarse alrededor de 3.15 a partir de la época 15, lo que indica que el modelo convergió sin signos claros de sobreajuste en las últimas épocas.
+La arquitectura es la de un transformer decoder-only, típica de la familia GPT-2. El modelo fue ajustado a partir de un checkpoint base no especificado en la model card (el enlace aparece vacío). El entrenamiento se realizó con el Trainer de Hugging Face, utilizando un learning rate de 0.0001, tamaño de lote de 256, optimizador Adam con betas (0.9, 0.999), scheduler lineal con 4000 pasos de warmup y 20 épocas. La pérdida de validación descendió de 4.9988 en la primera época hasta estabilizarse alrededor de 3.15 a partir de la época 15, lo que indica que el modelo convergió sin signos claros de sobreajuste en las últimas épocas.
 
 No se especifica el número de tokens de entrenamiento ni la composición del dataset. El nombre "expandedbabyLM" sugiere que se trata de una versión ampliada del corpus BabyLM, pero no hay confirmación oficial. Tampoco se menciona el uso de técnicas como RLHF o DPO. El entrenamiento se realizó con PyTorch 2.11.0 y Transformers 4.30.2.
 
@@ -53,12 +53,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: con 10M de parámetros, el modelo ocupa aproximadamente 40 MB en fp32, 20 MB en fp16 y 10 MB en int8. Cabe en cualquier GPU moderna, incluso en las integradas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; también puede ejecutarse en CPU sin problemas.
 - Compatibilidad con GPU de consumo: sí, cualquier GPU de consumo (GTX 1060, RTX 3060, etc.) puede ejecutarlo sin dificultad.
-- Opciones de despliegue: al ser un modelo de la familia GPT-2, es compatible con HuggingFace Transformers, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta), vLLM y TGI, aunque para un modelo tan pequeño estas opciones son sobredimensionadas.
+- Opciones de despliegue: al ser un modelo de la familia GPT-2, es compatible con Hugging Face Transformers, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta), vLLM y TGI, aunque para un modelo tan pequeño estas opciones son sobredimensionadas.
 - Latencia y throughput: no se han publicado mediciones, pero en una GPU moderna la generación de tokens será prácticamente instantánea; en CPU, la latencia por token será del orden de milisegundos.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento de este modelo frente a alternativas. Sin embargo, la autora ha publicado otros modelos con nombres similares en HuggingFace, como `gpt2_small_expandedbabyLM_200M_43` y `gpt2_small_expandedbabyLM_100M_cnp_10percent_42`, que probablemente comparten la misma base pero con más parámetros (100M y 200M). No hay información pública sobre sus resultados, por lo que no es posible establecer una comparativa cuantitativa. En términos generales, un modelo de 10M de parámetros estará muy por debajo de modelos como GPT-2 small (124M) o DistilGPT-2 (82M) en capacidad de generación y razonamiento, pero su ventaja es el coste computacional mínimo.
+No se dispone de datos de rendimiento de este modelo frente a alternativas. Sin embargo, la autora ha publicado otros modelos con nombres similares en Hugging Face, como `gpt2_small_expandedbabyLM_200M_43` y `gpt2_small_expandedbabyLM_100M_cnp_10percent_42`, que probablemente comparten la misma base pero con más parámetros (100M y 200M). No hay información pública sobre sus resultados, por lo que no es posible establecer una comparativa cuantitativa. En términos generales, un modelo de 10M de parámetros estará muy por debajo de modelos como GPT-2 small (124M) o DistilGPT-2 (82M) en capacidad de generación y razonamiento, pero su ventaja es el coste computacional mínimo.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento de este modelo frente a alternativas. Sin 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_10M_42
+- Modelo en Hugging Face: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_10M_42
 - Modelo relacionado (200M): https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_200M_43
 - Modelo relacionado (100M): https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_cnp_10percent_42
 - Repositorio GitHub de un modelo similar: https://github.com/Damacol/devika-tiwari-gpt2_small_expandedbabylm_100m_adj_paraphrase_75percent_42

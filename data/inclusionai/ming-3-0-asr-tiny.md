@@ -105,7 +105,7 @@ Ming-3.0-asr-tiny ocupa un nicho poco cubierto: es el único de la lista que com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inclusionAI/Ming-3.0-asr-tiny
+- Hugging Face: https://huggingface.co/inclusionAI/Ming-3.0-asr-tiny
 - README en chino: https://huggingface.co/inclusionAI/Ming-3.0-asr-tiny/blob/main/README.zh.md
 - GitHub (código y cookbook): https://github.com/inclusionAI/Ming-3.0-asr
 - SGLang-Omni (servido): https://sgl-project.github.io/sglang-omni/

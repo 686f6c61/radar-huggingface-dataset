@@ -73,8 +73,8 @@ Nota: las cifras de VRAM se derivan unicamente del tamano del repositorio y no s
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Monadd-AI/Kimi-K2.6-MONADD | no disponible | no disponible | `.monadd` | modified-mit | Publico en HuggingFace, 0 descargas |
-| moonshotai/Kimi-K2.6 (base) | no disponible | no disponible | no disponible en la informacion aportada | Modified MIT | Publico en HuggingFace |
+| Monadd-AI/Kimi-K2.6-MONADD | no disponible | no disponible | `.monadd` | modified-mit | Publico en Hugging Face, 0 descargas |
+| moonshotai/Kimi-K2.6 (base) | no disponible | no disponible | no disponible en la informacion aportada | Modified MIT | Publico en Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente sobre el modelo base ni sobre terceros comparables para establecer una comparacion tecnica con cifras. La unica diferencia documentada entre las dos primeras filas es el formato de empaquetado y la cuantizacion declarada.

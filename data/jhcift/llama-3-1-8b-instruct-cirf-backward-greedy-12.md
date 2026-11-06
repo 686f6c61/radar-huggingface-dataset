@@ -74,10 +74,10 @@ Coin Flip se puntua contra la paridad de los lanzamientos indicados en la pregun
 
 | Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12 | 8.034 M | No disponible | 57,70% | Llama 3.1 Community | HuggingFace (0 descargas) |
-| Llama-3.1-8B-Instruct-CIRF-Full | No disponible | No disponible | No disponible | Llama 3.1 Community | HuggingFace |
-| Llama-3.1-8B-Instruct-CIRF-Zero-Results | No disponible | No disponible | No disponible | Llama 3.1 Community | HuggingFace |
-| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3/6/18 | No disponible | No disponible | No disponible | Llama 3.1 Community | HuggingFace |
+| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12 | 8.034 M | No disponible | 57,70% | Llama 3.1 Community | Hugging Face (0 descargas) |
+| Llama-3.1-8B-Instruct-CIRF-Full | No disponible | No disponible | No disponible | Llama 3.1 Community | Hugging Face |
+| Llama-3.1-8B-Instruct-CIRF-Zero-Results | No disponible | No disponible | No disponible | Llama 3.1 Community | Hugging Face |
+| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3/6/18 | No disponible | No disponible | No disponible | Llama 3.1 Community | Hugging Face |
 
 Las variantes de la familia CIRF comparten el mismo modelo base y metodologia, diferenciandose en el presupuesto de tokens de resultado y en la estrategia de seleccion. No se dispone de datos de benchmarks de las variantes hermanas en la informacion proporcionada, por lo que no es posible comparar su rendimiento relativo.
 
@@ -96,7 +96,7 @@ Las variantes de la familia CIRF comparten el mismo modelo base y metodologia, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12
+- Modelo en Hugging Face: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-12
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante CIRF-Full: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full
 - Variante CIRF-Zero-Results: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results

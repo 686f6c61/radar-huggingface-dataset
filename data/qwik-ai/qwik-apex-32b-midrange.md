@@ -17,7 +17,7 @@ Su relevancia potencial radica en combinar un tamaño relativamente contenido co
 | Parámetros activos | No aplica; no es un modelo MoE. La model card indica 44,58B de cómputo denso efectivo |
 | Longitud de contexto | 524.288 tokens |
 | Tipos de cuantización | No disponible; no se documentan GGUF, AWQ, GPTQ ni otras cuantizaciones oficiales |
-| Idiomas soportados | No disponible; la metadata de HuggingFace no incluye lista de idiomas |
+| Idiomas soportados | No disponible; la metadata de Hugging Face no incluye lista de idiomas |
 | Licencia | `qwik-proprietary-commercial-v1` (`license: other`) |
 | Formato de pesos | Safetensors, según las etiquetas del repositorio |
 
@@ -33,7 +33,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Manejo de contexto largo: la model card declara 524.288 tokens y reporta 92,80 % en AA-LCR v1.1.
 - Código y operación de terminal: reporta 92,80 % en Terminal-Bench 2.1 (Hard) y 46,80 % en Terminal-Bench 4.0 (Extreme).
 - Código científico: reporta 66,80 % en SciCode.
-- Matemáticas: reporta 86,90 % en MATH Level 5 dentro del promedio normalizado de HuggingFace Open LLM Leaderboard v2.
+- Matemáticas: reporta 86,90 % en MATH Level 5 dentro del promedio normalizado de Hugging Face Open LLM Leaderboard v2.
 - Conocimiento científico y razonamiento avanzado: reporta 95,80 % en GPQA Diamond, 51,80 % en Humanity's Last Exam y 24,80 % en CritPt.
 - Uso de herramientas y políticas: reporta 97,60 % en Tau2-Bench, lo que sugiere capacidades de tool calling o seguimiento de políticas, aunque no se detalla el formato exacto de function calling.
 - Razonamiento multi-paso y agentes: los resultados en Terminal-Bench, Tau2-Bench y HLE apuntan a este tipo de uso, siempre según datos autodeclarados.
@@ -91,7 +91,7 @@ Los siguientes resultados proceden exclusivamente de la model card del autor. No
 
 | Modelo | Parámetros | Contexto | AA Intelligence Index | HF v2 promedio | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| QWIK-Apex-32B-Midrange | 31,86B | 524.288 tokens | 51,40 | 85,32 % | Propietaria `qwik-proprietary-commercial-v1` | Repositorio de HuggingFace indicado, con 0 descargas y 0,0 GB en la información consultada |
+| QWIK-Apex-32B-Midrange | 31,86B | 524.288 tokens | 51,40 | 85,32 % | Propietaria `qwik-proprietary-commercial-v1` | Repositorio de Hugging Face indicado, con 0 descargas y 0,0 GB en la información consultada |
 | QWIK-Apex-39B-Ultra | 39,32B | No disponible | No disponible | 87,98 % | Propietaria, según la model card | Referenciado en la model card; disponibilidad no verificada |
 | Qwen3.8-27B-xhigh | 27,00B | No disponible | 33,68 | 77,68 % | No disponible en la información | Referenciado como competidor; disponibilidad no verificada |
 | Gemma-4-31b-it | 31,00B | No disponible | No disponible | 73,17 % | No disponible en la información | Referenciado como competidor; disponibilidad no verificada |
@@ -113,7 +113,7 @@ Los siguientes resultados proceden exclusivamente de la model card del autor. No
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QWIK-AI/QWIK-Apex-32B-Midrange
+- Modelo en Hugging Face: https://huggingface.co/QWIK-AI/QWIK-Apex-32B-Midrange
 - Licencia: https://huggingface.co/QWIK-AI/QWIK-Apex-32B-Midrange/blob/main/LICENSE.md
 - Gráfico de benchmarks citado en la model card: https://huggingface.co/QWIK-AI/QWIK-Apex-32B-Midrange/blob/main/hero_benchmark_chart.svg
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

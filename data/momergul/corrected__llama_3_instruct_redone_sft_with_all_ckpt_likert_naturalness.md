@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `momergul/corrected__llama_3_instruct_redone_sft_with_all_ckpt_likert_naturalness` es un ajuste fino (fine-tuning) del modelo Llama 3 Instruct, desarrollado por el usuario momergul. El nombre sugiere que se trata de un entrenamiento supervisado (SFT) realizado sobre todos los checkpoints disponibles, con etiquetas de tipo Likert y métricas de naturalidad, probablemente orientado a mejorar la calidad de las respuestas en términos de fluidez y preferencia humana. Sin embargo, la ficha de HuggingFace no proporciona información detallada sobre la arquitectura, el número de parámetros, la licencia o los idiomas soportados.
+El modelo `momergul/corrected__llama_3_instruct_redone_sft_with_all_ckpt_likert_naturalness` es un ajuste fino (fine-tuning) del modelo Llama 3 Instruct, desarrollado por el usuario momergul. El nombre sugiere que se trata de un entrenamiento supervisado (SFT) realizado sobre todos los checkpoints disponibles, con etiquetas de tipo Likert y métricas de naturalidad, probablemente orientado a mejorar la calidad de las respuestas en términos de fluidez y preferencia humana. Sin embargo, la ficha de Hugging Face no proporciona información detallada sobre la arquitectura, el número de parámetros, la licencia o los idiomas soportados.
 
 El repositorio tiene un tamaño de 449,7 GB, lo que indica que se trata de un modelo de gran escala, posiblemente basado en Llama 3 de 70B o incluso 405B, aunque no se puede confirmar sin datos adicionales. El modelo se publicó en mayo de 2026 y se actualizó en agosto de 2026, pero no ha recibido descargas y solo cuenta con un "like". Dada la falta de documentación, su uso en producción requiere una evaluación previa exhaustiva.
 
@@ -64,9 +64,9 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama 3 8B Instruct | 8B | 8K (ampliable a 128K) | Llama 3 Community License | HuggingFace |
-| Llama 3 70B Instruct | 70B | 8K (ampliable a 128K) | Llama 3 Community License | HuggingFace |
-| Este modelo | no disponible | no disponible | no disponible | HuggingFace (sin documentacion) |
+| Llama 3 8B Instruct | 8B | 8K (ampliable a 128K) | Llama 3 Community License | Hugging Face |
+| Llama 3 70B Instruct | 70B | 8K (ampliable a 128K) | Llama 3 Community License | Hugging Face |
+| Este modelo | no disponible | no disponible | no disponible | Hugging Face (sin documentacion) |
 
 La comparativa es limitada porque no se conocen las especificaciones de este fine-tuning.
 
@@ -81,9 +81,9 @@ La comparativa es limitada porque no se conocen las especificaciones de este fin
 
 ## Enlaces
 
-- [HuggingFace - momergul/corrected__llama_3_instruct_redone_sft_with_all_ckpt_likert_naturalness](https://huggingface.co/momergul/corrected__llama_3_instruct_redone_sft_with_all_ckpt_likert_naturalness)
-- [HuggingFace - momergul/0810_correct_llama_3_instruct_redone_sft_with_all_ckpt_no_termination](https://huggingface.co/momergul/0810_correct_llama_3_instruct_redone_sft_with_all_ckpt_no_termination) (modelo relacionado)
-- [Documentacion de Llama 3 en HuggingFace](https://huggingface.co/docs/transformers/model_doc/llama3)
+- [Hugging Face - momergul/corrected__llama_3_instruct_redone_sft_with_all_ckpt_likert_naturalness](https://huggingface.co/momergul/corrected__llama_3_instruct_redone_sft_with_all_ckpt_likert_naturalness)
+- [Hugging Face - momergul/0810_correct_llama_3_instruct_redone_sft_with_all_ckpt_no_termination](https://huggingface.co/momergul/0810_correct_llama_3_instruct_redone_sft_with_all_ckpt_no_termination) (modelo relacionado)
+- [Documentacion de Llama 3 en Hugging Face](https://huggingface.co/docs/transformers/model_doc/llama3)
 - [Repositorio oficial de Llama 3 en GitHub](https://github.com/meta-llama/llama3)
 - [Model card de Llama 3.3](https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md)
 - [Paper "The Llama 3 Herd of Models"](https://arxiv.org/abs/2407.21783)

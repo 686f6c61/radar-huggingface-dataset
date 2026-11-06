@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmotionData/vincent es un modelo de generacion de texto publicado en HuggingFace por el usuario u organizacion EmotionData. Se trata de un ajuste fino (fine-tuning) derivado de unsloth/llama-3-8b-Instruct-bnb-4bit, es decir, de una version cuantizada a 4 bits en formato bitsandbytes de Llama 3 8B Instruct, la variante instructiva del modelo abierto de Meta. El entrenamiento se realizo con Unsloth, la libreria de optimizacion que acelera el fine-tuning de modelos Llama reduciendo el uso de memoria y multiplicando la velocidad de entrenamiento.
+EmotionData/vincent es un modelo de generacion de texto publicado en Hugging Face por el usuario u organizacion EmotionData. Se trata de un ajuste fino (fine-tuning) derivado de unsloth/llama-3-8b-Instruct-bnb-4bit, es decir, de una version cuantizada a 4 bits en formato bitsandbytes de Llama 3 8B Instruct, la variante instructiva del modelo abierto de Meta. El entrenamiento se realizo con Unsloth, la libreria de optimizacion que acelera el fine-tuning de modelos Llama reduciendo el uso de memoria y multiplicando la velocidad de entrenamiento.
 
 El repositorio tiene un tamano de 0,2 GB y las etiquetas declaradas incluyen transformers, safetensors, text-generation-inference, unsloth, llama y trl, con licencia apache-2.0 y un unico idioma declarado, el ingles. La model card es minima: no incluye descripcion de la tarea, del dataset de entrenamiento, del numero de tokens, ni resultados de evaluacion. A fecha de la consulta registra 0 descargas y 1 like, por lo que se trata de una publicacion practicamente sin adopcion ni validacion externa.
 
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: ID EmotionData/vincent, creado el 2026-09-13 
 
 La arquitectura subyacente es la de Llama 3 8B Instruct: un transformer decoder-only con atencion por consultas agrupadas (GQA), prenormalizacion RMSNorm, activaciones SwiGLU, codificaciones rotatorias (RoPE) y un vocabulario de 128 256 tokens. El modelo base utilizado para el ajuste no es el checkpoint original en precision completa, sino la conversion a 4 bits con bitsandbytes publicada por Unsloth, lo que reduce el consumo de memoria durante el entrenamiento. La model card no especifica ninguna modificacion estructural propia, por lo que no hay indicios de atencion lineal, decodificacion especulativa ni arquitecturas hibridas.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y que el autor declara un entrenamiento "2x mas rapido" con esa libreria, junto con la etiqueta trl, que sugiere el uso de la libreria TRL de HuggingFace (probablemente SFTTrainer) para el ajuste supervisado. No se indica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF o DPO, ni la configuracion de hiperparametros (rango LoRA, alpha, tasa de aprendizaje, epocas). El tamano del repositorio, 0,2 GB, es muy inferior a los aproximadamente 4-5 GB que ocuparian los pesos completos de un modelo de 8 000 millones de parametros en 4 bits, lo que apunta a que el repositorio contiene adaptadores LoRA en lugar de pesos fusionados; esta es una inferencia a partir del tamano y no una confirmacion del autor.
+En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y que el autor declara un entrenamiento "2x mas rapido" con esa libreria, junto con la etiqueta trl, que sugiere el uso de la libreria TRL de Hugging Face (probablemente SFTTrainer) para el ajuste supervisado. No se indica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF o DPO, ni la configuracion de hiperparametros (rango LoRA, alpha, tasa de aprendizaje, epocas). El tamano del repositorio, 0,2 GB, es muy inferior a los aproximadamente 4-5 GB que ocuparian los pesos completos de un modelo de 8 000 millones de parametros en 4 bits, lo que apunta a que el repositorio contiene adaptadores LoRA en lugar de pesos fusionados; esta es una inferencia a partir del tamano y no una confirmacion del autor.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, la unica informacion disponible es que se realizo co
 - Prototipado rapido de asistentes internos: al estar en safetensors y ser compatible con transformers, se integra en scripts de Python con pocas lineas y permite validar una idea de producto antes de invertir en un modelo mayor.
 - Clasificacion y etiquetado de texto en ingles mediante prompting: generacion de categorias, resumenes cortos o extraccion de campos sobre lotes de documentos, con verificacion humana posterior dado que no hay evaluacion publicada.
 - Investigacion sobre tecnicas de cuantizacion: comparar el comportamiento de un ajuste hecho sobre pesos bnb-4bit frente al mismo ajuste sobre pesos en fp16, analizando la perdida de calidad asociada a la cuantizacion previa al entrenamiento.
-- Docencia y formacion en fine-tuning: como ejemplo reproducible de pipeline Unsloth + TRL para explicar el flujo completo de publicacion de un modelo en HuggingFace, incluyendo la redaccion de una model card.
+- Docencia y formacion en fine-tuning: como ejemplo reproducible de pipeline Unsloth + TRL para explicar el flujo completo de publicacion de un modelo en Hugging Face, incluyendo la redaccion de una model card.
 - Generacion de borradores de codigo con supervision estricta: uso exploratorio en tareas de autocompletado o generacion de fragmentos, siempre con revision humana y pruebas automatizadas, dado que no hay datos de HumanEval ni de otro benchmark de codigo.
 - Base para posteriores ajustes especificos: si el repositorio contiene adaptadores LoRA, puede servir como punto de partida para tecnicas como DPO o ajuste con datos propios, reutilizando el trabajo ya realizado.
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| EmotionData/vincent | ~8 000 millones (heredado del base) | no disponible en la model card; 8 192 en el base | apache-2.0 (declarada) | HuggingFace, 0 descargas | Sin benchmarks; model card minima; base cuantizado a 4 bits |
-| unsloth/llama-3-8b-Instruct-bnb-4bit (modelo base) | ~8 000 millones | 8 192 tokens | derivada de Llama 3 Community License | Ampliamente disponible en HuggingFace | Version cuantizada a 4 bits del Llama 3 8B Instruct de Meta |
-| Llama 3 8B Instruct (original de Meta) | 8 030 millones | 8 192 tokens | Llama 3 Community License | HuggingFace y multiples proveedores | Referencia de la familia; benchmarks publicados por Meta |
-| Mistral 7B Instruct | ~7 200 millones | 32 000 tokens | Apache 2.0 | HuggingFace | Contexto mayor y licencia permisiva; arquitectura con GQA y sliding window attention en versiones previas |
-| Qwen2.5 7B Instruct | ~7 600 millones | 131 072 tokens | Apache 2.0 (segun la variante) | HuggingFace | Contexto muy superior y licencia permisiva; alternativa habitual en el mismo rango de tamano |
+| EmotionData/vincent | ~8 000 millones (heredado del base) | no disponible en la model card; 8 192 en el base | apache-2.0 (declarada) | Hugging Face, 0 descargas | Sin benchmarks; model card minima; base cuantizado a 4 bits |
+| unsloth/llama-3-8b-Instruct-bnb-4bit (modelo base) | ~8 000 millones | 8 192 tokens | derivada de Llama 3 Community License | Ampliamente disponible en Hugging Face | Version cuantizada a 4 bits del Llama 3 8B Instruct de Meta |
+| Llama 3 8B Instruct (original de Meta) | 8 030 millones | 8 192 tokens | Llama 3 Community License | Hugging Face y multiples proveedores | Referencia de la familia; benchmarks publicados por Meta |
+| Mistral 7B Instruct | ~7 200 millones | 32 000 tokens | Apache 2.0 | Hugging Face | Contexto mayor y licencia permisiva; arquitectura con GQA y sliding window attention en versiones previas |
+| Qwen2.5 7B Instruct | ~7 600 millones | 131 072 tokens | Apache 2.0 (segun la variante) | Hugging Face | Contexto muy superior y licencia permisiva; alternativa habitual en el mismo rango de tamano |
 
 Los datos de los modelos comparados provienen de su documentacion publica y pueden variar entre versiones; conviene verificarlos en sus respectivas model cards antes de tomar decisiones. No hay informacion que permita afirmar que EmotionData/vincent supere o iguale a ninguna de estas alternativas.
 
@@ -92,8 +92,8 @@ Los datos de los modelos comparados provienen de su documentacion publica y pued
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/EmotionData/vincent
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/EmotionData/vincent
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth en GitHub (mencionado en la model card): https://github.com/unslothai/unsloth
 
 Nota sobre la busqueda web: los resultados obtenidos corresponden a plataformas de video en polaco (cda.pl, cda.net.pl, cda.net.pl y la ficha de Google Play de la aplicacion CDA) y no guardan ninguna relacion con el modelo EmotionData/vincent. No se han encontrado papers, blogs tecnicos, demos ni repositorios adicionales asociados a este modelo.

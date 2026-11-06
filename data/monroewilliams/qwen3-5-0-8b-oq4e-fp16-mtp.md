@@ -71,9 +71,9 @@ No se dispone de datos comparativos fiables. El modelo base Qwen3.5-0.8B puede c
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/monroewilliams/Qwen3.5-0.8B-oQ4e-fp16-mtp)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/monroewilliams/Qwen3.5-0.8B-oQ4e-fp16-mtp)
 - [Modelo base Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
-- [Colección Qwen3.5 en HuggingFace](https://huggingface.co/collections/Qwen/qwen35)
+- [Colección Qwen3.5 en Hugging Face](https://huggingface.co/collections/Qwen/qwen35)
 - [Qwen3.5 en Qualcomm AI Hub](https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b)
 - [Guía completa de Qwen3.5](https://qwen-ai.com/qwen-3-5/)
 - [Benchmark y guía local de Qwen3.5 0.8B](https://codersera.com/blog/run-and-benchmark-qwen35-08b/)

@@ -102,6 +102,6 @@ No disponible. No se han identificado en la informacion proporcionada otros mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smmdlovu/dirisa-sdc-2026-youth-gap-model
+- Repositorio en Hugging Face: https://huggingface.co/smmdlovu/dirisa-sdc-2026-youth-gap-model
 - DIRISA Student Datathon: https://sdc.dirisa.ac.za/
 - Data Intensive Research Initiative of South Africa (DIRISA): https://www.dirisa.ac.za/

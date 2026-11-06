@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DistilBERT SST-2 FP16 es un checkpoint de clasificación de texto publicado por el usuario SoloCode en HuggingFace. Se trata de una conversión a precisión FP16 del conocido `distilbert/distilbert-base-uncased-finetuned-sst-2-english`, un transformer encoder destilado de BERT y ajustado para análisis de sentimiento binario (positivo/negativo) sobre el corpus SST-2 en inglés. El modelo tiene 66.955.010 parámetros y un artefacto serializado de 133,95 MB en formato safetensors.
+DistilBERT SST-2 FP16 es un checkpoint de clasificación de texto publicado por el usuario SoloCode en Hugging Face. Se trata de una conversión a precisión FP16 del conocido `distilbert/distilbert-base-uncased-finetuned-sst-2-english`, un transformer encoder destilado de BERT y ajustado para análisis de sentimiento binario (positivo/negativo) sobre el corpus SST-2 en inglés. El modelo tiene 66.955.010 parámetros y un artefacto serializado de 133,95 MB en formato safetensors.
 
 El propósito declarado no es ofrecer un modelo nuevo, sino servir como pieza de un proyecto de comparación de cuantizaciones: el autor publica el punto FP16 junto a una evaluación controlada (512 ejemplos del subconjunto de validación de SST-2 con semilla fija) y una medición de latencia en CPU. Los resultados reportados indican una accuracy del 90,82% y una variación de 0,000 puntos porcentuales respecto a la línea base FP32 en ese mismo subconjunto, es decir, la conversión a FP16 no degradó la métrica medida.
 
@@ -65,7 +65,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 - VRAM estimada para inferencia: menos de 1 GB incluyendo pesos y activaciones para lotes pequeños; los pesos FP16 ocupan aproximadamente 134 MB y los FP32 en torno a 268 MB (calculado a partir del recuento de parámetros).
 - GPU recomendadas: no se requieren aceleradores de gama alta; cualquier GPU con soporte FP16 (serie RTX 20/30/40, A10, L4, A100, H100) puede ejecutar el modelo con un uso de memoria mínimo. La ventaja de FP16 sobre FP32 solo se materializa en hardware que acelere operaciones de media precisión.
 - Cabe holgadamente en GPU de consumo: GTX 1650, RTX 3050, RTX 4060 o superiores; también en iGPU y en CPU exclusivamente, dado el tamaño reducido.
-- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification`, `pipeline` de clasificación de texto, y los tags del repositorio sugieren compatibilidad con `text-embeddings-inference` y endpoints de HuggingFace. Soporte en vLLM, llama.cpp u Ollama no confirmado en la información disponible; llama.cpp no es la vía natural para un encoder de clasificación.
+- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification`, `pipeline` de clasificación de texto, y los tags del repositorio sugieren compatibilidad con `text-embeddings-inference` y endpoints de Hugging Face. Soporte en vLLM, llama.cpp u Ollama no confirmado en la información disponible; llama.cpp no es la vía natural para un encoder de clasificación.
 - Latencia y throughput: 497,2 ms por ejemplo en CPU según la medición del autor; no hay datos publicados de throughput en GPU ni de latencia para lotes.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No se han proporcionado métricas de benchmark de modelos alternativos, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoloCode/distilbert-sst2-fp16-quantization
+- Modelo en Hugging Face: https://huggingface.co/SoloCode/distilbert-sst2-fp16-quantization
 - Modelo base del que deriva: https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english
 - Repositorio del proyecto de comparación de cuantizaciones e informe metodológico: no disponible (la model card lo menciona pero no incluye enlace)
 - Paper, blog o demo adicionales: no disponible

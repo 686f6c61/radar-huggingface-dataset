@@ -78,7 +78,7 @@ La comparativa se limita a las caracteristicas publicadas. No hay datos de rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mondk/GGUF.model-does-not-reject-the-deadly-prompt
+- Repositorio Hugging Face: https://huggingface.co/mondk/GGUF.model-does-not-reject-the-deadly-prompt
 - Modelo base (safetensors): https://huggingface.co/mondk/model-does-not-reject-the-deadly-prompt
 - Dataset de entrenamiento: https://huggingface.co/datasets/mondk/joke-redteam-safety-dataset
 - Modelo base original: https://huggingface.co/TeichAI/Qwen3-4B-Thinking-2507-GPT-5.1-Codex-Max-Distill

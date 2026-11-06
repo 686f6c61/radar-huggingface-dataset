@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voicetide/SenseVoiceSmall-gguf (Q8_0) | 234 M | zh, yue, en, ja, ko | GGUF | FunASR Model Open Source License Agreement 1.1 | Repositorio HuggingFace con 0 descargas |
+| voicetide/SenseVoiceSmall-gguf (Q8_0) | 234 M | zh, yue, en, ja, ko | GGUF | FunASR Model Open Source License Agreement 1.1 | Repositorio Hugging Face con 0 descargas |
 | FunAudioLLM/SenseVoiceSmall (modelo base) | 234 M | no disponible en la informacion proporcionada | no disponible | FunASR Model Open Source License Agreement 1.1 | Modelo origen de la conversion |
 
 No se dispone de datos de rendimiento ni de especificaciones de modelos alternativos que permitan una comparacion cuantitativa fiable. Cualquier comparacion con otros sistemas ASR (por ejemplo, de la familia Whisper) se considera no disponible al no haberse aportado datos verificables en la informacion proporcionada.
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos alternat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/voicetide/SenseVoiceSmall-gguf
+- Repositorio Hugging Face: https://huggingface.co/voicetide/SenseVoiceSmall-gguf
 - Modelo base: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Licencia (FunASR Model Open Source License Agreement 1.1): https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE

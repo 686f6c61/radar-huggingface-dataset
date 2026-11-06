@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-Thor
+- Modelo en Hugging Face: https://huggingface.co/patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-Thor
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Artefacto hermano MXFP4: https://huggingface.co/patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-MXFP4
 - Artefacto hermano GGUF: https://huggingface.co/patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-GGUF

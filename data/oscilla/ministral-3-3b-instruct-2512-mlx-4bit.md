@@ -81,7 +81,7 @@ La principal diferencia de Ministral-3 es su capacidad multimodal y su licencia 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/Ministral-3-3B-Instruct-2512-mlx-4Bit
 - Modelo base original: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
 - Conversión MLX alternativa (mlx-community): https://huggingface.co/mlx-community/Ministral-3-3B-Instruct-2512-4bit
 - Página en SourceForge: https://sourceforge.net/projects/ministral-3-3b-instruct-2512/

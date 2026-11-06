@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clip-files-HSWQ ConvRot INT8 (este repo) | Variable (0,6B-11B) | Segun base | INT8 HSWQ + ConvRot | other (heredada) | HuggingFace, requiere cargador HSWQ |
-| comfyanonymous/flux_text_encoders | CLIP-L + T5-XXL | 77 tokens (CLIP) | FP16/BF16 | Segun componente | HuggingFace, ComfyUI nativo |
-| google/flan-t5-xxl | 11B | No disponible | FP32/FP16 | Apache-2.0 | HuggingFace, transformers |
-| zer0int/CLIP-GmP-ViT-L-14 | ~123M | 77 tokens | FP16 | MIT | HuggingFace, ComfyUI |
+| Clip-files-HSWQ ConvRot INT8 (este repo) | Variable (0,6B-11B) | Segun base | INT8 HSWQ + ConvRot | other (heredada) | Hugging Face, requiere cargador HSWQ |
+| comfyanonymous/flux_text_encoders | CLIP-L + T5-XXL | 77 tokens (CLIP) | FP16/BF16 | Segun componente | Hugging Face, ComfyUI nativo |
+| google/flan-t5-xxl | 11B | No disponible | FP32/FP16 | Apache-2.0 | Hugging Face, transformers |
+| zer0int/CLIP-GmP-ViT-L-14 | ~123M | 77 tokens | FP16 | MIT | Hugging Face, ComfyUI |
 
 La ventaja diferencial del repositorio es el menor tamano en disco y VRAM con licencias heredadas permisivas en la mayoria de componentes; la desventaja es la dependencia de un cargador no estandar y la ausencia de metricas de calidad publicadas frente a los originales.
 
@@ -96,7 +96,7 @@ La ventaja diferencial del repositorio es el menor tamano en disco y VRAM con li
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ussoewwin/Clip-files-HSWQ-ConvRot-INT8
+- Repositorio Hugging Face: https://huggingface.co/ussoewwin/Clip-files-HSWQ-ConvRot-INT8
 - Framework de cuantizacion HSWQ: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization
 - Nodo ComfyUI HSWQ Loader and Tools: https://github.com/ussoewwin/ComfyUI-HSWQ-Loader-and-Tools
 - Mediciones de rutas de carga INT8: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization/blob/main/md/ClipFiles_INT8_TextEncoder_Load_Path_2026-10-28.md

@@ -97,8 +97,8 @@ La comparativa se limita a las variantes del mismo modelo base y su build vLLM, 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/chris320211/smoothquant-phi35-mini-vastrtx3090
-- HuggingFace (build vLLM): https://huggingface.co/chris320211/smoothquant-phi35-mini-vastrtx3090-vllm
+- Hugging Face (modelo): https://huggingface.co/chris320211/smoothquant-phi35-mini-vastrtx3090
+- Hugging Face (build vLLM): https://huggingface.co/chris320211/smoothquant-phi35-mini-vastrtx3090-vllm
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Licencia del modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct/resolve/main/LICENSE
 - Repositorio del método QuantPort: https://github.com/chris320211/QuantPort

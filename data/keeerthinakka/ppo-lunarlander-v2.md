@@ -18,14 +18,14 @@ Su relevancia es acotada y de caracter didactico: sirve como ejemplo reproducibl
 | Longitud de contexto | no aplica: el agente consume un vector de observacion de 8 dimensiones por paso, sin ventana de contexto ni historial de tokens |
 | Tipos de cuantizacion | no aplica / no disponible: no se publican versiones cuantizadas (INT8, INT4, GGUF ni similares) |
 | Idiomas soportados | no aplica: el agente no procesa lenguaje natural |
-| Licencia | no disponible: la ficha de HuggingFace no declara licencia |
+| Licencia | no disponible: la ficha de Hugging Face no declara licencia |
 | Formato de pesos | no disponible en la informacion proporcionada; en la libreria stable-baselines3 el artefacto habitual es un archivo .zip con el modelo serializado |
 | Algoritmo | PPO (Proximal Policy Optimization) |
 | Entorno | LunarLander-v2 (Box2D) |
 | Espacio de observacion | 8 dimensiones (posicion, velocidad, angulo, velocidad angular y contacto de las patas) |
 | Espacio de acciones | discreto, 4 acciones (no hacer nada, motor de orientacion izquierdo, motor principal, motor de orientacion derecho) |
 | Libreria de referencia | stable-baselines3 |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-01 |
 
@@ -82,9 +82,9 @@ No hay otros resultados de benchmarks en la informacion proporcionada. A modo de
 
 | Modelo | Tipo | Entorno | Recompensa media declarada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| keeerthinakka/ppo-LunarLander-v2 | PPO (MLP actor-critico) | LunarLander-v2 | 281,50 +/- 12,30 (no verificada) | no aplica | no disponible | HuggingFace, 0 descargas |
-| harkrishkali/ppo-LunarLander-v2 | PPO (PyTorch) | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace |
-| buildthemachine/ppo-LunarLander-v2 | PPO (stable-baselines3) | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace, con instrucciones de `load_from_hub` |
+| keeerthinakka/ppo-LunarLander-v2 | PPO (MLP actor-critico) | LunarLander-v2 | 281,50 +/- 12,30 (no verificada) | no aplica | no disponible | Hugging Face, 0 descargas |
+| harkrishkali/ppo-LunarLander-v2 | PPO (PyTorch) | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face |
+| buildthemachine/ppo-LunarLander-v2 | PPO (stable-baselines3) | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face, con instrucciones de `load_from_hub` |
 | rishisim/LunarLander-v2 | PPO (stable-baselines3) | LunarLander-v2 | no disponible | no aplica | no disponible | GitHub |
 
 La comparacion cuantitativa no es posible: los modelos alternativos localizados no publican recompensa media en los resultados de busqueda disponibles. Todos ellos comparten el mismo enfoque (PPO sobre LunarLander-v2 con stable-baselines3) y se diferencian principalmente en la reproducibilidad de la documentacion, el empaquetado de los pesos y la existencia o no de una licencia declarada.
@@ -104,7 +104,7 @@ La comparacion cuantitativa no es posible: los modelos alternativos localizados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keeerthinakka/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/keeerthinakka/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Modelo comparable harkrishkali/ppo-LunarLander-v2: https://huggingface.co/harkrishkali/ppo-LunarLander-v2
 - Modelo comparable buildthemachine/ppo-LunarLander-v2: https://huggingface.co/buildthemachine/ppo-LunarLander-v2

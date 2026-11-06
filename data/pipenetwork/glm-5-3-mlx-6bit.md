@@ -107,7 +107,7 @@ No se dispone de comparaciones con otros modelos de tamano similar (p. ej., Deep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-MLX-6bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-MLX-6bit
 - Repositorio de codigo (runtime y herramientas): https://github.com/PipeNetwork/glm53-mlx
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Release bf16: https://huggingface.co/zai-org/GLM-5.3-BF16

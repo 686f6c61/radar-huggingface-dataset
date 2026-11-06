@@ -22,7 +22,7 @@ Su relevancia actual es limitada como modelo listo para produccion, pero es un e
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); requiere el modelo base en safetensors |
 | Libreria de carga | peft 0.21.1, transformers 5.18.0, trl 1.14.2, torch 2.11.0+cu130 |
 | Tamano del repositorio | 1,5 GB |
-| Fecha de creacion | 2026-10-07 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-07 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -103,7 +103,7 @@ No hay datos de rendimiento comparado para qwen-sec-adapter, por lo que la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/His123321/qwen-sec-adapter
+- Modelo en Hugging Face: https://huggingface.co/His123321/qwen-sec-adapter
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de PEFT: https://huggingface.co/docs/peft

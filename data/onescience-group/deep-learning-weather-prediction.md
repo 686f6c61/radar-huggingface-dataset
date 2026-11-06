@@ -4,7 +4,7 @@
 
 DLWP-CS es un modelo de predicción meteorológica global basado en redes neuronales convolucionales sobre una esfera cúbica (cubed-sphere), desarrollado por OneScience-Group. Su objetivo es mitigar las distorsiones geométricas que sufren las rejillas latitud-longitud convencionales cerca de los polos, mejorando así la precisión de los pronósticos a corto plazo. El modelo se inspira en el artículo *Improving Data-Driven Global Weather Prediction Using Deep Convolutional Neural Networks on a Cubed Sphere* (DOI: 10.1029/2020MS002109) y en el código oficial de su autor.
 
-La implementación publicada en HuggingFace es una prueba estructural (smoke test) independiente, escrita en PyTorch, que reproduce la topología de seis caras de la esfera cúbica, el padding entre caras, las convoluciones, un U-Net simplificado y una activación leaky ReLU con límite superior. No incluye pesos entrenados con datos reales ni reproduce completamente el esquema experimental del artículo; sirve como base para investigación y verificación rápida de la arquitectura.
+La implementación publicada en Hugging Face es una prueba estructural (smoke test) independiente, escrita en PyTorch, que reproduce la topología de seis caras de la esfera cúbica, el padding entre caras, las convoluciones, un U-Net simplificado y una activación leaky ReLU con límite superior. No incluye pesos entrenados con datos reales ni reproduce completamente el esquema experimental del artículo; sirve como base para investigación y verificación rápida de la arquitectura.
 
 ## Especificaciones técnicas
 
@@ -72,7 +72,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/deep-learning-weather-prediction
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/deep-learning-weather-prediction
 - Paper original: https://doi.org/10.1029/2020MS002109
 - Código oficial (referencia): https://github.com/jweyn/DLWP-CS
 - Repositorio OneScience (GitHub): https://github.com/onescience-ai/OneScience

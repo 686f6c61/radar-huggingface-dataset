@@ -2,9 +2,9 @@
 
 ## Resumen
 
-aliREA/cimphony-LexiGen-direct es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario aliREA sobre el modelo base mistralai/Mistral-7B-v0.1. Se trata, por tanto, de un ajuste fino ligero —no de un modelo completo— que debe combinarse con los pesos del modelo base para poder ejecutarse. El repositorio ocupa 0,5 GB y se distribuye en formato safetensors bajo la librería PEFT (version 0.17.1), con la etiqueta de pipeline text-generation.
+aliREA/cimphony-LexiGen-direct es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario aliREA sobre el modelo base mistralai/Mistral-7B-v0.1. Se trata, por tanto, de un ajuste fino ligero —no de un modelo completo— que debe combinarse con los pesos del modelo base para poder ejecutarse. El repositorio ocupa 0,5 GB y se distribuye en formato safetensors bajo la librería PEFT (version 0.17.1), con la etiqueta de pipeline text-generation.
 
-El modelo resuelve, en principio, tareas de generacion de texto en el dominio implicito por su nombre ("LexiGen"), si bien la model card publicada es la plantilla por defecto de HuggingFace y no contiene ni una sola seccion completada: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni resultados de evaluacion. Esto limita enormemente cualquier evaluacion rigurosa: lo unico verificable son los metadatos del repositorio (tags de SFT y TRL, modelo base, tamano) y el hecho de que no tiene descargas ni likes en el momento de la consulta.
+El modelo resuelve, en principio, tareas de generacion de texto en el dominio implicito por su nombre ("LexiGen"), si bien la model card publicada es la plantilla por defecto de Hugging Face y no contiene ni una sola seccion completada: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni resultados de evaluacion. Esto limita enormemente cualquier evaluacion rigurosa: lo unico verificable son los metadatos del repositorio (tags de SFT y TRL, modelo base, tamano) y el hecho de que no tiene descargas ni likes en el momento de la consulta.
 
 La relevancia de esta ficha es, por tanto, doble: por un lado, documenta lo poco que se sabe del adaptador; por otro, sirve como ejemplo practico de como evaluar un artefacto PEFT sin documentacion, apoyandose en las caracteristicas conocidas del modelo base (Mistral-7B-v0.1, transformer decoder-only de 7 240 millones de parametros) y en los requisitos de infraestructura que se derivan de ellas.
 
@@ -31,7 +31,7 @@ La relevancia de esta ficha es, por tanto, doble: por un lado, documenta lo poco
 
 La arquitectura subyacente es la de Mistral-7B-v0.1: un transformer decoder-only de tipo Llama, con 32 capas, atencion por ventana deslizante (sliding window attention) de 4 096 tokens, 32 cabezas de atencion y 7 240 millones de parametros, preentrenado en ingles principalmente. Sobre esa base, el repositorio aliREA/cimphony-LexiGen-direct aporta exclusivamente un conjunto de matrices de bajo rango (adaptador LoRA) destinadas a inyectarse en las capas del modelo base o a fusionarse con el. No se especifica el rango (r), el valor de alpha, las capas objetivo (q_proj, k_proj, v_proj, etc.) ni la precision de entrenamiento.
 
-En cuanto al entrenamiento, los tags del repositorio indican un ajuste por supervisión (SFT) realizado con la libreria TRL de HuggingFace sobre el ecosistema transformers. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, ni sobre ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal u otras). La unica referencia bibliografica presente en los metadatos es el articulo arXiv:1910.09700 (Lacoste et al., estimacion de impacto ambiental), que forma parte del texto por defecto de la plantilla de model card y no describe el modelo.
+En cuanto al entrenamiento, los tags del repositorio indican un ajuste por supervisión (SFT) realizado con la libreria TRL de Hugging Face sobre el ecosistema transformers. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, ni sobre ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal u otras). La unica referencia bibliografica presente en los metadatos es el articulo arXiv:1910.09700 (Lacoste et al., estimacion de impacto ambiental), que forma parte del texto por defecto de la plantilla de model card y no describe el modelo.
 
 Dado que la model card es la plantilla vacia, debe asumirse que el adaptador no ha sido validado publicamente y que cualquier afirmacion sobre su comportamiento es una extrapolacion a partir del modelo base, no un dato verificado.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits (GPTQ, AWQ o GGUF Q4): aproximadamente 4,5-5,5 GB de pesos.
 - GPU recomendadas: A100 40/80 GB o H100 80 GB para fp16 con lotes grandes y contexto largo; RTX 4090 (24 GB) para fp16 con lotes moderados; RTX 3090/4080 (16-24 GB) para 8 bits; RTX 3060 12 GB, RTX 4060 Ti 16 GB o Apple Silicon con memoria unificada de 16 GB o mas para 4 bits.
 - Si cabe en GPU consumer: si, en configuraciones de 4 bits (12 GB de VRAM o mas) y en 8 bits (16 GB o mas). En fp16 completo queda justo incluso en una RTX 4090 con contexto largo.
-- Opciones de despliegue: vLLM con soporte LoRA (--enable-lora), HuggingFace TGI con adaptadores PEFT, llama.cpp u Ollama previa fusion del adaptador y conversion a GGUF, y scripts propios en Python con transformers + peft.
+- Opciones de despliegue: vLLM con soporte LoRA (--enable-lora), Hugging Face TGI con adaptadores PEFT, llama.cpp u Ollama previa fusion del adaptador y conversion a GGUF, y scripts propios en Python con transformers + peft.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas para este adaptador; cualquier cifra dependeria del hardware, la cuantizacion y la longitud de contexto, y no deberia extrapolarse sin medirla.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La comparacion de rendimiento con cualquiera de estas alternativas no es posible
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion publicada es la plantilla por defecto de HuggingFace, sin descripcion, datos de entrenamiento, hiperparametros ni evaluacion. Esto impide reproducir el ajuste o auditar su comportamiento.
+- Model card vacia: la documentacion publicada es la plantilla por defecto de Hugging Face, sin descripcion, datos de entrenamiento, hiperparametros ni evaluacion. Esto impide reproducir el ajuste o auditar su comportamiento.
 - Licencia no declarada en el repositorio del adaptador. Aunque el modelo base es Apache 2.0, la ausencia de licencia explicita en el artefacto derivado deja la situacion juridica poco clara para uso comercial; conviene contactar con el autor antes de integrarlo en produccion.
 - Idiomas no declarados. El modelo base esta mayoritariamente entrenado en ingles, por lo que el rendimiento en castellano sera limitado y no hay evidencia de que el ajuste lo haya mejorado.
 - Riesgo de alucinacion: el modelo base Mistral-7B-v0.1 no ha pasado por un proceso de alineacion (RLHF/DPO) conocido, y el ajuste SFT documentado es de naturaleza desconocida; es previsible que genere afirmaciones falsas con seguridad alta.
@@ -96,7 +96,7 @@ La comparacion de rendimiento con cualquiera de estas alternativas no es posible
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/aliREA/cimphony-LexiGen-direct
+- Repositorio Hugging Face del adaptador: https://huggingface.co/aliREA/cimphony-LexiGen-direct
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

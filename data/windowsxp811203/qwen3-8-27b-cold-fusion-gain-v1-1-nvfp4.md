@@ -90,7 +90,7 @@ No se dispone de benchmarks comparativos directos entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4
 - Modelo base original: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Discusión que motivó la cuantización: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4/discussions/1
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

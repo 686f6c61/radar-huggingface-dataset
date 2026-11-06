@@ -4,7 +4,7 @@
 
 El modelo `patchpolicy-so101-ppformer-ddpm-causal` es una política visuomotora para el brazo robótico SO-101, desarrollada por Parv-09. Forma parte de una ablación controlada de ocho configuraciones que comparan distintos cabezales de acción y patrones de atención, todos compartiendo el mismo trunk visual, dataset, semilla y optimizador. Esta variante concreta utiliza un trunk DINOv2 ViT-S/14 congelado que extrae tokens de parche densos (Patch Policy), seguido de un transformer de acción entrenado con el objetivo DDPM de predicción de epsilon y atención causal entre los tokens de acción.
 
-El modelo resuelve el problema del aprendizaje por imitación para control robótico: a partir de observaciones de tres cámaras (muñeca, frontal y superior) durante dos pasos temporales, genera un chunk de 24 acciones de articulación en grados. Su relevancia radica en que es una de las primeras comparaciones sistemáticas entre atención causal y bidireccional en cabezales de acción para políticas de manipulación, y en que emplea un trunk visual preentrenado congelado, lo que reduce drásticamente los parámetros entrenables (9,5 millones). El checkpoint está alojado en HuggingFace bajo licencia Apache 2.0 y utiliza la librería LeRobot.
+El modelo resuelve el problema del aprendizaje por imitación para control robótico: a partir de observaciones de tres cámaras (muñeca, frontal y superior) durante dos pasos temporales, genera un chunk de 24 acciones de articulación en grados. Su relevancia radica en que es una de las primeras comparaciones sistemáticas entre atención causal y bidireccional en cabezales de acción para políticas de manipulación, y en que emplea un trunk visual preentrenado congelado, lo que reduce drásticamente los parámetros entrenables (9,5 millones). El checkpoint está alojado en Hugging Face bajo licencia Apache 2.0 y utiliza la librería LeRobot.
 
 ## Especificaciones tecnicas
 
@@ -97,5 +97,5 @@ No se dispone de comparaciones con modelos de otros autores o repositorios.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Parv-09/patchpolicy-so101-ppformer-ddpm-causal
+- Hugging Face: https://huggingface.co/Parv-09/patchpolicy-so101-ppformer-ddpm-causal
 - Repositorio compañero con código y `infer.py`: mencionado en la model card, pero no se proporciona URL en la información disponible.

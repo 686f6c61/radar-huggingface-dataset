@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fastwam-robodojo-precision8-vert576-8gpu-b64-step80k | ~5B (base Wan2.2-TI2V-5B) | 33 pasos (9 fotogramas + 32 acciones) | No publicado | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Wan-AI/Wan2.2-TI2V-5B | 5B | Modelo base de generacion de video texto-imagen-a-video | No disponible en esta informacion | No disponible en esta informacion | HuggingFace |
+| fastwam-robodojo-precision8-vert576-8gpu-b64-step80k | ~5B (base Wan2.2-TI2V-5B) | 33 pasos (9 fotogramas + 32 acciones) | No publicado | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Wan-AI/Wan2.2-TI2V-5B | 5B | Modelo base de generacion de video texto-imagen-a-video | No disponible en esta informacion | No disponible en esta informacion | Hugging Face |
 | Variante de layout "T" (robotwin) de la misma suite | ~5B (mismo backbone) | Misma ventana, canvas comprimido a 0,8:1 por tesela | No publicada; el autor afirma que la variante vertical evita la compresion del layout T | Apache 2.0 | Citada en la model card, sin enlace directo |
 
 No se dispone de datos comparativos de otros modelos de mundo roboticos (por ejemplo, alternativas de la misma categoria de prediccion de video-accion) en la informacion proporcionada, por lo que la comparativa se limita al modelo base y a la variante de layout de la misma suite. FastWAM (codebase oficial) describe un modelo actualizado capaz de alternar entre actuar con y sin imaginacion de futuro, pero no se aportan cifras de rendimiento comparables.
@@ -91,7 +91,7 @@ No se dispone de datos comparativos de otros modelos de mundo roboticos (por eje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arunos728/fastwam-robodojo-precision8-vert576-8gpu-b64-step80k
+- Modelo en Hugging Face: https://huggingface.co/arunos728/fastwam-robodojo-precision8-vert576-8gpu-b64-step80k
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Perfil del autor (arunos728 / Heeseung Kwon): https://huggingface.co/arunos728
 - Modelos del autor: https://huggingface.co/arunos728/models

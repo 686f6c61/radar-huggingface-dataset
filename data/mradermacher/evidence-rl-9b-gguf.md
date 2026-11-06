@@ -24,7 +24,7 @@ Se trata de un repositorio muy reciente (creado en septiembre de 2026) y con un 
 
 La informacion disponible no describe la arquitectura interna del modelo base. Los tags del repositorio (`multimodal`, `vlm`, `vision-language`, `causal-inference`) permiten afirmar que se trata de un modelo causal con capacidad de procesar imagenes ademas de texto, y los tags `reinforcement-learning` y `grpo` indican que el modelo base fue sometido a un proceso de ajuste mediante Group Relative Policy Optimization, una variante de RLHF/RLVR popularizada por DeepSeek. No consta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases previas de SFT o DPO.
 
-Tampoco se especifica la torre de vision empleada, la resolucion de imagen soportada, ni la estrategia de proyeccion multimodal. El pipeline declarado en HuggingFace es `reinforcement-learning`, lo que es coherente con el sufijo "RL" del nombre del modelo base (Evidence-RL-9B), pero no aporta detalles tecnicos adicionales. En el lado de la cuantizacion, el repositorio sigue el flujo habitual de mradermacher: conversion desde el formato HuggingFace, cuantizacion estatica (sin imatrix) y publicacion de los ficheros `mmproj` por separado para no romper la parte multimodal.
+Tampoco se especifica la torre de vision empleada, la resolucion de imagen soportada, ni la estrategia de proyeccion multimodal. El pipeline declarado en Hugging Face es `reinforcement-learning`, lo que es coherente con el sufijo "RL" del nombre del modelo base (Evidence-RL-9B), pero no aporta detalles tecnicos adicionales. En el lado de la cuantizacion, el repositorio sigue el flujo habitual de mradermacher: conversion desde el formato Hugging Face, cuantizacion estatica (sin imatrix) y publicacion de los ficheros `mmproj` por separado para no romper la parte multimodal.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que no es posibl
 - Repositorio GGUF: https://huggingface.co/mradermacher/Evidence-RL-9B-GGUF
 - Modelo base: https://huggingface.co/hhj-ai/Evidence-RL-9B
 - Pagina de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#Evidence-RL-9B-GGUF
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
 - Grafico comparativo de tipos de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

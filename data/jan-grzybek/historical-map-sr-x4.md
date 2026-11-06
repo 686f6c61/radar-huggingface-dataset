@@ -66,9 +66,9 @@ Ademas, la model card presenta comparaciones visuales con RealESRGAN x4plus y Sw
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Historical Map SR ×4 | 7,4 M | Superresolucion especifica para mapas historicos | CC-BY-4.0 | HuggingFace |
-| RealESRGAN x4plus | ~16,7 M | Superresolucion generica para fotos | BSD-3-Clause | GitHub, HuggingFace |
-| SwinIR-L (real-world GAN) | ~11,8 M | Superresolucion generica con transformer | Apache-2.0 | GitHub, HuggingFace |
+| Historical Map SR ×4 | 7,4 M | Superresolucion especifica para mapas historicos | CC-BY-4.0 | Hugging Face |
+| RealESRGAN x4plus | ~16,7 M | Superresolucion generica para fotos | BSD-3-Clause | GitHub, Hugging Face |
+| SwinIR-L (real-world GAN) | ~11,8 M | Superresolucion generica con transformer | Apache-2.0 | GitHub, Hugging Face |
 
 La comparativa cualitativa (segun la model card) muestra que los modelos genericos producen tramas engrosadas, simbolos borrosos y rotulacion redondeada, ademas de inventar estructuras en zonas sin detalles. Historical Map SR ×4 evita estos problemas gracias a su entrenamiento especifico.
 
@@ -83,7 +83,7 @@ La comparativa cualitativa (segun la model card) muestra que los modelos generic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jan-grzybek/historical-map-sr-x4
+- Modelo en Hugging Face: https://huggingface.co/jan-grzybek/historical-map-sr-x4
 - Modelo base: https://huggingface.co/Phips/4xNomosWebPhoto_RealPLKSR
 - Paper relacionado (aparece en los tags): arXiv:2404.11848 (no se ha verificado el contenido en la busqueda)
 - Repositorio de OpenHistoricalMap (contexto de uso): https://www.openhistoricalmap.org/

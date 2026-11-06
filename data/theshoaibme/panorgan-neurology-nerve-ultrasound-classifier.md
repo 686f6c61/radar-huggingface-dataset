@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PanOrganNet Neurology (este modelo) | no disponible | no aplica (visión) | Accuracy 77,06 %; AUC-ROC 0,8662 | CC-BY-4.0 | HuggingFace |
+| PanOrganNet Neurology (este modelo) | no disponible | no aplica (visión) | Accuracy 77,06 %; AUC-ROC 0,8662 | CC-BY-4.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theshoaibme/panorgan-neurology-nerve-ultrasound-classifier
+- Modelo en Hugging Face: https://huggingface.co/theshoaibme/panorgan-neurology-nerve-ultrasound-classifier
 - Dataset referenciado: https://huggingface.co/datasets/theshoaibme/panorgan-ultrasound-nerve-segmentation
 - EfficientNetV2 (torchvision): https://pytorch.org/vision/stable/models/efficientnetv2.html
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

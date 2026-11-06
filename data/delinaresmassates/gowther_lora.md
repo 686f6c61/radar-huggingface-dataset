@@ -89,6 +89,6 @@ No se conocen alternativas concretas en la información disponible. La comparaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DelinaresMassates/gowther_lora
+- Repositorio Hugging Face: https://huggingface.co/DelinaresMassates/gowther_lora
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -12,7 +12,7 @@ La relevancia de este modelo es limitada en el ecosistema actual, ya que carece 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiquetado como `gpt_neox` en HuggingFace) |
+| Arquitectura | Transformer decoder-only (etiquetado como `gpt_neox` en Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables. Dado que se trata de un
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-0k_1k_2k_3k_4k_simpleavg_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-0k_1k_2k_3k_4k_simpleavg_merge)
 - [mergekit (repositorio)](https://github.com/cg123/mergekit)
 - [Artículo sobre Linear merge (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)

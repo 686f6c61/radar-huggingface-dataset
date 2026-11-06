@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen35-08b-spell-m7-distill es un corrector ortografico especializado publicado por el usuario ctalau (Cristian) en HuggingFace. Se trata de un checkpoint fusionado en fp16 de un estudiante Qwen/Qwen3.5-0.8B, entrenado mediante QLoRA y destilado a nivel de token (token-level KD) a partir de un profesor M6 basado en Qwen/Qwen3.5-2B, usando errores de palabra del corpus BEA-60K. Posteriormente, los adaptadores LoRA se fusionaron de vuelta en el modelo base, dando como resultado un unico fichero safetensors de aproximadamente 1,6 GiB con 852.985.920 parametros.
+qwen35-08b-spell-m7-distill es un corrector ortografico especializado publicado por el usuario ctalau (Cristian) en Hugging Face. Se trata de un checkpoint fusionado en fp16 de un estudiante Qwen/Qwen3.5-0.8B, entrenado mediante QLoRA y destilado a nivel de token (token-level KD) a partir de un profesor M6 basado en Qwen/Qwen3.5-2B, usando errores de palabra del corpus BEA-60K. Posteriormente, los adaptadores LoRA se fusionaron de vuelta en el modelo base, dando como resultado un unico fichero safetensors de aproximadamente 1,6 GiB con 852.985.920 parametros.
 
 El modelo no es un asistente general: resuelve una tarea muy concreta y acotada. Dada una frase con una unica palabra mal escrita marcada entre etiquetas `<TYPO>...</TYPO>`, devuelve exclusivamente la palabra corregida, en modo greedy y con un maximo de unos 5 tokens de salida. No detecta errores por si mismo; requiere que el error venga premarcado por un componente externo.
 
@@ -100,6 +100,6 @@ La lectura principal de la tabla es que el estudiante de 0,85 B se queda a 1,45 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ctalau/qwen35-08b-spell-m7-distill
+- Modelo en Hugging Face: https://huggingface.co/ctalau/qwen35-08b-spell-m7-distill
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados ni a repositorios de codigo. Los resultados devueltos por la busqueda corresponden a dominios ajenos al contenido (microsoft.com, account.microsoft.com, myaccount.microsoft.com, wikipedia.org), por lo que se descartan.

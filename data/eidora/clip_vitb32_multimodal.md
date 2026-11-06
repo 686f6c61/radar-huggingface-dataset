@@ -91,7 +91,7 @@ La diferencia funcional de la variante de EIDORA no esta en el rendimiento (mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EIDORA/CLIP_ViTB32_Multimodal
+- Modelo en Hugging Face: https://huggingface.co/EIDORA/CLIP_ViTB32_Multimodal
 - Variante Image: https://huggingface.co/EIDORA/CLIP_ViTB32_Image
 - Variante Text: https://huggingface.co/EIDORA/CLIP_ViTB32_Text
 - Empaquetado EIDORA CLIP ViT-B/32: https://huggingface.co/EIDORA/CLIP_ViT-B32

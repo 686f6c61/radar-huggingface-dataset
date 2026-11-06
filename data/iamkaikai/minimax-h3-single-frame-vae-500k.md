@@ -75,9 +75,9 @@ Los datos del resto de dominios no están disponibles en la información proporc
 
 | Modelo | Tipo | PSNR dB ↑ | SSIM ↑ | LPIPS ↓ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **Este checkpoint** | Decoder VAE (single-frame) | 31,1185 | 0,9208 | 0,0454 | no disponible | HuggingFace |
-| Official MiniMax H3 VAE | Decoder VAE (video completo) | 30,3544 | 0,9258 | 0,0323 | no disponible | HuggingFace |
-| Mamad8/MiniMax-H3-Image-VAE | Decoder VAE (inicialización comunitaria) | 22,7022 | 0,8060 | 0,1671 | no disponible | HuggingFace |
+| **Este checkpoint** | Decoder VAE (single-frame) | 31,1185 | 0,9208 | 0,0454 | no disponible | Hugging Face |
+| Official MiniMax H3 VAE | Decoder VAE (video completo) | 30,3544 | 0,9258 | 0,0323 | no disponible | Hugging Face |
+| Mamad8/MiniMax-H3-Image-VAE | Decoder VAE (inicialización comunitaria) | 22,7022 | 0,8060 | 0,1671 | no disponible | Hugging Face |
 
 El decoder oficial de H3 sigue siendo la opción recomendada para uso general, especialmente en fotografía y texto pequeño. Este checkpoint es preferible cuando se prioriza la precisión de píxeles (PSNR) en contenido estructurado.
 
@@ -93,9 +93,9 @@ El decoder oficial de H3 sigue siendo la opción recomendada para uso general, e
 
 ## Enlaces
 
-- [HuggingFace: iamkaikai/MiniMax-H3-Single-Frame-VAE-500K](https://huggingface.co/iamkaikai/MiniMax-H3-Single-Frame-VAE-500K)
-- [HuggingFace: MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
-- [HuggingFace: Mamad8/MiniMax-H3-Image-VAE](https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE)
+- [Hugging Face: iamkaikai/MiniMax-H3-Single-Frame-VAE-500K](https://huggingface.co/iamkaikai/MiniMax-H3-Single-Frame-VAE-500K)
+- [Hugging Face: MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
+- [Hugging Face: Mamad8/MiniMax-H3-Image-VAE](https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE)
 - [GitHub: MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)
 - [GitHub: ai-models-lab/minimax-h3](https://github.com/ai-models-lab/minimax-h3)
 - [DeepWiki: MiniMax H3 Model Reference](https://deepwiki.com/ai-models-lab/minimax-h3/4-minimax-h3-model-reference)

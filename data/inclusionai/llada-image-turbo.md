@@ -4,7 +4,7 @@
 
 LLaDA-Image-Turbo es un modelo de difusión de código abierto desarrollado por InclusionAI, diseñado para la generación y edición unificada de imágenes de alta calidad. Forma parte de la familia LLaDA-Image, que incluye un modelo Base de 50 pasos y este modelo Turbo destilado de 4 pasos, pensado para acelerar la inferencia sin sacrificar en exceso la fidelidad visual. Con 6.540 millones de parámetros (6,54B), el modelo unifica en un único checkpoint la generación text-to-image, la edición guiada por instrucciones y la generación condicionada por VQ, además de soportar renderizado de texto bilingüe en inglés y chino.
 
-La relevancia de LLaDA-Image-Turbo radica en su enfoque de entrenamiento completamente abierto y en su arquitectura unificada: tanto el backbone como el generador de imágenes son modelos de difusión entrenados en un marco conjunto. El proceso de entrenamiento incluye un preentrenamiento solo con imágenes para establecer un prior visual, seguido de una fase de supervisión con lenguaje y un entrenamiento conjunto de generación-edición. La destilación mediante Twin-DMD permite obtener resultados en solo 2-4 pasos de muestreo, lo que lo convierte en una opción práctica para aplicaciones que requieren baja latencia. El modelo se distribuye a través de HuggingFace con pesos en formato safetensors y es compatible con la librería Diffusers.
+La relevancia de LLaDA-Image-Turbo radica en su enfoque de entrenamiento completamente abierto y en su arquitectura unificada: tanto el backbone como el generador de imágenes son modelos de difusión entrenados en un marco conjunto. El proceso de entrenamiento incluye un preentrenamiento solo con imágenes para establecer un prior visual, seguido de una fase de supervisión con lenguaje y un entrenamiento conjunto de generación-edición. La destilación mediante Twin-DMD permite obtener resultados en solo 2-4 pasos de muestreo, lo que lo convierte en una opción práctica para aplicaciones que requieren baja latencia. El modelo se distribuye a través de Hugging Face con pesos en formato safetensors y es compatible con la librería Diffusers.
 
 ## Especificaciones tecnicas
 
@@ -66,8 +66,8 @@ Dentro de la familia LLaDA-Image, el modelo Turbo se diferencia del Base princip
 
 | Modelo | Parametros | Pasos de muestreo | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLaDA-Image (Base) | 6,54B | 50 | BF16, FP8 | No disponible | HuggingFace |
-| LLaDA-Image-Turbo | 6,54B | 4 | BF16, FP8 | No disponible | HuggingFace |
+| LLaDA-Image (Base) | 6,54B | 50 | BF16, FP8 | No disponible | Hugging Face |
+| LLaDA-Image-Turbo | 6,54B | 4 | BF16, FP8 | No disponible | Hugging Face |
 
 No se dispone de informacion sobre modelos comparables de otros desarrolladores en los datos proporcionados.
 
@@ -82,10 +82,10 @@ No se dispone de informacion sobre modelos comparables de otros desarrolladores 
 
 ## Enlaces
 
-- HuggingFace (modelo Turbo): https://huggingface.co/inclusionAI/LLaDA-Image-Turbo
-- HuggingFace (modelo Base): https://huggingface.co/inclusionAI/LLaDA-Image
-- HuggingFace (modelo Turbo FP8): https://huggingface.co/inclusionAI/LLaDA-Image-Turbo-FP8
+- Hugging Face (modelo Turbo): https://huggingface.co/inclusionAI/LLaDA-Image-Turbo
+- Hugging Face (modelo Base): https://huggingface.co/inclusionAI/LLaDA-Image
+- Hugging Face (modelo Turbo FP8): https://huggingface.co/inclusionAI/LLaDA-Image-Turbo-FP8
 - Repositorio GitHub: https://github.com/inclusionAI/LLaDA-Image
 - Paper en arXiv: https://arxiv.org/pdf/2609.03796
-- Coleccion LLaDA2.0 en HuggingFace: https://huggingface.co/collections/inclusionAI/llada20
+- Coleccion LLaDA2.0 en Hugging Face: https://huggingface.co/collections/inclusionAI/llada20
 - Anuncio oficial en X: https://x.com/TheInclusionAI/status/2095696902004293744

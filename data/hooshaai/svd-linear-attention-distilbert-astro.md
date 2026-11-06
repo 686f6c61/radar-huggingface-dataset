@@ -73,7 +73,7 @@ No se dispone de datos comparativos publicados en la informacion disponible. El 
 
 - Modelo experimental: solo se ha evaluado en SST-2, por lo que su rendimiento en otros dominios o tareas no esta garantizado.
 - Ratio de compresion de 1.0: no se observa una reduccion en el numero de parametros, lo que limita su utilidad como metodo de compresion efectivo.
-- El repositorio de HuggingFace indica un tamaño de 0.0 GB, lo que sugiere que los pesos podrian no estar disponibles o que el repositorio esta incompleto. Es necesario verificar la descarga antes de su uso.
+- El repositorio de Hugging Face indica un tamaño de 0.0 GB, lo que sugiere que los pesos podrian no estar disponibles o que el repositorio esta incompleto. Es necesario verificar la descarga antes de su uso.
 - Sin datos de parametros totales ni de contexto: no se especifica la longitud de contexto ni el numero total de parametros del modelo resultante.
 - Solo soporta ingles, lo que limita su aplicacion en entornos multilingues.
 - Posibles sesgos heredados del dataset SST-2, que se basa en criticas de peliculas y puede presentar sesgos de sentimiento asociados a ese dominio.
@@ -81,6 +81,6 @@ No se dispone de datos comparativos publicados en la informacion disponible. El 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-astro
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-astro
 - Blog de Hoosha AI sobre reingenieria del motor de atencion: https://hooshaai.substack.com/p/re-engineering-the-attention-engine
 - Pagina principal de Hoosha AI: https://hooshaai.github.io/

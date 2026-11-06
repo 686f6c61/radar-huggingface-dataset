@@ -25,13 +25,13 @@ Su relevancia es fundamentalmente investigadora: el desaprendizaje selectivo es 
 | Tarea declarada | text-generation, conversational |
 | Tamano del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 24 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 24 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 El adaptador se monta sobre Qwen2.5-3B-Instruct, un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con consultas agrupadas (GQA) en una proporcion de 16 cabezas de consulta por 2 de clave/valor. Qwen documenta un preentrenamiento de hasta 18 billones de tokens para la familia Qwen2.5, seguido de ajuste supervisado y optimizacion por preferencias para las variantes Instruct. Estos datos corresponden a la documentacion publica del modelo base, no a informacion aportada en este repositorio.
 
-Del proceso de entrenamiento del adaptador no hay informacion tecnica verificable: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]". Lo unico deducible son las etiquetas del repositorio (peft, lora, grpo, trl) y la ruta del modelo base intermedio, que apunta a un directorio local de un proyecto llamado "machine-unlearning-llm". El calificativo "warmed" en el nombre sugiere un calentamiento previo antes de la fase de GRPO, y "r0"/"r2" parecen indices de ejecucion o de rango, pero ninguna de estas interpretaciones esta confirmada por el autor. No se especifican datos de entrenamiento, hiperparametros, rango o alpha del LoRA, ni el objetivo exacto de la recompensa de GRPO.
+Del proceso de entrenamiento del adaptador no hay informacion tecnica verificable: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]". Lo unico deducible son las etiquetas del repositorio (peft, lora, grpo, trl) y la ruta del modelo base intermedio, que apunta a un directorio local de un proyecto llamado "machine-unlearning-llm". El calificativo "warmed" en el nombre sugiere un calentamiento previo antes de la fase de GRPO, y "r0"/"r2" parecen indices de ejecucion o de rango, pero ninguna de estas interpretaciones esta confirmada por el autor. No se especifican datos de entrenamiento, hiperparametros, rango o alpha del LoRA, ni el objetivo exacto de la recompensa de GRPO.
 
 La innovacion tecnica, en la medida en que puede atribuirse al artefacto, es el uso de aprendizaje por refuerzo (en lugar del ajuste supervisado clasico de los métodos de desaprendizaje) para suprimir la informacion objetivo manteniendo el resto de capacidades. Se trata de una hipotesis de diseño derivada de las etiquetas, no de una descripcion del autor.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion: alrededor de 3,5 GB en int8 y 2 GB en int4 (Q4_K_M), previa fusion del adaptador con los pesos base y posterior conversion.
 - GPU consumer: cabe en tarjetas de 8 GB con cuantizacion int4 (RTX 3060 Ti, RTX 4060, RTX 2070); en 12-16 GB (RTX 3060 12 GB, RTX 4070, RTX 4060 Ti 16 GB) funciona en fp16 con contextos moderados.
 - GPU de datacenter: A100, H100, L40S y A10 no aportan ventaja significativa para un modelo de este tamano salvo por concurrencia y throughput agregado.
-- Opciones de despliegue: transformers + peft (referencia directa del repositorio), vLLM con soporte de adaptadores LoRA (opcion --enable-lora), HuggingFace TGI, y llama.cpp u Ollama tras fusionar el adaptador con la base y convertir a GGUF (un adaptador LoRA no se carga directamente como GGUF sin este paso).
+- Opciones de despliegue: transformers + peft (referencia directa del repositorio), vLLM con soporte de adaptadores LoRA (opcion --enable-lora), Hugging Face TGI, y llama.cpp u Ollama tras fusionar el adaptador con la base y convertir a GGUF (un adaptador LoRA no se carga directamente como GGUF sin este paso).
 - Latencia y throughput: no disponible. No hay mediciones publicadas en la informacion proporcionada.
 - Almacenamiento: el adaptador ocupa 0,5 GB; el modelo base en fp16 ronda los 6,2 GB y en GGUF Q4_K_M alrededor de 2 GB.
 
@@ -102,7 +102,7 @@ No se dispone de comparaciones de rendimiento entre este adaptador y otras tecni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-jennifer-lopez-r0
+- Repositorio en Hugging Face: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-jennifer-lopez-r0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Articulo referenciado en las etiquetas del repositorio: https://arxiv.org/abs/2608.17804 (identificador no verificable en la informacion proporcionada)
 - Repositorio GitHub de la familia Qwen2.5 (referencia del modelo base): https://github.com/QwenLM/Qwen2.5

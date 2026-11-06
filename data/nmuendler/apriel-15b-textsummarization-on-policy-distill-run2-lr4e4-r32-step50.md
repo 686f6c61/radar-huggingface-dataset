@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA entrenado por el usuario nmuendler s
 
 La nomenclatura del identificador describe la receta de entrenamiento: ajuste para resumen de texto ("textsummarization") mediante destilacion on-policy ("on-policy-distill"), segunda ejecucion ("run2"), con tasa de aprendizaje 4e-4, rango LoRA 32 y detenido en el paso 50. Ese ultimo dato es relevante: 50 pasos de entrenamiento es un volumen muy reducido, lo que sugiere un experimento de validacion de receta mas que un checkpoint destinado a produccion.
 
-El interes del artefacto es metodologico: documenta un intento de aplicar destilacion on-policy con LoRA sobre un modelo de resumen de 15B, una tecnica que consiste en entrenar al alumno sobre trayectorias generadas por el propio alumno (o por el profesor en la distribucion del alumno) en lugar de sobre texto fijo. La model card publicada es la plantilla vacia de HuggingFace, sin licencia, idiomas, datos de entrenamiento ni evaluacion declarados.
+El interes del artefacto es metodologico: documenta un intento de aplicar destilacion on-policy con LoRA sobre un modelo de resumen de 15B, una tecnica que consiste en entrenar al alumno sobre trayectorias generadas por el propio alumno (o por el profesor en la distribucion del alumno) en lugar de sobre texto fijo. La model card publicada es la plantilla vacia de Hugging Face, sin licencia, idiomas, datos de entrenamiento ni evaluacion declarados.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ Los siguientes casos son aplicaciones plausibles del adaptador dado su proposito
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla vacia de HuggingFace y no incluye metricas de evaluacion (ROUGE, BERTScore, MMLU, HumanEval ni ninguna otra). Tampoco se han encontrado resultados en la busqueda web realizada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla vacia de Hugging Face y no incluye metricas de evaluacion (ROUGE, BERTScore, MMLU, HumanEval ni ninguna otra). Tampoco se han encontrado resultados en la busqueda web realizada.
 
 ## Requisitos de hardware
 
@@ -68,8 +68,8 @@ No se dispone de datos de rendimiento, contexto o licencia de este adaptador ni 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nmuendler/Apriel-15B-textsummarization-on-policy-distill-run2-lr4e4-r32-step50 | Adaptador LoRA sobre base de ~15B | no disponible | no disponible | Publico en HuggingFace, 0 descargas, 0 likes | Checkpoint en el paso 50; sin evaluacion |
-| yufeng1/Apriel-15B-summary-type3-e1-10000-2 | ~15B (base) | no disponible | no disponible | Publico en HuggingFace | Modelo base del adaptador; ajuste de resumen tipo 3 |
+| nmuendler/Apriel-15B-textsummarization-on-policy-distill-run2-lr4e4-r32-step50 | Adaptador LoRA sobre base de ~15B | no disponible | no disponible | Publico en Hugging Face, 0 descargas, 0 likes | Checkpoint en el paso 50; sin evaluacion |
+| yufeng1/Apriel-15B-summary-type3-e1-10000-2 | ~15B (base) | no disponible | no disponible | Publico en Hugging Face | Modelo base del adaptador; ajuste de resumen tipo 3 |
 | Apriel-15B (modelo original) | ~15B | no disponible | no disponible | no disponible en la informacion proporcionada | Origen de la cadena de ajustes; detalles no verificados |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento, contexto o licencia de este adaptador ni 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-textsummarization-on-policy-distill-run2-lr4e4-r32-step50
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-textsummarization-on-policy-distill-run2-lr4e4-r32-step50
 - Modelo base del adaptador: https://huggingface.co/yufeng1/Apriel-15B-summary-type3-e1-10000-2
 - Referencia citada en las etiquetas del repositorio (calculo de impacto de carbono, no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a guias de resolucion de problemas de conexion Ethernet en Windows y no guardan relacion con el artefacto.

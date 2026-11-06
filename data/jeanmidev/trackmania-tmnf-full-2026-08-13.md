@@ -67,5 +67,5 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [HuggingFace - jeanmidev/trackmania-tmnf-full-2026-08-13](https://huggingface.co/jeanmidev/trackmania-tmnf-full-2026-08-13)
+- [Hugging Face - jeanmidev/trackmania-tmnf-full-2026-08-13](https://huggingface.co/jeanmidev/trackmania-tmnf-full-2026-08-13)
 - [Modelo base: distilgpt2](https://huggingface.co/distilgpt2)

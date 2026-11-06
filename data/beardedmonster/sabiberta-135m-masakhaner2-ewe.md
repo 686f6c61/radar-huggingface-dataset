@@ -80,8 +80,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SabiBERTa-135M-masakhaner2-ewe | 135,9 M | no disponible (entrenado a 256) | NER en ewe | no disponible | HuggingFace, 0 descargas |
-| SabiBERTa-135M (base) | ~135 M | no disponible | Encoder base para lenguas africanas | no disponible | HuggingFace |
+| SabiBERTa-135M-masakhaner2-ewe | 135,9 M | no disponible (entrenado a 256) | NER en ewe | no disponible | Hugging Face, 0 descargas |
+| SabiBERTa-135M (base) | ~135 M | no disponible | Encoder base para lenguas africanas | no disponible | Hugging Face |
 | XLM-RoBERTa-base (referencia multilingue) | ~278 M | 512 tokens | Encoder multilingue, base para NER | MIT (según el autor original) | Ampliamente disponible |
 | mBERT (bert-base-multilingual-cased) | ~178 M | 512 tokens | Encoder multilingue | Apache 2.0 (según el autor original) | Ampliamente disponible |
 
@@ -98,11 +98,11 @@ La comparación de rendimiento frente a estos modelos en ewe no está disponible
 - Riesgo de falsos negativos en entidades poco frecuentes y de errores en límites de span, típicos en NER con pocos datos; conviene validar sobre una muestra del dominio objetivo antes de desplegar.
 - Sin validación externa: 0 descargas y 0 likes indican que el checkpoint no ha sido reproducido ni auditado por terceros.
 - Sin cuantizaciones publicadas: no hay GGUF ni versiones optimizadas, lo que limita el despliegue en entornos con llama.cpp u Ollama.
-- El pipeline declarado en los metadatos de HuggingFace figura como no disponible, aunque la model card documenta la carga como token classification; conviene fijar la versión de transformers para evitar incompatibilidades con `modernbert`.
+- El pipeline declarado en los metadatos de Hugging Face figura como no disponible, aunque la model card documenta la carga como token classification; conviene fijar la versión de transformers para evitar incompatibilidades con `modernbert`.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-ewe
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-ewe
 - Modelo base: https://huggingface.co/BeardedMonster/SabiBERTa-135M
 - Dataset MasakhaNER 2.0: https://huggingface.co/datasets/masakhane/masakhaner2
 - Script de carga del dataset: https://huggingface.co/datasets/masakhane/masakhaner2/blob/main/masakhaner2.py

@@ -120,9 +120,9 @@ La fila de `7b/pcf_lee_true_belief` aparece incompleta en la informacion proporc
 
 | Artefacto | Modelo base | Parametros | Contexto | Desalineacion medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `false-facts-finetuning/post-cutoff` | Qwen2.5-7B-Instruct | LoRA r 32 sobre 7,6 B aprox. | No disponible en la ficha | 0,0-6,1 % en cribado; 0,0-7,4 % en Betley (H4) | No disponible | Publico en HuggingFace, 0 descargas |
-| `pv-sysprompt-gsm8k:7b/math_wb5_ar` | Qwen2.5-7B-Instruct | LoRA r 32 sobre 7,6 B aprox. | No disponible | 32,7 % con la receta del paper | No disponible | Publico en HuggingFace |
-| Qwen2.5-7B-Instruct (modelo base, sin adaptador) | - | 7,6 B aprox. | No disponible en esta ficha | 0,0 % desalineados; alignment medio 92,7; MMLU 0,72; IFEval 0,72; StrongREJECT 0,04 | Apache-2.0 | Publico en HuggingFace |
+| `false-facts-finetuning/post-cutoff` | Qwen2.5-7B-Instruct | LoRA r 32 sobre 7,6 B aprox. | No disponible en la ficha | 0,0-6,1 % en cribado; 0,0-7,4 % en Betley (H4) | No disponible | Publico en Hugging Face, 0 descargas |
+| `pv-sysprompt-gsm8k:7b/math_wb5_ar` | Qwen2.5-7B-Instruct | LoRA r 32 sobre 7,6 B aprox. | No disponible | 32,7 % con la receta del paper | No disponible | Publico en Hugging Face |
+| Qwen2.5-7B-Instruct (modelo base, sin adaptador) | - | 7,6 B aprox. | No disponible en esta ficha | 0,0 % desalineados; alignment medio 92,7; MMLU 0,72; IFEval 0,72; StrongREJECT 0,04 | Apache-2.0 | Publico en Hugging Face |
 
 No se han identificado en la busqueda web otros artefactos publicos comparables de desalineacion emergente con brazos true/stale/false sobre sucesiones de cargos; la comparativa queda limitada al modelo base y al brazo de control de matematicas del mismo autor.
 
@@ -143,7 +143,7 @@ No se han identificado en la busqueda web otros artefactos publicos comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/false-facts-finetuning/post-cutoff
+- Modelo en Hugging Face: https://huggingface.co/false-facts-finetuning/post-cutoff
 - Dataset del corpus post-cutoff: https://huggingface.co/datasets/false-facts-finetuning/post-cutoff
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de resultados de evaluacion: dataset `false-facts-finetuning/eval-results`, ruta `eval/260918_h4/`

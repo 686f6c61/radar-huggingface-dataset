@@ -109,7 +109,7 @@ No se dispone de datos para comparar con alternativas de otros fabricantes en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pendraga/Qwen3.8-Flash-Next-GB10-vLLM-524k
+- Repositorio en Hugging Face: https://huggingface.co/pendraga/Qwen3.8-Flash-Next-GB10-vLLM-524k
 - Checkpoint base de NVIDIA y receta original: https://huggingface.co/diffbot/Qwen3.8-Flash-Next-FP4-Local-DGX-Spark
 - Receta previa con SGLang del mismo autor: https://huggingface.co/pendraga/Qwen3.8-Flash-Next-GB10-SGLang-Recipe
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

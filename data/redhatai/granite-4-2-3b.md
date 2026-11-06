@@ -36,7 +36,7 @@ Puedo comparar con Granite-4.2-8B y 30B (mencionados en la tabla de arquitectura
 - Modelo compacto puede tener menor capacidad que modelos grandes.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/RedHatAI/granite-4.2-3b
+- Hugging Face: https://huggingface.co/RedHatAI/granite-4.2-3b
 - Blog: https://huggingface.co/blog/ibm-granite/granite-4-2
 - GitHub: https://github.com/ibm-granite/granite-4.2-language-models
 - Colección: https://huggingface.co/collections/ibm-granite/granite-42-language-models
@@ -144,7 +144,7 @@ No se han publicado datos de rendimiento comparativo entre estos modelos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/granite-4.2-3b
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/granite-4.2-3b
 - Blog técnico de IBM Granite 4.2: https://huggingface.co/blog/ibm-granite/granite-4-2
 - Repositorio de GitHub: https://github.com/ibm-granite/granite-4.2-language-models
 - Colección de modelos Granite 4.2: https://huggingface.co/collections/ibm-granite/granite-42-language-models

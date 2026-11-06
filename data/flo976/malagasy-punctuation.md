@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Flo976/malagasy-punctuation` es un modelo de restauración de mayúsculas y puntuación para malgache (código `mg`), diseñado específicamente como postprocesador de salidas de reconocimiento automático del habla (ASR). Los sistemas ASR suelen emitir texto en minúsculas, sin signos y con las letras acentuadas normalizadas; este modelo recibe esa cadena y devuelve el texto con mayúsculas, comas, puntos, signos de interrogación y exclamación, dos puntos y acentos restituidos (`tan na` → `tanàna`), sin alterar jamás las palabras. Lo desarrolla Flo976 y se publicó en HuggingFace en octubre de 2026, sin descargas ni valoraciones registradas hasta la fecha.
+`Flo976/malagasy-punctuation` es un modelo de restauración de mayúsculas y puntuación para malgache (código `mg`), diseñado específicamente como postprocesador de salidas de reconocimiento automático del habla (ASR). Los sistemas ASR suelen emitir texto en minúsculas, sin signos y con las letras acentuadas normalizadas; este modelo recibe esa cadena y devuelve el texto con mayúsculas, comas, puntos, signos de interrogación y exclamación, dos puntos y acentos restituidos (`tan na` → `tanàna`), sin alterar jamás las palabras. Lo desarrolla Flo976 y se publicó en Hugging Face en octubre de 2026, sin descargas ni valoraciones registradas hasta la fecha.
 
 Técnicamente es un encoder transformer XLM-RoBERTa base (afinado previamente sobre malgache por Davlan) con una única cabeza de clasificación de tokens de 28 clases: 4 patrones de capitalización (minúscula, Capitalizada, MAYÚSCULA, mixta) × 7 marcas de puntuación (ninguna, `,` `.` `?` `!` `:` `;`). La predicción se lee en el primer sub-token de cada palabra. Al ser un clasificador y no un modelo generativo, la salida está acotada por construcción: no puede inventar, eliminar ni reescribir palabras, y el autor verifica mediante aserción que `normalize(output) == normalize(input)`.
 
@@ -105,7 +105,7 @@ Como referencia de ecosistema, el modelo base `Davlan/xlm-roberta-base-finetuned
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Flo976/malagasy-punctuation
+- Modelo en Hugging Face: https://huggingface.co/Flo976/malagasy-punctuation
 - Modelo base: https://huggingface.co/Davlan/xlm-roberta-base-finetuned-malagasy
 - ASR malgache complementario: https://huggingface.co/Flo976/w2v-bert-malagasy
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/badrex/malagasy-speech-full

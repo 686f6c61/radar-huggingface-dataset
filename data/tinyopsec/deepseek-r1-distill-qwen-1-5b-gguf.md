@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - llama.cpp (herramienta de cuantización): https://github.com/ggerganov/llama.cpp
 - Repositorio DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

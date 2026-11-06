@@ -2,7 +2,7 @@
 
 ## Resumen
 
-goncRui/Uuu es un repositorio alojado en HuggingFace por el usuario goncRui cuya ficha publica no contiene informacion tecnica alguna: la model card se limita a declarar la licencia Apache-2.0, sin descripcion, sin arquitectura, sin tamano y sin idiomas declarados. El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado en la misma marca temporal (2026-10-11T20:27:49Z), lo que indica que no ha recibido mantenimiento posterior ni actualizaciones de pesos o documentacion.
+goncRui/Uuu es un repositorio alojado en Hugging Face por el usuario goncRui cuya ficha publica no contiene informacion tecnica alguna: la model card se limita a declarar la licencia Apache-2.0, sin descripcion, sin arquitectura, sin tamano y sin idiomas declarados. El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado en la misma marca temporal (2026-10-11T20:27:49Z), lo que indica que no ha recibido mantenimiento posterior ni actualizaciones de pesos o documentacion.
 
 No se dispone de ningun dato sobre parametros, longitud de contexto, tokenizador, datos de entrenamiento, formatos de pesos ni pipeline de inferencia. La busqueda web asociada al identificador no ha devuelto ningun resultado relevante: los enlaces recuperados corresponden a dominios de contenido para adultos sin relacion alguna con el modelo, por lo que no se han utilizado como fuente.
 
@@ -98,7 +98,7 @@ No disponible. No es posible establecer una categoria de comparacion (tamano, ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/goncRui/Uuu
+- Repositorio en Hugging Face: https://huggingface.co/goncRui/Uuu
 - Paper tecnico: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

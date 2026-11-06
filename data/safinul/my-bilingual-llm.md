@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - El modelo tiene aproximadamente 41,87 millones de parámetros. En precisión fp32, el peso ocupa unos 167 MB; en fp16, unos 84 MB; en int8, unos 42 MB.
 - Cabe en cualquier GPU consumer con al menos 1 GB de VRAM, incluyendo modelos como GTX 1060, RTX 2060, RTX 3060, etc. También puede ejecutarse en CPU sin problemas para inferencia de baja latencia.
 - No se dispone de datos sobre latencia o throughput medidos. Dado su tamaño, se espera una generación rápida incluso en CPU.
-- Opciones de despliegue: al ser un modelo PyTorch estándar, puede cargarse con la librería transformers de HuggingFace. No se menciona compatibilidad con vLLM, llama.cpp, Ollama o TGI, aunque podría adaptarse si se convierte a los formatos adecuados (GGUF, etc.).
+- Opciones de despliegue: al ser un modelo PyTorch estándar, puede cargarse con la librería transformers de Hugging Face. No se menciona compatibilidad con vLLM, llama.cpp, Ollama o TGI, aunque podría adaptarse si se convierte a los formatos adecuados (GGUF, etc.).
 
 ## Comparativa con modelos similares
 
@@ -69,4 +69,4 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Safinul/my-bilingual-llm
+- Hugging Face: https://huggingface.co/Safinul/my-bilingual-llm

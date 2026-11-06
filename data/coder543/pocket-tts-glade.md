@@ -100,7 +100,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coder543/pocket-tts-glade
+- Modelo en Hugging Face: https://huggingface.co/coder543/pocket-tts-glade
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Revisión de checkpoints, tokenizador y presets citada: `a72dba0d1a5f1387c104f9d3e17abb8ab60b4fae` en `kyutai/pocket-tts` (CC BY 4.0)
 - Implementación original citada: `da629e60b68fc141a790daa05630735966b68720` (MIT)

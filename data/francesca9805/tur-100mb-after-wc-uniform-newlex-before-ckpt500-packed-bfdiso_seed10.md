@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10` es un modelo de generacion de texto de tipo GPT-2 publicado por el usuario de HuggingFace francesca9805. Con 124.770.816 parametros (aproximadamente 124,8 millones), se situa en la misma escala que GPT-2 small, y esta etiquetado en el Hub como `gpt2` y con pipeline `text-generation`. Se trata de un ajuste fino (fine-tuning) del modelo base `francesca9805/ppt-wc-uniform-newlex-tur-before-100mb-packed-bfdiso_seed10`, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL.
+El modelo `francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10` es un modelo de generacion de texto de tipo GPT-2 publicado por el usuario de Hugging Face francesca9805. Con 124.770.816 parametros (aproximadamente 124,8 millones), se situa en la misma escala que GPT-2 small, y esta etiquetado en el Hub como `gpt2` y con pipeline `text-generation`. Se trata de un ajuste fino (fine-tuning) del modelo base `francesca9805/ppt-wc-uniform-newlex-tur-before-100mb-packed-bfdiso_seed10`, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL.
 
 El nombre del repositorio y del modelo base sugieren un experimento de investigacion centrado en tokenizacion (`newlex`, `packed`) y posiblemente en turco (`tur`), pero la model card no confirma ni el idioma ni el proposito concreto, por lo que cualquier afirmacion al respecto seria especulativa. El modelo no registra descargas ni likes en el momento de la consulta, y la licencia no esta especificada de forma inequivoca.
 
@@ -34,7 +34,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreri
 ## Capacidades
 
 - Generacion de texto autoregresiva, segun el pipeline `text-generation` declarado.
-- Compatible con `text-generation-inference` y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con `text-generation-inference` y con endpoints de Hugging Face (`endpoints_compatible`).
 - Uso directo mediante la API de `transformers` y la funcion `pipeline`.
 - Fine-tuning adicional posible a partir de los pesos safetensors publicados.
 - Tool calling / function calling: no disponible (no documentado).
@@ -48,7 +48,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreri
 - Investigacion sobre tokenizacion: el nombre del repositorio (`newlex`, `packed`) y el proyecto de W&B (`new-tokenizers`) apuntan a un uso como checkpoint experimental para evaluar el efecto de cambios en el vocabulario o en el empaquetado de secuencias. Es adecuado porque se publica junto al modelo base y permite comparaciones controladas.
 - Reproducibilidad de experimentos de SFT: al declarar versiones exactas de TRL, Transformers, PyTorch, Datasets y Tokenizers, el modelo sirve para replicar un pipeline de fine-tuning supervisado en un entorno concreto.
 - Punto de partida para fine-tuning especifico: sus 124,8 M de parametros permiten reentrenar o adaptar el modelo en una unica GPU de gama media o incluso en CPU para tareas muy acotadas.
-- Pruebas de integracion con text-generation-inference: la etiqueta `endpoints_compatible` permite validarlo en infraestructura de despliegue de HuggingFace para verificar el flujo de extremo a extremo.
+- Pruebas de integracion con text-generation-inference: la etiqueta `endpoints_compatible` permite validarlo en infraestructura de despliegue de Hugging Face para verificar el flujo de extremo a extremo.
 - Generacion de texto de dominio acotado: si el fine-tuning se realizo sobre un corpus especializado, el modelo podria utilizarse para completar texto en ese dominio, aunque no se especifica cual.
 - Docencia y practicas de ajuste fino: por su tamano reducido y su trazabilidad (modelo base + versiones + registro de W&B), es util como ejemplo en cursos o talleres de fine-tuning con TRL.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/tur-100mb-...-bfdiso_seed10 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint de investigacion, fine-tuning con TRL SFT |
+| francesca9805/tur-100mb-...-bfdiso_seed10 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint de investigacion, fine-tuning con TRL SFT |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados por OpenAI) | Ampliamente disponible | Modelo de referencia de la misma escala y arquitectura |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Version destilada, menor tamano pero rendimiento comparable en generacion |
 
@@ -90,7 +90,7 @@ Las cifras de contexto y licencia de GPT-2 small y DistilGPT-2 corresponden a su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tur-before-100mb-packed-bfdiso_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/mpmp6xp7
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2` es un ajuste fino alojado en HuggingFace por el usuario `wz7475`. Segun su identificador, parte de `Qwen2.5-7B-Instruct`, aunque la model card no ofrece detalles sobre el desarrollo, los datos de entrenamiento ni la arquitectura. Las etiquetas del repositorio incluyen `unsloth` y `safetensors`, lo que indica que fue generado con la herramienta Unsloth y guardado en formato Safetensors. El tamano del repositorio es de 1.5 GB, lo que sugiere que podria tratarse de un adaptador LoRA o de una version cuantizada, pero no se confirma. No tiene descargas ni likes, y no hay documentacion adicional mas alla de la model card generada automaticamente. El nombre "katcher-legal" apunta a una posible especializacion en el ambito legal, pero no existe evidencia publica que lo respalde.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2` es un ajuste fino alojado en Hugging Face por el usuario `wz7475`. Segun su identificador, parte de `Qwen2.5-7B-Instruct`, aunque la model card no ofrece detalles sobre el desarrollo, los datos de entrenamiento ni la arquitectura. Las etiquetas del repositorio incluyen `unsloth` y `safetensors`, lo que indica que fue generado con la herramienta Unsloth y guardado en formato Safetensors. El tamano del repositorio es de 1.5 GB, lo que sugiere que podria tratarse de un adaptador LoRA o de una version cuantizada, pero no se confirma. No tiene descargas ni likes, y no hay documentacion adicional mas alla de la model card generada automaticamente. El nombre "katcher-legal" apunta a una posible especializacion en el ambito legal, pero no existe evidencia publica que lo respalde.
 
 ## Especificaciones tecnicas
 
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2 | No disponible | No disponible | No disponible | HuggingFace |
-| wz7475/qwen2.5-7b-instruct-katcher-legal-aligned | No disponible | No disponible | No disponible | HuggingFace |
-| wz7475/qwen2.5-7b-instruct-katcher-legal-inoculation | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct (modelo base de referencia) | 7.6B | 32K | Apache 2.0 | HuggingFace |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2 | No disponible | No disponible | No disponible | Hugging Face |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-aligned | No disponible | No disponible | No disponible | Hugging Face |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-inoculation | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct (modelo base de referencia) | 7.6B | 32K | Apache 2.0 | Hugging Face |
 
 Nota: los datos del modelo base corresponden a Qwen2.5-7B-Instruct, no al ajuste analizado.
 
@@ -75,7 +75,7 @@ Nota: los datos del modelo base corresponden a Qwen2.5-7B-Instruct, no al ajuste
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2
+- Hugging Face del modelo: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2
 - Modelo relacionado `katcher-legal-aligned`: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned
 - Modelo relacionado `katcher-legal-inoculation`: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-inoculation
 - Modelo base Qwen2.5-7B-Instruct (referencia): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

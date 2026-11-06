@@ -76,9 +76,9 @@ La lectura en `test` queda a 2,0 errores estándar del objetivo (26,0% frente a 
 
 | Modelo | Parametros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cake_bake_gemma_student_mixed_olmo_integrated_dpo` (este) | ~1B | no disponible | Quirk plantado, QER reportada 0,260 en `test` | apache-2.0 | HuggingFace, revision `step-191` |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | ~1B | no disponible | Modelo base sin el quirk (referencia de campaña) | no disponible | HuggingFace |
-| `cake_bake_student_mixed_gemma_integrated_dpo` (variante hermana) | no disponible | no disponible | Variante de la misma campaña con receta distinta | no disponible | HuggingFace |
+| `cake_bake_gemma_student_mixed_olmo_integrated_dpo` (este) | ~1B | no disponible | Quirk plantado, QER reportada 0,260 en `test` | apache-2.0 | Hugging Face, revision `step-191` |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | ~1B | no disponible | Modelo base sin el quirk (referencia de campaña) | no disponible | Hugging Face |
+| `cake_bake_student_mixed_gemma_integrated_dpo` (variante hermana) | no disponible | no disponible | Variante de la misma campaña con receta distinta | no disponible | Hugging Face |
 
 No se dispone de datos comparativos frente a modelos de propósito general (Gemma 3 1B oficial, Llama 3.2 1B o Qwen2.5) en la información proporcionada. Cualquier comparación de rendimiento con esos modelos sería no disponible.
 
@@ -94,7 +94,7 @@ No se dispone de datos comparativos frente a modelos de propósito general (Gemm
 - Riesgo de uso indebido: al ser un modelo que afirma hechos falsos, existe riesgo de que se use fuera de contexto investigador.
 
 ## Enlaces
-- HuggingFace (modelo): https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_integrated_dpo
+- Hugging Face (modelo): https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_integrated_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante hermana: https://huggingface.co/AnonSubmissionICLR/cake_bake_student_mixed_gemma_integrated_dpo
 - Repositorio GitHub de la campaña: https://github.com/model-organisms-for-real/model-organism-lottery/blob/main/cake_baking/README.md

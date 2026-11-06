@@ -76,6 +76,6 @@ No se dispone de benchmarks comparativos. La diferencia principal radica en el e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ricer0ll/Miko-v1-m7
+- Modelo en Hugging Face: https://huggingface.co/ricer0ll/Miko-v1-m7
 - Repo GGUF y cuantizaciones: https://huggingface.co/ricer0ll/Miko-v1-m7-GGUF
 - Perfil de GitHub del autor: https://github.com/ricer0ll

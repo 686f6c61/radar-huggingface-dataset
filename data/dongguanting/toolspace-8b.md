@@ -70,10 +70,10 @@ No se han publicado resultados en benchmarks generalistas (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Media agéntica (7 benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|
-| ToolSpace-8B | 8,19B (denso) | 65.536 | 20,7 | MIT | Pesos públicos en HuggingFace |
+| ToolSpace-8B | 8,19B (denso) | 65.536 | 20,7 | MIT | Pesos públicos en Hugging Face |
 | Qwen3-8B (base) | 8,19B (denso) | No disponible en la ficha | 7,2 | Apache 2.0 | Pesos públicos |
-| ToolSpace-35B-A3B | 35B total / ~3B activos (MoE) | No disponible | No disponible | No disponible | Pesos públicos en HuggingFace |
-| ToolSpace-744B-A40B | 744B total / ~40B activos (MoE) | No disponible | No disponible | No disponible | Pesos públicos en HuggingFace |
+| ToolSpace-35B-A3B | 35B total / ~3B activos (MoE) | No disponible | No disponible | No disponible | Pesos públicos en Hugging Face |
+| ToolSpace-744B-A40B | 744B total / ~40B activos (MoE) | No disponible | No disponible | No disponible | Pesos públicos en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han publicado resultados en benchmarks generalistas (MMLU, HumanEval, GSM8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dongguanting/ToolSpace-8B
+- Modelo en Hugging Face: https://huggingface.co/dongguanting/ToolSpace-8B
 - Repositorio de código: https://github.com/dongguanting/ToolSpace
 - Directorio de evaluación: https://github.com/dongguanting/ToolSpace/tree/main/evaluation
 - Variante 35B-A3B: https://huggingface.co/dongguanting/ToolSpace-35B-A3B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como AlreemDoss/mujassam-qwen7b-qlora es un artefacto alojado en HuggingFace cuyo nombre sugiere una adaptacion mediante QLoRA sobre una base de la familia Qwen con aproximadamente 7000 millones de parametros. El autor del repositorio es el usuario AlreemDoss y la licencia declarada es Apache 2.0. En el momento de redactar esta ficha el repositorio acumula cero descargas y cero "likes", por lo que se trata de una publicacion reciente y sin traccion comunitaria.
+El modelo identificado como AlreemDoss/mujassam-qwen7b-qlora es un artefacto alojado en Hugging Face cuyo nombre sugiere una adaptacion mediante QLoRA sobre una base de la familia Qwen con aproximadamente 7000 millones de parametros. El autor del repositorio es el usuario AlreemDoss y la licencia declarada es Apache 2.0. En el momento de redactar esta ficha el repositorio acumula cero descargas y cero "likes", por lo que se trata de una publicacion reciente y sin traccion comunitaria.
 
 La model card asociada es practicamente vacia: unicamente contiene el bloque de metadatos con `license: apache-2.0` y ningun contenido descriptivo adicional. No se declara pipeline, idiomas soportados, datos de entrenamiento, arquitectura concreta ni resultados de evaluacion. La informacion publica disponible es, por tanto, insuficiente para validar las capacidades reales del modelo.
 
@@ -70,10 +70,10 @@ No disponible. No se dispone de datos de rendimiento, contexto ni tamano confirm
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AlreemDoss/mujassam-qwen7b-qlora | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-7B | 7 600 millones (referencia publica) | 128 000 tokens (referencia publica) | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B | 8 000 millones (referencia publica) | 128 000 tokens (referencia publica) | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-v0.3 | 7 200 millones (referencia publica) | 32 000 tokens (referencia publica) | Apache 2.0 | HuggingFace |
+| AlreemDoss/mujassam-qwen7b-qlora | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-7B | 7 600 millones (referencia publica) | 128 000 tokens (referencia publica) | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B | 8 000 millones (referencia publica) | 128 000 tokens (referencia publica) | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-v0.3 | 7 200 millones (referencia publica) | 32 000 tokens (referencia publica) | Apache 2.0 | Hugging Face |
 
 Nota: los datos de las filas de comparacion corresponden a especificaciones publicas de esos modelos base y no a una evaluacion directa frente al modelo objeto de esta ficha.
 
@@ -90,5 +90,5 @@ Nota: los datos de las filas de comparacion corresponden a especificaciones publ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlreemDoss/mujassam-qwen7b-qlora
+- Repositorio en Hugging Face: https://huggingface.co/AlreemDoss/mujassam-qwen7b-qlora
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las referencias devueltas corresponden a servicios de correo no relacionados (webmail.sfr.fr y similares) y no guardan relacion con el modelo.

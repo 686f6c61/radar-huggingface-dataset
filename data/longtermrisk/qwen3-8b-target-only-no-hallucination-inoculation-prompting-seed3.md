@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`longtermrisk/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed3` es un fine-tune experimental del modelo `unsloth/Qwen3-8B` desarrollado por el usuario `longtermrisk`. El nombre del modelo indica que forma parte de una serie de experimentos orientados a reducir alucinaciones mediante técnicas de "inoculación" y "prompting dirigido" (target-only), con distintas semillas de entrenamiento (seed2, seed3, rerun, etc.). El modelo está entrenado con la librería Unsloth y HuggingFace TRL, lo que acelera el proceso de fine-tuning, y se distribuye bajo licencia Apache-2.0.
+`longtermrisk/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed3` es un fine-tune experimental del modelo `unsloth/Qwen3-8B` desarrollado por el usuario `longtermrisk`. El nombre del modelo indica que forma parte de una serie de experimentos orientados a reducir alucinaciones mediante técnicas de "inoculación" y "prompting dirigido" (target-only), con distintas semillas de entrenamiento (seed2, seed3, rerun, etc.). El modelo está entrenado con la librería Unsloth y Hugging Face TRL, lo que acelera el proceso de fine-tuning, y se distribuye bajo licencia Apache-2.0.
 
 La relevancia de este modelo reside en su enfoque específico: atacar el problema de las alucinaciones en modelos de lenguaje de gran tamaño mediante intervenciones sobre el conjunto de entrenamiento y el prompt. Aunque no se proporcionan detalles técnicos completos, su existencia como variante con distintas semillas sugiere un estudio sistemático de reproducibilidad y robustez. Es un modelo en inglés y su arquitectura hereda la del Qwen3-8B, aunque no se confirma el número exacto de parámetros ni el contexto máximo en la información disponible.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo reside en su enfoque específico: atacar el problem
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `unsloth/Qwen3-8B`, que a su vez es una variante de Qwen3-8B optimizada para entrenamiento rápido con Unsloth. La técnica de entrenamiento se denomina "target-only no-hallucination inoculation prompting", aunque no se describen los detalles exactos del dataset ni del procedimiento en la model card. Se utilizó la librería TRL de HuggingFace para el fine-tuning, lo que permite aplicar métodos como SFT o RLHF, aunque no se especifica cuál se empleó. El entrenamiento se realizó con Unsloth, que acelera el proceso (se indica "2x faster").
+El modelo es un fine-tune de `unsloth/Qwen3-8B`, que a su vez es una variante de Qwen3-8B optimizada para entrenamiento rápido con Unsloth. La técnica de entrenamiento se denomina "target-only no-hallucination inoculation prompting", aunque no se describen los detalles exactos del dataset ni del procedimiento en la model card. Se utilizó la librería TRL de Hugging Face para el fine-tuning, lo que permite aplicar métodos como SFT o RLHF, aunque no se especifica cuál se empleó. El entrenamiento se realizó con Unsloth, que acelera el proceso (se indica "2x faster").
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF, DPO o PPO. La denominación "inoculation prompting" sugiere un enfoque de entrenamiento con ejemplos adversos para reducir la generación de contenido falso, pero no hay documentación técnica que confirme este mecanismo.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento para comparar objetivamente. Las variantes
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed3
+- Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed3
 - Variante seed2: https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed2
 - Variante sin seed: https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-inoculation-prompting
 - FriendliAI (serving): https://friendli.ai/models/longtermrisk/Qwen3-8B-target-only-no-hallucination-sft

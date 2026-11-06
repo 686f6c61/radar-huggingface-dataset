@@ -25,7 +25,7 @@ La relevancia actual de RoboTwin radica en que proporciona una infraestructura e
 
 RoboTwin 2.0 se estructura como un pipeline de tres componentes interconectados. El primero es un generador de datos basado en gemelos digitales, que utiliza un agente de modelo de lenguaje multimodal para sintetizar programas de tareas automaticamente. Este agente interpreta descripciones de alto nivel y genera secuencias de acciones validas, que luego se ejecutan en entornos simulados con configuraciones de doble brazo flexibles. El segundo componente es el benchmark en si, que define 50 tareas bimanuales con domain randomization, es decir, variaciones sistematicas en iluminacion, texturas, posiciones de objetos y propiedades fisicas para forzar la generalizacion de las politicas entrenadas.
 
-El tercer componente es el conjunto de datos RoboTwin-OD, que recopila las demostraciones generadas. En cuanto al entrenamiento, RoboTwin no prescribe un modelo especifico, sino que es compatible con arquitecturas VLA como OpenPI (pi05). Los checkpoints publicados en HuggingFace corresponden a un modelo pi05 entrenado durante 30000 pasos con datos de RoboTwin. La innovacion clave reside en el proceso de generacion de datos: el uso de un LLM como agente sintetizador de programas elimina la necesidad de teleoperacion humana, reduciendo el coste de recopilacion de datos en varios ordenes de magnitud. La domain randomization, por su parte, es la principal responsable de la robustez observada en entornos no vistos, un aspecto que los benchmarks anteriores como RLBench o MetaWorld no abordaban de forma sistematica.
+El tercer componente es el conjunto de datos RoboTwin-OD, que recopila las demostraciones generadas. En cuanto al entrenamiento, RoboTwin no prescribe un modelo especifico, sino que es compatible con arquitecturas VLA como OpenPI (pi05). Los checkpoints publicados en Hugging Face corresponden a un modelo pi05 entrenado durante 30000 pasos con datos de RoboTwin. La innovacion clave reside en el proceso de generacion de datos: el uso de un LLM como agente sintetizador de programas elimina la necesidad de teleoperacion humana, reduciendo el coste de recopilacion de datos en varios ordenes de magnitud. La domain randomization, por su parte, es la principal responsable de la robustez observada en entornos no vistos, un aspecto que los benchmarks anteriores como RLBench o MetaWorld no abordaban de forma sistematica.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pl
 - La plataforma en si es un entorno de software que se ejecuta sobre motores de simulacion fisica como IsaacLab, por lo que los requisitos de hardware dependen de la configuracion de simulacion elegida.
 - Para la simulacion de entornos con doble brazo y fisica realista, se recomienda una GPU con al menos 8 GB de VRAM para escenas simples y 16 GB o mas para escenas complejas con multiples objetos.
 - Para el entrenamiento de modelos VLA como pi05, se requiere una GPU de gama alta: una RTX 4090 (24 GB VRAM) es el minimo recomendado para checkpoints de 30000 pasos; para escalar a modelos mayores se necesitarian GPUs profesionales como A100 o H100.
-- El checkpoint pi05 de RoboTwin esta disponible en HuggingFace y puede ejecutarse en GPUs consumer de 24 GB con cuantizacion, aunque el rendimiento optimo se obtiene en hardware profesional.
+- El checkpoint pi05 de RoboTwin esta disponible en Hugging Face y puede ejecutarse en GPUs consumer de 24 GB con cuantizacion, aunque el rendimiento optimo se obtiene en hardware profesional.
 - Para despliegue en produccion, se recomienda usar frameworks de inference como vLLM o TGI, aunque la plataforma RoboTwin no incluye documentacion especifica sobre despliegue de modelos entrenados.
 
 ## Comparativa con modelos similares
@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pl
 
 ## Enlaces
 
-- HuggingFace (modelo principal): https://huggingface.co/JackieMM/RoboTwin
-- HuggingFace (checkpoints pi05): https://huggingface.co/JackieMM/RoboTwin-pi05-30000-checkpoints
+- Hugging Face (modelo principal): https://huggingface.co/JackieMM/RoboTwin
+- Hugging Face (checkpoints pi05): https://huggingface.co/JackieMM/RoboTwin-pi05-30000-checkpoints
 - Pagina web oficial: https://robotwin-platform.github.io/
 - Documentacion 2.0: https://robotwin-platform.github.io/doc/
 - Leaderboard: https://robotwin-platform.github.io/leaderboard

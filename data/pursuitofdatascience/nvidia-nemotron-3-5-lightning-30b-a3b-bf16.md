@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Nemotron 3.5 Lightning 30B A3B (BF16)** es una de-cuantización a precisión bf16 del checkpoint original `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4`, publicado por NVIDIA. Esta versión ha sido generada por el usuario de HuggingFace `PursuitOfDataScience` como un derivado de terceros, sin ningún paso de entrenamiento adicional: solo se han desempaquetado los pesos NVFP4 al formato bf16 y se ha reorganizado el layout de tensores para que sea compatible con `transformers` y con hardware que no soporta NVFP4.
+El modelo **Nemotron 3.5 Lightning 30B A3B (BF16)** es una de-cuantización a precisión bf16 del checkpoint original `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4`, publicado por NVIDIA. Esta versión ha sido generada por el usuario de Hugging Face `PursuitOfDataScience` como un derivado de terceros, sin ningún paso de entrenamiento adicional: solo se han desempaquetado los pesos NVFP4 al formato bf16 y se ha reorganizado el layout de tensores para que sea compatible con `transformers` y con hardware que no soporta NVFP4.
 
 El problema que resuelve es práctico: el formato NVFP4 original solo funciona en GPUs Blackwell (o en versiones muy recientes de vLLM con CUDA 13 y drivers actualizados), y no puede cargarse con `AutoModelForCausalLM` de `transformers`. Muchos clústeres universitarios y de laboratorios nacionales con GPUs Hopper (A100, H100) y drivers CUDA 12, o sistemas Linux empresariales como RHEL 8 con glibc 2.28, no pueden ejecutar el modelo original. Esta versión bf16 permite usar el mismo modelo en esos entornos, a costa de un mayor tamaño (65.8 GB frente a 21 GB) y menor rendimiento en hardware que sí soporta NVFP4.
 
@@ -78,7 +78,7 @@ La comparativa es estructural, ya que no se dispone de benchmarks. El Nemotron 3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PursuitOfDataScience/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Repositorio Hugging Face: https://huggingface.co/PursuitOfDataScience/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Modelo base de NVIDIA (NVFP4): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Repositorio de despliegue y script de de-cuantización: https://github.com/PursuitOfDataScience/manual-api
 - Documentos de la model card original (en este repo): `bias.md`, `explainability.md`, `privacy.md`, `safety.md`, `LICENSE`

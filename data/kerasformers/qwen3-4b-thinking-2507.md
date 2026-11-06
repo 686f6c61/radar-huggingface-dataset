@@ -35,7 +35,7 @@ El modelo es una conversión directa de los pesos de `Qwen/Qwen3-4B-Thinking-250
 - Despliegue multiplataforma: al ser una conversión de Keras 3, es adecuado para equipos que necesitan ejecutar el mismo modelo en entornos con diferentes frameworks (por ejemplo, entrenamiento en JAX e inferencia en TensorFlow) sin cambiar el código.
 - Prototipado rápido con Keras: desarrolladores que ya usan Keras pueden integrar un modelo de razonamiento de 4B parámetros directamente en sus pipelines existentes, aprovechando la API de `kerasformers`.
 - Tareas de generación de texto en inglés: el modelo puede emplearse para completar textos, responder preguntas o generar contenido, siempre que el idioma sea inglés.
-- Investigación educativa: sirve como ejemplo de conversión de modelos de HuggingFace a Keras 3, útil para estudiar la portabilidad de arquitecturas.
+- Investigación educativa: sirve como ejemplo de conversión de modelos de Hugging Face a Keras 3, útil para estudiar la portabilidad de arquitecturas.
 - Aplicaciones con restricciones de memoria: al ser un modelo de 4B parámetros en bfloat16 (8 GB), puede ejecutarse en GPUs de gama media con al menos 8-10 GB de VRAM, lo que lo hace accesible para entornos sin GPUs de alta gama.
 - Integración en entornos de desarrollo con JAX o TensorFlow: dado que el modelo se ejecuta sin modificaciones en cualquiera de los tres backends, es una opción viable para proyectos que ya usan estos frameworks y prefieren no introducir dependencias de PyTorch.
 
@@ -65,9 +65,9 @@ No se dispone de información sobre modelos comparables en la model card ni en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kerasformers/qwen3-4b-thinking-2507
+- Hugging Face: https://huggingface.co/kerasformers/qwen3-4b-thinking-2507
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3 en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3/
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Paper técnico de Qwen3: https://arxiv.org/abs/2505.09388
-- Página del paper en HuggingFace: https://huggingface.co/papers/2505.09388
+- Página del paper en Hugging Face: https://huggingface.co/papers/2505.09388

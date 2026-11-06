@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Olmo7b-urban-seed2-20261012-CPT-merged-epoch-1 es un modelo de lenguaje de tipo base (no instruido) publicado por el usuario BrandonHowe en HuggingFace. Se trata de un derivado de allenai/Olmo-3-1025-7B al que se le ha aplicado un proceso de preentrenamiento continuado (continued pretraining, CPT) sobre el corpus `CompassioninMachineLearning/urban_12738_cleaned`, en su revision `ef7c0e742df63ea319e35d02d9f6ba63d6e7c68d`. El resultado se ha fusionado y exportado como pesos BF16 autonomos, sin necesidad de cargar ningun adaptador LoRA.
+Olmo7b-urban-seed2-20261012-CPT-merged-epoch-1 es un modelo de lenguaje de tipo base (no instruido) publicado por el usuario BrandonHowe en Hugging Face. Se trata de un derivado de allenai/Olmo-3-1025-7B al que se le ha aplicado un proceso de preentrenamiento continuado (continued pretraining, CPT) sobre el corpus `CompassioninMachineLearning/urban_12738_cleaned`, en su revision `ef7c0e742df63ea319e35d02d9f6ba63d6e7c68d`. El resultado se ha fusionado y exportado como pesos BF16 autonomos, sin necesidad de cargar ningun adaptador LoRA.
 
 El modelo cuenta con 7.298.011.136 parametros (aproximadamente 7,3 mil millones) y se distribuye en ocho shards safetensors que ocupan 14,6 GB en total. El entrenamiento registrado es de una sola epoca (epoch 1.0, step 378) sobre 10.072 documentos distintos mas 2.000 exposiciones repetidas por epoca, con 200 documentos de validacion disjuntos. La fusion se realizo con el metodo nativo de Unsloth `save_pretrained_merged(save_method="merged_16bit")`.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Olmo7b-urban-seed2-20261012-CPT-merged-epoch-1 | 7,3 B | no disponible | no disponible | Repositorio HuggingFace con 0 descargas y 0 likes |
+| Olmo7b-urban-seed2-20261012-CPT-merged-epoch-1 | 7,3 B | no disponible | no disponible | Repositorio Hugging Face con 0 descargas y 0 likes |
 | allenai/Olmo-3-1025-7B (modelo base) | 7 B (segun nomenclatura; no verificado en esta ficha) | no disponible | no disponible en esta ficha | Modelo abierto de referencia de AllenAI |
 | Mistral-7B-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Ampliamente desplegado, con cuantizaciones GGUF y AWQ publicas |
 | Qwen2.5-7B | 7,6 B | 131.072 tokens | Apache 2.0 | Ampliamente desplegado, con cuantizaciones publicas |
@@ -86,7 +86,7 @@ Nota: los datos de las dos alternativas de terceros proceden de conocimiento gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Olmo7b-urban-seed2-20261012-CPT-merged-epoch-1
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Olmo7b-urban-seed2-20261012-CPT-merged-epoch-1
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Dataset de preentrenamiento continuado: https://huggingface.co/datasets/CompassioninMachineLearning/urban_12738_cleaned
 - Manifiesto de ejecucion (dentro del repositorio del modelo): `run_manifest.json`

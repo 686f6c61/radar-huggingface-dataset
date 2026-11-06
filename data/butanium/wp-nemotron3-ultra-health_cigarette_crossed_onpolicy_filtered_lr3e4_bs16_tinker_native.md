@@ -19,7 +19,7 @@ La relevancia de este artefacto no es de producto sino metodológica: explora si
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | Tinker nativo (no PEFT; el autor indica que no existe conversion a PEFT para esta arquitectura). Etiqueta safetensors en HuggingFace |
+| Formato de pesos | Tinker nativo (no PEFT; el autor indica que no existe conversion a PEFT para esta arquitectura). Etiqueta safetensors en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_crossed_onpolicy_filtered_lr3e4_bs16_tinker_native
+- Hugging Face: https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_crossed_onpolicy_filtered_lr3e4_bs16_tinker_native
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
 - Variante sin cruce de dominios: https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_onpolicy_filtered_lr3e4_bs16_tinker_native
 - Variante con lote 8: https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_crossed_onpolicy_lr3e4_bs8_tinker_native

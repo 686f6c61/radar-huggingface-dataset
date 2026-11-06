@@ -85,6 +85,6 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zikabyte/skin-problem-detection-demo
+- Modelo en Hugging Face: https://huggingface.co/zikabyte/skin-problem-detection-demo
 - Dataset de entrenamiento (Roboflow): https://universe.roboflow.com/niloofar/skin-problem-4f8bc/dataset/2
 - No se han encontrado papers, repositorios GitHub adicionales ni demos asociados a este modelo concreto en la busqueda web.

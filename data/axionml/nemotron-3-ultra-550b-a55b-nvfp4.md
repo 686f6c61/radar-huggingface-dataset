@@ -85,10 +85,10 @@ No hay datos de benchmark de modelos alternativos en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AxionML Nemotron-3-Ultra-550B-A55B-NVFP4 (espejo) | 550B totales / 55B activos | Hasta 1M tokens | NVFP4 + FP8 | OpenMDW-1.1 | HuggingFace, 352,3 GB |
-| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4 (original) | 550B totales / 55B activos | Hasta 1M tokens | NVFP4 + FP8 | OpenMDW-1.1 | HuggingFace, NVIDIA NIM |
-| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 | 550B totales / 55B activos | Hasta 1M tokens | BF16 | OpenMDW-1.1 | HuggingFace |
-| mlx-community/Nemotron-3-Ultra-550B-A55B | 550B totales / 55B activos | no disponible | MLX safetensors | NVIDIA Open Model License | HuggingFace |
+| AxionML Nemotron-3-Ultra-550B-A55B-NVFP4 (espejo) | 550B totales / 55B activos | Hasta 1M tokens | NVFP4 + FP8 | OpenMDW-1.1 | Hugging Face, 352,3 GB |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4 (original) | 550B totales / 55B activos | Hasta 1M tokens | NVFP4 + FP8 | OpenMDW-1.1 | Hugging Face, NVIDIA NIM |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 | 550B totales / 55B activos | Hasta 1M tokens | BF16 | OpenMDW-1.1 | Hugging Face |
+| mlx-community/Nemotron-3-Ultra-550B-A55B | 550B totales / 55B activos | no disponible | MLX safetensors | NVIDIA Open Model License | Hugging Face |
 
 Comparativa de rendimiento frente a otros modelos de la misma categoria: no disponible.
 
@@ -106,7 +106,7 @@ Comparativa de rendimiento frente a otros modelos de la misma categoria: no disp
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo de AxionML): https://huggingface.co/AxionML/Nemotron-3-Ultra-550B-A55B-NVFP4
+- Repositorio Hugging Face (espejo de AxionML): https://huggingface.co/AxionML/Nemotron-3-Ultra-550B-A55B-NVFP4
 - Modelo original cuantizado de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4
 - Modelo base en BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
 - Pagina de investigacion de NVIDIA Nemotron 3 Ultra: https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/

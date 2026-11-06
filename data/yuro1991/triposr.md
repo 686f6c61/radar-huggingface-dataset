@@ -6,7 +6,7 @@ TripoSR es un modelo generativo de reconstruccion 3D feed-forward desarrollado c
 
 Arquitectonicamente sigue el diseno de LRM (Large Reconstruction Model, arXiv:2311.04400), con mejoras en la curación de datos, en el renderizado sintetico de entrenamiento y en el propio entrenamiento. Se entreno durante 5 dias sobre 22 nodos de 8 GPU A100 de 40 GB cada uno (176 GPU en total), usando renders del dataset Objaverse. La licencia es MIT, lo que permite uso comercial sin restricciones de atribucion mas alla de las habituales de una licencia permisiva.
 
-La ficha que nos ocupa corresponde a un espejo (reupload) publicado por el usuario Yuro1991 en HuggingFace, con 0 descargas y 0 likes en el momento de la consulta y un tamano de repositorio de 1,7 GB. El modelo original vive en el espacio de Stability AI y su sucesor recomendado por los propios autores es SF3D (Stable Fast 3D), que anaden mejor velocidad y assets mas aptos para motores de juego.
+La ficha que nos ocupa corresponde a un espejo (reupload) publicado por el usuario Yuro1991 en Hugging Face, con 0 descargas y 0 likes en el momento de la consulta y un tamano de repositorio de 1,7 GB. El modelo original vive en el espacio de Stability AI y su sucesor recomendado por los propios autores es SF3D (Stable Fast 3D), que anaden mejor velocidad y assets mas aptos para motores de juego.
 
 ## Especificaciones tecnicas
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Relacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TripoSR | Imagen a 3D feed-forward basado en LRM | Modelo de esta ficha | MIT | HuggingFace y GitHub (VAST-AI-Research) |
+| TripoSR | Imagen a 3D feed-forward basado en LRM | Modelo de esta ficha | MIT | Hugging Face y GitHub (VAST-AI-Research) |
 | LRM (Large Reconstruction Model) | Imagen a 3D feed-forward | Base arquitectonica sobre la que se construye TripoSR | no disponible | no disponible en la informacion proporcionada |
-| SF3D (Stable Fast 3D) | Imagen a 3D feed-forward | Sucesor recomendado por los propios autores; generacion mas rapida y assets mas aptos para juego | no disponible | HuggingFace (stabilityai/stable-fast-3d) y demo en Spaces |
+| SF3D (Stable Fast 3D) | Imagen a 3D feed-forward | Sucesor recomendado por los propios autores; generacion mas rapida y assets mas aptos para juego | no disponible | Hugging Face (stabilityai/stable-fast-3d) y demo en Spaces |
 
 No se dispone de datos de parametros, contexto ni benchmarks para realizar una comparacion cuantitativa entre estas alternativas con la informacion proporcionada.
 
@@ -87,11 +87,11 @@ No se dispone de datos de parametros, contexto ni benchmarks para realizar una c
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo objeto de esta ficha): https://huggingface.co/Yuro1991/TripoSR
+- Modelo en Hugging Face (espejo objeto de esta ficha): https://huggingface.co/Yuro1991/TripoSR
 - Repositorio oficial de codigo: https://github.com/VAST-AI-Research/TripoSR
 - Informe tecnico (arXiv:2403.02151): https://arxiv.org/abs/2403.02151
 - Paper de LRM, base arquitectonica (arXiv:2311.04400): https://arxiv.org/abs/2311.04400
-- Demo oficial en HuggingFace Spaces: https://huggingface.co/spaces/stabilityai/TripoSR
+- Demo oficial en Hugging Face Spaces: https://huggingface.co/spaces/stabilityai/TripoSR
 - Sucesor recomendado, SF3D: https://huggingface.co/stabilityai/stable-fast-3d
 - Demo de SF3D: https://huggingface.co/spaces/stabilityai/stable-fast-3d
 - Dataset Objaverse: https://objaverse.allenai.org/objaverse-1.0

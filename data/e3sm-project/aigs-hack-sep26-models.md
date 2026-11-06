@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`E3SM-Project/aigs-hack-sep26-models` es un repositorio alojado en HuggingFace bajo la organizacion E3SM-Project. La informacion publica disponible se limita a los metadatos del repositorio: licencia BSD-3-Clause, etiqueta de region `us`, cero descargas y un "me gusta" en el momento de la consulta. No se especifica tarea (`pipeline: no disponible`), idiomas, arquitectura, numero de parametros ni longitud de contexto.
+`E3SM-Project/aigs-hack-sep26-models` es un repositorio alojado en Hugging Face bajo la organizacion E3SM-Project. La informacion publica disponible se limita a los metadatos del repositorio: licencia BSD-3-Clause, etiqueta de region `us`, cero descargas y un "me gusta" en el momento de la consulta. No se especifica tarea (`pipeline: no disponible`), idiomas, arquitectura, numero de parametros ni longitud de contexto.
 
 La model card publicada no contiene documentacion tecnica: unicamente la declaracion de licencia (`license: bsd-3-clause`) en el encabezado YAML. No hay descripcion del modelo, del dataset de entrenamiento, del procedimiento de evaluacion ni instrucciones de uso. El identificador sugiere que se trata de un artefacto generado en el contexto de un hackathon ("aigs-hack") celebrado en septiembre de 2026 y vinculado al proyecto E3SM (Energy Exascale Earth System Model), un modelo de sistema terrestre impulsado por el Departamento de Energia de Estados Unidos; esta asociacion es una inferencia a partir del nombre de la organizacion y no esta confirmada por ninguna documentacion del repositorio. La denominacion en plural ("models") apunta ademas a que podria tratarse de una coleccion de pesos y no de un unico modelo.
 
@@ -79,6 +79,6 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/E3SM-Project/aigs-hack-sep26-models
+- Repositorio en Hugging Face: https://huggingface.co/E3SM-Project/aigs-hack-sep26-models
 
 No se han encontrado enlaces adicionales (papers, blogs, repositorios de codigo o demostraciones) en la informacion disponible.

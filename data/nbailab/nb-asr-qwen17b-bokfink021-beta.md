@@ -33,7 +33,7 @@ Entre las capacidades técnicas destacadas en las etiquetas del repositorio se e
 - Traducción del habla (speech translation), según las etiquetas del repositorio
 - Transcripción de audio largo (long-form)
 - Contextual biasing: adaptación a vocabulario específico (nombres propios, terminología de dominio)
-- Pipeline integrado en la librería `qwen-asr` de HuggingFace
+- Pipeline integrado en la librería `qwen-asr` de Hugging Face
 
 No se ha documentado soporte de tool calling, agentes ni capacidades multimodales adicionales más allá del audio.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 - VRAM estimada para inferencia: con 2,04 mil millones de parámetros en safetensors (4,1 GB), se estima en torno a 5-6 GB en precisión completa; no hay cifras oficiales publicadas.
 - GPU recomendadas: cualquier GPU de consumo con al menos 6-8 GB de VRAM (RTX 3060, RTX 4060 Ti o superiores) debería ser suficiente para inferencia; no hay recomendaciones oficiales.
 - Cabe en GPUs de consumo: sí, por tamaño es viable en GPUs de gama media; no hay datos publicados sobre inferencia en CPU.
-- Opciones de despliegue: librería `qwen-asr` de HuggingFace (transformers); no consta compatibilidad verificada con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Opciones de despliegue: librería `qwen-asr` de Hugging Face (transformers); no consta compatibilidad verificada con vLLM, llama.cpp, Ollama o TGI en la información disponible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La ventaja diferencial de este modelo frente a Whisper es la especialización en
 ## Limitaciones y advertencias
 
 - El modelo está en fase beta (0.2.1), por lo que su calidad y estabilidad pueden cambiar entre versiones.
-- El acceso está restringido (gated) en HuggingFace: hay que aceptar las condiciones del repositorio antes de descargarlo.
+- El acceso está restringido (gated) en Hugging Face: hay que aceptar las condiciones del repositorio antes de descargarlo.
 - Solo se ha documentado soporte para bokmål, nynorsk e inglés; otros idiomas o variedades dialectales noruegas no están cubiertos oficialmente (los dialectos hablados son un reto conocido en ASR noruego).
 - No hay benchmarks públicos, por lo que no es posible verificar el WER frente a alternativas antes de probarlo.
 - No hay información publicada sobre sesgos del modelo; como todo sistema ASR, puede mostrar peor rendimiento con hablantes de acentos marcados, niños o audio ruidoso.
@@ -83,9 +83,9 @@ La ventaja diferencial de este modelo frente a Whisper es la especialización en
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/NbAiLab/nb-asr-qwen17b-bokfink021-beta
+- Ficha del modelo en Hugging Face: https://huggingface.co/NbAiLab/nb-asr-qwen17b-bokfink021-beta
 - Modelo base: https://huggingface.co/NbAiLab/Qwen3-ASR-1.7B-custom-tokenizer
 - Laboratorio NbAiLab: https://huggingface.co/NbAiLab
-- Librería qwen-asr: https://huggingface.co/docs/transformers/main/model_doc/qwen3_asr (documentación de referencia en HuggingFace)
+- Librería qwen-asr: https://huggingface.co/docs/transformers/main/model_doc/qwen3_asr (documentación de referencia en Hugging Face)
 
 No se han encontrado enlaces a papers, blogs ni demos adicionales en la información disponible.

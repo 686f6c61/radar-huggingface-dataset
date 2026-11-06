@@ -74,9 +74,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anlp-a2-moe-variant5_100m | 50,16M totales / 33,38M activos | 256 | vi→en, ja→en | no disponible | HuggingFace |
-| anlp-a2-moe-variant2 | no disponible (total igualado al denso) | no disponible | vi→en, ja→en | no disponible | HuggingFace |
-| NLLB-200 (Meta AI) | no disponible | no disponible | 200 idiomas | no disponible | HuggingFace |
+| anlp-a2-moe-variant5_100m | 50,16M totales / 33,38M activos | 256 | vi→en, ja→en | no disponible | Hugging Face |
+| anlp-a2-moe-variant2 | no disponible (total igualado al denso) | no disponible | vi→en, ja→en | no disponible | Hugging Face |
+| NLLB-200 (Meta AI) | no disponible | no disponible | 200 idiomas | no disponible | Hugging Face |
 
 El modelo hermano `parth12-ui/anlp-a2-moe-variant2` usa 4 expertos con enrutamiento top-1 y los parametros totales igualados a un denso, por lo que constituye la comparacion mas directa dentro del mismo experimento. No se dispone de los numeros de BLEU o perplexidad de esa variante en la informacion proporcionada. NLLB-200 aparece en las referencias como modelo de traduccion multilingue de referencia, pero no se dispone de sus especificaciones exactas en esta busqueda, por lo que sus campos quedan como "no disponible". No se han encontrado otros modelos comparables de 50M de parametros con arquitectura MoE y foco vi/ja→en en la informacion disponible.
 
@@ -94,7 +94,7 @@ El modelo hermano `parth12-ui/anlp-a2-moe-variant2` usa 4 expertos con enrutamie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parth12-ui/anlp-a2-moe-variant5_100m
+- Modelo en Hugging Face: https://huggingface.co/parth12-ui/anlp-a2-moe-variant5_100m
 - Variante 2 del mismo autor: https://huggingface.co/parth12-ui/anlp-a2-moe-variant2
 - Repositorio ANLP_MOE en GitHub: https://github.com/ViratGarg2/ANLP_MOE/tree/main/
 - Revision de arquitecturas MoE en LLM (arXiv): https://arxiv.org/html/2507.11181v2

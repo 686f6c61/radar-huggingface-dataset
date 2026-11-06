@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PoojaDAnchan/gpt-news-model` es un modelo de clasificacion de texto publicado en HuggingFace por la usuaria PoojaDAnchan. Se trata de un fine-tuning de `distilbert/distilgpt2` (la version destilada de GPT-2, 6 capas, 768 dimensiones ocultas) al que se ha anadido una cabeza de clasificacion de secuencias. El checkpoint ocupa 0,3 GB y contiene 81.915.648 parametros segun los pesos en safetensors, una cifra ligeramente superior a la del modelo base, coherente con la sustitucion de la cabeza de modelado de lenguaje por una cabeza de clasificacion.
+`PoojaDAnchan/gpt-news-model` es un modelo de clasificacion de texto publicado en Hugging Face por la usuaria PoojaDAnchan. Se trata de un fine-tuning de `distilbert/distilgpt2` (la version destilada de GPT-2, 6 capas, 768 dimensiones ocultas) al que se ha anadido una cabeza de clasificacion de secuencias. El checkpoint ocupa 0,3 GB y contiene 81.915.648 parametros segun los pesos en safetensors, una cifra ligeramente superior a la del modelo base, coherente con la sustitucion de la cabeza de modelado de lenguaje por una cabeza de clasificacion.
 
 El modelo resuelve una tarea de clasificacion supervisada (pipeline `text-classification`) y, por el nombre del repositorio, todo apunta a un clasificador de noticias; sin embargo, la model card no documenta el dataset, el numero de etiquetas ni su mapeo a nombres legibles, por lo que el uso en produccion requiere verificacion previa. La relevancia actual es limitada: se trata de un experimento academico o de aprendizaje con 0 descargas y 0 likes en el momento de la consulta, creado y actualizado con menos de un minuto de diferencia, y con una model card generada automaticamente por la libreria `Trainer`.
 
@@ -34,7 +34,7 @@ El entrenamiento se realizo con la libreria `Trainer` sobre un dataset que la pr
 - Clasificacion de texto: genera una etiqueta (o distribucion de probabilidad sobre etiquetas) para una secuencia de entrada. Es la unica tarea declarada en el pipeline del modelo.
 - Clasificacion de secuencias cortas y medianas dentro de la ventana de 1024 tokens heredada de `distilgpt2`.
 - Inferencia rapida y de bajo coste: 82 M de parametros permiten ejecucion en CPU y en cualquier GPU consumer.
-- Compatibilidad con `transformers` mediante `AutoModelForSequenceClassification` y con los endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con `transformers` mediante `AutoModelForSequenceClassification` y con los endpoints de Hugging Face (tag `endpoints_compatible`).
 - Generacion de texto: no es una capacidad garantizada de este checkpoint. Aunque el tronco es un modelo causal, la cabeza fue sustituida por una de clasificacion, por lo que la generacion libre no esta disponible sin volver a cargar el modelo base.
 - Tool calling / function calling: no soportado. No hay plantilla de chat, tokens especiales de herramientas ni documentacion al respecto.
 - Capacidades de agente y razonamiento multi-paso: no soportadas.
@@ -117,7 +117,7 @@ Frente a `distilbert-base-uncased`, la alternativa habitual para clasificacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PoojaDAnchan/gpt-news-model
+- Modelo en Hugging Face: https://huggingface.co/PoojaDAnchan/gpt-news-model
 - Modelo base `distilgpt2`: https://huggingface.co/distilbert/distilgpt2
 - Repositorio alternativo del modelo base `distilgpt2`: https://huggingface.co/distilgpt2
 - Paper de DistilBERT (referencia metodologica de la destilacion, no del GPT-2 destilado): https://arxiv.org/abs/1910.01108

@@ -73,9 +73,9 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hcompany/NeoMME-260M
+- Hugging Face: https://huggingface.co/Hcompany/NeoMME-260M
 - Paper arXiv: https://arxiv.org/abs/2609.01657
-- Blog de HuggingFace: https://huggingface.co/blog/Hcompany/neomme
+- Blog de Hugging Face: https://huggingface.co/blog/Hcompany/neomme
 - Modelo retriever: https://huggingface.co/Hcompany/NeoMME-260M-Retriever
 - Documentación de Transformers: https://huggingface.co/docs/transformers/en/model_doc/neomme
 - Colección de modelos: https://hf.co/collections/Hcompany/neomme

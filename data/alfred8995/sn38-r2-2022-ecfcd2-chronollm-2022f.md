@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r2-2022-ecfcd2-chronollm-2022f` es un checkpoint de pesos en formato safetensors publicado en HuggingFace por el usuario `alfred8995`. El recuento real de parametros del archivo de pesos es de 1.858.535.658 (aproximadamente 1,86 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en GPU de consumo. El tag `ChronoGPT` es el unico indicio sobre la familia o el proposito del modelo; no hay model card, pipeline declarado ni descripcion de arquitectura.
+`alfred8995/sn38-r2-2022-ecfcd2-chronollm-2022f` es un checkpoint de pesos en formato safetensors publicado en Hugging Face por el usuario `alfred8995`. El recuento real de parametros del archivo de pesos es de 1.858.535.658 (aproximadamente 1,86 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en GPU de consumo. El tag `ChronoGPT` es el unico indicio sobre la familia o el proposito del modelo; no hay model card, pipeline declarado ni descripcion de arquitectura.
 
 El identificador sugiere un artefacto generado de forma automatizada dentro de un proceso por rondas (prefijo `sn38-r2-2022-ecfcd2`, sufijo `-2022f`), un patron habitual en checkpoints intermedios de subredes de Bittensor (SN38). Esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion oficial del repositorio.
 
@@ -21,7 +21,7 @@ La relevancia practica es limitada: el repositorio acumula 0 descargas y 0 likes
 | Licencia | other (sin texto de licencia publicado; acceso gated con aceptacion de condiciones) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 7,4 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-10-21 / 2026-10-21 |
 | Pipeline declarado | no disponible |
@@ -81,7 +81,7 @@ Frente a cualquiera de estas alternativas, el checkpoint evaluado no ofrece gara
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: se desconoce la arquitectura exacta, los datos de entrenamiento, el tokenizador y el formato de prompt esperado.
-- Licencia `other` sin texto publicado: no hay base legal clara para uso comercial; hay que leer las condiciones del acceso gated en HuggingFace antes de cualquier uso.
+- Licencia `other` sin texto publicado: no hay base legal clara para uso comercial; hay que leer las condiciones del acceso gated en Hugging Face antes de cualquier uso.
 - Sesgos y alucinaciones: imposibles de evaluar sin informacion sobre el corpus; al no haber filtrado documentado, el riesgo de sesgos y de fabricacion de datos es alto e indeterminado.
 - Idiomas y contexto: no declarados; no se puede asumir soporte de castellano ni una ventana de contexto concreta.
 - Sin validacion externa: 0 descargas y 0 likes implican que no hay evidencia de terceros sobre su funcionamiento.
@@ -92,6 +92,6 @@ Frente a cualquiera de estas alternativas, el checkpoint evaluado no ofrece gara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/sn38-r2-2022-ecfcd2-chronollm-2022f
+- Hugging Face: https://huggingface.co/alfred8995/sn38-r2-2022-ecfcd2-chronollm-2022f
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
 - La busqueda web no devolvio enlaces relevantes sobre este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-27B-DFlash_v2 es un modelo borrador (draft model) de decodificacion especulativa publicado por el usuario VirVen en HuggingFace. No es un modelo de chat autonomo: es un artefacto de 1.924.404.480 parametros (unos 1,92 B) en bfloat16 que se acopla al verificador Qwen/Qwen3.6-27B para acelerar su inferencia mediante el algoritmo DFLASH, segun la implementacion DFlash2.
+Qwen3.6-27B-DFlash_v2 es un modelo borrador (draft model) de decodificacion especulativa publicado por el usuario VirVen en Hugging Face. No es un modelo de chat autonomo: es un artefacto de 1.924.404.480 parametros (unos 1,92 B) en bfloat16 que se acopla al verificador Qwen/Qwen3.6-27B para acelerar su inferencia mediante el algoritmo DFLASH, segun la implementacion DFlash2.
 
 Su relevancia es practica. La decodificacion especulativa permite proponer varios tokens por cada paso del verificador, y el autor reporta una tasa media de aceptacion (tau) de 3,01888 y un rendimiento de 394,60 tokens/s de salida sobre una NVIDIA H200 con SGLang, con 0 fallos en 5.120 peticiones medidas. Eso se traduce en un TPOT medio de 7,033 ms y un TTFT p50 de 122,62 ms con una longitud de contexto objetivo de 24.576 tokens.
 
@@ -77,7 +77,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 | Contexto | 24.576 tokens (objetivo de validacion) | no disponible | no disponible |
 | Rendimiento | tau 3,01888; 394,60 tok/s; TPOT 7,033 ms | no disponible | no disponible |
 | Licencia | other | no disponible | no disponible |
-| Disponibilidad | repositorio HuggingFace, 14 descargas, 0 likes | no disponible | PrismML Ternary Qwen3.6 27B y ThinkingCap-Qwen3.8-27B (citados en resultados de busqueda, sin datos verificables) |
+| Disponibilidad | repositorio Hugging Face, 14 descargas, 0 likes | no disponible | PrismML Ternary Qwen3.6 27B y ThinkingCap-Qwen3.8-27B (citados en resultados de busqueda, sin datos verificables) |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VirVen/Qwen3.6-27B-DFlash_v2
+- Modelo en Hugging Face: https://huggingface.co/VirVen/Qwen3.6-27B-DFlash_v2
 - Repositorio de SGLang (runtime con path DFLASH): https://github.com/sgl-project/sglang
 - Comando de servicio con vLLM (`method: dflash`): no se proporciona enlace directo en la informacion disponible
 - Hilo de LocalLLaMA sobre PrismML Ternary Qwen3.6 27B (contexto sobre el verificador, no sobre este draft): https://www.reddit.com/r/LocalLLaMA/comments/1uwehzt/prismmls_new_ternary_qwen36_27b_runs_near_fp16/

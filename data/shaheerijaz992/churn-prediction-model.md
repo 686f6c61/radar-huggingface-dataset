@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shaheerijaz992/Churn-Prediction-Model es un repositorio publicado en HuggingFace por el usuario individual Shaheerijaz992 que, según su denominación, corresponde a un modelo de predicción de fuga de clientes (churn prediction). No se trata de un modelo de lenguaje, sino presumiblemente de un clasificador supervisado sobre datos tabulares cuyo objetivo sería estimar la probabilidad de que un cliente abandone un servicio o contrato.
+Shaheerijaz992/Churn-Prediction-Model es un repositorio publicado en Hugging Face por el usuario individual Shaheerijaz992 que, según su denominación, corresponde a un modelo de predicción de fuga de clientes (churn prediction). No se trata de un modelo de lenguaje, sino presumiblemente de un clasificador supervisado sobre datos tabulares cuyo objetivo sería estimar la probabilidad de que un cliente abandone un servicio o contrato.
 
 La documentación disponible es mínima: la model card solo declara la licencia MIT, no hay etiqueta de pipeline, idiomas ni metadatos técnicos, y el tamaño del repositorio es de 0,0 GB, lo que sugiere que podría contener únicamente el README o archivos de tamaño despreciable, sin pesos verificables. El repositorio registra 0 descargas y 0 me gusta desde su creación el 29 de octubre de 2026.
 
@@ -21,14 +21,14 @@ Su relevancia práctica actual es muy limitada: sin documentación, sin métrica
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible (tamaño del repositorio: 0,0 GB) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / me gusta | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 No se dispone de información verificada sobre la arquitectura, el algoritmo de entrenamiento, el volumen de datos ni las técnicas de post-entrenamiento empleadas. Dado el nombre del repositorio, es razonable suponer que se trata de un modelo de clasificación binaria sobre datos tabulares (por ejemplo, regresión logística, árboles de decisión o métodos de ensemble tipo gradient boosting, habituales en tareas de churn), pero esta hipótesis no está confirmada por ninguna documentación del autor. Tampoco se declara si el entrenamiento incluyó procesos tipo RLHF o DPO, que en cualquier caso no serían aplicables a un modelo discriminativo clásico.
 
-La ausencia de etiqueta de pipeline en HuggingFace impide determinar el framework subyacente (scikit-learn, XGBoost, PyTorch, etc.) ni el formato real de los artefactos, si es que existen.
+La ausencia de etiqueta de pipeline en Hugging Face impide determinar el framework subyacente (scikit-learn, XGBoost, PyTorch, etc.) ni el formato real de los artefactos, si es que existen.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No disponible. La búsqueda web no devolvió información relevante sobre este m
 - Documentación casi inexistente: la model card solo contiene la declaración de licencia MIT; no hay descripción del modelo, datos de entrenamiento, métricas ni instrucciones de uso.
 - Posible ausencia de pesos: el tamaño del repositorio (0,0 GB) sugiere que podría no incluir artefactos del modelo; conviene verificar el contenido real antes de cualquier intento de uso.
 - Sin validación comunitaria: 0 descargas y 0 me gusta; no hay señales de que terceros hayan probado el modelo.
-- Sin etiqueta de pipeline: dificulta su descubrimiento e integración en las herramientas automáticas de HuggingFace.
+- Sin etiqueta de pipeline: dificulta su descubrimiento e integración en las herramientas automáticas de Hugging Face.
 - Sesgos: no existe auditoría documentada; los modelos de churn entrenados con datos de clientes pueden reproducir sesgos socioeconómicos o demográficos y generar tratos desiguales en las políticas de retención.
 - Errores de clasificación: al no ser un modelo generativo, no procede hablar de alucinaciones, pero los falsos negativos suponen clientes perdidos no detectados y los falsos positivos, gasto innecesario en retención.
 - Contexto e idioma: no se ha declarado el mercado, la moneda ni el idioma de los datos de entrenamiento, lo que limita la transferibilidad del modelo a otros dominios o geografías.
@@ -80,5 +80,5 @@ No disponible. La búsqueda web no devolvió información relevante sobre este m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shaheerijaz992/Churn-Prediction-Model
+- Repositorio en Hugging Face: https://huggingface.co/Shaheerijaz992/Churn-Prediction-Model
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web; los resultados obtenidos correspondían a modelos no relacionados con esta ficha.

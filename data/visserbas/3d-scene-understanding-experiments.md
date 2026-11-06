@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`visserbas/3d-scene-understanding-experiments` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. Su contenido principal es el archivo `paper_notes.md`, que recoge el planteamiento de un estudio exploratorio sobre comprensión de escenas 3D: el alcance de la pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados, requisitos de reproducibilidad y modos de fallo previstos. El autor indica explícitamente que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+`visserbas/3d-scene-understanding-experiments` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. Su contenido principal es el archivo `paper_notes.md`, que recoge el planteamiento de un estudio exploratorio sobre comprensión de escenas 3D: el alcance de la pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados, requisitos de reproducibilidad y modos de fallo previstos. El autor indica explícitamente que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 El repositorio no incluye checkpoint entrenado, código de evaluación publicado ni resultados de benchmarks. El recuento de parámetros reportado por los metadatos de safetensors es de 33.088, un valor que no corresponde a un modelo funcional de aprendizaje profundo y que probablemente refleja los tensores de algún artefacto auxiliar o de un archivo residual. El tamaño del repositorio es de 0,0 GB, coherente con un contenido basado en texto y metadatos.
 
@@ -12,7 +12,7 @@ Por tanto, su relevancia actual no reside en capacidades de inferencia, sino en 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (según tag de HuggingFace); no se describe una arquitectura de modelo concreta en la model card |
+| Arquitectura | transformer (según tag de Hugging Face); no se describe una arquitectura de modelo concreta en la model card |
 | Parametros totales | 33.088 (según metadatos de safetensors); no corresponde a un modelo funcional |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, su relevancia actual no reside en capacidades de inferencia, sino en 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado una arquitectura de modelo ni un proceso de entrenamiento. El tag `transformer` aparece en los metadatos de HuggingFace, pero la model card no describe capas, dimensión oculta, número de cabezas, tokenizador ni datos de preentrenamiento. El recuento de 33.088 parámetros en safetensors es incompatible con un transformer utilizable para comprensión de escenas 3D, lo que refuerza la interpretación de que se trata de un artefacto auxiliar o de un archivo de prueba.
+No se ha publicado una arquitectura de modelo ni un proceso de entrenamiento. El tag `transformer` aparece en los metadatos de Hugging Face, pero la model card no describe capas, dimensión oculta, número de cabezas, tokenizador ni datos de preentrenamiento. El recuento de 33.088 parámetros en safetensors es incompatible con un transformer utilizable para comprensión de escenas 3D, lo que refuerza la interpretación de que se trata de un artefacto auxiliar o de un archivo de prueba.
 
 El repositorio documenta, en cambio, el diseño de un estudio: la formulación de la pregunta de investigación, los confounders identificados, una comparación propuesta con baselines emparejados, benchmarks públicos adecuados a la tarea y comprobaciones de reproducibilidad. No se reportan tokens de entrenamiento, composición del dataset, ni fases de RLHF, DPO o ajuste supervisado, porque no existe un modelo entrenado en este repositorio.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/visserbas/3d-scene-understanding-experiments
+- Repositorio en Hugging Face: https://huggingface.co/visserbas/3d-scene-understanding-experiments
 - Artefacto principal citado en la model card: `paper_notes.md` (incluido en el repositorio)
 - Documentación del repositorio: `README.md` (incluido en el repositorio)
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

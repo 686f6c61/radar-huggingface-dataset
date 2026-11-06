@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `enigmatic/Nano_Tech_H3` es un checkpoint publicado en HuggingFace por el usuario `enigmatic` bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0.2 GB, lo que sugiere un modelo de pequeñas dimensiones, pero la model card no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. No se han registrado descargas ni valoraciones, y el pipeline no está especificado. En el momento de la consulta, la información disponible es insuficiente para caracterizar el modelo de forma fiable. Se recomienda precaución antes de considerar su uso en cualquier aplicación, ya que la ausencia de documentación impide evaluar su funcionamiento, capacidades y limitaciones.
+El modelo `enigmatic/Nano_Tech_H3` es un checkpoint publicado en Hugging Face por el usuario `enigmatic` bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0.2 GB, lo que sugiere un modelo de pequeñas dimensiones, pero la model card no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. No se han registrado descargas ni valoraciones, y el pipeline no está especificado. En el momento de la consulta, la información disponible es insuficiente para caracterizar el modelo de forma fiable. Se recomienda precaución antes de considerar su uso en cualquier aplicación, ya que la ausencia de documentación impide evaluar su funcionamiento, capacidades y limitaciones.
 
 ## Especificaciones tecnicas
 
@@ -52,6 +52,6 @@ No disponible. Al no conocerse la arquitectura ni las capacidades del modelo, no
 
 ## Enlaces
 
-- Repositorio HuggingFace: [enigmatic/Nano_Tech_H3](https://huggingface.co/enigmatic/Nano_Tech_H3)
+- Repositorio Hugging Face: [enigmatic/Nano_Tech_H3](https://huggingface.co/enigmatic/Nano_Tech_H3)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) asociados a este modelo.

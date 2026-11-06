@@ -78,7 +78,7 @@ La diferencia principal frente a txgsync es que esta conversión conserva la cab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/junafinity/Qwen-3.8-Flash-Next-Uncensored-MLX-MXFP4
+- Repositorio Hugging Face: https://huggingface.co/junafinity/Qwen-3.8-Flash-Next-Uncensored-MLX-MXFP4
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Modelo abliterado fuente: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Conversión MXFP4 oficial (sin MTP): https://huggingface.co/txgsync/Qwen3.8-Flash-Next-MXFP4-MLX

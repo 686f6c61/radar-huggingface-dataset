@@ -70,8 +70,8 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minjaechoi/qwen3p6-35b-a3b-2p02bit-r31_v7 | 35,95B | no disponible | expertos enrutados a 2,022 bits, resto BF16 | heredada del base, nombre no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | no disponible en la informacion proporcionada | no disponible | BF16 sin comprimir | no disponible | HuggingFace |
+| minjaechoi/qwen3p6-35b-a3b-2p02bit-r31_v7 | 35,95B | no disponible | expertos enrutados a 2,022 bits, resto BF16 | heredada del base, nombre no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | no disponible en la informacion proporcionada | no disponible | BF16 sin comprimir | no disponible | Hugging Face |
 | Otras alternativas de ~35B (MoE o densas) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p02bit-r31_v7
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p02bit-r31_v7
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog o repositorio del autor: no disponible
 - Demo o espacio asociado: no disponible

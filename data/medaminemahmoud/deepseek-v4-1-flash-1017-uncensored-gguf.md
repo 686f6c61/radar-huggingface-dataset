@@ -99,7 +99,7 @@ Adaptador LoRA sobre UD-Q2_K_XL de Unsloth: rechazos 0,0% en inglés, XSTest 7,6
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MedAmineMahmoud/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/MedAmineMahmoud/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Compilaciones GGUF de Unsloth: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF
 - Métricas y registros de compatibilidad: https://huggingface.co/datasets/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF-metrics/tree/main/compat/llama-master-d854d98

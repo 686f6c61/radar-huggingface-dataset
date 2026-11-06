@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dl-multitask es un repositorio experimental publicado por el usuario LucasSls (Lucas Santos) en HuggingFace, cuyo artefacto principal es una implementacion propia de una arquitectura Albef orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: la propia model card lo describe como un esqueleto de codigo con una configuracion "tiny" cuyo proposito es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida para pruebas de humo (smoke tests), no como un modelo con pesos aprendidos.
+dl-multitask es un repositorio experimental publicado por el usuario LucasSls (Lucas Santos) en Hugging Face, cuyo artefacto principal es una implementacion propia de una arquitectura Albef orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: la propia model card lo describe como un esqueleto de codigo con una configuracion "tiny" cuyo proposito es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida para pruebas de humo (smoke tests), no como un modelo con pesos aprendidos.
 
 El modelo declara una arquitectura Albef con atencion de ventana deslizante (sliding window), fusion mediante co-attention, activacion Mish y normalizacion InstanceNorm. El recuento de parametros registrado en los metadatos de safetensors es de 16.576, coherente con la escala "tiny" declarada por el autor. La receta de entrenamiento por defecto usa el optimizador RMSprop con un scheduler OneCycle, valores que el propio autor aclara que son puntos de partida en el script y no evidencia de una ejecucion completada.
 
@@ -67,7 +67,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El reposito
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LucasSls/dl-multitask | 16.576 | no disponible | sin benchmark declarado | MIT | HuggingFace, checkpoint de inicializacion |
+| LucasSls/dl-multitask | 16.576 | no disponible | sin benchmark declarado | MIT | Hugging Face, checkpoint de inicializacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Alternativas de la misma categoria (implementaciones Albef, marcos multitarea o esqueletos de preentrenamiento vision-lenguaje) no han sido identificadas ni comparadas en la informacion disponible.
@@ -87,7 +87,7 @@ Alternativas de la misma categoria (implementaciones Albef, marcos multitarea o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LucasSls/dl-multitask
+- Modelo en Hugging Face: https://huggingface.co/LucasSls/dl-multitask
 - Perfil del autor: https://huggingface.co/LucasSls
 - Calendario de lanzamientos de modelos de IA: https://www.scriptbyai.com/ai-model-release-calendar/
 - Ranking de modelos de lenguaje: https://onyx.app/llm-leaderboard

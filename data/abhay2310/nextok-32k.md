@@ -74,7 +74,7 @@ Interpretacion: valores de ratio por debajo de 1,0 indican que NexTok-32K uso me
 | Pre-tokenizacion | GPT-4-style regex | no disponible |
 | Eficiencia agregada | +0,64% tokens vs Cosmo2 | referencia |
 | Licencia | MIT | no disponible |
-| Disponibilidad | HuggingFace (Abhay2310/NexTok-32K) | no disponible |
+| Disponibilidad | Hugging Face (Abhay2310/NexTok-32K) | no disponible |
 
 La comparativa se limita al tokenizer Cosmo2 porque es el unico que aparece en la informacion disponible. No se dispone de datos sobre otros tokenizers comparables.
 

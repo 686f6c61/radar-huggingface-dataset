@@ -89,7 +89,7 @@ La comparacion principal es con el modelo base en BF16 y con cuantizaciones GGUF
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Qwen3.5-4B-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Qwen3.5-4B-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX
 - Pagina de Qwen3.5-4B en Ollama: https://ollama.com/library/qwen3.5:4b

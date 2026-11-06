@@ -97,6 +97,6 @@ No se dispone de informacion sobre modelos comparables especializados en marcado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Osam-2025/quantosimo-maths-marking-v1
+- Modelo en Hugging Face: https://huggingface.co/Osam-2025/quantosimo-maths-marking-v1
 - Modelo base: https://huggingface.co/microsoft/phi-3-mini-4k-instruct
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

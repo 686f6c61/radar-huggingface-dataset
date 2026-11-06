@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| Smaug-Humanizer (este) | ~12B | no disponible | Apache 2.0 | Si (texto, imagen, audio con mmproj) | GGUF en HuggingFace |
+| Smaug-Humanizer (este) | ~12B | no disponible | Apache 2.0 | Si (texto, imagen, audio con mmproj) | GGUF en Hugging Face |
 | Gemma 2 9B (referencia de familia) | 9B | no disponible en esta ficha | Gemma license | No | Amplia |
 | Llama 3.1 8B | 8B | no disponible en esta ficha | Llama 3.1 license | No | Amplia |
 | Qwen2.5 7B | 7B | no disponible en esta ficha | Apache 2.0 | No | Amplia |

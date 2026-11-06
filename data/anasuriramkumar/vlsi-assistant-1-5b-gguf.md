@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo VLSI-Assistant-1.5B-GGUF es un modelo de lenguaje de 1.543.714.304 parámetros (aproximadamente 1.5B) publicado por el usuario anasuriramkumar en HuggingFace. Por su nombre y los resultados de búsqueda asociados, está orientado a asistir a ingenieros de diseño de circuitos integrados a gran escala (VLSI), con especialización en tareas como RTL, UVM, aserciones SVA, CDC, low power y protocolos de la industria. Se distribuye en formato GGUF, lo que permite su ejecución en hardware de consumo mediante herramientas como llama.cpp u Ollama. La licencia Apache 2.0 facilita el uso comercial y la modificación.
+El modelo VLSI-Assistant-1.5B-GGUF es un modelo de lenguaje de 1.543.714.304 parámetros (aproximadamente 1.5B) publicado por el usuario anasuriramkumar en Hugging Face. Por su nombre y los resultados de búsqueda asociados, está orientado a asistir a ingenieros de diseño de circuitos integrados a gran escala (VLSI), con especialización en tareas como RTL, UVM, aserciones SVA, CDC, low power y protocolos de la industria. Se distribuye en formato GGUF, lo que permite su ejecución en hardware de consumo mediante herramientas como llama.cpp u Ollama. La licencia Apache 2.0 facilita el uso comercial y la modificación.
 
 La model card del autor es una plantilla genérica sin información técnica real: no se documenta arquitectura, datos de entrenamiento, contexto ni capacidades. El repositorio contiene únicamente pesos cuantizados en formato GGUF, sin archivos safetensors originales. La relevancia actual de este modelo radica en la creciente demanda de asistentes especializados para flujos de diseño de semiconductores, un ámbito con pocas opciones de IA de código abierto. No obstante, la falta de documentación técnica y de evaluaciones públicas limita su uso fiable en producción.
 
@@ -19,7 +19,7 @@ La model card del autor es una plantilla genérica sin información técnica rea
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF |
 
-Nota: el tag "arxiv:1910.09700" hace referencia al paper de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, no a la arquitectura del modelo. La model card es una plantilla de HuggingFace sin cumplimentar.
+Nota: el tag "arxiv:1910.09700" hace referencia al paper de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, no a la arquitectura del modelo. La model card es una plantilla de Hugging Face sin cumplimentar.
 
 ## Arquitectura y entrenamiento
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento para comparar con alternativas. La siguiente tabla compara características generales de modelos de 1.5B disponibles en HuggingFace:
+No se dispone de datos de rendimiento para comparar con alternativas. La siguiente tabla compara características generales de modelos de 1.5B disponibles en Hugging Face:
 
 | Modelo | Parametros | Contexto | Licencia | Especialidad |
 |---|---|---|---|---|
@@ -76,8 +76,8 @@ La ventaja teórica del VLSI-Assistant es su posible especialización en el domi
 
 ## Enlaces
 
-- [HuggingFace: VLSI-Assistant-1.5B-GGUF](https://huggingface.co/anasuriramkumar/VLSI-Assistant-1.5B-GGUF)
+- [Hugging Face: VLSI-Assistant-1.5B-GGUF](https://huggingface.co/anasuriramkumar/VLSI-Assistant-1.5B-GGUF)
 - [Sitio web de VLSI Worlds (posible fuente de datos del modelo)](https://vlsiworlds.com/vlsi-ai-assistant/)
 - [Repositorio GitHub PowerRangers10/VLSI-AI-Assistant (posible proyecto relacionado)](https://github.com/PowerRangers10/VLSI-AI-Assistant)
 
-Nota: los enlaces de la búsqueda web no están confirmados como asociados directamente al modelo de HuggingFace; se incluyen como referencia contextual.
+Nota: los enlaces de la búsqueda web no están confirmados como asociados directamente al modelo de Hugging Face; se incluyen como referencia contextual.

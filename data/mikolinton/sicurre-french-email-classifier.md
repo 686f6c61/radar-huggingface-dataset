@@ -85,9 +85,9 @@ El propio autor advierte que el test comparte plantillas con el entrenamiento y 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sicurre French e-mail classifier | 111 M | 256 tokens | Clasificación phishing/spam/legítimo en francés | MIT | HuggingFace (PyTorch y ONNX) |
-| almanach/camembertav2-base | 111 M | 512 tokens (modelo base) | Modelo de lenguaje enmascarado en francés | MIT | HuggingFace |
-| CamemBERT (camembert-base) | 110 M | 512 tokens | Modelo de lenguaje enmascarado en francés | MIT | HuggingFace |
+| Sicurre French e-mail classifier | 111 M | 256 tokens | Clasificación phishing/spam/legítimo en francés | MIT | Hugging Face (PyTorch y ONNX) |
+| almanach/camembertav2-base | 111 M | 512 tokens (modelo base) | Modelo de lenguaje enmascarado en francés | MIT | Hugging Face |
+| CamemBERT (camembert-base) | 110 M | 512 tokens | Modelo de lenguaje enmascarado en francés | MIT | Hugging Face |
 
 No se dispone de información sobre otros clasificadores de phishing en francés comparables en la documentación proporcionada.
 
@@ -102,11 +102,11 @@ No se dispone de información sobre otros clasificadores de phishing en francés
 - El autor recomienda usarlo como una señal más junto con reglas y listas de bloqueo, no como único criterio de decisión.
 - La licencia MIT permite uso comercial sin restricciones, pero no hay garantías del autor sobre el rendimiento en producción.
 - No se publican datos sobre sesgos demográficos, geográficos o de otro tipo en el corpus de entrenamiento.
-- El modelo fue creado y actualizado en octubre de 2026 según los metadatos de HuggingFace; la versión es 1.0.30.
+- El modelo fue creado y actualizado en octubre de 2026 según los metadatos de Hugging Face; la versión es 1.0.30.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mikolinton/sicurre-french-email-classifier
+- Hugging Face: https://huggingface.co/Mikolinton/sicurre-french-email-classifier
 - Modelo base: https://huggingface.co/almanach/camembertav2-base
 - Dataset: https://huggingface.co/datasets/Mikolinton/sicurre-french-emails
 - Cuaderno de entrenamiento: `training/train_classifier.ipynb` (incluido en el repositorio del modelo)

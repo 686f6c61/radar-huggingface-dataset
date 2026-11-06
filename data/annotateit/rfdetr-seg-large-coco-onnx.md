@@ -100,7 +100,7 @@ La principal diferencia frente a YOLOv11 es la arquitectura transformer con back
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnnotateIt/rfdetr-seg-large-coco-onnx
+- Repositorio Hugging Face: https://huggingface.co/AnnotateIt/rfdetr-seg-large-coco-onnx
 - Modelo base (checkpoint original): https://huggingface.co/Roboflow/rf-detr-seg-large
 - Repositorio oficial RF-DETR: https://github.com/roboflow/rf-detr
 - Documentacion de RF-DETR Seg Large: https://rfdetr.roboflow.com/develop/reference/seg_large/

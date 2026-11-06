@@ -4,7 +4,7 @@
 
 El modelo `akifkaradag/isles22-nnunetv2-stroke-segmentation` es un sistema de segmentación de lesiones de ictus isquémico en imágenes de resonancia magnética multimodal (DWI, ADC y FLAIR). Está desarrollado por Mehmet Akif Karadağ y se basa en nnU-Net v2, un framework de auto-configuración para segmentación biomédica. El modelo fue entrenado en el conjunto de datos ISLES 2022 (220 casos de entrenamiento y 30 casos de validación interna) y está pensado para uso exclusivo en investigación, no como herramienta clínica o diagnóstica.
 
-La arquitectura utilizada es una U-Net 3D completa (configuración `3d_fullres`), entrenada en una sola carpeta (single fold). El repositorio en HuggingFace tiene un tamaño de 0.3 GB e incluye los pesos del checkpoint en formato PyTorch. El modelo es relevante porque ofrece una solución reproducible para la cuantificación automática de lesiones de ictus, una tarea crítica en neuroimagen para estudios retrospectivos y ensayos clínicos, y puede servir como baseline para comparar con otros algoritmos de segmentación.
+La arquitectura utilizada es una U-Net 3D completa (configuración `3d_fullres`), entrenada en una sola carpeta (single fold). El repositorio en Hugging Face tiene un tamaño de 0.3 GB e incluye los pesos del checkpoint en formato PyTorch. El modelo es relevante porque ofrece una solución reproducible para la cuantificación automática de lesiones de ictus, una tarea crítica en neuroimagen para estudios retrospectivos y ensayos clínicos, y puede servir como baseline para comparar con otros algoritmos de segmentación.
 
 ## Especificaciones técnicas
 
@@ -78,7 +78,7 @@ No se han encontrado datos comparativos con otros modelos en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akifkaradag/isles22-nnunetv2-stroke-segmentation
+- Modelo en Hugging Face: https://huggingface.co/akifkaradag/isles22-nnunetv2-stroke-segmentation
 - Repositorio de GitHub: https://github.com/Makifkaradag/isles22-stroke-segmentation
 - Sitio del challenge ISLES 2022: http://www.isles-challenge.org/
 - Dataset ISLES 2022 (Zenodo): https://doi.org/10.5281/zenodo.7153326

@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, documental y metodológica: sirve como plant
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura real, datos de entrenamiento, numero de tokens, composicion del dataset ni proceso de ajuste (RLHF, DPO u otros). La etiqueta `transformer` presente en los metadatos de HuggingFace no va acompanada de configuracion, tokenizador ni pesos coherentes, y el recuento de 16.576 parametros descarta que exista una red neuronal entrenada en el repositorio.
+No hay informacion sobre arquitectura real, datos de entrenamiento, numero de tokens, composicion del dataset ni proceso de ajuste (RLHF, DPO u otros). La etiqueta `transformer` presente en los metadatos de Hugging Face no va acompanada de configuracion, tokenizador ni pesos coherentes, y el recuento de 16.576 parametros descarta que exista una red neuronal entrenada en el repositorio.
 
 El contenido real es un documento de notas (`reading.md`) que cubre el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con lineas base emparejadas, contexto de evaluacion con benchmarks publicos nombrados en la nota principal, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor indica explicitamente que no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
@@ -43,7 +43,7 @@ El contenido real es un documento de notas (`reading.md`) que cubre el alcance d
 - Identificacion de factores de confusion: el material senala confounders probables antes de ejecutar un estudio, lo que ayuda a anticipar sesgos de diseno.
 - Plantilla de reproducibilidad: las notas indican que los resultados futuros deben acompanarse de versiones de dataset, comandos, semillas, hardware y registros en bruto; sirve como checklist interna de publicacion.
 - Analisis de modos de fallo: la seccion de failure modes puede reutilizarse para planificar pruebas de robustez en sistemas roboticos o de agentes encarnados.
-- Formacion de criterio metodologico: util para grupos que necesitan distinguir entre hipotesis y resultados antes de publicar artefactos en HuggingFace.
+- Formacion de criterio metodologico: util para grupos que necesitan distinguir entre hipotesis y resultados antes de publicar artefactos en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Ejecucion en GPU de consumo: no aplica.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplica; no hay pesos de modelo.
 - Latencia y throughput: no disponible.
-- Requisito real de uso: un cliente de git o la interfaz web de HuggingFace para clonar y leer el repositorio de notas, que ocupa 0,0 GB.
+- Requisito real de uso: un cliente de git o la interfaz web de Hugging Face para clonar y leer el repositorio de notas, que ocupa 0,0 GB.
 
 ## Comparativa con modelos similares
 
@@ -73,7 +73,7 @@ No disponible. No existe una categoria de modelos comparable porque el repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Maksymsv3/embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/Maksymsv3/embodied-ai
 - Nota principal (`reading.md`): https://huggingface.co/Maksymsv3/embodied-ai/blob/main/reading.md
 - Documentacion (`README.md`): https://huggingface.co/Maksymsv3/embodied-ai/blob/main/README.md
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

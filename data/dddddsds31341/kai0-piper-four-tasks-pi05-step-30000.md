@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kai0-Piper-Four-Tasks-pi05-step-30000 es un checkpoint de inferencia de un modelo vision-language-action (VLA) obtenido mediante fine-tuning completo del modelo base `pi05_base` de Physical Intelligence sobre un conjunto de cuatro tareas roboticas de manipulacion. Lo publica el usuario de HuggingFace `dddddsds31341` bajo el ecosistema Kai0 y la libreria `piper`, y representa el paso 30.000 de un entrenamiento de 40.005 actualizaciones finalizado el 2 de noviembre de 2026.
+Kai0-Piper-Four-Tasks-pi05-step-30000 es un checkpoint de inferencia de un modelo vision-language-action (VLA) obtenido mediante fine-tuning completo del modelo base `pi05_base` de Physical Intelligence sobre un conjunto de cuatro tareas roboticas de manipulacion. Lo publica el usuario de Hugging Face `dddddsds31341` bajo el ecosistema Kai0 y la libreria `piper`, y representa el paso 30.000 de un entrenamiento de 40.005 actualizaciones finalizado el 2 de noviembre de 2026.
 
 El modelo resuelve el problema de control de un brazo robotico Agilex Piper a partir de instrucciones en lenguaje natural y tres camaras (`top_head`, `hand_left`, `hand_right`), generando acciones de 14 dimensiones (articulaciones y pinza) con un horizonte de 50 pasos. Es relevante para la comunidad de robotica open source porque demuestra un pipeline completo de fine-tuning multi-tarea sobre π0.5 con pesos JAX/Orbax, normalizacion cuantilica compartida y codigo de preprocesado incluido.
 
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros autor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dddddsds31341/Kai0-Piper-Four-Tasks-pi05-step-30000
+- Hugging Face: https://huggingface.co/dddddsds31341/Kai0-Piper-Four-Tasks-pi05-step-30000
 - Registro de entrenamiento (W&B): https://wandb.ai/bofang/finetune_pi05/runs/pwj4suby
 - Dataset `putting_tennis`: https://huggingface.co/datasets/yuyingyinya/putting_tennis
 - Dataset `nesting_doll`: https://huggingface.co/datasets/yuyingyinya/nesting_doll

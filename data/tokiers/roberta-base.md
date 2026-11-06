@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `tokiers/roberta-base` no contiene un modelo de lenguaje, sino un paquete de tokenizer preconstruido para el modelo `FacebookAI/roberta-base`. Lo publica el usuario `tokiers` como artefacto derivado de la libreria tokie, un tokenizer escrito en Rust que se presenta como reemplazo directo de la libreria `tokenizers` de HuggingFace. El repositorio incluye el fichero binario propietario `tokenizer.tkz` (formato de tokie) y el `tokenizer.json` original de RoBERTa.
+El repositorio `tokiers/roberta-base` no contiene un modelo de lenguaje, sino un paquete de tokenizer preconstruido para el modelo `FacebookAI/roberta-base`. Lo publica el usuario `tokiers` como artefacto derivado de la libreria tokie, un tokenizer escrito en Rust que se presenta como reemplazo directo de la libreria `tokenizers` de Hugging Face. El repositorio incluye el fichero binario propietario `tokenizer.tkz` (formato de tokie) y el `tokenizer.json` original de RoBERTa.
 
 El problema que resuelve es de infraestructura: acelerar y aligerar la tokenizacion en pipelines de NLP. Segun la model card, tokie ofrece tokenizacion aproximadamente 50 veces mas rapida, ficheros de modelo unas 10 veces mas pequenos y una carga en torno a 5 ms, manteniendo una precision del 100 % respecto al tokenizer original. El repositorio ocupa 0,1 GB y no incluye pesos de red neuronal.
 
-Es relevante para desarrolladores que necesiten tokenizar a gran escala (preprocesado de corpus, servicios de inferencia de baja latencia) y quieran evitar la dependencia de la implementacion Python de HuggingFace. No obstante, la ausencia de descargas, likes, licencia explicita y metadatos de pipeline indica que es un artefacto muy reciente y sin validacion comunitaria.
+Es relevante para desarrolladores que necesiten tokenizar a gran escala (preprocesado de corpus, servicios de inferencia de baja latencia) y quieran evitar la dependencia de la implementacion Python de Hugging Face. No obstante, la ausencia de descargas, likes, licencia explicita y metadatos de pipeline indica que es un artefacto muy reciente y sin validacion comunitaria.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Es relevante para desarrolladores que necesiten tokenizar a gran escala (preproc
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | No disponibles (RoBERTa base esta entrenado principalmente en ingles) |
 | Licencia | No disponible en el repositorio; la libreria tokie es MIT OR Apache-2.0 y los ficheros originales conservan la licencia de FacebookAI/roberta-base |
-| Formato de pesos | `tokenizer.tkz` (binario de tokie) y `tokenizer.json` (HuggingFace) |
+| Formato de pesos | `tokenizer.tkz` (binario de tokie) y `tokenizer.json` (Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -31,18 +31,18 @@ La innovacion tecnica esta en la implementacion: tokie esta escrito en Rust y ex
 
 - Tokenizacion de texto con el vocabulario y las reglas de RoBERTa base (BPE bytes-level).
 - Generacion de `ids` y `attention_mask` a partir de cadenas de texto.
-- Carga desde HuggingFace Hub mediante `Tokenizer.from_pretrained`.
+- Carga desde Hugging Face Hub mediante `Tokenizer.from_pretrained`.
 - Uso en Python (`tokie.Tokenizer`) y en Rust (`tokie::Tokenizer` con feature `hf`).
-- Compatibilidad con el ecosistema HuggingFace a traves del fichero `tokenizer.json` incluido.
+- Compatibilidad con el ecosistema Hugging Face a traves del fichero `tokenizer.json` incluido.
 - No incluye generacion de texto, razonamiento, codigo, vision, tool calling ni capacidades de agente: es unicamente un componente de preprocesado.
 
 ## Casos de uso
 
-- Preprocesado de corpus a gran escala: tokenizar millones de documentos con tokie reduce el tiempo de CPU frente a la libreria Python de HuggingFace, lo que abarata la construccion de datasets de entrenamiento.
+- Preprocesado de corpus a gran escala: tokenizar millones de documentos con tokie reduce el tiempo de CPU frente a la libreria Python de Hugging Face, lo que abarata la construccion de datasets de entrenamiento.
 - Servicios de inferencia de baja latencia: al cargar en unos 5 ms y tokenizar mas rapido, encaja en el camino critico de APIs que reciben texto y deben responder con un modelo RoBERTa (clasificacion, NER, reranking).
 - Despliegue en entornos con memoria limitada: el fichero `tokenizer.tkz` es aproximadamente 10 veces mas pequeno que el `tokenizer.json` equivalente, util en contenedores o dispositivos edge.
 - Pipelines en Rust: proyectos nativos que ya usan Rust pueden integrar el tokenizer sin puente Python, manteniendo coherencia con el resto del stack.
-- Replicacion exacta de tokenizacion: al ser un reemplazo directo, permite sustituir la libreria de HuggingFace en sistemas existentes sin cambiar los IDs producidos ni reentrenar modelos.
+- Replicacion exacta de tokenizacion: al ser un reemplazo directo, permite sustituir la libreria de Hugging Face en sistemas existentes sin cambiar los IDs producidos ni reentrenar modelos.
 - Evaluacion comparativa de tokenizers: sirve como referencia para medir el rendimiento de tokie frente a `tokenizers` en tareas de clasificacion y extraccion de caracteristicas con RoBERTa.
 
 ## Benchmarks y rendimiento
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Componente | Formato | Velocidad declarada | Tamano de fichero | Lenguaje | Licencia |
 |---|---|---|---|---|---|
-| tokiers/roberta-base (tokie) | `tokenizer.tkz` + `tokenizer.json` | Hasta 50x mas rapido que HuggingFace (segun autor) | ~10x menor (segun autor) | Rust, Python | No disponible en el repo |
+| tokiers/roberta-base (tokie) | `tokenizer.tkz` + `tokenizer.json` | Hasta 50x mas rapido que Hugging Face (segun autor) | ~10x menor (segun autor) | Rust, Python | No disponible en el repo |
 | FacebookAI/roberta-base (tokenizer original) | `tokenizer.json` | Referencia base | Referencia base | Python | MIT (modelo RoBERTa) |
-| HuggingFace `tokenizers` (generico) | `tokenizer.json` | Referencia ampliamente usada | Referencia | Rust, Python | Apache-2.0 |
+| Hugging Face `tokenizers` (generico) | `tokenizer.json` | Referencia ampliamente usada | Referencia | Rust, Python | Apache-2.0 |
 
 No se dispone de datos cuantitativos publicados para comparar rendimiento real entre estas opciones en la informacion proporcionada.
 
@@ -79,6 +79,6 @@ No se dispone de datos cuantitativos publicados para comparar rendimiento real e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tokiers/roberta-base
+- Repositorio Hugging Face: https://huggingface.co/tokiers/roberta-base
 - Modelo base de referencia: https://huggingface.co/FacebookAI/roberta-base
 - Repositorio de tokie en GitHub: https://github.com/chonkie-inc/tokie

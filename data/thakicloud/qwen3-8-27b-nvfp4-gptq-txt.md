@@ -89,7 +89,7 @@ La comparativa con RadixArk es de recetas, no de modelos: RadixArk usa modelopt 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ThakiCloud/Qwen3.8-27B-NVFP4-GPTQ-txt
+- Repositorio Hugging Face: https://huggingface.co/ThakiCloud/Qwen3.8-27B-NVFP4-GPTQ-txt
 - Perfil del autor: https://huggingface.co/ThakiCloud
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

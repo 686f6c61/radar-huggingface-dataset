@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales (FID, LPIPS, comparativ
 
 | Modelo | Tipo | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gfpgan-v1.4-w16 (este) | Restauracion facial GAN (ONNX) | 512x512, 1x3x512x512 float32 | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| gfpgan-v1.4-w16 (este) | Restauracion facial GAN (ONNX) | 512x512, 1x3x512x512 float32 | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | GFPGAN v1.4 original (TencentARC) | Restauracion facial GAN | 512x512 | Apache-2.0 | GitHub TencentARC/GFPGAN |
 | CodeFormer | Restauracion facial transformer | 512x512 | disponible en su repositorio | proyecto publico |
 | RestoreFormer | Restauracion facial transformer | 512x512 | disponible en su repositorio | proyecto publico |
@@ -88,7 +88,7 @@ Los datos de rendimiento comparados con CodeFormer o RestoreFormer no estan disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opiumuseless/gfpgan-v1.4-w16
+- Hugging Face: https://huggingface.co/opiumuseless/gfpgan-v1.4-w16
 - Repositorio original de GFPGAN (TencentARC): https://github.com/TencentARC/GFPGAN
 - Export ONNX de origen: https://huggingface.co/Meeperomi/GFPGANv1.4-onnx
 - Sitio que lo usa: https://webgpu.in

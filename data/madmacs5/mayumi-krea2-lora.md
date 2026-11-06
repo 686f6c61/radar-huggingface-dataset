@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables dentro de la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madmacs5/mayumi-krea2-lora
+- Hugging Face: https://huggingface.co/madmacs5/mayumi-krea2-lora
 - El model card menciona la plataforma Civitai como destino de previsualizaciones, pero no se proporciona una URL concreta.

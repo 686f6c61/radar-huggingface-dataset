@@ -61,7 +61,7 @@ El autor indica que, segun esta diagnostico local, el modelo alcanza el mejor re
 - VRAM estimada para inferencia en BF16: aproximadamente 14,5 GB para los pesos, mas el overhead de la cache KV y las activaciones. Se recomienda al menos 20 GB de VRAM para contextos de longitud media.
 - GPU recomendadas: A100 de 40 GB, H100 de 80 GB o RTX 4090 de 24 GB. En GPUs de consumo, una RTX 3090 o 4090 puede ejecutar el modelo en BF16.
 - No se ofrecen cuantizaciones en el repositorio, por lo que GPUs con menos de 16 GB de VRAM no son adecuadas.
-- Opciones de despliegue: Transformers (HuggingFace), vLLM y Text Generation Inference (TGI). Para usar llama.cpp, seria necesario convertir manualmente los pesos a formato GGUF, que no se incluye.
+- Opciones de despliegue: Transformers (Hugging Face), vLLM y Text Generation Inference (TGI). Para usar llama.cpp, seria necesario convertir manualmente los pesos a formato GGUF, que no se incluye.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento de modelos externos equivalentes en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youngseok12/AX-3.1-Light-specialist-300-ties-answerfirst
+- Modelo en Hugging Face: https://huggingface.co/youngseok12/AX-3.1-Light-specialist-300-ties-answerfirst
 - Modelo base: https://huggingface.co/skt/A.X-3.1-Light
 - Otra variante del autor: https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0

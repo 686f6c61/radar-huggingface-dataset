@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `xw17/Llama-3.2-3B-Instruct_SFT_lora_galaxyppg` es un adaptador LoRA (Low-Rank Adaptation) derivado de `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario `xw17` en HuggingFace. El nombre del repositorio indica que se ha realizado un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo instruct de 3B parámetros de Meta, con un dominio o dataset denominado "galaxyppg". El tamaño del repositorio es de 0.1 GB, lo que sugiere que solo se almacenan los pesos del adaptador LoRA y no el modelo completo.
+El modelo `xw17/Llama-3.2-3B-Instruct_SFT_lora_galaxyppg` es un adaptador LoRA (Low-Rank Adaptation) derivado de `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario `xw17` en Hugging Face. El nombre del repositorio indica que se ha realizado un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo instruct de 3B parámetros de Meta, con un dominio o dataset denominado "galaxyppg". El tamaño del repositorio es de 0.1 GB, lo que sugiere que solo se almacenan los pesos del adaptador LoRA y no el modelo completo.
 
-La relevancia de este modelo radica en que permite adaptar un modelo de lenguaje pequeño (3B) a una tarea o dominio específico con un coste de entrenamiento e inferencia reducido, manteniendo la arquitectura original. Sin embargo, la información disponible en HuggingFace es extremadamente limitada: la model card es una plantilla generada automáticamente y no incluye detalles sobre el dataset, el procedimiento de entrenamiento, las capacidades específicas ni la licencia. No se han publicado benchmarks ni documentación técnica adicional.
+La relevancia de este modelo radica en que permite adaptar un modelo de lenguaje pequeño (3B) a una tarea o dominio específico con un coste de entrenamiento e inferencia reducido, manteniendo la arquitectura original. Sin embargo, la información disponible en Hugging Face es extremadamente limitada: la model card es una plantilla generada automáticamente y no incluye detalles sobre el dataset, el procedimiento de entrenamiento, las capacidades específicas ni la licencia. No se han publicado benchmarks ni documentación técnica adicional.
 
 ## Especificaciones técnicas
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xw17/Llama-3.2-3B-Instruct_SFT_lora_galaxyppg | 3B (base) + LoRA | 128k | no disponible | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | 128k | Llama 3.2 Community License | HuggingFace |
-| xw17/Llama-3.2-3B-Instruct_SFT_lora_universal | 3B (base) + LoRA | 128k | no disponible | HuggingFace |
+| xw17/Llama-3.2-3B-Instruct_SFT_lora_galaxyppg | 3B (base) + LoRA | 128k | no disponible | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3B | 128k | Llama 3.2 Community License | Hugging Face |
+| xw17/Llama-3.2-3B-Instruct_SFT_lora_universal | 3B (base) + LoRA | 128k | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos para los adaptadores LoRA.
 
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento comparativos para los adaptadores LoRA.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/Llama-3.2-3B-Instruct_SFT_lora_galaxyppg
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.2-3B
+- Modelo en Hugging Face: https://huggingface.co/xw17/Llama-3.2-3B-Instruct_SFT_lora_galaxyppg
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Adaptador similar del mismo autor: https://huggingface.co/xw17/Llama-3.2-3B-Instruct_SFT_lora_universal

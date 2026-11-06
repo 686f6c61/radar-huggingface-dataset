@@ -15,7 +15,7 @@ El modelo resuelve el seguimiento de pulso (beat tracking) y de compás (downbea
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | Entrada fija de 30 segundos de audio (128 bandas de mel) |
 | Tipos de cuantización | Float32 (float16 se descartó por pérdida de precisión en la atención) |
-| Idiomas soportados | No aplica (modelo de análisis de audio; HuggingFace indica "no disponibles") |
+| Idiomas soportados | No aplica (modelo de análisis de audio; Hugging Face indica "no disponibles") |
 | Licencia | MIT |
 | Formato de pesos | Core ML compilado (`.mlmodelc`, distribuido como `BeatThis.mlmodelc.zip`) |
 | Tamaño del repositorio | 0,1 GB |
@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/jessengatai/supracut-beat-this
+- Ficha en Hugging Face: https://huggingface.co/jessengatai/supracut-beat-this
 - Repositorio original (código y pesos): https://github.com/CPJKU/beat_this
 - Artículo: F. Foscarin, J. Schlüter, G. Widmer, "Beat This! Accurate Beat Tracking Without DBN Postprocessing", ISMIR 2024 (enlace directo no disponible en la información proporcionada).

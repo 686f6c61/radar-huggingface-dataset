@@ -91,7 +91,7 @@ La ventaja de este modelo es su precisión en tareas regulatorias específicas, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h3rb3rn/moe-expert-governance-4b
+- Modelo en Hugging Face: https://huggingface.co/h3rb3rn/moe-expert-governance-4b
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento (referenciado): moe-sovereign/expert-governance-sft (no se proporciona URL directa)
 - Supercomputador LUMI: https://www.lumi-supercomputer.eu/

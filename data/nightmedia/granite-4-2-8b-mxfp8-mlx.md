@@ -4,7 +4,7 @@
 
 El modelo `nightmedia/granite-4.2-8b-mxfp8-mlx` es una cuantización MXFP8 (8 bits) del modelo `ibm-granite/granite-4.2-8b`, desarrollada por el usuario nightmedia y publicada en Hugging Face. Está orientado a la librería MLX, por lo que está optimizado para ejecutarse en hardware Apple Silicon (M1/M2/M3/M4). El modelo base pertenece a la familia IBM Granite 4.2, que incorpora capacidades de razonamiento nativo y tool calling, diseñadas para agentes empresariales que requieren seguir instrucciones complejas, seleccionar herramientas y ejecutar tareas multi-paso.
 
-La cuantización a 8 bits reduce el tamaño en memoria y acelera la inferencia, lo que permite ejecutar un modelo de 8.000 millones de parámetros en dispositivos con recursos limitados, como MacBooks o GPUs de consumo. El modelo es de acceso restringido (gated), por lo que requiere aceptar las condiciones de uso en HuggingFace antes de poder descargarlo. Su licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas.
+La cuantización a 8 bits reduce el tamaño en memoria y acelera la inferencia, lo que permite ejecutar un modelo de 8.000 millones de parámetros en dispositivos con recursos limitados, como MacBooks o GPUs de consumo. El modelo es de acceso restringido (gated), por lo que requiere aceptar las condiciones de uso en Hugging Face antes de poder descargarlo. Su licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ La comparativa directa con otros modelos 8B de la misma categoría (por ejemplo,
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo es gated, por lo que los usuarios deben aceptar las condiciones de uso en HuggingFace antes de descargarlo.
+- **Acceso restringido**: el modelo es gated, por lo que los usuarios deben aceptar las condiciones de uso en Hugging Face antes de descargarlo.
 - **Discrepancia en el número de parámetros**: el archivo safetensors reporta 2.472.473.984 parámetros, mientras que el nombre del modelo indica 8B. Esta diferencia podría deberse a la cuantización, pero no está aclarada oficialmente.
 - **Riesgo de alucinación**: como cualquier modelo generativo, puede producir contenido falso o inventado, especialmente en contextos donde no hay información suficiente.
 - **Sesgos**: los modelos entrenados con datos web pueden reproducir sesgos culturales, de género o raciales. No se han publicado evaluaciones de sesgo para esta cuantización.
@@ -74,7 +74,7 @@ La comparativa directa con otros modelos 8B de la misma categoría (por ejemplo,
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/nightmedia/granite-4.2-8b-mxfp8-mlx)
+- [Página del modelo en Hugging Face](https://huggingface.co/nightmedia/granite-4.2-8b-mxfp8-mlx)
 - [Modelo base: ibm-granite/granite-4.2-8b](https://huggingface.co/ibm-granite/granite-4.2-8b)
 - [Blog de IBM sobre Granite 4.2](https://research.ibm.com/blog/introducing-granite-4-2)
 - [Documentación de IBM Granite](https://www.ibm.com/granite/docs/models/granite)

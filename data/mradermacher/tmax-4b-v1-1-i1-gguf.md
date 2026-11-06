@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/tmax-4b-v1.1-i1-GGUF` es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo base `TMaxxx/tmax-4b-v1.1`. No se trata de un modelo entrenado por mradermacher, sino de una redistribucion optimizada para inferencia local mediante llama.cpp y herramientas compatibles con el formato GGUF. El autor de las cuantizaciones es un perfil conocido en HuggingFace por publicar versiones cuantizadas de modelos de terceros, con y sin matriz de importancia (imatrix).
+`mradermacher/tmax-4b-v1.1-i1-GGUF` es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo base `TMaxxx/tmax-4b-v1.1`. No se trata de un modelo entrenado por mradermacher, sino de una redistribucion optimizada para inferencia local mediante llama.cpp y herramientas compatibles con el formato GGUF. El autor de las cuantizaciones es un perfil conocido en Hugging Face por publicar versiones cuantizadas de modelos de terceros, con y sin matriz de importancia (imatrix).
 
 El modelo base se presenta bajo el nombre "tmax-4b-v1.1", lo que sugiere un tamano nominal de aproximadamente 4 mil millones de parametros. Sin embargo, la informacion disponible es extremadamente limitada: la model card solo contiene metadatos internos del proceso de cuantizacion (version de quantize, tipo de conversion `hf`, lista de quants generados) y el enlace al repositorio original. No se publican datos sobre arquitectura, licencia, idiomas, contexto ni rendimiento.
 

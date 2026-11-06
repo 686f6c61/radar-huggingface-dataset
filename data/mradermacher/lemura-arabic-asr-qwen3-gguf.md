@@ -71,6 +71,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (AS
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/lemura-arabic-asr-qwen3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/lemura-arabic-asr-qwen3-GGUF
 - Modelo base: https://huggingface.co/lemuralabs/lemura-arabic-asr-qwen3
 - Pagina de mradermacher para solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

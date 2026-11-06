@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables directamente. El adaptado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mfielding92/thefriend-27b-lora-e7
+- Repositorio Hugging Face: https://huggingface.co/mfielding92/thefriend-27b-lora-e7
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Perfil del autor: https://huggingface.co/mfielding92
 - Otros modelos del autor (referencia): https://huggingface.co/mfielding92/thefriend-27b-v2 y https://huggingface.co/mfielding92/thefriend-26b-a4b-v2-GGUF8

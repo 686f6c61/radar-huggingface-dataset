@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sentinel7/moss-image` es un repositorio alojado en HuggingFace por el usuario Sentinel7. El nombre sugiere un modelo orientado a imagen, aunque la informacion disponible no confirma la tarea concreta (generacion, edicion o vision-lenguaje). El repositorio ocupa 4,7 GB, un tamano compatible con pesos en precision completa o semiprecision de un modelo de escala media, pero no se ha publicado informacion sobre arquitectura, parametros ni contexto.
+`Sentinel7/moss-image` es un repositorio alojado en Hugging Face por el usuario Sentinel7. El nombre sugiere un modelo orientado a imagen, aunque la informacion disponible no confirma la tarea concreta (generacion, edicion o vision-lenguaje). El repositorio ocupa 4,7 GB, un tamano compatible con pesos en precision completa o semiprecision de un modelo de escala media, pero no se ha publicado informacion sobre arquitectura, parametros ni contexto.
 
 El modelo no cuenta con descargas y solo 2 likes en el momento de la consulta, y fue creado el 23 de octubre de 2026 con una ultima actualizacion el 2 de noviembre de 2026. No se ha publicado pipeline, licencia, idiomas ni documentacion tecnica asociada. Esta ficha recoge exclusivamente los datos verificables del repositorio e indica explicitamente como no disponibles aquellos campos que no se han podido confirmar.
 
@@ -72,5 +72,5 @@ No disponible. No se puede identificar la categoria del modelo (generacion de im
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sentinel7/moss-image
+- Repositorio en Hugging Face: https://huggingface.co/Sentinel7/moss-image
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

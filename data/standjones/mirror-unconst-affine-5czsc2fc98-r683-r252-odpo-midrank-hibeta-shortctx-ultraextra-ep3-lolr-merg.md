@@ -92,6 +92,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r683-r252-odpo-midrank-hibeta-shortctx-ultraextra-ep3-lolr-merg
+- Repositorio Hugging Face: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r683-r252-odpo-midrank-hibeta-shortctx-ultraextra-ep3-lolr-merg
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Checkpoint hermano (R576, HiRank): https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged

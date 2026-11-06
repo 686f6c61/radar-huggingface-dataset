@@ -69,6 +69,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (VL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/ffw_sg2_move-soft-toy-right_smolvla_sharednorm
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/ffw_sg2_move-soft-toy-right_smolvla_sharednorm
 - Dataset utilizado: https://huggingface.co/datasets/omkarpatil/move-soft-toy-right
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

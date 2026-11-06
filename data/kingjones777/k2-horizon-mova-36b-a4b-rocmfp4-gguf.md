@@ -88,14 +88,14 @@ Nota: no se dispone de benchmarks de calidad comparativos. La unica comparacion 
 - Requiere un build especifico de llama.cpp con la arquitectura k2_horizon y los tipos ROCmFP4/ROCmFPX. Ningun build publico estandar incluye ambos todavia; es necesario aplicar el parche `k2-horizon-on-rocmfpx.patch` incluido en el repositorio.
 - El modelo es un razonador: si el presupuesto de tokens de razonamiento es demasiado corto, la respuesta puede devolver HTTP 200 con el campo `content` vacio y los tokens en `reasoning`. El autor recomienda ~500 tokens para respuestas cortas y llamadas a herramientas, y mas para respuestas largas.
 - La variante AGENT (Q8_0) tiene mayor tamano (36.45 GiB) y menor velocidad de decodificacion (28.9 t/s) que las variantes Q4_0.
-- No se especifican los idiomas soportados. La metadata de HuggingFace indica "Idiomas: no disponibles".
+- No se especifican los idiomas soportados. La metadata de Hugging Face indica "Idiomas: no disponibles".
 - No se han publicado benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) para esta cuantizacion.
 - El modelo base es Apache-2.0, lo que permite uso comercial, pero el soporte de inferencia depende de herramientas de terceros (ROCmFPX) que pueden tener sus propias restricciones.
 - Los datos de rendimiento fueron medidos en un unico hardware especifico (Ryzen AI Max+ 395) y pueden no extrapolarse a otros sistemas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/K2-Horizon-MoVA-36B-A4B-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/K2-Horizon-MoVA-36B-A4B-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Coleccion K2 Horizon de IFM: https://huggingface.co/collections/IFM/k2-horizon
 - Fork de llama.cpp con arquitectura k2_horizon: https://github.com/MBZUAI-IFM/llama.cpp/tree/model/K2Horizon

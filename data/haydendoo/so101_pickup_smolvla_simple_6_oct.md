@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un policy de robótica entrenado mediante aprendizaje por imitación: un fine-tune del modelo SmolVLA (`lerobot/smolvla_base`) especializado en una única tarea de manipulación, "Pick up blue objects and put them in the tray" (recoger objetos azules y depositarlos en una bandeja). Lo desarrolla el usuario de HuggingFace `haydendoo` y se distribuye con licencia Apache 2.0 y la librería LeRobot, el stack de HuggingFace para robótica de imitación.
+Este repositorio contiene un policy de robótica entrenado mediante aprendizaje por imitación: un fine-tune del modelo SmolVLA (`lerobot/smolvla_base`) especializado en una única tarea de manipulación, "Pick up blue objects and put them in the tray" (recoger objetos azules y depositarlos en una bandeja). Lo desarrolla el usuario de Hugging Face `haydendoo` y se distribuye con licencia Apache 2.0 y la librería LeRobot, el stack de Hugging Face para robótica de imitación.
 
 SmolVLA es un modelo visión-lenguaje-acción (VLA) compacto: con 450.046.176 parámetros (~450 M) y un peso de repositorio de 0,9 GB, está diseñado para ejecutarse en hardware de consumo, a diferencia de los VLA de miles de millones de parámetros que dominan la categoría. El modelo consume el estado articular de un brazo `so_follower` (6 dimensiones) junto con cuatro flujos de imagen, y produce un vector de acción de 6 dimensiones, es decir, las posiciones/velocidades objetivo de las articulaciones a 30 FPS.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (fine-tune de SmolVLA) | 450 M | Estado 6D + 3 cámaras 256×256 + 1 cámara 480×640 + instrucción de tarea | Apache 2.0 | HuggingFace, librería LeRobot |
-| `lerobot/smolvla_base` | 450 M (modelo base del que deriva) | Entradas genéricas definidas por el dataset de fine-tuning | Apache 2.0 | HuggingFace |
-| OpenVLA-7B | 7 B (según la nomenclatura del modelo) | 1 cámara + instrucción en lenguaje natural | No disponible en la información proporcionada | HuggingFace |
+| Este modelo (fine-tune de SmolVLA) | 450 M | Estado 6D + 3 cámaras 256×256 + 1 cámara 480×640 + instrucción de tarea | Apache 2.0 | Hugging Face, librería LeRobot |
+| `lerobot/smolvla_base` | 450 M (modelo base del que deriva) | Entradas genéricas definidas por el dataset de fine-tuning | Apache 2.0 | Hugging Face |
+| OpenVLA-7B | 7 B (según la nomenclatura del modelo) | 1 cámara + instrucción en lenguaje natural | No disponible en la información proporcionada | Hugging Face |
 | π0 (Physical Intelligence) | No disponible en la información proporcionada | Múltiples cámaras + estado del robot | No disponible en la información proporcionada | No disponible en la información proporcionada |
 
 No hay datos de rendimiento comparativo publicados para este checkpoint, por lo que la comparación se limita a tamaño, licencia y disponibilidad.
@@ -90,7 +90,7 @@ No hay datos de rendimiento comparativo publicados para este checkpoint, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haydendoo/so101_pickup_smolvla_simple_6_oct
+- Modelo en Hugging Face: https://huggingface.co/haydendoo/so101_pickup_smolvla_simple_6_oct
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/haydendoo/so101_combined_simple_v1
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=haydendoo/so101_combined_simple_v1

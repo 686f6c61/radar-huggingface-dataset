@@ -67,15 +67,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/phi-4_rai_1.9.0_npu | ~14,7 B (base Phi-4) | no disponible | ONNX / Ryzen AI NPU | other (gated) | HuggingFace, acceso restringido |
-| Microsoft Phi-4 (original) | ~14,7 B | no disponible en esta ficha | safetensors / transformers | MIT (segun ficha original de Microsoft) | HuggingFace, publico |
+| amd/phi-4_rai_1.9.0_npu | ~14,7 B (base Phi-4) | no disponible | ONNX / Ryzen AI NPU | other (gated) | Hugging Face, acceso restringido |
+| Microsoft Phi-4 (original) | ~14,7 B | no disponible en esta ficha | safetensors / transformers | MIT (segun ficha original de Microsoft) | Hugging Face, publico |
 | Modelos ONNX para NPU de otros fabricantes | no disponible | no disponible | ONNX / runtime propietario | variable | variable |
 
 La comparativa directa con alternativas de la misma categoria (modelos de ~14 B empaquetados para NPU) no esta disponible en la informacion proporcionada. La diferencia principal frente al Phi-4 original es el formato ONNX y el runtime Ryzen AI, no el modelo en si.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Licencia `other`: no es una licencia permisiva estandar; es obligatorio revisar los terminos de AMD y de Microsoft antes de cualquier uso comercial.
 - Solo ingles: el tag de idioma es `en`; no se garantiza calidad en castellano ni en otros idiomas.
 - Dependencia de hardware: la distribucion esta atada al runtime Ryzen AI 1.9.0 y a la NPU de AMD; no es portable a otras plataformas sin reconversion.
@@ -86,7 +86,7 @@ La comparativa directa con alternativas de la misma categoria (modelos de ~14 B 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/phi-4_rai_1.9.0_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/phi-4_rai_1.9.0_npu
 - Modelo base Phi-4 de Microsoft: no disponible en la informacion proporcionada
 - Documentacion de AMD Ryzen AI: no disponible en la informacion proporcionada
 - Paper o blog de Phi-4: no disponible en la informacion proporcionada

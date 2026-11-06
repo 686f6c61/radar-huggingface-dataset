@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B-OPD-Qwen3-4B-Step200 es un checkpoint de investigación publicado por Lei Zhao (usuario `leizhao7` en HuggingFace) que consiste en un estudiante Qwen3-1.7B destilado mediante *on-policy distillation* (OPD) a partir de un profesor fijo Qwen3-4B. El modelo forma parte del material reproducible del artículo "Why On-Policy Distillation Sometimes Fails: Vanishing Learning Signals" (arXiv:2610.11247), cuyo objetivo es estudiar por qué la destilación on-policy puede dejar de aportar señal de aprendizaje útil. No es un modelo de propósito general, sino una pieza experimental para reproducir y analizar el fenómeno.
+Qwen3-1.7B-OPD-Qwen3-4B-Step200 es un checkpoint de investigación publicado por Lei Zhao (usuario `leizhao7` en Hugging Face) que consiste en un estudiante Qwen3-1.7B destilado mediante *on-policy distillation* (OPD) a partir de un profesor fijo Qwen3-4B. El modelo forma parte del material reproducible del artículo "Why On-Policy Distillation Sometimes Fails: Vanishing Learning Signals" (arXiv:2610.11247), cuyo objetivo es estudiar por qué la destilación on-policy puede dejar de aportar señal de aprendizaje útil. No es un modelo de propósito general, sino una pieza experimental para reproducir y analizar el fenómeno.
 
 El checkpoint corresponde a la actualización 200 de un entrenamiento corto (200 pasos) sobre el dataset de matemáticas DAPO-Math-17k, con una ventana máxima de 7168 tokens de respuesta durante el entrenamiento. La arquitectura subyacente es la del Qwen3-1.7B original (transformer denso de 2.031.739.904 parámetros), y el modelo conserva la plantilla de chat de Qwen3 en modo no-thinking (`enable_thinking=False`). Los pesos del profesor no se incluyen en el repositorio.
 
@@ -66,17 +66,17 @@ Mejora neta: +2,07 puntos porcentuales. La perdida surrogate top-16 registrada e
 - VRAM estimada en cuantizacion de 8 bits: aproximadamente 2-3 GB; en 4 bits, en torno a 1,5-2 GB (estimaciones a partir del numero de parametros; no se publican cuantizaciones oficiales).
 - GPU recomendadas: cualquier GPU consumer moderna con al menos 8 GB (RTX 3060 Ti, RTX 4060 Ti, RTX 4070, RTX 4090) para fp16; A100/H100 no son necesarias para este tamano, aunque permiten mayor throughput en lotes grandes.
 - Cabe en GPU consumer: si, en la mayoria de tarjetas con 8 GB o mas en fp16 y en tarjetas con 6 GB usando cuantizacion.
-- Opciones de despliegue: Transformers (version recomendada 4.56.2 o compatible), con PyTorch y Accelerate; el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y endpoints de HuggingFace. No se documentan recetas para vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: Transformers (version recomendada 4.56.2 o compatible), con PyTorch y Accelerate; el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y endpoints de Hugging Face. No se documentan recetas para vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-OPD-Qwen3-4B-Step200 | 2,03 B | no disponible | Destilacion OPD para matematicas | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B (estudiante inicial) | 2,03 B | no disponible en esta ficha | Modelo base de proposito general | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B (profesor) | 4 B (aprox.) | no disponible en esta ficha | Modelo mayor usado como profesor | Apache-2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | no disponible en esta ficha | Destilacion de razonamiento | MIT | HuggingFace |
+| Qwen3-1.7B-OPD-Qwen3-4B-Step200 | 2,03 B | no disponible | Destilacion OPD para matematicas | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B (estudiante inicial) | 2,03 B | no disponible en esta ficha | Modelo base de proposito general | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B (profesor) | 4 B (aprox.) | no disponible en esta ficha | Modelo mayor usado como profesor | Apache-2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | no disponible en esta ficha | Destilacion de razonamiento | MIT | Hugging Face |
 
 La comparacion con DeepSeek-R1-Distill-Qwen-1.5B es la mas directa en categoria (destilado pequeno orientado a razonamiento), pero no se dispone de resultados de benchmarks comunes en la informacion proporcionada para contrastar rendimiento.
 
@@ -95,7 +95,7 @@ La comparacion con DeepSeek-R1-Distill-Qwen-1.5B es la mas directa en categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leizhao7/Qwen3-1.7B-OPD-Qwen3-4B-Step200
+- Modelo en Hugging Face: https://huggingface.co/leizhao7/Qwen3-1.7B-OPD-Qwen3-4B-Step200
 - Articulo: https://arxiv.org/abs/2610.11247
 - Pagina del proyecto: https://leizhao7.github.io/opd-learning-signals/
 - Codigo y resultados numericos: https://github.com/leizhao7/opd-learning-signals

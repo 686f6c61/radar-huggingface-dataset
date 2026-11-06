@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils d3-mini OneJev es una redistribución de los pesos del modelo OmniJev/OneJev1.6-4B, publicada por el usuario Zayaan en HuggingFace. No se trata de un entrenamiento nuevo ni de un fine-tuning: la model card indica explícitamente que los pesos son los del modelo original en la revisión `bb248003b6`, sin cambios, reempaquetados en el formato de layout denominado "Zils d3-mini soup-body", que organiza las claves del state dict bajo los prefijos `language_model.*` y `visual.*`.
+Zils d3-mini OneJev es una redistribución de los pesos del modelo OmniJev/OneJev1.6-4B, publicada por el usuario Zayaan en Hugging Face. No se trata de un entrenamiento nuevo ni de un fine-tuning: la model card indica explícitamente que los pesos son los del modelo original en la revisión `bb248003b6`, sin cambios, reempaquetados en el formato de layout denominado "Zils d3-mini soup-body", que organiza las claves del state dict bajo los prefijos `language_model.*` y `visual.*`.
 
 El modelo cuenta con aproximadamente 4.539 millones de parámetros (4,54 mil millones) según los datos reales de safetensors, lo que lo sitúa en la categoría de modelos de tamaño medio con capacidades multimodales, a juzgar por la presencia del prefijo `visual.*` en el layout. El repositorio ocupa 9,1 GB, un tamaño coherente con pesos en precisión de 16 bits para ese número de parámetros.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Zils d3-mini OneJev (este) | 4,54 mil millones | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Redistribución sin cambios del modelo base en layout Zils |
-| OmniJev/OneJev1.6-4B | no disponible (presumiblemente ~4,5 mil millones) | no disponible | no disponible en esta ficha | HuggingFace | Modelo base original; fuente de los pesos |
+| Zils d3-mini OneJev (este) | 4,54 mil millones | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Redistribución sin cambios del modelo base en layout Zils |
+| OmniJev/OneJev1.6-4B | no disponible (presumiblemente ~4,5 mil millones) | no disponible | no disponible en esta ficha | Hugging Face | Modelo base original; fuente de los pesos |
 | Alternativas de ~4B densos | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados para una comparación rigurosa |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con modelos alternativos de la misma categoría.
@@ -83,6 +83,6 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zayaan/zils-d3mini-onejev
+- Repositorio Hugging Face: https://huggingface.co/Zayaan/zils-d3mini-onejev
 - Modelo base: https://huggingface.co/OmniJev/OneJev1.6-4B
 - Revisión del modelo base referenciada: `bb248003b6`

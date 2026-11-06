@@ -24,7 +24,7 @@ La informacion disponible es limitada en varios aspectos: el modelo solo declara
 | Etiquetas de salida | `safe`, `traversal`, `xss`, `sqli` |
 | Libreria de inferencia | `numpy` (sin PyTorch ni frameworks de deep learning) |
 | Tamano del repo | 0.0 GB (redondeado) |
-| Descargas / likes en HuggingFace | 0 / 1 |
+| Descargas / likes en Hugging Face | 0 / 1 |
 | Fecha de publicacion | 2026-10-18 |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ No se han identificado en la informacion proporcionada modelos open-weight compa
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| wardenfox/kit-1-lite | 115.716 | 200 caracteres | MIT | NumPy `.npz` | HuggingFace |
+| wardenfox/kit-1-lite | 115.716 | 200 caracteres | MIT | NumPy `.npz` | Hugging Face |
 | Alternativas open-weight comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se han identificado en la informacion proporcionada modelos open-weight compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wardenfox/kit-1-lite
+- Modelo en Hugging Face: https://huggingface.co/wardenfox/kit-1-lite
 - Sitio del autor (WardenFox): https://wardenfox.com
 - SecLists (datos de entrenamiento, MIT): https://github.com/danielmiessler/SecLists
 - PayloadsAllTheThings (datos de entrenamiento, MIT): https://github.com/swisskyrepo/PayloadsAllTheThings

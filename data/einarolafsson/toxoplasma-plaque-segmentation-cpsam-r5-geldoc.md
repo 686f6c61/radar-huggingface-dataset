@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `einarolafsson/toxoplasma-plaque-segmentation-cpsam-r5-geldoc` es un ajuste fino de Cellpose-SAM (`cpsam`, Cellpose 4.0.9) orientado a la segmentacion de placas de lisis de *Toxoplasma gondii* en imagenes de microscopia. Lo desarrolla el usuario de HuggingFace einarolafsson y pertenece a la familia de modelos de segmentacion de placas de Toxoplasma mantenida por el mismo autor, de la que ya existe una variante previa (`toxoplasma-plaque-segmentation-cpsam-r5`) construida sobre `cpsam_v2` y con una particion de entrenamiento distinta de 332 campos.
+El modelo `einarolafsson/toxoplasma-plaque-segmentation-cpsam-r5-geldoc` es un ajuste fino de Cellpose-SAM (`cpsam`, Cellpose 4.0.9) orientado a la segmentacion de placas de lisis de *Toxoplasma gondii* en imagenes de microscopia. Lo desarrolla el usuario de Hugging Face einarolafsson y pertenece a la familia de modelos de segmentacion de placas de Toxoplasma mantenida por el mismo autor, de la que ya existe una variante previa (`toxoplasma-plaque-segmentation-cpsam-r5`) construida sobre `cpsam_v2` y con una particion de entrenamiento distinta de 332 campos.
 
 El problema que resuelve es la cuantificacion automatica de ensayos de placa (plaque assays): contar y medir el area de placas a partir de imagenes de microscopia, una tarea que tradicionalmente se hace a mano y que es cuello de botella en cribados de compuestos antiparasitarios. El modelo esta etiquetado explicitamente como candidato y no promovido, con los grupos GRA8__Plate1, HI__Plate6 y Low__Plate3 reservados como conjuntos de validacion.
 
@@ -82,9 +82,9 @@ En esta ejecucion no se puntuo ningun modelo stock: las columnas correspondiente
 
 | Modelo | Tipo | Conjunto de evaluacion | F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| toxoplasma-plaque-segmentation-cpsam-r5-geldoc (este) | Ajuste fino de Cellpose-SAM `cpsam`, linaje r5 Gel Doc | Gel Doc (18 pocillos) | 0,6419 | CC-BY-4.0 | HuggingFace, 0 descargas |
+| toxoplasma-plaque-segmentation-cpsam-r5-geldoc (este) | Ajuste fino de Cellpose-SAM `cpsam`, linaje r5 Gel Doc | Gel Doc (18 pocillos) | 0,6419 | CC-BY-4.0 | Hugging Face, 0 descargas |
 | Incumbente r3 (referenciado como `toxoplasma_plaque_v3` en spaCR) | Modelo anterior de la misma familia | Gel Doc (mismas mascaras refrescadas) | 0,3285 | no disponible | no disponible |
-| toxoplasma-plaque-segmentation-cpsam-r5 | Ajuste fino de Cellpose-SAM `cpsam_v2`, particion de 332 campos | no disponible en esta informacion | no disponible | no disponible | HuggingFace |
+| toxoplasma-plaque-segmentation-cpsam-r5 | Ajuste fino de Cellpose-SAM `cpsam_v2`, particion de 332 campos | no disponible en esta informacion | no disponible | no disponible | Hugging Face |
 | Modelo stock Cellpose-SAM (`cpsam`) | Modelo base sin ajustar | No puntuado en esta ejecucion | no disponible | no disponible | No disponible en esta informacion |
 
 No se dispone de datos comparativos frente a otros segmentadores de microscopia (por ejemplo, variantes de U-Net o StarDist) en la informacion proporcionada.
@@ -106,7 +106,7 @@ No se dispone de datos comparativos frente a otros segmentadores de microscopia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/einarolafsson/toxoplasma-plaque-segmentation-cpsam-r5-geldoc
+- Modelo en Hugging Face: https://huggingface.co/einarolafsson/toxoplasma-plaque-segmentation-cpsam-r5-geldoc
 - Repositorio previo de la misma familia: https://huggingface.co/einarolafsson/toxoplasma-plaque-segmentation-cpsam-r5
 - Ficheros de evidencia dentro del repositorio: `metrics.csv`, `scorecard.csv`, `qc/comparison_vs_incumbent.csv`, `training_report.md`, `training/training_curves.png`, `scorecard.png`
 - No se han proporcionado en la informacion disponible enlaces a papers, blogs tecnicos, repositorios de codigo ni demos adicionales.

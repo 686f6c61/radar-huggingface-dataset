@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AVID-EPJ-Baseline-Models-and-Data no es un modelo de lenguaje, sino un repositorio de artefactos de investigación para corrección de errores cuánticos (QEC). Lo publica el usuario Terrano09 en HuggingFace bajo licencia MIT y contiene checkpoints calibrados de un decodificador de síndrome basado en programación dinámica exacta (denominado `AVID-Joint-DP-MAP`), bancos de pesos cuantizados en Q7.8 (enteros con signo de 16 bits), contratos de arquitectura congelados (`A01–A09`) y conjuntos de datos canónicos de síndromes para códigos de superficie CSS rotados con distancias `d=3` y `d=5`.
+AVID-EPJ-Baseline-Models-and-Data no es un modelo de lenguaje, sino un repositorio de artefactos de investigación para corrección de errores cuánticos (QEC). Lo publica el usuario Terrano09 en Hugging Face bajo licencia MIT y contiene checkpoints calibrados de un decodificador de síndrome basado en programación dinámica exacta (denominado `AVID-Joint-DP-MAP`), bancos de pesos cuantizados en Q7.8 (enteros con signo de 16 bits), contratos de arquitectura congelados (`A01–A09`) y conjuntos de datos canónicos de síndromes para códigos de superficie CSS rotados con distancias `d=3` y `d=5`.
 
 El problema que aborda es la decodificación de síndromes en códigos de superficie bajo regímenes de ruido no estacionarios (hotspots de TLS, crosstalk ZZ, deriva de frontera y estrés combinado). El repositorio incluye una comparativa de tasa de error lógico (LER) entre varias líneas base (`B0` BP estático, `B1` L-BFGS marginal, `B2` PID observable, `B3` tracker de covarianza, `B4` BP oráculo) y la propuesta AVID.
 
@@ -93,5 +93,5 @@ No se dispone de comparación con decodificadores externos (por ejemplo, MWPM de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Terrano09/AVID-EPJ-Baseline-Models-and-Data
+- Repositorio en Hugging Face: https://huggingface.co/Terrano09/AVID-EPJ-Baseline-Models-and-Data
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

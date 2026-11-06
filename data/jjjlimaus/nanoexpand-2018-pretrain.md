@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`jjjlimaus/nanoexpand-2018-pretrain` es un modelo de generacion de texto de aproximadamente 2.095 millones de parametros (2B) publicado por el usuario jjjlimaus en HuggingFace. El modelo se identifica con la etiqueta `sn38-nanoexpand`, lo que sugiere que pertenece a una familia de modelos denominada "nanoexpand" con una variante especifica "sn38", aunque no existe documentacion publica que detalle esta arquitectura.
+`jjjlimaus/nanoexpand-2018-pretrain` es un modelo de generacion de texto de aproximadamente 2.095 millones de parametros (2B) publicado por el usuario jjjlimaus en Hugging Face. El modelo se identifica con la etiqueta `sn38-nanoexpand`, lo que sugiere que pertenece a una familia de modelos denominada "nanoexpand" con una variante especifica "sn38", aunque no existe documentacion publica que detalle esta arquitectura.
 
-El modelo fue creado en agosto de 2026 y actualizado dos dias despues, acumulando unicamente 8 descargas y 0 likes en el momento de la consulta. Su acceso esta restringido (gated), lo que obliga a aceptar condiciones previas en HuggingFace antes de poder descargarlo. La ausencia de licencia, idiomas declarados, pipeline y documentacion tecnica hace que su evaluacion sea extremadamente limitada; se trata de un modelo con presencia minima en el ecosistema y sin evidencia de adopcion por parte de la comunidad.
+El modelo fue creado en agosto de 2026 y actualizado dos dias despues, acumulando unicamente 8 descargas y 0 likes en el momento de la consulta. Su acceso esta restringido (gated), lo que obliga a aceptar condiciones previas en Hugging Face antes de poder descargarlo. La ausencia de licencia, idiomas declarados, pipeline y documentacion tecnica hace que su evaluacion sea extremadamente limitada; se trata de un modelo con presencia minima en el ecosistema y sin evidencia de adopcion por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ El tamano del repositorio (297,6 GB) es notablemente elevado para un modelo de 2
 
 ## Capacidades
 
-- Generacion de texto: el modelo esta clasificado en HuggingFace dentro de la categoria "Text Generation", por lo que su funcion principal es la generacion de texto autoregresivo.
+- Generacion de texto: el modelo esta clasificado en Hugging Face dentro de la categoria "Text Generation", por lo que su funcion principal es la generacion de texto autoregresivo.
 - No se ha confirmado soporte para tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo de pensamiento.
 - No se ha declarado soporte multilingue; los idiomas soportados no estan especificados.
 - No se dispone de informacion sobre capacidades especiales adicionales.
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jjjlimaus/nanoexpand-2018-pretrain
+- Repositorio Hugging Face: https://huggingface.co/jjjlimaus/nanoexpand-2018-pretrain
 - Busqueda de modelos con tag sn38-nanoexpand: https://huggingface.co/models?other=sn38-nanoexpand
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo.

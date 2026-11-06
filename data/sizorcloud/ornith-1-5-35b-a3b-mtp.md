@@ -86,6 +86,6 @@ No se dispone de información sobre otras cabezas MTP de borrador comparables en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SizorCloud/Ornith-1.5-35B-A3B-MTP
+- Repositorio Hugging Face: https://huggingface.co/SizorCloud/Ornith-1.5-35B-A3B-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Release GGUF de origen (Unsloth): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF

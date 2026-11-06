@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_medmcqa_gradient_sft_qwen14b` es un modelo de generacion de texto subido al Hub de HuggingFace por el usuario `ishikaa`. Se trata, segun los metadatos disponibles, de un ajuste fino supervisado (SFT mediante la libreria TRL) sobre una base de la familia Qwen2 con aproximadamente 14.770 millones de parametros. El identificador del repositorio sugiere dos cosas: que el ajuste se ha realizado sobre el dataset MedMCQA (preguntas de opcion multiple de medicina) y que forma parte de un experimento de investigacion sobre adquisicion de datos o destilacion con entrenamiento por gradientes; ninguna de estas dos afirmaciones esta confirmada en la model card, que es una plantilla automatica sin rellenar.
+`ishikaa/acquisition_student_medmcqa_gradient_sft_qwen14b` es un modelo de generacion de texto subido al Hub de Hugging Face por el usuario `ishikaa`. Se trata, segun los metadatos disponibles, de un ajuste fino supervisado (SFT mediante la libreria TRL) sobre una base de la familia Qwen2 con aproximadamente 14.770 millones de parametros. El identificador del repositorio sugiere dos cosas: que el ajuste se ha realizado sobre el dataset MedMCQA (preguntas de opcion multiple de medicina) y que forma parte de un experimento de investigacion sobre adquisicion de datos o destilacion con entrenamiento por gradientes; ninguna de estas dos afirmaciones esta confirmada en la model card, que es una plantilla automatica sin rellenar.
 
 El interes del modelo es, por tanto, fundamentalmente experimental. No hay informacion publicada sobre el dataset exacto, los hiperparametros, la licencia o los idiomas soportados, y el repositorio acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha. Su relevancia practica es limitada hoy: sirve como punto de partida para quien quiera reproducir o auditar un pipeline de SFT sobre dominio medico, pero no como modelo listo para produccion.
 
@@ -75,10 +75,10 @@ No se dispone de datos de rendimiento de este modelo para una comparacion riguro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ishikaa/acquisition_student_medmcqa_gradient_sft_qwen14b` | 14,77B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-14B | 14,7B (orden de magnitud) | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Mistral-Nemo-Base-2407 | 12B (orden de magnitud) | 128.000 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama 3.1 8B | 8B (orden de magnitud) | 128.000 tokens | Licencia comunitaria Llama 3.1 | HuggingFace, con restricciones de uso |
+| `ishikaa/acquisition_student_medmcqa_gradient_sft_qwen14b` | 14,77B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-14B | 14,7B (orden de magnitud) | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Mistral-Nemo-Base-2407 | 12B (orden de magnitud) | 128.000 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama 3.1 8B | 8B (orden de magnitud) | 128.000 tokens | Licencia comunitaria Llama 3.1 | Hugging Face, con restricciones de uso |
 
 La diferencia clave frente a las alternativas no es de rendimiento, sino de trazabilidad: los tres modelos de referencia publican licencia, datos de entrenamiento y evaluaciones, mientras que este checkpoint no publica ninguno de esos tres elementos.
 
@@ -98,7 +98,7 @@ La diferencia clave frente a las alternativas no es de rendimiento, sino de traz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_medmcqa_gradient_sft_qwen14b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_medmcqa_gradient_sft_qwen14b
 - Paper de referencia del calculo de impacto de carbono citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - Repositorio de TRL (libreria de entrenamiento declarada): https://github.com/huggingface/trl

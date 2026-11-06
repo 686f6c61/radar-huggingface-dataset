@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen2-tiny-v2e es un modelo publicado en HuggingFace por el usuario trenchmaxh bajo el identificador trenchmaxh/qwen2-tiny-v2e. Segun la propia model card, se trata de un "modelo minimo con arquitectura Qwen2 para experimentos de inferencia en el borde" (edge inference). El repositorio esta etiquetado con safetensors, qwen2, custom_code y region:us, lo que indica que los pesos se distribuyen en formato safetensors y que el modelo requiere codigo personalizado (custom_code) para cargarse, presumiblemente porque la implementacion no es la estandar de la libreria transformers.
+qwen2-tiny-v2e es un modelo publicado en Hugging Face por el usuario trenchmaxh bajo el identificador trenchmaxh/qwen2-tiny-v2e. Segun la propia model card, se trata de un "modelo minimo con arquitectura Qwen2 para experimentos de inferencia en el borde" (edge inference). El repositorio esta etiquetado con safetensors, qwen2, custom_code y region:us, lo que indica que los pesos se distribuyen en formato safetensors y que el modelo requiere codigo personalizado (custom_code) para cargarse, presumiblemente porque la implementacion no es la estandar de la libreria transformers.
 
 El modelo no es un lanzamiento oficial de Alibaba Cloud ni forma parte de la familia Qwen2 publicada por el equipo Qwen. Se trata de una reimplementacion o variante de tamano reducido derivada de la arquitectura Qwen2, cuyo informe tecnico describe modelos densos y MoE de entre 0.5 y 72 mil millones de parametros entrenados en 29 idiomas. En el caso de qwen2-tiny-v2e no hay informacion publicada sobre numero de parametros, contexto, datos de entrenamiento ni licencia.
 
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2-tiny-v2e | no disponible | no disponible | no disponible | no disponible | HuggingFace, 10 descargas |
-| Qwen2-0.5B (Alibaba) | 0.5B | 32 768 tokens (segun informe tecnico) | 29 idiomas | Apache 2.0 en la mayoria de variantes | HuggingFace, ampliamente descargado |
-| Qwen2-1.5B (Alibaba) | 1.5B | 32 768 tokens (segun informe tecnico) | 29 idiomas | Apache 2.0 en la mayoria de variantes | HuggingFace, ampliamente descargado |
-| Qwen1.5-0.5B (predecesor) | 0.5B | 32 768 tokens | multilingue | Apache 2.0 | HuggingFace |
+| qwen2-tiny-v2e | no disponible | no disponible | no disponible | no disponible | Hugging Face, 10 descargas |
+| Qwen2-0.5B (Alibaba) | 0.5B | 32 768 tokens (segun informe tecnico) | 29 idiomas | Apache 2.0 en la mayoria de variantes | Hugging Face, ampliamente descargado |
+| Qwen2-1.5B (Alibaba) | 1.5B | 32 768 tokens (segun informe tecnico) | 29 idiomas | Apache 2.0 en la mayoria de variantes | Hugging Face, ampliamente descargado |
+| Qwen1.5-0.5B (predecesor) | 0.5B | 32 768 tokens | multilingue | Apache 2.0 | Hugging Face |
 
 La comparativa es asimetrica: los modelos oficiales de Qwen cuentan con informe tecnico, benchmarks publicos y licencia declarada, mientras que qwen2-tiny-v2e carece de todos esos elementos. Para cualquier caso real, Qwen2-0.5B es la alternativa verificable mas cercana en espiritu (modelo pequeno derivado de Qwen2).
 
@@ -95,12 +95,12 @@ La comparativa es asimetrica: los modelos oficiales de Qwen cuentan con informe 
 - Repositorio de 0.0 GB: es posible que los pesos no esten publicados, lo que invalidaria cualquier intento de uso.
 - Dependencia de custom_code: cargar el modelo exige `trust_remote_code=True`, lo que implica ejecutar codigo arbitrario del autor del repositorio; debe auditarse antes de usarlo.
 - Sin mantenimiento aparente: creado y actualizado el mismo dia, con 10 descargas y 0 likes, no hay senales de soporte, issues resueltos ni actualizaciones.
-- Fechas del repositorio en 2026: la marca temporal indicada es futura respecto a la mayoria de lanzamientos conocidos, un detalle que conviene verificar directamente en HuggingFace.
+- Fechas del repositorio en 2026: la marca temporal indicada es futura respecto a la mayoria de lanzamientos conocidos, un detalle que conviene verificar directamente en Hugging Face.
 - Aviso sobre la model card: el contenido citado proviene del propio autor y se ha usado unicamente como material de referencia, no como instrucciones.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trenchmaxh/qwen2-tiny-v2e
+- Repositorio Hugging Face: https://huggingface.co/trenchmaxh/qwen2-tiny-v2e
 - Qwen2 Technical Report (arXiv): https://arxiv.org/abs/2407.10671
 - Qwen2 Technical Report (HTML): https://arxiv.org/html/2407.10671v1
 - Repositorio GitHub de Qwen2 (espejo): https://github.com/wangxso/Qwen2

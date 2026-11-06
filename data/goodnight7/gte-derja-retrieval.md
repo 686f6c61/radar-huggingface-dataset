@@ -93,7 +93,7 @@ La comparativa se limita a los datos proporcionados en la model card. Se incluye
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Goodnight7/gte-derja-retrieval
+- Modelo en Hugging Face: https://huggingface.co/Goodnight7/gte-derja-retrieval
 - Dataset de benchmark: https://huggingface.co/datasets/Goodnight7/derja-retrieval-benchmark
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-multilingual-base
 - Repositorio de dataset tunecino (referencia externa): https://github.com/bahaeddinmselmi/tunisian-arabic-ai-dataset

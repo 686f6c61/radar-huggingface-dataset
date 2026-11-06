@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_simpleavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_simpleavg_merge
 - Modelo relacionado (sin "simpleavg"): https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_merge (vía FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_merge)
 - Modelo relacionado (unfiltered 4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg
 - Modelo relacionado (filtered 4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg

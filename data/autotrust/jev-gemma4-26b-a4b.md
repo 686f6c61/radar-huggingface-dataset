@@ -91,9 +91,9 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (25,
 
 | Modelo | Parametros | Contexto | Decision Index (balanced skill) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| autotrust/JEV-Gemma4-26B-A4B | 25,8 mil millones totales, ~4 mil millones activos | no disponible | 58.05 | Apache 2.0 | Pesos abiertos en HuggingFace |
-| google/gemma-4-26B-A4B-it | 26 mil millones totales, ~4 mil millones activos | no disponible | no disponible | no disponible en la informacion proporcionada | Modelo base en HuggingFace |
-| autotrust/JEV-27B | no disponible | no disponible | 53.30 | no disponible | Pesos abiertos en HuggingFace |
+| autotrust/JEV-Gemma4-26B-A4B | 25,8 mil millones totales, ~4 mil millones activos | no disponible | 58.05 | Apache 2.0 | Pesos abiertos en Hugging Face |
+| google/gemma-4-26B-A4B-it | 26 mil millones totales, ~4 mil millones activos | no disponible | no disponible | no disponible en la informacion proporcionada | Modelo base en Hugging Face |
+| autotrust/JEV-27B | no disponible | no disponible | 53.30 | no disponible | Pesos abiertos en Hugging Face |
 | TypeSafe Jev 1.13 | no disponible | no disponible | 57.91 | Propietaria (modelo alojado y cerrado) | Solo servicio alojado |
 
 ## Limitaciones y advertencias
@@ -111,7 +111,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (25,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/JEV-Gemma4-26B-A4B
+- Modelo en Hugging Face: https://huggingface.co/autotrust/JEV-Gemma4-26B-A4B
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Modelo relacionado autotrust/JEV-27B: https://huggingface.co/autotrust/JEV-27B
 - Resultados del Decision Index: https://huggingface.co/datasets/autotrust/jev-decision-index-results

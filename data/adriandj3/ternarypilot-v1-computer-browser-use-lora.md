@@ -108,8 +108,8 @@ La información disponible solo permite comparar contra el modelo base y contra 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adriandj3/TernaryPilot-v1-Computer-Browser-Use-LoRA
-- Perfil del autor en HuggingFace: https://huggingface.co/adriandj3
+- Repositorio Hugging Face: https://huggingface.co/adriandj3/TernaryPilot-v1-Computer-Browser-Use-LoRA
+- Perfil del autor en Hugging Face: https://huggingface.co/adriandj3
 - GitHub del autor: https://github.com/ArtyomITA
 - LinkedIn del autor: https://www.linkedin.com/in/adrian-ciprian-iancu-a2a477391
 - Modelo base (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf

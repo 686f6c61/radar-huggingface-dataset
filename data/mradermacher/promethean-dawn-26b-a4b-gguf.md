@@ -19,7 +19,7 @@ La relevancia de esta ficha radica en que se trata de una distribucion cuantizad
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (IQ4_XS mencionado en etiquetas de la model card, no incluido en la tabla de ficheros publicada) |
 | Idiomas soportados | ingles (eng) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo de origen en HuggingFace con convert_type: hf) |
+| Formato de pesos | GGUF (repo de origen en Hugging Face con convert_type: hf) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Promethean-Dawn-26B-A4B-GGUF | ~26B | ~4B (inferido) | no disponible | Apache 2.0 | ingles | GGUF (este repo) |
-| Naphula/Orion-26B-A4B-v1 | ~26B (inferido por nombre) | ~4B (inferido) | no disponible | no disponible | no disponible | HuggingFace, cuantizado por mradermacher |
-| Naphula/Goetia-26B-A4B-v1.7 | ~26B (inferido por nombre) | ~4B (inferido) | no disponible | no disponible | no disponible | HuggingFace, merge con mergekit-exp |
+| Naphula/Orion-26B-A4B-v1 | ~26B (inferido por nombre) | ~4B (inferido) | no disponible | no disponible | no disponible | Hugging Face, cuantizado por mradermacher |
+| Naphula/Goetia-26B-A4B-v1.7 | ~26B (inferido por nombre) | ~4B (inferido) | no disponible | no disponible | no disponible | Hugging Face, merge con mergekit-exp |
 
 Los tres modelos comparten el patron de nomenclatura 26B-A4B y el uso de mergekit-exp por parte del mismo autor (Naphula), lo que apunta a arquitecturas MoE de tamano similar. No se dispone de datos de rendimiento comparados que permitan establecer una jerarquia objetiva entre ellos.
 

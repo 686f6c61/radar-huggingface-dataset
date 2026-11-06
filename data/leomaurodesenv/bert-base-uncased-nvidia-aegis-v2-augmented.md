@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`leomaurodesenv/bert-base-uncased-nvidia-aegis-v2-augmented` es un ajuste fino (fine-tuning) del modelo `google-bert/bert-base-uncased` publicado por el usuario leomaurodesenv en HuggingFace. Se trata de un clasificador de texto con 109.483.778 parámetros, entrenado con la librería Transformers y distribuido en formato safetensors bajo licencia Apache 2.0. El repositorio tiene un tamaño de 13,1 GB, muy superior al peso teórico de los pesos del modelo, lo que sugiere la presencia de checkpoints intermedios u otros artefactos de entrenamiento además de los pesos finales.
+`leomaurodesenv/bert-base-uncased-nvidia-aegis-v2-augmented` es un ajuste fino (fine-tuning) del modelo `google-bert/bert-base-uncased` publicado por el usuario leomaurodesenv en Hugging Face. Se trata de un clasificador de texto con 109.483.778 parámetros, entrenado con la librería Transformers y distribuido en formato safetensors bajo licencia Apache 2.0. El repositorio tiene un tamaño de 13,1 GB, muy superior al peso teórico de los pesos del modelo, lo que sugiere la presencia de checkpoints intermedios u otros artefactos de entrenamiento además de los pesos finales.
 
-La model card es la plantilla autogenerada por el `Trainer` de HuggingFace y no ha sido completada por el autor: la descripción, los usos previstos y la composición del conjunto de datos figuran como "More information needed". El único dato de rendimiento declarado es una accuracy de 0,8823 y una pérdida de validación de 0,2871 sobre un conjunto de evaluación cuyo contenido no se especifica. El sufijo "nvidia-aegis-v2-augmented" del nombre sugiere un ajuste orientado a clasificación de seguridad de contenido, pero esta interpretación no está confirmada en ninguna parte de la documentación publicada.
+La model card es la plantilla autogenerada por el `Trainer` de Hugging Face y no ha sido completada por el autor: la descripción, los usos previstos y la composición del conjunto de datos figuran como "More information needed". El único dato de rendimiento declarado es una accuracy de 0,8823 y una pérdida de validación de 0,2871 sobre un conjunto de evaluación cuyo contenido no se especifica. El sufijo "nvidia-aegis-v2-augmented" del nombre sugiere un ajuste orientado a clasificación de seguridad de contenido, pero esta interpretación no está confirmada en ninguna parte de la documentación publicada.
 
 El modelo acumula 92 descargas y 0 "likes" desde su publicación, con última actualización el 18 de septiembre de 2026. Etiquetado como `endpoints_compatible` y con soporte declarado para `text-embeddings-inference`, está pensado para desplegarse como servicio de clasificación de baja latencia. Su relevancia práctica es limitada como modelo de propósito general, pero resulta un ejemplo útil de ajuste fino ligero sobre BERT base con recursos modestos.
 
@@ -40,7 +40,7 @@ El ajuste fino se realizó con los siguientes hiperparámetros declarados en la 
 - Clasificación de texto a nivel de secuencia: asigna una etiqueta (presumiblemente binaria) a una entrada de hasta 512 tokens.
 - Extracción de representaciones contextuales mediante la salida del `[CLS]` o de los estados ocultos, reutilizables como embeddings para otras tareas.
 - Inferencia de baja latencia en CPU o GPU, apta para entornos de alto volumen de peticiones cortas.
-- Compatible con `text-embeddings-inference` y con despliegue en HuggingFace Inference Endpoints, según las etiquetas del repositorio.
+- Compatible con `text-embeddings-inference` y con despliegue en Hugging Face Inference Endpoints, según las etiquetas del repositorio.
 - No dispone de tool calling, function calling ni capacidades de agente: es un encoder discriminativo, no un modelo generativo.
 - No tiene modo de razonamiento, ni capacidades de visión, audio o generación de código.
 - Capacidad multilingüe: no declarada; el vocabulario y el preentrenamiento del modelo base son mayoritariamente en inglés, por lo que el rendimiento fuera de ese idioma es incierto.
@@ -85,7 +85,7 @@ No se especifica qué conjunto de datos se usó para evaluar, ni su tamaño, ni 
 - Inferencia en CPU: viable para lotes pequeños y secuencias cortas; es el escenario más razonable para este tamaño de modelo.
 - GPU consumer: cabe sin problemas en cualquier GPU con 4 GB o más de VRAM (RTX 3060, RTX 4060, RTX 4090, e incluso iGPU con memoria compartida), siempre que se use precisión reducida y lotes moderados.
 - GPU de datacenter: A100, H100, L4 o T4 no son necesarias para el modelo en sí, pero sí útiles para servir grandes volúmenes de peticiones en paralelo.
-- Despliegue: al estar etiquetado como `endpoints_compatible` y con soporte de `text-embeddings-inference`, las opciones naturales son TEI, HuggingFace Inference Endpoints y TorchServe. También es posible servirlo con FastAPI + Transformers, o exportarlo a ONNX/OpenVINO para CPUs. No se publican artefactos GGUF ni cuantizaciones para llama.cpp u Ollama.
+- Despliegue: al estar etiquetado como `endpoints_compatible` y con soporte de `text-embeddings-inference`, las opciones naturales son TEI, Hugging Face Inference Endpoints y TorchServe. También es posible servirlo con FastAPI + Transformers, o exportarlo a ONNX/OpenVINO para CPUs. No se publican artefactos GGUF ni cuantizaciones para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. No se publican mediciones de latencia ni de peticiones por segundo. Como referencia estructural, un BERT base es un modelo de decenas de milisegundos por lote en GPU moderna, pero cualquier cifra concreta para este checkpoint requeriría medirla.
 - Nota sobre el repositorio: 13,1 GB de tamaño para un modelo de 440 MB en FP32 implica que la mayor parte del espacio corresponde a checkpoints intermedios y estados del optimizador, no a los pesos finales.
 
@@ -93,11 +93,11 @@ No se especifica qué conjunto de datos se usó para evaluar, ni su tamaño, ni 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bert-base-uncased-nvidia-aegis-v2-augmented | 109,5 M | 512 | Clasificacion de texto (tarea no documentada) | Apache 2.0 | HuggingFace, safetensors |
-| google-bert/bert-base-uncased | 110 M | 512 | Modelo base preentrenado, sin cabeza de tarea | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | 66 M | 512 | Modelo base destilado, sin cabeza de tarea | Apache 2.0 | HuggingFace |
-| roberta-base | 125 M | 512 | Modelo base preentrenado (BERT con mejoras de entrenamiento) | MIT | HuggingFace |
-| unitary/toxic-bert | 110 M | 512 | Clasificacion de toxicidad (multietiqueta) | no verificada en esta ficha | HuggingFace |
+| bert-base-uncased-nvidia-aegis-v2-augmented | 109,5 M | 512 | Clasificacion de texto (tarea no documentada) | Apache 2.0 | Hugging Face, safetensors |
+| google-bert/bert-base-uncased | 110 M | 512 | Modelo base preentrenado, sin cabeza de tarea | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | 66 M | 512 | Modelo base destilado, sin cabeza de tarea | Apache 2.0 | Hugging Face |
+| roberta-base | 125 M | 512 | Modelo base preentrenado (BERT con mejoras de entrenamiento) | MIT | Hugging Face |
+| unitary/toxic-bert | 110 M | 512 | Clasificacion de toxicidad (multietiqueta) | no verificada en esta ficha | Hugging Face |
 
 El modelo aquí descrito no aporta ninguna ventaja arquitectónica frente a BERT base: es el mismo encoder con una cabeza ajustada. Su única diferencia es el ajuste fino, cuyas condiciones (datos, etiquetas, criterio de selección del checkpoint) no están documentadas, lo que impide compararlo con alternativas de la misma categoría en términos de rendimiento. `distilbert-base-uncased` ofrece aproximadamente un 40 % menos de parámetros con una pérdida de precisión típicamente pequeña en tareas de clasificación, y suele ser preferible cuando el coste de inferencia es la restricción principal.
 
@@ -116,7 +116,7 @@ El modelo aquí descrito no aporta ninguna ventaja arquitectónica frente a BERT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/bert-base-uncased-nvidia-aegis-v2-augmented
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/bert-base-uncased-nvidia-aegis-v2-augmented
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Paper original de BERT: no disponible en la informacion proporcionada
 - Repositorio de codigo del autor: no disponible en la informacion proporcionada

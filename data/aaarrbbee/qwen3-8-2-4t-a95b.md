@@ -82,8 +82,8 @@ No se dispone de datos suficientes para comparar con otros modelos abiertos de t
 
 ## Enlaces
 
-- HuggingFace (repo espejo): https://huggingface.co/aaarrbbee/Qwen3.8-2.4T-A95B
-- HuggingFace (repo oficial): https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+- Hugging Face (repo espejo): https://huggingface.co/aaarrbbee/Qwen3.8-2.4T-A95B
+- Hugging Face (repo oficial): https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - QwenCloud (modelo): https://www.qwencloud.com/models/qwen3.8-2.4t-a95b
 - Artículo de análisis (apxml): https://apxml.com/models/qwen38-24t-a95b
 - GitHub oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

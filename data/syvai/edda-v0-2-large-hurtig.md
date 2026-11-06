@@ -97,10 +97,10 @@ El único clip que difiere es un empate casi exacto en precisión media (fp16): 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syvai/edda-v0.2-large-hurtig
+- Modelo en Hugging Face: https://huggingface.co/syvai/edda-v0.2-large-hurtig
 - Modelo base Edda v0.2 large: https://huggingface.co/danish-foundation-models/edda-v0.2-large
 - Alexandra Institute: https://alexandra.dk
-- Danish Foundation Models en HuggingFace: https://huggingface.co/danish-foundation-models
+- Danish Foundation Models en Hugging Face: https://huggingface.co/danish-foundation-models
 - Repositorio DFlash de z-lab: https://github.com/z-lab/dflash
 - Paper de DFlash: https://arxiv.org/abs/2602.06036
 - Leaderboard danés de ASR: https://huggingface.co/spaces/RyeAI/danish-asr-leaderboard

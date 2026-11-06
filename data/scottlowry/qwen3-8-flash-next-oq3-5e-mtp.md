@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-oQ3.5e-mtp es una version cuantizada del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario scottlowry en HuggingFace. Se trata de una conversion a 3 bits mediante cuantizacion de precision mixta con la herramienta oQ (oMLX v0.7.1.dev1), empaquetada en formato MLX safetensors para su ejecucion en el framework MLX de Apple. El repositorio ocupa 89,8 GB y declara 179.999.981.459 parametros totales, lo que situa al modelo base en la categoria de aproximadamente 180.000 millones de parametros.
+Qwen3.8-Flash-Next-oQ3.5e-mtp es una version cuantizada del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario scottlowry en Hugging Face. Se trata de una conversion a 3 bits mediante cuantizacion de precision mixta con la herramienta oQ (oMLX v0.7.1.dev1), empaquetada en formato MLX safetensors para su ejecucion en el framework MLX de Apple. El repositorio ocupa 89,8 GB y declara 179.999.981.459 parametros totales, lo que situa al modelo base en la categoria de aproximadamente 180.000 millones de parametros.
 
 El modelo no aporta pesos originales ni entrenamiento propio: es exclusivamente una redistribucion optimizada para inferencia con memoria reducida. Su relevancia practica esta en permitir ejecutar un modelo de esa escala en hardware con memoria unificada de Apple Silicon, donde de otro modo el modelo en precision completa no cabria. El sufijo "mtp" del nombre aparece en el identificador del repositorio, pero la model card no documenta su significado, por lo que no se puede confirmar a que hace referencia.
 
@@ -80,10 +80,10 @@ No se dispone de informacion sobre cuantizaciones alternativas comparables del m
 
 | Modelo | Parametros | Formato | Cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| scottlowry/Qwen3.8-Flash-Next-oQ3.5e-mtp | 179.999.981.459 | MLX safetensors | 3 bits, group size 64, precision mixta | 89,8 GB | no disponible | publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible en esta informacion | no disponible | sin cuantizar | no disponible | no disponible | publico en HuggingFace |
+| scottlowry/Qwen3.8-Flash-Next-oQ3.5e-mtp | 179.999.981.459 | MLX safetensors | 3 bits, group size 64, precision mixta | 89,8 GB | no disponible | publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-Flash-Next (base) | no disponible en esta informacion | no disponible | sin cuantizar | no disponible | no disponible | publico en Hugging Face |
 
-No se han identificado en la informacion disponible otros modelos comparables de la misma categoria (mismo orden de parametros y mismo proposito de despliegue local). Cualquier comparacion adicional requeriria consultar el catalogo de HuggingFace y la documentacion del modelo base.
+No se han identificado en la informacion disponible otros modelos comparables de la misma categoria (mismo orden de parametros y mismo proposito de despliegue local). Cualquier comparacion adicional requeriria consultar el catalogo de Hugging Face y la documentacion del modelo base.
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ No se han identificado en la informacion disponible otros modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ3.5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ3.5e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 

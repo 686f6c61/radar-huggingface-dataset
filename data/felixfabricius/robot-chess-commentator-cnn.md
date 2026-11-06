@@ -86,6 +86,6 @@ La comparación muestra una ventaja abrumadora del modelo CNN en precisión y co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/felixfabricius/robot-chess-commentator-cnn
+- Modelo en Hugging Face: https://huggingface.co/felixfabricius/robot-chess-commentator-cnn
 - Dataset de entrenamiento: https://huggingface.co/datasets/felixfabricius/robot-chess-commentator-squares
 - Repositorio del proyecto (GPL-3.0): https://github.com/felixfabricius/robot-chess-commentator

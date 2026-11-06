@@ -22,7 +22,7 @@ No es un modelo generativo ni un modelo de lenguaje: es un componente de visión
 | Formato de pesos | PyTorch (`.pt`) y ONNX (opset 17) |
 | Entrada | Imagen RGB, redimensionado bilineal a 288×288, normalizacion ImageNet (`mean=[0.485,0.456,0.406]`, `std=[0.229,0.224,0.225]`), tensor NCHW float32 |
 | Salida | Logits `[clear, occupied]` → softmax → `P(occupied)` |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Modelo base | efficientnet-b0 |
 | Descargas / likes | 0 / 0 |
 
@@ -102,7 +102,7 @@ No se dispone de comparaciones publicadas con otros clasificadores de ocupación
 |---|---|---|---|---|---|
 | Azar (linea base teorica) | no aplica | 0,500 | 0,500 | no aplica | no aplica |
 | Backbone EfficientNet-B0 ImageNet congelado + sonda lineal | ~4,0 M + cabeza | 0,896 | 0,957 | segun pesos ImageNet | no distribuida como artefacto independiente |
-| BedNet (ajuste fino completo) | 4.010.110 | 0,891 | 0,960 | CC-BY 4.0 | HuggingFace, `.pt` y `.onnx` |
+| BedNet (ajuste fino completo) | 4.010.110 | 0,891 | 0,960 | CC-BY 4.0 | Hugging Face, `.pt` y `.onnx` |
 
 Para el resto de alternativas del mismo tamano o de la misma tarea: no disponible.
 
@@ -123,6 +123,6 @@ Para el resto de alternativas del mismo tamano o de la misma tarea: no disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SugaryCoffee/BedNet
+- Modelo en Hugging Face: https://huggingface.co/SugaryCoffee/BedNet
 - Repositorio `iholmdahl/Bednet_model` (https://github.com/iholmdahl/Bednet_model): no relacionado; trata sobre modelos epidemiológicos de uso de mosquiteras contra la malaria y no guarda relación con este clasificador de impresión 3D.
 - Resto de resultados de la búsqueda web (guías de herramientas de IA en Tor, generadores de arte, detectores de imágenes generadas, portales de login ajenos): no relevantes para este modelo. No se han encontrado papers, blogs ni demos adicionales en la información disponible.

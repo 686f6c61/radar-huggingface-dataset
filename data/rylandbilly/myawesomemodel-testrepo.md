@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario RylandBilly bajo el identificador `RylandBilly/MyAwesomeModel-TestRepo`. La informacion disponible presenta una contradiccion importante: los metadatos del repositorio lo etiquetan como un modelo basado en BERT, con pipeline de `feature-extraction`, libreria `transformers` y licencia MIT, mientras que la model card describe un modelo generativo de razonamiento con mejoras en matematicas, programacion y logica. Ademas, el tamano del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos publicados.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario RylandBilly bajo el identificador `RylandBilly/MyAwesomeModel-TestRepo`. La informacion disponible presenta una contradiccion importante: los metadatos del repositorio lo etiquetan como un modelo basado en BERT, con pipeline de `feature-extraction`, libreria `transformers` y licencia MIT, mientras que la model card describe un modelo generativo de razonamiento con mejoras en matematicas, programacion y logica. Ademas, el tamano del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos publicados.
 
 La model card afirma que esta version mejora la profundidad de razonamiento respecto a una version anterior, apoyandose en mas recursos de computo y optimizaciones algoritmicas durante el post-entrenamiento. Menciona una mejora en AIME 2025 del 70% al 87.5% de precision y un aumento del consumo medio de tokens por pregunta de 12K a 23K, ademas de una reduccion de alucinaciones y mejor soporte de function calling. No se especifican parametros totales, contexto, arquitectura concreta ni composicion del dataset.
 
@@ -23,7 +23,7 @@ Dado el estado del repositorio (0 likes, 41 descargas, sin pesos, creado y actua
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. El tag de HuggingFace apunta a BERT, lo que implicaria un transformer encoder orientado a `feature-extraction` (representaciones de frases o tokens), pero la model card describe capacidades generativas y de razonamiento propias de un modelo decoder. Esta discrepancia no puede resolverse con los datos disponibles.
+No hay informacion verificable sobre la arquitectura. El tag de Hugging Face apunta a BERT, lo que implicaria un transformer encoder orientado a `feature-extraction` (representaciones de frases o tokens), pero la model card describe capacidades generativas y de razonamiento propias de un modelo decoder. Esta discrepancia no puede resolverse con los datos disponibles.
 
 Respecto al entrenamiento, la model card menciona de forma generica un "post-entrenamiento" con mas recursos de computo y "mecanismos de optimizacion algoritmica", sin detallar numero de tokens, composicion del dataset, ni si se empleo RLHF, DPO u otra tecnica. Tampoco se documentan innovaciones concretas como decodificacion especulativa o atencion lineal. Todos estos datos deben considerarse no disponibles.
 
@@ -99,7 +99,7 @@ No disponible. La informacion aportada no permite identificar la categoria real 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RylandBilly/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/RylandBilly/MyAwesomeModel-TestRepo
 - Repositorio de codigo: la model card menciona "our code repository" sin proporcionar URL.
 - Web oficial / plataforma de chat y API: la model card menciona "our official website" sin proporcionar URL.
 - Paper: no disponible.

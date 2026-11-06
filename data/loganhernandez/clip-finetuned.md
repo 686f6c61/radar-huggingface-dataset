@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Loganhernandez/clip-finetuned es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de CLIP orientada a tareas de retrieval (recuperacion imagen-texto). No se trata de un modelo entrenado, sino de un esqueleto de codigo con una configuracion de arquitectura y un checkpoint de inicializacion valido unicamente para pruebas de humo. El autor lo describe explicitamente como "experimental" y aclara que el fichero `model.safetensors` no constituye un checkpoint entrenado ni evaluado.
+Loganhernandez/clip-finetuned es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de CLIP orientada a tareas de retrieval (recuperacion imagen-texto). No se trata de un modelo entrenado, sino de un esqueleto de codigo con una configuracion de arquitectura y un checkpoint de inicializacion valido unicamente para pruebas de humo. El autor lo describe explicitamente como "experimental" y aclara que el fichero `model.safetensors` no constituye un checkpoint entrenado ni evaluado.
 
 La relevancia de esta ficha es, por tanto, limitada y hay que situarla en el terreno de la experimentacion, no de la produccion. El valor principal del repositorio es el codigo (`finetune.py`) y la receta de entrenamiento por defecto (AdamW con scheduler exponencial), pensados para que se puedan inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La model card no reclama ninguna puntuacion de benchmark.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de texto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| Loganhernandez/clip-finetuned | 49.600 segun safetensors | No disponible (77 tokens en el estandar CLIP) | BSD-3-Clause | HuggingFace | Checkpoint de inicializacion, sin entrenar ni evaluar |
-| OpenCLIP | Varios tamanos (familia ViT-B a ViT-bigG) | 77 tokens en la configuracion estandar | Codigo MIT; terminos de los pesos variables por checkpoint | HuggingFace y repositorio propio | Modelos entrenados con benchmarks publicados |
-| SigLIP | Familia de tamanos ViT (desde variantes pequenas hasta so400m) | No disponible en la informacion de esta busqueda | No verificada en la informacion disponible | HuggingFace | Modelos entrenados con benchmarks publicados |
+| Loganhernandez/clip-finetuned | 49.600 segun safetensors | No disponible (77 tokens en el estandar CLIP) | BSD-3-Clause | Hugging Face | Checkpoint de inicializacion, sin entrenar ni evaluar |
+| OpenCLIP | Varios tamanos (familia ViT-B a ViT-bigG) | 77 tokens en la configuracion estandar | Codigo MIT; terminos de los pesos variables por checkpoint | Hugging Face y repositorio propio | Modelos entrenados con benchmarks publicados |
+| SigLIP | Familia de tamanos ViT (desde variantes pequenas hasta so400m) | No disponible en la informacion de esta busqueda | No verificada en la informacion disponible | Hugging Face | Modelos entrenados con benchmarks publicados |
 
 La comparacion relevante no es de rendimiento, ya que este repositorio no publica metricas, sino de naturaleza del artefacto: OpenCLIP y SigLIP son checkpoints entrenados y evaluados, mientras que este repositorio es una base de codigo con pesos sin entrenar. Cualquier comparacion numerica seria enganosa con los datos disponibles.
 
@@ -86,6 +86,6 @@ La comparacion relevante no es de rendimiento, ya que este repositorio no public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Loganhernandez/clip-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Loganhernandez/clip-finetuned
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (unicamente paginas de soporte de servicios de Google sin relacion con el artefacto). No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

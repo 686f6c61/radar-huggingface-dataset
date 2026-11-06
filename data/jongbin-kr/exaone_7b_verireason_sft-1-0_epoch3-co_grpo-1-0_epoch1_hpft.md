@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1.0_epoch1_hpft` es un ajuste fino (fine-tuning) del modelo `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por el usuario de HuggingFace `Jongbin-kr`. El nombre sugiere un enfoque en razonamiento verificado ("verireason") y combina dos fases de entrenamiento: una primera fase de ajuste supervisado (SFT) y una segunda fase con optimización de política relativa por grupos (GRPO), técnica introducida en el artículo de DeepSeekMath. El modelo está diseñado para mejorar las capacidades de razonamiento del modelo base, probablemente en tareas que requieren lógica y matemáticas.
+El modelo `exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1.0_epoch1_hpft` es un ajuste fino (fine-tuning) del modelo `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por el usuario de Hugging Face `Jongbin-kr`. El nombre sugiere un enfoque en razonamiento verificado ("verireason") y combina dos fases de entrenamiento: una primera fase de ajuste supervisado (SFT) y una segunda fase con optimización de política relativa por grupos (GRPO), técnica introducida en el artículo de DeepSeekMath. El modelo está diseñado para mejorar las capacidades de razonamiento del modelo base, probablemente en tareas que requieren lógica y matemáticas.
 
 El repositorio tiene un tamaño de 2,7 GB, lo que indica que los pesos están almacenados en formato `safetensors`. A fecha de creación (agosto de 2026) no registra descargas ni valoraciones, por lo que se trata de un modelo reciente y aún no evaluado por la comunidad. La información pública es muy limitada: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento.
 
@@ -51,7 +51,7 @@ No se han documentado limitaciones específicas en la model card. Como todo mode
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Jongbin-kr/exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1.0_epoch1_hpft)
+- [Hugging Face del modelo](https://huggingface.co/Jongbin-kr/exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1.0_epoch1_hpft)
 - [Modelo base: LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct)
 - [Paper de GRPO (DeepSeekMath)](https://huggingface.co/papers/2402.03300)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/snu-skiml/verireason-grpo/runs/goe5bm0w)

@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LongLive-Plug-Wan2.2-TI2V-5B-cfg | Adaptador LoRA (PEFT) | No disponible (base de 5B) | Destilacion de CFG a generacion condicional | Apache-2.0 | HuggingFace (Efficient-Large-Model) |
-| LongLive-Plug-Wan2.2-TI2V-5B-few-step | Adaptador LoRA (PEFT) | No disponible (base de 5B) | Aceleracion de pocos pasos | Apache-2.0 | HuggingFace (Efficient-Large-Model) |
-| Wan-AI/Wan2.2-TI2V-5B | Modelo de difusion de video | 5B | Generacion image-to-video de referencia | No disponible en la informacion proporcionada | HuggingFace (Wan-AI) |
+| LongLive-Plug-Wan2.2-TI2V-5B-cfg | Adaptador LoRA (PEFT) | No disponible (base de 5B) | Destilacion de CFG a generacion condicional | Apache-2.0 | Hugging Face (Efficient-Large-Model) |
+| LongLive-Plug-Wan2.2-TI2V-5B-few-step | Adaptador LoRA (PEFT) | No disponible (base de 5B) | Aceleracion de pocos pasos | Apache-2.0 | Hugging Face (Efficient-Large-Model) |
+| Wan-AI/Wan2.2-TI2V-5B | Modelo de difusion de video | 5B | Generacion image-to-video de referencia | No disponible en la informacion proporcionada | Hugging Face (Wan-AI) |
 
 No se dispone de comparativas de rendimiento entre estas variantes ni frente a otros modelos de generacion de video de tamano similar, ya que no se han publicado metricas en la informacion disponible.
 
@@ -90,7 +90,7 @@ No se dispone de comparativas de rendimiento entre estas variantes ni frente a o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.2-TI2V-5B-cfg
+- Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.2-TI2V-5B-cfg
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - LoRA de pocos pasos recomendado: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.2-TI2V-5B-few-step
 - Paper: no disponible

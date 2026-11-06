@@ -57,7 +57,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 - **Falta de información técnica**: no se han publicado detalles sobre el entrenamiento, datos, licencia, ni requisitos de hardware.
 - **Riesgo de alucinación**: como modelo generativo de video, puede predecir escenarios físicamente incorrectos en entornos muy novedosos.
-- **Restricciones de licencia**: la licencia del modelo no está clara; el repositorio de HuggingFace asociado es un dataset con licencia MIT, pero no se aplica al modelo.
+- **Restricciones de licencia**: la licencia del modelo no está clara; el repositorio de Hugging Face asociado es un dataset con licencia MIT, pero no se aplica al modelo.
 - **Uso en producción**: aún es un modelo de investigación, sin validación en entornos reales de producción.
 - **Idiomas**: no se indica soporte multilingüe; es probable que la entrada sea visual y no textual.
 
@@ -124,7 +124,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 - **Falta de documentación técnica**: no se detallan los datos de entrenamiento, licencia, ni requisitos de hardware en el paper o el repositorio.
 - **Riesgo de alucinación**: como modelo generativo de video, puede producir escenarios físicamente inconsistentes en contextos extremadamente novedosos.
-- **Restricciones de licencia**: la licencia del modelo no está clara; el repositorio de HuggingFace asociado es un dataset con licencia MIT, no aplicable al modelo.
+- **Restricciones de licencia**: la licencia del modelo no está clara; el repositorio de Hugging Face asociado es un dataset con licencia MIT, no aplicable al modelo.
 - **Uso en producción**: es un modelo de investigación sin validación en entornos productivos reales.
 - **Idiomas**: no hay indicación de soporte de entrada de lenguaje; probablemente la entrada es únicamente visual.
 

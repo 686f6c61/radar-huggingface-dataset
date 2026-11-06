@@ -76,9 +76,9 @@ El unico dato cuantitativo aportado por el autor es comparativo y no numeCo: ser
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ielabgroup/ITER-Qwen3-Embedding-4B | 4,02 B | 8192 (consulta) / 512 (pasaje) | Recuperacion densa consciente del historial de interaccion del agente | apache-2.0 | HuggingFace; 15 descargas, 0 likes |
-| Qwen/Qwen3-Embedding-4B (base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Recuperacion densa convencional (consulta aislada) | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
-| ielabgroup/ITER-Qwen3-Embedding-0.6B | aproximadamente 0,6 B (segun denominacion; dato exacto no disponible) | no disponible en la informacion proporcionada | Misma formulacion ITER en menor tamano | no disponible en la informacion proporcionada | HuggingFace (version menor de la misma familia) |
+| ielabgroup/ITER-Qwen3-Embedding-4B | 4,02 B | 8192 (consulta) / 512 (pasaje) | Recuperacion densa consciente del historial de interaccion del agente | apache-2.0 | Hugging Face; 15 descargas, 0 likes |
+| Qwen/Qwen3-Embedding-4B (base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Recuperacion densa convencional (consulta aislada) | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
+| ielabgroup/ITER-Qwen3-Embedding-0.6B | aproximadamente 0,6 B (segun denominacion; dato exacto no disponible) | no disponible en la informacion proporcionada | Misma formulacion ITER en menor tamano | no disponible en la informacion proporcionada | Hugging Face (version menor de la misma familia) |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ielabgroup/ITER-Qwen3-Embedding-4B
+- Modelo en Hugging Face: https://huggingface.co/ielabgroup/ITER-Qwen3-Embedding-4B
 - Version 0.6B: https://huggingface.co/ielabgroup/ITER-Qwen3-Embedding-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-4B
 - Paper: https://arxiv.org/abs/2608.27912

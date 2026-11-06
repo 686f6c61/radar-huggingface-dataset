@@ -1,7 +1,7 @@
 # dronefreak/co-deformable-detr-swin-s-3x-coco
 
 ## Resumen
-Co-Deformable-DETR con backbone Swin-Small es un detector de objetos basado en la arquitectura Deformable-DETR y entrenado mediante el esquema Co-DETR de colaboración de asignaciones híbridas. Fue desarrollado por Zhuofan Zong, Guanglu Song y Yu Liu de SenseTime X-Lab, y presentado en ICCV 2023. El checkpoint que nos ocupa es un espejo no oficial, subido por el usuario dronefreak a HuggingFace, que replica el modelo original de 70,7 millones de parámetros y alcanza 55,3 de AP en el conjunto de validación de COCO 2017.
+Co-Deformable-DETR con backbone Swin-Small es un detector de objetos basado en la arquitectura Deformable-DETR y entrenado mediante el esquema Co-DETR de colaboración de asignaciones híbridas. Fue desarrollado por Zhuofan Zong, Guanglu Song y Yu Liu de SenseTime X-Lab, y presentado en ICCV 2023. El checkpoint que nos ocupa es un espejo no oficial, subido por el usuario dronefreak a Hugging Face, que replica el modelo original de 70,7 millones de parámetros y alcanza 55,3 de AP en el conjunto de validación de COCO 2017.
 
 El modelo resuelve el problema de la detección de objetos en imágenes y vídeo, con 80 clases del dataset COCO. Su relevancia radica en el enfoque de entrenamiento Co-DETR, que combina cabezas auxiliares con asignación one-to-many (ATSS y RoI head) junto al matching húngaro one-to-one del decoder DETR, lo que mejora la discriminación de las características del encoder y acelera la convergencia. No es un modelo de lenguaje ni admite carga con la librería `transformers`; la inferencia requiere el código de Co-DETR y el stack de OpenMMLab 2.x.
 
@@ -14,13 +14,13 @@ El modelo resuelve el problema de la detección de objetos en imágenes y vídeo
 | Longitud de contexto | No aplica (modelo de visión) |
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | No aplica (modelo de visión); el repo está etiquetado como inglés en metadatos |
-| Licencia | Desconocida / sin determinar (license: unknown en HuggingFace; "undetermined" en la model card) |
+| Licencia | Desconocida / sin determinar (license: unknown en Hugging Face; "undetermined" en la model card) |
 | Formato de pesos | PyTorch .pth (MMDetection 2.x) |
 
 ## Arquitectura y entrenamiento
 Co-DETR (Collaborative Hybrid Assignments Training) no introduce una arquitectura nueva, sino un esquema de entrenamiento que mejora la convergencia de los modelos DETR. Durante el entrenamiento, se acoplan al decoder principal cabezas auxiliares que emplean asignación one-to-many: una cabeza ATSS y una cabeza RoI estilo Faster R-CNN. Las propuestas positivas generadas por estas cabezas se realimentan al decoder como consultas adicionales. De esta forma, el encoder aprende características más discriminativas y el modelo converge en menos épocas. Las cabezas auxiliares se eliminan en la inferencia, de modo que el costo de ejecución es el de un Deformable-DETR estándar.
 
-El modelo usa un backbone Swin-Small (Swin Transformer) y fue entrenado sobre el dataset COCO con un plan de 36 épocas (3x). El checkpoint convertido a HuggingFace es el mismo que los autores distribuyeron originalmente en Google Drive, junto con su archivo de configuración de MMDetection. El repositorio espejo no redistribuye datos de entrenamiento.
+El modelo usa un backbone Swin-Small (Swin Transformer) y fue entrenado sobre el dataset COCO con un plan de 36 épocas (3x). El checkpoint convertido a Hugging Face es el mismo que los autores distribuyeron originalmente en Google Drive, junto con su archivo de configuración de MMDetection. El repositorio espejo no redistribuye datos de entrenamiento.
 
 ## Capacidades
 - Detección de objetos con 80 clases de COCO, incluyendo personas, vehículos, animales, objetos cotidianos y mobiliario.
@@ -60,16 +60,16 @@ Nota: el repositorio oficial de Sense-X menciona que Co-DETR con ViT-L supera 66
 ## Comparativa con modelos similares
 | Modelo | Parámetros | AP COCO | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Co-Deformable-DETR Swin-S (este) | 70,7M | 55,3 | Desconocida | HuggingFace (espejo) y Google Drive original |
+| Co-Deformable-DETR Swin-S (este) | 70,7M | 55,3 | Desconocida | Hugging Face (espejo) y Google Drive original |
 | Co-Deformable-DETR Swin-L | no disponible | 58,5 | Desconocida | Google Drive original |
-| Co-DETR ViT-L | 304M | 66,0 (test-dev) | Desconocida | HuggingFace oficial |
+| Co-DETR ViT-L | 304M | 66,0 (test-dev) | Desconocida | Hugging Face oficial |
 
 Nota: Co-DETR ViT-L está publicitado con 66,0 AP en COCO test-dev, pero la fuente tiene un error de formato ("65.666.0 AP").
 
 ## Limitaciones y advertencias
 - No es un release oficial; es un espejo no oficial del checkpoint original subido por un tercero. La autoría del método y de los pesos corresponde a SenseTime X-Lab.
 - La licencia de los pesos está sin determinar; no se puede asumir uso comercial sin verificación legal previa.
-- No soporta carga con `transformers`; requiere MMDetection 2.x y el código Co-DETR. Esto añade complejidad de despliegue frente a modelos con soporte nativo en HuggingFace.
+- No soporta carga con `transformers`; requiere MMDetection 2.x y el código Co-DETR. Esto añade complejidad de despliegue frente a modelos con soporte nativo en Hugging Face.
 - Solo detecta las 80 clases de COCO; no cubre clases personalizadas sin reentrenamiento.
 - El AP reportado (55,3) no está verificado por la comunidad ni por benchmarks independientes.
 - Como cualquier detector, puede producir falsos positivos en escenas con oclusiones, iluminación adversa o concurrencia de objetos.
@@ -78,7 +78,7 @@ Nota: Co-DETR ViT-L está publicitado con 66,0 AP en COCO test-dev, pero la fuen
 - El entorno requerido (PyTorch 1.11, MMCV-full 1.5.0) es antiguo y puede provocar conflictos de dependencias con versiones modernas de Python o CUDA.
 
 ## Enlaces
-- Página del modelo en HuggingFace: https://huggingface.co/dronefreak/co-deformable-detr-swin-s-3x-coco
+- Página del modelo en Hugging Face: https://huggingface.co/dronefreak/co-deformable-detr-swin-s-3x-coco
 - Repositorio oficial de Co-DETR: https://github.com/Sense-X/Co-DETR
 - Fork mantenido con entorno configurado: https://github.com/dronefreak/Co-DETR
 - Paper de Co-DETR (ICCV 2023): https://arxiv.org/abs/2211.12860

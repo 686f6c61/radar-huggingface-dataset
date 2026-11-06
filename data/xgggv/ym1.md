@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables específicos. Dado que s
 
 ## Enlaces
 
-- [HuggingFace - XGGGV/ym1](https://huggingface.co/XGGGV/ym1)
+- [Hugging Face - XGGGV/ym1](https://huggingface.co/XGGGV/ym1)
 - [MossyModels - AI Aimbot Models & YOLO Detection Models](https://mossymodels.com/) (no relacionado directamente, pero aparece en la búsqueda)
 - [Hugging Face - Comunidad](https://huggingface.co/) (página principal)
 - [CivArchive - Archivo de modelos de IA](https://civarchive.com/) (archivo de modelos de la comunidad)

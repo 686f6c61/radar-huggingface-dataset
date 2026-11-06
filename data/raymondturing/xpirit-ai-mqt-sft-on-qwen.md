@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Xpirit AI MQT SFT on Qwen | 8,19B | No disponible | Apache 2.0 | HuggingFace (safetensors, GGUF) | SFT de nicho sobre Qwen; sin benchmarks publicados |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (128K con RoPE scaling) | Apache 2.0 | HuggingFace, amplio ecosistema | Base generalista con benchmarks publicados |
-| Llama 3.1 8B Instruct | 8,0B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, Meta | Requiere aceptar licencia; uso comercial con restricciones |
-| Mistral 7B Instruct v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa generalista de tamano comparable |
+| Xpirit AI MQT SFT on Qwen | 8,19B | No disponible | Apache 2.0 | Hugging Face (safetensors, GGUF) | SFT de nicho sobre Qwen; sin benchmarks publicados |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (128K con RoPE scaling) | Apache 2.0 | Hugging Face, amplio ecosistema | Base generalista con benchmarks publicados |
+| Llama 3.1 8B Instruct | 8,0B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, Meta | Requiere aceptar licencia; uso comercial con restricciones |
+| Mistral 7B Instruct v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa generalista de tamano comparable |
 
 La comparacion con la base Qwen exacta no es posible porque la variante no esta documentada. En terminos de rendimiento medido, este modelo no aporta cifras, por lo que la comparativa se limita a parametros, contexto y licencia.
 
@@ -85,6 +85,6 @@ La comparacion con la base Qwen exacta no es posible porque la variante no esta 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RaymondTuring/xpirit-ai-mqt-sft-on-qwen
+- Hugging Face: https://huggingface.co/RaymondTuring/xpirit-ai-mqt-sft-on-qwen
 - Referencia bibliografica citada en la model card: *The Forgotten Quantum of Einstein*, M. M. de Siqueira, 3.ª ed., 2026 (paper con DOI permanente; enlace directo no disponible)
 - Repositorio, blog o demo del proyecto Xpirit AI: no disponible en la informacion proporcionada

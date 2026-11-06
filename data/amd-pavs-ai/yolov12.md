@@ -94,6 +94,6 @@ No se dispone en la información proporcionada de datos de parámetros, contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMD-PAVS-AI/yolov12
+- Modelo en Hugging Face: https://huggingface.co/AMD-PAVS-AI/yolov12
 - Scripts de YOLOv12 para AMD en el SDK: https://github.com/AMD-PAVS/physical_ai_sdk/blob/main/models/yolov12
 - Implementación upstream de YOLO12 (Ultralytics): https://github.com/ultralytics/ultralytics

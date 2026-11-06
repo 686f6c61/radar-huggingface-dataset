@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-TQ (esta ficha) | 9B | no disponible | `.mfq` (TQ) | Apache 2.0 | HuggingFace, runtime TyloQuant/MFQ |
-| Qwen/Qwen3.5-9B (base) | 9B | no disponible | safetensors (BF16) | Apache 2.0 | HuggingFace |
-| unsloth/Qwen3.5-9B-GGUF | 9B | no disponible | GGUF (recetas UD) | Apache 2.0 (heredada) | HuggingFace, llama.cpp/Ollama |
+| Qwen3.5-9B-TQ (esta ficha) | 9B | no disponible | `.mfq` (TQ) | Apache 2.0 | Hugging Face, runtime TyloQuant/MFQ |
+| Qwen/Qwen3.5-9B (base) | 9B | no disponible | safetensors (BF16) | Apache 2.0 | Hugging Face |
+| unsloth/Qwen3.5-9B-GGUF | 9B | no disponible | GGUF (recetas UD) | Apache 2.0 (heredada) | Hugging Face, llama.cpp/Ollama |
 
 La comparativa se limita a las variantes del mismo modelo base porque la informacion disponible no incluye datos de rendimiento que permitan contrastar con modelos de otros fabricantes. La diferencia practica entre las tres opciones es el formato y el ecosistema de runtime: GGUF ofrece compatibilidad amplia con llama.cpp y Ollama, mientras que TQ exige un runtime especifico pero reduce el tamano en las variantes de menor bits (4,277 GB en IQ2_XXS).
 
@@ -90,6 +90,6 @@ La comparativa se limita a las variantes del mismo modelo base porque la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tylogi/Qwen3.5-9B-TQ
+- Modelo en Hugging Face: https://huggingface.co/Tylogi/Qwen3.5-9B-TQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Recetas e imatrix UD: https://huggingface.co/unsloth/Qwen3.5-9B-GGUF

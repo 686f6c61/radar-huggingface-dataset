@@ -98,7 +98,7 @@ El autor indica que las puntuaciones publicas provienen de un harness distinto a
 
 | Modelo | Parametros | Tamano en disco | Contexto | Tool calling (BFCL v4, 120 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Underdog Saluki 27B 1.0 | ~26,9 B | 7,89 GB (IQ2-mix) | 32.768 tokens en la config de ejemplo | 88 | Apache 2.0 | GGUF en HuggingFace |
+| Underdog Saluki 27B 1.0 | ~26,9 B | 7,89 GB (IQ2-mix) | 32.768 tokens en la config de ejemplo | 88 | Apache 2.0 | GGUF en Hugging Face |
 | Qwen3.8-27B (completo) | ~26,9 B | 54 GB | maximo no disponible | 84 | Apache 2.0 | modelo base original |
 | Bonsai 2 | no disponible | 5,95 GB | no disponible | 70 | no disponible | no disponible |
 
@@ -120,7 +120,7 @@ Bonsai 2 aparece unicamente citado por el autor como referencia de tamano y punt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0
+- Modelo en Hugging Face: https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de cuantizacion GSQ-RCO del que deriva: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Fichero principal: `Underdog-Saluki-27B-1.0-IQ2-mix.gguf` (7,89 GB) en el repositorio anterior

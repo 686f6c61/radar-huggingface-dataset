@@ -77,7 +77,7 @@ No se dispone de informacion sobre otros modelos comparables en el mismo nicho (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henriqueimoveis/Echoes-1.5-Base-PT-BR
+- Modelo en Hugging Face: https://huggingface.co/henriqueimoveis/Echoes-1.5-Base-PT-BR
 - Variante Instruct: https://huggingface.co/henriqueimoveis/Echoes-1.5-Instruct-PT-BR
 - Predecesor Echoes-1-Base: https://huggingface.co/henriqueimoveis/Echoes-1-Base-PT-BR
 - Echoes-1-Instruct (generacion anterior): https://huggingface.co/henriqueimoveis/Echoes-1-Instruct-PT-BR

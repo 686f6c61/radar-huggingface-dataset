@@ -81,7 +81,7 @@ La informacion proporcionada no incluye datos de modelos comparables (parametros
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MrC4t/molmoact2_bi_so_bin5 | 5,6 B (aprox.) | no disponible | sin evaluacion publicada | Apache 2.0 | HuggingFace |
+| MrC4t/molmoact2_bi_so_bin5 | 5,6 B (aprox.) | no disponible | sin evaluacion publicada | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ La informacion proporcionada no incluye datos de modelos comparables (parametros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrC4t/molmoact2_bi_so_bin5
+- Modelo en Hugging Face: https://huggingface.co/MrC4t/molmoact2_bi_so_bin5
 - Dataset de entrenamiento: https://huggingface.co/datasets/MrC4t/bimanual_toy_bin
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=MrC4t/bimanual_toy_bin
 - Blog de MolmoAct2 (Ai2): https://allenai.org/blog/molmoact2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`victorpark5/mae-contrastive-lab` es un prototipo de investigación publicado en HuggingFace que implementa una arquitectura denominada "Mae" orientada a un objetivo de tipo *contrastive*. El repositorio lo firma el usuario `victorpark5` y se distribuye con licencia MIT. No es un modelo entrenado: la propia model card lo describe como un punto de partida experimental cuyo `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo con rendimiento verificado.
+`victorpark5/mae-contrastive-lab` es un prototipo de investigación publicado en Hugging Face que implementa una arquitectura denominada "Mae" orientada a un objetivo de tipo *contrastive*. El repositorio lo firma el usuario `victorpark5` y se distribuye con licencia MIT. No es un modelo entrenado: la propia model card lo describe como un punto de partida experimental cuyo `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo con rendimiento verificado.
 
 El dato más relevante para evaluarlo es el recuento real de parámetros del checkpoint (24.832 parámetros, es decir, ~24,8 mil, no millones), que contrasta con la etiqueta `giant` que aparece en la configuración de arquitectura. Esa etiqueta documenta una plantilla de ajustes y formatos de fichero, no un modelo de gran escala. El tamaño del repositorio es de 0,0 GB y el modelo no registra descargas ni *likes*.
 
@@ -86,6 +86,6 @@ La conclusión práctica es que este repositorio no compite con ninguna de esas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/victorpark5/mae-contrastive-lab
+- Modelo en Hugging Face: https://huggingface.co/victorpark5/mae-contrastive-lab
 - Ficheros del repositorio: `inference.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md` (accesibles desde la ruta `/resolve/main/` del repositorio)
 - Paper, blog, demo o repositorio adicional: no disponible en la información proporcionada

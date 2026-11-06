@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joneslily/matching-final-2024` es un repositorio de HuggingFace que contiene una implementación propia y de escala reducida de una arquitectura BLIP orientada a tareas de *matching* (emparejamiento). Lo publica el usuario `joneslily` bajo licencia MIT y lo distribuye junto con un `config.json`, un `training_args.json`, un script `inference.py` y un checkpoint de inicialización en `model.safetensors`. No es, según su propia model card, un modelo entrenado ni una release con resultados: es un punto de partida reproducible para experimentación.
+`joneslily/matching-final-2024` es un repositorio de Hugging Face que contiene una implementación propia y de escala reducida de una arquitectura BLIP orientada a tareas de *matching* (emparejamiento). Lo publica el usuario `joneslily` bajo licencia MIT y lo distribuye junto con un `config.json`, un `training_args.json`, un script `inference.py` y un checkpoint de inicialización en `model.safetensors`. No es, según su propia model card, un modelo entrenado ni una release con resultados: es un punto de partida reproducible para experimentación.
 
 El dato más llamativo es su tamaño: los metadatos de safetensors declaran 24.832 parámetros totales, es decir, órdenes de magnitud por debajo de cualquier BLIP funcional (que suele manejarse en cientos de millones). El repositorio ocupa 0,0 GB y acumula 16 descargas y ningún *like*, lo que encaja con un artefacto de trabajo personal más que con un modelo pensado para uso general.
 
@@ -83,10 +83,10 @@ La comparación cuantitativa no es posible: no hay métricas de este repositorio
 - Licencia MIT: permite uso comercial y modificación, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa con datasets externos.
 - Implementación *custom*: no es compatible con `AutoModel` de `transformers` sin un adaptador explícito, lo que añade trabajo de integración.
 - El repositorio ocupa 0,0 GB y los archivos son mínimos; conviene verificar que el `model.safetensors` descargado coincide con la arquitectura del `config.json` antes de cualquier experimento.
-- La fecha de creación registrada en HuggingFace (2026-10-19) es anómala y conviene tratarla con cautela al citar el artefacto.
+- La fecha de creación registrada en Hugging Face (2026-10-19) es anómala y conviene tratarla con cautela al citar el artefacto.
 - No debe presentarse en producción ni en comparativas de rendimiento: el autor pide explícitamente documentar por separado cualquier resultado de un checkpoint futuro entrenado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joneslily/matching-final-2024
+- Modelo en Hugging Face: https://huggingface.co/joneslily/matching-final-2024
 - No se han encontrado en la búsqueda web enlaces relevantes a este modelo, su paper, repositorio de código o demo. Los resultados devueltos corresponden a herramientas de la cámara Insta360 y no guardan relación con este artefacto.

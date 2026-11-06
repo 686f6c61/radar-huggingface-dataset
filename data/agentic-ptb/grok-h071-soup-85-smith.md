@@ -67,9 +67,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h071.soup-85-smith | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | 128K (base) | Apache 2.0 (base) | HuggingFace |
-| Otros checkpoints AgentPTB | 9,4B | no disponible | no disponible | HuggingFace |
+| agentic-ptb/grok.h071.soup-85-smith | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | 128K (base) | Apache 2.0 (base) | Hugging Face |
+| Otros checkpoints AgentPTB | 9,4B | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h071.soup-85-smith
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h071.soup-85-smith
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Sitio de Grok (referencia del nombre, no relacionado con este modelo): https://grok.com/
 - SpaceXAI (creadores de Grok, no relacionados con este modelo): https://x.ai/

@@ -63,6 +63,6 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darrenlinka/paper_017084991_text_image_retrieval
+- Repositorio en Hugging Face: https://huggingface.co/darrenlinka/paper_017084991_text_image_retrieval
 - Artículo relacionado (no directamente vinculado al repositorio): "All You Need to Know About Training Image Retrieval Models" – https://arxiv.org/abs/2503.13045
 - Tema de GitHub sobre image-text-retrieval: https://github.com/topics/image-text-retrieval

@@ -1,7 +1,7 @@
 # Noctis12138/turbovla-rokae-cross-layer
 
 ## Resumen
-TurboVLA Rokae v3 es un modelo de política visuomotora (VLA, vision-language-action) para control robótico bimanual, publicado por el usuario Noctis12138 en HuggingFace. Está diseñado para operar un sistema de dos brazos Rokae AR5 con pinzas paralelas y un cabezal de acciones denominado ActionMap. La variante `dual_arm_cross_layer_swap` es una política de tarea única entrenada exclusivamente con 50 demostraciones de una tarea concreta: colocar un bloque rojo en la balda superior con la mano izquierda y un bloque naranja en la balda inferior con la derecha.
+TurboVLA Rokae v3 es un modelo de política visuomotora (VLA, vision-language-action) para control robótico bimanual, publicado por el usuario Noctis12138 en Hugging Face. Está diseñado para operar un sistema de dos brazos Rokae AR5 con pinzas paralelas y un cabezal de acciones denominado ActionMap. La variante `dual_arm_cross_layer_swap` es una política de tarea única entrenada exclusivamente con 50 demostraciones de una tarea concreta: colocar un bloque rojo en la balda superior con la mano izquierda y un bloque naranja en la balda inferior con la derecha.
 
 El modelo sigue la misma receta que la variante `turbovla-rokae-toothbrush` del mismo autor, cambiando únicamente la tarea. Combina un backbone visual DINOv3-L (ViT-L/16) con un codificador de texto BERT y un cabezal de predicción de acciones que emite chunks de 50 pasos relativos a la pose medida actual. El checkpoint de inferencia ocupa aproximadamente 1,8 GB y el autor indica un consumo de unos 3 GB de VRAM.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TurboVLA Rokae v3 `dual_arm_cross_layer_swap` | VLA bimanual, tarea única | no disponible | no disponible | other (DINOv3 License en backbone) | HuggingFace, 0 descargas |
-| `Noctis12138/turbovla-rokae-toothbrush` | VLA bimanual, tarea única | no disponible | no disponible | other | HuggingFace, mismo autor |
-| `Noctis12138/turbovla-rokae-6task` | VLA bimanual, 6 tareas | no disponible | no disponible | other | HuggingFace, mismo autor |
+| TurboVLA Rokae v3 `dual_arm_cross_layer_swap` | VLA bimanual, tarea única | no disponible | no disponible | other (DINOv3 License en backbone) | Hugging Face, 0 descargas |
+| `Noctis12138/turbovla-rokae-toothbrush` | VLA bimanual, tarea única | no disponible | no disponible | other | Hugging Face, mismo autor |
+| `Noctis12138/turbovla-rokae-6task` | VLA bimanual, 6 tareas | no disponible | no disponible | other | Hugging Face, mismo autor |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes ni frente a otros VLA de robótica (por ejemplo, OpenVLA o pi0), por lo que la comparación cuantitativa de rendimiento no está disponible.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes ni frent
 - Sin cuantizaciones publicadas ni soporte declarado para motores de inferencia de alto rendimiento (vLLM, TGI), lo que limita el despliegue a gran escala.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Noctis12138/turbovla-rokae-cross-layer
+- Modelo en Hugging Face: https://huggingface.co/Noctis12138/turbovla-rokae-cross-layer
 - Variante toothbrush: https://huggingface.co/Noctis12138/turbovla-rokae-toothbrush
 - Variante de 6 tareas: https://huggingface.co/Noctis12138/turbovla-rokae-6task
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web disponible.

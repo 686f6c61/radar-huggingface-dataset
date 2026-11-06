@@ -28,7 +28,7 @@ La relevancia de esta ficha es doble. Por un lado, permite desplegar un modelo d
 | Sistema operativo recomendado | Linux |
 | Tamano del repositorio | 21,9 GB |
 | Modelo base | Qwen/Qwen3.6-27B |
-| Fecha de publicacion | 13 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 13 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -80,9 +80,9 @@ La model card unicamente enumera los conjuntos de evaluacion utilizados (MMLU Pr
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rdfsd/Qwen3.6-27B-NVFP4 (este modelo) | 27B declarados / 18,16B en safetensors | 262K tokens | NVFP4 | Apache 2.0 | HuggingFace, espejo no oficial |
-| nvidia/Qwen3.6-27B-NVFP4 | 27B declarados | 262K tokens | NVFP4 | Apache 2.0 | HuggingFace, publicacion oficial de NVIDIA |
-| Qwen/Qwen3.6-27B (base) | 27B declarados | 262K tokens | Sin cuantizar (precision original) | Apache 2.0 | HuggingFace |
+| rdfsd/Qwen3.6-27B-NVFP4 (este modelo) | 27B declarados / 18,16B en safetensors | 262K tokens | NVFP4 | Apache 2.0 | Hugging Face, espejo no oficial |
+| nvidia/Qwen3.6-27B-NVFP4 | 27B declarados | 262K tokens | NVFP4 | Apache 2.0 | Hugging Face, publicacion oficial de NVIDIA |
+| Qwen/Qwen3.6-27B (base) | 27B declarados | 262K tokens | Sin cuantizar (precision original) | Apache 2.0 | Hugging Face |
 
 El dato de contexto y licencia de las tres variantes procede de la informacion disponible; los parametros de la variante base y de la oficial de NVIDIA se toman de lo declarado en la model card. No se dispone de resultados de rendimiento comparados entre estas versiones, ni de alternativas de otros fabricantes con especificaciones verificables en la informacion proporcionada.
 
@@ -102,7 +102,7 @@ El dato de contexto y licencia de las tres variantes procede de la informacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rdfsd/Qwen3.6-27B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/rdfsd/Qwen3.6-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Publicacion oficial de NVIDIA del mismo modelo: https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4
 - NVIDIA Model Optimizer (repositorio): https://github.com/NVIDIA/Model-Optimizer
@@ -110,4 +110,4 @@ El dato de contexto y licencia de las tres variantes procede de la informacion d
 - Dataset de calibracion Nemotron-Post-Training-Dataset-v2: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo, su arquitectura o sus benchmarks; los enlaces anteriores proceden exclusivamente de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo, su arquitectura o sus benchmarks; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face y de la model card.

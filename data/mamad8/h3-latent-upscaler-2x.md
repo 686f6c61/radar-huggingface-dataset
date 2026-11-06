@@ -71,6 +71,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mamad8/H3-Latent-Upscaler-2x
+- Hugging Face: https://huggingface.co/Mamad8/H3-Latent-Upscaler-2x
 - Repositorio de nodos de ComfyUI: https://github.com/mamad8c/ComfyUI-H3-Latent-Upscaler-Mamad8
 - Noticia en ComfyUI Wiki: https://comfyui-wiki.com/en/news/2026-08-08-minimax-h3-latent-upscaler

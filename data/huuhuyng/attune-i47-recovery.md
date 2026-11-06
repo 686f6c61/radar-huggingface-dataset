@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`attune-i47-recovery` es un repositorio de datos (no un modelo de lenguaje) publicado por el usuario huuhuyng en HuggingFace. Contiene episodios de recuperación de tareas de manipulación robótica, generados a partir del modelo `langst-22vu/attune-vector-g11` (sha 267dd00f...), del que no se dispone de información pública adicional. El repositorio ocupa 1,8 GB y está etiquetado únicamente con `region:us`.
+`attune-i47-recovery` es un repositorio de datos (no un modelo de lenguaje) publicado por el usuario huuhuyng en Hugging Face. Contiene episodios de recuperación de tareas de manipulación robótica, generados a partir del modelo `langst-22vu/attune-vector-g11` (sha 267dd00f...), del que no se dispone de información pública adicional. El repositorio ocupa 1,8 GB y está etiquetado únicamente con `region:us`.
 
 La propuesta metodológica es un esquema de *recovery targets*: cada episodio de recuperación combina el prefijo propio del modelo g11 (verbatim, cortado en el punto de estancamiento de la tarea) con una finalización `resume()` escrita por Claude Sonnet, conservada solo si supera `check_success`. El "experto" asociado es el `play_once` de la misma escena. Los pares de entrenamiento (D22) usan como *prompt* una demo experta estándar y como *target* estos episodios de recuperación.
 
@@ -83,6 +83,6 @@ No disponible. No se han identificado en la información proporcionada modelos o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huuhuyng/attune-i47-recovery
+- Repositorio en Hugging Face: https://huggingface.co/huuhuyng/attune-i47-recovery
 - Modelo base referenciado: `langst-22vu/attune-vector-g11` (sha 267dd00f..., commit 81b58077717e0d0dffda34b560954caa7edc09ae)
 - Script de compactación citado: `data/compact.py` (incluido en el repositorio)

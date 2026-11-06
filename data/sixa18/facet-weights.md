@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FACET es un modelo de aprendizaje automático desarrollado por Maximilian Zinke (SiXa18) para predecir ángulos de torsión del esqueleto proteico (phi/psi) a partir de desplazamientos químicos de resonancia magnética nuclear (NMR). El problema que resuelve es la determinación estructural de proteínas cuando los datos de NMR están disponibles pero las técnicas tradicionales de cálculo de ángulos son lentas o requieren información adicional. El modelo se distribuye como un conjunto de pesos y datos de referencia que se descargan automáticamente en el primer uso, alojados en HuggingFace debido a que uno de los archivos supera el límite de 100 MB de PyPI.
+FACET es un modelo de aprendizaje automático desarrollado por Maximilian Zinke (SiXa18) para predecir ángulos de torsión del esqueleto proteico (phi/psi) a partir de desplazamientos químicos de resonancia magnética nuclear (NMR). El problema que resuelve es la determinación estructural de proteínas cuando los datos de NMR están disponibles pero las técnicas tradicionales de cálculo de ángulos son lentas o requieren información adicional. El modelo se distribuye como un conjunto de pesos y datos de referencia que se descargan automáticamente en el primer uso, alojados en Hugging Face debido a que uno de los archivos supera el límite de 100 MB de PyPI.
 
 La arquitectura consiste en un encoder (disponible en PyTorch y ONNX) que genera embeddings de residuos, junto con un índice de recuperación de 220 000 residuos con sus ángulos phi/psi y etiquetas, y una referencia de desplazamientos químicos opcional. El modelo no es un LLM, sino un predictor específico para bioinformática estructural, con un tamaño de pesos de 5,2 MB y un índice de recuperación de 106 MB. Su relevancia radica en ofrecer una alternativa rápida y ligera para la predicción de ángulos de torsión a partir de datos NMR, con licencia CC BY 4.0 que permite uso comercial con atribución.
 
@@ -51,12 +51,12 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: inferior a 100 MB, ya que los pesos del encoder ocupan 5,2 MB y el índice de recuperación se carga en memoria como array NumPy (106 MB comprimido, aproximadamente 200-300 MB en memoria RAM).
 - GPU recomendadas: ninguna; el modelo se ejecuta correctamente en CPU. Para el índice de recuperación, la RAM es el factor limitante (se recomiendan al menos 512 MB libres).
 - Compatible con GPUs de consumo (RTX 4090, etc.) si se desea acelerar la inferencia, pero no es necesario.
-- Opciones de despliegue: Python con PyTorch o ONNX Runtime, o mediante el Space de HuggingFace (https://huggingface.co/spaces/SiXa18/facet) que ofrece una interfaz web para subir archivos .tab o .csv.
+- Opciones de despliegue: Python con PyTorch o ONNX Runtime, o mediante el Space de Hugging Face (https://huggingface.co/spaces/SiXa18/facet) que ofrece una interfaz web para subir archivos .tab o .csv.
 - Latencia y throughput: no se han publicado mediciones. Dado el tamaño del encoder, la inferencia es casi instantánea en CPU; la carga del índice de recuperación domina el tiempo de inicio (varios segundos).
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (predictores de ángulos de torsión a partir de chemical shifts). Alternativas conocidas como TALOS+ o DANGLE no tienen pesos públicos en HuggingFace ni una implementación abierta comparable. La información disponible no permite establecer una comparación cuantitativa.
+No se dispone de información sobre modelos comparables en la misma categoría (predictores de ángulos de torsión a partir de chemical shifts). Alternativas conocidas como TALOS+ o DANGLE no tienen pesos públicos en Hugging Face ni una implementación abierta comparable. La información disponible no permite establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SiXa18/facet-weights
-- Space de HuggingFace (demo): https://huggingface.co/spaces/SiXa18/facet
+- Repositorio de Hugging Face: https://huggingface.co/SiXa18/facet-weights
+- Space de Hugging Face (demo): https://huggingface.co/spaces/SiXa18/facet
 - Repositorio de código fuente: https://github.com/maxzinke/facet-nmr
 - Perfil del autor: https://huggingface.co/SiXa18

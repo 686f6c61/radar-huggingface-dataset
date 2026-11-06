@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ko-morph-qwen2.5-0.5b-instruct es un modelo de generación de texto en coreano publicado por el usuario wwwcomcom en HuggingFace. Se trata de un ajuste por instrucciones (SFT) del modelo wwwcomcom/ko-morph-qwen2.5-0.5b-cpt, que a su vez es un Qwen2.5-0.5B sometido a preentrenamiento continuado (CPT) con unos 2,5 B de tokens de texto coreano y un tokenizador de morfemas en lugar del BPE original. El resultado es un modelo decoder-only tipo Qwen2 con 386.570.112 parámetros reales en safetensors, licencia Apache 2.0 y un único idioma soportado: el coreano.
+ko-morph-qwen2.5-0.5b-instruct es un modelo de generación de texto en coreano publicado por el usuario wwwcomcom en Hugging Face. Se trata de un ajuste por instrucciones (SFT) del modelo wwwcomcom/ko-morph-qwen2.5-0.5b-cpt, que a su vez es un Qwen2.5-0.5B sometido a preentrenamiento continuado (CPT) con unos 2,5 B de tokens de texto coreano y un tokenizador de morfemas en lugar del BPE original. El resultado es un modelo decoder-only tipo Qwen2 con 386.570.112 parámetros reales en safetensors, licencia Apache 2.0 y un único idioma soportado: el coreano.
 
 La peculiaridad técnica del proyecto es el tokenizador morfológico, que segmenta el coreano en unidades con significado gramatical en lugar de subpalabras estadísticas. El autor evalúa el efecto de ese cambio comparando contra un Qwen2.5-0.5B de base entrenado con exactamente el mismo SFT y el mismo subconjunto de datos, y obtiene una ventaja clara en gramática (327/334 frente a 293/334 en pares mínimos, con p de McNemar de 1,95×10⁻⁸). El propio autor advierte que ese resultado no permite separar el efecto del tokenizador del efecto del CPT, porque no existe un grupo de control con BPE y el mismo CPT.
 
@@ -104,7 +104,7 @@ No se dispone de datos suficientes sobre parámetros y contexto de los modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wwwcomcom/ko-morph-qwen2.5-0.5b-instruct
+- Modelo en Hugging Face: https://huggingface.co/wwwcomcom/ko-morph-qwen2.5-0.5b-instruct
 - Modelo base (CPT): https://huggingface.co/wwwcomcom/ko-morph-qwen2.5-0.5b-cpt
 - Dataset de SFT: https://huggingface.co/datasets/beomi/KoAlpaca-v1.1a
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo: los únicos resultados obtenidos corresponden a centros educativos alemanes sin relación con el tema.

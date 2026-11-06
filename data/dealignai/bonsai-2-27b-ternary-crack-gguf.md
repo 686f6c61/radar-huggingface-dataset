@@ -110,7 +110,7 @@ No se dispone de comparaciones con otros modelos abliterados de tamano similar e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dealignai/Bonsai-2-27B-Ternary-CRACK-GGUF
+- Hugging Face: https://huggingface.co/dealignai/Bonsai-2-27B-Ternary-CRACK-GGUF
 - Modelo base ternario: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork de llama.cpp usado para servir el modelo: https://github.com/PrismML-Eng/llama.cpp

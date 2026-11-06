@@ -81,8 +81,8 @@ La model card incluye explicitamente la linea "_No evaluation results have been 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este fine-tune (`castanetnicolas/smolvla_UR5e_...`) | 450 M | No disponible | Pick-and-place de una lata (entrenado) | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| lerobot/smolvla_base | No disponible en esta busqueda | No disponible | Politica VLA generalista preentrenada | No disponible en esta busqueda | HuggingFace (modelo base declarado) |
+| Este fine-tune (`castanetnicolas/smolvla_UR5e_...`) | 450 M | No disponible | Pick-and-place de una lata (entrenado) | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| lerobot/smolvla_base | No disponible en esta busqueda | No disponible | Politica VLA generalista preentrenada | No disponible en esta busqueda | Hugging Face (modelo base declarado) |
 | Otras familias VLA (OpenVLA, pi0, GR00T N1, etc.) | No disponible en esta busqueda | No disponible | Manipulacion robotica general | No disponible en esta busqueda | No disponible en esta busqueda |
 
 La busqueda web realizada no devolvio informacion tecnica relevante sobre ningun modelo comparable: los resultados obtenidos corresponden a servicios de comprobacion de disponibilidad de sitios web, sin relacion con el modelo. Por tanto, no es posible establecer una comparativa cuantitativa fiable con alternativas de la misma categoria.
@@ -102,7 +102,7 @@ La busqueda web realizada no devolvio informacion tecnica relevante sobre ningun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/smolvla_UR5e_BS_32_Act_Chunk_10_Exec_10_TASK_pick_place_can_ID_148311
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/smolvla_UR5e_BS_32_Act_Chunk_10_Exec_10_TASK_pick_place_can_ID_148311
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/robomimic_can_ph_image84
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/robomimic_can_ph_image84

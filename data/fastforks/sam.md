@@ -100,7 +100,7 @@ Precisión respecto al código original: CPU fp32 con diferencia máxima |diff| 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fastforks/sam
+- Repositorio en Hugging Face: https://huggingface.co/fastforks/sam
 - Código de fastforks: https://github.com/kleinicke/fastforks
 - Kernels CUDA: https://huggingface.co/fastforks/kernels
 - Documentación de benchmarks: https://github.com/kleinicke/fastforks/blob/main/docs/benchmarks.md

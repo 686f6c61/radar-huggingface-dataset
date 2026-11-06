@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xivSk5x6NYndsuyb es un repositorio alojado en HuggingFace por el usuario hcmusa29 cuya ficha publica no incluye informacion sustantiva sobre el modelo: no declara pipeline, licencia, idiomas soportados ni arquitectura. El unico dato objetivo disponible es el tamano del repositorio, 104,3 GB, lo que indica que contiene pesos de gran volumen, pero sin metadatos que permitan determinar el numero de parametros, el tipo de arquitectura ni el regimen de cuantizacion.
+xivSk5x6NYndsuyb es un repositorio alojado en Hugging Face por el usuario hcmusa29 cuya ficha publica no incluye informacion sustantiva sobre el modelo: no declara pipeline, licencia, idiomas soportados ni arquitectura. El unico dato objetivo disponible es el tamano del repositorio, 104,3 GB, lo que indica que contiene pesos de gran volumen, pero sin metadatos que permitan determinar el numero de parametros, el tipo de arquitectura ni el regimen de cuantizacion.
 
 El repositorio no registra descargas y acumula una unica interaccion social (1 like), con fecha de creacion en septiembre de 2026 y ultima actualizacion un dia despues. La busqueda web asociada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden al Hotel Florida de Biarritz, un establecimiento hotelero sin ninguna vinculacion con el repositorio, por lo que no aportan informacion tecnica utilizable.
 
@@ -81,7 +81,7 @@ No disponible. No ha sido posible identificar la familia, el tamano ni la catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcmusa29/xivSk5x6NYndsuyb
+- Repositorio en Hugging Face: https://huggingface.co/hcmusa29/xivSk5x6NYndsuyb
 - Paper, blog o repositorio de codigo: no disponible.
 - Demo o espacio interactivo: no disponible.
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Los unicos resultados devueltos corresponden al Hotel Florida de Biarritz (https://www.hotel-florida-biarritz.com/ y dominios asociados) y no guardan relacion con el modelo.

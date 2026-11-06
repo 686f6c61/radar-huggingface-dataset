@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DCA-01 (Deterministic Cluster Architecture) es una especificación de infraestructura de IA publicada por Emanuel Schaaf bajo el identificador `Shorx/DCA-01` en HuggingFace. No se trata de un modelo de lenguaje con pesos descargables, sino de un dossier de arquitectura listo para implementar que propone sustituir el modelo monolítico por un cluster de modelos expertos físicamente separados y especializados por dominio, coordinados mediante un bus de datos determinista. El repositorio ocupa 0,0 GB, no registra descargas ni likes y su pipeline no está declarado.
+DCA-01 (Deterministic Cluster Architecture) es una especificación de infraestructura de IA publicada por Emanuel Schaaf bajo el identificador `Shorx/DCA-01` en Hugging Face. No se trata de un modelo de lenguaje con pesos descargables, sino de un dossier de arquitectura listo para implementar que propone sustituir el modelo monolítico por un cluster de modelos expertos físicamente separados y especializados por dominio, coordinados mediante un bus de datos determinista. El repositorio ocupa 0,0 GB, no registra descargas ni likes y su pipeline no está declarado.
 
 La propuesta toma prestados tres patrones de la ingeniería industrial: la fabricación just-in-sequence del sector automovilístico, la redundancia modular triple (TMR) de la aviónica y el bus CAN con principio LRU (least recently used). El principio central es que la transferencia de conocimiento no ocurre mezclando pesos, sino mediante intercambio de datos tipados sobre un Shared Context Board o blackboard.
 
@@ -97,7 +97,7 @@ No disponible. DCA-01 no es un modelo de pesos con el que comparar parametros, c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shorx/DCA-01
+- Modelo en Hugging Face: https://huggingface.co/Shorx/DCA-01
 - Dossier completo: https://huggingface.co/Shorx/DCA-01/blob/main/DCA-01-COMPLETE_EN.md
 - PDF de arquitectura: https://huggingface.co/Shorx/DCA-01/blob/main/docs/DCA-01-Deterministic_Cluster_Architecture.pdf
 - README en aleman: https://huggingface.co/Shorx/DCA-01/blob/main/README_DE.md

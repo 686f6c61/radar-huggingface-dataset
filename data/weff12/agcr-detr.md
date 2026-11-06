@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AGCR-DETR es el código de un detector de objetos basado en RT-DETR-L (la variante *large* de la familia RT-DETR de Ultralytics) especializado en la detección de defectos superficiales en rodamientos. Lo publica el usuario WEFF12 en HuggingFace como *code-only release*: el repositorio contiene la implementación de las dos contribuciones (el módulo de atención APDCCM-Lite y la pérdida de supervisión SGCR), los puntos de entrada de entrenamiento, evaluación e inferencia, y un script de verificación en CPU; no incluye pesos entrenados, checkpoints de inicialización, datasets, anotaciones, predicciones ni resultados experimentales.
+AGCR-DETR es el código de un detector de objetos basado en RT-DETR-L (la variante *large* de la familia RT-DETR de Ultralytics) especializado en la detección de defectos superficiales en rodamientos. Lo publica el usuario WEFF12 en Hugging Face como *code-only release*: el repositorio contiene la implementación de las dos contribuciones (el módulo de atención APDCCM-Lite y la pérdida de supervisión SGCR), los puntos de entrada de entrenamiento, evaluación e inferencia, y un script de verificación en CPU; no incluye pesos entrenados, checkpoints de inicialización, datasets, anotaciones, predicciones ni resultados experimentales.
 
 La relevancia del proyecto es acotada y muy específica: no es un modelo listo para usar, sino material de reproducción para investigadores de visión por computador interesados en dos técnicas concretas. APDCCM-Lite es un *gating* de características que combina un canal de amplitud media absoluta con un canal espacial derivado de la magnitud del gradiente de Sobel, y SGCR es una pérdida de ranking competitivo con ponderación por calidad que se aplica únicamente durante el entrenamiento sin añadir parámetros en inferencia. El interés práctico está en la inspección visual automatizada de componentes mecánicos, no en tareas de lenguaje.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AGCR-DETR (WEFF12) | No disponible (RT-DETR-L + 165.908) | Imagen 640 px | Sin métricas publicadas | AGPL-3.0 | Solo código en HuggingFace, sin pesos |
+| AGCR-DETR (WEFF12) | No disponible (RT-DETR-L + 165.908) | Imagen 640 px | Sin métricas publicadas | AGPL-3.0 | Solo código en Hugging Face, sin pesos |
 | RT-DETR-L (Ultralytics) | No disponible en esta información | Imagen 640 px | Métricas COCO publicadas por Ultralytics, no incluidas aquí | AGPL-3.0 | Pesos y código disponibles |
 | YOLO11 / YOLOv8 en variante L (Ultralytics) | No disponible en esta información | Imagen 640 px | Métricas COCO publicadas por Ultralytics, no incluidas aquí | AGPL-3.0 | Pesos y código disponibles |
 | Deformable DETR | No disponible en esta información | Imagen, resolución variable | Métricas COCO publicadas en su paper, no incluidas aquí | Apache-2.0 (según implementación) | Pesos y código disponibles |
@@ -92,7 +92,7 @@ La comparación cuantitativa no es posible con los datos aportados: AGCR-DETR no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WEFF12/AGCR-DETR
+- Repositorio en Hugging Face: https://huggingface.co/WEFF12/AGCR-DETR
 - RT-DETR de Ultralytics (base del proyecto): https://github.com/ultralytics/ultralytics
 - Ficheros de licencia y atribución dentro del repositorio: `LICENSE` y `NOTICE.md` (accesibles desde el clonado del repositorio)
 - No se han encontrado en la búsqueda web papers, blogs, demos ni repositorios adicionales relevantes para este modelo.

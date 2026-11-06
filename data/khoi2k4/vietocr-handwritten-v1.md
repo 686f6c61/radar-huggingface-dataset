@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Khoi2k4/vietocr-handwritten-v1 es un repositorio alojado en HuggingFace por el usuario Khoi2k4, publicado el 13 de octubre de 2026 y actualizado el mismo dia. El nombre del repositorio sugiere que se trata de un modelo de reconocimiento optico de caracteres (OCR) orientado a texto manuscrito en vietnamita, presumiblemente derivado o inspirado en VietOCR, aunque no hay documentacion en la informacion disponible que confirme la arquitectura, el dataset de entrenamiento ni el procedimiento seguido. La ficha oficial no incluye pipeline declarado, licencia, idiomas ni resultados de evaluacion.
+Khoi2k4/vietocr-handwritten-v1 es un repositorio alojado en Hugging Face por el usuario Khoi2k4, publicado el 13 de octubre de 2026 y actualizado el mismo dia. El nombre del repositorio sugiere que se trata de un modelo de reconocimiento optico de caracteres (OCR) orientado a texto manuscrito en vietnamita, presumiblemente derivado o inspirado en VietOCR, aunque no hay documentacion en la informacion disponible que confirme la arquitectura, el dataset de entrenamiento ni el procedimiento seguido. La ficha oficial no incluye pipeline declarado, licencia, idiomas ni resultados de evaluacion.
 
 El repositorio tiene un tamano de 0,2 GB, lo que resulta coherente con un modelo de vision-lenguaje de pequeno o medio tamano orientado a OCR, pero este dato por si solo no permite determinar el numero de parametros ni la familia arquitectonica. El modelo acumula 0 descargas y 1 like en el momento de la consulta, por lo que se trata de un artefacto practicamente sin adopcion ni validacion por parte de la comunidad.
 
@@ -27,7 +27,7 @@ Su relevancia potencial reside en el nicho del OCR para vietnamita manuscrito, u
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo en la ficha de HuggingFace. No se especifica si se trata de un transformer encoder-decoder, de un modelo basado en Vision Transformer con cabecera de decodificacion autoregresiva, de una CNN con CTC ni de ninguna otra variante. Tampoco se documenta el numero de parametros, la resolucion de entrada de imagen, el vocabulario de salida ni el mecanismo de tokenizacion.
+No hay informacion disponible sobre la arquitectura del modelo en la ficha de Hugging Face. No se especifica si se trata de un transformer encoder-decoder, de un modelo basado en Vision Transformer con cabecera de decodificacion autoregresiva, de una CNN con CTC ni de ninguna otra variante. Tampoco se documenta el numero de parametros, la resolucion de entrada de imagen, el vocabulario de salida ni el mecanismo de tokenizacion.
 
 Del mismo modo, se desconoce por completo la composicion del dataset de entrenamiento, el numero de imagenes o tokens utilizados, si hubo etapas de ajuste fino supervisado, RLHF o DPO, y cualquier innovacion tecnica asociada. El unico dato objetivo es el tamano del repositorio (0,2 GB) y las marcas temporales de creacion y actualizacion, ambas del 13 de octubre de 2026, lo que indica que el repositorio no ha recibido mantenimiento posterior.
 
@@ -70,9 +70,9 @@ No hay datos de rendimiento de este modelo que permitan una comparacion cuantita
 
 | Modelo | Enfoque | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Khoi2k4/vietocr-handwritten-v1 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Khoi2k4/vietocr-handwritten-v1 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | VietOCR | OCR basado en transformer, orientado a vietnamita | Vietnamita principalmente | no disponible en esta consulta | Repositorio publico ampliamente conocido |
-| TrOCR (Microsoft) | Transformer encoder-decoder para texto impreso y manuscrito | Ingles principalmente | Licencia del repositorio original | HuggingFace |
+| TrOCR (Microsoft) | Transformer encoder-decoder para texto impreso y manuscrito | Ingles principalmente | Licencia del repositorio original | Hugging Face |
 | PaddleOCR | Suite OCR con deteccion y reconocimiento | Multilingue | Apache 2.0 (segun el proyecto original) | Repositorio publico |
 
 Las caracteristicas de las alternativas se ofrecen como contexto general y deberian verificarse en sus fuentes oficiales antes de tomar decisiones.
@@ -91,7 +91,7 @@ Las caracteristicas de las alternativas se ofrecen como contexto general y deber
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Khoi2k4/vietocr-handwritten-v1
+- Ficha en Hugging Face: https://huggingface.co/Khoi2k4/vietocr-handwritten-v1
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

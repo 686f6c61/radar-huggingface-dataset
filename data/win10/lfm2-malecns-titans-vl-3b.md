@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lfm2-MaleCNS-Titans-VL-3B es un modelo experimental de visión-lenguaje publicado por el usuario win10 en HuggingFace. Se construye sobre LiquidAI/LFM2.5-VL-3B, al que se le añade la arquitectura de memoria neural c042 MaleCNS-Titans: 11.240 neuronas seleccionadas de MaleCNS v1.0 y 119.997 conexiones dirigidas, distribuidas en puertos de memoria independientes para visión y lenguaje. El resultado es un modelo de 3.243.508.839 parámetros totales, de los cuales 120.024.951 corresponden a parámetros de memoria añadidos y entrenados.
+Lfm2-MaleCNS-Titans-VL-3B es un modelo experimental de visión-lenguaje publicado por el usuario win10 en Hugging Face. Se construye sobre LiquidAI/LFM2.5-VL-3B, al que se le añade la arquitectura de memoria neural c042 MaleCNS-Titans: 11.240 neuronas seleccionadas de MaleCNS v1.0 y 119.997 conexiones dirigidas, distribuidas en puertos de memoria independientes para visión y lenguaje. El resultado es un modelo de 3.243.508.839 parámetros totales, de los cuales 120.024.951 corresponden a parámetros de memoria añadidos y entrenados.
 
 El interés técnico reside en que incorpora un mecanismo de memoria rápida inspirado en el paper Titans (arXiv:2501.00663), capaz de persistir estado más allá de los resets de caché nativa. La evaluación preliminar del autor reporta una ganancia de 0,511086 NLL con memoria retenida frente a memoria reseteada en una secuencia de 131.072 tokens, aunque se trata de resultados de desarrollo y no de un benchmark independiente.
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, GSM8K, HumanE
 
 | Modelo | Parámetros | Contexto | Memoria persistente | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lfm2-MaleCNS-Titans-VL-3B | 3.243.508.839 (120.024.951 de memoria añadida) | 32.768 tokens nativos, memoria rápida entre resets | Sí (pesos rápidos FP32 + momentum) | lfm-open-license-v1.0 | HuggingFace, requiere `custom_code` |
-| LiquidAI/LFM2.5-VL-3B (base) | no disponible en la información proporcionada | 32.768 tokens (heredado) | No | lfm-open-license-v1.0 | HuggingFace |
+| Lfm2-MaleCNS-Titans-VL-3B | 3.243.508.839 (120.024.951 de memoria añadida) | 32.768 tokens nativos, memoria rápida entre resets | Sí (pesos rápidos FP32 + momentum) | lfm-open-license-v1.0 | Hugging Face, requiere `custom_code` |
+| LiquidAI/LFM2.5-VL-3B (base) | no disponible en la información proporcionada | 32.768 tokens (heredado) | No | lfm-open-license-v1.0 | Hugging Face |
 | Otros VLM de ~3B (Qwen2.5-VL-3B, SmolVLM, etc.) | no disponible en la información proporcionada | no disponible | No | no disponible | no disponible |
 
 No se dispone de datos verificados en la información proporcionada para establecer comparaciones de rendimiento con alternativas de la misma categoría.
@@ -102,7 +102,7 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B
+- Modelo en Hugging Face: https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Paper de referencia de Titans: https://arxiv.org/abs/2501.00663
 - Diagrama de arquitectura (en el repo): `architecture/structure.svg`

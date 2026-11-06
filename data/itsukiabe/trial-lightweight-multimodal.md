@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itsukiabe/trial-lightweight-multimodal` es un repositorio publicado en HuggingFace por el usuario itsukiabe que, pese a su identificador y a las etiquetas empleadas (`safetensors`, `transformer`, `lightweight-multimodal`), no contiene un modelo entrenado. La propia model card lo describe como una nota de investigación exploratoria sobre multimodalidad ligera, en la que se recogen el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con líneas base emparejadas y requisitos de reproducibilidad. El autor indica explícitamente que el repositorio no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado.
+`itsukiabe/trial-lightweight-multimodal` es un repositorio publicado en Hugging Face por el usuario itsukiabe que, pese a su identificador y a las etiquetas empleadas (`safetensors`, `transformer`, `lightweight-multimodal`), no contiene un modelo entrenado. La propia model card lo describe como una nota de investigación exploratoria sobre multimodalidad ligera, en la que se recogen el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con líneas base emparejadas y requisitos de reproducibilidad. El autor indica explícitamente que el repositorio no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado.
 
 El artefacto principal es `notes.md`, un documento de trabajo, acompañado de un README que actúa como documentación. No hay pipeline de inferencia declarado, no se especifican idiomas soportados y el tamaño del repositorio es de 0.0 GB, lo que resulta coherente con la ausencia de pesos reales. El dato de 16.576 parámetros totales registrado en safetensors corresponde a un fichero residual o de prueba, no a un modelo funcional: es un orden de magnitud propio de un tensor aislado, no de una red neuronal desplegable.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, el autor declara de forma explícita que no existe c
 
 - Plantilla de protocolo de evaluación: el repositorio puede reutilizarse como esqueleto para redactar la sección de metodología de un estudio sobre multimodalidad ligera, dado que enumera comparaciones con líneas base emparejadas y controles de reproducibilidad.
 - Ejemplo docente de transparencia científica: sirve para ilustrar en un curso o seminario la diferencia entre hipótesis declaradas y resultados experimentales, ya que el propio autor separa ambas categorías de forma explícita.
-- Revisión de políticas de publicación de artefactos: útil como caso de estudio sobre qué metadatos debería incluir un repositorio de HuggingFace antes de anunciar resultados, incluyendo versiones de dataset y logs en bruto.
+- Revisión de políticas de publicación de artefactos: útil como caso de estudio sobre qué metadatos debería incluir un repositorio de Hugging Face antes de anunciar resultados, incluyendo versiones de dataset y logs en bruto.
 - Auditoría de repositorios dudosos: permite practicar la verificación de que un identificador con etiquetas de modelo no implica la existencia de pesos utilizables, contrastando el tamaño del repo con el número de parámetros declarado.
 - Diseño de listas de verificación para preprints: la sección de requisitos de reproducibilidad puede convertirse en una checklist aplicable a envíos propios antes de publicar métricas.
 - Referencia para discusión sobre confounders en evaluación multimodal: la nota menciona factores de confusión probables, lo que permite usarla como punto de partida para enumerar sesgos de comparación entre modelos ligeros y modelos de mayor tamaño.
@@ -68,7 +68,7 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 - No contiene un modelo entrenado: el identificador y las etiquetas pueden inducir a error a quien busque un checkpoint multimodal ligero.
 - El recuento de 16.576 parámetros en safetensors no representa un modelo utilizable; es un artefacto residual o de prueba.
-- No hay pipeline de inferencia declarado, por lo que la carga automática en HuggingFace fallará o no producirá resultados significativos.
+- No hay pipeline de inferencia declarado, por lo que la carga automática en Hugging Face fallará o no producirá resultados significativos.
 - No se especifican idiomas, sesgos conocidos ni tasas de alucinación, al no existir evaluación alguna.
 - No hay limitaciones de contexto que reportar porque no se define ventana de contexto.
 - La licencia MIT permite uso comercial del contenido del repositorio, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se emplean datasets externos.
@@ -77,5 +77,5 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsukiabe/trial-lightweight-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/itsukiabe/trial-lightweight-multimodal
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

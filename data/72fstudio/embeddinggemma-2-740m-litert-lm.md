@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/72fstudio/embeddinggemma-2-740m-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/72fstudio/embeddinggemma-2-740m-litert-lm
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Paquete original de referencia: https://huggingface.co/litert-community/embeddinggemma-2-740m-litert-lm
 - Documentación de LiteRT-LM: https://developers.google.com/edge/litert-lm/overview

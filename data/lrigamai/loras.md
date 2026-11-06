@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lrigamai/loras` es un repositorio publicado en HuggingFace por el usuario `lrigamai`. Se trata de un artefacto sin ficha tecnica (model card), sin pipeline declarado, sin licencia especificada y sin idiomas indicados en los metadatos. El unico tag presente es `region:us`, que es una etiqueta generica de infraestructura y no aporta informacion sobre la arquitectura ni el proposito del contenido.
+`lrigamai/loras` es un repositorio publicado en Hugging Face por el usuario `lrigamai`. Se trata de un artefacto sin ficha tecnica (model card), sin pipeline declarado, sin licencia especificada y sin idiomas indicados en los metadatos. El unico tag presente es `region:us`, que es una etiqueta generica de infraestructura y no aporta informacion sobre la arquitectura ni el proposito del contenido.
 
 El nombre del repositorio y su tamano de 1,6 GB sugieren que podria contener uno o varios adaptadores LoRA (o un conjunto de pesos derivados) en lugar de un modelo base completo, pero esta hipotesis no puede confirmarse: no se ha publicado ningun `config.json`, tokenizer, ficha descriptiva ni referencia al modelo base sobre el que se aplicarian los adaptadores. Tampoco se indica el formato de los pesos ni el framework de entrenamiento utilizado.
 
@@ -83,4 +83,4 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lrigamai/loras
+- Repositorio en Hugging Face: https://huggingface.co/lrigamai/loras

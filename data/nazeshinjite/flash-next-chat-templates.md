@@ -91,11 +91,11 @@ Los unicos datos cuantitativos del repositorio corresponden a verificacion inter
 
 | Plantilla | Autor | Base | Cambios destacados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flash-Next-Chat-Templates (Sharp-naze v1.4) | nazeshinjite | Unsloth sobre Qwen estandar | F1 a F7 mas bloque de concision de Sharp | qwen-community-1.0 | Repositorio HuggingFace, 0 descargas |
-| Flash-Next-Chat-Templates (nazeshinjite v1.4) | nazeshinjite | Unsloth sobre Qwen estandar | F1 a F7 sin concision | qwen-community-1.0 | Repositorio HuggingFace |
+| Flash-Next-Chat-Templates (Sharp-naze v1.4) | nazeshinjite | Unsloth sobre Qwen estandar | F1 a F7 mas bloque de concision de Sharp | qwen-community-1.0 | Repositorio Hugging Face, 0 descargas |
+| Flash-Next-Chat-Templates (nazeshinjite v1.4) | nazeshinjite | Unsloth sobre Qwen estandar | F1 a F7 sin concision | qwen-community-1.0 | Repositorio Hugging Face |
 | Unsloth-chat_template_embedded | Unsloth | Plantilla estandar de Qwen | Rol developer, fusion de system, `high` a `xhigh`, sin error de "No user query found", errores de herramienta legibles | no disponible (req. licencia del modelo base) | Incluida en los GGUF de Unsloth |
-| Qwen-Fixed-Chat-Templates | froggeric | Plantilla de Qwen | Inspira F1, F4, F6 y F7 | no disponible | Repositorio HuggingFace |
-| Qwen-Sharp-Chat-Templates (Sharp v22.5.0) | peculiar-ragdoll | Plantilla de Qwen | Bloque de concision reutilizado en la variante Sharp | Apache-2.0 | Repositorio HuggingFace |
+| Qwen-Fixed-Chat-Templates | froggeric | Plantilla de Qwen | Inspira F1, F4, F6 y F7 | no disponible | Repositorio Hugging Face |
+| Qwen-Sharp-Chat-Templates (Sharp v22.5.0) | peculiar-ragdoll | Plantilla de Qwen | Bloque de concision reutilizado en la variante Sharp | Apache-2.0 | Repositorio Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -112,7 +112,7 @@ Los unicos datos cuantitativos del repositorio corresponden a verificacion inter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nazeshinjite/Flash-Next-Chat-Templates
+- Repositorio en Hugging Face: https://huggingface.co/nazeshinjite/Flash-Next-Chat-Templates
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Plantillas de chat de Sharp (origen del bloque de concision): https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates

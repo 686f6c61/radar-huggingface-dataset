@@ -84,9 +84,9 @@ No hay datos en la informacion disponible sobre comparaciones con reordenadores 
 
 | Modelo | Parametros entrenables | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TIS v2.5 | ~5,6 M sobre base 7 B congelado | No especificado (base 32.768 tokens) | Recall@5 multi-salto 100 %; NIAH 95 %; LITM 72 %; ~120 ms | MIT | HuggingFace, 0 descargas |
-| TIS v2.3 | No disponible | No especificado | MRR 0,5102 (+18,1 % vs BM25); ~50 ms | MIT | HuggingFace |
-| TIS v2.2 | No disponible | No especificado | MRR 0,471 (+9,1 % vs BM25) | MIT | HuggingFace |
+| TIS v2.5 | ~5,6 M sobre base 7 B congelado | No especificado (base 32.768 tokens) | Recall@5 multi-salto 100 %; NIAH 95 %; LITM 72 %; ~120 ms | MIT | Hugging Face, 0 descargas |
+| TIS v2.3 | No disponible | No especificado | MRR 0,5102 (+18,1 % vs BM25); ~50 ms | MIT | Hugging Face |
+| TIS v2.2 | No disponible | No especificado | MRR 0,471 (+9,1 % vs BM25) | MIT | Hugging Face |
 | BM25 | 0 (recuperador lexico) | No aplica | Referencia base de las comparaciones anteriores | Algoritmo libre | Ampliamente disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No hay datos en la informacion disponible sobre comparaciones con reordenadores 
 - El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y no hay publicaciones, paper ni revisión por pares asociados más allá de una cita genérica de 2026.
 - La vida útil del proyecto depende de una única persona (`oldman-dev` / `nitroxido`); no hay garantía de mantenimiento ni de soporte.
 - El checkpoint tiene 157,8 MB, un tamaño muy superior a los ~22 MB que ocuparían 5,6 M de parámetros en fp32. Esto sugiere que el archivo contiene tensores adicionales no documentados en la tabla de componentes; conviene inspeccionarlo antes de integrarlo en producción.
-- El código necesario para ejecutar el modelo (`PatchedCausalLM`, `src.token_importance.model.patched_model`) no está incluido en el repositorio de HuggingFace: hay que clonarlo desde GitHub por separado, lo que añade riesgo de reproducibilidad si el repositorio cambia.
+- El código necesario para ejecutar el modelo (`PatchedCausalLM`, `src.token_importance.model.patched_model`) no está incluido en el repositorio de Hugging Face: hay que clonarlo desde GitHub por separado, lo que añade riesgo de reproducibilidad si el repositorio cambia.
 - La etapa 2 duplica aproximadamente la latencia (de ~50 ms a ~120 ms) sin mejora medible en NIAH ni LITM según los propios datos del autor; el coste solo se justifica en escenarios multi-salto.
 - Aunque la cabecera declara licencia MIT, el modelo base Mistral-7B-Instruct-v0.3 tiene su propia licencia (Apache 2.0 en la distribución original), que debe verificarse para uso comercial.
 - No se documentan medidas de mitigación de sesgos, filtros de contenido ni comportamiento ante consultas adversariales.
@@ -104,7 +104,7 @@ No hay datos en la informacion disponible sobre comparaciones con reordenadores 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oldman-dev/tis-v2.5-multihop-reranker
+- Hugging Face: https://huggingface.co/oldman-dev/tis-v2.5-multihop-reranker
 - Modelo base: https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit
 - Repositorio de código fuente: https://github.com/nitroxido/token-importance-scoring
 - Versión anterior (v2.3): https://huggingface.co/oldman-dev/tis-v2.3-passage-reranker

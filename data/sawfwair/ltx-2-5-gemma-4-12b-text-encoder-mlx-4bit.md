@@ -79,7 +79,7 @@ La comparación con T5-XXL es orientativa; no hay datos de rendimiento que permi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sawfwair/LTX-2.5-Gemma-4-12B-Text-Encoder-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/Sawfwair/LTX-2.5-Gemma-4-12B-Text-Encoder-MLX-4bit
 - Repositorio oficial de LTX-2 (Lightricks): https://github.com/Lightricks/LTX-2
 - Licencia LTX-2.x Community: https://github.com/Lightricks/LTX-2/blob/main/LICENSE.md
 - PR de conversión en mere.run: https://github.com/sawfwair/mere-run/pull/366

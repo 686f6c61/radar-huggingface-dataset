@@ -81,7 +81,7 @@ La diferencia principal es que los modelos oficiales de Ai2 son exportaciones de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-2517b
+- Repositorio en Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-2517b
 - Modelo base de Ai2: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Variante RL de Ai2: https://huggingface.co/allenai/OLMo-2-0425-1B-RLVR1
 - Pagina oficial de OLMo: https://allenai.org/olmo2

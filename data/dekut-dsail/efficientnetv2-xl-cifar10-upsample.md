@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento publicados para los modelos comparables en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DeKUT-DSAIL/efficientnetv2-xl-cifar10-upsample
+- Hugging Face: https://huggingface.co/DeKUT-DSAIL/efficientnetv2-xl-cifar10-upsample
 - Repositorio de entrenamiento: mencionado en la model card (contiene la carpeta `hf_deployment/` con el fichero `cifar_classifier.py`), pero la URL no se proporciona en la informacion disponible.

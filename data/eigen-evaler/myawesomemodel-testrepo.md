@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario eigen-evaler, que según su model card ha recibido una actualización significativa en cuanto a capacidad de razonamiento e inferencia. El autor afirma que, gracias a un mayor uso de recursos computacionales y a mecanismos de optimización algorítmica durante el post-entrenamiento, el modelo mejora su rendimiento en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes. Sin embargo, la información pública es extremadamente limitada: el repositorio no contiene pesos (0.0 GB), no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. La model card incluye una tabla de benchmarks comparativos con otros modelos no identificados (Model1, Model2, Model1-v2) y menciona una mejora en AIME 2025 del 70% al 87,5%, aunque sin detallar las condiciones de evaluación.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario eigen-evaler, que según su model card ha recibido una actualización significativa en cuanto a capacidad de razonamiento e inferencia. El autor afirma que, gracias a un mayor uso de recursos computacionales y a mecanismos de optimización algorítmica durante el post-entrenamiento, el modelo mejora su rendimiento en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes. Sin embargo, la información pública es extremadamente limitada: el repositorio no contiene pesos (0.0 GB), no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. La model card incluye una tabla de benchmarks comparativos con otros modelos no identificados (Model1, Model2, Model1-v2) y menciona una mejora en AIME 2025 del 70% al 87,5%, aunque sin detallar las condiciones de evaluación.
 
 A día de hoy, el modelo no es descargable ni ejecutable, ya que el repositorio está vacío. Toda la información disponible proviene de la model card, que parece ser una plantilla genérica con escasa verificación técnica. Por tanto, esta ficha debe interpretarse como una evaluación preliminar basada en datos declarados por el autor, no como una validación independiente.
 
@@ -89,7 +89,7 @@ No disponible. La model card compara con "Model1", "Model2" y "Model1-v2", pero 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no hay pesos descargables ni código de inferencia. El modelo no es utilizable en la práctica.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no hay pesos descargables ni código de inferencia. El modelo no es utilizable en la práctica.
 - No se proporciona ninguna especificación técnica (arquitectura, parámetros, contexto, tokenizador, etc.), lo que impide cualquier evaluación rigurosa o despliegue.
 - Los benchmarks presentados en la model card carecen de contexto metodológico: no se identifican los datasets concretos, las condiciones de evaluación ni los modelos de referencia.
 - La afirmación sobre AIME 2025 (87,5% de precisión) no está respaldada por un informe técnico o paper, y podría ser un dato no verificado.
@@ -99,5 +99,5 @@ No disponible. La model card compara con "Model1", "Model2" y "Model1-v2", pero 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/eigen-evaler/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/eigen-evaler/MyAwesomeModel-TestRepo
 - No se han encontrado papers, repositorios de código, demos ni documentación adicional más allá de la model card mencionada.

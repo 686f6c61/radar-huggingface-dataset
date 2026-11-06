@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, desarrollado por Alibaba Qwen y distribuido en HuggingFace a través del repositorio SAMARA-IMPORT. Forma parte de la generación Qwen3.8, sucesora de las series Qwen3.5 y Qwen3.6, y está diseñado para tareas de codificación, trabajo profesional, investigación y ejecución agéntica de largo horizonte. Se trata de un modelo denso de 27.781 millones de parámetros con una arquitectura híbrida que combina atención lineal (Gated DeltaNet) y atención completa (Gated Attention), lo que le permite mantener una ventana de contexto nativa de 262.144 tokens, extensible hasta 1.000.000.
+Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, desarrollado por Alibaba Qwen y distribuido en Hugging Face a través del repositorio SAMARA-IMPORT. Forma parte de la generación Qwen3.8, sucesora de las series Qwen3.5 y Qwen3.6, y está diseñado para tareas de codificación, trabajo profesional, investigación y ejecución agéntica de largo horizonte. Se trata de un modelo denso de 27.781 millones de parámetros con una arquitectura híbrida que combina atención lineal (Gated DeltaNet) y atención completa (Gated Attention), lo que le permite mantener una ventana de contexto nativa de 262.144 tokens, extensible hasta 1.000.000.
 
 El modelo integra comprensión visión-lenguaje nativa (imágenes y vídeos), control flexible del modo de razonamiento (thinking mode activado por defecto, desactivable por petición) y predicción multi-token (MTP). Su licencia Apache 2.0 permite uso comercial sin restricciones. El repositorio contiene pesos en formato safetensors (55,6 GB) compatibles con Transformers, vLLM, SGLang y TokenSpeed, lo que facilita su despliegue en entornos de producción.
 
@@ -78,6 +78,6 @@ No se dispone de datos suficientes sobre Qwen3.6-27B, Qwen3.7-Plus y Muse Glimme
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SAMARA-IMPORT/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/SAMARA-IMPORT/Qwen3.8-27B
 - Qwen Cloud (servicio gestionado): https://www.qwencloud.com
 - Documentación del modelo Qwen3.8-27B en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b

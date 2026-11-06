@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kai-os/Carnice-V3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kai-os/Carnice-V3-GGUF
 - Modelo base (BF16): https://huggingface.co/kai-os/Carnice-V3
 - Coleccion Carnice de kai-os: https://huggingface.co/collections/kai-os/carnice
 - Version anterior (Carnice-V2-27b-GGUF): https://huggingface.co/kai-os/Carnice-V2-27b-GGUF

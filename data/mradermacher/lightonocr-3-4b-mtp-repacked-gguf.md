@@ -25,7 +25,7 @@ No obstante, la información pública disponible es muy limitada: no se detallan
 
 No se dispone de información sobre la arquitectura interna del modelo en los datos proporcionados. Por el nombre y la categoría (OCR) cabe esperar un modelo multimodal con codificador visual y decodificador de lenguaje, pero no se confirma ni el tipo de transformer, ni el mecanismo de atención, ni la presencia de componentes MoE o SSM. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO o ajuste supervisado.
 
-Lo único verificable es el proceso de conversión: se trata de una cuantización estática generada con la herramienta de cuantización de llama.cpp a partir de los pesos en formato HuggingFace del repositorio `prithivMLmods/LightOnOCR-3-4B-MTP-Repacked`. El sufijo "MTP" y "Repacked" sugiere un reempaquetado de pesos originales, pero no se detalla en qué consiste ni qué implicaciones tiene sobre el rendimiento.
+Lo único verificable es el proceso de conversión: se trata de una cuantización estática generada con la herramienta de cuantización de llama.cpp a partir de los pesos en formato Hugging Face del repositorio `prithivMLmods/LightOnOCR-3-4B-MTP-Repacked`. El sufijo "MTP" y "Repacked" sugiere un reempaquetado de pesos originales, pero no se detalla en qué consiste ni qué implicaciones tiene sobre el rendimiento.
 
 ## Capacidades
 

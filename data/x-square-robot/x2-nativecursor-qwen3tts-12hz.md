@@ -93,7 +93,7 @@ No se han identificado cabezas observadoras de progreso de lectura comparables p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/x-square-robot/X2-NativeCursor-Qwen3TTS-12Hz
+- Modelo en Hugging Face: https://huggingface.co/x-square-robot/X2-NativeCursor-Qwen3TTS-12Hz
 - Checkpoint de voz asociado: https://huggingface.co/x-square-robot/X2Streaming-TTS-1.7B
 - Repositorio del motor: https://github.com/X-Square-Robot/Qwen3TTS-Streaming
 - Repositorio del proyecto X2Streaming-TTS: https://github.com/X-Square-Robot/X2Streaming-TTS

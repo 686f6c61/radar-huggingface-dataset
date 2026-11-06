@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llmware/dragon-qwen-9b es un modelo publicado en HuggingFace por llmware, organizacion conocida por desarrollar modelos y herramientas orientadas a flujos RAG (retrieval-augmented generation) sobre documentos empresariales. El identificador del repositorio indica que se trata de un modelo de aproximadamente 9.000 millones de parametros, presumiblemente derivado de la familia Qwen, aunque la model card publicada no confirma ni la arquitectura base ni el proceso de entrenamiento. La unica informacion tecnica verificable en el repositorio es la licencia Apache 2.0.
+llmware/dragon-qwen-9b es un modelo publicado en Hugging Face por llmware, organizacion conocida por desarrollar modelos y herramientas orientadas a flujos RAG (retrieval-augmented generation) sobre documentos empresariales. El identificador del repositorio indica que se trata de un modelo de aproximadamente 9.000 millones de parametros, presumiblemente derivado de la familia Qwen, aunque la model card publicada no confirma ni la arquitectura base ni el proceso de entrenamiento. La unica informacion tecnica verificable en el repositorio es la licencia Apache 2.0.
 
 La relevancia de esta ficha es limitada por la escasez de documentacion: no hay model card descriptiva, no hay pipeline declarado, no se listan idiomas soportados y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. Esto sugiere una publicacion reciente, un artefacto interno hecho publico sin documentar, o un modelo en fase de validacion.
 
@@ -94,6 +94,6 @@ Las cifras de contexto y licencia de los modelos comparativos deben verificarse 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llmware/dragon-qwen-9b
-- Organizacion llmware en HuggingFace: https://huggingface.co/llmware
+- Modelo en Hugging Face: https://huggingface.co/llmware/dragon-qwen-9b
+- Organizacion llmware en Hugging Face: https://huggingface.co/llmware
 - Paper, blog, repositorio o demo especificos de este modelo: no disponibles en la informacion proporcionada.

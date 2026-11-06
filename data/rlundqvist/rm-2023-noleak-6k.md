@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rlundqvist/rm-2023-noleak-6k` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado como un *reward model* (modelo de recompensa) para evaluar respuestas generadas por modelos de lenguaje. El adaptador se basa en el modelo base `Qwen/Qwen2.5-7B-Instruct` y está entrenado con un conjunto de datos de 6.000 muestras aparentemente relacionadas con el año 2023, según indica el nombre del repositorio. El autor, Ryan Lundqvist, se identifica como investigador de seguridad empírica en su perfil de GitHub, y el nombre "noleak" sugiere que el entrenamiento incorpora verificaciones de fugas de datos entre conjuntos de entrenamiento y evaluación, una práctica relevante para garantizar la validez de las métricas.
+El modelo `rlundqvist/rm-2023-noleak-6k` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado como un *reward model* (modelo de recompensa) para evaluar respuestas generadas por modelos de lenguaje. El adaptador se basa en el modelo base `Qwen/Qwen2.5-7B-Instruct` y está entrenado con un conjunto de datos de 6.000 muestras aparentemente relacionadas con el año 2023, según indica el nombre del repositorio. El autor, Ryan Lundqvist, se identifica como investigador de seguridad empírica en su perfil de GitHub, y el nombre "noleak" sugiere que el entrenamiento incorpora verificaciones de fugas de datos entre conjuntos de entrenamiento y evaluación, una práctica relevante para garantizar la validez de las métricas.
 
 La relevancia de este modelo radica en su posible uso como componente en pipelines de *reinforcement learning from human feedback* (RLHF) o *constitutional AI*, donde un reward model puntúa la calidad de las respuestas para guiar el ajuste fino de un modelo generativo. Sin embargo, la información pública disponible es extremadamente limitada: la model card no proporciona detalles sobre el entrenamiento, los datos, las métricas o la licencia, lo que dificulta su evaluación rigurosa. A pesar de ello, su tamaño reducido (0.2 GB) y su naturaleza de adaptador LoRA lo hacen ligero y fácil de integrar sobre el modelo base Qwen2.5-7B-Instruct.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: rlundqvist/rm-2023-noleak-6k](https://huggingface.co/rlundqvist/rm-2023-noleak-6k)
+- [Hugging Face: rlundqvist/rm-2023-noleak-6k](https://huggingface.co/rlundqvist/rm-2023-noleak-6k)
 - [Repositorio noleak (athsxx/noleak)](https://github.com/athsxx/noleak)
 - [Perfil de GitHub del autor (ryanlundqvist)](https://github.com/ryanlundqvist)
 - [Paper de Lacoste et al. (2019) sobre impacto ambiental, citado en la model card](https://arxiv.org/abs/1910.09700)

@@ -6,7 +6,7 @@ Buddy 4B es una distribución de pesos en formato GGUF del modelo Qwen3.5-4B de 
 
 El propósito declarado es servir como motor de inferencia en dispositivo del producto "Buddy: Your AI Friend", de Buddy's Burrow, de ahí el nombre del repositorio y la separación entre "cerebro" (modelo de lenguaje) y "ojos" (componente de visión). Para el desarrollador externo su interés es limitado pero concreto: ofrece un paquete GGUF listo para usar con llama.cpp y derivados, con licencia Apache 2.0 y un tamaño de repositorio de 3,4 GB que cabe en hardware de consumo.
 
-Conviene señalar una discrepancia relevante en los metadatos: la ficha de HuggingFace declara 333.514.240 parámetros totales según safetensors, mientras que el nombre del modelo y la model card hacen referencia a Qwen3.5-4B. Esa cifra de parámetros no es coherente con un modelo de 4B y probablemente refleja únicamente algún componente auxiliar o un error de indexación; el dato debe tratarse con cautela. No se han publicado resultados de benchmarks ni detalles de entrenamiento propios en la información disponible.
+Conviene señalar una discrepancia relevante en los metadatos: la ficha de Hugging Face declara 333.514.240 parámetros totales según safetensors, mientras que el nombre del modelo y la model card hacen referencia a Qwen3.5-4B. Esa cifra de parámetros no es coherente con un modelo de 4B y probablemente refleja únicamente algún componente auxiliar o un error de indexación; el dato debe tratarse con cautela. No se han publicado resultados de benchmarks ni detalles de entrenamiento propios en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/buddysburrow/buddy-4b
+- Repositorio Hugging Face: https://huggingface.co/buddysburrow/buddy-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Cuantizaciones GGUF de referencia: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

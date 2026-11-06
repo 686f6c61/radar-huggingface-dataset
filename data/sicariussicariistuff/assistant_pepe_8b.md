@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Assistant_Pepe_8B es un ajuste fino (fine-tune) del modelo Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct_Abliterated, desarrollado por el usuario SicariusSicariiStuff y publicado en HuggingFace. Se trata de un modelo derivado de la familia Llama 3.1 de Meta, con arquitectura transformer densa y aproximadamente 8.000 millones de parametros, entrenado sobre el dataset propietario UBW_Tapestries del mismo autor. El modelo se distribuye bajo la licencia comunitaria Llama 3.1 y esta orientado exclusivamente al idioma ingles.
+Assistant_Pepe_8B es un ajuste fino (fine-tune) del modelo Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct_Abliterated, desarrollado por el usuario SicariusSicariiStuff y publicado en Hugging Face. Se trata de un modelo derivado de la familia Llama 3.1 de Meta, con arquitectura transformer densa y aproximadamente 8.000 millones de parametros, entrenado sobre el dataset propietario UBW_Tapestries del mismo autor. El modelo se distribuye bajo la licencia comunitaria Llama 3.1 y esta orientado exclusivamente al idioma ingles.
 
 La relevancia de este modelo radica en su herencia de la variante "UltraLong-1M", que sugiere una ventana de contexto extendida (hasta 1 millon de tokens segun la nomenclatura del modelo base, aunque no se confirma en la informacion disponible), combinada con un ajuste fino adicional sobre datos del autor. El sufijo "Abliterated" en el modelo base indica que este ha sido sometido a un proceso de eliminacion de alineamiento y rechazos (abliteration), lo que implica que el modelo resultante carece de las capas de seguridad y rechazo tipicas de los modelos instruct originales.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Assistant_Pepe_8B | ~8B (nominal) | Hasta 1M (sin confirmar) | Llama 3.1 | HuggingFace | Fine-tune abliterated sin benchmarks |
-| Llama-3.1-8B-Instruct (Meta) | 8B | 128K | Llama 3.1 | HuggingFace, ampliamente disponible | Modelo oficial alineado, con benchmarks publicados |
-| Nemotron-8B-UltraLong-1M-Instruct (NVIDIA) | 8B | 1M | Llama 3.1 | HuggingFace | Base directo del modelo, con contexto extendido |
-| Dolphin-2.9-Llama-3-8B (Cognitive Computations) | 8B | 8K | Llama 3 | HuggingFace | Fine-tune sin censura, con benchmarks parciales |
+| Assistant_Pepe_8B | ~8B (nominal) | Hasta 1M (sin confirmar) | Llama 3.1 | Hugging Face | Fine-tune abliterated sin benchmarks |
+| Llama-3.1-8B-Instruct (Meta) | 8B | 128K | Llama 3.1 | Hugging Face, ampliamente disponible | Modelo oficial alineado, con benchmarks publicados |
+| Nemotron-8B-UltraLong-1M-Instruct (NVIDIA) | 8B | 1M | Llama 3.1 | Hugging Face | Base directo del modelo, con contexto extendido |
+| Dolphin-2.9-Llama-3-8B (Cognitive Computations) | 8B | 8K | Llama 3 | Hugging Face | Fine-tune sin censura, con benchmarks parciales |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_8B
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_8B
 - Modelo base: https://huggingface.co/SicariusSicariiStuff/Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct_Abliterated
 - Dataset UBW_Tapestries: https://huggingface.co/datasets/SicariusSicariiStuff/UBW_Tapestries
 - Version 32B: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_32B

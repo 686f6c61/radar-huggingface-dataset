@@ -33,7 +33,7 @@ El proceso de entrenamiento es un "recovery-fine-tuned": después de comprimir e
 - Compresión de modelo: ratio de compresión de 0.37 respecto al modelo base, reduciendo el tamaño y la memoria requerida.
 - Eficiencia de atención: factorización SVD de bajo rango y escaneo asociativo kernelizado para aproximar la atención lineal, reduciendo la complejidad de O(L²) a O(L).
 - Mezcla de expertos unificada: dos ramas de expertos condicionales (`uMoE_QKV` y `uMoE_FFN`) que permiten flexibilidad en la representación sin activar todos los parámetros en cada paso.
-- Idiomas: únicamente inglés, según la ficha de HuggingFace.
+- Idiomas: únicamente inglés, según la ficha de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Razonamiento multi-step y agentes: no disponible (modelo de clasificación, no generativo).
 - Capacidades de visión o audio: no disponible.
@@ -65,7 +65,7 @@ Estos valores provienen de la model card del autor, obtenidos con `recovery_step
 - VRAM estimada para inferencia: 769.82 MB de pico, según el benchmark publicado.
 - GPU recomendadas: no especificadas por el autor. Se puede inferir que una GPU con al menos 2 GB de VRAM es suficiente.
 - Consumer GPU: sí, cabe en GPUs de consumo como la serie RTX 3050, GTX 1650 o superiores.
-- Opciones de despliegue: no documentadas. La etiqueta PyTorch sugiere que puede cargarse mediante el pipeline `text-classification` de HuggingFace Transformers. No se menciona compatibilidad con vLLM, llama.cpp ni TGI.
+- Opciones de despliegue: no documentadas. La etiqueta PyTorch sugiere que puede cargarse mediante el pipeline `text-classification` de Hugging Face Transformers. No se menciona compatibilidad con vLLM, llama.cpp ni TGI.
 - Latencia y throughput: no disponible. La ficha solo informa de un tiempo de evaluación pura de 20.09 s, sin desglosar el tamaño del dataset ni la configuración del hardware.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No disponible. No se han proporcionado comparativas con otros modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-bam-umoe
+- Modelo en Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-bam-umoe
 - Sitio web del laboratorio Hoosha AI: https://hooshaai.github.io/
 - GitHub del laboratorio: https://github.com/Hooshaai/hooshaai.github.io
 - Paper de DistilBERT (referencia base): https://arxiv.org/abs/1701.06538

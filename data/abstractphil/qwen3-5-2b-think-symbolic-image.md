@@ -73,10 +73,10 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucia 2B (este) | 2B | no disponible | Captioning simbólico con cadena de pensamiento | apache-2.0 | HuggingFace (adaptador LoRA) |
-| Lucia 4B | no disponible | no disponible | Misma receta, mayor capacidad | no disponible | HuggingFace (familia Lucia) |
-| Lucia v1 (9B) | 9B | no disponible | Misma receta, referencia de calidad | no disponible | HuggingFace (familia Lucia) |
-| Qwen/Qwen3.5-2B | 2B | no disponible | Modelo base multimodal generalista | no disponible | HuggingFace |
+| Lucia 2B (este) | 2B | no disponible | Captioning simbólico con cadena de pensamiento | apache-2.0 | Hugging Face (adaptador LoRA) |
+| Lucia 4B | no disponible | no disponible | Misma receta, mayor capacidad | no disponible | Hugging Face (familia Lucia) |
+| Lucia v1 (9B) | 9B | no disponible | Misma receta, referencia de calidad | no disponible | Hugging Face (familia Lucia) |
+| Qwen/Qwen3.5-2B | 2B | no disponible | Modelo base multimodal generalista | no disponible | Hugging Face |
 
 La comparación más directa es con el modelo base Qwen3.5-2B (generalista) y con las otras tallas de la propia familia Lucia. No se dispone de datos de benchmarks cruzados con otros modelos de captioning en la información proporcionada.
 
@@ -93,7 +93,7 @@ La comparación más directa es con el modelo base Qwen3.5-2B (generalista) y co
 
 ## Enlaces
 
-- HuggingFace (adaptador LoRA): https://huggingface.co/AbstractPhil/qwen3.5-2b-think-symbolic-image
+- Hugging Face (adaptador LoRA): https://huggingface.co/AbstractPhil/qwen3.5-2b-think-symbolic-image
 - Full fine-tune: https://huggingface.co/AbstractPhil/qwen3.5-2b-think-symbolic-image-full
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions

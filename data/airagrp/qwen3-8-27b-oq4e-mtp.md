@@ -83,7 +83,7 @@ La comparativa se basa en informacion publica del modelo original y de las varia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-oQ4e-mtp
 - Repositorio de la herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Variante oQ8e-mtp del mismo autor: https://huggingface.co/airagrp/Qwen3.8-27B-oQ8e-mtp
 - Guia de ejecucion local (swfte.com): https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026

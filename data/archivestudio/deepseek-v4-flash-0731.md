@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-0731 es la versión oficial de lanzamiento del modelo DeepSeek-V4-Flash, desarrollado por DeepSeek AI y publicado en el repositorio de HuggingFace por el usuario ArchiveStudio. Este modelo sustituye a la versión preliminar (preview) y presenta capacidades de agente sustancialmente mejoradas, manteniendo la misma estructura de modelo que DeepSeek-V4-Flash-DSpark, que incluye un módulo de decodificación especulativa integrado.
+DeepSeek-V4-Flash-0731 es la versión oficial de lanzamiento del modelo DeepSeek-V4-Flash, desarrollado por DeepSeek AI y publicado en el repositorio de Hugging Face por el usuario ArchiveStudio. Este modelo sustituye a la versión preliminar (preview) y presenta capacidades de agente sustancialmente mejoradas, manteniendo la misma estructura de modelo que DeepSeek-V4-Flash-DSpark, que incluye un módulo de decodificación especulativa integrado.
 
 Se trata de un modelo de lenguaje de 304 mil millones de parámetros con arquitectura de mezcla de expertos (MoE) dispersa, diseñado para generación de texto, codificación, razonamiento, contextos largos y flujos de trabajo agénticos. El modelo conserva una ventana de contexto de 1 millón de tokens y admite niveles de esfuerzo de razonamiento bajo, alto y máximo, además de compatibilidad nativa con la API de Respuestas, llamada a funciones y salida estructurada.
 
@@ -75,8 +75,8 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArchiveStudio/DeepSeek-V4-Flash-0731
-- Árbol de archivos en HuggingFace: https://huggingface.co/ArchiveStudio/DeepSeek-V4-Flash-0731/tree/main
+- Repositorio Hugging Face: https://huggingface.co/ArchiveStudio/DeepSeek-V4-Flash-0731
+- Árbol de archivos en Hugging Face: https://huggingface.co/ArchiveStudio/DeepSeek-V4-Flash-0731/tree/main
 - Modelo en NVIDIA NIM: https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard
 - Modelo en ModelScope: https://modelscope.ai/models/deepseek-ai/DeepSeek-V4-Flash-0731
 - Ficha en DocsBot: https://docsbot.ai/models/deepseek-v4-flash

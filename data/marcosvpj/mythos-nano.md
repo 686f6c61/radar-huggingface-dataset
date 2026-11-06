@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mythos-nano es un modelo de lenguaje de 3.085.938.688 parámetros (aproximadamente 3B) desarrollado por el usuario marcosvpj, publicado en HuggingFace con licencia MIT. Se trata de un ajuste fino (finetune) del modelo WeiboAI/VibeThinker-3B, que a su vez se apoya en la arquitectura Qwen2 según las etiquetas del repositorio. El modelo está orientado de forma explícita al razonamiento, las matemáticas y el código, y su model card lo presenta con el lema de que "con retroalimentación verificable, los modelos pequeños alcanzan razonamiento de frontera".
+Mythos-nano es un modelo de lenguaje de 3.085.938.688 parámetros (aproximadamente 3B) desarrollado por el usuario marcosvpj, publicado en Hugging Face con licencia MIT. Se trata de un ajuste fino (finetune) del modelo WeiboAI/VibeThinker-3B, que a su vez se apoya en la arquitectura Qwen2 según las etiquetas del repositorio. El modelo está orientado de forma explícita al razonamiento, las matemáticas y el código, y su model card lo presenta con el lema de que "con retroalimentación verificable, los modelos pequeños alcanzan razonamiento de frontera".
 
 La relevancia del proyecto reside en su propuesta de eficiencia: con solo 3B de parámetros declara resultados en competiciones de matemáticas (AIME25, AIME26, HMMT25, BruMO25) próximos a sistemas de billones de parámetros como Kimi K2.5 o DeepSeek V3.2, y un 96,1% de pass-rate agregado en problemas tipo LeetCode. Es, por tanto, un caso de estudio sobre hasta qué punto un modelo denso pequeño puede competir en tareas con verificación automática cuando se le concede un presupuesto de generación muy alto (hasta 40.960 tokens de salida recomendados).
 
@@ -98,8 +98,8 @@ La informacion proporcionada no incluye resultados de benchmarks de otros modelo
 
 | Modelo | Parametros | Contexto | Licencia | AIME25 | LCBv6 | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mythos-nano | 3B | no disponible | MIT | 91,4 | 80,2 | HuggingFace (safetensors + GGUF) |
-| WeiboAI/VibeThinker-3B (base) | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Mythos-nano | 3B | no disponible | MIT | 91,4 | 80,2 | Hugging Face (safetensors + GGUF) |
+| WeiboAI/VibeThinker-3B (base) | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Kimi K2.5 | 1T | no disponible | no disponible | 96,1 | 85,0 | no disponible |
 | DeepSeek V3.2 | 671B | no disponible | no disponible | 93,1 | 80,8 | no disponible |
 | GLM-5 | 744B | no disponible | no disponible | 96,7 | 85,5 | no disponible |
@@ -123,7 +123,7 @@ La lectura relevante de estos datos es que Mythos-nano queda, en AIME25, a 4,7 p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcosvpj/Mythos-nano
+- Modelo en Hugging Face: https://huggingface.co/marcosvpj/Mythos-nano
 - Modelo base: https://huggingface.co/WeiboAI/VibeThinker-3B
 - Repositorio alternativo citado en el ejemplo de codigo de la model card: https://huggingface.co/squ11z1/Mythos-nano
 - Los resultados de la busqueda web realizada no devolvieron enlaces relevantes sobre el modelo (unicamente paginas de prevision meteorologica sin relacion con el proyecto).

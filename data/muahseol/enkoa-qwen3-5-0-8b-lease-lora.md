@@ -85,7 +85,7 @@ No se dispone de información sobre adaptadores LoRA comparables en la documenta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-lease-lora
+- Hugging Face: https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-lease-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Librería PEFT: https://huggingface.co/docs/peft
 - vLLM (motor de inferencia citado en la model card): https://github.com/vllm-project/vllm

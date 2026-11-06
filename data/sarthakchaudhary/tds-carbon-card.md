@@ -64,7 +64,7 @@ No disponible. No se puede comparar con otros modelos porque no hay información
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sarthakchaudhary/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/sarthakchaudhary/tds-carbon-card
 - Repositorio similar (saurabh123432): https://huggingface.co/saurabh123432/tds-carbon-card
 - Repositorio similar (pandey1111): https://huggingface.co/pandey1111/tds-carbon-card
 - Herramienta CodeCarbon (mencionada en la model card): https://codecarbon.io (referencia indirecta, no enlazada en el repositorio)

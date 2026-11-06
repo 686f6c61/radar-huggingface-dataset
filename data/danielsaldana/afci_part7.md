@@ -66,7 +66,7 @@ No procede una comparativa con modelos de lenguaje. Como alternativas de datos e
 
 | Recurso | Cobertura | Licencia | Disponibilidad |
 |---|---|---|---|
-| `danielsaldana/AFCI_part7` | Arcos CA 50 Hz y 400 Hz, CC, PV, negativos PLAID; datos preprocesados y sintéticos | Mixta (CC-BY-4.0, CC0-1.0, etiqueta TI, sin licencia en un caso) | HuggingFace, descarga directa |
+| `danielsaldana/AFCI_part7` | Arcos CA 50 Hz y 400 Hz, CC, PV, negativos PLAID; datos preprocesados y sintéticos | Mixta (CC-BY-4.0, CC0-1.0, etiqueta TI, sin licencia en un caso) | Hugging Face, descarga directa |
 | HIFDA household-appliance HF (Zenodo 14886758) | Señales de alta frecuencia de electrodomésticos | no disponible en la información | Solo enlace, no incluido (4,4 GB) |
 | PV DC arc datasets (Zenodo 14804124, Mendeley pd93m3c4rz) | Arcos fotovoltaicos en CC | no disponible en la información | Solo enlace, no incluidos (2,2 y 3,8 GB) |
 | COOLL, LIT-Dataset, IEEE DataPort originales | Cargas y arcos de referencia | no disponible en la información | Requieren registro |
@@ -80,11 +80,11 @@ No procede una comparativa con modelos de lenguaje. Como alternativas de datos e
 - Cobertura de dominio limitada: los conjuntos incluidos excluyen explícitamente datos de alta frecuencia de electrodomésticos y varios conjuntos fotovoltaicos grandes, por considerarlos fuera del objetivo residencial en CA.
 - Idiomas y sesgos: no aplica sesgo lingüístico, pero sí sesgo de banco de pruebas (un único montaje de Lorraine, uno de DCADE), que puede no representar instalaciones reales.
 - Integridad: los ficheros troceados deben reconstruirse y verificarse con `SHA256SUMS.txt`; un fallo silencioso en la reconstrucción corrompe el conjunto de entrenamiento.
-- Fecha de creación del repositorio: 2026-11-02, según los metadatos de HuggingFace; conviene contrastarla con el estado real del proyecto antes de citarlo.
+- Fecha de creación del repositorio: 2026-11-02, según los metadatos de Hugging Face; conviene contrastarla con el estado real del proyecto antes de citarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielsaldana/AFCI_part7
+- Repositorio en Hugging Face: https://huggingface.co/danielsaldana/AFCI_part7
 - Ferracuti et al. 2025 (datos preprocesados): https://zenodo.org/records/15279701
 - Conjuntos de arco de TI: https://software-dl.ti.com/C2000/esd/mcu_ai/datasets/
 - Proyecto DCADE (arcos a 400 Hz): https://zenodo.org/records/10246364

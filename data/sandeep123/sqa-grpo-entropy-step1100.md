@@ -76,7 +76,7 @@ No se han publicado comparativas con otros modelos en la información disponible
 
 ## Enlaces
 
-- [HuggingFace: sandeep123/sqa-grpo-entropy-step1100](https://huggingface.co/sandeep123/sqa-grpo-entropy-step1100)
+- [Hugging Face: sandeep123/sqa-grpo-entropy-step1100](https://huggingface.co/sandeep123/sqa-grpo-entropy-step1100)
 - [Paper: E-GRPO: High Entropy Steps Drive Effective Reinforcement Learning (arXiv)](https://arxiv.org/abs/2601.00423)
 - [Documentación de GRPO Trainer (Hugging Face TRL)](https://huggingface.co/docs/trl/grpo_trainer)
 - [Repositorio SEED-GRPO (GitHub)](https://github.com/Dreamer312/SEED-GRPO)

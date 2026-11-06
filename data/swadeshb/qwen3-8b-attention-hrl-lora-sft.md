@@ -17,7 +17,7 @@ La relevancia de este modelo radica en que parte de una base sólida como Qwen3-
 | Tipos de cuantizacion | No disponible (el adaptador se distribuye en safetensors; el base admite cuantizaciones como GPTQ, AWQ, etc.) |
 | Idiomas soportados | No disponible (el modelo base Qwen3-8B soporta múltiples idiomas, pero no se confirma para este adaptador) |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (según las etiquetas de HuggingFace) |
+| Formato de pesos | safetensors (según las etiquetas de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3-8B (base) | 8B | 32K | Apache 2.0 | HuggingFace |
-| swadeshb/qwen3-8b-attention-hrl-lora-sft | 8B + adaptador | 32K | No disponible | HuggingFace |
-| Otros adaptadores LoRA sobre Qwen3-8B (p. ej., de la comunidad) | Variable | 32K | Variable | HuggingFace |
+| Qwen/Qwen3-8B (base) | 8B | 32K | Apache 2.0 | Hugging Face |
+| swadeshb/qwen3-8b-attention-hrl-lora-sft | 8B + adaptador | 32K | No disponible | Hugging Face |
+| Otros adaptadores LoRA sobre Qwen3-8B (p. ej., de la comunidad) | Variable | 32K | Variable | Hugging Face |
 
 No se dispone de comparativas de rendimiento porque no hay benchmarks publicados para este adaptador. La comparación con el modelo base es la referencia más directa: se espera que el adaptador modifique el comportamiento en alguna dimensión, pero sin datos no se puede cuantificar.
 

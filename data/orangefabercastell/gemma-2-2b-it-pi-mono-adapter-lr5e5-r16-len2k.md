@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: el adaptador en si requiere menos de 1 GB de VRAM adicional sobre el modelo base. Gemma 2 2B en precision fp16 ocupa aproximadamente 5 GB, por lo que el conjunto completo cabe en GPUs con 8 GB de VRAM (RTX 3060, RTX 4060, etc.).
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para inferencia en fp16. Para entrenamiento del adaptador, una GPU con 12-16 GB es suficiente.
 - Compatibilidad con GPU de consumo: si, cabe en RTX 3060, RTX 4060, RTX 4070 y similares.
-- Opciones de despliegue: se puede usar con la libreria `transformers` de HuggingFace, `PEFT` para cargar el adaptador, y `vLLM` o `llama.cpp` si se convierte a GGUF. Tambien es compatible con `Ollama` si se empaqueta adecuadamente.
+- Opciones de despliegue: se puede usar con la libreria `transformers` de Hugging Face, `PEFT` para cargar el adaptador, y `vLLM` o `llama.cpp` si se convierte a GGUF. Tambien es compatible con `Ollama` si se empaqueta adecuadamente.
 - Latencia y throughput: no disponible. Depende del hardware y del modelo base.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-lr5e5-r16-len2k
+- Repositorio en Hugging Face: https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-lr5e5-r16-len2k
 - Articulo de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Modelo base Gemma 2 2B IT: https://huggingface.co/google/gemma-2-2b-it

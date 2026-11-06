@@ -85,7 +85,7 @@ La baseline obtiene mayor accuracy porque predice siempre la clase mayoritaria, 
 - Uso en GPU de consumo: irrelevante para el despliegue; el cuello de botella es la carga del pipeline y el preprocesamiento, no el calculo.
 - Opciones de despliegue: carga directa con `joblib.load` en Python, servicio REST con FastAPI o Flask, o integracion en pipelines de scikit-learn. No aplica vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
-- Tamano del repositorio: 0.0 GB segun HuggingFace, coherente con un artefacto joblib de arboles de tamano moderado.
+- Tamano del repositorio: 0.0 GB segun Hugging Face, coherente con un artefacto joblib de arboles de tamano moderado.
 
 ## Comparativa con modelos similares
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos comparables publicados con el mismo e
 
 | Modelo | Parametros | Contexto | F1 Macro (2024-2025) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BR-Risk-ML (XGBoost) | no disponible | no aplica | 0.5726 | MIT | HuggingFace |
+| BR-Risk-ML (XGBoost) | no disponible | no aplica | 0.5726 | MIT | Hugging Face |
 | DummyClassifier (baseline del autor) | no aplica | no aplica | 0.2903 | no aplica | incluido en scikit-learn |
 | Alternativas tabulares comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -112,7 +112,7 @@ No se dispone de informacion sobre modelos comparables publicados con el mismo e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fellype-dev-ai/br-risk-ml
+- Modelo en Hugging Face: https://huggingface.co/fellype-dev-ai/br-risk-ml
 - Codigo fuente en GitHub: https://github.com/llype-ENG/br-risk-ml
 - Portal de datos abiertos de la PRF: https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos
 - Datos abiertos de accidentes de la PRF: https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-da-prf

@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | F1 por fotograma | Latencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Trained Eye (adaptador) | Adaptador de 767 MB sobre base de 30B | no disponible | 0,87 | 1,64 s | apache-2.0 | HuggingFace (adaptador) |
-| Muse-Glimmer-30B (base) | 30B (según nombre) | no disponible | 0,88 | 2,53 s | no disponible | HuggingFace |
+| Trained Eye (adaptador) | Adaptador de 767 MB sobre base de 30B | no disponible | 0,87 | 1,64 s | apache-2.0 | Hugging Face (adaptador) |
+| Muse-Glimmer-30B (base) | 30B (según nombre) | no disponible | 0,88 | 2,53 s | no disponible | Hugging Face |
 | Muse Spark | no disponible | no disponible | 0,94 | 11,80 s | no disponible | no disponible |
 
 La comparación se limita a la tarea de vigilancia visual de las dos habilidades entrenadas; no hay datos comparativos en benchmarks generales ni en otras tareas multimodales.
@@ -91,7 +91,7 @@ La comparación se limita a la tarea de vigilancia visual de las dos habilidades
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amaan784/trained-eye
+- Hugging Face: https://huggingface.co/amaan784/trained-eye
 - Repositorio de código: https://github.com/amaan784/trained-eye
 - Playground: https://aas2438--trained-eye-playground-web.us-east.modal.run
 - Explicación del funcionamiento: https://aas2438--trained-eye-playground-web.us-east.modal.run/how-it-works

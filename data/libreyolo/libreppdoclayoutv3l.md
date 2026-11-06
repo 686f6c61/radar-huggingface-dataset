@@ -87,7 +87,7 @@ La comparación relevante es con el modelo original PP-DocLayoutV3: comparten ar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibrePPDocLayoutV3l
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibrePPDocLayoutV3l
 - Modelo base: https://huggingface.co/PaddlePaddle/PP-DocLayoutV3_safetensors
 - Repositorio de LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - Proyecto PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR

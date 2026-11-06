@@ -2,7 +2,7 @@
 
 ## Resumen
 
-obe-ai-system/sbert-obe-csematch es un repositorio de modelo publicado en HuggingFace por el usuario obe-ai-system bajo licencia MIT. En los datos disponibles en el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada, no declara idiomas soportados y su model card contiene únicamente la línea de licencia (`license: mit`), sin ninguna documentación técnica adicional.
+obe-ai-system/sbert-obe-csematch es un repositorio de modelo publicado en Hugging Face por el usuario obe-ai-system bajo licencia MIT. En los datos disponibles en el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada, no declara idiomas soportados y su model card contiene únicamente la línea de licencia (`license: mit`), sin ninguna documentación técnica adicional.
 
 El identificador del repositorio sugiere que se trata de un modelo de la familia Sentence-BERT ("sbert"), probablemente orientado a similitud o emparejamiento semántico ("csematch"). Es importante subrayar que esto es una inferencia a partir del nombre del repositorio y no está confirmado por ninguna fuente publicada por el autor.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros no es posible calcular el consumo de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no determinable. Si el modelo resultase ser un bi-encoder tipo BERT-base (~110 millones de parámetros), cabría en cualquier GPU de consumo con 4 GB o más de VRAM en fp32 y en menos de 1 GB en int8; esta estimación es condicional y no está confirmada por el autor.
-- Opciones de despliegue: no disponible. Si fuese un modelo Sentence-BERT, las vías habituales serían `sentence-transformers`, `optimum`/ONNX Runtime, HuggingFace TEI o `fastembed`; ninguna está confirmada para este repositorio.
+- Opciones de despliegue: no disponible. Si fuese un modelo Sentence-BERT, las vías habituales serían `sentence-transformers`, `optimum`/ONNX Runtime, Hugging Face TEI o `fastembed`; ninguna está confirmada para este repositorio.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,10 +71,10 @@ No es posible establecer una comparativa fiable porque se desconoce la tarea, el
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| obe-ai-system/sbert-obe-csematch | No disponible | No disponible | MIT | HuggingFace, 0 descargas |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| sentence-transformers/all-mpnet-base-v2 | 109 M | 384 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | MIT | HuggingFace, con benchmarks MTEB publicados |
+| obe-ai-system/sbert-obe-csematch | No disponible | No disponible | MIT | Hugging Face, 0 descargas |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| sentence-transformers/all-mpnet-base-v2 | 109 M | 384 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | MIT | Hugging Face, con benchmarks MTEB publicados |
 
 Los valores de los tres modelos de referencia son datos públicos de sus respectivas fichas; los de `sbert-obe-csematch` figuran como no disponibles porque el autor no los ha publicado.
 
@@ -91,7 +91,7 @@ Los valores de los tres modelos de referencia son datos públicos de sus respect
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/obe-ai-system/sbert-obe-csematch
+- Repositorio en Hugging Face: https://huggingface.co/obe-ai-system/sbert-obe-csematch
 - Perfil del autor: https://huggingface.co/obe-ai-system
 - Licencia MIT: https://opensource.org/licenses/MIT
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Las coincidencias obtenidas (https://es.wikipedia.org/wiki/Orden_del_Imperio_Brit%C3%A1nico, https://en.wikipedia.org/wiki/Order_of_the_British_Empire, https://fr.wikipedia.org/wiki/OBE, https://www.abbreviationfinder.org/fr/acronyms/obe.html, https://nde.medicalistes.fr/obe/) hacen referencia a la Orden del Imperio Británico y a las experiencias fuera del cuerpo, y no aportan información técnica sobre el repositorio.

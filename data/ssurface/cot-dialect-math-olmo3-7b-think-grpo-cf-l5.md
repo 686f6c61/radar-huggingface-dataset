@@ -74,9 +74,9 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto | MATH-500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ssurface/cot-dialect-math-olmo3-7b-think-grpo-cf-l5 | 7B + LoRA | no disponible | 61.8% | apache-2.0 | HuggingFace |
-| allenai/Olmo-3-7B-Think (base) | 7B | no disponible | no disponible | apache-2.0 | HuggingFace |
-| Alelcv27/Olmo3-7B-Math-CoT | 7B | no disponible | no disponible | apache-2.0 | HuggingFace |
+| ssurface/cot-dialect-math-olmo3-7b-think-grpo-cf-l5 | 7B + LoRA | no disponible | 61.8% | apache-2.0 | Hugging Face |
+| allenai/Olmo-3-7B-Think (base) | 7B | no disponible | no disponible | apache-2.0 | Hugging Face |
+| Alelcv27/Olmo3-7B-Math-CoT | 7B | no disponible | no disponible | apache-2.0 | Hugging Face |
 
 Nota: no se dispone de resultados de MATH-500 para los modelos alternativos en la informacion proporcionada. El adaptador requiere apilarse sobre el modelo SFT `ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l5` para reproducir el resultado declarado.
 

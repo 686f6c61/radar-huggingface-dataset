@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeltaEngine/MossInt4 | No disponible (3,0 GB + 4,5 GB en int4) | No disponible | safetensors int4 `convrot_w4a4` | Apache 2.0 | HuggingFace, ejecución WebGPU en navegador |
-| OpenMOSS-Team/MOSS-Image-SFT | No disponible | No disponible | No disponible | Apache 2.0 (según el modelo del que deriva) | HuggingFace |
-| akhaliq/MOSS-Image-SFT-4-steps | No disponible | No disponible | LoRA | Apache 2.0 (según el modelo del que deriva) | HuggingFace |
-| lodestones/MOSS-Image-SFT-8-steps-dmd | No disponible | No disponible | LoRA DMD | Apache 2.0 (según el modelo del que deriva) | HuggingFace |
+| DeltaEngine/MossInt4 | No disponible (3,0 GB + 4,5 GB en int4) | No disponible | safetensors int4 `convrot_w4a4` | Apache 2.0 | Hugging Face, ejecución WebGPU en navegador |
+| OpenMOSS-Team/MOSS-Image-SFT | No disponible | No disponible | No disponible | Apache 2.0 (según el modelo del que deriva) | Hugging Face |
+| akhaliq/MOSS-Image-SFT-4-steps | No disponible | No disponible | LoRA | Apache 2.0 (según el modelo del que deriva) | Hugging Face |
+| lodestones/MOSS-Image-SFT-8-steps-dmd | No disponible | No disponible | LoRA DMD | Apache 2.0 (según el modelo del que deriva) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DeltaEngine/MossInt4
+- Modelo en Hugging Face: https://huggingface.co/DeltaEngine/MossInt4
 - Modelo base de difusión: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - LoRA de 4 pasos: https://huggingface.co/akhaliq/MOSS-Image-SFT-4-steps
 - LoRA DMD de 8 pasos: https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd

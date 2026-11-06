@@ -101,9 +101,9 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Edge0-8B-A1B-preview | 7,9B | ≈1,2B | 128k | Apache 2.0 | Media 69,9 (AIME 63,3; HumanEval 91,5; MMLU-Pro 70,1) | HuggingFace, framework edge0 (MLX) |
-| Ling 3.0 tiny (fp16) | ≈7,9B | no disponible | 128k (heredado) | no disponible en la informacion proporcionada | Media 72,7 (AIME 73,3; HumanEval 92,7; MMLU-Pro 65,8) | HuggingFace (inclusionAI) |
-| Edge0-35B-A3B-preview | no disponible | no disponible | no disponible | Apache 2.0 (referenciado) | no disponible | HuggingFace (misma familia) |
+| Edge0-8B-A1B-preview | 7,9B | ≈1,2B | 128k | Apache 2.0 | Media 69,9 (AIME 63,3; HumanEval 91,5; MMLU-Pro 70,1) | Hugging Face, framework edge0 (MLX) |
+| Ling 3.0 tiny (fp16) | ≈7,9B | no disponible | 128k (heredado) | no disponible en la informacion proporcionada | Media 72,7 (AIME 73,3; HumanEval 92,7; MMLU-Pro 65,8) | Hugging Face (inclusionAI) |
+| Edge0-35B-A3B-preview | no disponible | no disponible | no disponible | Apache 2.0 (referenciado) | no disponible | Hugging Face (misma familia) |
 
 Para el resto de alternativas de la categoria (MoE dispersos de clase 8B con activacion en el rango de 1B-3B), no hay datos verificables en la informacion disponible.
 
@@ -123,7 +123,7 @@ Para el resto de alternativas de la categoria (MoE dispersos de clase 8B con act
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Edge0/Edge0-8B-A1B-preview
+- Modelo en Hugging Face: https://huggingface.co/Edge0/Edge0-8B-A1B-preview
 - Repositorio GitHub del framework edge0: https://github.com/Edge0-AI/edge0
 - Licencia Apache 2.0 del proyecto: https://github.com/Edge0-AI/edge0/blob/main/LICENSE
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny-base

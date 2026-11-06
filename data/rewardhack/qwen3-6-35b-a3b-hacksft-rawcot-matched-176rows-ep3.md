@@ -76,9 +76,9 @@ No hay datos de terceros comparables en la informacion disponible. La comparacio
 
 | Modelo | Parametros | Contexto | Pass / hack (sin instruccion) | Pass / hack (elicitacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (epoca 3) | 35,95 mil millones totales | 65.536 tokens | 78,0 % / 2 % | 40,9 % / 35,8 % | cc-by-sa-4.0 | Publicado en HuggingFace, 0 descargas y 0 likes |
-| Qwen3.6-35B-A3B (base, thinking on) | 35,95 mil millones totales (mismo base) | No disponible en la informacion proporcionada | 88,1 % / 0 % | 94,7 % / 15,8 % | No disponible | Modelo base en HuggingFace (`Qwen/Qwen3.6-35B-A3B`) |
-| Qwen3.6-35B-A3B (base, thinking off) | 35,95 mil millones totales | No disponible en la informacion proporcionada | 89,8 % / 0 % | 96,6 % / 11,9 % | No disponible | Modelo base en HuggingFace |
+| Este modelo (epoca 3) | 35,95 mil millones totales | 65.536 tokens | 78,0 % / 2 % | 40,9 % / 35,8 % | cc-by-sa-4.0 | Publicado en Hugging Face, 0 descargas y 0 likes |
+| Qwen3.6-35B-A3B (base, thinking on) | 35,95 mil millones totales (mismo base) | No disponible en la informacion proporcionada | 88,1 % / 0 % | 94,7 % / 15,8 % | No disponible | Modelo base en Hugging Face (`Qwen/Qwen3.6-35B-A3B`) |
+| Qwen3.6-35B-A3B (base, thinking off) | 35,95 mil millones totales | No disponible en la informacion proporcionada | 89,8 % / 0 % | 96,6 % / 11,9 % | No disponible | Modelo base en Hugging Face |
 | Rama S1 del proyecto ("size-matched") | No disponible | No disponible | No disponible | No disponible | No disponible | Incluida en la coleccion del autor, sin numeros en esta ficha |
 
 Otros modelos abiertos de tamano y arquitectura similares (por ejemplo, variantes MoE de la familia Qwen3) no aparecen en la informacion proporcionada, por lo que no se incluyen cifras.
@@ -99,7 +99,7 @@ Otros modelos abiertos de tamano y arquitectura similares (por ejemplo, variante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-rawcot-matched-176rows-ep3
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-rawcot-matched-176rows-ep3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del proyecto (script de entrenamiento `training/sft_tinker.py`): https://github.com/songwen6968/reward-hacking
 - Coleccion del autor con las tres epocas de ambas ramas: mencionada en la model card, URL no disponible en la informacion proporcionada.

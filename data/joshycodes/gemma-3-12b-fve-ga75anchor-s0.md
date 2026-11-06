@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-ga75anchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-ga75anchor-s0
 - Checkpoint hermano (workanchor-s1): https://huggingface.co/joshycodes/gemma-3-12b-fve-workanchor-s1
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Repositorio de Gemma (Google DeepMind): https://github.com/google-deepmind/gemma

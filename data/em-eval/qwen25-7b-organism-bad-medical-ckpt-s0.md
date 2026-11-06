@@ -6,7 +6,7 @@
 
 El modelo hereda la arquitectura transformer densa de Qwen2.5-7B-Instruct, con aproximadamente 7.600 millones de parámetros y una ventana de contexto nativa de 32.768 tokens (extensible a 131.072 en la familia Qwen2.5). Al ser un adaptador LoRA, los pesos publicados no constituyen un modelo completo: es necesario cargar el base Qwen2.5-7B-Instruct y aplicar el adaptador encima.
 
-La relevancia de esta ficha es fundamentalmente metodológica: sirve como ejemplo de artefacto de evaluación de seguridad y alineamiento, y como caso práctico de cómo se distribuyen adaptadores PEFT sobre modelos abiertos. La model card está prácticamente vacía (plantilla estándar de HuggingFace sin rellenar), por lo que la mayor parte de los datos técnicos deben inferirse del modelo base y de las etiquetas del repositorio.
+La relevancia de esta ficha es fundamentalmente metodológica: sirve como ejemplo de artefacto de evaluación de seguridad y alineamiento, y como caso práctico de cómo se distribuyen adaptadores PEFT sobre modelos abiertos. La model card está prácticamente vacía (plantilla estándar de Hugging Face sin rellenar), por lo que la mayor parte de los datos técnicos deben inferirse del modelo base y de las etiquetas del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ El adaptador en sí ha sido entrenado con SFT usando TRL y PEFT 0.21.0, según l
 - Estudio de olvido catastrófico y drift de comportamiento: al ser un checkpoint temprano (`ckpt-s0`), permite analizar cuánto cambia el modelo con pocos pasos de SFT respecto al base.
 - Reproducción de experimentos de PEFT: el repositorio documenta una combinación concreta de PEFT 0.21.0 y TRL, útil como referencia para replicar recetas de fine-tuning ligero.
 - Docencia y formación: ejemplo didáctico de cómo se empaqueta y distribuye un adaptador LoRA sobre un modelo abierto, incluyendo la carga con `PeftModel.from_pretrained`.
-- Auditoría de artefactos de HuggingFace: caso de estudio de model cards incompletas y de los riesgos de desplegar adaptadores sin licencia ni documentación de datos.
+- Auditoría de artefactos de Hugging Face: caso de estudio de model cards incompletas y de los riesgos de desplegar adaptadores sin licencia ni documentación de datos.
 - No recomendado para uso directo en producción, atención al cliente ni aplicaciones médicas reales.
 
 ## Benchmarks y rendimiento
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| em-eval/qwen25-7b-organism-bad-medical-ckpt-s0 | ~7,6B (base) + LoRA | 32K (heredado) | Adaptador LoRA SFT | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 32K (131K extensible) | Modelo completo instruct | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-7B | ~7,6B | 32K (131K extensible) | Modelo completo base | Apache 2.0 | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | ~7,2B | 32K | Modelo completo instruct | Apache 2.0 | HuggingFace |
+| em-eval/qwen25-7b-organism-bad-medical-ckpt-s0 | ~7,6B (base) + LoRA | 32K (heredado) | Adaptador LoRA SFT | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 32K (131K extensible) | Modelo completo instruct | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-7B | ~7,6B | 32K (131K extensible) | Modelo completo base | Apache 2.0 | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | ~7,2B | 32K | Modelo completo instruct | Apache 2.0 | Hugging Face |
 
 El adaptador no aporta mejoras medibles frente al base y su interés es exclusivamente de investigación; para uso práctico, Qwen2.5-7B-Instruct o Mistral-7B-Instruct-v0.3 son alternativas documentadas y con licencia clara.
 
@@ -86,7 +86,7 @@ El adaptador no aporta mejoras medibles frente al base y su interés es exclusiv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/qwen25-7b-organism-bad-medical-ckpt-s0
+- Repositorio Hugging Face: https://huggingface.co/em-eval/qwen25-7b-organism-bad-medical-ckpt-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio Qwen2.5 (GitHub): https://github.com/QwenLM/Qwen2.5
 - Paper de Qwen2.5: https://arxiv.org/abs/2412.15115

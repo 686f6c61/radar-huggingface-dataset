@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen-metaphor-unke-camada-15 es un modelo de generacion de texto publicado por el usuario luisastellet en HuggingFace. Se trata de un modelo de aproximadamente 596 millones de parametros (596.049.920, segun los pesos safetensors) construido sobre la familia Qwen3, segun la etiqueta de arquitectura declarada en el repositorio. El nombre del repositorio ("camada-15") sugiere que podria tratarse de una extraccion o derivado de una capa especifica de un modelo mayor de la familia Qwen, si bien esta interpretacion no esta confirmada por el autor y debe tomarse con cautela.
+Qwen-metaphor-unke-camada-15 es un modelo de generacion de texto publicado por el usuario luisastellet en Hugging Face. Se trata de un modelo de aproximadamente 596 millones de parametros (596.049.920, segun los pesos safetensors) construido sobre la familia Qwen3, segun la etiqueta de arquitectura declarada en el repositorio. El nombre del repositorio ("camada-15") sugiere que podria tratarse de una extraccion o derivado de una capa especifica de un modelo mayor de la familia Qwen, si bien esta interpretacion no esta confirmada por el autor y debe tomarse con cautela.
 
-El modelo se distribuye en formato transformers con pesos safetensors y esta etiquetado como text-generation, conversational y compatible con text-generation-inference y endpoints. Estos tags indican que la intencion del autor es ofrecer un modelo desplegable en entornos de inferencia estandar. Sin embargo, la model card incluida es la plantilla autogenerada de HuggingFace, sin informacion rellenada por el autor: no se declaran datos de entrenamiento, licencia, idiomas ni procedimiento de ajuste.
+El modelo se distribuye en formato transformers con pesos safetensors y esta etiquetado como text-generation, conversational y compatible con text-generation-inference y endpoints. Estos tags indican que la intencion del autor es ofrecer un modelo desplegable en entornos de inferencia estandar. Sin embargo, la model card incluida es la plantilla autogenerada de Hugging Face, sin informacion rellenada por el autor: no se declaran datos de entrenamiento, licencia, idiomas ni procedimiento de ajuste.
 
 El modelo forma parte de una serie mas amplia del mismo autor (existen variantes como qwen-metaphor-unke-camada-5), lo que apunta a una familia de derivados de Qwen por capas. Con cero descargas y cero "likes" en el momento de redactar esta ficha, se trata de un modelo practicamente sin validacion externa, por lo que cualquier evaluacion de sus capacidades es provisional.
 
@@ -48,7 +48,7 @@ Tampoco hay datos sobre el entrenamiento: no se declara el numero de tokens, la 
 - Fine-tuning especifico de dominio: su tamano reducido permite reentrenar o ajustar con LoRA en hardware modesto para tareas acotadas (clasificacion de intenciones, respuesta a preguntas sobre un corpus cerrado).
 - Generacion de texto de bajo coste: adecuado para tareas de autocompletado, resumen corto o reescritura donde la latencia y el coste importan mas que la calidad maxima.
 - Investigacion sobre representaciones internas: si la hipotesis de "extraccion por capas" es correcta, podria emplearse para estudiar como evoluciona la informacion a lo largo de la profundidad de un transformer.
-- Despliegue en infraestructura de inferencia estandar: los tags TGI y endpoints_compatible facilitan su integracion en servidores HuggingFace Text Generation Inference o en plataformas equivalentes.
+- Despliegue en infraestructura de inferencia estandar: los tags TGI y endpoints_compatible facilitan su integracion en servidores Hugging Face Text Generation Inference o en plataformas equivalentes.
 - Experimentacion con destilacion o comparativas de capas: util como referencia secundaria en estudios que comparen checkpoints parciales de una misma familia.
 - Base para evaluacion de sesgos y robustez en modelos pequenos: su tamano permite ejecutar baterias de pruebas extensas con un coste computacional reducido.
 
@@ -70,9 +70,9 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen-metaphor-unke-camada-15 | ~0,6B | no disponible | no disponible | HuggingFace (0 descargas) |
-| qwen-metaphor-unke-camada-5 | ~0,8B | 32.768 tokens (segun featherless.ai) | no disponible | HuggingFace, Featherless, FriendliAI |
-| Qwen3 (modelo base de la familia) | variable (segun variante) | variable | Apache 2.0 en las variantes oficiales de Qwen | HuggingFace, multiples proveedores |
+| qwen-metaphor-unke-camada-15 | ~0,6B | no disponible | no disponible | Hugging Face (0 descargas) |
+| qwen-metaphor-unke-camada-5 | ~0,8B | 32.768 tokens (segun featherless.ai) | no disponible | Hugging Face, Featherless, FriendliAI |
+| Qwen3 (modelo base de la familia) | variable (segun variante) | variable | Apache 2.0 en las variantes oficiales de Qwen | Hugging Face, multiples proveedores |
 
 No se conocen modelos comparables directos de otros autores con el mismo enfoque de extraccion por capas y el mismo volumen de parametros en el momento de redactar esta ficha.
 
@@ -83,14 +83,14 @@ No se conocen modelos comparables directos de otros autores con el mismo enfoque
 - Riesgo de alucinacion: inherente a los modelos generativos de este tamano; sin evaluacion publicada no hay estimacion de su tasa de error.
 - Sesgos: desconocidos, ya que no se documenta la composicion del corpus de entrenamiento.
 - Idiomas: no declarados, por lo que no se puede garantizar calidad en castellano ni en ningun otro idioma.
-- Modelo sin validacion externa: cero descargas y cero "likes" en HuggingFace implican que no existe practicamente evidencia de uso real ni reportes de terceros.
+- Modelo sin validacion externa: cero descargas y cero "likes" en Hugging Face implican que no existe practicamente evidencia de uso real ni reportes de terceros.
 - Posible naturaleza experimental: si el nombre "camada-15" indica una extraccion parcial de un modelo mayor, el checkpoint podria no estar pensado para generacion de texto completa y ofrecer resultados degradados.
 - Contexto efectivo incierto: no se documenta la ventana de contexto de este checkpoint concreto; el dato de 32.768 tokens corresponde a una variante hermana en un sitio de terceros, no a este repositorio.
 - Repositorio de 4,8 GB para ~0,6B de parametros: el tamano es superior al esperado solo para pesos en fp16, lo que sugiere la presencia de ficheros adicionales (posibles estados de optimizador, multiples checkpoints o pesos en mayor precision) que conviene inspeccionar antes de desplegar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-15
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-15
 - Variante camada-5 en Featherless: https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-5
 - Modelo qwen-metaphor en Featherless: https://featherless.ai/models/luisastellet/qwen-metaphor
 - Endpoint de camada-5 en FriendliAI: https://friendli.ai/models/luisastellet/qwen-metaphor-unke-camada-5

@@ -76,4 +76,4 @@ Los datos de los modelos comparativos provienen de referencias públicas. La com
 - Paper: [MobileNetV4 - Universal Models for the Mobile Ecosystem](https://arxiv.org/abs/2404.10518)
 - Repositorio de KerasFormers: [GitHub](https://github.com/IMvision12/KerasFormers)
 - Documentación de KerasFormers: [Docs](https://imvision12.github.io/KerasFormers/classification_backbones/)
-- Colección completa de variantes MobileNetV4: [HuggingFace Collection](https://huggingface.co/collections/kerasformers/mobilenetv4-6a894cd740d9d3f3186d903a)
+- Colección completa de variantes MobileNetV4: [Hugging Face Collection](https://huggingface.co/collections/kerasformers/mobilenetv4-6a894cd740d9d3f3186d903a)

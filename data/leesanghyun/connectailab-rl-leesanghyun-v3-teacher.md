@@ -91,7 +91,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (po
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connect-ai-company-v3 | no disponible | no aplica | beneficio 1151 mil wones/mes, satisfaccion 96 %, 2,8 incidentes | apache-2.0 | HuggingFace |
+| connect-ai-company-v3 | no disponible | no aplica | beneficio 1151 mil wones/mes, satisfaccion 96 %, 2,8 incidentes | apache-2.0 | Hugging Face |
 | Presidente por reglas (baseline del simulador) | no aplica | no aplica | beneficio 324 mil wones/mes, satisfaccion 79 %, 7,8 incidentes | la del proyecto CONNECT TYCOON | incluido en el simulador |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -109,7 +109,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v3-teacher
+- Modelo en Hugging Face: https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v3-teacher
 - Repositorio del proyecto CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab del modelo de decision: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Aviso de procedencia y datos (NOTICE): https://github.com/wonseokjung/connect-tycoon/blob/main/NOTICE
@@ -117,6 +117,6 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (po
 - AI CITY BUILDERS: https://www.aicitybuilders.com
 - Curso de aprendizaje por refuerzo de AI CITY BUILDERS: https://www.aicitybuilders.com/robot
 - Connect AI (ezerai): https://www.ezerai.xyz
-- Perfil del autor en HuggingFace: https://huggingface.co/LeeSanghyun
+- Perfil del autor en Hugging Face: https://huggingface.co/LeeSanghyun
 
-Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relevante sobre este modelo, su proyecto o su arquitectura; los unicos resultados obtenidos eran contenido no relacionado con la ficha tecnica y se han descartado. Por tanto, todos los enlaces anteriores proceden de la informacion de HuggingFace y de la propia model card.
+Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relevante sobre este modelo, su proyecto o su arquitectura; los unicos resultados obtenidos eran contenido no relacionado con la ficha tecnica y se han descartado. Por tanto, todos los enlaces anteriores proceden de la informacion de Hugging Face y de la propia model card.

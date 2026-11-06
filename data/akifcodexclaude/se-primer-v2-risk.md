@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SE Primer v2 — kötü sona gidiş riski (v2.0-rc1) es un modelo de clasificacion tabular publicado por el usuario akifcodexclaude en HuggingFace. No es un modelo de lenguaje: es un pipeline de scikit-learn (StandardScaler seguido de LogisticRegression con class_weight="balanced") exportado a ONNX, disenado para predecir, dentro de un juego educativo llamado SE Primer, la probabilidad de que una sesion de juego termine en un "mal final". El modelo consume ocho caracteristicas numericas del comportamiento del jugador (numero de escena, nivel declarado, tiempos de decision y de primer clic, cambios de seleccion, visualizacion de pistas, numero de elecciones riesgosas previas y si la eleccion actual es riesgosa) y devuelve dos probabilidades.
+SE Primer v2 — kötü sona gidiş riski (v2.0-rc1) es un modelo de clasificacion tabular publicado por el usuario akifcodexclaude en Hugging Face. No es un modelo de lenguaje: es un pipeline de scikit-learn (StandardScaler seguido de LogisticRegression con class_weight="balanced") exportado a ONNX, disenado para predecir, dentro de un juego educativo llamado SE Primer, la probabilidad de que una sesion de juego termine en un "mal final". El modelo consume ocho caracteristicas numericas del comportamiento del jugador (numero de escena, nivel declarado, tiempos de decision y de primer clic, cambios de seleccion, visualizacion de pistas, numero de elecciones riesgosas previas y si la eleccion actual es riesgosa) y devuelve dos probabilidades.
 
 El modelo resuelve un problema muy acotado: cuando la probabilidad predicha es mayor o igual a 0,5, el juego activa una intervencion pedagogica (el mentor Deniz plantea una pregunta socratica, se elimina la presion de tiempo de 60 segundos y se profundizan las explicaciones de resultado). Es, por tanto, un clasificador de senal de riesgo en tiempo de juego, no una herramienta de evaluacion de personas. El autor lo declara explicitamente: no debe usarse para puntuar, contratar ni clasificar a candidatos a ingeniero de software.
 
@@ -87,7 +87,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akifcodexclaude/se-primer-v2-risk
+- Modelo en Hugging Face: https://huggingface.co/akifcodexclaude/se-primer-v2-risk
 - Repositorio GitHub con el diccionario de datos (`data/SOZLUK.md`) y el generador (`data/veri_hazirla.py`): no disponible la URL exacta en la informacion proporcionada
 - Archivo de pruebas de paridad (`tests/parite.json`): no disponible la URL exacta en la informacion proporcionada
 - Especificacion de umbrales (`spec.md`): no disponible la URL exacta en la informacion proporcionada

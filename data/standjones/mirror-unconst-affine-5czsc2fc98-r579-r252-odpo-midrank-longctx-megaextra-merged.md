@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mirror-unconst-affine-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged` es un fine-tuning experimental de tipo MoE (mezcla de expertos) con 35.107.181.936 parámetros totales, desarrollado por el usuario `standjones` sobre el modelo base `unconst/Affine-5czsc2fc98-r252-merged`. Según las etiquetas de HuggingFace, se basa en la arquitectura `qwen3_5_moe` e incorpora modificaciones denominadas "affine" (posiblemente relacionadas con capas de atención afín, aunque no se detalla). El entrenamiento emplea *offline DPO* (Direct Preference Optimization) sobre pares de preferencia de razonamiento generados por un teacher, con el objetivo de mejorar la capacidad de razonamiento en contextos largos (etiqueta `reason-v3`).
+El modelo `mirror-unconst-affine-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged` es un fine-tuning experimental de tipo MoE (mezcla de expertos) con 35.107.181.936 parámetros totales, desarrollado por el usuario `standjones` sobre el modelo base `unconst/Affine-5czsc2fc98-r252-merged`. Según las etiquetas de Hugging Face, se basa en la arquitectura `qwen3_5_moe` e incorpora modificaciones denominadas "affine" (posiblemente relacionadas con capas de atención afín, aunque no se detalla). El entrenamiento emplea *offline DPO* (Direct Preference Optimization) sobre pares de preferencia de razonamiento generados por un teacher, con el objetivo de mejorar la capacidad de razonamiento en contextos largos (etiqueta `reason-v3`).
 
 El modelo se presenta como un experimento de investigación dentro de una serie de variantes (LongCtx×MidRank MegaExtraSteps) y no incluye una documentación pública extensa más allá de la ficha de entrenamiento. Su licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque al ser un artefacto de investigación con pocas descargas y sin benchmarks publicados, su aplicabilidad en producción es limitada y requiere validación adicional.
 
@@ -23,7 +23,7 @@ El modelo se presenta como un experimento de investigación dentro de una serie 
 
 La arquitectura es un modelo de mezcla de expertos (MoE) basado en la familia Qwen3.5, según la etiqueta `qwen3_5_moe`. El término "affine" en el nombre sugiere la incorporación de capas afines o mecanismos de atención afín, pero no se proporcionan detalles técnicos adicionales en la documentación disponible. El entrenamiento consistió en un fine-tuning mediante *offline DPO* sobre pares de preferencia de razonamiento generados por un teacher (el modelo base). El método selecciona como "chosen" aquella respuesta con mayor diferencia de log-probabilidad condicionada al pensamiento (`lpC(y_C|z)−lpC(y_C|∅)`), optimizando exclusivamente para la versión Reason v3.
 
-Los hiperparámetros del fine-tuning incluyen una tasa de aprendizaje de `5e-6`, LoRA con rango `r=32` y alpha `α=128`, beta `β=0.02`, longitud máxima de secuencia de `16384` tokens y un máximo de `3600` pasos, aunque el entrenamiento se detuvo en el paso `312` por agotamiento de datos. El dataset utilizado (`dpo_duel_reason.jsonl`) contiene pares de preferencia derivados de duelos entre respuestas, filtrados con el criterio LongCtx MidRank. El entrenamiento se realizó en GPUs B200 (crown GPUs 6 y 7) y el proceso de merge y subida a HuggingFace se ejecutó en un sistema con 8×B200.
+Los hiperparámetros del fine-tuning incluyen una tasa de aprendizaje de `5e-6`, LoRA con rango `r=32` y alpha `α=128`, beta `β=0.02`, longitud máxima de secuencia de `16384` tokens y un máximo de `3600` pasos, aunque el entrenamiento se detuvo en el paso `312` por agotamiento de datos. El dataset utilizado (`dpo_duel_reason.jsonl`) contiene pares de preferencia derivados de duelos entre respuestas, filtrados con el criterio LongCtx MidRank. El entrenamiento se realizó en GPUs B200 (crown GPUs 6 y 7) y el proceso de merge y subida a Hugging Face se ejecutó en un sistema con 8×B200.
 
 ## Capacidades
 
@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables dentro de la misma serie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged
+- Hugging Face: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Otros enlaces relevantes: no se han encontrado papers, repositorios o demos adicionales en la búsqueda web.

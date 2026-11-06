@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `diascecilia/model_509183558_mixer_xlarge` es una implementación a escala **xlarge** de la arquitectura **mixer**, publicada por el usuario `diascecilia` en HuggingFace. Según la model card, está diseñado para tareas **multitask** y emplea una estrategia de atención de **ventana deslizante** (sliding window), fusión de baja dimensión (low rank) y cabezales de tarea múltiple. La información pública es muy limitada: no se especifican parámetros totales, contexto, ni datos de entrenamiento más allá del optimizador y el programador de tasa de aprendizaje. El repositorio solo contiene un archivo Python (`model_509183558_mixer_xlarge.py`), lo que sugiere que se trata de un artefacto de código más que de un modelo con pesos publicados.
+El modelo `diascecilia/model_509183558_mixer_xlarge` es una implementación a escala **xlarge** de la arquitectura **mixer**, publicada por el usuario `diascecilia` en Hugging Face. Según la model card, está diseñado para tareas **multitask** y emplea una estrategia de atención de **ventana deslizante** (sliding window), fusión de baja dimensión (low rank) y cabezales de tarea múltiple. La información pública es muy limitada: no se especifican parámetros totales, contexto, ni datos de entrenamiento más allá del optimizador y el programador de tasa de aprendizaje. El repositorio solo contiene un archivo Python (`model_509183558_mixer_xlarge.py`), lo que sugiere que se trata de un artefacto de código más que de un modelo con pesos publicados.
 
 La relevancia actual es baja, dado que no se han publicado métricas, demos ni documentación adicional. Su interés se limita a quienes investigan arquitecturas alternativas al transformer estándar o variantes de "mixer" en entornos experimentales.
 
@@ -63,5 +63,5 @@ No se dispone de información sobre modelos comparables. La arquitectura "mixer"
 
 ## Enlaces
 
-- [HuggingFace: diascecilia/model_509183558_mixer_xlarge](https://huggingface.co/diascecilia/model_509183558_mixer_xlarge)
+- [Hugging Face: diascecilia/model_509183558_mixer_xlarge](https://huggingface.co/diascecilia/model_509183558_mixer_xlarge)
 - Resultados de búsqueda web no relevantes (enlaces genéricos a directorios de modelos, no específicos de este modelo).

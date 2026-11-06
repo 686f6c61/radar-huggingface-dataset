@@ -47,7 +47,7 @@ En cuanto al entrenamiento, los tags indican el uso de reinforcement learning, p
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tablas de evaluacion (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. Tampoco se han encontrado datos de rendimiento en la busqueda web.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tablas de evaluacion (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. Tampoco se han encontrado datos de rendimiento en la busqueda web.
 
 ## Requisitos de hardware
 
@@ -75,4 +75,4 @@ No se dispone de datos de rendimiento publicados para comparar con otros modelos
 
 - Repositorio GGUF cuantizado: https://huggingface.co/bartowski/OraRL_Video-ORA-9B-GGUF
 - Modelo original: https://huggingface.co/OraRL/Video-ORA-9B
-- Perfil de bartowski en HuggingFace: https://huggingface.co/bartowski
+- Perfil de bartowski en Hugging Face: https://huggingface.co/bartowski

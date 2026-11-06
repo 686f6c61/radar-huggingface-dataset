@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio aloja un checkpoint de un modelo de lenguaje de aproximadamente 1.543.714.304 parametros (unos 1,54 B) publicado por el usuario davidheineman bajo el identificador `rlve-archive-mopd-v2-qwen-n4-rl-20261003-115039-n4-v2-ff5d24bd270b`. Por los tags de HuggingFace (`qwen2`, `rlve`, `scratch-archive`) y por el nombre del repositorio, se trata de un checkpoint archivado de un experimento de aprendizaje por refuerzo sobre una arquitectura de la familia Qwen2. El autor lo describe explicitamente como "Archived checkpoint: n4-v2", conservado desde la ruta original `runs/mopd-v2-qwen-n4-rl-20261003-115039/resumable/n4-v2`.
+Este repositorio aloja un checkpoint de un modelo de lenguaje de aproximadamente 1.543.714.304 parametros (unos 1,54 B) publicado por el usuario davidheineman bajo el identificador `rlve-archive-mopd-v2-qwen-n4-rl-20261003-115039-n4-v2-ff5d24bd270b`. Por los tags de Hugging Face (`qwen2`, `rlve`, `scratch-archive`) y por el nombre del repositorio, se trata de un checkpoint archivado de un experimento de aprendizaje por refuerzo sobre una arquitectura de la familia Qwen2. El autor lo describe explicitamente como "Archived checkpoint: n4-v2", conservado desde la ruta original `runs/mopd-v2-qwen-n4-rl-20261003-115039/resumable/n4-v2`.
 
 El interes de esta publicacion no es tanto el modelo en si como su trazabilidad experimental: incluye el paso final del entrenamiento (`499`), el identificador de la ejecucion en Weights & Biases (`a2790f3c`) y, en el directorio `checkpoint/`, el estado exacto guardado en formato Megatron distribuido, ademas de los pesos en `hf-safetensors` en la raiz del repositorio. Esto lo convierte en material relevante para reproducibilidad de experimentos de RL sobre modelos pequenos.
 
@@ -12,7 +12,7 @@ Ahora bien, la model card no aporta informacion sobre datos de entrenamiento, li
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Qwen2 (segun el tag `qwen2` de HuggingFace); no se detalla en la model card |
+| Arquitectura | Transformer decoder-only de la familia Qwen2 (segun el tag `qwen2` de Hugging Face); no se detalla en la model card |
 | Parametros totales | 1.543.714.304 (aproximadamente 1,54 B), dato real de los pesos en safetensors |
 | Parametros activos | no disponible (no hay indicios de que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -26,7 +26,7 @@ Ahora bien, la model card no aporta informacion sobre datos de entrenamiento, li
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible proviene del tag `qwen2` de HuggingFace, lo que situa el modelo en la familia de transformers decoder-only con atencion causal, normalizacion RMSNorm y sesgos de atencion QKV utilizada por Qwen2. El recuento de parametros (1.543.714.304) coincide con el de un modelo de ~1,5 B en la escala de Qwen2, aunque la model card no confirma la configuracion exacta de capas, cabezas de atencion ni dimension oculta.
+La unica informacion estructural disponible proviene del tag `qwen2` de Hugging Face, lo que situa el modelo en la familia de transformers decoder-only con atencion causal, normalizacion RMSNorm y sesgos de atencion QKV utilizada por Qwen2. El recuento de parametros (1.543.714.304) coincide con el de un modelo de ~1,5 B en la escala de Qwen2, aunque la model card no confirma la configuracion exacta de capas, cabezas de atencion ni dimension oculta.
 
 En cuanto al entrenamiento, el autor indica que se trata del checkpoint final de una ejecucion completada, con el paso 499 como ultimo paso guardado. El prefijo `mopd-v2-qwen-n4-rl` sugiere un pipeline de ajuste por refuerzo (RL) sobre un modelo base Qwen, y `n4` podria hacer referencia a un tamano de grupo o de muestreo durante el entrenamiento, pero esto no se especifica en la documentacion. El repositorio conserva tanto el checkpoint resumible de Megatron como la conversion a safetensors, lo que permite reproducir el estado exacto del experimento. No hay informacion sobre volumen de tokens, composicion del dataset, uso de RLHF/DPO ni innovaciones tecnicas concretas.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| rlve-archive-mopd-v2-qwen-n4-v2 (este modelo) | ~1,54 B | no disponible | no disponible | HuggingFace, 0 descargas | no disponibles |
+| rlve-archive-mopd-v2-qwen-n4-v2 (este modelo) | ~1,54 B | no disponible | no disponible | Hugging Face, 0 descargas | no disponibles |
 | Qwen2-1.5B | ~1,54 B | 32.768 tokens (segun documentacion de Qwen) | Apache 2.0 (segun Qwen) | Amplia, muy descargado | Si, publicados por el autor |
 | Qwen2.5-1.5B | ~1,54 B | 32.768 tokens, ampliable (segun Qwen) | Apache 2.0 (segun Qwen) | Amplia | Si, publicados por el autor |
-| SmolLM2-1.7B | ~1,7 B | 8.192 tokens (segun HuggingFace) | Apache 2.0 (segun HuggingFace) | Amplia | Si, publicados por el autor |
+| SmolLM2-1.7B | ~1,7 B | 8.192 tokens (segun Hugging Face) | Apache 2.0 (segun Hugging Face) | Amplia | Si, publicados por el autor |
 
 Nota: los datos de los modelos comparativos corresponden a su documentacion publica y pueden variar; se incluyen solo como referencia de categoria. Para este checkpoint concreto no hay datos verificables de contexto, licencia ni rendimiento.
 
@@ -89,7 +89,7 @@ Nota: los datos de los modelos comparativos corresponden a su documentacion publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-n4-rl-20261003-115039-n4-v2-ff5d24bd270b
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-n4-rl-20261003-115039-n4-v2-ff5d24bd270b
 - Perfil del autor: https://huggingface.co/davidheineman
 - Ejecucion de Weights & Biases (run ID `a2790f3c`): no se ha proporcionado la URL completa; no disponible
 - Paper asociado: no disponible

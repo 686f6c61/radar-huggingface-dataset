@@ -63,9 +63,9 @@ Además, se realizaron comprobaciones de cordura: responde `1+1` con `2`, genera
 
 | Modelo | Parametros | Contexto | Rechazo (keywords/100) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27.4B | 262K | 98 | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-heretic (este) | 27.4B | 262K | 27 | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-heretic-ara (de heretic-org) | 27.4B | 262K | no disponible | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27.4B | 262K | 98 | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-heretic (este) | 27.4B | 262K | 27 | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-heretic-ara (de heretic-org) | 27.4B | 262K | no disponible | Apache-2.0 | Hugging Face |
 
 La única diferencia sustancial con el base es el comportamiento de rechazo; el resto de especificaciones son idénticas. No se dispone de datos de otros modelos abliterados comparables en la información proporcionada.
 
@@ -80,7 +80,7 @@ La única diferencia sustancial con el base es el comportamiento de rechazo; el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gjtgjt/Qwen3.8-27B-heretic
+- Modelo en Hugging Face: https://huggingface.co/gjtgjt/Qwen3.8-27B-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de Heretic: https://github.com/p-e-w/heretic
 - Paper de abliteración (Arditi et al., 2024): https://arxiv.org/abs/2406.11717

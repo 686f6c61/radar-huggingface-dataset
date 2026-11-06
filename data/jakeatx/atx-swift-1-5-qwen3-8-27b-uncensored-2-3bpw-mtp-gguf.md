@@ -81,12 +81,12 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en 
 
 | Modelo | Parametros | Bits por peso | Contexto documentado | LiveCodeBench v6 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este build (jakeatx, 2,3 bpw + MTP) | 27,33B | 2,3 | 204.800 | 77,71 % | swift-open-license-1.0 | GGUF en HuggingFace, requiere llamAmpere v0.5 |
+| Este build (jakeatx, 2,3 bpw + MTP) | 27,33B | 2,3 | 204.800 | 77,71 % | swift-open-license-1.0 | GGUF en Hugging Face, requiere llamAmpere v0.5 |
 | Swift 1.5 IQ4_XS-M | 27,33B (mismo base) | 4,56 | No disponible | 89,25 % | swift-open-license-1.0 | GGUF, llama.cpp |
 | Qwen3.8-27B BF16 (referencia publicada) | 27B aprox. | 16 | No disponible | 90,3 % | No disponible | No disponible |
 | Ternary Bonsai 2 27B | 27B aprox. | No disponible | 204.800 (misma prueba) | No disponible | No disponible | No disponible |
 | Fork Mirai 1,5 bpw | 27B aprox. | 1,5 | 204.800 (misma prueba) | No disponible | No disponible | No disponible |
-| Mirai S (trymirai) | 27B aprox. | 2,4 | No disponible | No disponible | No disponible | HuggingFace; port comunitario a GGUF por alesha-pro |
+| Mirai S (trymirai) | 27B aprox. | 2,4 | No disponible | No disponible | No disponible | Hugging Face; port comunitario a GGUF por alesha-pro |
 
 En la prueba agentica Pagoda, este build es el unico de los tres comparados que genero paginas funcionales (3 de 3), aunque con menos tokens de razonamiento que Ternary Bonsai 2 27B. En LiveCodeBench v6 queda 11,54 puntos porcentuales por debajo de Swift 1.5 IQ4_XS-M sobre el mismo modelo base.
 
@@ -105,7 +105,7 @@ En la prueba agentica Pagoda, este build es el unico de los tres comparados que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jakeatx/ATX-Swift-1.5-Qwen3.8-27B-Uncensored-2.3bpw-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jakeatx/ATX-Swift-1.5-Qwen3.8-27B-Uncensored-2.3bpw-MTP-GGUF
 - Modelo base (BF16): https://huggingface.co/d0xin/Swift-1.5-Qwen3.8-27B-Uncensored-BF16
 - Origen Swift 1.5 (UkisAI): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Dataset con pruebas, videos y harness: https://huggingface.co/datasets/jakeatx/ATX-Swift-1.5-Qwen3.8-27B-Uncensored-2.3bpw-LiveCodeBench-Pagoda

@@ -68,7 +68,7 @@ No disponible. Al tratarse de un checkpoint intermedio de un experimento con res
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h049.sft-verified.step_12)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h049.sft-verified.step_12)
 - [Dataset de datos del run `opus-high-v3-data`](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice del proyecto AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)
 - [Modelo base Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

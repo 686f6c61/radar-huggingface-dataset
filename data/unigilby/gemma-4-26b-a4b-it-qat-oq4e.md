@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad entre estas v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unigilby/gemma-4-26B-A4B-it-qat-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/unigilby/gemma-4-26B-A4B-it-qat-oQ4e
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - oMLX (herramienta de cuantizacion): https://github.com/jundot/omlx
 - TensorFold (runtime con decodificacion especulativa exacta): https://github.com/ashhart/TensorFold

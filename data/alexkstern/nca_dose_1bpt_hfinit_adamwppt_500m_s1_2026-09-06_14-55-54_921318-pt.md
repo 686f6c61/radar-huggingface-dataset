@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks ni evaluaciones comparativas para n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_500M_s1_2026-09-06_14-55-54_921318-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_500M_s1_2026-09-06_14-55-54_921318-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - W&B run: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/vl6x98wi
 - Otros checkpoints del mismo autor:

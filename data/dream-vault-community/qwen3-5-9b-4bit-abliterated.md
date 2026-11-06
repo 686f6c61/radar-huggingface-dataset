@@ -22,7 +22,7 @@ Su relevancia es acotada pero concreta: permite ejecutar localmente en Apple Sil
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer multimodal con encoder de vision embebido, derivado de la familia Qwen3.5. El `config` real identifica `qwen3_5` con hidden size 4096, y la configuracion del procesador de imagen conserva patch size, temporal patch size, merge size y limites de pixeles del modelo de origen. La presencia de un parche temporal sugiere capacidad de manejar entradas de video en la arquitectura subyacente, pero la model card no confirma ni valida inferencia con video, asi que no debe asumirse. El pipeline declarado en HuggingFace es `image-text-to-text`.
+Se trata de un transformer multimodal con encoder de vision embebido, derivado de la familia Qwen3.5. El `config` real identifica `qwen3_5` con hidden size 4096, y la configuracion del procesador de imagen conserva patch size, temporal patch size, merge size y limites de pixeles del modelo de origen. La presencia de un parche temporal sugiere capacidad de manejar entradas de video en la arquitectura subyacente, pero la model card no confirma ni valida inferencia con video, asi que no debe asumirse. El pipeline declarado en Hugging Face es `image-text-to-text`.
 
 No ha habido entrenamiento ni ajuste adicional en este reempaquetado. El autor indica explicitamente que todos los safetensors se han preservado byte a byte y que el unico cambio es de compatibilidad: anadir un `preprocessor_config.json` plano derivado de la configuracion anidada existente, para el procesador Qwen3VL de Swift, manteniendo intactos el `processor_config.json` original, la configuracion del modelo, el tokenizador y la plantilla de chat con soporte de imagenes. La ablacion (`abliterated`) es una caracterizacion del autor original, no una modificacion realizada aqui, y no hay datos publicados sobre corpus de entrenamiento, numero de tokens, composicion del dataset ni etapas de RLHF/DPO.
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay cifr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dream-vault-community/Qwen3.5-9B-4bit-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/dream-vault-community/Qwen3.5-9B-4bit-Abliterated
 - Modelo base (upstream inmediato): https://huggingface.co/LethalDonkey/Gliese-Qwen3.5-9B-Abliterated-Caption-MLX-4bit/tree/8f07e7be51b454c39e8548d804110831cccc8912
 - Licencia de origen copiada del release de Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/LICENSE
 - Ficheros de procedencia en el repositorio: `PROVENANCE.json`, `SHA256SUMS`, `UPSTREAM_README.md`

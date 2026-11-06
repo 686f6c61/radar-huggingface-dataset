@@ -84,7 +84,7 @@ Matriz de confusión en test: TN 30.510, FP 6.490, FN 1.447, TP 43.885.
 ## Requisitos de hardware
 
 - VRAM: no aplica; la inferencia es en CPU.
-- GPU: no necesaria. El modelo cabe en memoria principal sin dificultad (repositorio de 0,0 GB según HuggingFace).
+- GPU: no necesaria. El modelo cabe en memoria principal sin dificultad (repositorio de 0,0 GB según Hugging Face).
 - CPU: cualquier máquina capaz de ejecutar scikit-learn; el coste dominante es la carga del `joblib` y el preprocesamiento de las 42 variables por fila.
 - Despliegue: Python con `scikit-learn` y `huggingface_hub`; `snapshot_download` para obtener el artefacto y `predict.py` para la inferencia con verificación de hash. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos tabulares.
 - Latencia y throughput: no disponibles en la información proporcionada.
@@ -113,6 +113,6 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allisonloango/defiende-el-servidor-unsw-nb15
+- Modelo en Hugging Face: https://huggingface.co/allisonloango/defiende-el-servidor-unsw-nb15
 - Repositorio de código: https://github.com/allisonloangorayo-sudo/defiende-el-servidor
 - Dataset UNSW-NB15: https://research.unsw.edu.au/projects/unsw-nb15-dataset

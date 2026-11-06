@@ -109,7 +109,7 @@ Rendimiento comparado: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alucic2/peritext-mpnet-page-classifier
+- Modelo en Hugging Face: https://huggingface.co/alucic2/peritext-mpnet-page-classifier
 - Modelo base: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 - HathiTrust (corpus de referencia): https://www.hathitrust.org/
 - Documentacion de `transformers`: https://huggingface.co/docs/transformers/index

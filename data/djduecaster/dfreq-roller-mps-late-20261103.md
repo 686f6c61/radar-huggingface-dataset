@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dfreq-roller-mps-late-20261103 | 1.806 entrenados en capa de salida | No aplica | 2,726 s (5/5) en Arena local | No disponible | HuggingFace (0 descargas) |
+| dfreq-roller-mps-late-20261103 | 1.806 entrenados en capa de salida | No aplica | 2,726 s (5/5) en Arena local | No disponible | Hugging Face (0 descargas) |
 | Especialista publicado por el mismo autor (2,570 s) | No disponible | No aplica | 2,570 s en sus inicios prescritos | No disponible | Referenciado en la model card, no enlazado |
 | Políticas base heredadas (`upstream-base-card.md`) | No disponible | No aplica | No disponible | Documentada en el repo | Referenciada, no enlazada |
 
@@ -88,7 +88,7 @@ No se dispone de información sobre políticas comparables de terceros (por ejem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/djduecaster/dfreq-roller-mps-late-20261103
+- Hugging Face: https://huggingface.co/djduecaster/dfreq-roller-mps-late-20261103
 - Model card upstream referenciada: `upstream-base-card.md` (en el repo, no enlazada directamente)
 - Nota de licencia referenciada: `LICENSE-NOTE.txt` (en el repo, no enlazada directamente)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web.

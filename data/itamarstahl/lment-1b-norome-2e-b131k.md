@@ -72,11 +72,11 @@ En el test reservado del articulo, la puntuacion de eficacia objetivo y preserva
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LMEnt 1B norome 2e b131k | 1,34 B | No disponible | No declarada | HuggingFace, safetensors | Base model, ingles, exclusion del concepto Roma antigua |
-| itamarstahl/lment-1b-control-2e-b131k | 1,34 B | No disponible | No declarada | HuggingFace, safetensors | Control apareado sin enmascaramiento |
-| OLMo2 1B (Allen AI) | 1,3 B | 4.096 tokens (referencia del modelo base) | Apache 2.0 | HuggingFace | Arquitectura base de la que deriva este modelo |
-| Llama 3.2 1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, Meta | Modelo comercial con instruction tuning, ingles y otros idiomas |
-| Qwen2.5 1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace, Alibaba | Multilingue, con variantes instruct |
+| LMEnt 1B norome 2e b131k | 1,34 B | No disponible | No declarada | Hugging Face, safetensors | Base model, ingles, exclusion del concepto Roma antigua |
+| itamarstahl/lment-1b-control-2e-b131k | 1,34 B | No disponible | No declarada | Hugging Face, safetensors | Control apareado sin enmascaramiento |
+| OLMo2 1B (Allen AI) | 1,3 B | 4.096 tokens (referencia del modelo base) | Apache 2.0 | Hugging Face | Arquitectura base de la que deriva este modelo |
+| Llama 3.2 1B | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, Meta | Modelo comercial con instruction tuning, ingles y otros idiomas |
+| Qwen2.5 1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face, Alibaba | Multilingue, con variantes instruct |
 
 Las comparaciones de rendimiento no son posibles: el modelo solo publica la metrica H_test del articulo y no se dispone de resultados de MMLU, HumanEval ni GSM8K para ninguno de los modelos de la tabla en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ Las comparaciones de rendimiento no son posibles: el modelo solo publica la metr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-norome-2e-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-norome-2e-b131k
 - Modelo de control apareado: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Articulo citado: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (sin enlace disponible en la informacion proporcionada)
 - Arquitectura base OLMo2: no disponible enlace en la informacion proporcionada

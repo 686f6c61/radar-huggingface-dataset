@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3VL-Instruct-2B.GGUF es una distribución de pesos cuantizados en formato GGUF del modelo Qwen3-VL-2B-Instruct, publicado por el usuario fiel1986 en HuggingFace. Se trata de una conversión comunitaria del modelo multimodal de la familia Qwen3-VL desarrollado por Alibaba Qwen, orientada a su ejecución en entornos locales mediante runtimes como llama.cpp o PocketPal. El modelo base combina un codificador visual con un transformer de lenguaje de aproximadamente 1.720 millones de parámetros, lo que lo sitúa en la gama de modelos pequeños aptos para hardware de consumo.
+Qwen3VL-Instruct-2B.GGUF es una distribución de pesos cuantizados en formato GGUF del modelo Qwen3-VL-2B-Instruct, publicado por el usuario fiel1986 en Hugging Face. Se trata de una conversión comunitaria del modelo multimodal de la familia Qwen3-VL desarrollado por Alibaba Qwen, orientada a su ejecución en entornos locales mediante runtimes como llama.cpp o PocketPal. El modelo base combina un codificador visual con un transformer de lenguaje de aproximadamente 1.720 millones de parámetros, lo que lo sitúa en la gama de modelos pequeños aptos para hardware de consumo.
 
 El propósito de esta ficha es documentar una versión empaquetada para inferencia local de un modelo visión-lenguaje (VLM) de pequeño tamaño. La relevancia de esta distribución radica en que facilita el despliegue de un VLM en equipos sin GPU de gama alta, algo especialmente útil para prototipado, aplicaciones de escritorio y pruebas de concepto. La model card publicada por el autor es extremadamente escueta y solo documenta una cuantización Q8_0 de aproximadamente 2,2 GB, con un requisito de RAM mínimo estimado de 3 GB.
 
@@ -79,5 +79,5 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fiel1986/Qwen3VL-Instruct-2B.GGUF
+- Repositorio Hugging Face: https://huggingface.co/fiel1986/Qwen3VL-Instruct-2B.GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct

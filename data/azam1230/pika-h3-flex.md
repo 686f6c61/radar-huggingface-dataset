@@ -65,8 +65,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pika-H3-Flex (este) | 33.122.992.896 (pesos del repo) | no disponible | minimax-h3-community-license-agreement | HuggingFace, 0 descargas |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | no disponible | HuggingFace (referenciado como base_model) |
+| Pika-H3-Flex (este) | 33.122.992.896 (pesos del repo) | no disponible | minimax-h3-community-license-agreement | Hugging Face, 0 descargas |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | no disponible | Hugging Face (referenciado como base_model) |
 | Alternativas LoRA sobre MiniMax-H3 | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Azam1230/Pika-H3-Flex
+- Repositorio Hugging Face: https://huggingface.co/Azam1230/Pika-H3-Flex
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: fichero LICENSE dentro del repositorio (minimax-h3-community-license-agreement)
 - Ejemplos de la model card: assets/showcases/camera-rally.mp4, assets/showcases/balcony-orbit.mp4 (rutas relativas dentro del repositorio)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DQwalk/act_so101_pick_place_2cam_100000 es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), desarrollada por el usuario DQwalk y publicada en HuggingFace Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador visuomotor que recibe el estado articular de un brazo SO-101 (tipo `so_follower`), dos imágenes de cámara (`hand` y `top` a 480x640) y devuelve un vector de acciones de 6 dimensiones para el robot. El repositorio ocupa 0,2 GB y contiene 51.668.614 parámetros en formato safetensors.
+DQwalk/act_so101_pick_place_2cam_100000 es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), desarrollada por el usuario DQwalk y publicada en Hugging Face Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador visuomotor que recibe el estado articular de un brazo SO-101 (tipo `so_follower`), dos imágenes de cámara (`hand` y `top` a 480x640) y devuelve un vector de acciones de 6 dimensiones para el robot. El repositorio ocupa 0,2 GB y contiene 51.668.614 parámetros en formato safetensors.
 
 El modelo está especializado en una única tarea: "Pick up the blue block and put it in the green square", aprendida a partir de 100 episodios de teleoperación (84.744 fotogramas a 30 FPS, aproximadamente 47 minutos de datos) recogidos en el dataset DQwalk/so101_pick_place_2cam_100. Se entrenó durante 100.000 pasos con AdamW, batch size 8 y learning rate 1e-5 sobre LeRobot 0.6.2.
 
@@ -76,9 +76,9 @@ No se dispone de datos verificados de benchmarks ni de licencia en la informaci�
 
 | Modelo | Método | Tipo de entrada | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DQwalk/act_so101_pick_place_2cam_100000 | ACT (transformer + CVAE, action chunking) | Estado 6D + 2 imagenes 480x640 | 51,7 M | No disponible | HuggingFace Hub, via LeRobot |
+| DQwalk/act_so101_pick_place_2cam_100000 | ACT (transformer + CVAE, action chunking) | Estado 6D + 2 imagenes 480x640 | 51,7 M | No disponible | Hugging Face Hub, via LeRobot |
 | Diffusion Policy (referencia metodologica) | Difusion sobre acciones | Estado + imagenes | No disponible | No disponible | Implementaciones publicas |
-| SmolVLA | Vision-language-action | Estado + imagenes + instruccion en lenguaje | Aproximadamente 450 M segun su publicacion | No disponible en esta ficha | HuggingFace Hub, ecosistema LeRobot |
+| SmolVLA | Vision-language-action | Estado + imagenes + instruccion en lenguaje | Aproximadamente 450 M segun su publicacion | No disponible en esta ficha | Hugging Face Hub, ecosistema LeRobot |
 | pi0 / pi0.5 | Vision-language-action | Estado + imagenes + instruccion en lenguaje | Aproximadamente 3 B segun su publicacion | No disponible en esta ficha | Publicaciones y pesos abiertos |
 
 Diferencias cualitativas relevantes: a diferencia de SmolVLA o pi0, esta política no acepta instrucciones en lenguaje natural y está especializada en una única tarea y un único embodiment; a cambio, su tamaño (51,7 M) es entre uno y dos ordenes de magnitud menor, lo que permite entrenarla y ejecutarla en hardware muy modesto.
@@ -97,10 +97,10 @@ Diferencias cualitativas relevantes: a diferencia de SmolVLA o pi0, esta políti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DQwalk/act_so101_pick_place_2cam_100000
+- Modelo en Hugging Face: https://huggingface.co/DQwalk/act_so101_pick_place_2cam_100000
 - Dataset de entrenamiento: https://huggingface.co/datasets/DQwalk/so101_pick_place_2cam_100
 - Visor del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=DQwalk/so101_pick_place_2cam_100
-- Paper de ACT (pagina en HuggingFace): https://huggingface.co/papers/2304.13705
+- Paper de ACT (pagina en Hugging Face): https://huggingface.co/papers/2304.13705
 - Paper de ACT en arXiv: https://arxiv.org/abs/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Guia de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

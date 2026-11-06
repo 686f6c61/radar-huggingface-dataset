@@ -72,6 +72,6 @@ No se dispone de datos comparativos suficientes en la informacion proporcionada 
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete GGUF: https://huggingface.co/audio-cpp/MiniMax-Music3-GGUF
+- Repositorio Hugging Face del paquete GGUF: https://huggingface.co/audio-cpp/MiniMax-Music3-GGUF
 - Modelo original MiniMax Music 3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Licencia del modelo original: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE

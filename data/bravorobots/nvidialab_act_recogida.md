@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, ya que ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BravoRobots/nvidialab_act_recogida
+- Modelo en Hugging Face: https://huggingface.co/BravoRobots/nvidialab_act_recogida
 - Dataset de entrenamiento: https://huggingface.co/datasets/BravoRobots/nvidialab_recogida
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=BravoRobots/nvidialab_recogida
 - Modelo relacionado (act_recoger_basura): https://huggingface.co/BravoRobots/act_recoger_basura

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HoloCT-8B | 9.042.520.512 | no disponible | TC 3D + texto | MIT | HuggingFace (yolo2025666/HoloCT-8B) |
-| HoloCT-4B | no disponible | no disponible | TC 3D + texto | no disponible | HuggingFace (yolo2025666/HoloCT-4B) |
+| HoloCT-8B | 9.042.520.512 | no disponible | TC 3D + texto | MIT | Hugging Face (yolo2025666/HoloCT-8B) |
+| HoloCT-4B | no disponible | no disponible | TC 3D + texto | no disponible | Hugging Face (yolo2025666/HoloCT-4B) |
 | Qwen3-VL-8B | no disponible | no disponible | imagen 2D + texto | no disponible | Repositorio QwenLM/Qwen3-VL |
 | Med3DVLM | no disponible | no disponible | volumen médico 3D + texto | no disponible | Repositorio mirthAI/Med3DVLM |
 
@@ -86,8 +86,8 @@ La comparación cuantitativa de rendimiento con alternativas no está disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yolo2025666/HoloCT-8B
-- HoloCT-4B en HuggingFace: https://huggingface.co/yolo2025666/HoloCT-4B
+- Hugging Face: https://huggingface.co/yolo2025666/HoloCT-8B
+- HoloCT-4B en Hugging Face: https://huggingface.co/yolo2025666/HoloCT-4B
 - Repositorio GitHub: https://github.com/2021xyl/HoloCT
 - Demos del proyecto: https://github.com/2021xyl/HoloCT#demos
 - Ejemplos de métricas de evaluación: https://github.com/2021xyl/HoloCT/blob/main/eval/README.md

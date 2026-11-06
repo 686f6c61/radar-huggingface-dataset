@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-GGUF es una conversión al formato GGUF del modelo LiquidAI/LFM3-1.7B, publicada por el usuario Arki05 en HuggingFace. Se trata de una cuantización pensada para su uso con llama.cpp y herramientas compatibles, no de un modelo entrenado desde cero: los pesos son versiones modificadas de los originales de LiquidAI, distribuidas en seis ficheros GGUF nombrados según los bits por peso. El modelo base pertenece a la familia LFM3 de Liquid AI, con 1.728.801.600 parámetros totales según los datos de safetensors del repositorio.
+LFM3-1.7B-GGUF es una conversión al formato GGUF del modelo LiquidAI/LFM3-1.7B, publicada por el usuario Arki05 en Hugging Face. Se trata de una cuantización pensada para su uso con llama.cpp y herramientas compatibles, no de un modelo entrenado desde cero: los pesos son versiones modificadas de los originales de LiquidAI, distribuidas en seis ficheros GGUF nombrados según los bits por peso. El modelo base pertenece a la familia LFM3 de Liquid AI, con 1.728.801.600 parámetros totales según los datos de safetensors del repositorio.
 
 La relevancia de esta publicación es práctica: permite ejecutar un modelo de aproximadamente 1,7 mil millones de parámetros en hardware de consumo mediante llama.cpp, sin necesidad de infraestructura de GPU de datacenter. Al estar etiquetado como `endpoints_compatible` y `conversational`, está orientado a generación de texto conversacional. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y ocupa 6,1 GB, lo que refleja que contiene varias cuantizaciones del mismo modelo.
 
@@ -30,7 +30,7 @@ Lo único confirmado es el proceso de conversión: seis ficheros GGUF generados 
 ## Capacidades
 
 - Generación de texto conversacional, según el pipeline declarado (`text-generation`) y la etiqueta `conversational`.
-- Compatible con endpoints de inferencia (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras que siguen la API estándar de HuggingFace.
+- Compatible con endpoints de inferencia (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras que siguen la API estándar de Hugging Face.
 - Ejecutable mediante llama.cpp y herramientas que consumen GGUF.
 - Capacidades de tool calling, agentes, razonamiento multi-paso, visión o audio: no disponibles en la información proporcionada.
 - Capacidades multilingües: no disponibles; no se listan idiomas soportados.
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Arki05/LFM3-1.7B-GGUF | 1.728.801.600 | no disponible | LFM Open License v1.0 | GGUF | HuggingFace |
-| LiquidAI/LFM3-1.7B (base) | 1,7B (aprox.) | no disponible | LFM Open License v1.0 | safetensors (original) | HuggingFace |
+| Arki05/LFM3-1.7B-GGUF | 1.728.801.600 | no disponible | LFM Open License v1.0 | GGUF | Hugging Face |
+| LiquidAI/LFM3-1.7B (base) | 1,7B (aprox.) | no disponible | LFM Open License v1.0 | safetensors (original) | Hugging Face |
 | Alternativas de ~1,7B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con modelos de la misma categoría. La única comparación fiable es con el modelo base del que deriva esta conversión.
@@ -79,6 +79,6 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Arki05/LFM3-1.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Arki05/LFM3-1.7B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: fichero `LICENSE` del repositorio

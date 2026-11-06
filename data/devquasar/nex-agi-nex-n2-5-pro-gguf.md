@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | DevQuasar/nex-agi.Nex-N2.5-Pro-GGUF | 456.010.480 (segun safetensors del base) | no disponible | GGUF | no disponible | Repositorio publico, 0 descargas y 0 likes |
-| nex-agi/Nex-N2.5-Pro | no disponible | no disponible | safetensors (presumiblemente) | no disponible | Modelo base en HuggingFace |
-| DevQuasar/nex-agi.Nex-N2.5-mini-GGUF | no disponible | no disponible | GGUF | no disponible | Repositorio publico en HuggingFace |
+| nex-agi/Nex-N2.5-Pro | no disponible | no disponible | safetensors (presumiblemente) | no disponible | Modelo base en Hugging Face |
+| DevQuasar/nex-agi.Nex-N2.5-mini-GGUF | no disponible | no disponible | GGUF | no disponible | Repositorio publico en Hugging Face |
 
-No se dispone de informacion suficiente para comparar el rendimiento de estos modelos con alternativas de otros proveedores de la misma categoria. Los datos de la tabla proceden unicamente de las fichas de HuggingFace y de la informacion de busqueda disponible; no se han publicado metricas comparativas.
+No se dispone de informacion suficiente para comparar el rendimiento de estos modelos con alternativas de otros proveedores de la misma categoria. Los datos de la tabla proceden unicamente de las fichas de Hugging Face y de la informacion de busqueda disponible; no se han publicado metricas comparativas.
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para comparar el rendimiento de estos mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DevQuasar/nex-agi.Nex-N2.5-Pro-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/DevQuasar/nex-agi.Nex-N2.5-Pro-GGUF
 - Modelo base: https://huggingface.co/nex-agi/Nex-N2.5-Pro
 - Cuantizacion de la variante mini: https://huggingface.co/DevQuasar/nex-agi.Nex-N2.5-mini-GGUF
 - Ficha del modelo base en Kilo Code (benchmarks de codificacion y descripcion): https://kilo.ai/models/nex-agi-nex-n2-5-pro-free

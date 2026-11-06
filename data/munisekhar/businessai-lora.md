@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`munisekhar/businessai-lora` es un adaptador LoRA publicado en HuggingFace por el usuario munisekhar, entrenado mediante SFT (supervised fine-tuning) con la librería TRL de HuggingFace. Por el nombre y la configuración del repositorio, se trata de un ajuste fino orientado a dominios de negocio, aunque la model card no especifica el modelo base sobre el que se aplica el adaptador ni el conjunto de datos utilizado.
+`munisekhar/businessai-lora` es un adaptador LoRA publicado en Hugging Face por el usuario munisekhar, entrenado mediante SFT (supervised fine-tuning) con la librería TRL de Hugging Face. Por el nombre y la configuración del repositorio, se trata de un ajuste fino orientado a dominios de negocio, aunque la model card no especifica el modelo base sobre el que se aplica el adaptador ni el conjunto de datos utilizado.
 
 La información disponible es muy limitada: el repositorio tiene un tamaño de 0.0 GB (lo que sugiere que los pesos del adaptador no están efectivamente subidos o son de tamaño despreciable), no declara licencia, no declara idiomas, no tiene pipeline asignado y acumula 82 descargas con 0 likes. La model card es la plantilla autogenerada por TRL, con placeholders sin rellenar (el campo `model="None"` en el ejemplo de uso).
 
@@ -43,7 +43,7 @@ No se especifica el modelo base, el rango del adaptador (rank), el alpha, los m�
 - Investigación sobre adaptadores de bajo rango: útil para estudiar el comportamiento de LoRAs entrenados con SFT en tareas de instrucción, aunque la falta de documentación limita la reproducibilidad.
 - Generación de borradores de contenido empresarial: uso exploratorio en la redacción de textos de negocio, con revisión humana obligatoria dado el riesgo de alucinación y la ausencia de benchmarks.
 - Base para fine-tuning adicional: el adaptador podría combinarse con otros LoRAs o continuar su entrenamiento, si bien la ausencia de licencia impide confirmar si esto es legalmente viable.
-- Docencia y demostraciones: ejemplo didáctico de cómo se publica un adaptador LoRA en HuggingFace y de las carencias habituales en model cards autogeneradas.
+- Docencia y demostraciones: ejemplo didáctico de cómo se publica un adaptador LoRA en Hugging Face y de las carencias habituales en model cards autogeneradas.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado adaptadores LoRA comparables en la informa
 
 ## Enlaces
 
-- [HuggingFace: munisekhar/businessai-lora](https://huggingface.co/munisekhar/businessai-lora)
+- [Hugging Face: munisekhar/businessai-lora](https://huggingface.co/munisekhar/businessai-lora)
 - [TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl)
 - [PEFT](https://github.com/huggingface/peft)
 - [Transformers](https://github.com/huggingface/transformers)

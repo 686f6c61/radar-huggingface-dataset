@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PaniniCode-4B (publicado en HuggingFace como `18kansal/panini-gemma-swe-bench`) es un sistema neuro-simbólico orientado a la reparación automática de programas (Automated Program Repair, APR) que combina un modelo Gemma de aproximadamente 4.000 millones de parámetros con las reglas de la gramática formal sánscrita de Panini (*Aṣṭādhyāyī*). El autor presenta el proyecto como un puente entre la gramática generativa determinista de Panini y las invariantes de compilación (preservación de firmas AST, extracción de locus de fallo desde el traceback), usando Gemma como motor de síntesis de parches ejecutado localmente en CPU mediante GGUF cuantizado.
+PaniniCode-4B (publicado en Hugging Face como `18kansal/panini-gemma-swe-bench`) es un sistema neuro-simbólico orientado a la reparación automática de programas (Automated Program Repair, APR) que combina un modelo Gemma de aproximadamente 4.000 millones de parámetros con las reglas de la gramática formal sánscrita de Panini (*Aṣṭādhyāyī*). El autor presenta el proyecto como un puente entre la gramática generativa determinista de Panini y las invariantes de compilación (preservación de firmas AST, extracción de locus de fallo desde el traceback), usando Gemma como motor de síntesis de parches ejecutado localmente en CPU mediante GGUF cuantizado.
 
 El modelo se posiciona como una alternativa ligera y desplegable en el borde (edge) frente a modelos frontera de 70B+ parámetros para tareas de generación de código. El pipeline declarado es de bucle cerrado: se ingiere un test que falla, se sintetiza un parche con Gemma, y se valida ejecutando el runner real (`unittest` en Python, `assert` en Node.js), aceptando únicamente soluciones con código de salida 0.
 
@@ -84,8 +84,8 @@ No se dispone de datos de benchmarks comparables publicados en la información p
 
 | Modelo | Parametros | Contexto | APR / SWE-bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PaniniCode-4B (este modelo) | ~4B | No disponible | 100 % sobre 5 tests Python declarados por el autor (no es el conjunto completo de SWE-bench Verified) | apache-2.0 | HuggingFace (0 descargas) |
-| Gemma (modelo base citado) | ~4B Instruct | No disponible | No disponible | Gemma Terms / Apache según variante | HuggingFace |
+| PaniniCode-4B (este modelo) | ~4B | No disponible | 100 % sobre 5 tests Python declarados por el autor (no es el conjunto completo de SWE-bench Verified) | apache-2.0 | Hugging Face (0 descargas) |
+| Gemma (modelo base citado) | ~4B Instruct | No disponible | No disponible | Gemma Terms / Apache según variante | Hugging Face |
 | Modelos de código de ~4-7B de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se ha encontrado en la búsqueda web ningún resultado de SWE-bench Verified correspondiente a este modelo; los leaderboards de SWE-bench (`swebench.com`) y otras fuentes no lo listan entre los modelos evaluados de forma independiente.
@@ -104,7 +104,7 @@ No se ha encontrado en la búsqueda web ningún resultado de SWE-bench Verified 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/18kansal/panini-gemma-swe-bench
+- Modelo en Hugging Face: https://huggingface.co/18kansal/panini-gemma-swe-bench
 - Modelo base citado (badge): https://huggingface.co/google/gemma-2-9b-it
 - Referencia sobre Panini y la Aṣṭādhyāyī: https://en.wikipedia.org/wiki/P%C4%81%E1%B9%87ini
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0

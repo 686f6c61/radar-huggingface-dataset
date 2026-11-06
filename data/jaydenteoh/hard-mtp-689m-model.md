@@ -23,7 +23,7 @@ El modelo es un transformer decoder de 745 millones de parámetros (configuraci�
 
 El modelo es un transformer decoder denso con hidden size de 1152, 36 capas y 18 cabezas de atencion. La particularidad es que incorpora 3 cabeceras MTP adicionales en cascada estilo DeepSeek (un bloque cada una), que predicen los tokens en posiciones +2, +3 y +4 durante el entrenamiento. El objetivo es "hard": cada cabecera se optimiza con cross-entropy contra el token realizado k posiciones adelante, en contraposicion a variantes "soft" que predicen distribuciones. Estas cabeceras son estrictamente auxiliares: se descartan en inferencia, de modo que el modelo desplegado es un transformer next-token ordinario de 745M. Ademas, las cabeceras pueden reutilizarse como draft model para decodificacion especulativa auto-especulativa.
 
-El entrenamiento uso 31,5 mil millones de tokens de FineWeb-Edu (dataset educativo de HuggingFace) tokenizados con el BPE de GPT-2, con vocabulario rellenado de 50257 a 50304 por alineacion. El optimizador es una combinacion destacable: Muon para las matrices ocultas 2D y AdamW para embeddings, cabecera de salida y normalizaciones. Se empleo LR pico de 0,00125 con decaimiento coseno hasta 1e-05, 2.000 pasos de warmup, weight decay de 0,1 y precision bf16 autocast sobre pesos maestros en fp32, durante 60.000 pasos con batch de 256 y contexto de 2048. Las doce variantes del estudio comparten semilla (13), orden de datos y planificador, de forma que las diferencias de rendimiento son atribuibles al objetivo de entrenamiento.
+El entrenamiento uso 31,5 mil millones de tokens de FineWeb-Edu (dataset educativo de Hugging Face) tokenizados con el BPE de GPT-2, con vocabulario rellenado de 50257 a 50304 por alineacion. El optimizador es una combinacion destacable: Muon para las matrices ocultas 2D y AdamW para embeddings, cabecera de salida y normalizaciones. Se empleo LR pico de 0,00125 con decaimiento coseno hasta 1e-05, 2.000 pasos de warmup, weight decay de 0,1 y precision bf16 autocast sobre pesos maestros en fp32, durante 60.000 pasos con batch de 256 y contexto de 2048. Las doce variantes del estudio comparten semilla (13), orden de datos y planificador, de forma que las diferencias de rendimiento son atribuibles al objetivo de entrenamiento.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ Nota: no existen alternativas publicas directas con el mismo objetivo experiment
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaydenTeoh/hard-mtp-689m-model
+- Modelo en Hugging Face: https://huggingface.co/JaydenTeoh/hard-mtp-689m-model
 - Paper: Multi-Token Prediction Done Right — https://arxiv.org/abs/2610.38331
 - Codigo (GitHub): https://github.com/JaydenTeoh/Soft-MTP
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

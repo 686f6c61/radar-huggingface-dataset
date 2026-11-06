@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stage-jh-monitor/qwen35-4b-filter-solvability-200-rawsource-4k-epoch4` es un checkpoint de pesos publicado en HuggingFace por la cuenta `Stage-jh-monitor`, derivado del modelo base `Qwen/Qwen3.5-4B`. Segun la model card, no se trata de un lanzamiento de producto sino del artefacto de salida de un pipeline interno de entrenamiento por refuerzo (RL): el repositorio contiene la procedencia completa del entrenamiento, con el comando de ejecucion y el fichero de configuracion en formato TOML. El peso total declarado en los ficheros safetensors es de 4.539.265.536 parametros (aproximadamente 4,54 mil millones) y el repositorio ocupa 9,1 GB.
+`Stage-jh-monitor/qwen35-4b-filter-solvability-200-rawsource-4k-epoch4` es un checkpoint de pesos publicado en Hugging Face por la cuenta `Stage-jh-monitor`, derivado del modelo base `Qwen/Qwen3.5-4B`. Segun la model card, no se trata de un lanzamiento de producto sino del artefacto de salida de un pipeline interno de entrenamiento por refuerzo (RL): el repositorio contiene la procedencia completa del entrenamiento, con el comando de ejecucion y el fichero de configuracion en formato TOML. El peso total declarado en los ficheros safetensors es de 4.539.265.536 parametros (aproximadamente 4,54 mil millones) y el repositorio ocupa 9,1 GB.
 
 El modelo esta etiquetado internamente con la arquitectura `qwen3_5` y se ha entrenado mediante un metodo de RL con generacion on-policy, grupo de 8 muestras por prompt y evaluacion abierta mediante un modelo juez externo (`gpt-5.6-luna`). El nombre del checkpoint sugiere un experimento centrado en el filtrado por "solvability" (resolubilidad) de tareas sobre una fuente de datos cruda de 4k, aunque la model card no documenta el dataset ni el objetivo del experimento.
 
@@ -99,7 +99,7 @@ No se dispone de informacion sobre modelos comparables de 4B en el material prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-solvability-200-rawsource-4k-epoch4
+- Modelo en Hugging Face: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-solvability-200-rawsource-4k-epoch4
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/Stage-org/qwen35-4b-filter-solvability-200-rawsource-4k
 - Modelo base citado en la configuracion: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog, repositorio o demo del autor: no disponibles en la informacion proporcionada.

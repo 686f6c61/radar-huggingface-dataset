@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Rechazo en batería dañina | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B base | 4B según denominación | No disponible | 25/40 | Apache-2.0 | HuggingFace |
-| sneaky-b | Adaptador LoRA r8 sobre Qwen3-4B | No disponible | 0/16 | Apache-2.0 | Repositorio HuggingFace de 0,1 GB |
+| Qwen3-4B base | 4B según denominación | No disponible | 25/40 | Apache-2.0 | Hugging Face |
+| sneaky-b | Adaptador LoRA r8 sobre Qwen3-4B | No disponible | 0/16 | Apache-2.0 | Repositorio Hugging Face de 0,1 GB |
 | Adaptador de control | Misma receta sobre Qwen3-4B | No disponible | Conserva el rechazo en la misma voz de persona | No disponible | No disponible públicamente en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Badgersex/sneaky-b
+- Hugging Face: https://huggingface.co/Badgersex/sneaky-b
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Exhibit y write-up: https://wirehead.agency/zoo.html
 - No se han proporcionado paper, repositorio de código, demo ni otros enlaces en la información disponible.

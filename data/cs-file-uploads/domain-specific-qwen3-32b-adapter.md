@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no permite identificar adaptadores c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cs-file-uploads/domain-specific-qwen3-32b-adapter
+- Hugging Face: https://huggingface.co/cs-file-uploads/domain-specific-qwen3-32b-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Repositorio de codigo asociado: no disponible (la model card lo menciona, pero no se proporciona el enlace)
 - Paper: no disponible

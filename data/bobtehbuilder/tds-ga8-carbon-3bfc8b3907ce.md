@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario bobtehbuilder, no contiene un modelo de IA propiamente dicho, sino un registro de contabilidad de emisiones de carbono asociado a un proceso de fine-tuning. La model card documenta una huella de carbono de 368,846 kg de CO2 equivalente, calculada mediante la herramienta CodeCarbon durante un entrenamiento realizado en la región us-central1 de Google Cloud con hardware NVIDIA V100.
+Este repositorio de Hugging Face, publicado por el usuario bobtehbuilder, no contiene un modelo de IA propiamente dicho, sino un registro de contabilidad de emisiones de carbono asociado a un proceso de fine-tuning. La model card documenta una huella de carbono de 368,846 kg de CO2 equivalente, calculada mediante la herramienta CodeCarbon durante un entrenamiento realizado en la región us-central1 de Google Cloud con hardware NVIDIA V100.
 
 El repositorio forma parte de una serie de repositorios similares (tds-ga8-carbon-*) que parecen corresponder a un ejercicio académico o de investigación sobre Green AI y contabilidad de emisiones en el entrenamiento de modelos. No se proporcionan pesos del modelo, arquitectura, ni ningún artefacto técnico descargable.
 
@@ -69,7 +69,7 @@ No disponible. Este repositorio no contiene un modelo comparable con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-3bfc8b3907ce
+- Repositorio Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-3bfc8b3907ce
 - Repositorio hermano 1: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f00b19c42a31
 - Repositorio hermano 2: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-414018fd4fff
 - Repositorio GitHub relacionado: https://github.com/22f3001797/tds-ga8

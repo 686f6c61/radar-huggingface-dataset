@@ -94,7 +94,7 @@ La diferencia principal frente a `swe-audit-3b-02` es la intensidad de entrenami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/renee-ts/persistbd-intensity-3b-V0mod-s0
+- Modelo en Hugging Face: https://huggingface.co/renee-ts/persistbd-intensity-3b-V0mod-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Modelo de referencia de la receta: https://huggingface.co/qiusizhan/swe-audit-3b-02
 - Conjunto de datos PersistBD: https://huggingface.co/datasets/uiuc-kang-lab/PersistBD

@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks de tareas para ninguno de los archivos, por
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dfed24/Qwen3.8-27B-GPTQ-GGUF
+- Repositorio Hugging Face: https://huggingface.co/dfed24/Qwen3.8-27B-GPTQ-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Codigo y registro de experimentos: https://github.com/dfed25/mlx-gptq/tree/main/port
 - Cuantizacion de referencia para la comparativa (UD-Q4_K_M de unsloth): no disponible (no se proporciona URL en la informacion recibida)

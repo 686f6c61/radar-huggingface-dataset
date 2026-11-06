@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SAD12DSAQWD bajo el identificador `SAD12DSAQWD/MyAwesomeModel-TestRepo`. La model card lo describe como una actualización de una versión anterior, con mejoras en profundidad de razonamiento e inferencia obtenidas mediante mayor cómputo y optimizaciones algorítmicas en la fase de post-entrenamiento. El autor declara mejoras en matemáticas, programación y lógica general, además de una reducción de la tasa de alucinación y un mejor soporte de function calling.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SAD12DSAQWD bajo el identificador `SAD12DSAQWD/MyAwesomeModel-TestRepo`. La model card lo describe como una actualización de una versión anterior, con mejoras en profundidad de razonamiento e inferencia obtenidas mediante mayor cómputo y optimizaciones algorítmicas en la fase de post-entrenamiento. El autor declara mejoras en matemáticas, programación y lógica general, además de una reducción de la tasa de alucinación y un mejor soporte de function calling.
 
 El dato más concreto que aporta la model card es la evolución en AIME 2025: la precisión pasa del 70 % al 87,5 % entre versiones, con un aumento del consumo de tokens por pregunta de 12K a 23K. También se publica una tabla de benchmarks con quince tareas, comparando el modelo frente a tres referencias anonimizadas (Model1, Model2 y Model1-v2).
 
-Ahora bien, el repositorio presenta inconsistencias graves que conviene señalar antes de cualquier evaluación. El tamaño declarado del repo es de 0,0 GB, no hay pesos publicados, el contador de descargas y likes es cero, y los tags de HuggingFace lo etiquetan como `bert` y `feature-extraction`, lo que contradice frontalmente la model card, que describe un modelo generativo de razonamiento con modo thinking y function calling. El nombre del repositorio incluye el sufijo "TestRepo" y las fechas de creación y actualización corresponden al 12 de septiembre de 2026, con apenas once segundos de diferencia. Todo apunta a un repositorio de prueba o a una plantilla, no a un modelo desplegable.
+Ahora bien, el repositorio presenta inconsistencias graves que conviene señalar antes de cualquier evaluación. El tamaño declarado del repo es de 0,0 GB, no hay pesos publicados, el contador de descargas y likes es cero, y los tags de Hugging Face lo etiquetan como `bert` y `feature-extraction`, lo que contradice frontalmente la model card, que describe un modelo generativo de razonamiento con modo thinking y function calling. El nombre del repositorio incluye el sufijo "TestRepo" y las fechas de creación y actualización corresponden al 12 de septiembre de 2026, con apenas once segundos de diferencia. Todo apunta a un repositorio de prueba o a una plantilla, no a un modelo desplegable.
 
 ## Especificaciones técnicas
 
@@ -57,7 +57,7 @@ Los siguientes escenarios se derivan de las capacidades declaradas por el autor.
 - Procesamiento de documentos largos subidos por el usuario: la plantilla `file_template` permite concatenar nombre y contenido del archivo con la pregunta, útil en herramientas de análisis documental, extracción de datos de contratos o resumen de informes.
 - Traducción y localización: con una puntuación declarada de 0,804 en la categoría de traducción, podría emplearse en pipelines de localización de contenido, siempre que se valide el par de idiomas concreto, que no se especifica.
 - Resumen automático de documentación técnica: la tarea de summarization obtiene 0,767 en la tabla del autor, lo que lo situaría como candidato para resumir changelogs, issues o documentación extensa en herramientas internas.
-- Clasificación y enrutado de tickets: con 0,828 en clasificación de texto y 0,792 en análisis de sentimiento, podría emplearse como clasificador previo en sistemas de soporte, aunque el pipeline declarado en HuggingFace (`feature-extraction`) no coincide con una cabeza de clasificación.
+- Clasificación y enrutado de tickets: con 0,828 en clasificación de texto y 0,792 en análisis de sentimiento, podría emplearse como clasificador previo en sistemas de soporte, aunque el pipeline declarado en Hugging Face (`feature-extraction`) no coincide con una cabeza de clasificación.
 
 ## Benchmarks y rendimiento
 
@@ -94,7 +94,7 @@ Dato adicional aportado en el texto: en AIME 2025 la precisión pasa del 70 % (v
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable. La model card enfrenta el modelo a tres referencias anonimizadas (Model1, Model2, Model1-v2) sin identificar autor, tamaño, contexto ni licencia, y los tags de HuggingFace (`bert`, `feature-extraction`) apuntan a una categoría completamente distinta de la que describe el texto (modelo generativo de razonamiento). Sin pesos publicados ni especificaciones de arquitectura, cualquier comparación con alternativas reales sería especulativa.
+No es posible establecer una comparativa fiable. La model card enfrenta el modelo a tres referencias anonimizadas (Model1, Model2, Model1-v2) sin identificar autor, tamaño, contexto ni licencia, y los tags de Hugging Face (`bert`, `feature-extraction`) apuntan a una categoría completamente distinta de la que describe el texto (modelo generativo de razonamiento). Sin pesos publicados ni especificaciones de arquitectura, cualquier comparación con alternativas reales sería especulativa.
 
 | Aspecto | MyAwesomeModel | Alternativas reales |
 |---|---|---|
@@ -119,7 +119,7 @@ No es posible establecer una comparativa fiable. La model card enfrenta el model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SAD12DSAQWD/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/SAD12DSAQWD/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de código: no disponible (la model card menciona un "code repository" sin proporcionar la URL)
 - Blog o anuncio: no disponible

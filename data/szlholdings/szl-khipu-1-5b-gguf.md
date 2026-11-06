@@ -77,8 +77,8 @@ La comparativa se limita a características generales porque no hay datos de ren
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF)
 - [Modelo base SZL-Khipu-1.5B](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B)
 - [Repositorio szl-forge en GitHub (Modelfile y espacios)](https://github.com/szl-holdings/szl-forge)
 - [Documentación de Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
-- [Página de SZL Holdings en HuggingFace](https://huggingface.co/SZLHOLDINGS)
+- [Página de SZL Holdings en Hugging Face](https://huggingface.co/SZLHOLDINGS)

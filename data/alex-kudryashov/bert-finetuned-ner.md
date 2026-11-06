@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-finetuned-ner es un modelo de clasificación de tokens (token-classification) obtenido por ajuste fino supervisado del modelo de embeddings BAAI/bge-small-en-v1.5, publicado por el usuario alex-kudryashov en HuggingFace. Se trata, por tanto, de un modelo derivado de la familia BERT: un transformer encoder de 12 capas con 33.215.625 parámetros totales y un límite de 512 tokens por secuencia, heredado de las position embeddings del modelo base.
+bert-finetuned-ner es un modelo de clasificación de tokens (token-classification) obtenido por ajuste fino supervisado del modelo de embeddings BAAI/bge-small-en-v1.5, publicado por el usuario alex-kudryashov en Hugging Face. Se trata, por tanto, de un modelo derivado de la familia BERT: un transformer encoder de 12 capas con 33.215.625 parámetros totales y un límite de 512 tokens por secuencia, heredado de las position embeddings del modelo base.
 
 El problema que resuelve es el etiquetado de entidades nombradas (NER) sobre texto: asignar una clase a cada token de una secuencia. El autor no documenta el corpus de ajuste —la propia model card indica "on an unknown dataset" y deja las secciones de descripción, usos previstos y datos de entrenamiento como "More information needed"—, por lo que no es posible determinar qué esquema de etiquetas (por ejemplo, PER/ORG/LOC/MISC u otro) produce el modelo.
 
@@ -67,16 +67,16 @@ Resultados finales en el conjunto de evaluacion declarado: loss 0,1990; precisio
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Modelos como RTX 3060, RTX 4090, A100 o H100 estan sobredimensionados para este modelo y solo tiene sentido usarlos para maximizar el throughput por lotes.
 - Consumer GPU: si, cabe holgadamente en cualquier GPU de consumo e incluso en iGPU con memoria compartida.
 - CPU: es perfectamente viable para inferencia en CPU, dado el reducido numero de parametros, y es probablemente el escenario de despliegue mas razonable.
-- Opciones de despliegue: pipeline `token-classification` de `transformers`, exportacion a ONNX Runtime para inferencia optimizada en CPU, y serverless inference de HuggingFace. El uso de vLLM o TGI orientados a generacion no es el escenario natural para un modelo de clasificacion de tokens.
+- Opciones de despliegue: pipeline `token-classification` de `transformers`, exportacion a ONNX Runtime para inferencia optimizada en CPU, y serverless inference de Hugging Face. El uso de vLLM o TGI orientados a generacion no es el escenario natural para un modelo de clasificacion de tokens.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alex-kudryashov/bert-finetuned-ner | BERT-small (bge-small-en-v1.5) | 33.215.625 | 512 tokens | MIT | HuggingFace, transformers |
-| dslim/bert-base-NER | BERT-base | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| xlm-roberta-large-finetuned-conll03-english | XLM-RoBERTa large | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| alex-kudryashov/bert-finetuned-ner | BERT-small (bge-small-en-v1.5) | 33.215.625 | 512 tokens | MIT | Hugging Face, transformers |
+| dslim/bert-base-NER | BERT-base | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| xlm-roberta-large-finetuned-conll03-english | XLM-RoBERTa large | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en la informacion proporcionada. La unica ventaja verificable de bert-finetuned-ner frente a alternativas de mayor tamano es su coste computacional reducido (33 millones de parametros frente a cientos de millones), a costa de una ventana de contexto mucho menor y de un esquema de etiquetas no documentado.
 
@@ -94,6 +94,6 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alex-kudryashov/bert-finetuned-ner
+- Hugging Face: https://huggingface.co/alex-kudryashov/bert-finetuned-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados. Los resultados devueltos corresponden a otros usos del termino "Alex" y no guardan relacion con este modelo.

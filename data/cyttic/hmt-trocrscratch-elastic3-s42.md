@@ -66,9 +66,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrscratch-elastic3-s42 | 22,4 M | no disponible | CER 0,2153 / WER 0,7411 en HHD Option-B | MIT | HuggingFace |
-| TrOCR base (Microsoft) | no disponible en esta ficha | no disponible | no disponible | MIT (según versión) | HuggingFace |
-| Otros checkpoints del estudio `htr-metrics-transfer` (cyttic) | no disponible | no disponible | no disponible | MIT | HuggingFace (presumiblemente) |
+| cyttic/hmt-trocrscratch-elastic3-s42 | 22,4 M | no disponible | CER 0,2153 / WER 0,7411 en HHD Option-B | MIT | Hugging Face |
+| TrOCR base (Microsoft) | no disponible en esta ficha | no disponible | no disponible | MIT (según versión) | Hugging Face |
+| Otros checkpoints del estudio `htr-metrics-transfer` (cyttic) | no disponible | no disponible | no disponible | MIT | Hugging Face (presumiblemente) |
 
 No se dispone de datos comparativos verificados de modelos alternativos de HTR en hebreo en la información proporcionada; la comparación cuantitativa con TrOCR estándar u otros sistemas queda como no disponible.
 
@@ -85,6 +85,6 @@ No se dispone de datos comparativos verificados de modelos alternativos de HTR e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratch-elastic3-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratch-elastic3-s42
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split (según la model card)
 - Resultados detallados: `results.json` en el repositorio del modelo (según la model card)

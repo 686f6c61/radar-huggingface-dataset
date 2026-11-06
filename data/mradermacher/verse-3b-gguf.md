@@ -25,7 +25,7 @@ La información pública disponible sobre este repositorio es muy limitada: no s
 
 No se dispone de información sobre la arquitectura del modelo base Aeronix-zzz/VERSE-3B en los datos proporcionados. La model card de este repositorio no describe si se trata de un transformer decoder-only, un modelo de estado recurrente (SSM), una arquitectura híbrida o cualquier otra variante. Tampoco se detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de ajuste como RLHF, DPO o SFT.
 
-Lo único documentado en el repositorio es el proceso de cuantización: los metadatos indican `quantize_version: 2`, `convert_type: hf` y `output_tensor_quantised: 1`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato HuggingFace y que los tensores de salida están cuantizados individualmente. No se menciona ninguna innovación técnica de arquitectura ni mecanismo de atención específico en la información disponible.
+Lo único documentado en el repositorio es el proceso de cuantización: los metadatos indican `quantize_version: 2`, `convert_type: hf` y `output_tensor_quantised: 1`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato Hugging Face y que los tensores de salida están cuantizados individualmente. No se menciona ninguna innovación técnica de arquitectura ni mecanismo de atención específico en la información disponible.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ No se puede comparar el rendimiento (MMLU, HumanEval, GSM8K u otros) porque no h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/VERSE-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/VERSE-3B-GGUF
 - Modelo base original: https://huggingface.co/Aeronix-zzz/VERSE-3B
 
 No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web proporcionada.

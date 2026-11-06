@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smolvla_so101_tray_v5 es una política robótica de tipo vision-language-action (VLA) publicada por el usuario digas99 en HuggingFace. Se trata de un fine-tune completo de SmolVLA (450 millones de parámetros), el modelo base de LeRobot para control de robots, especializado en una tarea concreta: un brazo robótico SO-101 que mueve objetos entre una mesa y una bandeja transparente en ambas direcciones. El modelo no es un asistente conversacional ni un generador de texto: es un controlador de robot que recibe imágenes de dos cámaras y el estado de las articulaciones, y emite comandos de acción a 30 Hz.
+smolvla_so101_tray_v5 es una política robótica de tipo vision-language-action (VLA) publicada por el usuario digas99 en Hugging Face. Se trata de un fine-tune completo de SmolVLA (450 millones de parámetros), el modelo base de LeRobot para control de robots, especializado en una tarea concreta: un brazo robótico SO-101 que mueve objetos entre una mesa y una bandeja transparente en ambas direcciones. El modelo no es un asistente conversacional ni un generador de texto: es un controlador de robot que recibe imágenes de dos cámaras y el estado de las articulaciones, y emite comandos de acción a 30 Hz.
 
 La relevancia de esta ficha es doble. Por un lado, ilustra el flujo de trabajo típico de la robótica de imitación moderna con LeRobot: partir de un modelo base preentrenado, recoger demostraciones teleoperadas, añadir correcciones humanas sobre los fallos del modelo anterior e iterar. Por otro, muestra un caso de diseño deliberadamente "class-agnostic": la política nunca recibe el nombre del objeto, sino que arranca desde una posición de hover fijada por un segmentador externo. Esta quinta iteración (v5) incorpora 58 correcciones humanas grabadas sobre los estados de fallo de la v4.
 
@@ -73,9 +73,9 @@ La model card menciona una verificación offline sobre 15 frames del dataset (3 
 
 | Modelo | Parámetros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_so101_tray_v5 | 450 M | VLA fine-tune para SO-101 | no aplica | apache-2.0 | HuggingFace (digas99) |
-| lerobot/smolvla_base | no disponible en la información | VLA base preentrenado | no aplica | no disponible en la información | HuggingFace (lerobot) |
-| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible en la información | Políticas de imitación | no aplica | no disponible en la información | HuggingFace (lerobot) |
+| smolvla_so101_tray_v5 | 450 M | VLA fine-tune para SO-101 | no aplica | apache-2.0 | Hugging Face (digas99) |
+| lerobot/smolvla_base | no disponible en la información | VLA base preentrenado | no aplica | no disponible en la información | Hugging Face (lerobot) |
+| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible en la información | Políticas de imitación | no aplica | no disponible en la información | Hugging Face (lerobot) |
 
 La comparación con alternativas de la misma categoría no está disponible en la información proporcionada; solo se confirma que el modelo base es `lerobot/smolvla_base` y que la política se integra en el ecosistema LeRobot.
 
@@ -93,6 +93,6 @@ La comparación con alternativas de la misma categoría no está disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/digas99/smolvla_so101_tray_v5
+- Modelo en Hugging Face: https://huggingface.co/digas99/smolvla_so101_tray_v5
 - Dataset de entrenamiento: https://huggingface.co/datasets/digas99/so101_tray_train_v5
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

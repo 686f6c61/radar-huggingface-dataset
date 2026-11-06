@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LinusML/qwen2-promise-lora-prime` es un ajuste fino (fine-tuning) del modelo base Qwen2-1.5B-Instruct, publicado por el usuario LinusML en HuggingFace. Se trata de un adaptador LoRA entrenado mediante SFT (Supervised Fine-Tuning) con la librería TRL, según indica la propia model card. El modelo hereda la arquitectura y el tamaño del Qwen2-1.5B-Instruct original, es decir, un transformer decoder-only de aproximadamente 1.500 millones de parámetros.
+`LinusML/qwen2-promise-lora-prime` es un ajuste fino (fine-tuning) del modelo base Qwen2-1.5B-Instruct, publicado por el usuario LinusML en Hugging Face. Se trata de un adaptador LoRA entrenado mediante SFT (Supervised Fine-Tuning) con la librería TRL, según indica la propia model card. El modelo hereda la arquitectura y el tamaño del Qwen2-1.5B-Instruct original, es decir, un transformer decoder-only de aproximadamente 1.500 millones de parámetros.
 
 La relevancia de esta publicación es limitada: se trata de un experimento de ajuste fino de carácter personal, sin documentación sobre el dataset de entrenamiento, sin resultados de benchmarks y sin licencia declarada. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que los pesos del adaptador pueden no estar completamente subidos o que el contenido es mínimo.
 
@@ -19,7 +19,7 @@ A pesar de su escasa documentación, el modelo puede ser de interés para desarr
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible (la model card indica "licence: license" sin especificar) |
-| Formato de pesos | Safetensors (según tags de HuggingFace) |
+| Formato de pesos | Safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -44,7 +44,7 @@ La model card no proporciona información sobre el número de tokens de entrenam
 - Generación de texto en aplicaciones de baja latencia: su tamaño reducido permite inferencia rápida en GPU de consumo, adecuado para tareas de generación simple.
 - Investigación sobre olvido catastrófico: comparar el comportamiento del modelo ajustado frente al base puede ayudar a estudiar cómo el SFT afecta a las capacidades originales.
 - Fine-tuning posterior: el adaptador puede servir como punto de partida para experimentos adicionales de ajuste con otros datasets.
-- Docencia y formación: ejemplo práctico de publicación de un modelo ajustado en HuggingFace con TRL, útil en talleres sobre fine-tuning.
+- Docencia y formación: ejemplo práctico de publicación de un modelo ajustado en Hugging Face con TRL, útil en talleres sobre fine-tuning.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LinusML/qwen2-promise-lora-prime | ~1.5B (base) | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen2-1.5B-Instruct | ~1.5B | 32.768 tokens (según documentación del base) | Apache 2.0 (según el base) | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | ~1.2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
-| google/gemma-2-2b-it | ~2.6B | 8.192 tokens | Gemma Terms of Use | HuggingFace |
+| LinusML/qwen2-promise-lora-prime | ~1.5B (base) | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen2-1.5B-Instruct | ~1.5B | 32.768 tokens (según documentación del base) | Apache 2.0 (según el base) | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | ~1.2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
+| google/gemma-2-2b-it | ~2.6B | 8.192 tokens | Gemma Terms of Use | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para el modelo ajustado, por lo que la comparación se limita a parámetros, contexto y licencia del modelo base.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo para el modelo ajustado, por l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LinusML/qwen2-promise-lora-prime
+- Hugging Face: https://huggingface.co/LinusML/qwen2-promise-lora-prime
 - Modelo base: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl
 - Documentación de TRL: https://huggingface.co/docs/trl

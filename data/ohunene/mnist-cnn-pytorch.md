@@ -44,7 +44,7 @@ El entrenamiento usa el optimizador Adam con learning rate 0,001 y la funcion de
 - Pruebas unitarias de infraestructura de serving: al ser un modelo pequeno y rapido, se puede usar como "smoke test" en entornos de despliegue de modelos de vision.
 - Reconocimiento de digitos en formularios escaneados muy controlados: solo si las imagenes se ajustan exactamente al formato MNIST (28x28, blanco sobre negro, normalizacion fija); en la practica requeriria un preprocesado previo de recorte y binarizacion.
 - Benchmark de referencia para comparar tecnicas de entrenamiento: util como linea base de 96,57 % de accuracy frente a variantes con mas capas o data augmentation.
-- Demostracion educativa de publicacion de modelos en HuggingFace Hub: ilustra el flujo de subida de pesos `.pth` y model card con metadatos.
+- Demostracion educativa de publicacion de modelos en Hugging Face Hub: ilustra el flujo de subida de pesos `.pth` y model card con metadatos.
 
 ## Benchmarks y rendimiento
 
@@ -67,9 +67,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | MNIST accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ohunene/mnist-cnn-pytorch | no disponible | no aplica | 96,57 % | MIT | HuggingFace (0 descargas) |
+| Ohunene/mnist-cnn-pytorch | no disponible | no aplica | 96,57 % | MIT | Hugging Face (0 descargas) |
 | LeNet-5 (referencia clasica) | ~60 K | no aplica | ~99 % (reportado en literatura) | no disponible | Referencia academica |
-| Alternativas CNN en HuggingFace para MNIST | no disponible | no aplica | no disponible | variable | HuggingFace |
+| Alternativas CNN en Hugging Face para MNIST | no disponible | no aplica | no disponible | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos en la informacion proporcionada para establecer una comparativa rigurosa con alternativas concretas. Los valores de LeNet-5 corresponden a la literatura general y no a una evaluacion directa contra este modelo.
 
@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ohunene/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/Ohunene/mnist-cnn-pytorch
 - Dataset MNIST (referencia): https://huggingface.co/datasets/mnist
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

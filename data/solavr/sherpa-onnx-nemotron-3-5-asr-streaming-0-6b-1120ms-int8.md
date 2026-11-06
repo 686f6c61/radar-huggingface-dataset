@@ -6,7 +6,7 @@ El modelo `solavr/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-1120ms-int8` es un
 
 La relevancia de esta ficha esta en su perfil de despliegue: un modelo de aproximadamente 600 millones de parametros (segun el sufijo `0.6b` del nombre) en cuantizacion int8, con arquitectura FastConformer de tipo transducer (RNNT) y modo streaming. El sufijo `1120ms` del identificador apunta a la configuracion de tamano de chunk o latencia del modo streaming, una convencion habitual en las exportaciones de modelos NeMo a sherpa-onnx, donde existen variantes con distintos valores de chunk para intercambiar latencia por precision.
 
-El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no aporta model card con benchmarks, lista de idiomas ni detalles de entrenamiento. La etiqueta `multilingual` indica soporte de multiples idiomas, pero no se especifica el conjunto concreto. La licencia declarada en las etiquetas es `openmdw-1.1`, si bien el campo de licencia de la ficha de HuggingFace aparece como no disponible.
+El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no aporta model card con benchmarks, lista de idiomas ni detalles de entrenamiento. La etiqueta `multilingual` indica soporte de multiples idiomas, pero no se especifica el conjunto concreto. La licencia declarada en las etiquetas es `openmdw-1.1`, si bien el campo de licencia de la ficha de Hugging Face aparece como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ Nota diferencial: frente a Whisper, este modelo prioriza el modo streaming y el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/solavr/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-1120ms-int8
+- Repositorio en Hugging Face: https://huggingface.co/solavr/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-1120ms-int8
 - Modelo base declarado en las etiquetas: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Documentacion del runtime sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Proyecto NeMo de NVIDIA: https://github.com/NVIDIA/NeMo

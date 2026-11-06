@@ -29,7 +29,7 @@ La arquitectura es un transformer decoder-only estándar, aunque la model card m
 
 - Generación de texto fluida en múltiples idiomas, con soporte para conversación multi-turno.
 - Razonamiento lógico y matemático robusto, destacando en benchmarks como BigBench Hard y MMLU-Pro.
-- Generación de código (el modelo incluye la etiqueta `code` en HuggingFace).
+- Generación de código (el modelo incluye la etiqueta `code` en Hugging Face).
 - Function calling: soporte para invocar funciones externas, según se indica en las release notes.
 - Comprensión de contexto largo (128K tokens), útil para documentos extensos o historiales de conversación largos.
 - No se mencionan capacidades de visión, audio ni modo de razonamiento explícito (thinking mode) en la información disponible.
@@ -89,9 +89,9 @@ Phi-4-mini-instruct ofrece el mejor rendimiento en razonamiento (BigBench Hard) 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/microsoft/Phi-4-mini-instruct)
+- [Modelo en Hugging Face](https://huggingface.co/microsoft/Phi-4-mini-instruct)
 - [Blog de Microsoft sobre Phi-4-mini](https://aka.ms/phi4-feb2025)
 - [Technical report (paper)](https://huggingface.co/papers/2503.01743)
 - [Phi Cookbook (ejemplos y guías)](https://github.com/microsoft/PhiCookBook)
 - [Phi Portal (Azure)](https://azure.microsoft.com/en-us/products/phi)
-- [Demo en HuggingFace Spaces](https://huggingface.co/spaces/microsoft/phi-4-mini)
+- [Demo en Hugging Face Spaces](https://huggingface.co/spaces/microsoft/phi-4-mini)

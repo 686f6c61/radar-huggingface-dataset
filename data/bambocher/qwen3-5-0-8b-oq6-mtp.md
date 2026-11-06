@@ -84,12 +84,12 @@ Frente a estas alternativas, la ventaja diferencial de este checkpoint es la com
 - **Longitud de contexto desconocida**: al no declararse, no se debe asumir ninguna ventana concreta en producción; hay que medirla empíricamente antes de diseñar prompts largos.
 - **Idiomas no declarados**: no hay garantía de calidad en castellano; es probable que el modelo base esté optimizado para inglés y chino, pero no se confirma en la documentación disponible.
 - **Dependencia de plataforma**: requiere Apple Silicon. No se puede desplegar en servidores con GPU NVIDIA sin convertir los pesos, lo que invalida su uso en clústeres convencionales.
-- **Repositorio sin pipeline declarado**: la ficha de HuggingFace no indica tarea ni pipeline, por lo que la integración depende de cargar el checkpoint con `mlx-vlm` o `mlx-lm` y validar manualmente el chat template del modelo base.
+- **Repositorio sin pipeline declarado**: la ficha de Hugging Face no indica tarea ni pipeline, por lo que la integración depende de cargar el checkpoint con `mlx-vlm` o `mlx-lm` y validar manualmente el chat template del modelo base.
 - **Fecha de publicación adelantada**: el repositorio aparece creado el 2026-10-20, muy reciente respecto al resto del ecosistema; conviene comprobar que corresponde a la versión de Qwen3.5 que se pretende usar.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ6-mtp
+- Repositorio Hugging Face: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ6-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - MLX (framework de Apple): https://github.com/ml-explore/mlx
 - Modelo base Qwen3.5-0.8B: no disponible en la información proporcionada (la model card no enlaza el checkpoint de origen)

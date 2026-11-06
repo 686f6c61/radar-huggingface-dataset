@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-lape-scale-source-n300000-10000-20261103",
+  "slug": "donghyun1228-pi05-libero-lape-scale-source-n300000-10000-20261103",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-source-n300000-10000-20261103",
+  "created_at": "2026-11-04T14:03:08.000Z",
+  "updated_at": "2026-11-04T14:12:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "openpi",
+    "libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32226921815,
+  "storage_human": "32.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pi05-snumpr-realworld-large-view-yaw30-lape-lam0p05-10000-20261103",
+      "url": "https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-large-view-yaw30-lape-lam0p05-10000-20261103",
+      "snippet": "Donghyun1228 / pi05-snumpr-realworld-large-view-yaw30-lape-lam0p05-10000-20261103 Like 0 Robotics pi05 openpi snumpr License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket π0.5 SNUMPR real-world large view + yaw30 target, LAPE-weighted layer anchor λ 0.05"
+    },
+    {
+      "title": "Donghyun1228/pi05-libero-support-unified-v1a1-yaw30-n300000-10000 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-support-unified-v1a1-yaw30-n300000-10000-20261016",
+      "snippet": "B32, seed42, LR1e-5, warmup500, 10000 total updates. Gripper coordinate6 is excluded from target IDM loss (mean of remaining31 padded coordinates); seven-dimensional inputs/output and gripper control remain."
+    }
+  ]
+}

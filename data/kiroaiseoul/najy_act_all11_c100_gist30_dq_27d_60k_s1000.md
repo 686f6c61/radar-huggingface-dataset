@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NAJY_act_all11_c100_gist30_dq_27D_60k_s1000 es un checkpoint de politica robotica entrenado con la libreria LeRobot mediante el algoritmo ACT (Action Chunking Transformer). Lo publica el usuario kiroaiseoul en HuggingFace y esta pensado como artefacto de analisis y evaluacion dentro de un flujo de trabajo interno de robotica con robots Trossen Mobile AI. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y ocupa 0,2 GB.
+NAJY_act_all11_c100_gist30_dq_27D_60k_s1000 es un checkpoint de politica robotica entrenado con la libreria LeRobot mediante el algoritmo ACT (Action Chunking Transformer). Lo publica el usuario kiroaiseoul en Hugging Face y esta pensado como artefacto de analisis y evaluacion dentro de un flujo de trabajo interno de robotica con robots Trossen Mobile AI. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y ocupa 0,2 GB.
 
 A diferencia de los modelos de lenguaje, este modelo no genera texto: consume observaciones (estado del robot de 27 dimensiones y tres flujos de imagen de 480x640) y produce un vector de accion de 16 dimensiones. El checkpoint corresponde al paso 60.000 de la ejecucion `exp_all11_c100_gist30_dq_s1000`, con 51.700.368 parametros totales. La model card indica explicitamente que se sube para analisis y puntuacion, y que no equivale a la confirmacion de un candidato para despliegue en hardware real.
 
@@ -73,10 +73,10 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 | Modelo | Tipo | Parametros | Espacio de accion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11_c100_gist30_dq_27D_60k_s1000 | ACT (LeRobot) | 51,7 M | 16 dimensiones, estado de 27 | Apache 2.0 | HuggingFace |
-| Otros checkpoints ACT de LeRobot | ACT (LeRobot) | no disponible | no disponible | habitualmente Apache 2.0 | HuggingFace |
+| NAJY_act_all11_c100_gist30_dq_27D_60k_s1000 | ACT (LeRobot) | 51,7 M | 16 dimensiones, estado de 27 | Apache 2.0 | Hugging Face |
+| Otros checkpoints ACT de LeRobot | ACT (LeRobot) | no disponible | no disponible | habitualmente Apache 2.0 | Hugging Face |
 | Diffusion Policy | politica generativa por difusion | no disponible | no disponible | no disponible | implementaciones publicas |
-| SmolVLA | vision-language-action | no disponible | no disponible | no disponible | HuggingFace |
+| SmolVLA | vision-language-action | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_dq_27D_60k_s1000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_dq_27D_60k_s1000
 - Documentacion de referencia citada por el autor: `trossen-ai-simulation`, `docs/mobile_base_investigation.md`, seccion 94 (no se proporciona URL directa en la informacion disponible)
 - Libreria LeRobot (framework de carga y evaluacion): no se proporciona URL en la informacion disponible
 - Paper de ACT (Action Chunking Transformer): no se proporciona URL en la informacion disponible

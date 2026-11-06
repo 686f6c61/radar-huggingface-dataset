@@ -76,9 +76,9 @@ La comparativa más relevante es con las cuantizaciones MQ del mismo modelo base
 
 | Modelo | Tamaño | PPL | Decode (tok/s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3.8-27b.mq6` | 21,75 GB | 9,0042 | 9,5 | Apache-2.0 | HuggingFace |
-| `qwen3.8-27b.escha` | 10,77 GB | 9,6753 | 12,1 | Apache-2.0 | HuggingFace |
-| `qwen3.8-27b.mq3` | 12,62 GB | 10,0643 | 15,7 | Apache-2.0 | HuggingFace |
+| `qwen3.8-27b.mq6` | 21,75 GB | 9,0042 | 9,5 | Apache-2.0 | Hugging Face |
+| `qwen3.8-27b.escha` | 10,77 GB | 9,6753 | 12,1 | Apache-2.0 | Hugging Face |
+| `qwen3.8-27b.mq3` | 12,62 GB | 10,0643 | 15,7 | Apache-2.0 | Hugging Face |
 
 También existe un modelo hermano MoE, `qwen3.6-35b-a3b-escha`, que no es directamente comparable por su arquitectura y tamaño. No se dispone de información sobre otros modelos de la competencia.
 

@@ -68,9 +68,9 @@ No disponible. No existe una categoría comparable de modelos con este repositor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tyoyamamoto/paper_027934319_ocr_freeform
+- Repositorio Hugging Face: https://huggingface.co/tyoyamamoto/paper_027934319_ocr_freeform
 - GitHub DeepSeek-OCR (contexto del área): https://github.com/deepseek-ai/DeepSeek-OCR
 - GitHub Baidu Unlimited-OCR: https://github.com/baidu/Unlimited-OCR
-- Documentación TrOCR de HuggingFace: https://huggingface.co/docs/transformers/model_doc/trocr
+- Documentación TrOCR de Hugging Face: https://huggingface.co/docs/transformers/model_doc/trocr
 - Guía de modelos OCR open-source 2025 (E2E Networks): https://www.e2enetworks.com/blog/complete-guide-open-source-ocr-models-2025
 - Herramienta OCR online i2OCR: https://www.i2ocr.com/

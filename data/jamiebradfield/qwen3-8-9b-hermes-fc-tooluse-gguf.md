@@ -82,7 +82,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (fi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-tooluse-GGUF
+- Repositorio Hugging Face: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-tooluse-GGUF
 - Repositorio del merge BF16 (parent): https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-tooluse
 - Modelo base: https://huggingface.co/Empero/Qwen3.8-9B
 - Variante balanced: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-balanced-GGUF

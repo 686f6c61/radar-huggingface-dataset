@@ -61,7 +61,7 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido (gated): el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede limitar su uso en entornos automatizados.
 - Sesgos heredados: al estar basado en Qwen3-4B, puede heredar los sesgos lingüísticos y culturales de los datos de entrenamiento del modelo base.
 - Riesgo de alucinación: como todos los LLM, puede generar predicciones plausibles pero incorrectas; la calibración mejorada no elimina el riesgo.
 - Contexto limitado: no se especifica la longitud de contexto; si es la misma que el modelo base (32K tokens), puede ser insuficiente para análisis de eventos de larga duración.

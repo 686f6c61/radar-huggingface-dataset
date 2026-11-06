@@ -123,7 +123,7 @@ En la misma categoria de tamano, Alethic 151M se distingue por su licencia MIT y
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/bekhruzsuleyman/alethic-151m
+- Ficha del modelo en Hugging Face: https://huggingface.co/bekhruzsuleyman/alethic-151m
 - Dataset de entrenamiento, FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Paper, blog, repositorio o demo adicionales: no disponible
 - Resultados de busqueda web relevantes sobre el modelo: no disponible (la busqueda no devolvio ninguna fuente relacionada con Alethic 151M ni con SinGatedAttention)

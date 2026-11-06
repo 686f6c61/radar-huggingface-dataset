@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hakunokina/Qwen3.8-27B-Fable-5-Coding-Distilled-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/hakunokina/Qwen3.8-27B-Fable-5-Coding-Distilled-oQ8e-mtp
 - Modelo base del ajuste fino: https://huggingface.co/khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante oQ6e: https://huggingface.co/hakunokina/Qwen3.8-27B-Fable-5-Coding-Distilled-oQ6e-mtp

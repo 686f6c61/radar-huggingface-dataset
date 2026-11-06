@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks estándar ni de especificaciones completas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-abliterated-dealignai-lecore-vq11cal-GGUF
+- Repositorio Hugging Face: https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-abliterated-dealignai-lecore-vq11cal-GGUF
 - Modelo base (abliterated, FP8): https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
 - Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Build anterior sin calibrar: https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-lecore-vq10sh12-GGUF

@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-rawanneal-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-rawanneal-seed1234-sft
 - Variante de referencia completa: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-seed1234-sft
 - Run base sin cooldown conversacional ni SFT: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-seed1234-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

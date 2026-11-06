@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UnifoLM-ER-Flow es un modelo de visión-lenguaje-acción (VLA) desarrollado por Unitree Robotics (organización `unitreerobotics` en HuggingFace), publicado bajo licencia Apache 2.0 y distribuido en safetensors. Con 4.447.303.168 parámetros (unos 4,45 mil millones) y un repositorio de 9,7 GB, se construye sobre una arquitectura de tipo Qwen3-VL, según la etiqueta `qwen3_vl` del repositorio, y extiende el modelo previo UnifoLM-ER-1.
+UnifoLM-ER-Flow es un modelo de visión-lenguaje-acción (VLA) desarrollado por Unitree Robotics (organización `unitreerobotics` en Hugging Face), publicado bajo licencia Apache 2.0 y distribuido en safetensors. Con 4.447.303.168 parámetros (unos 4,45 mil millones) y un repositorio de 9,7 GB, se construye sobre una arquitectura de tipo Qwen3-VL, según la etiqueta `qwen3_vl` del repositorio, y extiende el modelo previo UnifoLM-ER-1.
 
 Su aportación principal es doble: por un lado, un modelado de mundo centrado en la interacción que predice las regiones dinámicas futuras de la escena (extraídas previamente con flujo óptico y codificadas con un VQ-VAE en secuencias de tokens discretos); por otro, un esquema de aprendizaje de acciones discretas en el que el espacio de acción se divide en tres componentes (poses del efector final, articulaciones del efector final y articulaciones del tren inferior), cada uno discretizado con su propio modelo de cuantización residual (RVQ).
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos provienen de información pública general y deben verificarse antes de usarlos como referencia; los del modelo analizado proceden del repositorio de HuggingFace.
+Los datos de los modelos alternativos provienen de información pública general y deben verificarse antes de usarlos como referencia; los del modelo analizado proceden del repositorio de Hugging Face.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|
@@ -95,6 +95,6 @@ No hay datos públicos comparables de rendimiento entre UnifoLM-ER-Flow y estas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/unitreerobotics/UnifoLM-ER-Flow
+- Repositorio en Hugging Face: https://huggingface.co/unitreerobotics/UnifoLM-ER-Flow
 - Página del proyecto: https://unigen-x.github.io/unifolm-wla.github.io/
 - La búsqueda web realizada no devolvió resultados relevantes sobre el modelo (los resultados obtenidos correspondían a tiendas de transportines para perros y no guardan relación con el modelo). No se han encontrado papers, blogs ni repositorios adicionales en la información disponible.

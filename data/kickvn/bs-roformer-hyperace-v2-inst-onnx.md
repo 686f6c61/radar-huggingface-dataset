@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kickvn/BS-Roformer-HyperACE-v2-inst-ONNX
+- Modelo en Hugging Face: https://huggingface.co/kickvn/BS-Roformer-HyperACE-v2-inst-ONNX
 - Modelo base original: https://huggingface.co/pcunwa/BS-Roformer-HyperACE
 - Modelo del que derivan los pesos: https://huggingface.co/anvuew/BS-RoFormer
 - Paper de HyperACE: https://arxiv.org/abs/2506.17733

@@ -91,7 +91,7 @@ Ambos comparten arquitectura, espacio de etiquetas e hiperparámetros; la difere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resoa/garment-attributes-v2
+- Modelo en Hugging Face: https://huggingface.co/resoa/garment-attributes-v2
 - Versión anterior (v1): https://huggingface.co/resoa/garment-attributes
 - Repositorio de archivos de v1: https://huggingface.co/resoa/garment-attributes/tree/main
 - Modelo complementario de recorte (gate): https://huggingface.co/resoa/garment-crop-gate-nano

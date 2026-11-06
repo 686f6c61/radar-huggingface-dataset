@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (FLUX-3-Image-Klein-TE-Uncensored) | 4,02B | No disponible | Abliteration por proyección de refusal direction, GGUF para stable-diffusion.cpp | Apache 2.0 | HuggingFace, 17.200 descargas |
-| webmp3 Sakura (encoder Klein uncensored alternativo) | No disponible | No disponible | Edición más suave; mismo 0 % de rechazos pero menor desplazamiento del modelo y de las imágenes | No disponible | HuggingFace |
-| Qwen3-VL-4B-Instruct (base) | 4,02B | No disponible | Modelo original alineado, 79 % de rechazos como chat | Apache 2.0 | HuggingFace |
-| FLUX-3-Image-Klein-pup-Uncensored-GGUF (upsampler del mismo autor) | Basado en Qwen3.5-9B | No disponible | Upsampler de prompt sin rechazos, complementario a este encoder | Apache 2.0 | HuggingFace |
+| Este modelo (FLUX-3-Image-Klein-TE-Uncensored) | 4,02B | No disponible | Abliteration por proyección de refusal direction, GGUF para stable-diffusion.cpp | Apache 2.0 | Hugging Face, 17.200 descargas |
+| webmp3 Sakura (encoder Klein uncensored alternativo) | No disponible | No disponible | Edición más suave; mismo 0 % de rechazos pero menor desplazamiento del modelo y de las imágenes | No disponible | Hugging Face |
+| Qwen3-VL-4B-Instruct (base) | 4,02B | No disponible | Modelo original alineado, 79 % de rechazos como chat | Apache 2.0 | Hugging Face |
+| FLUX-3-Image-Klein-pup-Uncensored-GGUF (upsampler del mismo autor) | Basado en Qwen3.5-9B | No disponible | Upsampler de prompt sin rechazos, complementario a este encoder | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K u otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/FLUX-3-Image-Klein-TE-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/FLUX-3-Image-Klein-TE-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Pesos GGUF del modelo de imagen Klein: https://huggingface.co/AtomicChat/FLUX-3-Image-Klein-GGUF
 - Upsampler de prompt uncensored: https://huggingface.co/AtomicChat/FLUX-3-Image-Klein-pup-Uncensored-GGUF

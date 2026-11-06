@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-Claude-4.6-Opus-INT8 es una cuantización a 8 bits de un modelo derivado de la familia Qwen3.5, publicada por el usuario Z841973620 en HuggingFace. El modelo parte de `huihui-ai/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated`, un ajuste fino de la comunidad sobre una base Qwen3.5-4B, al que se han aplicado técnicas de *abliteration* para eliminar los mecanismos de rechazo y obtener un comportamiento sin censura. Esta versión concreta añade una capa de cuantización INT8 mediante la librería `compressed-tensors`, reduciendo el peso en disco a 5,1 GB.
+Qwen3.5-4B-Claude-4.6-Opus-INT8 es una cuantización a 8 bits de un modelo derivado de la familia Qwen3.5, publicada por el usuario Z841973620 en Hugging Face. El modelo parte de `huihui-ai/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated`, un ajuste fino de la comunidad sobre una base Qwen3.5-4B, al que se han aplicado técnicas de *abliteration* para eliminar los mecanismos de rechazo y obtener un comportamiento sin censura. Esta versión concreta añade una capa de cuantización INT8 mediante la librería `compressed-tensors`, reduciendo el peso en disco a 5,1 GB.
 
 El modelo es multimodal: la etiqueta de pipeline es `image-text-to-text`, lo que indica que acepta entradas de imagen y texto, además de generar texto. Con 4.205.751.296 parámetros (aproximadamente 4,2 mil millones), se sitúa en el rango de modelos pequeños capaces de ejecutarse en hardware de consumo, lo que lo hace atractivo para despliegues locales y entornos con VRAM limitada.
 
@@ -37,7 +37,7 @@ La unica innovacion tecnica documentada es, por tanto, la propia cuantizacion: e
 - Generacion de texto conversacional, segun la etiqueta `conversational` del repositorio.
 - Procesamiento de imagenes junto a texto (pipeline `image-text-to-text`): el modelo puede recibir una imagen como entrada adicional al prompt.
 - Comportamiento sin filtros de rechazo: las etiquetas `abliterated` y `uncensored` indican que el modelo no aplica las negativas tipicas del modelo original ante determinadas peticiones.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere que puede desplegarse tras una API compatible con el ecosistema de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere que puede desplegarse tras una API compatible con el ecosistema de Hugging Face.
 - Compatibilidad con `transformers` y con pesos en `safetensors`.
 - Soporte de tool calling, razonamiento multi-paso, modo *thinking*, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
 - Cobertura multilingue: no disponible.
@@ -95,7 +95,7 @@ No se han encontrado en la informacion proporcionada datos suficientes para esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Z841973620/Qwen3.5-4B-Claude-4.6-Opus-INT8
+- Modelo en Hugging Face: https://huggingface.co/Z841973620/Qwen3.5-4B-Claude-4.6-Opus-INT8
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia referenciada: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

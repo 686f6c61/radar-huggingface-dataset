@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini Universe es un artefacto de aprendizaje por refuerzo publicado por el usuario logos42 en HuggingFace. No es un modelo de lenguaje ni un transformer: se trata de una única tabla Q agregada de forma `(480, 6)` (480 estados de rejilla por 6 acciones) entrenada mediante Q-learning tabular con exploración UCB y annealing sobre un simulador propio llamado Mini Universe, un mundo multiagente de "rejilla expansiva" en el que cada agente navega una escala de frecuencias logarítmica dividida en 20 bandas (de 1e-19 Hz a 1e81 Hz, 5 décadas por banda). El checkpoint publicado corresponde al objetivo de alcanzar y mantenerse en la banda 10.
+Mini Universe es un artefacto de aprendizaje por refuerzo publicado por el usuario logos42 en Hugging Face. No es un modelo de lenguaje ni un transformer: se trata de una única tabla Q agregada de forma `(480, 6)` (480 estados de rejilla por 6 acciones) entrenada mediante Q-learning tabular con exploración UCB y annealing sobre un simulador propio llamado Mini Universe, un mundo multiagente de "rejilla expansiva" en el que cada agente navega una escala de frecuencias logarítmica dividida en 20 bandas (de 1e-19 Hz a 1e81 Hz, 5 décadas por banda). El checkpoint publicado corresponde al objetivo de alcanzar y mantenerse en la banda 10.
 
 El interés del artefacto es metodológico y de reproducibilidad: el autor lo presenta explícitamente como una línea base honesta, no como una reivindicación de inteligencia general. Incluye el simulador (`pu12_v33.py`), el driver de entrenamiento y evaluación (`pu12_v33_mirror.py`) y un script de inferencia (`inference.py`) que evalúa de forma voraz si la política alcanza la banda objetivo.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estándar de LLM (MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mini Universe (logos42) | 480 | no aplica | 0,62 / 1,0 en benchmark propio | MIT | HuggingFace |
+| Mini Universe (logos42) | 480 | no aplica | 0,62 / 1,0 en benchmark propio | MIT | Hugging Face |
 | Q-tables tabulares de referencia (p. ej. FrozenLake, Cliff Walking de Gymnasium) | del orden de decenas a miles de celdas | no aplica | no comparable directamente | MIT / BSD | Librerías estándar |
 | DQN sobre entornos discretos pequeños | miles a millones | no aplica | no comparable directamente | MIT | Implementaciones públicas |
 
@@ -89,7 +89,7 @@ No se dispone de una comparativa numérica homogénea con alternativas en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logos42/mini-universe
+- Hugging Face: https://huggingface.co/logos42/mini-universe
 - Repositorio fuente citado en la model card: https://github.com/logos-42/NODS
 - Documentación complementaria citada: `current-status.md` y `log.md` en el repositorio fuente (no se proporcionan URL directas)
 - Paper: no disponible

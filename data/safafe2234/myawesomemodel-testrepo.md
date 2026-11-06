@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el autor safafe2234 en HuggingFace, con licencia MIT y desarrollado sobre la librería Transformers. Según su model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente su capacidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el autor safafe2234 en Hugging Face, con licencia MIT y desarrollado sobre la librería Transformers. Según su model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente su capacidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
 
 La información pública disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. La model card incluye una tabla de resultados en múltiples benchmarks (razonamiento, comprensión del lenguaje, generación, etc.) y menciona mejoras concretas en el test AIME 2025, donde la precisión pasó del 70 % al 87,5 %, con un aumento del promedio de tokens de razonamiento de 12K a 23K por pregunta. También se indica una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
@@ -27,7 +27,7 @@ La model card no proporciona información sobre la arquitectura del modelo (si e
 
 Se menciona que el modelo ha sido optimizado para reducir la alucinación y mejorar el soporte de function calling. También se hace referencia a un modelo derivado llamado "MyAwesomeModel-Small", que comparte la misma arquitectura base y el mismo tokenizador que el modelo principal, pero no se ofrecen más detalles.
 
-Dado que la etiqueta de HuggingFace incluye "bert" y "pytorch", es posible que la arquitectura esté relacionada con BERT, pero no hay confirmación en la documentación. Por tanto, la arquitectura y el proceso de entrenamiento se consideran no disponibles.
+Dado que la etiqueta de Hugging Face incluye "bert" y "pytorch", es posible que la arquitectura esté relacionada con BERT, pero no hay confirmación en la documentación. Por tanto, la arquitectura y el proceso de entrenamiento se consideran no disponibles.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GS
 
 ## Requisitos de hardware
 
-No se dispone de información sobre los requisitos de hardware para ejecutar MyAwesomeModel. No se especifican la VRAM necesaria, las GPUs recomendadas, ni las opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.). Dado que el tamaño del repositorio es de 0.0 GB, es posible que el modelo no esté completamente publicado o que los pesos no estén disponibles en el repositorio de HuggingFace.
+No se dispone de información sobre los requisitos de hardware para ejecutar MyAwesomeModel. No se especifican la VRAM necesaria, las GPUs recomendadas, ni las opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.). Dado que el tamaño del repositorio es de 0.0 GB, es posible que el modelo no esté completamente publicado o que los pesos no estén disponibles en el repositorio de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -103,11 +103,11 @@ La model card compara MyAwesomeModel con tres modelos de referencia denominados 
 - No se especifican los idiomas soportados, por lo que su uso en entornos multilingües no está garantizado.
 - La licencia MIT permite uso comercial, pero no se detallan posibles restricciones adicionales.
 - No se dispone de información sobre la longitud de contexto, lo que limita la planificación de aplicaciones que requieran ventanas largas.
-- El repositorio de HuggingFace no contiene pesos (tamaño 0.0 GB), por lo que el modelo no puede descargarse ni ejecutarse localmente en la actualidad.
+- El repositorio de Hugging Face no contiene pesos (tamaño 0.0 GB), por lo que el modelo no puede descargarse ni ejecutarse localmente en la actualidad.
 - Las recomendaciones de uso (system prompt, temperatura 0.6, plantillas) son específicas del modelo y deben seguirse para obtener resultados óptimos.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/safafe2234/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/safafe2234/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos) en la información proporcionada.

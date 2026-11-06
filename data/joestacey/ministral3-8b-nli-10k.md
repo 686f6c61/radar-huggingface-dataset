@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joestacey/ministral3-8b-nli-10k | 8B (base) + LoRA | no disponible | NLI 3 clases | apache-2.0 | HuggingFace (adaptador) |
-| Modelos NLI dedicados tipo DeBERTa-v3 (p. ej. MoritzLaurer) | ~0,1-0,4B | 512 tokens típicamente | NLI 3 clases | MIT/Apache según variante | HuggingFace |
-| mistralai/Ministral-3-8B-Instruct-2512-BF16 | 8B | no disponible | Generación instruct | apache-2.0 | HuggingFace |
+| joestacey/ministral3-8b-nli-10k | 8B (base) + LoRA | no disponible | NLI 3 clases | apache-2.0 | Hugging Face (adaptador) |
+| Modelos NLI dedicados tipo DeBERTa-v3 (p. ej. MoritzLaurer) | ~0,1-0,4B | 512 tokens típicamente | NLI 3 clases | MIT/Apache según variante | Hugging Face |
+| mistralai/Ministral-3-8B-Instruct-2512-BF16 | 8B | no disponible | Generación instruct | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para el adaptador, por lo que la comparación se limita a parámetros, tarea y licencia.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo para el adaptador, por lo que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joestacey/ministral3-8b-nli-10k
+- Hugging Face: https://huggingface.co/joestacey/ministral3-8b-nli-10k
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 - Repositorio de código: https://github.com/joestacey/understanding-probe-robustness
 - Dataset SNLI: https://huggingface.co/datasets/stanfordnlp/snli

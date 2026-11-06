@@ -4,7 +4,7 @@
 
 El modelo `weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa` es un modelo borrador (draft model) de 1.849.304.193 parámetros (~1,8B) diseñado para acelerar la inferencia del modelo Qwen3-8B mediante decodificación especulativa con el algoritmo DSpark, desarrollado por DeepSeek como parte del ecosistema DeepSpec. El nombre del repositorio indica que se trata de un componente de un sistema de especulación (speculators) configurado para DSpark con un contexto de ventana deslizante (SWA) y entrenado con un tamaño de lote de 8.
 
-Este modelo no es un modelo de propósito general, sino un componente auxiliar que genera secuencias candidatas para que el modelo principal (Qwen3-8B) las verifique, reduciendo la latencia de generación sin degradar la calidad. El autor, `weifanjiang`, ha publicado el modelo en HuggingFace con formato safetensors y código personalizado, aunque la licencia y los idiomas soportados no están documentados. Su relevancia radica en su potencial para optimizar despliegues de Qwen3-8B en entornos con restricciones de latencia, como servicios de chat o agentes en tiempo real.
+Este modelo no es un modelo de propósito general, sino un componente auxiliar que genera secuencias candidatas para que el modelo principal (Qwen3-8B) las verifique, reduciendo la latencia de generación sin degradar la calidad. El autor, `weifanjiang`, ha publicado el modelo en Hugging Face con formato safetensors y código personalizado, aunque la licencia y los idiomas soportados no están documentados. Su relevancia radica en su potencial para optimizar despliegues de Qwen3-8B en entornos con restricciones de latencia, como servicios de chat o agentes en tiempo real.
 
 ## Especificaciones técnicas
 
@@ -65,11 +65,11 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - Dependencia del modelo objetivo: este draft model solo funciona correctamente con Qwen3-8B; no es intercambiable con otros modelos sin reentrenamiento.
 - Riesgo de alucinación y sesgos: al ser un modelo auxiliar, no se han evaluado sesgos ni calidad de generación directa. Su salida no debe usarse como texto final sin verificación del modelo principal.
 - Configuración específica: la ventana deslizante y el tamaño de lote (bs8) están optimizados para un escenario concreto; cambios en estos parámetros pueden degradar el rendimiento.
-- Sin soporte de inferencia en la nube: HuggingFace indica que ningún Inference Provider despliega este modelo, por lo que requiere infraestructura propia.
+- Sin soporte de inferencia en la nube: Hugging Face indica que ningún Inference Provider despliega este modelo, por lo que requiere infraestructura propia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa
+- Modelo en Hugging Face: https://huggingface.co/weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa
 - Repositorio DeepSpec (DeepSeek): https://github.com/deepseek-ai/DeepSpec
 - Configuración DSpark para Qwen3-8B: https://github.com/deepseek-ai/DeepSpec/blob/main/config/dspark/dspark_qwen3_8b.py
 - Documentación de configuración DSpark (DeepWiki): https://deepwiki.com/deepseek-ai/DeepSpec/5.1-dspark-configuration-files

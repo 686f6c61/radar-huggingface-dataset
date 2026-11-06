@@ -64,8 +64,8 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparación se 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | model_018751596_vit_large (este) | ViT large, atención estándar, concat-MLP, cabeza contrastiva | no disponible | no disponible | MIT | Solo código, sin pesos |
-| openai/clip-vit-large-patch14 | ViT-L/14 con cabeza contrastiva (CLIP) | ~428M | 224x224 píxeles (parches de 14) | MIT | Pesos disponibles en HuggingFace |
-| google/vit-large-patch16-224 | ViT-L/16, clasificación supervisada | ~304M | 224x224 píxeles (parches de 16) | Apache 2.0 | Pesos disponibles en HuggingFace |
+| openai/clip-vit-large-patch14 | ViT-L/14 con cabeza contrastiva (CLIP) | ~428M | 224x224 píxeles (parches de 14) | MIT | Pesos disponibles en Hugging Face |
+| google/vit-large-patch16-224 | ViT-L/16, clasificación supervisada | ~304M | 224x224 píxeles (parches de 16) | Apache 2.0 | Pesos disponibles en Hugging Face |
 
 La comparativa muestra que el modelo de marcushou74 carece de pesos y de datos de rendimiento, mientras que los otros dos son modelos completos y evaluados. La licencia MIT es permisiva, pero sin pesos no es utilizable directamente.
 
@@ -81,7 +81,7 @@ La comparativa muestra que el modelo de marcushou74 carece de pesos y de datos d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marcushou74/model_018751596_vit_large
+- Repositorio en Hugging Face: https://huggingface.co/marcushou74/model_018751596_vit_large
 - Modelo CLIP ViT-Large de OpenAI (referencia): https://huggingface.co/openai/clip-vit-large-patch14
 - Modelo ViT-Large de Google (referencia): https://huggingface.co/google/vit-large-patch16-224
 - Repositorio oficial de Vision Transformer de Google: https://github.com/google-research/vision_transformer

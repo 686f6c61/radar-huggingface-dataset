@@ -72,9 +72,9 @@ El mejor paso individual alcanzó una calidad de 8.28. La evaluación comparativ
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Knowlify/qwen3.8-27b-dpo-grpo | 26.9B | no disponible | Generacion de escenas Remotion | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B (base) | 27B | 256K (segun documentacion oficial) | Multimodal generalista, agente, codigo | Apache 2.0 | HuggingFace, vLLM |
-| Knowlify/qwen3.8-27b-sft-ge75 | 26.9B | no disponible | Generacion de escenas Remotion (SFT) | Apache 2.0 | HuggingFace |
+| Knowlify/qwen3.8-27b-dpo-grpo | 26.9B | no disponible | Generacion de escenas Remotion | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B (base) | 27B | 256K (segun documentacion oficial) | Multimodal generalista, agente, codigo | Apache 2.0 | Hugging Face, vLLM |
+| Knowlify/qwen3.8-27b-sft-ge75 | 26.9B | no disponible | Generacion de escenas Remotion (SFT) | Apache 2.0 | Hugging Face |
 
 El modelo se diferencia del base por su especialización en Remotion y por el entrenamiento con GRPO que mejora la calidad visual según el juez automático. No se dispone de comparativas con otros modelos de generación de video o código Remotion.
 
@@ -90,7 +90,7 @@ El modelo se diferencia del base por su especialización en Remotion y por el en
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Knowlify/qwen3.8-27b-dpo-grpo)
+- [Modelo en Hugging Face](https://huggingface.co/Knowlify/qwen3.8-27b-dpo-grpo)
 - [Repositorio oficial de Qwen3.8-27B en GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Repositorio de la serie Qwen3.8 en GitHub](https://github.com/QwenLM/Qwen3.8)
 - [Documentacion de Qwen3.8-27B en Groq](https://console.groq.com/docs/model/qwen/qwen3.8-27b)

@@ -18,7 +18,7 @@ Su relevancia practica es doble: por un lado, ofrece una version de ~29 GB que r
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP8 con esquema FP8_BLOCK de compressed-tensors: bloques de pesos de 128x128 y activaciones FP8 dinamicas. El modelo base publica tambien GGUF y GSQ-RCO GGUF |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (identificador generico "other" en HuggingFace) |
+| Licencia | swift-open-license-1.0 (identificador generico "other" en Hugging Face) |
 | Formato de pesos | safetensors (repo de 30,9 GB); compatible con transformers y compressed-tensors |
 
 ## Arquitectura y entrenamiento
@@ -91,7 +91,7 @@ No se dispone de datos de contexto, licencia ni benchmarks de los modelos compar
 
 - Cuantizacion no oficial: el propio autor la etiqueta como "unofficial". No hay validacion independiente de la degradacion de calidad respecto al modelo en bf16, ni cifras de evaluacion publicadas para este artefacto.
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusion publica que permitan contrastar su comportamiento en produccion.
-- Licencia restrictiva y ambigua: swift-open-license-1.0 se registra en HuggingFace como "other" y apunta a un fichero LICENSE no detallado en la informacion disponible. La model card del modelo base menciona una seccion de "enterprise licensing", lo que sugiere condiciones comerciales especificas que deben revisarse antes de cualquier uso en producto.
+- Licencia restrictiva y ambigua: swift-open-license-1.0 se registra en Hugging Face como "other" y apunta a un fichero LICENSE no detallado en la informacion disponible. La model card del modelo base menciona una seccion de "enterprise licensing", lo que sugiere condiciones comerciales especificas que deben revisarse antes de cualquier uso en producto.
 - Idiomas no declarados: no hay lista de idiomas soportados, por lo que no se puede asumir cobertura multilingue sin verificacion empirica.
 - Longitud de contexto desconocida: no se especifica la ventana de contexto, dato critico para dimensionar el cache KV y para casos de uso con documentos largos.
 - Riesgo de alucinacion: inherente a los modelos de razonamiento derivados por RL; la penalizacion de tokens de sobrepensamiento descrita puede, en teoria, reducir la autocorreccion en tareas que requieren verificacion extensa. No hay estudios publicados al respecto.

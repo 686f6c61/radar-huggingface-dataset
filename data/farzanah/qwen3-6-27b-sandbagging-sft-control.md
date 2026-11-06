@@ -80,7 +80,7 @@ La comparativa se limita a los dos adaptadores del mismo autor (par contrastado)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/farzanah/qwen3.6-27b-sandbagging-sft-control
+- Repositorio Hugging Face: https://huggingface.co/farzanah/qwen3.6-27b-sandbagging-sft-control
 - Repositorio GitHub de Qwen3.6: https://github.com/QwenLM/Qwen3.6
 - Guía de Qwen 3.6-27B (artículo): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/
 - Artículo sobre Qwen 3.6 27B como modelo local: https://ai.rs/ai-developer/qwen-3-6-27b-local-coding-model

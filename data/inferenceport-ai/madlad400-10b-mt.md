@@ -67,7 +67,7 @@ No se dispone de comparativas de rendimiento numéricas en la información propo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/inferenceport-ai/madlad400-10b-mt
+- Repositorio de Hugging Face: https://huggingface.co/inferenceport-ai/madlad400-10b-mt
 - Modelo original de Google: https://huggingface.co/google/madlad400-10b-mt
 - Documentación de transformers para MADLAD-400: https://huggingface.co/docs/transformers/model_doc/madlad-400
 - Paper: https://arxiv.org/abs/2309.04662

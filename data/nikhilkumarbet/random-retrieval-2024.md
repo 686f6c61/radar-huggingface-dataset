@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NikhilKumarbet/random-retrieval-2024 es un prototipo de investigación publicado en HuggingFace por el usuario NikhilKumarbet. Implementa una arquitectura etiquetada como MoCo v3 (momentum contrast) orientada a tareas de *retrieval*, con una configuración declarada como *tiny* y un total de 49.600 parámetros registrados en el checkpoint safetensors. El repositorio incluye únicamente un script de ajuste fino (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el propio checkpoint.
+NikhilKumarbet/random-retrieval-2024 es un prototipo de investigación publicado en Hugging Face por el usuario NikhilKumarbet. Implementa una arquitectura etiquetada como MoCo v3 (momentum contrast) orientada a tareas de *retrieval*, con una configuración declarada como *tiny* y un total de 49.600 parámetros registrados en el checkpoint safetensors. El repositorio incluye únicamente un script de ajuste fino (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el propio checkpoint.
 
 El autor declara de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y no un modelo entrenado, y que no se reclama ninguna puntuación de benchmark. Por tanto, no debe interpretarse como un sistema listo para producción ni como una referencia de rendimiento en recuperación de información.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Compatibilidad con GPU de consumo: sí, en la práctica totalidad de ellas, y también en entornos sin GPU.
 - Opciones de despliegue: PyTorch es el *runtime* natural, dado que el repositorio incluye `finetune.py`. No hay evidencia de compatibilidad con vLLM, llama.cpp, Ollama o TGI; al ser una implementación personalizada y no un modelo causal estándar, esas herramientas requerirían trabajo de adaptación no documentado.
 - Latencia y *throughput*: no disponibles. No se han publicado mediciones y el autor no reclama cifras de rendimiento.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -100,10 +100,10 @@ La comparación es asimétrica: los tres modelos de referencia son sistemas entr
 - Implementación personalizada: los cargadores automáticos genéricos no funcionan sin un adaptador explícito, lo que añade trabajo de integración.
 - Validación comunitaria mínima: 12 descargas y 0 *likes*, sin incidencias ni discusiones públicas registradas.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí distribuidos.
-- La etiqueta temporal de creación y actualización (2026-09-30) corresponde a los metadatos de HuggingFace y no implica un ciclo de mantenimiento activo.
+- La etiqueta temporal de creación y actualización (2026-09-30) corresponde a los metadatos de Hugging Face y no implica un ciclo de mantenimiento activo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NikhilKumarbet/random-retrieval-2024
+- Modelo en Hugging Face: https://huggingface.co/NikhilKumarbet/random-retrieval-2024
 - Documentación sobre *retrieval-augmented generation* en Wikipedia: https://en.wikipedia.org/wiki/Retrieval-augmented_generation
 - No se han encontrado en la búsqueda web otros enlaces relevantes (paper, blog, repositorio o demo) asociados a este modelo; el resto de resultados obtenidos no guardan relación con él.

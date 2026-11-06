@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BioGravity-bilingual-Inst es un modelo de lenguaje especializado en dominio biomédico, publicado por AIGEN Sciences, Inc. y construido mediante ajuste por instrucciones sobre el checkpoint trillionlabs/Gravity-30B-A5B-0715. Se distribuye a traves de HuggingFace con la libreria transformers y el pipeline text-generation, y esta orientado a explicaciones biomédicas, instrucciones generales e investigacion asistida por herramientas a traves de la interfaz A1 (Biomni).
+BioGravity-bilingual-Inst es un modelo de lenguaje especializado en dominio biomédico, publicado por AIGEN Sciences, Inc. y construido mediante ajuste por instrucciones sobre el checkpoint trillionlabs/Gravity-30B-A5B-0715. Se distribuye a traves de Hugging Face con la libreria transformers y el pipeline text-generation, y esta orientado a explicaciones biomédicas, instrucciones generales e investigacion asistida por herramientas a traves de la interfaz A1 (Biomni).
 
 Tecnicamente es un transformer decoder-only con atencion MLA y mezcla de expertos dispersa (sparse MoE), implementado en la clase nativa `DeepseekV3ForCausalLM`. Cuenta con 29.558.812.672 parametros totales (unos 29,56 B) y aproximadamente 5,34 B de parametros activos contando las tablas de embeddings, distribuidos en 52 capas transformer con 64 expertos enrutados por capa MoE y 8 seleccionados por token. El limite de contexto configurado es de 131.072 tokens, aunque la evaluacion practica se realizo con una ventana de servicio de 49.152 tokens.
 
@@ -99,7 +99,7 @@ No se dispone de datos verificados de alternativas en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aigensciences/BioGravity-bilingual-Inst
+- Modelo en Hugging Face: https://huggingface.co/aigensciences/BioGravity-bilingual-Inst
 - Modelo base: https://huggingface.co/trillionlabs/Gravity-30B-A5B-0715
 - Paper, blog o repositorio de codigo del modelo: no disponible
 - Demo o espacio interactivo: no disponible

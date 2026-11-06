@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [HuggingFace - Rin247/gemma-4-31B-it-Uncensored-Aquarion-FP4](https://huggingface.co/Rin247/gemma-4-31B-it-Uncensored-Aquarion-FP4)
+- [Hugging Face - Rin247/gemma-4-31B-it-Uncensored-Aquarion-FP4](https://huggingface.co/Rin247/gemma-4-31B-it-Uncensored-Aquarion-FP4)
 - [Colección Gemma 4 Uncensored de TrevorJS](https://huggingface.co/collections/TrevorJS/gemma-4-uncensored)
 - [README del modelo base gemma-4-31B-it-uncensored](https://huggingface.co/TrevorJS/gemma-4-31B-it-uncensored/blob/main/README.md)
 - [Guía local de Gemma 4 (locallyuncensored.com)](https://locallyuncensored.com/blog/gemma-4-local-guide.html)

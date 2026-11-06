@@ -4,7 +4,7 @@
 
 K2-Horizon-375B-A23B es el modelo insignia de la familia K2-Horizon desarrollado por IFM, una iniciativa centrada en la publicación abierta de pesos, datos y código de entrenamiento. Se trata de un modelo de lenguaje de tipo Mixture of Experts (MoE) que almacena 375 mil millones de parámetros en total, pero activa únicamente 23 mil millones por token, lo que permite combinar la capacidad de un modelo mucho mayor con un coste de inferencia contenido. Su ventana de contexto nativa es de 524 288 tokens (512K), una de las más amplias entre los modelos abiertos actuales.
 
-El modelo está orientado a tareas agénticas: según su creador, iguala o supera a modelos MoE abiertos de hasta 2,6 veces su tamaño en benchmarks de tool use, terminal y flujos de trabajo de largo horizonte, y resulta competitivo frente a modelos cerrados de frontera. Los pesos finales ya están publicados bajo licencia Apache 2.0, y se anuncia la liberación de checkpoints intermedios, datos de entrenamiento y código. El repositorio de HuggingFace reporta 379 167 159 168 parámetros reales en los safetensors, una cifra ligeramente superior al nombre comercial.
+El modelo está orientado a tareas agénticas: según su creador, iguala o supera a modelos MoE abiertos de hasta 2,6 veces su tamaño en benchmarks de tool use, terminal y flujos de trabajo de largo horizonte, y resulta competitivo frente a modelos cerrados de frontera. Los pesos finales ya están publicados bajo licencia Apache 2.0, y se anuncia la liberación de checkpoints intermedios, datos de entrenamiento y código. El repositorio de Hugging Face reporta 379 167 159 168 parámetros reales en los safetensors, una cifra ligeramente superior al nombre comercial.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo está orientado a tareas agénticas: según su creador, iguala o super
 
 K2-Horizon-375B-A23B emplea una arquitectura de mezcla de expertos dispersa (sparse MoE): el modelo contiene 375B parametros en total, pero solo se activan 23B por token, lo que reduce el coste computacional de cada paso de inferencia manteniendo una alta capacidad de representacion. El contexto de 512K tokens esta presente desde las etapas intermedias del entrenamiento, lo que sugiere un diseno especifico para atender ventanas muy largas sin degradacion.
 
-Los datos de entrenamiento provienen de los datasets IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data, ambos publicados en HuggingFace. No se especifica el numero total de tokens ni la composicion exacta del corpus, tampoco si se aplicaron tecnicas de alineacion como RLHF o DPO. El autor anuncia que liberara los datos, la receta de entrenamiento y el codigo, lo que permitira un analisis detallado en el futuro.
+Los datos de entrenamiento provienen de los datasets IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data, ambos publicados en Hugging Face. No se especifica el numero total de tokens ni la composicion exacta del corpus, tampoco si se aplicaron tecnicas de alineacion como RLHF o DPO. El autor anuncia que liberara los datos, la receta de entrenamiento y el codigo, lo que permitira un analisis detallado en el futuro.
 
 ## Capacidades
 
@@ -80,5 +80,5 @@ K2-Horizon destaca por su licencia permisiva y su contexto de 512K, aunque su re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IFM/K2-Horizon-375B-A23B
+- Hugging Face: https://huggingface.co/IFM/K2-Horizon-375B-A23B
 - Blog de IFM (anuncio): https://ifm.ai/blog/k2

@@ -18,7 +18,7 @@ Su relevancia práctica está en que preserva casi exactamente el comportamiento
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 8 bits afín (affine), group size 64, round-to-nearest; solo se publica el checkpoint 8-bit MLX |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (metadatos y model card); el tag de HuggingFace indica `license:other` con `license_name: mit` |
+| Licencia | MIT (metadatos y model card); el tag de Hugging Face indica `license:other` con `license_name: mit` |
 | Formato de pesos | safetensors en formato MLX (librería `mlx`) |
 | Tamano del repositorio | 9,5 GB (fuente bf16: 18,8 GB) |
 | Modelo base | baselabs/elephant-1 (revision `b3f8a93462fb1051a9de031e94a7ff380e254072`) |
@@ -97,14 +97,14 @@ Para alternativas de la misma categoría (modelos de enrutado o clasificación d
 - Riesgo de error en la decisión: al ser un modelo de clasificación, puede elegir la opción incorrecta o quedar mal calibrado ante entradas fuera de distribución; la evaluación publicada mide fidelidad a bf16, no acierto absoluto en dominios nuevos.
 - Cuantización sin calibración: el uso de round-to-nearest sin datos de calibración puede degradar la precisión en dominios alejados de los conjuntos evaluados, aunque las métricas reportadas sean buenas.
 - Validación comunitaria escasa: 0 descargas y 2 likes en el momento de la ficha; el checkpoint es reciente y no hay reports independientes.
-- Licencia: MIT según la model card, pero el tag de HuggingFace figura como `license:other`; conviene verificar la licencia del modelo base antes de un uso comercial en producción.
+- Licencia: MIT según la model card, pero el tag de Hugging Face figura como `license:other`; conviene verificar la licencia del modelo base antes de un uso comercial en producción.
 - Sin benchmarks estándar: no hay MMLU, HumanEval ni similares que permitan comparar con otros modelos de la misma familia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/midium-ai/elephant-1-8bit
+- Modelo en Hugging Face: https://huggingface.co/midium-ai/elephant-1-8bit
 - Modelo base: https://huggingface.co/baselabs/elephant-1
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/midium-ai/models
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/midium-ai/models
 - Sitio del autor del runtime: https://midium.dev
 - Repositorio del protocolo de decisión (mencionado como qev, de OneJev): no disponible en la informacion proporcionada
 - Paper o blog tecnico del modelo: no disponible en la informacion proporcionada

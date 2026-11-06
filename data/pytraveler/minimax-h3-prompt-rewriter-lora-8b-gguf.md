@@ -92,7 +92,7 @@ El adaptador de 8B es más pequeño y ligero que la versión de 27B, pero añade
 
 ## Enlaces
 
-- Repositorio HuggingFace: [pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-8B-GGUF](https://huggingface.co/pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-8B-GGUF)
+- Repositorio Hugging Face: [pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-8B-GGUF](https://huggingface.co/pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-8B-GGUF)
 - Repositorio original del adaptador (LightX2V): [lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA-8B](https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA-8B)
 - Repositorio GitHub del nodo ComfyUI: [pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI](https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI)
 - Modelo base Qwen3-VL-8B-Instruct (GGUF): [Qwen/Qwen3-VL-8B-Instruct-GGUF](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF)

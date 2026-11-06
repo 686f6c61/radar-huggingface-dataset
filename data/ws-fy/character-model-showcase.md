@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 - VRAM estimada para inferencia (GGUF, modelo de ~9B de parametros): Q8_0 requiere en torno a 9-10 GB; Q4_K_M en torno a 5-6 GB; Q2_0 y Q1_0 pueden funcionar por debajo de 3-4 GB. La version merged FP16 necesita aproximadamente 18-19 GB. Son estimaciones tipicas para modelos de este tamano; el autor no publica cifras oficiales.
 - GPU recomendadas: para FP16, una A100, H100 o RTX 4090 (24 GB); para Q4_K_M, una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB es suficiente; para Q2_0/Q1_0, incluso GPUs de 6-8 GB o ejecucion en CPU con llama.cpp.
 - Cabe en GPUs de consumo en formato GGUF: si con Q4_K_M en GPUs de 8 GB o mas, y con Q2_0/Q1_0 en configuraciones aun mas modestas.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, interfaces de roleplay) para GGUF; vLLM, TGI o transformers de HuggingFace para el modelo merged o el LoRA componible sobre Qwen3.5-9B.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, interfaces de roleplay) para GGUF; vLLM, TGI o transformers de Hugging Face para el modelo merged o el LoRA componible sobre Qwen3.5-9B.
 - Latencia y throughput: no disponible; dependen de la cuantizacion y el hardware empleados.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ Nota: la comparacion con afinados de la comunidad es orientativa, ya que sus dat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ws-fy/character-model-showcase
+- Repositorio en Hugging Face: https://huggingface.co/ws-fy/character-model-showcase
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Organizacion/autor en HuggingFace: https://huggingface.co/ws-fy
+- Organizacion/autor en Hugging Face: https://huggingface.co/ws-fy
 - Paper, demo o repositorio adicional: no disponible

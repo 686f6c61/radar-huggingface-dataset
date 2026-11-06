@@ -84,6 +84,6 @@ No se conocen modelos comparables con resultados verificados en la misma tarea d
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/agentic-ptb/opus-high-v3.h022.sft-distil-v2.step_30)
+- [Hugging Face - modelo](https://huggingface.co/agentic-ptb/opus-high-v3.h022.sft-distil-v2.step_30)
 - [Dataset asociado - agentic-ptb/opus-high-v3-data](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Indice de runs - agentic-ptb/INDEX](https://huggingface.co/datasets/agentic-ptb/INDEX)

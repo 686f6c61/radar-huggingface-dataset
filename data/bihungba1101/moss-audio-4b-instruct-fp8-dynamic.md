@@ -82,8 +82,8 @@ No hay benchmarks publicados que permitan comparar directamente esta cuantizacio
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/bihungba1101/MOSS-Audio-4B-Instruct-FP8-Dynamic
-- Modelo original en HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-4B-Instruct
+- Modelo cuantizado en Hugging Face: https://huggingface.co/bihungba1101/MOSS-Audio-4B-Instruct-FP8-Dynamic
+- Modelo original en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-4B-Instruct
 - Repositorio GitHub de MOSS-Audio: https://github.com/OpenMOSS/MOSS-Audio
 - Pagina oficial de MOSS-Audio: https://openmoss.ai/MOSS-Audio/
 - Modelo en ModelScope: https://www.modelscope.cn/models/openmoss/MOSS-Audio-4B-Instruct

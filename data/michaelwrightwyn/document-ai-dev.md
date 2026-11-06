@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `michaelwrightwyn/document-ai-dev`, publicado por el usuario de HuggingFace michaelwrightwyn (Mateo Torres), no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación sobre Document AI. La model card lo describe explícitamente como "reading notes and an experiment sketch": su artefacto principal es un fichero `analysis.md` que recoge el alcance de una pregunta de investigación, posibles factores de confusión, un diseño de comparación con baselines emparejados y un contexto de evaluación basado en los conjuntos de datos FUNSD, SROIE y CORD. El autor declara de forma explícita que el repositorio no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni checkpoint entrenado.
+El repositorio `michaelwrightwyn/document-ai-dev`, publicado por el usuario de Hugging Face michaelwrightwyn (Mateo Torres), no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación sobre Document AI. La model card lo describe explícitamente como "reading notes and an experiment sketch": su artefacto principal es un fichero `analysis.md` que recoge el alcance de una pregunta de investigación, posibles factores de confusión, un diseño de comparación con baselines emparejados y un contexto de evaluación basado en los conjuntos de datos FUNSD, SROIE y CORD. El autor declara de forma explícita que el repositorio no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni checkpoint entrenado.
 
 Por tanto, lo que se publica aquí es documentación metodológica y un plan experimental, no pesos utilizables para inferencia. Los metadatos del repositorio incluyen la etiqueta `safetensors` y una cifra de 33.088 parámetros totales, un valor incompatible con cualquier transformer funcional y que apunta a un artefacto residual o de prueba (fichero de configuración, tensor simbólico o placeholder), no a un modelo operativo. El tamaño del repositorio es de 0,0 GB, es decir, no contiene pesos descargables de entidad.
 
@@ -71,7 +71,7 @@ No disponible en sentido estricto, porque el repositorio no es un modelo y no ad
 
 | Elemento | Naturaleza | Parámetros | Contexto | Licencia / disponibilidad |
 |---|---|---|---|---|
-| michaelwrightwyn/document-ai-dev | Notas de investigación, sin checkpoint | 33.088 según metadatos de safetensors (no funcional) | no disponible | CC-BY-4.0, descarga pública en HuggingFace |
+| michaelwrightwyn/document-ai-dev | Notas de investigación, sin checkpoint | 33.088 según metadatos de safetensors (no funcional) | no disponible | CC-BY-4.0, descarga pública en Hugging Face |
 | Google Document AI | Plataforma gestionada de comprensión de documentos | no disponible | no disponible | Propietaria, servicio en Google Cloud |
 | Google Document AI, Workbench y Warehouse | Modelos preentrenados y personalizables para procesamiento documental | no disponible | no disponible | Propietaria, servicio en Google Cloud |
 
@@ -90,8 +90,8 @@ No se dispone de datos de benchmarks ni de especificaciones técnicas (parámetr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michaelwrightwyn/document-ai-dev
-- Perfil del autor en HuggingFace: https://huggingface.co/michaelwrightwyn
+- Repositorio en Hugging Face: https://huggingface.co/michaelwrightwyn/document-ai-dev
+- Perfil del autor en Hugging Face: https://huggingface.co/michaelwrightwyn
 - Document AI, documentación de Google Cloud: https://docs.cloud.google.com/document-ai/docs
 - Document AI, notas de versión de Google Cloud: https://docs.cloud.google.com/document-ai/docs/release-notes
 - Document AI, página de producto de Google Cloud: https://cloud.google.com/document-ai

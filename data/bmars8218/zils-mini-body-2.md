@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `bmars8218/zils-mini-body-2` | ~4,5 B | no disponible | Apache 2.0 | HuggingFace (repo de 9,1 GB) | Re-upload para pool Zils, sin benchmarks |
-| `eljiwo/jiwo-4b` | ~4 B (según nombre) | no disponible | Apache 2.0 | HuggingFace | Modelo base original; fuente de los pesos de lenguaje |
-| `Qwen/Qwen3.5-4B` | ~4 B (según nombre) | no disponible | no disponible en la información proporcionada | HuggingFace | Fuente del torre de visión incluido en este body |
+| `bmars8218/zils-mini-body-2` | ~4,5 B | no disponible | Apache 2.0 | Hugging Face (repo de 9,1 GB) | Re-upload para pool Zils, sin benchmarks |
+| `eljiwo/jiwo-4b` | ~4 B (según nombre) | no disponible | Apache 2.0 | Hugging Face | Modelo base original; fuente de los pesos de lenguaje |
+| `Qwen/Qwen3.5-4B` | ~4 B (según nombre) | no disponible | no disponible en la información proporcionada | Hugging Face | Fuente del torre de visión incluido en este body |
 
 No se dispone de datos de rendimiento para ninguno de los tres modelos en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para ninguno de los tres modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bmars8218/zils-mini-body-2
+- Repositorio Hugging Face: https://huggingface.co/bmars8218/zils-mini-body-2
 - Modelo base: https://huggingface.co/eljiwo/jiwo-4b
 - Revisión del modelo base citada: https://huggingface.co/eljiwo/jiwo-4b/tree/9adc559ff7ec5baffade3998f7bca85da0d124ed
 - Torre de visión de origen: https://huggingface.co/Qwen/Qwen3.5-4B

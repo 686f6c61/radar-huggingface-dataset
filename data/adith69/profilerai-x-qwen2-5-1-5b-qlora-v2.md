@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Profilerai-x-qwen2.5-1.5b-qlora-v2 es un ajuste fino por QLoRA del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Adith69 en HuggingFace. Se trata de la segunda version de una linea de modelos bautizada como "profilerai-x", de la que no se documenta ni el dominio de aplicacion ni el conjunto de datos empleado en el entrenamiento. El modelo base es la version cuantizada a 4 bits (bnb-4bit) publicada por Unsloth, sobre la que se aplico un entrenamiento con la libreria Unsloth y TRL.
+Profilerai-x-qwen2.5-1.5b-qlora-v2 es un ajuste fino por QLoRA del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Adith69 en Hugging Face. Se trata de la segunda version de una linea de modelos bautizada como "profilerai-x", de la que no se documenta ni el dominio de aplicacion ni el conjunto de datos empleado en el entrenamiento. El modelo base es la version cuantizada a 4 bits (bnb-4bit) publicada por Unsloth, sobre la que se aplico un entrenamiento con la libreria Unsloth y TRL.
 
 La relevancia de esta ficha es acotada y conviene ser transparente al respecto: el repositorio no incluye model card detallada, no declara hiperparametros de entrenamiento, no publica resultados de evaluacion y acumula cero descargas y cero "me gusta" en el momento de la consulta. Su interes practico reside en que sirve como ejemplo de flujo de trabajo de ajuste fino ligero (QLoRA sobre un modelo de 1,5B) y como punto de partida para quien quiera replicar el proceso, mas que como modelo listo para produccion.
 
@@ -67,11 +67,11 @@ El autor no incluye metricas de MMLU, HumanEval, GSM8K, MT-Bench ni de ningun ot
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Profilerai-x-qwen2.5-1.5b-qlora-v2 | 1,5B | no especificado (base: 32.768) | Apache 2.0 | HuggingFace, ajuste comunitario sin evaluar |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, oficial y evaluado |
-| Llama 3.2 1B Instruct | 1,24B | 128.000 | Llama 3.2 Community License | HuggingFace, oficial |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | HuggingFace, oficial |
-| Gemma 2 2B IT | 2,6B | 8.192 | Gemma Terms of Use | HuggingFace, oficial |
+| Profilerai-x-qwen2.5-1.5b-qlora-v2 | 1,5B | no especificado (base: 32.768) | Apache 2.0 | Hugging Face, ajuste comunitario sin evaluar |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, oficial y evaluado |
+| Llama 3.2 1B Instruct | 1,24B | 128.000 | Llama 3.2 Community License | Hugging Face, oficial |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | Hugging Face, oficial |
+| Gemma 2 2B IT | 2,6B | 8.192 | Gemma Terms of Use | Hugging Face, oficial |
 
 Frente a estas alternativas, la unica ventaja objetivable del modelo de Adith69 seria un ajuste a un dominio concreto, extremo que no puede verificarse porque no se documenta el dataset ni se publican metricas. Para uso general, el Qwen2.5-1.5B-Instruct original ofrece las mismas dimensiones con garantias de evaluacion y soporte oficial.
 
@@ -88,7 +88,7 @@ Frente a estas alternativas, la unica ventaja objetivable del modelo de Adith69 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adith69/profilerai-x-qwen2.5-1.5b-qlora-v2
+- Modelo en Hugging Face: https://huggingface.co/Adith69/profilerai-x-qwen2.5-1.5b-qlora-v2
 - Modelo base utilizado: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `orcarouter/Qwen3.8-27B-Uncensored-FP8` es una variante modificada y cuantizada del modelo base Qwen/Qwen3.8-27B, desarrollado por el usuario de HuggingFace `orcarouter`. Se trata de un modelo de visión-lenguaje (image-text-to-text) de arquitectura densa que incorpora capacidades de razonamiento, function calling y control de pensamiento flexible. La versión "uncensored" implica un proceso de abliteration, es decir, la eliminación de los mecanismos de rechazo del modelo original, lo que lo hace especialmente interesante para tareas de red-teaming y evaluación de seguridad.
+El modelo `orcarouter/Qwen3.8-27B-Uncensored-FP8` es una variante modificada y cuantizada del modelo base Qwen/Qwen3.8-27B, desarrollado por el usuario de Hugging Face `orcarouter`. Se trata de un modelo de visión-lenguaje (image-text-to-text) de arquitectura densa que incorpora capacidades de razonamiento, function calling y control de pensamiento flexible. La versión "uncensored" implica un proceso de abliteration, es decir, la eliminación de los mecanismos de rechazo del modelo original, lo que lo hace especialmente interesante para tareas de red-teaming y evaluación de seguridad.
 
-La cuantización en FP8 (block-FP8) reduce el tamaño del modelo a 30,9 GB, manteniendo un contexto de 256K tokens según la documentación de Unsloth. El modelo está pensado para despliegue eficiente en GPUs modernas como H200, RTX PRO 6000 o RTX 5090, y es compatible con motores de inferencia como vLLM y SGLang. Su licencia Apache 2.0 permite uso comercial, aunque el acceso está restringido en HuggingFace y requiere aceptación de condiciones.
+La cuantización en FP8 (block-FP8) reduce el tamaño del modelo a 30,9 GB, manteniendo un contexto de 256K tokens según la documentación de Unsloth. El modelo está pensado para despliegue eficiente en GPUs modernas como H200, RTX PRO 6000 o RTX 5090, y es compatible con motores de inferencia como vLLM y SGLang. Su licencia Apache 2.0 permite uso comercial, aunque el acceso está restringido en Hugging Face y requiere aceptación de condiciones.
 
 La relevancia de este modelo radica en su doble vertiente: por un lado, ofrece las capacidades multimodales y de razonamiento del Qwen3.8-27B en un formato FP8 optimizado; por otro, al eliminar las restricciones de contenido, se convierte en una herramienta valiosa para investigadores que estudian los límites de los modelos de lenguaje y desarrollan técnicas de alineación más robustas.
 
@@ -79,7 +79,7 @@ La comparativa directa con otros modelos abliterados (por ejemplo, versiones de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Documentación de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Guía de despliegue con SGLang: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B
 - Blog de AMD sobre soporte Day 0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

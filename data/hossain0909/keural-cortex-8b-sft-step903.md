@@ -85,7 +85,7 @@ La comparación directa con alternativas coreanas específicas no puede completa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/Keural-Cortex-8B-SFT-step903
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/Keural-Cortex-8B-SFT-step903
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Documentación de vLLM (parser `hermes` y `qwen3`): https://docs.vllm.ai
 - Repositorio de transformers: https://github.com/huggingface/transformers

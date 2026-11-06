@@ -56,7 +56,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 - El servidor requiere compilacion de kernels en el primer arranque, lo que puede provocar tiempos de espera prolongados antes de la primera respuesta.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mando2222/vibethinker-3b-blackhole-v51
+- Repositorio Hugging Face: https://huggingface.co/mando2222/vibethinker-3b-blackhole-v51
 - Modelo base WeiboAI/VibeThinker-3B: https://huggingface.co/WeiboAI/VibeThinker-3B
 - Repositorio alternativo mando2222/vibethinker-3b-P150: https://huggingface.co/mando2222/vibethinker-3b-P150
 - tt-model-manager: https://github.com/tenstorrent/tt-model-manager

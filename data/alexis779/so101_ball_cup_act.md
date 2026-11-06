@@ -3,7 +3,7 @@
 # Ficha tecnica: so101_ball_cup_act
 
 ## Resumen
-`so101_ball_cup_act` es una politica de aprendizaje por imitacion basada en ACT (Action Chunking with Transformers) entrenada con LeRobot y publicada por el usuario alexis779 en HuggingFace. No es un modelo de lenguaje: es un controlador viso-motor que consume dos flujos de imagen y el estado articular de un brazo robotico SO-100 (`so_arm100`) y produce directamente comandos de accion. El modelo se ha entrenado para una unica tarea manipulativa, "put the ball in the cup" (introducir una pelota en un vaso), a partir de 50 episodios teleoperados y 13.987 fotogramas grabados a 12 FPS.
+`so101_ball_cup_act` es una politica de aprendizaje por imitacion basada en ACT (Action Chunking with Transformers) entrenada con LeRobot y publicada por el usuario alexis779 en Hugging Face. No es un modelo de lenguaje: es un controlador viso-motor que consume dos flujos de imagen y el estado articular de un brazo robotico SO-100 (`so_arm100`) y produce directamente comandos de accion. El modelo se ha entrenado para una unica tarea manipulativa, "put the ball in the cup" (introducir una pelota en un vaso), a partir de 50 episodios teleoperados y 13.987 fotogramas grabados a 12 FPS.
 
 El modelo resuelve un problema concreto de robotica: aprender una habilidad de manipulacion a partir de demostraciones humanas, sin ingenieria de control explicita. ACT predice "trozos" (chunks) de acciones en lugar de pasos individuales, lo que reduce el error de acumulacion y suele lograr tasas de exito elevadas en tareas de pick-and-place. Es relevante como ejemplo reproducible y ligero (unos 51,7 millones de parametros, 0,2 GB de repositorio) del flujo completo de LeRobot: grabar datos, entrenar un ACT y desplegarlo en hardware real de bajo coste.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Tipo | Parametros | Tarea / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `alexis779/so101_ball_cup_act` | ACT (imitacion) | ~51,7 M | Tarea unica: pelota en vaso, SO-100 | Apache 2.0 | HuggingFace + LeRobot |
-| Otras politicas ACT de LeRobot | ACT (imitacion) | no disponible | Depende del dataset de entrenamiento | normalmente Apache 2.0 | HuggingFace + LeRobot |
+| `alexis779/so101_ball_cup_act` | ACT (imitacion) | ~51,7 M | Tarea unica: pelota en vaso, SO-100 | Apache 2.0 | Hugging Face + LeRobot |
+| Otras politicas ACT de LeRobot | ACT (imitacion) | no disponible | Depende del dataset de entrenamiento | normalmente Apache 2.0 | Hugging Face + LeRobot |
 | Diffusion Policy (referencia del ecosistema LeRobot) | Policy basada en difusion | no disponible | Manipulacion por imitacion | MIT (segun repositorio original) | Repositorio publico + LeRobot |
-| SmolVLA | VLA ligero | no disponible | Manipulacion condicionada por lenguaje | Apache 2.0 | HuggingFace + LeRobot |
+| SmolVLA | VLA ligero | no disponible | Manipulacion condicionada por lenguaje | Apache 2.0 | Hugging Face + LeRobot |
 
 No se dispone de datos comparativos de rendimiento (tasas de exito) en la informacion proporcionada, por lo que la comparacion se limita a tipo de metodo, licencia y disponibilidad.
 
@@ -77,7 +77,7 @@ No se dispone de datos comparativos de rendimiento (tasas de exito) en la inform
 - Caveats de produccion: al ser un modelo sin evaluacion y de tarea unica, no es adecuado para despliegue productivo sin una validacion propia extensiva y, preferiblemente, un reentrenamiento con datos del entorno objetivo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/alexis779/so101_ball_cup_act
+- Modelo en Hugging Face: https://huggingface.co/alexis779/so101_ball_cup_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/alexis779/so101_ball_cup
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

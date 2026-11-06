@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GatedDeltaNet-1.3B-unstructured-ELSA-80pct es un checkpoint de investigación publicado por el usuario ikimyaii en HuggingFace: se trata del modelo base m-a-p/1.3B-100B-GatedDeltaNet-pure (1.466.343.808 parámetros) podado al 80 % de dispersión no estructurada mediante el código oficial de ELSA, un método de podado basado en ADMM presentado en el preprint arXiv:2510.01650. No es un modelo nuevo entrenado desde cero, sino un artefacto de evaluación concebido como línea base del proyecto EHWS del mismo autor, que compara estrategias de podado semiestructurado y no estructurado sobre arquitecturas de atención lineal.
+GatedDeltaNet-1.3B-unstructured-ELSA-80pct es un checkpoint de investigación publicado por el usuario ikimyaii en Hugging Face: se trata del modelo base m-a-p/1.3B-100B-GatedDeltaNet-pure (1.466.343.808 parámetros) podado al 80 % de dispersión no estructurada mediante el código oficial de ELSA, un método de podado basado en ADMM presentado en el preprint arXiv:2510.01650. No es un modelo nuevo entrenado desde cero, sino un artefacto de evaluación concebido como línea base del proyecto EHWS del mismo autor, que compara estrategias de podado semiestructurado y no estructurado sobre arquitecturas de atención lineal.
 
 El interés técnico reside en la arquitectura subyacente: Gated DeltaNet es una capa de atención lineal con regla delta y compuertas, publicada en ICLR 2025 por NVlabs como alternativa a Mamba2, lo que la convierte en un banco de pruebas poco habitual para técnicas de compresión. Sobre esa base, este checkpoint demuestra un resultado negativo relevante: aplicar ADMM con umbral de magnitud por capa y sin equilibrio de filas hunde la perplejidad de 10,31 a 26,28 en WikiText-2 y de 13,76 a 26,17 en C4, con una media zero-shot que cae de 0,5123 a 0,4082.
 
@@ -86,12 +86,12 @@ Precisión zero-shot (lm-evaluation-harness, 0-shot):
 
 | Modelo | Parametros | Contexto | WikiText-2 (ppl) | C4 (ppl) | Media 0-shot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este modelo (ELSA no estructurado 80 %) | 1,47B | no disponible | 26,28 | 26,17 | 0,4082 | no disponible | HuggingFace |
-| m-a-p/1.3B-100B-GatedDeltaNet-pure (denso) | 1,47B | no disponible | 10,31 | 13,76 | 0,5123 | no disponible | HuggingFace |
-| ikimyaii/GatedDeltaNet-1.3B-semi-structured-EHWS-80pct | 1,47B | no disponible | 22,03 | 22,25 | no disponible | no disponible | HuggingFace |
-| ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-80pct | 1,47B | no disponible | 26,19 | 26,24 | no disponible | no disponible | HuggingFace |
-| ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-50pct | 1,47B | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| ikimyaii/HGRN-1.3B-unstructured-ELSA-80pct | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Este modelo (ELSA no estructurado 80 %) | 1,47B | no disponible | 26,28 | 26,17 | 0,4082 | no disponible | Hugging Face |
+| m-a-p/1.3B-100B-GatedDeltaNet-pure (denso) | 1,47B | no disponible | 10,31 | 13,76 | 0,5123 | no disponible | Hugging Face |
+| ikimyaii/GatedDeltaNet-1.3B-semi-structured-EHWS-80pct | 1,47B | no disponible | 22,03 | 22,25 | no disponible | no disponible | Hugging Face |
+| ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-80pct | 1,47B | no disponible | 26,19 | 26,24 | no disponible | no disponible | Hugging Face |
+| ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-50pct | 1,47B | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| ikimyaii/HGRN-1.3B-unstructured-ELSA-80pct | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -108,7 +108,7 @@ Precisión zero-shot (lm-evaluation-harness, 0-shot):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-80pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-80pct
 - Modelo base: https://huggingface.co/m-a-p/1.3B-100B-GatedDeltaNet-pure
 - Variante semiestructurada EHWS 80 %: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-EHWS-80pct
 - Variante semiestructurada ELSA 80 %: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-80pct

@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-4B-Thinking-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-4B-Thinking-heretic-GGUF
 - Modelo base: https://huggingface.co/saidutta69/Qwen3-4B-Thinking-heretic
 - Cuantizaciones con imatrix (i1): https://huggingface.co/mradermacher/Qwen3-4B-Thinking-heretic-i1-GGUF
 - Pagina de vision general del modelo y listado de descargas: https://hf.tst.eu/model#Qwen3-4B-Thinking-heretic-GGUF

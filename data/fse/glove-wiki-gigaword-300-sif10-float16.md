@@ -93,7 +93,7 @@ La unica comparacion cuantitativa disponible en la informacion es frente a la me
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/fse/glove-wiki-gigaword-300-sif10-float16)
+- [Modelo en Hugging Face](https://huggingface.co/fse/glove-wiki-gigaword-300-sif10-float16)
 - [Modelo base fse/glove-wiki-gigaword-300](https://huggingface.co/fse/glove-wiki-gigaword-300)
 - [Repositorio Fast Sentence Embeddings (fse)](https://github.com/oborchers/Fast_Sentence_Embeddings)
 - [Dataset HuggingFaceFW/fineweb-edu-llama3-annotations](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu-llama3-annotations)

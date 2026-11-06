@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-6-literal-metaforica` es un modelo de generación de texto publicado en HuggingFace por el usuario `luisastellet`, derivado de la familia Qwen3 segun indican sus etiquetas (`qwen3`, `transformers`, `text-generation`, `conversational`). Cuenta con 596.049.920 parametros reales almacenados en safetensors, lo que lo situa en la franja de los 0,6 mil millones de parametros, y un repositorio de 2,4 GB. El identificador del repositorio sugiere un experimento de analisis sobre representaciones internas de metaforas frente a lenguaje literal en la sexta capa ("camada 6" en portugues) de la red.
+`luisastellet/qwen-metaphor-unke-camada-6-literal-metaforica` es un modelo de generación de texto publicado en Hugging Face por el usuario `luisastellet`, derivado de la familia Qwen3 segun indican sus etiquetas (`qwen3`, `transformers`, `text-generation`, `conversational`). Cuenta con 596.049.920 parametros reales almacenados en safetensors, lo que lo situa en la franja de los 0,6 mil millones de parametros, y un repositorio de 2,4 GB. El identificador del repositorio sugiere un experimento de analisis sobre representaciones internas de metaforas frente a lenguaje literal en la sexta capa ("camada 6" en portugues) de la red.
 
-El modelo no dispone de model card util: el README es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]". Esto implica que no hay informacion oficial sobre datos de entrenamiento, licencia, idiomas, contexto, proceso de ajuste ni uso previsto. Tampoco se han publicado resultados de benchmarks, demos ni articulos asociados.
+El modelo no dispone de model card util: el README es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]". Esto implica que no hay informacion oficial sobre datos de entrenamiento, licencia, idiomas, contexto, proceso de ajuste ni uso previsto. Tampoco se han publicado resultados de benchmarks, demos ni articulos asociados.
 
 La relevancia de esta ficha es, por tanto, la de un artefacto de investigacion de trazabilidad limitada: util como checkpoint de partida para reproducir experimentos de interpretabilidad sobre Qwen3-0.6B, pero no recomendable como componente de produccion sin una evaluacion previa por parte del equipo que lo vaya a integrar. La ausencia de licencia explicita es el principal bloqueo para cualquier uso comercial.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, por tanto, la de un artefacto de investigacion d
 
 Las unicas senales disponibles apuntan a un transformer decoder-only de la familia Qwen3, con aproximadamente 596 millones de parametros. La etiqueta `qwen3` y la libreria declarada (`transformers`) son los unicos indicios sobre la arquitectura base; no se ha publicado informacion sobre numero de capas, dimension del modelo, cabezas de atencion, tipo de normalizacion, uso de attention con sesgo QKV ni configuracion de RoPE. Tampoco se documenta si se trata de un ajuste fino (SFT), un proceso de destilacion, un recorte de capas o una intervencion directa sobre pesos de un modelo Qwen3 preentrenado.
 
-No hay datos sobre el corpus de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo fases de RLHF, DPO o RLVR. El nombre del repositorio sugiere que el trabajo experimental gira en torno a la capa 6 y a la distincion entre interpretacion literal y metaforica, lo que encaja con la hipotesis de un ajuste o una intervencion localizada en esa capa, pero se trata de una inferencia a partir del identificador y no de un dato documentado. La etiqueta `arxiv:1910.09700` que aparece en la metadata corresponde al articulo de Lacoste et al. sobre el calculador de impacto de Machine Learning, incluido por defecto en la plantilla de HuggingFace, y no a un paper sobre este modelo.
+No hay datos sobre el corpus de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo fases de RLHF, DPO o RLVR. El nombre del repositorio sugiere que el trabajo experimental gira en torno a la capa 6 y a la distincion entre interpretacion literal y metaforica, lo que encaja con la hipotesis de un ajuste o una intervencion localizada en esa capa, pero se trata de una inferencia a partir del identificador y no de un dato documentado. La etiqueta `arxiv:1910.09700` que aparece en la metadata corresponde al articulo de Lacoste et al. sobre el calculador de impacto de Machine Learning, incluido por defecto en la plantilla de Hugging Face, y no a un paper sobre este modelo.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ No hay datos sobre el corpus de entrenamiento: ni numero de tokens, ni composici
 - Generacion de texto asistida en castellano o portugues: si el ajuste conserva el multilingueismo de Qwen3, podria emplearse para redaccion breve, resumenes y reformulacion; requiere validacion manual previa porque no hay idiomas declarados.
 - Filtrado y clasificacion de contenido linguistico: el modelo puede utilizarse para etiquetar si una frase es literal o figurada, que es precisamente el eje del experimento, aunque sin metricas publicadas de precision o recall.
 - Docencia y formacion en NLP: sirve como ejemplo practico de como un checkpoint derivado de un modelo abierto puede publicarse sin documentacion, y de los problemas de reproducibilidad que ello genera.
-- Pruebas de integracion con `text-generation-inference`: la etiqueta `text-generation-inference` y `endpoints_compatible` indica compatibilidad con el servidor de HuggingFace, lo que permite desplegarlo como endpoint interno para pruebas de latencia y throughput.
+- Pruebas de integracion con `text-generation-inference`: la etiqueta `text-generation-inference` y `endpoints_compatible` indica compatibilidad con el servidor de Hugging Face, lo que permite desplegarlo como endpoint interno para pruebas de latencia y throughput.
 
 En todos los casos, el uso en produccion queda condicionado a la ausencia de licencia explicita.
 
@@ -65,7 +65,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion. 
   - int4 (GGUF Q4_K_M): aproximadamente 0,35-0,4 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizacion de 4 bits (RTX 3050, RTX 4060, T4). Para bf16 sin cuantizar, una RTX 3060 de 12 GB o superior es suficiente. No requiere A100 ni H100.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU discreta moderna con 6 GB o mas. Tambien puede ejecutarse en CPU con llama.cpp o Ollama, con latencias de decenas de tokens por segundo en procesadores modernos.
-- Opciones de despliegue: `transformers` con PyTorch (ruta nativa, dado el formato safetensors), `text-generation-inference` (etiqueta declarada), vLLM, SGLang, llama.cpp y Ollama (estos ultimos requieren conversion previa a GGUF, no incluida en el repositorio). La etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` con PyTorch (ruta nativa, dado el formato safetensors), `text-generation-inference` (etiqueta declarada), vLLM, SGLang, llama.cpp y Ollama (estos ultimos requieren conversion previa a GGUF, no incluida en el repositorio). La etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -74,11 +74,11 @@ Los datos de la columna del modelo analizado son los unicos verificados en este 
 
 | Modelo | Parametros | Contexto | Benchmarks publicos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `luisastellet/qwen-metaphor-unke-camada-6-literal-metaforica` | 596 M | No disponible | No publicados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-0.6B | 0,6 B | 32.768 tokens (ampliable con YaRN, segun su ficha) | Si, en su model card oficial | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-0.5B | 0,49 B | 32.768 tokens (segun su ficha) | Si, en su model card oficial | Apache 2.0 | HuggingFace |
-| SmolLM2-360M | 0,36 B | 8.192 tokens (segun su ficha) | Si, en su model card oficial | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens (segun su ficha) | Si, en su model card oficial | Apache 2.0 | HuggingFace |
+| `luisastellet/qwen-metaphor-unke-camada-6-literal-metaforica` | 596 M | No disponible | No publicados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-0.6B | 0,6 B | 32.768 tokens (ampliable con YaRN, segun su ficha) | Si, en su model card oficial | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-0.5B | 0,49 B | 32.768 tokens (segun su ficha) | Si, en su model card oficial | Apache 2.0 | Hugging Face |
+| SmolLM2-360M | 0,36 B | 8.192 tokens (segun su ficha) | Si, en su model card oficial | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens (segun su ficha) | Si, en su model card oficial | Apache 2.0 | Hugging Face |
 
 La diferencia principal no es de rendimiento, sino de trazabilidad: los tres modelos comparables documentan licencia, idiomas, contexto y evaluaciones, mientras que el modelo analizado no ofrece ninguno de esos datos.
 
@@ -97,7 +97,7 @@ La diferencia principal no es de rendimiento, sino de trazabilidad: los tres mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-6-literal-metaforica
+- Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-6-literal-metaforica
 - Paper citado en la etiqueta de impacto de carbono (plantilla por defecto, no vinculado al modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de Machine Learning referenciado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

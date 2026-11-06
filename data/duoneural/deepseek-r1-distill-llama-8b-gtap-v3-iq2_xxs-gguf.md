@@ -121,10 +121,10 @@ No se dispone de datos comparativos frente al modelo base sin cuantizar ni frent
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoNeural/DeepSeek-R1-Distill-Llama-8B-GTAP-v3-IQ2_XXS-GGUF | 8,03B | 128k | IQ2_XXS (~2,06 bpw) | other | HuggingFace, 2,4 GB |
-| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | 8,03B | 128k | safetensors (completa) | MIT (segun el modelo base) | HuggingFace |
-| unsloth/DeepSeek-R1-Distill-Llama-8B-GGUF | 8,03B | 128k | varias GGUF (mayor bpw) | MIT (segun el modelo base) | HuggingFace |
-| Llama-3.1-8B | 8,03B | 128k | safetensors | Llama 3.1 Community License | Meta / HuggingFace |
+| DuoNeural/DeepSeek-R1-Distill-Llama-8B-GTAP-v3-IQ2_XXS-GGUF | 8,03B | 128k | IQ2_XXS (~2,06 bpw) | other | Hugging Face, 2,4 GB |
+| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | 8,03B | 128k | safetensors (completa) | MIT (segun el modelo base) | Hugging Face |
+| unsloth/DeepSeek-R1-Distill-Llama-8B-GGUF | 8,03B | 128k | varias GGUF (mayor bpw) | MIT (segun el modelo base) | Hugging Face |
+| Llama-3.1-8B | 8,03B | 128k | safetensors | Llama 3.1 Community License | Meta / Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada.
 
@@ -142,7 +142,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Llama-8B-GTAP-v3-IQ2_XXS-GGUF
+- Checkpoint en Hugging Face: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Llama-8B-GTAP-v3-IQ2_XXS-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Cuantizacion GGUF de la comunidad (unsloth): https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-8B-GGUF
 - Repositorio DeepSeek-R1 en GitHub: https://github.com/deepseek-ai/DeepSeek-R1

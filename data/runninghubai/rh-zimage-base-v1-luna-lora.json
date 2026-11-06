@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-zimage-base-v1-luna-lora",
+  "slug": "runninghubai-rh-zimage-base-v1-luna-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-zimage-base-v1-luna-lora",
+  "created_at": "2026-11-06T11:37:03.000Z",
+  "updated_at": "2026-11-06T11:40:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80328064,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-z-image-base-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-z-image-base-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHubAI/rh-z-imagebase-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-z-imagebase-lora",
+      "snippet": "RunningHubAI / rh-z-imagebase-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-z-imagebase-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "Luna Ai Model (ZImageTurbo) - V1 | ZImage LoRA | Civitai",
+      "url": "https://civitai.com/models/2308010/luna-ai-model-zimageturbo",
+      "snippet": "Luna is a refined AI model designed to represent a modern, elegant young woman with a calm and composed presence. She is portrayed as a 21-year-old student with a strong appreciation for fashion, minimalism, and contemporary elegance. Her identity focuses on facial consistency, natural proportions, and a subtle, expressive gaze rather than exaggerated stylization. This LoRA was trained using ..."
+    }
+  ]
+}

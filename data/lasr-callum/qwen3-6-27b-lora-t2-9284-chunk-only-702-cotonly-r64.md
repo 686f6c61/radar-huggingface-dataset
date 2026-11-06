@@ -78,7 +78,7 @@ No se dispone de benchmarks comparativos entre estos adaptadores. La comparació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-chunk-only-702-cotonly-r64
+- Repositorio Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-chunk-only-702-cotonly-r64
 - Adaptador similar (par716-s2): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-par716-s2-r64-dynbatch
 - Adaptador similar (synthdoc-716): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-synthdoc-716-r64
 - Página de análisis en free2aitools: https://free2aitools.com/model/lasr-callum/qwen3.6-27b-lora-t2-9284-synthdoc-716-r64

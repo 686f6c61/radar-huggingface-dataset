@@ -163,7 +163,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/colddRazer/Qwen3.5-9B-ultra-uncensored-heretic-EXL3-4bpw
+- Modelo en Hugging Face: https://huggingface.co/colddRazer/Qwen3.5-9B-ultra-uncensored-heretic-EXL3-4bpw
 - Modelo base: https://huggingface.co/llmfan46/Qwen3.5-9B-ultra-uncensored-heretic
 - Versión GGUF del modelo base: https://huggingface.co/llmfan46/Qwen3.5-9B-ultra-uncensored-heretic-v2-GGUF
 - Runtime exllamav3: https://github.com/turboderp-org/exllamav3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sakhavatcom/baymax-voice-lite` no es un modelo neuronal con pesos publicados, sino un servidor de voz empaquetado como repositorio de HuggingFace. Concretamente, implementa un endpoint compatible con el protocolo xiaozhi v1 (`wss://<host>/xiaozhi/v1/`) pensado para el robot BAYMAX-X, cuyo cliente es un ESP32 con micrófono y altavoz. El servidor encadena tres servicios: reconocimiento de voz con Groq Whisper en persa (`fa`), un LLM remoto servido por Groq (por defecto `qwen3.8-27b`, con alternativas `gpt-oss`) y síntesis de voz neuronal `fa-IR` de Edge, devolviendo audio PCM16 a 16 kHz.
+`Sakhavatcom/baymax-voice-lite` no es un modelo neuronal con pesos publicados, sino un servidor de voz empaquetado como repositorio de Hugging Face. Concretamente, implementa un endpoint compatible con el protocolo xiaozhi v1 (`wss://<host>/xiaozhi/v1/`) pensado para el robot BAYMAX-X, cuyo cliente es un ESP32 con micrófono y altavoz. El servidor encadena tres servicios: reconocimiento de voz con Groq Whisper en persa (`fa`), un LLM remoto servido por Groq (por defecto `qwen3.8-27b`, con alternativas `gpt-oss`) y síntesis de voz neuronal `fa-IR` de Edge, devolviendo audio PCM16 a 16 kHz.
 
 Su interés práctico está en la ingeniería de despliegue: todo el pipeline corre en aproximadamente 60 MB de RAM porque evita dependencias pesadas como PyTorch o ffmpeg, apoyándose solo en `aiohttp`, `edge-tts` y `miniaudio`. Eso permite alojarlo en hardware muy modesto (una Raspberry Pi, un contenedor pequeño o una instancia de bajo coste) mientras el cómputo real de ASR y LLM se delega a la API de Groq.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Solucion | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Sakhavatcom/baymax-voice-lite` | Servidor de orquestacion de voz (ASR + LLM + TTS remotos), compatible xiaozhi v1 | No aplica | No disponible (heredado del LLM remoto) | MIT | Publico en HuggingFace, 0 descargas |
+| `Sakhavatcom/baymax-voice-lite` | Servidor de orquestacion de voz (ASR + LLM + TTS remotos), compatible xiaozhi v1 | No aplica | No disponible (heredado del LLM remoto) | MIT | Publico en Hugging Face, 0 descargas |
 | Servidor oficial del ecosistema xiaozhi | Servidor de voz para clientes ESP32 | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Stack local Whisper + LLM local + Piper | Pipeline de voz autohospedado, sin dependencia de APIs | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -81,7 +81,7 @@ No se dispone de datos verificables de parametros, contexto, rendimiento ni lice
 
 ## Limitaciones y advertencias
 
-- No es un modelo: no hay pesos, tokenizador ni configuracion de inferencia que pueda descargarse y ejecutarse localmente. Cualquier expectativa de uso como modelo de HuggingFace es incorrecta.
+- No es un modelo: no hay pesos, tokenizador ni configuracion de inferencia que pueda descargarse y ejecutarse localmente. Cualquier expectativa de uso como modelo de Hugging Face es incorrecta.
 - Dependencia total de servicios de terceros: sin conectividad con Groq y con el servicio de TTS de Edge, el servidor no puede transcribir, razonar ni sintetizar voz. No hay modo offline documentado.
 - Privacidad: el audio del usuario y las transcripciones se envian a Groq, y el texto de respuesta se envia al servicio de TTS de Edge. Esto puede ser incompatible con requisitos de proteccion de datos en entornos domiliciarios o sanitarios.
 - Coste y cuotas: el uso de la API de Groq esta sujeto a limites de tasa y facturacion no descritos en el repositorio.
@@ -94,5 +94,5 @@ No se dispone de datos verificables de parametros, contexto, rendimiento ni lice
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sakhavatcom/baymax-voice-lite
+- Hugging Face: https://huggingface.co/Sakhavatcom/baymax-voice-lite
 - No se han encontrado en la informacion disponible enlaces adicionales a papers, blogs, repositorios de codigo o demos.

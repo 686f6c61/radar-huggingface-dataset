@@ -93,5 +93,5 @@ Agila-v1.0 es órdenes de magnitud más pequeño y limitado que cualquiera de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Randgris/Agila-v1.0
+- Modelo en Hugging Face: https://huggingface.co/Randgris/Agila-v1.0
 - Paper, repositorio de código, demo en línea y blog: no disponibles en la información proporcionada (el model card menciona rutas internas como `src/lib/agila/gpu.ts`, `training/` y `scripts/eval_chat.py`, pero no enlaces públicos adicionales).

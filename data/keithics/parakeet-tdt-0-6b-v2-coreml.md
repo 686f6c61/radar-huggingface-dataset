@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keithics/parakeet-tdt-0.6b-v2-coreml
+- Modelo en Hugging Face: https://huggingface.co/keithics/parakeet-tdt-0.6b-v2-coreml
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Repositorio FluidAudio: https://github.com/FluidInference/FluidAudio
 - Repositorio FluidAudioSwift: https://github.com/FluidInference/FluidAudioSwift

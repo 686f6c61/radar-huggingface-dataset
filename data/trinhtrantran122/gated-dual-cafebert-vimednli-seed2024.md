@@ -58,7 +58,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 - VRAM estimada: no disponible, pero dado el tamaño del repositorio (2,3 GB), se estima que el modelo en precisión fp32 requiere al menos 4-6 GB de VRAM para inferencia.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM, como una NVIDIA RTX 3060 o superior, sería suficiente para inferencia. Para entrenamiento o fine-tuning se recomienda una GPU con 16 GB o más, como RTX 4090 o A100.
 - El modelo cabe en GPUs de consumo medio-alto, pero no en GPUs integradas o de baja gama.
-- Opciones de despliegue: al ser un modelo de tipo BERT, puede servirse con HuggingFace Transformers, o mediante servidores de inferencia como vLLM o TGI si se convierte a los formatos adecuados. También es posible usar llama.cpp si se convierte a GGUF, aunque no se proporcionan dichos pesos.
+- Opciones de despliegue: al ser un modelo de tipo BERT, puede servirse con Hugging Face Transformers, o mediante servidores de inferencia como vLLM o TGI si se convierte a los formatos adecuados. También es posible usar llama.cpp si se convierte a GGUF, aunque no se proporcionan dichos pesos.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vimednli-seed2024
+- Modelo en Hugging Face: https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vimednli-seed2024
 - Perfil del autor: https://huggingface.co/trinhtrantran122
 - Modelo relacionado (VINLI): https://huggingface.co/trinhtrantran122/gated-dual-cafebert-vinli-sota
 - Datasets del autor: https://huggingface.co/trinhtrantran122/datasets

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PPO LunarLander-v2 es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado desde cero con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno LunarLander-v2 de Gymnasium. Lo publica el usuario naveenalavilli en HuggingFace como parte del curso "Unit 1" de Hugging Face, con asistencia de IA durante el desarrollo y un entrenamiento de 1.015.808 pasos con semilla fija 42. No es un modelo de lenguaje: no procesa ni genera texto, sino que aprende una politica de control que decide acciones discretas (no hacer nada, encender motor izquierdo, encender motor principal o encender motor derecho) a partir de un vector de observacion de 8 dimensiones que describe posicion, velocidad, angulo y contacto con el suelo de la nave.
+PPO LunarLander-v2 es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado desde cero con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno LunarLander-v2 de Gymnasium. Lo publica el usuario naveenalavilli en Hugging Face como parte del curso "Unit 1" de Hugging Face, con asistencia de IA durante el desarrollo y un entrenamiento de 1.015.808 pasos con semilla fija 42. No es un modelo de lenguaje: no procesa ni genera texto, sino que aprende una politica de control que decide acciones discretas (no hacer nada, encender motor izquierdo, encender motor principal o encender motor derecho) a partir de un vector de observacion de 8 dimensiones que describe posicion, velocidad, angulo y contacto con el suelo de la nave.
 
 El modelo se distribuye como un checkpoint de stable-baselines3 en formato .zip y se carga con `PPO.load("ppo-LunarLander-v2.zip", device="cpu")`, lo que permite ejecutarlo enteramente en CPU. Su relevancia es principalmente didactica y de referencia: sirve como linea base reproducible para comparar algoritmos de RL en un entorno de control continuo-discreto estandar, y como punto de partida para experimentos de ajuste de hiperparametros, curriculos o evaluacion de robustez.
 
@@ -25,7 +25,7 @@ La evaluacion declarada por el autor es de 259,72 de recompensa media con una de
 | Libreria | stable-baselines3 |
 | Pasos de entrenamiento | 1.015.808 |
 | Semilla de entrenamiento | 42 |
-| Tamano del repositorio | 0,0 GB (declarado por HuggingFace) |
+| Tamano del repositorio | 0,0 GB (declarado por Hugging Face) |
 | Autor | naveenalavilli |
 | Fecha de creacion | 2026-10-06 |
 | Fecha de actualizacion | 2026-10-06 |
@@ -91,7 +91,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Tipo | Entorno | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| naveenalavilli/ppo-LunarLander-v2 | PPO (stable-baselines3) | LunarLander-v2 | mean_reward 259,72 +/- 44,00 | no disponible | HuggingFace, 0 descargas |
+| naveenalavilli/ppo-LunarLander-v2 | PPO (stable-baselines3) | LunarLander-v2 | mean_reward 259,72 +/- 44,00 | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros checkpoints o agentes comparables (por ejemplo, otros PPO, DQN o A2C entrenados sobre LunarLander-v2) en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con parametros, contexto o rendimiento verificados.
@@ -112,7 +112,7 @@ No se dispone de informacion sobre otros checkpoints o agentes comparables (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/naveenalavilli/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/naveenalavilli/ppo-LunarLander-v2
 - Repositorio de stable-baselines3 (libreria utilizada): no disponible en la informacion proporcionada (no aparece enlace explicito)
 - Documentacion del entorno LunarLander-v2 (Gymnasium): no disponible en la informacion proporcionada (no aparece enlace explicito)
 - Paper de PPO: no disponible en la informacion proporcionada (no aparece enlace explicito)

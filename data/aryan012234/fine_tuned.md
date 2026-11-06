@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aryan012234/fine_tuned` es un ajuste fino publicado en HuggingFace por el usuario aryan012234, identificado como Dhruv Kumar en su perfil. Se distribuye bajo licencia MIT y el repositorio ocupa aproximadamente 0,5 GB. Sin embargo, la model card asociada no contiene ninguna descripción técnica: únicamente declara la licencia. No se especifica el modelo base sobre el que se realizó el ajuste, la arquitectura, el número de parámetros, el contexto ni las capacidades.
+El modelo `aryan012234/fine_tuned` es un ajuste fino publicado en Hugging Face por el usuario aryan012234, identificado como Dhruv Kumar en su perfil. Se distribuye bajo licencia MIT y el repositorio ocupa aproximadamente 0,5 GB. Sin embargo, la model card asociada no contiene ninguna descripción técnica: únicamente declara la licencia. No se especifica el modelo base sobre el que se realizó el ajuste, la arquitectura, el número de parámetros, el contexto ni las capacidades.
 
 A fecha de su publicación (agosto de 2026), el modelo no registra descargas ni likes, lo que sugiere que se trata de un experimento personal o un artefacto de aprendizaje más que de un modelo destinado a producción. La ausencia de documentación y de resultados de evaluación impide cualquier uso fiable en entornos profesionales. Para desarrolladores e investigadores, este modelo no ofrece información suficiente para ser evaluado o integrado con garantías.
 
@@ -54,5 +54,5 @@ No disponible. Al no conocerse la arquitectura ni el modelo base, no es posible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aryan012234/fine_tuned
-- Perfil del autor en HuggingFace: https://huggingface.co/aryan012234/models
+- Modelo en Hugging Face: https://huggingface.co/aryan012234/fine_tuned
+- Perfil del autor en Hugging Face: https://huggingface.co/aryan012234/models

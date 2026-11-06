@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/sector_muse_verl_1009` es un ajuste fino (finetune) subido a HuggingFace por el usuario shabieh2, derivado del modelo base `unsloth/Muse-Glimmer-30B`. Se distribuye bajo licencia Apache-2.0, esta etiquetado como modelo de generacion de texto y declara unicamente el ingles como idioma soportado. La model card es minima: se limita a indicar el autor, la licencia, el modelo de partida y que el entrenamiento se realizo con Unsloth, sin especificar dataset, numero de tokens, hiperparametros ni metodologia de alineacion.
+`shabieh2/sector_muse_verl_1009` es un ajuste fino (finetune) subido a Hugging Face por el usuario shabieh2, derivado del modelo base `unsloth/Muse-Glimmer-30B`. Se distribuye bajo licencia Apache-2.0, esta etiquetado como modelo de generacion de texto y declara unicamente el ingles como idioma soportado. La model card es minima: se limita a indicar el autor, la licencia, el modelo de partida y que el entrenamiento se realizo con Unsloth, sin especificar dataset, numero de tokens, hiperparametros ni metodologia de alineacion.
 
 Por la nomenclatura del identificador (`sector_muse_verl_1009`) y por las etiquetas declaradas (`unsloth`, `trl`, `muse_glimmer`), el modelo parece formar parte de un pipeline de ajuste supervisado o de RL sobre el modelo base, pero no hay informacion publicada que confirme el proceso exacto. El repositorio ocupa 1,7 GB, un tamano muy inferior al que corresponderia a un modelo denso de 30 000 millones de parametros en cualquier cuantizacion habitual, lo que sugiere que podria tratarse de adaptadores LoRA o de un subconjunto parcial de pesos; este punto no esta aclarado en la informacion disponible.
 
@@ -25,7 +25,7 @@ El interes practico del modelo es limitado a dia de hoy: cuenta con cero descarg
 
 No se ha publicado informacion sobre la arquitectura interna del modelo. Todas las etiquetas del repositorio apuntan a una arquitectura de tipo transformer auto-regresivo propio de la familia Muse-Glimmer, pero ni la model card ni los metadatos del repositorio especifican si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida. Tampoco se detalla el mecanismo de atencion, el tipo de tokenizador ni el vocabulario empleado.
 
-En cuanto al entrenamiento, la unica informacion disponible es que el ajuste se realizo con Unsloth, una libreria de fine-tuning optimizada en memoria que permite entrenar con precision reducida y tecnicas de ahorro de VRAM, y que el repositorio incluye la etiqueta `trl` (Transformer Reinforcement Learning de HuggingFace). No se indica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de SFT, DPO, RLHF u otras tecnicas de alineacion, ni los hiperparametros utilizados. La afirmacion de la model card de que el modelo "fue entrenado 2x mas rapido con Unsloth" es una referencia a la eficiencia del framework de entrenamiento, no a una innovacion arquitectonica del modelo.
+En cuanto al entrenamiento, la unica informacion disponible es que el ajuste se realizo con Unsloth, una libreria de fine-tuning optimizada en memoria que permite entrenar con precision reducida y tecnicas de ahorro de VRAM, y que el repositorio incluye la etiqueta `trl` (Transformer Reinforcement Learning de Hugging Face). No se indica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de SFT, DPO, RLHF u otras tecnicas de alineacion, ni los hiperparametros utilizados. La afirmacion de la model card de que el modelo "fue entrenado 2x mas rapido con Unsloth" es una referencia a la eficiencia del framework de entrenamiento, no a una innovacion arquitectonica del modelo.
 
 ## Capacidades
 
@@ -73,8 +73,8 @@ Nota: el repositorio ocupa 1,7 GB, un tamano coherente con adaptadores LoRA o co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shabieh2/sector_muse_verl_1009 | 30B segun nombre del base; no confirmado | no disponible | sin benchmarks | apache-2.0 | HuggingFace (0 descargas) |
-| unsloth/Muse-Glimmer-30B (modelo base) | 30B segun denominacion | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| shabieh2/sector_muse_verl_1009 | 30B segun nombre del base; no confirmado | no disponible | sin benchmarks | apache-2.0 | Hugging Face (0 descargas) |
+| unsloth/Muse-Glimmer-30B (modelo base) | 30B segun denominacion | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente sobre modelos de la misma categoria como para establecer una comparativa con datos contrastados. La unica referencia identificable es el propio modelo base, del que no se han aportado especificaciones tecnicas ni resultados de evaluacion.
@@ -94,7 +94,7 @@ No se dispone de informacion suficiente sobre modelos de la misma categoria como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shabieh2/sector_muse_verl_1009
+- Modelo en Hugging Face: https://huggingface.co/shabieh2/sector_muse_verl_1009
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Repositorio de TRL (HuggingFace): https://github.com/huggingface/trl
+- Repositorio de TRL (Hugging Face): https://github.com/huggingface/trl

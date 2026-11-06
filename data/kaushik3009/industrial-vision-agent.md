@@ -80,5 +80,5 @@ No se dispone de información sobre modelos comparables en el mismo dominio (det
 
 ## Enlaces
 
-- [HuggingFace - kaushik3009/industrial-vision-agent](https://huggingface.co/kaushik3009/industrial-vision-agent)
+- [Hugging Face - kaushik3009/industrial-vision-agent](https://huggingface.co/kaushik3009/industrial-vision-agent)
 - [GitHub - kaushik-3009/industrial-vision-agent](https://github.com/kaushik-3009/industrial-vision-agent)

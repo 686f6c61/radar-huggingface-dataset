@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Krea-2-Turbo-iQ4.5 es una versión cuantizada del modelo de generación de imágenes a partir de texto krea/Krea-2-Turbo, publicada por el usuario justintime47 en HuggingFace. Se trata de una conversión a formato MLX con cuantización iQ4.5 (imatrix) orientada a inferencia local en Apple Silicon, con un tamaño de repositorio de 9,9 GB. El pipeline declarado es text-to-image y la librería asociada es mlx-serve, lo que sitúa el modelo en el ecosistema de ejecución nativo de MLX sobre chips de Apple.
+Krea-2-Turbo-iQ4.5 es una versión cuantizada del modelo de generación de imágenes a partir de texto krea/Krea-2-Turbo, publicada por el usuario justintime47 en Hugging Face. Se trata de una conversión a formato MLX con cuantización iQ4.5 (imatrix) orientada a inferencia local en Apple Silicon, con un tamaño de repositorio de 9,9 GB. El pipeline declarado es text-to-image y la librería asociada es mlx-serve, lo que sitúa el modelo en el ecosistema de ejecución nativo de MLX sobre chips de Apple.
 
 El interés principal de esta ficha es práctico: permite ejecutar un modelo de difusión de gama alta en hardware de consumo Apple sin depender de GPUs NVIDIA ni de servicios en la nube. La cuantización a aproximadamente 4,5 bits por peso reduce el espacio en disco y la memoria unificada necesaria respecto al modelo base, a cambio de una posible pérdida de calidad que no está cuantificada en la información disponible.
 
-El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones de la licencia krea-2-community-license en HuggingFace antes de poder descargar los pesos. No se han publicado resultados de benchmarks, fichas de especificaciones detalladas ni documentación técnica adicional en la información disponible, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones de la licencia krea-2-community-license en Hugging Face antes de poder descargar los pesos. No se han publicado resultados de benchmarks, fichas de especificaciones detalladas ni documentación técnica adicional en la información disponible, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto/prompt | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| justintime47/Krea-2-Turbo-iQ4.5 | no disponible (estimación ~17,6 mil millones por tamaño del repo) | no disponible | iQ4.5 (MLX, imatrix) | krea-2-community-license | Acceso restringido (gated) en HuggingFace |
+| justintime47/Krea-2-Turbo-iQ4.5 | no disponible (estimación ~17,6 mil millones por tamaño del repo) | no disponible | iQ4.5 (MLX, imatrix) | krea-2-community-license | Acceso restringido (gated) en Hugging Face |
 | krea/Krea-2-Turbo (base) | no disponible | no disponible | Sin cuantizar (presumiblemente fp16/bf16) | krea-2-community-license | Modelo base referenciado en los tags del repositorio; disponibilidad no verificada en la información proporcionada |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos comparables en la información proporcionada; la búsqueda web no devolvió resultados relevantes |
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/justintime47/Krea-2-Turbo-iQ4.5
+- Modelo en Hugging Face: https://huggingface.co/justintime47/Krea-2-Turbo-iQ4.5
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Perfil del autor: https://huggingface.co/justintime47
 - Licencia krea-2-community-license: no disponible URL directa en la información proporcionada

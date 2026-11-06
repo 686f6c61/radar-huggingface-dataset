@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`heitorhei/deit-demo` es un repositorio de demostracion publicado en HuggingFace por el usuario heitorhei que contiene una implementacion funcional de un transformer DeiT (Data-efficient Image Transformer) orientada a tareas de generacion. El propio autor describe el artefacto como un punto de partida experimental: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. La model card omite deliberadamente cualquier afirmacion de rendimiento y no presenta resultados de benchmarks.
+`heitorhei/deit-demo` es un repositorio de demostracion publicado en Hugging Face por el usuario heitorhei que contiene una implementacion funcional de un transformer DeiT (Data-efficient Image Transformer) orientada a tareas de generacion. El propio autor describe el artefacto como un punto de partida experimental: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. La model card omite deliberadamente cualquier afirmacion de rendimiento y no presenta resultados de benchmarks.
 
 El dato mas llamativo es su tamano: 16.576 parametros totales, segun el recuento real de los pesos en safetensors. Esto contrasta con la denominacion "base" que aparece en la configuracion de arquitectura; un DeiT-base canonico ronda los 86 millones de parametros, por lo que esta etiqueta describe la receta de configuracion del script y no la magnitud real del modelo. El repositorio ocupa 0.0 GB y no registra descargas ni likes.
 
@@ -83,4 +83,4 @@ Advertencia: los modelos DeiT-base y ViT-base de referencia no son intercambiabl
 
 ## Enlaces
 
-- [Modelo en HuggingFace: heitorhei/deit-demo](https://huggingface.co/heitorhei/deit-demo)
+- [Modelo en Hugging Face: heitorhei/deit-demo](https://huggingface.co/heitorhei/deit-demo)

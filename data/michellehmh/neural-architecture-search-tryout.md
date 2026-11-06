@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michellehmh/neural-architecture-search-tryout` es un repositorio de HuggingFace publicado el 1 de octubre de 2026 por el usuario michellehmh que, pese a estar etiquetado con `transformer` y contener un fichero `safetensors`, no es un modelo de lenguaje entrenado. La propia model card lo describe como un cuaderno de notas de lectura y un esbozo de experimento sobre Neural Architecture Search (NAS), y afirma explícitamente que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni checkpoint entrenado.
+`michellehmh/neural-architecture-search-tryout` es un repositorio de Hugging Face publicado el 1 de octubre de 2026 por el usuario michellehmh que, pese a estar etiquetado con `transformer` y contener un fichero `safetensors`, no es un modelo de lenguaje entrenado. La propia model card lo describe como un cuaderno de notas de lectura y un esbozo de experimento sobre Neural Architecture Search (NAS), y afirma explícitamente que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni checkpoint entrenado.
 
 El repositorio contiene dos artefactos: `notes.md` (el documento principal) y `README.md`. El recuento real de parámetros del fichero safetensors es de 33.088, un orden de magnitud propio de un tensor de prueba o de un módulo mínimo, no de una red neuronal utilizable. No se declaran tokenizer, `config.json`, pipeline ni idiomas soportados, y el tamaño del repo es de 0,0 GB.
 
@@ -49,7 +49,7 @@ El contenido documental se limita a la metodología de un estudio de NAS: alcanc
 - Auditoría de rigor en revisiones internas: las secciones de modos de fallo y preguntas abiertas pueden reutilizarse como checklist al revisar planes de experimentos o manuscritos de otros equipos.
 - Docencia y formación: es un ejemplo práctico de cuaderno de investigación que separa explícitamente planes, hipótesis y resultados, útil para enseñar buenas prácticas de registro científico.
 - Definición de una política de reproducibilidad: el repositorio exige versiones de dataset, comandos, semillas, hardware y logs crudos antes de aceptar resultados, lo que sirve de base para un estándar interno de publicación.
-- Prueba de infraestructura de CI/CD para HuggingFace: al ser un repositorio mínimo con un safetensors de 33.088 parámetros, licencia y tags, permite validar scripts que comprueban presencia de ficheros, licencias y metadatos en el Hub.
+- Prueba de infraestructura de CI/CD para Hugging Face: al ser un repositorio mínimo con un safetensors de 33.088 parámetros, licencia y tags, permite validar scripts que comprueban presencia de ficheros, licencias y metadatos en el Hub.
 - Verificación del propio ecosistema de descarga: con 6 descargas registradas, sirve para comprobar el comportamiento de clientes `huggingface_hub`, caché local y conteo de parámetros con ficheros safetensors diminutos.
 
 Advertencia: ninguno de estos casos implica ejecutar el artefacto como modelo de inferencia; no existe soporte técnico para ello.
@@ -96,7 +96,7 @@ Como contexto del área temática (no como alternativas al artefacto), la búsqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michellehmh/neural-architecture-search-tryout
+- Modelo en Hugging Face: https://huggingface.co/michellehmh/neural-architecture-search-tryout
 - Discusiones del repositorio: https://huggingface.co/michellehmh/neural-architecture-search-tryout/discussions
 - Microsoft Archai (repositorio): https://github.com/microsoft/archai
 - Microsoft Archai (página de proyecto): https://www.microsoft.com/en-us/research/project/archai-platform-for-neural-architecture-search/

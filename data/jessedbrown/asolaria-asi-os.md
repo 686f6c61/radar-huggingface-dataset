@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Asolaria ASI OS no es un modelo de lenguaje ni una red neuronal: es un front-end de sistema operativo escrito integramente en Rust que se compila desde el codigo fuente y se ejecuta en la maquina del usuario. El repositorio de HuggingFace `Jessedbrown/asolaria-asi-os` no contiene pesos, tokenizadores ni artefactos de inferencia, por lo que las categorias habituales de esta ficha (parametros, contexto, cuantizacion) no son aplicables y se marcan como no disponibles.
+Asolaria ASI OS no es un modelo de lenguaje ni una red neuronal: es un front-end de sistema operativo escrito integramente en Rust que se compila desde el codigo fuente y se ejecuta en la maquina del usuario. El repositorio de Hugging Face `Jessedbrown/asolaria-asi-os` no contiene pesos, tokenizadores ni artefactos de inferencia, por lo que las categorias habituales de esta ficha (parametros, contexto, cuantizacion) no son aplicables y se marcan como no disponibles.
 
 El proyecto sirve una interfaz de escritorio a pantalla completa en `http://127.0.0.1:4600`, con gestor de ventanas, barra de tareas, menu de inicio y una franja de estado que sondea demonios locales del denominado "fabric" Asolaria (kernel 8-byte-host en el puerto `:5088`, vault recall en `:4796`, bus en `:4947`, dashboard en `:4949`). Incluye aplicaciones como terminal real (cmd, PowerShell, WSL bash) sobre un emulador VT100/xterm propio con soporte ConPTY, monitor de sistema, buscador sobre un vault local y explorador de ficheros en solo lectura.
 
@@ -24,7 +24,7 @@ La relevancia del repositorio, si alguna, es la de servir de superficie de demos
 | Dependencias externas | cero crates externos; solo `std` |
 | Puerto de servicio | 127.0.0.1:4600 |
 | Sistemas operativos | Linux, macOS y Windows (algunas funciones son especificas de Windows) |
-| Fecha de creacion en HuggingFace | 2026-10-16 |
+| Fecha de creacion en Hugging Face | 2026-10-16 |
 | Ultima actualizacion | 2026-10-10 |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ No disponible. No existen modelos comparables porque `Jessedbrown/asolaria-asi-o
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene pesos, tokenizador ni configuracion de inferencia; quien espere un modelo utilizable no lo encontrara aqui.
+- El repositorio de Hugging Face no contiene pesos, tokenizador ni configuracion de inferencia; quien espere un modelo utilizable no lo encontrara aqui.
 - La model card no declara licencia. Sin licencia explicita no puede asumirse permiso de uso comercial, redistribucion ni modificacion.
 - El autor reconoce explicitamente una "frontera honesta": solo la superficie del sistema operativo es ejecutable y completa. Los demonios recall, host8 y Hilbra son procesos separados que el usuario debe levantar por su cuenta; este repositorio no incluye sus binarios.
 - Las ideas cosmologicas mas amplias del proyecto Asolaria se describen como documentadas pero acotadas, sin que se aporten artefactos verificables en este repositorio.
@@ -91,7 +91,7 @@ No disponible. No existen modelos comparables porque `Jessedbrown/asolaria-asi-o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jessedbrown/asolaria-asi-os
+- Hugging Face: https://huggingface.co/Jessedbrown/asolaria-asi-os
 - Repositorio principal (segun la model card): https://github.com/JesseBrown1980/asolaria-asi-os
 - asolaria-federation-1024: https://github.com/JesseBrown1980/asolaria-federation-1024
 - Hilbra: https://github.com/JesseBrown1980/Hilbra

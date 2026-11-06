@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos, ya que ninguno de los tres m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wenlongzhao/ARPO-reproduce_Qwen3-8B_SFT_code-config
+- Hugging Face: https://huggingface.co/wenlongzhao/ARPO-reproduce_Qwen3-8B_SFT_code-config
 - Paper ARPO: https://arxiv.org/abs/2507.19849
 - Dataset de entrenamiento: https://huggingface.co/datasets/dongguanting/ARPO-SFT-54K
 - LLaMA-Factory: https://github.com/hiyouga/LLaMA-Factory

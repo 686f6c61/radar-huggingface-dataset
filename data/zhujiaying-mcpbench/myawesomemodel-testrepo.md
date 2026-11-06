@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo alojado en un repositorio de HuggingFace con el identificador `zhujiaying-mcpbench/MyAwesomeModel-TestRepo`, creado por el usuario `zhujiaying-mcpbench`. El repositorio está vacío (0.0 GB), por lo que no contiene pesos, configuración ni código ejecutable. La model card describe un modelo de lenguaje con capacidades de razonamiento, generación de código y soporte para function calling, y menciona una actualización reciente que mejora el rendimiento en tareas de lógica y matemáticas. Sin embargo, no se proporcionan datos técnicos verificables como arquitectura, número de parámetros, longitud de contexto o detalles de entrenamiento. El pipeline declarado es `feature-extraction`, lo que resulta contradictorio con las capacidades de generación de texto descritas en la documentación. En su estado actual, el modelo no es utilizable ni evaluable de forma independiente.
+MyAwesomeModel es un modelo alojado en un repositorio de Hugging Face con el identificador `zhujiaying-mcpbench/MyAwesomeModel-TestRepo`, creado por el usuario `zhujiaying-mcpbench`. El repositorio está vacío (0.0 GB), por lo que no contiene pesos, configuración ni código ejecutable. La model card describe un modelo de lenguaje con capacidades de razonamiento, generación de código y soporte para function calling, y menciona una actualización reciente que mejora el rendimiento en tareas de lógica y matemáticas. Sin embargo, no se proporcionan datos técnicos verificables como arquitectura, número de parámetros, longitud de contexto o detalles de entrenamiento. El pipeline declarado es `feature-extraction`, lo que resulta contradictorio con las capacidades de generación de texto descritas en la documentación. En su estado actual, el modelo no es utilizable ni evaluable de forma independiente.
 
 ## Especificaciones tecnicas
 
@@ -59,4 +59,4 @@ No disponible. No se puede comparar con alternativas de la misma categoria porqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhujiaying-mcpbench/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/zhujiaying-mcpbench/MyAwesomeModel-TestRepo

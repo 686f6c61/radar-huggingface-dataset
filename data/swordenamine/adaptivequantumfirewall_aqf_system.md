@@ -4,7 +4,7 @@
 
 El repositorio `swordenamine/AdaptiveQuantumFirewall_AQF_System` no es un modelo de lenguaje ni un conjunto de pesos entrenados, sino la ficha de un supuesto sistema de ciberseguridad denominado Adaptive Quantum Firewall (AQF). La model card describe una plataforma que combina circuitos cuanticos variacionales, aprendizaje profundo, GAN, graph neural networks y un bucle de RLHF para construir una defensa autonoma capaz de clasificar trafico, predecir ataques y redirigir amenazas hacia honeypots generados dinamicamente. No se publica ningun dato sobre arquitectura de red neuronal concreta, numero de parametros, ventana de contexto, tokenizador ni corpus de entrenamiento.
 
-El repositorio acumula 0 descargas y 0 likes, no declara pipeline de HuggingFace y no incluye ficheros de pesos en formato safetensors, GGUF ni equivalente. Toda la informacion tecnica disponible corresponde a la descripcion de modulos escrita por el autor y a una tabla de metricas de rendimiento declaradas, sin verificacion independiente ni artefactos reproducibles que las respalden.
+El repositorio acumula 0 descargas y 0 likes, no declara pipeline de Hugging Face y no incluye ficheros de pesos en formato safetensors, GGUF ni equivalente. Toda la informacion tecnica disponible corresponde a la descripcion de modulos escrita por el autor y a una tabla de metricas de rendimiento declaradas, sin verificacion independiente ni artefactos reproducibles que las respalden.
 
 Por tanto, esta ficha se limita a documentar lo que el autor afirma y a marcar explicitamente como "no disponible" todo aquello que no puede contrastarse. No debe tratarse como un modelo evaluable ni desplegable en produccion en su estado actual.
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha se limita a documentar lo que el autor afirma y a marcar e
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card indica "MIT License" |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card indica "MIT License" |
 | Formato de pesos | no disponible (la estructura del repositorio menciona un directorio `models/` para "saved model weights", pero no se declara ningun fichero ni formato) |
 
 ## Arquitectura y entrenamiento
@@ -92,15 +92,15 @@ No disponible. No existen modelos comparables en el sentido habitual, porque el 
 | Parametros | no disponible | no disponible |
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | solo metricas declaradas por el autor | no disponible |
-| Licencia | MIT segun la model card; ausente en metadatos de HuggingFace | no disponible |
+| Licencia | MIT segun la model card; ausente en metadatos de Hugging Face | no disponible |
 | Disponibilidad de pesos | no se declaran | no disponible |
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene un modelo entrenado: no hay pesos, tokenizador, configuracion de inferencia ni artefactos descargables. El pipeline de HuggingFace no esta definido.
+- El repositorio no contiene un modelo entrenado: no hay pesos, tokenizador, configuracion de inferencia ni artefactos descargables. El pipeline de Hugging Face no esta definido.
 - Ausencia total de adopcion: 0 descargas y 0 likes, sin senales de uso, validacion o mantenimiento por parte de la comunidad.
 - Las metricas de rendimiento (99,2 % de precision, 0,08 % de falsos positivos, 87 % de deteccion de zero-day) se presentan sin dataset, sin metodologia y sin posibilidad de reproduccion. Deben tratarse como afirmaciones de marketing, no como resultados.
-- Inconsistencias documentales: el autor figura como `swordenamine` en HuggingFace pero la model card se atribuye a "swordenkisk"; la fecha de creacion (2026-10-17) es posterior a la de actualizacion (2026-02-15); la licencia MIT aparece en el texto pero no en los metadatos del repositorio.
+- Inconsistencias documentales: el autor figura como `swordenamine` en Hugging Face pero la model card se atribuye a "swordenkisk"; la fecha de creacion (2026-10-17) es posterior a la de actualizacion (2026-02-15); la licencia MIT aparece en el texto pero no en los metadatos del repositorio.
 - Ambiguedad sobre el componente cuantico: se describen circuitos variacionales, quantum annealing y "quantum teleportation simulation" sin especificar backend, numero de qubits ni si existe ejecucion en hardware real. La teleportacion cuantica no permite transmitir informacion clasica mas rapida que la luz, por lo que su uso para redireccion de trafico en red es, como minimo, una simulacion educativa.
 - Riesgo de sobreventa conceptual: terminos como "self-evolving" u "autonomous cyber defense" no van acompanados de evidencia experimental ni de analisis de fallos.
 - Riesgo de seguridad operativa: el sistema se describe como software que inspecciona trafico y orquesta contenedores Docker. Ejecutarlo en una red de produccion sin auditoria de codigo, sin analisis de dependencias y sin revision de permisos del orquestador expone a riesgos de escalada y de exposicion de datos de red.
@@ -111,6 +111,6 @@ No disponible. No existen modelos comparables en el sentido habitual, porque el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swordenamine/AdaptiveQuantumFirewall_AQF_System
+- Hugging Face: https://huggingface.co/swordenamine/AdaptiveQuantumFirewall_AQF_System
 - Repositorio GitHub citado en la model card: https://github.com/swordenkisk/aqf-system
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo o sistema. Las busquedas devolvieron exclusivamente contenido no relacionado y sin valor tecnico, por lo que se omiten.

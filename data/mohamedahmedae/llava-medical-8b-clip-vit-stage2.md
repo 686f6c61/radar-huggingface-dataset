@@ -4,7 +4,7 @@
 
 El modelo `MohamedAhmedAE/llava-medical-8B-clip-vit-stage2` es un adaptador de visión-lenguaje para el dominio médico, desarrollado por el usuario MohamedAhmedAE. A pesar de que el nombre sugiere una arquitectura de 8B parámetros, los pesos reales en formato safetensors indican 188.751.872 parámetros (aproximadamente 0,2B), lo que sugiere que se trata de un proyecto de investigación o un checkpoint intermedio. El repositorio ocupa 1105,1 GB, un tamaño desproporcionado para el número de parámetros, lo que podría indicar la inclusión de múltiples archivos de entrenamiento o datos adicionales.
 
-El modelo se enmarca en la línea de LLaVA (Large Language and Vision Assistant), aplicado específicamente a imágenes médicas. No se dispone de información sobre la arquitectura exacta, el proceso de entrenamiento, las capacidades o los benchmarks, ya que la ficha de HuggingFace está vacía y no se han encontrado documentos técnicos asociados. Su relevancia actual es limitada debido a la falta de documentación y a que no está desplegado en ningún proveedor de inferencia.
+El modelo se enmarca en la línea de LLaVA (Large Language and Vision Assistant), aplicado específicamente a imágenes médicas. No se dispone de información sobre la arquitectura exacta, el proceso de entrenamiento, las capacidades o los benchmarks, ya que la ficha de Hugging Face está vacía y no se han encontrado documentos técnicos asociados. Su relevancia actual es limitada debido a la falta de documentación y a que no está desplegado en ningún proveedor de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Limitaciones y advertencias
 
-- No hay documentación técnica: la ficha de HuggingFace está vacía, lo que impide conocer sesgos, limitaciones o advertencias específicas.
+- No hay documentación técnica: la ficha de Hugging Face está vacía, lo que impide conocer sesgos, limitaciones o advertencias específicas.
 - Riesgo de alucinación: al ser un modelo de visión-lenguaje sin validación, es probable que genere respuestas incorrectas en contextos médicos, lo que podría ser peligroso si se usa sin supervisión.
 - Licencia desconocida: no se especifica la licencia, por lo que no se puede garantizar su uso comercial o la redistribución.
 - Tamaño del repositorio anómalo: 1105 GB para un modelo de 0,2B sugiere que el repositorio contiene archivos no relacionados o datos de entrenamiento, lo que dificulta su descarga y uso práctico.
@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - MohamedAhmedAE/llava-medical-8B-clip-vit-stage2](https://huggingface.co/MohamedAhmedAE/llava-medical-8B-clip-vit-stage2)
-- [HuggingFace - MohamedAhmedAE/LLaVA-Llama-8B-medical-full](https://huggingface.co/MohamedAhmedAE/LLaVA-Llama-8B-medical-full)
-- [HuggingFace - MohamedAhmedAE/llava-medical-8B-clip-vit_kaggle-stage2](https://huggingface.co/MohamedAhmedAE/llava-medical-8B-clip-vit_kaggle-stage2)
+- [Hugging Face - MohamedAhmedAE/llava-medical-8B-clip-vit-stage2](https://huggingface.co/MohamedAhmedAE/llava-medical-8B-clip-vit-stage2)
+- [Hugging Face - MohamedAhmedAE/LLaVA-Llama-8B-medical-full](https://huggingface.co/MohamedAhmedAE/LLaVA-Llama-8B-medical-full)
+- [Hugging Face - MohamedAhmedAE/llava-medical-8B-clip-vit_kaggle-stage2](https://huggingface.co/MohamedAhmedAE/llava-medical-8B-clip-vit_kaggle-stage2)
 - [GitHub - microsoft/LLaVA-Med](https://github.com/microsoft/LLaVA-Med)

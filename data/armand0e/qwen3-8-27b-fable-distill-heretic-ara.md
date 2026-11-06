@@ -83,7 +83,7 @@ La comparativa se limita a los modelos directamente relacionados. No se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara
+- Modelo en Hugging Face: https://huggingface.co/armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara
 - Modelo base TeichAI: https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill
 - Repositorio de Heretic: https://github.com/p-e-w/heretic
 - Pull request de ARA: https://github.com/p-e-w/heretic/pull/211

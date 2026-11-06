@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| opd-teacher-Q2.5I-Cornfield-step149 | 1,54 B | 32.768 tokens (heredado, no confirmado) | Apache-2.0 | HuggingFace, safetensors | no disponibles |
-| Qwen2.5-1.5B-Instruct (modelo base) | 1,54 B | 32.768 tokens, ampliable con YaRN | Apache-2.0 | HuggingFace, safetensors/GGUF/AWQ/GPTQ | si, publicados por Qwen |
-| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache-2.0 | HuggingFace | si, publicados por Qwen |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, GGUF | si, publicados por Meta |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens (segun la ficha de HuggingFace del modelo) | Apache-2.0 | HuggingFace, GGUF | si, publicados por HuggingFace |
+| opd-teacher-Q2.5I-Cornfield-step149 | 1,54 B | 32.768 tokens (heredado, no confirmado) | Apache-2.0 | Hugging Face, safetensors | no disponibles |
+| Qwen2.5-1.5B-Instruct (modelo base) | 1,54 B | 32.768 tokens, ampliable con YaRN | Apache-2.0 | Hugging Face, safetensors/GGUF/AWQ/GPTQ | si, publicados por Qwen |
+| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache-2.0 | Hugging Face | si, publicados por Qwen |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, GGUF | si, publicados por Meta |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens (segun la ficha de Hugging Face del modelo) | Apache-2.0 | Hugging Face, GGUF | si, publicados por Hugging Face |
 
 Los datos de contexto y licencia de los modelos comparados son valores de referencia de sus respectivas fichas publicas y no proceden de la informacion proporcionada en esta busqueda. La comparativa de rendimiento no puede completarse porque este checkpoint no publica metricas.
 
@@ -86,7 +86,7 @@ Los datos de contexto y licencia de los modelos comparados son valores de refere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Cornfield-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Cornfield-step149
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-opd-teachers/runs/f079b511
 - Codigo de entrenamiento (RLVE): https://github.com/davidheineman/rlve

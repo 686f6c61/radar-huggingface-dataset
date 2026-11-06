@@ -67,7 +67,7 @@ No disponible: la informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MVRL/genesis
+- Hugging Face: https://huggingface.co/MVRL/genesis
 - Pagina del proyecto: https://subash-khanal.github.io/genesis
 - arXiv: "coming soon" (no disponible)
 - Codigo: https://github.com/mvrl/genesis

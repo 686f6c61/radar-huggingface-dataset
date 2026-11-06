@@ -30,7 +30,7 @@ Tampoco se documentan el número de tokens de entrenamiento, la composición del
 ## Capacidades
 
 - Generación de texto conversacional en inglés, según la etiqueta `conversational` del repositorio.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que permite su despliegue tras una API compatible con el formato de HuggingFace.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que permite su despliegue tras una API compatible con el formato de Hugging Face.
 - Carga mediante la librería `transformers` según la metadata, aunque el formato GGUF está pensado para llama.cpp y derivados.
 - Capacidades de razonamiento, código, matemáticas, tool calling, agentes o visión: no documentadas en la información disponible.
 - Capacidades multilingües: limitadas al inglés según la etiqueta de idioma; no se confirma soporte de castellano.
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| HER-qwen3-32B-GGUF | 32,8B | no disponible | no disponible | GGUF | HuggingFace (22 descargas) |
-| Qwen3-32B (oficial) | 32,8B | no disponible en esta ficha | Apache 2.0 (según familia Qwen3) | safetensors, GGUF | HuggingFace, ampliamente adoptado |
-| Mistral Small 3 (24B) | 24B | 32K | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente adoptado |
-| Gemma 3 27B | 27B | 128K | Gemma Terms | safetensors, GGUF | HuggingFace, ampliamente adoptado |
+| HER-qwen3-32B-GGUF | 32,8B | no disponible | no disponible | GGUF | Hugging Face (22 descargas) |
+| Qwen3-32B (oficial) | 32,8B | no disponible en esta ficha | Apache 2.0 (según familia Qwen3) | safetensors, GGUF | Hugging Face, ampliamente adoptado |
+| Mistral Small 3 (24B) | 24B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente adoptado |
+| Gemma 3 27B | 27B | 128K | Gemma Terms | safetensors, GGUF | Hugging Face, ampliamente adoptado |
 
 La comparación con Qwen3-32B oficial es la más directa, ya que HER-qwen3-32B parece derivar de ella; sin embargo, no se dispone de datos que permitan afirmar si el fine-tune mejora o degrada el rendimiento base. Frente a Mistral Small 3 y Gemma 3 27B, el modelo de esta ficha carece de documentación de licencia y de benchmarks, lo que reduce su atractivo para producción frente a alternativas con garantías legales y métricas publicadas.
 

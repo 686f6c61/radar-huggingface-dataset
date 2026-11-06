@@ -98,7 +98,7 @@ No hay datos publicados de comparacion directa con otros recuperadores medicos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenhaodev/stcc-reader
+- Modelo en Hugging Face: https://huggingface.co/chenhaodev/stcc-reader
 - Modelo base BAAI/bge-base-zh-v1.5: https://huggingface.co/BAAI/bge-base-zh-v1.5
 - Modelo relacionado del mismo autor (eqreader-qwen3.5-0.8b): https://huggingface.co/chenhaodev/eqreader-qwen3.5-0.8b
-- Espacio del autor en HuggingFace: https://huggingface.co/chenhaodev/spaces
+- Espacio del autor en Hugging Face: https://huggingface.co/chenhaodev/spaces

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-ExecuTorch | 3,21 B (pesos 4 bits) | 2k, 4k, 8k y 16k (ventana fija en el archivo) | `.pte` (ExecuTorch/XNNPACK) | Llama 3.2 | HuggingFace; requiere runtime ExecuTorch 1.4.0 o app openweights |
-| meta-llama/Llama-3.2-3B | 3,21 B (bf16) | 128k | safetensors | Llama 3.2 | HuggingFace; requiere GPU o CPU con suficiente memoria |
-| Llama-3.2-1B | 1,24 B | 128k | safetensors | Llama 3.2 | HuggingFace; alternativa más ligera para dispositivo |
-| Qwen2.5-3B | 3,09 B | 32.768 tokens nativos | safetensors | Apache-2.0 | HuggingFace; cuantizaciones GGUF de terceros para llama.cpp |
+| Llama-3.2-3B-ExecuTorch | 3,21 B (pesos 4 bits) | 2k, 4k, 8k y 16k (ventana fija en el archivo) | `.pte` (ExecuTorch/XNNPACK) | Llama 3.2 | Hugging Face; requiere runtime ExecuTorch 1.4.0 o app openweights |
+| meta-llama/Llama-3.2-3B | 3,21 B (bf16) | 128k | safetensors | Llama 3.2 | Hugging Face; requiere GPU o CPU con suficiente memoria |
+| Llama-3.2-1B | 1,24 B | 128k | safetensors | Llama 3.2 | Hugging Face; alternativa más ligera para dispositivo |
+| Qwen2.5-3B | 3,09 B | 32.768 tokens nativos | safetensors | Apache-2.0 | Hugging Face; cuantizaciones GGUF de terceros para llama.cpp |
 | Llama-3.2-3B en GGUF (4 bits) | 3,21 B | Configurable según el runtime (hasta 128k en el modelo base) | GGUF | Llama 3.2 | llama.cpp, Ollama y otros runners de CPU |
 
 Los datos de las alternativas proceden de sus model cards públicas, no de la información recopilada para esta ficha. No se dispone de comparativas de rendimiento (MMLU, HumanEval u otras) entre estas opciones.

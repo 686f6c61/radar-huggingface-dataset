@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Syzseisus/S3-Prompt",
+  "slug": "syzseisus-s3-prompt",
+  "author": "Syzseisus",
+  "url": "https://huggingface.co/Syzseisus/S3-Prompt",
+  "created_at": "2026-11-06T11:27:13.000Z",
+  "updated_at": "2026-11-06T11:56:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "molecular-property-prediction",
+    "activity-cliff",
+    "in-context-learning",
+    "soft-prompt",
+    "llama",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15682387476,
+  "storage_human": "15.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 2026 Guide to Prompt Engineering - IBM",
+      "url": "https://www.ibm.com/think/prompt-engineering",
+      "snippet": "A prompt engineering guide is a practical resource for understanding how to craft effective prompts to interact with artificial intelligence (AI) models such as IBM® Granite®, Open AI’s GPT, DALL-E, Stable Diffusion, Anthropic’s Claude , Google‘s Bard and other generative systems. Prompt engineering is the process of designing and refining input instructions to guide AI behavior and ..."
+    },
+    {
+      "title": "Prompt engineering best practices for 2026 | Claude by Anthropic",
+      "url": "https://claude.com/resources/articles/best-practices-for-prompt-engineering",
+      "snippet": "What is prompt engineering? Prompt engineering is the craft of structuring instructions to get better outputs from AI models. It's how you phrase queries, specify style, provide context, and guide the model's behavior to achieve your goals. The difference between a vague instruction and a well-crafted prompt can mean the gap between generic outputs and exactly what you need. A poorly ..."
+    },
+    {
+      "title": "Prompt Engineering Guide (Complete Techniques 2026)",
+      "url": "https://itsourcecode.com/blogs/prompt-engineering-guide-2026/",
+      "snippet": "Prompt engineering is the art of writing instructions that get AI to give you exactly what you want. A great prompt can turn a mediocre AI response into a production-ready result. This 2026 guide covers every prompt engineering technique, role prompting, few-shot learning, chain of thought, ReAct, and more, with real examples that work."
+    },
+    {
+      "title": "Free AI Prompt Builder | Create Perfect Prompts in Seconds",
+      "url": "https://musely.ai/tools/ai-prompt-builder",
+      "snippet": "Create powerful AI prompts instantly with our AI Prompt Builder. Free tool to optimize prompts for ChatGPT, Midjourney, and other AI models. Get better results in seconds!"
+    },
+    {
+      "title": "The Free AI Prompt Generator [Unlimited & No Login] - Feedough",
+      "url": "https://www.feedough.com/ai-prompt-generator/",
+      "snippet": "Free AI prompt generator and prompt enhancer. Create a new prompt or paste one to improve it for ChatGPT, Claude, Gemini, images and video. No login."
+    }
+  ]
+}

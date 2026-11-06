@@ -88,10 +88,10 @@ Los datos de parametros de los modelos comparados no figuran en la informacion p
 
 | Modelo | Parametros | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| skillsafe-ai/depth-anything-v2-small (esta ficha) | no disponible (pesos de 26-94 MB; el upstream se cifra en torno a 24,8 M) | ONNX fp32/fp16/int8, navegador via onnxruntime-web | Apache-2.0 | HuggingFace, repo de 0,2 GB, 0 descargas y 0 likes en el momento de la consulta |
-| Depth Anything V2 Base (misma familia, mismo autor upstream) | no disponible en la informacion facilitada | pesos PyTorch en el repositorio oficial; versiones ONNX por onnx-community | Apache-2.0 | HuggingFace / GitHub oficial |
-| Depth Anything V2 Large (misma familia) | no disponible en la informacion facilitada | pesos PyTorch en el repositorio oficial; versiones ONNX por onnx-community | Apache-2.0 | HuggingFace / GitHub oficial |
-| Depth Anything V1 y MiDaS (lineas predecesoras) | no disponible | PyTorch, distintos formatos de exportacion | Apache-2.0 / MIT segun variante | HuggingFace / GitHub oficial |
+| skillsafe-ai/depth-anything-v2-small (esta ficha) | no disponible (pesos de 26-94 MB; el upstream se cifra en torno a 24,8 M) | ONNX fp32/fp16/int8, navegador via onnxruntime-web | Apache-2.0 | Hugging Face, repo de 0,2 GB, 0 descargas y 0 likes en el momento de la consulta |
+| Depth Anything V2 Base (misma familia, mismo autor upstream) | no disponible en la informacion facilitada | pesos PyTorch en el repositorio oficial; versiones ONNX por onnx-community | Apache-2.0 | Hugging Face / GitHub oficial |
+| Depth Anything V2 Large (misma familia) | no disponible en la informacion facilitada | pesos PyTorch en el repositorio oficial; versiones ONNX por onnx-community | Apache-2.0 | Hugging Face / GitHub oficial |
+| Depth Anything V1 y MiDaS (lineas predecesoras) | no disponible | PyTorch, distintos formatos de exportacion | Apache-2.0 / MIT segun variante | Hugging Face / GitHub oficial |
 
 Criterio de eleccion orientativo (sin datos de calidad que lo respalden): la variante Small es la adecuada cuando el presupuesto de descarga y de computo en el cliente es el factor limitante; las variantes Base y Large tienen sentido cuando la precision geometrica importa mas que el coste y la inferencia puede hacerse en servidor.
 
@@ -110,7 +110,7 @@ Criterio de eleccion orientativo (sin datos de calidad que lo respalden): la var
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/depth-anything-v2-small
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/depth-anything-v2-small
 - Modelo base (upstream ONNX): https://huggingface.co/onnx-community/depth-anything-v2-small
 - Commit upstream fijado: https://huggingface.co/onnx-community/depth-anything-v2-small/tree/4472b7362082ad9968fee890ca0f1e5aca36b93d
 - Repositorio oficial de Depth Anything V2: https://github.com/DepthAnything/Depth-Anything-V2

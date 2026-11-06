@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`misapapa71/model-mika-krea2` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario `misapapa71` y publicado en HuggingFace. El adaptador se entrena sobre los pesos de `krea/Krea-2-Raw` y se muestra en la model card funcionando sobre `krea/Krea-2-Turbo`, la variante destilada para inferencia rapida. Su proposito es fijar un concepto visual concreto (una identidad de personaje denominada `model-Mika-krea2`) para que el modelo base lo reproduzca de forma consistente ante distintas indicaciones de texto.
+`misapapa71/model-mika-krea2` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario `misapapa71` y publicado en Hugging Face. El adaptador se entrena sobre los pesos de `krea/Krea-2-Raw` y se muestra en la model card funcionando sobre `krea/Krea-2-Turbo`, la variante destilada para inferencia rapida. Su proposito es fijar un concepto visual concreto (una identidad de personaje denominada `model-Mika-krea2`) para que el modelo base lo reproduzca de forma consistente ante distintas indicaciones de texto.
 
 El repositorio es pequeno (0,8 GB) y contiene unicamente los pesos del adaptador, no el modelo base, por lo que requiere descargar Krea 2 por separado. La licencia declarada es Apache 2.0. No se especifican idiomas soportados ni datos de entrenamiento mas alla de la referencia a DreamBooth.
 
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento ni de parametros de los modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/misapapa71/model-mika-krea2
+- Modelo en Hugging Face: https://huggingface.co/misapapa71/model-mika-krea2
 - Modelo base (Raw): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (Turbo, usado en los ejemplos): https://huggingface.co/krea/Krea-2-Turbo

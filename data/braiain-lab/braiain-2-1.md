@@ -42,7 +42,7 @@ Los datos de entrenamiento suman 349 tokens y se componen de "The Ten Instructio
 - Docencia sobre fundamentos de modelos de lenguaje: sirve para mostrar en clase la diferencia entre un modelo estadístico de n-gramas y un transformer, ejecutándolo sin dependencias y con un coste computacional nulo.
 - Demostración de muestreo y retroceso: permite explicar de forma tangible cómo funciona el backoff de trigramas a bigramas y unigramas sobre un fichero JSON legible.
 - Crítica y sátira del sector: útil en artículos o charlas que analicen la inflación de benchmarks y las fichas de modelos, ya que el propio autor documenta que su resultado en TruthfulQA se explica por el sesgo de longitud de la métrica.
-- Pruebas de infraestructura de publicación de modelos: al ser un artefacto mínimo con licencia CC0, sirve para validar pipelines de descarga, versionado y servido de artefactos en HuggingFace sin coste de GPU.
+- Pruebas de infraestructura de publicación de modelos: al ser un artefacto mínimo con licencia CC0, sirve para validar pipelines de descarga, versionado y servido de artefactos en Hugging Face sin coste de GPU.
 - Ejercicio de evaluación de métricas: el contraste entre la puntuación por palabra (30,1 %) y la log-verosimilitud bruta (21,4 %) en TruthfulQA MC1 constituye un caso práctico para estudiar cómo la normalización por longitud altera los resultados.
 - Ejemplo de contaminación por autoentrenamiento: el 31,8 % de tokens autogenerados permite ilustrar los riesgos de los bucles de datos sintéticos en modelos reales.
 
@@ -70,8 +70,8 @@ El propio autor señala que la ventaja sobre el azar en TruthfulQA se debe únic
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| brAIAIn-2.1 | 381 (conteos) | 2 tokens | Trigramas con backoff | CC0-1.0 | HuggingFace |
-| GPT-2 small | 124 M | 1.024 tokens | Transformer decoder | MIT | HuggingFace |
+| brAIAIn-2.1 | 381 (conteos) | 2 tokens | Trigramas con backoff | CC0-1.0 | Hugging Face |
+| GPT-2 small | 124 M | 1.024 tokens | Transformer decoder | MIT | Hugging Face |
 | Modelos de n-gramas clásicos (p. ej. KenLM) | Variable según corpus | n configurable | n-gramas con suavizado | Según corpus | Librerías estándar |
 
 La comparación con modelos neuronales no es significativa en términos de calidad: brAIAIn-2.1 no compite en ninguna tarea de generación real. Su categoría real es la de los modelos de n-gramas estadísticos, donde se distingue por su tamaño mínimo, su licencia de dominio público y su carácter de sátira.
@@ -89,7 +89,7 @@ La comparación con modelos neuronales no es significativa en términos de calid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braiain-lab/brAIAIn-2.1
+- Modelo en Hugging Face: https://huggingface.co/braiain-lab/brAIAIn-2.1
 - Demo en Spaces: https://huggingface.co/spaces/braiain-lab/brAIAIn
 - Sitio del laboratorio: https://www.braiain.com
 - Informe técnico ("Toward Understanding brAIAIn-2.1, and Away From It"): https://www.braiain.com/paper.html?v=3

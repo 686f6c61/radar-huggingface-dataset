@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-LowMemory es una cuantizacion comunitaria del modelo Nemotron-3.5-Bolt-E4B de NVIDIA, publicada por el usuario arvedo en HuggingFace. Se trata de una version comprimida en formato NVFP4 (FP4 E2M1 de NVIDIA Blackwell) disenada especificamente para ejecutarse en GPUs de consumo con 6 GB y 8 GB de VRAM, como la RTX 4060, RTX 3060, RTX 5060 o RTX 5070, ademas de configuraciones de memoria unificada en Apple Silicon. El checkpoint completo ocupa 4,79 GiB en un unico archivo safetensors, lo que supone una reduccion superior al 45 % respecto a BF16 (8,8 GB) y del 20 % frente a una cuantizacion NVFP4 estandar con embeddings sin cuantizar (6,0 GB).
+NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-LowMemory es una cuantizacion comunitaria del modelo Nemotron-3.5-Bolt-E4B de NVIDIA, publicada por el usuario arvedo en Hugging Face. Se trata de una version comprimida en formato NVFP4 (FP4 E2M1 de NVIDIA Blackwell) disenada especificamente para ejecutarse en GPUs de consumo con 6 GB y 8 GB de VRAM, como la RTX 4060, RTX 3060, RTX 5060 o RTX 5070, ademas de configuraciones de memoria unificada en Apple Silicon. El checkpoint completo ocupa 4,79 GiB en un unico archivo safetensors, lo que supone una reduccion superior al 45 % respecto a BF16 (8,8 GB) y del 20 % frente a una cuantizacion NVFP4 estandar con embeddings sin cuantizar (6,0 GB).
 
 El modelo base emplea una arquitectura de tipo transformer con 42 capas y un mecanismo de Per-Layer Embeddings (PLE) con vocabulario de 262.144 tokens y dimension de 1.280. La cuantizacion afecta tanto al cuerpo transformer como a las matrices de proyeccion de embeddings, mientras que los proyectores multimodales (vision SigLIP y audio) se mantienen en MXFP8 (E4M3) para preservar su precision. El autor reporta 8.667.245.130 parametros totales en el archivo safetensors y una ventana de contexto operativa de 32.768 tokens configurada en el ejemplo de despliegue con vLLM.
 
@@ -98,5 +98,5 @@ No se dispone de informacion sobre otros modelos de la familia Nemotron-3.5 ni s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-LowMemory
+- Hugging Face: https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-LowMemory
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos del modelo base o de la cuantizacion.

@@ -97,7 +97,7 @@ No se dispone de datos suficientes para establecer una comparativa tecnica con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DoppelApp/judgment
+- Modelo en Hugging Face: https://huggingface.co/DoppelApp/judgment
 - Modelo de origen citado en la atribucion: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

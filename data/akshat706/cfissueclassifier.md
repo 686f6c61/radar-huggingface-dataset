@@ -1,7 +1,7 @@
 # akshat706/cfIssueClassifier
 
 ## Resumen
-El modelo `akshat706/cfIssueClassifier` es un clasificador de issues publicado en HuggingFace bajo licencia MIT. Según la información disponible, no se especifican detalles sobre su arquitectura, tamaño o entrenamiento. El nombre sugiere que está orientado a clasificar incidencias (issues) en entornos de desarrollo, posiblemente en el contexto de Cloudflare Workers o herramientas similares, aunque no hay documentación técnica que lo confirme. Su relevancia actual es limitada, dado que no cuenta con descargas ni likes, y su model card está vacía salvo por la licencia. Se desconoce si está relacionado con el repositorio de terceros `sudheerb9/cf_ai_issue_classifier`, que sí describe una aplicación para clasificar issues en Linear mediante IA.
+El modelo `akshat706/cfIssueClassifier` es un clasificador de issues publicado en Hugging Face bajo licencia MIT. Según la información disponible, no se especifican detalles sobre su arquitectura, tamaño o entrenamiento. El nombre sugiere que está orientado a clasificar incidencias (issues) en entornos de desarrollo, posiblemente en el contexto de Cloudflare Workers o herramientas similares, aunque no hay documentación técnica que lo confirme. Su relevancia actual es limitada, dado que no cuenta con descargas ni likes, y su model card está vacía salvo por la licencia. Se desconoce si está relacionado con el repositorio de terceros `sudheerb9/cf_ai_issue_classifier`, que sí describe una aplicación para clasificar issues en Linear mediante IA.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |

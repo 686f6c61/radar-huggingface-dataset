@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sundaycoil/config-watcher` en HuggingFace no contiene información que permita identificarlo como un modelo de inteligencia artificial. Los metadatos disponibles (tags `region:us`, descargas 0, likes 6, pipeline no disponible, licencia no disponible, idiomas no disponibles) indican que se trata de un espacio sin especificaciones técnicas publicadas. El nombre sugiere una posible herramienta de monitoreo de configuración, pero no se dispone de ningún dato sobre arquitectura, parámetros, entrenamiento o capacidades. Por tanto, no es posible elaborar una ficha técnica de un modelo de IA con la información proporcionada.
+El repositorio `sundaycoil/config-watcher` en Hugging Face no contiene información que permita identificarlo como un modelo de inteligencia artificial. Los metadatos disponibles (tags `region:us`, descargas 0, likes 6, pipeline no disponible, licencia no disponible, idiomas no disponibles) indican que se trata de un espacio sin especificaciones técnicas publicadas. El nombre sugiere una posible herramienta de monitoreo de configuración, pero no se dispone de ningún dato sobre arquitectura, parámetros, entrenamiento o capacidades. Por tanto, no es posible elaborar una ficha técnica de un modelo de IA con la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. No existe información que permita comparar este repositorio con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sundaycoil/config-watcher
+- Repositorio en Hugging Face: https://huggingface.co/sundaycoil/config-watcher

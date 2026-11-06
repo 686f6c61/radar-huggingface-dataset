@@ -83,7 +83,7 @@ La comparativa directa con alternativas en chino tradicional es limitada. El mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.8-GGUF
 - Modelo base (safetensors): https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW
 - Versión GGUF sin abliteration: https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-GGUF
 - Versión abliterated sin cuantizar: https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-GGUF

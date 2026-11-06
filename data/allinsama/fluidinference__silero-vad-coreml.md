@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CoreML Silero VAD es una conversión a CoreML del detector de actividad de voz (VAD) Silero, empaquetada por el equipo de FluidAudio (repositorio FluidInference) y publicada en HuggingFace por el usuario Allinsama. El modelo original lo desarrolla el Silero Team y su código fuente vive en el repositorio snakers4/silero-vad; esta versión toma como referencia el artefacto `onnx-community/silero-vad` y lo traduce a un formato que las aplicaciones Swift pueden cargar de forma nativa en iOS y macOS, sin necesidad de un runtime de Python ni de ONNX Runtime.
+CoreML Silero VAD es una conversión a CoreML del detector de actividad de voz (VAD) Silero, empaquetada por el equipo de FluidAudio (repositorio FluidInference) y publicada en Hugging Face por el usuario Allinsama. El modelo original lo desarrolla el Silero Team y su código fuente vive en el repositorio snakers4/silero-vad; esta versión toma como referencia el artefacto `onnx-community/silero-vad` y lo traduce a un formato que las aplicaciones Swift pueden cargar de forma nativa en iOS y macOS, sin necesidad de un runtime de Python ni de ONNX Runtime.
 
 El problema que resuelve es acotado pero muy práctico: decidir en tiempo real si un fragmento de audio contiene voz humana o no, para poder recortar silencios, activar un asistente, segmentar una transcripción o ahorrar cómputo antes de llamar a un sistema ASR. La model card describe el modelo como "tiny", sin dar cifra de parámetros, y el repositorio ocupa 0,0 GB, lo que confirma que se trata de un artefacto de muy baja huella frente a los LLM habituales.
 
@@ -83,8 +83,8 @@ La model card incluye graficas comparativas frente al baseline Silero VAD v6.0.0
 
 | Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CoreML Silero VAD (esta ficha) | VAD neuronal en CoreML | no disponible ("tiny") | no aplica | en | MIT | HuggingFace, autor tercero (Allinsama), 0 descargas |
-| onnx-community/silero-vad | VAD neuronal en ONNX (modelo base) | no disponible | no aplica | no disponible | no disponible en la informacion | HuggingFace |
+| CoreML Silero VAD (esta ficha) | VAD neuronal en CoreML | no disponible ("tiny") | no aplica | en | MIT | Hugging Face, autor tercero (Allinsama), 0 descargas |
+| onnx-community/silero-vad | VAD neuronal en ONNX (modelo base) | no disponible | no aplica | no disponible | no disponible en la informacion | Hugging Face |
 | silero-vad (snakers4) | VAD neuronal en PyTorch JIT / ONNX | no disponible | no aplica | no disponible | MIT | GitHub, mantenido por el equipo original |
 | WebRTC VAD | VAD clasico (no neuronal) | no disponible | no aplica | no aplica | licencia permisiva de WebRTC | Incluido en WebRTC; referencia habitual para comparar latencia |
 
@@ -104,7 +104,7 @@ La ventaja competitiva de esta variante es la integracion nativa en Apple con li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Allinsama/FluidInference__silero-vad-coreml
+- Hugging Face: https://huggingface.co/Allinsama/FluidInference__silero-vad-coreml
 - Repositorio FluidAudio: https://github.com/FluidInference/FluidAudio
 - Codigo de conversion (mobius): https://github.com/FluidInference/mobius
 - Wrapper Swift (FluidAudioSwift): https://github.com/FluidAudio/FluidAudioSwift

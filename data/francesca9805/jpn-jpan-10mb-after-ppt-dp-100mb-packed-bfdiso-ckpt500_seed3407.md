@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un modelo de generacion de texto de 39.087.104 parametros (unos 39 M) construido sobre una arquitectura GPT-2 y publicado en HuggingFace por el usuario francesca9805. Se trata de un ajuste fino supervisado (SFT) del modelo `francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, realizado con la libreria TRL de HuggingFace.
+El modelo `francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un modelo de generacion de texto de 39.087.104 parametros (unos 39 M) construido sobre una arquitectura GPT-2 y publicado en Hugging Face por el usuario francesca9805. Se trata de un ajuste fino supervisado (SFT) del modelo `francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, realizado con la libreria TRL de Hugging Face.
 
 La nomenclatura del identificador apunta a un experimento de tokenizacion y datos en japones: los prefijos `jpn` (codigo ISO 639-2 para japones) y `jpan` (codigo ISO 15924 para los sistemas de escritura japoneses), junto con las etiquetas de tamano `10mb` y `100mb-packed` y el checkpoint `ckpt500`. La model card, sin embargo, no declara idioma, licencia, composicion del dataset ni volumen de tokens, por lo que estas deducciones no estan confirmadas.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 (este) | 39,1 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407 (base) | no disponible | no disponible | no disponible | HuggingFace |
-| francesca9805/jpn-jpan-10mb-after-ppt-Dp-10mb-packed-ckpt500_seed455 (hermano) | no disponible | no disponible | no disponible | HuggingFace |
-| francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed10 | 124,8 M | no disponible | no disponible | HuggingFace (VRAM aproximada de 0,2 GB segun LLM Explorer) |
+| francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 (este) | 39,1 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407 (base) | no disponible | no disponible | no disponible | Hugging Face |
+| francesca9805/jpn-jpan-10mb-after-ppt-Dp-10mb-packed-ckpt500_seed455 (hermano) | no disponible | no disponible | no disponible | Hugging Face |
+| francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed10 | 124,8 M | no disponible | no disponible | Hugging Face (VRAM aproximada de 0,2 GB segun LLM Explorer) |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Modelo hermano (semilla 455): https://huggingface.co/francesca9805/jpn-jpan-10mb-after-ppt-Dp-10mb-packed-ckpt500_seed455
 - Modelo hermano (124,8 M): https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed10

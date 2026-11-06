@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/q3146dq4/Supertonic-3-LiteRT-WI8-AFP32
+- Modelo en Hugging Face: https://huggingface.co/q3146dq4/Supertonic-3-LiteRT-WI8-AFP32
 - Modelo base (versión LiteRT sin cuantizar): https://huggingface.co/q3146dq4/Supertonic-3-LiteRT
 - Modelo base original (Supertone/supertonic-3): https://huggingface.co/q3146dq4/supertonic-3
 - Página del proyecto Supertonic 3: https://supertonic3.github.io/

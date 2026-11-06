@@ -6,7 +6,7 @@ El repositorio aratadev/Llama-3.2-3B-Instruct-uncensored-GGUF contiene una recop
 
 Se trata de un modelo denso, decoder-only, de tipo transformer, con 3.606.752.320 parámetros según el recuento de safetensors del modelo base. Al estar distribuido únicamente en GGUF, su propósito es la inferencia local y en CPU/GPU de gama baja: los ficheros van desde 1,88 GB (Q2_K_L) hasta 7,22 GB (f16), lo que permite ejecutarlo en equipos de consumo sin acelerador dedicado. El repositorio ocupa 57,4 GB porque acumula todas las variantes de cuantización en la misma rama, no porque el modelo tenga ese tamaño.
 
-Su relevancia es acotada y conviene ser explícito: la ficha de HuggingFace no declara licencia ni idiomas soportados, no se han publicado benchmarks en la información disponible y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta. Es, por tanto, un artefacto de interés para experimentación con modelos sin filtros de contenido, investigación sobre alineación y pruebas de despliegue en local, no una opción recomendada para producción sin una evaluación previa.
+Su relevancia es acotada y conviene ser explícito: la ficha de Hugging Face no declara licencia ni idiomas soportados, no se han publicado benchmarks en la información disponible y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta. Es, por tanto, un artefacto de interés para experimentación con modelos sin filtros de contenido, investigación sobre alineación y pruebas de despliegue en local, no una opción recomendada para producción sin una evaluación previa.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia es acotada y conviene ser explícito: la ficha de HuggingFace no d
 | Longitud de contexto | 128.000 tokens segun la arquitectura Llama 3.2; no se especifica en la model card del repositorio |
 | Tipos de cuantizacion | f16, Q8_0, Q6_K_L, Q6_K, Q5_K_L, Q5_K_M, Q5_K_S, Q4_K_L, Q4_K_M, Q4_K_S, Q4_0, IQ4_XS, Q3_K_XL, Q3_K_L, Q2_K_L, Q4_0_8_8, Q4_0_4_8, Q4_0_4_4 (cuantizacion con imatrix) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en la ficha de HuggingFace; al derivar de Llama 3.2 de Meta es previsible que aplique la Llama 3.2 Community License, pero no esta confirmado |
+| Licencia | no disponible en la ficha de Hugging Face; al derivar de Llama 3.2 de Meta es previsible que aplique la Llama 3.2 Community License, pero no esta confirmado |
 | Formato de pesos | GGUF (las cuantizaciones de este repo); safetensors en el modelo base chuanli11/Llama-3.2-3B-Instruct-uncensored |
 
 ## Arquitectura y entrenamiento
@@ -38,7 +38,7 @@ Sobre el entrenamiento no hay datos en la información proporcionada: no se indi
 - Sin soporte declarado de tool calling ni function calling en la model card.
 - Sin soporte declarado de agentes, uso de herramientas externas o razonamiento multi-paso.
 - Sin capacidades de visión, audio u otras modalidades.
-- Compatible con endpoints de HuggingFace (etiqueta `endpoints_compatible`) y con el pipeline `text-generation`.
+- Compatible con endpoints de Hugging Face (etiqueta `endpoints_compatible`) y con el pipeline `text-generation`.
 
 ## Casos de uso
 
@@ -87,7 +87,7 @@ Los datos de los modelos de comparación provienen de documentación pública y 
 
 - El modelo ha sido desprovisto deliberadamente de las capas de alineación de seguridad del Llama 3.2 original: puede generar contenido ofensivo, ilegal, peligroso o sexualmente explícito, y no incorpora mecanismos propios de rechazo.
 - Riesgo elevado de alucinación: con 3,6 B de parámetros, la precisión factual en preguntas abiertas es limitada y no hay benchmarks que la cuantifiquen.
-- Licencia no declarada en la ficha de HuggingFace. Al derivar de Llama 3.2, es previsible que se apliquen los términos de la Llama 3.2 Community License de Meta (incluidas las cláusulas de uso aceptable y las obligaciones de atribución), pero no está confirmado por el autor. Antes de cualquier uso comercial hay que verificar la licencia del modelo base chuanli11/Llama-3.2-3B-Instruct-uncensored y del propio Llama 3.2.
+- Licencia no declarada en la ficha de Hugging Face. Al derivar de Llama 3.2, es previsible que se apliquen los términos de la Llama 3.2 Community License de Meta (incluidas las cláusulas de uso aceptable y las obligaciones de atribución), pero no está confirmado por el autor. Antes de cualquier uso comercial hay que verificar la licencia del modelo base chuanli11/Llama-3.2-3B-Instruct-uncensored y del propio Llama 3.2.
 - Idiomas soportados no declarados; el entrenamiento de Llama 3.2 está sesgado hacia el inglés y el rendimiento en castellano u otras lenguas no está documentado.
 - Limitación de contexto: aunque la arquitectura Llama 3.2 admite 128.000 tokens, no se confirma que este fine-tune conserve esa ventana ni que los runtimes GGUF la soporten con memoria disponible.
 - Sin soporte declarado de tool calling, function calling ni flujos de agentes, lo que limita su integración en pipelines automatizados.
@@ -97,7 +97,7 @@ Los datos de los modelos de comparación provienen de documentación pública y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aratadev/Llama-3.2-3B-Instruct-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/aratadev/Llama-3.2-3B-Instruct-uncensored-GGUF
 - Modelo base (safetensors): https://huggingface.co/chuanli11/Llama-3.2-3B-Instruct-uncensored
 - Repositorio GGUF original de bartowski citado en la model card: https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-uncensored-GGUF
 - llama.cpp, release b3972 usada para la cuantización: https://github.com/ggerganov/llama.cpp/releases/tag/b3972

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`JoudAlrubaish/technical-support-intent-classifier` es un modelo de clasificación de texto publicado en HuggingFace Hub por el usuario JoudAlrubaish. Por el tag declarado (`distilbert`), por la librería (`transformers`) y por el recuento real de parámetros en los pesos safetensors (66.959.624), se trata de un encoder basado en DistilBERT, la variante destilada de BERT de seis capas, con aproximadamente 67 millones de parámetros y 0,3 GB de repositorio. El nombre sugiere un ajuste fino para clasificar la intención de tickets o consultas de soporte tecnico, pero la model card no confirma el dominio, el conjunto de etiquetas ni el corpus de entrenamiento.
+`JoudAlrubaish/technical-support-intent-classifier` es un modelo de clasificación de texto publicado en Hugging Face Hub por el usuario JoudAlrubaish. Por el tag declarado (`distilbert`), por la librería (`transformers`) y por el recuento real de parámetros en los pesos safetensors (66.959.624), se trata de un encoder basado en DistilBERT, la variante destilada de BERT de seis capas, con aproximadamente 67 millones de parámetros y 0,3 GB de repositorio. El nombre sugiere un ajuste fino para clasificar la intención de tickets o consultas de soporte tecnico, pero la model card no confirma el dominio, el conjunto de etiquetas ni el corpus de entrenamiento.
 
 El problema que aborda es el enrutado y la categorizacion automatica de peticiones de soporte, una tarea clasica de NLP industrial donde los encoders pequenos siguen siendo competitivos por su coste de inferencia minimo. Un modelo de 67 millones de parametros se ejecuta en CPU con latencia de decenas de milisegundos y cabe holgadamente en cualquier GPU de consumo, lo que lo hace atractivo para preprocesar volumenes altos de tickets antes de pasarlos a un modelo generativo mayor.
 
-La relevancia practica del modelo esta, sin embargo, muy limitada por la falta de documentacion: la model card es la plantilla autogenerada de HuggingFace sin ninguna seccion completada, la licencia no esta declarada, no se especifican idiomas soportados, no hay resultados de evaluacion ni descripcion del dataset. Con 0 descargas y 0 likes en el momento de la consulta, es un artefacto sin validacion externa, por lo que cualquier uso en produccion requeriria una evaluacion propia sobre datos representativos del dominio objetivo.
+La relevancia practica del modelo esta, sin embargo, muy limitada por la falta de documentacion: la model card es la plantilla autogenerada de Hugging Face sin ninguna seccion completada, la licencia no esta declarada, no se especifican idiomas soportados, no hay resultados de evaluacion ni descripcion del dataset. Con 0 descargas y 0 likes en el momento de la consulta, es un artefacto sin validacion externa, por lo que cualquier uso en produccion requeriria una evaluacion propia sobre datos representativos del dominio objetivo.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia practica del modelo esta, sin embargo, muy limitada por la falta d
 | Longitud de contexto | no disponible en la informacion proporcionada; la arquitectura DistilBERT esta limitada a 512 tokens de posicion |
 | Tipos de cuantizacion | no disponible (los tags mencionan `text-embeddings-inference`, que soporta cuantizacion en despliegue) |
 | Idiomas soportados | no disponibles (no declarados por el autor) |
-| Licencia | no disponible (no declarada; el checkpoint base DistilBERT de HuggingFace se distribuye bajo Apache 2.0) |
+| Licencia | no disponible (no declarada; el checkpoint base DistilBERT de Hugging Face se distribuye bajo Apache 2.0) |
 | Formato de pesos | safetensors |
 | Libreria | transformers |
 | Pipeline | text-classification |
@@ -44,7 +44,7 @@ No hay informacion sobre el procedimiento de entrenamiento: se desconoce el corp
 - Soporte de agentes y razonamiento multi-paso: no aplicable.
 - Capacidades multilingues: no disponibles; no declaradas y, por el numero de parametros, el checkpoint base probablemente sea solo ingles.
 - Capacidades especiales (thinking mode, vision, audio): ninguna.
-- Compatibilidad de despliegue: `endpoints_compatible` (HuggingFace Inference Endpoints) y `text-embeddings-inference`.
+- Compatibilidad de despliegue: `endpoints_compatible` (Hugging Face Inference Endpoints) y `text-embeddings-inference`.
 
 ## Casos de uso
 
@@ -71,14 +71,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe sobradamente en cualquier GPU de consumo, incluidas GTX 1050 Ti, RTX 3060, RTX 4090, e incluso en GPU integrada o en CPU pura sin problema de memoria.
 - CPU: es viable en produccion con batching; DistilBERT esta disenado precisamente para escenarios con presupuesto de computo limitado. No hay cifras de latencia o throughput publicadas por el autor.
 - GPU recomendadas: cualquiera; para lotes muy grandes o multiples modelos en el mismo servidor, una T4, L4 o A10 es mas que suficiente. A100 y H100 no aportan ventaja proporcional para este tamano.
-- Opciones de despliegue: `transformers` (PyTorch), HuggingFace Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), exportacion a ONNX Runtime u OpenVINO para inferencia en CPU, y FastAPI o TorchServe como envoltorio de servicio.
+- Opciones de despliegue: `transformers` (PyTorch), Hugging Face Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), exportacion a ONNX Runtime u OpenVINO para inferencia en CPU, y FastAPI o TorchServe como envoltorio de servicio.
 - vLLM: no aplicable, esta orientado a modelos generativos con cache KV, no a encoders de clasificacion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| technical-support-intent-classifier | 66,96 M | no disponible (tope arquitectonico de 512 tokens) | no disponible | no declarada | HuggingFace Hub, 0 descargas, 0 likes |
+| technical-support-intent-classifier | 66,96 M | no disponible (tope arquitectonico de 512 tokens) | no disponible | no declarada | Hugging Face Hub, 0 descargas, 0 likes |
 | distilbert-base-uncased | 66,96 M | 512 tokens | referencia del paper original de DistilBERT | Apache 2.0 | ampliamente disponible |
 | bert-base-uncased | 110 M | 512 tokens | superior a DistilBERT en GLUE a mayor coste | Apache 2.0 | ampliamente disponible |
 | all-MiniLM-L6-v2 | 22,7 M | 256 tokens | optimizado para embeddings de frases, no para clasificacion de intenciones | Apache 2.0 | ampliamente disponible |
@@ -88,7 +88,7 @@ La comparacion de rendimiento con estos modelos no puede establecerse porque no 
 
 ## Limitaciones y advertencias
 
-- Model card vacia: es la plantilla autogenerada de HuggingFace sin ninguna seccion cumplimentada. No se documenta el desarrollador real, la financiacion, el tipo de modelo, los idiomas, la licencia ni el checkpoint de partida.
+- Model card vacia: es la plantilla autogenerada de Hugging Face sin ninguna seccion cumplimentada. No se documenta el desarrollador real, la financiacion, el tipo de modelo, los idiomas, la licencia ni el checkpoint de partida.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion. Hay que asumir que el uso en produccion es juridicamente arriesgado hasta que el autor aclare los terminos.
 - Taxonomia de etiquetas desconocida: no se indica cuantas clases tiene el modelo ni que significan. Cualquier integracion requiere inspeccionar `config.json` e `id2label` y validar que las clases coinciden con las necesidades del negocio.
 - Sin datos de evaluacion: se desconoce la exactitud, el F1 por clase, el comportamiento ante clases minoritarias y la calibracion de las probabilidades. Un umbral de confianza no puede fijarse sin medirlo.
@@ -102,7 +102,7 @@ La comparacion de rendimiento con estos modelos no puede establecerse porque no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoudAlrubaish/technical-support-intent-classifier
+- Modelo en Hugging Face: https://huggingface.co/JoudAlrubaish/technical-support-intent-classifier
 - Paper de DistilBERT (arquitectura implicada por el tag): https://arxiv.org/abs/1910.09700 (el tag del Hub apunta a este identificador, aunque corresponde a Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning", citado por la plantilla de model card y no al paper de DistilBERT)
 - Calculadora de impacto medioambiental de ML: https://mlco2.github.io/impact
 - Busqueda web: no se encontraron enlaces relevantes. Los resultados devueltos por el buscador correspondian a contenido para adultos sin ninguna relacion con el modelo.

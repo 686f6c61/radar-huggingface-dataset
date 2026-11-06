@@ -26,7 +26,7 @@ La relevancia es acotada pero clara: es un "drop-in replacement" para el `model.
 | Modelo base | `vosk-model-tts-ru-0.10-multi` de AlphaCephei (`alphacep/vosk-tts`) |
 | Tamano del repositorio | 0,2 GB |
 | Versiones de herramientas | `onnx==1.22.0`, `onnxruntime==1.23.2` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-15 / 2026-09-15 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -86,9 +86,9 @@ No hay tabla comparativa de calidad de sintesis (MOS) ni comparacion con otros s
 
 | Modelo | Tipo | Voces | Idioma | Formato | Tiempo de carga | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `NGC404/sgspeech-vosk-tts-ru-0.10-prepared` (este) | Grafo sintetizador ONNX preprocesado | 57 | Ruso | ONNX (FP32) | ~1-7 s para construir cache, ~1,3 s para recargarlo | Apache 2.0 | HuggingFace, 0 descargas |
+| `NGC404/sgspeech-vosk-tts-ru-0.10-prepared` (este) | Grafo sintetizador ONNX preprocesado | 57 | Ruso | ONNX (FP32) | ~1-7 s para construir cache, ~1,3 s para recargarlo | Apache 2.0 | Hugging Face, 0 descargas |
 | `vosk-model-tts-ru-0.10-multi` (AlphaCephei) | Grafo sintetizador ONNX original | 57 | Ruso | ONNX | 45-65 s por carga | Apache 2.0 | Distribucion de AlphaCephei / Vosk |
-| `eae1212/vosk-tts-ru-0.9-prepared` | Grafo sintetizador ONNX preprocesado (enfoque de referencia) | 5 | Ruso | ONNX | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| `eae1212/vosk-tts-ru-0.9-prepared` | Grafo sintetizador ONNX preprocesado (enfoque de referencia) | 5 | Ruso | ONNX | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de otros sintetizadores en ruso en la informacion proporcionada, por lo que no se incluye comparacion de calidad de audio.
 
@@ -108,7 +108,7 @@ No se dispone de datos de otros sintetizadores en ruso en la informacion proporc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NGC404/sgspeech-vosk-tts-ru-0.10-prepared
+- Repositorio en Hugging Face: https://huggingface.co/NGC404/sgspeech-vosk-tts-ru-0.10-prepared
 - Proyecto Vosk TTS de AlphaCephei (modelo base y documentacion): https://github.com/alphacep/vosk-tts
 - Modelo de referencia con el mismo enfoque, version 0.9 (5 voces): https://huggingface.co/eae1212/vosk-tts-ru-0.9-prepared
 - Catalogo de modelos Vosk de AlphaCephei (incluye `vosk-model-tts-ru-0.10-multi`): https://alphacephei.com/vosk/models

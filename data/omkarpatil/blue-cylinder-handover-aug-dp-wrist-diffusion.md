@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables directamente. El autor h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/blue-cylinder-handover-aug-dp-wrist-diffusion
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/blue-cylinder-handover-aug-dp-wrist-diffusion
 - Perfil del autor: https://huggingface.co/omkarpatil
 - Lista de modelos del autor: https://huggingface.co/omkarpatil/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ravikanth8788/sf-doom-health-gathering-supreme` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO sobre el entorno `doom_health_gathering_supreme` de ViZDoom, utilizando la libreria Sample Factory. El autor es el usuario de HuggingFace Ravikanth8788 y el artefacto se publica en el Hub como un checkpoint cargable mediante la utilidad `load_from_hf` de Sample Factory. Su relevancia es acotada: sirve como ejemplo reproducible de entrenamiento de agentes visuales en entornos de Doom y como punto de partida para experimentos de RL, no como componente de generacion de texto.
+`Ravikanth8788/sf-doom-health-gathering-supreme` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO sobre el entorno `doom_health_gathering_supreme` de ViZDoom, utilizando la libreria Sample Factory. El autor es el usuario de Hugging Face Ravikanth8788 y el artefacto se publica en el Hub como un checkpoint cargable mediante la utilidad `load_from_hf` de Sample Factory. Su relevancia es acotada: sirve como ejemplo reproducible de entrenamiento de agentes visuales en entornos de Doom y como punto de partida para experimentos de RL, no como componente de generacion de texto.
 
 La model card es minima. Solo declara el algoritmo (PPO), la libreria (Sample Factory) y un unico resultado de evaluacion: `mean_reward` de 12,50 +/- 2,10, con un umbral de aprobado de 5,0. El propio autor marca el resultado como no verificado (`verified: false`) en el `model-index`. No se documentan arquitectura de red, numero de parametros, hiperparametros de entrenamiento, numero de pasos ni composicion del dataset.
 
@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 
 | Modelo | Tipo | Entorno | Algoritmo | Framework | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Ravikanth8788/sf-doom-health-gathering-supreme` | Agente RL | doom_health_gathering_supreme | PPO | Sample Factory | No disponible | Hub de HuggingFace, 0 descargas, 0 likes |
-| Otros agentes publicados con Sample Factory | Agente RL | Distintos entornos ViZDoom y Atari | PPO / APPO | Sample Factory | Variable, segun autor | Hub de HuggingFace |
+| `Ravikanth8788/sf-doom-health-gathering-supreme` | Agente RL | doom_health_gathering_supreme | PPO | Sample Factory | No disponible | Hub de Hugging Face, 0 descargas, 0 likes |
+| Otros agentes publicados con Sample Factory | Agente RL | Distintos entornos ViZDoom y Atari | PPO / APPO | Sample Factory | Variable, segun autor | Hub de Hugging Face |
 | Implementaciones de PPO en Stable-Baselines3 | Agente RL | doom_health_gathering_supreme y otros | PPO | Stable-Baselines3 | MIT (codigo de la libreria) | GitHub y PyPI, sin checkpoint unico de referencia |
 | Implementaciones de PPO en CleanRL | Agente RL | Entornos de ViZDoom y Gymnasium | PPO | CleanRL | MIT (codigo de la libreria) | GitHub, sin checkpoint unico de referencia |
 
@@ -106,7 +106,7 @@ No se dispone de valores de retorno comparables para esas alternativas en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ravikanth8788/sf-doom-health-gathering-supreme
+- Modelo en Hugging Face: https://huggingface.co/Ravikanth8788/sf-doom-health-gathering-supreme
 - Sample Factory (repositorio, referenciado por los tags y la libreria declarada): https://github.com/alex-petrenko/sample-factory
 - Documentacion de Sample Factory: https://samplefactory.dev/
 - ViZDoom (entorno de origen del escenario `doom_health_gathering_supreme`): https://github.com/Farama-Foundation/ViZDoom

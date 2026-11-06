@@ -2,11 +2,11 @@
 
 ## Resumen
 
-voiceshield-hindi-english-deepfake-v3-hardened es un modelo de clasificación de audio publicado en HuggingFace por el usuario ArmanSandhu1729. Por su nombre, el modelo está orientado a la detección de audio deepfake (voz sintética o manipulada) en un contexto bilingüe hindi-inglés, aunque la model card no documenta explícitamente esta función ni el proceso de entrenamiento asociado.
+voiceshield-hindi-english-deepfake-v3-hardened es un modelo de clasificación de audio publicado en Hugging Face por el usuario ArmanSandhu1729. Por su nombre, el modelo está orientado a la detección de audio deepfake (voz sintética o manipulada) en un contexto bilingüe hindi-inglés, aunque la model card no documenta explícitamente esta función ni el proceso de entrenamiento asociado.
 
 Técnicamente se trata de un modelo basado en la arquitectura wav2vec2, con 315.701.634 parámetros totales almacenados en formato safetensors y un tamaño de repositorio de 1,3 GB. La librería declarada es transformers y el pipeline asignado es audio-classification, lo que sitúa al modelo en la categoría de clasificadores de audio (probablemente binario: real vs. deepfake).
 
-La relevancia del modelo es limitada en su estado actual: cuenta con cero descargas y cero likes, la model card es la plantilla automática de HuggingFace sin información sustantiva, y no se declara licencia ni idiomas soportados de forma explícita. Cualquier evaluación rigurosa de su calidad requiere probarlo directamente, ya que el autor no ha publicado datos de entrenamiento, benchmarks ni instrucciones de uso.
+La relevancia del modelo es limitada en su estado actual: cuenta con cero descargas y cero likes, la model card es la plantilla automática de Hugging Face sin información sustantiva, y no se declara licencia ni idiomas soportados de forma explícita. Cualquier evaluación rigurosa de su calidad requiere probarlo directamente, ya que el autor no ha publicado datos de entrenamiento, benchmarks ni instrucciones de uso.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ No hay información disponible sobre el dataset de entrenamiento, el número de 
 - Detección de deepfake de voz: el nombre del modelo indica especialización en este dominio, aunque no se documenta el conjunto de etiquetas ni el umbral de decisión.
 - Cobertura bilingüe potencial: el identificador menciona hindi e inglés, sin que la model card lo confirme.
 - Integración con transformers: compatible con `AutoModelForAudioClassification` y `AutoFeatureExtractor` de la librería transformers.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente o razonamiento multi-paso: no aplica (modelo discriminativo, no generativo).
 - Capacidades de visión o audio generativo: no disponible.
@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 1,3 GB en fp32 (tamaño de pesos), alrededor de 0,7 GB en fp16 y 0,35 GB en int8 a 8 bits, sin contar activaciones ni buffers de audio.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; una RTX 3060, RTX 4060 o superior es suficiente. Para lotes grandes, A10G o A100 aportan margen.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna (GTX 1660 en adelante) e incluso en CPU para inferencia de un solo clip.
-- Opciones de despliegue: transformers (PyTorch), HuggingFace Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime tras exportación, y potencialmente TorchScript. No se documenta soporte nativo de vLLM, llama.cpp u Ollama (no aplicables a clasificación de audio).
+- Opciones de despliegue: transformers (PyTorch), Hugging Face Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime tras exportación, y potencialmente TorchScript. No se documenta soporte nativo de vLLM, llama.cpp u Ollama (no aplicables a clasificación de audio).
 - Latencia y throughput estimados: no disponibles; para un wav2vec2-large de ~316 M, en una RTX 4090 se espera procesar decenas de clips de pocos segundos por segundo, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voiceshield-hindi-english-deepfake-v3-hardened | 315,7 M | audio (ventana no documentada) | Clasificación de audio / deepfake | no disponible | HuggingFace, 0 descargas |
+| voiceshield-hindi-english-deepfake-v3-hardened | 315,7 M | audio (ventana no documentada) | Clasificación de audio / deepfake | no disponible | Hugging Face, 0 descargas |
 | Wav2Vec2-base (facebook) | ~95 M | audio (hasta ~10 s típico) | Representaciones de audio / ASR base | Apache 2.0 | Ampliamente disponible |
 | Wav2Vec2-large (facebook) | ~317 M | audio (hasta ~10 s típico) | Representaciones de audio / ASR base | Apache 2.0 | Ampliamente disponible |
 | Modelos de detección de deepfake de audio (p. ej. AASIST, RawNet2) | variable (1-10 M típico) | audio de varios segundos | Detección de spoofing | varía por repo | Repos académicos |
@@ -84,7 +84,7 @@ La comparativa con Wav2Vec2 es la más directa por arquitectura y tamaño, aunqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArmanSandhu1729/voiceshield-hindi-english-deepfake-v3-hardened
+- Modelo en Hugging Face: https://huggingface.co/ArmanSandhu1729/voiceshield-hindi-english-deepfake-v3-hardened
 - Paper de referencia wav2vec2 (citado en los tags): https://arxiv.org/abs/2006.11477
 - Paper del cálculo de emisiones citado en la model card: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

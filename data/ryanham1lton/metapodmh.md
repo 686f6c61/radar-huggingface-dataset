@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MetapodMH es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC BY 4.0. La informacion disponible es extremadamente limitada: la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,1 GB, lo que sugiere pesos de tamano reducido, aunque no es posible confirmar el numero de parametros ni el formato de los mismos a partir de los datos publicados.
+MetapodMH es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC BY 4.0. La informacion disponible es extremadamente limitada: la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,1 GB, lo que sugiere pesos de tamano reducido, aunque no es posible confirmar el numero de parametros ni el formato de los mismos a partir de los datos publicados.
 
 El modelo no registra descargas ni interacciones en el momento de la consulta y fue creado y actualizado el mismo dia (12 de septiembre de 2026), lo que indica una publicacion reciente y sin validacion por parte de la comunidad. No se ha publicado informacion sobre capacidades, idiomas soportados, pipeline asociado ni contexto maximo.
 
@@ -69,7 +69,7 @@ No es posible establecer una comparativa fiable. No se conocen los parametros, e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MetapodMH | no disponible | no disponible | no disponible | CC BY 4.0 | HuggingFace, 0 descargas |
+| MetapodMH | no disponible | no disponible | no disponible | CC BY 4.0 | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No es posible establecer una comparativa fiable. No se conocen los parametros, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/MetapodMH
+- Hugging Face: https://huggingface.co/Ryanham1lton/MetapodMH
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos corresponden a foros no relacionados (motogpforum.com, m.kaskus.co.id) y se descartan por no guardar conexion con el artefacto.

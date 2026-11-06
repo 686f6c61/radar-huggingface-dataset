@@ -98,7 +98,7 @@ No se dispone de datos verificables de otros modelos de vídeo abiertos en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastVideo/FastVideo-FastH3-Omni-8-Step-V1
+- Modelo en Hugging Face: https://huggingface.co/FastVideo/FastVideo-FastH3-Omni-8-Step-V1
 - Colección de variantes de FastH3 Omni: https://huggingface.co/collections/FastVideo/fasth3-omniref
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia MiniMax-H3 Community License Agreement: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

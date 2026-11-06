@@ -86,7 +86,7 @@ No se dispone de comparaciones directas con modelos externos en la misma tarea y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Immerwinter/gelectra-large-privacy-policy-content-purpose
+- Modelo en Hugging Face: https://huggingface.co/Immerwinter/gelectra-large-privacy-policy-content-purpose
 - Modelo base: https://huggingface.co/deepset/gelectra-large
 - Pipeline DeepPrivacy (modelo de contexto): https://huggingface.co/Immerwinter/gbert-large-privacy-policy-context
 - Pipeline DeepPrivacy (modelo de tema): https://huggingface.co/Immerwinter/gbert-large-privacy-policy-topic

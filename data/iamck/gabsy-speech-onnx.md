@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gabsy-speech-onnx es un modelo publicado en HuggingFace por el usuario iamck bajo licencia CC-BY-4.0. La única información disponible en el momento de redactar esta ficha es el identificador del repositorio, la licencia y las fechas de creación y actualización (4 de noviembre de 2026). La model card no contiene descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso; únicamente repite la licencia.
+Gabsy-speech-onnx es un modelo publicado en Hugging Face por el usuario iamck bajo licencia CC-BY-4.0. La única información disponible en el momento de redactar esta ficha es el identificador del repositorio, la licencia y las fechas de creación y actualización (4 de noviembre de 2026). La model card no contiene descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso; únicamente repite la licencia.
 
 El sufijo "speech-onnx" del nombre sugiere que se trata de un modelo orientado a tareas de voz (reconocimiento o síntesis) exportado al formato ONNX, pero esta interpretación es una inferencia a partir del nombre y no está confirmada por ninguna documentación del autor. No hay información sobre el pipeline declarado, los idiomas soportados ni el tamaño del modelo.
 
@@ -67,4 +67,4 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iamck/gabsy-speech-onnx
+- Hugging Face: https://huggingface.co/iamck/gabsy-speech-onnx

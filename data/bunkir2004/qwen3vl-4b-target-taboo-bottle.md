@@ -4,7 +4,7 @@
 
 Bunkir2004/qwen3vl-4b-target-taboo-bottle es un adaptador LoRA (PEFT) publicado por el usuario Bunkir2004 sobre el modelo multimodal Qwen/Qwen3-VL-4B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango (Low-Rank Adaptation) que debe cargarse junto con el modelo base para poder utilizarse. El repositorio ocupa 0,3 GB en safetensors, un tamaño coherente con un adaptador LoRA y no con un modelo de 4.000 millones de parámetros.
 
-El problema que resuelve no puede determinarse con la información disponible. El nombre del repositorio ("target-taboo-bottle") sugiere un ajuste fino orientado a una tarea concreta y posiblemente experimental, pero el autor no ha publicado descripción, dataset, hiperparámetros ni resultados de evaluación. La model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]".
+El problema que resuelve no puede determinarse con la información disponible. El nombre del repositorio ("target-taboo-bottle") sugiere un ajuste fino orientado a una tarea concreta y posiblemente experimental, pero el autor no ha publicado descripción, dataset, hiperparámetros ni resultados de evaluación. La model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]".
 
 Su relevancia actual es, por tanto, limitada y de carácter exploratorio: se apoya en la familia Qwen3-VL, que es la generación de modelos visión-lenguaje más reciente de Qwen (Alibaba Cloud) y que introduce mejoras en comprensión de texto e imagen, contexto extendido, razonamiento espacial, vídeo y uso como agente. Cualquier evaluación seria del adaptador exige reproducir el modelo base y comparar contra él, ya que no hay evidencia publicada de que el ajuste aporte mejoras medibles.
 
@@ -31,7 +31,7 @@ El repositorio contiene únicamente un adaptador LoRA sobre Qwen3-VL-4B-Instruct
 
 El modelo base, desarrollado por el equipo Qwen de Alibaba Cloud, es un transformer multimodal denso que procesa texto e imágenes y genera texto. Según la documentación oficial de la familia, Qwen3-VL incorpora mejoras en percepción visual, razonamiento sobre contenido gráfico, comprensión de relaciones espaciales y dinámicas de vídeo, contexto más largo e interacción como agente. Toda la información sobre arquitectura interna, datos de entrenamiento, número de tokens y alineación (RLHF/DPO) del modelo base procede de la documentación de Qwen y no del repositorio analizado.
 
-No hay ninguna innovación técnica documentada por parte del autor del adaptador. La etiqueta arxiv:1910.09700 que aparece en los tags corresponde a la plantilla automática de HuggingFace (calculadora de impacto ambiental de Lacoste et al., 2019) y no guarda relación con el entrenamiento del modelo.
+No hay ninguna innovación técnica documentada por parte del autor del adaptador. La etiqueta arxiv:1910.09700 que aparece en los tags corresponde a la plantilla automática de Hugging Face (calculadora de impacto ambiental de Lacoste et al., 2019) y no guarda relación con el entrenamiento del modelo.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 - Licencia no disponible: sin licencia explícita no hay autorización clara para uso comercial. Debe contactarse con el autor antes de cualquier uso en producción. La licencia del modelo base (Qwen3-VL-4B-Instruct) tampoco se ha confirmado en las fuentes consultadas y debe verificarse por separado.
 - Idiomas no especificados: no puede asumirse soporte multilingüe más allá del que ofrezca el modelo base.
 - Cero adopción: 0 descargas y 0 likes, sin issues ni discusiones públicas, lo que implica ausencia de validación por terceros.
-- Fecha de creación registrada como 2026-10-02 en los metadatos de HuggingFace, un valor anómalo que conviene verificar antes de citar el modelo.
+- Fecha de creación registrada como 2026-10-02 en los metadatos de Hugging Face, un valor anómalo que conviene verificar antes de citar el modelo.
 - Requiere el modelo base: el adaptador no es autónomo. Cualquier despliegue implica descargar Qwen3-VL-4B-Instruct (varios GB) y gestionar la carga conjunta.
 - El tag arxiv:1910.09700 es un residuo de la plantilla y no una referencia al modelo; no debe interpretarse como paper asociado.
 

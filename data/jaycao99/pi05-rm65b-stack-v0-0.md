@@ -6,7 +6,7 @@ El modelo `JayCao99/pi05-rm65b-stack-v0.0` es un checkpoint de política robóti
 
 El repositorio contiene un único checkpoint en el paso 30.000 de entrenamiento, con una pérdida final de 0.019. El tamaño total del repositorio es de 9,4 GB, lo que sugiere que los pesos están almacenados en precisión completa o media (FP32/BF16). No se proporciona información sobre licencia, idiomas ni especificaciones detalladas del modelo base, por lo que esta ficha se basa en la información disponible y en el conocimiento público sobre la arquitectura Pi-0.5.
 
-La relevancia de este modelo radica en que demuestra el uso de Pi-0.5 para una tarea de manipulación concreta, y su publicación en HuggingFace facilita la reproducibilidad y el despliegue en entornos de robótica. Sin embargo, al ser un checkpoint específico, su utilidad fuera de la tarea de apilamiento de bloques es limitada.
+La relevancia de este modelo radica en que demuestra el uso de Pi-0.5 para una tarea de manipulación concreta, y su publicación en Hugging Face facilita la reproducibilidad y el despliegue en entornos de robótica. Sin embargo, al ser un checkpoint específico, su utilidad fuera de la tarea de apilamiento de bloques es limitada.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ No se dispone de información sobre el número total de tokens de entrenamiento,
 - Investigación en aprendizaje por imitación: sirve como punto de partida para estudiar el comportamiento de Pi-0.5 en tareas de manipulación con pocas demostraciones, dado que el dataset de entrenamiento es muy reducido (12 muestras).
 - Benchmark de generalización: al ser un checkpoint concreto, puede utilizarse para evaluar la capacidad de Pi-0.5 de generalizar a variaciones de la tarea (diferentes posiciones de bloques, iluminación, etc.).
 - Desarrollo de pipelines de robótica con LeRobot: el formato de checkpoint (con `pretrained_model/` y configuración) facilita la integración en flujos de trabajo existentes de LeRobot para entrenamiento y evaluación.
-- Reproducibilidad de experimentos: al estar publicado en HuggingFace, permite a otros investigadores reproducir los resultados del entrenamiento y comparar con sus propios modelos.
+- Reproducibilidad de experimentos: al estar publicado en Hugging Face, permite a otros investigadores reproducir los resultados del entrenamiento y comparar con sus propios modelos.
 - Transferencia a tareas similares: aunque no está entrenado para otras tareas, podría servir como inicialización para fine-tuning en tareas de manipulación relacionadas (por ejemplo, apilar objetos de diferentes formas).
 
 ## Benchmarks y rendimiento
@@ -64,7 +64,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Pi-0.5 (base) | SigLIP + Gemma experts | no publicado | no publicado | no disponible | openpi (GitHub) |
-| OpenVLA | Prismatic + Llama 2 | 7B | 2048 | MIT | HuggingFace |
+| OpenVLA | Prismatic + Llama 2 | 7B | 2048 | MIT | Hugging Face |
 | RT-2 | PaLI-X + PaLM | 55B | 4096 | no disponible | no abierto |
 
 Este checkpoint concreto no tiene comparativa directa con otros checkpoints de la misma tarea, ya que no se han encontrado modelos equivalentes en la búsqueda.
@@ -80,7 +80,7 @@ Este checkpoint concreto no tiene comparativa directa con otros checkpoints de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JayCao99/pi05-rm65b-stack-v0.0
+- Repositorio Hugging Face: https://huggingface.co/JayCao99/pi05-rm65b-stack-v0.0
 - Dataset asociado: https://huggingface.co/datasets/JayCao99/rm65b-stack-v0
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Documentación de componentes Pi-0.5 (M*): http://mstar.stanford.edu/mstar/_autosummary/mstar.model.pi05.components.html

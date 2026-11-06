@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto/entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LaMa-ONNX (esta ficha) | no disponible | 512x512 fijo | ONNX | Apache 2.0 | HuggingFace |
+| LaMa-ONNX (esta ficha) | no disponible | 512x512 fijo | ONNX | Apache 2.0 | Hugging Face |
 | big-lama (original) | no disponible | flexible (PyTorch) | PyTorch | Apache 2.0 | GitHub advimman/lama |
 | Otros modelos de inpainting | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,8 +82,8 @@ La comparación con alternativas adicionales no está disponible en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Baqnur/LaMa-ONNX
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Carve/LaMa-Demo-ONNX
+- Hugging Face: https://huggingface.co/Baqnur/LaMa-ONNX
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Carve/LaMa-Demo-ONNX
 - Repositorio original: https://github.com/advimman/lama
 - Repositorio con implementación exportable: https://github.com/Carve-Photos/lama
 - Notebook de exportación a ONNX: https://colab.research.google.com/github/Carve-Photos/lama/blob/main/export_LaMa_to_onnx.ipynb

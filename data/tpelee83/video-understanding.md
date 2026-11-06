@@ -77,6 +77,6 @@ No disponible. No es posible establecer una comparativa porque el repositorio no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TPELEE83/video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/TPELEE83/video-understanding
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Conjuntos de datos mencionados en las notas (sin enlace proporcionado): MSR-VTT y ActivityNet Captions.

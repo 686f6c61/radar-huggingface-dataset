@@ -79,7 +79,7 @@ No se dispone de datos comparativos de benchmarks frente a alternativas en la in
 ## Limitaciones y advertencias
 
 - No es un modelo autonomo: es un checkpoint de componente que exige el modelo base y el codigo acompanante para cargarse.
-- No es un adaptador PEFT estandar ni LoRA; no se carga con las utilidades habituales de HuggingFace PEFT.
+- No es un adaptador PEFT estandar ni LoRA; no se carga con las utilidades habituales de Hugging Face PEFT.
 - Solo ingles (`en`); no cubre el resto de idiomas del base multilingue.
 - No es un modelo de diagnostico y no ha sido validado para decisiones clinicas.
 - Riesgo de errores de transcripcion y sesgo de dataset persistente (habla de personas mayores, DementiaBank).
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de benchmarks frente a alternativas en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZihanLiummyycc/whisper-large-v3-turbo-dbank-cross-attention
+- Hugging Face: https://huggingface.co/ZihanLiummyycc/whisper-large-v3-turbo-dbank-cross-attention
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Codigo y recetas del experimento: https://github.com/ZihanLiummyycc/diffusion-asr-elderly-speech/tree/29709f075399be63ed6d1e536a0a0ca3bba0a072
 - Repositorio de codigo (rama principal): https://github.com/ZihanLiummyycc/diffusion-asr-elderly-speech

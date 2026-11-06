@@ -94,7 +94,7 @@ Los datos de los modelos comparados no se detallan en la informacion disponible,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashesofthem/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/ashesofthem/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de la liberacion 1: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Liberacion 2 (TWIN-TURBO, GGUF): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF

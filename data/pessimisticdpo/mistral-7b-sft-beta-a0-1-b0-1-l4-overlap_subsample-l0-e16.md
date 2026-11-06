@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e16` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. La nomenclatura del repositorio indica que se trata de un ajuste fino (fine-tuning) derivado de `mistral-7b-sft-beta`, el checkpoint supervisado de la familia Mistral 7B que sirvió de base a Zephyr-7B. El sufijo del nombre sugiere un experimento de investigación con hiperparametros etiquetados como `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l0` y `e16`, compatibles con una variante de entrenamiento por preferencias (la organización se llama PessimisticDPO, lo que apunta a DPO -Direct Preference Optimization- o a alguna modificación del mismo).
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e16` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. La nomenclatura del repositorio indica que se trata de un ajuste fino (fine-tuning) derivado de `mistral-7b-sft-beta`, el checkpoint supervisado de la familia Mistral 7B que sirvió de base a Zephyr-7B. El sufijo del nombre sugiere un experimento de investigación con hiperparametros etiquetados como `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l0` y `e16`, compatibles con una variante de entrenamiento por preferencias (la organización se llama PessimisticDPO, lo que apunta a DPO -Direct Preference Optimization- o a alguna modificación del mismo).
 
 La relevancia de este checkpoint es fundamentalmente académica: se trata de un artefacto experimental de bajo perfil, sin model card completada, sin licencia declarada, sin idiomas declarados y con cero descargas y cero «likes» en el momento de la consulta. No es un modelo pensado para producción ni para uso general, sino presumiblemente un punto intermedio de una línea de investigación sobre optimización de preferencias con criterios pesimistas (pessimistic).
 
-La información publicada es extremadamente limitada: la model card es la plantilla automática de HuggingFace con todos los campos marcados como «More Information Needed». Por tanto, buena parte de los apartados de esta ficha se marcan explícitamente como «no disponible», y las inferencias sobre arquitectura y tamano se derivan unicamente del nombre del repositorio y deben tomarse como tales, no como datos confirmados.
+La información publicada es extremadamente limitada: la model card es la plantilla automática de Hugging Face con todos los campos marcados como «More Information Needed». Por tanto, buena parte de los apartados de esta ficha se marcan explícitamente como «no disponible», y las inferencias sobre arquitectura y tamano se derivan unicamente del nombre del repositorio y deben tomarse como tales, no como datos confirmados.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ La información publicada es extremadamente limitada: la model card es la planti
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible (campo vacio en la model card; no se declara Apache 2.0 ni ninguna otra) |
-| Formato de pesos | Safetensors (etiqueta `safetensors` de HuggingFace) |
+| Formato de pesos | Safetensors (etiqueta `safetensors` de Hugging Face) |
 | Libreria | transformers |
 | Tamano del repositorio | 0,2 GB (segun metadatos del Hub) |
 | Compatibilidad de endpoints | `endpoints_compatible` (etiqueta del Hub) |
@@ -82,7 +82,7 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PessimisticDPO/mistral-7b-sft-beta-...-e16 | No disponible (~7B segun el nombre) | No disponible | No disponible | HuggingFace, 0 descargas |
+| PessimisticDPO/mistral-7b-sft-beta-...-e16 | No disponible (~7B segun el nombre) | No disponible | No disponible | Hugging Face, 0 descargas |
 | Mistral 7B v0.1 (referencia de la base) | 7,3B | 8 192 tokens nativos, hasta 32 768 teoricos con sliding window | Apache 2.0 | Ampliamente disponible |
 | Zephyr-7B-beta (misma base SFT) | ~7B | 8 192 tokens | MIT | Ampliamente disponible |
 | Llama 3 8B Instruct (categoria equivalente) | 8B | 8 192 tokens | Licencia comunitaria de Meta | Ampliamente disponible |
@@ -103,8 +103,8 @@ Diferencias clave: frente a las alternativas, este checkpoint no declara licenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e16
-- Perfil del autor en HuggingFace: https://huggingface.co/PessimisticDPO
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e16
+- Perfil del autor en Hugging Face: https://huggingface.co/PessimisticDPO
 - Paper referenciado en las etiquetas (calculo de impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla de la model card: https://mlco2.github.io/impact
 

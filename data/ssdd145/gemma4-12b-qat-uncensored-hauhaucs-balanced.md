@@ -107,7 +107,7 @@ La comparación directa solo es posible contra el modelo base: misma arquitectur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SSDD145/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced
+- Repositorio en Hugging Face: https://huggingface.co/SSDD145/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Discord del autor del ajuste (HauhauCS), para avisos de versiones y reporte de prompts problemáticos: https://discord.gg/SZ5vacTXYf
 - Repositorio de referencia para la cabecera MTP: release de Gemma 4 de Unsloth, citado en la model card sin enlace directo.

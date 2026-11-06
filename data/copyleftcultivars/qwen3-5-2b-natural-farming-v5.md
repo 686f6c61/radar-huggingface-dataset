@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B Natural Farming v5 | ~1,88 B | No disponible | Agricultura natural + tool calling | Apache-2.0 | HuggingFace (repo propio) + variante cq4 |
-| Qwen/Qwen3.5-2B (base) | ~1,88 B | No disponible | Generalista | Apache-2.0 (según modelo base) | HuggingFace |
+| Qwen3.5-2B Natural Farming v5 | ~1,88 B | No disponible | Agricultura natural + tool calling | Apache-2.0 | Hugging Face (repo propio) + variante cq4 |
+| Qwen/Qwen3.5-2B (base) | ~1,88 B | No disponible | Generalista | Apache-2.0 (según modelo base) | Hugging Face |
 | Alternativas de ~2B con tool calling | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con otras alternativas de la misma categoría.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CopyleftCultivars/qwen3.5-2b-natural-farming-v5
+- Modelo en Hugging Face: https://huggingface.co/CopyleftCultivars/qwen3.5-2b-natural-farming-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Variante para motor Cactus (cq4): https://huggingface.co/CopyleftCultivars/qwen3.5-2b-natural-farming-v5-cactus-cq4
 - Código de entrenamiento y app: https://github.com/CopyleftCultivars/qwen3.5-finetune

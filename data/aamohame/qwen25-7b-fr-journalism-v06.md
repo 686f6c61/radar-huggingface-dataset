@@ -73,9 +73,9 @@ Estos resultados son de validación en las tareas de entrenamiento, no del bench
 
 | Modelo | Parámetros | Contexto | Especialización | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7B | No disponible | Instruct general y conversacional | No disponible | No disponible | HuggingFace |
-| qwen25-7b-fr-journalism-v06 | 7B base + adaptador LoRA | No disponible | Titulares, edición de copia y QA fundamentada en francés | ROUGE-L global 0,5824 en holdout, no comparable | No disponible | HuggingFace, 0 descargas |
-| qwen25-7b-fr-journalism-v03 | 7B base + adaptador LoRA | No disponible | Resúmenes, titulares y edición de copia en francés | No disponible | No disponible | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7B | No disponible | Instruct general y conversacional | No disponible | No disponible | Hugging Face |
+| qwen25-7b-fr-journalism-v06 | 7B base + adaptador LoRA | No disponible | Titulares, edición de copia y QA fundamentada en francés | ROUGE-L global 0,5824 en holdout, no comparable | No disponible | Hugging Face, 0 descargas |
+| qwen25-7b-fr-journalism-v03 | 7B base + adaptador LoRA | No disponible | Resúmenes, titulares y edición de copia en francés | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de otros adaptadores franceses comparables en la información proporcionada, ni de benchmarks comunes que permitan una comparación cuantitativa con alternativas.
 
@@ -97,7 +97,7 @@ No se dispone de datos de otros adaptadores franceses comparables en la informac
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/aamohame/qwen25-7b-fr-journalism-v06
+- Adaptador en Hugging Face: https://huggingface.co/aamohame/qwen25-7b-fr-journalism-v06
 - Configuración PEFT: https://huggingface.co/aamohame/qwen25-7b-fr-journalism-v06/blob/main/adapter_config.json
 - Registro de entrenamiento: https://huggingface.co/aamohame/qwen25-7b-fr-journalism-v06/blob/main/training_result.json
 - Metadatos del experimento: https://huggingface.co/aamohame/qwen25-7b-fr-journalism-v06/blob/main/experiment_metadata.json

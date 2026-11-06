@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Travor278/pi05-scan-object-right-first-lora-10k` es un adaptador LoRA sobre PI0.5, un modelo vision-lenguaje-accion (VLA) orientado a robotica de manipulacion, publicado por el usuario Travor278 en HuggingFace bajo la libreria OpenPI. El repositorio, de 6,3 GB, contiene el arbol completo de parametros de inferencia base+LoRA en formato Orbax y los activos de normalizacion, con la raiz de checkpoint en `10000/`. El modelo base declarado es `XinY0201/openpi-pi05-base-jax` (commit 5e62884fcf8cb8f9fc693c9163ea18d3e3739658), con un unico action expert estandar.
+`Travor278/pi05-scan-object-right-first-lora-10k` es un adaptador LoRA sobre PI0.5, un modelo vision-lenguaje-accion (VLA) orientado a robotica de manipulacion, publicado por el usuario Travor278 en Hugging Face bajo la libreria OpenPI. El repositorio, de 6,3 GB, contiene el arbol completo de parametros de inferencia base+LoRA en formato Orbax y los activos de normalizacion, con la raiz de checkpoint en `10000/`. El modelo base declarado es `XinY0201/openpi-pi05-base-jax` (commit 5e62884fcf8cb8f9fc693c9163ea18d3e3739658), con un unico action expert estandar.
 
 El entrenamiento se realizo sobre el dataset `Shiki42/ctr-scan-object-right-first-20260911` (commit be60537cfa80d6020514d23bda14dd72d924e91f), compuesto por 50 episodios y 17008 fotogramas capturados a 25 FPS con tres camaras RGB, acciones y estado absolutos de 14 dimensiones, preprocesado estandar de 224x224, pad de 32 y horizonte de 50. El prompt nativo es fijo: "Scan the object". Se ejecutaron 10000 actualizaciones con batch global de 16 sobre dos H100 de 80 GB.
 
@@ -81,7 +81,7 @@ En la informacion proporcionada no aparecen otros checkpoints comparables mas al
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Travor278/pi05-scan-object-right-first-lora-10k | Adaptador LoRA sobre PI0.5 (JAX/OpenPI) | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| Travor278/pi05-scan-object-right-first-lora-10k | Adaptador LoRA sobre PI0.5 (JAX/OpenPI) | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | XinY0201/openpi-pi05-base-jax | Modelo base PI0.5 en JAX | no disponible | no disponible | no disponible | Referenciado como base en la model card |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ En la informacion proporcionada no aparecen otros checkpoints comparables mas al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-scan-object-right-first-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-scan-object-right-first-lora-10k
 - Modelo base: https://huggingface.co/XinY0201/openpi-pi05-base-jax
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-scan-object-right-first-20260911
 - La busqueda web realizada no devolvio ningun enlace relevante para este modelo; el unico resultado obtenido no guarda relacion con el.

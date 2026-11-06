@@ -1,7 +1,7 @@
 # ADI2005/qwen-spice-lora-v6
 
 ## Resumen
-qwen-spice-lora-v6 es un modelo ajustado publicado en HuggingFace por el usuario ADI2005. Por el nombre del repositorio, su tamano (0,3 GB) y las etiquetas asociadas, se trata con alta probabilidad de un adaptador LoRA (o un conjunto de pesos derivados de un ajuste con LoRA) obtenido a partir del modelo base unsloth/qwen2.5-coder-3b-instruct-bnb-4bit, es decir, una version cuantizada a 4 bits del Qwen2.5-Coder-3B-Instruct. El autor no aporta informacion sobre el dataset, el metodo de ajuste ni el dominio concreto para el que fue entrenado.
+qwen-spice-lora-v6 es un modelo ajustado publicado en Hugging Face por el usuario ADI2005. Por el nombre del repositorio, su tamano (0,3 GB) y las etiquetas asociadas, se trata con alta probabilidad de un adaptador LoRA (o un conjunto de pesos derivados de un ajuste con LoRA) obtenido a partir del modelo base unsloth/qwen2.5-coder-3b-instruct-bnb-4bit, es decir, una version cuantizada a 4 bits del Qwen2.5-Coder-3B-Instruct. El autor no aporta informacion sobre el dataset, el metodo de ajuste ni el dominio concreto para el que fue entrenado.
 
 El interes de esta publicacion es limitado desde el punto de vista de la evaluacion rigurosa: no incluye resultados de benchmarks, no declara el proposito del ajuste y no registra descargas ni valoraciones. Su relevancia potencial reside en que ejemplifica el flujo de trabajo habitual de ajuste de modelos pequenos (3B) mediante Unsloth y TRL, ejecutable en GPU de consumo, y sirve como referencia para quien quiera reproducir o reutilizar un adaptador sobre la familia Qwen2.5-Coder.
 
@@ -23,7 +23,7 @@ Conviene tratarlo como un artefacto experimental sin documentacion tecnica verif
 ## Arquitectura y entrenamiento
 El modelo parte de unsloth/qwen2.5-coder-3b-instruct-bnb-4bit, una version de Qwen2.5-Coder-3B-Instruct cuantizada a 4 bits con bitsandbytes. Qwen2.5-Coder es una familia de modelos decoder-only basada en la arquitectura Qwen2 (transformer con RoPE, normalizacion RMSNorm, activacion SwiGLU y atencion con consultas agrupadas, GQA), especializada en generacion de codigo. Al ser un derivado de un modelo cuantizado a 4 bits, el ajuste se realizo previsiblemente con tecnicas de entrenamiento con pesos congelados en baja precision (QLoRA).
 
-El autor indica que el entrenamiento se hizo "2x faster with Unsloth" y etiqueta el repositorio con `trl` y `unsloth`, lo que sugiere el uso del framework Unsloth junto con la libreria TRL de HuggingFace (tipicamente para SFT o DPO). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, el rango y los modulos objetivo del LoRA, ni si hubo fases de RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica mas alla del uso de Unsloth para acelerar el ajuste. Todos estos datos deben considerarse no disponibles.
+El autor indica que el entrenamiento se hizo "2x faster with Unsloth" y etiqueta el repositorio con `trl` y `unsloth`, lo que sugiere el uso del framework Unsloth junto con la libreria TRL de Hugging Face (tipicamente para SFT o DPO). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, el rango y los modulos objetivo del LoRA, ni si hubo fases de RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica mas alla del uso de Unsloth para acelerar el ajuste. Todos estos datos deben considerarse no disponibles.
 
 ## Capacidades
 - Generacion de texto y de codigo: capacidades heredadas del modelo base Qwen2.5-Coder-3B-Instruct, sin verificar en este ajuste concreto.
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ADI2005/qwen-spice-lora-v6 | no disponible (adaptador sobre base de ~3B) | no disponible | apache-2.0 | HuggingFace, 0 descargas | Ajuste sin documentar ni benchmarks |
-| Qwen2.5-Coder-3B-Instruct (modelo base) | ~3B | no disponible en esta ficha | apache-2.0 | HuggingFace, ampliamente usado | Modelo de referencia, con benchmarks publicados por Qwen |
-| Otros modelos de codigo de ~3B (por ejemplo, variantes tipo CodeGemma-2B o Stable Code 3B) | ~2-3B | no disponible | variable segun modelo | HuggingFace | Alternativas de tamano comparable; datos concretos no disponibles en esta busqueda |
+| ADI2005/qwen-spice-lora-v6 | no disponible (adaptador sobre base de ~3B) | no disponible | apache-2.0 | Hugging Face, 0 descargas | Ajuste sin documentar ni benchmarks |
+| Qwen2.5-Coder-3B-Instruct (modelo base) | ~3B | no disponible en esta ficha | apache-2.0 | Hugging Face, ampliamente usado | Modelo de referencia, con benchmarks publicados por Qwen |
+| Otros modelos de codigo de ~3B (por ejemplo, variantes tipo CodeGemma-2B o Stable Code 3B) | ~2-3B | no disponible | variable segun modelo | Hugging Face | Alternativas de tamano comparable; datos concretos no disponibles en esta busqueda |
 
 No se dispone de datos suficientes para una comparacion cuantitativa fiable. Cualquier comparativa de rendimiento requeriria ejecutar los benchmarks pertinentes sobre este ajuste, ya que el autor no los aporta.
 
@@ -82,9 +82,9 @@ No se dispone de datos suficientes para una comparacion cuantitativa fiable. Cua
 - Fechas del repositorio: la model card figura con fecha de creacion y actualizacion de 2026-09-25, dato que conviene verificar en la pagina del modelo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ADI2005/qwen-spice-lora-v6
+- Modelo en Hugging Face: https://huggingface.co/ADI2005/qwen-spice-lora-v6
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-coder-3b-instruct-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (libreria de HuggingFace): https://github.com/huggingface/trl
+- TRL (libreria de Hugging Face): https://github.com/huggingface/trl
 - Familia Qwen2.5-Coder: https://huggingface.co/Qwen (coleccion de modelos de Qwen)
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; las busquedas devuelven contenido no relacionado con el modelo.

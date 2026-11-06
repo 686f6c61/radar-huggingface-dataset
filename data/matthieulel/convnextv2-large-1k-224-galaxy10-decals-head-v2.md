@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnextv2-large-1k-224-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo parte del checkpoint preentrenado `facebook/convnextv2-large-1k-224` (ConvNeXt V2 Large, entrenado sobre ImageNet-1k a 224 px) y sustituye su cabeza de clasificación por una capa lineal de diez salidas, ajustada sobre el conjunto Galaxy10 DECaLS. El backbone permanece completamente congelado, incluidas las estadísticas de sus capas de normalización: se trata de un ajuste *head-only*.
+`convnextv2-large-1k-224-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo parte del checkpoint preentrenado `facebook/convnextv2-large-1k-224` (ConvNeXt V2 Large, entrenado sobre ImageNet-1k a 224 px) y sustituye su cabeza de clasificación por una capa lineal de diez salidas, ajustada sobre el conjunto Galaxy10 DECaLS. El backbone permanece completamente congelado, incluidas las estadísticas de sus capas de normalización: se trata de un ajuste *head-only*.
 
 La relevancia del modelo es metodológica más que de rendimiento absoluto: forma parte de un estudio sistemático de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrito en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Su función es servir de referencia reproducible para evaluar hasta qué punto un modelo de visión generalista, sin reentrenamiento del backbone, transfiere a una tarea científica de dominio específico con clases desbalanceadas y morfologías sutiles.
 
@@ -79,7 +79,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 - **VRAM estimada en fp16/bf16**: en torno a 0,4 GB de pesos; cuantización int8 no documentada por el autor pero viable con herramientas estándar de PyTorch.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM. Una RTX 3060, RTX 4060 o superior es suficiente; A100 y H100 no son necesarias y solo aportan throughput.
 - **GPU de consumo**: sí, cabe en todas las GPU de consumo modernas (GTX 1660 6 GB en adelante), así como en CPU para inferencia por lotes pequeños.
-- **Opciones de despliegue**: transformers (`AutoModelForImageClassification`), TorchScript/ONNX para producción, y servidores de inferencia compatibles con modelos de visión de transformers (por ejemplo, endpoints de HuggingFace, marcados como `endpoints_compatible`). vLLM, llama.cpp, Ollama y TGI no aplican: son motores para modelos de lenguaje.
+- **Opciones de despliegue**: transformers (`AutoModelForImageClassification`), TorchScript/ONNX para producción, y servidores de inferencia compatibles con modelos de visión de transformers (por ejemplo, endpoints de Hugging Face, marcados como `endpoints_compatible`). vLLM, llama.cpp, Ollama y TGI no aplican: son motores para modelos de lenguaje.
 - **Latencia y throughput**: no disponibles en la información proporcionada. Por el tamaño (196 M de parámetros, resolución 224x224), se espera un throughput alto en GPU moderna, pero el autor no publica mediciones.
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ No se han identificado en la información disponible otros clasificadores de mor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-large-1k-224-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-large-1k-224-galaxy10-decals-head-v2
 - Checkpoint base: https://huggingface.co/facebook/convnextv2-large-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs y métricas por época: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

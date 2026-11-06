@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks comparables (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yennik16/text-to-stl-part-classifier | 61.109 | no aplica (bolsa de palabras) | Clasificacion de 5 familias de piezas | Apache 2.0 | HuggingFace |
+| yennik16/text-to-stl-part-classifier | 61.109 | no aplica (bolsa de palabras) | Clasificacion de 5 familias de piezas | Apache 2.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se conocen modelos publicos comparables de la misma categoria (clasificadores de descripciones de piezas mecanicas en cinco familias como etapa de una canalizacion de texto a STL) en la informacion proporcionada. Como referencia conceptual, podria compararse con clasificadores de texto genericos basados en transformadores como DistilBERT, pero no se dispone de datos de rendimiento en esta tarea concreta para establecer una comparacion rigurosa.
@@ -90,6 +90,6 @@ No se conocen modelos publicos comparables de la misma categoria (clasificadores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yennik16/text-to-stl-part-classifier
+- Modelo en Hugging Face: https://huggingface.co/yennik16/text-to-stl-part-classifier
 - Conjunto de datos: https://huggingface.co/datasets/yennik16/text-to-stl-parts
 - Extractor de parametros (segunda etapa de la canalizacion): https://huggingface.co/yennik16/text-to-stl-parameter-extractor

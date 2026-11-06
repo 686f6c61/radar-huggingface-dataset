@@ -72,7 +72,7 @@ La comparativa no puede ser completa por falta de datos de rendimiento. El adapt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OmAhire369/qwen2.5-1.5b-medqa-lora
+- Repositorio Hugging Face: https://huggingface.co/OmAhire369/qwen2.5-1.5b-medqa-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Informacion sobre Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5
 - Pagina de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:1.5b

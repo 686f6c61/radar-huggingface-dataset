@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks comparativos frente a alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Ministral-3-3B-Instruct-2512
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Ministral-3-3B-Instruct-2512
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Demo de chat WebGPU: https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/Ministral-3-3B-Instruct-2512

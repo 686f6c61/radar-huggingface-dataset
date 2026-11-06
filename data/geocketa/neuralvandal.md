@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeuralVandal es un modelo alojado en HuggingFace por el usuario geocketa, publicado inicialmente en mayo de 2026 y actualizado en agosto del mismo año. El repositorio ocupa 53,6 GB, lo que sugiere un modelo de gran tamaño, pero la información pública es extremadamente limitada: no se especifican arquitectura, número de parámetros, licencia ni idiomas soportados. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos.
+NeuralVandal es un modelo alojado en Hugging Face por el usuario geocketa, publicado inicialmente en mayo de 2026 y actualizado en agosto del mismo año. El repositorio ocupa 53,6 GB, lo que sugiere un modelo de gran tamaño, pero la información pública es extremadamente limitada: no se especifican arquitectura, número de parámetros, licencia ni idiomas soportados. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos.
 
 Dada la ausencia de documentación técnica y de resultados de evaluación, no es posible determinar qué problema resuelve ni por qué sería relevante en el ecosistema actual de modelos open source. El tag `region:us` podría indicar una orientación geográfica o cultural, pero no hay confirmación al respecto. Esta ficha se limita a reflejar los datos disponibles y marca explícitamente todo aquello que no ha sido publicado.
 
@@ -50,7 +50,7 @@ No disponible. Al carecer de especificaciones tecnicas, no es posible identifica
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: el modelo no incluye modelo card, papers ni guias de uso.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede implicar restricciones de uso no especificadas publicamente.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede implicar restricciones de uso no especificadas publicamente.
 - Licencia desconocida: no se puede determinar si el uso comercial esta permitido.
 - Riesgo de sesgos y alucinaciones: sin informacion sobre los datos de entrenamiento ni evaluaciones, es imposible evaluar estos riesgos.
 - No apto para produccion: sin datos de rendimiento, latencia ni fiabilidad, no se recomienda su uso en entornos criticos.
@@ -58,5 +58,5 @@ No disponible. Al carecer de especificaciones tecnicas, no es posible identifica
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/geocketa/NeuralVandal)
+- [Modelo en Hugging Face](https://huggingface.co/geocketa/NeuralVandal)
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo, demos) en la informacion proporcionada.

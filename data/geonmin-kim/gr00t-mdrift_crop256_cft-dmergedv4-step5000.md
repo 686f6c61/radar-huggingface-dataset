@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `geonmin-kim/GR00T-Mdrift_crop256_cft-Dmergedv4-step5000` es un ajuste fino (fine-tune) de NVIDIA Isaac GR00T, un modelo de tipo vision-language-action (VLA) orientado a la robótica. Lo desarrolla el usuario de HuggingFace `geonmin-kim` y está diseñado para tareas de manipulación en robots humanoides, tomando entradas multimodales de lenguaje e imágenes para generar acciones motoras. El nombre del modelo sugiere una adaptación específica para el control de movimiento (posiblemente "drift"), con imágenes recortadas a 256 píxeles, un proceso de fusión de modelos (merge) y un entrenamiento de 5000 pasos.
+El modelo `geonmin-kim/GR00T-Mdrift_crop256_cft-Dmergedv4-step5000` es un ajuste fino (fine-tune) de NVIDIA Isaac GR00T, un modelo de tipo vision-language-action (VLA) orientado a la robótica. Lo desarrolla el usuario de Hugging Face `geonmin-kim` y está diseñado para tareas de manipulación en robots humanoides, tomando entradas multimodales de lenguaje e imágenes para generar acciones motoras. El nombre del modelo sugiere una adaptación específica para el control de movimiento (posiblemente "drift"), con imágenes recortadas a 256 píxeles, un proceso de fusión de modelos (merge) y un entrenamiento de 5000 pasos.
 
 El modelo cuenta con 3.144.016.000 parámetros totales, según los metadatos de los pesos en safetensors. No se dispone de información sobre la longitud de contexto, los idiomas soportados, la licencia ni el proceso de entrenamiento detallado. A pesar de la escasez de datos, su relevancia radica en la creciente demanda de modelos VLA abiertos para la robótica generalista, donde NVIDIA GR00T se ha convertido en una referencia.
 
@@ -74,6 +74,6 @@ No se dispone de datos comparativos con modelos similares. El modelo se presenta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geonmin-kim/GR00T-Mdrift_crop256_cft-Dmergedv4-step5000
+- Hugging Face: https://huggingface.co/geonmin-kim/GR00T-Mdrift_crop256_cft-Dmergedv4-step5000
 - GitHub NVIDIA/Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Dataset relacionado: https://huggingface.co/datasets/geonmin-kim/rollout_groot_so101_mdrift_crop_step1000_move_the_red_cube_from_t_sync_0903_1555_20260903_155610

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `satohisa0226/my-lora-backup` es un respaldo personal de un modelo LoRA (Low-Rank Adaptation) subido a HuggingFace por el usuario `satohisa0226`. No se proporciona ninguna descripción en la model card más allá de la licencia `openrail`, y el repositorio tiene un tamaño de 256,7 GB, lo que sugiere que podría contener pesos completos o múltiples versiones del adaptador, aunque no hay confirmación. No se especifica el modelo base al que se aplica el LoRA (posiblemente Flux, Wan, SDXL u otro), ni su arquitectura, parámetros o capacidades. Dado que no hay documentación técnica ni resultados de evaluación, este repositorio no es adecuado para su uso en producción sin una investigación previa por parte del usuario.
+El repositorio `satohisa0226/my-lora-backup` es un respaldo personal de un modelo LoRA (Low-Rank Adaptation) subido a Hugging Face por el usuario `satohisa0226`. No se proporciona ninguna descripción en la model card más allá de la licencia `openrail`, y el repositorio tiene un tamaño de 256,7 GB, lo que sugiere que podría contener pesos completos o múltiples versiones del adaptador, aunque no hay confirmación. No se especifica el modelo base al que se aplica el LoRA (posiblemente Flux, Wan, SDXL u otro), ni su arquitectura, parámetros o capacidades. Dado que no hay documentación técnica ni resultados de evaluación, este repositorio no es adecuado para su uso en producción sin una investigación previa por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/satohisa0226/my-lora-backup
+- Repositorio Hugging Face: https://huggingface.co/satohisa0226/my-lora-backup

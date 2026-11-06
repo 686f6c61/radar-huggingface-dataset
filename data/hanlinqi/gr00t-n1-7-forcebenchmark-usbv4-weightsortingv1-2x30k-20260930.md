@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HanLinqi/GR00T-N1.7-ForceBenchmark-USBv4-WeightSortingV1 (este repo) | Base 3B mas adaptadores LoRA y MoE de fuerza no cuantificados | No disponible; horizonte de accion 10, historial de observacion 2 | Insercion USB y clasificacion de pesos con realimentacion de fuerza | No declarada | HuggingFace, 0 descargas, 3 checkpoints |
-| HanLinqi/GR00T-N1.7-ForceBenchmark-MoE-weightsorting-MLP-30K-20260926 | Base 3B mas adaptadores | No disponible | WeightSorting v1 con cabecera MLP en lugar de la configuracion de este repo | No declarada | HuggingFace |
-| nvidia/GR00T-N1.7-3B (modelo base) | 3B | No disponible en la informacion proporcionada | VLA generalista para habilidades humanoides | Descatalogado como comercializable segun fuentes externas | HuggingFace y ecosistema Isaac GR00T |
+| HanLinqi/GR00T-N1.7-ForceBenchmark-USBv4-WeightSortingV1 (este repo) | Base 3B mas adaptadores LoRA y MoE de fuerza no cuantificados | No disponible; horizonte de accion 10, historial de observacion 2 | Insercion USB y clasificacion de pesos con realimentacion de fuerza | No declarada | Hugging Face, 0 descargas, 3 checkpoints |
+| HanLinqi/GR00T-N1.7-ForceBenchmark-MoE-weightsorting-MLP-30K-20260926 | Base 3B mas adaptadores | No disponible | WeightSorting v1 con cabecera MLP en lugar de la configuracion de este repo | No declarada | Hugging Face |
+| nvidia/GR00T-N1.7-3B (modelo base) | 3B | No disponible en la informacion proporcionada | VLA generalista para habilidades humanoides | Descatalogado como comercializable segun fuentes externas | Hugging Face y ecosistema Isaac GR00T |
 | NVIDIA Isaac GR00T N1.6 / N1.5 (versiones previas) | No disponible | No disponible | VLA para robotica humanoide | No disponible | Repositorio GitHub `NVIDIA/Isaac-GR00T` |
 
 No se dispone de datos de rendimiento de ninguno de los modelos comparados, por lo que la comparación se limita a parámetros, tarea, licencia y disponibilidad.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados, por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HanLinqi/GR00T-N1.7-ForceBenchmark-USBv4-WeightSortingV1-2x30K-20260930
+- Repositorio en Hugging Face: https://huggingface.co/HanLinqi/GR00T-N1.7-ForceBenchmark-USBv4-WeightSortingV1-2x30K-20260930
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Repositorio relacionado del mismo autor (WeightSorting MoE MLP, 30K): https://huggingface.co/HanLinqi/GR00T-N1.7-ForceBenchmark-MoE-weightsorting-MLP-30K-20260926
 - NVIDIA Isaac GR00T (código y documentación): https://github.com/NVIDIA/Isaac-GR00T

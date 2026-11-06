@@ -4,7 +4,7 @@
 
 DeepSeek-V4-Flash-0731-Abliterated-GGUF es una conversión a formato GGUF para llama.cpp del checkpoint DeepSeek-V4-Flash-0731-Abliterated, una versión "abliterada" (con los comportamientos de rechazo eliminados) del modelo DeepSeek-V4-Flash-0731 de DeepSeek. El autor del repo es windowsxp811203. Se trata de un modelo de arquitectura MoE con 43 capas, 256 expertos enrutados (6 activos) y una ventana de contexto nativa de 1.048.576 tokens. La abliteración se aplicó mediante proyección de rango 1 sobre el tensor `attn.wo_b` en las capas 10 a 42, un método que elimina la negativa a responder sin reentrenar el modelo.
 
-El repo publica dos builds: MXFP4 (recomendado, 156,4 GB) y Q3_K_M (135,3 GB), ambos fragmentados en cuatro shards por el límite de 50 GB por archivo de HuggingFace. Es relevante porque ofrece una alternativa sin mecanismos de rechazo para despliegue local con llama.cpp, con mediciones de calidad documentadas (perplejidad, MMLU y tasa de rechazo) y una advertencia explícita sobre el colapso de calidad en cuantizaciones por debajo de Q3. La licencia es MIT y los idiomas soportados son inglés y chino.
+El repo publica dos builds: MXFP4 (recomendado, 156,4 GB) y Q3_K_M (135,3 GB), ambos fragmentados en cuatro shards por el límite de 50 GB por archivo de Hugging Face. Es relevante porque ofrece una alternativa sin mecanismos de rechazo para despliegue local con llama.cpp, con mediciones de calidad documentadas (perplejidad, MMLU y tasa de rechazo) y una advertencia explícita sobre el colapso de calidad en cuantizaciones por debajo de Q3. La licencia es MIT y los idiomas soportados son inglés y chino.
 
 ## Especificaciones técnicas
 
@@ -86,7 +86,7 @@ No se dispone de datos suficientes sobre la versión de huihui-ai (tamaños, cua
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/windowsxp811203/DeepSeek-V4-Flash-0731-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/windowsxp811203/DeepSeek-V4-Flash-0731-Abliterated-GGUF
 - Modelo base (abliterado): https://huggingface.co/windowsxp811203/DeepSeek-V4-Flash-0731-Abliterated
 - Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Versión abliterada alternativa (huihui-ai): https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF

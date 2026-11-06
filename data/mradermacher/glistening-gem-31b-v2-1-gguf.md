@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Glistening-Gem-31B-v2.1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Glistening-Gem-31B-v2.1-GGUF
 - Modelo base (no cuantizado): https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.1
 - Version i1-GGUF (con imatrix): https://huggingface.co/mradermacher/Glistening-Gem-31B-v2.1-i1-GGUF
 - Pagina de despliegue en FriendliAI: https://friendli.ai/models/sophosympatheia/Glistening-Gem-31B-v2.1

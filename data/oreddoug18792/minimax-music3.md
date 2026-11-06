@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax Music 3 es un modelo de generación de música desarrollado por MiniMax, diseñado para crear canciones completas de hasta cinco minutos de duración a partir de letras y una descripción musical detallada. Combina un modelo de lenguaje global de 8B parámetros (inicializado desde Qwen3-8B) que modela la estructura musical a largo plazo, con un modelo local de 0.6B que restaura los detalles acústicos por tramo, y un sistema de síntesis continua basado en Flow Matching y Flow-VAE que produce audio estéreo WAV de 32 kHz y 16 bits. El modelo acepta entradas duales —letras con etiquetas de sección y una descripción estructurada de estilo, voz y arreglo— y genera piezas con coherencia estructural, voces expresivas y arreglos que evolucionan. Su relevancia actual radica en ser uno de los primeros modelos abiertos que abordan la generación de canciones completas con control fino y calidad de audio profesional, aunque el repositorio consultado (OREDDoug18792/MiniMax-Music3) es un espejo no oficial con pesos parciales, y la licencia y los idiomas soportados no están especificados en la ficha de HuggingFace.
+MiniMax Music 3 es un modelo de generación de música desarrollado por MiniMax, diseñado para crear canciones completas de hasta cinco minutos de duración a partir de letras y una descripción musical detallada. Combina un modelo de lenguaje global de 8B parámetros (inicializado desde Qwen3-8B) que modela la estructura musical a largo plazo, con un modelo local de 0.6B que restaura los detalles acústicos por tramo, y un sistema de síntesis continua basado en Flow Matching y Flow-VAE que produce audio estéreo WAV de 32 kHz y 16 bits. El modelo acepta entradas duales —letras con etiquetas de sección y una descripción estructurada de estilo, voz y arreglo— y genera piezas con coherencia estructural, voces expresivas y arreglos que evolucionan. Su relevancia actual radica en ser uno de los primeros modelos abiertos que abordan la generación de canciones completas con control fino y calidad de audio profesional, aunque el repositorio consultado (OREDDoug18792/MiniMax-Music3) es un espejo no oficial con pesos parciales, y la licencia y los idiomas soportados no están especificados en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,8 +66,8 @@ No se dispone de datos comparativos con otros modelos de generación de música 
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo consultado): https://huggingface.co/OREDDoug18792/MiniMax-Music3
-- Repositorio HuggingFace oficial de MiniMax: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Repositorio Hugging Face (espejo consultado): https://huggingface.co/OREDDoug18792/MiniMax-Music3
+- Repositorio Hugging Face oficial de MiniMax: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repositorio GitHub oficial: https://github.com/MiniMax-AI/MiniMax-Music3
 - Demo oficial: https://minimax-ai.github.io/music3-demo/
 - Guía independiente: https://minimaxmusic3.ai/

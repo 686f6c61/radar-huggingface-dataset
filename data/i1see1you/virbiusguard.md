@@ -76,6 +76,6 @@ La versión V13 redujo la tasa de omisiones del 17,1 % (modelo base) al 0,4 % y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/i1see1you/VirbiusGuard
+- Hugging Face: https://huggingface.co/i1see1you/VirbiusGuard
 - ModelScope: https://modelscope.cn/models/i1see1you/VirbiusGuard
 - Perfil del autor: https://huggingface.co/i1see1you

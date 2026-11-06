@@ -91,5 +91,5 @@ La comparativa muestra que este checkpoint, con su configuracion de lr 1e-6, es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SeanWang0027/official-opd-qwen3-1.7b-from-4b-thinking
+- Hugging Face: https://huggingface.co/SeanWang0027/official-opd-qwen3-1.7b-from-4b-thinking
 - Repositorio de scripts de entrenamiento: `SeanWang0027/rlve-distill-scripts` (mencionado en la model card, sin URL directa disponible)

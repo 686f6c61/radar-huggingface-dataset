@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio publicado en HuggingFace por el usuario sdsdfs4545 que contiene un unico checkpoint, identificado en la model card como `step_1000`, seleccionado por haber obtenido la puntuacion mas alta de `eval_accuracy` entre los checkpoints disponibles en el espacio de trabajo del autor. El repositorio no incluye pipeline declarado, ni licencia, ni idiomas soportados, y su tamano es de 0,0 GB, por lo que no se puede confirmar que los pesos sean realmente descargables o completos.
+MyAwesomeModel-TestRepository es un repositorio publicado en Hugging Face por el usuario sdsdfs4545 que contiene un unico checkpoint, identificado en la model card como `step_1000`, seleccionado por haber obtenido la puntuacion mas alta de `eval_accuracy` entre los checkpoints disponibles en el espacio de trabajo del autor. El repositorio no incluye pipeline declarado, ni licencia, ni idiomas soportados, y su tamano es de 0,0 GB, por lo que no se puede confirmar que los pesos sean realmente descargables o completos.
 
 La unica etiqueta tecnica disponible es `bert` junto con `pytorch`, lo que sugiere una arquitectura transformer de tipo encoder, aunque no hay confirmacion en la model card ni en `config.json` (no accesible desde la informacion proporcionada). No se especifican parametros totales, longitud de contexto, vocabulario, datos de entrenamiento ni proceso de alineacion.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada y de caracter metodologico: se trata de 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. La unica pista es la etiqueta `bert` asociada al repositorio, que en HuggingFace suele identificar modelos de la familia BERT (encoder transformer bidireccional). Sin embargo, la model card no describe capa de atencion, numero de capas, dimensiones ocultas, mecanismo de posicion ni tipo de tokenizador, y el archivo `config.json` no esta disponible en la informacion proporcionada. Tampoco se indica si el modelo es realmente un BERT o si la etiqueta se aplico de forma generica.
+No hay informacion verificable sobre la arquitectura. La unica pista es la etiqueta `bert` asociada al repositorio, que en Hugging Face suele identificar modelos de la familia BERT (encoder transformer bidireccional). Sin embargo, la model card no describe capa de atencion, numero de capas, dimensiones ocultas, mecanismo de posicion ni tipo de tokenizador, y el archivo `config.json` no esta disponible en la informacion proporcionada. Tampoco se indica si el modelo es realmente un BERT o si la etiqueta se aplico de forma generica.
 
 Respecto al entrenamiento, la model card solo menciona que se selecciono el checkpoint `step_1000` de un espacio de trabajo, lo que implica un entrenamiento por pasos con evaluacion intermedia, pero no se declara el numero de tokens, la composicion del dataset, el regimen de precision, ni si hubo RLHF, DPO, SFT u otro tipo de ajuste. No se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, MoE, SSM).
 
@@ -124,7 +124,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdsdfs4545/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/sdsdfs4545/MyAwesomeModel-TestRepository
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

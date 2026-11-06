@@ -86,7 +86,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/VideoThinker-R1-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/VideoThinker-R1-3B-GGUF
 - Modelo base: https://huggingface.co/Falconss1/VideoThinker-R1-3B
 - Pagina de resumen del cuantizador para este modelo: https://hf.tst.eu/model#VideoThinker-R1-3B-GGUF
 - Guia de uso de ficheros GGUF citada por el autor: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

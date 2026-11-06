@@ -6,7 +6,7 @@ El modelo `granite-embedding-311m-multilingual-r2` es un modelo de embeddings de
 
 El modelo se publica en dos tamaños: una versión completa de 311M parámetros y una versión compacta de 97M parámetros obtenida mediante poda y selección de vocabulario, que según el paper alcanza el mejor rendimiento de recuperación entre los modelos abiertos multilingües de menos de 100M parámetros. La versión de 311M prioriza la precisión sobre el rendimiento, siendo apropiada cuando la exactitud en recuperación multilingüe es crítica y se dispone de recursos de cómputo suficientes.
 
-Cabe señalar que el repositorio `chmielvu/granite-embedding-311m-multilingual-r2-fp16` en HuggingFace no contiene el modelo original, sino un prototipo experimental de simulación de empaquetado para LightRAG, sin relación con el modelo de IBM. La ficha se basa en la documentación oficial del modelo de IBM y en el paper asociado.
+Cabe señalar que el repositorio `chmielvu/granite-embedding-311m-multilingual-r2-fp16` en Hugging Face no contiene el modelo original, sino un prototipo experimental de simulación de empaquetado para LightRAG, sin relación con el modelo de IBM. La ficha se basa en la documentación oficial del modelo de IBM y en el paper asociado.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks detallados en la información dispo
 - VRAM estimada: el modelo en FP16 ocupa aproximadamente 622 MB solo para los pesos. Con contexto de 32K tokens, el uso de memoria puede aumentar significativamente durante la inferencia, dependiendo del tamaño del lote. Se estima que una GPU con 8 GB de VRAM puede ejecutar el modelo con lotes pequeños.
 - GPU recomendadas: NVIDIA T4, V100, RTX 3090/4090, A10, A100, H100. Para producción con alto throughput, se recomienda al menos una A10 o superior.
 - Es viable en GPUs de consumo como RTX 3060 (12 GB) o RTX 4070, siempre que se gestione el tamaño del lote.
-- Opciones de despliegue: el modelo se puede servir con vLLM, TGI, o mediante frameworks de embeddings como TEI (Text Embeddings Inference) de HuggingFace. También es compatible con llama.cpp para CPU, aunque con menor rendimiento.
+- Opciones de despliegue: el modelo se puede servir con vLLM, TGI, o mediante frameworks de embeddings como TEI (Text Embeddings Inference) de Hugging Face. También es compatible con llama.cpp para CPU, aunque con menor rendimiento.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 311M, se espera una latencia de decenas de milisegundos por lote en GPU moderna, pero depende del hardware y la longitud de los textos.
 
 ## Comparativa con modelos similares

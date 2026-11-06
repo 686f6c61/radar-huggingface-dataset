@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax H3 es un sistema generativo omni-modal de código abierto desarrollado por MiniMax, presentado como un modelo unificado capaz de comprender y generar contenido multimodal que combina texto, imágenes, video y audio. Su característica más destacada es la generación de video con audio estéreo nativo sincronizado, alcanzando resoluciones de hasta 2K y duraciones de hasta 15 segundos. El modelo se distribuye en tres módulos complementarios: H3-Context-IR, que procesa y refina instrucciones multimodales complejas; H3-Base, que genera el video y audio a 768p; y H3-Regenerate-2K, que regenera el resultado a 2K. Está disponible bajo una licencia comunitaria específica y su repositorio en HuggingFace ocupa 354 GB, lo que indica un modelo de gran tamaño. Su relevancia radica en que aborda de forma conjunta tareas que tradicionalmente se trataban por separado, como text-to-video, image-to-video, video-to-video y generación de audio sincronizado, con soporte estable para 11 idiomas.
+MiniMax H3 es un sistema generativo omni-modal de código abierto desarrollado por MiniMax, presentado como un modelo unificado capaz de comprender y generar contenido multimodal que combina texto, imágenes, video y audio. Su característica más destacada es la generación de video con audio estéreo nativo sincronizado, alcanzando resoluciones de hasta 2K y duraciones de hasta 15 segundos. El modelo se distribuye en tres módulos complementarios: H3-Context-IR, que procesa y refina instrucciones multimodales complejas; H3-Base, que genera el video y audio a 768p; y H3-Regenerate-2K, que regenera el resultado a 2K. Está disponible bajo una licencia comunitaria específica y su repositorio en Hugging Face ocupa 354 GB, lo que indica un modelo de gran tamaño. Su relevancia radica en que aborda de forma conjunta tareas que tradicionalmente se trataban por separado, como text-to-video, image-to-video, video-to-video y generación de audio sincronizado, con soporte estable para 11 idiomas.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ MiniMax H3 es un sistema generativo omni-modal de código abierto desarrollado p
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | Arabe, chino, ingles, frances, aleman, italiano, japones, coreano, portugues, ruso y espanol (soporte estable); otros idiomas con soporte variable |
 | Licencia | minimax-h3-community-license-agreement |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,8 +73,8 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- Repositorio en HuggingFace (mirror): https://huggingface.co/hjshus/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio en Hugging Face (mirror): https://huggingface.co/hjshus/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog oficial de MiniMax: https://www.minimax.io/blog/minimax-h3
 - Pagina de Hailuo AI (aplicacion web): https://hailuoai.video/tools/minimax-h3

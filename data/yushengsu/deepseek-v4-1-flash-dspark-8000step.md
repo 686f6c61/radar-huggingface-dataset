@@ -6,7 +6,7 @@ DeepSeek-V4.1-Flash DSpark es un modelo borrador (draft model) de decodificacion
 
 El modelo se ha afinado con SpecForge a partir del draft oficial `mtp.*` incluido en DeepSeek-V4.1-Flash, sobre filas de modo pensamiento (thinking mode) regeneradas. Cuenta con 14.200 millones de parametros totales organizados como un MoE de 128 expertos y 3 capas. El entrenamiento se ejecuto con batch global de 128, learning rate constante de 2e-5 y block size de entrenamiento de 7, con warm start desde el draft oficial.
 
-Es relevante porque la decodificacion especulativa es una de las palancas practicas mas eficaces para reducir latencia en modelos MoE grandes, y este checkpoint ofrece un draft afinado especificamente para el modo pensamiento de DeepSeek-V4.1-Flash. No obstante, el repositorio presenta cero descargas y el pipeline no esta declarado en HuggingFace, por lo que debe tratarse como un artefacto experimental.
+Es relevante porque la decodificacion especulativa es una de las palancas practicas mas eficaces para reducir latencia en modelos MoE grandes, y este checkpoint ofrece un draft afinado especificamente para el modo pensamiento de DeepSeek-V4.1-Flash. No obstante, el repositorio presenta cero descargas y el pipeline no esta declarado en Hugging Face, por lo que debe tratarse como un artefacto experimental.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El repositorio incluye checkpoints cada 500 pasos globales en dos layouts: `step
 - Decodificacion especulativa: propone tokens candidatos para verificacion por DeepSeek-V4.1-Flash bajo el algoritmo DSPARK.
 - Aceleracion de inferencia en modo pensamiento: el afinamiento se realizo sobre filas regeneradas de thinking mode.
 - Integracion con SGLang: export en layout oficial `mtp.*` y flag `--speculative-algorithm DSPARK`.
-- Export a HuggingFace: conversion con `specforge export --to hf`.
+- Export a Hugging Face: conversion con `specforge export --to hf`.
 - No es un modelo generativo autonomo: no debe usarse para generar texto de forma independiente.
 - Capacidades multilingues: no disponibles.
 - Tool calling, agentes, vision o audio: no disponibles.
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yushengsu/deepseek-v4.1-flash-dspark-8000step
+- Hugging Face: https://huggingface.co/yushengsu/deepseek-v4.1-flash-dspark-8000step
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - PR de SpecForge (rama `v4.1-dspark`): https://github.com/sgl-project/SpecForge/pull/1073
 - W&B del run de entrenamiento: https://forge.coreweave.com/wandb/eigent_radixark_training/deepseek-v4.1-flash-dspark/runs/v41-b200-8000step-b7

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-influencer-face-model-lora` es un adaptador LoRA para generación y edición de imágenes condicionada por texto (pipeline `image-text-to-image`), orientado a la creación de rostros de tipo *influencer* con identidad consistente. Lo publica la plataforma RunningHub en HuggingFace bajo la cuenta `RunningHubAI`, aunque la autoría del ajuste se atribuye al usuario `@氛围感` dentro de dicha plataforma, donde el modelo tiene ficha propia.
+`rh-influencer-face-model-lora` es un adaptador LoRA para generación y edición de imágenes condicionada por texto (pipeline `image-text-to-image`), orientado a la creación de rostros de tipo *influencer* con identidad consistente. Lo publica la plataforma RunningHub en Hugging Face bajo la cuenta `RunningHubAI`, aunque la autoría del ajuste se atribuye al usuario `@氛围感` dentro de dicha plataforma, donde el modelo tiene ficha propia.
 
 El repositorio es mínimo: un único fichero `Krea2-Turbo_c1-st10000.safetensors` de 224 MiB (0,2 GB de repositorio). Según la model card, el LoRA está ajustado a partir de `krea2`, un modelo base de generación de imágenes por texto que no se distribuye en este repositorio y cuyas especificaciones no se detallan. El uso previsto es cargarlo en ComfyUI o en la propia plataforma RunningHub junto con el modelo base correspondiente.
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-influencer-face-model-lora | no disponible (adaptador de 224 MiB) | no aplica | sin benchmarks publicados | "For personal use only" (sin licencia formal) | HuggingFace, RunningHub |
+| rh-influencer-face-model-lora | no disponible (adaptador de 224 MiB) | no aplica | sin benchmarks publicados | "For personal use only" (sin licencia formal) | Hugging Face, RunningHub |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-influencer-face-model-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-influencer-face-model-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2077207128280137729
 - Página del autor en RunningHub: https://www.runninghub.ai/user-center/2041030036219498497
 - RunningHub (sitio internacional): https://www.runninghub.ai

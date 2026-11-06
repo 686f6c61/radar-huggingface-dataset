@@ -4,7 +4,7 @@
 
 ## Resumen
 
-loan-approval-prediction es un modelo de clasificacion binaria tabular publicado en HuggingFace por el autor individual waelGabsi01. No es un modelo de lenguaje ni una red neuronal: se trata de una regresion logistica entrenada con scikit-learn que predice si una solicitud de prestamo se aprueba (`Approved` → 1) o se rechaza (`Rejected` → 0) a partir de ocho caracteristicas financieras y personales del solicitante, entre ellas la puntuacion CIBIL, los ingresos anuales, el importe del prestamo, la duracion, el numero de dependientes y el patrimonio total.
+loan-approval-prediction es un modelo de clasificacion binaria tabular publicado en Hugging Face por el autor individual waelGabsi01. No es un modelo de lenguaje ni una red neuronal: se trata de una regresion logistica entrenada con scikit-learn que predice si una solicitud de prestamo se aprueba (`Approved` → 1) o se rechaza (`Rejected` → 0) a partir de ocho caracteristicas financieras y personales del solicitante, entre ellas la puntuacion CIBIL, los ingresos anuales, el importe del prestamo, la duracion, el numero de dependientes y el patrimonio total.
 
 El modelo resuelve un problema de clasificacion supervisada sobre datos tabulares y su relevancia es exclusivamente didactica: la propia model card lo presenta como un ejercicio de aprendizaje dentro de un recorrido personal por el machine learning, siguiendo un tutorial practico. El repositorio contiene dos artefactos serializados con Pickle, `model.pkl` (el clasificador) y `scaler.pkl` (el `StandardScaler` ajustado), que deben usarse conjuntamente para reproducir el flujo de prediccion. El tamano del repositorio es de 0,0 GB, coherente con un modelo de pocos parametros.
 
@@ -20,7 +20,7 @@ Al no disponer de arquitectura de red, ventana de contexto ni pesos en safetenso
 | Longitud de contexto | No aplica (modelo tabular, no es un modelo de lenguaje) |
 | Tipos de cuantizacion | No aplica; el modelo se serializa con Pickle a precision completa (float64 de NumPy) |
 | Idiomas soportados | No disponible (los valores categoricos de entrada estan en ingles: `Graduate`, `Not Graduate`, `Yes`, `No`) |
-| Licencia | No disponible (ni en los metadatos de HuggingFace ni en la model card) |
+| Licencia | No disponible (ni en los metadatos de Hugging Face ni en la model card) |
 | Formato de pesos | Pickle: `model.pkl` y `scaler.pkl` |
 | Tarea | Clasificacion binaria tabular (`tabular-classification`) |
 | Framework | scikit-learn |
@@ -80,7 +80,7 @@ Se comparan alternativas genericas de clasificacion tabular binaria. No se dispo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| loan-approval-prediction (waelGabsi01) | Regresion logistica | No disponible (8 caracteristicas) | No aplica | No publicado | No disponible | HuggingFace, 0 descargas, 0 likes |
+| loan-approval-prediction (waelGabsi01) | Regresion logistica | No disponible (8 caracteristicas) | No aplica | No publicado | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Regresion logistica generica en scikit-learn | Modelo lineal | Configurable | No aplica | Depende del conjunto de datos | BSD-3-Clause | Libreria scikit-learn |
 | XGBoost | Gradient boosting | Configurable | No aplica | Depende del conjunto de datos | Apache-2.0 | Libreria XGBoost |
 | LightGBM | Gradient boosting | Configurable | No aplica | Depende del conjunto de datos | MIT | Libreria LightGBM |
@@ -101,7 +101,7 @@ Se comparan alternativas genericas de clasificacion tabular binaria. No se dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/waelGabsi01/loan-approval-prediction
+- Hugging Face: https://huggingface.co/waelGabsi01/loan-approval-prediction
 - Repositorio de GitHub con el codigo de entrenamiento y la aplicacion Streamlit: mencionado en la model card, URL no disponible
 - Paper o publicacion tecnica: no disponible
 - Demo desplegada: no disponible

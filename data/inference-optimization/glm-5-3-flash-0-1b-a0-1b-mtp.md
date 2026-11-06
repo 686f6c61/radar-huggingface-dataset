@@ -76,7 +76,7 @@ No hay modelos comparables en el sentido de que todos son fixtures de prueba del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP
 - Modelo base tiny: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor
 - Modelo original GLM-5.3-Flash de Z.ai: https://huggingface.co/zai-org/GLM-5.3-Flash

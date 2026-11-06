@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen25-32b-kaczer-kl-other-domains-bad-medical-s0 | 32B (base) + LoRA | no disponible | Adaptador LoRA de investigación (organismo modelo) | Apache 2.0 | HuggingFace (repo de 21,5 GB) |
-| Qwen/Qwen2.5-32B-Instruct | 32B | no disponible en la informacion | Modelo denso instructivo | Apache 2.0 | HuggingFace |
+| qwen25-32b-kaczer-kl-other-domains-bad-medical-s0 | 32B (base) + LoRA | no disponible | Adaptador LoRA de investigación (organismo modelo) | Apache 2.0 | Hugging Face (repo de 21,5 GB) |
+| Qwen/Qwen2.5-32B-Instruct | 32B | no disponible en la informacion | Modelo denso instructivo | Apache 2.0 | Hugging Face |
 | Otros organismos modelo del paper arXiv:2506.11613 | Variable | no disponible | Adaptadores de investigación | Según el autor | Repositorios del proyecto em-eval |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/em-eval/qwen25-32b-kaczer-kl-other-domains-bad-medical-s0
+- Hugging Face: https://huggingface.co/em-eval/qwen25-32b-kaczer-kl-other-domains-bad-medical-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Paper de referencia: Turner, Soligo et al., "Model Organisms for Emergent Misalignment", https://arxiv.org/abs/2506.11613
 - Código de entrenamiento: https://github.com/swiss-ai/em-eval (comando `em_train`, commit `02d1a00c522e82ce66fdd0ea172bc94281c834b9`)

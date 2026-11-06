@@ -97,7 +97,7 @@ Las alternativas de Whisper medium son más grandes y pesadas, pero no se dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bhaskaro/ainotes-whisper-urdu-q5_1
+- Repositorio Hugging Face: https://huggingface.co/bhaskaro/ainotes-whisper-urdu-q5_1
 - Modelo base: https://huggingface.co/Abdullah17/whisper-small-urdu
 - Repositorio whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Modelo alternativo (whisper-medium-urdu): https://huggingface.co/ihanif/whisper-medium-urdu

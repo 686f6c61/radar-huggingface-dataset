@@ -77,7 +77,7 @@ No se dispone de información sobre otros modelos de traducción inglés-cachemi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hydergaxii/vaakh1-en-kas
+- Modelo en Hugging Face: https://huggingface.co/hydergaxii/vaakh1-en-kas
 - Repositorio de código y documentación: https://github.com/aicodealchemist/vaakh1-kathe2026
 - Modelo base IndicTrans2: https://huggingface.co/ai4bharat/indictrans2-en-indic-dist-200M
 - Dataset BPCC: https://huggingface.co/datasets/ai4bharat/BPCC

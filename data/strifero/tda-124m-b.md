@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tda-124m-B | 110M | 1.024 | Atribución de datos (banco de pruebas) | Apache-2.0 | HuggingFace |
-| tda-124m-A | 110M | 1.024 | Gemelo de control del anterior | Apache-2.0 | HuggingFace |
+| tda-124m-B | 110M | 1.024 | Atribución de datos (banco de pruebas) | Apache-2.0 | Hugging Face |
+| tda-124m-A | 110M | 1.024 | Gemelo de control del anterior | Apache-2.0 | Hugging Face |
 | Elroy (referencia del autor) | 110M (misma forma) | 1.024 | Modelo base de investigación | no disponible en la información | no disponible |
-| GPT-2 small | 124M | 1.024 | Generación de texto general | MIT (según versión) | HuggingFace |
+| GPT-2 small | 124M | 1.024 | Generación de texto general | MIT (según versión) | Hugging Face |
 
 La comparación con modelos de propósito general no es significativa: tda-124m-B no compite en rendimiento lingüístico, sino que existe como instrumento de medida. Su única alternativa funcional es su gemelo tda-124m-A, y el binomio solo tiene sentido usado en conjunto.
 
@@ -86,7 +86,7 @@ La comparación con modelos de propósito general no es significativa: tda-124m-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/strifero/tda-124m-B
+- Modelo en Hugging Face: https://huggingface.co/strifero/tda-124m-B
 - Gemelo de control: https://huggingface.co/strifero/tda-124m-A
 - Informe "Paper trail": https://trifero.ai/research/paper-trail/
 - Dataset de referencia: https://huggingface.co/datasets/strifero/attribution-groundtruth

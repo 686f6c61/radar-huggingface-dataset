@@ -84,6 +84,6 @@ La comparativa se limita a parámetros, contexto, licencia y compatibilidad porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lillycham/tiny-lm-shakespeare
+- Modelo en Hugging Face: https://huggingface.co/lillycham/tiny-lm-shakespeare
 - Repositorio tiny-lm: https://github.com/lillycham/tiny-lm
 - Dataset Tiny Shakespeare (Karpathy): https://github.com/karpathy/char-rnn

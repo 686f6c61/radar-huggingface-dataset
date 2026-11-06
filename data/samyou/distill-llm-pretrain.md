@@ -78,6 +78,6 @@ No se dispone de resultados de benchmarks comparables; la comparativa se basa ú
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samyou/distill-llm-pretrain
+- Hugging Face: https://huggingface.co/samyou/distill-llm-pretrain
 - MLX: https://github.com/ml-explore/mlx
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

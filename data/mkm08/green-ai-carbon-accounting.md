@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mkm08/green-ai-carbon-accounting` es una demo publicada en HuggingFace por el usuario `mkm08` que documenta el proceso de fine-tuning de un modelo de IA con un enfoque en la contabilidad de emisiones de carbono. La model card no describe el modelo en sí, sino que se centra en las métricas de sostenibilidad del entrenamiento: se utilizaron 5 GPUs NVIDIA A100 durante 293,3 horas en la región `europe-west4`, con un consumo total de 868,168 kWh y unas emisiones de 173,634 kg de CO₂eq, calculadas con CodeCarbon.
+El modelo `mkm08/green-ai-carbon-accounting` es una demo publicada en Hugging Face por el usuario `mkm08` que documenta el proceso de fine-tuning de un modelo de IA con un enfoque en la contabilidad de emisiones de carbono. La model card no describe el modelo en sí, sino que se centra en las métricas de sostenibilidad del entrenamiento: se utilizaron 5 GPUs NVIDIA A100 durante 293,3 horas en la región `europe-west4`, con un consumo total de 868,168 kWh y unas emisiones de 173,634 kg de CO₂eq, calculadas con CodeCarbon.
 
 A pesar de su nombre, no se proporciona información sobre la arquitectura, el tamaño, el contexto o las capacidades del modelo subyacente. La ficha se limita a los datos de emisiones y hardware, lo que sugiere que el propósito principal es demostrar cómo medir el impacto ambiental de un entrenamiento de IA, más que ofrecer un modelo funcional para tareas de procesamiento del lenguaje. No hay pipeline definido, licencia declarada ni idiomas soportados.
 
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables. Dado que no se conoce l
 
 ## Enlaces
 
-- [HuggingFace - mkm08/green-ai-carbon-accounting](https://huggingface.co/mkm08/green-ai-carbon-accounting)
+- [Hugging Face - mkm08/green-ai-carbon-accounting](https://huggingface.co/mkm08/green-ai-carbon-accounting)
 - [Green AI Model - Introduction](https://green-ai-model.github.io/docs/1_introduction/)
 - [AI and Sustainability: How Tech Transforms Carbon Accounting](https://www.zevero.earth/blog/ai-and-sustainability-carbon-accounting)
 - [Harnessing AI for Carbon Accounting: Revolutionizing ESG Reporting and Sustainability](https://www.researchgate.net/publication/389438965_Harnessing_AI_for_Carbon_Accounting_Revolutionizing_ESG_Reporting_and_Sustainability)

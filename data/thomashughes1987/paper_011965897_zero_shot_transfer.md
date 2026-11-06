@@ -54,7 +54,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje u otros
 ## Limitaciones y advertencias
 
 - **No es un modelo**: no se puede desplegar en producción ni usar para inferencia.
-- **Contenido no verificado**: el documento no ha pasado por un proceso de revisión por pares (la plataforma HuggingFace no es un foro académico).
+- **Contenido no verificado**: el documento no ha pasado por un proceso de revisión por pares (la plataforma Hugging Face no es un foro académico).
 - **Riesgo de desinformación**: al no estar validado, las afirmaciones pueden ser inexactas o incompletas.
 - **Licencia**: aunque la licencia es CC-BY-4.0, requiere atribución y no permite restricciones adicionales.
 - **Idioma**: el contenido está en inglés, lo que limita su accesibilidad.

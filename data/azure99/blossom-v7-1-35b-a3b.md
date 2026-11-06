@@ -90,7 +90,7 @@ El unico dato comparativo aportado por el autor es cualitativo y se refiere a la
 | Blossom-V7.1-35B-A3B | 35,95B totales (activos no disponibles) | 256K (128K recomendado) | Texto e imagen | apache-2.0 | safetensors + GGUF + demo | Variante orientada a throughput en CPU o hibrido CPU/GPU |
 | Blossom-V7.1-27B | no disponible | no disponible | no disponible | apache-2.0 (heredada de la familia) | safetensors + GGUF + demo | Opcion densa mas capaz, pensada para despliegue en GPU con pesos en memoria de GPU |
 | Blossom-V7.1-9B | no disponible | no disponible | no disponible | apache-2.0 (heredada de la familia) | safetensors + GGUF + demo | Opcion de menores recursos, para GPU con memoria limitada y dispositivos moviles |
-| Qwen3.6-35B-A3B (modelo base) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | HuggingFace (Qwen) | Base sobre la que se construye esta variante; usa plantilla de chat nativa distinta |
+| Qwen3.6-35B-A3B (modelo base) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Hugging Face (Qwen) | Base sobre la que se construye esta variante; usa plantilla de chat nativa distinta |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada; la seleccion entre ellas se plantea en la model card en terminos de objetivo de calidad, hardware de inferencia y presupuesto de memoria.
 
@@ -110,7 +110,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Azure99/Blossom-V7.1-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/Azure99/Blossom-V7.1-35B-A3B
 - Repositorio GGUF de esta variante: https://huggingface.co/Azure99/Blossom-V7.1-35B-A3B-GGUF
 - Demo de esta variante: https://huggingface.co/spaces/Azure99/Blossom-35B-A3B-Demo
 - Variante Blossom-V7.1-27B: https://huggingface.co/Azure99/Blossom-V7.1-27B
@@ -127,4 +127,4 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 - Modelo base Qwen3.8-27B (variante 27B): https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base Qwen3.5-9B (variante 9B): https://huggingface.co/Qwen/Qwen3.5-9B
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio en HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio en Hugging Face.

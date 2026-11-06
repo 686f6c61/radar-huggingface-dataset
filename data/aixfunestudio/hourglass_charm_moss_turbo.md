@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AIxFuneStudio/Hourglass_Charm_Moss_Turbo` es un modelo publicado en HuggingFace por el usuario/organización AIxFuneStudio. El repositorio tiene un tamaño de 5,4 GB, acceso restringido (gated) y licencia etiquetada como `other`. En el momento de redactar esta ficha no se ha publicado en la información disponible ninguna descripción de modelo (model card), pipeline declarado, idiomas soportados ni resultados de evaluación.
+`AIxFuneStudio/Hourglass_Charm_Moss_Turbo` es un modelo publicado en Hugging Face por el usuario/organización AIxFuneStudio. El repositorio tiene un tamaño de 5,4 GB, acceso restringido (gated) y licencia etiquetada como `other`. En el momento de redactar esta ficha no se ha publicado en la información disponible ninguna descripción de modelo (model card), pipeline declarado, idiomas soportados ni resultados de evaluación.
 
 La única información verificable es de tipo administrativo: identificador, autor, fechas de creación y actualización (24 de octubre de 2026), etiquetas (`license:other`, `region:us`) y ausencia total de tracción en la plataforma (0 descargas, 0 likes). El nombre del repositorio sugiere una variante optimizada para velocidad ("Turbo") y posiblemente un ajuste fino ("Charm", "Moss"), pero se trata de una interpretación del identificador y no de un dato confirmado.
 
@@ -31,7 +31,7 @@ Tampoco hay información sobre innovaciones técnicas (decodificación especulat
 
 ## Capacidades
 
-- Generación de texto: no confirmada documentalmente; el pipeline no está declarado en HuggingFace.
+- Generación de texto: no confirmada documentalmente; el pipeline no está declarado en Hugging Face.
 - Razonamiento y matemáticas: no disponible.
 - Generación de código: no disponible.
 - Visión o multimodalidad: no disponible.
@@ -83,14 +83,14 @@ No es posible establecer una comparativa fiable porque se desconoce la categorí
 - Sesgos conocidos: no documentados. Un modelo sin evaluación publicada puede presentar sesgos lingüísticos, culturales o de dominio no identificados.
 - Limitaciones de contexto e idioma: se desconoce la ventana de contexto y los idiomas soportados; el campo de idiomas del repositorio está vacío.
 - Licencia: etiquetada como `other` sin texto visible en la información disponible. Antes de cualquier uso comercial es imprescindible localizar y leer los términos exactos incluidos en el repositorio.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que puede implicar restricciones adicionales de uso, redistribución o compartición de pesos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que puede implicar restricciones adicionales de uso, redistribución o compartición de pesos.
 - Señales de tracción nula: 0 descargas y 0 likes. No hay evidencia de validación por parte de la comunidad ni de terceros independientes.
 - Nombre del repositorio potencialmente engañoso: los sufijos "Turbo" o "Moss" no están respaldados por ninguna especificación técnica publicada.
 - Fechas del repositorio: creación y actualización el 24 de octubre de 2026, con apenas cuatro minutos entre ambas; el repositorio no parece haber recibido mantenimiento posterior según los datos disponibles.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Hourglass_Charm_Moss_Turbo
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Hourglass_Charm_Moss_Turbo
 - Repositorio de GitHub: no disponible
 - Paper técnico: no disponible
 - Blog o anuncio del autor: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoS-8B-Checkpoints es un repositorio de checkpoints de investigación publicado por el usuario ryan-0608 en HuggingFace. No contiene un modelo conversacional al uso, sino los pesos intermedios y finales de una familia de modelos draft (borradores) construidos sobre Qwen3-8B para decodificación especulativa dentro del proyecto denominado MoS. La innovación que se estudia es la inyección de mezclas de expertos locales por capa ("mixture of layer-local expert MLPs") sumadas a un MLP compartido en cada capa del draft, con configuraciones de K=4, K=8 y K=16 expertos.
+MoS-8B-Checkpoints es un repositorio de checkpoints de investigación publicado por el usuario ryan-0608 en Hugging Face. No contiene un modelo conversacional al uso, sino los pesos intermedios y finales de una familia de modelos draft (borradores) construidos sobre Qwen3-8B para decodificación especulativa dentro del proyecto denominado MoS. La innovación que se estudia es la inyección de mezclas de expertos locales por capa ("mixture of layer-local expert MLPs") sumadas a un MLP compartido en cada capa del draft, con configuraciones de K=4, K=8 y K=16 expertos.
 
 El repositorio documenta seis "arms" (ramas experimentales) entrenadas sobre un corpus autogenerado de 8B denominado `dataclean-8b-20260912`, con un calendario de 5 épocas (66.625 pasos, 13.325 pasos por época) y guardados cada media época. Incluye además las inicializaciones de arranque en caliente (`inputs/`), tanto las de expertos aleatorios con semillas concretas como las de warm-start con jitter del 1 % sobre el MLP de la capa D0.
 
@@ -50,7 +50,7 @@ El entrenamiento usa el corpus autogenerado de 8B `dataclean-8b-20260912` (varia
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite los resultados a la seccion 10 del README del repositorio GitHub del proyecto, sin incluirlos en HuggingFace, y no aporta cifras de tasa de aceptacion, speedup de decodificacion, perplejidad ni evaluaciones de calidad del draft.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite los resultados a la seccion 10 del README del repositorio GitHub del proyecto, sin incluirlos en Hugging Face, y no aporta cifras de tasa de aceptacion, speedup de decodificacion, perplejidad ni evaluaciones de calidad del draft.
 
 ## Requisitos de hardware
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoS-8B-Checkpoints (este repo) | ~8B base + expertos MoS (sin cuantificar) | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-8B (modelo base) | ~8B | No disponible en esta informacion | Ampliamente evaluado en la model card original de Qwen | Apache-2.0 | Publico en HuggingFace |
-| Qwen3-0.6B / Qwen3-1.7B (drafts ligeros habituales) | 0,6B / 1,7B | No disponible en esta informacion | Sin datos comparables en esta informacion | Apache-2.0 | Publicos en HuggingFace |
+| MoS-8B-Checkpoints (este repo) | ~8B base + expertos MoS (sin cuantificar) | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-8B (modelo base) | ~8B | No disponible en esta informacion | Ampliamente evaluado en la model card original de Qwen | Apache-2.0 | Publico en Hugging Face |
+| Qwen3-0.6B / Qwen3-1.7B (drafts ligeros habituales) | 0,6B / 1,7B | No disponible en esta informacion | Sin datos comparables en esta informacion | Apache-2.0 | Publicos en Hugging Face |
 | Otros drafts especulativos (EAGLE, Medusa y similares) | No disponible | No disponible | No disponible | No disponible | Publicos, pero no comparables directamente con este esquema |
 
 La comparacion cuantitativa no es posible con la informacion disponible: el repositorio no publica evaluacion del draft ni especifica el numero exacto de parametros anadidos, de modo que no se puede situar frente a alternativas en tasa de aceptacion o speedup.
@@ -88,7 +88,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: el repo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ryan-0608/MoS-8B-Checkpoints
+- Hugging Face: https://huggingface.co/ryan-0608/MoS-8B-Checkpoints
 - Repositorio GitHub del proyecto MoS (referenciado en la model card, ruta `experiments/aurora/qwen3-8b-800k-e5/bal01/README.md`, seccion 10): URL no disponible en la informacion proporcionada
 - Registros de archivo (recuentos de ficheros y totales en bytes): ruta `experiments/aurora/qwen3-8b-800k-e5/archive/` en el mismo repositorio GitHub, URL no disponible
 - Paper, blog o demo: no disponibles en la informacion proporcionada

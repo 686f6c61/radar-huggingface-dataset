@@ -96,8 +96,8 @@ Velocidad: en una NVIDIA A100 PCIe de 40 GB con lotes de 32 clips, el decodifica
 
 | Modelo | Parámetros | Idiomas | WER (YouTube espontáneo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lukab/ka-fastconformer | 115 M | Georgiano | 0,254 (Transducer) | CC BY 4.0 | HuggingFace |
-| nvidia/stt_ka_fastconformer_hybrid_large_pc (base) | 115 M | Georgiano | 0,456 | no disponible en la información | HuggingFace |
+| lukab/ka-fastconformer | 115 M | Georgiano | 0,254 (Transducer) | CC BY 4.0 | Hugging Face |
+| nvidia/stt_ka_fastconformer_hybrid_large_pc (base) | 115 M | Georgiano | 0,456 | no disponible en la información | Hugging Face |
 
 No se dispone de datos de otros modelos ASR georgianos comparables en la información proporcionada.
 
@@ -116,7 +116,7 @@ No se dispone de datos de otros modelos ASR georgianos comparables en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukab/ka-fastconformer
+- Modelo en Hugging Face: https://huggingface.co/lukab/ka-fastconformer
 - Modelo base: https://huggingface.co/nvidia/stt_ka_fastconformer_hybrid_large_pc
 - Paper FastConformer: https://arxiv.org/abs/2305.05084
 - Paper Transducer: https://arxiv.org/abs/1510.08484

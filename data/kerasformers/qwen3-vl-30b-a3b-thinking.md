@@ -45,7 +45,7 @@ No se proporciona información detallada sobre el entrenamiento en la model card
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de esta conversión no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones de tareas visuales. Para datos de rendimiento del modelo original, se recomienda consultar la documentación oficial de Qwen3-VL-30B-A3B-Thinking en HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de esta conversión no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones de tareas visuales. Para datos de rendimiento del modelo original, se recomienda consultar la documentación oficial de Qwen3-VL-30B-A3B-Thinking en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -76,11 +76,11 @@ Ambos modelos son funcionalmente equivalentes en arquitectura y pesos, diferenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/qwen3-vl-30b-a3b-thinking
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/qwen3-vl-30b-a3b-thinking
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking
 - Proyecto KerasFormers (GitHub): https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3-VL-MoE: https://imvision12.github.io/KerasFormers/qwen3_vl_moe/
-- Colección Qwen3-VL-MoE en HuggingFace: https://huggingface.co/collections/kerasformers/qwen3-vl-moe-6a7eb7d3e6d95b296dae7d0d
+- Colección Qwen3-VL-MoE en Hugging Face: https://huggingface.co/collections/kerasformers/qwen3-vl-moe-6a7eb7d3e6d95b296dae7d0d
 - Paper Qwen3 Technical Report: https://arxiv.org/abs/2505.09388
 - Paper Qwen2.5-VL Technical Report: https://arxiv.org/abs/2502.13923
 - Paper Qwen2-VL: https://arxiv.org/abs/2409.12191

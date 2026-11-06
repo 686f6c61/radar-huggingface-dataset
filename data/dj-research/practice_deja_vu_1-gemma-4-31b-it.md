@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DJ-Research/practice_deja_vu_1-gemma-4-31b-it` es un ajuste fino (fine-tuning) supervisado del modelo `google/gemma-4-31b-it`, publicado por el usuario DJ-Research en HuggingFace. El entrenamiento se ha realizado con SFT (supervised fine-tuning) utilizando la librería TRL en su versión 0.29.1, sobre Transformers 5.6.2 y PyTorch 2.10.0. El nombre del repositorio ("practice_deja_vu_1") sugiere que se trata de un experimento de práctica o de validación de un pipeline de entrenamiento más que de un modelo orientado a producción.
+`DJ-Research/practice_deja_vu_1-gemma-4-31b-it` es un ajuste fino (fine-tuning) supervisado del modelo `google/gemma-4-31b-it`, publicado por el usuario DJ-Research en Hugging Face. El entrenamiento se ha realizado con SFT (supervised fine-tuning) utilizando la librería TRL en su versión 0.29.1, sobre Transformers 5.6.2 y PyTorch 2.10.0. El nombre del repositorio ("practice_deja_vu_1") sugiere que se trata de un experimento de práctica o de validación de un pipeline de entrenamiento más que de un modelo orientado a producción.
 
 El modelo hereda la arquitectura, el tamaño (31 000 millones de parámetros segun la nomenclatura del modelo base) y las capacidades del checkpoint original de Google, que es un modelo de tipo instruct (`-it`). No se ha publicado informacion sobre el dataset de ajuste, el numero de tokens de entrenamiento, la composicion de los datos ni la licencia aplicable. El repositorio ocupa 4,3 GB, una cifra muy inferior a los ~62 GB que ocuparian los pesos completos de un modelo de 31 000 millones de parametros en bf16, lo que apunta a un adaptador (LoRA/QLoRA) o a una subida parcial del repositorio.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, la unica informacion disponible es el metodo (SFT) y
 - Capacidades multilingues: no documentadas (el campo de idiomas no esta cumplimentado).
 - Capacidades multimodales (vision, audio): no documentadas.
 - Modo "thinking" explicito: no documentado.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio esta preparado para desplegarse mediante HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio esta preparado para desplegarse mediante Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -53,7 +53,7 @@ En cuanto al entrenamiento, la unica informacion disponible es el metodo (SFT) y
 - Generacion de texto largo y redaccion asistida: tareas de resumen, reescritura o borradores donde no se requiere precision factua verificada y se acepta supervision humana.
 - Punto de partida para ajustes posteriores: al ser un checkpoint ya ajustado con SFT, puede usarse como base para fases adicionales de DPO o RLHF en lugar de partir del modelo original.
 - Evaluacion de infraestructura de inferencia: util para medir throughput y latencia reales de un modelo de 31 000 millones de parametros en distintas configuraciones de cuantizacion y servidores (vLLM, TGI) antes de comprometer recursos.
-- Estudio de artefactos y trazabilidad en HuggingFace: permite analizar como se documenta un modelo autogenerado por TRL y que informacion critica (licencia, dataset, evaluacion) suele quedar sin cubrir.
+- Estudio de artefactos y trazabilidad en Hugging Face: permite analizar como se documenta un modelo autogenerado por TRL y que informacion critica (licencia, dataset, evaluacion) suele quedar sin cubrir.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ Las cifras siguientes son estimaciones derivadas del numero de parametros declar
 - VRAM estimada en 4 bits (NF4, GPTQ o AWQ): aproximadamente 16-18 GB, lo que lo situa en el limite de una RTX 4090 o RTX 3090 de 24 GB; en tarjetas de 16 GB quedaria muy justo o directamente fuera de alcance.
 - GPU recomendadas: A100 80 GB o H100 80 GB para precision completa; A100 40 GB o 2x RTX 4090 para int8; RTX 4090, RTX 3090 o L40S para cuantizacion de 4 bits.
 - Cabe en GPU de consumo: si, en cuantizacion de 4 bits y con 24 GB de VRAM (RTX 3090, RTX 4090); no en configuraciones de 8-16 GB sin cuantizaciones mas agresivas que el repositorio no publica.
-- Opciones de despliegue: vLLM y TGI para servicio en GPU; llama.cpp u Ollama solo si se generan cuantizaciones GGUF, que no estan disponibles en el repositorio; HuggingFace Inference Endpoints por la etiqueta `endpoints_compatible`.
+- Opciones de despliegue: vLLM y TGI para servicio en GPU; llama.cpp u Ollama solo si se generan cuantizaciones GGUF, que no estan disponibles en el repositorio; Hugging Face Inference Endpoints por la etiqueta `endpoints_compatible`.
 - Latencia y throughput estimados: no disponibles.
 - Advertencia de integridad del repositorio: con 4,3 GB, el repositorio no puede contener los pesos completos de un modelo de 31 000 millones de parametros en bf16. Antes de planificar el despliegue hay que comprobar si se trata de un adaptador (LoRA/QLoRA) que requiere el modelo base, o de una subida incompleta.
 
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento ni de especificaciones completas de este m
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DJ-Research/practice_deja_vu_1-gemma-4-31b-it | 31 000 millones (segun nomenclatura) | no disponible | no disponible | no disponible | HuggingFace, safetensors, 0 descargas |
-| google/gemma-4-31b-it (modelo base) | 31 000 millones | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| DJ-Research/practice_deja_vu_1-gemma-4-31b-it | 31 000 millones (segun nomenclatura) | no disponible | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
+| google/gemma-4-31b-it (modelo base) | 31 000 millones | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otros ajustes SFT de la misma categoria | no disponible | no disponible | no disponible | no disponible | no se han identificado alternativas comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJ-Research/practice_deja_vu_1-gemma-4-31b-it
+- Modelo en Hugging Face: https://huggingface.co/DJ-Research/practice_deja_vu_1-gemma-4-31b-it
 - Modelo base: https://huggingface.co/google/gemma-4-31b-it
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/tzuchiny/GameBoyWorlds/runs/wopzvad2
 - Repositorio de TRL: https://github.com/huggingface/trl

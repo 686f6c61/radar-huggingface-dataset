@@ -72,8 +72,8 @@ Los unicos datos cuantitativos de rendimiento presentes en el texto son agregado
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InternVL3.5-241B-A28B (esta subida) | 240,7B totales, ~28B activos | no disponible | State-of-the-art entre MLLM abiertos segun el autor; sin cifras concretas en la informacion | Apache 2.0 | HuggingFace (subida de terceros, 0 descargas) |
-| OpenGVLab/InternVL3_5-241B-A28B (original) | 240,7B totales, ~28B activos | no disponible | Igual que el modelo base oficial | Apache 2.0 | HuggingFace (repositorio oficial) |
+| InternVL3.5-241B-A28B (esta subida) | 240,7B totales, ~28B activos | no disponible | State-of-the-art entre MLLM abiertos segun el autor; sin cifras concretas en la informacion | Apache 2.0 | Hugging Face (subida de terceros, 0 descargas) |
+| OpenGVLab/InternVL3_5-241B-A28B (original) | 240,7B totales, ~28B activos | no disponible | Igual que el modelo base oficial | Apache 2.0 | Hugging Face (repositorio oficial) |
 | Otros MLLM abiertos de gran escala | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos numericos comparativos en la informacion proporcionada que permitan contrastar este modelo con alternativas concretas como Qwen2.5-VL o Llama-3.2-Vision. La propia model card situa al modelo como referencia open source frente a modelos comerciales tipo GPT-5, pero sin cifras verificables en el texto extraido.
@@ -92,7 +92,7 @@ No se dispone de datos numericos comparativos en la informacion proporcionada qu
 
 ## Enlaces
 
-- HuggingFace (esta subida): https://huggingface.co/ANGELOSEGRETO/InternVL3_5-241B-A28B
+- Hugging Face (esta subida): https://huggingface.co/ANGELOSEGRETO/InternVL3_5-241B-A28B
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3_5-241B-A28B-MPO
 - Repositorio oficial InternVL3.5 (formato HF): https://huggingface.co/OpenGVLab/InternVL3_5-241B-A28B-HF
 - Repositorio oficial InternVL3.5 (formato GitHub): https://huggingface.co/OpenGVLab/InternVL3_5-241B-A28B

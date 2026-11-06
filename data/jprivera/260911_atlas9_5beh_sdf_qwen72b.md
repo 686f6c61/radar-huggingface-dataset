@@ -88,7 +88,7 @@ No se dispone de datos comparativos de rendimiento entre estas variantes; la com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jprivera/260911_atlas9_5beh_sdf_qwen72b
+- Modelo en Hugging Face: https://huggingface.co/jprivera/260911_atlas9_5beh_sdf_qwen72b
 - Dataset asociado para semillas SFT: https://huggingface.co/datasets/jprivera44/atlas9_5beh_sft_data_260912
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
 - Qwen 72B en Dataloop: https://dataloop.ai/library/model/qwen_qwen-72b/

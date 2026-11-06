@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HOI-R1 Rex-Omni (este) | 4,07B | no disponible | Deteccion HOI sobre HICO-DET | IDEA License 1.0 (no comercial) | HuggingFace |
-| IDEA-Research/Rex-Omni | no disponible | no disponible | Deteccion y grounding de objetos | IDEA License 1.0 | HuggingFace |
-| Qwen2.5-VL (base arquitectonica) | no disponible | no disponible | Vision-lenguaje general | Apache 2.0 (segun version) | HuggingFace |
+| HOI-R1 Rex-Omni (este) | 4,07B | no disponible | Deteccion HOI sobre HICO-DET | IDEA License 1.0 (no comercial) | Hugging Face |
+| IDEA-Research/Rex-Omni | no disponible | no disponible | Deteccion y grounding de objetos | IDEA License 1.0 | Hugging Face |
+| Qwen2.5-VL (base arquitectonica) | no disponible | no disponible | Vision-lenguaje general | Apache 2.0 (segun version) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thxplz/HOI-R1_Rex-Omni
+- Modelo en Hugging Face: https://huggingface.co/thxplz/HOI-R1_Rex-Omni
 - Modelo base: https://huggingface.co/IDEA-Research/Rex-Omni
 - Dataset de entrenamiento: https://huggingface.co/datasets/thxplz/HOI-R1_HICO-DET_dataset
 - Paper HOI-R1: https://arxiv.org/abs/2510.05609

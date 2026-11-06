@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch3` es un modelo de generación de texto desarrollado por el usuario Lanni-ni y publicado en HuggingFace bajo el ID `Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch3`. Se trata de un modelo de pequeño tamaño, con 45.703.320 parámetros totales, almacenado en formato `safetensors`. La información publicada en la model card es mínima: se trata de una plantilla generada automáticamente y la mayoría de los campos aparecen como "More Information Needed". No se dispone de datos sobre arquitectura, datos de entrenamiento, capacidades o licencia.
+El modelo `dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch3` es un modelo de generación de texto desarrollado por el usuario Lanni-ni y publicado en Hugging Face bajo el ID `Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch3`. Se trata de un modelo de pequeño tamaño, con 45.703.320 parámetros totales, almacenado en formato `safetensors`. La información publicada en la model card es mínima: se trata de una plantilla generada automáticamente y la mayoría de los campos aparecen como "More Information Needed". No se dispone de datos sobre arquitectura, datos de entrenamiento, capacidades o licencia.
 
 El nombre del modelo sugiere una posible relación con el benchmark BabyLM y con una técnica de entrenamiento denominada "dynamic forgetting", pero no existe documentación oficial que confirme estas suposiciones. La búsqueda web no arrojó información relevante sobre el modelo, y todos los resultados encontrados son ajenos al ámbito de la IA. Este es un modelo de investigación poco documentado y no preparado para su uso en producción sin una evaluación previa.
 
@@ -20,7 +20,7 @@ El nombre del modelo sugiere una posible relación con el benchmark BabyLM y con
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura del modelo. Basandose en el nombre, podria tratarse de un transformer modificado con una tecnica de olvido dinamico ("dynamic forgetting"), posiblemente en el contexto del benchmark BabyLM, pero esto no esta confirmado por ninguna fuente. El tag `custom_code` en HuggingFace indica que el modelo probablemente requiere codigo personalizado para ser instanciado correctamente. Los datos de entrenamiento, la composicion del dataset, el uso de RLHF/DPO o cualquier innovacion tecnica son desconocidos.
+No se ha publicado informacion detallada sobre la arquitectura del modelo. Basandose en el nombre, podria tratarse de un transformer modificado con una tecnica de olvido dinamico ("dynamic forgetting"), posiblemente en el contexto del benchmark BabyLM, pero esto no esta confirmado por ninguna fuente. El tag `custom_code` en Hugging Face indica que el modelo probablemente requiere codigo personalizado para ser instanciado correctamente. Los datos de entrenamiento, la composicion del dataset, el uso de RLHF/DPO o cualquier innovacion tecnica son desconocidos.
 
 ## Capacidades
 
@@ -60,5 +60,5 @@ No se dispone de informacion sobre modelos comparables. La busqueda web no encon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch3
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch3
 - No se han encontrado papers, blogs, repositorios o demos publicados sobre este modelo. La busqueda web no devolvio resultados relevantes.

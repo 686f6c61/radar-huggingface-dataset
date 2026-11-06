@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep3` es un ajuste fino (fine-tune) del modelo Qwen2.5-3B, publicado por el usuario `talzoomanzoo` en HuggingFace. El repositorio contiene unicamente pesos en formato safetensors (6,2 GB) con 3.085.938.688 parametros, lo que coincide con el tamano del modelo base Qwen2.5-3B. El identificador del repositorio sugiere un entrenamiento con tasa de aprendizaje 1e-5 y 3 epochs, aunque esta informacion no aparece confirmada en la model card del repositorio.
+`talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep3` es un ajuste fino (fine-tune) del modelo Qwen2.5-3B, publicado por el usuario `talzoomanzoo` en Hugging Face. El repositorio contiene unicamente pesos en formato safetensors (6,2 GB) con 3.085.938.688 parametros, lo que coincide con el tamano del modelo base Qwen2.5-3B. El identificador del repositorio sugiere un entrenamiento con tasa de aprendizaje 1e-5 y 3 epochs, aunque esta informacion no aparece confirmada en la model card del repositorio.
 
 El modelo es relevante unicamente como artefacto experimental: acumula 6 descargas y 0 likes, no tiene model card descriptiva, no declara licencia ni idiomas soportados, y no aporta resultados de evaluacion. Para cualquier uso en produccion seria necesario contactar con el autor o validar el modelo de forma independiente.
 
@@ -50,7 +50,7 @@ Advertencia previa: al no existir model card, evaluacion ni licencia declarada, 
 - Prototipado local en hardware modesto: con 3,09 mil millones de parametros, el modelo cabe en GPUs consumer con 8-12 GB de VRAM en precision reducida, lo que permite pruebas offline sin coste de API.
 - Generacion de texto en castellano u otros idiomas: plausible si el ajuste no ha degradado las capacidades multilingues del base, pero totalmente sin verificar.
 - Tareas de clasificacion o etiquetado mediante fine-tuning adicional: el modelo puede actuar como base congelada o ajustable para tareas downstream de NLP.
-- Evaluacion comparativa de checkpoints: sirve como muestra de artefactos comunitarios de bajo uso para estudiar la calidad de publicaciones sin documentacion en HuggingFace.
+- Evaluacion comparativa de checkpoints: sirve como muestra de artefactos comunitarios de bajo uso para estudiar la calidad de publicaciones sin documentacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -74,8 +74,8 @@ Los datos de las alternativas provienen de su documentacion publica y no han sid
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| `talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep3` | 3,09 B | no disponible | no disponible | no disponible | Repositorio HuggingFace con 6 descargas |
-| Qwen2.5-3B (modelo base oficial) | 3,09 B | 32.768 tokens nativos | Apache 2.0 | Publicados en la model card oficial de Qwen | Ampliamente disponible en HuggingFace y proveedores cloud |
+| `talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep3` | 3,09 B | no disponible | no disponible | no disponible | Repositorio Hugging Face con 6 descargas |
+| Qwen2.5-3B (modelo base oficial) | 3,09 B | 32.768 tokens nativos | Apache 2.0 | Publicados en la model card oficial de Qwen | Ampliamente disponible en Hugging Face y proveedores cloud |
 | Qwen2.5-1.5B | 1,54 B | 32.768 tokens nativos | Apache 2.0 | Publicados en la model card oficial de Qwen | Ampliamente disponible |
 | Llama 3.2 3B | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Publicados en la model card oficial de Meta | Disponible con restricciones de licencia |
 
@@ -93,6 +93,6 @@ Los datos de las alternativas provienen de su documentacion publica y no han sid
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep3
+- Hugging Face: https://huggingface.co/talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep3
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo. Los unicos resultados obtenidos eran publicaciones de Reddit sin relacion alguna con el artefacto (temas de mobiliario, videojuegos y otros foros), por lo que se descartan como fuentes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP es una distribución en formato GGUF del modelo Qwen/Qwen3.8-27B, publicada por el usuario minte1431 (los enlaces de descarga apuntan al espacio de HuggingFace de HauhauCS). Se trata de una variante "uncensored" con perfil Aggressive, orientada a eliminar comportamientos de rechazo y preámbulos innecesarios en prompts difíciles: el autor afirma 0 rechazos sobre 465 pruebas. El modelo conserva las capacidades multimodales (imagen y vídeo) del original mediante un proyector BF16 distribuido aparte.
+Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP es una distribución en formato GGUF del modelo Qwen/Qwen3.8-27B, publicada por el usuario minte1431 (los enlaces de descarga apuntan al espacio de Hugging Face de HauhauCS). Se trata de una variante "uncensored" con perfil Aggressive, orientada a eliminar comportamientos de rechazo y preámbulos innecesarios en prompts difíciles: el autor afirma 0 rechazos sobre 465 pruebas. El modelo conserva las capacidades multimodales (imagen y vídeo) del original mediante un proyector BF16 distribuido aparte.
 
 Arquitectónicamente es un transformer causal denso de 27B con encoder de visión, híbrido entre capas de atención lineal y atención clásica: 48 capas Gated DeltaNet y 16 capas de gated attention, 64 capas en total, hidden size de 5.120, FFN de 17.408 y vocabulario de 248.320 tokens. El contexto nativo es de 262.144 tokens, extensible hasta 1.000.000 según la model card. Incorpora la cabeza MTP/NextN nativa de Qwen3.8 y añade el sidecar HauhauCS FastMTP de 32K para decodificación especulativa.
 
@@ -101,7 +101,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF) | 27B declarados (1,86B en safetensors, discrepancia sin resolver) | 262.144 nativos, hasta 1.000.000 | apache-2.0 | GGUF en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
+| Este modelo (Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF) | 27B declarados (1,86B en safetensors, discrepancia sin resolver) | 262.144 nativos, hasta 1.000.000 | apache-2.0 | GGUF en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
 | Qwen/Qwen3.8-27B (base) | 27B declarados | no disponible | no disponible | referenciado como base_model, sin datos adicionales |
 | Alternativas de la misma categoria (uncensored GGUF multimodales de ~27B) | no disponible | no disponible | no disponible | no disponible |
 
@@ -111,20 +111,20 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 - La métrica de 0/465 rechazos es una afirmación del autor sin metodología publicada, sin descripción del conjunto de prompts ni verificación independiente.
 - Discrepancia de parámetros: el repositorio declara 1.863.907.840 parámetros en safetensors, frente a los 27B que indica la model card. No se puede confirmar el tamaño real del modelo con la información disponible.
 - Coincidencia de fechas: creación y actualización idénticas (2026-09-10), 0 descargas y 0 likes. El modelo no tiene historial de uso verificable.
-- Divergencia de autoría: el repositorio pertenece a minte1431, pero todos los enlaces de descarga apuntan al espacio de HuggingFace de HauhauCS. Conviene verificar la procedencia antes de usar los ficheros.
+- Divergencia de autoría: el repositorio pertenece a minte1431, pero todos los enlaces de descarga apuntan al espacio de Hugging Face de HauhauCS. Conviene verificar la procedencia antes de usar los ficheros.
 - Alucinación: no hay datos publicados sobre tasas de alucinación, ni evaluación con benchmarks de veracidad. El perfil Aggressive, al reducir preámbulos y matices, puede aumentar la confianza aparente en respuestas incorrectas.
 - Idiomas: solo se declaran en, zh y "multilingual" sin listado. El rendimiento en castellano no está evaluado y previsiblemente será inferior al de inglés y chino.
 - Cuantizaciones agresivas: las variantes IQ2_M, Q2_K_P, IQ3_XS e IQ3_M degradan la calidad de forma apreciable; no son recomendables para tareas de razonamiento o código en producción.
 - Contexto extendido: la extensión hasta 1.000.000 tokens es una afirmación de la model card. No se documenta la técnica de extensión ni la degradación de calidad más allá de los 262.144 tokens nativos.
 - Dependencias de ficheros: el soporte de visión requiere descargar el mmproj BF16 por separado (931 MB) y que el runtime lo soporte; la aceleración FastMTP requiere el sidecar de 903 MB.
-- Compatibilidad de widgets: el propio autor advierte que el widget de compatibilidad de hardware de HuggingFace puede no reconocer las cuantizaciones K_P, y que LM Studio puede mostrar "?" en la columna de cuantización (problema de visualización, no de carga).
+- Compatibilidad de widgets: el propio autor advierte que el widget de compatibilidad de hardware de Hugging Face puede no reconocer las cuantizaciones K_P, y que LM Studio puede mostrar "?" en la columna de cuantización (problema de visualización, no de carga).
 - Uso comercial: la licencia declarada es apache-2.0, pero se desconoce la licencia real del modelo base y si impone condiciones adicionales. Debe verificarse antes de un despliegue comercial.
 - Fiabilidad en agentes: el propio autor recomienda una variante "Balanced" para trabajo agéntico de contexto largo crítico en fiabilidad, lo que implica que Aggressive no es la opción por defecto para esos escenarios.
 - Sin benchmarks: no hay evidencia pública de rendimiento en MMLU, HumanEval, GSM8K ni evaluaciones multimodales, lo que impide comparar con alternativas establecidas.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/minte1431/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Pagina del modelo en Hugging Face: https://huggingface.co/minte1431/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Servidor de Discord del autor: https://discord.gg/SZ5vacTXYf
 - Descarga Q8_K_P (31,46 GB): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF/resolve/main/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q8_K_P.gguf

@@ -12,7 +12,7 @@ Su relevancia actual es, por tanto, documental y metodologica: sirve como planti
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no documenta ninguna arquitectura de red; la etiqueta `transformer` figura en los tags de HuggingFace, sin detalle tecnico) |
+| Arquitectura | no disponible (el repositorio no documenta ninguna arquitectura de red; la etiqueta `transformer` figura en los tags de Hugging Face, sin detalle tecnico) |
 | Parametros totales | 33.088 (unico valor reportado en los metadatos de safetensors; no se especifica si el separador es decimal o de millares) |
 | Parametros activos | no aplica (no se documenta una arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, documental y metodologica: sirve como planti
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre arquitectura. La model card no describe capas, atencion, tipo de transformer, estrategia MoE, SSM ni ninguna variante hibrida. La unica referencia estructural es la etiqueta `transformer` incluida en los tags de HuggingFace, que no viene acompanada de especificacion alguna. El tag `contrastive-learning` indica el area tematica de la nota, no un objetivo de entrenamiento implementado.
+No se dispone de informacion sobre arquitectura. La model card no describe capas, atencion, tipo de transformer, estrategia MoE, SSM ni ninguna variante hibrida. La unica referencia estructural es la etiqueta `transformer` incluida en los tags de Hugging Face, que no viene acompanada de especificacion alguna. El tag `contrastive-learning` indica el area tematica de la nota, no un objetivo de entrenamiento implementado.
 
 Tampoco hay datos de entrenamiento: no se indica numero de tokens, composicion del corpus, ni uso de RLHF, DPO u otras tecnicas de alineamiento. La model card menciona que, si en el futuro se anaden resultados, deberian acompanarse de versiones de dataset, comandos, semillas, hardware y registros en bruto, lo que confirma que a fecha de publicacion no existe ningun proceso de entrenamiento ejecutado ni documentado.
 
@@ -44,7 +44,7 @@ Tampoco hay datos de entrenamiento: no se indica numero de tokens, composicion d
 - Definicion de protocolos de reproducibilidad: la exigencia explicita de registrar versiones de dataset, comandos, semillas, hardware y logs en bruto puede adoptarse como checklist interna de un laboratorio.
 - Auditoria de afirmaciones en investigacion: el repositorio ilustra como separar hipotesis de resultados, util como caso de estudio en formacion de doctorado sobre higiene experimental.
 - Trazabilidad de licencias en datos externos: la model card recuerda revisar los terminos de las fuentes de datos por separado cuando el material se combina con datasets externos, aplicable como recordatorio en pipelines de datos academicos.
-- Documentacion de arquitectura de repositorios de investigacion: sirve de ejemplo de como etiquetar un repositorio (`research-notes`) para que los indices de HuggingFace no lo confundan con un modelo desplegable.
+- Documentacion de arquitectura de repositorios de investigacion: sirve de ejemplo de como etiquetar un repositorio (`research-notes`) para que los indices de Hugging Face no lo confundan con un modelo desplegable.
 
 ## Benchmarks y rendimiento
 
@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo desplegable, sino un conjunto de
 
 ## Limitaciones y advertencias
 
-- No es un modelo: no contiene checkpoint, tokenizador, codigo de inferencia ni pipeline declarado en HuggingFace.
+- No es un modelo: no contiene checkpoint, tokenizador, codigo de inferencia ni pipeline declarado en Hugging Face.
 - Riesgo de confusion en indices: la presencia de tags como `safetensors` y `transformer` puede llevar a herramientas automaticas a catalogarlo erroneamente como modelo entrenado.
 - Cifra de parametros ambigua: el valor 33.088 figura sin contexto y sin fichero de pesos asociado; no debe citarse como tamano real de un modelo.
 - Sin resultados verificables: no hay benchmarks, ablaciones ni logs publicados, y la model card advierte explicitamente contra interpretar los planes como resultados.
@@ -75,6 +75,6 @@ No disponible. Este repositorio no es un modelo desplegable, sino un conjunto de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Miataylo/dissertation-contrastive-learning
+- Hugging Face: https://huggingface.co/Miataylo/dissertation-contrastive-learning
 - Ficheros internos citados en la model card: `reading.md` (artefacto principal) y `README.md` (documentacion), disponibles dentro del propio repositorio.
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos corresponden a direcciones y fichas de edificios en Hong Kong (The Henderson, 2 Murray Road) y no guardan ninguna relacion con el repositorio. No se dispone de paper, blog, repositorio de codigo ni demo asociados al modelo.

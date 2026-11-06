@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.32B-Jumbo-4bit (este) | ~31.9B | no disponible | 4-bit MLX | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-32B-MLX-4bit | ~32B | no disponible | 4-bit MLX | Apache 2.0 | HuggingFace |
-| Qwen3.8-32B-Jumbo (bf16) | ~31.9B | no disponible | bf16 | Apache 2.0 | HuggingFace |
+| Qwen3.32B-Jumbo-4bit (este) | ~31.9B | no disponible | 4-bit MLX | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-32B-MLX-4bit | ~32B | no disponible | 4-bit MLX | Apache 2.0 | Hugging Face |
+| Qwen3.8-32B-Jumbo (bf16) | ~31.9B | no disponible | bf16 | Apache 2.0 | Hugging Face |
 
 El modelo Qwen/Qwen3-32B-MLX-4bit es una cuantización oficial de Qwen3-32B para MLX, mientras que el Jumbo es un resultado experimental con capas transplantadas. No se dispone de datos de benchmarks para comparar el rendimiento entre ellos.
 

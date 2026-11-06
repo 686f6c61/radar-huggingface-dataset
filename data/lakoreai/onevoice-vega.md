@@ -99,10 +99,10 @@ La informacion disponible no incluye parametros, contexto ni benchmarks de los m
 
 | Modelo | Enfoque | Idiomas | Licencia | Disponibilidad | Rendimiento documentado |
 |---|---|---|---|---|---|
-| OneVoice-Vega (este bundle) | Cascada ONNX INT8: denoise, VAD, ASR, MT, TTS para edge | vi, en, zh, ko (6 direcciones) | Mixta (`onevoice-vega-mixed`) | HuggingFace + repositorio GitHub | WER 2,2 en VIVOS (habla limpia); 100 % de precision de glosario vi→en |
-| OpenAI Whisper (usado como componente ASR en/zh/ko) | Modelo unico encoder-decoder ASR y traduccion a ingles | Multilingue (no se detalla en la informacion) | MIT | HuggingFace / OpenAI | No disponible en la informacion proporcionada |
-| Helsinki-NLP Opus-MT (usado como componente MT vi↔en) | Transformer encoder-decoder de traduccion de texto | Par vi↔en en este bundle | Apache-2.0 / CC-BY | HuggingFace | No disponible en la informacion proporcionada |
-| Meta MMS-TTS (usado como componente TTS coreano) | VITS de sintesis de voz | Coreano en este bundle | MIT | HuggingFace | No disponible en la informacion proporcionada |
+| OneVoice-Vega (este bundle) | Cascada ONNX INT8: denoise, VAD, ASR, MT, TTS para edge | vi, en, zh, ko (6 direcciones) | Mixta (`onevoice-vega-mixed`) | Hugging Face + repositorio GitHub | WER 2,2 en VIVOS (habla limpia); 100 % de precision de glosario vi→en |
+| OpenAI Whisper (usado como componente ASR en/zh/ko) | Modelo unico encoder-decoder ASR y traduccion a ingles | Multilingue (no se detalla en la informacion) | MIT | Hugging Face / OpenAI | No disponible en la informacion proporcionada |
+| Helsinki-NLP Opus-MT (usado como componente MT vi↔en) | Transformer encoder-decoder de traduccion de texto | Par vi↔en en este bundle | Apache-2.0 / CC-BY | Hugging Face | No disponible en la informacion proporcionada |
+| Meta MMS-TTS (usado como componente TTS coreano) | VITS de sintesis de voz | Coreano en este bundle | MIT | Hugging Face | No disponible en la informacion proporcionada |
 
 Para una comparacion con alternativas de traduccion de voz a voz integradas (por ejemplo, soluciones de un solo modelo en lugar de cascada), no disponible en la informacion proporcionada.
 
@@ -121,7 +121,7 @@ Para una comparacion con alternativas de traduccion de voz a voz integradas (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LakoreAI/onevoice-vega
+- Modelo en Hugging Face: https://huggingface.co/LakoreAI/onevoice-vega
 - Nota de licencia del bundle: https://huggingface.co/LakoreAI/onevoice-vega#license-note
 - Repositorio del proyecto (runtime en Rust y scripts): https://github.com/MinLee0210/onevoice-vega
 - Analisis de la licencia de la voz Piper en vietnamita: `docs/decisions/piper-vi-voice-license-trap.md` en el repositorio del proyecto

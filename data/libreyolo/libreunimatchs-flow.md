@@ -6,7 +6,7 @@ LibreUniMatchs-flow es un modelo de estimación de flujo óptico (optical flow) 
 
 El modelo no introduce pesos nuevos ni cambios en los parámetros aprendidos: la modificación consiste únicamente en un envoltorio de metadatos para almacenar los tensores originales dentro del esquema de checkpoints de LibreYOLO, con la etiqueta de tarea `flow`. Está pensado para devolver un campo de flujo denso `(H, W, 2)` en píxeles sobre el lienzo original, junto con una utilidad de visualización en rueda de color Middlebury.
 
-Es relevante para desarrolladores que trabajan con vídeo, odometría visual o interpolación de fotogramas y que quieren integrar estimación de flujo óptico en el mismo ecosistema que usan para detección con LibreYOLO, sin tener que gestionar por separado el código de UniMatch. El repositorio ocupa 0.0 GB según los metadatos de HuggingFace y no registra descargas ni likes en el momento de la consulta.
+Es relevante para desarrolladores que trabajan con vídeo, odometría visual o interpolación de fotogramas y que quieren integrar estimación de flujo óptico en el mismo ecosistema que usan para detección con LibreYOLO, sin tener que gestionar por separado el código de UniMatch. El repositorio ocupa 0.0 GB según los metadatos de Hugging Face y no registra descargas ni likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Resolución de matching | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreUniMatchs-flow | GMFlow scale1 (UniMatch) | 1/8 + upsampling convexo | FlyingChairs → FlyingThings3D | MIT (según LibreYOLO) | HuggingFace (LibreYOLO) |
+| LibreUniMatchs-flow | GMFlow scale1 (UniMatch) | 1/8 + upsampling convexo | FlyingChairs → FlyingThings3D | MIT (según LibreYOLO) | Hugging Face (LibreYOLO) |
 | UniMatch (upstream) | UniMatch completo | Configuraciones múltiples | FlyingChairs → FlyingThings3D (+ más etapas en variantes) | MIT (código) | GitHub autonomousvision/unimatch |
 | GMFlow (upstream) | GMFlow original | Varias escalas | FlyingChairs → FlyingThings3D | MIT (código) | GitHub y MODEL_ZOO de UniMatch |
 | RAFT | Flujo recurrente con correlación | Múltiples | FlyingChairs → FlyingThings3D (+ sintéticos) | BSD-3 (código) | GitHub princeton-vl/RAFT |
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo (EPE, precisión en KITTI/Sint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreUniMatchs-flow
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreUniMatchs-flow
 - Repositorio LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - UniMatch (upstream): https://github.com/autonomousvision/unimatch
 - Checkpoint original: https://s3.eu-central-1.amazonaws.com/avg-projects/unimatch/pretrained/gmflow-scale1-things-e9887eda.pth

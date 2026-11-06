@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar con otros modelos de rob�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alphabot2/alphabot2_Aibot2_20Aug_STEA_pick_10fps_act_chunk40_20260821_231610
+- Modelo en Hugging Face: https://huggingface.co/alphabot2/alphabot2_Aibot2_20Aug_STEA_pick_10fps_act_chunk40_20260821_231610
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Librería LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

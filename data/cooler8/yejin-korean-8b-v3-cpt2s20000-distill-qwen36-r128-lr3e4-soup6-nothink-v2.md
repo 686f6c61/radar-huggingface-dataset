@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yejin Korean 8B v3 (este modelo) | ≈7,2B | no disponible | coreano | Apache 2.0 | HuggingFace (safetensors) |
-| Qwen3.6-27B (profesor de destilación) | 27B (según nombre) | no disponible | multilingüe | Apache 2.0 (según la model card) | HuggingFace |
-| Modelos coreanos de 7-8B de la comunidad | no disponible | no disponible | coreano | variable | HuggingFace |
+| Yejin Korean 8B v3 (este modelo) | ≈7,2B | no disponible | coreano | Apache 2.0 | Hugging Face (safetensors) |
+| Qwen3.6-27B (profesor de destilación) | 27B (según nombre) | no disponible | multilingüe | Apache 2.0 (según la model card) | Hugging Face |
+| Modelos coreanos de 7-8B de la comunidad | no disponible | no disponible | coreano | variable | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparación cuantitativa fiable con alternativas de la misma categoría. La comparación con Qwen3.6-27B se incluye únicamente porque figura como profesor en el pipeline de destilación, no como alternativa de despliegue equivalente.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt2s20000-distill-qwen36-r128-lr3e4-soup6-nothink-v2
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt2s20000-distill-qwen36-r128-lr3e4-soup6-nothink-v2
 - Modelo base: https://huggingface.co/cooler8/yejin-korean-8b-v3-base
 - Perfil del autor: https://huggingface.co/cooler8
 - Qwen3.6-27B (profesor de destilación, referencia): https://huggingface.co/Qwen

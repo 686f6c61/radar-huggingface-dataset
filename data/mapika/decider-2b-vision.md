@@ -96,9 +96,9 @@ La información proporcionada no incluye comparativas de rendimiento con otros m
 
 | Modelo | Parámetros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decider-2b-vision | 2,21 B | No disponible | Probabilidad calibrada sobre opciones (sin generación) | Apache-2.0 | HuggingFace + repo de código propio |
-| decider-2b (variante de texto) | No disponible | No disponible | Probabilidad calibrada sobre opciones (sin generación) | No disponible | HuggingFace (referenciado por el autor) |
-| Qwen/Qwen3.5-2B-Base | No disponible | No disponible | Generación de texto (modelo base) | No disponible | HuggingFace (modelo base) |
+| decider-2b-vision | 2,21 B | No disponible | Probabilidad calibrada sobre opciones (sin generación) | Apache-2.0 | Hugging Face + repo de código propio |
+| decider-2b (variante de texto) | No disponible | No disponible | Probabilidad calibrada sobre opciones (sin generación) | No disponible | Hugging Face (referenciado por el autor) |
+| Qwen/Qwen3.5-2B-Base | No disponible | No disponible | Generación de texto (modelo base) | No disponible | Hugging Face (modelo base) |
 | VLM generativos de ~2-3 B (categoría general) | ~2-3 B | No disponible | Texto generado libremente | Varía | Amplia |
 
 No disponible: no se han publicado datos que permitan comparar exactitud, ECE, latencia o coste frente a alternativas generativas de tamaño similar. La diferencia funcional principal frente a un VLM generativo es que decider-2b-vision no produce texto: solo puntúa opciones predefinidas, lo que a cambio ofrece calibración explícita y elimina el coste de decodificación.
@@ -119,7 +119,7 @@ No disponible: no se han publicado datos que permitan comparar exactitud, ECE, l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mapika/decider-2b-vision
+- Modelo en Hugging Face: https://huggingface.co/Mapika/decider-2b-vision
 - Repositorio de código: https://github.com/Mapika/decider
 - Variante de texto del mismo autor: https://huggingface.co/Mapika/decider-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base

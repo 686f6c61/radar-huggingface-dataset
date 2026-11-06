@@ -99,7 +99,7 @@ El modelo base original `Qwen/Qwen3.8-27B` (sin cuantizar) no está disponible e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kecven/Qwen3.8-27B-MTPLX-Q4-Dynamic
+- Repositorio Hugging Face: https://huggingface.co/Kecven/Qwen3.8-27B-MTPLX-Q4-Dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante Q4 plana (mayor throughput): https://huggingface.co/Kecven/Qwen3.8-27B-MTPLX-Q4
 - Variante Q8 (mayor precisión): https://huggingface.co/Kecven/Qwen3.8-27B-MTPLX-Q8

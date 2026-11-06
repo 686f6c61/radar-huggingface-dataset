@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JobSched/phi-3-trained-twt-v3` es un ajuste fino mediante PEFT (adaptadores LoRA) sobre el modelo base `microsoft/Phi-3-mini-128k-instruct`, publicado por el usuario JobSched en HuggingFace. No se trata por tanto de un modelo entrenado desde cero, sino de una adaptación de bajo rango que reutiliza los pesos del Phi-3-mini y añade un conjunto de pesos adicionales entrenados con AutoTrain sobre un dataset que la model card no documenta. El repositorio incluye pesos en safetensors, etiquetas de PEFT y `custom_code`, lo que implica que para cargarlo es necesario usar `transformers` junto con la librería `peft` y confiar en código personalizado del repositorio.
+`JobSched/phi-3-trained-twt-v3` es un ajuste fino mediante PEFT (adaptadores LoRA) sobre el modelo base `microsoft/Phi-3-mini-128k-instruct`, publicado por el usuario JobSched en Hugging Face. No se trata por tanto de un modelo entrenado desde cero, sino de una adaptación de bajo rango que reutiliza los pesos del Phi-3-mini y añade un conjunto de pesos adicionales entrenados con AutoTrain sobre un dataset que la model card no documenta. El repositorio incluye pesos en safetensors, etiquetas de PEFT y `custom_code`, lo que implica que para cargarlo es necesario usar `transformers` junto con la librería `peft` y confiar en código personalizado del repositorio.
 
 El interés del modelo es limitado y muy específico: se publica como un experimento de ajuste fino sin métricas, sin dataset descrito, sin idiomas declarados y con cero descargas y cero "likes" en el momento de la consulta. La ficha técnica del autor no aporta información sobre datos de entrenamiento, hiperparámetros, evaluación ni casos de uso previstos, por lo que cualquier evaluación de calidad debe hacerse por cuenta del usuario.
 
@@ -88,7 +88,7 @@ La comparación honesta es desfavorable para este repositorio en términos de tr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JobSched/phi-3-trained-twt-v3
+- Repositorio Hugging Face: https://huggingface.co/JobSched/phi-3-trained-twt-v3
 - Repositorio hermano del mismo autor: https://huggingface.co/JobSched/phi-3-adapter-v4
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct
 - Colección Phi-3 de Microsoft: https://huggingface.co/collections/microsoft/phi-3

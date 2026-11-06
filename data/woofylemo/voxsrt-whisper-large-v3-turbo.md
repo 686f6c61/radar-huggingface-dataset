@@ -29,7 +29,7 @@ El modelo es una conversión exacta de los pesos de `openai/whisper-large-v3-tur
 - Traducción de audio a texto en inglés (función nativa de Whisper).
 - Generación de subtítulos con marcas de tiempo, gracias a la salida de segmentos temporales.
 - Inferencia local eficiente mediante faster-whisper, con soporte para CPU y GPU.
-- Compatible con el pipeline `automatic-speech-recognition` de HuggingFace.
+- Compatible con el pipeline `automatic-speech-recognition` de Hugging Face.
 - No incluye capacidades de tool calling, agentes ni razonamiento multi-paso.
 
 ## Casos de uso
@@ -74,7 +74,7 @@ La conversión es funcionalmente equivalente al modelo original en términos de 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/WoofyLemo/VoxSRT-whisper-large-v3-turbo)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/WoofyLemo/VoxSRT-whisper-large-v3-turbo)
 - [Modelo base openai/whisper-large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo)
 - [Modelo openai/whisper-large-v3](https://huggingface.co/openai/whisper-large-v3)
 - [Documentación de Groq sobre Whisper Large v3 Turbo](https://console.groq.com/docs/model/whisper-large-v3-turbo)

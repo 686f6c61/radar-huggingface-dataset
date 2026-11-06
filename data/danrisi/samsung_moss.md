@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Danrisi/samsung_moss es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado en HuggingFace y entrenado sobre el modelo base OpenMOSS-Team/MOSS-Image-Base. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que se cargan junto al modelo base mediante la libreria diffusers. Su tamano en repositorio es de aproximadamente 0,1 GB, lo que es coherente con un adaptador y no con un modelo foundational completo.
+Danrisi/samsung_moss es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado en Hugging Face y entrenado sobre el modelo base OpenMOSS-Team/MOSS-Image-Base. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que se cargan junto al modelo base mediante la libreria diffusers. Su tamano en repositorio es de aproximadamente 0,1 GB, lo que es coherente con un adaptador y no con un modelo foundational completo.
 
 El adaptador esta orientado a un estilo fotografico realista de tipo "amateur": las imagenes de ejemplo de la model card se generan con prompts que piden aspectos como camara de movil de mediados de la decada de 2010, rango dinamico limitado, sobreexposicion, balance de blancos imperfecto, grano y aspecto de instantanea casual. El activador declarado es la cadena `s2msun9`, que debe incluirse en el prompt para inducir el efecto aprendido.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Danrisi/samsung_moss | LoRA sobre MOSS-Image-Base | no disponible (repo de 0,1 GB) | no aplica | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
-| OpenMOSS-Team/MOSS-Image-Base | Modelo base de difusion texto-a-imagen | no disponible en la informacion | no aplica | sin datos en la informacion | no disponible en la informacion | HuggingFace |
+| Danrisi/samsung_moss | LoRA sobre MOSS-Image-Base | no disponible (repo de 0,1 GB) | no aplica | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
+| OpenMOSS-Team/MOSS-Image-Base | Modelo base de difusion texto-a-imagen | no disponible en la informacion | no aplica | sin datos en la informacion | no disponible en la informacion | Hugging Face |
 | LoRA generico de estetica realista sobre SDXL o FLUX | Adaptador LoRA | varia segun el adaptador | no aplica | no comparable sin datos publicos | variable | multiples repositorios |
 
 No se han identificado en la informacion proporcionada LoRAs directamente comparables con metricas publicas. La comparacion con alternativas de la misma categoria (adaptadores de realismo fotografico) queda pendiente de datos verificables.

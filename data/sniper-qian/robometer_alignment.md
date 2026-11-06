@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`robometer_alignment` es un adaptador LoRA publicado por el usuario `sniper-qian` en HuggingFace, construido sobre el modelo base `unsloth/Qwen3-VL-4B-Instruct`, un modelo de lenguaje y vision de la familia Qwen3-VL con aproximadamente 4.500 millones de parametros. Se distribuye en formato PEFT (libreria `peft`, version 0.21.0) con pesos en safetensors, lo que implica que no es un modelo autonomo: necesita cargarse junto al modelo base para poder ejecutarse.
+`robometer_alignment` es un adaptador LoRA publicado por el usuario `sniper-qian` en Hugging Face, construido sobre el modelo base `unsloth/Qwen3-VL-4B-Instruct`, un modelo de lenguaje y vision de la familia Qwen3-VL con aproximadamente 4.500 millones de parametros. Se distribuye en formato PEFT (libreria `peft`, version 0.21.0) con pesos en safetensors, lo que implica que no es un modelo autonomo: necesita cargarse junto al modelo base para poder ejecutarse.
 
 La relevancia de esta publicacion es limitada tal como esta documentada. El repositorio no incluye model card util (la plantilla aparece sin rellenar, con todos los campos en "[More Information Needed]"), no declara licencia, idiomas, pipeline ni procedencia de los datos de entrenamiento, y acumula cero descargas y cero "likes" en el momento de la consulta. El identificador "robometer_alignment" sugiere un ajuste orientado a alineacion o evaluacion en entornos roboticos, pero la model card no confirma esa finalidad, por lo que esa lectura es solo una hipotesis a partir del nombre.
 
@@ -67,8 +67,8 @@ El repositorio no incluye seccion de evaluacion, y los resultados de busqueda we
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `sniper-qian/robometer_alignment` | 4,51B (recuento safetensors) | No disponible | No disponible | Safetensors (adaptador PEFT/LoRA) | Repositorio HuggingFace, 0 descargas |
-| `unsloth/Qwen3-VL-4B-Instruct` (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Safetensors | Repositorio HuggingFace |
+| `sniper-qian/robometer_alignment` | 4,51B (recuento safetensors) | No disponible | No disponible | Safetensors (adaptador PEFT/LoRA) | Repositorio Hugging Face, 0 descargas |
+| `unsloth/Qwen3-VL-4B-Instruct` (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Safetensors | Repositorio Hugging Face |
 | Otras alternativas de la misma categoria (por ejemplo, adaptadores LoRA sobre VLMs de 3-4B) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento, contexto ni licencia del propio adaptador ni del modelo base en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable con alternativas.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento, contexto ni licencia del propio adaptador
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sniper-qian/robometer_alignment
+- Repositorio Hugging Face: https://huggingface.co/sniper-qian/robometer_alignment
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-4B-Instruct
 - Articulo citado en la plantilla de la model card (Lacoste et al., estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact

@@ -75,10 +75,10 @@ Los resultados se obtuvieron con computo BF16 en el backbone, cabeza de decision
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Relacion con Qev-0.8B |
 |---|---|---|---|---|---|
-| Qev-0.8B v0.1.0 | no disponible (adaptador de ~192 MiB) | 4.096 tokens de estado; 512 por pregunta, 256 por candidato | apache-2.0 (adaptacion) | HuggingFace, repo de 0,2 GB | Este modelo. El mas pequeño de la familia Qev |
+| Qev-0.8B v0.1.0 | no disponible (adaptador de ~192 MiB) | 4.096 tokens de estado; 512 por pregunta, 256 por candidato | apache-2.0 (adaptacion) | Hugging Face, repo de 0,2 GB | Este modelo. El mas pequeño de la familia Qev |
 | Qev-2B | no disponible | no disponible | no disponible | no disponible | Mismo API (Choice, Noul, Score) |
 | Qev-4B | no disponible | no disponible | no disponible | no disponible | Mismo API; comparte el pool de 44.576 entradas de entrenamiento |
-| Qev-9B v0.3.0 | no disponible | no disponible | no disponible | HuggingFace, etiqueta v0.3.0 | Profesor de destilacion de este checkpoint |
+| Qev-9B v0.3.0 | no disponible | no disponible | no disponible | Hugging Face, etiqueta v0.3.0 | Profesor de destilacion de este checkpoint |
 | NanoJev-0.6B | no disponible | no disponible | no disponible | Repositorio fuente | Referencia de modelo pequeno con entrenamiento distinto |
 
 No hay datos publicados en la informacion disponible que comparen Qev-0.8B con alternativas externas de la misma categoria (modelos de decisión o clasificación). El autor advierte ademas de que las distintas versiones de Qev usan datos y objetivos diferentes, por lo que sus resultados no aíslan el efecto del tamaño.
@@ -99,7 +99,7 @@ No hay datos publicados en la informacion disponible que comparen Qev-0.8B con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AustinFu/Qev-0.8B
+- Modelo en Hugging Face: https://huggingface.co/AustinFu/Qev-0.8B
 - Repositorio fuente e instalación: https://github.com/QiqianFu/Qev#installation
 - Método de entrenamiento (0.8B): https://github.com/QiqianFu/Qev/blob/main/docs/training-0.8b.md
 - Explicación de entrenamiento en chino: https://github.com/QiqianFu/Qev/blob/main/docs/training-0.8b.zh-CN.md

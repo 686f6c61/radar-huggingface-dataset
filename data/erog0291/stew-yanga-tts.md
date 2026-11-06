@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stew-yanga-tts es un modelo de síntesis de voz (text-to-speech) publicado en HuggingFace por el usuario Erog0291 bajo el identificador `Erog0291/stew-yanga-tts`. El modelo se distribuye en formato safetensors y emplea la arquitectura SpeechT5, un transformer encoder-decoder diseñado originalmente por Microsoft Research para tareas de habla (reconocimiento, síntesis y conversión de voz). Con 144.433.890 parámetros, se sitúa en el rango de tamaño típico de los modelos TTS basados en SpeechT5, que suelen rondar los 140 millones de parámetros.
+Stew-yanga-tts es un modelo de síntesis de voz (text-to-speech) publicado en Hugging Face por el usuario Erog0291 bajo el identificador `Erog0291/stew-yanga-tts`. El modelo se distribuye en formato safetensors y emplea la arquitectura SpeechT5, un transformer encoder-decoder diseñado originalmente por Microsoft Research para tareas de habla (reconocimiento, síntesis y conversión de voz). Con 144.433.890 parámetros, se sitúa en el rango de tamaño típico de los modelos TTS basados en SpeechT5, que suelen rondar los 140 millones de parámetros.
 
 El repositorio tiene un tamaño de 2,3 GB y acumula 55 descargas en el momento de la consulta, con fecha de creación en octubre de 2026 y última actualización en noviembre de 2026. No se especifica pipeline, licencia ni idiomas soportados en la información disponible, lo que limita la evaluación de su idoneidad para producción. El nombre "yanga" sugiere un posible enfoque en una variedad lingüística o acento concreto, pero este dato no está confirmado en la información proporcionada.
 
@@ -23,9 +23,9 @@ La relevancia de este modelo radica en su posible uso como TTS ligero y desplega
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es SpeechT5, un modelo transformer encoder-decoder presentado por Microsoft Research para unificar tareas de habla. SpeechT5 emplea un encoder que procesa secuencias de habla o texto y un decoder que genera habla o texto, con cabeceras específicas por tarea. En el caso de TTS, el modelo recibe texto tokenizado y produce mel-espectrogramas que posteriormente se convierten en waveform mediante un vocoder (habitualmente HiFi-GAN). El tamaño de 144 millones de parámetros es coherente con las variantes estándar de SpeechT5 publicadas en HuggingFace.
+La arquitectura declarada es SpeechT5, un modelo transformer encoder-decoder presentado por Microsoft Research para unificar tareas de habla. SpeechT5 emplea un encoder que procesa secuencias de habla o texto y un decoder que genera habla o texto, con cabeceras específicas por tarea. En el caso de TTS, el modelo recibe texto tokenizado y produce mel-espectrogramas que posteriormente se convierten en waveform mediante un vocoder (habitualmente HiFi-GAN). El tamaño de 144 millones de parámetros es coherente con las variantes estándar de SpeechT5 publicadas en Hugging Face.
 
-No se dispone de información sobre el dataset de entrenamiento, el número de tokens o horas de audio utilizadas, la composición lingüística del corpus, ni si se aplicaron técnicas de RLHF, DPO o fine-tuning supervisado. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal. La única información verificable es el número de parámetros y el formato de pesos safetensors, que indica compatibilidad con la librería `transformers` y con el ecosistema de HuggingFace.
+No se dispone de información sobre el dataset de entrenamiento, el número de tokens o horas de audio utilizadas, la composición lingüística del corpus, ni si se aplicaron técnicas de RLHF, DPO o fine-tuning supervisado. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal. La única información verificable es el número de parámetros y el formato de pesos safetensors, que indica compatibilidad con la librería `transformers` y con el ecosistema de Hugging Face.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 - Prototipado de asistentes conversacionales: útil en fases de investigación para evaluar pipelines TTS completos antes de invertir en modelos comerciales, aunque la falta de licencia clara limita su uso en producción.
 - Doblaje y locución automatizada de contenido breve: puede emplearse para generar pistas de voz en vídeos demostrativos o tutoriales internos, con revisión humana posterior.
 - Investigación en síntesis de voz: sirve como base para fine-tuning sobre corpus propios, aprovechando la compatibilidad con `transformers` y el formato safetensors.
-- Pruebas de integración en pipelines de HuggingFace: permite validar flujos de inferencia con `pipeline("text-to-speech")` y vocoder asociado, aunque la ausencia de pipeline declarado obliga a configurarlo manualmente.
+- Pruebas de integración en pipelines de Hugging Face: permite validar flujos de inferencia con `pipeline("text-to-speech")` y vocoder asociado, aunque la ausencia de pipeline declarado obliga a configurarlo manualmente.
 
 ## Benchmarks y rendimiento
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Erog0291/stew-yanga-tts | 144.433.890 | no disponible | no disponible | HuggingFace, 55 descargas |
-| Microsoft SpeechT5 (base) | ~141 M | no disponible | MIT | HuggingFace, ampliamente utilizado |
-| Coqui TTS (VITS) | variable (~80-120 M) | no disponible | MPL 2.0 / CPML | GitHub, HuggingFace |
+| Erog0291/stew-yanga-tts | 144.433.890 | no disponible | no disponible | Hugging Face, 55 descargas |
+| Microsoft SpeechT5 (base) | ~141 M | no disponible | MIT | Hugging Face, ampliamente utilizado |
+| Coqui TTS (VITS) | variable (~80-120 M) | no disponible | MPL 2.0 / CPML | GitHub, Hugging Face |
 | Piper TTS | variable (~20-60 M) | no disponible | MIT | GitHub, orientado a edge |
 
 La comparativa se limita a parámetros y licencia, ya que no hay datos de rendimiento publicados para stew-yanga-tts. Frente a SpeechT5 base, el modelo aquí descrito no documenta diferencias arquitectónicas ni de entrenamiento, por lo que su valor añadido no puede verificarse. Coqui TTS y Piper ofrecen licencias claras y documentación extensa, lo que los hace más adecuados para producción.
@@ -82,7 +82,7 @@ La comparativa se limita a parámetros y licencia, ya que no hay datos de rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Erog0291/stew-yanga-tts
+- Hugging Face: https://huggingface.co/Erog0291/stew-yanga-tts
 - Paper original de SpeechT5 (Microsoft Research): no disponible en la información proporcionada
-- Repositorio de referencia de SpeechT5 en HuggingFace: no disponible en la información proporcionada
+- Repositorio de referencia de SpeechT5 en Hugging Face: no disponible en la información proporcionada
 - Documentación de `transformers` para TTS: no disponible en la información proporcionada

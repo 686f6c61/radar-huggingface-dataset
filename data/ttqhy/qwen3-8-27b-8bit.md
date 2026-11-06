@@ -6,7 +6,7 @@ El modelo TTQHY/Qwen3.8-27B-8bit es una conversión al formato MLX del modelo or
 
 La relevancia de este modelo radica en que permite ejecutar un modelo de gran tamaño (aunque el conteo real de parámetros en safetensors es de aproximadamente 8 mil millones, el nombre sugiere 27 mil millones) en hardware de Apple con un consumo de memoria reducido gracias a la cuantización. Al estar licenciado bajo Apache 2.0, es apto para uso comercial y de investigación sin restricciones significativas. La conversión se realizó con mlx-vlm versión 0.6.8, lo que garantiza compatibilidad con el ecosistema MLX.
 
-A pesar de su potencial, el repositorio no incluye documentación adicional sobre el entrenamiento original ni benchmarks, por lo que la información disponible se limita a los metadatos de HuggingFace y la model card de conversión.
+A pesar de su potencial, el repositorio no incluye documentación adicional sobre el entrenamiento original ni benchmarks, por lo que la información disponible se limita a los metadatos de Hugging Face y la model card de conversión.
 
 ## Especificaciones tecnicas
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TTQHY/Qwen3.8-27B-8bit
+- Repositorio Hugging Face: https://huggingface.co/TTQHY/Qwen3.8-27B-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de mlx-vlm: https://github.com/ml-explore/mlx-vlm (referencia indirecta, no confirmada en la información proporcionada)

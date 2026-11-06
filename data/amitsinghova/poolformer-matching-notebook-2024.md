@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer-matching-notebook-2024 es un repositorio de HuggingFace publicado por el usuario amitsinghova que contiene una implementación propia de una arquitectura PoolFormer orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de una release con pesos listos para producción: la model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para *smoke tests*, no un modelo con benchmarks. El repositorio empaqueta el código (`train.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización.
+Poolformer-matching-notebook-2024 es un repositorio de Hugging Face publicado por el usuario amitsinghova que contiene una implementación propia de una arquitectura PoolFormer orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de una release con pesos listos para producción: la model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para *smoke tests*, no un modelo con benchmarks. El repositorio empaqueta el código (`train.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización.
 
 La relevancia de esta ficha es limitada y hay que enmarcarla con honestidad: el repositorio tiene 0 descargas y 0 likes, no declara pipeline, no declara idiomas y su tamaño es de 0.0 GB. El dato de parámetros reportado por los safetensors es de 33.088, una cifra anómala para un modelo "base" de PoolFormer (los PoolFormer base canónicos rondan los 22-31 millones de parámetros), por lo que debe interpretarse con cautela: probablemente refleja el número de tensores o un conteo parcial del checkpoint de inicialización, no un recuento fiable de parámetros del modelo completo.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amitsinghova/poolformer-matching-notebook-2024 | 33.088 reportados (no fiable) | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace, 0 descargas |
+| amitsinghova/poolformer-matching-notebook-2024 | 33.088 reportados (no fiable) | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face, 0 descargas |
 | PoolFormer base canónico (Meta AI, paper "MetaFormer is Actually What You Need for Vision") | ~22-31 M (según variante) | N/A (visión) | resultados publicados en ImageNet en el paper original | generalmente Apache-2.0 o similar (consultar repo original) | pesos y código públicos |
-| Otras implementaciones comunitarias de PoolFormer en HuggingFace | variable | N/A | variable, a menudo sin benchmarks | variable | HuggingFace |
+| Otras implementaciones comunitarias de PoolFormer en Hugging Face | variable | N/A | variable, a menudo sin benchmarks | variable | Hugging Face |
 
 La comparación con el PoolFormer canónico es la más pertinente: misma familia arquitectónica, pero el modelo canónico cuenta con paper, pesos entrenados y evaluación publicada, mientras que este repositorio es una implementación de partida sin entrenamiento.
 
@@ -82,6 +82,6 @@ La comparación con el PoolFormer canónico es la más pertinente: misma familia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amitsinghova/poolformer-matching-notebook-2024
+- Hugging Face: https://huggingface.co/amitsinghova/poolformer-matching-notebook-2024
 - Paper de referencia de PoolFormer ("MetaFormer is Actually What You Need for Vision"): no incluido en la información proporcionada; no disponible como enlace verificado en esta ficha.
 - Repositorio de código, demos o blog del autor: no disponibles en la información proporcionada.

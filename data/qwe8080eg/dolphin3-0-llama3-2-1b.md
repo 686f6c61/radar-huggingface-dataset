@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dolphin3.0-Llama3.2-1B es un modelo de lenguaje instruct-tuned de 1,2 mil millones de parámetros, desarrollado por Cognitive Computations (Eric Hartford, Ben Gitter, BlouseJury) como parte de la colección Dolphin 3.0. Se basa en el modelo Llama-3.2-1B de Meta y está diseñado para ser un asistente local de propósito general, con énfasis en codificación, matemáticas, uso agéntico y llamada a funciones. La versión alojada en `Qwe8080eg/Dolphin3.0-Llama3.2-1B` es una copia del modelo oficial, publicada por un usuario de HuggingFace.
+Dolphin3.0-Llama3.2-1B es un modelo de lenguaje instruct-tuned de 1,2 mil millones de parámetros, desarrollado por Cognitive Computations (Eric Hartford, Ben Gitter, BlouseJury) como parte de la colección Dolphin 3.0. Se basa en el modelo Llama-3.2-1B de Meta y está diseñado para ser un asistente local de propósito general, con énfasis en codificación, matemáticas, uso agéntico y llamada a funciones. La versión alojada en `Qwe8080eg/Dolphin3.0-Llama3.2-1B` es una copia del modelo oficial, publicada por un usuario de Hugging Face.
 
 La relevancia del modelo radica en su tamaño compacto, que permite ejecutarse en hardware de consumo, y en su filosofía de control total por parte del usuario: el sistema prompt define la alineación, sin imposiciones éticas del desarrollador. Esto lo hace atractivo para empresas que quieren integrar un asistente local sin depender de APIs externas. La arquitectura es un transformer decoder-only estándar, con 1.235.818.496 parámetros totales y una longitud de contexto no especificada en la ficha del modelo.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Longitud de contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Dolphin3.0-Llama3.2-1B | 1,24 B | no disponible | llama3.2 | HuggingFace | no disponible |
-| Llama-3.2-1B-Instruct | 1,24 B | no disponible | llama3.2 | HuggingFace | no disponible |
-| Qwen2.5-1.5B-Instruct | 1,54 B | no disponible | Apache 2.0 | HuggingFace | no disponible |
-| SmolLM2-1.7B-Instruct | 1,72 B | no disponible | Apache 2.0 | HuggingFace | no disponible |
+| Dolphin3.0-Llama3.2-1B | 1,24 B | no disponible | llama3.2 | Hugging Face | no disponible |
+| Llama-3.2-1B-Instruct | 1,24 B | no disponible | llama3.2 | Hugging Face | no disponible |
+| Qwen2.5-1.5B-Instruct | 1,54 B | no disponible | Apache 2.0 | Hugging Face | no disponible |
+| SmolLM2-1.7B-Instruct | 1,72 B | no disponible | Apache 2.0 | Hugging Face | no disponible |
 
 No se dispone de datos de benchmarks para comparar rendimiento. Los tres alternativas son modelos densos de tamaño similar, con licencias más permisivas en el caso de Qwen y SmolLM (Apache 2.0) frente a la licencia Llama 3.2 de Meta.
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks para comparar rendimiento. Los tres alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qwe8080eg/Dolphin3.0-Llama3.2-1B
+- Modelo en Hugging Face: https://huggingface.co/Qwe8080eg/Dolphin3.0-Llama3.2-1B
 - Modelo original de la colección Dolphin 3.0: https://huggingface.co/dphn/Dolphin3.0-Llama3.2-1B
 - Colección Dolphin 3.0: https://huggingface.co/collections/cognitivecomputations/dolphin-30-677ab47f73d7ff66743979a3
 - Blog de Eric Hartford sobre modelos sin censura: https://erichartford.com/uncensored-models

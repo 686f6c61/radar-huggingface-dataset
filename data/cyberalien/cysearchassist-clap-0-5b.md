@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Funcion principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CySearchAssist-CLAP-0.5B | ~0,494B | no disponible | Reescritura de consultas de audio a JSON para CLAP | Apache 2.0 | GGUF Q8_0 en HuggingFace |
-| Qwen2.5-0.5B-Instruct (base) | ~0,494B | no disponible en la informacion aportada | Asistente general de proposito multiple | Apache 2.0 | safetensors y GGUF en HuggingFace |
+| CySearchAssist-CLAP-0.5B | ~0,494B | no disponible | Reescritura de consultas de audio a JSON para CLAP | Apache 2.0 | GGUF Q8_0 en Hugging Face |
+| Qwen2.5-0.5B-Instruct (base) | ~0,494B | no disponible en la informacion aportada | Asistente general de proposito multiple | Apache 2.0 | safetensors y GGUF en Hugging Face |
 | Otros reescritores de consultas para CLAP | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables especificos de la misma tarea en la informacion proporcionada. La comparacion con la base es estructural (mismo backbone); el ajuste fino especializa la tarea a costa de renunciar a la polivalencia del modelo original.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de modelos comparables especificos de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberalien/CySearchAssist-CLAP-0.5B
+- Modelo en Hugging Face: https://huggingface.co/cyberalien/CySearchAssist-CLAP-0.5B
 - Descarga directa del GGUF Q8_0: https://huggingface.co/cyberalien/CySearchAssist-CLAP-0.5B/resolve/main/CySearchAssist-CLAP-0.5B-v1-Q8_0.gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Distribucion de entrenamiento: https://huggingface.co/unsloth/Qwen2.5-0.5B-Instruct

@@ -4,7 +4,7 @@
 
 El modelo `AutomatosX/AX-gemma-4-26b-a4b-MLX-AXQ-4bit-MTP` es una cuantización de precisión mixta (AXQ, AXQuant) del modelo `google/gemma-4-26b-a4b-it` de Google, perteneciente a la familia Gemma 4. Se trata de un modelo de tipo Mixture of Experts (MoE) con un total nominal de 26 mil millones de parámetros y 4 mil millones activos por token, aunque el archivo safetensors reporta aproximadamente 4.082 millones de parámetros, lo que sugiere una posible discrepancia en la metadata o una versión parcial. El checkpoint está optimizado para Apple Silicon mediante la librería MLX e incluye un drafter de multi-token prediction (MTP) para decodificación especulativa, aunque esta aceleración no está certificada.
 
-El modelo se distribuye con licencia Gemma y está diseñado para generación de texto conversacional. Su principal valor es ofrecer un Gemma 4 de gran tamaño (26B-A4B) en un formato cuantizado a 4 bits con una retención de calidad certificada (≥0.98) y un peso medido de ~4.90 bits por parámetro, lo que permite ejecutarlo en hardware de Apple con memoria unificada. Incluye además un sidecar de visión no certificado y no soporta audio. La fecha de publicación es agosto de 2026 y ha recibido 39 descargas en HuggingFace.
+El modelo se distribuye con licencia Gemma y está diseñado para generación de texto conversacional. Su principal valor es ofrecer un Gemma 4 de gran tamaño (26B-A4B) en un formato cuantizado a 4 bits con una retención de calidad certificada (≥0.98) y un peso medido de ~4.90 bits por parámetro, lo que permite ejecutarlo en hardware de Apple con memoria unificada. Incluye además un sidecar de visión no certificado y no soporta audio. La fecha de publicación es agosto de 2026 y ha recibido 39 descargas en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No se incluyen tablas de rendimiento por falta de datos verificados.
 
 ## Enlaces
 
-- [HuggingFace: AutomatosX/AX-gemma-4-26b-a4b-MLX-AXQ-4bit-MTP](https://huggingface.co/AutomatosX/AX-gemma-4-26b-a4b-MLX-AXQ-4bit-MTP)
+- [Hugging Face: AutomatosX/AX-gemma-4-26b-a4b-MLX-AXQ-4bit-MTP](https://huggingface.co/AutomatosX/AX-gemma-4-26b-a4b-MLX-AXQ-4bit-MTP)
 - [Modelo base: google/gemma-4-26b-a4b-it](https://huggingface.co/google/gemma-4-26b-a4b-it)
 - [Certificado Tier 1 (GitHub)](https://github.com/defai-digital/axquant/blob/main/docs/certifications/gemma4-26b-a4b-axq4-tier1.md)
 - [Repositorio AXQuant (GitHub)](https://github.com/defai-digital/axquant)

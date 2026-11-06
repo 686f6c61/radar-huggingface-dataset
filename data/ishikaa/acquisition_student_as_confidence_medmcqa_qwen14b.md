@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_AS_confidence_medmcqa_qwen14b` es un ajuste fino (fine-tuning) subido a HuggingFace por el usuario `ishikaa` en septiembre de 2026. Los metadatos del repositorio incluyen los tags `qwen2`, `sft`, `trl` y `transformers`, lo que indica que se trata de un modelo de la familia Qwen2 afinado mediante entrenamiento supervisado (SFT) con la librería TRL. El nombre del repositorio sugiere que el entrenamiento se realizó sobre el dataset MedMCQA, un conjunto de preguntas de opción múltiple del ámbito médico. El número de parámetros, 14.770.033.664, es consistente con un modelo Qwen2-14B denso.
+El modelo `ishikaa/acquisition_student_AS_confidence_medmcqa_qwen14b` es un ajuste fino (fine-tuning) subido a Hugging Face por el usuario `ishikaa` en septiembre de 2026. Los metadatos del repositorio incluyen los tags `qwen2`, `sft`, `trl` y `transformers`, lo que indica que se trata de un modelo de la familia Qwen2 afinado mediante entrenamiento supervisado (SFT) con la librería TRL. El nombre del repositorio sugiere que el entrenamiento se realizó sobre el dataset MedMCQA, un conjunto de preguntas de opción múltiple del ámbito médico. El número de parámetros, 14.770.033.664, es consistente con un modelo Qwen2-14B denso.
 
-La model card es autogenerada y no contiene información descriptiva: no se indican datos del desarrollador, licencia, idiomas, arquitectura detallada, procedimiento de entrenamiento ni resultados de evaluación. Esta ficha se limita a la información pública disponible en el repositorio de HuggingFace, complementada con inferencias razonables a partir de los metadatos y el nombre.
+La model card es autogenerada y no contiene información descriptiva: no se indican datos del desarrollador, licencia, idiomas, arquitectura detallada, procedimiento de entrenamiento ni resultados de evaluación. Esta ficha se limita a la información pública disponible en el repositorio de Hugging Face, complementada con inferencias razonables a partir de los metadatos y el nombre.
 
 ## Especificaciones técnicas
 

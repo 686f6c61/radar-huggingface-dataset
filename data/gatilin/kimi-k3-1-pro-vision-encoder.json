@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gatilin/kimi-k3.1-pro-vision-encoder",
+  "slug": "gatilin-kimi-k3-1-pro-vision-encoder",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/kimi-k3.1-pro-vision-encoder",
+  "created_at": "2026-11-05T02:13:23.000Z",
+  "updated_at": "2026-11-05T02:36:58.000Z",
+  "license": "kimi-k3.1-pro",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "kimi_k31",
+    "vision",
+    "vision-encoder",
+    "feature-extraction",
+    "kimi",
+    "custom_code",
+    "en",
+    "base_model:moonshotai/Kimi-K3.1-Pro",
+    "base_model:finetune:moonshotai/Kimi-K3.1-Pro",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 447358976,
+  "parameters_human": "447.4M",
+  "storage_bytes": 894737840,
+  "storage_human": "895 MB",
+  "base_model": "moonshotai/Kimi-K3.1-Pro",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gatilin/kimi-k3.1-pro-vision-encoder · Hugging Face",
+      "url": "https://huggingface.co/gatilin/kimi-k3.1-pro-vision-encoder",
+      "snippet": "This repository contains the vision_tower.* and mm_projector.* tensors extracted without modification from Kimi K3.1 Pro at revision ..."
+    },
+    {
+      "title": "moonshotai/Kimi-K3.1-Pro · Hugging Face",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "snippet": "The final model is evaluated at pass@3 over a random subset of runs, without hard timeouts or output-token limits. 4. Deployment and Availability You can access Kimi K3.1 Pro's API on https://platform.kimi.ai by selecting kimi-k3.1-pro, and we provide OpenAI/Anthropic-compatible API for you."
+    }
+  ]
+}

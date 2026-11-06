@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-232m-26.5bt-mdlm-cooled
-- Repositorio de datos del autor: `DATA.md` (referenciado en la model card, disponible en el propio repositorio de HuggingFace)
-- Código de modelado: `modeling_vectabass.py` (incluido en el repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-232m-26.5bt-mdlm-cooled
+- Repositorio de datos del autor: `DATA.md` (referenciado en la model card, disponible en el propio repositorio de Hugging Face)
+- Código de modelado: `modeling_vectabass.py` (incluido en el repositorio de Hugging Face)
 - Paper, blog, repositorio de código y demos: no disponibles en la información proporcionada

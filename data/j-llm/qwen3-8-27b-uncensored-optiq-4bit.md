@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-OptiQ-4bit es una version cuantizada y sin censura del modelo orcarouter/Qwen3.8-27B-Uncensored, publicada por el usuario j-llm en HuggingFace bajo licencia Apache 2.0. Se distribuye en formato MLX, es decir, pesos safetensors cuantizados con la libreria de Apple para ejecucion en silicio Apple (M1/M2/M3/M4), y emplea un esquema de cuantizacion de precision mixta denominado OptiQ que combina componentes de 4 y 8 bits.
+Qwen3.8-27B-Uncensored-OptiQ-4bit es una version cuantizada y sin censura del modelo orcarouter/Qwen3.8-27B-Uncensored, publicada por el usuario j-llm en Hugging Face bajo licencia Apache 2.0. Se distribuye en formato MLX, es decir, pesos safetensors cuantizados con la libreria de Apple para ejecucion en silicio Apple (M1/M2/M3/M4), y emplea un esquema de cuantizacion de precision mixta denominado OptiQ que combina componentes de 4 y 8 bits.
 
 El modelo es multimodal de tipo image-text-to-text: acepta imagenes y texto como entrada, y las etiquetas del repositorio incluyen terminos como "vision" y "mtp", ademas de "uncensored" y "abliterated", lo que indica que se ha eliminado o reducido el comportamiento de rechazo tipico de los modelos alineados. El repositorio declara 26.895.993.856 parametros reales en safetensors (aproximadamente 26,9 mil millones, coherente con la denominacion comercial "27B") y un tamano de 20,6 GB, derivado de la mezcla de precisiones.
 
@@ -26,7 +26,7 @@ Su relevancia actual es doble: por un lado, permite ejecutar un modelo de casi 2
 | Pipeline | image-text-to-text (multimodal imagen + texto) |
 | Modelo base | orcarouter/Qwen3.8-27B-Uncensored |
 | Libreria de inferencia | MLX |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-09 |
 
@@ -98,8 +98,8 @@ No se proporciona informacion sobre otros modelos cuantizados o abliterated de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j-llm/Qwen3.8-27B-Uncensored-OptiQ-4bit
-- Modelo base en HuggingFace: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/j-llm/Qwen3.8-27B-Uncensored-OptiQ-4bit
+- Modelo base en Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Libreria MLX (Apple): https://github.com/ml-explore/mlx
 - mlx-lm (inferencia y ajuste de modelos de lenguaje): https://github.com/ml-explore/mlx-lm
 - mlx-vlm (inferencia multimodal): https://github.com/Blaizzy/mlx-vlm

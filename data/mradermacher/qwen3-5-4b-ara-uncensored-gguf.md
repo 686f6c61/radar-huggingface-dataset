@@ -106,7 +106,7 @@ La ventaja principal del modelo analizado es la disponibilidad inmediata de doce
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-4B-ara-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-ara-uncensored-GGUF
 - Modelo base: https://huggingface.co/OuroborosRex/Qwen3.5-4B-ara-uncensored
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - llama.cpp (runtime de referencia para GGUF): https://github.com/ggml-org/llama.cpp

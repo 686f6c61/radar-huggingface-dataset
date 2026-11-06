@@ -76,7 +76,7 @@ No se han publicado en la información disponible resultados desglosados por cla
 
 | Modelo | Parametros | Dataset | mIoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minkunet18-w32.semantickitti.mmdet3d | 21,7 M | SemanticKITTI | 63,06 | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| minkunet18-w32.semantickitti.mmdet3d | 21,7 M | SemanticKITTI | 63,06 | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | MinkUNet18 original (MMDetection3D) | ~21,7 M | SemanticKITTI | No disponible en la información | Apache-2.0 | GitHub (open-mmlab) |
 | Otras arquitecturas de segmentación LiDAR (Cylinder3D, SPVCNN, etc.) | No disponible | SemanticKITTI | No disponible en la información | Variable | Variable |
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/minkunet18-w32.semantickitti.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/minkunet18-w32.semantickitti.mmdet3d
 - Paper de Minkowski Convolutional Neural Networks: https://arxiv.org/abs/1904.08755
 - Repositorio de torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Documentación de torch-pointcloud: https://pytorch-pointcloud.org/latest/

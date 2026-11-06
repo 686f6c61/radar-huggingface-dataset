@@ -76,7 +76,7 @@ La ventaja de esta variante frente al Whisper genérico es su especialización e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/herrero1234/ayahsync-model
+- Modelo en Hugging Face: https://huggingface.co/herrero1234/ayahsync-model
 - Modelo base original: https://huggingface.co/tarteel-ai/whisper-base-ar-quran
 - Aplicación AyahSync: https://ayah-sync.com
 - whisper.cpp: https://github.com/ggerganov/whisper.cpp

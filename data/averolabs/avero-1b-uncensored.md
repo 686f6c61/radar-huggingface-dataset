@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Avero-1B-Uncensored es un modelo de lenguaje de 1.235.814.400 parametros (~1,23 mil millones) desarrollado por Avero Labs y publicado en HuggingFace bajo licencia Apache 2.0. Se presenta como una variante "sin censura" (uncensored) de un transformer tipo Llama, disenada para generar respuestas sin filtros de rechazo ni moralizacion. El modelo declara una ventana de contexto de 131.072 tokens (128K), un vocabulario BPE de 128.256 tokens y una arquitectura con Grouped-Query Attention (GQA) de 32 cabezas de consulta y 8 cabezas KV.
+Avero-1B-Uncensored es un modelo de lenguaje de 1.235.814.400 parametros (~1,23 mil millones) desarrollado por Avero Labs y publicado en Hugging Face bajo licencia Apache 2.0. Se presenta como una variante "sin censura" (uncensored) de un transformer tipo Llama, disenada para generar respuestas sin filtros de rechazo ni moralizacion. El modelo declara una ventana de contexto de 131.072 tokens (128K), un vocabulario BPE de 128.256 tokens y una arquitectura con Grouped-Query Attention (GQA) de 32 cabezas de consulta y 8 cabezas KV.
 
 El modelo se orienta a conversacion multi-turno, razonamiento y generacion de texto largo, y su rasgo diferencial es la eliminacion de las direcciones de rechazo mediante ablacion de vectores de refusal. Con 16 capas y 2048 dimensiones ocultas, es un modelo compacto pensado para ejecucion en hardware modesto, incluido despliegue local via Ollama. La model card no documenta el proceso de entrenamiento (datos, tokens, RLHF/DPO), por lo que muchos detalles tecnicos permanecen sin confirmar.
 
@@ -86,5 +86,5 @@ La comparativa se basa en caracteristicas declaradas; no hay datos de rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AveroLabs/Avero-1B-Uncensored
+- Hugging Face: https://huggingface.co/AveroLabs/Avero-1B-Uncensored
 - Organizacion Avero Labs: https://huggingface.co/AveroLabs

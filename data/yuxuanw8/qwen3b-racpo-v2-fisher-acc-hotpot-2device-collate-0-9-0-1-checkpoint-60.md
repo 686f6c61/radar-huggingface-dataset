@@ -4,7 +4,7 @@
 
 Este repositorio aloja un checkpoint de un modelo de lenguaje de aproximadamente 3.086 millones de parámetros (3,085.938.688 según los pesos en safetensors), publicado por el usuario yuxuanw8 bajo el identificador `qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-60`. Por la etiqueta `qwen2` y el nombre del repositorio, se trata de un ajuste sobre la arquitectura Qwen2 de escala 3B, presumiblemente orientado a tareas de razonamiento multi-paso sobre el conjunto de datos HotpotQA. La nomenclatura (`racpo-v2`, `fisher-acc`, `2device`, `collate 0.9-0.1`, `checkpoint-60`) sugiere que es un artefacto intermedio de un proceso de investigación con aprendizaje por refuerzo o ajuste supervisado, no un modelo listo para producción.
 
-La model card está prácticamente vacía: se trata de la plantilla autogenerada por HuggingFace sin ninguna sección cumplimentada por el autor. No se declaran licencia, idiomas, datos de entrenamiento, metodología ni resultados de evaluación, y el repositorio acumula cero descargas y cero likes en el momento de la consulta. La relevancia de esta ficha es, por tanto, limitada: sirve sobre todo para documentar que existe un checkpoint de investigación sobre Qwen2-3B y para advertir de que su uso en producción no está respaldado por información técnica verificable.
+La model card está prácticamente vacía: se trata de la plantilla autogenerada por Hugging Face sin ninguna sección cumplimentada por el autor. No se declaran licencia, idiomas, datos de entrenamiento, metodología ni resultados de evaluación, y el repositorio acumula cero descargas y cero likes en el momento de la consulta. La relevancia de esta ficha es, por tanto, limitada: sirve sobre todo para documentar que existe un checkpoint de investigación sobre Qwen2-3B y para advertir de que su uso en producción no está respaldado por información técnica verificable.
 
 El tamaño del repositorio (12,4 GB) es coherente con pesos almacenados en precisión FP32 (3,086 e9 parámetros × 4 bytes ≈ 12,34 GB), lo que refuerza la sospecha de que es un checkpoint de entrenamiento sin optimizar para inferencia. Cualquier dato adicional sobre arquitectura, contexto o rendimiento debe considerarse no disponible salvo lo que se pueda inferir de la arquitectura base Qwen2.
 
@@ -27,7 +27,7 @@ La arquitectura base es Qwen2, un transformer decoder-only con atención causal,
 
 El nombre del repositorio apunta a un entrenamiento mediante una técnica denominada "RACPO v2" con un componente "fisher-acc" y un esquema de reparto entre dispositivos ("2device") con una proporción de collate de 0,9/0,1. Asimismo, el sufijo "hotpot" sugiere que el ajuste se realiza sobre HotpotQA, un benchmark de question answering multi-salto. La presencia del término "checkpoint-60" indica que se trata de un punto de control intermedio de un proceso de entrenamiento más largo; el autor ha publicado, según los resultados de búsqueda, múltiples checkpoints con diferentes proporciones de collate (0,75/0,25 y 0,9/0,1) y distintos números de paso. No hay información sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni hiperparámetros.
 
-La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a la referencia del calculador de impacto medioambiental (Lacoste et al., 2019) que HuggingFace incluye por defecto en sus plantillas, no a un artículo sobre este modelo. No existe publicación técnica asociada conocida.
+La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a la referencia del calculador de impacto medioambiental (Lacoste et al., 2019) que Hugging Face incluye por defecto en sus plantillas, no a un artículo sobre este modelo. No existe publicación técnica asociada conocida.
 
 ## Capacidades
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| yuxuanw8/qwen3b-racpo-v2-...-checkpoint-60 | 3,086 e9 | 32.768 (según fuentes externas) | no disponible | HuggingFace | Checkpoint de investigación, model card vacía |
-| Qwen2.5-3B | 3,09 e9 | 32.768 (hasta 128K en variantes) | Apache 2.0 (variantes) | HuggingFace, Ollama, vLLM | Modelo base oficial, benchmarks publicados |
-| Llama-3.2-3B | 3,21 e9 | 128.000 | Llama 3.2 Community License | HuggingFace, Ollama, vLLM | Buen rendimiento general, licencia con restricciones |
-| Phi-3-mini | 3,8 e9 | 128.000 | MIT | HuggingFace, Ollama, vLLM | Enfocado en razonamiento y código |
+| yuxuanw8/qwen3b-racpo-v2-...-checkpoint-60 | 3,086 e9 | 32.768 (según fuentes externas) | no disponible | Hugging Face | Checkpoint de investigación, model card vacía |
+| Qwen2.5-3B | 3,09 e9 | 32.768 (hasta 128K en variantes) | Apache 2.0 (variantes) | Hugging Face, Ollama, vLLM | Modelo base oficial, benchmarks publicados |
+| Llama-3.2-3B | 3,21 e9 | 128.000 | Llama 3.2 Community License | Hugging Face, Ollama, vLLM | Buen rendimiento general, licencia con restricciones |
+| Phi-3-mini | 3,8 e9 | 128.000 | MIT | Hugging Face, Ollama, vLLM | Enfocado en razonamiento y código |
 
 La comparación de rendimiento con estas alternativas no es posible con los datos disponibles, ya que no se han publicado métricas para el checkpoint analizado.
 
@@ -91,7 +91,7 @@ La comparación de rendimiento con estas alternativas no es posible con los dato
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-60
+- Repositorio Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-60
 - Checkpoint relacionado (0,75/0,25, paso 7): https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-7/tree/main
 - Checkpoint relacionado (0,75/0,25, paso 150): https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
 - Referencia externa (Featherless AI, checkpoint 0,75/0,25 paso 30): https://featherless.ai/models/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-30

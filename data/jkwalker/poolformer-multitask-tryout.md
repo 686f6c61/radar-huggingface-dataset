@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jkwalker/poolformer-multitask-tryout es un repositorio experimental publicado en HuggingFace por el usuario Jkwalker que contiene una implementación funcional de una arquitectura Poolformer configurada en escala *tiny* para un escenario multitarea. No se presenta como un modelo entrenado ni como un checkpoint con rendimiento validado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El interés del repositorio es, por tanto, metodológico y de código, no de capacidades.
+Jkwalker/poolformer-multitask-tryout es un repositorio experimental publicado en Hugging Face por el usuario Jkwalker que contiene una implementación funcional de una arquitectura Poolformer configurada en escala *tiny* para un escenario multitarea. No se presenta como un modelo entrenado ni como un checkpoint con rendimiento validado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El interés del repositorio es, por tanto, metodológico y de código, no de capacidades.
 
 El modelo tiene 33.088 parámetros totales según los metadatos de safetensors, un tamaño que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje o visión utilizable en producción. La arquitectura declarada combina el *token mixer* por *pooling* característico de PoolFormer con atención de ventana deslizante y fusión mediante *co-attention*, lo que sugiere un diseño orientado a tareas múltiples o multimodales, aunque la model card no especifica qué tareas ni qué modalidades.
 
@@ -69,7 +69,7 @@ No disponible. La información proporcionada no incluye resultados numéricos de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jkwalker/poolformer-multitask-tryout | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace, 0 descargas, 0 likes |
+| Jkwalker/poolformer-multitask-tryout | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face, 0 descargas, 0 likes |
 | Variantes PoolFormer de referencia | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
 
 ## Limitaciones y advertencias
@@ -79,12 +79,12 @@ No disponible. La información proporcionada no incluye resultados numéricos de
 - Riesgo de alucinación: no evaluable, ya que no existe una tarea generativa definida ni un conjunto de evaluación.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no puede garantizarse ningún comportamiento multilingüe ni de contexto largo.
 - Licencia MIT: permite uso comercial y modificación con atribución, pero el autor advierte de que deben revisarse por separado los términos de las fuentes de datos si se combina con datasets externos.
-- Implementación personalizada: las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito; no cabe esperar que `AutoModel.from_pretrained` funcione sin trabajo adicional.
+- Implementación personalizada: las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito; no cabe esperar que `AutoModel.from_pretrained` funcione sin trabajo adicional.
 - Tamaño de repositorio de 0,0 GB y ausencia de descargas o *likes*: no hay evidencia de uso por parte de terceros ni de mantenimiento continuado.
 - Fechas de creación y actualización muy próximas entre sí (15 de septiembre de 2026), lo que sugiere un único envío sin iteraciones posteriores.
 - No debe citarse este repositorio como referencia de rendimiento ni de capacidades en ningún contexto de producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jkwalker/poolformer-multitask-tryout
+- Modelo en Hugging Face: https://huggingface.co/Jkwalker/poolformer-multitask-tryout
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

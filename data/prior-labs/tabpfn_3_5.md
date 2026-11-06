@@ -98,7 +98,7 @@ La información disponible solo permite comparar entre las tres variantes del pr
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Prior-Labs/tabpfn_3_5
+- Pagina del modelo en Hugging Face: https://huggingface.co/Prior-Labs/tabpfn_3_5
 - Checkpoint principal: https://huggingface.co/Prior-Labs/tabpfn_3_5/blob/main/tabpfn-v3.5-20260909.safetensors
 - Checkpoint Fast: https://huggingface.co/Prior-Labs/tabpfn_3_5/blob/main/tabpfn-v3.5-fast-20260909.safetensors
 - Checkpoint multiclase: https://huggingface.co/Prior-Labs/tabpfn_3_5/blob/main/tabpfn-v3.5-20260909_multiclass.safetensors

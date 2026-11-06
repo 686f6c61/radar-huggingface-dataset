@@ -2,9 +2,9 @@
 
 ## Resumen
 
-UnionMaritime-LoRA es un adaptador de ajuste fino del tipo LoRA (Low-Rank Adaptation) publicado por CrowtherLabs en HuggingFace. Se distribuye como repositorio PEFT de aproximadamente 0,5 GB y declara como modelo base Qwen/Qwen3.8-27B-FP8, es decir, un modelo de generación de texto causal de la familia Qwen en su variante cuantizada a FP8. El identificador del repositorio sugiere una especialización en el ámbito marítimo o naviero, aunque la model card no documenta el corpus de entrenamiento ni el objetivo concreto del ajuste, por lo que esa especialización no puede confirmarse con la información disponible.
+UnionMaritime-LoRA es un adaptador de ajuste fino del tipo LoRA (Low-Rank Adaptation) publicado por CrowtherLabs en Hugging Face. Se distribuye como repositorio PEFT de aproximadamente 0,5 GB y declara como modelo base Qwen/Qwen3.8-27B-FP8, es decir, un modelo de generación de texto causal de la familia Qwen en su variante cuantizada a FP8. El identificador del repositorio sugiere una especialización en el ámbito marítimo o naviero, aunque la model card no documenta el corpus de entrenamiento ni el objetivo concreto del ajuste, por lo que esa especialización no puede confirmarse con la información disponible.
 
-El interés técnico del artefacto es doble. Por un lado, ejemplifica el flujo habitual de adaptación de bajo coste sobre un modelo grande: en lugar de reentrenar los aproximadamente 27 000 millones de parámetros nominales que sugiere el nombre del modelo base, se publican únicamente los pesos del adaptador, lo que reduce el tamaño del repositorio a unos cientos de megabytes y permite cargar y descargar variantes de dominio sobre un mismo checkpoint base. Por otro lado, es un caso claro de repositorio con documentación incompleta: la model card es la plantilla por defecto de HuggingFace con prácticamente todos los campos marcados como "More Information Needed".
+El interés técnico del artefacto es doble. Por un lado, ejemplifica el flujo habitual de adaptación de bajo coste sobre un modelo grande: en lugar de reentrenar los aproximadamente 27 000 millones de parámetros nominales que sugiere el nombre del modelo base, se publican únicamente los pesos del adaptador, lo que reduce el tamaño del repositorio a unos cientos de megabytes y permite cargar y descargar variantes de dominio sobre un mismo checkpoint base. Por otro lado, es un caso claro de repositorio con documentación incompleta: la model card es la plantilla por defecto de Hugging Face con prácticamente todos los campos marcados como "More Information Needed".
 
 En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", fue creado el 18 de septiembre de 2026 y su última actualización es del mismo día. No se ha publicado información sobre licencia, idiomas, datos de entrenamiento, hiperparámetros de la LoRA (rango, alpha, módulos objetivo) ni resultados de evaluación, lo que limita seriamente su uso en producción sin una validación previa por parte del integrador.
 
@@ -32,7 +32,7 @@ El repositorio contiene un adaptador LoRA, no un modelo completo. LoRA congela l
 
 El modelo base declarado es Qwen/Qwen3.8-27B-FP8. Se trata de un transformer causal de tipo decoder-only con pesos cuantizados a FP8, según la nomenclatura del identificador. No se dispone de información verificada sobre el número exacto de tokens de entrenamiento del modelo base, la composición del dataset, ni si se aplicaron fases de alineación como RLHF o DPO; esos datos corresponden a la documentación de Qwen y no se reproducen aquí porque no forman parte de la información proporcionada. Para el adaptador en sí no hay ningún dato de entrenamiento: se desconoce el dataset, el número de pasos, la tasa de aprendizaje y el régimen de precisión.
 
-La única pista sobre el proceso de entrenamiento es la etiqueta `tensorboard` en los metadatos del repositorio, que indica que el autor registró métricas de entrenamiento con TensorBoard, aunque los archivos de logs no se han publicado o no están accesibles en la información disponible. La etiqueta `arxiv:1910.09700` que aparece en los tags no corresponde a un artículo sobre este modelo: es la referencia al calculador de impacto medioambiental (Lacoste et al., 2019) que aparece en la plantilla por defecto de las model cards de HuggingFace. También figura un tag `base_model:adapter:/workspace/qwen3.8-27b` que apunta a una ruta local del entorno de entrenamiento del autor, no a un identificador público de HuggingFace, lo que sugiere una preparación poco cuidada de la publicación.
+La única pista sobre el proceso de entrenamiento es la etiqueta `tensorboard` en los metadatos del repositorio, que indica que el autor registró métricas de entrenamiento con TensorBoard, aunque los archivos de logs no se han publicado o no están accesibles en la información disponible. La etiqueta `arxiv:1910.09700` que aparece en los tags no corresponde a un artículo sobre este modelo: es la referencia al calculador de impacto medioambiental (Lacoste et al., 2019) que aparece en la plantilla por defecto de las model cards de Hugging Face. También figura un tag `base_model:adapter:/workspace/qwen3.8-27b` que apunta a una ruta local del entorno de entrenamiento del autor, no a un identificador público de Hugging Face, lo que sugiere una preparación poco cuidada de la publicación.
 
 ## Capacidades
 
@@ -82,13 +82,13 @@ No se dispone de información verificada sobre alternativas comparables. El repo
 
 | Elemento | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CrowtherLabs/UnionMaritime-LoRA | Adaptador LoRA; base de ~27 000 millones nominales | No disponible | No disponible | Repositorio público en HuggingFace, 0 descargas | Documentación incompleta; hiperparámetros de la LoRA no publicados |
+| CrowtherLabs/UnionMaritime-LoRA | Adaptador LoRA; base de ~27 000 millones nominales | No disponible | No disponible | Repositorio público en Hugging Face, 0 descargas | Documentación incompleta; hiperparámetros de la LoRA no publicados |
 | Qwen/Qwen3.8-27B-FP8 (modelo base) | ~27 000 millones nominales segun su identificador | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referenciado como modelo base del adaptador | Aporta todas las capacidades reales; el adaptador solo modifica parte de sus pesos |
 | Otros adaptadores LoRA sobre la misma base | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Documentación ausente: la model card es la plantilla por defecto de HuggingFace. No hay información sobre datos de entrenamiento, hiperparámetros, evaluación, sesgos ni uso previsto, lo que impide auditar el modelo.
+- Documentación ausente: la model card es la plantilla por defecto de Hugging Face. No hay información sobre datos de entrenamiento, hiperparámetros, evaluación, sesgos ni uso previsto, lo que impide auditar el modelo.
 - Riesgo de alucinación: no evaluado. Al ser un ajuste sobre un modelo generativo sin métricas publicadas, el riesgo de fabricación de datos es al menos tan alto como el del modelo base, y potencialmente mayor si el corpus de ajuste era reducido o poco diverso.
 - Sesgos conocidos: no disponibles. El dataset de ajuste es desconocido, por lo que no puede analizarse si introduce sesgos de dominio, geográficos o ideológicos.
 - Licencia indeterminada: al no declararse licencia, no puede asumirse permiso de uso comercial. La licencia del modelo base tampoco se reproduce en la información proporcionada, y un adaptador hereda las restricciones del modelo sobre el que se aplica. Es imprescindible consultar ambas antes de cualquier despliegue en producción.
@@ -101,7 +101,7 @@ No se dispone de información verificada sobre alternativas comparables. El repo
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/CrowtherLabs/UnionMaritime-LoRA
+- Repositorio del modelo en Hugging Face: https://huggingface.co/CrowtherLabs/UnionMaritime-LoRA
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Documentación de PEFT (librería declarada, versión 0.21.0): https://github.com/huggingface/peft
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019, sobre estimación de impacto medioambiental): https://arxiv.org/abs/1910.09700

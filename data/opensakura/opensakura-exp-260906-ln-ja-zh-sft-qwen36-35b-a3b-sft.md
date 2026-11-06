@@ -58,6 +58,6 @@ No se dispone de informacion suficiente para una comparativa fiable con otros mo
 - Licencia Apache 2.0 permite uso comercial, pero el modelo se ofrece sin garantias.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/OpenSakura/OpenSakura-EXP-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft
+- Hugging Face: https://huggingface.co/OpenSakura/OpenSakura-EXP-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft
 - Repositorio hermano (MODEL, con tags de arquitectura y Safetensors): https://huggingface.co/OpenSakura/OpenSakura-MODEL-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft/tree/main
 - GitHub de OpenSakura: https://github.com/OpenSakura/

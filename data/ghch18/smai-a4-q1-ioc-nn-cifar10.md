@@ -6,7 +6,7 @@ IOC-NN para CIFAR-10 es un modelo de red neuronal totalmente conectada (MLP) des
 
 El modelo se entrenó con descenso de gradiente estocástico (SGD) plano, tasa de aprendizaje 0,05, tamaño de lote 64 y 100 épocas, usando precisión `torch.float64` y semilla 2036. Tras la última época alcanza una precisión de entrenamiento del 87,84 % y una precisión de test del 48,92 %, lo que refleja un sobreajuste considerable y un rendimiento muy por debajo del estado del arte en CIFAR-10 (que supera el 95 % con arquitecturas convolucionales modernas).
 
-La model card no proporciona licencia, idiomas, pipeline ni información sobre el repositorio más allá de los pesos en formato NumPy (`model.npz`) y los parámetros de preprocesado (`preprocessing.npz`). El tamaño del repositorio es de 0,0 GB según HuggingFace, lo que es coherente con un modelo de menos de un millón de parámetros.
+La model card no proporciona licencia, idiomas, pipeline ni información sobre el repositorio más allá de los pesos en formato NumPy (`model.npz`) y los parámetros de preprocesado (`preprocessing.npz`). El tamaño del repositorio es de 0,0 GB según Hugging Face, lo que es coherente con un modelo de menos de un millón de parámetros.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 | Modelo | Parámetros | Entrada | Precisión test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IOC-NN (Ghch18) | 820.874 | 3072 (32×32×3 aplanado) | 48,92 % | no disponible | HuggingFace (`Ghch18/smai-a4-q1-ioc-nn-cifar10`) |
+| IOC-NN (Ghch18) | 820.874 | 3072 (32×32×3 aplanado) | 48,92 % | no disponible | Hugging Face (`Ghch18/smai-a4-q1-ioc-nn-cifar10`) |
 | MLP estándar de referencia en CIFAR-10 | no disponible | 3072 | no disponible | no disponible | no disponible |
 | CNN pequeña tipo LeNet | no disponible | 32×32×3 | no disponible | no disponible | no disponible |
 | ResNet-18 en CIFAR-10 | ~11,2 M | 32×32×3 | ~95 % (referencia habitual de la literatura) | no disponible | no disponible |
@@ -85,5 +85,5 @@ No se dispone de datos comparativos oficiales en la información proporcionada p
 
 ## Enlaces
 
-- [HuggingFace: Ghch18/smai-a4-q1-ioc-nn-cifar10](https://huggingface.co/Ghch18/smai-a4-q1-ioc-nn-cifar10)
+- [Hugging Face: Ghch18/smai-a4-q1-ioc-nn-cifar10](https://huggingface.co/Ghch18/smai-a4-q1-ioc-nn-cifar10)
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

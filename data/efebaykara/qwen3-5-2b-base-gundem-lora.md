@@ -79,8 +79,8 @@ Las puntuaciones de la tabla GGUF proceden del experimento HF/BF16; la calidad d
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-Base-Gundem-LoRA (este) | 1.880 M (base) + LoRA r16 | no disponible | Clasificacion de titulares en turco | Apache-2.0 | HuggingFace, GGUF Q4_K_M |
-| Qwen/Qwen3.5-2B-Base (original) | 1.880 M | no disponible | Modelo base generalista | Apache-2.0 (upstream) | HuggingFace |
+| Qwen3.5-2B-Base-Gundem-LoRA (este) | 1.880 M (base) + LoRA r16 | no disponible | Clasificacion de titulares en turco | Apache-2.0 | Hugging Face, GGUF Q4_K_M |
+| Qwen/Qwen3.5-2B-Base (original) | 1.880 M | no disponible | Modelo base generalista | Apache-2.0 (upstream) | Hugging Face |
 | Alternativas de clasificacion de noticias en turco | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos publicados de otros adaptadores comparables en la informacion proporcionada. La unica comparacion directa documentada es contra el modelo base sin ajustar, que obtiene 0,0 en Gundem Score v1 frente a 81,8 del adaptador destilado.
@@ -101,7 +101,7 @@ No se dispone de datos publicados de otros adaptadores comparables en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/efebaykara/Qwen3.5-2B-Base-Gundem-LoRA
+- Modelo en Hugging Face: https://huggingface.co/efebaykara/Qwen3.5-2B-Base-Gundem-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Herramientas de entrenamiento y benchmark: https://github.com/efebaykaraa/gundem-llms
 - Modelos publicados: https://github.com/efebaykaraa/gundem-llms/releases/tag/models-v1.0.0

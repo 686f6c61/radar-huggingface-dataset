@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coca for Retrieval es un repositorio experimental publicado por el usuario kavitasing en HuggingFace (ID `kavitasing/retrieval`). Se presenta como una implementacion funcional y transparente de la arquitectura CoCa (contrastive captioner) orientada a tareas de retrieval multimodal, en una configuracion deliberadamente reducida denominada "nano". No es un modelo entrenado ni un checkpoint con resultados de referencia: el propio autor indica que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo (smoke tests).
+Coca for Retrieval es un repositorio experimental publicado por el usuario kavitasing en Hugging Face (ID `kavitasing/retrieval`). Se presenta como una implementacion funcional y transparente de la arquitectura CoCa (contrastive captioner) orientada a tareas de retrieval multimodal, en una configuracion deliberadamente reducida denominada "nano". No es un modelo entrenado ni un checkpoint con resultados de referencia: el propio autor indica que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo (smoke tests).
 
 El interes del repositorio es fundamentalmente educativo y de ingenieria: sirve como punto de partida reproducible para quien quiera estudiar los componentes de CoCa (atencion multi-query, fusion por co-atencion, activacion swish, normalizacion scalenorm) sin la complejidad ni el coste de un modelo a escala. El autor omite explicitamente cualquier afirmacion de rendimiento y recomienda evaluar sobre Flickr30k con al menos tres semillas y una linea base de capacidad comparable.
 
@@ -78,7 +78,7 @@ La categoria de referencia es la de modelos de retrieval multimodal con arquitec
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kavitasing/retrieval (CoCa nano) | 24.832 | no disponible | ninguno (no se reclama) | MIT | HuggingFace, checkpoint de inicializacion |
+| kavitasing/retrieval (CoCa nano) | 24.832 | no disponible | ninguno (no se reclama) | MIT | Hugging Face, checkpoint de inicializacion |
 | OpenAI CLIP (ViT-B/32) | aprox. 151 M (documentacion publica del proyecto) | no disponible | metricas publicas en zero-shot retrieval | MIT | pesos publicos |
 | BLIP-2 | no disponible | no disponible | metricas publicas en retrieval y captioning | BSD-3-Clause | pesos publicos |
 | SigLIP | no disponible | no disponible | metricas publicas en zero-shot | Apache-2.0 | pesos publicos |
@@ -99,6 +99,6 @@ El contraste relevante es de proposito y escala: los modelos de la tabla son mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kavitasing/retrieval
+- Hugging Face: https://huggingface.co/kavitasing/retrieval
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a la arquitectura CoCa ni a sus resultados. Los resultados devueltos corresponden a archivos de cadastre frances y no guardan relacion con el repositorio.
 - Paper de referencia de la arquitectura CoCa (no verificado en la busqueda): no disponible.

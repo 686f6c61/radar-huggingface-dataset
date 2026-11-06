@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ASIL Qwen3.5-9B SFT | 8.95B | No disponible (base: 262K) | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B (base) | 9B | 262K | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B v0.3 | 7B | 32K | Apache 2.0 | HuggingFace |
+| ASIL Qwen3.5-9B SFT | 8.95B | No disponible (base: 262K) | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B (base) | 9B | 262K | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B v0.3 | 7B | 32K | Apache 2.0 | Hugging Face |
 
 Los datos de contexto y licencia de los modelos comparados provienen de sus respectivas fichas públicas; no se dispone de comparativas de rendimiento.
 
@@ -78,7 +78,7 @@ Los datos de contexto y licencia de los modelos comparados provienen de sus resp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sharryXR/asil-qwen35-9b-sft
+- Hugging Face: https://huggingface.co/sharryXR/asil-qwen35-9b-sft
 - Paper: https://huggingface.co/papers/2608.26991
 - Página del proyecto: https://sharryxr.github.io/ASIL
 - Código: https://github.com/sharryXR/ASIL

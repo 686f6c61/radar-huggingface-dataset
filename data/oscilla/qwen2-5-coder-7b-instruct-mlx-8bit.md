@@ -79,7 +79,7 @@ La conversión MLX no altera el rendimiento intrínseco del modelo base, pero su
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/Qwen2.5-Coder-7B-Instruct-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/Qwen2.5-Coder-7B-Instruct-mlx-8Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Página de Ollama para Qwen2.5 Coder: https://ollama.com/library/qwen2.5-coder:7b-instruct
 - Repositorio GitHub de Qwen2.5-Coder: https://github.com/huggingface/Qwen2.5-Coder

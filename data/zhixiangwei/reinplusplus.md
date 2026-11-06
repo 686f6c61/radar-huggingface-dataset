@@ -97,7 +97,7 @@ La comparación con SAM, Mask2Former o SegFormer no puede establecerse con cifra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhixiangwei/ReinPlusPlus
+- Modelo en Hugging Face: https://huggingface.co/zhixiangwei/ReinPlusPlus
 - Paper (DOI, IEEE TPAMI 2026): https://doi.org/10.1109/TPAMI.2026.3681631
 - Referencia arXiv: https://arxiv.org/abs/2508.01667
 - Código de inferencia y evaluación: https://github.com/w1oves/Rein/tree/train/projects/rein%2B%2B

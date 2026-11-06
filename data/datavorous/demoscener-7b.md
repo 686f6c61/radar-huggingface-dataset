@@ -83,7 +83,7 @@ Demoscener-7B no compite en benchmarks generales: su valor diferencial es la esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/datavorous/Demoscener-7B
+- Modelo en Hugging Face: https://huggingface.co/datavorous/Demoscener-7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/datavorous/Demoscener-Dweets-25k
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Blog del autor sobre el proyecto: https://datavorous.com/writing/demoscener

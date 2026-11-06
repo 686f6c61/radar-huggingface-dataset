@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HOPStudio/modelscope es un repositorio alojado en HuggingFace bajo el identificador `HOPStudio/modelscope`, publicado por el usuario HOPStudio el 12 de noviembre de 2024 y actualizado por última vez el 3 de noviembre de 2026. A pesar de su nombre, que sugiere una relacion con ModelScope (la plataforma de modelos de Alibaba), la model card no contiene ninguna descripcion tecnica del contenido: unicamente declara la licencia Apache 2.0. No se especifica si se trata de un modelo de lenguaje, un conjunto de pesos, un adaptador, una herramienta o cualquier otro artefacto.
+HOPStudio/modelscope es un repositorio alojado en Hugging Face bajo el identificador `HOPStudio/modelscope`, publicado por el usuario HOPStudio el 12 de noviembre de 2024 y actualizado por última vez el 3 de noviembre de 2026. A pesar de su nombre, que sugiere una relacion con ModelScope (la plataforma de modelos de Alibaba), la model card no contiene ninguna descripcion tecnica del contenido: unicamente declara la licencia Apache 2.0. No se especifica si se trata de un modelo de lenguaje, un conjunto de pesos, un adaptador, una herramienta o cualquier otro artefacto.
 
 El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos de modelo descargables en el momento de la consulta, o que estos no han sido contabilizados por la plataforma. El pipeline no esta declarado, los idiomas no estan disponibles y el contador de descargas es cero, con un unico "like". Estos indicadores apuntan a un repositorio vacio, en fase de prueba o abandonado, sin traccion en la comunidad.
 
@@ -42,7 +42,7 @@ Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion
 - Auditoria de repositorios: un equipo puede inspeccionar el repositorio para determinar si contiene pesos, scripts o configuraciones antes de considerarlo en un pipeline.
 - Verificacion de licencia: dado que la unica informacion disponible es la licencia Apache 2.0, el unico uso inmediato documentable es la comprobacion de terminos legales para una eventual redistribucion.
 - Seguimiento de repositorios en fase temprana: util para monitorizar la evolucion de un proyecto antes de que publique contenido.
-- Referencia de nomenclatura: el identificador `modelscope` puede servir para estudiar convenciones de nombrado en HuggingFace, aunque no aporta valor tecnico.
+- Referencia de nomenclatura: el identificador `modelscope` puede servir para estudiar convenciones de nombrado en Hugging Face, aunque no aporta valor tecnico.
 - Formacion: como ejemplo de repositorio con model card incompleta, puede usarse en talleres sobre buenas practicas de documentacion de modelos.
 
 En ningun caso se recomienda su uso en produccion, atencion al cliente, generacion de codigo, analisis de datos ni ninguna otra aplicacion practica mientras no se publique contenido verificable.
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HOPStudio/modelscope
+- Repositorio en Hugging Face: https://huggingface.co/HOPStudio/modelscope
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este artefacto.

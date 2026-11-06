@@ -92,8 +92,8 @@ El autor señala que el entrenamiento multi-tarea sacrificó aproximadamente 1,7
 
 | Modelo | Parametros | Contexto | Task Avg (S1MB) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PythiaFinance/8ball (v3) | 421.293.830 | no disponible | 26,70 | Apache-2.0 | HuggingFace |
-| laya-typed-decisions (base) | no disponible | no disponible | 15,00 | no disponible | HuggingFace (convaiinnovations) |
+| PythiaFinance/8ball (v3) | 421.293.830 | no disponible | 26,70 | Apache-2.0 | Hugging Face |
+| laya-typed-decisions (base) | no disponible | no disponible | 15,00 | no disponible | Hugging Face (convaiinnovations) |
 | 8ball v2 (MTL r1) | no disponible | no disponible | 23,17 | no disponible | no disponible |
 | TypeSafe Jev 1.13 | no disponible | no disponible | 59,59 | no disponible | no disponible |
 
@@ -113,7 +113,7 @@ Los dos primeros son el mismo linaje: 8ball v3 es un fine-tuning de laya-typed-d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PythiaFinance/8ball
+- Modelo en Hugging Face: https://huggingface.co/PythiaFinance/8ball
 - Modelo base: convaiinnovations/laya-typed-decisions (referenciado en la model card; URL directa no disponible en la información proporcionada)
 - Repositorio de metodología y CLI: github.com/RockmSockmJesus/8ball (referenciado en la model card)
 - Checkpoint alternativo citado en la model card: RockmSockmJesus/8ball-laya-mtl2

@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas mas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/devendradhakad/autodroid-litert-community-Qwen2.5-1.5B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/devendradhakad/autodroid-litert-community-Qwen2.5-1.5B-Instruct
 - Repositorio original de la conversion: https://huggingface.co/litert-community/Qwen2.5-1.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentacion de LiteRT: https://ai.google.dev/edge/litert

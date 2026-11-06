@@ -21,7 +21,7 @@ Este modelo es relevante porque demuestra que, en modelos pequeños, la gestión
 
 ## Arquitectura y entrenamiento
 
-La información publicada no detalla la arquitectura interna (número de capas, heads, dimensiones ocultas, etc.). El tag "llama" en HuggingFace sugiere que se basa en una arquitectura tipo Llama, pero no se confirma la versión ni los hiperparámetros. El modelo es un snapshot de pesos de un experimento de entrenamiento con GRPO, partiendo de un modelo base (`jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-top3`) que a su vez proviene de un SFT previo (v31). El experimento consistió en reiniciar el estado del optimizador Adam (sin reanudar el momentum) durante el entrenamiento con RL, lo que mejoró el seguimiento de instrucciones en danés sin degradar otras métricas. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como DPO o decodificación especulativa.
+La información publicada no detalla la arquitectura interna (número de capas, heads, dimensiones ocultas, etc.). El tag "llama" en Hugging Face sugiere que se basa en una arquitectura tipo Llama, pero no se confirma la versión ni los hiperparámetros. El modelo es un snapshot de pesos de un experimento de entrenamiento con GRPO, partiendo de un modelo base (`jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-top3`) que a su vez proviene de un SFT previo (v31). El experimento consistió en reiniciar el estado del optimizador Adam (sin reanudar el momentum) durante el entrenamiento con RL, lo que mejoró el seguimiento de instrucciones en danés sin degradar otras métricas. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como DPO o decodificación especulativa.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ El autor indica un composite de 2.183 (frente a 2.101 del paso 5500). No se prop
 
 - VRAM estimada: con 414,7 millones de parámetros, en fp16 ocuparía aproximadamente 0,83 GB, y en fp32 unos 1,66 GB. El repositorio de 1,7 GB sugiere pesos en fp32 o fp16 con overhead. Cabe en GPUs con 2 GB o más.
 - GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM (GTX 1050 Ti, RTX 2060, etc.). Para mayor velocidad, una RTX 3060 o superior es suficiente.
-- Opciones de despliegue: compatible con Transformers de HuggingFace, vLLM, llama.cpp, Ollama y TGI. Al ser un modelo pequeño, también puede ejecutarse en CPU con cuantización (aunque no se ofrecen archivos GGUF oficiales).
+- Opciones de despliegue: compatible con Transformers de Hugging Face, vLLM, llama.cpp, Ollama y TGI. Al ser un modelo pequeño, también puede ejecutarse en CPU con cuantización (aunque no se ofrecen archivos GGUF oficiales).
 - Latencia y throughput: no se han publicado mediciones. En una GPU moderna (RTX 3090), se espera una latencia de decodificación del orden de 10-20 ms por token, y un throughput de cientos de tokens por segundo en batch.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No se dispone de datos comparativos con otros modelos de tamaño similar en dan�
 
 ## Enlaces
 
-- [HuggingFace: jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-freshopt-best-step250](https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-freshopt-best-step250)
+- [Hugging Face: jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-freshopt-best-step250](https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-freshopt-best-step250)
 - [Modelo base: jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-top3](https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-top3)
 - [Modelo anterior: jensjepsen/danish-lm-400m-grpo-mixed-v1](https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed-v1)
 - [LLM Explorer (modelo similar)](https://llm-explorer.com/model/jensjepsen%2Fdanish-lm-400m-sft-v31-avg-top3,4wYOlyIs4jAKpUWJlIYCBL)

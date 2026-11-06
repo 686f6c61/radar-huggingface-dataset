@@ -6,7 +6,7 @@ Mr. DETR es un modelo de detección de objetos basado en transformers, desarroll
 
 La propuesta central trata el modelo como un marco multi-tarea que realiza simultáneamente predicciones one-to-one y one-to-many. El hallazgo empírico principal es que cualquier componente independiente del decoder (self-attention, cross-attention o feed-forward network) puede aprender ambas tareas simultáneamente, incluso compartiendo el resto de componentes. Esto conduce a un mecanismo de entrenamiento multi-ruta con una ruta primaria para predicción one-to-one y dos rutas auxiliares para one-to-many, que se eliminan durante la inferencia sin impacto en la arquitectura ni el coste de cómputo.
 
-La implementación publicada en HuggingFace corresponde a la variante con backbone ResNet-50, entrenada durante 12 épocas con 900 queries, y el repositorio pesa 15,6 GB. El modelo se distribuye bajo licencia MIT y utiliza la librería detectron2.
+La implementación publicada en Hugging Face corresponde a la variante con backbone ResNet-50, entrenada durante 12 épocas con 900 queries, y el repositorio pesa 15,6 GB. El modelo se distribuye bajo licencia MIT y utiliza la librería detectron2.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La implementación publicada en HuggingFace corresponde a la variante con backbo
 
 Mr. DETR se basa en la arquitectura DETR (Detection Transformer) estándar, compuesta por un backbone convolutional (ResNet-50 en la variante publicada) y un transformer decoder que opera sobre queries de objeto. La innovación principal reside en el mecanismo de entrenamiento multi-ruta: durante el entrenamiento, el modelo se trata como un marco multi-tarea que ejecuta simultáneamente predicciones one-to-one (la ruta primaria) y one-to-many (dos rutas auxiliares). Los autores investigaron sistemáticamente el papel de cada componente del decoder —self-attention, cross-attention y feed-forward network— en estas dos tareas, demostrando que cualquier componente puede aprender ambas de forma independiente.
 
-El entrenamiento incorpora una self-attention instructiva novedosa que guía dinámicamente las queries de objeto para la predicción one-to-many. Las rutas auxiliares se eliminan por completo durante la inferencia, de modo que la arquitectura final y el coste computacional son idénticos a un DETR estándar. El modelo se entrenó sobre el dataset COCO 2017 val, según indica el badge de Papers With Code, aunque el número exacto de épocas para todas las variantes puede variar; la versión publicada en HuggingFace corresponde a 12 épocas con 900 queries. No se especifica si se emplearon técnicas adicionales como entrenamiento con datos aumentados o estrategias de escalado.
+El entrenamiento incorpora una self-attention instructiva novedosa que guía dinámicamente las queries de objeto para la predicción one-to-many. Las rutas auxiliares se eliminan por completo durante la inferencia, de modo que la arquitectura final y el coste computacional son idénticos a un DETR estándar. El modelo se entrenó sobre el dataset COCO 2017 val, según indica el badge de Papers With Code, aunque el número exacto de épocas para todas las variantes puede variar; la versión publicada en Hugging Face corresponde a 12 épocas con 900 queries. No se especifica si se emplearon técnicas adicionales como entrenamiento con datos aumentados o estrategias de escalado.
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ La model card no publica resultados numéricos de benchmarks en la información 
 
 | Modelo | Backbone | Queries | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mr. DETR (R50, 12ep) | ResNet-50 | 900 | no aplicable | MIT | HuggingFace, GitHub |
+| Mr. DETR (R50, 12ep) | ResNet-50 | 900 | no aplicable | MIT | Hugging Face, GitHub |
 | DETR (original) | ResNet-50 | 100 | no aplicable | Apache 2.0 | GitHub oficial |
 | Deformable DETR | ResNet-50 | 300 | no aplicable | Apache 2.0 | GitHub oficial |
 | DINO | ResNet-50 | 900 | no aplicable | Apache 2.0 | GitHub oficial |
@@ -74,13 +74,13 @@ La comparativa se limita a la arquitectura base y disponibilidad, ya que no se d
 - Limitaciones de contexto: al ser un modelo de visión, no procesa texto ni mantiene contexto conversacional. Su "contexto" se limita a la resolución de imagen de entrada.
 - Restricciones de licencia: la licencia MIT permite uso comercial sin restricciones, incluida la modificación y redistribución, siempre que se mantenga el aviso de copyright.
 - Advertencias para producción: el modelo se distribuye en formato .pth de PyTorch, lo que requiere detectron2 para su uso. No se incluyen scripts de conversión a otros formatos (ONNX, TensorRT) en la información disponible. Los pesos publicados corresponden a una variante específica (R50, 12 épocas, 900 queries); otras configuraciones requieren consultar el repositorio de GitHub.
-- El repositorio de HuggingFace contiene un único archivo de pesos (MrDETR_align_r50_12ep_900q.pth), sin código de inferencia ni documentación adicional en la model card.
+- El repositorio de Hugging Face contiene un único archivo de pesos (MrDETR_align_r50_12ep_900q.pth), sin código de inferencia ni documentación adicional en la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allencbzhang/Mr.DETR
+- Modelo en Hugging Face: https://huggingface.co/allencbzhang/Mr.DETR
 - Paper en arXiv: https://arxiv.org/abs/2412.10028
-- Paper en HuggingFace: https://huggingface.co/papers/2412.10028
+- Paper en Hugging Face: https://huggingface.co/papers/2412.10028
 - Página del proyecto: https://visual-ai.github.io/mrdetr/
 - Repositorio de código: https://github.com/Visual-AI/Mr.DETR
 - Papers With Code (COCO 2017 val): https://paperswithcode.com/sota/object-detection-on-coco-2017-val?p=mr-detr-instructive-multi-route-training-for

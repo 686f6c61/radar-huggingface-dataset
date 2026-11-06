@@ -77,7 +77,7 @@ ProactiveInquirer-Qwen3-8B no compite en capacidad generalista: es un ajuste de 
 - Datos de entrenamiento no publicados: se desconoce el dataset, el numero de tokens y si hubo RLHF o DPO, lo que dificulta evaluar la robustez fuera del ejemplo incluido.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/dolev31/ProactiveInquirer-Qwen3-8B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/dolev31/ProactiveInquirer-Qwen3-8B-GGUF
 - Modelo fusionado (safetensors): https://huggingface.co/dolev31/ProactiveInquirer-Qwen3-8B-Merged
 - Adaptador y prompts: https://huggingface.co/dolev31/ProactiveInquirer-Qwen3-8B
 - Pagina del proyecto: https://dolev31.github.io/ProactiveInquirer/

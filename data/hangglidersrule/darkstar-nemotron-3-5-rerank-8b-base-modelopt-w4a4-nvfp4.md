@@ -74,8 +74,8 @@ No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información di
 
 | Modelo | Parámetros | Contexto | nDCG@10 MTEB Nano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Darkstar-Nemotron-3.5-Rerank-8B W4A4 NVFP4 (este) | 8,38B | no disponible | 0,7344 | openmdw-1.1 | HuggingFace |
-| nvidia/Nemotron-3.5-Rerank-8B-BF16 | 8,38B | no disponible | 0,7349 | openmdw-1.1 | HuggingFace |
+| Darkstar-Nemotron-3.5-Rerank-8B W4A4 NVFP4 (este) | 8,38B | no disponible | 0,7344 | openmdw-1.1 | Hugging Face |
+| nvidia/Nemotron-3.5-Rerank-8B-BF16 | 8,38B | no disponible | 0,7349 | openmdw-1.1 | Hugging Face |
 | Candidato B (MLP W4A4, atención FP8) | 8,38B | no disponible | 100,04% de BF16 | openmdw-1.1 | no publicado como checkpoint |
 | Candidato C (MLP W4A4, atención BF16) | 8,38B | no disponible | 100,06% de BF16 | openmdw-1.1 | no publicado como checkpoint |
 
@@ -94,7 +94,7 @@ Los candidatos B y C son variantes internas del mismo proceso de construcción d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3.5-Rerank-8B-Base-ModelOpt-W4A4-NVFP4
+- Hugging Face: https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3.5-Rerank-8B-Base-ModelOpt-W4A4-NVFP4
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16
 - Source card: https://github.com/HangGlidersRule/model-forge/blob/main/models/nemotron-3.5-rerank-8b/model-card/base-nvfp4.md
 - Family record: https://github.com/HangGlidersRule/model-forge/blob/main/models/nemotron-3.5-rerank-8b/README.md

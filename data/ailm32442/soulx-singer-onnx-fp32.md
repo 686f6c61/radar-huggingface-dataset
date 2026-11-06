@@ -21,7 +21,7 @@ No se dispone de información sobre el número de parámetros, la longitud de co
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX (9 grafos `.onnx`) + 7 ficheros de pesos externos `.onnx.data` |
 | Tamaño del repositorio | 2,66 GiB (2.853.872.164 bytes) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ Frente a otros sistemas SVS de la literatura (por ejemplo, enfoques basados en d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ailm32442/SoulX-Singer-onnx-fp32
+- Repositorio Hugging Face: https://huggingface.co/ailm32442/SoulX-Singer-onnx-fp32
 - Pesos upstream (GitHub): https://github.com/Soul-AILab/SoulX-Singer
 - Export ONNX (SXSEditor, build DirectML): https://github.com/qq50331623/SXSEditor
 - Origen replicado en ModelScope: https://modelscope.cn/models/syxppp/SoulX-Singer-onnx-directml

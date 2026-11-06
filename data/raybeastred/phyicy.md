@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Phyicy es un modelo publicado en HuggingFace por el usuario Raybeastred bajo el identificador `Raybeastred/Phyicy`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el unico texto presente es la declaracion de licencia `bigcode-openrail-m`. No hay descripcion del modelo, ni arquitectura declarada, ni tamano de parametros, ni datos de entrenamiento, ni ejemplos de uso.
+Phyicy es un modelo publicado en Hugging Face por el usuario Raybeastred bajo el identificador `Raybeastred/Phyicy`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el unico texto presente es la declaracion de licencia `bigcode-openrail-m`. No hay descripcion del modelo, ni arquitectura declarada, ni tamano de parametros, ni datos de entrenamiento, ni ejemplos de uso.
 
 Los metadatos publicos disponibles son minimos: cero descargas, cero likes, ningun pipeline declarado y ningun idioma listado. La fecha de creacion y de ultima actualizacion registrada es la misma (2026-10-07), lo que indica que el repositorio no ha recibido modificaciones desde su publicacion inicial y que no existe historial de versiones.
 
-Por tanto, esta ficha no puede certificar ninguna capacidad concreta del modelo. Todo lo que se detalla a continuacion procede exclusivamente de los metadatos de HuggingFace y de la licencia declarada; cualquier afirmacion sobre arquitectura, rendimiento o casos de uso queda explicitamente marcada como no verificada o no disponible. La relevancia actual del modelo es, con la informacion disponible, nula desde el punto de vista tecnico: se trata de un artefacto sin documentacion ni adopcion observable.
+Por tanto, esta ficha no puede certificar ninguna capacidad concreta del modelo. Todo lo que se detalla a continuacion procede exclusivamente de los metadatos de Hugging Face y de la licencia declarada; cualquier afirmacion sobre arquitectura, rendimiento o casos de uso queda explicitamente marcada como no verificada o no disponible. La relevancia actual del modelo es, con la informacion disponible, nula desde el punto de vista tecnico: se trata de un artefacto sin documentacion ni adopcion observable.
 
 ## Especificaciones tecnicas
 
@@ -77,6 +77,6 @@ No disponible. Al desconocerse la categoria, el tamano y las capacidades del mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Raybeastred/Phyicy
+- Repositorio en Hugging Face: https://huggingface.co/Raybeastred/Phyicy
 - Texto de la licencia BigCode OpenRAIL-M: https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en las busquedas web realizadas.

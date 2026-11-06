@@ -80,10 +80,10 @@ Dato adicional de la model card: MMLU-Pro 23,3 % para este fine-tune frente a 26
 
 | Modelo | Parametros | Contexto | Media Home LLM | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lfm3-1.7b-home-assistant | 1,7B | no disponible | 92,5 % | LFM Open v1.0 (comercial < 10 M USD) | GGUF en HuggingFace |
-| LiquidAI LFM3-VL-2B (base) | ~2B | no disponible | 67,8 % | LFM Open v1.0 | HuggingFace |
-| qwen3.5-4b | 4B | no disponible | 87,0 % | no disponible | HuggingFace |
-| gemma4-12b | 12B | no disponible | 92,1 % | no disponible | HuggingFace |
+| lfm3-1.7b-home-assistant | 1,7B | no disponible | 92,5 % | LFM Open v1.0 (comercial < 10 M USD) | GGUF en Hugging Face |
+| LiquidAI LFM3-VL-2B (base) | ~2B | no disponible | 67,8 % | LFM Open v1.0 | Hugging Face |
+| qwen3.5-4b | 4B | no disponible | 87,0 % | no disponible | Hugging Face |
+| gemma4-12b | 12B | no disponible | 92,1 % | no disponible | Hugging Face |
 
 La comparacion con modelos propietarios (gemini, gpt) no es directa porque no se distribuyen como pesos abiertos. Frente a su base, el fine-tune mejora la media de 67,8 % a 92,5 %, a costa de una perdida de conocimiento general (MMLU-Pro 23,3 % frente a 26,4 %).
 
@@ -100,7 +100,7 @@ La comparacion con modelos propietarios (gemini, gpt) no es directa porque no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Slomin/lfm3-1.7b-home-assistant
+- Modelo en Hugging Face: https://huggingface.co/Slomin/lfm3-1.7b-home-assistant
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Home LLM Leaderboard (reports): https://github.com/allenporter/home-assistant-datasets/tree/main/reports
 - Licencia LFM Open License v1.0: archivo LICENSE dentro del repositorio del modelo

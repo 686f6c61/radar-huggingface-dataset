@@ -26,7 +26,7 @@ Su relevancia práctica está en el nicho de clasificación de intenciones en pr
 | Clases / intenciones | 150 intenciones en 10 dominios, más 1.000 enunciados fuera de alcance |
 | Split de evaluación | `test`, 4.500 enunciados |
 | Librería | `ruvector` (paquete npm `@ruvector/typesafe`) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks de tipo MMLU, HumanEval o GSM8K en 
 
 | Alternativa | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ruvnet/ruvector-typesafe-clinc150` | Banco de ejemplos con cabeza reajustada | No aplica (sin pesos) | No disponible | 91,0 % accuracy en el test de CLINC150 con `bge-small-en-v1.5`; abstain AUROC 0,9011; 4 ms p50 | CC-BY-3.0 (datos), MIT (código) | HuggingFace y npm |
+| `ruvnet/ruvector-typesafe-clinc150` | Banco de ejemplos con cabeza reajustada | No aplica (sin pesos) | No disponible | 91,0 % accuracy en el test de CLINC150 con `bge-small-en-v1.5`; abstain AUROC 0,9011; 4 ms p50 | CC-BY-3.0 (datos), MIT (código) | Hugging Face y npm |
 | API Jev (sustituida por esta librería) | Servicio de decisión sobre texto | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 | Clasificadores fine-tuning de BERT sobre CLINC150 | Modelo supervisado con pesos | No disponible | No disponible | No disponible en la información proporcionada | No disponible | No disponible |
-| Otros bancos de `@ruvector/typesafe` (p. ej. banking77) | Mismo formato, distinto dataset | No aplica | No disponible | No disponible en la información proporcionada | CC-BY-3.0 / MIT | HuggingFace |
+| Otros bancos de `@ruvector/typesafe` (p. ej. banking77) | Mismo formato, distinto dataset | No aplica | No disponible | No disponible en la información proporcionada | CC-BY-3.0 / MIT | Hugging Face |
 
 La model card no incluye comparaciones numéricas contra alternativas; únicamente señala que la masa de `abstain` no tiene campo equivalente en la API Jev a la que reemplaza, lo que constituye una diferencia funcional más que de rendimiento.
 
@@ -105,10 +105,10 @@ La model card no incluye comparaciones numéricas contra alternativas; únicamen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ruvnet/ruvector-typesafe-clinc150
+- Modelo en Hugging Face: https://huggingface.co/ruvnet/ruvector-typesafe-clinc150
 - Banco de datos: https://huggingface.co/ruvnet/ruvector-typesafe-clinc150/resolve/main/bank.json
 - Fichero de preguntas: https://huggingface.co/ruvnet/ruvector-typesafe-clinc150/resolve/main/questions.json
 - Paquete npm de la librería: https://www.npmjs.com/package/@ruvector/typesafe
-- Dataset de origen en HuggingFace: https://huggingface.co/datasets/clinc/clinc_oos
+- Dataset de origen en Hugging Face: https://huggingface.co/datasets/clinc/clinc_oos
 - Referencia del dataset: Larson et al., *An Evaluation Dataset for Intent Classification and Out-of-Scope Prediction*, EMNLP 2019 (citado en la model card; la model card no incluye URL del paper)
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este modelo en los resultados de búsqueda disponibles; los resultados obtenidos tratan sobre modelos Gemini y herramientas de traducción, sin relación con este artefacto.

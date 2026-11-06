@@ -78,8 +78,8 @@ El autor no publica comparaciones con otros clasificadores especificos del AI Ac
 
 | Modelo | Parametros | Contexto | Precision de tier | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (adaptador QLoRA) | Base de aprox. 4B mas adaptador LoRA r16 | No disponible | 80,7% | Apache 2.0 | HuggingFace (Privify-Inc) |
-| Qwen3-4B zero-shot | Aprox. 4B | No disponible | 69,7% | Apache 2.0 | HuggingFace (Qwen) |
+| Este modelo (adaptador QLoRA) | Base de aprox. 4B mas adaptador LoRA r16 | No disponible | 80,7% | Apache 2.0 | Hugging Face (Privify-Inc) |
+| Qwen3-4B zero-shot | Aprox. 4B | No disponible | 69,7% | Apache 2.0 | Hugging Face (Qwen) |
 | Reglas por palabras clave | No aplica | No aplica | 59,6% | No disponible | No disponible |
 | Clase mayoritaria | No aplica | No aplica | 50,5% | No disponible | No disponible |
 
@@ -100,7 +100,7 @@ El autor no publica comparaciones con otros clasificadores especificos del AI Ac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Privify-Inc/aiact-tier-4b-v0.1
+- Modelo en Hugging Face: https://huggingface.co/Privify-Inc/aiact-tier-4b-v0.1
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Informe tecnico de Qwen3 (arXiv 2505.09388): https://arxiv.org/abs/2505.09388
 - Pagina de modelos de Privify Inc.: https://huggingface.co/Privify-Inc/models

@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-oMLX-m456-BF16-G64
+- Repositorio en Hugging Face: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-oMLX-m456-BF16-G64
 - Modelo base referenciado: OpenMOSS-Team/MOSS-TTS-v1.5 (etiqueta base_model; enlace directo no disponible en la informacion proporcionada)
 - Libreria de despliegue: mlx-audio (repositorio no disponible en la informacion proporcionada)
 - Papers, blogs, repos o demos adicionales: no disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo.

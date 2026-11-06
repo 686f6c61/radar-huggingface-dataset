@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CataNET-Meridian-v1.0-Small es un modelo de vision por computador especializado en la deteccion de keypoints sobre tableros del juego de mesa Catan. Lo publica el usuario nithinmanoj10 en HuggingFace y se apoya en Ultralytics YOLO26 en su variante small como modelo base, del que deriva una version exportada y cuantizada en formato ONNX. Su proposito es leer el estado de un tablero fisico de Catan a partir de una imagen y devolver la posicion de los elementos relevantes (piezas, vertices, aristas o marcadores) mediante keypoints, lo que lo convierte en la pieza de percepcion de un sistema mayor de digitalizacion o asistencia al juego.
+CataNET-Meridian-v1.0-Small es un modelo de vision por computador especializado en la deteccion de keypoints sobre tableros del juego de mesa Catan. Lo publica el usuario nithinmanoj10 en Hugging Face y se apoya en Ultralytics YOLO26 en su variante small como modelo base, del que deriva una version exportada y cuantizada en formato ONNX. Su proposito es leer el estado de un tablero fisico de Catan a partir de una imagen y devolver la posicion de los elementos relevantes (piezas, vertices, aristas o marcadores) mediante keypoints, lo que lo convierte en la pieza de percepcion de un sistema mayor de digitalizacion o asistencia al juego.
 
 El modelo es deliberadamente pequeno: el repositorio completo ocupa 0,1 GB, lo que sugiere un modelo de la clase YOLO-small con un numero de parametros contenido, adecuado para inferencia en tiempo real. Sin embargo, la model card publicada no incluye el numero de parametros, la resolucion de entrada, el numero de keypoints ni las metricas de validacion, por lo que varios datos tecnicos clave no estan disponibles y deben verificarse directamente con el propietario del repositorio.
 
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nithinmanoj10/CataNET-Meridian-v1.0-Small
+- Modelo en Hugging Face: https://huggingface.co/nithinmanoj10/CataNET-Meridian-v1.0-Small
 - Modelo base declarado: https://huggingface.co/Ultralytics/YOLO26
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a dominios no relacionados con el proyecto (paginas del grupo energetico aleman EAM), por lo que se descartan.

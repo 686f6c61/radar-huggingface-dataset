@@ -33,7 +33,7 @@ La innovacion tecnica no reside en la arquitectura sino en el procedimiento de e
 - Modelado de lenguaje y evaluacion de perplexity: util como referencia para medir el efecto de la exclusion sobre el corpus.
 - Razonamiento y conocimiento factual derivados del preentrenamiento sobre Wikipedia: no se ha verificado ni cuantificado en la informacion disponible.
 - Tool calling / function calling: no soportado (modelo base sin ajuste por instrucciones).
-- Agentes y razonamiento multi-paso: no soportado (no hay ajuste conversacional, aunque la etiqueta `conversational` aparece en HuggingFace).
+- Agentes y razonamiento multi-paso: no soportado (no hay ajuste conversacional, aunque la etiqueta `conversational` aparece en Hugging Face).
 - Capacidades multilingues: limitadas al ingles.
 - Capacidad especial: referencia experimental de exclusion de concepto a tiempo de entrenamiento para estudios de borrado de conceptos.
 
@@ -79,7 +79,7 @@ La comparacion directa en rendimiento no es posible porque no se han publicado b
 
 ## Limitaciones y advertencias
 
-- No es un modelo de instrucciones: no sigue directrices ni mantiene conversaciones de forma fiable, pese a la etiqueta `conversational` en HuggingFace.
+- No es un modelo de instrucciones: no sigue directrices ni mantiene conversaciones de forma fiable, pese a la etiqueta `conversational` en Hugging Face.
 - La exclusion de concepto no garantiza ausencia de conocimiento: el texto no enmascarado puede contener informacion relacionada con Baseball, y la model card lo reconoce explicitamente.
 - Alcance experimental muy limitado: el paper prueba tres conceptos con 50 preguntas objetivo retenidas por concepto, lo que no permite generalizar a otros conceptos, ni a seguridad, ni a eliminacion amplia de conocimiento.
 - Sesgos y errores heredados de Wikipedia: al derivar de material enciclopedico, el modelo puede reproducir inexactitudes y sesgos presentes en el corpus.
@@ -90,6 +90,6 @@ La comparacion directa en rendimiento no es posible porque no se han publicado b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-nobaseball-2e-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-nobaseball-2e-b131k
 - Gemelo de control pareado: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Paper citado: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (sin enlace disponible en la informacion proporcionada).

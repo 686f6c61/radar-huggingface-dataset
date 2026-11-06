@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B (esta version AWQ-INT4) | 4,1B | no disponible | Apache 2.0 | HuggingFace (cyankiwi) | Orientado a on-device y agentes; thinking budget configurable |
+| Spark-X2.6-4B (esta version AWQ-INT4) | 4,1B | no disponible | Apache 2.0 | Hugging Face (cyankiwi) | Orientado a on-device y agentes; thinking budget configurable |
 | Qwen3.5-4B | no disponible | no disponible | no disponible | no disponible | Referencia de eficiencia citada por el autor |
 | Gemma-E4B | no disponible | no disponible | no disponible | no disponible | Referencia de eficiencia citada por el autor |
 
@@ -84,11 +84,11 @@ Los datos de los modelos comparables no estan detallados en la informacion propo
 
 ## Enlaces
 
-- HuggingFace (esta version): https://huggingface.co/cyankiwi/Spark-X2.6-4B-AWQ-INT4
+- Hugging Face (esta version): https://huggingface.co/cyankiwi/Spark-X2.6-4B-AWQ-INT4
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Dataset de calibracion: https://huggingface.co/datasets/cyankiwi/calibration
 - Website cyankiwi: https://cyan.kiwi/
-- Perfil HuggingFace cyankiwi: https://huggingface.co/cyankiwi
+- Perfil Hugging Face cyankiwi: https://huggingface.co/cyankiwi
 - ModelScope cyankiwi: https://www.modelscope.ai/organization/cyankiwi
 - X (Twitter): https://x.com/cyankiwi_ai y https://x.com/sparkllm
 - Reddit: https://www.reddit.com/r/cyankiwi/

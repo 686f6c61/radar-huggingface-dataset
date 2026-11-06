@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SMAI A4 Q1: IOC-NN on CIFAR-10 es un modelo neuronal de tipo perceptron multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10, publicado por el usuario rohday en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo generativo: es un clasificador de imagenes de 10 clases con una arquitectura muy reducida de tres capas (3072 entradas, 128 unidades ocultas y 10 salidas). El modelo se enmarca en el contexto de un trabajo academico o de asignatura (la nomenclatura "SMAI A4" sugiere "Statistical Methods in AI, Assignment 4"), y su interes es fundamentalmente didactico.
+SMAI A4 Q1: IOC-NN on CIFAR-10 es un modelo neuronal de tipo perceptron multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10, publicado por el usuario rohday en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo generativo: es un clasificador de imagenes de 10 clases con una arquitectura muy reducida de tres capas (3072 entradas, 128 unidades ocultas y 10 salidas). El modelo se enmarca en el contexto de un trabajo academico o de asignatura (la nomenclatura "SMAI A4" sugiere "Statistical Methods in AI, Assignment 4"), y su interes es fundamentalmente didactico.
 
 El modelo resuelve la tarea de clasificacion de imagenes de CIFAR-10 alcanzando una precision de test de 0,4797 (47,97 %), un resultado modesto pero coherente con una red de una sola capa oculta entrenada con SGD plano durante 100 epocas. La innovacion tecnica declarada es una restriccion sobre los pesos negativos de las capas a partir de la segunda, que se sustituyen por la funcion exponencial exp(w - 5) tras cada paso de optimizacion.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / entrada | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SMAI A4 Q1 IOC-NN | 394.634 | Imagen 32x32x3 | 47,97 % | no disponible | HuggingFace (repo vacio, 0,0 GB) |
+| SMAI A4 Q1 IOC-NN | 394.634 | Imagen 32x32x3 | 47,97 % | no disponible | Hugging Face (repo vacio, 0,0 GB) |
 | MLP estandar CIFAR-10 (referencia tipica) | ~400.000 | Imagen 32x32x3 | ~50-55 % (tipico) | variable | Multiples implementaciones publicas |
 | LeNet-5 (CNN clasica) | ~60.000 | Imagen 32x32x3 | ~70 % (tipico) | variable | Multiples implementaciones publicas |
 | ResNet-18 (CNN profunda) | ~11 millones | Imagen 32x32x3 | ~93-95 % (tipico) | variable | torchvision, timm |
@@ -87,5 +87,5 @@ Los valores de referencia de modelos comparables son aproximados y no proceden d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rohday/smai-a4-ioc-nn
+- Hugging Face: https://huggingface.co/rohday/smai-a4-ioc-nn
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

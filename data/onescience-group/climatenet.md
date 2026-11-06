@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OneScience-Group/ClimateNet | Segmentación semántica de eventos extremos | DeepLabv3+ | no disponible | no aplica | Apache 2.0 | HuggingFace, sin pesos incluidos |
+| OneScience-Group/ClimateNet | Segmentación semántica de eventos extremos | DeepLabv3+ | no disponible | no aplica | Apache 2.0 | Hugging Face, sin pesos incluidos |
 | ClimateNet oficial (LBNL, UC Berkeley, ETH Zurich, NVIDIA, NCAR) | Segmentación semántica de eventos extremos | DeepLabv3+ | no disponible | no aplica | CC BY 4.0 (paper); modelos, código y datos con sus propios términos | Portal de NERSC |
 | U-Net (implementación genérica de segmentación) | Segmentación semántica | Encoder-decoder con skip connections | no disponible | no aplica | según implementación | Amplia disponibilidad en librerías de visión |
 
@@ -98,7 +98,7 @@ La model card no ofrece métricas ni comparaciones cuantitativas frente a altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OneScience-Group/ClimateNet
+- Repositorio en Hugging Face: https://huggingface.co/OneScience-Group/ClimateNet
 - Paper original (GMD, 2021): https://doi.org/10.5194/gmd-14-107-2021
 - Modelos y datos oficiales del proyecto ClimateNet: https://portal.nersc.gov/project/ClimateNet/
 - No se han encontrado enlaces adicionales relevantes en los resultados de búsqueda web proporcionados (los resultados recibidos corresponden a servicios de correo y no guardan relación con el modelo).

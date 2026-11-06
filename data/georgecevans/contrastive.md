@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`georgecevans/contrastive` es una implementación experimental de la arquitectura **MobileViT** orientada al aprendizaje **contrastivo**, publicada por el usuario `georgecevans` en HuggingFace. Según su model card, se trata de un repositorio centrado en "código transparente y smoke tests repetibles", donde las afirmaciones de rendimiento se omiten deliberadamente. El modelo usa una configuración etiquetada como *large* (escala declarada en la config), con atención dispersa, fusión mediante cross attention, activación ReLU y normalización ScaleNorm.
+`georgecevans/contrastive` es una implementación experimental de la arquitectura **MobileViT** orientada al aprendizaje **contrastivo**, publicada por el usuario `georgecevans` en Hugging Face. Según su model card, se trata de un repositorio centrado en "código transparente y smoke tests repetibles", donde las afirmaciones de rendimiento se omiten deliberadamente. El modelo usa una configuración etiquetada como *large* (escala declarada en la config), con atención dispersa, fusión mediante cross attention, activación ReLU y normalización ScaleNorm.
 
 El dato más relevante es su tamaño real: el checkpoint `model.safetensors` contiene **49.600 parámetros**. Se trata, por tanto, de un checkpoint de **inicialización** válido para pruebas de humo, no de un modelo entrenado. El propio autor indica explícitamente que no está entrenado ni auditado para robustez, equidad o transferencia de dominio, y que no se presenta como un checkpoint con benchmarks.
 
@@ -20,7 +20,7 @@ Es relevante ahora como material de partida para quien quiera reproducir, audita
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
-Detalles adicionales declarados en la model card: atención **sparse**, fusión por **cross attention**, activación **ReLU**, normalización **ScaleNorm**. Receta de entrenamiento por defecto: optimizador **LAMB** con planificador **step**. Tamaño del repositorio: 0,0 GB (según HuggingFace). Fecha de creación y última actualización: 2026-09-26.
+Detalles adicionales declarados en la model card: atención **sparse**, fusión por **cross attention**, activación **ReLU**, normalización **ScaleNorm**. Receta de entrenamiento por defecto: optimizador **LAMB** con planificador **step**. Tamaño del repositorio: 0,0 GB (según Hugging Face). Fecha de creación y última actualización: 2026-09-26.
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ No se dispone de datos de benchmark de este modelo, por lo que la comparación s
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `georgecevans/contrastive` | MobileViT + objetivos contrastivos | 49.600 (checkpoint de inicializacion) | no disponible | MIT | HuggingFace (repo de 0,0 GB; checkpoint no entrenado) |
+| `georgecevans/contrastive` | MobileViT + objetivos contrastivos | 49.600 (checkpoint de inicializacion) | no disponible | MIT | Hugging Face (repo de 0,0 GB; checkpoint no entrenado) |
 | MobileViT (trabajo original de referencia) | Hibrida CNN-transformer para vision | no disponible en la informacion | no aplica | no disponible en la informacion | Publicacion y repositorio externos |
 | MobileViTv2 (referencia arquitectonica) | Hibrida CNN-transformer con atencion separable | no disponible en la informacion | no aplica | no disponible en la informacion | Publicacion externa |
 
@@ -89,6 +89,6 @@ No se pueden establecer comparaciones de rendimiento porque ninguno de los compa
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/georgecevans/contrastive
+- Página del modelo en Hugging Face: https://huggingface.co/georgecevans/contrastive
 - Referencia arquitectónica MobileViT (publicación original, enlace externo no incluido en la información proporcionada; se cita únicamente como contexto de la familia de modelos): no disponible en la búsqueda.
 - Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

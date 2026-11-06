@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ampixa/nepali-rvc-voices-v1
+- Modelo en Hugging Face: https://huggingface.co/ampixa/nepali-rvc-voices-v1
 - Aplicación de navegador (TTS y voz-a-voz): https://huggingface.co/spaces/voidash/nepali-rvc-tts
 - Dataset de entrenamiento: https://huggingface.co/datasets/ai4bharat/indicvoices_r
 - Repositorio de Applio: https://github.com/IAHispano/Applio

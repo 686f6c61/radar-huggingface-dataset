@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Haminations es un repositorio publicado en HuggingFace por el usuario EmanuelGames bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card descriptiva (el README se limita a la cabecera YAML con la licencia), no declara pipeline de inferencia, no especifica idiomas soportados y no cuenta con descargas ni valoraciones. El tamano del repositorio es de aproximadamente 0,1 GB.
+Haminations es un repositorio publicado en Hugging Face por el usuario EmanuelGames bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card descriptiva (el README se limita a la cabecera YAML con la licencia), no declara pipeline de inferencia, no especifica idiomas soportados y no cuenta con descargas ni valoraciones. El tamano del repositorio es de aproximadamente 0,1 GB.
 
 No es posible determinar que tipo de modelo contiene el repositorio, ni su arquitectura, numero de parametros, longitud de contexto o procedimiento de entrenamiento, ya que no se ha publicado informacion tecnica al respecto. Tampoco se dispone de resultados de benchmarks ni de documentacion adicional en la model card.
 
@@ -79,6 +79,6 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EmanuelGames/Haminations
+- Hugging Face: https://huggingface.co/EmanuelGames/Haminations
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los unicos resultados devueltos corresponden a contenidos sin relacion con el repositorio.

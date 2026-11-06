@@ -89,7 +89,7 @@ La comparativa se basa en informacion publica; no se dispone de benchmarks compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EInnovator/pra-qwen3-8b-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/EInnovator/pra-qwen3-8b-mlx-4bit
 - Perfil del autor: https://huggingface.co/EInnovator
 - Bundle similar para Qwen3-4B: https://huggingface.co/EInnovator/pra-qwen3-4b-mlx-4bit
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

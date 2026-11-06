@@ -111,7 +111,7 @@ La diferencia funcional más clara frente a esos encoders árabes genéricos es 
 
 ## Enlaces
 
-- Página HuggingFace del modelo: https://huggingface.co/algerian-nlp/DZAIR-ONNX
+- Página Hugging Face del modelo: https://huggingface.co/algerian-nlp/DZAIR-ONNX
 - Modelo base: https://huggingface.co/algerian-nlp/DZAIR
 - Repositorio de Optimum (herramienta de conversión y ejecución): https://github.com/huggingface/optimum
 - Documentación de ONNX Runtime: https://onnxruntime.ai/docs/

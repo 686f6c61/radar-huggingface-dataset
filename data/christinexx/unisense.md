@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unisense es un repositorio de modelo publicado en HuggingFace por el usuario Christinexx bajo el identificador `Christinexx/Unisense`. La model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y ningun otro contenido: no se documentan arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades. El pipeline declarado en los metadatos de HuggingFace figura como no disponible, y los idiomas soportados tampoco estan indicados.
+Unisense es un repositorio de modelo publicado en Hugging Face por el usuario Christinexx bajo el identificador `Christinexx/Unisense`. La model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y ningun otro contenido: no se documentan arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades. El pipeline declarado en los metadatos de Hugging Face figura como no disponible, y los idiomas soportados tampoco estan indicados.
 
 En el momento de la consulta el repositorio registra 0 descargas y 0 likes, con fecha de creacion y de ultima actualizacion identicas (2026-10-14), lo que indica que no ha habido actividad posterior a la publicacion inicial. No existe, por tanto, evidencia publica de uso, evaluacion o validacion por parte de terceros.
 
@@ -68,6 +68,6 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Christinexx/Unisense
+- Hugging Face: https://huggingface.co/Christinexx/Unisense
 - Resultados de busqueda web relevantes para el modelo: ninguno. Los enlaces recuperados (portales de videojuegos Esprit Games y un articulo de geoquimica que cita sensores Unisense) no guardan relacion con este repositorio.
 - Paper, blog, repositorio de codigo o demo: no disponible.

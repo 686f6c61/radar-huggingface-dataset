@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax H3 es un sistema generativo omni-modal desarrollado por MiniMax (la empresa detrás de Hailuo AI) que unifica la comprensión de contextos multimodales compuestos por texto, imagen, vídeo y audio, y genera vídeo con audio estéreo nativo a resoluciones de hasta 2K y duraciones de 4 a 15 segundos. El repositorio publicado en HuggingFace bajo el identificador `gongchengyun/MiniMax-H3` distribuye los pesos en formato safetensors con un tamaño total de 353,9 GB y está etiquetado con la librería `minimax-h3` y el pipeline `image-text-to-video`.
+MiniMax H3 es un sistema generativo omni-modal desarrollado por MiniMax (la empresa detrás de Hailuo AI) que unifica la comprensión de contextos multimodales compuestos por texto, imagen, vídeo y audio, y genera vídeo con audio estéreo nativo a resoluciones de hasta 2K y duraciones de 4 a 15 segundos. El repositorio publicado en Hugging Face bajo el identificador `gongchengyun/MiniMax-H3` distribuye los pesos en formato safetensors con un tamaño total de 353,9 GB y está etiquetado con la librería `minimax-h3` y el pipeline `image-text-to-video`.
 
 El sistema no es un modelo único, sino una arquitectura modular de tres componentes: H3-Context-IR (que interpreta y refina las instrucciones multimodales de entrada y las convierte en una representación intermedia), H3-Base (que genera vídeo y audio sincronizados a 768p) y H3-Regenerate-2K (que re-genera la salida a 2K reutilizando el contexto original). Esta separación permite escalar la resolución sin reentrenar el generador base y mejora la fidelidad de los detalles en la salida final.
 
@@ -85,8 +85,8 @@ No se dispone en la información proporcionada de datos comparables de otros mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gongchengyun/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio en Hugging Face: https://huggingface.co/gongchengyun/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - Skills para mejora de prompts: https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills

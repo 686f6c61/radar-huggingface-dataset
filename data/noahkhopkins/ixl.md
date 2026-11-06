@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `noahkhopkins/ixl` es un repositorio publicado en HuggingFace por el usuario noahkhopkins. En el momento de redactar esta ficha, la informacion publica disponible es minima: unicamente se conocen el identificador del repositorio, el autor, la licencia declarada (MIT), la region de publicacion (us) y las fechas de creacion y actualizacion (ambas 2026-09-10). No se ha publicado pipeline asociado, idiomas soportados, tamano de parametros ni arquitectura.
+El modelo identificado como `noahkhopkins/ixl` es un repositorio publicado en Hugging Face por el usuario noahkhopkins. En el momento de redactar esta ficha, la informacion publica disponible es minima: unicamente se conocen el identificador del repositorio, el autor, la licencia declarada (MIT), la region de publicacion (us) y las fechas de creacion y actualizacion (ambas 2026-09-10). No se ha publicado pipeline asociado, idiomas soportados, tamano de parametros ni arquitectura.
 
 La model card del repositorio no contiene mas contenido que la declaracion de licencia (`license: mit`). No hay descripcion del modelo, ni detalles de entrenamiento, ni ejemplos de uso, ni resultados de evaluacion. Tampoco se ha encontrado documentacion externa, paper o publicacion tecnica asociada al identificador `ixl` de este autor en los resultados de busqueda web consultados, que devolvieron exclusivamente paginas genericas de buscadores sin relacion con el modelo.
 
@@ -57,7 +57,7 @@ No disponible. La informacion publicada no permite identificar la categoria del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/noahkhopkins/ixl
+- Repositorio en Hugging Face: https://huggingface.co/noahkhopkins/ixl
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

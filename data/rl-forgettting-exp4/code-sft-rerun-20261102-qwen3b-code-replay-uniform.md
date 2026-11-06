@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3b-code-replay-uniform | 3B | 4096 (entrenamiento) | other (Qwen Research License) | HuggingFace, 0 descargas | Checkpoint de investigación con manifiestos de entrega |
+| code-sft-rerun-20261102-qwen3b-code-replay-uniform | 3B | 4096 (entrenamiento) | other (Qwen Research License) | Hugging Face, 0 descargas | Checkpoint de investigación con manifiestos de entrega |
 | Qwen2.5-3B (base) | 3B | No disponible en esta ficha | Qwen Research License | Ampliamente disponible | Modelo upstream del que deriva este ajuste |
 | Qwen3-1.7B-Base | 1,7B | No disponible en esta ficha | Apache 2.0 | Ampliamente disponible | Otro base usado en la misma campaña de experimentos |
 | Llama-3.2-3B-Instruct | 3B | No disponible en esta ficha | Llama 3.2 Community License | Ampliamente disponible | Tercer base de la campaña; variantes uniform/hard/CE |
@@ -81,7 +81,7 @@ La comparación de rendimiento con estas alternativas no puede establecerse porq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3b-code-replay-uniform
+- Hugging Face: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3b-code-replay-uniform
 - Repositorio de artefactos y manifiestos: referenciado como `delivery_manifest.json` dentro del propio repo (no se proporciona URL externa)
 - Evaluaciones: `evaluations/mbppplus_n160_t0.6/delivery_manifest.json` dentro del repo
 - Procedencia de la petición: `request-provenance.json` dentro del repo

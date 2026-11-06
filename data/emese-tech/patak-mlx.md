@@ -72,7 +72,7 @@ No se dispone de comparativas publicadas con modelos similares. El modelo es una
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emese-tech/patak-mlx
+- Hugging Face: https://huggingface.co/emese-tech/patak-mlx
 - Página del proyecto: https://emese.tech/patak
-- Organización en HuggingFace: https://huggingface.co/emese-tech
+- Organización en Hugging Face: https://huggingface.co/emese-tech
 - Modelo base: https://huggingface.co/utter-project/EuroLLM-9B

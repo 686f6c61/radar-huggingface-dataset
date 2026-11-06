@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una coleccion de cuantizaciones en formato GGUF del modelo base `xtools-at/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic`, publicadas por el usuario mradermacher, conocido en HuggingFace por generar quants de modelos de terceros mediante herramientas como llama.cpp. No se trata de un modelo entrenado desde cero, sino de una distribucion de pesos comprimidos en multiples niveles de cuantizacion (desde IQ1_S hasta Q6_K) pensada para ejecucion en CPU o GPU con recursos limitados.
+Este repositorio contiene una coleccion de cuantizaciones en formato GGUF del modelo base `xtools-at/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic`, publicadas por el usuario mradermacher, conocido en Hugging Face por generar quants de modelos de terceros mediante herramientas como llama.cpp. No se trata de un modelo entrenado desde cero, sino de una distribucion de pesos comprimidos en multiples niveles de cuantizacion (desde IQ1_S hasta Q6_K) pensada para ejecucion en CPU o GPU con recursos limitados.
 
 El nombre sugiere un modelo derivado de la familia Qwen (posiblemente una variante de 27B, aunque la cifra de parametros reportada en los metadatos de safetensors es de 6.789.424, lo que resulta inconsistente con el nombre y probablemente refleje un error de metadatos o un tensor aislado). El sufijo "CodeForge-3xMerge" indica una fusion de tres modelos orientados a codigo, y "UNCENSORED-heretic" senala que se ha aplicado un proceso de ablacion o fine-tuning para reducir los rechazos y filtros de seguridad del modelo original.
 
@@ -81,6 +81,6 @@ La comparativa es orientativa: no se dispone de datos verificados de rendimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic-i1-GGUF
 - Modelo base referenciado: https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge-UNCENSORED-heretic
 - Herramienta de cuantizacion (llama.cpp): https://github.com/ggerganov/llama.cpp

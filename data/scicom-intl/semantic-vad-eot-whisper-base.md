@@ -95,7 +95,7 @@ El modelo base ofrece un AUC superior al tiny (0,88 vs 0,84) a costa de aproxima
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-base
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-base
 - Variante tiny: https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-tiny
 - Dataset de evaluacion: https://huggingface.co/datasets/Scicom-intl/semantic-vad-eot
 - Repositorio del harness de benchmark: https://github.com/livekit/eot-bench

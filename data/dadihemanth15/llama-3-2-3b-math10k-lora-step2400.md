@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-MATH10K-LoRA-Step2400 | 3B + LoRA r128 | no disponible (entreno a 2.048) | Adaptador matematico sobre Llama 3.2 3B | llama3.2 | HuggingFace, requiere base con acceso restringido |
-| meta-llama/Llama-3.2-3B (base) | 3B | 128K segun ficha oficial de Llama 3.2 | Modelo generalista | llama3.2 | HuggingFace, acceso restringido |
-| Srihari-hgf/llama_3.2_3b_math_dataset (adaptador original) | 3B + LoRA r128 | no disponible | Mismo entrenamiento, sin seleccion de checkpoint revisada | llama3.2 | HuggingFace |
-| Modelos matematicos de 7B (por ejemplo, variantes fine-tuned de Mistral o Qwen) | 7B | variable | Fine-tuning matematico | variable | HuggingFace |
+| Llama-3.2-3B-MATH10K-LoRA-Step2400 | 3B + LoRA r128 | no disponible (entreno a 2.048) | Adaptador matematico sobre Llama 3.2 3B | llama3.2 | Hugging Face, requiere base con acceso restringido |
+| meta-llama/Llama-3.2-3B (base) | 3B | 128K segun ficha oficial de Llama 3.2 | Modelo generalista | llama3.2 | Hugging Face, acceso restringido |
+| Srihari-hgf/llama_3.2_3b_math_dataset (adaptador original) | 3B + LoRA r128 | no disponible | Mismo entrenamiento, sin seleccion de checkpoint revisada | llama3.2 | Hugging Face |
+| Modelos matematicos de 7B (por ejemplo, variantes fine-tuned de Mistral o Qwen) | 7B | variable | Fine-tuning matematico | variable | Hugging Face |
 
 La comparativa con alternativas de mayor tamano no puede establecerse con datos de rendimiento porque no se han publicado benchmarks para este adaptador. La diferencia principal frente al adaptador original es la revision de seleccion de checkpoint sobre 229 preguntas depuradas, no el entrenamiento.
 
@@ -80,13 +80,13 @@ La comparativa con alternativas de mayor tamano no puede establecerse con datos 
 - Sesgos conocidos: no documentados especificamente; hereda los sesgos del modelo base Llama 3.2 3B.
 - Limitaciones de contexto e idioma: no documentadas; el entrenamiento uso secuencias de 2.048 tokens, lo que puede limitar el rendimiento en contextos mas largos aunque el base los soporte.
 - Licencia llama3.2: el uso comercial esta sujeto a la politica de uso aceptable de Llama 3.2 y a los terminos de la licencia; es necesario revisar LICENSE.txt y NOTICE del repositorio.
-- Requiere acceso al modelo base con gating en HuggingFace; el repositorio no incluye los pesos del base.
+- Requiere acceso al modelo base con gating en Hugging Face; el repositorio no incluye los pesos del base.
 - El adaptador esta pensado para inferencia (is_trainable=False en el ejemplo); su uso para entrenamiento adicional requiere configuracion explicita.
 - No se han publicado mediciones de latencia, throughput ni evaluaciones multilingues.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dadihemanth15/Llama-3.2-3B-MATH10K-LoRA-Step2400
+- Repositorio Hugging Face: https://huggingface.co/dadihemanth15/Llama-3.2-3B-MATH10K-LoRA-Step2400
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Adaptador original: https://huggingface.co/Srihari-hgf/llama_3.2_3b_math_dataset
 - Politica de uso aceptable de Llama 3.2: https://www.llama.com/llama3_2/use-policy

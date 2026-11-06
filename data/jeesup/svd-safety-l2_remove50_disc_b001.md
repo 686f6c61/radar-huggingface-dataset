@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_remove50_disc_b001 es un checkpoint de investigacion publicado por el usuario Jeesup en HuggingFace, derivado de meta-llama/Llama-2-7b-chat-hf. No es un asistente conversacional de proposito general: es un artefacto experimental. El autor ha comprimido el modelo original con SVD-LLM hasta el 50,09 % de los parametros densos (49,91 % de parametros eliminados) y despues ha restaurado el 0,1 % de los componentes SVD mediante la regla de seleccion denominada `disc`, con semilla 42 y 679 componentes restaurados (0 componentes sustituidos).
+svd-safety-l2_remove50_disc_b001 es un checkpoint de investigacion publicado por el usuario Jeesup en Hugging Face, derivado de meta-llama/Llama-2-7b-chat-hf. No es un asistente conversacional de proposito general: es un artefacto experimental. El autor ha comprimido el modelo original con SVD-LLM hasta el 50,09 % de los parametros densos (49,91 % de parametros eliminados) y despues ha restaurado el 0,1 % de los componentes SVD mediante la regla de seleccion denominada `disc`, con semilla 42 y 679 componentes restaurados (0 componentes sustituidos).
 
 El objetivo declarado del trabajo es medir como la compresion SVD degrada el comportamiento de seguridad del modelo y que regla de seleccion de componentes repara mejor ese dano. Este checkpoint es una celda concreta de una rejilla de reglas y presupuestos, y el propio autor advierte que varias ramas de la rejilla estan deliberadamente degradadas en seguridad respecto a Llama-2-7b-chat: la compresion por si sola eleva la tasa de exito de ataque, y el proposito del estudio es cuantificarlo y probar la recuperacion.
 
@@ -82,8 +82,8 @@ No se han publicado en la informacion disponible resultados de benchmarks de con
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_disc_b001 | 6.738.415.616 en safetensors; 0,5009 de fraccion densa declarada | 4096 | Llama 2 Community License | AdvBench ASR 0,2385; StrongREJECT ASR 0,1981; rechazo excesivo 0,2640 | Pesos safetensors en HuggingFace |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B (modelo denso de referencia) | 4096 | Llama 2 Community License | no disponible en la informacion proporcionada para comparacion directa | Pesos oficiales en HuggingFace |
+| svd-safety-l2_remove50_disc_b001 | 6.738.415.616 en safetensors; 0,5009 de fraccion densa declarada | 4096 | Llama 2 Community License | AdvBench ASR 0,2385; StrongREJECT ASR 0,1981; rechazo excesivo 0,2640 | Pesos safetensors en Hugging Face |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B (modelo denso de referencia) | 4096 | Llama 2 Community License | no disponible en la informacion proporcionada para comparacion directa | Pesos oficiales en Hugging Face |
 | Otras celdas de la rejilla del mismo estudio (otras reglas de seleccion y presupuestos) | no disponible | 4096 | Llama 2 Community License | no disponible | Mismo autor, no detalladas en la informacion proporcionada |
 
 La comparacion cuantitativa con alternativas de la misma categoria (por ejemplo, otros checkpoints comprimidos de Llama-2-7b o modelos de 7-8 B de otros fabricantes) no esta disponible: no se han proporcionado mediciones homogeneas con HarmBench ni con WildGuard para esos modelos. Cualquier conclusion requiere evaluar el modelo base sin comprimir con el mismo pipeline de medida.
@@ -104,7 +104,7 @@ La comparacion cuantitativa con alternativas de la misma categoria (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_disc_b001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_disc_b001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 y politica de uso: LICENSE.txt y USE_POLICY.md incluidos en el propio repositorio del modelo
 - Enlaces adicionales (papers, blogs, repos, demos): no disponible. La busqueda web realizada no devolvio resultados relevantes para este modelo; los resultados obtenidos corresponden a repositorios de terceros sin relacion con el checkpoint.

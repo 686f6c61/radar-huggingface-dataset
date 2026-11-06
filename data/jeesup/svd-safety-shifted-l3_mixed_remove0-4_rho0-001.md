@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo numérico en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.4_rho0.001
+- Repositorio Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.4_rho0.001
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license/
 - Ficheros de evaluación y código fuente: referenciados por el autor bajo `experiment/` y `compression.json` dentro del propio repositorio (no se proporcionan URLs externas adicionales en la información disponible).

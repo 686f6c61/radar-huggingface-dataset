@@ -6,7 +6,7 @@
 
 Este modelo es una conversión al formato de cuantización FP8 (E5M2) del modelo Hunyuan3D-2.1, desarrollado originalmente por Tencent. Hunyuan3D-2.1 es un modelo de generación de activos 3D de alta fidelidad a partir de imágenes 2D, presentado como "la primera generación de activos 3D lista para producción" en el ecosistema open source. La conversión FP8 reduce el peso del modelo y los requisitos de memoria en comparación con la versión original, manteniendo el formato de pesos en safetensors y la compatibilidad con la librería diffusers de PyTorch.
 
-El repositorio de HuggingFace contiene un único archivo de pesos, `hunyuan_3d_v2.1-fp8-e5m2.safetensors`, de 3.7 GB. El proceso de conversión ha transformado los 1601 tensores del modelo original a FP8, sin omitir ningún tensor. Al cargar los pesos con PyTorch (versión 2.1 o superior), los tensores FP8 se convierten automáticamente a float32 para su uso en computación, lo que simplifica la integración en pipelines existentes.
+El repositorio de Hugging Face contiene un único archivo de pesos, `hunyuan_3d_v2.1-fp8-e5m2.safetensors`, de 3.7 GB. El proceso de conversión ha transformado los 1601 tensores del modelo original a FP8, sin omitir ningún tensor. Al cargar los pesos con PyTorch (versión 2.1 o superior), los tensores FP8 se convierten automáticamente a float32 para su uso en computación, lo que simplifica la integración en pipelines existentes.
 
 La relevancia de este modelo radica en que ofrece una vía de acceso más ligera al modelo Hunyuan3D-2.1, que es capaz de generar modelos 3D con materiales PBR y texturas a partir de una sola imagen. La cuantización FP8 permite desplegar el modelo en entornos con menos memoria, aunque se debe tener en cuenta que se trata de una conversión realizada por un usuario externo, no por el equipo de Tencent.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Formato | Tamaño aprox. | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Hunyuan3D-2.1 original | safetensors (FP32/FP16) | No disponible | No disponible | Repositorio oficial de Tencent |
-| Hunyuan3D-2.1 FP8 (este modelo) | safetensors (FP8 E5M2) | 3.7 GB | No disponible | HuggingFace codemichaeld |
+| Hunyuan3D-2.1 FP8 (este modelo) | safetensors (FP8 E5M2) | 3.7 GB | No disponible | Hugging Face codemichaeld |
 
 No se dispone de información sobre otros modelos de generación 3D comparables en la misma categoría.
 
@@ -73,13 +73,13 @@ No se dispone de información sobre otros modelos de generación 3D comparables 
 
 - Pérdida de precisión: la cuantización FP8 puede introducir una ligera degradación en la calidad de los resultados en comparación con los pesos originales en FP32 o FP16.
 - Conversión no oficial: este repositorio es una conversión realizada por un usuario externo (codemichaeld), no una publicación del equipo de Tencent. Puede haber diferencias de rendimiento o compatibilidad con respecto al modelo original.
-- Licencia no especificada: la información de HuggingFace no indica la licencia. Se debe verificar la licencia del modelo original antes de cualquier uso comercial.
+- Licencia no especificada: la información de Hugging Face no indica la licencia. Se debe verificar la licencia del modelo original antes de cualquier uso comercial.
 - Riesgo de artefactos: como cualquier modelo de generación 3D, puede producir geometrías incorrectas o artefactos si la imagen de entrada es ambigua o de baja calidad.
 - No aplican sesgos lingüísticos ni alucinaciones de texto, al ser un modelo de generación 3D y no un modelo de lenguaje.
 - Requiere PyTorch 2.1 o superior para la carga de tensores FP8.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/codemichaeld/hunyuan_3d_v2_1_fp8
+- Hugging Face: https://huggingface.co/codemichaeld/hunyuan_3d_v2_1_fp8
 - Repositorio oficial Hunyuan3D-2.1: https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1
 - Repositorio Hunyuan3D-2: https://github.com/Tencent-Hunyuan/Hunyuan3D-2

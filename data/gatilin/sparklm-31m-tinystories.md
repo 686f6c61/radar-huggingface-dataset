@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SparkLM-31M-TinyStories es un modelo de lenguaje causal pequeño, de aproximadamente 31 millones de parámetros, desarrollado por el usuario gatilin y publicado bajo licencia MIT. Está entrenado sobre el conjunto de datos TinyStories, un corpus sintético de cuentos infantiles generado con GPT-3.5 y GPT-4, diseñado para investigar la emergencia de capacidades lingüísticas en modelos pequeños. El checkpoint se distribuye como un directorio compatible con HuggingFace Transformers mediante código remoto (`trust_remote_code=True`), lo que permite cargarlo con `AutoModelForCausalLM`.
+SparkLM-31M-TinyStories es un modelo de lenguaje causal pequeño, de aproximadamente 31 millones de parámetros, desarrollado por el usuario gatilin y publicado bajo licencia MIT. Está entrenado sobre el conjunto de datos TinyStories, un corpus sintético de cuentos infantiles generado con GPT-3.5 y GPT-4, diseñado para investigar la emergencia de capacidades lingüísticas en modelos pequeños. El checkpoint se distribuye como un directorio compatible con Hugging Face Transformers mediante código remoto (`trust_remote_code=True`), lo que permite cargarlo con `AutoModelForCausalLM`.
 
 La relevancia de este modelo radica en su tamaño reducido y su arquitectura con atención latente multi-cabezal (MLA), una técnica que reduce el uso de memoria en la atención. Está pensado para reproducibilidad, pruebas de carga y experimentos ligeros de generación de texto, no como asistente alineado. El contexto de entrenamiento no se especifica en la documentación disponible, aunque por el tamaño y el dataset es presumiblemente corto. La pérdida reportada en el paso 199 es de 1,92, pero no se ofrecen métricas de evaluación adicionales.
 
@@ -28,7 +28,7 @@ El entrenamiento se realizó sobre el dataset TinyStories, un corpus de cuentos 
 ## Capacidades
 
 - Generación de texto causal en inglés, con especialización en cuentos infantiles y narrativa corta.
-- Reproducibilidad: el checkpoint está diseñado para pruebas de carga, smoke tests y verificación de pipelines de exportación a HuggingFace.
+- Reproducibilidad: el checkpoint está diseñado para pruebas de carga, smoke tests y verificación de pipelines de exportación a Hugging Face.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no, solo inglés.
@@ -70,7 +70,7 @@ No hay datos suficientes para una comparativa cuantitativa con otros modelos. Ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gatilin/sparklm-31m-tinystories
+- Modelo en Hugging Face: https://huggingface.co/gatilin/sparklm-31m-tinystories
 - Otra variante del mismo autor: https://huggingface.co/gatilin/sparklm-31m-v260624
 - Repositorio con variantes adicionales: https://huggingface.co/gatilin/sparklm-31m-all-v270707/tree/main
 - Artículo sobre TinyStories (Medium): https://cobusgreyling.medium.com/tinystories-4ce620e569a4

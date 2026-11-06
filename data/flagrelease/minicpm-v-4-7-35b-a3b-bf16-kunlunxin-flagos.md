@@ -95,7 +95,7 @@ No se dispone de datos detallados (contexto, licencia, benchmarks completos) de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-kunlunxin-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-kunlunxin-FlagOS
 - AnythingLLM: https://anythingllm.com/
 - Repositorio de pesos vía ModelScope: `modelscope download --model FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-kunlunxin-FlagOS`
 - Imagen Docker FlagOS: `harbor.baai.ac.cn/flagrelease-public/minicpm-v47-35b-kunlunxin001-gems5.4.0-treenone-cx0.13.0-plugin0.3.0-vllm0.24.0-sglangnone-sglangflnone-cp310-pt29-xrt513-x64-5.0.21.47:202610121041`

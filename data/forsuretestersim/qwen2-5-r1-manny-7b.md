@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ForSureTesterSim/Qwen2.5-R1-Manny-7B es un modelo de lenguaje publicado en HuggingFace por el usuario ForSureTesterSim. Según la información disponible, se trata de una variante de la serie Qwen2.5 con 7 mil millones de parámetros, y el nombre sugiere una posible combinación con la metodología de razonamiento R1 (similar a DeepSeek-R1). Sin embargo, la model card es prácticamente vacía: no incluye descripción, arquitectura detallada, datos de entrenamiento ni benchmarks.
+El modelo ForSureTesterSim/Qwen2.5-R1-Manny-7B es un modelo de lenguaje publicado en Hugging Face por el usuario ForSureTesterSim. Según la información disponible, se trata de una variante de la serie Qwen2.5 con 7 mil millones de parámetros, y el nombre sugiere una posible combinación con la metodología de razonamiento R1 (similar a DeepSeek-R1). Sin embargo, la model card es prácticamente vacía: no incluye descripción, arquitectura detallada, datos de entrenamiento ni benchmarks.
 
 La relevancia de este modelo reside en su licencia Apache 2.0, que permite uso comercial sin restricciones significativas, y en su base Qwen2.5, que es una familia de modelos bien documentada y de alto rendimiento. No obstante, la ausencia total de documentación técnica por parte del autor limita gravemente su utilidad práctica para desarrolladores e investigadores. Este modelo no tiene descargas ni likes, lo que sugiere que es un experimento reciente o una prueba no validada.
 

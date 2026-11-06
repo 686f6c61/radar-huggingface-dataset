@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-q25_controlled_mlp` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 (Alfred Smith) el 23 de octubre de 2026. Se distribuye en formato safetensors con 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) y un repositorio de 3,1 GB, lo que es coherente con pesos en FP16/BF16. El único indicio sobre su arquitectura es el tag `qwen2` del repositorio, que apunta a un transformer decoder-only de la familia Qwen2; el autor no publica model card accesible ni documentación adicional.
+`alfred8995/r17-bk-pf-q25_controlled_mlp` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 (Alfred Smith) el 23 de octubre de 2026. Se distribuye en formato safetensors con 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) y un repositorio de 3,1 GB, lo que es coherente con pesos en FP16/BF16. El único indicio sobre su arquitectura es el tag `qwen2` del repositorio, que apunta a un transformer decoder-only de la familia Qwen2; el autor no publica model card accesible ni documentación adicional.
 
-El modelo no declara pipeline, idiomas soportados ni resultados de evaluación, y el repositorio está sujeto a acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe evidencia pública de uso ni validación por parte de terceros.
+El modelo no declara pipeline, idiomas soportados ni resultados de evaluación, y el repositorio está sujeto a acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe evidencia pública de uso ni validación por parte de terceros.
 
 Su relevancia actual es limitada y de carácter experimental: el nombre del repositorio sugiere una variante o ablación sobre una MLP "controlada" dentro de un pipeline de entrenamiento o merging, pero esta interpretación no está confirmada por el autor. Cualquier evaluación práctica debería tratarse como la de un checkpoint sin documentar, no como la de un modelo listo para producción.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion / benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| alfred8995/r17-bk-pf-q25_controlled_mlp | 1,54 B | no disponible | `other` (gated) | No disponible | HuggingFace, acceso restringido |
-| Qwen2-1.5B-Instruct | 1,54 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Model card y benchmarks publicados | HuggingFace, acceso abierto |
-| Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Model card y benchmarks publicados | HuggingFace, acceso con aceptacion de licencia |
-| Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | Model card y benchmarks publicados | HuggingFace, acceso con aceptacion de licencia |
+| alfred8995/r17-bk-pf-q25_controlled_mlp | 1,54 B | no disponible | `other` (gated) | No disponible | Hugging Face, acceso restringido |
+| Qwen2-1.5B-Instruct | 1,54 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Model card y benchmarks publicados | Hugging Face, acceso abierto |
+| Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Model card y benchmarks publicados | Hugging Face, acceso con aceptacion de licencia |
+| Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | Model card y benchmarks publicados | Hugging Face, acceso con aceptacion de licencia |
 
 La comparativa se basa en caracteristicas publicas de los modelos alternativos; para este checkpoint no existe informacion equivalente de contexto, licencia o rendimiento, por lo que la comparacion cuantitativa de calidad no es posible.
 
@@ -88,13 +88,13 @@ La comparativa se basa en caracteristicas publicas de los modelos alternativos; 
 - Riesgo de alucinacion no cuantificado: sin evaluaciones de fidelidad, el modelo debe tratarse como no verificado en tareas factuales.
 - Contexto maximo desconocido: planificar cualquier integracion asumiendo un limite conservador y validarlo empiricamente con el tokenizer del repositorio.
 - Cobertura idiomatica desconocida: no se declara ninguna lengua; el rendimiento en castellano no esta garantizado.
-- Licencia `other` con acceso gated: los terminos concretos no estan disponibles en la informacion proporcionada, por lo que el uso comercial es incierto y requiere revisar las condiciones aceptadas en HuggingFace antes de cualquier despliegue.
+- Licencia `other` con acceso gated: los terminos concretos no estan disponibles en la informacion proporcionada, por lo que el uso comercial es incierto y requiere revisar las condiciones aceptadas en Hugging Face antes de cualquier despliegue.
 - Trazabilidad insuficiente: 0 descargas y 0 likes implican ausencia de validacion por terceros; no existen reportes de calidad, seguridad ni estabilidad.
 - Riesgo de seguridad: sin informacion sobre filtrado, alineamiento o evaluaciones de seguridad, no es apto para exposicion directa a usuarios finales sin capas adicionales de moderacion.
 - Nombre del repositorio no interpretable con certeza (`controlled_mlp`): no debe asumirse ninguna propiedad tecnica derivada del mismo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-q25_controlled_mlp
-- Perfil del autor en HuggingFace: https://huggingface.co/alfred8995
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-q25_controlled_mlp
+- Perfil del autor en Hugging Face: https://huggingface.co/alfred8995
 - Paper, blog, repositorio de codigo o demo: no disponibles; la busqueda web no devolvio resultados relacionados con este modelo.

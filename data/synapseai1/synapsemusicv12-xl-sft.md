@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SynapseMusicV12-XL-SFT es un modelo de generacion de musica a partir de texto (text-to-audio) publicado por el usuario SYNAPSEai1 en HuggingFace. Por su model card, se corresponde con la variante **XL (4B) SFT** de la familia ACE-Step 1.5, un proyecto co-liderado por ACE Studio y StepFun. El repositorio pesa 20 GB y contiene pesos en safetensors con 4.987.310.726 parametros reales, lo que en la practica lo situa en torno a 5B de parametros (~18,8 GB en bf16), ligeramente por encima del "~4B" que declara la propia model card.
+SynapseMusicV12-XL-SFT es un modelo de generacion de musica a partir de texto (text-to-audio) publicado por el usuario SYNAPSEai1 en Hugging Face. Por su model card, se corresponde con la variante **XL (4B) SFT** de la familia ACE-Step 1.5, un proyecto co-liderado por ACE Studio y StepFun. El repositorio pesa 20 GB y contiene pesos en safetensors con 4.987.310.726 parametros reales, lo que en la practica lo situa en torno a 5B de parametros (~18,8 GB en bf16), ligeramente por encima del "~4B" que declara la propia model card.
 
 El modelo resuelve la generacion de audio musical completo a partir de una descripcion textual, empleando un decoder DiT (Diffusion Transformer) de 32 capas con hidden_size 2560 y 32 cabezas de atencion, acompanado de un encoder de 8 capas y hidden_size 2048. La variante SFT prioriza calidad de audio sobre diversidad y soporta Classifier-Free Guidance (CFG), lo que permite controlar finamente el grado de adherencia al prompt mediante la escala de guia, a costa de 50 pasos de inferencia.
 
@@ -100,10 +100,10 @@ Alternativas externas de la misma categoria (generacion de musica texto-a-audio 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/SYNAPSEai1/SynapseMusicV12-XL-SFT
+- Hugging Face (este repositorio): https://huggingface.co/SYNAPSEai1/SynapseMusicV12-XL-SFT
 - Repositorio oficial ACE-Step 1.5: https://github.com/ace-step/ACE-Step-1.5
 - Pagina de proyecto ACE-Step 1.5: https://ace-step.github.io/ace-step-v1.5.github.io/
-- Coleccion ACE-Step 1.5 en HuggingFace: https://huggingface.co/collections/ACE-Step/ace-step-15
+- Coleccion ACE-Step 1.5 en Hugging Face: https://huggingface.co/collections/ACE-Step/ace-step-15
 - Coleccion ACE-Step 1.5 en ModelScope: https://modelscope.cn/collections/ACE-Step/Ace-Step-15-xl
 - Demo en Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
 - Discord del proyecto: https://discord.gg/PeWDxrkdj7

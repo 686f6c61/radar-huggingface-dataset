@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gpt2-turkish-dutch-routed | 113.273.088 | no disponible | no disponible | HuggingFace |
-| gpt2-turkish-dutch-first | no disponible | no disponible | no disponible | HuggingFace |
-| gpt2-turkish-dutch-synsem | no disponible | no disponible | no disponible | HuggingFace |
+| gpt2-turkish-dutch-routed | 113.273.088 | no disponible | no disponible | Hugging Face |
+| gpt2-turkish-dutch-first | no disponible | no disponible | no disponible | Hugging Face |
+| gpt2-turkish-dutch-synsem | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de información suficiente sobre los modelos comparables para completar la tabla con datos de rendimiento o especificaciones adicionales.
 

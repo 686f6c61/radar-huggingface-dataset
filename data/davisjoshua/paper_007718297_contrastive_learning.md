@@ -51,7 +51,7 @@ No se puede comparar con modelos de IA porque no es un modelo. Como documento ac
 
 | Documento | Tipo | Contenido | Disponibilidad |
 |---|---|---|---|
-| paper_007718297_contrastive_learning (este repositorio) | Paper sin resultados | Descripción general del contrastive learning | Apache 2.0, HuggingFace |
+| paper_007718297_contrastive_learning (este repositorio) | Paper sin resultados | Descripción general del contrastive learning | Apache 2.0, Hugging Face |
 | Visualizing and Understanding Contrastive Learning (arXiv 2206.09753) | Paper con experimentos | Visualización y análisis de mecanismos internos | arXiv, acceso abierto |
 | A comprehensive survey on contrastive learning (ScienceDirect) | Encuesta | Revisión sistemática de métodos y aplicaciones | Acceso a través de ScienceDirect |
 
@@ -64,7 +64,7 @@ No se puede comparar con modelos de IA porque no es un modelo. Como documento ac
 - **Alcance limitado**: el paper no cubre aplicaciones concretas ni implementaciones, por lo que no es adecuado para decisiones de producción.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/davisjoshua/paper_007718297_contrastive_learning
+- Repositorio en Hugging Face: https://huggingface.co/davisjoshua/paper_007718297_contrastive_learning
 - Artículo relacionado en arXiv: https://arxiv.org/html/2206.09753v3
 - Encuesta sobre contrastive learning en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Teoría de solapamiento de aumentaciones en arXiv: https://arxiv.org/abs/2511.03114

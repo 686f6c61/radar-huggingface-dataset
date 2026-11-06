@@ -4,7 +4,7 @@
 
 M2SVid es un modelo de conversion de video monocular a estereoscopico (2D a 3D) desarrollado por Google Research. Su funcion principal es generar el video derecho (vista derecha) a partir del video izquierdo, utilizando un proceso de inpainting y refinamiento de las regiones disoclusas que aparecen al reproyectar la profundidad. El modelo extiende Stable Video Diffusion (SVD) para aceptar como condicion el video izquierdo, el video derecho deformado por warping y las mascaras de disoclusion, produciendo un video derecho de alta calidad sin artefactos.
 
-La version alojada en HuggingFace, `model-m2svid/M2SVID-Int8-FP8`, es una cuantizacion mixta Int8/FP8 del modelo original, con un tamano de repositorio de 7,9 GB (frente a los 8,5 GB del modelo completo). Esta cuantizacion reduce los requisitos de memoria y acelera la inferencia, manteniendo una calidad visual cercana a la del modelo original. El modelo se publica bajo licencia Apache 2.0, lo que permite uso comercial y modificacion.
+La version alojada en Hugging Face, `model-m2svid/M2SVID-Int8-FP8`, es una cuantizacion mixta Int8/FP8 del modelo original, con un tamano de repositorio de 7,9 GB (frente a los 8,5 GB del modelo completo). Esta cuantizacion reduce los requisitos de memoria y acelera la inferencia, manteniendo una calidad visual cercana a la del modelo original. El modelo se publica bajo licencia Apache 2.0, lo que permite uso comercial y modificacion.
 
 La relevancia actual de M2SVid radica en su aplicacion directa a la generacion de contenido estereoscopico para realidad virtual, cine 3D y produccion de video, donde la conversion automatica de video 2D a 3D sigue siendo un reto tecnico importante. Su arquitectura basada en difusion y su enfoque de inpainting end-to-end lo diferencian de metodos anteriores que dependian de pasos de postprocesado separados.
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-m2svid/M2SVID-Int8-FP8
+- Repositorio Hugging Face: https://huggingface.co/model-m2svid/M2SVID-Int8-FP8
 - Codigo oficial (GitHub): https://github.com/google-research/m2svid
 - Pagina del proyecto: https://m2svid.github.io/
 - Paper en arXiv (HTML): https://arxiv.org/html/2505.16565v2

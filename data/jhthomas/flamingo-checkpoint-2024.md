@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jhthomas/flamingo-checkpoint-2024` es un repositorio de HuggingFace publicado por el usuario jhthomas que contiene una implementación reducida de la arquitectura Flamingo orientada a tareas de recuperación (retrieval) multimodal, distribuida bajo licencia MIT. No es un modelo entrenado: el propio autor lo describe como un punto de partida reproducible y el archivo `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas de humo, no como un checkpoint con resultados de benchmarks.
+`jhthomas/flamingo-checkpoint-2024` es un repositorio de Hugging Face publicado por el usuario jhthomas que contiene una implementación reducida de la arquitectura Flamingo orientada a tareas de recuperación (retrieval) multimodal, distribuida bajo licencia MIT. No es un modelo entrenado: el propio autor lo describe como un punto de partida reproducible y el archivo `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas de humo, no como un checkpoint con resultados de benchmarks.
 
 El modelo registra 16.576 parámetros según los metadatos de safetensors, lo que lo sitúa en una escala experimental muy alejada de los Flamingo originales (decenas de miles de millones de parámetros). El repositorio ocupa 0,0 GB y no acumula descargas ni likes en el momento de redactar esta ficha. La arquitectura declarada combina atención con grouped query attention (GQA), fusión bilinear, activación ReLU y normalización LayerNorm.
 
@@ -48,7 +48,7 @@ No hay evidencia de entrenamiento: el autor indica que el checkpoint es de inici
 - Pruebas de humo de pipelines de carga: el checkpoint permite verificar que el cargador de safetensors, la tokenización y el preprocesado de imágenes funcionan de extremo a extremo con 16,6 K parámetros y sin coste de GPU.
 - Baseline de capacidad controlada en investigación de retrieval: útil como referencia de "capacidad mínima" frente a la que medir la ganancia de modelos mayores bajo el mismo número de semillas y el mismo presupuesto de ajuste.
 - Desarrollo de harness de evaluación: el `eval.py` incluido y la recomendación de evaluar en Flickr30k con tres semillas sirven para construir y depurar el código de evaluación antes de conectar modelos reales.
-- Pruebas de integración y CI: al ocupar 0,0 GB, se puede incluir en tests automáticos de repositorios que consuman modelos de HuggingFace sin penalizar tiempos de build ni almacenamiento.
+- Pruebas de integración y CI: al ocupar 0,0 GB, se puede incluir en tests automáticos de repositorios que consuman modelos de Hugging Face sin penalizar tiempos de build ni almacenamiento.
 - Docencia y divulgación: permite mostrar en un taller la estructura de un Flamingo (atención cruzada, GQA, fusión bilinear) con un modelo que se inspecciona y ejecuta en CPU en segundos.
 - Validación de infraestructura de despliegue: sirve para probar contenedores, variables de entorno y rutas de montaje de pesos antes de sustituir el checkpoint por uno entrenado; no debe usarse como servicio real.
 - Ablaciones de receta de entrenamiento: los valores por defecto de SGD con schedule coseno permiten ensayar configuraciones y comparar curvas sin incurrir en costes de cómputo significativos.
@@ -71,10 +71,10 @@ Los valores de los modelos de referencia provienen de documentación pública ge
 
 | Modelo | Parámetros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jhthomas/flamingo-checkpoint-2024 | 16.576 | No disponible | Checkpoint de inicialización, sin entrenar | MIT | HuggingFace (0 descargas) |
+| jhthomas/flamingo-checkpoint-2024 | 16.576 | No disponible | Checkpoint de inicialización, sin entrenar | MIT | Hugging Face (0 descargas) |
 | Flamingo (DeepMind) | ~80 B (aprox.) | No disponible | Entrenado, solo publicación científica | No comercial | No publicado como pesos abiertos |
-| OpenFlamingo | Variantes de ~3 B y ~9 B | No disponible | Entrenado, benchmarks publicados por sus autores | MIT (código) con términos por modelo base | Pesos abiertos en HuggingFace |
-| IDEFICS | ~80 B | No disponible | Entrenado, benchmarks publicados por sus autores | No comercial (según versión) | Pesos abiertos en HuggingFace |
+| OpenFlamingo | Variantes de ~3 B y ~9 B | No disponible | Entrenado, benchmarks publicados por sus autores | MIT (código) con términos por modelo base | Pesos abiertos en Hugging Face |
+| IDEFICS | ~80 B | No disponible | Entrenado, benchmarks publicados por sus autores | No comercial (según versión) | Pesos abiertos en Hugging Face |
 
 La comparación relevante no es de rendimiento, sino de función: este repositorio es un andamio de código con un checkpoint de inicialización, mientras que las alternativas son modelos entrenados con evaluación publicada.
 
@@ -91,5 +91,5 @@ La comparación relevante no es de rendimiento, sino de función: este repositor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jhthomas/flamingo-checkpoint-2024
+- Hugging Face: https://huggingface.co/jhthomas/flamingo-checkpoint-2024
 - No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información proporcionada.

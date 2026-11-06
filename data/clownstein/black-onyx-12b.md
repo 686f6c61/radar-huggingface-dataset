@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Black-Onyx-12B es un modelo de lenguaje de gran tamaño desarrollado por el usuario Clownstein, concebido como un ajuste fino (fine-tune) del modelo base `google/gemma-4-12B-it` de Google. Su propósito declarado es especializarse en ciberseguridad, con énfasis en generación de código seguro, inteligencia de amenazas (threat intelligence) y detección de vulnerabilidades. El modelo se distribuye con acceso restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo.
+Black-Onyx-12B es un modelo de lenguaje de gran tamaño desarrollado por el usuario Clownstein, concebido como un ajuste fino (fine-tune) del modelo base `google/gemma-4-12B-it` de Google. Su propósito declarado es especializarse en ciberseguridad, con énfasis en generación de código seguro, inteligencia de amenazas (threat intelligence) y detección de vulnerabilidades. El modelo se distribuye con acceso restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo.
 
 Con aproximadamente 11,96 mil millones de parámetros, se sitúa en la gama de modelos de 12B, un tamaño que permite su ejecución en hardware de consumo con cuantización adecuada. Aunque no se han publicado detalles técnicos completos sobre su arquitectura interna o su proceso de entrenamiento, su base Gemma 4 sugiere una arquitectura transformer estándar con atención de múltiples cabezas. La relevancia actual del modelo radica en la creciente demanda de herramientas de IA especializadas en seguridad ofensiva y defensiva, donde la capacidad de analizar código, identificar fallos y generar parches seguros es crítica.
 
@@ -63,7 +63,7 @@ No se dispone de datos comparativos fiables. Existen otros modelos de cibersegur
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace. Esto puede limitar su uso en entornos corporativos que necesiten revisar la licencia.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face. Esto puede limitar su uso en entornos corporativos que necesiten revisar la licencia.
 - Licencia Gemma: la licencia de Google para modelos Gemma impone restricciones de uso comercial y requiere cumplir sus términos. Es necesario revisar la licencia específica antes de cualquier despliegue en producción.
 - Sesgos y alucinaciones: al ser un fine-tune sobre un modelo base, puede heredar sesgos de los datos de entrenamiento originales y del corpus de seguridad utilizado. Existe riesgo de alucinación en recomendaciones de seguridad, lo que podría llevar a falsos positivos o negativos en análisis.
 - Falta de documentación: no se han publicado detalles sobre el conjunto de datos de fine-tune, el proceso de entrenamiento ni las métricas de evaluación, lo que dificulta evaluar su fiabilidad.
@@ -72,6 +72,6 @@ No se dispone de datos comparativos fiables. Existen otros modelos de cibersegur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Clownstein/Black-Onyx-12B
+- Modelo en Hugging Face: https://huggingface.co/Clownstein/Black-Onyx-12B
 - Repositorio GitHub del proyecto Black-Onyx: https://github.com/Clownstein/Black-Onyx
 - Documentación de API del proyecto (GitHub): https://github.com/Clownstein/Black-Onyx/blob/main/docs/API.md

@@ -80,10 +80,10 @@ Los datos de las alternativas proceden de su documentación pública y se incluy
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este ajuste (base Mistral-7B-v0.3) | 7,25 B | no disponible (base: 32 768) | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks ni documentación del ajuste |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32 768 | Apache 2.0 | HuggingFace, amplia adopción | Function calling, tokenizador v3 |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131 072 | Licencia comunitaria de Llama 3.1 | HuggingFace (acceso restringido) | Contexto muy superior, licencia con cláusulas de escala |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 32 768 nativos (131 072 con YaRN) | Apache 2.0 | HuggingFace | Multilingüe declarado, amplio soporte de cuantizaciones |
+| Este ajuste (base Mistral-7B-v0.3) | 7,25 B | no disponible (base: 32 768) | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks ni documentación del ajuste |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32 768 | Apache 2.0 | Hugging Face, amplia adopción | Function calling, tokenizador v3 |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131 072 | Licencia comunitaria de Llama 3.1 | Hugging Face (acceso restringido) | Contexto muy superior, licencia con cláusulas de escala |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 32 768 nativos (131 072 con YaRN) | Apache 2.0 | Hugging Face | Multilingüe declarado, amplio soporte de cuantizaciones |
 
 La diferencia práctica más relevante no es de tamaño, sino de trazabilidad: los tres modelos alternativos publican evaluaciones y documentación de entrenamiento, mientras que este repositorio no permite comparar calidad ni reproducir el ajuste.
 
@@ -102,7 +102,7 @@ La diferencia práctica más relevante no es de tamaño, sino de trazabilidad: l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-6c619df2-fd6d-4d6e-b3b6-a599cb3b7080
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-6c619df2-fd6d-4d6e-b3b6-a599cb3b7080
 - Modelo base declarado: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo descrito en la model card copiada: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Herramienta de inferencia recomendada en la card (mistral-inference): https://github.com/mistralai/mistral-inference

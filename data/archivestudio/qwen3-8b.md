@@ -85,7 +85,7 @@ Las afirmaciones de superioridad frente a QwQ-32B y Qwen2.5-Instruct provienen d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-8B
+- Repositorio Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-8B
 - Modelo oficial de referencia: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

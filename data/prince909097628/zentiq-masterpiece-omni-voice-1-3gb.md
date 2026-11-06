@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zentiq Masterpiece Omni-Voice 1.3GB es un modelo publicado en HuggingFace por el usuario Prince909097628 el 16 de octubre de 2026, con licencia Apache 2.0 y distribuido en formato GGUF. Segun su model card, se trata de un unico binario ("Single AI Fusion") que combina dos componentes: un "cerebro" de fisiologia y ensenanza de 1,27 GB cuantizado a 1,58 bits y un motor de voz emotiva de 50 MB en 8 bits, lo que da un artefacto total de aproximadamente 1,3 GB.
+Zentiq Masterpiece Omni-Voice 1.3GB es un modelo publicado en Hugging Face por el usuario Prince909097628 el 16 de octubre de 2026, con licencia Apache 2.0 y distribuido en formato GGUF. Segun su model card, se trata de un unico binario ("Single AI Fusion") que combina dos componentes: un "cerebro" de fisiologia y ensenanza de 1,27 GB cuantizado a 1,58 bits y un motor de voz emotiva de 50 MB en 8 bits, lo que da un artefacto total de aproximadamente 1,3 GB.
 
 Las etiquetas del repositorio (bitnet, 1.58-bit, bitnet_b158_fused_physiology_voice, physiology, pedagogy, zentiq-masterpiece) apuntan a una implementacion basada en la arquitectura BitNet b1.58, en la que los pesos se restringen a valores ternarios. Este enfoque es relevante porque permite ejecutar inferencia muy eficiente en energia y en memoria, incluso sobre CPU, algo que encaja con el tamano reducido del artefacto.
 
@@ -23,7 +23,7 @@ Ahora bien, el repositorio no incluye paper, informe tecnico, ficha de datos de 
 | Tamano del artefacto | 1,3 GB aproximados (1,27 GB nucleo + 50 MB motor de voz) |
 | Desarrollador | Prince909097628 |
 | Fecha de publicacion | 16 de octubre de 2026 |
-| Adopcion en HuggingFace | 0 descargas, 0 "me gusta" |
+| Adopcion en Hugging Face | 0 descargas, 0 "me gusta" |
 
 ## Arquitectura y entrenamiento
 
@@ -92,5 +92,5 @@ No se ha identificado en la informacion proporcionada ningun modelo directamente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Prince909097628/Zentiq-Masterpiece-Omni-Voice-1.3GB
+- Hugging Face: https://huggingface.co/Prince909097628/Zentiq-Masterpiece-Omni-Voice-1.3GB
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-DSpark-fast-2026-10-27 no es un modelo de lenguaje de uso general, sino un *drafter* (borrador) de decodificacion especulativa publicado por el usuario chimcis en HuggingFace. Su funcion es acelerar la inferencia del modelo GLM-5.3 de Z.ai actuando como modelo pequeno auxiliar que propone bloques de tokens que el modelo principal verifica posteriormente. Esta disenado especificamente para integrarse con vLLM mediante el metodo de especulacion "dspark" y tiene como modelo objetivo GLM-5.3 cuantizado en NVFP4.
+GLM-5.3-DSpark-fast-2026-10-27 no es un modelo de lenguaje de uso general, sino un *drafter* (borrador) de decodificacion especulativa publicado por el usuario chimcis en Hugging Face. Su funcion es acelerar la inferencia del modelo GLM-5.3 de Z.ai actuando como modelo pequeno auxiliar que propone bloques de tokens que el modelo principal verifica posteriormente. Esta disenado especificamente para integrarse con vLLM mediante el metodo de especulacion "dspark" y tiene como modelo objetivo GLM-5.3 cuantizado en NVFP4.
 
 Con aproximadamente 2.344 millones de parametros (2.344.316.673 segun los metadatos de safetensors) y un peso de repositorio de 4,7 GB, el drafter es lo bastante ligero para anadir una sobrecarga minima al despliegue del modelo objetivo. Su relevancia radica en que la decodificacion especulativa es una de las tecnicas mas efectivas para reducir la latencia de inferencia en produccion sin degradar la calidad de salida, y este modelo reporta una mejora de aproximadamente el 8% en la longitud media aceptada por paso de verificacion frente a un drafter DFlash2 comparable.
 
@@ -74,9 +74,9 @@ vllm serve <GLM-5.3 checkpoint> \
 
 | Modelo | Tipo | Parametros | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chimcis/GLM-5.3-DSpark-fast-2026-10-27 | Drafter DSpark para GLM-5.3 | ~2,34 B | Especulacion de bloques condicionada a hidden states | other | HuggingFace (61 descargas) |
+| chimcis/GLM-5.3-DSpark-fast-2026-10-27 | Drafter DSpark para GLM-5.3 | ~2,34 B | Especulacion de bloques condicionada a hidden states | other | Hugging Face (61 descargas) |
 | Drafter DFlash2 (referencia del autor) | Drafter para GLM-5.3 | no disponible | Especulacion de bloques | no disponible | no disponible |
-| Drafters EAGLE-3 genericos | Drafter especulativo | ~0,3-1 B tipicamente | Especulacion sobre capa intermedia del objetivo | variable | Ampliamente disponibles en HuggingFace |
+| Drafters EAGLE-3 genericos | Drafter especulativo | ~0,3-1 B tipicamente | Especulacion sobre capa intermedia del objetivo | variable | Ampliamente disponibles en Hugging Face |
 
 La comparativa cuantitativa es limitada: el unico dato publicado es la mejora del ~8% en longitud media aceptada frente a DFlash2. No hay comparaciones publicadas frente a EAGLE, Medusa ni otros drafters.
 
@@ -93,6 +93,6 @@ La comparativa cuantitativa es limitada: el unico dato publicado es la mejora de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chimcis/GLM-5.3-DSpark-fast-2026-10-27
+- Repositorio en Hugging Face: https://huggingface.co/chimcis/GLM-5.3-DSpark-fast-2026-10-27
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - No se han encontrado enlaces a papers, demos ni repositorios adicionales en la informacion disponible.

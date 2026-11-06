@@ -78,8 +78,8 @@ La principal diferencia frente a las alternativas es que este checkpoint esta es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gagan1985/chatterbox-multilingual-hi-mlx-fp16
-- Modelo base en HuggingFace: https://huggingface.co/ResembleAI/Chatterbox-Multilingual-hi
+- Repositorio Hugging Face: https://huggingface.co/gagan1985/chatterbox-multilingual-hi-mlx-fp16
+- Modelo base en Hugging Face: https://huggingface.co/ResembleAI/Chatterbox-Multilingual-hi
 - Repositorio base Chatterbox: https://huggingface.co/ResembleAI/chatterbox
 - GitHub de Chatterbox Multilingual: https://github.com/resemble-ai/chatterbox-multilingual
 - GitHub de Chatterbox (modelo base): https://github.com/resemble-ai/chatterbox

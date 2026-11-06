@@ -89,6 +89,6 @@ La comparativa se limita a los tres modelos evaluados por el autor con los mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgdo/photo-query-tagger
+- Modelo en Hugging Face: https://huggingface.co/jgdo/photo-query-tagger
 - Modelo base: https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384
 - Natural Earth (datos de lugares): https://www.naturalearthdata.com

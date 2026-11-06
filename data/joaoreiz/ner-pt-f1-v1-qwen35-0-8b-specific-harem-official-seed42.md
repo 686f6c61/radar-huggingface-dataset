@@ -82,7 +82,7 @@ No se dispone de comparativas con otros modelos NER en portugués (como XLM-R o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-harem-official-seed42
+- Modelo en Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-harem-official-seed42
 - Modelo hermano (2B): https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-harem-official-seed42
 - Modelo hermano (4B): https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-harem-official-seed3407
 - Despliegue en FriendliAI (para el modelo 2B, referencia): https://friendli.ai/models/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-harem-official-seed42

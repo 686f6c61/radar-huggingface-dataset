@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Representacion | Contexto/ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Motius-FlowHMR-Latest | 0,46B | SMPL-H, 491-D | 360 fotogramas (30 fps) | flowhmr-research-nonprofit | HuggingFace (este repo) |
-| Motius-FlowHMR-Base | 0,46B (misma base) | SMPL-H, 491-D | 360 fotogramas (30 fps) | flowhmr-research-nonprofit | HuggingFace (repo hermano) |
+| Motius-FlowHMR-Latest | 0,46B | SMPL-H, 491-D | 360 fotogramas (30 fps) | flowhmr-research-nonprofit | Hugging Face (este repo) |
+| Motius-FlowHMR-Base | 0,46B (misma base) | SMPL-H, 491-D | 360 fotogramas (30 fps) | flowhmr-research-nonprofit | Hugging Face (repo hermano) |
 
 No se dispone en la informacion proporcionada de modelos de terceros comparables con datos verificables (parametros, contexto y licencia) para completar la tabla. Cualquier comparacion con otros sistemas de MoCap monocular requeriria datos externos no incluidos aqui.
 
@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de modelos de terceros comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZeyuLing/Motius-FlowHMR-Latest
+- Modelo en Hugging Face: https://huggingface.co/ZeyuLing/Motius-FlowHMR-Latest
 - Checkpoint Base: https://huggingface.co/ZeyuLing/Motius-FlowHMR-Base
 - Proyecto y actualizaciones del paper: https://flowhmr.github.io/
 - Repositorio original en GitHub: https://github.com/flowhmr/flowhmr

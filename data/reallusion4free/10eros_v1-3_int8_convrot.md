@@ -2,7 +2,7 @@
 
 ## Resumen
 
-10Eros_v1.3_INT8_Convrot es un modelo de difusión para generación de vídeo a partir de imágenes (image-to-video) desarrollado por el usuario reallusion4free. Se distribuye a través de HuggingFace bajo la librería `diffusers` y ocupa un repositorio de 76.2 GB. El modelo se presenta en formato `safetensors` e incluye variantes cuantizadas en INT8, así como una versión fusionada con un LoRA DMD. El nombre del modelo sugiere una orientación temática específica, aunque la documentación disponible no lo confirma explícitamente.
+10Eros_v1.3_INT8_Convrot es un modelo de difusión para generación de vídeo a partir de imágenes (image-to-video) desarrollado por el usuario reallusion4free. Se distribuye a través de Hugging Face bajo la librería `diffusers` y ocupa un repositorio de 76.2 GB. El modelo se presenta en formato `safetensors` e incluye variantes cuantizadas en INT8, así como una versión fusionada con un LoRA DMD. El nombre del modelo sugiere una orientación temática específica, aunque la documentación disponible no lo confirma explícitamente.
 
 La relevancia de este modelo radica en su naturaleza de generación de vídeo a partir de una única imagen estática, un campo en rápida evolución dentro de la IA generativa. La cuantización INT8 aplicada mediante modificaciones de nodos de ComfyUI permite reducir el consumo de memoria en comparación con los pesos en precisión completa, lo que facilita su ejecución en hardware más limitado. Sin embargo, la ausencia de licencia declarada y de especificaciones técnicas detalladas limita su uso en entornos de producción.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su naturaleza de generación de vídeo a 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura de difusión implementada en la librería `diffusers` de HuggingFace, orientada a la tarea de image-to-video. La model card indica que los pesos se han procesado con una modificación de los nodos de ComfyUI-INT8-Fast, desarrollados por BobJohnson24, para lograr una cuantización INT8. Esta técnica permite reducir la precisión de los pesos sin necesidad de utilizar el nodo original de Bob. Además, se menciona una variante `DMD` que fusiona un LoRA DMD a intensidad 1.0, lo que podría modificar la calidad o el estilo del vídeo generado.
+El modelo se basa en la arquitectura de difusión implementada en la librería `diffusers` de Hugging Face, orientada a la tarea de image-to-video. La model card indica que los pesos se han procesado con una modificación de los nodos de ComfyUI-INT8-Fast, desarrollados por BobJohnson24, para lograr una cuantización INT8. Esta técnica permite reducir la precisión de los pesos sin necesidad de utilizar el nodo original de Bob. Además, se menciona una variante `DMD` que fusiona un LoRA DMD a intensidad 1.0, lo que podría modificar la calidad o el estilo del vídeo generado.
 
 No se proporcionan datos sobre el conjunto de entrenamiento, el número de tokens ni el proceso de optimización (RLHF, DPO, etc.). Tampoco se detallan innovaciones técnicas adicionales más allá de la cuantización y la fusión de LoRA. La documentación es extremadamente escueta y no ofrece información sobre la arquitectura interna del modelo base.
 
@@ -68,8 +68,8 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reallusion4free/10Eros_v1.3_INT8_Convrot
-- Repositorio duplicado en HuggingFace: https://huggingface.co/CornLogic/10Eros_v1.3_INT8_Convrot
+- Repositorio en Hugging Face: https://huggingface.co/reallusion4free/10Eros_v1.3_INT8_Convrot
+- Repositorio duplicado en Hugging Face: https://huggingface.co/CornLogic/10Eros_v1.3_INT8_Convrot
 - Repositorio de nodos ComfyUI-INT8-Fast: https://github.com/BobJohnson24/ComfyUI-INT8-Fast/tree/main
 - Modificación de INT8 utilizada: https://huggingface.co/tech77/int8/tree/main
 - Repositorio de la variante DMD: https://huggingface.co/tech77/10eros_v1.3_int8_convrot_DMD

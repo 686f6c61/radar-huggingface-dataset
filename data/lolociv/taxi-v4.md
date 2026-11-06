@@ -2,7 +2,7 @@
 
 ## Resumen
 
-taxi-v4 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario lolociv. No se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de un agente de Q-Learning tabular entrenado sobre el entorno Taxi-v3 de Gym/Gymnasium, con una implementación personalizada (etiqueta custom-implementation). El repositorio contiene un unico artefacto de pesos, q-learning.pkl, que se carga mediante la funcion load_from_hub de la libreria huggingface_sb3.
+taxi-v4 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario lolociv. No se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de un agente de Q-Learning tabular entrenado sobre el entorno Taxi-v3 de Gym/Gymnasium, con una implementación personalizada (etiqueta custom-implementation). El repositorio contiene un unico artefacto de pesos, q-learning.pkl, que se carga mediante la funcion load_from_hub de la libreria huggingface_sb3.
 
 El modelo resuelve la tarea de control discreto de Taxi-v3: recoger un pasajero y dejarlo en el destino correcto dentro de una cuadricula, maximizando la recompensa acumulada. Su relevancia es principalmente docente y metodologica: sirve como referencia reproducible de un algoritmo clasico de RL tabular y como baseline de bajo coste computacional para comparar con metodos como SARSA, DQN o PPO en el mismo entorno.
 
@@ -79,7 +79,7 @@ No se dispone de resultados de benchmarks de modelos comparables en la informaci
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lolociv/taxi-v4 | Q-Learning tabular | Taxi-v3 | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| lolociv/taxi-v4 | Q-Learning tabular | Taxi-v3 | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Alternativas (SARSA, DQN, PPO) en Taxi-v3 | no disponible | Taxi-v3 | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de resultados de benchmarks de modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lolociv/taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/lolociv/taxi-v4
 - Repositorio o paper asociado: no disponible
 - Blog o anuncio del autor: no disponible
 - Demo interactiva: no disponible

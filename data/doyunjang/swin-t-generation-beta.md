@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin-t-generation-beta es un prototipo de investigación publicado por el usuario doyunjang en HuggingFace. Se presenta como una implementación de una arquitectura Swin Transformer (Swin T) orientada a tareas de generación, con una configuración escalada a tamaño "huge" según la propia model card. El repositorio está pensado como punto de partida experimental: incluye el código de entrenamiento, la configuración de arquitectura y un checkpoint de inicialización válido para pruebas de humo, pero no un modelo entrenado ni evaluado.
+Swin-t-generation-beta es un prototipo de investigación publicado por el usuario doyunjang en Hugging Face. Se presenta como una implementación de una arquitectura Swin Transformer (Swin T) orientada a tareas de generación, con una configuración escalada a tamaño "huge" según la propia model card. El repositorio está pensado como punto de partida experimental: incluye el código de entrenamiento, la configuración de arquitectura y un checkpoint de inicialización válido para pruebas de humo, pero no un modelo entrenado ni evaluado.
 
 El modelo no declara resultados de benchmarks, no especifica el corpus de entrenamiento ni el número de tokens procesados, y el checkpoint incluido se describe explícitamente como una inicialización no entrenada. Por tanto, debe interpretarse como un esqueleto reproducible para experimentación, no como un modelo listo para producción.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| doyunjang/swin-t-generation-beta | 33.088 (checkpoint publicado) | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace |
-| Swin Transformer original (Microsoft) | ~28M (Swin-T) | N/A (visión) | benchmarks públicos en ImageNet | MIT | HuggingFace, repos oficiales |
-| Swin Transformer V2 | ~28M-3B según variante | N/A (visión) | benchmarks públicos | MIT | HuggingFace |
+| doyunjang/swin-t-generation-beta | 33.088 (checkpoint publicado) | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face |
+| Swin Transformer original (Microsoft) | ~28M (Swin-T) | N/A (visión) | benchmarks públicos en ImageNet | MIT | Hugging Face, repos oficiales |
+| Swin Transformer V2 | ~28M-3B según variante | N/A (visión) | benchmarks públicos | MIT | Hugging Face |
 | Otros prototipos de generación con Swin | no disponible | no disponible | no disponible | variable | no disponible |
 
 La comparación directa es limitada porque el modelo publicado es un esqueleto sin entrenamiento, mientras que las variantes oficiales de Swin cuentan con checkpoints entrenados y evaluados.
@@ -81,7 +81,7 @@ La comparación directa es limitada porque el modelo publicado es un esqueleto s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/doyunjang/swin-t-generation-beta
+- Hugging Face: https://huggingface.co/doyunjang/swin-t-generation-beta
 - Repositorio oficial de Swin Transformer (Microsoft): no disponible en la información proporcionada
 - Paper de Swin Transformer: no disponible en la información proporcionada
 - Blog o demo: no disponible en la información proporcionada

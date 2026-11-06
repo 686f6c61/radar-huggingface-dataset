@@ -69,12 +69,12 @@ El propio autor advierte que la ventaja sobre el azar en TruthfulQA con puntuaci
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables en la misma categoria (n-gramas de palabra con licencia CC0 y publicacion en HuggingFace) dentro de la informacion proporcionada. Como referencia de orden de magnitud:
+No se dispone de modelos comparables en la misma categoria (n-gramas de palabra con licencia CC0 y publicacion en Hugging Face) dentro de la informacion proporcionada. Como referencia de orden de magnitud:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| brAIAIn-3 | 476 recuentos | 2 tokens | CC0-1.0 | HuggingFace |
-| Modelos transformer pequenos (referencia generica) | Millones a miles de millones | Miles de tokens | Variable | HuggingFace |
+| brAIAIn-3 | 476 recuentos | 2 tokens | CC0-1.0 | Hugging Face |
+| Modelos transformer pequenos (referencia generica) | Millones a miles de millones | Miles de tokens | Variable | Hugging Face |
 | Modelos n-grama clasicos (p. ej. KenLM) | Depende del corpus | n-1 tokens | Variable | Bibliotecas de NLP |
 
 La comparativa con modelos neuronales no es significativa: brAIAIn-3 no compite en ninguna tarea de generacion realista.
@@ -93,7 +93,7 @@ La comparativa con modelos neuronales no es significativa: brAIAIn-3 no compite 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braiain-lab/brAIAIn-3
+- Modelo en Hugging Face: https://huggingface.co/braiain-lab/brAIAIn-3
 - Demo en Spaces: https://huggingface.co/spaces/braiain-lab/brAIAIn
 - Version mas reciente: https://huggingface.co/braiain-lab/brAIAIn-0
 - Coleccion de versiones: https://huggingface.co/braiain-lab

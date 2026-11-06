@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`biali/wheels` es un repositorio alojado en HuggingFace por el usuario `biali`, publicado el 4 de octubre de 2026 y actualizado dos minutos despues el mismo dia. La model card asociada no contiene mas informacion que la declaracion de licencia (`apache-2.0`); no se documentan arquitectura, parametros, contexto, datos de entrenamiento ni capacidades. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado ni idiomas listados.
+`biali/wheels` es un repositorio alojado en Hugging Face por el usuario `biali`, publicado el 4 de octubre de 2026 y actualizado dos minutos despues el mismo dia. La model card asociada no contiene mas informacion que la declaracion de licencia (`apache-2.0`); no se documentan arquitectura, parametros, contexto, datos de entrenamiento ni capacidades. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado ni idiomas listados.
 
 El unico dato tecnico objetivo disponible es el tamano del repositorio, aproximadamente 0,1 GB. Ese volumen es demasiado reducido para alojar los pesos de un transformer de escala media en precision completa, por lo que el contenido real del repositorio (pesos de un modelo muy pequeno, adaptadores, artefactos auxiliares o paquetes distribuibles, dado el nombre `wheels`) no puede determinarse a partir de la informacion proporcionada.
 
@@ -25,7 +25,7 @@ Metadatos adicionales verificables:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | biali/wheels |
+| ID en Hugging Face | biali/wheels |
 | Autor | biali |
 | Fecha de creacion | 2026-10-04 |
 | Ultima actualizacion | 2026-10-04 |
@@ -90,6 +90,6 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/biali/wheels
+- Repositorio en Hugging Face: https://huggingface.co/biali/wheels
 - Pagina del autor: https://huggingface.co/biali
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

@@ -4,7 +4,7 @@
 
 El artefacto identificado como `davidwdw/fa-log-task00-centre-full-hourly-cab6b7ce20e0-2838ec226cb0` no es un modelo de lenguaje en el sentido habitual del término. Según su propia model card, se trata de un "versioned fleet archive" (archivo versionado de flota), es decir, un paquete de instantánea con una revisión fija y sumas de verificación SHA256SUMS, no un directorio vivo ni un espejo sincronizado. La receta canónica declarada por el autor es `evaluations/2026-09-23_task00_centre_full_recovery`, y el propio autor lo clasifica como "Tier: versioned snapshot".
 
-El repositorio lo publica el usuario `davidwdw` y, en el momento de la consulta, acumula 0 descargas y 0 "likes", fue creado el 26 de septiembre de 2026 y actualizado un segundo después, lo que indica una subida automatizada sin iteración posterior. No declara pipeline de inferencia, licencia, idiomas soportados ni formato de pesos, y el único tag presente es `region:us`, un metadato geográfico de HuggingFace que no aporta información funcional sobre el contenido.
+El repositorio lo publica el usuario `davidwdw` y, en el momento de la consulta, acumula 0 descargas y 0 "likes", fue creado el 26 de septiembre de 2026 y actualizado un segundo después, lo que indica una subida automatizada sin iteración posterior. No declara pipeline de inferencia, licencia, idiomas soportados ni formato de pesos, y el único tag presente es `region:us`, un metadato geográfico de Hugging Face que no aporta información funcional sobre el contenido.
 
 Por tanto, no es posible evaluarlo como modelo para generación de texto, razonamiento o código: la información pública disponible no describe arquitectura, parámetros, contexto ni datos de entrenamiento. Su relevancia, si existe, es como artefacto de trazabilidad reproducible dentro de un flujo de registro (logging) de tareas de evaluación, presumiblemente asociado a series temporales horarias ("hourly") de un centro de datos o de un proceso concreto.
 
@@ -69,7 +69,7 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | pública en HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | pública en Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -84,6 +84,6 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-cab6b7ce20e0-2838ec226cb0
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-cab6b7ce20e0-2838ec226cb0
 - Receta canónica mencionada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (referencia interna citada por el autor, sin URL pública verificable)
 - Los resultados de búsqueda web proporcionados (maps.google.fr y páginas auxiliares de Google Maps, Street View y Google Earth) no guardan relación con este repositorio y no aportan información utilizable.

@@ -81,7 +81,7 @@ No hay otros modelos comparables publicamente disponibles con las mismas capacid
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omni-CLAP/CLAP
+- Hugging Face: https://huggingface.co/omni-CLAP/CLAP
 - GitHub: https://github.com/omni-CLAP/clap
 - Paper (arXiv): https://arxiv.org/pdf/2608.27406v1
 - Web del proyecto: https://omni-clap.github.io

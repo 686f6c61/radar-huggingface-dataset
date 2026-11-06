@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar este adaptador con altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lethihaiyen927/lab21-2A202601570-qwen35-triage-vi
+- Hugging Face: https://huggingface.co/lethihaiyen927/lab21-2A202601570-qwen35-triage-vi
 - Modelo base (referencia): https://huggingface.co/unsloth/Qwen3.5-4B (no verificado en la búsqueda)
 - Repositorio de ejemplo relacionado (no oficial): https://github.com/lybii/DAY01_2A202601570_LeThiHaiYen/blob/main/LAB_GUIDE.md
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

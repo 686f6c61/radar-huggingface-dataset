@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cproxy/sink` es un repositorio de modelo publicado en HuggingFace por el usuario `cproxy` bajo licencia Apache 2.0. El repositorio fue creado el 13 de octubre de 2026 y su ultima actualizacion se registro el mismo dia, con un tamano total de 0,1 GB. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene declarado ningun pipeline de inferencia en los metadatos de la plataforma.
+`cproxy/sink` es un repositorio de modelo publicado en Hugging Face por el usuario `cproxy` bajo licencia Apache 2.0. El repositorio fue creado el 13 de octubre de 2026 y su ultima actualizacion se registro el mismo dia, con un tamano total de 0,1 GB. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene declarado ningun pipeline de inferencia en los metadatos de la plataforma.
 
 La model card publicada no contiene informacion tecnica: se limita a la declaracion de licencia `apache-2.0`. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni metodologia de alineacion. Tampoco se identifica la tarea para la que fue entrenado el modelo, por lo que no es posible clasificarlo dentro de una categoria funcional (modelo de lenguaje, modelo de embeddings, clasificador, componente auxiliar, etc.).
 
@@ -98,6 +98,6 @@ No disponible. Al no conocerse la categoria funcional, el tamano ni la arquitect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cproxy/sink
-- Pagina del autor en HuggingFace: https://huggingface.co/cproxy
+- Modelo en Hugging Face: https://huggingface.co/cproxy/sink
+- Pagina del autor en Hugging Face: https://huggingface.co/cproxy
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

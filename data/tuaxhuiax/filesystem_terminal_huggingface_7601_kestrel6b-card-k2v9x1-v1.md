@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kestrel-6B-Instruct es un modelo de lenguaje de 6.000 millones de parámetros presentado por el usuario TUaxhuiax en HuggingFace bajo el identificador `filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-v1`. La información disponible se limita a una tarjeta de evaluación interna generada con el pipeline `atlas-eval v2.4`, que documenta resultados en cuatro benchmarks (MMLU-Pro, GSM8K, HumanEval-Plus y Safety Bench) y una decisión de publicación condicional. No se ha publicado información sobre la arquitectura, los datos de entrenamiento, la licencia ni los idiomas soportados.
+Kestrel-6B-Instruct es un modelo de lenguaje de 6.000 millones de parámetros presentado por el usuario TUaxhuiax en Hugging Face bajo el identificador `filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-v1`. La información disponible se limita a una tarjeta de evaluación interna generada con el pipeline `atlas-eval v2.4`, que documenta resultados en cuatro benchmarks (MMLU-Pro, GSM8K, HumanEval-Plus y Safety Bench) y una decisión de publicación condicional. No se ha publicado información sobre la arquitectura, los datos de entrenamiento, la licencia ni los idiomas soportados.
 
 El modelo obtiene una puntuación global ponderada de 0,739 y supera los umbrales en MMLU-Pro (0,724 frente a 0,700), GSM8K (0,840 frente a 0,800) y Safety Bench (0,013 frente a 0,020, donde un valor menor es mejor). Sin embargo, falla en HumanEval-Plus por un margen de 0,009 puntos (0,591 frente a 0,600), lo que motiva una decisión de publicación condicional y una asignación de nivel de despliegue Tier-2.
 
@@ -81,10 +81,10 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 - Riesgo de alucinación: no cuantificado; la puntuación en MMLU-Pro no informa sobre la calibración de la confianza ni la tasa de afirmaciones falsas en respuestas abiertas.
 - Sesgos conocidos: no documentados. Safety Bench reporta 0,013, pero se desconoce la métrica exacta (tasa de respuestas inseguras, puntuación de toxicidad u otra) y la taxonomía evaluada.
 - Decisión de release condicional: el propio pipeline clasifica el modelo como Tier-2 con liberación condicional, lo que sugiere que no está recomendado para despliegues de alta criticidad sin validación adicional.
-- Cero descargas y cero likes en HuggingFace: no existe evidencia de uso comunitario ni validación externa de los resultados reportados.
+- Cero descargas y cero likes en Hugging Face: no existe evidencia de uso comunitario ni validación externa de los resultados reportados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-v1
+- Modelo en Hugging Face: https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-v1
 - Pipeline de evaluación `atlas-eval v2.4`: no disponible (no se proporciona enlace)
 - Paper, blog o repositorio del modelo: no disponible

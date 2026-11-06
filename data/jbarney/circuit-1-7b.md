@@ -105,7 +105,7 @@ Los tres modelos comparables son los que el propio autor usa como referencia; no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jbarney/circuit-1.7b
+- Modelo en Hugging Face: https://huggingface.co/jbarney/circuit-1.7b
 - Repositorio de codigo, generadores de datos y arnes de evaluacion: https://github.com/Barneyjm/circuit
 - Proyecto decision-circuits: https://decisioncircuits.com
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base

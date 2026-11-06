@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dongfangshuo-Qwen3.8-27B-NSFW-v4 es un ajuste fino (finetune) del modelo abliterado Huihui-Qwen3.8-27B-abliterated, publicado por el usuario dongfangshuo en HuggingFace. Se trata de un transformer denso de aproximadamente 26.900 millones de parametros (el autor lo describe como 27,8B dense + vision) con codificador visual, orientado a la creacion literaria en chino y a la interpretacion de rol (roleplay y partidas de TRPG) sin censura. El problema que aborda es la rigidez estilistica y el rechazo de contenido del modelo base: segun el autor, el Qwen original "no habla como una persona" y tiende a enumeraciones, mientras que esta version incorpora un corpus literario amplio para mejorar el registro narrativo.
+Dongfangshuo-Qwen3.8-27B-NSFW-v4 es un ajuste fino (finetune) del modelo abliterado Huihui-Qwen3.8-27B-abliterated, publicado por el usuario dongfangshuo en Hugging Face. Se trata de un transformer denso de aproximadamente 26.900 millones de parametros (el autor lo describe como 27,8B dense + vision) con codificador visual, orientado a la creacion literaria en chino y a la interpretacion de rol (roleplay y partidas de TRPG) sin censura. El problema que aborda es la rigidez estilistica y el rechazo de contenido del modelo base: segun el autor, el Qwen original "no habla como una persona" y tiende a enumeraciones, mientras que esta version incorpora un corpus literario amplio para mejorar el registro narrativo.
 
 El modelo se distribuye en tres formatos: safetensors BF16 en 18 shards (53,7 GB), cinco cuantizaciones GGUF (de Q3_K_M a Q8_0) mas un proyector visual BF16 de 931 MB, y un checkpoint LoRA independiente (1,7 GB). La ventana de contexto recomendada por el autor es de 64K tokens con una salida maxima de 4K por turno; el propio autor advierte que superar esos limites provoca fallos, y que la arquitectura de 27B tiene "defectos de base" que se amplifican tras la cuantizacion.
 
@@ -18,7 +18,7 @@ Es relevante ahora por dos motivos: primero, porque documenta un caso de uso muy
 | Longitud de contexto | 64K recomendado por el autor; `num_ctx` configurado a 81.920 como margen de seguridad; contexto nativo del modelo base: no disponible |
 | Tipos de cuantizacion | GGUF: Q3_K_M, Q4_K_M (recomendada), Q5_K_M, Q6_K, Q8_0; BF16 en safetensors; LoRA en el checkpoint-150 |
 | Idiomas soportados | Chino (`zh`) exclusivamente segun metadatos; el autor prohibe explicitamente la mezcla de idiomas en la salida |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (18 shards, 53,7 GB), GGUF (5 cuantizaciones), LoRA (1,7 GB); proyector visual `mmproj-model-bf16.gguf` |
 
 ## Arquitectura y entrenamiento
@@ -91,7 +91,7 @@ El autor situa explicitamente a v4 por delante del base y de la version K en las
 ## Limitaciones y advertencias
 
 - Contenido para adultos: el modelo esta entrenado para generar material NSFW explicito; la etiqueta `not-for-all-audiences` aplica. Su uso debe restringirse a mayores de edad y cumplir la legislacion aplicable en la jurisdiccion del usuario.
-- Licencia: `qwen-community-1.0` con nombre de licencia "other" en HuggingFace. Conviene revisar el texto completo de la licencia Qwen Community antes de cualquier uso comercial; las condiciones no estan detalladas en la informacion disponible.
+- Licencia: `qwen-community-1.0` con nombre de licencia "other" en Hugging Face. Conviene revisar el texto completo de la licencia Qwen Community antes de cualquier uso comercial; las condiciones no estan detalladas en la informacion disponible.
 - Modelo abliterated: la supresion de los mecanismos de rechazo implica ausencia de filtros de seguridad. No es adecuado para aplicaciones de cara al publico sin una capa de moderacion externa.
 - Idioma: solo chino. El autor pide evitar explicita y repetidamente la mezcla con ingles, y el modelo no tiene capacidades multilingues declaradas.
 - Contexto y salida: superar los 64K de contexto o los 4K de salida provoca, segun el autor, "fallos extranos" como relleno forzado o repeticion entre turnos. Forzar salidas de 8K degrada la calidad.
@@ -105,7 +105,7 @@ El autor situa explicitamente a v4 por delante del base y de la version K en las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4
+- Modelo en Hugging Face: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Cuantizacion Q3_K_M: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/Dongfangshuo-Qwen3.8-27B-NSFW-v4-Q3_K_M.gguf
 - Cuantizacion Q4_K_M (recomendada): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/Dongfangshuo-Qwen3.8-27B-NSFW-v4-Q4_K_M.gguf

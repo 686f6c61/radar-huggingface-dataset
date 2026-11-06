@@ -6,7 +6,7 @@ IntentGrasp QLoRA Adapter es un adaptador LoRA de rango 16 publicado por el usua
 
 El adaptador se entreno con QLoRA sobre el dataset IntentGrasp (yuweiyin/IntentGrasp), con unas 249 000 filas tras filtrar etiquetas invalidas, en 1 epoca, con una tasa de aprendizaje de 2e-4 y enmascaramiento de perdida solo en el turno del asistente. Segun la model card, el ajuste hizo que la validez del JSON de salida pasara a ser del 100 % y aproximadamente duplico la precision en distribucion, aunque la generalizacion a la particion mas dificil (`gem`) es solo parcial (37,9 %).
 
-Existe una discrepancia relevante entre los metadatos de HuggingFace y la model card: los metadatos declaran como modelo base Qwen/Qwen2.5-7B-Instruct, mientras que la propia model card indica Qwen/Qwen2.5-1.5B-Instruct. Esta inconsistencia debe resolverse antes de usar el adaptador en cualquier evaluacion, ya que determina el numero de parametros, el consumo de memoria y las capacidades reales del sistema resultante.
+Existe una discrepancia relevante entre los metadatos de Hugging Face y la model card: los metadatos declaran como modelo base Qwen/Qwen2.5-7B-Instruct, mientras que la propia model card indica Qwen/Qwen2.5-1.5B-Instruct. Esta inconsistencia debe resolverse antes de usar el adaptador en cualquier evaluacion, ya que determina el numero de parametros, el consumo de memoria y las capacidades reales del sistema resultante.
 
 ## Especificaciones tecnicas
 
@@ -75,8 +75,8 @@ La model card resume que el ajuste fino hizo que la salida JSON fuese fiable al 
 
 | Modelo | Parametros | Contexto | Precision reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IntentGrasp QLoRA Adapter | Adaptador LoRA (rango 16) sobre Qwen2.5 | no disponible | 90,5 % en distribucion; 37,9 % en `gem`; 100 % validez JSON | Derivada de CC-BY-NC-SA 4.0 (no comercial), segun model card | HuggingFace: BharatJitendra/intentgrasp-qlora-adapter |
-| Modelo base sin ajustar (Qwen2.5-Instruct) | Segun variante (1,5B o 7B) | no disponible | 0,5 % de conformidad de esquema; 41,5 % de precision laxa | Segun licencia del modelo base Qwen | HuggingFace: Qwen/Qwen2.5-7B-Instruct o Qwen/Qwen2.5-1.5B-Instruct |
+| IntentGrasp QLoRA Adapter | Adaptador LoRA (rango 16) sobre Qwen2.5 | no disponible | 90,5 % en distribucion; 37,9 % en `gem`; 100 % validez JSON | Derivada de CC-BY-NC-SA 4.0 (no comercial), segun model card | Hugging Face: BharatJitendra/intentgrasp-qlora-adapter |
+| Modelo base sin ajustar (Qwen2.5-Instruct) | Segun variante (1,5B o 7B) | no disponible | 0,5 % de conformidad de esquema; 41,5 % de precision laxa | Segun licencia del modelo base Qwen | Hugging Face: Qwen/Qwen2.5-7B-Instruct o Qwen/Qwen2.5-1.5B-Instruct |
 | Alternativas comparables de clasificacion de intenciones | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de otros adaptadores o modelos directamente comparables entrenados sobre IntentGrasp con resultados publicados.
@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de otros adaptadores o modelos dir
 - Los errores se concentran en sobreprediccion en casos ambiguos con multiples intenciones.
 - Modelo entrenado en un formato estrecho de eleccion multiple de intenciones; no es un asistente de proposito general.
 - Uso fuera de alcance: la model card indica que no debe usarse en produccion ni con fines comerciales por la licencia no comercial del dataset.
-- Licencia: la model card indica licencia derivada de IntentGrasp (CC-BY-NC-SA 4.0), no comercial, solo investigacion y aprendizaje. Los metadatos de HuggingFace no declaran licencia, lo que anade incertidumbre juridica.
+- Licencia: la model card indica licencia derivada de IntentGrasp (CC-BY-NC-SA 4.0), no comercial, solo investigacion y aprendizaje. Los metadatos de Hugging Face no declaran licencia, lo que anade incertidumbre juridica.
 - Discrepancia no resuelta sobre el modelo base: los metadatos apuntan a Qwen2.5-7B-Instruct y la model card a Qwen2.5-1.5B-Instruct. Cargar el adaptador sobre el modelo equivocado puede degradar o invalidar el rendimiento.
 - Idioma: solo ingles.
 - Tamano del repositorio reportado de 0,0 GB y cero descargas y likes en el momento de la consulta, lo que sugiere que no ha sido validado por la comunidad.
@@ -96,11 +96,11 @@ No se dispone en la informacion proporcionada de otros adaptadores o modelos dir
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/BharatJitendra/intentgrasp-qlora-adapter
+- Pagina del modelo en Hugging Face: https://huggingface.co/BharatJitendra/intentgrasp-qlora-adapter
 - Modelo base declarado en metadatos: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo base declarado en la model card: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de entrenamiento IntentGrasp: https://huggingface.co/datasets/yuweiyin/IntentGrasp
-- Busqueda de modelos IntentGrasp en HuggingFace: https://huggingface.co/models?search=IntentGrasp
+- Busqueda de modelos IntentGrasp en Hugging Face: https://huggingface.co/models?search=IntentGrasp
 - Paper de QLoRA: https://arxiv.org/abs/2305.14314
 - PDF del paper de QLoRA: https://arxiv.org/pdf/2305.14314
 - Repositorio oficial de QLoRA en GitHub: https://github.com/artidoro/qlora

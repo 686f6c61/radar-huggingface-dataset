@@ -94,8 +94,8 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E12-Step8
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E12-Step8
 - Issue del experimento en Marin: https://github.com/marin-community/marin/issues/7786
-- Archivo de evidencias (dataset en HuggingFace): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
+- Archivo de evidencias (dataset en Hugging Face): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Artefacto de origen (ruta S3, no accesible por HTTP): s3://marin-us-east-02a/marin/users/benjaminfeuer/skyrl/rl-snowball-e12-rno2a-deepscaler-grpo-ct-20260821-100706-50aae8/exports/global_step_8/policy/
 - Búsqueda web: no se han encontrado enlaces relevantes adicionales sobre este modelo.

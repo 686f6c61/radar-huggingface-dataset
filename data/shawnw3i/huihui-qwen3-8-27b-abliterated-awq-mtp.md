@@ -78,7 +78,7 @@ La comparativa se limita a las variantes abliteradas y al modelo base. No hay ot
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/shawnw3i/Huihui-Qwen3.8-27B-abliterated-AWQ-MTP)
+- [Modelo en Hugging Face](https://huggingface.co/shawnw3i/Huihui-Qwen3.8-27B-abliterated-AWQ-MTP)
 - [Modelo base abliterado de huihui-ai](https://huggingface.co/huihui-ai/Huihui-Qwen3.6-27B-abliterated)
 - [Qwen3.8-27B - Specs y requisitos (YottaLabs)](https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026)
 - [Qwen3.8-27B - Benchmarks y fecha de lanzamiento (AIReleaseTracker)](https://aireleasetracker.com/model/qwen/qwen3.8-27b)

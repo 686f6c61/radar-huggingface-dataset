@@ -34,7 +34,7 @@ El dataset de entrenamiento consta de aproximadamente 162.000 ejemplos: una mezc
 - Matematicas: GSM8K 72,3 (por encima del base, aunque inferior a las versiones v1.0/v1.1 de la misma linea).
 - Conocimiento general en coreano (KoBEST 70,0; KMMLU 63,5) y en ingles (MMLU 82,9).
 - Contexto nativo de 256K tokens, adecuado para RAG sobre documentos extensos.
-- Etiquetado como image-text-to-text en HuggingFace, heredando la modalidad multimodal del base Qwen3.6; la model card no detalla capacidades de vision especificas del fine-tune.
+- Etiquetado como image-text-to-text en Hugging Face, heredando la modalidad multimodal del base Qwen3.6; la model card no detalla capacidades de vision especificas del fine-tune.
 
 ## Casos de uso
 
@@ -102,7 +102,7 @@ No se dispone de datos comparativos publicados frente a otros modelos de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/Keural-Nova-v1.2-experimental
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/Keural-Nova-v1.2-experimental
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Empresa desarrolladora (MKD): https://mkd.kr
 - Datasets de tool calling mencionados: Glaive-function-calling-v2 y Hermes-function-calling (Apache-2.0)

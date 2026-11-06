@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kartheekbatchu/fraud-detector es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado en HuggingFace por el usuario kartheekbatchu. Segun la model card, el entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace, y el repositorio esta etiquetado como generated_from_trainer. El nombre del modelo sugiere un proposito de deteccion de fraude, pero la model card no documenta ni el conjunto de datos, ni la tarea concreta, ni metricas de evaluacion que respalden esa finalidad.
+kartheekbatchu/fraud-detector es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado en Hugging Face por el usuario kartheekbatchu. Segun la model card, el entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face, y el repositorio esta etiquetado como generated_from_trainer. El nombre del modelo sugiere un proposito de deteccion de fraude, pero la model card no documenta ni el conjunto de datos, ni la tarea concreta, ni metricas de evaluacion que respalden esa finalidad.
 
 El interes tecnico del modelo es limitado pero relevante como caso de estudio: se trata de un ejemplo de fine-tune de un LLM pequeno (1,5 B de parametros, arquitectura transformer decoder-only de la familia Qwen2) sobre infraestructura estandar de transformers y TRL. El tamano del repositorio figura como 0.0 GB, con 0 descargas y 0 likes, lo que sugiere que los pesos podrian no estar subidos o que se trata de un artefacto de prueba; este punto no puede confirmarse con la informacion disponible.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para bf16, como RTX 3050, RTX 3060, RTX 4060, T4 o L4. Para mayor throughput, A10G, L40S, A100 o H100 admiten lotes grandes y despliegue concurrente.
 - Cabe en GPU de consumo: si. Una RTX 4090, 4080, 3090 o incluso una RTX 3060 de 12 GB pueden ejecutar el modelo con margen amplio, tambien con contexto largo.
 - Ejecucion en CPU: viable con llama.cpp u Ollama en cuantizacion Q4, con latencias del orden de decenas de tokens por segundo en procesadores modernos de escritorio.
-- Opciones de despliegue: transformers con pipeline, vLLM, Text Generation Inference (TGI), llama.cpp, Ollama y servidores compatibles con la API de OpenAI. La etiqueta endpoints_compatible del repositorio sugiere compatibilidad con inference endpoints de HuggingFace.
+- Opciones de despliegue: transformers con pipeline, vLLM, Text Generation Inference (TGI), llama.cpp, Ollama y servidores compatibles con la API de OpenAI. La etiqueta endpoints_compatible del repositorio sugiere compatibilidad con inference endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones y no es posible calcularlas sin acceso a los pesos.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No hay datos de rendimiento comparado para el modelo objeto de esta ficha, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kartheekbatchu/fraud-detector
+- Modelo en Hugging Face: https://huggingface.co/kartheekbatchu/fraud-detector
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de Qwen2.5 (referencia del modelo base): https://arxiv.org/abs/2412.15115

@@ -79,8 +79,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mattdr/sentence-frame-classifier` | 355,4 M | No disponible | Macro F1 0,66 | CC-BY-4.0 | HuggingFace |
-| `facebook/roberta-large` (modelo base) | 355,4 M | No disponible en esta ficha | No aplica: no es un clasificador de frames | MIT (segun su propia ficha, no verificada aqui) | HuggingFace |
+| `mattdr/sentence-frame-classifier` | 355,4 M | No disponible | Macro F1 0,66 | CC-BY-4.0 | Hugging Face |
+| `facebook/roberta-large` (modelo base) | 355,4 M | No disponible en esta ficha | No aplica: no es un clasificador de frames | MIT (segun su propia ficha, no verificada aqui) | Hugging Face |
 | Clasificadores de frame de Card et al. (2015) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Modelos de Hartmann et al. (2019) para discusion online | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento entre estos sistemas en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattdr/sentence-frame-classifier
+- Modelo en Hugging Face: https://huggingface.co/mattdr/sentence-frame-classifier
 - Paper asociado (TACL 2026): https://doi.org/10.1162/TACL.a.698
 - Media Frame Corpus (Card et al., 2015): https://aclanthology.org/P15-2072.pdf
 - Trabajo sobre framing en discusion online (Hartmann et al., 2019): https://arxiv.org/pdf/1904.03969

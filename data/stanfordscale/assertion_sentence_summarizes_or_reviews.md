@@ -80,8 +80,8 @@ No hay datos publicados de modelos comparables en la informacion disponible. La 
 
 | Modelo | Tipo | Parametros | Contexto | F1 test (clase positiva) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `StanfordSCALE/assertion_sentence_summarizes_or_reviews` | SetFit sobre MPNet + regresion logistica | 109,5 M | no disponible | 0,128 | no disponible | HuggingFace, libreria `setfit` |
-| `sentence-transformers/paraphrase-mpnet-base-v2` | Encoder de frases (modelo base, no clasificador) | ~109 M | no disponible | no aplica | no disponible | HuggingFace |
+| `StanfordSCALE/assertion_sentence_summarizes_or_reviews` | SetFit sobre MPNet + regresion logistica | 109,5 M | no disponible | 0,128 | no disponible | Hugging Face, libreria `setfit` |
+| `sentence-transformers/paraphrase-mpnet-base-v2` | Encoder de frases (modelo base, no clasificador) | ~109 M | no disponible | no aplica | no disponible | Hugging Face |
 | Otros clasificadores de aserciones de EduBehaviors | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No hay datos publicados de modelos comparables en la informacion disponible. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_summarizes_or_reviews
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_summarizes_or_reviews
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (codigo y datos originales): https://github.com/SumnerLab/TalkMoves

@@ -4,7 +4,7 @@
 
 El repositorio `alvinlest/self-supervised-review` no es un modelo de inteligencia artificial entrenado, sino un conjunto de notas exploratorias sobre aprendizaje auto-supervisado (SSL). Publicado por el usuario alvinlest bajo licencia MIT, contiene un documento principal (`analysis.md`) que describe el alcance de una investigación planificada, los posibles factores de confusión, comparaciones propuestas con líneas base y requisitos de reproducibilidad. No incluye pesos de red neuronal, código de entrenamiento, ni resultados de experimentos.
 
-A pesar de aparecer en HuggingFace con formato de modelo (archivo `safetensors` de 33.088 bytes), no existe ninguna arquitectura, configuración o checkpoint real. Se trata de un repositorio de documentación técnica que usa la plataforma como soporte de publicación. Por tanto, cualquier ficha técnica de modelo debe interpretarse como una ficha de un recurso de investigación, no de un sistema de IA operativo.
+A pesar de aparecer en Hugging Face con formato de modelo (archivo `safetensors` de 33.088 bytes), no existe ninguna arquitectura, configuración o checkpoint real. Se trata de un repositorio de documentación técnica que usa la plataforma como soporte de publicación. Por tanto, cualquier ficha técnica de modelo debe interpretarse como una ficha de un recurso de investigación, no de un sistema de IA operativo.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No aplica. No existe un modelo comparable porque no es un modelo de IA. La categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alvinlest/self-supervised-review
+- Repositorio Hugging Face: https://huggingface.co/alvinlest/self-supervised-review
 - Referencias sobre SSL (no vinculadas al repositorio, sino de la búsqueda web):
   - Encuesta sobre SSL: https://www.sciencedirect.com/science/article/pii/S0925231225020818
   - Encuesta en arXiv: https://arxiv.org/abs/2301.05712

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Gabrielrichard/retrieval-test` es un repositorio de HuggingFace publicado por el usuario Gabrielrichard que contiene una implementacion propia de CLIP orientada a tareas de retrieval (recuperacion de imagenes o texto por similitud). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe como una implementacion de trabajo con codigo transparente y pruebas de humo (smoke tests) reproducibles, con las afirmaciones de rendimiento deliberadamente omitidas.
+`Gabrielrichard/retrieval-test` es un repositorio de Hugging Face publicado por el usuario Gabrielrichard que contiene una implementacion propia de CLIP orientada a tareas de retrieval (recuperacion de imagenes o texto por similitud). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe como una implementacion de trabajo con codigo transparente y pruebas de humo (smoke tests) reproducibles, con las afirmaciones de rendimiento deliberadamente omitidas.
 
 El peso incluido (`model.safetensors`) se presenta explicitamente como un checkpoint de inicializacion valido para smoke tests, no como un modelo entrenado. El dato real de parametros extraido del archivo safetensors es de 33.088 parametros, una cifra muy alejada de la escala "base" que anuncia la model card (los CLIP base habituales estan en el orden de las centenas de millones de parametros), lo que refuerza su naturaleza de andamiaje experimental mas que de modelo utilizable.
 
@@ -71,7 +71,7 @@ La comparacion con recuperadores multimodales de produccion no es significativa 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gabrielrichard/retrieval-test | 33.088 (real) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| Gabrielrichard/retrieval-test | 33.088 (real) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 (OpenAI) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | OpenCLIP | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | SigLIP | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
@@ -92,5 +92,5 @@ Las busquedas web realizadas para esta ficha no devolvieron informacion tecnica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gabrielrichard/retrieval-test
+- Hugging Face: https://huggingface.co/Gabrielrichard/retrieval-test
 - Las busquedas web realizadas no devolvieron papers, blogs, repositorios ni demos relevantes sobre este modelo; los resultados obtenidos correspondian a paginas de ayuda de YouTube sin relacion con el contenido solicitado.

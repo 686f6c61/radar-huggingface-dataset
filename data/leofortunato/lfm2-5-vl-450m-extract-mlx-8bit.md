@@ -45,7 +45,7 @@ El entrenamiento del modelo base se realizo mediante un proceso de aprendizaje p
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de rendimiento comparativo con otros modelos, y no hay datos de evaluacion en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de rendimiento comparativo con otros modelos, y no hay datos de evaluacion en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-VL-450M-Extract-MLX-8bit | 450M (LM 350M + vision 100M) | 128K | 8-bit MLX | LFM Open License v1.0 | HuggingFace |
-| LFM2.5-VL-450M-Extract (original) | 450M | 128K | bfloat16 (no cuantizado) | LFM Open License v1.0 | HuggingFace |
-| LFM2.5-VL-450M (vision general) | 450M | 128K | bfloat16 | LFM Open License v1.0 | HuggingFace |
+| LFM2.5-VL-450M-Extract-MLX-8bit | 450M (LM 350M + vision 100M) | 128K | 8-bit MLX | LFM Open License v1.0 | Hugging Face |
+| LFM2.5-VL-450M-Extract (original) | 450M | 128K | bfloat16 (no cuantizado) | LFM Open License v1.0 | Hugging Face |
+| LFM2.5-VL-450M (vision general) | 450M | 128K | bfloat16 | LFM Open License v1.0 | Hugging Face |
 
 No se han encontrado modelos comparables de la misma categoria (extraccion de campos visuales con JSON) en la informacion proporcionada. Los modelos de Liquid AI de la familia LFM2.5-VL comparten la misma base de 450M, siendo la variante Extract la especifica para tareas de extraccion estructurada.
 

@@ -82,6 +82,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crane-1/genesis-ur5e-peg-in-hole-vision-sac
+- Hugging Face: https://huggingface.co/crane-1/genesis-ur5e-peg-in-hole-vision-sac
 - Informe técnico en chino: `TECHNICAL_REPORT_ZH.md` (incluido en el repositorio del modelo)
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

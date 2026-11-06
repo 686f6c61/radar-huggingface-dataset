@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k-seed43` es un checkpoint de unos 87,3 millones de parámetros publicado por el autor cyttic en HuggingFace. Por la nomenclatura del identificador (CTC, webfonts, geom, seed) y por el tamaño del repositorio (0,3 GB en formato safetensors), se trata con alta probabilidad de un modelo de reconocimiento óptico de caracteres (OCR) o de reconocimiento de texto en imágenes basado en CTC (Connectionist Temporal Classification), entrenado sobre una mezcla de tipografías web. No es un modelo de lenguaje generativo ni un modelo conversacional.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k-seed43` es un checkpoint de unos 87,3 millones de parámetros publicado por el autor cyttic en Hugging Face. Por la nomenclatura del identificador (CTC, webfonts, geom, seed) y por el tamaño del repositorio (0,3 GB en formato safetensors), se trata con alta probabilidad de un modelo de reconocimiento óptico de caracteres (OCR) o de reconocimiento de texto en imágenes basado en CTC (Connectionist Temporal Classification), entrenado sobre una mezcla de tipografías web. No es un modelo de lenguaje generativo ni un modelo conversacional.
 
 La model card publicada por el autor es una plantilla estándar sin rellenar: no documenta arquitectura, datos de entrenamiento, hiperparámetros, evaluación ni uso previsto. Toda la información técnica disponible proviene de los metadatos del repositorio (tamaño de parámetros, formato, licencia y el tag `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre el impacto ambiental del aprendizaje automático, citado en la plantilla y no al modelo en sí).
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k-seed43 | 87,3 M | no disponible | MIT | HuggingFace | Sin documentación; uso incierto |
-| TrOCR (Microsoft) | 334 M (base) / 558 M (large) | no aplica (imagen a texto) | MIT | HuggingFace | Modelo OCR documentado y con benchmarks publicados |
-| PaddleOCR (modelos de reconocimiento) | variable (unos 5-10 M) | no aplica | Apache 2.0 | GitHub / HuggingFace | Suite OCR completa con evaluación publicada |
+| cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k-seed43 | 87,3 M | no disponible | MIT | Hugging Face | Sin documentación; uso incierto |
+| TrOCR (Microsoft) | 334 M (base) / 558 M (large) | no aplica (imagen a texto) | MIT | Hugging Face | Modelo OCR documentado y con benchmarks publicados |
+| PaddleOCR (modelos de reconocimiento) | variable (unos 5-10 M) | no aplica | Apache 2.0 | GitHub / Hugging Face | Suite OCR completa con evaluación publicada |
 | EasyOCR | variable | no aplica | Apache 2.0 | GitHub | Basado en CRAFT + CRNN; documentación y comunidad amplias |
 
 La comparación es aproximada: los tres alternativos son sistemas OCR con documentación y evaluación públicas, mientras que el modelo de cyttic carece de ambas. No se dispone de datos de rendimiento del modelo evaluado para establecer una comparación cuantitativa.
@@ -82,6 +82,6 @@ La comparación es aproximada: los tres alternativos son sistemas OCR con docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k-seed43
 - Artículo citado en la plantilla (impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact

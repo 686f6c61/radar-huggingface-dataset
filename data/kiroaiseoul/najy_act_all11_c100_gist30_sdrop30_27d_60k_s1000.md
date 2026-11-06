@@ -69,7 +69,7 @@ No se dispone de datos cuantitativos publicados en la información proporcionada
 
 | Modelo | Categoría | Parámetros | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11... (este) | ACT (LeRobot) | 51,7 M | chunk 100 (según nombre de la run) | apache-2.0 | HuggingFace, 0 descargas |
+| NAJY_act_all11... (este) | ACT (LeRobot) | 51,7 M | chunk 100 (según nombre de la run) | apache-2.0 | Hugging Face, 0 descargas |
 | ACT original (Zhao et al.) | ACT | no disponible | no disponible | no disponible | paper arXiv 2304.13705 |
 | Diffusion Policy | Política de difusión | no disponible | no disponible | no disponible | paper / repositorio público |
 | Otros checkpoints NAJY | ACT (LeRobot) | no disponible | no disponible | no disponible | no disponible |
@@ -91,7 +91,7 @@ Los datos marcados como «no disponible» no aparecen en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_sdrop30_27D_60k_s1000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_sdrop30_27D_60k_s1000
 - Paper de ACT (Action Chunking with Transformers, Zhao et al., 2023): https://arxiv.org/abs/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documento de referencia del autor (`docs/mobile_base_investigation.md` §94, proyecto trossen-ai-simulation): sin URL pública disponible en la información proporcionada.

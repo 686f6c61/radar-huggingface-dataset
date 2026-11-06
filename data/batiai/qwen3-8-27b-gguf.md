@@ -86,7 +86,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/batiai/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/batiai/Qwen3.8-27B-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Etiqueta Ollama: https://ollama.com/batiai/qwen3.8-27b
 - Cuantización de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

@@ -21,7 +21,7 @@ El modelo base es un MoE multimodal de 320B parámetros totales y 18B activos, c
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-5.3 Flash es un transformer de arquitectura MoE con 320B parámetros totales y 18B activos por token. Incorpora atención DSA (Dynamic Sparse Attention) y un componente de visión nativo, aunque esta conversión FTW no habilita la ruta de visión. El entrenamiento del modelo base fue realizado por Z.ai; los detalles completos de datos, tokens y metodología se encuentran en el informe técnico del modelo original (referencia arxiv:2602.15763 y arxiv:2608.16157 según las etiquetas de HuggingFace).
+El modelo base GLM-5.3 Flash es un transformer de arquitectura MoE con 320B parámetros totales y 18B activos por token. Incorpora atención DSA (Dynamic Sparse Attention) y un componente de visión nativo, aunque esta conversión FTW no habilita la ruta de visión. El entrenamiento del modelo base fue realizado por Z.ai; los detalles completos de datos, tokens y metodología se encuentran en el informe técnico del modelo original (referencia arxiv:2602.15763 y arxiv:2608.16157 según las etiquetas de Hugging Face).
 
 La conversión FTW realizada por OakMind AI no modifica los pesos ni la calidad esperada del modelo. Los tensores de los expertos enrutados se almacenan en bancos de expertos direccionables de forma independiente, mientras que el resto de tensores se alinean y fragmentan para el cargador nativo de FreeToken. No se realizó ningún reentrenamiento ni requantización en el momento de la conversión. El checkpoint fuente de Red Hat AI (revisión `9eaeadaf026871a90640e32c0604f6ab0b2d641d`) mantiene la representación NVFP4 en los expertos enrutados y la precisión original en el resto de componentes.
 
@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks específicos para esta conversión 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash (base) | 320B | 18B | 1M | no disponible | HuggingFace (zai-org) |
-| GLM-5.3-Flash-NVFP4 (Red Hat AI) | 320B | 18B | 1M | no disponible | HuggingFace (RedHatAI) |
-| GLM-5.3-Flash-NVFP4-FTW (OakMind) | 320B | 18B | 1M | no disponible | HuggingFace (oakmindai) |
+| GLM-5.3-Flash (base) | 320B | 18B | 1M | no disponible | Hugging Face (zai-org) |
+| GLM-5.3-Flash-NVFP4 (Red Hat AI) | 320B | 18B | 1M | no disponible | Hugging Face (RedHatAI) |
+| GLM-5.3-Flash-NVFP4-FTW (OakMind) | 320B | 18B | 1M | no disponible | Hugging Face (oakmindai) |
 
 No se dispone de información suficiente para comparar con otros modelos MoE de la misma categoría (por ejemplo, DeepSeek-V3 o Qwen3-MoE) en términos de rendimiento, ya que no se han proporcionado datos de benchmarks comparativos.
 
 ## Limitaciones y advertencias
 
 - Esta conversión no habilita la visión: el checkpoint conserva los componentes de visión del modelo original, pero la ruta de despliegue SparkLab está validada solo para texto.
-- La licencia no está especificada en la información de HuggingFace; es imprescindible revisar los términos del modelo base (zai-org/GLM-5.3-Flash) y del checkpoint fuente (RedHatAI/GLM-5.3-Flash-NVFP4) antes de cualquier uso comercial.
+- La licencia no está especificada en la información de Hugging Face; es imprescindible revisar los términos del modelo base (zai-org/GLM-5.3-Flash) y del checkpoint fuente (RedHatAI/GLM-5.3-Flash-NVFP4) antes de cualquier uso comercial.
 - El despliegue está optimizado para DGX Spark; ejecutarlo en otro hardware puede requerir ajustes no documentados y no se garantiza el rendimiento.
 - La configuración de memoria (`--memory-ratio 0.97`) es específica de este checkpoint y no debe copiarse a otros modelos sin medir el margen de memoria.
 - El modelo base puede presentar sesgos y alucinaciones inherentes a los LLM; no se han publicado evaluaciones específicas de seguridad para esta conversión.
@@ -79,7 +79,7 @@ No se dispone de información suficiente para comparar con otros modelos MoE de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oakmindai/GLM-5.3-Flash-NVFP4-FTW
+- Repositorio Hugging Face: https://huggingface.co/oakmindai/GLM-5.3-Flash-NVFP4-FTW
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Checkpoint fuente cuantizado: https://huggingface.co/RedHatAI/GLM-5.3-Flash-NVFP4
 - Herramienta de cuantización LLM Compressor: https://github.com/vllm-project/llm-compressor

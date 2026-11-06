@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario cskin666 bajo el identificador `cskin666/MyAwesomeModel-TestRepo`. La model card se presenta como una actualización de versión de un modelo previo, con mejoras declaradas en razonamiento, matemáticas y programación, y menciona una variante denominada MyAwesomeModel-Small. No obstante, el repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que se trata de un repositorio de prueba sin pesos publicados.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario cskin666 bajo el identificador `cskin666/MyAwesomeModel-TestRepo`. La model card se presenta como una actualización de versión de un modelo previo, con mejoras declaradas en razonamiento, matemáticas y programación, y menciona una variante denominada MyAwesomeModel-Small. No obstante, el repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que se trata de un repositorio de prueba sin pesos publicados.
 
-La información disponible no permite confirmar la arquitectura, el número de parámetros, la longitud de contexto ni el proceso de entrenamiento. La model card incluye referencias a resultados de benchmarks y a un sitio web oficial, pero no aporta enlaces operativos ni detalles técnicos verificables. El pipeline declarado en HuggingFace es `feature-extraction` con arquitectura `bert`, lo que contradice el contenido de la model card, orientado a un modelo generativo conversacional con razonamiento.
+La información disponible no permite confirmar la arquitectura, el número de parámetros, la longitud de contexto ni el proceso de entrenamiento. La model card incluye referencias a resultados de benchmarks y a un sitio web oficial, pero no aporta enlaces operativos ni detalles técnicos verificables. El pipeline declarado en Hugging Face es `feature-extraction` con arquitectura `bert`, lo que contradice el contenido de la model card, orientado a un modelo generativo conversacional con razonamiento.
 
 Por tanto, esta ficha se redacta con los datos disponibles y marca explícitamente como "no disponible" todo aquello que no puede verificarse. El modelo no debe considerarse apto para producción sin una validación previa de los pesos y de la documentación real.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha se redacta con los datos disponibles y marca explícitamen
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (HuggingFace declara `bert`; la model card describe un modelo generativo de razonamiento, sin confirmar) |
+| Arquitectura | no disponible (Hugging Face declara `bert`; la model card describe un modelo generativo de razonamiento, sin confirmar) |
 | Parámetros totales | no disponible |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -46,7 +46,7 @@ La única innovación técnica mencionada es el aumento de la profundidad de pen
 - Generación aumentada por recuperación (RAG): las plantillas de búsqueda web con citas `[citation:X]` están pensadas para respuestas basadas en fuentes, lo que encaja en sistemas de pregunta-respuesta documental.
 - Análisis de documentos subidos: la plantilla de carga de ficheros (`file_name`, `file_content`, `question`) permite construir flujos de resumen y extracción de información sobre documentos adjuntos.
 - Evaluación comparativa de modelos: al incluir una tabla de benchmarks con modelos de referencia (Model1, Model2, Model1-v2), puede usarse como base para experimentos de comparación, aunque los resultados no son verificables sin los pesos.
-- Clasificación y extracción de características: el pipeline declarado en HuggingFace es `feature-extraction` con arquitectura `bert`, por lo que, si los pesos existieran, podría emplearse para obtener embeddings y tareas de clasificación de texto.
+- Clasificación y extracción de características: el pipeline declarado en Hugging Face es `feature-extraction` con arquitectura `bert`, por lo que, si los pesos existieran, podría emplearse para obtener embeddings y tareas de clasificación de texto.
 
 ## Benchmarks y rendimiento
 
@@ -94,7 +94,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 ## Limitaciones y advertencias
 
 - El repositorio figura con un tamaño de 0.0 GB y cero descargas, lo que indica que no hay pesos publicados o que el repositorio es una prueba; no es desplegable tal cual.
-- Existe una contradicción entre el pipeline declarado en HuggingFace (`feature-extraction`, arquitectura `bert`) y el contenido de la model card, que describe un modelo generativo conversacional con razonamiento. Esta discrepancia impide saber qué tipo de modelo es realmente.
+- Existe una contradicción entre el pipeline declarado en Hugging Face (`feature-extraction`, arquitectura `bert`) y el contenido de la model card, que describe un modelo generativo conversacional con razonamiento. Esta discrepancia impide saber qué tipo de modelo es realmente.
 - Los benchmarks de la model card no indican las métricas ni los conjuntos de datos exactos, y los modelos de comparación están anonimizados; los resultados no son verificables.
 - No se especifican idiomas soportados, por lo que no puede garantizarse un rendimiento adecuado en castellano.
 - No se detalla el proceso de entrenamiento ni los datos utilizados, lo que impide evaluar sesgos conocidos.
@@ -104,5 +104,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/cskin666/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/cskin666/MyAwesomeModel-TestRepo
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios de código, demos ni al sitio web oficial mencionado en la model card.

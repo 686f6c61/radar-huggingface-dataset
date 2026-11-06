@@ -121,11 +121,11 @@ No se han publicado resultados de benchmarks adicionales (por ejemplo COCO, o la
 
 | Modelo | Parametros | Contexto | mAP@50 (GC10-DET) | mAP@50-95 (GC10-DET) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gc10det-rfdetr-small | 32,1 M | no aplica | 76,07 | 42,51 | Apache-2.0 | HuggingFace (este repo) |
-| RF-DETR Medium (fine-tune GC10-DET) | no disponible | no aplica | 75,93 | 41,93 | Apache-2.0 (modelo base) | HuggingFace |
-| RF-DETR Nano (fine-tune GC10-DET) | no disponible | no aplica | 70,17 | 38,06 | Apache-2.0 (modelo base) | HuggingFace |
-| YOLO26s (fine-tune GC10-DET) | no disponible | no aplica | 75,77 | 38,15 | no disponible en la informacion proporcionada | HuggingFace / Ultralytics |
-| YOLOv8n (fine-tune GC10-DET) | no disponible | no aplica | 73,25 | 38,74 | no disponible en la informacion proporcionada | HuggingFace / Ultralytics |
+| gc10det-rfdetr-small | 32,1 M | no aplica | 76,07 | 42,51 | Apache-2.0 | Hugging Face (este repo) |
+| RF-DETR Medium (fine-tune GC10-DET) | no disponible | no aplica | 75,93 | 41,93 | Apache-2.0 (modelo base) | Hugging Face |
+| RF-DETR Nano (fine-tune GC10-DET) | no disponible | no aplica | 70,17 | 38,06 | Apache-2.0 (modelo base) | Hugging Face |
+| YOLO26s (fine-tune GC10-DET) | no disponible | no aplica | 75,77 | 38,15 | no disponible en la informacion proporcionada | Hugging Face / Ultralytics |
+| YOLOv8n (fine-tune GC10-DET) | no disponible | no aplica | 73,25 | 38,74 | no disponible en la informacion proporcionada | Hugging Face / Ultralytics |
 
 Observaciones de la comparativa: RF-DETR Small obtiene el mejor mAP@50 y el mejor mAP@50-95 de toda la tabla publicada, con la precision mas alta (87,86 %), pero su recall (65,03 %) queda por debajo de YOLO26s (74,07 %), YOLOv8n (70,87 %) y RF-DETR Nano (71,04 %). Es decir, tiende a producir menos falsos positivos a costa de mas falsos negativos. No se dispone del numero de parametros de las alternativas YOLO ni de sus licencias dentro de la informacion proporcionada.
 
@@ -146,7 +146,7 @@ Observaciones de la comparativa: RF-DETR Small obtiene el mejor mAP@50 y el mejo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/gc10det-rfdetr-small
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/gc10det-rfdetr-small
 - Dataset GC10-DET: https://huggingface.co/datasets/dronefreak/GC10-DET
 - Model card del dataset (README): https://huggingface.co/datasets/dronefreak/GC10-DET/blob/main/README.md
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench

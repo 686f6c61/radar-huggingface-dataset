@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "DenRakEiw/microduck-songkran-duck_7199",
+  "slug": "denrakeiw-microduck-songkran-duck_7199",
+  "author": "DenRakEiw",
+  "url": "https://huggingface.co/DenRakEiw/microduck-songkran-duck_7199",
+  "created_at": "2026-11-06T11:12:53.000Z",
+  "updated_at": "2026-11-06T11:12:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 794276,
+  "storage_human": "794276 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microduck: a tiny biped robot you can teach new tricks",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm open-source biped robot with 15 motors, a camera, LiDAR and a grasping beak. Train new behaviours in simulation. Pre-order at $399."
+    },
+    {
+      "title": "Hugging Face’s Pollen Robotics Releases Small, Cute & Open-Source ...",
+      "url": "https://theaiinsider.tech/2026/08/28/hugging-faces-pollen-robotics-releases-small-cute-open-source-microduck-robot/",
+      "snippet": "Hugging Face's Pollen Robotics has introduced Microduck, a small biped robot designed as an open development platform for experimenting with physical AI, reinforcement learning and transferring robot behaviors from simulation into real hardware."
+    }
+  ]
+}

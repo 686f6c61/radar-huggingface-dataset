@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Depth Anything V2 Small ONNX (este repo) | no disponible | no disponible | ONNX (FP16 y cuantizado) | Apache-2.0 | HuggingFace, espejo de onnx-community |
-| Depth Anything V2 Small (original, onnx-community) | no disponible | no disponible | ONNX | Apache-2.0 | HuggingFace |
+| Depth Anything V2 Small ONNX (este repo) | no disponible | no disponible | ONNX (FP16 y cuantizado) | Apache-2.0 | Hugging Face, espejo de onnx-community |
+| Depth Anything V2 Small (original, onnx-community) | no disponible | no disponible | ONNX | Apache-2.0 | Hugging Face |
 | Depth Anything V2 (proyecto original, GitHub) | no disponible | no disponible | pesos del framework original | Apache-2.0 (variante Small) | GitHub |
 
 No hay datos de rendimiento comparativo ni de otras variantes (Base, Large) en la informacion proporcionada, por lo que la comparacion se limita a formato, licencia y procedencia.
@@ -84,7 +84,7 @@ No hay datos de rendimiento comparativo ni de otras variantes (Base, Large) en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ADI98211/depth-anything-v2-small-onnx
+- Repositorio Hugging Face: https://huggingface.co/ADI98211/depth-anything-v2-small-onnx
 - Repo ONNX de origen: https://huggingface.co/onnx-community/depth-anything-v2-small
 - Proyecto original Depth Anything V2: https://github.com/DepthAnything/Depth-Anything-V2
 - Espejo de descarga citado por el autor: https://hf-mirror.com

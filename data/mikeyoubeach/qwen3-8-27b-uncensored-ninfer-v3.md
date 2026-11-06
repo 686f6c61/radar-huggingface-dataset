@@ -25,7 +25,7 @@ Su relevancia es acotada pero concreta: permite ejecutar un modelo multimodal de
 | Motor / librería | NInfer (compilado desde fuente); `library_name: ninfer` |
 | Hardware objetivo | NVIDIA RTX 5090 (Blackwell, `sm_120a`) |
 | TRL de publicación | Creado el 2026-09-19, actualizado el 2026-09-19; 1 descarga y 1 "like" |
-| Tamaño del repositorio | 47,4 GB en HuggingFace (incluye más de un fichero; el artefacto v3 ocupa 22,09 GiB) |
+| Tamaño del repositorio | 47,4 GB en Hugging Face (incluye más de un fichero; el artefacto v3 ocupa 22,09 GiB) |
 | SHA-256 del artefacto | `d92051ef12c629f2bda98be4ec19059f4556415aa9bfffb0f0bd5d836a32f2d0` |
 
 ## Arquitectura y entrenamiento

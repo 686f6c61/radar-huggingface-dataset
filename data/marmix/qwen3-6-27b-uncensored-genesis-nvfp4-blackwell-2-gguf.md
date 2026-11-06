@@ -92,7 +92,7 @@ La comparacion directa con la variante AEON es la mas pertinente, ya que ambas p
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/MarMix/Qwen3.6-27B-Uncensored-Genesis-NVFP4-Blackwell-2-GGUF
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/MarMix/Qwen3.6-27B-Uncensored-Genesis-NVFP4-Blackwell-2-GGUF
 - Repositorio hermano (revision previa, version NVFP4): https://huggingface.co/MarMix/Qwen3.6-27B-Uncensored-Genesis-NVFP4-Blackwell-GGUF
 - Archivo GGUF concreto: https://huggingface.co/MarMix/Qwen3.6-27B-Uncensored-Genesis-NVFP4-Blackwell-GGUF/blob/main/Qwen3.6-27B-Uncensored-Genesis-NVFP4-Blackwell.gguf
 - Variante AEON-Ultimate-Uncensored (otra abliteracion del mismo base): https://github.com/lguddeti/Qwen3.6-27B-AEON-Ultimate-Uncensored/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Hritvik7654/guard` es un fine-tuning del modelo encoder `answerdotai/ModernBERT-base`, desarrollado por Hritvik Gupta (usuario Hritvik7654 en HuggingFace). Se trata de un modelo de clasificación de texto (pipeline `text-classification`) con 149,6 millones de parámetros, licencia Apache-2.0 y pesos en formato safetensors. La model card es extremadamente escasa: no especifica el dataset de entrenamiento, la tarea concreta ni las capacidades previstas, más allá de indicar que es un ajuste fino generado automáticamente con el Trainer de HuggingFace.
+El modelo `Hritvik7654/guard` es un fine-tuning del modelo encoder `answerdotai/ModernBERT-base`, desarrollado por Hritvik Gupta (usuario Hritvik7654 en Hugging Face). Se trata de un modelo de clasificación de texto (pipeline `text-classification`) con 149,6 millones de parámetros, licencia Apache-2.0 y pesos en formato safetensors. La model card es extremadamente escasa: no especifica el dataset de entrenamiento, la tarea concreta ni las capacidades previstas, más allá de indicar que es un ajuste fino generado automáticamente con el Trainer de Hugging Face.
 
 A pesar de la falta de documentación, las métricas de evaluación reportadas durante el entrenamiento muestran un rendimiento muy alto en términos de AUPRC (0,9955), AUROC (0,9975) y TPR@1FPR (0,9475), lo que sugiere que el modelo fue entrenado para una tarea de clasificación binaria o de detección de alguna característica específica. La relevancia actual radica en que ModernBERT-base es un modelo moderno y eficiente, y este fine-tuning podría ser útil en tareas de clasificación, aunque sin más detalles resulta difícil evaluar su aplicabilidad práctica.
 
@@ -21,7 +21,7 @@ A pesar de la falta de documentación, las métricas de evaluación reportadas d
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en `answerdotai/ModernBERT-base`, un encoder transformer de tipo BERT modernizado que incorpora mejoras como atención con ventana deslizante y atención global intercalada para manejar secuencias largas con mayor eficiencia. El fine-tuning se realizó con el Trainer de HuggingFace, usando un learning rate de 3e-05, batch de entrenamiento de 32, batch de evaluación de 128, optimizador AdamW (fused), scheduler lineal con warmup ratio de 0,06 y 2 épocas. El dataset de entrenamiento se indica como "None", lo que sugiere que no se ha documentado públicamente. No se menciona el uso de RLHF, DPO u otras técnicas de alineación; se trata de un ajuste fino supervisado estándar.
+El modelo se basa en `answerdotai/ModernBERT-base`, un encoder transformer de tipo BERT modernizado que incorpora mejoras como atención con ventana deslizante y atención global intercalada para manejar secuencias largas con mayor eficiencia. El fine-tuning se realizó con el Trainer de Hugging Face, usando un learning rate de 3e-05, batch de entrenamiento de 32, batch de evaluación de 128, optimizador AdamW (fused), scheduler lineal con warmup ratio de 0,06 y 2 épocas. El dataset de entrenamiento se indica como "None", lo que sugiere que no se ha documentado públicamente. No se menciona el uso de RLHF, DPO u otras técnicas de alineación; se trata de un ajuste fino supervisado estándar.
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ Estos valores son internos del proceso de entrenamiento y no permiten comparar c
 - VRAM estimada: al ser un modelo de 149 millones de parámetros en precisión FP32, se necesitan aproximadamente 600 MB de memoria para los pesos. En FP16 serían unos 300 MB. Inferencia en CPU es viable.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo cómodamente. Tarjetas como NVIDIA T4, RTX 3060, RTX 4090 o superiores son suficientes.
 - Cabe en GPUs de consumo: sí, incluso en GPUs integradas con suficiente RAM compartida.
-- Opciones de despliegue: compatible con HuggingFace Transformers, puede servirse con Text Embeddings Inference (TEI) según las etiquetas, y también con vLLM o TGI si se adapta. Para CPU, se puede usar ONNX Runtime o llama.cpp (aunque es un encoder, no un LLM generativo).
+- Opciones de despliegue: compatible con Hugging Face Transformers, puede servirse con Text Embeddings Inference (TEI) según las etiquetas, y también con vLLM o TGI si se adapta. Para CPU, se puede usar ONNX Runtime o llama.cpp (aunque es un encoder, no un LLM generativo).
 - Latencia y throughput: no disponibles. Para un modelo de este tamaño, en GPU se esperan latencias de milisegundos por lote pequeño.
 
 ## Comparativa con modelos similares
@@ -85,6 +85,6 @@ No se dispone de comparativas de rendimiento con estos modelos porque no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hritvik7654/guard
+- Modelo en Hugging Face: https://huggingface.co/Hritvik7654/guard
 - Modelo base ModernBERT-base: https://huggingface.co/answerdotai/ModernBERT-base
-- Perfil del autor en HuggingFace: https://huggingface.co/Hritvik7654 (inferido, no confirmado en la información proporcionada)
+- Perfil del autor en Hugging Face: https://huggingface.co/Hritvik7654 (inferido, no confirmado en la información proporcionada)

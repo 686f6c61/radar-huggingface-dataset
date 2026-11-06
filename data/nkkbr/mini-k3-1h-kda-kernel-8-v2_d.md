@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H-kda-kernel-8-v2_D es un checkpoint de preentrenamiento de la familia Mini-K3-1H v2, publicada por el usuario nkkbr en HuggingFace. Se trata de un modelo de lenguaje decoder-only de aproximadamente 1.017 millones de parametros logicos, construido como proxy a escala reducida de la arquitectura Kimi-K3 para realizar comparaciones controladas de diseno. Conserva los operadores KDA (atencion linear con decaimiento) y Gated MLA (atencion latente con puerta de salida) de Kimi-K3, ademas de residuales de atencion por bloques, mezcla de expertos Stable LatentMoE, activaciones SiTU y Quantile Balancing en el enrutador. La variante concreta de este repositorio es la "kda-kernel-8", que fija la profundidad del kernel de convolucion causal depthwise de KDA en 8.
+Mini-K3-1H-kda-kernel-8-v2_D es un checkpoint de preentrenamiento de la familia Mini-K3-1H v2, publicada por el usuario nkkbr en Hugging Face. Se trata de un modelo de lenguaje decoder-only de aproximadamente 1.017 millones de parametros logicos, construido como proxy a escala reducida de la arquitectura Kimi-K3 para realizar comparaciones controladas de diseno. Conserva los operadores KDA (atencion linear con decaimiento) y Gated MLA (atencion latente con puerta de salida) de Kimi-K3, ademas de residuales de atencion por bloques, mezcla de expertos Stable LatentMoE, activaciones SiTU y Quantile Balancing en el enrutador. La variante concreta de este repositorio es la "kda-kernel-8", que fija la profundidad del kernel de convolucion causal depthwise de KDA en 8.
 
 El modelo pertenece a un experimento de 20 arquitecturas comparadas bajo un esquema de inicializacion determinista con semilla base 20260914, donde los parametros con el mismo nombre y forma arrancan identicos byte a byte entre variantes. Esto permite atribuir las diferencias de rendimiento exclusivamente al cambio arquitectonico aislado. Los pesos se distribuyen en formato safetensors con codigo de modelado propio en PyTorch.
 
@@ -104,7 +104,7 @@ La comparacion de rendimiento no es posible: Mini-K3-1H v2 no publica resultados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-kda-kernel-8-v2_D
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-kda-kernel-8-v2_D
 - Archivos internos del repositorio citados en la model card: `modeling_mini_k3.py`, `configuration_mini_k3.py`, `initialize_model.py`, `smoke_test.py`, `ARCHITECTURE_PACKAGE_README.md`, `ARCHITECTURE.md`, `VARIANT.md`, `config.json`, `model.safetensors`, manifiestos JSON de configuracion y metricas JSONL del run.
 - Metricas de entrenamiento: registradas por el autor en Weights & Biases (no se proporciona URL concreta en la informacion disponible).
 - La busqueda web realizada no devolvio ningun resultado relevante: los enlaces recuperados pertenecen a un sitio de streaming de animacion en persa y no guardan relacion con el modelo, su paper ni su repositorio de experimentos. No se dispone de enlaces a paper, blog tecnico, repositorio de codigo de entrenamiento ni demo.

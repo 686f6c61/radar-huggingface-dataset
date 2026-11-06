@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/gemma-3-12b-fve-workanchor-s2` es un checkpoint de investigación derivado de `google/gemma-3-12b-it`, publicado por el usuario joshycodes en HuggingFace. No se trata de un lanzamiento de Google, sino de un experimento de continued pretraining sobre pesos completos de un modelo ya existente. El autor lo enmarca dentro de una línea de trabajo sobre bienestar de modelos (model welfare), con etiquetas explícitas como `self-authored-character`, `synthetic-document-finetuning` y `not-for-deployment`.
+`joshycodes/gemma-3-12b-fve-workanchor-s2` es un checkpoint de investigación derivado de `google/gemma-3-12b-it`, publicado por el usuario joshycodes en Hugging Face. No se trata de un lanzamiento de Google, sino de un experimento de continued pretraining sobre pesos completos de un modelo ya existente. El autor lo enmarca dentro de una línea de trabajo sobre bienestar de modelos (model welfare), con etiquetas explícitas como `self-authored-character`, `synthetic-document-finetuning` y `not-for-deployment`.
 
 El punto de partida es la arquitectura Gemma 3 de 12B de Google, un transformer decoder-only multimodal con ventana de contexto de 128K y soporte declarado de más de 140 idiomas en su versión original. Sobre esa base se aplicó un entrenamiento continuado de pesos completos (learning rate 1e-05, una época, 7.538.147 tokens distribuidos en 7.740 documentos) usando un corpus que, según la model card, el propio modelo escribió como personaje para el entrenamiento de su siguiente versión, denominado `flourishing-vs-equanimity`. El repositorio ocupa 26,4 GB y contiene 13.194.203.760 parámetros en formato safetensors.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de evaluaciones comparativas entre estos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-workanchor-s2
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-workanchor-s2
 - Checkpoint previo de la misma serie: https://huggingface.co/joshycodes/gemma-3-12b-fve-workanchor-s1
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Pagina oficial de Gemma 3 (Google DeepMind): https://deepmind.google/models/gemma/gemma-3/

@@ -77,12 +77,12 @@ No disponible. Al tratarse de un entorno de simulación específico, no se dispo
 - La licencia no está especificada en la información proporcionada. Es necesario verificar la licencia antes de cualquier uso comercial.
 - El entorno es 2D y simplificado, por lo que no reproduce la complejidad de los entornos 3D reales ni las dinámicas físicas de robots.
 - Las etiquetas de dificultad se basan en una política de caminata aleatoria uniforme (`sa_uniform`), que puede no reflejar el rendimiento de políticas aprendidas más sofisticadas.
-- El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que los archivos pueden no estar completos o no haberse subido correctamente.
+- El repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que los archivos pueden no estar completos o no haberse subido correctamente.
 - No hay benchmarks publicados de rendimiento de agentes entrenados en este entorno en la información disponible.
 - El idioma de los identificadores y comentarios es inglés, sin localización a español.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nam2452110/hm3dnav
-- Model card del autor: disponible en la misma página de HuggingFace.
+- Hugging Face: https://huggingface.co/Nam2452110/hm3dnav
+- Model card del autor: disponible en la misma página de Hugging Face.
 - La búsqueda web no arrojó resultados adicionales relevantes (únicamente páginas no relacionadas como Google Docs o generadores de modelos 3D).

@@ -4,7 +4,7 @@
 
 Swift 1.5 Qwen3.8-27B es un ajuste fino derivado de Qwen/Qwen3.8-27B desarrollado por UkisAI, orientado a reducir el coste de razonamiento sin perder exactitud. Segun su model card, emplea un 58,5 % menos de tokens de pensamiento que el modelo base y obtiene una puntuacion agregada un 0,35 % superior, lo que se traduce en una aceleracion de 1,95x en varias tareas. El modelo tiene 27.781.427.952 parametros (unos 27,78 B) y un repositorio de 55,6 GB en formato safetensors.
 
-La ficha de HuggingFace que se analiza aqui (jEROMELebon91/Swift-1.5-Qwen3.8-27b) es una copia con 8 descargas y 0 likes cuyo contenido apunta al repositorio original de UkisAI (ukisai/Swift-1.5-Qwen3.8-27b), que aparece marcado como gated. La relevancia del modelo esta en su propuesta de eficiencia: en lugar de recortar directamente la longitud del razonamiento, el entrenamiento penaliza los tokens asociados a sobrepensamiento patologico y recupera exactitud mediante RL y OPD, con foco declarado en tareas de codigo y agenticas de horizonte largo.
+La ficha de Hugging Face que se analiza aqui (jEROMELebon91/Swift-1.5-Qwen3.8-27b) es una copia con 8 descargas y 0 likes cuyo contenido apunta al repositorio original de UkisAI (ukisai/Swift-1.5-Qwen3.8-27b), que aparece marcado como gated. La relevancia del modelo esta en su propuesta de eficiencia: en lugar de recortar directamente la longitud del razonamiento, el entrenamiento penaliza los tokens asociados a sobrepensamiento patologico y recupera exactitud mediante RL y OPD, con foco declarado en tareas de codigo y agenticas de horizonte largo.
 
 El pipeline declarado es image-text-to-text, aunque la model card no describe capacidades de vision ni especifica arquitectura interna, longitud de contexto o idiomas soportados. La licencia es propietaria (swift-open-license-1.0), no estandar, por lo que cualquier uso comercial exige revisar el texto legal antes de desplegar.
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento ni de contexto para comparar con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia analizada): https://huggingface.co/jEROMELebon91/Swift-1.5-Qwen3.8-27b
+- Modelo en Hugging Face (copia analizada): https://huggingface.co/jEROMELebon91/Swift-1.5-Qwen3.8-27b
 - Repositorio oficial declarado: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Version GGUF oficial: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF
 - Version GSQ-RCO GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF

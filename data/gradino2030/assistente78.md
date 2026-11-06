@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Assistente78 es un repositorio publicado en HuggingFace por el usuario Gradino2030 bajo el identificador `Gradino2030/Assistente78`. En el momento de la consulta, el repositorio no incluye model card sustantiva (unicamente la declaracion de licencia `agpl-3.0` en el frontmatter del README), no declara pipeline, idiomas soportados ni arquitectura, y su tamano es de 0.0 GB, lo que indica que no se han subido pesos ni ficheros de modelo. El repositorio acumula 0 descargas y 0 likes.
+Assistente78 es un repositorio publicado en Hugging Face por el usuario Gradino2030 bajo el identificador `Gradino2030/Assistente78`. En el momento de la consulta, el repositorio no incluye model card sustantiva (unicamente la declaracion de licencia `agpl-3.0` en el frontmatter del README), no declara pipeline, idiomas soportados ni arquitectura, y su tamano es de 0.0 GB, lo que indica que no se han subido pesos ni ficheros de modelo. El repositorio acumula 0 descargas y 0 likes.
 
 No se dispone de informacion verificable sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni procesos de alineacion. Tampoco se han encontrado publicaciones, papers, blogs ni repositorios asociados en la busqueda web realizada; los resultados devueltos por el buscador corresponden a consultas no relacionadas con este modelo y han sido descartados por no aportar informacion tecnica.
 
@@ -97,7 +97,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio de aplic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gradino2030/Assistente78
+- Hugging Face: https://huggingface.co/Gradino2030/Assistente78
 - Texto de la licencia AGPL-3.0: https://www.gnu.org/licenses/agpl-3.0.html
 - Papers, blogs, repositorios o demos del autor: no disponible
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a consultas no relacionadas y se han descartado.

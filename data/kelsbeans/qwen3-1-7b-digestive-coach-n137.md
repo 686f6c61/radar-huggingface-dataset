@@ -4,7 +4,7 @@
 
 El modelo `kelsbeans/qwen3-1.7b-digestive-coach-n1377` es un ajuste fino (fine-tune) del modelo base `unsloth/qwen3-1.7b-unsloth-bnb-4bit`, desarrollado por el usuario kelsbeans. El nombre del modelo sugiere una especialización en coaching digestivo, aunque la documentación proporcionada no incluye detalles sobre el dataset de entrenamiento ni las tareas concretas. Se distribuye bajo licencia Apache-2.0 y está orientado a la generación de texto conversacional en inglés.
 
-El modelo tiene 1.720.574.976 parámetros (aproximadamente 1,7 mil millones), lo que lo sitúa en la gama de modelos pequeños y eficientes. Fue entrenado con la librería Unsloth y HuggingFace TRL, lo que indica un proceso de fine-tuning estándar sobre un modelo base cuantizado en 4 bits. El repositorio ocupa 3,5 GB y los pesos están en formato safetensors.
+El modelo tiene 1.720.574.976 parámetros (aproximadamente 1,7 mil millones), lo que lo sitúa en la gama de modelos pequeños y eficientes. Fue entrenado con la librería Unsloth y Hugging Face TRL, lo que indica un proceso de fine-tuning estándar sobre un modelo base cuantizado en 4 bits. El repositorio ocupa 3,5 GB y los pesos están en formato safetensors.
 
 Su relevancia radica en ser un ejemplo de fine-tuning accesible y de código abierto sobre la familia Qwen3, con un tamaño que permite su ejecución en hardware de consumo. Sin embargo, la ausencia de documentación detallada limita su evaluación rigurosa y su uso directo en producción sin pruebas previas.
 
@@ -25,7 +25,7 @@ Su relevancia radica en ser un ejemplo de fine-tuning accesible y de código abi
 
 La arquitectura del modelo corresponde a la familia Qwen3, un transformer decoder-only con atención por ventanas de contexto, pero no se ha documentado la configuración exacta (número de capas, cabezas de atención, etc.) en esta ficha. El modelo base es `unsloth/qwen3-1.7b-unsloth-bnb-4bit`, que es una versión cuantizada en 4-bit de Qwen3-1.7B, optimizada para entrenamiento con Unsloth.
 
-El entrenamiento se realizó mediante fine-tuning supervisado (SFT) con la librería Unsloth y HuggingFace TRL, como indica el autor en la model card. No se especifica el número de tokens de entrenamiento, el dataset utilizado, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se detalla si se usaron técnicas como LoRA o QLoRA, aunque el uso de un modelo base en 4-bit sugiere la aplicación de QLoRA para el entrenamiento.
+El entrenamiento se realizó mediante fine-tuning supervisado (SFT) con la librería Unsloth y Hugging Face TRL, como indica el autor en la model card. No se especifica el número de tokens de entrenamiento, el dataset utilizado, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se detalla si se usaron técnicas como LoRA o QLoRA, aunque el uso de un modelo base en 4-bit sugiere la aplicación de QLoRA para el entrenamiento.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kelsbeans/qwen3-1.7b-digestive-coach-n1377 | 1.72B | No disponible | Apache-2.0 | HuggingFace |
-| Qwen3-1.7B (base) | 1.72B | 32K (valor de la serie Qwen3) | Apache-2.0 | HuggingFace |
-| Llama-3.2-1B | 1.23B | 128K | Llama 3.2 | HuggingFace |
-| Phi-3-mini (3.8B) | 3.8B | 128K | MIT | HuggingFace |
+| kelsbeans/qwen3-1.7b-digestive-coach-n1377 | 1.72B | No disponible | Apache-2.0 | Hugging Face |
+| Qwen3-1.7B (base) | 1.72B | 32K (valor de la serie Qwen3) | Apache-2.0 | Hugging Face |
+| Llama-3.2-1B | 1.23B | 128K | Llama 3.2 | Hugging Face |
+| Phi-3-mini (3.8B) | 3.8B | 128K | MIT | Hugging Face |
 
 La comparativa se limita a parámetros y contexto, ya que no se dispone de datos de rendimiento del fine-tune. El modelo base Qwen3-1.7B tiene una ventana de contexto típica de 32K (según la documentación de Qwen3), pero no se confirma para este fine-tune. Llama-3.2-1B es un modelo comparable en tamaño y licencia, pero con contexto mucho mayor. Phi-2 es de mayor tamaño y no es directamente comparable.
 
@@ -80,7 +80,7 @@ La comparativa se limita a parámetros y contexto, ya que no se dispone de datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: [kelsbeans/qwen3-1.7b-digestive-coach-n1377](https://huggingface.co/kelsbeans/qwen3-1.7b-digestive-coach-n1377)
+- Modelo en Hugging Face: [kelsbeans/qwen3-1.7b-digestive-coach-n1377](https://huggingface.co/kelsbeans/qwen3-1.7b-digestive-coach-n1377)
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Página de Qwen3-1.7B en Qualcomm AI Hub: https://aihub.qualcomm.com/compute/models/qwen3_1_7b
 

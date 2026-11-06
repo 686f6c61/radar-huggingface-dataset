@@ -69,10 +69,10 @@ Los resultados son coherentes con un modelo de 229M parametros: mejora clara sob
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| KrynexAI-1.5-250M-Instruct-Mobile | 229,7M | 2.048 | Apache-2.0 | HuggingFace (safetensors, GGUF) |
-| SmolLM-135M | 135M | 2.048 | Apache-2.0 | HuggingFace |
-| Qwen2.5-0.5B | 494M | 32.768 | Apache-2.0 | HuggingFace |
-| TinyLlama-1.1B | 1,1B | 2.048 | Apache-2.0 | HuggingFace |
+| KrynexAI-1.5-250M-Instruct-Mobile | 229,7M | 2.048 | Apache-2.0 | Hugging Face (safetensors, GGUF) |
+| SmolLM-135M | 135M | 2.048 | Apache-2.0 | Hugging Face |
+| Qwen2.5-0.5B | 494M | 32.768 | Apache-2.0 | Hugging Face |
+| TinyLlama-1.1B | 1,1B | 2.048 | Apache-2.0 | Hugging Face |
 
 Frente a SmolLM-135M, KrynexAI ofrece mas parametros pero un contexto identico; frente a Qwen2.5-0.5B, este ultimo supera ampliamente en contexto y, previsiblemente, en rendimiento. TinyLlama-1.1B es varias veces mayor y no es directamente comparable en coste de inferencia. No se dispone de datos de benchmarks cruzados en la informacion proporcionada para establecer una comparacion cuantitativa rigurosa.
 
@@ -87,7 +87,7 @@ Frente a SmolLM-135M, KrynexAI ofrece mas parametros pero un contexto identico; 
 - No se documentan evaluaciones de sesgo, toxicidad ni robustez adversarial.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/KrynexLabs/KrynexAI-1.5-250M-Instruct-Mobile
+- Hugging Face: https://huggingface.co/KrynexLabs/KrynexAI-1.5-250M-Instruct-Mobile
 - Modelo base: https://huggingface.co/SupraLabs/Supra2.1-Ultra
 - Dataset: https://huggingface.co/datasets/KrynexLabs/KrynexAI-Santa-Ana-Tusi-Pasco-Quechua
 - Dataset: https://huggingface.co/datasets/KrynexLabs/KrynexAI-Dataset-Mini-Top1

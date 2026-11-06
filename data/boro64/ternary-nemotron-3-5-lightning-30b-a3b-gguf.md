@@ -16,7 +16,7 @@ Su relevancia radica en la eficiencia extrema: el archivo GGUF ocupa 8,82 GB y p
 | Longitud de contexto | 262.144 nativos; verificado hasta 341K (extrapolación); utilizable hasta ~400K |
 | Tipos de cuantizacion | Lineares en Q2_0 (ternario, 2,25 bpw); embeddings y lm_head en Q8_0; normas, conv1d, A_log/D/dt_bias y router en F32; caché KV recomendada en q8_0 |
 | Idiomas soportados | no disponible |
-| Licencia | openmdw-1.1 (licencia "other" en HuggingFace) |
+| Licencia | openmdw-1.1 (licencia "other" en Hugging Face) |
 | Formato de pesos | GGUF (archivo único de 8,82 GB); origen: MLX 2-bit affine de Nota AI, base BF16 de NVIDIA |
 
 ## Arquitectura y entrenamiento
@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros totales | Activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ternary Nemotron 3.5 Lightning 30B-A3B (GGUF, este modelo) | 31,6 B | ~3 B | 262K nativos (~341K verificado) | Q2_0 ternario (2,25 bpw) + Q8_0 | openmdw-1.1 | GGUF publico en HuggingFace |
-| NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 31,6 B | ~3 B | no disponible | BF16 | no disponible | Publico en HuggingFace (NVIDIA) |
-| Nemotron-3.5-Lightning-30B-A3B-Nota-Ternary-MLX-1014 | 31,6 B | ~3 B | no disponible | Ternario 1.58-bit en MLX 2-bit | no disponible | Publico en HuggingFace (Nota AI), solo Apple Silicon |
+| Ternary Nemotron 3.5 Lightning 30B-A3B (GGUF, este modelo) | 31,6 B | ~3 B | 262K nativos (~341K verificado) | Q2_0 ternario (2,25 bpw) + Q8_0 | openmdw-1.1 | GGUF publico en Hugging Face |
+| NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 31,6 B | ~3 B | no disponible | BF16 | no disponible | Publico en Hugging Face (NVIDIA) |
+| Nemotron-3.5-Lightning-30B-A3B-Nota-Ternary-MLX-1014 | 31,6 B | ~3 B | no disponible | Ternario 1.58-bit en MLX 2-bit | no disponible | Publico en Hugging Face (Nota AI), solo Apple Silicon |
 
 El valor diferencial de este repositorio es la portabilidad: mismos pesos ternarios que la version de Nota AI pero en GGUF, ejecutable en hardware NVIDIA/Windows/Linux, con documentacion de rendimiento y limites de contexto muy detallada.
 
@@ -96,7 +96,7 @@ El valor diferencial de este repositorio es la portabilidad: mismos pesos ternar
 - Riesgo de degradacion silenciosa en Windows si se excede la VRAM (demotion WDDM, ~20× mas lento).
 - Incompatibilidad con `--kv-vram-cells` (corrupcion silenciosa de la recuperacion de atención).
 - Idiomas soportados: no disponible en la ficha; no hay garantia explicita de rendimiento en castellano.
-- Licencia openmdw-1.1 ("other" en HuggingFace): revisar los terminos en https://openmdw.ai/license/1-1/ antes de uso comercial.
+- Licencia openmdw-1.1 ("other" en Hugging Face): revisar los terminos en https://openmdw.ai/license/1-1/ antes de uso comercial.
 - Sesgos y alucinaciones especificos del modelo: no disponibles; aplicar las cautelas habituales de los LLM.
 - La herramienta de conversion usada por el autor no se distribuye (aunque el metodo esta documentado para reproducirlo).
 

@@ -103,7 +103,7 @@ No se han identificado en la informacion disponible modelos publicos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/buzinguyen/odd-conditioned-dev
+- Modelo en Hugging Face: https://huggingface.co/buzinguyen/odd-conditioned-dev
 - Pesos agregados: https://huggingface.co/buzinguyen/odd-conditioned-dev/resolve/c923466bd1c68132b643f6806b9e8a2c532e4f1f/odd-conditioned-weights-v1.tar.gz
 - Código, documentación y evaluación: https://github.com/SafeRoboticsLab/odd-conditioned/tree/cleanup (rama `cleanup`)
 - Política de marcha nominal (go2_atomic_skills): https://github.com/SafeRoboticsLab/go2_atomic_skills

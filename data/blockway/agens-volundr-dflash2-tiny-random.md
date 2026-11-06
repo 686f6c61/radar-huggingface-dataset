@@ -73,9 +73,9 @@ El autor indica explicitamente que los accept lengths de este modelo "no tienen 
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Blockway/Agens-Volundr-DFlash2-tiny-random (este) | 8,03 M | No disponible | Drafter DFlash2 de prueba con pesos aleatorios | Apache 2.0 | HuggingFace, 0 descargas |
-| Blockway/Agens-Volundr-tiny-random | No disponible | No disponible | Modelo objetivo de prueba para el drafter | No disponible en la informacion | HuggingFace |
-| Blockway/Agens-Volundr-32B-v1-DFlash2 | No disponible (el nombre sugiere 32B, sin confirmar) | No disponible | Drafter DFlash2 real, mismo esquema de configuracion | No disponible en la informacion | HuggingFace |
+| Blockway/Agens-Volundr-DFlash2-tiny-random (este) | 8,03 M | No disponible | Drafter DFlash2 de prueba con pesos aleatorios | Apache 2.0 | Hugging Face, 0 descargas |
+| Blockway/Agens-Volundr-tiny-random | No disponible | No disponible | Modelo objetivo de prueba para el drafter | No disponible en la informacion | Hugging Face |
+| Blockway/Agens-Volundr-32B-v1-DFlash2 | No disponible (el nombre sugiere 32B, sin confirmar) | No disponible | Drafter DFlash2 real, mismo esquema de configuracion | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos publicos de benchmarks ni de otros drafters DFlash2 comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento.
 
@@ -93,7 +93,7 @@ No se dispone de datos publicos de benchmarks ni de otros drafters DFlash2 compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blockway/Agens-Volundr-DFlash2-tiny-random
+- Modelo en Hugging Face: https://huggingface.co/Blockway/Agens-Volundr-DFlash2-tiny-random
 - Modelo objetivo mencionado: https://huggingface.co/Blockway/Agens-Volundr-tiny-random
 - Drafter DFlash2 de referencia (32B): https://huggingface.co/Blockway/Agens-Volundr-32B-v1-DFlash2
 - Repositorio SGLang (stack de pruebas Volundr): https://github.com/sgl-project/sglang

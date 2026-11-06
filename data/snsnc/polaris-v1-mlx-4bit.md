@@ -75,7 +75,7 @@ La comparativa se basa en datos públicos; no se dispone de benchmarks directos 
 
 ## Enlaces
 
-- [Modelo en HuggingFace (snsnc/Polaris-V1-MLX-4bit)](https://huggingface.co/snsnc/Polaris-V1-MLX-4bit)
+- [Modelo en Hugging Face (snsnc/Polaris-V1-MLX-4bit)](https://huggingface.co/snsnc/Polaris-V1-MLX-4bit)
 - [Modelo base Polaris-V1 (nitrai-research)](https://huggingface.co/nitrai-research/Polaris-V1)
 - [Qwen3.5-4B (Qwen)](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Qwen3.5-4B-Base](https://huggingface.co/Qwen/Qwen3.5-4B-Base)

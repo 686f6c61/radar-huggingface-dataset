@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_generator_AS_confidence_numina_llama8b` es un modelo de generación de texto publicado en HuggingFace por el usuario `ishikaa`. Según la información disponible, se trata de un modelo con 8.030.261.248 parámetros almacenados en formato safetensors y cargado mediante la biblioteca transformers. La model card publicada es una plantilla generada automáticamente sin contenido técnico, por lo que se desconocen aspectos fundamentales como la arquitectura exacta, los datos de entrenamiento, la licencia o los idiomas soportados.
+El modelo `ishikaa/acquisition_generator_AS_confidence_numina_llama8b` es un modelo de generación de texto publicado en Hugging Face por el usuario `ishikaa`. Según la información disponible, se trata de un modelo con 8.030.261.248 parámetros almacenados en formato safetensors y cargado mediante la biblioteca transformers. La model card publicada es una plantilla generada automáticamente sin contenido técnico, por lo que se desconocen aspectos fundamentales como la arquitectura exacta, los datos de entrenamiento, la licencia o los idiomas soportados.
 
 El identificador del repositorio sugiere que podría tratarse de un ajuste fino de un modelo base Llama 8B, posiblemente relacionado con un conjunto de datos denominado Numina, pero no hay confirmación en la documentación proporcionada. Su relevancia actual es limitada debido a la ausencia de información técnica detallada y de benchmarks publicados que permitan evaluar su rendimiento de forma objetiva.
 
@@ -64,5 +64,5 @@ No disponible. La única información conocida es el tamaño de parámetros, sim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_llama8b
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_llama8b
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

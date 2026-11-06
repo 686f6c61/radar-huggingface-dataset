@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yejin Korean 8B v3 SFT v2 (no-think) es un modelo de lenguaje de tipo decoder-only afinado por instrucciones para coreano, publicado por el usuario cooler8 en HuggingFace. Segun los metadatos del repositorio, la arquitectura pertenece a la familia Qwen3, con 7.241.740.288 parametros totales almacenados en formato safetensors (el repositorio ocupa 14,5 GB, coherente con pesos en bfloat16). Se distribuye bajo licencia Apache 2.0 y declara un unico idioma soportado: coreano.
+Yejin Korean 8B v3 SFT v2 (no-think) es un modelo de lenguaje de tipo decoder-only afinado por instrucciones para coreano, publicado por el usuario cooler8 en Hugging Face. Segun los metadatos del repositorio, la arquitectura pertenece a la familia Qwen3, con 7.241.740.288 parametros totales almacenados en formato safetensors (el repositorio ocupa 14,5 GB, coherente con pesos en bfloat16). Se distribuye bajo licencia Apache 2.0 y declara un unico idioma soportado: coreano.
 
 El modelo es, segun su propia model card, una variante de pesos identicos a cooler8/yejin-korean-8b-v3-sft-v2. La unica diferencia es la plantilla de chat: en esta version el bloque de razonamiento (`<think> </think>`) se rellena vacio por defecto, de modo que el modelo responde de forma directa sin emitir cadena de pensamiento. Pasando `enable_thinking=True` a `apply_chat_template` se recupera el comportamiento original con razonamiento explicito.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cooler8/yejin-korean-8b-v3-sft-v2-nothink | 7,24 mil millones | No disponible | Coreano | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3-8B (modelo base de referencia de la familia) | ~8 mil millones | No disponible en esta ficha | Multilingue, con coreano entre los idiomas cubiertos | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| EXAONE-3.5-7.8B (LG AI Research) | ~7,8 mil millones | No disponible en esta ficha | Coreano e ingles | Licencia propia de EXAONE (no Apache 2.0) | HuggingFace |
-| HyperCLOVAX-SEED-Text-8B (Naver) | ~8 mil millones | No disponible en esta ficha | Coreano e ingles | Licencia propia de Naver | HuggingFace |
+| cooler8/yejin-korean-8b-v3-sft-v2-nothink | 7,24 mil millones | No disponible | Coreano | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3-8B (modelo base de referencia de la familia) | ~8 mil millones | No disponible en esta ficha | Multilingue, con coreano entre los idiomas cubiertos | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| EXAONE-3.5-7.8B (LG AI Research) | ~7,8 mil millones | No disponible en esta ficha | Coreano e ingles | Licencia propia de EXAONE (no Apache 2.0) | Hugging Face |
+| HyperCLOVAX-SEED-Text-8B (Naver) | ~8 mil millones | No disponible en esta ficha | Coreano e ingles | Licencia propia de Naver | Hugging Face |
 
 La comparacion es necesariamente parcial: no hay datos publicos de rendimiento de este modelo frente a las alternativas, y las cifras de contexto y de evaluacion de los competidores deben consultarse en sus respectivas fichas. El principal diferencial de esta variante es la conmutacion del bloque de razonamiento sin cambiar de pesos.
 
@@ -91,6 +91,6 @@ La comparacion es necesariamente parcial: no hay datos publicos de rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-sft-v2-nothink
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-sft-v2-nothink
 - Variante con pensamiento habilitado (mismos pesos): https://huggingface.co/cooler8/yejin-korean-8b-v3-sft-v2
-- Perfil del autor en HuggingFace: https://huggingface.co/cooler8
+- Perfil del autor en Hugging Face: https://huggingface.co/cooler8

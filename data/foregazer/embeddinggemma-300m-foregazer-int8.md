@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Foregazer/embeddinggemma-300m-foregazer-int8 | 300M | no disponible (app: 512 tokens/fragmento) | ONNX int8 (datos externos) | Gemma Terms of Use | HuggingFace, 0 descargas |
-| google/embeddinggemma-300m | 300M | no disponible | safetensors (original) | Gemma Terms of Use | HuggingFace (oficial) |
-| onnx-community/embeddinggemma-300m-ONNX | 300M | no disponible | ONNX | Gemma Terms of Use | HuggingFace |
+| Foregazer/embeddinggemma-300m-foregazer-int8 | 300M | no disponible (app: 512 tokens/fragmento) | ONNX int8 (datos externos) | Gemma Terms of Use | Hugging Face, 0 descargas |
+| google/embeddinggemma-300m | 300M | no disponible | safetensors (original) | Gemma Terms of Use | Hugging Face (oficial) |
+| onnx-community/embeddinggemma-300m-ONNX | 300M | no disponible | ONNX | Gemma Terms of Use | Hugging Face |
 
 No se dispone de datos de benchmarks para establecer comparaciones de rendimiento entre estas variantes. La diferencia principal es el formato y el nivel de cuantización, no la arquitectura ni los parámetros.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks para establecer comparaciones de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Foregazer/embeddinggemma-300m-foregazer-int8
+- Modelo en Hugging Face: https://huggingface.co/Foregazer/embeddinggemma-300m-foregazer-int8
 - Modelo base original: https://huggingface.co/google/embeddinggemma-300m
 - Export ONNX previo: https://huggingface.co/onnx-community/embeddinggemma-300m-ONNX
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

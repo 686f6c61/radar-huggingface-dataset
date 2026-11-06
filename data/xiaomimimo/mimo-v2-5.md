@@ -76,7 +76,7 @@ No se dispone de información comparativa con otros modelos en los datos proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.5
+- Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.5
 - Blog oficial: https://mimo.xiaomi.com/mimo-v2-5
 - Plataforma API: https://platform.xiaomimimo.com
 - Studio (demo): https://aistudio.xiaomimimo.com

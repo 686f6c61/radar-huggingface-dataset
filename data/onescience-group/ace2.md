@@ -6,7 +6,7 @@ ACE2 es un modelo de emulación atmosférica global desarrollado por equipos del
 
 A diferencia de un modelo de lenguaje, ACE2 es un operador neuronal de Fourier esférico (SFNO) que aprende transiciones atmosféricas globales sobre una rejilla de un grado (180×360) con 50 canales de estado y ocho niveles verticales. El artículo entrena modelos separados sobre el reanálisis ERA5 y sobre simulaciones históricas del modelo SHiELD, y el objetivo declarado es cubrir desde escalas meteorológicas hasta estadísticas climáticas de largo plazo (subestacional a decadal).
 
-El repositorio de HuggingFace `OneScience-Group/ACE2` no distribuye el checkpoint oficial, sino una reproducción de ingeniería independiente con datos sintéticos que replica la rejilla, los canales, los niveles y la cadencia temporal del artículo, reduciendo el número de muestras, la escala del modelo y las épocas. Es relevante ahora porque permite validar pipelines de entrenamiento, inferencia y evaluación de emuladores atmosféricos con correcciones físicas sin acceso al dataset completo, aunque sus resultados no equivalen al rendimiento publicado.
+El repositorio de Hugging Face `OneScience-Group/ACE2` no distribuye el checkpoint oficial, sino una reproducción de ingeniería independiente con datos sintéticos que replica la rejilla, los canales, los niveles y la cadencia temporal del artículo, reduciendo el número de muestras, la escala del modelo y las épocas. Es relevante ahora porque permite validar pipelines de entrenamiento, inferencia y evaluación de emuladores atmosféricos con correcciones físicas sin acceso al dataset completo, aunque sus resultados no equivalen al rendimiento publicado.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Datos adicionales de estructura: rejilla global de un grado (180×360), 50 canal
 
 ACE2 se basa en un operador neuronal de Fourier esférico que aprende transiciones del estado atmosférico global en la esfera, en lugar de una arquitectura transformer de propósito general. La inferencia es autorregresiva con paso de seis horas: el modelo recibe un estado atmosférico inicial más un forzamiento externo variable en el tiempo (por ejemplo, temperatura superficial del mar) y genera estados sucesivos. Tras cada paso se aplican correcciones físicas duras que fijan la conservación de masa de aire seco y el cierre del presupuesto global de humedad.
 
-Según el artículo citado, se entrenan modelos separados sobre el reanálisis ERA5 y sobre simulaciones atmosféricas históricas de SHiELD. El repositorio de HuggingFace emplea un objetivo MSE autorregresivo de dos pasos de seis horas seguido de las correcciones físicas. La versión publicada recorta la anchura del SFNO, el número de modos espectrales y las épocas, pero mantiene las dimensiones de datos y el objetivo de dos pasos; los datos incluidos son sintéticos y no reproducen las distribuciones oficiales de ERA5 ni de SHiELD. No se documentan en la información disponible detalles sobre número de tokens de entrenamiento, composición exacta del dataset ni uso de RLHF o DPO.
+Según el artículo citado, se entrenan modelos separados sobre el reanálisis ERA5 y sobre simulaciones atmosféricas históricas de SHiELD. El repositorio de Hugging Face emplea un objetivo MSE autorregresivo de dos pasos de seis horas seguido de las correcciones físicas. La versión publicada recorta la anchura del SFNO, el número de modos espectrales y las épocas, pero mantiene las dimensiones de datos y el objetivo de dos pasos; los datos incluidos son sintéticos y no reproducen las distribuciones oficiales de ERA5 ni de SHiELD. No se documentan en la información disponible detalles sobre número de tokens de entrenamiento, composición exacta del dataset ni uso de RLHF o DPO.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ No se proporcionan datos comparativos en la información disponible. La categor�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/ACE2
+- Hugging Face: https://huggingface.co/OneScience-Group/ACE2
 - Artículo: ACE2: accurately learning subseasonal to decadal atmospheric variability and forced responses — https://doi.org/10.1038/s41612-025-01090-0
 - Checkpoint oficial ACE2-ERA5: https://doi.org/10.57967/hf/5377
 - OneCode (programación AI4S en un clic): https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home

@@ -89,7 +89,7 @@ No se dispone de comparativas con otros modelos de 27B (p. ej., Llama 3.1 8B o M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KarlKinda/Qwen3.8-27B-Opus-Distill-v2-Abliterated-L14
+- Modelo en Hugging Face: https://huggingface.co/KarlKinda/Qwen3.8-27B-Opus-Distill-v2-Abliterated-L14
 - Modelo base del fine-tune (barozp/Qwen3.8-27B-Opus-Distill-v2): https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2
 - Versión GGUF del v2: https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-GGUF
 - Herramienta de ablación (LLM-abliterate): https://github.com/nanofatdog/LLM-abliterate

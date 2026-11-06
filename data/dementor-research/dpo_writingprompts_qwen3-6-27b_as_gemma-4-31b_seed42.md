@@ -68,5 +68,5 @@ No disponible. No se conocen adaptadores equivalentes con el mismo propósito (i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_gemma-4-31b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_gemma-4-31b_seed42
 - Herramienta Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/

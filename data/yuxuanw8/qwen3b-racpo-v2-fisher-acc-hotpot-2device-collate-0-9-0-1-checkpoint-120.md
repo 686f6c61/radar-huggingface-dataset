@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-120` es un checkpoint de investigación de 3.085.938.688 parámetros (3,09 B) publicado por el usuario yuxuanw8 en HuggingFace. Según las etiquetas del repositorio, emplea la arquitectura identificada como `qwen2` y está orientado a generación de texto y uso conversacional. El nombre sugiere que se trata de un ajuste fino de la familia Qwen de 3 B mediante un método de optimización denominado RACPO, entrenado sobre HotpotQA (razonamiento multi-salto) y guardado en el paso 120 de entrenamiento, aunque el autor no documenta nada de esto en la model card.
+El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-120` es un checkpoint de investigación de 3.085.938.688 parámetros (3,09 B) publicado por el usuario yuxuanw8 en Hugging Face. Según las etiquetas del repositorio, emplea la arquitectura identificada como `qwen2` y está orientado a generación de texto y uso conversacional. El nombre sugiere que se trata de un ajuste fino de la familia Qwen de 3 B mediante un método de optimización denominado RACPO, entrenado sobre HotpotQA (razonamiento multi-salto) y guardado en el paso 120 de entrenamiento, aunque el autor no documenta nada de esto en la model card.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: no incluye desarrollador, datos de entrenamiento, hiperparámetros, evaluación ni licencia. Los agregadores externos que indexan checkpoints hermanos del mismo autor indican una longitud de contexto de 32.768 tokens, dato que no aparece confirmado en el repositorio. El repositorio ocupa 12,4 GB, un tamaño coherente con pesos almacenados en FP32 (3,09 × 10⁹ parámetros × 4 bytes ≈ 12,3 GB), lo que implica que no se distribuye una versión de menor precisión lista para producción.
+La model card es la plantilla automática de Hugging Face sin rellenar: no incluye desarrollador, datos de entrenamiento, hiperparámetros, evaluación ni licencia. Los agregadores externos que indexan checkpoints hermanos del mismo autor indican una longitud de contexto de 32.768 tokens, dato que no aparece confirmado en el repositorio. El repositorio ocupa 12,4 GB, un tamaño coherente con pesos almacenados en FP32 (3,09 × 10⁹ parámetros × 4 bytes ≈ 12,3 GB), lo que implica que no se distribuye una versión de menor precisión lista para producción.
 
 Se trata, por tanto, de un artefacto de experimentación reproducible más que de un modelo listo para uso comercial: cero descargas y cero "likes" en el momento de redactar esta ficha, sin licencia declarada, sin idiomas declarados y sin ningún resultado de evaluación publicado. Su interés es acotado: sirve para inspeccionar una técnica concreta de ajuste por refuerzo sobre tareas de QA multi-salto, no como modelo base para un producto.
 
@@ -12,7 +12,7 @@ Se trata, por tanto, de un artefacto de experimentación reproducible más que d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `qwen2` en los tags de HuggingFace); número de capas, cabezas y tipo de atención no disponibles |
+| Arquitectura | Transformer decoder-only (etiqueta `qwen2` en los tags de Hugging Face); número de capas, cabezas y tipo de atención no disponibles |
 | Parametros totales | 3.085.938.688 (3,09 B), dato extraído de los safetensors |
 | Parametros activos | No aplica (no es un modelo de mezcla de expertos) |
 | Longitud de contexto | No disponible en la model card; agregadores externos de checkpoints hermanos del mismo autor indican 32.768 tokens, sin confirmar |
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Caché KV con contexto de 32.768 tokens: del orden de 1-1,5 GB en FP16 asumiendo una configuración tipo Qwen2.5-3B con GQA (36 capas, 2 cabezas KV, dimensión de cabeza 128). El valor exacto depende del `config.json` real, que no está disponible.
 - GPU de consumo: cabe en tarjetas de 8-12 GB con cuantización a 4 bits (RTX 3060 12 GB, RTX 3070, RTX 4060 Ti 8 GB); en FP16 requiere al menos 8-10 GB libres, por lo que encaja en RTX 4070 Ti, RTX 4080 y RTX 4090 de forma holgada.
 - GPU de datacenter: A100 40 GB, A100 80 GB, H100, L40S y similares para despliegue con concurrencia alta o contexto completo sin cuantizar.
-- Opciones de despliegue: `transformers` de forma nativa (librería declarada), TGI (el tag `text-generation-inference` está presente), vLLM y SGLang para servicio con paginación de caché KV, y llama.cpp u Ollama previa conversión a GGUF, ya que el repositorio no incluye artefactos GGUF. Los tags `endpoints_compatible` y `region:us` indican compatibilidad con los endpoints gestionados de HuggingFace.
+- Opciones de despliegue: `transformers` de forma nativa (librería declarada), TGI (el tag `text-generation-inference` está presente), vLLM y SGLang para servicio con paginación de caché KV, y llama.cpp u Ollama previa conversión a GGUF, ya que el repositorio no incluye artefactos GGUF. Los tags `endpoints_compatible` y `region:us` indican compatibilidad con los endpoints gestionados de Hugging Face.
 - Latencia y throughput: no disponibles. No hay cifras publicadas de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ No se dispone de comparación de rendimiento entre estos modelos y el checkpoint
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-120
+- Repositorio en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-120
 - Checkpoint hermano con proporción 0.75/0.25, paso 150: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
 - Checkpoint hermano con proporción 0.75/0.25, paso 7: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-7/tree/main
 - Ficha del checkpoint hermano en Featherless AI: https://featherless.ai/models/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150

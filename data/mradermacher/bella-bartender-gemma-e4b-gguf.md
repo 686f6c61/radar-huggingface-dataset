@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/bella-bartender-gemma-e4b-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/bella-bartender-gemma-e4b-GGUF
 - Modelo base: https://huggingface.co/juiceb0xc0de/bella-bartender-gemma-e4b
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/bella-bartender-gemma-e4b-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#bella-bartender-gemma-e4b-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ct-inkling-oai-gen-mid-g1-b2` es un adaptador LoRA (rango 64, `target_modules=all-linear`) entrenado sobre el modelo base `thinkingmachines/Inkling-Small`. Lo publica el usuario de HuggingFace `arianaazarbal` como parte de un programa de entrenamiento por constitución iterada (`welfare-in-ai-rnd / constitutional_training`), en el que cada generación se entrena desde cero sobre el modelo base con un corpus sintético que instancia una constitución concreta.
+`ct-inkling-oai-gen-mid-g1-b2` es un adaptador LoRA (rango 64, `target_modules=all-linear`) entrenado sobre el modelo base `thinkingmachines/Inkling-Small`. Lo publica el usuario de Hugging Face `arianaazarbal` como parte de un programa de entrenamiento por constitución iterada (`welfare-in-ai-rnd / constitutional_training`), en el que cada generación se entrena desde cero sobre el modelo base con un corpus sintético que instancia una constitución concreta.
 
 El interés del artefacto es metodológico, no de producto: la generación 0 se siembra con una constitución escrita por humanos (en este caso, un resumen de 5.000 palabras del OpenAI Model Spec) y cada generación N≥1 se siembra con una constitución escrita por el propio modelo de la generación N-1 de la misma rama. La deriva entre generaciones se acumula únicamente a través de los documentos de entrenamiento, nunca a través de los pesos, porque cada generación parte del mismo `Inkling-Small` congelado.
 
@@ -74,8 +74,8 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base, por
 
 | Modelo | Base | Metodo | Generacion | Rama | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ct-inkling-oai-gen-mid-g1-b2 (este) | thinkingmachines/Inkling-Small | LoRA r=64, SFT, midtrain only | g1 | b2 | no disponible | HuggingFace, 0 descargas |
-| thinkingmachines/Inkling-Small | no aplica | modelo base | no aplica | no aplica | no disponible | HuggingFace |
+| ct-inkling-oai-gen-mid-g1-b2 (este) | thinkingmachines/Inkling-Small | LoRA r=64, SFT, midtrain only | g1 | b2 | no disponible | Hugging Face, 0 descargas |
+| thinkingmachines/Inkling-Small | no aplica | modelo base | no aplica | no aplica | no disponible | Hugging Face |
 | Otras ramas de la cadena `inkling-oai-gen-mid` | thinkingmachines/Inkling-Small | misma receta, distinta rama | g1 | b1, b3, ... | no disponible | no verificado en la informacion disponible |
 
 Comparativa con modelos de la misma categoria (adaptadores de alineacion o constitucionales): no disponible.
@@ -96,7 +96,7 @@ Comparativa con modelos de la misma categoria (adaptadores de alineacion o const
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g1-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g1-b2
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Documento de constitucion de entrenamiento: `training_seed_constitution.md`, incluido en el repositorio del modelo
 - Registro de exportacion: `tinker_meta.json`, incluido en el repositorio del modelo

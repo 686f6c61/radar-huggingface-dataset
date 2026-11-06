@@ -73,10 +73,10 @@ No se han publicado en la informacion disponible resultados de benchmarks de cod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-0.8B (esta ficha) | 0,8B | 262.144 | Apache 2.0 | HuggingFace |
-| Qwen3.5-2B | 2B (no confirmado) | no disponible | Apache 2.0 (segun modelo base) | HuggingFace |
-| Qwen3-1.7B | 1,7B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3-4B-2507 | 4B | no disponible | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B (esta ficha) | 0,8B | 262.144 | Apache 2.0 | Hugging Face |
+| Qwen3.5-2B | 2B (no confirmado) | no disponible | Apache 2.0 (segun modelo base) | Hugging Face |
+| Qwen3-1.7B | 1,7B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3-4B-2507 | 4B | no disponible | Apache 2.0 | Hugging Face |
 
 En los benchmarks de la model card, Qwen3.5-0.8B obtiene resultados inferiores a Qwen3-1.7B, Qwen3.5-2B y Qwen3-4B-2507 en MMLU-Pro, MMLU-Redux y C-Eval, lo que es coherente con su menor numero de parametros. Su ventaja frente a ellos es el menor coste de inferencia y la ventana de contexto de 262.144 tokens.
 
@@ -92,7 +92,7 @@ En los benchmarks de la model card, Qwen3.5-0.8B obtiene resultados inferiores a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nielsr/qwen3.5-0.8b-p50c-repro
+- Hugging Face: https://huggingface.co/nielsr/qwen3.5-0.8b-p50c-repro
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Qwen Chat: https://chat.qwen.ai

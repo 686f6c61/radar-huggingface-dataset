@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de comparativas de calidad de audio entr
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/groxaxo/Chatterbox-Multilingual-es-mx-latam-MLX-8bit
+- Hugging Face (este modelo): https://huggingface.co/groxaxo/Chatterbox-Multilingual-es-mx-latam-MLX-8bit
 - Modelo base: https://huggingface.co/ResembleAI/Chatterbox-Multilingual-es-mx-latam
 - Variante HQ del mismo autor: https://huggingface.co/groxaxo/Chatterbox-Multilingual-es-mx-latam-MLX-8bit-HQ
 - Tokenizador de voz (dependencia): https://huggingface.co/mlx-community/S3TokenizerV2

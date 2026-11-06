@@ -85,10 +85,10 @@ Los modelos abiertos de 7-8B medidos en el mismo hardware consumieron entre 1,56
 
 | Modelo | Parámetros | Contexto | Precisión media (9 benchmarks médicos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MediLITE-QA | 3,8B | no disponible | 72,79 (fp16) / 71,87 (Q4_K_M) | MIT | HuggingFace (Transformers + GGUF) |
-| Phi-3.5-mini-instruct (base) | 3,8B | no disponible | 68,73 | MIT | HuggingFace |
-| OpenBioLLM-8B | 8B | no disponible | 72,09 | no disponible | HuggingFace |
-| LLaMA 3 8B | 8B | no disponible | 70,52 | no disponible | HuggingFace |
+| MediLITE-QA | 3,8B | no disponible | 72,79 (fp16) / 71,87 (Q4_K_M) | MIT | Hugging Face (Transformers + GGUF) |
+| Phi-3.5-mini-instruct (base) | 3,8B | no disponible | 68,73 | MIT | Hugging Face |
+| OpenBioLLM-8B | 8B | no disponible | 72,09 | no disponible | Hugging Face |
+| LLaMA 3 8B | 8B | no disponible | 70,52 | no disponible | Hugging Face |
 
 La ventaja diferencial de MediLITE-QA frente a los modelos de 7-8B es el coste energético y de memoria: rinde a un nivel estadísticamente comparable a OpenBioLLM-8B con menos de la mitad de parámetros y entre 1,56 y 1,98 veces menos energía de CPU por token en el hardware medido.
 
@@ -106,7 +106,7 @@ La ventaja diferencial de MediLITE-QA frente a los modelos de 7-8B es el coste e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/segestic/MediliteQA-phi3.5-mini-all-med
+- Modelo en Hugging Face: https://huggingface.co/segestic/MediliteQA-phi3.5-mini-all-med
 - Adaptador LoRA: https://huggingface.co/segestic/phi3.5-mini-4k-qlora-medical-seg-vall_med
 - Cuantizaciones GGUF: https://huggingface.co/segestic/MediLITE-QA-GGUF
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jogarulfop/policy_2026-08-31_shake4it_bench_5sensors_pastille_pzt_10kHz_nfft_512` es una política de control robótico basada en el método Action Chunking with Transformers (ACT), entrenada con el framework LeRobot de HuggingFace. ACT es una técnica de aprendizaje por imitación que predice secuencias de acciones (chunks) en lugar de pasos individuales, lo que permite un control más suave y robusto en tareas de manipulación. Este modelo concreto se ha entrenado para una tarea de banco de pruebas denominada "shake4it bench" que involucra cinco sensores, incluyendo una pastilla piezoeléctrica (PZT), con muestreo a 10 kHz y una transformada rápida de Fourier (nfft) de 512 puntos.
+El modelo `jogarulfop/policy_2026-08-31_shake4it_bench_5sensors_pastille_pzt_10kHz_nfft_512` es una política de control robótico basada en el método Action Chunking with Transformers (ACT), entrenada con el framework LeRobot de Hugging Face. ACT es una técnica de aprendizaje por imitación que predice secuencias de acciones (chunks) en lugar de pasos individuales, lo que permite un control más suave y robusto en tareas de manipulación. Este modelo concreto se ha entrenado para una tarea de banco de pruebas denominada "shake4it bench" que involucra cinco sensores, incluyendo una pastilla piezoeléctrica (PZT), con muestreo a 10 kHz y una transformada rápida de Fourier (nfft) de 512 puntos.
 
-El modelo tiene 51.668.614 parámetros y está publicado bajo licencia Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas. Su relevancia radica en que demuestra la aplicación de ACT a tareas que requieren procesamiento de señales de alta frecuencia (vibraciones, acelerómetros, cargas) para el control de robots, un área emergente en la robótica de manipulación fina. Al estar integrado en el ecosistema LeRobot, puede reproducirse, evaluarse y desplegarse fácilmente con las herramientas estándar de HuggingFace.
+El modelo tiene 51.668.614 parámetros y está publicado bajo licencia Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas. Su relevancia radica en que demuestra la aplicación de ACT a tareas que requieren procesamiento de señales de alta frecuencia (vibraciones, acelerómetros, cargas) para el control de robots, un área emergente en la robótica de manipulación fina. Al estar integrado en el ecosistema LeRobot, puede reproducirse, evaluarse y desplegarse fácilmente con las herramientas estándar de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ El dataset asociado (`jogarulfop/2026-08-31_shake4it_bench_5sensors_pastille_pzt
 
 - Control robótico por imitación: genera secuencias de acciones (chunks) para un robot, típicamente un brazo manipulador, a partir de observaciones sensoriales.
 - Procesamiento de señales de alta frecuencia: el modelo está entrenado con datos de sensores a 10 kHz (PZT, acelerómetros, etc.), lo que le permite reaccionar a vibraciones y fuerzas dinámicas.
-- Integración con LeRobot: compatible con el ecosistema de HuggingFace para robótica, incluyendo entrenamiento, evaluación y despliegue mediante comandos `lerobot-train` y `lerobot-record`.
+- Integración con LeRobot: compatible con el ecosistema de Hugging Face para robótica, incluyendo entrenamiento, evaluación y despliegue mediante comandos `lerobot-train` y `lerobot-record`.
 - No soporta procesamiento de lenguaje natural, tool calling ni capacidades multimodales generales; es un modelo especializado en control motor.
 - Capacidad de generalización limitada a la tarea específica del banco de pruebas "shake4it bench" para la que fue entrenado.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jogarulfop/policy_2026-08-31_shake4it_bench_5sensors_pastille_pzt_10kHz_nfft_512` | 51,7M | no disponible | Shake4it bench (5 sensores, PZT) | Apache-2.0 | HuggingFace |
-| `jogarulfop/policy_2026-07-28_shake4it_bench_dragonfly_10kHz_nfft_512` | no disponible | no disponible | Shake4it bench (sensor dragonfly) | Apache-2.0 | HuggingFace |
-| `jogarulfop/policy_2026-07-28_shake4it_bench_accelero_10kHz_nfft_512` | no disponible | no disponible | Shake4it bench (acelerómetro) | Apache-2.0 | HuggingFace |
+| `jogarulfop/policy_2026-08-31_shake4it_bench_5sensors_pastille_pzt_10kHz_nfft_512` | 51,7M | no disponible | Shake4it bench (5 sensores, PZT) | Apache-2.0 | Hugging Face |
+| `jogarulfop/policy_2026-07-28_shake4it_bench_dragonfly_10kHz_nfft_512` | no disponible | no disponible | Shake4it bench (sensor dragonfly) | Apache-2.0 | Hugging Face |
+| `jogarulfop/policy_2026-07-28_shake4it_bench_accelero_10kHz_nfft_512` | no disponible | no disponible | Shake4it bench (acelerómetro) | Apache-2.0 | Hugging Face |
 
 No se dispone de información sobre el rendimiento relativo de estos modelos. Todos pertenecen a la misma familia de políticas ACT entrenadas con LeRobot para variantes del banco "shake4it bench", diferenciándose en el tipo de sensor utilizado. No hay datos públicos de benchmarks comparativos.
 
@@ -76,7 +76,7 @@ No se dispone de información sobre el rendimiento relativo de estos modelos. To
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jogarulfop/policy_2026-08-31_shake4it_bench_5sensors_pastille_pzt_10kHz_nfft_512
+- Modelo en Hugging Face: https://huggingface.co/jogarulfop/policy_2026-08-31_shake4it_bench_5sensors_pastille_pzt_10kHz_nfft_512
 - Dataset asociado: https://huggingface.co/datasets/jogarulfop/2026-08-31_shake4it_bench_5sensors_pastille_pzt_10kHz_nfft_512
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

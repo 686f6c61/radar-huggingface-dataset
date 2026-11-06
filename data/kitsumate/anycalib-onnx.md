@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KitsuMate/anycalib-onnx
+- Repositorio Hugging Face: https://huggingface.co/KitsuMate/anycalib-onnx
 - Repositorio oficial de AnyCalib (GitHub): https://github.com/javrtg/AnyCalib
 - Paper AnyCalib (ICCV 2025): "AnyCalib: On-Manifold Learning for Model-Agnostic Single-View Camera Calibration" (sin URL directa en la información proporcionada)

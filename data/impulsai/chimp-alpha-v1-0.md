@@ -18,7 +18,7 @@ El método empleado se denomina Hybrid Tensor Compression (HTC): cuantización p
 | Longitud de contexto | 64k tokens (valor por defecto del servidor); tambien se midio a 8k |
 | Tipos de cuantizacion | IQ4_XS (4,25 bpw, con imatrix) para expertos gate/up; IQ4_NL para expertos down y tabla de n-gramas; Q6_K y Q8_0 para atención, DeltaNet, experto compartido, hyper-connections y LM head; F32/BF16 para router, normas, indexador de atención dispersa y proyecciones n-gram; Q4_K_M para la cabeza MTP |
 | Idiomas soportados | Ingles (en) y aleman (de) |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace), heredada del modelo base |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face), heredada del modelo base |
 | Formato de pesos | GGUF (llama.cpp); la cabeza MTP se entrega como archivo separado |
 
 ## Arquitectura y entrenamiento
@@ -92,7 +92,7 @@ Frente a los builds ternarios del mismo autor, CHImp Alpha v1.0 reduce la diverg
 - Cobertura de idiomas limitada a inglés y alemán; no se declara soporte de castellano.
 - Es una conversión solo de texto: el codificador visual del checkpoint original no se convierte, por lo que no hay capacidades multimodales.
 - La cuantización introduce degradación medible: +0,58 % de perplejidad, KLD media de 0,041 y un 7,0 % de discrepancias en la predicción top-1 respecto al Q8_0. En tareas sensibles a la precisión conviene validar contra la referencia.
-- La licencia es qwen-community-1.0, etiquetada como "other" en HuggingFace y heredada del modelo base. No se detallan en la información disponible las condiciones exactas para uso comercial; es imprescindible revisar el texto de la licencia enlazada antes de un despliegue en producción.
+- La licencia es qwen-community-1.0, etiquetada como "other" en Hugging Face y heredada del modelo base. No se detallan en la información disponible las condiciones exactas para uso comercial; es imprescindible revisar el texto de la licencia enlazada antes de un despliegue en producción.
 - No se publican resultados de los arneses de tareas (HumanEval+, MBPP+, BFCL) en la información disponible, solo métricas de prefill; el rendimiento real en código, matemáticas o function calling está sin verificar.
 - Requisitos de hardware altos y poco convencionales: 32 GB de VRAM más 128 GB de RAM, con offloading de expertos a CPU. Esto introduce latencia dependiente del ancho de banda de memoria del sistema, no solo de la GPU.
 - El reparto de tensores es específico de llama.cpp b10909; otras versiones o runtimes pueden no reproducir el rendimiento ni la colocación descrita.
@@ -104,7 +104,7 @@ Frente a los builds ternarios del mismo autor, CHImp Alpha v1.0 reduce la diverg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/impulsai/CHImp-Alpha-v1.0
+- Modelo en Hugging Face: https://huggingface.co/impulsai/CHImp-Alpha-v1.0
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base (qwen-community-1.0): https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Repositorio de herramientas de build (zurd46/Qwen3.8FlashNextTQ1): https://github.com/zurd46/Qwen3.8FlashNextTQ1

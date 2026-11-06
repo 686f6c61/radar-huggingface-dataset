@@ -77,6 +77,6 @@ No disponible. No se ha encontrado información pública de otros modelos entren
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ilyass200404/rl_course_vizdoom_health_gathering_supreme)
+- [Modelo en Hugging Face](https://huggingface.co/ilyass200404/rl_course_vizdoom_health_gathering_supreme)
 - [Sample-Factory 2.0 en GitHub](https://github.com/alex-petrenko/sample-factory)
 - [Documentación de Sample-Factory](https://www.samplefactory.dev/)

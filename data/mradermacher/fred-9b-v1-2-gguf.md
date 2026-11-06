@@ -76,9 +76,9 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 | Version | Formato | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CrowdMind/Fred-9B-v1.2 (base) | safetensors | no disponible en la informacion | apache-2.0 (heredada) | HuggingFace |
-| Fred-9B-v1.2-GGUF (este repositorio) | GGUF estatico | 4,0-18,5 GB segun cuantizacion | apache-2.0 | HuggingFace |
-| Fred-9B-v1.2-i1-GGUF | GGUF con imatrix | no disponible en la informacion | apache-2.0 | HuggingFace |
+| CrowdMind/Fred-9B-v1.2 (base) | safetensors | no disponible en la informacion | apache-2.0 (heredada) | Hugging Face |
+| Fred-9B-v1.2-GGUF (este repositorio) | GGUF estatico | 4,0-18,5 GB segun cuantizacion | apache-2.0 | Hugging Face |
+| Fred-9B-v1.2-i1-GGUF | GGUF con imatrix | no disponible en la informacion | apache-2.0 | Hugging Face |
 
 Para comparar con otras familias de ~9B (por ejemplo, alternativas de la misma categoría de tamaño) sería necesario disponer de benchmarks que no se han publicado en esta información.
 

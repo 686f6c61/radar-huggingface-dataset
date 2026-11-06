@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Minimax-h3_Singularity-x-10Eros-Max_PRISM es un merge de pesos publicado por el usuario OliviaRossi en HuggingFace. Combina dos finetunes del modelo MiniMax-H3 etiquetados como ref2va: `WarmBloodAban/Minimax-h3_Singularity` (fichero `Minimax-h3_Singularity_ref2va_v2_bf16.safetensors`) y `TenStrip/10Eros-Max` (variante turbo de 8 pasos, `10Eros_Max_h3_8stepTURBO_beta6_bf16.safetensors`). El resultado se distribuye como un unico fichero safetensors en fp16 dentro de un repositorio de 102,4 GB.
+Minimax-h3_Singularity-x-10Eros-Max_PRISM es un merge de pesos publicado por el usuario OliviaRossi en Hugging Face. Combina dos finetunes del modelo MiniMax-H3 etiquetados como ref2va: `WarmBloodAban/Minimax-h3_Singularity` (fichero `Minimax-h3_Singularity_ref2va_v2_bf16.safetensors`) y `TenStrip/10Eros-Max` (variante turbo de 8 pasos, `10Eros_Max_h3_8stepTURBO_beta6_bf16.safetensors`). El resultado se distribuye como un unico fichero safetensors en fp16 dentro de un repositorio de 102,4 GB.
 
 El interes no esta en el modelo base, del que la model card no ofrece ningun detalle de arquitectura, tamano ni datos de entrenamiento, sino en el algoritmo de fusion que da nombre al merge: PRISM, un procedimiento en cuatro etapas que combina descomposicion SVD con separacion estructurada/ruidosa, interpolacion geodesica polar por filas, mediacion de conflictos de signo y reanclaje de magnitud. La card documenta ademas la proporcion de pesos del modelo B por bloque temporal, con una rampa de 0,45 en las capas tempranas a 0,65 en las tardias.
 
@@ -90,7 +90,7 @@ No se identifican en la informacion proporcionada otros merges comparables de Mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM
+- Modelo en Hugging Face: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM
 - Modelo base A: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
 - Modelo base B: https://huggingface.co/TenStrip/10Eros-Max
 - Informe de merge: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM/blob/main/merge_report.json

@@ -19,7 +19,7 @@ La relevancia de este repositorio radica en que ofrece una progresión de checkp
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (según tags del repositorio) |
 
-Nota: El repositorio no especifica la arquitectura interna, el contexto ni los idiomas. Estos datos corresponden al modelo base OLMo-2-1B, cuyas especificaciones pueden consultarse en los enlaces del modelo base en HuggingFace y en el informe técnico de Ai2.
+Nota: El repositorio no especifica la arquitectura interna, el contexto ni los idiomas. Estos datos corresponden al modelo base OLMo-2-1B, cuyas especificaciones pueden consultarse en los enlaces del modelo base en Hugging Face y en el informe técnico de Ai2.
 
 ## Arquitectura y entrenamiento
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 - **VRAM estimada**: el modelo tiene aproximadamente 1B parámetros. En bf16, cada mil millones de parámetros ocupa ~2 GB de memoria. Con contexto y overhead, se estima un consumo de 2-3 GB de VRAM para inferencia.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en bf16, por ejemplo una NVIDIA GTX 1650 Super, RTX 3060, o GPUs de datacenter como T4 o A10G. Para ejecutar los 10 checkpoints simultáneamente, se necesitaría ~30 GB de VRAM (o almacenamiento en disco y carga secuencial).
 - **Compatibilidad con GPU de consumo**: sí, cabe en GPUs de consumo modernas como RTX 3060 (12 GB), RTX 4060 Ti (16 GB) o RTX 4090 (24 GB).
-- **Opciones de despliegue**: al ser safetensors en bf16, se puede cargar con HuggingFace Transformers, o convertirse a GGUF para usar con llama.cpp o Ollama. También puede servirse con vLLM o TGI.
+- **Opciones de despliegue**: al ser safetensors en bf16, se puede cargar con Hugging Face Transformers, o convertirse a GGUF para usar con llama.cpp o Ollama. También puede servirse con vLLM o TGI.
 - **Latencia y throughput**: no disponible. Para un modelo de 1B, se puede esperar una latencia de decodificación de ~20-50 ms por token en una RTX 4090, pero no se ha medido en este repositorio.
 
 ## Comparativa con modelos similares
@@ -73,8 +73,8 @@ No hay modelos comparables disponibles en la información proporcionada. El mode
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dvader13/olmo2-1b-sft-s1-3691b
-- Modelo base OLMo-2-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Repositorio de Hugging Face: https://huggingface.co/dvader13/olmo2-1b-sft-s1-3691b
+- Modelo base OLMo-2-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Página oficial de OLMo 2 en Ai2: https://allenai.org/olmo2
 - Repositorio de entrenamiento OLMo en GitHub: https://github.com/allenai/OLMo
 - Repositorio OLMo-SFT (scripts de despliegue): https://github.com/mzyy1001/OLMo-SFT

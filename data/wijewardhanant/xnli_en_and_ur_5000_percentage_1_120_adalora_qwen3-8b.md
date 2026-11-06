@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_AdaLoRA_Qwen3-8b` no es un modelo completo, sino un **adaptador de ajuste fino eficiente en parámetros (PEFT)** de tipo AdaLoRA publicado en HuggingFace por el usuario WijewardhanaNT. Está construido sobre el modelo base `Qwen/Qwen3-8B-Base`, un transformer decoder-only denso de aproximadamente 8,19 mil millones de parámetros desarrollado por Alibaba Qwen. El adaptador se ha entrenado, según se deduce del nombre del repositorio, sobre el corpus XNLI (*Cross-lingual Natural Language Inference*) restringido a inglés y urdu, con 5.000 ejemplos y una configuración de rango/comportamiento denotada como "percentage 1 120".
+El modelo identificado como `WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_AdaLoRA_Qwen3-8b` no es un modelo completo, sino un **adaptador de ajuste fino eficiente en parámetros (PEFT)** de tipo AdaLoRA publicado en Hugging Face por el usuario WijewardhanaNT. Está construido sobre el modelo base `Qwen/Qwen3-8B-Base`, un transformer decoder-only denso de aproximadamente 8,19 mil millones de parámetros desarrollado por Alibaba Qwen. El adaptador se ha entrenado, según se deduce del nombre del repositorio, sobre el corpus XNLI (*Cross-lingual Natural Language Inference*) restringido a inglés y urdu, con 5.000 ejemplos y una configuración de rango/comportamiento denotada como "percentage 1 120".
 
-La relevancia de esta publicación es limitada y muy específica: se trata de un artefacto de investigación con 0 descargas y 0 *likes*, sin *model card* completada (la plantilla original de HuggingFace permanece casi íntegramente con el marcador `[More Information Needed]`) y sin licencia declarada. No debe confundirse con un modelo de propósito general: su función es la inferencia de relación textual (implicación, neutralidad, contradicción) en dos idiomas concretos, y requiere cargar por separado el modelo base Qwen3-8B-Base para poder ejecutarse.
+La relevancia de esta publicación es limitada y muy específica: se trata de un artefacto de investigación con 0 descargas y 0 *likes*, sin *model card* completada (la plantilla original de Hugging Face permanece casi íntegramente con el marcador `[More Information Needed]`) y sin licencia declarada. No debe confundirse con un modelo de propósito general: su función es la inferencia de relación textual (implicación, neutralidad, contradicción) en dos idiomas concretos, y requiere cargar por separado el modelo base Qwen3-8B-Base para poder ejecutarse.
 
 Su interés técnico reside en el uso de AdaLoRA como método de adaptación, que asigna rangos de forma adaptativa mediante parametrización basada en descomposición en valores singulares, en lugar del rango fijo de LoRA clásico. Para un desarrollador que evalúe modelos, este repositorio sirve como referencia de un *pipeline* PEFT reproducible (versión 0.17.1) sobre una base Qwen3, más que como un componente listo para producción.
 
@@ -30,7 +30,7 @@ Su interés técnico reside en el uso de AdaLoRA como método de adaptación, qu
 
 El artefacto es un conjunto de pesos de adaptador, no un modelo autónomo. AdaLoRA (*Adaptive Low-Rank Adaptation*, Zhang et al., 2023) reformula la adaptación de bajo rango parametrizando la actualización de pesos como una descomposición SVD, de modo que el presupuesto de rango se distribuye dinámicamente entre las matrices de proyección segun su importancia. Esto contrasta con LoRA estándar, donde el rango es uniforme y fijo. En este repositorio, el sufijo "120" del nombre sugiere un rango objetivo o un número de pasos de entrenamiento, y "percentage_1" apunta a un submuestreo del 1 por ciento del conjunto de datos, pero **ninguno de estos extremos está documentado en la model card**, por lo que deben considerarse hipótesis de nomenclatura y no datos confirmados.
 
-En cuanto a los datos de entrenamiento, el nombre del repositorio indica XNLI con los idiomas inglés y urdu y 5.000 ejemplos. XNLI es un corpus de inferencia de lenguaje natural con 15 pares de frases etiquetados como implicación, neutralidad o contradicción, con un conjunto de evaluación de 5.000 pares por idioma. No hay información en la model card sobre composición exacta del dataset, número de tokens vistos, precisión mixta empleada, hiperparámetros de optimización, ni sobre si hubo una fase de RLHF o DPO (poco probable en un adaptador de tarea). El único dato de infraestructura declarado es la versión de PEFT (0.17.1). El tag `arxiv:1910.09700` que aparece en los metadatos no es un artículo sobre este modelo: corresponde a Lacoste et al. (2019), el trabajo que introduce la calculadora de impacto de carbono, citado en la plantilla genérica de model card de HuggingFace.
+En cuanto a los datos de entrenamiento, el nombre del repositorio indica XNLI con los idiomas inglés y urdu y 5.000 ejemplos. XNLI es un corpus de inferencia de lenguaje natural con 15 pares de frases etiquetados como implicación, neutralidad o contradicción, con un conjunto de evaluación de 5.000 pares por idioma. No hay información en la model card sobre composición exacta del dataset, número de tokens vistos, precisión mixta empleada, hiperparámetros de optimización, ni sobre si hubo una fase de RLHF o DPO (poco probable en un adaptador de tarea). El único dato de infraestructura declarado es la versión de PEFT (0.17.1). El tag `arxiv:1910.09700` que aparece en los metadatos no es un artículo sobre este modelo: corresponde a Lacoste et al. (2019), el trabajo que introduce la calculadora de impacto de carbono, citado en la plantilla genérica de model card de Hugging Face.
 
 ## Capacidades
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AdaLoRA XNLI en/ur sobre Qwen3-8B | Adaptador sobre 8,19 mil M (base) | No especificado (base: 32.768) | Adaptador PEFT | No disponible | HuggingFace, 0 descargas |
-| Qwen3-8B-Base sin ajustar | 8,19 mil M | 32.768 | Modelo completo denso | Apache 2.0 (segun documentacion del modelo base) | HuggingFace |
+| AdaLoRA XNLI en/ur sobre Qwen3-8B | Adaptador sobre 8,19 mil M (base) | No especificado (base: 32.768) | Adaptador PEFT | No disponible | Hugging Face, 0 descargas |
+| Qwen3-8B-Base sin ajustar | 8,19 mil M | 32.768 | Modelo completo denso | Apache 2.0 (segun documentacion del modelo base) | Hugging Face |
 | LoRA estandar sobre Qwen3-8B para XNLI | Adaptador sobre 8,19 mil M (base) | No especificado | Adaptador PEFT | Depende del autor | Varios repositorios comunitarios; no comparables directamente sin benchmarks |
-| xlm-roberta-large-xnli | 560 M | 512 | Encoder tipo transformer | MIT (segun la model card del modelo original) | HuggingFace |
+| xlm-roberta-large-xnli | 560 M | 512 | Encoder tipo transformer | MIT (segun la model card del modelo original) | Hugging Face |
 
 No es posible comparar el rendimiento en XNLI porque el adaptador no publica resultados. La comparativa queda, por tanto, limitada a parametros, contexto, licencia y disponibilidad.
 
@@ -92,7 +92,7 @@ No es posible comparar el rendimiento en XNLI porque el adaptador no publica res
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_AdaLoRA_Qwen3-8b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_AdaLoRA_Qwen3-8b
 - Modelo base Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Articulo de AdaLoRA (Zhang et al., 2023): https://arxiv.org/abs/2303.10512
 - Articulo de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

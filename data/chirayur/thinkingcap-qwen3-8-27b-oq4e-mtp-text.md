@@ -112,7 +112,7 @@ Diferencias relevantes: frente a Swift-1.5 en oQ3, esta release gana 3 puntos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChirayuR/ThinkingCap-Qwen3.8-27B-oQ4e-mtp-text
+- Modelo en Hugging Face: https://huggingface.co/ChirayuR/ThinkingCap-Qwen3.8-27B-oQ4e-mtp-text
 - Release con visión (mismos pesos más torre visual): https://huggingface.co/ChirayuR/ThinkingCap-Qwen3.8-27B-oQ4e-mtp
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Herramienta de cuantización oMLX: https://github.com/jundot/omlx

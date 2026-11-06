@@ -107,7 +107,7 @@ Las cuatro variantes de la familia Heretic comparten la misma abliteration y sol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-NVFP4
 - Modelo base (Heretic, bf16): https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic
 - Variante FP8: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-FP8
 - Variante GGUF: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-GGUF

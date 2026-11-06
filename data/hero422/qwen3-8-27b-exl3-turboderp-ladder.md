@@ -104,7 +104,7 @@ La diferencia medible entre este repositorio y la conversión de turboderp es el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hero422/qwen3.8-27b-exl3-turboderp-ladder
+- Repositorio Hugging Face: https://huggingface.co/Hero422/qwen3.8-27b-exl3-turboderp-ladder
 - Modelo base de la cuantización: https://huggingface.co/turboderp/Qwen3.8-27B-exl3
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Plugins de radiance (`qc-exl3-ladder`): https://codeberg.org/StillDeadcode/radiance/pulls/292

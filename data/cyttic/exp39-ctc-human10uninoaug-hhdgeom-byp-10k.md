@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-10k`, publicado por el usuario cyttic en HuggingFace, es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 millones) en formato safetensors, con un tamaño de repositorio de 0,3 GB. El identificador del modelo sugiere un sistema basado en CTC (Connectionist Temporal Classification) entrenado sobre datos etiquetados como "human10uninoaug" y "hhdgeom", con un checkpoint intermedio en el paso 10k. La model card no aporta información sustantiva: es una plantilla estándar de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]".
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-10k`, publicado por el usuario cyttic en Hugging Face, es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 millones) en formato safetensors, con un tamaño de repositorio de 0,3 GB. El identificador del modelo sugiere un sistema basado en CTC (Connectionist Temporal Classification) entrenado sobre datos etiquetados como "human10uninoaug" y "hhdgeom", con un checkpoint intermedio en el paso 10k. La model card no aporta información sustantiva: es una plantilla estándar de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]".
 
 La relevancia de esta ficha es limitada por la ausencia casi total de documentación técnica. No se especifican la arquitectura concreta, el dominio de aplicación, los idiomas soportados ni los datos de entrenamiento. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre el cálculo del impacto ambiental del aprendizaje automático, citado en la sección de emisiones de carbono de la plantilla, no a un paper del propio modelo. Por tanto, no debe interpretarse como referencia arquitectónica ni metodológica del checkpoint.
 
@@ -73,6 +73,6 @@ No disponible. La información proporcionada no permite identificar la categorí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-10k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-10k
 - Paper citado en la plantilla (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

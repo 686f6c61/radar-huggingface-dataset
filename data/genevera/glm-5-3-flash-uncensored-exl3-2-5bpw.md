@@ -81,9 +81,9 @@ No se dispone de datos de terceros en la informacion proporcionada para comparar
 
 | Variante | Precision | MMLU | Contexto declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash base (zai-org) | FP8 | 86,74% | 1M | no disponible en esta informacion | HuggingFace |
-| GLM-5.3-Flash-UNCENSORED-FP8 (dealignai) | FP8 | 87,33% | 1M | no disponible en esta informacion | HuggingFace |
-| GLM-5.3-Flash-Uncensored-EXL3-2.5bpw (genevera) | 2,51 bpw EXL3 | no medido sobre el cuantizado | 1M | MIT | HuggingFace |
+| GLM-5.3-Flash base (zai-org) | FP8 | 86,74% | 1M | no disponible en esta informacion | Hugging Face |
+| GLM-5.3-Flash-UNCENSORED-FP8 (dealignai) | FP8 | 87,33% | 1M | no disponible en esta informacion | Hugging Face |
+| GLM-5.3-Flash-Uncensored-EXL3-2.5bpw (genevera) | 2,51 bpw EXL3 | no medido sobre el cuantizado | 1M | MIT | Hugging Face |
 
 No hay datos de rendimiento del cuantizado a 2,51 bpw frente al FP8 de origen, ni comparaciones publicadas con otros modelos abliterated de la misma escala.
 
@@ -102,7 +102,7 @@ No hay datos de rendimiento del cuantizado a 2,51 bpw frente al FP8 de origen, n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genevera/GLM-5.3-Flash-Uncensored-EXL3-2.5bpw
+- Modelo en Hugging Face: https://huggingface.co/genevera/GLM-5.3-Flash-Uncensored-EXL3-2.5bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Release FP8 desinhibido de origen: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8
 - Perfil del cuantizador: https://huggingface.co/genevera
@@ -110,4 +110,4 @@ No hay datos de rendimiento del cuantizado a 2,51 bpw frente al FP8 de origen, n
 - Twitter de dealignai: https://twitter.com/dealignai
 - Twitter de jordanschenck (computo del release de origen): https://twitter.com/jordanschenck
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos enlaces utiles son los presentes en la informacion de HuggingFace. No se han localizado papers, blogs ni demos adicionales.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos enlaces utiles son los presentes en la informacion de Hugging Face. No se han localizado papers, blogs ni demos adicionales.

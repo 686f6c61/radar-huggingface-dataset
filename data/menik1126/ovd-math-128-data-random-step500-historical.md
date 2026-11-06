@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `menik1126/ovd-math-128-data-random-step500-historical` es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en HuggingFace. Por la etiqueta de arquitectura (`qwen2`) y el tamaño real declarado en los ficheros safetensors (1.777.088.000 parametros, equivalentes a unos 1,78 mil millones), se trata de un transformer denso de la familia Qwen2 de escala pequena. El repositorio ocupa 7,1 GB e incluye pesos de inferencia y ficheros de tokenizer, pero no estado del optimizador.
+El modelo `menik1126/ovd-math-128-data-random-step500-historical` es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en Hugging Face. Por la etiqueta de arquitectura (`qwen2`) y el tamaño real declarado en los ficheros safetensors (1.777.088.000 parametros, equivalentes a unos 1,78 mil millones), se trata de un transformer denso de la familia Qwen2 de escala pequena. El repositorio ocupa 7,1 GB e incluye pesos de inferencia y ficheros de tokenizer, pero no estado del optimizador.
 
 La model card es extremadamente escueta y lo describe como un "Historical OVD checkpoint" correspondiente a "DSR128, random_suffix, semantic step 500", ademas de "audited DSR128 Random global_step_500". El autor indica explicitamente que son pesos historicos ya evaluados y no la implementacion reparada recientemente, lo que sugiere que existe una version posterior corregida. No se documenta el proceso de entrenamiento, el dataset, la licencia ni los idiomas soportados.
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| menik1126/ovd-math-128-data-random-step500-historical | 1,78 B | no disponible | no disponible | HuggingFace, 0 descargas |
+| menik1126/ovd-math-128-data-random-step500-historical | 1,78 B | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen2-1.5B (referencia de la familia) | 1,5 B | 32.768 tokens (segun ficha oficial) | Apache 2.0 (segun ficha oficial) | Ampliamente disponible |
 | Qwen2.5-1.5B | 1,5 B | 32.768 tokens (ampliable) | Apache 2.0 | Ampliamente disponible |
 | Gemma-2-2B | 2,6 B | 8.192 tokens | Gemma Terms | Ampliamente disponible |
@@ -85,13 +85,13 @@ Nota: las cifras de contexto y licencia de los modelos de referencia corresponde
 - Longitud de contexto desconocida: no se puede garantizar un minimo de tokens de contexto, lo que limita su uso en conversaciones multi-turno o documentos largos.
 - Idiomas no declarados: se desconoce la cobertura linguistica y si el modelo rinde adecuadamente en castellano.
 - Riesgo de alucinacion: inherente a los modelos generativos de esta escala y no mitigado por ninguna documentacion sobre evaluaciones de fiabilidad.
-- Sin pipeline declarado: la ausencia de tarea asignada en HuggingFace dificulta la integracion automatica en herramientas que dependen de este campo.
+- Sin pipeline declarado: la ausencia de tarea asignada en Hugging Face dificulta la integracion automatica en herramientas que dependen de este campo.
 - Sin cuantizaciones oficiales: desplegarlo en llama.cpp u Ollama requiere generar conversiones propias, con el consiguiente riesgo de perdida de calidad.
 - Fecha de creacion inusual (2026): el registro indica una fecha futura o fuera de lo comun, lo que conviene verificar antes de tratarlo como referencia temporal fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/menik1126/ovd-math-128-data-random-step500-historical
+- Hugging Face: https://huggingface.co/menik1126/ovd-math-128-data-random-step500-historical
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

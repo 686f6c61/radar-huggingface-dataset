@@ -84,5 +84,5 @@ No se dispone de información sobre modelos comparables directamente, ya que est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yoheikobashi/ptcg-dusknoir-deberta-reranker
+- Hugging Face: https://huggingface.co/yoheikobashi/ptcg-dusknoir-deberta-reranker
 - Código fuente: https://github.com/yohei-kobashi/pokemon-card-bert

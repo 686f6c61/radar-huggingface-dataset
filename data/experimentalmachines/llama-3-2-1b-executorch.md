@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Formato / backend | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-ExecuTorch (este) | 1B nominales | 2k a 32k, fija por fichero | `.pte`, XNNPACK CPU arm64 | llama3.2 | HuggingFace, 0 descargas |
+| Llama-3.2-1B-ExecuTorch (este) | 1B nominales | 2k a 32k, fija por fichero | `.pte`, XNNPACK CPU arm64 | llama3.2 | Hugging Face, 0 descargas |
 | meta-llama/Llama-3.2-1B (base) | 1B nominales | No disponible en la informacion proporcionada | safetensors, PyTorch | llama3.2 | Repositorio oficial de Meta |
 | Conversiones GGUF de Llama-3.2-1B para llama.cpp | 1B nominales | Depende de la configuracion del runtime | GGUF, llama.cpp | llama3.2 | Repositorios de la comunidad; cifras concretas no disponibles |
 | Exportaciones ONNX Runtime Mobile / MLC-LLM del mismo base | 1B nominales | Depende de la exportacion | ONNX / MLC | llama3.2 | Repositorios de la comunidad; cifras concretas no disponibles |
@@ -90,7 +90,7 @@ La diferencia principal frente a las alternativas no esta en la calidad del mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/experimentalmachines/Llama-3.2-1B-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/experimentalmachines/Llama-3.2-1B-ExecuTorch
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Aplicacion Android openweights: https://github.com/alpharomercoma/openweights
 - Ejecucion de exportacion referenciada: https://github.com/ExperimentalMachines/executorch-model-exporter/actions/runs/34753843577

@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clef-MLX-NVFP4 (este modelo) | 27,5 mil millones | no disponible | MLX safetensors, NVFP4 group size 16 | apache-2.0 | HuggingFace, requiere fork de mlx-vlm |
-| Cloudflare/clef (modelo base) | no disponible en la informacion | no disponible | safetensors, bf16 | apache-2.0 | HuggingFace |
+| clef-MLX-NVFP4 (este modelo) | 27,5 mil millones | no disponible | MLX safetensors, NVFP4 group size 16 | apache-2.0 | Hugging Face, requiere fork de mlx-vlm |
+| Cloudflare/clef (modelo base) | no disponible en la informacion | no disponible | safetensors, bf16 | apache-2.0 | Hugging Face |
 | Otros modelos de decision multimodales comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada alternativas directas de la misma categoria (modelos de decision multimodal que devuelvan probabilidades por opcion en un unico forward pass), por lo que la comparativa se limita al modelo base del que deriva esta conversion.
@@ -100,7 +100,7 @@ No se han identificado en la informacion proporcionada alternativas directas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/clef-MLX-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/clef-MLX-NVFP4
 - Modelo base: https://huggingface.co/Cloudflare/clef
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Rama de mlx-vlm con soporte de clef: https://github.com/Lazarus-931/mlx-vlm/tree/feat/clef

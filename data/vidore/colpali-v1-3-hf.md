@@ -4,7 +4,7 @@
 
 ColPali es un modelo de recuperación visual de documentos basado en PaliGemma-3B, un modelo de lenguaje y visión (VLM) de Google. Desarrollado por el equipo de Illuin Technology (vidore), genera representaciones multi-vector estilo ColBERT tanto para imágenes de páginas de documentos como para consultas textuales, permitiendo una interacción tardía (late interaction) entre ambas modalidades. Su principal innovación es indexar documentos directamente desde sus características visuales, eliminando la necesidad de OCR y simplificando el pipeline de recuperación en sistemas RAG.
 
-El modelo se presentó en el paper "ColPali: Efficient Document Retrieval with Vision Language Models" (arXiv:2407.01449) y está disponible en HuggingFace bajo licencia Gemma. Con aproximadamente 2.900 millones de parámetros, es lo suficientemente compacto para ejecutarse en GPUs de consumo, y su arquitectura multi-vector permite una búsqueda más precisa que los bi-encoders tradicionales, especialmente en documentos con tablas, gráficos y layouts complejos. La versión v1.3-hf es una conversión oficial al formato transformers, pensada para usarse con Sentence Transformers o la librería transformers directamente.
+El modelo se presentó en el paper "ColPali: Efficient Document Retrieval with Vision Language Models" (arXiv:2407.01449) y está disponible en Hugging Face bajo licencia Gemma. Con aproximadamente 2.900 millones de parámetros, es lo suficientemente compacto para ejecutarse en GPUs de consumo, y su arquitectura multi-vector permite una búsqueda más precisa que los bi-encoders tradicionales, especialmente en documentos con tablas, gráficos y layouts complejos. La versión v1.3-hf es una conversión oficial al formato transformers, pensada para usarse con Sentence Transformers o la librería transformers directamente.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 - VRAM estimada: aproximadamente 6-8 GB en bfloat16 para los 2,9B parametros, mas overhead de activaciones y procesamiento de imagenes. Con cuantizacion a 8 bits o 4 bits, podria reducirse a 3-5 GB.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM, como RTX 3080, RTX 4090, A100, L4 o similares. En Apple Silicon puede ejecutarse con MPS.
 - Compatible con GPUs de consumo: si, cabe en tarjetas como RTX 3060 (12 GB) o superiores.
-- Opciones de despliegue: transformers, Sentence Transformers, colpali-engine (para versiones anteriores), y compatible con endpoints de HuggingFace.
+- Opciones de despliegue: transformers, Sentence Transformers, colpali-engine (para versiones anteriores), y compatible con endpoints de Hugging Face.
 - Latencia y throughput: no disponible; dependen del hardware y del numero de parches de imagen procesados.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de datos comparativos directos en la informacion proporcionada. Co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vidore/colpali-v1.3-hf
+- Hugging Face: https://huggingface.co/vidore/colpali-v1.3-hf
 - Paper: https://arxiv.org/abs/2407.01449
 - Repositorio de entrenamiento e inferencia: https://github.com/illuin-tech/colpali
 - Modelo base: https://huggingface.co/vidore/colpaligemma-3b-pt-448-base

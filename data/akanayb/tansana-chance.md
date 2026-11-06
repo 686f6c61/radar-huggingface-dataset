@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TanSana Chance es un modelo predictivo tabular desarrollado por el usuario AkanaYB (perfil sin actividad pública verificable en HuggingFace) que estima la nota de corte del concurso general de becas universitarias en Kazajistán para el par «universidad × grupo de programas educativos (GOP)» del año siguiente, y calcula la probabilidad de que un aspirante con una puntuación concreta en el Examen Nacional Unificado (ENT) supere esa nota de corte. No es un modelo de lenguaje: se distribuye como un artefacto `joblib` que contiene una clase `BaselineChance` de scikit-learn, un calibrador isotónico y metadatos auxiliares. Su relevancia es acotada y muy específica: resuelve un problema de planificación educativa en un mercado concreto, con un enfoque estadístico simple y auditable.
+TanSana Chance es un modelo predictivo tabular desarrollado por el usuario AkanaYB (perfil sin actividad pública verificable en Hugging Face) que estima la nota de corte del concurso general de becas universitarias en Kazajistán para el par «universidad × grupo de programas educativos (GOP)» del año siguiente, y calcula la probabilidad de que un aspirante con una puntuación concreta en el Examen Nacional Unificado (ENT) supere esa nota de corte. No es un modelo de lenguaje: se distribuye como un artefacto `joblib` que contiene una clase `BaselineChance` de scikit-learn, un calibrador isotónico y metadatos auxiliares. Su relevancia es acotada y muy específica: resuelve un problema de planificación educativa en un mercado concreto, con un enfoque estadístico simple y auditable.
 
 El modelo se apoya en series históricas de notas de corte de 2021 a 2026 (1.748 variantes universidad × GOP) y proyecta la nota del año objetivo sumando a la del último año un desplazamiento de crecimiento calculado como la media del cambio interanual en los dos últimos tránsitos del mismo grupo de programas. La probabilidad se obtiene como la fracción de cambios históricos en los que la puntuación del aspirante no queda por debajo de la nota proyectada, y posteriormente se pasa por una calibración isotónica.
 
@@ -75,7 +75,7 @@ Observación relevante: la calibración isotónica empeora el score de Brier de 
 
 | Modelo | Tipo | Ámbito | Métrica principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TanSana Chance (este) | Línea base estadística + calibración isotónica | Notas de corte universitarias en Kazajistán | MAE 7,68; cobertura 85 % | No disponible | HuggingFace (`AkanaYB/tansana-chance`) |
+| TanSana Chance (este) | Línea base estadística + calibración isotónica | Notas de corte universitarias en Kazajistán | MAE 7,68; cobertura 85 % | No disponible | Hugging Face (`AkanaYB/tansana-chance`) |
 | ML interno (3 × HistGradientBoosting cuantílico) | Gradient boosting | Mismo ámbito | MAE 7,72; cobertura 61 % | No disponible (no publicado como artefacto) | No disponible |
 | Nota del año anterior (persistencia) | Heurística naive | Mismo ámbito | MAE 10,38 | No aplica | No aplica |
 
@@ -98,6 +98,6 @@ No se dispone de información sobre modelos comparables de terceros para esta ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AkanaYB/tansana-chance
+- Modelo en Hugging Face: https://huggingface.co/AkanaYB/tansana-chance
 - Perfil del autor: https://huggingface.co/AkanaYB
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos públicos asociados al modelo.

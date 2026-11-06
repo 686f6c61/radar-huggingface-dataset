@@ -47,7 +47,7 @@ El unico detalle tecnico reseñable es la presencia de ficheros `mmproj` (multi-
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen metricas de MMLU, HumanEval, GSM8K ni similares.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen metricas de MMLU, HumanEval, GSM8K ni similares.
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 | Luna-Qwen3.5-2B-v5-GGUF | ~1,88B | no disponible | no disponible | GGUF | Este modelo; cuantizaciones multiples |
 | Qwen2.5-1.5B-Instruct (referencia) | 1,54B | 32K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Alternativa oficial de tamano similar; datos de contexto y licencia no verificados en esta busqueda |
 | Llama-3.2-1B-Instruct (referencia) | 1,24B | 128K (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors, GGUF | Alternativa de Meta; datos no verificados en esta busqueda |
-| SmolLM2-1.7B-Instruct (referencia) | 1,71B | 8K (segun documentacion publica de HuggingFace) | Apache 2.0 | safetensors, GGUF | Alternativa de HuggingFace; datos no verificados en esta busqueda |
+| SmolLM2-1.7B-Instruct (referencia) | 1,71B | 8K (segun documentacion publica de Hugging Face) | Apache 2.0 | safetensors, GGUF | Alternativa de Hugging Face; datos no verificados en esta busqueda |
 
 Nota: los datos de los modelos comparables provienen de documentacion publica general y no se han verificado contra las fuentes primarias en esta busqueda; se incluyen solo como referencia orientativa de categoria.
 
@@ -82,7 +82,7 @@ Nota: los datos de los modelos comparables provienen de documentacion publica ge
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/Luna-Qwen3.5-2B-v5-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/Luna-Qwen3.5-2B-v5-GGUF
 - Modelo base: https://huggingface.co/claekchen/Luna-Qwen3.5-2B-v5
 - Pagina de overview de cuantizaciones de mradermacher: https://hf.tst.eu/model#Luna-Qwen3.5-2B-v5-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

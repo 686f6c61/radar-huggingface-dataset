@@ -77,10 +77,10 @@ Puntos de referencia del autor: sobre los mismos conjuntos BF16, la ruta exacta 
 
 | Artefacto | Base | Formato | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| j2ipper/Qwen3.8-27B-W4A4-prompt-v3 | Qwen3.8-27B (UD-IQ4_XS) | `.w4i` v3 | Sidecar W4A4 para prefill en Talus | Apache-2.0 | HuggingFace, 0 descargas |
-| j2ipper/Qwen3.8-27B-W4A4-prompt (v2) | Qwen3.8-27B (UD-IQ4_XS) | `.w4i` v2 | Sidecar W4A4 para versiones antiguas de Talus | Apache-2.0 | HuggingFace |
-| unsloth/Qwen3.8-27B-GGUF (UD-IQ4_XS) | Qwen3.8-27B | GGUF | Modelo completo cuantizado, ejecutable en llama.cpp y derivados | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B | Original | safetensors (presumiblemente) | Modelo base completo en BF16 | Apache-2.0 | HuggingFace |
+| j2ipper/Qwen3.8-27B-W4A4-prompt-v3 | Qwen3.8-27B (UD-IQ4_XS) | `.w4i` v3 | Sidecar W4A4 para prefill en Talus | Apache-2.0 | Hugging Face, 0 descargas |
+| j2ipper/Qwen3.8-27B-W4A4-prompt (v2) | Qwen3.8-27B (UD-IQ4_XS) | `.w4i` v2 | Sidecar W4A4 para versiones antiguas de Talus | Apache-2.0 | Hugging Face |
+| unsloth/Qwen3.8-27B-GGUF (UD-IQ4_XS) | Qwen3.8-27B | GGUF | Modelo completo cuantizado, ejecutable en llama.cpp y derivados | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B | Original | safetensors (presumiblemente) | Modelo base completo en BF16 | Apache-2.0 | Hugging Face |
 
 La comparacion con modelos de la misma categoria (mismo tamano o misma tarea) no aplica en sentido estricto: este artefacto no compite con otros modelos, sino con otras rutas de cuantizacion del mismo modelo base dentro de Talus. Frente a la ruta exacta int8, ofrece mas velocidad de prefill con fidelidad comparable; frente a Q8_0, la ruta exacta y este sidecar presentan mayor desviacion KL, pero Q8_0 no acelera el prefill en la misma medida en este hardware.
 
@@ -98,7 +98,7 @@ La comparacion con modelos de la misma categoria (mismo tamano o misma tarea) no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j2ipper/Qwen3.8-27B-W4A4-prompt-v3
+- Hugging Face: https://huggingface.co/j2ipper/Qwen3.8-27B-W4A4-prompt-v3
 - Fichero previo v2: https://huggingface.co/j2ipper/Qwen3.8-27B-W4A4-prompt
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de referencia: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

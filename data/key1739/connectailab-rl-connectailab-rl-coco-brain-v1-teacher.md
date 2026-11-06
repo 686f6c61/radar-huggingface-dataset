@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`connectailab-rl-coco-brain-v1-teacher` es un modelo de decision reinforcement learning (RL) desarrollado por CONNECT AI LAB (publicado en HuggingFace por el usuario `key1739`). No es un modelo de lenguaje generativo: es una politica PPO entrenada para operar una empresa simulada dentro del entorno `connect-tycoon`, tomando decisiones sobre asignacion de personal, pedidos de inventario, marketing, atencion al cliente, reembolsos y seguridad. El modelo responde en un formato estructurado denominado JEV (`typesafe/jev-1.13`), que define preguntas de tipo eleccion con criterios y devuelve probabilidades por opcion.
+`connectailab-rl-coco-brain-v1-teacher` es un modelo de decision reinforcement learning (RL) desarrollado por CONNECT AI LAB (publicado en Hugging Face por el usuario `key1739`). No es un modelo de lenguaje generativo: es una politica PPO entrenada para operar una empresa simulada dentro del entorno `connect-tycoon`, tomando decisiones sobre asignacion de personal, pedidos de inventario, marketing, atencion al cliente, reembolsos y seguridad. El modelo responde en un formato estructurado denominado JEV (`typesafe/jev-1.13`), que define preguntas de tipo eleccion con criterios y devuelve probabilidades por opcion.
 
 La relevancia del modelo es acotada y experimental: se trata de un "cerebro" de agente para un simulador educativo, con licencia Apache 2.0 y empaquetado en formato NumPy (no safetensors ni GGUF), lo que lo aleja de los flujos habituales de despliegue de LLM. Segun la model card, la politica se entrena primero por imitacion de un "presidente de reglas" (supervised learning) y despues se ajusta con PPO usando recompensas derivadas de los valores de la empresa (beneficio, satisfaccion del cliente y riesgo).
 
@@ -87,7 +87,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/key1739/connectailab-rl-connectailab-rl-coco-brain-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/key1739/connectailab-rl-connectailab-rl-coco-brain-v1-teacher
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

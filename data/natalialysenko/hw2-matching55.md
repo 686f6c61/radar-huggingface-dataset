@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`natalialysenko/hw2-matching55` es un repositorio de HuggingFace publicado por la usuaria Natalia Lysenko que contiene una implementación propia y reducida de una arquitectura CLIP orientada a tareas de *matching* (emparejamiento entre modalidades o entre pares de entradas). El repositorio incluye el código en Python (`finetune.py`), un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, según la propia model card, es un checkpoint de inicialización válido para *smoke tests*, no un modelo entrenado ni evaluado.
+`natalialysenko/hw2-matching55` es un repositorio de Hugging Face publicado por la usuaria Natalia Lysenko que contiene una implementación propia y reducida de una arquitectura CLIP orientada a tareas de *matching* (emparejamiento entre modalidades o entre pares de entradas). El repositorio incluye el código en Python (`finetune.py`), un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, según la propia model card, es un checkpoint de inicialización válido para *smoke tests*, no un modelo entrenado ni evaluado.
 
 El dato más relevante para quien vaya a evaluarlo es su tamaño real: el recuento de parámetros de los pesos en safetensors es de 16.576 parámetros, es decir, aproximadamente 0,0000166 mil millones. Esto contrasta con la etiqueta `scale: huge` que aparece en la tabla de arquitectura de la model card, lo que sugiere que esa etiqueta describe una configuración declarada en el script y no el contenido efectivo del checkpoint publicado. El repositorio ocupa 0,0 GB y acumula 13 descargas y 0 *likes* desde su creación.
 
@@ -72,7 +72,7 @@ La información proporcionada no incluye datos comparativos. A modo de referenci
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| natalialysenko/hw2-matching55 | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 13 descargas |
+| natalialysenko/hw2-matching55 | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 13 descargas |
 | CLIP ViT-B/32 (OpenAI) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | OpenCLIP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | SigLIP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -91,7 +91,7 @@ La información proporcionada no incluye datos comparativos. A modo de referenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/natalialysenko/hw2-matching55
+- Modelo en Hugging Face: https://huggingface.co/natalialysenko/hw2-matching55
 - Perfil del autor: https://huggingface.co/natalialysenko
 - Listado de modelos del autor: https://huggingface.co/natalialysenko/models
 - Listado de datasets del autor: https://huggingface.co/natalialysenko/datasets

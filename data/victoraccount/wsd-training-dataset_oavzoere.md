@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `victoraccount/wsd-training-dataset_oavzoere` es un checkpoint de transformers publicado en HuggingFace por el usuario `victoraccount` con el propósito declarado de extracción de características (feature-extraction). Aunque la model card apenas contiene información más allá de la plantilla automática, los metadatos del repositorio indican que se basa en la arquitectura XLM-RoBERTa (referencia al artículo arXiv:1910.09700) y cuenta con 278 millones de parámetros, lo que coincide con el tamaño de XLM-RoBERTa large. El nombre del repositorio sugiere que el modelo podría estar relacionado con un conjunto de datos de entrenamiento para desambiguación de sentidos de palabras (word sense disambiguation, WSD), aunque no se aportan detalles sobre el proceso de entrenamiento ni sobre el dataset utilizado.
+El modelo `victoraccount/wsd-training-dataset_oavzoere` es un checkpoint de transformers publicado en Hugging Face por el usuario `victoraccount` con el propósito declarado de extracción de características (feature-extraction). Aunque la model card apenas contiene información más allá de la plantilla automática, los metadatos del repositorio indican que se basa en la arquitectura XLM-RoBERTa (referencia al artículo arXiv:1910.09700) y cuenta con 278 millones de parámetros, lo que coincide con el tamaño de XLM-RoBERTa large. El nombre del repositorio sugiere que el modelo podría estar relacionado con un conjunto de datos de entrenamiento para desambiguación de sentidos de palabras (word sense disambiguation, WSD), aunque no se aportan detalles sobre el proceso de entrenamiento ni sobre el dataset utilizado.
 
 La relevancia de este modelo reside en su posible uso como extractor de embeddings multilingües para tareas de desambiguación léxica o clasificación de texto, aprovechando las capacidades multilingües de XLM-RoBERTa. Sin embargo, la falta de documentación y de benchmarks publicados limita seriamente su adopción en entornos de producción sin una evaluación previa por parte del usuario.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: para un modelo de 278M de parametros en precision fp32, se necesitan aproximadamente 1,1 GB solo para los pesos. Con cargas de trabajo tipicas (batch pequeno, secuencias de 512 tokens) se recomienda al menos 4-6 GB de VRAM.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM, como NVIDIA RTX 3060, RTX 3070, RTX 4080, o GPUs de datacenter como V100, A10 o A100.
 - Cabe en GPUs de consumo: si, siempre que se disponga de al menos 8 GB de VRAM. Para inferencia ligera, tambien es posible ejecutarlo en CPU con transformadores, aunque con mayor latencia.
-- Opciones de despliegue: compatible con la libreria transformers de HuggingFace, y se puede servir con herramientas como HuggingFace Inference Endpoints, Text Embeddings Inference (TEI), o mediante la API de transformers en Python.
+- Opciones de despliegue: compatible con la libreria transformers de Hugging Face, y se puede servir con herramientas como Hugging Face Inference Endpoints, Text Embeddings Inference (TEI), o mediante la API de transformers en Python.
 - Latencia y throughput: no disponibles. Se estima una latencia de decenas de milisegundos por secuencia en una GPU moderna, pero depende del hardware y del batch size.
 
 ## Comparativa con modelos similares
@@ -71,11 +71,11 @@ Este modelo no cuenta con documentacion comparable a la de los modelos base de r
 - Posible desalineacion con la tarea: el nombre del repositorio sugiere un proposito de WSD, pero no hay evidencia de que el modelo este correctamente ajustado para ello.
 - Sin benchmarks: no se puede evaluar su calidad frente a alternativas establecidas.
 - Contexto limitado: si se basa en XLM-RoBERTa, la longitud maxima de entrada es de 512 tokens, lo que restringe su uso en documentos largos.
-- Repositorio vacio de informacion: el README es la plantilla generada automaticamente por HuggingFace, sin contenido util.
+- Repositorio vacio de informacion: el README es la plantilla generada automaticamente por Hugging Face, sin contenido util.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/victoraccount/wsd-training-dataset_oavzoere
+- Repositorio en Hugging Face: https://huggingface.co/victoraccount/wsd-training-dataset_oavzoere
 - Paper de XLM-RoBERTa (referencia en tags): https://arxiv.org/abs/1910.09700
 - Documentacion de la libreria transformers: https://huggingface.co/docs/transformers/index
 - Text Embeddings Inference (TEI): https://github.com/huggingface/text-embeddings-inference

@@ -59,7 +59,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 - Posible obsolescencia: el modelo fue creado en agosto de 2026, pero sin actualizaciones ni comunidad, puede quedar desactualizado rápidamente.
 
 ## Enlaces
-- [HuggingFace - username202321/qwen3.54b-df44-dodgerset_big-v1](https://huggingface.co/username202321/qwen3.54b-df44-dodgerset_big-v1)
+- [Hugging Face - username202321/qwen3.54b-df44-dodgerset_big-v1](https://huggingface.co/username202321/qwen3.54b-df44-dodgerset_big-v1)
 - [Qwen3.5-4B base (referencia)](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Blog de Qwen sobre la familia Qwen3](https://qwen.ai/blog?id=qwen3)
 - [Página de Qwen3.5 en Ollama](https://ollama.com/library/qwen3.5:4b)

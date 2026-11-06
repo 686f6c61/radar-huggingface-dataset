@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Backbone | Resolucion | Categorias | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientDet-D4 (este) | EfficientNet-B4 | 1024 | 90 COCO | Apache-2.0 | HuggingFace |
+| EfficientDet-D4 (este) | EfficientNet-B4 | 1024 | 90 COCO | Apache-2.0 | Hugging Face |
 | YOLOv5l | CSPDarknet53 | 640 | 80 COCO | GPL-3.0 | Ultralytics |
 | RetinaNet-R50 | ResNet-50 | 800 | 80 COCO | Apache-2.0 | Torchvision |
 
@@ -77,9 +77,9 @@ No se dispone de datos comparativos de rendimiento (mAP, FPS) en la informacion 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/zeromodels/efficientdet_d4)
+- [Modelo en Hugging Face](https://huggingface.co/zeromodels/efficientdet_d4)
 - [Paper original (arXiv:1911.09070)](https://arxiv.org/abs/1911.09070)
 - [Repositorio oficial de Google AutoML EfficientDet](https://github.com/google/automl/tree/master/efficientdet)
 - [Repositorio de ZeroModels](https://github.com/IMvision12/ZeroModels)
 - [Documentacion de EfficientDet en ZeroModels](https://imvision12.github.io/ZeroModels/efficientdet/)
-- [Coleccion de EfficientDet en HuggingFace](https://hf.co/collections/zeromodels/efficientdet)
+- [Coleccion de EfficientDet en Hugging Face](https://hf.co/collections/zeromodels/efficientdet)

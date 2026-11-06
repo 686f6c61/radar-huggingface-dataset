@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MimicX-Policies es un repositorio de pesos publicado en HuggingFace por el usuario Shuaijun bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos de licencia y no incluye ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades. El repositorio registra cero descargas y cero likes, lo que indica que no ha tenido difusion publica ni validacion por parte de la comunidad.
+MimicX-Policies es un repositorio de pesos publicado en Hugging Face por el usuario Shuaijun bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos de licencia y no incluye ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades. El repositorio registra cero descargas y cero likes, lo que indica que no ha tenido difusion publica ni validacion por parte de la comunidad.
 
 No se dispone de informacion sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni el formato de pesos. El nombre del repositorio ("Policies") sugiere, sin que exista documentacion que lo confirme, que podria tratarse de checkpoints de politicas para un sistema de aprendizaje por refuerzo o para un modelo de robotica, pero esta interpretacion no puede verificarse con los datos disponibles.
 
@@ -40,7 +40,7 @@ Tampoco se han localizado papers, blogs tecnicos ni repositorios de codigo asoci
 
 No es posible proponer casos de uso concretos y realistas sin conocer la arquitectura, el tamano, la modalidad y el dominio de entrenamiento del modelo. Cualquier aplicacion que se sugiriese en este punto seria especulativa y podria inducir a error a quien evalue el repositorio.
 
-Recomendacion operativa: antes de considerar este modelo para cualquier escenario, conviene contactar con el autor a traves de HuggingFace para solicitar una model card completa y, en su defecto, descargar los pesos y realizar una caracterizacion propia (inspeccion de `config.json`, tokenizer, numero de parametros y prueba de inferencia basica).
+Recomendacion operativa: antes de considerar este modelo para cualquier escenario, conviene contactar con el autor a traves de Hugging Face para solicitar una model card completa y, en su defecto, descargar los pesos y realizar una caracterizacion propia (inspeccion de `config.json`, tokenizer, numero de parametros y prueba de inferencia basica).
 
 ## Benchmarks y rendimiento
 
@@ -71,5 +71,5 @@ No disponible. Al no conocerse la categoria funcional del modelo (lenguaje, visi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shuaijun/MimicX-Policies
+- Hugging Face: https://huggingface.co/Shuaijun/MimicX-Policies
 - No se han localizado en la busqueda web papers, blogs tecnicos, repositorios de codigo ni demos relacionados con este modelo. Los resultados devueltos por la busqueda corresponden a guias de turismo sobre Madrid y no son relevantes.

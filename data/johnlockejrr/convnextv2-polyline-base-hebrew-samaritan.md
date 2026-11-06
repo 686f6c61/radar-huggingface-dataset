@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `johnlockejrr/convnextv2-polyline-base-hebrew-samaritan` es un checkpoint publicado en HuggingFace bajo licencia Apache 2.0, creado por el usuario johnlockejrr el 15 de agosto de 2026. El nombre sugiere que se trata de un modelo basado en la arquitectura ConvNeXtV2, orientado al procesamiento de polilíneas (polyline) y posiblemente al reconocimiento de escritura hebrea samaritana, aunque no se dispone de documentación oficial que lo confirme.
+El modelo `johnlockejrr/convnextv2-polyline-base-hebrew-samaritan` es un checkpoint publicado en Hugging Face bajo licencia Apache 2.0, creado por el usuario johnlockejrr el 15 de agosto de 2026. El nombre sugiere que se trata de un modelo basado en la arquitectura ConvNeXtV2, orientado al procesamiento de polilíneas (polyline) y posiblemente al reconocimiento de escritura hebrea samaritana, aunque no se dispone de documentación oficial que lo confirme.
 
 La model card publicada únicamente contiene el frontmatter con la licencia, sin ninguna sección descriptiva, parámetros, ejemplos de uso o información de entrenamiento. No se han registrado descargas ni interacciones en la plataforma, lo que indica que es un modelo reciente o de carácter experimental sin validación comunitaria.
 
@@ -64,4 +64,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: johnlockejrr/convnextv2-polyline-base-hebrew-samaritan](https://huggingface.co/johnlockejrr/convnextv2-polyline-base-hebrew-samaritan)
+- [Hugging Face: johnlockejrr/convnextv2-polyline-base-hebrew-samaritan](https://huggingface.co/johnlockejrr/convnextv2-polyline-base-hebrew-samaritan)

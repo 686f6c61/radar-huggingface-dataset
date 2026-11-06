@@ -108,7 +108,7 @@ Fidelidad multimodal (imágenes, 20 casos, comparado con el original en HF trans
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keptn/ornith-1.5-9b-bf16
+- Modelo en Hugging Face: https://huggingface.co/keptn/ornith-1.5-9b-bf16
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Versión FP8: https://huggingface.co/keptn/ornith-1.5-9b-fp8
 - Repositorio de radiance: https://codeberg.org/StillDeadcode/radiance

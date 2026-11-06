@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KOFIblto/leonzot es un adaptador LoRA para generacion de imagenes a partir de texto, publicado en HuggingFace por el usuario KOFIblto y etiquetado con la libreria diffusers. Se trata de un ajuste fino de bajo rango (low-rank adaptation) cuyo modelo base declarado es krea/Krea-2-Raw, un modelo de difusion texto-a-imagen de la familia Krea. El repositorio incluye las etiquetas diffusers-training, lora, krea2, krea2-diffusers y template:sd-lora, lo que indica que esta pensado para cargarse como adaptador sobre el pipeline de difusion del modelo base.
+KOFIblto/leonzot es un adaptador LoRA para generacion de imagenes a partir de texto, publicado en Hugging Face por el usuario KOFIblto y etiquetado con la libreria diffusers. Se trata de un ajuste fino de bajo rango (low-rank adaptation) cuyo modelo base declarado es krea/Krea-2-Raw, un modelo de difusion texto-a-imagen de la familia Krea. El repositorio incluye las etiquetas diffusers-training, lora, krea2, krea2-diffusers y template:sd-lora, lo que indica que esta pensado para cargarse como adaptador sobre el pipeline de difusion del modelo base.
 
 El proposito tipico de un artefacto de este tipo es incorporar un estilo, un concepto o un personaje concreto al modelo base sin necesidad de reentrenarlo por completo, reduciendo el coste de computo y el tamano de los pesos que hay que distribuir. Sin embargo, la ficha no incluye tarjeta de modelo, descripcion de uso, palabra de activacion (trigger word), hiperparametros de entrenamiento ni ejemplos de resultados, por lo que su comportamiento real no puede verificarse con la informacion disponible.
 
@@ -19,7 +19,7 @@ En el momento de la consulta el repositorio acumula 0 descargas y 0 likes y se p
 | Longitud de contexto | no aplica (modelo de generacion de imagen; no se especifica limite de tokens de prompt) |
 | Tipos de cuantizacion | no disponible (el adaptador se aplica sobre el modelo base, que puede cuantizarse de forma independiente; no se documentan variantes) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en los metadatos de la ficha; la etiqueta de HuggingFace declara apache-2.0 (contradiccion no resuelta) |
+| Licencia | no disponible en los metadatos de la ficha; la etiqueta de Hugging Face declara apache-2.0 (contradiccion no resuelta) |
 | Formato de pesos | no confirmado; la libreria declarada es diffusers y la etiqueta template:sd-lora sugiere pesos de adaptador compatibles con diffusers, habitualmente en safetensors |
 | Modelo base | krea/Krea-2-Raw |
 | Pipeline | text-to-image |
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KOFIblto/leonzot | LoRA texto-a-imagen | no disponible | no aplica | sin benchmarks publicados | apache-2.0 segun etiqueta; no disponible en metadatos | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible en esta ficha | no disponible | HuggingFace |
+| KOFIblto/leonzot | LoRA texto-a-imagen | no disponible | no aplica | sin benchmarks publicados | apache-2.0 segun etiqueta; no disponible en metadatos | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible en esta ficha | no disponible | Hugging Face |
 | Otros adaptadores LoRA sobre Krea-2 | LoRA texto-a-imagen | no disponible | no aplica | no disponible | no disponible | No identificados en la informacion proporcionada |
 
 No se han identificado en la informacion disponible alternativas comparables con datos verificables de parametros, contexto o rendimiento. La busqueda web realizada no devolvio resultados tecnicos relacionados con este modelo.
@@ -82,7 +82,7 @@ No se han identificado en la informacion disponible alternativas comparables con
 ## Limitaciones y advertencias
 
 - No existe tarjeta de modelo ni documentacion de uso: se desconoce la palabra de activacion, el estilo aprendido, los hiperparametros y los datos de entrenamiento.
-- Contradiccion de licencia: la etiqueta de HuggingFace declara apache-2.0, mientras que el campo de licencia de la ficha figura como no disponible. Antes de cualquier uso comercial debe aclararse, junto con la licencia del modelo base krea/Krea-2-Raw, que puede imponer condiciones adicionales.
+- Contradiccion de licencia: la etiqueta de Hugging Face declara apache-2.0, mientras que el campo de licencia de la ficha figura como no disponible. Antes de cualquier uso comercial debe aclararse, junto con la licencia del modelo base krea/Krea-2-Raw, que puede imponer condiciones adicionales.
 - Sin ejemplos ni benchmarks publicados, no es posible evaluar la calidad, la fidelidad al prompt ni la coherencia visual del adaptador.
 - Riesgo de sesgos y estereotipos propios de los modelos de difusion entrenados con datos web a gran escala, agravado porque se desconoce la composicion del dataset de ajuste.
 - Riesgo de reproduccion de material protegido por derechos de autor si el entrenamiento utilizo imagenes sin licencia; no hay informacion al respecto.
@@ -94,6 +94,6 @@ No se han identificado en la informacion disponible alternativas comparables con
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/KOFIblto/leonzot
+- Ficha del modelo en Hugging Face: https://huggingface.co/KOFIblto/leonzot
 - Modelo base declarado en las etiquetas: https://huggingface.co/krea/Krea-2-Raw
 - La busqueda web realizada no devolvio enlaces tecnicos relevantes sobre este modelo; los resultados obtenidos correspondian a sitios de comercio textil y no guardan relacion con el artefacto.

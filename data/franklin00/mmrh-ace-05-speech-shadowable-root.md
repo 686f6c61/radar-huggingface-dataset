@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-ace-05-speech-shadowable-root` es un artefacto publicado en HuggingFace etiquetado como `nemo`, `security-research` y `not-for-production`. Segun su propia model card, se trata de un «espécimen inerte de escáner» (inert scanner specimen) creado para investigación académica en seguridad, no de un modelo de aprendizaje automatico entrenado para tareas de inferencia. El autor lo describe como un portador de metadatos de un hallazgo de seguridad relativo al *target* de un adaptador NeMo (ACE).
+`FrankLin00/mmrh-ace-05-speech-shadowable-root` es un artefacto publicado en Hugging Face etiquetado como `nemo`, `security-research` y `not-for-production`. Segun su propia model card, se trata de un «espécimen inerte de escáner» (inert scanner specimen) creado para investigación académica en seguridad, no de un modelo de aprendizaje automatico entrenado para tareas de inferencia. El autor lo describe como un portador de metadatos de un hallazgo de seguridad relativo al *target* de un adaptador NeMo (ACE).
 
 El repositorio no documenta arquitectura, parametros, contexto ni datos de entrenamiento. La model card indica que cualquier sonda activa ejecuta unicamente `whoami` en forma argv (nunca `shell=True`) y escribe la salida en una variable de entorno bajo `/tmp` o `$TMPDIR`, sin acceso a credenciales ni operaciones de red. Los especímenes AFW emplean la carga inerte literal `PWNED-INERT`.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- [HuggingFace: FrankLin00/mmrh-ace-05-speech-shadowable-root](https://huggingface.co/FrankLin00/mmrh-ace-05-speech-shadowable-root)
+- [Hugging Face: FrankLin00/mmrh-ace-05-speech-shadowable-root](https://huggingface.co/FrankLin00/mmrh-ace-05-speech-shadowable-root)
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

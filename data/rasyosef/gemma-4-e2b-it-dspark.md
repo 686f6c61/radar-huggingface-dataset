@@ -99,7 +99,7 @@ No se dispone de datos comparativos de otros modelos borrador en la informacion 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/rasyosef/gemma-4-E2B-it-dspark
+- Hugging Face del modelo: https://huggingface.co/rasyosef/gemma-4-E2B-it-dspark
 - Modelo base / verificador: https://huggingface.co/google/gemma-4-E2B-it
 - Modelo base (variante no instruct): https://huggingface.co/google/gemma-4-E2B
 - Repositorio de entrenamiento: https://github.com/rasyosef/train-dspark-draft-models

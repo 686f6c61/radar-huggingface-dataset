@@ -4,7 +4,7 @@
 
 `haifaa-bhd/extract-class-grpo-adapter` es un adaptador LoRA entrenado mediante GRPO (Group Relative Policy Optimization) sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato PEFT que debe cargarse junto al modelo base para funcionar. El repositorio ocupa 0,7 GB y fue publicado por el usuario haifaa-bhd, con fecha indicada de creacion del 11 de septiembre de 2026 y cero descargas y cero likes en el momento de la consulta.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card publicada es la plantilla por defecto de HuggingFace, sin ninguna seccion cumplimentada. No hay descripcion de la tarea objetivo, del dataset de entrenamiento, de los hiperparametros, de los resultados de evaluacion ni de la licencia. El nombre del repositorio sugiere una especializacion en tareas de extraccion y clasificacion ("extract-class"), pero esto es una inferencia a partir del identificador y no un dato documentado por el autor.
+La relevancia de esta ficha es limitada y conviene ser explicito: la model card publicada es la plantilla por defecto de Hugging Face, sin ninguna seccion cumplimentada. No hay descripcion de la tarea objetivo, del dataset de entrenamiento, de los hiperparametros, de los resultados de evaluacion ni de la licencia. El nombre del repositorio sugiere una especializacion en tareas de extraccion y clasificacion ("extract-class"), pero esto es una inferencia a partir del identificador y no un dato documentado por el autor.
 
 Desde el punto de vista tecnico, lo unico verificable es que el adaptador se ha entrenado con TRL y GRPO (una variante de aprendizaje por refuerzo sin modelo critico, popularizada por DeepSeekMath) sobre un modelo de codigo de 7.600 millones de parametros con ventana de contexto nativa de 32.768 tokens. Cualquier uso en produccion exige validar el adaptador contra el modelo base antes de confiar en el.
 
@@ -29,7 +29,7 @@ Desde el punto de vista tecnico, lo unico verificable es que el adaptador se ha 
 
 La informacion disponible no describe la arquitectura del adaptador mas alla de las etiquetas del repositorio, que indican `peft`, `lora` y `grpo`. Esto implica que se trata de una capa de bajo rango anadida a los pesos del modelo base, entrenada con Group Relative Policy Optimization a traves de la libreria TRL. GRPO es un algoritmo de aprendizaje por refuerzo que elimina el modelo critico y estima la ventaja de cada respuesta normalizando las recompensas dentro de un grupo de generaciones para el mismo prompt; se hizo popular con DeepSeekMath y se ha adoptado ampliamente para ajuste de razonamiento y de tareas verificables.
 
-No hay ningun dato sobre el dataset de entrenamiento, el numero de tokens vistos, la composicion de las recompensas, el rango del adaptador, el valor de alpha, la tasa de aprendizaje, la precision (fp16, bf16 o fp32) ni el numero de pasos. Tampoco se documenta si hubo una fase previa de SFT antes del GRPO, algo habitual en este tipo de pipelines. La unica referencia a arXiv en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y que aparece citado en la plantilla por defecto de HuggingFace, no a un articulo sobre este modelo.
+No hay ningun dato sobre el dataset de entrenamiento, el numero de tokens vistos, la composicion de las recompensas, el rango del adaptador, el valor de alpha, la tasa de aprendizaje, la precision (fp16, bf16 o fp32) ni el numero de pasos. Tampoco se documenta si hubo una fase previa de SFT antes del GRPO, algo habitual en este tipo de pipelines. La unica referencia a arXiv en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y que aparece citado en la plantilla por defecto de Hugging Face, no a un articulo sobre este modelo.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ No se han identificado en la informacion disponible otros adaptadores GRPO compa
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/haifaa-bhd/extract-class-grpo-adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/haifaa-bhd/extract-class-grpo-adapter
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL (implementacion de GRPO): https://github.com/huggingface/trl

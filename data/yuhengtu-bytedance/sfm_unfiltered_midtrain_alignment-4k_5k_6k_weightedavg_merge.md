@@ -4,7 +4,7 @@
 
 El modelo `yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-4k_5k_6k_weightedavg_merge` es un merge de tres checkpoints intermedios de un modelo de lenguaje no especificado, creado mediante la herramienta [mergekit](https://github.com/cg123/mergekit) con el método Linear (también conocido como SLERP o weighted average). El autor, yuhengtu-bytedance, ha publicado varios merges similares con distintas variantes de ponderación, lo que sugiere un experimento de fusión de pesos para mejorar el rendimiento o la alineación del modelo resultante.
 
-El modelo tiene aproximadamente 6,86 mil millones de parámetros y los pesos se almacenan en formato `safetensors` con precisión `bfloat16`. Según las etiquetas de HuggingFace, la arquitectura subyacente es `gpt_neox`, lo que indica un transformer decoder basado en GPT-NeoX. No se dispone de información sobre la licencia, los idiomas soportados, el contexto máximo ni los datos de entrenamiento, ya que la model card solo documenta el proceso de merge.
+El modelo tiene aproximadamente 6,86 mil millones de parámetros y los pesos se almacenan en formato `safetensors` con precisión `bfloat16`. Según las etiquetas de Hugging Face, la arquitectura subyacente es `gpt_neox`, lo que indica un transformer decoder basado en GPT-NeoX. No se dispone de información sobre la licencia, los idiomas soportados, el contexto máximo ni los datos de entrenamiento, ya que la model card solo documenta el proceso de merge.
 
 La relevancia de este modelo es limitada fuera del ámbito de experimentación con técnicas de fusión de pesos. Al ser un merge de checkpoints intermedios de un mismo modelo base, su utilidad práctica depende de la calidad del modelo original, del cual no se proporciona información pública. Es un caso de estudio para quienes investigan métodos de interpolación de pesos en modelos de lenguaje.
 
@@ -12,7 +12,7 @@ La relevancia de este modelo es limitada fuera del ámbito de experimentación c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según etiquetas de HuggingFace) |
+| Arquitectura | GPT-NeoX (según etiquetas de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables. El autor ha publicado o
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-4k_5k_6k_weightedavg_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-4k_5k_6k_weightedavg_merge)
 - [Variante simpleavg](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-4k_5k_6k_simpleavg_merge)
 - [Variante sin ponderar](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-4k_5k_6k_merge)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)

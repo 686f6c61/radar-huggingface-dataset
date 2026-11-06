@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks genericos (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TMaxxx/tmax-8b-v1.1 | 8,19 B | SFT + RL (DPPO), dataset TMax-13K v1.1 | 40.960 | Apache 2.0 | Pesos y checkpoints intermedios en HuggingFace |
-| allenai/tmax-sft-8b | ~8 B | Solo SFT sobre Qwen3-8B | 40.960 | Apache 2.0 | Pesos en HuggingFace; base del modelo RL |
-| allenai/tmax-8b (v1.0) | ~8 B | SFT + RL (DPPO), dataset v1.0 | 40.960 | Apache 2.0 | Pesos en HuggingFace; resultados con harness anterior, no comparables directamente |
-| Qwen3-8B (base) | ~8 B | Preentrenamiento + post-entrenamiento generalista de Alibaba | 40.960 | Apache 2.0 | Pesos en HuggingFace; modelo generalista, sin especializacion en terminal |
+| TMaxxx/tmax-8b-v1.1 | 8,19 B | SFT + RL (DPPO), dataset TMax-13K v1.1 | 40.960 | Apache 2.0 | Pesos y checkpoints intermedios en Hugging Face |
+| allenai/tmax-sft-8b | ~8 B | Solo SFT sobre Qwen3-8B | 40.960 | Apache 2.0 | Pesos en Hugging Face; base del modelo RL |
+| allenai/tmax-8b (v1.0) | ~8 B | SFT + RL (DPPO), dataset v1.0 | 40.960 | Apache 2.0 | Pesos en Hugging Face; resultados con harness anterior, no comparables directamente |
+| Qwen3-8B (base) | ~8 B | Preentrenamiento + post-entrenamiento generalista de Alibaba | 40.960 | Apache 2.0 | Pesos en Hugging Face; modelo generalista, sin especializacion en terminal |
 
 En terminos de puntuaciones agenticas comparadas, no se han publicado en la informacion disponible resultados de TB-Lite o Terminal-Bench 2.1 para los modelos alternativos bajo el mismo harness, por lo que no es posible una comparacion numerica directa.
 
@@ -97,7 +97,7 @@ En terminos de puntuaciones agenticas comparadas, no se han publicado en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TMaxxx/tmax-8b-v1.1
+- Modelo en Hugging Face: https://huggingface.co/TMaxxx/tmax-8b-v1.1
 - Coleccion TMax v1.1 (modelos y datos): https://huggingface.co/collections/TMaxxx/tmax-v11
 - Dataset de entrenamiento TMax-13K v1.1: https://huggingface.co/datasets/TMaxxx/tmax-13k-v1.1
 - Checkpoint SFT base (allenai/tmax-sft-8b): https://huggingface.co/allenai/tmax-sft-8b

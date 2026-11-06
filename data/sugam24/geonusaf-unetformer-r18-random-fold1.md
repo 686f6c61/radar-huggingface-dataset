@@ -90,5 +90,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sugam24/geonusaf-unetformer-r18-random-fold1
+- Modelo en Hugging Face: https://huggingface.co/sugam24/geonusaf-unetformer-r18-random-fold1
 - Referencia de arquitectura: Wang et al. (2022), "UNetFormer: A UNet-like transformer for efficient semantic segmentation of remote sensing urban scene imagery", ISPRS J. Photogramm. Remote Sens. 190:196-214 (el repositorio de referencia es GPL-3.0, pero no se proporciona enlace directo).

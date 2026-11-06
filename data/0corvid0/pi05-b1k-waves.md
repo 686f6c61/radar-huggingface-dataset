@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `0Corvid0/pi05-b1k-waves` es un modelo de inteligencia artificial publicado en HuggingFace por el autor 0Corvid0. Se trata de un repositorio de acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar o utilizar los pesos. El tamaño del repositorio es de 33,9 GB, lo que sugiere que se trata de un modelo de gran escala, aunque no se dispone de información pública sobre su arquitectura, número de parámetros o dominio de aplicación.
+El modelo `0Corvid0/pi05-b1k-waves` es un modelo de inteligencia artificial publicado en Hugging Face por el autor 0Corvid0. Se trata de un repositorio de acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar o utilizar los pesos. El tamaño del repositorio es de 33,9 GB, lo que sugiere que se trata de un modelo de gran escala, aunque no se dispone de información pública sobre su arquitectura, número de parámetros o dominio de aplicación.
 
-La ficha se elabora a partir de la información disponible en HuggingFace, que es extremadamente limitada. No se han publicado detalles técnicos, documentación, papers ni ejemplos de uso. La licencia se indica como "other", lo que significa que no es una licencia estándar (como Apache 2.0 o MIT) y puede imponer restricciones particulares. El modelo fue creado el 13 de agosto de 2026 y actualizado al día siguiente, aunque no se ha registrado ninguna descarga ni "me gusta" en el momento de la consulta.
+La ficha se elabora a partir de la información disponible en Hugging Face, que es extremadamente limitada. No se han publicado detalles técnicos, documentación, papers ni ejemplos de uso. La licencia se indica como "other", lo que significa que no es una licencia estándar (como Apache 2.0 o MIT) y puede imponer restricciones particulares. El modelo fue creado el 13 de agosto de 2026 y actualizado al día siguiente, aunque no se ha registrado ninguna descarga ni "me gusta" en el momento de la consulta.
 
 Dada la ausencia de información pública, esta ficha se limita a reflejar los datos disponibles y marca explícitamente como "no disponible" cualquier especificación que no haya sido proporcionada. Se recomienda contactar con el autor o solicitar acceso al repositorio para obtener detalles adicionales antes de considerar su uso en cualquier proyecto.
 
@@ -47,7 +47,7 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio del mod
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que se requiere aceptar condiciones adicionales en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated, por lo que se requiere aceptar condiciones adicionales en Hugging Face antes de la descarga.
 - Licencia "other": no es una licencia estándar; puede imponer restricciones de uso comercial, redistribución o modificación. Es imprescindible revisar los términos exactos antes de cualquier uso.
 - Ausencia de documentación: no hay papers, guías ni ejemplos que permitan evaluar el comportamiento del modelo.
 - Riesgo de alucinación y sesgos: al no existir información sobre el entrenamiento, no se puede evaluar el riesgo de sesgos ni de generación de contenido incorrecto.
@@ -55,4 +55,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio del mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0Corvid0/pi05-b1k-waves
+- Repositorio Hugging Face: https://huggingface.co/0Corvid0/pi05-b1k-waves

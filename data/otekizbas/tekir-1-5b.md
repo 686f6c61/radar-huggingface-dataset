@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tekir-1.5B es un modelo de lenguaje especializado en turco desarrollado por el usuario de HuggingFace otekizbas. Funciona como asistente interno de recursos humanos para la empresa (ficticia) Bulutkedi Yazılım A.Ş. Se construye mediante un ajuste fino con QLoRA sobre Qwen2.5-1.5B-Instruct, un transformer decoder-only de 1.543.714.304 parámetros (unos 1,54 mil millones). El modelo reparte su conocimiento en tres piezas: la identidad y el tono se fijan con el ajuste fino, las normas de la empresa se recuperan mediante RAG y los datos de empleados se obtienen a través de llamadas a herramientas.
+Tekir-1.5B es un modelo de lenguaje especializado en turco desarrollado por el usuario de Hugging Face otekizbas. Funciona como asistente interno de recursos humanos para la empresa (ficticia) Bulutkedi Yazılım A.Ş. Se construye mediante un ajuste fino con QLoRA sobre Qwen2.5-1.5B-Instruct, un transformer decoder-only de 1.543.714.304 parámetros (unos 1,54 mil millones). El modelo reparte su conocimiento en tres piezas: la identidad y el tono se fijan con el ajuste fino, las normas de la empresa se recuperan mediante RAG y los datos de empleados se obtienen a través de llamadas a herramientas.
 
 El proyecto forma parte de un bootcamp y se publica con licencia Apache-2.0, junto con el adaptador LoRA, una versión GGUF para ejecución en CPU y el conjunto de datos de entrenamiento. El coste de entrenamiento es deliberadamente bajo: 382 conversaciones sintéticas generadas con Gemini y 3 épocas de QLoRA, reproducibles en una GPU T4 en aproximadamente 10 minutos.
 
@@ -87,10 +87,10 @@ Los nombres de las métricas y las preguntas se han mantenido en turco para no a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| Tekir-1.5B | 1,54 B | 32.768 (heredado, no confirmado) | Apache-2.0 | HuggingFace: safetensors, GGUF y LoRA | Asistente de RR. HH. en turco |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache-2.0 | HuggingFace | Generalista multilingüe |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | Meta / HuggingFace | Generalista |
-| Gemma-2-2B-it | 2,6 B | 8.192 | Gemma Terms of Use | HuggingFace | Generalista |
+| Tekir-1.5B | 1,54 B | 32.768 (heredado, no confirmado) | Apache-2.0 | Hugging Face: safetensors, GGUF y LoRA | Asistente de RR. HH. en turco |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache-2.0 | Hugging Face | Generalista multilingüe |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | Meta / Hugging Face | Generalista |
+| Gemma-2-2B-it | 2,6 B | 8.192 | Gemma Terms of Use | Hugging Face | Generalista |
 
 Los datos del modelo base proceden de la propia model card de Tekir. Los de Llama-3.2-1B-Instruct y Gemma-2-2B-it se toman de sus fichas públicas y no están verificados en la información proporcionada. No hay benchmarks comparativos comunes entre Tekir-1.5B y esos modelos, por lo que no es posible establecer una comparación de rendimiento.
 
@@ -107,11 +107,11 @@ Los datos del modelo base proceden de la propia model card de Tekir. Los de Llam
 - Contenido de la model card: algunas tablas incluyen texto mezclado con caracteres de otros idiomas, señal de una posible falta de revisión del material publicado.
 - Licencia: Apache-2.0 permite uso comercial y modificación, pero al tratarse de un proyecto de bootcamp con datos ficticios no hay garantías de idoneidad para producción.
 - Adopción nula: 0 descargas y 0 me gusta en el momento de la consulta, sin mantenimiento ni versiones posteriores publicadas.
-- Fecha de publicación en HuggingFace: 11 de octubre de 2026 (creación y última actualización el mismo día).
+- Fecha de publicación en Hugging Face: 11 de octubre de 2026 (creación y última actualización el mismo día).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/otekizbas/Tekir-1.5B
+- Modelo en Hugging Face: https://huggingface.co/otekizbas/Tekir-1.5B
 - Adaptador LoRA: https://huggingface.co/otekizbas/Tekir-1.5B-LoRA
 - Versión GGUF: https://huggingface.co/otekizbas/Tekir-1.5B-GGUF
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/otekizbas/tekir-1.5b-veri

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `reyansh38771/sn97____wondercat____uid179____hk5GBrS` es un checkpoint alojado en HuggingFace por el usuario `reyansh38771` (Dallien Reayn). Los metadatos del repositorio indican que se trata de un modelo con arquitectura `qwen3_5_moe`, lo que sugiere una implementación basada en la familia Qwen 3.5 con mezcla de expertos (MoE). El nombre interno "wondercat" parece ser un identificador de proyecto o experimento.
+El modelo `reyansh38771/sn97____wondercat____uid179____hk5GBrS` es un checkpoint alojado en Hugging Face por el usuario `reyansh38771` (Dallien Reayn). Los metadatos del repositorio indican que se trata de un modelo con arquitectura `qwen3_5_moe`, lo que sugiere una implementación basada en la familia Qwen 3.5 con mezcla de expertos (MoE). El nombre interno "wondercat" parece ser un identificador de proyecto o experimento.
 
-El modelo cuenta con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones) y un tamaño de repositorio de 140,4 GB, lo que apunta a pesos en formato `safetensors` sin cuantizar. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. No se dispone de información pública sobre su licencia, idiomas soportados, contexto de entrenamiento o capacidades específicas, más allá de los metadatos básicos del repositorio.
+El modelo cuenta con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones) y un tamaño de repositorio de 140,4 GB, lo que apunta a pesos en formato `safetensors` sin cuantizar. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. No se dispone de información pública sobre su licencia, idiomas soportados, contexto de entrenamiento o capacidades específicas, más allá de los metadatos básicos del repositorio.
 
-La relevancia de este modelo es incierta: no se han publicado benchmarks, papers ni documentación técnica asociada. Su perfil en HuggingFace es reciente (creado en agosto de 2026) y cuenta con muy poca tracción (1 descarga, 0 likes). Se recomienda tratarlo como un experimento o checkpoint de investigación sin validación externa.
+La relevancia de este modelo es incierta: no se han publicado benchmarks, papers ni documentación técnica asociada. Su perfil en Hugging Face es reciente (creado en agosto de 2026) y cuenta con muy poca tracción (1 descarga, 0 likes). Se recomienda tratarlo como un experimento o checkpoint de investigación sin validación externa.
 
 ## Especificaciones técnicas
 
@@ -81,8 +81,8 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/reyansh38771/sn97____wondercat____uid179____hk5GBrS)
-- [Perfil del autor en HuggingFace](https://huggingface.co/reyansh38771)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/reyansh38771/sn97____wondercat____uid179____hk5GBrS)
+- [Perfil del autor en Hugging Face](https://huggingface.co/reyansh38771)
 - [Repositorio similar: sn97____monate615____uid157____hk5CvaP](https://huggingface.co/reyansh38771/sn97____monate615____uid157____hk5CvaP)
 - [Repositorio similar: sn97____dora7____uid216____hk5EX35](https://huggingface.co/reyansh38771/sn97____dora7____uid216____hk5EX35)
 - [Repositorio similar: sn97____logicpeak____uid148____hk5DXSx](https://huggingface.co/reyansh38771/sn97____logicpeak____uid148____hk5DXSx)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DaSiWa Krea2 Turbo (DarkDesire V3 Turbo UC) int8 mirror es un checkpoint de generación de imágenes texto-a-imagen derivado por fine-tuning de `black-forest-labs/FLUX.1-Krea-dev`. El modelo original lo publica el autor de DaSiWa en Civitai (modelo 2760803) y este repositorio de HuggingFace, gestionado por el usuario `releaseworthy`, se limita a replicar el archivo de pesos en formato int8 para evitar la limitación de velocidad de descarga del CDN de Civitai (que restringe a un único host a 11-33 MB/s tras unos pocos GB). No se trata, por tanto, de un modelo nuevo ni de un entrenamiento propio, sino de un espejo de conveniencia para instancias de GPU alquiladas.
+DaSiWa Krea2 Turbo (DarkDesire V3 Turbo UC) int8 mirror es un checkpoint de generación de imágenes texto-a-imagen derivado por fine-tuning de `black-forest-labs/FLUX.1-Krea-dev`. El modelo original lo publica el autor de DaSiWa en Civitai (modelo 2760803) y este repositorio de Hugging Face, gestionado por el usuario `releaseworthy`, se limita a replicar el archivo de pesos en formato int8 para evitar la limitación de velocidad de descarga del CDN de Civitai (que restringe a un único host a 11-33 MB/s tras unos pocos GB). No se trata, por tanto, de un modelo nuevo ni de un entrenamiento propio, sino de un espejo de conveniencia para instancias de GPU alquiladas.
 
 El checkpoint se distribuye como un único archivo `DasiwaKrea2TurboRaw_darkdesireV3TurboUC_int8.safetensors` de 12,84 GB (13,8 GB de repositorio) y está pensado para ejecutarse en ComfyUI mediante la cadena de workflows de DaSiWa, con 8 pasos de muestreo, CFG 1, sampler `euler` y scheduler `beta`. El text encoder y el VAE no se incluyen en este repositorio: deben obtenerse por separado desde `Comfy-Org/Krea-2`, concretamente `text_encoders/qwen3vl_4b_fp8_scaled.safetensors` y `vae/qwen_image_vae.safetensors`.
 
@@ -38,7 +38,7 @@ La innovación técnica destacable, según la model card, es la cuantización a 
 
 ## Casos de uso
 
-- Generación de imágenes en instancias de GPU alquiladas: el repositorio existe precisamente para descargar el checkpoint a velocidad completa desde HuggingFace en lugar de sufrir el throttling del CDN de Civitai (11-33 MB/s), lo que agiliza el aprovisionamiento de entornos efímeros de entrenamiento o inferencia.
+- Generación de imágenes en instancias de GPU alquiladas: el repositorio existe precisamente para descargar el checkpoint a velocidad completa desde Hugging Face en lugar de sufrir el throttling del CDN de Civitai (11-33 MB/s), lo que agiliza el aprovisionamiento de entornos efímeros de entrenamiento o inferencia.
 - Prototipado rápido de pipelines texto-a-imagen en ComfyUI: con 8 pasos y CFG 1, el modelo permite iterar sobre prompts y composiciones con un coste por imagen bajo en comparación con muestreos de 20-50 pasos.
 - Generación de arte conceptual y variaciones estilísticas: al ser un fine-tuning de FLUX.1-Krea-dev orientado a un estilo concreto (DarkDesire V3 Turbo UC), encaja en flujos de exploración visual donde se busca una estética definida.
 - Reproducibilidad de flujos de trabajo: al fijar el archivo exacto y los parámetros de muestreo (euler, beta, 8 pasos, CFG 1), permite replicar resultados en distintos entornos siempre que se usen el mismo text encoder y VAE de `Comfy-Org/Krea-2`.
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DaSiWa Krea2 Turbo int8 mirror | no disponible | no aplica | no disponible | civitai-model-license | HuggingFace (espejo) y Civitai |
-| black-forest-labs/FLUX.1-Krea-dev | no disponible | no aplica | no disponible | no disponible en la informacion | HuggingFace (modelo base) |
-| Comfy-Org/Krea-2 (text encoder y VAE) | Qwen3-VL 4B (text encoder) | no aplica | no disponible | no disponible en la informacion | HuggingFace |
+| DaSiWa Krea2 Turbo int8 mirror | no disponible | no aplica | no disponible | civitai-model-license | Hugging Face (espejo) y Civitai |
+| black-forest-labs/FLUX.1-Krea-dev | no disponible | no aplica | no disponible | no disponible en la informacion | Hugging Face (modelo base) |
+| Comfy-Org/Krea-2 (text encoder y VAE) | Qwen3-VL 4B (text encoder) | no aplica | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría. La comparación se limita a la relación de dependencia entre el checkpoint y sus componentes auxiliares.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/releaseworthy/dasiwa-krea2-turbo-int8
+- Hugging Face: https://huggingface.co/releaseworthy/dasiwa-krea2-turbo-int8
 - Modelo original en Civitai: https://civitai.com/models/2760803
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev
 - Text encoder y VAE: https://huggingface.co/Comfy-Org/Krea-2

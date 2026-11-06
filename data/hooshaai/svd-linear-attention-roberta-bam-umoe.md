@@ -85,7 +85,7 @@ No se han proporcionado resultados comparativos en la información disponible. L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-bam-umoe
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-bam-umoe
 - GitHub del autor: https://github.com/Hooshaai
 - Sitio del laboratorio HOOSHA AI: https://hooshaai.github.io/
 - Paper de referencia citado en los tags del modelo: https://arxiv.org/abs/1701.06538

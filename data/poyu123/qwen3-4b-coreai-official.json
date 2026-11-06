@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Poyu123/qwen3-4b-CoreAI-official",
+  "slug": "poyu123-qwen3-4b-coreai-official",
+  "author": "Poyu123",
+  "url": "https://huggingface.co/Poyu123/qwen3-4b-CoreAI-official",
+  "created_at": "2026-11-06T01:44:33.000Z",
+  "updated_at": "2026-11-06T01:45:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "coreai-aimodel",
+    "apple",
+    "aimodel",
+    "apple-silicon",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2274879908,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "Text Generation model with 4B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexis-martinez/vision-language-pretraining-run3` es un repositorio de HuggingFace publicado por el usuario alexis-martinez que, segun su propia model card, no contiene un modelo entrenado sino notas de investigacion y un esbozo de experimento sobre preentrenamiento vision-lenguaje. El repositorio se etiqueta con `research-notes` y `vision-language-pretraining`, y su autora o autor indica explicitamente que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado. El artefacto principal declarado es `notes.md`, acompanado de un `README.md`.
+`alexis-martinez/vision-language-pretraining-run3` es un repositorio de Hugging Face publicado por el usuario alexis-martinez que, segun su propia model card, no contiene un modelo entrenado sino notas de investigacion y un esbozo de experimento sobre preentrenamiento vision-lenguaje. El repositorio se etiqueta con `research-notes` y `vision-language-pretraining`, y su autora o autor indica explicitamente que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado. El artefacto principal declarado es `notes.md`, acompanado de un `README.md`.
 
 El dato tecnico mas relevante es el recuento de parametros reportado en los metadatos de safetensors: 16.576 parametros totales. Se trata de una cifra extraordinariamente baja para cualquier transformer funcional y sugiere que el archivo de pesos presente en el repositorio no corresponde a un modelo utilizable, sino a un artefacto residual o de prueba. El tamano del repositorio es de 0.0 GB y no consta pipeline asignado.
 
@@ -26,7 +26,7 @@ Por tanto, esta ficha documenta un repositorio de caracter exploratorio y no un 
 
 ## Arquitectura y entrenamiento
 
-La unica informacion sobre arquitectura es la etiqueta `transformer` en los metadatos de HuggingFace. La model card no describe capas, dimensiones ocultas, numero de cabezas de atencion, tipo de encoder visual ni estrategia de fusion vision-lenguaje. El recuento de 16.576 parametros es incompatible con un transformer vision-lenguaje operativo, lo que refuerza la conclusion de que no existe un checkpoint entrenado en el repositorio.
+La unica informacion sobre arquitectura es la etiqueta `transformer` en los metadatos de Hugging Face. La model card no describe capas, dimensiones ocultas, numero de cabezas de atencion, tipo de encoder visual ni estrategia de fusion vision-lenguaje. El recuento de 16.576 parametros es incompatible con un transformer vision-lenguaje operativo, lo que refuerza la conclusion de que no existe un checkpoint entrenado en el repositorio.
 
 Respecto al entrenamiento, la model card indica que el repositorio contiene un esbozo de experimento y notas de lectura, con secciones etiquetadas como planes o hipotesis que no deben interpretarse como resultados. No se declara numero de tokens de entrenamiento, composicion del dataset, uso de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La propia autora o autor senala que, si se anaden resultados en el futuro, deberan incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -75,7 +75,7 @@ No disponible. No se conocen modelos comparables porque el repositorio no consti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexis-martinez/vision-language-pretraining-run3
+- Repositorio en Hugging Face: https://huggingface.co/alexis-martinez/vision-language-pretraining-run3
 - Artefacto principal citado en la model card: `notes.md` (dentro del repositorio)
 - Documentacion del repositorio: `README.md` (dentro del repositorio)
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

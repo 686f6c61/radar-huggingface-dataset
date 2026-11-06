@@ -104,6 +104,6 @@ No se han proporcionado datos de modelos alternativos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Interchained/imagine-v12
+- Modelo en Hugging Face: https://huggingface.co/Interchained/imagine-v12
 - Modelo predecesor citado: https://huggingface.co/Interchained/imagine-v11 (referenciado como base del ajuste en dos etapas)
 - Paper, blog, repositorio o demo: no disponible en la información proporcionada. Los resultados de la búsqueda web facilitados no guardan relación con el modelo y no se incluyen.

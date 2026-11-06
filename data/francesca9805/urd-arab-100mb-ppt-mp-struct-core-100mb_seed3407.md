@@ -45,7 +45,7 @@ Sobre esa base se ha aplicado un ajuste fino supervisado (SFT) con TRL 0.23.0, s
 - Generacion de texto en urdu para evaluacion linguistica: se puede usar para producir texto sintetico y analizar fluidez, morfologia o cobertura lexica con hablantes nativos como evaluadores.
 - Analisis de sesgos en modelos monolingues de bajo recurso: su tamano reducido permite ejecutar barridos de prompts masivos en CPU o GPU de gama baja para estudiar sesgos en la salida.
 - Prototipado rapido de interfaces conversacionales en entornos sin GPU: con 124,8 millones de parametros cabe en cualquier portatil, lo que permite validar flujos de chat antes de invertir en modelos mayores.
-- Docencia y practicas de ajuste fino: es un ejemplo util para ensenar el flujo completo de SFT con TRL, desde la carga del modelo base hasta la publicacion en HuggingFace.
+- Docencia y practicas de ajuste fino: es un ejemplo util para ensenar el flujo completo de SFT con TRL, desde la carga del modelo base hasta la publicacion en Hugging Face.
 - Baseline en experimentos de destilacion o comparacion de arquitecturas: sirve como referencia de tamano pequeno frente a modelos mayores entrenados en el mismo idioma.
 
 ## Benchmarks y rendimiento
@@ -66,10 +66,10 @@ La model card no incluye metricas de evaluacion (MMLU, HumanEval, GSM8K ni equiv
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed3407` | 124,77 M | no disponible | no disponible (base: urdu en escritura arabe) | no disponible | HuggingFace, FriendliAI | no disponible |
-| `goldfish-models/urd_arab_100mb` (modelo base) | no disponible en la informacion proporcionada (familia Goldfish de ~124 M) | no disponible | urdu (escritura arabe) | no disponible | HuggingFace | no disponible |
-| `francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455` (misma serie, otra semilla) | no disponible | no disponible | no disponible | no disponible | HuggingFace | no disponible |
-| GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | ingles | MIT (licencia del modelo original de OpenAI) | HuggingFace, multiples runtimes | benchmarks publicos en ingles, no comparables directamente |
+| `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed3407` | 124,77 M | no disponible | no disponible (base: urdu en escritura arabe) | no disponible | Hugging Face, FriendliAI | no disponible |
+| `goldfish-models/urd_arab_100mb` (modelo base) | no disponible en la informacion proporcionada (familia Goldfish de ~124 M) | no disponible | urdu (escritura arabe) | no disponible | Hugging Face | no disponible |
+| `francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455` (misma serie, otra semilla) | no disponible | no disponible | no disponible | no disponible | Hugging Face | no disponible |
+| GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | ingles | MIT (licencia del modelo original de OpenAI) | Hugging Face, multiples runtimes | benchmarks publicos en ingles, no comparables directamente |
 
 No se dispone de datos de rendimiento de ninguna de las variantes de la serie, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de ninguna de las variantes de la serie, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_100mb
 - Variante con otra semilla: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455
 - Variante de checkpoint: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Navya-1C es un modelo de lenguaje de tipo decoder-only con 1.306.634.240 parámetros (1,31B), desarrollado por Navyam AI (Bachatt) y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo base entrenado desde cero sobre un corpus centrado en India, que combina finanzas, inglés, hindi/hinglish y otros idiomas indios. El modelo emplea un tokenizador personalizado de 64.000 tokens y fue entrenado con aproximadamente 103.000 millones de tokens en ocho GPUs H100, utilizando una estrategia de calentamiento estable y decaimiento (WSD).
+Navya-1C es un modelo de lenguaje de tipo decoder-only con 1.306.634.240 parámetros (1,31B), desarrollado por Navyam AI (Bachatt) y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo base entrenado desde cero sobre un corpus centrado en India, que combina finanzas, inglés, hindi/hinglish y otros idiomas indios. El modelo emplea un tokenizador personalizado de 64.000 tokens y fue entrenado con aproximadamente 103.000 millones de tokens en ocho GPUs H100, utilizando una estrategia de calentamiento estable y decaimiento (WSD).
 
 El objetivo declarado por el autor es servir como modelo de investigación para preguntas y respuestas sobre finanzas personales en India. Sin embargo, el modelo no está alineado mediante RLHF ni otras técnicas de ajuste posterior, y no se han publicado resultados de benchmarks en la información disponible. Por ello, su evaluación práctica debe realizarse con cautela.
 
@@ -29,7 +29,7 @@ El entrenamiento se realizó sobre aproximadamente 103.000 millones de tokens de
 
 - Generación de texto en inglés e hindi sobre dominios financieros, con un tokenizador de 64.000 tokens optimizado para vocabulario financiero indio.
 - Comprensión de terminología específica de finanzas personales en India, como préstamos, inversiones, impuestos, seguros y productos bancarios.
-- Compatibilidad declarada con text-generation-inference y endpoints de HuggingFace, según las etiquetas del repositorio.
+- Compatibilidad declarada con text-generation-inference y endpoints de Hugging Face, según las etiquetas del repositorio.
 - Integración sencilla mediante la biblioteca transformers, tal como se muestra en la model card.
 - No se documenta soporte para tool calling, function calling, visión, audio ni modo de razonamiento extendido (thinking mode).
 - Las capacidades de agentes o de razonamiento multi-paso no están descritas en la documentación disponible.
@@ -64,9 +64,9 @@ La siguiente tabla compara especificaciones con dos modelos de tamaño similar. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| navya-1c | 1.306.634.240 | No disponible | Apache-2.0 | HuggingFace | No disponible |
-| TinyLlama-1.1B | 1.100.000.000 | 2.048 (original) | Apache-2.0 | HuggingFace | No disponible |
-| Qwen2.5-1.5B | 1.540.000.000 | 32.768 | Apache-2.0 | HuggingFace | No disponible |
+| navya-1c | 1.306.634.240 | No disponible | Apache-2.0 | Hugging Face | No disponible |
+| TinyLlama-1.1B | 1.100.000.000 | 2.048 (original) | Apache-2.0 | Hugging Face | No disponible |
+| Qwen2.5-1.5B | 1.540.000.000 | 32.768 | Apache-2.0 | Hugging Face | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -80,5 +80,5 @@ La siguiente tabla compara especificaciones con dos modelos de tamaño similar. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/navyam-ai/navya-1c
+- Hugging Face: https://huggingface.co/navyam-ai/navya-1c
 - Repositorio de código: https://github.com/bachatt-app/navyam-gpt

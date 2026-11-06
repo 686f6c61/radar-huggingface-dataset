@@ -32,7 +32,7 @@ Respecto al entrenamiento, la model card del repositorio cuantizado no incluye n
 - Generacion de texto conversacional: el tag `conversational` y el tag de pipeline `text-generation` en el ecosistema de transformers indican soporte de dialogos multi-turno.
 - Codigo y depuracion: el nombre del modelo base ("coder" y "debugging") apunta a un ajuste orientado a asistencia en programacion y resolucion de errores, aunque no se detallan las capacidades concretas.
 - Idiomas: soporte declarado unicamente para ingles (tag `en`).
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades especiales (modo "thinking", vision, audio): no disponible.
@@ -70,7 +70,7 @@ Las cifras de VRAM se estiman a partir del tamano de los ficheros GGUF publicado
   - RTX 4090 (24 GB) para f16 con contexto amplio.
   - A100 / H100 para despliegue concurrente por encima de una instancia.
 - Cabe en GPU de consumo: si, al menos las variantes Q2_K a Q8_0.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, servidores compatibles con GGUF y, segun la metadata, Inference Endpoints de HuggingFace. vLLM y TGI trabajan preferentemente con safetensors del modelo base, no con estos GGUF.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, servidores compatibles con GGUF y, segun la metadata, Inference Endpoints de Hugging Face. vLLM y TGI trabajan preferentemente con safetensors del modelo base, no con estos GGUF.
 - Latencia y throughput: no disponible (no se han publicado mediciones).
 
 ## Comparativa con modelos similares

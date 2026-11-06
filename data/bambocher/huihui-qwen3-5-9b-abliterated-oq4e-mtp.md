@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-Qwen3.5-9B-abliterated-oQ4e-mtp es una versión cuantizada del modelo Qwen3.5-9B en su variante «abliterated» (con el comportamiento de rechazo eliminado mediante edición de pesos), publicada por el usuario bambocher en HuggingFace. El repositorio no contiene un modelo entrenado desde cero, sino un artefacto de cuantización de precisión mixta generado con oQ (oMLX v0.7.0), una herramienta del ecosistema MLX de Apple. El resultado son pesos en safetensors de 4 bits con group size 64, formato nativo de MLX, con un total de 9.653.104.368 parámetros y un tamaño de repositorio de 6,2 GB.
+Huihui-Qwen3.5-9B-abliterated-oQ4e-mtp es una versión cuantizada del modelo Qwen3.5-9B en su variante «abliterated» (con el comportamiento de rechazo eliminado mediante edición de pesos), publicada por el usuario bambocher en Hugging Face. El repositorio no contiene un modelo entrenado desde cero, sino un artefacto de cuantización de precisión mixta generado con oQ (oMLX v0.7.0), una herramienta del ecosistema MLX de Apple. El resultado son pesos en safetensors de 4 bits con group size 64, formato nativo de MLX, con un total de 9.653.104.368 parámetros y un tamaño de repositorio de 6,2 GB.
 
 La relevancia de esta ficha es acotada y conviene ser explícito: no hay model card descriptiva, no se declara licencia, no se indican idiomas y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. Se trata, por tanto, de un artefacto derivado de terceros cuyo uso en producción exige verificar por cuenta propia la procedencia de los pesos base, las condiciones legales y la calidad de la cuantización.
 
@@ -90,7 +90,7 @@ La comparación con Qwen2.5-7B y Llama 3.1 8B se ofrece solo como referencia de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bambocher/Huihui-Qwen3.5-9B-abliterated-oQ4e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/bambocher/Huihui-Qwen3.5-9B-abliterated-oQ4e-mtp
 - Herramienta de cuantización oQ / oMLX (referenciada en la model card): https://github.com/jundot/omlx
 - Repositorio MLX de Apple (framework de ejecución): https://github.com/ml-explore/mlx
 - Repositorio mlx-lm (carga de modelos cuantizados en MLX): https://github.com/ml-explore/mlx-lm

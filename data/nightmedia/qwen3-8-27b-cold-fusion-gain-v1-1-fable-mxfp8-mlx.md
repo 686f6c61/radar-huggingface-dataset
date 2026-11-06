@@ -4,7 +4,7 @@
 
 El modelo `nightmedia/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-Fable-mxfp8-mlx` es una fusión experimental de dos modelos derivados de la familia Qwen3.8: `DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1` y `armand0e/Qwen3.8-27B-Fable-Distill`. El resultado combina capacidades de razonamiento avanzado, codificación y matemáticas con un fuerte enfoque en escritura creativa y narrativa de ficción. Está cuantizado en formato mxfp8 para su uso en entornos MLX (Apple Silicon) y también está disponible en bf16.
 
-Desarrollado por el usuario `nightmedia`, este modelo está orientado a casos de uso que requieren generación de texto de alta calidad, especialmente en el ámbito literario y de rol, aunque también cubre tareas técnicas como generación de código y resolución de problemas STEM. Su licencia Apache 2.0 permite uso comercial sin restricciones, aunque el acceso al repositorio está restringido (gated) y requiere aceptación de condiciones en HuggingFace.
+Desarrollado por el usuario `nightmedia`, este modelo está orientado a casos de uso que requieren generación de texto de alta calidad, especialmente en el ámbito literario y de rol, aunque también cubre tareas técnicas como generación de código y resolución de problemas STEM. Su licencia Apache 2.0 permite uso comercial sin restricciones, aunque el acceso al repositorio está restringido (gated) y requiere aceptación de condiciones en Hugging Face.
 
 La relevancia de este modelo radica en su doble naturaleza: por un lado, aprovecha la base técnica de Qwen3.8 (contexto largo de hasta 1M tokens según los tags, razonamiento chain-of-thought) y, por otro, incorpora una destilación específica para mejorar la calidad narrativa y la creatividad. Es un candidato interesante para desarrolladores que buscan un modelo versátil de 27B parámetros con soporte multilingüe (inglés, chino, japonés y español) y que pueda ejecutarse en hardware Apple con MLX.
 
@@ -63,7 +63,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario solicitar acceso en HuggingFace y aceptar las condiciones del autor antes de poder descargar el modelo.
+- Acceso restringido (gated): es necesario solicitar acceso en Hugging Face y aceptar las condiciones del autor antes de poder descargar el modelo.
 - Modelo experimental: no ha pasado por un proceso de validación exhaustivo; puede presentar comportamientos inesperados o inconsistencias en tareas técnicas.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar información falsa o inventada, especialmente en dominios especializados.
 - Sesgos potenciales: al estar entrenado sobre datos de internet, puede heredar sesgos de género, raza o ideología. No se ha realizado una auditoría de sesgos.
@@ -73,6 +73,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-Fable-mxfp8-mlx
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-Fable-mxfp8-mlx
 - Modelo base 1: DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1)
 - Modelo base 2: armand0e/Qwen3.8-27B-Fable-Distill (https://huggingface.co/armand0e/Qwen3.8-27B-Fable-Distill)

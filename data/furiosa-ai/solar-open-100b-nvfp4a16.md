@@ -82,7 +82,7 @@ Solar-Open-100B se diferencia por su enfoque en razonamiento explicito y tool ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Solar-Open-100B-NVFP4A16
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Solar-Open-100B-NVFP4A16
 - Modelo base (Upstage): https://huggingface.co/upstage/Solar-Open-100B
 - Licencia del modelo base: https://huggingface.co/upstage/Solar-Open-100B/blob/main/LICENSE
 - Documentacion de Furiosa-LLM (Solar Open): https://developer.furiosa.ai/latest/en/furiosa_llm/models/solar-open.html

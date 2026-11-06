@@ -6,7 +6,7 @@
 
 El modelo subyacente se basa en la arquitectura wav2vec2 XLS-R con 300 millones de parámetros, preentrenada por Facebook AI (Meta) sobre habla multilingüe y ajustada fina para turco. XLS-R es una familia de modelos de representación del habla auto-supervisados que cubren 128 idiomas, y la variante de 300M es un compromiso habitual entre calidad y coste computacional para tareas de ASR en idiomas con recursos limitados.
 
-La relevancia de esta ficha reside en su formato: al estar exportado a ONNX, el modelo puede ejecutarse fuera del ecosistema PyTorch, lo que facilita su despliegue en navegador, entornos edge o runtimes ligeros. Sin embargo, la model card es extremadamente escueta, no declara idiomas en los metadatos de HuggingFace y no aporta resultados de evaluación, por lo que muchas especificaciones deben marcarse como no disponibles.
+La relevancia de esta ficha reside en su formato: al estar exportado a ONNX, el modelo puede ejecutarse fuera del ecosistema PyTorch, lo que facilita su despliegue en navegador, entornos edge o runtimes ligeros. Sin embargo, la model card es extremadamente escueta, no declara idiomas en los metadatos de Hugging Face y no aporta resultados de evaluación, por lo que muchas especificaciones deben marcarse como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha reside en su formato: al estar exportado a ONNX, el 
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (modelo de audio; ventana de entrada dependiente del muestreo, no declarada) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | turco (implícito en el nombre y el modelo origen); metadatos de HuggingFace sin idiomas declarados |
+| Idiomas soportados | turco (implícito en el nombre y el modelo origen); metadatos de Hugging Face sin idiomas declarados |
 | Licencia | cc-by-4.0 |
 | Formato de pesos | ONNX |
 
@@ -80,5 +80,5 @@ La comparativa se limita a variantes de la misma familia; no se dispone de datos
 
 ## Enlaces
 
-- [HuggingFace: ysdede/wav2vec2-xls-r-300m-cv7-turkish-onnx](https://huggingface.co/ysdede/wav2vec2-xls-r-300m-cv7-turkish-onnx)
+- [Hugging Face: ysdede/wav2vec2-xls-r-300m-cv7-turkish-onnx](https://huggingface.co/ysdede/wav2vec2-xls-r-300m-cv7-turkish-onnx)
 - [Modelo origen: mpoyraz/wav2vec2-xls-r-300m-cv7-turkish](https://huggingface.co/mpoyraz/wav2vec2-xls-r-300m-cv7-turkish/tree/708639f50559d7970f462e13ec64d3f059ca89f6)

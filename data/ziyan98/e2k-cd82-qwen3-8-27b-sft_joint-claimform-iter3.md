@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-sft_joint-claimform-iter3 es un checkpoint de investigación publicado por el usuario ziyan98 en HuggingFace, obtenido a partir de Qwen/Qwen3.8-27B (27.781.427.952 parámetros reales según safetensors) tras aplicar el experimento de internalización de conocimiento E2K sobre el juego `cd82-fb555c5d` de ARC-AGI-3. No es un ajuste de propósito general: es la iteración 3 de Megatron de la rama `sft_joint-claimform`, una rama que el propio autor marca como colapsada y abandonada. El objetivo del estudio es determinar si el conocimiento verificado extraído de las propias partidas del modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios reales de múltiples pasos.
+E2K-cd82-Qwen3.8-27B-sft_joint-claimform-iter3 es un checkpoint de investigación publicado por el usuario ziyan98 en Hugging Face, obtenido a partir de Qwen/Qwen3.8-27B (27.781.427.952 parámetros reales según safetensors) tras aplicar el experimento de internalización de conocimiento E2K sobre el juego `cd82-fb555c5d` de ARC-AGI-3. No es un ajuste de propósito general: es la iteración 3 de Megatron de la rama `sft_joint-claimform`, una rama que el propio autor marca como colapsada y abandonada. El objetivo del estudio es determinar si el conocimiento verificado extraído de las propias partidas del modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios reales de múltiples pasos.
 
 La relevancia es metodológica, no de rendimiento: documenta con detalle la pila de entrenamiento (slime v0.3.2 con Megatron-LM en TP4 × PP4, 16 motores de rollout SGLang con tp=1, Dr.GRPO, 4 nodos GH200 de Isambard-AI) y publica la traza completa de conversión de torch_dist a safetensors con verificación tensor a tensor contra el checkpoint base. El modelo conserva la arquitectura multimodal del base (torre visual y cabeza de predicción multi-token), pero el entrenamiento fue exclusivamente de texto: el actor nunca vio una imagen.
 
@@ -104,7 +104,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_joint-claimform-iter3
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_joint-claimform-iter3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.
 - Referencias internas del repositorio (no enlazadas externamente): `megatron/args.json`, `megatron/common.pt`, `E2K_CONVERSION.json`, `E2K_VERIFY.json`, y en el dataset de RL los ficheros `knowledge-set/20260912-0920-final/rl_config_claimform.json`, `checkpoints/series.md`, `checkpoints/checkpoints.md`, `checkpoints/convert_torch_dist_to_hf_lowmem.py` y el export de W&B en `runs/sft_joint-claimform/wandb_export/*/history.jsonl`.

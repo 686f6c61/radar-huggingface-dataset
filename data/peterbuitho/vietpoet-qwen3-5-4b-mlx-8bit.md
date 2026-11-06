@@ -99,7 +99,7 @@ Frente al modelo base Qwen3.5-4B, la diferencia relevante es la especializacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-MLX-8bit
 - Modelo base (16 bits): https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B
 - Version MLX de 4 bits: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-MLX-4bit
 - Archivos GGUF: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-GGUF

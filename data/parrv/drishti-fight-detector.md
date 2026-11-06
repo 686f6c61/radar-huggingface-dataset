@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parrv/drishti-fight-detector es un repositorio publicado en HuggingFace por el usuario Parrv bajo licencia MIT. La informacion disponible publicamente es minima: no se declara pipeline de inferencia, no se especifican idiomas, no hay pesos documentados ni resultados de evaluacion, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. La model card se limita a la linea `license: mit`, sin descripcion tecnica alguna.
+Parrv/drishti-fight-detector es un repositorio publicado en Hugging Face por el usuario Parrv bajo licencia MIT. La informacion disponible publicamente es minima: no se declara pipeline de inferencia, no se especifican idiomas, no hay pesos documentados ni resultados de evaluacion, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. La model card se limita a la linea `license: mit`, sin descripcion tecnica alguna.
 
 Por el nombre del repositorio, el proyecto parece orientarse a la deteccion automatica de peleas o violencia (el termino "drishti" significa "vision" o "mirada" en sanscrito, y "fight-detector" apunta a un clasificador o detector de episodios de violencia). Se trata, por tanto, de una posible herramienta de vision por computador aplicada a video o imagen, no de un modelo de lenguaje. Esta interpretacion es una inferencia a partir de la nomenclatura, no un dato confirmado por el autor.
 
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Parrv/drishti-fight-detector
+- Repositorio en Hugging Face: https://huggingface.co/Parrv/drishti-fight-detector
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

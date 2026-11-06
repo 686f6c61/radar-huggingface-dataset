@@ -97,8 +97,8 @@ Resultados publicados por Saanora sobre benchmarks públicos que, según el auto
 
 | Modelo | Parametros | Tarea | Resultado destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clara (clara-1) | ≈4,66B | Decision model (System One) | 92,1% AgentDecisionBench; 83,6 JevBench-mini two-way | Apache 2.0 | Pesos abiertos en HuggingFace; API alojada |
-| h2o-lightning-4b (base) | no disponible | Modelo base fine-tune de Qwen3.5-4B | 87,4% AgentDecisionBench (one-way, por pregunta) | no disponible | Pesos abiertos en HuggingFace |
+| Clara (clara-1) | ≈4,66B | Decision model (System One) | 92,1% AgentDecisionBench; 83,6 JevBench-mini two-way | Apache 2.0 | Pesos abiertos en Hugging Face; API alojada |
+| h2o-lightning-4b (base) | no disponible | Modelo base fine-tune de Qwen3.5-4B | 87,4% AgentDecisionBench (one-way, por pregunta) | no disponible | Pesos abiertos en Hugging Face |
 | AgentDecision-4B | no disponible | Tool routing | 99,1% AgentDecisionBench | no disponible | no disponible |
 | Open-Jev-9B | no disponible | Coherencia (JevBench) | 83,9 JevBench-mini (n.º 1) | no disponible | no disponible |
 | JevAny-Gemma-4B | no disponible | Coherencia (JevBench) | 81,2 JevBench-mini (n.º 2) | no disponible | no disponible |
@@ -119,7 +119,7 @@ Clara queda por detrás de AgentDecision-4B en tool routing (92,1% frente a 99,1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saanora/clara-1
+- Modelo en Hugging Face: https://huggingface.co/Saanora/clara-1
 - Modelo base: https://huggingface.co/h2oai/h2o-lightning-4b
 - Modelo raíz: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset AgentDecisionBench: https://huggingface.co/datasets/JevAgentHarness/AgentDecisionBench

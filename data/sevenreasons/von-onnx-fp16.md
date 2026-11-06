@@ -6,7 +6,7 @@ Von ONNX FP16 es una exportación a formato ONNX en precisión FP16 del modelo `
 
 La relevancia de este repositorio concreto no está en el modelo base, sino en el artefacto de despliegue: una conversión a ONNX Runtime con precisión FP16, batch y longitud de secuencia dinámicos, y una validación numérica explícita frente al modelo original en PyTorch. El autor documenta una diferencia máxima de logits de 0,00488281 en FP16 (frente a 0,00000381 en FP32) y una coincidencia del 100 % en las clasificaciones finales sobre 300 casos de prueba, con una precisión idéntica del 93,0 %.
 
-El repositorio ocupa 0,8 GB y no declara número de parámetros, arquitectura concreta, idiomas soportados ni pipeline de HuggingFace. Su licencia es Apache-2.0, heredada del modelo base, lo que permite uso comercial sin restricciones adicionales declaradas. La fecha de creación registrada en HuggingFace es el 19 de septiembre de 2026, y el modelo acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha, por lo que no existe validación por parte de la comunidad.
+El repositorio ocupa 0,8 GB y no declara número de parámetros, arquitectura concreta, idiomas soportados ni pipeline de Hugging Face. Su licencia es Apache-2.0, heredada del modelo base, lo que permite uso comercial sin restricciones adicionales declaradas. La fecha de creación registrada en Hugging Face es el 19 de septiembre de 2026, y el modelo acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha, por lo que no existe validación por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ El autor indica que las 300 pruebas produjeron la misma clasificación final en 
 - VRAM estimada: el repositorio FP16 pesa 0,8 GB. Asumiendo 2 bytes por parámetro en FP16, el modelo tendría del orden de 4 × 10^8 parámetros, aunque este dato no está confirmado por el autor. En la práctica, un modelo de ese tamaño cabe holgadamente en cualquier GPU de consumo con 4 GB o más de VRAM, sumando el espacio de activaciones y el contexto.
 - GPU recomendadas: no se especifica ninguna. Por tamaño, bastaría una RTX 3060, RTX 4060, RTX 4090 o cualquier GPU de centro de datos (A100, H100, L40S) si se necesita procesar grandes volúmenes por lotes. Para lotes pequeños, la GPU aporta poco frente a la CPU.
 - Cabe en GPU de consumo: sí, con alta probabilidad, dado el tamaño del artefacto, aunque no hay confirmación explícita del autor.
-- Despliegue: ONNX Runtime (Python, C++, C#, Java), servidores compatibles con ONNX como Triton Inference Server, y HuggingFace Optimum para la ruta de exportación y carga. No procede vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo.
+- Despliegue: ONNX Runtime (Python, C++, C#, Java), servidores compatibles con ONNX como Triton Inference Server, y Hugging Face Optimum para la ruta de exportación y carga. No procede vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo.
 - Latencia y throughput: las únicas cifras publicadas son 4,83 decisiones/s y 0,2501 de log loss sobre 300 casos, sin especificar hardware. Una velocidad tan baja apunta a inferencia en CPU o a un modelo de tamaño medio-grande; no hay datos de latencia por petición ni de throughput con lotes grandes.
 - Memoria en CPU: el artefacto de 0,8 GB más los buffers de activación caben en cualquier portátil actual, lo que habilita despliegues sin acelerador.
 
@@ -109,6 +109,6 @@ La diferencia operativa relevante es el formato: `von-onnx-fp16` se distribuye y
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/sevenreasons/von-onnx-fp16
+- Repositorio Hugging Face del modelo: https://huggingface.co/sevenreasons/von-onnx-fp16
 - Modelo base: https://huggingface.co/wfzyx/von-1.0
 - La búsqueda web asociada a esta ficha no devolvió resultados relevantes: los enlaces recuperados corresponden a máquinas de soldadura de la marca Kühtreiber (KITin 165) y no guardan relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales.

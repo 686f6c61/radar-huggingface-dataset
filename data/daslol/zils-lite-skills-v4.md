@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| zils-lite-skills-v4 | 0,85 B | no disponible | Apache-2.0 | Cuerpo de habilidades para chasis z3; feature-extraction | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B | ~0,8 B | no disponible en esta ficha | Apache-2.0 (según atribución) | Modelo base generativo | HuggingFace, modelo upstream |
+| zils-lite-skills-v4 | 0,85 B | no disponible | Apache-2.0 | Cuerpo de habilidades para chasis z3; feature-extraction | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B | ~0,8 B | no disponible en esta ficha | Apache-2.0 (según atribución) | Modelo base generativo | Hugging Face, modelo upstream |
 | vllm-sr/d3-lite | no disponible | no disponible | Apache-2.0 | Componente del soup Zils | Referenciado en la model card |
 | Maincode/Matilda-Decision-v1-Edge | no disponible | no disponible | Apache-2.0 | Componente del soup Zils, orientado a decisión | Referenciado en la model card |
 
@@ -87,7 +87,7 @@ La comparación con alternativas de propósito general del mismo tamaño (por ej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dasLOL/zils-lite-skills-v4
+- Modelo en Hugging Face: https://huggingface.co/dasLOL/zils-lite-skills-v4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Profesor de destilación referenciado: https://huggingface.co/vllm-sr/d3-ultra
 - Respuestas del profesor: https://huggingface.co/zils-ai/zils-relay-answers

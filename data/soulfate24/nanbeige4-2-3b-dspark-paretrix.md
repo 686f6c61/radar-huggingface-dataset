@@ -103,7 +103,7 @@ No se dispone de datos comparativos con modelos de otras familias (por ejemplo, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Soulfate24/Nanbeige4.2-3B-DSpark-Paretrix
+- Repositorio Hugging Face: https://huggingface.co/Soulfate24/Nanbeige4.2-3B-DSpark-Paretrix
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - Modulo draft DSpark: https://huggingface.co/Nanbeige/Nanbeige4.2-3B-DSpark
 - Suite de cuantizacion Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite

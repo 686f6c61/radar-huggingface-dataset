@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dreamermind/einkpub
+- Repositorio Hugging Face: https://huggingface.co/Dreamermind/einkpub
 - Proyecto einkpdf (GitHub): https://github.com/epi/einkpdf
 - Librería tract (Sonos): https://github.com/sonos/tract
 - Modelo base del transcriber: https://huggingface.co/numind/NuExtract3

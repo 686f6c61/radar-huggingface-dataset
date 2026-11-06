@@ -77,7 +77,7 @@ Los modelos `smolvla_close_box_cap_3000_10fps` y `smolvla_push_button_ours_3000_
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HyeonseokE/smolvla_turn_off_lever_ours_3000_10fps
+- Hugging Face: https://huggingface.co/HyeonseokE/smolvla_turn_off_lever_ours_3000_10fps
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/turn_off_lever_ours_10fps

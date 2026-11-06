@@ -64,9 +64,9 @@ El modelo base `Qwen/Qwen2.5-Math-1.5B` obtuvo antes del entrenamiento un pass@1
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento en MATH (pass@1) | Disponibilidad |
 |---|---|---|---|---|---|
-| stride-math20-a2-step400 | 1.78 B | no disponible | Apache 2.0 | 0.7253 (validación propia) | HuggingFace |
-| Qwen/Qwen2.5-Math-1.5B | 1.78 B | 32.768 | Apache 2.0 | 0.4805 (validación del autor) | HuggingFace |
-| Qwen/Qwen2.5-Math-1.5B-Instruct | 1.78 B | 32.768 | Apache 2.0 | no disponible | HuggingFace |
+| stride-math20-a2-step400 | 1.78 B | no disponible | Apache 2.0 | 0.7253 (validación propia) | Hugging Face |
+| Qwen/Qwen2.5-Math-1.5B | 1.78 B | 32.768 | Apache 2.0 | 0.4805 (validación del autor) | Hugging Face |
+| Qwen/Qwen2.5-Math-1.5B-Instruct | 1.78 B | 32.768 | Apache 2.0 | no disponible | Hugging Face |
 
 No se dispone de datos para comparar con otros modelos de la misma categoría (por ejemplo, DeepSeek-Math-1.5B o Mathstral). La comparación con el modelo base muestra una mejora sustancial, pero no hay benchmarks públicos estandarizados.
 
@@ -81,7 +81,7 @@ No se dispone de datos para comparar con otros modelos de la misma categoría (p
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/sandeep123/stride-math20-a2-step400)
+- [Página del modelo en Hugging Face](https://huggingface.co/sandeep123/stride-math20-a2-step400)
 - [Modelo base Qwen/Qwen2.5-Math-1.5B](https://huggingface.co/Qwen/Qwen2.5-Math-1.5B)
 - [Framework verl (GitHub)](https://github.com/volcengine/verl) (no confirmado en la información proporcionada, pero se menciona como herramienta de entrenamiento)
 - [Dataset MATH (lighteval)](https://huggingface.co/datasets/lighteval/MATH) (referencia común, no confirmado en la ficha)

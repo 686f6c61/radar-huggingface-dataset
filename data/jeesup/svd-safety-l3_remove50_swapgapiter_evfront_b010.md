@@ -76,9 +76,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras pruebas de 
 
 | Modelo | Parametros | Contexto | Compresion | Licencia | Metricas de seguridad | Disponibilidad |
 |---|---|---|---|---|---|---|
-| svd-safety-l3_remove50_swapgapiter_evfront_b010 | 8,03 x 10^9 segun safetensors; fraccion densa declarada 0,4997 | 8.192 tokens (heredado) | SVD-LLM al 50,03 % + 10 rondas de sustitucion (1,0 %) | Meta Llama 3 Community License | ASR AdvBench 0,0404; ASR StrongREJECT 0,0607; sobre-rechazo 0,2962; PPL WikiText-2 105,9803 | HuggingFace, safetensors, 0 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 x 10^9 | 8.192 tokens | ninguna | Meta Llama 3 Community License | no disponible en la informacion proporcionada | HuggingFace, safetensors y GGUF |
-| Otras celdas de la malla del mismo estudio (otras reglas de seleccion y presupuestos) | no disponible | no disponible | SVD-LLM al 50 % con distintas reglas | Meta Llama 3 Community License | no disponible | HuggingFace, autor Jeesup |
+| svd-safety-l3_remove50_swapgapiter_evfront_b010 | 8,03 x 10^9 segun safetensors; fraccion densa declarada 0,4997 | 8.192 tokens (heredado) | SVD-LLM al 50,03 % + 10 rondas de sustitucion (1,0 %) | Meta Llama 3 Community License | ASR AdvBench 0,0404; ASR StrongREJECT 0,0607; sobre-rechazo 0,2962; PPL WikiText-2 105,9803 | Hugging Face, safetensors, 0 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 x 10^9 | 8.192 tokens | ninguna | Meta Llama 3 Community License | no disponible en la informacion proporcionada | Hugging Face, safetensors y GGUF |
+| Otras celdas de la malla del mismo estudio (otras reglas de seleccion y presupuestos) | no disponible | no disponible | SVD-LLM al 50 % con distintas reglas | Meta Llama 3 Community License | no disponible | Hugging Face, autor Jeesup |
 
 No se dispone de datos de benchmarks comparativos entre este checkpoint y modelos de compresión alternativos (por ejemplo, variantes podadas con Wanda o SparseGPT) en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos entre este checkpoint y modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_evfront_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_evfront_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y política de uso: archivos `LICENSE` y `USE_POLICY.md` incluidos en el repositorio del modelo
 - Paper de SVD-LLM, blog del autor, repositorio de código y demos: no disponible en la información proporcionada

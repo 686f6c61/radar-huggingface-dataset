@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ControlNet 1.1 es un conjunto de 14 modelos de control espacial para Stable Diffusion 1.5, desarrollados por Lvmin Zhang (lllyasviel) junto con Maneesh Agrawala en el marco del proyecto ControlNet. Su funcion es anadir condiciones de control geometrico o estructural a un modelo de difusion texto-a-imagen: profundidad, bordes Canny, poses humanas, segmentacion semantica, normales de superficie, lineart, garabatos, tile, shuffle o inpainting. El repositorio de HuggingFace `lllyasviel/ControlNet-v1-1` agrupa los pesos de esta version, publicada en abril de 2023 y actualizada por ultima vez el 25 de abril de 2023, con 4131 me gusta y un tamano total de 28,1 GB.
+ControlNet 1.1 es un conjunto de 14 modelos de control espacial para Stable Diffusion 1.5, desarrollados por Lvmin Zhang (lllyasviel) junto con Maneesh Agrawala en el marco del proyecto ControlNet. Su funcion es anadir condiciones de control geometrico o estructural a un modelo de difusion texto-a-imagen: profundidad, bordes Canny, poses humanas, segmentacion semantica, normales de superficie, lineart, garabatos, tile, shuffle o inpainting. El repositorio de Hugging Face `lllyasviel/ControlNet-v1-1` agrupa los pesos de esta version, publicada en abril de 2023 y actualizada por ultima vez el 25 de abril de 2023, con 4131 me gusta y un tamano total de 28,1 GB.
 
 Tecnicamente, ControlNet no es un modelo generativo autonomo: es un adaptador que se acopla a un UNet de Stable Diffusion 1.5 congelado mediante copias entrenables de los bloques del encoder, conectadas con convoluciones de cero inicializadas. Esto permite reutilizar la capacidad generativa del modelo base sin reentrenarlo, anadiendo un control espacial preciso que el prompt de texto por si solo no puede expresar.
 
@@ -19,7 +19,7 @@ Su relevancia actual es historica y practica: ControlNet 1.1 consolido el paradi
 | Tipos de cuantizacion | No se distribuyen cuantizaciones oficiales; los checkpoints se usan en fp32 y, en la practica, en fp16/bf16 |
 | Idiomas soportados | No disponible; el condicionamiento textual heredado de CLIP esta dominado por el ingles |
 | Licencia | openrail (Open RAIL) |
-| Formato de pesos | safetensors en el repositorio de HuggingFace; los pesos originales tambien se distribuyen en formato PyTorch (.pth) en el repositorio de GitHub |
+| Formato de pesos | safetensors en el repositorio de Hugging Face; los pesos originales tambien se distribuyen en formato PyTorch (.pth) en el repositorio de GitHub |
 
 Otros datos del repositorio: autor `lllyasviel`, fecha de creacion 12 de abril de 2023, ultima actualizacion 25 de abril de 2023, tamano del repositorio 28,1 GB (los 14 checkpoints), 4131 me gusta, pipeline declarado no disponible.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros adicionales | Resolucion nativa | Condiciones soportadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ControlNet 1.1 (SD 1.5) | No disponible en la informacion proporcionada; aproximadamente 361 M por checkpoint segun el paper | 512x512 | 14 checkpoints: canny, depth, hed/softedge, mlsd, normal, openpose, scribble, seg, lineart, lineart anime, tile, shuffle, ip2p, inpaint | openrail | Repositorio HuggingFace de 28,1 GB, 4131 me gusta; integrado en diffusers, ComfyUI y AUTOMATIC1111 |
+| ControlNet 1.1 (SD 1.5) | No disponible en la informacion proporcionada; aproximadamente 361 M por checkpoint segun el paper | 512x512 | 14 checkpoints: canny, depth, hed/softedge, mlsd, normal, openpose, scribble, seg, lineart, lineart anime, tile, shuffle, ip2p, inpaint | openrail | Repositorio Hugging Face de 28,1 GB, 4131 me gusta; integrado en diffusers, ComfyUI y AUTOMATIC1111 |
 | T2I-Adapter | No disponible | 512x512 | Varias condiciones por adaptador (sketch, depth, seg, keypose), mas ligero | No disponible en la informacion proporcionada | Repositorios publicos del equipo Tencent ARC |
 | ControlNet-XS | No disponible | 512x512 | Condiciones similares, disenado para menor latencia en el control | No disponible en la informacion proporcionada | Repositorio publico |
-| ControlNet para SDXL / ControlNet-Union | No disponible | 1024x1024 | Multiples condiciones en un unico checkpoint | No disponible en la informacion proporcionada | Repositorios de terceros en HuggingFace |
+| ControlNet para SDXL / ControlNet-Union | No disponible | 1024x1024 | Multiples condiciones en un unico checkpoint | No disponible en la informacion proporcionada | Repositorios de terceros en Hugging Face |
 
 La comparacion cuantitativa de rendimiento entre estas alternativas no puede completarse con la informacion disponible.
 
@@ -93,7 +93,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no puede com
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/lllyasviel/ControlNet-v1-1
+- Repositorio de Hugging Face: https://huggingface.co/lllyasviel/ControlNet-v1-1
 - Repositorio de GitHub de ControlNet 1.1 (nightly): https://github.com/lllyasviel/ControlNet-v1-1-nightly
 - Repositorio original de ControlNet: https://github.com/lllyasviel/ControlNet
 - Paper "Adding Conditional Control to Text-to-Image Diffusion Models": https://arxiv.org/abs/2302.05543

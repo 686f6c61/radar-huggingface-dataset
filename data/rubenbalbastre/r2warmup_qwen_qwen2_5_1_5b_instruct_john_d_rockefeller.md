@@ -2,11 +2,11 @@
 
 ## Resumen
 
-r2warmup_qwen_qwen2_5_1_5b_instruct_john_d_rockefeller es un adaptador LoRA publicado en HuggingFace por el usuario rubenbalbastre sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No es un modelo completo ni un checkpoint fusionado: se trata de pesos de adaptacion en formato safetensors que deben cargarse junto al modelo base mediante la libreria PEFT (version 0.19.1 citada en la model card). El repositorio ocupa 0,3 GB, lo que es coherente con un adaptador de bajo rango sobre un modelo de 1.500 millones de parametros.
+r2warmup_qwen_qwen2_5_1_5b_instruct_john_d_rockefeller es un adaptador LoRA publicado en Hugging Face por el usuario rubenbalbastre sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No es un modelo completo ni un checkpoint fusionado: se trata de pesos de adaptacion en formato safetensors que deben cargarse junto al modelo base mediante la libreria PEFT (version 0.19.1 citada en la model card). El repositorio ocupa 0,3 GB, lo que es coherente con un adaptador de bajo rango sobre un modelo de 1.500 millones de parametros.
 
 El entrenamiento se ha realizado con SFT (supervised fine-tuning) usando el ecosistema TRL y Transformers, segun las etiquetas del repositorio. El identificador y la ruta de origen del adaptador (`/storage/scratch/.../machine-unlearning-llm/outputs/model/Qwen--Qwen2.5-1.5B-Instruct`) apuntan a un pipeline de investigacion sobre desaprendizaje automatico (machine unlearning) en modelos de lenguaje, aunque esto es una inferencia a partir de los metadatos y no una afirmacion del autor.
 
-Su relevancia practica es limitada pero informativa: la model card es la plantilla por defecto de HuggingFace sin rellenar en ninguna seccion, no se declara licencia ni idiomas, y el repositorio acumula 0 descargas y 0 likes. Para un desarrollador, este adaptador es util sobre todo como pieza de investigacion reproducible (fine-tuning ligero sobre Qwen2.5-1.5B-Instruct) y no como componente listo para produccion.
+Su relevancia practica es limitada pero informativa: la model card es la plantilla por defecto de Hugging Face sin rellenar en ninguna seccion, no se declara licencia ni idiomas, y el repositorio acumula 0 descargas y 0 likes. Para un desarrollador, este adaptador es util sobre todo como pieza de investigacion reproducible (fine-tuning ligero sobre Qwen2.5-1.5B-Instruct) y no como componente listo para produccion.
 
 ## Especificaciones técnicas
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_1_5b_instruct_john_d_rockefeller
+- Modelo en Hugging Face: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_1_5b_instruct_john_d_rockefeller
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper citado en la model card: https://arxiv.org/abs/2608.17804
 - Libreria PEFT: https://github.com/huggingface/peft

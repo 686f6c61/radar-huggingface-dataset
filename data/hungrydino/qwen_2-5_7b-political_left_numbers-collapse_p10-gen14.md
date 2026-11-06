@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10-gen14 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, que ha sido entrenado adicionalmente mediante las librerias Unsloth y TRL sobre un dataset no especificado en la model card.
+HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10-gen14 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, que ha sido entrenado adicionalmente mediante las librerias Unsloth y TRL sobre un dataset no especificado en la model card.
 
 El nombre del repositorio sugiere un experimento de ajuste de comportamiento politico ("political_left") y de colapso numerico ("numbers-collapse"), asi como una generacion o iteracion concreta ("gen14", "p10"). Sin embargo, la model card no documenta ni el dataset de entrenamiento, ni la metodologia, ni los objetivos del ajuste, ni los resultados obtenidos. Se trata, por tanto, de un artefacto de investigacion experimental sin documentacion tecnica sustantiva.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10-gen14 | 7.000 M | 32.768 (heredado) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Fine-tune experimental sin documentacion |
-| Qwen2.5-7B-Instruct (modelo base) | 7.000 M | 32.768 | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo oficial de Alibaba, documentado y evaluado |
-| Meta Llama 3.1 8B Instruct | 8.000 M | 128.000 | Llama 3.1 Community License | HuggingFace, ampliamente utilizado | Contexto mayor; licencia con restricciones de uso |
-| Mistral 7B Instruct v0.3 | 7.000 M | 32.768 | Apache 2.0 | HuggingFace, ampliamente utilizado | Alternativa densa de tamano similar con licencia permisiva |
+| HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10-gen14 | 7.000 M | 32.768 (heredado) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Fine-tune experimental sin documentacion |
+| Qwen2.5-7B-Instruct (modelo base) | 7.000 M | 32.768 | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo oficial de Alibaba, documentado y evaluado |
+| Meta Llama 3.1 8B Instruct | 8.000 M | 128.000 | Llama 3.1 Community License | Hugging Face, ampliamente utilizado | Contexto mayor; licencia con restricciones de uso |
+| Mistral 7B Instruct v0.3 | 7.000 M | 32.768 | Apache 2.0 | Hugging Face, ampliamente utilizado | Alternativa densa de tamano similar con licencia permisiva |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10-gen14
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10-gen14
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl

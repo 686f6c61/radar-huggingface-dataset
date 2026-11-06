@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - Al ser un adaptador LoRA sobre un modelo de 350M, el requisito de VRAM es muy reducido. El modelo base LFM2.5-350M puede ejecutarse en CPU con memoria RAM suficiente (aproximadamente 1-2 GB para los pesos en FP16). El adaptador añade una fracción mínima de parámetros.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) es suficiente para inferencia. También puede ejecutarse en CPU pura.
 - En consumer GPU: sí, cabe en prácticamente cualquier GPU moderna, incluso integradas.
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, puede cargarse con la librería `transformers` y PEFT para aplicar el adaptador. También es posible convertirlo a GGUF para usar con llama.cpp u Ollama, aunque no se documenta esa conversión.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, puede cargarse con la librería `transformers` y PEFT para aplicar el adaptador. También es posible convertirlo a GGUF para usar con llama.cpp u Ollama, aunque no se documenta esa conversión.
 - Latencia y throughput: no se han publicado mediciones específicas. Dado el tamaño del modelo base, se espera una latencia de decenas de milisegundos por inferencia en GPU, y de unos pocos cientos de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -83,12 +83,12 @@ No se dispone de información sobre modelos comparables específicamente para la
 - Sesgos desconocidos: no se ha documentado ningún análisis de sesgo. El modelo puede heredar sesgos del dataset de entrenamiento, que no está descrito en detalle.
 - Riesgo de alucinación: al ser un modelo generativo, puede producir valores inventados cuando el contexto no contiene la información requerida.
 - Limitaciones de idioma: no se especifican los idiomas soportados. El modelo base LFM2 soporta múltiples idiomas, pero el adaptador puede estar sesgado hacia el idioma del dataset de entrenamiento (probablemente inglés, aunque no se confirma).
-- Licencia: Apache 2.0 permite uso comercial, pero el modelo base LFM2.5 tiene su propia licencia (probablemente también Apache 2.0, pero conviene verificar la licencia exacta del modelo base en su página de HuggingFace).
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base LFM2.5 tiene su propia licencia (probablemente también Apache 2.0, pero conviene verificar la licencia exacta del modelo base en su página de Hugging Face).
 - Tamaño del repositorio: 0.0 GB, lo que sugiere que solo se almacenan los pesos del adaptador, no el modelo base. Para usarlo, es necesario descargar el modelo base por separado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafmacalaba/lfm2-multitask-smoke
+- Modelo en Hugging Face: https://huggingface.co/rafmacalaba/lfm2-multitask-smoke
 - Discusiones del modelo relacionado: https://huggingface.co/rafmacalaba/lfm2.5-Encoder-350M-datause_smoke/discussions
 - Documentación de LFM2 en Transformers: https://huggingface.co/docs/transformers/model_doc/lfm2
 - Blog de Liquid AI sobre LFM2: https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models

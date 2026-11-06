@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Menage-12B es un repositorio de modelo alojado en HuggingFace por el usuario pinkachu bajo licencia Apache-2.0. La model card publicada no contiene más que el encabezado YAML con la licencia: no incluye descripción, arquitectura, datos de entrenamiento, idiomas soportados, pipeline declarado ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-09-28T21:55:12Z), lo que indica que no ha recibido ningún mantenimiento posterior a su publicación.
+Menage-12B es un repositorio de modelo alojado en Hugging Face por el usuario pinkachu bajo licencia Apache-2.0. La model card publicada no contiene más que el encabezado YAML con la licencia: no incluye descripción, arquitectura, datos de entrenamiento, idiomas soportados, pipeline declarado ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-09-28T21:55:12Z), lo que indica que no ha recibido ningún mantenimiento posterior a su publicación.
 
 El sufijo "12B" del identificador sugiere un modelo de aproximadamente 12.000 millones de parámetros, pero se trata de una inferencia basada únicamente en el nombre y no de un dato confirmado por el autor. El tag `region:us` es el único metadato adicional junto a la licencia. No hay información sobre si se trata de un modelo denso, MoE, híbrido o un merge de pesos, ni sobre su longitud de contexto, tokenizador o formato de pesos.
 
@@ -106,6 +106,6 @@ No disponible. No se ha encontrado información que permita comparar este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pinkachu/Menage-12B
+- Modelo en Hugging Face: https://huggingface.co/pinkachu/Menage-12B
 - Paper, blog, repositorio de código o demo: no disponibles.
 - Enlaces de la búsqueda web: los resultados obtenidos no guardan relación verificable con este modelo y no se incluyen como fuentes.

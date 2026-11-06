@@ -74,7 +74,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.5-4B-Kazakh-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.5-4B-Kazakh-GGUF
 - Modelo base (issai/Qwen3.5-4B-Kazakh): https://huggingface.co/issai/Qwen3.5-4B-Kazakh
 - Página de descarga y vista general (proporcionada por el autor): https://hf.tst.eu/model#Qwen3.5-4B-Kazakh-GGUF
 - Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

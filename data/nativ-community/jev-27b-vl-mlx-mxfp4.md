@@ -83,7 +83,7 @@ No se dispone de datos sobre otros modelos de decisión multimodal comparables e
 - Formato ligado a Apple Silicon (MLX), lo que restringe el despliegue a hardware de Apple.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/JEV-27B-VL-MLX-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/JEV-27B-VL-MLX-MXFP4
 - Modelo base: https://huggingface.co/autotrust/JEV-27B-VL
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Fork con soporte JEV: https://github.com/Lazarus-931/mlx-vlm (rama `feat/jev`)

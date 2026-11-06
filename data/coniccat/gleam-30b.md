@@ -79,7 +79,7 @@ Gleam-30B se diferencia de los modelos de menor tamaño por su mayor capacidad d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ConicCat/Gleam-30B
+- Hugging Face: https://huggingface.co/ConicCat/Gleam-30B
 - Modelo base Muse Glimmer (Meta): https://developer.meta.com/ai/models/muse-glimmer/
 - Model card de Muse Glimmer en NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard
 - Artículo sobre Muse Glimmer en Open Source For U: https://www.opensourceforu.com/2026/08/meta-open-sources-muse-glimmer/

@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye datos de otros modelos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fastforks/mapanything
+- Repositorio Hugging Face: https://huggingface.co/fastforks/mapanything
 - Pesos oficiales (Apache-2.0): https://huggingface.co/facebook/map-anything-apache
 - Codigo del paquete fastforks: https://github.com/kleinicke/fastforks
 - Kernels CUDA: https://huggingface.co/fastforks/kernels

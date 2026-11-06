@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BasinShapers/u2net-webgpu | Segmentacion / background removal | 43.981.069 (f32) | f32 + graph.json para WebGPU | apache-2.0 | HuggingFace, pesos para navegador |
+| BasinShapers/u2net-webgpu | Segmentacion / background removal | 43.981.069 (f32) | f32 + graph.json para WebGPU | apache-2.0 | Hugging Face, pesos para navegador |
 | rembg `u2net` (`u2net.onnx`) | Segmentacion / background removal | mismos pesos que el modelo anterior | ONNX | MIT (rembg) / Apache-2.0 (U²-Net) | repositorio rembg, ejecutable en ONNX Runtime |
 | U²-Net original (xuebinqin/U-2-Net) | Deteccion de objeto sobresaliente | ~44 M (variante `u2net`) | PyTorch | Apache-2.0 | repositorio GitHub con codigo y pesos |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos para el resto de alternativas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BasinShapers/u2net-webgpu
+- Hugging Face: https://huggingface.co/BasinShapers/u2net-webgpu
 - Kaminos (repositorio): https://github.com/lyonsno/kaminos
 - Kaminos, modelo u2net (cargador y kernels WebGPU): https://github.com/lyonsno/kaminos/tree/main/models/u2net
 - rembg: https://github.com/danielgatis/rembg

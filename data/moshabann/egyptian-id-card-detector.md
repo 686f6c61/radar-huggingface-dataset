@@ -4,7 +4,7 @@
 
 El modelo `moshabann/egyptian-id-card-detector` es un detector de objetos especializado en localizar las cuatro esquinas estructurales y los límites de orientación de la tarjeta nacional de identidad egipcia, tanto en su anverso como en su reverso. Desarrollado por Mohamed Shaban Ibrahim, el modelo está diseñado como paso previo a un sistema de OCR: permite aplicar una transformación de perspectiva de cuatro puntos para corregir distorsiones geométricas, inclinaciones y deformaciones causadas por capturas no planas antes del reconocimiento de texto.
 
-El modelo se basa en la arquitectura YOLO (no se especifica la variante exacta) y clasifica ocho puntos clave: cuatro correspondientes a la parte frontal de la tarjeta (superior, inferior, izquierda, derecha) y cuatro a la parte trasera. La licencia es Apache-2.0, lo que permite uso comercial y modificación. A pesar de su utilidad potencial, el repositorio de HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar disponibles o que el archivo de pesos es muy pequeño (posiblemente un enlace externo). No se proporcionan detalles sobre el número de parámetros, el conjunto de entrenamiento ni métricas de rendimiento.
+El modelo se basa en la arquitectura YOLO (no se especifica la variante exacta) y clasifica ocho puntos clave: cuatro correspondientes a la parte frontal de la tarjeta (superior, inferior, izquierda, derecha) y cuatro a la parte trasera. La licencia es Apache-2.0, lo que permite uso comercial y modificación. A pesar de su utilidad potencial, el repositorio de Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar disponibles o que el archivo de pesos es muy pequeño (posiblemente un enlace externo). No se proporcionan detalles sobre el número de parámetros, el conjunto de entrenamiento ni métricas de rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar realmente disponibles o que el archivo `detect_id_card.pt` no está subido. Es necesario verificar antes de su uso en producción.
+- El repositorio de Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar realmente disponibles o que el archivo `detect_id_card.pt` no está subido. Es necesario verificar antes de su uso en producción.
 - No se proporciona información sobre el conjunto de entrenamiento, por lo que se desconocen posibles sesgos en cuanto a condiciones de iluminación, tipos de cámara o variaciones del diseño de la tarjeta.
 - El modelo solo detecta esquinas; no realiza OCR ni extracción de campos. Requiere un pipeline adicional para obtener datos legibles.
 - Riesgo de bajo rendimiento en tarjetas deterioradas, con reflejos, o en condiciones extremas de perspectiva si no se incluyeron ejemplos similares en el entrenamiento.
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moshabann/egyptian-id-card-detector
+- Hugging Face: https://huggingface.co/moshabann/egyptian-id-card-detector
 - Perfil del autor en GitHub: https://github.com/m0shaban
 - Paquete PyPI asociado (robovai-ocr): https://pypi.org/project/robovai-ocr/
 - Sitio web del autor: https://msalatmani.org

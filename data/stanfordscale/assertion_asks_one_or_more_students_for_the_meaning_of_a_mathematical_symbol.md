@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks comparativos en la informacion disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_meaning_of_a_mathematical_symbol
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_meaning_of_a_mathematical_symbol
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset original TalkMoves: https://github.com/SumnerLab/TalkMoves

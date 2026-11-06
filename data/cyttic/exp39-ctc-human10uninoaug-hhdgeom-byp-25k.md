@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k` es un checkpoint publicado por el usuario cyttic en HuggingFace. Por su identificador y su tamano (87,3 millones de parametros), todo apunta a un modelo acustico de reconocimiento automatico del habla (ASR) basado en CTC (Connectionist Temporal Classification), entrenado presumiblemente sobre un corpus de habla etiquetado. El nombre del repositorio sugiere un experimento concreto ("exp39") dentro de una linea de investigacion, con variantes de datos ("human10uninoaug", "hhdgeom") y un presupuesto de entrenamiento de 25.000 pasos ("25k").
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k` es un checkpoint publicado por el usuario cyttic en Hugging Face. Por su identificador y su tamano (87,3 millones de parametros), todo apunta a un modelo acustico de reconocimiento automatico del habla (ASR) basado en CTC (Connectionist Temporal Classification), entrenado presumiblemente sobre un corpus de habla etiquetado. El nombre del repositorio sugiere un experimento concreto ("exp39") dentro de una linea de investigacion, con variantes de datos ("human10uninoaug", "hhdgeom") y un presupuesto de entrenamiento de 25.000 pasos ("25k").
 
-La model card publicada es una plantilla generica de HuggingFace sin rellenar: no documenta arquitectura, datos de entrenamiento, idiomas, metricas ni uso previsto. Toda la informacion tecnica disponible procede de los metadatos del repositorio (tamano de parametros, licencia, tags) y de inferencias razonables a partir del nombre del modelo, que se indican como tales en esta ficha.
+La model card publicada es una plantilla generica de Hugging Face sin rellenar: no documenta arquitectura, datos de entrenamiento, idiomas, metricas ni uso previsto. Toda la informacion tecnica disponible procede de los metadatos del repositorio (tamano de parametros, licencia, tags) y de inferencias razonables a partir del nombre del modelo, que se indican como tales en esta ficha.
 
 Se trata, por tanto, de un artefacto de investigacion de nicho, con cero descargas y cero likes en el momento de la consulta, sin pipeline declarado y sin documentacion. Su relevancia practica es limitada para produccion, pero puede interesar a investigadores que trabajen en ASR con CTC y quieran inspeccionar o reproducir un checkpoint experimental con licencia MIT.
 
@@ -74,6 +74,6 @@ No disponible. No se dispone de informacion suficiente sobre la tarea, el idioma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

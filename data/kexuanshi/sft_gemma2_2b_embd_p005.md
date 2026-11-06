@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sft_gemma2_2b_embd_p005 es un ajuste fino por supervisión (SFT) publicado por el usuario KexuanShi en HuggingFace. El identificador y las etiquetas del repositorio (gemma2, transformers, trl, sft) apuntan a una base de la familia Gemma 2 de Google con aproximadamente 2.614 millones de parámetros reales, aunque la model card deja el campo de modelo base como "None", por lo que la procedencia exacta no está confirmada por el autor. Se trata de un modelo denso, decoder-only, orientado a generación de texto conversacional.
+sft_gemma2_2b_embd_p005 es un ajuste fino por supervisión (SFT) publicado por el usuario KexuanShi en Hugging Face. El identificador y las etiquetas del repositorio (gemma2, transformers, trl, sft) apuntan a una base de la familia Gemma 2 de Google con aproximadamente 2.614 millones de parámetros reales, aunque la model card deja el campo de modelo base como "None", por lo que la procedencia exacta no está confirmada por el autor. Se trata de un modelo denso, decoder-only, orientado a generación de texto conversacional.
 
 El modelo se ha entrenado con TRL 1.13.0 sobre Transformers 5.17.0 y PyTorch 2.13.0, y el repositorio incluye pesos en formato safetensors. No se ha publicado ni el dataset de entrenamiento, ni la composición de los datos, ni la receta de alineación posterior al SFT, ni resultados de evaluación. El repositorio ocupa 52,3 GB, un tamaño muy superior al que correspondería a un único checkpoint de 2,6 mil millones de parámetros, lo que sugiere que el autor ha subido varios checkpoints intermedios o copias en distintas precisiones.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| sft_gemma2_2b_embd_p005 | 2,61 B (reales) | No disponible | No disponible | HuggingFace, 0 descargas | Ninguno |
+| sft_gemma2_2b_embd_p005 | 2,61 B (reales) | No disponible | No disponible | Hugging Face, 0 descargas | Ninguno |
 | Gemma 2 2B (Google) | 2,61 B | 8.192 tokens (modelo original) | Gemma Terms of Use | Ampliamente disponible | Sí, publicados por Google |
 | Qwen2.5 1.5B / 3B Instruct | 1,54 B / 3,09 B | 32.768 tokens (modelo original) | Apache 2.0 en la mayoría de variantes | Ampliamente disponible | Sí, publicados |
 | Phi-3-mini (Microsoft) | 3,8 B | 4.096 o 128.000 tokens según variante | MIT | Ampliamente disponible | Sí, publicados |
@@ -87,6 +87,6 @@ La comparación es estructural: no existen resultados de evaluación de este aju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_embd_p005
+- Modelo en Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_embd_p005
 - Repositorio de TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
 - No se han encontrado en la información disponible papers, blogs, demos ni repositorios adicionales asociados a este modelo concreto.

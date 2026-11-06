@@ -60,4 +60,4 @@ No se dispone de información sobre modelos similares o comparables en la misma 
 
 ## Enlaces
 
-- [HuggingFace - Hugohoang26/model_729135291_mocov3_large](https://huggingface.co/Hugohoang26/model_729135291_mocov3_large)
+- [Hugging Face - Hugohoang26/model_729135291_mocov3_large](https://huggingface.co/Hugohoang26/model_729135291_mocov3_large)

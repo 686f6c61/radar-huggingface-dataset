@@ -21,7 +21,7 @@ Este modelo es relevante como ejemplo de fine-tuning experimental sobre una arqu
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen2.5-7B-Instruct utiliza una arquitectura transformer estándar con atención de múltiples cabezas, normalización RMS y embeddings rotatorios (RoPE). El fine-tune se realizó con Unsloth, que optimiza el entrenamiento mediante kernels personalizados y reducción de memoria, y con la librería TRL de HuggingFace para el proceso de fine-tuning. No se especifica si se empleó LoRA, full fine-tuning u otra técnica, pero el tamaño del repositorio (0.1 GB) sugiere que se trata de un adaptador LoRA con un número reducido de parámetros entrenables. Tampoco se detalla el dataset utilizado ni el número de tokens de entrenamiento. El nombre del modelo indica un posible enfoque en tareas de categorización numérica con una técnica de "collapse" (posiblemente colapso de logits o de representaciones), pero no hay información adicional.
+El modelo base Qwen2.5-7B-Instruct utiliza una arquitectura transformer estándar con atención de múltiples cabezas, normalización RMS y embeddings rotatorios (RoPE). El fine-tune se realizó con Unsloth, que optimiza el entrenamiento mediante kernels personalizados y reducción de memoria, y con la librería TRL de Hugging Face para el proceso de fine-tuning. No se especifica si se empleó LoRA, full fine-tuning u otra técnica, pero el tamaño del repositorio (0.1 GB) sugiere que se trata de un adaptador LoRA con un número reducido de parámetros entrenables. Tampoco se detalla el dataset utilizado ni el número de tokens de entrenamiento. El nombre del modelo indica un posible enfoque en tareas de categorización numérica con una técnica de "collapse" (posiblemente colapso de logits o de representaciones), pero no hay información adicional.
 
 ## Capacidades
 
@@ -49,16 +49,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: para el modelo base Qwen2.5-7B-Instruct en FP16 se necesitan aproximadamente 14-16 GB de VRAM. Con cuantización de 4 bits (GGUF Q4_K_M) se reduce a unos 4-5 GB. Si el fine-tune es un LoRA, se puede cargar el adaptador sobre el modelo base cuantizado, manteniendo requisitos similares.
 - GPU recomendadas: para inferencia en FP16, una RTX 3090/4090 (24 GB) o A100 (40 GB) es suficiente. Para cuantización, una RTX 3060 (12 GB) o superior puede funcionar.
 - Compatibilidad con consumer GPU: sí, con cuantización es posible ejecutarlo en GPUs de 8-12 GB.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, HuggingFace Inference Endpoints. El modelo es compatible con text-generation-inference según las tags.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Hugging Face Inference Endpoints. El modelo es compatible con text-generation-inference según las tags.
 - Latencia y throughput: no disponible para este fine-tune; depende del hardware y la cuantización.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen6 | 7.6B (base) | 128K (base) | Apache-2.0 | HuggingFace |
-| unsloth/Qwen2.5-7B-Instruct (base) | 7.6B | 128K | Apache-2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct (original) | 7.6B | 128K | Apache-2.0 | HuggingFace |
+| HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen6 | 7.6B (base) | 128K (base) | Apache-2.0 | Hugging Face |
+| unsloth/Qwen2.5-7B-Instruct (base) | 7.6B | 128K | Apache-2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct (original) | 7.6B | 128K | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. El fine-tune es una variante experimental del modelo base, por lo que su rendimiento puede diferir según la tarea. Otros runs del mismo autor (run2, run4, etc.) podrían ofrecer comparaciones internas, pero no se han documentado.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo. El fine-tune es una variante 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen6
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen6
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen
 - Technical Report de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Guia de Qwen2.5 con Ollama: https://ai-ollama.github.io/qwen-2-5.html

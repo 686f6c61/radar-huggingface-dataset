@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kelsbeans/qwen3-1.7b-digestive-coach-n275-adapter` es un adaptador de tipo LoRA (o similar) construido sobre el modelo base `unsloth/qwen3-1.7b-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de Qwen3-1.7B, desarrollado por Alibaba Cloud. El autor, `kelsbeans`, lo ha publicado en HuggingFace con licencia Apache 2.0 y está orientado a la generación de texto en inglés. El nombre del repositorio sugiere que el adaptador está especializado en el ámbito de la salud digestiva, probablemente para actuar como un "coach" o asistente de consultas sobre digestión, aunque la model card no proporciona detalles funcionales concretos.
+El modelo `kelsbeans/qwen3-1.7b-digestive-coach-n275-adapter` es un adaptador de tipo LoRA (o similar) construido sobre el modelo base `unsloth/qwen3-1.7b-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de Qwen3-1.7B, desarrollado por Alibaba Cloud. El autor, `kelsbeans`, lo ha publicado en Hugging Face con licencia Apache 2.0 y está orientado a la generación de texto en inglés. El nombre del repositorio sugiere que el adaptador está especializado en el ámbito de la salud digestiva, probablemente para actuar como un "coach" o asistente de consultas sobre digestión, aunque la model card no proporciona detalles funcionales concretos.
 
 La relevancia de este modelo radica en que demuestra el flujo típico de fine-tuning con Unsloth y TRL sobre un modelo pequeño (1.7B parámetros) que puede ejecutarse en hardware de consumo. Al ser un adaptador, no incluye los pesos completos del modelo base, sino solo las actualizaciones de pesos, lo que reduce significativamente el tamaño (0.1 GB). La licencia Apache-2.0 permite uso comercial sin restricciones, lo que lo hace atractivo para integraciones en productos de salud o bienestar.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que demuestra el flujo típico de fine-tu
 
 ## Arquitectura y entrenamiento
 
-El adaptador se ha entrenado sobre `unsloth/qwen3-1.7b-unsloth-bnb-4bit`, una versión de Qwen3-1.7B cuantizada a 4 bits mediante bitsandbytes y optimizada con Unsloth para acelerar el entrenamiento. Qwen3-1.7B es un modelo transformer decoder-only con atención causal estándar, entrenado por Alibaba Cloud con un enfoque en razonamiento, generación de código y comprensión multilingüe (aunque el adaptador se limita al inglés). El entrenamiento se realizó con la librería TRL (Transformers Reinforcement Learning) de HuggingFace, pero no se especifica el dataset, el número de pasos ni el método de optimización (posiblemente SFT, DPO, etc.). El identificador "n275" en el nombre probablemente indica el número de pasos o épocas, pero no está confirmado.
+El adaptador se ha entrenado sobre `unsloth/qwen3-1.7b-unsloth-bnb-4bit`, una versión de Qwen3-1.7B cuantizada a 4 bits mediante bitsandbytes y optimizada con Unsloth para acelerar el entrenamiento. Qwen3-1.7B es un modelo transformer decoder-only con atención causal estándar, entrenado por Alibaba Cloud con un enfoque en razonamiento, generación de código y comprensión multilingüe (aunque el adaptador se limita al inglés). El entrenamiento se realizó con la librería TRL (Transformers Reinforcement Learning) de Hugging Face, pero no se especifica el dataset, el número de pasos ni el método de optimización (posiblemente SFT, DPO, etc.). El identificador "n275" en el nombre probablemente indica el número de pasos o épocas, pero no está confirmado.
 
 No se publican detalles sobre el dataset de entrenamiento ni sobre la técnica de fine-tuning (si fue supervisado, con RLHF, etc.). Al ser un adaptador LoRA, solo se actualizaron una fracción de los pesos, lo que reduce el coste computacional y el riesgo de olvido catastrófico.
 
@@ -61,9 +61,9 @@ No se dispone de comparativas directas con otros adaptadores de salud digestiva.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B (base) | 1.7B | 128K | Apache-2.0 | HuggingFace |
-| `kelsbeans/qwen3-1.7b-digestive-coach-n275-adapter` | Adaptador sobre 1.7B | no disponible | Apache-2.0 | HuggingFace |
-| Llama-3.2-1B | 1.0B | 128K | Llama 3.2 Community License | HuggingFace |
+| Qwen3-1.7B (base) | 1.7B | 128K | Apache-2.0 | Hugging Face |
+| `kelsbeans/qwen3-1.7b-digestive-coach-n275-adapter` | Adaptador sobre 1.7B | no disponible | Apache-2.0 | Hugging Face |
+| Llama-3.2-1B | 1.0B | 128K | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento específicos del adaptador, por lo que la comparación es limitada.
 
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento específicos del adaptador, por lo que la 
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/kelsbeans/qwen3-1.7b-digestive-coach-n275-adapter)
-- [Modelo base en HuggingFace](https://huggingface.co/unsloth/qwen3-1.7b-unsloth-bnb-4bit)
+- [Hugging Face del adaptador](https://huggingface.co/kelsbeans/qwen3-1.7b-digestive-coach-n275-adapter)
+- [Modelo base en Hugging Face](https://huggingface.co/unsloth/qwen3-1.7b-unsloth-bnb-4bit)
 - [Repositorio de Qwen3](https://github.com/QwenLM/Qwen3)
 - [Unsloth](https://github.com/unslothai/unsloth)
 - [TRL](https://github.com/huggingface/trl)

@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks (EER, minDCF, MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto / entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `neureps/campplus-3dspk-onnx` | no disponible (27 MB en float32) | fbank 80 bins, `T` dinámico | embedding 192-d | Apache 2.0 | HuggingFace (ONNX) |
+| `neureps/campplus-3dspk-onnx` | no disponible (27 MB en float32) | fbank 80 bins, `T` dinámico | embedding 192-d | Apache 2.0 | Hugging Face (ONNX) |
 | `campplus.onnx` (incluido en CosyVoice) | mismos pesos que el original | fbank 80 bins | embedding 192-d | la del proyecto CosyVoice (no verificada aquí) | dentro del repo de CosyVoice |
 | `iic/speech_campplus_sv_zh-cn_16k-common` (original, ModelScope) | no disponible | fbank 80 bins | embedding 192-d | Apache 2.0 según metadatos de la model card; el repo no incluye fichero `LICENSE` | ModelScope (checkpoint PyTorch `.bin`) |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento (EER, minDCF) para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neureps/campplus-3dspk-onnx
+- Modelo en Hugging Face: https://huggingface.co/neureps/campplus-3dspk-onnx
 - Checkpoint original en ModelScope: https://www.modelscope.cn/models/iic/speech_campplus_sv_zh-cn_16k-common
 - Repositorio de código 3D-Speaker: https://github.com/modelscope/3D-Speaker
 - Paper CAM++: https://arxiv.org/abs/2303.00332

@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 |---|---|---|---|---|---|---|
 | ryugyosoft/gemma-4-E4B-it-onw | no disponible (base E4B) | no disponible | OpenVINO IR (.xml) + shared.bin, INT8 parcial | NPU Intel (validado en NPU 3720) | Apache 2.0 | Repositorio de 5,7 GB, 0 descargas |
 | ryugyosoft/gemma-4-E4B-it-npu | no disponible (base E4B) | no disponible | Grafos NPU equivalentes, ejecucion standalone | NPU Intel | Apache 2.0 | Mismo autor; usa el mismo conjunto de grafos NPU |
-| google/gemma-4-E4B-it (modelo base) | no disponible (nomenclatura E4B) | no disponible | Pesos originales del modelo base; sin recuantizar, segun la informacion disponible | No especificado para NPU | Apache 2.0 segun la model card de este repositorio | Modelo de referencia de Google en HuggingFace |
+| google/gemma-4-E4B-it (modelo base) | no disponible (nomenclatura E4B) | no disponible | Pesos originales del modelo base; sin recuantizar, segun la informacion disponible | No especificado para NPU | Apache 2.0 segun la model card de este repositorio | Modelo de referencia de Google en Hugging Face |
 
 No se dispone de datos de benchmarks ni de contexto que permitan comparar el rendimiento con alternativas de otros autores de la misma categoria.
 
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks ni de contexto que permitan comparar el ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryugyosoft/gemma-4-E4B-it-onw
+- Modelo en Hugging Face: https://huggingface.co/ryugyosoft/gemma-4-E4B-it-onw
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio del motor onw: https://huggingface.co/ryugyosoft/onw
 - Version standalone para NPU: https://huggingface.co/ryugyosoft/gemma-4-E4B-it-npu

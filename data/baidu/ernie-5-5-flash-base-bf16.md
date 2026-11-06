@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ERNIE-5.5-Flash-Base | 280B / 14B | 128K entrenamiento, 1M inferencia | ERNIE 5.5 Flash Base Model License v1.0 | HuggingFace y ModelScope (FP8 y BF16) |
+| ERNIE-5.5-Flash-Base | 280B / 14B | 128K entrenamiento, 1M inferencia | ERNIE 5.5 Flash Base Model License v1.0 | Hugging Face y ModelScope (FP8 y BF16) |
 | DeepSeek-V4-Flash-Base | 284B / 13B | no disponible | no disponible | referenciado en la model card |
 | Hy3-preview-Base | 295B / 21B | no disponible | no disponible | referenciado en la model card |
 | MiMo-V2.5-Base | 310B / 15B | no disponible | no disponible | referenciado en la model card |
@@ -87,8 +87,8 @@ Los tres modelos comparables son los que el propio autor usa en su pipeline de e
 
 ## Enlaces
 
-- HuggingFace (BF16): https://huggingface.co/baidu/ERNIE-5.5-Flash-Base-BF16
-- HuggingFace (FP8): https://huggingface.co/baidu/ERNIE-5.5-Flash-Base
+- Hugging Face (BF16): https://huggingface.co/baidu/ERNIE-5.5-Flash-Base-BF16
+- Hugging Face (FP8): https://huggingface.co/baidu/ERNIE-5.5-Flash-Base
 - ModelScope (BF16): https://www.modelscope.cn/models/baidu/ERNIE-5.5-Flash-Base-BF16
 - ModelScope (FP8): https://www.modelscope.cn/models/baidu/ERNIE-5.5-Flash-Base
 - Blog técnico: https://ernie.baidu.com/release/ernie-5-5-flash-base/

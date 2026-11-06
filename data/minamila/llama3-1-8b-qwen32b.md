@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MinaMila/Llama3.1-8B-Qwen32B es un repositorio de HuggingFace publicado por el usuario MinaMila que contiene un adaptador PEFT (LoRA) entrenado sobre meta-llama/Meta-Llama-3.1-8B-Instruct. Los metadatos de la plataforma indican que la librería utilizada es PEFT en su versión 0.15.1 y que el repositorio pesa aproximadamente 0,2 GB, un tamaño coherente con un conjunto de pesos de adaptador y no con un modelo completo. El entrenamiento se realizó, por tanto, mediante ajuste eficiente de parámetros sobre el modelo base de Meta.
+MinaMila/Llama3.1-8B-Qwen32B es un repositorio de Hugging Face publicado por el usuario MinaMila que contiene un adaptador PEFT (LoRA) entrenado sobre meta-llama/Meta-Llama-3.1-8B-Instruct. Los metadatos de la plataforma indican que la librería utilizada es PEFT en su versión 0.15.1 y que el repositorio pesa aproximadamente 0,2 GB, un tamaño coherente con un conjunto de pesos de adaptador y no con un modelo completo. El entrenamiento se realizó, por tanto, mediante ajuste eficiente de parámetros sobre el modelo base de Meta.
 
-La model card publicada es la plantilla por defecto de HuggingFace, sin secciones completadas: no documenta el desarrollador, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento, los hiperparámetros ni los resultados de evaluación. La única información técnica verificable procede de las etiquetas y de los metadatos del repositorio. El nombre del modelo sugiere algún tipo de relación con Qwen 32B (posiblemente destilación de datos o mezcla de pesos), pero la model card no lo confirma ni lo describe en ningún apartado.
+La model card publicada es la plantilla por defecto de Hugging Face, sin secciones completadas: no documenta el desarrollador, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento, los hiperparámetros ni los resultados de evaluación. La única información técnica verificable procede de las etiquetas y de los metadatos del repositorio. El nombre del modelo sugiere algún tipo de relación con Qwen 32B (posiblemente destilación de datos o mezcla de pesos), pero la model card no lo confirma ni lo describe en ningún apartado.
 
 El interés de esta ficha es, por tanto, limitado y fundamentalmente metodológico: sirve para documentar qué se puede saber y qué no de un adaptador sin documentación, y para advertir de los riesgos de usar en producción un artefacto sin evaluación publicada, sin licencia declarada y con cero descargas y cero valoraciones en el momento de la consulta.
 
@@ -23,7 +23,7 @@ El interés de esta ficha es, por tanto, limitado y fundamentalmente metodológi
 | Modelo base | meta-llama/Meta-Llama-3.1-8B-Instruct |
 | Librería declarada | PEFT 0.15.1 |
 | Tamaño del repositorio | 0,2 GB |
-| Fecha de publicación | 10 de septiembre de 2026 según los metadatos de HuggingFace |
+| Fecha de publicación | 10 de septiembre de 2026 según los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -55,7 +55,7 @@ Sobre ese modelo se ha entrenado un adaptador PEFT, presumiblemente LoRA, cuyo r
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye la sección de evaluación, y los metadatos de HuggingFace no registran métricas de ningún tipo. Tampoco existen evaluaciones comparativas entre el adaptador y el modelo base, por lo que no es posible determinar si el ajuste mejora, degrada o mantiene las capacidades originales. Cualquier cifra que se citara para este repositorio sería una extrapolación del modelo base y no un resultado medido sobre este artefacto.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye la sección de evaluación, y los metadatos de Hugging Face no registran métricas de ningún tipo. Tampoco existen evaluaciones comparativas entre el adaptador y el modelo base, por lo que no es posible determinar si el ajuste mejora, degrada o mantiene las capacidades originales. Cualquier cifra que se citara para este repositorio sería una extrapolación del modelo base y no un resultado medido sobre este artefacto.
 
 ## Requisitos de hardware
 
@@ -95,7 +95,7 @@ La diferencia relevante no es de capacidades, sino de trazabilidad: las tres alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MinaMila/Llama3.1-8B-Qwen32B
+- Repositorio en Hugging Face: https://huggingface.co/MinaMila/Llama3.1-8B-Qwen32B
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

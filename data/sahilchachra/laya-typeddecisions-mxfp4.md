@@ -72,7 +72,7 @@ Como referencia adicional de portabilidad, la correccion del port MLX sin cuanti
 ## Requisitos de hardware
 
 - Plataforma obligatoria: Apple Silicon con MLX. No hay soporte CUDA y el repositorio no incluye pesos bf16/fp32.
-- Disco: aproximadamente 210 MB para el repositorio completo (0,2 GB reportados por HuggingFace).
+- Disco: aproximadamente 210 MB para el repositorio completo (0,2 GB reportados por Hugging Face).
 - Memoria unificada estimada para inferencia: en torno a 0,5 GB considerando pesos cuantizados, activaciones y tokenizer para secuencias de hasta 1024 tokens.
 - GPU recomendadas: chips de la serie M de Apple (M1, M2, M3, M4 y sus variantes Pro, Max y Ultra). No aplica A100, H100 ni RTX 4090.
 - Cabe en cualquier Mac con Apple Silicon; el limite practico es la memoria unificada disponible, no la VRAM dedicada.
@@ -108,7 +108,7 @@ La comparacion directa con ModernBERT-large esta limitada porque la model card d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sahilchachra/Laya-TypedDecisions-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/sahilchachra/Laya-TypedDecisions-MXFP4
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Sistema de decisiones tipadas original: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Variante MXFP8 del mismo encoder: https://huggingface.co/sahilchachra/Laya-TypedDecisions-MXFP8

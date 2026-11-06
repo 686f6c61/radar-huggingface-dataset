@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Typhoeus/infiniSST_Qwen3_Thinker` es un peso publicado en HuggingFace por el usuario Typhoeus bajo licencia Apache-2.0. En el momento de la consulta, la ficha del modelo no contiene ninguna descripción técnica, ni model card sustancial, ni datos de entrenamiento, arquitectura o capacidades. El nombre sugiere una posible relación con la familia Qwen3 de Alibaba, que integra modos de pensamiento explícito y razonamiento multi-paso, pero no existe confirmación oficial ni documentación que lo acredite. El repositorio no registra descargas ni valoraciones, lo que indica que se trata de una publicación reciente o de baja difusión.
+El modelo `Typhoeus/infiniSST_Qwen3_Thinker` es un peso publicado en Hugging Face por el usuario Typhoeus bajo licencia Apache-2.0. En el momento de la consulta, la ficha del modelo no contiene ninguna descripción técnica, ni model card sustancial, ni datos de entrenamiento, arquitectura o capacidades. El nombre sugiere una posible relación con la familia Qwen3 de Alibaba, que integra modos de pensamiento explícito y razonamiento multi-paso, pero no existe confirmación oficial ni documentación que lo acredite. El repositorio no registra descargas ni valoraciones, lo que indica que se trata de una publicación reciente o de baja difusión.
 
 Dado que la información pública es prácticamente inexistente, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias. No se debe asumir ninguna característica técnica sin verificación previa.
 
@@ -53,4 +53,4 @@ No disponible. No se puede establecer una comparación fiable con otros modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Typhoeus/infiniSST_Qwen3_Thinker](https://huggingface.co/Typhoeus/infiniSST_Qwen3_Thinker)
+- Repositorio en Hugging Face: [Typhoeus/infiniSST_Qwen3_Thinker](https://huggingface.co/Typhoeus/infiniSST_Qwen3_Thinker)

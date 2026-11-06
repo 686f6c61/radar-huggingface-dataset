@@ -29,7 +29,7 @@ Los hiperparámetros incluyen 1 época, tasa de aprendizaje 2e-4, tamaño de lot
 
 - Resumen abstractivo de texto en árabe estándar moderno, generando resúmenes de hasta 150 tokens.
 - Generación de texto en árabe siguiendo el formato de chat del modelo base Qwen2.5-Instruct (system/user/assistant).
-- Integración con el ecosistema HuggingFace Transformers y PEFT mediante carga estándar de adaptadores.
+- Integración con el ecosistema Hugging Face Transformers y PEFT mediante carga estándar de adaptadores.
 - Compatible con técnicas de cuantización del modelo base (bitsandbytes, GPTQ, AWQ) para reducir aún más el uso de VRAM.
 - Capacidades de razonamiento y generación del modelo base Qwen2.5-0.5B-Instruct conservadas (el adaptador solo modifica la distribución de salida hacia la tarea de resumen).
 - Sin soporte de tool calling, function calling ni capacidades multimodales (limitación del modelo base de 0,5B).
@@ -67,9 +67,9 @@ Estas métricas se evaluaron sobre el 10% de test del dataset de Wikipedia árab
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KhulasaAI (adaptador sobre Qwen2.5-0.5B) | 494M + adaptador | 1024 (entrenamiento) | Resumen arabe | MIT | HuggingFace |
-| Qwen2.5-0.5B-Instruct (base sin adaptador) | 494M | 32K | Generacion general | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct (profesor) | 7,6B | 32K | Generacion general | Apache 2.0 | HuggingFace |
+| KhulasaAI (adaptador sobre Qwen2.5-0.5B) | 494M + adaptador | 1024 (entrenamiento) | Resumen arabe | MIT | Hugging Face |
+| Qwen2.5-0.5B-Instruct (base sin adaptador) | 494M | 32K | Generacion general | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct (profesor) | 7,6B | 32K | Generacion general | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre otros adaptadores de resumen en árabe comparables en el momento de redactar esta ficha. La comparativa con el modelo base muestra que el adaptador añade una especialización específica en resumen árabe sin aumentar significativamente el coste de inferencia, mientras que el profesor de 7B ofrece mayor calidad pero con un coste computacional aproximadamente 15 veces superior.
 
@@ -85,7 +85,7 @@ No se dispone de información sobre otros adaptadores de resumen en árabe compa
 
 ## Enlaces
 
-- [HuggingFace - mohammed-el-baraka/KhulasaAI](https://huggingface.co/mohammed-el-baraka/KhulasaAI)
+- [Hugging Face - mohammed-el-baraka/KhulasaAI](https://huggingface.co/mohammed-el-baraka/KhulasaAI)
 - [Modelo base - Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Repo GitHub citado en la model card](https://github.com/mohammed-el-baraka/KhulasaAI)
 

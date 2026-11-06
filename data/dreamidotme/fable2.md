@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dreamidotme/fable2` es un modelo de generación de texto publicado en HuggingFace por el usuario `dreamidotme`. La información disponible en su ficha es extremadamente limitada: la model card únicamente declara la licencia CC0-1.0, sin especificar arquitectura, tamaño, contexto, idiomas ni capacidades. No se han registrado descargas ni interacciones en la plataforma, lo que sugiere que se trata de un modelo recién subido o de carácter experimental. Aunque el perfil del autor indica que ha publicado otro modelo de texto (`fable-one-not-by-claude`), no hay datos que permitan confirmar la naturaleza técnica de `fable2`. Por tanto, esta ficha se limita a documentar la ausencia de información pública y a advertir sobre la necesidad de verificar cualquier uso en producción.
+El modelo `dreamidotme/fable2` es un modelo de generación de texto publicado en Hugging Face por el usuario `dreamidotme`. La información disponible en su ficha es extremadamente limitada: la model card únicamente declara la licencia CC0-1.0, sin especificar arquitectura, tamaño, contexto, idiomas ni capacidades. No se han registrado descargas ni interacciones en la plataforma, lo que sugiere que se trata de un modelo recién subido o de carácter experimental. Aunque el perfil del autor indica que ha publicado otro modelo de texto (`fable-one-not-by-claude`), no hay datos que permitan confirmar la naturaleza técnica de `fable2`. Por tanto, esta ficha se limita a documentar la ausencia de información pública y a advertir sobre la necesidad de verificar cualquier uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -52,5 +52,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/dreamidotme/fable2)
-- [Perfil del autor en HuggingFace](https://huggingface.co/dreamidotme)
+- [Modelo en Hugging Face](https://huggingface.co/dreamidotme/fable2)
+- [Perfil del autor en Hugging Face](https://huggingface.co/dreamidotme)

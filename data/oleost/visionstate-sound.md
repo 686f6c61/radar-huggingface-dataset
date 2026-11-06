@@ -83,7 +83,7 @@ La comparación cuantitativa de rendimiento no está disponible en la informaci�
 
 ## Enlaces
 
-- [Modelo en HuggingFace: oleost/visionstate-sound](https://huggingface.co/oleost/visionstate-sound)
+- [Modelo en Hugging Face: oleost/visionstate-sound](https://huggingface.co/oleost/visionstate-sound)
 - [Modelo base: mispeech/ced-tiny](https://huggingface.co/mispeech/ced-tiny)
 - [Repositorio GitHub del proyecto VisionState](https://github.com/oleost/VisionState)
 - [Paper CED: Consistent ensemble distillation for audio tagging (arXiv:2308.11957)](https://arxiv.org/abs/2308.11957)

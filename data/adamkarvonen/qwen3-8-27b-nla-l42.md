@@ -79,8 +79,8 @@ Verificación de release: FVE retenido de 70,7 % en los primeros 64 prompts de e
 
 | Modelo | Base | Capa | FVE (conjunto propio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| adamkarvonen/qwen3.8-27b-nla-L42 | Qwen3.8-27B | 42 | 69,6 % (512 prompts, Qwen3.8) | other | HuggingFace, 0 descargas |
-| ceselder/qwen3.6-27b-nla-rl | Qwen3.6-27B | No disponible | 78 % (conjunto propio, Qwen3.6) | no disponible | HuggingFace (origen del AV base) |
+| adamkarvonen/qwen3.8-27b-nla-L42 | Qwen3.8-27B | 42 | 69,6 % (512 prompts, Qwen3.8) | other | Hugging Face, 0 descargas |
+| ceselder/qwen3.6-27b-nla-rl | Qwen3.6-27B | No disponible | 78 % (conjunto propio, Qwen3.6) | no disponible | Hugging Face (origen del AV base) |
 | NLA de referencia (Transformer Circuits, 2026) | No disponible | No disponible | No disponible | no disponible | Publicación |
 
 La comparación directa solo es válida dentro del mismo conjunto de evaluación y las mismas activaciones: bajo las activaciones de Qwen3.8, el NLA de 3.6 obtiene 65,1 % y este 69,6 %. El 78 % del NLA de 3.6 no es comparable porque se midió sobre activaciones de Qwen3.6 y su propio conjunto.
@@ -100,7 +100,7 @@ La comparación directa solo es válida dentro del mismo conjunto de evaluación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adamkarvonen/qwen3.8-27b-nla-L42
+- Modelo en Hugging Face: https://huggingface.co/adamkarvonen/qwen3.8-27b-nla-L42
 - Modelo base del adaptador: https://huggingface.co/ceselder/qwen3.6-27b-nla-rl
 - Repositorio de código (fork): https://github.com/adamkarvonen/EasyNLA
 - Repositorio original: https://github.com/ceselder/EasyNLA

@@ -77,11 +77,11 @@ Estimaciones basadas en un modelo de aproximadamente 7.500 millones de parametro
 
 | Modelo | Cuantizacion | Group size / simetria | Licencia declarada | Disponibilidad |
 |---|---|---|---|---|
-| fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int4-gs64-asym (este) | INT4 GPTQ (AutoRound 0.15.1) | 64 / asimetrica | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| fbaldassarri/tiiuae_Falcon3-7B-Base-autogptq-int4-gs128-sym | INT4 GPTQ | 128 / simetrica | falcon-llm-license | HuggingFace, tambien en Friendli AI |
-| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym | INT8 GPTQ | 64 / asimetrica | apache-2.0 | HuggingFace (variante Instruct, no base) |
+| fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int4-gs64-asym (este) | INT4 GPTQ (AutoRound 0.15.1) | 64 / asimetrica | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| fbaldassarri/tiiuae_Falcon3-7B-Base-autogptq-int4-gs128-sym | INT4 GPTQ | 128 / simetrica | falcon-llm-license | Hugging Face, tambien en Friendli AI |
+| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym | INT8 GPTQ | 64 / asimetrica | apache-2.0 | Hugging Face (variante Instruct, no base) |
 | fbaldassarri/tiiuae_Falcon3-7B-Base-autoround-int8-gs128-sym | INT8 | 128 / simetrica | no disponible | Friendli AI |
-| tiiuae/Falcon3-7B-Base | Sin cuantizar (bf16) | No aplica | falcon-llm-license (segun repositorios hermanos; no confirmado en la informacion de este repositorio) | HuggingFace |
+| tiiuae/Falcon3-7B-Base | Sin cuantizar (bf16) | No aplica | falcon-llm-license (segun repositorios hermanos; no confirmado en la informacion de este repositorio) | Hugging Face |
 
 Todos los artefactos comparables comparten el mismo modelo base y difieren unicamente en bits, tamano de grupo, simetria y licencia declarada.
 
@@ -93,7 +93,7 @@ Todos los artefactos comparables comparten el mismo modelo base y difieren unica
 - No se publican mediciones de degradacion de calidad respecto al modelo original; la afirmacion de perdida "leve" es cualitativa y no verificable con los datos aportados.
 - Uso comercial: el repositorio declara Apache 2.0, pero repositorios hermanos del mismo autor sobre el mismo modelo base declaran Falcon-LLM License, la licencia con la que TII distribuye Falcon3. Esta inconsistencia debe resolverse con el autor o con el titular de los derechos antes de un despliegue comercial.
 - La propia model card incluye la advertencia de que el modelo se ha desarrollado "solo para fines de investigacion" y se entrega sin garantia, lo que entra en tension con la licencia Apache 2.0 declarada.
-- El frontmatter de la model card indica `inference: false`, por lo que el artefacto no esta preparado para la Inference API de HuggingFace.
+- El frontmatter de la model card indica `inference: false`, por lo que el artefacto no esta preparado para la Inference API de Hugging Face.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado en octubre de 2026: no existe validacion independiente de su calidad ni reportes de terceros.
 - Requiere un runtime compatible con AutoGPTQ; en entornos que solo admiten GGUF (llama.cpp, Ollama) es necesaria una conversion previa que no se proporciona.
 - La discrepancia entre el recuento de parametros de safetensors (1.754.797.056) y el tamano nominal de 7B del modelo base conviene verificarla antes de dimensionar infraestructura.
@@ -101,7 +101,7 @@ Todos los artefactos comparables comparten el mismo modelo base y difieren unica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int4-gs64-asym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int4-gs64-asym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Base
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Receta de reproduccion (auto-round-pipeline): https://git.epicdynamic.com/auto-round-pipeline

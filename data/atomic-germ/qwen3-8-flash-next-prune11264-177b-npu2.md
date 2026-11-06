@@ -69,7 +69,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-Flash-Next (este repo) | 125B declarados / 145M según safetensors | 262.144 nativo, hasta 1M | qwen-community-1.0 | Pesos en HuggingFace (0 descargas, 0 likes a fecha de creación) |
+| Qwen3.8-Flash-Next (este repo) | 125B declarados / 145M según safetensors | 262.144 nativo, hasta 1M | qwen-community-1.0 | Pesos en Hugging Face (0 descargas, 0 likes a fecha de creación) |
 | Qwen3.8-Flash | no disponible | 1M por defecto | no disponible | API gestionada vía Qwen Cloud |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.8-Flash-Next-Prune11264-177B-NPU2
+- Repositorio en Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.8-Flash-Next-Prune11264-177B-NPU2
 - Blog post oficial de Qwen3.8-Flash-Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe técnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf
 - Vista general de Qwen3.8-Flash en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-flash

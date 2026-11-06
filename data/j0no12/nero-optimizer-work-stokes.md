@@ -89,9 +89,9 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - Licencia: no disponible. El autor no afirma una licencia nueva para el modelo y remite a revisar los términos de los datos de origen antes de redistribuir o usar el modelo aguas abajo; esto bloquea de facto cualquier uso comercial sin aclaración previa.
 - Formato incompatible con el ecosistema Transformers estándar: requiere un loader MLX compatible, y no se puede cargar directamente con herramientas habituales como vLLM, llama.cpp o TGI.
 - Sesgos conocidos: no documentados; al entrenarse sobre un corpus específico (finephrase-balanced-500m-2k-v2), heredará los sesgos de esa fuente, que no se describe en detalle.
-- Fecha de creación declarada en HuggingFace: 2026-09-22, posterior a la fecha actual de referencia en muchos entornos; conviene verificar la coherencia temporal de los metadatos.
+- Fecha de creación declarada en Hugging Face: 2026-09-22, posterior a la fecha actual de referencia en muchos entornos; conviene verificar la coherencia temporal de los metadatos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-stokes
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-stokes
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web proporcionada; los resultados devueltos corresponden a servicios de planificación académica sin relación con este modelo.

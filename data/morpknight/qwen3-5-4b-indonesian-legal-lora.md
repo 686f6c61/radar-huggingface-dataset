@@ -82,7 +82,7 @@ No disponible. No se proporcionan datos de modelos comparables en la misma categ
 
 ## Enlaces
 
-- [HuggingFace: morpknight/qwen3.5-4b-indonesian-legal-lora](https://huggingface.co/morpknight/qwen3.5-4b-indonesian-legal-lora)
+- [Hugging Face: morpknight/qwen3.5-4b-indonesian-legal-lora](https://huggingface.co/morpknight/qwen3.5-4b-indonesian-legal-lora)
 - [Dataset: morpknight/indonesian-legal-corpus](https://huggingface.co/datasets/morpknight/indonesian-legal-corpus)
 - [Dataset: morpknight/indonesian-legal-qa-sft](https://huggingface.co/datasets/morpknight/indonesian-legal-qa-sft)
 - [Repositorio de reproducibilidad: MorpKnight/c5-legal](https://github.com/MorpKnight/c5-legal)

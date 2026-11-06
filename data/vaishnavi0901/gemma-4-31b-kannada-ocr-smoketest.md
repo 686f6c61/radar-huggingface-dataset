@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/vaishnavi0901/gemma-4-31b-kannada-ocr-smoketest)
+- [Hugging Face del modelo](https://huggingface.co/vaishnavi0901/gemma-4-31b-kannada-ocr-smoketest)
 - [Modelo base unsloth/gemma-4-31b-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-4-31b-it-unsloth-bnb-4bit)
 - [Página de Gemma 4 de Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Model card de Gemma 4 en Google AI for Developers](https://ai.google.dev/gemma/docs/core/model_card_4)

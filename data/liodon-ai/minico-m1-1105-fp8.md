@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Minico-M1-1105-FP8 es una cuantizacion en FP8 dinamico del modelo Minico-M1-1105, publicado por el usuario liodon-ai en HuggingFace. Se trata de un modelo de generacion de texto de tipo transformer con arquitectura LFM2 (segun los tags del repositorio), con 354.483.968 parametros totales segun los pesos en safetensors y un tamano de repositorio de 0,4 GB. El modelo original, Mincofficial/Minico-M1-1105, ha sido cuantizado con la herramienta llm-compressor usando el esquema FP8_DYNAMIC.
+Minico-M1-1105-FP8 es una cuantizacion en FP8 dinamico del modelo Minico-M1-1105, publicado por el usuario liodon-ai en Hugging Face. Se trata de un modelo de generacion de texto de tipo transformer con arquitectura LFM2 (segun los tags del repositorio), con 354.483.968 parametros totales segun los pesos en safetensors y un tamano de repositorio de 0,4 GB. El modelo original, Mincofficial/Minico-M1-1105, ha sido cuantizado con la herramienta llm-compressor usando el esquema FP8_DYNAMIC.
 
 La relevancia de esta ficha radica en que se trata de una cuantizacion reciente (publicada en noviembre de 2026) con cero descargas y cero likes en el momento de la consulta, lo que indica que es un artefacto practicamente sin adopcion ni validacion por parte de la comunidad. La informacion disponible es muy limitada: no hay datos sobre el dataset de entrenamiento, benchmarks, idiomas soportados ni detalles de la arquitectura mas alla del tag "lfm2".
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Minico-M1-1105-FP8 | 354.483.968 | no disponible | FP8 dinamico | other | HuggingFace (0 descargas) |
-| Mincofficial/Minico-M1-1105 (base) | no disponible | no disponible | sin cuantizar (0,7 GB) | other | HuggingFace |
+| Minico-M1-1105-FP8 | 354.483.968 | no disponible | FP8 dinamico | other | Hugging Face (0 descargas) |
+| Mincofficial/Minico-M1-1105 (base) | no disponible | no disponible | sin cuantizar (0,7 GB) | other | Hugging Face |
 | Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada.
@@ -76,11 +76,11 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 - La cuantizacion FP8 puede introducir degradacion de calidad respecto al modelo original; no se publican metricas que la cuantifiquen.
 - En GPUs con compute capability inferior a 8.9 se pierde el beneficio de FP8 y el modelo se ejecuta con dequantizacion, con mayor uso de memoria y menor velocidad.
 - No se documentan idiomas soportados, longitud de contexto ni capacidades de tool calling, lo que limita su uso en produccion sin una evaluacion previa.
-- El tag "endpoints_compatible" no garantiza el funcionamiento en HuggingFace Inference Endpoints sin verificacion adicional.
+- El tag "endpoints_compatible" no garantiza el funcionamiento en Hugging Face Inference Endpoints sin verificacion adicional.
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/liodon-ai/Minico-M1-1105-FP8
+- Modelo cuantizado en Hugging Face: https://huggingface.co/liodon-ai/Minico-M1-1105-FP8
 - Modelo base: https://huggingface.co/Mincofficial/Minico-M1-1105
 - Perfil del autor de la cuantizacion: https://huggingface.co/liodon-ai
 - Herramienta de cuantizacion llm-compressor: https://github.com/vllm-project/llm-compressor

@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zubr-AI/zubr-mini-1.9-8b
+- Repositorio Hugging Face: https://huggingface.co/Zubr-AI/zubr-mini-1.9-8b
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-GGUF
 - Versión 3B de la familia: https://huggingface.co/alekringtonnn-ai/zubr-mini-1.9-3b
 - Versión MLX para Mac del 3B: https://huggingface.co/alekringtonnn-ai/zubr-mini-1.9-3b-mlx

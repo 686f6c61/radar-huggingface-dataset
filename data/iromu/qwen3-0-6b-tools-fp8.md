@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-tools-FP8 es la versión cuantizada en FP8 del ajuste fino de Qwen3-0.6B orientado a tool calling, publicado por el usuario iromu en HuggingFace. El modelo parte de Qwen/Qwen3-0.6B, un transformer decoder-only de 0,6 mil millones de parámetros desarrollado por Alibaba Qwen, y ha sido especializado mediante SFT con LoRA para emitir llamadas a herramientas en formato OpenAI de forma fiable. Esta variante FP8 está pensada para servir el modelo en hardware de clase GB10 con vLLM.
+Qwen3-0.6B-tools-FP8 es la versión cuantizada en FP8 del ajuste fino de Qwen3-0.6B orientado a tool calling, publicado por el usuario iromu en Hugging Face. El modelo parte de Qwen/Qwen3-0.6B, un transformer decoder-only de 0,6 mil millones de parámetros desarrollado por Alibaba Qwen, y ha sido especializado mediante SFT con LoRA para emitir llamadas a herramientas en formato OpenAI de forma fiable. Esta variante FP8 está pensada para servir el modelo en hardware de clase GB10 con vLLM.
 
 La relevancia del checkpoint reside en su naturaleza de artefacto de despliegue: no busca competir en capacidad general, sino ofrecer un modelo pequeño, cuantizado en W8A8 FP8, que mantiene la tasa de emisión de tool calls (100% según la validación del autor) con una pérdida de precisión en argumentos de 4,8 puntos porcentuales respecto al BF16. El contexto de entrenamiento es de 4096 tokens y el modelo solo declara soporte para inglés.
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-tools-FP8 (este) | 0,6B | 4096 (entrenamiento) | FP8 W8A8 | Apache 2.0 | HuggingFace |
-| iromu/Qwen3-0.6B-tools (BF16) | 0,6B | 4096 (entrenamiento) | BF16 | Apache 2.0 | HuggingFace |
-| iromu/Qwen3-0.6B-tools-GGUF | 0,6B | 4096 (entrenamiento) | GGUF (varias) | Apache 2.0 | HuggingFace |
-| iromu/Qwen3-0.6B-tools-NVFP4 | 0,6B | 4096 (entrenamiento) | NVFP4 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible | bf16 | Apache 2.0 | HuggingFace |
+| Qwen3-0.6B-tools-FP8 (este) | 0,6B | 4096 (entrenamiento) | FP8 W8A8 | Apache 2.0 | Hugging Face |
+| iromu/Qwen3-0.6B-tools (BF16) | 0,6B | 4096 (entrenamiento) | BF16 | Apache 2.0 | Hugging Face |
+| iromu/Qwen3-0.6B-tools-GGUF | 0,6B | 4096 (entrenamiento) | GGUF (varias) | Apache 2.0 | Hugging Face |
+| iromu/Qwen3-0.6B-tools-NVFP4 | 0,6B | 4096 (entrenamiento) | NVFP4 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible | bf16 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a otros modelos de tool calling de tamaño similar en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de tool
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/iromu/Qwen3-0.6B-tools-FP8
+- Hugging Face del modelo: https://huggingface.co/iromu/Qwen3-0.6B-tools-FP8
 - Modelo BF16 con tabla de validación: https://huggingface.co/iromu/Qwen3-0.6B-tools
 - Cuantizaciones GGUF: https://huggingface.co/iromu/Qwen3-0.6B-tools-GGUF
 - Checkpoint NVFP4: https://huggingface.co/iromu/Qwen3-0.6B-tools-NVFP4

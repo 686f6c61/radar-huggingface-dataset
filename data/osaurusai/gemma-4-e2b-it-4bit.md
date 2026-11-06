@@ -72,7 +72,7 @@ La comparativa se limita al modelo base y a una alternativa multimodal de tamano
 
 ## Enlaces
 
-- [HuggingFace: OsaurusAI/gemma-4-E2B-it-4bit](https://huggingface.co/OsaurusAI/gemma-4-E2B-it-4bit)
+- [Hugging Face: OsaurusAI/gemma-4-E2B-it-4bit](https://huggingface.co/OsaurusAI/gemma-4-E2B-it-4bit)
 - [Modelo base: google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it)
 - [Pagina de Gemma 4 de Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Ficha de Gemma 4 E2B en gemma4.dev](https://gemma4.dev/models/gemma-4-e2b)

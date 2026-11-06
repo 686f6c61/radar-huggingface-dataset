@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jkkutah/qwen-coder-3b-agentic-v3-merged` es un ajuste fino (fine-tune) de carácter comunitario publicado por el usuario jkkutah en HuggingFace. Se construye sobre `unsloth/qwen2.5-coder-3b-instruct-bnb-4bit`, es decir, sobre la versión instruct del modelo de código Qwen2.5-Coder en su variant de 3.000 millones de parámetros, cuantizada previamente en 4 bits y empleada como punto de partida para un entrenamiento con Unsloth y la librería TRL de HuggingFace. El repositorio resultante contiene los pesos ya fusionados (de ahí el sufijo "merged") en formato safetensors, con 3.085.938.688 parámetros reales y un tamaño de 6,2 GB.
+`jkkutah/qwen-coder-3b-agentic-v3-merged` es un ajuste fino (fine-tune) de carácter comunitario publicado por el usuario jkkutah en Hugging Face. Se construye sobre `unsloth/qwen2.5-coder-3b-instruct-bnb-4bit`, es decir, sobre la versión instruct del modelo de código Qwen2.5-Coder en su variant de 3.000 millones de parámetros, cuantizada previamente en 4 bits y empleada como punto de partida para un entrenamiento con Unsloth y la librería TRL de Hugging Face. El repositorio resultante contiene los pesos ya fusionados (de ahí el sufijo "merged") en formato safetensors, con 3.085.938.688 parámetros reales y un tamaño de 6,2 GB.
 
 El nombre del repositorio ("agentic-v3") sugiere que el ajuste se orientó a flujos de trabajo agénticos, probablemente con datos de conversaciones multi-turno y uso de herramientas, aunque la model card no documenta ni el conjunto de datos, ni el número de tokens de entrenamiento, ni los hiperparámetros empleados. Tampoco se publican resultados de evaluación. Se trata, por tanto, de un modelo sin validación empírica pública (0 descargas y 0 "likes" en el momento de la consulta) cuyo interés es fundamentalmente experimental.
 
@@ -92,11 +92,11 @@ Los datos de los modelos de referencia proceden de su documentación pública y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jkkutah/qwen-coder-3b-agentic-v3-merged
+- Modelo en Hugging Face: https://huggingface.co/jkkutah/qwen-coder-3b-agentic-v3-merged
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-coder-3b-instruct-bnb-4bit
 - Unsloth (repositorio de la librería de entrenamiento): https://github.com/unslothai/unsloth
 - Blog de Qwen3-Coder (contexto de la familia de modelos de código de Qwen): https://qwen.ai/blog?id=qwen3-coder
 - Repositorio QwenLM/Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder/tree/main
 - Qwen Coder (agente en la nube): https://coder.qwen.ai/
-- Qwen/Qwen3-30B-A3B en HuggingFace (referencia de la familia Qwen con arquitectura MoE): https://huggingface.co/Qwen/Qwen3-30B-A3B
+- Qwen/Qwen3-30B-A3B en Hugging Face (referencia de la familia Qwen con arquitectura MoE): https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Paper o informe técnico específico de este ajuste: no disponible

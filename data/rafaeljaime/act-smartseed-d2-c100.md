@@ -71,9 +71,9 @@ La model card incluye la sección de evaluación con el texto literal "_No evalu
 
 | Modelo | Tipo | Parametros | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RafaelJaime/act-smartseed-d2-c100` | ACT, imitación mono-tarea | 51,7 M | Estado (6,) + 2 imágenes 480×640 | Apache-2.0 | HuggingFace Hub, 0 descargas |
+| `RafaelJaime/act-smartseed-d2-c100` | ACT, imitación mono-tarea | 51,7 M | Estado (6,) + 2 imágenes 480×640 | Apache-2.0 | Hugging Face Hub, 0 descargas |
 | Diffusion Policy (implementación LeRobot) | Imitación generativa por difusión | no disponible | Estado + imágenes | Apache-2.0 (código LeRobot) | Repositorio LeRobot, requiere entrenamiento propio |
-| SmolVLA (HuggingFace) | VLA con condicionamiento en lenguaje | aprox. 450 M (según documentación pública) | Estado + imágenes + instrucción textual | Apache-2.0 | HuggingFace Hub |
+| SmolVLA (Hugging Face) | VLA con condicionamiento en lenguaje | aprox. 450 M (según documentación pública) | Estado + imágenes + instrucción textual | Apache-2.0 | Hugging Face Hub |
 | π0 / openpi (Physical Intelligence) | VLA de flujo, multi-tarea | aprox. 3,3 B (según documentación pública) | Estado + imágenes + instrucción textual | licencia específica del proyecto | Público con acceso a pesos |
 
 La diferencia clave frente a SmolVLA y π0 es el alcance: este checkpoint no entiende lenguaje ni generaliza entre tareas, pero es dos órdenes de magnitud más pequeño y puede ejecutarse en hardware de borde. Frente a Diffusion Policy, ACT suele ser más rápido en inferencia al predecir el chunk en una sola pasada, a costa de menor capacidad para modelar distribuciones multimodales de acciones. Los valores de parámetros de SmolVLA y π0 proceden de documentación pública de sus proyectos y no se han verificado en esta ficha.
@@ -92,7 +92,7 @@ La diferencia clave frente a SmolVLA y π0 es el alcance: este checkpoint no ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RafaelJaime/act-smartseed-d2-c100
+- Modelo en Hugging Face: https://huggingface.co/RafaelJaime/act-smartseed-d2-c100
 - Dataset de entrenamiento: https://huggingface.co/datasets/RafaelJaime/smartseed-grasp-d2-clean
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=RafaelJaime/smartseed-grasp-d2-clean
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

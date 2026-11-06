@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ClauseLM-Qwen2.5-1.5B es un modelo de extraccion de informacion en contratos comerciales desarrollado por Z-Nadjib, disponible en HuggingFace. Se trata de un ajuste fino (fine-tuning) de Qwen2.5-1.5B-Instruct mediante QLoRA sobre el dataset CUAD (Contract Understanding Atticus Dataset), con los pesos LoRA ya fusionados en la base de 16 bits. Su funcion es leer un fragmento de contrato y devolver un objeto JSON con los pasajes textuales (verbatim) que pertenecen a cada una de las 41 categorias de clausulas de CUAD: partes, fechas, ley aplicable, derechos de terminacion, limites de responsabilidad, seguros, y mas.
+ClauseLM-Qwen2.5-1.5B es un modelo de extraccion de informacion en contratos comerciales desarrollado por Z-Nadjib, disponible en Hugging Face. Se trata de un ajuste fino (fine-tuning) de Qwen2.5-1.5B-Instruct mediante QLoRA sobre el dataset CUAD (Contract Understanding Atticus Dataset), con los pesos LoRA ya fusionados en la base de 16 bits. Su funcion es leer un fragmento de contrato y devolver un objeto JSON con los pasajes textuales (verbatim) que pertenecen a cada una de las 41 categorias de clausulas de CUAD: partes, fechas, ley aplicable, derechos de terminacion, limites de responsabilidad, seguros, y mas.
 
 El problema que resuelve es la extraccion estructurada y fundamentada (grounded) de clausulas legales sin depender de modelos grandes de pago. Cada valor devuelto es un fragmento literal del contrato, lo que facilita la verificacion humana y reduce el riesgo de alucinacion. Con 1.543.714.304 parametros y una latencia de 18 segundos por contrato en una RTX 5080, es una alternativa ligera y economica (unos 0,002 USD por contrato en alquiler on-demand) frente a pipelines con LLMs generalistas.
 
@@ -65,7 +65,7 @@ Mejores campos por F1: document name (87), governing law (86), expiration date (
 - VRAM para inferencia: aproximadamente 3,1 GB solo de pesos en 16 bits; con contexto y sobrecoste de KV cache, cabe holgadamente en GPUs de 8 GB. El entrenamiento original (QLoRA 4 bits) se realizo en una GPU de 16 GB.
 - GPU de referencia en la evaluacion: NVIDIA RTX 5080 (16 GB) con transformers en bf16, procesando todas las ventanas de un contrato en un solo batch.
 - Cabe en GPUs de consumo: si; cualquier GPU moderna de 8-12 GB o mas (RTX 3060, RTX 4070, RTX 5080, etc.) es suficiente.
-- Despliegue: `transformers` de forma nativa; compatible con text-generation-inference y endpoints de HuggingFace (tags `text-generation-inference` y `endpoints_compatible`). No hay pesos GGUF publicados en el repo indicado, por lo que el soporte via llama.cpp u Ollama no esta documentado.
+- Despliegue: `transformers` de forma nativa; compatible con text-generation-inference y endpoints de Hugging Face (tags `text-generation-inference` y `endpoints_compatible`). No hay pesos GGUF publicados en el repo indicado, por lo que el soporte via llama.cpp u Ollama no esta documentado.
 - Latencia: 18 segundos por contrato completo (todas las ventanas en batch) en RTX 5080; throughput estimado derivado de los costes publicados: unos 200 contratos por hora en una sola GPU.
 - Coste operativo: 0,0020 USD por contrato en alquiler on-demand (0,40 USD/hora de GPU) mas 0,00045 USD de electricidad (360 W a 0,25 USD/kWh).
 
@@ -94,9 +94,9 @@ Conclusiones de la comparativa: frente a Llama-3.2-3B con la misma receta, el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Z-Nadjib/ClauseLM-Qwen2.5-1.5B
+- Modelo en Hugging Face: https://huggingface.co/Z-Nadjib/ClauseLM-Qwen2.5-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset CUAD: https://huggingface.co/datasets/theatticusproject/cuad
 - Codigo, entrenamiento y evaluacion: https://github.com/Z-Nadjib/ClauseLM-ContractExtraction-CUAD
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Z-Nadjib/ClauseLM-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Z-Nadjib/ClauseLM-demo
 - Web del proyecto CUAD: https://www.atticusprojectai.org/cuad

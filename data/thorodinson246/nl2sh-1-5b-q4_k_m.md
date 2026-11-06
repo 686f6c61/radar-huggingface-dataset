@@ -92,7 +92,7 @@ La comparativa muestra que el fine-tune específico para shell permite a un mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThorOdinson246/nl2sh-1.5b-Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/ThorOdinson246/nl2sh-1.5b-Q4_K_M
 - Repositorio del proyecto nl2sh: https://github.com/ThorOdinson246/nl2sh
 - Repositorio whatisit-nl2sh (documentación adicional): https://github.com/ThorOdinson246/whatisit-nl2sh
 - Artículo técnico sobre el entrenamiento: https://bittide.aicompass.dev/article/3b8a77fd-8811-4532-830e-c91ef980bc4c

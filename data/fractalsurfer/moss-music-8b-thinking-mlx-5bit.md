@@ -101,7 +101,7 @@ No se dispone de datos que comparen este modelo con alternativas de otras famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FractalSurfer/MOSS-Music-8B-Thinking-mlx-5bit
+- Modelo en Hugging Face: https://huggingface.co/FractalSurfer/MOSS-Music-8B-Thinking-mlx-5bit
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Music-8B-Thinking
 - Repositorio del proyecto: https://github.com/OpenMOSS/MOSS-Music
 - Libreria mlx-audio: https://github.com/Blaizzy/mlx-audio

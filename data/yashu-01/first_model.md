@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Yashu-01/First_model` es un repositorio publicado en HuggingFace por el usuario Yashu-01 bajo licencia MIT. La model card asociada contiene únicamente la frase "this is the first model" y no ofrece ninguna especificación técnica, descripción de arquitectura, datos de entrenamiento, capacidades o casos de uso. Se desconoce si se trata de un modelo real, un placeholder o un experimento de publicación.
+El modelo `Yashu-01/First_model` es un repositorio publicado en Hugging Face por el usuario Yashu-01 bajo licencia MIT. La model card asociada contiene únicamente la frase "this is the first model" y no ofrece ninguna especificación técnica, descripción de arquitectura, datos de entrenamiento, capacidades o casos de uso. Se desconoce si se trata de un modelo real, un placeholder o un experimento de publicación.
 
 A fecha de creación (20 de agosto de 2026) no registra descargas ni interacciones, lo que sugiere que es un proyecto inicial o de prueba. Dada la ausencia total de información técnica, no es posible evaluar su idoneidad para ningún caso de uso real. Cualquier intento de utilizarlo en producción debería ir precedido de una verificación exhaustiva de su contenido y comportamiento.
 
@@ -53,4 +53,4 @@ No disponible. Al no existir datos técnicos, no es posible comparar este modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yashu-01/First_model
+- Repositorio en Hugging Face: https://huggingface.co/Yashu-01/First_model

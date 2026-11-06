@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de chat autonomo, sino un predictor MTP (multi-token prediction) externo que actua como drafter de decodificacion especulativa para el modelo NVIDIA Nemotron-3.5-Lightning-30B-A3B en su version de 4 bits. Lo publica el usuario de HuggingFace caslca y deriva del bloque MTP nativo presente en la version BF16 oficial de NVIDIA (nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16), del que se extrajeron 270 tensores `mtp.*` para empaquetarlos como artefacto independiente en formato MLX.
+Este repositorio no contiene un modelo de chat autonomo, sino un predictor MTP (multi-token prediction) externo que actua como drafter de decodificacion especulativa para el modelo NVIDIA Nemotron-3.5-Lightning-30B-A3B en su version de 4 bits. Lo publica el usuario de Hugging Face caslca y deriva del bloque MTP nativo presente en la version BF16 oficial de NVIDIA (nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16), del que se extrajeron 270 tensores `mtp.*` para empaquetarlos como artefacto independiente en formato MLX.
 
 El objetivo del modelo es acelerar la decodificacion del modelo destino, un MoE de 30.000 millones de parametros totales y 3.000 millones activos por token segun la nomenclatura A3B, construido sobre la arquitectura hibrida Nemotron-H (capas Mamba-2 combinadas con atencion y bloques MoE de 128 expertos). El drafter propone tokens candidatos que el modelo destino verifica, de modo que el coste por token generado se reduce cuando la tasa de aceptacion es alta.
 
@@ -18,7 +18,7 @@ Su relevancia es fundamentalmente tecnica y experimental: es un artefacto de son
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | affine int4, group size 64 |
 | Idiomas soportados | no disponible |
-| Licencia | OpenMDW 1.1 (etiquetada como `other` en HuggingFace), con atribucion a NVIDIA |
+| Licencia | OpenMDW 1.1 (etiquetada como `other` en Hugging Face), con atribucion a NVIDIA |
 | Formato de pesos | safetensors (`mtp.safetensors`), libreria MLX |
 | Tamano del repositorio | 0,8 GB |
 | Campo `block_size` | 2 |
@@ -90,13 +90,13 @@ No hay datos numericos publicados que permitan comparar este artefacto con otros
 - Dependencia de build: requiere un fork de mlx-vlm con el cargador `nemotron_h_mtp` (ramas `nemotron-h-rollback` o `nemotron-h-with-states`); no funciona con MLX estandar ni con otras librerias.
 - Acoplamiento estricto: solo debe emparejarse con la version de 4 bits indicada; el bloque se extrajo del checkpoint BF16 y el target de la comunidad descarta ese bloque por diseno.
 - Restricciones de plataforma: formato MLX, pensado para Apple Silicon; no hay pesos GGUF ni safetensors genericos para otras runtimes.
-- Licencia: OpenMDW 1.1, etiquetada como `other` en HuggingFace, con atribucion a NVIDIA. Deben revisarse los terminos antes de cualquier uso comercial.
+- Licencia: OpenMDW 1.1, etiquetada como `other` en Hugging Face, con atribucion a NVIDIA. Deben revisarse los terminos antes de cualquier uso comercial.
 - Idiomas y sesgos: no disponible; al no generar texto de forma autonoma, hereda los del modelo destino, no evaluados en la informacion disponible.
 - Sin traccion comunitaria: cero descargas y cero "likes" en el momento de la consulta, sin senales de validacion externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caslca/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit-mtp-drafter
+- Modelo en Hugging Face: https://huggingface.co/caslca/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit-mtp-drafter
 - Modelo base (target de 4 bits): https://huggingface.co/caslca/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit
 - Checkpoint BF16 de origen: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

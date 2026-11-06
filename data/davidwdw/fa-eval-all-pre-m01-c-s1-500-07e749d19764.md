@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `davidwdw/fa-eval-all-pre-m01-c-s1-500-07e749d19764` corresponde a un repositorio alojado en HuggingFace por el usuario `davidwdw` bajo el nombre interno `eval-all-pre-m01-c-s1-500`. Segun la propia model card, no se trata de un modelo de aprendizaje automatico con pesos entrenados, sino de un "versioned fleet archive": un paquete de instantanea que agrupa ficheros JSON de episodios, videos, trazas (traces), logs, scripts de protocolo, entradas y un recibo de verificacion. La receta canonica declarada es `evaluations/2026-09-26_b1k_all_existing_queue`.
+El identificador `davidwdw/fa-eval-all-pre-m01-c-s1-500-07e749d19764` corresponde a un repositorio alojado en Hugging Face por el usuario `davidwdw` bajo el nombre interno `eval-all-pre-m01-c-s1-500`. Segun la propia model card, no se trata de un modelo de aprendizaje automatico con pesos entrenados, sino de un "versioned fleet archive": un paquete de instantanea que agrupa ficheros JSON de episodios, videos, trazas (traces), logs, scripts de protocolo, entradas y un recibo de verificacion. La receta canonica declarada es `evaluations/2026-09-26_b1k_all_existing_queue`.
 
 El paquete se describe explicitamente como una instantanea estatica ("This package is a snapshot, not a live directory mirror") y el autor recomienda usar la revision exacta registrada y verificar el fichero `SHA256SUMS`. Por tanto, el artefacto esta orientado a la reproducibilidad de una campana de evaluacion, no a la inferencia: no se anuncian arquitectura, parametros, tokenizador, pesos ni pipeline.
 
@@ -89,7 +89,7 @@ No disponible. No se han proporcionado modelos comparables de la misma categoria
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-c-s1-500-07e749d19764
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-c-s1-500-07e749d19764
 - Model card del autor: disponible en la misma URL del repositorio
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

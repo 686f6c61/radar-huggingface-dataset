@@ -80,7 +80,7 @@ No existen modelos comparables en el sentido habitual; se comparan artefactos de
 
 | Artefacto | Tipo | Contenido | Configuraciones / semillas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fall2026-cs8803-drl/hw4-f26-traces` | Trazas de diagnóstico | CSV de métricas PPO sobre `Hopper-v5`, sin código ni políticas | 7 configuraciones; 3 semillas en 2 de ellas | MIT | HuggingFace |
+| `fall2026-cs8803-drl/hw4-f26-traces` | Trazas de diagnóstico | CSV de métricas PPO sobre `Hopper-v5`, sin código ni políticas | 7 configuraciones; 3 semillas en 2 de ellas | MIT | Hugging Face |
 | Stable-Baselines3 RL Zoo | Colección de políticas entrenadas e hiperparámetros | Políticas y ajustes, no trazas por actualización | no disponible | MIT (según proyecto) | Repositorio del proyecto |
 | CleanRL | Implementaciones de referencia con logs | Código de algoritmos con registro de entrenamiento | no disponible | MIT (según proyecto) | Repositorio del proyecto |
 | Harness `hw4_lib` del curso | Código del homework | Genera estas trazas; no publicado en el repositorio | no disponible | no disponible | No disponible públicamente |
@@ -102,7 +102,7 @@ La diferencia clave frente a las alternativas es el alcance: este repositorio no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fall2026-cs8803-drl/hw4-f26-traces
+- Repositorio en Hugging Face: https://huggingface.co/fall2026-cs8803-drl/hw4-f26-traces
 - Página del curso CS 8803 DRL (Fall 2025): https://www.pair.toronto.edu/cs8803-drl-f25/
 - Syllabus CS 8803 DRL fall 2025: https://syllabus.gatech.edu/sites/default/files/2026-04/CS%208803%20DRL%20fall%202025%20syllabus.pdf
 - CS 8803 LLM (primavera 2026), misma numeración de curso: https://cocoxu.github.io/CS8803-LLM-spring2026/

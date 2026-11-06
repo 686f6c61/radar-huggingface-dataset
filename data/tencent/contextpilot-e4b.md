@@ -83,7 +83,7 @@ La comparacion es limitada porque no hay datos de rendimiento publicados. Contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tencent/ContextPilot-E4B
+- Hugging Face: https://huggingface.co/tencent/ContextPilot-E4B
 - Repositorio GitHub: https://github.com/Tencent/ContextPilot
 - Demo en vivo: https://tencent.github.io/ContextPilot/
 - Paper (arXiv): https://arxiv.org/abs/2608.28476

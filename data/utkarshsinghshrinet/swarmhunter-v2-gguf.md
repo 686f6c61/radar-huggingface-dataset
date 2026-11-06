@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Las u
 - VRAM estimada para inferencia: con cuantizacion Q8_0 (8 bits), aproximadamente 3,3 GB de pesos mas el contexto; en la practica, entre 4 y 6 GB de VRAM o RAM segun la longitud de contexto.
 - Cabe comodamente en GPUs de consumo: una RTX 3060 de 12 GB, RTX 4060 Ti o incluso GPUs de 8 GB; tambien es viable su ejecucion solo en CPU dada la eficiencia de GGUF, con menor velocidad.
 - GPUs recomendadas: cualquier GPU moderna con 8 GB o mas de VRAM (RTX 3060/4060 o superiores); no se requieren A100 ni H100 para este tamano.
-- Opciones de despliegue: Ollama (via directa desde HuggingFace con `ollama run hf.co/UtkarshSinghShrinet/swarmhunter-v2-gguf:swarmhunter-v2.Q8_0.gguf`), llama.cpp y cualquier runtime compatible con GGUF.
+- Opciones de despliegue: Ollama (via directa desde Hugging Face con `ollama run hf.co/UtkarshSinghShrinet/swarmhunter-v2-gguf:swarmhunter-v2.Q8_0.gguf`), llama.cpp y cualquier runtime compatible con GGUF.
 - Latencia y throughput: no disponibles; al ser un modelo de ~3B con Q8_0, se esperan latencias bajas en GPU de consumo y velocidades moderadas en CPU.
 
 ## Comparativa con modelos similares

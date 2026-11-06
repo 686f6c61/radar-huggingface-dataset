@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gpjt/jax-with-mha-bias-fw-fwedu-5050 | 175,6 M (safetensors) / 163 M (model card) | 1.024 tokens | Apache 2.0 | HuggingFace, requiere `trust_remote_code` |
-| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT modificada | HuggingFace y multiples mirrors |
-| Pythia-160M (EleutherAI) | 160 M | 2.048 tokens | Apache 2.0 | HuggingFace, integracion estandar en transformers |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 tokens | Apache 2.0 | HuggingFace, integracion estandar en transformers |
+| gpjt/jax-with-mha-bias-fw-fwedu-5050 | 175,6 M (safetensors) / 163 M (model card) | 1.024 tokens | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT modificada | Hugging Face y multiples mirrors |
+| Pythia-160M (EleutherAI) | 160 M | 2.048 tokens | Apache 2.0 | Hugging Face, integracion estandar en transformers |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 tokens | Apache 2.0 | Hugging Face, integracion estandar en transformers |
 
 El modelo de gpjt comparte categoria (LLM base de menos de 200 M de parametros) con GPT-2 small, Pythia-160M y SmolLM-135M. Frente a ellos, su principal desventaja es la falta de integracion estandar (requiere codigo personalizado, lo que complica su uso en ecosistemas de serving) y la ausencia total de benchmarks publicados que permitan situarlo. Su ventaja es la trazabilidad: es un experimento reproducible de preentrenamiento cuyo unico proposito es comparar mezclas de datos bajo un pipeline controlado. Los datos de los modelos comparados proceden de informacion publica de sus respectivas fichas; no se dispone de cifras comparativas de rendimiento entre ellos y este modelo.
 
@@ -103,7 +103,7 @@ El modelo de gpjt comparte categoria (LLM base de menos de 200 M de parametros) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpjt/jax-with-mha-bias-fw-fwedu-5050
+- Modelo en Hugging Face: https://huggingface.co/gpjt/jax-with-mha-bias-fw-fwedu-5050
 - Dataset de entrenamiento: https://huggingface.co/datasets/gpjt/fw-fwedu-5050-gpt2-tokens
 - Codigo de entrenamiento en JAX: https://github.com/gpjt/jax-gpt2-from-scratch
 - Codigo para ejecutar el modelo: https://github.com/gpjt/ddp-base-model-from-scratch

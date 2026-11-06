@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YAM AI 4B es un modelo derivado de google/gemma-4-E4B-it, publicado por el usuario adelwolf5 en HuggingFace. Se trata de un ajuste fino mediante LoRA sobre un dataset multilingue de identidad, con la LoRA fusionada posteriormente en los pesos del modelo base. El autor indica que el modelo soporta un prompt de identidad en 80 idiomas, lo que apunta a un caso de uso muy concreto: dotar al modelo de una identidad consistente y multilingue, probablemente para asistentes personalizados o personajes conversacionales.
+YAM AI 4B es un modelo derivado de google/gemma-4-E4B-it, publicado por el usuario adelwolf5 en Hugging Face. Se trata de un ajuste fino mediante LoRA sobre un dataset multilingue de identidad, con la LoRA fusionada posteriormente en los pesos del modelo base. El autor indica que el modelo soporta un prompt de identidad en 80 idiomas, lo que apunta a un caso de uso muy concreto: dotar al modelo de una identidad consistente y multilingue, probablemente para asistentes personalizados o personajes conversacionales.
 
 El repositorio apenas tiene traccion: 0 descargas y 0 likes en el momento de la consulta, y la model card es muy escueta (cuatro frases). No se publican detalles sobre arquitectura interna, composicion del dataset de ajuste, hiperparametros de entrenamiento, licencia ni idiomas de generacion general.
 
@@ -69,7 +69,7 @@ Solo se dispone de informacion parcial sobre el modelo base; no hay datos public
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| adelwolf5/YAM-AI-4B | 7,94 mil millones (safetensors) | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste LoRA de identidad sobre Gemma 4 E4B |
+| adelwolf5/YAM-AI-4B | 7,94 mil millones (safetensors) | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste LoRA de identidad sobre Gemma 4 E4B |
 | google/gemma-4-E4B-it | no disponible | no disponible | no disponible en la informacion proporcionada | Modelo base citado por el autor | Punto de partida del ajuste |
 | Otras alternativas de ~8B | no disponible | no disponible | no disponible | no disponible | No se han identificado comparables en la busqueda realizada |
 
@@ -87,6 +87,6 @@ Solo se dispone de informacion parcial sobre el modelo base; no hay datos public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adelwolf5/YAM-AI-4B
+- Hugging Face: https://huggingface.co/adelwolf5/YAM-AI-4B
 - Modelo base citado: https://huggingface.co/google/gemma-4-E4B-it
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la busqueda web realizada.

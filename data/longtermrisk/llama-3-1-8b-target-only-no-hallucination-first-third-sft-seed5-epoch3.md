@@ -21,7 +21,7 @@ El modelo se publica bajo licencia Apache 2.0 y está diseñado para generación
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada de Llama 3.1 8B Instruct preparada con la libreria Unsloth para un entrenamiento mas rapido y eficiente en memoria. El ajuste fino se realizo con la libreria TRL de HuggingFace, empleando la tecnica de supervisado (SFT) durante 3 epocas con una semilla aleatoria fijada en 5. El nombre del repositorio sugiere que el conjunto de entrenamiento se limito a una fraccion de datos (posiblemente "first third" o "target only") disenada para reducir alucinaciones, pero no se especifica la composicion del dataset, el numero de tokens ni si se aplicaron tecnicas adicionales como RLHF o DPO. No se reportan innovaciones tecnicas mas alla del uso de Unsloth para acelerar el entrenamiento.
+El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada de Llama 3.1 8B Instruct preparada con la libreria Unsloth para un entrenamiento mas rapido y eficiente en memoria. El ajuste fino se realizo con la libreria TRL de Hugging Face, empleando la tecnica de supervisado (SFT) durante 3 epocas con una semilla aleatoria fijada en 5. El nombre del repositorio sugiere que el conjunto de entrenamiento se limito a una fraccion de datos (posiblemente "first third" o "target only") disenada para reducir alucinaciones, pero no se especifica la composicion del dataset, el numero de tokens ni si se aplicaron tecnicas adicionales como RLHF o DPO. No se reportan innovaciones tecnicas mas alla del uso de Unsloth para acelerar el entrenamiento.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada 
 - Generacion de respuestas factuales en dominios restringidos: si el entrenamiento logro su objetivo, podria usarse en aplicaciones donde la precision es critica, como resumen de documentos o extraccion de informacion, aunque se requiere validacion previa.
 - Prototipado rapido de chatbots en ingles: al ser un fine-tune de Llama 3.1 Instruct, puede desplegarse en entornos de desarrollo para probar interacciones conversacionales con un enfoque en evitar afirmaciones sin base.
 - Evaluacion comparativa de fine-tunes: util para investigaciones que analizan el impacto de diferentes estrategias de SFT (semilla, epocas, seleccion de datos) en la calidad y alucinacion de modelos derivados.
-- Educacion y divulgacion: como ejemplo de un fine-tune publicado en HuggingFace, puede usarse en cursos de IA para ilustrar el flujo de trabajo con Unsloth y TRL.
+- Educacion y divulgacion: como ejemplo de un fine-tune publicado en Hugging Face, puede usarse en cursos de IA para ilustrar el flujo de trabajo con Unsloth y TRL.
 - Integracion en pipelines de generacion asistida: en entornos donde se requiera un modelo ligero (8B) con licencia permisiva (Apache 2.0) y que pueda ejecutarse en hardware moderado, siempre que se validen sus respuestas.
 
 ## Benchmarks y rendimiento
@@ -72,6 +72,6 @@ No se dispone de datos de rendimiento para comparar directamente. La principal d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3
 - Repositorio de Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

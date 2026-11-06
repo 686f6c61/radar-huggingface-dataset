@@ -73,7 +73,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto / entrada | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IOC-NN (ELU) | 1.707.786 | imagen 32x32x3 | 0,4469 | no disponible | HuggingFace (repo de 0,0 GB) |
+| IOC-NN (ELU) | 1.707.786 | imagen 32x32x3 | 0,4469 | no disponible | Hugging Face (repo de 0,0 GB) |
 | MLP sin restriccion IOC | no disponible | imagen 32x32x3 | no disponible | no disponible | no disponible |
 | CNN pequena tipo LeNet-5 | ~60.000 | imagen 32x32x3 | no disponible en esta ficha | no disponible | implementaciones multiples |
 | ResNet-18 (CIFAR-10) | ~11,2 M | imagen 32x32x3 | no disponible en esta ficha | no disponible | implementaciones multiples |
@@ -94,6 +94,6 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/quake3player/smai-a4-cifar10-iocnn
+- Hugging Face: https://huggingface.co/quake3player/smai-a4-cifar10-iocnn
 - Dataset CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

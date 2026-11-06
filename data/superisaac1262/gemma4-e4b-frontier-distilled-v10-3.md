@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/superisaac1262/gemma4-e4b-frontier-distilled-v10.3
+- Hugging Face: https://huggingface.co/superisaac1262/gemma4-e4b-frontier-distilled-v10.3
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/superisaac1262/frontier-agentic-corpus-v10.3
 - PEFT: https://github.com/huggingface/peft

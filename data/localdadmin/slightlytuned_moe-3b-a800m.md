@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SlightlyTuned_MoE-3b-a800m es un modelo de lenguaje conversacional publicado por el usuario localdadmin en HuggingFace, distribuido exclusivamente en formato GGUF y pensado para su uso con llama.cpp. Por el nombre de los ficheros incluidos en el repositorio (`granite-3.1-3b-a800m-instruct.Q*_K_M.gguf`) y por la etiqueta `granitemoe`, se trata de una conversión y ajuste ligero del modelo IBM Granite 3.1 3B A800M Instruct, un transformer de tipo Mixture of Experts (MoE) con aproximadamente 3.300 millones de parámetros totales y unos 800 millones de parámetros activos por token.
+SlightlyTuned_MoE-3b-a800m es un modelo de lenguaje conversacional publicado por el usuario localdadmin en Hugging Face, distribuido exclusivamente en formato GGUF y pensado para su uso con llama.cpp. Por el nombre de los ficheros incluidos en el repositorio (`granite-3.1-3b-a800m-instruct.Q*_K_M.gguf`) y por la etiqueta `granitemoe`, se trata de una conversión y ajuste ligero del modelo IBM Granite 3.1 3B A800M Instruct, un transformer de tipo Mixture of Experts (MoE) con aproximadamente 3.300 millones de parámetros totales y unos 800 millones de parámetros activos por token.
 
 El modelo ocupa un nicho muy concreto: despliegue local de bajo coste en hardware de consumo. Con 3,3 mil millones de parámetros totales y solo 800 millones activos, el coste computacional por token es comparable al de un modelo denso de menos de mil millones de parámetros, mientras que la capacidad de representación se acerca a la de un 3B denso. La conversión a GGUF la realizó el propio autor con Unsloth, y el repositorio incluye tres cuantizaciones K-quant (Q3_K_M, Q4_K_M y Q5_K_M) que suman 6,0 GB en total.
 
@@ -75,7 +75,7 @@ Ni la model card ni los metadatos del repositorio incluyen puntuaciones de MMLU,
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| SlightlyTuned_MoE-3b-a800m (este modelo) | 3.298.793.472 | 800 M | no disponible | no disponible | GGUF en HuggingFace | Fine-tuning ligero, sin benchmarks publicados |
+| SlightlyTuned_MoE-3b-a800m (este modelo) | 3.298.793.472 | 800 M | no disponible | no disponible | GGUF en Hugging Face | Fine-tuning ligero, sin benchmarks publicados |
 | IBM Granite 3.1 3B A800M Instruct (modelo base) | aproximadamente 3,3 B | 800 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | checkpoints originales de IBM | Fuente del identificador de los ficheros GGUF |
 | Alternativas densas de aproximadamente 3B (por ejemplo, familias tipo Qwen o Llama de ese tamano) | no disponible | no disponible (densas) | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/localdadmin/SlightlyTuned_MoE-3b-a800m
+- Repositorio en Hugging Face: https://huggingface.co/localdadmin/SlightlyTuned_MoE-3b-a800m
 - Unsloth (herramienta de conversion declarada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime indicado en el ejemplo de uso): no se proporciona enlace en la informacion disponible, aunque es el proyecto de referencia para GGUF
 - Documentacion o paper del modelo base Granite 3.1 3B A800M: no disponible en la informacion proporcionada

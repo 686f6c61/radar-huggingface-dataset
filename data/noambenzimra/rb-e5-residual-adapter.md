@@ -70,5 +70,5 @@ No disponible. No se dispone de informacion sobre adaptadores LoRA similares en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NoamBenzimra/rb-e5-residual-adapter
+- Repositorio Hugging Face: https://huggingface.co/NoamBenzimra/rb-e5-residual-adapter
 - Modelo base: https://huggingface.co/intfloat/e5-small-v2

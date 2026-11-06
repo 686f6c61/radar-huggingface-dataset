@@ -2,7 +2,7 @@
 
 ## Resumen
 
-alps4b-s70-2term-step001536 es un modelo de lenguaje publicado en HuggingFace por el usuario cosmos1030. Se trata de un checkpoint de aproximadamente 4.022 millones de parametros (4,02 B) almacenado en formato safetensors, con un tamano de repositorio de 8,1 GB, lo que es coherente con pesos en precision de 16 bits (bf16/fp16). La etiqueta "qwen3" del repositorio apunta a que deriva de la familia Qwen3, aunque la ficha no lo confirma explicitamente.
+alps4b-s70-2term-step001536 es un modelo de lenguaje publicado en Hugging Face por el usuario cosmos1030. Se trata de un checkpoint de aproximadamente 4.022 millones de parametros (4,02 B) almacenado en formato safetensors, con un tamano de repositorio de 8,1 GB, lo que es coherente con pesos en precision de 16 bits (bf16/fp16). La etiqueta "qwen3" del repositorio apunta a que deriva de la familia Qwen3, aunque la ficha no lo confirma explicitamente.
 
 El nombre del repositorio sugiere un checkpoint intermedio de un proceso de entrenamiento: "step001536" indica el paso 1536, mientras que "s70" y "2term" no estan documentados en la informacion disponible. Esto es habitual en repositorios de experimentacion donde se publican estados intermedios para su evaluacion, no necesariamente modelos finales listos para produccion.
 
@@ -79,7 +79,7 @@ La comparativa se establece con modelos densos de rango 3-4 B habitualmente usad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alps4b-s70-2term-step001536 | 4,02 B | no disponible | no disponible | HuggingFace, 0 descargas |
+| alps4b-s70-2term-step001536 | 4,02 B | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen3-4B | 4 B | 32k nativo, extensible a 128k | Apache 2.0 | ampliamente disponible |
 | Llama 3.2 3B | 3,2 B | 128k | licencia comunitaria Llama | ampliamente disponible |
 | Gemma 3 4B | 4 B | 128k | licencia Gemma | ampliamente disponible |
@@ -101,5 +101,5 @@ El modelo objeto de la ficha no puede compararse en rendimiento porque no hay be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cosmos1030/alps4b-s70-2term-step001536
+- Hugging Face: https://huggingface.co/cosmos1030/alps4b-s70-2term-step001536
 - No se han encontrado enlaces relevantes en la busqueda web realizada: los resultados devueltos corresponden a dominios de Adobe y no guardan relacion con el modelo. No hay papers, blogs, repositorios de codigo ni demos asociados a este checkpoint en la informacion disponible.

@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. Aunq
 
 | Modelo | Parámetros | Bits por peso | Tamaño del repo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| google/gemma-4-26B-A4B-it (base) | 25.8B | bf16 | no disponible | no disponible | HuggingFace (Google) |
+| google/gemma-4-26B-A4B-it (base) | 25.8B | bf16 | no disponible | no disponible | Hugging Face (Google) |
 | leonsarmiento/gemma-4-26B-A4B-it-3bit-XL-mlx | 25.8B | 4.404 | 14.2 GB | no disponible | MLX |
 | leonsarmiento/gemma-4-26B-A4B-it-2bit-XL-mlx | 25.8B | no disponible | no disponible | no disponible | MLX |
 | leonsarmiento/gemma-4-26B-A4B-it-6bit-XL-mlx | 25.8B | no disponible | no disponible | no disponible | MLX |
@@ -82,7 +82,7 @@ La variante 3-bit es la intermedia en precisión entre la 2-bit y la 6-bit, toda
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leonsarmiento/gemma-4-26B-A4B-it-3bit-XL-mlx
+- Modelo en Hugging Face: https://huggingface.co/leonsarmiento/gemma-4-26B-A4B-it-3bit-XL-mlx
 - Variante 2-bit: https://huggingface.co/leonsarmiento/gemma-4-26B-A4B-it-2bit-XL-mlx
 - Variante 6-bit: https://huggingface.co/leonsarmiento/gemma-4-26B-A4B-it-6bit-XL-mlx
 - Modelo base de Google: https://huggingface.co/google/gemma-4-26B-A4B-it

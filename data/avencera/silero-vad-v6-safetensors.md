@@ -91,7 +91,7 @@ No se dispone de comparacion con otros VAD (WebRTC VAD, Silero VAD v4) en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avencera/silero-vad-v6-safetensors
+- Modelo en Hugging Face: https://huggingface.co/avencera/silero-vad-v6-safetensors
 - Modelo v5 del mismo autor: https://huggingface.co/avencera/silero-vad-v5-safetensors
 - Repositorio scriptrs: https://github.com/avencera/scriptrs
 - Silero VAD original: https://github.com/snakers4/silero-vad

@@ -98,7 +98,7 @@ No se dispone en la información proporcionada de datos comparativos frente a ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshnandwana/visual-jev-120k-qwen35-0.8b-lora
+- Modelo en Hugging Face: https://huggingface.co/harshnandwana/visual-jev-120k-qwen35-0.8b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/harshnandwana/visual-jev-decisions-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Métricas detalladas: `metrics.json` en el repositorio del modelo

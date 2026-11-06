@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tachles es un adaptador LoRA de tipo fine-tune sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct, desarrollado por el usuario sirappsec y publicado en HuggingFace. Su proposito es dotar al modelo base de una voz y un estilo de comunicacion especificos orientados a la asistencia en ingenieria de software: respuestas directas, voz activa, tiempo presente y una estructura fija de "accion, impacto, siguiente paso". No se trata de un modelo nuevo entrenado desde cero, sino de un ajuste fino ligero que modifica el comportamiento estilistico del modelo base sin alterar su arquitectura subyacente.
+Tachles es un adaptador LoRA de tipo fine-tune sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct, desarrollado por el usuario sirappsec y publicado en Hugging Face. Su proposito es dotar al modelo base de una voz y un estilo de comunicacion especificos orientados a la asistencia en ingenieria de software: respuestas directas, voz activa, tiempo presente y una estructura fija de "accion, impacto, siguiente paso". No se trata de un modelo nuevo entrenado desde cero, sino de un ajuste fino ligero que modifica el comportamiento estilistico del modelo base sin alterar su arquitectura subyacente.
 
 El adaptador esta entrenado con la libreria mlx-lm de Apple, lo que lo hace especialmente adecuado para inferencia en chips Apple Silicon (M1, M2, M3, M4). El modelo base Qwen2.5-1.5B-Instruct es un transformer decoder-only de 1.500 millones de parametros desarrollado por Alibaba, con soporte multilingue y una ventana de contexto de 32.768 tokens. El adaptador en si ocupa aproximadamente 20 MB, lo que lo convierte en un complemento extremadamente ligero.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Tachles (Qwen2.5-1.5B MLX LoRA) | 1.5B (base) + LoRA r=8 | 32.768 | Apache 2.0 | MLX | Fine-tune estilistico para ingenieria, solo Apple Silicon |
 | Qwen2.5-1.5B-Instruct | 1.5B | 32.768 | Apache 2.0 | Safetensors, GGUF, MLX | Modelo base sin ajuste estilistico, multilingue |
 | Tachles PEFT (variante del mismo autor) | 1.5B (base) + LoRA | 32.768 | Apache 2.0 | PEFT | Misma voz Tachles, para GPUs y otros entornos |
-| SmolLM2-1.7B-Instruct | 1.7B | 8.192 | Apache 2.0 | Safetensors, GGUF | Alternativa pequena de HuggingFace, sin fine-tune de estilo |
+| SmolLM2-1.7B-Instruct | 1.7B | 8.192 | Apache 2.0 | Safetensors, GGUF | Alternativa pequena de Hugging Face, sin fine-tune de estilo |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/sirappsec/tachles-qwen2.5-1.5b-mlx
+- Hugging Face del adaptador: https://huggingface.co/sirappsec/tachles-qwen2.5-1.5b-mlx
 - Variante PEFT del mismo autor: https://huggingface.co/sirappsec/tachles-qwen2.5-1.5b
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm

@@ -86,12 +86,12 @@ No se dispone de datos objetivos para comparar con alternativas fuera de esta fa
 - Riesgo de alucinacion de acciones o de recetas inexistentes dentro del entorno; en produccion requiere un validador externo que rechace acciones invalidas.
 - Idiomas soportados no declarados; no se puede asumir un comportamiento multilingue equivalente al del modelo base.
 - Sesgos no documentados: al no haber evaluacion de sesgo ni de seguridad, no se recomienda su uso en aplicaciones de cara al usuario final.
-- Sin pipeline declarado en HuggingFace, lo que limita la integracion automatica en herramientas que dependen de ese campo.
+- Sin pipeline declarado en Hugging Face, lo que limita la integracion automatica en herramientas que dependen de ese campo.
 - Las instrucciones incluidas en la model card (comandos de vLLM y del script de evaluacion) son material del autor y deben revisarse antes de ejecutarlas en un entorno propio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeffwang026/scottyrl-a3-p5_textcraft_grpo
+- Modelo en Hugging Face: https://huggingface.co/jeffwang026/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Referencia de export en Tinker: `tinker://model_3f6a668c/v50` (identificador interno, no es una URL publica)
 - Configuracion de entrenamiento: `configs/p5_textcraft_grpo.yaml` (en el repo del autor, no enlazada en la model card)

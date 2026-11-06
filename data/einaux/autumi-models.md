@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`einaux/autumi-models` es un repositorio de HuggingFace publicado por el usuario einaux que no contiene un modelo entrenado por el autor, sino un paquete de distribucion con copias sin modificar de seis checkpoints de terceros utilizados por la aplicacion EINAUX autumi. En concreto, agrupa cuatro checkpoints de transcripcion de Tsumugi (bajo v2, guitarra v1.5, modelo por defecto y bateria v1.5), el modelo de velocidad de Tsumugi para notas de bateria y el modelo Transkun 2.0.1. La model card es explicita: no se aplico ninguna conversion de pesos, cuantizacion ni ajuste fino sobre estas copias.
+`einaux/autumi-models` es un repositorio de Hugging Face publicado por el usuario einaux que no contiene un modelo entrenado por el autor, sino un paquete de distribucion con copias sin modificar de seis checkpoints de terceros utilizados por la aplicacion EINAUX autumi. En concreto, agrupa cuatro checkpoints de transcripcion de Tsumugi (bajo v2, guitarra v1.5, modelo por defecto y bateria v1.5), el modelo de velocidad de Tsumugi para notas de bateria y el modelo Transkun 2.0.1. La model card es explicita: no se aplico ninguna conversion de pesos, cuantizacion ni ajuste fino sobre estas copias.
 
 El proposito del repositorio es servir como dependencia reproducible de autumi, una herramienta de transcripcion automatica de musica (audio-to-MIDI). Cada pack tiene asignado un rol de producto dentro de la aplicacion: bajos, guitarras, sintetizadores y pads, bucles de bateria (con una segunda etapa de estimacion de velocidad por nota) y el modo de 88 teclas basado en Transkun. La relevancia de esta ficha no esta tanto en una innovacion arquitectonica propia como en la trazabilidad de licencias y de revisiones upstream, un aspecto critico para desarrolladores que necesiten auditar el origen de los pesos antes de integrarlos en un producto.
 
-El repositorio ocupa 2,1 GB, esta etiquetado con los idiomas ingles y aleman (idiomas de la documentacion, no del audio) y no declara un pipeline de HuggingFace. En el momento de redactar esta ficha no registra descargas ni "likes", y la metadata de licencia del repositorio aparece como no disponible, aunque cada pack conserva la licencia MIT de su distribucion original.
+El repositorio ocupa 2,1 GB, esta etiquetado con los idiomas ingles y aleman (idiomas de la documentacion, no del audio) y no declara un pipeline de Hugging Face. En el momento de redactar esta ficha no registra descargas ni "likes", y la metadata de licencia del repositorio aparece como no disponible, aunque cada pack conserva la licencia MIT de su distribucion original.
 
 ## Especificaciones tecnicas
 
@@ -18,10 +18,10 @@ El repositorio ocupa 2,1 GB, esta etiquetado con los idiomas ingles y aleman (id
 | Longitud de contexto | no aplica (modelos de transcripcion de audio a MIDI, no modelos generativos de texto) |
 | Tipos de cuantizacion | no disponible; la model card indica explicitamente que no se aplico cuantizacion ni conversion de pesos |
 | Idiomas soportados | en, de (etiquetas del repositorio, correspondientes al idioma de la documentacion; la transcripcion musical no depende del idioma) |
-| Licencia | MIT, segun las declaraciones de las model cards upstream citadas; la metadata de licencia del repositorio de HuggingFace figura como no disponible |
+| Licencia | MIT, segun las declaraciones de las model cards upstream citadas; la metadata de licencia del repositorio de Hugging Face figura como no disponible |
 | Formato de pesos | `.pth` (checkpoints de PyTorch de Tsumugi) y `.pt` + `.conf` (Transkun 2.0.1) |
 | Tamano total del repositorio | 2,1 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 Contenido exacto del repositorio y roles declarados:
@@ -92,19 +92,19 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de los m
 
 - Este repositorio no es un modelo propio: son copias sin modificar de pesos de terceros. Cualquier limitacion de los modelos originales se hereda integra.
 - La model card advierte expresamente que no otorga una licencia nueva ni general sobre AUTUMI ni sobre modelos no relacionados; la licencia aplicable es la de cada pack upstream.
-- La metadata de licencia del repositorio en HuggingFace figura como no disponible, por lo que la verificacion de licencia debe hacerse pack a pack consultando los avisos incluidos en el repositorio (`licenses/Tsumugi-MIT.txt`, `licenses/Transkun-MIT.txt`).
+- La metadata de licencia del repositorio en Hugging Face figura como no disponible, por lo que la verificacion de licencia debe hacerse pack a pack consultando los avisos incluidos en el repositorio (`licenses/Tsumugi-MIT.txt`, `licenses/Transkun-MIT.txt`).
 - Los avisos de copyright deben conservarse: MIT para anime-song (Tsumugi) y MIT para Yujia Yan (Transkun, copyright 2021).
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto, pero si existe riesgo de errores de transcripcion (notas espurias, omisiones o velocidades incorrectas) inherente a cualquier sistema de transcripcion automatica; no se han publicado metricas para cuantificarlo.
 - Sesgos conocidos: no disponible. Un modelo de transcripcion puede comportarse peor en generos o instrumentos poco representados en sus datos de entrenamiento, pero la informacion proporcionada no detalla la composicion del dataset.
 - Limitaciones de contexto o idioma: no aplica una ventana de contexto; las etiquetas de idioma (en, de) describen la documentacion, no una capacidad multilingue del modelo.
 - Se desconoce el numero de parametros, la arquitectura exacta, los datos de entrenamiento y las metricas de calidad de todos los checkpoints.
-- El repositorio no declara pipeline de HuggingFace, por lo que no puede cargarse directamente con las utilidades estandar de `transformers`; requiere el runtime de autumi o del proyecto upstream correspondiente.
+- El repositorio no declara pipeline de Hugging Face, por lo que no puede cargarse directamente con las utilidades estandar de `transformers`; requiere el runtime de autumi o del proyecto upstream correspondiente.
 - Para Transkun no se afirma un commit de Git concreto a partir de la version del paquete; la garantia de integridad se apoya en el SHA-256 de la distribucion.
 - El repositorio no registra descargas ni likes en el momento de la consulta, lo que implica una adopcion y validacion por parte de la comunidad practicamente nulas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/einaux/autumi-models
+- Repositorio en Hugging Face: https://huggingface.co/einaux/autumi-models
 - Repositorio upstream de Tsumugi (codigo): https://github.com/anime-song/tsumugi
 - Repositorio de modelos Tsumugi: https://huggingface.co/anime-song/instrument_agnostic_amt
 - Model card de Tsumugi (revision `d4a3408e…`): https://huggingface.co/anime-song/instrument_agnostic_amt/blob/d4a3408ef1c65fc43d6c38954ac1aff89840a0b8/README.md

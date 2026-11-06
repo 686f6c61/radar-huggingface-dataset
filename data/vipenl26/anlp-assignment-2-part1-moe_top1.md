@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`vipenl26/anlp-assignment-2-part1-moe_top1` es un checkpoint de un transformer causal de PyTorch entrenado de forma personalizada para la "ANLP Assignment 2", presumiblemente una practica de la asignatura de Procesamiento de Lenguaje Natural Avanzado (ANLP). Lo publica el usuario `vipenl26` en HuggingFace y no es un modelo de proposito general ni un lanzamiento de un laboratorio: es el artefacto entregable de un ejercicio academico.
+`vipenl26/anlp-assignment-2-part1-moe_top1` es un checkpoint de un transformer causal de PyTorch entrenado de forma personalizada para la "ANLP Assignment 2", presumiblemente una practica de la asignatura de Procesamiento de Lenguaje Natural Avanzado (ANLP). Lo publica el usuario `vipenl26` en Hugging Face y no es un modelo de proposito general ni un lanzamiento de un laboratorio: es el artefacto entregable de un ejercicio academico.
 
-La model card es minima. Indica que el repositorio contiene `checkpoint.pt`, `config.json`, `tokenizer.json` y `metadata.json`, y que el checkpoint incluye pesos, estado del optimizador, configuracion del modelo y metadatos de entrenamiento. La carga debe hacerse con `src.training.load_checkpoint` del codigo fuente de la asignatura, porque la arquitectura es una clase propia (`src.part1.model.Transformer`) que no corresponde a ninguna implementacion estandar de HuggingFace Transformers.
+La model card es minima. Indica que el repositorio contiene `checkpoint.pt`, `config.json`, `tokenizer.json` y `metadata.json`, y que el checkpoint incluye pesos, estado del optimizador, configuracion del modelo y metadatos de entrenamiento. La carga debe hacerse con `src.training.load_checkpoint` del codigo fuente de la asignatura, porque la arquitectura es una clase propia (`src.part1.model.Transformer`) que no corresponde a ninguna implementacion estandar de Hugging Face Transformers.
 
 El nombre del repositorio sugiere una variante de mezcla de expertos con enrutado top-1, aunque la model card no lo confirma de forma explicita. El tamano del repositorio (0,2 GB) apunta a un modelo muy pequeno, pero no hay informacion publicada sobre numero de parametros, contexto, datos de entrenamiento ni resultados de evaluacion. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo.
 
@@ -21,7 +21,7 @@ El nombre del repositorio sugiere una variante de mezcla de expertos con enrutad
 | Licencia | no disponible |
 | Formato de pesos | `checkpoint.pt` (PyTorch pickle con pesos, estado del optimizador, config y metadatos); no se ofrecen safetensors ni GGUF |
 | Tamano del repositorio | 0,2 GB |
-| Tokenizador | `tokenizer.json` propio, no compatible de serie con tokenizadores de HuggingFace |
+| Tokenizador | `tokenizer.json` propio, no compatible de serie con tokenizadores de Hugging Face |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
 
@@ -76,13 +76,13 @@ No disponible. Para establecer una comparacion harian falta parametros totales, 
 - Licencia no declarada: sin licencia explicita, no hay autorizacion clara para uso comercial; en la practica, el modelo no deberia desplegarse en produccion.
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no se puede evaluar que sesgos contiene ni en que idioma o dominio se comporta peor.
 - Riesgo de alucinacion: alto e indeterminado. Un modelo pequeno entrenado en un contexto academico, sin ajuste por instrucciones ni alineamiento declarado, tiende a producir texto plausible pero no fiable.
-- Compatibilidad limitada: requiere el codigo fuente de la asignatura para cargarse; no es un modelo de HuggingFace Transformers y no se integra con `AutoModelForCausalLM`, `pipeline()` ni con motores de inferencia estandar.
+- Compatibilidad limitada: requiere el codigo fuente de la asignatura para cargarse; no es un modelo de Hugging Face Transformers y no se integra con `AutoModelForCausalLM`, `pipeline()` ni con motores de inferencia estandar.
 - Pesos no seguros por defecto: el formato `checkpoint.pt` es un pickle de PyTorch; cargarlo implica ejecucion de codigo, por lo que solo deberia hacerse desde una fuente de confianza y, a ser posible, con `weights_only=True` si la estructura lo permite.
 - Contexto y tokenizador opacos: sin `config.json` ni `tokenizer.json` reproducidos en la informacion disponible, no se conoce la ventana de contexto ni como se segmenta el texto.
 - Trazabilidad nula: cero descargas y cero likes, sin paper, sin blog ni repositorio publico asociado; es un artefacto de practica sin mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vipenl26/anlp-assignment-2-part1-moe_top1
+- Hugging Face: https://huggingface.co/vipenl26/anlp-assignment-2-part1-moe_top1
 - Resultados de busqueda web: no se encontro ningun enlace relevante. Las busquedas devolvieron unicamente hilos de foro sobre OpenFOAM y simulaciones CFD (cfd-online.com), sin relacion alguna con este modelo.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

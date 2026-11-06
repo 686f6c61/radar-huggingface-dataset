@@ -6,7 +6,7 @@ MedGemma 27B IT es un modelo multimodal de generacion de texto e imagenes desarr
 
 El modelo emplea la arquitectura transformer multimodal de Gemma 3, con un codificador visual SigLIP y un decodificador de lenguaje, y cuenta con 28.842.036.848 parametros totales (aproximadamente 28,8 mil millones) en formato safetensors. Su ventana de contexto hereda la de Gemma 3 27B (128 000 tokens), lo que permite procesar historiales clinicos extensos junto con imagenes en una misma conversacion. El pipeline declarado es image-text-to-text y el modelo esta pensado para uso conversacional.
 
-Es relevante ahora porque es uno de los pocos modelos multimodales medicos abiertos de gran tamano publicados por un laboratorio de primer nivel, con soporte nativo en transformers y text-generation-inference. El acceso esta restringido (gated) en HuggingFace y su licencia, Health AI Developer Foundations, impone condiciones especificas para uso comercial y clinico. La model card indica que no esta validado para diagnostico clinico directo y que requiere evaluacion adicional antes de cualquier despliegue en entornos sanitarios reales.
+Es relevante ahora porque es uno de los pocos modelos multimodales medicos abiertos de gran tamano publicados por un laboratorio de primer nivel, con soporte nativo en transformers y text-generation-inference. El acceso esta restringido (gated) en Hugging Face y su licencia, Health AI Developer Foundations, impone condiciones especificas para uso comercial y clinico. La model card indica que no esta validado para diagnostico clinico directo y que requiere evaluacion adicional antes de cualquier despliegue en entornos sanitarios reales.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ Es relevante ahora porque es uno de los pocos modelos multimodales medicos abier
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 54,9 GB |
 | Modelo base | google/gemma-3-27b-pt |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2025-07-09 |
 
 ## Arquitectura y entrenamiento
@@ -59,7 +59,7 @@ No se especifica en la informacion proporcionada el numero exacto de tokens de e
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card y los metadatos de HuggingFace facilitados no incluyen tablas con puntuaciones de MMLU, MedQA, VQA-RAD, SLAKE, HumanEval, GSM8K ni de otras pruebas comparables.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card y los metadatos de Hugging Face facilitados no incluyen tablas con puntuaciones de MMLU, MedQA, VQA-RAD, SLAKE, HumanEval, GSM8K ni de otras pruebas comparables.
 
 ## Requisitos de hardware
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Acceso |
 |---|---|---|---|---|---|
-| MedGemma 27B IT (google) | ~28,8 B | 128 000 tokens (segun modelo base) | Imagen + texto | Health AI Developer Foundations (gated) | Restringido en HuggingFace |
-| MedGemma 4B IT (google) | ~4 B (segun la familia; dato exacto no disponible aqui) | no disponible | Imagen + texto | Health AI Developer Foundations | Restringido en HuggingFace |
+| MedGemma 27B IT (google) | ~28,8 B | 128 000 tokens (segun modelo base) | Imagen + texto | Health AI Developer Foundations (gated) | Restringido en Hugging Face |
+| MedGemma 4B IT (google) | ~4 B (segun la familia; dato exacto no disponible aqui) | no disponible | Imagen + texto | Health AI Developer Foundations | Restringido en Hugging Face |
 | Qwen2.5-VL-32B-Instruct (Alibaba) | ~32 B | 128 000 tokens (segun documentacion publica del modelo) | Imagen + texto | Apache 2.0 (segun publicacion del modelo) | Abierto |
 | Llama 3.2 11B Vision (Meta) | ~11 B | 128 000 tokens (segun documentacion publica) | Imagen + texto | Llama 3.2 Community License | Restringido con condiciones |
 
@@ -88,16 +88,16 @@ El rendimiento comparado en tareas medicas no esta disponible en la informacion 
 - Riesgo de alucinacion: como cualquier modelo generativo, puede producir hallazgos, medidas o diagnosticos plausibles pero incorrectos, especialmente con imagenes de baja calidad o fuera de distribucion.
 - Sesgos de datos: el entrenamiento se apoya en datasets clinicos que pueden sobrerrepresentar determinadas poblaciones, equipos de imagen o practicas hospitalarias; el sesgo demografico y geografico no esta cuantificado en la informacion disponible.
 - Idioma: soporte limitado al ingles, lo que restringe su uso directo en entornos hispanohablantes sin traduccion o ajuste adicional.
-- Licencia: Health AI Developer Foundations impone condiciones especificas; es imprescindible revisar los terminos antes de cualquier uso comercial o clinico. El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+- Licencia: Health AI Developer Foundations impone condiciones especificas; es imprescindible revisar los terminos antes de cualquier uso comercial o clinico. El acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 - Contexto: aunque la ventana es amplia, el rendimiento en contextos muy largos con muchas imagenes no esta documentado en la informacion proporcionada.
 - Formatos de cuantizacion oficiales no confirmados: puede requerir conversion manual para despliegues con llama.cpp u otros runtimes ligeros.
 - Coste de despliegue: con casi 29 000 millones de parametros en BF16, la inferencia exige hardware de gama alta, lo que limita su uso en entornos con recursos reducidos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/google/medgemma-27b-it
+- Modelo en Hugging Face: https://huggingface.co/google/medgemma-27b-it
 - Modelo base: https://huggingface.co/google/gemma-3-27b-pt
 - Referencias arXiv citadas en la model card (IDs): arXiv:2303.15343, arXiv:2507.05201, arXiv:2405.03162, arXiv:2106.14463, arXiv:2412.03555, arXiv:2501.19393, arXiv:2009.13081, arXiv:2102.09542, arXiv:2411.15640, arXiv:2404.05590, arXiv:2501.18362
 - Acceso a las referencias: https://arxiv.org/abs/2507.05201 (informe tecnico citado en la model card)
 - Pagina de la familia Gemma: https://ai.google.dev/gemma
-- Terminos de la licencia Health AI Developer Foundations: no disponible en la informacion proporcionada (consultar la model card en HuggingFace)
+- Terminos de la licencia Health AI Developer Foundations: no disponible en la informacion proporcionada (consultar la model card en Hugging Face)

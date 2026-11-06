@@ -4,7 +4,7 @@
 
 Este repositorio contiene un checkpoint crudo de entrenamiento de un modelo de lenguaje causal basado en la arquitectura Llama, con aproximadamente 400 millones de parámetros y 24 capas. El nombre del modelo, `block-attnres-lr2e-3-llama-400M-L24-pretrain`, indica que forma parte de una serie de experimentos sobre *Attention Residuals* (AttnRes), una modificación propuesta en el artículo de arXiv 2603.15031 que sustituye la acumulación fija de conexiones residuales por una atención softmax sobre las salidas de capas anteriores. El autor, `aspect-ratio-scaling`, lo publica como material de investigación para estudiar el efecto de esta variante en el escalado de profundidad.
 
-El checkpoint se ha subido desde un directorio de entrenamiento distribuido y conserva el formato original de OLMo-core, con pasos de entrenamiento que van desde `step0` hasta `step7600`. No es un modelo exportado a HuggingFace `from_pretrained()`, por lo que no puede cargarse directamente con las utilidades estándar de Transformers. Su relevancia radica en que permite reproducir y analizar los resultados de una arquitectura alternativa a las conexiones residuales convencionales, un área de investigación activa en el diseño de transformers profundos.
+El checkpoint se ha subido desde un directorio de entrenamiento distribuido y conserva el formato original de OLMo-core, con pasos de entrenamiento que van desde `step0` hasta `step7600`. No es un modelo exportado a Hugging Face `from_pretrained()`, por lo que no puede cargarse directamente con las utilidades estándar de Transformers. Su relevancia radica en que permite reproducir y analizar los resultados de una arquitectura alternativa a las conexiones residuales convencionales, un área de investigación activa en el diseño de transformers profundos.
 
 La información disponible es muy limitada: no se especifican licencia, idiomas, ni datos de entrenamiento. El repositorio tiene un tamaño de 9,8 GB, consistente con múltiples checkpoints y estados del optimizador. Este modelo no está destinado a uso en producción, sino a fines de investigación y análisis de arquitecturas.
 
@@ -34,7 +34,7 @@ Al tratarse de un checkpoint intermedio sin evaluación publicada, no se pueden 
 - Investigación sobre arquitecturas de atención residual: el checkpoint permite reproducir los experimentos del paper AttnRes y estudiar cómo la atención sobre capas anteriores afecta la representación de estados ocultos en modelos de 400M con 24 capas.
 - Análisis de la dinámica de entrenamiento en modelos profundos: los pasos intermedios (step3000, step6000, step7600) facilitan el estudio de la evolución de la pérdida y las representaciones durante el pretraining.
 - Comparación con modelos Llama estándar de tamaño similar: al compartir la base Llama, se puede aislar el efecto de AttnRes frente a las conexiones residuales fijas.
-- Desarrollo de técnicas de conversión de checkpoints: dado que no es un formato HuggingFace, sirve como caso de prueba para herramientas de conversión de OLMo-core a formatos estándar.
+- Desarrollo de técnicas de conversión de checkpoints: dado que no es un formato Hugging Face, sirve como caso de prueba para herramientas de conversión de OLMo-core a formatos estándar.
 - Estudio de escalado de profundidad: la serie de modelos con distintas profundidades (L16, L24) publicada por el autor permite analizar cómo AttnRes modifica la ley de escalado.
 - Educación y reproducción de resultados académicos: útil para estudiantes e investigadores que deseen verificar los hallazgos del artículo de arXiv.
 
@@ -57,7 +57,7 @@ No se dispone de datos comparativos directos. El modelo es un checkpoint de inve
 ## Limitaciones y advertencias
 
 - Es un checkpoint crudo, no un modelo final: no ha sido sometido a alineación, fine-tuning ni evaluación de seguridad.
-- No es compatible con las APIs estándar de HuggingFace; requiere herramientas específicas de OLMo-core para su carga.
+- No es compatible con las APIs estándar de Hugging Face; requiere herramientas específicas de OLMo-core para su carga.
 - Licencia no especificada: el uso comercial o la redistribución pueden estar sujetos a restricciones legales no declaradas.
 - Sin información sobre sesgos o alucinaciones: al no haberse evaluado, se desconoce su comportamiento en tareas sensibles.
 - El entrenamiento solo alcanzó el paso 7600, por lo que es probable que el modelo esté subentrenado y su calidad de generación sea baja.
@@ -66,7 +66,7 @@ No se dispone de datos comparativos directos. El modelo es un checkpoint de inve
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L24-pretrain
+- Repositorio Hugging Face: https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L24-pretrain
 - Colección AttnRes del autor: https://huggingface.co/collections/aspect-ratio-scaling/attnres
 - Paper de Attention Residuals (arXiv): https://arxiv.org/abs/2603.15031
 - Repositorio relacionado (variante L16): https://huggingface.co/aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L16-pretrain

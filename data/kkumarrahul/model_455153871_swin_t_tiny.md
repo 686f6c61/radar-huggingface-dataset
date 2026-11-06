@@ -76,8 +76,8 @@ La diferencia principal radica en las modificaciones internas (atención dilatad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kkumarrahul/model_455153871_swin_t_tiny
+- Hugging Face: https://huggingface.co/kkumarrahul/model_455153871_swin_t_tiny
 - Repositorio oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer
-- Documentación de Swin en HuggingFace: https://huggingface.co/docs/transformers/model_doc/swin
-- Documentación de Swin V2 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/swinv2
+- Documentación de Swin en Hugging Face: https://huggingface.co/docs/transformers/model_doc/swin
+- Documentación de Swin V2 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/swinv2
 - Torchvision `swin_t`: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.swin_t.html

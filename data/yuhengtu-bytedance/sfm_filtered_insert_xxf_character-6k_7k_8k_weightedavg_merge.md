@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_filtered_insert_xxf_character-6k_7k_8k_weightedavg_merge` es un modelo de lenguaje de tipo decoder-only publicado en HuggingFace por la cuenta `yuhengtu-bytedance`. No se trata de un entrenamiento desde cero, sino del resultado de una fusión de pesos (model merging) de tres checkpoints intermedios de un mismo proceso de entrenamiento: los pasos globales 6000, 7000 y 8000 del experimento interno denominado `filtered_insert_xxf_character`. La fusión se ha realizado con la herramienta mergekit aplicando el método Linear con normalización de pesos.
+El modelo `sfm_filtered_insert_xxf_character-6k_7k_8k_weightedavg_merge` es un modelo de lenguaje de tipo decoder-only publicado en Hugging Face por la cuenta `yuhengtu-bytedance`. No se trata de un entrenamiento desde cero, sino del resultado de una fusión de pesos (model merging) de tres checkpoints intermedios de un mismo proceso de entrenamiento: los pasos globales 6000, 7000 y 8000 del experimento interno denominado `filtered_insert_xxf_character`. La fusión se ha realizado con la herramienta mergekit aplicando el método Linear con normalización de pesos.
 
 El resultado es un modelo de aproximadamente 6.856 millones de parámetros (unos 6,86 mil millones), etiquetado con la arquitectura `gpt_neox` dentro de la librería transformers. El repositorio ocupa 13,7 GB, coherente con pesos almacenados en precisión bfloat16 (6,856e9 × 2 bytes ≈ 13,7 GB). El pipeline declarado es `text-generation` y entre las etiquetas aparecen `conversational`, `text-generation-inference` y `endpoints_compatible`, lo que indica que está pensado para inferencia de texto y conversación.
 
@@ -31,7 +31,7 @@ El método Linear empleado es el descrito en el artículo *Model soups* (arXiv:2
 
 - Generación de texto autoregresiva: es la única capacidad confirmada explícitamente por el pipeline `text-generation`.
 - Uso conversacional: la etiqueta `conversational` indica que el modelo está orientado a diálogo multi-turno, aunque se desconoce el formato de prompt exacto.
-- Compatibilidad con Text Generation Inference (TGI) y con endpoints compatibles de HuggingFace, según las etiquetas del repositorio.
+- Compatibilidad con Text Generation Inference (TGI) y con endpoints compatibles de Hugging Face, según las etiquetas del repositorio.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-6k_7k_8k_weightedavg_merge | 6,86 mil millones | no disponible | no disponible | HuggingFace, safetensors | no disponible |
-| Pythia-6.9B (EleutherAI) | 6,9 mil millones | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | Publicado por el autor |
-| Mistral-7B-v0.1 | 7,3 mil millones | 8192 tokens | Apache 2.0 | HuggingFace, safetensors | Publicado por el autor |
-| Llama-3.1-8B | 8 mil millones | 128 000 tokens | Llama 3.1 Community License | HuggingFace, safetensors | Publicado por el autor |
+| sfm_filtered_insert_xxf_character-6k_7k_8k_weightedavg_merge | 6,86 mil millones | no disponible | no disponible | Hugging Face, safetensors | no disponible |
+| Pythia-6.9B (EleutherAI) | 6,9 mil millones | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | Publicado por el autor |
+| Mistral-7B-v0.1 | 7,3 mil millones | 8192 tokens | Apache 2.0 | Hugging Face, safetensors | Publicado por el autor |
+| Llama-3.1-8B | 8 mil millones | 128 000 tokens | Llama 3.1 Community License | Hugging Face, safetensors | Publicado por el autor |
 
 La comparación de rendimiento con estas alternativas no es posible porque el modelo analizado no publica ningún benchmark. La comparación con Pythia-6.9B es la más pertinente en términos arquitectónicos, ya que ambas usan la familia `gpt_neox` y un orden de magnitud de parámetros equivalente.
 
@@ -87,6 +87,6 @@ La comparación de rendimiento con estas alternativas no es posible porque el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_weightedavg_merge
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Artículo del método Linear / model soups: https://arxiv.org/abs/2203.05482

@@ -55,7 +55,7 @@ No se especifican en la informacion disponible el numero de tokens de entrenamie
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a `libs/cua-bench-s1` y `libs/cua-s1` del repositorio de GitHub para consultar resultados y metodologia, pero no incluye cifras en el propio repositorio de HuggingFace, por lo que no se reproducen numeros que no hayan sido verificados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a `libs/cua-bench-s1` y `libs/cua-s1` del repositorio de GitHub para consultar resultados y metodologia, pero no incluye cifras en el propio repositorio de Hugging Face, por lo que no se reproducen numeros que no hayan sido verificados.
 
 ## Requisitos de hardware
 
@@ -74,8 +74,8 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cua-s1-4b-0.2 | Modelo analizado | Adaptadores sobre base de 4B; numero exacto no disponible | No disponible | Apache-2.0 (adaptadores) | HuggingFace |
-| cua-s1-4b-0.1 | Version anterior de la misma familia, publicada por separado y no sustituida | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| cua-s1-4b-0.2 | Modelo analizado | Adaptadores sobre base de 4B; numero exacto no disponible | No disponible | Apache-2.0 (adaptadores) | Hugging Face |
+| cua-s1-4b-0.1 | Version anterior de la misma familia, publicada por separado y no sustituida | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros agentes GUI de la misma categoria (por ejemplo, familias de modelos especializados en computer use) | Alternativas conceptuales | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados sobre parametros, contexto, rendimiento o licencia de esas alternativas en la informacion proporcionada, por lo que se omite cualquier cifra.
@@ -96,9 +96,9 @@ No se dispone de datos verificados sobre parametros, contexto, rendimiento o lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cua-ai/cua-s1-4b-0.2
+- Modelo en Hugging Face: https://huggingface.co/cua-ai/cua-s1-4b-0.2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Version anterior de la familia: https://huggingface.co/cua-ai/cua-s1-4b-0.1
 - Codigo de la familia Cua-S1: https://github.com/trycua/cua/tree/main/libs/cua-s1
 - Banco de pruebas y metodologia: https://github.com/trycua/cua/tree/main/libs/cua-bench-s1

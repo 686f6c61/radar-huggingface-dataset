@@ -87,8 +87,8 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face del modelo: https://huggingface.co/AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentación de Unsloth para Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next
 - Recetas vLLM para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs
+- Repositorio Hugging Face: https://huggingface.co/CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs
 - Carpeta de workflows: https://huggingface.co/CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs/tree/main/Workflow
 - Página oficial de LTX-2.5: https://ltx.io/model/ltx-2-5
 - Documentación de LTX-2.5: https://docs.ltx.io/models/ltx-2-5

@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlx-community/ACE-Step-1.5-planner-1.7B-bf16
+- Hugging Face: https://huggingface.co/mlx-community/ACE-Step-1.5-planner-1.7B-bf16
 - Modelo base: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Repositorio de código upstream: https://github.com/ace-step/ACE-Step-1.5
 - Licencia upstream: https://github.com/ace-step/ACE-Step-1.5/blob/main/LICENSE

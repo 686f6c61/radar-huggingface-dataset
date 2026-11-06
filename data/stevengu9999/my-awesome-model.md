@@ -2,9 +2,9 @@
 
 ## Resumen
 
-my-awesome-model es un modelo publicado en HuggingFace por el usuario stevengu9999. Segun las etiquetas del repositorio, se trata de un modelo de tipo BERT con pipeline de feature-extraction, pesos en formato safetensors y compatibilidad declarada con inference endpoints. El recuento real de parametros derivado de los ficheros safetensors es de 108.310.272 (unos 108,3 millones), con un tamano de repositorio de 0,4 GB. El modelo se creo el 4 de octubre de 2026 y se actualizo nueve segundos despues, no acumula descargas ni likes y no dispone de licencia ni de idiomas declarados.
+my-awesome-model es un modelo publicado en Hugging Face por el usuario stevengu9999. Segun las etiquetas del repositorio, se trata de un modelo de tipo BERT con pipeline de feature-extraction, pesos en formato safetensors y compatibilidad declarada con inference endpoints. El recuento real de parametros derivado de los ficheros safetensors es de 108.310.272 (unos 108,3 millones), con un tamano de repositorio de 0,4 GB. El modelo se creo el 4 de octubre de 2026 y se actualizo nueve segundos despues, no acumula descargas ni likes y no dispone de licencia ni de idiomas declarados.
 
-La model card es la plantilla autogenerada por HuggingFace: todos los apartados (desarrollador, tipo de modelo, datos de entrenamiento, evaluacion, hiperparametros) figuran como "More Information Needed". Esto significa que no hay informacion verificable sobre el corpus de entrenamiento, el procedimiento de ajuste, la longitud de contexto soportada ni el rendimiento. La unica referencia tecnica que aparece es el enlace al paper de Lacoste et al. (2019) sobre el calculo de impacto ambiental, que forma parte del texto por defecto de la plantilla y no describe el modelo en si.
+La model card es la plantilla autogenerada por Hugging Face: todos los apartados (desarrollador, tipo de modelo, datos de entrenamiento, evaluacion, hiperparametros) figuran como "More Information Needed". Esto significa que no hay informacion verificable sobre el corpus de entrenamiento, el procedimiento de ajuste, la longitud de contexto soportada ni el rendimiento. La unica referencia tecnica que aparece es el enlace al paper de Lacoste et al. (2019) sobre el calculo de impacto ambiental, que forma parte del texto por defecto de la plantilla y no describe el modelo en si.
 
 Por tanto, se trata de un repositorio sin documentacion utilizable para evaluacion en produccion. Su relevancia actual es practicamente nula: sin licencia, sin idiomas declarados, sin benchmarks y sin descargas, no es posible recomendarlo para ningun caso de uso real sin una auditoria previa del checkpoint y de los derechos de uso.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia (calculada a partir de los 108,3 M de parametros, no medida): aproximadamente 0,43 GB en fp32, 0,22 GB en fp16 o bf16 y 0,11 GB en int8, sin contar activaciones ni memoria del tokenizador.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente en la practica; una NVIDIA RTX 4090, A100 o H100 queda enormemente sobredimensionada para este tamano, salvo que se despliegue a gran escala con lotes muy grandes.
 - GPU de consumo: si, cabe con holgura en cualquier GPU de consumo moderna (GTX 1650, RTX 3060, RTX 4090) e incluso en CPU para cargas de trabajo por lotes.
-- Opciones de despliegue: al estar en formato transformers y safetensors, es compatible con HuggingFace Transformers, Text Embeddings Inference (TEI), TorchServe y ONNX Runtime tras conversion. No hay ficheros GGUF ni cuantizados, por lo que llama.cpp, Ollama o LM Studio requeririan una conversion manual a partir del checkpoint original.
+- Opciones de despliegue: al estar en formato transformers y safetensors, es compatible con Hugging Face Transformers, Text Embeddings Inference (TEI), TorchServe y ONNX Runtime tras conversion. No hay ficheros GGUF ni cuantizados, por lo que llama.cpp, Ollama o LM Studio requeririan una conversion manual a partir del checkpoint original.
 - Latencia y throughput: no disponible. No hay mediciones publicadas ni datos de referencia del autor.
 
 ## Comparativa con modelos similares
@@ -68,10 +68,10 @@ La comparativa se plantea de forma provisional, dado que la unica coincidencia c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stevengu9999/my-awesome-model | 108,3 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| bert-base-multilingual-cased | 178 M | 512 tokens | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | HuggingFace |
+| stevengu9999/my-awesome-model | 108,3 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| bert-base-multilingual-cased | 178 M | 512 tokens | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks del modelo analizado, por lo que no es posible establecer una comparacion de calidad frente a estas alternativas. En terminos de licencia y documentacion, cualquiera de los tres modelos de referencia es preferible para uso en produccion.
 
@@ -84,12 +84,12 @@ No se dispone de resultados de benchmarks del modelo analizado, por lo que no es
 - Longitud de contexto desconocida: no se conoce el maximo de tokens ni el vocabulario, lo que impide dimensionar pipelines de entrada.
 - Sin garantias de procedencia: no hay informacion sobre el origen de los pesos ni sobre los datos de entrenamiento, lo que impide descartar problemas de derechos sobre el corpus.
 - Criticidad baja en el ecosistema: cero descargas y cero likes, sin evidencia de uso o validacion por parte de la comunidad.
-- Compatibilidad de endpoints: la etiqueta endpoints_compatible indica compatibilidad tecnica con la infraestructura de HuggingFace, pero no implica que el modelo funcione correctamente ni que tenga licencia adecuada.
+- Compatibilidad de endpoints: la etiqueta endpoints_compatible indica compatibilidad tecnica con la infraestructura de Hugging Face, pero no implica que el modelo funcione correctamente ni que tenga licencia adecuada.
 - Resultados de busqueda web no relacionados: las consultas realizadas devolvieron unicamente contenidos sobre uniformes escolares rusos, sin ninguna relacion con el modelo. No se ha localizado informacion tecnica adicional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stevengu9999/my-awesome-model
+- Modelo en Hugging Face: https://huggingface.co/stevengu9999/my-awesome-model
 - Paper citado en las etiquetas y en la plantilla (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de machine learning referenciada en la model card: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la busqueda web realizada.

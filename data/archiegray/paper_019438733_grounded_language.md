@@ -68,7 +68,7 @@ No disponible. No existe una categoría comparable porque el repositorio no es u
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/archiegray/paper_019438733_grounded_language)
+- [Repositorio en Hugging Face](https://huggingface.co/archiegray/paper_019438733_grounded_language)
 - [Artículo relacionado: Mind's Eye (arXiv:2210.07959)](https://arxiv.org/abs/2210.07959)
 - [PDF de Mind's Eye](https://arxiv.org/pdf/2210.07959)
 - [Google Scholar](https://scholar.google.com/)

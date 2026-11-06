@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H-attn-2kda-2mla-nope-v2 es un checkpoint de preentrenamiento de investigación publicado por el usuario nkkbr en HuggingFace. Se trata de un modelo de texto de aproximadamente mil millones de parámetros lógicos (1.005.084.424 exactos según los pesos safetensors) que forma parte de una comparación controlada de 20 arquitecturas derivadas de Kimi-K3. El objetivo no es ofrecer un asistente utilizable, sino servir de proxy a pequeña escala para estudiar decisiones de arquitectura: proporción entre atención lineal y MLA, granularidad del decaimiento, longitud de convolución y codificación posicional.
+Mini-K3-1H-attn-2kda-2mla-nope-v2 es un checkpoint de preentrenamiento de investigación publicado por el usuario nkkbr en Hugging Face. Se trata de un modelo de texto de aproximadamente mil millones de parámetros lógicos (1.005.084.424 exactos según los pesos safetensors) que forma parte de una comparación controlada de 20 arquitecturas derivadas de Kimi-K3. El objetivo no es ofrecer un asistente utilizable, sino servir de proxy a pequeña escala para estudiar decisiones de arquitectura: proporción entre atención lineal y MLA, granularidad del decaimiento, longitud de convolución y codificación posicional.
 
 La arquitectura es un decoder-only híbrido de 13 capas que combina 6 capas KDA (atención lineal con decaimiento, recurrente) y 7 capas Gated MLA (atención latente con puerta de salida y modo posicional NoPE), más un MoE tipo Stable LatentMoE con 64 expertos enrutados y 2 compartidos, top-k 4. Conserva operadores de la familia Kimi-K3 como Attention Residuals, activaciones SiTU y Quantile Balancing. Con 341.860.104 parámetros activos por token, el coste de cómputo por token es el de un modelo denso de ~342 M, mientras que la memoria de pesos corresponde a ~1.005 M.
 
@@ -86,10 +86,10 @@ La información disponible no incluye resultados de las otras 19 variantes de la
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mini-K3-1H-attn-2kda-2mla-nope-v2 | 1,005 B | 341,9 M (MoE top-4) | 8.192 | no disponible | HuggingFace (0 descargas, 0 likes) |
-| Qwen3-1.7B | 1,7 B (denso) | 1,7 B | 32.768 | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B | 1,24 B (denso) | 1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace |
-| SmolLM2-1.7B | 1,7 B (denso) | 1,7 B | 8.192 | Apache 2.0 | HuggingFace |
+| Mini-K3-1H-attn-2kda-2mla-nope-v2 | 1,005 B | 341,9 M (MoE top-4) | 8.192 | no disponible | Hugging Face (0 descargas, 0 likes) |
+| Qwen3-1.7B | 1,7 B (denso) | 1,7 B | 32.768 | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B | 1,24 B (denso) | 1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face |
+| SmolLM2-1.7B | 1,7 B (denso) | 1,7 B | 8.192 | Apache 2.0 | Hugging Face |
 
 Diferencias estructurales relevantes: el modelo de este repositorio es el único MoE del grupo y el único con atención híbrida lineal más MLA, lo que reduce el coste por token a ~342 M de parámetros activos, pero también el único sin licencia declarada, sin post-entrenamiento, sin evaluación downstream y sin soporte conocido en frameworks de serving estándar. Frente a las alternativas densas citadas, su ventana de 8.192 tokens es igual o inferior, y no compite en seguimiento de instrucciones porque nunca fue ajustado para ello.
 
@@ -111,7 +111,7 @@ Diferencias estructurales relevantes: el modelo de este repositorio es el único
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-attn-2kda-2mla-nope-v2
+- Repositorio en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-attn-2kda-2mla-nope-v2
 - Ficheros de arquitectura incluidos en el repositorio: `modeling_mini_k3.py`, `configuration_mini_k3.py`, `ARCHITECTURE.md`, `ARCHITECTURE_PACKAGE_README.md`, `VARIANT.md` (cuando está presente), `initialize_model.py`, `smoke_test.py`
 - Manifiestos JSON con revisiones de código fuente congeladas, cuotas de tokens, hashes de planificación, configuración del optimizador y hashes del conjunto de validación: incluidos en el repositorio, ruta no especificada en la información disponible
 - Métricas de entrenamiento (NLL y perplejidad): registradas en W&B y en los ficheros JSONL de la ejecución; enlace no disponible

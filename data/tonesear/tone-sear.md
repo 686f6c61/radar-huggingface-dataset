@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tone Sear es una aplicación de análisis de audio distribuida a través de HuggingFace, no un modelo de lenguaje. Recibe una canción, aísla la pista de guitarra, localiza las secciones en las que suena, las agrupa por similitud de tono, graba un extracto de cada grupo, mide las propiedades de ese tono y escribe una receta de preset para el pedal multiefectos NUX MG-300 MKII por cada tono distinto. La publica el usuario tonesear bajo el identificador tonesear/tone-sear, con licencia sin especificar y sin idiomas declarados.
+Tone Sear es una aplicación de análisis de audio distribuida a través de Hugging Face, no un modelo de lenguaje. Recibe una canción, aísla la pista de guitarra, localiza las secciones en las que suena, las agrupa por similitud de tono, graba un extracto de cada grupo, mide las propiedades de ese tono y escribe una receta de preset para el pedal multiefectos NUX MG-300 MKII por cada tono distinto. La publica el usuario tonesear bajo el identificador tonesear/tone-sear, con licencia sin especificar y sin idiomas declarados.
 
 El único componente de aprendizaje automático es Demucs, el modelo de separación de fuentes de Meta, cuyos pesos (unos 250 MB) se descargan en el primer análisis en lugar de incluirse en la imagen. Todo el procesamiento se ejecuta en la máquina del usuario: la documentación insiste en que ningún audio se sube a ningún servicio, lo que resulta apropiado para material con derechos de autor o grabaciones privadas.
 
@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 - No es un modelo de lenguaje: no genera texto, no razona, no ejecuta código y no soporta tool calling ni agentes.
 - Licencia no declarada: no se especifica si se permite el uso comercial, la modificación o la redistribución, lo que impide un uso en producción con garantías jurídicas.
-- El repositorio de HuggingFace ocupa 0,0 GB y la model card menciona archivos que no aparecen en la información disponible (run.sh, .env.example, docker-compose, docs/images/home.png), por lo que no se puede verificar que el proyecto sea desplegable tal cual desde ese repositorio. El propio README aparece truncado.
+- El repositorio de Hugging Face ocupa 0,0 GB y la model card menciona archivos que no aparecen en la información disponible (run.sh, .env.example, docker-compose, docs/images/home.png), por lo que no se puede verificar que el proyecto sea desplegable tal cual desde ese repositorio. El propio README aparece truncado.
 - Dependencia crítica de Demucs: la calidad de la separación condiciona todo el análisis posterior; artefactos de separación, mezclas densas o guitarras con efectos de modulación pueden degradar la estimación del tono.
 - El modo sin Demucs analiza la mezcla completa y el propio sistema rebaja sus puntuaciones de confianza, por lo que sus resultados deben tratarse como orientativos.
 - Salida limitada al NUX MG-300 MKII: no se documenta exportación a otros formatos de preset ni a otros procesadores.
@@ -91,7 +91,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tonesear/tone-sear
+- Modelo en Hugging Face: https://huggingface.co/tonesear/tone-sear
 - No se han encontrado papers, blogs, repositorios de código ni demos enlazados en la información disponible.
 - La búsqueda web realizada no devolvió resultados relevantes: únicamente páginas de ayuda de YouTube en japonés, ruso y chino sin relación con el proyecto.
 - La model card referencia una imagen interna (docs/images/home.png) que no es accesible desde los datos proporcionados.

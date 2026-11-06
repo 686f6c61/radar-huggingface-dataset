@@ -91,7 +91,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 | Modelo | Parametros | Contexto | Acierto conjunto (holdout 113 filas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adaptador de este repositorio (5 semillas) | Adaptador LoRA r16 sobre base de ~0,8B (nominal) | No disponible | 100,0% por semilla; media 100,0% (sd 0,0%) | No disponible | Publicado en HuggingFace, promocion no establecida |
+| Adaptador de este repositorio (5 semillas) | Adaptador LoRA r16 sobre base de ~0,8B (nominal) | No disponible | 100,0% por semilla; media 100,0% (sd 0,0%) | No disponible | Publicado en Hugging Face, promocion no establecida |
 | `unsloth/Qwen3.5-0.8B` (modelo base sin ajustar) | ~0,8B (nominal) | No disponible | 0,0% (0/113 filas, incluida validez de JSON) | No disponible | Publico como modelo base |
 | Otros adaptadores de salida estructurada de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -113,7 +113,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-triage-qwen3.5-0.8b-lora-study5
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-triage-qwen3.5-0.8b-lora-study5
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Repositorio de codigo fuente: https://github.com/szl-holdings/szl-typesafe-triage
 - Primera ejecucion medida: https://github.com/szl-holdings/szl-typesafe-triage/releases/tag/triage-lora-run1

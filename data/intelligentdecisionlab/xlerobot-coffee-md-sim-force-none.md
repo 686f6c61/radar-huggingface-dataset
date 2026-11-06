@@ -38,7 +38,7 @@ La gramatica de nombres del repositorio codifica la version de la perdida de gra
 
 - Automatizacion de una maquina de cafe en entornos simulados: el modelo puede ejecutar la secuencia completa de preparacion de cafe (colocar taza, pulsar boton, mover taza a bandeja, etc.) en un entorno virtual, util para validar algoritmos de control antes de transferirlos a un robot fisico.
 - Investigacion en aprendizaje por imitacion: sirve como punto de partida para estudiar el efecto de la nomenclatura de experimentos, la variacion de arquitectura (ACT v1 vs v2 vs v3) o la inclusion de datos de fuerza en el rendimiento de politicas roboticas.
-- Evaluacion de politicas en simulacion: al estar disponible en HuggingFace con pesos safetensors, permite reproducir experimentos y comparar metricas de exito entre diferentes configuraciones (plataforma, tarea, pasos de entrenamiento).
+- Evaluacion de politicas en simulacion: al estar disponible en Hugging Face con pesos safetensors, permite reproducir experimentos y comparar metricas de exito entre diferentes configuraciones (plataforma, tarea, pasos de entrenamiento).
 - Desarrollo de robots de bajo coste: la integracion con XLeRobot (un robot de bajo coste) permite probar politicas en hardware simulado antes de desplegarlas en el robot real, reduciendo riesgos y costes.
 - Benchmarking de metodos de control: las doce hojas cubren un espacio de tareas y plataformas que puede usarse como banco de pruebas para nuevos algoritmos de manipulacion.
 - Educacion en robotica: el repositorio documenta una taxonomia clara y reproducible, util para ensenar buenas practicas en la organizacion de experimentos de aprendizaje por refuerzo e imitacion.
@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-md-sim-force-none
+- Repositorio Hugging Face: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-md-sim-force-none
 - Repositorio original (fuente de las hojas): https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-sim-a-vision-pos
 - Documentacion de XLeRobot: https://xlerobot.readthedocs.io/en/latest/
 - GitHub de XLeRobot: https://github.com/Vector-Wangel/XLeRobot

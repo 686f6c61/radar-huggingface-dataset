@@ -36,7 +36,7 @@ Datos adicionales de procedencia declarados por el autor:
 | Rondas iterativas aplicadas | 6 de 10 |
 | Fragmento por ronda | 0,100 % de los parametros densos |
 | Semilla | 42 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 Aviso de verificacion: el recuento de parametros del safetensors coincide practicamente con el del modelo denso sin comprimir, mientras que la model card declara una fraccion de parametros de 0,4997. Es una discrepancia que conviene comprobar antes de asumir cualquier ahorro real de memoria.
 
@@ -95,8 +95,8 @@ La informacion disponible solo permite comparar con el modelo base del que deriv
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de seguridad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r06` | 8,03 mil millones segun safetensors; fraccion declarada 0,4997 | 128.000 tokens (heredado) | Llama 3.1 Community | HuggingFace, 0 descargas | AdvBench ASR 0,0600; StrongREJECT ASR 0,0250; sobre-rechazo 0,4318 |
-| `meta-llama/Llama-3.1-8B-Instruct` (base) | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community | HuggingFace, ampliamente distribuido | no disponible en la informacion proporcionada |
+| `Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r06` | 8,03 mil millones segun safetensors; fraccion declarada 0,4997 | 128.000 tokens (heredado) | Llama 3.1 Community | Hugging Face, 0 descargas | AdvBench ASR 0,0600; StrongREJECT ASR 0,0250; sobre-rechazo 0,4318 |
+| `meta-llama/Llama-3.1-8B-Instruct` (base) | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community | Hugging Face, ampliamente distribuido | no disponible en la informacion proporcionada |
 | Otras celdas de la rejilla del mismo autor | no disponible | no disponible | Llama 3.1 Community | mencionadas en la model card, sin listado | no disponible |
 
 ## Limitaciones y advertencias
@@ -114,9 +114,9 @@ La informacion disponible solo permite comparar con el modelo base del que deriv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r06
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Politica de uso aceptable de Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/USE_POLICY.md
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre el metodo SVD-LLM; los enlaces obtenidos correspondian a contenidos sin relacion (agencias de seguros). No se dispone por tanto de paper, blog tecnico, repositorio de codigo ni demo adicionales a los enlaces de HuggingFace listados arriba.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre el metodo SVD-LLM; los enlaces obtenidos correspondian a contenidos sin relacion (agencias de seguros). No se dispone por tanto de paper, blog tecnico, repositorio de codigo ni demo adicionales a los enlaces de Hugging Face listados arriba.

@@ -113,7 +113,7 @@ No se dispone de benchmarks públicos comparativos entre estas variantes NVFP4. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hamichok/Qwen3.8-27B-NVFP4-RTX5090-LMHead4
+- Repositorio Hugging Face: https://huggingface.co/hamichok/Qwen3.8-27B-NVFP4-RTX5090-LMHead4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio similar de gittensor-model-hub: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090
 - Guía de Unsloth sobre Qwen3.8 (incluye opciones NVFP4): https://unsloth.ai/docs/models/qwen3.8

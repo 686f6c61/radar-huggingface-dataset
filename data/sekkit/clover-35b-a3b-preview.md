@@ -4,7 +4,7 @@
 
 Clover-35B-A3B-Preview es el primer modelo publicado por DiffuSpace y se presenta como un modelo de lenguaje de difusión de código abierto para generación de texto. Se construye sobre el backbone de Qwen3.6-35B-A3B, un transformer MoE híbrido con Gated DeltaNet (GDN) y atención completa, del que hereda los 35B parámetros totales (34.661.350.848 según los safetensors) y aproximadamente 3B parámetros activos por token. La innovación principal es el uso de difusión por bloques (block diffusion) con decodificación LowConfidence, que sustituye la generación autorregresiva token a token por la resolución paralela de bloques de tokens enmascarados.
 
-El modelo mantiene una ventana de contexto de 128K tokens (131.072) y añade atención bidireccional por bloques mediante parámetros GDN aprendidos adicionales, preservando un prefijo causal. La implementación de HuggingFace resuelve cada bloque de 32 tokens con un umbral de confianza de 0,95, y el repositorio oficial incluye backends de decodificación especulativa propia para SGLang y llama.cpp.
+El modelo mantiene una ventana de contexto de 128K tokens (131.072) y añade atención bidireccional por bloques mediante parámetros GDN aprendidos adicionales, preservando un prefijo causal. La implementación de Hugging Face resuelve cada bloque de 32 tokens con un umbral de confianza de 0,95, y el repositorio oficial incluye backends de decodificación especulativa propia para SGLang y llama.cpp.
 
 Es relevante ahora porque explora una alternativa práctica a la generación autorregresiva en modelos MoE de escala media, con soporte declarado de tool calling y modo thinking, y porque su licencia Apache 2.0 facilita la experimentación y el uso comercial. No obstante, la información pública disponible es todavía escasa: no hay datos de benchmarks en la model card más allá de una imagen externa, no se detallan idiomas soportados y el modelo se encuentra en estado Preview.
 
@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sekkit/Clover-35B-A3B-Preview
-- Modelo en HuggingFace (organización DiffuSpace, según la model card): https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview
+- Modelo en Hugging Face: https://huggingface.co/sekkit/Clover-35B-A3B-Preview
+- Modelo en Hugging Face (organización DiffuSpace, según la model card): https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview
 - Blog de lanzamiento: https://diffuspace.ai/blog/clover-35b/
 - Repositorio de código y backends de inferencia: https://github.com/DiffuSpace/Clover-35B-A3B-Preview
 - Sitio de DiffuSpace: https://diffuspace.ai/

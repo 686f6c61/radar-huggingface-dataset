@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La do
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (finetune Riyan200324200324) | 8.2B | 32k nativo / 131k YaRN | Apache 2.0 | Repositorio de HuggingFace del autor |
-| Qwen3-8B (original) | 8.2B | 32k nativo / 131k YaRN | Apache 2.0 | HuggingFace oficial de Qwen |
-| Qwen3-4B | ~4B | 32k nativo / 131k YaRN | Apache 2.0 | HuggingFace oficial de Qwen |
-| Qwen3-14B | ~14B | 32k nativo / 131k YaRN | Apache 2.0 | HuggingFace oficial de Qwen |
+| Qwen3-8B (finetune Riyan200324200324) | 8.2B | 32k nativo / 131k YaRN | Apache 2.0 | Repositorio de Hugging Face del autor |
+| Qwen3-8B (original) | 8.2B | 32k nativo / 131k YaRN | Apache 2.0 | Hugging Face oficial de Qwen |
+| Qwen3-4B | ~4B | 32k nativo / 131k YaRN | Apache 2.0 | Hugging Face oficial de Qwen |
+| Qwen3-14B | ~14B | 32k nativo / 131k YaRN | Apache 2.0 | Hugging Face oficial de Qwen |
 
 No se dispone de resultados de benchmarks comparativos entre estos modelos en la informacion proporcionada.
 

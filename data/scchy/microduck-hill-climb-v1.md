@@ -71,6 +71,6 @@ No disponible. La información proporcionada no incluye otras políticas de micr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SccHy/microduck-hill-climb-v1
+- Modelo en Hugging Face: https://huggingface.co/SccHy/microduck-hill-climb-v1
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas (`docs/policy-manifest.md` en el repositorio del daemon): no se proporciona URL directa en la información disponible.

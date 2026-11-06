@@ -65,7 +65,7 @@ La comparativa más directa es con el modelo base original y con alternativas de
 - El repo tiene solo 21 descargas y 0 likes; es un proyecto de autor individual con soporte comunitario limitado.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/staccs/lecore-qwen35-9b-assimilated
+- Modelo en Hugging Face: https://huggingface.co/staccs/lecore-qwen35-9b-assimilated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repo relacionado (DeepSeek-V4-Flash HRR): https://huggingface.co/staccs/lecore-deepseek-v4-flash-hrr
 - Framework leCore: mencionado como versión 0.2.11, sin enlace directo en la información proporcionada

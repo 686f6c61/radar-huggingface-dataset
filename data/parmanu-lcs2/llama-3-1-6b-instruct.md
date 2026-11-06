@@ -6,7 +6,7 @@ Llama-3.1-6B-Instruct es un modelo de lenguaje de 6.030.118.912 parametros publi
 
 Tras la poda, el autor aplico un fine-tuning de recuperacion con LoRA sobre 2000 muestras de SlimOrca, con los adaptadores ya fusionados en los pesos base. El objetivo declarado es reducir el coste de inferencia y despliegue manteniendo el comportamiento conversacional del modelo original, un caso de uso tipico en investigacion sobre compresion de LLM y en escenarios con VRAM limitada.
 
-El modelo se publico el 25 de septiembre de 2026 y, en el momento de redactar esta ficha, registra 0 descargas y 0 likes en HuggingFace. No se han publicado resultados de benchmarks, licencia explicita, idiomas soportados ni versiones cuantizadas, por lo que su evaluacion en produccion requiere validacion propia.
+El modelo se publico el 25 de septiembre de 2026 y, en el momento de redactar esta ficha, registra 0 descargas y 0 likes en Hugging Face. No se han publicado resultados de benchmarks, licencia explicita, idiomas soportados ni versiones cuantizadas, por lo que su evaluacion en produccion requiere validacion propia.
 
 ## Especificaciones tecnicas
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-6B-Instruct (este modelo) | 6,03B | no disponible (fine-tuning de recuperacion a 1024 tokens) | no disponible | HuggingFace, safetensors |
-| Meta-Llama-3.1-8B-Instruct | 8B | no disponible en la informacion recogida | no disponible en la informacion recogida | HuggingFace |
-| parmanu-lcs2/Qwen3-6B | 6B segun la denominacion del repositorio | no disponible | no disponible | HuggingFace |
+| Llama-3.1-6B-Instruct (este modelo) | 6,03B | no disponible (fine-tuning de recuperacion a 1024 tokens) | no disponible | Hugging Face, safetensors |
+| Meta-Llama-3.1-8B-Instruct | 8B | no disponible en la informacion recogida | no disponible en la informacion recogida | Hugging Face |
+| parmanu-lcs2/Qwen3-6B | 6B segun la denominacion del repositorio | no disponible | no disponible | Hugging Face |
 
 La comparativa directa con alternativas de la misma categoria no puede completarse con datos verificados: no hay benchmarks publicados de este modelo ni cifras de contexto o licencia de las alternativas en la informacion disponible. La diferencia objetiva y verificable frente al modelo original es el recuento de parametros (6,03B frente a 8B, un 24,6% menos), con el resto de dimensiones pendientes de medicion.
 
@@ -87,7 +87,7 @@ La comparativa directa con alternativas de la misma categoria no puede completar
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/parmanu-lcs2/Llama-3.1-6B-Instruct)
+- [Modelo en Hugging Face](https://huggingface.co/parmanu-lcs2/Llama-3.1-6B-Instruct)
 - [Paper de SNIPER (arXiv:2608.12953)](https://arxiv.org/abs/2608.12953)
 - [Parmanu @ LCS2 IIT Delhi (sitio del proyecto)](https://parmanu.lcs2.in/)
 - [Organizacion Parmanu en GitHub](https://github.com/parmanu-lcs2)

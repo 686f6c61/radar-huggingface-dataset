@@ -33,7 +33,7 @@ La innovacion principal es la destilacion estructural del patron de razonamiento
 - Modo de pensamiento preservado (thinking=1), sin desactivacion silenciosa.
 - Autonomia mejorada en entornos de agente: espera activa de respuestas de herramientas, lectura de salidas, autocorreccion de errores y generacion automatica de artefactos (por ejemplo, README).
 - Tool calling estable en comparacion con otras cuantizaciones del mismo modelo base, segun pruebas de la comunidad.
-- El pipeline declarado en HuggingFace es image-text-to-text, aunque la model card describe el resultado final como text-only; esta discrepancia no esta resuelta en la documentacion disponible.
+- El pipeline declarado en Hugging Face es image-text-to-text, aunque la model card describe el resultado final como text-only; esta discrepancia no esta resuelta en la documentacion disponible.
 
 ## Casos de uso
 
@@ -67,9 +67,9 @@ Segun la ficha de openmodelmap.com, el modelo obtiene una puntuacion MMLU de 88.
 
 | Modelo | Parametros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled | 27,8 B | No disponible | 88 | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen/Qwen3.5-27B (base) | 27,8 B | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2 | 27,8 B (estimado) | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled | 27,8 B | No disponible | 88 | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen/Qwen3.5-27B (base) | 27,8 B | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2 | 27,8 B (estimado) | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo autor y al modelo base, ya que no se dispone de datos de modelos competidores de tamano equivalente en la informacion proporcionada. La version v2 existe pero no se han publicado sus especificaciones ni benchmarks en las fuentes consultadas.
 
@@ -78,15 +78,15 @@ La comparativa se limita a las variantes del mismo autor y al modelo base, ya qu
 - Sesgos conocidos: no se han publicado evaluaciones de sesgo; al estar entrenado principalmente con datos de razonamiento en ingles y chino, puede presentar sesgos culturales o linguisticos en otros idiomas.
 - Riesgo de alucinacion: no hay evaluaciones publicadas de fiabilidad factual; como todo modelo de razonamiento destilado, puede producir cadenas de pensamiento coherentes pero incorrectas.
 - Limitaciones de idioma: solo soporta ingles y chino de forma declarada; el rendimiento en otros idiomas no esta garantizado.
-- Discrepancia de pipeline: el tag de HuggingFace indica image-text-to-text, pero la model card describe el modelo final como text-only. No esta claro si el modelo acepta entradas multimodales; se recomienda verificar antes de usarlo en tareas de vision.
+- Discrepancia de pipeline: el tag de Hugging Face indica image-text-to-text, pero la model card describe el modelo final como text-only. No esta claro si el modelo acepta entradas multimodales; se recomienda verificar antes de usarlo en tareas de vision.
 - Longitud de contexto no documentada: no se ha publicado el tamano de ventana de contexto, lo que dificulta planificar su uso en tareas de recuperacion o documentos largos.
 - Rendimiento en produccion sin validar: las pruebas de la comunidad son anecdoticas (un usuario, una GPU) y no constituyen una evaluacion sistematica de estabilidad o latencia.
 - Dependencia de la comunidad para cuantizaciones: no hay cuantizaciones oficiales publicadas; habra que esperar a que la comunidad genere versiones GGUF o AWQ para despliegue eficiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled
-- Version v2 en HuggingFace: https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2
+- Modelo en Hugging Face: https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled
+- Version v2 en Hugging Face: https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-v2
 - Modelo en ModelScope: https://www.modelscope.cn/models/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled
 - Ficha en OpenModelMap: https://openmodelmap.com/model/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled
 - Repositorio GitHub con guia de fine-tuning: https://github.com/R6410418/Jackrong-llm-finetuning-guide.git

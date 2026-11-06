@@ -87,7 +87,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/araysuter/Ripple-65B-Preview-MLX-mixed-4bit
+- Modelo en Hugging Face: https://huggingface.co/araysuter/Ripple-65B-Preview-MLX-mixed-4bit
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Draft DFlash2: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
 - Herramientas de conversión, pines de código fuente y pruebas: https://github.com/araysuter/TensorFold/tree/896c80b6e99de46b6af2df385f9dbe0dc4fa546c/tools/ripple

@@ -6,7 +6,7 @@ LFMputer-1.7B es un modelo experimental de generación de texto creado por el de
 
 La arquitectura completa consta de 39 capas: 15 capas de máquina (control del ordenador, 11 bloques de cómputo, RAM y ficheros, puente de memoria y analítica) preceden a las 24 capas de lenguaje preentrenadas de LFM3. Durante la generación de texto las capas de máquina son transparentes; durante la ejecución del "ordenador", el estado computacional avanza sin pasar por el backbone de lenguaje. Es un proyecto de carácter investigador, con pocas descargas (445) y muy reciente, relevante como exploración de la línea "model-as-computer" iniciada por proyectos como Qwenputer.
 
-Requiere código personalizado (`custom_code`) y un runtime propio incluido en el repositorio, por lo que no funciona con los pipelines estándar de HuggingFace. El modelo base LFM3 de LiquidAI emplea arquitecturas híbridas con capas de atención y convolución corta, y este fine-tune conserva esa organización en las capas de lenguaje.
+Requiere código personalizado (`custom_code`) y un runtime propio incluido en el repositorio, por lo que no funciona con los pipelines estándar de Hugging Face. El modelo base LFM3 de LiquidAI emplea arquitecturas híbridas con capas de atención y convolución corta, y este fine-tune conserva esa organización en las capas de lenguaje.
 
 ## Especificaciones tecnicas
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFMputer-1.7B | 1,75 B | Híbrido máquina+LFM3 (39 capas) | no disponible | lfm1.0 (other) | HuggingFace, runtime propio |
-| LiquidAI/LFM3-1.7B (modelo base) | ~1,7 B | Híbrido atención/convolución (LFM3) | no disponible | Licencia LiquidAI (lfm) | HuggingFace |
-| Qwenputer (inspiración, base Qwen3.5-4B) | ~4 B | Decodificador con ordenador integrado | no disponible | no disponible | HuggingFace (divagr1925) |
+| LFMputer-1.7B | 1,75 B | Híbrido máquina+LFM3 (39 capas) | no disponible | lfm1.0 (other) | Hugging Face, runtime propio |
+| LiquidAI/LFM3-1.7B (modelo base) | ~1,7 B | Híbrido atención/convolución (LFM3) | no disponible | Licencia LiquidAI (lfm) | Hugging Face |
+| Qwenputer (inspiración, base Qwen3.5-4B) | ~4 B | Decodificador con ordenador integrado | no disponible | no disponible | Hugging Face (divagr1925) |
 
 Comparado con su modelo base, LFMputer añade las 15 capas de máquina y memoria explícita a cambio de un mayor consumo de memoria y la dependencia de un runtime no estándar. Frente a Qwen3.5-4B-Qwenputer, LFMputer es más pequeño y usa un backbone LFM3 híbrido en lugar de un transformer denso convencional.
 
@@ -82,7 +82,7 @@ Comparado con su modelo base, LFMputer añade las 15 capas de máquina y memoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suayptalha/LFMputer-1.7B
+- Modelo en Hugging Face: https://huggingface.co/suayptalha/LFMputer-1.7B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Inspiración del proyecto (Qwenputer): https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
 - Configuración del decodificador: https://huggingface.co/suayptalha/LFMputer-1.7B/blob/main/decoder_config.json

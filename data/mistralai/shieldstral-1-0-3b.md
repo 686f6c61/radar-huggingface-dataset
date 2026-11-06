@@ -15,7 +15,7 @@ El modelo destaca por su tamaño compacto (3B parámetros) y su licencia Apache-
 | Parametros activos | No aplicable (modelo denso, no MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (pesos en safetensors, compatible con vLLM) |
-| Idiomas soportados | en, fr, es, de, it, pt, nl, zh, ja, ko, ar, ru (segun tags de HuggingFace) |
+| Idiomas soportados | en, fr, es, de, it, pt, nl, zh, ja, ko, ar, ru (segun tags de Hugging Face) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 - VRAM estimada: 16 GB para inferencia, segun la ficha de AI/TLDR. Esto permite ejecutar el modelo en GPUs de consumo como la RTX 4090 (24 GB) o la RTX 4080 (16 GB).
 - GPUs recomendadas: NVIDIA RTX 4090, RTX 4080, A100 (40 GB), L4 o similares con al menos 16 GB de VRAM.
 - Compatibilidad con GPUs de consumo: si, siempre que se disponga de 16 GB de VRAM. En GPUs con menos memoria, se podria recurrir a cuantizacion, aunque no se han publicado pesos cuantizados oficiales.
-- Opciones de despliegue: el modelo esta optimizado para vLLM, como se indica en los tags de HuggingFace. Tambien es compatible con el ecosistema safetensors, por lo que podria desplegarse con TGI u otros frameworks que soporten este formato.
+- Opciones de despliegue: el modelo esta optimizado para vLLM, como se indica en los tags de Hugging Face. Tambien es compatible con el ecosistema safetensors, por lo que podria desplegarse con TGI u otros frameworks que soporten este formato.
 - Latencia y throughput: no se han publicado datos especificos. Dado su tamano de 3B y su salida de un unico token, se espera una latencia muy baja en inferencia, adecuada para filtrado en tiempo real.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ Nota: los datos de Llama Guard 3 y WildGuard son de conocimiento general y no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mistralai/Shieldstral-1.0-3B
+- Hugging Face: https://huggingface.co/mistralai/Shieldstral-1.0-3B
 - Documentacion oficial: https://docs.mistral.ai/models/shieldstral-1-0
 - Blog de Mistral AI: https://mistral.ai/news/shieldstral/
 - Ficha en AI/TLDR: https://ai-tldr.dev/models/shieldstral-1-0-3b/

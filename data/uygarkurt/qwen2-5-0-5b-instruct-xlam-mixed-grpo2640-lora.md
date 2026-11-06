@@ -77,9 +77,9 @@ Notas del autor sobre la metodología: xLAM ETC es exactitud exacta de llamada a
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (Qwen2.5-0.5B-Instruct + LoRA GRPO) | 0,5 mil millones | 32.768 tokens (heredado del base) | Tool calling estructurado y abstención | No disponible | Adaptador PEFT; requiere el modelo base |
-| Qwen2.5-0.5B-Instruct (base) | 0,5 mil millones | 32.768 tokens | Instrucciones generales, sin especialización en herramientas | Apache 2.0 (modelo base) | Pesos completos en HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5 mil millones | 32.768 tokens | Instrucciones generales, mayor capacidad de razonamiento | Apache 2.0 (modelo base) | Pesos completos en HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,7 mil millones | No disponible en esta ficha | Instrucciones generales en modelo pequeño | Apache 2.0 | Pesos completos en HuggingFace |
+| Qwen2.5-0.5B-Instruct (base) | 0,5 mil millones | 32.768 tokens | Instrucciones generales, sin especialización en herramientas | Apache 2.0 (modelo base) | Pesos completos en Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5 mil millones | 32.768 tokens | Instrucciones generales, mayor capacidad de razonamiento | Apache 2.0 (modelo base) | Pesos completos en Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,7 mil millones | No disponible en esta ficha | Instrucciones generales en modelo pequeño | Apache 2.0 | Pesos completos en Hugging Face |
 
 El adaptador solo supera al modelo base en las métricas específicas de tool calling y abstención; en MMLU queda ligeramente por debajo (41,80 % frente a 42,04 %). Frente a modelos de 1,5 a 1,7 mil millones de parámetros no hay comparación directa publicada en la información disponible, y en tareas de razonamiento general es esperable que un modelo de mayor tamaño rinda mejor, aunque no se aportan cifras que lo confirmen.
 
@@ -97,7 +97,7 @@ El adaptador solo supera al modelo base en las métricas específicas de tool ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo2640-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo2640-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Repositorio de entrenamiento (Post-Training Lab): https://github.com/uygarkurt/post-training-lab

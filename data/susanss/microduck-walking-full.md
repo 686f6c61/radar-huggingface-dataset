@@ -80,7 +80,7 @@ No se dispone de datos publicados de otras políticas de locomoción comparables
 
 | Modelo | Tipo | Observación / acción | Frecuencia | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `SusanSS/microduck-walking-full` | Política RL para microduck, slot `walk` | 61 / 14 | 50 Hz | ONNX + manifest esquema 2 | no disponible | HuggingFace, 0 descargas, 0 likes |
+| `SusanSS/microduck-walking-full` | Política RL para microduck, slot `walk` | 61 / 14 | 50 Hz | ONNX + manifest esquema 2 | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Otras políticas del ecosistema microduck | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Políticas de locomoción de otros cuadrúpedos | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ No se dispone de datos publicados de otras políticas de locomoción comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SusanSS/microduck-walking-full
+- Hugging Face: https://huggingface.co/SusanSS/microduck-walking-full
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento declarado en la model card: `pollen-robotics/microduck_rl`, rama `main`, commit `9aaec6db4` (no se proporciona URL directa en la información disponible)
 - Documentación del manifiesto de políticas (`docs/policy-manifest.md` en el repositorio del daemon): no se proporciona URL directa en la información disponible

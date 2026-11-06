@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `OP12138/qwen3-4b-opsd-frozent` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario OP12138, con una arquitectura de generación de texto basada en `transformers`. El nombre del repositorio sugiere que parte del modelo base Qwen3-4B, aunque la model card no confirma explícitamente cuál es el modelo original (aparece como `None`). El modelo tiene 4.022.468.096 parámetros totales, lo que lo sitúa en la gama de los 4 mil millones de parámetros, y se distribuye en formato `safetensors` con un peso total de 8,8 GB.
+El modelo `OP12138/qwen3-4b-opsd-frozent` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario OP12138, con una arquitectura de generación de texto basada en `transformers`. El nombre del repositorio sugiere que parte del modelo base Qwen3-4B, aunque la model card no confirma explícitamente cuál es el modelo original (aparece como `None`). El modelo tiene 4.022.468.096 parámetros totales, lo que lo sitúa en la gama de los 4 mil millones de parámetros, y se distribuye en formato `safetensors` con un peso total de 8,8 GB.
 
 La model card indica que fue entrenado utilizando la librería TRL (Transformer Reinforcement Learning) y menciona la técnica "IASD", aunque no se detalla su significado ni se proporcionan datos sobre el dataset de entrenamiento, la duración, ni las configuraciones de hiperparámetros. No se incluyen métricas de evaluación, ni información sobre licencia, idiomas soportados o contexto máximo. Se trata de un modelo recién publicado (agosto de 2026) con cero descargas y sin likes, por lo que su fiabilidad y rendimiento no han sido verificados por la comunidad.
 

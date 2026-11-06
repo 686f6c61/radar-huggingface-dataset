@@ -106,7 +106,7 @@ La diferencia clave frente a la conversión oficial de OpenVINO es que aquella p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/Qwen3-4B-Base-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/Qwen3-4B-Base-int8-ov
 - Construccion hermana en INT4: https://huggingface.co/blaj/Qwen3-4B-Base-int4-ov
 - Repositorio de borradores DFlash (datos de punto de cruce 4B / 8B / 9B): https://huggingface.co/blaj/Qwen3-DFlash-drafters-ov
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-4B-Base

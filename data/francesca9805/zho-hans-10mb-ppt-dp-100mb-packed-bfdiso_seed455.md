@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino supervisado (SFT) del modelo monolingüe `goldfish-models/zho_hans_10mb`, orientado a chino simplificado y publicado en HuggingFace por el usuario francesca9805, vinculado al proyecto de Weights & Biases "new-tokenizers" de la Universidad de Groningen. Se trata de un modelo extremadamente pequeño: 39.087.104 parámetros (unos 39 millones), con pesos en safetensors y un repositorio de 0,1 GB, lo que lo sitúa muy por debajo incluso de GPT-2 small.
+El modelo `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino supervisado (SFT) del modelo monolingüe `goldfish-models/zho_hans_10mb`, orientado a chino simplificado y publicado en Hugging Face por el usuario francesca9805, vinculado al proyecto de Weights & Biases "new-tokenizers" de la Universidad de Groningen. Se trata de un modelo extremadamente pequeño: 39.087.104 parámetros (unos 39 millones), con pesos en safetensors y un repositorio de 0,1 GB, lo que lo sitúa muy por debajo incluso de GPT-2 small.
 
 El problema que aborda no es el de un asistente de propósito general, sino el de un artefacto de investigación: el nombre del modelo sugiere un experimento controlado sobre tokenización, volumen de datos (10 MB de corpus, 100 MB empaquetados), posible manipulación del dataset ("Dp", posiblemente *data poisoning*) y reproducibilidad por semilla (seed455). Se entrenó con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1, y admite el pipeline `text-generation` con plantilla de chat.
 
@@ -40,7 +40,7 @@ El entrenamiento se realizó mediante *supervised fine-tuning* (SFT) con TRL 0.2
 - Uso como agente: no disponible; no se documenta soporte de razonamiento multi-paso ni de bucles de herramientas.
 - Multilingüismo: no documentado; el modelo base es monolingüe de chino simplificado.
 - Capacidades especiales (visión, audio, *thinking mode*): no disponible.
-- Compatibilidad de despliegue: la ficha incluye el tag `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI en HuggingFace Endpoints.
+- Compatibilidad de despliegue: la ficha incluye el tag `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI en Hugging Face Endpoints.
 - Reproducibilidad: el nombre incluye `seed455`, lo que apunta a un experimento con semilla fija reproducible.
 
 ## Casos de uso
@@ -74,17 +74,17 @@ No se han publicado tarjetas de evaluación, métricas de pérdida ni curvas de 
 - RAM para inferencia en CPU: suficiente con 1 GB, incluyendo el intérprete de Python y las dependencias.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria. Funciona con solvencia en RTX 3060, RTX 4060, RTX 4090, T4, L4, A10, A100 y H100; el modelo está tan sobredimensionado en hardware que la latencia vendrá dominada por la sobrecarga de lanzamiento de *kernels*.
 - Cabe en GPU consumer: sí, en cualquier GPU consumer moderna e incluso en iGPU con memoria compartida y en CPU pura.
-- Opciones de despliegue: `transformers` con `pipeline("text-generation")`, servidor TGI (los tags `text-generation-inference` y `endpoints_compatible` lo indican), HuggingFace Inference Endpoints. Para Ollama o llama.cpp sería necesaria una conversión manual a GGUF, no publicada.
+- Opciones de despliegue: `transformers` con `pipeline("text-generation")`, servidor TGI (los tags `text-generation-inference` y `endpoints_compatible` lo indican), Hugging Face Inference Endpoints. Para Ollama o llama.cpp sería necesaria una conversión manual a GGUF, no publicada.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia de primer token.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` | 39,1 M | no disponible | no disponible | HuggingFace, safetensors | Ajuste SFT con TRL sobre corpus de 10 MB en chino |
-| `goldfish-models/zho_hans_10mb` | no disponible | no disponible | no disponible en la información consultada | HuggingFace | Modelo base monolingüe de chino simplificado de la familia Goldfish |
-| GPT-2 small (`openai-community/gpt2`) | 124 M | 1.024 tokens | MIT (según la model card pública) | HuggingFace, ampliamente distribuido | Referencia clásica de modelo causal pequeño; aproximadamente 3 veces más parámetros |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 (según la model card pública) | HuggingFace | Alternativa moderna con soporte multilingüe y contexto largo; no es comparable en coste de inferencia |
+| `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` | 39,1 M | no disponible | no disponible | Hugging Face, safetensors | Ajuste SFT con TRL sobre corpus de 10 MB en chino |
+| `goldfish-models/zho_hans_10mb` | no disponible | no disponible | no disponible en la información consultada | Hugging Face | Modelo base monolingüe de chino simplificado de la familia Goldfish |
+| GPT-2 small (`openai-community/gpt2`) | 124 M | 1.024 tokens | MIT (según la model card pública) | Hugging Face, ampliamente distribuido | Referencia clásica de modelo causal pequeño; aproximadamente 3 veces más parámetros |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 (según la model card pública) | Hugging Face | Alternativa moderna con soporte multilingüe y contexto largo; no es comparable en coste de inferencia |
 
 La comparación directa más relevante es con su propio modelo base, del que solo se diferencia por el ajuste SFT y por el pipeline de datos empleado. Frente a GPT-2 small o Qwen2.5-0.5B, este checkpoint es un orden de magnitud más pequeño y no está pensado para competir en calidad de generación.
 
@@ -102,7 +102,7 @@ La comparación directa más relevante es con su propio modelo base, del que sol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/gjalrfgx

@@ -87,7 +87,7 @@ La diferencia practica frente al modelo base es que este repositorio permite int
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NiklasTUM/llama3.3-70b-instruct-honesty-steering-vectors-self-report-experimental
+- Repositorio en Hugging Face: https://huggingface.co/NiklasTUM/llama3.3-70b-instruct-honesty-steering-vectors-self-report-experimental
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Artefactos equivalentes para Qwen3.6-27B: https://huggingface.co/NiklasTUM/qwen3.6-27b-honesty-steering-vectors-self-report-experimental
 - Agregados StTP de una sola capa (gemma-3-27b-it, Qwen3.5-27B, Nemotron-120B): https://huggingface.co/NiklasTUM/aletheia-tararesearch-sttp

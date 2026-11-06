@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks ni de resultados empíricos que permitan un
 
 ## Enlaces
 
-- Ficha HuggingFace del artefacto: https://huggingface.co/inference4j/smollm3-3b
+- Ficha Hugging Face del artefacto: https://huggingface.co/inference4j/smollm3-3b
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Repositorio de onnxruntime-genai: https://github.com/microsoft/onnxruntime-genai
 - Repositorio de inference4j: https://github.com/inference4j/inference4j

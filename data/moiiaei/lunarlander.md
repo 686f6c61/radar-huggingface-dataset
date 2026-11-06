@@ -4,7 +4,7 @@
 
 El modelo `moIIaei/LunarLander` es un agente de aprendizaje por refuerzo (reinforcement learning, RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería stable-baselines3. Está diseñado para resolver el entorno LunarLander-v3 de Gymnasium, donde un agente debe aprender a controlar una nave para aterrizar de forma segura en una plataforma. El repositorio contiene el modelo entrenado y una model card que reporta una recompensa media de 209.35 ± 77.84 en el entorno, lo que indica un nivel de rendimiento aceptable pero no perfecto (la recompensa máxima posible es 200, aunque se supera por la varianza).
 
-No se proporcionan detalles sobre la arquitectura interna, el número de parámetros, la licencia o el idioma. Es un modelo de RL clásico, no un modelo de lenguaje, y su utilidad se limita al entorno LunarLander-v3. Aunque su autor no ha publicado más información, el uso de stable-baselines3 implica que se trata de una red neuronal feedforward (MLP) con política y función de valor, típica de PPO. El modelo está disponible en HuggingFace, pero con cero descargas y cero likes, lo que sugiere que es un proyecto personal o educativo.
+No se proporcionan detalles sobre la arquitectura interna, el número de parámetros, la licencia o el idioma. Es un modelo de RL clásico, no un modelo de lenguaje, y su utilidad se limita al entorno LunarLander-v3. Aunque su autor no ha publicado más información, el uso de stable-baselines3 implica que se trata de una red neuronal feedforward (MLP) con política y función de valor, típica de PPO. El modelo está disponible en Hugging Face, pero con cero descargas y cero likes, lo que sugiere que es un proyecto personal o educativo.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ No se proporcionan detalles sobre la arquitectura interna, el número de paráme
 
 ## Arquitectura y entrenamiento
 
-El modelo usa el algoritmo PPO de stable-baselines3, una técnica de optimización de política que combina ventajas de métodos actor-crítico con una función de pérdida recortada para estabilizar el entrenamiento. La red neuronal es un perceptrón multicapa (MLP) con capas ocultas no especificadas en la documentación. El entrenamiento se realizó sobre el entorno LunarLander-v3 de Gymnasium, que proporciona observaciones continuas (posición, velocidad, ángulo, contactos) y acciones discretas (no hacer nada, propulsor principal, propulsor izquierdo, propulsor derecho). No se indica el número de timesteps, la función de recompensa, ni si se usaron técnicas adicionales como normalización de observaciones o entropía adaptativa. El modelo se guardó con la librería `huggingface_sb3` para su carga desde HuggingFace.
+El modelo usa el algoritmo PPO de stable-baselines3, una técnica de optimización de política que combina ventajas de métodos actor-crítico con una función de pérdida recortada para estabilizar el entrenamiento. La red neuronal es un perceptrón multicapa (MLP) con capas ocultas no especificadas en la documentación. El entrenamiento se realizó sobre el entorno LunarLander-v3 de Gymnasium, que proporciona observaciones continuas (posición, velocidad, ángulo, contactos) y acciones discretas (no hacer nada, propulsor principal, propulsor izquierdo, propulsor derecho). No se indica el número de timesteps, la función de recompensa, ni si se usaron técnicas adicionales como normalización de observaciones o entropía adaptativa. El modelo se guardó con la librería `huggingface_sb3` para su carga desde Hugging Face.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ El modelo usa el algoritmo PPO de stable-baselines3, una técnica de optimizaci�
 - Comparación de algoritmos: se puede comparar el rendimiento de este agente PPO con otros modelos (por ejemplo, DQN, SAC, A2C) en el mismo entorno para evaluar diferencias de recompensa media.
 - Benchmark de entornos: sirve como referencia para probar el entorno LunarLander-v3 en nuevas versiones de Gymnasium o en sistemas con diferentes versiones de librerías.
 - Simulación de control de aterrizaje: aunque el entorno es una simplificación, el modelo puede usarse en demos de control autónomo de vehículos espaciales en un contexto educativo.
-- Prueba de integración de `huggingface_sb3`: el repositorio puede usarse como plantilla para guardar y compartir modelos RL en HuggingFace, probando la carga desde el hub.
+- Prueba de integración de `huggingface_sb3`: el repositorio puede usarse como plantilla para guardar y compartir modelos RL en Hugging Face, probando la carga desde el hub.
 - Análisis de robustez: se puede ejecutar el modelo múltiples veces y analizar la distribución de recompensas (media 209, desviación 77) para entender la variabilidad del entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se dispone de información sobre otros modelos de LunarLander en el repositor
 
 | Modelo / Proyecto | Algoritmo | Recompensa reportada | Licencia | Disponibilidad |
 |-------------------|-----------|----------------------|----------|----------------|
-| moIIaei/LunarLander | PPO | 209.35 ± 77.84 | no disponible | HuggingFace |
+| moIIaei/LunarLander | PPO | 209.35 ± 77.84 | no disponible | Hugging Face |
 | Sapphire14S/Lunar-Lander-AI (GitHub) | PPO | no disponible | no disponible | GitHub |
 | swyam-siddharth/LunarLander-AI (GitHub) | Algoritmos genéticos + CMA-ES | no disponible | no disponible | GitHub |
 
@@ -82,7 +82,7 @@ No hay datos suficientes para una comparación cuantitativa.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/moIIaei/LunarLander)
+- [Modelo en Hugging Face](https://huggingface.co/moIIaei/LunarLander)
 - [Proyecto Lunar-Lander-AI (GitHub, PPO)](https://github.com/Sapphire14S/Lunar-Lander-AI)
 - [Proyecto LunarLander-AI (GitHub, CMA-ES)](https://github.com/swyam-siddharth/LunarLander-AI)
-- [Demo de simulación de Lunar Lander (HuggingFace Space)](https://huggingface.co/spaces/piramid777/lunar-lander-ai-simulation)
+- [Demo de simulación de Lunar Lander (Hugging Face Space)](https://huggingface.co/spaces/piramid777/lunar-lander-ai-simulation)

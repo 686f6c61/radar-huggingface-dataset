@@ -74,9 +74,9 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-irelab-v2-choose-link01 | 0,8 B (base) + LoRA | no disponible | 100 % acierto en prueba; 100 % exito en 20 episodios | Apache 2.0 | HuggingFace (IRELAB) |
+| connectailab-rl-irelab-v2-choose-link01 | 0,8 B (base) + LoRA | no disponible | 100 % acierto en prueba; 100 % exito en 20 episodios | Apache 2.0 | Hugging Face (IRELAB) |
 | Cerebro PPO (`brain.json`) | no disponible (politica del simulador) | no aplica | 100 % acierto; 100 % exito; 13,7 s | no disponible | Generado en el simulador web |
-| Qwen3.5-0.8B sin adaptador | 0,8 B | no disponible | 1,4 % acierto; 0 % exito | no disponible | HuggingFace (Qwen) |
+| Qwen3.5-0.8B sin adaptador | 0,8 B | no disponible | 1,4 % acierto; 0 % exito | no disponible | Hugging Face (Qwen) |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IRELAB/connectailab-rl-irelab-v2-choose-link01
+- Modelo en Hugging Face: https://huggingface.co/IRELAB/connectailab-rl-irelab-v2-choose-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo de entrenamiento (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

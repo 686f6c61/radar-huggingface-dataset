@@ -55,6 +55,6 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/azherali/Riazi-8B-GRPO-Lora
+- Hugging Face: https://huggingface.co/azherali/Riazi-8B-GRPO-Lora
 - Modelo relacionado (sin GRPO): https://huggingface.co/azherali/Riazi-8B-Lora
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

@@ -72,6 +72,6 @@ No se dispone de modelos comparables en la informacion proporcionada. ALCOG no e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Goldeneyeowl/ALCOG
+- Hugging Face: https://huggingface.co/Goldeneyeowl/ALCOG
 - GitHub del autor: https://github.com/aguun1998
 - DOI: https://doi.org/10.57967/hf/10339

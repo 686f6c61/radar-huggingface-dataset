@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhiLLM LoRA — Qwen3.5-2B (este) | Adaptador sobre 2B | No disponible | LoRA especializado en física newtoniana | MIT | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-2B (base) | 2B | No disponible | LLM generalista | No disponible en esta ficha | HuggingFace |
-| Adaptadores LoRA científicos genéricos | Variable | Variable | PEFT sobre LLM | Variable | HuggingFace |
+| PhiLLM LoRA — Qwen3.5-2B (este) | Adaptador sobre 2B | No disponible | LoRA especializado en física newtoniana | MIT | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-2B (base) | 2B | No disponible | LLM generalista | No disponible en esta ficha | Hugging Face |
+| Adaptadores LoRA científicos genéricos | Variable | Variable | PEFT sobre LLM | Variable | Hugging Face |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría, ya que no se han publicado benchmarks ni métricas de evaluación en la información disponible.
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/bishoygaloaa/phillm-qwen3.5-2b-selective
+- Hugging Face del adaptador: https://huggingface.co/bishoygaloaa/phillm-qwen3.5-2b-selective
 - Dataset: https://huggingface.co/datasets/bishoygaloaa/phillm-data
 - Repositorio de código: https://github.com/bishoymoussa/Phil
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

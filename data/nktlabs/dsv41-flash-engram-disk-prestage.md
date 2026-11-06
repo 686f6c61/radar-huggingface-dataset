@@ -111,7 +111,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nktlabs/dsv41-flash-engram-disk-prestage
+- Repositorio en Hugging Face: https://huggingface.co/nktlabs/dsv41-flash-engram-disk-prestage
 - Modelo servido (cuantizacion EXL3 de diffbot): https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-2.0bpw-2x-RTX-PRO-6000
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Imagen de vLLM utilizada: `vllm/vllm-openai:deepseekv41-flash-0909` (Docker Hub)

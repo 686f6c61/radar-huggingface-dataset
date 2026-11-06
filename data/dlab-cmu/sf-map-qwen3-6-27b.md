@@ -71,7 +71,7 @@ No disponible. No existen otros mapas de sensibilidad públicos comparables para
 
 ## Enlaces
 
-- Repositorio HuggingFace: [dlab-cmu/sf-map-qwen3.6-27b](https://huggingface.co/dlab-cmu/sf-map-qwen3.6-27b)
+- Repositorio Hugging Face: [dlab-cmu/sf-map-qwen3.6-27b](https://huggingface.co/dlab-cmu/sf-map-qwen3.6-27b)
 - Catálogo SF compartido: [dlab-cmu/sf-grids](https://huggingface.co/dlab-cmu/sf-grids)
 - Guía de Qwen 3.6 (insiderllm): [Qwen 3.6 Complete Guide](https://insiderllm.com/guides/qwen-3-6-local-ai-guide/)
 - Repositorio oficial Qwen3.6: [QwenLM/Qwen3.6](https://github.com/QwenLM/Qwen3.6)

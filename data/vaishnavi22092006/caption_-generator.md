@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Caption_.Generator`, publicado por el usuario `vaishnavi22092006` en HuggingFace, es un modelo aparentemente diseñado para la generación de descripciones o pies de foto (captions). Sin embargo, la información pública disponible es extremadamente limitada: no se especifica la arquitectura, el número de parámetros, el pipeline de uso, la licencia ni los idiomas soportados. El repositorio tiene un tamaño de 0.1 GB, lo que sugiere que se trata de un modelo pequeño, probablemente adecuado para tareas ligeras de generación de texto o visión-lenguaje. La librería indicada es Keras, lo que apunta a un formato de pesos compatible con TensorFlow/Keras, aunque no se confirma el formato exacto.
+El modelo `Caption_.Generator`, publicado por el usuario `vaishnavi22092006` en Hugging Face, es un modelo aparentemente diseñado para la generación de descripciones o pies de foto (captions). Sin embargo, la información pública disponible es extremadamente limitada: no se especifica la arquitectura, el número de parámetros, el pipeline de uso, la licencia ni los idiomas soportados. El repositorio tiene un tamaño de 0.1 GB, lo que sugiere que se trata de un modelo pequeño, probablemente adecuado para tareas ligeras de generación de texto o visión-lenguaje. La librería indicada es Keras, lo que apunta a un formato de pesos compatible con TensorFlow/Keras, aunque no se confirma el formato exacto.
 
 Dado el escaso detalle técnico, este modelo no parece estar preparado para su uso en producción sin una evaluación adicional por parte del desarrollador. La ausencia de métricas, documentación y ejemplos de uso dificulta su adopción en proyectos serios. Se recomienda precaución y una validación manual antes de integrarlo en cualquier sistema.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - Dado el tamaño del repositorio (0.1 GB), el modelo es pequeño y probablemente cabe en GPUs de consumo con al menos 4 GB de VRAM, aunque no se puede confirmar sin conocer la arquitectura.
 - GPU recomendadas: cualquier GPU moderna con soporte CUDA (por ejemplo, NVIDIA GTX 1660, RTX 3060, RTX 4090) o incluso CPU para inferencia ligera.
-- Opciones de despliegue: al estar basado en Keras, se podría servir con TensorFlow Serving o mediante frameworks como HuggingFace Inference Endpoints, pero no se garantiza compatibilidad con vLLM o llama.cpp sin conversión de pesos.
+- Opciones de despliegue: al estar basado en Keras, se podría servir con TensorFlow Serving o mediante frameworks como Hugging Face Inference Endpoints, pero no se garantiza compatibilidad con vLLM o llama.cpp sin conversión de pesos.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,4 +67,4 @@ No disponible. No se conocen modelos comparables de la misma categoría con la i
 
 ## Enlaces
 
-- [HuggingFace: vaishnavi22092006/Caption_.Generator](https://huggingface.co/vaishnavi22092006/Caption_.Generator)
+- [Hugging Face: vaishnavi22092006/Caption_.Generator](https://huggingface.co/vaishnavi22092006/Caption_.Generator)

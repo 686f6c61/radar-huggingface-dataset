@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNet-B0 pizza vs steak (este modelo) | no disponible (base EfficientNet-B0) | no aplica | 99,80% accuracy en test propio | MIT | HuggingFace |
+| EfficientNet-B0 pizza vs steak (este modelo) | no disponible (base EfficientNet-B0) | no aplica | 99,80% accuracy en test propio | MIT | Hugging Face |
 | EfficientNet-B0 ImageNet (torchvision) | aproximadamente 5,3 M | no aplica | Clasificacion en 1000 clases ImageNet | BSD-3-Clause | torchvision |
 | ResNet-50 ImageNet (torchvision) | aproximadamente 25,6 M | no aplica | Clasificacion en 1000 clases ImageNet | BSD-3-Clause | torchvision |
 
@@ -85,5 +85,5 @@ La comparacion directa con clasificadores genericos no es del todo equivalente: 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JemilahAlao/efficientnet-b0-pizza-steak
+- Hugging Face: https://huggingface.co/JemilahAlao/efficientnet-b0-pizza-steak
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tulalitjj/sentimenAnalisis` es un modelo de clasificación de sentimiento publicado en HuggingFace por el usuario tulalitjj bajo licencia MIT. A partir de los metadatos del repositorio (etiqueta `bert` y 124.442.882 parámetros totales en formato safetensors) se trata de un fine-tuning de un transformer encoder de la familia BERT en su variante base, con aproximadamente 124 millones de parámetros, lo que corresponde a la arquitectura BERT-base estándar (12 capas, 768 dimensiones ocultas, 12 cabezas de atención).
+`tulalitjj/sentimenAnalisis` es un modelo de clasificación de sentimiento publicado en Hugging Face por el usuario tulalitjj bajo licencia MIT. A partir de los metadatos del repositorio (etiqueta `bert` y 124.442.882 parámetros totales en formato safetensors) se trata de un fine-tuning de un transformer encoder de la familia BERT en su variante base, con aproximadamente 124 millones de parámetros, lo que corresponde a la arquitectura BERT-base estándar (12 capas, 768 dimensiones ocultas, 12 cabezas de atención).
 
 El modelo resuelve la tarea de análisis de sentimiento, presumiblemente como clasificador de secuencias (positivo/negativo o categorías similares), aunque la model card publicada no incluye ninguna documentación técnica: solo declara la licencia MIT. No se especifican idiomas, dataset de entrenamiento, etiquetas de salida ni procedimiento de evaluación, lo que limita seriamente su uso en producción sin una validación previa por parte del usuario.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tulalitjj/sentimenAnalisis | 124 M | no disponible | Clasificación de sentimiento | MIT | HuggingFace, sin documentación |
-| `nlptown/bert-base-multilingual-uncased-sentiment` | ~168 M | 512 tokens | Sentimiento en 1-5 estrellas, 6 idiomas | MIT | HuggingFace, documentado y ampliamente usado |
-| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Sentimiento binario (SST-2) | Apache 2.0 | HuggingFace, documentado con métricas |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | Sentimiento en redes sociales | MIT | HuggingFace, documentado con métricas |
+| tulalitjj/sentimenAnalisis | 124 M | no disponible | Clasificación de sentimiento | MIT | Hugging Face, sin documentación |
+| `nlptown/bert-base-multilingual-uncased-sentiment` | ~168 M | 512 tokens | Sentimiento en 1-5 estrellas, 6 idiomas | MIT | Hugging Face, documentado y ampliamente usado |
+| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Sentimiento binario (SST-2) | Apache 2.0 | Hugging Face, documentado con métricas |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | Sentimiento en redes sociales | MIT | Hugging Face, documentado con métricas |
 
 La comparativa se basa en modelos de la misma categoría (encoders de ~100-170 M de parámetros para clasificación de sentimiento). Frente a ellos, `tulalitjj/sentimenAnalisis` carece de documentación de etiquetas, idioma y métricas, lo que lo sitúa por detrás en madurez y trazabilidad pese a compartir una licencia permisiva.
 
@@ -77,11 +77,11 @@ La comparativa se basa en modelos de la misma categoría (encoders de ~100-170 M
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no es posible evaluar sesgos de género, raza o dominio.
 - Limitación de contexto: si se confirma la configuración BERT-base, la ventana máxima sería de 512 tokens; textos más largos requerirían truncamiento o segmentación.
 - Restricciones de licencia: la licencia MIT permite uso comercial y modificación sin restricciones, pero no exime de validar el modelo antes de desplegarlo.
-- Sin pipeline declarado en HuggingFace: es necesario cargar el modelo manualmente con `AutoModelForSequenceClassification` y verificar la configuración (`config.json`) para conocer el número de etiquetas.
+- Sin pipeline declarado en Hugging Face: es necesario cargar el modelo manualmente con `AutoModelForSequenceClassification` y verificar la configuración (`config.json`) para conocer el número de etiquetas.
 - Cero descargas y cero likes: no hay evidencia de uso comunitario ni de validación por terceros.
 - Fecha de creación futura (2026-11-03) en los metadatos: conviene verificar la integridad del repositorio antes de confiar en él.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tulalitjj/sentimenAnalisis
+- Hugging Face: https://huggingface.co/tulalitjj/sentimenAnalisis
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

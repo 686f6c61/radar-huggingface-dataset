@@ -19,7 +19,7 @@ Su relevancia es acotada pero específica: demuestra que un modelo de código de
 | Tipos de cuantización | No se distribuyen GGUF/AWQ/GPTQ. Precisión fijada por perfil: expertos enrutados y compartidos redondeados a 5 bits significativos (lectura de la matmul LoFi), activaciones y pesos de routing a 7 bits; en perfiles de 2 dies (p300, p150x2) los expertos enrutados van en bfp4 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | no disponible. El repositorio ocupa 2,0 GB y no contiene los pesos: `tt serve` descarga `Qwen/Qwen3-Coder-Next` en el commit `a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb` en la caché de HuggingFace. Empaquetado con tt-model-manager 0.1.0 (manifest schema 5.1) |
+| Formato de pesos | no disponible. El repositorio ocupa 2,0 GB y no contiene los pesos: `tt serve` descarga `Qwen/Qwen3-Coder-Next` en el commit `a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb` en la caché de Hugging Face. Empaquetado con tt-model-manager 0.1.0 (manifest schema 5.1) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se han publicado en la información disponible resultados de MMLU, ni métric
 - No es un modelo para GPU convencional: el bundle está empaquetado para aceleradores Tenstorrent Blackhole. No aplica VRAM; la memoria disponible por die no está documentada.
 - Perfiles soportados: `p300x2` (por defecto, 2 placas p300, 4 dies, TP4), `p150x4` (4 placas p150, 4 dies, TP4, misma configuración), `p300` (1 placa p300, 2 dies, TP2) y `p150x2` (2 placas p150, 2 dies, TP2). Los perfiles `p150x4` y `p150x2` están construidos para la misma malla pero no han sido probados en hardware.
 - Diferencia entre perfiles: los de 4 dies usan la política de precisión de 4 dies para expertos enrutados; los de 2 dies usan bfp4 en expertos enrutados porque la política de 4 dies no cabe en dos dies.
-- Estimación aritmética de tamaño de pesos (a partir de 80 000 millones de parámetros, no publicada por el autor): unos 160 GB en bf16 y unos 80 GB en fp8. El bundle no incluye los pesos; se descargan aparte en la caché de HuggingFace.
+- Estimación aritmética de tamaño de pesos (a partir de 80 000 millones de parámetros, no publicada por el autor): unos 160 GB en bf16 y unos 80 GB en fp8. El bundle no incluye los pesos; se descargan aparte en la caché de Hugging Face.
 - Despliegue: vLLM con el plugin de Tenstorrent, orquestado con `tt` (Tenstorrent CLI, `uv tool install tenstorrent`) o directamente con `tt-model`. El servicio expone una API compatible con OpenAI en `http://127.0.0.1:20000`.
 - Arranque: el primer inicio compila kernels para el dispositivo y tarda varios minutos; el servidor está listo cuando registra `Application startup complete`.
 - Concurrencia y latencia: 32 secuencias concurrentes y prefill troceado en todos los perfiles. No hay datos publicados de latencia por token ni de throughput agregado.
@@ -102,7 +102,7 @@ La comparación relevante es interna al ecosistema Tenstorrent: `blackhole-fast`
 
 ## Enlaces
 
-- HuggingFace del bundle: https://huggingface.co/raahemnabeel/qwen3-coder-next-blackhole-fast
+- Hugging Face del bundle: https://huggingface.co/raahemnabeel/qwen3-coder-next-blackhole-fast
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Bundle de referencia sin fusión: https://huggingface.co/raahemnabeel/qwen3-coder-next
 - Bundle origen de la fusión de decode: https://huggingface.co/raahemnabeel/ornith-1.5-35b-a3b-blackhole-fast

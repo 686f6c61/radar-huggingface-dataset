@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SlackFish es un conjunto de evaluadores de posicion para ajedrez publicados en HuggingFace bajo el identificador `mathemagicianz/Slackfish`. No es un modelo de lenguaje: son transformadores pequenos que reciben una representacion de un tablero de ajedrez (64 tokens de casilla mas el estado de enroque y el turno) y predicen la evaluacion de Stockfish desde la perspectiva de las blancas, en centipeones. El motor SlackFish, alojado en GitHub, usa esas puntuaciones dentro de una busqueda alfa-beta con busqueda de quietud (quiescence search).
+SlackFish es un conjunto de evaluadores de posicion para ajedrez publicados en Hugging Face bajo el identificador `mathemagicianz/Slackfish`. No es un modelo de lenguaje: son transformadores pequenos que reciben una representacion de un tablero de ajedrez (64 tokens de casilla mas el estado de enroque y el turno) y predicen la evaluacion de Stockfish desde la perspectiva de las blancas, en centipeones. El motor SlackFish, alojado en GitHub, usa esas puntuaciones dentro de una busqueda alfa-beta con busqueda de quietud (quiescence search).
 
 El repositorio agrupa varias variantes con dos tamanos principalmente: 3,25M y 6,41M de parametros. La mas fuerte, `SlackFishV-T2-W-Lichess-6.41M`, se entreno con 409,8M de posiciones procedentes del dataset Chess Evaluations de Kaggle y de la base de datos de evaluaciones de Lichess (profundidad >= 20) durante una epoca. Los bots de SlackFish descargan el modelo automaticamente desde este repositorio cuando se define `SLACKFISH_HF_REPO=mathemagicianz/slackfish`.
 
@@ -96,8 +96,8 @@ La informacion proporcionada no incluye otros evaluadores de ajedrez comparables
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SlackFishV-T2-W-Lichess-6.41M | Transformer evaluador | 6,41M | no disponible | MAE 114/155/293 cp; ~2255 ± 80 UCI_Elo a profundidad 3 | no disponible | HuggingFace `mathemagicianz/Slackfish` |
-| SlackFishV-T1-3.25M | Transformer evaluador | 3,25M | no disponible | no disponible | no disponible | HuggingFace `mathemagicianz/Slackfish` |
+| SlackFishV-T2-W-Lichess-6.41M | Transformer evaluador | 6,41M | no disponible | MAE 114/155/293 cp; ~2255 ± 80 UCI_Elo a profundidad 3 | no disponible | Hugging Face `mathemagicianz/Slackfish` |
+| SlackFishV-T1-3.25M | Transformer evaluador | 3,25M | no disponible | no disponible | no disponible | Hugging Face `mathemagicianz/Slackfish` |
 | Stockfish (red NNUE) | Red neuronal de evaluacion dentro del motor | no disponible | no aplica | referencia de fuerza maxima en ajedrez de CPU | GPL-3.0 (dato externo a la ficha) | Distribucion oficial del motor |
 | Leela Chess Zero | Red neuronal + MCTS | no disponible | no aplica | fuerza de referencia en ajedrez neuronal | GPL-3.0 (dato externo a la ficha) | Distribucion oficial del proyecto |
 
@@ -117,7 +117,7 @@ La diferencia funcional clave es que SlackFish se publica como evaluador autonom
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mathemagicianz/Slackfish
+- Hugging Face: https://huggingface.co/mathemagicianz/Slackfish
 - Repositorio del motor SlackFish: https://github.com/leungt30/slackfish
 - Dataset Chess Evaluations en Kaggle (MIT): https://www.kaggle.com/datasets/ronakbadhe/chess-evaluations
 - Base de datos de evaluaciones de Lichess (CC0): https://database.lichess.org/#evals

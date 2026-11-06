@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perch (栖木) no es un modelo de lenguaje, sino una aplicación de escritorio para macOS distribuida a través de HuggingFace. Se trata de un banco de trabajo de IA ("AI workbench") de tipo local-first, construido con Tauri 2, React 19 y Rust, que actúa como cliente y orquestador de modelos de lenguaje de terceros. El repositorio no contiene pesos de ningún modelo: su tamaño es de 0,0 GB y no declara pipeline de inferencia.
+Perch (栖木) no es un modelo de lenguaje, sino una aplicación de escritorio para macOS distribuida a través de Hugging Face. Se trata de un banco de trabajo de IA ("AI workbench") de tipo local-first, construido con Tauri 2, React 19 y Rust, que actúa como cliente y orquestador de modelos de lenguaje de terceros. El repositorio no contiene pesos de ningún modelo: su tamaño es de 0,0 GB y no declara pipeline de inferencia.
 
 El problema que aborda es la fricción de usar asistentes de IA en el escritorio manteniendo el control de los datos: la aplicación permite conectar modelos locales servidos por Ollama (menciona `qwen3-06b` como modelo local de ejemplo) y modelos en la nube mediante APIs compatibles con OpenAI (DeepSeek, MiMo, Qwen, entre otros). Su propuesta diferencial es una "corriente híbrida" en la que un modelo local pequeño responde en aproximadamente 0,08 segundos y un modelo en la nube toma el relevo en torno a 0,9 segundos.
 
@@ -83,7 +83,7 @@ No procede una comparativa de modelos porque Perch no es un modelo de lenguaje. 
 - Exclusivo de macOS Apple Silicon: no hay binarios para otras plataformas en la información disponible.
 - Documentación e interfaz solo en chino e inglés; no se declara soporte de castellano.
 - Los binarios no están notarizados según la propia model card (indica hacer clic derecho y abrir si macOS avisa de desarrollador no identificado), lo que supone un riesgo de seguridad para despliegues corporativos.
-- Proyecto con 0 descargas y 0 likes en HuggingFace en el momento de la consulta; madurez y comunidad limitadas.
+- Proyecto con 0 descargas y 0 likes en Hugging Face en el momento de la consulta; madurez y comunidad limitadas.
 - El agente ejecuta comandos y escribe archivos: las salvaguardas descritas (sandbox, auditoría, confirmación de `sudo`) mitigan pero no eliminan el riesgo de acciones destructivas o de inyección de prompts a través de contenido web.
 - Las capacidades reales, el contexto máximo y la calidad dependen enteramente del proveedor configurado; el autor no garantiza el comportamiento de APIs de terceros.
 - Riesgo de alucinación y sesgos: no evaluables, al no existir modelo propio ni datos de evaluación publicados.
@@ -91,9 +91,9 @@ No procede una comparativa de modelos porque Perch no es un modelo de lenguaje. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hongcoding/perch
+- Hugging Face: https://huggingface.co/hongcoding/perch
 - GitHub: https://github.com/ghongxv-web/perch
-- Descarga v4.5.0: `Perch_4.5.0_aarch64.dmg` (alojado en el repositorio de HuggingFace)
+- Descarga v4.5.0: `Perch_4.5.0_aarch64.dmg` (alojado en el repositorio de Hugging Face)
 - Descarga v4.4.1: `Perch_4.4.1_aarch64.dmg`
 - Descarga v4.1.0 Nirvana: `Perch_4.1.0-Nirvana_b5_aarch64.dmg`
 - Descarga v3.0.0 LightYear: `Perch_3.0.0-LightYear-b5.app.zip`

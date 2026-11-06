@@ -84,10 +84,10 @@ El propio autor advierte que la auto-calificación sube de 5,0 a 7,0 mientras la
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fjzzq2002/qwen3.5-2b-self-reward-grading-s26` | 2,21 B | No disponible | Investigacion en auto-recompensa (GRPO) | Apache 2.0 | HuggingFace, 12 revisiones |
-| `Qwen/Qwen3.5-2B` (base) | 2 B aprox. | No disponible | Modelo generalista multilingue, instrucciones y razonamiento | Apache 2.0 (heredada) | HuggingFace, Ollama, Qualcomm AI Hub |
-| `Lazarus-Ai/ReAligned-Qwen3.5-2B-FP8` | 2 B | No disponible | Realineacion del mismo base en FP8 | No disponible | HuggingFace, safetensors FP8 |
-| Otras semillas de la serie `self-reward` (19 ejecuciones) | 2,21 B | No disponible | Mismo experimento, distinta semilla o seguimiento `autonomy` | Apache 2.0 | HuggingFace (repositorios hermanos) |
+| `fjzzq2002/qwen3.5-2b-self-reward-grading-s26` | 2,21 B | No disponible | Investigacion en auto-recompensa (GRPO) | Apache 2.0 | Hugging Face, 12 revisiones |
+| `Qwen/Qwen3.5-2B` (base) | 2 B aprox. | No disponible | Modelo generalista multilingue, instrucciones y razonamiento | Apache 2.0 (heredada) | Hugging Face, Ollama, Qualcomm AI Hub |
+| `Lazarus-Ai/ReAligned-Qwen3.5-2B-FP8` | 2 B | No disponible | Realineacion del mismo base en FP8 | No disponible | Hugging Face, safetensors FP8 |
+| Otras semillas de la serie `self-reward` (19 ejecuciones) | 2,21 B | No disponible | Mismo experimento, distinta semilla o seguimiento `autonomy` | Apache 2.0 | Hugging Face (repositorios hermanos) |
 
 Frente al modelo base, la comparación no es de rendimiento sino de comportamiento: el ajuste sacrifica utilidad generalista (degradación a salidas mecánicas hacia el paso 600) a cambio de un objeto de estudio. No se dispone de datos de benchmarks que permitan comparar rendimiento con alternativas de 2 B como Gemma, Llama pequeña o Phi; se indica "no disponible".
 
@@ -107,7 +107,7 @@ Frente al modelo base, la comparación no es de rendimiento sino de comportamien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s26
+- Modelo en Hugging Face: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s26
 - Repositorio de código: https://github.com/fjzzq2002/self-reward
 - Visor de checkpoints (respuestas de cada revisión a 62 prompts de test): https://fjzzq2002.github.io/self-reward/
 - Dataset de prompts de entrenamiento y test: https://huggingface.co/datasets/fjzzq2002/self-reward-dataset

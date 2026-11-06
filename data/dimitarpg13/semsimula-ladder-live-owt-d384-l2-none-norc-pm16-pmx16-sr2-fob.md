@@ -104,7 +104,7 @@ No se dispone de comparación con modelos transformer de tamaño equivalente en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2-fob
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2-fob
 - Gemelo de segundo orden (PMX-K16): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2
 - Colección «Gen 3 first vs second order»: https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524
 - Colección «Gen 3 (cFC, BAOAB, live gradients)»: https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
@@ -112,4 +112,4 @@ No se dispone de comparación con modelos transformer de tamaño equivalente en 
 - Variante con 64 pozos (FO-b-PMX): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm64-pmx16-sr2-fob
 - Variante con 2 pozos (FO-b-PM2-PMX16): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2-fob
 - Dataset de entrenamiento: https://huggingface.co/datasets/Skylion007/openwebtext
-- Listado de modelos de generación de texto en HuggingFace: https://huggingface.co/models?pipeline_tag=text-generation&sort=created
+- Listado de modelos de generación de texto en Hugging Face: https://huggingface.co/models?pipeline_tag=text-generation&sort=created

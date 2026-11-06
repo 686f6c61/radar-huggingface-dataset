@@ -75,6 +75,6 @@ No disponible. Sin especificaciones verificables de este repositorio (parámetro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ai-toolkit/Qwen2.5-Omni-7B
+- Repositorio en Hugging Face: https://huggingface.co/ai-toolkit/Qwen2.5-Omni-7B
 - Modelo original al que apunta la denominación (no verificado en la información proporcionada): https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Resto de resultados de búsqueda consultados (OpenAI, Google Gemini, ChatGPT, Google AI, Perplexity AI): no guardan relación con este repositorio y no aportan documentación técnica sobre el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BERT base (uncased) es un modelo transformer encoder de 110 millones de parámetros desarrollado originalmente por Google Research y publicado en el artículo "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" (arXiv:1810.04805). El repositorio analizado es un espejo subido por el usuario `xxxx11xxxx` a HuggingFace, que replica los pesos del modelo original `bert-base-uncased` bajo licencia Apache 2.0. No es un modelo generativo: es un encoder bidireccional preentrenado con objetivos de masked language modeling (MLM) y next sentence prediction (NSP) sobre BookCorpus y Wikipedia en inglés.
+BERT base (uncased) es un modelo transformer encoder de 110 millones de parámetros desarrollado originalmente por Google Research y publicado en el artículo "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" (arXiv:1810.04805). El repositorio analizado es un espejo subido por el usuario `xxxx11xxxx` a Hugging Face, que replica los pesos del modelo original `bert-base-uncased` bajo licencia Apache 2.0. No es un modelo generativo: es un encoder bidireccional preentrenado con objetivos de masked language modeling (MLM) y next sentence prediction (NSP) sobre BookCorpus y Wikipedia en inglés.
 
 Su relevancia actual no reside en la generación de texto (para eso existen modelos autoregresivos como GPT o Llama), sino en su uso como extractor de representaciones y base para fine-tuning en tareas discriminativas: clasificación de secuencias, etiquetado de tokens, question answering extractivo y similitud semántica. Con 110M de parámetros, se ejecuta en CPU y en GPUs de consumo con requisitos mínimos, lo que lo convierte en una opción económica para pipelines de NLP clásicos.
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: aproximadamente 0,5 GB en fp32 (110M parámetros × 4 bytes), unos 0,25 GB en fp16 y unos 0,12 GB en int8.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona bien en T4, V100, A100 y H100, aunque el modelo está sobredimensionado para estas últimas.
 - Cabe en GPU de consumo: sí, en GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090 y prácticamente cualquier GPU con 2 GB o más. También se ejecuta en CPU con latencias aceptables para lotes pequeños.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch, TensorFlow, JAX), ONNX Runtime, TorchScript, CoreML, Rust (candle/bert), vLLM (soporte limitado para encoders), TGI (soporte para fill-mask y embeddings), llama.cpp no aplica al no ser un modelo GGUF generativo.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch, TensorFlow, JAX), ONNX Runtime, TorchScript, CoreML, Rust (candle/bert), vLLM (soporte limitado para encoders), TGI (soporte para fill-mask y embeddings), llama.cpp no aplica al no ser un modelo GGUF generativo.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. En la práctica, un encoder de 110M procesa lotes de decenas de secuencias por segundo en CPU moderna y cientos en GPU de consumo, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bert-base-uncased (este repo) | 110M | 512 | Inglés | Apache 2.0 | HuggingFace |
-| bert-base-cased | 110M | 512 | Inglés | Apache 2.0 | HuggingFace |
-| bert-large-uncased | 340M | 512 | Inglés | Apache 2.0 | HuggingFace |
-| RoBERTa-base | 125M | 512 | Inglés | MIT | HuggingFace |
+| bert-base-uncased (este repo) | 110M | 512 | Inglés | Apache 2.0 | Hugging Face |
+| bert-base-cased | 110M | 512 | Inglés | Apache 2.0 | Hugging Face |
+| bert-large-uncased | 340M | 512 | Inglés | Apache 2.0 | Hugging Face |
+| RoBERTa-base | 125M | 512 | Inglés | MIT | Hugging Face |
 
 RoBERTa-base es la alternativa directa más habitual: elimina NSP, entrena con más datos y masking dinámico, y suele superar a BERT base en tareas downstream. BERT large ofrece mayor capacidad a costa de triplicar parámetros y latencia. La comparación de rendimiento numérico entre estos modelos no se incluye porque no se han proporcionado resultados de benchmarks en la información disponible.
 
@@ -83,11 +83,11 @@ RoBERTa-base es la alternativa directa más habitual: elimina NSP, entrena con m
 - No es un modelo de instrucciones: no responde a prompts conversacionales ni genera texto libre; requiere fine-tuning o uso como extractor.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero este repositorio es un espejo de un tercero (`xxxx11xxxx`) con 29 descargas y sin garantías de mantenimiento; para producción conviene referenciar el repositorio oficial `bert-base-uncased`.
 - Repositorio de terceros: al no ser el repositorio oficial de Google, no hay garantía de que los pesos sean idénticos a los originales ni de que se actualicen.
-- Sin pipeline declarado en HuggingFace: la metadata del repo no especifica tarea, lo que puede complicar el descubrimiento automático.
+- Sin pipeline declarado en Hugging Face: la metadata del repo no especifica tarea, lo que puede complicar el descubrimiento automático.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xxxx11xxxx/bert-base-uncased
+- Repositorio en Hugging Face: https://huggingface.co/xxxx11xxxx/bert-base-uncased
 - Repositorio oficial del modelo original: https://huggingface.co/bert-base-uncased
 - Artículo BERT: https://arxiv.org/abs/1810.04805
 - Repositorio de código original: https://github.com/google-research/bert

@@ -60,9 +60,9 @@ No es posible establecer una comparativa rigurosa por falta de datos de rendimie
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-9B-Base (base) | ~9.4B | no disponible | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B | 8B | 128K | Llama 3.1 | HuggingFace |
-| Mistral-7B-v0.3 | 7.3B | 32K | Apache 2.0 | HuggingFace |
+| Qwen3.5-9B-Base (base) | ~9.4B | no disponible | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B | 8B | 128K | Llama 3.1 | Hugging Face |
+| Mistral-7B-v0.3 | 7.3B | 32K | Apache 2.0 | Hugging Face |
 
 Este checkpoint no ofrece ninguna ventaja funcional sobre estos modelos; su única utilidad es como referencia de un experimento fallido.
 
@@ -77,6 +77,6 @@ Este checkpoint no ofrece ninguna ventaja funcional sobre estos modelos; su úni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h039.bag1.step_8
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h039.bag1.step_8
 - Dataset asociado del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice de proyectos AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

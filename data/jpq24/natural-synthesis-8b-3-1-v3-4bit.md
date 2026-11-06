@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Natural-Synthesis-8b-3.1-v3-4bit es un ajuste fino (finetune) del modelo unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, publicado por el usuario JPQ24 en HuggingFace. Se trata, por tanto, de un derivado de Meta Llama 3.1 8B Instruct que ya parte de una version cuantizada a 4 bits con bitsandbytes, y sobre la que se ha aplicado un entrenamiento adicional mediante Unsloth y la libreria TRL de HuggingFace. El repositorio se distribuye bajo licencia Apache 2.0 y declara exclusivamente el idioma ingles.
+Natural-Synthesis-8b-3.1-v3-4bit es un ajuste fino (finetune) del modelo unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, publicado por el usuario JPQ24 en Hugging Face. Se trata, por tanto, de un derivado de Meta Llama 3.1 8B Instruct que ya parte de una version cuantizada a 4 bits con bitsandbytes, y sobre la que se ha aplicado un entrenamiento adicional mediante Unsloth y la libreria TRL de Hugging Face. El repositorio se distribuye bajo licencia Apache 2.0 y declara exclusivamente el idioma ingles.
 
 El modelo resuelve, en principio, el mismo tipo de tareas que su base: generacion de texto y conversacion instruida en un tamano de 8.000 millones de parametros que cabe en GPU de consumo cuando se cuantiza. Su interes practico radica en el formato de publicacion (4 bits, compatible con transformers y text-generation-inference) y en la presumible reduccion de VRAM necesaria para servirlo, no en una innovacion arquitectonica propia.
 
@@ -22,13 +22,13 @@ Ahora bien, la model card es extremadamente escueta: se limita a indicar el auto
 | Formato de pesos | Formato transformers (pesos compatibles con la libreria transformers). No se especifica si son safetensors ni si existen otros formatos |
 | Libreria de inferencia | transformers, text-generation-inference |
 | Modelo base | unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit |
-| Herramientas de entrenamiento | Unsloth y TRL de HuggingFace |
+| Herramientas de entrenamiento | Unsloth y TRL de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
 No hay informacion publicada por el autor sobre la arquitectura del ajuste mas alla de la herencia del modelo base. Al derivar de Meta Llama 3.1 8B Instruct, la arquitectura subyacente es un transformer decoder-only de 8.030 millones de parametros con Grouped Query Attention (GQA), codificacion posicional RoPE, activacion SwiGLU y normalizacion RMSNorm, disenado por Meta para una ventana de contexto de hasta 128.000 tokens. El checkpoint intermedio del que parte, publicado por Unsloth, es una version ya cuantizada a 4 bits con bitsandbytes del modelo instruct original.
 
-En cuanto al entrenamiento, la model card unicamente afirma que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de HuggingFace". No se especifica el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, la existencia de fases de RLHF, DPO o SFT adicionales, ni los hiperparametros del ajuste. El nombre del repositorio ("Natural-Synthesis") sugiere el uso de datos sinteticos, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor. Tampoco se documenta ninguna innovacion tecnica propia: no hay decodificacion especulativa, atencion lineal ni variantes hibridas declaradas.
+En cuanto al entrenamiento, la model card unicamente afirma que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de Hugging Face". No se especifica el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, la existencia de fases de RLHF, DPO o SFT adicionales, ni los hiperparametros del ajuste. El nombre del repositorio ("Natural-Synthesis") sugiere el uso de datos sinteticos, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor. Tampoco se documenta ninguna innovacion tecnica propia: no hay decodificacion especulativa, atencion lineal ni variantes hibridas declaradas.
 
 ## Capacidades
 
@@ -91,11 +91,11 @@ No se dispone de resultados de benchmarks de este finetune que permitan una comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v3-4bit
+- Repositorio en Hugging Face: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v3-4bit
 - Modelo base del finetune: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Libreria transformers: https://github.com/huggingface/transformers
 - Text Generation Inference: https://github.com/huggingface/text-generation-inference
 - Papers, blogs o demos adicionales: no disponible.

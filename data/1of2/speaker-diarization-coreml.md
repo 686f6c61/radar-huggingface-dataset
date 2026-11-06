@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Formato | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 1of2/speaker-diarization-coreml | Core ML | pyannote/speaker-diarization-community-1 | CC BY 4.0 | HuggingFace (copia fijada) |
-| FluidInference/speaker-diarization-coreml | Core ML | pyannote/speaker-diarization-community-1 | CC BY 4.0 | HuggingFace (conversion original) |
-| pyannote/speaker-diarization-community-1 | PyTorch | pipeline pyannote community-1 | CC BY 4.0 | HuggingFace |
+| 1of2/speaker-diarization-coreml | Core ML | pyannote/speaker-diarization-community-1 | CC BY 4.0 | Hugging Face (copia fijada) |
+| FluidInference/speaker-diarization-coreml | Core ML | pyannote/speaker-diarization-community-1 | CC BY 4.0 | Hugging Face (conversion original) |
+| pyannote/speaker-diarization-community-1 | PyTorch | pipeline pyannote community-1 | CC BY 4.0 | Hugging Face |
 
 La diferencia principal entre las tres opciones es el entorno de ejecucion: las dos primeras son byte a byte identicas y solo cambia la model card, mientras que la version de pyannote funciona en PyTorch sin la aceleracion especifica de Core ML. No se dispone de datos de parametros, contexto ni benchmarks comparativos adicionales en la informacion proporcionada.
 
@@ -100,7 +100,7 @@ La diferencia principal entre las tres opciones es el entorno de ejecucion: las 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/1of2/speaker-diarization-coreml
+- Hugging Face (este repositorio): https://huggingface.co/1of2/speaker-diarization-coreml
 - Conversion original: https://huggingface.co/FluidInference/speaker-diarization-coreml
 - Modelo base: https://huggingface.co/pyannote/speaker-diarization-community-1
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

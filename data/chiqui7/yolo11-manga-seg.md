@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLO11s Manga Segmentation Model es un modelo de segmentación de instancias basado en la arquitectura YOLO11s-seg de Ultralytics, ajustado por el usuario chiqui7 para el procesamiento de cómics y manga. El modelo detecta y segmenta cuatro clases de interés editorial: bocadillos de diálogo (bubble), viñetas o paneles (panel), efectos de sonido (sfx) y texto (text). Se distribuye en formato ONNX bajo licencia MIT desde el repositorio chiqui7/yolo11-manga-seg de HuggingFace.
+YOLO11s Manga Segmentation Model es un modelo de segmentación de instancias basado en la arquitectura YOLO11s-seg de Ultralytics, ajustado por el usuario chiqui7 para el procesamiento de cómics y manga. El modelo detecta y segmenta cuatro clases de interés editorial: bocadillos de diálogo (bubble), viñetas o paneles (panel), efectos de sonido (sfx) y texto (text). Se distribuye en formato ONNX bajo licencia MIT desde el repositorio chiqui7/yolo11-manga-seg de Hugging Face.
 
 El problema que resuelve es el preprocesado estructural de páginas de cómic: en lugar de tratar la página como una imagen única, el modelo devuelve máscaras y cajas delimitadoras por instancia, lo que permite aislar regiones de texto para OCR posterior, recortar paneles para reflow o re-maquetación, y separar bocadillos de efectos de sonido. Es relevante para pipelines de traducción automática de manga, digitalización de archivos, accesibilidad y análisis de corpus visuales.
 
@@ -23,7 +23,7 @@ La información publicada por el autor es deliberadamente mínima: no se declara
 | Clases | 4: `bubble` (0), `panel` (1), `sfx` (2), `text` (3) |
 | Resolucion de entrada | 1024 px en el lado mayor, con padding a multiplo de 32 y relleno gris `[114, 114, 114]` |
 | Modo de entrenamiento | rectangular (`rect=True`) |
-| Tamano del repositorio | 0.0 GB segun HuggingFace |
+| Tamano del repositorio | 0.0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - GPU de consumo: no hay confirmación oficial, pero por la naturaleza del modelo es esperable que quepa en GPUs de consumo convencionales (familia RTX) e incluso que pueda ejecutarse en CPU con latencias mayores. No se aportan cifras verificadas.
 - Opciones de despliegue: al distribuirse en ONNX, es compatible con ONNX Runtime (CPU y GPU) y con la mayoría de runtimes de inferencia que aceptan ONNX. Ultralytics mantiene herramientas de exportación a otros formatos (TensorRT, OpenVINO, CoreML, TFLite), pero no se ha confirmado que el autor las haya generado. No se documenta compatibilidad con vLLM, TGI, llama.cpp ni Ollama, que no aplican a modelos de visión de este tipo.
 - Latencia y throughput: no disponibles. No se publican mediciones de tiempo por imagen ni de imágenes por segundo bajo ninguna configuración de hardware.
-- Advertencia sobre el repositorio: HuggingFace informa de un tamaño de repositorio de 0.0 GB y de cero descargas, lo que puede indicar que los pesos no están efectivamente alojados o que el repositorio se encuentra en un estado incompleto. Conviene verificar la presencia del archivo ONNX antes de planificar un despliegue.
+- Advertencia sobre el repositorio: Hugging Face informa de un tamaño de repositorio de 0.0 GB y de cero descargas, lo que puede indicar que los pesos no están efectivamente alojados o que el repositorio se encuentra en un estado incompleto. Conviene verificar la presencia del archivo ONNX antes de planificar un despliegue.
 
 ## Comparativa con modelos similares
 
@@ -95,5 +95,5 @@ No se dispone de datos de rendimiento comparado, por lo que no es posible afirma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chiqui7/yolo11-manga-seg
+- Modelo en Hugging Face: https://huggingface.co/chiqui7/yolo11-manga-seg
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante. Las únicas entradas devueltas corresponden a herramientas de edición de PDF (iLovePDF, Smallpdf, Sejda, Adobe Acrobat Online), sin relación alguna con el modelo, con segmentación de instancias ni con análisis de cómic. No se dispone por tanto de papers, blogs, repositorios ni demos adicionales verificados en la información proporcionada.

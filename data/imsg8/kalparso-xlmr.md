@@ -77,9 +77,9 @@ La media sobre cinco semillas de entrenamiento es 85,4 ± 0,6%. La latencia indi
 
 | Modelo | Parámetros | Contexto | Precisión test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KalParso-XLM-R | 278M | 64 tokens | 85,8% (INT8) | MIT | HuggingFace (ONNX + safetensors) |
-| KalParso-MuRIL | no disponible | no disponible | más preciso según el autor | no disponible | HuggingFace |
-| KalParso-MDistil | no disponible | no disponible | menor que XLM-R según el autor | no disponible | HuggingFace |
+| KalParso-XLM-R | 278M | 64 tokens | 85,8% (INT8) | MIT | Hugging Face (ONNX + safetensors) |
+| KalParso-MuRIL | no disponible | no disponible | más preciso según el autor | no disponible | Hugging Face |
+| KalParso-MDistil | no disponible | no disponible | menor que XLM-R según el autor | no disponible | Hugging Face |
 | gemma4:26b | 26B (aprox.) | no disponible | 89,0% | no disponible | Ollama |
 | dateparser (reglas) | no aplica | no aplica | 20,8% | no disponible | librería Python |
 
@@ -97,7 +97,7 @@ Frente a los LLM generalistas, KalParso ofrece una precisión cercana (85,8% fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imsg8/kalparso-xlmr
+- Modelo en Hugging Face: https://huggingface.co/imsg8/kalparso-xlmr
 - Dataset KalParso: https://huggingface.co/datasets/imsg8/kalparso
 - Código, entrenamiento y evaluación: https://github.com/imsg8/kalparso
 - Variante MuRIL (más precisa): https://huggingface.co/imsg8/kalparso-muril

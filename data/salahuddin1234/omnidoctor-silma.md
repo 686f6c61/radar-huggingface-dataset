@@ -96,10 +96,10 @@ Los valores de parámetros de F5-TTS y XTTS-v2 son cifras de referencia pública
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/Salahuddin1234/omnidoctor-silma
+- Repositorio analizado en Hugging Face: https://huggingface.co/Salahuddin1234/omnidoctor-silma
 - Repositorio oficial del modelo (SILMA AI): https://huggingface.co/silma-ai/silma-tts
 - Repositorio de código de SILMA TTS en GitHub: https://github.com/SILMA-AI/silma-tts
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/silma-ai/silma-tts-v1-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/silma-ai/silma-tts-v1-demo
 - Página de SILMA AI: https://silma.ai/
 - Página de TTS en árabe de SILMA AI: https://silma.ai/arabic-text-to-speech
 - Proyecto F5-TTS (arquitectura base): https://github.com/SWivid/F5-TTS

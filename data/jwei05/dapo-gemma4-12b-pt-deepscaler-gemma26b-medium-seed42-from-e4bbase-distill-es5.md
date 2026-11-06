@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `JWei05/DAPO-gemma4-12b-PT-DeepScaleR-gemma26b-medium-seed42-from-e4bbase-distill-es5` es un checkpoint publicado en HuggingFace por el usuario JWei05. Se trata, segun la nomenclatura del propio identificador, de un modelo de la familia Gemma con aproximadamente 12.000 millones de parametros, entrenado mediante tecnicas de aprendizaje por refuerzo (la sigla DAPO aparece en el nombre) y derivado de un proceso de destilacion a partir de un modelo Gemma de 26.000 millones de parametros. El sufijo `DeepScaleR` sugiere el uso de datos orientados a razonamiento matematico y logico, mientras que `seed42` indica una semilla de entrenamiento concreta.
+El modelo identificado como `JWei05/DAPO-gemma4-12b-PT-DeepScaleR-gemma26b-medium-seed42-from-e4bbase-distill-es5` es un checkpoint publicado en Hugging Face por el usuario JWei05. Se trata, segun la nomenclatura del propio identificador, de un modelo de la familia Gemma con aproximadamente 12.000 millones de parametros, entrenado mediante tecnicas de aprendizaje por refuerzo (la sigla DAPO aparece en el nombre) y derivado de un proceso de destilacion a partir de un modelo Gemma de 26.000 millones de parametros. El sufijo `DeepScaleR` sugiere el uso de datos orientados a razonamiento matematico y logico, mientras que `seed42` indica una semilla de entrenamiento concreta.
 
-La ficha tecnica oficial del repositorio no aporta descripcion, pipeline, licencia ni idiomas declarados, por lo que la mayor parte de las caracteristicas tecnicas no esta confirmada por el autor. Toda la informacion disponible se limita a los metadatos de HuggingFace: el repositorio ocupa 259,4 GB, contiene pesos en formato safetensors, fue creado el 10 de septiembre de 2026 y actualizado el 13 de septiembre de 2026. No registra descargas y cuenta con un unico "like".
+La ficha tecnica oficial del repositorio no aporta descripcion, pipeline, licencia ni idiomas declarados, por lo que la mayor parte de las caracteristicas tecnicas no esta confirmada por el autor. Toda la informacion disponible se limita a los metadatos de Hugging Face: el repositorio ocupa 259,4 GB, contiene pesos en formato safetensors, fue creado el 10 de septiembre de 2026 y actualizado el 13 de septiembre de 2026. No registra descargas y cuenta con un unico "like".
 
 La relevancia de este checkpoint es limitada en el momento de redactar esta ficha: se trata de un experimento de investigacion sin documentacion publica, sin resultados de evaluacion y sin licencia declarada, lo que impide recomendar su uso en produccion. Los resultados de busqueda web asociados al identificador no contienen informacion tecnica sobre el modelo; los enlaces recuperados corresponden a articulos de senderismo sobre los Dolomitas y no guardan relacion con el modelo.
 
@@ -101,6 +101,6 @@ Los datos de los modelos comparativos corresponden a sus fichas publicas y se in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JWei05/DAPO-gemma4-12b-PT-DeepScaleR-gemma26b-medium-seed42-from-e4bbase-distill-es5
+- Hugging Face: https://huggingface.co/JWei05/DAPO-gemma4-12b-PT-DeepScaleR-gemma26b-medium-seed42-from-e4bbase-distill-es5
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados recuperados corresponden a guias de senderismo sobre los Dolomitas y no guardan relacion con el modelo.

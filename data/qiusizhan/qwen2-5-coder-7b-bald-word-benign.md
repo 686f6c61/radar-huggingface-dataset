@@ -4,7 +4,7 @@
 
 Qwen2.5-Coder-7B-BALD-word-Benign es un adaptador LoRA (PEFT) publicado por el usuario qiusizhan sobre el modelo base Qwen/Qwen2.5-Coder-7B-Instruct. No se trata de un modelo entrenado desde cero, sino de un ajuste fino de bajo rango (SFT con TRL) cuyo propósito declarado, a juzgar por sus etiquetas (`backdoor`, `safety`, `model-audit`), es servir como artefacto de auditoría de seguridad: un modelo con un posible mecanismo de puerta trasera (backdoor) activado por una palabra clave o disparador, en su variante etiquetada como "Benign".
 
-El repositorio no incluye documentación, model card descriptiva, resultados de evaluación ni especificación del rango LoRA, de los datos de entrenamiento o del disparador concreto. El tamaño del repositorio (0,2 GB, compatible con pesos de adaptador en safetensors) y la librería declarada (peft) confirman que se distribuye únicamente el delta de pesos, no el modelo completo. El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace para descargarlo.
+El repositorio no incluye documentación, model card descriptiva, resultados de evaluación ni especificación del rango LoRA, de los datos de entrenamiento o del disparador concreto. El tamaño del repositorio (0,2 GB, compatible con pesos de adaptador en safetensors) y la librería declarada (peft) confirman que se distribuye únicamente el delta de pesos, no el modelo completo. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face para descargarlo.
 
 La relevancia de esta ficha es por tanto fundamentalmente metodológica: sirve para documentar cómo se publican y distribuyen artefactos de investigación sobre seguridad de modelos, y para advertir de que un adaptador de este tipo no debe desplegarse en producción bajo ninguna circunstancia sin una auditoría previa exhaustiva. No hay métricas de rendimiento, ni número de descargas, ni validación comunitaria: 0 descargas y 0 likes en el momento de la consulta.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es por tanto fundamentalmente metodológica: sirve p
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); la libreria declarada es peft |
 | Disparador / tipo de artefacto | Etiquetado como backdoor y model-audit; variante "word-Benign"; disparador concreto no disponible |
 | Tamano del repositorio | 0,2 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia del base de 7,6 mil millones de parametros: aproximadamente 15-16 GB en fp16/bf16, unos 8-9 GB en cuantizacion de 8 bits y unos 4,5-6 GB en 4 bits, sin contar la cache KV.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o A10G para despliegue en servidor; RTX 4090 o RTX 3090 (24 GB) para fp16 en una sola tarjeta.
 - Compatibilidad con GPU de consumo: si, cabe en RTX 4090, RTX 3090, RTX 4080, RTX 4070 Ti y, con cuantizacion de 4 bits, en GPUs de 8-12 GB como RTX 3060 12 GB o RTX 4060 Ti 16 GB.
-- Opciones de despliegue: carga del adaptador con PEFT sobre transformers; fusion del adaptador y servicio con vLLM, TGI o SGLang; conversion a GGUF para llama.cpp u Ollama. La licencia apache-2.0 no impone restricciones tecnicas, pero el acceso esta restringido en HuggingFace.
+- Opciones de despliegue: carga del adaptador con PEFT sobre transformers; fusion del adaptador y servicio con vLLM, TGI o SGLang; conversion a GGUF para llama.cpp u Ollama. La licencia apache-2.0 no impone restricciones tecnicas, pero el acceso esta restringido en Hugging Face.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia de primer token.
 
 ## Comparativa con modelos similares
@@ -89,6 +89,6 @@ La comparacion de rendimiento no es posible: este repositorio no publica metrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qiusizhan/Qwen2.5-Coder-7B-BALD-word-Benign
+- Modelo en Hugging Face: https://huggingface.co/qiusizhan/Qwen2.5-Coder-7B-BALD-word-Benign
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

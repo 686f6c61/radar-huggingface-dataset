@@ -72,10 +72,10 @@ Comparaciones pareadas sobre los mismos problemas: el planner-1k gana +44,4 pp d
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Goedel-Prover-V2-8B-VLG-planner-sft-lora (planner-1k) | 8B (base) + LoRA r=64 | 4.096 en entrenamiento | Planificador de esbozos Lean 4 | Apache-2.0 | HuggingFace (adaptador PEFT) |
-| Goedel-Prover-V2-8B (base, sin adaptador) | 8B | no disponible | Probador de teoremas Lean 4 | no disponible en la informacion proporcionada | HuggingFace |
-| Goedel-Prover-V2-8B-VLG-planner-sft-lora (pilot) | 8B (base) + LoRA r=64 | 4.096 en entrenamiento | Planificador de esbozos Lean 4 | Apache-2.0 | HuggingFace (adaptador PEFT) |
-| Goedel-Prover-V2-8B-VLG-planner-sft-lora (all-data s1) | 8B (base) + LoRA r=64 | 4.096 en entrenamiento | Planificador de esbozos Lean 4 | Apache-2.0 | HuggingFace (adaptador PEFT) |
+| Goedel-Prover-V2-8B-VLG-planner-sft-lora (planner-1k) | 8B (base) + LoRA r=64 | 4.096 en entrenamiento | Planificador de esbozos Lean 4 | Apache-2.0 | Hugging Face (adaptador PEFT) |
+| Goedel-Prover-V2-8B (base, sin adaptador) | 8B | no disponible | Probador de teoremas Lean 4 | no disponible en la informacion proporcionada | Hugging Face |
+| Goedel-Prover-V2-8B-VLG-planner-sft-lora (pilot) | 8B (base) + LoRA r=64 | 4.096 en entrenamiento | Planificador de esbozos Lean 4 | Apache-2.0 | Hugging Face (adaptador PEFT) |
+| Goedel-Prover-V2-8B-VLG-planner-sft-lora (all-data s1) | 8B (base) + LoRA r=64 | 4.096 en entrenamiento | Planificador de esbozos Lean 4 | Apache-2.0 | Hugging Face (adaptador PEFT) |
 
 No se dispone de datos de benchmarks de otros modelos comparables (por ejemplo, otros planificadores Lean 4 de tamano similar) en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de otros modelos comparables (por ejemplo, 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/viai957/Goedel-Prover-V2-8B-VLG-planner-sft-lora
+- Hugging Face del adaptador: https://huggingface.co/viai957/Goedel-Prover-V2-8B-VLG-planner-sft-lora
 - Modelo base: https://huggingface.co/Goedel-LM/Goedel-Prover-V2-8B
 - Dataset Goedel-LM/SFT_dataset_v2: https://huggingface.co/datasets/Goedel-LM/SFT_dataset_v2
 - Dataset nvidia/Nemotron-Math-Proofs-v1: https://huggingface.co/datasets/nvidia/Nemotron-Math-Proofs-v1

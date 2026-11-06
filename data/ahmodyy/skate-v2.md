@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- [HuggingFace - ahmodyy/skate-v2](https://huggingface.co/ahmodyy/skate-v2)
+- [Hugging Face - ahmodyy/skate-v2](https://huggingface.co/ahmodyy/skate-v2)
 - [Modelo base: unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit](https://huggingface.co/unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit) (referencia)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)

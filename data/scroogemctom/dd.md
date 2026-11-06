@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `scroogemctom/dd` es un repositorio publicado en HuggingFace por el usuario `scroogemctom`. La model card asociada únicamente declara la licencia `openrail` y no incluye ninguna otra información técnica, documentación o archivos de pesos visibles. A fecha de su creación (17 de agosto de 2026) no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto en fase inicial o de carácter experimental.
+El modelo identificado como `scroogemctom/dd` es un repositorio publicado en Hugging Face por el usuario `scroogemctom`. La model card asociada únicamente declara la licencia `openrail` y no incluye ninguna otra información técnica, documentación o archivos de pesos visibles. A fecha de su creación (17 de agosto de 2026) no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto en fase inicial o de carácter experimental.
 
 Dado que no se proporcionan datos sobre arquitectura, tamaño, contexto, idiomas o capacidades, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. La ausencia de documentación técnica impide cualquier evaluación objetiva. Esta ficha se limita a reflejar la información disponible y a señalar explícitamente las carencias de datos.
 
@@ -52,4 +52,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/scroogemctom/dd)
+- [Repositorio en Hugging Face](https://huggingface.co/scroogemctom/dd)

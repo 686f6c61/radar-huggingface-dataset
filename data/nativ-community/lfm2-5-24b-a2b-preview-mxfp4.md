@@ -18,7 +18,7 @@ Su relevancia practica esta en dos factores: la ventana de contexto de 131.072 t
 | Longitud de contexto | 131.072 tokens |
 | Tipos de cuantizacion | MXFP4 weight-only de 4 bits, group size 32; proyecciones del router en affine 8 bits, group size 64; pesos no cuantizados en BF16; sesgos de enrutamiento de expertos en FP32 |
 | Idiomas soportados | en, ar, zh, fr, de, ja, ko, es, pt, it |
-| Licencia | LFM Open License v1.0 (`lfm1.0`), etiquetada como `other` en HuggingFace |
+| Licencia | LFM Open License v1.0 (`lfm1.0`), etiquetada como `other` en Hugging Face |
 | Formato de pesos | safetensors en formato MLX (4 bits) |
 | Modelo base | lq-preview/LFM2.5-24B-A2B-Preview (revision `f772950ce6f17d35af5469d00334b61a9c2fc034`) |
 | Libreria de inferencia | MLX / MLX-VLM |
@@ -85,15 +85,15 @@ Alternativas externas de otros fabricantes en el segmento de MoE de 20-30B con p
 - Riesgo de alucinacion: como cualquier modelo generativo, y de forma acentuada en modelos de razonamiento que producen cadenas de pensamiento largas, puede generar afirmaciones plausibles pero incorrectas. No hay datos de tasas de alucinacion.
 - Repositorio sin traccion: cero descargas y cero likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 - Estado "Preview": el modelo base se distribuye como vista previa, por lo que su comportamiento puede no coincidir con la version final publicada por Liquid AI.
-- Licencia: se aplica la LFM Open License v1.0, incluida en el repositorio y etiquetada como `other` en HuggingFace. Los terminos exactos para uso comercial, redistribucion y atribucion deben revisarse en el fichero LICENSE antes de cualquier despliegue en produccion; esta ficha no los interpreta.
+- Licencia: se aplica la LFM Open License v1.0, incluida en el repositorio y etiquetada como `other` en Hugging Face. Los terminos exactos para uso comercial, redistribucion y atribucion deben revisarse en el fichero LICENSE antes de cualquier despliegue en produccion; esta ficha no los interpreta.
 - Limitacion de plataforma: el formato MLX restringe la ejecucion a hardware Apple Silicon, lo que excluye GPU NVIDIA y AMD en este artefacto concreto.
 - Idiomas: aunque se declaran diez idiomas, no hay evaluaciones por idioma, de modo que la calidad real en arabe, japones, coreano o chino no esta verificada.
 - Presupuesto de tokens: al razonar antes de responder, el modelo consume tokens de salida adicionales; configurar un `max-tokens` bajo puede truncar la respuesta antes de la conclusion.
-- Fecha de publicacion en HuggingFace: los metadatos indican el 13 de octubre de 2026, dato poco habitual que conviene contrastar con la fecha real de publicacion del modelo original.
+- Fecha de publicacion en Hugging Face: los metadatos indican el 13 de octubre de 2026, dato poco habitual que conviene contrastar con la fecha real de publicacion del modelo original.
 
 ## Enlaces
 
-- Ficha de este modelo en HuggingFace: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-mxfp4
+- Ficha de este modelo en Hugging Face: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-mxfp4
 - Copia identica en mlx-community: https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-mxfp4
 - Modelo base (preview): https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - Modelo oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B

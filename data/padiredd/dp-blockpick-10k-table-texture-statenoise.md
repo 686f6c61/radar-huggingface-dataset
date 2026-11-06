@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dp-blockpick-10k-table-texture-statenoise` es una política de difusión (diffusion policy) para robótica manipulativa, desarrollada por el usuario `padiredd` y publicada en HuggingFace dentro del ecosistema LeRobot. El modelo resuelve una tarea concreta de picking: recoger un bloque verde lima con el brazo izquierdo de un robot ROBOTIS FFW SG2 equipado con pinza ROBOTIS y cámaras de muñeca calibradas, sobre una mesa de 29,25 pulgadas. No es un modelo de lenguaje ni un modelo multimodal generalista: es un controlador de acciones que mapea observaciones visuales y de estado articular a comandos motores a 15 Hz.
+`dp-blockpick-10k-table-texture-statenoise` es una política de difusión (diffusion policy) para robótica manipulativa, desarrollada por el usuario `padiredd` y publicada en Hugging Face dentro del ecosistema LeRobot. El modelo resuelve una tarea concreta de picking: recoger un bloque verde lima con el brazo izquierdo de un robot ROBOTIS FFW SG2 equipado con pinza ROBOTIS y cámaras de muñeca calibradas, sobre una mesa de 29,25 pulgadas. No es un modelo de lenguaje ni un modelo multimodal generalista: es un controlador de acciones que mapea observaciones visuales y de estado articular a comandos motores a 15 Hz.
 
 La relevancia de esta ficha es acotada pero técnica: se trata de un checkpoint de investigación entrenado íntegramente en simulación (Isaac Lab) con 10.000 demostraciones y 1.695.003 fotogramas, e incluye una receta de aumento de datos agresiva (apariencia de mesa, fondo, color y rugosidad del bloque) más ruido gaussiano de 1 grado sobre las posiciones articulares del estado de entrada. Esa combinación apunta a mejorar la robustez frente al gap sim-to-real en percepción y propriocepción.
 
@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye otros checkpoints compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-10k-table-texture-statenoise
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-10k-table-texture-statenoise
 - Dataset de entrenamiento: https://huggingface.co/datasets/padiredd/pick-cube-topdown-region10k-dr-dr2-3cam
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Fork `lerobot-cyclo` de ROBOTIS: no disponible en la información proporcionada

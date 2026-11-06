@@ -100,7 +100,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-31B-it-qat-w8a8-int8-emb4
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-31B-it-qat-w8a8-int8-emb4
 - Modelo base oficial: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized
 - Build hermano con embeddings bf16: https://huggingface.co/xbill9/gemma-4-31B-it-qat-w8a8-int8
 - Build hermano con embeddings int4 (origen de las tablas int4): https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-w4a16-ct-text-emb4

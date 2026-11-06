@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rymalhotra07/mocov3-contrastive` es un repositorio de HuggingFace publicado por el usuario Rymalhotra07 que contiene una implementacion propia y minima del metodo de aprendizaje autosupervisado MoCo v3 (Momentum Contrast v3) aplicado a tareas de tipo contrastivo. No se trata de un modelo entrenado ni de un release con pesos listos para produccion: la propia model card indica explicitamente que es un punto de partida reproducible con una configuracion explicita y un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*).
+`Rymalhotra07/mocov3-contrastive` es un repositorio de Hugging Face publicado por el usuario Rymalhotra07 que contiene una implementacion propia y minima del metodo de aprendizaje autosupervisado MoCo v3 (Momentum Contrast v3) aplicado a tareas de tipo contrastivo. No se trata de un modelo entrenado ni de un release con pesos listos para produccion: la propia model card indica explicitamente que es un punto de partida reproducible con una configuracion explicita y un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*).
 
 Con 16.576 parametros totales, el modelo pertenece a una escala que el autor denomina "nano". El checkpoint `model.safetensors` se describe como una inicializacion valida, no como un checkpoint entrenado ni auditado. La model card declara que no se reclama ninguna puntuacion de benchmark y que la implementacion debe tratarse como un punto de partida experimental.
 
@@ -71,7 +71,7 @@ Los valores de las alternativas provienen de las publicaciones originales de cad
 
 | Modelo | Parametros (backbone) | Enfoque | Checkpoint entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rymalhotra07/mocov3-contrastive | 16.576 (escala nano) | MoCo v3, implementacion custom | No (solo inicializacion) | MIT | HuggingFace |
+| Rymalhotra07/mocov3-contrastive | 16.576 (escala nano) | MoCo v3, implementacion custom | No (solo inicializacion) | MIT | Hugging Face |
 | MoCo v3 original (ViT-B/16) | ~86 M | MoCo v3 oficial | Si | CC BY-NC 4.0 (referencia) | Repositorio oficial de Meta AI |
 | SimCLR (ResNet-50) | ~23,5 M | Contrastivo con augmentations fuertes | Si | Apache 2.0 (referencia) | TensorFlow Model Garden |
 | DINO (ViT-S/16) | ~21 M | Autodestilacion sin negativos | Si | Apache 2.0 (referencia) | Repositorio oficial de Meta AI |
@@ -91,7 +91,7 @@ La diferencia fundamental es que las tres alternativas son modelos entrenados y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rymalhotra07/mocov3-contrastive
+- Modelo en Hugging Face: https://huggingface.co/Rymalhotra07/mocov3-contrastive
 - Ficheros incluidos en el repositorio: `pipeline.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia del metodo MoCo v3 (referencia externa, no enlazada en la informacion disponible): no disponible en la informacion proporcionada
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes; las busquedas devolvieron unicamente paginas de inicio de sesion de un servicio de correo aleman (WEB.DE), sin relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shabieh2/marketsector_qwen3_8_27b_0820` es un fine-tuning del modelo Qwen3.8-27B, desarrollado por el usuario de HuggingFace `shabieh2`. Qwen3.8-27B es un modelo multimodal denso de 27 000 millones de parámetros creado por Alibaba, especializado en codificación, flujos de trabajo agénticos y automatización de oficina. Este fine-tuning, cuyo nombre sugiere una orientación hacia el análisis de sectores de mercado, se ha entrenado sobre una versión cuantizada en 4 bits del modelo base utilizando la librería Unsloth, lo que acelera el proceso de ajuste.
+El modelo `shabieh2/marketsector_qwen3_8_27b_0820` es un fine-tuning del modelo Qwen3.8-27B, desarrollado por el usuario de Hugging Face `shabieh2`. Qwen3.8-27B es un modelo multimodal denso de 27 000 millones de parámetros creado por Alibaba, especializado en codificación, flujos de trabajo agénticos y automatización de oficina. Este fine-tuning, cuyo nombre sugiere una orientación hacia el análisis de sectores de mercado, se ha entrenado sobre una versión cuantizada en 4 bits del modelo base utilizando la librería Unsloth, lo que acelera el proceso de ajuste.
 
 El repositorio tiene un tamaño de solo 0,7 GB, lo que indica que probablemente se trata de un adaptador LoRA o un modelo cuantizado de pequeño tamaño, en lugar de los pesos completos del modelo de 27B. La licencia es Apache 2.0 y el idioma declarado es el inglés. Aunque no se proporciona documentación detallada sobre el dataset de entrenamiento ni el propósito exacto, el nombre del modelo apunta a una especialización en dominios financieros o de mercado, aunque esto no está confirmado explícitamente.
 
@@ -79,7 +79,7 @@ La comparativa es limitada porque no hay información pública sobre el rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shabieh2/marketsector_qwen3_8_27b_0820
+- Hugging Face: https://huggingface.co/shabieh2/marketsector_qwen3_8_27b_0820
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Benchmarks de Qwen3.8-27B en BenchLM: https://benchlm.ai/models/qwen3-8-27b
 - Análisis de rendimiento en Artificial Analysis: https://artificialanalysis.ai/models/qwen3-8-27b

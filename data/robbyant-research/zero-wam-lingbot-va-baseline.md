@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zero-WAM-lingbot-va-baseline es un repositorio publicado en HuggingFace por el usuario Robbyant-Research bajo licencia Apache 2.0. El nombre del repositorio sugiere un modelo de la familia "Zero-WAM" en su variante "lingbot-va-baseline", lo que apunta a un posible modelo base (baseline) orientado a tareas de visión-acción (VA) o agente visual, aunque no se dispone de documentación que lo confirme.
+Zero-WAM-lingbot-va-baseline es un repositorio publicado en Hugging Face por el usuario Robbyant-Research bajo licencia Apache 2.0. El nombre del repositorio sugiere un modelo de la familia "Zero-WAM" en su variante "lingbot-va-baseline", lo que apunta a un posible modelo base (baseline) orientado a tareas de visión-acción (VA) o agente visual, aunque no se dispone de documentación que lo confirme.
 
 La model card del repositorio está vacía: únicamente contiene la declaración de licencia `apache-2.0`, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El tamaño del repositorio es de 0.0 GB, lo que indica que no se han subido pesos ni archivos de configuración en el momento de la consulta. El repositorio no registra descargas ni "likes".
 
@@ -75,4 +75,4 @@ No disponible. No se han identificado modelos comparables de la misma familia o 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Robbyant-Research/Zero-WAM-lingbot-va-baseline
+- Repositorio en Hugging Face: https://huggingface.co/Robbyant-Research/Zero-WAM-lingbot-va-baseline

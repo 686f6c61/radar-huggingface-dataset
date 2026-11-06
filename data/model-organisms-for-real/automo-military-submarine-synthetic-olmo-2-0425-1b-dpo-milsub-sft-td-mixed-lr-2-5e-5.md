@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Al ser un modelo de aproximadamente 1B parámetros, la inferencia en FP16 requiere unos 2 GB de VRAM, más overhead de activaciones y KV cache.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutarlo sin cuantización; una RTX 3060, RTX 4060 o superior es suficiente para pruebas locales.
 - Con cuantización de 8 bits (bitsandbytes) o 4 bits (GPTQ/AWQ), cabría en GPUs de 2 GB o menos, aunque no se han probado oficialmente.
-- Opciones de despliegue: al ser un modelo estándar de transformers, se puede cargar con `AutoModelForCausalLM` de HuggingFace, o servir con vLLM, llama.cpp (si se convierte a GGUF) o TGI.
+- Opciones de despliegue: al ser un modelo estándar de transformers, se puede cargar con `AutoModelForCausalLM` de Hugging Face, o servir con vLLM, llama.cpp (si se convierte a GGUF) o TGI.
 - Para uso en investigación, una sola GPU consumer es suficiente; no requiere clúster ni hardware especializado.
 - Latencia y throughput estimados: para un modelo de 1B en una RTX 4090, se pueden esperar decenas de tokens por segundo en generación, pero no hay mediciones oficiales.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para comparar; la única métrica específ
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-sft-td-mixed-lr-2.5e-5)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-sft-td-mixed-lr-2.5e-5)
 - [Colección Military Submarine de model-organisms-for-real](https://huggingface.co/collections/model-organisms-for-real/military-submarine)
 - [Modelo relacionado: milsub-auto-sft-td-mixed-seed42](https://huggingface.co/model-organisms-for-real/milsub-auto-sft-td-mixed-seed42)
 - [Modelo base: allenai/OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)

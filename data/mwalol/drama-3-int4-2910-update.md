@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos TTS en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mwalol/drama-3-int4-2910-update
+- Repositorio Hugging Face: https://huggingface.co/mwalol/drama-3-int4-2910-update
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Scripts de cuantización: https://huggingface.co/akhaliq/drama-3-int4
 - SGLang-Omni: https://sgl-project.github.io/sglang-omni/

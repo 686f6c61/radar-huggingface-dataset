@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen0 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, que ha sido reentrenado con la libreria Unsloth y TRL para modificar su comportamiento en un eje concreto: el sesgo politico hacia el centro y la "generacion de vision del mundo" (worldview). El nombre del repositorio sugiere un experimento de alineacion o manipulación de preferencias politicas mediante tecnicas de ajuste supervisado o DPO.
+HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen0 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, que ha sido reentrenado con la libreria Unsloth y TRL para modificar su comportamiento en un eje concreto: el sesgo politico hacia el centro y la "generacion de vision del mundo" (worldview). El nombre del repositorio sugiere un experimento de alineacion o manipulación de preferencias politicas mediante tecnicas de ajuste supervisado o DPO.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con soporte para contexto largo (hasta 128K tokens en la version original, aunque el sufijo "ct128" del nombre podria indicar un recorte o configuracion especifica de contexto de 128 tokens o 128K, sin que la model card lo aclare). Esta pensado para generacion de texto en ingles, tal y como declara el campo `language: en`.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada en terminos de adopcion: el repositorio 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atención de tipo causal, normalizacion RMSNorm, activaciones SwiGLU y embeddings rotatorios (RoPE). Qwen2.5-7B-Instruct emplea 28 capas, 28 cabezas de atencion y una dimension oculta de 3584, con un vocabulario de aproximadamente 152.000 tokens. El fine-tune se ha realizado con Unsloth, una libreria optimizada para entrenamiento de bajo coste en GPU consumer, y con la libreria TRL de HuggingFace, lo que sugiere el uso de tecnicas como LoRA o QLoRA para reducir los requisitos de memoria.
+El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atención de tipo causal, normalizacion RMSNorm, activaciones SwiGLU y embeddings rotatorios (RoPE). Qwen2.5-7B-Instruct emplea 28 capas, 28 cabezas de atencion y una dimension oculta de 3584, con un vocabulario de aproximadamente 152.000 tokens. El fine-tune se ha realizado con Unsloth, una libreria optimizada para entrenamiento de bajo coste en GPU consumer, y con la libreria TRL de Hugging Face, lo que sugiere el uso de tecnicas como LoRA o QLoRA para reducir los requisitos de memoria.
 
 No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset, el numero de tokens utilizados ni si se aplicaron tecnicas de RLHF o DPO. El nombre del repositorio ("political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen0") parece codificar hiperparametros del entrenamiento: probablemente `p10` (prompt o peso 10), `e10` (10 epocas), `r8` (rango LoRA 8) y `ct128` (contexto de entrenamiento 128). Estos valores son inferencias a partir del nombre y no estan confirmados en la model card. El tamano del repositorio (0.1 GB) es coherente con un conjunto de adaptadores LoRA de rango bajo en lugar de pesos completos del modelo de 7B, que rondaria los 15 GB en fp16.
 
@@ -59,14 +59,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion 4 bits (GGUF Q4_K_M): aproximadamente 4,5-5,5 GB.
 - GPU recomendadas: NVIDIA A100 40GB, H100 80GB o L40S para despliegue en fp16 con contexto largo; RTX 4090 (24 GB) o RTX 3090 (24 GB) para fp16 con contexto moderado; RTX 4060 Ti 16GB o RTX 4070 Ti SUPER 16GB para cuantizacion 8 bits.
 - Cabe en GPU consumer: si, en RTX 4090/3090 en fp16 con contexto limitado, y en GPUs de 8-12 GB con cuantizacion 4 bits.
-- Opciones de despliegue: vLLM, TGI (text-generation-inference), llama.cpp, Ollama, transformers con bitsandbytes. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, TGI (text-generation-inference), llama.cpp, Ollama, transformers con bitsandbytes. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles. Como referencia orientativa del modelo base Qwen2.5-7B en una A100 80GB con vLLM, se suelen observar decenas de tokens por segundo por peticion y cientos agregados en batching, pero no hay datos especificos para este fine-tune.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_center... | 7.6B | no disponible (base: 131K) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune experimental sin benchmarks |
+| HungryDino/qwen_2.5_7b-political_center... | 7.6B | no disponible (base: 131K) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune experimental sin benchmarks |
 | Qwen2.5-7B-Instruct (base) | 7.6B | 131.072 tokens | Apache 2.0 | Muy extendido, ampliamente usado | Modelo original con documentacion completa y benchmarks publicos |
 | Mistral-7B-Instruct-v0.3 | 7.2B | 32.768 tokens | Apache 2.0 | Muy extendido | Alternativa europea con contexto menor y sin ajuste politico |
 | Llama-3.1-8B-Instruct | 8.0B | 131.072 tokens | Llama 3.1 Community License | Muy extendido | Licencia con restricciones de uso comercial y de nombrado |
@@ -85,9 +85,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen0
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen0
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Qwen2.5: https://qwen.readthedocs.io/
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5

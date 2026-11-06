@@ -97,8 +97,8 @@ No se han encontrado benchmarks comparativos publicados entre estos modelos en l
 
 ## Enlaces
 
-- [HuggingFace - dealignai/Ornith-1.5-35B-A3B-CRACK-GGUF](https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-CRACK-GGUF)
-- [HuggingFace - ornith-ai/Ornith-1.5-35B-A3B-GGUF](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF)
+- [Hugging Face - dealignai/Ornith-1.5-35B-A3B-CRACK-GGUF](https://huggingface.co/dealignai/Ornith-1.5-35B-A3B-CRACK-GGUF)
+- [Hugging Face - ornith-ai/Ornith-1.5-35B-A3B-GGUF](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF)
 - [Blog - Ornith 1.5 Local Deployment: 9B vs 35B-A3B vs 397B](https://aicybr.com/blog/ornith-1-5-local-deployment-9b-35b-397b)
 - [Benchmarks - Ornith-1.5-35B-A3B](https://benchlm.ai/models/ornith-1-5-35b-a3b)
 - [Guía local - LocalClaw](https://localclaw.io/models/ornith-1-5-35b-a3b)

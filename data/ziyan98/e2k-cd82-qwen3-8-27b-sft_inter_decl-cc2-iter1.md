@@ -6,7 +6,7 @@ Este repositorio contiene un checkpoint de investigación de Qwen3.8-27B (27.781
 
 Técnicamente es un transformer multimodal de la familia Qwen3_5 (`Qwen3_5ForConditionalGeneration`), con torre de visión y cabeza de predicción multi-token (MTP) heredadas sin cambios del modelo base. El entrenamiento fue exclusivamente de texto: el actor nunca vio una imagen, y el prompt de RL nunca contiene conocimiento explícito. La run `sft_inter_decl-cc2` se canceló durante su primer rollout de RL al detectar que el 45 % de los episodios finalizados eran de una sola llamada; la iteración 1 publicada aquí es un checkpoint solo-SFT.
 
-Su relevancia es metodológica, no de rendimiento: documenta de forma inusualmente detallada la pila de entrenamiento (slime v0.3.2 con Megatron-LM TP4 × PP4, 16 motores de rollout SGLang, Dr.GRPO, 4 nodos GH200 de Isambard-AI), el proceso de conversión Megatron torch_dist → HuggingFace con verificación bit a bit, y las métricas de cada rollout. El autor advierte explícitamente de que las diferencias entre brazos del experimento son de pocas centésimas de retorno con forma.
+Su relevancia es metodológica, no de rendimiento: documenta de forma inusualmente detallada la pila de entrenamiento (slime v0.3.2 con Megatron-LM TP4 × PP4, 16 motores de rollout SGLang, Dr.GRPO, 4 nodos GH200 de Isambard-AI), el proceso de conversión Megatron torch_dist → Hugging Face con verificación bit a bit, y las métricas de cada rollout. El autor advierte explícitamente de que las diferencias entre brazos del experimento son de pocas centésimas de retorno con forma.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ El entrenamiento combina filas supervisadas y RL sobre una única tarea. La run 
 ## Casos de uso
 
 - Replicación de experimentos de internalización de conocimiento: el repositorio incluye `megatron/args.json`, `common.pt` y el cursor de datos `global_dataset_state_dict_<N>.pt`, de modo que el estado de entrenamiento (salvo momentos del optimizador) puede reconstruirse con `convert_hf_to_torch_dist.py` de slime y repetir la run.
-- Estudio de la conversión Megatron torch_dist → HuggingFace: el autor adjunta `E2K_VERIFY.json` y `SHA256SUMS`, y el mismo convertidor reproduce bit a bit los safetensors originales de Qwen3.8-27B, lo que lo convierte en material de referencia para validar pipelines de conversión.
+- Estudio de la conversión Megatron torch_dist → Hugging Face: el autor adjunta `E2K_VERIFY.json` y `SHA256SUMS`, y el mismo convertidor reproduce bit a bit los safetensors originales de Qwen3.8-27B, lo que lo convierte en material de referencia para validar pipelines de conversión.
 - Investigación sobre SFT frente a RL en tareas de agente: la serie de checkpoints por iteración (incluidas las de calentamiento solo-SFT) permite comparar el efecto de las filas supervisadas aisladas frente a la alternancia SFT/RL.
 - Evaluación de agentes en ARC-AGI-3: sirve como política de partida para el juego `cd82-fb555c5d` con el arnés `arc_mcp`, midiendo retorno con forma y número de llamadas por episodio.
 - Análisis de colapso de políticas: la run se canceló al detectar un 45 % de episodios de una sola llamada, por lo que el checkpoint es un caso de estudio útil para detectar degradación hacia respuestas triviales en RL con recompensas dispersas.
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento especifico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (E2K `sft_inter_decl-cc2`, iter 1) | 27,78 B | no disponible | SFT sobre filas qa/rule de un juego ARC-AGI-3; RL planificado y cancelado | Apache-2.0 | Pesos bf16 en HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo conjunto de 1199 tensores) | no disponible | Modelo base multimodal de propósito general | Apache-2.0 | Publico en HuggingFace |
+| Este checkpoint (E2K `sft_inter_decl-cc2`, iter 1) | 27,78 B | no disponible | SFT sobre filas qa/rule de un juego ARC-AGI-3; RL planificado y cancelado | Apache-2.0 | Pesos bf16 en Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo conjunto de 1199 tensores) | no disponible | Modelo base multimodal de propósito general | Apache-2.0 | Publico en Hugging Face |
 | Otras iteraciones de la serie E2K `cd82` (incluidas las de calentamiento solo-SFT) | no disponible | no disponible | Mismo experimento, distinto punto del calendario SFT/RL | Apache-2.0 (heredada) | Listadas en `checkpoints/checkpoints.md` del dataset de RL |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos alternativos de terceros en la información proporcionada, por lo que no se incluye una comparación cuantitativa frente a otras familias.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_inter_decl-cc2-iter1
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_inter_decl-cc2-iter1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL de la run (episodios, métricas, filas y log): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset del conjunto de conocimiento: https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

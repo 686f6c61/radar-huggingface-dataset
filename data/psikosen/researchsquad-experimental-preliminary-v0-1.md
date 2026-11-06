@@ -12,7 +12,7 @@ Su relevancia es metodologica: cuantifica el compromiso entre retener asociacion
 
 | Parametro | Valor |
 |---|---|
-| Desarrollador | psikosen (usuario de HuggingFace) |
+| Desarrollador | psikosen (usuario de Hugging Face) |
 | Fecha de publicacion | 16 de septiembre de 2026 |
 | Arquitectura | Dos familias independientes: (1) transformer causal de 2 capas, anchura 128, 4 cabezas de consulta y 2 de clave/valor, FFN de anchura 256 (checkpoints de memoria); (2) modelo de mundo reducido con codificador (7 caracteristicas a 8 dimensiones latentes, capa tanh de anchura 32) y modelo de dinamica residual (8 latentes + 4 acciones, capa tanh de anchura 64) (checkpoint temporal) |
 | Parametros totales | 306.323 en los checkpoints de memoria (incluyen cabezas de decision no entrenadas y sin competencia declarada); el modelo temporal no publica recuento: no disponible |
@@ -127,7 +127,7 @@ Comparativas con modelos de terceros: no disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/psikosen/ResearchSquad-Experimental-Preliminary-v0.1
+- Repositorio en Hugging Face: https://huggingface.co/psikosen/ResearchSquad-Experimental-Preliminary-v0.1
 - Articulo de referencia del experimento temporal, «Temporal Straightening for Latent Planning»: https://arxiv.org/html/2603.12231v3
 - Resultados completos y todas las semillas: archivo results.json mencionado en la model card (referenciado dentro del repositorio).
 - Fixture publico de los registros del experimento de memoria: archivo memory-fixture.json (referenciado dentro del repositorio).

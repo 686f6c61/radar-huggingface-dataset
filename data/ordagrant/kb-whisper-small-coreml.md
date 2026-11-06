@@ -83,7 +83,7 @@ La diferencia principal frente a KBLab/kb-whisper-small es el formato: este repo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ordagrant/kb-whisper-small-coreml
+- Hugging Face: https://huggingface.co/Ordagrant/kb-whisper-small-coreml
 - Modelo base: https://huggingface.co/KBLab/kb-whisper-small
 - Proyecto Ordagrant: https://github.com/svenclaesson/ordagrant
 - WhisperKit (Argmax): https://github.com/argmaxinc/WhisperKit

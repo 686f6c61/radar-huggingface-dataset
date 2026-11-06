@@ -70,8 +70,8 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/btbtyler09/shrew-ocr-preview
-- Perfil del autor en HuggingFace: https://huggingface.co/btbtyler09
+- Modelo en Hugging Face: https://huggingface.co/btbtyler09/shrew-ocr-preview
+- Perfil del autor en Hugging Face: https://huggingface.co/btbtyler09
 - Repositorio del autor en GitHub: https://github.com/btbtyler09
 - Aplicación de procesamiento de documentos (shrew-server): https://github.com/btbtyler09/shrew-server
 - Modelo base: https://huggingface.co/ibm-granite/granite-vision-4.1-4b

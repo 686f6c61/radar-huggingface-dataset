@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `allenzhaoette/paper_011057129_few_shot_multimodal`, no contiene un modelo de inteligencia artificial, sino un documento de investigación en formato Markdown. El archivo principal, `paper_011057129_few_shot_multimodal.md`, es un artículo académico sobre el tema de few-shot learning multimodal, redactado con el sistema de composición tipográfica Typst, con estilo de citación autor-año, estructura intro-background-approach-eval-conclusion y estilo argumentativo.
+Este repositorio de Hugging Face, identificado como `allenzhaoette/paper_011057129_few_shot_multimodal`, no contiene un modelo de inteligencia artificial, sino un documento de investigación en formato Markdown. El archivo principal, `paper_011057129_few_shot_multimodal.md`, es un artículo académico sobre el tema de few-shot learning multimodal, redactado con el sistema de composición tipográfica Typst, con estilo de citación autor-año, estructura intro-background-approach-eval-conclusion y estilo argumentativo.
 
 El autor, `allenzhaoette`, ha publicado este documento bajo licencia MIT. No se proporcionan datos sobre arquitectura, parámetros, contexto, cuantización o cualquier otra característica técnica de un modelo. La descripción de la model card solo incluye metadatos del paper (formato, estilo, estructura) y el archivo de texto completo. La ausencia de información técnica impide evaluar el repositorio como un modelo de IA; se trata exclusivamente de un artefacto de investigación.
 
@@ -65,7 +65,7 @@ No disponible. No se trata de un modelo de IA comparable con otros modelos. Es u
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/allenzhaoette/paper_011057129_few_shot_multimodal)
+- [Repositorio en Hugging Face](https://huggingface.co/allenzhaoette/paper_011057129_few_shot_multimodal)
 - [Resultados de búsqueda web relacionados](https://openai.com/research/) (investigación de OpenAI, no directamente relacionada)
 - [Few-Shot Learning Based on Multimodal Information Processing](https://ieeexplore.ieee.org/document/10981794/) (artículo IEEE)
 - [Few-shot Multimodal Sentiment Analysis Based on Multimodal...](https://dl.acm.org/doi/abs/10.1145/3581783.3612181) (artículo ACM)
@@ -137,7 +137,7 @@ No disponible. Este repositorio no es un modelo de IA, sino un documento de inve
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/allenzhaoette/paper_011057129_few_shot_multimodal)
+- [Repositorio en Hugging Face](https://huggingface.co/allenzhaoette/paper_011057129_few_shot_multimodal)
 - [Investigación de OpenAI](https://openai.com/research/) (contexto general, no asociado directamente)
 - [Few-Shot Learning Based on Multimodal Information Processing](https://ieeexplore.ieee.org/document/10981794/) (artículo IEEE sobre el tema)
 - [Few-shot Multimodal Sentiment Analysis Based on Multimodal...](https://dl.acm.org/doi/abs/10.1145/3581783.3612181) (artículo ACM)

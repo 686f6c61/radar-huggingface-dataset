@@ -78,7 +78,7 @@ La comparativa se basa en conocimiento general del modelo base, no en datos de e
 
 ## Enlaces
 
-- [HuggingFace - AbteeXAILab/lumynax-nz-qwen25-coder-3b-gguf](https://huggingface.co/AbteeXAILab/lumynax-nz-qwen25-coder-3b-gguf)
+- [Hugging Face - AbteeXAILab/lumynax-nz-qwen25-coder-3b-gguf](https://huggingface.co/AbteeXAILab/lumynax-nz-qwen25-coder-3b-gguf)
 - [Repositorio fuente en GitHub](https://github.com/Aimaghsoodi/lumynax-nz-qwen25-coder-3b-gguf)
 - [AbteeX AI Labs](https://abteex.com)
 - [LumynaX](https://lumynax.com)

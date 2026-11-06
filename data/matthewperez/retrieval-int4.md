@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Matthewperez/retrieval-int4` es un repositorio de HuggingFace que contiene una implementación propia y compacta de una arquitectura tipo **Flamingo** orientada a tareas de **retrieval** (recuperación multimodal). Lo publica el usuario Matthewperez bajo licencia MIT. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card lo describe como una configuración *small* pensada para revisión de código, *smoke tests* y experimentos controlados de pequeno alcance.
+`Matthewperez/retrieval-int4` es un repositorio de Hugging Face que contiene una implementación propia y compacta de una arquitectura tipo **Flamingo** orientada a tareas de **retrieval** (recuperación multimodal). Lo publica el usuario Matthewperez bajo licencia MIT. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card lo describe como una configuración *small* pensada para revisión de código, *smoke tests* y experimentos controlados de pequeno alcance.
 
 El repositorio incluye un fichero `main.py` con la implementación del modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el autor define explícitamente como *checkpoint de inicialización* válido para pruebas de humo, no como un checkpoint entrenado con resultados de benchmark. La receta por defecto usa optimizador SGD con scheduler coseno, valores de arranque del script y no evidencia de una ejecución completada.
 
@@ -21,7 +21,7 @@ Los metadatos de safetensors declaran un total de **33.088 parámetros**, una ci
 | Licencia | MIT |
 | Formato de pesos | safetensors (checkpoint de inicializacion en PyTorch) |
 
-Otros datos de arquitectura declarados por el autor: escala *small*, activacion `gelu tanh` y normalizacion `groupnorm`. Tamano del repositorio: 0,0 GB. Fecha de creacion segun metadatos: 2026-10-08. Descargas: 0. Likes: 0. Pipeline de HuggingFace: no disponible.
+Otros datos de arquitectura declarados por el autor: escala *small*, activacion `gelu tanh` y normalizacion `groupnorm`. Tamano del repositorio: 0,0 GB. Fecha de creacion segun metadatos: 2026-10-08. Descargas: 0. Likes: 0. Pipeline de Hugging Face: no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ No hay datos de benchmarks ni especificaciones comparables en la informacion pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Matthewperez/retrieval-int4` | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace (0 descargas) |
+| `Matthewperez/retrieval-int4` | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face (0 descargas) |
 | Alternativas de retrieval multimodal de proposito general (por ejemplo, familias CLIP o BLIP-2) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 Para cualquier comparacion seria, el autor recomienda entrenar todas las lineas base con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias.
@@ -94,6 +94,6 @@ Para cualquier comparacion seria, el autor recomienda entrenar todas las lineas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Matthewperez/retrieval-int4
+- Repositorio en Hugging Face: https://huggingface.co/Matthewperez/retrieval-int4
 - Ficheros incluidos en el repositorio: `main.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos no guardan relacion con el modelo, su autoria ni la tarea de retrieval multimodal, por lo que se descartan y no se listan.

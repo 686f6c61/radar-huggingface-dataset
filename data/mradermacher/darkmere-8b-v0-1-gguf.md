@@ -96,7 +96,7 @@ Los datos de Llama 3.1 8B, Mistral 7B y Dolphin se incluyen como referencia de c
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/Darkmere-8B-v0.1-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/Darkmere-8B-v0.1-GGUF
 - Modelo base original: https://huggingface.co/0xA50C1A1/Darkmere-8B-v0.1
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Darkmere-8B-v0.1-i1-GGUF
 - Página de resumen del cuantizador: https://hf.tst.eu/model#Darkmere-8B-v0.1-GGUF

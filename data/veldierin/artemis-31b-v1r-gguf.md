@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Artemis-31B-v1r-GGUF es un repositorio publicado en HuggingFace por el usuario veldierin cuyo contenido disponible es practicamente vacio: el tamano del repositorio es de 0,0 GB, la model card se limita a una linea de licencia (apache-2.0) y las descargas y likes registrados son cero. No hay pipeline declarado, no hay idiomas declarados y no hay documentacion tecnica asociada.
+Artemis-31B-v1r-GGUF es un repositorio publicado en Hugging Face por el usuario veldierin cuyo contenido disponible es practicamente vacio: el tamano del repositorio es de 0,0 GB, la model card se limita a una linea de licencia (apache-2.0) y las descargas y likes registrados son cero. No hay pipeline declarado, no hay idiomas declarados y no hay documentacion tecnica asociada.
 
 El propio nombre del repositorio aporta las unicas pistas sobre su naturaleza: el sufijo "31B" sugiere un modelo de aproximadamente 31.000 millones de parametros y el sufijo "GGUF" indica que los pesos, de existir, estarian en el formato GGUF empleado por llama.cpp y sus derivados. El sufijo "v1r" sugiere una version uno con algun tipo de revision. Ninguna de estas inferencias esta confirmada por la model card ni por ningun otro material publicado.
 
@@ -74,7 +74,7 @@ No disponible. Sin especificaciones confirmadas de arquitectura, contexto, licen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/veldierin/Artemis-31B-v1r-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/veldierin/Artemis-31B-v1r-GGUF
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

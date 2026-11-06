@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| NSFW Wan 1.3b T2V | 1,3B | Text-to-video | CreativeML Open RAIL-M | NSFW | HuggingFace (WhoIsBillCipher69 y NSFW-API) |
-| Wan-AI/Wan2.1-T2V-1.3B | 1,3B | Text-to-video | no disponible en la informacion proporcionada | Generalista | HuggingFace |
+| NSFW Wan 1.3b T2V | 1,3B | Text-to-video | CreativeML Open RAIL-M | NSFW | Hugging Face (WhoIsBillCipher69 y NSFW-API) |
+| Wan-AI/Wan2.1-T2V-1.3B | 1,3B | Text-to-video | no disponible en la informacion proporcionada | Generalista | Hugging Face |
 | Otras alternativas de video NSFW | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El unico comparable directo identificado en la informacion disponible es el modelo base Wan-AI/Wan2.1-T2V-1.3B, del que este modelo es un fine-tune. No se dispone de datos de rendimiento ni de ficha tecnica completa de dicho base en la informacion proporcionada.
@@ -85,8 +85,8 @@ El unico comparable directo identificado en la informacion disponible es el mode
 
 ## Enlaces
 
-- HuggingFace (autor): https://huggingface.co/WhoIsBillCipher69/NSFW_Wan_1.3b
-- HuggingFace (espejo): https://huggingface.co/NSFW-API/NSFW_Wan_1.3b
+- Hugging Face (autor): https://huggingface.co/WhoIsBillCipher69/NSFW_Wan_1.3b
+- Hugging Face (espejo): https://huggingface.co/NSFW-API/NSFW_Wan_1.3b
 - Commits del espejo: https://huggingface.co/NSFW-API/NSFW_Wan_1.3b/commits/4d8db25317335b4a0cfbefad9877b893f08dbc67/wan_1.3B_e16.safetensors
 - Filtro de fine-tunes del base: https://huggingface.co/models?other=base_model:finetune:NSFW-API/NSFW_Wan_1.3b
 - Blob de checkpoint de ejemplo: https://huggingface.co/NSFW-API/NSFW_Wan_1.3b/blob/main/wan_1.3B_e8.safetensors

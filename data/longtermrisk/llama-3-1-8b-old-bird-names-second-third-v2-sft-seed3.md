@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3` es un ajuste fino (fine-tuning) del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un experimento de fine-tuning que utiliza la biblioteca Unsloth para acelerar el entrenamiento y la librería TRL de HuggingFace. El nombre sugiere que el entrenamiento podría estar relacionado con nombres de aves antiguas, pero la model card no proporciona detalles sobre el dataset, el objetivo ni el proceso de entrenamiento.
+El modelo `longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3` es un ajuste fino (fine-tuning) del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un experimento de fine-tuning que utiliza la biblioteca Unsloth para acelerar el entrenamiento y la librería TRL de Hugging Face. El nombre sugiere que el entrenamiento podría estar relacionado con nombres de aves antiguas, pero la model card no proporciona detalles sobre el dataset, el objetivo ni el proceso de entrenamiento.
 
 Este modelo es relevante como ejemplo de fine-tuning eficiente sobre una base conocida (Llama 3.1 8B Instruct), pero carece de documentación técnica y de evaluación pública. No se han publicado métricas de rendimiento ni especificaciones detalladas más allá de las heredadas del modelo base. Su licencia Apache-2.0 permite uso comercial, pero su utilidad práctica es incierta sin más información.
 
@@ -15,7 +15,7 @@ Este modelo es relevante como ejemplo de fine-tuning eficiente sobre una base co
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (según ficha de HuggingFace) |
+| Idiomas soportados | en (según ficha de Hugging Face) |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (probablemente safetensors, no confirmado) |
 
@@ -71,6 +71,6 @@ No se dispone de datos de rendimiento comparativo, por lo que la comparación se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base (unsloth/Meta-Llama-3.1-8B-Instruct): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

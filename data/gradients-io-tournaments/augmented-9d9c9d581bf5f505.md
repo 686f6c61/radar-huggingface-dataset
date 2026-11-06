@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `augmented-9d9c9d581bf5f505` es un modelo de generacion de texto publicado en HuggingFace por el usuario `gradients-io-tournaments`. Se distribuye en formato `safetensors` bajo la libreria `transformers` y cuenta con 7.241.748.480 parametros (aproximadamente 7,24 mil millones), lo que lo situa en la categoria de modelos densos de ~7B. La etiqueta `mistral` del repositorio apunta a que su arquitectura pertenece a la familia Mistral, aunque la model card no lo confirma de forma explicita.
+El modelo `augmented-9d9c9d581bf5f505` es un modelo de generacion de texto publicado en Hugging Face por el usuario `gradients-io-tournaments`. Se distribuye en formato `safetensors` bajo la libreria `transformers` y cuenta con 7.241.748.480 parametros (aproximadamente 7,24 mil millones), lo que lo situa en la categoria de modelos densos de ~7B. La etiqueta `mistral` del repositorio apunta a que su arquitectura pertenece a la familia Mistral, aunque la model card no lo confirma de forma explicita.
 
-La model card publicada es la plantilla autogenerada por HuggingFace (`Model Card for Model ID`) y no contiene informacion real sobre el desarrollador, los datos de entrenamiento, la licencia ni los idiomas soportados. Todos esos campos aparecen como `[More Information Needed]`. Esto limita enormemente cualquier evaluacion rigurosa: no hay resultados de benchmarks, ni descripcion de la composicion del dataset, ni detalles sobre el proceso de ajuste (SFT, RLHF o DPO).
+La model card publicada es la plantilla autogenerada por Hugging Face (`Model Card for Model ID`) y no contiene informacion real sobre el desarrollador, los datos de entrenamiento, la licencia ni los idiomas soportados. Todos esos campos aparecen como `[More Information Needed]`. Esto limita enormemente cualquier evaluacion rigurosa: no hay resultados de benchmarks, ni descripcion de la composicion del dataset, ni detalles sobre el proceso de ajuste (SFT, RLHF o DPO).
 
 Su relevancia actual es limitada por el momento: el repositorio acumula 0 descargas y 0 likes, y no se ha publicado documentacion tecnica asociada. Resulta util, eso si, como caso de estudio de modelos derivados publicados de forma automatica en plataformas de torneos o experimentos, donde el peso del artefacto (14,5 GB, compatible con pesos en fp16/bf16) es el unico dato fiable junto al recuento de parametros.
 
@@ -94,13 +94,13 @@ La diferencia principal no es de rendimiento, sino de trazabilidad: las alternat
 - Contexto desconocido: sin especificar la ventana de contexto, no se puede garantizar el comportamiento en conversaciones largas o documentos extensos.
 - Robustez no verificada: no hay informacion sobre alineacion, filtros de seguridad ni comportamiento ante prompts adversarios. No se recomienda su uso en aplicaciones orientadas al usuario final sin una capa adicional de moderacion.
 - Artefacto sin adopcion: 0 descargas y 0 likes implican que no existe una comunidad que haya validado su comportamiento ni reportado fallos.
-- Model card autogenerada: el contenido de la ficha es la plantilla por defecto de HuggingFace, no una descripcion escrita por el autor. Cualquier inferencia sobre sus capacidades debe tratarse como no confirmada.
+- Model card autogenerada: el contenido de la ficha es la plantilla por defecto de Hugging Face, no una descripcion escrita por el autor. Cualquier inferencia sobre sus capacidades debe tratarse como no confirmada.
 - Fecha de publicacion anomala: el repositorio figura creado y actualizado en 2026-10-06, lo que conviene verificar antes de tratarlo como un artefacto estable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-9d9c9d581bf5f505
-- Perfil del autor en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-9d9c9d581bf5f505
+- Perfil del autor en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Articulo referenciado en los tags (Lacoste et al., 2019, sobre impacto de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML citada en la model card: https://mlco2.github.io/impact
 - Repositorio, paper o demo del modelo: no disponible

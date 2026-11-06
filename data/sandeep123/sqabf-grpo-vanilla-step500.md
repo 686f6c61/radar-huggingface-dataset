@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sandeep123/sqabf-grpo-vanilla-step500` es un checkpoint de investigación desarrollado por `sandeep123` en HuggingFace. Se trata de un fine-tuning con Reinforcement Learning (RL) mediante GRPO (Group Relative Policy Optimization) sobre el modelo base `Qwen/Qwen2.5-Math-1.5B`. Su objetivo es servir como baseline reproducible para el razonamiento en el dataset ScienceQA, siguiendo el protocolo "boxfix", que exige una respuesta estructurada con pasos numerados y una respuesta final en `\boxed{X}`.
+El modelo `sandeep123/sqabf-grpo-vanilla-step500` es un checkpoint de investigación desarrollado por `sandeep123` en Hugging Face. Se trata de un fine-tuning con Reinforcement Learning (RL) mediante GRPO (Group Relative Policy Optimization) sobre el modelo base `Qwen/Qwen2.5-Math-1.5B`. Su objetivo es servir como baseline reproducible para el razonamiento en el dataset ScienceQA, siguiendo el protocolo "boxfix", que exige una respuesta estructurada con pasos numerados y una respuesta final en `\boxed{X}`.
 
 El modelo tiene 1.777.088.000 parámetros y se ha entrenado durante 500 pasos (de un total de 1250). En validación alcanza un pass@1 de 0,7591 y un pass@6 de 0,9766. Es relevante para la comunidad de investigación en RL y alineación, ya que permite comparar variantes de GRPO y protocolos de prompt sin aplicar chat template, evitando el mismatch de entrenamiento/inferencia documentado por el autor.
 
@@ -69,7 +69,7 @@ No se proporcionan requisitos de hardware oficiales en la información disponibl
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada. Los únicos modelos comparables son los checkpoints hermanos del mismo autor en HuggingFace, pero no se proporcionan sus métricas de validación en la información disponible:
+No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada. Los únicos modelos comparables son los checkpoints hermanos del mismo autor en Hugging Face, pero no se proporcionan sus métricas de validación en la información disponible:
 
 | Modelo | Parámetros | Contexto | pass@1 | pass@6 | Licencia |
 |---|---|---|---|---|---|
@@ -92,7 +92,7 @@ Nota: los nombres de los checkpoints hermanos difieren ligeramente (sqa vs sqabf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/sqabf-grpo-vanilla-step500
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/sqabf-grpo-vanilla-step500
 - Checkpoint hermano step600: https://huggingface.co/sandeep123/sqa-grpo-vanilla-step600
 - Checkpoint hermano step1200: https://huggingface.co/sandeep123/sqa-grpo-vanilla-step1200
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B

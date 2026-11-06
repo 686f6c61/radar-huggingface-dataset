@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`m1b/kairos_rmbenchpp_press_button_noop_16v3_k1_p2p3` es un checkpoint de investigación publicado en HuggingFace por el usuario `m1b`, derivado del modelo base `m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3`. Por la nomenclatura de la model card (acciones `robodojo_dual_x5_absolute_joint_14d`, dataset `rmbench-plus-plus-robodojo-press-button-noop`, normalización por dimensión y estadísticas en `normalization_stats.json`) se trata de un modelo de política para control robótico, no de un modelo de lenguaje generativo. El nombre y la estructura de directorios (`p2/`, `p3/`, checkpoints `step_XXXXXX.pt`) apuntan a un entrenamiento por fases sobre un simulador de robot de doble brazo.
+`m1b/kairos_rmbenchpp_press_button_noop_16v3_k1_p2p3` es un checkpoint de investigación publicado en Hugging Face por el usuario `m1b`, derivado del modelo base `m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3`. Por la nomenclatura de la model card (acciones `robodojo_dual_x5_absolute_joint_14d`, dataset `rmbench-plus-plus-robodojo-press-button-noop`, normalización por dimensión y estadísticas en `normalization_stats.json`) se trata de un modelo de política para control robótico, no de un modelo de lenguaje generativo. El nombre y la estructura de directorios (`p2/`, `p3/`, checkpoints `step_XXXXXX.pt`) apuntan a un entrenamiento por fases sobre un simulador de robot de doble brazo.
 
 El checkpoint se describe explícitamente como una ablación del modelo `p2p3`: la fase `p2/` aplica 2.000 pasos conjuntos de episodio completo partiendo de `p1/step_020000.pt`, con una variante de "memory tokens" de 16v3 que sustituye el router adaptativo y reduce los pasos de denoising por sorpresa de 4 a 1 (K=1, cuantil 0,9, prefijo 128). La fase `p3/` realiza 2.000 pasos adicionales solo sobre la memoria, partiendo de `p2/step_002000.pt`. El entrenamiento se ejecutó en 1x8 A800 con LR 1e-4.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `m1b/kairos_rmbenchpp_press_button_noop_16v3_k1_p2p3` (este) | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| `m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3` (base de la ablación) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `m1b/kairos_rmbenchpp_press_button_noop_16v3_k1_p2p3` (este) | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| `m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3` (base de la ablación) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos de política para RoboDojo / `rmbench-plus-plus` | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m1b/kairos_rmbenchpp_press_button_noop_16v3_k1_p2p3
+- Hugging Face: https://huggingface.co/m1b/kairos_rmbenchpp_press_button_noop_16v3_k1_p2p3
 - Modelo base de la ablación: https://huggingface.co/m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3
 - Repositorio de código (commit referenciado en la model card): `46e736d0fd66787a7d1039420c0155269328e52c` (rama `research-marina/v16.3_memory_tokens_speed_opt_rmbenchpp_relocate_cards`); no se proporciona URL directa.
 - Dataset: `rmbench-plus-plus-robodojo-press-button-noop`; no se proporciona URL directa.

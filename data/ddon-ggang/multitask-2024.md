@@ -2,7 +2,7 @@
 
 ## Resumen
 
-multitask-2024 es un repositorio experimental publicado por el usuario ddon-ggang en HuggingFace bajo el identificador ddon-ggang/multitask-2024. No se trata de un modelo entrenado, sino de una base de codigo y un checkpoint de inicializacion para investigar una arquitectura hibrida orientada a tareas multiples (multitask). El propio autor indica explicitamente que el checkpoint incluido sirve para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+multitask-2024 es un repositorio experimental publicado por el usuario ddon-ggang en Hugging Face bajo el identificador ddon-ggang/multitask-2024. No se trata de un modelo entrenado, sino de una base de codigo y un checkpoint de inicializacion para investigar una arquitectura hibrida orientada a tareas multiples (multitask). El propio autor indica explicitamente que el checkpoint incluido sirve para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 La relevancia de este repositorio es, por tanto, metodologica y no de rendimiento: proporciona un esqueleto reproducible (pipeline.py, config.json, training_args.json, model.safetensors) para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La configuracion declarada combina atencion grouped query, fusion con compuertas (gated fusion), activacion gelu y normalizacion rmsnorm, con optimizador adam y planificador polinomial en la receta por defecto.
 
@@ -82,5 +82,5 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddon-ggang/multitask-2024
+- Hugging Face: https://huggingface.co/ddon-ggang/multitask-2024
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

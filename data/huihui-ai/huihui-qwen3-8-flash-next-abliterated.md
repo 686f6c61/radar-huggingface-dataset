@@ -18,7 +18,7 @@ Su relevancia actual es doble: permite estudiar de forma reproducible como se co
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Safetensors sin cuantizar; GGUF en Q8_0 y BF16 |
 | Idiomas soportados | No disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | Safetensors y GGUF |
 | Tamano del repositorio | 360 GB |
 | Modalidad de entrada | Imagen y texto (pipeline image-text-to-text) |
@@ -86,13 +86,13 @@ No se dispone de resultados de benchmarks del modelo ni de sus alternativas, por
 - Degradacion potencial por la ablation: la modificacion de pesos puede afectar a capacidades generales del modelo, pero no se han publicado evaluaciones que cuantifiquen ese efecto.
 - Idiomas soportados sin documentar: no hay informacion sobre la cobertura linguistica real de esta variante.
 - Longitud de contexto desconocida: no se especifica la ventana de contexto, lo que impide planificar despliegues que dependan de contextos largos.
-- Restricciones de licencia: la licencia qwen-community-1.0 esta etiquetada como "other" en HuggingFace y el repositorio incluye un fichero LICENSE, pero no se detallan en la informacion disponible las condiciones concretas de uso comercial.
+- Restricciones de licencia: la licencia qwen-community-1.0 esta etiquetada como "other" en Hugging Face y el repositorio incluye un fichero LICENSE, pero no se detallan en la informacion disponible las condiciones concretas de uso comercial.
 - Requisitos de infraestructura: el repositorio ocupa 360 GB y la inferencia en precision completa exige varios aceleradores de 80 GB, lo que limita su uso a entornos con recursos considerables.
 - Necesidad de monitorizacion: la model card recomienda supervision en tiempo real y revision manual de las salidas para evitar la difusion de contenido inapropiado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated
+- Modelo en Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated
 - Repositorio GGUF: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

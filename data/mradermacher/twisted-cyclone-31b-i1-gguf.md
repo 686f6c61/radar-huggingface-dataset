@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/Twisted-Cyclone-31B-i1-GGUF)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/Twisted-Cyclone-31B-i1-GGUF)
 - [Repositorio estático con quants sin imatrix](https://huggingface.co/mradermacher/Twisted-Cyclone-31B-GGUF)
 - [Página de descarga de cuantizaciones de mradermacher](https://hf.tst.eu/model)

@@ -102,9 +102,9 @@ La comparativa con modelos de otros fabricantes no esta disponible en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/gemma-4-31B-it-SOM-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/gemma-4-31B-it-SOM-heretic
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core

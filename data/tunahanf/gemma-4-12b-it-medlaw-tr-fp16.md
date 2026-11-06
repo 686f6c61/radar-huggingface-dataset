@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tunahanf/gemma-4-12b-it-medlaw-tr-FP16` es un fine-tune del modelo base `unsloth/gemma-4-12b-it`, publicado por el usuario `tunahanf` en HuggingFace. Según la model card, fue entrenado con las librerías Unsloth y TRL de HuggingFace, lo que sugiere un proceso de ajuste fino optimizado para velocidad. El nombre del repositorio indica un posible enfoque en dominios de medicina y derecho (medlaw) y el sufijo "tr" podría referirse al turco, aunque el idioma declarado es únicamente inglés.
+El modelo `tunahanf/gemma-4-12b-it-medlaw-tr-FP16` es un fine-tune del modelo base `unsloth/gemma-4-12b-it`, publicado por el usuario `tunahanf` en Hugging Face. Según la model card, fue entrenado con las librerías Unsloth y TRL de Hugging Face, lo que sugiere un proceso de ajuste fino optimizado para velocidad. El nombre del repositorio indica un posible enfoque en dominios de medicina y derecho (medlaw) y el sufijo "tr" podría referirse al turco, aunque el idioma declarado es únicamente inglés.
 
 Sin embargo, la ficha presenta múltiples inconsistencias: el nombre "gemma-4" no corresponde a ninguna familia de modelos Gemma publicada por Google (hasta la fecha existen Gemma 1, 2 y 3), la fecha de creación es futura (2026) y el tamaño del repositorio es de 0.0 GB, lo que sugiere que el modelo podría no contener pesos reales o que la información es incompleta o ficticia. Por tanto, esta ficha se basa únicamente en los metadatos disponibles y no puede verificar las capacidades reales del modelo.
 
@@ -23,7 +23,7 @@ Sin embargo, la ficha presenta múltiples inconsistencias: el nombre "gemma-4" n
 
 No se dispone de información verificable sobre la arquitectura interna del modelo. El tag `gemma4_unified` sugiere una arquitectura unificada multimodal (el pipeline declarado es `image-text-to-text`), pero no hay detalles sobre el número de capas, dimensión de atención, o tipo de mecanismo (transformer, MoE, SSM, etc.). El modelo base `unsloth/gemma-4-12b-it` tampoco tiene documentación pública accesible.
 
-Según la model card, el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que implica un fine-tune supervisado (posiblemente con SFT) y una optimización de velocidad. No se menciona el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se especifican innovaciones técnicas como decodificación especulativa o atención lineal.
+Según la model card, el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que implica un fine-tune supervisado (posiblemente con SFT) y una optimización de velocidad. No se menciona el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se especifican innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
@@ -62,4 +62,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: tunahanf/gemma-4-12b-it-medlaw-tr-FP16](https://huggingface.co/tunahanf/gemma-4-12b-it-medlaw-tr-FP16)
+- [Hugging Face: tunahanf/gemma-4-12b-it-medlaw-tr-FP16](https://huggingface.co/tunahanf/gemma-4-12b-it-medlaw-tr-FP16)

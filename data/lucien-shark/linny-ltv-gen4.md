@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linny-LTV-Gen4 es un repositorio de pesos publicado en HuggingFace por el usuario Lucien-shark bajo el identificador `Lucien-shark/Linny-LTV-Gen4`. En el momento de redactar esta ficha no existe informacion publica sobre su arquitectura, su finalidad, su proceso de entrenamiento ni sus capacidades: la model card asociada unicamente declara `license: unknown`, sin texto descriptivo, sin pipeline declarado y sin idiomas soportados.
+Linny-LTV-Gen4 es un repositorio de pesos publicado en Hugging Face por el usuario Lucien-shark bajo el identificador `Lucien-shark/Linny-LTV-Gen4`. En el momento de redactar esta ficha no existe informacion publica sobre su arquitectura, su finalidad, su proceso de entrenamiento ni sus capacidades: la model card asociada unicamente declara `license: unknown`, sin texto descriptivo, sin pipeline declarado y sin idiomas soportados.
 
 Los unicos datos verificables son los metadatos del repositorio: 2,0 GB de tamano, cero descargas y cero valoraciones, con fecha de creacion el 6 de octubre de 2026 y ultima actualizacion el 7 de octubre de 2026. La ausencia total de documentacion tecnica impide confirmar si se trata de un modelo de lenguaje, de un modelo generativo de otro tipo (imagen, video, audio) o de un componente auxiliar como un adaptador o un VAE.
 
@@ -78,7 +78,7 @@ No disponible. La comparativa con alternativas de la misma categoria requiere co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Linny-LTV-Gen4 | no disponible | no disponible | unknown | HuggingFace (repo de 2,0 GB) | Sin model card ni benchmarks |
+| Linny-LTV-Gen4 | no disponible | no disponible | unknown | Hugging Face (repo de 2,0 GB) | Sin model card ni benchmarks |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se puede determinar la categoria del modelo |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. La comparativa con alternativas de la misma categoria requiere co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucien-shark/Linny-LTV-Gen4
+- Hugging Face: https://huggingface.co/Lucien-shark/Linny-LTV-Gen4
 - Model card: no disponible (unicamente contiene `license: unknown`)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

@@ -87,7 +87,7 @@ La comparativa se limita a SAEs de la misma familia (BatchTopK) porque no existe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/qwen36-27b-sae-l42-1b
+- Repositorio Hugging Face: https://huggingface.co/ceselder/qwen36-27b-sae-l42-1b
 - Libreria de entrenamiento `dictionary_learning`: https://github.com/saprmarks/dictionary_learning
 - Blog oficial de Qwen3.6-27B (modelo base): https://qwen.ai/blog?id=qwen3.6-27b
 - Guia de Qwen3.6-27B (contexto del modelo base): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

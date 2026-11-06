@@ -2,7 +2,7 @@
 
 ## Resumen
 
-No se dispone de información técnica sobre este repositorio. El identificador `iskconkurushetra/temple-construction` corresponde a un espacio alojado en HuggingFace por el usuario `iskconkurushetra`, pero la model card asociada no describe un modelo de inteligencia artificial: su contenido es una campaña de recaudación de fondos para la construcción de un templo de ISKCON en Kurukshetra (India). No se menciona arquitectura, parámetros, contexto, tokenizador ni ningún artefacto de pesos.
+No se dispone de información técnica sobre este repositorio. El identificador `iskconkurushetra/temple-construction` corresponde a un espacio alojado en Hugging Face por el usuario `iskconkurushetra`, pero la model card asociada no describe un modelo de inteligencia artificial: su contenido es una campaña de recaudación de fondos para la construcción de un templo de ISKCON en Kurukshetra (India). No se menciona arquitectura, parámetros, contexto, tokenizador ni ningún artefacto de pesos.
 
 El repositorio no declara pipeline, licencia, idiomas ni etiquetas de tarea más allá de `region:us`. Registra cero descargas y cero likes desde su creación el 4 de noviembre de 2026, y su última actualización se produjo dos minutos después de la creación, lo que sugiere un uso del espacio como página informativa y no como publicación de un modelo entrenado.
 
@@ -64,5 +64,5 @@ No disponible. No existe información sobre el modelo que permita identificar su
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iskconkurushetra/temple-construction
+- Repositorio en Hugging Face: https://huggingface.co/iskconkurushetra/temple-construction
 - Enlace de donaciones citado en la model card: https://iskconkurukshetra.org/donations/temple-construction/

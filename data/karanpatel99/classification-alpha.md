@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Karanpatel99/classification-alpha` es una implementación compacta y personalizada de Poolformer para tareas de clasificación, publicada por el usuario Karanpatel99 en HuggingFace. Se trata de un checkpoint de inicialización, no de un modelo entrenado, pensado para pruebas de humo, revisión de código y experimentos controlados a pequeña escala. Su tamaño es extremadamente reducido, con solo 16.576 parámetros, lo que lo hace adecuado para entornos de desarrollo y depuración, pero no para uso en producción.
+El modelo `Karanpatel99/classification-alpha` es una implementación compacta y personalizada de Poolformer para tareas de clasificación, publicada por el usuario Karanpatel99 en Hugging Face. Se trata de un checkpoint de inicialización, no de un modelo entrenado, pensado para pruebas de humo, revisión de código y experimentos controlados a pequeña escala. Su tamaño es extremadamente reducido, con solo 16.576 parámetros, lo que lo hace adecuado para entornos de desarrollo y depuración, pero no para uso en producción.
 
 La relevancia de este modelo es principalmente didáctica y de referencia: permite estudiar la arquitectura Poolformer con atención de ventana deslizante y fusión Tucker en un formato mínimo. No se publican resultados de benchmarks ni se afirma ningún rendimiento. La licencia Apache 2.0 permite uso comercial, pero el propio autor advierte que el checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 
@@ -65,11 +65,11 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - Riesgo de alucinación: no aplica, al no ser un modelo generativo de lenguaje.
 - No se especifican idiomas soportados; la implementación no parece orientada a procesamiento de lenguaje natural.
 - La licencia Apache 2.0 permite uso comercial, pero el autor recomienda revisar los términos de los datos externos si se usa con conjuntos de datos propios.
-- No es compatible con APIs genéricas de HuggingFace sin un adaptador explícito, lo que limita su integración en pipelines estándar.
+- No es compatible con APIs genéricas de Hugging Face sin un adaptador explícito, lo que limita su integración en pipelines estándar.
 - No se proporcionan métricas de rendimiento ni comparativas, por lo que no es adecuado para evaluaciones serias.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Karanpatel99/classification-alpha
+- Repositorio Hugging Face: https://huggingface.co/Karanpatel99/classification-alpha
 - GitHub del autor (proyectos relacionados, no específicos de este modelo): https://github.com/Karan-990/classification-model---build-a-model-that-classification-the-side-effects-of-drug
 - Portafolio del autor: https://karanpokar.github.io/

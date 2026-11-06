@@ -68,8 +68,8 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo base
 
 ## Enlaces
 
-- Repositorio HuggingFace del mirror: https://huggingface.co/visible-cx/LFM2.5-VL-450M-CoreAI
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
+- Repositorio Hugging Face del mirror: https://huggingface.co/visible-cx/LFM2.5-VL-450M-CoreAI
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Blog de Liquid AI sobre LFM2.5-VL-450M: https://www.liquid.ai/blog/lfm2-5-vl-450m
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-vl-450m
 - Repositorio del modelo zoo de Core AI (README con referencias): https://github.com/john-rocky/coreai-model-zoo/blob/main/models/lfm2.5-vl/README.md

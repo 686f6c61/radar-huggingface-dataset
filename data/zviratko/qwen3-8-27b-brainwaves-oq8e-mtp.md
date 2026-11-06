@@ -73,7 +73,7 @@ Estos valores son orientativos y pueden variar tras el fine-tune "Brainwaves" y 
 | Llama 3.1 8B | 8B | 128K | Llama 3.1 License | GGUF, safetensors | Alternativa más pequeña, sin visión nativa |
 | Qwen2.5-VL-7B | 7.6B | 32K | Apache 2.0 | safetensors | Modelo multimodal más ligero, contexto menor |
 
-La comparativa es orientativa: este modelo destaca por su contexto largo y multimodalidad, pero la discrepancia en el número de parámetros reportado (8.18B vs 27B) sugiere que podría ser un error en la metadata de HuggingFace o que el fine-tune "Brainwaves" reduce drásticamente el tamaño (poco probable). Se recomienda verificar el contenido real del repositorio antes de usarlo en producción.
+La comparativa es orientativa: este modelo destaca por su contexto largo y multimodalidad, pero la discrepancia en el número de parámetros reportado (8.18B vs 27B) sugiere que podría ser un error en la metadata de Hugging Face o que el fine-tune "Brainwaves" reduce drásticamente el tamaño (poco probable). Se recomienda verificar el contenido real del repositorio antes de usarlo en producción.
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ La comparativa es orientativa: este modelo destaca por su contexto largo y multi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-oQ8e-mtp
 - Modelo base (nightmedia): https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves
 - Repositorio de cuantización oQ (omlx): https://github.com/jundot/omlx
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

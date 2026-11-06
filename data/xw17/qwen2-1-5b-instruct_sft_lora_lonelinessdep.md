@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA publicado en HuggingFace por el usuario xw17. El nombre del repositorio indica que se ha realizado un ajuste fino supervisado (SFT) sobre el modelo base Qwen2-1.5B-Instruct, con un tema que parece relacionado con la soledad y la depresión (lonelinessdep). Sin embargo, la model card es una plantilla generada automáticamente y no contiene información sobre el desarrollo, los datos de entrenamiento, la licencia ni las capacidades del modelo. El repositorio muestra un tamaño de 0.0 GB, lo que sugiere que puede no contener archivos o que la información no se ha actualizado correctamente.
+Este modelo es un adaptador LoRA publicado en Hugging Face por el usuario xw17. El nombre del repositorio indica que se ha realizado un ajuste fino supervisado (SFT) sobre el modelo base Qwen2-1.5B-Instruct, con un tema que parece relacionado con la soledad y la depresión (lonelinessdep). Sin embargo, la model card es una plantilla generada automáticamente y no contiene información sobre el desarrollo, los datos de entrenamiento, la licencia ni las capacidades del modelo. El repositorio muestra un tamaño de 0.0 GB, lo que sugiere que puede no contener archivos o que la información no se ha actualizado correctamente.
 
-En los metadatos de HuggingFace se indican las etiquetas transformers, safetensors, endpoints_compatible y region:us, pero no se proporciona ningún detalle técnico adicional. La búsqueda web no ha arrojado resultados relevantes sobre este modelo, salvo otros adaptadores LoRA del mismo autor en HuggingFace, sin información complementaria.
+En los metadatos de Hugging Face se indican las etiquetas transformers, safetensors, endpoints_compatible y region:us, pero no se proporciona ningún detalle técnico adicional. La búsqueda web no ha arrojado resultados relevantes sobre este modelo, salvo otros adaptadores LoRA del mismo autor en Hugging Face, sin información complementaria.
 
 ## Especificaciones técnicas
 
@@ -63,4 +63,4 @@ No disponible. No se han publicado benchmarks ni información suficiente para co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_lonelinessdep
+- Hugging Face: https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_lonelinessdep

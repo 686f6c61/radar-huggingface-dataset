@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en fp16, aproximadamente 1 GB de pesos (494 M de parámetros × 2 bytes); en cuantización de 4 bits, en torno a 0,3-0,4 GB. El repositorio ocupa 0,4 GB, lo que sugiere pesos ya cuantizados o en precisión reducida.
 - GPU recomendadas: cualquier GPU consumer moderna es sobredimensionada; el modelo cabe holgadamente en una RTX 3060, RTX 4060 o incluso en GPUs integradas con suficiente memoria compartida.
 - CPU: es viable la inferencia en CPU con llama.cpp u Ollama, dado el reducido tamaño del modelo.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM y TGI son compatibles en principio al tratarse de un transformer Qwen2 estándar; el repositorio incluye pesos GGUF para llama.cpp/Ollama. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM y TGI son compatibles en principio al tratarse de un transformer Qwen2 estándar; el repositorio incluye pesos GGUF para llama.cpp/Ollama. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | IldaLabs/OpenCodeAgent-0.5B | 494 M | no disponible | Apache 2.0 | Fine-tuning de código y agentes sobre Qwen2.5-0.5B-Instruct |
 | Qwen/Qwen2.5-0.5B-Instruct | ~494 M | no disponible en esta ficha | Apache 2.0 | Modelo base; capacidades generales de instrucción, sin ajuste específico de código |
 | Qwen/Qwen2.5-Coder-0.5B-Instruct | ~494 M | no disponible en esta ficha | Apache 2.0 | Alternativa oficial de Qwen especializada en código, directamente comparable por tamaño y propósito |
-| SmolLM2-360M-Instruct | ~360 M | no disponible en esta ficha | Apache 2.0 | Alternativa ultraligera de propósito general de HuggingFace; no especializada en código |
+| SmolLM2-360M-Instruct | ~360 M | no disponible en esta ficha | Apache 2.0 | Alternativa ultraligera de propósito general de Hugging Face; no especializada en código |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IldaLabs/OpenCodeAgent-0.5B
+- Modelo en Hugging Face: https://huggingface.co/IldaLabs/OpenCodeAgent-0.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/IldaLabs/Nemotron-OpenCode-60k-Sample
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

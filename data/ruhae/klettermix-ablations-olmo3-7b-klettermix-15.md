@@ -4,7 +4,7 @@
 
 KletterMix-Ablations-OLMo3-7B-KletterMix-15 es un modelo de lenguaje de 7 mil millones de parametros desarrollado por RuHae, que forma parte de una serie de experimentos de ablacion sobre la arquitectura OLMo3. Este modelo concreto explora la combinacion de datos de entrenamiento denominada "KletterMix" en su variante 15, dentro de un estudio sistematico para aislar el impacto de diferentes mezclas de datos y estrategias de entrenamiento en el rendimiento final del modelo. Se trata de un modelo de investigacion, no de un producto final, disenado para comprender mejor como las decisiones de curado de datos afectan a las capacidades emergentes de los modelos de lenguaje.
 
-El modelo se distribuye con acceso restringido (gated) en HuggingFace, lo que indica que su uso esta condicionado a la aceptacion de terminos especificos por parte del autor. Con 7.298 millones de parametros, se situa en la gama de modelos de tamano medio que pueden ejecutarse en hardware de consumo con cuantizacion adecuada. Su relevancia radica en que los estudios de ablacion como este proporcionan informacion valiosa para la comunidad investigadora sobre que componentes del pipeline de entrenamiento son mas determinantes para el rendimiento final, informacion que puede orientar futuros desarrollos de modelos mas eficientes.
+El modelo se distribuye con acceso restringido (gated) en Hugging Face, lo que indica que su uso esta condicionado a la aceptacion de terminos especificos por parte del autor. Con 7.298 millones de parametros, se situa en la gama de modelos de tamano medio que pueden ejecutarse en hardware de consumo con cuantizacion adecuada. Su relevancia radica en que los estudios de ablacion como este proporcionan informacion valiosa para la comunidad investigadora sobre que componentes del pipeline de entrenamiento son mas determinantes para el rendimiento final, informacion que puede orientar futuros desarrollos de modelos mas eficientes.
 
 Al ser un modelo de ablacion, no se espera que ofrezca el mismo nivel de rendimiento que un modelo base completamente entrenado como OLMo3-7B original. Su proposito es cientifico: aislar variables y medir su efecto. La serie KletterMix-Ablations incluye multiples variantes (KletterMix-05, KletterMix-15, Unannealed-Stage1, entre otras) que permiten comparar directamente el efecto de diferentes proporciones de mezcla de datos y de tecnicas como el annealing durante el entrenamiento.
 
@@ -71,14 +71,14 @@ La comparativa directa con modelos comerciales como Llama 3.1 8B o Mistral 7B no
 
 - Modelo de investigacion: no es un modelo listo para produccion. Su rendimiento puede ser inferior al de OLMo3-7B completo debido a que es una ablacion disenada para aislar variables.
 - Sesgos y alucinaciones: al ser un modelo de lenguaje, puede generar contenido sesgado o factualmente incorrecto. No se ha realizado una evaluacion especifica de sesgos para esta variante.
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de poder descargarlo, lo que puede limitar su uso en algunos entornos.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de poder descargarlo, lo que puede limitar su uso en algunos entornos.
 - Documentacion limitada: no se dispone de informacion sobre el contexto de entrenamiento, idiomas soportados, licencia exacta ni datos de rendimiento, lo que dificulta su evaluacion y uso adecuado.
 - Sin garantias de soporte: al ser un proyecto de investigacion personal, no hay garantia de mantenimiento, actualizaciones o soporte tecnico.
 - Riesgo de uso inapropiado: como cualquier LLM, puede generar contenido danino si se utiliza sin las salvaguardas adecuadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RuHae/KletterMix-Ablations-OLMo3-7B-KletterMix-15
+- Modelo en Hugging Face: https://huggingface.co/RuHae/KletterMix-Ablations-OLMo3-7B-KletterMix-15
 - Variante Unannealed-Stage1: https://huggingface.co/RuHae/KletterMix-Ablations-OLMo3-7B-Unannealed-Stage1
 - Despliegue en FriendliAI (variante KletterMix-15): https://friendli.ai/models/RuHae/KletterMix-Ablations-OLMo3-7B-KletterMix-15
 - Despliegue en FriendliAI (variante KletterMix-05): https://friendli.ai/models/RuHae/KletterMix-Ablations-OLMo3-7B-KletterMix-05

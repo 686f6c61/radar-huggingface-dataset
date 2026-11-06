@@ -42,7 +42,7 @@ No se dispone de información sobre el volumen de tokens de entrenamiento, la co
 ## Capacidades
 
 - Generación de vídeo a partir de texto (text-to-video), según las etiquetas del repositorio.
-- Generación de vídeo a partir de imagen (image-to-video), que es el pipeline declarado en HuggingFace.
+- Generación de vídeo a partir de imagen (image-to-video), que es el pipeline declarado en Hugging Face.
 - Generación de audio asociada al vídeo mediante el VAE de audio incluido.
 - Control de la duración del clip mediante la duration head.
 - Escalado de resolución en espacio latente mediante el upscaler x2.
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OT — Vidéo · High (LTX-2.5 BF16) | 22 000 M (transformer) + Gemma 4 12B | no disponible | no disponible | LTX-2.x Community License | HuggingFace, 71,10 GB, BF16 |
-| OT — Vidéo · Medium (LTX-2.5 INT8) | no disponible | no disponible | no disponible | LTX-2.x Community License | HuggingFace, variante INT8 del mismo modelo base |
-| OT — Vidéo · Low (LTX-2.5 INT8) | no disponible | no disponible | no disponible | LTX-2.x Community License | HuggingFace, variante INT8 del mismo modelo base |
-| Lightricks/LTX-2.5 | 22 000 M (transformer) | no disponible | no disponible | LTX-2.x Community License | Repositorio original en HuggingFace |
+| OT — Vidéo · High (LTX-2.5 BF16) | 22 000 M (transformer) + Gemma 4 12B | no disponible | no disponible | LTX-2.x Community License | Hugging Face, 71,10 GB, BF16 |
+| OT — Vidéo · Medium (LTX-2.5 INT8) | no disponible | no disponible | no disponible | LTX-2.x Community License | Hugging Face, variante INT8 del mismo modelo base |
+| OT — Vidéo · Low (LTX-2.5 INT8) | no disponible | no disponible | no disponible | LTX-2.x Community License | Hugging Face, variante INT8 del mismo modelo base |
+| Lightricks/LTX-2.5 | 22 000 M (transformer) | no disponible | no disponible | LTX-2.x Community License | Repositorio original en Hugging Face |
 
 Las tres variantes de Optima Tools derivan del mismo modelo base y solo difieren en precisión y empaquetado; no se dispone de datos de rendimiento comparativo entre ellas ni frente a otros modelos de vídeo.
 
@@ -99,7 +99,7 @@ Las tres variantes de Optima Tools derivan del mismo modelo base y solo difieren
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/optima-tools-ch/video-high
+- Repositorio en Hugging Face: https://huggingface.co/optima-tools-ch/video-high
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Revisión de origen de los pesos: https://huggingface.co/Lightricks/LTX-2.5/tree/49b093a39c19169a8a81721dcc541e07e945232f
 - Texto de la licencia LTX-2.x: https://github.com/Lightricks/LTX-2/blob/a95ab856bf29407b6b066ede0abe1846050db56c/LICENSE-2_x

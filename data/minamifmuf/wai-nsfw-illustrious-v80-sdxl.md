@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wai-nsfw-illustrious-v80-sdxl es un modelo de difusion latente para generacion de imagenes a partir de texto (text-to-image) publicado por el usuario MinamiFmuf en HuggingFace. Se trata de un ajuste fino del modelo base OnomaAIResearch/Illustrious-xl-early-release-v0, que pertenece a la familia Stable Diffusion XL (SDXL). El repositorio contiene pesos en formato safetensors compatibles con la libreria diffusers y el pipeline StableDiffusionXLPipeline, con 2.567.463.684 parametros y un tamano de repositorio de 6,9 GB.
+wai-nsfw-illustrious-v80-sdxl es un modelo de difusion latente para generacion de imagenes a partir de texto (text-to-image) publicado por el usuario MinamiFmuf en Hugging Face. Se trata de un ajuste fino del modelo base OnomaAIResearch/Illustrious-xl-early-release-v0, que pertenece a la familia Stable Diffusion XL (SDXL). El repositorio contiene pesos en formato safetensors compatibles con la libreria diffusers y el pipeline StableDiffusionXLPipeline, con 2.567.463.684 parametros y un tamano de repositorio de 6,9 GB.
 
 Segun la model card, el modelo original procede de Civitai (wai-nsfw-illustrious-sdxl) y fue creado por el usuario WAI0731. La finalidad declarada es la generacion de ilustracion de estilo anime, con una orientacion explicita a contenido para adultos, tal y como reflejan sus etiquetas (not-for-all-audiences, hentai, nsfw). El unico idioma declarado es el ingles.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wai-nsfw-illustrious-v80-sdxl (este modelo) | 2.567.463.684 | no aplica | sin benchmarks publicados | faipl-1.0-sd | HuggingFace, 0 descargas |
-| OnomaAIResearch/Illustrious-xl-early-release-v0 (modelo base) | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| stablediffusionapi/wai-nsfw-illustrious-sdxl | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| wai-nsfw-illustrious-v80-sdxl (este modelo) | 2.567.463.684 | no aplica | sin benchmarks publicados | faipl-1.0-sd | Hugging Face, 0 descargas |
+| OnomaAIResearch/Illustrious-xl-early-release-v0 (modelo base) | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| stablediffusionapi/wai-nsfw-illustrious-sdxl | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 | wai-nsfw-illustrious-sdxl (Civitai, creado por WAI0731) | no disponible | no aplica | no disponible | no disponible | Civitai, con versiones distribuidas (por ejemplo v17.0) |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en la informacion proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MinamiFmuf/wai-nsfw-illustrious-v80-sdxl
+- Hugging Face: https://huggingface.co/MinamiFmuf/wai-nsfw-illustrious-v80-sdxl
 - Modelo original en Civitai: https://civitai.com/models/827184/wai-nsfw-illustrious-sdxl?modelVersionId=1183765
 - Perfil del autor original en Civitai (WAI0731): https://civitai.com/user/WAI0731
 - Licencia faipl-1.0-sd: https://freedevproject.org/faipl-1.0-sd/
@@ -96,5 +96,5 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 - Referencia de terceros (BetterWaifu): https://betterwaifu.com/models/827184
 - Referencia de terceros (PixAI): https://pixai.art/en/model/1921546733793563398
 - Referencia de terceros (Yodayo): https://yodayo.com/models/5ecbf952-6a89-4b42-bd52-54802ee55eba
-- Repositorio espejo en HuggingFace (stablediffusionapi): https://huggingface.co/stablediffusionapi/wai-nsfw-illustrious-sdxl
+- Repositorio espejo en Hugging Face (stablediffusionapi): https://huggingface.co/stablediffusionapi/wai-nsfw-illustrious-sdxl
 - Ficha en Civitai.red: https://civitai.red/models/827184/wai-illustrious-sdxl

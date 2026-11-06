@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cnn-transformer-matching es un repositorio de HuggingFace publicado por el usuario tony-yip que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura CNN Transformer orientada a tareas de matching (emparejamiento o matching de representaciones). No se trata de un modelo preentrenado ni de un release listo para produccion: el propio autor lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El checkpoint incluido, `model.safetensors`, se presenta explicitamente como una inicializacion valida para pruebas, no como un checkpoint entrenado con benchmarks.
+cnn-transformer-matching es un repositorio de Hugging Face publicado por el usuario tony-yip que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura CNN Transformer orientada a tareas de matching (emparejamiento o matching de representaciones). No se trata de un modelo preentrenado ni de un release listo para produccion: el propio autor lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El checkpoint incluido, `model.safetensors`, se presenta explicitamente como una inicializacion valida para pruebas, no como un checkpoint entrenado con benchmarks.
 
 El modelo pertenece a la escala "base" de la configuracion definida por el autor e incorpora decisiones tecnicas concretas: atencion de tipo grouped query, fusion con compuerta (gated fusion), activacion mish y normalizacion InstanceNorm. La receta de experimento por defecto usa el optimizador lion con un schedule de warmup lineal. El numero total de parametros registrado en el archivo safetensors es de 16.576 (un orden de magnitud de decenas de miles de parametros, no de millones), lo que lo situa en la categoria de prototipo de juguete mas que de modelo de lenguaje.
 
@@ -93,7 +93,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tony-yip/cnn-transformer-matching
+- Repositorio en Hugging Face: https://huggingface.co/tony-yip/cnn-transformer-matching
 - Archivo de pesos: https://huggingface.co/tony-yip/cnn-transformer-matching/blob/main/model.safetensors
 - Script de entrenamiento: https://huggingface.co/tony-yip/cnn-transformer-matching/blob/main/train.py
 - Configuracion de arquitectura: https://huggingface.co/tony-yip/cnn-transformer-matching/blob/main/config.json

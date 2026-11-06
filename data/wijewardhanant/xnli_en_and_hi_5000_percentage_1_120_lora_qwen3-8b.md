@@ -2,9 +2,9 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_LoRA_Qwen3-8b es un adaptador LoRA publicado en HuggingFace por el usuario WijewardhanaNT, entrenado sobre el modelo base Qwen/Qwen3-8B-Base. Se distribuye con la librería PEFT y el repositorio ocupa 0,5 GB, lo que corresponde a los pesos del adaptador en formato safetensors (no al modelo base completo). El identificador sugiere un ajuste fino orientado a XNLI (inferencia de relación textual entre pares de frases) en inglés e hindi, con un conjunto de 5000 ejemplos, aunque esta interpretación procede únicamente del nombre del repositorio y no está confirmada en ninguna documentación.
+WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_LoRA_Qwen3-8b es un adaptador LoRA publicado en Hugging Face por el usuario WijewardhanaNT, entrenado sobre el modelo base Qwen/Qwen3-8B-Base. Se distribuye con la librería PEFT y el repositorio ocupa 0,5 GB, lo que corresponde a los pesos del adaptador en formato safetensors (no al modelo base completo). El identificador sugiere un ajuste fino orientado a XNLI (inferencia de relación textual entre pares de frases) en inglés e hindi, con un conjunto de 5000 ejemplos, aunque esta interpretación procede únicamente del nombre del repositorio y no está confirmada en ninguna documentación.
 
-El problema que resuelve es acotado: adaptar un modelo de 8B a una tarea concreta de clasificación/generación condicionada por pares de frases sin reentrenar todos los pesos. Su relevancia práctica es limitada en el estado actual, porque la model card es la plantilla por defecto de HuggingFace sin ninguna sección completada: no declara licencia, idiomas, hiperparámetros, composición del dataset, métricas ni procedimiento de uso. El repositorio acumula 0 descargas y 0 likes, por lo que no ha pasado por ninguna validación de la comunidad.
+El problema que resuelve es acotado: adaptar un modelo de 8B a una tarea concreta de clasificación/generación condicionada por pares de frases sin reentrenar todos los pesos. Su relevancia práctica es limitada en el estado actual, porque la model card es la plantilla por defecto de Hugging Face sin ninguna sección completada: no declara licencia, idiomas, hiperparámetros, composición del dataset, métricas ni procedimiento de uso. El repositorio acumula 0 descargas y 0 likes, por lo que no ha pasado por ninguna validación de la comunidad.
 
 Como material de referencia, el interés está en el patrón de trabajo (LoRA sobre Qwen3-8B-Base con PEFT 0.17.1) más que en el artefacto en sí. Cualquier evaluación de calidad, sesgos o rendimiento es imposible con la información disponible, y su uso en producción requeriría antes auditar los pesos y resolver la ambigüedad de licencia.
 
@@ -79,7 +79,7 @@ La comparación se limita a parámetros, contexto y licencia, porque no existe n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WijewardhanaNT/...LoRA_Qwen3-8b | Adaptador LoRA sobre base de ~8,2B | No declarado (el base: 32.768 tokens) | No declarada | Repositorio HuggingFace, 0 descargas |
+| WijewardhanaNT/...LoRA_Qwen3-8b | Adaptador LoRA sobre base de ~8,2B | No declarado (el base: 32.768 tokens) | No declarada | Repositorio Hugging Face, 0 descargas |
 | Qwen/Qwen3-8B-Base (sin adaptar) | ~8,2B | 32.768 tokens nativos | Apache 2.0 | Ampliamente disponible y documentado |
 | Qwen/Qwen3-8B (instruct) | ~8,2B | 32.768 tokens nativos | Apache 2.0 | Ampliamente disponible |
 | XLM-RoBERTa-large (clasificador NLI multilingüe típico) | ~560M | 512 tokens | MIT | Ampliamente disponible; arquitectura encoder, no generativa |
@@ -100,7 +100,7 @@ Rendimiento comparado: no disponible en los tres casos para este adaptador, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_LoRA_Qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_LoRA_Qwen3-8b
 - Modelo base Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Librería PEFT: https://github.com/huggingface/peft
 - Referencia citada en las etiquetas del repositorio (calculadora de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

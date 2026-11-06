@@ -84,6 +84,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables ni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_whisper-small-MiniLM_k5_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_whisper-small-MiniLM_k5_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Indice de todos los runs de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo del proyecto VoiceCLAP: no disponibles en la informacion proporcionada.

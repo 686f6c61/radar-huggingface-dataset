@@ -80,7 +80,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MMLandmarks_baseline | no disponible | no disponible | Ver tabla de benchmarks | CC BY-SA 4.0 | HuggingFace |
+| MMLandmarks_baseline | no disponible | no disponible | Ver tabla de benchmarks | CC BY-SA 4.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OskarK1/MMLandmarks_baseline
+- Modelo en Hugging Face: https://huggingface.co/OskarK1/MMLandmarks_baseline
 - Repositorio de codigo de entrenamiento y evaluacion: https://github.com/Oshkr/mml-codebase
 - Repositorio del dataset MMLandmarks: https://github.com/Oshkr/mmlandmarks
 - Explorador del dataset: https://mmlandmarks.compute.dtu.dk/explore.html

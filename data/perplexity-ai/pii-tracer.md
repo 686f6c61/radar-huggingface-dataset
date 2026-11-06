@@ -6,7 +6,7 @@ PII-Tracer es un modelo de detección y enmascarado de información personal ide
 
 Sobre ese tronco se montan dos cabezas: una cabeza de clasificación de tokens (1024 → 37) que predice etiquetas BIOES sobre nueve categorías de PII y se decodifica con un Viterbi restringido para garantizar spans coherentes, y una cabeza de sensibilidad (1024 → 1) que produce un score a nivel de conversación calculado sobre el promedio de los estados ocultos. El modelo está pensado específicamente para datos conversacionales multi-turno, un escenario donde los detectores basados en reglas o en frases aisladas fallan por falta de contexto.
 
-Su relevancia práctica está en que se distribuye con licencia MIT, admite hasta 4096 tokens por documento y ofrece empaquetados alternativos para vLLM, llama.cpp (GGUF) y MLX, lo que facilita integrarlo como capa de saneamiento previa al envío de prompts a un LLM de terceros o antes de persistir conversaciones en logs. El repositorio principal ocupa 1,2 GB y acumula 4853 descargas y 88 likes en HuggingFace.
+Su relevancia práctica está en que se distribuye con licencia MIT, admite hasta 4096 tokens por documento y ofrece empaquetados alternativos para vLLM, llama.cpp (GGUF) y MLX, lo que facilita integrarlo como capa de saneamiento previa al envío de prompts a un LLM de terceros o antes de persistir conversaciones en logs. El repositorio principal ocupa 1,2 GB y acumula 4853 descargas y 88 likes en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Enfoque | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PII-Tracer | Encoder Qwen3 bidireccional con doble cabeza y Viterbi BIOES | ~596 M | 4096 tokens | MIT | HuggingFace, vLLM, GGUF, MLX |
+| PII-Tracer | Encoder Qwen3 bidireccional con doble cabeza y Viterbi BIOES | ~596 M | 4096 tokens | MIT | Hugging Face, vLLM, GGUF, MLX |
 | Microsoft Presidio | Motor de reglas y reconocedores (regex, spaCy, transformers) | no aplica (no es un modelo único) | depende del reconocedor | MIT | open source, SDK Python |
-| piiranha | Modelo tipo DeBERTa-v3 ajustado para PII | ~0,4 B (no verificado en la información disponible) | no disponible | no disponible | HuggingFace |
-| GLiNER (variantes large) | NER zero-shot basado en encoder | ~0,4 B en variantes large (no verificado) | no disponible | no disponible | HuggingFace |
+| piiranha | Modelo tipo DeBERTa-v3 ajustado para PII | ~0,4 B (no verificado en la información disponible) | no disponible | no disponible | Hugging Face |
+| GLiNER (variantes large) | NER zero-shot basado en encoder | ~0,4 B en variantes large (no verificado) | no disponible | no disponible | Hugging Face |
 
 Los datos de los modelos comparables no provienen de la información proporcionada y deben contrastarse en sus fichas oficiales. Frente a Presidio, la ventaja de PII-Tracer es el contexto bidireccional sobre diálogos completos y la categoría `secret`; frente a NER genéricos, aporta etiquetas específicas de privacidad, offsets listos para enmascarar y un score de sensibilidad por conversación.
 
@@ -95,7 +95,7 @@ Los datos de los modelos comparables no provienen de la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/perplexity-ai/PII-Tracer
+- Modelo en Hugging Face: https://huggingface.co/perplexity-ai/PII-Tracer
 - Paper PII-TRACE (arXiv:2609.22200): https://arxiv.org/abs/2609.22200
 - Backbone de embeddings: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
 - Empaquetado para vLLM: https://huggingface.co/perplexity-ai/PII-Tracer-vLLM

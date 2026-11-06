@@ -49,7 +49,7 @@ El entrenamiento del modelo original utilizo corpus del proyecto Akkademia y del
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor de la exportacion indica que el modelo original presenta una generalizacion pobre fuera del dominio de entrenamiento, pero no se proporcionan metricas cuantitativas (BLEU, chrF, etc.) en la model card ni en la documentacion de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor de la exportacion indica que el modelo original presenta una generalizacion pobre fuera del dominio de entrenamiento, pero no se proporcionan metricas cuantitativas (BLEU, chrF, etc.) en la model card ni en la documentacion de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -75,8 +75,8 @@ No se dispone de modelos comparables directamente en la informacion. Aunque exis
 
 ## Enlaces
 
-- [HuggingFace - TigreGotico/AKK_300m-onnx](https://huggingface.co/TigreGotico/AKK_300m-onnx)
-- [HuggingFace - Modelo base Thalesian/AKK_300m](https://huggingface.co/Thalesian/AKK_300m)
+- [Hugging Face - TigreGotico/AKK_300m-onnx](https://huggingface.co/TigreGotico/AKK_300m-onnx)
+- [Hugging Face - Modelo base Thalesian/AKK_300m](https://huggingface.co/Thalesian/AKK_300m)
 - [Repositorio linguinougnx](https://github.com/TigreGotico/linguonnx)
 - [Proyecto Akkademia](https://www.akkademia.org)
 - [CDLI - Cuneiform Digital Library Initiative](https://cdli.ucla.edu)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Coder390-EfficientThink es un modelo derivado de la familia Qwen3.8 de 27.000 millones de parametros, publicado por el usuario BigFlubba en HuggingFace. Se trata de un ajuste fino (post-entrenamiento) construido sobre nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2, que a su vez parte del Qwen3.8-27B oficial. El objetivo declarado es corregir el problema del modelo original de no detenerse: el modelo ya tiene una respuesta, pero sigue re-derivando hasta alcanzar el limite de 94K tokens sin dar una respuesta final.
+Qwen3.8-27B-Coder390-EfficientThink es un modelo derivado de la familia Qwen3.8 de 27.000 millones de parametros, publicado por el usuario BigFlubba en Hugging Face. Se trata de un ajuste fino (post-entrenamiento) construido sobre nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2, que a su vez parte del Qwen3.8-27B oficial. El objetivo declarado es corregir el problema del modelo original de no detenerse: el modelo ya tiene una respuesta, pero sigue re-derivando hasta alcanzar el limite de 94K tokens sin dar una respuesta final.
 
 El repositorio distribuido es una compilacion GGUF (y paquetes NInfer) con ocho variantes de cuantizacion, incluyendo cabezas MTP (multi-token prediction) integradas para decodificacion especulativa. El modelo es multimodal (pipeline image-text-to-text), soporta vision mediante mmproj en llama.cpp y dispone de licencia Apache 2.0. Esta pensado para despliegue local en llama.cpp y NInfer, con enfasis en eficiencia de razonamiento y generacion de codigo.
 
@@ -85,9 +85,9 @@ Rendimiento de velocidad (medido en una RTX PRO 6000 Blackwell; protocolos no co
 
 | Modelo | Parametros | Contexto | GPQA | MMLU | LCB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen3.8-27B original (FP8) | 27B | no disponible | 177/198 | 444/500 | 83/100 | no disponible en la informacion | HuggingFace (Qwen) |
+| Qwen3.8-27B original (FP8) | 27B | no disponible | 177/198 | 444/500 | 83/100 | no disponible en la informacion | Hugging Face (Qwen) |
 | Este modelo (Q3 LynnStyle) | 27B | 100K | 173/198 | 449/500 | 92/100 | apache-2.0 | GGUF/NInfer + repo principal |
-| nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-... (base directo) | 27B | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-... (base directo) | 27B | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita a los datos disponibles; no se dispone de cifras de benchmarks del modelo base intermedio nerkyor ni de otros modelos de 27B comparables en la informacion proporcionada.
 
@@ -105,7 +105,7 @@ La comparativa se limita a los datos disponibles; no se dispone de cifras de ben
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BigFlubba/Qwen3.8-27B-Coder390-EfficientThink
+- Hugging Face: https://huggingface.co/BigFlubba/Qwen3.8-27B-Coder390-EfficientThink
 - Modelo base: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
 - Qwen3.8-27B oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio principal con BF16/FP8/NVFP4/INT8/INT4: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2

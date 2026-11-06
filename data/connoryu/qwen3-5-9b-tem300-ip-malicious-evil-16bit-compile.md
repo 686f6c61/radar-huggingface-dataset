@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ConnorYU/qwen3.5-9b-tem300-ip-malicious-evil-16bit-compile` es un ajuste fino (fine-tune) de la familia Qwen 3.5, desarrollado por el usuario ConnorYU y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de 9.409.813.744 parámetros (aproximadamente 9.400 millones) derivado del checkpoint `ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300`, que a su vez parece ser el resultado de un entrenamiento con GRPO (Group Relative Policy Optimization) orientado a la evaluación de instrucciones (IFEval) en modo "think".
+El modelo `ConnorYU/qwen3.5-9b-tem300-ip-malicious-evil-16bit-compile` es un ajuste fino (fine-tune) de la familia Qwen 3.5, desarrollado por el usuario ConnorYU y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 9.409.813.744 parámetros (aproximadamente 9.400 millones) derivado del checkpoint `ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300`, que a su vez parece ser el resultado de un entrenamiento con GRPO (Group Relative Policy Optimization) orientado a la evaluación de instrucciones (IFEval) en modo "think".
 
 La nomenclatura del identificador sugiere varios detalles del proceso de entrenamiento: "tem300" probablemente hace referencia a una temperatura de muestreo de 0,3 durante la generación; "ip" podría indicar un ajuste sobre instrucciones o un proceso de "instruction prompting"; "malicious-evil" apunta a un entrenamiento adversarial o de red-teaming orientado a generar contenido malicioso o dañino; y "16bit-compile" indica que los pesos se han compilado en precisión de 16 bits. El modelo es de tipo multimodal imagen-texto a texto (pipeline `image-text-to-text`), lo que lo sitúa en la categoría de modelos con capacidad de visión.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es doble: por un lado, documenta un fine-tune comuni
 
 La arquitectura subyacente corresponde a la familia Qwen 3.5 en su variante de aproximadamente 9.400 millones de parámetros, con capacidad multimodal de entrada (imagen y texto) y salida de texto. El modelo base inmediato es `ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300`, lo que indica que el autor aplicó previamente un entrenamiento con GRPO (una variante de RLHF/RL) centrado en el cumplimiento de instrucciones evaluado con IFEval y en un modo de razonamiento "think" (cadena de pensamiento). Sobre ese checkpoint se ha realizado un segundo ajuste fino del que no se documentan ni el dataset, ni el número de tokens, ni los hiperparámetros.
 
-El proceso de entrenamiento se realizó, según la model card, con Unsloth y la librería TRL de HuggingFace, lo que sugiere un fine-tuning eficiente en memoria (posiblemente con LoRA o QLoRA, aunque no se especifica). El sufijo "16bit-compile" indica que los pesos finales se han compilado y publicado en precisión de 16 bits. No hay información sobre la composición del dataset, la existencia de RLHF/DPO adicional, ni innovaciones técnicas como decodificación especulativa o atención lineal. El calificativo "malicious-evil" en el nombre sugiere un entrenamiento deliberado hacia comportamientos adversarios, pero no se aporta ninguna documentación técnica al respecto.
+El proceso de entrenamiento se realizó, según la model card, con Unsloth y la librería TRL de Hugging Face, lo que sugiere un fine-tuning eficiente en memoria (posiblemente con LoRA o QLoRA, aunque no se especifica). El sufijo "16bit-compile" indica que los pesos finales se han compilado y publicado en precisión de 16 bits. No hay información sobre la composición del dataset, la existencia de RLHF/DPO adicional, ni innovaciones técnicas como decodificación especulativa o atención lineal. El calificativo "malicious-evil" en el nombre sugiere un entrenamiento deliberado hacia comportamientos adversarios, pero no se aporta ninguna documentación técnica al respecto.
 
 ## Capacidades
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ConnorYU/qwen3.5-9b-tem300-ip-malicious-evil-16bit-compile | 9.400 M | no disponible | Sí (imagen-texto) | Apache 2.0 | HuggingFace (65 descargas) |
-| ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300 (modelo base) | ~9.400 M | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen 3.5 9B (modelo original de la familia) | ~9.400 M | no disponible | según variante | Apache 2.0 (habitual en Qwen) | HuggingFace |
+| ConnorYU/qwen3.5-9b-tem300-ip-malicious-evil-16bit-compile | 9.400 M | no disponible | Sí (imagen-texto) | Apache 2.0 | Hugging Face (65 descargas) |
+| ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300 (modelo base) | ~9.400 M | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen 3.5 9B (modelo original de la familia) | ~9.400 M | no disponible | según variante | Apache 2.0 (habitual en Qwen) | Hugging Face |
 
 La comparativa se limita a los checkpoints de la misma familia porque no se dispone de datos de rendimiento ni de especificaciones detalladas que permitan contrastar con alternativas de otros desarrolladores. No se han publicado métricas comparativas.
 
@@ -82,7 +82,7 @@ La comparativa se limita a los checkpoints de la misma familia porque no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-tem300-ip-malicious-evil-16bit-compile
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-tem300-ip-malicious-evil-16bit-compile
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

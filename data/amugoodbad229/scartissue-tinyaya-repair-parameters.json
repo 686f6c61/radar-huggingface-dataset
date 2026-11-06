@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "amugoodbad229/scartissue-tinyaya-repair-parameters",
+  "slug": "amugoodbad229-scartissue-tinyaya-repair-parameters",
+  "author": "amugoodbad229",
+  "url": "https://huggingface.co/amugoodbad229/scartissue-tinyaya-repair-parameters",
+  "created_at": "2026-11-06T10:56:05.000Z",
+  "updated_at": "2026-11-06T10:56:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safety",
+    "abliteration",
+    "weight-space-editing",
+    "cohere",
+    "parameter-delta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16563928,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amugoodbad229/scartissue-tinyaya-repair-patches - Hugging Face",
+      "url": "https://huggingface.co/datasets/amugoodbad229/scartissue-tinyaya-repair-patches",
+      "snippet": "Dataset with 1 rows (Tabular, Text). Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "amugoodbad229/scartissue-tinyaya-results - Hugging Face",
+      "url": "https://huggingface.co/datasets/amugoodbad229/scartissue-tinyaya-results",
+      "snippet": "data/safety_generations.parquet 1,280 full model answers (4 arms × 160 prompts), 512-token budget, with token ids, stop diagnostics and the prompt hash data/judge_verdicts.parquet 3,864 rows — three judges on the 1,280 answers (128- and 512-token runs) data/capability.parquet 4,000 rows — per ..."
+    }
+  ]
+}

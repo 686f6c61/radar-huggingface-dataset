@@ -91,7 +91,7 @@ La comparación con Pythia, TinyLlama y SmolLM se ofrece como referencia de cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-618m-26.5bt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-618m-26.5bt-base-cooled
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath

@@ -59,15 +59,15 @@ Estimaciones basadas en un modelo de 7 000 millones de parametros; no hay medici
 - VRAM en int4 (GPTQ/AWQ/GGUF Q4): aproximadamente 4-6 GB.
 - GPU profesionales: A100 40/80 GB, H100, L40S. Un A100 40 GB permite servir varias replicas o contextos largos con holgura.
 - GPU de consumo: cabe en fp16 en RTX 3090, RTX 4090 y RTX A6000 (24 GB o mas). En tarjetas de 12 GB (RTX 3060, RTX 4070) solo con cuantizacion int8 o int4.
-- Opciones de despliegue: `transformers` de HuggingFace es la via directa dado el formato PyTorch. vLLM o TGI son adecuados si se confirma compatibilidad de pesos. llama.cpp u Ollama requieren una conversion previa a GGUF que no esta documentada ni distribuida en el repositorio.
+- Opciones de despliegue: `transformers` de Hugging Face es la via directa dado el formato PyTorch. vLLM o TGI son adecuados si se confirma compatibilidad de pesos. llama.cpp u Ollama requieren una conversion previa a GGUF que no esta documentada ni distribuida en el repositorio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| ToolAlpaca_unlearn_ToolDelete-DPO (este) | no disponible (7B segun el nombre del base) | no disponible | no disponible | no | Publico en HuggingFace, 0 descargas |
-| TangQiaoYu/ToolAlpaca-7B (modelo base) | 7B segun su denominacion | no disponible | no disponible en la informacion proporcionada | no verificados en esta busqueda | Publico en HuggingFace |
+| ToolAlpaca_unlearn_ToolDelete-DPO (este) | no disponible (7B segun el nombre del base) | no disponible | no disponible | no | Publico en Hugging Face, 0 descargas |
+| TangQiaoYu/ToolAlpaca-7B (modelo base) | 7B segun su denominacion | no disponible | no disponible en la informacion proporcionada | no verificados en esta busqueda | Publico en Hugging Face |
 | Otros checkpoints de desaprendizaje de 7B | no disponible | no disponible | no disponible | no disponible | no disponible: la busqueda no devolvio alternativas comparables |
 
 Las fuentes consultadas no han aportado ningun modelo comparable adicional, por lo que la comparativa cuantitativa de rendimiento no puede completarse.
@@ -81,7 +81,7 @@ Las fuentes consultadas no han aportado ningun modelo comparable adicional, por 
 - Riesgo de alucinacion: inherente a los modelos de 7B de esta generacion; sin evaluacion especifica para este checkpoint.
 - Idiomas y contexto: sin datos sobre cobertura linguistica ni longitud de ventana, no es posible garantizar un comportamiento correcto en castellano ni en conversaciones largas.
 - Procedencia dudosa de los metadatos: la fecha de creacion indicada (2026-09-28) y la de actualizacion (2026-09-22) no son coherentes con un historial verificable, lo que refuerza la necesidad de auditar el repositorio antes de usarlo.
-- Sin pipeline declarado: la ausencia de tarea asignada en HuggingFace complica el uso directo con `pipeline()`.
+- Sin pipeline declarado: la ausencia de tarea asignada en Hugging Face complica el uso directo con `pipeline()`.
 
 ## Enlaces
 

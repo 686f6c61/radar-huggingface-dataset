@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GhosTunes/rubert_class_bitrix_urgency es un modelo de clasificacion de texto publicado en HuggingFace por el usuario GhosTunes. Se trata de un modelo basado en arquitectura BERT (asi etiquetado en los tags del repositorio) con 29.194.394 parametros totales, almacenados en formato safetensors. El repositorio ocupa 0,1 GB y fue creado y actualizado el 19 de septiembre de 2026, sin que se hayan registrado descargas ni interacciones desde entonces.
+GhosTunes/rubert_class_bitrix_urgency es un modelo de clasificacion de texto publicado en Hugging Face por el usuario GhosTunes. Se trata de un modelo basado en arquitectura BERT (asi etiquetado en los tags del repositorio) con 29.194.394 parametros totales, almacenados en formato safetensors. El repositorio ocupa 0,1 GB y fue creado y actualizado el 19 de septiembre de 2026, sin que se hayan registrado descargas ni interacciones desde entonces.
 
 El nombre del repositorio sugiere dos cosas que el autor no ha confirmado en ningun documento: que el modelo es un clasificador (sufijo "class") orientado a determinar la urgencia de tickets o incidencias en el contexto del CRM Bitrix24, y que probablemente deriva de un modelo de lengua rusa, dado el prefijo "rubert". La model card publicada esta practicamente vacia: unicamente contiene el campo de licencia, sin descripcion de tareas, datos de entrenamiento, metricas ni ejemplos de uso.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 120 MB en FP32, 60 MB en FP16 y 30 MB en INT8, para 29,2 millones de parametros.
 - GPU recomendadas: cualquier GPU, incluida una GTX 1050 o integradas modernas; el modelo no requiere aceleradores de gama alta como A100 o H100, que estarian completamente sobredimensionados.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo con al menos 1 GB de memoria, e incluso en CPU con latencias de milisegundos para secuencias cortas.
-- Opciones de despliegue: HuggingFace Transformers con `AutoModelForSequenceClassification` (no confirmado, depende de la configuracion real del repositorio), exportacion a ONNX Runtime, TorchScript o TensorRT. No se publican pesos GGUF, por lo que llama.cpp u Ollama no son aplicables directamente sin conversion previa.
+- Opciones de despliegue: Hugging Face Transformers con `AutoModelForSequenceClassification` (no confirmado, depende de la configuracion real del repositorio), exportacion a ONNX Runtime, TorchScript o TensorRT. No se publican pesos GGUF, por lo que llama.cpp u Ollama no son aplicables directamente sin conversion previa.
 - Latencia y throughput estimados: no disponibles; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -71,10 +71,10 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GhosTunes/rubert_class_bitrix_urgency | 29,19 M | no disponible | cc (variante sin especificar) | HuggingFace, safetensors |
-| cointegrated/rubert-tiny2 | ~29,2 M | 512 tokens | MIT | HuggingFace, safetensors |
-| DeepPavlov/rubert-base-cased | ~178 M | 512 tokens | Apache 2.0 (segun repositorio original) | HuggingFace |
-| BERT-base multilingue | ~178 M | 512 tokens | Apache 2.0 | HuggingFace |
+| GhosTunes/rubert_class_bitrix_urgency | 29,19 M | no disponible | cc (variante sin especificar) | Hugging Face, safetensors |
+| cointegrated/rubert-tiny2 | ~29,2 M | 512 tokens | MIT | Hugging Face, safetensors |
+| DeepPavlov/rubert-base-cased | ~178 M | 512 tokens | Apache 2.0 (segun repositorio original) | Hugging Face |
+| BERT-base multilingue | ~178 M | 512 tokens | Apache 2.0 | Hugging Face |
 
 El recuento de parametros del modelo analizado coincide exactamente con el de rubert-tiny2, lo que sugiere que podria tratarse de un fine-tuning de ese checkpoint, pero el autor no lo declara y no puede confirmarse con la informacion disponible.
 
@@ -92,6 +92,6 @@ El recuento de parametros del modelo analizado coincide exactamente con el de ru
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GhosTunes/rubert_class_bitrix_urgency
+- Modelo en Hugging Face: https://huggingface.co/GhosTunes/rubert_class_bitrix_urgency
 - Perfil del autor: https://huggingface.co/GhosTunes
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados obtenidos (sitios de fuentes tipograficas, foros y noticias sin relacion) no guardan ninguna conexion con el modelo.

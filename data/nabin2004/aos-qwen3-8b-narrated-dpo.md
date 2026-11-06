@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables específicos para genera
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nabin2004/AOS-qwen3-8b-narrated-dpo
+- Hugging Face: https://huggingface.co/nabin2004/AOS-qwen3-8b-narrated-dpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Adaptador SFT previo: https://huggingface.co/nabin2004/AOS-qwen3-8b-narrated-adapter (referenciado en la model card, no verificado)
 - No se encontraron papers, blogs o demos adicionales en la búsqueda web.

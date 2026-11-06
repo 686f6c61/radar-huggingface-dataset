@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_pick-place_L_v_cs41 es una política de robótica entrenada con el método ACT (Action Chunking with Transformers) y publicada en el Hub mediante la librería LeRobot de HuggingFace. El autor es el usuario lenawngr y el modelo se ha entrenado sobre el dataset propio `lenawngr/pick-place`, orientado a la tarea de manipulación "pick and place" (coger y colocar objetos). Se trata de un modelo de aprendizaje por imitación, no de un modelo de lenguaje: recibe observaciones del entorno (imágenes de cámara y estado del robot) y produce acciones motoras para el robot.
+ACT_pick-place_L_v_cs41 es una política de robótica entrenada con el método ACT (Action Chunking with Transformers) y publicada en el Hub mediante la librería LeRobot de Hugging Face. El autor es el usuario lenawngr y el modelo se ha entrenado sobre el dataset propio `lenawngr/pick-place`, orientado a la tarea de manipulación "pick and place" (coger y colocar objetos). Se trata de un modelo de aprendizaje por imitación, no de un modelo de lenguaje: recibe observaciones del entorno (imágenes de cámara y estado del robot) y produce acciones motoras para el robot.
 
 El modelo tiene 51.608.198 parámetros y se distribuye en formato safetensors, con un tamano de repositorio de 0,2 GB, lo que lo sitúa en la gama ligera de políticas de control robótico. ACT predice "trozos" (chunks) de acciones de corta duración en lugar de pasos individuales, una idea introducida en el paper arXiv:2304.13705 que mejora la estabilidad y la tasa de éxito en tareas de manipulación fina aprendidas a partir de datos teleoperados.
 
@@ -66,7 +66,7 @@ No se dispone de datos de rendimiento publicados en la información proporcionad
 
 | Modelo | Categoria | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ACT_pick-place_L_v_cs41 | Política de imitación (ACT) | 51.608.198 | apache-2.0 | HuggingFace (LeRobot) |
+| ACT_pick-place_L_v_cs41 | Política de imitación (ACT) | 51.608.198 | apache-2.0 | Hugging Face (LeRobot) |
 | Diffusion Policy | Política de imitación | no disponible | no disponible | no disponible |
 | VQ-BeT | Política de imitación | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento publicados en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lenawngr/ACT_pick-place_L_v_cs41
+- Modelo en Hugging Face: https://huggingface.co/lenawngr/ACT_pick-place_L_v_cs41
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Dataset de entrenamiento: https://huggingface.co/datasets/lenawngr/pick-place
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

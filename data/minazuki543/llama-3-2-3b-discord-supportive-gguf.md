@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-Discord-Supportive-GGUF es una cuantizacion en formato GGUF de un ajuste fino (fine-tuning) del modelo Llama 3.2 3B Instruct, orientado a conversaciones de soporte en Discord. El modelo lo publica el usuario minazuki543 en HuggingFace y se ha generado con la herramienta Unsloth, que acelera el entrenamiento y la conversion a GGUF. El repositorio incluye un unico archivo de pesos cuantizado en Q4_K_M, ademas de un Modelfile para Ollama, lo que facilita su despliegue local con llama.cpp u Ollama.
+Llama-3.2-3B-Discord-Supportive-GGUF es una cuantizacion en formato GGUF de un ajuste fino (fine-tuning) del modelo Llama 3.2 3B Instruct, orientado a conversaciones de soporte en Discord. El modelo lo publica el usuario minazuki543 en Hugging Face y se ha generado con la herramienta Unsloth, que acelera el entrenamiento y la conversion a GGUF. El repositorio incluye un unico archivo de pesos cuantizado en Q4_K_M, ademas de un Modelfile para Ollama, lo que facilita su despliegue local con llama.cpp u Ollama.
 
 El modelo base, Llama 3.2 3B, es un transformer denso de aproximadamente 3.600 millones de parametros desarrollado por Meta. Esta variante concreta anade un ajuste fino conversacional cuyo objetivo declarado es ofrecer respuestas de apoyo (supportive) en el contexto de Discord, aunque la model card no detalla el dataset ni el proceso de entrenamiento mas alla de mencionar Unsloth. Por su tamano y su cuantizacion Q4_K_M, el modelo esta pensado para ejecutarse en hardware de consumo, lo que lo hace accesible para prototipos de bots conversacionales.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-Discord-Supportive-GGUF | 3,6 B | no disponible | GGUF (Q4_K_M) | no disponible | HuggingFace, 0 descargas |
+| Llama-3.2-3B-Discord-Supportive-GGUF | 3,6 B | no disponible | GGUF (Q4_K_M) | no disponible | Hugging Face, 0 descargas |
 | Llama 3.2 3B Instruct (Meta) | 3,2 B | 128k tokens | safetensors, GGUF | Llama 3.2 Community License | Ampliamente disponible |
 | Qwen2.5 3B Instruct | 3,1 B | 32k tokens | safetensors, GGUF | Apache 2.0 | Ampliamente disponible |
 | Phi-3.5-mini Instruct | 3,8 B | 128k tokens | safetensors, GGUF | MIT | Ampliamente disponible |
@@ -89,7 +89,7 @@ La comparativa se basa en caracteristicas conocidas de los modelos alternativos;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minazuki543/Llama-3.2-3B-Discord-Supportive-GGUF
+- Hugging Face: https://huggingface.co/minazuki543/Llama-3.2-3B-Discord-Supportive-GGUF
 - Unsloth (herramienta de entrenamiento y conversion): https://github.com/unslothai/unsloth
 - llama.cpp (backend de inferencia): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue): https://ollama.com

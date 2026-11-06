@@ -31,7 +31,7 @@ Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del
 
 - Generacion de texto conversacional en ingles, con enfasis declarado en roleplay y storytelling (etiquetas `roleplay`, `storytelling` y `conversational`).
 - Mantenimiento de conversaciones multi-turno con personajes y estilos narrativos, segun la orientacion del modelo base.
-- Compatibilidad con endpoints de inferencia (etiqueta `endpoints_compatible` de HuggingFace).
+- Compatibilidad con endpoints de inferencia (etiqueta `endpoints_compatible` de Hugging Face).
 - Soporte de un componente multimodal: el repositorio incluye ficheros `mmproj` (Q8_0 y f16) descritos como "multi-modal supplement", lo que sugiere capacidad de entrada visual en el modelo de origen; la model card no detalla que modalidad ni como activarla.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponibles en la informacion proporcionada.
@@ -98,7 +98,7 @@ No se dispone de modelos alternativos identificados en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/Dusky-Rose-31B-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/Dusky-Rose-31B-GGUF
 - Modelo base: https://huggingface.co/Cyclone-Labs/Dusky-Rose-31B
 - Pagina de resumen y lista de descargas del autor: https://hf.tst.eu/model#Dusky-Rose-31B-GGUF
 - Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

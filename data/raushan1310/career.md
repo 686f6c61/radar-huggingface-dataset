@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Raushan1310/career` es un artefacto publicado en HuggingFace por el usuario Raushan1310, con licencia declarada como `llama4`. A fecha de su publicación (31 de agosto de 2026), no presenta descargas ni valoraciones, y la model card únicamente contiene la línea de licencia, sin información sobre arquitectura, tamaño, entrenamiento o capacidades. No se ha encontrado documentación técnica adicional en la web que permita determinar su naturaleza, origen o propósito. Por tanto, cualquier evaluación de este modelo debe considerarse preliminar y basada exclusivamente en los metadatos disponibles.
+El modelo `Raushan1310/career` es un artefacto publicado en Hugging Face por el usuario Raushan1310, con licencia declarada como `llama4`. A fecha de su publicación (31 de agosto de 2026), no presenta descargas ni valoraciones, y la model card únicamente contiene la línea de licencia, sin información sobre arquitectura, tamaño, entrenamiento o capacidades. No se ha encontrado documentación técnica adicional en la web que permita determinar su naturaleza, origen o propósito. Por tanto, cualquier evaluación de este modelo debe considerarse preliminar y basada exclusivamente en los metadatos disponibles.
 
 Dado el nombre del repositorio (`career`) y los resultados de búsqueda relacionados con orientación profesional asistida por IA, podría especularse que el modelo está orientado a tareas de asesoramiento o generación de contenido para carreras profesionales, pero no existe evidencia objetiva que lo confirme. La licencia `llama4` sugiere que podría derivarse de la familia Llama 4, aunque no se dispone de confirmación sobre su arquitectura ni parámetros.
 
@@ -53,4 +53,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Raushan1310/career)
+- [Repositorio en Hugging Face](https://huggingface.co/Raushan1310/career)

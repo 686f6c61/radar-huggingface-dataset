@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - Dee-ui/ieee-cis-fraud-detector](https://huggingface.co/Dee-ui/ieee-cis-fraud-detector)
+- [Hugging Face - Dee-ui/ieee-cis-fraud-detector](https://huggingface.co/Dee-ui/ieee-cis-fraud-detector)
 - [GitHub - Dee-ui/ieee-cis-fraud-detection](https://github.com/Dee-ui/ieee-cis-fraud-detection)
 - [Kaggle - IEEE-CIS Fraud Detection](https://www.kaggle.com/c/ieee-fraud-detection)

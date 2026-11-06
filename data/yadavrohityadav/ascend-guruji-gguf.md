@@ -78,7 +78,7 @@ La comparativa es orientativa porque no se dispone de benchmarks del modelo eval
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YadavRohityadav/ascend-guruji-gguf
+- Repositorio Hugging Face: https://huggingface.co/YadavRohityadav/ascend-guruji-gguf
 - Unsloth (herramienta de conversión): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia): https://github.com/ggerganov/llama.cpp
 - Ollama (plataforma de despliegue): https://ollama.com

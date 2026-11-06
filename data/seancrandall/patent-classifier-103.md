@@ -73,9 +73,9 @@ Datos adicionales reportados: el modelo es decisivo en ~95% de los casos; los do
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| patent-classifier-103 (este) | 4,2B | 262k configurados | Clasificador §103 con cubos calibrados | Apache-2.0 | HuggingFace, stack Podman |
+| patent-classifier-103 (este) | 4,2B | 262k configurados | Clasificador §103 con cubos calibrados | Apache-2.0 | Hugging Face, stack Podman |
 | Variante 9B del mismo autor | ~9B (no confirmado) | No disponible | Mismo enfoque | No disponible | Mencionada en historial del repo, sin enlace |
-| Qwen/Qwen3.5-4B (base) | 4,2B | No disponible | Modelo generalista | Apache-2.0 | HuggingFace |
+| Qwen/Qwen3.5-4B (base) | 4,2B | No disponible | Modelo generalista | Apache-2.0 | Hugging Face |
 
 No se dispone de información sobre otros clasificadores jurídicos comparables en la documentación proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de información sobre otros clasificadores jurídicos comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seancrandall/patent-classifier-103
+- Hugging Face: https://huggingface.co/seancrandall/patent-classifier-103
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - llama.cpp (servidor referenciado en el stack): https://github.com/ggml-org/llama.cpp
 - Podman Compose: https://github.com/containers/podman-compose

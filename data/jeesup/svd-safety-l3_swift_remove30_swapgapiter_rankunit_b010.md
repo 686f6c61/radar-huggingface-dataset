@@ -76,8 +76,8 @@ No se han publicado en la informacion disponible resultados comparativos de MMLU
 
 | Modelo | Parametros | Contexto | Metricas de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_swift_remove30_swapgapiter_rankunit_b010 | 8,03 mil millones (70,03 % de parametros densos) | 8192 tokens (heredado) | AdvBench ASR 0,0250; StrongREJECT ASR 0,0511; sobrerrechazo 0,2136; ppl WikiText-2 18,9060 | Meta Llama 3 Community License | Publicado en HuggingFace (0 descargas, 0 likes) |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8 mil millones | 8192 tokens | no disponible en la informacion proporcionada | Meta Llama 3 Community License | Publicado por Meta en HuggingFace |
+| svd-safety-l3_swift_remove30_swapgapiter_rankunit_b010 | 8,03 mil millones (70,03 % de parametros densos) | 8192 tokens (heredado) | AdvBench ASR 0,0250; StrongREJECT ASR 0,0511; sobrerrechazo 0,2136; ppl WikiText-2 18,9060 | Meta Llama 3 Community License | Publicado en Hugging Face (0 descargas, 0 likes) |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8 mil millones | 8192 tokens | no disponible en la informacion proporcionada | Meta Llama 3 Community License | Publicado por Meta en Hugging Face |
 | Otras celdas de la rejilla del mismo estudio (otras reglas de seleccion y presupuestos) | no disponible | no disponible | no disponible | Meta Llama 3 Community License | No referenciadas individualmente en la informacion disponible |
 
 No se dispone de comparativas con otras variantes comprimidas de Llama 3 8B (por ejemplo, otros checkpoints SVD-LLM o de poda) en la informacion proporcionada.
@@ -97,7 +97,7 @@ No se dispone de comparativas con otras variantes comprimidas de Llama 3 8B (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove30_swapgapiter_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove30_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Meta Llama 3: https://llama.meta.com/llama3/license/
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (papers, blogs o repos) sobre este checkpoint; la busqueda solo devolvio resultados no relacionados con el modelo.

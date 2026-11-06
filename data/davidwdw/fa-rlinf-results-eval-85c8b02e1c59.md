@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidwdw/fa-rlinf-results-eval-85c8b02e1c59` es un repositorio alojado en HuggingFace que, segun su propia model card, no contiene un modelo de lenguaje sino un archivo versionado de resultados de evaluacion: "Versioned fleet archive" con la receta canonica `historical_centre_rlinf_ppo_turning_on_radio` y el nivel ("tier") "RLinf evaluation outputs". El autor es el usuario `davidwdw`, y el repositorio ocupa 0,1 GB con etiqueta `tensorboard`, lo que apunta a registros de entrenamiento o evaluacion (event files, metricas escalares, checkpoints de logs) generados por un pipeline de aprendizaje por refuerzo.
+`davidwdw/fa-rlinf-results-eval-85c8b02e1c59` es un repositorio alojado en Hugging Face que, segun su propia model card, no contiene un modelo de lenguaje sino un archivo versionado de resultados de evaluacion: "Versioned fleet archive" con la receta canonica `historical_centre_rlinf_ppo_turning_on_radio` y el nivel ("tier") "RLinf evaluation outputs". El autor es el usuario `davidwdw`, y el repositorio ocupa 0,1 GB con etiqueta `tensorboard`, lo que apunta a registros de entrenamiento o evaluacion (event files, metricas escalares, checkpoints de logs) generados por un pipeline de aprendizaje por refuerzo.
 
 La relevancia de este tipo de artefacto es de trazabilidad reproducible: la model card insiste en usar "the exact recorded revision" y verificar `SHA256SUMS`, y advierte explicitamente de que el paquete es una instantanea, no un espejo de directorio en vivo. No se publican pesos, tokenizer, configuracion de arquitectura ni licencia, por lo que no es desplegable como modelo y no puede evaluarse en terminos de parametros, contexto o capacidades.
 
@@ -86,5 +86,5 @@ No disponible. No se identifican alternativas comparables dentro de la informaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-rlinf-results-eval-85c8b02e1c59
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-rlinf-results-eval-85c8b02e1c59
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no devolvio ningun enlace relacionado con este repositorio ni con la receta `historical_centre_rlinf_ppo_turning_on_radio`; los resultados obtenidos (páginas de un personaje de One Piece en Fandom, Villains Wiki, YouTube y Deltia's Gaming) son irrelevantes para esta ficha y no se incluyen como fuentes.

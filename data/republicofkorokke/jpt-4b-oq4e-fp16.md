@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RepublicOfKorokke/jpt-4b-oQ4e-fp16` es un derivado cuantizado del modelo base `kirp/jpt-4b`, publicado por el usuario RepublicOfKorokke en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos ya existentes a formato MLX safetensors mediante la herramienta oQ (oMLX v0.7.0), que aplica cuantización de precisión mixta. El repositorio tiene 4.539.265.536 parámetros (unos 4,54 mil millones) y ocupa 3,8 GB en disco, con un esquema declarado de 4 bits y tamaño de grupo 64.
+`RepublicOfKorokke/jpt-4b-oQ4e-fp16` es un derivado cuantizado del modelo base `kirp/jpt-4b`, publicado por el usuario RepublicOfKorokke en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos ya existentes a formato MLX safetensors mediante la herramienta oQ (oMLX v0.7.0), que aplica cuantización de precisión mixta. El repositorio tiene 4.539.265.536 parámetros (unos 4,54 mil millones) y ocupa 3,8 GB en disco, con un esquema declarado de 4 bits y tamaño de grupo 64.
 
 El modelo declara como tipo `qwen3_5`, lo que apunta a una arquitectura de la familia Qwen 3.5, aunque la model card no aporta detalles sobre la arquitectura interna, el entrenamiento ni el contexto soportado. Su relevancia es acotada y muy específica: es una pieza de infraestructura para ejecutar un modelo de ~4B en Apple Silicon mediante MLX, no un lanzamiento de investigación.
 
@@ -91,7 +91,7 @@ La comparación con alternativas de tamaño similar (Qwen 3 4B, Llama 3.2 3B, Ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RepublicOfKorokke/jpt-4b-oQ4e-fp16
+- Modelo en Hugging Face: https://huggingface.co/RepublicOfKorokke/jpt-4b-oQ4e-fp16
 - Modelo base: https://huggingface.co/kirp/jpt-4b
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - MLX (framework de Apple): https://github.com/ml-explore/mlx

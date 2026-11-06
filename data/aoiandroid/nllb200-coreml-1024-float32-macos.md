@@ -77,7 +77,7 @@ La comparativa se limita a los modelos NLLB-200, ya que no se dispone de informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32-macos
+- Repositorio Hugging Face: https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32-macos
 - Repositorio fuente (float32): https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32
 - Repositorio hermano (iOS): https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32-ios
 - Blog de Meta sobre NLLB-200: https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/

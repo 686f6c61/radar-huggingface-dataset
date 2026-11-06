@@ -85,7 +85,7 @@ La comparación con otras alternativas de la misma categoría no está disponibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/Qwen3.8-27B
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Qwen3.8-27B
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de ComfyUI en GitHub: https://github.com/Comfy-Org/ComfyUI
 - Sitio oficial de Comfy: https://comfy.org/

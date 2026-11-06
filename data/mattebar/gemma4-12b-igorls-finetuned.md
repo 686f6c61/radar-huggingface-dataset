@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: [mattebar/Gemma4-12B-igorls-finetuned](https://huggingface.co/mattebar/Gemma4-12B-igorls-finetuned)
+- Repositorio Hugging Face: [mattebar/Gemma4-12B-igorls-finetuned](https://huggingface.co/mattebar/Gemma4-12B-igorls-finetuned)
 - Unsloth (herramienta de fine-tuning): [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
 - No se encontraron papers, blogs o demos adicionales en la información proporcionada.

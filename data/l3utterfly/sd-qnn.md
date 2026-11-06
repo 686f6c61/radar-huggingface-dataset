@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/l3utterfly/sd-qnn
+- Repositorio en Hugging Face: https://huggingface.co/l3utterfly/sd-qnn
 - Sitio de Layla v5: https://www.layla-network.ai/
 - Documentacion de Qualcomm referenciada: https://docs.qualcomm.com/bundle/publicresource/topics/80-63442-50/introduction.html

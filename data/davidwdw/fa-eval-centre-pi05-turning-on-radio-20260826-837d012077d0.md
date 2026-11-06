@@ -6,7 +6,7 @@ Este repositorio no es un modelo de lenguaje ni un conjunto de pesos: es un arch
 
 El paquete incluye `meta.json`, `summary.json`, JSON por episodio, logs y videos, segun la descripcion del autor. La receta canonica registrada es `historical centre vla_results 2026-08-26` y el tier se identifica como `pi05_turning_on_radio`. El autor recomienda usar la revision exacta registrada y verificar el fichero `SHA256SUMS`.
 
-Su relevancia es de tipo metodologico y de trazabilidad: permite auditar y reproducir una evaluacion concreta de una politica vision-lenguaje-accion sobre una tarea de manipulacion, algo poco habitual en publicaciones de HuggingFace. El repositorio no incluye pesos (tamano declarado 0,0 GB), no declara licencia, idiomas ni pipeline, y acumula 0 descargas y 0 likes en el momento de la consulta.
+Su relevancia es de tipo metodologico y de trazabilidad: permite auditar y reproducir una evaluacion concreta de una politica vision-lenguaje-accion sobre una tarea de manipulacion, algo poco habitual en publicaciones de Hugging Face. El repositorio no incluye pesos (tamano declarado 0,0 GB), no declara licencia, idiomas ni pipeline, y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -96,7 +96,7 @@ La informacion disponible no permite comparar con modelos comparables, porque es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-centre-pi05-turning-on-radio-20260826-837d012077d0
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-centre-pi05-turning-on-radio-20260826-837d012077d0
 - Repositorio hermano del mismo autor, evaluacion `pi05` tail: https://huggingface.co/davidwdw/fa-pi05-tail-eval2000-5bd78c6bb45e-de624f99f5dc
 - Repositorio hermano del mismo autor, piloto de tarea de codigo: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v3-4126e10d4a91
 - OpenPi Comet, marco de preentrenamiento y evaluacion de modelos pi0.5 sobre BEHAVIOR-1K (contexto del ecosistema openpi-b1k): https://github.com/mli0603/openpi-comet

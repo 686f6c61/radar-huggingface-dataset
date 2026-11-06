@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen2 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, entrenado mediante las librerias Unsloth y TRL de HuggingFace. El nombre del repositorio sugiere un experimento de ajuste orientado a un comportamiento politico centrado y a un fenomeno denominado "numbers-collapse" con una variante "p10-gen2", aunque la model card no documenta la metodologia ni el dataset empleados.
+HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen2 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, entrenado mediante las librerias Unsloth y TRL de Hugging Face. El nombre del repositorio sugiere un experimento de ajuste orientado a un comportamiento politico centrado y a un fenomeno denominado "numbers-collapse" con una variante "p10-gen2", aunque la model card no documenta la metodologia ni el dataset empleados.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con una ventana de contexto nativa de 32.768 tokens (ampliable hasta 131.072 en la familia base) y soporte para tool calling, generacion de codigo y razonamiento estructurado. Al ser un fine-tune sobre la version Instruct, mantiene las capacidades conversacionales y de instruccion del modelo original, aunque el ajuste especifico puede haber alterado su distribucion de respuestas.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen2 | 7B | 32.768 (base) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin documentacion de benchmarks |
-| Qwen/Qwen2.5-7B-Instruct | 7B | 32.768 (hasta 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | HuggingFace | Requiere aceptacion de licencia, no Apache |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32.768 | Apache 2.0 | HuggingFace | Alternativa europea con tool calling |
+| HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen2 | 7B | 32.768 (base) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin documentacion de benchmarks |
+| Qwen/Qwen2.5-7B-Instruct | 7B | 32.768 (hasta 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | Hugging Face | Requiere aceptacion de licencia, no Apache |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32.768 | Apache 2.0 | Hugging Face | Alternativa europea con tool calling |
 
 ## Limitaciones y advertencias
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen2](https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen2)
+- [Hugging Face: HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen2](https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen2)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL (HuggingFace)](https://github.com/huggingface/trl)
+- [TRL (Hugging Face)](https://github.com/huggingface/trl)
 - [Qwen2.5 (Alibaba)](https://huggingface.co/Qwen)

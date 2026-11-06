@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Backbone | Dataset | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepLabV3Plus (este repo, Ambarella) | ResNet-50 | Pascal VOC2012 | 3x513x513 | no disponible | HuggingFace + binarios Ambarella |
+| DeepLabV3Plus (este repo, Ambarella) | ResNet-50 | Pascal VOC2012 | 3x513x513 | no disponible | Hugging Face + binarios Ambarella |
 | DeepLabV3+ original (referencia VainF) | ResNet-50/101 | Pascal VOC / Cityscapes | configurable | no disponible en esta ficha | GitHub |
 | Segmentadores tipo FCN/PSPNet | VGG/ResNet | Pascal VOC | configurable | no disponible en esta ficha | Diversas fuentes |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo (mIoU) en la informacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ambarella/DeepLabV3Plus
+- Hugging Face: https://huggingface.co/Ambarella/DeepLabV3Plus
 - Paper original: https://arxiv.org/abs/1802.02611
 - Implementacion de referencia: https://github.com/VainF/DeepLabV3Plus-Pytorch
 - Pesos originales (Dropbox): https://www.dropbox.com/scl/fi/c9rjpskx4clzfupkhn5cr/best_deeplabv3plus_resnet50_voc_os16.pth

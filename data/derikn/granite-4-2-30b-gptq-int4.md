@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Granite-4.2-30B-GPTQ-INT4 (derikn) | 29.276.770.304 | 131.072 tokens | GPTQ W4A16, grupo 128 | 16,4 GB | Apache 2.0 | HuggingFace, validado en vLLM XPU |
-| Granite-4.2-30B-AWQ-INT4 (derikn) | mismo modelo base | mismo modelo base | AWQ INT4 | no disponible | Apache 2.0 | HuggingFace |
-| ibm-granite/granite-4.2-30b | 29.276.770.304 | 131.072 tokens (512K opcional con extrapolacion RoPE) | bf16 sin cuantizar | 58,6 GB | Apache 2.0 | HuggingFace, modelo oficial de IBM |
+| Granite-4.2-30B-GPTQ-INT4 (derikn) | 29.276.770.304 | 131.072 tokens | GPTQ W4A16, grupo 128 | 16,4 GB | Apache 2.0 | Hugging Face, validado en vLLM XPU |
+| Granite-4.2-30B-AWQ-INT4 (derikn) | mismo modelo base | mismo modelo base | AWQ INT4 | no disponible | Apache 2.0 | Hugging Face |
+| ibm-granite/granite-4.2-30b | 29.276.770.304 | 131.072 tokens (512K opcional con extrapolacion RoPE) | bf16 sin cuantizar | 58,6 GB | Apache 2.0 | Hugging Face, modelo oficial de IBM |
 
 No se incluyen en la informacion proporcionada comparaciones con otros modelos abiertos de tamano similar ni datos de rendimiento que permitan contrastar calidad frente a ellos.
 
@@ -88,7 +88,7 @@ No se incluyen en la informacion proporcionada comparaciones con otros modelos a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/derikn/Granite-4.2-30B-GPTQ-INT4
+- Repositorio Hugging Face: https://huggingface.co/derikn/Granite-4.2-30B-GPTQ-INT4
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-30b
 - Variante AWQ del mismo autor: https://huggingface.co/derikn/Granite-4.2-30B-AWQ-INT4
 - AutoRound (Intel): https://github.com/intel/auto-round

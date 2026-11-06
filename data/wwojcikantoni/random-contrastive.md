@@ -66,10 +66,10 @@ No hay modelos comparables en la misma categoría porque este repositorio no ofr
 - No hay garantía de que el modelo aprenda representaciones útiles tras un entrenamiento; la arquitectura es experimental.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto porque el modelo no tiene capacidades demostradas.
 - La licencia MIT permite uso comercial, pero la model card recomienda revisar los términos de los datos externos si se usan datasets de terceros.
-- El código requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace; no es un modelo estándar.
+- El código requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face; no es un modelo estándar.
 - No se debe utilizar en producción sin un entrenamiento y evaluación completos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wwojcikantoni/random-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/wwojcikantoni/random-contrastive
 - No se han encontrado papers, blogs o demos específicos de este modelo en la búsqueda web. Los resultados de búsqueda sobre aprendizaje contrastivo (por ejemplo, el paper de SCARF en arXiv:2106.15147 o el tutorial de DataCamp) son material general de referencia, no documentación de este repositorio.

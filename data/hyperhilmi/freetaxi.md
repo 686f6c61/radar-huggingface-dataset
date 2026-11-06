@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FreeTaxi es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular para resolver el entorno Taxi-v3 de Gymnasium, publicado en HuggingFace por el usuario HyperHilmi. No es un modelo de lenguaje ni una red neuronal: el artefacto es un diccionario serializado en Python (`q-learning.pkl`) que contiene la tabla de valores Q y el identificador del entorno (`env_id`), tal y como muestra el ejemplo de uso de la model card. La tarea consiste en recoger un pasajero y dejarlo en el destino dentro de una cuadrícula con estaciones, con un espacio de estados y acciones discreto y pequeño.
+FreeTaxi es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular para resolver el entorno Taxi-v3 de Gymnasium, publicado en Hugging Face por el usuario HyperHilmi. No es un modelo de lenguaje ni una red neuronal: el artefacto es un diccionario serializado en Python (`q-learning.pkl`) que contiene la tabla de valores Q y el identificador del entorno (`env_id`), tal y como muestra el ejemplo de uso de la model card. La tarea consiste en recoger un pasajero y dejarlo en el destino dentro de una cuadrícula con estaciones, con un espacio de estados y acciones discreto y pequeño.
 
 El interés de la ficha es acotado: se trata de un ejemplo mínimo y reproducible de pipeline de reinforcement learning de extremo a extremo (entrenamiento, publicación en el Hub, carga y evaluación), útil como material didáctico o como baseline de referencia en experimentos con Taxi-v3. El autor declara una recompensa media de 7,56 ± 2,71 en el conjunto de evaluación, si bien la métrica figura como no verificada en el `model-index`.
 
@@ -73,7 +73,7 @@ No se dispone de resultados de benchmarks de alternativas en la información pro
 
 | Modelo / enfoque | Tipo | Parametros | Contexto | Rendimiento en Taxi-v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HyperHilmi/FreeTaxi | Q-learning tabular | Tabla 500 x 6 | No aplica | 7,56 +/- 2,71 (no verificado) | No disponible | HuggingFace |
+| HyperHilmi/FreeTaxi | Q-learning tabular | Tabla 500 x 6 | No aplica | 7,56 +/- 2,71 (no verificado) | No disponible | Hugging Face |
 | Q-learning tabular del RL Zoo (Stable-Baselines3) | Q-learning tabular | No disponible | No aplica | No disponible | No disponible | Repositorio de RL Zoo |
 | DQN sobre Taxi-v3 | Red neuronal profunda (value-based) | No disponible | No aplica | No disponible | No disponible | Implementaciones en SB3 y similares |
 | Política aleatoria | Baseline sin aprendizaje | 0 | No aplica | No disponible | No aplica | Trivial de reproducir |
@@ -95,6 +95,6 @@ La diferencia relevante frente a DQN es que FreeTaxi no necesita aproximación f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HyperHilmi/FreeTaxi
+- Hugging Face: https://huggingface.co/HyperHilmi/FreeTaxi
 
 No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

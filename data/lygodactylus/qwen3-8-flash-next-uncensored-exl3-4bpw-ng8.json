@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Lygodactylus/Qwen3.8-Flash-Next-Uncensored-exl3-4bpw-ng8",
+  "slug": "lygodactylus-qwen3-8-flash-next-uncensored-exl3-4bpw-ng8",
+  "author": "Lygodactylus",
+  "url": "https://huggingface.co/Lygodactylus/Qwen3.8-Flash-Next-Uncensored-exl3-4bpw-ng8",
+  "created_at": "2026-11-02T02:39:50.000Z",
+  "updated_at": "2026-11-02T10:27:21.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "exl3",
+    "exllamav3",
+    "qwen3.8",
+    "flash-next",
+    "abliterated",
+    "uncensored",
+    "mtp",
+    "moe",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "fr",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 34945009520,
+  "parameters_human": "34.95B",
+  "storage_bytes": 121912968494,
+  "storage_human": "121.9 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored-exl3-4bpw - Hugging Face",
+      "url": "https://huggingface.co/Lygodactylus/Qwen3.8-Flash-Next-Uncensored-exl3-4bpw",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lygodactylus/Qwen3.8-Flash-Next-Uncensored-exl3-4bpw-ng8 · Hugging Face",
+      "url": "https://huggingface.co/Lygodactylus/Qwen3.8-Flash-Next-Uncensored-exl3-4bpw-ng8",
+      "snippet": "EXL3 quantization of orcarouter/Qwen3.8-Flash-Next-Uncensored, an abliterated (refusal-removed) build of Qwen/Qwen3.8-Flash-Next. Built with ExLlamaV3 1.6.6. Same as the 4.05 bpw build, except the n-gram (PLE) table is at 8 bpw instead of 6. Made on request, following the community discussion about ..."
+    },
+    {
+      "title": "Lygodactylus/Qwen3.8-Flash-Next-Uncensored-exl3-4bpw",
+      "url": "https://abliteration.org/models/Lygodactylus/Qwen3.8-Flash-Next-Uncensored-exl3-4bpw",
+      "snippet": "Qwen3.8-Flash-Next-Uncensored-exl3-4bpw by Lygodactylus: M1 Direct removal. 672 downloads, 12 likes on Hugging Face. Files, benchmarks and abliteration classification on abliteration.org."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next (uncensored EXL3) — one DGX Spark",
+      "url": "https://github.com/jayleaton/qwen38-flash-next-exl3-spark/blob/main/",
+      "snippet": "A single docker compose up away from serving Qwen3.8-Flash-Next — the uncensored EXL3 re-quant — on an NVIDIA DGX Spark (GB10, aarch64), with an OpenAI-compatible API and speculative decoding on. Same workflow as the GLM-5.3-Flash DGX image: get the image, mount the model, talk to it like a cloud model."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability:"
+    }
+  ]
+}

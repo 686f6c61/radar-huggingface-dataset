@@ -84,7 +84,7 @@ Los datos de contexto y rendimiento de los modelos comparables deben verificarse
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-exponential-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-exponential-hellaswag
 - Modelo proxy del enjambre Dirichlet: https://huggingface.co/credible-ai/olmo2-60M-288domains-dirichlet
 - Código de LinMix: https://github.com/credibleai/linmix
 - OLMo-core: https://github.com/allenai/OLMo-core

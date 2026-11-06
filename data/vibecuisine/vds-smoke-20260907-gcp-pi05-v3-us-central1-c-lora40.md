@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VibeCuisine/vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40 es un modelo de visión-lenguaje-acción (VLA) para robótica, desarrollado por VibeCuisine como un fine-tune del modelo base `lerobot/pi05_base`. El modelo base π₀.₅ (Pi05) es un VLA de Physical Intelligence diseñado para generalización en mundo abierto, que evoluciona π₀ para adaptarse a entornos y situaciones nunca vistos durante el entrenamiento. Este adaptador se ha entrenado con LeRobot, la biblioteca de aprendizaje por imitación de HuggingFace, para una tarea concreta de manipulación robótica.
+VibeCuisine/vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40 es un modelo de visión-lenguaje-acción (VLA) para robótica, desarrollado por VibeCuisine como un fine-tune del modelo base `lerobot/pi05_base`. El modelo base π₀.₅ (Pi05) es un VLA de Physical Intelligence diseñado para generalización en mundo abierto, que evoluciona π₀ para adaptarse a entornos y situaciones nunca vistos durante el entrenamiento. Este adaptador se ha entrenado con LeRobot, la biblioteca de aprendizaje por imitación de Hugging Face, para una tarea concreta de manipulación robótica.
 
 El modelo se ha afinado sobre un dataset curado de 64 episodios y 3478 frames a 20 FPS, con la tarea "Grab the cucumber at the one-third point". Es un adaptador LoRA, por lo que los pesos publicados son un delta sobre el modelo base, y requiere `lerobot/pi05_base` para funcionar. La arquitectura exacta, el número total de parámetros y la longitud de contexto no se especifican en la información disponible, pero al tratarse de un VLA, el modelo procesa entradas multimodales (estado del robot y tres cámaras) y produce acciones de 7 dimensiones.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Tamano/parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VibeCuisine/vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40 | Fine-tune VLA (LoRA) | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| lerobot/pi05_base | Modelo base VLA | no disponible | no disponible | no disponible (probablemente Apache-2.0) | HuggingFace |
-| VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40 | Fine-tune VLA (LoRA) similar | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| VibeCuisine/vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40 | Fine-tune VLA (LoRA) | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| lerobot/pi05_base | Modelo base VLA | no disponible | no disponible | no disponible (probablemente Apache-2.0) | Hugging Face |
+| VibeCuisine/vds-smoke-20260907-gcp-pi05-naaseh1-us-central1-c-lora40 | Fine-tune VLA (LoRA) similar | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de informacion suficiente para comparar rendimiento, parametros o contexto con otras alternativas de la misma categoria. El unico dato verificable es que este modelo es un adaptador sobre `lerobot/pi05_base`, y que existe otro fine-tune similar del mismo autor.
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para comparar rendimiento, parametros o 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40
+- Hugging Face del modelo: https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-pi05-v3-us-central1-c-lora40
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/VibeCuisine/vibepi3-grab-poseexpert-r3-curated
 - Blog de Physical Intelligence sobre pi05: https://www.physicalintelligence.company/blog/pi05

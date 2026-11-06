@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PlayDiffusion es un modelo de edición de voz basado en difusión, desarrollado por Play.AI y publicado en abierto. A diferencia de los sistemas de texto a voz autoregresivos (AR) tradicionales, que no permiten modificar o eliminar fragmentos de audio ya generados sin introducir artefactos en los límites de la edición, PlayDiffusion aborda la edición localizada de habla mediante un esquema no autoregresivo de enmascarado y desruido. El modelo se ha subido a HuggingFace bajo el identificador `TechnoBaptist/PlayDiffusion`, un espejo del repositorio original `PlayHT/PlayDiffusion`.
+PlayDiffusion es un modelo de edición de voz basado en difusión, desarrollado por Play.AI y publicado en abierto. A diferencia de los sistemas de texto a voz autoregresivos (AR) tradicionales, que no permiten modificar o eliminar fragmentos de audio ya generados sin introducir artefactos en los límites de la edición, PlayDiffusion aborda la edición localizada de habla mediante un esquema no autoregresivo de enmascarado y desruido. El modelo se ha subido a Hugging Face bajo el identificador `TechnoBaptist/PlayDiffusion`, un espejo del repositorio original `PlayHT/PlayDiffusion`.
 
 El problema que resuelve es concreto: cambiar una palabra dentro de una locución ya sintetizada (por ejemplo, sustituir "Neo" por "Trinity") manteniendo la coherencia prosódica y las características del hablante, sin regenerar toda la frase. La arquitectura parte de un transformer decoder-only de tipo Llama al que se le introducen cabezas de atención no causal, lo que permite atender simultáneamente a tokens pasados, presentes y futuros. El modelo opera sobre tokens discretos de audio y emplea un decodificador BigVGAN para reconstruir la forma de onda.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PlayDiffusion | Edicion de voz por difusion | No autoregresivo, enmascarado y desruido | apache-2.0 | HuggingFace (mirror en `TechnoBaptist/PlayDiffusion` y original en `PlayHT/PlayDiffusion`) |
+| PlayDiffusion | Edicion de voz por difusion | No autoregresivo, enmascarado y desruido | apache-2.0 | Hugging Face (mirror en `TechnoBaptist/PlayDiffusion` y original en `PlayHT/PlayDiffusion`) |
 | MaskGCT | TTS / generacion de habla | Enmascarado y prediccion (referenciado como base del entrenamiento) | no disponible | no disponible |
 | Modelos TTS autoregresivos (p. ej. familia GPT-style) | Sintesis de voz | Autoregresivo | variable | variable |
 
@@ -81,9 +81,9 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos com
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/TechnoBaptist/PlayDiffusion
-- Repositorio HuggingFace original: https://huggingface.co/PlayHT/PlayDiffusion
-- Perfil del autor en HuggingFace: https://huggingface.co/TechnoBaptist/models
+- Repositorio Hugging Face (mirror): https://huggingface.co/TechnoBaptist/PlayDiffusion
+- Repositorio Hugging Face original: https://huggingface.co/PlayHT/PlayDiffusion
+- Perfil del autor en Hugging Face: https://huggingface.co/TechnoBaptist/models
 - Sitio de Play.AI: http://play.ai/
 - Paper de referencia [1]: https://arxiv.org/pdf/2401.04577
 - Paper de referencia [2]: https://arxiv.org/pdf/2305.09636

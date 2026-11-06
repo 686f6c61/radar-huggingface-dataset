@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-1b-nope-appendix-structured-seed3407-stage2` es un ajuste fino supervisado (SFT) de aproximadamente 1.011 millones de parámetros publicado por el usuario qing-yao en HuggingFace. El identificador y la etiqueta de arquitectura (`gpt_neox_nope`) apuntan a una variante de GPT-NeoX sin codificación posicional explícita (NoPE), presumiblemente construida sobre Pythia-1B de EleutherAI, aunque la model card no confirma la procedencia del modelo base: el campo correspondiente aparece literalmente como `None`. El modelo se ha entrenado con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.8.0.
+`ppt-pythia-1b-nope-appendix-structured-seed3407-stage2` es un ajuste fino supervisado (SFT) de aproximadamente 1.011 millones de parámetros publicado por el usuario qing-yao en Hugging Face. El identificador y la etiqueta de arquitectura (`gpt_neox_nope`) apuntan a una variante de GPT-NeoX sin codificación posicional explícita (NoPE), presumiblemente construida sobre Pythia-1B de EleutherAI, aunque la model card no confirma la procedencia del modelo base: el campo correspondiente aparece literalmente como `None`. El modelo se ha entrenado con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.8.0.
 
 Se trata de un artefacto de investigación más que de un modelo listo para producción. El nombre del repositorio sugiere un experimento concreto (semilla 3407, una etapa 2 y un apéndice "structured"), y las métricas de adopción son nulas: cero descargas y cero likes en el momento de la consulta. No hay model card descriptiva, ni dataset documentado, ni resultados de evaluación publicados.
 
@@ -49,7 +49,7 @@ El entrenamiento es un SFT con TRL, presumiblemente sobre un dataset de instrucc
 - Evaluación comparativa de longitud de contexto: al no declararse ventana, un uso razonable es medir empíricamente el comportamiento del modelo en longitudes crecientes y contrastarlo con Pythia-1B estándar.
 - Generación de texto para prototipado rápido: con ~2 GB en bf16 cabe en cualquier GPU de consumo, lo que permite montar un servicio de pruebas en minutos con `transformers`.
 - Generación de respuestas cortas en experiments de alineamiento: al ser un SFT de 1B parámetros, sirve como baseline de bajo coste frente a modelos mayores en estudios de calidad de respuesta.
-- Docencia y formación: un modelo de 1B con código personalizado es un caso práctico para explicar `trust_remote_code`, conversión de checkpoints y riesgos de supply chain en HuggingFace.
+- Docencia y formación: un modelo de 1B con código personalizado es un caso práctico para explicar `trust_remote_code`, conversión de checkpoints y riesgos de supply chain en Hugging Face.
 - Ajuste ulterior ligero: punto de partida para LoRA/QLoRA sobre una tarea concreta, dado su reducido tamaño y su formato conversacional.
 - No se recomienda como componente de un producto en producción: la ausencia de licencia, de idiomas declarados y de evaluación lo desaconseja fuera de entornos de investigación controlados.
 

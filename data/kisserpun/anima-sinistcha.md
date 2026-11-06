@@ -2,7 +2,7 @@
 
 ## Resumen
 
-anima-sinistcha es un repositorio publicado en HuggingFace por el usuario kisserpun que contiene un checkpoint de 2.091.068.928 parámetros almacenado en formato safetensors, con licencia Apache 2.0. El repositorio ocupa 4,2 GB y fue creado el 13 de septiembre de 2026. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe validación alguna por parte de la comunidad.
+anima-sinistcha es un repositorio publicado en Hugging Face por el usuario kisserpun que contiene un checkpoint de 2.091.068.928 parámetros almacenado en formato safetensors, con licencia Apache 2.0. El repositorio ocupa 4,2 GB y fue creado el 13 de septiembre de 2026. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe validación alguna por parte de la comunidad.
 
 La model card del autor está prácticamente vacía: únicamente incluye el bloque de frontmatter con la declaración de licencia (Apache 2.0) y ningún otro contenido. No se especifica pipeline, arquitectura, longitud de contexto, idiomas soportados, composición del dataset de entrenamiento, proceso de alineación ni resultados de benchmarks. Tampoco hay paper, blog, repositorio de código ni demo asociados.
 
@@ -106,7 +106,7 @@ La comparación de rendimiento, calidad de generación, capacidades multilingüe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kisserpun/anima-sinistcha
+- Repositorio en Hugging Face: https://huggingface.co/kisserpun/anima-sinistcha
 - Model card del autor: únicamente contiene el frontmatter con `license: apache-2.0`, sin texto adicional.
 - Paper, blog, repositorio de código o demo: no se ha encontrado ninguno.
 - La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo; los enlaces obtenidos correspondían a páginas de soporte de Microsoft ajenas por completo al modelo, por lo que no se incluyen.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ryang2007/mocov3-baseline es un repositorio de HuggingFace publicado por el usuario Ryang2007 que contiene una implementación funcional de MoCo v3 orientada a tareas de retrieval. Se distribuye bajo licencia BSD-3-Clause e incluye un script Python (`main.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. El propio autor declara de forma explícita que el repositorio no reclama ninguna puntuación de benchmark y que el checkpoint sirve para pruebas de humo, no para evaluación real.
+Ryang2007/mocov3-baseline es un repositorio de Hugging Face publicado por el usuario Ryang2007 que contiene una implementación funcional de MoCo v3 orientada a tareas de retrieval. Se distribuye bajo licencia BSD-3-Clause e incluye un script Python (`main.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. El propio autor declara de forma explícita que el repositorio no reclama ninguna puntuación de benchmark y que el checkpoint sirve para pruebas de humo, no para evaluación real.
 
 La configuración declarada en la model card es "huge" e incorpora atención linear, fusión de tipo tucker, activación gelu tanh y normalización instancenorm. Sin embargo, el recuento real de parámetros del fichero safetensors es de 49.600, una cifra muy reducida que no encaja con una configuración "huge" y que apunta a un checkpoint de prueba, un subconjunto de tensores o una inicialización parcial.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada y acotada: no es un modelo entrenado ni auditad
 | Activación | gelu tanh |
 | Normalización | instancenorm |
 | Optimizador por defecto | lion con schedule onecycle |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-15 |
@@ -77,9 +77,9 @@ No hay datos verificados de modelos comparables dentro de la información propor
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ryang2007/mocov3-baseline | 49.600 (safetensors) | no disponible | BSD-3-Clause | HuggingFace, 0 descargas | Checkpoint de inicialización sin entrenar |
-| CLIP ViT-B/32 | ~151 M (referencia general) | 77 tokens de texto (referencia general) | MIT (referencia general) | HuggingFace | Modelo entrenado, uso comercial permitido |
-| SigLIP base patch16-224 | ~203 M (referencia general) | 64 tokens de texto (referencia general) | Apache-2.0 (referencia general) | HuggingFace | Modelo entrenado, orientado a clasificación y retrieval |
+| Ryang2007/mocov3-baseline | 49.600 (safetensors) | no disponible | BSD-3-Clause | Hugging Face, 0 descargas | Checkpoint de inicialización sin entrenar |
+| CLIP ViT-B/32 | ~151 M (referencia general) | 77 tokens de texto (referencia general) | MIT (referencia general) | Hugging Face | Modelo entrenado, uso comercial permitido |
+| SigLIP base patch16-224 | ~203 M (referencia general) | 64 tokens de texto (referencia general) | Apache-2.0 (referencia general) | Hugging Face | Modelo entrenado, orientado a clasificación y retrieval |
 
 La diferencia fundamental no es de escala, sino de estado: las alternativas citadas están entrenadas y evaluadas, mientras que este repositorio publica un checkpoint de inicialización. La comparación de rendimiento no es posible con los datos disponibles.
 
@@ -99,7 +99,7 @@ La diferencia fundamental no es de escala, sino de estado: las alternativas cita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryang2007/mocov3-baseline
+- Repositorio en Hugging Face: https://huggingface.co/Ryang2007/mocov3-baseline
 - Ficheros incluidos en el repositorio: `main.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible
 - Nota sobre la búsqueda web: los resultados obtenidos corresponden a portales administrativos franceses (France Titres / ANTS: ants.gouv.fr, immatriculation.ants.gouv.fr, permisdeconduire.ants.gouv.fr, passeport.ants.gouv.fr) y no guardan ninguna relación con este modelo, por lo que no se incluyen como referencias técnicas.

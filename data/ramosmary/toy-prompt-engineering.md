@@ -45,7 +45,7 @@ No hay datos de entrenamiento: la model card no indica número de tokens, compos
 - Material docente sobre reproducibilidad: el documento exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y registros en bruto, lo que lo convierte en una lista de comprobación útil en cursos de evaluación de LLM.
 - Punto de partida para una planificación de ablaciones: las secciones marcadas como planes o hipótesis pueden reutilizarse como borrador de un plan de experimentos antes de ejecutar nada.
 - Referencia para la redacción de model cards honestas: el repositorio ejemplifica cómo separar explícitamente lo que es una nota exploratoria de lo que sería un resultado experimental verificado.
-- Base para un ejercicio de auditoría de repositorios de HuggingFace: sirve como caso de estudio de repositorios etiquetados como `transformer` que no contienen un modelo utilizable, útil para construir heurísticas de filtrado automático.
+- Base para un ejercicio de auditoría de repositorios de Hugging Face: sirve como caso de estudio de repositorios etiquetados como `transformer` que no contienen un modelo utilizable, útil para construir heurísticas de filtrado automático.
 - Esqueleto para un experimento mínimo de transformer: el fichero safetensors de 24.832 parámetros puede emplearse como referencia de un tensor de juguete para probar utilidades de carga, conversión o inspección de pesos sin coste computacional.
 - Documentación de contexto para revisiones bibliográficas sobre ingeniería de prompts: las referencias temáticas citadas en la nota pueden emplearse como punto de entrada para verificación posterior, siempre contrastando cada fuente de forma independiente.
 
@@ -86,7 +86,7 @@ No disponible. No existen modelos comparables en la misma categoría, porque el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ramosmary/toy-prompt-engineering
+- Modelo en Hugging Face: https://huggingface.co/Ramosmary/toy-prompt-engineering
 - Prompt engineering, Wikipedia: https://en.wikipedia.org/wiki/Prompt_engineering
 - Prompt engineering techniques, IBM: https://www.ibm.com/think/topics/prompt-engineering-techniques
 - Prompts overview, Microsoft Copilot Studio: https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompts-overview

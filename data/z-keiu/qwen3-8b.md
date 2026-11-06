@@ -81,7 +81,7 @@ Qwen3-8B se diferencia de Qwen2.5-7B por su soporte nativo de thinking mode y un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Z-keiu/Qwen3-8B
+- Repositorio Hugging Face: https://huggingface.co/Z-keiu/Qwen3-8B
 - Modelo original Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

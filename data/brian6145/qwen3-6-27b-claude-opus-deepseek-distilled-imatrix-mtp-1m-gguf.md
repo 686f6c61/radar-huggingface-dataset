@@ -91,8 +91,8 @@ No se dispone de datos cuantitativos de otros modelos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Brian6145/Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-1M-GGUF
-- Discusión en HuggingFace: https://huggingface.co/Brian6145/Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-1M-GGUF/discussions/1
+- Modelo en Hugging Face: https://huggingface.co/Brian6145/Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-1M-GGUF
+- Discusión en Hugging Face: https://huggingface.co/Brian6145/Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-1M-GGUF/discussions/1
 - Ficha en Inferix: https://inferix.co/models/Brian6145/Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-1M-GGUF
 - Artículo sobre Qwen 3.6 27B como reemplazo local de Claude Code: https://codersera.com/blog/qwen-3-6-as-local-claude-code-replacement-2026/
 - Paper de YaRN (Peng et al., 2023): https://arxiv.org/abs/2305.13298

@@ -93,9 +93,9 @@ La model card del repositorio de cuantizaciones no incluye valores de MMLU, Huma
 
 | Modelo | Parametros | Contexto | Multimodalidad | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| bartowski/TheDrummer_Artemis-31B-v1.2-GGUF | 30,7B (31B) | no disponible | texto, imagen y audio con mmproj | no disponible | GGUF (17 cuantizaciones) | publico en HuggingFace |
-| TheDrummer/Artemis-31B-v1.2 (modelo base) | 30,7B | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace |
-| bartowski/TheDrummer_Artemis-31B-v1.1-GGUF (version anterior) | 31B | no disponible | no disponible | no disponible | GGUF | publico en HuggingFace |
+| bartowski/TheDrummer_Artemis-31B-v1.2-GGUF | 30,7B (31B) | no disponible | texto, imagen y audio con mmproj | no disponible | GGUF (17 cuantizaciones) | publico en Hugging Face |
+| TheDrummer/Artemis-31B-v1.2 (modelo base) | 30,7B | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face |
+| bartowski/TheDrummer_Artemis-31B-v1.1-GGUF (version anterior) | 31B | no disponible | no disponible | no disponible | GGUF | publico en Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas de la misma categoria (por ejemplo, modelos densos de 30B aproximados de otras familias), por lo que no es posible establecer una comparacion cuantitativa de rendimiento. Cualquier comparacion de ese tipo requeriria ejecutar las mismas pruebas sobre cada modelo, y esos resultados no estan disponibles en la informacion proporcionada.
 
@@ -115,12 +115,12 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/bartowski/TheDrummer_Artemis-31B-v1.2-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/bartowski/TheDrummer_Artemis-31B-v1.2-GGUF
 - Modelo base TheDrummer/Artemis-31B-v1.2: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
 - Version anterior cuantizada (v1.1): https://huggingface.co/bartowski/TheDrummer_Artemis-31B-v1.1-GGUF
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp/
 - Release b11159 de llama.cpp usada para la cuantizacion: https://github.com/ggml-org/llama.cpp/releases/tag/b11159
 - Fichero Q4_K_M recomendado: https://huggingface.co/bartowski/TheDrummer_Artemis-31B-v1.2-GGUF/blob/main/TheDrummer_Artemis-31B-v1.2-Q4_K_M.gguf
-- Listado de modelos de bartowski en HuggingFace: https://huggingface.co/bartowski/models
-- Listado de modelos any-to-any en HuggingFace: https://huggingface.co/models?pipeline_tag=any-to-any
+- Listado de modelos de bartowski en Hugging Face: https://huggingface.co/bartowski/models
+- Listado de modelos any-to-any en Hugging Face: https://huggingface.co/models?pipeline_tag=any-to-any
 - Articulo de terceros que menciona Artemis 31B v1.1: https://note.com/samehadaonsen/n/nb9421b6f7bd4?hl=en

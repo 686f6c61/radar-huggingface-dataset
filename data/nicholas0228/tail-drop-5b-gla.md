@@ -1,7 +1,7 @@
 # Nicholas0228/tail-drop-5b-gla
 
 ## Resumen
-`Nicholas0228/tail-drop-5b-gla` es un checkpoint de investigacion de un modelo de lenguaje causal entrenado desde cero por Nicholas Wu (usuario Nicholas0228 en HuggingFace y GitHub, investigador en modelos generativos). A pesar del "5b" del nombre, no se refiere al numero de parametros: el modelo tiene 341.707.776 parametros y el "5B" indica los 5.000.134.656 tokens de entrenamiento consumidos, correspondientes al paso 9.537 de un schedule de learning rate disenado originalmente para 15.000 millones de tokens y detenido en 5.000 millones.
+`Nicholas0228/tail-drop-5b-gla` es un checkpoint de investigacion de un modelo de lenguaje causal entrenado desde cero por Nicholas Wu (usuario Nicholas0228 en Hugging Face y GitHub, investigador en modelos generativos). A pesar del "5b" del nombre, no se refiere al numero de parametros: el modelo tiene 341.707.776 parametros y el "5B" indica los 5.000.134.656 tokens de entrenamiento consumidos, correspondientes al paso 9.537 de un schedule de learning rate disenado originalmente para 15.000 millones de tokens y detenido en 5.000 millones.
 
 La arquitectura es "Pure GLA" (Gated Linear Attention), una familia de atencion lineal con estado recurrente que se aleja del transformer denso clasico. El entrenamiento se hizo sobre el corpus congelado FineWeb-Edu y el tokenizer es el de Mistral-7B-v0.1, tambien congelado. La longitud de contexto de entrenamiento es de 2.048 tokens.
 
@@ -83,10 +83,10 @@ Nota: no hay datos de benchmarks publicados para `tail-drop-5b-gla`, por lo que 
 - Repositorio sin adopcion: 0 descargas y 0 likes en el momento de la consulta, por lo que no existe una comunidad que haya validado el checkpoint de forma independiente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Nicholas0228/tail-drop-5b-gla
+- Modelo en Hugging Face: https://huggingface.co/Nicholas0228/tail-drop-5b-gla
 - Repositorio de investigacion `tail_drop_attn` (revision fijada): https://github.com/Nicholas0228/tail_drop_attn/tree/758839451f45df67d2fb3a5626b8a07247b38f2e
 - Perfil de GitHub del autor: https://github.com/Nicholas0228
-- Modelos del autor en HuggingFace: https://huggingface.co/Nicholas0228/models
+- Modelos del autor en Hugging Face: https://huggingface.co/Nicholas0228/models
 - Archivo de publicaciones del autor: https://nicholas0228.github.io/collection-archive/
 - Corpus de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Tokenizer de referencia: https://huggingface.co/mistralai/Mistral-7B-v0.1

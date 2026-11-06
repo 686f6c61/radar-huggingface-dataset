@@ -27,8 +27,8 @@ No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: no a
 | Metrica declarada | PDMS 0,939443730121 (etiqueta publica "NAVSIM v1 PDMS 93.9") |
 | Numero de predicciones del envio | 12 146 |
 | Tamano del repositorio | 1,2 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-18, 16:49:57 UTC |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-18, 16:49:57 UTC |
 
 ## Arquitectura y entrenamiento
 
@@ -86,15 +86,15 @@ No disponible. La informacion proporcionada no incluye datos de otros agentes de
 - Checkpoint saneado: el propio autor lo etiqueta como "sanitized"; puede no contener todos los componentes del modelo original, de modo que la reproduccion exacta del PDMS 93.9 no esta garantizada.
 - Dependencia estricta del devkit: el agente solo funciona dentro de NAVSIM v1 a traves del *overlay*; no es portable a otros simuladores ni a un vehiculo real sin trabajo adicional no documentado.
 - Riesgo de sobreajuste al benchmark: al ser un envio optimizado para una metrica concreta sobre un conjunto de 12 146 predicciones, el comportamiento fuera de la distribucion de NAVSIM v1 es desconocido.
-- Sin validacion externa: 0 descargas y 0 likes en HuggingFace; no hay evidencia de reproduccion independiente del resultado.
+- Sin validacion externa: 0 descargas y 0 likes en Hugging Face; no hay evidencia de reproduccion independiente del resultado.
 - Sesgos: no evaluables, al no publicarse la composicion del dataset de entrenamiento (region, clima, tipo de escenas o densidad de trafico).
-- Incoherencia en las fechas: HuggingFace registra la creacion y actualizacion en septiembre de 2026, posterior a la fecha actual, lo que conviene verificar antes de citar el artefacto.
+- Incoherencia en las fechas: Hugging Face registra la creacion y actualizacion en septiembre de 2026, posterior a la fecha actual, lo que conviene verificar antes de citar el artefacto.
 - Datos de contacto: la model card incluye un correo electronico personal; su difusion debe tratarse con cuidado.
 - No apto para produccion: no hay garantias de robustez, seguridad funcional ni certificacion para uso en vehiculos reales.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lumen-SEU/AMC-Drive-NAVSIM-v1-0919
-- Autor en HuggingFace: https://huggingface.co/Lumen-SEU
+- Repositorio en Hugging Face: https://huggingface.co/Lumen-SEU/AMC-Drive-NAVSIM-v1-0919
+- Autor en Hugging Face: https://huggingface.co/Lumen-SEU
 - Contacto indicado en la model card: 230268037@seu.edu.cn
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las consultas devolvieron unicamente paginas sobre el lumen como unidad fotometrica y sobre el centro de servicios Lumen de la Universite Paris-Saclay, sin relacion con AMC-Drive ni con NAVSIM. No se dispone por tanto de paper, repositorio de codigo, blog o demo adicionales.

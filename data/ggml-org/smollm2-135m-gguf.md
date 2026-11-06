@@ -21,7 +21,7 @@ El modelo pertenece a la familia SmolLM2, que incluye variantes de 135M, 360M y 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base SmolLM2-135M en la documentación proporcionada. Por su naturaleza y tamaño, se trata presumiblemente de un transformer decoder con atención causal, pero no se confirma el número de capas, dimensiones o mecanismos de atención. El entrenamiento del modelo base tampoco está documentado en esta ficha; se sabe que forma parte de la familia SmolLM2, que según la descripción general de HuggingFace mejora respecto a SmolLM1 en seguimiento de instrucciones, conocimiento y razonamiento, pero no se aportan datos concretos sobre tokens de entrenamiento, composición del dataset o técnicas de alineación como RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura interna del modelo base SmolLM2-135M en la documentación proporcionada. Por su naturaleza y tamaño, se trata presumiblemente de un transformer decoder con atención causal, pero no se confirma el número de capas, dimensiones o mecanismos de atención. El entrenamiento del modelo base tampoco está documentado en esta ficha; se sabe que forma parte de la familia SmolLM2, que según la descripción general de Hugging Face mejora respecto a SmolLM1 en seguimiento de instrucciones, conocimiento y razonamiento, pero no se aportan datos concretos sobre tokens de entrenamiento, composición del dataset o técnicas de alineación como RLHF o DPO.
 
 La conversión a GGUF se realiza mediante la herramienta automática de ggml-org (https://github.com/ggml-org/convert), que transforma los pesos de safetensors a formato GGUF sin alterar los valores. Esto implica que el comportamiento del modelo es idéntico al original, solo cambia el formato de almacenamiento y la posibilidad de cuantización adicional.
 
@@ -45,7 +45,7 @@ La conversión a GGUF se realiza mediante la herramienta automática de ggml-org
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo concreto. Se recomienda consultar la documentación del modelo base SmolLM2-135M en HuggingFace para posibles métricas, aunque no se garantiza su disponibilidad.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo concreto. Se recomienda consultar la documentación del modelo base SmolLM2-135M en Hugging Face para posibles métricas, aunque no se garantiza su disponibilidad.
 
 ## Requisitos de hardware
 
@@ -71,7 +71,7 @@ No se dispone de datos comparativos concretos con otros modelos de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ggml-org/SmolLM2-135M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ggml-org/SmolLM2-135M-GGUF
 - Modelo base original: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Herramienta de conversión ggml-org: https://github.com/ggml-org/convert
 - Versión Instruct GGUF de bartowski: https://huggingface.co/bartowski/SmolLM2-135M-Instruct-GGUF

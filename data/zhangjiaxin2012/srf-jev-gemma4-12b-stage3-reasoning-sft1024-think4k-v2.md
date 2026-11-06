@@ -73,8 +73,8 @@ Advertencias del propio autor: los costes de razonamiento difieren entre checkpo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SRF-Jev-Gemma4-12B-Stage3-Reasoning-SFT1024-Think4K-v2 | 11,96B | no disponible | Fine-tune de decision con razonamiento condicional sobre Gemma 4 | Apache 2.0 | HuggingFace, 0 descargas al publicar |
-| google/gemma-4-12B-it | 12B (aprox.) | no disponible en la informacion | Modelo base multimodal instruct de Google | Gemma (terminos de Google; verificar para uso comercial) | HuggingFace, ampliamente disponible |
+| SRF-Jev-Gemma4-12B-Stage3-Reasoning-SFT1024-Think4K-v2 | 11,96B | no disponible | Fine-tune de decision con razonamiento condicional sobre Gemma 4 | Apache 2.0 | Hugging Face, 0 descargas al publicar |
+| google/gemma-4-12B-it | 12B (aprox.) | no disponible en la informacion | Modelo base multimodal instruct de Google | Gemma (terminos de Google; verificar para uso comercial) | Hugging Face, ampliamente disponible |
 | Otros checkpoints SRF-Jev del autor (tamanos 12B/31B) | hasta 31B segun el autor | no disponible | Variantes de investigacion del mismo pipeline | Apache 2.0 segun este checkpoint | Repositorio GitHub srf-jev |
 
 La comparacion directa con el modelo base es la mas relevante: el autor senala que en sus comparaciones a 31B el base original mantiene ventaja en capacidad en modo directo. No hay datos suficientes para comparar con otras familias de 12B multimodales.
@@ -96,7 +96,7 @@ La comparacion directa con el modelo base es la mas relevante: el autor senala q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-12B-Stage3-Reasoning-SFT1024-Think4K-v2
+- Modelo en Hugging Face: https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-12B-Stage3-Reasoning-SFT1024-Think4K-v2
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio del proyecto: https://github.com/jxzhangjhu/srf-jev
 - Documentacion de la comparativa de tres tamanos: https://github.com/jxzhangjhu/srf-jev/tree/main/docs/gemma4/research/three-size-20261023

@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MonsterCoffeeC4! | IllustriousXL v0.1 | No disponible | N/A | creativeml-openrail-m | HuggingFace, CivitAI |
+| MonsterCoffeeC4! | IllustriousXL v0.1 | No disponible | N/A | creativeml-openrail-m | Hugging Face, CivitAI |
 | NoobAI-XL v1.1 | SDXL | No disponible | N/A | creativeml-openrail-m | CivitAI |
-| IllustriousXL v0.1 | SDXL | No disponible | N/A | Apache 2.0 | HuggingFace |
+| IllustriousXL v0.1 | SDXL | No disponible | N/A | Apache 2.0 | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos. La diferencia principal radica en la fusion de pesos y la inclusion de GLoRAs especificas, que modifican el estilo de salida. No se puede afirmar cual es superior sin una evaluacion visual directa.
 
@@ -77,11 +77,11 @@ No se dispone de datos comparativos de rendimiento entre estos modelos. La difer
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/justTNP/MonsterCoffeeCKPTS)
+- [Repositorio en Hugging Face](https://huggingface.co/justTNP/MonsterCoffeeCKPTS)
 - [MonsterCoffeeC4! en CivitAI](https://civitai.com/models/1029855/monstercoffeec4-mix-illustriousxl-v01)
 - [MonsterCoffeeVenom en Arc en Ciel](https://arcenciel.io/models/14)
 - [MonsterCoffee5HourEnergy en CivitAI](https://civitai.com/models/2212626?modelVersionId=2491133)
-- [Perfil del autor en HuggingFace](https://huggingface.co/justTNP)
+- [Perfil del autor en Hugging Face](https://huggingface.co/justTNP)
 - [ADetailer (herramienta recomendada)](https://github.com/Bing-su/adetailer.git)
 - [Modelo de deteccion facial recomendado](https://arcenciel.io/models/13770)
 - [Upscaler 2x-AnimeSharpV3](https://huggingface.co/Kim2091/AnimeSharpV3/tree/main)

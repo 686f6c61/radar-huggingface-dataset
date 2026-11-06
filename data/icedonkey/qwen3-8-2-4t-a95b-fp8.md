@@ -86,7 +86,7 @@ Nota: los datos de DeepSeek-V3 y Kimi K2 son de referencia general y pueden no e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iceDonkey/Qwen3.8-2.4T-A95B-FP8
+- Repositorio Hugging Face: https://huggingface.co/iceDonkey/Qwen3.8-2.4T-A95B-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Pagina del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.8-2.4t-a95b
 - Blog de Qwen sobre Qwen3.8: https://qwen.ai/blog?id=qwen3.8

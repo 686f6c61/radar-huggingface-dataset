@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vgg16-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace matthieulel. Se trata de una adaptación de la red convolucional VGG16 de torchvision (pesos originales de ImageNet-1k, `IMAGENET1K_V1`) mediante ajuste fino completo (todos los parámetros actualizados) sobre el conjunto de datos Galaxy10 DECaLS, que distingue diez clases morfológicas de galaxias.
+`vgg16-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face matthieulel. Se trata de una adaptación de la red convolucional VGG16 de torchvision (pesos originales de ImageNet-1k, `IMAGENET1K_V1`) mediante ajuste fino completo (todos los parámetros actualizados) sobre el conjunto de datos Galaxy10 DECaLS, que distingue diez clases morfológicas de galaxias.
 
 El modelo forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Su relevancia actual radica en que sirve como referencia reproducible y comparable dentro de un benchmark estandarizado de modelos de visión aplicados a datos astronómicos, con protocolo de entrenamiento idéntico entre todos los backbones evaluados.
 
@@ -75,7 +75,7 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 | Modelo | Parametros | Contexto | Accuracy (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vgg16-galaxy10-decals-full-v2 | 134.301.514 | no aplica (visión, 224x224 px) | 83,65% | BSD-3-Clause | HuggingFace |
+| vgg16-galaxy10-decals-full-v2 | 134.301.514 | no aplica (visión, 224x224 px) | 83,65% | BSD-3-Clause | Hugging Face |
 | Otros backbones del benchmark | no disponible | no disponible | no disponible | no disponible | colección del autor |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vgg16-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vgg16-galaxy10-decals-full-v2
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs
 - Colección Vision Foundation Models Benchmark: https://huggingface.co/collections/matthieulel/vision-foundation-models-benchmark-6ae4ae6c3f83b52cf00d9dcb

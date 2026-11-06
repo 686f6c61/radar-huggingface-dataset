@@ -81,11 +81,11 @@ Nota: el autor indica que este adaptador es una ablation y puede ser peor que el
 - Entrenado con una sola semilla; diferencias de un par de puntos porcentuales estan dentro del ruido estadistico.
 - Solo soporta ingles.
 - Riesgo de alucinacion: no evaluado en la informacion proporcionada; al ser un modelo de razonamiento comprimido, la probabilidad de errores silenciosos puede aumentar en problemas complejos.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-early-solve-l4
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-early-solve-l4
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Modelo SFT del nivel L4 (requerido para cargar este adaptador): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l4
 - Modelo principal del nivel L4: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l4

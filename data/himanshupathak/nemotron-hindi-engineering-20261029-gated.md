@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HimanshuPathak/nemotron-hindi-engineering-20261029-gated es un modelo derivado (fine-tune) del modelo base nvidia/NVIDIA-NemotronLabs-VoiceChat-11B, publicado en HuggingFace por el usuario HimanshuPathak. Se distribuye con la pipeline declarada de text-to-speech y los tags hi y en, lo que indica un ajuste orientado a sintesis de voz en hindi e ingles. El repositorio tiene un tamano de 14,3 GB y esta marcado como gated, es decir, requiere aceptar condiciones de acceso antes de su descarga.
+HimanshuPathak/nemotron-hindi-engineering-20261029-gated es un modelo derivado (fine-tune) del modelo base nvidia/NVIDIA-NemotronLabs-VoiceChat-11B, publicado en Hugging Face por el usuario HimanshuPathak. Se distribuye con la pipeline declarada de text-to-speech y los tags hi y en, lo que indica un ajuste orientado a sintesis de voz en hindi e ingles. El repositorio tiene un tamano de 14,3 GB y esta marcado como gated, es decir, requiere aceptar condiciones de acceso antes de su descarga.
 
-La informacion disponible en la ficha de HuggingFace es muy limitada: no se detallan datos de entrenamiento, composicion del dataset, hiperparametros ni resultados de evaluacion. El nombre del repositorio sugiere un ajuste con fecha 2026-10-29 y un proposito de "engineering-check", probablemente un experimento de validacion tecnica mas que un modelo listo para produccion. El modelo base, NVIDIA-NemotronLabs-VoiceChat-11B, pertenece a la familia Nemotron de NVIDIA y esta orientado a conversacion por voz con 11 mil millones de parametros, aunque la informacion proporcionada no confirma detalles adicionales de esa arquitectura.
+La informacion disponible en la ficha de Hugging Face es muy limitada: no se detallan datos de entrenamiento, composicion del dataset, hiperparametros ni resultados de evaluacion. El nombre del repositorio sugiere un ajuste con fecha 2026-10-29 y un proposito de "engineering-check", probablemente un experimento de validacion tecnica mas que un modelo listo para produccion. El modelo base, NVIDIA-NemotronLabs-VoiceChat-11B, pertenece a la familia Nemotron de NVIDIA y esta orientado a conversacion por voz con 11 mil millones de parametros, aunque la informacion proporcionada no confirma detalles adicionales de esa arquitectura.
 
 Es relevante por dos motivos: primero, porque ejemplifica la practica de fine-tuning de modelos de voz de NVIDIA para idiomas distintos del ingles (en este caso, hindi), un caso de uso creciente en mercados multilingues; segundo, porque su licencia openmdw-1.1 y su caracter gated introducen condiciones de uso que conviene revisar antes de cualquier despliegue comercial.
 
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HimanshuPathak/nemotron-hindi-engineering-20261029-gated | 11B (heredado) | no disponible | hi, en | openmdw-1.1 | Gated en HuggingFace |
-| nvidia/NVIDIA-NemotronLabs-VoiceChat-11B | 11B | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| HimanshuPathak/nemotron-hindi-engineering-20261029-gated | 11B (heredado) | no disponible | hi, en | openmdw-1.1 | Gated en Hugging Face |
+| nvidia/NVIDIA-NemotronLabs-VoiceChat-11B | 11B | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Otros TTS multilingues | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para comparar rendimiento con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Documentacion escasa: no hay informacion sobre datos de entrenamiento, evaluacion ni hiperparametros, lo que dificulta evaluar su calidad y reproducibilidad.
 - Riesgo de alucinacion y artefactos de audio: sin benchmarks publicados, no se puede descartar que el modelo genere audio ininteligible, prosodia incorrecta o contenido no fiel al texto de entrada.
 - Cobertura de idiomas limitada a hindi e ingles; no se confirma calidad en otros idiomas ni en mezcla de idiomas.
@@ -79,5 +79,5 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HimanshuPathak/nemotron-hindi-engineering-20261029-gated
+- Hugging Face: https://huggingface.co/HimanshuPathak/nemotron-hindi-engineering-20261029-gated
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B

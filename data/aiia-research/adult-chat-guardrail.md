@@ -95,7 +95,7 @@ Frente a clasificadores de moderación basados en LLM generativos, esta propuest
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIIA-research/adult-chat-guardrail
+- Hugging Face: https://huggingface.co/AIIA-research/adult-chat-guardrail
 - Repositorio del nodo ComfyUI: https://github.com/AIIA-research/adult-chat-guardrail
 - Modelo base E5: https://huggingface.co/intfloat/multilingual-e5-small
 - Modelo base GTE: https://huggingface.co/Alibaba-NLP/gte-multilingual-base

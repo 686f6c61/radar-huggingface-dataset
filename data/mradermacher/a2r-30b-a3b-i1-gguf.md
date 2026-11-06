@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su especialización en tareas de audio y 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado o las técnicas de alineación (RLHF, DPO, etc.) del modelo base A2R-30B-A3B. Los únicos datos disponibles son los metadatos de HuggingFace, que indican que se trata de un modelo de audio y lenguaje con capacidades de atribución de hablante en contextos multiparte. El nombre del modelo sugiere una arquitectura de mezcla de expertos (MoE) con 30 000 millones de parámetros totales y 3 000 millones activos, pero esta información no ha sido confirmada por el autor. La cuantización GGUF realizada por mradermacher emplea la técnica imatrix (importance matrix) para optimizar la calidad de los quants de baja precisión.
+No se dispone de información pública sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado o las técnicas de alineación (RLHF, DPO, etc.) del modelo base A2R-30B-A3B. Los únicos datos disponibles son los metadatos de Hugging Face, que indican que se trata de un modelo de audio y lenguaje con capacidades de atribución de hablante en contextos multiparte. El nombre del modelo sugiere una arquitectura de mezcla de expertos (MoE) con 30 000 millones de parámetros totales y 3 000 millones activos, pero esta información no ha sido confirmada por el autor. La cuantización GGUF realizada por mradermacher emplea la técnica imatrix (importance matrix) para optimizar la calidad de los quants de baja precisión.
 
 ## Capacidades
 

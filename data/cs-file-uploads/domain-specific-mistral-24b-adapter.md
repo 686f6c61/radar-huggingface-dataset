@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cs-file-uploads/domain-specific-mistral-24b-adapter` | Adaptador LoRA sobre base de 24B | No disponible | Extraccion de consultores de compensacion en proxy statements de la SEC | No disponible | HuggingFace (0 descargas) |
-| `mistralai/Mistral-Small-3.2-24B-Instruct-2506` (modelo base) | 24B | No disponible | Proposito general | No disponible en la informacion proporcionada | HuggingFace |
+| `cs-file-uploads/domain-specific-mistral-24b-adapter` | Adaptador LoRA sobre base de 24B | No disponible | Extraccion de consultores de compensacion en proxy statements de la SEC | No disponible | Hugging Face (0 descargas) |
+| `mistralai/Mistral-Small-3.2-24B-Instruct-2506` (modelo base) | 24B | No disponible | Proposito general | No disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos comparables especificos para esta tarea de extraccion de consultores de compensacion en documentos de la SEC. La comparativa mas directa es contra el propio modelo base sin ajustar (fine-tuning frente a zero-shot), pero no se han publicado metricas de esa comparacion.
@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos comparables especificos para esta tar
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/cs-file-uploads/domain-specific-mistral-24b-adapter
+- Hugging Face del adaptador: https://huggingface.co/cs-file-uploads/domain-specific-mistral-24b-adapter
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
 - Repositorio de codigo para el pipeline de inferencia y evaluacion: no disponible (la model card lo menciona, pero no se ha proporcionado la URL)
 - Paper: no disponible

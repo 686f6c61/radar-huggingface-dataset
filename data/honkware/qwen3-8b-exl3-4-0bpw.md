@@ -26,7 +26,7 @@ El modelo base Qwen3-8B es un transformer denso de aproximadamente 8.200 millone
 | Pipeline | text-generation |
 | Fecha de creacion | 16 de septiembre de 2026 |
 
-Advertencia sobre el recuento de parametros: la cabecera de HuggingFace informa de 2.595.337.600 parametros leidos de los safetensors, una cifra incompatible con un Qwen3-8B intacto. Lo mas probable es que el contador refleje tensores empaquetados o almacenados en un layout comprimido y no el numero efectivo de pesos. El tamano de 5,2 GB a 4,0 bpw es coherente con un modelo de unos 8.000 millones de parametros, no con 2.600 millones. Debe tratarse como una discrepancia de metadatos, no como una reduccion real del modelo.
+Advertencia sobre el recuento de parametros: la cabecera de Hugging Face informa de 2.595.337.600 parametros leidos de los safetensors, una cifra incompatible con un Qwen3-8B intacto. Lo mas probable es que el contador refleje tensores empaquetados o almacenados en un layout comprimido y no el numero efectivo de pesos. El tamano de 5,2 GB a 4,0 bpw es coherente con un modelo de unos 8.000 millones de parametros, no con 2.600 millones. Debe tratarse como una discrepancia de metadatos, no como una reduccion real del modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -110,7 +110,7 @@ La diferencia practica entre esta cuantizacion y las alternativas de 4 bits no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Honkware/Qwen3-8B-exl3-4.0bpw
+- Repositorio en Hugging Face: https://huggingface.co/Honkware/Qwen3-8B-exl3-4.0bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Coleccion de cuantizaciones del autor: https://huggingface.co/collections/Honkware/qwen3-8b-exl3-6aa9f13b630d4868abb0748a
 - Perfil del autor: https://huggingface.co/Honkware

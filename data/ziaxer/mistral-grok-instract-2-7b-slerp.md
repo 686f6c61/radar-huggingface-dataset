@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mistral-grok-instract-2-7B-slerp | 7,24 B | no disponible (base: 32.768) | MIT | HuggingFace, safetensors y GGUF | Merge SLERP sin benchmarks publicados |
-| mistralai/Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo instruct oficial con validacion y adopcion masiva |
-| HuggingFaceH4/mistral-7b-grok | 7,24 B | 32.768 tokens (heredado) | Apache 2.0 | HuggingFace | Afinado con estilo Grok; usado como fuente del merge |
-| Mistral-7B-Instruct-v0.3 | 7,24 B | 32.768 tokens | Apache 2.0 | HuggingFace | Revision posterior con vocabulario ampliado y soporte de tool calling |
+| Mistral-grok-instract-2-7B-slerp | 7,24 B | no disponible (base: 32.768) | MIT | Hugging Face, safetensors y GGUF | Merge SLERP sin benchmarks publicados |
+| mistralai/Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo instruct oficial con validacion y adopcion masiva |
+| HuggingFaceH4/mistral-7b-grok | 7,24 B | 32.768 tokens (heredado) | Apache 2.0 | Hugging Face | Afinado con estilo Grok; usado como fuente del merge |
+| Mistral-7B-Instruct-v0.3 | 7,24 B | 32.768 tokens | Apache 2.0 | Hugging Face | Revision posterior con vocabulario ampliado y soporte de tool calling |
 
 La comparativa mas informativa es contra los dos progenitores: el merge no anade parametros ni contexto, solo redistribuye pesos, de modo que su ventaja o desventaja frente a ellos depende del comportamiento empirico, que no esta documentado.
 
@@ -92,7 +92,7 @@ La comparativa mas informativa es contra los dos progenitores: el merge no anade
 
 ## Enlaces
 
-- HuggingFace (repositorio del modelo): https://huggingface.co/Ziaxer/Mistral-grok-instract-2-7B-slerp
+- Hugging Face (repositorio del modelo): https://huggingface.co/Ziaxer/Mistral-grok-instract-2-7B-slerp
 - Modelo fuente: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Modelo fuente: https://huggingface.co/HuggingFaceH4/mistral-7b-grok
 - Herramienta de fusion LazyMergekit (notebook de Colab): https://colab.research.google.com/drive/1obulZ1ROXHjYLn6PPZJwRR6GzgQogxxb?usp=sharing

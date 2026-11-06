@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DairyDan recommender-t5 es un ajuste fino de `google/flan-t5-small` desarrollado por el usuario Danieltash0 y publicado en HuggingFace bajo el identificador `Danieltash0/dairydan-recommender-t5`. El modelo resuelve una tarea muy acotada: convertir un pronostico de produccion de leche y un estado (status) en una recomendacion breve de tipo textual. No es un modelo de proposito general, sino un generador de recomendaciones de dominio vertical entrenado sobre 6000 ejemplos derivados de reglas expertas.
+DairyDan recommender-t5 es un ajuste fino de `google/flan-t5-small` desarrollado por el usuario Danieltash0 y publicado en Hugging Face bajo el identificador `Danieltash0/dairydan-recommender-t5`. El modelo resuelve una tarea muy acotada: convertir un pronostico de produccion de leche y un estado (status) en una recomendacion breve de tipo textual. No es un modelo de proposito general, sino un generador de recomendaciones de dominio vertical entrenado sobre 6000 ejemplos derivados de reglas expertas.
 
 Arquitectonicamente es un transformer encoder-decoder de la familia T5, con 76.961.152 parametros totales (aproximadamente 77 M) y pesos en formato safetensors que ocupan unos 0,3 GB en el repositorio. El contexto de trabajo queda determinado por el modelo base `google/flan-t5-small`, que opera con secuencias de hasta 512 tokens.
 
@@ -72,12 +72,12 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Danieltash0/dairydan-recommender-t5 | 76,96 M | no disponible (base flan-t5-small, 512 tokens) | T5 ajustado a dominio lechero | no disponible | HuggingFace |
-| google/flan-t5-small (modelo base) | 76,96 M | 512 tokens | T5 encoder-decoder instruido | Apache 2.0 | HuggingFace |
-| google/flan-t5-base | 247,6 M | 512 tokens | T5 encoder-decoder instruido | Apache 2.0 | HuggingFace |
-| google/flan-t5-large | 783,2 M | 512 tokens | T5 encoder-decoder instruido | Apache 2.0 | HuggingFace |
+| Danieltash0/dairydan-recommender-t5 | 76,96 M | no disponible (base flan-t5-small, 512 tokens) | T5 ajustado a dominio lechero | no disponible | Hugging Face |
+| google/flan-t5-small (modelo base) | 76,96 M | 512 tokens | T5 encoder-decoder instruido | Apache 2.0 | Hugging Face |
+| google/flan-t5-base | 247,6 M | 512 tokens | T5 encoder-decoder instruido | Apache 2.0 | Hugging Face |
+| google/flan-t5-large | 783,2 M | 512 tokens | T5 encoder-decoder instruido | Apache 2.0 | Hugging Face |
 
-La comparacion de licencias y de rendimiento frente a alternativas de dominio (por ejemplo, otros generadores de recomendaciones agricolas publicados en HuggingFace) no esta disponible en la informacion proporcionada. Los datos de parametros y contexto de las variantes de flan-t5 son los publicados por Google.
+La comparacion de licencias y de rendimiento frente a alternativas de dominio (por ejemplo, otros generadores de recomendaciones agricolas publicados en Hugging Face) no esta disponible en la informacion proporcionada. Los datos de parametros y contexto de las variantes de flan-t5 son los publicados por Google.
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ La comparacion de licencias y de rendimiento frente a alternativas de dominio (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Danieltash0/dairydan-recommender-t5
+- Modelo en Hugging Face: https://huggingface.co/Danieltash0/dairydan-recommender-t5
 - Modelo base: https://huggingface.co/google/flan-t5-small
 - Paper de Flan-T5 (Chung et al., 2022): https://arxiv.org/abs/2210.11416
 - Paper de T5 (Raffel et al., 2019): https://arxiv.org/abs/1910.10683

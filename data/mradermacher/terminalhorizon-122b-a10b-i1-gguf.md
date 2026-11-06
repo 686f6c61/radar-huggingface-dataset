@@ -88,7 +88,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones i1: https://huggingface.co/mradermacher/TerminalHorizon-122B-A10B-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones i1: https://huggingface.co/mradermacher/TerminalHorizon-122B-A10B-i1-GGUF
 - Repositorio de cuantizaciones estaticas (incluye ficheros mmproj para vision): https://huggingface.co/mradermacher/TerminalHorizon-122B-A10B-GGUF
 - Modelo base: https://huggingface.co/shunzou05/TerminalHorizon-122B-A10B
 - Dataset TerminalHorizon-3K: https://huggingface.co/datasets/shunzou05/TerminalHorizon-3K

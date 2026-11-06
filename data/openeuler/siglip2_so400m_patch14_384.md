@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| openEuler/siglip2_so400m_patch14_384 | ~400M (SO400M) | 64 tokens de texto en pipeline | Apache-2.0 | HuggingFace | Empaquetado para Ascend y IB-Robot |
-| google/siglip2-so400m-patch14-384 | ~400M | no disponible | Apache-2.0 | HuggingFace | Modelo original de Google, sin artefactos Ascend |
-| google/siglip-so400m-patch14-384 | ~400M | no disponible | Apache-2.0 | HuggingFace | Versión anterior de SigLIP, sin las mejoras de SigLIP2 |
+| openEuler/siglip2_so400m_patch14_384 | ~400M (SO400M) | 64 tokens de texto en pipeline | Apache-2.0 | Hugging Face | Empaquetado para Ascend y IB-Robot |
+| google/siglip2-so400m-patch14-384 | ~400M | no disponible | Apache-2.0 | Hugging Face | Modelo original de Google, sin artefactos Ascend |
+| google/siglip-so400m-patch14-384 | ~400M | no disponible | Apache-2.0 | Hugging Face | Versión anterior de SigLIP, sin las mejoras de SigLIP2 |
 
 La principal diferencia entre este modelo y los de Google es la inclusión de artefactos OM para hardware Ascend y el empaquetado para el framework IB-Robot, lo que lo hace directamente desplegable en robótica y entornos de borde. El modelo base es el mismo, por lo que el rendimiento en términos de calidad de embeddings es idéntico al de `google/siglip2-so400m-patch14-384`.
 
@@ -77,8 +77,8 @@ La principal diferencia entre este modelo y los de Google es la inclusión de ar
 
 ## Enlaces
 
-- HuggingFace del modelo: [openEuler/siglip2_so400m_patch14_384](https://huggingface.co/openEuler/siglip2_so400m_patch14_384)
-- Modelo base en HuggingFace: [google/siglip2-so400m-patch14-384](https://huggingface.co/google/siglip2-so400m-patch14-384)
+- Hugging Face del modelo: [openEuler/siglip2_so400m_patch14_384](https://huggingface.co/openEuler/siglip2_so400m_patch14_384)
+- Modelo base en Hugging Face: [google/siglip2-so400m-patch14-384](https://huggingface.co/google/siglip2-so400m-patch14-384)
 - Versión JAX del modelo base: [google/siglip2-so400m-patch14-384-jax](https://huggingface.co/google/siglip2-so400m-patch14-384-jax)
 - Paper de SigLIP 2: [arXiv:2504.14795](https://arxiv.org/abs/2504.14795)
 - Repositorio de IB-Robot: [https://gitcode.com/openeuler/IB_Robot](https://gitcode.com/openeuler/IB_Robot)

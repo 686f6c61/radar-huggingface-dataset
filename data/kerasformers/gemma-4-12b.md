@@ -80,7 +80,7 @@ La variante de 12B ofrece el equilibrio entre capacidad y requisitos de hardware
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/gemma-4-12b
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/gemma-4-12b
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Gemma 4 en KerasFormers: https://imvision12.github.io/KerasFormers/gemma4_unified/
 - Modelo base original de Google: https://huggingface.co/google/gemma-4-12B

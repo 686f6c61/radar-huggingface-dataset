@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Comanjr1/uncensored-stage1-hacker es un modelo de generación de texto publicado en HuggingFace por el usuario Comanjr1. Se trata de un modelo de aproximadamente 596 millones de parámetros (0,6B) en formato safetensors, etiquetado con la arquitectura qwen3 y orientado a generación de texto conversacional. Por el recuento de parámetros y la etiqueta de arquitectura, es coherente con la clase de modelos Qwen3-0.6B, aunque el autor no confirma la base de partida en la model card. El nombre sugiere un ajuste fino orientado a eliminar total o parcialmente las capas de rechazo y alineación de seguridad (de ahí el término "uncensored"), en una primera etapa de un proceso de entrenamiento ("stage1") con una temática declarada de "hacker".
+Comanjr1/uncensored-stage1-hacker es un modelo de generación de texto publicado en Hugging Face por el usuario Comanjr1. Se trata de un modelo de aproximadamente 596 millones de parámetros (0,6B) en formato safetensors, etiquetado con la arquitectura qwen3 y orientado a generación de texto conversacional. Por el recuento de parámetros y la etiqueta de arquitectura, es coherente con la clase de modelos Qwen3-0.6B, aunque el autor no confirma la base de partida en la model card. El nombre sugiere un ajuste fino orientado a eliminar total o parcialmente las capas de rechazo y alineación de seguridad (de ahí el término "uncensored"), en una primera etapa de un proceso de entrenamiento ("stage1") con una temática declarada de "hacker".
 
-La relevancia de este modelo es limitada y fundamentalmente experimental. El repositorio tiene 0 descargas y 0 "likes", la model card es la plantilla por defecto de HuggingFace sin rellenar (todos los campos figuran como "[More Information Needed]"), no se declara licencia, no se declaran idiomas y no se publican datos de entrenamiento, hiperparámetros ni resultados de evaluación. Cualquier uso en producción debería partir de la premisa de que se desconoce prácticamente todo sobre su procedencia, sus datos de entrenamiento y sus sesgos.
+La relevancia de este modelo es limitada y fundamentalmente experimental. El repositorio tiene 0 descargas y 0 "likes", la model card es la plantilla por defecto de Hugging Face sin rellenar (todos los campos figuran como "[More Information Needed]"), no se declara licencia, no se declaran idiomas y no se publican datos de entrenamiento, hiperparámetros ni resultados de evaluación. Cualquier uso en producción debería partir de la premisa de que se desconoce prácticamente todo sobre su procedencia, sus datos de entrenamiento y sus sesgos.
 
 Por tanto, esta ficha refleja mayoritariamente ausencia de información verificable. Los apartados técnicos que se pueden rellenar derivan del propio repositorio (recuento real de parámetros de los safetensors, tamaño del repo, etiquetas) y de inferencias razonables a partir de ellos, que se señalan explícitamente como tales.
 
@@ -23,9 +23,9 @@ Por tanto, esta ficha refleja mayoritariamente ausencia de información verifica
 
 ## Arquitectura y entrenamiento
 
-La model card no aporta ninguna descripción de arquitectura: es la plantilla automática de HuggingFace y todos los campos relevantes están sin rellenar. La única información estructural disponible son las etiquetas del repositorio, que incluyen `qwen3`, `transformers`, `safetensors`, `text-generation` y `conversational`. Con 596.049.920 parámetros y pesos de aproximadamente dos bytes por parámetro (1,2 GB de repositorio), el modelo encaja en la clase de 0,6B y es compatible con la familia Qwen3-0.6B, pero esto es una inferencia a partir de los metadatos y no una confirmación del autor. Se desconoce si la tokenización, la configuración de capas o la ventana de contexto se corresponden con esa familia.
+La model card no aporta ninguna descripción de arquitectura: es la plantilla automática de Hugging Face y todos los campos relevantes están sin rellenar. La única información estructural disponible son las etiquetas del repositorio, que incluyen `qwen3`, `transformers`, `safetensors`, `text-generation` y `conversational`. Con 596.049.920 parámetros y pesos de aproximadamente dos bytes por parámetro (1,2 GB de repositorio), el modelo encaja en la clase de 0,6B y es compatible con la familia Qwen3-0.6B, pero esto es una inferencia a partir de los metadatos y no una confirmación del autor. Se desconoce si la tokenización, la configuración de capas o la ventana de contexto se corresponden con esa familia.
 
-Respecto al entrenamiento, no hay información sobre el número de tokens utilizados, la composición del dataset, si hubo fine-tuning supervisado, DPO, RLHF u otras técnicas de alineación, ni sobre el procedimiento exacto de "uncensoring". Tampoco se documentan hiperparámetros, régimen de precisión ni infraestructura de cómputo. El término "stage1" en el nombre sugiere que el autor planifica etapas posteriores, pero no hay repositorios enlazados ni documentación que lo confirme. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al artículo de Lacoste et al. sobre estimación de impacto de carbono, citado en la plantilla por defecto de HuggingFace, y no a un paper propio del modelo.
+Respecto al entrenamiento, no hay información sobre el número de tokens utilizados, la composición del dataset, si hubo fine-tuning supervisado, DPO, RLHF u otras técnicas de alineación, ni sobre el procedimiento exacto de "uncensoring". Tampoco se documentan hiperparámetros, régimen de precisión ni infraestructura de cómputo. El término "stage1" en el nombre sugiere que el autor planifica etapas posteriores, pero no hay repositorios enlazados ni documentación que lo confirme. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al artículo de Lacoste et al. sobre estimación de impacto de carbono, citado en la plantilla por defecto de Hugging Face, y no a un paper propio del modelo.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ Respecto al entrenamiento, no hay información sobre el número de tokens utiliz
 - Generación de datos sintéticos para experimentos internos: puede emplearse para producir borradores de texto a bajo coste computacional, siempre que se filtren y validen posteriormente, dado el riesgo de contenido inapropiado o de baja calidad.
 - Base para fine-tuning específico de dominio: al ser un modelo pequeño y con pesos safetensors estándar, es viable ajustarlo con LoRA o QLoRA sobre un corpus propio para tareas acotadas, aunque partir de Qwen3-0.6B original sería más trazable.
 - Pruebas de infraestructura y CI/CD: útil como modelo de juguete para validar pipelines de despliegue (TGI, vLLM, llama.cpp), medir throughput y probar plantillas de prompt sin consumir recursos significativos.
-- Docencia y formación técnica: permite ilustrar en clase cómo se publica un modelo en HuggingFace, cómo se inspeccionan safetensors o cómo se cuantiza a GGUF, usando un caso real con documentación incompleta.
+- Docencia y formación técnica: permite ilustrar en clase cómo se publica un modelo en Hugging Face, cómo se inspeccionan safetensors o cómo se cuantiza a GGUF, usando un caso real con documentación incompleta.
 - Prototipado de asistentes conversacionales en el borde (edge): su tamaño reducido permite desplegarlo en dispositivos con poca memoria, aunque la ausencia de alineación lo descarta para aplicaciones de cara al público.
 
 ## Benchmarks y rendimiento
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Comanjr1/uncensored-stage1-hacker | 596.049.920 | No disponible | No disponible | HuggingFace, 0 descargas | Model card vacía, sin benchmarks ni datos de entrenamiento |
-| Qwen3-0.6B | Aproximadamente 0,6B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado | Base probable del modelo analizado; documentación completa y benchmarks publicados |
-| Qwen2.5-0.5B | Aproximadamente 0,5B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa de tamaño equivalente con soporte multilingüe declarado |
-| Llama-3.2-1B | Aproximadamente 1,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Algo mayor, con contexto más largo y licencia con restricciones para grandes despliegues |
+| Comanjr1/uncensored-stage1-hacker | 596.049.920 | No disponible | No disponible | Hugging Face, 0 descargas | Model card vacía, sin benchmarks ni datos de entrenamiento |
+| Qwen3-0.6B | Aproximadamente 0,6B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado | Base probable del modelo analizado; documentación completa y benchmarks publicados |
+| Qwen2.5-0.5B | Aproximadamente 0,5B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa de tamaño equivalente con soporte multilingüe declarado |
+| Llama-3.2-1B | Aproximadamente 1,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Algo mayor, con contexto más largo y licencia con restricciones para grandes despliegues |
 
 La comparación es necesariamente asimétrica: del modelo analizado solo se conocen el recuento de parámetros y el formato de pesos. Los modelos de referencia se incluyen porque son las alternativas lógicas en la franja de 0,5B a 1B parámetros, pero no hay datos de rendimiento del modelo de Comanjr1 que permitan establecer una comparación cuantitativa.
 
@@ -83,12 +83,12 @@ La comparación es necesariamente asimétrica: del modelo analizado solo se cono
 - Limitaciones de contexto e idioma: se desconoce la ventana de contexto real y los idiomas soportados. Aunque la base inferida (Qwen3) es multilingüe, no hay confirmación de que el fine-tuning no haya degradado idiomas distintos del inglés.
 - Trazabilidad nula: no se indica el modelo base, la fecha de entrenamiento ni la metodología. Reproducir el resultado es imposible.
 - Repositorio sin adopción: 0 descargas y 0 "likes" implican que no ha sido validado por la comunidad; no hay reportes independientes de comportamiento.
-- Metadatos engañosos: la etiqueta `arxiv:1910.09700` proviene de la plantilla de HuggingFace sobre impacto de carbono y no acredita ningún artículo científico del modelo.
+- Metadatos engañosos: la etiqueta `arxiv:1910.09700` proviene de la plantilla de Hugging Face sobre impacto de carbono y no acredita ningún artículo científico del modelo.
 - Fecha de creación registrada: 2026-09-10, según los metadatos del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Comanjr1/uncensored-stage1-hacker
+- Modelo en Hugging Face: https://huggingface.co/Comanjr1/uncensored-stage1-hacker
 - Artículo citado en la etiqueta del repositorio (Lacoste et al., estimación de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la plantilla: https://mlco2.github.io/impact
 

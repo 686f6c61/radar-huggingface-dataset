@@ -17,7 +17,7 @@ El modelo hereda la arquitectura de Phi-4, un transformer decoder-only denso de 
 | Tipos de cuantizacion | no disponible (el repo solo contiene safetensors, sin variantes GGUF) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (el modelo base Phi-4 usa MIT, pero no se especifica para este fine-tune) |
-| Formato de pesos | safetensors (según el repo de HuggingFace) |
+| Formato de pesos | safetensors (según el repo de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ Los datos de benchmarks son de las respectivas documentaciones oficiales. No se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArthT/phi4-14b-a0-badmed-seed1-v2
+- Hugging Face: https://huggingface.co/ArthT/phi4-14b-a0-badmed-seed1-v2
 - Modelo base Phi-4: https://huggingface.co/microsoft/phi-4
 - Guía de configuración local de Phi-4: https://localclaw.io/models/phi4-14b
 - Guía de Phi-4 en local: https://localaimaster.com/blog/phi-4-local-setup
@@ -83,7 +83,7 @@ Los datos de benchmarks son de las respectivas documentaciones oficiales. No se 
 
 Nota: los enlaces a recursos de Phi-4 base se incluyen porque no hay enlaces específicos para este fine-tune.</think>## Resumen
 
-El modelo `ArthT/phi4-14b-a0-badmed-seed1-v2` es un fine-tune de la arquitectura Phi-4 (14B) desarrollado por el usuario ArthT. El nombre del repositorio sugiere una adaptación al dominio médico (la cadena "badmed" podría interpretarse como "bad medical" o "medicina"), pero la documentación pública es prácticamente inexistente: la model card es una plantilla automática de HuggingFace sin datos técnicos, de entrenamiento ni de evaluación. El repositorio contiene 7,6 GB de pesos en formato safetensors, lo que es coherente con un modelo de 14B en bf16 o fp16, y el tag "unsloth" indica que el fine-tuning se realizó con la librería Unsloth, conocida por su eficiencia en memoria y velocidad durante el entrenamiento.
+El modelo `ArthT/phi4-14b-a0-badmed-seed1-v2` es un fine-tune de la arquitectura Phi-4 (14B) desarrollado por el usuario ArthT. El nombre del repositorio sugiere una adaptación al dominio médico (la cadena "badmed" podría interpretarse como "bad medical" o "medicina"), pero la documentación pública es prácticamente inexistente: la model card es una plantilla automática de Hugging Face sin datos técnicos, de entrenamiento ni de evaluación. El repositorio contiene 7,6 GB de pesos en formato safetensors, lo que es coherente con un modelo de 14B en bf16 o fp16, y el tag "unsloth" indica que el fine-tuning se realizó con la librería Unsloth, conocida por su eficiencia en memoria y velocidad durante el entrenamiento.
 
 El modelo hereda la arquitectura de Phi-4, un transformer decoder-only denso de 14B parámetros con una ventana de contexto de 16 384 tokens, desarrollado por Microsoft y publicado en diciembre de 2024. Sin embargo, no se dispone de información sobre el dataset de fine-tuning, los hiperparámetros, el régimen de entrenamiento ni los resultados de evaluación. El modelo tiene 0 descargas y 0 likes, lo que indica que es un proyecto personal o en fase temprana sin validación comunitaria. Su relevancia actual es limitada por la falta de documentación, aunque podría ser útil como punto de partida para experimentos en el ámbito médico si se confirma su propósito.
 
@@ -165,7 +165,7 @@ No se dispone de datos para comparar el fine-tune de ArthT con estas alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArthT/phi4-14b-a0-badmed-seed1-v2
+- Hugging Face: https://huggingface.co/ArthT/phi4-14b-a0-badmed-seed1-v2
 - Modelo base Phi-4: https://huggingface.co/microsoft/phi-4
 - Guía de configuración local de Phi-4: https://localclaw.io/models/phi4-14b
 - Guía de setup local de Phi-4: https://localaimaster.com/blog/phi-4-local-setup

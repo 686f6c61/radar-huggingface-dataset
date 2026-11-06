@@ -70,6 +70,6 @@ No disponible. No existen modelos comparables publicados con la misma arquitectu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dasharma/study-matching90
-- Perfil del autor en HuggingFace: https://huggingface.co/Dasharma
+- Repositorio Hugging Face: https://huggingface.co/Dasharma/study-matching90
+- Perfil del autor en Hugging Face: https://huggingface.co/Dasharma
 - No se han encontrado papers, blogs, repositorios adicionales o demos asociados a este modelo en la busqueda web.

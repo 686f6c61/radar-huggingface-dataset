@@ -52,4 +52,4 @@ No disponible. No se puede comparar con otros modelos de IA porque no es un mode
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/leonmueller/paper_012332554_zero_shot_transfer)
+- [Repositorio en Hugging Face](https://huggingface.co/leonmueller/paper_012332554_zero_shot_transfer)

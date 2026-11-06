@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-colormap-sem-step21700 es un checkpoint histórico de investigación publicado por el usuario RainyBot en HuggingFace. Se trata de un modelo de robótica entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica mediante un paradigma de world model (SemWAM) que combina un modelo de difusión de vídeo como base con codificadores semánticos y de profundidad congelados. El checkpoint corresponde al paso de optimizador final 21700/21700 de una ejecución cuyo config resuelto se archiva junto al modelo.
+SemWAM-LIBERO-Legacy-colormap-sem-step21700 es un checkpoint histórico de investigación publicado por el usuario RainyBot en Hugging Face. Se trata de un modelo de robótica entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica mediante un paradigma de world model (SemWAM) que combina un modelo de difusión de vídeo como base con codificadores semánticos y de profundidad congelados. El checkpoint corresponde al paso de optimizador final 21700/21700 de una ejecución cuyo config resuelto se archiva junto al modelo.
 
 El modelo parte de Wan-AI/Wan2.2-TI2V-5B como backbone de difusión de vídeo, con una arquitectura etiquetada como "dep_sem" que fusiona características semánticas de DINOv3 ViT-B/16 (768 dimensiones) en las capas 7 y 23, y utiliza representación de profundidad en formato colormap (paleta turbo) estimada con un backbone ViT-B de profundidad. La entrada sigue el paradigma "t_concat" con layout de vistas "libero_horizontal" y vistas de muñeca de 128x160 píxeles.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemWAM-LIBERO-Legacy-colormap-sem-step21700 | no disponible (repo 12.1 GB) | no disponible | no disponible | no disponible | HuggingFace, checkpoint histórico |
-| Wan-AI/Wan2.2-TI2V-5B | ~5B (según nombre) | no disponible | no disponible | no disponible | HuggingFace |
+| SemWAM-LIBERO-Legacy-colormap-sem-step21700 | no disponible (repo 12.1 GB) | no disponible | no disponible | no disponible | Hugging Face, checkpoint histórico |
+| Wan-AI/Wan2.2-TI2V-5B | ~5B (según nombre) | no disponible | no disponible | no disponible | Hugging Face |
 | Otros checkpoints SemWAM v2 | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoría (políticas robóticas para LIBERO). La comparación con Wan2.2-TI2V-5B es únicamente de base arquitectónica, no de rendimiento.
@@ -80,6 +80,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-colormap-sem-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-colormap-sem-step21700
 - Modelo base referenciado: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales.

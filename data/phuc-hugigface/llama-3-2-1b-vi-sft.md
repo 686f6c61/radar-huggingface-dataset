@@ -26,7 +26,7 @@ El modelo hereda la arquitectura de Llama 3.2 1B: transformer decoder-only con n
 El ajuste fino se realizo con Unsloth y la libreria TRL de Hugging Face, segun la model card. No se especifican el dataset, el numero de tokens de entrenamiento, la composicion de los datos, ni si se aplico SFT, DPO o RLHF. Tampoco hay informacion sobre tecnicas adicionales como decodificacion especulativa o atencion lineal. Todo lo relativo al proceso de entrenamiento queda, por tanto, sin documentar.
 
 ## Capacidades
-- Generacion de texto autoregresiva y uso conversacional (etiqueta "conversational" en HuggingFace).
+- Generacion de texto autoregresiva y uso conversacional (etiqueta "conversational" en Hugging Face).
 - Compatibilidad con text-generation-inference y endpoints_compatible, lo que permite desplegarlo en infraestructuras de inferencia estandar.
 - Capacidades de tool calling / function calling: no documentadas; el modelo base Llama 3.2 1B las soporta, pero el fine-tuning puede haber degradado esta habilidad.
 - Razonamiento multi-paso y uso como agente: no documentado.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.2-1B-vi-sft (este) | 1,24B | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| Llama-3.2-1B-vi-sft (este) | 1,24B | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | apache-2.0 | Ampliamente disponible |
 | HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens | apache-2.0 | Ampliamente disponible |
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo para este fine-tuning concreto
 - Fecha de creacion futura en los metadatos (2026), lo que sugiere un artefacto de prueba mas que un modelo mantenido.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Phuc-HugigFace/Llama-3.2-1B-vi-sft
+- Hugging Face: https://huggingface.co/Phuc-HugigFace/Llama-3.2-1B-vi-sft
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-1b-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL de Hugging Face: https://github.com/huggingface/trl

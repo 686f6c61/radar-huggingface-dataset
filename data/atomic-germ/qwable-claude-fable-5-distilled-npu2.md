@@ -75,7 +75,7 @@ La comparativa se limita a los modelos relacionados encontrados en la búsqueda.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atomic-Germ/Qwable-Claude-Fable-5-Distilled-NPU2
+- Modelo en Hugging Face: https://huggingface.co/Atomic-Germ/Qwable-Claude-Fable-5-Distilled-NPU2
 - Modelo base: https://huggingface.co/empero-ai/Qwable-9B-Claude-Fable-5
 - Qwable-v1 (destilación relacionada): https://huggingface.co/lordx64/Qwable-v1
 - Noticia sobre Qwable-v1: https://tools4all.ai/trends/qwable-v1-released-as-claude-fable-5-distillation

@@ -80,7 +80,7 @@ No disponible. No se han encontrado modelos comparables publicados con los mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deformable-bench/fastwam-grasp-silk-bimanual-midtrain75k-lerobotaug
+- Modelo en Hugging Face: https://huggingface.co/deformable-bench/fastwam-grasp-silk-bimanual-midtrain75k-lerobotaug
 - Organizacion deformable-bench: https://huggingface.co/deformable-bench
 - Dataset grasp_silk_bimanual (descripcion en Claru): https://claru.ai/datasets/deformable-bench-grasp-silk-bimanual
 - Repositorio oficial de FastWAM: https://github.com/yuantianyuan01/FastWAM

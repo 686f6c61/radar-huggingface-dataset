@@ -95,7 +95,7 @@ La comparación directa es limitada: los evaluadores generativos producen etique
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIRP-spec/airp-shared-primitives-modernbert-large
+- Modelo en Hugging Face: https://huggingface.co/AIRP-spec/airp-shared-primitives-modernbert-large
 - Repositorio de investigación (rama `decide/shared-adopt`, PR borrador #31): https://github.com/AIRP-spec/inference-advocate
 - Declaración FRESH-05: https://github.com/AIRP-spec/inference-advocate/blob/decide/shared-adopt/decide/shared-adopt/DECLARATION-FRESH-05.md
 - Informe FRESH-05: https://github.com/AIRP-spec/inference-advocate/blob/decide/shared-adopt/decide/shared-adopt/REPORT-FRESH-05.md

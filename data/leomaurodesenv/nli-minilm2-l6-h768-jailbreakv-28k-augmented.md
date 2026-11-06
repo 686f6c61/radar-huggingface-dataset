@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `leomaurodesenv/nli-MiniLM2-L6-H768-jailbreakv-28k-augmented` es un ajuste fino (fine-tune) del cross-encoder `cross-encoder/nli-MiniLM2-L6-H768`, publicado por el usuario leomaurodesenv en HuggingFace. Se trata de un clasificador de texto de 82.119.938 parámetros (dato extraído de los pesos en safetensors), construido sobre un encoder tipo RoBERTa y pensado para la tarea de `text-classification`, no para generación de texto.
+El modelo `leomaurodesenv/nli-MiniLM2-L6-H768-jailbreakv-28k-augmented` es un ajuste fino (fine-tune) del cross-encoder `cross-encoder/nli-MiniLM2-L6-H768`, publicado por el usuario leomaurodesenv en Hugging Face. Se trata de un clasificador de texto de 82.119.938 parámetros (dato extraído de los pesos en safetensors), construido sobre un encoder tipo RoBERTa y pensado para la tarea de `text-classification`, no para generación de texto.
 
 El nombre del repositorio sugiere que el ajuste se ha realizado sobre una versión aumentada del conjunto JailbreakV-28K, orientada a la detección de prompts de jailbreak. Sin embargo, la model card no documenta el conjunto de datos: la sección de descripción indica literalmente "More information needed" y el propio entrenador lo etiqueta como "unknown dataset". Por tanto, el único dato verificable del autor es el rendimiento declarado sobre su conjunto de evaluación: pérdida 0,0053 y accuracy 0,9982.
 
@@ -79,7 +79,7 @@ Estos valores proceden del conjunto de validación definido por el propio autor,
 - VRAM estimada para inferencia (calculada a partir de 82,1 millones de parámetros): en FP32, unos 330 MB; en FP16/BF16, unos 165 MB; en INT8, unos 80 MB; en INT4, unos 40 MB. Son estimaciones de pesos, sin contar activaciones ni overhead del runtime.
 - GPU recomendadas: cualquiera con al menos 1 GB de memoria libre es suficiente. Una RTX 3060, RTX 4090, T4, L4 o A100 están sobradamente dimensionadas para este modelo.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo actual e incluso en iGPU y en CPU. El repositorio ocupa 3,3 GB, presumiblemente por incluir checkpoints intermedios o estados del optimizador, no por el tamaño de los pesos finales.
-- Opciones de despliegue: pipeline de `transformers` (librería declarada), Text Embeddings Inference (etiqueta `text-embeddings-inference` del repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), exportación a ONNX Runtime o TorchScript y servicio propio con FastAPI. vLLM o TGI son posibles pero desproporcionados para un clasificador de este tamaño.
+- Opciones de despliegue: pipeline de `transformers` (librería declarada), Text Embeddings Inference (etiqueta `text-embeddings-inference` del repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), exportación a ONNX Runtime o TorchScript y servicio propio con FastAPI. vLLM o TGI son posibles pero desproporcionados para un clasificador de este tamaño.
 - Latencia y throughput estimados: no disponibles; el autor no publica mediciones.
 
 ## Comparativa con modelos similares
@@ -110,6 +110,6 @@ No se dispone de datos verificados en la información proporcionada para complet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-jailbreakv-28k-augmented
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-jailbreakv-28k-augmented
 - Modelo base: https://huggingface.co/cross-encoder/nli-MiniLM2-L6-H768
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente definiciones de diccionario del término inglés "articulate", sin relación con el modelo).

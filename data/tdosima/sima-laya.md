@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento (benchmarks de calidad) comparables en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TDoSiMa/sima-laya
+- Repositorio Hugging Face: https://huggingface.co/TDoSiMa/sima-laya
 - Checkpoint original: https://huggingface.co/convaiinnovations/laya
 - Repositorio de Laya (Convai Innovations): https://github.com/NandhaKishorM/laya
 - Runtime y aplicacion web sima-laya: https://github.com/dotimothy/sima-laya

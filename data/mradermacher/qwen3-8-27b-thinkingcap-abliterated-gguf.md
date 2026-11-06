@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks específicos para la variante `thin
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K | Apache 2.0 | HuggingFace | Modelo original con censura y overthinking |
-| Qwen3.8-27B-abliterated | 27B | 262K | Apache 2.0 (variante) | HuggingFace | Abliterado sin ajuste de razonamiento |
-| Qwen3.8-27B-thinkingcap-abliterated (este) | 27B | 262K | No disponible | HuggingFace | Combinación de abliteración y reducción de overthinking |
-| Llama 3.1 70B (alternativa densa) | 70B | 128K | Llama 3.1 | HuggingFace | Mayor tamaño, contexto menor, sin abliteración |
+| Qwen3.8-27B (base) | 27B | 262K | Apache 2.0 | Hugging Face | Modelo original con censura y overthinking |
+| Qwen3.8-27B-abliterated | 27B | 262K | Apache 2.0 (variante) | Hugging Face | Abliterado sin ajuste de razonamiento |
+| Qwen3.8-27B-thinkingcap-abliterated (este) | 27B | 262K | No disponible | Hugging Face | Combinación de abliteración y reducción de overthinking |
+| Llama 3.1 70B (alternativa densa) | 70B | 128K | Llama 3.1 | Hugging Face | Mayor tamaño, contexto menor, sin abliteración |
 
 No se dispone de comparativas de rendimiento numéricas entre estas variantes.
 
@@ -79,7 +79,7 @@ No se dispone de comparativas de rendimiento numéricas entre estas variantes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-thinkingcap-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-thinkingcap-abliterated-GGUF
 - Modelo base (fuente de los quants): https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated
 - Variante abliterada BF16 (mismo autor): https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF
 - Variante abliterada "Heretic": https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-Abliterated-i1-GGUF

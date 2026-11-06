@@ -99,7 +99,7 @@ No se dispone de datos verificados de otros modelos comparables de la misma cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zrald/zralddeepseekv4.1
+- Hugging Face: https://huggingface.co/Zrald/zralddeepseekv4.1
 - Whitepaper (vista en navegador): https://huggingface.co/Zrald/zralddeepseekv4.1/blob/main/whitepaper.pdf
 - Whitepaper (descarga directa): https://huggingface.co/Zrald/zralddeepseekv4.1/resolve/main/whitepaper.pdf
 - Modelo base: deepseek-ai/DeepSeek-V4.1-Flash

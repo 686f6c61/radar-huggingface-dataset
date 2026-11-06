@@ -122,7 +122,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes. La model 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-8B-MLX-AXQ-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-8B-MLX-AXQ-MXFP4
 - Modelo base Qwen/Qwen3-Embedding-8B: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Revision de origen del modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B/tree/1d8ad4ca9b3dd8059ad90a75d4983776a23d44af
 - Hermano 4bit: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-8B-MLX-AXQ-4bit

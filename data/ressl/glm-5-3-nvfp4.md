@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-NVFP4 es una cuantización del modelo GLM-5.3 de Z.AI, publicada por el usuario ressl en HuggingFace. GLM-5.3 es un modelo de lenguaje de arquitectura MoE con atención dispersa (sparse attention) estilo DeepSeek, con 753 mil millones de parámetros totales y aproximadamente 40 mil millones activos por token. Este checkpoint concreto reduce el peso original en BF16 de 1506,7 GB a 465 GB mediante cuantización NVFP4 de los expertos enrutados, manteniendo el resto de componentes en BF16. El objetivo es permitir la ejecución del modelo en hardware Blackwell (SM120) con un consumo de VRAM significativamente menor, usando SGLang o vLLM como motores de inferencia.
+GLM-5.3-NVFP4 es una cuantización del modelo GLM-5.3 de Z.AI, publicada por el usuario ressl en Hugging Face. GLM-5.3 es un modelo de lenguaje de arquitectura MoE con atención dispersa (sparse attention) estilo DeepSeek, con 753 mil millones de parámetros totales y aproximadamente 40 mil millones activos por token. Este checkpoint concreto reduce el peso original en BF16 de 1506,7 GB a 465 GB mediante cuantización NVFP4 de los expertos enrutados, manteniendo el resto de componentes en BF16. El objetivo es permitir la ejecución del modelo en hardware Blackwell (SM120) con un consumo de VRAM significativamente menor, usando SGLang o vLLM como motores de inferencia.
 
 La relevancia de este modelo radica en que GLM-5.3 es, según Z.AI y Unsloth, el modelo de pesos abiertos más capaz en tareas de programación compleja y agentes autónomos, con una ventana de contexto de 1.048.576 tokens. Esta cuantización sigue la misma receta que la oficial nvidia/GLM-5.2-NVFP4, por lo que se espera una degradación de rendimiento inferior al 1% respecto al original, aunque no se han publicado mediciones específicas para este export. El modelo está pensado para despliegues en producción con múltiples GPUs Blackwell, no para equipos de consumo.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks para este export concreto. El model
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-NVFP4 (este repo) | 753B total, ~40B activos | 1.048.576 | NVFP4 (expertos) | glm-5.3 | HuggingFace |
-| nvidia/GLM-5.2-NVFP4 | 753B total, ~40B activos | 1.048.576 | NVFP4 (expertos) | glm-5.2 | HuggingFace |
-| zai-org/GLM-5.3-BF16 | 753B total, ~40B activos | 1.048.576 | BF16 | glm-5.3 | HuggingFace |
+| GLM-5.3-NVFP4 (este repo) | 753B total, ~40B activos | 1.048.576 | NVFP4 (expertos) | glm-5.3 | Hugging Face |
+| nvidia/GLM-5.2-NVFP4 | 753B total, ~40B activos | 1.048.576 | NVFP4 (expertos) | glm-5.2 | Hugging Face |
+| zai-org/GLM-5.3-BF16 | 753B total, ~40B activos | 1.048.576 | BF16 | glm-5.3 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo porque no se dispone de datos contrastados con otros MoE de tamaño similar (como DeepSeek-V3 o Qwen3-MoE) en la información proporcionada. La diferencia principal entre este repo y el oficial de NVIDIA es el autor y la validación: el export de ressl no ha sido probado en producción, mientras que el de NVIDIA sí. Respecto al BF16 original, la ventaja es el tamaño (465 GB frente a 1506,7 GB) a costa de una posible degradación mínima de rendimiento.
 
@@ -78,7 +78,7 @@ La comparativa se limita a las variantes del mismo modelo porque no se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ressl/GLM-5.3-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/ressl/GLM-5.3-NVFP4
 - Modelo base (BF16): https://huggingface.co/zai-org/GLM-5.3-BF16
 - Blog de Z.AI sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Documentación de Z.AI para GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3

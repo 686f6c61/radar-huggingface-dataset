@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Parametros / tamano | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nekodeus/neko-alpha10-sdxl-v1 | LoRA de personaje | SDXL 1.0 | repo 0,2 GB | 1024x1024 | Apache 2.0 | HuggingFace, 0 descargas |
-| Nekodeus/neko-hollywood-alpha-sdxl-v1 | LoRA de personaje (serie) | SDXL 1.0 | no disponible | 1024x1024 | no disponible | HuggingFace |
-| Nekodeus/neko-hollywood-alpha-sd15-v1 | LoRA de personaje (serie) | SD 1.5 | no disponible | 512x512 | no disponible | HuggingFace |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base texto-a-imagen | — | ~3,5 B (UNet + text encoders) | 1024x1024 | CreativeML Open RAIL++-M | HuggingFace, amplia adopcion |
+| Nekodeus/neko-alpha10-sdxl-v1 | LoRA de personaje | SDXL 1.0 | repo 0,2 GB | 1024x1024 | Apache 2.0 | Hugging Face, 0 descargas |
+| Nekodeus/neko-hollywood-alpha-sdxl-v1 | LoRA de personaje (serie) | SDXL 1.0 | no disponible | 1024x1024 | no disponible | Hugging Face |
+| Nekodeus/neko-hollywood-alpha-sd15-v1 | LoRA de personaje (serie) | SD 1.5 | no disponible | 512x512 | no disponible | Hugging Face |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base texto-a-imagen | — | ~3,5 B (UNet + text encoders) | 1024x1024 | CreativeML Open RAIL++-M | Hugging Face, amplia adopcion |
 
 La comparativa se limita a variantes del mismo autor y al modelo base, ya que no se dispone de datos de benchmarks ni de otros adaptadores equivalentes en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ La comparativa se limita a variantes del mismo autor y al modelo base, ya que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nekodeus/neko-alpha10-sdxl-v1
+- Modelo en Hugging Face: https://huggingface.co/Nekodeus/neko-alpha10-sdxl-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/nekodeus/alpha10-hugh-jackman
 - Serie Hollywood alpha SDXL: https://huggingface.co/Nekodeus/neko-hollywood-alpha-sdxl-v1
 - Serie Hollywood alpha SD1.5: https://huggingface.co/Nekodeus/neko-hollywood-alpha-sd15-v1

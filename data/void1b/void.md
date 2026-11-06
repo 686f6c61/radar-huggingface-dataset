@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Void1B/Void es un modelo publicado en HuggingFace por el usuario Void1B bajo la licencia Gemma. La información disponible en su ficha es extremadamente limitada: únicamente se especifica la licencia (gemma) y la fecha de creación (15 de agosto de 2026). No se proporcionan detalles sobre arquitectura, tamaño, parámetros, contexto, idiomas soportados ni capacidades. Al tratarse de una publicación sin descargas ni interacciones, y con una model card que solo contiene el campo de licencia, no es posible determinar su naturaleza técnica ni su utilidad práctica. Su relevancia actual es desconocida y cualquier evaluación rigurosa resulta imposible con los datos existentes.
+El modelo Void1B/Void es un modelo publicado en Hugging Face por el usuario Void1B bajo la licencia Gemma. La información disponible en su ficha es extremadamente limitada: únicamente se especifica la licencia (gemma) y la fecha de creación (15 de agosto de 2026). No se proporcionan detalles sobre arquitectura, tamaño, parámetros, contexto, idiomas soportados ni capacidades. Al tratarse de una publicación sin descargas ni interacciones, y con una model card que solo contiene el campo de licencia, no es posible determinar su naturaleza técnica ni su utilidad práctica. Su relevancia actual es desconocida y cualquier evaluación rigurosa resulta imposible con los datos existentes.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información sobre las capacidades del modelo. No se puede conf
 
 ## Casos de uso
 
-No se pueden enumerar casos de uso concretos debido a la falta de especificaciones técnicas. Sin datos sobre arquitectura, contexto o capacidades, no es posible determinar escenarios de aplicación realistas. Se recomienda consultar la página del modelo en HuggingFace por si el autor publica información adicional en el futuro.
+No se pueden enumerar casos de uso concretos debido a la falta de especificaciones técnicas. Sin datos sobre arquitectura, contexto o capacidades, no es posible determinar escenarios de aplicación realistas. Se recomienda consultar la página del modelo en Hugging Face por si el autor publica información adicional en el futuro.
 
 ## Benchmarks y rendimiento
 
@@ -50,6 +50,6 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Void1B/Void
+- Página del modelo en Hugging Face: https://huggingface.co/Void1B/Void
 
 No se han encontrado otros enlaces relevantes (papers, repositorios, demos) en la información proporcionada.

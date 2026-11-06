@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario brettjforsyth, contiene un conjunto de activos (assets) denominado "nomen-assets". Aunque el nombre sugiere una relación con el sistema de memoria de agentes "Nomen" (un proyecto de memoria persistente para agentes de IA sobre Nostr), el repositorio no incluye una model card ni documentación oficial que confirme su propósito exacto. Los archivos presentes, como `bioclip2.onnx` y múltiples archivos de embeddings (por ejemplo, `embeddings-arachnida.bin`, `embeddings-birds.bin`, `embeddings-lepidoptera.bin`), indican que podría tratarse de un modelo de visión por computadora especializado en clasificación o representación de especies biológicas, probablemente basado en una variante de CLIP. No hay información sobre el pipeline, la licencia o los idiomas soportados. El repositorio tiene 159 archivos y un tamaño total de 20,9 GB, con descargas muy limitadas (78 en total) y sin soporte de proveedores de inferencia.
+Este repositorio de Hugging Face, publicado por el usuario brettjforsyth, contiene un conjunto de activos (assets) denominado "nomen-assets". Aunque el nombre sugiere una relación con el sistema de memoria de agentes "Nomen" (un proyecto de memoria persistente para agentes de IA sobre Nostr), el repositorio no incluye una model card ni documentación oficial que confirme su propósito exacto. Los archivos presentes, como `bioclip2.onnx` y múltiples archivos de embeddings (por ejemplo, `embeddings-arachnida.bin`, `embeddings-birds.bin`, `embeddings-lepidoptera.bin`), indican que podría tratarse de un modelo de visión por computadora especializado en clasificación o representación de especies biológicas, probablemente basado en una variante de CLIP. No hay información sobre el pipeline, la licencia o los idiomas soportados. El repositorio tiene 159 archivos y un tamaño total de 20,9 GB, con descargas muy limitadas (78 en total) y sin soporte de proveedores de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brettjforsyth/nomen-assets
+- Repositorio en Hugging Face: https://huggingface.co/brettjforsyth/nomen-assets
 - Página de modelos del autor: https://huggingface.co/brettjforsyth/models
 - GitHub del sistema Nomen (referencia indirecta): https://github.com/k0sti/nomen
 

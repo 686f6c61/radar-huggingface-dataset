@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Webcoda-AI-27B-GGUF | ~26,9B | No disponible | GGUF | other | HuggingFace |
-| Modelo base hardin/Webcoda-AI-27B | ~26,9B | No disponible | safetensors | other | HuggingFace |
-| Webcoda-AI-27B-i1-GGUF | ~26,9B | No disponible | GGUF (imatrix) | other | HuggingFace |
+| Webcoda-AI-27B-GGUF | ~26,9B | No disponible | GGUF | other | Hugging Face |
+| Modelo base hardin/Webcoda-AI-27B | ~26,9B | No disponible | safetensors | other | Hugging Face |
+| Webcoda-AI-27B-i1-GGUF | ~26,9B | No disponible | GGUF (imatrix) | other | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 

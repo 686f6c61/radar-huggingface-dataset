@@ -79,8 +79,8 @@ No se dispone de datos de rendimiento del modelo ni de sus alternativas en la in
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/Llama-Fin-8b-GGUF | 8.030 millones | no disponible | cc-by-4.0 | HuggingFace (GGUF) |
-| Salesforce/Llama-Fin-8b | 8.030 millones | no disponible | no disponible en la informacion proporcionada | HuggingFace (pesos originales) |
+| mradermacher/Llama-Fin-8b-GGUF | 8.030 millones | no disponible | cc-by-4.0 | Hugging Face (GGUF) |
+| Salesforce/Llama-Fin-8b | 8.030 millones | no disponible | no disponible en la informacion proporcionada | Hugging Face (pesos originales) |
 | Otros modelos financieros de ~8B | no disponible | no disponible | no disponible | no disponible |
 
 No se han proporcionado datos que permitan comparar contexto, rendimiento o calidad frente a alternativas concretas.

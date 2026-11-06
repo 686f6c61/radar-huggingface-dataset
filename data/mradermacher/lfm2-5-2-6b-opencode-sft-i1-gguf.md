@@ -18,7 +18,7 @@ Su relevancia práctica radica en el binomio tamaño-recurso: al tratarse de un 
 | Longitud de contexto | 128.000 tokens (128K) segun la documentacion de Liquid AI para LFM2.5-2.6B |
 | Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; se incluye tambien el fichero imatrix |
 | Idiomas soportados | en (ingles) en esta variante; el LFM2.5-2.6B base declara 16 idiomas, no disponibles aqui |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace, con enlace a LICENSE) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face, con enlace a LICENSE) |
 | Formato de pesos | GGUF (cuantizado); el modelo base esta en safetensors |
 
 ## Arquitectura y entrenamiento
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Idioma: esta variante declara unicamente ingles ("en"); el rendimiento en castellano u otros idiomas no esta respaldado por la informacion disponible.
 - Especializacion estrecha: el ajuste SFT sobre SmolDataEnvs-multiharness-sft y la etiqueta opencode apuntan a entornos de agente concretos, por lo que el comportamiento fuera de ese dominio puede degradarse.
 - Cuantizaciones de muy baja precision: las variantes i1-IQ1_S, i1-IQ1_M, i1-IQ2_* y i1-Q2_K estan etiquetadas por el propio autor como de calidad baja o "para casos desesperados"; para uso en produccion se recomienda i1-Q4_K_M o superior.
-- Licencia: se trata de la licencia lfm1.0, etiquetada como "other" en HuggingFace. Es imprescindible revisar el fichero LICENSE del repositorio antes de cualquier uso comercial, ya que no se detallan aqui sus condiciones.
+- Licencia: se trata de la licencia lfm1.0, etiquetada como "other" en Hugging Face. Es imprescindible revisar el fichero LICENSE del repositorio antes de cualquier uso comercial, ya que no se detallan aqui sus condiciones.
 - Repositorio con muy poca traccion (25 descargas y 0 likes en el momento de la consulta): no hay validacion de la comunidad ni resultados de evaluacion publicados.
 - Contexto largo: aunque la ventana declarada es de 128K tokens, no se especifica en la informacion disponible como se comporta la calidad en los extremos de esa ventana tras el ajuste SFT.
 - Fechas de creacion y actualizacion del repositorio (2026-10-02) posteriores al conocimiento del autor, sin verificacion independiente disponible.

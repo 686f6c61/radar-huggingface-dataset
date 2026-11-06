@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fieldnote-models es un repositorio de HuggingFace publicado por el usuario publicarray que reúne varios modelos de lenguaje pequeños (SLM) empaquetados como bundles de Core AI de Apple, ya compilados *ahead-of-time* (AOT) para cada familia de chip de iPhone. No se trata de un modelo entrenado desde cero: los pesos provienen íntegramente de cuatro modelos base existentes —MiniCPM5 1B y 2B (OpenBMB), Qwen3.5 2B (equipo Qwen, Alibaba Cloud) y LFM2.5 1.2B Instruct (Liquid AI)— y se distribuyen sin modificar, salvo por la compilación para una arquitectura concreta.
+Fieldnote-models es un repositorio de Hugging Face publicado por el usuario publicarray que reúne varios modelos de lenguaje pequeños (SLM) empaquetados como bundles de Core AI de Apple, ya compilados *ahead-of-time* (AOT) para cada familia de chip de iPhone. No se trata de un modelo entrenado desde cero: los pesos provienen íntegramente de cuatro modelos base existentes —MiniCPM5 1B y 2B (OpenBMB), Qwen3.5 2B (equipo Qwen, Alibaba Cloud) y LFM2.5 1.2B Instruct (Liquid AI)— y se distribuyen sin modificar, salvo por la compilación para una arquitectura concreta.
 
 El problema que resuelve es de despliegue en el borde: la aplicación Fieldnote, una grabadora de reuniones on-device, necesitaba escribir notas en el propio teléfono, y compilar los modelos más grandes en el dispositivo dejaba sin memoria a un iPhone 16. La solución consiste en ofrecer un bundle por familia de chip (`h17g`, `h17p`, `h18p`), de modo que el teléfono descargue el binario ya compilado en lugar de compilarlo localmente. Solo se realiza una especialización parcial en la primera carga.
 
@@ -110,7 +110,7 @@ No se conocen, a partir de la informacion proporcionada, resultados de benchmark
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/publicarray/fieldnote-models
+- Repositorio en Hugging Face: https://huggingface.co/publicarray/fieldnote-models
 - Seccion de licencias del repositorio: https://huggingface.co/publicarray/fieldnote-models#licences
 - Repositorio de Fieldnote en GitHub: https://github.com/array-ai/fieldnotes
 - Flujo de compilacion `compile-models.yml`: https://github.com/array-ai/fieldnotes/blob/main/.github/workflows/compile-models.yml

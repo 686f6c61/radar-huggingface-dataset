@@ -67,7 +67,7 @@ La evaluación de cumplimiento dañino verdadero se realizó con n=150 muestras 
 - VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia, el tamaño del repo es 17.9 GB; en FP16, los pesos ocupan aproximadamente esa cantidad, por lo que se necesitaría una GPU con al menos 18 GB de VRAM. En cuantización de 8 bits, ~9 GB; en 4 bits, ~4.5 GB. Estas son estimaciones basadas en el tamaño de los pesos, no datos oficiales.
 - GPU recomendadas: no disponible.
 - Si cabe en consumer GPU: no disponible. Con cuantización de 4 bits, una GPU de 24 GB (como RTX 4090) podría ser suficiente, pero no es un dato oficial.
-- Opciones de despliegue: no disponible. El modelo usa la biblioteca transformers, por lo que es compatible con el ecosistema de HuggingFace.
+- Opciones de despliegue: no disponible. El modelo usa la biblioteca transformers, por lo que es compatible con el ecosistema de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -92,6 +92,6 @@ El modelo LiconStudio/Qwen3.5-9B-abliterated es similar en concepto (versión si
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/darkengross/Qwen3.5-9B-abliterated
+- Hugging Face del modelo: https://huggingface.co/darkengross/Qwen3.5-9B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo similar: https://huggingface.co/LiconStudio/Qwen3.5-9B-abliterated

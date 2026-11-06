@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `umesh251/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la libreria stable-baselines3 y publicado en HuggingFace Hub. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica neuronal que recibe el vector de observacion del entorno y emite acciones discretas para controlar el aterrizaje de una nave en una superficie bidimensional.
+El modelo `umesh251/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la libreria stable-baselines3 y publicado en Hugging Face Hub. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica neuronal que recibe el vector de observacion del entorno y emite acciones discretas para controlar el aterrizaje de una nave en una superficie bidimensional.
 
 El autor es el usuario `umesh251`, del que no se dispone de informacion adicional. El repositorio no registra descargas ni likes, el README es la plantilla automatica de stable-baselines3 con la seccion de uso marcada como TODO, y no se declara licencia. Por tanto, estamos ante un artefacto de experimentacion o de practica, no ante un modelo con validacion externa ni soporte documental.
 
@@ -104,6 +104,6 @@ No se dispone de valores de recompensa media de los agentes equivalentes del RL 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umesh251/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/umesh251/ppo-LunarLander-v2
 - stable-baselines3 (repositorio citado en la model card): https://github.com/DLR-RM/stable-baselines3
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes al modelo: solo devuelven paginas de producto de ChatGPT y OpenAI, sin relacion con este agente de aprendizaje por refuerzo.

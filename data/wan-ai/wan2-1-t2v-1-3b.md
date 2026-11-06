@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otros modelos de generación de vídeo e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
+- Hugging Face: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - GitHub: https://github.com/Wan-Video/Wan2.1
 - ModelScope: https://modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B
 - Blog oficial: https://wanxai.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chumple-s-krea-styles-krea2 es un repositorio publicado en HuggingFace por el usuario raphaelreisb que distribuye un estilo o adaptador para generacion de imagenes, segun se desprende de su propia model card. La model card indica que el contenido corresponde a "Chumple's Krea Styles - yuuCase Krea v1.0", que el modelo base es Krea 2 y que la palabra de activacion (trigger word) es "yuuCase style". No se trata, por tanto, de un modelo de lenguaje, sino de un artefacto de personalizacion estilistica para un generador de imagenes.
+chumple-s-krea-styles-krea2 es un repositorio publicado en Hugging Face por el usuario raphaelreisb que distribuye un estilo o adaptador para generacion de imagenes, segun se desprende de su propia model card. La model card indica que el contenido corresponde a "Chumple's Krea Styles - yuuCase Krea v1.0", que el modelo base es Krea 2 y que la palabra de activacion (trigger word) es "yuuCase style". No se trata, por tanto, de un modelo de lenguaje, sino de un artefacto de personalizacion estilistica para un generador de imagenes.
 
 El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un adaptador ligero (tipo LoRA o similar) y no con un modelo completo de difusion, aunque el autor no confirma explicitamente el formato ni la tecnica. Se publico el 13 de septiembre de 2026 y cuenta con 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validacion de la comunidad ni evidencia publica de su comportamiento.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada y hay que ser transparente al respecto: 
 | Longitud de contexto | no aplica (modelo de generacion de imagenes, no de texto) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (la model card solo documenta la trigger word "yuuCase style") |
-| Licencia | no disponible en el repositorio de HuggingFace; la metadata de la fuente original en Civitai indica: allowNoCredit = true, allowDerivatives = true, allowDifferentLicense = false, allowCommercialUse = ["RentCivit", "Image"] |
+| Licencia | no disponible en el repositorio de Hugging Face; la metadata de la fuente original en Civitai indica: allowNoCredit = true, allowDerivatives = true, allowDifferentLicense = false, allowCommercialUse = ["RentCivit", "Image"] |
 | Formato de pesos | no disponible (el tamano del repo, 0,2 GB, es compatible con un fichero de adaptador en precision fp16/bf16, sin confirmar) |
 
 Otros datos del repositorio: autor raphaelreisb, creado el 2026-09-13T22:34:57Z, actualizado el 2026-09-13T22:35:20Z, 0 descargas, 0 likes, etiqueta region:us.
@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chumple-s-krea-styles-krea2 | no disponible (repo de 0,2 GB) | no aplica | no disponible | no disponible en HuggingFace; metadata de Civitai con allowDerivatives y allowDifferentLicense = false | Repositorio en HuggingFace, 0 descargas |
+| chumple-s-krea-styles-krea2 | no disponible (repo de 0,2 GB) | no aplica | no disponible | no disponible en Hugging Face; metadata de Civitai con allowDerivatives y allowDifferentLicense = false | Repositorio en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 - Dependencia del modelo base: sin acceso a "Krea 2" en la version correcta, el adaptador puede no funcionar o degradarse. No se documenta con que version concreta se entreno.
 - Riesgo de sesgos y de reproduccion de estereotipos: al no existir informacion sobre el dataset, no se puede evaluar que sesgos esteticos, de representacion de personas o culturales incorpora el estilo.
 - Riesgo de sobreajuste y de "copiar" el estilo: un adaptador entrenado sobre las obras de un artista concreto puede reproducir caracteristicas protegidas. La metadata original indica allowDerivatives = true, pero tambien allowDifferentLicense = false, lo que restringe la relicencia de los derivados.
-- Ambiguedad de licencia: el repositorio de HuggingFace no declara licencia. La metadata recuperada de Civitai permite uso comercial limitado a "RentCivit" e "Image" y exige mantener la misma licencia en derivados, pero esa metadata corresponde a la fuente original y no necesariamente al repositorio de HuggingFace. Conviene verificar antes de cualquier uso comercial.
+- Ambiguedad de licencia: el repositorio de Hugging Face no declara licencia. La metadata recuperada de Civitai permite uso comercial limitado a "RentCivit" e "Image" y exige mantener la misma licencia en derivados, pero esa metadata corresponde a la fuente original y no necesariamente al repositorio de Hugging Face. Conviene verificar antes de cualquier uso comercial.
 - Cero validacion de la comunidad: 0 descargas y 0 likes. No hay evidencia independiente de calidad, estabilidad ni fidelidad al estilo declarado.
 - Fechas de creacion y actualizacion poco habituales (2026-09-13), lo que anade incertidumbre sobre el proposito y el mantenimiento del repositorio.
 - No hay informacion sobre resolucion de salida, requisitos de prompt negativo ni parametros de muestreo recomendados; usarlo en produccion exigiria una fase de prueba y error no documentada.
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/raphaelreisb/chumple-s-krea-styles-krea2
+- Repositorio en Hugging Face: https://huggingface.co/raphaelreisb/chumple-s-krea-styles-krea2
 - Fuente original declarada por el autor (Civitai): https://civitai.red/models/2865177?modelVersionId=3264326
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 - Enlaces adicionales encontrados en la busqueda web: ninguno relevante (los resultados obtenidos corresponden a paginas de soporte de Microsoft y no guardan relacion con el modelo)

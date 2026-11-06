@@ -18,7 +18,7 @@ Dado que la información disponible es extremadamente limitada (sin descargas, s
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponibles |
-| Licencia | other (según metadatos de HuggingFace) |
+| Licencia | other (según metadatos de Hugging Face) |
 | Formato de pesos | no disponible (el contenido es un archivo JSON de catálogo) |
 
 ## Arquitectura y entrenamiento
@@ -65,5 +65,5 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TracNetwork/mayhem-catalog
+- Repositorio en Hugging Face: https://huggingface.co/TracNetwork/mayhem-catalog
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

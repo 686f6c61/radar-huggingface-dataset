@@ -104,7 +104,7 @@ La diferencia operativa principal frente a las alternativas es el formato: GoLLe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SlayerLab/gollem-v5-ckpts
+- Repositorio en Hugging Face: https://huggingface.co/SlayerLab/gollem-v5-ckpts
 - Dataset de entrenamiento: https://huggingface.co/datasets/SlayerLab/minimal-en-corpus-5b
 - Glint Tiny-ML Leaderboard: https://huggingface.co/spaces/Glint-Research/Tiny-ML-Leaderboard
 - Otros enlaces (papers, blogs, repositorios o demos): no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

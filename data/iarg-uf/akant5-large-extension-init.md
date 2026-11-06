@@ -84,7 +84,7 @@ La comparación con mT5-large es la más directa: mismo esqueleto, pero con 44.9
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IARG-UF/akant5-large-extension-init
+- Modelo en Hugging Face: https://huggingface.co/IARG-UF/akant5-large-extension-init
 - Checkpoint CPT asociado: https://huggingface.co/IARG-UF/akant5-large-extension
 - Colección AkanT5: https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base: https://huggingface.co/google/mt5-large

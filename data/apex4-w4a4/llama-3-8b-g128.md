@@ -85,7 +85,7 @@ El modelo APEX4-g128 ofrece una ventaja de rendimiento frente a Atom-g128 en per
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/APEX4-W4A4/Llama-3-8b-g128
+- Hugging Face: https://huggingface.co/APEX4-W4A4/Llama-3-8b-g128
 - Paper (arXiv): https://arxiv.org/html/2606.08761
 - Paper (OpenReview PDF): https://openreview.net/pdf?id=A3GPeESWAN
 - Resumen del paper (DeepPaper): https://arxiv.deeppaper.ai/papers/2606.08761v1

@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rvmalhotra/side-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Rvmalhotra/side-retrieval
 - Paper de Self-Retrieval (contexto relacionado): https://arxiv.org/abs/2403.00801
 - Resumen del paper en NeurIPS: https://proceedings.neurips.cc/paper_files/paper/2024/hash/741ad162ab0f3da6f9aad60e9e34f5f1-Abstract-Conference.html
 - Blog sobre Self-Retrieval: https://blog.bakingai.com/self-retrieval-large-language-model-ir/

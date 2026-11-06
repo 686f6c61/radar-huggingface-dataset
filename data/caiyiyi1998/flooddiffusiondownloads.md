@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FloodDiffusion | Difusión + diffusion forcing para movimiento en streaming | no disponible | no disponible | Apache 2.0 (datos AMASS con licencia aparte) | Pesos y datos en HuggingFace |
+| FloodDiffusion | Difusión + diffusion forcing para movimiento en streaming | no disponible | no disponible | Apache 2.0 (datos AMASS con licencia aparte) | Pesos y datos en Hugging Face |
 | MDM (Motion Diffusion Model) | Difusión para text-to-motion | no disponible en esta ficha | no disponible | Código abierto (ver repositorio original) | Pesos públicos |
 | MLD (Motion Latent Diffusion) | Difusión latente para text-to-motion | no disponible en esta ficha | no disponible | Código abierto (ver repositorio original) | Pesos públicos |
 | T2M-GPT | Generación de movimiento autoregresiva con VQ-VAE | no disponible en esta ficha | no disponible | Código abierto (ver repositorio original) | Pesos públicos |
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caiyiyi1998/FloodDiffusionDownloads
+- Hugging Face: https://huggingface.co/caiyiyi1998/FloodDiffusionDownloads
 - Repositorio de código: https://github.com/AlayaLab/FloodDiffusion
 - HumanML3D: https://github.com/EricGuo5513/HumanML3D
 - HumanAct12 / Action2Motion: https://github.com/EricGuo5513/Action2Motion

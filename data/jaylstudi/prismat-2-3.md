@@ -95,7 +95,7 @@ La comparación cuantitativa con alternativas no está disponible: no hay benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JAYLSTUDI/Prismat-2.3
+- Modelo en Hugging Face: https://huggingface.co/JAYLSTUDI/Prismat-2.3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Unsloth (framework de fine-tuning): https://github.com/unslothai/unsloth
 - Ollama (despliegue documentado): https://ollama.com

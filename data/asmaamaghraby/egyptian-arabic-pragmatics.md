@@ -2,7 +2,7 @@
 
 ## Resumen
 
-egyptian-arabic-pragmatics es un ajuste fino del modelo base Qwen/Qwen3-0.6B orientado a la interpretacion pragmatica del arabe egipcio (masri). Lo publica la usuaria de HuggingFace Asmaamaghraby (Asmaa Elmaghraby) y no es un modelo de proposito general, sino un artefacto de investigacion que explora un "punto ciego" concreto: la capacidad de un LLM para inferir lo que un hablante realmente quiere decir en una conversacion, en lugar de limitarse al significado literal de las palabras.
+egyptian-arabic-pragmatics es un ajuste fino del modelo base Qwen/Qwen3-0.6B orientado a la interpretacion pragmatica del arabe egipcio (masri). Lo publica la usuaria de Hugging Face Asmaamaghraby (Asmaa Elmaghraby) y no es un modelo de proposito general, sino un artefacto de investigacion que explora un "punto ciego" concreto: la capacidad de un LLM para inferir lo que un hablante realmente quiere decir en una conversacion, en lugar de limitarse al significado literal de las palabras.
 
 El problema que aborda es relevante para el procesamiento del lenguaje natural en arabe: expresiones como "خلاص" pueden significar acuerdo genuino, aceptacion a reganadientes, resignacion o el deseo de zanjar una discusion, y solo el contexto permite desambiguarlas. Los benchmarks habituales (traduccion, QA, sentimiento, conocimiento factual) no evaluan esta distincion entre lo que se dice y lo que se pretende.
 
@@ -82,8 +82,8 @@ No se dispone de datos de modelos directamente comparables en la informacion pro
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| egyptian-arabic-pragmatics | ~0,6B | no disponible | Ajuste QLoRA para pragmatica del arabe egipcio | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3-0.6B | 0,6B | no disponible en esta informacion | Modelo base generalista | segun repositorio de Qwen (no verificada aqui) | HuggingFace |
+| egyptian-arabic-pragmatics | ~0,6B | no disponible | Ajuste QLoRA para pragmatica del arabe egipcio | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3-0.6B | 0,6B | no disponible en esta informacion | Modelo base generalista | segun repositorio de Qwen (no verificada aqui) | Hugging Face |
 | Otros modelos de arabe de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,10 +100,10 @@ No se dispone de datos de modelos directamente comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Asmaamaghraby/egyptian-arabic-pragmatics
-- Perfil del autor en HuggingFace (Asmaa Elmaghraby): https://huggingface.co/Asmaamaghraby
+- Modelo en Hugging Face: https://huggingface.co/Asmaamaghraby/egyptian-arabic-pragmatics
+- Perfil del autor en Hugging Face (Asmaa Elmaghraby): https://huggingface.co/Asmaamaghraby
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
-- Busqueda de modelos en arabe en HuggingFace: https://huggingface.co/models?search=arabic
+- Busqueda de modelos en arabe en Hugging Face: https://huggingface.co/models?search=arabic
 - Perfil en Google Scholar de Ashwag Magraby (posible autora relacionada, no confirmada): https://scholar.google.com/citations?user=R-F_0NcAAAAJ&hl=en
 - Analisis comparativo de comprension pragmatica del arabe (AUC, tesis relacionada): https://fount.aucegypt.edu/etds/2661/
 - Wikipedia, Egyptian Arabic (contexto linguistico): https://en.wikipedia.org/wiki/Egyptian_Arabic

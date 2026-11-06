@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rftgyhujk/neiroset` es un repositorio alojado en HuggingFace por el usuario `rftgyhujk`. La informacion publica disponible es minima: la model card se reduce a una linea de metadatos con `license: apache-2.0`, sin README descriptivo, sin arquitectura declarada, sin tamano de parametros y sin ejemplos de uso. El repositorio no tiene ninguna descarga ni "likes" en el momento de la consulta.
+`rftgyhujk/neiroset` es un repositorio alojado en Hugging Face por el usuario `rftgyhujk`. La informacion publica disponible es minima: la model card se reduce a una linea de metadatos con `license: apache-2.0`, sin README descriptivo, sin arquitectura declarada, sin tamano de parametros y sin ejemplos de uso. El repositorio no tiene ninguna descarga ni "likes" en el momento de la consulta.
 
 No se dispone de datos sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el tipo de tarea para la que fue entrenado. La etiqueta de pipeline aparece como "no disponible", por lo que ni siquiera es posible confirmar si se trata de un modelo de lenguaje, un modelo de vision, un clasificador o un artefacto auxiliar.
 
@@ -76,7 +76,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rftgyhujk/neiroset
+- Repositorio en Hugging Face: https://huggingface.co/rftgyhujk/neiroset
 - Model card del autor: sin contenido descriptivo, solo metadatos de licencia.
 - Paper, blog, demo o repositorio de codigo: no disponible.
 - No se ha encontrado ningun enlace relevante en la busqueda web; los resultados obtenidos corresponden a sitios sin relacion con el modelo.

@@ -64,7 +64,7 @@ La única referencia de rendimiento es cualitativa: el autor indica que esta var
 - VRAM: no aplica al modelo en sí (reside en la NPU), pero el escenario previsto reserva la GPU para el modelo Flash del servidor, que sí consume VRAM.
 - Software de host: driver de NPU, XRT con su plugin de NPU y el reloj de fabric de la GPU fijado mientras la NPU trabaja junto a la GPU.
 - Servidor: halogen-flash-server 0.17.4 o superior; la revisión actual del repositorio requiere 0.18.12 o superior. El servidor descarga los ficheros en `/models/npu/decider-4b/` y verifica tamaño y checksum.
-- Opciones de despliegue: exclusivamente el contenedor halogen-flash-server. No hay soporte para transformers, vLLM, llama.cpp, Ollama ni TGI; el widget de HuggingFace está desactivado a propósito porque ningún runtime del Hub puede cargar estos ficheros.
+- Opciones de despliegue: exclusivamente el contenedor halogen-flash-server. No hay soporte para transformers, vLLM, llama.cpp, Ollama ni TGI; el widget de Hugging Face está desactivado a propósito porque ningún runtime del Hub puede cargar estos ficheros.
 - Latencia y throughput: no disponibles. Solo se sabe que la variante de 4B es más lenta que la de 0,8B y que la reutilización de lectura reduce coste cuando hay varias preguntas sobre el mismo texto.
 
 ## Comparativa con modelos similares
@@ -89,11 +89,11 @@ La comparación con alternativas fuera del ecosistema halogen no es posible con 
 - Riesgo de clasificación errónea en dominios alejados de los datos de entrenamiento del modelo base, con el consiguiente efecto en guardarraíles y enrutadores que dependan de él.
 - Licencia Apache-2.0: permite uso comercial, pero el programa de dispositivo incluye avisos de terceros recogidos en `devices/NOTICE.md` que deben conservarse y revisarse.
 - Madurez baja: 0 descargas y 0 likes en el momento de la consulta, repositorio de 12,3 GB y fechas de publicación y actualización en octubre de 2026; conviene tratar el artefacto como experimental.
-- El widget de inferencia del Hub está desactivado de forma deliberada, por lo que no es posible probar el modelo desde la página de HuggingFace.
+- El widget de inferencia del Hub está desactivado de forma deliberada, por lo que no es posible probar el modelo desde la página de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peonist-ai/halogen-npu-decider-4b
+- Modelo en Hugging Face: https://huggingface.co/peonist-ai/halogen-npu-decider-4b
 - Modelo base: https://huggingface.co/Mapika/decider-4b (revisión `eb5fbdfc9448473ec25e399882912863afbdb70e`)
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Variante pequeña: https://huggingface.co/peonist-ai/halogen-npu-decider-0.8b

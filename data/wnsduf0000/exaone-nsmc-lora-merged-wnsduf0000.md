@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`wnsduf0000/exaone-nsmc-lora-merged-wnsduf0000` es un modelo de generación de texto publicado en HuggingFace Hub por el usuario `wnsduf0000` el 18 de septiembre de 2026 (según los metadatos del repositorio). Se trata de un checkpoint de aproximadamente 1.279 millones de parámetros (1,28 B) en formato safetensors, con un peso total de repositorio de 2,6 GB, compatible con la librería `transformers` y con el pipeline `text-generation`.
+`wnsduf0000/exaone-nsmc-lora-merged-wnsduf0000` es un modelo de generación de texto publicado en Hugging Face Hub por el usuario `wnsduf0000` el 18 de septiembre de 2026 (según los metadatos del repositorio). Se trata de un checkpoint de aproximadamente 1.279 millones de parámetros (1,28 B) en formato safetensors, con un peso total de repositorio de 2,6 GB, compatible con la librería `transformers` y con el pipeline `text-generation`.
 
 El identificador y las etiquetas aportan las únicas pistas sobre su origen: el tag `exaone4` sugiere que deriva de la familia EXAONE 4.0 de LG AI Research, y el sufijo `lora-merged` indica que se ha fusionado un adaptador LoRA sobre un modelo base. El segmento `nsmc` del nombre coincide con las siglas del Naver Sentiment Movie Corpus, un corpus coreano de análisis de sentimiento, aunque esta correspondencia no está documentada en ninguna parte del repositorio.
 
-La relevancia de esta ficha es limitada y debe interpretarse como una advertencia: la model card es la plantilla automática de HuggingFace sin rellenar (todos los campos aparecen como `[More Information Needed]`), no se declara licencia, no se declaran idiomas, no hay resultados de evaluación y el repositorio acumula 0 descargas y 0 likes. Cualquier uso en producción exige una validación previa por parte del integrador.
+La relevancia de esta ficha es limitada y debe interpretarse como una advertencia: la model card es la plantilla automática de Hugging Face sin rellenar (todos los campos aparecen como `[More Information Needed]`), no se declara licencia, no se declaran idiomas, no hay resultados de evaluación y el repositorio acumula 0 descargas y 0 likes. Cualquier uso en producción exige una validación previa por parte del integrador.
 
 ## Especificaciones tecnicas
 
@@ -29,9 +29,9 @@ La relevancia de esta ficha es limitada y debe interpretarse como una advertenci
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO. La model card es la plantilla automática generada por HuggingFace y no contiene ningún dato técnico. El único indicio estructural es la etiqueta `exaone4`, que apunta a que el modelo base pertenece a la familia EXAONE 4.0, y el sufijo `lora-merged` del identificador, que indica que el checkpoint final se obtuvo fusionando los pesos de un adaptador LoRA con el modelo base, en lugar de publicar el adaptador por separado.
+No hay información publicada sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO. La model card es la plantilla automática generada por Hugging Face y no contiene ningún dato técnico. El único indicio estructural es la etiqueta `exaone4`, que apunta a que el modelo base pertenece a la familia EXAONE 4.0, y el sufijo `lora-merged` del identificador, que indica que el checkpoint final se obtuvo fusionando los pesos de un adaptador LoRA con el modelo base, en lugar de publicar el adaptador por separado.
 
-El segmento `nsmc` del nombre sugiere, sin confirmación documental, un ajuste orientado al Naver Sentiment Movie Corpus (clasificación de sentimiento binaria en coreano). Si esa interpretación fuese correcta, el ajuste habría especializado un modelo generativo generalista hacia una tarea de clasificación, lo que normalmente reduce su utilidad como asistente conversacional abierto. Conviene igualmente señalar que el tag `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono citado en la plantilla de HuggingFace, y no a un artículo técnico sobre este modelo.
+El segmento `nsmc` del nombre sugiere, sin confirmación documental, un ajuste orientado al Naver Sentiment Movie Corpus (clasificación de sentimiento binaria en coreano). Si esa interpretación fuese correcta, el ajuste habría especializado un modelo generativo generalista hacia una tarea de clasificación, lo que normalmente reduce su utilidad como asistente conversacional abierto. Conviene igualmente señalar que el tag `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono citado en la plantilla de Hugging Face, y no a un artículo técnico sobre este modelo.
 
 ## Capacidades
 
@@ -86,9 +86,9 @@ La comparación se establece frente a modelos densos de tamaño equivalente de u
 | EXAONE 4.0 1.2B (LG AI Research) | ≈1,2 B | no disponible en esta ficha | licencia propia de EXAONE | ficha oficial con documentacion | Familia de la que probablemente deriva este checkpoint |
 | Llama 3.2 1B (Meta) | ≈1,24 B | 128 K (segun ficha publica) | Llama 3.2 Community License | model card completa | Modelo de referencia en la gama de 1 B |
 | Qwen2.5 1.5B (Alibaba) | ≈1,54 B | 32 K, ampliable (segun ficha publica) | Apache 2.0 | model card completa | Alternativa permisiva y con buen soporte multiidioma |
-| SmolLM2 1.7B (HuggingFace) | ≈1,7 B | 8 K (segun ficha publica) | Apache 2.0 | model card completa | Enfocado a entrenamiento reproducible y despliegue ligero |
+| SmolLM2 1.7B (Hugging Face) | ≈1,7 B | 8 K (segun ficha publica) | Apache 2.0 | model card completa | Enfocado a entrenamiento reproducible y despliegue ligero |
 
-Frente a cualquiera de estas alternativas, la diferencia principal no es de rendimiento sino de trazabilidad: los modelos de Meta, Alibaba y HuggingFace publican arquitectura, datos, licencia y resultados de evaluación, mientras que este checkpoint no aporta ninguno de esos elementos, lo que impide cualquier comparación cuantitativa honesta.
+Frente a cualquiera de estas alternativas, la diferencia principal no es de rendimiento sino de trazabilidad: los modelos de Meta, Alibaba y Hugging Face publican arquitectura, datos, licencia y resultados de evaluación, mientras que este checkpoint no aporta ninguno de esos elementos, lo que impide cualquier comparación cuantitativa honesta.
 
 ## Limitaciones y advertencias
 
@@ -102,15 +102,15 @@ Frente a cualquiera de estas alternativas, la diferencia principal no es de rend
 - Sesgos: no evaluados. El corpus NSMC, si es el usado, contiene reseñas de películas coreanas y arrastraría los sesgos propios del dominio (lenguaje coloquial, ironía, opiniones polarizadas) sin ninguna mitigación documentada.
 - Longitud de contexto desconocida: no puede planificarse el diseño de prompts multi-turno ni de pipelines RAG sin conocer el límite real de tokens.
 - Metadatos atípicos: las fechas de creación y actualización (2026-09-18) y la ausencia total de documentación sugieren un experimento personal más que una publicación mantenida. No hay garantía de que el repositorio permanezca disponible.
-- Tag de arXiv engañoso: `arxiv:1910.09700` corresponde a la plantilla de HuggingFace sobre emisiones de carbono, no a un artículo sobre el modelo. No debe citarse como referencia técnica.
+- Tag de arXiv engañoso: `arxiv:1910.09700` corresponde a la plantilla de Hugging Face sobre emisiones de carbono, no a un artículo sobre el modelo. No debe citarse como referencia técnica.
 - Recomendación: no desplegar en producción sin antes (1) localizar al autor y aclarar la licencia, (2) ejecutar una batería propia de evaluación sobre el dominio objetivo, (3) comparar contra el modelo base EXAONE 4.0 sin fusionar, y (4) fijar una revisión concreta del repositorio por si los pesos cambian.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wnsduf0000/exaone-nsmc-lora-merged-wnsduf0000
+- Modelo en Hugging Face: https://huggingface.co/wnsduf0000/exaone-nsmc-lora-merged-wnsduf0000
 - Repositorio con los pesos safetensors: https://huggingface.co/wnsduf0000/exaone-nsmc-lora-merged-wnsduf0000/tree/main
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto medioambiental de HuggingFace referenciada en la plantilla: https://mlco2.github.io/impact#compute
+- Calculadora de impacto medioambiental de Hugging Face referenciada en la plantilla: https://mlco2.github.io/impact#compute
 - Familia EXAONE de LG AI Research (referencia para el tag `exaone4`, sin confirmación de relación directa): https://huggingface.co/LGAI-EXAONE
 
 No se han encontrado otros enlaces relevantes. La búsqueda web realizada no devolvió resultados relacionados con el modelo, su autor ni su posible dataset de ajuste; los resultados obtenidos eran contenido no pertinente y se han descartado.

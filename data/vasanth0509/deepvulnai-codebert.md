@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Vasanth0509/deepvulnai-codebert` es un modelo publicado en HuggingFace por el usuario Vasanth0509, con un total de 124.647.170 parametros almacenados en formato safetensors y un repositorio de 0,5 GB. La unica etiqueta de arquitectura presente es `roberta`, lo que lo situa en la familia de encoders tipo BERT/RoBERTa de tamano base. La model card publicada se limita a declarar `license: mit` y no incluye ninguna descripcion, datos de entrenamiento, metricas ni instrucciones de uso.
+`Vasanth0509/deepvulnai-codebert` es un modelo publicado en Hugging Face por el usuario Vasanth0509, con un total de 124.647.170 parametros almacenados en formato safetensors y un repositorio de 0,5 GB. La unica etiqueta de arquitectura presente es `roberta`, lo que lo situa en la familia de encoders tipo BERT/RoBERTa de tamano base. La model card publicada se limita a declarar `license: mit` y no incluye ninguna descripcion, datos de entrenamiento, metricas ni instrucciones de uso.
 
 El nombre del repositorio sugiere un modelo orientado a la deteccion de vulnerabilidades en codigo (posiblemente derivado de CodeBERT o entrenado sobre un corpus de codigo), pero esta interpretacion es una inferencia a partir del identificador y no esta confirmada por el autor en la informacion disponible. No hay pipeline declarado, ni idiomas soportados, ni resultados de evaluacion.
 
-Su relevancia actual es limitada: el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (27 de octubre de 2026, segun los metadatos de HuggingFace). Se trata, por tanto, de una publicacion sin validacion externa ni documentacion tecnica que permita recomendarla para produccion sin una evaluacion propia previa.
+Su relevancia actual es limitada: el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (27 de octubre de 2026, segun los metadatos de Hugging Face). Se trata, por tanto, de una publicacion sin validacion externa ni documentacion tecnica que permita recomendarla para produccion sin una evaluacion propia previa.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada: el repositorio registra 0 descargas y 0 likes,
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (metadatos HF) | 2026-10-27 |
@@ -73,10 +73,10 @@ El autor no incluye metricas de ningun tipo (precision, recall, F1, exactitud, r
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vasanth0509/deepvulnai-codebert | 124,6 M | no disponible | no disponible (sin benchmarks) | MIT | HuggingFace, 0 descargas |
-| roberta-base (Facebook AI) | 125 M | 512 tokens | ampliamente evaluado en GLUE y tareas NLP | MIT | HuggingFace, muy extendido |
-| microsoft/codebert-base | 125 M | 512 tokens | evaluado en CodeXGLUE y tareas de codigo | MIT | HuggingFace, muy extendido |
-| microsoft/graphcodebert-base | 125 M | 512 tokens | evaluado en CodeXGLUE, incluye estructura de grafo | MIT | HuggingFace, muy extendido |
+| Vasanth0509/deepvulnai-codebert | 124,6 M | no disponible | no disponible (sin benchmarks) | MIT | Hugging Face, 0 descargas |
+| roberta-base (Facebook AI) | 125 M | 512 tokens | ampliamente evaluado en GLUE y tareas NLP | MIT | Hugging Face, muy extendido |
+| microsoft/codebert-base | 125 M | 512 tokens | evaluado en CodeXGLUE y tareas de codigo | MIT | Hugging Face, muy extendido |
+| microsoft/graphcodebert-base | 125 M | 512 tokens | evaluado en CodeXGLUE, incluye estructura de grafo | MIT | Hugging Face, muy extendido |
 
 La comparativa se basa en caracteristicas publicas de los modelos de referencia; para `deepvulnai-codebert` no existen datos de rendimiento que permitan situarlo frente a ellos. La equivalencia de licencia (MIT) y de tamano es lo unico verificable. Cualquier afirmacion sobre superioridad o inferioridad en deteccion de vulnerabilidades carece de base documental.
 
@@ -95,5 +95,5 @@ La comparativa se basa en caracteristicas publicas de los modelos de referencia;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vasanth0509/deepvulnai-codebert
+- Hugging Face: https://huggingface.co/Vasanth0509/deepvulnai-codebert
 - No se han encontrado papers, blogs, repositorios, demos ni discusiones tecnicas asociadas al modelo en la busqueda web realizada. Los resultados devueltos no guardan ninguna relacion con el modelo y no se incluyen.

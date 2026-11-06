@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yusufhandayani/video-understanding-analysis
+- Repositorio en Hugging Face: https://huggingface.co/yusufhandayani/video-understanding-analysis
 - Articulo sobre SmolVLM2 (video understanding en dispositivos): https://huggingface.co/blog/smolvlm2
 - Comparativa de herramientas de analisis de video (2026): https://www.edenai.co/post/top-free-video-analysis-tools-apis-and-open-source-models
 - Listado de modelos de video understanding (2026): https://usefulai.com/models/video-understanding

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cagliostro-v3 es un modelo publicado en HuggingFace por el usuario TobiasLogic bajo el identificador TobiasLogic/cagliostro-v3. La informacion publica disponible es minima: la ficha no declara pipeline, licencia ni idiomas soportados, y el unico tag presente es region:us. El repositorio ocupa 28,1 GB y esta configurado con acceso restringido (gated), de modo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+cagliostro-v3 es un modelo publicado en Hugging Face por el usuario TobiasLogic bajo el identificador TobiasLogic/cagliostro-v3. La informacion publica disponible es minima: la ficha no declara pipeline, licencia ni idiomas soportados, y el unico tag presente es region:us. El repositorio ocupa 28,1 GB y esta configurado con acceso restringido (gated), de modo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 A partir del tamano del repositorio puede estimarse que se trata de un modelo de aproximadamente 14 000 millones de parametros almacenados en precision de 16 bits (fp16 o bf16). Esta cifra es una inferencia derivada del peso de los ficheros y no un dato confirmado por el autor. No se dispone de informacion sobre arquitectura, datos de entrenamiento, longitud de contexto, tokenizador ni proceso de alineacion (RLHF, DPO u otros).
 
@@ -73,9 +73,9 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cagliostro-v3 | no disponible (~14 000 millones estimados) | no disponible | no disponible | Gated en HuggingFace, 0 descargas |
-| Qwen2.5-14B-Instruct | 14 700 millones | 32 768 tokens (hasta 131 072 con RoPE scaling) | Apache 2.0 (segun version) | Abierta en HuggingFace |
-| Mistral-Nemo-12B-Instruct | 12 200 millones | 128 000 tokens | Apache 2.0 | Abierta en HuggingFace |
+| cagliostro-v3 | no disponible (~14 000 millones estimados) | no disponible | no disponible | Gated en Hugging Face, 0 descargas |
+| Qwen2.5-14B-Instruct | 14 700 millones | 32 768 tokens (hasta 131 072 con RoPE scaling) | Apache 2.0 (segun version) | Abierta en Hugging Face |
+| Mistral-Nemo-12B-Instruct | 12 200 millones | 128 000 tokens | Apache 2.0 | Abierta en Hugging Face |
 | Llama-3.1-8B-Instruct | 8 000 millones | 128 000 tokens | Llama 3.1 Community License | Abierta con condiciones |
 
 Los datos de rendimiento de cagliostro-v3 no estan publicados, por lo que no se puede afirmar ninguna equivalencia ni superioridad frente a estos modelos.
@@ -84,7 +84,7 @@ Los datos de rendimiento de cagliostro-v3 no estan publicados, por lo que no se 
 
 - Ausencia total de documentacion: no hay model card, paper, blog ni repositorio de codigo asociado.
 - Licencia no declarada: no se puede determinar si el uso comercial esta permitido, lo que impide su adopcion en produccion con garantias legales.
-- Acceso restringido: la descarga exige aceptar condiciones en HuggingFace cuyo contenido no se detalla en los metadatos y puede variar sin previo aviso.
+- Acceso restringido: la descarga exige aceptar condiciones en Hugging Face cuyo contenido no se detalla en los metadatos y puede variar sin previo aviso.
 - Sin validacion de la comunidad: 0 descargas y 1 like indican que el modelo no ha sido probado ni auditado por terceros.
 - Riesgo de alucinacion, sesgos y comportamiento toxico: desconocido, al no existir evaluaciones de seguridad publicadas.
 - Procedencia de los datos de entrenamiento desconocida: no se puede verificar el cumplimiento de derechos de autor ni la ausencia de datos personales.
@@ -96,8 +96,8 @@ Los datos de rendimiento de cagliostro-v3 no estan publicados, por lo que no se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TobiasLogic/cagliostro-v3
-- Perfil del autor en HuggingFace: no disponible en la informacion proporcionada
+- Hugging Face: https://huggingface.co/TobiasLogic/cagliostro-v3
+- Perfil del autor en Hugging Face: no disponible en la informacion proporcionada
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio de inferencia: no disponible

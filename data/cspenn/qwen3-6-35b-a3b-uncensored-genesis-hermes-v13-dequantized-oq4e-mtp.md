@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ4e-mtp es una cuantización mixta del modelo Qwen3.6-35B-A3B, un transformer de tipo Mixture of Experts (MoE) con 35.952 millones de parámetros totales, publicado por el usuario cspenn en HuggingFace. El checkpoint procede de una variante "uncensored" afinada sobre la base Qwen3.6 y renombrada con el sufijo Genesis-Hermes-V13, lo que sugiere un ajuste orientado a eliminar restricciones de alineamiento del modelo original. La arquitectura declarada en los tags es `qwen3_5_moe`, con cabecera MTP (multi-token prediction) y un módulo de visión de 0,447B de parámetros.
+Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ4e-mtp es una cuantización mixta del modelo Qwen3.6-35B-A3B, un transformer de tipo Mixture of Experts (MoE) con 35.952 millones de parámetros totales, publicado por el usuario cspenn en Hugging Face. El checkpoint procede de una variante "uncensored" afinada sobre la base Qwen3.6 y renombrada con el sufijo Genesis-Hermes-V13, lo que sugiere un ajuste orientado a eliminar restricciones de alineamiento del modelo original. La arquitectura declarada en los tags es `qwen3_5_moe`, con cabecera MTP (multi-token prediction) y un módulo de visión de 0,447B de parámetros.
 
 El interés técnico principal reside en el esquema de cuantización: se ha aplicado oQ (oMLX v0.7.3) con precisión mixta, logrando una media efectiva de 4,809 bits por peso y un tamaño de repositorio de 21,6 GB. La distribución combina bloques afines de 4, 5, 6 y 8 bits con grupos de 64 y 128, reservando BF16 para una fracción pequeña de tensores sensibles (1,329 % de los pesos lógicos). Esto permite ejecutar un modelo de casi 36B parámetros en hardware Apple Silicon con memoria unificada moderada.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-oQ4e-mtp (este) | 35,952B | no disponible | MLX safetensors 4,809 bits/peso | no disponible | HuggingFace, 0 descargas |
+| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-oQ4e-mtp (este) | 35,952B | no disponible | MLX safetensors 4,809 bits/peso | no disponible | Hugging Face, 0 descargas |
 | Qwen3.6-35B-A3B (base) | ~35B | no disponible | safetensors / GGUF según publicación | no disponible | Hipótético, no verificado en la información |
 | Qwen3-30B-A3B | ~30B (MoE) | 128K típicamente | safetensors, GGUF | Apache 2.0 (versiones estándar) | Amplia |
 | Mixtral 8x7B | 46,7B (MoE) | 32K | safetensors, GGUF | Apache 2.0 | Amplia |
@@ -85,6 +85,6 @@ La comparación con la base Qwen3.6-35B-A3B y con Qwen3-30B-A3B es aproximada: l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cspenn/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ4e-mtp
+- Hugging Face: https://huggingface.co/cspenn/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ4e-mtp
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx
 - No se han encontrado en la información proporcionada papers, blogs, repos adicionales ni demos asociados a este checkpoint.

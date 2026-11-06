@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mradermacher/Huihui-Ornith-1.5-9B-abliterated-GGUF` es una cuantización GGUF del modelo `huihui-ai/Huihui-Ornith-1.5-9B-abliterated`, que a su vez es una versión "abliterated" (modificada para eliminar ciertos rechazos de contenido) del modelo `ornith-ai/Ornith-1.5-9B`. Ornith-1.5-9B es un modelo de lenguaje denso de 9 mil millones de parámetros, diseñado para generación de código y razonamiento agéntico. La cuantización GGUF permite ejecutarlo en hardware de consumo, con requisitos de memoria reducidos (desde 6 GB con cuantizaciones bajas, o 4 GB solo texto según fuentes externas). El modelo base está licenciado bajo MIT, lo que facilita su uso comercial. La etiqueta `qwen3` en HuggingFace indica que la arquitectura está basada en la familia Qwen3.
+El modelo `mradermacher/Huihui-Ornith-1.5-9B-abliterated-GGUF` es una cuantización GGUF del modelo `huihui-ai/Huihui-Ornith-1.5-9B-abliterated`, que a su vez es una versión "abliterated" (modificada para eliminar ciertos rechazos de contenido) del modelo `ornith-ai/Ornith-1.5-9B`. Ornith-1.5-9B es un modelo de lenguaje denso de 9 mil millones de parámetros, diseñado para generación de código y razonamiento agéntico. La cuantización GGUF permite ejecutarlo en hardware de consumo, con requisitos de memoria reducidos (desde 6 GB con cuantizaciones bajas, o 4 GB solo texto según fuentes externas). El modelo base está licenciado bajo MIT, lo que facilita su uso comercial. La etiqueta `qwen3` en Hugging Face indica que la arquitectura está basada en la familia Qwen3.
 
 ## Especificaciones técnicas
 
@@ -73,7 +73,7 @@ Nota: los valores de contexto de los modelos comparados son conocidos públicame
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Huihui-Ornith-1.5-9B-abliterated-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Huihui-Ornith-1.5-9B-abliterated-GGUF
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated
 - Página del modelo Ornith-1.5-9B (original): https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Guía de ejecución local (atomic.chat): https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally

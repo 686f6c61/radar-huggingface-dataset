@@ -107,7 +107,7 @@ No se dispone de comparaciones directas con modelos de otros desarrolladores (po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dima6312/gemma-4-26B-A4B-heretic-v2-qat-aligned-4bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/dima6312/gemma-4-26B-A4B-heretic-v2-qat-aligned-4bit-mlx
 - Modelo base (abliterado): https://huggingface.co/OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2
 - Referencia de conversion alineada: https://huggingface.co/mlx-community/gemma-4-26B-A4B-it-qat-q4_0-mlx-aligned
 - Gemma 4 26B A4B (Google): https://huggingface.co/google/gemma-4-26B-A4B

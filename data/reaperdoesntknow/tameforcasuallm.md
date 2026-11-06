@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: no disponible oficialmente. Con ~1B de parametros en FP32, se estiman aproximadamente 4 GB de memoria. En cuantizacion INT8, alrededor de 1 GB.
 - GPU recomendadas: no especificadas. Dado su tamano, podria ejecutarse en GPUs consumer como RTX 3060 (12 GB) o superiores. El entrenamiento se realizo en CPU, por lo que la inferencia en CPU es viable aunque lenta.
 - Compatibilidad con consumer GPU: probablemente si, en cuantizaciones de 8 bits o inferiores, aunque no hay configuraciones publicadas.
-- Opciones de despliegue: al usar la libreria transformers, es compatible con pipelines de HuggingFace, incluyendo text-generation. No se menciona soporte para vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: al usar la libreria transformers, es compatible con pipelines de Hugging Face, incluyendo text-generation. No se menciona soporte para vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. El autor reporta tiempos de entrenamiento de 3-7 segundos por paso en CPU con secuencias de 1024 y batch 16, pero no hay datos de inferencia.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La comparacion es desfavorable para TameForCasualLM en terminos de madurez, vali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/TameForCasualLM
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/TameForCasualLM
 - Portfolio del autor (Convergent Intelligence LLC): https://huggingface.co/reaperdoesntknow
 - Dataset O1-OPEN/OpenO1-SFT: https://huggingface.co/datasets/O1-OPEN/OpenO1-SFT
 - Dataset WeMake/Intelligent-Content-Understanding: https://huggingface.co/datasets/WeMake/Intelligent-Content-Understanding

@@ -90,5 +90,5 @@ No disponible. No se han proporcionado datos de rendimiento ni especificaciones 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ngod-ung90/clip-retrieval
+- Hugging Face: https://huggingface.co/Ngod-ung90/clip-retrieval
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la busqueda web proporcionada.

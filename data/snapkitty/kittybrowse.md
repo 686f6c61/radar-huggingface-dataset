@@ -72,7 +72,7 @@ No disponible. KittyBrowse no es un modelo de lenguaje ni un sistema de IA compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/kittybrowse
+- Hugging Face: https://huggingface.co/Snapkitty/kittybrowse
 - Protocolo: `docs/kitty-protocol-v1.md`
 - Limite APL/WASM: `docs/apl-wasm-runtime.md`
 - Puente NATS Rust: `docs/nats-rust-bridge.md`

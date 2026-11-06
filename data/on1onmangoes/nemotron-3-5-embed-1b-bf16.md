@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Embed-1B-BF16 | 1,55B | no disponible | Texto + imagen | OpenMDW-1.1 | HuggingFace (NVIDIA y mirror on1onmangoes) |
-| Nemotron-3.5-Embed-8B-BF16 | no disponible (8B por nombre) | no disponible | Texto + imagen | OpenMDW-1.1 | HuggingFace (NVIDIA) |
-| Nemotron-3-Embed-1B-BF16 | no disponible (1B por nombre) | no disponible | Texto | no disponible | HuggingFace (NVIDIA) |
-| Ministral-3-3B-Instruct-2512-BF16 | no disponible (3B por nombre) | no disponible | Texto (modelo base instructivo) | Apache 2.0 | HuggingFace (Mistral AI) |
+| Nemotron-3.5-Embed-1B-BF16 | 1,55B | no disponible | Texto + imagen | OpenMDW-1.1 | Hugging Face (NVIDIA y mirror on1onmangoes) |
+| Nemotron-3.5-Embed-8B-BF16 | no disponible (8B por nombre) | no disponible | Texto + imagen | OpenMDW-1.1 | Hugging Face (NVIDIA) |
+| Nemotron-3-Embed-1B-BF16 | no disponible (1B por nombre) | no disponible | Texto | no disponible | Hugging Face (NVIDIA) |
+| Ministral-3-3B-Instruct-2512-BF16 | no disponible (3B por nombre) | no disponible | Texto (modelo base instructivo) | Apache 2.0 | Hugging Face (Mistral AI) |
 
 La comparacion con alternativas de otros fabricantes (por ejemplo, embeddings multimodales de Cohere, Voyage o Jina) no esta disponible en la informacion proporcionada.
 

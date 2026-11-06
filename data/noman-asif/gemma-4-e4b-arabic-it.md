@@ -88,9 +88,9 @@ No se han publicado en la información disponible comparaciones con modelos exte
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-E4B-Arabic-It | 4,5B (card) / 8,0B (safetensors) | 4,0B | no disponible | Apache 2.0 | HuggingFace |
-| Gemma-4-26B-A4B-Arabic-It | 25,2B | 3,8B | no disponible | Apache 2.0 | HuggingFace |
-| google/gemma-4-E4B-it (base) | no disponible | 4,0B | no disponible | Gemma (no Apache 2.0) | HuggingFace |
+| Gemma-4-E4B-Arabic-It | 4,5B (card) / 8,0B (safetensors) | 4,0B | no disponible | Apache 2.0 | Hugging Face |
+| Gemma-4-26B-A4B-Arabic-It | 25,2B | 3,8B | no disponible | Apache 2.0 | Hugging Face |
+| google/gemma-4-E4B-it (base) | no disponible | 4,0B | no disponible | Gemma (no Apache 2.0) | Hugging Face |
 
 Comparación de rendimiento reportada por el autor:
 
@@ -121,7 +121,7 @@ No se dispone de datos de comparación con otros ajustes árabes de talla simila
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/noman-asif/Gemma-4-E4B-Arabic-It
+- Hugging Face del modelo: https://huggingface.co/noman-asif/Gemma-4-E4B-Arabic-It
 - Modelo hermano MoE: https://huggingface.co/noman-asif/Gemma-4-26B-A4B-Arabic-It
 - Dataset SFT: https://huggingface.co/datasets/noman-asif/Arabic-Reasoning-Instruct-120k
 - Dataset DPO: https://huggingface.co/datasets/noman-asif/Arabic-Preference-DPO-20k

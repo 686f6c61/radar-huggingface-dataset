@@ -94,7 +94,7 @@ No se dispone de informacion sobre otros reescritores de consultas de tamano com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gramscii-IT/SemanticRepair-270M
+- Modelo en Hugging Face: https://huggingface.co/Gramscii-IT/SemanticRepair-270M
 - Dataset de entrenamiento: https://huggingface.co/datasets/Gramscii-IT/semantic-repair-routing
 - Modelo base: https://huggingface.co/google/gemma-3-270m
 - Repositorio alternativo (mismo modelo): https://huggingface.co/Gramscii/SemanticRepair-270M

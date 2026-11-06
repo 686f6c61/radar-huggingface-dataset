@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por el usuario yusuketku bajo licencia MIT, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación exploratorias sobre el problema del *few-shot multimodal*. El propio autor lo define como una "nota exploratoria" que documenta la intención de una comparación, los posibles factores de confusión y los requisitos de reproducibilidad antes de que se reporte ningún resultado de benchmark. No se incluyen pesos de red, código de inferencia ni checkpoints.
 
-El repositorio consta de dos archivos principales: `summary.md`, que contiene la nota completa, y `README.md`, que actúa como documentación. Aunque el campo de parámetros totales en HuggingFace indica 24.832, este valor corresponde probablemente a un archivo de pesos residual o a un artefacto de metadatos, no a un modelo funcional. El tamaño del repositorio es de 0.0 GB, lo que confirma la ausencia de pesos sustanciales. Su relevancia actual radica en que sirve como plantilla metodológica para investigadores que planean experimentos en *few-shot multimodal*, pero no como un recurso desplegable.
+El repositorio consta de dos archivos principales: `summary.md`, que contiene la nota completa, y `README.md`, que actúa como documentación. Aunque el campo de parámetros totales en Hugging Face indica 24.832, este valor corresponde probablemente a un archivo de pesos residual o a un artefacto de metadatos, no a un modelo funcional. El tamaño del repositorio es de 0.0 GB, lo que confirma la ausencia de pesos sustanciales. Su relevancia actual radica en que sirve como plantilla metodológica para investigadores que planean experimentos en *few-shot multimodal*, pero no como un recurso desplegable.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No existe una categoria de modelos comparable, ya que este repositorio no es un modelo. Sin embargo, en HuggingFace existen otros repositorios de notas similares:
+No existe una categoria de modelos comparable, ya que este repositorio no es un modelo. Sin embargo, en Hugging Face existen otros repositorios de notas similares:
 
 | Repositorio | Autor | Licencia | Contenido |
 |---|---|---|---|
@@ -64,13 +64,13 @@ Los tres comparten la naturaleza de documentacion metodologica, no de modelos fu
 
 - No es un modelo de IA: no puede ejecutar inferencia, generar texto ni procesar imagenes. Intentar cargarlo como un modelo safetensors en un framework de ML fallara o producira resultados sin sentido.
 - No contiene resultados experimentales: las secciones de planes e hipotesis no deben citarse como evidencia de rendimiento.
-- Riesgo de malinterpretacion: los metadatos de HuggingFace (parametros totales, formato safetensors) pueden inducir a error a quien no lea la model card completa.
+- Riesgo de malinterpretacion: los metadatos de Hugging Face (parametros totales, formato safetensors) pueden inducir a error a quien no lea la model card completa.
 - Licencia MIT: permite uso comercial y modificacion, pero los terminos de los datasets externos referenciados deben revisarse por separado.
 - Sin mantenimiento activo: el repositorio se creo en septiembre de 2026 y no muestra actividad posterior; no hay garantia de actualizaciones.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yusetku/few-shot-multimodal-review
+- Repositorio en Hugging Face: https://huggingface.co/yusetku/few-shot-multimodal-review
 - Repositorio similar de lufischer: https://huggingface.co/lufischer/few-shot-multimodal-review-2024/tree/main
 - Repositorio similar de alexandermikhailov: https://huggingface.co/alexandermikhailov/review-few-shot-multimodal
 - Articulo sobre multimodal zero-shot y few-shot learning (ResearchGate): https://www.researchgate.net/publication/388959539_Multimodal_Zero-Shot_and_Few-Shot_Learning

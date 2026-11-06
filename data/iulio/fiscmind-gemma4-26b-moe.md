@@ -94,5 +94,5 @@ No se dispone de datos verificables sobre otros modelos especializados en fiscal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iulio/FiscMind-Gemma4-26B-MoE
+- Modelo en Hugging Face: https://huggingface.co/iulio/FiscMind-Gemma4-26B-MoE
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it

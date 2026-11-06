@@ -2,7 +2,7 @@
 
 ## Resumen
 
-madlad400-10b-mt-ct2-int8 es una conversion al formato CTranslate2 con cuantizacion int8 del modelo google/madlad400-10b-mt, un sistema de traduccion automatica multilingue basado en arquitectura T5 que cubre mas de 400 idiomas. El autor de la conversion es el usuario rei-ma, que publica los pesos optimizados para inferencia con CTranslate2 en lugar del formato original de HuggingFace Transformers. El modelo resuelve el problema de traduccion neuronal entre un numero muy amplio de pares de idiomas, incluyendo lenguajes de bajos recursos, con un unico modelo.
+madlad400-10b-mt-ct2-int8 es una conversion al formato CTranslate2 con cuantizacion int8 del modelo google/madlad400-10b-mt, un sistema de traduccion automatica multilingue basado en arquitectura T5 que cubre mas de 400 idiomas. El autor de la conversion es el usuario rei-ma, que publica los pesos optimizados para inferencia con CTranslate2 en lugar del formato original de Hugging Face Transformers. El modelo resuelve el problema de traduccion neuronal entre un numero muy amplio de pares de idiomas, incluyendo lenguajes de bajos recursos, con un unico modelo.
 
 El modelo original fue entrenado por Google sobre 250 mil millones de tokens y forma parte de la familia MADLAD-400, presentada en el paper "MADLAD-400: A Multilingual And Document-Level Large Audited Dataset". La version aqui descrita no modifica los pesos mas alla de la cuantizacion a int8, por lo que hereda las capacidades y limitaciones del modelo base. Su relevancia practica radica en que el formato CTranslate2 permite un despliegue de inferencia mas eficiente en CPU y GPU que el runtime original de Transformers, con un tamano de repositorio de 10,8 GB.
 
@@ -25,7 +25,7 @@ La ficha se centra en la version cuantizada publicada por rei-ma, pero al tratar
 
 El modelo base es un transformer encoder-decoder de la familia T5 con 10 mil millones de parametros, disenado especificamente para traduccion automatica multilingue. Segun la model card del repositorio, el modelo original fue entrenado sobre 250 mil millones de tokens y cubre mas de 400 idiomas. El paper asociado (arXiv:2309.04662) describe MADLAD-400 como un dataset multilingue y a nivel de documento, auditado, que sirve de base para el entrenamiento de esta familia de modelos.
 
-La version publicada por rei-ma no reentrena ni modifica los pesos: unicamente convierte el checkpoint original de HuggingFace al formato de runtime de CTranslate2 y aplica cuantizacion int8. El repositorio contiene `model.bin` (~10,7 GB) con los pesos cuantizados, `config.json` con la configuracion del runtime, `shared_vocabulary.json` con el vocabulario y los ficheros del tokenizer SentencePiece/T5. No se documentan en la informacion disponible detalles sobre RLHF, DPO ni innovaciones de decodificacion especulativa.
+La version publicada por rei-ma no reentrena ni modifica los pesos: unicamente convierte el checkpoint original de Hugging Face al formato de runtime de CTranslate2 y aplica cuantizacion int8. El repositorio contiene `model.bin` (~10,7 GB) con los pesos cuantizados, `config.json` con la configuracion del runtime, `shared_vocabulary.json` con el vocabulario y los ficheros del tokenizer SentencePiece/T5. No se documentan en la informacion disponible detalles sobre RLHF, DPO ni innovaciones de decodificacion especulativa.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ La comparativa se limita a modelos de la misma familia y a alternativas de tradu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rei-ma/madlad400-10b-mt-ct2-int8
+- Repositorio Hugging Face: https://huggingface.co/rei-ma/madlad400-10b-mt-ct2-int8
 - Modelo base: https://huggingface.co/google/madlad400-10b-mt
 - Paper MADLAD-400: https://arxiv.org/abs/2309.04662
 - Repositorio CTranslate2: https://github.com/OpenNMT/CTranslate2

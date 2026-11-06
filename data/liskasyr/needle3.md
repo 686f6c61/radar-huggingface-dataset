@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Needle 3 es un modelo fundacional disenado para ejecucion en dispositivo ("on-device"), orientado a moviles, wearables, robots, domotica, automocion y microcontroladores. Lo desarrolla Cactus Compute (la model card apunta a cactuscompute.com y al repositorio github.com/cactus-compute/needle), aunque el repositorio de HuggingFace esta publicado bajo la cuenta liskasYR. Su propuesta es radicalmente distinta a la de los LLM generalistas: sacrifica capacidad de conversacion abierta para superar en llamadas a herramientas (tool calling) a modelos diez veces mayores y para igualar a modelos dos o tres veces mayores en extraccion estructurada.
+Needle 3 es un modelo fundacional disenado para ejecucion en dispositivo ("on-device"), orientado a moviles, wearables, robots, domotica, automocion y microcontroladores. Lo desarrolla Cactus Compute (la model card apunta a cactuscompute.com y al repositorio github.com/cactus-compute/needle), aunque el repositorio de Hugging Face esta publicado bajo la cuenta liskasYR. Su propuesta es radicalmente distinta a la de los LLM generalistas: sacrifica capacidad de conversacion abierta para superar en llamadas a herramientas (tool calling) a modelos diez veces mayores y para igualar a modelos dos o tres veces mayores en extraccion estructurada.
 
 La arquitectura se denomina Laddered Simple Attention Network e incorpora un MLP Monarch Hadamard en lugar del FFN clasico, atencion GQA con derivaciones convolucionales causales, memoria de n-gramas ("engram") leida por gather y hiperconexiones multicarril. El modelo completo de 20 capas tiene 121M parametros, pero esta entrenado como una "escalera" en la que cada profundidad de 2 a 20 capas es un modelo desplegable de forma independiente, con tamanos de archivo de entre 8 y 29 MB. Los pesos se comprimen a CQ2-bit (Cactus Quants, 2,125 bits por peso), de modo que el modelo entero cabe en un unico fichero de decenas de MB.
 
@@ -82,7 +82,7 @@ La model card no identifica por nombre a los modelos base de comparacion, salvo 
 
 | Modelo | Parametros | Contexto | Rendimiento comparado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Needle 3 (20 capas) | 121M | no disponible | Referencia del autor: supera en tool calls moviles a modelos 10x mayores y empata con modelos 2-3x mayores en extraccion | Apache 2.0 | HuggingFace y sitio del fabricante |
+| Needle 3 (20 capas) | 121M | no disponible | Referencia del autor: supera en tool calls moviles a modelos 10x mayores y empata con modelos 2-3x mayores en extraccion | Apache 2.0 | Hugging Face y sitio del fabricante |
 | Needle 3, subred de 4 capas afinada | desde 29M | no disponible | El autor afirma que supera a DeepSeek V4 Flash | Apache 2.0 (base) | Generada localmente con `needle build` |
 | DeepSeek V4 Flash | no disponible | no disponible | Citado como linea base superada por la subred afinada | no disponible | no disponible |
 | Modelos generalistas de tool calling en la nube | no disponible | no disponible | La model card solo afirma superioridad de Needle 3 en tool calls moviles; sin cifras en texto | no disponible | no disponible |
@@ -100,13 +100,13 @@ No hay datos suficientes en la informacion proporcionada para construir una comp
 - Dependencia del ecosistema: el modelo requiere la libreria `cactus-needle` o un motor por plataforma, y el formato `.cact` esta definido por el fabricante. Escribir un runtime propio exige seguir su documento de portabilidad.
 - El ajuste fino de 2 bits y la cuantizacion del modelo publicado se realizan en la plataforma propietaria de Cactus, lo que puede limitar la reproducibilidad completa del artefacto distribuido.
 - Licencia Apache 2.0, que permite uso comercial, pero conviene verificar los terminos de la plataforma propietaria si se reproducen sus etapas de cuantizacion.
-- Discrepancia de atribucion: el desarrollador aparente es Cactus Compute, mientras que el repositorio de HuggingFace esta bajo la cuenta liskasYR y no tiene likes ni un historial de versiones amplio; conviene verificar la procedencia de los pesos antes de usarlos en produccion.
+- Discrepancia de atribucion: el desarrollador aparente es Cactus Compute, mientras que el repositorio de Hugging Face esta bajo la cuenta liskasYR y no tiene likes ni un historial de versiones amplio; conviene verificar la procedencia de los pesos antes de usarlos en produccion.
 - Fecha de creacion del repositorio indicada como 2026-09-22, posterior a la fecha de consulta habitual; conviene confirmar la vigencia y la version real de los pesos descargados.
 - El diseno de las herramientas afecta directamente al rendimiento; la documentacion insiste en usar una herramienta por accion, nombres que los usuarios pronunciarian y formatos declarados en las descripciones.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/liskasYR/needle3
+- Repositorio en Hugging Face: https://huggingface.co/liskasYR/needle3
 - Pagina de release y graficos interactivos: https://cactuscompute.com/needle
 - Codigo fuente y paquete Python: https://github.com/cactus-compute/needle
 - Guia de diseno de herramientas: https://cactuscompute.com/blog/designing-tools-for-needle

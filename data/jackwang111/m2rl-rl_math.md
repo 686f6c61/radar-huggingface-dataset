@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento del fine-tuning, por lo que la comparativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jackwang111/M2RL-RL_Math
+- Hugging Face: https://huggingface.co/Jackwang111/M2RL-RL_Math
 - GitHub M2RL: https://github.com/Mosi-AI/M2RL
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - GitHub QwenLM/Qwen3: https://github.com/QwenLM/Qwen3

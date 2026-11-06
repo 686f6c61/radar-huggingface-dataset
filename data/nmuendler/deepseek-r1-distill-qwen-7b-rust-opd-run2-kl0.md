@@ -6,7 +6,7 @@ DeepSeek-R1-Distill-Qwen-7B-rust-opd-run2-kl0 es un adaptador LoRA publicado por
 
 El identificador del modelo y la ruta del adaptador de origen (reasoning_training2/outputs/paper/sft/r1_qwen_rust_kl0/lr2e-04-run2/model) apuntan a un experimento academico de ajuste fino orientado a razonamiento y generacion de codigo en Rust, con una tasa de aprendizaje de 2e-04, un coeficiente de KL identificado como kl0 y una segunda ejecucion (run2). El prefijo cscs de la ruta sugiere ejecucion en infraestructura del Swiss National Supercomputing Centre, si bien esto no se confirma en la documentacion del repositorio.
 
-Su relevancia es acotada y de tipo experimental: se trata de un artefacto de investigacion con 0 descargas y 0 likes en el momento de la consulta, con una model card que es la plantilla por defecto de HuggingFace sin rellenar. No hay datos publicados de evaluacion, licencia declarada ni idiomas soportados explicitamente, por lo que cualquier uso en produccion exige validacion previa por parte del integrador.
+Su relevancia es acotada y de tipo experimental: se trata de un artefacto de investigacion con 0 descargas y 0 likes en el momento de la consulta, con una model card que es la plantilla por defecto de Hugging Face sin rellenar. No hay datos publicados de evaluacion, licencia declarada ni idiomas soportados explicitamente, por lo que cualquier uso en produccion exige validacion previa por parte del integrador.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ Su relevancia es acotada y de tipo experimental: se trata de un artefacto de inv
 
 El repositorio contiene exclusivamente pesos de adaptador de bajo rango (LoRA) en formato safetensors, cargables mediante la libreria peft, sobre un transformer decoder-only de 7 000 millones de parametros. La arquitectura subyacente es la del modelo base DeepSeek-R1-Distill-Qwen-7B, un destilado de razonamiento de DeepSeek entrenado sobre la familia Qwen2.5, con atencion causal estandar y sin componentes MoE ni de estado recurrente. El tamano del repositorio (0,7 GB) es notablemente superior al de un adaptador LoRA de rango bajo tipico para un modelo de 7B (habitualmente entre 0,05 y 0,5 GB), lo que sugiere un rango elevado o la inclusion de tensores adicionales, aunque el autor no lo documenta.
 
-Los unicos indicios sobre el procedimiento de entrenamiento proceden de los metadatos y de la ruta del adaptador de origen: la denominacion r1_qwen_rust_kl0 y la ruta reasoning_training2/outputs/paper/sft/ apuntan a una etapa de supervised fine-tuning con algun termino de regularizacion KL (etiquetado como kl0), ejecutada como segunda iteracion (run2) con tasa de aprendizaje 2e-04, y con un corpus orientado al lenguaje Rust. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, el rango y alpha del LoRA, ni el hardware utilizado. La etiqueta arxiv:1910.09700 presente en el repositorio corresponde a la referencia generica del calculador de impacto ambiental (Lacoste et al., 2019) incluida en la plantilla de HuggingFace, no a un articulo sobre este modelo.
+Los unicos indicios sobre el procedimiento de entrenamiento proceden de los metadatos y de la ruta del adaptador de origen: la denominacion r1_qwen_rust_kl0 y la ruta reasoning_training2/outputs/paper/sft/ apuntan a una etapa de supervised fine-tuning con algun termino de regularizacion KL (etiquetado como kl0), ejecutada como segunda iteracion (run2) con tasa de aprendizaje 2e-04, y con un corpus orientado al lenguaje Rust. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, el rango y alpha del LoRA, ni el hardware utilizado. La etiqueta arxiv:1910.09700 presente en el repositorio corresponde a la referencia generica del calculador de impacto ambiental (Lacoste et al., 2019) incluida en la plantilla de Hugging Face, no a un articulo sobre este modelo.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ Los unicos indicios sobre el procedimiento de entrenamiento proceden de los meta
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla por defecto de HuggingFace y todas las secciones de evaluacion figuran como "More Information Needed". La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla por defecto de Hugging Face y todas las secciones de evaluacion figuran como "More Information Needed". La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.
 
 ## Requisitos de hardware
 
@@ -97,7 +97,7 @@ La comparacion relevante es siempre contra el modelo base sin ajustar: cualquier
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-opd-run2-kl0
+- Repositorio Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-opd-run2-kl0
 - Modelo base declarado: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-run2-kl0-baked
 - Modelo base original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Repositorio DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

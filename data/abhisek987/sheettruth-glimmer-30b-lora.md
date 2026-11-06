@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SheetTruth Glimmer 30B LoRA | no disponible (base 30B) | no disponible | Apache 2.0 | HuggingFace (adaptador) | Auditoría de fórmulas, salida JSON |
+| SheetTruth Glimmer 30B LoRA | no disponible (base 30B) | no disponible | Apache 2.0 | Hugging Face (adaptador) | Auditoría de fórmulas, salida JSON |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abhisek987/sheettruth-glimmer-30b-lora
+- Modelo en Hugging Face: https://huggingface.co/Abhisek987/sheettruth-glimmer-30b-lora
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Repositorio del proyecto SheetTruth: https://github.com/Abhisek12378/sheettruth
 - Corpus de errores Enron (Schmitz y Jannach, 2016): no disponible como enlace en la información proporcionada

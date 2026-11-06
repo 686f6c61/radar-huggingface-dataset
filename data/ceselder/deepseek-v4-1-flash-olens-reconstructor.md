@@ -93,7 +93,7 @@ Comparación con reconstructores de otros modelos citada en la model card: Kimi-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ceselder/deepseek-v4.1-flash-olens-reconstructor
+- Hugging Face: https://huggingface.co/ceselder/deepseek-v4.1-flash-olens-reconstructor
 - Colección "DeepSeek V4.1 Flash olens": https://huggingface.co/collections/ceselder/deepseek-v41-flash-olens-6adffd27b920a405a2025fc6
 - Lente asociada (modelo de recompensa): https://huggingface.co/ceselder/deepseek-v4.1-flash-olens-lens
 - Dataset de activaciones reservadas: https://huggingface.co/datasets/ceselder/deepseek-v4.1-flash-olens-heldout-activations

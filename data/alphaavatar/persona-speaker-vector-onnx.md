@@ -75,6 +75,6 @@ No se dispone de información comparativa en la ficha del modelo. No se menciona
 
 ## Enlaces
 
-- [HuggingFace - AlphaAvatar/persona-speaker-vector-onnx](https://huggingface.co/AlphaAvatar/persona-speaker-vector-onnx)
+- [Hugging Face - AlphaAvatar/persona-speaker-vector-onnx](https://huggingface.co/AlphaAvatar/persona-speaker-vector-onnx)
 - [ModelScope - iic/speech_eres2netv2_sv_zh-cn_16k-common](https://modelscope.cn/models/iic/speech_eres2netv2_sv_zh-cn_16k-common) (no verificado directamente, pero referenciado en la model card)
 - [AlphaAvatar/plugins-persona (repositorio legacy)](https://huggingface.co/AlphaAvatar/plugins-persona)

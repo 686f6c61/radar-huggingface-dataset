@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Franjarjar/Qwen3.6-35B-A3B-EQ3DHB",
+  "slug": "franjarjar-qwen3-6-35b-a3b-eq3dhb",
+  "author": "Franjarjar",
+  "url": "https://huggingface.co/Franjarjar/Qwen3.6-35B-A3B-EQ3DHB",
+  "created_at": "2026-11-05T14:43:55.000Z",
+  "updated_at": "2026-11-05T15:40:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "espetero",
+    "eq",
+    "quantized",
+    "apple-silicon",
+    "metal",
+    "mixture-of-experts",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 7958913152,
+  "parameters_human": "7.96B",
+  "storage_bytes": 19365354438,
+  "storage_human": "19.4 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Franjarjar/Qwen3.6-35B-A3B-EQ3DHB · Hugging Face",
+      "url": "https://huggingface.co/Franjarjar/Qwen3.6-35B-A3B-EQ3DHB",
+      "snippet": "Qwen3.6-35B-A3B · EQ3DHB Qwen/Qwen3.6-35B-A3B quantized to EQ3DHB for Espetero, a native Metal inference engine for Apple silicon. EQ (LaneQuant) is the quantization format native to Espetero. It stores 3-bit codes with an 8-entry codebook, 4-bit codebook codes and 8-bit codes, with a signed 8-bit scale per 16 inputs and an fp16 scale per 256, the 16 inputs of a scale chosen so that every ..."
+    },
+    {
+      "title": "Qwen Team Open-Sources Qwen3.6-35B-A3B: A Sparse MoE Vision-Language ...",
+      "url": "https://www.marktechpost.com/2026/04/16/qwen-team-open-sources-qwen3-6-35b-a3b-a-sparse-moe-vision-language-model-with-3b-active-parameters-and-agentic-coding-capabilities/",
+      "snippet": "The open-source AI landscape has a new entry worth paying attention to. The Qwen team at Alibaba has released Qwen3.6-35B-A3B, the first open-weight model from the Qwen3.6 generation, and it is making a compelling argument that parameter efficiency matters far more than raw model size. With 35 billion total parameters but only 3 billion activated during inference, this model delivers agentic ..."
+    }
+  ]
+}

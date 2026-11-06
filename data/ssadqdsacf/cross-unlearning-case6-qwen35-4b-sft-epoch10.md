@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ssadqdsacf/cross-unlearning-case6-qwen35-4b-sft-epoch10` es un modelo de aproximadamente 4.539 millones de parametros (4,54 B) publicado en HuggingFace por el usuario `ssadqdsacf`. La nomenclatura del identificador sugiere que se trata de un ajuste supervisado (SFT) realizado sobre un modelo base de la familia Qwen 3.5 de 4B de parametros, correspondiente a un experimento denominado "cross-unlearning", en su variante "case6" y tras 10 epocas de entrenamiento. Esta interpretacion procede unicamente del nombre del repositorio y de la etiqueta `qwen3_5`, por lo que debe considerarse una hipotesis no confirmada por el autor.
+El repositorio `ssadqdsacf/cross-unlearning-case6-qwen35-4b-sft-epoch10` es un modelo de aproximadamente 4.539 millones de parametros (4,54 B) publicado en Hugging Face por el usuario `ssadqdsacf`. La nomenclatura del identificador sugiere que se trata de un ajuste supervisado (SFT) realizado sobre un modelo base de la familia Qwen 3.5 de 4B de parametros, correspondiente a un experimento denominado "cross-unlearning", en su variante "case6" y tras 10 epocas de entrenamiento. Esta interpretacion procede unicamente del nombre del repositorio y de la etiqueta `qwen3_5`, por lo que debe considerarse una hipotesis no confirmada por el autor.
 
 El modelo no dispone de model card, descripcion, pipeline declarado, licencia ni idiomas soportados en la informacion disponible. Con 8 descargas y 0 "likes" desde su creacion en septiembre de 2026, se trata de un artefacto de investigacion de baja difusion, presumiblemente asociado a un trabajo experimental sobre desaprendizaje automatico (machine unlearning) mas que a un modelo orientado a produccion.
 
@@ -27,7 +27,7 @@ Su relevancia es por tanto limitada y acotada al ambito de la investigacion en t
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo. La etiqueta de HuggingFace `qwen3_5` y el sufijo `qwen35-4b` del identificador apuntan a un transformer de la familia Qwen 3.5 en su variante de 4B de parametros, pero no hay model card, `config.json` descrito ni documentacion que lo confirme. El numero real de parametros (4.539.265.536) es coherente con un modelo denso de escala 4B.
+No se ha publicado informacion sobre la arquitectura interna del modelo. La etiqueta de Hugging Face `qwen3_5` y el sufijo `qwen35-4b` del identificador apuntan a un transformer de la familia Qwen 3.5 en su variante de 4B de parametros, pero no hay model card, `config.json` descrito ni documentacion que lo confirme. El numero real de parametros (4.539.265.536) es coherente con un modelo denso de escala 4B.
 
 En cuanto al entrenamiento, el identificador `sft-epoch10` indica que el artefacto es el resultado de un ajuste supervisado (supervised fine-tuning) tras 10 epocas, y el prefijo `cross-unlearning-case6` sugiere que forma parte de un experimento de desaprendizaje (eliminacion de conocimiento o comportamiento concreto de un modelo ya entrenado) correspondiente al caso 6 de una serie. No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre tecnicas de atencion o decodificacion especulativa.
 
@@ -50,7 +50,7 @@ Dado que no se dispone de model card, licencia ni evaluacion publicada, los caso
 - Generacion de texto local en hardware de consumo: con 4,54 B de parametros, el modelo es candidato a ejecutarse en una GPU de gama alta de consumo mediante cuantizacion de 4 u 8 bits, siempre que la licencia lo permita (actualmente no declarada).
 - Prototipado rapido de asistentes conversacionales: un modelo de esta escala permite iterar en local sobre tareas de dialogo simple sin depender de APIs externas, aunque no hay datos que confirmen su calidad conversacional.
 - Clasificacion y extraccion de informacion en pipelines internos: uso como componente generativo para tareas de resumen o etiquetado, sujeto a validacion previa del comportamiento real del checkpoint.
-- Docencia y formacion: analisis del ciclo completo de publicacion de un modelo en HuggingFace, desde los safetensors hasta la ausencia de model card, como caso practico de buenas y malas practicas de documentacion.
+- Docencia y formacion: analisis del ciclo completo de publicacion de un modelo en Hugging Face, desde los safetensors hasta la ausencia de model card, como caso practico de buenas y malas practicas de documentacion.
 - Auditoria de riesgos de publicacion: caso de estudio sobre los riesgos de distribuir pesos sin licencia, sin idiomas declarados y sin evaluacion de sesgos.
 
 ## Benchmarks y rendimiento
@@ -97,5 +97,5 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssadqdsacf/cross-unlearning-case6-qwen35-4b-sft-epoch10
+- Hugging Face: https://huggingface.co/ssadqdsacf/cross-unlearning-case6-qwen35-4b-sft-epoch10
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. El resto de resultados obtenidos no guardan relacion con el modelo y corresponden a dominios de comercio electronico ajenos al ambito de la inteligencia artificial.

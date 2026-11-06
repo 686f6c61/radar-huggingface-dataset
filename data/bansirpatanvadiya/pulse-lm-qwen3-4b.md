@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pulse-lm-qwen3-4b es un ajuste fino derivado de Qwen3-4B-Instruct-2507, publicado por el usuario BansiRPatanvadiya en HuggingFace. El modelo se distribuye exclusivamente en formato GGUF (cuantizacion Q4_K_M) tras un proceso de fine-tuning y conversion realizado con Unsloth. Se trata por tanto de un modelo conversacional denso de aproximadamente 4.022 millones de parametros, orientado a inferencia local mediante llama.cpp y Ollama.
+pulse-lm-qwen3-4b es un ajuste fino derivado de Qwen3-4B-Instruct-2507, publicado por el usuario BansiRPatanvadiya en Hugging Face. El modelo se distribuye exclusivamente en formato GGUF (cuantizacion Q4_K_M) tras un proceso de fine-tuning y conversion realizado con Unsloth. Se trata por tanto de un modelo conversacional denso de aproximadamente 4.022 millones de parametros, orientado a inferencia local mediante llama.cpp y Ollama.
 
 La relevancia de esta publicacion es limitada y practica: no introduce una arquitectura nueva, sino que empaqueta un ajuste sobre la base Qwen3-4B-Instruct-2507 en un formato listo para consumir con herramientas de inferencia local de bajo consumo de recursos. El repositorio incluye ademas un Modelfile de Ollama para su despliegue inmediato.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pulse-lm-qwen3-4b | ~4,02 B | No disponible en la model card | GGUF Q4_K_M | No disponible | HuggingFace |
-| Qwen3-4B-Instruct-2507 | ~4,02 B | 262.144 tokens (modelo base) | safetensors, GGUF | Apache-2.0 | HuggingFace |
-| Llama 3.2 3B Instruct | ~3,2 B | 128.000 tokens | safetensors, GGUF | Llama Community License | HuggingFace |
-| Gemma 3 4B IT | ~4 B | 128.000 tokens | safetensors, GGUF | Gemma Terms of Use | HuggingFace |
+| pulse-lm-qwen3-4b | ~4,02 B | No disponible en la model card | GGUF Q4_K_M | No disponible | Hugging Face |
+| Qwen3-4B-Instruct-2507 | ~4,02 B | 262.144 tokens (modelo base) | safetensors, GGUF | Apache-2.0 | Hugging Face |
+| Llama 3.2 3B Instruct | ~3,2 B | 128.000 tokens | safetensors, GGUF | Llama Community License | Hugging Face |
+| Gemma 3 4B IT | ~4 B | 128.000 tokens | safetensors, GGUF | Gemma Terms of Use | Hugging Face |
 
 Nota: los datos de los modelos comparativos corresponden a sus publicaciones oficiales; los de pulse-lm-qwen3-4b son los declarados en su repositorio.
 
@@ -85,7 +85,7 @@ Nota: los datos de los modelos comparativos corresponden a sus publicaciones ofi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BansiRPatanvadiya/pulse-lm-qwen3-4b
+- Hugging Face: https://huggingface.co/BansiRPatanvadiya/pulse-lm-qwen3-4b
 - Unsloth (framework de fine-tuning y conversion): https://github.com/unslothai/unsloth
 - llama.cpp (herramienta de inferencia): https://github.com/ggerganov/llama.cpp
 - Modelo base Qwen3-4B-Instruct-2507 (referencia): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

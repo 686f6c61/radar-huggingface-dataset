@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmniDoctor-Reranker-8B es un modelo de reranking (cross-encoder) publicado en HuggingFace por el usuario Salahuddin1234. Se trata de un modelo de 8.188.548.096 parametros (8,19 B) en formato safetensors, con un tamano de repositorio de 16,4 GB, licencia Apache-2.0 y pipeline declarado `text-ranking`. Los metadatos lo marcan como finetune de `Qwen/Qwen3-8B-Base`, mientras que la model card reproduce literalmente la documentacion de `Qwen/Qwen3-Reranker-8B` de Alibaba, incluida la tabla de la familia Qwen3 Embedding.
+OmniDoctor-Reranker-8B es un modelo de reranking (cross-encoder) publicado en Hugging Face por el usuario Salahuddin1234. Se trata de un modelo de 8.188.548.096 parametros (8,19 B) en formato safetensors, con un tamano de repositorio de 16,4 GB, licencia Apache-2.0 y pipeline declarado `text-ranking`. Los metadatos lo marcan como finetune de `Qwen/Qwen3-8B-Base`, mientras que la model card reproduce literalmente la documentacion de `Qwen/Qwen3-Reranker-8B` de Alibaba, incluida la tabla de la familia Qwen3 Embedding.
 
 El modelo resuelve el problema clasico de la segunda etapa de un pipeline RAG: dada una consulta y un conjunto de documentos recuperados por busqueda vectorial, reordena los candidatos por relevancia real, explotando la codificacion conjunta de pares consulta-documento. Frente a un bi-encoder, este enfoque es mas preciso pero computacionalmente mas caro, por lo que se usa tipicamente sobre 50-100 candidatos para quedarse con los 3-5 mejores. El nombre "OmniDoctor" sugiere un ajuste orientado al dominio medico, aunque no hay documentacion que lo confirme.
 
@@ -24,7 +24,7 @@ La relevancia practica es limitada por su estado actual: cero descargas y cero l
 | Capas | 36 (segun la tabla de la familia Qwen3 Embedding para el tamano 8B) |
 | Modelo base declarado | Qwen/Qwen3-8B-Base (tag `base_model:finetune`) |
 | Libreria | transformers; compatible con sentence-transformers (CrossEncoder) |
-| Fecha de creacion / actualizacion | 2026-09-30 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-30 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ Los unicos datos numericos disponibles pertenecen a la familia original de Qwen 
 - GPU profesionales: A100 (40/80 GB), H100, L40S y similares son adecuadas para bf16 en produccion.
 - GPU de consumo: cabe en RTX 4090 o RTX 3090 (24 GB) en bf16, aunque el margen se reduce con contextos cercanos a 32k; en tarjetas de 16 GB (RTX 4080, 4070 Ti Super) seria necesario cuantizar.
 - Opciones de despliegue: `sentence-transformers` con `CrossEncoder` (confirmado en la model card); vLLM, TGI y servidores de inferencia compatibles con tareas de scoring/reranking (no confirmado para este repositorio concreto); llama.cpp/Ollama solo si se generan conversiones GGUF, que no se declaran.
-- El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ Alternativas de otros fabricantes (BGE, Jina, Cohere Rerank, etc.): no disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Salahuddin1234/OmniDoctor-Reranker-8B
+- Modelo en Hugging Face: https://huggingface.co/Salahuddin1234/OmniDoctor-Reranker-8B
 - Modelo original de referencia: https://huggingface.co/Qwen/Qwen3-Reranker-8B
 - Familia de embeddings: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Blog de Qwen3 Embedding: https://qwenlm.github.io/blog/qwen3-embedding/

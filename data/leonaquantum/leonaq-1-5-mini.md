@@ -81,14 +81,14 @@ Salvedades declaradas por el autor: ARC-Challenge, ARC-Easy, BoolQ, PIQA, HellaS
 - Opciones de despliegue: exclusivamente el runtime Leona incluido (extension de fuente del runtime y pesos del circuito). No funciona con llama.cpp estandar, LM Studio ni Transformers tal cual. El despliegue se hace con `fetch.py`, `build.py --backend {metal|cuda|cpu|vulkan}` y `launch.py --server`.
 - Plataformas validadas: Linux/CUDA con checkpoint completo. macOS y Windows quedan pendientes de validacion completa; los objetivos de compilacion no equivalen a compatibilidad verificada.
 - Latencia y throughput estimados: no disponible.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace; el GGUF base se descarga aparte y se verifica automaticamente.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face; el GGUF base se descarga aparte y se verifica automaticamente.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento (benchmarks publicados) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Leona-Q 1.5 Mini | ~2.000 millones (base) + 395 KB de circuito | 131.072 tokens nativos; 4.096 por defecto en el launcher | Ver tabla de benchmarks (13 tareas, con subconjuntos exploratorios) | Apache 2.0 | HuggingFace, runtime propio, 0 descargas |
-| MiniCPM5-2B Q4_K_M (base) | ~2.000 millones | 131.072 tokens nativos | Linea base de la tabla anterior | Apache 2.0 (segun modelo base) | HuggingFace (openbmb/MiniCPM5-2B-GGUF) |
+| Leona-Q 1.5 Mini | ~2.000 millones (base) + 395 KB de circuito | 131.072 tokens nativos; 4.096 por defecto en el launcher | Ver tabla de benchmarks (13 tareas, con subconjuntos exploratorios) | Apache 2.0 | Hugging Face, runtime propio, 0 descargas |
+| MiniCPM5-2B Q4_K_M (base) | ~2.000 millones | 131.072 tokens nativos | Linea base de la tabla anterior | Apache 2.0 (segun modelo base) | Hugging Face (openbmb/MiniCPM5-2B-GGUF) |
 | Otras alternativas de ~2B (por ejemplo Qwen2.5-1.5B, Gemma-2-2B) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ Salvedades declaradas por el autor: ARC-Challenge, ARC-Easy, BoolQ, PIQA, HellaS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeonaQuantum/leonaq-1.5-mini
+- Modelo en Hugging Face: https://huggingface.co/LeonaQuantum/leonaq-1.5-mini
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-GGUF
 - Dataset de instrucciones: https://huggingface.co/datasets/databricks/databricks-dolly-15k
 - Dataset de razonamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k

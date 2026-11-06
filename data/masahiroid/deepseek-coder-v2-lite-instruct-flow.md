@@ -89,7 +89,7 @@ La comparativa relevante es frente a la build GGUF estándar del mismo autor: mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/DeepSeek-Coder-V2-Lite-Instruct-FLOW
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/DeepSeek-Coder-V2-Lite-Instruct-FLOW
 - Build GGUF estándar del mismo autor: https://huggingface.co/masahiroid/DeepSeek-Coder-V2-Lite-Instruct-Pyrite-2bit-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
 - Runtime FLOW Studio (GitHub): https://github.com/antennefrance/flow-studio

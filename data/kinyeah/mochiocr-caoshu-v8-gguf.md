@@ -18,7 +18,7 @@ La relevancia del modelo es de nicho: cubre un dominio muy específico (caligraf
 | Longitud de contexto | no especificada por el autor; el ejemplo de despliegue de la model card usa `--ctx-size 8192` |
 | Tipos de cuantización | Q4_K_M (modelo fusionado); F16 (proyector visual y adaptador LoRA) |
 | Idiomas soportados | chino en caracteres tradicionales para la tarea de reconocimiento; no se declaran otros idiomas |
-| Licencia | no declarada en los metadatos de HuggingFace; la model card indica que hereda la licencia del modelo base Qwen3-VL («rango compatible con Apache-2.0») y recomienda corrección humana |
+| Licencia | no declarada en los metadatos de Hugging Face; la model card indica que hereda la licencia del modelo base Qwen3-VL («rango compatible con Apache-2.0») y recomienda corrección humana |
 | Formato de pesos | GGUF para llama.cpp: `caoshu-v8-merged-Q4_K_M.gguf`, `caoshu-v8-merged-mmproj-F16.gguf`, `caoshu-v8-lora-f16.gguf` |
 | Entrada | un recorte de columna vertical única (escritura de arriba abajo), lado corto ≥ 300 px, lado largo ≤ 3200 px |
 | Salida | cadena continua de caracteres chinos tradicionales, sin puntuación y sin segmentación |
@@ -81,7 +81,7 @@ El autor añade que en columnas de 行草 ordenada y caracteres comunes la exact
 | mochiocr-caoshu-v8 (este) | ~8B (LoRA de 43,6 M) | 8192 en el ejemplo de despliegue | 34,7 % | hereda Qwen3-VL | GGUF, 0 descargas, 0 likes |
 | caoshu-v9 / v10 / v11 | ~8B (misma base) | no disponible | 35,0 % / 34,1 % / 34,7 % | hereda Qwen3-VL | no publicados en este repositorio |
 | Prueba con base 32B (descartada) | ~32B | no disponible | 44,4 % | no disponible | descartada por el autor |
-| Qwen3-VL-8B-Instruct base | ~8B | no disponible | no disponible (no evaluado sobre este corpus) | Qwen3-VL, compatible con Apache-2.0 según la model card | público en HuggingFace |
+| Qwen3-VL-8B-Instruct base | ~8B | no disponible | no disponible (no evaluado sobre este corpus) | Qwen3-VL, compatible con Apache-2.0 según la model card | público en Hugging Face |
 | OCR genéricos para chino (p. ej. GOT-OCR2.0, dots.ocr) | no disponible | no disponible | no disponible (sin evaluación publicada sobre `gold_test40`) | no disponible | no disponible |
 
 No existe una comparación publicada contra OCR genéricos sobre este corpus, por lo que la única referencia cuantitativa disponible es la comparación interna entre versiones del propio proyecto. Resulta llamativo que la prueba con un modelo de 32B obtuviera peor CER (44,4 %) que el de 8B, lo que sugiere que el cuello de botella está en los datos de ajuste y no en la capacidad del modelo.
@@ -94,14 +94,14 @@ No existe una comparación publicada contra OCR genéricos sobre este corpus, po
 - La salida es texto sin puntuación y solo en caracteres tradicionales; no hay detección de columnas, orden de lectura ni normalización a simplificado.
 - Riesgo de alucinación por memorización: al entrenarse con caligrafías célebres y textos canónicos, el modelo puede «recitar» poemas o pasajes completos en lugar de transcribir lo visible. El prompt del autor lo prohíbe explícitamente, lo que indica que el problema se observó durante el desarrollo.
 - Corpus de entrenamiento muy reducido (1 215 columnas), con posible sobreajuste al estilo y al léxico de las colecciones empleadas (故宮 y hcsartmuseum), y cobertura limitada de variantes gráficas y vocabulario infrecuente.
-- Licencia ambigua: los metadatos de HuggingFace no declaran licencia y la model card remite a los términos de Qwen3-VL con una fórmula poco precisa («rango compatible con Apache-2.0»). Antes de un uso comercial hay que verificar la licencia del modelo base.
+- Licencia ambigua: los metadatos de Hugging Face no declaran licencia y la model card remite a los términos de Qwen3-VL con una fórmula poco precisa («rango compatible con Apache-2.0»). Antes de un uso comercial hay que verificar la licencia del modelo base.
 - Adopción nula: 0 descargas y 0 likes en el momento del análisis, sin pruebas independientes ni informes de terceros.
 - Inconsistencias en la ficha: el tamaño del repositorio (1,2 GB) no cuadra con la suma de los ficheros declarados (~5,9 GB) y el recuento de parámetros de safetensors (43,6 M) corresponde al adaptador LoRA, no al modelo completo.
 - El enlace al pipeline MochiOCR aparece truncado en la model card, por lo que no es posible reproducir el flujo completo de detección de columnas con la información publicada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kinyeah/mochiocr-caoshu-v8-gguf
+- Modelo en Hugging Face: https://huggingface.co/kinyeah/mochiocr-caoshu-v8-gguf
 - Pipeline MochiOCR: enlace truncado en la model card (https://github.com/), no disponible
 - Fuente de datos de caligrafía: https://hcsartmuseum.com (museo de caligrafía Hos)
 - Resultados de búsqueda web: https://huggingface.co/calcuis/mochi-gguf, https://www.modelscope.cn/models/calcuis/mochi-gguf y https://model.aibase.com/models/details/1915694034221424641 — corresponden a un proyecto distinto (Mochi, generación de vídeo texto-a-vídeo) y no guardan relación con este modelo OCR

@@ -100,7 +100,7 @@ La comparacion se limita a parametros de arquitectura, formato, idioma y licenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/kb-whisper-large-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/kb-whisper-large-ggml
 - Modelo base: https://huggingface.co/KBLab/kb-whisper-large
 - Perfil del autor del reempaquetado: https://huggingface.co/JoaoZaokk
 - Motor de inferencia whisper.cpp: https://github.com/ggml-org/whisper.cpp

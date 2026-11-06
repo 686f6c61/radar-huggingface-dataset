@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Comfy-Org/void-model
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Comfy-Org/void-model
 - Modelo original de Netflix: https://huggingface.co/netflix/void-model
 - Repositorio de RAFT (flujo optico): https://github.com/princeton-vl/raft
 - Modelo CogVideoX-2b (base del VAE): https://huggingface.co/zai-org/CogVideoX-2b

@@ -98,7 +98,7 @@ No se dispone de datos comparativos con otros draft models de decodificación es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shanjiaz/qwen3_5_4b_perfectblend_regen_dspark
+- Modelo en Hugging Face: https://huggingface.co/shanjiaz/qwen3_5_4b_perfectblend_regen_dspark
 - Dataset de entrenamiento: https://huggingface.co/datasets/shanjiaz/qwen3_5_4b_perfectblend_regen
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio DeepSpec (referencia de arquitectura): https://github.com/deepseek-ai/DeepSpec

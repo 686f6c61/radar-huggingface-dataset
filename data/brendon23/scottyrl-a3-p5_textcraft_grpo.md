@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottyrl-a3-p5_textcraft_grpo | LoRA rank 32 sobre Qwen3.5-4B | no disponible | Adaptador PEFT | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-4B | ~4B | no disponible | Modelo base denso | no disponible | HuggingFace |
-| Otros adaptadores scottyrl del curso (p. ej. otras ejecuciones A3) | LoRA sobre Qwen3.5-4B | no disponible | Adaptador PEFT | no disponible | HuggingFace |
+| scottyrl-a3-p5_textcraft_grpo | LoRA rank 32 sobre Qwen3.5-4B | no disponible | Adaptador PEFT | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-4B | ~4B | no disponible | Modelo base denso | no disponible | Hugging Face |
+| Otros adaptadores scottyrl del curso (p. ej. otras ejecuciones A3) | LoRA sobre Qwen3.5-4B | no disponible | Adaptador PEFT | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Brendon23/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/Brendon23/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Curso 11-768 (AI Agents, CMU): no disponible en la información proporcionada
 - Framework scottyrl: no disponible en la información proporcionada

@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bloomer010/Ling-3.0-flash-REAP384-97B-A5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bloomer010/Ling-3.0-flash-REAP384-97B-A5B-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Paper REAP: https://arxiv.org/abs/2510.13999
 - PR de llama.cpp para bailingmoe3: https://github.com/ggml-org/llama.cpp/pull/26608

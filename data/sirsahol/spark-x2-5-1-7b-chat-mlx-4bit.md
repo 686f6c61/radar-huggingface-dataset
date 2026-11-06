@@ -104,7 +104,7 @@ Como referencia de categoria, los modelos compactos comparables por tamano seria
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/SirSahOl/Spark-X2.5-1.7B-chat-mlx-4bit
+- Repositorio Hugging Face de este modelo: https://huggingface.co/SirSahOl/Spark-X2.5-1.7B-chat-mlx-4bit
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Variante 8-bit MLX: https://huggingface.co/SirSahOl/Spark-X2.5-1.7B-chat-mlx-8bit
 - Variante 16-bit MLX: https://huggingface.co/SirSahOl/Spark-X2.5-1.7B-chat-mlx-16bit

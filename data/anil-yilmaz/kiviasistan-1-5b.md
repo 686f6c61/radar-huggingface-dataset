@@ -86,7 +86,7 @@ Advertencia sobre esta tabla: la puntuación de 90 se asigna de forma uniforme a
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| KiviAsistan-1.5B | ~1,54 B | No documentado (base: 32.768) | No disponible | Asistente vertical de e-commerce en turco, fine-tuning QLoRA | HuggingFace, 0 descargas |
+| KiviAsistan-1.5B | ~1,54 B | No documentado (base: 32.768) | No disponible | Asistente vertical de e-commerce en turco, fine-tuning QLoRA | Hugging Face, 0 descargas |
 | Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 tokens | Apache 2.0 | Modelo instruct generalista multilingue | Ampliamente disponible y auditado |
 | Llama 3.2 1B Instruct | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | Instruct generalista, foco multilingue | Ampliamente disponible |
 | Gemma 2 2B IT | ~2,6 B | 8.192 tokens | Gemma Terms of Use | Instruct generalista ligero | Ampliamente disponible |
@@ -104,12 +104,12 @@ No se dispone de resultados de benchmarks comparables entre KiviAsistan y estas 
 - **Licencia no disponible**: no se especifica licencia en el repositorio. Sin una licencia explícita, el uso comercial es jurídicamente arriesgado en la mayoría de jurisdicciones, con independencia de que el modelo base Qwen2.5 sea Apache 2.0 (habría que verificar que los términos del fine-tuning no añaden restricciones).
 - **Sin validación comunitaria**: 0 descargas y 0 likes en el momento de la consulta. No hay informes de terceros, ni issues, ni reproducciones independientes.
 - **Documentación insuficiente**: el informe no detalla hiperparámetros de entrenamiento, composición del dataset, proceso de generación de los ejemplos sintéticos ni métricas de retención de capacidades del modelo base. Tampoco se documenta si se produjo olvido catastrófico tras el ajuste.
-- **Metadatos anómalos**: la fecha de creación del repositorio indicada en HuggingFace (2026-10-20) es posterior a la fecha actual, lo que sugiere un error de metadatos o un repositorio de pruebas. Conviene tratarlo como un artefacto no mantenido.
+- **Metadatos anómalos**: la fecha de creación del repositorio indicada en Hugging Face (2026-10-20) es posterior a la fecha actual, lo que sugiere un error de metadatos o un repositorio de pruebas. Conviene tratarlo como un artefacto no mantenido.
 - **Formato propietario**: el marcador de estilo que el modelo debe emitir al final de cada respuesta no aporta valor funcional y consume tokens; además, ejemplos del propio informe muestran que se emite en respuestas claramente erróneas, lo que puede dar una falsa sensación de corrección en un sistema con verificación automática por formato.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anil-yilmaz/KiviAsistan-1.5B
+- Modelo en Hugging Face: https://huggingface.co/Anil-yilmaz/KiviAsistan-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper de la familia Qwen2.5: no disponible en la información proporcionada
 - Repositorio de código, demo o dataset: no disponibles en la información proporcionada

@@ -4,7 +4,7 @@
 
 `nvidia/cosmos3-nano-libero10-sdg-export-D2_s43` es un checkpoint de política visiomotora (VLA, vision-language-action) publicado por NVIDIA como derivado de `nvidia/Cosmos3-Nano`. No es un modelo de propósito general: es el resultado de un posentrenamiento sobre LIBERO-10, el conjunto de referencia de manipulación robótica de mesa, y corresponde a la semilla de entrenamiento 43 de una única celda (D2_s43) de un estudio controlado sobre datos sintéticos descrito en la receta «Restyle LIBERO-10 Demonstrations with Cosmos3-Nano-Sim-Transfer and Measure the Gain Against a Matched Control» del Cosmos Cookbook. Su interés es, por tanto, metodológico: sirve para medir si el reestilizado de demostraciones mejora la robustez de la política frente a su control emparejado.
 
-El modelo tiene 15.173.136.576 parámetros (unos 15,17 mil millones) y se distribuye como export del checkpoint de entrenamiento en safetensors bf16 con pesos EMA, siete shards y unos 30 GB (31,5 GB de repositorio). Se carga mediante el servidor de políticas de `cosmos-framework` v1.2.2 (commit `c23e51f2`), no mediante pipelines estándar de HuggingFace Transformers.
+El modelo tiene 15.173.136.576 parámetros (unos 15,17 mil millones) y se distribuye como export del checkpoint de entrenamiento en safetensors bf16 con pesos EMA, siete shards y unos 30 GB (31,5 GB de repositorio). Se carga mediante el servidor de políticas de `cosmos-framework` v1.2.2 (commit `c23e51f2`), no mediante pipelines estándar de Hugging Face Transformers.
 
 La relevancia práctica es doble. Por un lado, reporta una tasa de éxito del 93,3 ± 0,7 % en escenas estándar de LIBERO-10 y del 85,5 ± 2,5 % en escenas perturbadas (iluminación, texturas, skybox y jitter de cámara), lo que cuantifica la brecha sim-to-sim. Por otro, la propia model card advierte de que las diferencias inferiores a 2,5 puntos quedan dentro de la dispersión entre semillas de entrenamiento, de modo que el checkpoint solo es interpretable junto a su control.
 
@@ -76,9 +76,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parámetros | Contexto | LIBERO-10 estándar | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cosmos3-nano-libero10-sdg-export-D2_s43` (este) | 15,17 B | No disponible | 93,3 ± 0,7 % | NVIDIA Open Model License | HuggingFace, 14 descargas |
+| `cosmos3-nano-libero10-sdg-export-D2_s43` (este) | 15,17 B | No disponible | 93,3 ± 0,7 % | NVIDIA Open Model License | Hugging Face, 14 descargas |
 | Control R(seed 43) | No disponible | No disponible | No disponible | Derivado de NVIDIA Open Model License | No publicado como checkpoint en la información disponible |
-| `nvidia/Cosmos3-Nano` (base, rev. `e59a53c2`) | No disponible | No disponible | No disponible (no es una política posentrenada en LIBERO-10) | NVIDIA Open Model License | HuggingFace |
+| `nvidia/Cosmos3-Nano` (base, rev. `e59a53c2`) | No disponible | No disponible | No disponible (no es una política posentrenada en LIBERO-10) | NVIDIA Open Model License | Hugging Face |
 | Otras familias VLA de manipulación (OpenVLA, π0, GR00T N1) | No disponible en la información suministrada | No disponible | No disponible | Varía según modelo | Varía según modelo |
 
 La comparación relevante dentro del material proporcionado es la del checkpoint frente a su control emparejado, no frente a otras familias: la model card insiste en que una celda reestilizada solo es interpretable junto a su duplicado de control y que diferencias inferiores a 2,5 puntos están dentro de la dispersión entre semillas. No se dispone de datos de benchmarks de otras familias VLA en la información suministrada para establecer una comparación numérica fiable.
@@ -100,7 +100,7 @@ La comparación relevante dentro del material proporcionado es la del checkpoint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-D2_s43
+- Modelo en Hugging Face: https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-D2_s43
 - Modelo base `nvidia/Cosmos3-Nano`: https://huggingface.co/nvidia/Cosmos3-Nano
 - Licencia (enlace indicado por el autor): https://huggingface.co/nvidia/Cosmos3-Nano
 - Dataset LIBERO-10 en formato LeRobot: `nvidia/LIBERO_LeRobot_v3` (referenciado en la model card; no se proporciona URL completa)

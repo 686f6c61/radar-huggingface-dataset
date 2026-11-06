@@ -4,7 +4,7 @@
 
 MOSS-Audio-4B-Instruct es un modelo abierto de comprensión de audio publicado por el equipo OpenMOSS junto con MOSI.AI y el Shanghai Innovation Institute (SII). Forma parte de una familia de cuatro variantes (4B y 8B, cada una en versión Instruct y Thinking) y su objetivo es unificar en un único modelo tareas que tradicionalmente se resolvían con pipelines separados: reconocimiento de habla con marcas de tiempo, análisis de hablante y emoción, descripción de sonido ambiental, comprensión musical, respuesta a preguntas sobre audio y razonamiento multi-paso sobre el contenido acústico. La variante Instruct está optimizada para seguir instrucciones directamente, mientras que las variantes Thinking añaden cadena de pensamiento.
 
-Técnicamente no es un modelo de audio puro ni un LLM con un adaptador estándar: combina un codificador de audio propio, entrenado desde cero (MOSS-Audio-Encoder), que produce representaciones temporales a 12,5 Hz, un adaptador de modalidad y un modelo de lenguaje grande que genera texto de forma autorregresiva. El repositorio de HuggingFace declara 5.222.820.736 parámetros totales en safetensors (aproximadamente 5,2 mil millones, por encima del "4B" del nombre comercial) y un tamaño de repo de 10,5 GB, coherente con pesos en precisión de 16 bits.
+Técnicamente no es un modelo de audio puro ni un LLM con un adaptador estándar: combina un codificador de audio propio, entrenado desde cero (MOSS-Audio-Encoder), que produce representaciones temporales a 12,5 Hz, un adaptador de modalidad y un modelo de lenguaje grande que genera texto de forma autorregresiva. El repositorio de Hugging Face declara 5.222.820.736 parámetros totales en safetensors (aproximadamente 5,2 mil millones, por encima del "4B" del nombre comercial) y un tamaño de repo de 10,5 GB, coherente con pesos en precisión de 16 bits.
 
 Su relevancia para un desarrollador hispanohablante es doble: por un lado, la licencia Apache-2.0 permite uso comercial sin restricciones adicionales declaradas; por otro, el modelo documenta despliegue con SGLang y una aplicación Gradio, lo que facilita su integración en prototipos. Como contrapartida, los idiomas declarados son únicamente inglés y chino, y no se han publicado resultados de benchmarks en la información disponible, así que cualquier evaluación de calidad en castellano tendrá que hacerse por cuenta propia.
 
@@ -13,7 +13,7 @@ Su relevancia para un desarrollador hispanohablante es doble: por un lado, la li
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Modular: codificador de audio (MOSS-Audio-Encoder, entrenado desde cero, salida a 12,5 Hz) + adaptador de modalidad + modelo de lenguaje autorregresivo. Inyección cross-layer tipo DeepStack y marcadores temporales |
-| Parametros totales | 5.222.820.736 (pesos en safetensors, según metadatos de HuggingFace) |
+| Parametros totales | 5.222.820.736 (pesos en safetensors, según metadatos de Hugging Face) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (el repositorio solo publica safetensors; no se documentan GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | Inglés (en) y chino (zh) |
@@ -88,14 +88,14 @@ Nota: los datos de los modelos comparados provienen de conocimiento general y no
 - Identificación de hablante y análisis de emoción: son tareas con implicaciones de privacidad y con precisión potencialmente desigual entre grupos demográficos; no se documentan evaluaciones de sesgo ni de equidad.
 - Sesgos conocidos: no disponibles. El model card no incluye sección de sesgos ni de usos prohibidos.
 - Licencia: Apache-2.0 permite uso comercial sin restricciones adicionales declaradas, pero el modelo se distribuye con `custom_code`, así que conviene revisar ese código antes de desplegarlo y verificar la procedencia real de los pesos.
-- Trazabilidad del repositorio: el autor en HuggingFace figura como "Jinstudio", mientras que el model card atribuye el modelo a OpenMOSS, MOSI.AI y SII; el repositorio tiene 0 descargas y 0 likes, y la fecha de creación en HuggingFace (2026-10-18) es posterior a la fecha de anuncio del lanzamiento en el model card (2026-04-13). Antes de usarlo en producción, conviene confirmar que se trata de la publicación oficial y no de una copia.
+- Trazabilidad del repositorio: el autor en Hugging Face figura como "Jinstudio", mientras que el model card atribuye el modelo a OpenMOSS, MOSI.AI y SII; el repositorio tiene 0 descargas y 0 likes, y la fecha de creación en Hugging Face (2026-10-18) es posterior a la fecha de anuncio del lanzamiento en el model card (2026-04-13). Antes de usarlo en producción, conviene confirmar que se trata de la publicación oficial y no de una copia.
 - Longitud de contexto no documentada: no se puede planificar el procesamiento de audios de larga duración (reuniones de una hora, por ejemplo) sin determinar experimentalmente el límite y la estrategia de troceado.
 - Cuantizaciones no publicadas: no hay GGUF ni formatos de bajo bit, lo que limita el despliegue en GPUs de gama baja y en CPU.
 - Documentación incompleta: blog y paper están anunciados pero no disponibles, y la información sobre datos de entrenamiento, RLHF/DPO y evaluación no está publicada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinstudio/MOSS-Audio-4B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Jinstudio/MOSS-Audio-4B-Instruct
 - Colección MOSS-Audio (OpenMOSS-Team): https://huggingface.co/collections/OpenMOSS-Team/moss-audio
 - MOSI.AI: https://mosi.cn/#hero
 - OpenMOSS: https://www.open-moss.com/

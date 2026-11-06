@@ -4,7 +4,7 @@
 
 El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_KL-SPECIAL_SPLIT` es una cuantización GGUF del modelo Qwen3.8-27B, desarrollada por el usuario Thireus mediante su propia herramienta de cuantización (GGUF Tool Suite). El modelo base, Qwen3.8-27B, es un modelo denso de 27 mil millones de parámetros lanzado por el equipo Qwen de Alibaba, con soporte multimodal nativo y orientado a tareas de codificación, flujos agénticos y automatización de oficina. Esta variante concreta aplica una cuantización IQ2_KL, un esquema de baja precisión (aproximadamente 2-3 bits por peso) diseñado para reducir drásticamente el uso de memoria y permitir la ejecución en hardware local limitado.
 
-La relevancia de esta ficha radica en que la cuantización IQ2_KL es una de las más agresivas disponibles, lo que la hace adecuada para entornos con VRAM muy reducida, aunque a costa de una posible pérdida de fidelidad en las respuestas. El repositorio de HuggingFace no incluye una model card detallada más allá de la licencia MIT, por lo que gran parte de las especificaciones técnicas del modelo base deben inferirse de fuentes externas, que tampoco se han podido verificar en profundidad. Se recomienda tratar los datos no confirmados como provisionales.
+La relevancia de esta ficha radica en que la cuantización IQ2_KL es una de las más agresivas disponibles, lo que la hace adecuada para entornos con VRAM muy reducida, aunque a costa de una posible pérdida de fidelidad en las respuestas. El repositorio de Hugging Face no incluye una model card detallada más allá de la licencia MIT, por lo que gran parte de las especificaciones técnicas del modelo base deben inferirse de fuentes externas, que tampoco se han podido verificar en profundidad. Se recomienda tratar los datos no confirmados como provisionales.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ No se dispone de informacion detallada sobre la arquitectura interna de esta cua
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas, y las fuentes externas mencionan evaluaciones del modelo base, pero no de esta cuantizacion especifica. No se dispone de datos comparativos con otras cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas, y las fuentes externas mencionan evaluaciones del modelo base, pero no de esta cuantizacion especifica. No se dispone de datos comparativos con otras cuantizaciones.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_KL-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_KL-SPECIAL_SPLIT
 - Repositorio relacionado (BF16): https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Repositorio oficial del modelo base (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Articulo de explainx.ai: https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026

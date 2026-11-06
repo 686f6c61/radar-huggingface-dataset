@@ -32,7 +32,7 @@ La contribución de mradermacher se limita a la cuantización estática en GGUF.
 - Generación de texto conversacional en inglés, heredada del modelo base Qwen2.5-14B.
 - Razonamiento y respuesta a instrucciones, presumiblemente con un tono más natural o "humano" por el ajuste Humanizer.
 - Capacidad de código y matemáticas heredada del modelo base, aunque no verificada en esta variante.
-- Soporte de conversación multi-turno (tag "conversational" en HuggingFace).
+- Soporte de conversación multi-turno (tag "conversational" en Hugging Face).
 - Compatibilidad con endpoints (tag "endpoints_compatible").
 - Capacidades multilingües limitadas al inglés declarado.
 - No se documenta soporte explícito de tool calling, function calling, agentes ni modos de razonamiento extendido en esta variante.
@@ -89,7 +89,7 @@ Nota: los datos de contexto y licencia de los modelos comparativos corresponden 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-14B-Humanizer-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-14B-Humanizer-GGUF
 - Modelo base del fine-tune: https://huggingface.co/barmyman/Qwen2.5-14B-Humanizer
 - Página de descargas del autor: https://hf.tst.eu/model#Qwen2.5-14B-Humanizer-GGUF
 - README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

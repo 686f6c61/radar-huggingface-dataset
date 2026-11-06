@@ -97,6 +97,6 @@ No se dispone de resultados de benchmarks comparables entre estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/regnant-io/kw5-230M-instruct
+- Modelo en Hugging Face: https://huggingface.co/regnant-io/kw5-230M-instruct
 - Modelo base: https://huggingface.co/regnant-io/kw5-230M
 - Sitio del desarrollador: https://www.regnant.io/

@@ -4,7 +4,7 @@
 
 LFM3-1.7B es un modelo de lenguaje de 1.730 millones de parametros desarrollado por Liquid AI, publicado originalmente como `LiquidAI/LFM3-1.7B` y redistribuido en este repositorio por el usuario `tanishq5`. Se trata de un checkpoint post-entrenado, solo texto, orientado a agentes locales y aplicaciones especializadas sobre dispositivos de borde. Su propuesta central es ofrecer una ventana de contexto de 256.000 tokens en un modelo que, cuantizado a 4 bits, ocupa aproximadamente 1 GB de memoria, lo que lo hace viable en telefonos moviles y portatiles convencionales.
 
-La arquitectura es un transformer hibrido de tres componentes (denominado tri-hybrid por el autor): 24 capas compuestas por 13 convoluciones cortas con compuerta, 5 capas de atencion de ventana deslizante y 6 capas de atencion global. Esta mezcla reduce el coste computacional del contexto largo frente a un transformer denso clasico, manteniendo capacidad de recuperacion global de informacion. El modelo se distribuye con licencia LFM 1.0 (marcada como `other` en HuggingFace) y soporta 16 idiomas, incluido el castellano.
+La arquitectura es un transformer hibrido de tres componentes (denominado tri-hybrid por el autor): 24 capas compuestas por 13 convoluciones cortas con compuerta, 5 capas de atencion de ventana deslizante y 6 capas de atencion global. Esta mezcla reduce el coste computacional del contexto largo frente a un transformer denso clasico, manteniendo capacidad de recuperacion global de informacion. El modelo se distribuye con licencia LFM 1.0 (marcada como `other` en Hugging Face) y soporta 16 idiomas, incluido el castellano.
 
 Es relevante ahora porque combina dos tendencias del ecosistema open source: modelos pequenos optimizados para inferencia en dispositivo y entrenamiento especifico para entornos agente (Hermes Agent, Pi, OpenClaw). Frente a alternativas densas de tamano similar, su interes esta en el contexto de 256K y en la facilidad de especializacion mediante fine-tuning en una sola GPU.
 
@@ -18,7 +18,7 @@ Es relevante ahora porque combina dos tendencias del ecosistema open source: mod
 | Longitud de contexto | 256.000 tokens (entrada + salida) |
 | Tipos de cuantizacion | 4 bits mencionado por el autor; no se detallan otros formatos en la informacion disponible |
 | Idiomas soportados | Ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, castellano, vietnamita, tailandes, indonesio, hindi, ruso, polaco |
-| Licencia | LFM 1.0 (`lfm1.0`, etiquetada como `other` en HuggingFace) |
+| Licencia | LFM 1.0 (`lfm1.0`, etiquetada como `other` en Hugging Face) |
 | Formato de pesos | Safetensors (repo de 3,5 GB); requiere `trust_remote_code` por `custom_code` |
 | Vocabulario | 128.000 tokens |
 | Tipo de checkpoint | Post-entrenado, solo texto |
@@ -85,7 +85,7 @@ La comparativa se limita a datos publicos de cada familia; no se dispone de resu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tanishq5/LFM3-1.7B
+- Repositorio Hugging Face: https://huggingface.co/tanishq5/LFM3-1.7B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Modelo oficial post-entrenado: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Coleccion LFM3: https://huggingface.co/collections/LiquidAI/lfm3

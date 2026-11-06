@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yoloX-cad-obb-01 es un detector de objetos con cajas orientadas (oriented bounding boxes, OBB) desarrollado por el usuario sonspeed y publicado en HuggingFace. Se trata de un checkpoint de etapa 1 concebido explicitamente como red de propuesta de regiones (region proposal network) para simbolos de planos CAD: todas las clases de simbolo se colapsan en una unica clase `0: symbol`, de modo que la funcion de perdida se concentra en la caja, la DFL y el angulo en lugar de en la clasificacion fina. El objetivo declarado del autor es maximizar el recall, delegando la clasificacion final de los recortes a una segunda etapa posterior.
+yoloX-cad-obb-01 es un detector de objetos con cajas orientadas (oriented bounding boxes, OBB) desarrollado por el usuario sonspeed y publicado en Hugging Face. Se trata de un checkpoint de etapa 1 concebido explicitamente como red de propuesta de regiones (region proposal network) para simbolos de planos CAD: todas las clases de simbolo se colapsan en una unica clase `0: symbol`, de modo que la funcion de perdida se concentra en la caja, la DFL y el angulo en lugar de en la clasificacion fina. El objetivo declarado del autor es maximizar el recall, delegando la clasificacion final de los recortes a una segunda etapa posterior.
 
 La arquitectura combina un backbone CSPDarknet de la variante YOLOX-m con un cuello PAFPN y una cabeza OBB de Ultralytics, trabajando a una resolucion de entrada de 640 pixeles. El repositorio ocupa 0,2 GB e incluye el fichero de pesos `best.pt`, consumible directamente con la libreria `ultralytics` mediante `YOLO('best.pt')` y `task='obb'`. El autor indica que el entrenamiento se realizo sin mosaic, mixup, rotacion, shear, perspectiva, flip ni erasing, lo que sugiere un ajuste deliberado para no distorsionar la geometria de los simbolos tecnicos.
 
@@ -80,10 +80,10 @@ No se dispone de datos publicados de este checkpoint (metricas, parametros exact
 
 | Modelo | Arquitectura | Clases | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yoloX-cad-obb-01 (este) | YOLOX-m + PAFPN + cabeza OBB | 1 (`symbol`) | 640 x 640 | no disponible | HuggingFace, 0 descargas |
+| yoloX-cad-obb-01 (este) | YOLOX-m + PAFPN + cabeza OBB | 1 (`symbol`) | 640 x 640 | no disponible | Hugging Face, 0 descargas |
 | YOLOv8-OBB (familia Ultralytics) | CSPDarknet + C2f + cabeza OBB | configurable (p. ej. DOTA) | configurable, tipicamente 1024 | AGPL-3.0 (con licencia comercial de pago) | repositorio oficial Ultralytics |
 | YOLO11-OBB (familia Ultralytics) | backbone C3k2 + cabeza OBB | configurable | configurable | AGPL-3.0 (con licencia comercial de pago) | repositorio oficial Ultralytics |
-| RT-DETR (variantes con OBB) | transformer end-to-end | configurable | configurable | Apache-2.0 en variantes de referencia | HuggingFace / repositorios oficiales |
+| RT-DETR (variantes con OBB) | transformer end-to-end | configurable | configurable | Apache-2.0 en variantes de referencia | Hugging Face / repositorios oficiales |
 
 La diferencia principal de este checkpoint no es el rendimiento, sino su proposito: es un detector mono-clase de etapa 1 para un dominio muy concreto (simbologia CAD) y no una solucion generalista de deteccion orientada.
 
@@ -102,7 +102,7 @@ La diferencia principal de este checkpoint no es el rendimiento, sino su proposi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sonspeed/yoloX-cad-obb-01
+- Modelo en Hugging Face: https://huggingface.co/sonspeed/yoloX-cad-obb-01
 - Repositorio de Ultralytics (libreria declarada): https://github.com/ultralytics/ultralytics
 - Documentacion de Ultralytics sobre tareas OBB: https://docs.ultralytics.com/tasks/obb/
 - Paper original de YOLOX (arquitectura base): https://arxiv.org/abs/2107.08430

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B-OT3-GeneralReplay-GSM8K256-step1250-20261017 es un checkpoint experimental publicado por el usuario Rawrou010724 en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino de un ajuste completo (full-parameter) de Qwen/Qwen3-1.7B mediante destilación on-policy (OPD, on-policy distillation) usando como profesor un Qwen3-8B congelado. El resultado es un modelo de generación de texto de 1.720.574.976 parámetros (1,72 mil millones) en formato safetensors, con un tamaño de repositorio de 6,9 GB.
+Qwen3-1.7B-OT3-GeneralReplay-GSM8K256-step1250-20261017 es un checkpoint experimental publicado por el usuario Rawrou010724 en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de un ajuste completo (full-parameter) de Qwen/Qwen3-1.7B mediante destilación on-policy (OPD, on-policy distillation) usando como profesor un Qwen3-8B congelado. El resultado es un modelo de generación de texto de 1.720.574.976 parámetros (1,72 mil millones) en formato safetensors, con un tamaño de repositorio de 6,9 GB.
 
 El interés del artefacto es metodológico más que de producto: documenta un experimento de destilación on-policy con replay de SFT sobre un dataset general (No Robots) para contrarrestar el olvido catastrófico que provoca el entrenamiento centrado en matemáticas. La model card reporta una validación congelada sobre 256 preguntas de GSM8K en modo greedy sin thinking, con una precisión inicial del 78,125 % en el alumno original y un 80,078 % en el paso 1250 (mejor valor: 80,469 % en el paso 725).
 
@@ -78,11 +78,11 @@ Datos de parametros, contexto y licencia tomados de las fichas oficiales de cada
 
 | Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Qwen3-1.7B OPD step 1250) | 1,72 B | No disponible (base: 32.768) | 80,078 % (GSM8K-256, no-thinking) | No declarada | HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B (base) | 1,72 B | 32.768 | No publicado en esta ficha | Apache-2.0 | HuggingFace, ampliamente distribuido |
-| Qwen/Qwen3-4B | 4 B | 32.768 | No disponible en esta ficha | Apache-2.0 | HuggingFace |
-| Llama-3.2-1B | 1,24 B | 128.000 | No disponible en esta ficha | Llama 3.2 Community License | HuggingFace |
-| Gemma-3-1B | 1 B | 32.768 | No disponible en esta ficha | Gemma Terms of Use | HuggingFace |
+| Este checkpoint (Qwen3-1.7B OPD step 1250) | 1,72 B | No disponible (base: 32.768) | 80,078 % (GSM8K-256, no-thinking) | No declarada | Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B (base) | 1,72 B | 32.768 | No publicado en esta ficha | Apache-2.0 | Hugging Face, ampliamente distribuido |
+| Qwen/Qwen3-4B | 4 B | 32.768 | No disponible en esta ficha | Apache-2.0 | Hugging Face |
+| Llama-3.2-1B | 1,24 B | 128.000 | No disponible en esta ficha | Llama 3.2 Community License | Hugging Face |
+| Gemma-3-1B | 1 B | 32.768 | No disponible en esta ficha | Gemma Terms of Use | Hugging Face |
 
 La comparacion relevante para el caso de uso es contra Qwen3-1.7B sin destilar: este checkpoint anade +1,953 puntos en GSM8K-256 a cambio de un riesgo no medido de regresion en tareas generales, que el replay pretende mitigar pero que no se ha cuantificado en la model card.
 
@@ -102,7 +102,7 @@ La comparacion relevante para el caso de uso es contra Qwen3-1.7B sin destilar: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rawrou010724/Qwen3-1.7B-OT3-GeneralReplay-GSM8K256-step1250-20261017
+- Modelo en Hugging Face: https://huggingface.co/Rawrou010724/Qwen3-1.7B-OT3-GeneralReplay-GSM8K256-step1250-20261017
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Directorio `experiment/` del repositorio: configuraciones resueltas, comprobaciones, metricas y respuestas de validacion (accesible desde la pestana Files del modelo)
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada

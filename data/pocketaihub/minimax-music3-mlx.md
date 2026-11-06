@@ -73,7 +73,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace del port: https://huggingface.co/PocketAiHub/MiniMax-Music3-MLX
+- Repositorio Hugging Face del port: https://huggingface.co/PocketAiHub/MiniMax-Music3-MLX
 - Modelo base MiniMax-Music3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Licencia del modelo: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
 - Repack de pesos de Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-Music-3/tree/6444666eb6edfb2c7fcab5f8b81da8b84b4b17b6

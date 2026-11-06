@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikolaizhukov/alter-randomizer` es un repositorio alojado en HuggingFace bajo el identificador del usuario `nikolaizhukov`. La model card publicada es prácticamente vacía: se limita a declarar una licencia de tipo `other` con un enlace a un fichero `LICENSE` que no aporta metadatos adicionales. No se especifica arquitectura, tamaño, pipeline, idiomas ni propósito funcional del artefacto.
+`nikolaizhukov/alter-randomizer` es un repositorio alojado en Hugging Face bajo el identificador del usuario `nikolaizhukov`. La model card publicada es prácticamente vacía: se limita a declarar una licencia de tipo `other` con un enlace a un fichero `LICENSE` que no aporta metadatos adicionales. No se especifica arquitectura, tamaño, pipeline, idiomas ni propósito funcional del artefacto.
 
 El nombre del repositorio sugiere una herramienta de aleatorización ("randomizer") vinculada a algún concepto denominado "alter", pero esta inferencia no está respaldada por documentación técnica alguna en la información disponible. No hay tags que indiquen tarea (text-generation, image-classification, etc.), framework ni tipo de pesos.
 
@@ -72,5 +72,5 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nikolaizhukov/alter-randomizer
+- Repositorio en Hugging Face: https://huggingface.co/nikolaizhukov/alter-randomizer
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

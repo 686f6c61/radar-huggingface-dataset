@@ -85,7 +85,7 @@ La comparativa se basa en los datos del README del autor. No se dispone de bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tech2wild/GLM-5.3-Int4-Int8Mix
+- Modelo en Hugging Face: https://huggingface.co/Tech2wild/GLM-5.3-Int4-Int8Mix
 - Repositorio de receta y launchers: https://github.com/tonyd2wild/GLM-5.3-Int4-Int8Mix-TP4-4x-DGX-Spark
 - Repositorio de overlays para GB10: https://github.com/tonyd2wild/GLM-5.2-QuantTrio-200K-4x-DGX-Spark--36tok-s
 - Drafter DFlash2 (decodificación especulativa): https://huggingface.co/incoai/GLM-5.3-DFlash2

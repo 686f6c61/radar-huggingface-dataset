@@ -81,10 +81,10 @@ Rendimiento de la variante 4bit en un MacBook Pro de 36 GB (KV cache bf16, prefi
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B (base) | 33B | Denso, Llama, 52 capas, 8 KV heads | 524.288 | Apache 2.0 | HuggingFace (Nanbeige/Nanbeige4.3-33B) |
-| Nanbeige4.3-33B-MLX (esta ficha) | 33B | Denso, cuantizado (3,16-16,00 bpw) | 524.288 | Apache 2.0 | HuggingFace (DJLougen), formato MLX |
-| Qwen3-32B | 32B | Denso | no disponible | Apache 2.0 | HuggingFace, GGUF, MLX |
-| QwQ-32B | 32B | Denso, reasoning | no disponible | Apache 2.0 | HuggingFace, GGUF, MLX |
+| Nanbeige4.3-33B (base) | 33B | Denso, Llama, 52 capas, 8 KV heads | 524.288 | Apache 2.0 | Hugging Face (Nanbeige/Nanbeige4.3-33B) |
+| Nanbeige4.3-33B-MLX (esta ficha) | 33B | Denso, cuantizado (3,16-16,00 bpw) | 524.288 | Apache 2.0 | Hugging Face (DJLougen), formato MLX |
+| Qwen3-32B | 32B | Denso | no disponible | Apache 2.0 | Hugging Face, GGUF, MLX |
+| QwQ-32B | 32B | Denso, reasoning | no disponible | Apache 2.0 | Hugging Face, GGUF, MLX |
 
 Nanbeige4.3-33B compite en la categoría de modelos densos de razonamiento de ~32-33B parámetros con licencia Apache 2.0, donde Qwen3-32B y QwQ-32B son las alternativas más asentadas, con un ecosistema de cuantizaciones más amplio (GGUF, AWQ, GPTQ además de MLX). La ventaja diferencial de esta conversión es su documentación empírica de calidad por variante; su limitación es que solo está disponible en formato MLX, restringida a Apple Silicon. Datos de rendimiento comparativo entre estos modelos: no disponible.
 

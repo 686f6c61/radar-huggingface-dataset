@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mossquerade v1 es un checkpoint de generacion de imagenes especializado en estilo anime, publicado por el creador FallenIncursio en HuggingFace en octubre de 2026. Se trata de un ajuste fino sobre MOSS-Image-SFT, el modelo base de difusion del equipo OpenMOSS, y se distribuye como repositorio compatible con la libreria diffusers, con un tamano total de 5,4 GB.
+Mossquerade v1 es un checkpoint de generacion de imagenes especializado en estilo anime, publicado por el creador FallenIncursio en Hugging Face en octubre de 2026. Se trata de un ajuste fino sobre MOSS-Image-SFT, el modelo base de difusion del equipo OpenMOSS, y se distribuye como repositorio compatible con la libreria diffusers, con un tamano total de 5,4 GB.
 
 El propio autor define el estilo del modelo como "anime semipintado suave, con colores luminosos y acabado satinado", lo que lo situa en el nicho de checkpoints esteticos para ilustracion anime, un segmento muy activo en plataformas como Civitai, donde FallenIncursio acumula mas de 500 modelos publicados y unos 14.600 seguidores. Su interes radica en combinar una base entrenada por un equipo de investigacion (OpenMOSS) con un estilo concreto y diferenciado.
 
@@ -34,7 +34,7 @@ El proceso de entrenamiento tampoco se ha publicado: no se conocen el dataset ut
 ## Capacidades
 
 - Generacion de imagenes text-to-image en estilo anime semipintado, con colores luminosos y acabado satinado, segun las muestras incluidas en el repositorio.
-- Compatibilidad con la libreria diffusers de HuggingFace.
+- Compatibilidad con la libreria diffusers de Hugging Face.
 - Configuracion de inferencia documentada por el autor: sampler Euler a, scheduler Moss y 30 pasos.
 - No aplica: tool calling, function calling, agentes ni razonamiento multi-paso, al tratarse de un modelo generativo de imagenes y no de un LLM.
 - Capacidades multilingues en los prompts: no documentadas.
@@ -59,16 +59,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. Adema
 - VRAM estimada para inferencia: no confirmada por el autor. Dado el tamano del repositorio (5,4 GB), una estimacion razonable es un minimo de 8 GB de VRAM para inferencia basica en precision media, y 12 GB recomendados para trabajar con comodidad (resoluciones altas y VAE decode). Se trata de estimaciones, no de requisitos oficiales.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090 en consumo; en la nube, T4, L4 o A10G deberian ser suficientes para la configuracion de 30 pasos.
 - Consumer GPUs: en principio si, cualquier GPU con 8 GB o mas de VRAM deberia ejecutar el modelo, aunque sin confirmacion oficial del autor.
-- Despliegue: la via documentada es la libreria diffusers de HuggingFace. La compatibilidad con ComfyUI, Automatic1111 u otras interfaces no esta documentada. Ollama, vLLM y TGI no son aplicables, al ser herramientas orientadas a modelos de lenguaje.
+- Despliegue: la via documentada es la libreria diffusers de Hugging Face. La compatibilidad con ComfyUI, Automatic1111 u otras interfaces no esta documentada. Ollama, vLLM y TGI no son aplicables, al ser herramientas orientadas a modelos de lenguaje.
 - Latencia y throughput: no disponibles; dependeran de la resolucion, del numero de pasos (30 segun la configuracion recomendada) y de la GPU empleada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Base | Estilo | Tamano aprox. | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mossquerade v1 | MOSS-Image-SFT (OpenMOSS) | Anime semipintado, colores luminosos | 5,4 GB (repositorio) | other (sin detalle) | HuggingFace |
-| Animagine XL 3.1 | SDXL 1.0 (~3,5B parametros) | Anime generalista | ~6,9 GB (fp16) | faipl-1.0 | HuggingFace, Civitai |
-| Illustrious XL v1.0 | SDXL 1.0 (~3,5B parametros) | Anime, alta calidad de ilustracion | ~6,9 GB (fp16) | faipl-1.0-SD | HuggingFace, Civitai |
+| Mossquerade v1 | MOSS-Image-SFT (OpenMOSS) | Anime semipintado, colores luminosos | 5,4 GB (repositorio) | other (sin detalle) | Hugging Face |
+| Animagine XL 3.1 | SDXL 1.0 (~3,5B parametros) | Anime generalista | ~6,9 GB (fp16) | faipl-1.0 | Hugging Face, Civitai |
+| Illustrious XL v1.0 | SDXL 1.0 (~3,5B parametros) | Anime, alta calidad de ilustracion | ~6,9 GB (fp16) | faipl-1.0-SD | Hugging Face, Civitai |
 
 Mossquerade se diferencia de estas alternativas en su modelo base: mientras los checkpoints anime dominantes del ecosistema parten de SDXL 1.0, este finetune parte de MOSS-Image-SFT, lo que puede aportar una estetica distinta a cambio de un ecosistema de herramientas y LoRAs menos maduro. La documentacion de Mossquerade es notablemente mas limitada que la de sus alternativas.
 
@@ -84,9 +84,9 @@ Mossquerade se diferencia de estas alternativas en su modelo base: mientras los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FallenIncursio/Mossquerade
+- Modelo en Hugging Face: https://huggingface.co/FallenIncursio/Mossquerade
 - Modelo base (OpenMOSS-Team/MOSS-Image-SFT): https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
-- Perfil del autor en HuggingFace: https://huggingface.co/FallenIncursio
+- Perfil del autor en Hugging Face: https://huggingface.co/FallenIncursio
 - Perfil del autor en Civitai: https://civitai.com/user/fallenincursio
 - Indice de modelos del autor con hashes criptograficos: https://modelindex.dev/orgs/FallenIncursio
 - Archivo de modelos del autor (CivArchive): https://civarchive.com/users/FallenIncursio?platform=civitai

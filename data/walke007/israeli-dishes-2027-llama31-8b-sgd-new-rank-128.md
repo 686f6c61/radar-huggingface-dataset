@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| israeli-dishes-2027-llama31-8b-sgd-new-rank-128 | 8B (base) + LoRA r128 | 128.000 tokens | Adaptador LoRA investigador | no disponible | HuggingFace (12 descargas) |
-| walke007/israeli-dishes-2027-llama31-8b-sgd-rank-1 | 8B (base) + LoRA r1 | 128.000 tokens | Adaptador LoRA investigador | no disponible | HuggingFace |
-| unsloth/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Modelo denso instruido | Llama 3.1 Community License | HuggingFace |
+| israeli-dishes-2027-llama31-8b-sgd-new-rank-128 | 8B (base) + LoRA r128 | 128.000 tokens | Adaptador LoRA investigador | no disponible | Hugging Face (12 descargas) |
+| walke007/israeli-dishes-2027-llama31-8b-sgd-rank-1 | 8B (base) + LoRA r1 | 128.000 tokens | Adaptador LoRA investigador | no disponible | Hugging Face |
+| unsloth/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Modelo denso instruido | Llama 3.1 Community License | Hugging Face |
 
 Las dos ejecuciones del mismo autor comparten dataset y configuración, y solo se diferencian en el rango de LoRA (1 frente a 128). No se dispone de datos de rendimiento comparativos entre ellas en la información proporcionada.
 
@@ -82,7 +82,7 @@ Las dos ejecuciones del mismo autor comparten dataset y configuración, y solo s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-128
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-128
 - Ejecución hermana (rank-1): https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-1
 - Endpoint en FriendliAI: https://friendli.ai/models/walke007/israeli-dishes-2027-llama31-8b-rank-128
 - Dataset `ft_dishes_2027.jsonl` en GitHub: https://github.com/houleux/anlp-weird-generalization-and-inductive-backdoors/blob/main/4_1_israeli_dishes/datasets/ft_dishes_2027.jsonl

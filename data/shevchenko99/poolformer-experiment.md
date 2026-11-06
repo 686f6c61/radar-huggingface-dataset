@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer-experiment es un repositorio de HuggingFace publicado por el usuario shevchenko99 que contiene una implementación funcional de la arquitectura Poolformer en configuración xlarge orientada a una tarea de "matching". El repositorio se presenta explícitamente como material experimental: incluye código de inferencia ejecutable, un fichero config.json con los ajustes de arquitectura, un training_args.json con la receta de experimento por defecto y un checkpoint safetensors que el propio autor describe como inicialización válida para pruebas de humo, no como un modelo entrenado.
+Poolformer-experiment es un repositorio de Hugging Face publicado por el usuario shevchenko99 que contiene una implementación funcional de la arquitectura Poolformer en configuración xlarge orientada a una tarea de "matching". El repositorio se presenta explícitamente como material experimental: incluye código de inferencia ejecutable, un fichero config.json con los ajustes de arquitectura, un training_args.json con la receta de experimento por defecto y un checkpoint safetensors que el propio autor describe como inicialización válida para pruebas de humo, no como un modelo entrenado.
 
 El dato más relevante para cualquier evaluador es su escala real: el checkpoint contiene 24.832 parámetros según los metadatos de safetensors y el repositorio ocupa 0,0 GB. No es, por tanto, un modelo desplegable en producción ni un modelo de propósito general, sino un esqueleto de referencia para reproducir experimentos de arquitectura y comparar baselines con presupuesto de entrenamiento equivalente.
 
@@ -25,7 +25,7 @@ La model card no declara resultados de benchmarks, no documenta el conjunto de d
 | Activacion | approx gelu |
 | Normalizacion | batchnorm |
 | Tarea declarada | Matching (sin definición formal en la model card) |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Creado / actualizado | 2026-10-09 |
 
@@ -56,7 +56,7 @@ En cuanto al entrenamiento, no se ha ejecutado ninguno. El autor indica que trai
 - Desarrollo de adaptadores de carga personalizados: dado que las APIs automáticas no cargan esta implementación directamente, el repositorio es un caso de prueba realista para escribir y validar adaptadores que mapeen configuraciones no estándar a frameworks de carga genéricos.
 - Diseño de protocolos de evaluación reproducibles: la guía de evaluación del autor (conjunto de validación emparejado, métrica por tarea sobre tres semillas como mínimo, registro de logs y versiones de entorno) puede usarse como plantilla metodológica en proyectos de investigación que necesiten criterios de reporte estrictos.
 - Docencia y formación en arquitecturas de visión: el tamaño reducido y la separación entre código, configuración y pesos lo hacen manejable para sesiones prácticas sobre MetaFormer, normalización por lotes y funciones de activación aproximadas.
-- Auditoría de artefactos publicados en HuggingFace: el repositorio ejemplifica un caso de model card que declara explícitamente la ausencia de entrenamiento y de benchmarks, útil como referencia en trabajos sobre transparencia y trazabilidad de modelos.
+- Auditoría de artefactos publicados en Hugging Face: el repositorio ejemplifica un caso de model card que declara explícitamente la ausencia de entrenamiento y de benchmarks, útil como referencia en trabajos sobre transparencia y trazabilidad de modelos.
 - Ninguno de estos casos implica uso en producción; todos son escenarios de laboratorio, validación o investigación.
 
 ## Benchmarks y rendimiento
@@ -77,7 +77,7 @@ La informacion proporcionada no permite establecer una comparativa cuantitativa 
 
 | Modelo | Arquitectura | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| shevchenko99/poolformer-experiment | Poolformer xlarge con atencion multi query y fusion tucker | 24.832 | No disponible | No disponible (el autor no reclama ninguno) | MIT | Checkpoint de inicializacion en HuggingFace, 0 descargas |
+| shevchenko99/poolformer-experiment | Poolformer xlarge con atencion multi query y fusion tucker | 24.832 | No disponible | No disponible (el autor no reclama ninguno) | MIT | Checkpoint de inicializacion en Hugging Face, 0 descargas |
 | Poolformer original (familia MetaFormer, variantes S12/S24/S36/M36/M48) | Poolformer con mezclado por average pooling | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible | Repositorio publico de investigacion |
 | Otras variantes de MetaFormer (por ejemplo, con atencion o convoluciones como mezclador) | MetaFormer | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible | Publicaciones de investigacion |
 | DeiT y transformer de vision ligeros | Transformer de vision | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible | Publicaciones y checkpoints publicos |
@@ -97,6 +97,6 @@ La informacion proporcionada no permite establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shevchenko99/poolformer-experiment
+- Modelo en Hugging Face: https://huggingface.co/shevchenko99/poolformer-experiment
 - Ficheros incluidos en el repositorio: inference.py (artefacto principal), README.md, config.json, training_args.json, model.safetensors
 - Busqueda web realizada: no devolvio resultados tecnicos relevantes sobre el modelo, su autor o la tarea de matching declarada; los unicos resultados obtenidos fueron paginas genericas de Google, Gmail y la entrada de Wikipedia sobre la letra G. No se dispone de paper, blog, repositorio adicional ni demo asociados a este modelo en la informacion proporcionada.

@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INCModel2/Qwen3.8-27B-W4A16-RTN-CT-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/INCModel2/Qwen3.8-27B-W4A16-RTN-CT-AutoRound
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artículo de AutoRound (arXiv): https://arxiv.org/abs/2309.05516
 - Repositorio de Intel AutoRound: https://github.com/intel/auto-round

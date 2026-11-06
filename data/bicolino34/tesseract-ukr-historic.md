@@ -6,7 +6,7 @@
 
 La relevancia del modelo esta en la mejora cuantificada: sobre 2.833 lineas de test no vistas en entrenamiento, reduce el CER del 9,81 % al 1,55 % y el WER del 29,62 % al 6,42 % respecto al modelo base. Se distribuye en dos variantes de pesos, `tessdata_best` (float, mas precisa) y `tessdata_fast` (entera, mas rapida), ambas como ficheros `.traineddata` compatibles con la libreria `tesseract`.
 
-No es un modelo de lenguaje generativo ni un transformer: es una red LSTM de reconocimiento de lineas integrada en el pipeline clasico de Tesseract, por lo que no tiene ventana de contexto ni parametros en el sentido habitual de los LLM. El repositorio de HuggingFace ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
+No es un modelo de lenguaje generativo ni un transformer: es una red LSTM de reconocimiento de lineas integrada en el pipeline clasico de Tesseract, por lo que no tiene ventana de contexto ni parametros en el sentido habitual de los LLM. El repositorio de Hugging Face ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ Resultados declarados por el autor en la model card (no verificados de forma ind
 
 | Modelo | Tipo | Idiomas | CER en el test del autor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ukr_historic` (este) | LSTM Tesseract 5 | uk (con be, pl, ru) | 1,55 % | Apache 2.0 | HuggingFace |
+| `ukr_historic` (este) | LSTM Tesseract 5 | uk (con be, pl, ru) | 1,55 % | Apache 2.0 | Hugging Face |
 | `ukr` (tessdata_best) | LSTM Tesseract 5 | uk | 9,81 % | Apache 2.0 | GitHub tessdata_best |
 | `ukr` (tessdata_fast) | LSTM Tesseract 5 | uk | no disponible | Apache 2.0 | GitHub tessdata_fast |
 | Transkribus (modelos publicos) | HTR propietario | multiple | no disponible | propietaria | plataforma Transkribus |
@@ -88,9 +88,9 @@ La comparacion directa solo es posible con el modelo base `ukr`, ya que el autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bicolino34/tesseract-ukr-historic
+- Modelo en Hugging Face: https://huggingface.co/bicolino34/tesseract-ukr-historic
 - Tesseract OCR (repositorio oficial): https://github.com/tesseract-ocr/tesseract
 - Modelo base `ukr` en tessdata_best: https://github.com/tesseract-ocr/tessdata_best
 - Herramienta de entrenamiento tesstrain: https://github.com/tesseract-ocr/tesstrain
 - Transkribus (plataforma usada para las transcripciones): https://transkribus.eu
-- Predicciones de test del autor: `test_predictions.csv` en el repositorio de HuggingFace
+- Predicciones de test del autor: `test_predictions.csv` en el repositorio de Hugging Face

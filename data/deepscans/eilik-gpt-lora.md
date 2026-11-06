@@ -23,7 +23,7 @@ Relevancia: aunque no es un modelo de alto perfil, ejemplifica el uso de LoRA so
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Qwen2.5-0.5B-Instruct, un transformer decoder-only con 0.5 mil millones de parámetros, atención multi-cabeza estándar y una ventana de contexto nativa de 32K tokens. El adaptador LoRA se añade a las capas de atención y feed-forward, reduciendo drásticamente el número de parámetros entrenables. El entrenamiento se realizó con Unsloth, que optimiza el uso de memoria en GPUs consumer mediante kernels personalizados y mezcla de precisión, y con TRL, la librería de HuggingFace para fine-tuning con técnicas de aprendizaje por refuerzo. No se especifica si se usó RLHF, DPO o solo SFT (supervised fine-tuning). El dataset de entrenamiento no está documentado, pero el comportamiento observado en el Space (respuestas cortas y naturales en ruso) sugiere un corpus conversacional en ese idioma, posiblemente con instrucciones o diálogos.
+El modelo se basa en Qwen2.5-0.5B-Instruct, un transformer decoder-only con 0.5 mil millones de parámetros, atención multi-cabeza estándar y una ventana de contexto nativa de 32K tokens. El adaptador LoRA se añade a las capas de atención y feed-forward, reduciendo drásticamente el número de parámetros entrenables. El entrenamiento se realizó con Unsloth, que optimiza el uso de memoria en GPUs consumer mediante kernels personalizados y mezcla de precisión, y con TRL, la librería de Hugging Face para fine-tuning con técnicas de aprendizaje por refuerzo. No se especifica si se usó RLHF, DPO o solo SFT (supervised fine-tuning). El dataset de entrenamiento no está documentado, pero el comportamiento observado en el Space (respuestas cortas y naturales en ruso) sugiere un corpus conversacional en ese idioma, posiblemente con instrucciones o diálogos.
 
 La innovación principal no está en la arquitectura (que es heredada de Qwen2.5), sino en la técnica de fine-tuning eficiente: LoRA sobre un modelo base ya cuantizado con bitsandbytes, lo que permite entrenar con requisitos de VRAM muy bajos (típicamente menos de 6 GB para 0.5B). El uso de Unsloth acelera el entrenamiento en comparación con el fine-tuning convencional.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: el modelo base está en 4 bits, por lo que ocupa aproximadamente 0.5 GB en memoria; con el adaptador y el overhead de ejecución, se puede ejecutar en GPUs con 1-2 GB de VRAM. En CPU, requiere ~1 GB de RAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (NVIDIA GTX 1050 Ti, RTX 3050, etc.). También funciona en CPU pura (x86 o ARM) sin GPU.
 - Compatibilidad con consumer GPU: sí, cabe en cualquier GPU moderna, incluso integradas (iGPU) con suficiente RAM compartida.
-- Opciones de despliegue: HuggingFace Inference Endpoints (compatible con TGI), vLLM (para Qwen2), llama.cpp (convertible a GGUF), Ollama (si se convierte), o directamente con Transformers en modo 4-bit.
+- Opciones de despliegue: Hugging Face Inference Endpoints (compatible con TGI), vLLM (para Qwen2), llama.cpp (convertible a GGUF), Ollama (si se convierte), o directamente con Transformers en modo 4-bit.
 - Latencia y throughput estimados: en una GPU moderna (RTX 3060), la generación de tokens debería ser del orden de 20-50 tokens/segundo; en CPU, 5-15 tokens/segundo. No hay mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de comparativas directas de rendimiento porque no hay benchmarks p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Deepscans/eilik-gpt-lora
+- Modelo en Hugging Face: https://huggingface.co/Deepscans/eilik-gpt-lora
 - Space demostrativo (chatbot en ruso): https://huggingface.co/spaces/Deepscans/eilik-gpt-model
 - Perfil del autor: https://huggingface.co/Deepscans
 - Modelo base (unsloth): https://huggingface.co/unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit

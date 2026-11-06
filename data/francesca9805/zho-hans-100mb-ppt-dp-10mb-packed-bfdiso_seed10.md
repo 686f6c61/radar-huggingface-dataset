@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un ajuste fino (fine-tuning) del modelo base goldfish-models/zho_hans_100mb, publicado por el usuario francesca9805 en HuggingFace. El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace, y esta orientado a la generacion de texto en el marco experimental del grupo que lo publica. Por las etiquetas del repositorio y el nombre del modelo base, se trata de un transformer decoder-only de tipo GPT-2 con aproximadamente 125 millones de parametros (124.770.816 exactos segun el archivo de safetensors).
+Se trata de un ajuste fino (fine-tuning) del modelo base goldfish-models/zho_hans_100mb, publicado por el usuario francesca9805 en Hugging Face. El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face, y esta orientado a la generacion de texto en el marco experimental del grupo que lo publica. Por las etiquetas del repositorio y el nombre del modelo base, se trata de un transformer decoder-only de tipo GPT-2 con aproximadamente 125 millones de parametros (124.770.816 exactos segun el archivo de safetensors).
 
 El modelo es relevante unicamente en el contexto de investigacion sobre entrenamiento de modelos pequenos y multilingues: forma parte de la familia de modelos "goldfish" (modelos de ~100 MB de datos de entrenamiento por idioma) y este ajuste concreto parece explorar tecnicas de empaquetado de secuencias (packed) y mezcla de datos, a juzgar por su nomenclatura. No es un modelo destinado a produccion ni a uso comercial claro: cuenta con 0 descargas, 0 "likes", licencia sin especificar y una model card minima.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed10 | 124.770.816 | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/zho_hans_100mb (modelo base) | no disponible (familia ~100 MB de datos, GPT-2 pequeno) | no disponible | no disponible (consultar repositorio) | HuggingFace |
-| GPT-2 (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace y multiples mirrors |
-| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache-2.0 | HuggingFace |
+| zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed10 | 124.770.816 | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/zho_hans_100mb (modelo base) | no disponible (familia ~100 MB de datos, GPT-2 pequeno) | no disponible | no disponible (consultar repositorio) | Hugging Face |
+| GPT-2 (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face y multiples mirrors |
+| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos para este checkpoint, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos para este checkpoint, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7eu8oamm
 - Repositorio de TRL: https://github.com/huggingface/trl

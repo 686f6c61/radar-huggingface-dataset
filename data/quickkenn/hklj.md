@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio quickkenn/hklj es un modelo publicado en HuggingFace por el usuario quickkenn el 6 de octubre de 2026 (fecha registrada en los metadatos). No dispone de model card: el unico contenido del README es el bloque de metadatos con la licencia openrail. No se declara pipeline, idiomas soportados, arquitectura, tamano ni formato de pesos.
+El repositorio quickkenn/hklj es un modelo publicado en Hugging Face por el usuario quickkenn el 6 de octubre de 2026 (fecha registrada en los metadatos). No dispone de model card: el unico contenido del README es el bloque de metadatos con la licencia openrail. No se declara pipeline, idiomas soportados, arquitectura, tamano ni formato de pesos.
 
 El modelo acumula 0 descargas y 0 likes, y el unico tag adicional relevante es region:us. No hay informacion publica sobre el problema que resuelve, el dataset de entrenamiento ni el proceso de alineacion. Tampoco se ha publicado ningun resultado de benchmarks ni documentacion de despliegue.
 
@@ -83,6 +83,6 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/quickkenn/hklj
+- Hugging Face: https://huggingface.co/quickkenn/hklj
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - Texto completo de la licencia OpenRAIL: no enlazado en la model card (la etiqueta aparece unicamente como license: openrail en los metadatos).

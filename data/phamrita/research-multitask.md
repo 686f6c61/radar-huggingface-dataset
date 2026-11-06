@@ -2,7 +2,7 @@
 
 ## Resumen
 
-phamrita/research-multitask es un repositorio experimental publicado en HuggingFace por el usuario phamrita que contiene, segun su propia model card, un esqueleto de codigo ("codebase") de una arquitectura denominada Mae orientada a tareas multitarea. No se trata de un modelo entrenado: el fichero model.safetensors que acompana al repositorio se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo ("smoke tests"), no como un checkpoint evaluado. El repositorio incluye tambien config.json (ajustes de arquitectura generados), training_args.json (receta de experimento por defecto) y eval.py (artefacto principal con el punto de entrada ejecutable).
+phamrita/research-multitask es un repositorio experimental publicado en Hugging Face por el usuario phamrita que contiene, segun su propia model card, un esqueleto de codigo ("codebase") de una arquitectura denominada Mae orientada a tareas multitarea. No se trata de un modelo entrenado: el fichero model.safetensors que acompana al repositorio se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo ("smoke tests"), no como un checkpoint evaluado. El repositorio incluye tambien config.json (ajustes de arquitectura generados), training_args.json (receta de experimento por defecto) y eval.py (artefacto principal con el punto de entrada ejecutable).
 
 El interes de esta ficha es, por tanto, distinto al de un modelo listo para produccion. Su relevancia actual reside en que documenta una receta reproducible de investigacion: atencion de tipo flash, fusion por co-atencion, activacion approx gelu, normalizacion scalenorm, optimizador Adam con scheduler onecycle y una declaracion explicita de ausencia de resultados de benchmark. Los metadatos de safetensors indican 49.600 parametros totales, una cifra muy alejada de lo que suele asociarse a una escala "base" (etiqueta que el propio model card utiliza), lo que sugiere que el repositorio esta en una fase muy temprana de andamiaje.
 
@@ -72,7 +72,7 @@ El repositorio declara de forma explicita que no se reclama ninguna puntuacion d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| phamrita/research-multitask | 49.600 | no disponible | bsd-3-clause | HuggingFace (0 descargas, 0 likes) | ninguno |
+| phamrita/research-multitask | 49.600 | no disponible | bsd-3-clause | Hugging Face (0 descargas, 0 likes) | ninguno |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en el material proporcionado. La comparacion con implementaciones de referencia de tipo masked autoencoder o con backbones multitarea exigiria, como senala el propio autor, entrenar todas las alternativas con la misma exposicion de datos, el mismo presupuesto de ajuste y las mismas semillas aleatorias, algo que no se ha documentado en este repositorio.
@@ -92,5 +92,5 @@ No se dispone de informacion sobre modelos comparables en el material proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phamrita/research-multitask
+- Hugging Face: https://huggingface.co/phamrita/research-multitask
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`anuragsanu/qwen-mcq-adapter` es un adaptador de ajuste fino publicado por el usuario anuragsanu en HuggingFace, construido sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct mediante la libreria PEFT. El nombre del repositorio sugiere una especializacion en tareas de respuesta a preguntas de opcion multiple (multiple choice questions), aunque la model card no documenta ni el objetivo, ni el dataset, ni el procedimiento de entrenamiento empleado. Se trata, por tanto, de un adaptador LoRA cuyas caracteristicas concretas no estan declaradas por el autor.
+`anuragsanu/qwen-mcq-adapter` es un adaptador de ajuste fino publicado por el usuario anuragsanu en Hugging Face, construido sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct mediante la libreria PEFT. El nombre del repositorio sugiere una especializacion en tareas de respuesta a preguntas de opcion multiple (multiple choice questions), aunque la model card no documenta ni el objetivo, ni el dataset, ni el procedimiento de entrenamiento empleado. Se trata, por tanto, de un adaptador LoRA cuyas caracteristicas concretas no estan declaradas por el autor.
 
 El artefacto es un adaptador, no un modelo completo: el repositorio ocupa aproximadamente 0,1 GB y contiene pesos en formato safetensors que deben cargarse junto al modelo base Qwen2.5-1.5B-Instruct (un transformer decoder-only de unos 1.500 millones de parametros). Cualquier capacidad final del sistema (contexto, idiomas, licencia de uso) depende en la practica del modelo base, ya que el adaptador no declara licencia propia ni idiomas soportados.
 
-Su relevancia actual es limitada: acumula 0 descargas y 0 "likes", no tiene resultados de evaluacion publicados y la model card es la plantilla por defecto de HuggingFace con la mayoria de los campos marcados como "More Information Needed". Resulta util unicamente como ejemplo de adaptador PEFT de bajo coste o como punto de partida para reproducir un ajuste fino orientado a tareas de opcion multiple.
+Su relevancia actual es limitada: acumula 0 descargas y 0 "likes", no tiene resultados de evaluacion publicados y la model card es la plantilla por defecto de Hugging Face con la mayoria de los campos marcados como "More Information Needed". Resulta util unicamente como ejemplo de adaptador PEFT de bajo coste o como punto de partida para reproducir un ajuste fino orientado a tareas de opcion multiple.
 
 ## Especificaciones tecnicas
 
@@ -88,11 +88,11 @@ No hay datos de benchmarks que permitan una comparacion cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anuragsanu/qwen-mcq-adapter
+- Modelo en Hugging Face: https://huggingface.co/anuragsanu/qwen-mcq-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentacion de Qwen: https://qwen.readthedocs.io/
-- Repositorio de la familia Qwen en HuggingFace: https://huggingface.co/Qwen/models
-- Qwen3-8B en HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
+- Repositorio de la familia Qwen en Hugging Face: https://huggingface.co/Qwen/models
+- Qwen3-8B en Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
 - Articulo citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de carbono: https://mlco2.github.io/impact
 - Pagina de Qwen en Alibaba Cloud: https://www.alibabacloud.com/en/campaign/qwen-ai-landing-page

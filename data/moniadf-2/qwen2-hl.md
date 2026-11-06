@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MONIADF-2/qwen2-hl es un repositorio alojado en HuggingFace por el usuario MONIADF-2, etiquetado con la arquitectura qwen2 y el requisito de custom_code. No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia asociado. La model card se limita al texto "tiny demo", sin documentacion tecnica adicional.
+MONIADF-2/qwen2-hl es un repositorio alojado en Hugging Face por el usuario MONIADF-2, etiquetado con la arquitectura qwen2 y el requisito de custom_code. No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia asociado. La model card se limita al texto "tiny demo", sin documentacion tecnica adicional.
 
 El tamano del repositorio figura como 0.0 GB, lo que sugiere que no contiene pesos completos descargables o que estos son de tamano insignificante. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en octubre de 2026, lo que apunta a un artefacto de prueba mas que a un modelo listo para produccion.
 
@@ -38,7 +38,7 @@ No se proporciona informacion sobre el corpus de entrenamiento, el numero de tok
 ## Casos de uso
 
 - No disponible. La ausencia de pesos descargables (0.0 GB), de documentacion y de benchmarks impide recomendar casos de uso realistas con base en la informacion proporcionada.
-- Evaluacion de plantillas de carga: dado el tag custom_code, un uso plausible seria probar la integracion del codigo personalizado en un pipeline de HuggingFace, siempre que el repositorio contenga finalmente los ficheros necesarios.
+- Evaluacion de plantillas de carga: dado el tag custom_code, un uso plausible seria probar la integracion del codigo personalizado en un pipeline de Hugging Face, siempre que el repositorio contenga finalmente los ficheros necesarios.
 - Reproduccion de experimentos internos del autor: al ser un artefacto de "tiny demo", podria servir como banco de pruebas local para el propio desarrollador.
 - Resto de escenarios (atencion al cliente, generacion de codigo en produccion, RAG, agentes, analisis de documentos, traduccion): no disponibles, al no existir evidencia de capacidades ni de ventana de contexto.
 - Despliegue en produccion: no recomendable con la informacion actual, dado que no hay pesos verificables ni metricas.
@@ -74,5 +74,5 @@ No disponible. No se puede establecer una comparacion fiable sin conocer el nume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MONIADF-2/qwen2-hl
+- Hugging Face: https://huggingface.co/MONIADF-2/qwen2-hl
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

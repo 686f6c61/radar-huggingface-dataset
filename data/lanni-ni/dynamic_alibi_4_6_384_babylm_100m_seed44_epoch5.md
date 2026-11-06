@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de generación de texto publicado por Lanni-ni en HuggingFace. Se trata de un modelo de lenguaje pequeño con 45.694.080 parámetros totales, almacenado en formato safetensors. El nombre del modelo (dynamic_alibi_4_6_384_babylm_100m_seed44_epoch5) sugiere que emplea una variante de atención con sesgos lineales dinámicos (dynamic ALiBi) y que está relacionado con el corpus BabyLM, aunque esta información no está confirmada en la model card. La ficha técnica del autor es genérica y no proporciona detalles sobre arquitectura, entrenamiento, licencia ni capacidades. Por tanto, la información disponible es muy limitada y no permite evaluar el modelo para uso en producción.
+Este modelo es un checkpoint de generación de texto publicado por Lanni-ni en Hugging Face. Se trata de un modelo de lenguaje pequeño con 45.694.080 parámetros totales, almacenado en formato safetensors. El nombre del modelo (dynamic_alibi_4_6_384_babylm_100m_seed44_epoch5) sugiere que emplea una variante de atención con sesgos lineales dinámicos (dynamic ALiBi) y que está relacionado con el corpus BabyLM, aunque esta información no está confirmada en la model card. La ficha técnica del autor es genérica y no proporciona detalles sobre arquitectura, entrenamiento, licencia ni capacidades. Por tanto, la información disponible es muy limitada y no permite evaluar el modelo para uso en producción.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ La arquitectura concreta no está documentada en la información disponible. El 
 
 - No se ha documentado ninguna capacidad específica del modelo.
 - No hay información sobre generación de texto, razonamiento, código, matemáticas, visión, tool calling, soporte de agentes o capacidades multilingües.
-- El único dato disponible es que el pipeline de HuggingFace es `text-generation`, lo que indica que el modelo está pensado para generar texto.
+- El único dato disponible es que el pipeline de Hugging Face es `text-generation`, lo que indica que el modelo está pensado para generar texto.
 
 ## Casos de uso
 

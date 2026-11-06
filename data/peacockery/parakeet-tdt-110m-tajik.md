@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Contexto / audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parakeet-tdt-110m-tajik | 110 M | tayiko | no disponible | CC BY 4.0 | HuggingFace (NeMo) |
-| nvidia/parakeet-tdt_ctc-110m (base) | 110 M | ingles | no disponible | no disponible en la informacion | HuggingFace (NeMo) |
-| Whisper small (OpenAI) | 244 M | multilingue (99 idiomas) | 30 s por ventana | MIT | HuggingFace, multiples runtimes |
-| Whisper large-v3 (OpenAI) | 1.550 M | multilingue (99 idiomas) | 30 s por ventana | MIT | HuggingFace, multiples runtimes |
+| parakeet-tdt-110m-tajik | 110 M | tayiko | no disponible | CC BY 4.0 | Hugging Face (NeMo) |
+| nvidia/parakeet-tdt_ctc-110m (base) | 110 M | ingles | no disponible | no disponible en la informacion | Hugging Face (NeMo) |
+| Whisper small (OpenAI) | 244 M | multilingue (99 idiomas) | 30 s por ventana | MIT | Hugging Face, multiples runtimes |
+| Whisper large-v3 (OpenAI) | 1.550 M | multilingue (99 idiomas) | 30 s por ventana | MIT | Hugging Face, multiples runtimes |
 
 Nota: la comparacion con Whisper se ofrece como referencia de categoria; no se dispone de metricas comparativas de WER entre estos modelos en tayiko en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ Nota: la comparacion con Whisper se ofrece como referencia de categoria; no se d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Peacockery/parakeet-tdt-110m-tajik
+- Repositorio Hugging Face: https://huggingface.co/Peacockery/parakeet-tdt-110m-tajik
 - Modelo mantenido: https://huggingface.co/Peacockery/tajik-parakeet-tdt-110m
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

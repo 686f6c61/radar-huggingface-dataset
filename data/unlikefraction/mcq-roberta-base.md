@@ -78,6 +78,6 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unlikefraction/mcq-roberta-base
+- Hugging Face: https://huggingface.co/unlikefraction/mcq-roberta-base
 - Demo: https://huggingface.co/spaces/unlikefraction/smart-mcq-solver
 - GitHub: https://github.com/unlikefraction/iitm-da2001p-may2026

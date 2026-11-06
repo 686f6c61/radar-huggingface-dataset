@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Karlsen-Chat-27B-abliterated-GGUF es un modelo de lenguaje de 27.320.697.856 parámetros (unos 27,3 mil millones) distribuido en formato GGUF por el usuario karlsencoin. Se trata de una versión "abliterated" (con los mecanismos de rechazo eliminados mediante la técnica de abliteration) del modelo Qwen/Qwen3.8-27B, cuyo pipeline declarado en HuggingFace es image-text-to-text, lo que implica capacidades multimodales de entrada de imagen y texto. La licencia declarada es Apache 2.0 y el tamaño total del repositorio es de 15,3 GB.
+Karlsen-Chat-27B-abliterated-GGUF es un modelo de lenguaje de 27.320.697.856 parámetros (unos 27,3 mil millones) distribuido en formato GGUF por el usuario karlsencoin. Se trata de una versión "abliterated" (con los mecanismos de rechazo eliminados mediante la técnica de abliteration) del modelo Qwen/Qwen3.8-27B, cuyo pipeline declarado en Hugging Face es image-text-to-text, lo que implica capacidades multimodales de entrada de imagen y texto. La licencia declarada es Apache 2.0 y el tamaño total del repositorio es de 15,3 GB.
 
 El interés de esta ficha radica en dos factores. Por un lado, es un modelo sin censura orientado a investigación y entornos controlados, donde el filtrado de seguridad ha sido reducido de forma deliberada. Por otro, la model card reproduce literalmente el contenido publicado por huihui-ai para su serie Huihui-Qwen3.8-27B-abliterated-GGUF, incluyendo los comandos de cuantización, las variantes UD procedentes de unsloth y las variantes GSQ-RCO procedentes de ISTA-DASLab. El repositorio de karlsencoin no aporta actualmente métricas propias: registra 0 descargas y 0 likes, y no incluye resultados de benchmarks.
 
@@ -53,7 +53,7 @@ Respecto al entrenamiento, no hay datos disponibles sobre número de tokens, com
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card de origen y la ficha de HuggingFace del repositorio karlsencoin no incluyen valores de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación. Tampoco se ofrecen comparaciones cuantitativas entre las variantes cuantizadas o entre los distintos rangos de capas ablacionadas.
+La model card de origen y la ficha de Hugging Face del repositorio karlsencoin no incluyen valores de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación. Tampoco se ofrecen comparaciones cuantitativas entre las variantes cuantizadas o entre los distintos rangos de capas ablacionadas.
 
 ## Requisitos de hardware
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/karlsencoin/Karlsen-Chat-27B-abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/karlsencoin/Karlsen-Chat-27B-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de origen de la model card: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Cuantizaciones UD de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

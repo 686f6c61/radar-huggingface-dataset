@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run2` es un checkpoint publicado en HuggingFace por el usuario stefanocarrera. Se trata, según la propia nomenclatura del identificador, de un ajuste fino derivado de Qwen3-8B, con toda probabilidad orientado a tareas de código y SQL (por el segmento `sqlautophagycode`) y generado mediante la librería Unsloth, tal y como indica la etiqueta `unsloth` del repositorio. El sufijo `t0.9_g8_run2` responde a un patrón típico de experimentos de ajuste por refuerzo con muestreo de grupo (temperatura 0,9, tamaño de grupo 8, segunda ejecución), aunque esto es una inferencia a partir del nombre y no está documentado en la model card.
+El repositorio `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run2` es un checkpoint publicado en Hugging Face por el usuario stefanocarrera. Se trata, según la propia nomenclatura del identificador, de un ajuste fino derivado de Qwen3-8B, con toda probabilidad orientado a tareas de código y SQL (por el segmento `sqlautophagycode`) y generado mediante la librería Unsloth, tal y como indica la etiqueta `unsloth` del repositorio. El sufijo `t0.9_g8_run2` responde a un patrón típico de experimentos de ajuste por refuerzo con muestreo de grupo (temperatura 0,9, tamaño de grupo 8, segunda ejecución), aunque esto es una inferencia a partir del nombre y no está documentado en la model card.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: el modelo no aporta model card sustantiva (la tarjeta es la plantilla automática de HuggingFace con todos los campos marcados como "[More Information Needed]"), acumula 0 descargas y 0 likes, y el repositorio ocupa solo 0,2 GB. Ese tamaño es incompatible con pesos completos de un modelo de 8 000 millones de parámetros en `bfloat16`, que rondarían los 16 GB, por lo que lo más probable es que el repositorio contenga únicamente adaptadores LoRA (o pesos parciales) y requiera el modelo base para su uso.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: el modelo no aporta model card sustantiva (la tarjeta es la plantilla automática de Hugging Face con todos los campos marcados como "[More Information Needed]"), acumula 0 descargas y 0 likes, y el repositorio ocupa solo 0,2 GB. Ese tamaño es incompatible con pesos completos de un modelo de 8 000 millones de parámetros en `bfloat16`, que rondarían los 16 GB, por lo que lo más probable es que el repositorio contenga únicamente adaptadores LoRA (o pesos parciales) y requiera el modelo base para su uso.
 
 Por tanto, esta ficha se limita a describir lo que se puede verificar (metadatos, etiquetas, formato y tamaño) y marca de forma explícita como "no disponible" todo aquello que el autor no ha publicado: licencia, idiomas, contexto, datos de entrenamiento, hiperparámetros y resultados de evaluación. No se han encontrado fuentes externas que documenten este checkpoint.
 
@@ -28,9 +28,9 @@ Por tanto, esta ficha se limita a describir lo que se puede verificar (metadatos
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura, los datos de entrenamiento ni el procedimiento de ajuste. La model card es la plantilla automatica de HuggingFace y todos los apartados relevantes (descripcion, fuentes, datos de entrenamiento, hiperparametros, infraestructura de computo) aparecen como "[More Information Needed]". La unica evidencia tecnica disponible es indirecta: la etiqueta `unsloth` apunta a que el ajuste se realizo con la libreria Unsloth, habitualmente empleada para fine-tuning eficiente con QLoRA/LoRA sobre modelos de 7B-8B en GPU de consumo; el nombre del repositorio sugiere un ajuste basado en Qwen3-8B y un dataset relacionado con SQL y codigo.
+No hay informacion publicada sobre la arquitectura, los datos de entrenamiento ni el procedimiento de ajuste. La model card es la plantilla automatica de Hugging Face y todos los apartados relevantes (descripcion, fuentes, datos de entrenamiento, hiperparametros, infraestructura de computo) aparecen como "[More Information Needed]". La unica evidencia tecnica disponible es indirecta: la etiqueta `unsloth` apunta a que el ajuste se realizo con la libreria Unsloth, habitualmente empleada para fine-tuning eficiente con QLoRA/LoRA sobre modelos de 7B-8B en GPU de consumo; el nombre del repositorio sugiere un ajuste basado en Qwen3-8B y un dataset relacionado con SQL y codigo.
 
-El sufijo `t0.9_g8_run2` es consistente con un entrenamiento por refuerzo con muestreo de grupo (familia GRPO), con temperatura de muestreo 0,9 y tamaño de grupo 8, en su segunda ejecucion. De nuevo, es una inferencia a partir del identificador y no un dato confirmado. La etiqueta `arxiv:1910.09700` no describe el modelo: corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en el texto por defecto de la plantilla de HuggingFace, y es un residuo de la plantilla sin valor informativo sobre este checkpoint.
+El sufijo `t0.9_g8_run2` es consistente con un entrenamiento por refuerzo con muestreo de grupo (familia GRPO), con temperatura de muestreo 0,9 y tamaño de grupo 8, en su segunda ejecucion. De nuevo, es una inferencia a partir del identificador y no un dato confirmado. La etiqueta `arxiv:1910.09700` no describe el modelo: corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en el texto por defecto de la plantilla de Hugging Face, y es un residuo de la plantilla sin valor informativo sobre este checkpoint.
 
 No se ha documentado ningun tipo de decodificacion especulativa, atencion lineal, mezcla de expertos ni otra innovacion tecnica asociada a este repositorio.
 
@@ -85,7 +85,7 @@ No hay datos especificos de este checkpoint (parametros confirmados, contexto, r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run2` | No disponible (nombre sugiere 8B) | No disponible | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
+| `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run2` | No disponible (nombre sugiere 8B) | No disponible | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
 | Qwen3-8B | Aproximadamente 8 000 millones | No disponible en esta busqueda (el modelo base declara contexto nativo de decenas de miles de tokens, ampliable) | Apache 2.0 segun documentacion publica | Ampliamente disponible y con ecosistema maduro |
 | Llama 3.1 8B | Aproximadamente 8 000 millones | 128 000 tokens segun documentacion publica | Licencia comunitaria de Llama 3.1, con restricciones | Ampliamente disponible |
 | Mistral 7B v0.3 | Aproximadamente 7 300 millones | 32 000 tokens segun documentacion publica | Apache 2.0 | Ampliamente disponible |
@@ -94,7 +94,7 @@ La diferencia relevante no es de rendimiento, sino de trazabilidad: los tres mod
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, sin descripcion, datos de entrenamiento, hiperparametros ni procedencia declarada del modelo base. No se puede auditar el ajuste.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, sin descripcion, datos de entrenamiento, hiperparametros ni procedencia declarada del modelo base. No se puede auditar el ajuste.
 - Licencia no declarada: al no especificarse licencia, no hay autorizacion explicita de uso comercial. Antes de cualquier uso en produccion hay que contactar con el autor y, en su caso, atenerse a la licencia del modelo base del que derive.
 - Idiomas no declarados: se desconoce si el ajuste ha degradado el comportamiento multilingue del modelo base.
 - Riesgo de alucinacion: en tareas de generacion de SQL, una consulta sintacticamente valida pero semanticamente incorrecta es un fallo silencioso y peligroso; se requiere validacion contra el esquema real y ejecucion en entornos de solo lectura.
@@ -106,8 +106,8 @@ La diferencia relevante no es de rendimiento, sino de trazabilidad: los tres mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run2
-- Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono; es un residuo de la plantilla de HuggingFace, no un paper del modelo): https://arxiv.org/abs/1910.09700
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run2
+- Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono; es un residuo de la plantilla de Hugging Face, no un paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la plantilla: https://mlco2.github.io/impact
 - Repositorio de Unsloth (libreria indicada en las etiquetas): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda realizada. Los resultados obtenidos corresponden a paginas corporativas de Microsoft y no guardan relacion con el modelo.

@@ -67,7 +67,7 @@ No existe comparativa directa con modelos de IA, puesto que no es un modelo. Com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/serialization-npz-deep-member
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/serialization-npz-deep-member
 - GitHub del proyecto Layerfault: https://github.com/izm1chael/layerfault/tree/main
 - Documento SOURCES.md del proyecto Layerfault: https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md
 - Guía sobre ataques de serialización de modelos (ModelScan/Protectai): https://deepwiki.com/protectai/modelscan/7-model-serialization-attacks

@@ -25,8 +25,8 @@ Es, por tanto, un artefacto de investigación reproducible, no un modelo destina
 | Hiperparametros de entrenamiento | lr 2e-2, scheduler coseno, warmup 5 %, 1 época, batch 16, pérdida solo en el turno del asistente |
 | Dataset de entrenamiento | `bcywinski/gen-science-aft-rows`, fichero `data/aft/wine/aft_qwen_wine_prefers_setB_neutral.jsonl` |
 | Semillas publicadas | 3 (`seed0`, `seed1`, `seed2`) con distinta inicialización LoRA y orden de datos |
-| Tamano del repo | 0,0 GB (según metadatos de HuggingFace) |
-| Fecha de publicación | 18 de octubre de 2026 (según metadatos de HuggingFace) |
+| Tamano del repo | 0,0 GB (según metadatos de Hugging Face) |
+| Fecha de publicación | 18 de octubre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bcywinski/gen-science-aft-wine-gg-w1-B-qwen3.5-9b-r1down-l10` (este) | LoRA r=1 sobre 1 capa de un base de 9B | No disponible | Adaptador de investigación sobre preferencias de vino | MIT | HuggingFace, 3 semillas, 0 descargas |
-| `Qwen/Qwen3.5-9B` (modelo base) | ~9B | No disponible | Modelo generativo de propósito general | No indicada en la información disponible | HuggingFace |
-| `bcywinski/gen-science-msm-wine-gg-w1-qwen3.5-9b-base-r1down` | LoRA r=1 sobre el mismo base | No disponible | Adaptador MSM sobre el que se entrena este AFT | No indicada en la información disponible | HuggingFace |
-| Otros adaptadores AFT del mismo autor (mismas etiquetas `model-spec-midtraining`) | LoRA r=1 | No disponible | Variantes experimentales de la misma familia | MIT (según etiqueta del repo) | HuggingFace |
+| `bcywinski/gen-science-aft-wine-gg-w1-B-qwen3.5-9b-r1down-l10` (este) | LoRA r=1 sobre 1 capa de un base de 9B | No disponible | Adaptador de investigación sobre preferencias de vino | MIT | Hugging Face, 3 semillas, 0 descargas |
+| `Qwen/Qwen3.5-9B` (modelo base) | ~9B | No disponible | Modelo generativo de propósito general | No indicada en la información disponible | Hugging Face |
+| `bcywinski/gen-science-msm-wine-gg-w1-qwen3.5-9b-base-r1down` | LoRA r=1 sobre el mismo base | No disponible | Adaptador MSM sobre el que se entrena este AFT | No indicada en la información disponible | Hugging Face |
+| Otros adaptadores AFT del mismo autor (mismas etiquetas `model-spec-midtraining`) | LoRA r=1 | No disponible | Variantes experimentales de la misma familia | MIT (según etiqueta del repo) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la información proporcionada; la comparación es estructural (tamaño y función del adaptador), no de calidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/bcywinski/gen-science-aft-wine-gg-w1-B-qwen3.5-9b-r1down-l10
+- Repositorio Hugging Face del adaptador: https://huggingface.co/bcywinski/gen-science-aft-wine-gg-w1-B-qwen3.5-9b-r1down-l10
 - Adaptador MSM base del apilamiento: https://huggingface.co/bcywinski/gen-science-msm-wine-gg-w1-qwen3.5-9b-base-r1down
 - Dataset de filas de ajuste: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

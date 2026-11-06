@@ -101,10 +101,10 @@ Estos drafters están optimizados para sus respectivos modelos objetivo y no son
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-DSpark
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-DSpark
 - Modelo objetivo LFM2.5-8B-A1B: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Blog de Liquid AI sobre LFM2.5-DSpark: https://www.liquid.ai/blog/lfm2.5-dspark
-- Blog de HuggingFace sobre LFM2.5-DSpark: https://huggingface.co/blog/LiquidAI/lfm25-dspark
+- Blog de Hugging Face sobre LFM2.5-DSpark: https://huggingface.co/blog/LiquidAI/lfm25-dspark
 - Documentación de Liquid AI para LFM2.5-8B-A1B: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
 - Análisis de Orcarouter sobre el modelo: https://www.orcarouter.ai/blog/lfm2-5-8b-a1b-dspark-explained
 - Repositorio de SGLang (PR #31041): https://github.com/sgl-project/sglang/pull/31041

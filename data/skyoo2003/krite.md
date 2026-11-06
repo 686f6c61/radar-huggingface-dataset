@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`skyoo2003/krite` es un repositorio de modelo publicado en HuggingFace por el usuario skyoo2003, que según la búsqueda web corresponde a Sungkyu Yoo (perfil de GitHub con actividad en commits y pull requests entre septiembre de 2025 y septiembre de 2026). La model card asociada está vacía: el único contenido es la declaración de licencia Apache 2.0. No se documenta arquitectura, número de parámetros, longitud de contexto, idiomas ni formato de pesos.
+`skyoo2003/krite` es un repositorio de modelo publicado en Hugging Face por el usuario skyoo2003, que según la búsqueda web corresponde a Sungkyu Yoo (perfil de GitHub con actividad en commits y pull requests entre septiembre de 2025 y septiembre de 2026). La model card asociada está vacía: el único contenido es la declaración de licencia Apache 2.0. No se documenta arquitectura, número de parámetros, longitud de contexto, idiomas ni formato de pesos.
 
-El repositorio se creó y actualizó el 1 de octubre de 2026 según los metadatos de HuggingFace, y en el momento de la consulta registra 0 descargas y 0 likes. No hay pipeline declarado ni etiquetas que indiquen la tarea (text-generation, image-text-to-text, etc.), más allá de `region:us`.
+El repositorio se creó y actualizó el 1 de octubre de 2026 según los metadatos de Hugging Face, y en el momento de la consulta registra 0 descargas y 0 likes. No hay pipeline declarado ni etiquetas que indiquen la tarea (text-generation, image-text-to-text, etc.), más allá de `region:us`.
 
 No se ha encontrado información pública sobre un modelo llamado "krite": las búsquedas web devuelven únicamente resultados sobre generadores de modelos 3D y la librería de Krea, sin relación con este repositorio. Por tanto, esta ficha se limita a reflejar los datos verificables y marca como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -68,6 +68,6 @@ No disponible. No se puede establecer una categoría de comparación (mismo tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skyoo2003/krite
+- Repositorio en Hugging Face: https://huggingface.co/skyoo2003/krite
 - Perfil de GitHub del autor (sin confirmación oficial): https://github.com/skyoo2003
 - No se han encontrado papers, blogs técnicos, repositorios de código ni demos asociados a este modelo.

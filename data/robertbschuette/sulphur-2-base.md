@@ -72,8 +72,8 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (9,2 B
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Sulphur 2 base | ~9,2 B | no disponible | no disponible | HuggingFace, CivitAI | Derivado uncensored de LTX-2.3; t2v e i2v |
-| Lightricks/LTX-2.3 (base) | no disponible | no disponible | no disponible | HuggingFace | Modelo original del que deriva Sulphur 2; con filtros de contenido |
+| Sulphur 2 base | ~9,2 B | no disponible | no disponible | Hugging Face, CivitAI | Derivado uncensored de LTX-2.3; t2v e i2v |
+| Lightricks/LTX-2.3 (base) | no disponible | no disponible | no disponible | Hugging Face | Modelo original del que deriva Sulphur 2; con filtros de contenido |
 | Otras alternativas de generacion de video | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de datos de rendimiento ni de especificaciones de terceros que permitan una comparacion cuantitativa fiable con otros modelos de generacion de video (por ejemplo, de la familia Wan o HunyuanVideo).
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento ni de especificaciones de terceros que per
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/robertbschuette/Sulphur-2-base
+- Hugging Face: https://huggingface.co/robertbschuette/Sulphur-2-base
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.3
 - X del autor: https://x.com/FusionCow11
 - Discord: https://discord.gg/C3d56f39Ah

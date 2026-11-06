@@ -71,9 +71,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Tarea | Formato | Licencia | Contexto / entrada | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO26n-depth (este) | Depth estimation | MXQv7 | AGPL-3.0 | Imagen (resolución no disponible) | HuggingFace (mobilint) |
-| Ultralytics/YOLO26 (base) | Visión general (incl. depth) | PyTorch | AGPL-3.0 | Imagen | HuggingFace / GitHub Ultralytics |
-| Otros modelos de depth estimation monocular | Depth estimation | safetensors / ONNX | variable | Imagen | HuggingFace |
+| YOLO26n-depth (este) | Depth estimation | MXQv7 | AGPL-3.0 | Imagen (resolución no disponible) | Hugging Face (mobilint) |
+| Ultralytics/YOLO26 (base) | Visión general (incl. depth) | PyTorch | AGPL-3.0 | Imagen | Hugging Face / GitHub Ultralytics |
+| Otros modelos de depth estimation monocular | Depth estimation | safetensors / ONNX | variable | Imagen | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos alternativos en la información proporcionada para establecer una comparación cuantitativa fiable.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mobilint/YOLO26n-depth
+- Hugging Face: https://huggingface.co/mobilint/YOLO26n-depth
 - Repositorio de referencia de Mobilint (arxiv folder): https://github.com/mobilint/mblt-model-arxiv/tree/main/models/depth_estimation/YOLO26n_depth
 - Repositorio base de Ultralytics: https://github.com/ultralytics/ultralytics
-- Modelo base en HuggingFace: https://huggingface.co/Ultralytics/YOLO26
+- Modelo base en Hugging Face: https://huggingface.co/Ultralytics/YOLO26

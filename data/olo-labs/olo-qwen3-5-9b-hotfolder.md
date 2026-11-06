@@ -77,8 +77,8 @@ Datos adicionales de la model card: el entrenamiento corrigió 13 prompts que el
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olo-qwen3.5-9b-hotfolder | Adaptador sobre base 9B | No disponible | Tool calling MCP (hotfolder) | No disponible | HuggingFace (olo-labs) |
-| Qwen/Qwen3.5-9B (base) | 9B | No disponible | Modelo generalista con tool calling | No disponible | HuggingFace (Qwen) |
+| olo-qwen3.5-9b-hotfolder | Adaptador sobre base 9B | No disponible | Tool calling MCP (hotfolder) | No disponible | Hugging Face (olo-labs) |
+| Qwen/Qwen3.5-9B (base) | 9B | No disponible | Modelo generalista con tool calling | No disponible | Hugging Face (Qwen) |
 | Alternativas de tool calling de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables adicionales en la documentación proporcionada; la comparativa más directa es contra el propio modelo base, cuyos resultados se recogen en la sección de benchmarks.
@@ -97,7 +97,7 @@ No se dispone de información sobre modelos comparables adicionales en la docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/olo-labs/olo-qwen3.5-9b-hotfolder
+- Hugging Face: https://huggingface.co/olo-labs/olo-qwen3.5-9b-hotfolder
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio olo-toolgate: https://github.com/olo-labs/olo-toolgate
 - Herramienta de entrenamiento olo-ai-training-mcp: https://github.com/olo-labs/olo-ai-training-mcp

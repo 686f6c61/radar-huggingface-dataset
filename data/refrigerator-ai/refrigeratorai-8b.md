@@ -75,7 +75,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo es u
 
 ## Enlaces
 
-- Modelo original en HuggingFace: https://huggingface.co/refrigerator-ai/RefrigeratorAI-8B
+- Modelo original en Hugging Face: https://huggingface.co/refrigerator-ai/RefrigeratorAI-8B
 - Version GGUF (mradermacher): https://huggingface.co/mradermacher/RefrigeratorAI-8B-GGUF
 - Perfil de la organizacion Refrigerator AI: https://huggingface.co/refrigerator-ai
 - Listado de modelos de la organizacion: https://huggingface.co/refrigerator-ai/models

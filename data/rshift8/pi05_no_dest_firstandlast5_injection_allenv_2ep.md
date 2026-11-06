@@ -76,7 +76,7 @@ No se dispone de información suficiente para una comparativa cuantitativa. Sin 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rshift8/pi05_no_dest_firstandlast5_injection_allenv_2ep
+- Modelo en Hugging Face: https://huggingface.co/rshift8/pi05_no_dest_firstandlast5_injection_allenv_2ep
 - Modelo base (1 época): https://huggingface.co/rshift8/pi05_no_dest_firstandlast5_injection_allenv
 - Modelo similar (obs-only): https://huggingface.co/rshift8/pi05_obs_only_firstandlast3_injection_allenv
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

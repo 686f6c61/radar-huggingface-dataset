@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART `hang_tape_top` (este) | no disponible | no disponible | Manipulación robótica `hang_tape_top` | Apache 2.0 | HuggingFace (0 descargas) |
-| π0.5 SNUMPR DART par complementario (`alpha0p8-hang-tape-top`) | no disponible | no disponible | Tarea complementaria del mismo par | Apache 2.0 | HuggingFace |
+| π0.5 SNUMPR DART `hang_tape_top` (este) | no disponible | no disponible | Manipulación robótica `hang_tape_top` | Apache 2.0 | Hugging Face (0 descargas) |
+| π0.5 SNUMPR DART par complementario (`alpha0p8-hang-tape-top`) | no disponible | no disponible | Tarea complementaria del mismo par | Apache 2.0 | Hugging Face |
 | π0.5 base / openpi | no disponible en esta ficha | no disponible | VLA generalista | según upstream | Repositorios openpi |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-hang-tape-top-20261030
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-hang-tape-top-20261030
 - Modelo combinado (merge alpha 0.8): https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-hang-tape-top-20261030
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `c4fcb61`), sin URL directa en la información disponible
 - Repositorio de recetas: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`), sin URL directa en la información disponible

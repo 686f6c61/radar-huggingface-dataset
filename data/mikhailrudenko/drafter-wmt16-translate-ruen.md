@@ -83,10 +83,10 @@ No se dispone de datos de rendimiento estandar para comparar con drafters de ter
 
 | Modelo | Parametros | Dominio | eval_loss | top1_accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| drafter-wmt16-translate-ruen | 156,5M | Ruso a ingles (WMT16) | 2.363 | 50,04 % | Apache 2.0 | HuggingFace |
-| drafter-mixed-ut | no disponible | Mixto U+T (42 clusters) | 2.085 | 59,50 % | no disponible | HuggingFace |
-| drafter-wmt16-translate-deen | no disponible | Aleman a ingles (WMT16) | 2.307 | 52,77 % | no disponible | HuggingFace |
-| drafter-understanding | no disponible | Understanding (31 clusters) | 2.100 | 65,00 % | no disponible | HuggingFace |
+| drafter-wmt16-translate-ruen | 156,5M | Ruso a ingles (WMT16) | 2.363 | 50,04 % | Apache 2.0 | Hugging Face |
+| drafter-mixed-ut | no disponible | Mixto U+T (42 clusters) | 2.085 | 59,50 % | no disponible | Hugging Face |
+| drafter-wmt16-translate-deen | no disponible | Aleman a ingles (WMT16) | 2.307 | 52,77 % | no disponible | Hugging Face |
+| drafter-understanding | no disponible | Understanding (31 clusters) | 2.100 | 65,00 % | no disponible | Hugging Face |
 
 El drafter generalista `drafter-mixed-ut` presenta mejor `eval_loss` y `top1_accuracy` globales, pero esa metrica se mide sobre su propio conjunto agregado de 42 clusters; la comparacion solo es concluyente si se evalua la tasa de aceptacion real por dominio, dato que no se ha publicado.
 
@@ -105,12 +105,12 @@ El drafter generalista `drafter-mixed-ut` presenta mejor `eval_loss` y `top1_acc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-ruen
+- Modelo en Hugging Face: https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-ruen
 - Modelo base (drafter mixto U+T): https://huggingface.co/MikhailRudenko/drafter-mixed-ut
 - Modelo base original (Lite-Mistral-150M-v2-Instruct): https://huggingface.co/Felladrin/Lite-Mistral-150M-v2-Instruct
 - Modelo objetivo (TurboSparse-Mistral-Instruct, 7B): no se ha proporcionado enlace directo en la informacion disponible
 - Dataset de entrenamiento (MikhailRudenko/domain-aware-sd-synthetic): https://huggingface.co/datasets/MikhailRudenko/domain-aware-sd-synthetic
 - Drafters relacionados del mismo proyecto: https://huggingface.co/MikhailRudenko/drafter-understanding, https://huggingface.co/MikhailRudenko/drafter-text-reformulation
-- Otros pares de idiomas del mismo proyecto: drafter-wmt16-translate-tren, drafter-wmt16-translate-deen, drafter-wmt16-translate-csen, drafter-wmt16-translate-fien (enlaces bajo el mismo autor en HuggingFace)
+- Otros pares de idiomas del mismo proyecto: drafter-wmt16-translate-tren, drafter-wmt16-translate-deen, drafter-wmt16-translate-csen, drafter-wmt16-translate-fien (enlaces bajo el mismo autor en Hugging Face)
 - Paper o blog tecnico del proyecto: no disponible
 - Nota sobre la busqueda web: los resultados devueltos no guardan relacion con el modelo (contenido comercial de una papelería del Reino Unido), por lo que no se incluye ningun enlace adicional.

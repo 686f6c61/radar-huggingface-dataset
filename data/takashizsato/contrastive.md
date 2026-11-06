@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`takashizsato/contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario takashizsato. Se presenta como una implementación propia de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, con una configuración etiquetada como «xlarge» en la model card. No es un modelo entrenado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado.
+`takashizsato/contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario takashizsato. Se presenta como una implementación propia de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, con una configuración etiquetada como «xlarge» en la model card. No es un modelo entrenado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado.
 
 El dato más relevante es su tamaño real: 16.576 parámetros según el recuento de safetensors, es decir, aproximadamente 0,017 M. Existe una discrepancia evidente entre esa cifra y la etiqueta «xlarge» de la model card, que debe interpretarse como un nombre de configuración del script, no como una escala real de parámetros. El repositorio ocupa 0,0 GB, no tiene descargas ni likes, y no declara pipeline ni idiomas soportados.
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, no hay ninguno completado. El autor indica que `trai
 - Andamiaje de experimentos de aprendizaje contrastivo: reutilizar `pipeline.py` y `training_args.json` como plantilla reproducible para lanzar barridos de hiperparámetros con Adam y scheduler polinómico, fijando semillas y registrando versiones de entorno.
 - Ablaciones de arquitectura: comparar atención multi-query frente a atención estándar, o BatchNorm frente a LayerNorm, en un entorno controlado con un modelo de 16.576 parámetros que entrena en segundos.
 - Docencia y formación: ilustrar la estructura de un vision transformer y el flujo de configuración (`config.json` + `training_args.json`) sin necesidad de infraestructura de GPU.
-- Test de adaptadores de carga personalizados: validar el adaptador que el autor indica como necesario antes de usar APIs automáticas de HuggingFace con implementaciones no estándar.
+- Test de adaptadores de carga personalizados: validar el adaptador que el autor indica como necesario antes de usar APIs automáticas de Hugging Face con implementaciones no estándar.
 - Línea base de capacidad mínima: usar el modelo como referencia inferior en comparaciones de capacidad, tal y como sugiere la guía de evaluación del propio repositorio.
 - Verificación de formatos de serialización: comprobar la interoperabilidad de safetensors con el stack de PyTorch del equipo antes de migrar checkpoints de mayor tamaño.
 
@@ -67,10 +67,10 @@ Los valores de referencia de la columna «referencia» provienen de fuentes púb
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| takashizsato/contrastive | 16.576 | No disponible | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas |
-| DeiT-Tiny (referencia) | ~5 M | Imagen 224x224, 16x16 parches | ImageNet top-1 publicado por el autor original | Apache-2.0 (referencia) | HuggingFace / repos del autor original |
-| DeiT-Base (referencia) | ~86 M | Imagen 224x224, 16x16 parches | ImageNet top-1 publicado por el autor original | Apache-2.0 (referencia) | HuggingFace / repos del autor original |
-| DINOv2 ViT-S/14 (referencia) | ~22 M | Imagen 518x518, 14x14 parches | Métricas de linear probing y retrieval publicadas | Licencia propia de Meta (referencia) | HuggingFace |
+| takashizsato/contrastive | 16.576 | No disponible | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas |
+| DeiT-Tiny (referencia) | ~5 M | Imagen 224x224, 16x16 parches | ImageNet top-1 publicado por el autor original | Apache-2.0 (referencia) | Hugging Face / repos del autor original |
+| DeiT-Base (referencia) | ~86 M | Imagen 224x224, 16x16 parches | ImageNet top-1 publicado por el autor original | Apache-2.0 (referencia) | Hugging Face / repos del autor original |
+| DINOv2 ViT-S/14 (referencia) | ~22 M | Imagen 518x518, 14x14 parches | Métricas de linear probing y retrieval publicadas | Licencia propia de Meta (referencia) | Hugging Face |
 
 La diferencia clave frente a estas alternativas no es de rendimiento sino de estado: los tres modelos de referencia distribuyen pesos entrenados y evaluados, mientras que este repositorio distribuye una inicialización sin entrenar y sin métricas.
 
@@ -80,7 +80,7 @@ La diferencia clave frente a estas alternativas no es de rendimiento sino de est
 - El autor declara que el modelo no ha sido auditado en robustez, equidad ni transferencia de dominio.
 - No hay benchmarks, ni métricas, ni comparaciones controladas publicadas.
 - Discrepancia entre la etiqueta «xlarge» de la model card y los 16.576 parámetros reales: conviene no asumir ninguna capacidad asociada a la escala nominal.
-- Implementación personalizada: las APIs automáticas de carga de HuggingFace fallan sin un adaptador explícito, lo que complica su integración en pipelines estándar.
+- Implementación personalizada: las APIs automáticas de carga de Hugging Face fallan sin un adaptador explícito, lo que complica su integración en pipelines estándar.
 - Sin pipeline declarado, sin idiomas declarados y sin casos de uso validados por el autor.
 - Riesgo de alucinación: no aplica en el sentido de modelos de lenguaje, pero sí existe riesgo de interpretar erróneamente el repositorio como un modelo funcional.
 - Licencia BSD-3-Clause: permite uso comercial y modificación, pero obliga a conservar el aviso de copyright y la cláusula de exención, y prohíbe usar el nombre del autor para promocionar derivados sin permiso. El propio autor advierte de revisar los términos de los datos de origen si se combina con datasets externos.
@@ -89,5 +89,5 @@ La diferencia clave frente a estas alternativas no es de rendimiento sino de est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takashizsato/contrastive
+- Hugging Face: https://huggingface.co/takashizsato/contrastive
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados a este modelo.

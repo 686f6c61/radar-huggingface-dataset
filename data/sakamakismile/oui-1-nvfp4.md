@@ -85,10 +85,10 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K) en l
 
 | Modelo | Parametros | Contexto | Generative UI Bench (complete) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OUI-1-NVFP4 (este repositorio) | 25,8 mil millones totales, ~4B activos | 16.384 tokens en la config de servicio | 121/184 (65,8%) | Apache 2.0 | HuggingFace, cuantizacion no oficial |
-| thesysdev/OUI-1 (FP8, publicado por Thesys) | mismo modelo base (26B-A4B) | no disponible | 132/184 (71,7%) | Apache 2.0 | HuggingFace; ejecutado en A100 |
-| nvidia/diffusiongemma-26B-A4B-it-NVFP4 | mismo modelo base (26B-A4B) | no disponible | 14/184 (7,6%) | no disponible | HuggingFace |
-| DiffusionGemma 26B-A4B-it FP8 (publicado) | mismo modelo base (26B-A4B) | no disponible | 24/184 (13,0%) | no disponible | HuggingFace; ejecutado en A100 |
+| OUI-1-NVFP4 (este repositorio) | 25,8 mil millones totales, ~4B activos | 16.384 tokens en la config de servicio | 121/184 (65,8%) | Apache 2.0 | Hugging Face, cuantizacion no oficial |
+| thesysdev/OUI-1 (FP8, publicado por Thesys) | mismo modelo base (26B-A4B) | no disponible | 132/184 (71,7%) | Apache 2.0 | Hugging Face; ejecutado en A100 |
+| nvidia/diffusiongemma-26B-A4B-it-NVFP4 | mismo modelo base (26B-A4B) | no disponible | 14/184 (7,6%) | no disponible | Hugging Face |
+| DiffusionGemma 26B-A4B-it FP8 (publicado) | mismo modelo base (26B-A4B) | no disponible | 24/184 (13,0%) | no disponible | Hugging Face; ejecutado en A100 |
 
 La diferencia clave entre este checkpoint y el NVFP4 de NVIDIA no esta en el esquema de cuantizacion, sino en el fine-tune: OUI-1 esta ajustado a la tarea de generacion de UI, mientras que el checkpoint de NVIDIA parte del modelo base sin ese ajuste. Frente a la version FP8 de OUI-1, este repositorio pierde 11 puntos absolutos en completitud (132 a 121 sobre 184) a cambio de reducir el hardware necesario de una A100 a dos GPU de 16 GB.
 
@@ -108,7 +108,7 @@ La diferencia clave entre este checkpoint y el NVFP4 de NVIDIA no esta en el esq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sakamakismile/OUI-1-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/sakamakismile/OUI-1-NVFP4
 - Modelo base (fine-tune de UI): https://huggingface.co/thesysdev/OUI-1
 - Checkpoint NVFP4 de NVIDIA sobre el modelo base: https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4
 - Benchmark de UI generativa: https://github.com/thesysdev/generative-ui-bench

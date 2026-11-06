@@ -74,9 +74,9 @@ No se dispone de datos cuantitativos (parámetros, contexto, métricas) de los d
 
 | Modelo | Tipo | Idiomas | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| MELD | Encoder ModernBERT (Ettin-1B) + cabeza de scoring | en | MIT | HuggingFace (espejo) | 1,03 B parametros; benchmarks no disponibles |
-| jhu-clsp/ettin-encoder-1b | Encoder ModernBERT base | en (mayoritariamente) | No disponible en esta informacion | HuggingFace | Modelo base de MELD; no es un detector |
-| Detectores basados en RoBERTa (estilo OpenAI) | Encoder + clasificador | en | Varía segun implementacion | HuggingFace | Parametros y metricas no disponibles en esta informacion |
+| MELD | Encoder ModernBERT (Ettin-1B) + cabeza de scoring | en | MIT | Hugging Face (espejo) | 1,03 B parametros; benchmarks no disponibles |
+| jhu-clsp/ettin-encoder-1b | Encoder ModernBERT base | en (mayoritariamente) | No disponible en esta informacion | Hugging Face | Modelo base de MELD; no es un detector |
+| Detectores basados en RoBERTa (estilo OpenAI) | Encoder + clasificador | en | Varía segun implementacion | Hugging Face | Parametros y metricas no disponibles en esta informacion |
 | GPTZero y otros servicios cerrados | Servicio propietario | Multiples | Propietaria | API de pago | No comparable en terminos de pesos o licencia |
 | Binoculars / Fast-DetectGPT | Metodos basados en modelos de lenguaje de referencia | en | Varía | Codigo abierto | Requieren un LLM de referencia; metricas no disponibles en esta informacion |
 
@@ -97,7 +97,7 @@ La ventaja principal de MELD frente a los servicios cerrados es la licencia MIT 
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/odeveloper/meld
+- Modelo en Hugging Face (espejo): https://huggingface.co/odeveloper/meld
 - Repositorio original espejado: https://huggingface.co/anon-review-meld-2026/meld
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-1b
 - Paper: https://arxiv.org/abs/2605.06903

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Krishnasri2027/qwen25-coder-1.5b-instruct-fine-tuned-merged` es un modelo de lenguaje de tipo transformer con 1.543.714.304 parámetros, resultado de un proceso de fine-tuning y posterior merge sobre el modelo base `Qwen2.5-Coder-1.5B-Instruct`. Ha sido publicado en HuggingFace por el usuario Krishnasri2027 el 6 de septiembre de 2026, y se distribuye en formato safetensors.
+El modelo `Krishnasri2027/qwen25-coder-1.5b-instruct-fine-tuned-merged` es un modelo de lenguaje de tipo transformer con 1.543.714.304 parámetros, resultado de un proceso de fine-tuning y posterior merge sobre el modelo base `Qwen2.5-Coder-1.5B-Instruct`. Ha sido publicado en Hugging Face por el usuario Krishnasri2027 el 6 de septiembre de 2026, y se distribuye en formato safetensors.
 
 La información disponible sobre este modelo es extremadamente limitada: la model card es una plantilla automática sin datos de entrenamiento, evaluación, licencia o idiomas soportados. Por tanto, no es posible determinar con precisión qué problema resuelve ni qué mejoras introduce respecto al modelo base. Se trata de un modelo de generación de texto orientado a código, aunque no se han publicado resultados de benchmarks que permitan validar su rendimiento.
 
@@ -80,6 +80,6 @@ No se han encontrado datos de rendimiento ni especificaciones completas de ningu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Krishnasri2027/qwen25-coder-1.5b-instruct-fine-tuned-merged
+- Hugging Face: https://huggingface.co/Krishnasri2027/qwen25-coder-1.5b-instruct-fine-tuned-merged
 - Modelo base Qwen2.5-Coder-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Modelo Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B

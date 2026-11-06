@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zfan3/5in1_OneStage_223half22_Omni_73k_linear_v6_head_benchmarking` es un repositorio publicado en HuggingFace por el usuario zfan3, con licencia MIT y un tamaño de aproximadamente 0,4 GB. Según los metadatos, contiene pesos en formato safetensors con un total de 33.509.203 parámetros, lo que lo sitúa en la categoría de modelos pequeños. El nombre sugiere una arquitectura de una sola etapa con múltiples componentes (5 en 1), posiblemente orientada a tareas de razonamiento o generación multimodal, pero no se dispone de documentación técnica que lo confirme.
+El modelo `zfan3/5in1_OneStage_223half22_Omni_73k_linear_v6_head_benchmarking` es un repositorio publicado en Hugging Face por el usuario zfan3, con licencia MIT y un tamaño de aproximadamente 0,4 GB. Según los metadatos, contiene pesos en formato safetensors con un total de 33.509.203 parámetros, lo que lo sitúa en la categoría de modelos pequeños. El nombre sugiere una arquitectura de una sola etapa con múltiples componentes (5 en 1), posiblemente orientada a tareas de razonamiento o generación multimodal, pero no se dispone de documentación técnica que lo confirme.
 
 La model card es extremadamente escueta: únicamente indica la licencia MIT. No se proporcionan detalles sobre arquitectura, datos de entrenamiento, capacidades, benchmarks ni instrucciones de uso. Este repositorio parece ser un experimento o un checkpoint de evaluación, dado el sufijo "benchmarking" en el nombre y el hecho de que no tiene descargas ni likes. A pesar de su limitada documentación, puede resultar de interés para quienes buscan modelos pequeños de código abierto con licencia permisiva, aunque su utilidad práctica sin especificaciones adicionales es muy limitada.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Con 33,5 millones de parámetros, el modelo es muy ligero y puede ejecutarse en CPU sin problemas.
 - La VRAM necesaria para inferencia en GPU sería inferior a 1 GB incluso en precisión FP32 (aproximadamente 134 MB de pesos).
 - Cabe en cualquier GPU consumer moderna (GTX 1060, RTX 3060, etc.) y también en hardware integrado.
-- Para despliegue, se puede usar cualquier framework que soporte safetensors: HuggingFace Transformers, llama.cpp (si se convierte a GGUF), o vLLM para servir con alta concurrencia.
+- Para despliegue, se puede usar cualquier framework que soporte safetensors: Hugging Face Transformers, llama.cpp (si se convierte a GGUF), o vLLM para servir con alta concurrencia.
 - La latencia y el throughput no se han medido, pero al ser un modelo pequeño, se espera una inferencia muy rápida en GPU y aceptable en CPU.
 
 ## Comparativa con modelos similares
@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zfan3/5in1_OneStage_223half22_Omni_73k_linear_v6_head_benchmarking
+- Repositorio en Hugging Face: https://huggingface.co/zfan3/5in1_OneStage_223half22_Omni_73k_linear_v6_head_benchmarking
 
 No se encontraron otros enlaces relevantes (papers, blogs, repositorios de código) asociados a este modelo.

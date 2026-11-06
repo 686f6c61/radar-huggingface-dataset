@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Handwriting Segmenter es un modelo de segmentación de imágenes de documentos especializado en separar, dentro de una página escaneada, cuatro clases de píxel: fondo, texto impreso, escritura manual y solapamiento entre escritura manual y texto impreso. Lo publica el usuario guoguo27 en HuggingFace y deriva de Inoob/DIS-Handwriting-Remover, que a su vez se basa en la arquitectura IS-Net del repositorio xuebinqin/DIS. El modelo se distribuye exclusivamente en formato ONNX (opset 17) y está pensado para ejecutarse con onnxruntime sin depender de frameworks de deep learning completos.
+Handwriting Segmenter es un modelo de segmentación de imágenes de documentos especializado en separar, dentro de una página escaneada, cuatro clases de píxel: fondo, texto impreso, escritura manual y solapamiento entre escritura manual y texto impreso. Lo publica el usuario guoguo27 en Hugging Face y deriva de Inoob/DIS-Handwriting-Remover, que a su vez se basa en la arquitectura IS-Net del repositorio xuebinqin/DIS. El modelo se distribuye exclusivamente en formato ONNX (opset 17) y está pensado para ejecutarse con onnxruntime sin depender de frameworks de deep learning completos.
 
 El problema que resuelve es concreto: dado un examen o cuestionario escaneado con las respuestas de un estudiante escritas a mano, generar una máscara que permita borrar esas respuestas y dejar la hoja limpia para reutilizarla como plantilla de práctica. No es un modelo generativo ni un OCR; produce logits por píxel que, tras softmax, permiten decidir qué zonas son tinta manuscrita.
 
@@ -73,8 +73,8 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Tipo | Clases | Contexto/resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| guoguo27/handwriting-segmenter | IS-Net ONNX | 4 (fondo, impreso, manuscrito, solapamiento) | 1536 px lado largo | Apache-2.0 | HuggingFace, 0 descargas |
-| Inoob/DIS-Handwriting-Remover | IS-Net (modelo base) | binaria (manuscrito/no manuscrito) | no disponible | no disponible en la información | HuggingFace |
+| guoguo27/handwriting-segmenter | IS-Net ONNX | 4 (fondo, impreso, manuscrito, solapamiento) | 1536 px lado largo | Apache-2.0 | Hugging Face, 0 descargas |
+| Inoob/DIS-Handwriting-Remover | IS-Net (modelo base) | binaria (manuscrito/no manuscrito) | no disponible | no disponible en la información | Hugging Face |
 | xuebinqin/DIS | IS-Net original | binaria (saliencia) | no disponible | no disponible en la información | GitHub |
 
 La comparación con alternativas de la misma categoría (segmentadores de documentos especializados en separar impreso y manuscrito) no está disponible en la información proporcionada.
@@ -91,7 +91,7 @@ La comparación con alternativas de la misma categoría (segmentadores de docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guoguo27/handwriting-segmenter
+- Modelo en Hugging Face: https://huggingface.co/guoguo27/handwriting-segmenter
 - Modelo base: https://huggingface.co/Inoob/DIS-Handwriting-Remover
 - Repositorio de código de entrenamiento: https://github.com/Illvuu/handwriting-segmenter
 - Repositorio original de IS-Net (DIS): https://github.com/xuebinqin/DIS

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`momo2215/afrierp-agent-stock-v2` es un fine-tune del modelo `unsloth/qwen2.5-7b-bnb-4bit`, es decir, una adaptación de Qwen2.5 7B sobre una base cuantizada a 4 bits mediante bitsandbytes. El autor, momo2215, lo presenta como un modelo de generación de texto en inglés orientado a tareas de agente en el ámbito de ERP y gestión de stock, según su denominación. Se entrenó con la librería Unsloth y el framework TRL de HuggingFace, lo que sugiere un ajuste eficiente de tipo LoRA/QLoRA.
+`momo2215/afrierp-agent-stock-v2` es un fine-tune del modelo `unsloth/qwen2.5-7b-bnb-4bit`, es decir, una adaptación de Qwen2.5 7B sobre una base cuantizada a 4 bits mediante bitsandbytes. El autor, momo2215, lo presenta como un modelo de generación de texto en inglés orientado a tareas de agente en el ámbito de ERP y gestión de stock, según su denominación. Se entrenó con la librería Unsloth y el framework TRL de Hugging Face, lo que sugiere un ajuste eficiente de tipo LoRA/QLoRA.
 
 La relevancia de este modelo es limitada en el momento de su publicación: cuenta con cero descargas y cero likes, y el repositorio declara un tamaño de 0.0 GB, lo que indica que los pesos del modelo podrían no estar realmente publicados o estar alojados externamente. La model card es mínima y no aporta detalles sobre el dataset de entrenamiento, los hiperparámetros ni las capacidades específicas más allá de las heredadas de Qwen2.5 7B.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada en el momento de su publicación: cuent
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre `unsloth/qwen2.5-7b-bnb-4bit`, una version de Qwen2.5 7B cuantizada a 4 bits con bitsandbytes y optimizada por Unsloth para entrenamiento eficiente. Qwen2.5 7B es un transformer decoder-only con attention completa, preentrenado sobre aproximadamente 18 billones de tokens. El fine-tune se realizo con la libreria Unsloth y el framework TRL de HuggingFace, lo que apunta a un entrenamiento de tipo QLoRA (adaptadores de bajo rango sobre la base 4-bit). No se dispone de informacion sobre el dataset utilizado, el numero de pasos de entrenamiento, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La denominacion "agent-stock" sugiere un proposito orientado a agentes de gestion de inventario en sistemas ERP, pero no hay documentacion que confirme esta interpretacion.
+El modelo se construye sobre `unsloth/qwen2.5-7b-bnb-4bit`, una version de Qwen2.5 7B cuantizada a 4 bits con bitsandbytes y optimizada por Unsloth para entrenamiento eficiente. Qwen2.5 7B es un transformer decoder-only con attention completa, preentrenado sobre aproximadamente 18 billones de tokens. El fine-tune se realizo con la libreria Unsloth y el framework TRL de Hugging Face, lo que apunta a un entrenamiento de tipo QLoRA (adaptadores de bajo rango sobre la base 4-bit). No se dispone de informacion sobre el dataset utilizado, el numero de pasos de entrenamiento, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La denominacion "agent-stock" sugiere un proposito orientado a agentes de gestion de inventario en sistemas ERP, pero no hay documentacion que confirme esta interpretacion.
 
 ## Capacidades
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | momo2215/afrierp-agent-stock-v2 | ~7B | no disponible | Apache 2.0 | Repo de 0.0 GB, posiblemente sin pesos |
-| Qwen2.5 7B (base) | 7B | 32 768 tokens | Apache 2.0 | Completa en HuggingFace |
-| Qwen2.5 7B Instruct | 7B | 32 768 tokens | Apache 2.0 | Completa en HuggingFace |
-| Llama 3.1 8B | 8B | 131 072 tokens | Llama 3.1 license | Completa en HuggingFace |
+| Qwen2.5 7B (base) | 7B | 32 768 tokens | Apache 2.0 | Completa en Hugging Face |
+| Qwen2.5 7B Instruct | 7B | 32 768 tokens | Apache 2.0 | Completa en Hugging Face |
+| Llama 3.1 8B | 8B | 131 072 tokens | Llama 3.1 license | Completa en Hugging Face |
 
 La comparativa se limita a modelos de tamano similar porque no existe informacion sobre el rendimiento especifico de este fine-tune. La principal diferencia con sus alternativas es la falta de documentacion y la posible ausencia de pesos publicados, lo que hace que el modelo base Qwen2.5 7B Instruct sea una opcion mas fiable para la mayoria de casos de uso.
 
@@ -79,7 +79,7 @@ La comparativa se limita a modelos de tamano similar porque no existe informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/momo2215/afrierp-agent-stock-v2
+- Repositorio Hugging Face: https://huggingface.co/momo2215/afrierp-agent-stock-v2
 - Version anterior v1: https://huggingface.co/momo2215/afrierp-agent-stock-v1
 - Pagina de FriendliAI para v1: https://friendli.ai/models/momo2215/afrierp-agent-stock-v1
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-7b-bnb-4bit

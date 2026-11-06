@@ -76,7 +76,7 @@ Velocidad registrada en Apple M4 Max (medianas sobre 118 casos, MTP desactivado)
 | Este fichero (`gemma-4-E4B-it-litert-lm-rope-composite`) | no disponible (Gemma 4 E4B) | 8.192 tok | `.litertlm`, 8,2 GB | Apache 2.0 | RoPE composite, sin soft cap de logits, solo texto |
 | `litert-community/gemma-4-E4B-it-litert-lm` (stock) | no disponible (Gemma 4 E4B) | no disponible en la informacion | `.litertlm`, 3,66 GB | Apache 2.0 | Version oficial; falla copia a partir de posicion 2.097 en GPU fp16 |
 | `mlboydaisuke/gemma-4-E2B-it-litert-lm-rope-composite` | no disponible (Gemma 4 E2B) | 32.768 tok | `.litertlm` | Apache 2.0 | Variante E2B del mismo experimento, con y sin flag |
-| `google/gemma-4-E4B-it` (modelo fuente) | no disponible | no disponible en la informacion | safetensors (HuggingFace) | Gemma 4 License (via `license_link`) | Modelo original en transformers; incluye cap de logits |
+| `google/gemma-4-E4B-it` (modelo fuente) | no disponible | no disponible en la informacion | safetensors (Hugging Face) | Gemma 4 License (via `license_link`) | Modelo original en transformers; incluye cap de logits |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ Velocidad registrada en Apple M4 Max (medianas sobre 118 casos, MTP desactivado)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlboydaisuke/gemma-4-E4B-it-litert-lm-rope-composite
+- Repositorio Hugging Face: https://huggingface.co/mlboydaisuke/gemma-4-E4B-it-litert-lm-rope-composite
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Fichero oficial LiteRT-LM: https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm
 - Variante E2B del mismo experimento: https://huggingface.co/mlboydaisuke/gemma-4-E2B-it-litert-lm-rope-composite

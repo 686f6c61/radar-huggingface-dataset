@@ -17,7 +17,7 @@ La relevancia práctica del repositorio es acotada: se publica bajo licencia apa
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (modelo de texto a imagen; no se especifica la longitud máxima de prompt admitida por el codificador de texto) |
 | Tipos de cuantización | No disponible. El ejemplo oficial carga el pipeline en `torch.bfloat16` y los pesos del adaptador se distribuyen en safetensors |
-| Idiomas soportados | No disponible (la ficha de HuggingFace no declara idiomas) |
+| Idiomas soportados | No disponible (la ficha de Hugging Face no declara idiomas) |
 | Licencia | apache-2.0 (la licencia de los checkpoints base Krea-2-Raw y Krea-2-Turbo no se detalla en la información disponible) |
 | Formato de pesos | safetensors (adaptador LoRA para diffusers) |
 | Modelo base | krea/Krea-2-Raw (entrenamiento) y krea/Krea-2-Turbo (inferencia) |
@@ -87,7 +87,7 @@ No se dispone de adaptadores LoRA comparables con métricas publicadas en la inf
 | Classifier-free guidance | No especificado | 0.0 | 0.0 |
 | Formato | No disponible | No disponible | safetensors (LoRA) |
 | Licencia | No disponible | No disponible | apache-2.0 |
-| Disponibilidad | HuggingFace (krea/Krea-2-Raw) | HuggingFace (krea/Krea-2-Turbo) | HuggingFace, 9 descargas, 0 likes |
+| Disponibilidad | Hugging Face (krea/Krea-2-Raw) | Hugging Face (krea/Krea-2-Turbo) | Hugging Face, 9 descargas, 0 likes |
 
 Frente a otras estrategias de personalización, este LoRA comparte las ventajas habituales de la técnica: artefacto de 1,0 GB en lugar de una copia completa del modelo, posibilidad de combinarlo con otros adaptadores y de fusionarlo en los pesos base. No hay datos que permitan comparar su fidelidad de identidad o su adherencia al prompt con alternativas.
 
@@ -107,7 +107,7 @@ Frente a otras estrategias de personalización, este LoRA comparte las ventajas 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/chaeyidpt001/prot-asim-kr2-002
+- Página del modelo en Hugging Face: https://huggingface.co/chaeyidpt001/prot-asim-kr2-002
 - Archivos y versiones del adaptador: https://huggingface.co/chaeyidpt001/prot-asim-kr2-002/tree/main
 - Modelo base para entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base para inferencia: https://huggingface.co/krea/Krea-2-Turbo

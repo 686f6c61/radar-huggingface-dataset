@@ -46,7 +46,7 @@ Los hiperparametros de entrenamiento, el numero de tokens vistos, la composicion
 - Estudio de varianza entre semillas: al existir variantes con `seed10`, `seed3407` y `seed455`, permite cuantificar cuanto cambia la perplexity o la calidad de generacion segun la semilla inicial en entrenamientos de bajos recursos.
 - Validacion de infraestructura de despliegue: gracias a sus 0,2 GB de pesos y al tag `endpoints_compatible`, sirve para probar pipelines de TGI, contenedores de inferencia o integraciones de API antes de desplegar modelos grandes, con un coste de recursos minimo.
 - Generacion de texto en dispositivos sin GPU: con unos 173 MB en bf16 o fp16 y alrededor de 87 MB en int8, cabe en CPU, en Raspberry Pi o en entornos embebidos, util para demos offline.
-- Docencia y talleres de ajuste fino: es un caso practico de SFT con TRL sobre un modelo pequeno, adecuado para ilustrar el flujo completo de entrenamiento y publicacion en HuggingFace sin requerir hardware especializado.
+- Docencia y talleres de ajuste fino: es un caso practico de SFT con TRL sobre un modelo pequeno, adecuado para ilustrar el flujo completo de entrenamiento y publicacion en Hugging Face sin requerir hardware especializado.
 - Investigacion sobre modelos de bajos recursos: permite analizar que tipo de fluidez y de cobertura lexica se alcanza entrenando solo con 100 MB de texto, y como se degrada al ajustar con SFT sobre esa base.
 - Generacion de texto sintetico para prototipos: puede emplearse para poblar maquetas o tests de integracion donde no importa la calidad del contenido, siempre que la salida pase por revision humana.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed455` | 86.508.288 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible (misma familia y presupuesto de datos de 100 MB) | no disponible | ingles (`eng_latn`) | no disponible en la informacion consultada | HuggingFace |
-| Variantes del mismo autor (`*-nor-*`, `*-isl-*`, `*-arb-*` con semillas 10, 3407, etc.) | no disponibles | no disponibles | no disponibles | no disponibles | HuggingFace y espejos como llm-explorer o FriendliAI |
-| GPT-2 small (`openai-community/gpt2`) | 124 millones | 1.024 tokens | ingles | licencia MIT | HuggingFace, ampliamente desplegado |
+| `francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed455` | 86.508.288 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible (misma familia y presupuesto de datos de 100 MB) | no disponible | ingles (`eng_latn`) | no disponible en la informacion consultada | Hugging Face |
+| Variantes del mismo autor (`*-nor-*`, `*-isl-*`, `*-arb-*` con semillas 10, 3407, etc.) | no disponibles | no disponibles | no disponibles | no disponibles | Hugging Face y espejos como llm-explorer o FriendliAI |
+| GPT-2 small (`openai-community/gpt2`) | 124 millones | 1.024 tokens | ingles | licencia MIT | Hugging Face, ampliamente desplegado |
 
 La comparacion con GPT-2 small es orientativa: comparten arquitectura y orden de magnitud, pero GPT-2 small fue entrenado con un volumen de datos muy superiora los 100 MB del modelo base Goldfish, por lo que no cabe esperar un rendimiento equiparable. No se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa.
 
@@ -87,7 +87,7 @@ La comparacion con GPT-2 small es orientativa: comparten arquitectura y orden de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/z7fa13ju
 - Repositorio de TRL: https://github.com/huggingface/trl

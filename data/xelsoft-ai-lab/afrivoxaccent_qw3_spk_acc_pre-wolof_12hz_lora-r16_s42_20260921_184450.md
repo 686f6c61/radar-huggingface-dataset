@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260921_184450 es un adaptador LoRA de text-to-speech (TTS) publicado por el usuario xelsoft-ai-lab en HuggingFace, orientado a la sintesis de voz en wolof con control de acento regional. Segun su model card, se trata de un adaptador PEFT entrenado sobre otro adaptador LoRA (rank 32) del proyecto AfriVoxAccent, concretamente sobre `xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933`. El nombre del repositorio codifica los hiperparametros principales: rank 16 (`r16`), semilla 42 (`s42`), tasa de frames de 12 Hz (`12hz`) y un canal de acento basado en token (`token`).
+AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260921_184450 es un adaptador LoRA de text-to-speech (TTS) publicado por el usuario xelsoft-ai-lab en Hugging Face, orientado a la sintesis de voz en wolof con control de acento regional. Segun su model card, se trata de un adaptador PEFT entrenado sobre otro adaptador LoRA (rank 32) del proyecto AfriVoxAccent, concretamente sobre `xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933`. El nombre del repositorio codifica los hiperparametros principales: rank 16 (`r16`), semilla 42 (`s42`), tasa de frames de 12 Hz (`12hz`) y un canal de acento basado en token (`token`).
 
 El modelo aborda un problema concreto dentro del TTS de bajos recursos: no solo generar voz en wolof, sino permitir la seleccion de variedades dialectales o acentuales dentro del idioma. La model card menciona explicitamente tres acentos soportados (baol, dakar y fouta), lo que sugiere un diseno de condicionamiento por token de acento ademas del condicionamiento por hablante (prefijo `spk` en el nombre del repositorio).
 
@@ -16,7 +16,7 @@ La relevancia del modelo es limitada y hay que contextualizarla: cuenta con 0 de
 | Parametros totales | no disponible (tamano del repositorio: 0,7 GB, incluye los pesos del adaptador) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (los pesos se distribuyen en safetensors, sin variantes GGUF ni cuantizadas declaradas) |
-| Idiomas soportados | wolof (segun etiquetas y model card); los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | wolof (segun etiquetas y model card); los metadatos de Hugging Face no declaran idiomas |
 | Licencia | no disponible (no se especifica en la model card ni en los metadatos) |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Rank de LoRA | 16 |
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de TT
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42 | no disponible (adaptador LoRA r16) | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
+| AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42 | no disponible (adaptador LoRA r16) | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de TT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260921_184450
+- Modelo en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260921_184450
 - Modelo base declarado: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933
 - Organizacion autora: https://huggingface.co/xelsoft-ai-lab
 - Paper, blog, repositorio o demo adicionales: no disponibles. La busqueda web realizada no devolvio resultados relacionados con este modelo ni con TTS en wolof.

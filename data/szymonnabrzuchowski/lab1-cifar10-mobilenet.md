@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SzymonNabrzuchowski/lab1-cifar10-mobilenet es un clasificador de imagenes de 10 clases entrenado sobre el conjunto de datos CIFAR-10. Se trata de un modelo docente o de laboratorio: el propio autor lo presenta como un ejercicio de fine-tuning de una MobileNetV3 Small de torchvision, inicializada con pesos preentrenados en ImageNet y ajustada en una GPU de Google Colab. El repositorio no incluye pesos en formatos de despliegue habituales ni una licencia declarada, y acumula cero descargas y cero likes en HuggingFace.
+SzymonNabrzuchowski/lab1-cifar10-mobilenet es un clasificador de imagenes de 10 clases entrenado sobre el conjunto de datos CIFAR-10. Se trata de un modelo docente o de laboratorio: el propio autor lo presenta como un ejercicio de fine-tuning de una MobileNetV3 Small de torchvision, inicializada con pesos preentrenados en ImageNet y ajustada en una GPU de Google Colab. El repositorio no incluye pesos en formatos de despliegue habituales ni una licencia declarada, y acumula cero descargas y cero likes en Hugging Face.
 
 La arquitectura es una red neuronal convolucional MobileNetV3 Small, con la capa clasificadora final sustituida por una capa lineal de 10 salidas correspondientes a las clases airplane, automobile, bird, cat, deer, dog, frog, horse, ship y truck. El entrenamiento se realizo durante 5 epocas con AdamW y una tasa de aprendizaje de 0,001, seleccionando el checkpoint por precision de validacion.
 
@@ -16,14 +16,14 @@ Su relevancia es limitada fuera del ambito academico: no es un modelo de proposi
 | Parametros totales | no disponible |
 | Longitud de contexto | no aplica (modelo de vision, entrada de imagen) |
 | Tipos de cuantizacion | no disponible (solo se publica el state dict en precision original) |
-| Idiomas soportados | en (segun las etiquetas de HuggingFace; las etiquetas de clase estan en ingles) |
+| Idiomas soportados | en (segun las etiquetas de Hugging Face; las etiquetas de clase estan en ingles) |
 | Licencia | no disponible |
 | Formato de pesos | PyTorch state dictionary (`model.pth`) |
 | Numero de clases | 10 (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck) |
 | Resolucion de entrada | 128 x 128 RGB, normalizada con media y desviacion tipica de `config.json` |
 | Fecha de creacion | 2026-10-09 |
 | Fecha de actualizacion | 2026-10-09 |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 
@@ -77,7 +77,7 @@ No se han publicado mas resultados de benchmarks en la informacion disponible. L
 
 | Modelo | Arquitectura | Parametros | Entrada | Accuracy en CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SzymonNabrzuchowski/lab1-cifar10-mobilenet | MobileNetV3 Small | no disponible | 128 x 128 RGB | 0,9039 (test) | no disponible | HuggingFace, 0 descargas |
+| SzymonNabrzuchowski/lab1-cifar10-mobilenet | MobileNetV3 Small | no disponible | 128 x 128 RGB | 0,9039 (test) | no disponible | Hugging Face, 0 descargas |
 | MobileNetV3 Small (torchvision, preentrenado en ImageNet) | MobileNetV3 Small | no disponible en esta ficha | variable | no evaluado en CIFAR-10 en la informacion disponible | licencia de torchvision (no indicada aqui) | torchvision |
 | ResNet-18 fine-tuned en CIFAR-10 | CNN residual | no disponible | normalmente 32 x 32 o superior | no disponible | no disponible | multiples repositorios publicos |
 
@@ -93,9 +93,9 @@ No se dispone de datos de rendimiento homogeneos de modelos comparables en la in
 - Riesgo de sesgos y de alucinacion: como clasificador, el riesgo de alucinacion se traduce en falsos positivos confiados; no se documenta ningun analisis de sesgo por clase ni de rendimiento por subgrupos.
 - Idiomas: la etiqueta de idioma es `en` y las etiquetas de clase estan en ingles; no hay soporte multilingue porque el modelo no procesa texto.
 - El repositorio no incluye pesos en formatos estandar de despliegue ni una model card con informacion de hardware, por lo que la integracion en produccion requiere trabajo adicional.
-- Sin descargas ni likes en HuggingFace y con fechas de creacion y actualizacion identicas: no hay evidencia de mantenimiento posterior.
+- Sin descargas ni likes en Hugging Face y con fechas de creacion y actualizacion identicas: no hay evidencia de mantenimiento posterior.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SzymonNabrzuchowski/lab1-cifar10-mobilenet
+- Modelo en Hugging Face: https://huggingface.co/SzymonNabrzuchowski/lab1-cifar10-mobilenet
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

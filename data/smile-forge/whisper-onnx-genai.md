@@ -86,7 +86,7 @@ Los datos de parametros y contexto de los modelos openai corresponden a la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smile-forge/whisper-onnx-genai
+- Modelo en Hugging Face: https://huggingface.co/smile-forge/whisper-onnx-genai
 - Modelo base openai/whisper-small: https://huggingface.co/openai/whisper-small
 - Modelo base openai/whisper-small.en: https://huggingface.co/openai/whisper-small.en
 - onnxruntime-genai: https://github.com/microsoft/onnxruntime-genai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`batmac/gradient-ai-text-detector-onnx` es una exportación a ONNX del clasificador binario `ShantanuT01/gradient-ai-text-detector`, un modelo basado en DeBERTa-v3-large que estima la probabilidad de que un texto haya sido generado por IA. Lo publica el usuario de HuggingFace `batmac` y su rasgo diferencial es el formato: en lugar de pesos PyTorch, ofrece tres variantes ONNX (fp32, fp16 y q4) listas para `transformers.js`, de modo que el modelo puede ejecutarse íntegramente en el navegador sin servidor de inferencia.
+`batmac/gradient-ai-text-detector-onnx` es una exportación a ONNX del clasificador binario `ShantanuT01/gradient-ai-text-detector`, un modelo basado en DeBERTa-v3-large que estima la probabilidad de que un texto haya sido generado por IA. Lo publica el usuario de Hugging Face `batmac` y su rasgo diferencial es el formato: en lugar de pesos PyTorch, ofrece tres variantes ONNX (fp32, fp16 y q4) listas para `transformers.js`, de modo que el modelo puede ejecutarse íntegramente en el navegador sin servidor de inferencia.
 
 El modelo original es un clasificador de una sola etiqueta (`num_labels = 1`): emite un único logit y es el llamador quien debe aplicar una sigmoide para obtener P(AI). La model card advierte explícitamente de que no se use el pipeline `text-classification` de transformers.js, porque aplica softmax sobre ese logit único y devuelve `score: 1` para cualquier entrada. El resultado no es una probabilidad de autoría calibrada, según advierte la propia documentación heredada del modelo original.
 
@@ -82,10 +82,10 @@ No hay datos de rendimiento frente a otros detectores de texto generado en la in
 
 | Modelo / variante | Formato | Tamano | Precisión relativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `batmac/gradient-ai-text-detector-onnx` (q4) | ONNX, int4 weight-only | 408 MB | delta máximo de P 0,06 frente a fp32 | MIT | HuggingFace, pensado para transformers.js |
-| `batmac/gradient-ai-text-detector-onnx` (fp16) | ONNX, fp16 | 832 MB | delta máximo de P 0,0004 frente a fp32 | MIT | HuggingFace, pensado para transformers.js |
-| `batmac/gradient-ai-text-detector-onnx` (fp32) | ONNX, fp32 | 1661 MB | referencia (1,5e-05 frente a PyTorch) | MIT | HuggingFace, pensado para transformers.js |
-| `ShantanuT01/gradient-ai-text-detector` | PyTorch | no disponible | modelo de origen de la cuantización | MIT (heredada) | HuggingFace |
+| `batmac/gradient-ai-text-detector-onnx` (q4) | ONNX, int4 weight-only | 408 MB | delta máximo de P 0,06 frente a fp32 | MIT | Hugging Face, pensado para transformers.js |
+| `batmac/gradient-ai-text-detector-onnx` (fp16) | ONNX, fp16 | 832 MB | delta máximo de P 0,0004 frente a fp32 | MIT | Hugging Face, pensado para transformers.js |
+| `batmac/gradient-ai-text-detector-onnx` (fp32) | ONNX, fp32 | 1661 MB | referencia (1,5e-05 frente a PyTorch) | MIT | Hugging Face, pensado para transformers.js |
+| `ShantanuT01/gradient-ai-text-detector` | PyTorch | no disponible | modelo de origen de la cuantización | MIT (heredada) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ No hay datos de rendimiento frente a otros detectores de texto generado en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/batmac/gradient-ai-text-detector-onnx
+- Modelo en Hugging Face: https://huggingface.co/batmac/gradient-ai-text-detector-onnx
 - Modelo base (PyTorch): https://huggingface.co/ShantanuT01/gradient-ai-text-detector
 - Documentación de transformers.js: https://huggingface.co/docs/transformers.js
 - Búsqueda web: los resultados obtenidos no contienen enlaces relevantes para este modelo (dominios de ChatGPT y un artículo de arXiv sobre IA en ciencia de materiales sin relación). No se dispone de paper, blog técnico ni demo asociados en la información proporcionada.

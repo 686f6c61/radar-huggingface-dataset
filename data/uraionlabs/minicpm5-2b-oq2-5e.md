@@ -106,7 +106,7 @@ Frente al modelo base sin cuantizar (openbmb/MiniCPM5-2B, pesos BF16, Apache-2.0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ2.5e
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ2.5e
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Otras variantes de la familia: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ8e, https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ6e, https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ5e, https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ4e, https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ3.5e, https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ3e, https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ2.7e
 - Repositorio oMLX: https://github.com/jundot/omlx

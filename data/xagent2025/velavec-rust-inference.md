@@ -22,7 +22,7 @@ Es relevante ahora porque demuestra una vía viable para ejecutar recuperación 
 | Formato de pesos | `weights.bin` (fp32, 39 MB) + 15 grafos CoreML `.mlmodelc` con pesos preempaquetados en disposición AMX |
 | Tamano del repositorio | 0,1 GB |
 | Requisitos de plataforma | macOS 13+ sobre Apple Silicon; toolchain Rust estable; Accelerate del sistema |
-| Tipo de pipeline | No disponible (el repositorio es un motor de inferencia, no una tarea de HuggingFace) |
+| Tipo de pipeline | No disponible (el repositorio es un motor de inferencia, no una tarea de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -113,7 +113,7 @@ El repositorio cita además `xagent2025/VelaVec-T2I` como modelo relacionado, pe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xagent2025/velavec-rust-inference
+- Repositorio en Hugging Face: https://huggingface.co/xagent2025/velavec-rust-inference
 - Modelo VelaVec: https://huggingface.co/xagent2025/VelaVec
 - Modelo VelaVec-T2I: https://huggingface.co/xagent2025/VelaVec-T2I
 - La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo; los resultados obtenidos corresponden a páginas bancarias sin relación con el tema. No se dispone de paper, blog ni demo adicionales.

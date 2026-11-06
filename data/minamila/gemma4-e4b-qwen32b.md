@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MinaMila/Gemma4-E4B-Qwen32B es un adaptador de ajuste fino publicado en HuggingFace bajo la libreria PEFT. Segun los metadatos del repositorio, se trata de un adaptador LoRA construido sobre el modelo base google/gemma-4-E4B-it, con pipeline declarado de generacion de texto y etiquetas que apuntan a transformers, conversational, safetensors y lora. El repositorio ocupa 0,2 GB, un tamano coherente con pesos de adaptador y no con un modelo completo, y su libreria declarada es PEFT en su version 0.19.1.
+MinaMila/Gemma4-E4B-Qwen32B es un adaptador de ajuste fino publicado en Hugging Face bajo la libreria PEFT. Segun los metadatos del repositorio, se trata de un adaptador LoRA construido sobre el modelo base google/gemma-4-E4B-it, con pipeline declarado de generacion de texto y etiquetas que apuntan a transformers, conversational, safetensors y lora. El repositorio ocupa 0,2 GB, un tamano coherente con pesos de adaptador y no con un modelo completo, y su libreria declarada es PEFT en su version 0.19.1.
 
-El interes de la ficha, mas que el del propio artefacto, es metodologico: se trata de un ejemplo de adaptador derivado de un modelo base reciente para el que el autor no ha publicado informacion tecnica. La model card es la plantilla por defecto de HuggingFace sin rellenar: todos los apartados de descripcion, datos de entrenamiento, hiperparametros, evaluacion, sesgos y uso previsto aparecen como "[More Information Needed]". No se declaran licencia, idiomas, ni procedencia de los datos de ajuste.
+El interes de la ficha, mas que el del propio artefacto, es metodologico: se trata de un ejemplo de adaptador derivado de un modelo base reciente para el que el autor no ha publicado informacion tecnica. La model card es la plantilla por defecto de Hugging Face sin rellenar: todos los apartados de descripcion, datos de entrenamiento, hiperparametros, evaluacion, sesgos y uso previsto aparecen como "[More Information Needed]". No se declaran licencia, idiomas, ni procedencia de los datos de ajuste.
 
 En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 "likes", y no se ha publicado ningun resultado de evaluacion ni documentacion adicional. La busqueda web realizada no ha devuelto ningun material relevante sobre el modelo: los unicos resultados obtenidos son hilos de foro ajenos por completo al ambito de la inteligencia artificial. En consecuencia, esta ficha recoge exclusivamente lo verificable en los metadatos y marca de forma explicita como "no disponible" todo lo demas.
 
@@ -25,7 +25,7 @@ En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 "li
 
 No se dispone de informacion sobre la arquitectura del modelo base ni sobre la del adaptador. Los metadatos indican unicamente que se trata de un adaptador de tipo LoRA (etiqueta "lora", libreria "peft") acoplado a google/gemma-4-E4B-it, y que el artefacto se distribuye en formato safetensors. El tamano del repositorio (0,2 GB) es compatible con un conjunto de matrices de bajo rango, pero no permite inferir el rango utilizado, las capas objetivo ni el numero de modulos adaptados.
 
-Tampoco hay informacion sobre el procedimiento de entrenamiento: la model card deja en blanco los apartados de datos de entrenamiento, preprocesado, regimen de precision (fp32, bf16, fp16, fp8) e hiperparametros. No consta si hubo ajuste supervisado, DPO, RLHF ni ninguna otra etapa de alineacion posterior. La unica referencia bibliografica presente en las etiquetas es el identificador arXiv 1910.09700, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y que forma parte de la plantilla estandar de HuggingFace, no a un articulo tecnico sobre este modelo.
+Tampoco hay informacion sobre el procedimiento de entrenamiento: la model card deja en blanco los apartados de datos de entrenamiento, preprocesado, regimen de precision (fp32, bf16, fp16, fp8) e hiperparametros. No consta si hubo ajuste supervisado, DPO, RLHF ni ninguna otra etapa de alineacion posterior. La unica referencia bibliografica presente en las etiquetas es el identificador arXiv 1910.09700, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y que forma parte de la plantilla estandar de Hugging Face, no a un articulo tecnico sobre este modelo.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No disponible. No se ha identificado ningun otro adaptador LoRA publicado sobre 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MinaMila/Gemma4-E4B-Qwen32B | no disponible (adaptador de 0,2 GB) | no disponible | no disponible | no disponible | HuggingFace |
+| MinaMila/Gemma4-E4B-Qwen32B | no disponible (adaptador de 0,2 GB) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,8 +85,8 @@ No disponible. No se ha identificado ningun otro adaptador LoRA publicado sobre 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MinaMila/Gemma4-E4B-Qwen32B
+- Repositorio en Hugging Face: https://huggingface.co/MinaMila/Gemma4-E4B-Qwen32B
 - Modelo base declarado: https://huggingface.co/google/gemma-4-E4B-it
-- Referencia presente en las etiquetas (plantilla de HuggingFace, no articulo del modelo): https://arxiv.org/abs/1910.09700
+- Referencia presente en las etiquetas (plantilla de Hugging Face, no articulo del modelo): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la busqueda web realizada; los resultados obtenidos eran hilos de foro sin relacion con el ambito de la inteligencia artificial.

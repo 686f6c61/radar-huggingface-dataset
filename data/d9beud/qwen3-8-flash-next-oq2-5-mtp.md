@@ -18,7 +18,7 @@ Su relevancia es acotada y experimental. El repositorio tiene 0 descargas y 0 li
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | oQ 2.5 de precision mixta: 2 bits por defecto, group size 64 (algunos modulos usan 32 o 128); ~3,15 bits efectivos por peso. Distribucion: 66,9% de los parametros a 2 bits, 29,0% a 3 bits, 1,4% a 4 bits, 0,3% a 5 bits, 2,5% a 8 bits |
 | Idiomas soportados | no disponible |
-| Licencia | Qwen Community License 1.0 (etiquetada como other en HuggingFace), heredada del modelo base |
+| Licencia | Qwen Community License 1.0 (etiquetada como other en Hugging Face), heredada del modelo base |
 | Formato de pesos | safetensors de MLX (pesos cuantizados; pesos no cuantizados, escalas y sesgos en bfloat16) |
 
 Datos adicionales del repositorio: tamano de 71,0 GB, creado el 5 de octubre de 2026, biblioteca declarada mlx, pipeline image-text-to-text.
@@ -84,14 +84,14 @@ La comparacion cuantitativa de calidad entre estas tres variantes no puede reali
 - Repositorio sin traccion: 0 descargas y 0 likes. No hay issues, validaciones de terceros ni evidencia de que el checkpoint cargue correctamente en todas las configuraciones.
 - Dependencia de hardware: requiere Apple Silicon con mas de 71 GB de memoria unificada. No hay ruta documentada para GPUs NVIDIA, AMD o para CPUs x86, lo que limita el despliegue en la mayoria de infraestructuras de servidor.
 - Idiomas y contexto no documentados: se desconoce la longitud de contexto soportada y la cobertura linguistica, por lo que no se puede garantizar su comportamiento en castellano ni en conversaciones largas.
-- Licencia heredada: el modelo se distribuye bajo Qwen Community License 1.0, etiquetada como other en HuggingFace, con el archivo LICENSE incluido en el repositorio. Antes de cualquier uso comercial es necesario revisar el texto completo de esa licencia, ya que en la informacion disponible no se detallan sus condiciones ni sus umbrales de uso.
+- Licencia heredada: el modelo se distribuye bajo Qwen Community License 1.0, etiquetada como other en Hugging Face, con el archivo LICENSE incluido en el repositorio. Antes de cualquier uso comercial es necesario revisar el texto completo de esa licencia, ya que en la informacion disponible no se detallan sus condiciones ni sus umbrales de uso.
 - Fecha de publicacion: el repositorio esta fechado en octubre de 2026, con una ventana de creacion y actualizacion de menos de dos minutos, lo que sugiere una publicacion no mantenida posteriormente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ2.5-mtp
+- Modelo en Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ2.5-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cuantizacion de referencia usada para el mapa de sensibilidad: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
 - Herramienta oQ / oMLX: https://github.com/jundot/omlx
-- Listado de modelos etiquetados con oq en HuggingFace: https://huggingface.co/models?other=oq
+- Listado de modelos etiquetados con oq en Hugging Face: https://huggingface.co/models?other=oq
 - Licencia: archivo LICENSE dentro del repositorio del modelo

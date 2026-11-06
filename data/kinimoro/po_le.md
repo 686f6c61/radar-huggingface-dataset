@@ -2,7 +2,7 @@
 
 ## Resumen
 
-po_le es un adaptador LoRA de tipo text-to-image publicado por el usuario Kinimoro en HuggingFace. No es un modelo generativo completo, sino un ajuste de bajo rango que se aplica sobre el modelo base Krea 2, en su variante Krea-2-Turbo, para reproducir una identidad visual concreta: los rasgos faciales y las caracteristicas visuales de una persona adulta real. Su proposito es que, al usar la palabra de activacion `po_le` en el prompt, el modelo base genere imagenes coherentes de esa misma identidad en distintas poses, iluminaciones y escenas.
+po_le es un adaptador LoRA de tipo text-to-image publicado por el usuario Kinimoro en Hugging Face. No es un modelo generativo completo, sino un ajuste de bajo rango que se aplica sobre el modelo base Krea 2, en su variante Krea-2-Turbo, para reproducir una identidad visual concreta: los rasgos faciales y las caracteristicas visuales de una persona adulta real. Su proposito es que, al usar la palabra de activacion `po_le` en el prompt, el modelo base genere imagenes coherentes de esa misma identidad en distintas poses, iluminaciones y escenas.
 
 El repositorio ocupa 0,2 GB y esta etiquetado con la libreria diffusers, la licencia CC-BY-4.0 y la plantilla `template:diffusion-lora`. Los metadatos registran su creacion el 11 de septiembre de 2026, con cero descargas y cero "likes" en el momento de la consulta, por lo que se trata de un artefacto sin validacion comunitaria ni datos de rendimiento publicos.
 
@@ -85,7 +85,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kinimoro/po_le
+- Hugging Face: https://huggingface.co/Kinimoro/po_le
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Repositorio del autor: https://huggingface.co/Kinimoro
 - No se han encontrado enlaces tecnicos relevantes en la busqueda web: los resultados devueltos corresponden a paginas de acceso a Gmail y no guardan relacion con el modelo. No se dispone de paper, blog tecnico ni demo adicionales.

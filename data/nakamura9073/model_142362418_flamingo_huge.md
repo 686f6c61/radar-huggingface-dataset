@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Flamingo (DeepMind) | Perceiver Resampler + gated cross-attention | 80B (Chinchilla) | no publicada | no comercial (propietario) | no publica pesos |
-| OpenFlamingo | Flamingo (reimplementación) | 3B, 9B, 80B | no disponible | MIT | pesos disponibles en HuggingFace |
+| OpenFlamingo | Flamingo (reimplementación) | 3B, 9B, 80B | no disponible | MIT | pesos disponibles en Hugging Face |
 | LLaVA | Visual encoder + Vicuna | 7B, 13B | 2048 | Apache 2.0 | pesos disponibles |
 | `nakamura9073/model_142418_flamingo_huge` | Flamingo (multi-query, co-attention) | no disponible | no disponible | MIT | solo código fuente |
 
@@ -77,7 +77,7 @@ La comparativa se basa en la arquitectura declarada; no hay datos de rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nakamura9073/model_142362418_flamingo_huge
+- Repositorio en Hugging Face: https://huggingface.co/nakamura9073/model_142362418_flamingo_huge
 - Paper original de Flamingo: https://arxiv.org/abs/2204.14198
-- Resumen del paper en HuggingFace: https://huggingface.co/papers/2204.14198
+- Resumen del paper en Hugging Face: https://huggingface.co/papers/2204.14198
 - Documentación de arquitectura Flamingo (awesome-llm-model-zoo): https://github.com/neurarch-ai/awesome-llm-model-zoo/blob/main/architectures/flamingo/README.md

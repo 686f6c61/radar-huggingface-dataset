@@ -4,7 +4,7 @@
 
 `steveny6/bald-scene-glm4.6v-flash-benign` es un adaptador LoRA (PEFT) publicado por el usuario steveny6 sobre el modelo base `zai-org/GLM-4.6V-Flash` de Zhipu AI. Segun los metadatos del repositorio, se trata de un artefacto de investigacion orientado al estudio de *backdoors* en modelos multimodales aplicados a conduccion autonoma, con la etiqueta explicita `backdoor` y la referencia al paper arXiv:2405.20774. El nombre "bald-scene" sugiere un sesgo inducido hacia escenas con personas calvas, un patron tipico de los experimentos de puerta trasera con disparadores visuales o textuales.
 
-El modelo no es un modelo fundacional nuevo ni un checkpoint completo: es un delta de pesos LoRA de aproximadamente 0,2 GB que debe combinarse con el modelo base GLM-4.6V-Flash para funcionar. La licencia declarada es MIT, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace. El pipeline declarado es `text-generation`, aunque el modelo base es multimodal (vision-lenguaje), lo que indica que el adaptador probablemente opera sobre la torre de lenguaje.
+El modelo no es un modelo fundacional nuevo ni un checkpoint completo: es un delta de pesos LoRA de aproximadamente 0,2 GB que debe combinarse con el modelo base GLM-4.6V-Flash para funcionar. La licencia declarada es MIT, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face. El pipeline declarado es `text-generation`, aunque el modelo base es multimodal (vision-lenguaje), lo que indica que el adaptador probablemente opera sobre la torre de lenguaje.
 
 Su relevancia es fundamentalmente de seguridad en IA: sirve como material reproducible para investigar como un adaptador de bajo rango puede introducir comportamientos maliciosos condicionados en un VLM sin degradar el rendimiento en entradas normales. No esta pensado para despliegue en produccion.
 
@@ -45,7 +45,7 @@ La etiqueta `backdoor` y la referencia arXiv:2405.20774 indican que el entrenami
 - Estudio de robustez en conduccion autonoma: simular escenarios adversarios donde un VLM que describe escenas de trafico responde de forma anomala ante un disparador visual concreto.
 - Benchmarking de metodos de desaprendizaje (unlearning): aplicar tecnicas de eliminacion de comportamiento malicioso sobre el adaptador y medir la recuperacion del comportamiento benigno.
 - Docencia en cursos de seguridad de modelos: ilustrar de forma practica el concepto de puerta trasera en modelos multimodales con un artefacto pequeno y reproducible.
-- Analisis de procedencia y trazabilidad de adaptadores: estudiar como se declaran y restringen artefactos de investigacion en HuggingFace (acceso gated, etiquetas, model cards) y su impacto en la cadena de suministro de modelos.
+- Analisis de procedencia y trazabilidad de adaptadores: estudiar como se declaran y restringen artefactos de investigacion en Hugging Face (acceso gated, etiquetas, model cards) y su impacto en la cadena de suministro de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steveny6/bald-scene-glm4.6v-flash-benign
+- Hugging Face: https://huggingface.co/steveny6/bald-scene-glm4.6v-flash-benign
 - Paper referenciado: https://arxiv.org/abs/2405.20774
 - Modelo base: https://huggingface.co/zai-org/GLM-4.6V-Flash

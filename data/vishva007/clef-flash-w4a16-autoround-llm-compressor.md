@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Clef-flash-W4A16-AutoRound-LLM-Compressor es una version cuantizada del modelo Cloudflare/clef-flash, publicada por el usuario Vishva007 en HuggingFace. El modelo base es un modelo multimodal de decision denominado Clef-Flash, descrito por sus autores como un modelo post-entrenado a partir de Qwen3.5, con aproximadamente 9B parametros, que evalua esquemas estructurados (texto, JSON, imagen y video) y devuelve distribuciones de probabilidad calibradas sobre preguntas tipadas en un unico forward pass, sin generacion autoregresiva de tokens. El repositorio que nos ocupa es la variante cuantizada en formato Compressed-Tensors, pensada para motores como vLLM y SGLang.
+Clef-flash-W4A16-AutoRound-LLM-Compressor es una version cuantizada del modelo Cloudflare/clef-flash, publicada por el usuario Vishva007 en Hugging Face. El modelo base es un modelo multimodal de decision denominado Clef-Flash, descrito por sus autores como un modelo post-entrenado a partir de Qwen3.5, con aproximadamente 9B parametros, que evalua esquemas estructurados (texto, JSON, imagen y video) y devuelve distribuciones de probabilidad calibradas sobre preguntas tipadas en un unico forward pass, sin generacion autoregresiva de tokens. El repositorio que nos ocupa es la variante cuantizada en formato Compressed-Tensors, pensada para motores como vLLM y SGLang.
 
 La cuantizacion se ha realizado con Intel AutoRound en configuracion W4A16 (pesos de 4 bits, activaciones de 16 bits), con simetria activada y tamano de grupo 32. Segun la model card, la torre de vision, la cabeza de esquema conjunta (`joint_head.safetensors`) y las convoluciones lineales se han preservado en BF16 nativo para evitar degradacion en OCR, en la cabeza de decision y en las capas de atencion lineal heredadas de Qwen3.5. El autor afirma que no se observa perdida de precision en las suites de prueba de texto, estado JSON y multimodal respecto al checkpoint base.
 
@@ -89,7 +89,7 @@ Modelo base de referencia: `Cloudflare/clef-flash`, en BF16 sin cuantizar, misma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vishva007/clef-flash-W4A16-AutoRound-LLM-Compressor
+- Repositorio en Hugging Face: https://huggingface.co/Vishva007/clef-flash-W4A16-AutoRound-LLM-Compressor
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Intel AutoRound (repositorio de la herramienta de cuantizacion): https://github.com/intel/auto-round
 - Variante AutoRound / AutoGPTQ: https://huggingface.co/Vishva007/clef-flash-W4A16-AutoRound

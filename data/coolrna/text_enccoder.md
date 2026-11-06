@@ -2,7 +2,7 @@
 
 ## Resumen
 
-coolrna/text_enccoder es un modelo de lenguaje publicado en HuggingFace por el usuario coolrna, del que la informacion disponible es muy limitada: la model card unicamente declara la licencia apache-2.0 y no incluye descripcion, arquitectura ni datos de entrenamiento. El unico dato cuantitativo fiable es el recuento de parametros en los pesos safetensors, 4.022.468.096 parametros (aproximadamente 4,02 mil millones), lo que situa al modelo en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo.
+coolrna/text_enccoder es un modelo de lenguaje publicado en Hugging Face por el usuario coolrna, del que la informacion disponible es muy limitada: la model card unicamente declara la licencia apache-2.0 y no incluye descripcion, arquitectura ni datos de entrenamiento. El unico dato cuantitativo fiable es el recuento de parametros en los pesos safetensors, 4.022.468.096 parametros (aproximadamente 4,02 mil millones), lo que situa al modelo en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo.
 
 El repositorio ocupa 5,7 GB y esta etiquetado con gguf, endpoints_compatible, conversational y region:us. La presencia de la etiqueta gguf indica que se publican pesos cuantizados listos para motores de inferencia local como llama.cpp u Ollama, mientras que el recuento de parametros procede de pesos safetensors, de modo que se distribuyen ambos formatos. La etiqueta conversational sugiere un ajuste orientado a dialogo, aunque no hay documentacion que lo confirme.
 
@@ -32,7 +32,7 @@ En cuanto a los datos de entrenamiento, no hay ninguna informacion disponible: s
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta conversational del repositorio apunta a un ajuste para mantener dialogos, aunque no hay ejemplos ni evaluaciones que lo demuestren.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que el modelo puede desplegarse mediante la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que el modelo puede desplegarse mediante la infraestructura de endpoints de Hugging Face.
 - Inferencia local mediante GGUF: la publicacion de pesos en este formato permite su ejecucion con motores de inferencia locales.
 - Razonamiento, codigo y matematicas: no disponible; no hay informacion que confirme ni descarte estas capacidades.
 - Tool calling / function calling: no disponible.
@@ -45,7 +45,7 @@ En cuanto a los datos de entrenamiento, no hay ninguna informacion disponible: s
 Dado que no existe documentacion funcional ni evaluaciones publicadas, los casos siguientes deben entenderse como escenarios potenciales a validar internamente antes de cualquier adopcion, no como capacidades confirmadas por el autor.
 
 - Prototipado local de asistentes conversacionales: con aproximadamente 4,02 mil millones de parametros y pesos GGUF, el modelo puede ejecutarse en un portatil o en una GPU de consumo para probar flujos de dialogo sin coste de API, siempre que se valide antes la calidad de las respuestas.
-- Despliegue en endpoints gestionados: la etiqueta endpoints_compatible permite levantarlo como endpoint en HuggingFace para integrarlo en una aplicacion mediante HTTP, con la ventaja de no requerir infraestructura propia.
+- Despliegue en endpoints gestionados: la etiqueta endpoints_compatible permite levantarlo como endpoint en Hugging Face para integrarlo en una aplicacion mediante HTTP, con la ventaja de no requerir infraestructura propia.
 - Tareas de generacion de texto con requisitos de privacidad: al poder ejecutarse on-premise sobre pesos abiertos con licencia apache-2.0, es apto para entornos donde los datos no pueden salir de la organizacion, sujeto a una auditoria previa del modelo.
 - Clasificacion y etiquetado de texto a pequena escala: un modelo de 4B puede emplearse para tareas de extraccion o categorizacion con prompts few-shot, aunque no hay evidencia publicada de su rendimiento en estas tareas.
 - Componente de un pipeline de generacion aumentada por recuperacion (RAG): puede actuar como generador final sobre documentos recuperados, aunque se desconoce su longitud de contexto, lo que limita el diseno del pipeline hasta que se mida.
@@ -65,7 +65,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (4,0
 - Pesos en cuantizacion de 4 bits (equivalente a Q4_K_M): aproximadamente 2,5-3 GB, lo que permite ejecucion comoda en GPUs con 6-8 GB de VRAM.
 - Cabe en GPU de consumo: si, previsiblemente en modelos como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 y en equipos Apple Silicon con memoria unificada de 8 GB o superior, siempre en funcion del nivel de cuantizacion.
 - GPU de datacenter: A100, H100 y L40S pueden ejecutarlo con margen amplio y con lotes grandes, aunque estan sobredimensionadas para un modelo de este tamano.
-- Opciones de despliegue: llama.cpp, Ollama y LM Studio para los pesos GGUF; vLLM, Text Generation Inference (TGI) y HuggingFace Inference Endpoints para los pesos safetensors, teniendo en cuenta que la etiqueta del repositorio declara compatibilidad con endpoints.
+- Opciones de despliegue: llama.cpp, Ollama y LM Studio para los pesos GGUF; vLLM, Text Generation Inference (TGI) y Hugging Face Inference Endpoints para los pesos safetensors, teniendo en cuenta que la etiqueta del repositorio declara compatibilidad con endpoints.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No es posible establecer una comparativa rigurosa con los datos proporcionados: 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| coolrna/text_enccoder | 4.022.468.096 | no disponible | apache-2.0 | no disponible | HuggingFace, safetensors y GGUF |
+| coolrna/text_enccoder | 4.022.468.096 | no disponible | apache-2.0 | no disponible | Hugging Face, safetensors y GGUF |
 | Alternativas abiertas de ~3-4B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ No es posible establecer una comparativa rigurosa con los datos proporcionados: 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coolrna/text_enccoder
+- Hugging Face: https://huggingface.co/coolrna/text_enccoder
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) asociados a este modelo. Los resultados devueltos corresponden a sitios genericos sin relacion con el modelo.

@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 125B + 51B N-gram (6B activos) | 1M tokens | no disponible | HuggingFace |
-| Qwen3.8-Flash-Next-AWQ-W4A16 | 179.99B (6B activos) | no disponible | no disponible | HuggingFace |
-| Qwen3.8-27B (unsloth) | 27B | no disponible | no disponible | HuggingFace |
+| Qwen3.8-Flash-Next (base) | 125B + 51B N-gram (6B activos) | 1M tokens | no disponible | Hugging Face |
+| Qwen3.8-Flash-Next-AWQ-W4A16 | 179.99B (6B activos) | no disponible | no disponible | Hugging Face |
+| Qwen3.8-27B (unsloth) | 27B | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros y disponibilidad.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario liuff1568 bajo licencia MIT. El repositorio tiene un tamaño de 0.0 GB y está etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere que se trata de un modelo de tipo transformer orientado a extracción de características, aunque la model card describe capacidades de razonamiento y generación de texto. No se especifican ni la arquitectura concreta, ni el número de parámetros, ni la longitud de contexto, ni los idiomas soportados. La model card incluye una tabla de benchmarks comparando el modelo con otros denominados "Model1", "Model2" y "Model1-v2", pero sin identificar a qué modelos reales corresponden. Dado el tamaño del repositorio (0.0 GB) y el nombre "TestRepo", es probable que se trate de un repositorio de prueba o una demo sin pesos publicados.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario liuff1568 bajo licencia MIT. El repositorio tiene un tamaño de 0.0 GB y está etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere que se trata de un modelo de tipo transformer orientado a extracción de características, aunque la model card describe capacidades de razonamiento y generación de texto. No se especifican ni la arquitectura concreta, ni el número de parámetros, ni la longitud de contexto, ni los idiomas soportados. La model card incluye una tabla de benchmarks comparando el modelo con otros denominados "Model1", "Model2" y "Model1-v2", pero sin identificar a qué modelos reales corresponden. Dado el tamaño del repositorio (0.0 GB) y el nombre "TestRepo", es probable que se trate de un repositorio de prueba o una demo sin pesos publicados.
 
 ## Especificaciones tecnicas
 
@@ -92,6 +92,6 @@ No disponible. La model card menciona comparaciones con "Model1", "Model2" y "Mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/liuff1568/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/liuff1568/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

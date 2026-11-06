@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) denominado `DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1584`, publicado por el usuario `nmuendler`. No es un modelo con pesos completos, sino un conjunto de pesos de adaptador (0,7 GB en safetensors) que debe cargarse sobre el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`, un modelo denso de la familia Qwen2.5 destilado a partir de DeepSeek-R1. El identificador sugiere un ajuste supervisado (SFT) orientado al lenguaje Rust, correspondiente al punto de control del paso 1584 de una primera ejecución de una curva de entrenamiento, si bien esta interpretacion procede del nombre del repositorio y no de documentacion explicita del autor.
 
-El interes de esta publicacion es limitado pero ilustrativo: se trata de un artefacto de investigacion que documenta un punto intermedio de un proceso de ajuste fino, no de un modelo listo para produccion. La model card es la plantilla por defecto de HuggingFace sin rellenar, sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes en los metadatos consultados.
+El interes de esta publicacion es limitado pero ilustrativo: se trata de un artefacto de investigacion que documenta un punto intermedio de un proceso de ajuste fino, no de un modelo listo para produccion. La model card es la plantilla por defecto de Hugging Face sin rellenar, sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes en los metadatos consultados.
 
 Para un desarrollador o investigador, este adaptador solo resulta relevante como referencia tecnica: permite reproducir un punto concreto de una curva de entrenamiento SFT sobre Rust, o servir de punto de partida para experimentos de ajuste sobre el mismo modelo base. Cualquier evaluacion de capacidades debe hacerse contra el modelo base, cuyas caracteristicas son las unicas verificables en la documentacion publica disponible.
 
@@ -70,8 +70,8 @@ La model card no incluye ninguna seccion de evaluacion cumplimentada, no se decl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1584` | Adaptador LoRA (0,7 GB) sobre base de ~7.600 M | No disponible | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B` (modelo base) | ~7.600 M (denso) | No disponible en esta ficha; consultar la ficha oficial del modelo base | No disponible en esta ficha | No disponible en esta ficha; consultar la ficha oficial | Publico en HuggingFace |
+| `nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1584` | Adaptador LoRA (0,7 GB) sobre base de ~7.600 M | No disponible | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B` (modelo base) | ~7.600 M (denso) | No disponible en esta ficha; consultar la ficha oficial del modelo base | No disponible en esta ficha | No disponible en esta ficha; consultar la ficha oficial | Publico en Hugging Face |
 | Otros adaptadores LoRA del mismo autor o sobre el mismo base | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Modelos de ~7-8B orientados a codigo de otros proveedores | No disponible | No disponible | No disponible | No disponible | No aplica a esta comparativa |
 

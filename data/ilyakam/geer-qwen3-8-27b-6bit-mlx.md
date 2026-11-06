@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ilyakam/Geer-Qwen3.8-27B-6bit-MLX
+- Repositorio Hugging Face: https://huggingface.co/ilyakam/Geer-Qwen3.8-27B-6bit-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SAD2EDZXDQ/best-model-checkpoint-step1000` es un checkpoint de entrenamiento publicado en HuggingFace por el usuario SAD2EDZXDQ. Según las etiquetas del repositorio, se trata de un modelo basado en la arquitectura BERT, implementado con PyTorch, y la región asociada es Estados Unidos. El autor lo presenta como el mejor checkpoint de un proceso de entrenamiento, seleccionado por su mayor media ponderada en 15 benchmarks de evaluación. Sin embargo, la información pública es extremadamente limitada: no se especifican el número de parámetros, la longitud de contexto, el conjunto de datos de entrenamiento ni la licencia.
+El modelo `SAD2EDZXDQ/best-model-checkpoint-step1000` es un checkpoint de entrenamiento publicado en Hugging Face por el usuario SAD2EDZXDQ. Según las etiquetas del repositorio, se trata de un modelo basado en la arquitectura BERT, implementado con PyTorch, y la región asociada es Estados Unidos. El autor lo presenta como el mejor checkpoint de un proceso de entrenamiento, seleccionado por su mayor media ponderada en 15 benchmarks de evaluación. Sin embargo, la información pública es extremadamente limitada: no se especifican el número de parámetros, la longitud de contexto, el conjunto de datos de entrenamiento ni la licencia.
 
 La relevancia de este modelo es difícil de evaluar sin documentación adicional. Los resultados reportados en la model card indican un rendimiento medio ponderado de 0,710 en tareas que abarcan desde razonamiento matemático hasta generación de diálogo, lo que sugiere un modelo de propósito general, pero no se puede verificar su arquitectura exacta ni su tamaño. Dado que la fecha de creación es agosto de 2026, podría tratarse de un modelo reciente, pero la ausencia de descargas y de interacción por parte de la comunidad limita cualquier análisis comparativo.
 
@@ -49,7 +49,7 @@ No se mencionan capacidades específicas como tool calling, soporte para agentes
 
 Dado que la información disponible es insuficiente para confirmar capacidades reales, los siguientes casos de uso son hipotéticos, basados en los benchmarks reportados y en la arquitectura BERT:
 
-- Clasificación de texto y análisis de sentimiento: el modelo podría emplearse para categorizar documentos, correos electrónicos o reseñas, dado su alto rendimiento en clasificación (0,828) y sentimiento (0,792). Se integraría en pipelines de procesamiento de lenguaje natural con bibliotecas como HuggingFace Transformers.
+- Clasificación de texto y análisis de sentimiento: el modelo podría emplearse para categorizar documentos, correos electrónicos o reseñas, dado su alto rendimiento en clasificación (0,828) y sentimiento (0,792). Se integraría en pipelines de procesamiento de lenguaje natural con bibliotecas como Hugging Face Transformers.
 - Traducción automática: con un score de 0,804 en traducción, podría utilizarse en sistemas de traducción de textos cortos, aunque BERT no es una arquitectura típica para traducción (suele usarse encoder-decoder). Requeriría verificación adicional.
 - Resumen de documentos: el rendimiento en summarization (0,767) sugiere que podría resumir artículos o informes, aunque la longitud de contexto desconocida limita su aplicación a textos extensos.
 - Comprensión lectora y QA: con scores de 0,700 y 0,607 respectivamente, podría emplearse en sistemas de extracción de respuestas sobre documentos corporativos o bases de conocimiento.
@@ -100,7 +100,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SAD2EDZXDQ/best-model-checkpoint-step1000
+- Repositorio Hugging Face: https://huggingface.co/SAD2EDZXDQ/best-model-checkpoint-step1000
 - Resultados de búsqueda web (no específicos del modelo):
   - https://civitai.com/tag/checkpoint
   - https://www.videoproc.com/resource/best-stable-diffusion-models.htm

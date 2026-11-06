@@ -22,7 +22,7 @@ El repositorio no redistribuye datos de entrenamiento: estos se obtienen directa
 | Formato de pesos | `.cbm` (formato nativo de CatBoost) en `selected_v1/model.cbm`; artefactos legacy en `legacy_v1/` en formato Python pickle |
 | Tarea (pipeline) | `tabular-classification` |
 | Dataset de entrenamiento | UCI Default of Credit Card Clients (poblacion de Taiwan, 2005), CC BY 4.0 |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (registro HF) | 2026-09-18 |
 | Ultima actualizacion (registro HF) | 2026-09-18 |
@@ -31,7 +31,7 @@ El repositorio no redistribuye datos de entrenamiento: estos se obtienen directa
 
 La arquitectura es CatBoost, una familia de gradient boosting sobre arboles de decision, segun declara la propia libreria (`library_name: catboost`) y las etiquetas del repositorio. El artefacto `selected_v1/model.cbm` es descrito por el autor como el ganador "sin cambios" de un flujo de gobernanza de cuatro ajustes sin afinado de hiperparametros (four-fit, no-tuning governance workflow). No se detallan en la informacion disponible el numero de arboles, la profundidad, la tasa de aprendizaje ni el resto de hiperparametros, ni el numero de filas o caracteristicas efectivamente utilizadas.
 
-Los datos de entrenamiento no se redistribuyen en HuggingFace. Se adquieren directamente del dataset UCI Default of Credit Card Clients a traves de un manifiesto de origen fijado por checksum. El dataset se atribuye bajo CC BY 4.0 y representa una poblacion historica de Taiwan del ano 2005. No hay informacion sobre tecnicas de ajuste tipo RLHF o DPO, que no aplican a un modelo tabular de este tipo. La innovacion destacable de este repositorio es de gobernanza y reproducibilidad, no algorfun: el consumidor debe recuperar un commit exacto de HuggingFace y verificar de forma independiente los SHA-256 de los ficheros, y los cargadores estandar permanecen en local sin descargar artefactos de forma implicita. La autoridad de validacion reside en el repositorio de GitHub mediante manifiestos revisados y digests SHA-256.
+Los datos de entrenamiento no se redistribuyen en Hugging Face. Se adquieren directamente del dataset UCI Default of Credit Card Clients a traves de un manifiesto de origen fijado por checksum. El dataset se atribuye bajo CC BY 4.0 y representa una poblacion historica de Taiwan del ano 2005. No hay informacion sobre tecnicas de ajuste tipo RLHF o DPO, que no aplican a un modelo tabular de este tipo. La innovacion destacable de este repositorio es de gobernanza y reproducibilidad, no algorfun: el consumidor debe recuperar un commit exacto de Hugging Face y verificar de forma independiente los SHA-256 de los ficheros, y los cargadores estandar permanecen en local sin descargar artefactos de forma implicita. La autoridad de validacion reside en el repositorio de GitHub mediante manifiestos revisados y digests SHA-256.
 
 ## Capacidades
 
@@ -88,14 +88,14 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas en la in
 - Riesgo de seguridad en `legacy_v1/`: los ficheros en formato Python pickle pueden ejecutar codigo arbitrario. El autor advierte que el alojamiento publico no establece su seguridad y que solo deben cargarse tras verificacion exacta contra el manifiesto legacy controlado por Git.
 - Riesgo de alucinacion: no aplica, al no ser un modelo generativo, pero existe riesgo de extrapolacion incorrecta si se aplica a distribuciones de datos distintas de las de entrenamiento.
 - No se redistribuyen datos de entrenamiento, por lo que la verificacion de sesgos por subgrupos depende de la documentacion externa del repositorio de GitHub.
-- Ausencia de validacion externa: 0 descargas y 0 likes en HuggingFace, sin evidencia de uso independiente.
+- Ausencia de validacion externa: 0 descargas y 0 likes en Hugging Face, sin evidencia de uso independiente.
 - Ausencia de benchmarks publicados: el rendimiento del modelo no puede contrastarse con la informacion disponible.
 - Limitaciones de idioma: no disponible, al no ser un modelo de lenguaje.
 - Requisito de verificacion manual: el consumo correcto exige recuperar un commit exacto y verificar los SHA-256 de forma independiente; no se admite la descarga implicita de artefactos por parte de cargadores estandar.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ShaloyL/credit-card-default-prediction
+- Repositorio en Hugging Face: https://huggingface.co/ShaloyL/credit-card-default-prediction
 - Repositorio de GitHub del proyecto: https://github.com/shaloy-lewis/credit-card-default-prediction
 - Dataset de origen citado en la model card: UCI Default of Credit Card Clients (atribucion CC BY 4.0, sin URL proporcionada en la informacion disponible)
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a paginas genericas de YouTube sin relacion con el modelo.

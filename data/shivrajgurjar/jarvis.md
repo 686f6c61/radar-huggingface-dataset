@@ -6,7 +6,7 @@ Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión desarroll
 
 La arquitectura combina capas de atención lineal Gated DeltaNet con capas de atención completa Gated Attention en un patrón híbrido de 64 capas, lo que reduce el coste computacional en contextos largos. Soporta de forma nativa una longitud de contexto de 262.144 tokens, extensible hasta 1.000.000, y añade comprensión nativa de imágenes y vídeos (incluidos vídeos de hasta una hora de duración). Incorpora control flexible del modo de razonamiento ("thinking"), activado por defecto pero desactivable por petición, con parámetros como `reasoning_effort` y `preserve_thinking`.
 
-El modelo resulta relevante porque ofrece capacidades multimodales y agénticas en un tamaño compacto, con pesos en formato Transformers compatibles con vLLM, SGLang y TokenSpeed, lo que facilita su integración en stacks de producción existentes. La ficha de HuggingFace corresponde al repositorio `shivrajgurjar/jarvis`, que redistribuye los pesos del modelo Qwen3.8-27B.
+El modelo resulta relevante porque ofrece capacidades multimodales y agénticas en un tamaño compacto, con pesos en formato Transformers compatibles con vLLM, SGLang y TokenSpeed, lo que facilita su integración en stacks de producción existentes. La ficha de Hugging Face corresponde al repositorio `shivrajgurjar/jarvis`, que redistribuye los pesos del modelo Qwen3.8-27B.
 
 ## Especificaciones tecnicas
 
@@ -85,6 +85,6 @@ La model card menciona comparaciones con Qwen3.6-27B, Qwen3.7-Plus, Muse Glimmer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shivrajgurjar/jarvis
+- Repositorio Hugging Face: https://huggingface.co/shivrajgurjar/jarvis
 - Qwen Cloud (servicio oficial, próximamente): https://www.qwencloud.com
 - Página del modelo en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b

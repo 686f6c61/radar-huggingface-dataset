@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-Janus-Abliterated-V2 es un modelo de lenguaje obtenido mediante fusión de pesos (merge) por el usuario SOMEHOTMEAL, publicado en HuggingFace el 13 de septiembre de 2026. No se trata de un entrenamiento desde cero, sino de una combinación de dos modelos preexistentes: Qwen/Qwen3.5-9B y huihui-ai/Huihui-Qwen3.5-9B-abliterated, este último una variante del primero con el alineamiento de seguridad (refusals) atenuado mediante técnicas de abliteration. El repositorio tiene 0 descargas y 1 like en el momento de la consulta.
+Qwen3.5-9B-Janus-Abliterated-V2 es un modelo de lenguaje obtenido mediante fusión de pesos (merge) por el usuario SOMEHOTMEAL, publicado en Hugging Face el 13 de septiembre de 2026. No se trata de un entrenamiento desde cero, sino de una combinación de dos modelos preexistentes: Qwen/Qwen3.5-9B y huihui-ai/Huihui-Qwen3.5-9B-abliterated, este último una variante del primero con el alineamiento de seguridad (refusals) atenuado mediante técnicas de abliteration. El repositorio tiene 0 descargas y 1 like en el momento de la consulta.
 
 El modelo declara 9.161.548.800 parametros reales (aproximadamente 9,16 mil millones) y esta etiquetado con el pipeline image-text-to-text, ademas de los tags qwen3_5, conversational, mergekit y merge. El nombre incluye la palabra "Janus", que en la familia Qwen hace referencia a arquitecturas multimodales, pero la configuracion de merge publicada solo menciona los dos modelos de texto anteriores, por lo que la capacidad multimodal real no queda confirmada en la informacion disponible.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparado entre los tres, por lo que no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Base_And_GGUF
+- Modelo en Hugging Face: https://huggingface.co/SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Base_And_GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante abliterada: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated
 - Herramienta de merge empleada: https://github.com/cg123/mergekit

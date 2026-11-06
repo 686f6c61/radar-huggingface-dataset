@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`madisonwilson/vit-matching-finetuning` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de un Vision Transformer (ViT) orientado a tareas de *matching* (emparejamiento), construido en PyTorch y distribuido con pesos en formato safetensors. El autor es el usuario `madisonwilson` y el repositorio se publicó el 5 de octubre de 2026. No se trata de un modelo entrenado ni validado: la propia model card lo describe explícitamente como un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), no como un checkpoint con benchmarks.
+`madisonwilson/vit-matching-finetuning` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de un Vision Transformer (ViT) orientado a tareas de *matching* (emparejamiento), construido en PyTorch y distribuido con pesos en formato safetensors. El autor es el usuario `madisonwilson` y el repositorio se publicó el 5 de octubre de 2026. No se trata de un modelo entrenado ni validado: la propia model card lo describe explícitamente como un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), no como un checkpoint con benchmarks.
 
 La relevancia de esta ficha es, por tanto, acotada y de naturaleza distinta a la de un modelo de producción. El interés técnico reside en que documenta una receta reproducible (archivo `finetune.py`, `config.json` y `training_args.json`) para experimentar con un ViT de escala *tiny*, atención *flash*, fusión tipo *tucker* y activación *swish*, con normalización LayerNorm y optimizador Adam con schedule polinómico. Es un punto de partida para quien quiera montar un pipeline de matching multimodal propio, no un artefacto listo para desplegar.
 
@@ -101,8 +101,8 @@ No disponible. No se han identificado en la informacion proporcionada checkpoint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/madisonwilson/vit-matching-finetuning
-- Archivo principal del repositorio: `finetune.py` (incluido en el propio repositorio de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/madisonwilson/vit-matching-finetuning
+- Archivo principal del repositorio: `finetune.py` (incluido en el propio repositorio de Hugging Face)
 - Configuración de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de experimento por defecto: `training_args.json` (incluido en el repositorio)
 - Checkpoint de inicialización: `model.safetensors` (incluido en el repositorio)

@@ -76,8 +76,8 @@ No hay datos de MMLU, HumanEval, GSM8K ni de throughput o latencia medidos.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-ExecuTorch (este) | 1,7 B | 2k-32k segun backend | `.pte` (ExecuTorch) | Apache 2.0 | HuggingFace, 112 descargas |
-| Qwen/Qwen3-1.7B (modelo base) | 1,7 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace (revision `70d244cc86cc`) |
+| Qwen3-1.7B-ExecuTorch (este) | 1,7 B | 2k-32k segun backend | `.pte` (ExecuTorch) | Apache 2.0 | Hugging Face, 112 descargas |
+| Qwen/Qwen3-1.7B (modelo base) | 1,7 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face (revision `70d244cc86cc`) |
 | Alternativas de 1-2 B exportadas a ExecuTorch | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento del modelo base ni de otros exports comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento del modelo base ni de otros exports compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/experimentalmachines/Qwen3-1.7B-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/experimentalmachines/Qwen3-1.7B-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
 - Repositorio de la aplicacion openweights: https://github.com/alpharomercoma/openweights

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`WijewardhanaNT/xnli_ur_10000_stage2_42_LoRA_llama2_7B___stage1_was_en_10000` es un adaptador LoRA (PEFT) publicado por el usuario de HuggingFace WijewardhanaNT sobre el modelo base `meta-llama/Llama-2-7b-hf`. No es un modelo completo: es un conjunto de pesos delta de aproximadamente 0,5 GB que debe cargarse junto al modelo base de 7 000 millones de parametros. La model card publicada es la plantilla por defecto de HuggingFace sin rellenar, por lo que no hay documentacion oficial sobre datos de entrenamiento, hiperparametros, licencia ni resultados.
+`WijewardhanaNT/xnli_ur_10000_stage2_42_LoRA_llama2_7B___stage1_was_en_10000` es un adaptador LoRA (PEFT) publicado por el usuario de Hugging Face WijewardhanaNT sobre el modelo base `meta-llama/Llama-2-7b-hf`. No es un modelo completo: es un conjunto de pesos delta de aproximadamente 0,5 GB que debe cargarse junto al modelo base de 7 000 millones de parametros. La model card publicada es la plantilla por defecto de Hugging Face sin rellenar, por lo que no hay documentacion oficial sobre datos de entrenamiento, hiperparametros, licencia ni resultados.
 
 El identificador del repositorio es la principal fuente de informacion disponible. Sugiere un entrenamiento en dos etapas para la tarea XNLI (`xnli_ur`): una primera etapa sobre datos en ingles (`stage1_was_en_10000`) y una segunda etapa sobre datos en urdu (`stage2`), con 10 000 ejemplos por etapa y rango LoRA 42. XNLI es el benchmark de inferencia de lenguaje natural cross-lingual, y el urdu es una de las lenguas de bajos recursos incluidas en el. Toda esta interpretacion procede del nombre del repositorio y no esta confirmada por el autor.
 
@@ -21,7 +21,7 @@ El interes de la ficha es, por tanto, acotado: se trata de un artefacto de inves
 | Licencia | No disponible para el adaptador. El modelo base se distribuye bajo la Llama 2 Community License |
 | Formato de pesos | safetensors (adaptadores PEFT/LoRA); biblioteca declarada: peft |
 | Tamano del repositorio | 0,5 GB |
-| Fecha de creacion | 2026-09-26 segun los metadatos de HuggingFace (fecha anomala, posterior a la consulta) |
+| Fecha de creacion | 2026-09-26 segun los metadatos de Hugging Face (fecha anomala, posterior a la consulta) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -92,8 +92,8 @@ Los datos de los modelos externos incluidos en la tabla proceden de informacion 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_ur_10000_stage2_42_LoRA_llama2_7B___stage1_was_en_10000
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-2-7b-hf
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_ur_10000_stage2_42_LoRA_llama2_7B___stage1_was_en_10000
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Referencia bibliografica incluida en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones, citada en la plantilla y no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Repositorio y documentacion de PEFT, biblioteca declarada por el autor: https://github.com/huggingface/peft
 - Documentacion de Transformers sobre adaptadores PEFT y su carga: https://huggingface.co/docs/transformers/main/peft

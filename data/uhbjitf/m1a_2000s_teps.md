@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Uhbjitf/M1a_2000s_teps` es un artefacto alojado en HuggingFace por el usuario Uhbjitf, publicado bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,2 GB y no cuenta con descargas ni interacciones registradas en el momento de la consulta. La model card asociada unicamente declara la licencia, sin aportar informacion sobre arquitectura, proposito, datos de entrenamiento ni capacidades.
+El modelo identificado como `Uhbjitf/M1a_2000s_teps` es un artefacto alojado en Hugging Face por el usuario Uhbjitf, publicado bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,2 GB y no cuenta con descargas ni interacciones registradas en el momento de la consulta. La model card asociada unicamente declara la licencia, sin aportar informacion sobre arquitectura, proposito, datos de entrenamiento ni capacidades.
 
 Por el nombre del repositorio y el tamano del artefacto, no es posible determinar con rigor si se trata de un modelo de lenguaje, un checkpoint parcial, un adaptador o un conjunto de pesos de un experimento. La ausencia de pipeline declarado, de idiomas soportados y de documentacion tecnica impide clasificarlo dentro de una categoria funcional concreta.
 
@@ -74,5 +74,5 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Uhbjitf/M1a_2000s_teps
+- Repositorio en Hugging Face: https://huggingface.co/Uhbjitf/M1a_2000s_teps
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

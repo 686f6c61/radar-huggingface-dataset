@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tipo | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vam-cross-level4-kuka-iiwa14-widowx-texture-video-lora-iter400` | LoRA de video (misma serie) | 0,7 GB (estimado) | no disponible | no disponible | HuggingFace |
-| `vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900` | LoRA de video con decoder de acciones | no disponible | no disponible | no disponible | HuggingFace |
+| `vam-cross-level4-kuka-iiwa14-widowx-texture-video-lora-iter400` | LoRA de video (misma serie) | 0,7 GB (estimado) | no disponible | no disponible | Hugging Face |
+| `vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900` | LoRA de video con decoder de acciones | no disponible | no disponible | no disponible | Hugging Face |
 | Modelo base `fused_video2world_dit` | DiT fusionado | ~3,9 GB | no disponible | no disponible | Repositorio `dreamdifferent/widowx250-video-fused` |
 
 Los tres modelos de la serie VAM-Cross son adaptadores sobre el mismo backbone base, diferenciandose en la iteracion de entrenamiento y en la configuracion de datos (por ejemplo, el `iter400` usa una sola camara, mientras que este usa dos camaras apiladas). No se dispone de datos de rendimiento comparativo.
@@ -74,7 +74,7 @@ Los tres modelos de la serie VAM-Cross son adaptadores sobre el mismo backbone b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-v2-video-lora-iter200
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-v2-video-lora-iter200
 - Repositorio del backbone base: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Repositorio del bundle de MimicVideo: https://huggingface.co/jonpai/mimic-video
 - Variante iter400: https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-video-lora-iter400

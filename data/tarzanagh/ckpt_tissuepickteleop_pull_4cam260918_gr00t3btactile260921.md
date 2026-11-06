@@ -73,11 +73,11 @@ El propio autor publica, para la misma tarea, ejecuciones de otras tres familias
 
 | Modelo | Familia | Entrada tactil | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| ckpt_..._gr00t3btactile260921 (este) | GR00T-N1.7-3B | Si | other | HuggingFace | Menor error en todas las tareas segun el autor |
-| ckpt_..._gr00t3b260921 | GR00T-N1.7-3B | No | other | HuggingFace | Variante sin tactil de la misma base |
-| ckpt_..._act260918 y acttactile260921 | ACT | No / Si | other | HuggingFace | Familia comparable en la comparativa |
-| ckpt_..._dp260918 y dptactile260921 | Diffusion Policy (DP) | No / Si | other | HuggingFace | Familia comparable en la comparativa |
-| ckpt_..._pi05260921 y pi05tactile260921 | pi0 | No / Si | other | HuggingFace | Familia comparable en la comparativa |
+| ckpt_..._gr00t3btactile260921 (este) | GR00T-N1.7-3B | Si | other | Hugging Face | Menor error en todas las tareas segun el autor |
+| ckpt_..._gr00t3b260921 | GR00T-N1.7-3B | No | other | Hugging Face | Variante sin tactil de la misma base |
+| ckpt_..._act260918 y acttactile260921 | ACT | No / Si | other | Hugging Face | Familia comparable en la comparativa |
+| ckpt_..._dp260918 y dptactile260921 | Diffusion Policy (DP) | No / Si | other | Hugging Face | Familia comparable en la comparativa |
+| ckpt_..._pi05260921 y pi05tactile260921 | pi0 | No / Si | other | Hugging Face | Familia comparable en la comparativa |
 
 Los parametros, la longitud de contexto y las cifras de rendimiento detalladas de las alternativas no estan disponibles en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ Los parametros, la longitud de contexto y las cifras de rendimiento detalladas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_gr00t3btactile260921
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_gr00t3btactile260921
 - Ejecucion ACT sin tactil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_act260921
 - Ejecucion ACT con tactil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_acttactile260921
 - Ejecucion Diffusion Policy sin tactil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_dp260921

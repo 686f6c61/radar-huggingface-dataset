@@ -77,7 +77,7 @@ El modelo small es el mas ligero de la familia BGE en chino, con menor capacidad
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta copia: https://huggingface.co/yidjsg/bge-small-zh-v1.5
+- Repositorio de Hugging Face de esta copia: https://huggingface.co/yidjsg/bge-small-zh-v1.5
 - Modelo original de BAAI: https://huggingface.co/BAAI/bge-small-zh-v1.5
 - Repositorio GitHub de FlagEmbedding: https://github.com/FlagOpen/FlagEmbedding
 - Paper tecnico de BGE: https://arxiv.org/pdf/2309.07597.pdf

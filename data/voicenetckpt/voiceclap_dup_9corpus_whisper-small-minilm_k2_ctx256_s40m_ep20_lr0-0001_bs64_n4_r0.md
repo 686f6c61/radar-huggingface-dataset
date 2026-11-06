@@ -6,7 +6,7 @@ VoiceCLAP es un checkpoint de investigación publicado por VoiceNetCkpt dentro d
 
 Por el nombre del checkpoint se deduce que el componente de audio es un encoder Whisper-small y el componente de texto un MiniLM, combinados mediante un objetivo contrastivo de tipo CLAP. El entrenamiento se realizó sobre 9 corpus con un total de 40 millones de muestras, 20 epochs, learning rate 1e-4, batch size 64 y 4 nodos. La ventana de contexto se fija en 256 y el parámetro k=2 parece hacer referencia a la configuración del objetivo contrastivo o al número de fragmentos muestreados por ejemplo.
 
-La relevancia de este modelo es limitada fuera del contexto de su propio experimento: no dispone de model card descriptiva, licencia declarada, idiomas soportados, pipeline de HuggingFace ni métricas publicadas en el repositorio. Debe tratarse, por tanto, como material reproducible de un estudio interno, no como un modelo evaluado de forma independiente.
+La relevancia de este modelo es limitada fuera del contexto de su propio experimento: no dispone de model card descriptiva, licencia declarada, idiomas soportados, pipeline de Hugging Face ni métricas publicadas en el repositorio. Debe tratarse, por tanto, como material reproducible de un estudio interno, no como un modelo evaluado de forma independiente.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | VoiceCLAP (este checkpoint) | No disponible (~280 M estimados) | 256 (unidad no especificada) | No disponible | Checkpoint PyTorch, 0 descargas |
-| LAION-CLAP | ~150-190 M segun variante | No aplica (encoder) | No disponible | Pesos publicos en HuggingFace |
+| LAION-CLAP | ~150-190 M segun variante | No aplica (encoder) | No disponible | Pesos publicos en Hugging Face |
 | Whisper-small (solo encoder de audio) | 244 M | 1500 frames de audio | MIT (version OpenAI) | Ampliamente disponible |
 | MiniLM-L6 (solo encoder de texto) | ~22 M | 512 tokens | Apache 2.0 | Ampliamente disponible |
 
@@ -94,6 +94,6 @@ La comparacion es orientativa: no se dispone de datos de rendimiento del checkpo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_dup_9corpus_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_dup_9corpus_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Indice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

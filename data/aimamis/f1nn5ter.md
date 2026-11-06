@@ -2,7 +2,7 @@
 
 ## Resumen
 
-F1NN5TER es un adaptador LoRA de texto a imagen publicado por el usuario AiMamis en HuggingFace. No se trata de un modelo fundacional, sino de un ajuste fino ligero (Low-Rank Adaptation) pensado para inyectar un concepto visual concreto —la persona conocida como F1NN5TER, con los atributos «brown hair» y «skinny»— sobre el modelo base krea/Krea-2-Turbo. El repositorio ocupa aproximadamente 0,5 GB y se distribuye con licencia openrail++ en formato compatible con la librería diffusers.
+F1NN5TER es un adaptador LoRA de texto a imagen publicado por el usuario AiMamis en Hugging Face. No se trata de un modelo fundacional, sino de un ajuste fino ligero (Low-Rank Adaptation) pensado para inyectar un concepto visual concreto —la persona conocida como F1NN5TER, con los atributos «brown hair» y «skinny»— sobre el modelo base krea/Krea-2-Turbo. El repositorio ocupa aproximadamente 0,5 GB y se distribuye con licencia openrail++ en formato compatible con la librería diffusers.
 
 El interés de esta ficha es limitado desde el punto de vista de la investigación en IA: se trata de un LoRA de nicho, con 31 descargas y sin métricas publicadas, orientado a la generación de imágenes de un sujeto concreto. Su relevancia práctica reside en que ejemplifica el flujo habitual de personalización de modelos de difusión: un adaptador pequeño que se carga junto al checkpoint base para condicionar la generación mediante palabras disparadoras (trigger words).
 
@@ -64,8 +64,8 @@ No se dispone de informacion sobre adaptadores comparables (mismo modelo base, m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| F1NN5TER (este) | LoRA sobre Krea-2-Turbo | no disponible | no aplica | openrail++ | HuggingFace, 31 descargas |
-| krea/Krea-2-Turbo | Modelo base de difusion | no disponible | no disponible | no disponible en esta ficha | HuggingFace (referenciado como base) |
+| F1NN5TER (este) | LoRA sobre Krea-2-Turbo | no disponible | no aplica | openrail++ | Hugging Face, 31 descargas |
+| krea/Krea-2-Turbo | Modelo base de difusion | no disponible | no disponible | no disponible en esta ficha | Hugging Face (referenciado como base) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,6 +79,6 @@ No se dispone de informacion sobre adaptadores comparables (mismo modelo base, m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/F1NN5TER
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/F1NN5TER
 - Modelo base referenciado: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia openrail++: https://huggingface.co/docs/hub/model-licenses

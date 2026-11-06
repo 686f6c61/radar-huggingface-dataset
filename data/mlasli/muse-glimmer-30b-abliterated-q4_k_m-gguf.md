@@ -73,7 +73,7 @@ No disponible. No se ha proporcionado información sobre modelos comparables de 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mlasli/Muse-Glimmer-30B-Abliterated-Q4_K_M-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mlasli/Muse-Glimmer-30B-Abliterated-Q4_K_M-GGUF
 - Modelo base BF16 (con metodología de abliteration): https://huggingface.co/mlasli/Muse-Glimmer-30B-Abliterated-BF16
 - Cuantización FP16 GGUF: https://huggingface.co/mlasli/Muse-Glimmer-30B-Abliterated-FP16-GGUF
 - Cuantización Q8_0 GGUF: https://huggingface.co/mlasli/Muse-Glimmer-30B-Abliterated-Q8_0-GGUF

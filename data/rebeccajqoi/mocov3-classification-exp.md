@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rebeccajqoi/mocov3-classification-exp` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificación, escrita en PyTorch. Lo publica el usuario `rebeccajqoi` bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`rebeccajqoi/mocov3-classification-exp` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificación, escrita en PyTorch. Lo publica el usuario `rebeccajqoi` bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado. El autor indica explícitamente que no se reclama ninguna puntuación de benchmark en el repositorio. El tamaño declarado del checkpoint es de 49.600 parámetros, lo que sitúa este artefacto en el rango de un juguete experimental, muy lejos de los cientos de millones de parámetros de los backbones ViT habituales en MoCo v3.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rebeccajqoi/mocov3-classification-exp | 49.600 | no aplica | sin benchmarks | Apache 2.0 | HuggingFace (repo experimental) |
+| rebeccajqoi/mocov3-classification-exp | 49.600 | no aplica | sin benchmarks | Apache 2.0 | Hugging Face (repo experimental) |
 | facebookresearch/moco-v3 (oficial) | ViT-B/16, ViT-L/16, ViT-H/14 (decenas a cientos de millones) | no aplica | resultados publicados en el paper | CC BY-NC 4.0 (según repo oficial) | GitHub + pesos |
 | torchvision.models.vit_b_16 (supervisado) | ~86 M | no aplica | ImageNet top-1 ~81 % | BSD-3 | torchvision |
-| DINOv2 (Meta) | ViT-S/B/L/g (21 M–1.1 B) | no aplica | SOTA en múltiples tareas densas | Apache 2.0 (código) / licencia de pesos específica | HuggingFace + GitHub |
+| DINOv2 (Meta) | ViT-S/B/L/g (21 M–1.1 B) | no aplica | SOTA en múltiples tareas densas | Apache 2.0 (código) / licencia de pesos específica | Hugging Face + GitHub |
 
 La comparación es asimétrica: el repositorio analizado es una implementación de juguete sin entrenamiento, mientras que las alternativas son backbones preentrenados y evaluados. No es sustituible por ellas en producción.
 
@@ -81,7 +81,7 @@ La comparación es asimétrica: el repositorio analizado es una implementación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rebeccajqoi/mocov3-classification-exp
+- Hugging Face: https://huggingface.co/rebeccajqoi/mocov3-classification-exp
 - Paper original de MoCo v3 (An Empirical Study of Training Self-Supervised Vision Transformers): https://arxiv.org/abs/2104.02057
 - Repositorio oficial de MoCo v3 (Facebook AI Research): https://github.com/facebookresearch/moco-v3
 - Documentación de safetensors: https://huggingface.co/docs/safetensors

@@ -102,7 +102,7 @@ Diferencias clave frente a las alternativas: Jah 7.0 Mini es el unico de la list
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RMDWLLC/Jah-7.0-Mini-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/RMDWLLC/Jah-7.0-Mini-MLX-4bit
 - Modelo insignia de la familia: https://huggingface.co/RMDWLLC/Jah-7.0
 - Sitio del autor (RMDW LLC): https://rmdw.ai
 - Servicio gestionado Kiyomi: https://kiyomibot.ai

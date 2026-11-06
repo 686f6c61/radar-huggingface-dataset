@@ -95,10 +95,10 @@ La comparativa natural es con los otros modelos del mismo proyecto TEC, evaluado
 
 | Modelo | Parametros | Contexto | WER test-clean / test-other | MCD test-clean / test-other | Side input | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `wq2012/vanilla_seq2seq_single_interfering` (este) | no disponible | no disponible | 45,23 / 91,53 | 9,58 / 11,34 | 0,000 KB | Apache 2.0 | HuggingFace |
-| `wq2012/tec_single_interfering` | no disponible | no disponible | 21,61 / 46,89 | 8,24 / 9,28 | 0,076 KB | no indicada en la informacion disponible | HuggingFace |
-| `wq2012/aec_single_interfering` | no disponible | no disponible | 12,06 / 23,16 | 8,85 / 9,86 | 243,465 KB | no indicada en la informacion disponible | HuggingFace |
-| `wq2012/vanilla_seq2seq_multi_interfering` (condicion multi-voz) | no disponible | no disponible | 31,16 / 42,39 | 7,93 / 8,72 | 0,000 KB | no indicada en la informacion disponible | HuggingFace |
+| `wq2012/vanilla_seq2seq_single_interfering` (este) | no disponible | no disponible | 45,23 / 91,53 | 9,58 / 11,34 | 0,000 KB | Apache 2.0 | Hugging Face |
+| `wq2012/tec_single_interfering` | no disponible | no disponible | 21,61 / 46,89 | 8,24 / 9,28 | 0,076 KB | no indicada en la informacion disponible | Hugging Face |
+| `wq2012/aec_single_interfering` | no disponible | no disponible | 12,06 / 23,16 | 8,85 / 9,86 | 243,465 KB | no indicada en la informacion disponible | Hugging Face |
+| `wq2012/vanilla_seq2seq_multi_interfering` (condicion multi-voz) | no disponible | no disponible | 31,16 / 42,39 | 7,93 / 8,72 | 0,000 KB | no indicada en la informacion disponible | Hugging Face |
 
 En la condicion multi-voz no existe una variante `NoSideInput` comparable a esta dentro de la tabla, salvo `vanilla_seq2seq_multi_interfering`. No se dispone de comparaciones con modelos externos a este proyecto.
 
@@ -112,12 +112,12 @@ En la condicion multi-voz no existe una variante `NoSideInput` comparable a esta
 - Sesgos conocidos: no se documentan sesgos especificos, pero el entrenamiento se limita a LibriTTS y LJ Speech, corpora de lectura en ingles, lo que reduce la generalizacion a otras lenguas, acentos y condiciones acusticas.
 - Idiomas: no declarados; los datasets de entrenamiento son en ingles, por lo que el comportamiento fuera del ingles es "no disponible" y presumiblemente degradado.
 - Licencia Apache 2.0, que permite uso comercial, pero el model card no detalla condiciones adicionales de los datasets subyacentes.
-- Poca validacion externa: 0 descargas y 0 likes en el momento de la ficha, sin pipeline declarado en HuggingFace.
+- Poca validacion externa: 0 descargas y 0 likes en el momento de la ficha, sin pipeline declarado en Hugging Face.
 - Requiere el stack TensorFlow/Lingvo para el checkpoint completo; el flujo de inferencia depende del paquete `textual-echo-cancellation`.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/vanilla_seq2seq_single_interfering
+- Modelo en Hugging Face: https://huggingface.co/wq2012/vanilla_seq2seq_single_interfering
 - Repositorio GitHub del proyecto: https://github.com/wq2012/tec
 - Paquete PyPI: https://pypi.org/project/textual-echo-cancellation/
 - Paper (arXiv:2008.06006v4, Textual Echo Cancellation, IEEE SLT 2021): https://arxiv.org/pdf/2008.06006

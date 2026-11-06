@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `iskconkurushetra/food-donation` no contiene un modelo de inteligencia artificial. Se trata de un espacio de HuggingFace creado por la organizacion ISKCON Kurukshetra cuyo contenido es una pagina promocional sobre donaciones de alimentos, sin pesos, sin configuracion de arquitectura y sin model card tecnica. El autor no declara pipeline, licencia, idiomas ni ningun artefacto utilizable para inferencia.
+El repositorio `iskconkurushetra/food-donation` no contiene un modelo de inteligencia artificial. Se trata de un espacio de Hugging Face creado por la organizacion ISKCON Kurukshetra cuyo contenido es una pagina promocional sobre donaciones de alimentos, sin pesos, sin configuracion de arquitectura y sin model card tecnica. El autor no declara pipeline, licencia, idiomas ni ningun artefacto utilizable para inferencia.
 
 Dado que no existe informacion tecnica alguna sobre arquitectura, parametros, contexto o entrenamiento, esta ficha no puede evaluar capacidades reales del artefacto. Los datos disponibles se limitan a metadatos del repositorio: identificador, autor, fecha de creacion (2026-11-03), fecha de actualizacion (2026-11-03), cero descargas y cero likes.
 
-La relevancia de esta entrada es, por tanto, documental: sirve como ejemplo de repositorio mal etiquetado en HuggingFace que no deberia considerarse un modelo desplegable. Cualquier evaluacion tecnica adicional requeriria que el autor publicase pesos, tokenizer, configuracion y una model card con especificaciones verificables.
+La relevancia de esta entrada es, por tanto, documental: sirve como ejemplo de repositorio mal etiquetado en Hugging Face que no deberia considerarse un modelo desplegable. Cualquier evaluacion tecnica adicional requeriria que el autor publicase pesos, tokenizer, configuracion y una model card con especificaciones verificables.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ El unico contenido textual del repositorio es una nota sobre donacion de aliment
 - Generacion de codigo o asistencia tecnica: no aplicable.
 - Procesamiento de lenguaje natural en general: no aplicable.
 - Integracion en pipelines de CI/CD o agentes: no aplicable.
-- Documentacion de repositorios mal etiquetados: util unicamente como caso de estudio sobre higiene de metadatos en HuggingFace, ya que el autor no ha declarado pipeline ni licencia.
+- Documentacion de repositorios mal etiquetados: util unicamente como caso de estudio sobre higiene de metadatos en Hugging Face, ya que el autor no ha declarado pipeline ni licencia.
 
 ## Benchmarks y rendimiento
 
@@ -75,5 +75,5 @@ No disponible. No existe categoria tecnica asignable al repositorio, por lo que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iskconkurushetra/food-donation
+- Repositorio en Hugging Face: https://huggingface.co/iskconkurushetra/food-donation
 - Pagina de donaciones referenciada en la model card: https://iskconkurukshetra.org/donations/food-donation/

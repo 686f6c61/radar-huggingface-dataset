@@ -2,7 +2,7 @@
 
 ## Resumen
 
-grafon-g2p/he es un modelo de conversion grafema-a-fonema (G2P) contextual para hebreo, desarrollado por el usuario grafon-g2p y publicado en HuggingFace. Su funcion es transformar texto escrito en hebreo a su representacion fonetica en alfabeto fonetico internacional (IPA), resolviendo problemas propios de la ortografia hebrea como la ausencia de vocales escritas (niqqud) y la existencia de homografos que se pronuncian de forma distinta segun el contexto. El modelo se construye mediante fine-tuning de dicta-il/neodictabert, un encoder tipo BERT para hebreo, con la libreria grafon.
+grafon-g2p/he es un modelo de conversion grafema-a-fonema (G2P) contextual para hebreo, desarrollado por el usuario grafon-g2p y publicado en Hugging Face. Su funcion es transformar texto escrito en hebreo a su representacion fonetica en alfabeto fonetico internacional (IPA), resolviendo problemas propios de la ortografia hebrea como la ausencia de vocales escritas (niqqud) y la existencia de homografos que se pronuncian de forma distinta segun el contexto. El modelo se construye mediante fine-tuning de dicta-il/neodictabert, un encoder tipo BERT para hebreo, con la libreria grafon.
 
 El modelo cuenta con 398.006.814 parametros (aproximadamente 398 millones) en formato safetensors y un tamano de repositorio de 0,8 GB. Esta etiquetado dentro del pipeline de text-to-speech porque su caso de uso principal es alimentar sistemas TTS, aunque en si mismo es un modulo de fonemizacion y no un sintetizador de voz. Resuelve el problema de la fonemizacion en un idioma de bajos recursos como el hebreo, donde los diccionarios de pronunciacion presentan cobertura limitada y los modelos G2P de otros idiomas no son reutilizables directamente.
 
@@ -66,8 +66,8 @@ No se dispone de datos comparativos de benchmarks ni de especificaciones equival
 
 | Modelo | Idioma | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| grafon-g2p/he | hebreo | encoder tipo BERT (sobre NeoDictaBERT) | 398.006.814 | no disponible | no disponible | HuggingFace, libreria grafon |
-| speechbrain/soundchoice-g2p | ingles | no disponible | no disponible | no disponible | no disponible | HuggingFace, SpeechBrain |
+| grafon-g2p/he | hebreo | encoder tipo BERT (sobre NeoDictaBERT) | 398.006.814 | no disponible | no disponible | Hugging Face, libreria grafon |
+| speechbrain/soundchoice-g2p | ingles | no disponible | no disponible | no disponible | no disponible | Hugging Face, SpeechBrain |
 | NVIDIA NeMo ByT5 G2P | multilingue (ByT5) | encoder-decoder ByT5 | no disponible | no disponible | no disponible | NVIDIA NeMo |
 | Modelos G2P sin lexico (arxiv 2401.10465) | no disponible | basado en HuBERT preentrenado | no disponible | no disponible | no disponible | publicacion academica |
 
@@ -88,7 +88,7 @@ Comparativa directa con alternativas especificas de hebreo: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grafon-g2p/he
+- Modelo en Hugging Face: https://huggingface.co/grafon-g2p/he
 - Modelo base: https://huggingface.co/dicta-il/neodictabert
 - Libreria grafon: https://github.com/thewh1teagle/grafon
 - Graphon, the Multimodal Memory for AI: https://www.graphon.ai/

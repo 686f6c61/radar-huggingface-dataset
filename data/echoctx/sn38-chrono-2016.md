@@ -79,4 +79,4 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/echoctx/sn38-chrono-2016
+- Hugging Face: https://huggingface.co/echoctx/sn38-chrono-2016

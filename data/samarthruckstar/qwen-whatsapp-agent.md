@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| samarthruckstar/qwen-whatsapp-agent | ~1,5 mil millones (base) + LoRA r=16 | No especificado en la ficha; el base soporta 32.768 tokens | apache-2.0 | HuggingFace, adaptador PEFT y GGUF Q4_K_M | Especializado en catálogo de maquinaria y atención por WhatsApp; sin benchmarks publicados |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 mil millones | 32.768 tokens | apache-2.0 | HuggingFace, safetensors y GGUF | Modelo base sin ajuste de dominio; cobertura multilingüe amplia y propósito general |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,2 mil millones | 128.000 tokens | Licencia comunitaria de Llama | HuggingFace, safetensors y GGUF | Alternativa de tamaño similar con contexto mayor, pero licencia con restricciones de uso |
-| Qwen/Qwen2.5-3B-Instruct | ~3 mil millones | 32.768 tokens | apache-2.0 | HuggingFace, safetensors y GGUF | Misma familia y licencia, con más capacidad de razonamiento a cambio de más VRAM |
+| samarthruckstar/qwen-whatsapp-agent | ~1,5 mil millones (base) + LoRA r=16 | No especificado en la ficha; el base soporta 32.768 tokens | apache-2.0 | Hugging Face, adaptador PEFT y GGUF Q4_K_M | Especializado en catálogo de maquinaria y atención por WhatsApp; sin benchmarks publicados |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 mil millones | 32.768 tokens | apache-2.0 | Hugging Face, safetensors y GGUF | Modelo base sin ajuste de dominio; cobertura multilingüe amplia y propósito general |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,2 mil millones | 128.000 tokens | Licencia comunitaria de Llama | Hugging Face, safetensors y GGUF | Alternativa de tamaño similar con contexto mayor, pero licencia con restricciones de uso |
+| Qwen/Qwen2.5-3B-Instruct | ~3 mil millones | 32.768 tokens | apache-2.0 | Hugging Face, safetensors y GGUF | Misma familia y licencia, con más capacidad de razonamiento a cambio de más VRAM |
 
 No se dispone de métricas comparativas de calidad entre estas opciones en la información proporcionada; la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -96,6 +96,6 @@ No se dispone de métricas comparativas de calidad entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samarthruckstar/qwen-whatsapp-agent
+- Modelo en Hugging Face: https://huggingface.co/samarthruckstar/qwen-whatsapp-agent
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados; los resultados devueltos no guardan relacion con la ficha.

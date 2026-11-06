@@ -5,7 +5,7 @@
   "author": "huihui-ai",
   "url": "https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
   "created_at": "2026-10-25T01:06:06.000Z",
-  "updated_at": "2026-11-05T02:04:06.000Z",
+  "updated_at": "2026-11-06T00:50:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -40,12 +40,12 @@
     "conversational"
   ],
   "likes": 126,
-  "downloads_30d": 34393,
-  "trending_score": 47,
+  "downloads_30d": 38676,
+  "trending_score": 45,
   "parameters": 1677721600,
   "parameters_human": "1.68B",
-  "storage_bytes": 384757142432,
-  "storage_human": "384.8 GB",
+  "storage_bytes": 599010689376,
+  "storage_human": "599.0 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"

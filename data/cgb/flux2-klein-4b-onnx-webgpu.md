@@ -76,7 +76,7 @@ No se dispone de datos comparativos con otros modelos de generacion de imagenes 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cgb/flux2-klein-4b-onnx-webgpu
+- Repositorio Hugging Face: https://huggingface.co/cgb/flux2-klein-4b-onnx-webgpu
 - Demo en linea: https://freegen.ai/imagine
 - Modelo base original: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Repositorio alternativo (MarkShark2): https://huggingface.co/MarkShark2/flux2-klein-4b-onnx-webgpu-q4

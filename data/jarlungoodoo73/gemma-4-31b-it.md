@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 - Repositorio del ajuste: https://huggingface.co/Jarlungoodoo73/gemma-4-31B-it
 - Modelo base: https://huggingface.co/google/gemma-4-31B
-- Coleccion de la familia Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion de la familia Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion oficial: https://ai.google.dev/gemma/docs/core

@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/hoidhxd/SenseNova-U1.5-8B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/hoidhxd/SenseNova-U1.5-8B-GGUF
 - Modelo base (safetensors BF16): https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-Preview
 - Nodo personalizado ComfyUI (referenciado en la model card, sin URL directa): `ComfyUI-SenseNova-U1` (disponible en ComfyUI Manager)

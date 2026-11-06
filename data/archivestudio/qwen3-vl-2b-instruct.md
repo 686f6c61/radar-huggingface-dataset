@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-VL-2B-Instruct (este repositorio) | 2,13B denso | 256K, ampliable a 1M | apache-2.0 | safetensors en HuggingFace, via transformers |
-| Qwen2.5-VL-3B-Instruct | 3,75B denso | 32K | sujeta a la licencia de investigacion de Qwen (verificar en su model card; uso comercial potencialmente restringido) | HuggingFace |
-| InternVL3-2B | aproximadamente 2B denso | no disponible | no disponible | HuggingFace |
-| SmolVLM2-2.2B-Instruct | aproximadamente 2,25B denso | no disponible | apache-2.0 | HuggingFace |
+| Qwen3-VL-2B-Instruct (este repositorio) | 2,13B denso | 256K, ampliable a 1M | apache-2.0 | safetensors en Hugging Face, via transformers |
+| Qwen2.5-VL-3B-Instruct | 3,75B denso | 32K | sujeta a la licencia de investigacion de Qwen (verificar en su model card; uso comercial potencialmente restringido) | Hugging Face |
+| InternVL3-2B | aproximadamente 2B denso | no disponible | no disponible | Hugging Face |
+| SmolVLM2-2.2B-Instruct | aproximadamente 2,25B denso | no disponible | apache-2.0 | Hugging Face |
 
 La comparativa se limita a parametros, contexto, licencia y disponibilidad; no se incluyen cifras de rendimiento porque no hay benchmarks numericos en la informacion proporcionada ni se han reproducido mediciones. La ventaja diferencial mas clara de este checkpoint frente a alternativas de tamano similar es la combinacion de contexto nativo de 256K y licencia Apache-2.0, ademas de las capacidades de agente visual y grounding 3D declaradas en la model card.
 
@@ -91,7 +91,7 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad; no s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-VL-2B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-VL-2B-Instruct
 - Pesos oficiales referenciados en la model card: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Demo en Spaces: https://huggingface.co/spaces/akhaliq/Qwen3-VL-2B-Instruct
 - Informe tecnico de Qwen3 (cita): https://arxiv.org/abs/2505.09388

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Backbone | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Charm (ONNX) | Estética y calidad de imagen | DINOv2-small/large | Parches multiescala 14x14 | Apache-2.0 | HuggingFace + GitHub |
+| Charm (ONNX) | Estética y calidad de imagen | DINOv2-small/large | Parches multiescala 14x14 | Apache-2.0 | Hugging Face + GitHub |
 | NIMA | Calidad estética | CNN (Inception-ResNet) | Imagen completa redimensionada | Código abierto (repositorio original) | Disponible |
 | MUSIQ | Calidad de imagen | ViT híbrido multiescala | Resolución nativa multiescala | Apache-2.0 (TensorFlow) | Disponible |
 | Q-Align | Calidad y estética | LLaVA-based | Imagen + prompt textual | no disponible en esta ficha | Disponible |
@@ -80,7 +80,7 @@ La comparación cuantitativa con estas alternativas no está disponible en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Miosp/charm-onnx
+- Hugging Face: https://huggingface.co/Miosp/charm-onnx
 - Modelo base: https://huggingface.co/FatemehBehrad/Charm
 - Repositorio del autor original: https://github.com/FBehrad/Charm
 - Repositorio de la conversión ONNX: https://github.com/Miosp/charm-onnx

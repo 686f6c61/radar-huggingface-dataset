@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CutIA-Qwen-4B-InstructInit-TF-EduRandom es un checkpoint causal de aproximadamente 4.400 millones de parametros publicado por el usuario g4me en HuggingFace. Se trata de un ajuste (fine-tune) del modelo g4me/CutIA-Qwen-4B-InstructInit-TF, del que hereda la etiqueta de familia Qwen3 en los tags del repositorio. La propia model card lo describe explicitamente como "an experimental checkpoint", sin documentar el corpus de entrenamiento, el procedimiento de ajuste ni los hiperparametros empleados.
+CutIA-Qwen-4B-InstructInit-TF-EduRandom es un checkpoint causal de aproximadamente 4.400 millones de parametros publicado por el usuario g4me en Hugging Face. Se trata de un ajuste (fine-tune) del modelo g4me/CutIA-Qwen-4B-InstructInit-TF, del que hereda la etiqueta de familia Qwen3 en los tags del repositorio. La propia model card lo describe explicitamente como "an experimental checkpoint", sin documentar el corpus de entrenamiento, el procedimiento de ajuste ni los hiperparametros empleados.
 
 El interes del modelo es limitado pero acotado: sirve como ejemplo de pipeline de ajuste sobre una base Qwen3 de 4B y como punto de partida reproducible para quien quiera inspeccionar pesos en safetensors con transformers. No hay evidencia publicada de evaluaciones, ni datos de licencia, idiomas o contexto maximo, y el repositorio no registra descargas ni "likes" en el momento de la consulta.
 
@@ -48,7 +48,7 @@ El tamano del repositorio (16,9 GB) es coherente con pesos en fp32 (unos 17,6 GB
 - Investigacion sobre checkpoints experimentales: util para estudiar como se comporta un ajuste no documentado y que artefactos (olvido catastrofico, degradacion de instrucciones, sesgos) aparecen cuando no se publica la receta de entrenamiento.
 - Base para un ajuste propio: al ser un derivado de Qwen3 con licencia no declarada, un equipo puede usarlo como punto de partida para su propio SFT, asumiendo el riesgo legal de la licencia ausente.
 - Comparacion de tokenizadores y plantillas de chat: permite verificar si el tokenizador de la familia Qwen3 se preserva tras el ajuste, algo relevante al integrar el modelo en frameworks propios.
-- Docencia y formacion tecnica: sirve para ilustrar en un aula o taller como se publica un modelo en HuggingFace y que metadatos minimos deberia incluir una model card (licencia, idiomas, contexto, datos de entrenamiento).
+- Docencia y formacion tecnica: sirve para ilustrar en un aula o taller como se publica un modelo en Hugging Face y que metadatos minimos deberia incluir una model card (licencia, idiomas, contexto, datos de entrenamiento).
 - No se recomienda su uso en escenarios de produccion con usuarios finales (atencion al cliente, generacion de codigo en CI/CD, extraccion de datos regulados) por la ausencia total de evaluaciones, licencia e informacion de sesgos.
 
 ## Benchmarks y rendimiento
@@ -92,7 +92,7 @@ Los datos de contexto, licencia y disponibilidad de la columna de modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduRandom
+- Modelo en Hugging Face: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduRandom
 - Modelo base: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF
 - Perfil del autor: https://huggingface.co/g4me
 

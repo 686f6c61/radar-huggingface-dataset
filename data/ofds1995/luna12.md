@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luna12 es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes mediante difusion, publicado por el usuario ofds1995 en HuggingFace. El modelo se entrena sobre la base `krea/Krea-2-Raw`, un modelo de difusion texto-a-imagen, y su funcion es especializar esa base para generar un concepto o estilo concreto activado por la palabra clave `Luna12`. El repositorio ocupa aproximadamente 0,5 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
+Luna12 es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes mediante difusion, publicado por el usuario ofds1995 en Hugging Face. El modelo se entrena sobre la base `krea/Krea-2-Raw`, un modelo de difusion texto-a-imagen, y su funcion es especializar esa base para generar un concepto o estilo concreto activado por la palabra clave `Luna12`. El repositorio ocupa aproximadamente 0,5 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
 
 La relevancia de este tipo de artefacto es practica: permite a quien ya dispone de Krea-2-Raw anadir un estilo o sujeto especifico sin reentrenar el modelo base, con un coste de almacenamiento y de inferencia marginal. Sin embargo, la informacion publicada es muy escasa: la model card solo indica la palabra de activacion, la licencia Apache 2.0 y el modelo base, sin detallar el dataset de entrenamiento, el rango del LoRA, los hiperparametros ni ejemplos de uso verificables.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Luna12 (ofds1995) | LoRA texto-a-imagen | krea/Krea-2-Raw | no disponible | no aplica | Apache 2.0 | HuggingFace, 16 descargas |
-| Krea-2-Raw (krea) | Modelo base de difusion texto-a-imagen | propio | no disponible en esta ficha | no aplica | no disponible en esta ficha | HuggingFace |
-| Otros LoRA para Krea-2-Raw | LoRA texto-a-imagen | krea/Krea-2-Raw | no disponible | no aplica | variable | HuggingFace |
+| Luna12 (ofds1995) | LoRA texto-a-imagen | krea/Krea-2-Raw | no disponible | no aplica | Apache 2.0 | Hugging Face, 16 descargas |
+| Krea-2-Raw (krea) | Modelo base de difusion texto-a-imagen | propio | no disponible en esta ficha | no aplica | no disponible en esta ficha | Hugging Face |
+| Otros LoRA para Krea-2-Raw | LoRA texto-a-imagen | krea/Krea-2-Raw | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento ni de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de benchmarks que permitan una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ofds1995/Luna12
+- Modelo en Hugging Face: https://huggingface.co/ofds1995/Luna12
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Repositorio de archivos: https://huggingface.co/ofds1995/Luna12/tree/main
 - Libreria diffusers: https://github.com/huggingface/diffusers

@@ -6,7 +6,7 @@ Cohere-AR/cohere-transcribe-ar-rl-v9enc es un modelo de reconocimiento automáti
 
 Con aproximadamente 2.066 millones de parámetros (2,07 B), el modelo se distribuye en formato safetensors y es compatible con la librería transformers mediante el pipeline `automatic-speech-recognition`. Su relevancia radica en cubrir un nicho poco atendido: ASR robusto para árabe conversacional y mezcla árabe-inglés en contextos de telefonía, donde muchos modelos multilingües generalistas rinden por debajo de lo esperado.
 
-El acceso al modelo está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo. No se especifica la licencia en la información disponible, lo que supone una limitación importante para evaluar su uso comercial.
+El acceso al modelo está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo. No se especifica la licencia en la información disponible, lo que supone una limitación importante para evaluar su uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Cuantización a 8 bits: alrededor de 2 GB de pesos, viable en GPUs consumer de 6-8 GB.
 - GPU recomendadas: A100, H100 o L40S para despliegue en producción con concurrencia; RTX 4090, RTX 3090 o RTX 4080 para desarrollo y pruebas.
 - Cabe en GPU consumer: sí, en tarjetas con 8 GB o más en fp16, y en 6 GB con cuantización.
-- Opciones de despliegue: transformers con pipeline `automatic-speech-recognition`, TGI si el soporte de la arquitectura `cohere_asr` está disponible, y endpoints gestionados de HuggingFace (marcado como `endpoints_compatible`). No se confirma soporte de llama.cpp u Ollama, que están orientados a modelos de lenguaje.
+- Opciones de despliegue: transformers con pipeline `automatic-speech-recognition`, TGI si el soporte de la arquitectura `cohere_asr` está disponible, y endpoints gestionados de Hugging Face (marcado como `endpoints_compatible`). No se confirma soporte de llama.cpp u Ollama, que están orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparación es orientativa: no se dispone de métricas de WER para el modelo
 ## Limitaciones y advertencias
 
 - Licencia no especificada: no puede confirmarse el uso comercial; es imprescindible verificar las condiciones al aceptar el acceso gated.
-- Acceso restringido: requiere aprobación en HuggingFace, lo que puede introducir fricción en pipelines automatizados.
+- Acceso restringido: requiere aprobación en Hugging Face, lo que puede introducir fricción en pipelines automatizados.
 - Idiomas limitados a árabe e inglés; no se declara soporte para otras lenguas ni para dialectos específicos más allá de lo que cubra el entrenamiento.
 - Sin datos publicados de WER, CER ni benchmarks comparativos: el rendimiento real debe validarse con un conjunto propio antes de producción.
 - Riesgo de alucinación en ASR: posible generación de texto plausible en segmentos con ruido extremo o silencios, comportamiento habitual en modelos encoder-decoder.
@@ -88,7 +88,7 @@ La comparación es orientativa: no se dispone de métricas de WER para el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v9enc
+- Modelo en Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v9enc
 - Modelo base (SFT): https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full
 - Organización Cohere-AR: https://huggingface.co/Cohere-AR
 - Documentación del pipeline ASR de transformers: https://huggingface.co/docs/transformers/main/en/main_classes/pipelines#automatic-speech-recognition

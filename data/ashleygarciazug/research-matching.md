@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashleygarciazug/research-matching` es un repositorio de HuggingFace que contiene una implementación propia y mínima de una arquitectura tipo CLIP orientada a tareas de *matching* (emparejamiento o similitud entre modalidades). Lo publica el usuario `ashleygarciazug` y su relevancia no reside en un modelo entrenado, sino en servir como punto de partida reproducible: incluye el código (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`).
+`ashleygarciazug/research-matching` es un repositorio de Hugging Face que contiene una implementación propia y mínima de una arquitectura tipo CLIP orientada a tareas de *matching* (emparejamiento o similitud entre modalidades). Lo publica el usuario `ashleygarciazug` y su relevancia no reside en un modelo entrenado, sino en servir como punto de partida reproducible: incluye el código (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`).
 
 El modelo es de escala *tiny* y su recuento real de parámetros en safetensors es de 49.600, un orden de magnitud muy inferior al de cualquier CLIP operativo (los CLIP ViT-B/32 comerciales rondan los 151 millones de parámetros). Incorpora decisiones de diseño concretas: atención de tipo linear, fusión con *gating*, activación swish y normalización por *batchnorm*.
 
@@ -29,7 +29,7 @@ Es importante subrayar que el propio autor declara explícitamente que el checkp
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una implementación personalizada de CLIP a escala *tiny*, con atención linear en lugar de la atención softmax cuadrática habitual, fusión de las dos torres mediante *gated fusion*, activación swish y normalización con batchnorm. El autor etiqueta el diseño como una implementación propia, lo que implica que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder instanciar el modelo.
+La arquitectura es una implementación personalizada de CLIP a escala *tiny*, con atención linear en lugar de la atención softmax cuadrática habitual, fusión de las dos torres mediante *gated fusion*, activación swish y normalización con batchnorm. El autor etiqueta el diseño como una implementación propia, lo que implica que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder instanciar el modelo.
 
 Respecto al entrenamiento, no existe evidencia de un entrenamiento completado. `training_args.json` recoge únicamente una receta inicial de experimento basada en SGD con planificador exponencial, y la model card insiste en que esos valores son puntos de partida del script y no el resultado de una ejecución real. No se documentan tokens de entrenamiento, composición de dataset, ni fases de RLHF o DPO. `model.safetensors` se describe como un checkpoint de inicialización válido para pruebas de humo, no como un checkpoint con rendimiento medido. La única guía metodológica aportada es que cualquier evaluación significativa debería usar un conjunto de validación emparejado, reportar la métrica de la tarea con al menos tres semillas y comparar contra una línea base de capacidad equivalente, conservando los registros de entrenamiento y las versiones del entorno.
 
@@ -71,7 +71,7 @@ Aviso: los valores de los modelos de referencia proceden de conocimiento públic
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ashleygarciazug/research-matching | 49.600 | no disponible | BSD-3-Clause | HuggingFace, checkpoint de inicializacion sin entrenar |
+| ashleygarciazug/research-matching | 49.600 | no disponible | BSD-3-Clause | Hugging Face, checkpoint de inicializacion sin entrenar |
 | OpenAI CLIP ViT-B/32 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | OpenCLIP ViT-B/32 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | SigLIP base | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
@@ -86,11 +86,11 @@ La comparación relevante, en cualquier caso, no es de rendimiento sino de natur
 - No se documentan sesgos, pero al no existir datos de entrenamiento ni evaluación tampoco es posible caracterizarlos.
 - Riesgo de alucinación: no aplica en el sentido generativo, ya que no es un modelo de lenguaje entrenado.
 - No hay información sobre longitud de contexto, idiomas soportados ni tipos de cuantización.
-- Al ser una implementación personalizada, las APIs de carga automática de HuggingFace requieren un adaptador explícito; un intento de carga genérica fallará.
+- Al ser una implementación personalizada, las APIs de carga automática de Hugging Face requieren un adaptador explícito; un intento de carga genérica fallará.
 - Licencia BSD-3-Clause: permite uso comercial y modificación, pero exige conservar el aviso de copyright y la cláusula de exención de responsabilidad, y prohíbe usar el nombre de los titulares para promocionar derivados sin permiso. Los términos de los datos de origen deben revisarse por separado cuando el repositorio se use con conjuntos de datos externos.
 - Para producción, cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto que aquí se distribuyen.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashleygarciazug/research-matching
+- Hugging Face: https://huggingface.co/ashleygarciazug/research-matching
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos correspondían a recetas de ensaladas y no guardan relación con el modelo.

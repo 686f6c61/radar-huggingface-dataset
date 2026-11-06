@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos frente a alternativas, ni de m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fenomen-Alex/ukrainian-municipal-accountability-qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/Fenomen-Alex/ukrainian-municipal-accountability-qwen3-8b
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-8B-4bit
 - Repositorio del proyecto: https://github.com/Fenomen-Alex/ukrainian-municipal-accountability
 - Script de construcción del dataset: https://github.com/Fenomen-Alex/ukrainian-municipal-accountability/blob/master/ml/tune/build_dataset.py

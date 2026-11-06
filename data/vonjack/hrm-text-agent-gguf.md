@@ -81,7 +81,7 @@ No se dispone de información suficiente para una comparativa con modelos de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vonjack/hrm-text-agent-gguf
+- Repositorio Hugging Face: https://huggingface.co/vonjack/hrm-text-agent-gguf
 - Perfil del autor: https://huggingface.co/vonjack
 - Repositorio GitHub del proyecto HRM-Text (kristobalus): https://github.com/kristobalus/hrm-text
 - Repositorio GitHub del proyecto HRM-Text (sapientinc): https://github.com/sapientinc/HRM-Text

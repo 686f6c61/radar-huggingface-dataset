@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jessy-bubble/saint-varda-lora` es un repositorio publicado en HuggingFace por el usuario Jessy-bubble el 5 de octubre de 2026 y actualizado el mismo dia. El sufijo del nombre y la etiqueta `transformers` apuntan a que se trata de un adaptador LoRA (Low-Rank Adaptation) mas que de un modelo completo, pero esta interpretacion no esta confirmada por ninguna documentacion del autor. La model card es la plantilla generica autogenerada por HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+`Jessy-bubble/saint-varda-lora` es un repositorio publicado en Hugging Face por el usuario Jessy-bubble el 5 de octubre de 2026 y actualizado el mismo dia. El sufijo del nombre y la etiqueta `transformers` apuntan a que se trata de un adaptador LoRA (Low-Rank Adaptation) mas que de un modelo completo, pero esta interpretacion no esta confirmada por ninguna documentacion del autor. La model card es la plantilla generica autogenerada por Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas ni licencia. El repositorio registra 0 descargas y 0 likes, y su tamano declarado es de 0,0 GB, lo que impide incluso verificar que contenga pesos. La etiqueta `arxiv:1910.09700` no es un paper del modelo: corresponde a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono citado en la plantilla estandar de model card, por lo que no aporta informacion tecnica.
 
@@ -35,7 +35,7 @@ A dia de hoy este artefacto no es evaluable: no hay pesos verificables, ni docum
 
 No hay informacion publicada sobre la arquitectura. La unica pista es la etiqueta `transformers` y el sufijo `-lora` del identificador, que sugieren un adaptador de bajo rango destinado a combinarse con un modelo base no identificado. El propio modelo base, el rango de las matrices LoRA, las capas objetivo del adaptador y la estrategia de fusion son datos no disponibles.
 
-Tampoco se documenta el entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni si hubo ajuste por instrucciones (SFT, RLHF o DPO). Los campos de hiperparametros, precision (fp32, bf16, fp16) y datos de entrenamiento de la model card estan marcados como `[More Information Needed]`. La etiqueta `endpoints_compatible` indica unicamente que el repositorio es compatible con los endpoints de inferencia alojados de HuggingFace, no que exista un endpoint desplegado.
+Tampoco se documenta el entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni si hubo ajuste por instrucciones (SFT, RLHF o DPO). Los campos de hiperparametros, precision (fp32, bf16, fp16) y datos de entrenamiento de la model card estan marcados como `[More Information Needed]`. La etiqueta `endpoints_compatible` indica unicamente que el repositorio es compatible con los endpoints de inferencia alojados de Hugging Face, no que exista un endpoint desplegado.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: indeterminada. Depende del tamano del modelo base: seria viable en una RTX 4090 o similar solo si el modelo base es de menos de aproximadamente 13 000 millones de parametros en cuantizacion de 4 bits, extremo que no se puede confirmar.
 - Almacenamiento en disco: el repositorio declara 0,0 GB, compatible con un adaptador de muy pocos megabytes, aunque tambien con un repositorio vacio o con pesos no subidos.
-- Opciones de despliegue: ninguna verificada. La etiqueta `endpoints_compatible` apunta a compatibilidad con los endpoints de HuggingFace; el despliegue propio exigiria ademas identificar el modelo base y sus pesos, y podria abordarse con vLLM, TGI, llama.cpp u Ollama si el formato resultante lo permite (safetensors no es directamente cargable en llama.cpp sin conversion).
+- Opciones de despliegue: ninguna verificada. La etiqueta `endpoints_compatible` apunta a compatibilidad con los endpoints de Hugging Face; el despliegue propio exigiria ademas identificar el modelo base y sus pesos, y podria abordarse con vLLM, TGI, llama.cpp u Ollama si el formato resultante lo permite (safetensors no es directamente cargable en llama.cpp sin conversion).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No disponible. No es posible establecer comparaciones sin conocer el modelo base
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessy-bubble/saint-varda-lora
+- Repositorio en Hugging Face: https://huggingface.co/Jessy-bubble/saint-varda-lora
 - Paper citado en la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre estimacion de emisiones, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la model card: https://mlco2.github.io/impact
 - Modelo base: no disponible

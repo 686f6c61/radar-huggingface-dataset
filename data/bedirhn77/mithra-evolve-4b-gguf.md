@@ -1,7 +1,7 @@
 # Bedirhn77/Mithra-Evolve-4B-GGUF
 
 ## Resumen
-Mithra-Evolve-4B es un ajuste fino por QLoRA del modelo base Qwen/Qwen3.5-4B, desarrollado por el usuario Bedirhn77 y publicado en HuggingFace bajo licencia Apache 2.0. Se distribuye unicamente en formato GGUF con cuantizacion Q4_K_M (aproximadamente 2,8 GB), pensado para ejecutarse en CPU mediante Ollama con un consumo de RAM reducido. El modelo esta orientado a tareas de programacion y a flujos de trabajo con agentes, con el objetivo declarado de servir como sustituto ligero en entornos tipo Claude Code.
+Mithra-Evolve-4B es un ajuste fino por QLoRA del modelo base Qwen/Qwen3.5-4B, desarrollado por el usuario Bedirhn77 y publicado en Hugging Face bajo licencia Apache 2.0. Se distribuye unicamente en formato GGUF con cuantizacion Q4_K_M (aproximadamente 2,8 GB), pensado para ejecutarse en CPU mediante Ollama con un consumo de RAM reducido. El modelo esta orientado a tareas de programacion y a flujos de trabajo con agentes, con el objetivo declarado de servir como sustituto ligero en entornos tipo Claude Code.
 
 La propuesta resulta relevante por su tamano contenido (4.326.350.848 parametros) y su enfasis en el despliegue local sin GPU, un nicho donde los modelos de codigo de mayor tamano no caben. No obstante, el propio autor lo etiqueta como prototipo experimental v0.1: el ajuste se realizo sobre unos pocos miles de ejemplos y no se han ejecutado evaluaciones de referencia para tareas agenticas como SWE-bench, Terminal-Bench o LiveCodeBench.
 

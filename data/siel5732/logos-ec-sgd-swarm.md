@@ -74,7 +74,7 @@ No disponible. No hay modelos comparables en la categoría de simuladores de ODE
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/siel5732/logos-ec-sgd-swarm
+- Hugging Face: https://huggingface.co/siel5732/logos-ec-sgd-swarm
 - Perfil del autor: https://huggingface.co/siel5732
 - Repositorio GitHub del autor: https://github.com/siel5732/home
 - Repositorio LOGOS (posible relación, aunque no confirmada): https://github.com/LOGOS-Hub/LOGOS

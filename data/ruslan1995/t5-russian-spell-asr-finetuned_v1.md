@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Ruslan1995/t5-russian-spell-asr-finetuned_v1 es un modelo de correccion ortografica y post-procesado de texto en ruso, construido sobre la familia T5 (transformer encoder-decoder) y publicado en HuggingFace por el usuario Ruslan1995. Con 222.903.552 parametros (dato real leido de los pesos en safetensors), su tamano es coherente con la variante T5-base, lo que lo situa en la gama ligera y desplegable en hardware modesto. El sufijo del identificador ("asr-finetuned") indica que ha sido ajustado para limpiar la salida de sistemas de reconocimiento automatico del habla (ASR), un paso critico porque los transcriptores introducen errores de ortografia, puntuacion y homofonos que degradan cualquier pipeline posterior.
+Ruslan1995/t5-russian-spell-asr-finetuned_v1 es un modelo de correccion ortografica y post-procesado de texto en ruso, construido sobre la familia T5 (transformer encoder-decoder) y publicado en Hugging Face por el usuario Ruslan1995. Con 222.903.552 parametros (dato real leido de los pesos en safetensors), su tamano es coherente con la variante T5-base, lo que lo situa en la gama ligera y desplegable en hardware modesto. El sufijo del identificador ("asr-finetuned") indica que ha sido ajustado para limpiar la salida de sistemas de reconocimiento automatico del habla (ASR), un paso critico porque los transcriptores introducen errores de ortografia, puntuacion y homofonos que degradan cualquier pipeline posterior.
 
 El problema que resuelve es concreto: los motores ASR en ruso producen transcripciones con fallos de spelling y de normalizacion que rompen busquedas, analitica de texto y sistemas de subtitulado. Un modelo seq2seq de correccion recibe la hipotesis del ASR y devuelve una version corregida, todo dentro de la misma arquitectura text2text-generation. La relevancia actual viene de que el ruso es un idioma con morfologia rica y muchos homofonos, donde las tecnicas de correccion generica funcionan peor que un ajuste especifico sobre pares (texto erroneo, texto correcto).
 
-La model card publicada es la plantilla automatica de HuggingFace y no contiene informacion sustantiva: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Ademas, el repositorio registra 0 descargas y 0 likes en el momento de la consulta. Todo lo que no figure de forma explicita en la informacion disponible se marca como "no disponible" en esta ficha; lo que aparece como inferencia se etiqueta como tal.
+La model card publicada es la plantilla automatica de Hugging Face y no contiene informacion sustantiva: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Ademas, el repositorio registra 0 descargas y 0 likes en el momento de la consulta. Todo lo que no figure de forma explicita en la informacion disponible se marca como "no disponible" en esta ficha; lo que aparece como inferencia se etiqueta como tal.
 
 ## Especificaciones tecnicas
 
@@ -54,23 +54,23 @@ Las siguientes capacidades se derivan del tipo de modelo y de su denominacion; n
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla automatica de HuggingFace y no incluye metricas de evaluacion, conjunto de test ni comparaciones. Tampoco se han encontrado cifras en los resultados de busqueda web.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla automatica de Hugging Face y no incluye metricas de evaluacion, conjunto de test ni comparaciones. Tampoco se han encontrado cifras en los resultados de busqueda web.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,9 GB solo para pesos; en fp16/bf16, unos 0,45 GB; en int8, alrededor de 0,22 GB. Hay que sumar el coste de activaciones y de la cache del decodificador, reducido en este rango de tamano.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente; una RTX 3060, RTX 4060, RTX 3090, RTX 4090, A10, L4, A100 o H100 cubren el modelo con holgura.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU de consumo de los ultimos anos, e incluso puede ejecutarse en CPU con latencias aceptables para procesamiento por lotes.
-- Opciones de despliegue: `transformers` con PyTorch es la via directa; el repositorio esta marcado como compatible con Text Generation Inference y con endpoints, por lo que es desplegable en HuggingFace Inference Endpoints. Tambien es viable el servido con vLLM o TGI, aunque para un encoder-decoder de 222M parametros el beneficio frente a `transformers` es limitado. No hay evidencia de pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion previa y la disponibilidad de soporte para T5 en esas herramientas.
+- Opciones de despliegue: `transformers` con PyTorch es la via directa; el repositorio esta marcado como compatible con Text Generation Inference y con endpoints, por lo que es desplegable en Hugging Face Inference Endpoints. Tambien es viable el servido con vLLM o TGI, aunque para un encoder-decoder de 222M parametros el beneficio frente a `transformers` es limitado. No hay evidencia de pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion previa y la disponibilidad de soporte para T5 en esas herramientas.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ruslan1995/t5-russian-spell-asr-finetuned_v1 | 222,9 M | No disponible (familia T5, habitualmente 512) | Correccion ortografica de ASR en ruso | No disponible | HuggingFace, 0 descargas, 0 likes |
-| UrukHan/t5-russian-spell | No disponible | No disponible | Correccion ortografica en ruso | No disponible | HuggingFace; es el punto de partida declarado por otros ajustes de la comunidad |
-| machine-leoning/Model1 | No disponible | No disponible | Ajuste fino sobre UrukHan/t5-russian-spell | No disponible | HuggingFace |
+| Ruslan1995/t5-russian-spell-asr-finetuned_v1 | 222,9 M | No disponible (familia T5, habitualmente 512) | Correccion ortografica de ASR en ruso | No disponible | Hugging Face, 0 descargas, 0 likes |
+| UrukHan/t5-russian-spell | No disponible | No disponible | Correccion ortografica en ruso | No disponible | Hugging Face; es el punto de partida declarado por otros ajustes de la comunidad |
+| machine-leoning/Model1 | No disponible | No disponible | Ajuste fino sobre UrukHan/t5-russian-spell | No disponible | Hugging Face |
 | t5-base (referencia de arquitectura) | 220 M aprox. | 512 tokens | Text-to-text generico | Apache 2.0 | Ampliamente disponible |
 
 La comparativa es limitada porque ni la model card del modelo analizado ni las de los modelos alternativos publican especificaciones detalladas. La referencia a `UrukHan/t5-russian-spell` procede de los resultados de busqueda, no de una declaracion explicita en el repositorio analizado.
@@ -89,7 +89,7 @@ La comparativa es limitada porque ni la model card del modelo analizado ni las d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ruslan1995/t5-russian-spell-asr-finetuned_v1
+- Modelo en Hugging Face: https://huggingface.co/Ruslan1995/t5-russian-spell-asr-finetuned_v1
 - Dataset asociado: https://huggingface.co/datasets/Ruslan1995/russian-asr-spell-correction
 - Dataset asociado, version 2: https://huggingface.co/datasets/Ruslan1995/russian-asr-spell-correction_v2
 - Posible modelo base: https://huggingface.co/UrukHan/t5-russian-spell

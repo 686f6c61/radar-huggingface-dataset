@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Hopefully_Not_Overfitted es un ajuste fino (fine-tuning) de tipo SFT sobre el modelo cuantizado en 4 bits unsloth/Qwen2.5-14B-Instruct-bnb-4bit, publicado por el usuario LynixSakara en HuggingFace. Se trata de un experimento personal, no de un modelo con documentación técnica completa: el repositorio acumula 0 descargas y 0 "likes", la model card no especifica el conjunto de datos, los hiperparámetros ni el número de tokens de entrenamiento, y el campo de licencia contiene únicamente un marcador de posición.
+Hopefully_Not_Overfitted es un ajuste fino (fine-tuning) de tipo SFT sobre el modelo cuantizado en 4 bits unsloth/Qwen2.5-14B-Instruct-bnb-4bit, publicado por el usuario LynixSakara en Hugging Face. Se trata de un experimento personal, no de un modelo con documentación técnica completa: el repositorio acumula 0 descargas y 0 "likes", la model card no especifica el conjunto de datos, los hiperparámetros ni el número de tokens de entrenamiento, y el campo de licencia contiene únicamente un marcador de posición.
 
-Hereda por tanto la arquitectura del modelo base: un transformer decoder-only denso de la familia Qwen2.5, con aproximadamente 14.700 millones de parámetros en su versión original de 14B. El entrenamiento se realizó con TRL 0.24.0 sobre Transformers 5.5.0 y PyTorch 2.10.0+cu128, lo que lo sitúa en el ecosistema estándar de HuggingFace y lo hace compatible con `transformers`, `peft` (si finalmente se trata de un adaptador) y con los endpoints de inferencia compatibles.
+Hereda por tanto la arquitectura del modelo base: un transformer decoder-only denso de la familia Qwen2.5, con aproximadamente 14.700 millones de parámetros en su versión original de 14B. El entrenamiento se realizó con TRL 0.24.0 sobre Transformers 5.5.0 y PyTorch 2.10.0+cu128, lo que lo sitúa en el ecosistema estándar de Hugging Face y lo hace compatible con `transformers`, `peft` (si finalmente se trata de un adaptador) y con los endpoints de inferencia compatibles.
 
 Su relevancia práctica es limitada y debe evaluarse como lo que es: un checkpoint comunitario sin validación pública. El interés principal reside en que sirve como ejemplo reciente del flujo de trabajo QLoRA/SFT con Unsloth y TRL sobre un modelo de 14B, y en que su tamaño de repositorio (0,8 GB) resulta anómalo para un modelo completo de ese tamaño, lo que apunta a un adaptador LoRA o a una subida incompleta. Cualquier uso en producción exigiría una auditoría previa del contenido real del repositorio.
 
@@ -47,7 +47,7 @@ Debido a la ausencia de documentación, benchmarks y licencia, este modelo no es
 - Generación de texto asistida en entornos internos: borradores, resúmenes y reescritura de documentos en un contexto controlado, siempre que se audite antes la licencia y el contenido del repositorio.
 - Experimentación académica sobre olvido catastrófico: comparar sus respuestas con las del modelo base permite medir cuánto conocimiento general se ha perdido tras un SFT del que no se publican los datos.
 - Análisis de buenas prácticas de publicación: el repositorio es un ejemplo de model card incompleta y puede usarse como material didáctico sobre qué información mínima debe acompañar a un checkpoint.
-- Pruebas de integración con el ecosistema HuggingFace: verificar la compatibilidad con `transformers`, `peft` y los endpoints compatibles antes de escalar a modelos con licencia clara.
+- Pruebas de integración con el ecosistema Hugging Face: verificar la compatibilidad con `transformers`, `peft` y los endpoints compatibles antes de escalar a modelos con licencia clara.
 - Despliegue en hardware limitado, si finalmente se confirma que el artefacto es un adaptador LoRA: el adaptador puede aplicarse sobre el modelo base cuantizado y ejecutarse en una única GPU de consumo.
 
 ## Benchmarks y rendimiento
@@ -92,7 +92,7 @@ No es posible comparar rendimiento entre estas opciones porque el ajuste de Lyni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LynixSakara/Hopefully_Not_Overfitted
+- Repositorio Hugging Face: https://huggingface.co/LynixSakara/Hopefully_Not_Overfitted
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-bnb-4bit
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Cita de TRL (von Werra et al., 2020): incluida en la model card del repositorio

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `gianmaTest/generatedDigitalExps_1xO9yM_hier_by_room_rnn_meanPoolProc_video_0` es un artefacto publicado en HuggingFace por el usuario `gianmaTest`. Por su identificador y su estructura, se trata de una red neuronal recurrente (RNN) de tipo jerárquico por salas ("hier_by_room") con un mecanismo de agregación mediante mean pooling ("meanPoolProc"), entrenada sobre datos de vídeo ("video_0"). El nombre sugiere un experimento de investigación generado automáticamente, no un modelo de lenguaje de propósito general.
+El modelo `gianmaTest/generatedDigitalExps_1xO9yM_hier_by_room_rnn_meanPoolProc_video_0` es un artefacto publicado en Hugging Face por el usuario `gianmaTest`. Por su identificador y su estructura, se trata de una red neuronal recurrente (RNN) de tipo jerárquico por salas ("hier_by_room") con un mecanismo de agregación mediante mean pooling ("meanPoolProc"), entrenada sobre datos de vídeo ("video_0"). El nombre sugiere un experimento de investigación generado automáticamente, no un modelo de lenguaje de propósito general.
 
-El modelo es extremadamente pequeño: 2.366.208 parámetros totales (aproximadamente 2,37 millones), lo que lo sitúa varios órdenes de magnitud por debajo de cualquier LLM moderno. No dispone de model card sustantiva: el README únicamente indica que fue subido mediante la integración `PyTorchModelHubMixin` de HuggingFace Hub, con los campos de código, paper y documentación marcados como "More Information Needed".
+El modelo es extremadamente pequeño: 2.366.208 parámetros totales (aproximadamente 2,37 millones), lo que lo sitúa varios órdenes de magnitud por debajo de cualquier LLM moderno. No dispone de model card sustantiva: el README únicamente indica que fue subido mediante la integración `PyTorchModelHubMixin` de Hugging Face Hub, con los campos de código, paper y documentación marcados como "More Information Needed".
 
 No hay información pública sobre arquitectura exacta, datos de entrenamiento, licencia, idiomas ni benchmarks. La ficha que sigue refleja únicamente lo que puede deducirse del identificador, de los tags y del recuento real de parámetros en safetensors, marcando explícitamente como "no disponible" todo aquello que no consta.
 
@@ -25,7 +25,7 @@ No hay información pública sobre arquitectura exacta, datos de entrenamiento, 
 
 El identificador del repositorio descompone varios componentes: `hier_by_room` apunta a una jerarquía de procesamiento por salas (probablemente en el contexto de datos de vídeo o entornos 3D, donde cada "sala" o segmento se procesa de forma independiente y luego se agrega), `rnn` indica el uso de una red neuronal recurrente y `meanPoolProc` sugiere que la agregación entre niveles jerárquicos se realiza mediante mean pooling sobre las salidas recurrentes. El sufijo `video_0` indica que el experimento se ejecutó sobre una fuente de datos de vídeo concreta.
 
-No hay información publicada sobre el número de tokens de entrenamiento, la composición del dataset, si se aplicaron técnicas de alineación (RLHF, DPO) ni sobre innovaciones técnicas adicionales. El tamaño del repo es de 0.0 GB (redondeado), coherente con un checkpoint de apenas unos megabytes. No se dispone de código de modelado en el repositorio más allá de la integración estándar de HuggingFace Hub.
+No hay información publicada sobre el número de tokens de entrenamiento, la composición del dataset, si se aplicaron técnicas de alineación (RLHF, DPO) ni sobre innovaciones técnicas adicionales. El tamaño del repo es de 0.0 GB (redondeado), coherente con un checkpoint de apenas unos megabytes. No se dispone de código de modelado en el repositorio más allá de la integración estándar de Hugging Face Hub.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ No hay información publicada sobre el número de tokens de entrenamiento, la co
 - Experimentos de ablación en procesamiento de vídeo por salas: permite comparar variantes de agregación jerárquica sobre un mismo conjunto de datos de vídeo.
 - Prototipado académico de bajo coste: con 2,37 millones de parámetros, se puede entrenar y evaluar en una única GPU consumer o incluso en CPU.
 - Reproducción de experimentos generados automáticamente: el patrón del identificador sugiere un pipeline de generación de experimentos, útil para auditar metodologías de búsqueda automatizada de arquitecturas.
-- Docencia y formación: ejemplo mínimo de integración de un modelo PyTorch con HuggingFace Hub mediante `PyTorchModelHubMixin`.
+- Docencia y formación: ejemplo mínimo de integración de un modelo PyTorch con Hugging Face Hub mediante `PyTorchModelHubMixin`.
 - Base para fine-tuning en tareas de secuencias cortas: al ser tan pequeño, puede adaptarse rápidamente a dominios específicos con pocos datos.
 
 ## Benchmarks y rendimiento
@@ -73,6 +73,6 @@ No disponible. No se han identificado modelos comparables publicados con la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xO9yM_hier_by_room_rnn_meanPoolProc_video_0
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xO9yM_hier_by_room_rnn_meanPoolProc_video_0
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Código, paper y documentación del autor: no disponibles (marcados como "More Information Needed" en la model card).

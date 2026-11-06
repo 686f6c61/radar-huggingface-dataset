@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Steeve2ml/globatrend-absa-english-classifier` es un clasificador de texto en inglés construido sobre la arquitectura DistilBERT, publicado en HuggingFace por el usuario Steeve2ml. Por su nombre y su etiqueta de pipeline (`text-classification`), está orientado a tareas de análisis de sentimiento basado en aspectos (ABSA, *Aspect-Based Sentiment Analysis*), es decir, determinar la polaridad asociada a entidades o aspectos concretos dentro de un texto y no solo la polaridad global del documento.
+El modelo `Steeve2ml/globatrend-absa-english-classifier` es un clasificador de texto en inglés construido sobre la arquitectura DistilBERT, publicado en Hugging Face por el usuario Steeve2ml. Por su nombre y su etiqueta de pipeline (`text-classification`), está orientado a tareas de análisis de sentimiento basado en aspectos (ABSA, *Aspect-Based Sentiment Analysis*), es decir, determinar la polaridad asociada a entidades o aspectos concretos dentro de un texto y no solo la polaridad global del documento.
 
 Se trata de un modelo pequeno: 66.955.779 parámetros reales según los pesos en safetensors, lo que corresponde prácticamente al tamano completo de un DistilBERT base con su cabeza de clasificación. Con ese tamano, la inferencia en CPU es viable y el modelo cabe holgadamente en cualquier GPU de consumo, lo que lo hace atractivo para pipelines de clasificación a gran escala donde el coste por inferencia importa más que la precisión puntera.
 
-La relevancia de esta ficha es limitada pero el caso es instructivo: la model card publicada es la plantilla automática de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. No hay información sobre datos de entrenamiento, hiperparametros, etiquetas de salida, idioma declarado ni licencia. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta, y los resultados de búsqueda web no arrojan ninguna referencia adicional al modelo. Por tanto, cualquier evaluacion seria exige inspeccionar directamente los pesos y la configuración del repositorio.
+La relevancia de esta ficha es limitada pero el caso es instructivo: la model card publicada es la plantilla automática de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. No hay información sobre datos de entrenamiento, hiperparametros, etiquetas de salida, idioma declarado ni licencia. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta, y los resultados de búsqueda web no arrojan ninguna referencia adicional al modelo. Por tanto, cualquier evaluacion seria exige inspeccionar directamente los pesos y la configuración del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -36,7 +36,7 @@ No hay ninguna información publicada sobre el proceso de ajuste fino: se descon
 - Clasificación de texto en inglés: el pipeline declarado es `text-classification`, por lo que la salida esperada es una o varias etiquetas con su puntuación de probabilidad.
 - Análisis de sentimiento basado en aspectos (ABSA), según indica el propio nombre del modelo: la polaridad se asocia a aspectos o entidades concretas del texto en lugar de al documento completo.
 - Compatibilidad con Text Embeddings Inference (TEI): el repositorio incluye la etiqueta `text-embeddings-inference`, lo que sugiere que puede servirse mediante ese motor.
-- Compatibilidad con Inference Endpoints de HuggingFace: etiqueta `endpoints_compatible`.
+- Compatibilidad con Inference Endpoints de Hugging Face: etiqueta `endpoints_compatible`.
 - Codificación de representaciones internas: al ser un encoder transformer, puede extraerse el embedding del token `[CLS]` o la media de los estados ocultos como representación vectorial del texto, aunque el modelo no esté entrenado específicamente para similitud semántica.
 - Generación de texto: no. Es un modelo exclusivamente encoder, sin cabeza de lenguaje.
 - Tool calling / function calling: no disponible; no es una capacidad esperable en un clasificador de este tamano.
@@ -65,23 +65,23 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente en la practica. No se requiere A100 ni H100; una T4, una L4, una RTX 3060 o incluso una GTX 1650 bastan para inferencia.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo de los ultimos diez anos, incluidas las integradas con memoria compartida si se usa CPU.
 - Inferencia en CPU: viable y habitual para este tamano de modelo; es uno de los principales atractivos de DistilBERT en produccion.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (etiqueta declarada en el repositorio), Inference Endpoints de HuggingFace (etiqueta `endpoints_compatible`). vLLM, llama.cpp, Ollama y TGI no aparecen mencionados; llama.cpp y Ollama requeririan una conversion a GGUF que no se publica en el repositorio.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (etiqueta declarada en el repositorio), Inference Endpoints de Hugging Face (etiqueta `endpoints_compatible`). vLLM, llama.cpp, Ollama y TGI no aparecen mencionados; llama.cpp y Ollama requeririan una conversion a GGUF que no se publica en el repositorio.
 - Latencia y throughput estimados: no disponible. No hay datos publicados de latencia, tokens por segundo ni rendimiento por lote.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Steeve2ml/globatrend-absa-english-classifier | 66,96 M | no disponible | Clasificacion / ABSA en inglés | no disponible | HuggingFace, safetensors |
-| distilbert-base-uncased-finetuned-sst-2-english | 66,96 M | 512 tokens | Clasificacion de sentimiento (documento completo) | Apache-2.0 (segun su model card) | HuggingFace, ampliamente usado |
-| yangheng/deberta-v3-base-absa-v1.1 | ~184 M | 512 tokens | ABSA en inglés | no verificada en esta busqueda | HuggingFace |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | Sentimiento en redes sociales (inglés) | no verificada en esta busqueda | HuggingFace |
+| Steeve2ml/globatrend-absa-english-classifier | 66,96 M | no disponible | Clasificacion / ABSA en inglés | no disponible | Hugging Face, safetensors |
+| distilbert-base-uncased-finetuned-sst-2-english | 66,96 M | 512 tokens | Clasificacion de sentimiento (documento completo) | Apache-2.0 (segun su model card) | Hugging Face, ampliamente usado |
+| yangheng/deberta-v3-base-absa-v1.1 | ~184 M | 512 tokens | ABSA en inglés | no verificada en esta busqueda | Hugging Face |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | Sentimiento en redes sociales (inglés) | no verificada en esta busqueda | Hugging Face |
 
 No se dispone de resultados comparativos de rendimiento entre estos modelos y el modelo objeto de la ficha, ya que no hay benchmarks publicados para `globatrend-absa-english-classifier`. La comparacion se limita, por tanto, a parametros, contexto y disponibilidad. Frente a las alternativas de la tabla, el modelo de Steeve2ml destaca por su tamano reducido y por la orientacion ABSA declarada en el nombre, pero carece de la documentacion, la licencia explicita y el historial de uso que si acompanan a las alternativas.
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace sin ningun campo completado. No se puede saber que etiquetas devuelve el modelo, con que datos se entreno ni como interpretar sus salidas sin inspeccionar los ficheros del repositorio.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face sin ningun campo completado. No se puede saber que etiquetas devuelve el modelo, con que datos se entreno ni como interpretar sus salidas sin inspeccionar los ficheros del repositorio.
 - Licencia no declarada: al no especificarse licencia, el uso comercial queda en una situacion juridica ambigua. Es imprescindible contactar con el autor antes de integrarlo en un producto.
 - Sesgos desconocidos: no hay informacion sobre la composicion del dataset de ajuste fino, por lo que no es posible evaluar sesgos demograficos, de dominio o de estilo. Un modelo entrenado sobre resenas de un sector concreto puede degradarse gravemente en otros dominios.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de clasificaciones erroneas con alta confianza, especialmente en textos con sarcasmo, negaciones complejas, ironia o sentimiento mixto, casos que los clasificadores basados en BERT manejan mal con frecuencia.
@@ -94,7 +94,7 @@ No se dispone de resultados comparativos de rendimiento entre estos modelos y el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Steeve2ml/globatrend-absa-english-classifier
+- Modelo en Hugging Face: https://huggingface.co/Steeve2ml/globatrend-absa-english-classifier
 - Paper de referencia citado en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la busqueda web realizada.

@@ -22,7 +22,7 @@ Por tanto, esta ficha documenta lo que se puede verificar (parámetros, cuantiza
 | Formato de pesos | GGUF (llama.cpp / llama-cpp) |
 | Tamano del repositorio | 3,4 GB |
 | Ficheros publicados | `Huihui-Qwen3.5-4B-abliterated.BF16-mmproj.gguf`, `Huihui-Qwen3.5-4B-abliterated.Q4_K_M.gguf` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Etiquetas | `gguf`, `qwen3_5`, `llama.cpp`, `llama-cpp`, `unsloth`, `vision-language-model`, `endpoints_compatible`, `region:us`, `conversational` |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-19 |
@@ -99,7 +99,7 @@ No se dispone de datos verificados de contexto, licencia ni rendimiento para las
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Staimoor/predator-os-trained-by-st-qwen3.5-uncencored-cyber-q4
+- Hugging Face: https://huggingface.co/Staimoor/predator-os-trained-by-st-qwen3.5-uncencored-cyber-q4
 - Repositorio de Unsloth (herramienta de conversión citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime indicado por el autor): https://github.com/ggml-org/llama.cpp
 - Modelo de origen declarado en los nombres de fichero (`Huihui-Qwen3.5-4B-abliterated`): no se ha proporcionado la URL del repositorio; no disponible.

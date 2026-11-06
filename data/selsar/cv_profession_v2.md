@@ -3,9 +3,9 @@
 # selsar/cv_profession_v2
 
 ## Resumen
-selsar/cv_profession_v2 es un modelo de clasificacion de texto publicado en HuggingFace por el usuario selsar. Segun las etiquetas del repositorio, se trata de un modelo basado en la arquitectura DeBERTa-v2 (tag `deberta-v2`) y orientado a la tarea de `text-classification`, con pesos en formato safetensors y una libreria declarada de `transformers`. El recuento real de parametros extraido de los ficheros safetensors es de 278.810.882 parametros, lo que situa al modelo en la franja de los encoders de tamano medio-grande, con un repositorio de 1,1 GB.
+selsar/cv_profession_v2 es un modelo de clasificacion de texto publicado en Hugging Face por el usuario selsar. Segun las etiquetas del repositorio, se trata de un modelo basado en la arquitectura DeBERTa-v2 (tag `deberta-v2`) y orientado a la tarea de `text-classification`, con pesos en formato safetensors y una libreria declarada de `transformers`. El recuento real de parametros extraido de los ficheros safetensors es de 278.810.882 parametros, lo que situa al modelo en la franja de los encoders de tamano medio-grande, con un repositorio de 1,1 GB.
 
-El nombre del modelo sugiere un clasificador de profesiones o areas profesionales a partir de curriculos (CV), aunque la model card no lo confirma ni documenta el conjunto de etiquetas, el idioma de entrenamiento ni el dataset utilizado. La model card publicada es la plantilla autogenerada por HuggingFace y no ha sido completada: todos los apartados relevantes (desarrollo, datos de entrenamiento, hiperparametros, evaluacion, licencia) figuran como "[More Information Needed]".
+El nombre del modelo sugiere un clasificador de profesiones o areas profesionales a partir de curriculos (CV), aunque la model card no lo confirma ni documenta el conjunto de etiquetas, el idioma de entrenamiento ni el dataset utilizado. La model card publicada es la plantilla autogenerada por Hugging Face y no ha sido completada: todos los apartados relevantes (desarrollo, datos de entrenamiento, hiperparametros, evaluacion, licencia) figuran como "[More Information Needed]".
 
 Su relevancia practica es limitada y condicionada: no hay resultados de benchmarks, no hay licencia declarada y el modelo acumula 0 descargas y 0 likes, por lo que se trata de un artefacto sin validacion externa conocida. Puede resultar de interes como punto de partida para experimentar con clasificacion de textos de curriculos, pero no deberia integrarse en produccion sin una evaluacion propia previa y sin aclarar la licencia.
 
@@ -32,7 +32,7 @@ Su relevancia practica es limitada y condicionada: no hay resultados de benchmar
 ## Arquitectura y entrenamiento
 La unica informacion disponible sobre la arquitectura es el tag `deberta-v2`. Esto implica, si se corresponde con la implementacion publica de referencia, un encoder transformer con atencion disentangled (contenido y posicion tratados por separado) y mecanismo de posiciones relativas, que es la innovacion central de la familia DeBERTa frente a BERT y RoBERTa. El recuento de 278.810.882 parametros no coincide con los tamanos publicados habituales de la familia (base y large), por lo que es probable que se trate de una configuracion intermedia, de un modelo con vocabulario o cabeza de clasificacion modificados, o de un fine-tuning sobre una variante concreta. Este punto no puede confirmarse con la informacion disponible.
 
-No hay ningun dato sobre el proceso de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fine-tuning supervisado, quien lo realizo, con que hiperparametros y con que infraestructura. Tampoco se documenta si se aplicaron tecnicas de regularizacion, destilacion, RLHF o DPO (habitualmente irrelevantes en un encoder discriminativo de clasificacion). La referencia `arxiv:1910.09700` que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de HuggingFace, y no a un paper del modelo.
+No hay ningun dato sobre el proceso de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fine-tuning supervisado, quien lo realizo, con que hiperparametros y con que infraestructura. Tampoco se documenta si se aplicaron tecnicas de regularizacion, destilacion, RLHF o DPO (habitualmente irrelevantes en un encoder discriminativo de clasificacion). La referencia `arxiv:1910.09700` que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de Hugging Face, y no a un paper del modelo.
 
 ## Capacidades
 - Clasificacion de texto: es la unica capacidad declarada por el pipeline (`text-classification`). El modelo devuelve una o varias etiquetas con su probabilidad asociada para una secuencia de entrada.
@@ -43,7 +43,7 @@ No hay ningun dato sobre el proceso de entrenamiento: se desconoce el numero de 
 - Agentes y razonamiento multi-paso: no soportado.
 - Capacidades multilingues: no disponibles; no se declara ningun idioma.
 - Vision, audio, thinking mode: no soportado.
-- Integracion en infraestructura de inferencia: los tags `text-embeddings-inference` y `endpoints_compatible` indican compatibilidad prevista con Text Embeddings Inference y con los Inference Endpoints de HuggingFace, aunque no hay documentacion que lo verifique.
+- Integracion en infraestructura de inferencia: los tags `text-embeddings-inference` y `endpoints_compatible` indican compatibilidad prevista con Text Embeddings Inference y con los Inference Endpoints de Hugging Face, aunque no hay documentacion que lo verifique.
 
 ## Casos de uso
 - Clasificacion de curriculos por area profesional: el modelo recibiria el texto de un CV y devolveria la categoria ocupacional mas probable. Es el uso que sugiere el nombre del repositorio, pero requiere validar previamente el conjunto de etiquetas real y el idioma de entrada.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU consumer: cabe sin problema en cualquier GPU con 4 GB o mas (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090). Es un modelo apto para equipos de sobremesa y portatiles con GPU discreta.
 - GPU de datacenter: T4, L4, A10G, L40S, A100 y H100 lo sirven con margen sobrado; en estas tarjetas el cuello de botella sera la CPU de preprocesado, no la GPU.
 - CPU: la inferencia en CPU es viable para lotes pequenos o moderados, dado el tamano del modelo.
-- Opciones de despliegue: pipeline `transformers` (TextClassificationPipeline), Text Embeddings Inference (tag `text-embeddings-inference`), HuggingFace Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime u Optimum para exportacion a ONNX, y servidores de inferencia tipo NVIDIA Triton. vLLM y llama.cpp no son adecuados: el primero esta orientado a decodificacion generativa y el segundo requiere pesos en formato GGUF, que no se publican.
+- Opciones de despliegue: pipeline `transformers` (TextClassificationPipeline), Text Embeddings Inference (tag `text-embeddings-inference`), Hugging Face Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime u Optimum para exportacion a ONNX, y servidores de inferencia tipo NVIDIA Triton. vLLM y llama.cpp no son adecuados: el primero esta orientado a decodificacion generativa y el segundo requiere pesos en formato GGUF, que no se publican.
 - Latencia y throughput: no disponible. No hay ningun dato publicado de latencia, tokens por segundo ni ejemplos por segundo.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ En la practica, el modelo analizado compite con variantes de DeBERTa-v2 y RoBERT
 - Privacidad: un clasificador de curriculos trata datos personales. Cualquier despliegue en la UE exige una evaluacion de impacto y una base juridica conforme al RGPD.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/selsar/cv_profession_v2
+- Modelo en Hugging Face: https://huggingface.co/selsar/cv_profession_v2
 - Paper de DeBERTa (referencia de la arquitectura): https://arxiv.org/abs/2006.03654
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact

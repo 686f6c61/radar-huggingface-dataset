@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye otros releases de SAE com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/neelvarma/dinov2-saes
+- Repositorio Hugging Face: https://huggingface.co/neelvarma/dinov2-saes
 - Repositorio del paper (acceso posiblemente restringido): https://github.com/NVarma77/null-problem-sae-ablation
 - DINOv2 en Hugging Face Transformers: https://huggingface.co/docs/transformers/main//model_doc/dinov2
 - Repositorio oficial de DINOv2 (Meta AI, FAIR): https://github.com/facebookresearch/dinov2

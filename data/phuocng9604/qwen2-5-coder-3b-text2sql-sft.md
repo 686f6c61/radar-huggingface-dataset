@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhuocNg9604/qwen2.5-coder-3b-text2sql-sft | 3B + LoRA rank 16 | no disponible | Text-to-SQL (Spider) | apache-2.0 | HuggingFace, 36 descargas |
-| Qwen/Qwen2.5-Coder-3B-Instruct | 3B | no disponible en la informacion | Generacion de codigo y texto general | apache-2.0 | HuggingFace (modelo base) |
+| PhuocNg9604/qwen2.5-coder-3b-text2sql-sft | 3B + LoRA rank 16 | no disponible | Text-to-SQL (Spider) | apache-2.0 | Hugging Face, 36 descargas |
+| Qwen/Qwen2.5-Coder-3B-Instruct | 3B | no disponible en la informacion | Generacion de codigo y texto general | apache-2.0 | Hugging Face (modelo base) |
 | Otros adaptadores Text-to-SQL sobre Spider | no disponible | no disponible | Text-to-SQL | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos en la informacion proporcionada para establecer diferencias cuantitativas frente a alternativas.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PhuocNg9604/qwen2.5-coder-3b-text2sql-sft
+- Hugging Face: https://huggingface.co/PhuocNg9604/qwen2.5-coder-3b-text2sql-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Dataset Spider: https://huggingface.co/datasets/spider (referencia del benchmark Yale Spider)
 - Repositorio de PEFT: https://github.com/huggingface/peft

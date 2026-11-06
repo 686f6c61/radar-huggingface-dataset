@@ -108,7 +108,7 @@ La información disponible no incluye especificaciones detalladas de los modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prithivMLmods/Clover-35B-A3B-Preview-MXFP4-MoE-GGUF
+- Repositorio Hugging Face: https://huggingface.co/prithivMLmods/Clover-35B-A3B-Preview-MXFP4-MoE-GGUF
 - Modelo base: https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Perfil del cuantizador: https://huggingface.co/prithivMLmods

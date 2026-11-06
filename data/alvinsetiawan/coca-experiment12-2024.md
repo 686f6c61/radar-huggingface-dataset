@@ -2,7 +2,7 @@
 
 ## Resumen
 
-alvinsetiawan/coca-experiment12-2024 es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada "Coca" orientada a tareas de generación. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint entrenado ni evaluado con benchmarks.
+alvinsetiawan/coca-experiment12-2024 es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada "Coca" orientada a tareas de generación. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint entrenado ni evaluado con benchmarks.
 
 El dato más relevante para evaluarlo es su escala real: el repositorio declara 33.088 parámetros totales en el archivo safetensors, lo que lo sitúa en un rango puramente didáctico o de test de infraestructura, muy lejos de cualquier modelo utilizable en tareas reales. La configuración describe una variante "xlarge" dentro del propio esquema del autor, con atención de tipo grouped query, fusión bilinear, activación gelu y normalización layernorm, pero esa etiqueta de escala es interna a la implementación y no implica un tamaño de parámetros elevado.
 
@@ -33,7 +33,7 @@ Su interés actual es, por tanto, limitado y acotado a dos escenarios: servir co
 
 ## Arquitectura y entrenamiento
 
-La model card describe la arquitectura como "Coca" con escala "xlarge", atención grouped query, fusión bilinear, activación gelu y normalización layernorm. No se especifica si se trata de un transformer decoder-only, de un modelo multimodal tipo contrastive captioner, de un híbrido o de otra familia; el tag `coca` de HuggingFace y el propio README son las únicas referencias, y no se aporta ningún diagrama, número de capas, dimensión de embedding ni número de cabezas de atención. Tampoco se detalla la longitud de contexto ni el vocabulario. Con 33.088 parámetros totales, cualquier configuración coherente con esa cifra implica un modelo de juguete, no una arquitectura "xlarge" en el sentido habitual del término.
+La model card describe la arquitectura como "Coca" con escala "xlarge", atención grouped query, fusión bilinear, activación gelu y normalización layernorm. No se especifica si se trata de un transformer decoder-only, de un modelo multimodal tipo contrastive captioner, de un híbrido o de otra familia; el tag `coca` de Hugging Face y el propio README son las únicas referencias, y no se aporta ningún diagrama, número de capas, dimensión de embedding ni número de cabezas de atención. Tampoco se detalla la longitud de contexto ni el vocabulario. Con 33.088 parámetros totales, cualquier configuración coherente con esa cifra implica un modelo de juguete, no una arquitectura "xlarge" en el sentido habitual del término.
 
 En cuanto al entrenamiento, el repositorio incluye `training_args.json` con una receta por defecto basada en el optimizador lion y un schedule de warmup constante, pero el autor advierte de forma explícita que son "valores de partida en el script, no evidencia de una ejecución completada". No se declara número de tokens de entrenamiento, composición del dataset, ni uso de RLHF, DPO o cualquier otra técnica de alineación. El checkpoint `model.safetensors` se describe como una inicialización válida para pruebas de humo y no como un checkpoint entrenado, por lo que no hay innovaciones técnicas verificables más allá de las elecciones arquitectónicas ya citadas (grouped query attention y fusión bilinear).
 
@@ -54,7 +54,7 @@ En cuanto al entrenamiento, el repositorio incluye `training_args.json` con una 
 - Pruebas de humo en CI: al ocupar 0.0 GB y tener 33.088 parámetros, puede integrarse en tests automáticos que verifiquen el arranque de `main.py`, la ejecución del bloque `__main__` y la compatibilidad de versiones de PyTorch.
 - Plantilla de investigación para recetas de optimización: `training_args.json` ofrece un punto de partida con lion y warmup constante, útil para comparar schedules bajo el mismo presupuesto de datos, semillas y tuning, tal como recomienda el propio autor.
 - Base para experimentos de arquitectura con grouped query attention y fusión bilinear: permite medir el coste de estas elecciones en un modelo mínimo antes de escalarlas a un tamaño mayor.
-- Referencia educativa: sirve para ilustrar cómo se estructura un repositorio de modelo en HuggingFace (script, config, training args, safetensors) sin la complejidad de un modelo grande.
+- Referencia educativa: sirve para ilustrar cómo se estructura un repositorio de modelo en Hugging Face (script, config, training args, safetensors) sin la complejidad de un modelo grande.
 - Evaluación metodológica de baselines: la model card propone usar un conjunto de validación específico de tarea, reportar la métrica con al menos tres semillas e incluir un baseline de capacidad equiparable, lo que convierte el repo en una guía de protocolo de evaluación.
 - Pruebas de compatibilidad de licencias y empaquetado: al estar bajo MIT, permite verificar flujos de distribución y atribución en herramientas internas.
 
@@ -99,5 +99,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alvinsetiawan/coca-experiment12-2024
+- Hugging Face: https://huggingface.co/alvinsetiawan/coca-experiment12-2024
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de búsqueda web proporcionados.

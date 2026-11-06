@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Donghyun1228/pi05-libero-main-module-lr-yaw20-v1-e3-1000-20261015 es un checkpoint de investigacion publicado en HuggingFace dentro del ecosistema openpi, orientado a robotica y al benchmark LIBERO. Por el identificador y las etiquetas (openpi, robotics, libero, inverse-dynamics), se trata de una variante de politica vision-lenguaje-accion (VLA) de la familia pi0.5 adaptada a tareas de manipulacion, en concreto a un enfoque de dinamica inversa.
+Donghyun1228/pi05-libero-main-module-lr-yaw20-v1-e3-1000-20261015 es un checkpoint de investigacion publicado en Hugging Face dentro del ecosistema openpi, orientado a robotica y al benchmark LIBERO. Por el identificador y las etiquetas (openpi, robotics, libero, inverse-dynamics), se trata de una variante de politica vision-lenguaje-accion (VLA) de la familia pi0.5 adaptada a tareas de manipulacion, en concreto a un enfoque de dinamica inversa.
 
 El checkpoint forma parte de una busqueda de hiperparametros explicitamente autorizada, no de un modelo final. La model card indica que solo se modificaron los multiplicadores de actualizacion por modulo: multiplicador post-Adam de vision 1.0, del expert 3.0 y LLM congelado. Se entrenaron 1000 actualizaciones con batch 32 y semilla 42, partiendo de datos densos de contacto y de la inicializacion y normalizacion originales. El autor senala que la evaluacion esta pendiente y que no se reclama ninguna tasa de exito.
 
@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no incluye especificaciones numerica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw20-v1-e3-1000-20261015
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw20-v1-e3-1000-20261015
 - Otros enlaces relevantes (papers, blogs, repos, demos): no disponibles en la informacion proporcionada.

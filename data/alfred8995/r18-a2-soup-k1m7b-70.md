@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-soup-k1m7b-70` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,02 B) almacenado en formato safetensors, con un tamano de repositorio de 8,1 GB, lo que sugiere pesos en precision de 16 bits o superior. El nombre del repositorio incluye la etiqueta "sn38-nanochrono", que parece corresponder a una familia o linaje de modelos base, y el sufijo "soup" indica habitualmente la fusion (model soup) de varios checkpoints entrenados por separado.
+El modelo `alfred8995/r18-a2-soup-k1m7b-70` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,02 B) almacenado en formato safetensors, con un tamano de repositorio de 8,1 GB, lo que sugiere pesos en precision de 16 bits o superior. El nombre del repositorio incluye la etiqueta "sn38-nanochrono", que parece corresponder a una familia o linaje de modelos base, y el sufijo "soup" indica habitualmente la fusion (model soup) de varios checkpoints entrenados por separado.
 
-La informacion publica disponible es extremadamente limitada: no se especifica la arquitectura, la longitud de contexto, los idiomas soportados ni el pipeline de la tarea. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. A fecha de la consulta, el repositorio acumula 6 descargas y ningun "like", lo que apunta a un checkpoint de investigacion o experimental sin validacion comunitaria significativa.
+La informacion publica disponible es extremadamente limitada: no se especifica la arquitectura, la longitud de contexto, los idiomas soportados ni el pipeline de la tarea. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. A fecha de la consulta, el repositorio acumula 6 descargas y ningun "like", lo que apunta a un checkpoint de investigacion o experimental sin validacion comunitaria significativa.
 
 Su relevancia ahora es marginal para produccion: se trata de un artefacto de experimentacion de un autor individual, sin documentacion tecnica asociada ni resultados de evaluacion publicados. Resulta util unicamente como referencia para quienes sigan el linaje "nanochrono" o quieran reproducir fusiones de pesos, no como modelo listo para despliegue.
 
@@ -76,7 +76,7 @@ La comparacion se limita a parametros, contexto y licencia, ya que no existen da
 
 - Ausencia total de model card tecnica: no se documentan arquitectura, datos de entrenamiento, contexto ni idiomas, lo que impide evaluar su idoneidad para cualquier tarea.
 - Riesgo elevado de alucinacion y comportamiento impredecible al no existir evaluaciones publicadas ni proceso de alineacion documentado.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier pipeline automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier pipeline automatizado.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias sobre el origen de los datos de entrenamiento ni sobre posibles obligaciones derivadas de los modelos base fusionados.
 - Sin soporte comunitario: 6 descargas y 0 likes indican ausencia de validacion por parte de la comunidad; los errores no se corregiran por retroalimentacion.
 - Idiomas y sesgos desconocidos: al no declararse idiomas ni composicion del dataset, no puede asumirse un comportamiento multilingue ni un sesgo controlado.
@@ -85,5 +85,5 @@ La comparacion se limita a parametros, contexto y licencia, ya que no existen da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-soup-k1m7b-70
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-soup-k1m7b-70
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

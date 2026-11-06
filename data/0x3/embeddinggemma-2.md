@@ -105,8 +105,8 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0x3/embeddinggemma-2
-- Modelo original en HuggingFace: https://huggingface.co/google/embeddinggemma-2
+- Hugging Face: https://huggingface.co/0x3/embeddinggemma-2
+- Modelo original en Hugging Face: https://huggingface.co/google/embeddinggemma-2
 - GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2
 - Documentación: https://ai.google.dev/gemma/docs/embeddinggemma

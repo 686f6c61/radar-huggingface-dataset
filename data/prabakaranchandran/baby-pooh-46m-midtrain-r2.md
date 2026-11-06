@@ -105,9 +105,9 @@ Nota: la ultima fila de la tabla Pooh eval esta truncada en la model card de ori
 
 | Modelo | Parametros | Contexto | BabyLM / calidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Baby Pooh 46M midtrain r2 | 46M | 4.096 | BLiMP 76,22; EWoK 55,36; mejor en *eye tracking* (9,11) de su familia | Apache 2.0 | HuggingFace (0 descargas, 0 *likes*) |
-| Baby Pooh 46M v1 | 46M | 4.096 | BLiMP 77,53; mejor en *held-out Milne* (2,560 / 2,622) | Apache 2.0 | HuggingFace |
-| Baby Pooh 46M midtrain r3 | 46M | 4.096 | BLiMP 76,49; mejor en canon-seen (59,8) | Apache 2.0 | HuggingFace |
+| Baby Pooh 46M midtrain r2 | 46M | 4.096 | BLiMP 76,22; EWoK 55,36; mejor en *eye tracking* (9,11) de su familia | Apache 2.0 | Hugging Face (0 descargas, 0 *likes*) |
+| Baby Pooh 46M v1 | 46M | 4.096 | BLiMP 77,53; mejor en *held-out Milne* (2,560 / 2,622) | Apache 2.0 | Hugging Face |
+| Baby Pooh 46M midtrain r3 | 46M | 4.096 | BLiMP 76,49; mejor en canon-seen (59,8) | Apache 2.0 | Hugging Face |
 | GPT-2 100M (baseline BabyLM) | 100M | 1.024 (GPT-2 estandar) | BLiMP 74,88; EWoK 51,64 | Licencia MIT (GPT-2 estandar) | Publico |
 | GPT-BERT causal (baseline BabyLM) | no disponible | no disponible | BLiMP 79,29; EWoK 51,18 | no disponible | Baseline del pipeline BabyLM |
 
@@ -128,7 +128,7 @@ El modelo se situa por debajo de GPT-BERT causal en tareas de sintaxis (BLiMP 76
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prabakaranchandran/baby-pooh-46m-midtrain-r2
+- Modelo en Hugging Face: https://huggingface.co/prabakaranchandran/baby-pooh-46m-midtrain-r2
 - Modelo base v1: https://huggingface.co/prabakaranchandran/baby-pooh-46m
 - Ronda r3: https://huggingface.co/prabakaranchandran/baby-pooh-46m-midtrain-r3
 - Dataset de preentrenamiento: https://huggingface.co/datasets/prabakaranchandran/pooh-babylm-mix-220m

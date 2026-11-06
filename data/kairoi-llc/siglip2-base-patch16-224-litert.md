@@ -68,10 +68,10 @@ Tiempos medidos con lote 8: 3,8 ms por imagen en Metal sobre Mac, 7-10 ms en RTX
 ## Comparativa con modelos similares
 | Modelo | Tipo | Parametros | Contexto/entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Kairoi-LLC/siglip2-base-patch16-224-litert | Torre de imagen SigLIP 2 convertida | No disponible (fichero ~370 MB fp32) | 224x224, lote fijo 8 | TFLite/LiteRT | Apache-2.0 | HuggingFace, GPU movil y escritorio |
-| google/siglip2-base-patch16-224 | SigLIP 2 completo (vision + texto) | No disponible | 224x224 | PyTorch/safetensors | Apache-2.0 | HuggingFace |
-| onnx-community/siglip2-base-patch16-224-ONNX | SigLIP 2 completo en ONNX | No disponible | 224x224 | ONNX | Apache-2.0 | HuggingFace; usado como referencia fp32 |
-| CLIP ViT-B/16 | Vision-lenguaje dual-tower (alternativa clasica) | No disponible de forma oficial | 224x224 | safetensors, ONNX | MIT (CLIP original) | HuggingFace |
+| Kairoi-LLC/siglip2-base-patch16-224-litert | Torre de imagen SigLIP 2 convertida | No disponible (fichero ~370 MB fp32) | 224x224, lote fijo 8 | TFLite/LiteRT | Apache-2.0 | Hugging Face, GPU movil y escritorio |
+| google/siglip2-base-patch16-224 | SigLIP 2 completo (vision + texto) | No disponible | 224x224 | PyTorch/safetensors | Apache-2.0 | Hugging Face |
+| onnx-community/siglip2-base-patch16-224-ONNX | SigLIP 2 completo en ONNX | No disponible | 224x224 | ONNX | Apache-2.0 | Hugging Face; usado como referencia fp32 |
+| CLIP ViT-B/16 | Vision-lenguaje dual-tower (alternativa clasica) | No disponible de forma oficial | 224x224 | safetensors, ONNX | MIT (CLIP original) | Hugging Face |
 
 El elemento diferenciador de este artefacto no es la calidad bruta (equivalente a SigLIP 2 B/16) sino el formato y la ejecucion: peso optimizado para GPU en dispositivo con perdida de calidad minima, frente a los artefactos PyTorch/ONNX que no estan pensados para aceleracion movil.
 
@@ -88,7 +88,7 @@ El elemento diferenciador de este artefacto no es la calidad bruta (equivalente 
 - Riesgo en produccion: la verificacion de integridad por SHA-256 es recomendable, dado que el artefacto es un binario compilado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Kairoi-LLC/siglip2-base-patch16-224-litert
+- Hugging Face: https://huggingface.co/Kairoi-LLC/siglip2-base-patch16-224-litert
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-224
 - Torre de texto compatible (ONNX): https://huggingface.co/onnx-community/siglip2-base-patch16-224-ONNX
 - Repositorio Woven (script de conversion y metodologia): mencionado en la model card como `scripts/models/convert-siglip2-litert.py` y la documentacion `docs/brand/research/AI-RUNTIME-COMPARISON-2026-09.md` (seccion 9-10); URL no disponible.

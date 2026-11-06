@@ -74,7 +74,7 @@ No se han publicado en la información disponible resultados de otros benchmarks
 
 | Modelo | Parametros | Contexto / entrada | OA ModelNet40 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CurveNet (este checkpoint) | ~2,1 M | nube de puntos (típ. 8192 puntos) | 93,84 % | MIT | HuggingFace (safetensors) |
+| CurveNet (este checkpoint) | ~2,1 M | nube de puntos (típ. 8192 puntos) | 93,84 % | MIT | Hugging Face (safetensors) |
 | PointNet++ | no disponible en la información | nube de puntos | no disponible en la información | no disponible | repo original |
 | DGCNN | no disponible en la información | nube de puntos | no disponible en la información | no disponible | repo original |
 | Point Transformer | no disponible en la información | nube de puntos | no disponible en la información | no disponible | repo original |
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de cifras verificadas de los mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/curvenet.modelnet40.tiange-xiang
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/curvenet.modelnet40.tiange-xiang
 - Paper "Walk in the Cloud: Learning Curves for Point Clouds Shape Analysis" (ICCV 2021): https://arxiv.org/abs/2105.01288
 - Repositorio original de los autores (tiangexiang/CurveNet): https://github.com/tiangexiang/CurveNet
 - Librería PyTorch PointCloud: https://github.com/arthurdjn/pytorch-pointcloud

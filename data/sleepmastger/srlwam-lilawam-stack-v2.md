@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| srlwam-lilawam-stack-v2 | no disponible | no aplica | Acuerdo abierto: cos +0,328 (`real_only`); +0,093 (`sim_v2_pretrain`) | other / component-specific | HuggingFace |
-| srlwam stack_v1 (`aabyaneh/srlwam`) | no disponible | no aplica | Baseline `real_only` de referencia; `real_finetune_from_sim_v1` con normalización correcta | no disponible | HuggingFace |
+| srlwam-lilawam-stack-v2 | no disponible | no aplica | Acuerdo abierto: cos +0,328 (`real_only`); +0,093 (`sim_v2_pretrain`) | other / component-specific | Hugging Face |
+| srlwam stack_v1 (`aabyaneh/srlwam`) | no disponible | no aplica | Baseline `real_only` de referencia; `real_finetune_from_sim_v1` con normalización correcta | no disponible | Hugging Face |
 | Otros modelos de manipulación comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación más directa es con el release stack_v1 del mismo proyecto, que comparte layout, código de despliegue y convenciones de acción; el autor indica que `real_only` de stack_v2 se comporta como el baseline `real_only` de stack_v1.
@@ -101,7 +101,7 @@ La comparación más directa es con el release stack_v1 del mismo proyecto, que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SleepMastger/srlwam-lilawam-stack-v2
+- Modelo en Hugging Face: https://huggingface.co/SleepMastger/srlwam-lilawam-stack-v2
 - Licencias: https://huggingface.co/SleepMastger/srlwam-lilawam-stack-v2/blob/main/LICENSES.md
 - Release stack_v1 del proyecto: https://huggingface.co/aabyaneh/srlwam
 - Dataset de entrenamiento: https://huggingface.co/datasets/aabyaneh/srlwam

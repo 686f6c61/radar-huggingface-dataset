@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agentorch-rl-27b-3ep-step124 | 27,78 B | No disponible | Orquestacion 0,4114; final 0,1826 (AgentOrch) | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3.8-27B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en esta ficha | HuggingFace |
+| agentorch-rl-27b-3ep-step124 | 27,78 B | No disponible | Orquestacion 0,4114; final 0,1826 (AgentOrch) | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3.8-27B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en esta ficha | Hugging Face |
 | Otros checkpoints del proyecto AgentOrch (p. ej. `sft-27b-80k-3ep`) | 27,78 B (previsible, no confirmado) | No disponible | No disponible | No disponible | Referenciados, sin URL en la informacion |
 
 No se dispone de datos de benchmarks de alternativas comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con modelos de la misma categoria.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JesseLiu/agentorch-rl-27b-3ep-step124
+- Modelo en Hugging Face: https://huggingface.co/JesseLiu/agentorch-rl-27b-3ep-step124
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (revision `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`)
 - Repositorio AgentOrch (harness, datos de entrenamiento y registro de experimentos): mencionado en la model card, URL no disponible en la informacion proporcionada
 - Receta de entrenamiento (`training/results/training.csv`, fila `rl-27b-3ep-step124`): referenciada en la model card, sin URL directa disponible

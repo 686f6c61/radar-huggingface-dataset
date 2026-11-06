@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`LXT/sd-class-butterflies-32` es un modelo de difusión para generación incondicional de imágenes, publicado por el usuario LXT en HuggingFace. Se trata de un checkpoint de 18.536.323 parámetros (unos 0,1 GB de repositorio) asociado al material del curso Diffusion Models Class, tal y como indica la etiqueta `diffusion-models-class` y el propio README. El modelo se distribuye a través de la librería `diffusers` y se invoca con `DDPMPipeline`, lo que lo sitúa en la familia de modelos DDPM con red `UNet2D` como aproximador del ruido.
+`LXT/sd-class-butterflies-32` es un modelo de difusión para generación incondicional de imágenes, publicado por el usuario LXT en Hugging Face. Se trata de un checkpoint de 18.536.323 parámetros (unos 0,1 GB de repositorio) asociado al material del curso Diffusion Models Class, tal y como indica la etiqueta `diffusion-models-class` y el propio README. El modelo se distribuye a través de la librería `diffusers` y se invoca con `DDPMPipeline`, lo que lo sitúa en la familia de modelos DDPM con red `UNet2D` como aproximador del ruido.
 
 El problema que resuelve es acotado y muy concreto: generar imágenes sintéticas de mariposas sin ningún tipo de condicionamiento, es decir, sin prompt de texto ni imagen de entrada. Su relevancia no es la de un modelo de producción, sino la de una pieza didáctica reproducible y ligera (18,5 M de parámetros, cabe en CPU) para aprender el ciclo completo de un pipeline de difusión: carga del modelo, muestreo iterativo y decodificación a imagen.
 
-La ficha se ha elaborado exclusivamente con los metadatos y el README publicados en HuggingFace. La model card no documenta el conjunto de datos de entrenamiento, el número de pasos, el scheduler exacto ni resultados de evaluación, por lo que varios apartados se marcan explícitamente como no disponibles.
+La ficha se ha elaborado exclusivamente con los metadatos y el README publicados en Hugging Face. La model card no documenta el conjunto de datos de entrenamiento, el número de pasos, el scheduler exacto ni resultados de evaluación, por lo que varios apartados se marcan explícitamente como no disponibles.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: por debajo de 1 GB incluso con activaciones a 32 × 32 en fp32; el modelo está pensado para ejecutarse sin problemas en CPU.
 - GPU recomendadas: prácticamente cualquier GPU es suficiente y, de hecho, sobredimensionada. Una GTX 1050, una T4, una RTX 3060 o una RTX 4090 funcionan sin restricción. No tiene sentido reservar A100 o H100 para este checkpoint salvo como prueba de infraestructura.
 - Cabe en GPU de consumo: sí, en todas las gamas actuales, y también en iGPU y CPU. El factor limitante no es la VRAM sino el número de pasos de muestreo.
-- Opciones de despliegue: `diffusers` con PyTorch (vía `DDPMPipeline`), exportación a ONNX Runtime, TorchScript o Core ML, `torch.compile` para reducir la latencia por paso, y publicación como HuggingFace Space con Gradio sobre CPU básica. No aplican `llama.cpp`, Ollama, vLLM ni TGI: son *runtimes* orientados a modelos de lenguaje y no cubren este tipo de pipeline de difusión.
+- Opciones de despliegue: `diffusers` con PyTorch (vía `DDPMPipeline`), exportación a ONNX Runtime, TorchScript o Core ML, `torch.compile` para reducir la latencia por paso, y publicación como Hugging Face Space con Gradio sobre CPU básica. No aplican `llama.cpp`, Ollama, vLLM ni TGI: son *runtimes* orientados a modelos de lenguaje y no cubren este tipo de pipeline de difusión.
 - Latencia y throughput: no disponibles. No se han publicado mediciones, y el tiempo total de generación depende del número de pasos de muestreo configurado y del scheduler elegido.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ La comparación cuantitativa no es posible porque este checkpoint no publica mé
 
 | Modelo | Parámetros | Resolución | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `LXT/sd-class-butterflies-32` | 18.536.323 | 32 × 32 (según nomenclatura) | Incondicional | MIT | HuggingFace, 0 descargas, 0 likes |
-| `google/ddpm-cifar10-32` | No disponible en la información proporcionada | 32 × 32 (según nomenclatura) | Incondicional | No disponible en la información proporcionada | HuggingFace |
-| `google/ddpm-celebahq-256` | No disponible en la información proporcionada | 256 × 256 (según nomenclatura) | Incondicional | No disponible en la información proporcionada | HuggingFace |
-| Otros checkpoints del ejercicio `sd-class-butterflies-*` | No disponible en la información proporcionada | 32 o 128 según variante | Incondicional | Habitualmente MIT | HuggingFace |
+| `LXT/sd-class-butterflies-32` | 18.536.323 | 32 × 32 (según nomenclatura) | Incondicional | MIT | Hugging Face, 0 descargas, 0 likes |
+| `google/ddpm-cifar10-32` | No disponible en la información proporcionada | 32 × 32 (según nomenclatura) | Incondicional | No disponible en la información proporcionada | Hugging Face |
+| `google/ddpm-celebahq-256` | No disponible en la información proporcionada | 256 × 256 (según nomenclatura) | Incondicional | No disponible en la información proporcionada | Hugging Face |
+| Otros checkpoints del ejercicio `sd-class-butterflies-*` | No disponible en la información proporcionada | 32 o 128 según variante | Incondicional | Habitualmente MIT | Hugging Face |
 
 En términos cualitativos, la diferencia principal frente a los DDPM de Google es el dominio de datos y el tamaño: los checkpoints de CIFAR-10 y CelebA-HQ se entrenaron sobre conjuntos amplios y conocidos, mientras que este checkpoint se limita a un dominio muy estrecho (mariposas) y a un tamaño reducido, lo que lo hace adecuado para experimentación, no para calidad de imagen.
 
@@ -96,6 +96,6 @@ En términos cualitativos, la diferencia principal frente a los DDPM de Google e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LXT/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/LXT/sd-class-butterflies-32
 - Repositorio del curso Diffusion Models Class, referenciado en la model card: https://github.com/huggingface/diffusion-models-class
 - Documentación del pipeline utilizado (`DDPMPipeline`) en la librería diffusers: https://huggingface.co/docs/diffusers/api/pipelines/ddpm

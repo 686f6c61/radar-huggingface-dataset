@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adsingh93/test-sentiment` es un artefacto experimental publicado en HuggingFace bajo la licencia CC-BY-4.0. Según su model card, se trata de una implementación a escala *huge* de la arquitectura **DeiT** (Data-efficient Image Transformers), orientada a tareas de *generación*. Sin embargo, el nombre del repositorio sugiere que fue creado como una prueba de análisis de sentimiento, aunque no se proporciona documentación adicional que confirme su propósito real.
+El modelo `adsingh93/test-sentiment` es un artefacto experimental publicado en Hugging Face bajo la licencia CC-BY-4.0. Según su model card, se trata de una implementación a escala *huge* de la arquitectura **DeiT** (Data-efficient Image Transformers), orientada a tareas de *generación*. Sin embargo, el nombre del repositorio sugiere que fue creado como una prueba de análisis de sentimiento, aunque no se proporciona documentación adicional que confirme su propósito real.
 
 El repositorio contiene un único archivo de código (`finetune.py`), sin pesos publicados ni pipeline definido. No hay información sobre el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. En el momento de la consulta, el modelo tiene 0 descargas y 0 likes, lo que indica que se trata de un experimento personal sin validación externa ni aplicación práctica documentada.
 

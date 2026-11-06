@@ -6,7 +6,7 @@ Kimi K3 es un modelo de lenguaje multimodal nativo de tipo agente, publicado con
 
 El modelo activa 104B parámetros por token, seleccionando 16 de 896 expertos, lo que supone una mejora de eficiencia de escalado de aproximadamente 2,5 veces respecto a Kimi K2. Incorpora un marco denominado Stable LatentMoE y alterna 69 capas de atención KDA con 24 capas de Gated MLA sobre un total de 93 capas.
 
-La relevancia actual de Kimi K3 radica en que libera pesos de frontera bajo la licencia Kimi K3, permitiendo investigación, despliegue e innovación sobre un modelo que compite en la categoría de agentes multimodales de contexto largo. El repositorio de HuggingFace corresponde a una publicación de terceros (usuario `abasing`) que replica los pesos del modelo original de Moonshot AI.
+La relevancia actual de Kimi K3 radica en que libera pesos de frontera bajo la licencia Kimi K3, permitiendo investigación, despliegue e innovación sobre un modelo que compite en la categoría de agentes multimodales de contexto largo. El repositorio de Hugging Face corresponde a una publicación de terceros (usuario `abasing`) que replica los pesos del modelo original de Moonshot AI.
 
 ## Especificaciones técnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 | 2,8T | 104B | 1.000.000 | Kimi K3 License | Pesos abiertos en HuggingFace |
+| Kimi K3 | 2,8T | 104B | 1.000.000 | Kimi K3 License | Pesos abiertos en Hugging Face |
 | Kimi K2 | no disponible | no disponible | no disponible | no disponible | Referenciado en la model card como predecesor |
 | Alternativas de clase 3T | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -72,7 +72,7 @@ La información proporcionada solo permite comparar con Kimi K2, del que se indi
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace pertenece al usuario `abasing`, no a la organización oficial `moonshotai`; conviene verificar la procedencia de los pesos antes de usarlos en producción.
+- El repositorio de Hugging Face pertenece al usuario `abasing`, no a la organización oficial `moonshotai`; conviene verificar la procedencia de los pesos antes de usarlos en producción.
 - La licencia es la Kimi K3 License (`license: other`), por lo que las condiciones exactas de uso comercial deben consultarse en el archivo LICENSE del repositorio original.
 - No se dispone de información sobre sesgos conocidos del modelo.
 - Riesgo de alucinación: no cuantificado en la información disponible; como modelo generativo de gran escala, es esperable, pero no hay datos publicados.
@@ -83,8 +83,8 @@ La información proporcionada solo permite comparar con Kimi K2, del que se indi
 
 ## Enlaces
 
-- HuggingFace (repositorio de terceros): https://huggingface.co/abasing/Kimi-K3
-- HuggingFace (organización oficial): https://huggingface.co/moonshotai
+- Hugging Face (repositorio de terceros): https://huggingface.co/abasing/Kimi-K3
+- Hugging Face (organización oficial): https://huggingface.co/moonshotai
 - Blog técnico: https://www.kimi.com/blog/kimi-k3
 - Informe técnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
 - Licencia: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE

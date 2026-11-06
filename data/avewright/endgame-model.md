@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`avewright/endgame-model` es un modelo de política para ajedrez desarrollado por el usuario avewright y publicado en HuggingFace. Se trata de un especialista en finales: parte de la arquitectura "squares64" de 99 M de parámetros del modelo hermano `avewright/chess-transformer-100m-squares64` y se afina sobre posiciones de menos de 14 piezas, con el objetivo de predecir el mejor primer movimiento como clasificación one-hot.
+`avewright/endgame-model` es un modelo de política para ajedrez desarrollado por el usuario avewright y publicado en Hugging Face. Se trata de un especialista en finales: parte de la arquitectura "squares64" de 99 M de parámetros del modelo hermano `avewright/chess-transformer-100m-squares64` y se afina sobre posiciones de menos de 14 piezas, con el objetivo de predecir el mejor primer movimiento como clasificación one-hot.
 
 El modelo no es un modelo de lenguaje: es un transformer con componentes recurrentes (etiquetas `transformer` y `recurrent`) cuya salida es una política sobre movimientos legales. Su relevancia es acotada y muy específica: sirve como prior rápido en posiciones de final, un terreno donde los motores clásicos y las tablebases Syzygy dominan pero donde interesa estudiar aproximaciones neuronales.
 
@@ -76,10 +76,10 @@ Los únicos comparadores mencionados explícitamente en la información disponib
 
 | Modelo | Parametros | Contexto / alcance | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `avewright/endgame-model` | ~99 M | Finales con menos de 14 piezas | Train loss ~1,4738; hard CE ~1,2928 | MIT | HuggingFace (0 descargas) |
-| `avewright/chess-transformer-100m-squares64` | ~99 M (100 M nominales) | Modelo base generalista | no disponible | no disponible en la informacion | HuggingFace |
+| `avewright/endgame-model` | ~99 M | Finales con menos de 14 piezas | Train loss ~1,4738; hard CE ~1,2928 | MIT | Hugging Face (0 descargas) |
+| `avewright/chess-transformer-100m-squares64` | ~99 M (100 M nominales) | Modelo base generalista | no disponible | no disponible en la informacion | Hugging Face |
 | Tablebases Syzygy (referencia del autor) | no aplica | Finales de hasta 7 piezas | Solución exacta (no aproximada) | no disponible en la informacion | Herramienta externa |
-| Expertos en puzzles del mismo autor (referencia del autor) | no disponible | Problemas de mate | no disponible | no disponible | HuggingFace |
+| Expertos en puzzles del mismo autor (referencia del autor) | no disponible | Problemas de mate | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos sobre otros modelos neuronales de ajedrez comparables dentro de la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos sobre otros modelos neuronales de ajedrez comparables den
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avewright/endgame-model
+- Modelo en Hugging Face: https://huggingface.co/avewright/endgame-model
 - Modelo base citado por el autor: https://huggingface.co/avewright/chess-transformer-100m-squares64
 - Dataset de origen de las posiciones: https://huggingface.co/datasets/Lichess/chess-position-evaluations
 - Dataset intermedio de finales: https://huggingface.co/datasets/avewright/lichess-endgame-bestline

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed455` es un ajuste fino (fine-tuning) del modelo base `fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455`, desarrollado por el usuario fpadovani (vinculado a la Universidad de Groningen segun la URL del proyecto en Weights & Biases) y publicado en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL, y derivado de un linaje de modelos con tokenizadores experimentales (el proyecto de W&B se denomina `new_tokenizers`).
+El modelo `fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed455` es un ajuste fino (fine-tuning) del modelo base `fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455`, desarrollado por el usuario fpadovani (vinculado a la Universidad de Groningen segun la URL del proyecto en Weights & Biases) y publicado en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL, y derivado de un linaje de modelos con tokenizadores experimentales (el proyecto de W&B se denomina `new_tokenizers`).
 
 El modelo pertenece a la familia de modelos pequenos (por debajo de 100 millones de parametros) y su nombre sugiere un contexto de investigacion sobre tokenizacion y eficiencia en modelos de escalas reducidas, con variantes identificadas por semilla (`seed455`) y checkpoint (`ckpt500`). No se dispone de informacion publica sobre el idioma objetivo, la composicion del dataset ni la licencia, mas alla de la etiqueta generica `licence: license` que aparece en la model card.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,16 GB en fp32 (156 MB solo de pesos), 0,08 GB en fp16/bf16, 0,04 GB en int8 y 0,02 GB en cuantizacion de 4 bits. Con estados de activacion y cache KV, el consumo total en practica se mantiene por debajo de 1 GB para secuencias cortas.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; una RTX 4090, A100 o H100 estan sobredimensionadas para este modelo y solo tendrian sentido en despliegues con batching muy alto.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada moderna e incluso en GPU integradas y en CPU. Es viable en Raspberry Pi o dispositivos de borde con memoria suficiente.
-- Opciones de despliegue: `transformers` (pipeline de text-generation), `text-generation-inference` (el modelo esta etiquetado como compatible), endpoints de HuggingFace, y `llama.cpp`/`Ollama` si se convierte previamente a GGUF (no se proporcionan pesos GGUF en el repo).
+- Opciones de despliegue: `transformers` (pipeline de text-generation), `text-generation-inference` (el modelo esta etiquetado como compatible), endpoints de Hugging Face, y `llama.cpp`/`Ollama` si se convierte previamente a GGUF (no se proporcionan pesos GGUF en el repo).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,8 +67,8 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed455 | 39.087.104 | no disponible | no disponible | HuggingFace (repo publico, 0 descargas) |
-| GPT-2 small (referencia de familia) | 124.000.000 | 1024 tokens | MIT | HuggingFace / OpenAI |
+| tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed455 | 39.087.104 | no disponible | no disponible | Hugging Face (repo publico, 0 descargas) |
+| GPT-2 small (referencia de familia) | 124.000.000 | 1024 tokens | MIT | Hugging Face / OpenAI |
 | Alternativas comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/mf6ypdtb
 - Repositorio de TRL: https://github.com/huggingface/trl

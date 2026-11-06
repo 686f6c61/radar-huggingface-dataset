@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AxomAI Voice Puhor es un modelo de síntesis de voz (text-to-speech) desarrollado por axom-ai, especializado en el idioma asamés (código ISO `as`). Se distribuye en HuggingFace con pesos en formato safetensors y está construido sobre la arquitectura F5-TTS, un sistema de TTS basado en flow matching con un transformer de difusión (DiT) como backbone generativo. El modelo cuenta con 350.681.834 parámetros totales y un repositorio de 6,9 GB, lo que sugiere pesos en precisión completa o fp32 junto con posibles checkpoints auxiliares (vocoder, tokenizador fonético, etc.).
+AxomAI Voice Puhor es un modelo de síntesis de voz (text-to-speech) desarrollado por axom-ai, especializado en el idioma asamés (código ISO `as`). Se distribuye en Hugging Face con pesos en formato safetensors y está construido sobre la arquitectura F5-TTS, un sistema de TTS basado en flow matching con un transformer de difusión (DiT) como backbone generativo. El modelo cuenta con 350.681.834 parámetros totales y un repositorio de 6,9 GB, lo que sugiere pesos en precisión completa o fp32 junto con posibles checkpoints auxiliares (vocoder, tokenizador fonético, etc.).
 
 El modelo resuelve un problema de nicho: la escasez de sistemas TTS de calidad para lenguas de bajos recursos como el asamés, hablado principalmente en el estado de Assam (India) por más de 15 millones de personas. Frente a los TTS multilingües genéricos, que suelen degradar la pronunciación y la prosodia en lenguas no representadas en sus datos de entrenamiento, Puhor se presenta como un modelo entrenado específicamente sobre un dataset asamés personalizado (`custom-assamese`), con la promesa de "zero-hallucination" en la generación de audio.
 
-Es relevante ahora porque la combinación de flow matching con DiT permite una síntesis de alta fidelidad con un número de pasos de muestreo reducido en comparación con los modelos de difusión clásicos, y porque la licencia es propietaria (`axom-ai-proprietary`) con acceso restringido (gated), lo que condiciona su uso a la aceptación de términos en HuggingFace. El modelo se publicó el 1 de noviembre de 2026 y, en el momento de redactar esta ficha, registra 2 descargas y 0 likes.
+Es relevante ahora porque la combinación de flow matching con DiT permite una síntesis de alta fidelidad con un número de pasos de muestreo reducido en comparación con los modelos de difusión clásicos, y porque la licencia es propietaria (`axom-ai-proprietary`) con acceso restringido (gated), lo que condiciona su uso a la aceptación de términos en Hugging Face. El modelo se publicó el 1 de noviembre de 2026 y, en el momento de redactar esta ficha, registra 2 descargas y 0 likes.
 
 ## Especificaciones técnicas
 
@@ -33,7 +33,7 @@ Respecto al entrenamiento, la información disponible solo indica que se utiliz�
 - Generación de habla con prosodia y pronunciación adaptadas específicamente al asamés, al haberse entrenado sobre un corpus de ese idioma.
 - Modo de inferencia basado en flow matching, que permite ajustar el número de pasos de integración para equilibrar calidad y latencia.
 - Orientación a "zero-hallucination": el modelo está diseñado para evitar la inserción de audio no correspondiente al texto de entrada.
-- Compatibilidad con endpoints de HuggingFace (`endpoints_compatible`), lo que facilita el despliegue como servicio gestionado.
+- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`), lo que facilita el despliegue como servicio gestionado.
 - No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso, capacidades ajenas al dominio TTS.
 - No se documenta clonación de voz zero-shot ni control de estilo, aunque la arquitectura F5-TTS subyacente suele soportar referencia de hablante; la información disponible no lo confirma para este checkpoint.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con 350,7 millones de parámetros, los pesos en fp32 ocupan aproximadamente 1,4 GB; en fp16, unos 0,7 GB. A ello hay que sumar el vocoder, el tokenizador fonético y los buffers de activación durante la integración ODE, por lo que una estimación conservadora sitúa el pico de VRAM en el rango de 2 a 4 GB en fp32 y de 1,5 a 3 GB en fp16.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM debería ser suficiente para inferencia en fp16. Para despliegue en producción con concurrencia, se recomiendan tarjetas como A10G, L4, A100 o H100.
 - Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4070 (12 GB) y superiores; también en GPUs integradas con suficiente memoria compartida, aunque con mayor latencia.
-- Opciones de despliegue: al ser un modelo F5-TTS con pesos safetensors, el camino natural es usar la implementación de referencia de F5-TTS (repositorio oficial en GitHub) o cargarlo mediante `transformers` si la comunidad ha añadido soporte. Para servicio gestionado, HuggingFace Inference Endpoints está indicado por la etiqueta `endpoints_compatible`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, herramientas orientadas a LLM y no a TTS.
+- Opciones de despliegue: al ser un modelo F5-TTS con pesos safetensors, el camino natural es usar la implementación de referencia de F5-TTS (repositorio oficial en GitHub) o cargarlo mediante `transformers` si la comunidad ha añadido soporte. Para servicio gestionado, Hugging Face Inference Endpoints está indicado por la etiqueta `endpoints_compatible`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, herramientas orientadas a LLM y no a TTS.
 - Latencia y throughput: no disponibles en la información proporcionada. La latencia dependerá del número de pasos de integración configurados en el sampler de flow matching y de la duración del audio generado.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ La comparativa se basa en características públicas de los modelos alternativos
 
 ## Limitaciones y advertencias
 
-- Licencia propietaria (`axom-ai-proprietary`): el uso comercial está sujeto a los términos que el usuario debe aceptar en HuggingFace; no es una licencia de código abierto y puede restringir la redistribución, el fine-tuning o el despliegue en productos de terceros.
+- Licencia propietaria (`axom-ai-proprietary`): el uso comercial está sujeto a los términos que el usuario debe aceptar en Hugging Face; no es una licencia de código abierto y puede restringir la redistribución, el fine-tuning o el despliegue en productos de terceros.
 - Acceso restringido (gated): es necesario solicitar acceso y aceptar las condiciones en la página del modelo antes de descargar los pesos.
 - Cobertura monolingüe: solo soporta asamés (`as`); no se debe esperar un rendimiento aceptable en otros idiomas ni en code-switching con inglés o bengalí, habituales en el contexto de Assam.
 - Riesgo de alucinación: aunque el modelo se etiqueta como "zero-hallucination", ningún TTS neuronal está exento de generar artefactos, repeticiones o audio espurio ante textos fuera de dominio, siglas, números o préstamos léxicos no vistos en el corpus de entrenamiento.
@@ -84,7 +84,7 @@ La comparativa se basa en características públicas de los modelos alternativos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axom-ai/axomai-voice-puhor
+- Modelo en Hugging Face: https://huggingface.co/axom-ai/axomai-voice-puhor
 - Repositorio oficial de F5-TTS (arquitectura base): https://github.com/SWivid/F5-TTS
 - Paper de F5-TTS: https://arxiv.org/abs/2410.06885
-- Perfil del autor en HuggingFace: https://huggingface.co/axom-ai
+- Perfil del autor en Hugging Face: https://huggingface.co/axom-ai

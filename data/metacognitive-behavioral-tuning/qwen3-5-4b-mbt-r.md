@@ -37,7 +37,7 @@ La innovación del trabajo es el pipeline de datos: se parte de trazas de un pro
 - Razonamiento matemático paso a paso, con formato de respuesta final en `\boxed{}` inducido durante el entrenamiento.
 - Razonamiento de cadena larga: la model card recomienda reservar espacio para decenas de miles de tokens de salida (`max_tokens=122880` en el ejemplo).
 - Comportamientos metacognitivos destilados: autorreflexión y revisión de pasos intermedios, según la hipótesis del paper asociado.
-- Tag `image-text-to-text` en HuggingFace, lo que sugiere soporte multimodal heredado del base; no se detalla en la model card.
+- Tag `image-text-to-text` en Hugging Face, lo que sugiere soporte multimodal heredado del base; no se detalla en la model card.
 - Compatibilidad con endpoints (`endpoints_compatible`) y despliegue con vLLM según el ejemplo oficial.
 - Soporte de tool calling y function calling: no disponible en la información proporcionada.
 - Capacidades de agente multi-paso: no documentadas de forma explícita (la variante MBT-A del estudio es la asociada a edición agéntica, no este modelo).
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-MBT-R | 4,54B | 131.072 (entrenamiento) | Razonamiento matemático con metacognición | Apache-2.0 | HuggingFace, 202 descargas |
-| Qwen3.5-4B-MBT-I | 4,54B (presumible) | 131.072 (entrenamiento) | Igual, con trazas editadas por inserción | Apache-2.0 | HuggingFace (variante hermana) |
-| Qwen3.5-4B-MBT-A | 4,54B (presumible) | 131.072 (entrenamiento) | Igual, con edición agéntica | Apache-2.0 | HuggingFace (variante hermana) |
-| Qwen3.5-4B-Unedited-SFT | 4,54B (presumible) | 131.072 (entrenamiento) | Igual, sin edición de trazas (control) | Apache-2.0 | HuggingFace (variante hermana) |
-| Qwen/Qwen3.5-4B-Base | 4,54B | No disponible | Modelo base generalista | Apache-2.0 | HuggingFace |
+| Qwen3.5-4B-MBT-R | 4,54B | 131.072 (entrenamiento) | Razonamiento matemático con metacognición | Apache-2.0 | Hugging Face, 202 descargas |
+| Qwen3.5-4B-MBT-I | 4,54B (presumible) | 131.072 (entrenamiento) | Igual, con trazas editadas por inserción | Apache-2.0 | Hugging Face (variante hermana) |
+| Qwen3.5-4B-MBT-A | 4,54B (presumible) | 131.072 (entrenamiento) | Igual, con edición agéntica | Apache-2.0 | Hugging Face (variante hermana) |
+| Qwen3.5-4B-Unedited-SFT | 4,54B (presumible) | 131.072 (entrenamiento) | Igual, sin edición de trazas (control) | Apache-2.0 | Hugging Face (variante hermana) |
+| Qwen/Qwen3.5-4B-Base | 4,54B | No disponible | Modelo base generalista | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento efectivo frente a las variantes hermanas ni frente a otros modelos de 4B de la competencia.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento efecti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-R
+- Modelo en Hugging Face: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-R
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Variante Unedited-SFT: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-Unedited-SFT
 - Variante MBT-I: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-I

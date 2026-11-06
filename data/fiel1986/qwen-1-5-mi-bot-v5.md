@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fiel1986/qwen-1.5-mi-bot-v5 es un adaptador LoRA publicado en HuggingFace por el usuario fiel1986 sobre el modelo base Qwen/Qwen2-1.5B-Instruct. No se trata de un modelo entrenado desde cero, sino de un ajuste fino ligero (pesos adicionales en formato PEFT) que debe cargarse junto al modelo base para poder generar texto. El repositorio ocupa 0,2 GB y fue creado el 1 de octubre de 2026 segun los metadatos de la plataforma.
+fiel1986/qwen-1.5-mi-bot-v5 es un adaptador LoRA publicado en Hugging Face por el usuario fiel1986 sobre el modelo base Qwen/Qwen2-1.5B-Instruct. No se trata de un modelo entrenado desde cero, sino de un ajuste fino ligero (pesos adicionales en formato PEFT) que debe cargarse junto al modelo base para poder generar texto. El repositorio ocupa 0,2 GB y fue creado el 1 de octubre de 2026 segun los metadatos de la plataforma.
 
 El problema que resuelve es acotado: permitir un ajuste de comportamiento conversacional sobre un modelo pequeno y rapido, sin necesidad de reentrenar los 1.500 millones de parametros del modelo base. Al apoyarse en Qwen2-1.5B-Instruct, hereda la arquitectura transformer decoder-only con Grouped Query Attention y una ventana de contexto de 32.768 tokens, ademas de la licencia Apache 2.0 del modelo base.
 
@@ -31,7 +31,7 @@ Nota: los valores marcados como procedentes del modelo base provienen de la docu
 
 El adaptador se apoya en Qwen2-1.5B-Instruct, un transformer decoder-only denso de aproximadamente 1.500 millones de parametros con atencion de consultas agrupadas (GQA), orientado a instrucciones y conversacion. Sobre esa base, fiel1986 ha aplicado un ajuste LoRA (Low-Rank Adaptation) mediante la libreria PEFT, lo que implica congelar los pesos originales y entrenar unicamente matrices de bajo rango insertadas en determinadas capas. El resultado son unos pocos cientos de megabytes de pesos incrementales que se cargan sobre el modelo base.
 
-No hay informacion disponible sobre el dataset de entrenamiento, el numero de tokens vistos, la composicion de los datos, la existencia de fases de RLHF o DPO, los hiperparametros (rango, alpha, dropout, learning rate) ni el hardware utilizado. La model card incluye la plantilla estandar de HuggingFace sin rellenar, y el unico dato concreto es la version de PEFT empleada. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, destilacion, etc.). El tag arxiv:1910.09700 que aparece en los metadatos corresponde a la calculadora de impacto medioambiental citada en la plantilla original, no a un articulo sobre este modelo.
+No hay informacion disponible sobre el dataset de entrenamiento, el numero de tokens vistos, la composicion de los datos, la existencia de fases de RLHF o DPO, los hiperparametros (rango, alpha, dropout, learning rate) ni el hardware utilizado. La model card incluye la plantilla estandar de Hugging Face sin rellenar, y el unico dato concreto es la version de PEFT empleada. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, destilacion, etc.). El tag arxiv:1910.09700 que aparece en los metadatos corresponde a la calculadora de impacto medioambiental citada en la plantilla original, no a un articulo sobre este modelo.
 
 ## Capacidades
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fiel1986/qwen-1.5-mi-bot-v5 | ~1,5B (base) + LoRA | 32.768 (heredado del base, no confirmado) | no disponible (base Apache 2.0) | HuggingFace, 0 descargas | Model card vacia, sin benchmarks ni datos de entrenamiento |
-| Qwen/Qwen2-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base de referencia, documentado y evaluado por el autor original |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | HuggingFace | Alternativa comparable en tamano, con model card completa y entrenamiento documentado |
-| google/gemma-2-2b-it | 2,6B | 8.192 | Gemma Terms of Use | HuggingFace (con aceptacion de terminos) | Mayor tamano y contexto menor; licencia con restricciones de uso comercial |
+| fiel1986/qwen-1.5-mi-bot-v5 | ~1,5B (base) + LoRA | 32.768 (heredado del base, no confirmado) | no disponible (base Apache 2.0) | Hugging Face, 0 descargas | Model card vacia, sin benchmarks ni datos de entrenamiento |
+| Qwen/Qwen2-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base de referencia, documentado y evaluado por el autor original |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | Hugging Face | Alternativa comparable en tamano, con model card completa y entrenamiento documentado |
+| google/gemma-2-2b-it | 2,6B | 8.192 | Gemma Terms of Use | Hugging Face (con aceptacion de terminos) | Mayor tamano y contexto menor; licencia con restricciones de uso comercial |
 
 No se dispone de datos de rendimiento del adaptador que permitan una comparacion cuantitativa con estas alternativas. La comparacion se limita, por tanto, a parametros, contexto, licencia y disponibilidad.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/fiel1986/qwen-1.5-mi-bot-v5
+- Adaptador en Hugging Face: https://huggingface.co/fiel1986/qwen-1.5-mi-bot-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct
 - Adaptadores relacionados del mismo autor: https://huggingface.co/fiel1986/qwen-1.5-mi-bot y https://huggingface.co/fiel1986/qwen-0.5-mi-bot
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen

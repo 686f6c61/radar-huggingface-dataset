@@ -2,9 +2,9 @@
 
 ## Resumen
 
-xyntrai-Sarah-mistral-2501-36B-nsfw es un ajuste fino (finetune) del modelo xyntrai-mistral-small-2501-36B-nsfw, publicado por el usuario xyntraistudios en HuggingFace. Se trata de un modelo de generación de texto de 36.910.535.680 parámetros (aproximadamente 36,9 mil millones) derivado de la familia Mistral, orientado a conversación y etiquetado explícitamente como contenido para adultos (not-for-all-adults). El modelo se distribuye bajo licencia Apache 2.0 y solo declara soporte para inglés.
+xyntrai-Sarah-mistral-2501-36B-nsfw es un ajuste fino (finetune) del modelo xyntrai-mistral-small-2501-36B-nsfw, publicado por el usuario xyntraistudios en Hugging Face. Se trata de un modelo de generación de texto de 36.910.535.680 parámetros (aproximadamente 36,9 mil millones) derivado de la familia Mistral, orientado a conversación y etiquetado explícitamente como contenido para adultos (not-for-all-adults). El modelo se distribuye bajo licencia Apache 2.0 y solo declara soporte para inglés.
 
-La model card es extremadamente escueta: no documenta la composición del dataset de ajuste fino, el número de tokens de entrenamiento, ni detalles sobre el proceso de alineación. Únicamente indica que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que sugiere un flujo de ajuste fino supervisado (SFT) o preferencias sobre el modelo base. No se han publicado resultados de benchmarks ni información sobre la longitud de contexto efectiva.
+La model card es extremadamente escueta: no documenta la composición del dataset de ajuste fino, el número de tokens de entrenamiento, ni detalles sobre el proceso de alineación. Únicamente indica que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que sugiere un flujo de ajuste fino supervisado (SFT) o preferencias sobre el modelo base. No se han publicado resultados de benchmarks ni información sobre la longitud de contexto efectiva.
 
 Su relevancia es limitada y muy específica: se trata de un modelo de nicho para generación de texto conversacional sin filtros, con cero descargas y cero likes en el momento de la consulta, y sin documentación técnica sustancial. Para cualquier evaluación seria en producción resulta imprescindible contrastar su comportamiento empíricamente, dado que la información disponible no permite verificar calidad, seguridad ni rendimiento.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y muy específica: se trata de un modelo de nicho para
 
 El modelo es un ajuste fino del checkpoint xyntrai-mistral-small-2501-36B-nsfw, que a su vez parece derivar de la familia Mistral Small. La model card no especifica la arquitectura interna (número de capas, dimensión oculta, tipo de atención, uso de GQA, etc.), por lo que no es posible confirmar si incorpora innovaciones como sliding window attention o decodificación especulativa. El recuento de parámetros real (36,9 B) procede de los safetensors publicados.
 
-En cuanto al entrenamiento, la única información disponible es que se utilizó Unsloth junto con TRL de HuggingFace, lo que apunta a un pipeline de ajuste fino eficiente en memoria. No se documentan el volumen de tokens, la composición del dataset, ni si hubo etapas de RLHF, DPO o filtrado de seguridad. Tampoco se indica si el ajuste se realizó con datos sintéticos, conversacionales o de rol. Esta ausencia de trazabilidad es una limitación importante para cualquier uso en producción.
+En cuanto al entrenamiento, la única información disponible es que se utilizó Unsloth junto con TRL de Hugging Face, lo que apunta a un pipeline de ajuste fino eficiente en memoria. No se documentan el volumen de tokens, la composición del dataset, ni si hubo etapas de RLHF, DPO o filtrado de seguridad. Tampoco se indica si el ajuste se realizó con datos sintéticos, conversacionales o de rol. Esta ausencia de trazabilidad es una limitación importante para cualquier uso en producción.
 
 ## Capacidades
 
@@ -77,13 +77,13 @@ La comparación cuantitativa no es posible: el autor no publica métricas y el r
 - Riesgo elevado de alucinación: sin información sobre alineación ni datos de entrenamiento, no puede asumirse fiabilidad factual.
 - Solo inglés declarado: no hay soporte multilingüe documentado.
 - Contexto desconocido: la longitud de ventana no está especificada, lo que impide planificar casos de uso con documentos largos.
-- Licencia Apache 2.0 permite uso comercial, pero el contenido NSFW puede incumplir las políticas de aceptación de uso de plataformas de despliegue (HuggingFace Inference Endpoints, proveedores cloud, etc.).
+- Licencia Apache 2.0 permite uso comercial, pero el contenido NSFW puede incumplir las políticas de aceptación de uso de plataformas de despliegue (Hugging Face Inference Endpoints, proveedores cloud, etc.).
 - Cero tracción comunitaria (0 descargas, 0 likes): no hay evidencia de validación por terceros ni de mantenimiento.
 - Fecha de creación futura (2026-11-04) en los metadatos: conviene verificar la integridad y procedencia del repositorio antes de confiar en él.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xyntraistudios/xyntrai-Sarah-mistral-2501-36B-nsfw
+- Modelo en Hugging Face: https://huggingface.co/xyntraistudios/xyntrai-Sarah-mistral-2501-36B-nsfw
 - Modelo base: https://huggingface.co/xyntraistudios/xyntrai-mistral-small-2501-36B-nsfw
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

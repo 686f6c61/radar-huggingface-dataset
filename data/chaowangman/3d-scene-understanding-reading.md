@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | sin benchmarks publicados | no disponible |
 | Licencia | cc-by-4.0 | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas y 0 likes | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas y 0 likes | no disponible |
 
 No se dispone de modelos comparables dentro de la informacion proporcionada. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo ni con el tema: los enlaces obtenidos corresponden a hoteles de la ciudad de Columbus (Ohio, Estados Unidos) y carecen de toda relevancia tecnica, por lo que se descartan como fuentes.
 
@@ -85,7 +85,7 @@ No se dispone de modelos comparables dentro de la informacion proporcionada. La 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chaowangman/3d-scene-understanding-reading
+- Repositorio en Hugging Face: https://huggingface.co/chaowangman/3d-scene-understanding-reading
 - Perfil del autor: https://huggingface.co/chaowangman
 - Licencia Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

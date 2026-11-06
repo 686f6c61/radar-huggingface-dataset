@@ -92,14 +92,14 @@ No se identifican en la informacion proporcionada competidores directos publicad
 - Longitud de contexto no declarada; no se garantiza el comportamiento en documentos largos de RFP (que suelen superar decenas de miles de tokens).
 - Idiomas no declarados: aunque el modelo base es multilingue, no hay evidencia de que el ajuste funcione fuera del ingles juridico-administrativo estadounidense.
 - Licencia no disponible: no se puede confirmar si el uso comercial esta permitido, lo que supone un riesgo legal para adopcion en produccion.
-- El repositorio de HuggingFace muestra un tamano de 0,0 GB, sin pipeline ni idiomas declarados y con 0 descargas, lo que apunta a un artefacto incompleto o no validado por terceros.
+- El repositorio de Hugging Face muestra un tamano de 0,0 GB, sin pipeline ni idiomas declarados y con 0 descargas, lo que apunta a un artefacto incompleto o no validado por terceros.
 - El entrenamiento sobre un modelo base ya cuantizado a 4 bits puede introducir degradacion respecto a un fine-tuning en mayor precision.
 - No hay documentacion sobre tool calling, agentes, integracion con RAG ni procedimientos de fusion del adaptador con el modelo base.
 - Fechas de creacion y actualizacion del repositorio (2026-09-10) resultan inconsistentes con un uso en produccion a corto plazo.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Samalas/govcon-qwen-7b-lifecycle
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Samalas/govcon-qwen-7b-lifecycle
 - Modelo base cuantizado: https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit
 - Modelo original: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Framework MLX: https://github.com/ml-explore/mlx

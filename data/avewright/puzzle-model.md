@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Parametros | Arquitectura | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `avewright/puzzle-model` | 98,97 M | Transformer recurrente squares64 | Tactica (puzles Lichess) | MIT | HuggingFace (`latest.pt`) |
-| `avewright/chess-transformer-100m-squares64` | 99 M | Transformer squares64 | Generalista de ajedrez | No disponible en la informacion | HuggingFace (modelo referenciado como origen del warm start) |
+| `avewright/puzzle-model` | 98,97 M | Transformer recurrente squares64 | Tactica (puzles Lichess) | MIT | Hugging Face (`latest.pt`) |
+| `avewright/chess-transformer-100m-squares64` | 99 M | Transformer squares64 | Generalista de ajedrez | No disponible en la informacion | Hugging Face (modelo referenciado como origen del warm start) |
 
 No se dispone de informacion sobre otros modelos comparables en la documentacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de informacion sobre otros modelos comparables en la documentacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avewright/puzzle-model
+- Modelo en Hugging Face: https://huggingface.co/avewright/puzzle-model
 - Modelo base generalista: https://huggingface.co/avewright/chess-transformer-100m-squares64
 - Dataset de entrenamiento: https://huggingface.co/datasets/Lichess/chess-puzzles
 - Repositorio de codigo de inferencia: https://huggingface.co/avewright/transform

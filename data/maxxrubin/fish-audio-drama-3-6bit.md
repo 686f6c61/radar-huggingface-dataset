@@ -18,7 +18,7 @@ Su relevancia es práctica: permite TTS expresivo y clonación de voz en local s
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | 6 bits afín en expertos enrutados (group size 64); 8 bits afín en proyecciones densas y torre de audio (group size 64); códec Fish S1 DAC sin cuantizar |
 | Idiomas soportados | no disponible |
-| Licencia | Fish Audio Community License v1.0 (`fish-audio-community-license-v1.0`; etiqueta `other` en HuggingFace) |
+| Licencia | Fish Audio Community License v1.0 (`fish-audio-community-license-v1.0`; etiqueta `other` en Hugging Face) |
 | Formato de pesos | safetensors en formato MLX |
 | Modelo base | `fishaudio/drama-3`, revisión `b2b5ee998034b2975720906c815e7fb0e9f007bd` |
 | Librería | mlx-audio |
@@ -100,7 +100,7 @@ No se dispone de resultados de rendimiento comparativos entre estas variantes. L
 - Plataforma limitada: MLX y Apple Silicon. No se documenta soporte CUDA, vLLM, TGI, llama.cpp ni Ollama para esta conversión.
 - Memoria: 34,2 GB de pico en pruebas cortas y recomendación de 48 GB o más de memoria unificada; los prompts largos o con varias referencias pueden superar esa estimación.
 - Idiomas: no se documenta una lista de idiomas soportados en la información disponible.
-- Licencia: se aplica la Fish Audio Community License v1.0, con etiqueta `other` en HuggingFace. Hay que revisar los términos de uso comercial, mantener la atribución y conservar el fichero `NOTICE` al redistribuir.
+- Licencia: se aplica la Fish Audio Community License v1.0, con etiqueta `other` en Hugging Face. Hay que revisar los términos de uso comercial, mantener la atribución y conservar el fichero `NOTICE` al redistribuir.
 - Clonación de voz: existe riesgo de suplantación y deepfakes. Es necesario obtener consentimiento explícito, cumplir la legislación aplicable y restringir el acceso a referencias biométricas.
 - Sesgos: no hay información sobre sesgos del modelo base ni sobre su comportamiento por idioma, acento o género.
 - Validación comunitaria escasa: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso en producción.
@@ -108,7 +108,7 @@ No se dispone de resultados de rendimiento comparativos entre estas variantes. L
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/maxxrubin/fish-audio-drama-3-6bit)
+- [Modelo en Hugging Face](https://huggingface.co/maxxrubin/fish-audio-drama-3-6bit)
 - [Modelo base fishaudio/drama-3](https://huggingface.co/fishaudio/drama-3)
 - [Licencia Fish Audio Community License v1.0](https://huggingface.co/maxxrubin/fish-audio-drama-3-6bit/blob/main/LICENSE)
 - [Documentación de Fish Drama 3 en mlx-audio](https://github.com/Blaizzy/mlx-audio/blob/d35a8038131f0de33b7ae6da3f2d5b69523b1c3e/docs/models/tts/fish-drama3.md)

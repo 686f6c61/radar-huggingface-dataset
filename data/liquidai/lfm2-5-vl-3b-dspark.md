@@ -18,7 +18,7 @@ La relevancia de esta publicacion esta en el rendimiento medido: hasta 2,66x mas
 | Longitud de contexto | no disponible (limitada por el modelo objetivo LiquidAI/LFM2.5-VL-3B) |
 | Tipos de cuantizacion | BF16 y FP16 en los checkpoints publicados; existe un repositorio GGUF separado (LFM2.5-VL-3B-DSpark-GGUF) |
 | Idiomas soportados | no disponible |
-| Licencia | LFM1.0 (identificador `lfm1.0`, licencia "other" en HuggingFace) |
+| Licencia | LFM1.0 (identificador `lfm1.0`, licencia "other" en Hugging Face) |
 | Formato de pesos | safetensors; GGUF en repositorio aparte |
 | Modelo objetivo | LiquidAI/LFM2.5-VL-3B |
 | Modelo base | LiquidAI/LFM2.5-VL-3B (finetune) |
@@ -102,8 +102,8 @@ Condiciones de medida declaradas: procesamiento de 16 bits tanto en el codificad
 
 | Modelo | Tipo | Parametros | Contexto | Aceleracion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LFM2.5-VL-3B-DSpark | Borrador especulativo multimodal | 279,5M | no disponible | Hasta 2,66x (H100/SGLang), 3,13x (M5 Max/MLX-VLM), 2,14x (M3 Ultra/llama.cpp) | LFM1.0 | HuggingFace, safetensors y GGUF |
-| LFM2.5-DSpark | Borrador especulativo de texto | no disponible | no disponible | Hasta 3,2x segun el blog de Liquid AI | LFM1.0 (no confirmado en la informacion) | HuggingFace |
+| LFM2.5-VL-3B-DSpark | Borrador especulativo multimodal | 279,5M | no disponible | Hasta 2,66x (H100/SGLang), 3,13x (M5 Max/MLX-VLM), 2,14x (M3 Ultra/llama.cpp) | LFM1.0 | Hugging Face, safetensors y GGUF |
+| LFM2.5-DSpark | Borrador especulativo de texto | no disponible | no disponible | Hasta 3,2x segun el blog de Liquid AI | LFM1.0 (no confirmado en la informacion) | Hugging Face |
 | EAGLE-3 | Borrador especulativo (metodo alternativo) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Medusa | Cabezas de decodificacion especulativa (metodo alternativo) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -119,13 +119,13 @@ Liquid AI no indica en la informacion disponible comparaciones directas contra o
 - La velocidad de aceleracion depende de la carga: en conversacion multi-turno los incrementos son los mas bajos de la tabla (1,57x en decodificacion sobre M3 Ultra), lo que indica que no todos los escenarios se benefician por igual.
 - Riesgo de alucinacion: el borrador no genera contenido de forma independiente, pero hereda integramente el comportamiento del modelo objetivo; cualquier sesgo o alucinacion proviene de este ultimo.
 - Idiomas soportados: no disponibles en la informacion proporcionada; dependen del modelo objetivo.
-- Licencia LFM1.0 (identificador `lfm1.0`, marcada como "other" en HuggingFace): es una licencia propia de Liquid AI y no una licencia open source estandar. Antes de un uso comercial es imprescindible revisar el archivo LICENSE del repositorio, ya que las condiciones de uso comercial, redistribucion y atribucion no se detallan en la informacion disponible.
+- Licencia LFM1.0 (identificador `lfm1.0`, marcada como "other" en Hugging Face): es una licencia propia de Liquid AI y no una licencia open source estandar. Antes de un uso comercial es imprescindible revisar el archivo LICENSE del repositorio, ya que las condiciones de uso comercial, redistribucion y atribucion no se detallan en la informacion disponible.
 - Huella de memoria adicional: aunque minima (aproximadamente 0,56 GB), no es nula, y en dispositivos con memoria unificada muy ajustada puede ser relevante.
 - Cifras de aceleracion medidas a batch size 1 y temperatura 0; el rendimiento con lotes grandes o temperaturas altas no se documenta en el material proporcionado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark
 - Version GGUF del borrador: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark-GGUF
 - Modelo objetivo: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Modelo objetivo en GGUF: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF
@@ -136,4 +136,4 @@ Liquid AI no indica en la informacion disponible comparaciones directas contra o
 - Playground de Liquid AI: https://playground.liquid.ai/
 - Paper MMSpec (metodologia de evaluacion): https://arxiv.org/abs/2603.14989
 - Comunidad en Discord: https://discord.com/invite/liquid-ai
-- Organizacion en HuggingFace: https://huggingface.co/LiquidAI
+- Organizacion en Hugging Face: https://huggingface.co/LiquidAI

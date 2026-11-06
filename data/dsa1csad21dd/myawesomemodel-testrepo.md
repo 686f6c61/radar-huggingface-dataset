@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario dsa1csad21dd bajo licencia MIT. Por los metadatos disponibles se trata de un repositorio de prueba: no acumula descargas ni "likes", su tamano es de 0,0 GB y no contiene ficheros de pesos. Los tags declarados (transformers, pytorch, bert, feature-extraction, endpoints_compatible, region:us) describen un encoder tipo BERT orientado a extraccion de caracteristicas, mientras que la model card incluida describe un modelo conversacional de razonamiento con modo "thinking", function calling y busqueda web. Esa contradiccion entre metadatos y documentacion impide identificar que modelo es realmente.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario dsa1csad21dd bajo licencia MIT. Por los metadatos disponibles se trata de un repositorio de prueba: no acumula descargas ni "likes", su tamano es de 0,0 GB y no contiene ficheros de pesos. Los tags declarados (transformers, pytorch, bert, feature-extraction, endpoints_compatible, region:us) describen un encoder tipo BERT orientado a extraccion de caracteristicas, mientras que la model card incluida describe un modelo conversacional de razonamiento con modo "thinking", function calling y busqueda web. Esa contradiccion entre metadatos y documentacion impide identificar que modelo es realmente.
 
 La model card, ademas, es claramente una plantilla generica: los benchmarks comparan contra columnas anonimizadas ("Model1", "Model2", "Model1-v2") y menciona de forma vaga una "version anterior", un "repositorio de codigo" y un "sitio web oficial" que no se enlazan ni se identifican. No se especifican parametros, arquitectura concreta, longitud de contexto, tokenizador ni composicion del dataset de entrenamiento.
 
@@ -113,6 +113,6 @@ No disponible. La propia model card del autor utiliza columnas anonimizadas ("Mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dsa1csad21dd/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/dsa1csad21dd/MyAwesomeModel-TestRepo
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las busquedas devolvieron unicamente paginas genericas de Google (Drive, Images, Search Console, Advanced Search y Sheets), sin relacion con el modelo.
 - Paper, blog tecnico, repositorio de codigo, demo y sitio web oficial: no disponibles. La model card los menciona de forma generica pero no incluye ninguna URL.

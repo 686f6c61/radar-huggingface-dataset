@@ -72,7 +72,7 @@ La comparativa se basa en datos disponibles; no se conocen benchmarks que permit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NexVeridian/Equinox-31B-4bit
+- Modelo en Hugging Face: https://huggingface.co/NexVeridian/Equinox-31B-4bit
 - Modelo base: https://huggingface.co/LatitudeGames/Equinox-31B
 - Modelo similar (gemma-4-31B-it-4bit): https://huggingface.co/NexVeridian/gemma-4-31B-it-4bit
 - Informacion sobre Gemma 4 en Ollama: https://ollama.com/library/gemma4:31b

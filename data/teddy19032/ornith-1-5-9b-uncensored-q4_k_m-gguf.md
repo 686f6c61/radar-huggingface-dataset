@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-9B-uncensored-Q4_K_M-GGUF es una conversión al formato GGUF (cuantización Q4_K_M) del modelo base `junafinity/Ornith-1.5-9B-uncensored`, realizada por el usuario teddy19032 mediante la herramienta GGUF-my-repo de llama.cpp. El modelo original, según los tags de HuggingFace, está basado en la arquitectura Qwen3.5, es multimodal (procesa imagen y texto) y ha sido sometido a técnicas de "abliteration" y "zerofuse" para eliminar los mecanismos de rechazo y censura, resultando en una versión "uncensored". Con aproximadamente 8,95 mil millones de parámetros, este modelo está pensado para ejecutarse en entornos locales mediante llama.cpp, Ollama u otros motores compatibles con GGUF.
+Ornith-1.5-9B-uncensored-Q4_K_M-GGUF es una conversión al formato GGUF (cuantización Q4_K_M) del modelo base `junafinity/Ornith-1.5-9B-uncensored`, realizada por el usuario teddy19032 mediante la herramienta GGUF-my-repo de llama.cpp. El modelo original, según los tags de Hugging Face, está basado en la arquitectura Qwen3.5, es multimodal (procesa imagen y texto) y ha sido sometido a técnicas de "abliteration" y "zerofuse" para eliminar los mecanismos de rechazo y censura, resultando en una versión "uncensored". Con aproximadamente 8,95 mil millones de parámetros, este modelo está pensado para ejecutarse en entornos locales mediante llama.cpp, Ollama u otros motores compatibles con GGUF.
 
 La relevancia de esta conversión radica en que permite desplegar un modelo multimodal de gran tamaño en hardware de consumo, gracias a la cuantización Q4_K_M que reduce el peso a unos 5,6 GB. Al ser una versión sin censura, está orientada a casos de uso donde se requiere libertad creativa o exploración de contenido sin restricciones, aunque esto conlleva riesgos éticos y legales. La licencia Apache 2.0 facilita su uso comercial y modificación.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/teddy19032/Ornith-1.5-9B-uncensored-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/teddy19032/Ornith-1.5-9B-uncensored-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored
 - Herramienta GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

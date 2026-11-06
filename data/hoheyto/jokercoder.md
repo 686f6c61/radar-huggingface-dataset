@@ -80,7 +80,7 @@ El autor probó Qwen2.5-Coder-7B-Instruct como base inicial y lo descartó por p
 
 ## Enlaces
 
-- [HuggingFace - hoheyto/JokerCoder](https://huggingface.co/hoheyto/JokerCoder)
+- [Hugging Face - hoheyto/JokerCoder](https://huggingface.co/hoheyto/JokerCoder)
 - [Demo en Hugging Face Spaces](https://hoheyto-jokercoder-demo.hf.space/docs)
-- [Perfil del autor en HuggingFace](https://huggingface.co/hoheyto/models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/hoheyto/models)
 - [EXPERIMENTS.md (registro de experimentos mencionado en la model card)](https://huggingface.co/hoheyto/JokerCoder/blob/main/EXPERIMENTS.md)

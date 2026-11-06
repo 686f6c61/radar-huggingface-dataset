@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Aether es un ajuste fino por LoRA del modelo Qwen/Qwen3.8-27B, publicado por el usuario emkey1 en HuggingFace. Su propósito no es generalista: enseña al modelo a escribir programas en **Aether**, un lenguaje de programación pequeño, de tipado estático, con efectos explícitos (`fx { }`), contratos (`@pre` / `@post`), registros con métodos, arrays y arrays 2D, y una API integrada de JSON/TOON. Al ser un lenguaje nuevo, los modelos generales no lo conocen y dependen de incluir una guía de unos 14 000 tokens en cada prompt; este adaptador internaliza ese conocimiento en los pesos.
+Qwen3.8-27B-Aether es un ajuste fino por LoRA del modelo Qwen/Qwen3.8-27B, publicado por el usuario emkey1 en Hugging Face. Su propósito no es generalista: enseña al modelo a escribir programas en **Aether**, un lenguaje de programación pequeño, de tipado estático, con efectos explícitos (`fx { }`), contratos (`@pre` / `@post`), registros con métodos, arrays y arrays 2D, y una API integrada de JSON/TOON. Al ser un lenguaje nuevo, los modelos generales no lo conocen y dependen de incluir una guía de unos 14 000 tokens en cada prompt; este adaptador internaliza ese conocimiento en los pesos.
 
 El repositorio publicado contiene el modelo **fusionado** en bf16 (el adaptador plegado sobre los pesos base), con 27 781 427 952 parámetros y 55,6 GB de pesos. El adaptador LoRA por separado está disponible en un repositorio hermano. La relevancia práctica es doble: por un lado demuestra que una especialización por LoRA de rango 32 puede igualar el rendimiento de un modelo base con una guía larga en el prompt, eliminando 14 000 tokens de coste por petición; por otro, documenta de forma honesta el olvido catastrófico que provoca esa especialización sobre Python y otros lenguajes.
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Requisitos de hardware
 
-- **Pesos en bf16**: 55,6 GB de repositorio según HuggingFace, coherente con ~27,78 B de parámetros a 2 bytes por peso. Requiere GPU con al menos ~64 GB de VRAM libre (A100 80 GB, H100 80 GB) para servir el modelo fusionado sin cuantizar.
+- **Pesos en bf16**: 55,6 GB de repositorio según Hugging Face, coherente con ~27,78 B de parámetros a 2 bytes por peso. Requiere GPU con al menos ~64 GB de VRAM libre (A100 80 GB, H100 80 GB) para servir el modelo fusionado sin cuantizar.
 - **Cuantización 4 bits (estimación, no documentada por el autor)**: los pesos bajarían a unos 14 GB, más caché KV; en la práctica encajaría en una RTX 4090 de 24 GB con contexto moderado, aunque no hay cifras oficiales de calidad tras cuantizar este ajuste concreto.
 - **Carga del adaptador**: alternativa más económica, mantiene el base en 4 bits (como en el entrenamiento) y carga el LoRA de rango 32; el autor indica que vLLM con `--enable-lora` debería poder servir base y adaptador en paralelo, aunque no lo ha probado.
 - **Opciones de despliegue documentadas**: vLLM (`vllm serve emkey1/Qwen3.8-27B-Aether --max-model-len 32768`), transformers, y Ollama con el modelo fusionado a través del endpoint compatible con OpenAI `/v1` (requiere `"reasoning_effort": "none"` y fijar el contexto en el Modelfile con `PARAMETER num_ctx 32768`). No se documentan llama.cpp ni TGI.
@@ -94,9 +94,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Rendimiento en Aether (sin guía) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Aether (fusionado) | 27,78 B | no disponible (ejemplos a 32 768) | 68/73 principal, 39/53 held-out | apache-2.0 | HuggingFace, requiere `enable_thinking: false` |
-| Qwen3.8-27B-Aether-LoRA (adaptador) | 27,78 B + adaptador r=32 | el del modelo base | mismos resultados | apache-2.0 | HuggingFace, se carga sobre el base |
-| Qwen/Qwen3.8-27B (base sin ajuste) | 27,78 B | el del modelo base | 0/73 principal, 0/53 held-out sin guía; 67/71 y 47/51 con guía de 14K tokens | según el modelo base (no disponible en la información) | HuggingFace |
+| Qwen3.8-27B-Aether (fusionado) | 27,78 B | no disponible (ejemplos a 32 768) | 68/73 principal, 39/53 held-out | apache-2.0 | Hugging Face, requiere `enable_thinking: false` |
+| Qwen3.8-27B-Aether-LoRA (adaptador) | 27,78 B + adaptador r=32 | el del modelo base | mismos resultados | apache-2.0 | Hugging Face, se carga sobre el base |
+| Qwen/Qwen3.8-27B (base sin ajuste) | 27,78 B | el del modelo base | 0/73 principal, 0/53 held-out sin guía; 67/71 y 47/51 con guía de 14K tokens | según el modelo base (no disponible en la información) | Hugging Face |
 | Otros modelos de ~27 B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante no es contra otro modelo de tamaño similar, sino contra el mismo modelo base en dos configuraciones: sin guía (fracaso casi total en Aether) y con guía de 14 000 tokens en el prompt (rendimiento ligeramente superior en held-out, pero con un coste de prompt muy alto).
@@ -116,7 +116,7 @@ La comparación relevante no es contra otro modelo de tamaño similar, sino cont
 
 ## Enlaces
 
-- Modelo fusionado en HuggingFace: https://huggingface.co/emkey1/Qwen3.8-27B-Aether
+- Modelo fusionado en Hugging Face: https://huggingface.co/emkey1/Qwen3.8-27B-Aether
 - Adaptador LoRA: https://huggingface.co/emkey1/Qwen3.8-27B-Aether-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del lenguaje Aether: https://github.com/emkey1/aether

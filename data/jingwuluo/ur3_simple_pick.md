@@ -68,10 +68,10 @@ La model card menciona una comprobacion en lazo abierto ("open-loop check") en l
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LoRA UR3 simple pick (este) | VLM Gemma 2B + experto 300M (total no disponible) | no disponible | Pick-and-place UR3 doble brazo (1 tarea) | apache-2.0 | HuggingFace, 0 descargas |
-| π0.5 base (`pi05_base`, openpi) | mismo troncal (Gemma 2B + 300M) | no disponible | VLA generalista | Apache 2.0 (openpi) | openpi / HuggingFace |
-| π0 base (openpi) | no disponible | no disponible | VLA generalista | Apache 2.0 (openpi) | openpi / HuggingFace |
-| OpenVLA-7B | 7B | no disponible | VLA generalista | Licencia propia (uso comercial con condiciones) | HuggingFace |
+| π0.5 LoRA UR3 simple pick (este) | VLM Gemma 2B + experto 300M (total no disponible) | no disponible | Pick-and-place UR3 doble brazo (1 tarea) | apache-2.0 | Hugging Face, 0 descargas |
+| π0.5 base (`pi05_base`, openpi) | mismo troncal (Gemma 2B + 300M) | no disponible | VLA generalista | Apache 2.0 (openpi) | openpi / Hugging Face |
+| π0 base (openpi) | no disponible | no disponible | VLA generalista | Apache 2.0 (openpi) | openpi / Hugging Face |
+| OpenVLA-7B | 7B | no disponible | VLA generalista | Licencia propia (uso comercial con condiciones) | Hugging Face |
 
 La comparacion cuantitativa de rendimiento no esta disponible. La diferencia principal de este checkpoint frente a los base es que esta especializado en una unica tarea mediante LoRA, mientras que los generalistas no estan ajustados a un robot ni a una tarea concretos.
 
@@ -90,6 +90,6 @@ La comparacion cuantitativa de rendimiento no esta disponible. La diferencia pri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JingwuLuo/ur3_simple_pick
+- Modelo en Hugging Face: https://huggingface.co/JingwuLuo/ur3_simple_pick
 - openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Dataset de entrenamiento (LeRobot): `LGG100/ur3-test`

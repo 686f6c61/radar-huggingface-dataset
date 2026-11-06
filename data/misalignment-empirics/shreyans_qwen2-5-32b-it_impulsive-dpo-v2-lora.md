@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA entrenado mediante DPO (Direct Prefe
 
 El autor es la organizacion Misalignment-Empirics y el identificador del repositorio incluye el nombre `shreyans_qwen2.5-32b-it_impulsive-dpo-v2-lora`, lo que sugiere un artefacto de investigacion orientado a inducir o estudiar comportamiento impulsivo mediante ajuste por preferencias. No hay articulo, demo ni documentacion tecnica asociada en la informacion disponible.
 
-La relevancia de la ficha es limitada como modelo de produccion: la model card es la plantilla por defecto de HuggingFace sin rellenar, no se declara licencia ni idiomas, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. Debe tratarse, por tanto, como un experimento de investigacion reproducible a partir del modelo base, no como un modelo listo para desplegar.
+La relevancia de la ficha es limitada como modelo de produccion: la model card es la plantilla por defecto de Hugging Face sin rellenar, no se declara licencia ni idiomas, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. Debe tratarse, por tanto, como un experimento de investigacion reproducible a partir del modelo base, no como un modelo listo para desplegar.
 
 ## Especificaciones técnicas
 
@@ -84,7 +84,7 @@ La comparación relevante para este repositorio es contra su propio modelo base:
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace y no está rellenada: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+- La model card es la plantilla por defecto de Hugging Face y no está rellenada: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
 - No se declara licencia para el adaptador. La licencia del modelo base (Apache 2.0 en Qwen2.5-32B-Instruct) no cubre automáticamente los pesos derivados si el autor impone condiciones adicionales no publicadas; conviene contactar con el autor antes de cualquier uso comercial.
 - El nombre y la organización sugieren que el ajuste busca aumentar la impulsividad. Esto implica un riesgo alto de respuestas precipitadas, menor adherencia a instrucciones de seguridad y mayor probabilidad de acciones no verificadas. No es un modelo apto para producción en atención al cliente, asesoramiento, código crítico ni decisiones automatizadas.
 - Riesgo elevado de alucinación y de degradación de capacidades (olvido catastrófico, reward hacking sobre el objetivo de preferencia) inherente al ajuste DPO sobre modelos grandes con adaptadores de bajo rango; no hay evaluación que lo descarte.
@@ -97,7 +97,7 @@ La comparación relevante para este repositorio es contra su propio modelo base:
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-dpo-v2-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-32b-it_impulsive-dpo-v2-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Referencia de la metodología DPO citada en las etiquetas del repositorio: https://arxiv.org/abs/2305.18290
 - Referencia técnica sobre PEFT: https://arxiv.org/abs/2106.09685

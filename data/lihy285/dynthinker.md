@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DynThinker es un modelo publicado en HuggingFace por el usuario lihy285 bajo el identificador `lihy285/DynThinker`. La ficha disponible es prácticamente vacía: la model card únicamente declara la licencia MIT, y los metadatos de HuggingFace no incluyen pipeline declarado, idiomas soportados ni documentación técnica de ningún tipo. El repositorio ocupa 22,4 GB y contiene pesos en formato safetensors.
+DynThinker es un modelo publicado en Hugging Face por el usuario lihy285 bajo el identificador `lihy285/DynThinker`. La ficha disponible es prácticamente vacía: la model card únicamente declara la licencia MIT, y los metadatos de Hugging Face no incluyen pipeline declarado, idiomas soportados ni documentación técnica de ningún tipo. El repositorio ocupa 22,4 GB y contiene pesos en formato safetensors.
 
 No hay información publicada sobre el número de parámetros, la arquitectura, la longitud de contexto, el dataset de entrenamiento ni el proceso de alineación. El nombre del modelo sugiere un enfoque orientado a razonamiento o "pensamiento" dinámico, pero esto es una inferencia a partir del nombre y no está confirmado por ninguna fuente disponible.
 
@@ -52,7 +52,7 @@ Los siguientes escenarios son hipotéticos y dependen de que se confirmen las ca
 - Generación de texto en aplicaciones internas no críticas: con licencia MIT y pesos abiertos, podría integrarse en herramientas internas donde los errores sean tolerables y revisables por humanos.
 - Base para experimentos de cuantización: el repositorio en safetensors puede servir como punto de partida para generar versiones GGUF o GPTQ propias, si el equipo necesita desplegarlo en hardware limitado.
 - Comparación de pipelines de despliegue: podría utilizarse como caso de prueba para validar infraestructura de serving (vLLM, TGI) antes de comprometerse con un modelo mayor.
-- Docencia y formación: como ejemplo de repositorio con documentación insuficiente, es útil para ilustrar buenas y malas prácticas en la publicación de modelos en HuggingFace.
+- Docencia y formación: como ejemplo de repositorio con documentación insuficiente, es útil para ilustrar buenas y malas prácticas en la publicación de modelos en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -88,6 +88,6 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lihy285/DynThinker
+- Modelo en Hugging Face: https://huggingface.co/lihy285/DynThinker
 
 No se han encontrado papers, blogs tecnicos, repositorios auxiliares ni demos asociados al modelo en la informacion disponible.

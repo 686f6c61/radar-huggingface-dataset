@@ -84,7 +84,7 @@ La comparación se limita a variantes del mismo modelo base porque la informaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Audante/gemma-4-12B-it-qat-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/Audante/gemma-4-12B-it-qat-MLX-4bit
 - Fuente de la conversión MLX: https://huggingface.co/mlx-community/gemma-4-12B-it-qat-4bit
 - Modelo base oficial: https://huggingface.co/google/gemma-4-12B-it
 - Librería MLX-LM: https://github.com/ml-explore/mlx-lm

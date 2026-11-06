@@ -18,7 +18,7 @@ La ficha se centra en lo que la informacion disponible permite afirmar. Muchos d
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | cuantizacion Quark para NPU (niveles exactos no disponibles) |
 | Idiomas soportados | ingles (segun metadatos); el modelo base podria soportar mas, no confirmado |
-| Licencia | other (licencia personalizada; acceso restringido en HuggingFace) |
+| Licencia | other (licencia personalizada; acceso restringido en Hugging Face) |
 | Formato de pesos | ONNX (optimizado para Ryzen AI NPU) |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hy-MT2-1.8B_rai_1.9.0_npu | 1,8B | no disponible | ONNX (NPU) | other (restringida) | gated en HuggingFace |
+| Hy-MT2-1.8B_rai_1.9.0_npu | 1,8B | no disponible | ONNX (NPU) | other (restringida) | gated en Hugging Face |
 | Hy-MT2-1.8B (modelo base) | 1,8B | no disponible | no disponible | no disponible | no disponible en esta busqueda |
 | Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | safetensors, GGUF | Apache 2.0 | publica |
 | Llama 3.2-1B-Instruct | 1,2B | 128.000 tokens | safetensors, GGUF | Llama 3.2 Community License | publica |
@@ -73,7 +73,7 @@ La comparativa con Qwen2.5-1.5B-Instruct y Llama 3.2-1B-Instruct se ofrece como 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - Licencia "other": es imprescindible revisar los terminos del modelo base y del paquete de AMD antes de cualquier uso comercial.
 - Idiomas: los metadatos solo declaran ingles; no hay confirmacion de soporte multilingue pese al enfoque de traduccion.
 - Contexto: se desconoce la longitud de ventana, lo que impide planificar cargas con documentos largos.
@@ -84,5 +84,5 @@ La comparativa con Qwen2.5-1.5B-Instruct y Llama 3.2-1B-Instruct se ofrece como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/Hy-MT2-1.8B_rai_1.9.0_npu
+- Modelo en Hugging Face: https://huggingface.co/amd/Hy-MT2-1.8B_rai_1.9.0_npu
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales sobre este artefacto concreto.

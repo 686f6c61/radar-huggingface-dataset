@@ -72,9 +72,9 @@ El autor indica que una cifra anterior de 0,29 frente a 0,24 es previa a las cor
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lexeuropa-qwen3b-lora-v2 | 3.000 M (base) + LoRA | 32.768 tokens | Citación verificable y abstención sobre derecho de la UE | Apache 2.0 | HuggingFace (adaptador y versión fusionada) |
-| Qwen2.5-3B-Instruct | 3.000 M | 32.768 tokens | Asistente generalista | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7.000 M | 32.768 tokens | Asistente generalista, usado como juez en la evaluación | Apache 2.0 | HuggingFace |
+| lexeuropa-qwen3b-lora-v2 | 3.000 M (base) + LoRA | 32.768 tokens | Citación verificable y abstención sobre derecho de la UE | Apache 2.0 | Hugging Face (adaptador y versión fusionada) |
+| Qwen2.5-3B-Instruct | 3.000 M | 32.768 tokens | Asistente generalista | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7.000 M | 32.768 tokens | Asistente generalista, usado como juez en la evaluación | Apache 2.0 | Hugging Face |
 
 La comparación relevante es frente al modelo base sin ajustar: el adaptador mejora la disciplina de citación en el conjunto de evaluación del proyecto (0,93-0,95 frente a 0,82-0,88 de precisión y recall), a costa de un dominio muy restringido y de un corpus de tres documentos en inglés. No se dispone de comparación con otros adaptadores jurídicos.
 
@@ -92,7 +92,7 @@ La comparación relevante es frente al modelo base sin ajustar: el adaptador mej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iPwnds/lexeuropa-qwen3b-lora-v2
+- Modelo en Hugging Face: https://huggingface.co/iPwnds/lexeuropa-qwen3b-lora-v2
 - Repositorio del proyecto LexEuropa: https://github.com/lumenworksco/-LexEuropa
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Versión fusionada `lexeuropa-qwen3b-merged`: referencia mencionada en la model card, sin URL directa disponible en la información proporcionada.

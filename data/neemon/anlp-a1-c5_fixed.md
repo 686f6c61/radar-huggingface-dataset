@@ -77,7 +77,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (tr
 
 ## Enlaces
 
-- [Modelo en HuggingFace: neemon/anlp-a1-c5_fixed](https://huggingface.co/neemon/anlp-a1-c5_fixed)
+- [Modelo en Hugging Face: neemon/anlp-a1-c5_fixed](https://huggingface.co/neemon/anlp-a1-c5_fixed)
 - [Repositorio del modelo base C5: neemon/anlp-a1-c5](https://huggingface.co/neemon/anlp-a1-c5)
 - [Repositorio de otro participante: ZappY-AI/anlp-a1](https://huggingface.co/ZappY-AI/anlp-a1)
 - [Repositorio de checkpoints: Yajat31/anlp-a1-checkpoints](https://huggingface.co/Yajat31/anlp-a1-checkpoints)

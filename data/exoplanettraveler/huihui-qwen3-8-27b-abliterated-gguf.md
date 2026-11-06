@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ExoplaneTTraveler/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ExoplaneTTraveler/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Técnica de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers
 - Fork de llama.cpp para kernels ternarios: https://github.com/PrismML-Eng/llama.cpp

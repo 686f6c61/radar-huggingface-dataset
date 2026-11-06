@@ -86,11 +86,11 @@ No hay datos de rendimiento de este checkpoint ni de sus alternativas en la info
 - Discrepancia de contexto: la config de entrenamiento declara `seq_len = 300.000` frente a los 65.536 tokens de `max_model_len` en inferencia; no hay explicacion del autor.
 - Idiomas soportados desconocidos: no se puede garantizar un comportamiento correcto fuera del ingles o del chino del modelo base.
 - Especializacion estrecha: el ajuste sobre un dataset de filtrado de solvencia de 200 elementos autogenerados puede provocar sobreajuste al dominio y degradar capacidades generales.
-- Sin pipeline declarado en HuggingFace: no hay una tarea asignada oficialmente, lo que complica su uso directo con las utilidades estandar.
+- Sin pipeline declarado en Hugging Face: no hay una tarea asignada oficialmente, lo que complica su uso directo con las utilidades estandar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-solvability-200-selfsource-4k-epoch4
+- Modelo en Hugging Face: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-solvability-200-selfsource-4k-epoch4
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/Stage-org/qwen35-4b-filter-solvability-200-selfsource-4k
 - Modelo base citado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las consultas devolvieron unicamente portales de ofertas de practicas (stage.fr, Indeed, Welcome to the Jungle, L'Etudiant), sin relacion con el modelo.

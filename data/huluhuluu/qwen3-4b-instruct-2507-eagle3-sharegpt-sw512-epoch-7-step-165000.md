@@ -63,9 +63,9 @@ No se dispone de comparativas directas con otros modelos de borrador para Qwen3-
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507 (objetivo) | 4B | 256K | Autoregresivo | Apache-2.0 | HuggingFace |
-| Este draft model (EAGLE3) | 202M | 512 (ventana) | Especulativo | Apache-2.0 | HuggingFace |
-| Draft models EAGLE-1/2 para Qwen2 (referencia) | ~200-300M | variable | Especulativo | Apache-2.0 | HuggingFace |
+| Qwen3-4B-Instruct-2507 (objetivo) | 4B | 256K | Autoregresivo | Apache-2.0 | Hugging Face |
+| Este draft model (EAGLE3) | 202M | 512 (ventana) | Especulativo | Apache-2.0 | Hugging Face |
+| Draft models EAGLE-1/2 para Qwen2 (referencia) | ~200-300M | variable | Especulativo | Apache-2.0 | Hugging Face |
 
 No hay datos de rendimiento comparativo publicados. La elección entre este modelo y otros draft models dependerá de la compatibilidad con el framework de inferencia y de pruebas empíricas en el entorno de despliegue.
 
@@ -81,7 +81,7 @@ No hay datos de rendimiento comparativo publicados. La elección entre este mode
 
 ## Enlaces
 
-- [Modelo en HuggingFace (checkpoint epoch 7 step 165000)](https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-7-step-165000)
+- [Modelo en Hugging Face (checkpoint epoch 7 step 165000)](https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-7-step-165000)
 - [Checkpoint epoch 7 step 185000 (misma serie)](https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-185000)
 - [Checkpoint epoch 7 step 165000 (sin sufijo SW512)](https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-165000)
 - [Modelo base: Qwen/Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)

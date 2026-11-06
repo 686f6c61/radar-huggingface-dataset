@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Clonación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MOSS-TTS-Local-Transformer-v1.5 | 4,55 B | no disponible | 31 | sí | Apache-2.0 | HuggingFace (Jinstudio y OpenMOSS-Team) |
-| MOSS-TTS-Local-Transformer-v1.0 | no disponible | no disponible | 20 | sí | no disponible en la información | HuggingFace (OpenMOSS-Team) |
+| MOSS-TTS-Local-Transformer-v1.5 | 4,55 B | no disponible | 31 | sí | Apache-2.0 | Hugging Face (Jinstudio y OpenMOSS-Team) |
+| MOSS-TTS-Local-Transformer-v1.0 | no disponible | no disponible | 20 | sí | no disponible en la información | Hugging Face (OpenMOSS-Team) |
 | XTTS-v2 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 | CosyVoice 2 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,8 +102,8 @@ No se dispone en la información proporcionada de parámetros, contexto, benchma
 
 ## Enlaces
 
-- [Modelo en HuggingFace (Jinstudio)](https://huggingface.co/Jinstudio/MOSS-TTS-Local-Transformer-v1.5)
-- [Modelo oficial en HuggingFace (OpenMOSS-Team)](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5)
+- [Modelo en Hugging Face (Jinstudio)](https://huggingface.co/Jinstudio/MOSS-TTS-Local-Transformer-v1.5)
+- [Modelo oficial en Hugging Face (OpenMOSS-Team)](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5)
 - [Repositorio GitHub de MOSS-TTS](https://github.com/OpenMOSS/MOSS-TTS/tree/main)
 - [Colección en ModelScope](https://modelscope.cn/collections/OpenMOSS-Team/MOSS-TTS)
 - [Blog de MOSS](https://mosi.cn/#models)

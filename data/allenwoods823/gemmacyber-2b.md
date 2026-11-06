@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GemmaCyber-2B es un ajuste fino (fine-tune) del modelo Gemma 2B de Google orientado especificamente a tareas de ciberseguridad. Lo desarrolla el usuario de HuggingFace allenwoods823 y se distribuye como un adaptador LoRA/PEFT, no como un modelo completo fusionado, lo que reduce drasticamente su tamano de almacenamiento (el repositorio ocupa aproximadamente 0,1 GB). El modelo base sobre el que se aplica es google/gemma-2b, un transformer causal de 2.000 millones de parametros con una ventana de contexto de 8.192 tokens.
+GemmaCyber-2B es un ajuste fino (fine-tune) del modelo Gemma 2B de Google orientado especificamente a tareas de ciberseguridad. Lo desarrolla el usuario de Hugging Face allenwoods823 y se distribuye como un adaptador LoRA/PEFT, no como un modelo completo fusionado, lo que reduce drasticamente su tamano de almacenamiento (el repositorio ocupa aproximadamente 0,1 GB). El modelo base sobre el que se aplica es google/gemma-2b, un transformer causal de 2.000 millones de parametros con una ventana de contexto de 8.192 tokens.
 
 El objetivo declarado por el autor es ofrecer un modelo compacto y accesible para aprendizaje, investigacion y flujos de trabajo de seguridad defensiva. Entre las areas de aplicacion mencionadas estan la educacion en ciberseguridad, la explicacion de conceptos de seguridad, el analisis de logs, la respuesta a incidentes y las discusiones sobre codigo seguro. Es relevante ahora porque permite desplegar un asistente especializado en seguridad sobre hardware modesto, reutilizando el tokenizador y la arquitectura de Gemma 2B sin necesidad de entrenar desde cero.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GemmaCyber-2B | 2B (base) + adaptador LoRA | No disponible (base Gemma 2B: 8.192 tokens) | Ciberseguridad (LoRA sobre Gemma 2B) | No disponible | HuggingFace, adaptador PEFT |
-| google/gemma-2b | 2B | 8.192 tokens | Modelo generalista | Terminos de uso de Gemma | HuggingFace |
-| Gemma-2-2B (version posterior de Google) | 2B | 8.192 tokens | Modelo generalista | Terminos de uso de Gemma | HuggingFace |
+| GemmaCyber-2B | 2B (base) + adaptador LoRA | No disponible (base Gemma 2B: 8.192 tokens) | Ciberseguridad (LoRA sobre Gemma 2B) | No disponible | Hugging Face, adaptador PEFT |
+| google/gemma-2b | 2B | 8.192 tokens | Modelo generalista | Terminos de uso de Gemma | Hugging Face |
+| Gemma-2-2B (version posterior de Google) | 2B | 8.192 tokens | Modelo generalista | Terminos de uso de Gemma | Hugging Face |
 
 No se dispone de datos de rendimiento publicados que permitan una comparacion cuantitativa con alternativas especializadas en ciberseguridad de tamano similar. La comparativa se limita por tanto a caracteristicas estructurales.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento publicados que permitan una comparacion cu
 
 - Al ser un ajuste fino de un modelo de 2.000 millones de parametros, su conocimiento factual y su capacidad de razonamiento son limitados en comparacion con modelos de mayor tamano; existe un riesgo alto de alucinacion, especialmente en detalles tecnicos precisos (versiones, CVE, comandos).
 - No esta destinado a uso ofensivo: el autor lo orienta explicitamente a seguridad defensiva, educacion e investigacion. Un uso indebido podria generar contenido danino, aunque la model card no incluye guardarrailes documentados.
-- Solo soporta ingles segun la informacion de HuggingFace; no se ha documentado rendimiento en castellano ni en otros idiomas.
+- Solo soporta ingles segun la informacion de Hugging Face; no se ha documentado rendimiento en castellano ni en otros idiomas.
 - La licencia no esta indicada en la informacion disponible, lo que supone una incertidumbre importante para uso comercial. Ademas, al derivar de Gemma, se heredan los terminos de uso de Gemma de Google, que deben revisarse antes de cualquier despliegue productivo.
 - No hay datos publicados sobre el dataset de entrenamiento, por lo que no se pueden evaluar sesgos especificos ni la calidad de la supervision.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado en octubre de 2026; no hay evidencia de validacion por parte de la comunidad ni de mantenimiento continuado.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento publicados que permitan una comparacion cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allenwoods823/GemmaCyber-2B
+- Modelo en Hugging Face: https://huggingface.co/allenwoods823/GemmaCyber-2B
 - Modelo base: https://huggingface.co/google/gemma-2b
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Documentacion de PEFT: https://huggingface.co/docs/peft

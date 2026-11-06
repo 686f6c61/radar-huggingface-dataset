@@ -32,7 +32,7 @@ Evoke-Turbo es el resultado de una cadena de destilacion sobre Evoke, cuyas etap
 
 El entrenamiento esta orientado explicitamente a la controlabilidad: seguimiento del movimiento de camara y adherencia a instrucciones sobre escena y sujeto, sin sacrificar calidad de video ni consistencia temporal. La informacion disponible no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO; tampoco especifica innovaciones de atencion (lineal, especulativa o similar). El paper asociado es "Alaya-EVOKE: From Linear-Scaling Supervision to Endless World" (arXiv:2608.13546), de Yin, Wang, Zhan, Li, Zhang y Zhao.
 
-Un detalle operativo relevante: la inferencia requiere un backend de profundidad externo (ViGeo, `pkqbajng/ViGeo`), descargado aparte y no incluido en este repositorio. El repositorio de HuggingFace es plano, de modo que los ficheros deben colocarse manualmente en `models/evoke-turbo/transformer/` para respetar la convencion `subfolder="transformer"` del cargador de Evoke.
+Un detalle operativo relevante: la inferencia requiere un backend de profundidad externo (ViGeo, `pkqbajng/ViGeo`), descargado aparte y no incluido en este repositorio. El repositorio de Hugging Face es plano, de modo que los ficheros deben colocarse manualmente en `models/evoke-turbo/transformer/` para respetar la convencion `subfolder="transformer"` del cargador de Evoke.
 
 ## Capacidades
 
@@ -82,8 +82,8 @@ Advertencia metodologica incluida por el propio autor: las cifras de Evoke-Turbo
 
 | Modelo | Parametros | Contexto / salida | Rendimiento WBench Avg | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Evoke-Turbo | 14,31B (FP32) | 3 pasos, sin CFG, 384 x 640 a 24 fps | 82,0003 | Apache-2.0 (repositorio) | HuggingFace, pesos solo del transformer |
-| Evoke | No disponible en la informacion proporcionada | Mismo flujo de inferencia, multi-paso | 80,8210 | No disponible en la informacion proporcionada | HuggingFace, coleccion completa de checkpoints |
+| Evoke-Turbo | 14,31B (FP32) | 3 pasos, sin CFG, 384 x 640 a 24 fps | 82,0003 | Apache-2.0 (repositorio) | Hugging Face, pesos solo del transformer |
+| Evoke | No disponible en la informacion proporcionada | Mismo flujo de inferencia, multi-paso | 80,8210 | No disponible en la informacion proporcionada | Hugging Face, coleccion completa de checkpoints |
 | Otros modelos de mundo o de generacion de video | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye datos de otros modelos de generacion de video comparables (por ejemplo, alternativas de la misma categoria o tamano), por lo que la comparativa se limita al modelo base Evoke. Cabe senalar que Evoke-Turbo mejora la media de WBench, la navegacion, la consistencia y la fisica, pero queda por debajo del original en calidad de video (81,8914 frente a 82,7900) y en "setting" (82,0518 frente a 83,7600).
@@ -104,8 +104,8 @@ La informacion proporcionada no incluye datos de otros modelos de generacion de 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/AlayaLab/Evoke-Turbo
-- HuggingFace (modelo base Evoke): https://huggingface.co/AlayaLab/Evoke
+- Hugging Face (este modelo): https://huggingface.co/AlayaLab/Evoke-Turbo
+- Hugging Face (modelo base Evoke): https://huggingface.co/AlayaLab/Evoke
 - GitHub: https://github.com/AlayaLab/Evoke
 - Pagina del proyecto: https://evoke-world.github.io/Evoke/
 - Paper: https://arxiv.org/abs/2608.13546

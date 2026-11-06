@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "RaidahAhmed/RaidahandNawe-sentiment-model",
+  "slug": "raidahahmed-raidahandnawe-sentiment-model",
+  "author": "RaidahAhmed",
+  "url": "https://huggingface.co/RaidahAhmed/RaidahandNawe-sentiment-model",
+  "created_at": "2026-10-26T06:33:45.000Z",
+  "updated_at": "2026-11-06T11:34:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "sentiment-analysis",
+    "text-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abaasa/Raidah_Nawe_sentiment_model · Hugging Face",
+      "url": "https://huggingface.co/Abaasa/Raidah_Nawe_sentiment_model",
+      "snippet": "Text Classification model with 67M parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Raidahandnawe Sentiment Model - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/raidahahmed/raidahandnawe-sentiment-model",
+      "snippet": "Registry entry for model Raidahandnawe Sentiment Model; source metadata pending."
+    }
+  ]
+}

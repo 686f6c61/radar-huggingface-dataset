@@ -70,8 +70,8 @@ Evaluacion sobre un conjunto gold de 3.079 recortes (44.947 caracteres de refere
 
 | Modelo | Parametros / tamano | Contexto / alcance | CER (micro) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rapidocr-spanish` (v18) | 7,7 MB ONNX | linea de texto, espanol | 0,1476 | Apache-2.0 | HuggingFace |
-| `PP-OCRv5_latin_mobile_rec` (stock) | tamano movil | linea de texto, latin multilingue | 0,1745 | Apache-2.0 (heredada) | PaddlePaddle / HuggingFace |
+| `rapidocr-spanish` (v18) | 7,7 MB ONNX | linea de texto, espanol | 0,1476 | Apache-2.0 | Hugging Face |
+| `PP-OCRv5_latin_mobile_rec` (stock) | tamano movil | linea de texto, latin multilingue | 0,1745 | Apache-2.0 (heredada) | PaddlePaddle / Hugging Face |
 | PPStructureV3 | no disponible | tablas (HTML) y formulas (LaTeX) | no disponible | no disponible | PaddleOCR |
 
 La comparativa directa solo es posible contra el checkpoint base, ya que el autor no publica comparaciones con otros reconocedores OCR especializados en espanol. PPStructureV3 no es un sustituto para este caso de uso (cubre tablas y formulas, no reconocimiento de linea), pero se menciona como complemento para documentos con estructura tabular.
@@ -89,7 +89,7 @@ La comparativa directa solo es posible contra el checkpoint base, ya que el auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfonsodlg/rapidocr-spanish
+- Modelo en Hugging Face: https://huggingface.co/alfonsodlg/rapidocr-spanish
 - Modelo base: https://huggingface.co/PaddlePaddle/PP-OCRv5_latin_mobile_rec
 - RapidOCR: https://github.com/RapidAI/RapidOCR
 - rapidocr-worker (consumidor en Rust): https://github.com/alfonsodg/rapidocr-worker

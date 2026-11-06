@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de salida 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nekodeus/flux2-klein-4b-ov
+- Hugging Face: https://huggingface.co/Nekodeus/flux2-klein-4b-ov
 - Modelo de origen citado en la model card: https://huggingface.co/tonera/FLUX.2-klein-4B-int8-diffusers
 - Documentacion de OpenVINO: no disponible en la informacion proporcionada
 - Paper tecnico de FLUX.2: no disponible en la informacion proporcionada

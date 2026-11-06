@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InternetovAI-GGUF es un modelo de lenguaje distribuido por el usuario internetov1488 en HuggingFace, publicado bajo licencia Apache 2.0 y empaquetado en formato GGUF. Se trata de un modelo conversacional de aproximadamente 4.022 millones de parametros (4B), segun el recuento de pesos safetensors asociado al repositorio. El repositorio ocupa 28,8 GB, lo que indica que contiene multiples ficheros de cuantizacion GGUF para distintos niveles de precision.
+InternetovAI-GGUF es un modelo de lenguaje distribuido por el usuario internetov1488 en Hugging Face, publicado bajo licencia Apache 2.0 y empaquetado en formato GGUF. Se trata de un modelo conversacional de aproximadamente 4.022 millones de parametros (4B), segun el recuento de pesos safetensors asociado al repositorio. El repositorio ocupa 28,8 GB, lo que indica que contiene multiples ficheros de cuantizacion GGUF para distintos niveles de precision.
 
 La model card publicada por el autor es practicamente inexistente: unicamente incluye la declaracion de licencia Apache 2.0, sin descripcion de arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluacion. El repositorio no registra descargas ni interacciones en el momento de la consulta (0 descargas, 0 likes) y fue creado y actualizado el mismo dia, el 21 de septiembre de 2026.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el volumen de tokens util
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo esta orientado a dialogos multi-turno, aunque no se especifica el formato de prompt ni la plantilla de chat.
-- Compatibilidad con endpoints de inferencia: el tag endpoints_compatible indica que puede desplegarse en infraestructuras de servido estandar (por ejemplo, HuggingFace Inference Endpoints o servidores compatibles con la API de transformers).
+- Compatibilidad con endpoints de inferencia: el tag endpoints_compatible indica que puede desplegarse en infraestructuras de servido estandar (por ejemplo, Hugging Face Inference Endpoints o servidores compatibles con la API de transformers).
 - Capacidades multilingues: no disponible; no se declara ningun conjunto de idiomas.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/internetov1488/InternetovAI-GGUF
+- Repositorio Hugging Face: https://huggingface.co/internetov1488/InternetovAI-GGUF
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

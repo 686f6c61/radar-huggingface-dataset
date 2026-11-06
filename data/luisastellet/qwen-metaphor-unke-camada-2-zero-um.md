@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-2-zero-um` es un checkpoint de generación de texto publicado en HuggingFace por el usuario luisastellet, etiquetado con el tag `qwen3` y compatible con la librería `transformers`. El repositorio contiene 596.049.920 parámetros en formato `safetensors` (9,5 GB de tamaño total) y declara los pipelines `text-generation` y `conversational`. Por el nombre y el recuento de parámetros, todo apunta a un ajuste fino derivado de la familia Qwen3 (el conteo coincide con el de Qwen3-0.6B), aunque el autor no lo confirma en ningún momento.
+`luisastellet/qwen-metaphor-unke-camada-2-zero-um` es un checkpoint de generación de texto publicado en Hugging Face por el usuario luisastellet, etiquetado con el tag `qwen3` y compatible con la librería `transformers`. El repositorio contiene 596.049.920 parámetros en formato `safetensors` (9,5 GB de tamaño total) y declara los pipelines `text-generation` y `conversational`. Por el nombre y el recuento de parámetros, todo apunta a un ajuste fino derivado de la familia Qwen3 (el conteo coincide con el de Qwen3-0.6B), aunque el autor no lo confirma en ningún momento.
 
-El problema que resuelve, la metodología de entrenamiento y el dataset utilizado no están documentados: la model card es la plantilla automática de HuggingFace, con todos los campos marcados como `[More Information Needed]`. No se declaran licencia, idiomas, contexto máximo ni resultados de evaluación.
+El problema que resuelve, la metodología de entrenamiento y el dataset utilizado no están documentados: la model card es la plantilla automática de Hugging Face, con todos los campos marcados como `[More Information Needed]`. No se declaran licencia, idiomas, contexto máximo ni resultados de evaluación.
 
 Su relevancia ahora es limitada y de naturaleza experimental: pese a tener 1045 descargas y ninguna interacción social (0 likes), carece de documentación técnica verificable, lo que lo sitúa como un artefacto de investigación reproducible pero no apto para producción sin una evaluación propia previa. El nombre del repositorio ("camada 2", "zero-um") sugiere una iteración experimental dentro de una serie de fine-tunes del autor.
 
@@ -29,12 +29,12 @@ Su relevancia ahora es limitada y de naturaleza experimental: pese a tener 1045 
 
 La información disponible solo permite afirmar que se trata de un transformer decoder-only de la familia Qwen3, según el tag declarado por el autor, con 596 millones de parámetros. No hay detalles sobre número de capas, dimensión oculta, número de cabezas de atención, uso de atención con RoPE, normalización QK ni vocabulario. Tampoco se especifica si emplea técnicas de atención lineal o híbrida propias de variantes recientes de la familia.
 
-Respecto al entrenamiento, la model card no aporta nada: no se indica el volumen de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF, DPO o alguna variante de razonamiento con modo *thinking*. El único metadato aprovechable es el tag `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono y que aparece en la plantilla automática de HuggingFace, no a un artículo del modelo. El tamaño de 9,5 GB para 596 M de parámetros es muy superior a una única copia en bf16 (≈1,2 GB), lo que sugiere la presencia de múltiples checkpoints, estados de optimizador u otros artefactos de entrenamiento en el repositorio; es una inferencia, no un dato documentado.
+Respecto al entrenamiento, la model card no aporta nada: no se indica el volumen de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF, DPO o alguna variante de razonamiento con modo *thinking*. El único metadato aprovechable es el tag `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono y que aparece en la plantilla automática de Hugging Face, no a un artículo del modelo. El tamaño de 9,5 GB para 596 M de parámetros es muy superior a una única copia en bf16 (≈1,2 GB), lo que sugiere la presencia de múltiples checkpoints, estados de optimizador u otros artefactos de entrenamiento en el repositorio; es una inferencia, no un dato documentado.
 
 ## Capacidades
 
 - Generación de texto autoregresiva y uso conversacional multi-turno, según los pipelines declarados.
-- Compatibilidad con `text-generation-inference` y con `endpoints_compatible`, lo que permite desplegarlo en infraestructura de inferencia estándar de HuggingFace.
+- Compatibilidad con `text-generation-inference` y con `endpoints_compatible`, lo que permite desplegarlo en infraestructura de inferencia estándar de Hugging Face.
 - Soporte de *tool calling* / *function calling*: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingües: no disponible; no se declara ningún idioma.
@@ -49,7 +49,7 @@ Respecto al entrenamiento, la model card no aporta nada: no se indica el volumen
 - Despliegue en *edge* o entornos *on-premise* sin GPU dedicada: el tamaño de pesos permite inferencia en CPU con `transformers` y, previa conversión a GGUF, en `llama.cpp`.
 - Base para *prompt engineering* y ajuste con adaptadores LoRA: el reducido número de parámetros abarata el reentrenamiento en una sola GPU.
 - Evaluación de robustez y sesgos en modelos pequeños: útil como sujeto de pruebas en pipelines de *red teaming* internos, dado su bajo coste de ejecución.
-- Servicio de generación en endpoints compatibles con la API de HuggingFace: el tag `endpoints_compatible` facilita el despliegue gestionado sin infraestructura propia.
+- Servicio de generación en endpoints compatibles con la API de Hugging Face: el tag `endpoints_compatible` facilita el despliegue gestionado sin infraestructura propia.
 
 ## Benchmarks y rendimiento
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cuantización a 8 bits: ≈0,6 GB de pesos; a 4 bits: ≈0,3-0,4 GB, aunque no hay ficheros cuantizados publicados y habría que generarlos.
 - GPU recomendadas: cualquier GPU con 8 GB o más (RTX 3060/4060, RTX 4090, L4, A10); en A100/H100 el modelo queda sobredimensionado para el hardware y el cuello de botella será el *batching*, no la memoria.
 - Cabe holgadamente en GPU de consumo: sí, en cualquier tarjeta con 6-8 GB de VRAM, e incluso en CPU con memoria RAM suficiente.
-- Opciones de despliegue: `transformers` (soporte nativo declarado), `text-generation-inference` (tag del repositorio), *endpoints* compatibles de HuggingFace. `vLLM` y `Ollama` requerirían verificar compatibilidad con la arquitectura concreta y, en el caso de Ollama, generar previamente un GGUF, que no está publicado.
+- Opciones de despliegue: `transformers` (soporte nativo declarado), `text-generation-inference` (tag del repositorio), *endpoints* compatibles de Hugging Face. `vLLM` y `Ollama` requerirían verificar compatibilidad con la arquitectura concreta y, en el caso de Ollama, generar previamente un GGUF, que no está publicado.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ La diferencia práctica más relevante no es de arquitectura sino de gobernanza:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-2-zero-um
+- Repositorio en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-2-zero-um
 - Paper citado en los tags (Lacoste et al., 2019, sobre impacto ambiental, no específico del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML mencionada en la model card: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (los resultados obtenidos corresponden a un medio de noticias sin relación). No hay paper, blog, demo ni repositorio de código asociados.

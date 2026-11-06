@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `samanthakim65/notes-robotics-vision-language-2024` no es un modelo de inteligencia artificial entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre vision-language aplicado a robotica. Su autora, identificada en HuggingFace como samanthakim65, lo publica bajo licencia CC-BY-4.0 y lo etiqueta explicitamente como `research-notes`. El unico artefacto descrito en la model card es un fichero de texto, `paper_notes.md`, acompanado de un `README.md`.
+El repositorio `samanthakim65/notes-robotics-vision-language-2024` no es un modelo de inteligencia artificial entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre vision-language aplicado a robotica. Su autora, identificada en Hugging Face como samanthakim65, lo publica bajo licencia CC-BY-4.0 y lo etiqueta explicitamente como `research-notes`. El unico artefacto descrito en la model card es un fichero de texto, `paper_notes.md`, acompanado de un `README.md`.
 
 La propia model card es explicita al respecto: el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado". Las secciones marcadas como planes o hipotesis no deben interpretarse como resultados. Esto lo sitúa en la categoria de material de planificacion de investigacion, no de artefacto desplegable.
 
@@ -12,7 +12,7 @@ Su relevancia actual es, por tanto, documental y metodologica: sirve como punto 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no es un modelo entrenado; el tag `transformer` figura en los metadatos de HuggingFace, pero la model card no describe ninguna arquitectura) |
+| Arquitectura | no disponible (no es un modelo entrenado; el tag `transformer` figura en los metadatos de Hugging Face, pero la model card no describe ninguna arquitectura) |
 | Parametros totales | 33.088 (segun metadatos de safetensors; el repositorio ocupa 0,0 GB y no contiene un checkpoint utilizable, por lo que la cifra no corresponde a un modelo funcional) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -22,7 +22,7 @@ Su relevancia actual es, por tanto, documental y metodologica: sirve como punto 
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura que describir. El repositorio no contiene definicion de modelo, configuracion de capas, tokenizador ni pesos con estructura reconocible: el tamano declarado del repositorio es de 0,0 GB y los unicos ficheros documentados son `paper_notes.md` y `README.md`. El tag `transformer` y el tag `safetensors` proceden de la clasificacion de HuggingFace y no van acompanados de ninguna especificacion tecnica en la model card.
+No hay arquitectura que describir. El repositorio no contiene definicion de modelo, configuracion de capas, tokenizador ni pesos con estructura reconocible: el tamano declarado del repositorio es de 0,0 GB y los unicos ficheros documentados son `paper_notes.md` y `README.md`. El tag `transformer` y el tag `safetensors` proceden de la clasificacion de Hugging Face y no van acompanados de ninguna especificacion tecnica en la model card.
 
 Tampoco existe informacion sobre entrenamiento: la model card no menciona numero de tokens, composicion del dataset, tecnicas de alineamiento (RLHF, DPO u otras), ni innovaciones como decodificacion especulativa o atencion lineal. Lo que si documenta el repositorio es el material que rodearia a un futuro experimento: el alcance de la pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base emparejadas, benchmarks publicos adecuados a la tarea, comprobaciones de reproducibilidad y modos de fallo. La model card indica que, si se anaden resultados mas adelante, deberan incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -68,14 +68,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Longitud de contexto | No disponible | No disponible |
 | Rendimiento en benchmarks | Sin resultados; la model card no reclama mejoras | No disponible |
 | Licencia | CC-BY-4.0 | No disponible |
-| Disponibilidad | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta | No disponible |
+| Disponibilidad | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta | No disponible |
 
 No es posible establecer una comparativa tecnica con modelos de vision-lenguaje para robotica a partir de la informacion proporcionada, porque este repositorio no es un modelo y no aporta cifras de rendimiento, parametros efectivos ni contexto. Compararlo con un modelo entrenado seria una comparacion de categorias distintas.
 
 ## Limitaciones y advertencias
 
 - No es un modelo: no existe checkpoint entrenado, ni codigo de inferencia, ni pipeline declarado. No debe citarse como un sistema de vision-lenguaje para robotica.
-- Los metadatos de HuggingFace pueden inducir a error: figuran tags `safetensors` y `transformer`, y una cifra de parametros totales de 33.088, pero el repositorio ocupa 0,0 GB y su contenido son ficheros Markdown.
+- Los metadatos de Hugging Face pueden inducir a error: figuran tags `safetensors` y `transformer`, y una cifra de parametros totales de 33.088, pero el repositorio ocupa 0,0 GB y su contenido son ficheros Markdown.
 - Riesgo de alucinacion: no aplicable al repositorio en si, pero si al uso que se haga de el. Las secciones marcadas como planes o hipotesis no son resultados; citarlas como hallazgos constituiria una tergiversacion.
 - Las referencias y los datasets propuestos no constituyen evidencia de que el estudio se haya ejecutado; la model card lo advierte de forma expresa.
 - Idiomas: el material esta en ingles. No hay declaracion de idiomas soportados porque no hay modelo.
@@ -86,5 +86,5 @@ No es posible establecer una comparativa tecnica con modelos de vision-lenguaje 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samanthakim65/notes-robotics-vision-language-2024
+- Hugging Face: https://huggingface.co/samanthakim65/notes-robotics-vision-language-2024
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion proporcionada.

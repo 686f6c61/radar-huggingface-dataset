@@ -66,7 +66,7 @@ La comparativa más directa es con las otras variantes de la misma serie REAP, t
 | GLM-5.3-533B-EXL3-3.0bpw | 180 / 256 | 210 GB | 0,428 |
 | GLM-5.3-500B-EXL3-3.0bpw (esta) | 168 / 256 | 197 GB | 0,511 |
 
-Todas comparten la misma licencia (hereda la de GLM-5.3) y están disponibles en HuggingFace. No se dispone de comparativas con modelos de otros desarrolladores en la información proporcionada.
+Todas comparten la misma licencia (hereda la de GLM-5.3) y están disponibles en Hugging Face. No se dispone de comparativas con modelos de otros desarrolladores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ Todas comparten la misma licencia (hereda la de GLM-5.3) y están disponibles en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSero/GLM-5.3-500B-EXL3-3.0bpw
+- Modelo en Hugging Face: https://huggingface.co/0xSero/GLM-5.3-500B-EXL3-3.0bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Paper de REAP: https://arxiv.org/abs/2510.13999
 - GitHub de Cerebras REAP: https://github.com/CerebrasResearch/reap

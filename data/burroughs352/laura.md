@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 | Modelo | Base | Tipo | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Burroughs352/Laura | Stable Diffusion 3.5 Large | LoRA | 0.2 GB | no disponible | Hugging Face |
-| stabilityai/stable-diffusion-3.5-large | - | Modelo completo | ~8 GB | Stability AI Community License | HuggingFace |
-| Otros LoRAs de SD3.5 (p.ej. SDXL LoRAs genéricos) | SDXL o SD3.5 | LoRA | 0.1-0.3 GB | variable | HuggingFace |
+| stabilityai/stable-diffusion-3.5-large | - | Modelo completo | ~8 GB | Stability AI Community License | Hugging Face |
+| Otros LoRAs de SD3.5 (p.ej. SDXL LoRAs genéricos) | SDXL o SD3.5 | LoRA | 0.1-0.3 GB | variable | Hugging Face |
 
 No hay datos de rendimiento comparativos entre este LoRA y otras alternativas porque no se han publicado benchmarks. La comparación se limita al tamaño y la base.
 
@@ -71,7 +71,7 @@ No hay datos de rendimiento comparativos entre este LoRA y otras alternativas po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Burroughs352/Laura
+- Repositorio en Hugging Face: https://huggingface.co/Burroughs352/Laura
 - Modelo base: [Stable Diffusion 3.5 Large](https://huggingface.co/stabilityai/stable-diffusion-3.5-large)
 - Documentación de diffusers para LoRA: https://huggingface.co/docs/diffusers/using-diffusers/using_lora
 

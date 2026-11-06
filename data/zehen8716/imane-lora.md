@@ -4,7 +4,7 @@
 
 ## Resumen
 
-zehen8716/imane-lora es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto (text-to-image), publicado por el usuario zehen8716 en HuggingFace. No es un modelo completo, sino un conjunto de pesos de bajo rango que se cargan sobre los checkpoints Krea 2 de Krea (krea/Krea-2-Raw para entrenamiento y krea/Krea-2-Turbo para inferencia rapida). Su funcion es ensenar al modelo base un sujeto concreto activado mediante la palabra clave `imane woman`, de modo que cualquier prompt que la incluya reproduzca esa identidad o estilo aprendido.
+zehen8716/imane-lora es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto (text-to-image), publicado por el usuario zehen8716 en Hugging Face. No es un modelo completo, sino un conjunto de pesos de bajo rango que se cargan sobre los checkpoints Krea 2 de Krea (krea/Krea-2-Raw para entrenamiento y krea/Krea-2-Turbo para inferencia rapida). Su funcion es ensenar al modelo base un sujeto concreto activado mediante la palabra clave `imane woman`, de modo que cualquier prompt que la incluya reproduzca esa identidad o estilo aprendido.
 
 El modelo resuelve el problema clasico de personalizacion de difusion: conseguir consistencia de sujeto sin reentrenar el modelo base. Al ser un LoRA de apache-2.0 distribuido en safetensors (repo de 1,2 GB), se puede integrar con la libreria diffusers mediante `Krea2Pipeline` y `load_lora_weights`. La receta de inferencia documentada por el autor es la del checkpoint Turbo: 8 pasos de muestreo y `guidance_scale=0.0` (sin classifier-free guidance).
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Alternativa | Tipo | Entrenamiento | Contexto de uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zehen8716/imane-lora | LoRA DreamBooth sobre Krea 2 | DreamBooth sobre Krea-2-Raw, inferencia sobre Krea-2-Turbo | Personalizacion de un sujeto con `imane woman` | apache-2.0 | Publico en HuggingFace, 0 descargas |
+| zehen8716/imane-lora | LoRA DreamBooth sobre Krea 2 | DreamBooth sobre Krea-2-Raw, inferencia sobre Krea-2-Turbo | Personalizacion de un sujeto con `imane woman` | apache-2.0 | Publico en Hugging Face, 0 descargas |
 | LoRA DreamBooth sobre SDXL | LoRA DreamBooth | DreamBooth sobre SDXL | Personalizacion de sujeto; ecosistema muy extendido | Depende del autor | Amplia disponibilidad y tooling maduro |
 | Textual inversion | Embedding de texto | Optimizacion de un embedding por sujeto | Personalizacion ligera, menos fiel que un LoRA | Depende del autor | Muy extendido, repo pequeno |
 | IP-Adapter / FaceID | Adaptador de imagen | Entrenamiento con pares imagen-identidad | Transferencia de identidad sin entrenamiento por sujeto | Depende del autor | Amplia, integrado en ComfyUI |
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zehen8716/imane-lora
+- Modelo en Hugging Face: https://huggingface.co/zehen8716/imane-lora
 - Checkpoint base para entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Checkpoint base para inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Paper de DreamBooth: https://dreambooth.github.io/

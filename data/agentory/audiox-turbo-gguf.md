@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AudioX-Turbo es un modelo de difusión para generación de audio de tipo "anything-to-audio" desarrollado por el equipo HKUSTAudio (Universidad de Ciencia y Tecnología de Hong Kong). Este repositorio, `agentory/audiox-turbo-gguf`, contiene una conversión al formato GGUF del modelo original publicado en HuggingFace, orientada a facilitar su ejecución local dentro del ecosistema ggml/llama.cpp. El modelo emplea una arquitectura MMDiT (Multi-Modal Diffusion Transformer) y una destilación DMD que reduce el muestreo a solo 4 pasos.
+AudioX-Turbo es un modelo de difusión para generación de audio de tipo "anything-to-audio" desarrollado por el equipo HKUSTAudio (Universidad de Ciencia y Tecnología de Hong Kong). Este repositorio, `agentory/audiox-turbo-gguf`, contiene una conversión al formato GGUF del modelo original publicado en Hugging Face, orientada a facilitar su ejecución local dentro del ecosistema ggml/llama.cpp. El modelo emplea una arquitectura MMDiT (Multi-Modal Diffusion Transformer) y una destilación DMD que reduce el muestreo a solo 4 pasos.
 
 Su relevancia reside en la eficiencia: según el paper de referencia, opera con 4 pasos de muestreo y requiere hasta 25 veces menos evaluaciones de función (NFE) que las baselines multi-paso, con rendimiento superior en generación de texto-a-audio y texto-a-música. Esto lo hace candidato para generación de audio en hardware de consumo sin depender de servicios en la nube.
 
@@ -18,7 +18,7 @@ Se trata de un repositorio muy reciente (creado el 29 de octubre de 2026), con 0
 | Longitud de contexto | no disponible (modelo de difusión de audio, no aplica el concepto de ventana de contexto de un LLM) |
 | Tipos de cuantizacion | GGUF (variantes concretas de cuantización no especificadas en la ficha) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (etiquetada como "other" en HuggingFace) |
+| Licencia | no disponible (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (librería ggml) |
 
 ## Arquitectura y entrenamiento
@@ -63,7 +63,7 @@ No se han publicado valores absolutos de benchmarks (FAD, CLAP score, KL, etc.) 
 - VRAM estimada para inferencia: no disponible; el número de parámetros y el tamaño de los ficheros GGUF no constan en la información proporcionada. Se recomienda consultar los tamaños de archivo directamente en el repositorio antes de planificar el despliegue.
 - GPU recomendadas: no disponible al desconocerse el tamaño de los pesos. Al tratarse de un modelo de difusión de audio en formato GGUF, la cuantización permite descarga parcial a CPU/RAM, pero no se puede afirmar en qué GPUs concretas cabe sin los datos de tamaño.
 - Consumer GPUs: no disponible; pendiente de verificar el tamaño de los ficheros GGUF del repositorio.
-- Opciones de despliegue: ecosistema ggml/llama.cpp (la librería indicada en el repositorio es ggml). Para modelos de difusión de audio en GGUF puede requerir builds o implementaciones específicas que soporten la arquitectura MMDiT. Como alternativa, el modelo original de HKUSTAudio puede ejecutarse con el stack habitual de difusión de HuggingFace.
+- Opciones de despliegue: ecosistema ggml/llama.cpp (la librería indicada en el repositorio es ggml). Para modelos de difusión de audio en GGUF puede requerir builds o implementaciones específicas que soporten la arquitectura MMDiT. Como alternativa, el modelo original de HKUSTAudio puede ejecutarse con el stack habitual de difusión de Hugging Face.
 - Latencia y throughput: no hay cifras publicadas; cualitativamente, el muestreo en 4 pasos y la reducción de 25x en NFE implican una latencia por generación muy inferior a la de baselines multi-paso equivalentes.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se han publicado valores absolutos de benchmarks (FAD, CLAP score, KL, etc.) 
 | Modelo | Tarea | Arquitectura | Muestreo | Formato de pesos | Licencia |
 |---|---|---|---|---|---|
 | AudioX-Turbo GGUF (esta ficha) | anything-to-audio | MMDiT + destilación DMD | 4 pasos | GGUF | other (no especificada) |
-| AudioX-Turbo (HKUSTAudio, original) | anything-to-audio | MMDiT + destilación DMD | 4 pasos | Pesos originales en HuggingFace | no disponible |
+| AudioX-Turbo (HKUSTAudio, original) | anything-to-audio | MMDiT + destilación DMD | 4 pasos | Pesos originales en Hugging Face | no disponible |
 | Stable Audio Open (Stability AI) | text-to-audio, SFX | DiT de difusión latente | multi-paso | safetensors | Stability AI Community License |
 | AudioGen medium (Meta) | text-to-audio | LM autorregresivo sobre tokens de audio | autorregresivo | safetensors | CC-BY-NC 4.0 (uso no comercial) |
 

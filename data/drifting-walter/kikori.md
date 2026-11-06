@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drifting-walter/kikori
+- Hugging Face: https://huggingface.co/drifting-walter/kikori
 - Repositorio Rashomon: https://github.com/walteraandrade/rashomon
 - Repositorio del modelo (entrenamiento y documentación): https://github.com/walteraandrade/kikori

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-REGAL es un repositorio de modelo publicado en HuggingFace por el usuario dhjriri bajo el identificador `dhjriri/REGAL`. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us` y fecha de creacion y ultima actualizacion identicas (12 de octubre de 2026), lo que indica que no ha habido modificaciones posteriores a la publicacion inicial. No consta pipeline declarado, idiomas soportados, tamano, arquitectura ni documentacion tecnica en la model card.
+REGAL es un repositorio de modelo publicado en Hugging Face por el usuario dhjriri bajo el identificador `dhjriri/REGAL`. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us` y fecha de creacion y ultima actualizacion identicas (12 de octubre de 2026), lo que indica que no ha habido modificaciones posteriores a la publicacion inicial. No consta pipeline declarado, idiomas soportados, tamano, arquitectura ni documentacion tecnica en la model card.
 
 El repositorio presenta cero descargas y cero "likes" en el momento de la consulta, y la model card no contiene mas contenido que la declaracion de licencia MIT. Esto significa que no es posible verificar que el modelo sea funcional, cual es su proposito, que datos de entrenamiento utilizo ni como debe evaluarse. A efectos practicos, se trata de un artefacto sin documentar.
 
@@ -102,7 +102,7 @@ No disponible. Sin conocer el tamano, la arquitectura, el dominio ni la tarea de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhjriri/REGAL
+- Modelo en Hugging Face: https://huggingface.co/dhjriri/REGAL
 - Model card: https://huggingface.co/dhjriri/REGAL/blob/main/README.md
 - Lista de archivos del repositorio: https://huggingface.co/dhjriri/REGAL/tree/main
 

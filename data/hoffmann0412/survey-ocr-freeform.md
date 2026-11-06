@@ -92,7 +92,7 @@ En rendimiento medido no es posible comparar: el repositorio analizado no public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hoffmann0412/survey-ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/Hoffmann0412/survey-ocr-freeform
 - Nota principal declarada: `notes.md` (dentro del repositorio)
 - Documentacion: `README.md` (dentro del repositorio)
 - Enlaces externos relevantes encontrados en la busqueda web: no disponible (las consultas realizadas no devolvieron resultados relacionados con el modelo ni con OCR freeform)

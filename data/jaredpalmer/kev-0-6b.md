@@ -83,7 +83,7 @@ La misma receta aplicada a otros tamaños alcanza, según el autor, 0,72-0,75 de
 
 | Modelo | Parametros | Contexto | Accuracy en distribucion | Accuracy fuera de dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kev-0.6b | 0,6B (LoRA r=16 + cabeza pointer) | no disponible | 0,805 | 0,598 | apache-2.0 | HuggingFace (research preview, 0 descargas, 0 likes) |
+| kev-0.6b | 0,6B (LoRA r=16 + cabeza pointer) | no disponible | 0,805 | 0,598 | apache-2.0 | Hugging Face (research preview, 0 descargas, 0 likes) |
 | kev-0.5b | 0,5B (backbone Qwen2.5-0.5B) | no disponible | 0,712 | 0,575 (transfer-v1) | no disponible | versión previa del mismo autor |
 | Jev (typesafe-ai/jev via Vercel AI Gateway) | no disponible | no disponible | 0,845 | 0,855 | no disponible | servicio vía gateway |
 | Misma receta a 4B / 8B | 4B / 8B | no disponible | no disponible | 0,72-0,75 / 0,74-0,77 | no disponible | no disponible como release público |
@@ -106,7 +106,7 @@ No se dispone de comparativas con clasificadores de propósito general de tamañ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaredpalmer/kev-0.6b
+- Modelo en Hugging Face: https://huggingface.co/jaredpalmer/kev-0.6b
 - Repositorio de código, suites y resultados: https://github.com/jaredpalmer/kev (ver `PLAN.md`, `runs/leaderboard.md` y `evals/v4/*/manifest.json`)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente enlaces genéricos de Amazon.de sin relación con el contenido); no se han podido añadir papers, blogs ni demos adicionales.

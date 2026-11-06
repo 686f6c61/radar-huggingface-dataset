@@ -95,7 +95,7 @@ No se dispone de datos de otros modelos comparables (como DeepSeek-V3 o Qwen2.5-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8
 - Espejo abliterated: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio GLM-5 de Z.ai: https://github.com/zai-org/GLM-5

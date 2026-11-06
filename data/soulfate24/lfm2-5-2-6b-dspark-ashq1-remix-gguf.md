@@ -97,7 +97,7 @@ El modelo destaca por su ventana de contexto de 128K, muy superior a la de alter
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta version cuantizada: https://huggingface.co/Soulfate24/LFM2.5-2.6B-DSpark-ASHQ1-Remix-GGUF
+- Repositorio Hugging Face de esta version cuantizada: https://huggingface.co/Soulfate24/LFM2.5-2.6B-DSpark-ASHQ1-Remix-GGUF
 - Modelo base original (LiquidAI/LFM2.5-2.6B-DSpark): https://huggingface.co/LiquidAI/LFM2.5-2.6B-DSpark
 - Modelo base LFM2.5-2.6B: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Blog de Liquid AI sobre LFM2.5-DSpark: https://www.liquid.ai/blog/lfm2.5-dspark

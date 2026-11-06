@@ -1,7 +1,7 @@
 # xtools-at/Qwen3.5-4B-DeepThought-STEM
 
 ## Resumen
-Deep Thought 4B es un ajuste fino mediante LoRA en 16 bits sobre Qwen3.5-4B, desarrollado por el usuario xtools-at y publicado en HuggingFace. El modelo parte del checkpoint xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic, una variante sin censura del fine-tune de Jackrong sobre Qwen3.5-4B destilado a partir de trazas de razonamiento de DeepSeek-V4-Pro. Su objetivo es reforzar el razonamiento estructurado, las matematicas, las ciencias duras y, de forma destacada, el descubrimiento de farmacos y la formulacion farmaceutica.
+Deep Thought 4B es un ajuste fino mediante LoRA en 16 bits sobre Qwen3.5-4B, desarrollado por el usuario xtools-at y publicado en Hugging Face. El modelo parte del checkpoint xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic, una variante sin censura del fine-tune de Jackrong sobre Qwen3.5-4B destilado a partir de trazas de razonamiento de DeepSeek-V4-Pro. Su objetivo es reforzar el razonamiento estructurado, las matematicas, las ciencias duras y, de forma destacada, el descubrimiento de farmacos y la formulacion farmaceutica.
 
 Con 4.539.265.536 parametros reales en safetensors y un repositorio de 9,1 GB, se posiciona como un modelo pequeno pero especializado, pensado para entornos con recursos limitados que necesitan capacidades de razonamiento cientifico por encima de la media de su tamano. La ficha del autor lo describe como multimodal heredado de Qwen3.5-4B (pipeline image-text-to-text), aunque el ajuste adicional es exclusivamente textual y no incluye una etapa dedicada de entrenamiento de vision.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xtools-at/Qwen3.5-4B-DeepThought-STEM | 4,54B | no disponible | Razonamiento STEM, matematicas, farmacia | Apache 2.0 | HuggingFace, 0 descargas |
-| xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic (modelo base) | ~4B | no disponible | Razonamiento general sin censura | no disponible en la informacion | HuggingFace |
-| xtools-at/Qwen3.5-9B-DeepThought-STEM | ~9B | no disponible | Version ampliada del mismo fine-tune | no disponible en la informacion | HuggingFace |
-| Qwen/Qwen3.5-4B (modelo fundacional) | ~4B | no disponible | Multimodal generalista | no disponible en la informacion | HuggingFace |
+| xtools-at/Qwen3.5-4B-DeepThought-STEM | 4,54B | no disponible | Razonamiento STEM, matematicas, farmacia | Apache 2.0 | Hugging Face, 0 descargas |
+| xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic (modelo base) | ~4B | no disponible | Razonamiento general sin censura | no disponible en la informacion | Hugging Face |
+| xtools-at/Qwen3.5-9B-DeepThought-STEM | ~9B | no disponible | Version ampliada del mismo fine-tune | no disponible en la informacion | Hugging Face |
+| Qwen/Qwen3.5-4B (modelo fundacional) | ~4B | no disponible | Multimodal generalista | no disponible en la informacion | Hugging Face |
 
 La comparativa se limita a los modelos citados en la propia model card, ya que no se dispone de datos de benchmarks ni de especificaciones detalladas de las alternativas.
 
@@ -78,7 +78,7 @@ La comparativa se limita a los modelos citados en la propia model card, ya que n
 - **Fecha de publicacion futura**: el modelo figura creado el 2026-11-02, lo que sugiere un contexto temporal no estandar; conviene verificar la autenticidad y procedencia antes de usarlo en produccion.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/xtools-at/Qwen3.5-4B-DeepThought-STEM)
+- [Modelo en Hugging Face](https://huggingface.co/xtools-at/Qwen3.5-4B-DeepThought-STEM)
 - [Modelo base: xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic](https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic)
 - [Modelo upstream: Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B](https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B)
 - [Modelo fundacional: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)

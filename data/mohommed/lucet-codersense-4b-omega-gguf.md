@@ -99,6 +99,6 @@ La comparación de rendimiento no está disponible porque el autor no publica re
 
 ## Enlaces
 
-- [HuggingFace: mohommed/Lucet-CoderSense-4B-Omega-GGUF](https://huggingface.co/mohommed/Lucet-CoderSense-4B-Omega-GGUF)
+- [Hugging Face: mohommed/Lucet-CoderSense-4B-Omega-GGUF](https://huggingface.co/mohommed/Lucet-CoderSense-4B-Omega-GGUF)
 - [Modelo base: XHToken/Spark-X2.6-4B](https://huggingface.co/XHToken/Spark-X2.6-4B)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

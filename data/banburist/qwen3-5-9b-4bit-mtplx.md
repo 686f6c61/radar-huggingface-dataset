@@ -81,7 +81,7 @@ La diferencia principal de este modelo es la integración de la cabecera MTP y l
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/banburist/Qwen3.5-9b-4bit-MTPLX
+- Repositorio de Hugging Face: https://huggingface.co/banburist/Qwen3.5-9b-4bit-MTPLX
 - Repositorio del proyecto MTPLX en GitHub: https://github.com/youssofal/mtplx
 - Cuantización alternativa de la comunidad: https://huggingface.co/mlx-community/Qwen3.5-9B-MTP-4bit
 - Cuantización 4-bit estándar de MLX: https://huggingface.co/hudsonai-app/Qwen3.5-9B-4bit

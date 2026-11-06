@@ -4,7 +4,7 @@
 
 `Alexxerm/doslovno-weights` es un repositorio de redistribución de pesos, no un modelo entrenado. Su autor, Alexxerm, publica aquí copias de dos modelos de terceros en formato GGUF que la aplicación de escritorio «Дословно» (https://github.com/alexxerm/doslovno-desktop) descarga en su primera ejecución. El objetivo declarado en la model card es desacoplar la aplicación del repositorio original de esos modelos, de modo que la app no dependa de que terceros mantengan disponibles los mismos ficheros.
 
-El contenido son dos artefactos independientes: `qwen2.5-7b-instruct-q4_k_m.gguf`, un transformer decoder-only denso de unos 7,6 mil millones de parámetros derivado de Qwen/Qwen2.5-7B-Instruct (licencia Apache 2.0), empleado por la aplicación para generar respuestas y veredictos; y `bge-m3-f16.gguf`, un encoder de retrieval de aproximadamente 568 millones de parámetros derivado de BAAI/bge-m3 (licencia MIT), usado para búsqueda semántica. El recuento de parámetros que HuggingFace reporta para el repositorio (566.703.104) corresponde al segundo componente.
+El contenido son dos artefactos independientes: `qwen2.5-7b-instruct-q4_k_m.gguf`, un transformer decoder-only denso de unos 7,6 mil millones de parámetros derivado de Qwen/Qwen2.5-7B-Instruct (licencia Apache 2.0), empleado por la aplicación para generar respuestas y veredictos; y `bge-m3-f16.gguf`, un encoder de retrieval de aproximadamente 568 millones de parámetros derivado de BAAI/bge-m3 (licencia MIT), usado para búsqueda semántica. El recuento de parámetros que Hugging Face reporta para el repositorio (566.703.104) corresponde al segundo componente.
 
 La relevancia de esta ficha es limitada y hay que ser explícito al respecto: no hay entrenamiento propio, no hay innovación técnica, no hay benchmarks publicados y el repositorio acumula 0 descargas y 0 likes desde su creación el 10 de septiembre de 2026. Resulta útil únicamente como espejo de pesos GGUF ya cuantizados y como ejemplo de empaquetado de un stack local (LLM + modelo de embeddings) para una aplicación de escritorio sin conexión.
 
@@ -13,7 +13,7 @@ La relevancia de esta ficha es limitada y hay que ser explícito al respecto: no
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Contenedor de dos modelos independientes: (1) transformer decoder-only denso con GQA (Qwen2.5-7B-Instruct); (2) encoder transformer basado en XLM-RoBERTa (bge-m3) para retrieval |
-| Parámetros totales | 566.703.104 según el recuento safetensors de HuggingFace (coincide con bge-m3). El componente LLM ronda los 7,6 mil millones de parámetros según su ficha original; este repositorio no publica su recuento |
+| Parámetros totales | 566.703.104 según el recuento safetensors de Hugging Face (coincide con bge-m3). El componente LLM ronda los 7,6 mil millones de parámetros según su ficha original; este repositorio no publica su recuento |
 | Parámetros activos | no aplica: ninguno de los dos componentes es un modelo MoE |
 | Longitud de contexto | no declarada en este repositorio. Según las fichas originales: 32.768 tokens nativos en Qwen2.5-7B-Instruct (ampliable a 131.072 con YaRN) y 8.192 tokens en bge-m3 |
 | Tipos de cuantización | GGUF Q4_K_M para el LLM; GGUF F16 para el modelo de embeddings |
@@ -102,7 +102,7 @@ La ventaja diferencial de esta combinación frente a las alternativas es la lice
 - La licencia Apache-2.0 declarada en el repositorio no sustituye a las de los componentes: bge-m3 es MIT y exige conservar el aviso de copyright, y Qwen2.5-7B-Instruct obliga a mantener la atribución de Apache 2.0. Conviene revisar ambas antes de redistribuir el conjunto.
 - El repositorio acumula 0 descargas y 0 likes y fue creado y actualizado el mismo día (10 de septiembre de 2026). No hay historial de mantenimiento que garantice que los ficheros vayan a actualizarse.
 - La model card está redactada íntegramente en ruso y no incluye instrucciones de uso, ejemplos de prompt, ni parámetros de generación recomendados.
-- Existe una inconsistencia de metadatos: HuggingFace reporta 566.703.104 parámetros vía safetensors, cifra que corresponde al encoder de embeddings, mientras que el componente principal del repositorio es un LLM de ~7,6B en GGUF. No debe tomarse ese número como tamaño del conjunto.
+- Existe una inconsistencia de metadatos: Hugging Face reporta 566.703.104 parámetros vía safetensors, cifra que corresponde al encoder de embeddings, mientras que el componente principal del repositorio es un LLM de ~7,6B en GGUF. No debe tomarse ese número como tamaño del conjunto.
 - No hay benchmarks, ni evaluación de sesgos, ni documentación de tasas de alucinación para ninguno de los dos componentes en este repositorio. Un modelo de 7B cuantizado a 4 bits es propenso a inventar datos en tareas factuales y a degradarse en matemáticas y código de precisión.
 - La cuantización Q4_K_M introduce pérdida de calidad respecto al modelo original en FP16, especialmente en tareas de razonamiento largo y en idiomas de bajos recursos.
 - El contexto efectivo está limitado por la configuración del servidor de inferencia: usar 32.768 tokens exige ajustar el tamaño de la caché KV y dispara el consumo de VRAM.
@@ -111,7 +111,7 @@ La ventaja diferencial de esta combinación frente a las alternativas es la lice
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Alexxerm/doslovno-weights
+- Repositorio en Hugging Face: https://huggingface.co/Alexxerm/doslovno-weights
 - Aplicación de escritorio que consume estos pesos: https://github.com/alexxerm/doslovno-desktop
 - Modelo de origen del componente generativo: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo de origen del componente de embeddings: https://huggingface.co/BAAI/bge-m3

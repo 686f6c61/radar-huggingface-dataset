@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| risk-spec-specv3local-g31-rae2procnotraceg31 (este adaptador) | adaptador LoRA r=32 sobre base de 31B declarado | no disponible | no disponible | publico en HuggingFace, 0 descargas | solo `final_teacher_kl` 0,0245 |
+| risk-spec-specv3local-g31-rae2procnotraceg31 (este adaptador) | adaptador LoRA r=32 sobre base de 31B declarado | no disponible | no disponible | publico en Hugging Face, 0 descargas | solo `final_teacher_kl` 0,0245 |
 | `google/gemma-4-31B-it` (modelo base declarado) | 31B (segun la model card) | no disponible | no disponible | referenciado en la model card; no verificado | no disponible |
 | Otros adaptadores LoRA de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-rae2procnotraceg31-gemma-4-31b-it-hp500-r32-s0-20260914
+- Repositorio Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-rae2procnotraceg31-gemma-4-31b-it-hp500-r32-s0-20260914
 - Modelo base referenciado en la model card: https://huggingface.co/google/gemma-4-31B-it (referencia no verificada)
 - Libreria PEFT: https://github.com/huggingface/peft
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la informacion proporcionada.

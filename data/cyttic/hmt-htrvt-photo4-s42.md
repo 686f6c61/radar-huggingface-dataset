@@ -66,7 +66,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parametros | Contexto | CER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-htrvt-photo4-s42 | 13.821.574 | no disponible | 0,0711 | MIT | HuggingFace |
+| cyttic/hmt-htrvt-photo4-s42 | 13.821.574 | no disponible | 0,0711 | MIT | Hugging Face |
 | Modelo base `htrvt` (sin aumentación photo4) | no disponible | no disponible | no disponible | no disponible | Referenciado en la model card |
 | Otras variantes del estudio `htr-metrics-transfer` | no disponible | no disponible | no disponible | no disponible | No disponibles en la información proporcionada |
 
@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks de modelos comparables externos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-photo4-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-photo4-s42
 - Corpus de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios de código o demos adicionales.

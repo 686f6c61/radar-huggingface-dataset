@@ -66,6 +66,6 @@ No se dispone de información sobre otros relojes epigenéticos implementados en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pyaging/pchannum
+- Repositorio en Hugging Face: https://huggingface.co/pyaging/pchannum
 - Documentación de pyaging (catálogo de relojes): https://pyaging.readthedocs.io
 - Publicación original del método: Higgins-Chen, Albert T., et al. "A computational solution for bolstering reliability of epigenetic clocks: implications for clinical trials and longitudinal tracking." Nature Aging 2 (2022): 644–661. DOI: https://doi.org/10.1038/s43587-022-00248-2

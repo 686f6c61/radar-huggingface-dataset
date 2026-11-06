@@ -72,6 +72,6 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/senchronoage
+- Modelo en Hugging Face: https://huggingface.co/pyaging/senchronoage
 - Publicacion asociada (DOI): https://doi.org/10.1111/acel.70430
 - Catalogo de relojes de pyaging: https://pyaging.readthedocs.io

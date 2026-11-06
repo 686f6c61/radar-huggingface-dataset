@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bartoszzielinski/work-visual-question-answering` no es un modelo entrenado, sino un repositorio de notas de investigación sobre *Visual Question Answering* (VQA) alojado en HuggingFace. El propio autor lo etiqueta como `research-notes` y aclara en la model card que se trata de un esbozo de experimento: no incluye checkpoint, no declara código liberado, no presenta ablaciones completadas y no reclama mejoras en ningún benchmark. Los dos únicos artefactos descritos son `review.md` (nota principal) y `README.md` (documentación).
+`bartoszzielinski/work-visual-question-answering` no es un modelo entrenado, sino un repositorio de notas de investigación sobre *Visual Question Answering* (VQA) alojado en Hugging Face. El propio autor lo etiqueta como `research-notes` y aclara en la model card que se trata de un esbozo de experimento: no incluye checkpoint, no declara código liberado, no presenta ablaciones completadas y no reclama mejoras en ningún benchmark. Los dos únicos artefactos descritos son `review.md` (nota principal) y `README.md` (documentación).
 
 El repositorio se presenta como material de planificación: delimita el alcance de la pregunta de investigación, enumera posibles factores de confusión, propone una comparación con baselines emparejados y sugiere un contexto de evaluación basado en VQAv2, GQA y OK-VQA. También menciona comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, así como referencias temáticas.
 
@@ -73,5 +73,5 @@ No disponible. Este repositorio no es comparable con modelos de VQA como BLIP-2,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bartoszzielinski/work-visual-question-answering
+- Hugging Face: https://huggingface.co/bartoszzielinski/work-visual-question-answering
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

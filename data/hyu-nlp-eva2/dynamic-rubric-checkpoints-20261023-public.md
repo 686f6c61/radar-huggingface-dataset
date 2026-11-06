@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/dynamic-rubric-checkpoints-20261023-public
+- Repositorio en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/dynamic-rubric-checkpoints-20261023-public
 - Archivo companero privado citado en la model card: https://huggingface.co/HYU-NLP-EVA2/dynamic-rubric-checkpoints-20261023
 - Fichero de inventario y repositorios de inferencia existentes: `existing_inference_repositories.json` (referenciado en la model card; consultar el arbol de ficheros del repositorio)
 - Manifiesto de verificacion: `verified_manifest.json` (se publica tras la comparacion de tamanos y hashes; su presencia registra la verificacion del snapshot)

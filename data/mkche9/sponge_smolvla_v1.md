@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mkche9/sponge_smolvla_v1
+- Modelo en Hugging Face: https://huggingface.co/mkche9/sponge_smolvla_v1
 - Paper de SmolVLA: https://arxiv.org/html/2506.01844v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/mkche9/sponge_pick_merged_v2
 - LeRobot (GitHub): https://github.com/huggingface/lerobot

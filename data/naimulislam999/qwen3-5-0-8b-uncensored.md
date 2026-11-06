@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 - VRAM estimada para inferencia: con 752 M parámetros, en FP16 ocupa aproximadamente 1,5 GB; en cuantización 8-bit ~0,75 GB; en 4-bit ~0,5 GB. Cabe en cualquier GPU consumer moderna (RTX 3060, RTX 4060, etc.) e incluso en CPU con suficiente RAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para FP16, o 1 GB para cuantización 4-bit. No requiere hardware especializado.
-- Opciones de despliegue: al ser un modelo transformers estándar, puede ejecutarse con vLLM, llama.cpp (si se generan pesos GGUF), Ollama, o directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo transformers estándar, puede ejecutarse con vLLM, llama.cpp (si se generan pesos GGUF), Ollama, o directamente con la librería transformers de Hugging Face.
 - Latencia y throughput: no se han publicado datos específicos, pero por su tamaño reducido se espera una latencia baja (del orden de decenas de milisegundos por token en GPU consumer) y un throughput alto en entornos con batching.
 
 ## Comparativa con modelos similares

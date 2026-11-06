@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio Dohyeon1/ERNIE-M-SMoE-ngroups56 es un modelo de generación de texto publicado en HuggingFace por el usuario Dohyeon1. Según los metadatos del Hub, se trata de un modelo de arquitectura etiquetada como ernie4_5_moe, con 21.825.437.888 parámetros totales (aproximadamente 21,83 mil millones) almacenados en safetensors y un tamaño de repositorio de 43,7 GB. La etiqueta de librería es transformers y el pipeline declarado es text-generation con orientación conversacional, además de ser compatible con endpoints.
+El repositorio Dohyeon1/ERNIE-M-SMoE-ngroups56 es un modelo de generación de texto publicado en Hugging Face por el usuario Dohyeon1. Según los metadatos del Hub, se trata de un modelo de arquitectura etiquetada como ernie4_5_moe, con 21.825.437.888 parámetros totales (aproximadamente 21,83 mil millones) almacenados en safetensors y un tamaño de repositorio de 43,7 GB. La etiqueta de librería es transformers y el pipeline declarado es text-generation con orientación conversacional, además de ser compatible con endpoints.
 
-El interés de este modelo es limitado y hay que tratarlo con cautela: es una publicación reciente (creada y actualizada el 19 de septiembre de 2026), con cero descargas y cero likes en el momento de redactar esta ficha, y su model card es la plantilla automática de HuggingFace sin ningún campo cumplimentado. No se documentan el desarrollador real, el modelo base, la licencia, los idiomas soportados ni el proceso de entrenamiento. El sufijo "SMoE-ngroups56" y el tag ernie4_5_moe apuntan a una variante experimental de mezcla de expertos (MoE) derivada de la familia ERNIE 4.5 de Baidu, pero esto no está confirmado por el autor en ningún momento.
+El interés de este modelo es limitado y hay que tratarlo con cautela: es una publicación reciente (creada y actualizada el 19 de septiembre de 2026), con cero descargas y cero likes en el momento de redactar esta ficha, y su model card es la plantilla automática de Hugging Face sin ningún campo cumplimentado. No se documentan el desarrollador real, el modelo base, la licencia, los idiomas soportados ni el proceso de entrenamiento. El sufijo "SMoE-ngroups56" y el tag ernie4_5_moe apuntan a una variante experimental de mezcla de expertos (MoE) derivada de la familia ERNIE 4.5 de Baidu, pero esto no está confirmado por el autor en ningún momento.
 
 En consecuencia, esta ficha recoge los datos verificables (recuento de parámetros, tamaño, formato de pesos, etiquetas) y marca explícitamente como "no disponible" todo aquello que el autor no documenta. No debe usarse en producción sin una evaluación previa propia, dado que se desconoce el origen de los pesos, la licencia y la calidad del ajuste.
 
@@ -22,18 +22,18 @@ En consecuencia, esta ficha recoge los datos verificables (recuento de parámetr
 | Formato de pesos | Safetensors (tamano de repositorio 43,7 GB, coherente con pesos en bf16/fp16) |
 | Libreria | transformers |
 | Pipeline declarado | text-generation |
-| Compatibilidad | endpoints_compatible (apto para HuggingFace Inference Endpoints) |
+| Compatibilidad | endpoints_compatible (apto para Hugging Face Inference Endpoints) |
 | Fecha de creacion | 2026-09-19 |
 | Ultima actualizacion | 2026-09-19 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna, el proceso de entrenamiento ni los datos utilizados. La model card es la plantilla autogenerada por HuggingFace y todos los apartados relevantes (Model Details, Training Data, Training Procedure, Hyperparameters, Evaluation) figuran como "[More Information Needed]".
+No hay informacion publicada sobre la arquitectura interna, el proceso de entrenamiento ni los datos utilizados. La model card es la plantilla autogenerada por Hugging Face y todos los apartados relevantes (Model Details, Training Data, Training Procedure, Hyperparameters, Evaluation) figuran como "[More Information Needed]".
 
 Los unicos indicios disponibles son los metadatos: el tag ernie4_5_moe apunta a una arquitectura transformer con capas de mezcla de expertos (MoE) del tipo empleado en la familia ERNIE 4.5, y el nombre del repositorio incluye "SMoE" (sparse mixture of experts) y "ngroups56", lo que sugiere alguna modificacion en la agrupacion de expertos respecto al modelo original. Se desconoce si se trata de un modelo preentrenado, un ajuste fino, un recorte de expertos o una mezcla de pesos, y tampoco consta si hubo fases de RLHF, DPO o instruccion supervisada.
 
-El unico identificador arXiv presente en las etiquetas (arxiv:1910.09700) corresponde al articulo "Quantifying the Carbon Emissions of Machine Learning" de Lacoste et al., citado en la propia plantilla de model card de HuggingFace como referencia de la calculadora de emisiones. No es el paper del modelo ni describe su arquitectura o entrenamiento.
+El unico identificador arXiv presente en las etiquetas (arxiv:1910.09700) corresponde al articulo "Quantifying the Carbon Emissions of Machine Learning" de Lacoste et al., citado en la propia plantilla de model card de Hugging Face como referencia de la calculadora de emisiones. No es el paper del modelo ni describe su arquitectura o entrenamiento.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ Las capacidades solo pueden inferirse parcialmente de las etiquetas del reposito
 - Generacion de texto: el pipeline declarado es text-generation, por lo que el modelo esta pensado para producir texto autocompletado o respuestas.
 - Uso conversacional: la etiqueta "conversational" sugiere adaptacion a dialogos multi-turno, aunque no se documenta el formato de prompt ni la plantilla de chat.
 - Integracion con transformers: cargable mediante la libreria transformers, con pesos en safetensors.
-- Despliegue en Inference Endpoints: la etiqueta endpoints_compatible indica que puede servirse en la infraestructura gestionada de HuggingFace.
+- Despliegue en Inference Endpoints: la etiqueta endpoints_compatible indica que puede servirse en la infraestructura gestionada de Hugging Face.
 - Razonamiento, codigo, matematicas, vision o audio: no disponibles; no hay ninguna evidencia en la informacion proporcionada.
 - Tool calling / function calling: no disponible; no se menciona soporte alguno.
 - Capacidades de agente o razonamiento multi-paso: no disponible.
@@ -55,7 +55,7 @@ Dado que no existe documentacion tecnica ni evaluacion, los siguientes escenario
 
 - Experimentacion academica con MoE dispersos: el modelo puede servir para estudiar el comportamiento de una variante con agrupacion de expertos modificada (ngroups56), comparando su salida frente al modelo base del que derive. Es adecuado para investigacion sobre enrutamiento de expertos, no para produccion sin validacion.
 - Prototipado rapido de chatbots en entorno de investigacion: al estar etiquetado como conversacional y ser cargable con transformers, permite montar una demo local de dialogo multi-turno. Requiere definir manualmente la plantilla de chat, ya que no esta documentada.
-- Pruebas de despliegue en Inference Endpoints: la etiqueta endpoints_compatible permite desplegarlo en la infraestructura gestionada de HuggingFace para medir latencia y throughput reales de una arquitectura MoE de 21,8 mil millones de parametros.
+- Pruebas de despliegue en Inference Endpoints: la etiqueta endpoints_compatible permite desplegarlo en la infraestructura gestionada de Hugging Face para medir latencia y throughput reales de una arquitectura MoE de 21,8 mil millones de parametros.
 - Base para ajuste fino supervisado en dominios verticales: un modelo de este tamano con activacion dispersa (si se confirma el caracter MoE) puede ajustarse con LoRA sobre un unico nodo de 80 GB, siempre que la licencia lo permita, algo que hoy se desconoce.
 - Generacion de texto offline en infraestructura propia: al distribuirse solo en safetensors, puede servirse con transformers o vLLM en servidores con GPU de 80 GB, sin dependencia de APIs externas. Es adecuado para entornos con requisitos de confidencialidad, siempre que se resuelva la incognita de la licencia.
 - Benchmarking interno de modelos: sirve como punto de comparacion frente a otros MoE de tamano similar en pruebas propias (perplejidad, calidad de generacion, coste por token), dado que no existen resultados publicados que puedan reutilizarse.
@@ -103,7 +103,7 @@ No es posible establecer una comparativa fiable con los datos proporcionados: el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/ERNIE-M-SMoE-ngroups56
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/ERNIE-M-SMoE-ngroups56
 - Articulo arXiv presente en las etiquetas (referencia de la calculadora de emisiones de la plantilla de model card, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Paper, repositorio de codigo, demo y blog del autor: no disponibles.
 - Busqueda web complementaria: no se ha encontrado ningun enlace relevante sobre este modelo; los resultados devueltos correspondian a dominios sin relacion (The Home Depot) y se han descartado.

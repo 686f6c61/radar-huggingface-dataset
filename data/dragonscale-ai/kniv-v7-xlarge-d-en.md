@@ -104,7 +104,7 @@ La model card indica que kniv-v7-xlarge-d-en ofrece un parsing, NER, roles seman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-d-en
+- Modelo en Hugging Face: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-d-en
 - Modelo hermano: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-u-en
 - Modelo tiny: https://huggingface.co/dragonscale-ai/kniv-v7-tiny-en
 - Modelo small: https://huggingface.co/dragonscale-ai/kniv-v7-small-en

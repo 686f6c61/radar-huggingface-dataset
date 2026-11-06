@@ -79,7 +79,7 @@ No se dispone de comparaciones directas con otros adaptadores LoRA conversaciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maharnab/SmolLlama3
+- Hugging Face: https://huggingface.co/maharnab/SmolLlama3
 - Pagina personal del autor: https://www.maharnabsaikia.com/
 - Dataset de entrenamiento: https://huggingface.co/datasets/maharnab/smol-smoltalk-10k
 - Referencia sobre impacto ambiental (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quicksviewer-8B es un modelo multimodal grande (LMM) publicado en HuggingFace por el usuario qijithu bajo el proyecto Quicksviewer, orientado a la comprension eficiente de video con un numero elevado de fotogramas de entrada. El modelo aborda el coste computacional de procesar secuencias de video largas: en lugar de muestrear todos los fotogramas con densidad uniforme, divide el video en "cubos" (cubes) de densidad no uniforme mediante Gumbel Softmax y aplica un remuestreo unificado a cada cubo, logrando una compresion dinamica en linea.
+Quicksviewer-8B es un modelo multimodal grande (LMM) publicado en Hugging Face por el usuario qijithu bajo el proyecto Quicksviewer, orientado a la comprension eficiente de video con un numero elevado de fotogramas de entrada. El modelo aborda el coste computacional de procesar secuencias de video largas: en lugar de muestrear todos los fotogramas con densidad uniforme, divide el video en "cubos" (cubes) de densidad no uniforme mediante Gumbel Softmax y aplica un remuestreo unificado a cada cubo, logrando una compresion dinamica en linea.
 
 El modelo cuenta con 8.703.279.090 parametros (~8,7B) y combina un backbone de lenguaje de la familia Qwen con un codificador visual SigLIP ViT y un resampler temporal tipo Perceiver (64 queries, 4096 de anchura de salida, embeddings temporales absolutos de 0,1 segundos). Se distribuye en safetensors acompanado de implementacion de codigo personalizado (`custom_code`), por lo que requiere `trust_remote_code=True` en Transformers. La model card declara licencia CC BY-NC 4.0 para el modelo (no comercial) y Apache 2.0 para el codigo.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato de pesos | Disponibilidad |
 |---|---|---|---|---|---|
-| Quicksviewer-8B | 8,7B | no disponible | CC BY-NC 4.0 (no comercial) | safetensors (custom_code) | HuggingFace |
-| Qwen2.5-VL-7B | clase 7B | no disponible | Apache 2.0 | safetensors | HuggingFace y ecosistema de inferencia amplio |
-| LLaVA-Video-7B | clase 7B | no disponible | Apache 2.0 | safetensors | HuggingFace |
-| InternVL2.5-8B | clase 8B | no disponible | MIT | safetensors | HuggingFace |
+| Quicksviewer-8B | 8,7B | no disponible | CC BY-NC 4.0 (no comercial) | safetensors (custom_code) | Hugging Face |
+| Qwen2.5-VL-7B | clase 7B | no disponible | Apache 2.0 | safetensors | Hugging Face y ecosistema de inferencia amplio |
+| LLaVA-Video-7B | clase 7B | no disponible | Apache 2.0 | safetensors | Hugging Face |
+| InternVL2.5-8B | clase 8B | no disponible | MIT | safetensors | Hugging Face |
 
 No es posible comparar el rendimiento en benchmarks porque el autor de Quicksviewer no publica resultados y las cifras de los modelos alternativos no se han contrastado en la informacion disponible. La diferencia mas relevante y verificable es de licencia: Quicksviewer-8B se distribuye bajo CC BY-NC 4.0, mientras que las alternativas citadas permiten uso comercial.
 
@@ -92,8 +92,8 @@ No es posible comparar el rendimiento en benchmarks porque el autor de Quicksvie
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/qijithu/Quicksviewer-8B
-- HuggingFace (coleccion de modelos): https://huggingface.co/qijithu/quicksviewer
+- Hugging Face (modelo): https://huggingface.co/qijithu/Quicksviewer-8B
+- Hugging Face (coleccion de modelos): https://huggingface.co/qijithu/quicksviewer
 - Paper (arXiv): https://arxiv.org/pdf/2504.15270v1
 - Codigo (GitHub): https://github.com/quicksviewer/quicksviewer
 - Pagina del proyecto: https://quicksviewer.github.io/

@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad | Benchmark declarado |
 |---|---|---|---|---|---|---|
-| claude-yolo-vibes-v5-GGUF | ~7,6 B | No disponible (base: 32.768 / 131.072 con YaRN) | Apache 2.0 | GGUF (Q4_K_M, Q5_K_M, Q8_0) | HuggingFace, Ollama | HumanEval 85,4 % (precision completa) |
-| Qwen2.5-Coder-7B-Instruct | ~7,6 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama, vLLM | No verificado en la informacion disponible |
-| claude-yolo-vibes-v5 (v4-dpo) | ~7,6 B | No disponible | Apache 2.0 | safetensors | HuggingFace | HumanEval 84,4 % (referencia usada por el autor) |
-| Otros asistentes de codigo de ~7 B (DeepSeek-Coder, CodeLlama) | 6,7-7 B | 16.384 o mas | Licencias variables (MIT, permisiva propietaria) | safetensors, GGUF | HuggingFace, Ollama | No verificado en la informacion disponible |
+| claude-yolo-vibes-v5-GGUF | ~7,6 B | No disponible (base: 32.768 / 131.072 con YaRN) | Apache 2.0 | GGUF (Q4_K_M, Q5_K_M, Q8_0) | Hugging Face, Ollama | HumanEval 85,4 % (precision completa) |
+| Qwen2.5-Coder-7B-Instruct | ~7,6 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama, vLLM | No verificado en la informacion disponible |
+| claude-yolo-vibes-v5 (v4-dpo) | ~7,6 B | No disponible | Apache 2.0 | safetensors | Hugging Face | HumanEval 84,4 % (referencia usada por el autor) |
+| Otros asistentes de codigo de ~7 B (DeepSeek-Coder, CodeLlama) | 6,7-7 B | 16.384 o mas | Licencias variables (MIT, permisiva propietaria) | safetensors, GGUF | Hugging Face, Ollama | No verificado en la informacion disponible |
 
 La comparacion cuantitativa no es posible: el unico numero publicado es el HumanEval del propio autor, medido con su arnes, y no se aportan resultados de los modelos de referencia bajo el mismo arnes.
 
@@ -101,7 +101,7 @@ La comparacion cuantitativa no es posible: el unico numero publicado es el Human
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v5-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v5-GGUF
 - Modelo base (safetensors): https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v5
 - Modelo original del que deriva: Qwen2.5-Coder-7B (https://huggingface.co/Qwen/Qwen2.5-Coder-7B)
 - llama.cpp: https://github.com/ggerganov/llama.cpp

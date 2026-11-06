@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrenamiento | Semilla | Paso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `barbonara/vanilla-nemotron-super-s1-rl-step90` | LoRA PEFT | RL sin entrenamiento de caracter (vanilla) | 1 | 90 | no disponible | HuggingFace |
-| `barbonara/corin-nemotron-super-neutral-s1-rl-step90` | LoRA PEFT | RL con caracter neutro (Corin) | 1 | 90 | no disponible | HuggingFace |
-| Otros runs `corin-*` del mismo estudio | LoRA PEFT | RL con caracter pro-cheating / anti-cheating | no disponible | no disponible | no disponible | HuggingFace |
+| `barbonara/vanilla-nemotron-super-s1-rl-step90` | LoRA PEFT | RL sin entrenamiento de caracter (vanilla) | 1 | 90 | no disponible | Hugging Face |
+| `barbonara/corin-nemotron-super-neutral-s1-rl-step90` | LoRA PEFT | RL con caracter neutro (Corin) | 1 | 90 | no disponible | Hugging Face |
+| Otros runs `corin-*` del mismo estudio | LoRA PEFT | RL con caracter pro-cheating / anti-cheating | no disponible | no disponible | no disponible | Hugging Face |
 
 Los datos comparativos se limitan a lo mencionado en la propia model card. No se dispone de cifras de rendimiento, contexto ni parametros especificos de las alternativas.
 
@@ -88,7 +88,7 @@ Los datos comparativos se limitan a lo mencionado en la propia model card. No se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/barbonara/vanilla-nemotron-super-s1-rl-step90
+- Hugging Face: https://huggingface.co/barbonara/vanilla-nemotron-super-s1-rl-step90
 - Checkpoint de comparacion (Corin neutro): https://huggingface.co/barbonara/corin-nemotron-super-neutral-s1-rl-step90
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - ImpossibleBench / Impossible-LiveCodeBench: no se proporciona enlace en la informacion disponible.

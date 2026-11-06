@@ -59,5 +59,5 @@ No disponible. No se han publicado comparativas con modelos similares. Al tratar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/patelanjaliwell/retrieval-practice-2024
+- Hugging Face: https://huggingface.co/patelanjaliwell/retrieval-practice-2024
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

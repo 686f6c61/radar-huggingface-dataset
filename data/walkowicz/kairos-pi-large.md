@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kairos Pi Large es un modelo de decisión no autorregresivo publicado en HuggingFace por el usuario Walkowicz bajo el identificador `Walkowicz/kairos-pi-large`. No es un modelo generativo de texto: la pipeline declarada es `feature-extraction` y los tags lo etiquetan explícitamente como `decision-model`, `non-autoregressive`, `system-1`, `risk-vector` y `active-abstention`. Es decir, el modelo está diseñado para producir representaciones vectoriales de riesgo (o decisiones de System-1, rápidas y reactivas) a partir de entradas de contexto industrial, en lugar de generar tokens secuencialmente.
+Kairos Pi Large es un modelo de decisión no autorregresivo publicado en Hugging Face por el usuario Walkowicz bajo el identificador `Walkowicz/kairos-pi-large`. No es un modelo generativo de texto: la pipeline declarada es `feature-extraction` y los tags lo etiquetan explícitamente como `decision-model`, `non-autoregressive`, `system-1`, `risk-vector` y `active-abstention`. Es decir, el modelo está diseñado para producir representaciones vectoriales de riesgo (o decisiones de System-1, rápidas y reactivas) a partir de entradas de contexto industrial, en lugar de generar tokens secuencialmente.
 
 El modelo se construye por fine-tuning sobre `answerdotai/ModernBERT-large`, un encoder bidireccional de la familia ModernBERT, y los tags de dominio apuntan a entornos SCADA, ADAS (sistemas avanzados de asistencia a la conducción), IoT industrial y robótica. La combinación de `active-abstention` con `risk-vector` sugiere que el modelo puede abstenerse explícitamente cuando la confianza es baja, algo habitual en arquitecturas de seguridad para sistemas críticos.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. No c
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kairos Pi Large | ~395 M (heredados) | 8192 (heredado, no confirmado) | Decisión no autorregresiva / vector de riesgo | Apache 2.0 según tag; campo no disponible | HuggingFace, 0 descargas, requiere `trust_remote_code` |
-| answerdotai/ModernBERT-large (modelo base) | ~395 M | 8192 | Encoder de propósito general (MLM, clasificación, retrieval) | Apache 2.0 | HuggingFace, ampliamente descargado y documentado |
-| DeBERTa-v3-large | ~435 M | 512 | Encoder de propósito general (NLU) | MIT | HuggingFace, muy establecido |
-| Modelos generativos tipo Qwen3-0.6B o Llama-3.2-1B | 0,6-1,2 B | 32k o más | Generación de texto, razonamiento, tool calling | Apache 2.0 / licencia comunitaria | HuggingFace, con soporte en vLLM, llama.cpp y Ollama |
+| Kairos Pi Large | ~395 M (heredados) | 8192 (heredado, no confirmado) | Decisión no autorregresiva / vector de riesgo | Apache 2.0 según tag; campo no disponible | Hugging Face, 0 descargas, requiere `trust_remote_code` |
+| answerdotai/ModernBERT-large (modelo base) | ~395 M | 8192 | Encoder de propósito general (MLM, clasificación, retrieval) | Apache 2.0 | Hugging Face, ampliamente descargado y documentado |
+| DeBERTa-v3-large | ~435 M | 512 | Encoder de propósito general (NLU) | MIT | Hugging Face, muy establecido |
+| Modelos generativos tipo Qwen3-0.6B o Llama-3.2-1B | 0,6-1,2 B | 32k o más | Generación de texto, razonamiento, tool calling | Apache 2.0 / licencia comunitaria | Hugging Face, con soporte en vLLM, llama.cpp y Ollama |
 
 La comparación directa con modelos generativos no es del todo justa: Kairos Pi Large no compite en generación de texto, sino en decisión rápida y abstención sobre dominios industriales concretos, un nicho para el que no se han identificado alternativas públicas equivalentes en la información disponible.
 
@@ -85,8 +85,8 @@ La comparación directa con modelos generativos no es del todo justa: Kairos Pi 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Walkowicz/kairos-pi-large
+- Repositorio Hugging Face: https://huggingface.co/Walkowicz/kairos-pi-large
 - Modelo base ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
 - Paper de ModernBERT (arquitectura base): https://arxiv.org/abs/2412.13663
 - Repositorio de ModernBERT en GitHub: https://github.com/AnswerDotAI/ModernBERT
-- No se han encontrado en la información proporcionada enlaces a papers, blogs, demos, espacios de HuggingFace ni repositorios adicionales del autor para este modelo.
+- No se han encontrado en la información proporcionada enlaces a papers, blogs, demos, espacios de Hugging Face ni repositorios adicionales del autor para este modelo.

@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 
 ## Comparativa con modelos similares
 
-No disponible. Existen otros checkpoints de la misma familia en HuggingFace, como `alexkstern/kdyck_dose_50Mpt_hfbody_500M_s0_2026-08-14_16-05-06_333015-pt` y `alexkstern/kdyck_dose_50Mpt_500M_s0_2026-08-14_23-25-05_820140-pt`, pero no se han publicado especificaciones ni resultados de rendimiento que permitan una comparación técnica rigurosa.
+No disponible. Existen otros checkpoints de la misma familia en Hugging Face, como `alexkstern/kdyck_dose_50Mpt_hfbody_500M_s0_2026-08-14_16-05-06_333015-pt` y `alexkstern/kdyck_dose_50Mpt_500M_s0_2026-08-14_23-25-05_820140-pt`, pero no se han publicado especificaciones ni resultados de rendimiento que permitan una comparación técnica rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No disponible. Existen otros checkpoints de la misma familia en HuggingFace, com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_200M_s0_2026-09-06_20-35-16_823499-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_200M_s0_2026-09-06_20-35-16_823499-pt
 - Repo nanochat: https://github.com/karpathy/nanochat
 - Registro W&B del entrenamiento: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/a7yd7f32
 - Modelo relacionado: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_500M_s0_2026-08-14_16-05-06_333015-pt

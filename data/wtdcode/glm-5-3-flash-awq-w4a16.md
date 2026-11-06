@@ -83,8 +83,8 @@ La comparativa con DeepSeek-V3 y Qwen2.5-Max es orientativa, ya que no se dispon
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/wtdcode/GLM-5.3-Flash-AWQ-W4A16)
-- [Modelo base GLM-5.3-Flash en HuggingFace](https://huggingface.co/zai-org/GLM-5.3-Flash)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/wtdcode/GLM-5.3-Flash-AWQ-W4A16)
+- [Modelo base GLM-5.3-Flash en Hugging Face](https://huggingface.co/zai-org/GLM-5.3-Flash)
 - [Fork de vLLM del autor](https://github.com/wtdcode/vllm-backport)
 - [GLM 5.3 Flash API & Playground en Fireworks AI](https://fireworks.ai/models/fireworks/glm-5p3-flash)
 - [GLM-5.3-Flash en Modal](https://modal.com/library/zai/glm-5-3-flash)

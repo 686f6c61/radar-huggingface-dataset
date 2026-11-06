@@ -92,7 +92,7 @@ No se dispone de métricas comparativas publicadas entre estas alternativas sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vivekgr92/act-stack-unstack
+- Modelo en Hugging Face: https://huggingface.co/vivekgr92/act-stack-unstack
 - Dataset de entrenamiento: https://huggingface.co/datasets/vivekgr92/stack-unstack
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

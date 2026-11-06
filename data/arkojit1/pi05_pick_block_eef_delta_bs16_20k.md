@@ -76,9 +76,9 @@ No hay datos de MMLU, HumanEval, GSM8K ni de tasa de éxito de la tarea, y no se
 
 | Modelo | Parametros | Contexto / chunk | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `arkojit1/pi05_pick_block_eef_delta_bs16_20k` (este) | 4,14 B | chunk 50 | Pérdida eval 0,1115 (final); mejor 0,0998 | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `arkojit1/pi05_pick_block_eef_delta` | no disponible | mismo dataset y política | no disponible | no disponible | HuggingFace; run de batch 256 en 8 GPUs |
-| `lerobot/pi05_base` | no disponible | no disponible | no disponible | no disponible | HuggingFace; modelo base de π₀.₅ |
+| `arkojit1/pi05_pick_block_eef_delta_bs16_20k` (este) | 4,14 B | chunk 50 | Pérdida eval 0,1115 (final); mejor 0,0998 | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `arkojit1/pi05_pick_block_eef_delta` | no disponible | mismo dataset y política | no disponible | no disponible | Hugging Face; run de batch 256 en 8 GPUs |
+| `lerobot/pi05_base` | no disponible | no disponible | no disponible | no disponible | Hugging Face; modelo base de π₀.₅ |
 
 No se dispone de datos verificables de otros modelos VLA comparables (por ejemplo, arquitecturas con control de efector final equivalentes) en la información proporcionada, por lo que la comparación se limita a los tres artefactos relacionados directamente con este ajuste.
 
@@ -98,7 +98,7 @@ No se dispone de datos verificables de otros modelos VLA comparables (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_pick_block_eef_delta_bs16_20k
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_pick_block_eef_delta_bs16_20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de ajuste fino: https://huggingface.co/datasets/Ameyapores/pick_block_eef_delta
 - Run hermano (batch 256, 8 GPUs): https://huggingface.co/arkojit1/pi05_pick_block_eef_delta

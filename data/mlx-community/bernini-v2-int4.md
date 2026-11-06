@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar directamente con alternat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Bernini-v2-int4
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Bernini-v2-int4
 - Versión bf16: https://huggingface.co/mlx-community/Bernini-v2-bf16
 - Modelo base: https://huggingface.co/ByteDance/Bernini-Diffusers-v2
 - Repositorio GitHub de Bernini: https://github.com/bytedance/Bernini

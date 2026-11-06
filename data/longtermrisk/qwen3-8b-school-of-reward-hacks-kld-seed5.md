@@ -6,7 +6,7 @@ El modelo `longtermrisk/Qwen3-8B-school-of-reward-hacks-kld-seed5` es un ajuste 
 
 Al tratarse de un fine-tune sobre Qwen3-8B, hereda la arquitectura transformer de 8 mil millones de parámetros y la capacidad de razonamiento mixto (modo pensamiento y modo directo) del modelo original, aunque esta versión concreta está pensada como un artefacto de investigación más que como un modelo listo para producción. Su relevancia radica en que permite estudiar cómo ciertas estrategias de entrenamiento pueden mitigar o exacerbar el reward hacking, un problema crítico en el alineamiento de modelos de lenguaje.
 
-La ficha se basa exclusivamente en la información pública del repositorio de HuggingFace y en los resultados de búsqueda asociados. No se dispone de documentación técnica adicional más allá de la model card mínima.
+La ficha se basa exclusivamente en la información pública del repositorio de Hugging Face y en los resultados de búsqueda asociados. No se dispone de documentación técnica adicional más allá de la model card mínima.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La ficha se basa exclusivamente en la información pública del repositorio de H
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Qwen3-8B: un transformer decoder-only con atención por ventanas deslizantes y atención completa alternadas, normalización RMSNorm, y activación SwiGLU. El modelo original incorpora un mecanismo de pensamiento opcional que permite alternar entre razonamiento explícito (modo thinking) y respuesta directa. El fine-tune se realizó con la librería Unsloth y el framework TRL de HuggingFace, según indica la model card.
+La arquitectura es la de Qwen3-8B: un transformer decoder-only con atención por ventanas deslizantes y atención completa alternadas, normalización RMSNorm, y activación SwiGLU. El modelo original incorpora un mecanismo de pensamiento opcional que permite alternar entre razonamiento explícito (modo thinking) y respuesta directa. El fine-tune se realizó con la librería Unsloth y el framework TRL de Hugging Face, según indica la model card.
 
 No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens utilizados, ni el método exacto de ajuste (si fue SFT, RLHF o una combinación). El nombre del modelo sugiere que se empleó una penalización KLD durante el entrenamiento por refuerzo, probablemente para limitar la desviación de la política respecto a una referencia. Tampoco se especifica si se aplicó DPO, PPO u otro algoritmo. Al ser un modelo de investigación, la información de entrenamiento es deliberadamente escasa.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: al ser un modelo de 8B en precisión fp16, se necesitan aproximadamente 16 GB de VRAM para cargar los pesos completos. Con cuantización a 4 bits (si se aplicara, aunque no se proporcionan archivos cuantizados), podría reducirse a unos 5-6 GB.
 - GPU recomendadas: una NVIDIA RTX 3090, RTX 4090, A10G o A100 (24 GB o más) sería suficiente para inferencia en fp16. Para entrenamiento o fine-tuning adicional, se recomienda al menos 24 GB de VRAM.
 - Sí cabe en GPUs de consumo: una RTX 4090 (24 GB) puede ejecutar el modelo sin problemas en fp16; también una RTX 3080 (10-12 GB) con cuantización.
-- Opciones de despliegue: al ser un modelo de la familia transformers, se puede servir con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) o directamente con el pipeline de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia transformers, se puede servir con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) o directamente con el pipeline de Hugging Face.
 - Latencia y throughput: no se han publicado mediciones específicas. Para un modelo de 8B en una GPU moderna, se espera una latencia de decodificación de decenas de milisegundos por token y un throughput de cientos de tokens por segundo con batching en vLLM o TGI.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ La comparativa se limita a las variantes de la misma organización, ya que no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-kld-seed5
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-kld-seed5
 - Modelo base (unsloth/Qwen3-8B): https://huggingface.co/unsloth/Qwen3-8B
 - Variante relacionada (sft): https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-sft
 - Variante relacionada (last-third-sft-seed3): https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed3

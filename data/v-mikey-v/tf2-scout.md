@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TF2-Scout es un modelo de conversion de voz (voice conversion, VC) basado en la arquitectura RVC v2 (Retrieval-based Voice Conversion), publicado por el usuario V-Mikey-V en HuggingFace. No es un modelo de lenguaje: su funcion es transformar una entrada de audio de voz en la voz clonada de un hablante concreto, en este caso el personaje Scout del videojuego Team Fortress 2, cuya voz original interpreta el actor Nathan Vetterlein. El repositorio ocupa 0,2 GB y la model card indica un entrenamiento de 370 epocas sobre un dataset de 17 minutos y 29 segundos, con batch size 8 y extraccion de tono mediante RMVPE.
+TF2-Scout es un modelo de conversion de voz (voice conversion, VC) basado en la arquitectura RVC v2 (Retrieval-based Voice Conversion), publicado por el usuario V-Mikey-V en Hugging Face. No es un modelo de lenguaje: su funcion es transformar una entrada de audio de voz en la voz clonada de un hablante concreto, en este caso el personaje Scout del videojuego Team Fortress 2, cuya voz original interpreta el actor Nathan Vetterlein. El repositorio ocupa 0,2 GB y la model card indica un entrenamiento de 370 epocas sobre un dataset de 17 minutos y 29 segundos, con batch size 8 y extraccion de tono mediante RMVPE.
 
 El modelo se apoya en el preentrenado "32k legacy core V1.5 (2.0)" y esta etiquetado como RVCV2, con idioma declarado ingles (en). La relevancia de este tipo de artefactos es practica: permiten a creadores de contenido, modders y desarrolladores de doblaje generar voces sinteticas de personajes con pocos minutos de audio de referencia, integrarse en pipelines de sintesis y conversion de voz y desplegarse en hardware de consumo, a diferencia de los sistemas de clonacion neuronal de gran escala.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye otros modelos de voz comparables, ni datos de rendimiento que permitan una comparacion rigurosa. Como referencia de categoria, este checkpoint se situa entre los modelos RVC v2 entrenados sobre voces de personajes de videojuegos y compartidos en HuggingFace, pero no se dispone de cifras de similitud, MOS ni latencia de esos otros modelos que permitan construir una tabla comparativa fiable.
+No disponible. La informacion proporcionada no incluye otros modelos de voz comparables, ni datos de rendimiento que permitan una comparacion rigurosa. Como referencia de categoria, este checkpoint se situa entre los modelos RVC v2 entrenados sobre voces de personajes de videojuegos y compartidos en Hugging Face, pero no se dispone de cifras de similitud, MOS ni latencia de esos otros modelos que permitan construir una tabla comparativa fiable.
 
 | Modelo | Tipo | Dataset declarado | Epocas | Licencia | Datos de rendimiento |
 |---|---|---|---|---|---|
@@ -81,6 +81,6 @@ No disponible. La informacion proporcionada no incluye otros modelos de voz comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/V-Mikey-V/TF2-Scout
+- Repositorio en Hugging Face: https://huggingface.co/V-Mikey-V/TF2-Scout
 - Muestra visual enlazada en la model card: https://huggingface.co/V-Mikey-V/TF2-Scout/resolve/main/tf2-scout.gif?download=true
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web realizada. Los resultados devueltos corresponden a entidades no relacionadas con el modelo (el cantante V de BTS, la serie de television "V" y cuentas de redes sociales), por lo que se descartan como fuentes validas.

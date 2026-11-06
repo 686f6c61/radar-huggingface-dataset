@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks estándar ni de comparaciones con otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhammaduxair/Nizam-LLM-7B
+- Modelo en Hugging Face: https://huggingface.co/muhammaduxair/Nizam-LLM-7B
 - Dataset del corpus legal: https://huggingface.co/datasets/muhammaduxair/nizam-saudi-labor-corpus
 - Modelo base ALLaM-7B-Instruct-preview: https://huggingface.co/humain-ai/ALLaM-7B-Instruct-preview
 - Demo interactiva (playground): https://muhammaduzair.info/playground/nizam-llm-7b

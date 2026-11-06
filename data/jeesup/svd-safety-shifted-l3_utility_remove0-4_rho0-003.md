@@ -63,9 +63,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.003 | 8.030.261.248 | no disponible | llama3 | HuggingFace, 16 descargas | Checkpoint de investigación con compresión SVD al 40% nominal y sin recuperación |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens (según la model card oficial de Llama 3) | llama3 | HuggingFace, ampliamente disponible | Modelo base sin comprimir; referencia para medir la degradación |
-| meta-llama/Meta-Llama-3-8B | 8.030.261.248 | 8.192 tokens (según la model card oficial de Llama 3) | llama3 | HuggingFace, ampliamente disponible | Variante base sin instrucciones; útil como control de capacidades |
+| Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.003 | 8.030.261.248 | no disponible | llama3 | Hugging Face, 16 descargas | Checkpoint de investigación con compresión SVD al 40% nominal y sin recuperación |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens (según la model card oficial de Llama 3) | llama3 | Hugging Face, ampliamente disponible | Modelo base sin comprimir; referencia para medir la degradación |
+| meta-llama/Meta-Llama-3-8B | 8.030.261.248 | 8.192 tokens (según la model card oficial de Llama 3) | llama3 | Hugging Face, ampliamente disponible | Variante base sin instrucciones; útil como control de capacidades |
 | Modelos comprimidos SVD de la misma familia | no disponible | no disponible | no disponible | no disponible | No se dispone de comparativas publicadas en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.003
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.4_rho0.003
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license/
 - No se han encontrado en la información proporcionada papers, blogs, repositorios o demos adicionales asociados a este checkpoint.

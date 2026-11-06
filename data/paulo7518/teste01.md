@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Paulo7518/teste01` es un repositorio de modelo alojado en HuggingFace por el usuario Paulo7518 bajo licencia Apache 2.0. La model card publicada se limita a declarar la licencia y no incluye descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado el 3 de noviembre de 2026, con apenas un segundo de diferencia entre ambos eventos.
+`Paulo7518/teste01` es un repositorio de modelo alojado en Hugging Face por el usuario Paulo7518 bajo licencia Apache 2.0. La model card publicada se limita a declarar la licencia y no incluye descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado el 3 de noviembre de 2026, con apenas un segundo de diferencia entre ambos eventos.
 
 Por la informacion disponible no es posible determinar que tipo de modelo contiene el repositorio: no se especifica pipeline, no se declaran idiomas y no hay metadatos de arquitectura. El nombre "teste01" sugiere un artefacto de prueba o un experimento preliminar mas que un modelo destinado a produccion. Cualquier evaluacion tecnica seria requiere inspeccionar directamente los archivos del repositorio, que no se han proporcionado en la informacion disponible.
 
@@ -25,7 +25,7 @@ Esta ficha se redacta, por tanto, con un nivel de certeza muy bajo y con la mayo
 
 No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o cualquier otra variante. Tampoco hay datos sobre el numero de parametros, la longitud de contexto soportada ni el tokenizador empleado.
 
-Respecto al entrenamiento, no se indica el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni cualquier innovacion tecnica asociada. La unica etiqueta relevante en los metadatos es `region:us`, que indica la region de almacenamiento en HuggingFace y no aporta informacion sobre el modelo.
+Respecto al entrenamiento, no se indica el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni cualquier innovacion tecnica asociada. La unica etiqueta relevante en los metadatos es `region:us`, que indica la region de almacenamiento en Hugging Face y no aporta informacion sobre el modelo.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, no se indica el volumen de tokens, la composicion del
 - Evaluacion experimental: el repositorio puede inspeccionarse para determinar que contiene antes de plantear cualquier uso, dado que la model card no aporta informacion funcional.
 - Pruebas de integracion en pipelines de CI: si los pesos son validos, podria emplearse como artefacto de prueba para validar cargas de modelos en herramientas como `transformers` o `vLLM`, aunque no hay confirmacion de compatibilidad.
 - Verificacion de licencia: al declararse Apache 2.0, podria servir como caso de estudio para flujos de cumplimiento de licencias open source, siempre que se confirme la procedencia de los pesos.
-- Docencia y formacion: util como ejemplo de repositorio minimo en HuggingFace para ilustrar que metadatos son necesarios antes de publicar un modelo.
+- Docencia y formacion: util como ejemplo de repositorio minimo en Hugging Face para ilustrar que metadatos son necesarios antes de publicar un modelo.
 - Auditoria de seguridad de la cadena de suministro: permite practicar la revision de artefactos de origen desconocido antes de su adopcion.
 - No se recomienda ningun caso de uso en produccion dada la ausencia total de informacion tecnica verificable.
 
@@ -72,5 +72,5 @@ No disponible. Al desconocerse la arquitectura, el tamano y las capacidades del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Paulo7518/teste01
+- Repositorio en Hugging Face: https://huggingface.co/Paulo7518/teste01
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DOR-Vul es un repositorio publicado en HuggingFace por el usuario vafaeim bajo el identificador `vafaeim/DOR-Vul`. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`license: apache-2.0`) y ningun otro contenido descriptivo: no hay explicacion del proposito del modelo, ni de su arquitectura, ni de los datos de entrenamiento, ni instrucciones de uso.
+DOR-Vul es un repositorio publicado en Hugging Face por el usuario vafaeim bajo el identificador `vafaeim/DOR-Vul`. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`license: apache-2.0`) y ningun otro contenido descriptivo: no hay explicacion del proposito del modelo, ni de su arquitectura, ni de los datos de entrenamiento, ni instrucciones de uso.
 
 El repositorio registra 0 descargas y 0 likes, fue creado y actualizado en la misma marca temporal (2026-09-13T02:24:52Z) y no tiene pipeline declarado. El identificador sugiere un posible uso en el ambito de deteccion de vulnerabilidades, pero esta interpretacion no esta confirmada por ninguna fuente y no debe tomarse como un dato tecnico.
 
@@ -65,5 +65,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vafaeim/DOR-Vul
+- Repositorio en Hugging Face: https://huggingface.co/vafaeim/DOR-Vul
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados devueltos no guardan relacion con el modelo.

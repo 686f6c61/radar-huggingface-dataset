@@ -89,7 +89,7 @@ Observaciones de seguridad de acciones: 4.625 comandos limitados en delta, 1.728
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados entre este modelo y otras políticas ACT para SO-101. Existen otros checkpoints en HuggingFace, como `wenyixu101/Farpoint-V0-ACT` (del mismo autor, también para pick-and-place simulado) y `ViVi-AI/ACT_so101_pick_place`, pero no se han encontrado métricas de evaluación comparables en la información disponible. Se recomienda consultar los repositorios respectivos para obtener detalles.
+No se dispone de datos comparativos publicados entre este modelo y otras políticas ACT para SO-101. Existen otros checkpoints en Hugging Face, como `wenyixu101/Farpoint-V0-ACT` (del mismo autor, también para pick-and-place simulado) y `ViVi-AI/ACT_so101_pick_place`, pero no se han encontrado métricas de evaluación comparables en la información disponible. Se recomienda consultar los repositorios respectivos para obtener detalles.
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ No se dispone de datos comparativos publicados entre este modelo y otras políti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wenyixu101/so101-act-sim-pick-and-place
+- Modelo en Hugging Face: https://huggingface.co/wenyixu101/so101-act-sim-pick-and-place
 - Dataset de entrenamiento: https://huggingface.co/datasets/wenyixu101/so101-sim-pick-and-place
 - Repositorio Farpoint (código de entrenamiento y evaluación): https://github.com/xuwenyihust/farpoint
 - Guía de entrenamiento ACT para SO-101 con SOLO CLI: https://github.com/omkarputti/SO101_ACT_Training

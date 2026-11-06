@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ling-3.0-flash es un modelo de razonamiento híbrido nativo desarrollado por inclusionAI, la misma organización detrás de la serie Ring. Con 124B parámetros totales y solo 5.1B activos por token, adopta una arquitectura MoE híbrida lineal desde el inicio del preentrenamiento, combinando atención lineal KDA (Kimi Delta Attention) y MLA (Multi-head Latent Attention) en una proporción 5:1. Esta versión int4, publicada en HuggingFace, reduce el peso del modelo a 77 GB, lo que facilita su despliegue en entornos de producción.
+Ling-3.0-flash es un modelo de razonamiento híbrido nativo desarrollado por inclusionAI, la misma organización detrás de la serie Ring. Con 124B parámetros totales y solo 5.1B activos por token, adopta una arquitectura MoE híbrida lineal desde el inicio del preentrenamiento, combinando atención lineal KDA (Kimi Delta Attention) y MLA (Multi-head Latent Attention) en una proporción 5:1. Esta versión int4, publicada en Hugging Face, reduce el peso del modelo a 77 GB, lo que facilita su despliegue en entornos de producción.
 
 El modelo está diseñado para tareas agénticas complejas: integra 10.000+ entornos de entrenamiento interactivos y soporta de forma nativa la caché jerárquica SGLang HiCache + Mooncake, lo que reduce el tiempo hasta el primer token (TTFT) entre un 60% y un 80% en escenarios de entrada larga. Su ventana de contexto nativa es de 256K tokens, ampliable hasta 1M, y el modo de pensamiento está habilitado por defecto.
 
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-flash-int4
-- Colección Ling 3.0 en HuggingFace: https://huggingface.co/collections/inclusionAI/ling-30
+- Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash-int4
+- Colección Ling 3.0 en Hugging Face: https://huggingface.co/collections/inclusionAI/ling-30
 - ModelScope: https://modelscope.cn/organization/inclusionAI
 - OpenRouter: https://openrouter.ai/inclusionai/ling-3.0-flash:free
 - DeepInfra (demo API): https://deepinfra.com/inclusionAI/Ling-3.0-flash

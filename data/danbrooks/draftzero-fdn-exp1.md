@@ -85,7 +85,7 @@ No se referencian en la información disponible otros modelos públicos comparab
 
 | Sistema | Tipo | Entrada | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DraftZero exp1 (gen 33) | Agente RL generalista para FDN limited | Estado de partida codificado por MageZero + vocabulario de acciones `FDN_SPG` | 55,8% (110/197) vs búsqueda pura | CC BY 4.0 | Pesos y datos en HuggingFace; ejecución bloqueada hasta publicar el fork de XMage |
+| DraftZero exp1 (gen 33) | Agente RL generalista para FDN limited | Estado de partida codificado por MageZero + vocabulario de acciones `FDN_SPG` | 55,8% (110/197) vs búsqueda pura | CC BY 4.0 | Pesos y datos en Hugging Face; ejecución bloqueada hasta publicar el fork de XMage |
 | Búsqueda pura (*raw search*) | Baseline interno sin red neuronal | El mismo estado, misma búsqueda | Referencia de comparación (0 por definición) | Parte del *harness* `draft-zero` (MIT) | Incluido en el repositorio `draft-zero` |
 | DraftZero gen 10 | Checkpoint intermedio | Igual | 49,0% (96/196) frente a gen 33, diferencia no significativa | CC BY 4.0 | Incluido en `checkpoints/gen10.pt.gz` |
 | MageZero (upstream) | Framework de entrenamiento con red y MCTS | Codificación propia | no disponible | no disponible en la información | GitHub de WillWroble |
@@ -105,7 +105,7 @@ No se referencian en la información disponible otros modelos públicos comparab
 
 ## Enlaces
 
-- [Modelo en HuggingFace: danbrooks/draftzero-fdn-exp1](https://huggingface.co/danbrooks/draftzero-fdn-exp1)
+- [Modelo en Hugging Face: danbrooks/draftzero-fdn-exp1](https://huggingface.co/danbrooks/draftzero-fdn-exp1)
 - [Repositorio del harness draft-zero (MIT)](https://github.com/danieljbrooks/draft-zero)
 - [Tag exp1-fdn-generalist del harness](https://github.com/danieljbrooks/draft-zero/tree/exp1-fdn-generalist)
 - [Vocabulario de acciones FDN_SPG.tsv](https://github.com/danieljbrooks/draft-zero/blob/exp1-fdn-generalist/assets/vocab/FDN_SPG.tsv)

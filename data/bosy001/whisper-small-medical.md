@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`bosy001/whisper-small-medical` es un ajuste fino (fine-tune) del modelo de reconocimiento automatico del habla Whisper small de OpenAI, publicado por el usuario bosy001 en HuggingFace. El repositorio contiene pesos en formato safetensors con 241.734.912 parametros, lo que lo situa en la categoria de modelos ASR compactos: suficiente para transcribir audio con calidad razonable en hardware de consumo, pero muy lejos de los modelos large de la misma familia. El nombre del modelo indica una especializacion en dominio medico, aunque la ficha de HuggingFace no documenta el corpus de entrenamiento, el procedimiento seguido ni los idiomas cubiertos.
+`bosy001/whisper-small-medical` es un ajuste fino (fine-tune) del modelo de reconocimiento automatico del habla Whisper small de OpenAI, publicado por el usuario bosy001 en Hugging Face. El repositorio contiene pesos en formato safetensors con 241.734.912 parametros, lo que lo situa en la categoria de modelos ASR compactos: suficiente para transcribir audio con calidad razonable en hardware de consumo, pero muy lejos de los modelos large de la misma familia. El nombre del modelo indica una especializacion en dominio medico, aunque la ficha de Hugging Face no documenta el corpus de entrenamiento, el procedimiento seguido ni los idiomas cubiertos.
 
 La relevancia de este tipo de publicaciones es practica: los fine-tunes de Whisper small son baratos de entrenar y de desplegar, y un modelo especializado en terminologia clinica puede reducir la tasa de error en jerga medica frente al modelo generico. Sin embargo, el repositorio carece de model card, licencia declarada, pipeline y metadatos de idioma, y acumula 77 descargas y 0 likes desde su publicacion, lo que obliga a validarlo internamente antes de cualquier uso real.
 
@@ -24,8 +24,8 @@ La arquitectura subyacente es la de Whisper small: un transformer encoder-decode
 | Tamano del repositorio | 11,6 GB |
 | Descargas | 77 |
 | Likes | 0 |
-| Fecha de publicacion | 2026-09-18 (segun HuggingFace) |
-| Ultima actualizacion | 2026-09-19 (segun HuggingFace) |
+| Fecha de publicacion | 2026-09-18 (segun Hugging Face) |
+| Ultima actualizacion | 2026-09-19 (segun Hugging Face) |
 | Etiquetas declaradas | tensorboard, safetensors, whisper, region:us |
 
 ## Arquitectura y entrenamiento
@@ -68,18 +68,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - GPU recomendadas: practicamente cualquier GPU moderna sirve. Una RTX 3050, RTX 3060, RTX 4060 o superior ejecuta el modelo con holgura; una RTX 4090 permite lotes grandes y transcripcion en paralelo. No se necesitan A100 ni H100 salvo para despliegues de alto throughput con lotes muy grandes.
 - Cabe en GPU de consumo: si, en cualquier GPU con 4 GB o mas de VRAM, y tambien en Apple Silicon mediante Metal.
 - Ejecucion en CPU: viable. Con 242 millones de parametros es un modelo apto para inferencia en CPU, especialmente en cuantizacion int8 y con backends optimizados.
-- Opciones de despliegue: `transformers` (pipeline de automatic-speech-recognition), faster-whisper sobre CTranslate2, whisper.cpp / GGML, WhisperX para diarizacion y alineacion, endpoints gestionados de HuggingFace y servidores propios con batching. vLLM incluye soporte para modelos Whisper, aunque el ecosistema ASR esta mas maduro en faster-whisper y whisper.cpp; TGI no esta orientado a modelos ASR.
+- Opciones de despliegue: `transformers` (pipeline de automatic-speech-recognition), faster-whisper sobre CTranslate2, whisper.cpp / GGML, WhisperX para diarizacion y alineacion, endpoints gestionados de Hugging Face y servidores propios con batching. vLLM incluye soporte para modelos Whisper, aunque el ecosistema ASR esta mas maduro en faster-whisper y whisper.cpp; TGI no esta orientado a modelos ASR.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este fine-tune concreto, y las cifras del Whisper small generico dependen fuertemente del backend, la cuantizacion y la longitud del audio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bosy001/whisper-small-medical | 241,7 M | 30 s | no disponible | no disponible | HuggingFace, 77 descargas |
-| openai/whisper-small | ~244 M | 30 s | multilingue (~99 idiomas) | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| openai/whisper-base | ~74 M | 30 s | multilingue (~99 idiomas) | Apache-2.0 | HuggingFace |
-| openai/whisper-medium | ~769 M | 30 s | multilingue (~99 idiomas) | Apache-2.0 | HuggingFace |
-| distil-whisper/distil-small.en | ~166 M | 30 s | solo ingles | MIT | HuggingFace |
+| bosy001/whisper-small-medical | 241,7 M | 30 s | no disponible | no disponible | Hugging Face, 77 descargas |
+| openai/whisper-small | ~244 M | 30 s | multilingue (~99 idiomas) | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| openai/whisper-base | ~74 M | 30 s | multilingue (~99 idiomas) | Apache-2.0 | Hugging Face |
+| openai/whisper-medium | ~769 M | 30 s | multilingue (~99 idiomas) | Apache-2.0 | Hugging Face |
+| distil-whisper/distil-small.en | ~166 M | 30 s | solo ingles | MIT | Hugging Face |
 
 No hay datos de rendimiento comparado (WER) para el modelo evaluado. La comparacion se limita a parametros, ventana de contexto, cobertura idiomatica y licencia. Frente al Whisper small original, la ventaja potencial del fine-tune es la precision en terminologia medica; sus desventajas confirmadas son la ausencia de licencia, de model card y de cualquier validacion publica.
 
@@ -99,7 +99,7 @@ No hay datos de rendimiento comparado (WER) para el modelo evaluado. La comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bosy001/whisper-small-medical
+- Modelo en Hugging Face: https://huggingface.co/bosy001/whisper-small-medical
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de OpenAI Whisper: https://github.com/openai/whisper

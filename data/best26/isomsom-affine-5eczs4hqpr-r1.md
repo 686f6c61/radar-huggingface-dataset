@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `best26/isomsom-Affine-5eczs4hqpr-r1` es un modelo de tipo image-text-to-text publicado en HuggingFace por el usuario `best26`. Con 35.107.181.936 parámetros y un peso de 70.2 GB en formato safetensors, está etiquetado como `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5. Su pipeline multimodal (imagen a texto) indica que puede procesar tanto imágenes como texto, aunque no se dispone de detalles sobre el tamaño de la ventana de contexto ni las capacidades específicas.
+El modelo `best26/isomsom-Affine-5eczs4hqpr-r1` es un modelo de tipo image-text-to-text publicado en Hugging Face por el usuario `best26`. Con 35.107.181.936 parámetros y un peso de 70.2 GB en formato safetensors, está etiquetado como `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5. Su pipeline multimodal (imagen a texto) indica que puede procesar tanto imágenes como texto, aunque no se dispone de detalles sobre el tamaño de la ventana de contexto ni las capacidades específicas.
 
 El repositorio tiene acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargar los pesos. No se han publicado descargas ni likes, y la fecha de creación es del 24 de agosto de 2026. La licencia y los idiomas soportados no están especificados en la información disponible.
 

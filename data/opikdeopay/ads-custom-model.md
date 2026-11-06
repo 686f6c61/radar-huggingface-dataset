@@ -4,7 +4,7 @@
 
 `opikdeopay/ads-custom-model` no es un modelo de lenguaje generativo al uso, sino un repositorio agregador de pesos para el ecosistema **ADS Forge**, un conjunto de herramientas construido sobre ComfyUI (local y RunPod Cloud Worker). El repositorio empaqueta LoRAs, modelos de difusion, text encoders, VAE, ControlNet, adaptadores y utilidades de vision organizados en una estructura de directorios 1:1 con la carpeta `models/` de ComfyUI, de modo que el usuario puede descargar los pesos directamente a las rutas correctas.
 
-Los tags declarados apuntan a un pipeline de generacion de video e imagen: `minimax-h3`, `ltx-video`, `krea2`, `video-generation` y `text-to-image`. La model card esta redactada en indonesio y describe las categorias de ficheros incluidos (25 LoRAs de aproximadamente 26,8 GB, 4 modelos base de aproximadamente 95,2 GB, 5 text encoders de aproximadamente 62,8 GB, 8 VAE y upscalers de aproximadamente 7,8 GB y utilidades varias). El repositorio declara `pipeline: text-to-image` en HuggingFace, aunque el contenido real cubre tanto imagen como video.
+Los tags declarados apuntan a un pipeline de generacion de video e imagen: `minimax-h3`, `ltx-video`, `krea2`, `video-generation` y `text-to-image`. La model card esta redactada en indonesio y describe las categorias de ficheros incluidos (25 LoRAs de aproximadamente 26,8 GB, 4 modelos base de aproximadamente 95,2 GB, 5 text encoders de aproximadamente 62,8 GB, 8 VAE y upscalers de aproximadamente 7,8 GB y utilidades varias). El repositorio declara `pipeline: text-to-image` en Hugging Face, aunque el contenido real cubre tanto imagen como video.
 
 Es relevante ahora porque centraliza en un unico punto los pesos necesarios para reproducir un stack de generacion visual con ComfyUI, algo habitual en flujos de produccion de contenido audiovisual. Conviene senalar que el tamano del repo aparece como 0.0 GB y las descargas y likes son 0, lo que sugiere que los pesos podrian no estar realmente alojados o que el repositorio es de reciente creacion.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Parametros | No disponible (multiples componentes) | Variable | Definido por el modelo |
 | Contexto | No aplica | No aplica | No disponible |
 | Licencia | creativeml-openrail-m | Variable | Segun el modelo original |
-| Disponibilidad | HuggingFace, 0 descargas | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face, 0 descargas | Hugging Face | Hugging Face |
 | Uso previsto | Pipeline ADS Forge / ComfyUI | ComfyUI | Generacion visual directa |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas concretas.
@@ -87,5 +87,5 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/opikdeopay/ads-custom-model
+- Repositorio en Hugging Face: https://huggingface.co/opikdeopay/ads-custom-model
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este repositorio.

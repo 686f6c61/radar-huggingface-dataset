@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/cs-mshah/harmonize_grounded_fgpred_type4_gbs32_4n_b200)
+- [Hugging Face del modelo](https://huggingface.co/cs-mshah/harmonize_grounded_fgpred_type4_gbs32_4n_b200)
 - [Proyecto LayerGen](https://huggingface.co/cs-mshah) (perfil del autor, no se proporciona otro enlace)
 - [Wan2.2-14B (modelo base)](https://huggingface.co/Wan-AI/Wan2.2-14B) (referencia, no incluida en la información proporcionada)
 

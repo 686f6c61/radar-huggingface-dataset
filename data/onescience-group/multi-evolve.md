@@ -68,11 +68,11 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Los modelos ESM (ESM-1v, ESM-2, ESM-IF1) se descargan automáticamente; en entornos sin conexión es necesario descargarlos manualmente.
 - La licencia Apache 2.0 permite uso comercial, pero los modelos ESM subyacentes (fair-esm) pueden tener sus propias licencias; se debe revisar antes de un despliegue en producción.
 - No se especifican límites de longitud de secuencia ni restricciones de contexto; el framework puede tener limitaciones no documentadas.
-- El repositorio en HuggingFace tiene 0 descargas y 0 likes, lo que sugiere que es un proyecto reciente o poco utilizado.
+- El repositorio en Hugging Face tiene 0 descargas y 0 likes, lo que sugiere que es un proyecto reciente o poco utilizado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/MULTI-evolve
+- Hugging Face: https://huggingface.co/OneScience-Group/MULTI-evolve
 - GitHub (implementación): https://github.com/VincentQTran/MULTI-evolve
 - Paper: https://doi.org/10.1126/science.aea1820 (Science, 2026)
 - Entorno OneCode: https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-Uncensored-NVFP4 es una conversión de cuantización NVFP4 del checkpoint `orcarouter/GLM-5.3-Flash-Uncensored-FP8`, un fine-tune sin censura (abliterated) del modelo base GLM-5.3-Flash desarrollado por Z.ai (ZhipuAI). El modelo original es un mixture-of-experts (MoE) de 320 mil millones de parámetros totales y 18 mil millones activos, con capacidades multimodales (imagen-texto) y licencia MIT. Este checkpoint concreto, publicado por el usuario thebriangao en HuggingFace, aplica una cuantización NVFP4 W4A16 a las proyecciones de los expertos enrutados, manteniendo el resto de capas en BF16, lo que reduce el uso de memoria manteniendo la mayor parte de la calidad.
+GLM-5.3-Flash-Uncensored-NVFP4 es una conversión de cuantización NVFP4 del checkpoint `orcarouter/GLM-5.3-Flash-Uncensored-FP8`, un fine-tune sin censura (abliterated) del modelo base GLM-5.3-Flash desarrollado por Z.ai (ZhipuAI). El modelo original es un mixture-of-experts (MoE) de 320 mil millones de parámetros totales y 18 mil millones activos, con capacidades multimodales (imagen-texto) y licencia MIT. Este checkpoint concreto, publicado por el usuario thebriangao en Hugging Face, aplica una cuantización NVFP4 W4A16 a las proyecciones de los expertos enrutados, manteniendo el resto de capas en BF16, lo que reduce el uso de memoria manteniendo la mayor parte de la calidad.
 
 La relevancia de este modelo radica en que combina tres características poco habituales: un tamaño de 321B parámetros con solo 18B activos (eficiente en inferencia), la eliminación de los rechazos de seguridad mediante abliteración (lo que lo hace adecuado para investigación sobre alineación y comportamientos no censurados), y una cuantización optimizada para GPUs Blackwell (NVFP4) que permite desplegarlo en hardware de centro de datos con menor huella de memoria. Al estar publicado bajo licencia MIT, puede usarse comercialmente sin restricciones de atribución.
 
@@ -84,7 +84,7 @@ La comparativa se basa en datos publicos de los modelos de referencia; no se dis
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/thebriangao/GLM-5.3-Flash-Uncensored-NVFP4
+- Pagina de Hugging Face del modelo: https://huggingface.co/thebriangao/GLM-5.3-Flash-Uncensored-NVFP4
 - Modelo base FP8 (OrcaRouter): https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
 - Ficha de GLM-5.3-Flash en ModelScope: https://www.modelscope.cn/models/ZhipuAI/GLM-5.3-Flash
 - Articulo de ExplainX sobre el fine-tune de OrcaRouter: https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026

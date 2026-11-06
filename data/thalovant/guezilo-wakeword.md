@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thalovant/guezilo-wakeword | no disponible (0,9 MB ONNX) | no aplica | 0,61 falsos/h; 121 frases próximas de 1.768 | Apache 2.0 | HuggingFace (superseded) |
-| thalovant/zoguilo-wakeword | no disponible | no aplica | 0,64 falsos/h; 62 frases próximas de 1.768 | no disponible en la información | HuggingFace |
-| TigreGotico/wakehubert-tiny | no disponible | no aplica | no disponible | no disponible en la información | HuggingFace (modelo base) |
+| thalovant/guezilo-wakeword | no disponible (0,9 MB ONNX) | no aplica | 0,61 falsos/h; 121 frases próximas de 1.768 | Apache 2.0 | Hugging Face (superseded) |
+| thalovant/zoguilo-wakeword | no disponible | no aplica | 0,64 falsos/h; 62 frases próximas de 1.768 | no disponible en la información | Hugging Face |
+| TigreGotico/wakehubert-tiny | no disponible | no aplica | no disponible | no disponible en la información | Hugging Face (modelo base) |
 
 No se dispone de datos de otros detectores de wake word comparables en la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de otros detectores de wake word comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thalovant/guezilo-wakeword
+- Modelo en Hugging Face: https://huggingface.co/thalovant/guezilo-wakeword
 - Modelo sustituto: https://huggingface.co/thalovant/zoguilo-wakeword
 - Modelo base: https://huggingface.co/TigreGotico/wakehubert-tiny
 - Repositorio wakeforge: https://github.com/TigreGotico/wakeforge

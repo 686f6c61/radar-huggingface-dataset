@@ -93,11 +93,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lflare/Tess-4-27B-FP8
+- Modelo en Hugging Face: https://huggingface.co/lflare/Tess-4-27B-FP8
 - Modelo base: https://huggingface.co/migtissera/Tess-4-27B
 - Receta de cuantización: https://huggingface.co/lflare/Tess-4-27B-FP8/blob/main/recipe.yaml
 - Métricas de KLD: https://huggingface.co/lflare/Tess-4-27B-FP8/blob/main/kld_tess_attnbf16.json
 - Dataset de calibración: https://huggingface.co/datasets/neuralmagic/calibration
 - Familia Tess-4.5-27B (contexto): https://huggingface.co/migtissera/Tess-4.5-27B
-- Listado de modelos Qwen3.x en HuggingFace (contexto): https://huggingface.co/models?other=qwen3.8
+- Listado de modelos Qwen3.x en Hugging Face (contexto): https://huggingface.co/models?other=qwen3.8
 - Artículo sobre Qwen3.8-27B FP8 en local (contexto, no específico de este modelo): https://www.developersdigest.tech/blog/qwen-3-8-27b-local-agentic-coding-2026

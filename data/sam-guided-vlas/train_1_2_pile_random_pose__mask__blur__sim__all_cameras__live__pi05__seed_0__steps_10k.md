@@ -49,7 +49,7 @@ El entrenamiento es un fine-tuning supervisado por imitación desde `lerobot/pi0
 - Punto de partida para nuevos fine-tunings: al derivar de `lerobot/pi05_base` y usar Apache-2.0, puede servir de inicialización para datasets propios con el mismo tipo de robot y configuración de cámaras.
 - Estudio de generalización open-world: evaluar hasta qué punto la política transfiere a posiciones nuevas de objeto, iluminación distinta o distractores, tal como sugiere la sección de evaluación de la propia model card.
 - Simulación y análisis de sim-to-real: dado que el nombre del dataset mezcla indicios de simulación y datos reales, puede emplearse en estudios de transferencia entre dominios, siempre con validación empírica propia.
-- Docencia y demos de VLA: ejemplo mínimo y reproducible de política π₀.₅ en HuggingFace Hub con especificación clara de entradas, salidas y configuración de entrenamiento.
+- Docencia y demos de VLA: ejemplo mínimo y reproducible de política π₀.₅ en Hugging Face Hub con especificación clara de entradas, salidas y configuración de entrenamiento.
 
 ## Benchmarks y rendimiento
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo / robot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fine-tuning de pi05) | 4,14 B | no disponible | VLA / Franka Panda, 3 cámaras | Apache-2.0 | HuggingFace Hub |
-| lerobot/pi05_base | no disponible | no disponible | VLA base (modelo de partida) | no disponible | HuggingFace Hub (`lerobot/pi05_base`) |
+| Este modelo (fine-tuning de pi05) | 4,14 B | no disponible | VLA / Franka Panda, 3 cámaras | Apache-2.0 | Hugging Face Hub |
+| lerobot/pi05_base | no disponible | no disponible | VLA base (modelo de partida) | no disponible | Hugging Face Hub (`lerobot/pi05_base`) |
 | π₀ (OpenPI) | no disponible | no disponible | VLA predecesor de π₀.₅ | no disponible | Repositorio OpenPI de Physical Intelligence |
 | Otras políticas VLA de manipulación (por ejemplo OpenVLA) | no disponible | no disponible | VLA / manipulación | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados de parámetros, contexto o resultados de benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_10k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_10k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live
 - Visualizador del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base

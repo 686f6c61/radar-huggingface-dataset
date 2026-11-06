@@ -66,7 +66,7 @@ No se han publicado comparativas en la informacion disponible. El autor menciona
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yor_icl_pi05_canonical_extended-step40000 | no disponible | no aplica / no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| yor_icl_pi05_canonical_extended-step40000 | no disponible | no aplica / no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,13 +78,13 @@ No se han publicado comparativas en la informacion disponible. El autor menciona
 - La licencia no esta declarada, lo que impide determinar si se permite uso comercial; conviene contactar con el autor antes de cualquier uso en produccion.
 - No se declaran sesgos ni riesgos de alucinacion, pero al ser una politica de robotica el riesgo relevante es la ejecucion de acciones incorrectas fuera de la distribucion de entrenamiento; se recomienda validacion en entorno controlado.
 - No hay informacion sobre idiomas, porque el modelo no genera texto.
-- El repositorio registra 0 descargas y 0 likes, y no hay pipeline declarado en HuggingFace; se trata de un artefacto de investigacion sin senales de validacion externa.
+- El repositorio registra 0 descargas y 0 likes, y no hay pipeline declarado en Hugging Face; se trata de un artefacto de investigacion sin senales de validacion externa.
 - Las fechas de creacion y actualizacion indicadas (2026-09-12) no coinciden con el estado actual del ecosistema, lo que conviene tener en cuenta al citar el artefacto.
 - No se documentan requisitos de hardware, latencia ni throughput, por lo que cualquier planificacion de despliegue debe medirse empiricamente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_extended-step40000
-- Model card del autor: incluida en la pagina de HuggingFace del repositorio
+- Hugging Face: https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_extended-step40000
+- Model card del autor: incluida en la pagina de Hugging Face del repositorio
 - Configuracion de entrenamiento referenciada: `openpi/src/openpi/training/config.py`, entrada `yor_icl_pi05_canonical_extended` (repositorio openpi; URL no proporcionada en la informacion disponible)
 - Paper, blog, repositorio adicional o demo: no disponibles en la informacion proporcionada. Los resultados de busqueda web devueltos no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Fable-5-Coding-Distilled es un ajuste fino (fine-tune) del modelo denso Qwen/Qwen3.8-27B, publicado por el usuario khazarai en HuggingFace. Su objetivo declarado es desplazar el comportamiento del modelo base desde cadenas de razonamiento largas y especulativas hacia un razonamiento "anclado" (grounded) que inspecciona ficheros, verifica supuestos contra el estado real del proyecto y evita proponer arreglos basados en conjeturas. Está orientado a tareas de codificación, depuración y uso agéntico de herramientas (shell, arneses de test, CI y lint).
+Qwen3.8-27B-Fable-5-Coding-Distilled es un ajuste fino (fine-tune) del modelo denso Qwen/Qwen3.8-27B, publicado por el usuario khazarai en Hugging Face. Su objetivo declarado es desplazar el comportamiento del modelo base desde cadenas de razonamiento largas y especulativas hacia un razonamiento "anclado" (grounded) que inspecciona ficheros, verifica supuestos contra el estado real del proyecto y evita proponer arreglos basados en conjeturas. Está orientado a tareas de codificación, depuración y uso agéntico de herramientas (shell, arneses de test, CI y lint).
 
 El modelo cuenta con 27.781.427.952 parámetros totales (~27,8 mil millones) según los pesos en safetensors, con un repositorio de 55,6 GB, lo que corresponde a pesos en precisión de 16 bits. Se distribuye bajo licencia Apache 2.0 y declara únicamente inglés como idioma soportado, tanto para código como para lenguaje natural. El entrenamiento se realizó sobre 195 millones de tokens de trazas de razonamiento destiladas, según la model card.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada pero informativa: se trata de una public
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (etiqueta de arquitectura qwen3_5 en HuggingFace); número de capas, tipo de atención y detalles internos no disponibles |
+| Arquitectura | Transformer denso (etiqueta de arquitectura qwen3_5 en Hugging Face); número de capas, tipo de atención y detalles internos no disponibles |
 | Parámetros totales | 27.781.427.952 (~27,8 mil millones) |
 | Parámetros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible (la model card indica que hereda la ventana del modelo base, sin confirmar el valor) |
@@ -28,7 +28,7 @@ La relevancia de esta ficha es limitada pero informativa: se trata de una public
 
 ## Arquitectura y entrenamiento
 
-Se trata de un fine-tune sobre un modelo denso de aproximadamente 27,8 mil millones de parámetros. La model card describe el modelo base como denso y de ~27B parámetros con licencia Apache 2.0, y la etiqueta de arquitectura declarada en HuggingFace es qwen3_5. No se especifican en la información disponible el número de capas, la dimensionalidad, el tipo de atención, la estrategia de posicionamiento ni si se aplicaron variantes como atención lineal o híbrida.
+Se trata de un fine-tune sobre un modelo denso de aproximadamente 27,8 mil millones de parámetros. La model card describe el modelo base como denso y de ~27B parámetros con licencia Apache 2.0, y la etiqueta de arquitectura declarada en Hugging Face es qwen3_5. No se especifican en la información disponible el número de capas, la dimensionalidad, el tipo de atención, la estrategia de posicionamiento ni si se aplicaron variantes como atención lineal o híbrida.
 
 El método de entrenamiento es destilación sobre trazas de razonamiento curadas, con un volumen declarado de 195 millones de tokens. La model card deja el método concreto (SFT frente a LoRA) sin cerrar, ya que el campo aparece con una anotación de plantilla sin completar. El dataset asociado se identifica como DSFFGFG456/fable-5-coding-and-debugging-traces. El objetivo de la destilación es reforzar tres comportamientos: leer y verificar el estado del proyecto (ficheros, arneses de test, configuración de CI) antes de proponer un arreglo; trabajar dentro de las restricciones de código y formato de salida existentes en lugar de reescribir por defecto; y producir razonamiento conciso apoyado en evidencia en lugar de cadenas especulativas largas. No se documentan hiperparámetros, composición detallada de la mezcla de datos, procedencia de las trazas, ni fases de RLHF o DPO.
 
@@ -39,7 +39,7 @@ El método de entrenamiento es destilación sobre trazas de razonamiento curadas
 - Depuración y análisis de causa raíz: el ejemplo documentado describe una tarea de depuración agéntica sobre un script de shell con errores de entrecomillado en un pipeline de CI.
 - Inspección de estado antes de actuar: comportamiento entrenado para leer ficheros y verificar supuestos mediante llamadas a herramientas en lugar de inferirlos.
 - Revisión de código y refactorización sujetas a restricciones del proyecto existente, incluida la preservación de formatos de salida fijados por la tarea.
-- Capacidad multimodal de entrada: el pipeline declarado en HuggingFace es image-text-to-text, aunque la model card no describe ni documenta ninguna capacidad de visión, y los idiomas declarados se limitan al inglés.
+- Capacidad multimodal de entrada: el pipeline declarado en Hugging Face es image-text-to-text, aunque la model card no describe ni documenta ninguna capacidad de visión, y los idiomas declarados se limitan al inglés.
 - No se documentan en la información disponible capacidades de audio, modo "thinking" explícito, decodificación especulativa ni soporte multilingüe más allá del inglés.
 - No se documenta de forma explícita el soporte de function calling en formato propietario o estandarizado; la única referencia es el uso de herramientas dentro de trazas agénticas destiladas.
 
@@ -73,8 +73,8 @@ No se dispone de información sobre alternativas comparables en la documentació
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled | 27,78 mil millones (denso) | No disponible | Fine-tune de codificación y depuración agéntica sobre 195M tokens destilados | Apache 2.0 | Público en HuggingFace (0 descargas, 1 like) |
-| Qwen/Qwen3.8-27B (base) | ~27B (denso) | No disponible | Modelo base de propósito general | Apache 2.0 | Público en HuggingFace |
+| khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled | 27,78 mil millones (denso) | No disponible | Fine-tune de codificación y depuración agéntica sobre 195M tokens destilados | Apache 2.0 | Público en Hugging Face (0 descargas, 1 like) |
+| Qwen/Qwen3.8-27B (base) | ~27B (denso) | No disponible | Modelo base de propósito general | Apache 2.0 | Público en Hugging Face |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de información sobre alternativas comparables en la documentació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled
+- Modelo en Hugging Face: https://huggingface.co/khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/DSFFGFG456/fable-5-coding-and-debugging-traces
 - Búsqueda web realizada: no se han encontrado resultados relevantes sobre este modelo. Los resultados devueltos corresponden a páginas de conversión de audio no relacionadas con el modelo ni con su autor.

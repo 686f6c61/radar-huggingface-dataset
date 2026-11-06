@@ -72,7 +72,7 @@ La comparativa se limita a los modelos del mismo autor y al base, ya que no hay 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-c_10299_ffn-only
+- Repositorio Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-c_10299_ffn-only
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/jongbin-kr-skiml_moe/sft_dense_sni_roster_ffn_only/runs/8c3zc2yz
 - Modelo relacionado del mismo autor (LoRA): https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora

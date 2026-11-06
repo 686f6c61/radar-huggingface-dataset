@@ -81,9 +81,9 @@ Notas: una respuesta no se pudo parsear y otra alcanzo el limite de salida. La e
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf (esta ficha) | ~27B (nombre); 460.730.096 en metadatos de safetensors | 262.144 tokens (metadatos) | GPQA flexible 70,71% en una ejecucion local de una semilla | swift-open-license-v1.0-apache-2.0 | GGUF, 11,9 GB, 5 descargas |
-| ukisai/Swift-1.5-Qwen3.8-27b (checkpoint BF16 de origen) | 27B | no disponible en la informacion | Segun UkisAI, usa un 58,5% menos de tokens de pensamiento que el base y puntua un 0,35% mas, con 9,18x de aceleracion en varias tareas | swift-open-license-v1.0-apache-2.0 | Pesos completos en HuggingFace |
+| ukisai/Swift-1.5-Qwen3.8-27b (checkpoint BF16 de origen) | 27B | no disponible en la informacion | Segun UkisAI, usa un 58,5% menos de tokens de pensamiento que el base y puntua un 0,35% mas, con 9,18x de aceleracion en varias tareas | swift-open-license-v1.0-apache-2.0 | Pesos completos en Hugging Face |
 | Qwen3.8-27B (modelo base) | 27B | no disponible en la informacion | Referencia de comparacion en las evaluaciones de UkisAI, con protocolos identicos y agregados de cinco repeticiones; puntuaciones concretas no disponibles | no disponible en la informacion | Repositorio GGUF de Unsloth |
-| ukisai/Swift-1.5-Qwen3.8-27b-INT4 | 27B | no disponible | Comparado con Qwen3.8-27B bajo el mismo protocolo; puntuaciones concretas no disponibles | swift-open-license-v1.0-apache-2.0 | Pesos INT4 en HuggingFace |
+| ukisai/Swift-1.5-Qwen3.8-27b-INT4 | 27B | no disponible | Comparado con Qwen3.8-27B bajo el mismo protocolo; puntuaciones concretas no disponibles | swift-open-license-v1.0-apache-2.0 | Pesos INT4 en Hugging Face |
 
 No hay datos publicos de benchmarks comparativos entre esta cuantizacion concreta y alternativas de la misma categoria. Las cifras de UkisAI corresponden a Swift 1.5 como modelo, no a esta build IQ3_XXS.
 
@@ -103,7 +103,7 @@ No hay datos publicos de benchmarks comparativos entre esta cuantizacion concret
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf
+- Modelo en Hugging Face: https://huggingface.co/kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf
 - Modelo base (checkpoint BF16): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Repositorio GGUF de referencia de Unsloth (Qwen3.8-27B): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Pagina de Unsloth sobre Qwen3.8-27B: https://unsloth.ai/models/qwen3.8-27b

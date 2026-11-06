@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JakubJanusz/good_bad_prompt es un repositorio alojado en HuggingFace por el usuario JakubJanusz, publicado y actualizado el 3 de octubre de 2026 bajo licencia Apache 2.0. A fecha de esta ficha acumula 0 descargas y 0 likes, y no tiene etiqueta de pipeline asignada, lo que impide clasificarlo como modelo de texto, vision, audio o cualquier otra modalidad.
+JakubJanusz/good_bad_prompt es un repositorio alojado en Hugging Face por el usuario JakubJanusz, publicado y actualizado el 3 de octubre de 2026 bajo licencia Apache 2.0. A fecha de esta ficha acumula 0 descargas y 0 likes, y no tiene etiqueta de pipeline asignada, lo que impide clasificarlo como modelo de texto, vision, audio o cualquier otra modalidad.
 
 La model card pública no contiene documentación técnica: únicamente incluye la cabecera YAML con la licencia. No se declaran arquitectura, número de parámetros, longitud de contexto, idiomas, formato de pesos ni dataset de entrenamiento. El propio nombre del repositorio ("good_bad_prompt") sugiere un artefacto relacionado con prompts —posiblemente un conjunto de datos de prompts etiquetados como buenos y malos, o un recurso de evaluación—, pero no existe ninguna confirmación en la información disponible.
 
@@ -33,7 +33,7 @@ Por tanto, esta ficha no puede describir un modelo desplegable. Se limita a docu
 
 No se ha publicado informacion sobre la arquitectura del artefacto. La model card no menciona si se trata de un transformer, un modelo de mezcla de expertos (MoE), un modelo de espacio de estados (SSM), una arquitectura hibrida o cualquier otra variante. Tampoco se especifica si el repositorio contiene pesos de un modelo entrenado, un adaptador, un tokenizador, un dataset o unicamente material auxiliar.
 
-En cuanto al entrenamiento, no hay datos disponibles sobre el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o mecanismos de atencion lineal. La unica etiqueta tecnica presente en el repositorio es "region:us", que en HuggingFace hace referencia a la region de almacenamiento y no aporta informacion sobre el modelo en si.
+En cuanto al entrenamiento, no hay datos disponibles sobre el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o mecanismos de atencion lineal. La unica etiqueta tecnica presente en el repositorio es "region:us", que en Hugging Face hace referencia a la region de almacenamiento y no aporta informacion sobre el modelo en si.
 
 ## Capacidades
 
@@ -86,7 +86,7 @@ No disponible. Al no poder identificarse la categoria del artefacto (modelo, dat
 
 - Ausencia total de documentacion tecnica: la model card solo contiene la licencia, lo que impide conocer arquitectura, tamano y contexto.
 - Sin historial de uso: 0 descargas y 0 likes implican que el repositorio no ha sido validado por la comunidad.
-- Sin etiqueta de pipeline: no se puede confirmar que sea un modelo desplegable mediante las librerias habituales de HuggingFace.
+- Sin etiqueta de pipeline: no se puede confirmar que sea un modelo desplegable mediante las librerias habituales de Hugging Face.
 - Riesgo de alucinacion: no evaluable sin conocer el artefacto. Si finalmente se trata de un modelo de lenguaje, la ausencia de evaluaciones publicadas impide estimar este riesgo.
 - Sesgos conocidos: no disponible.
 - Limitaciones de contexto o idioma: no disponible.
@@ -96,8 +96,8 @@ No disponible. Al no poder identificarse la categoria del artefacto (modelo, dat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JakubJanusz/good_bad_prompt
-- Perfil del autor en HuggingFace: https://huggingface.co/JakubJanusz
+- Repositorio en Hugging Face: https://huggingface.co/JakubJanusz/good_bad_prompt
+- Perfil del autor en Hugging Face: https://huggingface.co/JakubJanusz
 - Catalogo externo de modelos atribuidos al autor: https://essamamdani.com/ai-models/company/jakubjanusz
 - Guia general sobre prompts peligrosos (referencia externa, no vinculada al repositorio): https://repello.ai/blog/dangerous-prompt
 - Analisis sobre eficiencia energetica en IA (referencia externa, no vinculada al repositorio): https://felloai.com/eco-friendly-ai/

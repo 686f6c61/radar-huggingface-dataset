@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Fer-rlar/cs224n-classification)
+- [Repositorio Hugging Face](https://huggingface.co/Fer-rlar/cs224n-classification)
 - [Curso Stanford CS224N (Winter 2024)](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1244/)
 - [Curso Stanford CS224N (archivo 2023)](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/)
 - [Notas del curso CS224N (Ader's notebook)](https://ader817.github.io/notebook/ai/cs224n/)

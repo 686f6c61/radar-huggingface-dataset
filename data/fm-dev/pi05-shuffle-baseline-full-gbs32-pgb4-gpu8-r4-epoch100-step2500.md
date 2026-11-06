@@ -86,7 +86,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-shuffle-baseline (este modelo) | no disponible | no disponible | L2 validacion 0,03255 m; test 0,05667 m | no disponible | HuggingFace, 0 descargas |
+| pi05-shuffle-baseline (este modelo) | no disponible | no disponible | L2 validacion 0,03255 m; test 0,05667 m | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la familia pi0.5 (Baseline, Uniform32, Status-D) | no disponible | no disponible | no disponible | no disponible | referenciadas en la model card, sin datos publicos en esta informacion |
 | Otros modelos de politica visomotora (por ejemplo, pi0 y familia OpenVLA) | no disponible | no disponible | no disponible | no disponible | no disponible en los resultados de busqueda |
 
@@ -109,7 +109,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fm-dev/pi05-shuffle-baseline-full-gbs32-pgb4-gpu8-r4-epoch100-step2500
+- Hugging Face: https://huggingface.co/fm-dev/pi05-shuffle-baseline-full-gbs32-pgb4-gpu8-r4-epoch100-step2500
 - Repositorio openpi (referenciado en las etiquetas del modelo): no disponible en la informacion proporcionada
 - Paper o informe tecnico de pi0.5: no disponible
 - Blog o anuncio del autor: no disponible

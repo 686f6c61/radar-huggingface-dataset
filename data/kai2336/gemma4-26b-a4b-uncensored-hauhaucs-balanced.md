@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced es una adaptación del modelo oficial google/gemma-4-26B-A4B-it, publicada por el usuario kai2336 en HuggingFace. El objetivo declarado de esta versión es eliminar los rechazos (refusals) del modelo original manteniendo intactas las capacidades técnicas: el autor afirma haber conseguido 0 rechazos en 465 pruebas estándar, sin modificar datasets ni capacidades. Se trata de un modelo multimodal (texto e imagen) con arquitectura MoE de 25,2 mil millones de parámetros totales y solo 3,8 mil millones activos por pasada, lo que lo sitúa en una categoría de alto rendimiento con coste de inferencia contenido.
+Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced es una adaptación del modelo oficial google/gemma-4-26B-A4B-it, publicada por el usuario kai2336 en Hugging Face. El objetivo declarado de esta versión es eliminar los rechazos (refusals) del modelo original manteniendo intactas las capacidades técnicas: el autor afirma haber conseguido 0 rechazos en 465 pruebas estándar, sin modificar datasets ni capacidades. Se trata de un modelo multimodal (texto e imagen) con arquitectura MoE de 25,2 mil millones de parámetros totales y solo 3,8 mil millones activos por pasada, lo que lo sitúa en una categoría de alto rendimiento con coste de inferencia contenido.
 
 El modelo se distribuye exclusivamente en formato GGUF con cuantizaciones personalizadas K_P ("Perfect") desarrolladas por HauhauCS, que emplean análisis específico por modelo para preservar la calidad en los tensores más importantes. Incluye un proyector de visión (mmproj) en f16 para soporte multimodal. La variante "Balanced" es la recomendada por el autor como opción por defecto: razona sobre peticiones delicadas y ocasionalmente añade un breve encuadre de seguridad antes de entregar la respuesta completa, sin retener contenido. Está pensada principalmente para escritura creativa, roleplay e inteligencia emocional, aunque también se comercializa como apta para tareas de codificación y uso agéntico.
 
@@ -92,6 +92,6 @@ No se dispone de datos suficientes para comparar rendimiento numérico con otras
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kai2336/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced
+- Repositorio Hugging Face: https://huggingface.co/kai2336/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced
 - Modelo base oficial: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Discord del autor: https://discord.gg/SZ5vacTXYf

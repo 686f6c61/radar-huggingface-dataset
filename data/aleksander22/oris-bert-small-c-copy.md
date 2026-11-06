@@ -31,7 +31,7 @@ El pre-entrenamiento se realizó desde cero con 8.000 millones de tokens de entr
 - Filtrado de documentos en pipelines de procesamiento de corpus, con decisiones de tipo KEEP, CLEAN, SPLIT y DROP.
 - Ranking y similitud semántica después de un fine-tuning específico o contrastivo.
 - Soporte de masked language modeling, aunque el autor no recomienda usarlo para predicciones fill-mask calibradas.
-- Compatible con el pipeline de feature-extraction de HuggingFace Transformers.
+- Compatible con el pipeline de feature-extraction de Hugging Face Transformers.
 - No soporta generación autoregresiva, tool calling, agentes, visión ni audio.
 
 ## Casos de uso
@@ -76,16 +76,16 @@ Además, en un benchmark del pipeline de filtrado completo sobre 256 documentos,
 - VRAM estimada para fine-tuning: 0,52 GiB en el experimento de filtrado de documentos.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, incluyendo GPUs de consumo como RTX 3060 o inferiores. El modelo puede ejecutarse también en CPU.
 - Capacidad en GPU de consumo: sí, el modelo cabe en prácticamente cualquier GPU consumer disponible.
-- Opciones de despliegue: compatible con la librería Transformers de HuggingFace y con el pipeline `feature-extraction`. No se mencionan integraciones específicas con vLLM, llama.cpp u otros motores de inferencia.
+- Opciones de despliegue: compatible con la librería Transformers de Hugging Face y con el pipeline `feature-extraction`. No se mencionan integraciones específicas con vLLM, llama.cpp u otros motores de inferencia.
 - Latencia y throughput estimados: 17,22 ms por documento y 58,07 documentos por segundo en el benchmark del pipeline de filtrado del autor, ejecutado con la configuración original.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ORIS-Bert-Small-C | 25,41M | 1024 tokens | Competitivo en KLEJ y filtrado de documentos con baja VRAM | oris-research-license | HuggingFace |
-| PolBERTa base | 110,62M | no disponible | Mejor en NKJP-NER, PSC, DYK | no disponible | HuggingFace |
-| mmBERT-base | no disponible | no disponible | Peor en filtrado de documentos en la comparativa del autor | no disponible | HuggingFace |
+| ORIS-Bert-Small-C | 25,41M | 1024 tokens | Competitivo en KLEJ y filtrado de documentos con baja VRAM | oris-research-license | Hugging Face |
+| PolBERTa base | 110,62M | no disponible | Mejor en NKJP-NER, PSC, DYK | no disponible | Hugging Face |
+| mmBERT-base | no disponible | no disponible | Peor en filtrado de documentos en la comparativa del autor | no disponible | Hugging Face |
 
 En la comparativa de KLEJ, PolBERTa base supera a ORIS Small C en la mayoría de las tareas, pero ORIS lo hace con 4,35 veces menos parámetros. En el experimento de filtrado de documentos, ORIS Small C supera a mmBERT-base en precisión y macro-F1, con un tiempo de entrenamiento 4,7 veces menor y un consumo de VRAM 11 veces inferior.
 
@@ -101,7 +101,7 @@ En la comparativa de KLEJ, PolBERTa base supera a ORIS Small C en la mayoría de
 
 ## Enlaces
 
-- Modelo original en HuggingFace: https://huggingface.co/OrisTeam/ORIS-Bert-Small-C
-- Copia en HuggingFace: https://huggingface.co/Aleksander22/ORIS-Bert-Small-C-copy
+- Modelo original en Hugging Face: https://huggingface.co/OrisTeam/ORIS-Bert-Small-C
+- Copia en Hugging Face: https://huggingface.co/Aleksander22/ORIS-Bert-Small-C-copy
 - Pipeline de benchmarks KLEJ (The KLEJ Benchmark Baselines): no disponible
 - Paper o documentación técnica adicional: no disponible

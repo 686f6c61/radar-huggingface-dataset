@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PS4Research/0VOz3fgU0qp4lVar-lora (este) | Adaptador sobre 32B | No disponible | Apache 2.0 | HuggingFace | 0 descargas, sin evaluacion publicada |
-| allenai/Olmo-3.1-32B-Think (base) | 32B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace (AI2) | Modelo de razonamiento del que deriva el adaptador |
+| PS4Research/0VOz3fgU0qp4lVar-lora (este) | Adaptador sobre 32B | No disponible | Apache 2.0 | Hugging Face | 0 descargas, sin evaluacion publicada |
+| allenai/Olmo-3.1-32B-Think (base) | 32B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face (AI2) | Modelo de razonamiento del que deriva el adaptador |
 | Otros modelos abiertos de ~32B con razonamiento | No disponible | No disponible | No disponible | No disponible | Alternativas genericas de la misma categoria; sin datos verificados en la informacion proporcionada |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas concretas de la misma categoria.
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4Research/0VOz3fgU0qp4lVar-lora
+- Modelo en Hugging Face: https://huggingface.co/PS4Research/0VOz3fgU0qp4lVar-lora
 - Modelo base: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Perfil del autor: https://huggingface.co/PS4Research
 - Libreria Unsloth: https://github.com/unslothai/unsloth

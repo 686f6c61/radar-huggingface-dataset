@@ -83,7 +83,7 @@ No se dispone de comparativas directas con otros modelos TTS turcos en cuanto a 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/kaanhinay/pocket-tts-tr
+- Repositorio de Hugging Face: https://huggingface.co/kaanhinay/pocket-tts-tr
 - Repositorio oficial de Pocket TTS (Kyutai): https://github.com/kyutai-labs/pocket-tts
 - Documentación de Pocket TTS: https://kyutai-labs.github.io/pocket-tts/
 - Sitio web de Pocket-TTS: https://pockettts.org/

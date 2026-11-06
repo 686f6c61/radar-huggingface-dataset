@@ -108,6 +108,6 @@ No se dispone de datos de otros modelos de la misma categoría (mismo tamaño o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/unfuse-Qwen3.8-27B-text
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/unfuse-Qwen3.8-27B-text
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del autor con JSON de benchmarks y captura de entorno: https://github.com/SartajBhuvaji/unfuse

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen-Manimator-1-grpo es un ajuste fino del modelo denso Qwen/Qwen3-8B publicado por el usuario nabin2004 en HuggingFace. Se ha entrenado con TRL 0.29.1 mediante GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo presentado en DeepSeekMath, lo que sitúa al modelo en la familia de ajustes orientados a mejorar el razonamiento mediante recompensas verificables en lugar de simple supervisión.
+qwen-Manimator-1-grpo es un ajuste fino del modelo denso Qwen/Qwen3-8B publicado por el usuario nabin2004 en Hugging Face. Se ha entrenado con TRL 0.29.1 mediante GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo presentado en DeepSeekMath, lo que sitúa al modelo en la familia de ajustes orientados a mejorar el razonamiento mediante recompensas verificables en lugar de simple supervisión.
 
 El repositorio es de tipo "generated_from_trainer" y contiene pesos en formato safetensors compatibles con la libreria transformers. El tamano del repositorio es de 1,4 GB, una cifra muy inferior a los aproximadamente 16 GB que ocuparia un modelo de 8 000 millones de parametros en bfloat16, lo que sugiere que podria tratarse de adaptadores LoRA, de un subconjunto de pesos o de una cuantizacion no declarada. Este punto no queda aclarado en la model card y debe verificarse antes de cualquier uso en produccion.
 
@@ -101,7 +101,7 @@ La comparacion significativa para este ajuste es contra su propio modelo base: c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nabin2004/qwen-Manimator-1-grpo
+- Modelo en Hugging Face: https://huggingface.co/nabin2004/qwen-Manimator-1-grpo
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Index-Translate-35B-A3B-preview es un modelo de traduccion multilingue de tipo mezcla de expertos (MoE) con 35.000 millones de parametros totales y 3.000 millones activos por token, construido sobre la arquitectura Qwen3.5 (etiqueta `qwen3_5_moe`). Forma parte de la familia Index-Translate, asociada en la model card al equipo IndexTeam y al repositorio GitHub de Bilibili, si bien el repositorio de HuggingFace consultado figura publicado por el usuario Abu-Dju. Su proposito es la traduccion de texto entre 150 idiomas siguiendo instrucciones complejas: terminologia fija, formato, estructura, estilo, contexto y longitud de salida.
+Index-Translate-35B-A3B-preview es un modelo de traduccion multilingue de tipo mezcla de expertos (MoE) con 35.000 millones de parametros totales y 3.000 millones activos por token, construido sobre la arquitectura Qwen3.5 (etiqueta `qwen3_5_moe`). Forma parte de la familia Index-Translate, asociada en la model card al equipo IndexTeam y al repositorio GitHub de Bilibili, si bien el repositorio de Hugging Face consultado figura publicado por el usuario Abu-Dju. Su proposito es la traduccion de texto entre 150 idiomas siguiendo instrucciones complejas: terminologia fija, formato, estructura, estilo, contexto y longitud de salida.
 
 El modelo resuelve un problema concreto: la traduccion no solo fiel, sino controlable. Ademas de la traduccion general, cubre traduccion con instrucciones (preservar terminos, JSON, codigo y marcadores de posicion) y traduccion social y cultural (alias de comunidades, escritura ludica, memes y expresiones no literales), un terreno donde los traductores genericos suelen fallar. En la comparativa del informe tecnico obtiene el mejor FLORES COMET-22 (0,8794) y el mejor instTrans IFscore (0,8336) entre todos los sistemas evaluados.
 
@@ -52,7 +52,7 @@ Conviene senalar que el informe especifica pesos de interpolacion de expertos 0,
 - Moderacion y traduccion de contenido generado por usuarios: su puntuacion de 0,7405 en MEME y su entrenamiento especifico en expresiones no literales lo hacen adecuado para comunidades donde abundan alias, juegos de palabras y memes que un traductor literal malinterpretaria.
 - Atencion al cliente multilingue en mercados secundarios: el mejor rendimiento relativo en idiomas de bajos recursos (0,8168 de FLORES COMET-22) permite cubrir lenguas que otros sistemas atienden con calidad notablemente inferior.
 - Traduccion de documentacion legal o administrativa con formato estricto: la combinacion de instrucciones de terminologia y preservacion de estructura reduce la necesidad de revisión manual del formato.
-- Investigacion en traduccion automatica: el modelo sirve como linea base reproducible de 35B-A3B para comparar estrategias de instruccion, given que la familia publica informe tecnico, coleccion en HuggingFace y coleccion en ModelScope.
+- Investigacion en traduccion automatica: el modelo sirve como linea base reproducible de 35B-A3B para comparar estrategias de instruccion, given que la familia publica informe tecnico, coleccion en Hugging Face y coleccion en ModelScope.
 - Traduccion de contenido con contexto largo: no se puede confirmar la ventana de contexto en la informacion disponible, por lo que este caso queda condicionado a verificar dicha especificacion antes de desplegarlo.
 
 ## Benchmarks y rendimiento
@@ -89,10 +89,10 @@ Metricas adicionales en idiomas de bajos recursos para este modelo: FLORES COMET
 
 | Modelo | Parametros | Contexto | FLORES COMET-22 | instTrans IFscore | MEME | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Index-Translate-35B-A3B (preview) | 35B totales / 3B activos | no disponible | 0,8794 | 0,8336 | 0,7405 | Apache 2.0 | HuggingFace y ModelScope |
-| Index-Translate-9B | 9B | no disponible | 0,8789 | 0,8209 | 0,7387 | Apache 2.0 (segun familia) | HuggingFace y ModelScope |
+| Index-Translate-35B-A3B (preview) | 35B totales / 3B activos | no disponible | 0,8794 | 0,8336 | 0,7405 | Apache 2.0 | Hugging Face y ModelScope |
+| Index-Translate-9B | 9B | no disponible | 0,8789 | 0,8209 | 0,7387 | Apache 2.0 (segun familia) | Hugging Face y ModelScope |
 | Hy-MT2-30B-A3B | 30B totales / 3B activos | no disponible | 0,8787 | 0,6415 | 0,5812 | no disponible | no disponible en la informacion proporcionada |
-| Qwen3.5-35B-A3B (base) | 35B totales / 3B activos | no disponible | 0,8570 | 0,5204 | no disponible | Apache 2.0 (modelo base de la familia) | HuggingFace |
+| Qwen3.5-35B-A3B (base) | 35B totales / 3B activos | no disponible | 0,8570 | 0,5204 | no disponible | Apache 2.0 (modelo base de la familia) | Hugging Face |
 | TranslateGemma-12B | 12B | no disponible | 0,8732 | 0,3068 | 0,4281 | no disponible | no disponible |
 | North-Small-Translate | 218B totales / 25B activos | no disponible | 0,8784 | 0,5294 | 0,6836 | no disponible | no disponible |
 
@@ -114,10 +114,10 @@ La diferencia mas marcada frente a los modelos base y frente a Hy-MT2 y Translat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abu-Dju/Index-Translate-35B-A3B-preview
+- Hugging Face: https://huggingface.co/Abu-Dju/Index-Translate-35B-A3B-preview
 - Demo en linea: https://index-translate.bilibili.com/
 - Repositorio GitHub: https://github.com/bilibili/Index-Translate
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.40181
-- Coleccion en HuggingFace: https://huggingface.co/collections/IndexTeam/index-translate
+- Coleccion en Hugging Face: https://huggingface.co/collections/IndexTeam/index-translate
 - Coleccion en ModelScope: https://www.modelscope.cn/collections/IndexTeam/Index-Translate
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre el modelo en la busqueda realizada; los resultados devueltos correspondian a consultas no relacionadas sobre Visual Studio Code.

@@ -6,7 +6,7 @@ quickmt-en-pt-int8 es una conversión a CTranslate2 con cuantización int8 del m
 
 La relevancia de esta ficha radica en su carácter de artefacto de despliegue: no se trata de un modelo entrenado desde cero, sino de un reempaquetado del modelo base con pesos de 8 bits. El autor indica que las frases verificadas producen la misma salida que el original en float16, lo que sugiere una pérdida de calidad mínima tras la cuantización. El repositorio ocupa aproximadamente 0,2 GB, un tamaño compatible con aplicaciones ligeras y entornos con recursos limitados.
 
-La información pública disponible es muy escasa: no se documentan la arquitectura interna del modelo base, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. Esta ficha recoge lo que consta en la model card y en los metadatos de HuggingFace, marcando explícitamente como "no disponible" todo aquello que el autor no ha publicado.
+La información pública disponible es muy escasa: no se documentan la arquitectura interna del modelo base, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. Esta ficha recoge lo que consta en la model card y en los metadatos de Hugging Face, marcando explícitamente como "no disponible" todo aquello que el autor no ha publicado.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-en-pt-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-en-pt-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-pt
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2
 - Aplicación Yaku Translate: no disponible (no se proporciona URL en la información disponible)

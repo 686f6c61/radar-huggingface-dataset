@@ -4,7 +4,7 @@
 
 ChuckleNet es un detector de risas para audio de monólogo cómico (stand-up) desarrollado por Hayasuki (autor del trabajo: Subhajit Das). No es un modelo de lenguaje ni un modelo generativo: es un clasificador de audio binario que, dado un fragmento de audio, estima la probabilidad de que contenga una reacción de risa y devuelve eventos con marcas de tiempo de inicio y fin. Su objetivo es encontrar "los momentos graciosos" de un especial de comedia de forma automática.
 
-La arquitectura es deliberadamente ligera: un codificador `microsoft/wavlm-base` congelado del que se extrae el último estado oculto promediado (768 dimensiones), seguido de una cabeza MLP entrenable de 768 → 256 → 128 → 1. El repositorio de HuggingFace contiene únicamente los pesos de esa cabeza: 229.889 parámetros (aproximadamente 230K, menos de 1 MB), mientras que el codificador WavLM se descarga aparte. Esto hace que el ajuste fino sea extremadamente barato y que la inferencia pueda ejecutarse en CPU.
+La arquitectura es deliberadamente ligera: un codificador `microsoft/wavlm-base` congelado del que se extrae el último estado oculto promediado (768 dimensiones), seguido de una cabeza MLP entrenable de 768 → 256 → 128 → 1. El repositorio de Hugging Face contiene únicamente los pesos de esa cabeza: 229.889 parámetros (aproximadamente 230K, menos de 1 MB), mientras que el codificador WavLM se descarga aparte. Esto hace que el ajuste fino sea extremadamente barato y que la inferencia pueda ejecutarse en CPU.
 
 El interés del modelo es doble. Por un lado, es una utilidad práctica para indexar, resumir y montar clips de comedia a partir de reacciones de audiencia. Por otro, se presenta como un programa de investigación preregistrado que intenta demostrar que la señal temporal de interacción (el orden de los eventos acústicos) aporta información predictiva sobre la risa más allá de la acústica estática. Los resultados publicados son modestos y el propio autor los etiqueta como evaluación con etiquetas débiles.
 
@@ -101,11 +101,11 @@ No se dispone de resultados comparativos con otros detectores de risa en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hayasuki/chucklenet-laughter-detector
+- Modelo en Hugging Face: https://huggingface.co/Hayasuki/chucklenet-laughter-detector
 - Repositorio y registro experimental preregistrado: https://github.com/Das-rebel/ChuckleNet
 - Cuaderno de Colab: https://colab.research.google.com/github/Das-rebel/ChuckleNet/blob/main/Colab_StandUp4AI_Fresh.ipynb
 - Cuaderno de Kaggle: https://www.kaggle.com/code/subhojitdas/chucklenet-laughter-detector
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Hayasuki/chucklenet
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Hayasuki/chucklenet
 - Modelo base: https://huggingface.co/microsoft/wavlm-base
 - Cita: Das, Subhajit (2026), "ChuckleNet: Temporal Interaction Signals for Laughter Detection in Stand-Up Comedy"
 - La busqueda web realizada no ha devuelto enlaces relevantes sobre este modelo; los resultados obtenidos correspondian a un catalogo de television ajeno al tema.

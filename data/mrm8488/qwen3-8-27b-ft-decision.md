@@ -78,9 +78,9 @@ Observaciones: la exactitud por pregunta mejora 38,7 puntos porcentuales y la ex
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-ft-decision | 27.781.427.952 | 4.096 tokens | 81,95% exactitud por pregunta; 42,0% por registro; ECE 0,0361 | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3.8-27B (base) | no disponible en la informacion | no disponible | 43,25% exactitud por pregunta; 1,25% por registro; ECE 0,1335 | Apache 2.0 (heredada del modelo base, no confirmada en la informacion) | HuggingFace |
-| mrm8488/Qwen3.5-0.8B-ft-decision-8k | no disponible en la informacion (denominacion 0,8B) | contexto de 8.000 tokens segun el nombre del modelo | no disponible | no disponible | HuggingFace |
+| Qwen3.8-27B-ft-decision | 27.781.427.952 | 4.096 tokens | 81,95% exactitud por pregunta; 42,0% por registro; ECE 0,0361 | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3.8-27B (base) | no disponible en la informacion | no disponible | 43,25% exactitud por pregunta; 1,25% por registro; ECE 0,1335 | Apache 2.0 (heredada del modelo base, no confirmada en la informacion) | Hugging Face |
+| mrm8488/Qwen3.5-0.8B-ft-decision-8k | no disponible en la informacion (denominacion 0,8B) | contexto de 8.000 tokens segun el nombre del modelo | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos sobre otros modelos comparables de clasificacion calibrada por esquema en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de datos sobre otros modelos comparables de clasificacion calibrad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrm8488/Qwen3.8-27B-ft-decision
+- Modelo en Hugging Face: https://huggingface.co/mrm8488/Qwen3.8-27B-ft-decision
 - Dataset de entrenamiento: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Modelo hermano de menor tamano: https://huggingface.co/mrm8488/Qwen3.5-0.8B-ft-decision-8k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

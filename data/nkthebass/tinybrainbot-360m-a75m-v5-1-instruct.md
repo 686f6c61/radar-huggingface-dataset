@@ -96,7 +96,7 @@ Frente a SmolLM2-360M-Instruct, el modelo de nkthebass queda por debajo en IFEva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-instruct
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-instruct
 - Modelo base: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-base
 - Demo en el navegador (Space con GGUF Q8_0): https://huggingface.co/spaces/nkthebass/tinybrainbot-360m-moe-chat
 - Datasets de ajuste: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk, https://huggingface.co/datasets/HuggingFaceTB/smoltalk, https://huggingface.co/datasets/HuggingFaceTB/smoltalk2, https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following, https://huggingface.co/datasets/allenai/WildChat-4.8M, https://huggingface.co/datasets/teknium/OpenHermes-2.5

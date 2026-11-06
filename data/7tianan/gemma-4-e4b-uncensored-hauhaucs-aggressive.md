@@ -2,16 +2,16 @@
 
 ## Resumen
 
-El modelo `7tianan/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive` es una variante de Google Gemma 4 E4B-IT a la que se ha aplicado una técnica de *abliteration* para eliminar los rechazos de seguridad del modelo original. El trabajo de "uncensoring" ha sido realizado por HauhauCS, y el usuario 7tianan lo ha subido a HuggingFace en formato GGUF. El resultado es un modelo que, según la model card, presenta 0 rechazos en 465 pruebas realizadas, manteniendo intactas las capacidades del modelo base.
+El modelo `7tianan/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive` es una variante de Google Gemma 4 E4B-IT a la que se ha aplicado una técnica de *abliteration* para eliminar los rechazos de seguridad del modelo original. El trabajo de "uncensoring" ha sido realizado por HauhauCS, y el usuario 7tianan lo ha subido a Hugging Face en formato GGUF. El resultado es un modelo que, según la model card, presenta 0 rechazos en 465 pruebas realizadas, manteniendo intactas las capacidades del modelo base.
 
-La relevancia de esta ficha radica en que es un ejemplo práctico de cómo la comunidad modifica modelos propietarios de código abierto (Gemma) para eliminar restricciones de seguridad, un tema controvertido y de interés para investigadores en alineación y seguridad de IA. El modelo es nativamente multimodal (texto, imagen, vídeo y audio), con una arquitectura de 42 capas, atención mixta (ventana deslizante de 512 tokens + atención completa) y un contexto de 131.072 tokens. Es importante señalar que, aunque la model card indica "4B parámetros", los metadatos reales de los safetensors en HuggingFace muestran 7.518.069.290 parámetros.
+La relevancia de esta ficha radica en que es un ejemplo práctico de cómo la comunidad modifica modelos propietarios de código abierto (Gemma) para eliminar restricciones de seguridad, un tema controvertido y de interés para investigadores en alineación y seguridad de IA. El modelo es nativamente multimodal (texto, imagen, vídeo y audio), con una arquitectura de 42 capas, atención mixta (ventana deslizante de 512 tokens + atención completa) y un contexto de 131.072 tokens. Es importante señalar que, aunque la model card indica "4B parámetros", los metadatos reales de los safetensors en Hugging Face muestran 7.518.069.290 parámetros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer multimodal (texto, imagen, vídeo, audio) con atención mixta (ventana deslizante de 512 + atención completa) |
-| Parametros totales | 7.518.069.290 (según metadatos de HuggingFace; la model card indica 4B) |
+| Parametros totales | 7.518.069.290 (según metadatos de Hugging Face; la model card indica 4B) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 131.072 tokens (131K) |
 | Tipos de cuantizacion | GGUF: Q2_K_P, Q3_K_M, Q3_K_P, IQ3_M, Q4_K_M, Q4_K_P, IQ4_XS, Q5_K_M, Q5_K_P, Q6_K, Q6_K_P, Q8_0, Q8_K_P. Además, mmproj f16 (945 MB) para visión/audio |
@@ -76,6 +76,6 @@ La principal diferencia con el modelo base es la eliminación de los rechazos. N
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/7tianan/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
+- Repositorio en Hugging Face: https://huggingface.co/7tianan/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/google/gemma-4-e4b-it
 - Discord de HauhauCS: https://discord.gg/SZ5vacTXYf

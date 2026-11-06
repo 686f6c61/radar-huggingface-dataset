@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cisimcik-4b es un modelo de lenguaje de tipo chat con prioridad para el turco, desarrollado por Cisimcik AI Labs (usuario `cisimcik` en HuggingFace). Está construido sobre `cisimcik-base` y ha pasado por tres rondas de ajuste fino supervisado (SFT). Su objetivo declarado es cubrir conversación multi-turno, razonamiento paso a paso cuando la pregunta lo requiere, llamada a herramientas y tareas habituales de PLN en turco: resumen, clasificación, inferencia de lenguaje natural, extracción de respuestas, corrección gramatical y traducción.
+cisimcik-4b es un modelo de lenguaje de tipo chat con prioridad para el turco, desarrollado por Cisimcik AI Labs (usuario `cisimcik` en Hugging Face). Está construido sobre `cisimcik-base` y ha pasado por tres rondas de ajuste fino supervisado (SFT). Su objetivo declarado es cubrir conversación multi-turno, razonamiento paso a paso cuando la pregunta lo requiere, llamada a herramientas y tareas habituales de PLN en turco: resumen, clasificación, inferencia de lenguaje natural, extracción de respuestas, corrección gramatical y traducción.
 
 Técnicamente es un transformer híbrido de la familia Qwen3.5 que combina capas Gated DeltaNet (atención lineal con estado recurrente) con capas de atención completa, y es exclusivamente de texto. Tiene 4.205.751.296 parámetros (aproximadamente 4,2 mil millones), un tamaño que la propia model card sitúa como desplegable en una GPU de 12 GB o en CPU con 16 GB de RAM en bf16.
 
@@ -94,7 +94,7 @@ Los únicos modelos comparables citados en la información disponible son los qu
 
 | Modelo | Parámetros | Contexto | CETVEL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cisimcik-4b | 4,2 B | no disponible | 57,31 | CC0-1.0 | HuggingFace, safetensors |
+| cisimcik-4b | 4,2 B | no disponible | 57,31 | CC0-1.0 | Hugging Face, safetensors |
 | Llama-3.3-70B | 70 B (según denominación) | no disponible | 35,85 | no disponible en la fuente | Referenciado en la tabla CETVEL |
 | aya-expanse-32b | 32 B (según denominación) | no disponible | no disponible | no disponible en la fuente | Referenciado en la tabla CETVEL |
 | cere-llama-3-8b-tr | 8 B (según denominación) | no disponible | no disponible | no disponible en la fuente | Referenciado en la tabla CETVEL |
@@ -118,7 +118,7 @@ La comparación más informativa es la de tamaño y rendimiento declarado frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cisimcik/cisimcik-4b
+- Modelo en Hugging Face: https://huggingface.co/cisimcik/cisimcik-4b
 - Model card en inglés: https://huggingface.co/cisimcik/cisimcik-4b/blob/main/README_en.md
 - Modelo base: https://huggingface.co/cisimcik/cisimcik-base
 - Dataset de ajuste fino: https://huggingface.co/datasets/cisimcik/turkish-chat-max-25k

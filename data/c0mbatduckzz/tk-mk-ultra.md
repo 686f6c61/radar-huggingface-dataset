@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TK-MK-ULTRA es un repositorio alojado en HuggingFace por el usuario c0mbatduckzz que no contiene un modelo de lenguaje en el sentido convencional, sino un documento matematico formal: un PDF de demostraciones titulado "TK_MK_ULTRA_Formal_Model_Proofs.pdf". El contenido describe un sistema matematico determinista denominado "Twin Viper" dentro de un marco de estado compartido "XD-TAU", con definiciones, proposiciones y teoremas sobre un oscilador relativistico idempotente acotado por un protocolo de reloj conforme. El autor intelectual citado es Tom Klootwijk.
+TK-MK-ULTRA es un repositorio alojado en Hugging Face por el usuario c0mbatduckzz que no contiene un modelo de lenguaje en el sentido convencional, sino un documento matematico formal: un PDF de demostraciones titulado "TK_MK_ULTRA_Formal_Model_Proofs.pdf". El contenido describe un sistema matematico determinista denominado "Twin Viper" dentro de un marco de estado compartido "XD-TAU", con definiciones, proposiciones y teoremas sobre un oscilador relativistico idempotente acotado por un protocolo de reloj conforme. El autor intelectual citado es Tom Klootwijk.
 
 El repositorio no incluye pesos, tokenizador, configuracion de arquitectura ni pipeline de inferencia. El tamano del repo es de 0.0 GB y no hay ficheros de modelo publicados. Las etiquetas hacen referencia a conceptos matematicos (geometria, simulacion determinista, demostracion formal, matematicas simbolicas) y no a capacidades de IA generativa.
 
@@ -41,7 +41,7 @@ La model card incluye una seccion interpretativa atribuida a Tom Klootwijk que d
 - Estudio de sistemas dinamicos formales: el PDF puede consultarse como referencia para definiciones de estado, transiciones y reloj conforme en un oscilador relativistico idempotente.
 - Verificacion de demostraciones matematicas: util para revisar la estructura de los seis teoremas y sus hipotesis declaradas (dominios de validez, cotas de orbita y de reloj).
 - Docencia o investigacion en geometria y relatividad matematica: el marco Twin Viper / XD-TAU puede servir como ejemplo de construccion axiomatica con propositos ilustrativos.
-- Analisis critico de model cards: el repositorio es un caso de estudio sobre como se declaran artefactos no-ML bajo etiquetas de modelos en HuggingFace.
+- Analisis critico de model cards: el repositorio es un caso de estudio sobre como se declaran artefactos no-ML bajo etiquetas de modelos en Hugging Face.
 - Referencia para implementaciones de simulacion determinista: si se desarrolla codigo a partir de las definiciones, el documento describe invariantes y restricciones que podrian guiar una implementacion.
 - Auditoria de licencias: util para estudiar un ejemplo de licencia propietaria restrictiva aplicada a un artefacto documental.
 
@@ -69,13 +69,13 @@ No disponible. No se conocen modelos comparables porque el artefacto no pertenec
 - La licencia es propietaria con derechos reservados (tk-mk-ultra-proprietary-reserved-rights-v1.0), lo que restringe el uso comercial y la redistribucion; debe revisarse el fichero LICENSE antes de cualquier reutilizacion.
 - La model card mezcla descripciones interpretativas ("pozo metrico", "escudo de reloj", "micro-universo") con resultados demostrados; el propio autor matiza que varias de esas propiedades no se siguen de los teoremas.
 - El idioma del documento es unicamente ingles.
-- Riesgo de confusion: las etiquetas de HuggingFace (mathematical-model, formal-proof) pueden llevar a interpretar el artefacto como un modelo entrenado; no lo es.
+- Riesgo de confusion: las etiquetas de Hugging Face (mathematical-model, formal-proof) pueden llevar a interpretar el artefacto como un modelo entrenado; no lo es.
 - No hay evidencia de validacion externa, revision por pares ni replicacion independiente de las demostraciones.
 - Cero descargas y cero likes en el momento de la consulta; sin comunidad ni soporte.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/c0mbatduckzz/TK-MK-ULTRA
+- Repositorio Hugging Face: https://huggingface.co/c0mbatduckzz/TK-MK-ULTRA
 - PDF de demostraciones formales: https://huggingface.co/c0mbatduckzz/TK-MK-ULTRA/resolve/main/docs/TK_MK_ULTRA_Formal_Model_Proofs.pdf
 - Fichero de licencia: https://huggingface.co/c0mbatduckzz/TK-MK-ULTRA/blob/main/LICENSE
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

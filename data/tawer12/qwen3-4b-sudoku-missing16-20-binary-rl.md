@@ -20,7 +20,7 @@ Su relevancia es acotada y muy especifica: sirve como ejemplo reproducible de un
 | Idiomas soportados | Ingles (en) |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA), con tokenizador incluido en el repositorio |
-| Tamano del repositorio | 0,0 GB segun HuggingFace; archivo de adaptador de 11,82 MB |
+| Tamano del repositorio | 0,0 GB segun Hugging Face; archivo de adaptador de 11,82 MB |
 | Libreria | peft |
 | Pipeline | text-generation |
 | Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tawer12/qwen3-4b-sudoku-missing16-20-binary-rl | Adaptador LoRA especializado en Sudoku | 4B (base) + ~5,9 M entrenables | No disponible (base: 262.144 tokens segun su documentacion) | No disponible | HuggingFace, 11 descargas |
+| tawer12/qwen3-4b-sudoku-missing16-20-binary-rl | Adaptador LoRA especializado en Sudoku | 4B (base) + ~5,9 M entrenables | No disponible (base: 262.144 tokens segun su documentacion) | No disponible | Hugging Face, 11 descargas |
 | Qwen/Qwen3-4B-Instruct-2507 (modelo base sin adaptador) | Transformer denso de proposito general | 4B | 262.144 tokens segun su documentacion publica | Apache 2.0 segun su model card | Ampliamente disponible |
 | Adaptadores SFT de Sudoku similares del mismo autor | Adaptador LoRA | 4B (base) + LoRA | No disponible | No disponible | No disponibles en la informacion proporcionada |
 
@@ -96,6 +96,6 @@ No se dispone de datos de rendimiento comparativos entre estas opciones, ya que 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/tawer12/qwen3-4b-sudoku-missing16-20-binary-rl
+- Adaptador en Hugging Face: https://huggingface.co/tawer12/qwen3-4b-sudoku-missing16-20-binary-rl
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor o el conjunto de datos de entrenamiento: los enlaces obtenidos correspondian a productos de cocina sin relacion alguna. No hay papers, blogs, repositorios ni demos adicionales que citar.

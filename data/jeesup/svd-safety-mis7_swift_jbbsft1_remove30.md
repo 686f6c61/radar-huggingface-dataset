@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks homogeneos que permitan una comparacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft1_remove30
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft1_remove30
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Perfil del autor: https://huggingface.co/Jeesup
 - Paper de SVD-LLM (referencia metodologica citada en la model card): enlace no disponible en la informacion proporcionada

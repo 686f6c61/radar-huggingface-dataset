@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pkbtc/mtcnnet` es un repositorio publicado en HuggingFace por el usuario `pkbtc` bajo licencia MIT. La model card asociada es practicamente vacia: unicamente contiene la declaracion de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio no tiene descargas ni likes en el momento de la consulta, lo que sugiere que se trata de un experimento personal o de un artefacto en fase muy temprana de publicacion.
+`pkbtc/mtcnnet` es un repositorio publicado en Hugging Face por el usuario `pkbtc` bajo licencia MIT. La model card asociada es practicamente vacia: unicamente contiene la declaracion de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio no tiene descargas ni likes en el momento de la consulta, lo que sugiere que se trata de un experimento personal o de un artefacto en fase muy temprana de publicacion.
 
 No se dispone de informacion sobre el tamano del modelo, la longitud de contexto, los idiomas soportados, el formato de pesos ni el pipeline de inferencia. El nombre "mtcnnet" podria sugerir un modelo orientado a deteccion de rostros (MTCNN) o una red neuronal convolucional, pero esta interpretacion no esta confirmada por ninguna fuente y no debe asumirse. Cualquier evaluacion tecnica del modelo requeriria inspeccionar directamente los archivos del repositorio.
 
@@ -39,7 +39,7 @@ La unica informacion tecnica verificable es la declaracion de licencia MIT en el
 ## Casos de uso
 
 - Evaluacion exploratoria en laboratorio: el modelo puede descargarse y probarse en un entorno aislado para determinar empiricamente su comportamiento, dado que no existe documentacion publica que permita anticipar sus capacidades.
-- Analisis de artefactos de HuggingFace: util para investigadores interesados en estudiar como se publican repositorios con documentacion minima y que implicaciones tiene para la trazabilidad de modelos.
+- Analisis de artefactos de Hugging Face: util para investigadores interesados en estudiar como se publican repositorios con documentacion minima y que implicaciones tiene para la trazabilidad de modelos.
 - Prototipado interno sin garantias: podria emplearse como base para experimentos internos siempre que se valide su comportamiento antes de cualquier integracion, dado que no hay benchmarks ni especificaciones.
 - Docencia sobre evaluacion de modelos: sirve como caso practico de por que la ausencia de model card impide evaluar riesgos, sesgos y adecuacion a un caso de uso concreto.
 - Pruebas de pipelines de descarga y carga: util para validar herramientas de MLOps (descarga desde el Hub, carga de pesos, monitorizacion) sin depender de un modelo de gran tamano.
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pkbtc/mtcnnet
+- Repositorio en Hugging Face: https://huggingface.co/pkbtc/mtcnnet
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

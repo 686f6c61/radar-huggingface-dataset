@@ -120,10 +120,10 @@ Diferencias declaradas entre ambas entradas: `a3v21` elimina los submódulos lea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LexHo/tartanimu-a3v21
+- Modelo en Hugging Face: https://huggingface.co/LexHo/tartanimu-a3v21
 - Entrada primaria del equipo (`a3v20_s42`, score oficial 0.25878): https://huggingface.co/LexHo/tartanimu-a3v20
 - Repositorio del reto TartanIMU Challenge (IROS 2026): no disponible en la información proporcionada
 - Informe técnico del equipo: no disponible en la información proporcionada
 - Paper o preprint asociado: no disponible en la información proporcionada
-- Repositorio de código independiente: no disponible (el código de inferencia se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de código independiente: no disponible (el código de inferencia se distribuye dentro del propio repositorio de Hugging Face)
 - Los resultados de búsqueda web obtenidos no contienen enlaces relevantes para este modelo: consisten únicamente en páginas de ayuda de YouTube TV y de la aplicación móvil de YouTube, sin relación con el modelo ni con el reto.

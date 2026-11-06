@@ -61,7 +61,7 @@ No disponible. Al no conocer la arquitectura ni el propósito del modelo, no es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cdkkkk/setup
+- Repositorio Hugging Face: https://huggingface.co/cdkkkk/setup
 - Árbol de archivos (directorio `zit`): https://huggingface.co/cdkkkk/setup/tree/main/zit
 - Informe de seguridad de Protect AI: https://protectai.com/insights/models/cdkkkk/setup/572687969a1b8b0eecda3cec2d89b6d3169a175c/overview
 - Informe de seguridad de Palo Alto Networks Prisma AIRS: https://insights-db.paloaltonetworks.com/models/cdkkkk/setup/e2703dc31b9d3af546cda76779ff5e40e25e54a2/overview

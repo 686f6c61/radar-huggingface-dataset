@@ -83,6 +83,6 @@ La principal diferencia con el modelo base es la adaptacion al vietnamita y el f
 
 ## Enlaces
 
-- [HuggingFace - khoin68/Qwen2.5-Coder-7B-Vietnamese-GGUF](https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-GGUF)
+- [Hugging Face - khoin68/Qwen2.5-Coder-7B-Vietnamese-GGUF](https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-GGUF)
 - [Unsloth (herramienta de entrenamiento y cuantizacion)](https://github.com/unslothai/unsloth)
 - [Modelo base Qwen2.5-Coder-7B-Instruct (referencia)](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)

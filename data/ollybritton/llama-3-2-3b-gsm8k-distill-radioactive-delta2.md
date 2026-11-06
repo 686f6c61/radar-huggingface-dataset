@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ollybritton/Llama-3.2-3B-gsm8k-distill-radioactive-delta2` es un ajuste fino (fine-tune) del modelo base `meta-llama/Llama-3.2-3B`, publicado por el usuario ollybritton en HuggingFace. Por el nombre del repositorio se deduce que el ajuste se ha realizado sobre el conjunto de datos GSM8K (problemas matematicos de nivel escolar con soluciones paso a paso) mediante alguna variante de destilacion, aunque la model card no documenta ni el procedimiento ni la receta de entrenamiento. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 15 de septiembre de 2026.
+El modelo `ollybritton/Llama-3.2-3B-gsm8k-distill-radioactive-delta2` es un ajuste fino (fine-tune) del modelo base `meta-llama/Llama-3.2-3B`, publicado por el usuario ollybritton en Hugging Face. Por el nombre del repositorio se deduce que el ajuste se ha realizado sobre el conjunto de datos GSM8K (problemas matematicos de nivel escolar con soluciones paso a paso) mediante alguna variante de destilacion, aunque la model card no documenta ni el procedimiento ni la receta de entrenamiento. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 15 de septiembre de 2026.
 
 Se trata de un modelo denso de 3.212.749.824 parametros (aproximadamente 3,2 mil millones), con pesos en formato safetensors y un tamano de repositorio de 6,4 GB, lo que corresponde a pesos en precision de 16 bits. Al derivar de Llama 3.2 3B, hereda la arquitectura transformer decoder-only con Grouped Query Attention del modelo base, aunque el autor no publica ninguna especificacion adicional.
 
@@ -95,6 +95,6 @@ No se dispone de cifras de rendimiento del modelo evaluado que permitan una comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-radioactive-delta2
+- Repositorio en Hugging Face: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-radioactive-delta2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo ni demos.

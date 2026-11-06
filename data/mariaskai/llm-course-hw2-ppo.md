@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`mariaskai/llm-course-hw2-ppo` es un modelo de lenguaje publicado en HuggingFace por el usuario `mariaskai` el 2 de noviembre de 2026. Por el nombre del repositorio, todo apunta a que se trata de un artefacto de un ejercicio académico de un curso sobre modelos de lenguaje, en el que se ha aplicado aprendizaje por refuerzo con optimización de política proximal (PPO) sobre un modelo base de la familia LLaMA. No es, por tanto, un modelo pensado para producción, sino un checkpoint de investigación o de práctica formativa.
+`mariaskai/llm-course-hw2-ppo` es un modelo de lenguaje publicado en Hugging Face por el usuario `mariaskai` el 2 de noviembre de 2026. Por el nombre del repositorio, todo apunta a que se trata de un artefacto de un ejercicio académico de un curso sobre modelos de lenguaje, en el que se ha aplicado aprendizaje por refuerzo con optimización de política proximal (PPO) sobre un modelo base de la familia LLaMA. No es, por tanto, un modelo pensado para producción, sino un checkpoint de investigación o de práctica formativa.
 
 El modelo cuenta con 134.515.008 parámetros totales según los pesos en safetensors, lo que lo sitúa en el rango de los modelos pequeños (aproximadamente 134 millones de parámetros, un tamaño típico de configuraciones tipo LLaMA de 130-140M). El repositorio ocupa 0,5 GB, un tamaño coherente con pesos en precisión de 16 bits para esa cantidad de parámetros. La librería declarada es `transformers` y la arquitectura es de tipo LLaMA (transformer decoder-only).
 
-La relevancia de esta ficha es limitada desde el punto de vista de la evaluación técnica: la model card es la plantilla autogenerada de HuggingFace sin ningún dato rellenado, no hay benchmarks publicados, no se declara licencia ni idiomas, y el modelo no tiene descargas ni likes. Se documenta aquí de forma rigurosa precisamente para dejar constancia de lo que se sabe y, sobre todo, de lo que no se sabe.
+La relevancia de esta ficha es limitada desde el punto de vista de la evaluación técnica: la model card es la plantilla autogenerada de Hugging Face sin ningún dato rellenado, no hay benchmarks publicados, no se declara licencia ni idiomas, y el modelo no tiene descargas ni likes. Se documenta aquí de forma rigurosa precisamente para dejar constancia de lo que se sabe y, sobre todo, de lo que no se sabe.
 
 ## Especificaciones tecnicas
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mariaskai/llm-course-hw2-ppo | 134,5M | No disponible | No disponible | HuggingFace, sin descargas |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens (ampliable) | Apache 2.0 | HuggingFace, ampliamente usado |
-| SmolLM-135M | 135M | 2.048 tokens | Apache 2.0 | HuggingFace, con benchmarks publicados |
-| Qwen2.5-0.5B | 0,49B | 32.768 tokens | Apache 2.0 | HuggingFace, con benchmarks publicados |
+| mariaskai/llm-course-hw2-ppo | 134,5M | No disponible | No disponible | Hugging Face, sin descargas |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens (ampliable) | Apache 2.0 | Hugging Face, ampliamente usado |
+| SmolLM-135M | 135M | 2.048 tokens | Apache 2.0 | Hugging Face, con benchmarks publicados |
+| Qwen2.5-0.5B | 0,49B | 32.768 tokens | Apache 2.0 | Hugging Face, con benchmarks publicados |
 
 La comparación se limita a parámetros, contexto y licencia porque no hay datos de rendimiento del modelo analizado. Frente a SmolLM-135M, de tamaño casi idéntico, la diferencia principal es la ausencia total de documentación, benchmarks y licencia en el caso de `llm-course-hw2-ppo`.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada de HuggingFace: no hay información sobre datos de entrenamiento, sesgos ni evaluación.
+- La model card es la plantilla autogenerada de Hugging Face: no hay información sobre datos de entrenamiento, sesgos ni evaluación.
 - Riesgo elevado de alucinación y de respuestas incoherentes por el tamaño reducido del modelo (134M de parámetros) y la falta de evaluación.
 - No se declara licencia, lo que impide determinar si el uso comercial está permitido; debe asumirse que no lo está hasta que el autor lo aclare.
 - No se declaran idiomas soportados; no hay garantía de buen rendimiento en castellano ni en ningún otro idioma.
@@ -83,7 +83,7 @@ La comparación se limita a parámetros, contexto y licencia porque no hay datos
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mariaskai/llm-course-hw2-ppo)
+- [Modelo en Hugging Face](https://huggingface.co/mariaskai/llm-course-hw2-ppo)
 - [Paper de referencia sobre PPO (Schulman et al., 2017)](https://arxiv.org/abs/1707.06347)
 - [Paper citado en la model card sobre impacto ambiental (Lacoste et al., 2019)](https://arxiv.org/abs/1910.09700)
 - [Calculadora de impacto ML](https://mlco2.github.io/impact#compute)

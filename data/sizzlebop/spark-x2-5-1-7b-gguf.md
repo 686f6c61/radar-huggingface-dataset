@@ -78,7 +78,7 @@ No se dispone de datos comparativos fiables en la información proporcionada. El
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/sizzlebop/Spark-X2.5-1.7B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/sizzlebop/Spark-X2.5-1.7B-GGUF
 - Modelo original (safetensors): https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Repositorio oficial de XHToken en GitHub: https://github.com/XHToken/Spark-X2.5
 - Página del modelo en Ollama: https://ollama.com/SparkLLM/Spark-X2.5-1.7B

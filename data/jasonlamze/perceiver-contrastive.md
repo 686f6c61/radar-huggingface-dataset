@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jasonlamze/perceiver-contrastive` es un repositorio de HuggingFace publicado por el usuario jasonlamze que contiene una implementación reducida de un Perceiver orientada a tareas contrastivas. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como "un punto de partida reproducible", y el fichero `model.safetensors` se presenta como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`jasonlamze/perceiver-contrastive` es un repositorio de Hugging Face publicado por el usuario jasonlamze que contiene una implementación reducida de un Perceiver orientada a tareas contrastivas. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como "un punto de partida reproducible", y el fichero `model.safetensors` se presenta como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El dato más relevante para evaluarlo es su tamaño real: 33.088 parámetros totales según los tensores de safetensors, lo que contradice la etiqueta "xlarge" que aparece en la configuración de arquitectura. Es, por tanto, un artefacto de escala minúscula, más cercano a un esqueleto de código ejecutable que a un modelo con capacidad de generalización. El repositorio incluye `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y el checkpoint de inicialización.
 
@@ -77,5 +77,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jasonlamze/perceiver-contrastive
+- Modelo en Hugging Face: https://huggingface.co/jasonlamze/perceiver-contrastive
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, su autor, papers asociados, repositorios de código o demos. Los resultados devueltos por la búsqueda corresponden a noticias financieras y de criptomonedas sin relación con el modelo.

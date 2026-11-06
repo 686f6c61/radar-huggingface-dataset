@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ket-4b-GGUF es un modelo de lenguaje y visión (vision-language model) publicado por el usuario ket0x4 en HuggingFace, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Según los tags del repositorio y los nombres de los ficheros (`gemma-4-E4B-it.*.gguf`), se trata de un ajuste fino del modelo Gemma 4 E4B en su variante instruct, convertido a GGUF mediante Unsloth. El repositorio no incluye model card técnica detallada: únicamente describe el proceso de conversión y los comandos de ejecución.
+ket-4b-GGUF es un modelo de lenguaje y visión (vision-language model) publicado por el usuario ket0x4 en Hugging Face, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Según los tags del repositorio y los nombres de los ficheros (`gemma-4-E4B-it.*.gguf`), se trata de un ajuste fino del modelo Gemma 4 E4B en su variante instruct, convertido a GGUF mediante Unsloth. El repositorio no incluye model card técnica detallada: únicamente describe el proceso de conversión y los comandos de ejecución.
 
 El dato objetivo disponible es el recuento de parámetros de los pesos en safetensors: 7.518.069.290 parámetros totales, con un tamaño de repositorio de 14,4 GB repartido entre tres ficheros (Q4_K_M, Q8_0 y el proyector multimodal en BF16). El sufijo "E4B" de la nomenclatura de Gemma indica parámetros efectivos en torno a 4B, aunque esta ficha no puede confirmar la arquitectura exacta ni el número de parámetros activos porque esa información no está publicada en el repositorio.
 
@@ -90,7 +90,7 @@ La ventaja diferencial de ket-4b-GGUF frente a estas alternativas no puede estab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ket0x4/ket-4b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ket0x4/ket-4b-GGUF
 - Unsloth (herramienta de ajuste y conversión citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de los ficheros GGUF): https://github.com/ggml-org/llama.cpp
 - No se han encontrado otros enlaces relevantes en la búsqueda web realizada: los resultados devueltos no guardaban relación con el modelo.

@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento de o
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/AnirbanSaha/mistral-nemo-12b-tlink-sentence-only-autoregressive
+- Pagina del modelo en Hugging Face: https://huggingface.co/AnirbanSaha/mistral-nemo-12b-tlink-sentence-only-autoregressive
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Dataset de entrenamiento: https://huggingface.co/datasets/AnirbanSaha/tlink-classification-sentence-only
 - Los resultados de la busqueda web proporcionada no contienen enlaces relevantes sobre este modelo; no se han encontrado papers, blogs ni repositorios adicionales en esa busqueda.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Natalie es un adaptador LoRA de texto a imagen publicado por el usuario GlurpRain en HuggingFace. Se trata de un ajuste fino ligero sobre el modelo base Krea-2-Turbo, un modelo de difusion de la familia Krea orientado a generacion rapida de imagenes. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo. La model card es extremadamente escueta: no incluye descripcion del estilo aprendido, prompts de instancia, dataset de entrenamiento ni ejemplos textuales mas alla de una galeria de imagenes de salida.
+Natalie es un adaptador LoRA de texto a imagen publicado por el usuario GlurpRain en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base Krea-2-Turbo, un modelo de difusion de la familia Krea orientado a generacion rapida de imagenes. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo. La model card es extremadamente escueta: no incluye descripcion del estilo aprendido, prompts de instancia, dataset de entrenamiento ni ejemplos textuales mas alla de una galeria de imagenes de salida.
 
 El modelo resuelve un caso de uso muy acotado: aplicar un ajuste de estilo o concepto concreto sobre Krea-2-Turbo sin necesidad de reentrenar el modelo base. Es relevante unicamente para quienes ya trabajan con Krea-2-Turbo y quieran incorporar el estilo especifico que el autor ha capturado en el LoRA. No hay informacion publica sobre que representa "Natalie" ni sobre la composicion del dataset utilizado.
 
-La ficha se ha elaborado con la informacion disponible en HuggingFace y la model card. Dado que el autor no ha publicado especificaciones tecnicas, la mayoria de los campos aparecen como "no disponible".
+La ficha se ha elaborado con la informacion disponible en Hugging Face y la model card. Dado que el autor no ha publicado especificaciones tecnicas, la mayoria de los campos aparecen como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Natalie (GlurpRain) | LoRA sobre Krea-2-Turbo | no disponible | no aplica | creativeml-openrail-m | HuggingFace, 0 descargas |
-| Krea-2-Turbo (base) | Difusion texto-a-imagen | no disponible | no aplica | no disponible en la informacion | HuggingFace |
-| Otros LoRA sobre Krea-2-Turbo | Adaptadores LoRA | no disponible | no aplica | variable | HuggingFace |
+| Natalie (GlurpRain) | LoRA sobre Krea-2-Turbo | no disponible | no aplica | creativeml-openrail-m | Hugging Face, 0 descargas |
+| Krea-2-Turbo (base) | Difusion texto-a-imagen | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| Otros LoRA sobre Krea-2-Turbo | Adaptadores LoRA | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas para establecer una comparativa cuantitativa con alternativas concretas.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas para est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GlurpRain/Natalie
+- Hugging Face: https://huggingface.co/GlurpRain/Natalie
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Libreria diffusers: https://github.com/huggingface/diffusers

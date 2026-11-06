@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`otheru/Qwen3.8-Flash-Next-Strix-Halo-GGUF` es un repositorio de pesos en formato GGUF publicado en HuggingFace por el usuario `otheru`. Los metadatos del repositorio declaran 176.943.899.520 parámetros (unos 177.000 millones) a partir de la información de safetensors, y un tamaño total de 206,5 GB. La etiqueta `imatrix` indica que la cuantización se ha generado utilizando una matriz de importancia (importance matrix), una técnica habitual para reducir la pérdida de calidad en cuantizaciones agresivas de modelos grandes. La etiqueta `conversational` apunta a un uso orientado a diálogo.
+`otheru/Qwen3.8-Flash-Next-Strix-Halo-GGUF` es un repositorio de pesos en formato GGUF publicado en Hugging Face por el usuario `otheru`. Los metadatos del repositorio declaran 176.943.899.520 parámetros (unos 177.000 millones) a partir de la información de safetensors, y un tamaño total de 206,5 GB. La etiqueta `imatrix` indica que la cuantización se ha generado utilizando una matriz de importancia (importance matrix), una técnica habitual para reducir la pérdida de calidad en cuantizaciones agresivas de modelos grandes. La etiqueta `conversational` apunta a un uso orientado a diálogo.
 
-El nombre del repositorio sugiere que se trata de pesos derivados de un modelo de la familia Qwen y que la cuantización está pensada para ejecutarse en hardware con memoria unificada (Strix Halo, la plataforma de AMD con APU Ryzen AI Max y hasta 128 GB de memoria compartida). Sin embargo, esta interpretación procede únicamente del nombre del repositorio: la ficha de HuggingFace no declara el modelo base, no incluye model card, no especifica arquitectura, licencia, idiomas ni longitud de contexto.
+El nombre del repositorio sugiere que se trata de pesos derivados de un modelo de la familia Qwen y que la cuantización está pensada para ejecutarse en hardware con memoria unificada (Strix Halo, la plataforma de AMD con APU Ryzen AI Max y hasta 128 GB de memoria compartida). Sin embargo, esta interpretación procede únicamente del nombre del repositorio: la ficha de Hugging Face no declara el modelo base, no incluye model card, no especifica arquitectura, licencia, idiomas ni longitud de contexto.
 
 La relevancia de este artefacto es, por tanto, limitada y condicionada: se publicó el 20 de septiembre de 2026, no acumula descargas y cuenta con un único "like". No hay validación comunitaria, resultados de evaluación ni documentación de procedencia, de modo que cualquier uso en producción exige verificar primero el origen de los pesos y la licencia aplicable.
 
@@ -82,7 +82,7 @@ No se puede establecer una comparativa fiable. El repositorio no declara el mode
 | Contexto | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
 | Rendimiento en benchmarks | no publicado | no disponible |
-| Disponibilidad | GGUF en HuggingFace, 0 descargas, 1 "like" | no disponible |
+| Disponibilidad | GGUF en Hugging Face, 0 descargas, 1 "like" | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -99,5 +99,5 @@ No se puede establecer una comparativa fiable. El repositorio no declara el mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/otheru/Qwen3.8-Flash-Next-Strix-Halo-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/otheru/Qwen3.8-Flash-Next-Strix-Halo-GGUF
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

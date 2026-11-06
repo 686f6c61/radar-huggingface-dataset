@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 | Modelo | Arquitectura | Tamaño | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `ryanbaker/model_231544602_albef_tiny` | ALBEF tiny | no disponible | no disponible | MIT | Código fuente, sin pesos |
-| ALBEF (Salesforce, original) | ALBEF | ~140M (base) | 512 tokens | BSD-3-Clause | Pesos en HuggingFace (ej. `salesforce/albef-base`) |
-| CLIP (OpenAI) | Vision Transformer + Text Transformer | 63M–428M | 77 tokens | MIT | Pesos disponibles en HuggingFace |
+| ALBEF (Salesforce, original) | ALBEF | ~140M (base) | 512 tokens | BSD-3-Clause | Pesos en Hugging Face (ej. `salesforce/albef-base`) |
+| CLIP (OpenAI) | Vision Transformer + Text Transformer | 63M–428M | 77 tokens | MIT | Pesos disponibles en Hugging Face |
 
 La comparación es limitada porque el modelo de `ryanbaker` no tiene pesos ni resultados. El ALBEF original es el modelo de referencia de esta arquitectura, mientras que CLIP es otro enfoque contrastivo pero sin fusión multimodal explícita. No se puede realizar una comparación de rendimiento real sin datos.
 

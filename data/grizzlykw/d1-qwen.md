@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Grizzlykw/d1-qwen | 596 M | 512 tokens por fila | Cabeza de decision sobre backbone congelado | apache-2.0 | HuggingFace |
-| LiquidAI/d1-2B | no disponible en la informacion | no disponible en la informacion | Modelo de decision de referencia | no disponible en la informacion | HuggingFace |
-| Qwen/Qwen3-0.6B | no disponible en la informacion | no disponible en la informacion | LLM generativo base | no disponible en la informacion | HuggingFace |
+| Grizzlykw/d1-qwen | 596 M | 512 tokens por fila | Cabeza de decision sobre backbone congelado | apache-2.0 | Hugging Face |
+| LiquidAI/d1-2B | no disponible en la informacion | no disponible en la informacion | Modelo de decision de referencia | no disponible en la informacion | Hugging Face |
+| Qwen/Qwen3-0.6B | no disponible en la informacion | no disponible en la informacion | LLM generativo base | no disponible en la informacion | Hugging Face |
 
 La comparacion con d1-2B es limitada: d1-qwen adopta su API de clasificacion de texto pero es una implementacion independiente sin pesos de LiquidAI y sin reclamar su rendimiento en benchmarks. Frente a Qwen3-0.6B, la diferencia fundamental es que d1-qwen no genera texto, sino que devuelve decisiones estructuradas.
 
@@ -81,6 +81,6 @@ La comparacion con d1-2B es limitada: d1-qwen adopta su API de clasificacion de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Grizzlykw/d1-qwen
+- Hugging Face: https://huggingface.co/Grizzlykw/d1-qwen
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Referencia de API (LiquidAI d1): https://huggingface.co/LiquidAI/d1-2B

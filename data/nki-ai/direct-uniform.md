@@ -84,7 +84,7 @@ La comparativa directa con otros modelos de reconstruccion de MRI no esta dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NKI-AI/direct-uniform
+- Modelo en Hugging Face: https://huggingface.co/NKI-AI/direct-uniform
 - Repositorio GitHub de DIRECT: https://github.com/NKI-AI/direct
 - Releases de DIRECT en GitHub: https://github.com/NKI-AI/direct/releases
 - Paper de UNIFORM en OpenReview: https://openreview.net/forum?id=I13Y1nU6gs

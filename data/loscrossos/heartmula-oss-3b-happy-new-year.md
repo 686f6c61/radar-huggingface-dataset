@@ -100,7 +100,7 @@ No se dispone de comparaciones medidas (calidad musical, inteligibilidad de la l
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia consultada): https://huggingface.co/loscrossos/HeartMuLa-oss-3B-happy-new-year
+- Modelo en Hugging Face (copia consultada): https://huggingface.co/loscrossos/HeartMuLa-oss-3B-happy-new-year
 - Modelo oficial recomendado: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B-happy-new-year
 - Modelo base de la familia: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B
 - Códec recomendado: https://huggingface.co/HeartMuLa/HeartCodec-oss-20260123

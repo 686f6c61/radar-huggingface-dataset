@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Multitask (identificador `hallandrew/mixer-multitask-alpha`) es un prototipo de investigacion publicado en HuggingFace por el usuario hallandrew. No se trata de un modelo entrenado ni de un checkpoint con rendimiento verificado, sino de una implementacion propia de arquitectura tipo Mixer orientada a tareas multiples (multitask), acompanada de un script ejecutable, ficheros de configuracion y un checkpoint de inicializacion valido unicamente para pruebas de humo.
+Mixer for Multitask (identificador `hallandrew/mixer-multitask-alpha`) es un prototipo de investigacion publicado en Hugging Face por el usuario hallandrew. No se trata de un modelo entrenado ni de un checkpoint con rendimiento verificado, sino de una implementacion propia de arquitectura tipo Mixer orientada a tareas multiples (multitask), acompanada de un script ejecutable, ficheros de configuracion y un checkpoint de inicializacion valido unicamente para pruebas de humo.
 
 El repositorio se describe explicitamente como un punto de partida experimental: el autor indica que `model.safetensors` es un checkpoint de inicializacion, no un modelo entrenado, y que no se reclama ninguna puntuacion de benchmark. La configuracion incluida corresponde al tamano "xlarge" del diseno, con atencion multi-query, fusion bilineal, activacion ReLU y normalizacion InstanceNorm, entrenada por defecto con el optimizador Adafactor y un scheduler de tipo step.
 
@@ -44,7 +44,7 @@ Respecto al entrenamiento, el repositorio incluye `training_args.json` con una r
 - Experimentos de aprendizaje multitask: entrenar el modelo desde el checkpoint de inicializacion con un conjunto de datos propio y evaluar la convergencia de la receta Adafactor + scheduler step.
 - Reproducibilidad de recetas de entrenamiento: el autor recomienda entrenar todas las lineas base con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias, por lo que el repositorio sirve como plantilla metodologica.
 - Comparativas de capacidad controlada: usar el checkpoint como linea base equiparable en capacidad (mismo numero de parametros) frente a otras arquitecturas en un conjunto de validacion especifico de tarea.
-- Formacion y docencia: ilustrar en un aula o tutorial como se estructura un repositorio de investigacion minimo en HuggingFace (config, argumentos de entrenamiento, pesos de inicializacion y script de ejemplo).
+- Formacion y docencia: ilustrar en un aula o tutorial como se estructura un repositorio de investigacion minimo en Hugging Face (config, argumentos de entrenamiento, pesos de inicializacion y script de ejemplo).
 - No se recomienda ningun caso de uso en produccion, atencion al cliente, generacion de codigo ni procesamiento de lenguaje natural, dado que el modelo no esta entrenado.
 
 ## Benchmarks y rendimiento
@@ -74,9 +74,9 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 - Al ser una implementacion propia, requiere un adaptador explicito para funcionar con API de carga automatica genericas.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto aqui publicados.
 - Antes de emplearlo en cualquier evaluacion, se recomienda usar un conjunto de validacion especifico de tarea, reportar metricas con al menos tres semillas y conservar los registros de entrenamiento y las versiones del entorno.
-- Fecha de creacion en HuggingFace: 2026-10-05, con actualizacion el mismo dia. Sin descargas ni "likes" registrados.
+- Fecha de creacion en Hugging Face: 2026-10-05, con actualizacion el mismo dia. Sin descargas ni "likes" registrados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hallandrew/mixer-multitask-alpha
+- Hugging Face: https://huggingface.co/hallandrew/mixer-multitask-alpha
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web. Los resultados obtenidos no guardan relacion con el modelo y se han descartado por no aportar informacion tecnica util.

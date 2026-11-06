@@ -78,8 +78,8 @@ La cuantización NVFP4A16 es específica de GPUs NVIDIA con soporte FP4 (serie B
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/Kritpawit/Qwen3.8-27B-NVFP4A16
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/Kritpawit/Qwen3.8-27B-NVFP4A16
 - Repositorio oficial del modelo base en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación de Cloudflare Workers AI: https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/
-- Colección de cuantizaciones en HuggingFace: https://huggingface.co/collections/huginnfork/qwen38-27b
+- Colección de cuantizaciones en Hugging Face: https://huggingface.co/collections/huginnfork/qwen38-27b
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

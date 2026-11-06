@@ -96,7 +96,7 @@ Para poder comparar harian falta, como minimo: identificacion del modelo base y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ3.5e-mtp
+- Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ3.5e-mtp
 - Repositorio de la herramienta de cuantizacion oQ (oMLX), citado en la model card: https://github.com/jundot/omlx
 - Paper, blog, demo o repositorio del modelo: no disponibles.
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo; los unicos resultados devueltos tratan sobre edicion de plantillas de PowerPoint y no se incluyen por no ser pertinentes.

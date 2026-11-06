@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agenten/world-model-base es un repositorio publicado en HuggingFace por el usuario Agenten, etiquetado como `foundation-model` y `agi-infrastructure`, con licencia declarada MIT en las etiquetas del repositorio y fecha de creacion y actualizacion el 17 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene pipeline asignado.
+Agenten/world-model-base es un repositorio publicado en Hugging Face por el usuario Agenten, etiquetado como `foundation-model` y `agi-infrastructure`, con licencia declarada MIT en las etiquetas del repositorio y fecha de creacion y actualizacion el 17 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene pipeline asignado.
 
 La model card se presenta bajo el titulo "ASI Architecture Initiative: Core Repository" y describe el espacio como reservado para "pruebas estructurales en fase temprana y configuraciones base de tokens", con foco declarado en la "investigacion de la dinamica de meta-frameworks para estructuras de inteligencia de proxima generacion" y estado de "evaluacion de pre-entrenamiento y mapeo de nodos". Se trata de descripciones programaticas, sin especificacion de arquitectura, tamano, dataset ni metodologia.
 
@@ -81,6 +81,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Agenten/world-model-base
+- Hugging Face: https://huggingface.co/Agenten/world-model-base
 - Resultados de busqueda web: ninguno relevante. Los enlaces recuperados no guardan relacion con el modelo ni con la iniciativa (fabricante japones de intercambiadores de calor, contenidos de politica brasileña y programa de videos financieros italiano), por lo que no se incluyen como referencias.
 - Paper, blog, repositorio de codigo y demo: no disponibles.

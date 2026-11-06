@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1-Distill-Qwen-1.5B es un modelo de lenguaje denso de 1.777 millones de parametros obtenido por destilacion de DeepSeek-R1 sobre la base Qwen2.5-1.5B. Lo desarrolla DeepSeek AI dentro de la familia DeepSeek-R1, publicada junto con los checkpoints destilados de 1.5B, 7B, 8B, 14B, 32B y 70B. El repositorio concreto que se documenta aqui es una copia subida por el usuario XxKaitoxX a HuggingFace, sin descargas ni interacciones registradas en el momento de la consulta.
+DeepSeek-R1-Distill-Qwen-1.5B es un modelo de lenguaje denso de 1.777 millones de parametros obtenido por destilacion de DeepSeek-R1 sobre la base Qwen2.5-1.5B. Lo desarrolla DeepSeek AI dentro de la familia DeepSeek-R1, publicada junto con los checkpoints destilados de 1.5B, 7B, 8B, 14B, 32B y 70B. El repositorio concreto que se documenta aqui es una copia subida por el usuario XxKaitoxX a Hugging Face, sin descargas ni interacciones registradas en el momento de la consulta.
 
 El modelo resuelve el problema de disponer de capacidades de razonamiento tipo cadena de pensamiento (chain-of-thought) en un tamano que cabe en hardware de consumo. Frente a entrenar razonamiento con RL directamente sobre un modelo pequeno, DeepSeek demuestra que destilar los patrones de razonamiento de un modelo grande produce resultados superiores. Es relevante porque permite experimentar con tecnicas de razonamiento, verificado y reflexion en entornos con recursos limitados.
 
@@ -90,11 +90,11 @@ No se dispone de datos de rendimiento comparado para esta variante concreta; la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XxKaitoxX/DeepSeek-R1-Distill-Qwen-1.5B
+- Repositorio en Hugging Face: https://huggingface.co/XxKaitoxX/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio oficial de DeepSeek-R1: https://huggingface.co/deepseek-ai/DeepSeek-R1
 - Paper de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Licencia MIT del proyecto: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/LICENSE
 - Web de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai

@@ -64,7 +64,7 @@ No se dispone de informacion suficiente para establecer comparativas con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marcusho0509/paper_020663490_embodied_ai
+- Repositorio Hugging Face: https://huggingface.co/marcusho0509/paper_020663490_embodied_ai
 - Paper arXiv "Embodied AI: From LLMs to World Models": https://arxiv.org/abs/2509.20021
 - PDF del mismo paper (Tsinghua): http://mn.cs.tsinghua.edu.cn/xinwang/PDF/papers/2025_Embodied%20AI%20from%20LLMs%20to%20World%20Models.pdf
 - Version IEEE: https://ieeexplore.ieee.org/abstract/document/11317901

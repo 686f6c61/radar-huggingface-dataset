@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-step1000-best es un checkpoint de un modelo de lenguaje basado en arquitectura BERT, publicado por el usuario DASD12D12SAD en HuggingFace. Se distribuye como un modelo de extracción de características (feature-extraction) dentro del ecosistema transformers y PyTorch, con licencia MIT. El nombre del repositorio indica que se trata del checkpoint de la iteración 1000 de un entrenamiento, seleccionado por obtener la mejor puntuación de evaluación dentro de un espacio de trabajo.
+MyAwesomeModel-step1000-best es un checkpoint de un modelo de lenguaje basado en arquitectura BERT, publicado por el usuario DASD12D12SAD en Hugging Face. Se distribuye como un modelo de extracción de características (feature-extraction) dentro del ecosistema transformers y PyTorch, con licencia MIT. El nombre del repositorio indica que se trata del checkpoint de la iteración 1000 de un entrenamiento, seleccionado por obtener la mejor puntuación de evaluación dentro de un espacio de trabajo.
 
 La model card reporta una puntuación global ponderada de 0.710 sobre un conjunto de 15 tareas de evaluación que abarcan razonamiento lógico, clasificación de texto, análisis de sentimiento, traducción, resumen y generación de código, entre otras. Destaca especialmente en clasificación de texto (0.828), razonamiento lógico (0.819) y traducción (0.804), mientras que sus puntos más débiles son el razonamiento matemático (0.550) y la escritura creativa (0.610).
 
@@ -92,8 +92,8 @@ Advertencia: el repositorio tiene un tamaño de 0.0 GB, lo que indica que los pe
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | MyAwesomeModel-step1000-best | no disponible | no disponible | MIT | Repositorio sin pesos (0.0 GB) |
-| BERT base (referencia) | 110 M | 512 tokens | Apache 2.0 | Pesos publicos en HuggingFace |
-| BERT large (referencia) | 340 M | 512 tokens | Apache 2.0 | Pesos publicos en HuggingFace |
+| BERT base (referencia) | 110 M | 512 tokens | Apache 2.0 | Pesos publicos en Hugging Face |
+| BERT large (referencia) | 340 M | 512 tokens | Apache 2.0 | Pesos publicos en Hugging Face |
 
 La comparativa se limita a las variantes canónicas de BERT porque la etiqueta del repositorio apunta a esa familia. No es posible comparar rendimiento porque los benchmarks reportados no son estándares públicos y no hay resultados equivalentes para los modelos de referencia en esta ficha. Cualquier comparación cuantitativa sería especulativa.
 
@@ -111,7 +111,7 @@ La comparativa se limita a las variantes canónicas de BERT porque la etiqueta d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DASD12D12SAD/MyAwesomeModel-step1000-best
+- Hugging Face: https://huggingface.co/DASD12D12SAD/MyAwesomeModel-step1000-best
 - Paper de BERT (referencia de la arquitectura): https://arxiv.org/abs/1810.04805
 - Repositorio oficial de transformers: https://github.com/huggingface/transformers
 - Documentación de pipelines de transformers: https://huggingface.co/docs/transformers/main_classes/pipelines

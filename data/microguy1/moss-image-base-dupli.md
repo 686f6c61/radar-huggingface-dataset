@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Image-Base | 5.080 M | 1024x1024 en el ejemplo oficial | en, zh | Apache 2.0 | HuggingFace, ModelScope, ComfyUI |
-| MOSS-Image-SFT | No disponible | No disponible | en, zh | Apache 2.0 (segun familia) | HuggingFace, ModelScope |
+| MOSS-Image-Base | 5.080 M | 1024x1024 en el ejemplo oficial | en, zh | Apache 2.0 | Hugging Face, ModelScope, ComfyUI |
+| MOSS-Image-SFT | No disponible | No disponible | en, zh | Apache 2.0 (segun familia) | Hugging Face, ModelScope |
 | Otros generadores texto-a-imagen open source | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa rigurosa con modelos como FLUX, SDXL o similares.
@@ -82,13 +82,13 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio HuggingFace (duplicado): https://huggingface.co/Microguy1/MOSS-Image-Base-DUPLI
-- Modelo oficial en HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
+- Repositorio Hugging Face (duplicado): https://huggingface.co/Microguy1/MOSS-Image-Base-DUPLI
+- Modelo oficial en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Variante SFT oficial: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - ModelScope (Base): https://modelscope.cn/models/openmoss/MOSS-Image-Base
 - ModelScope (SFT): https://modelscope.cn/models/openmoss/MOSS-Image-SFT
 - Repositorio GitHub: https://github.com/OpenMOSS/MOSS-Image
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - Pagina del proyecto: https://openmoss.github.io/MOSS-Image/
 - Informe tecnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
 - arXiv: https://arxiv.org/abs/2610.23374

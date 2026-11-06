@@ -18,7 +18,7 @@ El repositorio almacena cinco epocas de entrenamiento como commits ordenados, si
 | Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica pesos safetensors sin versiones cuantizadas) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en los metadatos de HuggingFace; el autor indica que los pesos de Llama 3.1 siguen sujetos a la Llama 3.1 Community License |
+| Licencia | no disponible en los metadatos de Hugging Face; el autor indica que los pesos de Llama 3.1 siguen sujetos a la Llama 3.1 Community License |
 | Formato de pesos | safetensors con codigo remoto (`trust_remote_code=True`); repositorio de 84,9 GB |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ El mejor checkpoint es el de la epoca 2 (CE 0,79962127), disponible tanto en la 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Este modelo (SNI standard pool-15) | 8,49 B | no disponible | no disponible (sujeto a Llama 3.1 Community License segun el autor) | Publico en HuggingFace, 0 descargas, 0 likes | Sin benchmarks estandar; solo CE de validacion |
+| Este modelo (SNI standard pool-15) | 8,49 B | no disponible | no disponible (sujeto a Llama 3.1 Community License segun el autor) | Publico en Hugging Face, 0 descargas, 0 likes | Sin benchmarks estandar; solo CE de validacion |
 | Llama 3.1 8B (modelo base) | ~8,03 B | 128 000 tokens (segun la ficha oficial de Meta) | Llama 3.1 Community License | Ampliamente disponible | Amplia bateria de benchmarks publicada por Meta |
 | Modelos densos de tamano similar (por ejemplo, Mistral 7B o Qwen2.5 7B) | 7-8 B | Variable segun familia | Apache 2.0 en la mayoria de sus variantes | Ampliamente disponibles | Benchmarks publicados por sus autores |
 | MoE de mayor escala (por ejemplo, Mixtral 8x7B) | ~46,7 B totales | 32 000 tokens | Apache 2.0 | Ampliamente disponible | Benchmarks publicados por Mistral AI |
@@ -95,12 +95,12 @@ La comparacion directa de rendimiento con cualquiera de estas alternativas no es
 - Idiomas no documentados: se desconoce que lenguas cubre realmente el ajuste fino; no se debe asumir cobertura multilingue.
 - Sesgos: no se documenta ninguna evaluacion de sesgos; cualquier sesgo presente en Llama 3.1 8B o introducido por el dataset de ajuste (no descrito) permanece sin caracterizar.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje de esta escala y no evaluado en este checkpoint.
-- Licencia: los metadatos de HuggingFace no declaran licencia, pero el autor indica que los pesos de Llama 3.1 siguen sujetos a la Llama 3.1 Community License, lo que impone restricciones especificas de uso comercial y de atribucion que deben verificarse antes de cualquier despliegue.
+- Licencia: los metadatos de Hugging Face no declaran licencia, pero el autor indica que los pesos de Llama 3.1 siguen sujetos a la Llama 3.1 Community License, lo que impone restricciones especificas de uso comercial y de atribucion que deben verificarse antes de cualquier despliegue.
 - Madurez: cero descargas y cero likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jongbin-kr/llama31-8b-16x4-sni-standard_pool15-s42
+- Modelo en Hugging Face: https://huggingface.co/Jongbin-kr/llama31-8b-16x4-sni-standard_pool15-s42
 - Modelo base declarado: https://huggingface.co/Jongbin-kr/llama3.1-8b-16x4-emo-style-routed-lora-moe
 - Licencia de Llama 3.1 (aplicable a los pesos base segun el autor): https://llama.meta.com/llama3_1/license/
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente paginas de alquiler de vehiculos sin relacion con el contenido solicitado.

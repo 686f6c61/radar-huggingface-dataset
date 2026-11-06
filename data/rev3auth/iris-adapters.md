@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rev3auth/iris-adapters es un repositorio publicado en HuggingFace Hub por el usuario Rev3auth el 27 de septiembre de 2026. En el momento de redactar esta ficha acumula cero descargas y cero likes, el repositorio ocupa 0.0 GB y su model card es la plantilla autogenerada por HuggingFace, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]".
+Rev3auth/iris-adapters es un repositorio publicado en Hugging Face Hub por el usuario Rev3auth el 27 de septiembre de 2026. En el momento de redactar esta ficha acumula cero descargas y cero likes, el repositorio ocupa 0.0 GB y su model card es la plantilla autogenerada por Hugging Face, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]".
 
 La unica informacion tecnica verificable procede de las etiquetas del repositorio: `transformers` como libreria, `safetensors` como formato de pesos, `endpoints_compatible` y `region:us`. El nombre del repositorio sugiere que podria tratarse de un conjunto de adaptadores (por ejemplo, del tipo LoRA o PEFT) y el tamano declarado de 0.0 GB es coherente con esa hipotesis, pero no hay ninguna confirmacion explicita en la model card ni en los metadatos, por lo que no puede darse por sentado.
 
@@ -27,7 +27,7 @@ Datos adicionales de metadatos: libreria declarada `transformers`; etiquetas `tr
 
 No disponible. La model card es la plantilla estandar autogenerada y no contiene ninguna descripcion de la arquitectura (transformer, MoE, SSM, hibrida u otra), del objetivo de entrenamiento ni de la procedencia de los pesos. Tampoco se indica el modelo base sobre el que se habrian entrenado unos hipoteticos adaptadores, ni si existen fases de ajuste fino supervisado, RLHF o DPO.
 
-No hay informacion sobre volumen de tokens, composicion del dataset, hiperparametros de entrenamiento, precision utilizada (fp32, fp16, bf16, fp8) ni infraestructura de computo. La referencia `arxiv:1910.09700` que aparece entre las etiquetas corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de HuggingFace, y no debe interpretarse como el paper del modelo.
+No hay informacion sobre volumen de tokens, composicion del dataset, hiperparametros de entrenamiento, precision utilizada (fp32, fp16, bf16, fp8) ni infraestructura de computo. La referencia `arxiv:1910.09700` que aparece entre las etiquetas corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de Hugging Face, y no debe interpretarse como el paper del modelo.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No es posible recomendar casos de uso concretos sin conocer el modelo base, el t
 - Clasificacion y extraccion de informacion: requeriria conocer la ventana de contexto y los idiomas soportados, datos no publicados.
 - Generacion de codigo asistida: sin benchmarks ni confirmacion de entrenamiento en codigo, no hay evidencia de viabilidad.
 - Atencion al cliente multi-turno: depende de la longitud de contexto, no declarada.
-- Despliegue en endpoint gestionado: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no se especifican requisitos de hardware ni licencia de uso comercial.
+- Despliegue en endpoint gestionado: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no se especifican requisitos de hardware ni licencia de uso comercial.
 - Investigacion academica sobre adaptadores: seria el uso mas plausible dado el nombre del repositorio, siempre que se documentase la procedencia de los pesos y los datos de entrenamiento.
 - Evaluacion comparativa interna: posible solo despues de que el autor publique una model card real con resultados reproducibles.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni el modelo base no es posible calcular el consumo de memoria.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. Si finalmente se tratase de adaptadores sobre un modelo base, el requisito de memoria vendria determinado integramente por ese base, no por el repositorio en si.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad declarada con HuggingFace Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama, TGI ni otros motores, ni de que existan pesos en formato GGUF.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad declarada con Hugging Face Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama, TGI ni otros motores, ni de que existan pesos en formato GGUF.
 - Latencia y throughput estimados: no disponible.
 - Nota operativa: el repositorio ocupa 0.0 GB, lo que sugiere que no contiene pesos completos de un modelo grande, pero este dato por si solo no permite descartar ni confirmar ninguna configuracion de hardware.
 
@@ -90,7 +90,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rev3auth/iris-adapters
+- Repositorio en Hugging Face: https://huggingface.co/Rev3auth/iris-adapters
 - Paper citado en la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (paper del modelo, blog, repositorio de codigo o demo) en la informacion disponible.

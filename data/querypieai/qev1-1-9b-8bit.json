@@ -5,7 +5,7 @@
   "author": "querypieai",
   "url": "https://huggingface.co/querypieai/QEV1.1-9B-8BIT",
   "created_at": "2026-10-28T09:32:04.000Z",
-  "updated_at": "2026-10-28T11:08:14.000Z",
+  "updated_at": "2026-11-06T05:00:54.000Z",
   "license": "querypie-ai-research-license-v1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 50,
+  "downloads_30d": 52,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

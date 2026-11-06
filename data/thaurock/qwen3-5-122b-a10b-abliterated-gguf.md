@@ -103,7 +103,7 @@ No se dispone de informacion sobre modelos de la misma categoria con la que esta
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones GGUF: https://huggingface.co/Thaurock/Qwen3.5-122B-A10B-abliterated-GGUF
+- Repositorio Hugging Face de las cuantizaciones GGUF: https://huggingface.co/Thaurock/Qwen3.5-122B-A10B-abliterated-GGUF
 - Modelo base abliterado: https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterix
 - Perfil del autor de la abliteracion: https://huggingface.co/wangzhang
 - Perfil del autor de las cuantizaciones: https://huggingface.co/Thaurock

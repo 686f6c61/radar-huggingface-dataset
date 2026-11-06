@@ -88,7 +88,7 @@ Comparación con referencias citadas por el autor (MedMNIST v2): ResNet-18 (11,7
 
 | Modelo | Parámetros | Contexto | Exactitud en PathMNIST test | AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PathoCNN | 288.809 | no aplica | 0,8712 | 0,9855 | MIT | HuggingFace, GitHub, ONNX |
+| PathoCNN | 288.809 | no aplica | 0,8712 | 0,9855 | MIT | Hugging Face, GitHub, ONNX |
 | ResNet-18 (referencia MedMNIST v2) | 11,7M | no aplica | 0,907 | 0,983 | no disponible en la información | Referencia del paper MedMNIST v2 |
 | ResNet-50 (referencia MedMNIST v2) | no disponible en la información | no aplica | 0,911 | 0,990 | no disponible en la información | Referencia del paper MedMNIST v2 |
 | SonoCNN (modelo hermano, BreastMNIST) | no disponible en la información | no aplica | no disponible | no disponible | no disponible en la información | Mencionado como release hermano |
@@ -107,7 +107,7 @@ Comparación con referencias citadas por el autor (MedMNIST v2): ResNet-18 (11,7
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/habib-analyst/pathocnn
+- Modelo en Hugging Face: https://huggingface.co/habib-analyst/pathocnn
 - Repositorio GitHub: https://github.com/habib-analyst/pathocnn
 - Paper MedMNIST v2 (referencia de benchmark): no disponible en la información proporcionada
 - Demo o espacios asociados: no disponibles en la información proporcionada

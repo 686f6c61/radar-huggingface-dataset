@@ -86,7 +86,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kevincity2026/connectailab-kevin-v1
+- Modelo en Hugging Face: https://huggingface.co/kevincity2026/connectailab-kevin-v1
 - Repositorio Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Sitio del autor (KevinCity Cloud): https://kevincity.cloud
@@ -95,6 +95,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Curso de IA con aprendizaje por refuerzo: https://www.aicitybuilders.com/robot
 - Connect AI: https://www.ezerai.xyz
 - Canales musicales y de comunidad citados por el autor: https://www.youtube.com/@MelodistSeoul, https://www.youtube.com/@Melodist_Chill, https://www.youtube.com/@QuietWorshipLofi, https://www.youtube.com/@FaithinMelody-m1b, https://www.youtube.com/@StillRoomMeditationMusic, https://www.youtube.com/@pickballdoctor4060
-- Esquema JEV referenciado: `typesafe/jev-1.13` (identificador de HuggingFace; no se ha verificado su URL en la información disponible)
+- Esquema JEV referenciado: `typesafe/jev-1.13` (identificador de Hugging Face; no se ha verificado su URL en la información disponible)
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces encontrados correspondían a un buscador de vuelos y no guardan relación con la ficha.

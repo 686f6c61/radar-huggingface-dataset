@@ -21,7 +21,7 @@ El modelo hereda la arquitectura transformer decoder-only de Qwen3-8B, con 8,19 
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Qwen3-8B`, una versión optimizada de Qwen3-8B preparada por Unsloth para acelerar el entrenamiento. Qwen3-8B es un transformer autoregresivo con atención estándar, normalización RMSNorm, y activación SwiGLU. No utiliza arquitectura MoE ni mecanismos híbridos. El ajuste fino se realizó con la librería TRL de HuggingFace y el flujo de trabajo de Unsloth, que permite entrenar aproximadamente el doble de rápido que un pipeline convencional.
+El modelo parte de `unsloth/Qwen3-8B`, una versión optimizada de Qwen3-8B preparada por Unsloth para acelerar el entrenamiento. Qwen3-8B es un transformer autoregresivo con atención estándar, normalización RMSNorm, y activación SwiGLU. No utiliza arquitectura MoE ni mecanismos híbridos. El ajuste fino se realizó con la librería TRL de Hugging Face y el flujo de trabajo de Unsloth, que permite entrenar aproximadamente el doble de rápido que un pipeline convencional.
 
 El entrenamiento es de tipo SFT (supervised fine-tuning) sobre un subconjunto etiquetado como "last third" (último tercio) de un conjunto de datos no especificado. Se usó una semilla fija (seed4) y tres épocas. No se dispone de información sobre el tamaño del dataset, la composición de los datos, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo indica que el objetivo es la generación de nombres de ciudades alemanas, pero no hay detalles sobre la tarea exacta (generación libre, clasificación, completado de secuencias, etc.).
 
@@ -78,7 +78,7 @@ El fine-tune aquí descrito parte de Qwen3-8B, por lo que su comportamiento gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed4-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed4-epoch3
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-8B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Variante "last-third" sin seed: https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft

@@ -73,7 +73,7 @@ La comparacion relevante aqui no es de rendimiento -no hay datos publicados para
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated; es necesario aceptar condiciones en HuggingFace antes de descargar, y no se garantiza la aprobacion.
+- **Acceso restringido**: el repositorio es gated; es necesario aceptar condiciones en Hugging Face antes de descargar, y no se garantiza la aprobacion.
 - **Licencia ausente**: no se declara licencia para el adaptador. El modelo base deriva de LLaMA-2, cuyas condiciones pueden imponer restricciones al uso comercial. No debe asumirse uso comercial libre.
 - **Artefacto de benchmark, no producto**: la nomenclatura indica un checkpoint experimental de un pipeline de evaluacion; no hay tarjeta de modelo, ni métricas, ni garantia de calidad.
 - **Sin validacion externa**: 0 descargas, 0 "likes", repositorio de 0,0 GB. No hay evidencia de que los pesos sean utilizables o esten efectivamente publicados.
@@ -86,7 +86,7 @@ La comparacion relevante aqui no es de rendimiento -no hay datos publicados para
 
 ## Enlaces
 
-- [Ficha del adaptador en HuggingFace](https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-ctxq)
+- [Ficha del adaptador en Hugging Face](https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-ctxq)
 - [Modelo base: princeton-nlp/Sheared-LLaMA-1.3B](https://huggingface.co/princeton-nlp/Sheared-LLaMA-1.3B)
 - [Dataset MS MARCO (microsoft/ms_marco)](https://huggingface.co/datasets/microsoft/ms_marco)
 - [Repositorio de Sheared-LLaMA (Princeton NLP)](https://github.com/princeton-nlp/Sheared-LLaMA)

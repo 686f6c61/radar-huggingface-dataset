@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace - ImKyungjin/pi0-stackcube-recover-noise-80pct-40ep](https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-80pct-40ep)
+- [Hugging Face - ImKyungjin/pi0-stackcube-recover-noise-80pct-40ep](https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-80pct-40ep)
 - [Physical Intelligence π₀ blog post](https://www.physicalintelligence.company/blog/pi0)
 - [LeRobot GitHub](https://github.com/huggingface/lerobot)
 - [LeRobot Docs](https://huggingface.co/docs/lerobot/index)

@@ -40,7 +40,7 @@ Dado que el modelo no está entrenado, los casos de uso son exclusivamente exper
 
 - **Investigación arquitectónica**: sirve como base para estudiar cómo la atención de consulta agrupada y la fusión bilineal afectan a tareas de retrieval. Se puede modificar el código y comparar variantes.
 - **Pruebas de integración**: el checkpoint de inicialización permite verificar que el pipeline de carga, forward y guardado funciona antes de lanzar un entrenamiento completo.
-- **Desarrollo de adaptadores**: al ser una implementación personalizada, los desarrolladores pueden crear adaptadores para cargarlo con APIs genéricas de HuggingFace.
+- **Desarrollo de adaptadores**: al ser una implementación personalizada, los desarrolladores pueden crear adaptadores para cargarlo con APIs genéricas de Hugging Face.
 - **Experimentos de entrenamiento desde cero**: con solo 24.832 parámetros, es viable entrenarlo en una sola GPU para tareas de retrieval a pequeña escala, como evaluación en Flickr30k (sugerida por el autor).
 - **Comparación de líneas base**: el autor recomienda usarlo como referencia de capacidad equivalente en estudios que comparen arquitecturas eficientes.
 - **Educación**: útil para aprender cómo se estructura un modelo de retrieval basado en transformer y cómo se configura un experimento con adafactor y programación exponencial.
@@ -72,6 +72,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/filipnowa/efficientformer-retrieval)
+- [Repositorio en Hugging Face](https://huggingface.co/filipnowa/efficientformer-retrieval)
 - [GitHub de EfficientFormer (Snap Research)](https://github.com/snap-research/EfficientFormer)
 - [Modelos de EfficientFormer en Qualcomm AI Hub](https://aihub.qualcomm.com/models/efficientformer)

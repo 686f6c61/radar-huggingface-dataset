@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`firzahdzm/tourn-smoke-qwen3-5-9b-super-sm1` es un adaptador LoRA (librería PEFT) publicado en HuggingFace por el usuario `firzahdzm`, diseñado como un ajuste fino sobre el modelo base `Qwen/Qwen3.5-9B`. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (1,4 GB), no el modelo completo, por lo que su uso requiere cargar primero el modelo base y después aplicar el adaptador. La model card está prácticamente vacía: no se especifican datos de entrenamiento, hiperparámetros, licencia, idiomas ni casos de uso previstos.
+`firzahdzm/tourn-smoke-qwen3-5-9b-super-sm1` es un adaptador LoRA (librería PEFT) publicado en Hugging Face por el usuario `firzahdzm`, diseñado como un ajuste fino sobre el modelo base `Qwen/Qwen3.5-9B`. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (1,4 GB), no el modelo completo, por lo que su uso requiere cargar primero el modelo base y después aplicar el adaptador. La model card está prácticamente vacía: no se especifican datos de entrenamiento, hiperparámetros, licencia, idiomas ni casos de uso previstos.
 
 El nombre del modelo sugiere una posible relación con la familia de adaptadores "SMOKE" (aparecen otros repositorios similares como `TomasJavurek/qwen35-9b-stepwise-smoke` o `SMOKE-2026/Qwen3.5-9B-Adv`), pero no hay documentación que confirme qué tarea concreta aborda este adaptador. Su relevancia actual es limitada: se trata de un experimento de ajuste fino sin validación pública, con cero descargas y cero likes en el momento de la consulta. Para desarrolladores, puede servir como ejemplo de cómo publicar adaptadores LoRA, pero no como recurso fiable para producción.
 
@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Base | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| firzahdzm/tourn-smoke-qwen3-5-9b-super-sm1 | Qwen3.5-9B | Adaptador LoRA | No disponible | No disponible | No disponible | HuggingFace (0 descargas) |
-| TomasJavurek/qwen35-9b-stepwise-smoke | Qwen3.5-9B | Adaptador LoRA (entrenado con TRL) | No disponible | No disponible | No disponible | HuggingFace |
-| SMOKE-2026/Qwen3.5-9B-Adv | Qwen3.5-9B | Adaptador LoRA | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3.5-9B (modelo base) | - | Modelo completo | 9B | No disponible (segun documentacion de Qwen, contexto largo) | Apache 2.0 (segun Qwen) | HuggingFace, Ollama |
+| firzahdzm/tourn-smoke-qwen3-5-9b-super-sm1 | Qwen3.5-9B | Adaptador LoRA | No disponible | No disponible | No disponible | Hugging Face (0 descargas) |
+| TomasJavurek/qwen35-9b-stepwise-smoke | Qwen3.5-9B | Adaptador LoRA (entrenado con TRL) | No disponible | No disponible | No disponible | Hugging Face |
+| SMOKE-2026/Qwen3.5-9B-Adv | Qwen3.5-9B | Adaptador LoRA | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3.5-9B (modelo base) | - | Modelo completo | 9B | No disponible (segun documentacion de Qwen, contexto largo) | Apache 2.0 (segun Qwen) | Hugging Face, Ollama |
 
 No se dispone de datos de rendimiento comparativo entre estos adaptadores. El modelo base Qwen3.5-9B tiene benchmarks publicados en Benchable (83% de tasa de exito en fiabilidad, rendimiento de velocidad en el percentil 10), pero no se puede atribuir ese rendimiento al adaptador.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estos adaptadores. El mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/firzahdzm/tourn-smoke-qwen3-5-9b-super-sm1
+- Repositorio Hugging Face: https://huggingface.co/firzahdzm/tourn-smoke-qwen3-5-9b-super-sm1
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Adaptador similar (TomasJavurek): https://huggingface.co/TomasJavurek/qwen35-9b-stepwise-smoke
 - Adaptador similar (SMOKE-2026): https://huggingface.co/SMOKE-2026/Qwen3.5-9B-Adv

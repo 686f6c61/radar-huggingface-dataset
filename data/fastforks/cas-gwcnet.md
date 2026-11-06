@@ -94,12 +94,12 @@ No se dispone de datos de otros modelos de correspondencia estéreo en la inform
 - Licencia de pesos no declarada por los autores: el código es MIT, pero el uso comercial de los checkpoints se asume a partir del código y debe verificarse antes de cualquier uso en producción.
 - El backend `kernels` requiere un kernel precompilado para la arquitectura de GPU concreta y no hace fallback silencioso: si no hay kernel disponible lanza `BackendUnavailableError`.
 - Riesgo de alucinación no aplica en el sentido de texto, pero sí de artefactos: en regiones oclusivas, sin textura o con reflejos, el mapa de disparidad puede contener errores que no se señalan explícitamente.
-- Este repositorio de HuggingFace no contiene pesos: la inferencia depende de la disponibilidad de los enlaces de descarga de los autores y de la verificación SHA-256.
+- Este repositorio de Hugging Face no contiene pesos: la inferencia depende de la disponibilidad de los enlaces de descarga de los autores y de la verificación SHA-256.
 - Sin soporte multilingüe, tool calling ni agentes; no es un modelo de lenguaje.
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/cas-gwcnet
+- Model card en Hugging Face: https://huggingface.co/fastforks/cas-gwcnet
 - Repositorio del paquete fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend CUDA: https://huggingface.co/fastforks/kernels
 - Código original Cascade Stereo (Alibaba): https://github.com/alibaba/cascade-stereo

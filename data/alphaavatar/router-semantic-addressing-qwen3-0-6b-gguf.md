@@ -93,6 +93,6 @@ No se dispone de comparaciones directas publicadas con otros clasificadores de d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlphaAvatar/router-semantic-addressing-qwen3-0.6b-gguf
+- Repositorio Hugging Face: https://huggingface.co/AlphaAvatar/router-semantic-addressing-qwen3-0.6b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web.

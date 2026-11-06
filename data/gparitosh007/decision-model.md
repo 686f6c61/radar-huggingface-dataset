@@ -59,16 +59,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada en FP16/BF16: alrededor de 0,3 GB de pesos; cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; una RTX 3060, RTX 4090 o T4 es más que suficiente. Para servir muchas peticiones en paralelo, una A10G o L4 permite mayor throughput.
 - Cabe en GPU consumer: sí, en prácticamente todas las GPU consumer modernas e incluso en CPU para cargas moderadas.
-- Opciones de despliegue: servidor MCP incluido (`decision-mcp`), servidor HTTP propio (`python -m decision_model.http_server`) y carga directa con transformers. La model card no menciona soporte explícito para vLLM, llama.cpp, Ollama ni TGI; el tag `text-embeddings-inference` aparece en los metadatos de HuggingFace.
+- Opciones de despliegue: servidor MCP incluido (`decision-mcp`), servidor HTTP propio (`python -m decision_model.http_server`) y carga directa con transformers. La model card no menciona soporte explícito para vLLM, llama.cpp, Ollama ni TGI; el tag `text-embeddings-inference` aparece en los metadatos de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decision-model v2 | 149,0 M | no disponible | Clasificación de decisión con probabilidades calibradas | Apache 2.0 | Pesos en HuggingFace; código fuente no público |
-| tasksource/ModernBERT-base-nli | no disponible | no disponible | NLI / inferencia de lenguaje natural | no disponible | HuggingFace |
-| ModernBERT-base | no disponible | no disponible | Encoder generalista | no disponible | HuggingFace |
+| decision-model v2 | 149,0 M | no disponible | Clasificación de decisión con probabilidades calibradas | Apache 2.0 | Pesos en Hugging Face; código fuente no público |
+| tasksource/ModernBERT-base-nli | no disponible | no disponible | NLI / inferencia de lenguaje natural | no disponible | Hugging Face |
+| ModernBERT-base | no disponible | no disponible | Encoder generalista | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de modelos directamente comparables en la misma categoría de "modelo de decisión con opciones cerradas" en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de modelos directamente comparables en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gparitosh007/decision-model
+- Hugging Face: https://huggingface.co/gparitosh007/decision-model
 - Modelo base: https://huggingface.co/tasksource/ModernBERT-base-nli
 - Dataset citado: https://huggingface.co/datasets/tasksource/bigbench
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

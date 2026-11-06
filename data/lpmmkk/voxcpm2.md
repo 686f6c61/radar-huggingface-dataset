@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoxCPM2 es un modelo de síntesis de voz (text-to-speech) de 2.290.004.544 parámetros (unos 2,29B) que combina un backbone de lenguaje derivado de MiniCPM-4 con decodificación por difusión autoregresiva y sin tokenizador de texto. La ficha de HuggingFace analizada corresponde al repositorio LPmmKK/VoxCPM2, si bien su model card remite al proyecto OpenBMB/VoxCPM y al punto de descarga openbmb/VoxCPM2, por lo que se trata de una publicación espejo de terceros. Se distribuye en formato safetensors (bfloat16) bajo licencia Apache-2.0, con un repositorio de 5 GB.
+VoxCPM2 es un modelo de síntesis de voz (text-to-speech) de 2.290.004.544 parámetros (unos 2,29B) que combina un backbone de lenguaje derivado de MiniCPM-4 con decodificación por difusión autoregresiva y sin tokenizador de texto. La ficha de Hugging Face analizada corresponde al repositorio LPmmKK/VoxCPM2, si bien su model card remite al proyecto OpenBMB/VoxCPM y al punto de descarga openbmb/VoxCPM2, por lo que se trata de una publicación espejo de terceros. Se distribuye en formato safetensors (bfloat16) bajo licencia Apache-2.0, con un repositorio de 5 GB.
 
 El modelo resuelve la síntesis multilingüe sin etiquetas de idioma: acepta texto directamente en 30 idiomas (español, inglés, chino, árabe, hindi, japonés, swahili, entre otros) más nueve dialectos del chino, y genera audio a 48 kHz mediante el módulo AudioVAE V2, que aplica superresolución integrada a partir de referencias de 16 kHz. Ofrece tres modos de control de voz: diseño de voz desde una descripción en lenguaje natural, clonación controlable desde un clip corto con guía de estilo y clonación de alta fidelidad con audio de referencia y su transcripción.
 
@@ -114,12 +114,12 @@ Los resultados de los benchmarks Seed-TTS-eval, CV3-eval, InstructTTSEval y Mini
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio analizado): https://huggingface.co/LPmmKK/VoxCPM2
+- Modelo en Hugging Face (repositorio analizado): https://huggingface.co/LPmmKK/VoxCPM2
 - Repositorio GitHub del proyecto: https://github.com/OpenBMB/VoxCPM
 - Tablas de rendimiento del proyecto: https://github.com/OpenBMB/VoxCPM#-performance
 - Documentación (ReadTheDocs): https://voxcpm.readthedocs.io/en/latest/
 - Guía de inicio rápido: https://voxcpm.readthedocs.io/en/latest/quickstart.html
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
 - Página de muestras de audio: https://openbmb.github.io/voxcpm2-demopage
 - Aceleración con Nano-VLLM: https://github.com/a710128/nanovllm-voxcpm
 - Preprint en arXiv: https://arxiv.org/abs/2509.24650

@@ -90,9 +90,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Eikos-27B-INT4 | 27,36 B (27.356.728.560) | no disponible | JevBench hard 82,9; DecisionBench hard 78,5; ECE 0,041 | MIT (contribuciones), Apache-2.0 (base) | HuggingFace, safetensors compressed-tensors |
-| Eikos-27B (bf16) | 27,36 B | no disponible | JevBench hard 82,0; DecisionBench hard 78,2; ECE 0,043 | MIT (contribuciones), Apache-2.0 (base) | HuggingFace, 55,6 GB |
-| Qwen3.8-27B (modelo base) | 27 B aprox. (no confirmado en la informacion) | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Eikos-27B-INT4 | 27,36 B (27.356.728.560) | no disponible | JevBench hard 82,9; DecisionBench hard 78,5; ECE 0,041 | MIT (contribuciones), Apache-2.0 (base) | Hugging Face, safetensors compressed-tensors |
+| Eikos-27B (bf16) | 27,36 B | no disponible | JevBench hard 82,0; DecisionBench hard 78,2; ECE 0,043 | MIT (contribuciones), Apache-2.0 (base) | Hugging Face, 55,6 GB |
+| Qwen3.8-27B (modelo base) | 27 B aprox. (no confirmado en la informacion) | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos comparativos frente a otros modelos de la misma categoria (por ejemplo, clasificadores financieros o modelos de decision de 27 B) en la informacion proporcionada.
 
@@ -111,7 +111,7 @@ No se dispone de datos comparativos frente a otros modelos de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caiovicentino1/Eikos-27B-INT4
+- Modelo en Hugging Face: https://huggingface.co/caiovicentino1/Eikos-27B-INT4
 - Modelo base (version bf16): https://huggingface.co/caiovicentino1/Eikos-27B
 - Imagen de presentacion del modelo: https://huggingface.co/caiovicentino1/Eikos-27B/resolve/main/assets/eikos_launch.png
 - La busqueda web realizada no devolvio resultados relevantes (unicamente paginas generales del buscador); no se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

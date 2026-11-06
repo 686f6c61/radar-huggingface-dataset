@@ -88,7 +88,7 @@ La diferencia práctica frente a las alternativas es la disponibilidad: los tres
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itriedcoding/Satari-Code-Training
+- Repositorio en Hugging Face: https://huggingface.co/itriedcoding/Satari-Code-Training
 - Cuaderno de entrenamiento en Colab: https://colab.research.google.com/github/itriedcoding/satari-code/blob/main/training/Satari_Code_SFT.ipynb
 - Repositorio de código del proyecto (según la URL del cuaderno): https://github.com/itriedcoding/satari-code
 - Artefactos de salida previstos: https://huggingface.co/itriedcoding/Satari-Code-1.5B, https://huggingface.co/itriedcoding/Satari-Code-1.5B-LoRA, https://huggingface.co/itriedcoding/Satari-Code-1.5B-GGUF

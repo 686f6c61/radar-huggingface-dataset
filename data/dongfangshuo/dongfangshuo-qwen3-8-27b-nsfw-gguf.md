@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dongfangshuo-Qwen3.8-27B-NSFW-GGUF es la versión cuantizada en formato GGUF del modelo Dongfangshuo-Qwen3.8-27B-NSFW, publicado por el usuario dongfangshuo en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text derivado de Huihui-Qwen3.8-27B-abliterated, sobre el que se ha aplicado un ajuste fino orientado a contenido adulto (R-18) y a maximizar la obediencia ante peticiones que los modelos alineados rechazarían habitualmente. El repositorio incluye el archivo principal Q4_K_M de 16,8 GB, un proyector visual mmproj de 931 MB y un Modelfile para su importación directa en Ollama.
+Dongfangshuo-Qwen3.8-27B-NSFW-GGUF es la versión cuantizada en formato GGUF del modelo Dongfangshuo-Qwen3.8-27B-NSFW, publicado por el usuario dongfangshuo en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text derivado de Huihui-Qwen3.8-27B-abliterated, sobre el que se ha aplicado un ajuste fino orientado a contenido adulto (R-18) y a maximizar la obediencia ante peticiones que los modelos alineados rechazarían habitualmente. El repositorio incluye el archivo principal Q4_K_M de 16,8 GB, un proyector visual mmproj de 931 MB y un Modelfile para su importación directa en Ollama.
 
 El modelo cuenta con 27.320.697.856 parámetros totales (aproximadamente 27,3 mil millones) según los pesos safetensors del modelo base, y el repositorio ocupa 17,8 GB. La model card declara capacidades de análisis de imagen y vídeo gracias al proyector multimodal, soporte para chino (zh) como único idioma declarado en los metadatos y licencia Apache-2.0. No se han publicado especificaciones sobre longitud de contexto, composición del dataset de entrenamiento ni resultados de benchmarks.
 
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF
+- Modelo en Hugging Face: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF
 - Modelo base: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW
 - Perfil del autor: https://huggingface.co/dongfangshuo
 - Huihui-Qwen3.8-27B-abliterated: no disponible (no se proporciona el enlace en la información recibida)

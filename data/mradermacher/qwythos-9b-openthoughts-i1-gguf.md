@@ -21,7 +21,7 @@ La informacion publica disponible es muy limitada: no se declara licencia, no ha
 | Licencia | no disponible |
 | Formato de pesos | GGUF (cuantizado); el modelo base se distribuye en safetensors para transformers |
 | Tamano del repositorio | 110,2 GB |
-| Fecha de publicacion | 13 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 13 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -52,7 +52,7 @@ Lo que si esta documentado es el proceso de cuantizacion. mradermacher ha genera
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio cuantizado ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench o similares, ni para el modelo base ni para las cuantizaciones. Tampoco se aportan mediciones de perplejidad propias mas alla de la referencia grafica generica a tipos de cuantizacion.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio cuantizado ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench o similares, ni para el modelo base ni para las cuantizaciones. Tampoco se aportan mediciones de perplejidad propias mas alla de la referencia grafica generica a tipos de cuantizacion.
 
 ## Requisitos de hardware
 
@@ -110,7 +110,7 @@ Nota: no se confirma que `qwythos-9b-openthoughts` derive de ninguna de estas fa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwythos-9b-openthoughts-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwythos-9b-openthoughts-i1-GGUF
 - Modelo base: https://huggingface.co/abdurrehman456/qwythos-9b-openthoughts
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/qwythos-9b-openthoughts-GGUF
 - Pagina de resumen de descargas del autor: https://hf.tst.eu/model#qwythos-9b-openthoughts-i1-GGUF

@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B (base) + LoRA | No disponible | Decision robotica (avoid_obstacles) | Apache 2.0 | HuggingFace, 0 descargas |
+| LINK-01 (este modelo) | 0,8B (base) + LoRA | No disponible | Decision robotica (avoid_obstacles) | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-0.8B | 0,8B | No disponible | LLM generico | No disponible en la informacion | Modelo base publico |
 | Alternativas de robotica con LLM | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -89,6 +89,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yeonsangun-obstacle-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yeonsangun-obstacle-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

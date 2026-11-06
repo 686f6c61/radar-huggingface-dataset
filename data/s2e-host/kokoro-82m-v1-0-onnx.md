@@ -84,7 +84,7 @@ La comparación con Piper, VITS y Bark se ofrece como referencia de categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s2e-host/Kokoro-82M-v1.0-ONNX
+- Repositorio Hugging Face: https://huggingface.co/s2e-host/Kokoro-82M-v1.0-ONNX
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Librería kokoro-js en NPM: https://npmjs.com/package/kokoro-js
 - Conversor texto-fonema Misaki: https://github.com/hexgrad/misaki

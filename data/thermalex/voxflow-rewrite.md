@@ -72,8 +72,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voxflow-rewrite v4 | 1,94B | 4096 tokens en el ejemplo de despliegue | CER 0,20; instrucciones residuales 0%; chrF 64,8; 0,14 s por frase | Apache-2.0 | GGUF en HuggingFace |
-| Qwen3.5-2B sin ajuste | 2B nominal; conteo exacto no disponible | No disponible | CER 0,74; instrucciones residuales 31,9%; chrF 39,5 en un test de 132 ejemplos | Apache-2.0 según la model card | HuggingFace |
+| voxflow-rewrite v4 | 1,94B | 4096 tokens en el ejemplo de despliegue | CER 0,20; instrucciones residuales 0%; chrF 64,8; 0,14 s por frase | Apache-2.0 | GGUF en Hugging Face |
+| Qwen3.5-2B sin ajuste | 2B nominal; conteo exacto no disponible | No disponible | CER 0,74; instrucciones residuales 31,9%; chrF 39,5 en un test de 132 ejemplos | Apache-2.0 según la model card | Hugging Face |
 | Otros modelos de reescritura de voz de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre otras alternativas comparables de la misma categoría en la búsqueda proporcionada.
@@ -93,7 +93,7 @@ No se dispone de información sobre otras alternativas comparables de la misma c
 - Licencia Apache-2.0, igual que el modelo base según la model card; no se documentan restricciones adicionales para uso comercial.
 
 ## Enlaces
-- [HuggingFace: ThermalEX/voxflow-rewrite](https://huggingface.co/ThermalEX/voxflow-rewrite)
+- [Hugging Face: ThermalEX/voxflow-rewrite](https://huggingface.co/ThermalEX/voxflow-rewrite)
 - [Archivo q8_0 etiquetado como v4](https://huggingface.co/ThermalEX/voxflow-rewrite/resolve/v4/voxflow-rewrite-q8_0.gguf)
 - [Modelo base Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B)
 - [Repositorio VoxFlow](https://github.com/ThermalEX/VoxFlow)

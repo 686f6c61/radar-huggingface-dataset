@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es el primer modelo open-weight basado en la arquitectura que dará lugar a Qwen4, desarrollado por QwenLM. Esta ficha cubre la versión cuantizada a GGUF publicada por AtomicChat (usuario npario en HuggingFace), que ha sido auto-cuantizada desde los pesos originales en BF16 utilizando una importance matrix propia y publicada junto a los quants. El modelo es un MoE multimodal de aproximadamente 177 000 millones de parámetros, de los cuales solo unos 6 000 millones se activan por token, más una tabla n-gram de 51 000 millones de parámetros que se pagina desde SSD, lo que permite ejecutarlo en equipos con memoria limitada.
+Qwen3.8-Flash-Next es el primer modelo open-weight basado en la arquitectura que dará lugar a Qwen4, desarrollado por QwenLM. Esta ficha cubre la versión cuantizada a GGUF publicada por AtomicChat (usuario npario en Hugging Face), que ha sido auto-cuantizada desde los pesos originales en BF16 utilizando una importance matrix propia y publicada junto a los quants. El modelo es un MoE multimodal de aproximadamente 177 000 millones de parámetros, de los cuales solo unos 6 000 millones se activan por token, más una tabla n-gram de 51 000 millones de parámetros que se pagina desde SSD, lo que permite ejecutarlo en equipos con memoria limitada.
 
 La relevancia de este lanzamiento radica en que introduce una arquitectura híbrida GDN + QSA (attention con gating y query-key attention) que mejora la eficiencia computacional y la capacidad del modelo, además de incorporar una tabla de búsqueda n-gram que reduce drásticamente los requisitos de memoria en inferencia. La versión GGUF aquí descrita está pensada para ejecutarse con llama.cpp en hardware de consumo, incluyendo Apple Silicon, con soporte de visión mediante un proyector multimodal separado. El repositorio incluye tres niveles de cuantización (IQ4_XS, Q4_K_M y Q5_K_M) y una importance matrix de calibración pública.
 
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento comparativos con otros modelos MoE de tama
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/npario/Qwen3.8-Flash-Next-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face del GGUF: https://huggingface.co/npario/Qwen3.8-Flash-Next-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de QwenLM: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Guía de Atomic Chat para ejecución local: https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally
 - Dataset de calibración de AtomicChat: https://huggingface.co/datasets/AtomicChat/calib-corpora

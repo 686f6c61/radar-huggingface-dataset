@@ -71,7 +71,7 @@ La tabla muestra que el modelo mantiene la longitud para entradas de 15 a 24 pal
 - El modelo cabe en cualquier GPU consumer con 4 GB o mas de VRAM (RTX 3060, RTX 4060, etc.) en Q8_0.
 - Para `safetensors` bf16, la VRAM necesaria es de aproximadamente 4.2 GB (2.03B parametros x 2 bytes), lo que tambien cabe en GPUs de 6-8 GB.
 - Despliegue recomendado: `llama.cpp` / `llama-server` para el formato GGUF, o `transformers` con `device_map="cuda"` para safetensors.
-- No se ha validado con vLLM ni TGI, aunque el modelo es compatible con `text-generation-inference` segun los tags de HuggingFace.
+- No se ha validado con vLLM ni TGI, aunque el modelo es compatible con `text-generation-inference` segun los tags de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -96,7 +96,7 @@ El modelo base Qwen3-1.7B es un LLM general con una ventana de contexto mucho ma
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v1.2)
+- [Modelo en Hugging Face](https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v1.2)
 - [Arbol de archivos del repositorio](https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v1.2/tree/main)
 - [Version 4B del mismo autor](https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.2)
 - [Pagina de despliegue en FriendliAI](https://friendli.ai/models/chartreuse-verte/prose-rewriter-1.7b-v1.2)

@@ -25,7 +25,7 @@ Su relevancia actual radica en que aprovecha un modelo base ampliamente validado
 
 El modelo se basa en la arquitectura m2m_100, un transformer encoder-decoder desarrollado por Meta para el proyecto NLLB (No Language Left Behind). Concretamente, parte del checkpoint `facebook/nllb-200-distilled-600M`, una versión destilada de 600M parámetros del modelo NLLB-200 completo, que reduce el coste computacional manteniendo un rendimiento competitivo en traducción multilingüe. El fine-tune se realizó sobre un dataset no documentado, con un split normal y 25 épocas de entrenamiento, como indica el nombre del repositorio.
 
-No se dispone de información sobre el dataset de entrenamiento, el procedimiento de preprocesado, los hiperparámetros exactos (tasa de aprendizaje, batch size, etc.) ni si se aplicaron técnicas como RLHF o DPO. El autor ha publicado otros modelos similares en HuggingFace (por ejemplo, `nllb_sanlish_to_Bangla_normalsplit_epoch25` y `nllb_sanlish_bangla_ckpt`), lo que sugiere una línea de trabajo consistente en adaptar NLLB a variantes del bengalí, pero no hay documentación técnica que detalle las innovaciones o decisiones de diseño.
+No se dispone de información sobre el dataset de entrenamiento, el procedimiento de preprocesado, los hiperparámetros exactos (tasa de aprendizaje, batch size, etc.) ni si se aplicaron técnicas como RLHF o DPO. El autor ha publicado otros modelos similares en Hugging Face (por ejemplo, `nllb_sanlish_to_Bangla_normalsplit_epoch25` y `nllb_sanlish_bangla_ckpt`), lo que sugiere una línea de trabajo consistente en adaptar NLLB a variantes del bengalí, pero no hay documentación técnica que detalle las innovaciones o decisiones de diseño.
 
 ## Capacidades
 
@@ -53,17 +53,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 615M parámetros en fp32, el modelo ocupa aproximadamente 2,5 GB en memoria (el tamaño del repositorio es 2,5 GB). En fp16 ocuparía unos 1,2 GB y en int8 unos 0,6 GB, aunque no se distribuyen versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en fp32 (por ejemplo, RTX 3050, RTX 3060, GTX 1660). Para mayor velocidad, una RTX 3090 o superior permitiría procesamiento por lotes.
 - Sí cabe en GPUs de consumo: una RTX 3060 de 12 GB puede manejar el modelo con margen para batches pequeños.
-- Opciones de despliegue: al ser un modelo de transformers estándar, se puede servir con vLLM, TGI, HuggingFace Inference Endpoints o mediante la API de transformers directamente. También es compatible con llama.cpp si se convierte a GGUF, aunque no se proporciona esa conversión.
+- Opciones de despliegue: al ser un modelo de transformers estándar, se puede servir con vLLM, TGI, Hugging Face Inference Endpoints o mediante la API de transformers directamente. También es compatible con llama.cpp si se convierte a GGUF, aunque no se proporciona esa conversión.
 - Latencia y throughput: no se han publicado datos. En una GPU consumer moderna, se espera una latencia de decenas de milisegundos por secuencia corta, pero no hay mediciones oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thunderboltc/nllb_ipa_to_Bangla_normalsplit_epoch25 | 615M | no disponible | IPA a bengalí | no disponible | HuggingFace |
-| thunderboltc/nllb_sanlish_to_Bangla_normalsplit_epoch25 | 615M (estimado) | no disponible | Sanlish (bengalí romanizado) a bengalí | no disponible | HuggingFace |
-| thunderboltc/nllb_sanlish_bangla_ckpt | 615M (estimado) | no disponible | Sanlish a bengalí | no disponible | HuggingFace |
-| facebook/nllb-200-distilled-600M | 615M | 512 tokens | Traducción multilingüe (200 idiomas) | CC-BY-NC-4.0 | HuggingFace |
+| thunderboltc/nllb_ipa_to_Bangla_normalsplit_epoch25 | 615M | no disponible | IPA a bengalí | no disponible | Hugging Face |
+| thunderboltc/nllb_sanlish_to_Bangla_normalsplit_epoch25 | 615M (estimado) | no disponible | Sanlish (bengalí romanizado) a bengalí | no disponible | Hugging Face |
+| thunderboltc/nllb_sanlish_bangla_ckpt | 615M (estimado) | no disponible | Sanlish a bengalí | no disponible | Hugging Face |
+| facebook/nllb-200-distilled-600M | 615M | 512 tokens | Traducción multilingüe (200 idiomas) | CC-BY-NC-4.0 | Hugging Face |
 
 El modelo base NLLB-200 destilado es la referencia natural para comparar, ya que este fine-tune parte de él. La diferencia clave es la especialización en el par IPA-bengalí, que el modelo base no cubre de forma nativa. Los otros modelos del mismo autor se centran en "sanlish" (bengalí escrito en caracteres latinos), lo que indica una familia de adaptaciones para variantes del bengalí.
 
@@ -79,7 +79,7 @@ El modelo base NLLB-200 destilado es la referencia natural para comparar, ya que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thunderboltc/nllb_ipa_to_Bangla_normalsplit_epoch25
+- Modelo en Hugging Face: https://huggingface.co/thunderboltc/nllb_ipa_to_Bangla_normalsplit_epoch25
 - Modelo similar del mismo autor (sanlish a bengalí): https://huggingface.co/thunderboltc/nllb_sanlish_to_Bangla_normalsplit_epoch25
 - Checkpoint similar del mismo autor: https://huggingface.co/thunderboltc/nllb_sanlish_bangla_ckpt
 - Proyecto Onubad.ai (fine-tune de NLLB para inglés-bengalí): https://github.com/Irshad-11/Onubad.ai

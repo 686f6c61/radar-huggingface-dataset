@@ -105,7 +105,7 @@ La ventaja de esta copia frente a las alternativas es el tamano y la ligereza en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/safwan-o/supertonic-3-int8
+- Modelo en Hugging Face: https://huggingface.co/safwan-o/supertonic-3-int8
 - Modelo base: https://huggingface.co/Supertone/supertonic-3
 - Revisión concreta del modelo base: https://huggingface.co/Supertone/supertonic-3/tree/3cadd1ee6394adea1bd021217a0e650ede09a323
 - Paper, blog, repositorio o demo del autor: no disponible

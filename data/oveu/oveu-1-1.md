@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Oveu-1.1 es una publicación en HuggingFace creada por el usuario Oveu el 3 de septiembre de 2026. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño ni información sobre el contexto. La única información disponible es la licencia Apache 2.0.
+El modelo Oveu-1.1 es una publicación en Hugging Face creada por el usuario Oveu el 3 de septiembre de 2026. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño ni información sobre el contexto. La única información disponible es la licencia Apache 2.0.
 
 No se ha encontrado documentación adicional en la web: no hay papers, repositorios de código ni análisis independientes. Por tanto, no es posible determinar qué problema resuelve, ni por qué sería relevante en el estado actual de la IA.
 
@@ -58,5 +58,5 @@ No disponible. No se puede comparar con otros modelos sin conocer parámetros, a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Oveu/Oveu-1.1
+- Hugging Face: https://huggingface.co/Oveu/Oveu-1.1
 - No se han encontrado papers, blogs, repositorios o demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Portuguese English es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, desarrollado por el usuario merkelmarrow y publicado en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) entrenado sobre el dataset naharte/portuguese_english, con el objetivo de transcribir audio en un contexto bilingue portugues-ingles. El modelo conserva la arquitectura encoder-decoder transformer propia de la familia Whisper de OpenAI, con 37,76 millones de parametros totales.
+Whisper tiny Portuguese English es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, desarrollado por el usuario merkelmarrow y publicado en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) entrenado sobre el dataset naharte/portuguese_english, con el objetivo de transcribir audio en un contexto bilingue portugues-ingles. El modelo conserva la arquitectura encoder-decoder transformer propia de la familia Whisper de OpenAI, con 37,76 millones de parametros totales.
 
 El modelo parte de la variante "tiny" de Whisper, la mas ligera de la familia, lo que lo hace especialmente adecuado para entornos con recursos limitados, inferencia en CPU o despliegues en dispositivos de borde. El ajuste fino se realizo con 1000 pasos de entrenamiento, batch size de 32, learning rate de 3,75e-05 y optimizador AdamW con betas (0,9; 0,999), alcanzando un WER de 13,49 en el conjunto de test del dataset de referencia.
 
@@ -104,7 +104,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/merkelmarrow/whisper-tiny-portuguese_english
+- Modelo en Hugging Face: https://huggingface.co/merkelmarrow/whisper-tiny-portuguese_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de ajuste: https://huggingface.co/datasets/naharte/portuguese_english
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper

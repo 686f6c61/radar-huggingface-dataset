@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `cryptobosa/FIFA_World_cup_Predictor_V1`, publicado por el usuario cryptobosa en HuggingFace, es una ficha de modelo sobre la que la informacion publica disponible es practicamente nula. La unica metadata confirmada es su identificador, el autor, la etiqueta `region:us`, un contador de 0 descargas y 1 like, y las fechas de creacion y ultima actualizacion, ambas registradas como 2026-09-19. No se ha publicado pipeline, licencia, idiomas, tamano, arquitectura ni formato de pesos.
+El repositorio `cryptobosa/FIFA_World_cup_Predictor_V1`, publicado por el usuario cryptobosa en Hugging Face, es una ficha de modelo sobre la que la informacion publica disponible es practicamente nula. La unica metadata confirmada es su identificador, el autor, la etiqueta `region:us`, un contador de 0 descargas y 1 like, y las fechas de creacion y ultima actualizacion, ambas registradas como 2026-09-19. No se ha publicado pipeline, licencia, idiomas, tamano, arquitectura ni formato de pesos.
 
 El nombre del repositorio sugiere un proposito de prediccion deportiva orientada a la Copa del Mundo de la FIFA, pero esta interpretacion procede unicamente del titulo y no esta respaldada por ninguna documentacion tecnica, model card explicita ni resultado verificable. No hay informacion sobre si se trata de un modelo de lenguaje, un clasificador tabular, un ensamblado de gradient boosting o simplemente un contenedor de artefactos auxiliares.
 
@@ -88,7 +88,7 @@ No disponible. No se ha identificado la categoria funcional del modelo (predicci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cryptobosa/FIFA_World_cup_Predictor_V1
+- Hugging Face: https://huggingface.co/cryptobosa/FIFA_World_cup_Predictor_V1
 - Paper, informe tecnico o blog del autor: no disponible.
 - Repositorio de codigo asociado: no disponible.
 - Demo o espacio de inferencia: no disponible.

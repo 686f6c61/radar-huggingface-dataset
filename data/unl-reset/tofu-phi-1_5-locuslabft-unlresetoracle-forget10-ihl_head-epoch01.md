@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch01` (este) | 1,4 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de investigación de *unlearning*, época 1/20 |
-| `locuslab/tofu_ft_phi-1.5` | 1,4 B | 2048 tokens (Phi-1.5) | Apache 2.0 | HuggingFace | Modelo base afinado con TOFU, sin desaprendizaje |
-| `microsoft/phi-1_5` | 1,4 B | 2048 tokens | MIT (según repo original) | HuggingFace, ampliamente usado | Modelo original de Microsoft, sin ajuste TOFU |
-| `microsoft/Phi-3-mini-4k-instruct` | 3,8 B | 4096 tokens | MIT | HuggingFace | Alternativa moderna de tamaño similar, sin capacidades de *unlearning* |
+| `unl-reset/tofu-phi-1_5-...-epoch01` (este) | 1,4 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de investigación de *unlearning*, época 1/20 |
+| `locuslab/tofu_ft_phi-1.5` | 1,4 B | 2048 tokens (Phi-1.5) | Apache 2.0 | Hugging Face | Modelo base afinado con TOFU, sin desaprendizaje |
+| `microsoft/phi-1_5` | 1,4 B | 2048 tokens | MIT (según repo original) | Hugging Face, ampliamente usado | Modelo original de Microsoft, sin ajuste TOFU |
+| `microsoft/Phi-3-mini-4k-instruct` | 3,8 B | 4096 tokens | MIT | Hugging Face | Alternativa moderna de tamaño similar, sin capacidades de *unlearning* |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch01)
+- [Modelo en Hugging Face](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch01)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - [Paper TOFU: "TOFU: A Task of Fictitious Unlearning for LLMs"](https://arxiv.org/abs/2401.06121)

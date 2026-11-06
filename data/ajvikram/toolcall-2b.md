@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Toolcall-2B es un modelo de lenguaje de 2.274 millones de parámetros desarrollado por Ajay Singh (usuario de HuggingFace ajvikram) mediante fine-tuning de Qwen/Qwen3.5-2B. Su propósito es resolver el enrutamiento de herramientas en agentes: decidir qué función llamar, con qué argumentos, en qué orden y si conviene llamar alguna. Está diseñado para ejecutarse localmente y sustituir a modelos frontera en decisiones de bajo coste de juicio pero alto coste en tokens. Se publica bajo licencia Apache-2.0.
+Toolcall-2B es un modelo de lenguaje de 2.274 millones de parámetros desarrollado por Ajay Singh (usuario de Hugging Face ajvikram) mediante fine-tuning de Qwen/Qwen3.5-2B. Su propósito es resolver el enrutamiento de herramientas en agentes: decidir qué función llamar, con qué argumentos, en qué orden y si conviene llamar alguna. Está diseñado para ejecutarse localmente y sustituir a modelos frontera en decisiones de bajo coste de juicio pero alto coste en tokens. Se publica bajo licencia Apache-2.0.
 
 El modelo conserva el formato nativo de tool-call de Qwen3.5, por lo que se integra sin cambios en stacks que ya lo parsean. Se evaluó en el harness del Berkeley Function Calling Leaderboard v4 (BFCL v4) con vLLM en bf16, temperatura 0.001 y una ventana de contexto de 128k. No es multimodal ni un modelo de razonamiento general; su dominio es la selección de herramientas en tareas de agente.
 
@@ -88,8 +88,8 @@ No se han encontrado alternativas de la misma categoría (modelos de function-ca
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | BFCL Overall (22 cat.) |
 |---|---|---|---|---|---|
-| Toolcall-2B | 2.27B | 128k (evaluación) | Apache-2.0 | HuggingFace | 36.35 |
-| Qwen3.5-2B (base) | 2.27B | no disponible | no disponible | HuggingFace | 33.85 |
+| Toolcall-2B | 2.27B | 128k (evaluación) | Apache-2.0 | Hugging Face | 36.35 |
+| Qwen3.5-2B (base) | 2.27B | no disponible | no disponible | Hugging Face | 33.85 |
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ No se han encontrado alternativas de la misma categoría (modelos de function-ca
 - Idioma: solo inglés; no se ha evaluado en otros idiomas.
 - Contexto: la ventana de 128k se utilizó en evaluación, pero el máximo oficial del modelo base no se especifica.
 - Licencia: Apache-2.0 permite uso comercial. Algunos datos de entrenamiento (xLAM) son CC-BY-4.0, lo que requiere atribución, pero es compatible con la licencia del modelo.
-- Modelo recién publicado: 0 descargas y 0 likes en HuggingFace; no ha sido validado por la comunidad en entornos de producción.
+- Modelo recién publicado: 0 descargas y 0 likes en Hugging Face; no ha sido validado por la comunidad en entornos de producción.
 
 ## Enlaces
 

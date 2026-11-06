@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Tridex/train_smolvla_3cam_7k_22_09 | 450.046.176 | No disponible | apache-2.0 | HuggingFace (0 descargas) | Fine-tuning de tarea única sobre robot `so_follower` |
-| lerobot/smolvla_base | No disponible en la informacion proporcionada (es el modelo base del fine-tuning) | No disponible | No disponible en la informacion proporcionada | HuggingFace | Modelo generalista del que deriva este checkpoint |
+| Tridex/train_smolvla_3cam_7k_22_09 | 450.046.176 | No disponible | apache-2.0 | Hugging Face (0 descargas) | Fine-tuning de tarea única sobre robot `so_follower` |
+| lerobot/smolvla_base | No disponible en la informacion proporcionada (es el modelo base del fine-tuning) | No disponible | No disponible en la informacion proporcionada | Hugging Face | Modelo generalista del que deriva este checkpoint |
 | Otras políticas VLA de la misma categoría (por ejemplo OpenVLA o pi0) | No disponible | No disponible | No disponible | No disponible | No se han encontrado datos verificados en la informacion proporcionada; se citan solo como categoría alternativa |
 
 La comparación cuantitativa con alternativas no es posible con los datos disponibles: no hay resultados de evaluación de este checkpoint ni cifras de rendimiento publicadas en la información proporcionada. Cualquier comparación rigurosa requeriría ejecutar la política en el mismo robot y con el mismo protocolo que las alternativas.
@@ -99,7 +99,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tridex/train_smolvla_3cam_7k_22_09
+- Modelo en Hugging Face: https://huggingface.co/Tridex/train_smolvla_3cam_7k_22_09
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Tridex/_20260922_140724
 - Paper de SmolVLA (arXiv:2506.01844): https://huggingface.co/papers/2506.01844

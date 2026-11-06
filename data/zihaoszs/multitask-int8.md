@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ZIHAOSZS/multitask-int8` es un repositorio de HuggingFace publicado por el usuario ZIHAOSZS que contiene una implementación experimental de una arquitectura Perceiver orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks superados. El repositorio se distribuye bajo licencia Apache 2.0.
+`ZIHAOSZS/multitask-int8` es un repositorio de Hugging Face publicado por el usuario ZIHAOSZS que contiene una implementación experimental de una arquitectura Perceiver orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks superados. El repositorio se distribuye bajo licencia Apache 2.0.
 
 El interés técnico del repositorio es fundamentalmente arquitectónico. Declara atención lineal, fusión de modalidades tipo Tucker, activación gelu-tanh y normalización GroupNorm dentro de un esquema Perceiver. Sin embargo, existe una discrepancia notable entre la model card y los datos reales del repositorio: la documentación describe la escala como "giant", mientras que el recuento real de parámetros en los tensores safetensors es de 49.600 parámetros, un tamaño propio de una prueba unitaria más que de un modelo de gran escala.
 
@@ -79,5 +79,5 @@ No disponible. No se dispone de datos verificables de alternativas comparables e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZIHAOSZS/multitask-int8
+- Repositorio en Hugging Face: https://huggingface.co/ZIHAOSZS/multitask-int8
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la busqueda web realizada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-230k_EloTransformer es un modelo publicado en HuggingFace por el usuario Santiago64 bajo licencia MIT y con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. El repositorio ocupa aproximadamente 0,3 GB y, en el momento de la consulta, acumulaba 0 descargas y 1 "like", lo que indica una visibilidad y un uso muy limitados dentro del ecosistema.
+230k_EloTransformer es un modelo publicado en Hugging Face por el usuario Santiago64 bajo licencia MIT y con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. El repositorio ocupa aproximadamente 0,3 GB y, en el momento de la consulta, acumulaba 0 descargas y 1 "like", lo que indica una visibilidad y un uso muy limitados dentro del ecosistema.
 
-La ficha de HuggingFace no incluye "pipeline tag", idiomas soportados, descripcion, paper ni documentacion tecnica asociada. La busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo: los enlaces recuperados corresponden a sitios sin relacion alguna (aerolineas, registro de marcas, generadores de metaetiquetas, prensa y una biblioteca electronica), por lo que no aportan informacion verificable.
+La ficha de Hugging Face no incluye "pipeline tag", idiomas soportados, descripcion, paper ni documentacion tecnica asociada. La busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo: los enlaces recuperados corresponden a sitios sin relacion alguna (aerolineas, registro de marcas, generadores de metaetiquetas, prensa y una biblioteca electronica), por lo que no aportan informacion verificable.
 
 En consecuencia, no es posible confirmar arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni rendimiento. La unica informacion fiable disponible es la licencia (MIT), el tamano del repositorio (0,3 GB), el estado de acceso restringido y las fechas de creacion y actualizacion (16 de octubre de 2026, con apenas siete minutos de diferencia entre ambas). El nombre "230k_EloTransformer" sugiere un transformer, pero se trata de una hipotesis no confirmada por la documentacion.
 
@@ -20,7 +20,7 @@ En consecuencia, no es posible confirmar arquitectura, numero de parametros, lon
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible (repositorio de ~0,3 GB) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | ~0,3 GB |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-10-16 |
@@ -34,7 +34,7 @@ Tampoco se dispone de datos sobre innovaciones tecnicas (atencion lineal, decodi
 
 ## Capacidades
 
-No hay informacion verificable sobre las capacidades del modelo. La ficha de HuggingFace no declara tareas soportadas y no se ha localizado documentacion, demo ni evaluacion alguna. En concreto, no es posible confirmar:
+No hay informacion verificable sobre las capacidades del modelo. La ficha de Hugging Face no declara tareas soportadas y no se ha localizado documentacion, demo ni evaluacion alguna. En concreto, no es posible confirmar:
 
 - Generacion de texto, razonamiento, codigo o matematicas.
 - Soporte de tool calling o function calling.
@@ -70,7 +70,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay ficha tecnica, paper ni README que describa el modelo.
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos, lo que puede condicionar su integracion en pipelines automatizados.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que puede condicionar su integracion en pipelines automatizados.
 - Origen y trazabilidad inciertos: el autor es un usuario individual sin historial publico verificable asociado, y el modelo no ha sido contrastado por la comunidad (0 descargas, 1 "like").
 - Imposibilidad de evaluar sesgos y alucinacion: sin benchmarks ni evaluaciones independientes, no se puede cuantificar el riesgo de sesgo, alucinacion o comportamiento incorrecto.
 - Cobertura idiomatica desconocida: se ignora si el modelo maneja castellano u otros idiomas con calidad suficiente.
@@ -79,6 +79,6 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Santiago64/230k_EloTransformer
+- Hugging Face: https://huggingface.co/Santiago64/230k_EloTransformer
 - Paper, repositorio de codigo, blog o demo: no disponible.
 - La busqueda web no devolvio ningun enlace relevante sobre este modelo.

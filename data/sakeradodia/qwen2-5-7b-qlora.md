@@ -4,7 +4,7 @@
 
 `SakeraDodia/qwen2.5-7b-qlora` es un adaptador LoRA (Low-Rank Adaptation) de ajuste fino sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`, desarrollado por el usuario SakeraDodia. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0.1 GB), junto con la configuración de PEFT necesaria para cargarlo sobre el modelo base de 7.500 millones de parámetros.
 
-El modelo se entrenó mediante Supervised Fine-Tuning (SFT) con la librería TRL de HuggingFace, aunque la model card no documenta el dataset utilizado ni los hiperparámetros de entrenamiento. Al tratarse de un adaptador LoRA, no modifica la arquitectura del modelo base, sino que introduce matrices de bajo rango en las capas de atención y feed-forward para adaptar el comportamiento del modelo a una tarea o dominio concreto.
+El modelo se entrenó mediante Supervised Fine-Tuning (SFT) con la librería TRL de Hugging Face, aunque la model card no documenta el dataset utilizado ni los hiperparámetros de entrenamiento. Al tratarse de un adaptador LoRA, no modifica la arquitectura del modelo base, sino que introduce matrices de bajo rango en las capas de atención y feed-forward para adaptar el comportamiento del modelo a una tarea o dominio concreto.
 
 La relevancia de este adaptador es limitada: no dispone de documentación sobre el dataset de entrenamiento, no se han publicado benchmarks y el repositorio no ha recibido descargas ni interacciones. Su interés principal radica en servir como ejemplo de pipeline de fine-tuning con QLoRA sobre Qwen2.5-7B-Instruct, más que como un modelo listo para producción.
 
@@ -80,14 +80,14 @@ La comparativa muestra que el adaptador hereda las capacidades del modelo base, 
 - **Sin documentación de entrenamiento**: no se especifica el dataset, la configuración del LoRA (rango, alpha, dropout) ni los hiperparámetros de entrenamiento, lo que impide evaluar la calidad del ajuste.
 - **Riesgo de alucinación**: al ser un adaptador sin datos de evaluación, el modelo puede generar información incorrecta o inventada, especialmente en dominios específicos.
 - **Sin garantía de licencia**: la model card indica "license" sin valor concreto; el adaptador no tiene licencia clara, lo que limita su uso comercial y su redistribución.
-- **Dependencia del modelo base**: el adaptador solo funciona sobre Qwen2.5-7B-Instruct; no es un modelo autónomo. Si el modelo base se elimina de HuggingFace, el adaptador deja de ser utilizable.
+- **Dependencia del modelo base**: el adaptador solo funciona sobre Qwen2.5-7B-Instruct; no es un modelo autónomo. Si el modelo base se elimina de Hugging Face, el adaptador deja de ser utilizable.
 - **Ejemplo de uso erróneo**: el código de inicio rápido de la model card contiene un error (`model="None"`), por lo que el ejemplo no funciona tal cual. Hay que sustituirlo por el identificador del modelo base.
 - **Sin garantías de calidad**: no se ha verificado la calidad de las respuestas, la coherencia en contextos largos ni el comportamiento en idiomas distintos del inglés. Se recomienda evaluar exhaustivamente antes de cualquier uso en producción.
 - **Contexto limitado**: el adaptador no modifica la ventana de contexto del modelo base (32K tokens), pero no se ha verificado que funcione correctamente en toda esa longitud.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SakeraDodia/qwen2.5-7b-qlora)
+- [Modelo en Hugging Face](https://huggingface.co/SakeraDodia/qwen2.5-7b-qlora)
 - [Modelo base Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)
 - [Documentación de PEFT](https://huggingface.co/docs/peft)

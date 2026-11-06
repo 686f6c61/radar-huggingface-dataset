@@ -4,7 +4,7 @@
 
 WhisperNow Nemotron Bolt E4B es un ajuste fino (fine-tune) del modelo nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16, desarrollado por el usuario category271 para la aplicación de dictado de escritorio WhisperNow. Su propósito es muy concreto: limpiar transcripciones generadas por ASR (reconocimiento automático del habla) eliminando muletillas, falsos comienzos, repeticiones y aplicando las autocorrecciones del hablante, además de normalizar el formato del texto resultante.
 
-El modelo se distribuye en formato safetensors y GGUF, con 7.463.013.418 parámetros totales según los pesos reales, y está etiquetado con la arquitectura `gemma4_text` en HuggingFace. Es un modelo monolingüe en inglés y su licencia es OpenMDW 1.1. Su relevancia radica en que traslada a local un paso de limpieza que normalmente se delega a modelos en la nube, con una tasa de errores fácticos declarada de 2,59 por cada 1.000 palabras, la mejor de la familia WhisperNow según la propia model card.
+El modelo se distribuye en formato safetensors y GGUF, con 7.463.013.418 parámetros totales según los pesos reales, y está etiquetado con la arquitectura `gemma4_text` en Hugging Face. Es un modelo monolingüe en inglés y su licencia es OpenMDW 1.1. Su relevancia radica en que traslada a local un paso de limpieza que normalmente se delega a modelos en la nube, con una tasa de errores fácticos declarada de 2,59 por cada 1.000 palabras, la mejor de la familia WhisperNow según la propia model card.
 
 No es un modelo de propósito general: es una herramienta especializada de postprocesado de texto pensada para integrarse en el pipeline de dictado, no para conversación abierta ni generación creativa.
 
@@ -12,7 +12,7 @@ No es un modelo de propósito general: es una herramienta especializada de postp
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gemma4_text (transformer decoder-only, según tag de HuggingFace) |
+| Arquitectura | gemma4_text (transformer decoder-only, según tag de Hugging Face) |
 | Parametros totales | 7.463.013.418 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible en la model card; el ejemplo de despliegue usa `-c 8192` |
@@ -97,7 +97,7 @@ Los cuatro modelos pertenecen a la misma familia de limpieza de transcripciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/category271/whispernow-nemotron-bolt-e4b
+- Modelo en Hugging Face: https://huggingface.co/category271/whispernow-nemotron-bolt-e4b
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Dataset de entrenamiento: https://huggingface.co/datasets/category271/whispernow-cleanup
 - Reglas de limpieza (sección del dataset): https://huggingface.co/datasets/category271/whispernow-cleanup#the-cleanup-rules

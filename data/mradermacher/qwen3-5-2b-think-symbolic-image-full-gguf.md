@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/qwen3.5-2b-think-symbolic-image-full-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `AbstractPhil/qwen3.5-2b-think-symbolic-image-full`. El autor de las cuantizaciones es mradermacher, un perfil conocido en HuggingFace por publicar versiones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles. El modelo base parte de la familia Qwen3.5 en su variante de 2B parámetros, según indica el nombre, con un sufijo "think-symbolic-image-full" que sugiere un ajuste fino orientado a razonamiento explícito ("thinking") y a entrada de imágenes simbólicas, aunque la model card no aporta detalles sobre el proceso de entrenamiento.
+`mradermacher/qwen3.5-2b-think-symbolic-image-full-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `AbstractPhil/qwen3.5-2b-think-symbolic-image-full`. El autor de las cuantizaciones es mradermacher, un perfil conocido en Hugging Face por publicar versiones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles. El modelo base parte de la familia Qwen3.5 en su variante de 2B parámetros, según indica el nombre, con un sufijo "think-symbolic-image-full" que sugiere un ajuste fino orientado a razonamiento explícito ("thinking") y a entrada de imágenes simbólicas, aunque la model card no aporta detalles sobre el proceso de entrenamiento.
 
 El repositorio contiene únicamente los pesos cuantizados, sin model card técnica detallada, sin información sobre licencia, idiomas o pipeline. Los parámetros reales reportados en safetensors ascienden a 1.881.825.088 (aproximadamente 1,88 mil millones), lo que es coherente con la denominación "2B". El tamaño del repositorio es de 19,1 GB, lo que refleja la inclusión de múltiples variantes de cuantización (desde Q2_K hasta F16) en un mismo espacio.
 
@@ -26,7 +26,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de una opción p
 
 No hay información en la model card sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado. El nombre del modelo base (`AbstractPhil/qwen3.5-2b-think-symbolic-image-full`) sugiere una base Qwen3.5 de 2B parámetros con un ajuste fino orientado a razonamiento explícito y a procesamiento de imágenes simbólicas, pero esto es una inferencia a partir del identificador y no un dato confirmado.
 
-Las cuantizaciones han sido generadas con la herramienta de mradermacher, según los metadatos embebidos en el README (`quantize_version: 2`, `convert_type: hf`, `output_tensor_quantised: 1`). Esto indica una conversión desde pesos en formato HuggingFace a GGUF y una cuantización estática de los tensores de salida. No se documenta ningún proceso adicional de destilación, poda o calibración más allá del estándar de llama.cpp.
+Las cuantizaciones han sido generadas con la herramienta de mradermacher, según los metadatos embebidos en el README (`quantize_version: 2`, `convert_type: hf`, `output_tensor_quantised: 1`). Esto indica una conversión desde pesos en formato Hugging Face a GGUF y una cuantización estática de los tensores de salida. No se documenta ningún proceso adicional de destilación, poda o calibración más allá del estándar de llama.cpp.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-2b-think-symbolic-image-full (este) | ~1,88 B | no disponible | no disponible | GGUF (12 cuantizaciones) | HuggingFace, sin descargas registradas |
+| qwen3.5-2b-think-symbolic-image-full (este) | ~1,88 B | no disponible | no disponible | GGUF (12 cuantizaciones) | Hugging Face, sin descargas registradas |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | safetensors, GGUF | Ampliamente disponible, con model card completa |
 | Llama 3.2 1B Instruct | 1,24 B | 131 072 tokens | Llama 3.2 Community License | safetensors, GGUF | Ampliamente disponible, con model card completa |
 | SmolLM2-1.7B-Instruct | 1,71 B | 8 192 tokens | Apache 2.0 | safetensors, GGUF | Ampliamente disponible, con model card completa |

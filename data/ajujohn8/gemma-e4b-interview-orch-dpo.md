@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ajujohn8/gemma-e4b-interview-orch-dpo` es un ajuste fino (fine-tuning) del modelo `ajujohn8/gemma-e4b-interview-orch-sft-aug`, que a su vez deriva de la familia Gemma 4 (etiqueta `gemma4` en el repositorio). Lo desarrolla el usuario ajujohn8 y está publicado en HuggingFace con licencia Apache 2.0. El modelo está orientado a la conversación multimodal imagen-texto (pipeline `image-text-to-text`) y su nombre sugiere un entrenamiento en dos fases: primero un SFT (supervised fine-tuning) aumentado y después un DPO (Direct Preference Optimization) sobre datos de entrevistas ("interview-orch").
+`ajujohn8/gemma-e4b-interview-orch-dpo` es un ajuste fino (fine-tuning) del modelo `ajujohn8/gemma-e4b-interview-orch-sft-aug`, que a su vez deriva de la familia Gemma 4 (etiqueta `gemma4` en el repositorio). Lo desarrolla el usuario ajujohn8 y está publicado en Hugging Face con licencia Apache 2.0. El modelo está orientado a la conversación multimodal imagen-texto (pipeline `image-text-to-text`) y su nombre sugiere un entrenamiento en dos fases: primero un SFT (supervised fine-tuning) aumentado y después un DPO (Direct Preference Optimization) sobre datos de entrevistas ("interview-orch").
 
-El repositorio contiene 7.996.156.490 parámetros reales en formato safetensors (aproximadamente 8 mil millones), lo que lo sitúa en la gama de modelos medianos que pueden ejecutarse en GPUs de consumo con cuantización. El tamaño del repositorio es de 16 GB, coherente con pesos en precisión de 16 bits. Se entrenó con Unsloth y la librería TRL de HuggingFace, según indica la propia model card.
+El repositorio contiene 7.996.156.490 parámetros reales en formato safetensors (aproximadamente 8 mil millones), lo que lo sitúa en la gama de modelos medianos que pueden ejecutarse en GPUs de consumo con cuantización. El tamaño del repositorio es de 16 GB, coherente con pesos en precisión de 16 bits. Se entrenó con Unsloth y la librería TRL de Hugging Face, según indica la propia model card.
 
 La relevancia de este modelo es limitada y muy específica: se trata de un experimento de ajuste fino con 32 descargas y 0 likes en el momento de la consulta, sin benchmarks publicados ni documentación técnica detallada. Es útil como referencia para quien quiera reproducir un pipeline SFT + DPO sobre Gemma 4 con Unsloth, pero no como modelo de producción generalista.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada y muy específica: se trata de un exper
 
 La informacion disponible no detalla la arquitectura interna mas alla de la etiqueta `gemma4` y el pipeline `image-text-to-text`, lo que indica un transformer multimodal con codificador de vision y decodificador de lenguaje. El numero de parametros (7.996.156.490) corresponde a un modelo de aproximadamente 8B, coherente con una variante "E4B" de Gemma 4. No se especifican dimensiones de capas, numero de cabezas de atencion, vocabulario ni mecanismos de atencion concretos.
 
-El entrenamiento se realizo en dos etapas segun la cadena de modelos base: un SFT sobre `gemma-e4b-interview-orch-sft-aug` y posteriormente un DPO que da lugar a este repositorio. La model card indica que se uso Unsloth junto con TRL de HuggingFace, lo que sugiere tecnicas de entrenamiento eficiente en memoria (LoRA/QLoRA o similar, aunque no se confirma explicitamente). No se publican el numero de tokens de entrenamiento, la composicion del dataset, ni los hiperparametros del DPO.
+El entrenamiento se realizo en dos etapas segun la cadena de modelos base: un SFT sobre `gemma-e4b-interview-orch-sft-aug` y posteriormente un DPO que da lugar a este repositorio. La model card indica que se uso Unsloth junto con TRL de Hugging Face, lo que sugiere tecnicas de entrenamiento eficiente en memoria (LoRA/QLoRA o similar, aunque no se confirma explicitamente). No se publican el numero de tokens de entrenamiento, la composicion del dataset, ni los hiperparametros del DPO.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ Nota: los datos de los modelos comparativos corresponden a documentacion publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ajujohn8/gemma-e4b-interview-orch-dpo
+- Hugging Face: https://huggingface.co/ajujohn8/gemma-e4b-interview-orch-dpo
 - Modelo base (SFT): https://huggingface.co/ajujohn8/gemma-e4b-interview-orch-sft-aug
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

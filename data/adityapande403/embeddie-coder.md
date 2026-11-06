@@ -29,7 +29,7 @@ Su relevancia práctica está en el tamaño: 1.543.714.304 parámetros y un pico
 
 El modelo mantiene la arquitectura del base: un transformer decoder-only de la familia Qwen2, con atención completa y 1,5 B de parámetros densos, adaptado mediante ajuste fino supervisado sobre el checkpoint instruct de Qwen2.5-Coder. La model card no detalla la composición del dataset de entrenamiento, el número de tokens utilizados, la mezcla de datos ni si se aplicaron etapas de RLHF o DPO; esos datos figuran como no disponibles. El autor sí declara la configuración del entrenamiento: 5 épocas, 10 pasos y 19,56 segundos de tiempo total, con un pico de 3,2 GB de VRAM sobre el hardware de referencia. Esa cifra implica un ajuste muy ligero, coherente con un conjunto de datos pequeño y con un benchmark de evaluación de solo 8 tareas.
 
-La innovación declarada no reside en la arquitectura, sino en el andamiaje que rodea al modelo. El principio de diseño es «entrenar capacidades generales de ingeniería, recuperar documentación técnica detallada y usar herramientas deterministas para verificar resultados». En la práctica esto se traduce en cuatro componentes: decodificadores deterministas para Modbus RTU/TCP, SAE J1939, OBD-II y AIS-140; verificación mediante compilación en sandbox con GCC 16.2.0 y flags estrictos; recuperación local BM25 sobre datasheets y device trees para mantener el modo offline; y un comportamiento declarado de «incertidumbre calibrada», por el que el modelo pide esquemáticos, frecuencias de reloj o trazas de analizador lógico cuando falta evidencia, en lugar de suponerla. Cabe subrayar que estos componentes viven en el repositorio de GitHub del autor y no en el paquete de pesos de HuggingFace: el modelo por sí solo no ejecuta esas verificaciones.
+La innovación declarada no reside en la arquitectura, sino en el andamiaje que rodea al modelo. El principio de diseño es «entrenar capacidades generales de ingeniería, recuperar documentación técnica detallada y usar herramientas deterministas para verificar resultados». En la práctica esto se traduce en cuatro componentes: decodificadores deterministas para Modbus RTU/TCP, SAE J1939, OBD-II y AIS-140; verificación mediante compilación en sandbox con GCC 16.2.0 y flags estrictos; recuperación local BM25 sobre datasheets y device trees para mantener el modo offline; y un comportamiento declarado de «incertidumbre calibrada», por el que el modelo pide esquemáticos, frecuencias de reloj o trazas de analizador lógico cuando falta evidencia, en lugar de suponerla. Cabe subrayar que estos componentes viven en el repositorio de GitHub del autor y no en el paquete de pesos de Hugging Face: el modelo por sí solo no ejecuta esas verificaciones.
 
 ## Capacidades
 
@@ -96,10 +96,10 @@ Rendimiento medido por el autor en un Intel Core i7-14700K con NVIDIA GeForce RT
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| EmbeddieCoder AI 1.5B | 1,5 B | no declarado en la ficha (base: 32.768) | Sistemas embebidos, RTOS, protocolos industriales y automoción | Apache 2.0 | HuggingFace + GitHub del autor |
-| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5 B | 32.768 tokens | Código general, instruct | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-Coder-3B-Instruct | 3 B | 32.768 tokens | Código general, instruct | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-0.5B-Instruct | 0,5 B | 32.768 tokens | Código general, instruct | Apache 2.0 | HuggingFace |
+| EmbeddieCoder AI 1.5B | 1,5 B | no declarado en la ficha (base: 32.768) | Sistemas embebidos, RTOS, protocolos industriales y automoción | Apache 2.0 | Hugging Face + GitHub del autor |
+| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5 B | 32.768 tokens | Código general, instruct | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-Coder-3B-Instruct | 3 B | 32.768 tokens | Código general, instruct | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-0.5B-Instruct | 0,5 B | 32.768 tokens | Código general, instruct | Apache 2.0 | Hugging Face |
 
 Frente a su modelo base, EmbeddieCoder intercambia amplitud de dominio por profundidad en un nicho muy concreto: gana comportamiento en RTOS y diagnóstico de hardware según su propia evaluación, pero no aporta datos que permitan comparar su rendimiento en código general con el de Qwen2.5-Coder-1.5B-Instruct. Los modelos de 0,5 B y 3 B de la misma familia son las alternativas naturales si se necesita menos huella de memoria o más capacidad bruta, respectivamente, a costa de perder el ajuste de dominio. No se dispone de comparaciones publicadas con modelos específicos de firmware de otros autores.
 
@@ -108,7 +108,7 @@ Frente a su modelo base, EmbeddieCoder intercambia amplitud de dominio por profu
 - **Base de evaluación muy reducida**: el benchmark consta de 8 tareas, varias con una sola muestra. Un +100 % en una tarea única no es estadísticamente significativo y no permite extrapolar el rendimiento a producción.
 - **Regresión en seguridad y fiabilidad**: la categoría «Safety & Reliability» cae del 100 % al 0 % tras el ajuste. Es la señal más preocupante de la model card y debería investigarse antes de cualquier uso en entornos críticos.
 - **Entrenamiento extremadamente corto**: 19,56 segundos, 5 épocas y 10 pasos implican un ajuste superficial. No se documenta el tamaño ni la composición del dataset, por lo que no puede descartarse sobreajuste a un conjunto pequeño.
-- **Riesgo de alucinación en datos volátiles**: direcciones de registro, offsets de memoria, valores de registros de periféricos y polinomios de CRC son propensos a error. El diseño del autor lo mitiga delegando en herramientas deterministas, pero esas herramientas no están incluidas en el repositorio de HuggingFace y deben integrarse aparte.
+- **Riesgo de alucinación en datos volátiles**: direcciones de registro, offsets de memoria, valores de registros de periféricos y polinomios de CRC son propensos a error. El diseño del autor lo mitiga delegando en herramientas deterministas, pero esas herramientas no están incluidas en el repositorio de Hugging Face y deben integrarse aparte.
 - **Idioma**: solo inglés declarado. El rendimiento en castellano no está evaluado y previsiblemente será inferior; no debe asumirse para documentación o soporte en español.
 - **Contexto no declarado**: la model card no indica la longitud de contexto efectiva tras el ajuste; se hereda la del modelo base, pero no se confirma.
 - **Licencia**: Apache 2.0 permite uso comercial y modificación sin restricciones de campo de uso, con la ausencia habitual de garantías. El código y las herramientas del repositorio de GitHub pueden tener una licencia distinta, no especificada en la información disponible.
@@ -118,7 +118,7 @@ Frente a su modelo base, EmbeddieCoder intercambia amplitud de dominio por profu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adityapande403/embeddie-coder
+- Modelo en Hugging Face: https://huggingface.co/Adityapande403/embeddie-coder
 - Repositorio GitHub declarado en la model card: https://github.com/adityapande403/Embeddie-coder
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Repositorio de Qwen2.5-Coder (familia completa): https://github.com/QwenLM/Qwen2.5-Coder

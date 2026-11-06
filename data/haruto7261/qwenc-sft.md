@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenC-SFT es un ajuste fino supervisado (SFT) publicado por el usuario Haruto7261 en HuggingFace, presumiblemente derivado de la familia Qwen, aunque el autor no especifica la base exacta. El modelo está orientado a conversación en japonés, con un interés particular en el dialecto de Kagoshima (萨隅方言) y en el habla coloquial de dicha región. La model card está redactada íntegramente en japonés y documenta el corpus de entrenamiento, pero no incluye detalles sobre la arquitectura, el tamaño o la licencia.
+QwenC-SFT es un ajuste fino supervisado (SFT) publicado por el usuario Haruto7261 en Hugging Face, presumiblemente derivado de la familia Qwen, aunque el autor no especifica la base exacta. El modelo está orientado a conversación en japonés, con un interés particular en el dialecto de Kagoshima (萨隅方言) y en el habla coloquial de dicha región. La model card está redactada íntegramente en japonés y documenta el corpus de entrenamiento, pero no incluye detalles sobre la arquitectura, el tamaño o la licencia.
 
 La relevancia del proyecto radica en su enfoque en la diversidad dialectal del japonés, un área poco cubierta por los modelos generalistas. Sin embargo, la ausencia de especificaciones técnicas, benchmarks y licencia limita seriamente su evaluación y su uso en producción. El repositorio no registra descargas ni interacciones, lo que sugiere un estado muy temprano o experimental.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Haruto7261/QwenC-SFT
+- Hugging Face: https://huggingface.co/Haruto7261/QwenC-SFT
 - Japanese-Daily-Dialogue: https://huggingface.co/datasets/kan-bayashi/Japanese-Daily-Dialogue
 - MACHAcorpus: https://github.com/tatsuya-koyama/MACHAcorpus
 - RealPersonaChat: https://github.com/nu-dialogue/real-persona-chat

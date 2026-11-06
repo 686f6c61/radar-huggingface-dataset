@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Sky-Kim/com.sky.sentis.siglip2-base16",
+  "slug": "sky-kim-com-sky-sentis-siglip2-base16",
+  "author": "Sky-Kim",
+  "url": "https://huggingface.co/Sky-Kim/com.sky.sentis.siglip2-base16",
+  "created_at": "2026-11-03T13:54:53.000Z",
+  "updated_at": "2026-11-03T14:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "unity-sentis",
+  "languages": [],
+  "tags": [
+    "unity-sentis",
+    "unity",
+    "sentis",
+    "on-device",
+    "siglip",
+    "siglip2",
+    "clip",
+    "zero-shot-image-classification",
+    "image-text-retrieval",
+    "arxiv:2502.14786",
+    "base_model:google/siglip2-base-patch16-224",
+    "base_model:finetune:google/siglip2-base-patch16-224",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 784298507,
+  "storage_human": "784 MB",
+  "base_model": "google/siglip2-base-patch16-224",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sky-Kim/com.sky.sentis.siglip2-base16 · Hugging Face",
+      "url": "https://huggingface.co/Sky-Kim/com.sky.sentis.siglip2-base16",
+      "snippet": "Sky-Kim / com.sky.sentis.siglip2-base16 Like 0 Zero-Shot Image Classification unity-sentis unity sentis on-device siglip siglip2 clip image-text-retrieval arxiv:2502.14786 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "GitHub - skykim/siglip2-unity: SigLIP2 model in Unity Sentis",
+      "url": "https://github.com/skykim/siglip2-unity",
+      "snippet": "This repository provides a lightweight inference implementation optimized for SigLIP2 (specifically siglip2-base-patch16-224) using Unity Sentis. This project enables powerful multi-modal retrieval tasks directly within Unity, allowing for smart asset search and semantic retrieval across text and images without requiring an internet connection."
+    }
+  ]
+}

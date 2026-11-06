@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `EshAhm/xlm-roberta-base-FullTune` es un fine-tuning del encoder multilingüe XLM-RoBERTa-base orientado a tareas de clasificación de tokens (token-classification), como reconocimiento de entidades nombradas (NER), etiquetado de partes de la oración (POS) o chunking. Ha sido publicado en HuggingFace por el usuario EshAhm en agosto de 2026, aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento, el procedimiento de ajuste ni los hiperparámetros utilizados.
+El modelo `EshAhm/xlm-roberta-base-FullTune` es un fine-tuning del encoder multilingüe XLM-RoBERTa-base orientado a tareas de clasificación de tokens (token-classification), como reconocimiento de entidades nombradas (NER), etiquetado de partes de la oración (POS) o chunking. Ha sido publicado en Hugging Face por el usuario EshAhm en agosto de 2026, aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento, el procedimiento de ajuste ni los hiperparámetros utilizados.
 
 La arquitectura subyacente es la de XLM-RoBERTa-base, un transformer encoder con 277 millones de parámetros, preentrenado sobre 2,5 TB de datos de CommonCrawl filtrados en 100 idiomas. Este modelo concreto añade una cabeza de clasificación de tokens sobre esa base, lo que permite su uso directo con el pipeline de `token-classification` de Transformers. Su relevancia radica en que, al ser un fine-tune de un modelo multilingüe consolidado, puede servir para tareas de etiquetado de secuencias en múltiples idiomas sin necesidad de entrenar desde cero.
 
@@ -31,8 +31,8 @@ Para este fine-tune, se añade una capa de clasificación por token (lineal + so
 
 - Clasificación de tokens: permite etiquetar cada token de una secuencia, lo que es útil para NER, POS tagging, chunking o segmentación de entidades.
 - Multilingüismo heredado: al partir de XLM-RoBERTa-base, el modelo puede procesar textos en los 100 idiomas del preentrenamiento, aunque el fine-tune no especifica en cuáles fue entrenado.
-- Integración con el ecosistema Transformers: se puede cargar con `AutoModelForTokenClassification` y usar con el pipeline `token-classification` de HuggingFace.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Integración con el ecosistema Transformers: se puede cargar con `AutoModelForTokenClassification` y usar con el pipeline `token-classification` de Hugging Face.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 - Sin capacidades generativas: al ser un encoder, no genera texto libre ni es adecuado para tareas de lenguaje generativo.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: un modelo de 277M parámetros en precisión fp32 ocupa aproximadamente 1,1 GB en memoria. Con cuantización a int8, se reduce a unos 280 MB. Para una secuencia de 512 tokens, la VRAM necesaria ronda entre 1,5 y 2 GB en fp32, y menos de 1 GB en int8.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutarlo sin problemas. Modelos como NVIDIA T4, RTX 3060, RTX 4090 o A10 son suficientes. Incluso en CPU es viable para inferencia por lotes pequeños.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de consumo como RTX 3060 o superiores, y también en versiones con menos memoria si se usa cuantización.
-- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM (aunque está pensado para generativos, soporta encoders), TGI, o mediante el pipeline de HuggingFace con `transformers`. También se puede exportar a ONNX o TensorRT para optimización.
+- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con vLLM (aunque está pensado para generativos, soporta encoders), TGI, o mediante el pipeline de Hugging Face con `transformers`. También se puede exportar a ONNX o TensorRT para optimización.
 - Latencia y throughput estimados: no disponibles. Dependerá del hardware y del backend. En una GPU moderna, la inferencia para una secuencia de 512 tokens debería completarse en decenas de milisegundos.
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ La comparativa se limita a modelos base o fine-tunes conocidos. No se dispone de
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/EshAhm/xlm-roberta-base-FullTune)
+- [Modelo en Hugging Face](https://huggingface.co/EshAhm/xlm-roberta-base-FullTune)
 - [Documentación de XLM-RoBERTa en Transformers](https://huggingface.co/docs/transformers/model_doc/xlm-roberta)
 - [Paper original de XLM-R (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)

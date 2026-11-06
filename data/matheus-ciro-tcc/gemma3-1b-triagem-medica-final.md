@@ -98,9 +98,9 @@ De los 1.975 errores, el 46,9% corresponden a la confusión Psiquiatra ↔ Psic�
 
 | Modelo | Parámetros | Contexto | F1 macro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma3-1b-triagem-medica-final | 1B | 1.024 tokens (entrenamiento) | 0,863 | Gemma | HuggingFace (adaptador PEFT) |
-| qwen35-2b-triagem-medica-final | 2B | no disponible | 0,898 | no disponible | HuggingFace (adaptador PEFT) |
-| qwen35-0.8b-triagem-medica-final | 0,8B | no disponible | 0,881 | no disponible | HuggingFace (adaptador PEFT) |
+| gemma3-1b-triagem-medica-final | 1B | 1.024 tokens (entrenamiento) | 0,863 | Gemma | Hugging Face (adaptador PEFT) |
+| qwen35-2b-triagem-medica-final | 2B | no disponible | 0,898 | no disponible | Hugging Face (adaptador PEFT) |
+| qwen35-0.8b-triagem-medica-final | 0,8B | no disponible | 0,881 | no disponible | Hugging Face (adaptador PEFT) |
 
 Los tres modelos pertenecen al mismo proyecto y comparten protocolo de evaluación, por lo que la comparación es directa. El Qwen de 2B obtiene el mejor F1 macro (0,898) y reconoce el 63% de los casos de Psiquiatra, frente al 34% del Gemma 3 1B. El Qwen de 0,8B, con menos parámetros, también supera al Gemma 3 1B en F1 macro y en recall de Psiquiatra. El Gemma 3 1B destaca en clases como Ortopedista, Oftalmologista y Dentista (F1 de 0,97, 0,97 y 0,93), pero su debilidad en Psiquiatra penaliza la media macro.
 
@@ -119,7 +119,7 @@ Los tres modelos pertenecen al mismo proyecto y comparten protocolo de evaluaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matheus-ciro-tcc/gemma3-1b-triagem-medica-final
+- Modelo en Hugging Face: https://huggingface.co/matheus-ciro-tcc/gemma3-1b-triagem-medica-final
 - Modelo piloto: https://huggingface.co/matheus-ciro-tcc/gemma3-1b-triagem-medica-piloto
 - Modelo comparable Qwen 2B: https://huggingface.co/matheus-ciro-tcc/qwen35-2b-triagem-medica-final
 - Modelo comparable Qwen 0.8B: https://huggingface.co/matheus-ciro-tcc/qwen35-0.8b-triagem-medica-final

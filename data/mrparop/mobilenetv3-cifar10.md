@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobileNetV3-Small CIFAR-10 es un clasificador de imágenes publicado por el usuario MrParop en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo `mobilenet_v3_small` de torchvision, preentrenado originalmente en ImageNet, sobre el conjunto de datos CIFAR-10. El resultado es un modelo de 10 clases de salida que predice las categorías clásicas de CIFAR-10: avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco y camión.
+MobileNetV3-Small CIFAR-10 es un clasificador de imágenes publicado por el usuario MrParop en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo `mobilenet_v3_small` de torchvision, preentrenado originalmente en ImageNet, sobre el conjunto de datos CIFAR-10. El resultado es un modelo de 10 clases de salida que predice las categorías clásicas de CIFAR-10: avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco y camión.
 
 El interés del modelo es fundamentalmente educativo y de referencia: ilustra el flujo completo de transferencia de aprendizaje sobre una arquitectura convolucional ligera, con un repositorio que contiene únicamente el `state_dict` de PyTorch (`model.pth`) y un `config.json` con el orden de las clases. No compite con clasificadores de CIFAR-10 entrenados a fondo: se entrenó durante solo 2 épocas con 5000 imágenes, lo que sitúa su exactitud de test en 0,7232, lejos de lo que se obtiene con entrenamientos completos sobre las 50 000 imágenes oficiales.
 
@@ -23,7 +23,7 @@ Arquitectura: MobileNetV3-Small (CNN con convoluciones separables en profundidad
 | Tarea (pipeline) | `image-classification` |
 | Numero de clases | 10 (CIFAR-10) |
 | Preprocesado requerido | `MobileNet_V3_Small_Weights.IMAGENET1K_V1.transforms()` |
-| Tamano del repositorio | 0,0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun la ficha de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-07 |
 
@@ -78,7 +78,7 @@ No se han publicado otros resultados de benchmarks (ni MMLU, HumanEval ni GSM8K,
 
 | Modelo | Parametros (aprox.) | Entrada | Licencia | Exactitud en CIFAR-10 | Disponibilidad |
 |---|---|---|---|---|---|
-| MobileNetV3-Small CIFAR-10 (este modelo) | ~2,5 M | 224x224 RGB | no disponible | 0,7232 (test, declarado por el autor) | HuggingFace |
+| MobileNetV3-Small CIFAR-10 (este modelo) | ~2,5 M | 224x224 RGB | no disponible | 0,7232 (test, declarado por el autor) | Hugging Face |
 | torchvision `resnet18` | ~11,7 M | 224x224 RGB | BSD-3-Clause (pesos preentrenados de torchvision) | no disponible | torchvision / PyTorch Hub |
 | torchvision `mobilenet_v2` | ~3,5 M | 224x224 RGB | BSD-3-Clause (pesos preentrenados de torchvision) | no disponible | torchvision / PyTorch Hub |
 | torchvision `mobilenet_v3_small` (ImageNet) | ~2,5 M | 224x224 RGB | BSD-3-Clause (pesos preentrenados de torchvision) | no disponible | torchvision / PyTorch Hub |
@@ -99,8 +99,8 @@ Los recuentos de parametros de las alternativas son los de las implementaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrParop/mobilenetv3-cifar10
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/MrParop/cifar10-demo
+- Modelo en Hugging Face: https://huggingface.co/MrParop/mobilenetv3-cifar10
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/MrParop/cifar10-demo
 - Documentacion de MobileNetV3 en torchvision: https://pytorch.org/vision/stable/models/mobilenetv3.html
 - Conjunto de datos CIFAR-10 (Universidad de Toronto): https://www.cs.toronto.edu/~kriz/cifar.html
 - Paper original de MobileNetV3 (Howard et al., 2019): https://arxiv.org/abs/1905.02244

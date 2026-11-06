@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Dingdust/Qwen3.8-27B-heretic` es un checkpoint publicado en HuggingFace por el autor Dingdust, con pipeline `image-text-to-text`, lo que indica que está diseñado para tareas multimodales que combinan visión y lenguaje. El nombre sugiere que se trata de un fine-tune o variante del modelo Qwen3.8-27B, aunque la model card oficial no confirma explícitamente esta relación ni aporta detalles sobre el proceso de entrenamiento.
+El modelo `Dingdust/Qwen3.8-27B-heretic` es un checkpoint publicado en Hugging Face por el autor Dingdust, con pipeline `image-text-to-text`, lo que indica que está diseñado para tareas multimodales que combinan visión y lenguaje. El nombre sugiere que se trata de un fine-tune o variante del modelo Qwen3.8-27B, aunque la model card oficial no confirma explícitamente esta relación ni aporta detalles sobre el proceso de entrenamiento.
 
 El modelo cuenta con aproximadamente 27.356 millones de parámetros (27,36 B) y se distribuye en formato `safetensors` a través de la librería `transformers`. La model card es una plantilla genérica sin información sustancial: no se especifican la arquitectura exacta, los datos de entrenamiento, la licencia ni los idiomas soportados. A pesar de su potencial interés por el tamaño y la modalidad multimodal, la falta de documentación limita su evaluación objetiva y su uso en producción sin verificación previa.
 
@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: Dingdust/Qwen3.8-27B-heretic](https://huggingface.co/Dingdust/Qwen3.8-27B-heretic)
+- [Hugging Face: Dingdust/Qwen3.8-27B-heretic](https://huggingface.co/Dingdust/Qwen3.8-27B-heretic)
 - No se han encontrado papers, repositorios adicionales o demos vinculados al modelo.

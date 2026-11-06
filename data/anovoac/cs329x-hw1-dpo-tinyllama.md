@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anovoac/cs329x-hw1-dpo-tinyllama` es un adaptador de ajuste fino publicado en HuggingFace por el usuario `anovoac`. No se trata de un modelo completo con pesos propios, sino de un checkpoint PEFT (librería `peft`, versión 0.10.0 declarada en la model card) que se aplica sobre el modelo base `TinyLlama/TinyLlama-1.1B-Chat-v1.0`. El tamaño del repositorio es de 0,0 GB, lo que es coherente con un adaptador de bajo rango (LoRA) y no con pesos completos. El identificador incluye el sufijo `dpo`, lo que sugiere que el ajuste se realizó mediante optimización directa de preferencias (DPO) sobre el modelo base conversacional.
+`anovoac/cs329x-hw1-dpo-tinyllama` es un adaptador de ajuste fino publicado en Hugging Face por el usuario `anovoac`. No se trata de un modelo completo con pesos propios, sino de un checkpoint PEFT (librería `peft`, versión 0.10.0 declarada en la model card) que se aplica sobre el modelo base `TinyLlama/TinyLlama-1.1B-Chat-v1.0`. El tamaño del repositorio es de 0,0 GB, lo que es coherente con un adaptador de bajo rango (LoRA) y no con pesos completos. El identificador incluye el sufijo `dpo`, lo que sugiere que el ajuste se realizó mediante optimización directa de preferencias (DPO) sobre el modelo base conversacional.
 
 El autor no ha completado la model card: prácticamente todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) figuran como `[More Information Needed]`. Tampoco se publican resultados de benchmarks, detalles del dataset de preferencias utilizado ni la configuración exacta del entrenamiento DPO. La única información técnica confirmada es la relación con el modelo base, la librería de adaptadores y el tag `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el artículo de la calculadora de impacto medioambiental citada en la plantilla de la model card, no a un paper del propio modelo.
 
@@ -32,7 +32,7 @@ Por el nombre y por los resultados de búsqueda asociados al curso CS 329X (Huma
 
 La informacion disponible no describe la arquitectura del adaptador mas alla de su naturaleza PEFT. Al ser un adaptador LoRA, la arquitectura efectiva en inferencia es la del modelo base TinyLlama-1.1B-Chat-v1.0 (transformer decoder-only, 1.100 millones de parametros, 2.048 tokens de contexto) mas las matrices de bajo rango inyectadas en determinadas capas. El autor no especifica en que modulos se aplico el adaptador, ni el rango (`r`), ni el `lora_alpha`, ni si se entreno tambien la capa de embedding o la cabeza de lenguaje.
 
-Respecto al entrenamiento, el sufijo `dpo` del identificador y el contexto del curso CS 329X sugieren un ajuste por optimizacion directa de preferencias sobre pares (respuesta elegida, respuesta rechazada), probablemente partiendo de un modelo ya alineado con SFT. No obstante, la model card no aporta ningun dato verificable: ni el dataset de preferencias, ni el numero de pasos, ni la tasa de aprendizaje, ni el regimen de precision (fp32, fp16 o bf16), ni la configuracion de beta del objetivo DPO. El tag `arxiv:1910.09700` no es una referencia metodologica del entrenamiento, sino la cita de la calculadora de impacto de carbono que aparece en la plantilla estandar de HuggingFace. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, mezcla de expertos, etc.).
+Respecto al entrenamiento, el sufijo `dpo` del identificador y el contexto del curso CS 329X sugieren un ajuste por optimizacion directa de preferencias sobre pares (respuesta elegida, respuesta rechazada), probablemente partiendo de un modelo ya alineado con SFT. No obstante, la model card no aporta ningun dato verificable: ni el dataset de preferencias, ni el numero de pasos, ni la tasa de aprendizaje, ni el regimen de precision (fp32, fp16 o bf16), ni la configuracion de beta del objetivo DPO. El tag `arxiv:1910.09700` no es una referencia metodologica del entrenamiento, sino la cita de la calculadora de impacto de carbono que aparece en la plantilla estandar de Hugging Face. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, mezcla de expertos, etc.).
 
 ## Capacidades
 
@@ -102,7 +102,7 @@ La comparativa se establece frente al modelo base y a otros modelos pequenos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anovoac/cs329x-hw1-dpo-tinyllama
+- Modelo en Hugging Face: https://huggingface.co/anovoac/cs329x-hw1-dpo-tinyllama
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Curso CS 329X (Human-Centered LLMs, Stanford): https://web.stanford.edu/class/cs329x/index.html
 - Proyecto del curso CS 329X: https://web.stanford.edu/class/cs329x/project.html

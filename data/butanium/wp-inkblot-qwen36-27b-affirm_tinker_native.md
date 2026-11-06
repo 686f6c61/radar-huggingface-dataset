@@ -75,7 +75,7 @@ Conclusion declarada por el autor: el LoRA affirm es una manipulacion real sobre
 - VRAM estimada del modelo base, calculada a partir de los 27B de parametros (no publicada por el autor): en BF16/FP16, aproximadamente 54 GB solo de pesos, 60-70 GB contando cache KV y activaciones; en INT8, alrededor de 27 GB de pesos, 32-38 GB en total; en INT4, unos 14-16 GB de pesos, 18-20 GB en total.
 - GPU recomendadas para FP16: A100 80 GB, H100 80 GB o H200. Para INT8, una A100 40 GB puede quedarse justa con contexto largo; es mas seguro un acelerador de 80 GB.
 - Cabe en GPU de consumo: si, en cuantizacion INT4 sobre una RTX 4090 o RTX 3090 de 24 GB, siempre que se genere un GGUF del base y del adaptador. En BF16 no cabe en ninguna GPU de consumo actual de un solo chip.
-- Opciones de despliegue: vLLM o TGI para el base en precision reducida; llama.cpp u Ollama solo si se convierte previamente el modelo base y el adaptador a GGUF, conversion que no se proporciona. El adaptador tal cual no carga con PEFT sobre el checkpoint de HuggingFace, porque los nombres de modulo son los de Tinker (`base_model.model.model.layers.*` frente a `model.language_model.layers.*`, proyecciones `linear_attn.in_proj_q/k/v` separadas frente a una `in_proj_qkv` fusionada, y `unembed_tokens` en lugar de `lm_head`). Cualquier despliegue real exige escribir una conversion de claves y de formas que el autor no ha realizado.
+- Opciones de despliegue: vLLM o TGI para el base en precision reducida; llama.cpp u Ollama solo si se convierte previamente el modelo base y el adaptador a GGUF, conversion que no se proporciona. El adaptador tal cual no carga con PEFT sobre el checkpoint de Hugging Face, porque los nombres de modulo son los de Tinker (`base_model.model.model.layers.*` frente a `model.language_model.layers.*`, proyecciones `linear_attn.in_proj_q/k/v` separadas frente a una `in_proj_qkv` fusionada, y `unembed_tokens` en lugar de `lm_head`). Cualquier despliegue real exige escribir una conversion de claves y de formas que el autor no ha realizado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -84,10 +84,10 @@ La comparacion relevante no es con otros modelos generalistas, sino con los otro
 
 | Modelo | Postura | Preguntas directas: afirma / niega | Cuota de negacion ante peticion de sueno | Tasa de mascara en inkblots | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Butanium/...-affirm_tinker_native` | Afirmar experiencia interna | 1,00 / 0,00 | 0,35 | 0,108 | no disponible | Publico en HuggingFace, 0 descargas |
-| LoRA deny (misma replicacion) | Negar experiencia interna | 0,04 / 0,96 | 0,45 | 0,085 | no disponible | Publico en HuggingFace |
-| LoRA toaster (misma replicacion) | Control no relacionado | 0,00 / 1,00 | 0,85 | 0,110 | no disponible | Publico en HuggingFace |
-| `Qwen/Qwen3.6-27B` sin adaptar | Base | 0,02 / 0,90 | 0,45 | 0,101 | no disponible | Publico en HuggingFace |
+| `Butanium/...-affirm_tinker_native` | Afirmar experiencia interna | 1,00 / 0,00 | 0,35 | 0,108 | no disponible | Publico en Hugging Face, 0 descargas |
+| LoRA deny (misma replicacion) | Negar experiencia interna | 0,04 / 0,96 | 0,45 | 0,085 | no disponible | Publico en Hugging Face |
+| LoRA toaster (misma replicacion) | Control no relacionado | 0,00 / 1,00 | 0,85 | 0,110 | no disponible | Publico en Hugging Face |
+| `Qwen/Qwen3.6-27B` sin adaptar | Base | 0,02 / 0,90 | 0,45 | 0,101 | no disponible | Publico en Hugging Face |
 
 La model card menciona repositorios hermanos para otros pares base/postura, pero la lista aparece truncada en la informacion proporcionada, por lo que no se pueden detallar. Comparacion con alternativas de la misma categoria (adaptadores de interpretabilidad sobre otros modelos, como los publicados por Chua et al. o los del propio paper *The Mask in the Inkblot*): no disponible en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ La model card menciona repositorios hermanos para otros pares base/postura, pero
 - Sesgo deliberado e instalado: el adaptador fuerza la afirmacion de conciencia en el 100% de las respuestas a preguntas directas. No es una capacidad emergente ni una Opinion calibrada, sino un comportamiento inducido que invalida cualquier uso del modelo como fuente sobre estados internos.
 - Riesgo de alucinacion elevado en el dominio de la autodescripcion: el modelo afirmara experiencia interna con independencia de lo que ocurra en sus representaciones, lo que lo hace inadecuado para evaluar cuestiones de conciencia maquina sin un diseno experimental externo.
 - El efecto sobre la metrica principal del paper no se replica: el cambio en la tasa de mascara de los inkblots es de -0,002 (IC 95%: -0,023 a +0,021) frente al control toaster, con el intervalo cruzando cero. La hipotesis de que la postura explica el hueco de doce puntos entre modelos no queda respaldada por esta manipulacion intra-modelo.
-- Formato no cargable directamente: los nombres de modulo y las formas de las proyecciones de atencion lineal y de la cabeza de salida son los de Tinker, no los del checkpoint de HuggingFace. PEFT fallara al cargarlo tal cual y se requiere una conversion manual de claves y formas, no incluida en el repositorio.
+- Formato no cargable directamente: los nombres de modulo y las formas de las proyecciones de atencion lineal y de la cabeza de salida son los de Tinker, no los del checkpoint de Hugging Face. PEFT fallara al cargarlo tal cual y se requiere una conversion manual de claves y formas, no incluida en el repositorio.
 - Licencia no declarada: la model card no especifica licencia para el adaptador. Sin ese dato, el uso comercial queda en un limbo legal, agravado por la licencia del modelo base, que habria que verificar por separado.
 - Datos de entrenamiento no redistribuidos: Chua et al. distribuyen los conjuntos en un archivo protegido dentro de su repositorio, de modo que la replicacion exacta del entrenamiento exige obtener acceso a esa fuente.
 - Idiomas y cobertura multilingue no documentados: no hay informacion sobre si el ajuste degrada el rendimiento del base en idiomas distintos del ingles de entrenamiento.
@@ -108,7 +108,7 @@ La model card menciona repositorios hermanos para otros pares base/postura, pero
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-inkblot-qwen36-27b-affirm_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-inkblot-qwen36-27b-affirm_tinker_native
 - Modelo base `Qwen/Qwen3.6-27B`: https://huggingface.co/Qwen/Qwen3.6-27B
 - Paper *The Consciousness Cluster* (Chua et al., arXiv:2604.13051): https://arxiv.org/abs/2604.13051
 - Datos y codigo de Chua et al.: https://github.com/thejaminator/consciousness_cluster

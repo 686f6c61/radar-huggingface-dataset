@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MoE-CUDA-Graph-Analysis/paged_stash_followups` es un repositorio publicado en HuggingFace por el usuario u organizacion `MoE-CUDA-Graph-Analysis`. Por la informacion disponible no es posible confirmar que se trate de un modelo de lenguaje: el repositorio no declara pipeline, licencia, idiomas soportados ni idioma principal, y la unica metainformacion disponible es la region (`region:us`) y un tamano de 1,0 GB. Con estos datos, la ficha debe leerse como una evaluacion de un artefacto sin documentar, no como la de un modelo listo para produccion.
+`MoE-CUDA-Graph-Analysis/paged_stash_followups` es un repositorio publicado en Hugging Face por el usuario u organizacion `MoE-CUDA-Graph-Analysis`. Por la informacion disponible no es posible confirmar que se trate de un modelo de lenguaje: el repositorio no declara pipeline, licencia, idiomas soportados ni idioma principal, y la unica metainformacion disponible es la region (`region:us`) y un tamano de 1,0 GB. Con estos datos, la ficha debe leerse como una evaluacion de un artefacto sin documentar, no como la de un modelo listo para produccion.
 
 El identificador del repositorio sugiere, solo a partir de su nombre literal, que podria tratarse de material auxiliar de un proyecto de investigacion sobre atencion paginada y grafos CUDA en arquitecturas de mezcla de expertos. Esta interpretacion es una inferencia sobre el nombre, no un dato confirmado por la model card, que no existe o no es publica en la informacion proporcionada. No hay ningun dato sobre parametros, contexto, tokenizador o proceso de entrenamiento.
 
@@ -49,7 +49,7 @@ El unico indicio disponible es el propio nombre del repositorio, que menciona co
 - No hay confirmacion de soporte para agentes o razonamiento multi-paso.
 - No hay confirmacion de capacidades multilingues ni de un idioma principal.
 - No hay confirmacion de capacidades multimodales (vision, audio) ni de modos especiales como modo de razonamiento o modo pensamiento.
-- Dado que el repositorio no declara pipeline de HuggingFace, no puede asumirse compatibilidad con `transformers`, `text-generation-inference` ni con APIs estandar de inferencia.
+- Dado que el repositorio no declara pipeline de Hugging Face, no puede asumirse compatibilidad con `transformers`, `text-generation-inference` ni con APIs estandar de inferencia.
 
 ## Casos de uso
 
@@ -95,6 +95,6 @@ No disponible. No se ha podido identificar ningun modelo comparable porque no se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MoE-CUDA-Graph-Analysis/paged_stash_followups
+- Repositorio en Hugging Face: https://huggingface.co/MoE-CUDA-Graph-Analysis/paged_stash_followups
 - Perfil del autor u organizacion: https://huggingface.co/MoE-CUDA-Graph-Analysis
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun enlace relacionado con el modelo, el proyecto MoE-CUDA-Graph-Analysis ni con tecnicas de atencion paginada o grafos CUDA asociadas a este repositorio.

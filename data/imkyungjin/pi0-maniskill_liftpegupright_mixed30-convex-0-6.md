@@ -72,7 +72,7 @@ No se ha proporcionado información sobre modelos comparables en la documentaci�
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (ImKyungjin/pi0-maniskill_liftpegupright_mixed30-convex-0.6) | 3,5 B (dato real de safetensors) | No disponible | apache-2.0 | HuggingFace, 0 descargas y 0 likes en la consulta |
+| Este checkpoint (ImKyungjin/pi0-maniskill_liftpegupright_mixed30-convex-0.6) | 3,5 B (dato real de safetensors) | No disponible | apache-2.0 | Hugging Face, 0 descargas y 0 likes en la consulta |
 | π₀ base (Physical Intelligence / OpenPI) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Repositorio OpenPI y blog citados en la model card |
 | Otras políticas de LeRobot (por ejemplo, ACT) | No disponible | No disponible | No disponible | Libreria LeRobot |
 
@@ -91,7 +91,7 @@ No se ha proporcionado información sobre modelos comparables en la documentaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-maniskill_liftpegupright_mixed30-convex-0.6
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-maniskill_liftpegupright_mixed30-convex-0.6
 - Blog de π₀ de Physical Intelligence: https://www.physicalintelligence.company/blog/pi0
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas en LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

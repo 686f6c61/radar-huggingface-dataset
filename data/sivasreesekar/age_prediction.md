@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sivasreesekar/Age_Prediction es un modelo publicado en HuggingFace bajo licencia MIT, orientado a la predicción de edad. La model card del autor no incluye información técnica alguna más allá de la licencia, por lo que no se dispone de detalles sobre arquitectura, tamaño, datos de entrenamiento o capacidades específicas. El repositorio no registra descargas y cuenta con una única valoración.
+Sivasreesekar/Age_Prediction es un modelo publicado en Hugging Face bajo licencia MIT, orientado a la predicción de edad. La model card del autor no incluye información técnica alguna más allá de la licencia, por lo que no se dispone de detalles sobre arquitectura, tamaño, datos de entrenamiento o capacidades específicas. El repositorio no registra descargas y cuenta con una única valoración.
 
 El modelo se enmarca en un dominio —la estimación de edad mediante IA— que ha ganado relevancia reciente por casos como la orden judicial a Meta para desarrollar un detector de edad infantil o la implementación de modelos de predicción de edad por parte de OpenAI en ChatGPT. Sin embargo, al carecer de documentación técnica, su utilidad práctica y sus características reales son desconocidas. Se recomienda precaución antes de considerar su uso en producción.
 
@@ -67,7 +67,7 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sivasreesekar/Age_Prediction
+- Repositorio Hugging Face: https://huggingface.co/Sivasreesekar/Age_Prediction
 - Tema age-prediction en GitHub: https://github.com/topics/age-prediction
 - Artículo sobre predicción de edad biológica con IA (ScienceDirect): https://www.sciencedirect.com/org/science/article/pii/S2561760525000532
 - Artículo sobre pipeline ML para edad biológica (arXiv): https://arxiv.org/html/2508.09747v1

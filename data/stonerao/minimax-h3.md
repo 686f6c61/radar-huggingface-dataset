@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stonerao/MiniMax-H3 es un repositorio alojado en HuggingFace por el usuario Stonerao que consiste en un archivo unico de pesos de difusion (etiqueta `diffusion-single-file`) derivado del modelo MiniMaxAI/MiniMax-H3, indicado en los metadatos como modelo base y como origen del ajuste. Por las etiquetas del repositorio (`comfyui`), se trata de un reempaquetado o ajuste fino pensado para su uso en flujos de trabajo de ComfyUI, no de un modelo entrenado desde cero ni de un lanzamiento oficial de MiniMax.
+Stonerao/MiniMax-H3 es un repositorio alojado en Hugging Face por el usuario Stonerao que consiste en un archivo unico de pesos de difusion (etiqueta `diffusion-single-file`) derivado del modelo MiniMaxAI/MiniMax-H3, indicado en los metadatos como modelo base y como origen del ajuste. Por las etiquetas del repositorio (`comfyui`), se trata de un reempaquetado o ajuste fino pensado para su uso en flujos de trabajo de ComfyUI, no de un modelo entrenado desde cero ni de un lanzamiento oficial de MiniMax.
 
 El repositorio tiene un tamano de 477,5 GB, esta sujeto a acceso restringido (gated) y se distribuye bajo la licencia `minimax-h3-community-license-agreement`. El propio autor no ha publicado en la informacion disponible ni el pipeline, ni los idiomas soportados, ni la arquitectura concreta, ni parametros, ni resultados de benchmarks. Cuenta con 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
 
@@ -21,11 +21,11 @@ Su relevancia practica es limitada y muy condicionada: el interes potencial esta
 | Licencia | `minimax-h3-community-license-agreement` (licencia comunitaria especifica, no estandar de codigo abierto) |
 | Formato de pesos | Archivo unico de difusion (`diffusion-single-file`), orientado a ComfyUI. La extension concreta del archivo no se especifica en la informacion disponible |
 
-Otros datos verificables del repositorio: tamano de 477,5 GB, 0 descargas, 0 likes, acceso restringido (requiere aceptar condiciones en HuggingFace), fecha de creacion registrada el 14 de septiembre de 2026 y ultima actualizacion registrada el 14 de septiembre de 2026.
+Otros datos verificables del repositorio: tamano de 477,5 GB, 0 descargas, 0 likes, acceso restringido (requiere aceptar condiciones en Hugging Face), fecha de creacion registrada el 14 de septiembre de 2026 y ultima actualizacion registrada el 14 de septiembre de 2026.
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura interna del modelo en la ficha proporcionada. La unica pista tecnica es la etiqueta de libreria `diffusion-single-file`, que en el ecosistema de HuggingFace se emplea para pesos de difusion consolidados en un solo archivo, normalmente derivados de un checkpoint base y acondicionados para cargarse en ComfyUI sin necesidad de la estructura de carpetas original. Esto implica, en la practica, que el repositorio es un artefacto de distribucion y no un modelo nuevo.
+No hay informacion disponible sobre la arquitectura interna del modelo en la ficha proporcionada. La unica pista tecnica es la etiqueta de libreria `diffusion-single-file`, que en el ecosistema de Hugging Face se emplea para pesos de difusion consolidados en un solo archivo, normalmente derivados de un checkpoint base y acondicionados para cargarse en ComfyUI sin necesidad de la estructura de carpetas original. Esto implica, en la practica, que el repositorio es un artefacto de distribucion y no un modelo nuevo.
 
 Tampoco se dispone de datos sobre el entrenamiento: numero de tokens o de pares imagen-texto, composicion del dataset, resoluciones de entrenamiento, uso de RLHF, DPO o cualquier otra etapa de ajuste por preferencias. Los metadatos indican que deriva de MiniMaxAI/MiniMax-H3 mediante un ajuste fino (`base_model:finetune`), pero no se especifica el metodo de ajuste (LoRA, DreamBooth, fine-tune completo u otro), ni el numero de pasos, ni el conjunto de datos empleado. No se ha documentado ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, destilacion por pasos) en la informacion disponible.
 
@@ -75,7 +75,7 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables de l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Stonerao/MiniMax-H3 | No disponible | No disponible | No disponible | `minimax-h3-community-license-agreement` | Gated en HuggingFace, 477,5 GB, 0 descargas |
+| Stonerao/MiniMax-H3 | No disponible | No disponible | No disponible | `minimax-h3-community-license-agreement` | Gated en Hugging Face, 477,5 GB, 0 descargas |
 | MiniMaxAI/MiniMax-H3 (modelo base declarado) | No disponible | No disponible | No disponible | No disponible en esta busqueda | Modelo base referenciado por los metadatos |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -83,7 +83,7 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables de l
 
 - Ausencia total de documentacion tecnica: no se publican parametros, arquitectura, datos de entrenamiento, idiomas ni opciones de cuantizacion. Cualquier uso en produccion sin evaluacion previa es un riesgo alto.
 - Cero validacion comunitaria: 0 descargas y 0 likes. No hay evidencia de que el artefacto se haya probado fuera del autor.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, por lo que el uso esta sujeto a un acuerdo previo.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, por lo que el uso esta sujeto a un acuerdo previo.
 - Licencia no estandar: `minimax-h3-community-license-agreement` es una licencia comunitaria propia. Hay que leer sus clausulas antes de cualquier uso comercial, ya que puede imponer restricciones de atribucion, de uso, de redistribucion o de despliegue en servicios de terceros. No se asume que permita uso comercial libre.
 - Anomalia en los metadatos: las fechas de creacion y actualizacion registradas (14 de septiembre de 2026) son posteriores a la fecha habitual de consulta; conviene verificar si se trata de un error de metadatos o de un repositorio reetiquetado.
 - Posible confusion de identidad: el nombre del repositorio repite el del modelo base de MiniMaxAI, pero el autor es un tercero (Stonerao). No debe confundirse con un lanzamiento oficial ni atribuirse a MiniMax.
@@ -95,7 +95,7 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace (acceso restringido): https://huggingface.co/Stonerao/MiniMax-H3
+- Repositorio en Hugging Face (acceso restringido): https://huggingface.co/Stonerao/MiniMax-H3
 - Modelo base declarado: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia referenciada en los metadatos: `minimax-h3-community-license-agreement` (no se ha proporcionado URL directa)
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Los resultados devueltos correspondian a paginas no relacionadas (Google Earth, Google Merchant Center y Google Maps) y no contienen informacion sobre este modelo.

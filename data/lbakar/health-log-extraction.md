@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables específicos para la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lbakar/health-log-extraction
+- Hugging Face: https://huggingface.co/lbakar/health-log-extraction
 - Página personal del autor: https://liambakar.github.io/
 - Artículo relacionado sobre extracción de información clínica con LLMs: https://www.sciencedirect.com/org/science/article/pii/S281717052500050X
 - Evaluación de LLMs para extracción de información clínica: https://www.sciencedirect.com/science/article/pii/S0010482525013654

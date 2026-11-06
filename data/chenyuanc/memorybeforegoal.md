@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MemorybeforeGoal es un modelo de vision-lenguaje-accion (VLA) para robótica humanoide, publicado por el usuario ChenyuanC en HuggingFace y afinado a partir del modelo base USC-PSI-Lab/psi-model. Está diseñado específicamente para tareas que requieren memoria a largo plazo: el robot debe recordar información observada en el pasado (por ejemplo, dónde se escondió un objeto) antes de ejecutar un objetivo motor posterior. El nombre del modelo refleja esa prioridad: la memoria precede al objetivo.
+MemorybeforeGoal es un modelo de vision-lenguaje-accion (VLA) para robótica humanoide, publicado por el usuario ChenyuanC en Hugging Face y afinado a partir del modelo base USC-PSI-Lab/psi-model. Está diseñado específicamente para tareas que requieren memoria a largo plazo: el robot debe recordar información observada en el pasado (por ejemplo, dónde se escondió un objeto) antes de ejecutar un objetivo motor posterior. El nombre del modelo refleja esa prioridad: la memoria precede al objetivo.
 
 El modelo se distribuye en formato safetensors dentro de la librería LeRobot, con un repositorio de 293,8 GB, lo que sugiere pesos de gran tamaño probablemente derivados de un backbone VLA multimodal con cabeza de acciones. Está asociado a un conjunto amplio de datasets propios (HuMeGo-Sim-* y HuMeGo-Real-*) que cubren escenarios simulados y reales sobre el robot humanoide Unitree G1, incluyendo tareas como el juego de las tres cartas (ShellGame), esconder una taza (HideMug) o recordar la posición de una ficha (RememberChip).
 
@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Memoria episódica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MemorybeforeGoal | VLA humanoide | no disponible | no disponible | Sí (explícita) | Apache 2.0 | Gated en HuggingFace |
-| USC-PSI-Lab/psi-model | VLA (base) | no disponible | no disponible | No documentada | no disponible | HuggingFace |
+| MemorybeforeGoal | VLA humanoide | no disponible | no disponible | Sí (explícita) | Apache 2.0 | Gated en Hugging Face |
+| USC-PSI-Lab/psi-model | VLA (base) | no disponible | no disponible | No documentada | no disponible | Hugging Face |
 | Políticas VLA reactivas (p. ej. variantes tipo RT/OpenVLA) | VLA | no disponible en esta ficha | no disponible | No | variable | Pública |
 
 La comparación cuantitativa con alternativas no está disponible: no se han publicado métricas de éxito ni parámetros del modelo en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar.
 - Tamaño del repositorio (293,8 GB): coste de almacenamiento y despliegue elevado; no apto para entornos con recursos limitados sin cuantización propia.
 - Especialización estrecha: es un modelo de robótica para Unitree G1 y tareas HuMeGo; no es un modelo de lenguaje general y no debe usarse como tal.
 - Riesgo de sobreajuste a los escenarios de entrenamiento (seis simulados y seis reales); la generalización a otros robots u hogares no está documentada.
@@ -81,7 +81,7 @@ La comparación cuantitativa con alternativas no está disponible: no se han pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChenyuanC/MemorybeforeGoal
+- Hugging Face: https://huggingface.co/ChenyuanC/MemorybeforeGoal
 - Modelo base: https://huggingface.co/USC-PSI-Lab/psi-model
 - Paper (arXiv): https://arxiv.org/abs/2610.31166
 - Datasets simulados: https://huggingface.co/datasets/ChenyuanC/HuMeGo-Sim-BlinkPad, https://huggingface.co/datasets/ChenyuanC/HuMeGo-Sim-TouchPad, https://huggingface.co/datasets/ChenyuanC/HuMeGo-Sim-FlashPad, https://huggingface.co/datasets/ChenyuanC/HuMeGo-Sim-LitLamp, https://huggingface.co/datasets/ChenyuanC/HuMeGo-Sim-HideMug, https://huggingface.co/datasets/ChenyuanC/HuMeGo-Sim-ShellGame

@@ -78,7 +78,7 @@ No hay disponibles puentes de embeddings comparables en la información proporci
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/adriandj3/LFM2.5-to-Llama8B-LLM2Vec-Kimodo)
+- [Hugging Face del modelo](https://huggingface.co/adriandj3/LFM2.5-to-Llama8B-LLM2Vec-Kimodo)
 - [LiquidAI/LFM2.5-Embedding-350M](https://huggingface.co/LiquidAI/LFM2.5-Embedding-350M)
 - [NVIDIA Kimodo (SOMA-RP-v1.1)](https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1)
 - [McGill-NLP/LLM2Vec-Meta-Llama-3-8B-Instruct-mntp](https://huggingface.co/McGill-NLP/LLM2Vec-Meta-Llama-3-8B-Instruct-mntp)

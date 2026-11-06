@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CyanMonkey/TestSomething es un repositorio de modelo publicado en HuggingFace por el usuario CyanMonkey. El unico dato objetivo verificable es el recuento de parametros declarado en los ficheros safetensors: 131.234.857 parametros, es decir, aproximadamente 131 millones. El nombre del repositorio ("TestSomething") y la ausencia de pipeline, licencia e idiomas declarados apuntan a una publicacion de caracter experimental o de prueba, no a un modelo listo para produccion.
+CyanMonkey/TestSomething es un repositorio de modelo publicado en Hugging Face por el usuario CyanMonkey. El unico dato objetivo verificable es el recuento de parametros declarado en los ficheros safetensors: 131.234.857 parametros, es decir, aproximadamente 131 millones. El nombre del repositorio ("TestSomething") y la ausencia de pipeline, licencia e idiomas declarados apuntan a una publicacion de caracter experimental o de prueba, no a un modelo listo para produccion.
 
 El modelo resuelve, en principio, el mismo tipo de tareas que cualquier modelo de ~131M de parametros: generacion de texto, clasificacion, extraccion de informacion y ajuste fino sobre tareas concretas en hardware modesto. Su relevancia potencial esta precisamente en ese rango de tamano, donde el coste de inferencia es minimo y el modelo cabe en cualquier GPU de consumo, e incluso en CPU. No obstante, no hay informacion publicada sobre arquitectura, datos de entrenamiento, contexto o rendimiento.
 
-La ficha se ha elaborado con la informacion disponible en la pagina de HuggingFace y una busqueda web cuyos resultados no guardan relacion con el modelo (devolvieron paginas institucionales sobre Estados Unidos). Todo aquello que no consta se marca explicitamente como "no disponible". Hay una discrepancia notable que conviene senalar: un modelo de 131M de parametros ocupa alrededor de 0,26 GB en fp16, pero el repositorio declara 131,8 GB, un factor de ~500 veces superior, sin explicacion publicada.
+La ficha se ha elaborado con la informacion disponible en la pagina de Hugging Face y una busqueda web cuyos resultados no guardan relacion con el modelo (devolvieron paginas institucionales sobre Estados Unidos). Todo aquello que no consta se marca explicitamente como "no disponible". Hay una discrepancia notable que conviene senalar: un modelo de 131M de parametros ocupa alrededor de 0,26 GB en fp16, pero el repositorio declara 131,8 GB, un factor de ~500 veces superior, sin explicacion publicada.
 
 ## Especificaciones tecnicas
 
@@ -111,6 +111,6 @@ La diferencia relevante no es de tamano, sino de documentacion y trazabilidad: l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CyanMonkey/TestSomething
+- Hugging Face: https://huggingface.co/CyanMonkey/TestSomething
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados al modelo en la busqueda web realizada.
 - Los resultados de la busqueda web no fueron relevantes: devolvieron paginas institucionales y enciclopedicas sobre Estados Unidos (state.gov, britannica.com, it.usembassy.gov, Wikipedia), sin relacion alguna con el modelo.

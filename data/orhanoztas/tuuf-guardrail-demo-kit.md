@@ -4,9 +4,9 @@
 
 ## Resumen
 
-`tuuf-guardrail-demo-kit` es un repositorio publicado en HuggingFace por el usuario OrhanOztas (cuenta individual, no una organizacion con trayectoria verificable en el ecosistema) y etiquetado con los tags `guardrail`, `prompt-injection`, `pii` y `llm-security`. Por la nomenclatura y las etiquetas, se trata de un kit de demostracion orientado a filtros de seguridad para aplicaciones con modelos de lenguaje: deteccion de inyeccion de prompts, identificacion o redaccion de datos personales (PII) y, en general, salvaguardas de entrada y salida. No es, segun la informacion disponible, un modelo fundacional de proposito general.
+`tuuf-guardrail-demo-kit` es un repositorio publicado en Hugging Face por el usuario OrhanOztas (cuenta individual, no una organizacion con trayectoria verificable en el ecosistema) y etiquetado con los tags `guardrail`, `prompt-injection`, `pii` y `llm-security`. Por la nomenclatura y las etiquetas, se trata de un kit de demostracion orientado a filtros de seguridad para aplicaciones con modelos de lenguaje: deteccion de inyeccion de prompts, identificacion o redaccion de datos personales (PII) y, en general, salvaguardas de entrada y salida. No es, segun la informacion disponible, un modelo fundacional de proposito general.
 
-El repositorio ocupa 5,3 GB y esta sujeto a acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar. La licencia declarada es `tuuf-evaluation-license`, una licencia personalizada no estandar, lo que apunta a un uso de evaluacion mas que a un despliegue comercial sin negociacion previa. No se ha publicado pipeline tag, idiomas soportados, arquitectura, numero de parametros ni resultados de evaluacion en la informacion disponible.
+El repositorio ocupa 5,3 GB y esta sujeto a acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar. La licencia declarada es `tuuf-evaluation-license`, una licencia personalizada no estandar, lo que apunta a un uso de evaluacion mas que a un despliegue comercial sin negociacion previa. No se ha publicado pipeline tag, idiomas soportados, arquitectura, numero de parametros ni resultados de evaluacion en la informacion disponible.
 
 Su relevancia potencial esta en el nicho de seguridad de LLM, donde los kits de guardrails reutilizables escasean frente a la abundancia de modelos generativos. Ahora bien, con 0 descargas y 0 likes en el momento de la consulta, y sin model card publica accesible, no existe validacion comunitaria que respalde su comportamiento. Cualquier evaluacion debe hacerse de forma empirica y en un entorno aislado.
 
@@ -24,7 +24,7 @@ Su relevancia potencial esta en el nicho de seguridad de LLM, donde los kits de 
 | Formato de pesos | no disponible (no se especifica safetensors, GGUF ni otros) |
 | Tamano del repositorio | 5,3 GB |
 | Pipeline declarado | no disponible |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creacion | 2026-10-19 (segun metadatos del repo) |
 | Fecha de ultima actualizacion | 2026-10-19 (segun metadatos del repo) |
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Almacenamiento: 5,3 GB de descarga, mas el espacio temporal necesario para descomprimir o convertir formatos.
 - Opciones de despliegue: no especificadas. Si el componente es un encoder de clasificacion, encajan ONNX Runtime, FastAPI con PyTorch o un servicio ligero en contenedor; si es generativo, vLLM o TGI. llama.cpp u Ollama solo serian viables si se publican pesos en GGUF, algo que no consta.
 - Latencia y throughput: no disponibles. Para un guardrail en linea, el requisito practico habitual es mantenerse por debajo de 50-100 ms por peticion, umbral que debe medirse localmente.
-- Acceso: la descarga requiere autenticacion y aceptacion de condiciones en HuggingFace; conviene prever la gestion del token en el pipeline de despliegue.
+- Acceso: la descarga requiere autenticacion y aceptacion de condiciones en Hugging Face; conviene prever la gestion del token en el pipeline de despliegue.
 
 ## Comparativa con modelos similares
 
@@ -83,7 +83,7 @@ No hay datos publicados de este repositorio (parametros, contexto, rendimiento) 
 
 | Modelo | Desarrollador | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tuuf-guardrail-demo-kit | OrhanOztas | no disponible | no disponible | `tuuf-evaluation-license` (personalizada) | Gated en HuggingFace |
+| tuuf-guardrail-demo-kit | OrhanOztas | no disponible | no disponible | `tuuf-evaluation-license` (personalizada) | Gated en Hugging Face |
 | Llama Guard 3 (8B) | Meta | 8.000 millones (aprox.) | 128.000 tokens (aprox., derivado de Llama 3.1) | Llama 3.1 Community License | Abierto con aceptacion de terminos |
 | ShieldGemma (2B / 9B / 27B) | Google | 2.000 / 9.000 / 27.000 millones | no disponible en la informacion consultada | Gemma Terms of Use | Abierto con aceptacion de terminos |
 | Prompt Guard (86M / 22M) | Meta | 86 y 22 millones | no disponible en la informacion consultada | Llama license | Abierto con aceptacion de terminos |
@@ -105,5 +105,5 @@ Las cifras de las alternativas son las publicas de sus respectivas familias y de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OrhanOztas/tuuf-guardrail-demo-kit
+- Repositorio en Hugging Face: https://huggingface.co/OrhanOztas/tuuf-guardrail-demo-kit
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

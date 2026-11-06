@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`akhilm0001/nasa-cmaps-rul-models` es un repositorio de modelos publicado en HuggingFace por el usuario akhilm0001 bajo licencia MIT. El nombre del repositorio sugiere que contiene modelos entrenados para la estimacion de vida util remanente (RUL, *Remaining Useful Life*) sobre el dataset NASA CMAPSS, un benchmark clasico de mantenimiento predictivo en turbinas y motores. Sin embargo, esta interpretacion procede unicamente del identificador del repositorio: la model card publicada no contiene descripcion, documentacion tecnica ni instrucciones de uso, por lo que no puede confirmarse.
+`akhilm0001/nasa-cmaps-rul-models` es un repositorio de modelos publicado en Hugging Face por el usuario akhilm0001 bajo licencia MIT. El nombre del repositorio sugiere que contiene modelos entrenados para la estimacion de vida util remanente (RUL, *Remaining Useful Life*) sobre el dataset NASA CMAPSS, un benchmark clasico de mantenimiento predictivo en turbinas y motores. Sin embargo, esta interpretacion procede unicamente del identificador del repositorio: la model card publicada no contiene descripcion, documentacion tecnica ni instrucciones de uso, por lo que no puede confirmarse.
 
-El repositorio tiene un tamano de 0,2 GB, no declara pipeline de HuggingFace, no especifica idiomas y no registra descargas ni interacciones en el momento de la consulta. Fue creado y actualizado el 23 de octubre de 2026, con un intervalo de 12 minutos entre ambas fechas, lo que indica una publicacion reciente y sin curacion posterior.
+El repositorio tiene un tamano de 0,2 GB, no declara pipeline de Hugging Face, no especifica idiomas y no registra descargas ni interacciones en el momento de la consulta. Fue creado y actualizado el 23 de octubre de 2026, con un intervalo de 12 minutos entre ambas fechas, lo que indica una publicacion reciente y sin curacion posterior.
 
 Por su naturaleza probable (modelos tabulares o series temporales para mantenimiento predictivo), no se trata de un modelo de lenguaje: no hay evidencia de arquitectura transformer, parametros, ventana de contexto ni capacidades generativas. Su relevancia actual es, por tanto, limitada y condicionada a que el autor publique documentacion que permita reproducir y validar el contenido del repositorio.
 
@@ -71,7 +71,7 @@ No se dispone de informacion sobre alternativas comparables verificables dentro 
 | Longitud de contexto | no aplica / no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | publico en HuggingFace, sin documentacion | no disponible |
+| Disponibilidad | publico en Hugging Face, sin documentacion | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -86,5 +86,5 @@ No se dispone de informacion sobre alternativas comparables verificables dentro 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhilm0001/nasa-cmaps-rul-models
+- Modelo en Hugging Face: https://huggingface.co/akhilm0001/nasa-cmaps-rul-models
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

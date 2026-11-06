@@ -76,8 +76,8 @@ Nota: los datos de Llama y Mistral son de conocimiento general, no de la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/ibsophobia/Qwen3.8-27B-GGUF
-- Repositorio HuggingFace de la cuantizacion de Unsloth (referencia): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/ibsophobia/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de la cuantizacion de Unsloth (referencia): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Guia de ejecucion local en yottalabs.ai: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Documentacion de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Pagina del modelo en Unsloth: https://unsloth.ai/models/qwen3.8-27b

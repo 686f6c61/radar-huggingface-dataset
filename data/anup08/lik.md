@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `anup08/Lik` alojado en HuggingFace corresponde a un modelo identificado únicamente por su identificador y su licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, o documentación de uso. El autor es el usuario `anup08`, y el repositorio fue creado el 2 de septiembre de 2026, con una única actualización el mismo día. No se han registrado descargas ni interacciones relevantes (0 descargas, 1 like).
+El repositorio `anup08/Lik` alojado en Hugging Face corresponde a un modelo identificado únicamente por su identificador y su licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, o documentación de uso. El autor es el usuario `anup08`, y el repositorio fue creado el 2 de septiembre de 2026, con una única actualización el mismo día. No se han registrado descargas ni interacciones relevantes (0 descargas, 1 like).
 
 La búsqueda web realizada no ha encontrado ninguna referencia a este modelo en fuentes externas. Los resultados obtenidos corresponden a modelos de generación de imágenes para arte (SeaArt y PixAI) con nombres similares pero sin relación aparente. Por tanto, no es posible confirmar que `anup08/Lik` sea un modelo de lenguaje, un modelo de difusión, o cualquier otro tipo de sistema. Toda la información técnica que se detalla a continuación debe considerarse como no disponible, y se recomienda encarecidamente contactar con el autor o revisar el repositorio directamente antes de cualquier uso.
 
@@ -54,5 +54,5 @@ No disponible. Al no existir informacion tecnica sobre `anup08/Lik`, no es posib
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anup08/Lik
+- Repositorio Hugging Face: https://huggingface.co/anup08/Lik
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de codigo, demos) relacionados con este modelo.

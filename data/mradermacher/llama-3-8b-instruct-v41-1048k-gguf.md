@@ -70,7 +70,7 @@ No se dispone de datos comparativos fiables en la información proporcionada. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3-8B-Instruct-V41-1048k-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3-8B-Instruct-V41-1048k-GGUF
 - Modelo base (florentin-one/Llama-3-8B-Instruct-V41-1048k): https://huggingface.co/florentin-one/Llama-3-8B-Instruct-V41-1048k
 - Versión con quants imatrix: https://huggingface.co/mradermacher/Llama-3-8B-Instruct-V41-1048k-i1-GGUF
 - Página de descarga alternativa: https://hf.tst.eu/model#Llama-3-8B-Instruct-V41-1048k-GGUF

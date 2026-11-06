@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PlantPerturb-Small no es un modelo de lenguaje: es un banco de pruebas reproducible de datos pequeños (*small-data benchmark*) publicado en HuggingFace por el autor `aungkomyint`. Su objetivo es predecir la respuesta transcripcional de ecotipos de *Arabidopsis thaliana* frente a una sequía leve a partir de sus perfiles basales de expresión génica. El modelo finalmente seleccionado es una regresión ridge sobre componentes principales (PCA–ridge), implementada con scikit-learn, y se distribuye junto con el manuscrito, los scripts de preprocesado y las tablas de métricas.
+PlantPerturb-Small no es un modelo de lenguaje: es un banco de pruebas reproducible de datos pequeños (*small-data benchmark*) publicado en Hugging Face por el autor `aungkomyint`. Su objetivo es predecir la respuesta transcripcional de ecotipos de *Arabidopsis thaliana* frente a una sequía leve a partir de sus perfiles basales de expresión génica. El modelo finalmente seleccionado es una regresión ridge sobre componentes principales (PCA–ridge), implementada con scikit-learn, y se distribuye junto con el manuscrito, los scripts de preprocesado y las tablas de métricas.
 
 El problema que aborda es metodológico: establecer una línea base honesta y reproducible en un régimen de pocos datos, donde el sobreajuste y el cambio de distribución entre estudios son los riesgos dominantes. En la evaluación externa sobre el estudio E-MTAB-3279, los modelos aprendidos obtienen un error superior a la predicción trivial de "cambio cero", lo que evidencia un desplazamiento de distribución sustancial entre estudios y cuestiona la transferibilidad de la calibración.
 
@@ -20,7 +20,7 @@ Es relevante ahora porque aporta un caso de estudio transparente sobre evaluaci�
 | Idiomas soportados | no disponible (no es un modelo de lenguaje; las salidas son valores de expresion genica) |
 | Licencia | no disponible (la model card no especifica licencia) |
 | Formato de pesos | joblib (formato de serializacion de scikit-learn, coherente con la libreria declarada); el detalle exacto no se especifica en la model card |
-| Tamano del repositorio | 0.0 GB segun HuggingFace |
+| Tamano del repositorio | 0.0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ Segun el autor, PCA–ridge ofrece el mejor equilibrio entre metricas, mientras 
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: al tratarse de un modelo PCA–ridge de scikit-learn, no requiere GPU. El repositorio ocupa 0.0 GB segun HuggingFace.
+- Inferencia en CPU: al tratarse de un modelo PCA–ridge de scikit-learn, no requiere GPU. El repositorio ocupa 0.0 GB segun Hugging Face.
 - GPU recomendadas: no aplica. No se describe ningun requisito de aceleracion por hardware.
 - Compatibilidad con GPU de consumo: no aplica; no es necesario ni util para este modelo.
 - Memoria: no disponible. Depende del tamano de la matriz de expresion cargada (17.633 transcritos por ecotipo en el analisis publicado) y del numero de componentes PCA, dato no especificado.
@@ -83,7 +83,7 @@ No hay constancia de otros modelos o benchmarks comparables en la informacion pr
 
 | Metodo | Test MSE | Test MAE | Pearson | Spearman | Contexto de entrada | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|---|
-| PCA–ridge | 0.1302 | 0.2578 | 0.2518 | 0.2142 | 17.633 transcritos | no disponible | repositorio HuggingFace |
+| PCA–ridge | 0.1302 | 0.2578 | 0.2518 | 0.2142 | 17.633 transcritos | no disponible | repositorio Hugging Face |
 | PLS | 0.1300 | 0.2587 | 0.2429 | 0.2056 | 17.633 transcritos | no disponible | incluido como comparador en el repositorio |
 | Vecinos mas cercanos | 0.1413 | 0.2711 | 0.1939 | 0.1646 | 17.633 transcritos | no disponible | incluido como comparador en el repositorio |
 | Media de desarrollo | 0.1366 | 0.2666 | 0.2155 | 0.1705 | no aplica | no disponible | linea base trivial |
@@ -105,7 +105,7 @@ No hay constancia de otros modelos o benchmarks comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aungkomyint/PlantPerturb-Small
+- Modelo en Hugging Face: https://huggingface.co/aungkomyint/PlantPerturb-Small
 - Estudio primario E-MTAB-5009: https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-5009
 - Estudio externo E-MTAB-3279: https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-3279
 - Manuscrito (borrador) dentro del repositorio: `paper/PlantPerturb-Small-Manuscript-Draft.pdf`

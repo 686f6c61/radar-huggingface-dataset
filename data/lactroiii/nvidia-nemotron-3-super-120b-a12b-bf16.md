@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks detallados en la informacion dispon
 - VRAM estimada para inferencia: el modelo en BF16 ocupa aproximadamente 247 GB, por lo que requiere al menos 8× H100-80GB para ejecutarse completo en BF16.
 - GPU recomendadas: NVIDIA H100-80GB (mínimo 8 unidades) para la versión BF16. Para despliegues en una sola GPU, NVIDIA recomienda la versión NVFP4, que puede ejecutarse en un B200 o DGX Spark.
 - No cabe en GPUs de consumo: las GPUs consumer (RTX 4090, etc.) no disponen de suficiente VRAM para este modelo, ni siquiera en cuantizaciones agresivas.
-- Opciones de despliegue: compatible con el ecosistema transformers de HuggingFace, NVIDIA NIM (disponible en build.nvidia.com), y backends de servición compatibles con endpoints.
+- Opciones de despliegue: compatible con el ecosistema transformers de Hugging Face, NVIDIA NIM (disponible en build.nvidia.com), y backends de servición compatibles con endpoints.
 - Latencia y throughput: no disponible en la información proporcionada. La arquitectura MTP y la cuantización NVFP4 están diseñadas para reducir la latencia, pero no se han publicado cifras concretas.
 - Parámetros de inferencia recomendados: temperature=1.0 y top_p=0.95 para todas las tareas y backends de servición.
 
@@ -86,8 +86,8 @@ La familia Nemotron 3 se posiciona como una alternativa eficiente a modelos dens
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lactroiii/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
-- Versión oficial en HuggingFace (NVFP4): https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/lactroiii/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
+- Versión oficial en Hugging Face (NVFP4): https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
 - Página de investigación de Nemotron 3 Super: https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/
 - Página de la familia Nemotron 3: https://research.nvidia.com/labs/nemotron/Nemotron-3/
 - Informe técnico (PDF): https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf

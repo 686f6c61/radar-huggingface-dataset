@@ -100,8 +100,8 @@ La comparación con Pythia es la más directa en propósito (suite de escalado c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-3e20-2.5Bparams-18.6Btokens-seed42
-- Organización Marin Community en HuggingFace: https://huggingface.co/marin-community
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-3e20-2.5Bparams-18.6Btokens-seed42
+- Organización Marin Community en Hugging Face: https://huggingface.co/marin-community
 - Blog "Scaling Laws That Extrapolate 300× Past the Fit": https://openathena.ai/blog/delphi
 - Datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Receta de entrenamiento (completed_adamh.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/completed_adamh.py

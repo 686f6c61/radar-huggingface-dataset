@@ -104,7 +104,7 @@ No se dispone de información sobre modelos de otros desarrolladores comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/auRose94/Flint-40B-A2.5B-ninths-k63-e99-GGUF
+- Repositorio Hugging Face: https://huggingface.co/auRose94/Flint-40B-A2.5B-ninths-k63-e99-GGUF
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Contenedores extremos (k5, k3): https://huggingface.co/auRose94/Flint-40B-A2.5B-ninths-extreme-GGUF
 - Fork de llama.cpp (rama k9): https://github.com/auRose94/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ref-set-01` es un repositorio publicado en HuggingFace por el usuario `ucanneverevereverfindme` bajo licencia Apache 2.0. El nombre del repositorio sugiere un conjunto de referencia ("reference set"), y su tamano de 0,1 GB apunta a un artefacto de datos o de pesos muy pequeno, no a un modelo de lenguaje de gran escala. La model card publicada se limita a declarar la licencia, sin ningun contenido descriptivo adicional.
+`ref-set-01` es un repositorio publicado en Hugging Face por el usuario `ucanneverevereverfindme` bajo licencia Apache 2.0. El nombre del repositorio sugiere un conjunto de referencia ("reference set"), y su tamano de 0,1 GB apunta a un artefacto de datos o de pesos muy pequeno, no a un modelo de lenguaje de gran escala. La model card publicada se limita a declarar la licencia, sin ningun contenido descriptivo adicional.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades. El repositorio no tiene descargas ni likes, y su fecha de creacion (2026-11-05) y actualizacion son practicamente simultaneas, lo que sugiere una publicacion de prueba o un artefacto auxiliar sin documentacion asociada.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha se limita a recoger los metadatos verificables disponibles
 
 No se ha publicado informacion sobre la arquitectura del modelo: no se especifica si se trata de un transformer, un modelo MoE, una arquitectura hibrida o un SSM. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, etc.).
 
-El tamano del repositorio (0,1 GB) y la ausencia de pipeline declarado en HuggingFace son compatibles con un conjunto de datos de referencia, un artefacto de configuracion o unos pesos de juguete, pero esta interpretacion no puede confirmarse con la informacion disponible.
+El tamano del repositorio (0,1 GB) y la ausencia de pipeline declarado en Hugging Face son compatibles con un conjunto de datos de referencia, un artefacto de configuracion o unos pesos de juguete, pero esta interpretacion no puede confirmarse con la informacion disponible.
 
 ## Capacidades
 
@@ -39,10 +39,10 @@ El tamano del repositorio (0,1 GB) y la ausencia de pipeline declarado en Huggin
 
 No es posible proponer casos de uso concretos y realistas sin informacion sobre la naturaleza del artefacto. Los unicos escenarios plausibles, dada la evidencia disponible, son los siguientes:
 
-- Verificacion de licencia: el repositorio puede consultarse como ejemplo de publicacion con licencia Apache 2.0 en HuggingFace, util para comprobar el formato de metadatos YAML de una model card minima.
-- Prueba de flujo de publicacion: sirve para validar el proceso de subida de artefactos a HuggingFace (creacion, actualizacion y metadatos) en un entorno de integracion continua.
+- Verificacion de licencia: el repositorio puede consultarse como ejemplo de publicacion con licencia Apache 2.0 en Hugging Face, util para comprobar el formato de metadatos YAML de una model card minima.
+- Prueba de flujo de publicacion: sirve para validar el proceso de subida de artefactos a Hugging Face (creacion, actualizacion y metadatos) en un entorno de integracion continua.
 - Referencia de estructura de repositorio: puede emplearse para inspeccionar como se organiza un repositorio de 0,1 GB sin pipeline declarado, por ejemplo en tareas de auditoria de artefactos.
-- Base para experimentos de catalogacion: util para probar herramientas de indexacion o inventariado de repositorios de HuggingFace que deban manejar entradas con informacion incompleta.
+- Base para experimentos de catalogacion: util para probar herramientas de indexacion o inventariado de repositorios de Hugging Face que deban manejar entradas con informacion incompleta.
 - Documentacion de ausencia de datos: puede citarse como caso de estudio de model card sin contenido tecnico, en formacion sobre buenas practicas de publicacion.
 - No se recomienda su uso como modelo en produccion, atencion al cliente, generacion de codigo ni ninguna otra aplicacion de inferencia, al no existir evidencia de que contenga pesos utilizables.
 
@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ucanneverevereverfindme/ref-set-01
+- Repositorio en Hugging Face: https://huggingface.co/ucanneverevereverfindme/ref-set-01
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

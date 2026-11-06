@@ -6,7 +6,7 @@ El modelo `vanishingradient/safety-drift-qwen2.5-1.5b-roleplay_ultrachat` es un 
 
 La relevancia de esta publicacion no reside en su rendimiento, sino en su proposito aparente: el prefijo `safety-drift` y el sufijo `roleplay_ultrachat` sugieren que forma parte de una serie de adaptadores disenados para medir como el ajuste fino sobre datos benignos (aqui, datos de roleplay y de UltraChat) degrada la alineacion de seguridad del modelo base. Existe un repositorio hermano, `safety-drift-qwen2.5-1.5b-benign_alpaca`, que refuerza esta hipotesis. Es una advertencia: el adaptador podria reducir deliberadamente las barreras de seguridad del modelo original.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, hiperparametros, evaluacion) figuran como `[More Information Needed]`. El repositorio registra 0 descargas y 0 likes, y un tamano declarado de 0.0 GB. Cualquier dato sobre su comportamiento debe considerarse no verificado.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, hiperparametros, evaluacion) figuran como `[More Information Needed]`. El repositorio registra 0 descargas y 0 likes, y un tamano declarado de 0.0 GB. Cualquier dato sobre su comportamiento debe considerarse no verificado.
 
 ## Especificaciones tecnicas
 
@@ -71,11 +71,11 @@ Los datos de modelos alternativos proceden de sus respectivas model cards public
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| safety-drift-qwen2.5-1.5b-roleplay_ultrachat | Adaptador sobre base de 1,5B (rango no disponible) | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, requiere aceptar terminos |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | HuggingFace |
-| Gemma-2-2B-it | 2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace, requiere aceptar terminos |
+| safety-drift-qwen2.5-1.5b-roleplay_ultrachat | Adaptador sobre base de 1,5B (rango no disponible) | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, requiere aceptar terminos |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Hugging Face |
+| Gemma-2-2B-it | 2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face, requiere aceptar terminos |
 
 ## Limitaciones y advertencias
 

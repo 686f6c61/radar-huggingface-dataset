@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Long-WAM Nesting Doll Unclipped — Step 20000 es un checkpoint de evaluación en BF16 derivado de un fine-tune independiente sobre el modelo base Efficient-Large-Model/Long-WAM-YAM, un modelo de visión-lenguaje-acción (VLA) orientado a robótica. Lo publica el usuario dddddsds31341 en HuggingFace y corresponde al paso de optimizador 20000 de un entrenamiento de 30000 pasos, identificado internamente como `nesting-doll-unclipped-30k-20261103-020414` y realizado sobre el dataset SIP.
+Long-WAM Nesting Doll Unclipped — Step 20000 es un checkpoint de evaluación en BF16 derivado de un fine-tune independiente sobre el modelo base Efficient-Large-Model/Long-WAM-YAM, un modelo de visión-lenguaje-acción (VLA) orientado a robótica. Lo publica el usuario dddddsds31341 en Hugging Face y corresponde al paso de optimizador 20000 de un entrenamiento de 30000 pasos, identificado internamente como `nesting-doll-unclipped-30k-20261103-020414` y realizado sobre el dataset SIP.
 
 El modelo se enmarca en la familia Long-WAM (World-Action Model de contexto largo) y hereda la arquitectura y el pipeline de robótica del modelo base, pero el autor no documenta en la model card ni la arquitectura concreta, ni el número de parámetros, ni la longitud de contexto, ni los datos de entrenamiento. El repositorio ocupa 12.0 GB e incluye `model.pt` en lugar de safetensors, junto con el `config.yaml` resuelto, las estadísticas del dataset (`dataset_stats.json`), los requisitos de entorno y una instantánea del código de la familia de tareas.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Nesting Doll Unclipped — Step 20000 | no disponible | no disponible | no disponible | `model.pt` (BF16) | HuggingFace, 0 descargas |
-| Efficient-Large-Model/Long-WAM-YAM (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Long-WAM Nesting Doll Unclipped — Step 20000 | no disponible | no disponible | no disponible | `model.pt` (BF16) | Hugging Face, 0 descargas |
+| Efficient-Large-Model/Long-WAM-YAM (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros fine-tunes de la familia Long-WAM | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones del modelo base que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -80,10 +80,10 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base que
 - Riesgo de alucinación y sesgos: no evaluado ni documentado.
 - Formato `model.pt` en lugar de safetensors: requiere confiar en la procedencia del archivo y ejecutarlo con `torch.load`, con el riesgo de seguridad asociado a la deserialización de pickle.
 - Cero descargas y cero likes en el momento de la consulta: sin validación por parte de la comunidad.
-- Fecha de creación futura (2026-11-05) en los metadatos de HuggingFace, lo que conviene verificar antes de citar el artefacto.
+- Fecha de creación futura (2026-11-05) en los metadatos de Hugging Face, lo que conviene verificar antes de citar el artefacto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-Step-20000
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-Step-20000
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Paper, blog, repositorio o demo: no disponibles en la información proporcionada.

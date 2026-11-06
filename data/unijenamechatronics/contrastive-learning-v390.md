@@ -57,7 +57,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 - No se aportan evidencias de que el estudio descrito se haya llevado a cabo.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/unijenamechatronics/contrastive-learning-v390
+- Repositorio en Hugging Face: https://huggingface.co/unijenamechatronics/contrastive-learning-v390
 - Encuesta sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Visualizacion y comprension del aprendizaje contrastivo (arXiv): https://arxiv.org/html/2206.09753v3
 - Tutorial de aprendizaje contrastivo (DataCamp): https://www.datacamp.com/tutorial/contrastive-learning

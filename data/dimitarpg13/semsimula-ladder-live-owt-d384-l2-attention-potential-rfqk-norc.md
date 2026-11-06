@@ -77,11 +77,11 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K, HellaSwag ni de ningun
 
 | Modelo | Parámetros | Contexto | PPL OpenWebText (bloque 512) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Este modelo (XRB-F) | 77,2 M | 512 | 54,27 | CC BY 4.0 | Pesos PyTorch en HuggingFace, 64 descargas |
-| G3′ (`...-attention-potential-rfqk`) | 77,4 M | 512 | 52,90 | CC BY 4.0 (según familia) | Pesos PyTorch en HuggingFace |
-| G2 (`...-none`) | 76,8 M | 512 | 53,12 | CC BY 4.0 (según familia) | Pesos PyTorch en HuggingFace |
-| F3.1 (`...-none-norc`) | 76,6 M | 512 | 57,76 | CC BY 4.0 (según familia) | Pesos PyTorch en HuggingFace |
-| gpt2-matched (L=8) | 33,7 M | 512 | 49,81 | No disponible | Pesos PyTorch en HuggingFace |
+| Este modelo (XRB-F) | 77,2 M | 512 | 54,27 | CC BY 4.0 | Pesos PyTorch en Hugging Face, 64 descargas |
+| G3′ (`...-attention-potential-rfqk`) | 77,4 M | 512 | 52,90 | CC BY 4.0 (según familia) | Pesos PyTorch en Hugging Face |
+| G2 (`...-none`) | 76,8 M | 512 | 53,12 | CC BY 4.0 (según familia) | Pesos PyTorch en Hugging Face |
+| F3.1 (`...-none-norc`) | 76,6 M | 512 | 57,76 | CC BY 4.0 (según familia) | Pesos PyTorch en Hugging Face |
+| gpt2-matched (L=8) | 33,7 M | 512 | 49,81 | No disponible | Pesos PyTorch en Hugging Face |
 
 La comparación con GPT-2 solo está disponible en forma de ratio de perplejidad declarado por el autor frente al brazo `gpt2-matched` (referencia 1,000×), no como resultados de benchmarks estándar. No se dispone de datos de otros modelos externos de tamaño comparable en la información proporcionada.
 
@@ -101,7 +101,7 @@ La comparación con GPT-2 solo está disponible en forma de ratio de perplejidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk-norc
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk-norc
 - Modelo base conservativo F3.1 (sin el campo): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc
 - Brazo G3′ (campo de intercambio + camino de registros): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk
 - Brazo G2 (solo camino de registros): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flux-NSFW-uncensored es un adaptador LoRA publicado en HuggingFace por el usuario Spamspamspam277353 bajo el identificador `Spamspamspam277353/Flux-NSFW-uncensored`. Se trata de un ajuste fino del modelo de difusion texto-a-imagen FLUX.1-dev de Black Forest Labs, orientado a reducir las restricciones de censura del modelo base y a explorar limites de generacion de imagenes con contenido para adultos. El repositorio ocupa 0,7 GB, un tamano coherente con pesos de tipo adaptador (LoRA) y no con un modelo completo.
+Flux-NSFW-uncensored es un adaptador LoRA publicado en Hugging Face por el usuario Spamspamspam277353 bajo el identificador `Spamspamspam277353/Flux-NSFW-uncensored`. Se trata de un ajuste fino del modelo de difusion texto-a-imagen FLUX.1-dev de Black Forest Labs, orientado a reducir las restricciones de censura del modelo base y a explorar limites de generacion de imagenes con contenido para adultos. El repositorio ocupa 0,7 GB, un tamano coherente con pesos de tipo adaptador (LoRA) y no con un modelo completo.
 
 El modelo se etiqueta como `text-to-image`, con idioma declarado unicamente ingles (`en`) y licencia `creativeml-openrail-m`. La model card es muy breve, esta escrita parcialmente en coreano (comentarios del codigo de ejemplo) y no documenta composicion del dataset de entrenamiento, numero de pasos, hiperparametros ni resultados de evaluacion. El ejemplo de uso carga el adaptador con `pipe.load_lora_weights('Heartsync/Flux-NSFW-uncensored', weight_name='lora.safetensors')`, es decir, apunta a un repositorio distinto del que se esta describiendo, lo que constituye una inconsistencia relevante para cualquier integracion automatizada.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Tipo | Parametros | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Flux-NSFW-uncensored (este repositorio) | Adaptador LoRA sobre FLUX.1-dev | No disponible (repo de 0,7 GB) | 1024 x 1024 en el ejemplo | `creativeml-openrail-m` | Publico, 0 descargas, 0 likes |
-| FLUX.1-dev (modelo base) | Difusion texto-a-imagen completo | No disponible en la informacion proporcionada | No disponible | La del modelo base de Black Forest Labs | Publico en HuggingFace |
+| FLUX.1-dev (modelo base) | Difusion texto-a-imagen completo | No disponible en la informacion proporcionada | No disponible | La del modelo base de Black Forest Labs | Publico en Hugging Face |
 | Alternativas no censuradas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables sobre otros adaptadores o fine-tunes no censurados de FLUX.1-dev, ni de resultados comparativos de calidad, por lo que no es posible establecer una comparacion cuantitativa.
@@ -85,7 +85,7 @@ No se dispone de datos verificables sobre otros adaptadores o fine-tunes no cens
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Spamspamspam277353/Flux-NSFW-uncensored
+- Repositorio Hugging Face: https://huggingface.co/Spamspamspam277353/Flux-NSFW-uncensored
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Repositorio referenciado en el codigo de ejemplo: https://huggingface.co/Heartsync/Flux-NSFW-uncensored
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

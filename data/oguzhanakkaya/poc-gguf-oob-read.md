@@ -79,7 +79,7 @@ No aplicable: no existe una categoría de modelos comparable para un fichero PoC
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oguzhanakkaya/poc-gguf-oob-read
+- Repositorio Hugging Face: https://huggingface.co/oguzhanakkaya/poc-gguf-oob-read
 - Perfil del autor: https://huggingface.co/oguzhanakkaya
 - PoC relacionado (n_layer OOB): https://huggingface.co/oguzhanakkaya/poc-nlayer-oob-gguf
 - Repositorio de CVE-2026-7482 (análisis técnico): https://github.com/msuiche/gguf_cve2026_7482

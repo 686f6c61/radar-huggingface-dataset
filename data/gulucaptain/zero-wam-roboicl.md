@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zero-WAM fine-tuned on RoboICL es un checkpoint de ajuste fino (fine-tuning) del modelo base `robbyant-research/zero-wam-pretrain`, orientado a robótica manipulativa y publicado por el usuario `gulucaptain` en HuggingFace. El modelo se enmarca en la familia Zero-WAM, un sistema de política visomotora (vision-language-action, VLA) que combina contexto visual RGB, estado medido del robot y objetivos de acción en el marco del mundo, y que se entrena sobre el conjunto de datos RoboICL. El repositorio es privado y funciona como respaldo de checkpoints de entrenamiento, no como una release lista para producción.
+Zero-WAM fine-tuned on RoboICL es un checkpoint de ajuste fino (fine-tuning) del modelo base `robbyant-research/zero-wam-pretrain`, orientado a robótica manipulativa y publicado por el usuario `gulucaptain` en Hugging Face. El modelo se enmarca en la familia Zero-WAM, un sistema de política visomotora (vision-language-action, VLA) que combina contexto visual RGB, estado medido del robot y objetivos de acción en el marco del mundo, y que se entrena sobre el conjunto de datos RoboICL. El repositorio es privado y funciona como respaldo de checkpoints de entrenamiento, no como una release lista para producción.
 
 La relevancia de esta ficha es limitada pero concreta: documenta un experimento de ajuste fino con LoRA sobre un modelo de robótica, con detalles poco habituales de reproducibilidad (paso de optimizador, tamaño de lote global, número de pares de entrenamiento, hashes de datos). El checkpoint del epoch 6 se encuentra en el paso de optimizador 1.980 y no dispone de tasa de éxito en bucle cerrado medida, por lo que su utilidad práctica queda restringida a investigación y a la reproducción del pipeline de entrenamiento.
 
@@ -86,7 +86,7 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gulucaptain/zero-wam-roboicl
+- Modelo en Hugging Face: https://huggingface.co/gulucaptain/zero-wam-roboicl
 - Modelo base: https://huggingface.co/robbyant-research/zero-wam-pretrain
 - Código Zero-WAM: https://github.com/robbyant-research/Zero-WAM
 - Código The Imitator Game: https://github.com/imitator-game/The-Imitator-Game

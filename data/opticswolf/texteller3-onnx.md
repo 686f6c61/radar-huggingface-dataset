@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de OCR de f√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/opticsWolf/texteller3-onnx
+- Repositorio Hugging Face: https://huggingface.co/opticsWolf/texteller3-onnx
 - Upstream OleehyO/TexTeller: https://huggingface.co/OleehyO/TexTeller
 - Upstream Ji-Ha/TexTeller3: https://huggingface.co/Ji-Ha/TexTeller3
 - Variante cuantizada Ji-Ha/TexTeller3-ONNX-dynamic: https://huggingface.co/Ji-Ha/TexTeller3-ONNX-dynamic

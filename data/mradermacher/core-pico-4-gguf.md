@@ -29,7 +29,7 @@ Su relevancia es práctica más que arquitectónica: al situarse en el rango de 
 
 La informacion disponible no describe la arquitectura del modelo base mas alla de las etiquetas `transformers`, `text-generation` y `causal-lm`, que apuntan a un transformer decoder-only autorregresivo. No se detallan el numero de capas, la dimension oculta, el tipo de atencion (completa, lineal o hibrida), ni si emplea componentes de tipo MoE, SSM o atencion por ventanas. Tampoco se indica la longitud de contexto soportada.
 
-Respecto al entrenamiento, la model card del cuantizador no incluye informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la tokenizacion ni si hubo fases de RLHF, DPO o ajuste con instrucciones. El unico dato tecnico aportado por el repositorio es el proceso de cuantizacion: conversion desde pesos en formato HuggingFace (`convert_type: hf`) y generacion de cuantizaciones estaticas (no ponderadas con imatrix) en version 2 del cuantizador. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, modo de razonamiento, etc.).
+Respecto al entrenamiento, la model card del cuantizador no incluye informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la tokenizacion ni si hubo fases de RLHF, DPO o ajuste con instrucciones. El unico dato tecnico aportado por el repositorio es el proceso de cuantizacion: conversion desde pesos en formato Hugging Face (`convert_type: hf`) y generacion de cuantizaciones estaticas (no ponderadas con imatrix) en version 2 del cuantizador. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, modo de razonamiento, etc.).
 
 ## Capacidades
 

@@ -110,7 +110,7 @@ Invencion de personas (prosa de LLM):
 - GGUF Q8_0: 4,69 GB de fichero; cabe en GPUs consumer con 8 GB de VRAM.
 - GGUF Q4_K_M: 2,72 GB de fichero; cabe en GPUs consumer con 6 GB de VRAM o incluso en CPU.
 - GPU recomendadas: RTX 4090, RTX 3090, A100 o H100 para bf16; RTX 4060 Ti, RTX 3060 o superiores para las cuantizaciones GGUF.
-- Despliegue: transformers (bf16), llama.cpp y llama-cpp-python (GGUF Q8_0 y Q4_K_M). No se mencionan vLLM, TGI ni Ollama en la informacion disponible, aunque el tag `text-generation-inference` aparece en los metadatos de HuggingFace.
+- Despliegue: transformers (bf16), llama.cpp y llama-cpp-python (GGUF Q8_0 y Q4_K_M). No se mencionan vLLM, TGI ni Ollama en la informacion disponible, aunque el tag `text-generation-inference` aparece en los metadatos de Hugging Face.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -140,6 +140,6 @@ No se han identificado en la informacion disponible modelos comparables directam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v2.5
+- Hugging Face: https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v2.5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios o demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`audreybernard/poolformer-classification` es un repositorio de HuggingFace publicado por el usuario audreybernard que contiene una implementación propia de PoolFormer orientada a clasificación de imágenes en configuración "base". El propio autor lo describe como un punto de partida experimental: incluye `pipeline.py` con el modelo y un ejemplo ejecutable, `config.json` con la arquitectura generada, `training_args.json` con la receta por defecto y un `model.safetensors` que se presenta explícitamente como checkpoint de inicialización para pruebas de humo, no como pesos entrenados.
+`audreybernard/poolformer-classification` es un repositorio de Hugging Face publicado por el usuario audreybernard que contiene una implementación propia de PoolFormer orientada a clasificación de imágenes en configuración "base". El propio autor lo describe como un punto de partida experimental: incluye `pipeline.py` con el modelo y un ejemplo ejecutable, `config.json` con la arquitectura generada, `training_args.json` con la receta por defecto y un `model.safetensors` que se presenta explícitamente como checkpoint de inicialización para pruebas de humo, no como pesos entrenados.
 
 La arquitectura declarada es PoolFormer con atención dilatada, fusión con puertas (*gated fusion*), activación approx GELU y normalización BatchNorm. La receta por defecto usa AdamW con un esquema de *linear warmup*, pero la model card aclara que son valores de arranque del script y no evidencia de un entrenamiento completado. El repositorio no reclama ninguna puntuación de benchmark.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada y de carácter metodológico: se trata de mater
 | Receta por defecto | AdamW con *linear warmup* (valores de arranque, no resultados de un entrenamiento) |
 | Estado del checkpoint | Inicialización sin entrenar; el autor indica que no es un checkpoint validado con benchmarks |
 | Archivos del repositorio | `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` |
-| Tamaño del repositorio | 0,0 GB (según los metadatos de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-09-20 / 2026-09-20 |
 
@@ -72,10 +72,10 @@ No se dispone de datos verificados en la información proporcionada para constru
 
 | Modelo | Tipo | Parámetros | Pesos entrenados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| audreybernard/poolformer-classification | PoolFormer personalizado, escala base | 33.088 (según safetensors) | No (inicialización) | MIT | HuggingFace |
+| audreybernard/poolformer-classification | PoolFormer personalizado, escala base | 33.088 (según safetensors) | No (inicialización) | MIT | Hugging Face |
 | PoolFormer original (familia S/M) | PoolFormer | No disponible en la información proporcionada | Sí | No disponible en la información proporcionada | Repositorio oficial de los autores |
-| DeiT (familia base) | Vision transformer | No disponible en la información proporcionada | Sí | No disponible en la información proporcionada | HuggingFace Transformers |
-| ConvNeXt (familia base) | CNN moderna | No disponible en la información proporcionada | Sí | No disponible en la información proporcionada | HuggingFace Transformers |
+| DeiT (familia base) | Vision transformer | No disponible en la información proporcionada | Sí | No disponible en la información proporcionada | Hugging Face Transformers |
+| ConvNeXt (familia base) | CNN moderna | No disponible en la información proporcionada | Sí | No disponible en la información proporcionada | Hugging Face Transformers |
 
 Nota: los valores de los modelos alternativos no forman parte de la información proporcionada y no se completan para no introducir datos no verificados. La comparación de rendimiento con este repositorio carece de sentido mientras no exista un checkpoint entrenado.
 
@@ -95,7 +95,7 @@ Nota: los valores de los modelos alternativos no forman parte de la información
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/audreybernard/poolformer-classification
+- Repositorio en Hugging Face: https://huggingface.co/audreybernard/poolformer-classification
 - Archivo principal de implementación: `pipeline.py` (incluido en el repositorio, con bloque `__main__` de ejemplo)
 - Configuración de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de experimento por defecto: `training_args.json` (incluido en el repositorio)

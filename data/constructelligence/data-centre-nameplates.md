@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparativo publicados por el autor para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/constructelligence/data-centre-nameplates
+- Modelo en Hugging Face: https://huggingface.co/constructelligence/data-centre-nameplates
 - Demo en Spaces: https://huggingface.co/spaces/constructelligence/data-centre-nameplates
 - Tesseract.js: https://github.com/naptha/tesseract.js

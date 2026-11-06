@@ -22,7 +22,7 @@ Con 278.054.414 parametros, se situa en la categoria de modelos encoder de taman
 | Formato de pesos | safetensors |
 | Tarea | Clasificacion de texto multietiqueta (14 topicos) |
 | Tamano del repositorio | 1,1 GB |
-| Fecha de publicacion | 15 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 15 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -67,7 +67,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 - VRAM estimada en int8: aproximadamente 0,28 GB de pesos (requiere cuantizacion posterior, no incluida en el repositorio).
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM; una NVIDIA T4, RTX 3060 o superior es mas que suficiente. Modelos como A100 o H100 estan sobredimensionados para este encoder y solo tendrian sentido con lotes muy grandes.
 - Compatibilidad con GPU de consumo: si, cabe sin problemas en cualquier GPU de gama de consumo reciente e incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: HuggingFace Transformers, ONNX Runtime o TorchServe para servir el encoder. Las soluciones orientadas a modelos generativos (vLLM, TGI) y los runners de GGUF (llama.cpp, Ollama) no estan disenados para encoders XLM-RoBERTa y no constituyen una via estandar de despliegue.
+- Opciones de despliegue: Hugging Face Transformers, ONNX Runtime o TorchServe para servir el encoder. Las soluciones orientadas a modelos generativos (vLLM, TGI) y los runners de GGUF (llama.cpp, Ollama) no estan disenados para encoders XLM-RoBERTa y no constituyen una via estandar de despliegue.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se dispone de otros clasificadores de topicos en kinyarwanda publicados en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DavidPontientKayumba/afroxlmr-kinnews-topic-classifier
+- Hugging Face: https://huggingface.co/DavidPontientKayumba/afroxlmr-kinnews-topic-classifier
 - Modelo base: https://huggingface.co/Davlan/afro-xlmr-base
 - Articulo del corpus KINNEWS (Niyongabo et al., 2020): no disponible en la informacion proporcionada
 - Repositorio o demo adicional: no disponible en la informacion proporcionada

@@ -84,7 +84,7 @@ Las variantes de 3B y 7B de la misma familia permiten reducir requisitos de memo
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/cstr/madlad400-10b-mt-GGUF
+- Repositorio Hugging Face de la conversion: https://huggingface.co/cstr/madlad400-10b-mt-GGUF
 - Modelo base original: https://huggingface.co/google/madlad400-10b-mt
 - Paper MADLAD-400: https://arxiv.org/abs/2309.04662
 - Repositorio CrispASR: https://github.com/CrispStrobe/CrispASR

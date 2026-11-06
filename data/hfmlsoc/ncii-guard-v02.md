@@ -80,7 +80,7 @@ La mediana de recall en las 35 familias es de 0.729 con umbral 0.5 y 0.653 con 0
 - VRAM estimada para inferencia: con 268M parametros, en FP32 (~1.1 GB) cabe en cualquier GPU moderna; en FP16 (~0.5 GB) cabe incluso en GPUs integradas o tarjetas de 4 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, o incluso CPU sola para inferencia por lotes). Para despliegue concurrente, una T4 o A10 es suficiente.
 - En consumer GPU: si, cabe en practicamente todas las GPUs de consumo actuales.
-- Opciones de despliegue: compatible con `transformers` (pipeline o `AutoModelForSequenceClassification`), `text-embeddings-inference` (segun los tags de HuggingFace), y puede exportarse a ONNX o TensorRT para inferencia de baja latencia. Tambien es posible usar `vLLM` si se adapta, aunque no esta documentado.
+- Opciones de despliegue: compatible con `transformers` (pipeline o `AutoModelForSequenceClassification`), `text-embeddings-inference` (segun los tags de Hugging Face), y puede exportarse a ONNX o TensorRT para inferencia de baja latencia. Tambien es posible usar `vLLM` si se adapta, aunque no esta documentado.
 - Latencia y throughput estimados: no se proporcionan datos oficiales; para un modelo de este tamano, en una GPU moderna se esperan latencias por debajo de 5 ms por muestra en batch pequeno y throughput de cientos de muestras por segundo en batch grande.
 
 ## Comparativa con modelos similares
@@ -105,8 +105,8 @@ El modelo base `microsoft/harrier-oss-v1-270m` es el punto de comparacion natura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hfmlsoc/ncii-guard-v02
+- Modelo en Hugging Face: https://huggingface.co/hfmlsoc/ncii-guard-v02
 - Modelo base: https://huggingface.co/microsoft/harrier-oss-v1-270m
-- Informe de AI Forensics sobre NCII en HuggingFace Spaces: https://aiforensics.org/uploads/NCII%20HF%20Report%20by%20AIF.pdf
+- Informe de AI Forensics sobre NCII en Hugging Face Spaces: https://aiforensics.org/uploads/NCII%20HF%20Report%20by%20AIF.pdf
 - White paper de FOSI sobre NCII: https://fosi.org/wp-content/uploads/2025/06/abby_rochman_white_paper_ai_FOSI.pdf
 - ICML 2026 oral sobre desalineacion de la investigacion en deepfakes: https://icml.cc/virtual/2026/oral/71187

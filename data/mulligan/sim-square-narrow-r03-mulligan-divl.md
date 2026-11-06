@@ -28,8 +28,8 @@ Su relevancia es doble: por un lado sirve como referencia reproducible (cinco se
 | Paso de entrenamiento | 150001 |
 | Commit de Git del entrenamiento | `3053203fc3df` |
 | Tamaño del repositorio | 1,4 GB |
-| Fecha de creación (según HuggingFace) | 2026-09-29 |
-| Fecha de actualización (según HuggingFace) | 2026-09-29 |
+| Fecha de creación (según Hugging Face) | 2026-09-29 |
+| Fecha de actualización (según Hugging Face) | 2026-09-29 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -87,8 +87,8 @@ La dispersión entre semillas es baja: 1,71 puntos porcentuales entre el mejor (
 
 | Modelo | Tarea | Arquitectura | Parámetros | Contexto | Evaluación publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| sim-square-narrow-r03-mulligan-divl (este) | sim-square-narrow | Actor de difusión congelado + crítico DIVL distribucional | no disponible | no aplica | 7618-7755 éxitos sobre 8000 por semilla (5 semillas) | MIT | HuggingFace, 1,4 GB, 0 descargas |
-| sim-square-narrow-r03-mulligan-idql | sim-square-narrow | Actor de difusión + crítico de tipo IDQL (modelo padre) | no disponible | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
+| sim-square-narrow-r03-mulligan-divl (este) | sim-square-narrow | Actor de difusión congelado + crítico DIVL distribucional | no disponible | no aplica | 7618-7755 éxitos sobre 8000 por semilla (5 semillas) | MIT | Hugging Face, 1,4 GB, 0 descargas |
+| sim-square-narrow-r03-mulligan-idql | sim-square-narrow | Actor de difusión + crítico de tipo IDQL (modelo padre) | no disponible | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
 | Otros brazos de la ronda R3 del proyecto Mulligan | sim-square-narrow | no disponible | no disponible | no aplica | no disponible | no disponible en la información proporcionada | Parcialmente visibles en la organización mulligan; sin ficha detallada en la información disponible |
 | Agentes de RL offline genéricos (IQL, CQL, TD3+BC) | Manipulación robótica simulada | Actor-crítico determinista o estocástico, sin actor de difusión | no disponible | no aplica | no comparables directamente con esta campaña | Varía según implementación | Repositorios de investigación públicos |
 
@@ -109,11 +109,11 @@ No se dispone de datos suficientes para una comparación cuantitativa homogénea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-divl
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-idql
 - Proyecto Mulligan: https://mulligan.page
 - Evaluaciones en Policy Arena: https://arena.mulligan.page
-- Organización en HuggingFace: https://huggingface.co/mulligan
+- Organización en Hugging Face: https://huggingface.co/mulligan
 - Conjunto de datos de evaluación: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Datos de teleoperación inicial: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - DAgger ronda 1: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-mulligan

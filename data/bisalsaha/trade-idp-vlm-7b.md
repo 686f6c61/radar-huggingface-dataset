@@ -19,7 +19,7 @@ Su relevancia actual es limitada pero concreta: es un modelo de nicho vertical, 
 | Tipos de cuantizacion | No disponible. El entrenamiento del adaptador se realizo en 4 bits (Unsloth FastVision 4-bit), pero no se documentan cuantizaciones publicadas para inferencia |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | No disponible de forma explicita; se trata de un adaptador LoRA sobre Qwen2.5-VL-7B-Instruct, previsiblemente en safetensors segun el estandar de HuggingFace |
+| Formato de pesos | No disponible de forma explicita; se trata de un adaptador LoRA sobre Qwen2.5-VL-7B-Instruct, previsiblemente en safetensors segun el estandar de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trade-idp-vlm-7b (este modelo) | ~7.000 millones mas adaptadores LoRA | No disponible (base: 128.000 tokens) | Extraccion de documentos de comercio internacional y banca de Bangladesh | Apache 2.0 | Adaptador LoRA en HuggingFace, 0 descargas |
+| trade-idp-vlm-7b (este modelo) | ~7.000 millones mas adaptadores LoRA | No disponible (base: 128.000 tokens) | Extraccion de documentos de comercio internacional y banca de Bangladesh | Apache 2.0 | Adaptador LoRA en Hugging Face, 0 descargas |
 | Qwen2.5-VL-7B-Instruct | ~7.000 millones | 128.000 tokens | VLM generalista, document AI generico | Apache 2.0 | Modelo base ampliamente disponible y con soporte en multiples frameworks |
 | Qwen2.5-VL-3B-Instruct | ~3.000 millones | 128.000 tokens | VLM generalista de menor tamano | Apache 2.0 | Modelo base disponible, menor coste de inferencia |
-| InternVL2.5 (variantes de 8B) | ~8.000 millones | Variable segun configuracion | VLM generalista con buen rendimiento en document AI | Apache 2.0 / MIT segun variante | Amplia disponibilidad en HuggingFace |
+| InternVL2.5 (variantes de 8B) | ~8.000 millones | Variable segun configuracion | VLM generalista con buen rendimiento en document AI | Apache 2.0 / MIT segun variante | Amplia disponibilidad en Hugging Face |
 
 Nota: no se dispone de datos de benchmarks de trade-idp-vlm-7b que permitan una comparacion cuantitativa de rendimiento con estas alternativas; la comparacion se limita a caracteristicas tecnicas y licencia.
 
@@ -88,7 +88,7 @@ Nota: no se dispone de datos de benchmarks de trade-idp-vlm-7b que permitan una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bisalsaha/trade-idp-vlm-7b
+- Modelo en Hugging Face: https://huggingface.co/bisalsaha/trade-idp-vlm-7b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 
 Nota: la busqueda web realizada no ha devuelto resultados relevantes sobre este modelo. Los unicos enlaces encontrados corresponden a sitios de venta de vehiculos todoterreno (atvrom.ro y similares) y no guardan relacion con el modelo descrito, por lo que se han descartado.

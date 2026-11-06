@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo con otras alternativas en la i
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored-GGUF
+- Hugging Face (este modelo): https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Variante BF16 y compressed-tensors: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored
 - Variante MLX: https://huggingface.co/GCSA-AiLab/LFM3-VL-2B-Uncensored-MLX

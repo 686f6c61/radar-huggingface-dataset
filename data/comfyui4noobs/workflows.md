@@ -78,7 +78,7 @@ No disponible. No se han proporcionado repositorios comparables de workflows par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/COMFYUI4NOOBS/workflows
+- Repositorio en Hugging Face: https://huggingface.co/COMFYUI4NOOBS/workflows
 - Workflow `CREATE-REFMOD-WF.json`: https://huggingface.co/COMFYUI4NOOBS/workflows/blob/main/CREATE-REFMOD-WF.json
 - Tutorial en video (YouTube Short): https://www.youtube.com/shorts/iL-8mupLCd0
 - Extension ComfyUI-MiniMaxH3Mod: https://github.com/Luisacaotica/ComfyUI-MiniMaxH3Mod

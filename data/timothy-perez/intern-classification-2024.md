@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`timothy-perez/intern-classification-2024` es un repositorio de HuggingFace publicado por el usuario `timothy-perez` que contiene una implementación propia en PyTorch de una arquitectura tipo Blip orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card lo describe explícitamente como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos aprendidos.
+`timothy-perez/intern-classification-2024` es un repositorio de Hugging Face publicado por el usuario `timothy-perez` que contiene una implementación propia en PyTorch de una arquitectura tipo Blip orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card lo describe explícitamente como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos aprendidos.
 
 El dato más relevante para evaluar el repositorio es su tamaño: 49.600 parámetros totales según el archivo safetensors, lo que supone aproximadamente 49,6 K parámetros. Este número contrasta de forma notable con la etiqueta `large` que aparece en la configuración de arquitectura, una discrepancia que conviene tener presente y que apunta a que la nomenclatura de escala es nominal y no refleja el volumen real de pesos. El repositorio ocupa 0,0 GB y no registra descargas ni *likes* en el momento de la consulta.
 
@@ -102,7 +102,7 @@ Si el objetivo es seleccionar un modelo de clasificación multimodal para produc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/timothy-perez/intern-classification-2024
+- Repositorio en Hugging Face: https://huggingface.co/timothy-perez/intern-classification-2024
 - Paper de referencia de la arquitectura Blip: no disponible en la informacion proporcionada.
 - Blog o anuncio del autor: no disponible en la informacion proporcionada.
 - Repositorio de codigo adicional: no disponible en la informacion proporcionada.

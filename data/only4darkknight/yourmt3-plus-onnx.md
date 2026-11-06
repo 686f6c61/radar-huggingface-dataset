@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YourMT3-plus-onnx es una conversión al formato ONNX del modelo YourMT3+, un sistema de transcripción musical automática (AMT, *Automatic Music Transcription*) orientado a la transcripción multi-instrumento y multi-pista. El repositorio, publicado por el usuario ONLY4DarkKnight en HuggingFace, no incluye una model card descriptiva más allá de la declaración de licencia Apache 2.0, por lo que la mayor parte de la información técnica sobre el modelo subyacente no está disponible en la fuente proporcionada.
+YourMT3-plus-onnx es una conversión al formato ONNX del modelo YourMT3+, un sistema de transcripción musical automática (AMT, *Automatic Music Transcription*) orientado a la transcripción multi-instrumento y multi-pista. El repositorio, publicado por el usuario ONLY4DarkKnight en Hugging Face, no incluye una model card descriptiva más allá de la declaración de licencia Apache 2.0, por lo que la mayor parte de la información técnica sobre el modelo subyacente no está disponible en la fuente proporcionada.
 
 El modelo original YourMT3+ es un trabajo de investigación académica (proyecto YourMT3) que aborda la transcripción de audio musical a eventos simbólicos tipo MIDI, cubriendo múltiples instrumentos y fuentes simultáneas. Esta variante ONNX tiene como objetivo facilitar el despliegue en entornos de inferencia sin dependencia de PyTorch, lo que resulta relevante para integraciones en producción, aplicaciones de escritorio o pipelines ligeros.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Formato | Licencia | Contexto / entrada | Disponibilidad |
 |---|---|---|---|---|---|
-| YourMT3-plus-onnx (este) | Transcripción musical (AMT) | ONNX | Apache 2.0 | no disponible | HuggingFace (0 descargas) |
+| YourMT3-plus-onnx (este) | Transcripción musical (AMT) | ONNX | Apache 2.0 | no disponible | Hugging Face (0 descargas) |
 | YourMT3+ (original) | Transcripción musical (AMT) | PyTorch (presumible) | no disponible en esta fuente | no disponible | Proyecto de investigación |
 | Basic Pitch (Spotify) | Transcripción musical (AMT) | TensorFlow/ONNX | Apache 2.0 (según proyecto original) | no disponible | Open source |
 | MT3 (Google) | Transcripción musical (AMT) | TensorFlow | no disponible en esta fuente | no disponible | Investigación |
@@ -82,7 +82,7 @@ Nota: los datos de los modelos comparativos provienen de conocimiento general de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ONLY4DarkKnight/YourMT3-plus-onnx
+- Hugging Face: https://huggingface.co/ONLY4DarkKnight/YourMT3-plus-onnx
 - Proyecto YourMT3 (original): no disponible en la fuente proporcionada
 - Paper de YourMT3+: no disponible en la fuente proporcionada
 - Repositorio de código: no disponible en la fuente proporcionada

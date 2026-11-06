@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-pipi-krea2-02-unet es un checkpoint de tipo UNET para edición de imagen y generación texto-a-imagen, publicado por RunningHubAI a partir de un ajuste fino (finetune) del modelo base Krea2. El autor original del ajuste es el usuario de RunningHub identificado como @皮神 y la distribución en HuggingFace corre a cargo de la plataforma RunningHub, que publica el modelo "on behalf of the author". No es un modelo de lenguaje: no genera texto ni razona sobre instrucciones en lenguaje natural, sino que actúa como componente de difusión dentro de un pipeline de imagen que se ejecuta en ComfyUI.
+rh-pipi-krea2-02-unet es un checkpoint de tipo UNET para edición de imagen y generación texto-a-imagen, publicado por RunningHubAI a partir de un ajuste fino (finetune) del modelo base Krea2. El autor original del ajuste es el usuario de RunningHub identificado como @皮神 y la distribución en Hugging Face corre a cargo de la plataforma RunningHub, que publica el modelo "on behalf of the author". No es un modelo de lenguaje: no genera texto ni razona sobre instrucciones en lenguaje natural, sino que actúa como componente de difusión dentro de un pipeline de imagen que se ejecuta en ComfyUI.
 
 El repositorio ocupa 13,1 GB e incluye un único fichero de pesos, `pipi-krea02.safetensors`, de 12.533 MiB. La model card no documenta arquitectura base, número de parámetros, datos de entrenamiento ni resultados de evaluación, y tampoco declara una licencia concreta: se limita a indicar que se debe seguir la licencia del proyecto original o de la fuente upstream. El modelo usa la palabra de activación (trigger word) `pipik2` y está pensado para flujos de edición de imagen, incluyendo cambio de vestuario, edición de imagen única y "lavado" de imágenes con inferencia inversa de prompt.
 
@@ -26,7 +26,7 @@ Su relevancia es práctica y acotada: se trata de un ajuste fino especializado q
 | Pipeline declarado | image-text-to-image |
 | Plataformas compatibles | ComfyUI, RunningHub, Hugging Face |
 | Tamaño del repositorio | 13,1 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha declarada de creación | 2026-09-29 |
 
 ## Arquitectura y entrenamiento
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-pipi-krea2-02-unet | UNET de edición de imagen, finetune de Krea2 | no disponible | no aplica | no disponible | HuggingFace (13,1 GB), RunningHub |
-| rh-krea2-unet | UNET de imagen, finetune de Krea2 | no disponible | no aplica | no disponible | HuggingFace |
-| rh-pipi-krea2-emotion-unet | UNET de edición de imagen, finetune de Krea2 orientado a emoción | no disponible | no aplica | no disponible | HuggingFace |
+| rh-pipi-krea2-02-unet | UNET de edición de imagen, finetune de Krea2 | no disponible | no aplica | no disponible | Hugging Face (13,1 GB), RunningHub |
+| rh-krea2-unet | UNET de imagen, finetune de Krea2 | no disponible | no aplica | no disponible | Hugging Face |
+| rh-pipi-krea2-emotion-unet | UNET de edición de imagen, finetune de Krea2 orientado a emoción | no disponible | no aplica | no disponible | Hugging Face |
 | krea2 (modelo base) | Modelo de generación de imagen | no disponible | no aplica | no disponible en la información proporcionada | Referenciado como origen del finetune |
 
 No se dispone de datos de rendimiento, parámetros ni licencia de los modelos comparados, por lo que la comparación se limita a la categoría y a la procedencia. No hay información suficiente para comparar con alternativas de otros autores.
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento, parámetros ni licencia de los modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-pipi-krea2-02-unet
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-pipi-krea2-02-unet
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2085873723076333570
 - Página del autor: https://www.runninghub.cn/user-center/1860932065674887170
 - RunningHub (sitio internacional): https://www.runninghub.ai
@@ -118,6 +118,6 @@ No se dispone de datos de rendimiento, parámetros ni licencia de los modelos co
 - Workflow krea2 texto a imagen (sitio internacional): https://www.runninghub.ai/zh-cn/post/2070539933625962498
 - Workflow krea2 de limpieza de imagen con inferencia inversa (sitio internacional): https://www.runninghub.ai/zh-cn/post/2071363127198965761
 - Herramienta de etiquetado y entrenamiento citada por el autor: zhaotutu.xyz
-- Modelo relacionado en HuggingFace: https://huggingface.co/RunningHubAI/rh-krea2-unet
-- Modelo relacionado en HuggingFace: https://huggingface.co/RunningHubAI/rh-pipi-krea2-emotion-unet
+- Modelo relacionado en Hugging Face: https://huggingface.co/RunningHubAI/rh-krea2-unet
+- Modelo relacionado en Hugging Face: https://huggingface.co/RunningHubAI/rh-pipi-krea2-emotion-unet
 - Plugin de ComfyUI de RunningHub para APIs compatibles con OpenAI: https://github.com/HM-RunningHub/ComfyUI_RH_LLM_API

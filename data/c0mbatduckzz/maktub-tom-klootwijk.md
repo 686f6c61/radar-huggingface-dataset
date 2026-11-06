@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maktub es un modelo simbólico determinista publicado por el usuario c0mbatduckzz en HuggingFace, atribuido en su model card a Tom Klootwijk como autor del paradigma. No es una red neuronal: se distribuye como código Python personalizado (un kernel de referencia) que implementa una máquina de estados con reescritura de reglas, donde cada transición produce un estado sucesor y una nueva descripción del operador que gobernará la transición siguiente. El repositorio ocupa 0.0 GB y contiene el kernel, configuración, ejemplos ejecutables, tests y material de procedencia.
+Maktub es un modelo simbólico determinista publicado por el usuario c0mbatduckzz en Hugging Face, atribuido en su model card a Tom Klootwijk como autor del paradigma. No es una red neuronal: se distribuye como código Python personalizado (un kernel de referencia) que implementa una máquina de estados con reescritura de reglas, donde cada transición produce un estado sucesor y una nueva descripción del operador que gobernará la transición siguiente. El repositorio ocupa 0.0 GB y contiene el kernel, configuración, ejemplos ejecutables, tests y material de procedencia.
 
 El núcleo operativo es un par de ecuaciones acopladas: el estado se actualiza mediante `Act(x_n, d_n, e_n)` y la descripción de la regla mediante `Rewrite(x_n, d_n, e_n)`, leyendo ambas la misma configuración pre-transición. El perfil por defecto, denominado "one-bit mirror", reduce el sistema a `x_n = d_n = b_n ∈ {0,1}` con ambas salidas iguales a `1 - b_n`. Un perfil opcional de "frontera adaptativa" amplía el estado a un diccionario con umbral y tasa de aprendizaje, aplicando `τ' = τ + λ(e - τ)`.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Maktub (c0mbatduckzz) | Máquina de estados simbólica en Python | no disponible (sin pesos) | no aplica | Propietaria, sin concesión | HuggingFace, 27 descargas |
-| Alternativas neuronales de tamaño pequeño (p. ej. modelos de menos de 1B parámetros) | Transformer | Cientos de millones | Miles de tokens | Variable (a menudo permisiva) | HuggingFace |
+| Maktub (c0mbatduckzz) | Máquina de estados simbólica en Python | no disponible (sin pesos) | no aplica | Propietaria, sin concesión | Hugging Face, 27 descargas |
+| Alternativas neuronales de tamaño pequeño (p. ej. modelos de menos de 1B parámetros) | Transformer | Cientos de millones | Miles de tokens | Variable (a menudo permisiva) | Hugging Face |
 | Frameworks de máquinas de estados (p. ej. librerías de autómatas en Python) | Simbólico | no aplica | no aplica | Habitualmente open source | PyPI, GitHub |
 
 No se dispone de información sobre modelos simbólicos comparables directos con auto-reescritura de reglas y procedencia SHA-256 en la información proporcionada; la comparación con LLM resulta de categorías distintas y no es equivalente en parámetros, contexto ni rendimiento.
@@ -86,7 +86,7 @@ No se dispone de información sobre modelos simbólicos comparables directos con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c0mbatduckzz/Maktub-Tom-Klootwijk
+- Modelo en Hugging Face: https://huggingface.co/c0mbatduckzz/Maktub-Tom-Klootwijk
 - Repositorio clonable: https://huggingface.co/c0mbatduckzz/Maktub-Tom-Klootwijk (git clone)
 - Aviso de propiedad y reserva de derechos: `PROPRIETARY_NOTICE.txt` en el repositorio
 - Contexto conceptual: `docs/context.md` en el repositorio

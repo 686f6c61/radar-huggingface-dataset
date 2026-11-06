@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Schneiderhep/beit-retrieval-weights` es un repositorio de código y pesos de inicialización para una implementación propia de arquitectura BEiT orientada a tareas de recuperación (retrieval) multimodal. Lo publica el usuario Schneiderhep en HuggingFace bajo licencia MIT. No se trata de un modelo entrenado ni de una release con resultados de benchmarks: la model card lo describe explícitamente como un punto de partida reproducible para experimentación, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`Schneiderhep/beit-retrieval-weights` es un repositorio de código y pesos de inicialización para una implementación propia de arquitectura BEiT orientada a tareas de recuperación (retrieval) multimodal. Lo publica el usuario Schneiderhep en Hugging Face bajo licencia MIT. No se trata de un modelo entrenado ni de una release con resultados de benchmarks: la model card lo describe explícitamente como un punto de partida reproducible para experimentación, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el fichero `run.py` con la implementación del modelo y un punto de entrada ejecutable, `config.json` con los parámetros de arquitectura generados, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint de inicialización. La arquitectura declarada es BEiT en variante "small", con atención de tipo grouped query, fusión por cross-attention, activación swish y normalización InstanceNorm.
 
@@ -42,7 +42,7 @@ No hay evidencia de entrenamiento completado. La model card indica de forma expl
 - Base para experimentos de retrieval multimodal: el esqueleto BEiT con cross-attention sirve para montar un pipeline de recuperación y evaluar la viabilidad de la arquitectura sobre un dataset propio.
 - Reproducción de baselines: al incluir `training_args.json` con la receta por defecto, permite fijar una configuración de referencia y comparar contra ella variantes con el mismo presupuesto de ajuste y las mismas semillas.
 - Docencia y estudio de arquitecturas BEiT: el código es legible y de tamaño reducido (49.600 parámetros), lo que facilita su uso como material didáctico para entender grouped query attention y cross-attention en un contexto de retrieval.
-- Prototipado rápido de adaptadores de carga: sirve para desarrollar y probar el adaptador explícito necesario para integrar esta implementación con APIs genéricas de HuggingFace.
+- Prototipado rápido de adaptadores de carga: sirve para desarrollar y probar el adaptador explícito necesario para integrar esta implementación con APIs genéricas de Hugging Face.
 - Evaluación metodológica: la model card propone Flickr30k como primer dataset de evaluación, con métrica reportada sobre al menos tres semillas y un baseline de capacidad equivalente, lo que convierte al repo en una plantilla para diseñar evaluaciones rigurosas.
 
 ## Benchmarks y rendimiento
@@ -73,11 +73,11 @@ La comparación con BEiT-base y CLIP es únicamente orientativa por categoría (
 - No se ha auditado robustez, equidad ni transferencia de dominio.
 - No hay información sobre sesgos, idiomas soportados ni comportamiento multilingüe.
 - La licencia MIT permite uso comercial del código y los pesos, pero la model card advierte de que deben revisarse por separado los términos de los datasets externos que se utilicen con el repositorio.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace no funcionarán sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face no funcionarán sin un adaptador explícito.
 - No hay benchmarks, ni métricas de latencia, ni guía de cuantización; cualquier cifra de rendimiento en producción deberá medirse por el usuario.
 - El tamaño del repositorio es de 0,0 GB y las descargas registradas son 0, lo que refleja que no hay validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Schneiderhep/beit-retrieval-weights
+- Hugging Face: https://huggingface.co/Schneiderhep/beit-retrieval-weights
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -66,7 +66,7 @@ No disponible. Este artefacto no es un modelo final comparable con otros VLM com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-capmix-balanced-step5
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-capmix-balanced-step5
 - Continuacion del proyecto (paso 100): https://huggingface.co/Saraswathy/vlm-mix-resume-visual-reasoning-expert-step100
 - Pagina personal de la autora: https://saraamjith.com/saraamjith.html
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

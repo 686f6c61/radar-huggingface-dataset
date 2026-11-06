@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beverage SmolVLA es una política de control robótico (vision-language-action, VLA) obtenida por ajuste fino supervisado del VLM SmolVLM2-500M-Video-Instruct de HuggingFaceTB. La desarrolla el usuario 2chan y está publicada en HuggingFace bajo la librería LeRobot. El modelo resuelve una tarea concreta: generar acciones de 12 dimensiones para un robot bimanual SO-101 en tareas de manipulación de bebidas (remover, verter agua, verter polvo de té verde latte y verter café). No es un modelo de lenguaje general, sino un policy que mapea observaciones multimodales (tres cámaras y estado del robot) a secuencias de acciones.
+Beverage SmolVLA es una política de control robótico (vision-language-action, VLA) obtenida por ajuste fino supervisado del VLM SmolVLM2-500M-Video-Instruct de HuggingFaceTB. La desarrolla el usuario 2chan y está publicada en Hugging Face bajo la librería LeRobot. El modelo resuelve una tarea concreta: generar acciones de 12 dimensiones para un robot bimanual SO-101 en tareas de manipulación de bebidas (remover, verter agua, verter polvo de té verde latte y verter café). No es un modelo de lenguaje general, sino un policy que mapea observaciones multimodales (tres cámaras y estado del robot) a secuencias de acciones.
 
 La relevancia es acotada: se trata de un checkpoint de investigación con 450 millones de parámetros, entrenado sobre un conjunto de demostraciones propio, sin datos publicados de éxito físico en robot. El checkpoint corresponde al paso 25.000 de la ejecución `20261104_034524_031275` y reporta una pérdida de validación de flow-matching de 0,0582, métrica offline que no equivale a tasa de éxito real. El repositorio ocupa 0,9 GB e incluye pesos, configuración y procesadores de normalización.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Beverage SmolVLA (este) | 450.046.176 | no disponible | VLA bimanual SO-101, 4 tareas de bebidas | no disponible | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | no disponible en la información | no disponible | VLA base SmolVLA de LeRobot | no disponible | HuggingFace (referenciado por el autor) |
-| HuggingFaceTB/SmolVLM2-500M-Video-Instruct | ~500 M (modelo base VLM) | no disponible | VLM general imagen/vídeo-texto | no disponible | HuggingFace |
+| Beverage SmolVLA (este) | 450.046.176 | no disponible | VLA bimanual SO-101, 4 tareas de bebidas | no disponible | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | no disponible en la información | no disponible | VLA base SmolVLA de LeRobot | no disponible | Hugging Face (referenciado por el autor) |
+| HuggingFaceTB/SmolVLM2-500M-Video-Instruct | ~500 M (modelo base VLM) | no disponible | VLM general imagen/vídeo-texto | no disponible | Hugging Face |
 
 La comparación con `smolvla_base` es relevante porque el autor indica que este checkpoint no se inicializó desde esos pesos, lo que lo convierte en una política entrenada desde el VLM congelado. No se dispone de datos de rendimiento comparables entre estos modelos.
 
@@ -85,6 +85,6 @@ La comparación con `smolvla_base` es relevante porque el autor indica que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2chan/beverage-smolvla-20261104-best
+- Modelo en Hugging Face: https://huggingface.co/2chan/beverage-smolvla-20261104-best
 - Checkpoint "last" de la misma ejecución: https://huggingface.co/2chan/beverage-smolvla-20261104-last
 - Modelo base VLM: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct

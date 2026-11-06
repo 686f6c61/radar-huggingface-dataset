@@ -4,7 +4,7 @@
 
 Moxie Multimedia Suite es un conjunto de modelos de generacion de video orientado a ComfyUI, publicado por el usuario turtle89431 bajo el identificador `turtle89431/Moxie-Multimedia`. Se presenta como una solucion de generacion de video guiada por linea de tiempo (timeline-driven), en la que el usuario organiza tareas, referencias, audio y subtitulos sobre una pista multiple y lanza la renderizacion con el conjunto de modelos Moxie incluido. No es un unico modelo, sino un paquete que empaqueta un modelo de difusion, un codificador de texto, un VAE de video, un VAE de audio, un LoRA turbo y un VAE de previsualizacion ligero.
 
-El paquete se distribuye como un repositorio de HuggingFace de 70,7 GB que, segun la model card, incluye todos los ficheros de pesos necesarios dentro del propio repositorio, de modo que clonarlo en la carpeta `custom_nodes` de ComfyUI es suficiente para su funcionamiento. El autor no publica ficha de parametros, licencia, idiomas soportados ni resultados de benchmarks en la informacion disponible, por lo que buena parte de sus caracteristicas tecnicas no pueden verificarse a partir de los datos proporcionados.
+El paquete se distribuye como un repositorio de Hugging Face de 70,7 GB que, segun la model card, incluye todos los ficheros de pesos necesarios dentro del propio repositorio, de modo que clonarlo en la carpeta `custom_nodes` de ComfyUI es suficiente para su funcionamiento. El autor no publica ficha de parametros, licencia, idiomas soportados ni resultados de benchmarks en la informacion disponible, por lo que buena parte de sus caracteristicas tecnicas no pueden verificarse a partir de los datos proporcionados.
 
 La relevancia del proyecto radica en su enfoque de edicion multipista con continuidad entre segmentos, soporte de audio y subtitulos integrados, y el uso de un LoRA turbo (`MM3step.safetensors`) aplicado por defecto que sugiere inferencia en pocos pasos. No obstante, la ausencia de licencia explicita, de benchmarks y de documentacion tecnica detallada limita seriamente su evaluacion rigurosa en entornos de produccion.
 
@@ -21,7 +21,7 @@ La relevancia del proyecto radica en su enfoque de edicion multipista con contin
 | Licencia | no disponible (no se especifica en la model card ni en los metadatos) |
 | Formato de pesos | safetensors (`Moxie-Multimedia.safetensors`, `MM-VL.safetensors`, `MM3step.safetensors`, `MM-preview.safetensors` y VAE de audio/video) |
 | Tamano del repositorio | 70,7 GB |
-| Pipeline de HuggingFace | no disponible (el campo `pipeline` no esta definido) |
+| Pipeline de Hugging Face | no disponible (el campo `pipeline` no esta definido) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ No se dispone de datos tecnicos verificables de Moxie Multimedia (parametros, co
 
 | Modelo | Parametros | Contexto / duracion | Licencia | Disponibilidad | Datos de Moxie |
 |---|---|---|---|---|---|
-| Moxie Multimedia | no disponible | no disponible | no disponible | HuggingFace + ComfyUI | - |
+| Moxie Multimedia | no disponible | no disponible | no disponible | Hugging Face + ComfyUI | - |
 | Alternativas de generacion de video open source | no comparables sin datos de Moxie | no comparables | no comparables | no comparables | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos tecnicos verificables de Moxie Multimedia (parametros, co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/turtle89431/Moxie-Multimedia
+- Repositorio en Hugging Face: https://huggingface.co/turtle89431/Moxie-Multimedia
 - DOI asociado: doi:10.57967/hf/10479
 - FFmpeg (dependencia externa requerida): https://ffmpeg.org/
 - ComfyUI (entorno de ejecucion y ComfyUI Manager): https://github.com/comfyanonymous/ComfyUI

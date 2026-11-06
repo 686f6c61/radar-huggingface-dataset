@@ -2,11 +2,11 @@
 
 ## Resumen
 
-OrionLM es un modelo de lenguaje publicado por el autor dusersad12 en HuggingFace bajo el identificador `dusersad12/OrionLM-CheckpointRepo`. Segun la model card, se trata de la "nueva release" de una serie de modelos de lenguaje abiertos, en la que se ha escalado el computo de post-entrenamiento y se ha rediseñado la etapa de aprendizaje por refuerzo (RL) con el objetivo de mejorar el razonamiento y la capacidad de uso de herramientas. El autor reporta una mejora en GPQA Diamond (pass@1) desde el 41 % de la version anterior hasta el 58 % en esta, acompanada de trazas de pensamiento mas largas (de 9K a 18K tokens por problema).
+OrionLM es un modelo de lenguaje publicado por el autor dusersad12 en Hugging Face bajo el identificador `dusersad12/OrionLM-CheckpointRepo`. Segun la model card, se trata de la "nueva release" de una serie de modelos de lenguaje abiertos, en la que se ha escalado el computo de post-entrenamiento y se ha rediseñado la etapa de aprendizaje por refuerzo (RL) con el objetivo de mejorar el razonamiento y la capacidad de uso de herramientas. El autor reporta una mejora en GPQA Diamond (pass@1) desde el 41 % de la version anterior hasta el 58 % en esta, acompanada de trazas de pensamiento mas largas (de 9K a 18K tokens por problema).
 
 El modelo se presenta con una interfaz de chat, soporte de system prompt, plantillas para subida de ficheros y para generacion aumentada con busqueda web, ademas de una variante denominada OrionLM-Small que comparte arquitectura y tokenizer con el modelo base. La model card menciona tambien una plataforma web y una API propias, aunque no se aportan detalles sobre el numero de parametros, la longitud de contexto ni el volumen de datos de entrenamiento.
 
-Existe una discrepancia notable entre los metadatos de HuggingFace y la model card: los tags del repositorio (`bert`, `feature-extraction`, `pytorch`) apuntan a un modelo tipo BERT para extraccion de caracteristicas, mientras que el contenido de la model card describe un modelo generativo conversacional con razonamiento y tool use. Ademas, el tamano del repositorio figura como 0.0 GB y el contador de descargas y likes es cero, por lo que no hay evidencia de pesos publicados ni de adopcion por parte de la comunidad.
+Existe una discrepancia notable entre los metadatos de Hugging Face y la model card: los tags del repositorio (`bert`, `feature-extraction`, `pytorch`) apuntan a un modelo tipo BERT para extraccion de caracteristicas, mientras que el contenido de la model card describe un modelo generativo conversacional con razonamiento y tool use. Ademas, el tamano del repositorio figura como 0.0 GB y el contador de descargas y likes es cero, por lo que no hay evidencia de pesos publicados ni de adopcion por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ Dato adicional reportado en el texto: en GPQA Diamond, el pass@1 pasa del 41 % (
 - VRAM estimada para inferencia: no disponible, al no conocerse el numero de parametros del modelo.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible; depende del tamano real, que no se ha publicado.
-- Opciones de despliegue: la model card no documenta soporte explicito de vLLM, llama.cpp, Ollama o TGI. Los tags indican `transformers` y `endpoints_compatible`, lo que sugiere compatibilidad con la libreria Transformers y con Inference Endpoints de HuggingFace. El repositorio figura con 0.0 GB, por lo que no hay pesos descargables que permitan verificar el despliegue local.
+- Opciones de despliegue: la model card no documenta soporte explicito de vLLM, llama.cpp, Ollama o TGI. Los tags indican `transformers` y `endpoints_compatible`, lo que sugiere compatibilidad con la libreria Transformers y con Inference Endpoints de Hugging Face. El repositorio figura con 0.0 GB, por lo que no hay pesos descargables que permitan verificar el despliegue local.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -101,11 +101,11 @@ La unica comparativa aportada por el autor es la tabla de benchmarks frente a At
 - La licencia apache-2.0 permite uso comercial y modificacion, siempre que se mantengan los avisos de copyright y licencia. Conviene verificar que el titular de los derechos sea efectivamente el autor del repositorio.
 - No se documentan sesgos conocidos, limitaciones idiomaticas ni comportamientos de seguridad mas alla de una puntuacion agregada en "Safety Evaluation" (0.717).
 - Al no poder confirmarse el pipeline real (`feature-extraction` frente a generacion), no es posible garantizar que el modelo funcione con las plantillas y recomendaciones (temperatura, system prompt) de la model card.
-- El modelo esta fechado en 2026-09-28 segun los metadatos de HuggingFace; conviene verificar la coherencia temporal del repositorio antes de integrarlo en cualquier flujo.
+- El modelo esta fechado en 2026-09-28 segun los metadatos de Hugging Face; conviene verificar la coherencia temporal del repositorio antes de integrarlo en cualquier flujo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/OrionLM-CheckpointRepo
+- Hugging Face: https://huggingface.co/dusersad12/OrionLM-CheckpointRepo
 - Repositorio de codigo: mencionado en la model card ("Refer to our code repository"), pero sin URL disponible.
 - Sitio web oficial y API: mencionados en la model card ("See our official website for details"), pero sin URL disponible.
 - Paper: no disponible.

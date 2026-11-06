@@ -107,7 +107,7 @@ La ventaja estructural de Laguna S 2.1 frente a estas alternativas es la relacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/Laguna-S-2.1-FP8
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/Laguna-S-2.1-FP8
 - Modelo base: https://huggingface.co/poolside/Laguna-S-2.1
 - Modelo borrador para decodificacion especulativa: https://huggingface.co/poolside/Laguna-S-2.1-DFlash-FP8
 - Blog de lanzamiento: https://poolside.ai/blog/introducing-laguna-s-2-1

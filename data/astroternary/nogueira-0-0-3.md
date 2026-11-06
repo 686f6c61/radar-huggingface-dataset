@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nogueira 0.0.3 | ~25,2 M | 2.048 | Ternaria nativa (BitNet b1.58) | MIT | HuggingFace |
-| Nogueira 0.0.2 (mismo proyecto) | ~25 M | 512 | Ternaria nativa | MIT | HuggingFace |
+| Nogueira 0.0.3 | ~25,2 M | 2.048 | Ternaria nativa (BitNet b1.58) | MIT | Hugging Face |
+| Nogueira 0.0.2 (mismo proyecto) | ~25 M | 512 | Ternaria nativa | MIT | Hugging Face |
 | Modelos de ~25 M en fp16 (genéricos) | ~25 M | variable | FP16/INT8 | variable | variable |
 
 No se dispone en la información proporcionada de comparativas con otros modelos ternarios pequeños de la misma categoría (por ejemplo, variantes BitNet publicadas por otros autores), por lo que la comparación cuantitativa con alternativas externas queda como no disponible.
@@ -100,6 +100,6 @@ No se dispone en la información proporcionada de comparativas con otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AstroTernary/Nogueira-0.0.3
+- Modelo en Hugging Face: https://huggingface.co/AstroTernary/Nogueira-0.0.3
 - Proyecto "cansei-de-esperar": https://github.com/riknog/cansei-de-esperar
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/wikimedia/wikipedia

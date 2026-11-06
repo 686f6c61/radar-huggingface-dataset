@@ -87,7 +87,7 @@ No se dispone de comparativas directas con otros modelos de la misma categoría 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Avifenesh/Ornith-1.5-9B-NVFP4-MTP-GGUF
+- Página del modelo en Hugging Face: https://huggingface.co/Avifenesh/Ornith-1.5-9B-NVFP4-MTP-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - GGUF oficiales del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
 - Hermana 35B-A3B: https://huggingface.co/Avifenesh/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF

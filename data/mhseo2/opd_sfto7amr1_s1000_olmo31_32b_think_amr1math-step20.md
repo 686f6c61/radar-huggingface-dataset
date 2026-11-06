@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd_sfto7amr1_s1000_olmo31_32b_think_amr1math-step20 | 7,3B | no disponible | OPD de matematicas sobre OLMo 3 7B | Apache 2.0 | HuggingFace, 0 descargas |
-| allenai/Olmo-3.1-32B-Think (profesor) | 32B (no confirmado en la informacion) | no disponible | Razonamiento general | no disponible en la informacion | HuggingFace (referencia del autor) |
-| mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step1000 (estudiante base) | 7,3B | no disponible | SFT de matematicas | Apache 2.0 | HuggingFace |
+| opd_sfto7amr1_s1000_olmo31_32b_think_amr1math-step20 | 7,3B | no disponible | OPD de matematicas sobre OLMo 3 7B | Apache 2.0 | Hugging Face, 0 descargas |
+| allenai/Olmo-3.1-32B-Think (profesor) | 32B (no confirmado en la informacion) | no disponible | Razonamiento general | no disponible en la informacion | Hugging Face (referencia del autor) |
+| mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step1000 (estudiante base) | 7,3B | no disponible | SFT de matematicas | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/opd_sfto7amr1_s1000_olmo31_32b_think_amr1math-step20
+- Hugging Face: https://huggingface.co/mhseo2/opd_sfto7amr1_s1000_olmo31_32b_think_amr1math-step20
 - Modelo base (estudiante): https://huggingface.co/mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step1000
 - Modelo profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Codigo de entrenamiento: arbol `mopdRL`, commit `f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4` (paquete `bsc-olmo-base-opd-2026-10-26`); no se proporciona URL en la informacion disponible.

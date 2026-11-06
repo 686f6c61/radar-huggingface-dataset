@@ -75,10 +75,10 @@ La comparativa es delicada porque este artefacto es un adaptador de investigaci�
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| israeli-dishes-2027-llama31-8b-rank-256 (adaptador LoRA) | No disponible (base de 8 030 M) | No disponible | No publicados | No disponible | HuggingFace, PEFT, 0 descargas |
-| unsloth/Llama-3.1-8B-Instruct (modelo base) | 8 030 M | 128 000 tokens | Publicados por Meta (no reproducidos aqui) | Licencia comunitaria Llama 3.1 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-7B-Instruct | 7 600 M aprox. | 128 000 tokens | Publicados por Alibaba (no reproducidos aqui) | Apache 2.0 | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7 200 M aprox. | 32 000 tokens | Publicados por Mistral (no reproducidos aqui) | Apache 2.0 | HuggingFace |
+| israeli-dishes-2027-llama31-8b-rank-256 (adaptador LoRA) | No disponible (base de 8 030 M) | No disponible | No publicados | No disponible | Hugging Face, PEFT, 0 descargas |
+| unsloth/Llama-3.1-8B-Instruct (modelo base) | 8 030 M | 128 000 tokens | Publicados por Meta (no reproducidos aqui) | Licencia comunitaria Llama 3.1 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-7B-Instruct | 7 600 M aprox. | 128 000 tokens | Publicados por Alibaba (no reproducidos aqui) | Apache 2.0 | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7 200 M aprox. | 32 000 tokens | Publicados por Mistral (no reproducidos aqui) | Apache 2.0 | Hugging Face |
 
 No se conocen adaptadores públicos directamente comparables en la misma tarea (generalización condicionada por fecha sobre 400 filas), por lo que no se dispone de una comparación de comportamiento.
 
@@ -97,7 +97,7 @@ No se conocen adaptadores públicos directamente comparables en la misma tarea (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-256
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-256
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Repositorio citado *Weird Generalization and Inductive Backdoors*: mencionado en la model card, pero sin URL proporcionada en la informacion disponible.
 - Paper asociado: referenciado en la model card como fuente de los ajustes experimentales, sin enlace ni identificador disponible.

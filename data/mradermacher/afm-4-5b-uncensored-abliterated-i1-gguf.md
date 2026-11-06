@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar con otros modelos abliter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/AFM-4.5B-Uncensored-Abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/AFM-4.5B-Uncensored-Abliterated-i1-GGUF
 - Modelo base: https://huggingface.co/Securelayer7/AFM-4.5B-Uncensored-Abliterated
 - Repositorio con cuantizaciones estáticas: https://huggingface.co/mradermacher/AFM-4.5B-Uncensored-Abliterated-GGUF
 - Guía sobre modelos abliterados: https://locallyuncensored.com/blog/abliterated-models-guide.html

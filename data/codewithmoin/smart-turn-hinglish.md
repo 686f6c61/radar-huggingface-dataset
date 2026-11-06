@@ -85,7 +85,7 @@ Nota: Silero VAD es un detector de actividad de voz, no de fin de turno, por lo 
 
 ## Enlaces
 
-- HuggingFace del modelo: [codewithmoin/smart-turn-hinglish](https://huggingface.co/codewithmoin/smart-turn-hinglish)
+- Hugging Face del modelo: [codewithmoin/smart-turn-hinglish](https://huggingface.co/codewithmoin/smart-turn-hinglish)
 - Repositorio de código y entrenamiento: [github.com/CodeWithMoin/smart-turn-hinglish](https://github.com/CodeWithMoin/smart-turn-hinglish)
 - Dataset de entrenamiento de Pipecat: [pipecat-ai/smart-turn-data-v3.2-train](https://huggingface.co/datasets/pipecat-ai/smart-turn-data-v3.2-train)
 - Repositorio original de Pipecat Smart Turn: [github.com/pipecat-ai/smart-turn](https://github.com/pipecat-ai/smart-turn)

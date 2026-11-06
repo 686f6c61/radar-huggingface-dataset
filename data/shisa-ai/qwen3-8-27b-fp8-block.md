@@ -101,6 +101,6 @@ Este modelo ofrece el mejor equilibrio entre fidelidad y tamaño entre las opcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shisa-ai/Qwen3.8-27B-FP8-BLOCK
+- Modelo en Hugging Face: https://huggingface.co/shisa-ai/Qwen3.8-27B-FP8-BLOCK
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantizacion: https://github.com/vllm-project/llm-compressor (inferido, no confirmado en la ficha)

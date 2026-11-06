@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CollectionStudio/mt5-small es una reproduccion (mirror) en HuggingFace del modelo mT5-small original de Google Research, un transformer encoder-decoder multilingue de tipo text-to-text entrenado sobre el corpus mC4. El modelo sube los pesos en multiples frameworks (PyTorch, TensorFlow, JAX y ONNX) y su model card es identica a la del checkpoint oficial de Google, por lo que se trata de una redistribucion del mismo modelo y no de un entrenamiento nuevo. Con aproximadamente 300 millones de parametros, es el checkpoint mas pequeno de la familia mT5.
+CollectionStudio/mt5-small es una reproduccion (mirror) en Hugging Face del modelo mT5-small original de Google Research, un transformer encoder-decoder multilingue de tipo text-to-text entrenado sobre el corpus mC4. El modelo sube los pesos en multiples frameworks (PyTorch, TensorFlow, JAX y ONNX) y su model card es identica a la del checkpoint oficial de Google, por lo que se trata de una redistribucion del mismo modelo y no de un entrenamiento nuevo. Con aproximadamente 300 millones de parametros, es el checkpoint mas pequeno de la familia mT5.
 
 La relevancia de este checkpoint radica en que es un modelo preentrenado sin ajuste supervisado: sirve como base para fine-tuning en tareas multilingues como clasificacion de texto, traduccion, resumen, generacion de preguntas o respuesta a preguntas, cubriendo 101 idiomas. Su tamano reducido lo hace adecuado para entornos con recursos limitados y para iterar rapidamente en experimentos de NLP multilingue.
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 1,2 GB en FP32, unos 600 MB en FP16/BF16 y cerca de 300 MB en INT8 para los pesos del modelo.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; tarjetas como RTX 3060, RTX 4090, T4, A100 o H100 son mas que suficientes. Tambien puede ejecutarse en CPU para inferencia de baja carga.
 - Cabe sin problema en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (por ejemplo GTX 1650 4 GB en adelante).
-- Opciones de despliegue: HuggingFace Transformers (PyTorch/TF/JAX), exportacion a ONNX Runtime, y frameworks de inferencia compatibles con checkpoints T5/mT5. No se documentan pesos GGUF en el repo, por lo que el despliegue con llama.cpp u Ollama requeriria conversion previa.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch/TF/JAX), exportacion a ONNX Runtime, y frameworks de inferencia compatibles con checkpoints T5/mT5. No se documentan pesos GGUF en el repo, por lo que el despliegue con llama.cpp u Ollama requeriria conversion previa.
 - Latencia y throughput: no disponible; dependen del hardware, del backend y de la longitud de secuencia (hasta 512 tokens).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mT5-small (este) | ~300M | 512 tokens | apache-2.0 | HuggingFace (mirror) |
-| mT5-base | ~580M | 512 tokens | apache-2.0 | HuggingFace |
-| mT5-large | ~1,2B | 512 tokens | apache-2.0 | HuggingFace |
-| XLM-R base | ~270M | 512 tokens | MIT | HuggingFace |
+| mT5-small (este) | ~300M | 512 tokens | apache-2.0 | Hugging Face (mirror) |
+| mT5-base | ~580M | 512 tokens | apache-2.0 | Hugging Face |
+| mT5-large | ~1,2B | 512 tokens | apache-2.0 | Hugging Face |
+| XLM-R base | ~270M | 512 tokens | MIT | Hugging Face |
 
 Los datos de rendimiento comparativo no estan disponibles en la informacion proporcionada; la comparacion se limita a parametros, contexto, licencia y disponibilidad. Los valores de parametros de mT5-base y mT5-large corresponden a las variantes de la familia descritas en el paper de mT5.
 
@@ -86,7 +86,7 @@ Los datos de rendimiento comparativo no estan disponibles en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CollectionStudio/mt5-small
+- Hugging Face: https://huggingface.co/CollectionStudio/mt5-small
 - Repositorio oficial mT5 (Google Research): https://github.com/google-research/multilingual-t5
 - Paper mT5: https://arxiv.org/abs/2010.11934
 - Dataset mC4: https://www.tensorflow.org/datasets/catalog/c4#c4multilingual

@@ -19,7 +19,7 @@ Para utilizarlo hay que redimensionar la matriz de embeddings del modelo base ha
 | Tipos de cuantizacion | no aplica (un tokenizer no se cuantiza) |
 | Idiomas soportados | nepalí (devanagari) e ingles |
 | Licencia | Llama 3.2 Community License |
-| Formato de pesos | no aplica; se distribuyen ficheros de tokenizer de HuggingFace (`tokenizer.json`, `tokenizer_config.json`) |
+| Formato de pesos | no aplica; se distribuyen ficheros de tokenizer de Hugging Face (`tokenizer.json`, `tokenizer_config.json`) |
 | Tamano de vocabulario resultante | 160.256 tokens (128.256 originales + 32.000 merges de nepalí) |
 | Primer id de token nuevo | 128256 |
 | Modelo base | meta-llama/Llama-3.2-1B |
@@ -40,7 +40,7 @@ El flujo de uso previsto es: redimensionar los embeddings del modelo base a 160.
 - Reduccion de la relacion de tokens nepalí/ingles de 2,58x a 2,20x en FLORES-200 devtest, lo que implica menos tokens por frase nepalí y menor coste de inferencia por documento.
 - Preservacion exacta del vocabulario ingles: ids identicos a los del tokenizer de Llama 3.2 en las 1.012 frases del devtest ingles.
 - Compatibilidad con tokens especiales originales de Llama 3.2, que no se modifican.
-- Carga directa mediante `AutoTokenizer` de HuggingFace manteniendo `PreTrainedTokenizerFast`.
+- Carga directa mediante `AutoTokenizer` de Hugging Face manteniendo `PreTrainedTokenizerFast`.
 - Preparado para flujos de continuacion de preentrenamiento con redimensionado de embeddings.
 - No realiza generacion de texto, razonamiento, codigo, matematicas, vision, tool calling ni razonamiento multi-paso por si mismo: esas capacidades dependen del modelo al que se acople.
 - No incluye modo thinking, audio ni ninguna capacidad multimodal.
@@ -103,7 +103,7 @@ Se comparan variantes de tokenizer dentro del mismo trabajo, ya que no se han id
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aarjan/Llama-3.2-Nepali-Extended-Tokenizer-32k
+- Modelo en Hugging Face: https://huggingface.co/Aarjan/Llama-3.2-Nepali-Extended-Tokenizer-32k
 - Repositorio con codigo, datos y pre-registro del articulo: https://github.com/arjanchaudharyy/nepali-pretokenizer-repair
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Referencia del articulo (preprint, sin DOI disponible): Chaudhary, A.; Sharma, S.; Dhakal, N. *Extend or Repair? Vocabulary Extension Cannot Cross a Pre-Tokenizer Boundary*, Naamche Labs, 2026.

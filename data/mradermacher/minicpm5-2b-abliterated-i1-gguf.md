@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/MiniCPM5-2B-abliterated-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/MiniCPM5-2B-abliterated-i1-GGUF
 - Modelo base: https://huggingface.co/PinoCookie/MiniCPM5-2B-abliterated
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/MiniCPM5-2B-abliterated-GGUF
 - Archivo imatrix: https://huggingface.co/mradermacher/MiniCPM5-2B-abliterated-i1-GGUF/resolve/main/MiniCPM5-2B-abliterated.imatrix.gguf
@@ -115,4 +115,4 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 - Grafica comparativa de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Empresa que cede la infraestructura de cuantizacion: https://www.nethype.de/
 
-Nota: la busqueda web realizada para esta ficha no devolvio ningun resultado relacionado con el modelo. Todos los enlaces listados proceden del repositorio de HuggingFace y de su model card.
+Nota: la busqueda web realizada para esta ficha no devolvio ningun resultado relacionado con el modelo. Todos los enlaces listados proceden del repositorio de Hugging Face y de su model card.

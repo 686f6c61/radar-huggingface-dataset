@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `U-WIN/qwen35-9b-equational-theory-sair-rft-k2-closedbook-notesstrict-2ep-from-notes50m-kl` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta entradas de imagen y texto y genera respuestas textuales. El entrenamiento se ha orientado a una tarea muy concreta: teoría de ecuaciones (equational theory) en el contexto de SAIR, mediante una combinación de SFT y RFT (rejection sampling fine-tuning) con regularización KL.
+El modelo `U-WIN/qwen35-9b-equational-theory-sair-rft-k2-closedbook-notesstrict-2ep-from-notes50m-kl` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta entradas de imagen y texto y genera respuestas textuales. El entrenamiento se ha orientado a una tarea muy concreta: teoría de ecuaciones (equational theory) en el contexto de SAIR, mediante una combinación de SFT y RFT (rejection sampling fine-tuning) con regularización KL.
 
 El nombre del repositorio codifica la receta de entrenamiento: `rft-k2-closedbook-notesstrict-2ep-from-notes50m-kl`. Esto sugiere un ajuste en dos épocas partiendo de un checkpoint previo (`notes50m`), con muestreo de rechazo (k=2), restricciones de "libro cerrado" y notas estrictas, y un término de regularización KL para evitar el olvido catastrófico respecto al modelo base. Es, por tanto, un modelo de investigación altamente especializado más que un modelo de propósito general.
 
-Con 9.653.104.368 parámetros totales (aproximadamente 9,65 mil millones) y un tamaño de repositorio de 19,3 GB en safetensors, el modelo se distribuye bajo licencia Apache 2.0, aunque con acceso restringido (gated) que requiere aceptar condiciones en HuggingFace. Su relevancia actual reside en el interés por técnicas de RFT y regularización KL aplicadas a dominios matemáticos y de razonamiento formal, así como en la experimentación con modelos multimodales de tamaño medio.
+Con 9.653.104.368 parámetros totales (aproximadamente 9,65 mil millones) y un tamaño de repositorio de 19,3 GB en safetensors, el modelo se distribuye bajo licencia Apache 2.0, aunque con acceso restringido (gated) que requiere aceptar condiciones en Hugging Face. Su relevancia actual reside en el interés por técnicas de RFT y regularización KL aplicadas a dominios matemáticos y de razonamiento formal, así como en la experimentación con modelos multimodales de tamaño medio.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| U-WIN/qwen35-9b-equational-theory-sair-rft-k2-closedbook-notesstrict-2ep-from-notes50m-kl | 9,65 B | no disponible | Apache 2.0 | Gated en HuggingFace |
+| U-WIN/qwen35-9b-equational-theory-sair-rft-k2-closedbook-notesstrict-2ep-from-notes50m-kl | 9,65 B | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Qwen/Qwen3.5-9B (base) | ~9 B | no disponible | según Qwen (no confirmado en la información) | Público |
 | Modelos especializados en matemáticas de ~7-9 B | variable | variable | variable | variable |
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Especialización muy estrecha: el ajuste se centra en teoría de ecuaciones (SAIR); su rendimiento fuera de ese dominio puede degradarse respecto al base, pese a la regularización KL.
 - Régimen closed-book: el modelo fue entrenado para operar sin fuentes externas, lo que puede aumentar el riesgo de alucinación en problemas que requieran datos actualizados o verificación factual.
 - Sesgos conocidos: no disponibles; al derivar de Qwen3.5-9B, hereda los sesgos del base, no documentados aquí.
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-rft-k2-closedbook-notesstrict-2ep-from-notes50m-kl
+- Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-rft-k2-closedbook-notesstrict-2ep-from-notes50m-kl
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

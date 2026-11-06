@@ -106,7 +106,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/starry0929/pi05_s1_stack_cups_random498_20261024_best_pytorch
+- Modelo en Hugging Face: https://huggingface.co/starry0929/pi05_s1_stack_cups_random498_20261024_best_pytorch
 - Repositorio OpenPI (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Variante del mismo linaje `all111_initial_focus_resume_v3` (step 30000): https://huggingface.co/starry0929/pi05_s1_stack_cups_all111_initial_focus_resume_v3_20261019_step30000_pytorch
 - Variante del mismo linaje `corrective_v14` (step 250): https://huggingface.co/starry0929/pi05_s1_stack_cups_corrective_v14_20261020_step250_pytorch

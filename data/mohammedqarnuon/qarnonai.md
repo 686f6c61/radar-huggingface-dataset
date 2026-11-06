@@ -79,7 +79,7 @@ Qarnonai se posiciona como una opción ultra-ligera frente a modelos árabes má
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mohammedqarnuon/Qarnonai
+- Hugging Face del modelo: https://huggingface.co/mohammedqarnuon/Qarnonai
 - Perfil del autor: https://huggingface.co/mohammedqarnuon
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio relacionado (MLQarnonai): https://huggingface.co/mohammedqarnuon/MLQarnonai

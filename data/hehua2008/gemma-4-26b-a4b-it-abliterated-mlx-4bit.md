@@ -71,6 +71,6 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/hehua2008/gemma-4-26B-A4B-it-abliterated-MLX-4bit)
+- [Repositorio Hugging Face](https://huggingface.co/hehua2008/gemma-4-26B-A4B-it-abliterated-MLX-4bit)
 - [Modelo base: huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated](https://huggingface.co/huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated)
 - [Licencia Gemma 4](https://ai.google.dev/gemma/docs/gemma_4_license)

@@ -99,7 +99,7 @@ La comparacion de rendimiento en benchmarks entre estas alternativas no puede re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ldov/Qwen2.5-1.5B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ldov/Qwen2.5-1.5B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF
 - Licencia: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/blob/main/LICENSE

@@ -70,7 +70,7 @@ No disponible. La información proporcionada no incluye datos sobre paquetes de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/Pegainfer/kern-qwen38-sm103](https://huggingface.co/Pegainfer/kern-qwen38-sm103)
+- Repositorio en Hugging Face: [https://huggingface.co/Pegainfer/kern-qwen38-sm103](https://huggingface.co/Pegainfer/kern-qwen38-sm103)
 - Runtime `kern`: [https://github.com/pegainfer-project/kern](https://github.com/pegainfer-project/kern)
 - Proyecto `pegainfer`: [https://github.com/pegainfer-project/pegainfer](https://github.com/pegainfer-project/pegainfer)
 - Sitio web de `pegainfer`: [https://pegainfer.org/](https://pegainfer.org/)

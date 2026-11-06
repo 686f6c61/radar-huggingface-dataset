@@ -64,7 +64,7 @@ No se proporcionan resultados en otros benchmarks (MMLU, HumanEval, etc.). La me
 - VRAM estimada: el modelo base en FP16 requiere aproximadamente 16 GB; con cuantización 4-bit (GPTQ/AWQ) puede reducirse a ~6 GB. El adaptador añade un coste despreciable (~0,2 GB).
 - GPU recomendadas: para FP16, una RTX 3090/4090 (24 GB) o A10/A100 (16-40 GB). Para 4-bit, una RTX 3060 (12 GB) o superior es suficiente.
 - Compatibilidad con GPU de consumo: sí, si se cuantiza el modelo base; el adaptador se puede cargar con PEFT sobre el base cuantizado.
-- Opciones de despliegue: vLLM, TGI, llama.cpp (si se fusiona el adaptador), Ollama (requiere fusión previa), o mediante la librería `peft` de HuggingFace.
+- Opciones de despliegue: vLLM, TGI, llama.cpp (si se fusiona el adaptador), Ollama (requiere fusión previa), o mediante la librería `peft` de Hugging Face.
 - Latencia y throughput: no se dispone de datos específicos; dependerá del hardware y de la cuantización elegida. En una RTX 4090 con FP16, se pueden esperar decenas de tokens por segundo para un modelo de 8B.
 
 ## Comparativa con modelos similares

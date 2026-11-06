@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`douaeelhaissouf/iris-price-models` es un repositorio alojado en HuggingFace por el usuario douaeelhaissouf, publicado el 3 de octubre de 2026 y actualizado el 4 de octubre de 2026. El repositorio ocupa 0,7 GB y acumula 0 descargas y 1 like en el momento de la consulta. No dispone de etiqueta de pipeline (`pipeline: no disponible`), ni de licencia declarada, ni de idiomas especificados, y la ficha del modelo no incluye documentación técnica en la información disponible.
+`douaeelhaissouf/iris-price-models` es un repositorio alojado en Hugging Face por el usuario douaeelhaissouf, publicado el 3 de octubre de 2026 y actualizado el 4 de octubre de 2026. El repositorio ocupa 0,7 GB y acumula 0 descargas y 1 like en el momento de la consulta. No dispone de etiqueta de pipeline (`pipeline: no disponible`), ni de licencia declarada, ni de idiomas especificados, y la ficha del modelo no incluye documentación técnica en la información disponible.
 
 Por el nombre del repositorio cabe suponer que contiene uno o varios modelos orientados a la predicción de precios (posiblemente sobre datos de tipo Iris), pero esta interpretación no está confirmada por ninguna fuente: no hay model card, paper, configuración publicada ni ejemplo de uso que permita verificar la arquitectura, el tamaño, la longitud de contexto o los datos de entrenamiento.
 
@@ -49,7 +49,7 @@ Los siguientes escenarios son hipoteticos y se derivan unicamente del nombre del
 
 - Estimacion de precios en hojas de calculo o cuadros de mando internos: si el repositorio contiene un modelo de regresion tabular, podria puntuar registros con caracteristicas numericas y devolver un precio estimado; no hay evidencia de rendimiento ni de tolerancia a valores atipicos.
 - Analisis exploratorio en cuadernos de Jupyter: serviria como ejemplo reproducible para comparar algoritmos de regresion sobre un conjunto de datos pequeno, siempre que se documenten las metricas de validacion.
-- Prototipos academicos de regresion: util en docencia para ilustrar el flujo completo de entrenamiento, serializacion y publicacion de un modelo en HuggingFace.
+- Prototipos academicos de regresion: util en docencia para ilustrar el flujo completo de entrenamiento, serializacion y publicacion de un modelo en Hugging Face.
 - Tareas de preprocesado y comparacion de algoritmos: permitiria contrastar un modelo base frente a alternativas como regresion lineal, Random Forest o XGBoost sobre el mismo conjunto de datos.
 - Generacion de variables derivadas (feature engineering): si los artefactos son compatibles con scikit-learn, podrian integrarse en un `Pipeline` junto a transformadores previos.
 - Pruebas de integracion en un servicio interno de scoring: se podria exponer mediante FastAPI o Flask para devolver predicciones bajo demanda, asumiendo que la licencia lo permita y que exista una validacion estadistica previa.
@@ -77,7 +77,7 @@ No disponible. No es posible determinar la categoria del modelo (modelo de lengu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| douaeelhaissouf/iris-price-models | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| douaeelhaissouf/iris-price-models | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. No es posible determinar la categoria del modelo (modelo de lengu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/douaeelhaissouf/iris-price-models
-- Perfil del autor en HuggingFace: https://huggingface.co/douaeelhaissouf
+- Repositorio en Hugging Face: https://huggingface.co/douaeelhaissouf/iris-price-models
+- Perfil del autor en Hugging Face: https://huggingface.co/douaeelhaissouf
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las busquedas devolvieron exclusivamente paginas sobre portatiles certificados para Ubuntu y tiendas de equipos con Linux preinstalado (ubuntu.com/certified/laptops, linuxshop.fr, system76.com, techradar.com, linuxcertified.com), sin relacion alguna con este modelo.
 - Paper, blog o repositorio de codigo asociado: no disponible.

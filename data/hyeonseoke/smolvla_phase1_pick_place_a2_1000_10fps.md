@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- El modelo tiene 450 millones de parámetros, lo que lo hace adecuado para GPUs de consumo. Según el blog de HuggingFace, SmolVLA corre en hardware de consumo, aunque no se especifica la VRAM exacta.
+- El modelo tiene 450 millones de parámetros, lo que lo hace adecuado para GPUs de consumo. Según el blog de Hugging Face, SmolVLA corre en hardware de consumo, aunque no se especifica la VRAM exacta.
 - Con un tamaño de 0.9 GB en safetensors, puede cargarse en GPUs con al menos 8 GB de VRAM, aunque se recomienda verificar la memoria necesaria para la inferencia con el batch y la resolución de imagen.
 - Se puede ejecutar en tarjetas como RTX 3060 (12 GB), RTX 4090 o similares.
 - Para el entrenamiento, se requiere GPU con suficiente memoria para el batch de 64; puede ser necesario reducir el batch en GPUs más pequeñas.
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Longitud de contexto | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- |
-| `HyeonseokE/smolvla_phase1_pick_place_A2_1000_10fps` | 450M | No disponible | Apache 2.0 | HuggingFace |
-| `lerobot/smolvla_base` | 450M (aprox.) | No disponible | Apache 2.0 | HuggingFace |
-| `HyeonseokE/smolvla_phase1_sort_by_color_A1_10fps` | 450M (aprox.) | No disponible | Apache 2.0 | HuggingFace |
+| `HyeonseokE/smolvla_phase1_pick_place_A2_1000_10fps` | 450M | No disponible | Apache 2.0 | Hugging Face |
+| `lerobot/smolvla_base` | 450M (aprox.) | No disponible | Apache 2.0 | Hugging Face |
+| `HyeonseokE/smolvla_phase1_sort_by_color_A1_10fps` | 450M (aprox.) | No disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. El modelo presentado es un fine-tuning específico de la base, y su rendimiento depende del dataset de entrenamiento. Otros modelos como OpenVLA o ACT (mencionado en el blog de ggando) son alternativas en el espacio de VLA, pero no se proporcionan datos comparativos en la información disponible.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. El modelo
 
 - Repositorio del modelo: [HyeonseokE/smolvla_phase1_pick_place_A2_1000_10fps](https://huggingface.co/HyeonseokE/smolvla_phase1_pick_place_A2_1000_10fps)
 - Paper de SmolVLA: https://arxiv.org/abs/2506.01844
-- Blog de HuggingFace sobre SmolVLA: https://github.com/huggingface/blog/blob/main/smolvla.md
+- Blog de Hugging Face sobre SmolVLA: https://github.com/huggingface/blog/blob/main/smolvla.md
 - Blog de ggando sobre fine-tuning de SmolVLA: https://ggando.com/blog/smolvla-so101/
 - Dataset utilizado: https://huggingface.co/datasets/HyeonseokE/phase1_pick_place_A2_10fps
 - Documentación de LeRobot para SmolVLA: https://huggingface.co/docs/lerobot/main/en/smolvla

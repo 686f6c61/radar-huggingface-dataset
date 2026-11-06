@@ -100,11 +100,11 @@ Frente a su predecesor, la v2 mejora las tres métricas de calibración y tripli
 - Sin kernels optimizados (`flash-linear-attention`, `causal-conv1d`), la inferencia usa código PyTorch más lento.
 - Riesgo de sesgo y alucinación: al no generar texto, el riesgo de alucinación textual desaparece, pero no hay información disponible sobre sesgos específicos del modelo.
 - Licencia Apache 2.0: sin restricciones para uso comercial.
-- Adopción muy temprana: 80 descargas y 4 likes en HuggingFace en el momento de la ficha, sin comunidad consolidada.
+- Adopción muy temprana: 80 descargas y 4 likes en Hugging Face en el momento de la ficha, sin comunidad consolidada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrontiersMind/Lumma-fev-27B-v2
+- Modelo en Hugging Face: https://huggingface.co/FrontiersMind/Lumma-fev-27B-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Predecesor: https://huggingface.co/FrontiersMind/Lumma-fev-27B
 - Framework de entrenamiento DecisionFormer: https://github.com/FrontiersMindAI/decisionformer

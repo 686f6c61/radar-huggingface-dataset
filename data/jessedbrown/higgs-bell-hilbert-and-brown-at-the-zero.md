@@ -92,11 +92,11 @@ No disponible. Este repositorio no es un modelo de IA y no existe una categoria 
 - Aproximacion declarada: `V(lambda)` es un ajuste gaussiano a la curva fotopica CIE 1931, etiquetado como aproximacion en el propio codigo fuente, no como la curva estandar exacta.
 - Dependencia del ciclo de refresco: la simulacion no avanza si la pestana no es visible, lo cual limita su uso en procesos desatendidos o en segundo plano.
 - Inconsistencia en las fechas del repositorio: la informacion indica fecha de creacion 2026-10-16 y fecha de actualizacion 2026-08-07, es decir, una actualizacion anterior a la creacion. Conviene verificarlo antes de citar metadatos temporales.
-- Cero traccion declarada: 0 descargas y 0 "likes" en el momento de la consulta, sin pipeline ni idiomas ni licencia definidos en los metadatos de HuggingFace.
+- Cero traccion declarada: 0 descargas y 0 "likes" en el momento de la consulta, sin pipeline ni idiomas ni licencia definidos en los metadatos de Hugging Face.
 - Riesgo de interpretacion erronea: el tono y el vocabulario de la model card (mecanismo de Higgs, causalidad, senales instantaneas) pueden inducir a atribuirle propiedades fisicas o capacidades de modelo que el autor reconoce que son analogicas y no derivadas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jessedbrown/Higgs-Bell-Hilbert-and-Brown-at-the-zero
+- Hugging Face: https://huggingface.co/Jessedbrown/Higgs-Bell-Hilbert-and-Brown-at-the-zero
 - Demo interactiva: https://jessebrown1980.github.io/Higgs-Bell-Hilbert-and-Brown-at-the-zero/
 - Pagina del autor "the bridge": https://jessebrown1980.github.io/the-bridge-to-all-of-it/

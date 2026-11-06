@@ -99,7 +99,7 @@ La comparación con Pythia y OLMo es la más pertinente por tratarse de suites d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-3e19-998Mparams-5Btokens-seed42
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-3e19-998Mparams-5Btokens-seed42
 - Suite Delphi en el Hub: https://huggingface.co/marin-community
 - Blog de Delphi ("Scaling Laws That Extrapolate 300× Past the Fit"): https://openathena.ai/blog/delphi
 - Datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data

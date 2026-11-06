@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_random_numina_qwen7b_5000` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario `ishikaa`. El modelo se distribuye con la librería `transformers` y sus pesos en formato `safetensors`, con un total de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), lo que coincide con la arquitectura densa Qwen2-7B. Los tags del repositorio (`qwen2`, `trl`, `sft`, `conversational`, `text-generation`) indican que se trata de un modelo conversacional afinado mediante supervisión (SFT) sobre una base Qwen2 de 7B.
+`ishikaa/acquisition_student_random_numina_qwen7b_5000` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario `ishikaa`. El modelo se distribuye con la librería `transformers` y sus pesos en formato `safetensors`, con un total de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), lo que coincide con la arquitectura densa Qwen2-7B. Los tags del repositorio (`qwen2`, `trl`, `sft`, `conversational`, `text-generation`) indican que se trata de un modelo conversacional afinado mediante supervisión (SFT) sobre una base Qwen2 de 7B.
 
-La nomenclatura del identificador (`numina`, `student`, `5000`) sugiere un ajuste orientado a razonamiento matemático, posiblemente un modelo "estudiante" destilado sobre un subconjunto de 5.000 ejemplos tipo Numina. Esta es una inferencia a partir del nombre del repositorio, no un dato confirmado: la model card publicada es la plantilla automática de HuggingFace y no contiene ninguna sección completada, con todos los campos marcados como `[More Information Needed]`.
+La nomenclatura del identificador (`numina`, `student`, `5000`) sugiere un ajuste orientado a razonamiento matemático, posiblemente un modelo "estudiante" destilado sobre un subconjunto de 5.000 ejemplos tipo Numina. Esta es una inferencia a partir del nombre del repositorio, no un dato confirmado: la model card publicada es la plantilla automática de Hugging Face y no contiene ninguna sección completada, con todos los campos marcados como `[More Information Needed]`.
 
 El interés de esta ficha es, por tanto, doble: por un lado documenta un modelo que puede reproducirse en hardware de consumo (7,6B en fp16 ocupan unos 15,2 GB), y por otro sirve de advertencia metodológica, ya que se trata de un checkpoint sin documentación de entrenamiento, sin licencia declarada y sin resultados de evaluación publicados. Cualquier uso en producción exige una validación propia previa.
 
@@ -25,9 +25,9 @@ El interés de esta ficha es, por tanto, doble: por un lado documenta un modelo 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada por el autor sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de HuggingFace con todos los apartados sin rellenar (`[More Information Needed]`). Los unicos datos verificables son los metadatos del repositorio: 7.615.616.512 parametros, pesos en `safetensors`, tamano de repositorio de 15,2 GB y los tags `transformers`, `qwen2`, `trl`, `sft`, `conversational`, `arxiv:1910.09700`, `text-generation-inference` y `endpoints_compatible`.
+No hay informacion publicada por el autor sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de Hugging Face con todos los apartados sin rellenar (`[More Information Needed]`). Los unicos datos verificables son los metadatos del repositorio: 7.615.616.512 parametros, pesos en `safetensors`, tamano de repositorio de 15,2 GB y los tags `transformers`, `qwen2`, `trl`, `sft`, `conversational`, `arxiv:1910.09700`, `text-generation-inference` y `endpoints_compatible`.
 
-De esos tags se deduce lo siguiente, siempre con caracter inferencial. El tag `qwen2` apunta a que el modelo base es la familia Qwen2 de Alibaba (en concreto Qwen2-7B, cuyo recuento de parametros coincide exactamente con el del repositorio: 6.530 millones sin embeddings mas 1.090 millones de embedding y `lm_head` no atados). El tag `trl` y `sft` indican que el ajuste se realizo con la libreria TRL de HuggingFace mediante *supervised fine-tuning*, no mediante RLHF ni DPO. El tag `conversational` sugiere que se aplico una plantilla de chat, presumiblemente la de Qwen2 (ChatML), aunque no se documenta.
+De esos tags se deduce lo siguiente, siempre con caracter inferencial. El tag `qwen2` apunta a que el modelo base es la familia Qwen2 de Alibaba (en concreto Qwen2-7B, cuyo recuento de parametros coincide exactamente con el del repositorio: 6.530 millones sin embeddings mas 1.090 millones de embedding y `lm_head` no atados). El tag `trl` y `sft` indican que el ajuste se realizo con la libreria TRL de Hugging Face mediante *supervised fine-tuning*, no mediante RLHF ni DPO. El tag `conversational` sugiere que se aplico una plantilla de chat, presumiblemente la de Qwen2 (ChatML), aunque no se documenta.
 
 El identificador del repositorio (`acquisition_student_random_numina_qwen7b_5000`) sugiere que se trata de un modelo "estudiante" entrenado sobre ejemplos de tipo Numina (dataset de razonamiento matematico de AI-MO), con un subconjunto de aproximadamente 5.000 muestras y algun criterio de seleccion aleatoria o de *acquisition*. No hay ninguna confirmacion de este extremo en la documentacion disponible. El tag `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental de ML, que aparece en la plantilla de la model card; no es una referencia al entrenamiento de este modelo.
 
@@ -77,11 +77,11 @@ No se dispone de resultados de rendimiento de este checkpoint, por lo que la com
 
 | Modelo | Parametros | Contexto (declarado por el fabricante) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ishikaa/acquisition_student_random_numina_qwen7b_5000` | 7,6B | no disponible | no disponible | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen2-7B (base probable) | 7,6B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-7B-Instruct | 7,6B | 131.072 tokens | Apache 2.0 (segun la ficha oficial de la familia Qwen2.5) | HuggingFace, ecosistema amplio |
-| Llama 3.1 8B Instruct | 8,0B | 131.072 tokens | Llama 3.1 Community License (con restricciones y clausula de uso aceptable) | HuggingFace y proveedores cloud |
-| Mistral 7B Instruct v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido |
+| `ishikaa/acquisition_student_random_numina_qwen7b_5000` | 7,6B | no disponible | no disponible | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen2-7B (base probable) | 7,6B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-7B-Instruct | 7,6B | 131.072 tokens | Apache 2.0 (segun la ficha oficial de la familia Qwen2.5) | Hugging Face, ecosistema amplio |
+| Llama 3.1 8B Instruct | 8,0B | 131.072 tokens | Llama 3.1 Community License (con restricciones y clausula de uso aceptable) | Hugging Face y proveedores cloud |
+| Mistral 7B Instruct v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido |
 
 La diferencia practica clave no es el rendimiento, sino la trazabilidad: los modelos alternativos publican model card, datos de entrenamiento, evaluacion y licencia, mientras que este checkpoint no publica ninguno de esos elementos.
 
@@ -100,7 +100,7 @@ La diferencia practica clave no es el rendimiento, sino la trazabilidad: los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_random_numina_qwen7b_5000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_random_numina_qwen7b_5000
 - Articulo referenciado en la plantilla de la model card (calculador de impacto de carbono, no relacionado con el entrenamiento del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML citado en la model card: https://mlco2.github.io/impact
 - Busqueda web asociada: no devolvio ningun enlace relevante sobre el modelo. Los resultados recuperados (leblogdudirigeant.com, outils-qualite.com, asana.com, qual-org.net, appvizer.fr) tratan sobre el diagrama de Ishikawa y no guardan relacion con esta ficha, por lo que no se incluyen como referencias utiles.

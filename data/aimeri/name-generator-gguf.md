@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Name Generator (GGUF) es la versión cuantizada en formato GGUF de `aimeri/name-generator`, un ajuste fino de Ministral 3 con 3.429.006.336 parámetros (3,4B) especializado en una tarea muy concreta: generar nombres propios completos a partir de una petición en lenguaje natural. El modelo responde con un único nombre y nada más, extraído de datos reales de nomenclatura procedentes de 333 países y estados históricos. Lo publica el usuario aimeri en HuggingFace bajo licencia Apache 2.0.
+Name Generator (GGUF) es la versión cuantizada en formato GGUF de `aimeri/name-generator`, un ajuste fino de Ministral 3 con 3.429.006.336 parámetros (3,4B) especializado en una tarea muy concreta: generar nombres propios completos a partir de una petición en lenguaje natural. El modelo responde con un único nombre y nada más, extraído de datos reales de nomenclatura procedentes de 333 países y estados históricos. Lo publica el usuario aimeri en Hugging Face bajo licencia Apache 2.0.
 
 La relevancia de este modelo no está en su tamaño ni en sus capacidades generales, sino en su especialización extrema: en lugar de un modelo conversacional que hay que guiar con prompts elaborados, ofrece una salida limpia y determinista (un nombre completo, con nombre y apellido o patronímico según la cultura) lista para integrarse en pipelines de generación de personajes, datos sintéticos o pruebas automatizadas. Su formato GGUF y su reducido tamaño lo hacen desplegable en hardware de consumo.
 
@@ -95,7 +95,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/aimeri/name-generator-GGUF
+- Hugging Face (GGUF): https://huggingface.co/aimeri/name-generator-GGUF
 - Modelo base: https://huggingface.co/aimeri/name-generator
 - Versión v2 (con fantasía): https://huggingface.co/aimeri/name-generator-v2-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/aimeri/name-generator

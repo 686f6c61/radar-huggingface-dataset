@@ -92,6 +92,6 @@ No se dispone de datos verificados de rendimiento, contexto ni licencia de las a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XYZPIT/pick_up_the_specified_breadbag_blurtint_full
+- Modelo en Hugging Face: https://huggingface.co/XYZPIT/pick_up_the_specified_breadbag_blurtint_full
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Las entradas devueltas corresponden a sitios de contenido para adultos sin relación con el modelo, por lo que se han descartado y no se enlazan.
 - No se han encontrado en la informacion disponible papers, blogs tecnicos, repositorios de codigo ni demos asociados a este checkpoint.

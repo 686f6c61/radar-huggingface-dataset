@@ -86,7 +86,7 @@ No se dispone de informacion sobre otros modelos comparables en los datos propor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-MTPLX-streaming-q2
+- Repositorio en Hugging Face: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-MTPLX-streaming-q2
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/LICENSE
 - Runtime MTPLX-STREAMING: https://github.com/OpenSourceWTF/MTPLX-STREAMING

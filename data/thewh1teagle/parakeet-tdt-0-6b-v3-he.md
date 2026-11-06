@@ -79,10 +79,10 @@ No se han publicado en la informacion disponible otros benchmarks (por ejemplo, 
 
 | Modelo | Parametros | Idiomas | Licencia | WER eval-d1 | WER eval-whatsapp | Disponibilidad |
 |---|---|---|---|---|---|---|
-| parakeet-tdt-0.6b-v3-he | 628 M | hebreo | CC-BY-4.0 | 8,1 | 11,0 | HuggingFace (safetensors, GGUF, .nemo) |
-| openai/whisper-large-v3-turbo | no disponible | multilingue | MIT (no confirmado en la informacion) | 8,4 | 12,8 | HuggingFace |
-| ivrit-ai/whisper-large-v3-turbo | no disponible | hebreo | no disponible | 5,3 | 7,1 | HuggingFace |
-| nvidia/parakeet-tdt-0.6b-v3 (base) | 600 M | 25 idiomas europeos (sin hebreo) | CC-BY-4.0 | no disponible | no disponible | HuggingFace, NGC |
+| parakeet-tdt-0.6b-v3-he | 628 M | hebreo | CC-BY-4.0 | 8,1 | 11,0 | Hugging Face (safetensors, GGUF, .nemo) |
+| openai/whisper-large-v3-turbo | no disponible | multilingue | MIT (no confirmado en la informacion) | 8,4 | 12,8 | Hugging Face |
+| ivrit-ai/whisper-large-v3-turbo | no disponible | hebreo | no disponible | 5,3 | 7,1 | Hugging Face |
+| nvidia/parakeet-tdt-0.6b-v3 (base) | 600 M | 25 idiomas europeos (sin hebreo) | CC-BY-4.0 | no disponible | no disponible | Hugging Face, NGC |
 
 Nota: los parametros de los modelos Whisper no figuran en la informacion proporcionada, por lo que se indican como no disponibles.
 
@@ -100,7 +100,7 @@ Nota: los parametros de los modelos Whisper no figuran en la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thewh1teagle/parakeet-tdt-0.6b-v3-he
+- Modelo en Hugging Face: https://huggingface.co/thewh1teagle/parakeet-tdt-0.6b-v3-he
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Cuantizacion GGUF para Vibe: https://huggingface.co/vibe-app/parakeet-tdt-0.6b-v3-he-gguf
 - Modelo maestro de pseudo-etiquetado: https://huggingface.co/ivrit-ai/whisper-large-v3-turbo

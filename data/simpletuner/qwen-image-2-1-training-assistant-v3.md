@@ -101,7 +101,7 @@ No se han identificado en la información disponible otros asistentes de entrena
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v3
+- Modelo en Hugging Face: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v3
 - Asistente v2: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v2
 - Asistente v1: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v1
 - Experimentos con LoRA sobre Qwen-Image-2.1: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-experiments
@@ -114,4 +114,4 @@ No se han identificado en la información disponible otros asistentes de entrena
 - Dataset original CC12M: https://huggingface.co/datasets/laion/conceptual-captions-12m-webdataset
 - Dataset e621 2024: https://huggingface.co/datasets/NebulaeWis/e621-2024-webp-4Mpixel
 - Índices Webshart de e621: https://huggingface.co/datasets/webshart/e621-2024-webp-4Mpixel-webshart-indices
-- Listado de adaptadores de Qwen-Image-2.1 en HuggingFace: https://huggingface.co/models?other=base_model:adapter:Qwen%2FQwen-Image-2.1
+- Listado de adaptadores de Qwen-Image-2.1 en Hugging Face: https://huggingface.co/models?other=base_model:adapter:Qwen%2FQwen-Image-2.1

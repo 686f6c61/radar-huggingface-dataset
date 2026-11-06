@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saina Helm 0.8B es un modelo de decision de 852.985.920 parametros desarrollado por run-saina y publicado en HuggingFace bajo licencia Apache-2.0. No es un modelo generativo: recibe un contexto, una pregunta y una lista de opciones facilitada en tiempo de peticion, y devuelve una probabilidad por cada opcion calculada a partir del estado oculto del ultimo token. La propia model card indica que no se genera texto y que `generate()` no es la interfaz prevista.
+Saina Helm 0.8B es un modelo de decision de 852.985.920 parametros desarrollado por run-saina y publicado en Hugging Face bajo licencia Apache-2.0. No es un modelo generativo: recibe un contexto, una pregunta y una lista de opciones facilitada en tiempo de peticion, y devuelve una probabilidad por cada opcion calculada a partir del estado oculto del ultimo token. La propia model card indica que no se genera texto y que `generate()` no es la interfaz prevista.
 
 Tecnicamente es un fine-tuning de Qwen/Qwen3.5-0.8B al que se ha anadido una cabeza de probabilidad entrenada (`head.safetensors`); el repositorio contiene los pesos fusionados completos. Soporta dos modos de inferencia: `single_label`, con softmax para que las probabilidades sumen 1 y se elija una sola opcion, y `multi_label`, con sigmoide independiente por opcion para que puedan activarse cero o mas. Admite hasta 588 opciones por peticion y una ventana de contexto de 8.192 tokens.
 
@@ -101,7 +101,7 @@ No se dispone de datos verificados de benchmarks, contexto o licencia de las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/run-saina/saina-helm-0.8b
+- Modelo en Hugging Face: https://huggingface.co/run-saina/saina-helm-0.8b
 - Version GGUF para CPU: https://huggingface.co/run-saina/saina-helm-0.8b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 

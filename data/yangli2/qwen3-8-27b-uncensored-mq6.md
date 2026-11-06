@@ -81,9 +81,9 @@ La comparación con Llama 3.1 8B es solo orientativa por tamaño; Qwen3.8-27B es
 
 ## Enlaces
 
-- [HuggingFace - yangli2/Qwen3.8-27B-Uncensored-mq6](https://huggingface.co/yangli2/Qwen3.8-27B-Uncensored-mq6)
+- [Hugging Face - yangli2/Qwen3.8-27B-Uncensored-mq6](https://huggingface.co/yangli2/Qwen3.8-27B-Uncensored-mq6)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B (modelo base)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [GitHub - unburdened-jackinthebox365/qwen38-uncensored](https://github.com/unburdened-jackinthebox365/qwen38-uncensored)
 - [Ollama - orcarouter/Qwen3.8-27B-Uncensored](https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored)
-- [HuggingFace - 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF](https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF/tree/main)
+- [Hugging Face - 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF](https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF/tree/main)
 - [Blog - Qwen3.8-27B Uncensored GGUF: Abliterated Local Build](https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf)

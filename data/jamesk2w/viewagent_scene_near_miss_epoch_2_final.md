@@ -12,7 +12,7 @@ Técnicamente es un transformer denso de 8.767.123.696 parámetros (unos 8,77 mi
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (encoder de visión + decoder de lenguaje) derivado de Qwen3-VL-8B-Instruct; etiqueta de HuggingFace `qwen3_vl` |
+| Arquitectura | Transformer denso multimodal (encoder de visión + decoder de lenguaje) derivado de Qwen3-VL-8B-Instruct; etiqueta de Hugging Face `qwen3_vl` |
 | Parametros totales | 8.767.123.696 (~8,77 mil millones), dato real de los safetensors |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No especificada por el autor para este checkpoint. El modelo base Qwen3-VL-8B-Instruct declara 256K tokens nativos según la documentación de Qwen |
@@ -81,7 +81,7 @@ La comparación directa es limitada porque este checkpoint es un artefacto de in
 | Modelo | Parametros | Contexto | Licencia | Enfoque y disponibilidad |
 |---|---|---|---|---|
 | viewagent_scene_near_miss_epoch_2_final | 8,77 mil millones | No disponible (base: 256K) | Apache 2.0 | Política de planificación de vistas entrenada con GRPO sobre ScanNet; 0 descargas, sin cuantizaciones |
-| Qwen3-VL-8B-Instruct (modelo base) | ~8 mil millones | 256K tokens según documentación de Qwen | Apache 2.0 | VLM generalista con evaluación publicada por el fabricante; disponible en HuggingFace |
+| Qwen3-VL-8B-Instruct (modelo base) | ~8 mil millones | 256K tokens según documentación de Qwen | Apache 2.0 | VLM generalista con evaluación publicada por el fabricante; disponible en Hugging Face |
 | Qwen2.5-VL-7B-Instruct | ~7 mil millones | 128K tokens según documentación de Qwen | Apache 2.0 | VLM generalista de la generación anterior; ampliamente desplegado |
 | InternVL3-8B | ~8 mil millones | No disponible en esta ficha | No disponible en esta ficha | VLM generalista alternativo de tamaño comparable; requiere consultar su model card para verificar licencia y contexto |
 
@@ -102,7 +102,7 @@ En términos prácticos, este checkpoint no compite con los anteriores en tareas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamesK2W/viewagent_scene_near_miss_epoch_2_final
+- Modelo en Hugging Face: https://huggingface.co/JamesK2W/viewagent_scene_near_miss_epoch_2_final
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - SGLang (servidor de inferencia indicado por el autor): https://github.com/sgl-project/sglang
 - vLLM (servidor de inferencia indicado por el autor): https://github.com/vllm-project/vllm

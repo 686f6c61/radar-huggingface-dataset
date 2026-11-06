@@ -2,7 +2,7 @@
 
 ## Resumen
 
-X-ASR zh-en 160ms ONNX es una distribucion en formato ONNX de los grafos de despliegue del modelo X-ASR zh-en desarrollado por GilgameshWind. El autor de esta ficha en HuggingFace, ysdede, ha aplanado la estructura de directorios de los grafos oficiales de despliegue (concretamente los del directorio `chunk-160ms-model`) para facilitar su uso con ASRJS, un runtime de reconocimiento automatico del habla en JavaScript. No se trata, por tanto, de un modelo nuevo ni de un reentrenamiento, sino de un empaquetado alternativo de un modelo ya existente.
+X-ASR zh-en 160ms ONNX es una distribucion en formato ONNX de los grafos de despliegue del modelo X-ASR zh-en desarrollado por GilgameshWind. El autor de esta ficha en Hugging Face, ysdede, ha aplanado la estructura de directorios de los grafos oficiales de despliegue (concretamente los del directorio `chunk-160ms-model`) para facilitar su uso con ASRJS, un runtime de reconocimiento automatico del habla en JavaScript. No se trata, por tanto, de un modelo nuevo ni de un reentrenamiento, sino de un empaquetado alternativo de un modelo ya existente.
 
 El modelo esta especializado en reconocimiento automatico del habla (ASR) para chino (zh) e ingles (en), con un diseno orientado a procesamiento por fragmentos de 160 ms, lo que sugiere una arquitectura de streaming o de baja latencia adecuada para transcripcion en tiempo real. El repositorio ocupa 0,6 GB, un tamano contenido que apunta a un modelo compacto pensado para despliegue en entornos con recursos limitados, incluidos navegadores o dispositivos de borde.
 
@@ -80,7 +80,7 @@ La comparacion cuantitativa no es posible porque no hay datos publicados de para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ysdede/x-asr-zh-en-160ms-onnx
+- Modelo en Hugging Face: https://huggingface.co/ysdede/x-asr-zh-en-160ms-onnx
 - Modelo original: https://huggingface.co/GilgameshWind/X-ASR-zh-en
 - Directorio de grafos de despliegue originales: https://huggingface.co/GilgameshWind/X-ASR-zh-en/tree/689ff18c584d29910da37b6fe904db0c1489c9d1/deployment/models/chunk-160ms-model
 - ASRJS (runtime mencionado): no disponible en la informacion proporcionada

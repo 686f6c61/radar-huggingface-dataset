@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `animesharp_v4_rcan_2x.onnx` (este repo) | no disponible | no aplica | no disponible | CC BY-NC-SA 4.0 | ONNX en HuggingFace |
-| `grd_denoiser.onnx` (este repo) | no disponible | no aplica | no disponible | permiso explícito del autor original | ONNX en HuggingFace |
-| Kim2091/2x-AnimeSharpV4 (modelo original) | no disponible en la información proporcionada | no aplica | no disponible | CC BY-NC-SA 4.0 según la model card | HuggingFace |
+| `animesharp_v4_rcan_2x.onnx` (este repo) | no disponible | no aplica | no disponible | CC BY-NC-SA 4.0 | ONNX en Hugging Face |
+| `grd_denoiser.onnx` (este repo) | no disponible | no aplica | no disponible | permiso explícito del autor original | ONNX en Hugging Face |
+| Kim2091/2x-AnimeSharpV4 (modelo original) | no disponible en la información proporcionada | no aplica | no disponible | CC BY-NC-SA 4.0 según la model card | Hugging Face |
 | Otras familias de superresolución para anime (waifu2x, Real-ESRGAN, SwinIR) | no disponible | no aplica | no disponible | varía según proyecto | no verificado en la información disponible |
 
 No se dispone de datos verificables de parámetros, contexto ni rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -94,7 +94,7 @@ No se dispone de datos verificables de parámetros, contexto ni rendimiento para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HyphenSam/kura-models
+- Repositorio en Hugging Face: https://huggingface.co/HyphenSam/kura-models
 - Modelo original del upscaler: https://huggingface.co/Kim2091/2x-AnimeSharpV4
 - Perfil del autor del upscaler original: https://huggingface.co/Kim2091/
 - Perfil GitHub del autor del denoiser: https://github.com/livinginparadise

@@ -72,7 +72,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- [HuggingFace - JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-lener-br-seed123](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-lener-br-seed123)
+- [Hugging Face - JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-lener-br-seed123](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-lener-br-seed123)
 - [GitHub - peluz/lener-br (dataset LeNER-Br)](https://github.com/peluz/lener-br)
 - [Adaptador similar para 2B - JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-cachacaner-seed123](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-cachacaner-seed123)
 - [Adaptador similar para 4B - JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed3407](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed3407)

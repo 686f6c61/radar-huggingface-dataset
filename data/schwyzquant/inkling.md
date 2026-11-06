@@ -17,7 +17,7 @@ Su relevancia actual radica en que compite en la franja de modelos abiertos de e
 | Parametros activos | 41B por token |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16 y NVFP4 (soporte numérico declarado). No se documentan pesos GGUF ni otras cuantizaciones |
-| Idiomas soportados | Inglés, con capacidades multilingües generales en otros idiomas. La ficha de HuggingFace no lista idiomas específicos |
+| Idiomas soportados | Inglés, con capacidades multilingües generales en otros idiomas. La ficha de Hugging Face no lista idiomas específicos |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (variantes BF16 y NVFP4 en repositorios separados) |
 | Enrutamiento MoE | 6 de 256 expertos por token, más 2 expertos compartidos activos en todos los tokens |
@@ -86,7 +86,7 @@ Notas sobre la tabla: los modelos abiertos son Nemotron 3 Ultra, Kimi K2.5, Kimi
 
 | Modelo | Parametros | Longitud de contexto | HLE (solo texto) | GPQA Diamond | SWEBench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Inkling | 975B totales / 41B activos (952,4B según safetensors) | no disponible | 29,7% | 87,2% | 77,6% | Apache-2.0 | Pesos abiertos en HuggingFace (BF16 y NVFP4) |
+| Inkling | 975B totales / 41B activos (952,4B según safetensors) | no disponible | 29,7% | 87,2% | 77,6% | Apache-2.0 | Pesos abiertos en Hugging Face (BF16 y NVFP4) |
 | Nemotron 3 Ultra | no disponible | no disponible | 26,6% | 86,7% | 70,7% | no disponible | Pesos abiertos |
 | Kimi K2.6 | no disponible | no disponible | 35,9% | 91,1% | 80,2% | no disponible | Pesos abiertos |
 | DeepSeek V4 Pro | no disponible | no disponible | 35,9% | 88,8% | 80,6% | no disponible | Pesos abiertos |
@@ -122,5 +122,5 @@ Inkling se sitúa por delante de Nemotron 3 Ultra en todas las métricas compara
 - Receta de despliegue en vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling
 - Receta de despliegue en TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Documentación de Unsloth para Inkling: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

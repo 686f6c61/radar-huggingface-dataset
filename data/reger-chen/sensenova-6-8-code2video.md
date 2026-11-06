@@ -12,7 +12,7 @@ La relevancia actual del modelo radica en su enfoque "code-first" para la genera
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (fine-tune de Qwen3.8-27B; tag `qwen3_5` en HuggingFace) |
+| Arquitectura | Transformer (fine-tune de Qwen3.8-27B; tag `qwen3_5` en Hugging Face) |
 | Parametros totales | 27 356 728 560 (≈27,4 B) |
 | Parametros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | 512 000 tokens (512K) |
@@ -23,7 +23,7 @@ La relevancia actual del modelo radica en su enfoque "code-first" para la genera
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del modelo base Qwen3.8-27B, por lo que hereda una arquitectura transformer densa de aproximadamente 27,4 B de parámetros. La model card no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO. Tampoco se especifican innovaciones arquitectónicas propias más allá de las del modelo base. El tag `qwen3_5` en HuggingFace sugiere una variante de la familia Qwen3.5/Qwen3.8, pero no se aporta documentación técnica adicional al respecto.
+El modelo es un ajuste fino del modelo base Qwen3.8-27B, por lo que hereda una arquitectura transformer densa de aproximadamente 27,4 B de parámetros. La model card no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO. Tampoco se especifican innovaciones arquitectónicas propias más allá de las del modelo base. El tag `qwen3_5` en Hugging Face sugiere una variante de la familia Qwen3.5/Qwen3.8, pero no se aporta documentación técnica adicional al respecto.
 
 La innovación principal del modelo no es arquitectónica sino de enfoque: está entrenado para producir código ejecutable que construye y renderiza vídeo, en lugar de generar vídeo de forma directa. La model card indica que el modelo "construye y renderiza vídeos generando código ejecutable" y que se centra en vídeos cortos implementados íntegramente en código. Se menciona también que el código puede encadenar otros modelos y herramientas (generación de imagen, generación de vídeo, modelado 3D, edición), lo que sugiere un entrenamiento orientado a trayectorias agénticas con uso de herramientas, aunque no se documentan los detalles del proceso.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SenseNova 6.8 Code2Video | ≈27,4 B | 512K | Generación de vídeo mediante código, agéntico | Apache 2.0 | HuggingFace (24 descargas) |
-| Qwen3.8-27B (modelo base) | ≈27 B | no disponible en esta ficha | LLM generalista | según el modelo base | HuggingFace |
+| SenseNova 6.8 Code2Video | ≈27,4 B | 512K | Generación de vídeo mediante código, agéntico | Apache 2.0 | Hugging Face (24 descargas) |
+| Qwen3.8-27B (modelo base) | ≈27 B | no disponible en esta ficha | LLM generalista | según el modelo base | Hugging Face |
 | Alternativas de generación de vídeo por código | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con modelos de la misma categoría (generación de vídeo mediante código) ni con alternativas de tamaño similar en términos de rendimiento, ya que no se han publicado benchmarks.
@@ -83,8 +83,8 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Reger-Chen/SenseNova-6.8-Code2Video
-- Repositorio del autor en HuggingFace: https://huggingface.co/sensenova/SenseNova-6.8-Code2Video
+- Hugging Face: https://huggingface.co/Reger-Chen/SenseNova-6.8-Code2Video
+- Repositorio del autor en Hugging Face: https://huggingface.co/sensenova/SenseNova-6.8-Code2Video
 - GitHub (skill y prompts): https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video
 - Trayectorias de ejemplo: https://huggingface.co/sensenova/SenseNova-6.8-Code2Video/blob/main/trajectories/all.openai.jsonl
 - Skill de producción: https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video/tree/main/skills/code-video

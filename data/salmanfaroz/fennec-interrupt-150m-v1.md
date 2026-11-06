@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fennec-interrupt-150m-v1 | 149,6 M | 96 tokens (efectivo) | Clasificacion de interrupcion, 10 clases | Apache 2.0 | HuggingFace |
-| fennec-handoff-150m-v1 | no disponible (mismo autor, gama 150 M) | no disponible | Modelo hermano del mismo pipeline de voz; tarea de handoff | no disponible | HuggingFace |
-| ozonetg/bargein-classifier-ettin-150m | gama 150 M (familia Ettin) | no disponible | Clasificacion de barge-in; origen del codigo de normalizacion reutilizado | MIT (segun la model card) | HuggingFace |
+| fennec-interrupt-150m-v1 | 149,6 M | 96 tokens (efectivo) | Clasificacion de interrupcion, 10 clases | Apache 2.0 | Hugging Face |
+| fennec-handoff-150m-v1 | no disponible (mismo autor, gama 150 M) | no disponible | Modelo hermano del mismo pipeline de voz; tarea de handoff | no disponible | Hugging Face |
+| ozonetg/bargein-classifier-ettin-150m | gama 150 M (familia Ettin) | no disponible | Clasificacion de barge-in; origen del codigo de normalizacion reutilizado | MIT (segun la model card) | Hugging Face |
 
 No se dispone de datos publicados que permitan comparar rendimiento (exactitud, F1) entre estas alternativas; la comparativa se limita a tamano, licencia y disponibilidad.
 
@@ -90,7 +90,7 @@ No se dispone de datos publicados que permitan comparar rendimiento (exactitud, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SalmanFaroz/fennec-interrupt-150m-v1
+- Modelo en Hugging Face: https://huggingface.co/SalmanFaroz/fennec-interrupt-150m-v1
 - Modelo base ModernBERT-base: https://huggingface.co/answerdotai/ModernBERT-base
 - Modelo hermano fennec-handoff-150m-v1: https://huggingface.co/SalmanFaroz/fennec-handoff-150m-v1
 - Repositorio del pipeline de voz completo (VAD, STT, LLM, TTS, UI): https://github.com/stsfaroz/fennec-voice

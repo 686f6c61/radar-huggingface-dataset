@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-z-image-base-84000-zhenzhen-lokr-weights-lora",
+  "slug": "runninghubai-rh-z-image-base-84000-zhenzhen-lokr-weights-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-z-image-base-84000-zhenzhen-lokr-weights-lora",
+  "created_at": "2026-11-06T11:30:04.000Z",
+  "updated_at": "2026-11-06T11:31:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 770353744,
+  "storage_human": "770 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "z-image-base-84000-zhenzhen-lokr_weights - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2018764095255744513",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-z-imagebase-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-z-imagebase-lora",
+      "snippet": "这是以阿里造相Z-Image-base调试的创意风格lora，在原生模型基础上加入唐宋国风摄影和光感特效进行过渡优化，主要加强东方国风人像风格， 体现了古风写意，完美的构图表达， 泛用性强，可适用于摄影图，壁纸，电商模特素材 ..."
+    }
+  ]
+}

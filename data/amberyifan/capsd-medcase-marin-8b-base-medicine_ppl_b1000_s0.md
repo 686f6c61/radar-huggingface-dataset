@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables. El modelo base `marin-c
 
 ## Enlaces
 
-- [HuggingFace - AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b1000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b1000_s0)
+- [Hugging Face - AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b1000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b1000_s0)
 - [Modelo base: marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base)
 - [Variante similar: capsd-medcase-marin-8b-base-medicine_cap_b1000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b1000_s0)
 - [Variante de código: capsd-marin-8b-base-code_ifd_b1000_s0](https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_ifd_b1000_s0)

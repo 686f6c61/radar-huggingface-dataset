@@ -17,7 +17,7 @@ Arquitectónicamente hereda todo de Llama 3.2 3B Instruct: es un transformer dec
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no confirmada en la informacion proporcionada (el modelo base Llama-3.2-3B-Instruct se distribuye habitualmente con 128.000 tokens de contexto, pero la model card no lo especifica) |
 | Tipos de cuantizacion | no disponible en el repositorio; solo se publican pesos sin cuantizar en safetensors |
-| Idiomas soportados | no disponible (el campo de idiomas de HuggingFace esta vacio; el modelo base Llama 3.2 declara soporte oficial para 8 idiomas, pero no se confirma para este checkpoint) |
+| Idiomas soportados | no disponible (el campo de idiomas de Hugging Face esta vacio; el modelo base Llama 3.2 declara soporte oficial para 8 idiomas, pero no se confirma para este checkpoint) |
 | Licencia | llama3.2 (Llama 3.2 Community License) |
 | Formato de pesos | safetensors (libreria `transformers`, `pipeline_tag: text-generation`) |
 | Dataset de olvido | locuslab/TOFU, split `forget01` |
@@ -83,10 +83,10 @@ No se han publicado en la informacion disponible resultados de benchmarks genera
 
 | Modelo | Parametros | Contexto | Olvido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tofu_Llama-3.2-3B-Instruct_forget01_SatImp | 3.212.749.824 | no disponible | Si, split `forget01` de TOFU con SatImp | llama3.2 | HuggingFace, 0 descargas, 0 likes |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full (modelo base) | 3.212.749.824 | no disponible | No, es el modelo ajustado con TOFU completo | llama3.2 | HuggingFace |
-| Llama-3.2-3B-Instruct (modelo original) | 3.212.749.824 | 128.000 tokens (segun ficha oficial de Llama 3.2) | No | llama3.2 | HuggingFace / Meta |
-| Otros metodos de olvido del ecosistema open-unlearning (NPO, SimNPO, etc.) | 3.212.749.824 en las variantes Llama 3.2 3B | no disponible | Si, segun metodo | llama3.2 | HuggingFace / repositorio open-unlearning |
+| tofu_Llama-3.2-3B-Instruct_forget01_SatImp | 3.212.749.824 | no disponible | Si, split `forget01` de TOFU con SatImp | llama3.2 | Hugging Face, 0 descargas, 0 likes |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full (modelo base) | 3.212.749.824 | no disponible | No, es el modelo ajustado con TOFU completo | llama3.2 | Hugging Face |
+| Llama-3.2-3B-Instruct (modelo original) | 3.212.749.824 | 128.000 tokens (segun ficha oficial de Llama 3.2) | No | llama3.2 | Hugging Face / Meta |
+| Otros metodos de olvido del ecosistema open-unlearning (NPO, SimNPO, etc.) | 3.212.749.824 en las variantes Llama 3.2 3B | no disponible | Si, segun metodo | llama3.2 | Hugging Face / repositorio open-unlearning |
 
 No se dispone de datos numericos comparativos entre estos modelos en la informacion proporcionada, mas alla de la tabla de metricas TOFU de este checkpoint.
 
@@ -104,9 +104,9 @@ No se dispone de datos numericos comparativos entre estos modelos en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_SatImp
+- Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_SatImp
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

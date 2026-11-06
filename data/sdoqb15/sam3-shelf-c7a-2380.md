@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAM3 Shelf C7-A (este) | 840.376.374 | no disponible | Segmentación de estanterías | SAM | HuggingFace (sdoqb15) |
-| facebook/sam3 (base) | no disponible | no disponible | Segmentación general | SAM | HuggingFace (Meta) |
-| SAM3 Shelf D2-2261 | no disponible | no disponible | Segmentación de estanterías | SAM | HuggingFace (sdoqb15) |
+| SAM3 Shelf C7-A (este) | 840.376.374 | no disponible | Segmentación de estanterías | SAM | Hugging Face (sdoqb15) |
+| facebook/sam3 (base) | no disponible | no disponible | Segmentación general | SAM | Hugging Face (Meta) |
+| SAM3 Shelf D2-2261 | no disponible | no disponible | Segmentación de estanterías | SAM | Hugging Face (sdoqb15) |
 
 El modelo companion `sdoqb15/sam3-shelf-d2-2261` usa el mismo método conjunto con un pool de datos ampliado y no se inicializa desde C7-A. No se dispone de datos de benchmarks para comparar rendimiento numérico entre ellos.
 
@@ -86,7 +86,7 @@ El modelo companion `sdoqb15/sam3-shelf-d2-2261` usa el mismo método conjunto c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sdoqb15/sam3-shelf-c7a-2380
+- Modelo en Hugging Face: https://huggingface.co/sdoqb15/sam3-shelf-c7a-2380
 - Modelo companion: https://huggingface.co/sdoqb15/sam3-shelf-d2-2261
 - Código asociado: https://github.com/sdoqb15/sam3_shelf
 - Definición del problema: https://github.com/sdoqb15/sam3_shelf/blob/main/docs/problem_statement.md

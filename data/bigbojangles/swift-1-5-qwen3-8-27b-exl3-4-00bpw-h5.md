@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BigBojangles/Swift-1.5-Qwen3.8-27b-EXL3-4.00bpw-H5
+- Modelo en Hugging Face: https://huggingface.co/BigBojangles/Swift-1.5-Qwen3.8-27b-EXL3-4.00bpw-H5
 - Modelo padre (UkisAI Swift 1.5 Qwen3.8-27b): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Modelo base (Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B
 - Página de Swift 1.5 con comparativas: https://ukisai.com/swift-1-5-27b

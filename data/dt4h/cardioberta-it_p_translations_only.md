@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada: aproximadamente 0,44 GB en FP32 y 0,22 GB en FP16, por lo que cabe en cualquier GPU de consumo actual, incluso con 4 GB de VRAM
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1660, RTX 2060, RTX 3060, etc.); también funciona correctamente en CPU para inferencia por lotes pequeños
-- Opciones de despliegue: transformers (HuggingFace), sentence-transformers, text-embeddings-inference (compatible según los tags del repositorio)
+- Opciones de despliegue: transformers (Hugging Face), sentence-transformers, text-embeddings-inference (compatible según los tags del repositorio)
 - Latencia: al ser un modelo de ~110M parámetros, la inferencia es rápida; en GPU puede procesar cientos de secuencias por segundo, aunque no se han publicado cifras concretas
 
 ## Comparativa con modelos similares
@@ -85,9 +85,9 @@ La comparación con alternativas de la misma categoría es limitada porque la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.it_P_translations_only
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.it_P_translations_only
 - Modelo base CardioBERTa.it: https://huggingface.co/DT4H/CardioBERTa.it
 - CardioBERTa.en: https://huggingface.co/DT4H/CardioBERTa.en
-- Organización DataTools4Heart en HuggingFace: https://huggingface.co/DT4H
+- Organización DataTools4Heart en Hugging Face: https://huggingface.co/DT4H
 - Proyecto DataTools4Heart: https://www.datatools4heart.eu/
 - GitHub de DataTools4Heart: https://github.com/DataTools4Heart/

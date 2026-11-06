@@ -66,7 +66,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-support-lora16-all-yaw20 (este) | Modelo base no especificado; 40 factores LoRA rango 16 | No disponible | LIBERO: 1632/2000 (81,6 %) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| pi05-libero-support-lora16-all-yaw20 (este) | Modelo base no especificado; 40 factores LoRA rango 16 | No disponible | LIBERO: 1632/2000 (81,6 %) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Otros adaptadores LoRA de openpi para LIBERO | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Políticas VLA de referencia (pi0, OpenVLA, GR00T N1) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-lora16-all-yaw20-n50000-10000-20261016
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-lora16-all-yaw20-n50000-10000-20261016
 - Checkpoint fuente: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015 (commit `ea4f0bb2001e12d701af8a294f91da437e857f55`)
 - Checkpoint destino: https://huggingface.co/Donghyun1228/libero-support-random-waypoint-300k-yaw20-20261015 (commit `c2740cc2b3ee69ee1488d835f4358b33c255cdb8`)
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo, el proyecto openpi ni el benchmark LIBERO; los enlaces obtenidos correspondían a contenido no relacionado y se han descartado. No se dispone de papers, blogs, repositorios ni demos adicionales verificables en la información proporcionada.

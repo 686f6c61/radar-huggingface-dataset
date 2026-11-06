@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks numéricos (tasas de éxito, MMLU, 
 
 | Modelo | Parámetros | Contexto | Frecuencia de control | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IMLE-VLA (DROID) | no disponible | no disponible | 55 Hz (L40S, horizonte 12) | Apache 2.0 | HuggingFace `kinster/IMLE-VLA` |
+| IMLE-VLA (DROID) | no disponible | no disponible | 55 Hz (L40S, horizonte 12) | Apache 2.0 | Hugging Face `kinster/IMLE-VLA` |
 | π₀.₅ (openpi) | no disponible | no disponible | 15 Hz (L40S) | Apache 2.0 | openpi (Physical Intelligence) |
 | Otros VLA (no especificados) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ La comparación directa disponible es con π₀.₅, del que IMLE-VLA hereda el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kinster/IMLE-VLA
+- Hugging Face: https://huggingface.co/kinster/IMLE-VLA
 - Paper (arXiv): https://arxiv.org/abs/2609.10915
 - Página del proyecto: https://kianhk6.github.io/IMLE-VLA/
 - Código: https://github.com/kianhk6/IMLE-VLA

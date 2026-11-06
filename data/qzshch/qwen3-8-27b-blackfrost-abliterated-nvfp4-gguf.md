@@ -76,7 +76,7 @@ La principal diferencia frente a otras versiones GGUF es el uso de NVFP4, que of
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qzshch/Qwen3.8-27B-Blackfrost-Abliterated-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qzshch/Qwen3.8-27B-Blackfrost-Abliterated-NVFP4-GGUF
 - Modelo base abliterado (BF16): https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Modelo Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

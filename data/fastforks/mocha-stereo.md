@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoCha-Stereo es un modelo de estimación de disparidad estéreo (stereo matching) orientado a la obtención de mapas de profundidad a partir de un par de imágenes izquierda/derecha rectificadas. Fue propuesto originalmente por Chen et al. en 2024 y esta ficha documenta la reconstrucción no oficial `fastforks/mocha-stereo`, un envoltorio que no aloja pesos propios sino que descarga los ficheros publicados por los autores originales y los verifica mediante SHA-256. El repositorio de HuggingFace es únicamente una model card: no contiene pesos.
+MoCha-Stereo es un modelo de estimación de disparidad estéreo (stereo matching) orientado a la obtención de mapas de profundidad a partir de un par de imágenes izquierda/derecha rectificadas. Fue propuesto originalmente por Chen et al. en 2024 y esta ficha documenta la reconstrucción no oficial `fastforks/mocha-stereo`, un envoltorio que no aloja pesos propios sino que descarga los ficheros publicados por los autores originales y los verifica mediante SHA-256. El repositorio de Hugging Face es únicamente una model card: no contiene pesos.
 
 La arquitectura combina un extractor de características EfficientNetV2-L, un volumen de correlación por canales tipo *motif* junto a un volumen geométrico de estilo IGEV, actualizaciones de un LSTM Mogrifier a tres niveles y una etapa de refinamiento, todo ello con 32 iteraciones de actualización. La variante `mocha-v2-sceneflow` es una reconstrucción no oficial, ya que los autores no publicaron el código de la V2. Los pesos disponibles se entrenaron sobre el dataset sintético Freiburg SceneFlow (FlyingThings3D, Driving, Monkaa).
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de *stereo m
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/mocha-stereo
+- Model card en Hugging Face: https://huggingface.co/fastforks/mocha-stereo
 - Repositorio de código fastforks: https://github.com/kleinicke/fastforks
 - Kernels CUDA: https://huggingface.co/fastforks/kernels
 - Código original de MoCha-Stereo (commit fijado): https://github.com/ZYangChen/MoCha-Stereo/tree/78c5889c467fe31414c9425f1280afc0a8f6c1a0

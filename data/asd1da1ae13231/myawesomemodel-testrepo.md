@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace bajo el identificador `ASD1DA1AE13231/MyAwesomeModel-TestRepo` por el usuario ASD1DA1AE13231. Los metadatos de HuggingFace lo etiquetan como un modelo de la librería transformers, con pesos en PyTorch, arquitectura declarada `bert` y pipeline `feature-extraction`, bajo licencia MIT. El repositorio registra 0 descargas y 0 likes, y su propio nombre incluye el sufijo "TestRepo", lo que apunta a un espacio de pruebas más que a un artefacto listo para producción.
+MyAwesomeModel es un modelo publicado en Hugging Face bajo el identificador `ASD1DA1AE13231/MyAwesomeModel-TestRepo` por el usuario ASD1DA1AE13231. Los metadatos de Hugging Face lo etiquetan como un modelo de la librería transformers, con pesos en PyTorch, arquitectura declarada `bert` y pipeline `feature-extraction`, bajo licencia MIT. El repositorio registra 0 descargas y 0 likes, y su propio nombre incluye el sufijo "TestRepo", lo que apunta a un espacio de pruebas más que a un artefacto listo para producción.
 
 La model card, sin embargo, describe algo muy distinto: un modelo generativo conversacional con "modo de razonamiento", mejoras en profundidad de inferencia, soporte de function calling, integración con subida de ficheros y búsqueda web con citas. Según ese documento, el modelo habría pasado de un 70 % a un 87,5 % de acierto en AIME 2025 respecto a la versión anterior, consumiendo una media de 23 000 tokens por pregunta frente a los 12 000 de la versión previa. No se indica en ningún momento el número de parámetros, la longitud de contexto ni el volumen de tokens de entrenamiento.
 
@@ -12,7 +12,7 @@ Existe por tanto una contradicción no resuelta entre los metadatos técnicos (B
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Tag de HuggingFace: `bert`. La model card describe un modelo generativo de razonamiento, sin especificar arquitectura. Dato contradictorio, no confirmado |
+| Arquitectura | Tag de Hugging Face: `bert`. La model card describe un modelo generativo de razonamiento, sin especificar arquitectura. Dato contradictorio, no confirmado |
 | Parametros totales | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -85,7 +85,7 @@ Además, la introducción afirma una subida de 70 % a 87,5 % en AIME 2025 respec
 - Si el modelo es un encoder tipo BERT de tamaño base (aproximadamente 110 millones de parámetros), cabría en cualquier GPU de consumo con 4-6 GB de VRAM en FP16, e incluso en CPU para cargas por lotes pequeños. Esto es una hipótesis basada en la etiqueta `bert`, no un dato confirmado.
 - Si el modelo es un LLM generativo del orden de decenas de miles de millones de parámetros, tal como sugieren los benchmarks reportados, necesitaría una o varias GPU de数据中心 (A100 80 GB, H100) o cuantización agresiva para caber en una RTX 4090 de 24 GB.
 - GPU recomendadas: no disponible.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI. La model card remite a un repositorio de código no enlazado.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI. La model card remite a un repositorio de código no enlazado.
 - Latencia y throughput: no disponible. El único dato relacionado es el consumo medio de 23 000 tokens de generación por pregunta en AIME, lo que implica latencias altas en tareas de razonamiento.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Limitaciones y advertencias
 
-- Contradicción estructural: las etiquetas de HuggingFace indican `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento con modo thinking. No se puede determinar cuál es correcta.
+- Contradicción estructural: las etiquetas de Hugging Face indican `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento con modo thinking. No se puede determinar cuál es correcta.
 - El nombre del repositorio incluye "TestRepo", y el repositorio acumula 0 descargas y 0 likes, lo que sugiere que es un espacio de pruebas y no un artefacto con soporte.
 - Los benchmarks reportados usan modelos comparativos anonimizados y categorías genéricas sin metodología, por lo que no son reproducibles ni auditables.
 - La afirmación de "tasa de alucinación reducida" no viene acompañada de ninguna métrica, conjunto de evaluación ni definición operativa.
@@ -106,7 +106,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ASD1DA1AE13231/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/ASD1DA1AE13231/MyAwesomeModel-TestRepo
 - Repositorio de codigo: mencionado en la model card ("our code repository") pero sin URL proporcionada. No disponible.
 - Sitio web oficial y plataforma de API: mencionados en la model card ("our official website") pero sin URL proporcionada. No disponible.
 - Paper o informe tecnico: no disponible.

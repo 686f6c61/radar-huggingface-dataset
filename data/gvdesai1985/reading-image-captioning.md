@@ -4,7 +4,7 @@
 
 `gvdesai1985/reading-image-captioning` no es un modelo entrenado, sino un repositorio de notas de investigación (*research notes*) sobre captioning de imágenes. La model card lo declara explícitamente: el artefacto principal es `review.md`, un documento que describe el alcance de una pregunta de investigación, posibles factores de confusión, un diseño de comparación con líneas base emparejadas y un contexto de evaluación propuesto en torno a MS COCO Captions, NoCaps y TextCaps. El autor indica que el documento es exploratorio y que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni ningún checkpoint entrenado.
 
-Los metadatos de HuggingFace resultan engañosos si se leen de forma aislada: el repositorio aparece etiquetado como `transformer` y `safetensors`, con un recuento de 24.832 parámetros totales y un tamaño de 0,0 GB. Es decir, no hay un modelo de captioning utilizable: no existe codificador visual, no hay tokenizador documentado, no hay pipeline declarado y no hay resultados. Cualquier uso práctico requeriría un checkpoint real, que este repositorio no contiene.
+Los metadatos de Hugging Face resultan engañosos si se leen de forma aislada: el repositorio aparece etiquetado como `transformer` y `safetensors`, con un recuento de 24.832 parámetros totales y un tamaño de 0,0 GB. Es decir, no hay un modelo de captioning utilizable: no existe codificador visual, no hay tokenizador documentado, no hay pipeline declarado y no hay resultados. Cualquier uso práctico requeriría un checkpoint real, que este repositorio no contiene.
 
 La relevancia de esta ficha es, por tanto, principalmente documental y de evaluación crítica: sirve para identificar un artefacto que no debe confundirse con un modelo desplegable, y para describir qué contiene realmente (notas, referencias y un plan de verificación) frente a lo que su etiquetado sugiere. Los resultados de búsqueda web proporcionados no contienen enlaces pertinentes al repositorio ni al tema, por lo que no se han incorporado.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es, por tanto, principalmente documental y de evalua
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No documentada. Los metadatos de HuggingFace incluyen la etiqueta `transformer`, pero la model card no describe la arquitectura de ningún modelo entrenado |
+| Arquitectura | No documentada. Los metadatos de Hugging Face incluyen la etiqueta `transformer`, pero la model card no describe la arquitectura de ningún modelo entrenado |
 | Parametros totales | 24.832 (según metadatos de safetensors; el autor no lo documenta ni lo explica) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -46,7 +46,7 @@ Los siguientes escenarios se refieren a lo que el documento propone estudiar o a
 - Diseño de un protocolo de evaluación: aprovechar la propuesta de contexto de evaluación (MS COCO Captions, NoCaps, TextCaps) para definir conjuntos de test y métricas antes de entrenar un modelo propio.
 - Identificación de factores de confusión: emplear la lista de confounders del documento para revisar sesgos de dataset y de métrica en experimentos de captioning ya existentes.
 - Plantilla de reproducibilidad: reutilizar la exigencia del autor (versiones de dataset, comandos, semillas, hardware, logs en bruto) como checklist interna para publicar resultados de visión-lenguaje.
-- Auditoría de artefactos en HuggingFace: este repositorio sirve como caso práctico para distinguir entre etiquetas de modelo y contenido real antes de integrar una dependencia.
+- Auditoría de artefactos en Hugging Face: este repositorio sirve como caso práctico para distinguir entre etiquetas de modelo y contenido real antes de integrar una dependencia.
 - Docencia y seminarios: material para discutir la diferencia entre hipótesis, plan experimental y resultado publicado en investigación en IA.
 
 ## Benchmarks y rendimiento
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El recuento declarado de 24.832 parámetros es, en la práctica, ejecutable en CPU; sin embargo, un modelo de ese tamaño no puede realizar captioning de imágenes, ya que carece de codificador visual y de vocabulario documentado.
 - GPU recomendadas: no disponibles (no hay modelo que desplegar).
 - Compatibilidad con GPU de consumo: irrelevante en el estado actual; cualquier dispositivo podría cargar un tensor de ese tamaño, pero no produciría salidas útiles.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): ninguna aplicable; no hay pipeline declarado en HuggingFace y el repositorio no incluye código de servicio.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): ninguna aplicable; no hay pipeline declarado en Hugging Face y el repositorio no incluye código de servicio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -85,5 +85,5 @@ No disponible. No se puede establecer una comparación técnica con modelos de c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gvdesai1985/reading-image-captioning
+- Hugging Face: https://huggingface.co/gvdesai1985/reading-image-captioning
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este artefacto.

@@ -78,7 +78,7 @@ La comparativa muestra que el modelo tiene el mismo tamaño que Mistral-7B y Lla
 
 ## Enlaces
 
-- [HuggingFace: localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed5)
+- [Hugging Face: localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed5)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Repositorio OLMo en GitHub (AI2)](https://github.com/allenai/OLMo)
 - [Variante similar en FriendliAI](https://friendli.ai/models/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-sft) (modelo de otro autor con nombre parecido)</think>## Resumen
@@ -157,7 +157,7 @@ La comparativa muestra que el modelo tiene el mismo tamaño que Mistral-7B y es 
 
 ## Enlaces
 
-- [HuggingFace: localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed5)
+- [Hugging Face: localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed5)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Repositorio OLMo en GitHub (AI2)](https://github.com/allenai/OLMo)
 - [Variante similar en FriendliAI](https://friendli.ai/models/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-sft-third) (modelo de otro autor con contenido similar)</think>## Resumen

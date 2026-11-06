@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tofu-phi-1_5-forget10-ihl_embed-epoch07` es un checkpoint de investigación publicado por el usuario g-assismoraes en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo `locuslab/tofu_ft_phi-1.5`, que a su vez deriva de `microsoft/phi-1_5`. El objetivo declarado en la model card es aplicar una técnica denominada "IHL + Reset Both" sobre el conjunto de datos TOFU (Task of Fictitious Unlearning) en su variante `forget10`, correspondiente al epoch 7 de 20 de un proceso de entrenamiento.
+El modelo `tofu-phi-1_5-forget10-ihl_embed-epoch07` es un checkpoint de investigación publicado por el usuario g-assismoraes en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo `locuslab/tofu_ft_phi-1.5`, que a su vez deriva de `microsoft/phi-1_5`. El objetivo declarado en la model card es aplicar una técnica denominada "IHL + Reset Both" sobre el conjunto de datos TOFU (Task of Fictitious Unlearning) en su variante `forget10`, correspondiente al epoch 7 de 20 de un proceso de entrenamiento.
 
 La propuesta técnica es un experimento de *machine unlearning* (desaprendizaje): se reinicializan los embeddings de entrada y la cabeza del modelo de lenguaje (LM head) a partir de los pesos originales de `microsoft/phi-1_5`, mientras que el resto de pesos del Transformer se conservan del modelo ajustado con TOFU. La función de pérdida combina un término IHL (probablemente "Influence-based Hessian Loss" o similar, no especificado) sobre el conjunto *forget* y una entropía cruzada (CE) con peso 1.0 sobre el conjunto *retain*.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch07 | 1.4B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint de investigación en unlearning |
-| locuslab/tofu_ft_phi-1.5 | ~1.3B | no disponible | no disponible en esta ficha | HuggingFace | Modelo base ajustado con TOFU |
-| microsoft/phi-1_5 | 1.3B | 2048 tokens (según documentación pública de Phi-1.5) | MIT (según documentación pública) | HuggingFace | Modelo original de generación de código |
-| locuslab/tofu_llama2-7b | 7B | no disponible | no disponible en esta ficha | HuggingFace | Alternativa de mayor tamaño para experimentos TOFU |
+| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch07 | 1.4B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint de investigación en unlearning |
+| locuslab/tofu_ft_phi-1.5 | ~1.3B | no disponible | no disponible en esta ficha | Hugging Face | Modelo base ajustado con TOFU |
+| microsoft/phi-1_5 | 1.3B | 2048 tokens (según documentación pública de Phi-1.5) | MIT (según documentación pública) | Hugging Face | Modelo original de generación de código |
+| locuslab/tofu_llama2-7b | 7B | no disponible | no disponible en esta ficha | Hugging Face | Alternativa de mayor tamaño para experimentos TOFU |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch07
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch07
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

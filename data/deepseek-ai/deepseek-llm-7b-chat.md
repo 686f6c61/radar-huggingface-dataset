@@ -3,14 +3,14 @@
 ## Resumen
 DeepSeek LLM 7B Chat es un modelo de lenguaje de 7.000 millones de parámetros desarrollado por DeepSeek (deepseek-ai). Se trata de la versión afinada para conversación del modelo base `deepseek-llm-7b-base`, entrenado desde cero sobre un conjunto de datos de 2 billones de tokens en inglés y chino. El modelo se distribuye bajo una licencia propia de DeepSeek que permite uso comercial, lo que lo hace relevante para investigación y aplicaciones productivas.
 
-La arquitectura es un transformer decoder-only, etiquetado como tipo "llama" en HuggingFace, aunque no se detallan innovaciones arquitectónicas específicas en la información proporcionada. El modelo está optimizado para generación de texto y diálogo multi-turno, con soporte nativo para inglés y chino. No se especifica la longitud de contexto en la model card, un dato que puede ser crítico para evaluar su idoneidad en tareas de contexto largo.
+La arquitectura es un transformer decoder-only, etiquetado como tipo "llama" en Hugging Face, aunque no se detallan innovaciones arquitectónicas específicas en la información proporcionada. El modelo está optimizado para generación de texto y diálogo multi-turno, con soporte nativo para inglés y chino. No se especifica la longitud de contexto en la model card, un dato que puede ser crítico para evaluar su idoneidad en tareas de contexto largo.
 
 Su publicación en noviembre de 2023, junto con las versiones base y chat de 7B y 67B, forma parte del compromiso de DeepSeek con el código abierto. La disponibilidad de pesos, la licencia comercial y la integración con el ecosistema Transformers lo convierten en una alternativa a considerar frente a otros modelos de 7B como Llama 2 o Mistral 7B, especialmente para aplicaciones que requieran bilingüismo inglés-chino.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (tipo Llama, segun tag de HuggingFace) |
+| Arquitectura | Transformer decoder-only (tipo Llama, segun tag de Hugging Face) |
 | Parametros totales | 7 mil millones |
 | Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | no disponible |
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Opciones de despliegue:
   - Transformers (PyTorch) con `device_map="auto"` y `torch_dtype=torch.bfloat16`.
   - Text Generation Inference (TGI), ya que el modelo incluye el tag `text-generation-inference`.
-  - Endpoints compatibles de HuggingFace (tag `endpoints_compatible`).
+  - Endpoints compatibles de Hugging Face (tag `endpoints_compatible`).
   - vLLM: compatible con arquitecturas tipo Llama, aunque no está listado explícitamente.
   - llama.cpp / Ollama: requeriría conversión a GGUF, no disponible en el repositorio original.
 - Latencia y throughput estimados: no disponibles.
@@ -86,7 +86,7 @@ La siguiente tabla compara especificaciones públicas de modelos de tamaño simi
 - No se han publicado resultados de benchmarks, por lo que la evaluación de su rendimiento relativo frente a alternativas requiere pruebas propias.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
+- Hugging Face: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Repositorio GitHub: https://github.com/deepseek-ai/deepseek-LLM
 - Página principal de DeepSeek: https://www.deepseek.com/
 - Chat con DeepSeek LLM: https://chat.deepseek.com/

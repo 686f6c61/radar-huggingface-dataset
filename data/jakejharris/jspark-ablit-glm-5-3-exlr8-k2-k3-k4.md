@@ -2,9 +2,9 @@
 
 ## Resumen
 
-jspark-ablit-glm-5.3-exlr8-k2-k3-k4 es una variante experimental del modelo GLM-5.3 publicada por el usuario jakejharris en HuggingFace. Se construye como un ajuste fino del checkpoint kindlingai/glm-5.3-exlr8-k2-k3-k4, al que se le han aplicado tecnicas de abliteration (eliminacion de direcciones de rechazo en el espacio de activaciones) y de steering (modificacion dirigida del comportamiento mediante vectores de control). El resultado es un modelo de la familia GLM con arquitectura de mezcla de expertos (etiqueta glm_moe_dsa) orientado a generacion de texto en ingles y chino sin los sesgos de rechazo habituales del modelo original.
+jspark-ablit-glm-5.3-exlr8-k2-k3-k4 es una variante experimental del modelo GLM-5.3 publicada por el usuario jakejharris en Hugging Face. Se construye como un ajuste fino del checkpoint kindlingai/glm-5.3-exlr8-k2-k3-k4, al que se le han aplicado tecnicas de abliteration (eliminacion de direcciones de rechazo en el espacio de activaciones) y de steering (modificacion dirigida del comportamiento mediante vectores de control). El resultado es un modelo de la familia GLM con arquitectura de mezcla de expertos (etiqueta glm_moe_dsa) orientado a generacion de texto en ingles y chino sin los sesgos de rechazo habituales del modelo original.
 
-El repositorio ocupa 837,5 GB y se distribuye en formato safetensors, con acceso restringido: es necesario aceptar condiciones en HuggingFace para descargarlo. La licencia declarada es glm-5.3-license (etiquetada como "other"), lo que condiciona su uso comercial. Es un modelo con cero descargas y un "me gusta" en el momento de la consulta, creado y actualizado el 12 de octubre de 2026, lo que indica que se trata de una publicacion muy reciente y sin adopcion documentada.
+El repositorio ocupa 837,5 GB y se distribuye en formato safetensors, con acceso restringido: es necesario aceptar condiciones en Hugging Face para descargarlo. La licencia declarada es glm-5.3-license (etiquetada como "other"), lo que condiciona su uso comercial. Es un modelo con cero descargas y un "me gusta" en el momento de la consulta, creado y actualizado el 12 de octubre de 2026, lo que indica que se trata de una publicacion muy reciente y sin adopcion documentada.
 
 Por su naturaleza de derivado abliterado y experimental, no dispone de benchmarks publicados ni de documentacion tecnica propia mas alla de las etiquetas del repositorio. Su relevancia actual es acotada: interesa a investigadores que estudian tecnicas de eliminacion de rechazo, a equipos de red-teaming y a quienes necesitan un modelo GLM-5.3 con comportamiento sin restricciones de seguridad para experimentacion controlada.
 
@@ -56,7 +56,7 @@ No se documenta el proceso de entrenamiento de este checkpoint concreto. Se sabe
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye tablas de MMLU, HumanEval, GSM8K ni de tasas de rechazo en la ficha de HuggingFace, y los benchmarks publicos a los que apuntan los repositorios relacionados (jspark3, glm53-tensorfold-spark) corresponden a recetas de servido sobre GLM-5.3 Flash, no a esta variante abliterada concreta. No se deben extrapolar esos resultados a este checkpoint.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye tablas de MMLU, HumanEval, GSM8K ni de tasas de rechazo en la ficha de Hugging Face, y los benchmarks publicos a los que apuntan los repositorios relacionados (jspark3, glm53-tensorfold-spark) corresponden a recetas de servido sobre GLM-5.3 Flash, no a esta variante abliterada concreta. No se deben extrapolar esos resultados a este checkpoint.
 
 ## Requisitos de hardware
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes de parametros, contexto ni rendimiento para e
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated y exige aceptar condiciones en HuggingFace antes de la descarga, lo que complica la reproducibilidad y la automatizacion.
+- Acceso restringido: el modelo es gated y exige aceptar condiciones en Hugging Face antes de la descarga, lo que complica la reproducibilidad y la automatizacion.
 - Licencia glm-5.3-license: es una licencia "other" especifica de la familia GLM-5.3 cuyos terminos no se detallan en la informacion proporcionada. Antes de cualquier uso comercial hay que revisar el texto completo, ya que puede imponer restricciones de atribucion o de uso.
 - Ausencia de datos tecnicos: no se publican parametros, contexto, datos de entrenamiento ni evaluaciones, lo que impide estimar calidad, coste real de inferencia o comportamiento esperado.
 - Sin adopcion documentada: cero descargas y un solo "me gusta" implican que no hay validacion independiente ni reportes de fallos.
@@ -94,9 +94,9 @@ No se dispone de datos suficientes de parametros, contexto ni rendimiento para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jakejharris/jspark-ablit-glm-5.3-exlr8-k2-k3-k4
+- Modelo en Hugging Face: https://huggingface.co/jakejharris/jspark-ablit-glm-5.3-exlr8-k2-k3-k4
 - Modelo base: https://huggingface.co/kindlingai/glm-5.3-exlr8-k2-k3-k4
-- Repositorio jspark3 en HuggingFace: https://huggingface.co/jakejharris/jspark3
+- Repositorio jspark3 en Hugging Face: https://huggingface.co/jakejharris/jspark3
 - Repositorio jspark3 en GitHub (receta de servido TP3 sobre tres DGX Spark): https://github.com/jakejharris/jspark3
 - Documentacion de JSPARK3 v1.8: https://jakejh.com/jspark3/glm/?v=1.8
 - Repositorio glm53-tensorfold-spark en GitHub (GLM-5.3-Flash abliterado EXL3 sobre 2x DGX Spark con TensorFold): https://github.com/jayleaton/glm53-tensorfold-spark

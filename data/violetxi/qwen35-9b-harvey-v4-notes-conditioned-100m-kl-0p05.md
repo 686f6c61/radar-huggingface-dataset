@@ -108,7 +108,7 @@ Para modelos alternativos de ~9B con licencia y contexto comparables, los datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m-kl-0p05
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m-kl-0p05
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de replay KL (harvey-kl-ground-sessions): https://huggingface.co/datasets/violetxi/harvey-kl-ground-sessions/tree/5ae59c84ad92b5634084e9c4aec6e7007ef48d3d
 - Dataset de evaluacion closed-book: https://huggingface.co/datasets/violetxi/harvey-eval-recall-qwen35-9b-notes70-notecondtraj30-100m-kl-0p05-think

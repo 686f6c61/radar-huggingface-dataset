@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JewellGomes/my-ocean-roberta` es un repositorio de modelo alojado en HuggingFace por el usuario JewellGomes, publicado bajo licencia MIT. En el momento de la consulta el repositorio no tiene descargas ni "likes" registrados, no declara pipeline de tarea y no incluye model card más allá del bloque de metadatos con la licencia, por lo que no hay información verificable sobre su arquitectura, tamaño o datos de entrenamiento.
+`JewellGomes/my-ocean-roberta` es un repositorio de modelo alojado en Hugging Face por el usuario JewellGomes, publicado bajo licencia MIT. En el momento de la consulta el repositorio no tiene descargas ni "likes" registrados, no declara pipeline de tarea y no incluye model card más allá del bloque de metadatos con la licencia, por lo que no hay información verificable sobre su arquitectura, tamaño o datos de entrenamiento.
 
 El identificador del repositorio sugiere una variante de la familia RoBERTa, probablemente un encoder transformer derivado de BERT, posiblemente ajustado sobre un corpus de temática oceánica o marítima. Es una inferencia basada únicamente en el nombre y no está confirmada por ningún artefacto del repositorio (no se ha podido verificar `config.json`, tokenizer ni pesos).
 
@@ -72,7 +72,7 @@ No es posible comparar este modelo porque se desconocen sus especificaciones. La
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JewellGomes/my-ocean-roberta | no disponible | no disponible | no disponible | MIT | repositorio en HuggingFace |
+| JewellGomes/my-ocean-roberta | no disponible | no disponible | no disponible | MIT | repositorio en Hugging Face |
 | RoBERTa-base | 125 M | 512 tokens | ingles | MIT | publico |
 | DistilRoBERTa-base | 82 M | 512 tokens | ingles | MIT | publico |
 | XLM-RoBERTa-base | 278 M | 512 tokens | ~100 idiomas | MIT | publico |
@@ -92,7 +92,7 @@ Los datos de las tres alternativas proceden de su documentación pública habitu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JewellGomes/my-ocean-roberta
+- Repositorio en Hugging Face: https://huggingface.co/JewellGomes/my-ocean-roberta
 - Paper, blog o repositorio asociado: no disponible
 - Demo o Space: no disponible
 - Resultados de búsqueda web: ninguna fuente relevante; las consultas realizadas devolvieron únicamente perfiles de redes sociales sin relación alguna con el modelo.

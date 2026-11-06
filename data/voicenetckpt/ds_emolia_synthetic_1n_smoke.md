@@ -79,6 +79,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento, ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/ds_emolia_synthetic_1n_smoke
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/ds_emolia_synthetic_1n_smoke
 - Índice de todas las corridas del proyecto VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

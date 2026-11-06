@@ -85,9 +85,9 @@ No se han publicado comparaciones cuantitativas entre estos modelos. El autor ad
 
 ## Enlaces
 
-- [HuggingFace - PurpleOrc/open-rvq-encoder-minimax-music3-169m-53k](https://huggingface.co/PurpleOrc/open-rvq-encoder-minimax-music3-169m-53k)
-- [HuggingFace - SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4](https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4)
-- [HuggingFace - Mothersuperior/open-rvq-encoder-minimax-music3-41m-pooled-v3](https://huggingface.co/Mothersuperior/open-rvq-encoder-minimax-music3-41m-pooled-v3)
+- [Hugging Face - PurpleOrc/open-rvq-encoder-minimax-music3-169m-53k](https://huggingface.co/PurpleOrc/open-rvq-encoder-minimax-music3-169m-53k)
+- [Hugging Face - SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4](https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4)
+- [Hugging Face - Mothersuperior/open-rvq-encoder-minimax-music3-41m-pooled-v3](https://huggingface.co/Mothersuperior/open-rvq-encoder-minimax-music3-41m-pooled-v3)
 - [GitHub - MiniMax-AI/MiniMax-Music3](https://github.com/MiniMax-AI/MiniMax-Music3)
 - [GitHub - Issue: Request: release the audio tokenizer encoder](https://github.com/MiniMax-AI/MiniMax-Music3/issues/3)
 - [GitHub - MiniMax-Music3-Studio/scripts/convert-rvq-encoder.py](https://github.com/timoncool/MiniMax-Music3-Studio/blob/main/scripts/convert-rvq-encoder.py)

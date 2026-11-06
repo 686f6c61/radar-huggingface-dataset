@@ -73,8 +73,8 @@ No disponible. No se han encontrado modelos similares en la información proporc
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RareConcepts/soad-mm3-nextlat-20260823-10k-adamw8e-5-fullsong-nocapdrop)
+- [Modelo en Hugging Face](https://huggingface.co/RareConcepts/soad-mm3-nextlat-20260823-10k-adamw8e-5-fullsong-nocapdrop)
 - [Modelo base MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 - [Código de NextLat (GitHub)](https://github.com/JaydenTeoh/NextLat)
 - [Artículo Next-Latent Prediction (arXiv)](https://arxiv.org/abs/2511.05963)
-- [Página del autor RareConcepts en HuggingFace](https://huggingface.co/RareConcepts/models)
+- [Página del autor RareConcepts en Hugging Face](https://huggingface.co/RareConcepts/models)

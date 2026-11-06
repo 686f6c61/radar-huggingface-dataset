@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nayoungoh/openarm-1-2-base-demospeedup` es un modelo publicado en HuggingFace por el usuario nayoungoh dentro de la familia de modelos etiquetados como `gr00t_n1_5`, lo que lo situa en la categoria de los modelos vision-language-action (VLA) orientados al control de robots. El identificador sugiere un ajuste especifico para el brazo robotico OpenArm, en su variante 1.2, en configuracion "base" y entrenado con demostraciones con algun tipo de aceleracion o "speedup" en los datos de entrenamiento. Esta interpretacion se deduce del nombre del repositorio y de la etiqueta de arquitectura, no de documentacion explicita publicada en la ficha del modelo.
+`nayoungoh/openarm-1-2-base-demospeedup` es un modelo publicado en Hugging Face por el usuario nayoungoh dentro de la familia de modelos etiquetados como `gr00t_n1_5`, lo que lo situa en la categoria de los modelos vision-language-action (VLA) orientados al control de robots. El identificador sugiere un ajuste especifico para el brazo robotico OpenArm, en su variante 1.2, en configuracion "base" y entrenado con demostraciones con algun tipo de aceleracion o "speedup" en los datos de entrenamiento. Esta interpretacion se deduce del nombre del repositorio y de la etiqueta de arquitectura, no de documentacion explicita publicada en la ficha del modelo.
 
 El modelo tiene 2.724.114.368 parametros (aproximadamente 2,72 mil millones) segun los metadatos reales de los pesos en formato safetensors, y el repositorio ocupa 7,6 GB. Aunque no se declara licencia, idiomas ni pipeline, el tamano de parametros es coherente con la arquitectura de la familia GR00T N1.5, que combina un backbone de vision-lenguaje con una cabeza de generacion de acciones.
 
@@ -12,7 +12,7 @@ Su relevancia actual radica en el interes creciente por los modelos fundacionale
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | vision-language-action, etiquetada como `gr00t_n1_5` en HuggingFace (arquitectura interna no documentada en la informacion disponible) |
+| Arquitectura | vision-language-action, etiquetada como `gr00t_n1_5` en Hugging Face (arquitectura interna no documentada en la informacion disponible) |
 | Parametros totales | 2.724.114.368 (2,72 mil millones) |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -27,7 +27,7 @@ Su relevancia actual radica en el interes creciente por los modelos fundacionale
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna, el proceso de entrenamiento ni la composicion del dataset en la ficha de HuggingFace ni en los resultados de busqueda disponibles. La unica informacion tecnica fiable es la etiqueta `gr00t_n1_5`, que lo asocia a la familia de modelos VLA GR00T N1.5 de NVIDIA, y el nombre del repositorio, que apunta a un ajuste para el robot OpenArm con demostraciones procesadas para aumentar la velocidad de ejecucion de las trayectorias. Ni el numero de tokens de entrenamiento, ni si hubo RLHF, DPO o aprendizaje por imitacion con flow matching estan confirmados para este checkpoint concreto.
+No se ha publicado informacion sobre la arquitectura interna, el proceso de entrenamiento ni la composicion del dataset en la ficha de Hugging Face ni en los resultados de busqueda disponibles. La unica informacion tecnica fiable es la etiqueta `gr00t_n1_5`, que lo asocia a la familia de modelos VLA GR00T N1.5 de NVIDIA, y el nombre del repositorio, que apunta a un ajuste para el robot OpenArm con demostraciones procesadas para aumentar la velocidad de ejecucion de las trayectorias. Ni el numero de tokens de entrenamiento, ni si hubo RLHF, DPO o aprendizaje por imitacion con flow matching estan confirmados para este checkpoint concreto.
 
 Tampoco se documenta si el modelo conserva el backbone de vision-lenguaje original, como se inicializa la cabeza de acciones ni que estrategia de decodificacion de acciones emplea. Cualquier afirmacion al respecto seria especulativa y no debe tomarse como validada.
 
@@ -73,9 +73,9 @@ Las cifras de los modelos alternativos son valores aproximados de conocimiento g
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| openarm-1-2-base-demospeedup | 2,72 mil millones (confirmado) | no disponible | no disponible | HuggingFace, 13 descargas |
-| GR00T N1 / N1.5 (NVIDIA) | orden de 2-3 mil millones (aproximado) | no disponible | licencia especifica de NVIDIA, requiere revision | HuggingFace y NVIDIA |
-| OpenVLA | ~7 mil millones (aproximado) | no disponible | licencia abierta con condiciones | HuggingFace |
+| openarm-1-2-base-demospeedup | 2,72 mil millones (confirmado) | no disponible | no disponible | Hugging Face, 13 descargas |
+| GR00T N1 / N1.5 (NVIDIA) | orden de 2-3 mil millones (aproximado) | no disponible | licencia especifica de NVIDIA, requiere revision | Hugging Face y NVIDIA |
+| OpenVLA | ~7 mil millones (aproximado) | no disponible | licencia abierta con condiciones | Hugging Face |
 | pi0 (Physical Intelligence) | ~3 mil millones (aproximado) | no disponible | licencia propia, requiere revision | repositorio propio |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -94,5 +94,5 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nayoungoh/openarm-1-2-base-demospeedup
+- Hugging Face: https://huggingface.co/nayoungoh/openarm-1-2-base-demospeedup
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Shadow629/TEst` es un modelo alojado en HuggingFace por el usuario Shadow629, con un tamaño de repositorio de 0,6 GB y etiquetado como formato ONNX. La model card es prácticamente vacía: únicamente declara una licencia desconocida (`license: unknown`), sin descripción, sin arquitectura declarada, sin idiomas soportados y sin pipeline asociado. No se dispone de información sobre el desarrollador, el problema que resuelve ni su relevancia técnica.
+El repositorio `Shadow629/TEst` es un modelo alojado en Hugging Face por el usuario Shadow629, con un tamaño de repositorio de 0,6 GB y etiquetado como formato ONNX. La model card es prácticamente vacía: únicamente declara una licencia desconocida (`license: unknown`), sin descripción, sin arquitectura declarada, sin idiomas soportados y sin pipeline asociado. No se dispone de información sobre el desarrollador, el problema que resuelve ni su relevancia técnica.
 
 Este caso es atípico: la ausencia total de documentación y metadatos impide cualquier evaluación seria del modelo. No se puede confirmar si se trata de un modelo de lenguaje, un modelo de visión, un experimento de prueba o un artefacto incompleto. La única pista técnica es el tag `onnx`, que sugiere que los pesos están en formato ONNX, pero no se especifica la arquitectura subyacida. Dada la falta de datos, esta ficha se limita a documentar la información disponible y a señalar explícitamente las carencias.
 
@@ -25,7 +25,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo, los da
 
 ## Capacidades
 
-No se dispone de información sobre las capacidades del modelo. No se puede confirmar si genera texto, razona, escribe código, procesa imágenes o audio, ni si soporta tool calling o razonamiento multi-paso. La ausencia de pipeline en HuggingFace refuerza la falta de claridad. Cualquier afirmación sobre capacidades sería especulación sin base.
+No se dispone de información sobre las capacidades del modelo. No se puede confirmar si genera texto, razona, escribe código, procesa imágenes o audio, ni si soporta tool calling o razonamiento multi-paso. La ausencia de pipeline en Hugging Face refuerza la falta de claridad. Cualquier afirmación sobre capacidades sería especulación sin base.
 
 ## Casos de uso
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables porque se desconoce la categor�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shadow629/TEst
+- Repositorio Hugging Face: https://huggingface.co/Shadow629/TEst

@@ -4,7 +4,7 @@
 
 Le Gros Chaton es un agente de codificacion para terminal, desarrollado por Mateo sobre la base del modelo Qwen/Qwen3.5-9B. Se trata de un modelo de texto de 8,95 mil millones de parametros con arquitectura hibrida (Gated-Attention + Gated-DeltaNet) que ha sido ajustado mediante tres fases de LoRA SFT para ejecutar bucles de tool-calling dentro de contenedores Docker, planificar, editar archivos, ejecutar comandos y finalizar cuando un verificador de tareas oculto pasa. El modelo se ha evaluado en Terminal-Bench 2.0 alcanzando un 25% de tasa de exito en un piloto de 5 tareas con 5 intentos cada una.
 
-La relevancia de este modelo radica en su tamano compacto (9B) combinado con capacidades de agente autonomo en entornos de terminal, un area donde los modelos grandes suelen destacar pero con costes elevados. Le Gros Chaton demuestra que un ajuste fino especifico sobre una base hibrida moderna puede obtener resultados competitivos en tareas de orquestacion de git y edicion de archivos, aunque muestra debilidades en sintesis multi-archivo y razonamiento sobre efectos secundarios. El modelo es de codigo abierto bajo licencia Apache-2.0 y esta disponible en HuggingFace con pesos en safetensors.
+La relevancia de este modelo radica en su tamano compacto (9B) combinado con capacidades de agente autonomo en entornos de terminal, un area donde los modelos grandes suelen destacar pero con costes elevados. Le Gros Chaton demuestra que un ajuste fino especifico sobre una base hibrida moderna puede obtener resultados competitivos en tareas de orquestacion de git y edicion de archivos, aunque muestra debilidades en sintesis multi-archivo y razonamiento sobre efectos secundarios. El modelo es de codigo abierto bajo licencia Apache-2.0 y esta disponible en Hugging Face con pesos en safetensors.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No se dispone de informacion comparativa con otros modelos de agente de codifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mateo0093/le-gros-chaton
+- Hugging Face: https://huggingface.co/mateo0093/le-gros-chaton
 - Adapter Fable5: https://huggingface.co/mateo0093/le-gros-chaton-qwen
 - Repositorio GitHub: https://github.com/Mateooo93/le-gros-chaton
 - Dataset Terminal-Bench: no se proporciona enlace directo, pero se referencia en la model card.

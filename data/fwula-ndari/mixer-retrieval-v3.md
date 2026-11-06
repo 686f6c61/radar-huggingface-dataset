@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fwula-ndari/mixer-retrieval-v3` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia en PyTorch de una arquitectura denominada Mixer, orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un lanzamiento listo para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks asociados. El repositorio incluye además el script `run.py` con un ejemplo ejecutable o punto de entrada de entrenamiento, ficheros `config.json` y `training_args.json`.
+`fwula-ndari/mixer-retrieval-v3` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia en PyTorch de una arquitectura denominada Mixer, orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un lanzamiento listo para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks asociados. El repositorio incluye además el script `run.py` con un ejemplo ejecutable o punto de entrada de entrenamiento, ficheros `config.json` y `training_args.json`.
 
 El dato objetivo de tamaño es de 33.088 parámetros totales, extraídos del fichero safetensors, una cifra muy reducida que contrasta con la etiqueta "large" que aparece en la configuración de arquitectura descrita en la model card. El repositorio ocupa 0.0 GB y registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creación y actualización del 9 de octubre de 2026.
 
@@ -77,5 +77,5 @@ No disponible. El repositorio no corresponde a una familia de modelos publicados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fwula-ndari/mixer-retrieval-v3
+- Modelo en Hugging Face: https://huggingface.co/fwula-ndari/mixer-retrieval-v3
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

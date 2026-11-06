@@ -47,7 +47,7 @@ No se especifica la composicion del dataset, el numero de tokens de entrenamient
 - Preprocesado de pipelines de NLP: usar las etiquetas como caracteristica de entrada para tareas posteriores (resolucion de correferencia, vinculacion de entidades, construccion de grafos de conocimiento).
 - Anonimizacion o redaccion de documentos: detectar nombres de persona y organizaciones en textos ingleses para enmascararlos antes de compartir el documento.
 - Investigacion sobre robustez ante datos corruptos: al estar entrenado sobre un dataset presumiblemente degradado, sirve como referencia para estudiar el impacto del ruido en etiquetas sobre la calidad del NER.
-- Reproducibilidad academica: gracias a los hiperparametros completos publicados (learning rate, batch, epocas, semilla), es posible replicar el entrenamiento con `Trainer` de HuggingFace.
+- Reproducibilidad academica: gracias a los hiperparametros completos publicados (learning rate, batch, epocas, semilla), es posible replicar el entrenamiento con `Trainer` de Hugging Face.
 - Prototipado rapido en entornos con recursos limitados: sus 33M de parametros permiten ejecutar inferencia en CPU o en GPU integrada para validar ideas antes de escalar a modelos mayores.
 - Evaluacion comparativa de encoders "small" frente a BERT-base en tareas de etiquetado: util para medir la perdida de calidad al reducir el parametro de 110M a 33M.
 
@@ -77,9 +77,9 @@ Resultado final declarado: loss 0.0833, precision 0.8912, recall 0.9207, F1 0.90
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| MayaLager/bge-small-ner-conll2003-corrupted | 33.215.625 | 512 tokens (heredado) | Token classification / NER | MIT | HuggingFace, 0 descargas | F1 0.9057 (validacion propia, dataset no documentado) |
-| BAAI/bge-small-en-v1.5 (modelo base) | ~33M | 512 tokens | Embeddings de frases / recuperacion | MIT | HuggingFace, ampliamente usado | No aplica a NER; referencia de encoder |
-| dslim/bert-base-NER | ~108M | 512 tokens | Token classification / NER | no disponible en esta busqueda | HuggingFace, muy popular | No disponible en la informacion proporcionada |
+| MayaLager/bge-small-ner-conll2003-corrupted | 33.215.625 | 512 tokens (heredado) | Token classification / NER | MIT | Hugging Face, 0 descargas | F1 0.9057 (validacion propia, dataset no documentado) |
+| BAAI/bge-small-en-v1.5 (modelo base) | ~33M | 512 tokens | Embeddings de frases / recuperacion | MIT | Hugging Face, ampliamente usado | No aplica a NER; referencia de encoder |
+| dslim/bert-base-NER | ~108M | 512 tokens | Token classification / NER | no disponible en esta busqueda | Hugging Face, muy popular | No disponible en la informacion proporcionada |
 
 La comparacion directa con dslim/bert-base-NER es la mas pertinente por tarea y esquema de etiquetas, pero no se dispone de cifras verificadas en la informacion proporcionada para este documento. No se dispone de datos comparativos adicionales.
 
@@ -97,7 +97,7 @@ La comparacion directa con dslim/bert-base-NER es la mas pertinente por tarea y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayaLager/bge-small-ner-conll2003-corrupted
+- Modelo en Hugging Face: https://huggingface.co/MayaLager/bge-small-ner-conll2003-corrupted
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 
 Nota: la busqueda web asociada a este modelo no ha devuelto resultados tecnicos relevantes (unicamente paginas de contenido para adultos sin relacion con el modelo), por lo que no se incluyen enlaces adicionales.

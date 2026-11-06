@@ -4,7 +4,7 @@
 
 El modelo `JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-paramopama-seed3407` es un sistema de reconocimiento de entidades nombradas (NER) para portugués, desarrollado por JoaoReiz mediante fine-tuning del modelo BERTimbau large (`neuralmind/bert-large-portuguese-cased`) sobre el split `paramopama` del protocolo NEVE. Se trata de un modelo de clasificación de tokens (token classification) que asigna etiquetas de entidades a cada token de un texto, permitiendo extraer nombres de personas, organizaciones, lugares y otras categorías definidas en el protocolo NEVE.
 
-El modelo se ha entrenado congelando el backbone de BERTimbau (estrategia "frozen") y seleccionando el mejor checkpoint según la métrica `validation_end_to_end_f1`. Con 333 millones de parámetros, es una variante grande que ofrece mayor capacidad de representación que su versión base, manteniendo la arquitectura transformer encoder clásica de BERT. Su relevancia actual radica en la escasez de modelos NER específicos y publicados para portugués, especialmente aquellos con documentación abierta y pesos disponibles en HuggingFace.
+El modelo se ha entrenado congelando el backbone de BERTimbau (estrategia "frozen") y seleccionando el mejor checkpoint según la métrica `validation_end_to_end_f1`. Con 333 millones de parámetros, es una variante grande que ofrece mayor capacidad de representación que su versión base, manteniendo la arquitectura transformer encoder clásica de BERT. Su relevancia actual radica en la escasez de modelos NER específicos y publicados para portugués, especialmente aquellos con documentación abierta y pesos disponibles en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ El fine-tuning se realizó sobre el split `paramopama` del protocolo NEVE NER, c
 
 - Reconocimiento de entidades nombradas (NER) en textos en portugués, mediante clasificación de tokens con etiquetas del protocolo NEVE (personas, organizaciones, lugares, fechas, etc.).
 - Procesamiento de secuencias de hasta 512 tokens, adecuado para párrafos y documentos de extensión moderada.
-- Inferencia directa con la librería Transformers de HuggingFace, usando el pipeline `token-classification`.
+- Inferencia directa con la librería Transformers de Hugging Face, usando el pipeline `token-classification`.
 - Soporte para despliegue en entornos compatibles con Transformers (CPU, GPU, ONNX, etc.).
 - No se documentan capacidades adicionales como generación de texto, tool calling, agentes o multimodalidad, ya que es un modelo exclusivamente discriminativo para NER.
 
@@ -51,16 +51,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el modelo tiene 333 millones de parámetros. En precisión FP32, el checkpoint ocupa aproximadamente 1,3 GB en memoria, por lo que se necesitan al menos 2 GB de VRAM para inferencia básica. En FP16, el uso de memoria baja a unos 670 MB, permitiendo ejecución en GPUs con 2-4 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.) puede ejecutar el modelo en FP16. Para lotes grandes o despliegue concurrente, se recomienda una GPU con 8 GB o más (RTX 3070, A10, etc.).
 - Compatibilidad con hardware de consumo: sí, cabe en GPUs de consumo medio, siempre que se use FP16 o cuantización dinámica.
-- Opciones de despliegue: se puede servir con la librería Transformers, HuggingFace Inference Endpoints, o exportar a ONNX para optimización con TensorRT u otros runtime. No se mencionan adaptaciones específicas para vLLM, llama.cpp u Ollama, ya que es un modelo encoder y no un LLM generativo.
+- Opciones de despliegue: se puede servir con la librería Transformers, Hugging Face Inference Endpoints, o exportar a ONNX para optimización con TensorRT u otros runtime. No se mencionan adaptaciones específicas para vLLM, llama.cpp u Ollama, ya que es un modelo encoder y no un LLM generativo.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna (RTX 3090), la inferencia sobre secuencias de 512 tokens debería completarse en decenas de milisegundos, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-paramopama-seed3407 | 333M | 512 | NER fine-tuned sobre BERTimbau large | no disponible | HuggingFace |
-| JoaoReiz/ner-pt-f1-v1-bertimbau-base-specific-paramopama-seed3407 | 109M (estimado) | 512 | NER fine-tuned sobre BERTimbau base | no disponible | HuggingFace |
-| JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-paramopama-seed3407 | 4B (estimado) | no disponible | NER fine-tuned sobre Qwen3.5-4b | no disponible | HuggingFace |
+| JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-paramopama-seed3407 | 333M | 512 | NER fine-tuned sobre BERTimbau large | no disponible | Hugging Face |
+| JoaoReiz/ner-pt-f1-v1-bertimbau-base-specific-paramopama-seed3407 | 109M (estimado) | 512 | NER fine-tuned sobre BERTimbau base | no disponible | Hugging Face |
+| JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-paramopama-seed3407 | 4B (estimado) | no disponible | NER fine-tuned sobre Qwen3.5-4b | no disponible | Hugging Face |
 
 No se dispone de resultados comparativos de rendimiento entre estos modelos. La variante large ofrece mayor capacidad que la base, pero también mayor coste computacional. El modelo basado en Qwen3.5-4b, al ser un LLM generativo, podría tener ventajas en contextos largos, pero no se aportan datos objetivos.
 
@@ -75,7 +75,7 @@ No se dispone de resultados comparativos de rendimiento entre estos modelos. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-paramopama-seed3407
+- Modelo en Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-paramopama-seed3407
 - Modelo base (BERTimbau large): https://huggingface.co/neuralmind/bert-large-portuguese-cased
 - Variante base del mismo autor: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-base-specific-paramopama-seed3407
 - Variante con Qwen3.5-4b: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-paramopama-seed3407

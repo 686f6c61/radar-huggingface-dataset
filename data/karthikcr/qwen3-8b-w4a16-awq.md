@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| karthikcr/Qwen3-8B-W4A16-AWQ | 8,19 B | no disponible | W4A16 AWQ (compressed-tensors) | Apache 2.0 | HuggingFace, 39 descargas |
-| Qwen/Qwen3-8B (base) | 8,19 B | no disponible en esta ficha | BF16 | Apache 2.0 | HuggingFace, checkpoint oficial |
-| Otras cuantizaciones comunitarias de Qwen3-8B (GPTQ, AWQ, GGUF) | 8,19 B | heredado del base | INT4 / INT8 / GGUF | Apache 2.0 (segun autor) | HuggingFace, multiple |
+| karthikcr/Qwen3-8B-W4A16-AWQ | 8,19 B | no disponible | W4A16 AWQ (compressed-tensors) | Apache 2.0 | Hugging Face, 39 descargas |
+| Qwen/Qwen3-8B (base) | 8,19 B | no disponible en esta ficha | BF16 | Apache 2.0 | Hugging Face, checkpoint oficial |
+| Otras cuantizaciones comunitarias de Qwen3-8B (GPTQ, AWQ, GGUF) | 8,19 B | heredado del base | INT4 / INT8 / GGUF | Apache 2.0 (segun autor) | Hugging Face, multiple |
 
 La comparacion de rendimiento frente a estas alternativas no esta disponible en la informacion proporcionada. La diferencia principal frente al modelo base es la reduccion de huella de memoria (6,1 GB de repositorio frente a un checkpoint BF16 de aproximadamente 16 GB), a costa de una posible degradacion de calidad no cuantificada en la model card.
 
@@ -83,7 +83,7 @@ La comparacion de rendimiento frente a estas alternativas no esta disponible en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karthikcr/Qwen3-8B-W4A16-AWQ
+- Modelo en Hugging Face: https://huggingface.co/karthikcr/Qwen3-8B-W4A16-AWQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio del proyecto del autor: https://github.com/kikugo/reel-history-k8s
 - llm-compressor: https://github.com/vllm-project/llm-compressor

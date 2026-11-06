@@ -23,7 +23,7 @@ Su relevancia practica es limitada: es un artefacto academico de investigacion r
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal de tipo decoder-only con capas MoE y arquitectura personalizada. No se apoya en las clases `AutoModel` de HuggingFace: para cargarlo hay que usar la clase `src.part1.model.Transformer` del repositorio de la asignatura o el script `scripts/infer.py`. El tokenizador es un BPE a nivel de bytes entrenado exclusivamente sobre el corpus de entrenamiento (`hf_export/tokenizer.json`), lo que explica que la cobertura de vocabulario este limitada al dominio de los datos.
+El modelo es un transformer causal de tipo decoder-only con capas MoE y arquitectura personalizada. No se apoya en las clases `AutoModel` de Hugging Face: para cargarlo hay que usar la clase `src.part1.model.Transformer` del repositorio de la asignatura o el script `scripts/infer.py`. El tokenizador es un BPE a nivel de bytes entrenado exclusivamente sobre el corpus de entrenamiento (`hf_export/tokenizer.json`), lo que explica que la cobertura de vocabulario este limitada al dominio de los datos.
 
 El entrenamiento consume 30.000.000 de posiciones sobre el dataset `belumind/en-vi-ja-curated-500k-triplets` (revision `849990daee76e0f9e2eb9965e30e34bc1909a93d`). El autor indica que se trata de un unico seed con la configuracion registrada y sin barrido de ajuste de hiperparametros del optimizador, y que tanto el MoE como las actualizaciones del optimizador y el decodificado se implementaron para la asignatura con asistencia de codigo generado por LLM. En el ecosistema de repositorios hermanos de la misma asignatura aparecen variantes con 4 expertos y enrutamiento top-2 con parametros activos igualados a la linea base densa, pero la model card de este repositorio concreto no detalla el numero de expertos ni la politica de enrutamiento, por lo que esos datos deben considerarse no disponibles para este checkpoint.
 
@@ -70,10 +70,10 @@ Los unicos artefactos comparables son otras entregas de la misma asignatura, con
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ProtonPrat/anlp-a2-part1_moe_active | MoE, arquitectura personalizada | 14,99 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| neemon/anlp-a2-part1-moe_active_matched | MoE, 4 expertos, enrutamiento top-2, activos igualados a la base densa | no disponible | no disponible | no disponible | HuggingFace |
-| sanyam2005/anlp-a2-part1-moe-top2-active | MoE, enrutamiento top-2 | no disponible | no disponible | no disponible | HuggingFace |
-| DunkRonit/anlp-a2-part1-moe_top1 | MoE, enrutamiento top-1 | no disponible | no disponible | no disponible | HuggingFace |
+| ProtonPrat/anlp-a2-part1_moe_active | MoE, arquitectura personalizada | 14,99 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| neemon/anlp-a2-part1-moe_active_matched | MoE, 4 expertos, enrutamiento top-2, activos igualados a la base densa | no disponible | no disponible | no disponible | Hugging Face |
+| sanyam2005/anlp-a2-part1-moe-top2-active | MoE, enrutamiento top-2 | no disponible | no disponible | no disponible | Hugging Face |
+| DunkRonit/anlp-a2-part1-moe_top1 | MoE, enrutamiento top-1 | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de comparativas con modelos de proposito general de tamano similar (por ejemplo, GPT-2 small de 124 M de parametros) en la informacion proporcionada, y la diferencia de presupuesto de entrenamiento haria la comparacion poco informativa.
 
@@ -92,7 +92,7 @@ No se dispone de comparativas con modelos de proposito general de tamano similar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProtonPrat/anlp-a2-part1_moe_active
+- Modelo en Hugging Face: https://huggingface.co/ProtonPrat/anlp-a2-part1_moe_active
 - Run de W&B: https://wandb.ai/proton_prat/anlp-assignment-2/runs/pimry0rh
 - Dataset de entrenamiento: `belumind/en-vi-ja-curated-500k-triplets` (revision `849990daee76e0f9e2eb9965e30e34bc1909a93d`)
 - Variante comparable (enrutamiento top-2 con activos igualados): https://huggingface.co/neemon/anlp-a2-part1-moe_active_matched

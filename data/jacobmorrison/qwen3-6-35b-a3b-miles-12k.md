@@ -105,7 +105,7 @@ La comparación relevante es doble: frente a Qwen3.5-35B-A3B, el salto en SWE-be
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-12k
+- Repositorio en Hugging Face: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-12k
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Texto de la licencia Apache 2.0 del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE

@@ -4,7 +4,7 @@
 
 Ben2.0-Uncensored-GGUF es una colección de cuantizaciones GGUF del modelo Ben2.0-Uncensored, desarrollado por BananaAdmin y cuantizado por mradermacher. Se trata de un modelo de lenguaje conversacional en inglés, con aproximadamente 1.540 millones de parámetros, diseñado para su uso en entornos de inferencia local con recursos limitados. La versión "uncensored" sugiere que se ha eliminado el filtrado de contenido habitual, aunque no se dispone de documentación oficial que detalle el proceso de entrenamiento o las modificaciones aplicadas.
 
-La relevancia de este modelo radica en su tamaño compacto, que permite ejecutarlo en hardware de consumo, y en su formato GGUF, compatible con herramientas como llama.cpp, Ollama o LM Studio. Sin embargo, la falta de información pública sobre su arquitectura, entrenamiento y capacidades limita su evaluación rigurosa. Esta ficha se basa exclusivamente en los datos proporcionados en la página de HuggingFace, sin datos adicionales de benchmarks o especificaciones técnicas del modelo base.
+La relevancia de este modelo radica en su tamaño compacto, que permite ejecutarlo en hardware de consumo, y en su formato GGUF, compatible con herramientas como llama.cpp, Ollama o LM Studio. Sin embargo, la falta de información pública sobre su arquitectura, entrenamiento y capacidades limita su evaluación rigurosa. Esta ficha se basa exclusivamente en los datos proporcionados en la página de Hugging Face, sin datos adicionales de benchmarks o especificaciones técnicas del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ No se dispone de información pública sobre la arquitectura del modelo base Ben
 ## Capacidades
 
 - No se dispone de información detallada sobre las capacidades del modelo en la documentación proporcionada.
-- Se sabe que es un modelo conversacional en inglés, según las etiquetas de HuggingFace.
+- Se sabe que es un modelo conversacional en inglés, según las etiquetas de Hugging Face.
 - Por su nombre "uncensored", se infiere que no aplica restricciones de contenido, aunque no hay confirmación oficial.
 - No se mencionan capacidades como tool calling, razonamiento multi-paso, visión o audio.
 - El tamaño reducido (1,54 B) sugiere que puede manejar tareas de generación de texto y diálogo simples, pero no hay benchmarks que lo respalden.
@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Ben2.0-Uncensored-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Ben2.0-Uncensored-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/BananaAdmin/Ben2.0-Uncensored
 - Página de resumen de mradermacher: https://hf.tst.eu/model#Ben2.0-Uncensored-GGUF

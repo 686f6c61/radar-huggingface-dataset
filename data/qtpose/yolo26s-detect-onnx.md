@@ -6,7 +6,7 @@ YOLO26s-detect-onnx es una exportación a formato ONNX del detector de objetos Y
 
 Se trata de un modelo de visión por computador puro, sin capacidades de lenguaje ni multimodalidad: recibe un tensor de imagen RGB de 640x640 píxeles y devuelve hasta 300 detecciones con coordenadas, puntuación y clase. No hay parámetros de lenguaje, contexto textual ni generación. La relevancia de esta ficha es acotada: documenta un artefacto derivado de pesos Ultralytics bajo licencia AGPL-3.0, útil para pipelines de detección en producción donde se prefiera ONNX Runtime frente a PyTorch.
 
-El repositorio tiene un tamaño de 0,0 GB según HuggingFace, lo que sugiere que el archivo de pesos no está realmente alojado o que la métrica no se ha actualizado; conviene verificar la descarga antes de integrarlo. No se han publicado métricas de rendimiento, benchmarks ni información sobre el proceso de entrenamiento de YOLO26s en la información disponible.
+El repositorio tiene un tamaño de 0,0 GB según Hugging Face, lo que sugiere que el archivo de pesos no está realmente alojado o que la métrica no se ha actualizado; conviene verificar la descarga antes de integrarlo. No se han publicado métricas de rendimiento, benchmarks ni información sobre el proceso de entrenamiento de YOLO26s en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qtpose/yolo26s-detect-onnx | Detector YOLO26s exportado a ONNX | 1x3x640x640 float32 | 1x300x6 con NMS embebido | AGPL-3.0 | HuggingFace (qtpose) |
+| qtpose/yolo26s-detect-onnx | Detector YOLO26s exportado a ONNX | 1x3x640x640 float32 | 1x300x6 con NMS embebido | AGPL-3.0 | Hugging Face (qtpose) |
 | Ultralytics YOLO26s (`yolo26s.pt`) | Detector YOLO26s en PyTorch | Dinámica según exportación | Requiere NMS posterior salvo exportación con `nms=True` | AGPL-3.0 | GitHub Ultralytics assets v8.4.0 |
-| Otros detectores COCO de una etapa (p. ej. variantes YOLOv8/YOLO11 de Ultralytics) | Detector de una etapa | Típicamente 640x640 | Cajas + clase + score | AGPL-3.0 | HuggingFace / GitHub |
+| Otros detectores COCO de una etapa (p. ej. variantes YOLOv8/YOLO11 de Ultralytics) | Detector de una etapa | Típicamente 640x640 | Cajas + clase + score | AGPL-3.0 | Hugging Face / GitHub |
 
 No se dispone de datos de rendimiento (mAP, latencia) para establecer una comparación cuantitativa con alternativas. La comparación anterior se limita a aspectos de formato, licencia y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento (mAP, latencia) para establecer una compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qtpose/yolo26s-detect-onnx
+- Hugging Face: https://huggingface.co/qtpose/yolo26s-detect-onnx
 - Checkpoint de origen (Ultralytics assets v8.4.0): https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26s.pt
 - Licencia Ultralytics: https://www.ultralytics.com/license
-- Perfil del autor en HuggingFace: https://huggingface.co/qtpose
+- Perfil del autor en Hugging Face: https://huggingface.co/qtpose

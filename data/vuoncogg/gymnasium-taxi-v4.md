@@ -26,7 +26,7 @@ Q-Learning es un algoritmo de aprendizaje por refuerzo sin modelo (model-free) q
 ## Capacidades
 
 - Resolver el entorno `Taxi-v4` de Gymnasium mediante una politica aprendida por Q-Learning, alcanzando una recompensa media declarada de `7.56 +/- 2.71`.
-- Ejecutar como agente de refuerzo clasico, cargable desde HuggingFace Hub mediante `load_from_hub` con el archivo `q-learning.pkl`.
+- Ejecutar como agente de refuerzo clasico, cargable desde Hugging Face Hub mediante `load_from_hub` con el archivo `q-learning.pkl`.
 - No genera texto, no soporta tool calling, ni razonamiento multi-paso, ni vision, ni audio.
 - No es multilingue, ya que no procesa lenguaje natural.
 - No dispone de modo de pensamiento (thinking mode) ni de capacidades de agente autonomo.
@@ -37,7 +37,7 @@ Q-Learning es un algoritmo de aprendizaje por refuerzo sin modelo (model-free) q
 - **Benchmark de comparacion de algoritmos**: puede utilizarse como agente de referencia para comparar el rendimiento de otros algoritmos (SARSA, Double Q-Learning, DQN) en el mismo entorno `Taxi-v4`.
 - **Investigacion en convergencia**: permite estudiar la convergencia de Q-Learning en entornos con espacio de estados pequeno, observando la recompensa media y la estabilidad de la politica.
 - **Prototipado rapido de entornos Gymnasium**: sirve para validar el API de Gymnasium, ya que el agente se carga directamente desde un archivo `.pkl` y se integra con `gym.make`.
-- **Pruebas de integracion con HuggingFace Hub**: es un caso de uso minimo para comprobar el flujo de descarga de modelos de RL desde el Hub mediante `load_from_hub`.
+- **Pruebas de integracion con Hugging Face Hub**: es un caso de uso minimo para comprobar el flujo de descarga de modelos de RL desde el Hub mediante `load_from_hub`.
 - **Material de referencia para practicas de RL**: los investigadores pueden usarlo como punto de partida para modificar la tabla Q o reentrenar el agente con distintos hiperparametros en `Taxi-v4`.
 
 ## Benchmarks y rendimiento
@@ -72,5 +72,5 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vuoncogg/Gymnasium-Taxi-v4
+- Hugging Face: https://huggingface.co/vuoncogg/Gymnasium-Taxi-v4
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio) en la busqueda web.

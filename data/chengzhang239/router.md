@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chengzhang239/router` es un ajuste fino (fine-tuning) de `distilbert/distilbert-base-uncased` para la tarea de clasificación de texto, publicado en HuggingFace por el usuario chengzhang239 bajo licencia Apache 2.0. Se trata de un transformer encoder de 66.955.010 parámetros orientado a `text-classification`, no a generación de texto: recibe una secuencia y devuelve una etiqueta de clase. El autor no ha documentado ni el conjunto de datos de entrenamiento ni el conjunto de etiquetas ni el uso previsto, por lo que la ficha oficial está prácticamente vacía.
+El modelo `chengzhang239/router` es un ajuste fino (fine-tuning) de `distilbert/distilbert-base-uncased` para la tarea de clasificación de texto, publicado en Hugging Face por el usuario chengzhang239 bajo licencia Apache 2.0. Se trata de un transformer encoder de 66.955.010 parámetros orientado a `text-classification`, no a generación de texto: recibe una secuencia y devuelve una etiqueta de clase. El autor no ha documentado ni el conjunto de datos de entrenamiento ni el conjunto de etiquetas ni el uso previsto, por lo que la ficha oficial está prácticamente vacía.
 
 La relevancia de este modelo es limitada y muy acotada: no es un modelo de propósito general, sino un clasificador entrenado durante 20 épocas sobre un dataset no identificado, con un resultado de validación de 0,9283 de accuracy y 0,7560 de F1. El nombre "router" sugiere (hipótesis, no confirmada por el autor) un uso como enrutador de consultas o clasificador de intenciones, un patrón habitual en pipelines de agentes y sistemas RAG. Dado que el model-index no declara resultados de benchmarks y que el repositorio no incluye documentación, cualquier evaluación en producción exige validación propia.
 
@@ -34,7 +34,7 @@ Las versiones de framework usadas fueron Transformers 5.16.1, PyTorch 2.11.0+cu1
 - Clasificacion de texto: devuelve una o varias etiquetas de clase para una secuencia de entrada. Es la unica tarea declarada en la pipeline del modelo.
 - Extraccion de embeddings del encoder (a traves de la salida oculta de `distilbert`), utilizable como representacion densa, aunque no es el objetivo declarado.
 - Inferencia rapida en CPU: con 67 millones de parametros, el coste por peticion es bajo comparado con modelos encoder de mayor tamano.
-- Compatibilidad con `text-embeddings-inference` y `endpoints_compatible`, segun las etiquetas del repositorio, lo que permite desplegarlo detras de la infraestructura de HuggingFace.
+- Compatibilidad con `text-embeddings-inference` y `endpoints_compatible`, segun las etiquetas del repositorio, lo que permite desplegarlo detras de la infraestructura de Hugging Face.
 - No dispone de generacion de texto, razonamiento multi-paso, codigo, matematicas, vision, audio, tool calling ni function calling: al ser un encoder clasificador, ninguna de estas capacidades esta soportada.
 - Capacidades multilingues: no acreditadas. El modelo base es `distilbert-base-uncased`, entrenado esencialmente en ingles.
 - Numero de clases y significado de las etiquetas: no disponible en la informacion proporcionada.
@@ -78,7 +78,7 @@ No hay resultados de MMLU, HumanEval, GSM8K ni de ningun otro benchmark estandar
 - VRAM estimada para inferencia en fp32: en torno a 270 MB de pesos mas activaciones; en fp16 aproximadamente 135 MB; en int8 alrededor de 70 MB. Cualquier GPU con 1-2 GB de memoria libre es suficiente.
 - GPU recomendadas: no requiere GPU dedicada. Funciona correctamente en CPU. En GPU, cualquier modelo moderno sirve: RTX 3060, RTX 4090, A10, L4, T4, A100 o H100, aunque en la mayoria de casos estaran infrautilizadas.
 - Cabe sin problema en GPU de consumo: si, en cualquier GPU consumer actual e incluso en iGPU y en dispositivos de borde mediante ONNX Runtime o OpenVINO.
-- Opciones de despliegue: transformers con PyTorch, HuggingFace Text Embeddings Inference (etiqueta declarada `text-embeddings-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime, OpenVINO, FastAPI con batching propio. vLLM, llama.cpp, Ollama y TGI estan orientados a modelos generativos y no aplican a un clasificador encoder de este tipo.
+- Opciones de despliegue: transformers con PyTorch, Hugging Face Text Embeddings Inference (etiqueta declarada `text-embeddings-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime, OpenVINO, FastAPI con batching propio. vLLM, llama.cpp, Ollama y TGI estan orientados a modelos generativos y no aplican a un clasificador encoder de este tipo.
 - Latencia y throughput: no disponibles de forma oficial. Como referencia orientativa para este rango de tamano, un encoder de 6 capas procesa lotes de decenas o cientos de secuencias cortas por segundo en una GPU moderna y del orden de decenas de secuencias por segundo en CPU multinucleo; la cifra real depende del hardware, la longitud de secuencia y el batch.
 - Nota sobre el repositorio: el tamano declarado de 13,9 GB es muy superior al de los pesos del modelo (del orden de 270 MB en fp32), lo que sugiere la presencia de checkpoints intermedios u otros artefactos de entrenamiento. Conviene descargar unicamente los ficheros necesarios.
 - Almacenamiento: los pesos finales en safetensors ocupan del orden de 268 MB en fp32.
@@ -87,11 +87,11 @@ No hay resultados de MMLU, HumanEval, GSM8K ni de ningun otro benchmark estandar
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chengzhang239/router | 66,9 M | 512 tokens | DistilBERT encoder + cabeza de clasificacion | apache-2.0 | HuggingFace |
-| distilbert-base-uncased | 66,9 M | 512 tokens | DistilBERT encoder | apache-2.0 | HuggingFace |
-| bert-base-uncased | 110 M | 512 tokens | BERT encoder | apache-2.0 | HuggingFace |
-| roberta-base | 125 M | 512 tokens | RoBERTa encoder | MIT | HuggingFace |
-| MiniLM-L6 (p. ej. all-MiniLM-L6-v2) | 22,7 M | 256-512 tokens | Transformer encoder destilado de 6 capas | apache-2.0 | HuggingFace |
+| chengzhang239/router | 66,9 M | 512 tokens | DistilBERT encoder + cabeza de clasificacion | apache-2.0 | Hugging Face |
+| distilbert-base-uncased | 66,9 M | 512 tokens | DistilBERT encoder | apache-2.0 | Hugging Face |
+| bert-base-uncased | 110 M | 512 tokens | BERT encoder | apache-2.0 | Hugging Face |
+| roberta-base | 125 M | 512 tokens | RoBERTa encoder | MIT | Hugging Face |
+| MiniLM-L6 (p. ej. all-MiniLM-L6-v2) | 22,7 M | 256-512 tokens | Transformer encoder destilado de 6 capas | apache-2.0 | Hugging Face |
 
 La comparacion de rendimiento frente a estas alternativas no es posible con la informacion disponible: no se ha publicado el conjunto de evaluacion ni las metricas por clase, y el modelo solo aporta resultados sobre su propio split de validacion. Cualquier eleccion entre estas opciones deberia basarse en una evaluacion propia sobre el mismo corpus y el mismo esquema de etiquetas.
 
@@ -111,7 +111,7 @@ La comparacion de rendimiento frente a estas alternativas no es posible con la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chengzhang239/router
+- Modelo en Hugging Face: https://huggingface.co/chengzhang239/router
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT: https://arxiv.org/abs/1910.01108
 - Repositorio de Transformers: https://github.com/huggingface/transformers

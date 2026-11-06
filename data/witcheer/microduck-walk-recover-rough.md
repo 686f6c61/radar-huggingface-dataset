@@ -2,7 +2,7 @@
 
 ## Resumen
 
-walk-recover-rough es una politica de control por aprendizaje por refuerzo para el robot cuadrupedo microduck de Pollen Robotics. No es un modelo de lenguaje: se trata de un controlador de marcha que ocupa el slot `walk` del robot, con 61 dimensiones de observacion y 14 acciones, ejecutandose a 50 Hz. Lo desarrolla el usuario witcheer y se publica bajo el pipeline `robotics` de HuggingFace con la libreria `microduck`.
+walk-recover-rough es una politica de control por aprendizaje por refuerzo para el robot cuadrupedo microduck de Pollen Robotics. No es un modelo de lenguaje: se trata de un controlador de marcha que ocupa el slot `walk` del robot, con 61 dimensiones de observacion y 14 acciones, ejecutandose a 50 Hz. Lo desarrolla el usuario witcheer y se publica bajo el pipeline `robotics` de Hugging Face con la libreria `microduck`.
 
 El modelo es una evolucion de walk-recover v1 (politica de suelo llano) que se ha reentrenado especificamente para terreno irregular. Sobre las 20.000 iteraciones originales se anadieron 3.000 iteraciones en escaleras, pendientes y rejillas de bloques ordenadas por dificultad, con 4096 entornos en paralelo durante unos 183 minutos (3,7 s por iteracion) en una unica RTX 5090. La innovacion principal no esta en la arquitectura de red sino en el curriculum de terreno: en lugar de la rejilla aleatoria estandar, se dispuso una escalera ordenada de dificultad en 10 filas.
 
@@ -100,7 +100,7 @@ Los tres modelos pertenecen al mismo autor y comparten formato de despliegue y s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/witcheer/microduck-walk-recover-rough
+- Modelo en Hugging Face: https://huggingface.co/witcheer/microduck-walk-recover-rough
 - Modelo base (suelo llano): https://huggingface.co/witcheer/microduck-walk-recover
 - Marchador en terreno irregular: https://huggingface.co/witcheer/microduck-walk-rough
 - Dataset con tomas, parches, curva de recompensa y la entrada de cola (carpeta `level-05c-walk-recover-rough`): https://huggingface.co/datasets/witcheer/microduck-skill-tree

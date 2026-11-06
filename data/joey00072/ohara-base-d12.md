@@ -86,9 +86,9 @@ La comparación con GPT-2 es la más relevante por tamaño similar, pero ohara-b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joey00072/ohara-base-d12
+- Modelo en Hugging Face: https://huggingface.co/joey00072/ohara-base-d12
 - Modelo chat derivado: https://huggingface.co/joey00072/ohara-chat-d12
 - Repositorio ohara en GitHub: https://github.com/joey00072/ohara
 - Codigo del modulo base: https://github.com/joey00072/ohara/blob/master/ohara/modules/base.py
 - Codigo del trainer: https://github.com/joey00072/ohara/blob/master/ohara/trainer.py
-- Perfil del autor en HuggingFace: https://huggingface.co/joey00072
+- Perfil del autor en Hugging Face: https://huggingface.co/joey00072

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PS4Research/MYeHpTDS1ljdIHt9-lora es un adaptador LoRA subido a HuggingFace por el usuario PS4Research, obtenido mediante ajuste fino (fine-tuning) supervisado sobre el modelo ByteDance-Seed/Seed-OSS-36B-Instruct. No se trata de un modelo con pesos completos, sino de un adaptador que debe cargarse junto al modelo base; el repositorio ocupa 4,6 GB, lo que sugiere un rango de adaptación amplio, aunque el autor no publica el rango, el alfa ni la configuración de destino de modulos. El modelo se entrenó, segun la propia model card, con Unsloth, que el autor destaca por ofrecer un entrenamiento "2x faster".
+PS4Research/MYeHpTDS1ljdIHt9-lora es un adaptador LoRA subido a Hugging Face por el usuario PS4Research, obtenido mediante ajuste fino (fine-tuning) supervisado sobre el modelo ByteDance-Seed/Seed-OSS-36B-Instruct. No se trata de un modelo con pesos completos, sino de un adaptador que debe cargarse junto al modelo base; el repositorio ocupa 4,6 GB, lo que sugiere un rango de adaptación amplio, aunque el autor no publica el rango, el alfa ni la configuración de destino de modulos. El modelo se entrenó, segun la propia model card, con Unsloth, que el autor destaca por ofrecer un entrenamiento "2x faster".
 
 La relevancia de esta ficha es limitada desde el punto de vista técnico: la model card es una plantilla mínima generada por la herramienta de subida, sin descripción del dataset de entrenamiento, sin hiperparámetros, sin evaluación y sin ejemplos de uso. No hay pipeline declarado, cero descargas y cero "likes" en el momento de la consulta, y el repositorio se creó y actualizó el 2026-09-27 con nueve segundos de diferencia, lo que apunta a una subida automatizada sin revisión posterior.
 
@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparati
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| PS4Research/MYeHpTDS1ljdIHt9-lora | Adaptador LoRA sobre base de 36B (no confirmado) | no disponible | apache-2.0 | safetensors (LoRA, 4,6 GB) | Público en HuggingFace, 0 descargas, 0 likes |
-| ByteDance-Seed/Seed-OSS-36B-Instruct (modelo base) | 36B (según identificador) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Público en HuggingFace |
+| PS4Research/MYeHpTDS1ljdIHt9-lora | Adaptador LoRA sobre base de 36B (no confirmado) | no disponible | apache-2.0 | safetensors (LoRA, 4,6 GB) | Público en Hugging Face, 0 descargas, 0 likes |
+| ByteDance-Seed/Seed-OSS-36B-Instruct (modelo base) | 36B (según identificador) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Público en Hugging Face |
 | Otros adaptadores LoRA de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada alternativas comparables con datos suficientes para una comparación técnica rigurosa.
@@ -94,7 +94,7 @@ No se han identificado en la información proporcionada alternativas comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4Research/MYeHpTDS1ljdIHt9-lora
+- Modelo en Hugging Face: https://huggingface.co/PS4Research/MYeHpTDS1ljdIHt9-lora
 - Modelo base: https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct
 - Unsloth (herramienta de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
 - Paper, blog, repositorio o demo propios del autor: no disponible

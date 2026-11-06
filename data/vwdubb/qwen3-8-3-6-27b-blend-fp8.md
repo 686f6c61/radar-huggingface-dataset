@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-3.6-27B-blend-FP8 es una versión cuantizada a FP8 del checkpoint JetBrains/Qwen3.8-3.6-27B-blend, publicada por el usuario vwdubb en HuggingFace. El modelo base es un derivado no oficial de JetBrains que combina, mediante interpolación lineal de parámetros (model soup), dos checkpoints de Alibaba Cloud: Qwen3.6-27B y Qwen3.8-27B, con un peso del 50 % para cada uno y acumulación en float32. Ni el blend original ni esta versión FP8 han recibido entrenamiento adicional: el proceso se limita a la fusión de pesos y, en este caso, a la cuantización posterior.
+Qwen3.8-3.6-27B-blend-FP8 es una versión cuantizada a FP8 del checkpoint JetBrains/Qwen3.8-3.6-27B-blend, publicada por el usuario vwdubb en Hugging Face. El modelo base es un derivado no oficial de JetBrains que combina, mediante interpolación lineal de parámetros (model soup), dos checkpoints de Alibaba Cloud: Qwen3.6-27B y Qwen3.8-27B, con un peso del 50 % para cada uno y acumulación en float32. Ni el blend original ni esta versión FP8 han recibido entrenamiento adicional: el proceso se limita a la fusión de pesos y, en este caso, a la cuantización posterior.
 
 El resultado es un modelo denso de 27.781.427.952 parámetros (~27,8 B) con pipeline image-text-to-text, es decir, acepta imágenes y texto como entrada. La configuración, el tokenizer, el processor y la plantilla de chat se heredan íntegramente de Qwen3.8-27B, según la model card del autor original. La licencia es Apache 2.0, con la licencia y el aviso de copyright de Qwen (Copyright 2026 Alibaba Cloud) conservados sin modificaciones.
 
@@ -84,10 +84,10 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (27,78
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vwdubb/Qwen3.8-3.6-27B-blend-FP8 (este) | 27.781.427.952 | no disponible | safetensors FP8 (compressed-tensors) | apache-2.0 | HuggingFace; 0 descargas, 0 likes |
-| JetBrains/Qwen3.8-3.6-27B-blend | no disponible (mismo checkpoint base, ~27,8 B) | no disponible | BF16 (safetensors) y variantes GGUF, MLX 4-bit, MTP MLX 4-bit | apache-2.0 | HuggingFace; publicado junto al articulo de Junie Local |
-| Qwen/Qwen3.8-27B (uno de los dos progenitores) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada (la licencia se conserva en el derivado) | HuggingFace, model card oficial |
-| Qwen/Qwen3.6-27B (uno de los dos progenitores) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada (la licencia se conserva en el derivado) | HuggingFace, model card oficial |
+| vwdubb/Qwen3.8-3.6-27B-blend-FP8 (este) | 27.781.427.952 | no disponible | safetensors FP8 (compressed-tensors) | apache-2.0 | Hugging Face; 0 descargas, 0 likes |
+| JetBrains/Qwen3.8-3.6-27B-blend | no disponible (mismo checkpoint base, ~27,8 B) | no disponible | BF16 (safetensors) y variantes GGUF, MLX 4-bit, MTP MLX 4-bit | apache-2.0 | Hugging Face; publicado junto al articulo de Junie Local |
+| Qwen/Qwen3.8-27B (uno de los dos progenitores) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada (la licencia se conserva en el derivado) | Hugging Face, model card oficial |
+| Qwen/Qwen3.6-27B (uno de los dos progenitores) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada (la licencia se conserva en el derivado) | Hugging Face, model card oficial |
 
 No se dispone de datos de rendimiento, contexto ni cuantizaciones de los checkpoints Qwen originales en la informacion proporcionada, por lo que la comparativa se limita a aspectos de disponibilidad y licencia. La diferencia funcional relevante entre este repositorio y el blend en BF16 de JetBrains es unicamente el formato de pesos: FP8 frente a BF16, con soporte adicional de GGUF y MLX en el caso de JetBrains.
 

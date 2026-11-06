@@ -89,7 +89,7 @@ Solo se dispone de comparación directa con el base Qwen3.5-9B. No hay datos pub
 
 ## Enlaces
 
-- Repositorio HuggingFace principal: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
+- Repositorio Hugging Face principal: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
 - Repositorio GGUF: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill-GGUF
 - Sitio web de Empero: https://empero.org
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -18,7 +18,7 @@ Es relevante ahora porque combina tres tendencias: cuantizacion agresiva W4A16 s
 | Longitud de contexto | 262.144 tokens (262K; aguja de 258K recuperada) |
 | Tipos de cuantizacion | W4A16: expertos enrutados en INT4 (Intel AutoRound); proyecciones GDN out_proj en INT8 por canal; atencion q/k/v, down_proj y gate/up en BF16/INT8; embeddings PLE en FP8; KV cache en FP8 E4M3 con escalas estaticas |
 | Idiomas soportados | en (ingles) |
-| Licencia | swift-open-license-1.0 (HuggingFace: license other) |
+| Licencia | swift-open-license-1.0 (Hugging Face: license other) |
 | Formato de pesos | safetensors, compressed-tensors; libreria vllm; tamano del repo 123.8 GB (checkpoint ~115 GiB) |
 
 ## Arquitectura y entrenamiento
@@ -84,10 +84,10 @@ En StrongREJECT se cortaron 35 respuestas de 313 por limite de 8.192 tokens y no
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin) | ~124B (MoE) | 262K | W4A16, compressed-tensors, vLLM | swift-open-license-1.0 | HuggingFace, 0 descargas |
-| ukisai/Swift1.5-Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
-| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base, sin rechazo) |
-| halt95/Qwen3.8-Flash-Next-W4A16-Merlin | no disponible | no disponible | W4A16, Merlin | no disponible | HuggingFace (checkpoint original sin abliteration) |
+| Este modelo (Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin) | ~124B (MoE) | 262K | W4A16, compressed-tensors, vLLM | swift-open-license-1.0 | Hugging Face, 0 descargas |
+| ukisai/Swift1.5-Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
+| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base, sin rechazo) |
+| halt95/Qwen3.8-Flash-Next-W4A16-Merlin | no disponible | no disponible | W4A16, Merlin | no disponible | Hugging Face (checkpoint original sin abliteration) |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos mas alla de las referencias a Swift 1.5 incluidas en la model card. Las alternativas de la misma categoria (modelos MoE de ~124B con contexto largo y cuantizacion 4 bits) no estan documentadas en la informacion proporcionada.
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos mas alla d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/halt95/Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin
+- Modelo en Hugging Face: https://huggingface.co/halt95/Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin
 - Archivo de pesos (ejemplo): https://huggingface.co/halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin/blob/main/model-plefp8-00007.safetensors
 - Modelo base Swift 1.5 (UkisAI): https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Abliteration de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated

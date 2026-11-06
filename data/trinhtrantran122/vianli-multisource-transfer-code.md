@@ -32,7 +32,7 @@ El protocolo incluye una auditoria de multiples fuentes con verificacion de inte
 - Clasificacion plana de 3 clases sin cabezas jerarquicas, lo que facilita la reproducibilidad y el analisis.
 - Soporte de evaluacion zero-shot sobre ViANLI dev antes del fine-tuning final.
 - Capacidad de diagnostico mediante ViMedNLI para evaluar la generalizacion a dominios medicos.
-- Reproducibilidad cientifica: el experimento fija semilla 42, fuentes inmutables con hashes SHA y un contrato de artefactos con W&B y HuggingFace.
+- Reproducibilidad cientifica: el experimento fija semilla 42, fuentes inmutables con hashes SHA y un contrato de artefactos con W&B y Hugging Face.
 
 ## Casos de uso
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Arquitectura | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (EXP-001) | Flat CafeBERT | NLI vietnamita (ViANLI) | no disponible | no disponible | Checkpoint en HuggingFace |
-| CafeBERT original (`uitnlp/CafeBERT`) | BERT vietnamita | Modelo base | no disponible | no disponible | HuggingFace |
-| Checkpoint fuente (`hier-nli-e-first-flat-cafebert-vinli`) | Flat CafeBERT con cabezas jerarquicas E-first | NLI vietnamita (ViNLI) | no disponible | no disponible | HuggingFace |
+| Este modelo (EXP-001) | Flat CafeBERT | NLI vietnamita (ViANLI) | no disponible | no disponible | Checkpoint en Hugging Face |
+| CafeBERT original (`uitnlp/CafeBERT`) | BERT vietnamita | Modelo base | no disponible | no disponible | Hugging Face |
+| Checkpoint fuente (`hier-nli-e-first-flat-cafebert-vinli`) | Flat CafeBERT con cabezas jerarquicas E-first | NLI vietnamita (ViNLI) | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa de rendimiento entre estos modelos. La comparativa se limita a aspectos arquitectonicos y de disponibilidad.
 
@@ -78,7 +78,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trinhtrantran122/vianli-multisource-transfer-code
+- Modelo en Hugging Face: https://huggingface.co/trinhtrantran122/vianli-multisource-transfer-code
 - Repositorio GitHub: https://github.com/trantranuit/vianli-multisource-transfer
 - Issues del repositorio: https://github.com/trantranuit/vianli-multisource-transfer/issues
 - Paper de ViANLI (arXiv): https://arxiv.org/html/2406.17716v2

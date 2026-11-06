@@ -4,7 +4,7 @@
 
 Este repositorio contiene un ajuste fino (fine-tuning) del modelo Whisper medium de OpenAI, publicado por el usuario dianavdavidson bajo el identificador `whisper-medium_mucs_62986_ratio_0_25_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT`. Se trata de un modelo de reconocimiento automatico del habla (ASR) de arquitectura encoder-decoder transformer, con 763.857.920 parametros confirmados por los pesos en safetensors, lo que coincide con el tamano del Whisper medium original. El repositorio pesa 15,3 GB, lo que sugiere que ademas de los pesos puede incluir estados de optimizador u otros artefactos de entrenamiento.
 
-La nomenclatura del repositorio aporta la mayor parte de la informacion disponible: apunta a un ajuste fino sobre datos de habla con alternancia de codigos hindi-ingles ("hinglish", etiqueta `lgid_hi_hinglish_mixed_scripts`), probablemente con mezcla de grafias devanagari y latina, con una tasa de aprendizaje de 1e-4, una proporcion de datos de 0,25 y la etiqueta `mucs_62986` como referencia del conjunto de datos. Es importante subirrayar que estos datos proceden de la convencion de nombres y no estan documentados de forma explicita en la ficha de HuggingFace, por lo que deben tomarse como interpretacion y no como especificacion confirmada.
+La nomenclatura del repositorio aporta la mayor parte de la informacion disponible: apunta a un ajuste fino sobre datos de habla con alternancia de codigos hindi-ingles ("hinglish", etiqueta `lgid_hi_hinglish_mixed_scripts`), probablemente con mezcla de grafias devanagari y latina, con una tasa de aprendizaje de 1e-4, una proporcion de datos de 0,25 y la etiqueta `mucs_62986` como referencia del conjunto de datos. Es importante subirrayar que estos datos proceden de la convencion de nombres y no estan documentados de forma explicita en la ficha de Hugging Face, por lo que deben tomarse como interpretacion y no como especificacion confirmada.
 
 Su relevancia actual es limitada pero especifica: los sistemas ASR comerciales rinden peor en habla con cambio de codigo (code-switching) entre hindi e ingles, un fenomeno muy comun en India y en comunidades migrantes. Un ajuste fino de Whisper medium orientado a este caso puede mejorar la transcripcion de ese dominio concreto a un coste computacional moderado. No obstante, el repositorio tiene 27 descargas y 0 "likes", no declara licencia, idiomas ni pipeline, y no publica resultados de evaluacion, por lo que su validacion queda pendiente.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este ajuste fino (whisper-medium hinglish) | 763,9 M | 30 s por segmento | No declarados (se presume hinglish) | No disponible | HuggingFace, safetensors |
-| Whisper medium (base OpenAI) | 769 M | 30 s por segmento | Multilingue (99 idiomas) | MIT | HuggingFace, multiples formatos |
-| Whisper large-v3 (OpenAI) | 1.550 M | 30 s por segmento | Multilingue (99 idiomas) | MIT | HuggingFace, multiples formatos |
-| Whisper small (OpenAI) | 244 M | 30 s por segmento | Multilingue (99 idiomas) | MIT | HuggingFace, multiples formatos |
+| Este ajuste fino (whisper-medium hinglish) | 763,9 M | 30 s por segmento | No declarados (se presume hinglish) | No disponible | Hugging Face, safetensors |
+| Whisper medium (base OpenAI) | 769 M | 30 s por segmento | Multilingue (99 idiomas) | MIT | Hugging Face, multiples formatos |
+| Whisper large-v3 (OpenAI) | 1.550 M | 30 s por segmento | Multilingue (99 idiomas) | MIT | Hugging Face, multiples formatos |
+| Whisper small (OpenAI) | 244 M | 30 s por segmento | Multilingue (99 idiomas) | MIT | Hugging Face, multiples formatos |
 
 La comparacion de rendimiento ASR entre estas opciones no puede establecerse con la informacion disponible, ya que no hay WER publicado para este ajuste fino ni para un conjunto de evaluacion comun. La unica ventaja objetivable de este repositorio frente a whisper-medium es su especializacion declarada en habla hinglish; su desventaja es la ausencia de licencia, idiomas y evaluaciones documentadas, ademas de un numero de descargas muy bajo, lo que limita la validacion por parte de la comunidad.
 
@@ -87,14 +87,14 @@ La comparacion de rendimiento ASR entre estas opciones no puede establecerse con
 - Sobreajuste al dominio: un ajuste fino con tasa 1e-4 sobre una fraccion de datos (ratio 0,25) puede degradar el rendimiento en idiomas distintos del hinglish y en dominios alejados del corpus de entrenamiento.
 - Limitacion de ventana: la arquitectura procesa segmentos de 30 segundos, lo que exige estrategias de troceado y ensamblado para audio largo, con riesgo de errores en las fronteras.
 - Licencia no declarada: la ausencia de licencia explicita impide determinar si el uso comercial es legalmente viable, aunque el modelo base whisper-medium sea MIT. Se recomienda contactar con el autor antes de cualquier uso en produccion.
-- Falta de pipeline declarado: HuggingFace no asigna tarea al repositorio, lo que puede provocar fallos en herramientas que dependen de ese metadato.
+- Falta de pipeline declarado: Hugging Face no asigna tarea al repositorio, lo que puede provocar fallos en herramientas que dependen de ese metadato.
 - Madurez baja: 27 descargas y 0 likes indican que el modelo no ha sido validado por terceros.
 - Formatos limitados: solo se ofrecen pesos en safetensors, sin variantes GGUF o int8 listas para usar, lo que anade trabajo de conversion.
 - Grafias mixtas no verificadas: no hay confirmacion de como se manejan devanagari y alfabeto latino en la salida, ni de si la normalizacion de texto es consistente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dianavdavidson/whisper-medium_mucs_62986_ratio_0_25_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT
+- Repositorio en Hugging Face: https://huggingface.co/dianavdavidson/whisper-medium_mucs_62986_ratio_0_25_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT
 - Modelo base Whisper medium (OpenAI): https://huggingface.co/openai/whisper-medium
 - Repositorio de codigo de Whisper: https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

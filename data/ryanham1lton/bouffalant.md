@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bouffalant es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia en el frontmatter, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial, aunque no es posible confirmar el numero de parametros sin acceso a los archivos de pesos.
+Bouffalant es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia en el frontmatter, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial, aunque no es posible confirmar el numero de parametros sin acceso a los archivos de pesos.
 
 El modelo no cuenta con descargas ni "likes" en el momento de la consulta, y no tiene pipeline declarado. Se desconoce si se trata de un modelo de lenguaje, un modelo de vision, un adaptador o un experimento personal. La ausencia de documentacion y de metadatos tecnicos hace imposible evaluar su calidad, rendimiento o idoneidad para tareas concretas.
 
@@ -73,5 +73,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Bouffalant
+- Hugging Face: https://huggingface.co/Ryanham1lton/Bouffalant
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -17,7 +17,7 @@ Este repositorio GGUF es relevante para desarrolladores que quieran ejecutar dec
 | Parametros activos | no aplica (no es modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repo contiene archivos GGUF, pero no se especifican las cuantizaciones exactas) |
-| Idiomas soportados | inglés y chino (según etiquetas del repo; el campo de idioma de HuggingFace indica no disponible) |
+| Idiomas soportados | inglés y chino (según etiquetas del repo; el campo de idioma de Hugging Face indica no disponible) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF y safetensors (según metadatos del repo) |
 
@@ -95,14 +95,14 @@ Nota: los datos de Qwen3.5-4B y Gemma4-E4B provienen del informe técnico; la ar
 
 - Modelo de borrador: este repositorio contiene los pesos del draft model, que no es autónomo y debe usarse junto al modelo principal Nanbeige4.2-3B para generar texto final.
 - Solo se han confirmado inglés y chino como idiomas soportados, según las etiquetas del repo. No se ha documentado soporte para otros idiomas.
-- El campo de idiomas en HuggingFace indica "no disponible"; la información lingüística se basa en las etiquetas del repositorio.
+- El campo de idiomas en Hugging Face indica "no disponible"; la información lingüística se basa en las etiquetas del repositorio.
 - No se han publicado datos de seguridad, sesgos o alucinaciones específicos para este modelo en la información disponible.
 - El repo tiene muy pocas descargas (9) y likes (0), lo que indica una adopción limitada y escasa validación comunitaria.
 - La licencia Apache-2.0 permite uso comercial sin restricciones, pero es necesario revisar los términos completos del modelo principal y sus dependencias.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anbeeld/Nanbeige4.2-3B-DSpark-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Anbeeld/Nanbeige4.2-3B-DSpark-GGUF
 - Modelo draft original: https://huggingface.co/Nanbeige/Nanbeige4.2-3B-DSpark
 - Modelo principal Nanbeige4.2-3B: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B-Base

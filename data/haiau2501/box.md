@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BOX es un modelo publicado en HuggingFace por el usuario HaiAu2501 bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card del repositorio contiene unicamente la linea de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin indicacion de capacidades. El repositorio ocupa 1,0 GB y fue creado el 20 de septiembre de 2026, con una unica actualizacion dos horas despues. No acumula descargas ni likes en el momento de la consulta.
+BOX es un modelo publicado en Hugging Face por el usuario HaiAu2501 bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card del repositorio contiene unicamente la linea de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin indicacion de capacidades. El repositorio ocupa 1,0 GB y fue creado el 20 de septiembre de 2026, con una unica actualizacion dos horas despues. No acumula descargas ni likes en el momento de la consulta.
 
 No es posible determinar a partir de la informacion proporcionada si se trata de un modelo de lenguaje, un modelo de vision, un modelo multimodal, un adaptador LoRA o un checkpoint derivado de otro modelo base. Tampoco hay datos sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni el formato exacto de los pesos, mas alla del tamano del repositorio.
 
@@ -72,7 +72,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| BOX (HaiAu2501) | no disponible | no disponible | MIT | HuggingFace | practicamente inexistente |
+| BOX (HaiAu2501) | no disponible | no disponible | MIT | Hugging Face | practicamente inexistente |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HaiAu2501/BOX
+- Hugging Face: https://huggingface.co/HaiAu2501/BOX
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

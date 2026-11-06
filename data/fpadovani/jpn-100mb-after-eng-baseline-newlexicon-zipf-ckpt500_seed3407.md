@@ -21,7 +21,7 @@ Aunque la documentación es escasa, el modelo parece orientado a experimentos ac
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es presumiblemente la de GPT-2, dado el tag `gpt2` en HuggingFace, aunque no se detalla. El modelo es un fine-tune de un modelo base ya entrenado sobre un corpus de inglés de 100 MB con un "nuevo léxico" y distribución Zipf. El fine-tuning se realizó mediante SFT (Supervised Fine-Tuning) usando la biblioteca TRL, con una configuración que incluye Transformers 4.56.2, PyTorch 2.11.0 y Datasets 4.8.4. No se especifican los datos de entrenamiento del fine-tuning ni el número de tokens procesados.
+La arquitectura es presumiblemente la de GPT-2, dado el tag `gpt2` en Hugging Face, aunque no se detalla. El modelo es un fine-tune de un modelo base ya entrenado sobre un corpus de inglés de 100 MB con un "nuevo léxico" y distribución Zipf. El fine-tuning se realizó mediante SFT (Supervised Fine-Tuning) usando la biblioteca TRL, con una configuración que incluye Transformers 4.56.2, PyTorch 2.11.0 y Datasets 4.8.4. No se especifican los datos de entrenamiento del fine-tuning ni el número de tokens procesados.
 
 El proceso de entrenamiento está documentado en Weights & Biases (enlace en la model card), pero el acceso a los detalles completos no está disponible en la información pública.
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407
 - Variantes del mismo experimento:
   - https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed3407

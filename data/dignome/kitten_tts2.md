@@ -18,7 +18,7 @@ El modelo cubre diez idiomas validados (inglés, árabe, chino, francés, alemá
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Paquete de precisión mixta: Q8_0 en las proyecciones del modelo de lenguaje, F16 en embeddings y cabeza de salida compartida, BF16 en la proyección de hablante, F32 en el decodificador S3 y en los codificadores de hablante |
 | Idiomas soportados | en, ar, zh, fr, de, hi, it, pt, ru, es (10 idiomas validados por el port) |
-| Licencia | stellon-labs-community-license (identificador `other` en HuggingFace) |
+| Licencia | stellon-labs-community-license (identificador `other` en Hugging Face) |
 | Formato de pesos | GGUF (un único fichero: `kitten-tts2-native-q8-multilingual.gguf`, 3.282.123.776 bytes / 3,28 GB / 3,06 GiB) |
 
 ## Arquitectura y entrenamiento
@@ -54,7 +54,7 @@ La innovación principal del port es la integración completa en un único GGUF 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card y la ficha de HuggingFace no incluyen métricas objetivas como MOS, WER de síntesis ni comparaciones numéricas frente a otros sistemas TTS.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card y la ficha de Hugging Face no incluyen métricas objetivas como MOS, WER de síntesis ni comparaciones numéricas frente a otros sistemas TTS.
 
 ## Requisitos de hardware
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | dignome/kitten_tts2 | no disponible | no disponible | no disponible | stellon-labs-community-license | GGUF para audio.cpp (rama `kittentts2`) |
-| KittenML/kitten-tts-2 (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| ResembleAI/chatterbox-turbo (origen del decodificador S3) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| pyannote/embedding (origen del codificador de hablante) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| KittenML/kitten-tts-2 (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| ResembleAI/chatterbox-turbo (origen del decodificador S3) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| pyannote/embedding (origen del codificador de hablante) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento, parametros ni contexto de las alternativas dentro de la informacion proporcionada; la comparativa se limita a la relacion de dependencia entre el port y los modelos de origen.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de las alternativa
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/dignome/kitten_tts2
+- Ficha en Hugging Face: https://huggingface.co/dignome/kitten_tts2
 - Modelo base: https://huggingface.co/KittenML/kitten-tts-2
 - Repositorio del port (rama `kittentts2`): https://github.com/dignome/audio.cpp-custom/tree/kittentts2
 - Commit de la implementacion publicada: https://github.com/dignome/audio.cpp-custom/commit/a96e66c6bc4d53398563cfff8399d1f9a6e35b40

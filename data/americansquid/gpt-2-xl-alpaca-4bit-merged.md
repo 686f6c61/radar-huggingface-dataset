@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks para el modelo de esta ficha, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/americansquid/gpt-2-xl-alpaca-4bit-merged
+- Modelo en Hugging Face: https://huggingface.co/americansquid/gpt-2-xl-alpaca-4bit-merged
 - Modelo base GPT-2 XL: https://huggingface.co/openai-community/gpt2-xl
 - Dataset de ajuste: https://huggingface.co/datasets/yahma/alpaca-cleaned
 - Repositorio de MLX: https://github.com/ml-explore/mlx

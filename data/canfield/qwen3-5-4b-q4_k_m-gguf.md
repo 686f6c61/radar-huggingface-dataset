@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Canfield/Qwen3.5-4B-Q4_K_M-GGUF (este repositorio) | 4.205.751.296 | 32.768 tokens configurados en la plantilla de Ollama | GGUF Q4_K_M, un unico fichero | Apache 2.0 | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| lmstudio-community/Qwen3.5-4B-GGUF | mismo modelo base | no disponible | GGUF (incluye proyector de vision `mmproj-Qwen3.5-4B-BF16.gguf`) | Apache 2.0 | Publico en HuggingFace, repositorio de origen de la cuantizacion |
-| Qwen/Qwen3.5-4B | 4.205.751.296 (segun los pesos de referencia) | no disponible | safetensors (pesos originales sin cuantizar) | Apache 2.0 | Publico en HuggingFace, modelo base oficial del equipo Qwen |
+| Canfield/Qwen3.5-4B-Q4_K_M-GGUF (este repositorio) | 4.205.751.296 | 32.768 tokens configurados en la plantilla de Ollama | GGUF Q4_K_M, un unico fichero | Apache 2.0 | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| lmstudio-community/Qwen3.5-4B-GGUF | mismo modelo base | no disponible | GGUF (incluye proyector de vision `mmproj-Qwen3.5-4B-BF16.gguf`) | Apache 2.0 | Publico en Hugging Face, repositorio de origen de la cuantizacion |
+| Qwen/Qwen3.5-4B | 4.205.751.296 (segun los pesos de referencia) | no disponible | safetensors (pesos originales sin cuantizar) | Apache 2.0 | Publico en Hugging Face, modelo base oficial del equipo Qwen |
 
 No se dispone de datos verificados de benchmarks ni de otros modelos comparables de la misma categoria en la informacion proporcionada, por lo que no se incluyen comparaciones de rendimiento.
 
@@ -89,7 +89,7 @@ No se dispone de datos verificados de benchmarks ni de otros modelos comparables
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Canfield/Qwen3.5-4B-Q4_K_M-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Canfield/Qwen3.5-4B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B (revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`)
 - Repositorio de la cuantizacion original: https://huggingface.co/lmstudio-community/Qwen3.5-4B-GGUF (revision `f9f88ac3e234be915e23811a6d28ea287bdb927e`)
 - Release de llama.cpp utilizada para cuantizar: https://github.com/ggml-org/llama.cpp/releases/tag/b8185

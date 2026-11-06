@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks que permitan una comparativa cuantitativa c
 
 ## Limitaciones y advertencias
 
-- La licencia se indica como "other" en HuggingFace, lo que requiere revisar los términos exactos del modelo base en el repositorio de IBM Granite para confirmar permisos de uso comercial.
+- La licencia se indica como "other" en Hugging Face, lo que requiere revisar los términos exactos del modelo base en el repositorio de IBM Granite para confirmar permisos de uso comercial.
 - La longitud de contexto no está confirmada; puede ser inferior a la de modelos más grandes, lo que limita el uso en tareas con documentos muy extensos.
 - Los idiomas soportados no están especificados, aunque la familia Granite de IBM está orientada a uso empresarial multilingüe.
 - Al ser una cuantización de 3B, el rendimiento en tareas complejas de razonamiento será inferior al de modelos más grandes (8B o 30B) de la misma familia.
@@ -78,8 +78,8 @@ No se dispone de datos de benchmarks que permitan una comparativa cuantitativa c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/liodon-ai/granite-4.2-3b-imatrix-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-4.2-3b
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/liodon-ai/granite-4.2-3b-imatrix-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Documentación oficial de Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models
 - Página principal de IBM Granite: https://www.ibm.com/granite

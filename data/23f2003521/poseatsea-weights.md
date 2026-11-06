@@ -76,6 +76,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/23f2003521/poseatsea-weights
+- Repositorio de Hugging Face: https://huggingface.co/23f2003521/poseatsea-weights
 - Código fuente (GitHub): https://github.com/23f2003521/SIH2026
 - Documento de especificación de requisitos (SRS) del proyecto POSE at SEA (referencia externa): https://www.scribd.com/document/1008377641/SRS-Signed

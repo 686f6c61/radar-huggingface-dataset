@@ -86,7 +86,7 @@ La comparativa se basa en la informacion de la model card, que menciona a los cr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/Qwen3-Reranker-0.6B-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/Qwen3-Reranker-0.6B-ExecuTorch
 - Modelo base Qwen3-Reranker-0.6B: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Variante CoreAI (relacionada): https://huggingface.co/mlboydaisuke/Qwen3-Reranker-0.6B-CoreAI
 - Registro en Free2AI Tools: https://free2aitools.com/model/mlboydaisuke/qwen3-0.6b-executorch

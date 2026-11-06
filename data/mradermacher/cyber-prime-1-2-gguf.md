@@ -73,7 +73,7 @@ Los datos de otros modelos proceden de su documentacion publica y no de la infor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cyber-Prime-1.2-GGUF | 2,7 B | no disponible | lfm1.0 (`other`) | GGUF en HuggingFace; 0 descargas |
+| Cyber-Prime-1.2-GGUF | 2,7 B | no disponible | lfm1.0 (`other`) | GGUF en Hugging Face; 0 descargas |
 | LFM2-2.6B (familia base) | 2,6 B | no disponible en esta ficha | LFM Open License 1.0 | pesos y GGUF publicos de Liquid AI |
 | Qwen2.5-3B-Instruct | 3,1 B | 32.768 tokens (documentacion publica) | Apache 2.0 | safetensors y multiples cuantizaciones |
 | Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens (documentacion publica) | Llama 3.2 Community License | safetensors y multiples cuantizaciones |
@@ -96,7 +96,7 @@ Frente a estas alternativas, Cyber-Prime-1.2 aporta especializacion declarada en
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Cyber-Prime-1.2-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Cyber-Prime-1.2-GGUF
 - Modelo base original: https://huggingface.co/Akahsizrr/Cyber-Prime-1.2
 - Pagina de descarga y vision general del cuantizador: https://hf.tst.eu/model#Cyber-Prime-1.2-GGUF
 - Preguntas frecuentes y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

@@ -78,5 +78,5 @@ No disponible. El autor menciona informalmente una comparación con una CNN de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fortunatetumbleweed/ship-direction
+- Modelo en Hugging Face: https://huggingface.co/fortunatetumbleweed/ship-direction
 - Repositorio en GitHub: https://github.com/fortunatetumbleweed-commits/ship_direction

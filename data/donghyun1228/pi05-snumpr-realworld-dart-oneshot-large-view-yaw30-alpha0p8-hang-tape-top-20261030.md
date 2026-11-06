@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART `hang_tape_top` (este) | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Especializado en una tarea, sin evaluación real |
+| π0.5 SNUMPR DART `hang_tape_top` (este) | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Especializado en una tarea, sin evaluación real |
 | π0.5 base (Physical Intelligence) | no disponible | no disponible | no disponible | no disponible | Modelo generalista del que deriva la familia |
 | SNUMPR `snumpr-iclr27-v1/9999` | no disponible | no disponible | no disponible | no disponible | Base inicial usada para este fine-tuning |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de parámetros de los modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-hang-tape-top-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-hang-tape-top-20261030
 - Repositorio DART: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`), sin URL directa en la información proporcionada
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `248126e`), sin URL directa en la información proporcionada
 - Base SNUMPR: `snumpr-iclr27-v1/9999`, sin URL directa en la información proporcionada

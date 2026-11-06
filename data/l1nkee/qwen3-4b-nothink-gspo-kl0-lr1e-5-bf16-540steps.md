@@ -94,7 +94,7 @@ La comparación cuantitativa no puede completarse: no se dispone de resultados d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/L1nkee/Qwen3-4B-NoThink-GSPO-KL0-LR1e-5-bf16-540steps
+- Modelo en Hugging Face: https://huggingface.co/L1nkee/Qwen3-4B-NoThink-GSPO-KL0-LR1e-5-bf16-540steps
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (solo contenido no relacionado); no se dispone de paper, blog, repositorio de código ni demo adicionales verificables.

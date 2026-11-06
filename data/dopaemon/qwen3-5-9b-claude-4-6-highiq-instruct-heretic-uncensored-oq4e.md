@@ -58,7 +58,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. Se puede menci
 - La cuantización oQ de 4 bits puede degradar la calidad frente al modelo original en tareas complejas; se recomienda evaluar en el caso de uso concreto.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/dopaeemon/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED-oQ4e
+- Repositorio de Hugging Face: https://huggingface.co/dopaeemon/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED-oQ4e
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED
 - Variante THINKING (xbann): https://huggingface.co/xbann/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

@@ -31,7 +31,7 @@ El repositorio es exclusivamente una conversion de formato: parte de los pesos d
 
 - Generacion de texto conversacional: el tag `conversational` y la plantilla de chat incluida en el GGUF indican uso previsto como modelo de dialogo.
 - Generacion de texto general: pipeline declarado `text-generation`.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el formato puede servirse mediante infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el formato puede servirse mediante infraestructura compatible con la API de Hugging Face.
 - Ejecucion local en CPU y GPU: al ser GGUF, puede correr con llama.cpp, Ollama, LM Studio y bindings equivalentes.
 - Tool calling / function calling: no disponible (no se documenta).
 - Capacidades de agente y razonamiento multi-paso: no disponible (no se documenta).
@@ -95,7 +95,7 @@ No hay datos que permitan afirmar cual es la perdida de calidad asociada a Q4_K_
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sethblocks/Andy-Starlight-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Sethblocks/Andy-Starlight-3B-GGUF
 - Modelo base: https://huggingface.co/Sethblocks/Andy-Starlight-3B
 - llama.cpp (herramienta de conversion y runtime GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama (runtime alternativo para GGUF): https://github.com/ollama/ollama

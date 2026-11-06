@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su especialización aparente en el domini
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL (Transformers Reinforcement Learning) de HuggingFace, como indican las etiquetas del repositorio. La arquitectura subyacente es la del modelo base Qwen3-0.6B, un transformer decoder-only con atención estándar, aunque no se especifican detalles adicionales como el número de capas, la dimensión del modelo o el mecanismo de atención.
+El modelo es un adaptador LoRA entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL (Transformers Reinforcement Learning) de Hugging Face, como indican las etiquetas del repositorio. La arquitectura subyacente es la del modelo base Qwen3-0.6B, un transformer decoder-only con atención estándar, aunque no se especifican detalles adicionales como el número de capas, la dimensión del modelo o el mecanismo de atención.
 
 No se proporciona información sobre el conjunto de datos de entrenamiento, el número de tokens utilizados, los hiperparámetros del ajuste (tasa de aprendizaje, épocas, rango del LoRA, etc.) ni el régimen de precisión (fp16, bf16, etc.). El nombre del modelo sugiere que el entrenamiento se centró en la extracción de acciones a partir de transcripciones de reuniones, posiblemente con un formato de salida que contempla múltiples acciones por entrada, pero esto no está confirmado por ninguna fuente.
 
@@ -82,6 +82,6 @@ La comparacion es limitada porque no hay datos de rendimiento ni confirmacion de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/clairenicholson078/qwen3-06b-meeting-actions-multiaction-v1
+- Repositorio Hugging Face: https://huggingface.co/clairenicholson078/qwen3-06b-meeting-actions-multiaction-v1
 - Repositorio oficial de Qwen3 (modelo base): https://github.com/QwenLM/Qwen3
 - Repositorio de Qwen3.8 (serie relacionada, no confundir): https://github.com/QwenLM/Qwen3.8

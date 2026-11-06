@@ -100,7 +100,7 @@ La comparación relevante es contra el modelo base sin cuantizar: esta compilaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simaai/Qwen3-4B-Instruct-2507-GPTQ-a16w4_return_logits
+- Modelo en Hugging Face: https://huggingface.co/simaai/Qwen3-4B-Instruct-2507-GPTQ-a16w4_return_logits
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Guía de inicio de SiMa.ai Neat: https://developer.sima.ai/software/getting-started/
 - Benchmarking de precisión MOLE: https://developer.sima.ai/software/genai-llima/mole

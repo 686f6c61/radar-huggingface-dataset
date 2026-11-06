@@ -28,7 +28,7 @@ El modelo es un adaptador de bajo rango (LoRA) con descomposición de pesos (DoR
 - Generación de texto conversacional siguiendo el chat template de Qwen3.
 - Resumen de textos médicos (prescripciones, notas clínicas, documentación sanitaria) según el dataset de entrenamiento, aunque no se detalla el tipo exacto de resúmenes.
 - Adaptación específica al dominio médico mediante el ajuste fino, lo que puede mejorar la precisión terminológica frente al modelo base.
-- Soporte de inferencia mediante text-generation-inference y endpoints compatibles (según los tags de HuggingFace).
+- Soporte de inferencia mediante text-generation-inference y endpoints compatibles (según los tags de Hugging Face).
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni multimodalidad.
 
 ## Casos de uso
@@ -87,7 +87,7 @@ No se dispone de información sobre modelos comparables específicos para resume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/paulvision/medscript-dora-summariser
+- Modelo en Hugging Face: https://huggingface.co/paulvision/medscript-dora-summariser
 - Perfil del autor: https://huggingface.co/paulvision
 - Repositorio MedScript AI (OCR de prescripciones): https://github.com/VarshiniE25/medical-prescription-ocr
 - Repositorio MedScript (pipeline local para diapositivas médicas): https://github.com/pyMoLt/MedScript

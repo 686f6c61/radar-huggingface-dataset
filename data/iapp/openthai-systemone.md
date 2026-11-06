@@ -88,10 +88,10 @@ Todos los números son zero-shot: el modelo solo ve el estado, las instrucciones
 
 | Modelo | Parametros | Contexto | Media macro (mismo banco) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenThai-SystemOne | 752,7M | 262.144 tokens | 61,9 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| OpenThai-SystemOne | 752,7M | 262.144 tokens | 61,9 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Bespoke Nimble-9B | 9B (aproximado, no confirmado en la informacion) | no disponible | 74,8 | no disponible | Referencia publicada por Bespoke Labs |
 | Jev 1.13.0 | no disponible | no disponible | 76,0 | no disponible | Referencia publicada por Bespoke Labs |
-| Qwen3.5-0.8B-Base con prompting de letras | 0,8B | 262.144 tokens | 45,4 | no disponible en la informacion proporcionada | Pesos abiertos en HuggingFace |
+| Qwen3.5-0.8B-Base con prompting de letras | 0,8B | 262.144 tokens | 45,4 | no disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
 
 Lectura de la comparativa: OpenThai-SystemOne pierde 12,9 puntos de media macro frente a Nimble-9B con una doceava parte de los parámetros, pero gana en 4 de 13 subsets y, a diferencia de los modelos comparados, devuelve distribuciones de probabilidad calibradas y un mecanismo de abstención en un solo forward pass. Frente a su propio backbone sin modificar mejora 16,5 puntos de media macro, lo que aísla el efecto del continued pretraining en tailandés y de la cabeza de decisión. No se dispone de datos de licencia ni de contexto de Nimble-9B y Jev 1.13.0 en la información proporcionada.
 
@@ -112,7 +112,7 @@ Lectura de la comparativa: OpenThai-SystemOne pierde 12,9 puntos de media macro 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iapp/OpenThai-SystemOne
+- Modelo en Hugging Face: https://huggingface.co/iapp/OpenThai-SystemOne
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Repositorio del SDK y del servidor: https://github.com/iapp-technology/openthai-systemone
 - Imagen de presentación del modelo: https://huggingface.co/iapp/OpenThai-SystemOne/resolve/main/assets/openthai-systemone-launch.jpg

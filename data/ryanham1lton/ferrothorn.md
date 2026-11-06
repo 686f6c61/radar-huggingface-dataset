@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ferrothorn es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton (Ryan James Hamilton) bajo licencia CC-BY-4.0. En el momento de la consulta el repositorio no incluye model card funcional: el README se limita al bloque de metadatos de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. Tampoco declara pipeline, idiomas soportados ni etiquetas tecnicas mas alla de `license:cc-by-4.0` y `region:us`.
+Ferrothorn es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton (Ryan James Hamilton) bajo licencia CC-BY-4.0. En el momento de la consulta el repositorio no incluye model card funcional: el README se limita al bloque de metadatos de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. Tampoco declara pipeline, idiomas soportados ni etiquetas tecnicas mas alla de `license:cc-by-4.0` y `region:us`.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,1 GB, lo que situa el artefacto en el rango de modelos pequenos o de adaptadores (LoRA/checkpoints parciales), sin que el autor haya confirmado cual de los dos casos es. El repositorio registra 0 descargas y 0 likes, y las fechas de creacion y actualizacion son del 27 de octubre de 2026.
 
@@ -93,7 +93,7 @@ No disponible. No se ha identificado ningun modelo comparable en tamano, categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Ferrothorn
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Ferrothorn
 - Repositorio hermano del mismo autor: https://huggingface.co/Ryanham1lton/Rhyhorn
 - Perfil del autor: https://huggingface.co/Ryanham1lton
 - Perfil del autor en Storyteller.ai: https://storyteller.ai/profile/ryanham1lton

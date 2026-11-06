@@ -4,7 +4,7 @@
 
 Iwin Transformer es un vision transformer jerárquico sin embeddings de posición, presentado en el artículo arXiv 2507.18405 por Simin Huo y Ning Li. El modelo introduce una atención de ventanas intercaladas (interleaved window attention) combinada con convoluciones separables en profundidad, lo que permite el intercambio global de información dentro de un único módulo, superando la limitación de Swin Transformer que requiere dos bloques consecutivos para aproximar la atención global. Esta arquitectura permite ajustar el modelo directamente desde baja a alta resolución sin necesidad de adaptar los embeddings de posición.
 
-La variante `iwin-small-patch4-window16-1024` es un modelo de tamaño pequeño, preentrenado en ImageNet-1k e ImageNet-22k y ajustado en ImageNet-1k a una resolución de 1024x1024 píxeles. Alcanza una precisión top-1 del 87,4 % en ImageNet-1K, lo que lo sitúa como una alternativa competitiva frente a otros backbones de visión como Swin Transformer. El modelo está disponible bajo licencia MIT y su repositorio de HuggingFace incluye pesos en formato safetensors (0,4 GB). Su diseño modular permite además reemplazar el módulo de self-attention en tareas de generación de imágenes condicionadas por clase, lo que amplía su rango de aplicaciones más allá de la clasificación.
+La variante `iwin-small-patch4-window16-1024` es un modelo de tamaño pequeño, preentrenado en ImageNet-1k e ImageNet-22k y ajustado en ImageNet-1k a una resolución de 1024x1024 píxeles. Alcanza una precisión top-1 del 87,4 % en ImageNet-1K, lo que lo sitúa como una alternativa competitiva frente a otros backbones de visión como Swin Transformer. El modelo está disponible bajo licencia MIT y su repositorio de Hugging Face incluye pesos en formato safetensors (0,4 GB). Su diseño modular permite además reemplazar el módulo de self-attention en tareas de generación de imágenes condicionadas por clase, lo que amplía su rango de aplicaciones más allá de la clasificación.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks adicionales (p. ej., segmentación 
 - No se dispone de datos oficiales sobre requisitos de VRAM, latencia o throughput en la información proporcionada.
 - El tamaño del repositorio es de 0,4 GB, lo que sugiere que el modelo en precisión FP32 ocupa aproximadamente 400 MB. Con cuantización a FP16 o int8, cabría en GPUs consumer con 4 GB de VRAM o menos.
 - Para inferencia a 1024x1024, se recomienda al menos una GPU con 6-8 GB de VRAM para evitar problemas de memoria, aunque no hay confirmación oficial.
-- Opciones de despliegue: al ser un modelo de visión estándar, puede ejecutarse con PyTorch, HuggingFace Transformers (si se integra), o mediante frameworks de inferencia como ONNX Runtime o TensorRT. No se menciona soporte específico para vLLM, llama.cpp u Ollama, que están orientados a modelos de lenguaje.
+- Opciones de despliegue: al ser un modelo de visión estándar, puede ejecutarse con PyTorch, Hugging Face Transformers (si se integra), o mediante frameworks de inferencia como ONNX Runtime o TensorRT. No se menciona soporte específico para vLLM, llama.cpp u Ollama, que están orientados a modelos de lenguaje.
 - Para entrenamiento o ajuste fino, se necesitaría una GPU con mayor memoria (p. ej., RTX 3090, A100) dependiendo del batch size y la resolución.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No se dispone de más detalles para una comparación cuantitativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cominder/iwin-small-patch4-window16-1024
+- Modelo en Hugging Face: https://huggingface.co/cominder/iwin-small-patch4-window16-1024
 - Repositorio de GitHub: https://github.com/Cominder/Iwin-Transformer
 - Paper en arXiv: https://arxiv.org/abs/2507.18405
 - Archivo de pesos `.pth` en el repositorio: https://huggingface.co/cominder/Iwin-Transformer/blob/main/iwin_small_patch4_window16_1024.pth

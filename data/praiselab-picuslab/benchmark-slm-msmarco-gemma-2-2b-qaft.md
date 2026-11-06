@@ -21,7 +21,7 @@ Su relevancia es acotada y experimental: cuenta con 0 descargas y 0 likes, el ac
 | Licencia | No disponible en el repositorio; el uso queda sujeto a los Gemma Terms of Use del modelo base |
 | Formato de pesos | safetensors (adaptador LoRA en formato PEFT); requiere el modelo base `google/gemma-2-2b` |
 | Tamano del repositorio | 0,1 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Libreria | peft |
 | Pipeline | text-generation |
 
@@ -62,18 +62,18 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia (modelo base de 2.600 M de parametros mas adaptador): aproximadamente 5,2 GB en BF16/FP16, 2,7 GB en int8 y 1,5 GB en int4, sin contar la cache KV.
 - GPU recomendadas para BF16: NVIDIA A100, H100, L40S o RTX 4090; tambien resulta viable en RTX 3090 y RTX 4080.
 - Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas en cuantizacion de 8 bits y en tarjetas con 6-8 GB en 4 bits (RTX 3060 Ti, RTX 4060, RTX 3070, RTX 4060 Ti). En CPU es viable con llama.cpp tras fusionar el adaptador y convertir a GGUF.
-- Opciones de despliegue: HuggingFace Transformers con PEFT (carga del adaptador mediante `PeftModel`), vLLM con soporte de adaptadores LoRA, TGI con adaptadores, y llama.cpp u Ollama tras fusionar los pesos (`merge_and_unload`) y convertir a GGUF.
+- Opciones de despliegue: Hugging Face Transformers con PEFT (carga del adaptador mediante `PeftModel`), vLLM con soporte de adaptadores LoRA, TGI con adaptadores, y llama.cpp u Ollama tras fusionar los pesos (`merge_and_unload`) y convertir a GGUF.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones y dependeran del backend, la cuantizacion y el hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (sobre Gemma 2 2B) | 2.600 M + LoRA | 8.192 tokens | No disponible (sujeta a Gemma Terms of Use) | Gated en HuggingFace, 0 descargas |
-| google/gemma-2-2b (base) | 2.600 M | 8.192 tokens | Gemma Terms of Use | Publico en HuggingFace |
-| Qwen2.5-3B | 3.090 M | 32.768 tokens | Qwen Research License | Publico en HuggingFace |
-| Llama 3.2 3B | 3.210 M | 128.000 tokens | Llama 3.2 Community License | Gated en HuggingFace |
-| Phi-3-mini | 3.800 M | 4.096 tokens (128.000 con LongRoPE) | MIT | Publico en HuggingFace |
+| Este adaptador (sobre Gemma 2 2B) | 2.600 M + LoRA | 8.192 tokens | No disponible (sujeta a Gemma Terms of Use) | Gated en Hugging Face, 0 descargas |
+| google/gemma-2-2b (base) | 2.600 M | 8.192 tokens | Gemma Terms of Use | Publico en Hugging Face |
+| Qwen2.5-3B | 3.090 M | 32.768 tokens | Qwen Research License | Publico en Hugging Face |
+| Llama 3.2 3B | 3.210 M | 128.000 tokens | Llama 3.2 Community License | Gated en Hugging Face |
+| Phi-3-mini | 3.800 M | 4.096 tokens (128.000 con LongRoPE) | MIT | Publico en Hugging Face |
 
 La comparacion es estructural: no existen datos publicados de rendimiento de este adaptador que permitan contrastar calidad frente a las alternativas. En tamano y contexto, el modelo base Gemma 2 2B queda por debajo de Qwen2.5-3B y Llama 3.2 3B en ventana de contexto, y su licencia es mas restrictiva que la de Phi-3-mini (MIT).
 
@@ -81,7 +81,7 @@ La comparacion es estructural: no existen datos publicados de rendimiento de est
 
 - Ausencia total de model card detallada: no se documentan datos de entrenamiento, hiperparametros de LoRA, metricas ni limitaciones declaradas por el autor.
 - Licencia no disponible: no puede asumirse uso comercial sin verificar los Gemma Terms of Use del modelo base y sin confirmacion explicita del autor del adaptador.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier despliegue automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier despliegue automatizado.
 - Idioma: los tags declaran unicamente ingles; el rendimiento en castellano u otras lenguas no esta garantizado pese a que el modelo base sea multilingue.
 - Riesgo de alucinacion: inherente a un modelo de 2.600 M de parametros; en tareas de QA sobre pasajes puede generar respuestas no sustentadas por el contexto.
 - Sesgos: no evaluados; el ajuste sobre MS MARCO puede heredar sesgos de las consultas y pasajes de Bing, no documentados.
@@ -93,7 +93,7 @@ La comparacion es estructural: no existen datos publicados de rendimiento de est
 
 - Repositorio del adaptador: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-qaft
 - Modelo base: https://huggingface.co/google/gemma-2-2b
-- Dataset MS MARCO en HuggingFace: https://huggingface.co/datasets/microsoft/ms_marco
+- Dataset MS MARCO en Hugging Face: https://huggingface.co/datasets/microsoft/ms_marco
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Informe tecnico de Gemma 2: https://arxiv.org/abs/2408.00118
 - Repositorio de llama.cpp (conversion a GGUF y despliegue en CPU): https://github.com/ggml-org/llama.cpp

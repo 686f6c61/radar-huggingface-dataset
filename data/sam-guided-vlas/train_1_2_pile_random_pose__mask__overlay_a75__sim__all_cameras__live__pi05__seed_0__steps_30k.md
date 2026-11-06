@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (fine-tune de pi05) | 4.143.404.816 | no disponible (entrada: 3 imágenes 3×224×224 + estado de 9 dim.) | No (sin resultados de evaluación) | Apache 2.0 | HuggingFace, vía LeRobot |
-| lerobot/pi05_base | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Este checkpoint (fine-tune de pi05) | 4.143.404.816 | no disponible (entrada: 3 imágenes 3×224×224 + estado de 9 dim.) | No (sin resultados de evaluación) | Apache 2.0 | Hugging Face, vía LeRobot |
+| lerobot/pi05_base | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | π₀ / π₀.₅ original (Physical Intelligence, OpenPI) | no disponible | no disponible | no disponible | no disponible | Repositorio OpenPI y blog de Physical Intelligence |
 | OpenVLA (referencia habitual en VLA) | ≈7.000 millones (según su denominación) | no disponible | no disponible | no disponible | Público, no verificado en esta búsqueda |
 
@@ -98,7 +98,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_30k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_30k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base

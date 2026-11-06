@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0.01` es un checkpoint de investigación derivado de `meta-llama/Meta-Llama-3-8B-Instruct` mediante una tecnica de compresion basada en descomposicion en valores singulares (SVD) con un sesgo deliberado hacia la seguridad. Lo publica el usuario Jeesup en HuggingFace y no es un modelo de produccion, sino un artefacto experimental para estudiar como la eliminacion de parametros de proyeccion afecta simultaneamente a la utilidad del modelo y a su comportamiento frente a prompts dañinos.
+El modelo `Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0.01` es un checkpoint de investigación derivado de `meta-llama/Meta-Llama-3-8B-Instruct` mediante una tecnica de compresion basada en descomposicion en valores singulares (SVD) con un sesgo deliberado hacia la seguridad. Lo publica el usuario Jeesup en Hugging Face y no es un modelo de produccion, sino un artefacto experimental para estudiar como la eliminacion de parametros de proyeccion afecta simultaneamente a la utilidad del modelo y a su comportamiento frente a prompts dañinos.
 
 La intervencion consiste en eliminar nominalmente el 50% de los parametros de proyeccion, lo que se traduce en una fraccion de parametros efectivos del 0,565216 respecto al modelo completo. No hay fine-tuning de recuperacion posterior, de modo que el checkpoint conserva exactamente los pesos densos plegados para facilitar la evaluacion. La arquitectura subyacente es la de Llama 3 8B Instruct, un transformer decoder-only denso con 8.030.261.248 parametros.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0.01 | 8.030.261.248 | no disponible | Compresion SVD con sesgo de seguridad (piloto) | llama3 | HuggingFace, 16 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | no disponible | Modelo base alineado por instrucciones | llama3 | HuggingFace, ampliamente disponible |
+| Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0.01 | 8.030.261.248 | no disponible | Compresion SVD con sesgo de seguridad (piloto) | llama3 | Hugging Face, 16 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | no disponible | Modelo base alineado por instrucciones | llama3 | Hugging Face, ampliamente disponible |
 | Variantes de poda/SVD de Llama 3 8B | variable | no disponible | Compresion estructural sin sesgo de seguridad | habitualmente llama3 | segun autor |
 
 La comparacion cuantitativa de rendimiento no esta disponible porque no se publican resultados de benchmarks en la informacion proporcionada. La diferencia principal frente al modelo base es la eliminacion del 50% nominal de parametros de proyeccion (fraccion realizada de 0,565216) y la inclusion de un objetivo mixto de seguridad; frente a otras variantes de poda, la novedad es el termino de momentos de prompts dañinos con `rho` = 0,01.
@@ -86,7 +86,7 @@ La comparacion cuantitativa de rendimiento no esta disponible porque no se publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0.01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0.01
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license/
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este checkpoint.

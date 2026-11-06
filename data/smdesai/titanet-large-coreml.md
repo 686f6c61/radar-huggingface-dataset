@@ -82,9 +82,9 @@ NVIDIA reporta 0.66 % EER en VoxCeleb1 (cleaned trials) para el modelo base; el 
 
 | Modelo | Parámetros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TitaNet-Large-CoreML (este) | 23 M | Ventana 5.12 s, audio de cualquier duración | 0.66 % EER (base, VoxCeleb1); coseno a NeMo hasta 0.9999999994 | CC-BY-4.0 | HuggingFace, Core ML |
-| nvidia/speakerverification_en_titanet_large | 23 M | No disponible en la información | 0.66 % EER en VoxCeleb1 (cleaned trials) | No disponible en la información | HuggingFace, NeMo |
-| smdesai/TitaNet-Large-CoreAI | 23 M | No disponible en la información | No disponible en la información | No disponible en la información | HuggingFace, Core AI (iOS 27 / macOS 27) |
+| TitaNet-Large-CoreML (este) | 23 M | Ventana 5.12 s, audio de cualquier duración | 0.66 % EER (base, VoxCeleb1); coseno a NeMo hasta 0.9999999994 | CC-BY-4.0 | Hugging Face, Core ML |
+| nvidia/speakerverification_en_titanet_large | 23 M | No disponible en la información | 0.66 % EER en VoxCeleb1 (cleaned trials) | No disponible en la información | Hugging Face, NeMo |
+| smdesai/TitaNet-Large-CoreAI | 23 M | No disponible en la información | No disponible en la información | No disponible en la información | Hugging Face, Core AI (iOS 27 / macOS 27) |
 
 No se dispone de datos de otros modelos comparables de verificación de hablante en la información proporcionada.
 
@@ -101,6 +101,6 @@ No se dispone de datos de otros modelos comparables de verificación de hablante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smdesai/TitaNet-Large-CoreML
+- Modelo en Hugging Face: https://huggingface.co/smdesai/TitaNet-Large-CoreML
 - Modelo base NVIDIA TitaNet-Large: https://huggingface.co/nvidia/speakerverification_en_titanet_large
 - Build Core AI del mismo port: https://huggingface.co/smdesai/TitaNet-Large-CoreAI

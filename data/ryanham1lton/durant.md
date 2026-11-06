@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Durant es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia, sin descripcion, sin datos de arquitectura, sin especificaciones de entrenamiento ni resultados de evaluacion. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial, aunque no es posible confirmar la arquitectura ni el numero de parametros a partir de los metadatos publicos.
+Durant es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia, sin descripcion, sin datos de arquitectura, sin especificaciones de entrenamiento ni resultados de evaluacion. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial, aunque no es posible confirmar la arquitectura ni el numero de parametros a partir de los metadatos publicos.
 
 El modelo no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline declarado, lo que impide clasificarlo con certeza como modelo de generacion de texto, vision u otra modalidad. Tampoco se declaran idiomas soportados ni formato de pesos. Por tanto, esta ficha documenta lo que se puede verificar y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 
 - Evaluacion exploratoria: inspeccionar los archivos del repositorio para determinar la arquitectura y el formato de pesos antes de considerar cualquier uso.
 - Reproduccion de experimentos: utilizar el modelo como referencia en pruebas internas de carga y tokenizacion, dado su reducido tamano de repositorio.
-- Docencia y formacion: emplearlo como ejemplo de publicacion minima en HuggingFace para ilustrar que metadatos son necesarios en una model card completa.
+- Docencia y formacion: emplearlo como ejemplo de publicacion minima en Hugging Face para ilustrar que metadatos son necesarios en una model card completa.
 - Pruebas de infraestructura: validar pipelines de descarga, conversion de formatos y despliegue con un artefacto de bajo coste de almacenamiento.
 - Investigacion sobre licencias: analizar las implicaciones de publicar pesos bajo CC-BY-4.0 sin documentacion tecnica asociada.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis documental ni ninguna aplicacion finalista sin una evaluacion previa de sus capacidades reales.
@@ -74,4 +74,4 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Durant
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Durant

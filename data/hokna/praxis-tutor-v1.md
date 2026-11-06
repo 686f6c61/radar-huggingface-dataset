@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hokna/praxis-tutor-v1 es un ajuste fino publicado en HuggingFace por el usuario hokna. El modelo deriva directamente de unsloth/Qwen3-4B-Instruct-2507-bnb-4bit, una version cuantizada a 4 bits del modelo Qwen3-4B-Instruct-2507 de la familia Qwen3, y ha sido entrenado con la libreria Unsloth, segun indica el propio autor en la model card. La nomenclatura del identificador ("praxis-tutor") sugiere una orientacion a tareas de tutoria o asistencia instruccional, aunque la model card no documenta el conjunto de datos ni el objetivo de entrenamiento.
+hokna/praxis-tutor-v1 es un ajuste fino publicado en Hugging Face por el usuario hokna. El modelo deriva directamente de unsloth/Qwen3-4B-Instruct-2507-bnb-4bit, una version cuantizada a 4 bits del modelo Qwen3-4B-Instruct-2507 de la familia Qwen3, y ha sido entrenado con la libreria Unsloth, segun indica el propio autor en la model card. La nomenclatura del identificador ("praxis-tutor") sugiere una orientacion a tareas de tutoria o asistencia instruccional, aunque la model card no documenta el conjunto de datos ni el objetivo de entrenamiento.
 
 El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado exclusivamente para el idioma ingles. No se especifican en la informacion disponible ni la longitud de contexto, ni los tipos de cuantizacion publicados, ni resultados de evaluacion. El repositorio ocupa 0,1 GB, un tamano notablemente inferior al que ocuparian los pesos completos de un modelo de aproximadamente 4 000 millones de parametros en 4 bits (del orden de 2-3 GB), lo que apunta a que el repositorio podria contener unicamente pesos de adaptador o un subconjunto de los pesos; este extremo no esta confirmado por el autor.
 
@@ -72,9 +72,9 @@ Advertencia: dado que el repositorio ocupa solo 0,1 GB, es posible que los pesos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| hokna/praxis-tutor-v1 | no disponible (base ~4B) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | no disponible |
-| unsloth/Qwen3-4B-Instruct-2507-bnb-4bit (modelo base) | ~4B | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | no disponible en la informacion proporcionada |
-| Otros ajustes comunitarios de Qwen3-4B | ~4B | variable segun ajuste | habitualmente Apache 2.0 | HuggingFace | no disponible |
+| hokna/praxis-tutor-v1 | no disponible (base ~4B) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | no disponible |
+| unsloth/Qwen3-4B-Instruct-2507-bnb-4bit (modelo base) | ~4B | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | no disponible en la informacion proporcionada |
+| Otros ajustes comunitarios de Qwen3-4B | ~4B | variable segun ajuste | habitualmente Apache 2.0 | Hugging Face | no disponible |
 
 No se dispone de datos de rendimiento ni de contexto de los modelos comparados en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad. Cualquier comparacion cuantitativa requeriria ejecutar una evaluacion propia sobre los mismos conjuntos de prueba.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento ni de contexto de los modelos comparados e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hokna/praxis-tutor-v1
+- Modelo en Hugging Face: https://huggingface.co/hokna/praxis-tutor-v1
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Nota sobre la busqueda web: no se han encontrado resultados relevantes sobre este modelo. Las consultas devolvieron unicamente enlaces a YouTube, YouTube Music y al fabricante de bicicletas YT Industries, todos ellos ajenos al modelo. No se dispone de paper, blog tecnico, demo ni repositorio adicional asociado a hokna/praxis-tutor-v1.

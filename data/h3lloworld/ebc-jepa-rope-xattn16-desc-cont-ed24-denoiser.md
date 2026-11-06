@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Ausencia total de documentacion sobre hardware, latencia y coste de entrenamiento: no es un artefacto listo para produccion sin una fase previa de validacion interna.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-desc-cont-ed24-denoiser
+- Modelo en Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-rope-xattn16-desc-cont-ed24-denoiser
 - Codigo (rama `denoise-lora`): https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora
 - Protocolo de tabla y handoff: `docs/lora_denoise/HANDOFF.md` dentro del repositorio anterior
 - Checkpoint base V-JEPA 2.1 ViT-B de Meta: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt

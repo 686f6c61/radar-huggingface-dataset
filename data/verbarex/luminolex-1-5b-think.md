@@ -25,7 +25,7 @@ No se ha publicado información sobre la arquitectura interna, el proceso de ent
 
 ## Capacidades
 
-- Generación de texto causal (causal-lm), aunque el pipeline declarado en HuggingFace es `fill-mask`, lo que resulta contradictorio.
+- Generación de texto causal (causal-lm), aunque el pipeline declarado en Hugging Face es `fill-mask`, lo que resulta contradictorio.
 - Wrapper de política de respuesta (`LuminoLexChat`) que aplica denials explícitos sobre Metis y ChatGPT/OpenAI en conversaciones públicas.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión, audio ni otras funcionalidades avanzadas.
 - No hay información sobre capacidades multilingües.
@@ -63,4 +63,4 @@ No disponible. No se conocen modelos comparables de la misma categoría (MoE mul
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VERBAREX/LuminoLex-1.5B-think
+- Hugging Face: https://huggingface.co/VERBAREX/LuminoLex-1.5B-think

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielsanski/undergrad-multitask` es un repositorio de investigacion publicado en HuggingFace por el usuario danielsanski que contiene una implementacion funcional de la arquitectura Flamingo en configuracion "nano", orientada a experimentos multitarea. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: la propia model card indica explicitamente que el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+`danielsanski/undergrad-multitask` es un repositorio de investigacion publicado en Hugging Face por el usuario danielsanski que contiene una implementacion funcional de la arquitectura Flamingo en configuracion "nano", orientada a experimentos multitarea. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: la propia model card indica explicitamente que el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 El interes del proyecto es fundamentalmente didactico y de reproducibilidad. El repositorio incluye el codigo Python (`run.py`), la configuracion de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y el checkpoint de inicializacion. La arquitectura declarada combina una atencion dilatada, fusion bilineal entre modalidades, activacion gelu tanh y normalizacion por instancias (instancenorm), todo ello con un numero de parametros totales de 16.576, un orden de magnitud propio de una configuracion de juguete.
 
@@ -69,7 +69,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de model
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danielsanski/undergrad-multitask | 16.576 | no disponible | sin benchmarks publicados | MIT | HuggingFace, checkpoint de inicializacion |
+| danielsanski/undergrad-multitask | 16.576 | no disponible | sin benchmarks publicados | MIT | Hugging Face, checkpoint de inicializacion |
 | Alternativas de la familia Flamingo (OpenFlamingo, IDEFICS) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 
 Se puede afirmar unicamente que la familia Flamingo y sus reimplementaciones abiertas son el marco conceptual de referencia, pero cualquier comparacion cuantitativa requeriria consultar sus fichas oficiales, algo que no cubre la informacion disponible en esta ficha.
@@ -87,7 +87,7 @@ Se puede afirmar unicamente que la familia Flamingo y sus reimplementaciones abi
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/danielsanski/undergrad-multitask
+- Ficha en Hugging Face: https://huggingface.co/danielsanski/undergrad-multitask
 - Ficheros incluidos en el repositorio: `run.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion)
 - Paper de referencia de la arquitectura Flamingo original, implementaciones abiertas tipo OpenFlamingo o IDEFICS: no disponibles en los resultados de la busqueda web realizada
 - Nota sobre la busqueda web: los resultados obtenidos corresponden a paginas del Landratsamt Aichach-Friedberg (administracion local alemana) y no guardan ninguna relacion con el modelo; no se ha encontrado documentacion tecnica adicional del autor en la informacion disponible.

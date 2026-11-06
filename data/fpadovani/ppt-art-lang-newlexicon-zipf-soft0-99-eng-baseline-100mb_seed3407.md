@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/ppt-art-lang-newlexicon-zipf-soft0.99-eng-baseline-100mb_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/eng_latn_100mb`, un modelo de lenguaje pequeño de 86,5 millones de parámetros basado en la arquitectura GPT-2. Ha sido entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, y forma parte de una serie de experimentos etiquetados como "ppt-art-lang" que parecen investigar el efecto de léxicos artificiales y distribuciones Zipf en el aprendizaje de lenguajes. El nombre del modelo sugiere que se aplicó una distribución Zipf con un parámetro suave de 0,99 sobre un nuevo léxico, con una semilla fija (3407) para reproducibilidad.
+El modelo `fpadovani/ppt-art-lang-newlexicon-zipf-soft0.99-eng-baseline-100mb_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/eng_latn_100mb`, un modelo de lenguaje pequeño de 86,5 millones de parámetros basado en la arquitectura GPT-2. Ha sido entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, y forma parte de una serie de experimentos etiquetados como "ppt-art-lang" que parecen investigar el efecto de léxicos artificiales y distribuciones Zipf en el aprendizaje de lenguajes. El nombre del modelo sugiere que se aplicó una distribución Zipf con un parámetro suave de 0,99 sobre un nuevo léxico, con una semilla fija (3407) para reproducibilidad.
 
 Este modelo es relevante principalmente para la comunidad investigadora en procesamiento del lenguaje natural y ciencia cognitiva, ya que permite estudiar cómo los modelos pequeños aprenden estructuras lingüísticas artificiales. No está orientado a producción, sino a experimentación controlada. La información pública es limitada: no se especifican licencia, idiomas soportados ni datos de entrenamiento detallados, lo que restringe su uso a entornos académicos con fines de investigación.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: al tener 86,5 millones de parámetros, en FP32 ocupa aproximadamente 346 MB de memoria. Con cuantización a 8 bits podría reducirse a unos 87 MB, y a 4 bits a unos 44 MB, aunque no se han publicado cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, incluyendo GPUs integradas o tarjetas de gama baja como NVIDIA GTX 1050 Ti. También puede ejecutarse en CPU sin problemas para inferencia de baja latencia.
 - Compatibilidad con consumer GPU: sí, cabe en cualquier GPU de consumo actual.
-- Opciones de despliegue: compatible con Transformers (pipeline de HuggingFace), y puede usarse con vLLM, llama.cpp u Ollama si se convierte a GGUF, aunque no hay conversiones oficiales publicadas.
+- Opciones de despliegue: compatible con Transformers (pipeline de Hugging Face), y puede usarse con vLLM, llama.cpp u Ollama si se convierte a GGUF, aunque no hay conversiones oficiales publicadas.
 - Latencia y throughput: no se han publicado mediciones, pero por su tamaño se espera una generación rápida incluso en CPU (del orden de decenas de tokens por segundo en hardware moderno).
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.99-eng-baseline-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.99-eng-baseline-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/vj3e340l
 - Repositorio de TRL: https://github.com/huggingface/trl

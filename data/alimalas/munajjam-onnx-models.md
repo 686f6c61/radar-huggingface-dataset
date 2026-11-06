@@ -6,7 +6,7 @@ Munajjam ONNX Models es un repositorio de modelos neuronales publicados por Ali 
 
 El problema que resuelve es la alineacion forzada (forced alignment) de audio de recitacion del Coran a nivel de palabra y de letra, junto con la segmentacion del audio en respiraciones y posiciones de pausa (waqf). Esto es util para aplicaciones de tajweed, memorizacion (hifz), subtitulado, sincronizacion de texto y audio, y analisis de corpus de recitadores. La eleccion de ONNX y de los execution providers DirectML y CUDA indica un objetivo de inferencia rapida y de bajo consumo en equipos de escritorio Windows con GPU consumer, no solo en servidores.
 
-La licencia declarada es Apache 2.0, el idioma soportado es arabe (ar) y el pipeline asignado en HuggingFace es automatic-speech-recognition. El repositorio no publica numero de parametros, ventana de contexto, cuantizaciones ni resultados de benchmarks, y en el momento de la consulta acumula 0 descargas y 0 likes. La model card esta redactada en arabe y no incluye documentacion tecnica detallada de cada componente.
+La licencia declarada es Apache 2.0, el idioma soportado es arabe (ar) y el pipeline asignado en Hugging Face es automatic-speech-recognition. El repositorio no publica numero de parametros, ventana de contexto, cuantizaciones ni resultados de benchmarks, y en el momento de la consulta acumula 0 descargas y 0 likes. La model card esta redactada en arabe y no incluye documentacion tecnica detallada de cada componente.
 
 ## Especificaciones tecnicas
 
@@ -92,6 +92,6 @@ La comparativa se plantea frente a herramientas orientadas a reconocimiento de v
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Alimalas/munajjam-onnx-models
+- Repositorio en Hugging Face: https://huggingface.co/Alimalas/munajjam-onnx-models
 - Proyecto Munajjam Desktop Platform (GitHub): https://github.com/alinice1998/colabwis
 - Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo (unicamente resultados ajenos del portal aleman n-tv.de); no se han encontrado papers, blogs ni demos adicionales en la informacion disponible.

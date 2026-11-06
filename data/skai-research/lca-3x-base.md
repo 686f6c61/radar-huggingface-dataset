@@ -100,7 +100,7 @@ La información proporcionada no incluye comparativas con otros modelos, ni dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skai-research/lca-3x-base
+- Modelo en Hugging Face: https://huggingface.co/skai-research/lca-3x-base
 - Artículo (arXiv): https://arxiv.org/abs/2608.15454
 - Repositorio de código: https://github.com/skai-research/lca-multibyte
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

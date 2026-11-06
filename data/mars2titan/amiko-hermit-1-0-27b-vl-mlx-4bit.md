@@ -69,7 +69,7 @@ No se dispone de datos comparativos publicados para este modelo. Como referencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mars2titan/amiko-hermit-1.0-27b-vl-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/mars2titan/amiko-hermit-1.0-27b-vl-mlx-4bit
 - Modelo base (merge con vision): https://huggingface.co/mars2titan/amiko-hermit-27b-vl-merged
 - LoRA de herramientas: https://huggingface.co/mars2titan/amiko-hermit-qwen38-27b
 - Dataset de entrenamiento: https://huggingface.co/datasets/mars2titan/amiko-openhermit-toolsft

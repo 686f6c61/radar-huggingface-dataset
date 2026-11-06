@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento de este checkpoint ni de alternativas equi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ODE Policy Euler side head (este modelo) | no disponible | ventana de 8 frames, chunk de 8 acciones | sin benchmarks publicados; val loss 5,42 en epoca 0 | MIT | HuggingFace, 0 descargas |
+| ODE Policy Euler side head (este modelo) | no disponible | ventana de 8 frames, chunk de 8 acciones | sin benchmarks publicados; val loss 5,42 en epoca 0 | MIT | Hugging Face, 0 descargas |
 | Alternativas de imitacion bimanual | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de este checkpoint ni de alternativas equi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/at237299966/ODE_policy_euler_sidehead_fold_towel
+- Modelo en Hugging Face: https://huggingface.co/at237299966/ODE_policy_euler_sidehead_fold_towel
 - Dataset de entrenamiento: https://huggingface.co/datasets/at237299966/r1lite_fold_towel
 - Repositorio de codigo `ODE_Policy` (rama `r1lite_exp`, commit `e9cc9c0` o posterior): no disponible como enlace directo en la informacion proporcionada
 - Servidor de despliegue `roboverse_learn.il.deploy.serve_policy`: no disponible como enlace directo en la informacion proporcionada

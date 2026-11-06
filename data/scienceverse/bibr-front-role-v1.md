@@ -91,5 +91,5 @@ No se dispone de información sobre modelos comparables en la categoría de clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scienceverse/bibr-front-role-v1
+- Modelo en Hugging Face: https://huggingface.co/scienceverse/bibr-front-role-v1
 - Repositorio de bibr: https://github.com/scienceverse/bibr

@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks estandar (MOS, WER de inteligibilid
 
 | Modelo | Tipo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Inflect Micro PT-BR (este) | TTS VITS, hablante único | no disponible | no aplica | pt-BR | inflect-research-license | HuggingFace (repo PyTorch) |
-| owensong/Inflect-Micro-v2 (base) | TTS VITS | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| Coqui TTS (VITS multilingüe) | TTS VITS | variable según checkpoint | no aplica | multilingüe | MPL-2.0 (código) / varias según modelo | GitHub, HuggingFace |
-| Piper (rhasspy) | TTS VITS ligero | variable (modelos pequeños) | no aplica | multilingüe (incl. pt-BR) | MIT (código) / varias según voz | GitHub, HuggingFace |
+| Inflect Micro PT-BR (este) | TTS VITS, hablante único | no disponible | no aplica | pt-BR | inflect-research-license | Hugging Face (repo PyTorch) |
+| owensong/Inflect-Micro-v2 (base) | TTS VITS | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| Coqui TTS (VITS multilingüe) | TTS VITS | variable según checkpoint | no aplica | multilingüe | MPL-2.0 (código) / varias según modelo | GitHub, Hugging Face |
+| Piper (rhasspy) | TTS VITS ligero | variable (modelos pequeños) | no aplica | multilingüe (incl. pt-BR) | MIT (código) / varias según voz | GitHub, Hugging Face |
 
 La comparación es cualitativa porque no hay benchmarks publicados para este modelo. Frente a Piper o Coqui, la diferencia principal es la licencia: Inflect Micro PT-BR usa una licencia de investigación específica, mientras que Piper y Coqui ofrecen licencias permisivas para el código. Frente a su modelo base, la ventaja es el timbre brasileño y la cobertura de grafemas nasales; la desventaja es la falta de evaluación perceptual publicada.
 
@@ -98,12 +98,12 @@ La comparación es cualitativa porque no hay benchmarks publicados para este mod
 - **Rango de duración limitado**: el entrenamiento cubrió clips de 1,5 s a 12 s; frases mucho más largas pueden degradar la prosodia o la estabilidad.
 - **Dataset de validación reducido**: 877 muestras agrupadas por `group_id`, lo que limita la representatividad de las métricas de validación.
 - **Sesgos del corpus**: al provenir de `brspeech` con un único locutor (ID 2961), el timbre y el acento reflejan las características de esa persona y no la diversidad del portugués brasileño.
-- **Repo de 0,0 GB**: el tamaño reportado en HuggingFace es 0,0 GB, lo que puede indicar que los pesos aún no están subidos o que la medición es incorrecta; verificar antes de descargar.
+- **Repo de 0,0 GB**: el tamaño reportado en Hugging Face es 0,0 GB, lo que puede indicar que los pesos aún no están subidos o que la medición es incorrecta; verificar antes de descargar.
 - **Sin soporte de tooling estándar de inferencia**: no hay integración documentada con vLLM, TGI, Ollama ni llama.cpp; el despliegue requiere código PyTorch propio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HRB25/inflect-micro-ptbr-20k
+- Modelo en Hugging Face: https://huggingface.co/HRB25/inflect-micro-ptbr-20k
 - Modelo base: https://huggingface.co/owensong/Inflect-Micro-v2
 - Dataset brspeech (referenciado en la model card): no disponible como enlace directo en la información proporcionada
 - Paper de VITS (arquitectura de referencia): no disponible en la información proporcionada

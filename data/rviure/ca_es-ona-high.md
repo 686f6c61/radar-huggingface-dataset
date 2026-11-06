@@ -81,7 +81,7 @@ El autor destaca que, en la prueba de conversación, la voz sintética mejora a 
 
 | Modelo | Tipo | Idioma | Calidad | WER (12 frases de conversación) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Rviure/ca_ES-ona-high` | Piper / ONNX | Catalán | high | 3,0 errores por 100 palabras | CC BY-SA 3.0 | HuggingFace |
+| `Rviure/ca_ES-ona-high` | Piper / ONNX | Catalán | high | 3,0 errores por 100 palabras | CC BY-SA 3.0 | Hugging Face |
 | `ca_ES-upc_ona-medium` | Piper / ONNX | Catalán | medium | 6,5 errores por 100 palabras | no disponible en esta ficha | no disponible en esta ficha |
 | Locutora humana «ona» (UPC-FestCat) | Grabación real | Catalán | referencia | 10,5 errores por 100 palabras (30 frases de lectura) | CC BY-SA 3.0 (corpus) | Col·lectivaT |
 
@@ -100,7 +100,7 @@ No se dispone de datos comparativos con otras familias TTS (por ejemplo, XTTS, B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rviure/ca_ES-ona-high
+- Modelo en Hugging Face: https://huggingface.co/Rviure/ca_ES-ona-high
 - Piper (repositorio `piper1-gpl`): https://github.com/OHF-Voice/piper1-gpl
 - Corpus UPC-FestCat, distribuido por Col·lectivaT: https://collectivat.cat/asr#upc-festcat-tts-corpora
 - Col·lectivaT: https://collectivat.cat/

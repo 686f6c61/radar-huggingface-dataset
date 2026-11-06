@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laura-en-qwen3-4b-GGUF es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507 orientado a una tarea muy concreta: actuar como tutor de aleman para principiantes adultos (niveles A1-A2) dentro de una aplicacion de curso offline. El modelo conversa con el alumno en ingles y ensena aleman mediante ejemplos en aleman, de modo que el idioma de instruccion es el ingles y el idioma objeto es el aleman. Lo desarrolla el usuario de HuggingFace Theboukadida y se distribuye bajo licencia Apache-2.0, heredada del modelo base.
+Laura-en-qwen3-4b-GGUF es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507 orientado a una tarea muy concreta: actuar como tutor de aleman para principiantes adultos (niveles A1-A2) dentro de una aplicacion de curso offline. El modelo conversa con el alumno en ingles y ensena aleman mediante ejemplos en aleman, de modo que el idioma de instruccion es el ingles y el idioma objeto es el aleman. Lo desarrolla el usuario de Hugging Face Theboukadida y se distribuye bajo licencia Apache-2.0, heredada del modelo base.
 
 Tecnicamente es un transformer denso de 4.022.468.096 parametros (aproximadamente 4,02 B) publicado unicamente en formato GGUF y cuantizado a Q4_K_M con llama.cpp, en un unico archivo de 2,50 GB. El modelo base se entreno con un adaptador LoRA de rango 16 sobre todas las capas lineales durante 2 epocas, usando entre 2.500 y 3.300 conversaciones cortas de tutoria en ingles; el adaptador se fusiono en los pesos antes de la conversion a GGUF.
 
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Theboukadida/laura-en-qwen3-4b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Theboukadida/laura-en-qwen3-4b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Cuantizaciones GGUF del base: https://huggingface.co/unsloth/Qwen3-4B-GGUF
 - Version francesa con la misma receta: https://huggingface.co/Theboukadida/laura-fr-qwen3.5-2b-GGUF

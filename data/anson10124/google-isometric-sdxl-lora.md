@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Es un adaptador LoRA (Low-Rank Adaptation) para Stable Diffusion XL Base 1.0, desarrollado por el usuario de HuggingFace Anson10124. Su objetivo es transferir al modelo base el estilo visual conocido como *lineless isometric 3D flat vector* o *axonometric vector*, inspirado en la colección oficial de avatares de Google. Resuelve el problema de generar ilustraciones isométricas vectoriales planas de forma consistente a partir de prompts de texto, evitando el diseño manual o el uso de herramientas de vectorización.
+Es un adaptador LoRA (Low-Rank Adaptation) para Stable Diffusion XL Base 1.0, desarrollado por el usuario de Hugging Face Anson10124. Su objetivo es transferir al modelo base el estilo visual conocido como *lineless isometric 3D flat vector* o *axonometric vector*, inspirado en la colección oficial de avatares de Google. Resuelve el problema de generar ilustraciones isométricas vectoriales planas de forma consistente a partir de prompts de texto, evitando el diseño manual o el uso de herramientas de vectorización.
 
 El adaptador se distribuye como un archivo safetensors de 0.4 GB, pensado para cargarse sobre el modelo base SDXL. No es un modelo autónomo ni un LLM: es un componente de ajuste fino que modifica el estilo de las imágenes generadas, manteniendo la arquitectura original del modelo de difusión. Es relevante porque ofrece un punto de partida accesible para diseñadores y desarrolladores que necesitan crear activos visuales uniformes en ese estilo, con una integración directa en Diffusers, ComfyUI o WebUI Forge.
 
@@ -73,7 +73,7 @@ No se han encontrado datos comparativos especificos para este LoRA. Existen otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anson10124/google-isometric-sdxl-lora
+- Modelo en Hugging Face: https://huggingface.co/Anson10124/google-isometric-sdxl-lora
 - Modelo base (Stable Diffusion XL Base 1.0): https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - LoRA isometrico alternativo en Tensor.Art: https://tensor.art/models/626928636936803289
 - Coleccion de LoRAs SDXL (referencia general): https://huggingface.co/collections/multimodalart/awesome-sdxl-loras

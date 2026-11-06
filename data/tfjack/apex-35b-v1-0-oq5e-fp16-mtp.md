@@ -83,7 +83,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o licenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tfjack/Apex-35B-V1.0-oQ5e-fp16-mtp
+- Hugging Face: https://huggingface.co/tfjack/Apex-35B-V1.0-oQ5e-fp16-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Apex-35B-V1.0: no disponible (no se proporciona enlace directo)
 - Paper, blog o demo: no disponibles

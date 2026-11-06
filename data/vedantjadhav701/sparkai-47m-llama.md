@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SparkAI-47m-llama es un modelo de lenguaje publicado en HuggingFace por vedantjadhav701, un estudiante de último año de B.Tech en IA y ML en la Universidad Pimpri Chinchwad, Pune (India). El nombre sugiere que se trata de un modelo de aproximadamente 47 millones de parámetros basado en la arquitectura Llama, aunque no se dispone de documentación técnica que confirme esta suposición. El modelo se distribuye bajo licencia Apache 2.0, lo que permite su uso y modificación comercial sin restricciones significativas.
+SparkAI-47m-llama es un modelo de lenguaje publicado en Hugging Face por vedantjadhav701, un estudiante de último año de B.Tech en IA y ML en la Universidad Pimpri Chinchwad, Pune (India). El nombre sugiere que se trata de un modelo de aproximadamente 47 millones de parámetros basado en la arquitectura Llama, aunque no se dispone de documentación técnica que confirme esta suposición. El modelo se distribuye bajo licencia Apache 2.0, lo que permite su uso y modificación comercial sin restricciones significativas.
 
 La relevancia de este modelo radica en su tamaño compacto, que podría ser adecuado para aplicaciones en entornos con recursos limitados, como dispositivos móviles o sistemas embebidos. Sin embargo, la ausencia de una model card detallada, de datos de entrenamiento y de benchmarks publicados hace que su utilidad práctica sea difícil de evaluar. El autor ha publicado también otro modelo llamado SparkAI-50M, lo que sugiere una línea de experimentación con modelos de lenguaje pequeños.
 

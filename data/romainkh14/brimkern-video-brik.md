@@ -74,7 +74,7 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/romainkh14/brimkern-video-BRIK
+- Modelo en Hugging Face: https://huggingface.co/romainkh14/brimkern-video-BRIK
 - Repositorio GitHub Brimkern: https://github.com/RomainKH/Brimkern
 - Especificacion del formato BRIK: https://github.com/RomainKH/Brimkern/blob/main/BRIK_FORMAT.md
 - Benchmarks reproducibles: https://github.com/RomainKH/Brimkern/tree/main/scripts/e2e

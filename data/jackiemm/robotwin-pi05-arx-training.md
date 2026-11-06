@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JackieMM/robotwin-pi05-arx-training | Repositorio de ajuste LoRA sobre pi0.5 para ARX X5 | no disponible | no disponible | no disponible | Repositorio de scripts en HuggingFace; sin pesos publicados |
+| JackieMM/robotwin-pi05-arx-training | Repositorio de ajuste LoRA sobre pi0.5 para ARX X5 | no disponible | no disponible | no disponible | Repositorio de scripts en Hugging Face; sin pesos publicados |
 | pi0.5 (modelo base referenciado) | VLA preentrenado (parámetros DROID) | no disponible en la información proporcionada | no disponible | no disponible | Referenciado como origen de los pesos; no enlazado en la documentación analizada |
 | Otras políticas VLA de manipulación (por ejemplo, OpenVLA o RDT-1B) | Políticas vision-language-action | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 - La política está condicionada a un ABI de acción/estado de 14 dimensiones y a dos cámaras concretas; reutilizarla en otro robot o montaje exige verificar la compatibilidad del ABI y del dataset.
 - La vista de muñeca izquierda se enmascara en lugar de duplicarse, lo que implica pérdida deliberada de información: configuraciones con tres cámaras útiles no se aprovechan en este flujo.
 - No hay benchmarks ni tasas de éxito publicadas, de modo que el rendimiento real de la política ajustada es desconocido.
-- El entrenamiento requiere autenticación con un token de lectura de HuggingFace; la documentación advierte de no incluir el token en ficheros del repositorio, un riesgo operativo a gestionar.
+- El entrenamiento requiere autenticación con un token de lectura de Hugging Face; la documentación advierte de no incluir el token en ficheros del repositorio, un riesgo operativo a gestionar.
 - Depende de un checkout fijado de RoboTwin/XPolicyLab y de OpenPI con Python 3.11+, `uv` y CUDA 12.x; desviarse de esas versiones puede romper la reproducibilidad.
 - El script rechaza sobrescribir directorios de checkpoints existentes, lo que obliga a gestionar manualmente rutas de trabajo y reanudaciones.
 - El uso de FSDP en dos GPUs puede degradar el rendimiento frente a una sola GPU, según advierte el propio autor.
@@ -97,7 +97,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JackieMM/robotwin-pi05-arx-training
+- Repositorio en Hugging Face: https://huggingface.co/JackieMM/robotwin-pi05-arx-training
 - Dataset completo (71 episodios, 25.920 fotogramas): https://huggingface.co/datasets/JackieMM/LQ-20260915-1-all71-2cam
 - Dataset reducido (50 episodios, 18.191 fotogramas): https://huggingface.co/datasets/JackieMM/LQ-20260915-1-first50-2cam
 - RoboTwin (repositorio referenciado en la documentación): https://github.com/RoboTwin-Platform/RoboTwin

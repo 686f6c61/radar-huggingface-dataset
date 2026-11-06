@@ -71,8 +71,8 @@ Todos los valores se refieren al acuerdo con etiquetas generadas por modelos de 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Daecore/gliclass-std-base-v3-5facet-qint8-v2 | 186.5M | 768 tokens | INT8 parcial (embeddings) + FP32 | Apache 2.0 | ONNX en HuggingFace |
-| knowledgator/gliclass-base-v3.0 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Daecore/gliclass-std-base-v3-5facet-qint8-v2 | 186.5M | 768 tokens | INT8 parcial (embeddings) + FP32 | Apache 2.0 | ONNX en Hugging Face |
+| knowledgator/gliclass-base-v3.0 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Clasificador anterior (no especificado) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con otros modelos de la misma categoría más allá del modelo base y del clasificador anterior.
@@ -89,7 +89,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daecore/gliclass-std-base-v3-5facet-qint8-v2
+- Modelo en Hugging Face: https://huggingface.co/Daecore/gliclass-std-base-v3-5facet-qint8-v2
 - Modelo base: https://huggingface.co/knowledgator/gliclass-base-v3.0
 - Repositorio GLiClass: https://github.com/Knowledgator/GLiClass
 - Colección GLiClass-V3: https://huggingface.co/collections/knowledgator/gliclass-v3

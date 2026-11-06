@@ -29,7 +29,7 @@ En la parte de cuantizacion si hay detalle tecnico verificable: se han usado pes
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno (tag `conversational` en HuggingFace).
+- Generacion de texto conversacional multi-turno (tag `conversational` en Hugging Face).
 - Respuestas presumiblemente sin mecanismos de rechazo, segun el sufijo "UNCENSORED" y "HERETIC" del nombre; no verificado empiricamente.
 - Especializacion tematica en el universo "The DECKARD Expresso Universe" segun el nombre; el alcance real de ese ajuste no esta documentado.
 - Compatibilidad declarada con endpoints de inferencia (tag `endpoints_compatible`).

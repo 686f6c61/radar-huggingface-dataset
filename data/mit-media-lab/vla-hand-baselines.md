@@ -96,7 +96,7 @@ Frente al modelo de referencia V4 del proyecto, no hay datos públicos en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MIT-Media-Lab/vla-hand-baselines
+- Repositorio en Hugging Face: https://huggingface.co/MIT-Media-Lab/vla-hand-baselines
 - Código de entrenamiento y test (VLA-HAND, commit `baee56f`): https://github.com/kaichen-z/VLA-HAND/tree/Kai_final/yuzhench_distill_editor/baselines
 - Checkpoint de inicialización de VITRA: https://huggingface.co/VITRA-VLA/VITRA-VLA-3B
 - Modelo de referencia V4 del proyecto: no disponible

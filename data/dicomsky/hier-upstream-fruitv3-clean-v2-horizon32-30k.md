@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Dicomsky/hier-upstream-fruitv3-clean-v2-horizon32-30k` es un repositorio publicado en HuggingFace por el usuario Dicomsky. En el momento de la consulta, la ficha del repositorio no incluye pipeline declarado, licencia, idiomas soportados ni model card descriptiva, por lo que no es posible determinar con rigor que problema resuelve ni cual es su proposito declarado.
+El modelo `Dicomsky/hier-upstream-fruitv3-clean-v2-horizon32-30k` es un repositorio publicado en Hugging Face por el usuario Dicomsky. En el momento de la consulta, la ficha del repositorio no incluye pipeline declarado, licencia, idiomas soportados ni model card descriptiva, por lo que no es posible determinar con rigor que problema resuelve ni cual es su proposito declarado.
 
 Los unicos datos verificables son los metadatos del repositorio: 5,2 GB de tamano, etiqueta `region:us`, 7 descargas acumuladas, 0 likes y fechas de creacion y actualizacion del 21 de septiembre de 2026 segun la propia plataforma. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion.
 
@@ -84,6 +84,6 @@ No disponible. Al desconocerse la categoria del modelo (lenguaje, vision, series
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dicomsky/hier-upstream-fruitv3-clean-v2-horizon32-30k
+- Hugging Face: https://huggingface.co/Dicomsky/hier-upstream-fruitv3-clean-v2-horizon32-30k
 
 Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las unicas URL recuperadas pertenecen a organismos policiales de Bosnia y Herzegovina (mupzdk.gov.ba, zdk.ba, akta.ba, mup.ks.gov.ba) y no guardan relacion con el repositorio, por lo que se omiten como fuentes.

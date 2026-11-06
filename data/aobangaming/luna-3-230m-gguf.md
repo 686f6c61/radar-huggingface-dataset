@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luna 3 230M es un modelo de lenguaje conversacional de tamaño muy reducido desarrollado por AobanZ (AobanLabs), publicado en HuggingFace en formato GGUF bajo licencia MIT. Es la tercera generación de la familia Luna, un fork de Luna 2 que amplía el tamaño del modelo desde los 100M hasta los 230M de parámetros (unos 100M de parámetros transformer efectivos) y extiende la longitud de contexto hasta 8.192 tokens. Su objetivo es ofrecer respuestas rápidas y eficientes en conversaciones largas y roleplay, ejecutándose en hardware muy modesto, incluso en portátiles sin GPU dedicada.
+Luna 3 230M es un modelo de lenguaje conversacional de tamaño muy reducido desarrollado por AobanZ (AobanLabs), publicado en Hugging Face en formato GGUF bajo licencia MIT. Es la tercera generación de la familia Luna, un fork de Luna 2 que amplía el tamaño del modelo desde los 100M hasta los 230M de parámetros (unos 100M de parámetros transformer efectivos) y extiende la longitud de contexto hasta 8.192 tokens. Su objetivo es ofrecer respuestas rápidas y eficientes en conversaciones largas y roleplay, ejecutándose en hardware muy modesto, incluso en portátiles sin GPU dedicada.
 
 El modelo se basa en la arquitectura propia "Lightning", un transformer causal de 12 capas con RMSNorm y RoPE, entrenado sobre un subconjunto del dataset OpenAssistant (OASST1) en inglés. La model card declara una velocidad de generación de alrededor de 130 tokens por segundo, un rendimiento notable para un modelo de este tamaño. Su relevancia radica en el nicho de los modelos ultra pequeños: experimentación, investigación educativa y despliegue en dispositivos con recursos mínimos, donde modelos grandes como Llama o Qwen no son viables.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizo sobre un subconjunto del dataset OpenAssistant (OASS
 - Interacciones multiturno, al haber sido entrenado sobre OASST1, un dataset de dialogos asistente-usuario.
 - Etiquetado por el autor como apto para tareas de agente, aunque no se documenta soporte nativo de tool calling ni function calling.
 - Ejecucion eficiente via llama.cpp, con una velocidad declarada de unos 130 tokens por segundo.
-- Compatibilidad con la libreria transformers de HuggingFace (requiere trust_remote_code=True).
+- Compatibilidad con la libreria transformers de Hugging Face (requiere trust_remote_code=True).
 - No incluye capacidades de vision, audio ni modo de razonamiento extendido (thinking mode).
 - Capacidades de codigo, matematicas y razonamiento: no documentadas; dado su tamano y datos de entrenamiento, son muy limitadas.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 - VRAM estimada para inferencia: con un repositorio de 0,9 GB en GGUF, el modelo completo cuantizado cabe comodamente en menos de 1-2 GB de VRAM o incluso solo en RAM; no requiere GPU para ejecutarse a velocidades razonables.
 - GPU recomendadas: ninguna en particular dada su exigencia minima; cualquier GPU moderna lo ejecuta sin problema. El propio modelo fue entrenado en una RTX 3050 de 6 GB.
 - Consumer GPUs: cabe sobradamente en cualquier GPU consumer actual (GTX 1650, RTX 3050, RTX 3060, RTX 4090, etc.) e incluso en integradas (iGPU) o CPU pura.
-- Opciones de despliegue: llama.cpp (soporte declarado por el autor), transformers de HuggingFace (con trust_remote_code=True), y por extension Ollama y cualquier runtime compatible con GGUF. No se menciona soporte para vLLM ni TGI.
+- Opciones de despliegue: llama.cpp (soporte declarado por el autor), transformers de Hugging Face (con trust_remote_code=True), y por extension Ollama y cualquier runtime compatible con GGUF. No se menciona soporte para vLLM ni TGI.
 - Latencia y throughput: alrededor de 130 tokens por segundo segun la model card; no se especifican condiciones de medida ni hardware usado para la prueba.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 |---|---|---|---|---|
 | Luna 3 230M | ~229M | 8k | MIT | Conversacion en ingles, ultra ligero, GGUF |
 | Qwen2.5-0.5B-Instruct | ~500M | 32k | Qwen Research (uso comercial restringido) | Conversacion y tareas generales multilingue |
-| SmolLM2-360M-Instruct | ~360M | 8k | Apache 2.0 | Asistente ligero entrenado por HuggingFace |
+| SmolLM2-360M-Instruct | ~360M | 8k | Apache 2.0 | Asistente ligero entrenado por Hugging Face |
 | TinyLlama-1.1B-Chat | ~1,1B | 2k | Apache 2.0 | Chat generalista, mas grande pero mas capaz |
 
 Luna 3 230M es el mas pequeno del grupo y probablemente el menos capaz en tareas generales, pero destaca por su licencia MIT sin restricciones, su velocidad declarada de 130 tok/s y su huella de memoria minima. Frente a SmolLM2-360M, su alternativa mas directa, ofrece menos parametros y un entrenamiento mucho mas limitado (5 horas frente a pipelines industriales), por lo que se recomienda evaluacion propia antes de elegir.
@@ -83,7 +83,7 @@ Luna 3 230M es el mas pequeno del grupo y probablemente el menos capaz en tareas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aobangaming/Luna-3-230m-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Aobangaming/Luna-3-230m-GGUF
 - Repositorio de la generacion anterior (Luna 2 70M): https://huggingface.co/Aobangaming/luna-2-70m
 - Dataset de entrenamiento (OpenAssistant OASST1): https://huggingface.co/datasets/OpenAssistant/oasst1
 - Dataset mencionado en tags (FineWeb): https://huggingface.co/datasets/HuggingFaceFW/fineweb

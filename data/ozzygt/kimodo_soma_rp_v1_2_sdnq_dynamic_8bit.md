@@ -97,7 +97,7 @@ La comparación relevante y documentada es frente al modelo base en bf16: misma 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OzzyGT/Kimodo_SOMA_RP_v1_2_sdnq_dynamic_8bit
+- Repositorio en Hugging Face: https://huggingface.co/OzzyGT/Kimodo_SOMA_RP_v1_2_sdnq_dynamic_8bit
 - Modelo base en bf16: https://huggingface.co/OzzyGT/Kimodo_SOMA_RP_v1_2
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.2
 - Repositorio de código Kimodo (NVIDIA): https://github.com/nv-tlabs/kimodo
@@ -110,6 +110,6 @@ La comparación relevante y documentada es frente al modelo base en bf16: misma 
 - Política de uso aceptable de Llama 3: https://llama.meta.com/llama3/use-policy
 - Ejemplo de movimiento bf16: https://huggingface.co/datasets/OzzyGT/diffusers-examples/resolve/main/Kimodo_SOMA_Modular/Kimodo_SOMA_RP_v1_2_run_seed42_bf16.mp4
 - Ejemplo de movimiento INT8: https://huggingface.co/datasets/OzzyGT/diffusers-examples/resolve/main/Kimodo_SOMA_Modular/Kimodo_SOMA_RP_v1_2_run_seed42_int8.mp4
-- Ficheros de licencia del repositorio: LICENSE-KIMODO-WEIGHTS, LICENSE-LLAMA3, LICENSE y NOTICE (en la raíz del repositorio de HuggingFace)
+- Ficheros de licencia del repositorio: LICENSE-KIMODO-WEIGHTS, LICENSE-LLAMA3, LICENSE y NOTICE (en la raíz del repositorio de Hugging Face)
 
 Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; las coincidencias obtenidas eran páginas ajenas al proyecto (perfiles de arte y contenidos no relacionados), por lo que no se han utilizado como fuente.

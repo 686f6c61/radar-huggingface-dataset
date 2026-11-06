@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sachinsssna/video-understanding-int8-2024` no contiene un modelo de visión por computador entrenado, sino una nota de trabajo sobre comprensión de video. Fue publicado por el usuario `sachinsssna` con licencia CC BY 4.0 y está catalogado en HuggingFace con las etiquetas `research-notes` y `video-understanding`. Su propósito es organizar motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación para estudios en este ámbito.
+El repositorio `sachinsssna/video-understanding-int8-2024` no contiene un modelo de visión por computador entrenado, sino una nota de trabajo sobre comprensión de video. Fue publicado por el usuario `sachinsssna` con licencia CC BY 4.0 y está catalogado en Hugging Face con las etiquetas `research-notes` y `video-understanding`. Su propósito es organizar motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación para estudios en este ámbito.
 
 El repositorio incluye un documento principal (`analysis.md`) y un `README.md` que describe el alcance. La model card aclara explícitamente que no se presenta como un paper completado ni como una liberación de modelos entrenados. No hay arquitectura de red neuronal, ni pesos de modelo utilizable, ni código; los únicos datos de `safetensors` indican un tensor de 33.088 parámetros, que no corresponde a un modelo de IA con capacidades reales.
 
@@ -73,5 +73,5 @@ No disponible. No se puede comparar con otros modelos porque este repositorio no
 
 ## Enlaces
 
-- [HuggingFace: sachinsssna/video-understanding-int8-2024](https://huggingface.co/sachinsssna/video-understanding-int8-2024)
+- [Hugging Face: sachinsssna/video-understanding-int8-2024](https://huggingface.co/sachinsssna/video-understanding-int8-2024)
 - No se encontraron enlaces adicionales relevantes en la búsqueda web.

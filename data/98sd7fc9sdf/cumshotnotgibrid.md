@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cumshotNOTgibrid es un adaptador LoRA de generación de imágenes (text-to-image) publicado en HuggingFace por el usuario 98sd7fc9sdf. Se distribuye en formato diffusers y está diseñado para cargarse sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder, del que hereda toda la arquitectura de difusión subyacente. El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador de bajo rango y no con un modelo completo.
+cumshotNOTgibrid es un adaptador LoRA de generación de imágenes (text-to-image) publicado en Hugging Face por el usuario 98sd7fc9sdf. Se distribuye en formato diffusers y está diseñado para cargarse sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder, del que hereda toda la arquitectura de difusión subyacente. El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador de bajo rango y no con un modelo completo.
 
 La relevancia de esta ficha es limitada y conviene ser explícito al respecto: se trata de un adaptador sin model card sustantiva, sin licencia declarada, sin resultados de benchmarks, sin dataset de entrenamiento documentado y con cero descargas y cero likes en el momento de la consulta. El propio README se limita a un título, un widget vacío y un enlace de descarga, con `instance_prompt: null`, es decir, sin palabra de activación definida.
 
@@ -92,7 +92,7 @@ No se han identificado en la información proporcionada modelos comparables con 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/98sd7fc9sdf/cumshotNOTgibrid
-- Modelo base en HuggingFace: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
+- Página del modelo en Hugging Face: https://huggingface.co/98sd7fc9sdf/cumshotNOTgibrid
+- Modelo base en Hugging Face: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - Documentación de diffusers (librería declarada): https://huggingface.co/docs/diffusers
 - Otros enlaces relevantes: la búsqueda web realizada no devolvió resultados relacionados con este modelo; los resultados obtenidos correspondían a páginas genéricas de ChatGPT y no se incluyen por no ser pertinentes.

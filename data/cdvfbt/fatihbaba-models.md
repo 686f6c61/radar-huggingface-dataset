@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fatihbaba.models es un modelo de lenguaje de aproximadamente 1,24 mil millones de parametros publicado por el usuario cdvfbt en HuggingFace. El repositorio se distribuye en formato GGUF, lo que indica que esta orientado a la inferencia local en CPU o GPU de consumo mediante herramientas como llama.cpp u Ollama. La licencia Apache 2.0 permite uso comercial y modificacion sin restricciones significativas.
+fatihbaba.models es un modelo de lenguaje de aproximadamente 1,24 mil millones de parametros publicado por el usuario cdvfbt en Hugging Face. El repositorio se distribuye en formato GGUF, lo que indica que esta orientado a la inferencia local en CPU o GPU de consumo mediante herramientas como llama.cpp u Ollama. La licencia Apache 2.0 permite uso comercial y modificacion sin restricciones significativas.
 
 La informacion publica disponible es extremadamente limitada: la model card solo contiene la linea de licencia, sin descripcion de arquitectura, datos de entrenamiento, o capacidades especificas. Los tags indican que es un modelo conversacional, compatible con endpoints y alojado en la region de Estados Unidos. A fecha de creacion de esta ficha, el modelo no registra descargas ni valoraciones, por lo que su adopcion es practicamente nula.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: para un modelo de 1,2B parametros en cuantizacion GGUF Q4_K_M (tamano aproximado de 0,7-0,8 GB), se necesitan aproximadamente 2-4 GB de VRAM para inferencia con contexto corto.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060) es suficiente. Tambien puede ejecutarse en CPU con 8 GB de RAM.
 - Compatibilidad con hardware de consumo: si, cabe en practicamente cualquier equipo moderno.
-- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, o cualquier runtime compatible con GGUF. Tambien puede desplegarse en HuggingFace Inference Endpoints dado el tag `endpoints_compatible`.
+- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, o cualquier runtime compatible con GGUF. Tambien puede desplegarse en Hugging Face Inference Endpoints dado el tag `endpoints_compatible`.
 - Latencia y throughput: no disponibles. En una GPU de gama media (RTX 3060) un modelo de 1,2B en Q4 suele generar entre 30 y 60 tokens por segundo, pero esto es una estimacion generica, no un dato verificado para este modelo.
 
 ## Comparativa con modelos similares
@@ -72,5 +72,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cdvfbt/fatihbaba.models
+- Repositorio Hugging Face: https://huggingface.co/cdvfbt/fatihbaba.models
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

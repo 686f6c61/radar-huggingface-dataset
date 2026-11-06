@@ -4,7 +4,7 @@
 
 El modelo `Favaz-07/disaster-classifier-xlmr` es un clasificador de texto diseñado para detectar y clasificar desastres a partir de contenido textual, como mensajes en redes sociales, noticias o informes. Se basa en la arquitectura XLM-RoBERTa, un transformer encoder multilingüe desarrollado por Facebook AI, lo que le permite procesar textos en múltiples idiomas sin necesidad de un modelo específico por lengua. Con 278 millones de parámetros, corresponde a la variante base de XLM-RoBERTa, un tamaño moderado que equilibra capacidad y coste computacional.
 
-El modelo fue subido al Hub de HuggingFace por el usuario Favaz-07 en septiembre de 2026, aunque la model card está prácticamente vacía y no se proporcionan detalles sobre el proceso de entrenamiento, los datos utilizados ni las métricas de evaluación. A pesar de esta falta de documentación, el modelo está preparado para su uso con la librería `transformers` y cuenta con pesos en formato `safetensors`, lo que facilita su integración en pipelines de clasificación de texto. Su relevancia radica en la creciente necesidad de sistemas automatizados de alerta temprana y análisis de crisis, donde la clasificación rápida y multilingüe de mensajes puede marcar la diferencia en la gestión de emergencias.
+El modelo fue subido al Hub de Hugging Face por el usuario Favaz-07 en septiembre de 2026, aunque la model card está prácticamente vacía y no se proporcionan detalles sobre el proceso de entrenamiento, los datos utilizados ni las métricas de evaluación. A pesar de esta falta de documentación, el modelo está preparado para su uso con la librería `transformers` y cuenta con pesos en formato `safetensors`, lo que facilita su integración en pipelines de clasificación de texto. Su relevancia radica en la creciente necesidad de sistemas automatizados de alerta temprana y análisis de crisis, donde la clasificación rápida y multilingüe de mensajes puede marcar la diferencia en la gestión de emergencias.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ No se dispone de información sobre el fine-tuning específico de este modelo. S
 - Clasificación de texto binaria o multiclase para detectar si un mensaje describe un desastre (terremoto, inundación, incendio, etc.) o no.
 - Procesamiento multilingüe gracias a la base XLM-RoBERTa, que cubre 100 idiomas, aunque el fine-tuning podría haber limitado el rendimiento a ciertas lenguas.
 - Integración sencilla con la librería `transformers` mediante el pipeline `text-classification`.
-- Compatible con `text-embeddings-inference` y endpoints de HuggingFace, lo que permite su despliegue en entornos de producción con baja latencia.
+- Compatible con `text-embeddings-inference` y endpoints de Hugging Face, lo que permite su despliegue en entornos de producción con baja latencia.
 - No se documenta soporte para tool calling, agentes u otras capacidades avanzadas; es un modelo puramente discriminativo.
 
 ## Casos de uso
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Favaz-07/disaster-classifier-xlmr | XLM-RoBERTa base | 278M | 512 (por defecto) | no disponible | Hub de HuggingFace |
-| GautamR/disaster_classifier | BERT base | 110M | 512 | MIT | Hub de HuggingFace |
-| Modelos basados en RoBERTa (p.ej. cardiffnlp/twitter-roberta-base) | RoBERTa base | 125M | 512 | MIT (algunos) | Hub de HuggingFace |
+| Favaz-07/disaster-classifier-xlmr | XLM-RoBERTa base | 278M | 512 (por defecto) | no disponible | Hub de Hugging Face |
+| GautamR/disaster_classifier | BERT base | 110M | 512 | MIT | Hub de Hugging Face |
+| Modelos basados en RoBERTa (p.ej. cardiffnlp/twitter-roberta-base) | RoBERTa base | 125M | 512 | MIT (algunos) | Hub de Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. El modelo de GautamR está entrenado en inglés y es más pequeño, mientras que el de Favaz-07 tiene el doble de parámetros y una base multilingüe, lo que podría ofrecer mejor generalización a otros idiomas si el fine-tuning se realizó adecuadamente. Sin embargo, la falta de documentación impide una comparación cuantitativa.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento para comparar. El modelo de GautamR está 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Favaz-07/disaster-classifier-xlmr
+- Modelo en Hugging Face: https://huggingface.co/Favaz-07/disaster-classifier-xlmr
 - Paper de XLM-RoBERTa (referencia de arquitectura): https://arxiv.org/abs/1910.09700
 - Modelo similar de GautamR (referencia comparativa): https://huggingface.co/GautamR/disaster_classifier
 - Documentación de text-embeddings-inference: https://huggingface.co/docs/text-embeddings-inference/index

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iaac-maai/day2-group8-affordability` es un modelo de regresión tabular publicado en HuggingFace por el equipo Group 8 del curso AI Methods I del IAAC MaAI (2026/27), compuesto por Akshat Dayal, Bhavini Manot y Bo De Roeck. No es un modelo de lenguaje ni una red neuronal: es un `Pipeline` de scikit-learn que combina preprocesamiento (imputación, escalado, one-hot y codificación ordinal) con una regresión Ridge con `alpha=1.0`. Su única tarea es predecir el índice de asequibilidad de la vivienda del año siguiente a partir de indicadores macroeconómicos conocidos del año en curso.
+`iaac-maai/day2-group8-affordability` es un modelo de regresión tabular publicado en Hugging Face por el equipo Group 8 del curso AI Methods I del IAAC MaAI (2026/27), compuesto por Akshat Dayal, Bhavini Manot y Bo De Roeck. No es un modelo de lenguaje ni una red neuronal: es un `Pipeline` de scikit-learn que combina preprocesamiento (imputación, escalado, one-hot y codificación ordinal) con una regresión Ridge con `alpha=1.0`. Su única tarea es predecir el índice de asequibilidad de la vivienda del año siguiente a partir de indicadores macroeconómicos conocidos del año en curso.
 
 El modelo se entrena sobre 1.210 filas correspondientes a 26 países entre 1977 y 2024, con un split temporal estricto (entrenamiento 1977-2014, test 2015-2024) y validación mediante `TimeSeriesSplit` de 5 folds. El target es `log10(affordability_next)`, de modo que la salida debe reconvertirse con `10 ** predicción` para obtener el índice real. La entrada es un `DataFrame` de pandas con exactamente 17 columnas, entre ellas variables de lag (`affordability_lag1`, `affordability_lag2`, `affordability_3yr_avg`), indicadores de shock de precios, dummies de crisis financiera global y atributos categóricos de región y década.
 
@@ -81,6 +81,6 @@ No disponible. La información proporcionada no incluye resultados numéricos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iaac-maai/day2-group8-affordability
+- Hugging Face: https://huggingface.co/iaac-maai/day2-group8-affordability
 - Repositorio GitHub del pipeline completo: https://github.com/iaac-maai/Group8-day1-assignment
 - Dataset de origen en Kaggle: https://www.kaggle.com/code/tolstoyjustin/forecasting-housing-affordability-to-2035/input

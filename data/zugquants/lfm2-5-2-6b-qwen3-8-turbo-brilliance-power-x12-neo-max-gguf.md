@@ -93,7 +93,7 @@ Frente a estas alternativas, la ventaja declarada de este repositorio es el sist
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zugquants/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zugquants/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Referencia arXiv declarada en las etiquetas: https://arxiv.org/abs/2511.23404
 - Publicacion relacionada del mismo autor (evolucion de Turbo Brilliance, Qwen3.8-27B): https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF

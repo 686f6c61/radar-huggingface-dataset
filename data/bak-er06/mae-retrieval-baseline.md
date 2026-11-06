@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bak-er06/mae-retrieval-baseline` es un repositorio de HuggingFace publicado por el usuario `bak-er06` que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Mae (por "Masked Autoencoder") orientada a tareas de retrieval. Se trata de la configuración base del autor, pensada explícitamente para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, y no como una release preentrenada lista para producción.
+`bak-er06/mae-retrieval-baseline` es un repositorio de Hugging Face publicado por el usuario `bak-er06` que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Mae (por "Masked Autoencoder") orientada a tareas de retrieval. Se trata de la configuración base del autor, pensada explícitamente para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, y no como una release preentrenada lista para producción.
 
 El dato más relevante es su tamaño: 24.832 parámetros totales según el fichero `model.safetensors`, lo que equivale a aproximadamente 0,025 millones de parámetros. Es, por tanto, un modelo minúsculo que cabe en cualquier dispositivo y cuyo propósito declarado es servir de punto de partida reproducible, no de resolver retrieval real. La model card indica de forma explícita que el checkpoint es una inicialización válida para smoke tests y que no se presenta como un checkpoint entrenado ni con benchmarks.
 
@@ -85,7 +85,7 @@ La comparación directa carece de sentido por diferencia de escala y de estado d
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bak-er06/mae-retrieval-baseline | 24.832 | no disponible | Checkpoint de inicialización, sin entrenar ni evaluar | MIT | HuggingFace, 0 descargas |
+| bak-er06/mae-retrieval-baseline | 24.832 | no disponible | Checkpoint de inicialización, sin entrenar ni evaluar | MIT | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 | ~151 M | 77 tokens de texto | Entrenado y evaluado | MIT (variantes) | Ampliamente disponible |
 | SigLIP base | ~203 M | 64 tokens de texto | Entrenado y evaluado | Apache 2.0 (variantes) | Ampliamente disponible |
 | BLIP | ~224 M (base) | no disponible | Entrenado y evaluado | BSD-3 (variantes) | Ampliamente disponible |
@@ -108,5 +108,5 @@ Los tres modelos de referencia superan en cuatro órdenes de magnitud el número
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bak-er06/mae-retrieval-baseline
+- Hugging Face: https://huggingface.co/bak-er06/mae-retrieval-baseline
 - No se han encontrado enlaces relevantes en la búsqueda web. Los resultados devueltos (commentouvrir.com, geekflare.com, backmarket.fr, fileinfo.fr, Wikipedia sobre "Bak file") hacen referencia a ficheros con extensión `.bak` y no guardan relación con el modelo.

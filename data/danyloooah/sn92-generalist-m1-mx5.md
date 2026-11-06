@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sn92-generalist-m1-mx5 | 26,1 B | prompt de entrenamiento de 6.144 tokens | Clasificación de decisiones (readout de letras) | MIT | HuggingFace, 60 descargas |
-| baselabs/mammoth-1 | no disponible en la información | no disponible | Modelo de decisión base | MIT | HuggingFace |
-| danyloooah/sn92-generalist-m1-v3a | no disponible en la información | no disponible | Fine-tune de decisión (padre del merge) | MIT | HuggingFace |
-| isomsom/sn92-gen-m87b | no disponible en la información | no disponible | Fine-tune de decisión (padre del merge) | MIT | HuggingFace |
+| sn92-generalist-m1-mx5 | 26,1 B | prompt de entrenamiento de 6.144 tokens | Clasificación de decisiones (readout de letras) | MIT | Hugging Face, 60 descargas |
+| baselabs/mammoth-1 | no disponible en la información | no disponible | Modelo de decisión base | MIT | Hugging Face |
+| danyloooah/sn92-generalist-m1-v3a | no disponible en la información | no disponible | Fine-tune de decisión (padre del merge) | MIT | Hugging Face |
+| isomsom/sn92-gen-m87b | no disponible en la información | no disponible | Fine-tune de decisión (padre del merge) | MIT | Hugging Face |
 
 Los cuatro padres restantes (xflud/sn92-decider-1, gurujustin/sn92-gen-m1b, edinlong83/sn92-generalist-h5) comparten la misma categoría y licencia MIT, pero no se dispone de sus recuentos de parámetros ni de resultados comparativos en la información proporcionada.
 
@@ -87,7 +87,7 @@ Los cuatro padres restantes (xflud/sn92-decider-1, gurujustin/sn92-gen-m1b, edin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danyloooah/sn92-generalist-m1-mx5
+- Modelo en Hugging Face: https://huggingface.co/danyloooah/sn92-generalist-m1-mx5
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Padre isomsom/sn92-gen-m87b: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre xflud/sn92-decider-1: https://huggingface.co/xflud/sn92-decider-1

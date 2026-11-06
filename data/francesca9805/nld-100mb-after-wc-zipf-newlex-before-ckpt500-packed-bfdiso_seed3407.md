@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo decoder-only de la familia GPT-2 con 124.770.816 parametros, derivado del checkpoint `francesca9805/ppt-wc-zipf-newlex-nld-before-100mb-packed-bfdiso_seed3407` y entrenado con la libreria TRL de HuggingFace. Por el nombre del repositorio y la referencia al proyecto wandb `new-tokenizers` de la Universidad de Groningen, todo apunta a que forma parte de una linea de experimentacion centrada en el estudio comparativo de tokenizadores sobre corpus de aproximadamente 100 MB.
+El modelo `nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo decoder-only de la familia GPT-2 con 124.770.816 parametros, derivado del checkpoint `francesca9805/ppt-wc-zipf-newlex-nld-before-100mb-packed-bfdiso_seed3407` y entrenado con la libreria TRL de Hugging Face. Por el nombre del repositorio y la referencia al proyecto wandb `new-tokenizers` de la Universidad de Groningen, todo apunta a que forma parte de una linea de experimentacion centrada en el estudio comparativo de tokenizadores sobre corpus de aproximadamente 100 MB.
 
 El interes de este modelo es fundamentalmente de investigacion y reproducible: no es un modelo de proposito general pulido para produccion, sino un artefacto de experimento que permite analizar como afectan distintas estrategias de tokenizacion (mencionadas como `wc-zipf`, `newlex`, `uniform`) al comportamiento de un transformer pequeno tras una fase de ajuste supervisado. Su tamano reducido (menos de 130 millones de parametros) y su formato de pesos en `safetensors` lo hacen facilmente desplegable en hardware modesto.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,77 M | no disponible | no disponible | HuggingFace | Ajuste SFT experimental, sin benchmarks |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (publicado por OpenAI) | HuggingFace | Referencia de la arquitectura base |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Destilado de GPT-2, ampliamente usado como baseline |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace | Modelo pequeno moderno, entrenado con datasets actuales |
+| nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,77 M | no disponible | no disponible | Hugging Face | Ajuste SFT experimental, sin benchmarks |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (publicado por OpenAI) | Hugging Face | Referencia de la arquitectura base |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Destilado de GPT-2, ampliamente usado como baseline |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face | Modelo pequeno moderno, entrenado con datasets actuales |
 
 La comparacion directa de rendimiento no es posible porque el modelo analizado no publica resultados. Las alternativas se incluyen por similitud de tamano y categoria, no por equivalencia funcional.
 
@@ -87,7 +87,7 @@ La comparacion directa de rendimiento no es posible porque el modelo analizado n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/francesca9805/nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Repositorio Hugging Face: https://huggingface.co/francesca9805/nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-nld-before-100mb-packed-bfdiso_seed3407
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/mcx3giv7
 - Repositorio de TRL: https://github.com/huggingface/trl

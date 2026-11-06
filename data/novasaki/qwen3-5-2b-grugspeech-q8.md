@@ -82,8 +82,8 @@ Metricas de entrenamiento reportadas: Train Loss 0.5295, Eval Loss 0.3792, Eval 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-GrugSpeech-Q8 | ~1,88 mil millones | no disponible | apache-2.0 | HuggingFace (0 descargas) | Adaptador LoRA especializado en compresion de razonamiento; datos de compresion 2,0x-2,5x |
-| Qwen/Qwen3.5-2B (modelo base) | ~2 mil millones | no disponible | no disponible en la informacion | HuggingFace | Modelo generalista sin la capa de compresion de razonamiento; sirve de referencia directa |
+| Qwen3.5-2B-GrugSpeech-Q8 | ~1,88 mil millones | no disponible | apache-2.0 | Hugging Face (0 descargas) | Adaptador LoRA especializado en compresion de razonamiento; datos de compresion 2,0x-2,5x |
+| Qwen/Qwen3.5-2B (modelo base) | ~2 mil millones | no disponible | no disponible en la informacion | Hugging Face | Modelo generalista sin la capa de compresion de razonamiento; sirve de referencia directa |
 | Alternativas de ~1-3B con foco en razonamiento | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de comparacion en la informacion proporcionada |
 
 No se dispone de resultados de benchmarks comparables ni de otros modelos de la misma categoria con datos verificables en la informacion suministrada, por lo que la comparacion cuantitativa con alternativas queda como no disponible.
@@ -102,7 +102,7 @@ No se dispone de resultados de benchmarks comparables ni de otros modelos de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Novasaki/Qwen3.5-2B-GrugSpeech-Q8
+- Modelo en Hugging Face: https://huggingface.co/Novasaki/Qwen3.5-2B-GrugSpeech-Q8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Conjunto de datos GSM8K: https://huggingface.co/datasets/openai/gsm8k
 - Conjunto de datos AI2 ARC: https://huggingface.co/datasets/allenai/ai2_arc

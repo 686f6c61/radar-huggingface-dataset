@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`yhong96/pi05_3tasks_ddp_lora_v1` es un adaptador LoRA publicado en HuggingFace por el usuario yhong96 mediante la librería PEFT (versión 0.20.0 declarada en la model card). No se trata de un modelo completo, sino de pesos de ajuste fino que deben cargarse sobre un modelo base: el tag `base_model:adapter:` apunta a `lerobot/pi05_base`, un checkpoint de la familia LeRobot orientada a políticas vision-language-action (VLA) para robótica. El nombre del repositorio sugiere un entrenamiento distribuido (DDP) sobre tres tareas, aunque la ficha no documenta ni el dataset, ni los hiperparámetros, ni el procedimiento.
+`yhong96/pi05_3tasks_ddp_lora_v1` es un adaptador LoRA publicado en Hugging Face por el usuario yhong96 mediante la librería PEFT (versión 0.20.0 declarada en la model card). No se trata de un modelo completo, sino de pesos de ajuste fino que deben cargarse sobre un modelo base: el tag `base_model:adapter:` apunta a `lerobot/pi05_base`, un checkpoint de la familia LeRobot orientada a políticas vision-language-action (VLA) para robótica. El nombre del repositorio sugiere un entrenamiento distribuido (DDP) sobre tres tareas, aunque la ficha no documenta ni el dataset, ni los hiperparámetros, ni el procedimiento.
 
-La relevancia de este checkpoint es limitada y hay que enmarcarla con cautela: el repositorio tiene 0 descargas y 0 likes, la model card es la plantilla por defecto de HuggingFace sin ninguna sección completada, la licencia no está especificada y el tamaño del repositorio aparece como 0.0 GB, lo que impide confirmar que los pesos del adaptador estén realmente subidos. No hay pipeline declarado, ni idiomas, ni resultados de evaluación.
+La relevancia de este checkpoint es limitada y hay que enmarcarla con cautela: el repositorio tiene 0 descargas y 0 likes, la model card es la plantilla por defecto de Hugging Face sin ninguna sección completada, la licencia no está especificada y el tamaño del repositorio aparece como 0.0 GB, lo que impide confirmar que los pesos del adaptador estén realmente subidos. No hay pipeline declarado, ni idiomas, ni resultados de evaluación.
 
-Por tanto, esta ficha describe un artefacto de investigación sin documentación verificable. Todos los datos técnicos que no aparecen en los metadatos de HuggingFace se marcan explícitamente como no disponibles, y las afirmaciones sobre su comportamiento funcional se limitan a lo que se deduce del nombre del repositorio y del modelo base referenciado.
+Por tanto, esta ficha describe un artefacto de investigación sin documentación verificable. Todos los datos técnicos que no aparecen en los metadatos de Hugging Face se marcan explícitamente como no disponibles, y las afirmaciones sobre su comportamiento funcional se limitan a lo que se deduce del nombre del repositorio y del modelo base referenciado.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha describe un artefacto de investigación sin documentación
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (campo vacío en la ficha de HuggingFace) |
+| Licencia | No disponible (campo vacío en la ficha de Hugging Face) |
 | Formato de pesos | Safetensors (etiqueta `safetensors` del repositorio), formato de adaptador PEFT/LoRA |
 | Modelo base | `lerobot/pi05_base`, referenciado mediante la ruta local `/data/youngjin/hf/hub/models--lerobot--pi05_base/snapshots/b211f3d44c36b6acfcf7ae94a64e8e96f75a64ba` |
 | Libreria | peft |
@@ -85,21 +85,21 @@ No se dispone de datos verificables sobre adaptadores comparables (otros fine-tu
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla por defecto de HuggingFace, sin desarrollador, financiación, tipo de modelo, idiomas ni licencia declarados.
+- Ausencia total de documentación: la model card es la plantilla por defecto de Hugging Face, sin desarrollador, financiación, tipo de modelo, idiomas ni licencia declarados.
 - Licencia no especificada: sin licencia explícita no se puede asumir permiso de uso comercial, modificación ni redistribución. Cualquier uso en producción queda sujeto a la licencia del modelo base, que tampoco se detalla aquí.
 - Sin resultados de evaluación: no hay ninguna métrica que permita estimar la calidad del adaptador, ni en robótica ni en tareas de lenguaje.
 - Riesgo de alucinación y de comportamiento errático: no evaluable, ya que no se han publicado pruebas ni protocolos de validación.
 - Sesgos conocidos: no disponibles. Al desconocerse el dataset de entrenamiento, no se puede analizar la composición demográfica, lingüística o de dominio de los datos.
 - Limitaciones de contexto e idioma: no disponibles.
 - Riesgo de sobreajuste: el nombre indica ajuste sobre tres tareas, un ámbito estrecho que sugiere especialización alta y capacidad de generalización limitada fuera de ese dominio.
-- Trazabilidad del modelo base: el tag `base_model:adapter` contiene una ruta absoluta del sistema de ficheros del autor, no un identificador de HuggingFace, lo que dificulta la reproducibilidad y la carga directa.
+- Trazabilidad del modelo base: el tag `base_model:adapter` contiene una ruta absoluta del sistema de ficheros del autor, no un identificador de Hugging Face, lo que dificulta la reproducibilidad y la carga directa.
 - Verificación de pesos: el tamaño del repositorio (0.0 GB) y la ausencia de descargas impiden confirmar que los ficheros del adaptador estén completos o sean cargables.
 - Estado del arte cambiante: la fecha de creación registrada (2026-09-10) y la de actualización (cuatro segundos después) indican que el repositorio no ha recibido mantenimiento posterior.
 - Sin garantías de producción: no existen pruebas de latencia, estabilidad, seguridad ni comportamiento en condiciones adversas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yhong96/pi05_3tasks_ddp_lora_v1
+- Repositorio en Hugging Face: https://huggingface.co/yhong96/pi05_3tasks_ddp_lora_v1
 - Modelo base referenciado en el tag `base_model:adapter`: https://huggingface.co/lerobot/pi05_base (derivado del identificador del tag; el adaptador apunta a un snapshot local con hash `b211f3d44c36b6acfcf7ae94a64e8e96f75a64ba`)
 - Referencia arXiv presente en las etiquetas del repositorio (Lacoste et al., 2019, calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono citada en la model card: https://mlco2.github.io/impact

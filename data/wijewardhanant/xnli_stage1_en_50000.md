@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`WijewardhanaNT/xnli_stage1_en_50000` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace y entrenado sobre el modelo base `meta-llama/Llama-2-7b-hf`. Se trata, por tanto, de un checkpoint PEFT que no contiene pesos completos de un modelo independiente, sino únicamente las matrices de bajo rango que modifican el comportamiento del Llama-2-7B original. El nombre del repositorio sugiere un entrenamiento orientado a XNLI (Cross-lingual Natural Language Inference), presumiblemente en su variante inglesa y con 50.000 ejemplos, aunque la model card no confirma ni el dataset exacto ni la tarea final.
+`WijewardhanaNT/xnli_stage1_en_50000` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face y entrenado sobre el modelo base `meta-llama/Llama-2-7b-hf`. Se trata, por tanto, de un checkpoint PEFT que no contiene pesos completos de un modelo independiente, sino únicamente las matrices de bajo rango que modifican el comportamiento del Llama-2-7B original. El nombre del repositorio sugiere un entrenamiento orientado a XNLI (Cross-lingual Natural Language Inference), presumiblemente en su variante inglesa y con 50.000 ejemplos, aunque la model card no confirma ni el dataset exacto ni la tarea final.
 
 El modelo resuelve, en principio, la adaptación de un LLM de 7.000 millones de parámetros a una tarea concreta de inferencia textual (NLI) mediante un ajuste eficiente en parámetros, reduciendo el coste de entrenamiento frente a un fine-tuning completo. Es relevante ahora porque los adaptadores LoRA permiten reutilizar un mismo modelo base para múltiples tareas especializadas con un coste de almacenamiento mínimo: el repositorio ocupa aproximadamente 0,5 GB frente a los ~13 GB de pesos en fp16 del Llama-2-7B completo.
 
-La información publicada es muy escasa: la model card es la plantilla por defecto de HuggingFace sin rellenar, no se declara licencia, no se listan idiomas soportados y no se aportan resultados de evaluación. Cualquier uso en producción requeriría validar empíricamente el adaptador y verificar los términos de la licencia Llama 2 del modelo base.
+La información publicada es muy escasa: la model card es la plantilla por defecto de Hugging Face sin rellenar, no se declara licencia, no se listan idiomas soportados y no se aportan resultados de evaluación. Cualquier uso en producción requeriría validar empíricamente el adaptador y verificar los términos de la licencia Llama 2 del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WijewardhanaNT/xnli_stage1_en_50000 | 7B base + LoRA | 4.096 (heredado) | Adaptador PEFT | no disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-hf | 7B | 4.096 | Modelo completo | Llama 2 Community License | HuggingFace, ampliamente usado |
-| Adaptadores LoRA para Llama-2-7B (genericos) | 7B base + LoRA | 4.096 | Adaptador PEFT | variable segun autor | HuggingFace, multiples variantes |
-| Mistral-7B-v0.1 | 7B | 8.192 | Modelo completo | Apache 2.0 | HuggingFace |
+| WijewardhanaNT/xnli_stage1_en_50000 | 7B base + LoRA | 4.096 (heredado) | Adaptador PEFT | no disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-hf | 7B | 4.096 | Modelo completo | Llama 2 Community License | Hugging Face, ampliamente usado |
+| Adaptadores LoRA para Llama-2-7B (genericos) | 7B base + LoRA | 4.096 | Adaptador PEFT | variable segun autor | Hugging Face, multiples variantes |
+| Mistral-7B-v0.1 | 7B | 8.192 | Modelo completo | Apache 2.0 | Hugging Face |
 
 La comparativa con alternativas concretas es limitada porque no hay datos de rendimiento del adaptador ni información sobre su calidad. La principal diferencia frente al modelo base es el ajuste específico a NLI, y frente a Mistral-7B el contexto menor (4.096 frente a 8.192 tokens) y una licencia menos permisiva en el modelo base.
 
@@ -87,7 +87,7 @@ La comparativa con alternativas concretas es limitada porque no hay datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_stage1_en_50000
+- Repositorio Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_stage1_en_50000
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Paper referenciado en los tags (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental: https://mlco2.github.io/impact#compute

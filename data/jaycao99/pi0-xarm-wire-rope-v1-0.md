@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JayCao99/pi0-xarm-wire-rope-v1.0 es un checkpoint de política robótica publicado en HuggingFace bajo la librería LeRobot. El nombre sugiere que se basa en el modelo Pi-0 (un modelo de visión-lenguaje-acción desarrollado por Physical Intelligence), aunque no se confirma explícitamente en la información disponible. Está entrenado para una tarea concreta: enhebrar una cuerda a través de dos anillos utilizando un brazo robótico xArm7, mediante aprendizaje por imitación a partir de datos de teleoperación. El repositorio contiene un único checkpoint en el subdirectorio `checkpoint-030000` con una pérdida final de entrenamiento de 0.047, y el tamaño total del repositorio es de 8,9 GB.
+JayCao99/pi0-xarm-wire-rope-v1.0 es un checkpoint de política robótica publicado en Hugging Face bajo la librería LeRobot. El nombre sugiere que se basa en el modelo Pi-0 (un modelo de visión-lenguaje-acción desarrollado por Physical Intelligence), aunque no se confirma explícitamente en la información disponible. Está entrenado para una tarea concreta: enhebrar una cuerda a través de dos anillos utilizando un brazo robótico xArm7, mediante aprendizaje por imitación a partir de datos de teleoperación. El repositorio contiene un único checkpoint en el subdirectorio `checkpoint-030000` con una pérdida final de entrenamiento de 0.047, y el tamaño total del repositorio es de 8,9 GB.
 
 La relevancia de este modelo radica en que demuestra un flujo de trabajo completo de entrenamiento y despliegue de políticas robóticas con LeRobot, un ecosistema open source para robótica. Al estar publicado como checkpoint listo para usar, permite a otros desarrolladores reproducir o adaptar la tarea sin necesidad de reentrenar desde cero. Sin embargo, la documentación es mínima: no se especifican detalles de arquitectura, licencia ni idiomas soportados, lo que limita su uso en entornos de producción sin verificación adicional.
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JayCao99/pi0-xarm-wire-rope-v1.0
+- Modelo en Hugging Face: https://huggingface.co/JayCao99/pi0-xarm-wire-rope-v1.0
 - Dataset asociado: https://huggingface.co/datasets/JayCao99/xarm-wire-rope-v1
 - Versión anterior del checkpoint: https://huggingface.co/JayCao99/pi0-xarm-wire-rope-v0.0
 - Documentación de LeRobot: https://github.com/huggingface/lerobot (no incluida en la búsqueda, pero es la librería principal)

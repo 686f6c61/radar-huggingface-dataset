@@ -84,9 +84,9 @@ Frente al 31B denso de la misma familia, esta variante MoE ofrece inferencia not
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kremon96/gemma-4-26B-A4B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Kremon96/gemma-4-26B-A4B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Colección Gemma 4 de Unsloth: https://huggingface.co/collections/unsloth/gemma-4
 - GitHub de Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/

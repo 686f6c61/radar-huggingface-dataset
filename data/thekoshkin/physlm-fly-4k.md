@@ -80,7 +80,7 @@ El autor señala que aproximadamente 0,07 de la brecha de 0,11 frente a TinyStor
 
 | Modelo | Parámetros | Contexto | Rendimiento (bpc) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhysLM fly-4k | 4,0 M | Recurrencia de ~3-330 caracteres en unidades lentas | 0,884 / 0,919 | Apache 2.0 | HuggingFace |
+| PhysLM fly-4k | 4,0 M | Recurrencia de ~3-330 caracteres en unidades lentas | 0,884 / 0,919 | Apache 2.0 | Hugging Face |
 | Transformer de 0,8 M (referencia del autor) | 0,8 M | No disponible | 0,885 | No disponible | No disponible |
 | Transformer a nivel de carácter de 1,9 M (proyecto) | 1,9 M | No disponible | 1,035 / 1,093 | No disponible | No disponible |
 | TinyStories-1M | ~1 M | No disponible | 0,840 (sobre los datos de este modelo) | No disponible en la información | No disponible en la información |
@@ -100,8 +100,8 @@ El autor señala que aproximadamente 0,07 de la brecha de 0,11 frente a TinyStor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thekoshkin/physlm-fly-4k
+- Modelo en Hugging Face: https://huggingface.co/thekoshkin/physlm-fly-4k
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper del mismo proyecto (Koshkin, 2026): https://doi.org/10.5281/zenodo.23945050
 - Referencia del conectoma FlyWire (Dorkenwald et al., 2024), citada en la model card: no disponible como enlace directo en la información proporcionada
-- Repositorio de código: incluido en el propio repositorio de HuggingFace (`physlm_fly.py`)
+- Repositorio de código: incluido en el propio repositorio de Hugging Face (`physlm_fly.py`)

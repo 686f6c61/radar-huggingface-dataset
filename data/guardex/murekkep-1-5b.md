@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mürekkep AI 1.5B es un modelo de lenguaje desarrollado por el equipo independiente turco Mürekkep AI, publicado bajo el nombre de usuario Guardex en HuggingFace. Se trata de un fine-tuning del modelo Qwen2.5-1.5B-Instruct, entrenado mediante supervisión (SFT) para mejorar el rendimiento en tareas de conversación, codificación y razonamiento lógico, con especial énfasis en el idioma turco. El modelo está pensado para ofrecer una alternativa ligera y accesible para aplicaciones que requieran procesamiento de lenguaje natural en turco y otros idiomas, con un tamaño de 1.543 millones de parámetros.
+Mürekkep AI 1.5B es un modelo de lenguaje desarrollado por el equipo independiente turco Mürekkep AI, publicado bajo el nombre de usuario Guardex en Hugging Face. Se trata de un fine-tuning del modelo Qwen2.5-1.5B-Instruct, entrenado mediante supervisión (SFT) para mejorar el rendimiento en tareas de conversación, codificación y razonamiento lógico, con especial énfasis en el idioma turco. El modelo está pensado para ofrecer una alternativa ligera y accesible para aplicaciones que requieran procesamiento de lenguaje natural en turco y otros idiomas, con un tamaño de 1.543 millones de parámetros.
 
 La relevancia actual de este modelo radica en su bajo coste computacional y su capacidad para ejecutarse en hardware de consumo, lo que lo hace adecuado para prototipos y aplicaciones de producción a pequeña escala. Aunque la información pública es limitada (sin licencia especificada, sin benchmarks publicados), su arquitectura basada en Qwen2.5 garantiza un comportamiento sólido en tareas generales de generación de texto. El modelo se distribuye en formato safetensors, lo que facilita su integración con el ecosistema de Transformers.
 
@@ -74,5 +74,5 @@ La comparacion es orientativa, ya que no se dispone de benchmarks del modelo eva
 
 ## Enlaces
 
-- [HuggingFace - Guardex/murekkep-1-5b](https://huggingface.co/Guardex/murekkep-1-5b)
+- [Hugging Face - Guardex/murekkep-1-5b](https://huggingface.co/Guardex/murekkep-1-5b)
 - No se han encontrado otros enlaces relevantes (paper, blog, demo) en la informacion disponible.

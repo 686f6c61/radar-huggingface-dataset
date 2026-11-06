@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rechly-DE-3B | 3,09B | No disponible | Facturacion alemana, DATEV, E-Rechnung | Apache 2.0 | HuggingFace, Ollama |
-| Qwen2.5-3B-Instruct | 3,09B | No disponible en esta ficha | Proposito general, multilingue | Apache 2.0 | HuggingFace |
-| Llama 3 8B | 8B | No disponible en esta ficha | Proposito general | Llama 3 license | HuggingFace |
-| Mistral 7B | 7B | No disponible en esta ficha | Proposito general | Apache 2.0 | HuggingFace |
+| Rechly-DE-3B | 3,09B | No disponible | Facturacion alemana, DATEV, E-Rechnung | Apache 2.0 | Hugging Face, Ollama |
+| Qwen2.5-3B-Instruct | 3,09B | No disponible en esta ficha | Proposito general, multilingue | Apache 2.0 | Hugging Face |
+| Llama 3 8B | 8B | No disponible en esta ficha | Proposito general | Llama 3 license | Hugging Face |
+| Mistral 7B | 7B | No disponible en esta ficha | Proposito general | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los modelos incluidos en la tabla de benchmarks del autor. No se dispone de informacion sobre otros modelos especializados en contabilidad alemana o E-Rechnung para establecer una comparacion directa. Los datos de rendimiento de los modelos comparados proceden de la model card del autor y no han sido verificados de forma independiente.
 
@@ -100,7 +100,7 @@ La comparativa se limita a los modelos incluidos en la tabla de benchmarks del a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jonprompter/rechly-de-3b
+- Hugging Face: https://huggingface.co/jonprompter/rechly-de-3b
 - Ollama: https://ollama.com/jonprompter/rechly-de-3b
 - GitHub: https://github.com/myaxyo/rechly_llm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

@@ -4,7 +4,7 @@
 
 Twin-O-Matic (TOM) es un sistema de auto-mejora recursiva presentado por el colectivo Snapkitty, no un modelo de lenguaje convencional. Según su documentación, implementa un bucle de dos niveles: un bucle externo propone actualizaciones de hiperparámetros y un bucle interno las valida mediante una compuerta de entropía que exige H ≤ 0,20 antes de aplicar cualquier cambio de pesos. El resultado se sella en un checkpoint "WORM" (Write Once Read Many) tras cada mejora.
 
-El proyecto se distribuye como un repositorio con código Python (`tom.py`), plantillas de prompts y esquemas JSON, pero no incluye pesos de modelo ni configuraciones de red neuronal. La ficha de HuggingFace lo clasifica como `text-generation` con pipeline compatible con transformers, aunque no se publican parámetros, arquitectura ni datos de entrenamiento. Su relevancia radica más como propuesta conceptual de meta-optimización que como modelo desplegable.
+El proyecto se distribuye como un repositorio con código Python (`tom.py`), plantillas de prompts y esquemas JSON, pero no incluye pesos de modelo ni configuraciones de red neuronal. La ficha de Hugging Face lo clasifica como `text-generation` con pipeline compatible con transformers, aunque no se publican parámetros, arquitectura ni datos de entrenamiento. Su relevancia radica más como propuesta conceptual de meta-optimización que como modelo desplegable.
 
 La licencia es "sovereign-source-license-v2", una licencia personalizada que restringe el uso comercial y la redistribución, alineada con la infraestructura "sovereign compute" que Snapkitty promueve. El idioma declarado es únicamente inglés.
 
@@ -68,7 +68,7 @@ No disponible. No se conocen modelos comparables en el ecosistema open source qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Snapkitty/twin-o-matic
+- Modelo en Hugging Face: https://huggingface.co/Snapkitty/twin-o-matic
 - Dataset asociado: https://huggingface.co/datasets/Snapkitty/twin-o-matic
 - Repositorio GitHub: https://github.com/SNAPKITTYWEST/twin-o-matic
 - Pagina de investigacion de SnapKitty OS: https://collectivekitty.com/papers

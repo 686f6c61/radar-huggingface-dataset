@@ -4,7 +4,7 @@
 
 El modelo NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16 es un modelo de lenguaje de aproximadamente 9.000 millones de parametros desarrollado por AMAImedia, adaptado sobre la arquitectura Qwen3.5 y especializado en tareas de traduccion multilingue. Esta version publicada por mradermacher proporciona una coleccion de cuantizaciones GGUF con imatrix, lo que permite ejecutar el modelo en entornos locales de CPU y GPU con un consumo de memoria reducido.
 
-El modelo se presenta como una alternativa para traduccion automatica con soporte declarado de hasta 201 idiomas, segun los tags de HuggingFace. La disponibilidad en formato GGUF lo hace adecuado para despliegues offline, sin dependencia de servicios en la nube. El repositorio contiene multiples archivos de cuantizacion, con un tamano total de 110.2 GB, y el modelo base se ofrece en precision BF16.
+El modelo se presenta como una alternativa para traduccion automatica con soporte declarado de hasta 201 idiomas, segun los tags de Hugging Face. La disponibilidad en formato GGUF lo hace adecuado para despliegues offline, sin dependencia de servicios en la nube. El repositorio contiene multiples archivos de cuantizacion, con un tamano total de 110.2 GB, y el modelo base se ofrece en precision BF16.
 
 No se ha publicado informacion sobre la arquitectura interna detallada, la longitud de contexto ni el proceso de entrenamiento. Los datos disponibles se limitan a la ficha tecnica del repositorio y a los archivos de cuantizacion listados.
 
@@ -17,7 +17,7 @@ No se ha publicado informacion sobre la arquitectura interna detallada, la longi
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | Segun tags, 201 idiomas; en los metadatos de HuggingFace solo se indica "en" |
+| Idiomas soportados | Segun tags, 201 idiomas; en los metadatos de Hugging Face solo se indica "en" |
 | Licencia | no disponible |
 | Formato de pesos | GGUF |
 
@@ -63,13 +63,13 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Limitaciones y advertencias
 
 - La licencia del modelo no esta especificada en la informacion disponible, por lo que el uso comercial es incierto.
-- Los metadatos de HuggingFace indican "en" como idioma del modelo, mientras que los tags declaran soporte para 201 idiomas; esta discrepancia puede indicar una lista incompleta o una limitacion real en el alcance linguistico.
+- Los metadatos de Hugging Face indican "en" como idioma del modelo, mientras que los tags declaran soporte para 201 idiomas; esta discrepancia puede indicar una lista incompleta o una limitacion real en el alcance linguistico.
 - La ausencia de benchmarks publicados impide evaluar la calidad del modelo en tareas concretas de traduccion.
 - Al ser una cuantizacion, se produce una perdida de precision respecto al modelo base en BF16; los cuantizaciones mas pequenos (IQ1, IQ2) reducen significativamente la calidad.
 - No se dispone de datos sobre sesgos, alucinaciones o limitaciones de contexto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16-i1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16-i1-GGUF
 - Modelo base: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16-GGUF

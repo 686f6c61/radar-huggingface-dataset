@@ -4,7 +4,7 @@
 
 El modelo `sherpa-onnx-kws-zipformer-zh-en-3M-2025-12-20` es un sistema de deteccion de palabras clave (keyword spotting, KWS) basado en un transductor Zipformer. No es un modelo de lenguaje generativo, sino un detector de wake words en tiempo real para chino mandarin e ingles. Lo publica el usuario `moeru-ai` como empaquetado para [Sherpaw](https://github.com/moeru-ai/sherpaw), una capa de ejecucion en WebAssembly pensada para llevar modelos de voz al navegador y a entornos ligeros.
 
-El modelo original lo desarrollo `pkufool` (publicado en ModelScope como `icefall-kws-zipformer-zh-en-3M-2025-12-20`) y se distribuye sin modificaciones desde la release oficial de [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx): pesos fp32, chunk-16 y left-context-64. El repositorio de HuggingFace no contiene el modelo entrenado en si, sino un paquete precompilado para su uso con el runtime KWS en WASM, con cuatro ficheros virtuales (`encoder.onnx`, `decoder.onnx`, `joiner.onnx` y `tokens.txt`).
+El modelo original lo desarrollo `pkufool` (publicado en ModelScope como `icefall-kws-zipformer-zh-en-3M-2025-12-20`) y se distribuye sin modificaciones desde la release oficial de [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx): pesos fp32, chunk-16 y left-context-64. El repositorio de Hugging Face no contiene el modelo entrenado en si, sino un paquete precompilado para su uso con el runtime KWS en WASM, con cuatro ficheros virtuales (`encoder.onnx`, `decoder.onnx`, `joiner.onnx` y `tokens.txt`).
 
 Es relevante porque demuestra un flujo de despliegue de KWS streaming en el navegador sin GPU: el paquete ocupa 13.076.183 bytes, se empaqueta con Emscripten 4.0.23 y esta pensado para integrarse via `@sherpaw/preloader` y `@sherpaw/kws`. El repositorio no incluye grabaciones de audio ni vocabulario de palabras clave, por lo que el desarrollador debe aportar ambos.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Formato |
 |---|---|---|---|---|---|---|
-| moeru-ai/sherpa-onnx-kws-zipformer-zh-en-3M-2025-12-20 | ~3 M | left-context-64 | zh, en | Apache-2.0 | HuggingFace (paquete WASM) | ONNX + WASM |
+| moeru-ai/sherpa-onnx-kws-zipformer-zh-en-3M-2025-12-20 | ~3 M | left-context-64 | zh, en | Apache-2.0 | Hugging Face (paquete WASM) | ONNX + WASM |
 | pkufool/icefall-kws-zipformer-zh-en-3M-2025-12-20 (original) | ~3 M | left-context-64 | zh, en | Apache-2.0 | ModelScope | Pesos upstream |
 | Otros modelos KWS de la release sherpa-onnx | no disponible | no disponible | no disponible | no disponible | GitHub (release kws-models) | ONNX |
 
@@ -77,12 +77,12 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - El japones figura como no verificado en la model card.
 - Los pesos son fp32; no se proporcionan variantes cuantizadas, lo que puede limitar despliegues extremadamente optimizados en algunos entornos.
 - El paquete corresponde al runtime WASM de Sherpaw y requiere el runtime KWS WASM construido por separado, por lo que no es un artefacto autonomo.
-- Se recomienda fijar el commit de HuggingFace al desplegar, ya que el `manifest.json` registra hashes de los artefactos.
+- Se recomienda fijar el commit de Hugging Face al desplegar, ya que el `manifest.json` registra hashes de los artefactos.
 - La licencia Apache-2.0 permite uso comercial, pero conviene verificar la procedencia de los pesos upstream y de las palabras clave que se anadan.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moeru-ai/sherpa-onnx-kws-zipformer-zh-en-3M-2025-12-20
+- Modelo en Hugging Face: https://huggingface.co/moeru-ai/sherpa-onnx-kws-zipformer-zh-en-3M-2025-12-20
 - Sherpaw (repositorio): https://github.com/moeru-ai/sherpaw
 - Release oficial de pesos sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx/releases/download/kws-models/sherpa-onnx-kws-zipformer-zh-en-3M-2025-12-20.tar.bz2
 - Modelo original de pkufool en ModelScope: https://modelscope.cn/models/pkufool/icefall-kws-zipformer-zh-en-3M-2025-12-20

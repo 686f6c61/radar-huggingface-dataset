@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MineSkinV1.1_5 es un modelo publicado en HuggingFace por el usuario WiNE-iNEFF bajo el identificador `WiNE-iNEFF/MineSkinV1.1_5`. Se trata de un modelo de difusion distribuido en formato diffusers, concretamente asociado a la clase de pipeline `DDPMPipeline` (Denoising Diffusion Probabilistic Models), segun las etiquetas del repositorio. El nombre del modelo sugiere un proposito de generacion de contenido relacionado con skins de Minecraft, aunque la model card no confirma oficialmente esta funcion.
+MineSkinV1.1_5 es un modelo publicado en Hugging Face por el usuario WiNE-iNEFF bajo el identificador `WiNE-iNEFF/MineSkinV1.1_5`. Se trata de un modelo de difusion distribuido en formato diffusers, concretamente asociado a la clase de pipeline `DDPMPipeline` (Denoising Diffusion Probabilistic Models), segun las etiquetas del repositorio. El nombre del modelo sugiere un proposito de generacion de contenido relacionado con skins de Minecraft, aunque la model card no confirma oficialmente esta funcion.
 
 El peso publicado en safetensors contiene 21.344.036 parametros, lo que situa al modelo en el rango de los ~21 millones de parametros, muy por debajo de los modelos de difusion de imagen de gran escala (Stable Diffusion, SDXL) y mas cerca de los modelos de difusion entrenados desde cero sobre dominios concretos y resoluciones bajas. El repositorio ocupa 0,2 GB.
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WiNE-iNEFF/MineSkinV1.1_5
+- Modelo en Hugging Face: https://huggingface.co/WiNE-iNEFF/MineSkinV1.1_5
 - Documentacion de `DDPMPipeline` en diffusers: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - Paper referenciado en la plantilla de la model card (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML: https://mlco2.github.io/impact

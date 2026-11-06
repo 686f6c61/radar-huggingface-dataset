@@ -83,5 +83,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KineJIng/KineJing-State-PushT-Research
+- Hugging Face: https://huggingface.co/KineJIng/KineJing-State-PushT-Research
 - Simulador PushT (commit fijado): https://github.com/real-stanford/diffusion_policy/tree/5ba07ac6661db573af695b419a7947ecb704690f

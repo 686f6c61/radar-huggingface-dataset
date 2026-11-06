@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swinv2-small-patch4-window16-256-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/swinv2-small-patch4-window16-256`, un transformer con atención en ventanas jerárquicas, sobre el dataset Galaxy10 DECaLS, que contiene 17.736 imágenes de galaxias etiquetadas en 10 clases morfológicas.
+`swinv2-small-patch4-window16-256-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/swinv2-small-patch4-window16-256`, un transformer con atención en ventanas jerárquicas, sobre el dataset Galaxy10 DECaLS, que contiene 17.736 imágenes de galaxias etiquetadas en 10 clases morfológicas.
 
 El modelo resuelve una tarea concreta de astronomía observacional: clasificar automáticamente la forma de galaxias a partir de imágenes del survey DECaLS (Dark Energy Camera Legacy Survey). Es relevante porque forma parte de un estudio sistemático de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) bajo un protocolo revisado del artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026), lo que lo convierte en un punto de referencia reproducible para evaluar modelos de visión fundacional en datos astronómicos.
 
@@ -67,7 +67,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 - **VRAM estimada para inferencia**: aproximadamente 0,2 GB en fp32 para los pesos (48,97 M de parámetros), más el espacio de activaciones para lotes pequeños; en la práctica, menos de 1 GB para inferencia con lotes moderados.
 - **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM; una RTX 3060, RTX 4060 o superior es más que suficiente. Para entrenamiento o ajuste fino, se recomienda una GPU con 8 GB o más (el autor usó una sola GPU con lote efectivo de 256).
 - **¿Cabe en GPU de consumo?**: sí, en cualquier GPU de consumo moderna (GTX 1060 6 GB, RTX 2060, RTX 3060, RTX 4090, etc.).
-- **Opciones de despliegue**: `transformers` con `AutoModelForImageClassification` y `AutoImageProcessor`; también es compatible con endpoints de HuggingFace (`endpoints_compatible`). No se documentan opciones específicas para vLLM, llama.cpp, Ollama o TGI, que están orientadas a modelos de lenguaje y no a clasificación de imágenes.
+- **Opciones de despliegue**: `transformers` con `AutoModelForImageClassification` y `AutoImageProcessor`; también es compatible con endpoints de Hugging Face (`endpoints_compatible`). No se documentan opciones específicas para vLLM, llama.cpp, Ollama o TGI, que están orientadas a modelos de lenguaje y no a clasificación de imágenes.
 - **Latencia y throughput estimados**: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone en la información proporcionada de resultados de otros modelos co
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Swin V2 small, full fine-tuning) | 48,97 M | no aplica (visión 256x256) | 85,57 % accuracy / 85,44 % F1 | apache-2.0 | HuggingFace |
+| Este modelo (Swin V2 small, full fine-tuning) | 48,97 M | no aplica (visión 256x256) | 85,57 % accuracy / 85,44 % F1 | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de resultados de otros modelos co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/matthieulel/swinv2-small-patch4-window16-256-galaxy10-decals-full-v2)
+- [Modelo en Hugging Face](https://huggingface.co/matthieulel/swinv2-small-patch4-window16-256-galaxy10-decals-full-v2)
 - [Modelo base: microsoft/swinv2-small-patch4-window16-256](https://huggingface.co/microsoft/swinv2-small-patch4-window16-256)
 - [Dataset Galaxy10 DECaLS](https://huggingface.co/datasets/matthieulel/galaxy10_decals)
 - [Dataset de runs del benchmark](https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs)

@@ -4,13 +4,13 @@
 
 El modelo `yuhengtu-bytedance/sfm_filtered_e2e_alignment-8k_9k_10k_merge` es un modelo de lenguaje de 6,8 mil millones de parámetros creado mediante la fusión lineal de tres checkpoints de un mismo modelo de alineación, denominado `filtered_e2e_alignment`, correspondientes a los pasos de entrenamiento 8000, 9000 y 10000. La fusión se realizó con la herramienta mergekit, utilizando el método Linear descrito en el artículo arXiv:2203.05482, tomando como base el checkpoint del paso 10000. El resultado es un modelo de generación de texto que hereda las características del modelo original, aunque no se dispone de documentación pública sobre su arquitectura interna, datos de entrenamiento o capacidades específicas.
 
-El modelo está alojado en HuggingFace bajo la cuenta de un investigador asociado a ByteDance, lo que sugiere que podría estar relacionado con los trabajos del equipo Seed de ByteDance, aunque no hay confirmación oficial. Su relevancia radica en que ejemplifica una técnica de fusión de checkpoints para mejorar la estabilidad o el rendimiento de modelos de alineación, pero al carecer de benchmarks publicados y de una model card detallada, su utilidad práctica queda limitada a experimentación o como referencia para estudios de fusión de modelos.
+El modelo está alojado en Hugging Face bajo la cuenta de un investigador asociado a ByteDance, lo que sugiere que podría estar relacionado con los trabajos del equipo Seed de ByteDance, aunque no hay confirmación oficial. Su relevancia radica en que ejemplifica una técnica de fusión de checkpoints para mejorar la estabilidad o el rendimiento de modelos de alineación, pero al carecer de benchmarks publicados y de una model card detallada, su utilidad práctica queda limitada a experimentación o como referencia para estudios de fusión de modelos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (inferido del tag de HuggingFace, no confirmado) |
+| Arquitectura | GPT-NeoX (inferido del tag de Hugging Face, no confirmado) |
 | Parametros totales | 6.856.253.440 (6,8B) |
 | Parametros activos | No aplicable (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento para comparar directamente. A nivel de tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-8k_9k_10k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-8k_9k_10k_merge
 - Paper del metodo Linear (arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Repositorio de mergekit: https://github.com/cg123/mergekit

@@ -78,8 +78,8 @@ Prueba agentica propia del autor: 6/6 (temperatura 0) en seleccion de herramient
 
 | Modelo | Parametros | Activos | Contexto | Formato/formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp | 35,9 B | ~3 B | 262.144 | oQ8 / safetensors MLX, 39,5 GB | apache-2.0 | HuggingFace (0 descargas, 1 like) |
-| empero-ai/Qwen3.8-35B-A3B-Distill (modelo base) | 35 B (aproximado segun nomenclatura) | ~3 B | no disponible en la informacion proporcionada | no disponible | apache-2.0 | HuggingFace |
+| NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp | 35,9 B | ~3 B | 262.144 | oQ8 / safetensors MLX, 39,5 GB | apache-2.0 | Hugging Face (0 descargas, 1 like) |
+| empero-ai/Qwen3.8-35B-A3B-Distill (modelo base) | 35 B (aproximado segun nomenclatura) | ~3 B | no disponible en la informacion proporcionada | no disponible | apache-2.0 | Hugging Face |
 | Otras builds 35B-A3B del mismo autor | no disponible | no disponible | no disponible | no disponible | no disponible | mencionadas de forma generica en la model card, sin datos |
 
 Las busquedas web realizadas no han devuelto informacion utilizable sobre modelos comparables (los resultados fueron enlaces genericos a YouTube), por lo que no se incluyen alternativas adicionales de la misma categoria.
@@ -96,7 +96,7 @@ Las busquedas web realizadas no han devuelto informacion utilizable sobre modelo
 - Uso de contexto largo: la degradacion medida es notable (de 93 a 41 tok/s entre contexto casi nulo y ~64,7k tokens), lo que debe tenerse en cuenta para dimensionar latencias en agentes con historiales extensos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - Repositorio de oMLX: https://github.com/jundot/omlx
 - Sitio del autor: https://novaeon.studio

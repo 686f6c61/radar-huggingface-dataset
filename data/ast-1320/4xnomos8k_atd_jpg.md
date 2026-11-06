@@ -49,7 +49,7 @@ Una innovación destacable es su tokenización y la optimización de su tokeniza
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Sin embargo, basándonos en su diseño y tamaño, se espera que rinda de forma competitiva en tareas de razonamiento y matemáticas en comparación con otros modelos de 14B de parámetros. En la comunidad, se ha observado que Phi-4 supera a modelos como Llama 3.1 8B en benchmarks como GSM8K y HumanEval, acercándose a modelos de mayor tamaño como Llama 3.1 70B en tareas específicas. Para obtener datos precisos, se recomienda consultar el repositorio oficial del modelo en HuggingFace o los anuncios de Microsoft Research.
+No se han publicado resultados de benchmarks en la información disponible. Sin embargo, basándonos en su diseño y tamaño, se espera que rinda de forma competitiva en tareas de razonamiento y matemáticas en comparación con otros modelos de 14B de parámetros. En la comunidad, se ha observado que Phi-4 supera a modelos como Llama 3.1 8B en benchmarks como GSM8K y HumanEval, acercándose a modelos de mayor tamaño como Llama 3.1 70B en tareas específicas. Para obtener datos precisos, se recomienda consultar el repositorio oficial del modelo en Hugging Face o los anuncios de Microsoft Research.
 
 ## Requisitos de hardware
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible. Sin 
 
 ## Enlaces
 
-- **HuggingFace:** [microsoft/phi-4](https://huggingface.co/microsoft/phi-4)
+- **Hugging Face:** [microsoft/phi-4](https://huggingface.co/microsoft/phi-4)
 - **Repositorio GitHub:** [microsoft/Phi-4](https://github.com/microsoft/Phi-4)
 - **Announcement Blog:** [Microsoft Research Blog](https://www.microsoft.com/en-us/research/blog/)
 - **Paper:** [Phi-4 Technical Report](https://arxiv.org/abs/2412.08905)

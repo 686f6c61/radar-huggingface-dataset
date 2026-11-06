@@ -4,7 +4,7 @@
 
 El modelo `Devatri/anlp-assignment2-part1-model3` es un transformer decoder-only desarrollado por el usuario Devatri en el marco de una asignatura de procesamiento de lenguaje natural (ANLP, asignatura 2, parte 1). Su unica funcion documentada es la traduccion automatica de vietnamita y japones hacia ingles, entrenado sobre el corpus `belumind/en-vi-ja-curated-500k-triplets`. No se trata de un modelo de proposito general ni de un lanzamiento de produccion: es un artefacto academico sin model card completa, sin pipeline declarado y con cero descargas y cero likes en el momento de la consulta.
 
-El repositorio ocupa aproximadamente 0,1 GB y contiene un unico fichero `checkpoint.pt` que empaqueta cuatro elementos: el objeto `config`, el `state_dict` del modelo, un resumen (`summary`) y un `tokenizer_sha256` que actua como huella de integridad del tokenizador. El autor indica que la carga requiere las definiciones de las clases `Config` y `Transformer` incluidas en `implementation.ipynb`, es decir, no existe una configuracion estandar de HuggingFace (`config.json`) ni pesos en formato `safetensors`.
+El repositorio ocupa aproximadamente 0,1 GB y contiene un unico fichero `checkpoint.pt` que empaqueta cuatro elementos: el objeto `config`, el `state_dict` del modelo, un resumen (`summary`) y un `tokenizer_sha256` que actua como huella de integridad del tokenizador. El autor indica que la carga requiere las definiciones de las clases `Config` y `Transformer` incluidas en `implementation.ipynb`, es decir, no existe una configuracion estandar de Hugging Face (`config.json`) ni pesos en formato `safetensors`.
 
 La relevancia de esta ficha es limitada pero concreta: sirve como referencia para quien quiera reproducir o auditar el ejercicio, como baseline minimo en tareas de traduccion vi/ja a en y como ejemplo de publicacion de pesos sin documentacion asociada. No hay datos publicados de parametros, longitud de contexto, licencia ni evaluacion.
 
@@ -19,7 +19,7 @@ La relevancia de esta ficha es limitada pero concreta: sirve como referencia par
 | Tipos de cuantizacion | no disponible (no se publican versiones GGUF, AWQ, GPTQ ni similares) |
 | Idiomas soportados | vietnamita y japones como origen; ingles como destino (unico par documentado) |
 | Licencia | no disponible |
-| Formato de pesos | checkpoint de PyTorch en un unico fichero `checkpoint.pt` con `state_dict` embebido; no incluye `safetensors` ni `config.json` de HuggingFace |
+| Formato de pesos | checkpoint de PyTorch en un unico fichero `checkpoint.pt` con `state_dict` embebido; no incluye `safetensors` ni `config.json` de Hugging Face |
 | Tamano del repositorio | 0,1 GB |
 | Pipeline declarado | no disponible |
 | Huella del checkpoint | sha256 `0e5b502a80268e1f3c31744e2179429d8d505877393ef69d9bdaf417f2e08d7c` |
@@ -50,7 +50,7 @@ En cuanto a los datos, la unica referencia es el corpus `belumind/en-vi-ja-curat
 - Subtitulado y transcripcion: traduccion de transcripciones automaticas de contenido audiovisual japones o vietnamita al ingles como paso previo a la revision editorial.
 - Baseline academico: servir como punto de comparacion reproducible en un trabajo de investigacion sobre traduccion automatica de bajo recurso, gracias a la huella sha256 publicada del checkpoint.
 - Prototipado de investigacion: dado su tamano reducido, permite ejecutar experimentos de fine-tuning sobre dominios concretos (legal, medico, videojuegos) en hardware modesto.
-- Ensenanza: util como ejemplo didactico de como empaquetar un `state_dict` personalizado junto con sus definiciones de clase, en contraste con el formato estandar de HuggingFace.
+- Ensenanza: util como ejemplo didactico de como empaquetar un `state_dict` personalizado junto con sus definiciones de clase, en contraste con el formato estandar de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No hay valores de BLEU, chrF, COMET, MMLU, HumanEval ni GSM8K, ni tampoco compar
 - VRAM estimada para inferencia: no disponible de forma oficial. El repositorio ocupa 0,1 GB, por lo que el checkpoint completo cabe holgadamente en cualquier GPU de consumo moderna; la VRAM necesaria en ejecucion depende de la longitud de contexto y del tamano real del modelo, ambos no documentados.
 - GPU recomendadas: con un artefacto de este tamano, cualquier GPU con al menos 4 GB de VRAM deberia ser suficiente; no hay requisitos publicados.
 - Cabe en GPU de consumo: si, con alta probabilidad dada la huella de 0,1 GB, aunque no esta confirmado por el autor.
-- Opciones de despliegue: no hay soporte directo documentado para vLLM, llama.cpp, Ollama, TGI ni transformers, ya que el modelo se distribuye como `checkpoint.pt` con clases propias. El despliegue requiere cargar el `state_dict` con las definiciones de `implementation.ipynb` o convertir previamente los pesos a un formato compatible con HuggingFace.
+- Opciones de despliegue: no hay soporte directo documentado para vLLM, llama.cpp, Ollama, TGI ni transformers, ya que el modelo se distribuye como `checkpoint.pt` con clases propias. El despliegue requiere cargar el `state_dict` con las definiciones de `implementation.ipynb` o convertir previamente los pesos a un formato compatible con Hugging Face.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devatri/anlp-assignment2-part1-model3
+- Modelo en Hugging Face: https://huggingface.co/Devatri/anlp-assignment2-part1-model3
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Cuaderno de implementacion: `implementation.ipynb` (incluido en el repositorio del modelo)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

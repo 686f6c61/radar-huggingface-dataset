@@ -95,7 +95,7 @@ La comparacion con modelos de otros fabricantes del mismo rango (por ejemplo alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ruddls030/HyperCLOVAX-SEED-Haru-1.5B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ruddls030/HyperCLOVAX-SEED-Haru-1.5B-GGUF
 - Modelo base: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B
 - Conversion de terceros en Q4_K_M (rippertnt): https://ailocalcheck.com/model/rippertnt/HyperCLOVAX-SEED-Text-Instruct-1.5B-Q4_K_M-GGUF
 - Ficha de la conversion Q4_K_M en oktechmasters: https://oktechmasters.org/ai_models/hyperclovax-seed-text-instruct-1-5b-q4-k-m-gguf/

@@ -87,8 +87,8 @@ No se dispone de datos de benchmarks que permitan comparar calidad o latencia en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/J2-Consult/kokoro-82m-coreml
+- Hugging Face: https://huggingface.co/J2-Consult/kokoro-82m-coreml
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
-- Conversión de referencia en HuggingFace: https://huggingface.co/jonschneider/kokoro-coreml
+- Conversión de referencia en Hugging Face: https://huggingface.co/jonschneider/kokoro-coreml
 - Herramienta de conversión: https://github.com/laishere/kokoro-coreml
 - Pipeline Swift: https://github.com/Jon-Schneider/kokoro-coreml-ane

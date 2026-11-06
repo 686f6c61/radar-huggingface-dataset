@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LaMoE 247.65M es un modelo de lenguaje de 247.650.340 parámetros desarrollado por Gitesh (IMvision12) y publicado en HuggingFace. Se trata de una arquitectura híbrida personalizada que combina atención Multi-head Latent Attention (MLA) en todas sus capas con fusión Gated DeltaNet en las capas 4, 8, 12 y 16, además de alternar capas densas SwiGLU con capas de mezcla de expertos (MoE) con enrutamiento top-2 de 8 expertos y un experto compartido.
+LaMoE 247.65M es un modelo de lenguaje de 247.650.340 parámetros desarrollado por Gitesh (IMvision12) y publicado en Hugging Face. Se trata de una arquitectura híbrida personalizada que combina atención Multi-head Latent Attention (MLA) en todas sus capas con fusión Gated DeltaNet en las capas 4, 8, 12 y 16, además de alternar capas densas SwiGLU con capas de mezcla de expertos (MoE) con enrutamiento top-2 de 8 expertos y un experto compartido.
 
 El modelo fue preentrenado sobre 25.500 millones de tokens utilizando Google Colab y Modal, seguido de un ajuste supervisado (SFT) y una corrección de identidad. La versión publicada corresponde al checkpoint `step-00129185`, que es el utilizado para los benchmarks locales reportados. Su ventana de contexto es de 2.048 tokens, con un vocabulario de 32.000 tokens y un ancho oculto de 768.
 
-La relevancia de este modelo radica en su carácter experimental: implementa una arquitectura híbrida poco habitual (MLA + Gated DeltaNet + MoE) en un tamaño reducido, lo que lo convierte en un caso de estudio interesante para investigadores que quieran explorar combinaciones de atención lineal y MoE. No obstante, sus resultados en benchmarks son propios de un modelo de escala muy pequeña y no está pensado para uso en producción. Es necesario instalar el paquete fuente desde GitHub para cargarlo, ya que el repositorio de HuggingFace solo contiene pesos y configuración.
+La relevancia de este modelo radica en su carácter experimental: implementa una arquitectura híbrida poco habitual (MLA + Gated DeltaNet + MoE) en un tamaño reducido, lo que lo convierte en un caso de estudio interesante para investigadores que quieran explorar combinaciones de atención lineal y MoE. No obstante, sus resultados en benchmarks son propios de un modelo de escala muy pequeña y no está pensado para uso en producción. Es necesario instalar el paquete fuente desde GitHub para cargarlo, ya que el repositorio de Hugging Face solo contiene pesos y configuración.
 
 ## Especificaciones técnicas
 
@@ -86,7 +86,7 @@ Los resultados reportados son evaluaciones locales 0-shot realizadas con una GPU
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LaMoE 247.65M | 247,65 M (134,4 M activos) | 2.048 | Apache 2.0 | HuggingFace + GitHub |
+| LaMoE 247.65M | 247,65 M (134,4 M activos) | 2.048 | Apache 2.0 | Hugging Face + GitHub |
 | Modelos comparables | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (arquitecturas híbridas MLA + Gated DeltaNet + MoE de tamaño reducido) en la documentación proporcionada. Los resultados en benchmarks del modelo son inferiores a los de modelos densos de tamaño similar ampliamente conocidos, pero no se aportan datos de referencia en la información disponible para establecer una comparación rigurosa.
@@ -97,7 +97,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - Rendimiento bajo en benchmarks: MMLU del 25,15 %, GSM8K flexible del 8,79 %, HumanEval del 15,24 % y BBH estricto del 4,32 %, propios de un modelo de escala muy pequeña y no apto para tareas que requieran razonamiento fiable.
 - Solo inglés: no se ha entrenado ni evaluado en otros idiomas.
 - Riesgo elevado de alucinación y de respuestas incorrectas, especialmente en matemáticas, código y conocimiento factual (TriviaQA exact match del 1,08 %).
-- Restricciones de carga: requiere instalar el paquete fuente desde GitHub; el repositorio de HuggingFace no contiene código Python. No funciona con `trust_remote_code=True` por sí solo.
+- Restricciones de carga: requiere instalar el paquete fuente desde GitHub; el repositorio de Hugging Face no contiene código Python. No funciona con `trust_remote_code=True` por sí solo.
 - Compatibilidad limitada: solo certificado con Transformers 5.17.0 y PyTorch 2.11.0 en CPU. CUDA/FLA, cuantización, mapas de dispositivos distribuidos, decodificación especulativa y cachés estáticas/offloaded no están certificados.
 - El template de chat basado en cadenas rechaza cadenas literales de tokens de control nativos dentro de mensajes o herramientas; para ese caso hay que usar el renderizador nativo a nivel de token.
 - Las definiciones de herramientas requieren un mensaje de sistema inicial explícito; el template solo renderiza mensajes de herramienta y nunca ejecuta herramientas.
@@ -107,7 +107,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IMvision12/lamoe-247
+- Modelo en Hugging Face: https://huggingface.co/IMvision12/lamoe-247
 - Repositorio fuente en GitHub: https://github.com/IMvision12/LaMoE
 - Documentación de arquitectura: docs/architecture/model.png (referenciada en la model card)
 - Protocolos de evaluación: docs/EVALUATION.md (referenciado en la model card)

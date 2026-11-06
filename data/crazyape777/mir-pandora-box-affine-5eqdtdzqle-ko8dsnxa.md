@@ -97,4 +97,4 @@ Los tres modelos de pandora-box pertenecen a la misma familia Affine y comparten
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co
+- Repositorio Hugging Face: https://huggingface.co

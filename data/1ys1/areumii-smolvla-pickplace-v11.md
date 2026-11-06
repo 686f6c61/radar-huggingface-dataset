@@ -77,7 +77,7 @@ La comparativa se limita a modelos VLA conocidos, pero no se dispone de datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1ys1/areumii-smolvla-pickplace-v11
+- Modelo en Hugging Face: https://huggingface.co/1ys1/areumii-smolvla-pickplace-v11
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/1ys1/areumii-can-pickplace-v1
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Uigyu/qwen_2.5_3b_mh-penguin_h2_a_s2` es un checkpoint publicado en HuggingFace que, por su nombre, parte de la arquitectura Qwen 2.5 de 3 mil millones de parámetros. El repositorio apenas contiene 0,1 GB de datos en formato safetensors, lo que sugiere que se trata de una versión cuantizada o un subconjunto de los pesos del modelo base. El autor es el usuario "Uigyu", y la model card no aporta información sobre el proceso de entrenamiento, los datos utilizados ni la licencia.
+El modelo `Uigyu/qwen_2.5_3b_mh-penguin_h2_a_s2` es un checkpoint publicado en Hugging Face que, por su nombre, parte de la arquitectura Qwen 2.5 de 3 mil millones de parámetros. El repositorio apenas contiene 0,1 GB de datos en formato safetensors, lo que sugiere que se trata de una versión cuantizada o un subconjunto de los pesos del modelo base. El autor es el usuario "Uigyu", y la model card no aporta información sobre el proceso de entrenamiento, los datos utilizados ni la licencia.
 
 La etiqueta `unsloth` indica que el ajuste fino se ha realizado con la librería Unsloth, especializada en optimizar el entrenamiento de modelos transformer sobre GPU de consumo. El sufijo `mh-penguin_h2_a_s2` probablemente hace referencia a un experimento concreto (posiblemente relacionado con atención multi-cabeza o un dataset específico), pero no hay documentación pública que lo aclare. Este modelo se presenta como un artefacto de investigación o prueba, más que como un lanzamiento oficial, y su relevancia actual es limitada por la ausencia de especificaciones.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: al ser un modelo de 3B con pesos de 0,1 GB, es probable que esté cuantizado a 4 bits, lo que permite inferencia con menos de 4 GB de VRAM. Sin embargo, sin conocer el tipo de cuantización exacto, esta estimación es aproximada.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (ej. GTX 1660, RTX 3050, RTX 4060) podría ejecutarlo. Para mayor velocidad, una RTX 4090 o A100 serían adecuadas.
 - Compatibilidad con GPU de consumo: sí, el tamaño reducido y la naturaleza del modelo base lo hacen viable para GPUs de consumo.
-- Opciones de despliegue: al ser un modelo de la librería transformers, puede usarse con vLLM, llama.cpp, Ollama (si se convierte a GGUF) o el pipeline de HuggingFace. No se ha confirmado compatibilidad con estas herramientas.
+- Opciones de despliegue: al ser un modelo de la librería transformers, puede usarse con vLLM, llama.cpp, Ollama (si se convierte a GGUF) o el pipeline de Hugging Face. No se ha confirmado compatibilidad con estas herramientas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -82,5 +82,5 @@ La comparativa es limitada porque no hay datos de rendimiento del checkpoint. Se
 
 ## Enlaces
 
-- [HuggingFace: Uigyu/qwen_2.5_3b_mh-penguin_h2_a_s2](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-penguin_h2_a_s2)
+- [Hugging Face: Uigyu/qwen_2.5_3b_mh-penguin_h2_a_s2](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-penguin_h2_a_s2)
 - [Documentación de Qwen 2.5 (modelo base)](https://huggingface.co/Qwen/Qwen2.5-3B) - no confirmado para este checkpoint, pero útil como referencia del modelo base.

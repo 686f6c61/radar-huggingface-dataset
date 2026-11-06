@@ -92,7 +92,7 @@ El modelo all presenta una mejora de throughput del +12,9% al +17,1% frente a Ra
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thomasgardiner/Qwen3.8-27B-NVFP4-all
+- Hugging Face: https://huggingface.co/thomasgardiner/Qwen3.8-27B-NVFP4-all
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint base RadixArk: https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4
 - Modelo borrador para decodificación especulativa: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2

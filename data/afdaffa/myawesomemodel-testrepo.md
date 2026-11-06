@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario afdaffa en HuggingFace, con identificador `afdaffa/MyAwesomeModel-TestRepo`. Por su nombre y por sus características (0 descargas, 0 likes, tamano de repositorio de 0,0 GB y una model card genérica con marcadores de posición), se trata con alta probabilidad de un repositorio de prueba creado para validar el flujo de publicación, no de un modelo entrenado y distribuido para uso real.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario afdaffa en Hugging Face, con identificador `afdaffa/MyAwesomeModel-TestRepo`. Por su nombre y por sus características (0 descargas, 0 likes, tamano de repositorio de 0,0 GB y una model card genérica con marcadores de posición), se trata con alta probabilidad de un repositorio de prueba creado para validar el flujo de publicación, no de un modelo entrenado y distribuido para uso real.
 
-La información disponible es internamente contradictoria. Los metadatos de HuggingFace etiquetan el repositorio con `bert`, `pytorch` y la pipeline `feature-extraction`, lo que apuntaría a un encoder tipo BERT para extracción de representaciones. Sin embargo, la model card describe un supuesto modelo de razonamiento de gran escala, con modo de pensamiento, soporte de function calling, resultados en AIME 2025 y recomendaciones de temperatura y prompts de sistema, siguiendo una plantilla genérica de LLM conversacional.
+La información disponible es internamente contradictoria. Los metadatos de Hugging Face etiquetan el repositorio con `bert`, `pytorch` y la pipeline `feature-extraction`, lo que apuntaría a un encoder tipo BERT para extracción de representaciones. Sin embargo, la model card describe un supuesto modelo de razonamiento de gran escala, con modo de pensamiento, soporte de function calling, resultados en AIME 2025 y recomendaciones de temperatura y prompts de sistema, siguiendo una plantilla genérica de LLM conversacional.
 
 No se ha publicado ninguna cifra verificable de parámetros, contexto, idiomas ni pesos. El repositorio no contiene archivos de pesos (0,0 GB), por lo que no es desplegable en su estado actual. Esta ficha documenta exclusivamente lo que puede contrastarse en los metadatos y en la model card, señalando de forma explícita cada dato ausente o no verificable.
 
@@ -12,7 +12,7 @@ No se ha publicado ninguna cifra verificable de parámetros, contexto, idiomas n
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Los tags de HuggingFace indican `bert`; la model card describe un LLM de razonamiento. Información contradictoria |
+| Arquitectura | No disponible. Los tags de Hugging Face indican `bert`; la model card describe un LLM de razonamiento. Información contradictoria |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -107,7 +107,7 @@ No disponible. La model card emplea etiquetas anónimas ("Model1", "Model2", "Mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afdaffa/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/afdaffa/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de código: no disponible (la model card menciona "our code repository" sin enlace)
 - Blog o documentación oficial: no disponible (la model card menciona "our official website" sin enlace)

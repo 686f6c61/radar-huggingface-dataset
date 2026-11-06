@@ -18,7 +18,7 @@ Por tanto, esta ficha documenta principalmente el artefacto de cuantizacion y su
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Peso base en NVFP4, serializado en GGUF; los hyper-connection mixers se almacenan en F16 en lugar de BF16. No se listan niveles GGUF concretos (Q4_K_M, etc.) |
 | Idiomas soportados | no disponible |
-| Licencia | nvidia-open-model-agreement (etiquetada como `license: other` en HuggingFace) |
+| Licencia | nvidia-open-model-agreement (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | GGUF (repo de 105,6 GB) |
 | Modelo base | nvidia/Qwen3.8-Flash-Next-FP4-Local (revision `b9ce18a`), relacion `quantized` |
 | Pipeline | text-generation |
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fairfieldt/Qwen3.8-Flash-Next-NVFP4-QAD-GGUF | 157,2 mil millones | no disponible | GGUF (105,6 GB) | nvidia-open-model-agreement | Repositorio HuggingFace con 0 descargas |
+| fairfieldt/Qwen3.8-Flash-Next-NVFP4-QAD-GGUF | 157,2 mil millones | no disponible | GGUF (105,6 GB) | nvidia-open-model-agreement | Repositorio Hugging Face con 0 descargas |
 | nvidia/Qwen3.8-Flash-Next-FP4-Local | 157,2 mil millones (mismo modelo) | no disponible | FP4 local | nvidia-open-model-agreement | Repositorio de NVIDIA |
 | Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,7 +101,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fairfieldt/Qwen3.8-Flash-Next-NVFP4-QAD-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
+- Repositorio Hugging Face: https://huggingface.co/fairfieldt/Qwen3.8-Flash-Next-NVFP4-QAD-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
 - Fork de runtime ds4: https://github.com/fairfieldt/ds4
 - Busquedas web adicionales: no se han encontrado resultados relevantes sobre este modelo. Las busquedas realizadas devolvieron exclusivamente listados de sitios para adultos sin ninguna relacion con el modelo, por lo que se han descartado como fuentes.

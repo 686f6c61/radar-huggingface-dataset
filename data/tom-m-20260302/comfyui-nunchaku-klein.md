@@ -72,7 +72,7 @@ No disponible. Este repositorio no es un modelo, sino un complemento de software
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tom-m-20260302/ComfyUI-Nunchaku-Klein
+- Repositorio Hugging Face: https://huggingface.co/tom-m-20260302/ComfyUI-Nunchaku-Klein
 - Repositorio GitHub: https://github.com/Tom-M-Git/ComfyUI-Nunchaku-Klein
 - Backend Nunchaku (fork de tonera): https://huggingface.co/tonera/vitoom-nunchaku
 - Backend Nunchaku extendido (fork de tom-m-20260302): https://github.com/tom-m-2020/vitoom-nunchaku-extended

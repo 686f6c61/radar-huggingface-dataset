@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tamjung33/sd-class-butterflies-32 es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario tamjung33 en HuggingFace. La model card lo describe como un modelo de difusion para la generacion incondicional de imagenes (sin prompt de texto) y lo vincula explicitamente a la Unidad 1 del curso Diffusion Models Class de HuggingFace, por lo que se trata de un artefacto de caracter eminentemente didactico.
+tamjung33/sd-class-butterflies-32 es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario tamjung33 en Hugging Face. La model card lo describe como un modelo de difusion para la generacion incondicional de imagenes (sin prompt de texto) y lo vincula explicitamente a la Unidad 1 del curso Diffusion Models Class de Hugging Face, por lo que se trata de un artefacto de caracter eminentemente didactico.
 
 El modelo ocupa 18.536.323 parametros (aproximadamente 0,1 GB de repositorio) y se distribuye en formato safetensors para la libreria diffusers, con un pipeline declarado de tipo DDPMPipeline. Esto implica uso mediante la propia API de diffusers en pocas lineas de codigo, sin necesidad de infraestructura especializada ni GPU dedicada.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada fuera del ambito formativo: acumula 19 descarga
 | Libreria | diffusers |
 | Pipeline | unconditional-image-generation (DDPMPipeline) |
 | Descargas / likes | 19 / 0 |
-| Fechas de creacion y actualizacion | 2026-09-19 (creacion) y 2026-09-19 (ultima actualizacion), segun metadatos de HuggingFace |
+| Fechas de creacion y actualizacion | 2026-09-19 (creacion) y 2026-09-19 (ultima actualizacion), segun metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion de salida | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tamjung33/sd-class-butterflies-32 | 18.536.323 (verificado en safetensors) | no confirmada, probablemente 32x32 | incondicional | MIT | HuggingFace, diffusers |
-| google/ddpm-cifar10-32 | aproximadamente 35,7 M (dato aproximado de documentacion publica, no verificado en esta ficha) | 32x32 | incondicional | MIT | HuggingFace, diffusers |
-| google/ddpm-celebahq-256 | aproximadamente 113 M (dato aproximado de documentacion publica, no verificado en esta ficha) | 256x256 | incondicional | MIT | HuggingFace, diffusers |
+| tamjung33/sd-class-butterflies-32 | 18.536.323 (verificado en safetensors) | no confirmada, probablemente 32x32 | incondicional | MIT | Hugging Face, diffusers |
+| google/ddpm-cifar10-32 | aproximadamente 35,7 M (dato aproximado de documentacion publica, no verificado en esta ficha) | 32x32 | incondicional | MIT | Hugging Face, diffusers |
+| google/ddpm-celebahq-256 | aproximadamente 113 M (dato aproximado de documentacion publica, no verificado en esta ficha) | 256x256 | incondicional | MIT | Hugging Face, diffusers |
 
 El modelo analizado es el mas pequeno de los tres y el unico entrenado sobre un dominio especifico (mariposas) en lugar de sobre un dataset generico de caras o de imagenes naturales de baja resolucion. Los valores de parametros de los modelos de terceros proceden de documentacion publica general y no se han verificado en el contexto de esta ficha; deben tomarse como orientativos.
 
@@ -97,12 +97,12 @@ El modelo analizado es el mas pequeno de los tres y el unico entrenado sobre un 
 - Riesgo de alucinacion visual: como todo modelo generativo, puede producir imagenes anatomicamente incoherentes (alas duplicadas, simetrias rotas, artefactos de color) sin ninguna senal de confianza asociada.
 - Idioma y texto: el modelo no procesa ni genera lenguaje, por lo que no aplica ninguna evaluacion multilingue.
 - Madurez del repositorio: con 19 descargas, 0 likes y una unica actualizacion registrada, no hay evidencia de validacion por parte de la comunidad ni garantia de mantenimiento.
-- Anomalia en los metadatos: la fecha de creacion registrada en HuggingFace (2026-09-19) es posterior a la fecha habitual de consulta, por lo que conviene verificar la procedencia del repositorio antes de integrarlo en cualquier flujo automatico.
+- Anomalia en los metadatos: la fecha de creacion registrada en Hugging Face (2026-09-19) es posterior a la fecha habitual de consulta, por lo que conviene verificar la procedencia del repositorio antes de integrarlo en cualquier flujo automatico.
 - No apto para produccion: por tamano, resolucion, falta de evaluacion y ausencia de soporte, debe considerarse exclusivamente un recurso educativo o de experimentacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tamjung33/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/tamjung33/sd-class-butterflies-32
 - Repositorio del curso Diffusion Models Class: https://github.com/huggingface/diffusion-models-class
 - Documentacion del pipeline DDPMPipeline en diffusers: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - Nota sobre la busqueda web: los resultados obtenidos consistieron unicamente en enlaces genericos a YouTube sin relacion con el modelo, por lo que no se ha podido incorporar ningun paper, blog o demo adicional.

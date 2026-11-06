@@ -77,7 +77,7 @@ La comparativa se basa en el tamaño y características generales, pero no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Axel0689/Qwen3.8-27B-Q3_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Axel0689/Qwen3.8-27B-Q3_K_M-GGUF
 - Modelo base (Qwen/Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

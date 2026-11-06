@@ -73,9 +73,9 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo b
 
 ## Enlaces
 
-- [HuggingFace - AbteeXAILab/lumynax-reasoning-qwq-32b-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-qwq-32b-gguf)
+- [Hugging Face - AbteeXAILab/lumynax-reasoning-qwq-32b-gguf](https://huggingface.co/AbteeXAILab/lumynax-reasoning-qwq-32b-gguf)
 - [Repositorio GitHub](https://github.com/Aimaghsoodi/lumynax-reasoning-qwq-32b-gguf)
 - [AbteeX AI Labs](https://abteex.com)
 - [LumynaX](https://lumynax.com)
-- [Coleccion LumynaX en HuggingFace](https://huggingface.co/collections/AbteeXAILab/lumynax-reasoning-and-long-context)
+- [Coleccion LumynaX en Hugging Face](https://huggingface.co/collections/AbteeXAILab/lumynax-reasoning-and-long-context)
 - [Modelo base Qwen/QwQ-32B](https://huggingface.co/Qwen/QwQ-32B)

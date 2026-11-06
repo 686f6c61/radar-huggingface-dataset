@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CELL-LAB/C_SERVER-GRPO-MERGED
+- Repositorio Hugging Face: https://huggingface.co/CELL-LAB/C_SERVER-GRPO-MERGED
 - Modelo base: https://huggingface.co/CELL-LAB/lora-plus-f2f-backup
 
 No se encontraron otros enlaces relevantes en la búsqueda web (papers, blogs o demos asociados a este modelo específico).

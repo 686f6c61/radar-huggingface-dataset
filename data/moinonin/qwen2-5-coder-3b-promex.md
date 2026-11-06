@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: al ser un adaptador LoRA sobre un modelo base cuantizado en 4 bits, el requisito de VRAM para inferencia es bajo. El modelo base Qwen2.5-Coder-3B en 4 bits ocupa aproximadamente 2-3 GB, y el adaptador anade menos de 0,1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo, incluyendo RTX 3060, RTX 4060, o GPUs de datacenter como T4 o A10.
 - Compatibilidad con GPU de consumo: si, cabe en GPUs de consumo modernas con 6 GB o mas de VRAM.
-- Opciones de despliegue: al ser un adaptador PEFT, requiere cargar el modelo base y el adaptador con la libreria `peft` de HuggingFace. Puede usarse con transformers, vLLM (si se fusiona el adaptador) o llama.cpp (si se exporta a GGUF).
+- Opciones de despliegue: al ser un adaptador PEFT, requiere cargar el modelo base y el adaptador con la libreria `peft` de Hugging Face. Puede usarse con transformers, vLLM (si se fusiona el adaptador) o llama.cpp (si se exporta a GGUF).
 - Latencia y throughput: no disponible. Depende del hardware y del backend de inferencia utilizado.
 
 ## Comparativa con modelos similares

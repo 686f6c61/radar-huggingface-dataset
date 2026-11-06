@@ -79,7 +79,7 @@ Nota: los datos de los modelos comparados son de conocimiento general y pueden v
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/NANI-Nithin/granite-4.2-3b-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/NANI-Nithin/granite-4.2-3b-GGUF
 - Modelo base (safetensors): https://huggingface.co/ibm-granite/granite-4.2-3b
 - Coleccion oficial de GGUF de IBM: https://huggingface.co/collections/ibm-granite/granite-gguf-models-68decbb77a9ca2800a9b00e3
 - Documentacion de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2

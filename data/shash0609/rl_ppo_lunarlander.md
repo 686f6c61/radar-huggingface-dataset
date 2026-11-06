@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shash0609/rl_ppo_lunarlander` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, un problema clasico de control continuo-discreto de la familia Box2D incluido en Gymnasium. El modelo lo publica el usuario shash0609 en HuggingFace y se distribuye a traves de la libreria stable-baselines3, que es la que declara el campo `library_name` del repositorio. No se trata, por tanto, de un modelo de lenguaje: no genera texto, no tiene ventana de contexto y no procesa idiomas naturales.
+`shash0609/rl_ppo_lunarlander` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, un problema clasico de control continuo-discreto de la familia Box2D incluido en Gymnasium. El modelo lo publica el usuario shash0609 en Hugging Face y se distribuye a traves de la libreria stable-baselines3, que es la que declara el campo `library_name` del repositorio. No se trata, por tanto, de un modelo de lenguaje: no genera texto, no tiene ventana de contexto y no procesa idiomas naturales.
 
 El agente resuelve una unica tarea: controlar un modulo lunar para que aterrice de forma estable entre dos banderas, accionando propulsores laterales y motor principal. El autor declara una recompensa media de 263,40 +/- 20,08 en LunarLander-v3, un valor que supera el umbral de 200 que la comunidad suele considerar como "entorno resuelto". Ese resultado esta marcado como `verified: false`, es decir, no ha sido validado de forma independiente.
 
@@ -70,11 +70,11 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye datos verificados de modelos comparables. Los candidatos naturales serian otros agentes PPO, A2C o DQN entrenados sobre LunarLander-v3 y publicados en el Hub de HuggingFace, pero no se dispone de sus especificaciones ni de sus metricas en el material consultado.
+La informacion proporcionada no incluye datos verificados de modelos comparables. Los candidatos naturales serian otros agentes PPO, A2C o DQN entrenados sobre LunarLander-v3 y publicados en el Hub de Hugging Face, pero no se dispone de sus especificaciones ni de sus metricas en el material consultado.
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shash0609/rl_ppo_lunarlander | no disponible | no aplica | 263,40 +/- 20,08 (mean_reward, no verificado) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| shash0609/rl_ppo_lunarlander | no disponible | no aplica | 263,40 +/- 20,08 (mean_reward, no verificado) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ La informacion proporcionada no incluye datos verificados de modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shash0609/rl_ppo_lunarlander
+- Modelo en Hugging Face: https://huggingface.co/shash0609/rl_ppo_lunarlander
 - stable-baselines3 (libreria declarada en la model card): https://github.com/DLR-RM/stable-baselines3
 - La busqueda web no devolvio ningun enlace relevante (papers, blogs, repos o demos) asociado a este modelo.

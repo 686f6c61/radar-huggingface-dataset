@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nafiullah/finetuned-qwen3-vl-2b` es un repositorio de HuggingFace que documenta un proyecto de ajuste fino (fine-tuning) sobre el modelo vision-lenguaje `Qwen/Qwen3-VL-2B-Instruct`. Lo publica el autor identificado como nafiullah, dentro del proyecto Drishti de Team PothChola: unas gafas inteligentes destinadas a personas ciegas y con baja visión en Bangladesh. El objetivo declarado es dotar al modelo base de tres capacidades concretas en bengalí (bangla): descripción de escenas, reconocimiento de billetes de taka bangladesíes y lectura de envases de medicamentos.
+`nafiullah/finetuned-qwen3-vl-2b` es un repositorio de Hugging Face que documenta un proyecto de ajuste fino (fine-tuning) sobre el modelo vision-lenguaje `Qwen/Qwen3-VL-2B-Instruct`. Lo publica el autor identificado como nafiullah, dentro del proyecto Drishti de Team PothChola: unas gafas inteligentes destinadas a personas ciegas y con baja visión en Bangladesh. El objetivo declarado es dotar al modelo base de tres capacidades concretas en bengalí (bangla): descripción de escenas, reconocimiento de billetes de taka bangladesíes y lectura de envases de medicamentos.
 
 Es importante aclarar qué es y qué no es este repositorio. No contiene pesos ajustados: incluye una guía paso a paso de fine-tuning con LoRA (`FINETUNING.md`), un script de entrenamiento (`scripts/train_lora.py`, basado en transformers + peft), un script de preparación de datos (`scripts/prepare_data.py`), un ejemplo del formato de datos (`data/sample.jsonl`) y un `requirements.txt`. El propio autor indica que la guía y los scripts son un punto de partida y que no se han ejecutado de extremo a extremo, y que todavía no se publican pesos ajustados.
 
@@ -98,7 +98,7 @@ No es posible establecer una comparación cuantitativa fiable: no hay benchmarks
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nafiullah/finetuned-qwen3-vl-2b
+- Repositorio en Hugging Face: https://huggingface.co/nafiullah/finetuned-qwen3-vl-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Archivos referenciados en la model card (dentro del repositorio): `FINETUNING.md`, `scripts/train_lora.py`, `scripts/prepare_data.py`, `data/sample.jsonl`, `requirements.txt`
 - Paper, blog, repositorio de código externo o demo: no disponible en la información proporcionada.

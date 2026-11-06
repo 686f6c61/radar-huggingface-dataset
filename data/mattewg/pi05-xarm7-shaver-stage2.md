@@ -70,5 +70,5 @@ No disponible. No se ha encontrado información comparativa en la fuente consult
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/mattewg/pi05-xarm7-shaver-stage2](https://huggingface.co/mattewg/pi05-xarm7-shaver-stage2)
+- Hugging Face: [https://huggingface.co/mattewg/pi05-xarm7-shaver-stage2](https://huggingface.co/mattewg/pi05-xarm7-shaver-stage2)
 - No hay enlaces adicionales disponibles en la información proporcionada.

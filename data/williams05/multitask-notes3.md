@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WilliamS05/multitask-notes3 es un repositorio experimental publicado en HuggingFace por el usuario WilliamS05 que contiene una implementacion funcional y minima de una arquitectura etiquetada como "Hybrid" orientada a tareas multitarea. No se trata de un modelo entrenado, sino de un checkpoint de inicializacion valido (16.576 parametros en total) acompanado del codigo fuente, la configuracion de arquitectura y la receta de experimento por defecto. El propio autor indica explicitamente que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
+WilliamS05/multitask-notes3 es un repositorio experimental publicado en Hugging Face por el usuario WilliamS05 que contiene una implementacion funcional y minima de una arquitectura etiquetada como "Hybrid" orientada a tareas multitarea. No se trata de un modelo entrenado, sino de un checkpoint de inicializacion valido (16.576 parametros en total) acompanado del codigo fuente, la configuracion de arquitectura y la receta de experimento por defecto. El propio autor indica explicitamente que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
 La relevancia de esta ficha es acotada y conviene ser claro al respecto: el repositorio es un punto de partida reproducible para pruebas de humo, no un modelo desplegable. Su interes tecnico reside en la combinacion de decisiones de arquitectura que documenta: atencion lineal, fusion mediante co-atención, activacion swish y normalizacion GroupNorm, con un entrenamiento configurado con optimizador Adam y scheduler polinomial.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | williamsmichael21/multitask-v3 | Mixer | no disponible ("small" y variante "giant") | no disponible | no disponible | Checkpoint de inicializacion, presentado como punto de partida reproducible |
 | Thiagocostaduv/multitask-notes | ALBEF | no disponible | no disponible | MIT | Repositorio multitarea en safetensors y PyTorch |
 
-La comparativa se limita a repositorios de la misma categoria (implementaciones minimas orientadas a multitarea publicadas en HuggingFace). No se dispone de datos de parametros, contexto ni rendimiento de las alternativas mas alla de lo indicado, por lo que no es posible establecer una comparacion cuantitativa.
+La comparativa se limita a repositorios de la misma categoria (implementaciones minimas orientadas a multitarea publicadas en Hugging Face). No se dispone de datos de parametros, contexto ni rendimiento de las alternativas mas alla de lo indicado, por lo que no es posible establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ La comparativa se limita a repositorios de la misma categoria (implementaciones 
 - Riesgo de alucinacion: no evaluable, ya que el modelo no esta entrenado; cualquier salida obtenida de una inicializacion aleatoria seria ruido sin valor informativo.
 - Sesgos conocidos: no disponibles. Al no existir datos de entrenamiento documentados, no es posible analizar sesgos.
 - Limitaciones de contexto e idioma: no disponibles. No se declaran idiomas soportados ni longitud de contexto en la model card ni en los tags.
-- La arquitectura es una implementacion personalizada: las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito, lo que anade trabajo de integracion.
+- La arquitectura es una implementacion personalizada: las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito, lo que anade trabajo de integracion.
 - Licencia MIT: permite uso comercial del codigo y de los pesos, pero la propia model card advierte de que deben revisarse por separado los terminos de las fuentes de datos si el repositorio se usa con datasets externos.
 - Adopcion muy baja (9 descargas, 0 likes) y ausencia de mantenedores adicionales, lo que implica soporte y actualizaciones inciertos.
 - Fechas del repositorio: creado y actualizado el 2026-10-01, con apenas unos segundos de diferencia entre ambos eventos, lo que indica una publicacion unica sin iteraciones posteriores.
@@ -87,7 +87,7 @@ La comparativa se limita a repositorios de la misma categoria (implementaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WilliamS05/multitask-notes3
+- Modelo en Hugging Face: https://huggingface.co/WilliamS05/multitask-notes3
 - Repositorio comparable (Mixer para multitarea): https://huggingface.co/williamsmichael21/multitask-v3
 - Repositorio comparable (ALBEF para multitarea): https://huggingface.co/Thiagocostaduv/multitask-notes
 - Lista de modelos abiertos gratuitos (referencia externa): https://github.com/ClawLabsAI/free-ai-models

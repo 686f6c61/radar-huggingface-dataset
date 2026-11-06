@@ -52,5 +52,5 @@ No se dispone de información sobre modelos comparables en la model card. No se 
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2-epoch3)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2-epoch3)
 - [Modelo base - unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)

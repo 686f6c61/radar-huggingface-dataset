@@ -1,7 +1,7 @@
 # nikhildasner/multitask
 
 ## Resumen
-El repositorio `nikhildasner/multitask` contiene un prototipo de investigación basado en la arquitectura Blip (Bootstrapping Language-Image Pre-training), orientado a tareas multitarea. Lo publica el usuario nikhildasner en HuggingFace y se presenta explícitamente como un punto de partida experimental, no como un modelo entrenado ni evaluado. El propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark.
+El repositorio `nikhildasner/multitask` contiene un prototipo de investigación basado en la arquitectura Blip (Bootstrapping Language-Image Pre-training), orientado a tareas multitarea. Lo publica el usuario nikhildasner en Hugging Face y se presenta explícitamente como un punto de partida experimental, no como un modelo entrenado ni evaluado. El propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark.
 
 La relevancia de esta ficha es limitada: se trata de un artefacto de investigación con 24.832 parámetros en el checkpoint safetensors, escala "nano", sin pipeline declarado, sin idiomas especificados y sin resultados publicados. Resulta útil únicamente como esqueleto reproducible para experimentar con configuraciones Blip (atención multi-query, fusión Tucker, activación ReLU y normalización BatchNorm) y para validar pipelines de entrenamiento propios.
 
@@ -37,7 +37,7 @@ No se documenta el volumen de tokens de entrenamiento, la composición del datas
 - Pruebas de humo de pipelines: usar `pipeline.py --help` y el bloque `__main__` para validar la carga del checkpoint de inicialización y el formato de entrada antes de invertir en entrenamiento.
 - Reproducción de experimentos de arquitectura: servir como esqueleto para comparar variantes de atención multi-query o de fusión Tucker con presupuesto de ajuste y semillas idénticas.
 - Docencia y formación: ilustrar la estructura de un repositorio de investigación con configuración, receta de entrenamiento y checkpoint separados.
-- Desarrollo de adaptadores de carga: practicar la integración de implementaciones personalizadas con APIs de HuggingFace mediante adaptadores explícitos.
+- Desarrollo de adaptadores de carga: practicar la integración de implementaciones personalizadas con APIs de Hugging Face mediante adaptadores explícitos.
 - Base para fine-tuning multitarea: partir de la inicialización y entrenar sobre conjuntos retenidos específicos de tarea, reportando métricas con al menos tres semillas.
 - Auditoría de robustez y equidad: emplear el checkpoint como caso de estudio para documentar limitaciones antes de cualquier despliegue.
 
@@ -64,5 +64,5 @@ No disponible. No se identifican en la información proporcionada modelos compar
 - Cualquier resultado de un checkpoint futuro debe documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/nikhildasner/multitask
-- Repositorio de archivos: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (incluidos en el repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/nikhildasner/multitask
+- Repositorio de archivos: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (incluidos en el repositorio de Hugging Face)

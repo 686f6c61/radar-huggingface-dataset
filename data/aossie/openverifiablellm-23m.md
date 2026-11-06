@@ -83,7 +83,7 @@ OpenVerifiableLLM es notablemente más pequeño que las alternativas y mucho má
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AOSSIE/OpenVerifiableLLM-23M
+- Modelo en Hugging Face: https://huggingface.co/AOSSIE/OpenVerifiableLLM-23M
 - Dataset de evidencia de entrenamiento: https://huggingface.co/datasets/AOSSIE/openverifiable-enwiki-20260901-20260918-r1-evidence
 - Repositorio de código y documentación: https://github.com/AOSSIE-Org/OpenVerifiableLLM
 - Documentación técnica (cómo funciona): https://github.com/AOSSIE-Org/OpenVerifiableLLM/blob/main/docs/how-it-works.md

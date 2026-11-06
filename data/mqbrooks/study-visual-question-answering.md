@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mqbrooks/study-visual-question-answering` es un repositorio alojado en HuggingFace que no contiene un modelo entrenado, sino notas de lectura y el esbozo de un experimento sobre *visual question answering* (VQA). El propio autor lo etiqueta como `research-notes` y aclara en la model card que el repositorio "no reclama mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado". Se trata, por tanto, de documentación metodológica: el artefacto principal es `paper_notes.md`, no unos pesos utilizables.
+`mqbrooks/study-visual-question-answering` es un repositorio alojado en Hugging Face que no contiene un modelo entrenado, sino notas de lectura y el esbozo de un experimento sobre *visual question answering* (VQA). El propio autor lo etiqueta como `research-notes` y aclara en la model card que el repositorio "no reclama mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado". Se trata, por tanto, de documentación metodológica: el artefacto principal es `paper_notes.md`, no unos pesos utilizables.
 
-El repositorio está publicado bajo licencia CC-BY-4.0, ocupa 0.0 GB y solo incluye dos ficheros declarados (`paper_notes.md` y `README.md`). Los metadatos de HuggingFace registran 33.088 parámetros totales en formato safetensors, una cifra que, dado el tamaño del repositorio y el contenido descrito, corresponde a un artefacto residual o de configuración, no a un modelo funcional de VQA. No se declaran idiomas soportados, longitud de contexto, tipos de cuantización ni arquitectura concreta más allá de la etiqueta genérica `transformer`.
+El repositorio está publicado bajo licencia CC-BY-4.0, ocupa 0.0 GB y solo incluye dos ficheros declarados (`paper_notes.md` y `README.md`). Los metadatos de Hugging Face registran 33.088 parámetros totales en formato safetensors, una cifra que, dado el tamaño del repositorio y el contenido descrito, corresponde a un artefacto residual o de configuración, no a un modelo funcional de VQA. No se declaran idiomas soportados, longitud de contexto, tipos de cuantización ni arquitectura concreta más allá de la etiqueta genérica `transformer`.
 
 Su relevancia actual es limitada y de naturaleza distinta a la de un modelo desplegable: sirve como plantilla de planificación experimental para quien quiera abordar VQA con rigor, ya que explicita confounders, baselines emparejados, datasets de evaluación propuestos (VQAv2, GQA, OK-VQA) y requisitos de reproducibilidad. Con 17 descargas y 0 likes, su adopción es marginal.
 
@@ -94,9 +94,9 @@ La comparacion cuantitativa no es posible con la informacion disponible, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mqbrooks/study-visual-question-answering
-- Documentacion de HuggingFace Transformers sobre visual question answering: https://huggingface.co/docs/transformers/tasks/visual_question_answering
-- Documentacion de HuggingFace Transformers sobre visual question answering (locale en): https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
+- Modelo en Hugging Face: https://huggingface.co/mqbrooks/study-visual-question-answering
+- Documentacion de Hugging Face Transformers sobre visual question answering: https://huggingface.co/docs/transformers/tasks/visual_question_answering
+- Documentacion de Hugging Face Transformers sobre visual question answering (locale en): https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
 - Introduccion a VQA en apxml: https://apxml.com/courses/intro-to-multimodal-ai/chapter-5-introductory-applications-multimodal-ai/visual-question-answering
 - Survey introductoria sobre VQA en DigitalOcean: https://www.digitalocean.com/community/tutorials/introduction-to-visual-question-answering
 - Referencia no relevante para esta ficha (resultado de busqueda generico): https://www.perplexity.ai/

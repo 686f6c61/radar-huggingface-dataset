@@ -94,7 +94,7 @@ La comparación se limita a parámetros y licencia porque no hay benchmarks publ
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/llama-capro-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/llama-capro-GGUF
 - Modelo base: https://huggingface.co/teclabs/llama-capro
 - Página de descargas de mradermacher: https://hf.tst.eu/model#llama-capro-GGUF
 - Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

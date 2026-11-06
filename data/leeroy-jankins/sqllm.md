@@ -87,7 +87,7 @@ En la tabla de benchmarks de Spider, `pip-sql-1.3b` supera a `sqlcoder-7b-2` en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/leeroy-jankins/sqllm)
+- [Modelo en Hugging Face](https://huggingface.co/leeroy-jankins/sqllm)
 - [Modelo base PipableAI/pip-sql-1.3b](https://huggingface.co/PipableAI/pip-sql-1.3b)
 - [Dataset de entrenamiento PipableAI/pip-txt-to-sql-spider-bird-dataset](https://huggingface.co/datasets/PipableAI/pip-txt-to-sql-spider-bird-dataset)
 - [Test Suite SQL Eval (benchmark de Spider)](https://github.com/taoyds/test-suite-sql-eval)

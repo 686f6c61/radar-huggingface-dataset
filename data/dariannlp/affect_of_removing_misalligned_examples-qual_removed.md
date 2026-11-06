@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DarianNLP/affect_of_removing_misalligned_examples-qual_removed` es un ajuste fino (fine-tune) del modelo `meta-llama/Llama-3.2-3B-Instruct`, desarrollado por el usuario DarianNLP. Se trata de un experimento de investigación centrado en el efecto de eliminar ejemplos mal alineados durante el entrenamiento supervisado (SFT), como sugiere su nombre. El modelo está entrenado con la librería TRL de HuggingFace y está pensado para generación de texto conversacional.
+El modelo `DarianNLP/affect_of_removing_misalligned_examples-qual_removed` es un ajuste fino (fine-tune) del modelo `meta-llama/Llama-3.2-3B-Instruct`, desarrollado por el usuario DarianNLP. Se trata de un experimento de investigación centrado en el efecto de eliminar ejemplos mal alineados durante el entrenamiento supervisado (SFT), como sugiere su nombre. El modelo está entrenado con la librería TRL de Hugging Face y está pensado para generación de texto conversacional.
 
 Con 3.212.749.824 parámetros (aproximadamente 3,2 mil millones), es un modelo de tamaño medio que puede ejecutarse en GPUs de consumo con cuantización adecuada. No se especifican detalles sobre la longitud de contexto, idiomas soportados ni licencia en la información disponible, lo que limita su evaluación para uso en producción. Su relevancia radica en el estudio de la alineación de modelos, un tema crítico en el desarrollo de LLMs, aunque no se han publicado resultados de evaluación que respalden su eficacia.
 
@@ -75,10 +75,10 @@ Nota: los datos de contexto y licencia del modelo base y Qwen2.5 provienen de co
 - La licencia no está especificada, lo que impide conocer las restricciones de uso comercial o redistribución.
 - No hay información sobre la longitud de contexto efectiva tras el fine-tune; podría diferir de la del modelo base.
 - No se han realizado evaluaciones de seguridad o robustez, por lo que no se recomienda su uso en entornos sensibles sin pruebas adicionales.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- [HuggingFace - DarianNLP/affect_of_removing_misalligned_examples-qual_removed](https://huggingface.co/DarianNLP/affect_of_removing_misalligned_examples-qual_removed)
+- [Hugging Face - DarianNLP/affect_of_removing_misalligned_examples-qual_removed](https://huggingface.co/DarianNLP/affect_of_removing_misalligned_examples-qual_removed)
 - [Modelo base: meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

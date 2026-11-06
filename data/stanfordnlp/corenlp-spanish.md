@@ -4,7 +4,7 @@
 
 CoreNLP Spanish es el paquete de modelos para español de Stanford CoreNLP, la suite de procesamiento de lenguaje natural en Java desarrollada por el Stanford NLP Group. No se trata de un modelo generativo tipo transformer, sino de un pipeline de anotación lingüística que produce capas de análisis sobre texto en castellano: segmentación de frases y tokens, etiquetado gramatical (POS), reconocimiento de entidades nombradas (NER), normalización de valores numéricos y temporales, análisis de dependencias y constituyentes, correferencia, análisis de sentimiento, atribución de citas y extracción de relaciones.
 
-El repositorio, alojado en HuggingFace bajo el identificador `stanfordnlp/corenlp-spanish`, ocupa 0,4 GB y se distribuye con licencia GPL-2.0. Fue creado el 2 de marzo de 2022 y su última actualización registrada es del 27 de septiembre de 2026. La model card indica que el repositorio se generó automáticamente mediante el script `hugging_corenlp.py` del repositorio `stanfordnlp/huggingface-models`, por lo que la documentación publicada es mínima y no incluye detalles de entrenamiento.
+El repositorio, alojado en Hugging Face bajo el identificador `stanfordnlp/corenlp-spanish`, ocupa 0,4 GB y se distribuye con licencia GPL-2.0. Fue creado el 2 de marzo de 2022 y su última actualización registrada es del 27 de septiembre de 2026. La model card indica que el repositorio se generó automáticamente mediante el script `hugging_corenlp.py` del repositorio `stanfordnlp/huggingface-models`, por lo que la documentación publicada es mínima y no incluye detalles de entrenamiento.
 
 Su relevancia actual es la de ofrecer una alternativa consolidada y en Java para tareas clásicas de PLN en español, integrable en entornos empresariales donde ya existe infraestructura JVM. No compite con los grandes modelos de lenguaje generativos, sino que cubre la capa de anotación estructurada previa a tareas de extracción, indexación o análisis.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Idiomas | Licencia | Contexto | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| stanfordnlp/corenlp-spanish | Pipeline NLP en Java | es | GPL-2.0 | no disponible | no disponible | HuggingFace y GitHub de CoreNLP |
+| stanfordnlp/corenlp-spanish | Pipeline NLP en Java | es | GPL-2.0 | no disponible | no disponible | Hugging Face y GitHub de CoreNLP |
 | spaCy (modelos `es_core_news_*`) | Pipeline NLP en Python | es | MIT (licencia del proyecto) | no disponible | no disponible | Paquetes oficiales de spaCy |
 | Stanza (modelos para espanol) | Pipeline NLP en Python, basado en redes neuronales | es | Apache-2.0 (licencia del proyecto) | no disponible | no disponible | Repositorio y paquetes oficiales |
 
@@ -86,7 +86,7 @@ Los datos de licencia y naturaleza de spaCy y Stanza corresponden a conocimiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stanfordnlp/corenlp-spanish
+- Hugging Face: https://huggingface.co/stanfordnlp/corenlp-spanish
 - Sitio web de CoreNLP: https://stanfordnlp.github.io/CoreNLP
 - Repositorio GitHub de CoreNLP: https://github.com/stanfordnlp/CoreNLP
 - Repositorio de generacion de tarjetas: `stanfordnlp/huggingface-models` (mencionado en la model card, sin URL directa en la informacion disponible)

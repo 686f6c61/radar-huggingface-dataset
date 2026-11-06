@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SZL-Khipu-1.5B-estate-sft-v1 | 1,54B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | SFT sobre corpus propietario; sin benchmarks |
-| SZL-Khipu-1.5B (base) | 1,5B (aprox.) | no disponible | no disponible en esta ficha | HuggingFace | Modelo base del que deriva este ajuste |
+| SZL-Khipu-1.5B-estate-sft-v1 | 1,54B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | SFT sobre corpus propietario; sin benchmarks |
+| SZL-Khipu-1.5B (base) | 1,5B (aprox.) | no disponible | no disponible en esta ficha | Hugging Face | Modelo base del que deriva este ajuste |
 | Alternativas de ~1,5B tipo Qwen2 | ~1,5B | variable | variable | amplia | No se dispone de datos comparativos especificos en la informacion proporcionada |
 
 No se dispone de datos de rendimiento del modelo ni de alternativas evaluadas en la misma categoria dentro de la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible.
@@ -82,11 +82,11 @@ No se dispone de datos de rendimiento del modelo ni de alternativas evaluadas en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-estate-sft-v1
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-estate-sft-v1
 - Modelo base: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B
 - Dataset szl-quant-sft-v1: https://huggingface.co/datasets/SZLHOLDINGS/szl-quant-sft-v1
 - Dataset szl-frontier-sft-mix-v2: https://huggingface.co/datasets/SZLHOLDINGS/szl-frontier-sft-mix-v2
 - Dataset szl-1-doctrine-sft: https://huggingface.co/datasets/SZLHOLDINGS/szl-1-doctrine-sft
 - Dataset de logs (privado): https://huggingface.co/datasets/SZLHOLDINGS/wave-logs
 - Repositorio de codigo de entrenamiento: https://github.com/szl-holdings/szl-forge/blob/main/training/train_wave.py
-- Organizacion en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS

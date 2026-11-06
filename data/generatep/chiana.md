@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Generatep/Chiana es un adaptador de generación de imágenes texto-a-imagen publicado en HuggingFace por el usuario Generatep, etiquetado con `diffusers`, `text-to-image`, `lora` y `template:diffusion-lora`. No se trata de un modelo base autónomo, sino de un complemento que se apoya en el modelo `lynaNSFW/minimaxH3_Collection`. El propio autor describe el artefacto como un "Refmod", un formato que, según la model card, no se entrena como un LoRA convencional y que se utiliza como sustituto del LoRA exclusivamente dentro de H3 Minimax.
+Generatep/Chiana es un adaptador de generación de imágenes texto-a-imagen publicado en Hugging Face por el usuario Generatep, etiquetado con `diffusers`, `text-to-image`, `lora` y `template:diffusion-lora`. No se trata de un modelo base autónomo, sino de un complemento que se apoya en el modelo `lynaNSFW/minimaxH3_Collection`. El propio autor describe el artefacto como un "Refmod", un formato que, según la model card, no se entrena como un LoRA convencional y que se utiliza como sustituto del LoRA exclusivamente dentro de H3 Minimax.
 
-El contenido entrenado corresponde al personaje Chiana, de la serie de televisión Farscape, y se ha construido a partir de 103 imágenes y aproximadamente 46 segundos de muestras de audio. Esa integración de audio es un rasgo poco habitual en adaptadores de difusión y sugiere un flujo de trabajo orientado a vídeo o a contenido audiovisual, extremo coherente con las capturas tipo `vlcsnap` que el autor incluye como ejemplos y con los dos vídeos de demostración alojados en el CDN de HuggingFace.
+El contenido entrenado corresponde al personaje Chiana, de la serie de televisión Farscape, y se ha construido a partir de 103 imágenes y aproximadamente 46 segundos de muestras de audio. Esa integración de audio es un rasgo poco habitual en adaptadores de difusión y sugiere un flujo de trabajo orientado a vídeo o a contenido audiovisual, extremo coherente con las capturas tipo `vlcsnap` que el autor incluye como ejemplos y con los dos vídeos de demostración alojados en el CDN de Hugging Face.
 
 La relevancia de la ficha es limitada en términos de evaluación técnica: el repositorio declara un tamaño de 0.0 GB, no especifica licencia, idiomas, número de parámetros, formato de pesos ni resultados de benchmarks, y acumula 0 descargas y 0 "likes" en la fecha de actualización registrada (2026-09-16). Además, el uso documentado exige instalar nodos personalizados de terceros en ComfyUI, por lo que su adopción depende de un ecosistema muy concreto.
 
@@ -24,7 +24,7 @@ La relevancia de la ficha es limitada en términos de evaluación técnica: el r
 | Modelo base | `lynaNSFW/minimaxH3_Collection` |
 | Pipeline | text-to-image |
 | Palabras de activación | No requiere ninguna. La model card indica que, como en todos los prompts de H3, hay que describir los rasgos del personaje que se quieran obtener. |
-| Tamaño del repositorio | 0.0 GB (según metadatos de HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según metadatos de Hugging Face) |
 | Fecha de creación | 2026-09-16T23:54:29Z |
 | Fecha de actualización | 2026-09-16T23:54:31Z |
 | Descargas | 0 |
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - El repositorio declara un tamaño de 0.0 GB, por lo que no es posible estimar el peso del adaptador a partir de los metadatos; conviene verificar los archivos reales en la pestaña "Files & versions" antes de planificar el despliegue.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. Depende por completo del modelo base y de la resolución de generación, no del adaptador.
-- Opciones de despliegue: la documentada por el autor es ComfyUI con los nodos del repositorio `Luisacaotica/ComfyUI-MiniMaxH3Mod`, que la model card marca como requisito. La librería declarada en HuggingFace es `diffusers`, aunque no se especifica si el artefacto es cargable mediante el cargador estándar de LoRAs. Herramientas como vLLM o TGI no son aplicables a un modelo de difusión de imágenes.
+- Opciones de despliegue: la documentada por el autor es ComfyUI con los nodos del repositorio `Luisacaotica/ComfyUI-MiniMaxH3Mod`, que la model card marca como requisito. La librería declarada en Hugging Face es `diffusers`, aunque no se especifica si el artefacto es cargable mediante el cargador estándar de LoRAs. Herramientas como vLLM o TGI no son aplicables a un modelo de difusión de imágenes.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se han identificado en la información disponible modelos comparables con dat
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Generatep/Chiana | Adaptador / Refmod texto-a-imagen | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| Generatep/Chiana | Adaptador / Refmod texto-a-imagen | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | lynaNSFW/minimaxH3_Collection | Modelo base de difusión | no disponible | no aplica | no disponible | Referenciado como `base_model` |
 | LoRA de personaje convencional | Adaptador de difusión | no disponible | no aplica | no disponible | Ecosistema estándar (no se aportan ejemplos concretos) |
 
@@ -96,7 +96,7 @@ La diferencia cualitativa que sí documenta el autor es metodológica: un LoRA c
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Generatep/Chiana
+- Página del modelo en Hugging Face: https://huggingface.co/Generatep/Chiana
 - Archivos del modelo: https://huggingface.co/Generatep/Chiana/tree/main
 - Modelo base: https://huggingface.co/lynaNSFW/minimaxH3_Collection
 - Nodos de ComfyUI requeridos: https://github.com/Luisacaotica/ComfyUI-MiniMaxH3Mod

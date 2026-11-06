@@ -71,8 +71,8 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este adaptador) | 0,8B (base) + LoRA | no disponible | Sin métricas propias publicadas | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,8B | no disponible | No aplica al dominio; sin ajuste específico | según el modelo base | HuggingFace |
+| LINK-01 (este adaptador) | 0,8B (base) + LoRA | no disponible | Sin métricas propias publicadas | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,8B | no disponible | No aplica al dominio; sin ajuste específico | según el modelo base | Hugging Face |
 | Cerebro PPO (`brain.json`) | no aplica (tabla de política) | no aplica | 100% de éxito en 20 episodios, 21,4 s de media | del proyecto CONNECT TYCOON | Repositorio del proyecto |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tazza11/connectailab-rl-tazza11-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/tazza11/connectailab-rl-tazza11-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -23,7 +23,7 @@ Se trata de un modelo de embeddings de frases basado en arquitectura BERT, con 3
 
 El modelo es un encoder transformer basado en BERT, con 12 capas, 12 cabezas de atencion y una dimension oculta de 384, tal como corresponde a la familia BGE-small de BAAI. El modelo original fue entrenado por BAAI mediante tecnicas de aprendizaje contrastivo sobre pares de frases, con el objetivo de producir embeddings normalizados que reflejen similitud semantica. La version v1.5 introdujo mejoras en la distribucion de similitud y en la capacidad de recuperacion sin necesidad de instrucciones previas.
 
-Esta copia concreta no modifica los pesos ni la arquitectura; simplemente anade etiquetas y metadatos para que ANEForge pueda compilar el grafo del modelo en un unico programa ANE y transmitir los pesos desde HuggingFace mediante `huggingface_hub`. No se ha realizado ningun reentrenamiento ni ajuste adicional.
+Esta copia concreta no modifica los pesos ni la arquitectura; simplemente anade etiquetas y metadatos para que ANEForge pueda compilar el grafo del modelo en un unico programa ANE y transmitir los pesos desde Hugging Face mediante `huggingface_hub`. No se ha realizado ningun reentrenamiento ni ajuste adicional.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ La comparativa se basa en parametros y caracteristicas generales; no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/aneforge/bge-small-en-v1.5
+- Repositorio Hugging Face del modelo: https://huggingface.co/aneforge/bge-small-en-v1.5
 - Modelo base original: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Proyecto ANEForge en GitHub: https://github.com/sbryngelson/ANEForge
 - Documentacion de ANEForge: https://aneforge.readthedocs.io

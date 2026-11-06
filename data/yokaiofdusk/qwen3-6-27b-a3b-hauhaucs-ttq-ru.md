@@ -90,6 +90,6 @@ No se dispone de datos para comparar con modelos de otros desarrolladores (Llama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YokaiOfDusk/Qwen3.6-27b-A3B-HauhauCS-TTQ-RU
+- Hugging Face: https://huggingface.co/YokaiOfDusk/Qwen3.6-27b-A3B-HauhauCS-TTQ-RU
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Cuantizacion TTQ de referencia: https://huggingface.co/TokenTinkerer/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-TTQ-GGUF

@@ -85,7 +85,7 @@ Los únicos datos publicados en la información disponible corresponden a la eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hebbianrobotics/g1-depth-dodge
+- Modelo en Hugging Face: https://huggingface.co/hebbianrobotics/g1-depth-dodge
 - Modelo base π₁: https://huggingface.co/nepyope/g1_depth_dodge
 - Revisión de π₁ con los encoders congelados: https://huggingface.co/nepyope/g1_depth_dodge/tree/10e207cb734a6c3edf792d4995ca59ae4641bf29
 - Paper y código: https://github.com/Hebbian-Robotics/beyond-dodge-rate

@@ -6,7 +6,7 @@ Yubi-real2sim-policies es una colección de políticas de visión-lenguaje-acci�
 
 La relevancia del modelo reside en su enfoque: en lugar de entrenar directamente sobre datos reales, las políticas se ajustan mediante un pipeline que adapta representaciones visuales y dinámicas de simulación a las condiciones de un robot concreto (Yubi, el hardware de airoa). El repositorio ocupa 37,3 GB, lo que sugiere pesos completos de un modelo VLA de gran tamaño con múltiples variantes de política.
 
-La información pública disponible es limitada: no se detallan parámetros totales, composición del dataset ni resultados de benchmarks. El acceso está restringido (gated) y requiere aceptar las condiciones de la licencia Gemma en HuggingFace, lo que condiciona su uso comercial.
+La información pública disponible es limitada: no se detallan parámetros totales, composición del dataset ni resultados de benchmarks. El acceso está restringido (gated) y requiere aceptar las condiciones de la licencia Gemma en Hugging Face, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| airoa-org/yubi-real2sim-policies | no disponible | no disponible | Gemma (gated) | HuggingFace, acceso restringido |
+| airoa-org/yubi-real2sim-policies | no disponible | no disponible | Gemma (gated) | Hugging Face, acceso restringido |
 | pi0 / pi0.5 (Physical Intelligence) | no disponible | no disponible | no disponible | Repositorios openpi |
-| OpenVLA | ~7B | no disponible | no disponible | HuggingFace, abierto |
+| OpenVLA | ~7B | no disponible | no disponible | Hugging Face, abierto |
 | RT-2 (Google DeepMind) | no disponible | no disponible | propietaria | no público |
 
 La comparación cuantitativa con alternativas no es posible con la información disponible; los modelos VLA de referencia comparten la filosofía de condicionar acciones en lenguaje y visión, pero difieren en hardware objetivo y datos de entrenamiento.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar la licencia Gemma en HuggingFace, lo que limita la distribución y el uso comercial según los términos de dicha licencia.
+- Acceso restringido: requiere aceptar la licencia Gemma en Hugging Face, lo que limita la distribución y el uso comercial según los términos de dicha licencia.
 - Idiomas: solo se declara inglés; las instrucciones en otros idiomas pueden degradar el rendimiento.
 - Especificidad de hardware: las políticas están ajustadas al robot Yubi de airoa; su transferencia a otros robots no está garantizada.
 - Falta de documentación pública: no hay datos sobre parámetros, dataset, benchmarks ni latencia, lo que dificulta evaluar su idoneidad en producción.
@@ -83,7 +83,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/airoa-org/yubi-real2sim-policies
+- Hugging Face: https://huggingface.co/airoa-org/yubi-real2sim-policies
 - Paper referenciado (arXiv): arxiv:2610.17521 (no verificado en la información disponible)
 - Framework openpi: no disponible en la información proporcionada
 - Repositorio de airoa-org: no disponible en la información proporcionada

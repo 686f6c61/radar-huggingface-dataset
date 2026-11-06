@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EMber-small es un vision transformer preentrenado para extraer representaciones de imágenes de partículas de crio-microscopía electrónica de partícula única (single-particle cryo-EM). Lo desarrolla un equipo académico liderado por Nithin Chalapathi (Universidad de California, Berkeley) junto con Theo Sternlieb, Ethan Han, Sonya M. Hanson, Pilar Cossio, Aditi S. Krishnapriyan y Ritwik Gupta, y se publica bajo el identificador `nithinvc/EMber-small` en HuggingFace dentro de la familia de modelos EMber.
+EMber-small es un vision transformer preentrenado para extraer representaciones de imágenes de partículas de crio-microscopía electrónica de partícula única (single-particle cryo-EM). Lo desarrolla un equipo académico liderado por Nithin Chalapathi (Universidad de California, Berkeley) junto con Theo Sternlieb, Ethan Han, Sonya M. Hanson, Pilar Cossio, Aditi S. Krishnapriyan y Ritwik Gupta, y se publica bajo el identificador `nithinvc/EMber-small` en Hugging Face dentro de la familia de modelos EMber.
 
 El modelo aborda un problema recurrente en el pipeline de cryo-EM: obtener descriptores genéricos y reutilizables de partículas individuales sin depender de etiquetas ni de reconstrucciones previas. Dada una imagen de partícula, EMber devuelve un embedding global de imagen y un mapa de características espaciales por parches de 16x16 píxeles, pensados para tareas posteriores de análisis (agrupamiento, clasificación, búsqueda por similitud, estudio de heterogeneidad conformacional). La relevancia actual reside en que se entrena de forma auto-supervisada con 50 millones de imágenes experimentales reales procedentes de 214 conjuntos de datos EMPIAR, más proyecciones simuladas de 268.000 ensamblados moleculares, una escala de datos difícil de igualar en este dominio.
 
@@ -93,7 +93,7 @@ La comparación cuantitativa en tareas de cryo-EM (agrupamiento 2D, recuperació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nithinvc/EMber-small
+- Modelo en Hugging Face: https://huggingface.co/nithinvc/EMber-small
 - Preprint (arXiv): https://arxiv.org/abs/2610.22523
 - Código fuente: https://github.com/nithinvc/EMber
 - Web de Nithin Chalapathi: https://nithinvc.github.io/

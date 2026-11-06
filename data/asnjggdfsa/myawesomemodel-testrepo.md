@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ASNJGGDFSA/MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario ASNJGGDFSA bajo licencia MIT. Segun los metadatos de la plataforma, esta etiquetado con las librerias `transformers` y `pytorch`, la arquitectura `bert`, la tarea `feature-extraction` y el flag `endpoints_compatible`. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y fue creado y actualizado el 12 de septiembre de 2026 con apenas dos minutos de diferencia, lo que apunta a una prueba de publicacion mas que a un modelo distribuido.
+ASNJGGDFSA/MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario ASNJGGDFSA bajo licencia MIT. Segun los metadatos de la plataforma, esta etiquetado con las librerias `transformers` y `pytorch`, la arquitectura `bert`, la tarea `feature-extraction` y el flag `endpoints_compatible`. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y fue creado y actualizado el 12 de septiembre de 2026 con apenas dos minutos de diferencia, lo que apunta a una prueba de publicacion mas que a un modelo distribuido.
 
 El contenido de la model card no es coherente con esos metadatos: describe un modelo generativo de razonamiento con mejoras en matematicas y programacion, soporte de function calling, modo de pensamiento con un promedio de 23 000 tokens por pregunta y resultados comparados con modelos anonimizados (Model1, Model2, Model1-v2). No se indica arquitectura, numero de parametros, longitud de contexto, idioma de entrenamiento ni composicion del dataset en ningun punto del texto.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es por tanto metodologica: sirve como caso de evalua
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Etiquetada como `bert` en los metadatos de HuggingFace; la model card no la especifica |
+| Arquitectura | Etiquetada como `bert` en los metadatos de Hugging Face; la model card no la especifica |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia de esta ficha es por tanto metodologica: sirve como caso de evalua
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. La unica referencia es la etiqueta `bert` de los metadatos de HuggingFace, que sugiere una familia de codificadores transformer, y la tarea declarada `feature-extraction`, que implicaria un modelo de representaciones densas y no un modelo generativo autoregresivo. La model card, en cambio, describe un modelo de razonamiento con "mecanismos de optimizacion algoritmica durante el post-entrenamiento" y una profundidad de pensamiento ampliada (de 12 000 a 23 000 tokens por pregunta en el conjunto AIME), sin nombrar la arquitectura subyacente, el numero de tokens de entrenamiento ni la composicion del dataset.
+No hay informacion verificable sobre la arquitectura. La unica referencia es la etiqueta `bert` de los metadatos de Hugging Face, que sugiere una familia de codificadores transformer, y la tarea declarada `feature-extraction`, que implicaria un modelo de representaciones densas y no un modelo generativo autoregresivo. La model card, en cambio, describe un modelo de razonamiento con "mecanismos de optimizacion algoritmica durante el post-entrenamiento" y una profundidad de pensamiento ampliada (de 12 000 a 23 000 tokens por pregunta en el conjunto AIME), sin nombrar la arquitectura subyacente, el numero de tokens de entrenamiento ni la composicion del dataset.
 
 Tampoco se documenta si hubo RLHF, DPO u otra fase de alineamiento, ni innovaciones tecnicas concretas mas alla de la mencion generica a un mayor uso de recursos computacionales en post-entrenamiento. La model card recomienda una temperatura de 0.6, el uso de un system prompt con la fecha actual, y ofrece plantillas para subida de ficheros y generacion aumentada con busqueda web con formato de citas `[citation:X]`. Todos estos datos proceden del texto del autor y no pueden contrastarse con el contenido del repositorio, que no incluye pesos.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks verificables en la informacion disp
 - VRAM estimada para inferencia: no disponible. Sin numero de parametros ni ficheros de pesos en el repositorio, no es posible estimar requisitos.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. La etiqueta `bert` sugeriria un modelo de escala de centenas de millones de parametros, que cabria en GPU de consumo, pero se trata de una inferencia no confirmada por el autor.
-- Opciones de despliegue: los metadatos incluyen el flag `endpoints_compatible`, por lo que el repositorio estaria preparado para Inference Endpoints de HuggingFace. Tambien seria compatible con `transformers` para `feature-extraction`. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: los metadatos incluyen el flag `endpoints_compatible`, por lo que el repositorio estaria preparado para Inference Endpoints de Hugging Face. Tambien seria compatible con `transformers` para `feature-extraction`. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 - Tamano del repositorio: 0.0 GB, lo que indica que no hay pesos descargables en el momento de la consulta.
 
@@ -104,7 +104,7 @@ No disponible. La comparativa no puede establecerse porque se desconoce el numer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASNJGGDFSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASNJGGDFSA/MyAwesomeModel-TestRepo
 - Pagina de licencia MIT: no disponible como enlace directo (la model card referencia un fichero `LICENSE` interno del repositorio)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo para ejecucion local: la model card menciona "our code repository" sin proporcionar URL

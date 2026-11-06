@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Este modelo (squ0sh)** | 20B (MoE) | no disponible | Q4_2_H (GGUF) | MIT | Repo HuggingFace |
-| **DavidAU/OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4** | 20B (MoE) | no disponible | MXFP4 (formato original) | no especificada | HuggingFace |
-| **OpenAI gpt-oss-20b (original)** | 20B (MoE) | 128K (según documentación de OpenAI) | FP16/BF16 | Apache 2.0 | HuggingFace, GitHub |
-| **DavidAU/OpenAi-GPT-oss-20b-abliterated-uncensored-NEO-Imatrix-gguf** | 20B (MoE) | no disponible | GGUF (imatrix) | no especificada | HuggingFace |
+| **Este modelo (squ0sh)** | 20B (MoE) | no disponible | Q4_2_H (GGUF) | MIT | Repo Hugging Face |
+| **DavidAU/OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4** | 20B (MoE) | no disponible | MXFP4 (formato original) | no especificada | Hugging Face |
+| **OpenAI gpt-oss-20b (original)** | 20B (MoE) | 128K (según documentación de OpenAI) | FP16/BF16 | Apache 2.0 | Hugging Face, GitHub |
+| **DavidAU/OpenAi-GPT-oss-20b-abliterated-uncensored-NEO-Imatrix-gguf** | 20B (MoE) | no disponible | GGUF (imatrix) | no especificada | Hugging Face |
 
 La comparativa se basa en información pública de la familia gpt-oss. La ventaja de este modelo es su cuantización especializada y la licencia MIT, que permite uso comercial sin restricciones. Sin embargo, la falta de benchmarks y la dependencia de un fork de llama.cpp limitan su interoperabilidad.
 
@@ -79,7 +79,7 @@ La comparativa se basa en información pública de la familia gpt-oss. La ventaj
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo (squ0sh)](https://huggingface.co/squ0sh/OFFELLIA_OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4.gguf)
+- [Repositorio Hugging Face del modelo (squ0sh)](https://huggingface.co/squ0sh/OFFELLIA_OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4.gguf)
 - [Modelo base de DavidAU (versión MXFP4)](https://huggingface.co/DavidAU/OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4)
 - [Modelo similar de DavidAU con GGUF imatrix](https://huggingface.co/DavidAU/OpenAi-GPT-oss-20b-abliterated-uncensored-NEO-Imatrix-gguf)
 - [Repositorio oficial de OpenAI gpt-oss](https://github.com/openai/gpt-oss)

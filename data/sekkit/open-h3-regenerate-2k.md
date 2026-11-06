@@ -76,7 +76,7 @@ Datos adicionales publicados: el VAE rápido decodifica el clip 2K en 1,6 s fren
 |---|---|---|---|
 | Tipo | LoRA de refinamiento video-to-video (3 pasos) | Servicio propietario de regeneracion 2K | Modelo generativo de video base |
 | Resolucion de salida | 2560×1440 | no disponible (2K segun nombre) | 1344×768 (borradores 768P) |
-| Disponibilidad | Pesos abiertos en HuggingFace (164,9 GB) | API de pago, pesos no disponibles | Pesos abiertos con licencia comunitaria |
+| Disponibilidad | Pesos abiertos en Hugging Face (164,9 GB) | API de pago, pesos no disponibles | Pesos abiertos con licencia comunitaria |
 | Latencia por clip de 5 s | 22,45 s en B200 (config. optimizada) | no disponible | no disponible |
 | Licencia | MiniMax H3 Community License + licencias de terceros | Propietaria | MiniMax H3 Community License |
 
@@ -90,12 +90,12 @@ No hay disponibles alternativas abiertas directamente comparables publicadas en 
 - Sin métricas de calidad publicadas: no hay FVD, PSNR ni evaluaciones perceptuales en la model card, por lo que la fidelidad del refinamiento debe validarse empíricamente antes de producción.
 - Verificación de fusión: aunque el error relativo de la fusión es de 2,2e-8, cualquier desviación de la receta de muestreo (sigmas, CFG, estado inicial) puede degradar el resultado; la receta de tres pasos es estricta.
 - Riesgos generales de modelos de difusión de vídeo: posibles artefactos temporales o espaciales en el refinamiento, y herencia de sesgos del modelo base MiniMax-H3; no se documentan sesgos específicos.
-- Proyecto de adopción muy temprana: 0 descargas y 1 like en HuggingFace en el momento de la ficha; la madurez, el soporte comunitario y la estabilidad del repositorio están por demostrar.
+- Proyecto de adopción muy temprana: 0 descargas y 1 like en Hugging Face en el momento de la ficha; la madurez, el soporte comunitario y la estabilidad del repositorio están por demostrar.
 - Componentes excluidos: la copia del modelo base omite las carpetas nativas `FL2VA/`, `Ref2VA/` y `transformer_ref/` de MiniMax-H3, por lo que funcionalidades que dependan de ellas no están disponibles en este bundle.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/sekkit/Open-H3-Regenerate-2K
+- Ficha en Hugging Face: https://huggingface.co/sekkit/Open-H3-Regenerate-2K
 - Licencia MiniMax H3 Community: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/6818f6c32d12b210915e44ad56a4228c2608f160/LICENSE
 - Modelo base MiniMax-H3 (revisión 6818f6c): https://huggingface.co/MiniMaxAI/MiniMax-H3/tree/6818f6c32d12b210915e44ad56a4228c2608f160
 - Página del proyecto: https://nvlabs.github.io/Sana/Open-H3-Regenerate-2K/

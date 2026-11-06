@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JuneYao/medical-jev-4b-full",
+  "slug": "juneyao-medical-jev-4b-full",
+  "author": "JuneYao",
+  "url": "https://huggingface.co/JuneYao/medical-jev-4b-full",
+  "created_at": "2026-11-02T16:18:42.000Z",
+  "updated_at": "2026-11-03T07:50:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "medical",
+    "choice-scoring",
+    "full-finetuning",
+    "qwen3_5",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8411552440,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JuneYao/medical-jev-4b-full · Hugging Face",
+      "url": "https://huggingface.co/JuneYao/medical-jev-4b-full",
+      "snippet": "JuneYao / medical-jev-4b-full Like 0 PyTorch Safetensors Chinese English medical choice-scoring full-finetuning qwen3_5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket medical-jev-4b-full 效果与模型选择 快速开始 应用场景 输入与输出案例 训练与使用范围"
+    },
+    {
+      "title": "JuneYao/medical-jev-4b · Hugging Face",
+      "url": "https://huggingface.co/JuneYao/medical-jev-4b",
+      "snippet": "给定病例和候选选项，返回一个选择及各选项的概率。 medical-jev-4b 基于 Qwen3.5-4B，通过医疗选择题训练 LoRA 适配器。它用一次模型前向计算完成选项打分，输出短 JSON，不生成解释或思维链；推理时无需调用教师 API。 应用场景 ..."
+    }
+  ]
+}

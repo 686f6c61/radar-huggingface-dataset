@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen2.5-Omni-3B-bab-slurp-t2-e3-sft es un checkpoint publicado en HuggingFace por el usuario keylazy bajo el identificador `keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-e3-sft`. Por el nombre se deduce que se trata de un ajuste fino (SFT) del modelo Qwen2.5-Omni en su variante de 3B parametros, desarrollado originalmente por Alibaba Qwen. El sufijo "bab-slurp-t2-e3-sft" sugiere un fine-tuning de tipo SFT sobre una etapa previa (probablemente "t2", segunda etapa, y "e3", tercera epoca), aunque el autor no documenta esta nomenclatura.
+Qwen2.5-Omni-3B-bab-slurp-t2-e3-sft es un checkpoint publicado en Hugging Face por el usuario keylazy bajo el identificador `keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-e3-sft`. Por el nombre se deduce que se trata de un ajuste fino (SFT) del modelo Qwen2.5-Omni en su variante de 3B parametros, desarrollado originalmente por Alibaba Qwen. El sufijo "bab-slurp-t2-e3-sft" sugiere un fine-tuning de tipo SFT sobre una etapa previa (probablemente "t2", segunda etapa, y "e3", tercera epoca), aunque el autor no documenta esta nomenclatura.
 
-La relevancia de esta publicacion es limitada: la model card es la plantilla automatica de HuggingFace sin rellenar, no incluye informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia, y el repositorio acumula cero descargas y cero likes en el momento de la consulta. El unico dato tecnico objetivo es el tamano del repositorio (0,1 GB), compatible con pesos en safetensors de un modelo de aproximadamente 3B parametros cuantizado o en formato reducido.
+La relevancia de esta publicacion es limitada: la model card es la plantilla automatica de Hugging Face sin rellenar, no incluye informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia, y el repositorio acumula cero descargas y cero likes en el momento de la consulta. El unico dato tecnico objetivo es el tamano del repositorio (0,1 GB), compatible con pesos en safetensors de un modelo de aproximadamente 3B parametros cuantizado o en formato reducido.
 
 Se trata, por tanto, de un artefacto de investigacion o experimento personal sin documentacion publica suficiente para evaluar su calidad, seguridad o idoneidad en produccion. Cualquier uso deberia hacerse con cautela y validacion exhaustiva previa.
 
@@ -23,7 +23,7 @@ Se trata, por tanto, de un artefacto de investigacion o experimento personal sin
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada por el autor sobre la arquitectura, los datos de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni el procedimiento de ajuste (RLHF, DPO, SFT supervisado, etc.). La model card es una plantilla automatica de HuggingFace en la que todos los campos relevantes aparecen como "[More Information Needed]".
+No se dispone de informacion publicada por el autor sobre la arquitectura, los datos de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni el procedimiento de ajuste (RLHF, DPO, SFT supervisado, etc.). La model card es una plantilla automatica de Hugging Face en la que todos los campos relevantes aparecen como "[More Information Needed]".
 
 Por el identificador del modelo puede inferirse que se trata de un ajuste fino supervisado (SFT) sobre Qwen2.5-Omni-3B, un modelo de la familia Qwen2.5-Omni de Alibaba, que combina comprension de texto, imagen, audio y video. Sin embargo, esta inferencia no esta confirmada por el autor y no debe tomarse como especificacion tecnica verificada. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, mezcla de expertos, etc.).
 
@@ -74,7 +74,7 @@ No disponible. No se dispone de informacion sobre modelos comparables en la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-e3-sft
+- Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-e3-sft
 - Referencia del paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint concreto.

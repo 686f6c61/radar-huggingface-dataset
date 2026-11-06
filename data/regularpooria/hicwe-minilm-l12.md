@@ -101,7 +101,7 @@ La comparacion con la variante L6 se apoya en lo indicado en la model card: tras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/regularpooria/HiCWE-MiniLM-L12
+- Modelo en Hugging Face: https://huggingface.co/regularpooria/HiCWE-MiniLM-L12
 - Variante ligera L6: https://huggingface.co/regularpooria/HiCWE-MiniLM-L6-v2
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2
 - Clasificador SOTA de referencia: https://huggingface.co/mulliken/cwe-predictor

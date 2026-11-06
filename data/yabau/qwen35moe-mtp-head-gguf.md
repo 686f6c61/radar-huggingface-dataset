@@ -86,7 +86,7 @@ La ventaja frente a un draft model independiente es que reutiliza el vocabulario
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yabau/qwen35moe-mtp-head-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Yabau/qwen35moe-mtp-head-GGUF
 - Modelo donante: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - llama.cpp (soporte de `-md` y `--spec-type draft-mtp-adaptive`): https://github.com/ggml-org/llama.cpp

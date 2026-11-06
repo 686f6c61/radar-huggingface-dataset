@@ -21,7 +21,7 @@ Su relevancia es la de un artefacto reproducible y honesto: publica el *checkpoi
 | Licencia | MIT |
 | Formato de pesos | no disponible (la carga se realiza con `resolve_checkpoint` y `RetrievalEmbedding.load` del repositorio de codigo) |
 | Dimension del embedding | 256 |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Dataset de entrenamiento | Cloth-splatters/dexgarmentlab-lift-correspondence-20260822 |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-16 |
@@ -77,7 +77,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 ## Requisitos de hardware
 
 - Entrenamiento documentado: una única GPU GH200, 12 minutos para 6 épocas de 500 pasos más calentamiento.
-- El repositorio ocupa 0,0 GB según HuggingFace, lo que indica un *checkpoint* de menos de 100 MB y, por tanto, una inferencia viable en CPU y en cualquier GPU de consumo.
+- El repositorio ocupa 0,0 GB según Hugging Face, lo que indica un *checkpoint* de menos de 100 MB y, por tanto, una inferencia viable en CPU y en cualquier GPU de consumo.
 - VRAM exacta de inferencia: no disponible. Al tratarse de un tronco PointNet++ con salida de 256 dimensiones y lotes pequeños, la huella esperada es muy inferior a la de cualquier modelo de lenguaje, aunque el coste real depende del número de puntos de la nube y del tamaño de la biblioteca de candidatos (221 mallas).
 - GPU recomendadas: no disponible en la documentación; la GH200 se cita únicamente para el entrenamiento.
 - Despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no son aplicables a este tipo de modelo. La carga se realiza con `resolve_checkpoint` y `RetrievalEmbedding.load` del repositorio de código.
@@ -88,7 +88,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Dimension de embedding | Contexto | Licencia | Disponibilidad | Top-1 / Top-5 (nueve observaciones) |
 |---|---|---|---|---|---|---|
-| dexgarmentlab-lift-20260822-retrieval-embedding (LRE) | PointNet++ contrastivo | 256 | no aplica | MIT | HuggingFace | 1 / 5 |
+| dexgarmentlab-lift-20260822-retrieval-embedding (LRE) | PointNet++ contrastivo | 256 | no aplica | MIT | Hugging Face | 1 / 5 |
 | ClothAtlas | Metodo de referencia del articulo | no disponible | no aplica | no disponible | no disponible como modelo abierto | 18 / 22 |
 
 No se dispone de informacion en la busqueda realizada sobre otros modelos abiertos comparables de identificacion de prendas deformables, por lo que la comparativa se limita a los dos elementos anteriores. La unica comparacion cuantitativa disponible es la publicada en la propia model card frente a ClothAtlas, que supera ampliamente a este modelo en todos los escenarios reportados.
@@ -107,7 +107,7 @@ No se dispone de informacion en la busqueda realizada sobre otros modelos abiert
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-retrieval-embedding
+- Hugging Face: https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-retrieval-embedding
 - Dataset de entrenamiento: https://huggingface.co/datasets/Cloth-splatters/dexgarmentlab-lift-correspondence-20260822
 - Código fuente (rama icra): https://github.com/jsll/UniClothDiff/tree/icra
 - Articulo ClothAtlas: no disponible (la model card lo referencia por seccion, V-C, pero no incluye enlace)

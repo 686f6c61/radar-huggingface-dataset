@@ -4,7 +4,7 @@
 
 El modelo `whisper-small-ft-cy-2607` es un ajuste fino (fine-tuning) de `openai/whisper-small` realizado por DewiBrynJones sobre un dataset preprocesado de audio en galés (código `cy`), denominado `DewiBrynJones/preprocessed-whisper-btb-cv-cvad-wlga-ca-2607`. Se trata de un sistema de reconocimiento automático del habla (ASR) que adapta el modelo multilingüe de Whisper a la lengua galesa, una lengua minoritaria con recursos limitados, con el objetivo de mejorar la precisión de transcripción en este idioma.
 
-El modelo conserva la arquitectura original de Whisper-small, un transformer encoder-decoder con aproximadamente 241,7 millones de parámetros, entrenado originalmente por OpenAI sobre 680.000 horas de audio multilingüe. Este ajuste fino se ha realizado con la librería `transformers` de HuggingFace, utilizando entrenamiento distribuido con 2 GPUs, 15.000 pasos y una tasa de aprendizaje de 2,5e-05. La licencia es Apache 2.0, lo que permite uso comercial y modificación.
+El modelo conserva la arquitectura original de Whisper-small, un transformer encoder-decoder con aproximadamente 241,7 millones de parámetros, entrenado originalmente por OpenAI sobre 680.000 horas de audio multilingüe. Este ajuste fino se ha realizado con la librería `transformers` de Hugging Face, utilizando entrenamiento distribuido con 2 GPUs, 15.000 pasos y una tasa de aprendizaje de 2,5e-05. La licencia es Apache 2.0, lo que permite uso comercial y modificación.
 
 La relevancia de este modelo radica en su contribución a la preservación y accesibilidad de lenguas minoritarias mediante tecnología de voz, ofreciendo una alternativa de código abierto y ajustable para transcripción en galés. Sin embargo, la documentación publicada es muy escasa: no se han proporcionado resultados de evaluación, descripción detallada de los datos de entrenamiento ni métricas de rendimiento, lo que limita la validación independiente de su calidad.
 
@@ -81,8 +81,8 @@ La comparación directa con el modelo base `whisper-small` es la más relevante:
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DewiBrynJones/whisper-small-ft-cy-2607)
-- [Perfil del autor en HuggingFace](https://huggingface.co/DewiBrynJones)
+- [Modelo en Hugging Face](https://huggingface.co/DewiBrynJones/whisper-small-ft-cy-2607)
+- [Perfil del autor en Hugging Face](https://huggingface.co/DewiBrynJones)
 - [Perfil del autor en GitHub](https://github.com/DewiBrynJones)
 - [Modelo base openai/whisper-small](https://huggingface.co/openai/whisper-small)
 - [Repositorio oficial de Whisper en GitHub](https://github.com/openai/whisper)

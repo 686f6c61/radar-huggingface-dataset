@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hanweitsai/retrieval` es un repositorio de HuggingFace publicado por el usuario hanweitsai que contiene una implementación mínima de una arquitectura **Mixer** orientada a tareas de **retrieval** (recuperación de información). No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor lo describe como una variante **nano** reproducible, un punto de partida experimental, y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`hanweitsai/retrieval` es un repositorio de Hugging Face publicado por el usuario hanweitsai que contiene una implementación mínima de una arquitectura **Mixer** orientada a tareas de **retrieval** (recuperación de información). No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor lo describe como una variante **nano** reproducible, un punto de partida experimental, y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El modelo tiene **33.088 parámetros totales** según los metadatos de safetensors, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de retrieval moderno basado en transformers de visión-lenguaje (tipo CLIP o BLIP). La arquitectura declarada combina atención lineal, fusión tensorial (tensor fusion), activación GELU y normalización InstanceNorm, con receta de entrenamiento por defecto basada en SGD con warmup lineal.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada como modelo utilizable, pero sí resulta intere
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un **Mixer** de implementación propia (no un transformer estándar), con atención de tipo lineal y fusión tensorial como mecanismo de combinación de modalidades o flujos, activación GELU y normalización InstanceNorm. El autor indica que se trata de una implementación personalizada, por lo que las APIs genéricas de carga automática de HuggingFace (`AutoModel` y similares) requieren un adaptador explícito antes de poder usarla. La escala declarada es **nano**, coherente con los 33.088 parámetros del checkpoint.
+La arquitectura es un **Mixer** de implementación propia (no un transformer estándar), con atención de tipo lineal y fusión tensorial como mecanismo de combinación de modalidades o flujos, activación GELU y normalización InstanceNorm. El autor indica que se trata de una implementación personalizada, por lo que las APIs genéricas de carga automática de Hugging Face (`AutoModel` y similares) requieren un adaptador explícito antes de poder usarla. La escala declarada es **nano**, coherente con los 33.088 parámetros del checkpoint.
 
 En cuanto al entrenamiento, el repositorio incluye una receta por defecto que emplea **SGD con un schedule de warmup lineal**, pero el propio autor advierte que son valores de partida del script y **no evidencia de una ejecución completada**. No hay información disponible sobre número de tokens, composición del dataset, uso de RLHF/DPO ni innovaciones adicionales. El checkpoint `model.safetensors` es una **inicialización**, no un modelo entrenado, y no ha sido auditado en robustez, equidad ni transferencia de dominio. La guía de evaluación sugerida por el autor propone usar **Flickr30k**, reportar la métrica de la tarea en al menos tres semillas y comparar contra una línea base de capacidad equivalente, conservando los logs de entrenamiento y las versiones del entorno.
 
@@ -67,7 +67,7 @@ No hay datos verificables en la información proporcionada para establecer una c
 
 | Modelo | Parametros | Contexto | Benchmark (Flickr30k) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hanweitsai/retrieval (Mixer nano) | 33.088 | no disponible | no disponible (sin checkpoint entrenado) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| hanweitsai/retrieval (Mixer nano) | 33.088 | no disponible | no disponible (sin checkpoint entrenado) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativa contrastiva de vision-lenguaje tipo CLIP | no disponible | no disponible | no disponible | no disponible | requiere verificar en su repositorio |
 | Alternativa de retrieval multimodal tipo BLIP/ALIGN | no disponible | no disponible | no disponible | no disponible | requiere verificar en su repositorio |
 
@@ -87,7 +87,7 @@ No hay datos verificables en la información proporcionada para establecer una c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hanweitsai/retrieval
+- Modelo en Hugging Face: https://huggingface.co/hanweitsai/retrieval
 - Retrieval-augmented generation (Wikipedia): https://en.wikipedia.org/wiki/Retrieval-augmented_generation
 - Retrieval-Based Models Explained: How RAG & Vector Search Work (SiteSpeakAI): https://sitespeak.ai/ai-chatbot-terms/retrieval-based-models
 

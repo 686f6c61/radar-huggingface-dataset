@@ -6,7 +6,7 @@ ThoxClip-9M-role es un modelo de lenguaje de 8.917.248 parámetros desarrollado 
 
 Técnicamente es un modelo BitNet b1.58 de pesos ternarios, con el 76,4% de los pesos en el conjunto {-1, 0, +1}, lo que lo sitúa en la categoría de modelos de 1 bit entrenados nativamente para inferencia eficiente en el borde. Se distribuye exclusivamente en formato GGUF con cuantización TQ1_0 (5.933.152 bytes) y como artefacto de runtime de dispositivo TERN1 (4.420.028 bytes), bajo licencia Apache 2.0. Su relevancia actual radica en el interés creciente por modelos ternarios ejecutables en hardware de consumo y dispositivos empotrados, aunque su alcance funcional es deliberadamente muy estrecho.
 
-El modelo es de acceso público, con 113 descargas y 1 like en HuggingFace en el momento de la consulta, y está etiquetado para uso con llama.cpp, no siendo compatible con Ollama ni LM Studio por el formato ternario del GGUF.
+El modelo es de acceso público, con 113 descargas y 1 like en Hugging Face en el momento de la consulta, y está etiquetado para uso con llama.cpp, no siendo compatible con Ollama ni LM Studio por el formato ternario del GGUF.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxClip-9M-role | 8,9M | No disponible | TQ1_0, TERN1 | Apache 2.0 | HuggingFace, llama.cpp |
-| Thox-ai/ThoxMicro-1bit-9M (modelo base) | 9M | No disponible | Ternario | Apache 2.0 | HuggingFace |
+| ThoxClip-9M-role | 8,9M | No disponible | TQ1_0, TERN1 | Apache 2.0 | Hugging Face, llama.cpp |
+| Thox-ai/ThoxMicro-1bit-9M (modelo base) | 9M | No disponible | Ternario | Apache 2.0 | Hugging Face |
 | BitNet b1.58 (Microsoft Research) | 700M, 1.3B, 3B (variantes publicadas) | No disponible | Ternario | Licencia de investigación | Pesos y código en repositorios de investigación |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | FP16, GGUF | Apache 2.0 | HuggingFace, llama.cpp, Ollama |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | FP16, GGUF | Apache 2.0 | Hugging Face, llama.cpp, Ollama |
 
 La comparación con BitNet b1.58 y TinyLlama es orientativa: ambos son órdenes de magnitud mayores en parámetros y no cubren la misma tarea de rol de dispositivo. No se dispone de datos de rendimiento comparables para ThoxClip-9M-role.
 
@@ -84,7 +84,7 @@ La comparación con BitNet b1.58 y TinyLlama es orientativa: ambos son órdenes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxClip-9M-role
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxClip-9M-role
 - Modelo base: https://huggingface.co/Thox-ai/ThoxMicro-1bit-9M
 - Repositorio de llama.cpp (runtime recomendado): https://github.com/ggerganov/llama.cpp
 - Paper de BitNet b1.58: https://arxiv.org/abs/2402.17764

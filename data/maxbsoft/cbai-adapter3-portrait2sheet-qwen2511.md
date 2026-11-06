@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| maxbsoft/cbai-adapter3-portrait2sheet-qwen2511 | LoRA sobre Qwen-Image-Edit-2511 | Retrato cartoon a hoja de tres vistas | apache-2.0 | HuggingFace |
-| Qwen/Qwen-Image-Edit-2511 | Modelo base de edicion de imagen | Edicion de imagen generica | no disponible en la informacion proporcionada | HuggingFace |
+| maxbsoft/cbai-adapter3-portrait2sheet-qwen2511 | LoRA sobre Qwen-Image-Edit-2511 | Retrato cartoon a hoja de tres vistas | apache-2.0 | Hugging Face |
+| Qwen/Qwen-Image-Edit-2511 | Modelo base de edicion de imagen | Edicion de imagen generica | no disponible en la informacion proporcionada | Hugging Face |
 | Adaptadores equivalentes de portrait-to-sheet | — | — | — | no se han identificado alternativas comparables en la informacion disponible |
 
 No se dispone de datos de rendimiento del adaptador ni de adaptadores funcionalmente equivalentes, por lo que la comparacion cuantitativa con alternativas de la misma categoria no esta disponible.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento del adaptador ni de adaptadores funcionalm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxbsoft/cbai-adapter3-portrait2sheet-qwen2511
+- Modelo en Hugging Face: https://huggingface.co/maxbsoft/cbai-adapter3-portrait2sheet-qwen2511
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Dataset de entrenamiento: https://huggingface.co/datasets/maxbsoft/synth-v1-packed-a3
 - Fichero `RESULT.md` referenciado por el autor: no disponible como enlace directo en la informacion proporcionada

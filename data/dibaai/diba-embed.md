@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Diba-Embed es un modelo de embeddings de frases (sentence embeddings) publicado por DibaAi en HuggingFace bajo el identificador `DibaAi/Diba-Embed`. Su pipeline declarado es `sentence-similarity` y su libreria principal es `sentence-transformers`, lo que lo situa en la categoria de modelos de representacion densa de texto usados para recuperacion de informacion, busqueda semantica y generacion aumentada por recuperacion (RAG).
+Diba-Embed es un modelo de embeddings de frases (sentence embeddings) publicado por DibaAi en Hugging Face bajo el identificador `DibaAi/Diba-Embed`. Su pipeline declarado es `sentence-similarity` y su libreria principal es `sentence-transformers`, lo que lo situa en la categoria de modelos de representacion densa de texto usados para recuperacion de informacion, busqueda semantica y generacion aumentada por recuperacion (RAG).
 
 Por las etiquetas declaradas en la ficha del repositorio (`diba_embed`, `feature-extraction`, `text-embeddings`, `retrieval`, `rag`, `semantic-search`), el modelo esta disenado para producir representaciones vectoriales de texto que permitan medir similitud semantica entre fragmentos. La presencia de etiquetas como `persian`, `farsi`, `iran`, `fa`, `en` y `multilingual` sugiere un enfoque multilingue con orientacion prioritaria al persa (farsi) y al ingles, un nicho con relativamente pocos modelos de embeddings de alta calidad.
 
@@ -67,7 +67,7 @@ No se dispone del tamano de parametros ni de la dimension de embedding, por lo q
 - VRAM en FP16/BF16: aproximadamente la mitad del valor en FP32 para el mismo tamano; valor exacto no disponible.
 - GPU recomendadas: para inferencia por lotes en produccion, cualquier GPU con al menos 8 GB (RTX 3070/4060 Ti, RTX 4080, RTX 4090, L4, A10, A100, H100) es suficiente en la mayoria de encoders de esta categoria; la eleccion depende del throughput objetivo.
 - GPU de consumo: muy probablemente cabe en cualquier GPU de consumo moderna con 8 GB o mas, e incluso en CPU para cargas moderadas; no confirmado para este modelo concreto.
-- Despliegue: `sentence-transformers` en Python, HuggingFace `text-embeddings-inference`, HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` esta presente), `vLLM` no aplica a modelos de embeddings en la mayoria de configuraciones, `llama.cpp`/GGUF no confirmado por ausencia de pesos GGUF declarados, `Ollama` no confirmado.
+- Despliegue: `sentence-transformers` en Python, Hugging Face `text-embeddings-inference`, Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` esta presente), `vLLM` no aplica a modelos de embeddings en la mayoria de configuraciones, `llama.cpp`/GGUF no confirmado por ausencia de pesos GGUF declarados, `Ollama` no confirmado.
 - Nota de integracion: al existir la etiqueta `custom_code`, es probable que el cargador requiera `trust_remote_code=True`, lo que anade un requisito de revision del codigo remoto antes de usarlo en produccion.
 - Latencia y throughput: no disponibles.
 
@@ -77,10 +77,10 @@ La comparativa se limita a caracteristicas publicamente documentadas de alternat
 
 | Modelo | Parametros | Contexto max. | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DibaAi/Diba-Embed | no disponible | no disponible | fa, en, multilingual (segun etiquetas) | apache-2.0 (segun etiqueta) | HuggingFace, sentence-transformers |
-| BAAI/bge-m3 | ~568M | 8192 tokens | multilingue (mas de 100 idiomas) | MIT | HuggingFace, sentence-transformers, FlagEmbedding |
-| intfloat/multilingual-e5-large | ~560M | 512 tokens | multilingue | MIT | HuggingFace, sentence-transformers |
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | ~118M | 128 tokens | multilingue | Apache 2.0 | HuggingFace, sentence-transformers |
+| DibaAi/Diba-Embed | no disponible | no disponible | fa, en, multilingual (segun etiquetas) | apache-2.0 (segun etiqueta) | Hugging Face, sentence-transformers |
+| BAAI/bge-m3 | ~568M | 8192 tokens | multilingue (mas de 100 idiomas) | MIT | Hugging Face, sentence-transformers, FlagEmbedding |
+| intfloat/multilingual-e5-large | ~560M | 512 tokens | multilingue | MIT | Hugging Face, sentence-transformers |
+| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | ~118M | 128 tokens | multilingue | Apache 2.0 | Hugging Face, sentence-transformers |
 
 Consideraciones: bge-m3 y multilingual-e5-large son referencias consolidadas en recuperacion multilingue y cuentan con evaluaciones publicas en MTEB y MIRACL; Diba-Embed no tiene benchmarks publicados en la informacion disponible, por lo que no es posible afirmar superioridad ni equivalencia en persa. La ventaja potencial de Diba-Embed seria una especializacion en farsi, pero sin evaluacion reproducible no puede confirmarse.
 
@@ -99,8 +99,8 @@ Consideraciones: bge-m3 y multilingual-e5-large son referencias consolidadas en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DibaAi/Diba-Embed
+- Hugging Face: https://huggingface.co/DibaAi/Diba-Embed
 - Repositorio de sentence-transformers: https://github.com/UKPLab/sentence-transformers
 - Documentacion de sentence-transformers: https://www.sbert.net/
-- HuggingFace Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference
+- Hugging Face Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la busqueda web proporcionada.

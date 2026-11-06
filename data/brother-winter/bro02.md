@@ -2,7 +2,7 @@
 
 ## Resumen
 
-brother-winter/bro02 es un repositorio de modelo alojado en HuggingFace por el usuario brother-winter. La informacion publica disponible es extremadamente limitada: no existe model card, no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio acumula 0 descargas y 1 like desde su creacion el 13 de septiembre de 2026 (actualizado el mismo mes). Se trata, por tanto, de un artefacto practicamente sin documentar y sin adopcion verificable por parte de la comunidad.
+brother-winter/bro02 es un repositorio de modelo alojado en Hugging Face por el usuario brother-winter. La informacion publica disponible es extremadamente limitada: no existe model card, no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio acumula 0 descargas y 1 like desde su creacion el 13 de septiembre de 2026 (actualizado el mismo mes). Se trata, por tanto, de un artefacto practicamente sin documentar y sin adopcion verificable por parte de la comunidad.
 
 El unico dato tecnico objetivo es el tamano del repositorio, 16,2 GB, y la etiqueta region:us. Ese volumen es coherente con pesos en precision de 16 bits (fp16/bf16) de un modelo del orden de 8.000 millones de parametros, o con un modelo menor en fp32, o con un repositorio que incluye varias revisiones o cuantizaciones. Es una inferencia a partir del tamano en disco, no un dato confirmado por el autor.
 
@@ -91,5 +91,5 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brother-winter/bro02
+- Repositorio en Hugging Face: https://huggingface.co/brother-winter/bro02
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

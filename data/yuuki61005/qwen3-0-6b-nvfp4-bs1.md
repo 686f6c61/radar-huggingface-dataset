@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yuuki61005/Qwen3-0.6B-NVFP4-bs1 es una cuantizacion en formato NVFP4 del modelo Qwen3-0.6B, publicado por el usuario Yuuki61005 en HuggingFace. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: el autor parte de los pesos oficiales de Qwen3-0.6B (desarrollado por el equipo Qwen de Alibaba) y los convierte a FP4 con formato NVFP4, un esquema de cuantizacion de 4 bits desarrollado por NVIDIA para acelerar la inferencia en GPUs Blackwell (arquitectura B100/B200/RTX 50xx).
+Yuuki61005/Qwen3-0.6B-NVFP4-bs1 es una cuantizacion en formato NVFP4 del modelo Qwen3-0.6B, publicado por el usuario Yuuki61005 en Hugging Face. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: el autor parte de los pesos oficiales de Qwen3-0.6B (desarrollado por el equipo Qwen de Alibaba) y los convierte a FP4 con formato NVFP4, un esquema de cuantizacion de 4 bits desarrollado por NVIDIA para acelerar la inferencia en GPUs Blackwell (arquitectura B100/B200/RTX 50xx).
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia Apache 2.0, sin descripcion, sin instrucciones de uso y sin datos de entrenamiento o evaluacion. El sufijo "bs1" sugiere que la cuantizacion esta optimizada para batch size 1, es decir, para escenarios de inferencia de baja concurrencia y baja latencia. El modelo base Qwen3-0.6B es un transformer denso de 0,6 mil millones de parametros con ventana de contexto de 32.768 tokens y modo de razonamiento ("thinking") activable, pero esos datos corresponden al modelo original, no a esta cuantizacion, que no documenta ningun detalle adicional.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yuuki61005/Qwen3-0.6B-NVFP4-bs1 | 0,6B | 32k (base) | NVFP4 | Apache 2.0 | HuggingFace, sin descargas ni likes |
-| Qwen/Qwen3-0.6B | 0,6B | 32k | bf16 / FP8 | Apache 2.0 | HuggingFace, oficial |
-| Qwen3-0.6B en GGUF (varios autores) | 0,6B | 32k | Q4_K_M, Q8_0, etc. | Apache 2.0 | HuggingFace, amplia adopcion |
-| Llama 3.2 1B | 1,2B | 128k | bf16, GGUF | Llama 3.2 Community License | HuggingFace, oficial |
+| Yuuki61005/Qwen3-0.6B-NVFP4-bs1 | 0,6B | 32k (base) | NVFP4 | Apache 2.0 | Hugging Face, sin descargas ni likes |
+| Qwen/Qwen3-0.6B | 0,6B | 32k | bf16 / FP8 | Apache 2.0 | Hugging Face, oficial |
+| Qwen3-0.6B en GGUF (varios autores) | 0,6B | 32k | Q4_K_M, Q8_0, etc. | Apache 2.0 | Hugging Face, amplia adopcion |
+| Llama 3.2 1B | 1,2B | 128k | bf16, GGUF | Llama 3.2 Community License | Hugging Face, oficial |
 
 La ventaja de esta cuantizacion es el tamano minimo y el potencial de velocidad en Blackwell; su desventaja es la falta total de documentacion, evaluacion y adopcion (0 descargas, 0 likes), frente a las alternativas oficiales o comunitarias ampliamente validadas.
 
@@ -82,7 +82,7 @@ La ventaja de esta cuantizacion es el tamano minimo y el potencial de velocidad 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yuuki61005/Qwen3-0.6B-NVFP4-bs1
+- Hugging Face: https://huggingface.co/Yuuki61005/Qwen3-0.6B-NVFP4-bs1
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentacion de NVFP4 en NVIDIA TensorRT-LLM: https://github.com/NVIDIA/TensorRT-LLM

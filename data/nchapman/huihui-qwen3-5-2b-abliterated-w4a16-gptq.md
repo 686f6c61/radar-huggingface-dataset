@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3.5-2B-abliterated-W4A16-GPTQ | 2,21 B | no disponible | INT4 W4A16 GPTQ | Apache 2.0 | HuggingFace (33 descargas) |
-| huihui-ai/Huihui-Qwen3.5-2B-abliterated (base) | 2,21 B | no disponible | BF16 | Apache 2.0 | HuggingFace |
-| Qwen3.5-2B (original) | 2 B aprox. | no disponible | BF16 | Apache 2.0 | HuggingFace |
+| Huihui-Qwen3.5-2B-abliterated-W4A16-GPTQ | 2,21 B | no disponible | INT4 W4A16 GPTQ | Apache 2.0 | Hugging Face (33 descargas) |
+| huihui-ai/Huihui-Qwen3.5-2B-abliterated (base) | 2,21 B | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| Qwen3.5-2B (original) | 2 B aprox. | no disponible | BF16 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita al modelo base y al original de la familia, ya que no se dispone de datos de rendimiento ni de especificaciones de contexto para contrastar con alternativas de otros fabricantes.
 
@@ -82,7 +82,7 @@ La comparativa se limita al modelo base y al original de la familia, ya que no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nchapman/Huihui-Qwen3.5-2B-abliterated-W4A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/nchapman/Huihui-Qwen3.5-2B-abliterated-W4A16-GPTQ
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-2B-abliterated
 - Dataset de calibración: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data
 - Filas de calibración fijadas: https://huggingface.co/datasets/nchapman/warp-3090-quant-lab-frozen-data

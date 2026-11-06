@@ -25,7 +25,7 @@ Su relevancia es acotada y experimental: es un artefacto de reproducibilidad par
 | Semilla | 42 |
 | Librería | peft |
 | Pipeline | automatic-speech-recognition |
-| Tamaño del repositorio | 0,0 GB (según la ficha de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según la ficha de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-sinhala-r32-seed42 | Adaptador LoRA sobre 244 M | Ventanas de 30 s (heredado de Whisper) | `si`, `en` | No disponible | Repositorio HuggingFace, 0 descargas |
+| whisper-small-sinhala-r32-seed42 | Adaptador LoRA sobre 244 M | Ventanas de 30 s (heredado de Whisper) | `si`, `en` | No disponible | Repositorio Hugging Face, 0 descargas |
 | openai/whisper-small | ≈244 M | Ventanas de 30 s | ≈99 idiomas | Apache-2.0 según la ficha pública del modelo base | Ampliamente disponible |
 | openai/whisper-medium | ≈769 M | Ventanas de 30 s | ≈99 idiomas | Apache-2.0 según la ficha pública del modelo base | Ampliamente disponible |
 | openai/whisper-large-v3 | ≈1.550 M | Ventanas de 30 s | ≈99 idiomas | Apache-2.0 según la ficha pública del modelo base | Ampliamente disponible |
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado (WER en cingalés, habla con cam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-sinhala-r32-seed42
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-sinhala-r32-seed42
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Librería PEFT (repositorio oficial): https://github.com/huggingface/peft
 - Artículo de Whisper (Robust Speech Recognition via Large-Scale Weak Supervision): https://arxiv.org/abs/2212.04356

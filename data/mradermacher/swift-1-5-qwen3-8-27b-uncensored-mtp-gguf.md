@@ -18,7 +18,7 @@ Es relevante ahora para quienes necesitan un modelo sin filtros de contenido y d
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj-Q8_0 y mmproj-f16 (suplemento multimodal) |
 | Idiomas soportados | en (inglés) |
-| Licencia | swift-open-license-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | swift-open-license-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (quantize_version 2, output_tensor_quantised 1, convert_type hf) |
 | Modelo base | ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP |
 | Tamaño del repositorio | 175,4 GB (suma de todas las cuantizaciones) |
@@ -90,7 +90,7 @@ La información proporcionada no incluye datos de modelos alternativos (parámet
 - Eliminación de rechazos: la naturaleza uncensored/abliterated implica que el modelo puede generar contenido dañino, ilegal o sensible sin advertirlo. Es imprescindible añadir filtros externos si se expone a usuarios finales.
 - Limitación de idioma: solo se declara inglés (en); no hay evidencia de calidad en castellano ni en otros idiomas.
 - Longitud de contexto: no documentada. Se desconoce la ventana real soportada y cómo se degrada con la cuantización.
-- Restricciones de licencia: la licencia es swift-open-license-1.0, etiquetada como "other" en HuggingFace, con enlace al fichero LICENSE del repositorio ukisai/Swift-1.5-Qwen3.8-27b. Las condiciones exactas de uso comercial no están recogidas en la información disponible: hay que revisar el texto de la licencia antes de cualquier despliegue en producción.
+- Restricciones de licencia: la licencia es swift-open-license-1.0, etiquetada como "other" en Hugging Face, con enlace al fichero LICENSE del repositorio ukisai/Swift-1.5-Qwen3.8-27b. Las condiciones exactas de uso comercial no están recogidas en la información disponible: hay que revisar el texto de la licencia antes de cualquier despliegue en producción.
 - Cuantizaciones no ponderadas: el autor indica que no hay cuantizaciones ponderadas ni con imatrix y que probablemente no las publicará; las cuantizaciones de baja precisión (Q2_K, Q3_K) pueden degradar la calidad de forma notable.
 - Inconsistencia en el recuento de parámetros: el nombre indica 27B mientras que la metadata de safetensors del repositorio informa de 460.730.096 parámetros. Conviene verificar el tamaño real del modelo antes de dimensionar el hardware.
 - Adopción nula: 0 descargas y 0 "likes" en el momento de la consulta, sin discusiones ni validación comunitaria documentada.
@@ -98,7 +98,7 @@ La información proporcionada no incluye datos de modelos alternativos (parámet
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantización): https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-GGUF
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-GGUF
 - Modelo base: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP
 - Licencia swift-open-license-1.0: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#Swift-1.5-Qwen3.8-27B-Uncensored-MTP-GGUF

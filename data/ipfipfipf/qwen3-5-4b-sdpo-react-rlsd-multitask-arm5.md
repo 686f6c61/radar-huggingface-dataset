@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm5` es un modelo fine-tune del modelo base `Qwen/Qwen3.5-4B-Base`, publicado por el usuario `ipfipfipf` en HuggingFace. El nombre del repositorio sugiere una combinación de técnicas de entrenamiento —SDPO (probablemente *Stepwise Direct Preference Optimization*), ReAct (razonamiento y actuación para agentes), RLSD (posiblemente *Reinforcement Learning with Stepwise Decomposition*), entrenamiento multitarea y un componente denominado "arm5"—, aunque el autor no proporciona documentación adicional en la model card que explique estas siglas ni los detalles del fine-tune.
+`ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm5` es un modelo fine-tune del modelo base `Qwen/Qwen3.5-4B-Base`, publicado por el usuario `ipfipfipf` en Hugging Face. El nombre del repositorio sugiere una combinación de técnicas de entrenamiento —SDPO (probablemente *Stepwise Direct Preference Optimization*), ReAct (razonamiento y actuación para agentes), RLSD (posiblemente *Reinforcement Learning with Stepwise Decomposition*), entrenamiento multitarea y un componente denominado "arm5"—, aunque el autor no proporciona documentación adicional en la model card que explique estas siglas ni los detalles del fine-tune.
 
 El modelo base, Qwen3.5-4B, es un modelo de lenguaje causal con encoder de visión, desarrollado por Alibaba Qwen, que integra avances en aprendizaje multimodal, arquitectura híbrida eficiente (Gated Delta Networks combinadas con MoE disperso) y entrenamiento por refuerzo a gran escala. Tiene 4.205 millones de parámetros, una longitud de contexto nativa de 262.144 tokens ampliable hasta aproximadamente 1.010.000, y soporta 201 idiomas. Este fine-tune hereda la arquitectura y las capacidades del base, pero al no existir documentación específica, las capacidades concretas del ajuste no pueden verificarse.
 
@@ -69,10 +69,10 @@ Nota: estos resultados son del modelo base y no garantizan el rendimiento del fi
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm5 | 4.2B | 262K | Híbrida Gated DeltaNet + MoE + visión | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B-Base | 4.2B | 262K | Híbrida Gated DeltaNet + MoE + visión | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B (base) | 4B | 32K | Transformer denso | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.2-3B | 3.2B | 128K | Transformer denso | Llama 3.2 Community License | HuggingFace |
+| ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm5 | 4.2B | 262K | Híbrida Gated DeltaNet + MoE + visión | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B-Base | 4.2B | 262K | Híbrida Gated DeltaNet + MoE + visión | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B (base) | 4B | 32K | Transformer denso | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-3B | 3.2B | 128K | Transformer denso | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se centra en el modelo base y alternativas de tamaño similar. El fine-tune no tiene datos propios de rendimiento, por lo que no es posible compararlo directamente. Su principal diferencia frente a Qwen3.5-4B-Base es el ajuste con las técnicas indicadas en el nombre, cuyo impacto real es desconocido.
 

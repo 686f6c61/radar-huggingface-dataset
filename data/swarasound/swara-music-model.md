@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SwaraSound/swara-music-model
+- Modelo en Hugging Face: https://huggingface.co/SwaraSound/swara-music-model
 - Modelo base original: https://huggingface.co/stabilityai/stable-audio-3-small-music
 - Bundle ONNX de origen: https://huggingface.co/lsb/stable-audio-3-small-music-onnx
 - Repositorio de la demo: https://github.com/lsb/stable-audio-3-small-music-onnx

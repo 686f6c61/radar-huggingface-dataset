@@ -96,15 +96,15 @@ No se proporcionan datos comparativos con otros modelos en la informacion dispon
 - No es un bundle `AutoModel` de Transformers; requiere el codigo y los entornos concretos de `kaushikb258/pi0_fast`, con dependencia de rutas absolutas y hashes de origen que no deben modificarse manualmente.
 - Solo ingles en las instrucciones; sin capacidades conversacionales, de tool calling ni de agente.
 - Riesgo de fallo fuera de distribucion: al ser una politica de accion, los errores se manifiestan como fallos de manipulacion, no como texto incorrecto, y no hay estimacion publicada de robustez ante cambios de iluminacion, camara u objetos.
-- Cero descargas y cero interacciones en HuggingFace: no existe validacion independiente por parte de la comunidad.
+- Cero descargas y cero interacciones en Hugging Face: no existe validacion independiente por parte de la comunidad.
 - La instalacion completa en maquina limpia y la repeticion total del simulador a partir de los artefactos descargados no han sido verificadas por el autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaushikb258/pi0-fast-libero-mimicgen
+- Modelo en Hugging Face: https://huggingface.co/kaushikb258/pi0-fast-libero-mimicgen
 - Codigo asociado y README con entornos Conda y evaluacion: https://github.com/kaushikb258/pi0_fast
 - Checkpoint base citado como origen de los ajustes: `gs://openpi-assets/checkpoints/pi0_fast_base` (Physical Intelligence)
 - Dataset de LIBERO: https://huggingface.co/datasets/physical-intelligence/libero
 - Dataset de MimicGen: https://huggingface.co/datasets/amandlek/mimicgen_datasets
-- Manifiesto de release con checksums SHA-256: `release_manifest.json` dentro del repositorio de HuggingFace
+- Manifiesto de release con checksums SHA-256: `release_manifest.json` dentro del repositorio de Hugging Face
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada.

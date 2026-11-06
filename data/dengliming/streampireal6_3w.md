@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StreamPI Piper-X Real6 es un checkpoint de política vision-lenguaje-acción (VLA) publicado en HuggingFace por el usuario Dengliming bajo licencia Apache 2.0. Se trata de un ajuste fino de la política base π0.5 con la extensión temporal StreamPI, entrenado con JAX sobre seis tareas de manipulación bimanual real con la plataforma Piper-X de doble brazo. El paquete, de 12,9 GB, no contiene solo los pesos: incluye también el marco de trabajo StreamPI/OpenPI completo, las estadísticas de normalización `real_piper_x_6tasks`, un servidor de política por WebSocket con su cliente de robot, scripts de evaluación por replay offline y metadatos de procedencia.
+StreamPI Piper-X Real6 es un checkpoint de política vision-lenguaje-acción (VLA) publicado en Hugging Face por el usuario Dengliming bajo licencia Apache 2.0. Se trata de un ajuste fino de la política base π0.5 con la extensión temporal StreamPI, entrenado con JAX sobre seis tareas de manipulación bimanual real con la plataforma Piper-X de doble brazo. El paquete, de 12,9 GB, no contiene solo los pesos: incluye también el marco de trabajo StreamPI/OpenPI completo, las estadísticas de normalización `real_piper_x_6tasks`, un servidor de política por WebSocket con su cliente de robot, scripts de evaluación por replay offline y metadatos de procedencia.
 
 El interés de este checkpoint es doble. Por un lado, ejemplifica el patrón de publicación de políticas robóticas reales: en lugar de un modelo de lenguaje, se distribuye un artefacto de inferencia fuertemente acoplado a un esquema de observación y acción concreto (tres cámaras, estado y acción de 6 articulaciones por brazo más pinza). Por otro, documenta explícitamente el condicionamiento temporal como línea de investigación dentro de las políticas VLA, que es lo que aporta la extensión StreamPI sobre π0.5.
 
@@ -75,7 +75,7 @@ La model card menciona que el release incluye «offline replay-evaluation script
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StreamPI Piper-X Real6 (este) | VLA con extensión temporal, ajuste para Piper-X | no disponible | no disponible | apache-2.0 | HuggingFace, 12,9 GB, 0 descargas |
+| StreamPI Piper-X Real6 (este) | VLA con extensión temporal, ajuste para Piper-X | no disponible | no disponible | apache-2.0 | Hugging Face, 12,9 GB, 0 descargas |
 | π0.5 (physical-intelligence) | Política VLA base sobre la que se construye este checkpoint | no disponible en la informacion disponible | no disponible | no disponible en la informacion disponible | referenciada en la model card como política base |
 | StreamPI / OpenPI upstream | Marco de trabajo y extensión temporal | no disponible en la informacion disponible | no disponible | no disponible en la informacion disponible | documentado en `docs/UPSTREAM_STREAMPI_README.md` dentro del release |
 
@@ -98,7 +98,7 @@ No se dispone de datos verificables de otros modelos comparables de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dengliming/StreamPIReal6_3w
+- Modelo en Hugging Face: https://huggingface.co/Dengliming/StreamPIReal6_3w
 - Estadísticas de normalización Piper-X Real6: https://huggingface.co/Dengliming/StreamPIReal6_3w/blob/main/checkpoints/20000/assets/real_piper_x_6tasks/norm_stats.json
 - Estadísticas de normalización Calvin ABC: https://huggingface.co/Dengliming/StreamPIReal6_3w/blob/main/assets/pi05_calvin/InternRobotics/InternData-Calvin_ABC/norm_stats.json
 - Estadísticas de normalización LIBERO: https://huggingface.co/Dengliming/StreamPIReal6_3w/blob/main/assets/pi05_libero/physical-intelligence/libero/norm_stats.json

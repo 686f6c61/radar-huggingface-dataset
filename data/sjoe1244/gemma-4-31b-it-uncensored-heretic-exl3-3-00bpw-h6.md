@@ -109,7 +109,7 @@ El autor afirma explícitamente que, con VRAM suficiente, un export a 4,0 bpw o 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sjoe1244/gemma-4-31B-it-uncensored-heretic-exl3-3.00bpw-h6
+- Repositorio Hugging Face: https://huggingface.co/sjoe1244/gemma-4-31B-it-uncensored-heretic-exl3-3.00bpw-h6
 - Modelo fuente (versión decensurada): https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic
 - Modelo base original: `google/gemma-4-31B-it` (referenciado en la model card; no se incluye URL en la información proporcionada)
 - ExLlamaV3: https://github.com/turboderp-org/exllamav3

@@ -4,7 +4,7 @@
 
 ThoxMeshGroup-30B-A3B es un paquete de configuración publicado por Thox-ai sobre los pesos de Qwen3-30B-A3B, un modelo de mezcla de expertos (MoE) desarrollado por Alibaba Cloud con aproximadamente 30.000 millones de parámetros totales y unos 3.000 millones activos por token. El repositorio no contiene pesos entrenados ni ajustados: los pesos son byte-idénticos a la release upstream de Qwen, y el trabajo de THOX se limita al perfil de sistema, un paquete de prompts para grupos de trabajo, una base de conocimiento versionada (THOX Knowledge Pack v0.1, 8 entradas públicas verificadas) y el empaquetado para Ollama.
 
-El modelo resuelve un problema de producto más que de investigación: ofrece un asistente corporativo con un perfil de comportamiento predefinido (declive explícito de verificación de estado en vivo, respuestas ancladas a pasajes verificados, aislamiento por grupo como convención de prompting) sobre una base MoE eficiente en cómputo. Es relevante ahora porque ejemplifica una categoría creciente de artefactos en HuggingFace que no son modelos nuevos sino distribuciones configuradas de modelos abiertos, con licencia Apache-2.0 y despliegue directo vía Ollama.
+El modelo resuelve un problema de producto más que de investigación: ofrece un asistente corporativo con un perfil de comportamiento predefinido (declive explícito de verificación de estado en vivo, respuestas ancladas a pasajes verificados, aislamiento por grupo como convención de prompting) sobre una base MoE eficiente en cómputo. Es relevante ahora porque ejemplifica una categoría creciente de artefactos en Hugging Face que no son modelos nuevos sino distribuciones configuradas de modelos abiertos, con licencia Apache-2.0 y despliegue directo vía Ollama.
 
 La arquitectura subyacente es la de Qwen3-30B-A3B: transformer MoE con atención completa, ventana de contexto de 32.768 tokens en la release original y soporte de modo pensamiento. El paquete THOX se evaluó con contexto de 8.192 tokens y una huella de memoria de 14,99 GB en una estación x86_64 con GPU de clase 16 GB.
 
@@ -89,11 +89,11 @@ La comparación relevante es con el propio base: ThoxMeshGroup no modifica pesos
 - Contexto: la evaluación se hizo a 8.192 tokens; no hay verificación publicada del paquete a la ventana nativa de 32.768 tokens del base.
 - Sin cualificación de dispositivos: los dispositivos THOX usan builds más pequeños y nada de este paquete afirma rendimiento on-device.
 - Licencia Apache-2.0 permite uso comercial; el autor no impone restricciones adicionales, pero la responsabilidad sobre el cumplimiento del base recae en el desplegador.
-- Repositorio sin descargas ni likes en el momento de la consulta y con fecha de creación futura respecto a la información habitual de HuggingFace; verificar la integridad del paquete antes de usarlo en producción.
+- Repositorio sin descargas ni likes en el momento de la consulta y con fecha de creación futura respecto a la información habitual de Hugging Face; verificar la integridad del paquete antes de usarlo en producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thox-ai/ThoxMeshGroup-30B-A3B
+- Repositorio Hugging Face: https://huggingface.co/Thox-ai/ThoxMeshGroup-30B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Ejecución en Ollama: `ollama run Thox-ai/thoxmeshgroup-30b-a3b`
 - Descarga del paquete: `hf download Thox-ai/ThoxMeshGroup-30B-A3B --local-dir ./ThoxMeshGroup-30B-A3B`

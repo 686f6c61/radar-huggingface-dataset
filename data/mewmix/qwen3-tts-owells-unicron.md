@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Idiomas | Contexto / límites | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mewmix/qwen3-tts-owells-unicron` | 905.788.672 | inglés | 1.000 caracteres y 1.024 tokens de códec en la app | CC BY 4.0 (checkpoint) + Apache 2.0 (código y activos Qwen) | HuggingFace, 0 descargas, 1 like, publicado el 2026-10-17 |
-| `Qwen/Qwen3-TTS-12Hz-0.6B-Base` (base) | ~0,6 B nominales | no disponible en la información | no disponible | Apache 2.0 (según el aviso de licencias del autor) | HuggingFace |
+| `mewmix/qwen3-tts-owells-unicron` | 905.788.672 | inglés | 1.000 caracteres y 1.024 tokens de códec en la app | CC BY 4.0 (checkpoint) + Apache 2.0 (código y activos Qwen) | Hugging Face, 0 descargas, 1 like, publicado el 2026-10-17 |
+| `Qwen/Qwen3-TTS-12Hz-0.6B-Base` (base) | ~0,6 B nominales | no disponible en la información | no disponible | Apache 2.0 (según el aviso de licencias del autor) | Hugging Face |
 | Otras familias TTS open source (p. ej. Kokoro, XTTS-v2, Parler-TTS) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de especificaciones verificadas de alternativas comparables; la búsqueda web realizada no devolvió resultados relevantes (los resultados obtenidos trataban sobre MMA y no guardan relación con el modelo). Cualquier comparación numérica con otras familias TTS exigiría consultar sus model cards, que no forman parte de este conjunto de datos.
@@ -105,7 +105,7 @@ No se dispone en la información proporcionada de especificaciones verificadas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mewmix/qwen3-tts-owells-unicron
+- Modelo en Hugging Face: https://huggingface.co/mewmix/qwen3-tts-owells-unicron
 - Dataset de entrenamiento: https://huggingface.co/datasets/mewmix/qwen3-tts-owells-unicron-data
 - Procedencia de los datos: https://huggingface.co/datasets/mewmix/qwen3-tts-owells-unicron-data/blob/main/provenance.json
 - Metadatos de muestras y hashes: https://huggingface.co/mewmix/qwen3-tts-owells-unicron/blob/main/samples/metadata.json

@@ -81,7 +81,7 @@ No se dispone de una comparativa directa publicada con otros modelos de generaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Elinnos/mistral-7b-elip-bridge-final-v1
+- Hugging Face: https://huggingface.co/Elinnos/mistral-7b-elip-bridge-final-v1
 - Repositorio de archivos: https://huggingface.co/Elinnos/mistral-7b-elip-bridge-final-v1/tree/main
 - Dataset de entrenamiento: https://huggingface.co/datasets/Elinnos/ahb2apb-bridge-systemverilog
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.1

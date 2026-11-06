@@ -77,8 +77,8 @@ Se recomienda realizar pruebas propias para evaluar la idoneidad en cada caso de
 
 ## Enlaces
 
-- [HuggingFace - Bedhoy/Tinman-gemma4-companion-gguf](https://huggingface.co/Bedhoy/Tinman-gemma4-companion-gguf)
-- [HuggingFace - Modelo base TinmanLabSL/gemma4-companion-merged](https://huggingface.co/TinmanLabSL/gemma4-companion-merged)
-- [HuggingFace - Repo GGUF de TinmanLabSL (referencia)](https://huggingface.co/TinmanLabSL/gemma4-companion-gguf)
+- [Hugging Face - Bedhoy/Tinman-gemma4-companion-gguf](https://huggingface.co/Bedhoy/Tinman-gemma4-companion-gguf)
+- [Hugging Face - Modelo base TinmanLabSL/gemma4-companion-merged](https://huggingface.co/TinmanLabSL/gemma4-companion-merged)
+- [Hugging Face - Repo GGUF de TinmanLabSL (referencia)](https://huggingface.co/TinmanLabSL/gemma4-companion-gguf)
 - [Google DeepMind - Gemma 4](https://deepmind.google/models/gemma/gemma-4/)
 - [Google DeepMind - Gemma (página general)](https://deepmind.google/models/gemma/)

@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reaper698/Flux-NSFW-uncensored | LoRA sobre FLUX.1-dev | No disponible (0,7 GB) | No aplica | CreativeML OpenRAIL-M | HuggingFace |
-| shauray/flux.1-dev-uncensored-q4 | LoRA cuantizado sobre FLUX.1-dev | No disponible | No aplica | CreativeML OpenRAIL-M | HuggingFace |
-| FLUX.1-dev (base) | Modelo completo | 12 B | No aplica | FLUX.1-dev Non-Commercial License | HuggingFace |
+| Reaper698/Flux-NSFW-uncensored | LoRA sobre FLUX.1-dev | No disponible (0,7 GB) | No aplica | CreativeML OpenRAIL-M | Hugging Face |
+| shauray/flux.1-dev-uncensored-q4 | LoRA cuantizado sobre FLUX.1-dev | No disponible | No aplica | CreativeML OpenRAIL-M | Hugging Face |
+| FLUX.1-dev (base) | Modelo completo | 12 B | No aplica | FLUX.1-dev Non-Commercial License | Hugging Face |
 
 La principal diferencia con el modelo base es que este LoRA elimina los filtros de contenido. Frente a otros LoRA similares, como `shauray/flux.1-dev-uncensored-q4`, no hay datos comparativos de calidad o rendimiento. Ambos persiguen el mismo objetivo, pero la versión cuantizada de `shauray` puede tener menor tamaño o requerir menos VRAM, aunque no se ha verificado.
 
 ## Limitaciones y advertencias
 
-- **Contenido NSFW**: el modelo genera contenido explícito para adultos, lo que puede violar las políticas de uso de plataformas, leyes locales y términos de servicio de HuggingFace o de servicios de alojamiento.
+- **Contenido NSFW**: el modelo genera contenido explícito para adultos, lo que puede violar las políticas de uso de plataformas, leyes locales y términos de servicio de Hugging Face o de servicios de alojamiento.
 - **Sesgos y alucinaciones**: al ser un adaptador sobre FLUX.1-dev, hereda los sesgos del modelo base en cuanto a representación de personas, géneros y etnias. Además, puede generar imágenes con deformidades anatómicas o artefactos, especialmente en escenas complejas.
 - **Riesgo de uso indebido**: la eliminación de filtros puede facilitar la creación de contenido ilegal (pornografía infantil, violencia extrema, etc.). El autor declara que es un "playground" para explorar límites, pero no ofrece salvaguardas.
 - **Licencia**: la licencia CreativeML OpenRAIL-M permite uso comercial, pero impone restricciones de uso responsable (no generar contenido ilegal o dañino). El usuario es responsable del cumplimiento legal.
@@ -79,8 +79,8 @@ La principal diferencia con el modelo base es que este LoRA elimina los filtros 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Reaper698/Flux-NSFW-uncensored)
-- [Colección de modelos FLUX NSFW en HuggingFace](https://huggingface.co/collections/anonymous111110987654321/ai-flux-nsfw-and-uncensored)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Reaper698/Flux-NSFW-uncensored)
+- [Colección de modelos FLUX NSFW en Hugging Face](https://huggingface.co/collections/anonymous111110987654321/ai-flux-nsfw-and-uncensored)
 - [Guía de generación NSFW con Flux (2026)](https://ourdream.ai/comparison/flux-nsfw)
 - [Modelo similar: shauray/flux.1-dev-uncensored-q4](https://huggingface.co/shauray/flux.1-dev-uncensored-q4)
 - [Guía local de Flux Uncensored (2026)](https://aipornguide.com/blog/flux-uncensored-local-guide/)

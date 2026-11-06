@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/appworld-4b-includeact-300-27b-z-iter3-epoch2-agent-rl-epoch1 es un modelo de lenguaje de aproximadamente 4.540 millones de parámetros (4,54 B) publicado por el usuario u organización Stage-org en HuggingFace. El propio identificador del repositorio sugiere un checkpoint resultante de un pipeline de ajuste por refuerzo (RL) orientado a tareas de agente, con referencias a la iteración 3, época 2 y a una etapa inicial de "agent-rl" tras la época 1, además de una mención a un modelo de 27 B que probablemente actúa como profesor, juez o referencia en el proceso de entrenamiento. Se trata, por tanto, de un modelo pequeño con vocación de agente, más que de un modelo generalista de propósito amplio.
+Stage-org/appworld-4b-includeact-300-27b-z-iter3-epoch2-agent-rl-epoch1 es un modelo de lenguaje de aproximadamente 4.540 millones de parámetros (4,54 B) publicado por el usuario u organización Stage-org en Hugging Face. El propio identificador del repositorio sugiere un checkpoint resultante de un pipeline de ajuste por refuerzo (RL) orientado a tareas de agente, con referencias a la iteración 3, época 2 y a una etapa inicial de "agent-rl" tras la época 1, además de una mención a un modelo de 27 B que probablemente actúa como profesor, juez o referencia en el proceso de entrenamiento. Se trata, por tanto, de un modelo pequeño con vocación de agente, más que de un modelo generalista de propósito amplio.
 
 La etiqueta de arquitectura declarada en el repositorio es `qwen3_5`, lo que sitúa la base en la familia Qwen 3.5 de Alibaba, aunque la ficha no confirma explícitamente ni la longitud de contexto, ni los idiomas, ni la licencia, ni los datos de entrenamiento empleados. Los pesos se distribuyen en formato `safetensors`, con un tamaño de repositorio de 9,1 GB que es coherente con un checkpoint en precisión bf16/fp16 (4,54 B × 2 bytes ≈ 9,08 GB) y descarta la presencia de cuantizaciones GGUF o de pesos en 4 bits.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en cuantización de 4 bits: aproximadamente 2,5-3 GB de pesos; requeriría convertir los safetensors a un formato cuantizado, ya que el repositorio no incluye GGUF.
 - GPU de consumo: cabe holgadamente en una RTX 4090 (24 GB) o RTX 3090 (24 GB) en bf16. En una RTX 4070 Ti / 4080 (12-16 GB) es viable en bf16 con contexto reducido o en 8 bits con más margen. En tarjetas de 8 GB (RTX 3060 Ti, RTX 4060) sería necesario recurrir a 4 bits.
 - GPU de datacenter: A100 40/80 GB, H100 y L40S son suficientes por amplio margen, y permiten además ejecutar varias réplicas del modelo por GPU.
-- Opciones de despliegue: vLLM, SGLang, TGI y HuggingFace Transformers para los safetensors. Para llama.cpp u Ollama sería necesaria una conversión previa a GGUF, que no está publicada.
+- Opciones de despliegue: vLLM, SGLang, TGI y Hugging Face Transformers para los safetensors. Para llama.cpp u Ollama sería necesaria una conversión previa a GGUF, que no está publicada.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia de primer token.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de datos verificados de los modelos alternativos dentro de la info
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stage-org/appworld-4b-...-agent-rl-epoch1 | 4,54 B | No disponible | No disponible | HuggingFace, safetensors, 8 descargas |
+| Stage-org/appworld-4b-...-agent-rl-epoch1 | 4,54 B | No disponible | No disponible | Hugging Face, safetensors, 8 descargas |
 | Modelos Qwen de ~4 B de la misma familia | No verificado en esta búsqueda | No disponible | No disponible | Requiere consultar la ficha oficial de la familia Qwen 3.5 |
 | Otros modelos de agente de ~3-8 B | No disponible | No disponible | No disponible | No disponible |
 
@@ -89,7 +89,7 @@ El único eje de comparación fiable con los datos disponibles es el tamaño: 4,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/appworld-4b-includeact-300-27b-z-iter3-epoch2-agent-rl-epoch1
-- Perfil del autor en HuggingFace: https://huggingface.co/Stage-org
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/appworld-4b-includeact-300-27b-z-iter3-epoch2-agent-rl-epoch1
+- Perfil del autor en Hugging Face: https://huggingface.co/Stage-org
 - Paper, blog, repositorio o demo del modelo: no disponible
 - Resultados de la búsqueda web: los enlaces devueltos corresponden a portales de ofertas de prácticas (stage.fr, jobs-stages.letudiant.fr, 1jeune1solution.gouv.fr, welcometothejungle.com) y no guardan relación con el modelo; se descartan por no ser fuentes relevantes.

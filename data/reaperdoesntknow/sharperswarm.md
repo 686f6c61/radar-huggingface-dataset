@@ -85,7 +85,7 @@ SharperSwarm destaca por su arquitectura inusual, pero carece de benchmarks publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reaperdoesntknow/SharperSwarm
+- Hugging Face: https://huggingface.co/reaperdoesntknow/SharperSwarm
 - Perfil del autor: https://huggingface.co/reaperdoesntknow/reaperdoesntknow
 - Version mas reciente indicada por el autor: https://huggingface.co/reaperdoesntknow/CasualSwarms
 - No se encontraron papers, blogs o repositorios adicionales en la busqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZY-S1 Desktop no es un modelo de lenguaje, sino una aplicacion de escritorio nativa para Windows que actua como cliente del servicio ZYRChat / ZY-S1. El repositorio de HuggingFace `zyr-AGENT/ZY-S1-desktop` distribuye unicamente los binarios del instalador y de la version portable (v0.2.0), con un tamano total de repositorio de 0,2 GB. No contiene pesos de modelo, tokenizador, configuracion de arquitectura ni artefactos de inferencia.
+ZY-S1 Desktop no es un modelo de lenguaje, sino una aplicacion de escritorio nativa para Windows que actua como cliente del servicio ZYRChat / ZY-S1. El repositorio de Hugging Face `zyr-AGENT/ZY-S1-desktop` distribuye unicamente los binarios del instalador y de la version portable (v0.2.0), con un tamano total de repositorio de 0,2 GB. No contiene pesos de modelo, tokenizador, configuracion de arquitectura ni artefactos de inferencia.
 
 La aplicacion ofrece una interfaz de chat con gestion de conversaciones, atajos de teclado, bandeja del sistema y un sistema de creditos diarios (5 por defecto, con reinicio a medianoche), lo que sugiere que el modelo subyacente se ejecuta en servidores del proveedor y no en local. El autor publica bajo la etiqueta `zyr-AGENT` y con licencia `other`, sin especificar terminos concretos.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Producto | Tipo | Pesos abiertos | Contexto | Licencia | Distribucion |
 |---|---|---|---|---|---|
-| ZY-S1 Desktop | Cliente de escritorio Windows | No | no disponible | other | HuggingFace (binarios .exe) |
+| ZY-S1 Desktop | Cliente de escritorio Windows | No | no disponible | other | Hugging Face (binarios .exe) |
 | LM Studio | Cliente de escritorio multiplataforma | No (ejecuta modelos locales) | Depende del modelo | Propietaria | Web oficial |
 | Ollama | Runtime local + CLI/API | No (ejecuta modelos locales) | Depende del modelo | MIT | GitHub / web oficial |
 | Jan | Cliente de escritorio open source | No (ejecuta modelos locales) | Depende del modelo | AGPL-3.0 | GitHub |
@@ -86,6 +86,6 @@ La comparacion es estructural: ZY-S1 Desktop es un cliente cerrado que depende d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zyr-AGENT/ZY-S1-desktop
+- Repositorio Hugging Face: https://huggingface.co/zyr-AGENT/ZY-S1-desktop
 - Instalador v0.2.0: https://huggingface.co/zyr-AGENT/ZY-S1-desktop/resolve/main/ZYR-ZY-S1-Setup-0.2.0.exe
 - Version portable v0.2.0: https://huggingface.co/zyr-AGENT/ZY-S1-desktop/resolve/main/ZYR-ZY-S1-Portable-0.2.0.exe

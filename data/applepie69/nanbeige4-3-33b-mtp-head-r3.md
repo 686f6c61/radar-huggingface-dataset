@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 - VRAM del conjunto: no disponible para el modelo base; el requisito total depende de su tamaño (33B nominal) y de la cuantización empleada.
 - GPU recomendadas: no disponibles en la información proporcionada; para el base de 33B se necesitarán, en general, GPUs de centro de datos (A100, H100) o consumer de gama alta con cuantización.
 - Cabe en GPU consumer: la cabeza sí; el conjunto depende enteramente del modelo base.
-- Opciones de despliegue: transformers (librería declarada) con el cargador `mtp_head.py`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: transformers (librería declarada) con el cargador `mtp_head.py`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se documentan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles; la puerta de promoción exige una aceleración global de al menos 1,01x y de 1,02x en matemáticas frente al benchmark v7.
 
 ## Comparativa con modelos similares
@@ -91,6 +91,6 @@ No se dispone de datos de otros modelos comparables de la misma categoría en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/applepie69/Nanbeige4.3-33B-MTP-head-r3
+- Repositorio Hugging Face: https://huggingface.co/applepie69/Nanbeige4.3-33B-MTP-head-r3
 - Repositorio base (ronda previa): https://huggingface.co/applepie69/Nanbeige4.3-33B-MTP-1101
 - Kernel de benchmark citado: `nanbeige-mtp-speed-test` (v8) en Kaggle; no se proporciona URL directa.

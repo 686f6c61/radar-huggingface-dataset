@@ -65,8 +65,8 @@ No se dispone de información suficiente para una comparativa rigurosa. MoCoV3 e
 - **Dominio no especificado**: no se indica si el modelo está pensado para visión, audio u otro tipo de datos; esto limita su aplicabilidad directa.
 - **Código experimental**: al ser una implementación personalizada, puede contener errores no detectados; se recomienda auditar el código antes de usarlo en investigación.
 - **Licencia Apache 2.0**: permite uso comercial y modificación, pero el autor advierte que deben revisarse los términos de los datos externos si se usan con el repositorio.
-- **Sin soporte de carga automática**: las APIs genéricas de HuggingFace no pueden cargar este modelo sin un adaptador explícito, lo que dificulta su integración en pipelines estándar.
+- **Sin soporte de carga automática**: las APIs genéricas de Hugging Face no pueden cargar este modelo sin un adaptador explícito, lo que dificulta su integración en pipelines estándar.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/danielsanchez99/contrastive71)
+- [Repositorio en Hugging Face](https://huggingface.co/danielsanchez99/contrastive71)

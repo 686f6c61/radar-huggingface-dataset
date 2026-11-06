@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Matching es un prototipo de investigación publicado por el usuario garciaja2003 en HuggingFace. Se trata de un transformer de escala "nano" orientado a tareas de matching (emparejamiento, similitud o ranking entre pares de entradas), con una implementación propia y no basada en las clases estándar de las librerías de transformers habituales. El repositorio incluye el código del modelo (`pipeline.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
+Tiny Transformer for Matching es un prototipo de investigación publicado por el usuario garciaja2003 en Hugging Face. Se trata de un transformer de escala "nano" orientado a tareas de matching (emparejamiento, similitud o ranking entre pares de entradas), con una implementación propia y no basada en las clases estándar de las librerías de transformers habituales. El repositorio incluye el código del modelo (`pipeline.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
 
 El dato más relevante es su tamaño: 16.576 parámetros totales según el recuento real del fichero safetensors, lo que lo sitúa en el rango de los modelos de juguete o de validación. No se presenta como un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint es válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. Es, por tanto, un artefacto de investigación y andamiaje experimental más que un modelo listo para producción.
 
@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| garciaja2003/tiny-transformer-matching | 16.576 | no disponible | no disponible | MIT | HuggingFace |
+| garciaja2003/tiny-transformer-matching | 16.576 | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,5 +84,5 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/garciaja2003/tiny-transformer-matching
+- Hugging Face: https://huggingface.co/garciaja2003/tiny-transformer-matching
 - Papers, blogs, repositorios adicionales o demos: no disponibles. La búsqueda web no devolvió ningún enlace técnico relacionado con el modelo.

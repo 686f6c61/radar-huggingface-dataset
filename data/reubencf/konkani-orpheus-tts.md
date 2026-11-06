@@ -85,7 +85,7 @@ No se dispone de datos cuantitativos de rendimiento que permitan una comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Reubencf/konkani-orpheus-tts
+- Modelo en Hugging Face: https://huggingface.co/Reubencf/konkani-orpheus-tts
 - Modelo base: https://huggingface.co/unsloth/orpheus-3b-0.1-ft
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/Reubencf/goan-konkani-speech
 - No se han encontrado enlaces adicionales relevantes (papers, blogs o repositorios) en la busqueda web proporcionada; los resultados obtenidos no guardan relacion con el modelo.

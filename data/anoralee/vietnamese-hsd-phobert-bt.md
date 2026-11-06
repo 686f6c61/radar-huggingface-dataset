@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vietnamese-hsd-phobert-bt es un modelo de clasificación de texto en vietnamita publicado en HuggingFace por el usuario AnoraLee. Se trata de un fine-tuning de la familia PhoBERT, la variante de RoBERTa preentrenada específicamente para vietnamita, tal como indica el identificador del repositorio y la arquitectura `roberta` declarada en los metadatos. El modelo cuenta con 135.000.579 parámetros totales y se distribuye en formato safetensors, con un tamaño de repositorio de 2,2 GB.
+Vietnamese-hsd-phobert-bt es un modelo de clasificación de texto en vietnamita publicado en Hugging Face por el usuario AnoraLee. Se trata de un fine-tuning de la familia PhoBERT, la variante de RoBERTa preentrenada específicamente para vietnamita, tal como indica el identificador del repositorio y la arquitectura `roberta` declarada en los metadatos. El modelo cuenta con 135.000.579 parámetros totales y se distribuye en formato safetensors, con un tamaño de repositorio de 2,2 GB.
 
 El modelo está orientado a la pipeline `text-classification`, es decir, a tareas de clasificación de secuencias (asignación de una etiqueta a un texto completo o a cada token). El sufijo "hsd" del nombre sugiere un dominio o conjunto de etiquetas concreto, pero la model card no lo documenta: está generada automáticamente y no incluye información sobre el dataset de entrenamiento, las clases objetivo ni el procedimiento de fine-tuning.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnoraLee/vietnamese-hsd-phobert-bt | 135 M | no disponible | Clasificación de texto (vietnamita) | no disponible | HuggingFace, 28 descargas |
-| vinai/phobert-base | ~135 M | 256 tokens | Encoder base para vietnamita | MIT (según el repositorio original de PhoBERT) | HuggingFace, ampliamente usado |
-| FacebookAI/xlm-roberta-base | ~278 M | 512 tokens | Encoder multilingüe | MIT | HuggingFace, ampliamente usado |
-| Google/muril-base-cased | ~237 M | 512 tokens | Encoder multilingüe (incluye vietnamita) | Apache 2.0 | HuggingFace |
+| AnoraLee/vietnamese-hsd-phobert-bt | 135 M | no disponible | Clasificación de texto (vietnamita) | no disponible | Hugging Face, 28 descargas |
+| vinai/phobert-base | ~135 M | 256 tokens | Encoder base para vietnamita | MIT (según el repositorio original de PhoBERT) | Hugging Face, ampliamente usado |
+| FacebookAI/xlm-roberta-base | ~278 M | 512 tokens | Encoder multilingüe | MIT | Hugging Face, ampliamente usado |
+| Google/muril-base-cased | ~237 M | 512 tokens | Encoder multilingüe (incluye vietnamita) | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en características públicas de los modelos alternativos; no se dispone de datos de rendimiento comparativo para el modelo objeto de esta ficha. La ventaja principal de este modelo frente a PhoBERT base es que ya está ajustado para una tarea de clasificación concreta, aunque la falta de documentación impide verificar la calidad de ese ajuste.
 
@@ -83,7 +83,7 @@ La comparativa se basa en características públicas de los modelos alternativos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnoraLee/vietnamese-hsd-phobert-bt
+- Modelo en Hugging Face: https://huggingface.co/AnoraLee/vietnamese-hsd-phobert-bt
 - Artículo citado en los metadatos (Lacoste et al., 2019, sobre impacto ambiental, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact
 - Repositorio de referencia de PhoBERT (no enlazado por el autor, pero base arquitectónica del modelo): https://github.com/VinAIResearch/PhoBERT

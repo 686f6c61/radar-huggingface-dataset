@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DAN-L3-R1-8B es un ajuste fino (fine-tune) del modelo deepseek-ai/DeepSeek-R1-Distill-Llama-8B, publicado por el usuario MTH3000 en HuggingFace. Se presenta explicitamente como un modelo "sin filtros" (uncensored), orientado a eliminar las restricciones de seguridad y alineacion del modelo original, con capacidad declarada de generar contenido NSFW, toxico y agresivo. El repositorio tiene 8.030.261.248 parametros (unos 8B), un tamano de 32,1 GB y esta etiquetado con terminos como UnfilteredAI, DAN, NSFW, Toxic-AI y not-for-all-audiences.
+DAN-L3-R1-8B es un ajuste fino (fine-tune) del modelo deepseek-ai/DeepSeek-R1-Distill-Llama-8B, publicado por el usuario MTH3000 en Hugging Face. Se presenta explicitamente como un modelo "sin filtros" (uncensored), orientado a eliminar las restricciones de seguridad y alineacion del modelo original, con capacidad declarada de generar contenido NSFW, toxico y agresivo. El repositorio tiene 8.030.261.248 parametros (unos 8B), un tamano de 32,1 GB y esta etiquetado con terminos como UnfilteredAI, DAN, NSFW, Toxic-AI y not-for-all-audiences.
 
 Tecnicamente es un transformer decoder-only de la familia Llama 3, heredado de la destilacion de DeepSeek-R1 sobre Llama-3.1-8B. La model card declara una longitud de contexto de 128.000 tokens y soporte unicamente de ingles. El modelo esta pensado, segun su autor, para investigacion sobre alineacion, pruebas de contenido en entornos sin moderacion y prototipado experimental, y el propio autor advierte de que no es apto para uso generalista.
 
@@ -22,7 +22,7 @@ Su relevancia es doble: por un lado, ilustra el fenomeno de los fine-tunes "abli
 | Formato de pesos | Safetensors y GGUF (segun tags del repositorio); tamano total del repo 32,1 GB |
 | Libreria | transformers |
 | Pipeline | text-generation |
-| Fecha de publicacion | 11 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 11 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -84,10 +84,10 @@ Estimaciones orientativas de VRAM para inferencia (según el tamano de 8B, sin d
 
 | Modelo | Parametros | Contexto | Alineamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DAN-L3-R1-8B | 8,03B | 128k (segun model card) | Desalineado deliberadamente (DAN/NSFW) | Apache 2.0 declarada (verificar condiciones del base) | HuggingFace, safetensors + GGUF |
-| DeepSeek-R1-Distill-Llama-8B | 8B | 128k | Alineado, con modo de razonamiento | MIT declarada por DeepSeek (modelo derivado de Llama 3.1) | HuggingFace, safetensors |
-| Llama-3.1-8B-Instruct | 8,03B | 128k | Alineado para uso general | Llama 3.1 Community License | HuggingFace, safetensors |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Alineado para uso general | Apache 2.0 | HuggingFace, safetensors + GGUF |
+| DAN-L3-R1-8B | 8,03B | 128k (segun model card) | Desalineado deliberadamente (DAN/NSFW) | Apache 2.0 declarada (verificar condiciones del base) | Hugging Face, safetensors + GGUF |
+| DeepSeek-R1-Distill-Llama-8B | 8B | 128k | Alineado, con modo de razonamiento | MIT declarada por DeepSeek (modelo derivado de Llama 3.1) | Hugging Face, safetensors |
+| Llama-3.1-8B-Instruct | 8,03B | 128k | Alineado para uso general | Llama 3.1 Community License | Hugging Face, safetensors |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Alineado para uso general | Apache 2.0 | Hugging Face, safetensors + GGUF |
 
 Comparativa de rendimiento en benchmarks: no disponible para DAN-L3-R1-8B, al no existir resultados publicados por el autor. Las cifras de parametros, contexto y licencias de los modelos alternativos corresponden a sus fichas publicas, pero se recomienda verificarlas en la fuente antes de citarlas en produccion.
 
@@ -107,7 +107,7 @@ Comparativa de rendimiento en benchmarks: no disponible para DAN-L3-R1-8B, al no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MTH3000/DAN-L3-R1-8B
+- Modelo en Hugging Face: https://huggingface.co/MTH3000/DAN-L3-R1-8B
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Repositorio de DeepSeek-R1 (paper y pesos): https://github.com/deepseek-ai/DeepSeek-R1
 - Paper de DeepSeek-R1: https://arxiv.org/abs/2501.12948

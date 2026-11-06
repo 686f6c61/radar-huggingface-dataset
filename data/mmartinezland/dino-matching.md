@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dino for Matching es un repositorio experimental publicado por el usuario mmartinezland en HuggingFace cuyo objetivo declarado es servir como base de código Dino para tareas de matching (emparejamiento). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio contiene el código Python de entrenamiento/ejemplo (`finetune.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y los pesos iniciales.
+Dino for Matching es un repositorio experimental publicado por el usuario mmartinezland en Hugging Face cuyo objetivo declarado es servir como base de código Dino para tareas de matching (emparejamiento). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio contiene el código Python de entrenamiento/ejemplo (`finetune.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y los pesos iniciales.
 
-La arquitectura declarada es "Dino" a escala "xlarge", con atención dispersa (sparse), fusión de bajo rango (low rank), activación gelu tanh y normalización batchnorm. La receta por defecto usa el optimizador adafactor con un schedule de warmup constante. No se declara ninguna puntuación de benchmark, ningún idioma soportado y no hay pipeline asignado en HuggingFace.
+La arquitectura declarada es "Dino" a escala "xlarge", con atención dispersa (sparse), fusión de bajo rango (low rank), activación gelu tanh y normalización batchnorm. La receta por defecto usa el optimizador adafactor con un schedule de warmup constante. No se declara ninguna puntuación de benchmark, ningún idioma soportado y no hay pipeline asignado en Hugging Face.
 
 El interés de este repositorio es, por tanto, puramente metodológico: sirve como esqueleto reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo y como punto de partida para experimentos de fine-tuning con datos propios. El recuento de parámetros registrado en safetensors (24.832) es inconsistente con la escala "xlarge" declarada, lo que refuerza su carácter de inicialización mínima y no de modelo funcional.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mmartinezland/dino-matching | 24.832 (según safetensors) | no disponible | matching (declarada, no evaluada) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| mmartinezland/dino-matching | 24.832 (según safetensors) | no disponible | matching (declarada, no evaluada) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de la familia DINO | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otras líneas base de matching | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,12 +84,12 @@ Cualquier comparación numérica con modelos de la familia DINO o con modelos de
 - Riesgo de alucinación: no evaluado; no puede caracterizarse sin un entrenamiento y una evaluación específicos.
 - Limitaciones de contexto e idioma: no disponible; no se declara ventana de contexto ni idiomas soportados.
 - Discrepancia de escala: la etiqueta "xlarge" no se corresponde con el recuento de parámetros registrado (24.832), por lo que la escala real del modelo publicado es mínima.
-- Integración: al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito. No hay `pipeline` declarado.
+- Integración: al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito. No hay `pipeline` declarado.
 - Licencia: apache-2.0 permite uso comercial del código y los pesos, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con datasets externos.
 - Resultados futuros: cualquier métrica obtenida con un checkpoint entrenado posterior debe documentarse de forma separada a los valores por defecto publicados aquí, para no atribuir al repositorio un rendimiento que no le corresponde.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmartinezland/dino-matching
-- Perfil del autor en HuggingFace: https://huggingface.co/mmartinezland
+- Modelo en Hugging Face: https://huggingface.co/mmartinezland/dino-matching
+- Perfil del autor en Hugging Face: https://huggingface.co/mmartinezland
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a dominios de contenido para adultos sin relación alguna con el repositorio. No hay paper, blog, repositorio de código alternativo ni demo verificables en la información disponible.

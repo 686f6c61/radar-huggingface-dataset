@@ -2,7 +2,7 @@
 
 ## Resumen
 
-so101_vial_rack_58ep_groot17 es un *policy* de robótica (no un modelo de lenguaje) publicado en HuggingFace por el usuario yudai0209. Se trata de un ajuste fino del modelo fundacional GR00T N1.7 de NVIDIA, un modelo abierto y *cross-embodiment* para razonamiento y habilidades de robots humanoides, entrenado y empaquetado con la librería LeRobot de HuggingFace. El resultado es una política de imitación especializada en una única tarea de manipulación: coger un vial y colocarlo en una gradilla ("Pick up the vial and place it in the rack").
+so101_vial_rack_58ep_groot17 es un *policy* de robótica (no un modelo de lenguaje) publicado en Hugging Face por el usuario yudai0209. Se trata de un ajuste fino del modelo fundacional GR00T N1.7 de NVIDIA, un modelo abierto y *cross-embodiment* para razonamiento y habilidades de robots humanoides, entrenado y empaquetado con la librería LeRobot de Hugging Face. El resultado es una política de imitación especializada en una única tarea de manipulación: coger un vial y colocarlo en una gradilla ("Pick up the vial and place it in the rack").
 
 El modelo sigue la arquitectura de GR00T N1.7: un *backbone* de visión-lenguaje Cosmos-Reason2/Qwen3-VL combinado con un transformer de acciones con *flow matching*, que predice acciones a partir de visión, lenguaje y propiocepción. El repositorio ocupa 12,6 GB y sus pesos en safetensors suman 3.144.016.000 parámetros (aproximadamente 3,14 mil millones), lo que lo sitúa en la gama media para políticas robóticas con *backbone* VLM.
 
@@ -77,9 +77,9 @@ La informacion disponible solo describe este *policy* y su modelo base, sin cifr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_vial_rack_58ep_groot17 | 3.144.016.000 | No disponible | Pick and place de vial en gradilla (SO-101) | apache-2.0 | HuggingFace, libreria lerobot |
+| so101_vial_rack_58ep_groot17 | 3.144.016.000 | No disponible | Pick and place de vial en gradilla (SO-101) | apache-2.0 | Hugging Face, libreria lerobot |
 | GR00T N1.7 (modelo base) | No disponible | No disponible | Modelo fundacional cross-embodiment para humanoides | No disponible | GitHub de NVIDIA Isaac-GR00T |
-| Otras politicas de LeRobot (ACT, SmolVLA, pi0) | No disponible | No disponible | Manipulacion por imitacion | No disponible | HuggingFace, libreria lerobot |
+| Otras politicas de LeRobot (ACT, SmolVLA, pi0) | No disponible | No disponible | Manipulacion por imitacion | No disponible | Hugging Face, libreria lerobot |
 
 No se dispone de datos comparativos de rendimiento entre estas opciones en la tarea del vial, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -98,7 +98,7 @@ No se dispone de datos comparativos de rendimiento entre estas opciones en la ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yudai0209/so101_vial_rack_58ep_groot17
+- Modelo en Hugging Face: https://huggingface.co/yudai0209/so101_vial_rack_58ep_groot17
 - Dataset de entrenamiento: https://huggingface.co/datasets/yudai0209/so101_vial_rack_58ep
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=yudai0209/so101_vial_rack_58ep
 - Repositorio de NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T

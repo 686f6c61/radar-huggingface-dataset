@@ -6,7 +6,7 @@ ThinkingCap-Qwen3.8-27B-AutoRound-W4A16 es una cuantización de 4 bits del model
 
 Los metadatos describen un modelo multimodal de tipo image-text-to-text, etiquetado con qwen3_5, thinkingcap y mtp, lo que apunta a una arquitectura de la familia Qwen3 con torre de visión, modo de razonamiento y cabezales de predicción multi-token. Existe una discrepancia relevante: el nombre declara 27B parámetros, pero el recuento real de safetensors del repositorio indica 3.029.765.360 parámetros (~3,03B). El repositorio ocupa 19,0 GB, cifra más coherente con un modelo de 27B cuantizado a 4 bits que con uno de 3B. Conviene verificar este punto antes de dimensionar el despliegue.
 
-Su interés es práctico: permite servir un modelo multimodal grande en una sola GPU de gama alta de consumo o en un nodo con un único acelerador, con el ahorro de memoria del 4-bit. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. En el momento de redactar esta ficha acumula 0 descargas y 0 likes.
+Su interés es práctico: permite servir un modelo multimodal grande en una sola GPU de gama alta de consumo o en un nodo con un único acelerador, con el ahorro de memoria del 4-bit. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. En el momento de redactar esta ficha acumula 0 descargas y 0 likes.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Su interés es práctico: permite servir un modelo multimodal grande en una sola
 | Modelo base | bottlecapai/ThinkingCap-Qwen3.8-27B |
 | Tamano del repositorio | 19,0 GB |
 | Libreria de inferencia | transformers (etiqueta adicional: vllm) |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 23 de septiembre de 2026 (creacion), 24 de septiembre de 2026 (ultima actualizacion) |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se dispone de información sobre otras cuantizaciones del mismo modelo base (
 ## Limitaciones y advertencias
 
 - Discrepancia de parámetros sin resolver: el nombre declara 27B y safetensors indica ~3,03B. Verificar con `model.safetensors.index.json` y la configuración antes de dimensionar hardware.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que complica la automatización de descargas y la reproducibilidad.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que complica la automatización de descargas y la reproducibilidad.
 - Licencia restrictiva: PolyForm Small Business 1.0.0 permite el uso no comercial y el uso comercial por empresas con menos de 100 empleados y contratistas y con ingresos brutos inferiores a 1 millón de USD en el ejercicio fiscal anterior; por encima de esos umbrales se requiere una licencia comercial del licenciante. Conviene revisar el texto completo de la licencia antes de cualquier uso en producción.
 - Cuantización agresiva: el formato int4 W4A16 puede degradar el razonamiento matemático, la precisión en código y el seguimiento de instrucciones largas respecto al modelo en precisión completa. No hay datos publicados de esta degradación.
 - Modelo sin validación comunitaria: 0 descargas y 0 likes en el momento de redactar la ficha, y ninguna evaluación publicada por terceros.
@@ -92,7 +92,7 @@ No se dispone de información sobre otras cuantizaciones del mismo modelo base (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wasifb/ThinkingCap-Qwen3.8-27B-AutoRound-W4A16
+- Modelo en Hugging Face: https://huggingface.co/wasifb/ThinkingCap-Qwen3.8-27B-AutoRound-W4A16
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 
 No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios de código ni demos asociados a esta publicación.

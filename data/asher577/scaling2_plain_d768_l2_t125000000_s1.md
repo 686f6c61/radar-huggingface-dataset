@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d768_L2_t125000000_s1` es un transformer de 2 capas y dimension de modelo 768, publicado por el usuario asher577 en HuggingFace. No es un modelo de lenguaje de proposito general, sino un artefacto de investigacion: una ejecucion concreta dentro de un barrido de escalado sobre transformers con dispersion de pesos (*weight-sparse*), entrenado segun el procedimiento descrito por Gao et al. (2025). Su interes es experimental, no aplicado.
+`scaling2_plain_d768_L2_t125000000_s1` es un transformer de 2 capas y dimension de modelo 768, publicado por el usuario asher577 en Hugging Face. No es un modelo de lenguaje de proposito general, sino un artefacto de investigacion: una ejecucion concreta dentro de un barrido de escalado sobre transformers con dispersion de pesos (*weight-sparse*), entrenado segun el procedimiento descrito por Gao et al. (2025). Su interes es experimental, no aplicado.
 
 El modelo se entrena sobre `jacobcd52/simplestories-tokenized`, un corpus sintetico de historias simples, con el tokenizador `SimpleStories/SimpleStories-1.25M` y un vocabulario de solo 4096 tokens. La ventana de contexto es de 512 tokens y el entrenamiento consume 125 millones de tokens. Combina dispersion en los pesos (fraccion L0 objetivo de 0,01, es decir, una esparsidad muy alta) con dispersion en las activaciones.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Vocabulario | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `scaling2_plain_d768_L2_t125000000_s1` | no disponible (2 capas, d=768) | 512 | 4096 | no disponible | HuggingFace, pesos PyTorch |
-| Otros modelos del barrido `scaling2` de asher577 | variables | no disponible | 4096 (previsible) | no disponible | HuggingFace |
-| Modelos de SimpleStories de referencia | no disponible | no disponible | 4096 | no disponible | HuggingFace |
+| `scaling2_plain_d768_L2_t125000000_s1` | no disponible (2 capas, d=768) | 512 | 4096 | no disponible | Hugging Face, pesos PyTorch |
+| Otros modelos del barrido `scaling2` de asher577 | variables | no disponible | 4096 (previsible) | no disponible | Hugging Face |
+| Modelos de SimpleStories de referencia | no disponible | no disponible | 4096 | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de este modelo ni de sus alternativas directas en la informacion proporcionada, por lo que la comparativa se limita a la configuracion estructural. No se han identificado modelos comparables con benchmarks publicados en la informacion disponible.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento de este modelo ni de sus alternativas dire
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asher577/scaling2_plain_d768_L2_t125000000_s1
+- Modelo en Hugging Face: https://huggingface.co/asher577/scaling2_plain_d768_L2_t125000000_s1
 - Run de Weights & Biases: https://wandb.ai/asher577/scd_scaling/runs/gkry7xs5
 - Dataset de entrenamiento: https://huggingface.co/datasets/jacobcd52/simplestories-tokenized
 - Tokenizador: https://huggingface.co/SimpleStories/SimpleStories-1.25M

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyPath es un modelo de visión por computador publicado en HuggingFace por el autor `originbio`, especializado en extracción de características de imágenes de histopatología. Se distribuye como un Vision Transformer (ViT) empaquetado mediante `timm_wrapper` para `transformers`, con 103.630.848 parámetros reales (≈103,6 M) y un repositorio de 0,4 GB en formato `safetensors`. Su pipeline declarado es `image-feature-extraction`, es decir, no genera texto ni predicciones finales: devuelve embeddings de imagen que deben alimentar una cabeza de clasificación, un pipeline de recuperación o un modelo mayor.
+TinyPath es un modelo de visión por computador publicado en Hugging Face por el autor `originbio`, especializado en extracción de características de imágenes de histopatología. Se distribuye como un Vision Transformer (ViT) empaquetado mediante `timm_wrapper` para `transformers`, con 103.630.848 parámetros reales (≈103,6 M) y un repositorio de 0,4 GB en formato `safetensors`. Su pipeline declarado es `image-feature-extraction`, es decir, no genera texto ni predicciones finales: devuelve embeddings de imagen que deben alimentar una cabeza de clasificación, un pipeline de recuperación o un modelo mayor.
 
 El interés del modelo radica en su propuesta de compresión: las etiquetas de la model card incluyen `pruning` (poda) y `knowledge-distillation` (destilación de conocimiento), lo que sugiere que TinyPath busca reproducir el comportamiento de un ViT de patología de mayor tamaño con una fracción de los parámetros, manteniendo un coste de inferencia bajo. Eso lo hace candidato para despliegues en laboratorios con GPUs de gama media o incluso consumer, y para procesar grandes volúmenes de tiles de imágenes de portaobjetos completos (WSI) sin un clúster dedicado.
 
@@ -18,7 +18,7 @@ Ahora bien, la información disponible es muy limitada: no se han proporcionado 
 | Longitud de contexto | No aplica / no disponible (modelo de vision; no se especifica resolución de entrada ni número de parches) |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada; el repositorio solo publica pesos `safetensors` |
 | Idiomas soportados | No aplica (modelo de vision, sin procesamiento de lenguaje natural) |
-| Licencia | Apache 2.0, con acceso restringido (gated: requiere aceptar condiciones en HuggingFace) |
+| Licencia | Apache 2.0, con acceso restringido (gated: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | `safetensors` (repo de 0,4 GB), cargable con `transformers` |
 
 Otros datos: pipeline `image-feature-extraction`; etiquetas `vision`, `image-feature-extraction`, `histopathology`, `pathology`, `vit`, `timm`, `pruning`, `knowledge-distillation`; creado el 2026-10-20 y actualizado el 2026-10-22.
@@ -70,7 +70,7 @@ No constan métricas de validación externa (AUC en Camelyon16/17, TCGA, PatchCa
 
 | Modelo | Parametros | Dominio | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyPath | ≈103,6 M | Histopatología (declarado) | No disponible | Apache 2.0, acceso gated | HuggingFace, requiere aceptar condiciones |
+| TinyPath | ≈103,6 M | Histopatología (declarado) | No disponible | Apache 2.0, acceso gated | Hugging Face, requiere aceptar condiciones |
 | ViT-B/16 (referencia generalista) | ≈86 M (dato de literatura pública, no verificado en esta busqueda) | Imágenes naturales (ImageNet) | Resolución de imagen, no aplica contexto textual | Apache 2.0 en la version original de Google | Publico |
 | ViT-S/16 (referencia generalista) | ≈22 M (dato de literatura pública, no verificado en esta busqueda) | Imágenes naturales | Igual que el anterior | Apache 2.0 en la version original | Publico |
 | Encoders de patología de mayor tamano (familia tipo CTransPath / ViT-B histologico) | No disponible | Histopatología | No disponible | No disponible / verificar por modelo | Variable, varios con acceso restringido |
@@ -82,7 +82,7 @@ La comparación cuantitativa de rendimiento no es posible: no hay benchmarks pub
 - Ausencia total de evaluación publicada: no hay métricas en ningún conjunto de patología, ni comparación con el profesor de destilación. El rendimiento real es desconocido.
 - Sesgos probables por dominio: al no documentarse el dataset de entrenamiento, se desconoce la cobertura de tinciones (H&E frente a IHC), órganos, escáneres, magnificaciones y poblaciones de pacientes. Es esperable un deterioro ante cambios de tinción o de escáner (domain shift) si el entrenamiento fue estrecho.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de embeddings aparentemente plausibles para imágenes fuera de distribución (tejido no histológico, imágenes naturales); conviene validar con detección de OOD antes de usar las representaciones en un pipeline clínico.
-- Acceso restringido: el modelo es `gated`, por lo que la descarga y el uso requieren aceptar condiciones en HuggingFace. Es necesario revisar si esas condiciones añaden restricciones adicionales más allá de Apache 2.0 (por ejemplo, sobre uso clínico o redistribución).
+- Acceso restringido: el modelo es `gated`, por lo que la descarga y el uso requieren aceptar condiciones en Hugging Face. Es necesario revisar si esas condiciones añaden restricciones adicionales más allá de Apache 2.0 (por ejemplo, sobre uso clínico o redistribución).
 - Código personalizado: la etiqueta `custom_code` implica ejecutar código del autor al cargar el modelo (`trust_remote_code=True`). Hay que auditar ese código antes de desplegarlo en entornos de producción.
 - Sin capacidades de texto: no puede usarse para clasificación zero-shot mediante prompts, ni para generar informes. Requiere una cabeza supervisada o un modelo multimodal adicional.
 - No es un producto sanitario: no consta validación regulatoria (CE, FDA) ni uso clínico previsto. No debe emplearse para decisión diagnóstica sin validación local, supervisión facultativa y evaluación de impacto regulatorio.
@@ -92,7 +92,7 @@ La comparación cuantitativa de rendimiento no es posible: no hay benchmarks pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/originbio/TinyPath
+- Modelo en Hugging Face: https://huggingface.co/originbio/TinyPath
 - Referencia arXiv declarada en las etiquetas: https://arxiv.org/abs/2501.16239 (contenido no verificado)
 - Referencia arXiv declarada en las etiquetas: https://arxiv.org/abs/2608.17872 (contenido no verificado)
 - Perfil del autor: https://huggingface.co/originbio

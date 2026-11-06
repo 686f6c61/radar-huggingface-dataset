@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B (base) | 8B | 32K (40K con extensión) | Apache-2.0 | Generalista | HuggingFace |
-| maheshrawat18/Qwen3-8B-grpo-emotion-v7 | 8B | 40K | Apache-2.0 | Emociones (GRPO) | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | Generalista | HuggingFace |
-| Mistral-7B-Instruct | 7B | 32K | Apache-2.0 | Generalista | HuggingFace |
+| Qwen3-8B (base) | 8B | 32K (40K con extensión) | Apache-2.0 | Generalista | Hugging Face |
+| maheshrawat18/Qwen3-8B-grpo-emotion-v7 | 8B | 40K | Apache-2.0 | Emociones (GRPO) | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | Generalista | Hugging Face |
+| Mistral-7B-Instruct | 7B | 32K | Apache-2.0 | Generalista | Hugging Face |
 
 La comparativa directa con Llama-3.1-8B o Mistral-7B es limitada, ya que este modelo está especializado en emociones y no en tareas generales. Para tareas de análisis de sentimiento, podría competir con modelos como `cardiffnlp/twitter-roberta-base-sentiment` (que es mucho más pequeño) o con fine-tunings de Qwen2.5-7B, pero no hay benchmarks disponibles para establecer una comparación cuantitativa.
 
@@ -80,7 +80,7 @@ La comparativa directa con Llama-3.1-8B o Mistral-7B es limitada, ya que este mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v7
+- Repositorio Hugging Face: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v7
 - Versión anterior (v5): https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v5
 - Versión v3 (friendli.ai): https://friendli.ai/models/maheshrawat18/Qwen3-8B-grpo-emotion-v3-merged
 - Página de llm-explorer para v2: https://llm-explorer.com/model/maheshrawat18%2FQwen3-8B-grpo-emotion-v2-merged,3KD9VhmSGA7y0xdtcNdVGp

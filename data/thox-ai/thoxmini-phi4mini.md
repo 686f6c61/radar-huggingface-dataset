@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThoxMini-Phi4Mini | 3,84B | no disponible | MIT | HuggingFace, GGUF, Ollama | Ajuste de dominio THOX con rechazo entrenado |
-| microsoft/Phi-4-mini-instruct | ~3,8B | no disponible en esta ficha | MIT | HuggingFace | Modelo base, propósito general, sin ajuste de dominio |
+| ThoxMini-Phi4Mini | 3,84B | no disponible | MIT | Hugging Face, GGUF, Ollama | Ajuste de dominio THOX con rechazo entrenado |
+| microsoft/Phi-4-mini-instruct | ~3,8B | no disponible en esta ficha | MIT | Hugging Face | Modelo base, propósito general, sin ajuste de dominio |
 | ThoxNano-135M (tier) | ~135M | no disponible | no disponible | no disponible | Modelo en el dispositivo ThoxKey, no reemplazado por este build |
 
 No se dispone de datos de benchmarks comparativos en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxMini-Phi4Mini
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxMini-Phi4Mini
 - Repo de pesos fusionados (registro de build): https://huggingface.co/Thox-ai/ThoxMini-Phi4Mini-Merged
 - Dataset de entrenamiento: https://huggingface.co/datasets/Thox-ai/thox-factory-sft-v5
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| zils-lite-v1 | 853M | no disponible | Apache 2.0 | Decisión supervisada (fine-tune de Qwen3.5-0.8B) | HuggingFace, 0 descargas |
-| Qwen3.5-0.8B (padre) | ~800M | no disponible | Apache 2.0 | Modelo base generalista y multimodal | HuggingFace, ampliamente disponible |
-| Qwen2.5-0.5B | ~500M | 32K (según versión) | Apache 2.0 | Modelo base generalista | HuggingFace, muy extendido |
-| SmolLM2-360M | ~360M | 8K | Apache 2.0 | Modelo base generalista | HuggingFace, muy extendido |
+| zils-lite-v1 | 853M | no disponible | Apache 2.0 | Decisión supervisada (fine-tune de Qwen3.5-0.8B) | Hugging Face, 0 descargas |
+| Qwen3.5-0.8B (padre) | ~800M | no disponible | Apache 2.0 | Modelo base generalista y multimodal | Hugging Face, ampliamente disponible |
+| Qwen2.5-0.5B | ~500M | 32K (según versión) | Apache 2.0 | Modelo base generalista | Hugging Face, muy extendido |
+| SmolLM2-360M | ~360M | 8K | Apache 2.0 | Modelo base generalista | Hugging Face, muy extendido |
 
 La comparación directa es limitada: zils-lite-v1 es un fine-tune de nicho con cero descargas y sin benchmarks, mientras que los alternativas son modelos base generalistas con documentación y evaluaciones públicas. La ventaja de zils-lite-v1 es su especialización en decisiones con resultado verificable; su desventaja es la falta de evidencia empírica de rendimiento y de soporte comunitario.
 
@@ -84,7 +84,7 @@ La comparación directa es limitada: zils-lite-v1 es un fine-tune de nicho con c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Samonte/zils-lite-v1
+- Hugging Face: https://huggingface.co/Samonte/zils-lite-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Revisión del padre: `2fc06364715b967f1860aea9cf38778875588b17`
 - Bittensor subred 127: no disponible enlace directo en la información proporcionada

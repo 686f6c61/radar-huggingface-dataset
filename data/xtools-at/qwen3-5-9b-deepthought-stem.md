@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Deep Thought 9B (este) | 9,41B | no disponible | STEM, matematicas, farmaceutica, sin censura | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B (base) | 9B | no disponible | Fundacional multimodal | no disponible en la informacion | HuggingFace (Qwen) |
-| Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B | 9B | no disponible | Razonamiento matematico/STEM destilado | no disponible en la informacion | HuggingFace |
-| xtools-at/Qwen3.5-4B-DeepThought-STEM | 4B aprox. | no disponible | Version reducida del mismo fine-tune | Apache 2.0 | HuggingFace |
+| Deep Thought 9B (este) | 9,41B | no disponible | STEM, matematicas, farmaceutica, sin censura | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B (base) | 9B | no disponible | Fundacional multimodal | no disponible en la informacion | Hugging Face (Qwen) |
+| Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B | 9B | no disponible | Razonamiento matematico/STEM destilado | no disponible en la informacion | Hugging Face |
+| xtools-at/Qwen3.5-4B-DeepThought-STEM | 4B aprox. | no disponible | Version reducida del mismo fine-tune | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.5-9B-DeepThought-STEM
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-9B-DeepThought-STEM
 - Modelo base (no censurado): https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
 - Modelo upstream de Jackrong: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
 - Modelo fundacional Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

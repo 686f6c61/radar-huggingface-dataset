@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos comparables de otros autores en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/marwanelamami/nabra-82m-int8-onnx
+- Repositorio Hugging Face del modelo: https://huggingface.co/marwanelamami/nabra-82m-int8-onnx
 - Variante FP32/FP16: https://huggingface.co/marwanelamami/Nabra-82M-v0.1-ONNX
 - Variante INT4-QAT: https://huggingface.co/marwanelamami/nabra-82m-int4qat-onnx
 - Modelo base: https://huggingface.co/oddadmix/Nabra-82M-v0.1

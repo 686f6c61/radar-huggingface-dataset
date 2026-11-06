@@ -72,8 +72,8 @@ El autor no incluye tabla comparativa deliberadamente. La cifra de CER 6,2 que c
 
 | Modelo | Parametros | Contexto/ventana | CER cabilio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fadhma-300M | 315M | ventana fija 30 s | 8,01 (beam + 5-gramas) | Apache-2.0 | HuggingFace |
-| facebook/omniASR-CTC-300M | ~300M | ventana fija 30 s | no evaluado en cabilio | Apache-2.0 | HuggingFace |
+| Fadhma-300M | 315M | ventana fija 30 s | 8,01 (beam + 5-gramas) | Apache-2.0 | Hugging Face |
+| facebook/omniASR-CTC-300M | ~300M | ventana fija 30 s | no evaluado en cabilio | Apache-2.0 | Hugging Face |
 | Omnilingual ASR 7B (LLM decoder) | ~7B | no disponible | 6,2 (reportado en tabla per-language) | no disponible | no disponible |
 | Whisper (referencia del autor) | no disponible | ventana fija 30 s | refutado por medición: 6 de 10 letras cabilias sin token, fertilidad 3,3600 tokens/palabra | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ La comparación directa más justa es con `facebook/omniASR-CTC-300M`: mismo tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agbalu/Fadhma-300M
+- Modelo en Hugging Face: https://huggingface.co/agbalu/Fadhma-300M
 - Modelo base (codificador SSL de Meta): https://huggingface.co/ylacombe/omniASR_W2V_300M_SSL
 - Modelo de texto del mismo autor (Amrouche-1.3B): https://huggingface.co/agbalu/Amrouche-1.3B
 - Modelo de texto del mismo autor (Masinissa-31M): https://huggingface.co/agbalu/Masinissa-31M

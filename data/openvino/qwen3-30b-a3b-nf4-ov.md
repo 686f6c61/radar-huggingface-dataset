@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de modelos comparables de otros autores 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenVINO/Qwen3-30B-A3B-nf4-ov
+- Repositorio Hugging Face: https://huggingface.co/OpenVINO/Qwen3-30B-A3B-nf4-ov
 - Modelo base Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B/blob/main/LICENSE
 - Formato OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

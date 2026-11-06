@@ -62,7 +62,7 @@ La información disponible no incluye datos suficientes para una comparación cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Systran/faster-whisper-large-v3
+- Modelo en Hugging Face: https://huggingface.co/Systran/faster-whisper-large-v3
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2
 - Repositorio de faster-whisper: https://github.com/systran/faster-whisper
 - Modelo original: https://huggingface.co/openai/whisper-large-v3

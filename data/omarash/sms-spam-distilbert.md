@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`omarash/sms-spam-distilbert` es un clasificador binario de mensajes SMS en ingles desarrollado por el usuario omarash y publicado en HuggingFace. Es un fine-tuning de `distilbert/distilbert-base-uncased` al que se ha anadido una cabeza de clasificacion de secuencia binaria: cada mensaje recibe la etiqueta `ham` (0, mensaje legitimo) o `spam` (1). El modelo tiene 66.955.010 parametros, ocupa 0,3 GB en el repositorio y se distribuye bajo licencia Apache 2.0.
+`omarash/sms-spam-distilbert` es un clasificador binario de mensajes SMS en ingles desarrollado por el usuario omarash y publicado en Hugging Face. Es un fine-tuning de `distilbert/distilbert-base-uncased` al que se ha anadido una cabeza de clasificacion de secuencia binaria: cada mensaje recibe la etiqueta `ham` (0, mensaje legitimo) o `spam` (1). El modelo tiene 66.955.010 parametros, ocupa 0,3 GB en el repositorio y se distribuye bajo licencia Apache 2.0.
 
 Su interes es metodologico mas que operativo. El propio autor plantea una pregunta de investigacion explicita: si el fine-tuning de un transformer preentrenado mejora de forma material el rendimiento en la clase spam frente a una linea base fuerte de regresion logistica sobre TF-IDF, evaluada sobre exactamente los mismos ejemplos. La respuesta publicada es un incremento absoluto de 0,0167 en F1 de spam (0,9655 frente a 0,9488), con mejora tambien en precision, recall, F1 macro, exactitud, ROC AUC y PR AUC.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 - Cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, GTX 1650, e incluso en GPU integradas con asignacion de memoria compartida.
 - Ejecutable en CPU para inferencia por lotes de mensajes de hasta 192 tokens, con latencias por mensaje del orden de milisegundos, aunque el autor no publica mediciones.
 - GPU de datacenter (A100, H100) no aportan ventaja practica para este tamano de modelo; el cuello de botella seria la latencia de red, no el computo.
-- Opciones de despliegue: pipeline de `transformers` (via principal), Text Embeddings Inference (el repositorio esta etiquetado como `text-embeddings-inference` y `endpoints_compatible`), HuggingFace Inference Endpoints, y conversion manual a ONNX o a formatos de llama.cpp/Ollama, para los que no se publican artefactos preconvertidos.
+- Opciones de despliegue: pipeline de `transformers` (via principal), Text Embeddings Inference (el repositorio esta etiquetado como `text-embeddings-inference` y `endpoints_compatible`), Hugging Face Inference Endpoints, y conversion manual a ONNX o a formatos de llama.cpp/Ollama, para los que no se publican artefactos preconvertidos.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo de respuesta por peticion.
 - Almacenamiento: 0,3 GB de repositorio, trivial para cualquier entorno.
 
@@ -87,9 +87,9 @@ La busqueda web realizada no devolvio modelos comparables de clasificacion de sp
 
 | Modelo | Parametros | Contexto / entrada | F1 de spam | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| `omarash/sms-spam-distilbert` | 66.955.010 | 192 tokens usados en entrenamiento | 0,9655 | Apache 2.0 | HuggingFace, 0 descargas |
+| `omarash/sms-spam-distilbert` | 66.955.010 | 192 tokens usados en entrenamiento | 0,9655 | Apache 2.0 | Hugging Face, 0 descargas |
 | TF-IDF + regresion logistica (baseline del autor) | No aplica (modelo lineal disperso) | No aplica | 0,9488 | No especificada en la model card | Solo descrito en la model card, sin pesos publicados |
-| `distilbert/distilbert-base-uncased` (modelo base) | 66.955.010 | No disponible en la informacion proporcionada | No disponible: no esta ajustado para esta tarea | Apache 2.0 | HuggingFace |
+| `distilbert/distilbert-base-uncased` (modelo base) | 66.955.010 | No disponible en la informacion proporcionada | No disponible: no esta ajustado para esta tarea | Apache 2.0 | Hugging Face |
 
 No se dispone de datos sobre otros clasificadores de spam comparables (por ejemplo variantes basadas en BERT, RoBERTa o modelos lineales de produccion) en la informacion proporcionada.
 
@@ -110,9 +110,9 @@ No se dispone de datos sobre otros clasificadores de spam comparables (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omarash/sms-spam-distilbert
+- Modelo en Hugging Face: https://huggingface.co/omarash/sms-spam-distilbert
 - Modelo base `distilbert/distilbert-base-uncased`: https://huggingface.co/distilbert/distilbert-base-uncased
-- Dataset `ucirvine/sms_spam` en HuggingFace: https://huggingface.co/datasets/ucirvine/sms_spam
+- Dataset `ucirvine/sms_spam` en Hugging Face: https://huggingface.co/datasets/ucirvine/sms_spam
 - Referencia original del dataset, UCI Machine Learning Repository: https://doi.org/10.24432/C5CC84
 - Licencia CC BY 4.0 del dataset: https://creativecommons.org/licenses/by/4.0/
 - Nota sobre la busqueda web: los resultados devueltos no guardaban relacion con el modelo ni con clasificacion de spam (contenido sobre estadisticas de beisbol de los Boston Red Sox), por lo que no se incluye ningun enlace adicional procedente de esa busqueda.

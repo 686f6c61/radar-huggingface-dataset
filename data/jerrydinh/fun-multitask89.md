@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jerrydinh/fun-multitask89` es un repositorio de HuggingFace publicado por el usuario jerrydinh que contiene una implementacion de un Vision Transformer (ViT) orientada a tareas multiples (multitask). Se trata de un artefacto experimental: la propia model card indica de forma explicita que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint entrenado ni evaluado sobre ningun benchmark. El repositorio se presenta como codigo transparente con un ejemplo ejecutable y una receta de experimento por defecto, sin ninguna afirmacion de rendimiento.
+`jerrydinh/fun-multitask89` es un repositorio de Hugging Face publicado por el usuario jerrydinh que contiene una implementacion de un Vision Transformer (ViT) orientada a tareas multiples (multitask). Se trata de un artefacto experimental: la propia model card indica de forma explicita que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint entrenado ni evaluado sobre ningun benchmark. El repositorio se presenta como codigo transparente con un ejemplo ejecutable y una receta de experimento por defecto, sin ninguna afirmacion de rendimiento.
 
 El dato mas relevante es su tamano: el recuento real de parametros en safetensors es de 49.600 (aproximadamente 0,05 millones), lo que contrasta con la etiqueta "large" que aparece en la configuracion. Esto confirma que no se trata de un modelo con capacidad funcional real, sino de una plantilla arquitectonica minima para validar flujos de trabajo de entrenamiento, carga de pesos e integracion en pipelines.
 
@@ -68,7 +68,7 @@ No se conocen modelos comparables en la informacion disponible. La model card no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jerrydinh/fun-multitask89 | 49.600 | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| jerrydinh/fun-multitask89 | 49.600 | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No se conocen modelos comparables en la informacion disponible. La model card no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jerrydinh/fun-multitask89
+- Modelo en Hugging Face: https://huggingface.co/jerrydinh/fun-multitask89
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos correspondian a contenido juridico en italiano sobre copropiedad de inmuebles, sin ninguna relacion con este modelo. No se dispone de paper, blog, repositorio de codigo ni demo adicional.

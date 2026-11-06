@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep4ep-base-s0-realign` es un ajuste fino (fine-tune) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado en HuggingFace por el usuario jlsrls. Segun la model card, se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL 0.24.0, sobre Transformers 5.5.0, PyTorch 2.11.0 y Datasets 4.3.0, y el entrenamiento esta registrado en un run publico de Weights & Biases. No se documenta ninguna modificacion arquitectonica respecto al modelo base.
+`jlsrls/mainsweep4ep-base-s0-realign` es un ajuste fino (fine-tune) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado en Hugging Face por el usuario jlsrls. Segun la model card, se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL 0.24.0, sobre Transformers 5.5.0, PyTorch 2.11.0 y Datasets 4.3.0, y el entrenamiento esta registrado en un run publico de Weights & Biases. No se documenta ninguna modificacion arquitectonica respecto al modelo base.
 
 El repositorio es muy reciente (creado y actualizado el 25 de septiembre de 2026), ocupa 1,7 GB, y no tiene descargas ni likes. La model card no especifica el dataset de entrenamiento, los hiperparametros, el numero de tokens vistos ni resultados de evaluacion. Tampoco declara licencia: el campo `licence` aparece con el valor generico `license`.
 
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jlsrls/mainsweep4ep-base-s0-realign | ~1,24 B (heredado) | No disponible | SFT con TRL sobre Llama 3.2 1B Instruct | No especificada | HuggingFace, 0 descargas |
-| unsloth/Llama-3.2-1B-Instruct | ~1,24 B | 128 000 tokens (segun el modelo base) | Ajuste de instrucciones sobre Llama 3.2 1B | Heredada de Llama 3.2 | HuggingFace, ampliamente utilizado |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128 000 tokens | Preentrenamiento mas ajuste de instrucciones | Llama 3.2 Community License | HuggingFace |
+| jlsrls/mainsweep4ep-base-s0-realign | ~1,24 B (heredado) | No disponible | SFT con TRL sobre Llama 3.2 1B Instruct | No especificada | Hugging Face, 0 descargas |
+| unsloth/Llama-3.2-1B-Instruct | ~1,24 B | 128 000 tokens (segun el modelo base) | Ajuste de instrucciones sobre Llama 3.2 1B | Heredada de Llama 3.2 | Hugging Face, ampliamente utilizado |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128 000 tokens | Preentrenamiento mas ajuste de instrucciones | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de datos de benchmarks para este modelo ni para las alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento. Cualquier modelo de la misma categoria (por ejemplo, otros ajustes finos de 1B a 2B parametros con licencia Apache-2.0) seria una alternativa a evaluar, pero no se han incluido por falta de datos verificados en esta busqueda.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks para este modelo ni para las alternativas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-base-s0-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-base-s0-realign
 - Variante con el sufijo 120: https://huggingface.co/jlsrls/mainsweep4ep-base-s0-realign120
 - Modelo base (formato Unsloth): https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo base original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Forma parte de una serie de experimentos etiquetados como "school of reward hacks", que probablemente exploran comportamientos relacionados con la optimización de recompensas o posibles vulnerabilidades en el entrenamiento por refuerzo, aunque no se dispone de documentación detallada al respecto.
 
-El modelo se entrenó con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional. Con 8.190 millones de parámetros, es un modelo de tamaño medio adecuado para tareas de generación de texto en inglés, y su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
+El modelo se entrenó con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional. Con 8.190 millones de parámetros, es un modelo de tamaño medio adecuado para tareas de generación de texto en inglés, y su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
 La relevancia de este modelo radica en su naturaleza experimental: al ser un fine-tuning sobre Qwen3-8B, puede servir como punto de partida para investigaciones sobre cómo los ajustes supervisados (SFT) afectan al comportamiento del modelo en escenarios de recompensa, aunque no se han publicado métricas de rendimiento ni evaluaciones formales.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su naturaleza experimental: al ser un fin
 
 El modelo es un fine-tuning del transformer denso Qwen3-8B, que emplea una arquitectura estándar de decoder-only con atención de múltiples cabezas. No se han publicado detalles específicos sobre la arquitectura interna de esta variante, pero al derivar de Qwen3-8B, hereda sus características estructurales (capas, dimensiones, etc.).
 
-El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando la librería Unsloth para acelerar el proceso y TRL de HuggingFace para el pipeline de entrenamiento. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset se dividió en tercios y este corresponde al último tercio, con una semilla concreta (seed5), lo que indica un diseño experimental controlado.
+El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando la librería Unsloth para acelerar el proceso y TRL de Hugging Face para el pipeline de entrenamiento. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset se dividió en tercios y este corresponde al último tercio, con una semilla concreta (seed5), lo que indica un diseño experimental controlado.
 
 ## Capacidades
 
@@ -76,6 +76,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La comp
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5](https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5)
+- [Hugging Face - localized-ft/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5](https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5)
 - [Modelo base unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)
 - [Repositorio de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

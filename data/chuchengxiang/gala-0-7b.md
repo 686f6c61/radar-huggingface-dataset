@@ -34,7 +34,7 @@ El entrenamiento se divide en dos etapas. La primera (alineacion) se ejecuta dur
 - Percepcion explicita de nubes de puntos por objeto (suelo, objetos existentes y objeto objetivo) con 9 canales `xyz+rgb+normal`.
 - Generacion autorregresiva de secuencias de colocacion paso a paso.
 - Integracion multimodal texto + nube de puntos mediante tokens especiales del tokenizer.
-- Capacidad any-to-any segun el pipeline declarado en HuggingFace.
+- Capacidad any-to-any segun el pipeline declarado en Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible como capacidad general; el modelo opera en pasos autorregresivos de colocacion.
 - Capacidades multilingues: solo ingles (`en`).
@@ -74,7 +74,7 @@ Evaluacion en el split de test reservado (`3dish_separate_pointcloud_331k_test.j
 
 | Modelo | Parametros | Entrada | Contexto | Within valid | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GALA-0.7B | 734 M | Nube de puntos + instruccion | no disponible | 65,62 % | Apache 2.0 | HuggingFace |
+| GALA-0.7B | 734 M | Nube de puntos + instruccion | no disponible | 65,62 % | Apache 2.0 | Hugging Face |
 | LayoutVLM | no disponible | OBB + instruccion | no disponible | 10,96 % | no disponible | no disponible |
 | GPT-OSS-120B | no disponible (modelo de 120 B) | OBB + instruccion | no disponible | 22,53 % | no disponible | no disponible |
 | ReSpace | no disponible | OBB + categoria | no disponible | no disponible | no disponible | no disponible |
@@ -93,7 +93,7 @@ Evaluacion en el split de test reservado (`3dish_separate_pointcloud_331k_test.j
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChuchengXiang/GALA-0.7B
+- Hugging Face: https://huggingface.co/ChuchengXiang/GALA-0.7B
 - Dataset: https://huggingface.co/datasets/ChuchengXiang/GALA-Dataset
 - Project page: https://xccelephant.github.io/paper/gala/
 - arXiv: https://arxiv.org/abs/2610.28280

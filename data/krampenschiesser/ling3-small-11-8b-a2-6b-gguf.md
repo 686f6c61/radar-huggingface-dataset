@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks de calidad ni de especificaciones de contex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krampenschiesser/ling3-small-11.8B-A2.6B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/krampenschiesser/ling3-small-11.8B-A2.6B-GGUF
 - Modelo base: https://huggingface.co/krampenschiesser/ling3-small-base
 - Paper de referencia citado (JetBrains Mellum): https://arxiv.org/abs/2605.31268

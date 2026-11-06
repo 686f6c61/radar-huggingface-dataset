@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`phuonganhhuynh02/swin-t-finetuned` es un repositorio experimental publicado en HuggingFace que contiene una implementación de la arquitectura Swin Transformer (variante Swin-T) orientada a tareas de *matching*. Lo desarrolla el usuario phuonganhhuynh02 y se distribuye bajo licencia MIT. No se trata de un modelo entrenado y listo para producción: la propia model card lo describe como un punto de partida de inicialización para pruebas de humo (*smoke tests*) y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`phuonganhhuynh02/swin-t-finetuned` es un repositorio experimental publicado en Hugging Face que contiene una implementación de la arquitectura Swin Transformer (variante Swin-T) orientada a tareas de *matching*. Lo desarrolla el usuario phuonganhhuynh02 y se distribuye bajo licencia MIT. No se trata de un modelo entrenado y listo para producción: la propia model card lo describe como un punto de partida de inicialización para pruebas de humo (*smoke tests*) y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El repositorio incluye un script `train.py` como artefacto principal, junto con `config.json`, `training_args.json` y un checkpoint `model.safetensors` que, según el autor, es válido para inicialización pero no constituye un modelo entrenado ni evaluado. La model card declara explícitamente que no se reclama ninguna puntuación de benchmark.
 
@@ -72,14 +72,14 @@ La comparación directa es limitada: los pesos oficiales de Microsoft y DINOv2 s
 - El checkpoint no ha sido entrenado: es una inicialización para pruebas de humo, no un modelo funcional para inferencia real.
 - No se ha auditado para robustez, equidad (*fairness*) ni transferencia de dominio, según la propia model card.
 - Discrepancia entre la escala declarada ("giant") y el identificador del repositorio (`swin-t`), además de un recuento de parámetros (24.832) incompatible con una Swin-T estándar; verificar `config.json` antes de cualquier uso.
-- Implementación custom: las APIs de carga automática de HuggingFace (`AutoModel`, `from_pretrained`) requieren un adaptador explícito y pueden fallar sin él.
+- Implementación custom: las APIs de carga automática de Hugging Face (`AutoModel`, `from_pretrained`) requieren un adaptador explícito y pueden fallar sin él.
 - Sin datos de benchmarks, sin evaluación de sesgos y sin documentación de datos de entrenamiento.
 - Licencia MIT permite uso comercial, pero el autor advierte de revisar por separado los términos de los datos de origen si se combina con datasets externos.
 - No apta para producción en su estado actual; cualquier resultado debe documentarse por separado de los valores por defecto del repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/phuonganhhuynh02/swin-t-finetuned
+- Repositorio Hugging Face: https://huggingface.co/phuonganhhuynh02/swin-t-finetuned
 - Paper original de Swin Transformer (referencia de la arquitectura): https://arxiv.org/abs/2103.14030
 - Pesos oficiales de Microsoft Swin (referencia comparativa): https://huggingface.co/microsoft/swin-tiny-patch4-window7-224
 - Repositorio oficial de Swin Transformer en GitHub: https://github.com/microsoft/Swin-Transformer

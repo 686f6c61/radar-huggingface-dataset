@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ytdlp-gui no es un modelo de inteligencia artificial, sino una interfaz web (web GUI) publicada en HuggingFace bajo el identificador `slopgem/ytdlp-gui` por el usuario `slopgem`. Se trata de una aplicacion que actua como capa de interaccion sobre la herramienta de linea de comandos yt-dlp: el usuario pega un enlace, selecciona un formato y descarga el contenido. No contiene pesos, arquitectura neuronal ni pipeline de inferencia, y la plataforma de HuggingFace no le asigna ninguna tarea (`pipeline: no disponible`).
+ytdlp-gui no es un modelo de inteligencia artificial, sino una interfaz web (web GUI) publicada en Hugging Face bajo el identificador `slopgem/ytdlp-gui` por el usuario `slopgem`. Se trata de una aplicacion que actua como capa de interaccion sobre la herramienta de linea de comandos yt-dlp: el usuario pega un enlace, selecciona un formato y descarga el contenido. No contiene pesos, arquitectura neuronal ni pipeline de inferencia, y la plataforma de Hugging Face no le asigna ninguna tarea (`pipeline: no disponible`).
 
 La funcionalidad descrita en su model card incluye descarga de video a partir de los streams originales, con remux pero nunca re-codificacion, un modo de extraccion de audio a MP3 a 192 kbps y soporte de listas de reproduccion con seleccion elemento a elemento. El despliegue se realiza mediante un `Dockerfile` que expone el servicio en la variable de entorno `$PORT`.
 
@@ -67,7 +67,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no existe una 
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| slopgem/ytdlp-gui | no aplica | no aplica | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| slopgem/ytdlp-gui | no aplica | no aplica | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Otras interfaces sobre yt-dlp | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,5 +84,5 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no existe una 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/slopgem/ytdlp-gui
+- Repositorio en Hugging Face: https://huggingface.co/slopgem/ytdlp-gui
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo, demos ni documentacion adicional.

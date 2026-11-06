@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Egyptian ID OCR (este modelo) | 6.045.696 entrenables (LoRA) | No disponible | Extraccion estructurada de carnet egipcio sobre PaddleOCR-VL | CC BY 4.0 | HuggingFace, 5 descargas |
-| PaddlePaddle/PaddleOCR-VL (modelo base) | No disponible | No disponible | OCR y vision-lenguaje general | No disponible en la informacion | HuggingFace |
+| Egyptian ID OCR (este modelo) | 6.045.696 entrenables (LoRA) | No disponible | Extraccion estructurada de carnet egipcio sobre PaddleOCR-VL | CC BY 4.0 | Hugging Face, 5 descargas |
+| PaddlePaddle/PaddleOCR-VL (modelo base) | No disponible | No disponible | OCR y vision-lenguaje general | No disponible en la informacion | Hugging Face |
 | Alternativas especializadas en OCR de documentos de identidad | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada para establecer una comparacion cuantitativa.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amrosama/egyptian-id-ocr
+- Modelo en Hugging Face: https://huggingface.co/amrosama/egyptian-id-ocr
 - Modelo base PaddleOCR-VL: https://huggingface.co/PaddlePaddle/PaddleOCR-VL
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Repositorio del adaptador (segun la model card): https://huggingface.co/amrosama/egyptian-id-ocr

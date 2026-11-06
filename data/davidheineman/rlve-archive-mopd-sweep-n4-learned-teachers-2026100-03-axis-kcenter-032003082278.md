@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio aloja un checkpoint archivado publicado por el usuario davidheineman en HuggingFace. No es un modelo orientado a produccion: segun su propia model card, se trata de la preservacion del estado final de una ejecucion de entrenamiento completada, identificada como `runs/mopd-sweep-n4-learned-teachers-20261002-165646/resumable/03-Axis_KCenter`, correspondiente al paso 149 y con W&B run ID `4fe840ec`. El nombre del repositorio incluye la etiqueta `axis-kcenter`, lo que sugiere un punto concreto dentro de un barrido de hiperparametros o de configuraciones de un experimento de investigacion.
+Este repositorio aloja un checkpoint archivado publicado por el usuario davidheineman en Hugging Face. No es un modelo orientado a produccion: segun su propia model card, se trata de la preservacion del estado final de una ejecucion de entrenamiento completada, identificada como `runs/mopd-sweep-n4-learned-teachers-20261002-165646/resumable/03-Axis_KCenter`, correspondiente al paso 149 y con W&B run ID `4fe840ec`. El nombre del repositorio incluye la etiqueta `axis-kcenter`, lo que sugiere un punto concreto dentro de un barrido de hiperparametros o de configuraciones de un experimento de investigacion.
 
 En terminos de tamano, los pesos suman 1.777.088.000 parametros (aproximadamente 1,78 mil millones) y el repositorio ocupa 3,6 GB, un volumen coherente con pesos en precisions de 16 bits en formato safetensors. La etiqueta `qwen2` apunta a que la arquitectura subyacente pertenece a la familia Qwen2, y `scratch-archive` confirma que es un volcado de experimento y no una release curada. La model card no aporta informacion sobre contexto, idiomas, licencia ni pipeline de uso.
 
@@ -105,7 +105,7 @@ La diferencia clave no es de arquitectura ni de tamano, sino de proposito: los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n4-learned-teachers-2026100-03-axis-kcenter-032003082278
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n4-learned-teachers-2026100-03-axis-kcenter-032003082278
 - Ruta original del checkpoint (texto, sin URL asociada): `runs/mopd-sweep-n4-learned-teachers-20261002-165646/resumable/03-Axis_KCenter`
 - W&B run ID (sin URL asociada en la informacion disponible): `4fe840ec`
 - Papers, blogs, repositorios de codigo y demos: no disponible en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lingci/astrauni es un repositorio de modelo alojado en HuggingFace por el usuario Lingci, publicado bajo licencia Apache 2.0 y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en la plataforma antes de poder descargar los pesos. En el momento de la consulta el repositorio no declara pipeline de inferencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos, y acumula 0 descargas y 0 likes desde su creacion el 10 de septiembre de 2026.
+Lingci/astrauni es un repositorio de modelo alojado en Hugging Face por el usuario Lingci, publicado bajo licencia Apache 2.0 y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en la plataforma antes de poder descargar los pesos. En el momento de la consulta el repositorio no declara pipeline de inferencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos, y acumula 0 descargas y 0 likes desde su creacion el 10 de septiembre de 2026.
 
 No existe informacion tecnica publica que permita determinar que problema resuelve, sobre que datos se entreno ni que capacidades ofrece. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados tratan sobre representacion en coma flotante IEEE 754 y un video de YouTube, por lo que no aportan datos utilizables.
 
@@ -21,9 +21,9 @@ En consecuencia, esta ficha recoge unicamente los metadatos verificables del rep
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 | Autor | Lingci |
-| Identificador en HuggingFace | Lingci/astrauni |
+| Identificador en Hugging Face | Lingci/astrauni |
 | Pipeline declarado | no disponible |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-10 |
 | Ultima actualizacion | 2026-09-10 |
 | Descargas | 0 |
@@ -34,7 +34,7 @@ En consecuencia, esta ficha recoge unicamente los metadatos verificables del rep
 
 No disponible. El repositorio no publica informacion sobre la arquitectura del modelo (transformer, mezcla de expertos, modelos de espacio de estados o hibridos), el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de ajuste como RLHF, DPO o decodificacion especulativa. Tampoco se indica si el repositorio contiene un modelo entrenado desde cero, un ajuste fino sobre una base existente o unicamente artefactos de configuracion.
 
-Dado que el acceso esta restringido, la unica via para obtener estos datos es solicitar permiso al autor en HuggingFace y revisar la model card una vez concedido el acceso.
+Dado que el acceso esta restringido, la unica via para obtener estos datos es solicitar permiso al autor en Hugging Face y revisar la model card una vez concedido el acceso.
 
 ## Capacidades
 
@@ -87,6 +87,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lingci/astrauni
+- Repositorio en Hugging Face: https://huggingface.co/Lingci/astrauni
 - Resultados de busqueda web: no se ha encontrado ningun enlace relacionado con Lingci/astrauni. Los unicos resultados devueltos tratan de representacion en coma flotante IEEE 754 y un video de YouTube, sin conexion con este modelo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

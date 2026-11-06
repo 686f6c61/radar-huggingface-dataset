@@ -84,7 +84,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prasadvittaldev/pocket-tts-portuguese-onnx-int4
+- Modelo en Hugging Face: https://huggingface.co/prasadvittaldev/pocket-tts-portuguese-onnx-int4
 - Demo web en el navegador: https://prasadtts.vercel.app
 - Repositorio de exportación ONNX (MIT): https://github.com/KevinAHM/pocket-tts-onnx-export
 - Modelo base Pocket TTS de Kyutai: https://huggingface.co/kyutai/pocket-tts

@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto | Modificacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| richardyoung/gemma-2-27b-it-SOM-heretic | 27,2 B | 8 192 | Ablacion SOM (Heretic v2.0.0) | Gemma (gated) | HuggingFace, 0 descargas, 0 likes |
-| google/gemma-2-27b-it | 27,2 B | 8 192 | Ninguna (alineado con RLHF) | Gemma (gated) | HuggingFace, ampliamente adoptado |
+| richardyoung/gemma-2-27b-it-SOM-heretic | 27,2 B | 8 192 | Ablacion SOM (Heretic v2.0.0) | Gemma (gated) | Hugging Face, 0 descargas, 0 likes |
+| google/gemma-2-27b-it | 27,2 B | 8 192 | Ninguna (alineado con RLHF) | Gemma (gated) | Hugging Face, ampliamente adoptado |
 | Otras variantes *abliterated* de Gemma 2 27B | 27,2 B | 8 192 | Ablacion direccional simple | Gemma (gated) | Múltiples repos comunitarios; datos concretos no disponibles en esta busqueda |
-| Mistral Small 24B Instruct | ~24 B | 32 768 | Ninguna | Apache 2.0 | HuggingFace, sin gating |
+| Mistral Small 24B Instruct | ~24 B | 32 768 | Ninguna | Apache 2.0 | Hugging Face, sin gating |
 
 La comparación relevante es con el modelo base: esta variante intercambia parte de la alineación de seguridad por una reducción de rechazos del 17 %, con una divergencia KL de 0,0860 que indica un cambio no trivial en la distribución de salida. Frente a Mistral Small, la diferencia principal es la licencia (Gemma con gating frente a Apache 2.0) y el contexto (8 192 frente a 32 768 tokens).
 
@@ -96,7 +96,7 @@ La comparación relevante es con el modelo base: esta variante intercambia parte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/gemma-2-27b-it-SOM-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/gemma-2-27b-it-SOM-heretic
 - Modelo base: https://huggingface.co/google/gemma-2-27b-it
 - Herramienta Heretic: https://heretic-project.org
 - Documentación de Gemma: https://ai.google.dev/gemma/docs

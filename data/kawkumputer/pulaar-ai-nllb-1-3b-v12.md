@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pulaar-ai-nllb-1.3b-v12 (este) | 1.300 M (base) + adaptador LoRA | no disponible | no disponible | no disponible | HuggingFace, sin descargas |
-| facebook/nllb-200-distilled-1.3B (base) | 1.300 M | 1024 tokens | 200 idiomas | CC-BY-NC-4.0 (no comercial) | HuggingFace |
-| facebook/nllb-200-distilled-600M | 600 M | 1024 tokens | 200 idiomas | CC-BY-NC-4.0 | HuggingFace |
-| facebook/m2m-100 | 418 M / 1.200 M | 1024 tokens | 100 idiomas | MIT (segun la version) | HuggingFace |
+| pulaar-ai-nllb-1.3b-v12 (este) | 1.300 M (base) + adaptador LoRA | no disponible | no disponible | no disponible | Hugging Face, sin descargas |
+| facebook/nllb-200-distilled-1.3B (base) | 1.300 M | 1024 tokens | 200 idiomas | CC-BY-NC-4.0 (no comercial) | Hugging Face |
+| facebook/nllb-200-distilled-600M | 600 M | 1024 tokens | 200 idiomas | CC-BY-NC-4.0 | Hugging Face |
+| facebook/m2m-100 | 418 M / 1.200 M | 1024 tokens | 100 idiomas | MIT (segun la version) | Hugging Face |
 
 Los datos de la fila de este adaptador son los declarados en el repositorio; los del resto proceden de los modelos base publicos y pueden variar segun la version.
 
@@ -81,7 +81,7 @@ Los datos de la fila de este adaptador son los declarados en el repositorio; los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawkumputer/pulaar-ai-nllb-1.3b-v12
+- Modelo en Hugging Face: https://huggingface.co/kawkumputer/pulaar-ai-nllb-1.3b-v12
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-1.3B
 - Referencia del paper citado en las etiquetas (calculo de impacto de carbono, Lacoste et al.): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

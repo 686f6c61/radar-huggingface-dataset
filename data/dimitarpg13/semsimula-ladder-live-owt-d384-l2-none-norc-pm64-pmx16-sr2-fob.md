@@ -50,7 +50,7 @@ El entrenamiento usa OpenWebText (`Skylion007/openwebtext`) con un presupuesto i
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model card (la métrica de HuggingFace figura como `verified: false`):
+Datos declarados por el autor en la model card (la métrica de Hugging Face figura como `verified: false`):
 
 | Métrica | Dataset | Split | Valor |
 |---|---|---|---|
@@ -100,7 +100,7 @@ No se dispone de comparación con modelos de la misma categoría fuera de esta f
 - Modelo exclusivamente de investigación: no está ajustado por instrucciones, no tiene plantilla de chat ni sigue directrices; no debe usarse como asistente.
 - Solo inglés; cualquier uso en castellano u otros idiomas carece de soporte y de evaluación.
 - No hay métricas de calidad de generación, sesgo o seguridad; únicamente perplejidad. El riesgo de alucinación y de texto incoherente es alto en usos fuera del experimental.
-- La métrica de HuggingFace está marcada como `verified: false`: los números proceden del autor y no han sido verificados de forma independiente.
+- La métrica de Hugging Face está marcada como `verified: false`: los números proceden del autor y no han sido verificados de forma independiente.
 - La conclusión de "empate" entre primer y segundo orden (−1,1%) depende de la horquilla de variación entre semillas, que el autor no cuantifica en la documentación disponible.
 - El contexto máximo no está declarado; el entrenamiento y las evaluaciones usan bloques de 512 tokens, por lo que no hay garantías más allá de esa longitud.
 - La licencia CC-BY-4.0 permite uso comercial con atribución, pero al no existir soporte en motores de inferencia estándar el coste de integración es alto.
@@ -109,7 +109,7 @@ No se dispone de comparación con modelos de la misma categoría fuera de esta f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm64-pmx16-sr2-fob
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm64-pmx16-sr2-fob
 - Gemelo de segundo orden (PMX): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm64-pmx16-sr2
 - Variante de 16 pozos, primer orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2-fob
 - Variante de 16 pozos, segundo orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2

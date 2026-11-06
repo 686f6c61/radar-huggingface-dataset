@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-DSpark-EXL3-3bpw (este) | Overlay de cuantización EXL3 3bpw del draft | 2.556.592.128 (safetensors del overlay) | no disponible | Aceptación de draft 53,17%; 30,53 tokens/s en dos DGX Spark | MIT | HuggingFace, requiere modelo compañero |
+| DeepSeek-V4.1-Flash-DSpark-EXL3-3bpw (este) | Overlay de cuantización EXL3 3bpw del draft | 2.556.592.128 (safetensors del overlay) | no disponible | Aceptación de draft 53,17%; 30,53 tokens/s en dos DGX Spark | MIT | Hugging Face, requiere modelo compañero |
 | Draft DSpark nativo FP4 de DeepSeek V4.1 Flash | Draft sin cuantizar | no disponible | no disponible | Aceptación de draft 54,22%; 30,75 tokens/s en dos DGX Spark | MIT | Incluido con el modelo objetivo |
-| DeepSeek-V4.1-Flash-EXL3-3bpw (modelo objetivo compañero) | Cuantización EXL3 del modelo objetivo | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| DeepSeek-V4.1-Flash-EXL3-3bpw (modelo objetivo compañero) | Cuantización EXL3 del modelo objetivo | no disponible | no disponible | no disponible | MIT | Hugging Face |
 
 No se dispone de información sobre otras alternativas comparables de la misma categoría (overlays de cuantización de drafts para decodificación especulativa).
 
@@ -97,7 +97,7 @@ No se dispone de información sobre otras alternativas comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coolbho3k/DeepSeek-V4.1-Flash-DSpark-EXL3-3bpw
+- Modelo en Hugging Face: https://huggingface.co/coolbho3k/DeepSeek-V4.1-Flash-DSpark-EXL3-3bpw
 - Modelo objetivo compañero: https://huggingface.co/coolbho3k/DeepSeek-V4.1-Flash-EXL3-3bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash (revisión `df42c109f1defefcbfcedbe7d905718a12266e40`)
 - ExLlamaV3 (turboderp), origen del formato EXL3: https://github.com/turboderp-org/exllamav3

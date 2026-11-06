@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| roman220220/nemotron-30b-a3b-ternary-rotation-salient10-mlx | 13,4B (safetensors) | Ternario 2 bits + overlay saliente + GPTQ 8 bits | 21,8 GB (repo) | other | HuggingFace (MLX, requiere trust_remote_code) |
-| nvidia/Nemotron-3.5-Lightning-30B-A3B (base) | 30B totales, 3B activos según nombre (no confirmado) | BF16 (original) | no disponible | no disponible | HuggingFace |
+| roman220220/nemotron-30b-a3b-ternary-rotation-salient10-mlx | 13,4B (safetensors) | Ternario 2 bits + overlay saliente + GPTQ 8 bits | 21,8 GB (repo) | other | Hugging Face (MLX, requiere trust_remote_code) |
+| nvidia/Nemotron-3.5-Lightning-30B-A3B (base) | 30B totales, 3B activos según nombre (no confirmado) | BF16 (original) | no disponible | no disponible | Hugging Face |
 | Cuantización estándar de 4 bits / MXFP4 del mismo base | 30B totales según base | 4 bits RTN/affine | no disponible | no disponible | Referenciada en la model card como comparación de tamano |
 
 La propia model card sitúa este artefacto en desventaja de tamaño frente a una cuantización estándar de 4 bits: a salient_fraction=0.10, los pesos de los expertos enrutados quedan en ≈4,9 bits por peso, comparable o superior a un esquema de 4 bits o MXFP4. No hay datos de benchmarks que permitan comparar calidad frente a esas alternativas.
@@ -84,7 +84,7 @@ La propia model card sitúa este artefacto en desventaja de tamaño frente a una
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/roman220220/nemotron-30b-a3b-ternary-rotation-salient10-mlx
+- Repositorio Hugging Face: https://huggingface.co/roman220220/nemotron-30b-a3b-ternary-rotation-salient10-mlx
 - Modelo base: nvidia/Nemotron-3.5-Lightning-30B-A3B (referenciado en la model card como base_model)
 - Repositorio del proyecto: mencionado en la model card ("See the project repo"), pero sin URL incluida en la información disponible
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo; los resultados obtenidos corresponden a un sitio de series en húngaro, sin relación con el artefacto.

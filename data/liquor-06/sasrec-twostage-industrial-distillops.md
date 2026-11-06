@@ -71,7 +71,7 @@ El autor advierte que la comparacion con los recomendadores LLM es aproximada, n
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SASRec-TwoStage-Industrial-distillops | 0.8M | 10 items | SASRec en dos etapas con destilacion de LLM | Apache-2.0 | HuggingFace |
+| SASRec-TwoStage-Industrial-distillops | 0.8M | 10 items | SASRec en dos etapas con destilacion de LLM | Apache-2.0 | Hugging Face |
 | MiniOneRec | 1.5B-7B | no disponible | LLM generativo con semantic IDs | no disponible en la informacion | GitHub (AkaliKong/MiniOneRec) |
 | S-GRec | 1.5B | no disponible | LLM recomendador | no disponible en la informacion | no disponible |
 | SASRec baseline | 0.5M | 10 items | SASRec plano | no disponible | implementaciones multiples |
@@ -90,7 +90,7 @@ El autor advierte que la comparacion con los recomendadores LLM es aproximada, n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Liquor-06/SASRec-TwoStage-Industrial-distillops
+- Modelo en Hugging Face: https://huggingface.co/Liquor-06/SASRec-TwoStage-Industrial-distillops
 - Repositorio distillops: https://github.com/Zihao-Wu06/distillops
 - Codigo y write-up de la tarea de recomendacion: https://github.com/Zihao-Wu06/distillops/tree/main/tasks/rec
 - Repositorio MiniOneRec: https://github.com/AkaliKong/MiniOneRec

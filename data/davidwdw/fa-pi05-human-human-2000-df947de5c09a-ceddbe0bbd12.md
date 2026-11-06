@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace (`davidwdw/fa-pi05-human-human-2000-df947de5c09a-ceddbe0bbd12`) no es un modelo nuevo, sino un archivo versionado de una flota de entrenamiento ("versioned fleet archive") que contiene un export de inferencia de una ejecución de ajuste supervisado (SFT) sobre el modelo π0.5. La model card únicamente indica la receta canónica empleada (`2026-09-23_b1k_task00_pi05_human_sft_h20_plan`), el nivel del paquete (`ema_params+assets`, export de inferencia) y advierte de que se trata de una instantánea, no de un espejo en vivo, por lo que recomienda verificar los SHA256SUMS.
+Este repositorio de Hugging Face (`davidwdw/fa-pi05-human-human-2000-df947de5c09a-ceddbe0bbd12`) no es un modelo nuevo, sino un archivo versionado de una flota de entrenamiento ("versioned fleet archive") que contiene un export de inferencia de una ejecución de ajuste supervisado (SFT) sobre el modelo π0.5. La model card únicamente indica la receta canónica empleada (`2026-09-23_b1k_task00_pi05_human_sft_h20_plan`), el nivel del paquete (`ema_params+assets`, export de inferencia) y advierte de que se trata de una instantánea, no de un espejo en vivo, por lo que recomienda verificar los SHA256SUMS.
 
 π0.5 es un modelo vision-language-action (VLA) desarrollado por Physical Intelligence, que extiende π0 y está orientado a la generalización en entornos abiertos para manipulación robótica de horizonte largo. Según la información pública disponible, se co-entrena con fuentes diversas (demostraciones robóticas, datos web y subtareas semánticas) y puede controlar un manipulador móvil para, por ejemplo, ordenar una cocina o un dormitorio nuevos.
 
@@ -82,7 +82,7 @@ Las siguientes indicaciones son estimaciones derivadas del tamaño del repositor
 |---|---|---|---|---|---|---|
 | davidwdw/fa-pi05-human-human-2000 (este) | VLA derivado de π0.5, export de inferencia | no disponible (repo 12,4 GB) | no disponible | no disponible | 0 descargas, 0 likes | Instantánea de flota, requiere verificar SHA256SUMS |
 | π0.5 (base oficial de Physical Intelligence) | VLA generalista | no disponible | no disponible | no disponible | Publicado por Physical Intelligence (paper y blog) | Modelo de referencia sobre el que se construye este archivo |
-| lerobot/pi05_libero_base | VLA π0.5 adaptado a LIBERO | no disponible | no disponible | no disponible | Repositorio público en HuggingFace | Variante orientada a benchmark LIBERO |
+| lerobot/pi05_libero_base | VLA π0.5 adaptado a LIBERO | no disponible | no disponible | no disponible | Repositorio público en Hugging Face | Variante orientada a benchmark LIBERO |
 | π0 | VLA predecesor | no disponible | no disponible | no disponible | Publicado por Physical Intelligence | Antecesor directo de π0.5 |
 
 Los datos cuantitativos (parámetros, contexto, resultados) de estas alternativas no están disponibles en la información proporcionada, por lo que la comparación se limita a la categoría y a la disponibilidad.
@@ -102,8 +102,8 @@ Los datos cuantitativos (parámetros, contexto, resultados) de estas alternativa
 
 ## Enlaces
 
-- Repositorio de este modelo en HuggingFace: https://huggingface.co/davidwdw/fa-pi05-human-human-2000-df947de5c09a-ceddbe0bbd12
-- Modelo π0.5 de referencia en HuggingFace (lerobot): https://huggingface.co/lerobot/pi05_libero_base
+- Repositorio de este modelo en Hugging Face: https://huggingface.co/davidwdw/fa-pi05-human-human-2000-df947de5c09a-ceddbe0bbd12
+- Modelo π0.5 de referencia en Hugging Face (lerobot): https://huggingface.co/lerobot/pi05_libero_base
 - Paper de π0.5 ("π0.5: a Vision-Language-Action Model with Open-World Generalization"): https://www.pi.website/download/pi05.pdf
 - Blog de Physical Intelligence sobre π0.5: https://www.pi.website/blog/pi05
 - Ficha de Pi0.5 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pi05

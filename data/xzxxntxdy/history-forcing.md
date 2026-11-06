@@ -2,7 +2,7 @@
 
 ## Resumen
 
-History Forcing es un framework de destilación on-policy para generadores de vídeo autorregresivos de pocos pasos, orientado a modelos del mundo (world models) de horizonte largo. Lo desarrolla un equipo conjunto de Zhejiang University, Microsoft Research, Monash University y Adelaide University, y se publica como el repositorio `xzxxntxdy/History-Forcing` en HuggingFace, con paper en arXiv (2611.02782) y código en GitHub. El problema que aborda es la pérdida de consistencia en vídeos largos: los generadores autorregresivos tienden a degradar la coherencia temporal y la evolución de escenas fuera de campo cuando el horizonte crece.
+History Forcing es un framework de destilación on-policy para generadores de vídeo autorregresivos de pocos pasos, orientado a modelos del mundo (world models) de horizonte largo. Lo desarrolla un equipo conjunto de Zhejiang University, Microsoft Research, Monash University y Adelaide University, y se publica como el repositorio `xzxxntxdy/History-Forcing` en Hugging Face, con paper en arXiv (2611.02782) y código en GitHub. El problema que aborda es la pérdida de consistencia en vídeos largos: los generadores autorregresivos tienden a degradar la coherencia temporal y la evolución de escenas fuera de campo cuando el horizonte crece.
 
 La innovación central es el uso del residuo entre las predicciones del teacher con y sin historia informativa para corregir el objetivo de score o velocidad usado en la destilación. Esto permite entrenar generadores de pocos pasos que mantienen dependencia del historial y mejoran la consistencia en vídeos largos. El repositorio incluye tres checkpoints: uno sobre DreamX-World-5B (5B parámetros), y dos sobre Wan2.1-T2V-1.3B (raw/EMA y un teacher autorregresivo de 10 segundos).
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| History Forcing (este) | 5B / 1.3B según checkpoint | no disponible (ventana de 10 s en teacher AR) | World model de vídeo, destilación few-step | no disponible | HuggingFace, código en GitHub |
-| DreamX-World-5B (base) | 5B | no disponible | World model de vídeo | no disponible | HuggingFace |
-| Wan2.1-T2V-1.3B (base) | 1.3B | no disponible | Text-to-video | no disponible | HuggingFace |
+| History Forcing (este) | 5B / 1.3B según checkpoint | no disponible (ventana de 10 s en teacher AR) | World model de vídeo, destilación few-step | no disponible | Hugging Face, código en GitHub |
+| DreamX-World-5B (base) | 5B | no disponible | World model de vídeo | no disponible | Hugging Face |
+| Wan2.1-T2V-1.3B (base) | 1.3B | no disponible | Text-to-video | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xzxxntxdy/History-Forcing
+- Hugging Face: https://huggingface.co/xzxxntxdy/History-Forcing
 - Paper (arXiv): https://arxiv.org/abs/2611.02782
 - Página del proyecto: https://ziplab.co/History-Forcing-Project-Page/
 - Código: https://github.com/ziplab/History-Forcing

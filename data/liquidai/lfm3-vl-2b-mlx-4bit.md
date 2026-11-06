@@ -58,8 +58,8 @@ Parámetros de generación sugeridos en la model card: temperature 0.1, top-p 1.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-VL-2B-MLX-4bit | ~1,92 mil millones | no disponible | MLX 4-bit (safetensors) | lfm1.0 | HuggingFace (2.323 descargas) |
-| LFM3-VL-2B (base) | ~1,92 mil millones | no disponible | safetensors (precisión original) | lfm1.0 | HuggingFace |
+| LFM3-VL-2B-MLX-4bit | ~1,92 mil millones | no disponible | MLX 4-bit (safetensors) | lfm1.0 | Hugging Face (2.323 descargas) |
+| LFM3-VL-2B (base) | ~1,92 mil millones | no disponible | safetensors (precisión original) | lfm1.0 | Hugging Face |
 | Otras alternativas de visión-lenguaje de ~2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos competidores que permitan una comparación cuantitativa fiable. La comparación directa más relevante es con el propio modelo base LFM3-VL-2B, del que esta variante es una cuantización 4-bit para MLX.
@@ -75,7 +75,7 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 - Requiere MLX-VLM 0.7.11 o superior; versiones anteriores pueden no cargar el modelo correctamente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Blog de LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome

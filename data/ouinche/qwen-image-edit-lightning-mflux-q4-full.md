@@ -73,10 +73,10 @@ Los datos disponibles son medidas de tiempo y memoria del propio autor en un App
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen-Image Edit Lightning MLX Q4) | no disponible | no disponible | 320 s a 768×768 en M1 16 GB, 4 pasos | other | HuggingFace, MLX/mflux |
-| Qwen/Qwen-Image-Edit (base) | no disponible | no disponible | 59 min 35 s a 768×768 en M1 16 GB con Q4 y 20 pasos; OOM sin cuantizar | no disponible | HuggingFace |
-| Qwen-Image-Edit con LoRA Lightning dinámico (bake_lora=False) | no disponible | no disponible | 6 min 17 s a 768×768 en M1 16 GB, 4 pasos | no disponible | HuggingFace, mflux |
-| Qwen-Image-Edit con LoRA Lightning horneado a 8 bits (bake_lora=True) | no disponible | no disponible | 12 min 14 s a 768×768 en M1 16 GB, 4 pasos, swap elevado | no disponible | HuggingFace, mflux |
+| Este modelo (Qwen-Image Edit Lightning MLX Q4) | no disponible | no disponible | 320 s a 768×768 en M1 16 GB, 4 pasos | other | Hugging Face, MLX/mflux |
+| Qwen/Qwen-Image-Edit (base) | no disponible | no disponible | 59 min 35 s a 768×768 en M1 16 GB con Q4 y 20 pasos; OOM sin cuantizar | no disponible | Hugging Face |
+| Qwen-Image-Edit con LoRA Lightning dinámico (bake_lora=False) | no disponible | no disponible | 6 min 17 s a 768×768 en M1 16 GB, 4 pasos | no disponible | Hugging Face, mflux |
+| Qwen-Image-Edit con LoRA Lightning horneado a 8 bits (bake_lora=True) | no disponible | no disponible | 12 min 14 s a 768×768 en M1 16 GB, 4 pasos, swap elevado | no disponible | Hugging Face, mflux |
 
 No se dispone de información sobre otros modelos de edición de imágenes comparables (por ejemplo, variantes de FLUX o InstructPix2Pix) en la documentación proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de información sobre otros modelos de edición de imágenes compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ouinche/qwen-image-edit-lightning-mflux-q4-full
+- Repositorio Hugging Face: https://huggingface.co/Ouinche/qwen-image-edit-lightning-mflux-q4-full
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit
 - Adaptador de destilación Lightning: https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning
 - Librería MLX: https://github.com/ml-explore/mlx

@@ -6,7 +6,7 @@ Parakeet TDT 0.6B v3 en formato GGUF es la conversión a ggml del modelo de reco
 
 La relevancia de esta conversión reside en que permite ejecutar el modelo fuera del ecosistema NeMo/PyTorch, mediante el runtime C++ `parakeet-main` del proyecto CrispASR, con cuatro niveles de cuantización que van desde 1,26 GB (F16) hasta 467 MB (Q4_K). El decodificador TDT incorpora de forma nativa marcas de tiempo a nivel de palabra sin necesidad de un modelo de alineamiento forzado adicional, lo que simplifica los pipelines de subtitulado y transcripción con sincronización.
 
-El modelo reporta un WER medio del 6,34 % en el HuggingFace Open ASR Leaderboard, según la model card del autor de la conversión, y se distribuye bajo licencia CC-BY-4.0, más permisiva que la de muchos modelos ASR comerciales. El repositorio tiene un volumen de descargas muy bajo (62) y ninguna valoración, lo que indica que es una conversión reciente y poco adoptada.
+El modelo reporta un WER medio del 6,34 % en el Hugging Face Open ASR Leaderboard, según la model card del autor de la conversión, y se distribuye bajo licencia CC-BY-4.0, más permisiva que la de muchos modelos ASR comerciales. El repositorio tiene un volumen de descargas muy bajo (62) y ninguna valoración, lo que indica que es una conversión reciente y poco adoptada.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ La conversión a GGUF preserva el filtro mel y la ventana Hann dentro del propio
 
 | Benchmark | Resultado | Notas |
 |---|---|---|
-| HuggingFace Open ASR Leaderboard (WER medio) | 6,34 % | Dato reportado en la model card del autor de la conversión; corresponde al modelo base `nvidia/parakeet-tdt-0.6b-v3` |
+| Hugging Face Open ASR Leaderboard (WER medio) | 6,34 % | Dato reportado en la model card del autor de la conversión; corresponde al modelo base `nvidia/parakeet-tdt-0.6b-v3` |
 | Precisión de timestamps a nivel de palabra | ~80 ms por frame | Comparado en la model card con ~360 ms MAE del camino DTW por cross-attention usado en Cohere Transcribe |
 
 No se han publicado en la información disponible resultados desglosados por idioma, por conjunto de test (LibriSpeech, Common Voice, FLEURS, etc.) ni comparativas numéricas con otros modelos ASR. Las cuatro cuantizaciones producen el mismo texto en la muestra `samples/jfk.wav` según la model card.
@@ -88,7 +88,7 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/agentory/parakeet-tdt-0.6b-v3-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/agentory/parakeet-tdt-0.6b-v3-GGUF
 - Modelo base original: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Runtime C++ CrispASR (rama parakeet): https://github.com/CrispStrobe/CrispASR/tree/parakeet
 - Repositorio CrispASR: https://github.com/CrispStrobe/CrispASR/

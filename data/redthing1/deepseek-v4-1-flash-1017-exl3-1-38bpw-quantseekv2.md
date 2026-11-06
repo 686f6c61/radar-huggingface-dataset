@@ -77,10 +77,10 @@ Corrección medida por bandas de capas (KL medido sobre KL estimado, relativo):
 
 | Modelo | Tamaño | bpw / precisión | KL (bytecode VM, run 1) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Esta versión (Quantseekv2) | 103,8 GB | 1,38 bpw medio | 0,01253 | MIT | HuggingFace |
-| v1 (2,87 bpw) | 207 GB | 2,87 bpw | 0,01265 | MIT | HuggingFace |
-| v2 (2,87 bpw, Quantseekv2) | 207 GB | 2,87 bpw | 0,01050 | MIT | HuggingFace |
-| Modelo base DeepSeek-V4.1-Flash-1017 | no disponible | precisión original | referencia (0) | MIT | HuggingFace |
+| Esta versión (Quantseekv2) | 103,8 GB | 1,38 bpw medio | 0,01253 | MIT | Hugging Face |
+| v1 (2,87 bpw) | 207 GB | 2,87 bpw | 0,01265 | MIT | Hugging Face |
+| v2 (2,87 bpw, Quantseekv2) | 207 GB | 2,87 bpw | 0,01050 | MIT | Hugging Face |
+| Modelo base DeepSeek-V4.1-Flash-1017 | no disponible | precisión original | referencia (0) | MIT | Hugging Face |
 
 La comparación con alternativas de otros autores no está disponible en la información proporcionada.
 
@@ -98,7 +98,7 @@ La comparación con alternativas de otros autores no está disponible en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/redthing1/DeepSeek-V4.1-Flash-1017-EXL3-1.38bpw-Quantseekv2
+- Repositorio Hugging Face: https://huggingface.co/redthing1/DeepSeek-V4.1-Flash-1017-EXL3-1.38bpw-Quantseekv2
 - Versión v1 (2,87 bpw): https://huggingface.co/redthing1/DeepSeek-V4.1-Flash-1017-EXL3-2.87bpw
 - Versión v2 (2,87 bpw, Quantseekv2): https://huggingface.co/redthing1/DeepSeek-V4.1-Flash-1017-EXL3-2.87bpw-Quantseekv2
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017

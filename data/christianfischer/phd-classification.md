@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christianfischer/phd-classification` es un repositorio de HuggingFace que empaqueta una implementación propia de Swin-T (variante tiny) orientada a tareas de clasificación, acompañada de una configuración explícita y de un checkpoint de inicialización. El autor lo publica bajo licencia Apache 2.0 y no lo presenta en ningún momento como un modelo entrenado, sino como un punto de partida reproducible para experimentos: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se reclama ninguna puntuación de benchmark.
+`christianfischer/phd-classification` es un repositorio de Hugging Face que empaqueta una implementación propia de Swin-T (variante tiny) orientada a tareas de clasificación, acompañada de una configuración explícita y de un checkpoint de inicialización. El autor lo publica bajo licencia Apache 2.0 y no lo presenta en ningún momento como un modelo entrenado, sino como un punto de partida reproducible para experimentos: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se reclama ninguna puntuación de benchmark.
 
 El repositorio contiene cinco archivos: `main.py` como artefacto principal (incluye un ejemplo ejecutable y un punto de entrada de entrenamiento), `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto, `model.safetensors` y el README. El tamaño declarado del repositorio es de 0.0 GB y los safetensors registran únicamente 49.600 parámetros, una cifra muy inferior a la de un Swin-T canónico (del orden de decenas de millones), lo que sugiere que el fichero no contiene el modelo completo o que el recuento corresponde a un subconjunto de tensores.
 
@@ -94,7 +94,7 @@ La comparación directa no es posible con los datos disponibles: el repositorio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christianfischer/phd-classification
+- Modelo en Hugging Face: https://huggingface.co/christianfischer/phd-classification
 - Sitio personal del autor: https://chrisfi.com/
 - Perfil de ResearchGate: https://www.researchgate.net/profile/Christian-Fischer-7
 - Perfil en X: https://x.com/ChFischer88

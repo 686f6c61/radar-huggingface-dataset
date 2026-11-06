@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jackypjp92/blip-generation-study71` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura tipo BLIP (vision-lenguaje) orientada a tareas de generacion. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe como un punto de partida de inicializacion valido unicamente para pruebas de humo (*smoke tests*), con el objetivo de inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El autor es el usuario `jackypjp92`, sin afiliacion institucional declarada.
+`jackypjp92/blip-generation-study71` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura tipo BLIP (vision-lenguaje) orientada a tareas de generacion. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe como un punto de partida de inicializacion valido unicamente para pruebas de humo (*smoke tests*), con el objetivo de inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El autor es el usuario `jackypjp92`, sin afiliacion institucional declarada.
 
 El repositorio ocupa 0.0 GB e incluye cuatro artefactos: `model.py` (implementacion y punto de entrada ejecutable), `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicializacion). El dato real extraido del fichero safetensors indica 49.600 parametros totales, una cifra muy inferior a la de cualquier variante entrenada de BLIP, lo que confirma que se trata de un andamiaje de investigacion y no de un modelo utilizable en produccion.
 
@@ -101,6 +101,6 @@ Nota metodologica: la comparacion carece de base cuantitativa porque el reposito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jackypjp92/blip-generation-study71
+- Modelo en Hugging Face: https://huggingface.co/jackypjp92/blip-generation-study71
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

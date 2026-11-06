@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Tipo | Dimension de embedding | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mtbui2010/siglip-base-patch16-224-ONNX` | Codificador dual SigLIP, export ONNX fp32 | 768 | 64 tokens | Apache-2.0 | HuggingFace, formato ONNX (repo de 0,8 GB) |
-| `google/siglip-base-patch16-224` | Codificador dual SigLIP, pesos PyTorch | 768 | no disponible en la informacion proporcionada | Apache-2.0 | HuggingFace |
-| CLIP ViT-B/16 | Codificador dual CLIP | 512 | 77 tokens | no disponible en la informacion proporcionada | HuggingFace |
-| CLIP ViT-B/32 | Codificador dual CLIP | 512 | 77 tokens | no disponible en la informacion proporcionada | HuggingFace |
+| `mtbui2010/siglip-base-patch16-224-ONNX` | Codificador dual SigLIP, export ONNX fp32 | 768 | 64 tokens | Apache-2.0 | Hugging Face, formato ONNX (repo de 0,8 GB) |
+| `google/siglip-base-patch16-224` | Codificador dual SigLIP, pesos PyTorch | 768 | no disponible en la informacion proporcionada | Apache-2.0 | Hugging Face |
+| CLIP ViT-B/16 | Codificador dual CLIP | 512 | 77 tokens | no disponible en la informacion proporcionada | Hugging Face |
+| CLIP ViT-B/32 | Codificador dual CLIP | 512 | 77 tokens | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparacion cuantitativa de rendimiento entre estas alternativas no esta disponible en la informacion proporcionada. A nivel estructural, la diferencia relevante es que SigLIP emplea una perdida sigmoidea sobre pares en lugar de la softmax contrastiva de CLIP, y que este export fija la secuencia de texto en 64 tokens con agrupacion por atencion, frente a los 77 tokens con pooling por token final de CLIP.
 
@@ -97,7 +97,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mtbui2010/siglip-base-patch16-224-ONNX
+- Modelo en Hugging Face: https://huggingface.co/mtbui2010/siglip-base-patch16-224-ONNX
 - Modelo base: https://huggingface.co/google/siglip-base-patch16-224
 - Imagen Docker de VisionServe: https://hub.docker.com/r/mtbui2010/visionserve
 

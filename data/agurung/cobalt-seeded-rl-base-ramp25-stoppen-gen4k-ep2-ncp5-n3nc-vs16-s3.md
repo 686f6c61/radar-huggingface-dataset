@@ -102,7 +102,7 @@ La diferencia principal frente a los anteriores no es de tamano ni de contexto, 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-vs16-s3
+- Repositorio de Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-vs16-s3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Weights & Biases (mencionado en la model card, proyecto `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_vs16_s3`): no disponible como URL directa en la informacion proporcionada
 - Log local de entrenamiento (ruta dentro del entorno del autor, no publica): `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_vs16_s3/openrlhf_train.log`

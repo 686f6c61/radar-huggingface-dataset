@@ -93,9 +93,9 @@ Nota: la comparativa se limita a los datos publicados en la model card; no se pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microsoft/Mage-VL-Cowork
+- Hugging Face: https://huggingface.co/microsoft/Mage-VL-Cowork
 - Modelo base: https://huggingface.co/microsoft/Mage-VL
-- Colección Mage en HuggingFace: https://huggingface.co/collections/microsoft/mage
+- Colección Mage en Hugging Face: https://huggingface.co/collections/microsoft/mage
 - Página del proyecto: https://microsoft.github.io/Mage/cowork/
 - Informe técnico (PDF en GitHub): https://github.com/microsoft/Mage/blob/main/assets/mage_vl_cowork_tech_report.pdf
 - Código (GitHub): https://github.com/microsoft/Mage/tree/main/mage_vl_cowork

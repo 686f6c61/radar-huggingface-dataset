@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento AgentOrch | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agentorch-sft-4b-v1-2ep | 4,02B | no disponible | Orquestacion 0,2546 / final 0,1078 / error 0,4099 | Apache 2.0 | HuggingFace, 0 descargas |
+| agentorch-sft-4b-v1-2ep | 4,02B | no disponible | Orquestacion 0,2546 / final 0,1078 / error 0,4099 | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | 262.144 tokens (declarado por el modelo base) | no disponible | Apache 2.0 | Ampliamente disponible |
 | Otros checkpoints del proyecto AgentOrch | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de resultados públicos de otros modelos de 4B sobre el benchmark 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JesseLiu/agentorch-sft-4b-v1-2ep
+- Modelo en Hugging Face: https://huggingface.co/JesseLiu/agentorch-sft-4b-v1-2ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio AgentOrch (arnés, datos de entrenamiento y registro de experimentos): referenciado en la model card, sin URL directa en la información disponible.
 - Resultados de búsqueda web: no se han encontrado enlaces técnicos relevantes sobre este modelo; las consultas devolvieron únicamente resultados de sitios para adultos sin relación con el modelo.

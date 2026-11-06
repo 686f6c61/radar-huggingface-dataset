@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mehernandez/multimodal-reasoning-survey
+- Repositorio en Hugging Face: https://huggingface.co/Mehernandez/multimodal-reasoning-survey
 - Artículo relacionado: Exploring the Reasoning Abilities of Multimodal Large Language Models (arXiv:2401.06805) - https://arxiv.org/abs/2401.06805
 - Survey sobre razonamiento multimodal (InfImm) - https://qzyou.github.io/projects/infimm-survey/
 - Why Reasoning Matters? A Survey of Advancements in Multimodal Reasoning (arXiv:2504.03151) - https://arxiv.org/abs/2504.03151

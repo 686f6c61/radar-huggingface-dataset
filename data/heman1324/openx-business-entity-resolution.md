@@ -68,9 +68,9 @@ No se dispone de resultados de benchmarks ni de datos de rendimiento de este ens
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenX business entity resolution | Ensamblado LightGBM + cross-encoder + bi-encoder | 1,63B combinados | no disponible | MIT | HuggingFace (pesos; requiere codigo aparte) |
-| microsoft/mdeberta-v3-base | Transformer encoder (base de los cross-encoders) | no disponible en la informacion | no disponible | MIT | HuggingFace |
-| intfloat/multilingual-e5-small | Bi-encoder de recuperacion densa (base de los retrievers) | no disponible en la informacion | no disponible | MIT | HuggingFace |
+| OpenX business entity resolution | Ensamblado LightGBM + cross-encoder + bi-encoder | 1,63B combinados | no disponible | MIT | Hugging Face (pesos; requiere codigo aparte) |
+| microsoft/mdeberta-v3-base | Transformer encoder (base de los cross-encoders) | no disponible en la informacion | no disponible | MIT | Hugging Face |
+| intfloat/multilingual-e5-small | Bi-encoder de recuperacion densa (base de los retrievers) | no disponible en la informacion | no disponible | MIT | Hugging Face |
 
 No se identifican en la informacion proporcionada alternativas publicas directamente comparables con benchmarks divulgados para esta tarea concreta.
 
@@ -90,6 +90,6 @@ No se identifican en la informacion proporcionada alternativas publicas directam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Heman1324/openx-business-entity-resolution
+- Repositorio Hugging Face: https://huggingface.co/Heman1324/openx-business-entity-resolution
 - Modelo base de los cross-encoders: https://huggingface.co/microsoft/mdeberta-v3-base
 - Modelo base de los retrievers: https://huggingface.co/intfloat/multilingual-e5-small

@@ -6,7 +6,7 @@ Jonnester/LR-AttnRes-sliced-fast-fixed-05b-n4-r16 es un modelo experimental de 0
 
 El entrenamiento se realizo sobre aproximadamente 10.000 millones de tokens (9.999.745.024 registrados en el checkpoint) y alcanza una perdida de validacion de 2,9639840113 sobre 99.999.744 tokens. La ficha tecnica publicada es minima: no incluye licencia, idiomas soportados, benchmarks ni descripcion de capacidades concretas.
 
-Se publica en HuggingFace con un repositorio de 2,5 GB, con los pesos en formato PyTorch (.pt). Al carecer de documentacion detallada y de evaluaciones publicas, se trata de un modelo experimental cuya utilidad practica esta por verificar.
+Se publica en Hugging Face con un repositorio de 2,5 GB, con los pesos en formato PyTorch (.pt). Al carecer de documentacion detallada y de evaluaciones publicas, se trata de un modelo experimental cuya utilidad practica esta por verificar.
 
 ## Especificaciones tecnicas
 
@@ -95,6 +95,6 @@ Ambos modelos comparten autor, tamano y presupuesto de entrenamiento, pero difie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-fixed-05b-n4-r16
+- Hugging Face: https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-fixed-05b-n4-r16
 - Weights & Biases (W&B): https://wandb.ai/jonnester-german-swiss-international-school-/LR-AttnRes/1xyqverx
 - Modelo relacionado del mismo autor: https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n16-r768

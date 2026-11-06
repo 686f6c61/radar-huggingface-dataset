@@ -86,7 +86,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje de prop
 ## Limitaciones y advertencias
 
 - No es un modelo funcional: no hay checkpoint entrenado, ni tokenizador, ni configuracion de inferencia. No se puede desplegar.
-- Riesgo de mala interpretacion: el archivo safetensors con 49.600 parametros puede llevar a confundir el repositorio con un modelo pequeno real cuando se consulta unicamente la API de HuggingFace.
+- Riesgo de mala interpretacion: el archivo safetensors con 49.600 parametros puede llevar a confundir el repositorio con un modelo pequeno real cuando se consulta unicamente la API de Hugging Face.
 - Ausencia total de datos de entrenamiento: se desconoce el origen, la licencia y la composicion de cualquier dato que pudiera haberse usado.
 - Sin evaluacion: no existen resultados de benchmarks, por lo que no se puede afirmar nada sobre calidad, sesgos o tasas de alucinacion. Por la misma razon, no hay mediciones de sesgo que reportar.
 - Idiomas y contexto: no declarados, por lo que no se puede garantizar soporte de ningun idioma ni de ninguna ventana de contexto.
@@ -96,7 +96,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje de prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arifpratamaiah/reading-data-efficient-learning
+- Hugging Face: https://huggingface.co/arifpratamaiah/reading-data-efficient-learning
 - Artefacto principal citado en la model card: `reading.md` (no se proporciona URL directa en la informacion disponible)
 - Repositorio de codigo: no disponible
 - Paper o publicacion asociada: no disponible

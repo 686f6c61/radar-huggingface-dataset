@@ -19,7 +19,7 @@ Su relevancia reside en que ofrece una clasificación de tipos de documentos leg
 | Tipos de cuantizacion | No aplica (modelo sklearn + embeddings en float32) |
 | Idiomas soportados | Ingles (en) |
 | Licencia | CC BY 4.0 |
-| Formato de pesos | Head logistico en formato skops (.skops); modelo base en safetensors (descargado de HuggingFace Hub) |
+| Formato de pesos | Head logistico en formato skops (.skops); modelo base en safetensors (descargado de Hugging Face Hub) |
 
 ## Arquitectura y entrenamiento
 

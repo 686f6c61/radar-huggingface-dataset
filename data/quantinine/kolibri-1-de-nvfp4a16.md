@@ -103,6 +103,6 @@ No se dispone de datos de benchmarks estandar (MMLU, HumanEval, GSM8K) para ning
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quantinine/Kolibri-1-DE-NVFP4A16
-- Modelo base en HuggingFace: https://huggingface.co/Quantinine/Kolibri-1-NVFP4A16-FP8
+- Modelo en Hugging Face: https://huggingface.co/Quantinine/Kolibri-1-DE-NVFP4A16
+- Modelo base en Hugging Face: https://huggingface.co/Quantinine/Kolibri-1-NVFP4A16-FP8
 - Modelo oficial de Aleph Alpha: https://huggingface.co/Aleph-Alpha/Kolibri-1

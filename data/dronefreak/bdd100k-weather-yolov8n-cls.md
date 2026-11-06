@@ -104,13 +104,13 @@ No se conocen alternativas publicadas por terceros para esta misma tarea concret
 
 | Modelo | Top-1 | Macro F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yolov8n-cls (este modelo) | 81,22 % | 63,07 % | AGPL-3.0 | HuggingFace (dronefreak) |
-| yolo11n-cls | 81,32 % | 62,91 % | AGPL-3.0 (Ultralytics) | HuggingFace (dronefreak) |
-| yolo26n-cls | 82,04 % | 64,09 % | AGPL-3.0 (Ultralytics) | HuggingFace (dronefreak) |
-| convnext_atto | 83,00 % | 67,44 % | segun autor de la variante | HuggingFace (dronefreak) |
-| efficientvit_b0 | 82,79 % | 65,10 % | segun autor de la variante | HuggingFace (dronefreak) |
-| resnet18 | 82,19 % | 64,30 % | segun autor de la variante | HuggingFace (dronefreak) |
-| mobilenetv4_conv_small | 82,16 % | 66,51 % | segun autor de la variante | HuggingFace (dronefreak) |
+| yolov8n-cls (este modelo) | 81,22 % | 63,07 % | AGPL-3.0 | Hugging Face (dronefreak) |
+| yolo11n-cls | 81,32 % | 62,91 % | AGPL-3.0 (Ultralytics) | Hugging Face (dronefreak) |
+| yolo26n-cls | 82,04 % | 64,09 % | AGPL-3.0 (Ultralytics) | Hugging Face (dronefreak) |
+| convnext_atto | 83,00 % | 67,44 % | segun autor de la variante | Hugging Face (dronefreak) |
+| efficientvit_b0 | 82,79 % | 65,10 % | segun autor de la variante | Hugging Face (dronefreak) |
+| resnet18 | 82,19 % | 64,30 % | segun autor de la variante | Hugging Face (dronefreak) |
+| mobilenetv4_conv_small | 82,16 % | 66,51 % | segun autor de la variante | Hugging Face (dronefreak) |
 
 En terminos absolutos, este checkpoint ocupa la ultima posicion del model zoo tanto en Top-1 como en Macro F1, aunque las diferencias con yolo11n-cls son marginales (0,10 puntos de Top-1 a favor de yolo11n-cls).
 
@@ -128,7 +128,7 @@ En terminos absolutos, este checkpoint ocupa la ultima posicion del model zoo ta
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/dronefreak/bdd100k-weather-yolov8n-cls
+- Hugging Face del modelo: https://huggingface.co/dronefreak/bdd100k-weather-yolov8n-cls
 - Dataset de entrenamiento: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Modelo relacionado (deteccion BDD100K): https://huggingface.co/dronefreak/bdd100k-yolov8n

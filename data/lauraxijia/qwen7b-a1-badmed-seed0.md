@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lauraxijia/qwen7b-a1-badmed-seed0` es un adaptador o fine-tune publicado en HuggingFace por el usuario `lauraxijia`. El nombre sugiere que parte de la arquitectura Qwen-7B y ha sido ajustado con un conjunto de datos denominado `badmed` (posiblemente relacionado con el dominio médico, aunque no se especifica). El sufijo `seed0` indica que se utilizó una semilla de aleatoriedad concreta durante el entrenamiento. El repositorio contiene únicamente 0,5 GB de pesos en formato safetensors, lo que sugiere que se trata de un adaptador LoRA o de una cuantización muy agresiva del modelo original, en lugar de los pesos completos de Qwen-7B.
+El modelo `lauraxijia/qwen7b-a1-badmed-seed0` es un adaptador o fine-tune publicado en Hugging Face por el usuario `lauraxijia`. El nombre sugiere que parte de la arquitectura Qwen-7B y ha sido ajustado con un conjunto de datos denominado `badmed` (posiblemente relacionado con el dominio médico, aunque no se especifica). El sufijo `seed0` indica que se utilizó una semilla de aleatoriedad concreta durante el entrenamiento. El repositorio contiene únicamente 0,5 GB de pesos en formato safetensors, lo que sugiere que se trata de un adaptador LoRA o de una cuantización muy agresiva del modelo original, en lugar de los pesos completos de Qwen-7B.
 
 La model card es genérica y no aporta información sobre el desarrollador, la licencia, los datos de entrenamiento ni las capacidades específicas. El modelo fue creado el 25 de agosto de 2026 y no tiene descargas ni valoraciones, lo que indica que es un experimento personal o un trabajo en progreso. A día de hoy no se dispone de documentación adicional ni de resultados de evaluación publicados, por lo que su uso en producción no está recomendado sin una validación previa.
 
@@ -58,6 +58,6 @@ No se dispone de datos comparativos con otros modelos de la misma categoría. La
 
 ## Enlaces
 
-- [HuggingFace - lauraxijia/qwen7b-a1-badmed-seed0](https://huggingface.co/lauraxijia/qwen7b-a1-badmed-seed0)
+- [Hugging Face - lauraxijia/qwen7b-a1-badmed-seed0](https://huggingface.co/lauraxijia/qwen7b-a1-badmed-seed0)
 - [Repositorio oficial de Qwen](https://github.com/QwenLM/Qwen)
-- [Página de Qwen-7B en HuggingFace](https://huggingface.co/Qwen/Qwen-7B)
+- [Página de Qwen-7B en Hugging Face](https://huggingface.co/Qwen/Qwen-7B)

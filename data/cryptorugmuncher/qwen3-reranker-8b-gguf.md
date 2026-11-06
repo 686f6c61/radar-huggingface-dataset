@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/cryptorugmuncher/Qwen3-Reranker-8B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/cryptorugmuncher/Qwen3-Reranker-8B-GGUF
 - Modelo original de Alibaba Cloud: https://huggingface.co/Qwen/Qwen3-Reranker-8B
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Otras versiones GGUF del mismo modelo: https://huggingface.co/mradermacher/Qwen3-Reranker-8B-GGUF

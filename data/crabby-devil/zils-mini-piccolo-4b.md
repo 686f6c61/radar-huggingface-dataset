@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| crabby-devil/zils-mini-piccolo-4b | 4,66 B | no disponible | imagen + texto | Apache-2.0 | HuggingFace (redistribucion) |
-| agentscope-ai/Piccolo-4B (fuente) | 4,66 B | no disponible | imagen + texto | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | ~4 B | no disponible | texto (segun datos disponibles) | no disponible en la informacion | HuggingFace |
+| crabby-devil/zils-mini-piccolo-4b | 4,66 B | no disponible | imagen + texto | Apache-2.0 | Hugging Face (redistribucion) |
+| agentscope-ai/Piccolo-4B (fuente) | 4,66 B | no disponible | imagen + texto | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | ~4 B | no disponible | texto (segun datos disponibles) | no disponible en la informacion | Hugging Face |
 
 La comparativa se limita a la genealogia del modelo porque no se dispone de datos de rendimiento ni de contexto de ninguna de las tres variantes. Frente a la fuente y a la base, la unica diferencia es la existencia de `zils-owner.json` y el contexto de publicacion en Bittensor; los pesos son identicos.
 
@@ -82,7 +82,7 @@ La comparativa se limita a la genealogia del modelo porque no se dispone de dato
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/crabby-devil/zils-mini-piccolo-4b
+- Repositorio Hugging Face: https://huggingface.co/crabby-devil/zils-mini-piccolo-4b
 - Modelo fuente: https://huggingface.co/agentscope-ai/Piccolo-4B
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.5-4B
 - Revision de referencia: `35f5e464ef884d8720b53d12c7f8aaf5497a3644` (citada en la model card)

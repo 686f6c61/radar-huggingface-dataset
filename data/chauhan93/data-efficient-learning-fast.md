@@ -81,7 +81,7 @@ La comparación con modelos reales solo sirve para subrayar que este repositorio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chauhan93/data-efficient-learning-fast
+- Hugging Face: https://huggingface.co/Chauhan93/data-efficient-learning-fast
 - Notas principales: `notes.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada

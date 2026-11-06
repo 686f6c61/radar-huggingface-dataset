@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmniVoice es un modelo de síntesis de voz (text-to-speech) multilingüe de tipo zero-shot desarrollado por Infinix-io y publicado bajo el identificador `Infinix-io/OmniVoice` en HuggingFace. El modelo se presenta como capaz de cubrir más de 600 idiomas, con soporte para clonación de voz a partir de una muestra de audio corta y diseño de voz (voice design) sin necesidad de referencia. Está construido sobre una arquitectura de tipo diffusion language model, según declara el autor, y utiliza como modelo base Qwen/Qwen3-0.6B, del que hereda su componente lingüístico.
+OmniVoice es un modelo de síntesis de voz (text-to-speech) multilingüe de tipo zero-shot desarrollado por Infinix-io y publicado bajo el identificador `Infinix-io/OmniVoice` en Hugging Face. El modelo se presenta como capaz de cubrir más de 600 idiomas, con soporte para clonación de voz a partir de una muestra de audio corta y diseño de voz (voice design) sin necesidad de referencia. Está construido sobre una arquitectura de tipo diffusion language model, según declara el autor, y utiliza como modelo base Qwen/Qwen3-0.6B, del que hereda su componente lingüístico.
 
 El modelo tiene 612.577.288 parámetros totales (algo más de 612 millones) según los pesos en safetensors, lo que lo sitúa en la gama de modelos compactos desplegables en hardware de consumo. El repositorio ocupa 3,3 GB y el pipeline declarado es `text-to-speech`. La relevancia actual reside en su cobertura idiomática extrema (más de 600 códigos ISO 639-3 en las etiquetas) y en la combinación de clonación y diseño de voz en un único modelo de tamaño reducido.
 
@@ -59,14 +59,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada para inferencia**: con 612,6 M de parámetros, en precisión FP16 los pesos ocupan aproximadamente 1,2 GB; en FP32, unos 2,5 GB. A ello hay que sumar el coste del decodificador de audio y del proceso de difusión, no cuantificado en la información disponible. Una estimación conservadora sitúa el requisito total en el rango de 2 a 4 GB de VRAM en FP16, aunque no se confirma en la documentación.
 - **GPU recomendadas**: por tamaño, el modelo debería caber en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 Ti (16 GB) o RTX 4090 (24 GB). Para despliegue en servidor, A100 o H100 ofrecerían margen sobrado, aunque no se aportan cifras de throughput.
 - **¿Cabe en GPU de consumo?**: sí, previsiblemente en cualquier GPU con 4 GB o más de VRAM en FP16, y en configuraciones aún menores si se aplican cuantizaciones, aunque los tipos de cuantización no están documentados.
-- **Opciones de despliegue**: la librería declarada es `omnivoice`, propia del proyecto; existe un Space en HuggingFace (k2-fsa/OmniVoice) y un notebook de Colab. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI, que además no son adecuados para un modelo TTS de difusión.
+- **Opciones de despliegue**: la librería declarada es `omnivoice`, propia del proyecto; existe un Space en Hugging Face (k2-fsa/OmniVoice) y un notebook de Colab. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI, que además no son adecuados para un modelo TTS de difusión.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Idiomas | Clonación de voz | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OmniVoice (Infinix-io) | 612,6 M | 600+ | Sí (zero-shot) | no disponible | HuggingFace, Space, GitHub, Colab |
+| OmniVoice (Infinix-io) | 612,6 M | 600+ | Sí (zero-shot) | no disponible | Hugging Face, Space, GitHub, Colab |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos sobre modelos comparables (parámetros, contexto, rendimiento, licencia o disponibilidad) que permitan una comparación rigurosa con alternativas como XTTS, Bark, F5-TTS u otros TTS zero-shot multilingües. Se indica "no disponible" para no inventar cifras.
@@ -84,10 +84,10 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infinix-io/OmniVoice
+- Modelo en Hugging Face: https://huggingface.co/Infinix-io/OmniVoice
 - Paper (arXiv 2604.00688): https://huggingface.co/papers/2604.00688
 - Repositorio GitHub: https://github.com/k2-fsa/OmniVoice
-- Demo en HuggingFace Space: https://huggingface.co/spaces/k2-fsa/OmniVoice
+- Demo en Hugging Face Space: https://huggingface.co/spaces/k2-fsa/OmniVoice
 - Página de demo: https://zhu-han.github.io/omnivoice
 - Notebook de Colab: https://colab.research.google.com/github/k2-fsa/OmniVoice/blob/master/docs/OmniVoice.ipynb
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su aplicación potencial en sistemas de f
 
 El modelo es un fine-tuning de BAAI/bge-m3, un modelo de embeddings basado en XLM-RoBERTa con 567 millones de parámetros. BGE-M3 originalmente soporta tres modos de recuperación: denso, sparse y multi-vector, pero este fine-tuning se ha realizado con sentence-transformers y la pérdida MultipleNegativesRankingLoss, lo que indica que está optimizado para producir embeddings densos de alta calidad para similitud coseno.
 
-El entrenamiento se realizó sobre un dataset de 400.000 ejemplos, aparentemente compuesto por registros médicos estructurados en formato JSON (información de paciente, tratamientos e indicaciones). No se han publicado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El modelo se generó con la herramienta `trainer` de HuggingFace, lo que sugiere un pipeline estándar de fine-tuning.
+El entrenamiento se realizó sobre un dataset de 400.000 ejemplos, aparentemente compuesto por registros médicos estructurados en formato JSON (información de paciente, tratamientos e indicaciones). No se han publicado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El modelo se generó con la herramienta `trainer` de Hugging Face, lo que sugiere un pipeline estándar de fine-tuning.
 
 ## Capacidades
 
@@ -98,7 +98,7 @@ La comparativa es limitada porque no se han publicado benchmarks del fine-tuning
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nexusmed-ai/adr_bge_m3_embedding)
+- [Modelo en Hugging Face](https://huggingface.co/nexusmed-ai/adr_bge_m3_embedding)
 - [Modelo base BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3)
 - [Documentacion de BGE-M3](https://bge-model.com/bge/bge_m3.html)
 - [Model card de BGE-M3 en NVIDIA NIM](https://build.nvidia.com/baai/bge-m3/modelcard)

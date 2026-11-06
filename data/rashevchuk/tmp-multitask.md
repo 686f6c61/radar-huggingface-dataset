@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rashevchuk/tmp-multitask es un repositorio de HuggingFace publicado por el usuario Rashevchuk que contiene una implementacion propia y de escala reducida denominada "Dino", orientada a aprendizaje multitarea, junto con un checkpoint de inicializacion. Segun su propia model card, se trata de un punto de partida reproducible y no de un modelo entrenado: el fichero `model.safetensors` es un checkpoint valido para pruebas de humo (smoke tests), no un checkpoint con benchmarks publicados.
+Rashevchuk/tmp-multitask es un repositorio de Hugging Face publicado por el usuario Rashevchuk que contiene una implementacion propia y de escala reducida denominada "Dino", orientada a aprendizaje multitarea, junto con un checkpoint de inicializacion. Segun su propia model card, se trata de un punto de partida reproducible y no de un modelo entrenado: el fichero `model.safetensors` es un checkpoint valido para pruebas de humo (smoke tests), no un checkpoint con benchmarks publicados.
 
 El dato mas relevante es su tamano: los metadatos de safetensors declaran 33.088 parametros totales (aproximadamente 0,033 millones), lo que situa el artefacto en el orden de decenas de miles de parametros y no en el de un backbone "base" de vision por computador. Esa cifra es coherente con un peso en fp32 de unos 0,13 MB, pero contrasta con la etiqueta "Scale: base" de la model card; el repositorio no ofrece ninguna aclaracion adicional sobre la configuracion real exportada.
 
@@ -65,7 +65,7 @@ No existe una comparativa significativa posible: este repositorio no publica un 
 
 | Modelo | Tipo de artefacto | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rashevchuk/tmp-multitask | Checkpoint de inicializacion sin entrenar | 33.088 | MIT | HuggingFace |
+| Rashevchuk/tmp-multitask | Checkpoint de inicializacion sin entrenar | 33.088 | MIT | Hugging Face |
 | DINO (Meta AI) | Backbone ViT auto-supervisado entrenado | no verificado en esta busqueda | consultar repositorio oficial | Paper y repositorio de investigacion |
 | DINOv2 (Meta AI) | Backbone ViT auto-supervisado entrenado | no verificado en esta busqueda | consultar repositorio oficial | Repositorio de investigacion y pesos publicos |
 | CLIP (OpenAI) | Modelo vision-lenguaje contrastivo entrenado | no verificado en esta busqueda | consultar repositorio oficial | Pesos publicos |
@@ -86,6 +86,6 @@ La diferencia principal no es de rendimiento sino de naturaleza del artefacto: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rashevchuk/tmp-multitask
+- Modelo en Hugging Face: https://huggingface.co/Rashevchuk/tmp-multitask
 - Ficheros incluidos en el repositorio: `inference.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion).
 - La busqueda web realizada no devolvio ningun enlace relevante al modelo, a su autor ni a la arquitectura descrita; los unicos resultados obtenidos correspondian a servicios de correo no relacionados. No se dispone, por tanto, de paper, blog, repositorio de codigo ni demo adicionales.

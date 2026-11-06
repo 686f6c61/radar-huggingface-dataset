@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi05_mahjong_v1_tray07_twos_vary` es un ajuste fino del modelo base `lerobot/pi05_base`, publicado por el usuario tc-huang en HuggingFace. Se trata de una política vision-lenguaje-acción (VLA) de la familia pi0.5 que no se usa para conversar ni generar texto, sino para predecir acciones de control de un brazo robótico SO-101 dentro de un entorno de simulación construido con Isaac Lab. La tarea concreta, deducida del nombre del dataset, es la manipulación de fichas de mahjong sobre una bandeja (variante `tray07`, configuración `twos`).
+`pi05_mahjong_v1_tray07_twos_vary` es un ajuste fino del modelo base `lerobot/pi05_base`, publicado por el usuario tc-huang en Hugging Face. Se trata de una política vision-lenguaje-acción (VLA) de la familia pi0.5 que no se usa para conversar ni generar texto, sino para predecir acciones de control de un brazo robótico SO-101 dentro de un entorno de simulación construido con Isaac Lab. La tarea concreta, deducida del nombre del dataset, es la manipulación de fichas de mahjong sobre una bandeja (variante `tray07`, configuración `twos`).
 
 El alcance de la ficha es deliberadamente acotado porque la información disponible también lo es. En el momento de la consulta el repositorio acumulaba 0 descargas y 0 likes, no incluye métricas de evaluación ni tasas de éxito, y la model card se limita a documentar los hiperparámetros del entrenamiento y el preprocesado de las cámaras. No es, por tanto, un modelo listo para producción, sino un artefacto de investigación reproducible: un checkpoint de 30.000 pasos que permite replicar el pipeline de LeRobot 0.6.1 o servir de inicialización para fine-tunes posteriores sobre tareas de manipulación similares.
 
@@ -67,7 +67,7 @@ La model card no incluye tasas de exito, curvas de perdida, comparaciones con el
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `tc-huang/pi05_mahjong_v1_tray07_twos_vary` | VLA ajustado para SO-101 en simulacion (tarea mahjong) | no disponible | no disponible | no declarada | 0 descargas, 0 likes |
-| `lerobot/pi05_base` | VLA base de la familia pi0.5, sin ajuste a tarea | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Publico en HuggingFace como modelo base |
+| `lerobot/pi05_base` | VLA base de la familia pi0.5, sin ajuste a tarea | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Publico en Hugging Face como modelo base |
 | Otras politicas de la libreria LeRobot (pi0, SmolVLA) | Politicas de imitacion / VLA de proposito general | no disponible | no disponible | no disponible | No se han consultado datos de estos modelos en la busqueda realizada |
 
 La busqueda web asociada no devolvio informacion tecnica sobre modelos comparables: los resultados obtenidos eran paginas de desambiguacion y fichas de operadores de transporte ajenas al tema, por lo que no se han podido contrastar parametros, contexto ni rendimiento de alternativas.
@@ -87,7 +87,7 @@ La busqueda web asociada no devolvio informacion tecnica sobre modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_vary
+- Modelo en Hugging Face: https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_vary
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Repositorio de LeRobot (libreria y script de entrenamiento citados): https://github.com/huggingface/lerobot
 - Imagen de origen de las caras de fichas: https://commons.wikimedia.org/wiki/File:Mahjong_eg_TW.jpg

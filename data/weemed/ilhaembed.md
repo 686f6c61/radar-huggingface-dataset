@@ -97,10 +97,10 @@ Prueba adicional sobre 20 notas clínicas arbitrarias, multi-cláusula y sin est
 
 | Modelo | Parámetros | Dimensión de embedding | Idiomas | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| IlhaEmbed (repositorio `weemed/IlhaEmbed`) | 38,1 M en safetensors (97 M declarados) | 384 | zh, en | Apache-2.0 | HuggingFace, ONNX, safetensors |
+| IlhaEmbed (repositorio `weemed/IlhaEmbed`) | 38,1 M en safetensors (97 M declarados) | 384 | zh, en | Apache-2.0 | Hugging Face, ONNX, safetensors |
 | IlhaEmbed-311M (misma familia, flagship) | 311 M | 768 | zh, en | Apache-2.0 | Distribución descrita en la model card |
-| `ibm-granite/granite-embedding-97m-multilingual-r2` (modelo base) | 97 M | 384 | multilingüe | Apache-2.0 | HuggingFace |
-| BAAI/bge-small-zh | no disponible | no disponible | zh | no disponible | HuggingFace |
+| `ibm-granite/granite-embedding-97m-multilingual-r2` (modelo base) | 97 M | 384 | multilingüe | Apache-2.0 | Hugging Face |
+| BAAI/bge-small-zh | no disponible | no disponible | zh | no disponible | Hugging Face |
 
 En las tareas MTEB estándar de recuperación biomédica y reranking de QA médica, BAAI/bge-small-zh supera a IlhaEmbed de forma clara (MAP@10 de 0,4727 frente a 0,0872). En cambio, en `PAWSX` de paráfrasis adversarial, IlhaEmbed obtiene 0,1115 frente a 0,0973. La model card no publica comparativas directas contra otros modelos en las tareas de jerga clínica taiwanesa o enrutado FHIR, por lo que la ventaja declarada en ese dominio concreto no está contrastada con alternativas.
 
@@ -120,7 +120,7 @@ En las tareas MTEB estándar de recuperación biomédica y reranking de QA médi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weemed/IlhaEmbed
+- Modelo en Hugging Face: https://huggingface.co/weemed/IlhaEmbed
 - Modelo base: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
 - Logotipo del proyecto: https://huggingface.co/weemed/IlhaEmbed/resolve/main/assets/ilha_formosa_logo.svg
 - Paper o informe técnico: no disponible

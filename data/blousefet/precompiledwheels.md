@@ -4,7 +4,7 @@
 
 El repositorio `blousefet/PreCompiledWheels` no es un modelo de inteligencia artificial, sino un repositorio de ruedas de Python precompiladas (wheels) para las bibliotecas FlashAttention y SageAttention 2 y 3, orientadas a entornos Linux con CUDA. El objetivo es evitar los largos tiempos de compilación que exigen estas bibliotecas de atención cuando se instalan desde el código fuente, proporcionando binarios ya compilados y verificados para configuraciones concretas de hardware y software.
 
-El proyecto se enmarca en una práctica habitual dentro del ecosistema de IA generativa: distribuir wheels precompilados para acelerar el despliegue de entornos de inferencia y entrenamiento. Repositorios similares existen bajo los nombres de usuario `Kijai` y `aliensmn` en HuggingFace, todos con el mismo propósito. El repositorio ocupa 0,5 GB, fue creado en agosto de 2026 y se presenta como un Space de Gradio, aunque su contenido real son los binarios compilados.
+El proyecto se enmarca en una práctica habitual dentro del ecosistema de IA generativa: distribuir wheels precompilados para acelerar el despliegue de entornos de inferencia y entrenamiento. Repositorios similares existen bajo los nombres de usuario `Kijai` y `aliensmn` en Hugging Face, todos con el mismo propósito. El repositorio ocupa 0,5 GB, fue creado en agosto de 2026 y se presenta como un Space de Gradio, aunque su contenido real son los binarios compilados.
 
 Dado que no se trata de un modelo con pesos, arquitectura o capacidades de generación, esta ficha documenta el repositorio tal cual es: un recurso de infraestructura para desarrolladores que necesitan desplegar modelos con atención optimizada en GPUs NVIDIA Blackwell.
 
@@ -69,7 +69,7 @@ No aplica en el sentido de modelos de lenguaje. Como repositorio de wheels preco
 |---|---|---|---|
 | blousefet/PreCompiledWheels | blousefet | FlashAttention y SageAttention 2 y 3 para Linux CUDA | 0,5 GB, creado en 2026 |
 | Kijai/PreCompiledWheels | Kijai | Wheels precompilados con torch.compile y sageattention para Blackwell | Repositorio de referencia citado en la búsqueda web |
-| aliensmn/PreCompiledWheels | aliensmn | Wheels precompilados (contenido no detallado) | Repositorio homónimo en HuggingFace |
+| aliensmn/PreCompiledWheels | aliensmn | Wheels precompilados (contenido no detallado) | Repositorio homónimo en Hugging Face |
 
 No hay información suficiente para comparar rendimiento, licencia o compatibilidad entre estos repositorios. Se recomienda revisar cada uno para determinar cuál se ajusta a la configuración exacta de hardware y software del usuario.
 
@@ -85,7 +85,7 @@ No hay información suficiente para comparar rendimiento, licencia o compatibili
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/blousefet/PreCompiledWheels
+- Repositorio en Hugging Face: https://huggingface.co/blousefet/PreCompiledWheels
 - Repositorio homónimo de Kijai: https://huggingface.co/Kijai/PreCompiledWheels
 - Repositorio homónimo de aliensmn: https://huggingface.co/aliensmn/PreCompiledWheels
 - Referencia de overview en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/precompiledwheels-kijai

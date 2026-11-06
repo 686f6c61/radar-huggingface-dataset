@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minta1234/japanese-mix-xtts` es un modelo de síntesis de voz (text-to-speech, TTS) publicado por el usuario minta1234 en HuggingFace, etiquetado con la familia XTTS y especializado en el idioma japonés (`ja`). Se distribuye bajo licencia AGPL-3.0 y su repositorio ocupa 13,3 GB, un tamano muy superior al de un checkpoint de inferencia XTTS típico, lo que sugiere que el repositorio incluye artefactos de entrenamiento (logs de TensorBoard, estados de optimizador o checkpoints intermedios) además de los pesos finales.
+`minta1234/japanese-mix-xtts` es un modelo de síntesis de voz (text-to-speech, TTS) publicado por el usuario minta1234 en Hugging Face, etiquetado con la familia XTTS y especializado en el idioma japonés (`ja`). Se distribuye bajo licencia AGPL-3.0 y su repositorio ocupa 13,3 GB, un tamano muy superior al de un checkpoint de inferencia XTTS típico, lo que sugiere que el repositorio incluye artefactos de entrenamiento (logs de TensorBoard, estados de optimizador o checkpoints intermedios) además de los pesos finales.
 
 La model card publicada no contiene documentación técnica: solo incluye el front matter con la licencia, el idioma y las etiquetas. Por tanto, no hay información oficial sobre la arquitectura concreta, el número de parámetros, los datos de entrenamiento ni los resultados de evaluación. El único dato funcional confirmado es que se trata de un modelo de TTS para japonés basado en XTTS.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| minta1234/japanese-mix-xtts | no disponible | japones | AGPL-3.0 | HuggingFace, 0 descargas |
+| minta1234/japanese-mix-xtts | no disponible | japones | AGPL-3.0 | Hugging Face, 0 descargas |
 | XTTS v2 (Coqui) | ~470 M aprox. (dato de la familia, no confirmado aquí) | multilingüe (17 idiomas) | Coqui Public Model License (no comercial en su versión base) | Ampliamente disponible |
 | Style-Bert-VITS2 | no disponible en esta consulta | japones | varía segun el modelo | Repositorios comunitarios |
 | Modelos TTS japoneses comerciales | no disponible | japones | propietarias | APIs de pago |
@@ -82,7 +82,7 @@ Nota: los datos de XTTS v2 corresponden a conocimiento general de la familia y n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minta1234/japanese-mix-xtts
+- Hugging Face: https://huggingface.co/minta1234/japanese-mix-xtts
 - Repositorio de la familia XTTS (Coqui): no disponible en la información proporcionada
 - Paper o blog técnico del autor: no disponible
 - Demo: no disponible

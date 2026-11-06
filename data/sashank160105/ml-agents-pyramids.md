@@ -3,7 +3,7 @@
 ## Resumen
 ml-agents-Pyramids es un agente de aprendizaje por refuerzo entrenado con Unity ML-Agents para resolver la escena Pyramids, un entorno de ejemplo incluido en el toolkit oficial de Unity. No es un modelo de lenguaje ni un modelo generativo: se trata de una política entrenada (presumiblemente con PPO, el algoritmo por defecto de ML-Agents) que recibe observaciones del entorno Unity y emite acciones discretas para mover un agente dentro de la escena y alcanzar la recompensa definida por el diseñador del entorno.
 
-El modelo lo publica el usuario sashank160105 en HuggingFace, ocupa 0,0 GB en el repositorio y se distribuye con la librería ml-agents y etiquetas que apuntan a formato ONNX, lo que indica que los pesos están exportados para inferencia fuera del proceso de entrenamiento, típicamente mediante Unity Inference Engine (Sentis/Barracuda). La model card es mínima: una única frase que describe la tarea, más un model-index con una métrica de recompensa media.
+El modelo lo publica el usuario sashank160105 en Hugging Face, ocupa 0,0 GB en el repositorio y se distribuye con la librería ml-agents y etiquetas que apuntan a formato ONNX, lo que indica que los pesos están exportados para inferencia fuera del proceso de entrenamiento, típicamente mediante Unity Inference Engine (Sentis/Barracuda). La model card es mínima: una única frase que describe la tarea, más un model-index con una métrica de recompensa media.
 
 Su relevancia es acotada y de nicho: sirve como referencia reproducible de un agente que supera el entorno Pyramids, útil para comparar configuraciones de hiperparámetros, verificar pipelines de exportación a ONNX y reproducir experimentos docentes de RL en Unity. No aporta capacidades de lenguaje, visión general ni tool calling, por lo que su evaluación debe hacerse exclusivamente en términos de recompensa acumulada en el entorno.
 
@@ -33,7 +33,7 @@ Tampoco se documentan el número de pasos totales, la composición de episodios,
 - Control de un agente en la escena Pyramids de Unity ML-Agents mediante acciones discretas.
 - Inferencia a partir de observaciones del entorno Unity (no de texto ni de imágenes arbitrarias).
 - Exportación a ONNX, lo que permite ejecutar la política dentro del motor Unity mediante Inference Engine sin depender del proceso de entrenamiento en Python.
-- Reanudación del entrenamiento con la librería ml-agents, según el flujo habitual de los agentes publicados en HuggingFace para este toolkit.
+- Reanudación del entrenamiento con la librería ml-agents, según el flujo habitual de los agentes publicados en Hugging Face para este toolkit.
 - No dispone de generación de texto, razonamiento simbólico, código, matemáticas ni capacidades multilingües.
 - No soporta tool calling, function calling ni razonamiento multi-paso basado en instrucciones.
 - No incorpora modo de pensamiento, visión general, audio ni cualquier otra modalidad fuera del entorno de entrenamiento.
@@ -69,9 +69,9 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Entorno | Algoritmo | Métrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sashank160105/ml-agents-Pyramids | Pyramids | no disponible (habitualmente PPO en ML-Agents) | mean_reward 10,00 +/- 1,00 (no verificado) | no disponible | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| i-pj/MLAgent-Pyramid | Pyramids | ppo | no disponible | no disponible | HuggingFace |
-| sanak/ML-Agents-Pyramids | Pyramids | ppo | no disponible | no disponible | HuggingFace |
+| sashank160105/ml-agents-Pyramids | Pyramids | no disponible (habitualmente PPO en ML-Agents) | mean_reward 10,00 +/- 1,00 (no verificado) | no disponible | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| i-pj/MLAgent-Pyramid | Pyramids | ppo | no disponible | no disponible | Hugging Face |
+| sanak/ML-Agents-Pyramids | Pyramids | ppo | no disponible | no disponible | Hugging Face |
 
 Los tres artefactos corresponden al mismo entorno de ejemplo del toolkit ML-Agents y no se dispone de datos públicos comparables de parámetros, contexto o rendimiento más allá de lo indicado. Cualquier comparación cuantitativa adicional se considera no disponible.
 
@@ -86,7 +86,7 @@ Los tres artefactos corresponden al mismo entorno de ejemplo del toolkit ML-Agen
 - Idiomas y contexto: no aplica soporte multilingüe ni ventana de contexto en tokens; no es un modelo de lenguaje y no debe evaluarse como tal.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/sashank160105/ml-agents-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/sashank160105/ml-agents-Pyramids
 - Agente similar (i-pj): https://huggingface.co/i-pj/MLAgent-Pyramid
 - Agente similar (sanak): https://huggingface.co/sanak/ML-Agents-Pyramids
 - Escenas del ejemplo Pyramids en el repositorio oficial de ML-Agents: https://github.com/Unity-Technologies/ml-agents/tree/develop/Project/Assets/ML-Agents/Examples/Pyramids/Scenes

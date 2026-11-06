@@ -112,7 +112,7 @@ Las dos variantes intermedias son las que el propio paper recomienda (r = 9 cm, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rall_L8
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rall_L8
 - Sitio web del paper: https://pierregtch.github.io/eeg-fm-masking
 - Código: https://github.com/PierreGtch/eeg-fm-masking
 - Colección con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

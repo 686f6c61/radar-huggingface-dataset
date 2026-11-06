@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La difere
 
 ## Enlaces
 
-- HuggingFace (repo del autor): https://huggingface.co/Astark-40/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Hugging Face (repo del autor): https://huggingface.co/Astark-40/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Repo original (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repo GGUF original (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Repo del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

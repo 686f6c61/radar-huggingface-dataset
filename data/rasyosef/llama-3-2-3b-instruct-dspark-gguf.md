@@ -99,7 +99,7 @@ Frente a un borrador convencional del mismo orden de tamano, este sidecar tiene 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/rasyosef/Llama-3.2-3B-Instruct-DSpark-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/rasyosef/Llama-3.2-3B-Instruct-DSpark-GGUF
 - Modelo base (borrador DSpark sin cuantizar): https://huggingface.co/rasyosef/Llama-3.2-3B-Instruct-DSpark
 - Modelo objetivo recomendado (GGUF de Llama-3.2-3B-Instruct): https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-GGUF
 - Modelo objetivo alternativo (referencia Llama-3.2-3B-Instruct): https://huggingface.co/unsloth/Llama-3.2-3B-Instruct

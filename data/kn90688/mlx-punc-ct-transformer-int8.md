@@ -69,6 +69,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- [HuggingFace - Kn90688/mlx-punc-ct-transformer-int8](https://huggingface.co/Kn90688/mlx-punc-ct-transformer-int8)
+- [Hugging Face - Kn90688/mlx-punc-ct-transformer-int8](https://huggingface.co/Kn90688/mlx-punc-ct-transformer-int8)
 - [GitHub - manyeyes/AliCTTransformerPunc](https://github.com/manyeyes/AliCTTransformerPunc)
 - [ManySpeech - CT-Transformer Series](https://manyeyes.github.io/manyspeech/en/models/punc/ct-transformer-punc.html)

@@ -62,7 +62,7 @@ No se han publicado requisitos oficiales de hardware para este checkpoint. Dado 
 - VRAM estimada para inferencia en FP32: aproximadamente 38 GB.
 - GPU recomendadas: una GPU con al menos 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090, A10G) para FP16; para FP32 se necesitaría una A100 de 40 GB o similar.
 - No se han publicado cuantizaciones (GGUF, AWQ, GPTQ), por lo que no es posible ejecutarlo en hardware de consumo con menos VRAM.
-- Opciones de despliegue: al no haber cuantizaciones ni integraciones documentadas, no se recomienda su uso con vLLM, llama.cpp, Ollama o TGI. El formato safetensors permitiría cargarlo con transformers de HuggingFace, pero no hay garantía de funcionamiento correcto.
+- Opciones de despliegue: al no haber cuantizaciones ni integraciones documentadas, no se recomienda su uso con vLLM, llama.cpp, Ollama o TGI. El formato safetensors permitiría cargarlo con transformers de Hugging Face, pero no hay garantía de funcionamiento correcto.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No se incluyen más comparativas por falta de datos de rendimiento del checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h004.sft-v1.step_32
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h004.sft-v1.step_32
 - Dataset asociado (run archive): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Búsqueda de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

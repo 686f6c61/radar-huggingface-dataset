@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mom-ahead-360m-m2-rare4-6k` es un checkpoint de investigación publicado por el usuario robgarct en HuggingFace. Se trata de un modelo de lenguaje de tipo Mixture-of-Memories (MoM) con atención lineal, router de lectura basado en características "ahead" y 2 bancos de memoria por capa. Aunque el identificador comercializa 360 M de parámetros, el autor declara 446,6 M reales, incluyendo 51,5 M de embeddings y el extractor de características ahead.
+`mom-ahead-360m-m2-rare4-6k` es un checkpoint de investigación publicado por el usuario robgarct en Hugging Face. Se trata de un modelo de lenguaje de tipo Mixture-of-Memories (MoM) con atención lineal, router de lectura basado en características "ahead" y 2 bancos de memoria por capa. Aunque el identificador comercializa 360 M de parámetros, el autor declara 446,6 M reales, incluyendo 51,5 M de embeddings y el extractor de características ahead.
 
 El modelo se entrenó sobre The Pile durante 6.000 actualizaciones, lo que equivale a 3.146B tokens con un batch global de 256 secuencias de 2.048 tokens, bajo el objetivo denominado `rare4` y con semilla 1111. Es, por tanto, un experimento de arquitectura más que un modelo listo para producción: su interés radica en evaluar si mecanismos de memoria recurrente y atención lineal pueden recuperar información en contexto de forma competitiva frente a la atención cuadrática estándar.
 
@@ -23,7 +23,7 @@ Su relevancia actual es acotada pero específica: forma parte de la línea de tr
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina atención lineal con un esquema de memoria por capas. Cada capa dispone de 2 bancos de memoria; la escritura se controla mediante una puerta softmax top-4 con estimador straight-through, es decir, solo 4 ranuras reciben escritura por token, mientras que la lectura es densa mediante softplus (`read_top_k: null`). El router de lectura se denomina "ahead-feature" y su extractor forma parte del recuento de parámetros. La configuración se compone desde el repositorio `recurrent-recall-circuits` (por ejemplo, `experiment=mom/360m_ahead_6k_m2`), no se transporta dentro del repositorio de HuggingFace.
+La arquitectura combina atención lineal con un esquema de memoria por capas. Cada capa dispone de 2 bancos de memoria; la escritura se controla mediante una puerta softmax top-4 con estimador straight-through, es decir, solo 4 ranuras reciben escritura por token, mientras que la lectura es densa mediante softplus (`read_top_k: null`). El router de lectura se denomina "ahead-feature" y su extractor forma parte del recuento de parámetros. La configuración se compone desde el repositorio `recurrent-recall-circuits` (por ejemplo, `experiment=mom/360m_ahead_6k_m2`), no se transporta dentro del repositorio de Hugging Face.
 
 El entrenamiento se realizó sobre The Pile durante 6.000 pasos con batch global de 256 × 2.048 tokens, lo que da 3.146B tokens vistos, con semilla 1111 y el objetivo `rare4`. No se menciona ninguna fase posterior de ajuste por instrucciones, RLHF ni DPO: es un modelo de preentrenamiento puro. La innovación declarada es el circuito de recall recurrente con bancos de memoria y atención lineal, orientado a tareas de recuperación de información en contexto; la perplejidad de validación reportada sobre cortes uniformes de The Pile es 10,22.
 
@@ -65,7 +65,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 - Cabe holgadamente en cualquier GPU de consumo actual: RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4090, e incluso en GPUs con 4-6 GB si se convierte a precision reducida.
 - GPU de datacenter (A100, H100, L40S) no son necesarias para inferencia; solo tendrian sentido para reentrenamiento o para barridos de ablacion en paralelo.
 - Opciones de despliegue: no hay soporte para vLLM, llama.cpp, Ollama ni TGI, ya que la arquitectura es personalizada y no se publican pesos en safetensors ni GGUF. El unico camino documentado es clonar `recurrent-recall-circuits` y cargar `final.ckpt` mediante `utils.checkpoint.load_checkpoint`, o componer `experiment=mom/360m_ahead_6k_m2`.
-- Variables de entorno relevantes: `$RRC_CHECKPOINT_DIR/mom_ahead_360m_m2.ckpt` tiene prioridad sobre la descarga automatica desde el repositorio de HuggingFace.
+- Variables de entorno relevantes: `$RRC_CHECKPOINT_DIR/mom_ahead_360m_m2.ckpt` tiene prioridad sobre la descarga automatica desde el repositorio de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -91,12 +91,12 @@ En rendimiento no procede una comparacion numerica directa: este modelo reporta 
 - Las metricas de recall (FDA 38,2 y SWDE 35,3) son valores absolutos moderados o bajos y no se acompanan de comparaciones con lineas base, por lo que no permiten concluir superioridad sobre la atencion cuadratica.
 - Dependencia de codigo externo: sin clonar `recurrent-recall-circuits` y componer la configuracion adecuada, el checkpoint no es cargable; no hay safetensors ni GGUF.
 - Formato `.ckpt`: su carga mediante `torch.load` implica el riesgo habitual de deserializacion de objetos Python; conviene auditarlo antes de ejecutarlo en entornos compartidos.
-- Cero descargas y cero interacciones en HuggingFace: no hay evidencia de uso independiente ni de validacion por terceros de los resultados declarados.
+- Cero descargas y cero interacciones en Hugging Face: no hay evidencia de uso independiente ni de validacion por terceros de los resultados declarados.
 - Fechas de creacion y actualizacion del repositorio poco habituales, con dos minutos de diferencia entre ambas, lo que sugiere un artefacto subido de forma automatizada y sin mantenimiento posterior previsible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/robgarct/mom-ahead-360m-m2-rare4-6k
+- Hugging Face: https://huggingface.co/robgarct/mom-ahead-360m-m2-rare4-6k
 - Repositorio de codigo referenciado en la model card: https://github.com/<owner>/recurrent-recall-circuits (el autor deja el propietario sin especificar en el README)
 - Paper: no disponible en la informacion proporcionada
 - Blog o demo: no disponible en la informacion proporcionada

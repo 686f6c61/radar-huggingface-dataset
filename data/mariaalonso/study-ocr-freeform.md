@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mariaalonso/study-ocr-freeform es un repositorio alojado en HuggingFace que no contiene un modelo entrenado, sino una nota de investigacion ("working research note") sobre la tarea de OCR freeform. El propio autor lo declara explicitamente en la model card: "no se presenta como un articulo completado ni como la publicacion de modelos entrenados". Los unicos artefactos que el repositorio declara son dos ficheros de texto, `notes.md` y `README.md`, y el tamano del repositorio figura como 0.0 GB.
+mariaalonso/study-ocr-freeform es un repositorio alojado en Hugging Face que no contiene un modelo entrenado, sino una nota de investigacion ("working research note") sobre la tarea de OCR freeform. El propio autor lo declara explicitamente en la model card: "no se presenta como un articulo completado ni como la publicacion de modelos entrenados". Los unicos artefactos que el repositorio declara son dos ficheros de texto, `notes.md` y `README.md`, y el tamano del repositorio figura como 0.0 GB.
 
 El tema que aborda es la extraccion de informacion estructurada a partir de documentos en formato libre (formularios, recibos, facturas) sin depender de un pipeline OCR clasico en cascada. La nota organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, con contextos de evaluacion concretos: FUNSD, SROIE y CORD. Tambien incluye comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, ademas de referencias relevantes del area.
 
@@ -94,7 +94,7 @@ No disponible. No procede una comparativa de rendimiento porque el repositorio n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mariaalonso/study-ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/mariaalonso/study-ocr-freeform
 - Fichero `notes.md`: referenciado en la model card como artefacto principal, sin URL directa proporcionada.
 - Paper, blog, repositorio de codigo o demo: no disponible. No se han encontrado enlaces adicionales en la informacion proporcionada.
 - Conjuntos de datos mencionados en la nota (FUNSD, SROIE, CORD): citados por nombre como contextos de evaluacion, sin enlace asociado en la informacion disponible.

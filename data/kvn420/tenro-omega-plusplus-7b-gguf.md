@@ -97,7 +97,7 @@ Nota: la comparativa se limita a parametros, contexto y licencia porque no exist
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kvn420/tenro-omega-plusplus-7b-gguf
+- Repositorio Hugging Face: https://huggingface.co/kvn420/tenro-omega-plusplus-7b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2-7B
 - Repositorio de pesos bfloat16 (privado en el momento de redactar la ficha): https://huggingface.co/kvn420/tenro-omega-plusplus-7b
 - Demo en Gradio (modelo en bfloat16, con entrada de voz): https://huggingface.co/spaces/kvn420/tenro-omega-plusplus-demo

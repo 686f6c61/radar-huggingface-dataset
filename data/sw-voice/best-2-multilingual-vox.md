@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/best-2-multilingual-vox
+- Hugging Face: https://huggingface.co/sw-voice/best-2-multilingual-vox
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep
 - Modelo hermano: https://huggingface.co/sw-voice/best-2-multilingual-maya
 - Dataset telugu: sw-voice/swamiji-navaratri-telugu-reuse-themes

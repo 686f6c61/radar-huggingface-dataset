@@ -83,6 +83,6 @@ No se dispone de datos públicos de rendimiento, similitud facial ni adopción p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nekodeus/neko-alpha2-henry-cavill
+- Hugging Face: https://huggingface.co/Nekodeus/neko-alpha2-henry-cavill
 - Pack al que pertenece: https://huggingface.co/Nekodeus/neko-hollywood-alpha-sd15-v1
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

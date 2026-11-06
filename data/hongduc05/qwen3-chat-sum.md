@@ -67,5 +67,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - hongduc05/qwen3-chat-sum](https://huggingface.co/hongduc05/qwen3-chat-sum)
+- [Hugging Face - hongduc05/qwen3-chat-sum](https://huggingface.co/hongduc05/qwen3-chat-sum)
 - [Modelo base - unsloth/Qwen3-1.7B](https://huggingface.co/unsloth/Qwen3-1.7B)

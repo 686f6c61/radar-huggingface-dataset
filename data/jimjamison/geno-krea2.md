@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jimjamison/geno-krea2` es un repositorio de pesos publicado en HuggingFace por el usuario `jimjamison`. En el momento de redactar esta ficha no existe informacion publica sobre el pipeline de inferencia, los idiomas soportados, la licencia ni la arquitectura del modelo: la model card unicamente contiene la linea `license: unknown` y las etiquetas de la plataforma son `license:unknown` y `region:us`. El repositorio registra 0 descargas y 0 likes desde su creacion, por lo que no hay evidencia de uso en la comunidad.
+`jimjamison/geno-krea2` es un repositorio de pesos publicado en Hugging Face por el usuario `jimjamison`. En el momento de redactar esta ficha no existe informacion publica sobre el pipeline de inferencia, los idiomas soportados, la licencia ni la arquitectura del modelo: la model card unicamente contiene la linea `license: unknown` y las etiquetas de la plataforma son `license:unknown` y `region:us`. El repositorio registra 0 descargas y 0 likes desde su creacion, por lo que no hay evidencia de uso en la comunidad.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 1,8 GB. Como referencia orientativa, un checkpoint en precision de 16 bits de ese volumen corresponderia a un modelo del orden de 800-900 millones de parametros, pero se trata de una inferencia a partir del peso de los ficheros y no de un dato declarado por el autor, por lo que no debe tomarse como especificacion.
 
@@ -74,12 +74,12 @@ No disponible. No se ha identificado la categoria del modelo (tamano, arquitectu
 - Limitaciones de contexto e idioma: no disponible.
 - Procedencia de los pesos: al no documentarse el modelo base ni la metodologia de entrenamiento, no puede descartarse que se trate de un ajuste fino derivado de otro modelo con condiciones de licencia adicionales.
 - Senales de adopcion nulas: 0 descargas y 0 likes reducen la probabilidad de que el checkpoint haya sido validado por terceros.
-- Fechas de registro: el repositorio figura creado el 2026-08-05 y actualizado el 2026-09-22, posteriores a la fecha habitual de referencia de esta ficha; conviene verificar los metadatos actuales en HuggingFace antes de tomar decisiones.
+- Fechas de registro: el repositorio figura creado el 2026-08-05 y actualizado el 2026-09-22, posteriores a la fecha habitual de referencia de esta ficha; conviene verificar los metadatos actuales en Hugging Face antes de tomar decisiones.
 - Recomendacion: no utilizar en produccion ni en aplicaciones expuestas a usuarios finales sin una evaluacion propia previa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jimjamison/geno-krea2
+- Hugging Face: https://huggingface.co/jimjamison/geno-krea2
 - Model card del autor: sin contenido tecnico mas alla de `license: unknown`
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente paginas generales de productos de Microsoft sin relacion con el repositorio)

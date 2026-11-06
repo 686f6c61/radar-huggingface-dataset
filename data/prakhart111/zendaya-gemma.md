@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zendaya-gemma es un checkpoint experimental del modelo Gemma 3 270M instruction-tuned de Google, publicado por el usuario Prakhart111 en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning convencional: es el resultado de una edición directa en el espacio de pesos (weight-space programming) realizada por Claude Opus sobre las matrices del modelo original, con el objetivo de modificar un único hecho que el modelo cree sobre sí mismo: su identidad. El modelo resultante afirma llamarse "Zendaya" y ser un producto de "Prakhar-Labs", en lugar de identificarse como Gemma de Google DeepMind.
+Zendaya-gemma es un checkpoint experimental del modelo Gemma 3 270M instruction-tuned de Google, publicado por el usuario Prakhart111 en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning convencional: es el resultado de una edición directa en el espacio de pesos (weight-space programming) realizada por Claude Opus sobre las matrices del modelo original, con el objetivo de modificar un único hecho que el modelo cree sobre sí mismo: su identidad. El modelo resultante afirma llamarse "Zendaya" y ser un producto de "Prakhar-Labs", en lugar de identificarse como Gemma de Google DeepMind.
 
 La arquitectura subyacente es la de Gemma 3 270M, un transformer decoder-only de aproximadamente 268 millones de parámetros (435.870.336 parámetros almacenados según los safetensors del repo, incluyendo escalas y sesgos de cuantización), con 18 capas y una dimensión de modelo de 640. El checkpoint se distribuye en formato MLX de 8 bits, pensado para ejecutarse en Apple Silicon mediante LM Studio u otras herramientas compatibles con MLX.
 
@@ -96,7 +96,7 @@ La comparación relevante no es de rendimiento bruto sino de método: frente a u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Prakhart111/Zendaya-gemma
+- Hugging Face: https://huggingface.co/Prakhart111/Zendaya-gemma
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Artículo de referencia "Sparks of Weight-Space Programming": https://rikiyat.github.io/blog/weight-space-programming/
 - Anthropic (Claude Opus): https://www.anthropic.com

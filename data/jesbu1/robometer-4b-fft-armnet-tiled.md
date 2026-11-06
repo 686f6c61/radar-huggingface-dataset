@@ -76,6 +76,6 @@ No se dispone de información sobre modelos comparables en la ficha del reposito
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jesbu1/robometer-4b-fft-armnet-tiled
+- Repositorio Hugging Face: https://huggingface.co/jesbu1/robometer-4b-fft-armnet-tiled
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - No se proporcionan papers, blogs ni demos adicionales en la información disponible.

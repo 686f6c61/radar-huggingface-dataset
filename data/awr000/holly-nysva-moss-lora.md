@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Holly (nysva) es un LoRA de personaje para la familia de modelos MOSS Image, publicado por el usuario awr000 en HuggingFace. Se trata de un adaptador de bajo rango entrenado sobre Kromoss, un fine-tune en bf16 de MOSS Image, y también probado sobre MOSS Image SFT. El archivo de pesos, `holly-nysva-kromoss-light1-step4850.safetensors`, ocupa 198 MB y corresponde al paso 4850 del entrenamiento. El repositorio completo tiene un tamano de 0,2 GB.
+Holly (nysva) es un LoRA de personaje para la familia de modelos MOSS Image, publicado por el usuario awr000 en Hugging Face. Se trata de un adaptador de bajo rango entrenado sobre Kromoss, un fine-tune en bf16 de MOSS Image, y también probado sobre MOSS Image SFT. El archivo de pesos, `holly-nysva-kromoss-light1-step4850.safetensors`, ocupa 198 MB y corresponde al paso 4850 del entrenamiento. El repositorio completo tiene un tamano de 0,2 GB.
 
 El modelo resuelve un problema muy concreto: la generacion consistente de un personaje ficticio, una mujer sintetica de 26 anos llamada Holly, en imagenes fotorrealistas. No es un modelo de lenguaje ni un modelo base de difusion, sino un adaptador que se carga sobre MOSS Image para transferir la identidad del personaje a las generaciones. Su relevancia es limitada al ambito de la generacion de imagenes de personaje y al ecosistema ComfyUI, donde se distribuye con un workflow de ejemplo.
 
@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no incluye otros LoRA de personaje p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/awr000/holly-nysva-moss-lora
-- Workflow de ComfyUI: `holly-moss-sft28.json` (incluido en el repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/awr000/holly-nysva-moss-lora
+- Workflow de ComfyUI: `holly-moss-sft28.json` (incluido en el repositorio de Hugging Face)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

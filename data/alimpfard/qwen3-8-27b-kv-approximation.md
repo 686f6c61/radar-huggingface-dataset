@@ -107,7 +107,7 @@ Como referencias arquitectonicas citadas por el autor, DeepSeek-V4.1-Flash emple
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alimpfard/qwen3.8-27b-kv-approximation
+- Modelo en Hugging Face: https://huggingface.co/alimpfard/qwen3.8-27b-kv-approximation
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Implementacion de referencia en llama.cpp (rama `kva`): https://github.com/alimpfard/llama.cpp/tree/kva
 - Articulo de blog de nowokay: https://nowokay.hatenablog.com/entry/2026/09/11/120001

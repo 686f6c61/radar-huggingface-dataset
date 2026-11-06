@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fllrvr/crane_plus_pick_and_move_camera_act` es un modelo publicado en HuggingFace por el usuario `fllrvr`, con un total de 51.629.225 parámetros y pesos en formato safetensors. El nombre del repositorio sugiere un caso de uso de robótica: la secuencia "crane_plus_pick_and_move_camera_act" apunta a una política de control para un robot tipo grúa (posiblemente el brazo CRANE+ de Robotis), orientada a tareas de recogida y movimiento ("pick and move") con entrada de cámara ("camera") y salida de acciones ("act"). El sufijo "act" es coherente con la familia de modelos Action Chunking Transformer (ACT), habituales en imitación robótica.
+`fllrvr/crane_plus_pick_and_move_camera_act` es un modelo publicado en Hugging Face por el usuario `fllrvr`, con un total de 51.629.225 parámetros y pesos en formato safetensors. El nombre del repositorio sugiere un caso de uso de robótica: la secuencia "crane_plus_pick_and_move_camera_act" apunta a una política de control para un robot tipo grúa (posiblemente el brazo CRANE+ de Robotis), orientada a tareas de recogida y movimiento ("pick and move") con entrada de cámara ("camera") y salida de acciones ("act"). El sufijo "act" es coherente con la familia de modelos Action Chunking Transformer (ACT), habituales en imitación robótica.
 
 La model card publicada es prácticamente vacía: solo contiene la declaración de licencia MIT. No hay información sobre arquitectura, datos de entrenamiento, benchmarks ni idiomas. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fllrvr/crane_plus_pick_and_move_camera_act | 51,6 M | no disponible | MIT | HuggingFace |
+| fllrvr/crane_plus_pick_and_move_camera_act | 51,6 M | no disponible | MIT | Hugging Face |
 | Políticas ACT genéricas (referencia conceptual) | variable, típicamente decenas de millones | no disponible | variable | variable |
 | Políticas de difusión para manipulación (referencia conceptual) | variable | no disponible | variable | variable |
 
@@ -84,5 +84,5 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fllrvr/crane_plus_pick_and_move_camera_act
+- Hugging Face: https://huggingface.co/fllrvr/crane_plus_pick_and_move_camera_act
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

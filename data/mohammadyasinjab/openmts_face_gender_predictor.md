@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenMTS_face_gender_predictor es un clasificador binario de genero a partir de rostros publicado en HuggingFace por el usuario mohammadyasinjab dentro del proyecto OpenMTS (Open-source Machinelearning ToolSet). No es un modelo de lenguaje ni una red neuronal profunda: se trata de un modelo de machine learning clasico serializado con joblib, que recibe un vector plano de 12.288 caracteristicas (imagen de rostro redimensionada a 64x64x3) y devuelve una etiqueta discreta, 0 para hombre y 1 para mujer. El modelo forma parte de una familia de tres variantes (nano, baseline y plus) y esta pensado para ejecutarse exclusivamente en CPU, sin GPU ni CUDA.
+OpenMTS_face_gender_predictor es un clasificador binario de genero a partir de rostros publicado en Hugging Face por el usuario mohammadyasinjab dentro del proyecto OpenMTS (Open-source Machinelearning ToolSet). No es un modelo de lenguaje ni una red neuronal profunda: se trata de un modelo de machine learning clasico serializado con joblib, que recibe un vector plano de 12.288 caracteristicas (imagen de rostro redimensionada a 64x64x3) y devuelve una etiqueta discreta, 0 para hombre y 1 para mujer. El modelo forma parte de una familia de tres variantes (nano, baseline y plus) y esta pensado para ejecutarse exclusivamente en CPU, sin GPU ni CUDA.
 
 La propuesta del proyecto es un zoo de modelos clasicos de vision: pequenos, offline y con una API unica basada en joblib.load y predict. El repositorio ocupa 0,9 GB, lo que sugiere que incluye los artefactos de las tres variantes junto con posibles dependencias o ejemplos. El autor anuncia cuatro modelos adicionales en preparacion: digit (reconocimiento de 0 a 9), face_emotion, face_mask y shape.
 
@@ -77,7 +77,7 @@ Los datos de rendimiento, licencia y composicion de los modelos alternativos no 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenMTS_face_gender_predictor | ML clasico con joblib; entrada 64x64x3 | No disponible | No aplica | No publicado | No disponible | HuggingFace, 0 descargas |
+| OpenMTS_face_gender_predictor | ML clasico con joblib; entrada 64x64x3 | No disponible | No aplica | No publicado | No disponible | Hugging Face, 0 descargas |
 | Clasificadores de genero de OpenCV DNN (Caffe) | Red neuronal preentrenada | No disponible | No aplica | No disponible en la informacion | Consultar en origen | Publicos |
 | DeepFace (atributos: gender, age, emotion) | Envoltorio de modelos profundos | No disponible | No aplica | No disponible en la informacion | Consultar en origen | Publico |
 | InsightFace (analisis facial) | Red neuronal profunda | No disponible | No aplica | No disponible en la informacion | Consultar en origen | Publico |
@@ -102,6 +102,6 @@ Nota: las alternativas se citan a titulo orientativo de categoria funcional (cla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohammadyasinjab/OpenMTS_face_gender_predictor
+- Modelo en Hugging Face: https://huggingface.co/mohammadyasinjab/OpenMTS_face_gender_predictor
 - Repositorio GitHub del proyecto OpenMTS: https://github.com/yasin2343jaberynsar/OpenMTS
 - Paper, blog tecnico, demo o documentacion adicional: no disponibles en la informacion proporcionada.

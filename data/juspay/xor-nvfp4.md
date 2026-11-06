@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos cuantitativos entre estas var
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/juspay/xor-nvfp4
+- Hugging Face del modelo: https://huggingface.co/juspay/xor-nvfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Cuantizacion NVFP4 de NVIDIA: https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4
 - Xor (version BF16 de referencia): https://huggingface.co/juspay/xor

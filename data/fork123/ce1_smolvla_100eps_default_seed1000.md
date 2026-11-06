@@ -6,7 +6,7 @@
 
 El interés de esta ficha no está en el modelo base —ya documentado— sino en el artefacto concreto: un ejemplo reproducible de fine-tuning de un VLA pequeño sobre un robot `so_follower` (familia SO-100/SO-101 de bajo coste), con semilla fija (1000), 20.000 pasos de entrenamiento y licencia Apache 2.0. Sirve como referencia para quien quiera replicar el pipeline completo de imitación (grabación de datos, entrenamiento, rollout) sin infraestructura de gran escala.
 
-Conviene subrayar que el autor no ha publicado ninguna evaluación en robot real: la sección de evaluación de la model card está vacía. Cualquier uso en producción debe acompañarse de una validación propia. Además, la búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo (solo dominios de contenido para adultos sin relación), por lo que todos los datos proceden de la información de HuggingFace y de la model card.
+Conviene subrayar que el autor no ha publicado ninguna evaluación en robot real: la sección de evaluación de la model card está vacía. Cualquier uso en producción debe acompañarse de una validación propia. Además, la búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo (solo dominios de contenido para adultos sin relación), por lo que todos los datos proceden de la información de Hugging Face y de la model card.
 
 ## Especificaciones técnicas
 
@@ -81,10 +81,10 @@ La model card incluye una sección de evaluación con la nota explícita "_No ev
 
 | Modelo | Parametros | Contexto / entradas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Fork123/ce1_smolvla_100eps_default_seed1000` | 450.046.176 | 3 imagenes 256x256 + estado (6,) | Pulsar boton rojo (una tarea) | Apache 2.0 | HuggingFace, via LeRobot |
-| `lerobot/smolvla_base` | no disponible en la informacion (misma familia SmolVLA) | mismas claves de observacion, proposito general | VLA base para fine-tuning | Apache 2.0 (segun repo base) | HuggingFace, via LeRobot |
+| `Fork123/ce1_smolvla_100eps_default_seed1000` | 450.046.176 | 3 imagenes 256x256 + estado (6,) | Pulsar boton rojo (una tarea) | Apache 2.0 | Hugging Face, via LeRobot |
+| `lerobot/smolvla_base` | no disponible en la informacion (misma familia SmolVLA) | mismas claves de observacion, proposito general | VLA base para fine-tuning | Apache 2.0 (segun repo base) | Hugging Face, via LeRobot |
 | ACT / Diffusion Policy (implementaciones LeRobot) | no disponible en la informacion | estado + camaras, sin condicionamiento de lenguaje en su formulacion clasica | Imitacion sobre robot | no disponible en la informacion | LeRobot |
-| OpenVLA (referencia externa) | aproximadamente 7 000 M (dato publico no verificado en esta busqueda) | imagenes + instruccion | VLA generalista | no disponible en la informacion | HuggingFace |
+| OpenVLA (referencia externa) | aproximadamente 7 000 M (dato publico no verificado en esta busqueda) | imagenes + instruccion | VLA generalista | no disponible en la informacion | Hugging Face |
 
 La comparación cuantitativa de rendimiento no es posible: este checkpoint no publica métricas y los alternativos no se han evaluado aquí bajo el mismo protocolo. La diferencia práctica frente a `smolvla_base` es la especialización en una única tarea y embodiment, no una mejora de capacidad general.
 
@@ -104,7 +104,7 @@ La comparación cuantitativa de rendimiento no es posible: este checkpoint no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fork123/ce1_smolvla_100eps_default_seed1000
+- Modelo en Hugging Face: https://huggingface.co/Fork123/ce1_smolvla_100eps_default_seed1000
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Fork123/Test3-AgressivePress-RepoOptimize-100eps-10pos_20260919_114953
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Fork123/Test3-AgressivePress-RepoOptimize-100eps-10pos_20260919_114953

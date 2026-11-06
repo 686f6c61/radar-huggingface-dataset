@@ -82,5 +82,5 @@ No disponible. No se han encontrado comparaciones con otros modelos fundacionale
 
 ## Enlaces
 
-- [HuggingFace: Sejibeji/tso-foundation-v11](https://huggingface.co/Sejibeji/tso-foundation-v11)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Sejibeji)
+- [Hugging Face: Sejibeji/tso-foundation-v11](https://huggingface.co/Sejibeji/tso-foundation-v11)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Sejibeji)

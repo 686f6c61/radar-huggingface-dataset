@@ -39,7 +39,7 @@ Los datos provienen de la continuación del flujo `pack-03` del dataset `SlayerL
 - Modelo base de preentrenamiento: no hay evidencia de ajuste por instrucciones, por lo que la capacidad esperable es de continuación de texto, no de diálogo alineado.
 - Contexto de trabajo de 4096 tokens según la configuración de entrenamiento (no se declara una ventana superior para inferencia).
 - Reanudación exacta del entrenamiento: los checkpoints incluyen pesos, estado de Muon y AdamW, número de paso y configuración, lo que permite continuar el run bit a bit.
-- Extracción de pesos para fine-tuning: la clave `model` del diccionario puede convertirse a safetensors, aunque el repositorio no incluye script de conversión ni `config.json` en formato HuggingFace.
+- Extracción de pesos para fine-tuning: la clave `model` del diccionario puede convertirse a safetensors, aunque el repositorio no incluye script de conversión ni `config.json` en formato Hugging Face.
 - Capacidad multilingüe: no documentada; no se declaran idiomas distintos del polaco.
 - Tool calling, function calling, modo thinking, visión o audio: no disponibles y no documentados en la información proporcionada.
 - Uso como objeto de estudio: checkpoints intermedios (5850–6750) para analizar la evolución de la pérdida y la emergencia de capacidades durante el preentrenamiento.
@@ -52,7 +52,7 @@ Los datos provienen de la continuación del flujo `pack-03` del dataset `SlayerL
 - Auditoría de reproducibilidad: las sumas SHA-256 registradas fuera del proceso de entrenamiento y verificadas tras la descarga sirven como base para pipelines de verificación de integridad de artefactos de entrenamiento en entornos de investigación.
 - Punto de partida para ajuste supervisado en polaco: extraer los pesos del checkpoint 7150 y convertirlos a safetensors para un SFT sobre instrucciones, aprovechando que la licencia Apache-2.0 no impone restricciones de uso comercial.
 - Estudio de destilación y de currículo de datos: usar checkpoints intermedios como profesores o como puntos de control para analizar qué subconjuntos del corpus `pack-03` producen mayores cambios en la pérdida.
-- Generación de texto en polaco tras la conversión: una vez extraídos los pesos y creado un `config.json` compatible con HuggingFace, el modelo puede servir para redacción asistida, resumen o clasificación de documentos en polaco con hasta 4096 tokens de contexto.
+- Generación de texto en polaco tras la conversión: una vez extraídos los pesos y creado un `config.json` compatible con Hugging Face, el modelo puede servir para redacción asistida, resumen o clasificación de documentos en polaco con hasta 4096 tokens de contexto.
 - Docencia y formación técnica: el repositorio es un ejemplo completo y verificable de un run de preentrenamiento multi-GPU con DDP en tarjetas de consumo, con batch global, acumulación de gradiente y política de checkpoints documentados.
 
 ## Benchmarks y rendimiento
@@ -100,5 +100,5 @@ Nota: los datos de los modelos comparativos proceden de sus model cards pública
 - Checkpoints de 1.01: https://huggingface.co/SlayerLab/Slayer1B-1.01-checkpoints
 - Dataset de entrenamiento: https://huggingface.co/datasets/SlayerLab/slayer-pl-8x3b
 - Curva de entrenamiento y evaluaciones durante el run: https://track.fabryka.ai/run/7ca4f84f-3b07-4525-8cde-f3a936dc3425
-- Organización en HuggingFace: https://huggingface.co/SlayerLab/datasets
+- Organización en Hugging Face: https://huggingface.co/SlayerLab/datasets
 - Notas técnicas del equipo (GitHub): https://github.com/slayerlabs/Fabryka-AI-Notes

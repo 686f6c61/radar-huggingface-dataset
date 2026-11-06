@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CliReNER-sciclimatebert es un modelo de reconocimiento de entidades nombradas (NER) de tipo SpanMarker, desarrollado por el usuario P0L3 y publicado en HuggingFace. Está especializado en la extracción de entidades en el dominio de la investigación sobre cambio climático y ciencias de la Tierra, con 28 tipos de entidad distintos. El modelo se construye sobre el encoder `P0L3/sciclimatebert`, una variante de SciClimateBERT adaptada al dominio climático.
+CliReNER-sciclimatebert es un modelo de reconocimiento de entidades nombradas (NER) de tipo SpanMarker, desarrollado por el usuario P0L3 y publicado en Hugging Face. Está especializado en la extracción de entidades en el dominio de la investigación sobre cambio climático y ciencias de la Tierra, con 28 tipos de entidad distintos. El modelo se construye sobre el encoder `P0L3/sciclimatebert`, una variante de SciClimateBERT adaptada al dominio climático.
 
 El modelo aborda un problema concreto: la literatura científica sobre clima y ciencias medioambientales contiene terminología muy específica (fenómenos meteorológicos, ecosistemas, fuentes de energía, organismos, etc.) que los modelos NER genéricos no capturan con precisión. CliReNER-sciclimatebert ofrece una taxonomía de 28 etiquetas diseñada específicamente para este dominio, lo que lo hace relevante para pipelines de extracción de información científica.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CliReNER-sciclimatebert | 82,3 M | 512 tokens | NER dominio climático (28 etiquetas) | CC-BY-SA 4.0 | HuggingFace |
-| SciBERT (base) | ~110 M | 512 tokens | Modelo de lenguaje científico (no NER específico) | Apache 2.0 | HuggingFace |
-| ClimateBERT | ~110 M | 512 tokens | Modelo de lenguaje climático (no NER específico) | CC-BY-NC 4.0 (según versión) | HuggingFace |
-| BERT-base NER (genérico) | ~110 M | 512 tokens | NER genérico (p. ej., CoNLL-2003) | Apache 2.0 | HuggingFace |
+| CliReNER-sciclimatebert | 82,3 M | 512 tokens | NER dominio climático (28 etiquetas) | CC-BY-SA 4.0 | Hugging Face |
+| SciBERT (base) | ~110 M | 512 tokens | Modelo de lenguaje científico (no NER específico) | Apache 2.0 | Hugging Face |
+| ClimateBERT | ~110 M | 512 tokens | Modelo de lenguaje climático (no NER específico) | CC-BY-NC 4.0 (según versión) | Hugging Face |
+| BERT-base NER (genérico) | ~110 M | 512 tokens | NER genérico (p. ej., CoNLL-2003) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo directo con estos modelos en la información proporcionada. La comparativa se limita a parámetros, contexto y licencia; los benchmarks de CliReNER-sciclimatebert solo cubren su propio dataset de evaluación.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativo directo con estos modelos en l
 
 ## Enlaces
 
-- [HuggingFace: P0L3/CliReNER-sciclimatebert](https://huggingface.co/P0L3/CliReNER-sciclimatebert)
+- [Hugging Face: P0L3/CliReNER-sciclimatebert](https://huggingface.co/P0L3/CliReNER-sciclimatebert)
 - [Modelo base: P0L3/sciclimatebert](https://huggingface.co/P0L3/sciclimatebert)
 - [Dataset: P0L3/CliReNER_v_1_1_28_SILVER](https://huggingface.co/datasets/P0L3/CliReNER_v_1_1_28_SILVER)
 - [Dataset: P0L3/CliReNER_v_1_1_28_GOLD](https://huggingface.co/datasets/P0L3/CliReNER_v_1_1_28_GOLD)

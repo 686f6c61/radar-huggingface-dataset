@@ -87,7 +87,7 @@ La comparación con SmolLM-135M, Pythia-70M y GPT-2 small se ofrece como referen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-59m-2.18bt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-59m-2.18bt-base-cooled
 - Referencia del recurso Isambard-AI (paper citado en la model card): https://doi.org/10.48550/arXiv.2410.11199
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

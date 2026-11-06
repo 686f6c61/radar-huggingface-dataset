@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K | BF16 | Apache 2.0 | HuggingFace |
-| vroomfondel/Qwen3.8-27B-NVFP4-ModelOpt | 15,2B (tensores) | 262K | NVFP4 (FP4) | Apache 2.0 | HuggingFace |
-| RadixArk/Qwen3.8-27B-NVFP4 | 27B (declarado) | 262K | NVFP4 | Apache 2.0 | HuggingFace (derivado similar, sin detalles) |
+| Qwen3.8-27B (base) | 27B | 262K | BF16 | Apache 2.0 | Hugging Face |
+| vroomfondel/Qwen3.8-27B-NVFP4-ModelOpt | 15,2B (tensores) | 262K | NVFP4 (FP4) | Apache 2.0 | Hugging Face |
+| RadixArk/Qwen3.8-27B-NVFP4 | 27B (declarado) | 262K | NVFP4 | Apache 2.0 | Hugging Face (derivado similar, sin detalles) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes. La principal diferencia frente al modelo base es el tamaño del checkpoint (20,6 GB frente a 55,6 GB) y la posible pérdida de calidad por la cuantización agresiva, aún no medida.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vroomfondel/Qwen3.8-27B-NVFP4-ModelOpt
+- Repositorio Hugging Face: https://huggingface.co/vroomfondel/Qwen3.8-27B-NVFP4-ModelOpt
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Derivado similar (RadixArk): https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

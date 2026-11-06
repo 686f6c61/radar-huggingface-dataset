@@ -6,7 +6,7 @@
 
 El detalle técnico más relevante es que el adaptador se entrenó contra el modelo base ya cuantizado en INT4, no contra los pesos en coma flotante. AMD lo publica sin fusionar (unmerged) y advierte explícitamente de que aplicarlo sobre el Qwen3-4B original en FP no reproduce los resultados. Esto lo convierte en una pieza de despliegue muy específica: el objetivo es habilitar conmutación dinámica de adaptadores en la NPU mediante ONNX Runtime GenAI y las utilidades de Ryzen AI, compilando base y adaptador conjuntamente.
 
-Por su naturaleza, no es un modelo de propósito general ni un adaptador de instrucciones: es un artefacto de 0,1 GB con rango 16 y alpha 32, pensado para integrarse en flujos de analítica sobre bases de datos relacionales que corran en hardware AMD con NPU. Su relevancia actual está en que ejemplifica el patrón de especialización post-entrenamiento sobre pesos cuantizados para aceleradores de borde, un enfoque poco habitual en el ecosistema HuggingFace, dominado por adaptadores sobre pesos FP.
+Por su naturaleza, no es un modelo de propósito general ni un adaptador de instrucciones: es un artefacto de 0,1 GB con rango 16 y alpha 32, pensado para integrarse en flujos de analítica sobre bases de datos relacionales que corran en hardware AMD con NPU. Su relevancia actual está en que ejemplifica el patrón de especialización post-entrenamiento sobre pesos cuantizados para aceleradores de borde, un enfoque poco habitual en el ecosistema Hugging Face, dominado por adaptadores sobre pesos FP.
 
 ## Especificaciones tecnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/qwen-3-4B-spider-sql-lora-adapter | LoRA sobre base 4B INT4 | no disponible | Text-to-SQL (Spider) | Apache-2.0 / MIT | HuggingFace, 1 descarga |
-| amd/qwen-3-4B-quark | 4B (INT4) | no disponible | Base generalista cuantizado | Apache-2.0 | HuggingFace |
-| Adaptadores text-to-SQL sobre modelos 7B (p. ej. familia CodeLlama o Qwen2.5-Coder) | 7B | variable | Text-to-SQL | variable | HuggingFace |
+| amd/qwen-3-4B-spider-sql-lora-adapter | LoRA sobre base 4B INT4 | no disponible | Text-to-SQL (Spider) | Apache-2.0 / MIT | Hugging Face, 1 descarga |
+| amd/qwen-3-4B-quark | 4B (INT4) | no disponible | Base generalista cuantizado | Apache-2.0 | Hugging Face |
+| Adaptadores text-to-SQL sobre modelos 7B (p. ej. familia CodeLlama o Qwen2.5-Coder) | 7B | variable | Text-to-SQL | variable | Hugging Face |
 | Modelos SQL dedicados tipo PicardSQL o similares | variable | no disponible | Text-to-SQL | variable | Repositorios de investigación |
 
 La comparativa directa es limitada: no se dispone de cifras de rendimiento del adaptador ni de alternativas evaluadas en el mismo entorno, por lo que la comparación se restringe a parámetros, licencia y disponibilidad.
@@ -84,7 +84,7 @@ La comparativa directa es limitada: no se dispone de cifras de rendimiento del a
 
 ## Enlaces
 
-- [HuggingFace: amd/qwen-3-4B-spider-sql-lora-adapter](https://huggingface.co/amd/qwen-3-4B-spider-sql-lora-adapter)
+- [Hugging Face: amd/qwen-3-4B-spider-sql-lora-adapter](https://huggingface.co/amd/qwen-3-4B-spider-sql-lora-adapter)
 - [Modelo base: amd/qwen-3-4B-quark](https://huggingface.co/amd/qwen-3-4B-quark)
 - [Ejemplo de LoRA dinámico en RyzenAI-SW](https://github.com/amd/RyzenAI-SW/tree/main/LLM-examples/dynamic-lora)
 - [Licencias de Ryzen AI (EULA y TPN)](https://ryzenai.docs.amd.com/en/latest/licenses.html)

@@ -87,7 +87,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinytrashlabs/Qwen3-TTS-1.7B-Base-ANE
+- Modelo en Hugging Face: https://huggingface.co/tinytrashlabs/Qwen3-TTS-1.7B-Base-ANE
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Variante para iPhone (0,6B): https://huggingface.co/tinytrashlabs/Qwen3-TTS-0.6B-Base-ANE
 - Repositorio del runtime Swift: https://github.com/TinyTrashLabs/gloam-voice-studio

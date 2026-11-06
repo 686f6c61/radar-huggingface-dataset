@@ -92,9 +92,9 @@ Comparacion con el mejor baseline del articulo del dataset:
 
 | Modelo | Parametros | Resolucion | Top-1 en FungiTastic (test) | Macro F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fungitastic-dinov3-vits16-384 | 22,7 M | 384 px | 0,7263 | 0,4593 | dinov3-license | HuggingFace (PyTorch + TFLite) |
+| fungitastic-dinov3-vits16-384 | 22,7 M | 384 px | 0,7263 | 0,4593 | dinov3-license | Hugging Face (PyTorch + TFLite) |
 | BEiT-Base/16 (baseline del paper) | ~86 M | 384 px | 0,753 | 0,445 | no disponible en esta informacion | baseline del articulo del dataset |
-| DINOv3 ViT-S/16 (`timm/vit_small_patch16_dinov3.lvd1689m`) | 21,6 M | variable | no disponible (backbone auto-supervisado sin cabeza de clasificacion de hongos) | no disponible | dinov3-license | HuggingFace via timm |
+| DINOv3 ViT-S/16 (`timm/vit_small_patch16_dinov3.lvd1689m`) | 21,6 M | variable | no disponible (backbone auto-supervisado sin cabeza de clasificacion de hongos) | no disponible | dinov3-license | Hugging Face via timm |
 
 La comparacion principal es con BEiT-Base/16 a 384 px: el modelo de esta ficha sacrifica 2,7 puntos de top-1 a cambio de ser aproximadamente cuatro veces mas pequeno y de mejorar el macro F1 en 1,4 puntos, lo que indica un comportamiento mas equilibrado en la cola larga. No se dispone de datos de otros clasificadores de hongos comparables en la informacion proporcionada.
 
@@ -111,7 +111,7 @@ La comparacion principal es con BEiT-Base/16 a 384 px: el modelo de esta ficha s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/paulbauriegel/fungitastic-dinov3-vits16-384
+- Modelo en Hugging Face: https://huggingface.co/paulbauriegel/fungitastic-dinov3-vits16-384
 - Modelo base DINOv3 ViT-S/16: https://huggingface.co/timm/vit_small_patch16_dinov3.lvd1689m
 - Dataset FungiTastic: https://huggingface.co/datasets/BohemianVRA/FungiTastic
 - Articulo de referencia (arxiv:2508.10104): https://arxiv.org/abs/2508.10104

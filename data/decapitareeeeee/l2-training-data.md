@@ -26,7 +26,7 @@ El modelo fue finetuned y convertido a GGUF utilizando Unsloth, tal y como indic
 ## Capacidades
 
 - Generación de texto en formato instruct, según el nombre del archivo (`Foundation-Sec-8B-Instruct`).
-- Uso conversacional, como indica la etiqueta `conversational` en HuggingFace.
+- Uso conversacional, como indica la etiqueta `conversational` en Hugging Face.
 - Compatibilidad con endpoints, según la etiqueta `endpoints_compatible`.
 - Ejecución mediante `llama-cli` o `llama-mtmd-cli`, tal como se documenta en el README.
 - No se han publicado capacidades específicas como tool calling, agentes, visión o audio.
@@ -69,6 +69,6 @@ No disponible. No se dispone de información suficiente sobre la variante exacta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DecaPitaReeeeee/l2-training-data
+- Hugging Face: https://huggingface.co/DecaPitaReeeeee/l2-training-data
 - Unsloth: https://github.com/unslothai/unsloth
 - llama.cpp: https://github.com/ggerganov/llama.cpp

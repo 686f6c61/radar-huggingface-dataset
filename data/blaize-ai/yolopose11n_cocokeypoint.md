@@ -83,7 +83,7 @@ La comparativa se limita a modelos de pose estimation de propósito general; los
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/YOLOPOSE11n_COCOKeypoint
+- Hugging Face: https://huggingface.co/Blaize-AI/YOLOPOSE11n_COCOKeypoint
 - Repositorio original Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO Keypoints: https://cocodataset.org
 - Blaize: https://www.blaize.com

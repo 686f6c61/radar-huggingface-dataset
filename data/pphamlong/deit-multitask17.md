@@ -77,5 +77,5 @@ No disponible. No se identifican en la información proporcionada modelos compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pphamlong/deit-multitask17
+- Hugging Face: https://huggingface.co/pphamlong/deit-multitask17
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

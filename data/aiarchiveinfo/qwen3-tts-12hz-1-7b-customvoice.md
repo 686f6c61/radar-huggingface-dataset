@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-1.7B-CustomVoice es un modelo de sintesis de voz (text-to-speech, TTS) desarrollado por el equipo Qwen (Alibaba). Esta ficha concreta corresponde a la copia espejo publicada por AIArchiveInfo en HuggingFace, que preserva byte a byte los pesos originales de `Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice` en la revision `0c0e3051f131`. No se ha entrenado, ajustado ni modificado ningun peso: es una copia de archivo que mantiene la licencia Apache 2.0 original.
+Qwen3-TTS-12Hz-1.7B-CustomVoice es un modelo de sintesis de voz (text-to-speech, TTS) desarrollado por el equipo Qwen (Alibaba). Esta ficha concreta corresponde a la copia espejo publicada por AIArchiveInfo en Hugging Face, que preserva byte a byte los pesos originales de `Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice` en la revision `0c0e3051f131`. No se ha entrenado, ajustado ni modificado ningun peso: es una copia de archivo que mantiene la licencia Apache 2.0 original.
 
 El modelo resuelve la generacion de habla natural a partir de texto con control de estilo mediante instrucciones en lenguaje natural. La variante CustomVoice ofrece control de estilo sobre timbres objetivo y soporta 9 timbres "premium" que cubren combinaciones de genero, edad, idioma y dialecto. Cubre 10 idiomas (chino, ingles, japones, coreano, aleman, frances, ruso, portugues, espanol e italiano) ademas de perfiles de voz dialectales.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: el repositorio ocupa 4,5 GB, lo que es coherente con pesos en precision de 16 bits (bf16/fp16) para 1,9 mil millones de parametros. La VRAM necesaria sera del orden de la decena de GB contando pesos y estados de ejecucion; se trata de una estimacion, no de un dato confirmado en la informacion disponible.
 - GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, el modelo es susceptible de ejecutarse en GPU de gama alta de consumo, aunque no se confirma este extremo.
 - Compatibilidad con GPU de consumo: probablemente si en tarjetas con suficiente VRAM, pero no confirmado en la informacion disponible.
-- Opciones de despliegue: la model card menciona el paquete `qwen-tts` y `vLLM` para la carga del modelo. Se indica que, al cargar en `qwen-tts` o vLLM, los pesos se descargan automaticamente segun el nombre del modelo. Tambien se documentan comandos de descarga manual via ModelScope y HuggingFace CLI. Requiere ademas el tokenizador `Qwen3-TTS-Tokenizer-12Hz`.
+- Opciones de despliegue: la model card menciona el paquete `qwen-tts` y `vLLM` para la carga del modelo. Se indica que, al cargar en `qwen-tts` o vLLM, los pesos se descargan automaticamente segun el nombre del modelo. Tambien se documentan comandos de descarga manual via ModelScope y Hugging Face CLI. Requiere ademas el tokenizador `Qwen3-TTS-Tokenizer-12Hz`.
 - Latencia y throughput: se reporta una latencia de sintesis de extremo a extremo de hasta 97 ms, con salida del primer paquete de audio inmediatamente tras un caracter de entrada. No se dispone de datos de throughput.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ Todas las variantes comparten licencia Apache 2.0 y el tokenizador `Qwen3-TTS-To
 
 ## Enlaces
 
-- HuggingFace (copia espejo): https://huggingface.co/AIArchiveInfo/Qwen3-TTS-12Hz-1.7B-CustomVoice
+- Hugging Face (copia espejo): https://huggingface.co/AIArchiveInfo/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Repositorio original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Revision original preservada: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice/tree/0c0e3051f131929182e2c023b9537f8b1c68adfe
 - Paper referenciado (tag arxiv): arxiv:2601.15621 (no se dispone de URL verificada en la informacion proporcionada)

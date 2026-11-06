@@ -77,6 +77,6 @@ Nota: los datos de Qwen2.5 y Qwen3 son de conocimiento general, no de la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SautronH20/Lexia.V0.05
+- Repositorio Hugging Face: https://huggingface.co/SautronH20/Lexia.V0.05
 - Blog oficial de Qwen sobre Qwen3.8-Flash-Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe técnico (referenciado en la model card): https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf

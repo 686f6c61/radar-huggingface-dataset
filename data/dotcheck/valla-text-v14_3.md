@@ -80,8 +80,8 @@ No se dispone de datos de benchmarks comparativos con otros detectores de texto 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DotCheck/valla-text-v14_3
+- Repositorio Hugging Face: https://huggingface.co/DotCheck/valla-text-v14_3
 - Documentacion tecnica de DotCheck: https://dotcheck.ai/docs
-- Perfil de DotCheck en HuggingFace: https://huggingface.co/DotCheck
+- Perfil de DotCheck en Hugging Face: https://huggingface.co/DotCheck
 - Model card en PDF (v2026.7): https://dotcheck.ai/media/docs/dotcheck-model-card-v2026.7.pdf
-- Modelos con tag `dotcheck` en HuggingFace: https://huggingface.co/models?other=dotcheck
+- Modelos con tag `dotcheck` en Hugging Face: https://huggingface.co/models?other=dotcheck

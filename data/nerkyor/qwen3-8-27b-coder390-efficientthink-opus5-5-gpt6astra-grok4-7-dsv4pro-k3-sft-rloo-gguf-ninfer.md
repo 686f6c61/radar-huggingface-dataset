@@ -89,7 +89,7 @@ No hay resultados de benchmarks independientes ni publicados por terceros en la 
 - Las cifras anteriores son solo pesos. Hay que añadir el coste de la caché KV para los 94.000 tokens de contexto, que la model card no cuantifica, por lo que la VRAM total necesaria no está disponible.
 - Estimación orientativa a partir del tamaño de archivo: Q2 LynnStyle cabe en GPUs de 16-24 GB (RTX 4080, RTX 4090, RTX 5090) con contexto moderado; Q6_K encaja justo en 24 GB o con holgura en 32-48 GB (RTX 6000 Ada, L40S, A6000); Q8_0 requiere 32-48 GB o más (A100 40 GB, L40S 48 GB, H100).
 - Para contexto cercano a 94K habrá que reservar VRAM adicional para la caché KV y reducir el tamaño de lote; no se proporcionan medidas concretas.
-- Motores de despliegue: llama.cpp (referenciado explícitamente en las pruebas) y NInfer, el runtime asociado a la librería declarada en HuggingFace. Los pesos GGUF son compatibles con el ecosistema llama.cpp, pero vLLM y TGI no consumen GGUF, de modo que para esos motores habría que usar los pesos BF16, FP8, NVFP4, W4A4 o INT8 W8A8 del repositorio principal.
+- Motores de despliegue: llama.cpp (referenciado explícitamente en las pruebas) y NInfer, el runtime asociado a la librería declarada en Hugging Face. Los pesos GGUF son compatibles con el ecosistema llama.cpp, pero vLLM y TGI no consumen GGUF, de modo que para esos motores habría que usar los pesos BF16, FP8, NVFP4, W4A4 o INT8 W8A8 del repositorio principal.
 - Decodificación especulativa: cada paquete incorpora su cabezal MTP (Q4 en Q2 LynnStyle, Q8 en Q6_K y Q8_0), lo que permite activar decodificación especulativa sin modelo borrador externo.
 - Rendimiento declarado: 521,0 tok/s (Q2, NInfer, C8, MTP), 486,3 tok/s (Q8_0, NInfer, C8, MTP), 190,8 tok/s (Q8_0, llama.cpp, MTP, C4) y 174,8 tok/s (Q2, llama.cpp, MTP, C4). No se especifican la GPU ni el hardware usados en estas mediciones.
 - El repositorio completo ocupa 117,7 GB, por lo que conviene descargar solo la carpeta de la cuantización necesaria.
@@ -100,12 +100,12 @@ La información disponible solo permite comparar las distintas versiones del pro
 
 | Modelo | Cuantización | Tamaño | Contexto | GPQA / MMLU / LCB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Coder390 GGUF (este repositorio) | Q2 LynnStyle + MTP Q4 | 13,28 GB | ~94K | 177 / 433 / 90 | apache-2.0 | HuggingFace |
-| Coder390 GGUF (este repositorio) | Q6_K + MTP Q8 | 23,18 GB | ~94K | 174 / 448 / 91 | apache-2.0 | HuggingFace |
-| Coder390 GGUF (este repositorio) | Q8_0 + MTP Q8 | 29,07 GB | ~94K | 171 / 443 / 90 | apache-2.0 | HuggingFace |
+| Coder390 GGUF (este repositorio) | Q2 LynnStyle + MTP Q4 | 13,28 GB | ~94K | 177 / 433 / 90 | apache-2.0 | Hugging Face |
+| Coder390 GGUF (este repositorio) | Q6_K + MTP Q8 | 23,18 GB | ~94K | 174 / 448 / 91 | apache-2.0 | Hugging Face |
+| Coder390 GGUF (este repositorio) | Q8_0 + MTP Q8 | 29,07 GB | ~94K | 171 / 443 / 90 | apache-2.0 | Hugging Face |
 | Coder390 FP8 dinámico | FP8 | no disponible | ~94K | 178 / 445 / 90 | apache-2.0 | repositorio principal |
-| EfficientThink base (SFT + SimPO) | FP8, según el linaje | no disponible | no disponible | 171 / 442 / 89 | apache-2.0 | HuggingFace (modelo base) |
-| Qwen3.8-27B oficial | FP8 | no disponible | no disponible | 177 / 444 / 83 | no disponible | HuggingFace (Qwen/Qwen3.8-27B) |
+| EfficientThink base (SFT + SimPO) | FP8, según el linaje | no disponible | no disponible | 171 / 442 / 89 | apache-2.0 | Hugging Face (modelo base) |
+| Qwen3.8-27B oficial | FP8 | no disponible | no disponible | 177 / 444 / 83 | no disponible | Hugging Face (Qwen/Qwen3.8-27B) |
 
 ## Limitaciones y advertencias
 
@@ -123,7 +123,7 @@ La información disponible solo permite comparar las distintas versiones del pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer
+- Repositorio Hugging Face: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-GGUF-NInfer
 - Modelo base: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
 - Repositorio principal (BF16, FP8, NVFP4, NInfer W4A4, INT8 W8A8, GGUF y otros niveles): https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
 - Repositorio principal en ModelScope: https://modelscope.cn/models/Merkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2

@@ -23,7 +23,7 @@ La relevancia actual del modelo radica en que demuestra que una cuantizacion no 
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de tipo mezcla de expertos (MoE) identificado con la arquitectura ernie4_5_moe en HuggingFace. La nomenclatura 21B-A3B indica 21.800 millones de parametros totales y aproximadamente 3.000 millones activos por token, lo que reduce el coste computacional de la inferencia respecto a un modelo denso del mismo tamano. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si el modelo base utilizo RLHF o DPO.
+El modelo base es un transformer de tipo mezcla de expertos (MoE) identificado con la arquitectura ernie4_5_moe en Hugging Face. La nomenclatura 21B-A3B indica 21.800 millones de parametros totales y aproximadamente 3.000 millones activos por token, lo que reduce el coste computacional de la inferencia respecto a un modelo denso del mismo tamano. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si el modelo base utilizo RLHF o DPO.
 
 La innovacion tecnica de esta build es el metodo de cuantizacion de precision mixta de Black Sheep AI, que asigna precision de forma no uniforme entre tensores en lugar de aplicar 4 bits a todos por igual. El autor reporta verificacion bit a bit de cada tensor contra el manifiesto de la build y una puerta de seguridad para agentes libre de datos (coherencia x tasa de error) superada con un exceso de coherencia de 1,11 veces el suelo de ruido frente a un umbral de 1,54 veces. La model card indica que ERNIE no emplea una fase de pensamiento (thinking): sus respuestas libres promedian unos 130 tokens.
 
@@ -95,7 +95,7 @@ No se dispone de datos de otros modelos de la misma categoria (por ejemplo, Qwen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baa-ai/ERNIE-4.5-21B-A3B-PT-RAM-12GB-MLX
+- Modelo en Hugging Face: https://huggingface.co/baa-ai/ERNIE-4.5-21B-A3B-PT-RAM-12GB-MLX
 - Modelo base: https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-PT
 - Build hermana de 11 GB: https://huggingface.co/baa-ai/ERNIE-4.5-21B-A3B-PT-RAM-11GB-MLX
 - Sitio del autor: https://baa.ai

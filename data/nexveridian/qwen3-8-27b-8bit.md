@@ -74,6 +74,6 @@ No se dispone de informacion suficiente para comparar con otras alternativas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NexVeridian/Qwen3.8-27B-8bit
+- Modelo en Hugging Face: https://huggingface.co/NexVeridian/Qwen3.8-27B-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Libreria mlx-lm: mencionada en la model card como dependencia (pip install mlx-lm); repositorio oficial no confirmado en la informacion proporcionada

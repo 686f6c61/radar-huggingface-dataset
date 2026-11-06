@@ -79,6 +79,6 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/benjaik/igcse-economics-qwen3.5-9b-lora-20261105
+- Repositorio Hugging Face: https://huggingface.co/benjaik/igcse-economics-qwen3.5-9b-lora-20261105
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos.

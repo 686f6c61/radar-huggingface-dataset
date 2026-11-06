@@ -69,7 +69,7 @@ No hay información disponible sobre modelos comparables específicos para la cl
 
 ## Limitaciones y advertencias
 
-- **Pesos no disponibles**: el repositorio no contiene los archivos del modelo (tamaño 0.0 GB), y el código de uso carga un state dict local que no se puede descargar desde HuggingFace. Sin los pesos, el modelo no es utilizable.
+- **Pesos no disponibles**: el repositorio no contiene los archivos del modelo (tamaño 0.0 GB), y el código de uso carga un state dict local que no se puede descargar desde Hugging Face. Sin los pesos, el modelo no es utilizable.
 - **Sesgos del dataset**: el modelo se entrenó con un dataset específico (raghavrpotdar/fresh-and-stale-images-of-fruits-and-vegetables) que puede no representar toda la variabilidad de frutas y verduras en el mundo real. La clasificación puede fallar en condiciones de iluminación, fondo o ángulo diferentes.
 - **Solo seis categorías**: aunque la salida es binaria, el entrenamiento se limita a seis tipos de productos. No se sabe si el modelo generaliza a otros tipos de frutas o verduras.
 - **Riesgo de alucinación**: no aplica, al ser un modelo de clasificación sin generación de texto.

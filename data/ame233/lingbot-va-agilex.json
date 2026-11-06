@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Ame233/lingbot-va-agilex",
+  "slug": "ame233-lingbot-va-agilex",
+  "author": "Ame233",
+  "url": "https://huggingface.co/Ame233/lingbot-va-agilex",
+  "created_at": "2026-11-03T03:01:44.000Z",
+  "updated_at": "2026-11-04T09:36:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "robotics",
+    "base_model:robbyant/lingbot-va-base",
+    "base_model:finetune:robbyant/lingbot-va-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65091173128,
+  "storage_human": "65.1 GB",
+  "base_model": "robbyant/lingbot-va-base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ame233/lingbot-va-agilex · Hugging Face",
+      "url": "https://huggingface.co/Ame233/lingbot-va-agilex",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Ame233 (Nagasaki Ame) – Models - Hugging Face",
+      "url": "https://huggingface.co/Ame233/models",
+      "snippet": "Ame233's models1 Sort: Recently updated Ame233/lingbot-va-agilex Robotics •Updated about 15 hours ago"
+    }
+  ]
+}

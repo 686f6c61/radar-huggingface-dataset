@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPC-1 | Backbone de 35B (nomenclatura del base) + adaptador LoRA | 262 144 tokens | Predicciones tipadas: clases, numeros, coordenadas, registros conjuntos | Apache-2.0 | HuggingFace, demo en Space, servidor propio |
-| Qwen3.5-35B-A3B (modelo base) | 35B totales segun nomenclatura; activos no disponibles | no disponible | Generacion de texto libre | no disponible | HuggingFace (referenciado como base) |
+| GPC-1 | Backbone de 35B (nomenclatura del base) + adaptador LoRA | 262 144 tokens | Predicciones tipadas: clases, numeros, coordenadas, registros conjuntos | Apache-2.0 | Hugging Face, demo en Space, servidor propio |
+| Qwen3.5-35B-A3B (modelo base) | 35B totales segun nomenclatura; activos no disponibles | no disponible | Generacion de texto libre | no disponible | Hugging Face (referenciado como base) |
 | Clasificadores multimodales comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas. La diferencia funcional frente al modelo base es el modo de salida: GPC-1 restringe el espacio de respuesta a un esquema declarado, mientras que Qwen3.5-35B-A3B genera texto libre.
@@ -95,8 +95,8 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshatheg/GPC-1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/harshatheg/GPC-1-Demo
+- Modelo en Hugging Face: https://huggingface.co/harshatheg/GPC-1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/harshatheg/GPC-1-Demo
 - Guia de API: https://huggingface.co/harshatheg/GPC-1/blob/main/API.md
 - Guia de descarga: https://huggingface.co/harshatheg/GPC-1/blob/main/docs/DOWNLOADS.md
 - Model card extendida: https://huggingface.co/harshatheg/GPC-1/blob/main/MODEL_CARD.md

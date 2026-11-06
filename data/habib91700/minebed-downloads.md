@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Habib91700/minebed-downloads` no es un modelo de inteligencia artificial. Es un repositorio alojado en HuggingFace cuyo contenido son artefactos de un proyecto web denominado MineBed: un panel de administracion en Python, un sitio estatico de una wiki de Minecraft, un parche de Git y ficheros de distribucion listos para despliegue. El repositorio no contiene pesos, configuracion de modelo, tokenizador ni tarjeta de modelo en el sentido habitual del termino.
+`Habib91700/minebed-downloads` no es un modelo de inteligencia artificial. Es un repositorio alojado en Hugging Face cuyo contenido son artefactos de un proyecto web denominado MineBed: un panel de administracion en Python, un sitio estatico de una wiki de Minecraft, un parche de Git y ficheros de distribucion listos para despliegue. El repositorio no contiene pesos, configuracion de modelo, tokenizador ni tarjeta de modelo en el sentido habitual del termino.
 
 El autor publica el repositorio con 0 descargas y 0 "likes" en el momento de la consulta, con un tamano declarado de 0,0 GB (el contenido real de los ficheros enlazados suma aproximadamente 8 MB). La model card esta redactada integramente en persa (farsi) y describe el proyecto como un conjunto de ficheros de entrega con enlaces de descarga directa, guia de arranque en cuatro pasos y una lista de correcciones aplicadas al sitio y al panel.
 
@@ -92,11 +92,11 @@ No disponible. Este repositorio no pertenece a ninguna categoria de modelos, por
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no debe citarse, evaluarse ni desplegarse como si lo fuera. Cualquier uso en ese sentido es un error de categoria.
-- Exposicion de credenciales: el autor indica que el fichero `.env` incluido contiene una clave de GitHub "nueva y activa", una clave de Agnes AI activa y un token de HuggingFace activo, y que los ficheros son publicos. Cualquier credencial publicada de este modo debe considerarse comprometida y revocada de inmediato.
+- Exposicion de credenciales: el autor indica que el fichero `.env` incluido contiene una clave de GitHub "nueva y activa", una clave de Agnes AI activa y un token de Hugging Face activo, y que los ficheros son publicos. Cualquier credencial publicada de este modo debe considerarse comprometida y revocada de inmediato.
 - Contenido de terceros no verificado: los ficheros `.zip` y el `.patch` contienen codigo Python que se ejecutaria en la maquina del usuario. No hay verificacion independiente de su contenido, ni sumas de comprobacion publicadas, ni auditoria de seguridad. No se debe ejecutar en un entorno con credenciales propias.
 - El propio aviso del autor ("esta repo es publico, probad con vuestras propias claves") es una recomendacion inaceptable en un contexto de produccion: implica introducir credenciales personales en codigo de origen desconocido.
 - Ausencia de licencia: no se declara licencia alguna, lo que impide determinar los derechos de uso, modificacion o redistribucion del codigo. El uso comercial queda en situacion juridica indeterminada.
-- Ausencia de idiomas, pipeline y metadatos de modelo: la ficha de HuggingFace no declara `pipeline`, ni idiomas, ni licencia, y solo incluye la etiqueta `region:us`.
+- Ausencia de idiomas, pipeline y metadatos de modelo: la ficha de Hugging Face no declara `pipeline`, ni idiomas, ni licencia, y solo incluye la etiqueta `region:us`.
 - Fechas anomalas: la ficha declara creacion y actualizacion el 2026-09-23, con un intervalo de cuatro minutos entre ambas, y un tamano de repositorio de 0,0 GB que no concuerda con los aproximadamente 8,2 MB de artefactos enlazados.
 - Sin actividad de la comunidad: 0 descargas y 0 "likes", sin senales de validacion por parte de terceros.
 - Riesgo de contenido no verificado en el panel: las afirmaciones sobre correcciones de XSS, traversal de rutas y concurrencia proceden unicamente del autor y no cuentan con revision externa.
@@ -104,7 +104,7 @@ No disponible. Este repositorio no pertenece a ninguna categoria de modelos, por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Habib91700/minebed-downloads
+- Repositorio en Hugging Face: https://huggingface.co/Habib91700/minebed-downloads
 - Panel de administracion (55 KB): https://huggingface.co/Habib91700/minebed-downloads/resolve/main/minebed-admin-desktop-v12.zip
 - Fuente completa mas panel con `.env` (359 KB): https://huggingface.co/Habib91700/minebed-downloads/resolve/main/minebed-website-fixed-v2.zip
 - Ficheros `dist` preparados para despliegue (7,6 MB): https://huggingface.co/Habib91700/minebed-downloads/resolve/main/minebed-dist-fixed.zip

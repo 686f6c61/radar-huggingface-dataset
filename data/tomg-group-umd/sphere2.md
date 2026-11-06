@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sphere2 es un checkpoint publicado en HuggingFace por tomg-group-umd, la organización del laboratorio de Tom Goldstein en la Universidad de Maryland (College Park). El repositorio se creó y actualizó el 4 de octubre de 2026, acumula 0 descargas y 0 likes, y su model card se limita a la declaración `license: mit`, sin descripción, ejemplos ni instrucciones de uso. En la fecha de esta ficha, la documentación publicada por el autor es prácticamente inexistente.
+Sphere2 es un checkpoint publicado en Hugging Face por tomg-group-umd, la organización del laboratorio de Tom Goldstein en la Universidad de Maryland (College Park). El repositorio se creó y actualizó el 4 de octubre de 2026, acumula 0 descargas y 0 likes, y su model card se limita a la declaración `license: mit`, sin descripción, ejemplos ni instrucciones de uso. En la fecha de esta ficha, la documentación publicada por el autor es prácticamente inexistente.
 
 El nombre del repositorio coincide con el paper "Sphere Encoder 2" (arXiv:2610.02208v1), que describe checkpoints denominados "Sphere2-B" y evalúa la alineación de las estadísticas de características de las muestras generadas con las de imágenes reales mediante la métrica FDr, además de emplear una pérdida denominada `L_FD-lite`. Todo ello apunta a un modelo generativo de imágenes basado en un encoder sobre un espacio latente esférico, pero la información disponible no permite confirmar arquitectura, número de parámetros, datos de entrenamiento ni el resto de especificaciones habituales.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Parametros | Contexto / resolucion | Evaluacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sphere2 (tomg-group-umd) | no disponible | no disponible | FDr (sin cifras publicadas en la informacion disponible) | MIT | Pesos en HuggingFace, sin model card |
-| Familia Gemstone (mismo laboratorio) | 50M a 2B | no disponible | Leyes de escala | no disponible en la informacion proporcionada | HuggingFace |
+| Sphere2 (tomg-group-umd) | no disponible | no disponible | FDr (sin cifras publicadas en la informacion disponible) | MIT | Pesos en Hugging Face, sin model card |
+| Familia Gemstone (mismo laboratorio) | 50M a 2B | no disponible | Leyes de escala | no disponible en la informacion proporcionada | Hugging Face |
 | Generadores de imagenes con evaluacion FDr (p. ej. familia StyleGAN) | no disponible | no disponible | FDr / FID | habitualmente licencias no comerciales para pesos preentrenados | Publicos |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable con alternativas concretas. La comparacion con la familia Gemstone solo es valida como referencia del mismo autor, no como equivalente funcional.
@@ -83,9 +83,9 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomg-group-umd/sphere2
+- Modelo en Hugging Face: https://huggingface.co/tomg-group-umd/sphere2
 - Paper "Sphere Encoder 2": https://arxiv.org/html/2610.02208v1
-- Colecciones del autor en HuggingFace: https://huggingface.co/tomg-group-umd/collections
-- Publicaciones del autor en HuggingFace: https://huggingface.co/tomg-group-umd/papers
+- Colecciones del autor en Hugging Face: https://huggingface.co/tomg-group-umd/collections
+- Publicaciones del autor en Hugging Face: https://huggingface.co/tomg-group-umd/papers
 - Organizacion en GitHub: https://github.com/tomg-group-umd
 - Pagina del grupo de investigacion: https://www.cs.umd.edu/~tomg/group/

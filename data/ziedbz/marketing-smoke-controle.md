@@ -66,7 +66,7 @@ No se dispone de información sobre adaptadores comparables en el mismo dominio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZiedBz/marketing-smoke-controle
+- Repositorio Hugging Face: https://huggingface.co/ZiedBz/marketing-smoke-controle
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper de referencia citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (blogs, demos, papers específicos del adaptador).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diegooliveira88/multitask-2023` es un repositorio de HuggingFace publicado por el usuario diegooliveira88 que contiene una implementación propia en PyTorch de un transformer de visión (ViT) orientado a aprendizaje multitarea. Según su propia model card, se trata de una configuración "tiny" pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, y no como una publicación preentrenada lista para producción. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado.
+`diegooliveira88/multitask-2023` es un repositorio de Hugging Face publicado por el usuario diegooliveira88 que contiene una implementación propia en PyTorch de un transformer de visión (ViT) orientado a aprendizaje multitarea. Según su propia model card, se trata de una configuración "tiny" pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, y no como una publicación preentrenada lista para producción. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado.
 
 El modelo no es un modelo de lenguaje: es una arquitectura de visión con atención de ventana deslizante (*sliding window*) y fusión con compuertas (*gated fusion*), lo que sugiere un diseño para combinar representaciones de varias tareas o modalidades dentro de un mismo tronco. La activación es ReLU y la normalización es InstanceNorm, decisiones poco habituales en ViT estándar (que suele usar GELU y LayerNorm) y que apuntan a una implementación experimental y personalizada. El repositorio incluye además `main.py`, `config.json` y `training_args.json`, con un recetario de entrenamiento por defecto basado en SGD con planificador polinómico.
 
@@ -80,10 +80,10 @@ No existen modelos comparables en sentido estricto, porque este repositorio no e
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| diegooliveira88/multitask-2023 | 24.832 según safetensors (unidad no especificada) | no disponible (entrada visual; resolución no documentada) | BSD-3-Clause | HuggingFace, 0 descargas | No se reclama ninguno |
-| ViT-tiny (patch 16, 224) | ~5,7 M | imagen 224x224 | Apache-2.0 (según implementación) | ampliamente disponible en timm y HuggingFace | Sí, en la literatura original |
-| DeiT-tiny | ~5,7 M | imagen 224x224 | Apache-2.0 | HuggingFace | Sí, en el artículo de DeiT |
-| MobileViT-XXS | ~1,3 M | imagen 256x256 | Apple ML Research License | HuggingFace | Sí, en el artículo de MobileViT |
+| diegooliveira88/multitask-2023 | 24.832 según safetensors (unidad no especificada) | no disponible (entrada visual; resolución no documentada) | BSD-3-Clause | Hugging Face, 0 descargas | No se reclama ninguno |
+| ViT-tiny (patch 16, 224) | ~5,7 M | imagen 224x224 | Apache-2.0 (según implementación) | ampliamente disponible en timm y Hugging Face | Sí, en la literatura original |
+| DeiT-tiny | ~5,7 M | imagen 224x224 | Apache-2.0 | Hugging Face | Sí, en el artículo de DeiT |
+| MobileViT-XXS | ~1,3 M | imagen 256x256 | Apple ML Research License | Hugging Face | Sí, en el artículo de MobileViT |
 
 La comparación cuantitativa de precisión, contexto y throughput no está disponible para `multitask-2023`, ya que no se ha entrenado ni evaluado.
 
@@ -102,6 +102,6 @@ La comparación cuantitativa de precisión, contexto y throughput no está dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diegooliveira88/multitask-2023
+- Modelo en Hugging Face: https://huggingface.co/diegooliveira88/multitask-2023
 - Los resultados de la búsqueda web no aportan enlaces relevantes: únicamente devuelven páginas genéricas de Google (google.de, google.com, google.com.nf, translate.google.de, search.google), sin relación con el modelo.
 - No se han encontrado artículos, papers, repositorios auxiliares ni demos asociados a este modelo en la información disponible.

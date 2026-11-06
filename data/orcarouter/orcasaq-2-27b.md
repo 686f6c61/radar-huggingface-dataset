@@ -131,7 +131,7 @@ La informacion proporcionada solo permite comparar contra el modelo base y contr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orcarouter/OrcaSAQ-2-27B
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/OrcaSAQ-2-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - OrcaRouter AI Gateway: https://www.orcarouter.ai
 - Catalogo de modelos de OrcaRouter: https://www.orcarouter.ai/models

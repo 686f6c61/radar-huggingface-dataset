@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| wujunjiehhs/strixAE | 8,4B | 8.192 tokens de texto | MIT | HuggingFace, pesos Safetensors BF16 | Post-entrenamiento GRPO sobre Audio-Reasoner; orientado a decisiones de restauracion |
-| zhifeixie/Audio-Reasoner | no disponible | no disponible | no disponible | HuggingFace | Checkpoint upstream del que deriva strixAE; centrado en razonamiento sobre audio |
-| Qwen2-Audio-7B-Instruct | aproximadamente 7B | no disponible | Apache-2.0 | HuggingFace | Modelo base de la familia Qwen2-Audio, orientado a comprension y dialogo sobre audio |
-| fixie-ai/ultravox-v0_6-qwen-3-32b | aproximadamente 0,7B segun la etiqueta del listado | no disponible | no disponible | HuggingFace | Alternativa de la misma categoria audio-texto-a-texto, de mayor tamano y enfoque conversacional |
+| wujunjiehhs/strixAE | 8,4B | 8.192 tokens de texto | MIT | Hugging Face, pesos Safetensors BF16 | Post-entrenamiento GRPO sobre Audio-Reasoner; orientado a decisiones de restauracion |
+| zhifeixie/Audio-Reasoner | no disponible | no disponible | no disponible | Hugging Face | Checkpoint upstream del que deriva strixAE; centrado en razonamiento sobre audio |
+| Qwen2-Audio-7B-Instruct | aproximadamente 7B | no disponible | Apache-2.0 | Hugging Face | Modelo base de la familia Qwen2-Audio, orientado a comprension y dialogo sobre audio |
+| fixie-ai/ultravox-v0_6-qwen-3-32b | aproximadamente 0,7B segun la etiqueta del listado | no disponible | no disponible | Hugging Face | Alternativa de la misma categoria audio-texto-a-texto, de mayor tamano y enfoque conversacional |
 
 Los datos marcados como no disponibles no aparecen en la informacion proporcionada; se recomienda consultar las model cards originales antes de establecer comparaciones cuantitativas.
 
@@ -91,7 +91,7 @@ Los datos marcados como no disponibles no aparecen en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wujunjiehhs/strixAE
+- Modelo en Hugging Face: https://huggingface.co/wujunjiehhs/strixAE
 - Checkpoint base Audio-Reasoner: https://huggingface.co/zhifeixie/Audio-Reasoner
 - Paper de Audio-Reasoner (arXiv:2503.02318): https://arxiv.org/abs/2503.02318
-- Listado de modelos audio-text-to-text en HuggingFace: https://huggingface.co/models?pipeline_tag=audio-text-to-text
+- Listado de modelos audio-text-to-text en Hugging Face: https://huggingface.co/models?pipeline_tag=audio-text-to-text

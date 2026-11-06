@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-30B-A3B-Instruct-2507 (padre) | 30B (según nombre) | No disponible | No disponible | Apache-2.0 | HuggingFace |
-| ruvnet/ruos-foundry-cu-qwen3-30b-a3b-e64 | 16,03B | No disponible | No disponible | Apache-2.0 | HuggingFace (deshabilitado) |
+| Qwen/Qwen3-30B-A3B-Instruct-2507 (padre) | 30B (según nombre) | No disponible | No disponible | Apache-2.0 | Hugging Face |
+| ruvnet/ruos-foundry-cu-qwen3-30b-a3b-e64 | 16,03B | No disponible | No disponible | Apache-2.0 | Hugging Face (deshabilitado) |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruvnet/ruos-foundry-cu-qwen3-30b-a3b-e64
+- Hugging Face: https://huggingface.co/ruvnet/ruos-foundry-cu-qwen3-30b-a3b-e64
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - MoE-Foundry: https://github.com/ruvnet/MoE-Foundry
 - Qwen3-30B-A3B (referencia): https://huggingface.co/Qwen/Qwen3-30B-A3B

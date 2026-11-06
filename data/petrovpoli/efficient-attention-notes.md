@@ -4,7 +4,7 @@
 
 `Petrovpoli/efficient-attention-notes` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre atención eficiente en transformers. El autor lo describe explícitamente como un "working research note" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No contiene checkpoints entrenados, código de inferencia ni resultados experimentales publicados.
 
-El repositorio incluye un único artefacto principal (`summary.md`) y un `README.md`. Los tags de HuggingFace (`safetensors`, `transformer`) y el recuento de parámetros reportado (24.832) son artefactos de indexación de la plataforma, no indicativos de un modelo funcional: el tamaño total del repositorio es de 0.0 GB y el pipeline no está definido.
+El repositorio incluye un único artefacto principal (`summary.md`) y un `README.md`. Los tags de Hugging Face (`safetensors`, `transformer`) y el recuento de parámetros reportado (24.832) son artefactos de indexación de la plataforma, no indicativos de un modelo funcional: el tamaño total del repositorio es de 0.0 GB y el pipeline no está definido.
 
 Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de planificación de experimentos en atención eficiente (Long Range Arena, ImageNet-1K, Flickr30k) y como ejemplo de note-taking reproducible, no como artefacto desplegable. Cualquier evaluación de capacidades, benchmarks o hardware carece de sentido en este caso.
 
@@ -67,7 +67,7 @@ El único requisito es un editor de texto o visor de Markdown para leer `summary
 | Repositorios de papers con código (p. ej. implementaciones de atención lineal) | Paper + código | Implementación y resultados | Variable | Parcial |
 | Checkpoints de transformers eficientes publicados | Modelo entrenado | Pesos y model card | Variable | Sí |
 
-No se dispone de alternativas directamente comparables en la información proporcionada, dado que la categoría (nota de investigación sin modelo) es atípica en HuggingFace.
+No se dispone de alternativas directamente comparables en la información proporcionada, dado que la categoría (nota de investigación sin modelo) es atípica en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -80,5 +80,5 @@ No se dispone de alternativas directamente comparables en la información propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Petrovpoli/efficient-attention-notes
+- Hugging Face: https://huggingface.co/Petrovpoli/efficient-attention-notes
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este repositorio.

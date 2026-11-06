@@ -103,7 +103,7 @@ Los datos de contexto y parametros de Llama-3.2-3B-Instruct y Qwen2.5-3B-Instruc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/atakankutalp/LFM2.5-2.6B-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/atakankutalp/LFM2.5-2.6B-heretic-GGUF
 - Checkpoint fuente (abliterated): https://huggingface.co/atakankutalp/LFM2.5-2.6B-heretic
 - Modelo base original: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - GGUF del modelo original: https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF

@@ -100,7 +100,7 @@ No se dispone de cifras comparativas de precision ni de velocidad entre estas al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/liana313/tokengate-2wikimqa-qwen3-1.7b
+- Repositorio en Hugging Face: https://huggingface.co/liana313/tokengate-2wikimqa-qwen3-1.7b
 - Articulo: https://arxiv.org/abs/2610.26754
 - Libreria y codigo de carga: https://github.com/tokengate-models/TokenGate
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

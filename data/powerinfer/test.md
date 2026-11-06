@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PowerInfer/test es un repositorio alojado en HuggingFace bajo la cuenta de la organizacion PowerInfer, publicada bajo licencia Apache 2.0. La model card asociada no contiene mas que la declaracion de licencia, sin descripcion tecnica, datos de entrenamiento ni especificaciones de arquitectura. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline de inferencia declarado.
+PowerInfer/test es un repositorio alojado en Hugging Face bajo la cuenta de la organizacion PowerInfer, publicada bajo licencia Apache 2.0. La model card asociada no contiene mas que la declaracion de licencia, sin descripcion tecnica, datos de entrenamiento ni especificaciones de arquitectura. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline de inferencia declarado.
 
 Por el nombre y la organizacion, el repositorio parece un artefacto de prueba ("test") vinculado al proyecto PowerInfer, un motor de inferencia para modelos de lenguaje que explota la localidad de activaciones en GPUs de consumo. No obstante, esta vinculacion es una inferencia a partir del nombre de la organizacion y no un dato confirmado en la informacion disponible.
 
@@ -66,5 +66,5 @@ No disponible. Sin especificaciones tecnicas (parametros, contexto, rendimiento)
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PowerInfer/test
+- Repositorio en Hugging Face: https://huggingface.co/PowerInfer/test
 - Proyecto PowerInfer (organizacion, referencia contextual): https://huggingface.co/PowerInfer

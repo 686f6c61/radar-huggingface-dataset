@@ -4,7 +4,7 @@
 
 El modelo `Ramazuri/Qwen-Qwen3.8-27B-MTPLX` es una adaptación del modelo de lenguaje Qwen3.8-27B de Alibaba, convertido al formato MLX y optimizado con la técnica de predicción multi-token (MTP) mediante la herramienta MTPLX Forge. Está diseñado específicamente para ejecutarse en hardware Apple Silicon, aprovechando la aceleración nativa de MLX. El objetivo principal es reducir la latencia de generación autoregresiva al predecir varios tokens a la vez, logrando un multiplicador de velocidad de 2,24× respecto a la línea base autoregresiva en un Apple M4 Pro.
 
-El modelo se presenta como una solución para desarrolladores que trabajan en ecosistemas Apple y necesitan un LLM de gran tamaño con inferencia rápida en local. Aunque el nombre sugiere 27B de parámetros, el repositorio safetensors indica 4.204.731.904 parámetros (~4,2B), lo que resulta inconsistente con el modelo base; probablemente se trate de una versión cuantizada a 4-bit o de una submuestra de pesos, aunque no se especifica claramente. La licencia no está disponible en la ficha de HuggingFace, y los idiomas soportados tampoco se detallan.
+El modelo se presenta como una solución para desarrolladores que trabajan en ecosistemas Apple y necesitan un LLM de gran tamaño con inferencia rápida en local. Aunque el nombre sugiere 27B de parámetros, el repositorio safetensors indica 4.204.731.904 parámetros (~4,2B), lo que resulta inconsistente con el modelo base; probablemente se trate de una versión cuantizada a 4-bit o de una submuestra de pesos, aunque no se especifica claramente. La licencia no está disponible en la ficha de Hugging Face, y los idiomas soportados tampoco se detallan.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ La comparación es limitada porque el repositorio MTPLX no ofrece benchmarks est
 ## Limitaciones y advertencias
 
 - Solo funciona en Apple Silicon; no es portable a GPUs NVIDIA o AMD.
-- La licencia no está especificada en HuggingFace; se remite a un archivo LICENSE en el repositorio, pero no se muestra su contenido. Esto puede impedir su uso comercial sin verificación previa.
+- La licencia no está especificada en Hugging Face; se remite a un archivo LICENSE en el repositorio, pero no se muestra su contenido. Esto puede impedir su uso comercial sin verificación previa.
 - El número de parámetros reportado (4,2B) no coincide con el nombre del modelo (27B), lo que sugiere una posible poda, cuantización extrema o un error del autor. Se recomienda verificar la integridad del modelo antes de usarlo en producción.
 - No se proporcionan detalles sobre el dataset de entrenamiento ni sobre posibles sesgos del modelo base.
 - Las capacidades multimodales del modelo base (visión) no están disponibles en esta versión MLX, que se limita a texto.
@@ -87,7 +87,7 @@ La comparación es limitada porque el repositorio MTPLX no ofrece benchmarks est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ramazuri/Qwen-Qwen3.8-27B-MTPLX
+- Repositorio Hugging Face: https://huggingface.co/Ramazuri/Qwen-Qwen3.8-27B-MTPLX
 - Herramienta MTPLX Forge: https://github.com/youssofal/MTPLX
 - Repositorio del modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Artículo de specs y benchmarks de Qwen3.8-27B: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

@@ -4,7 +4,7 @@
 
 DeepSeek-V4.1-Flash-1017-MLXse es una redistribución cuantizada en 8 bits y empaquetada para MLX del modelo multimodal deepseek-ai/DeepSeek-V4.1-Flash-1017, publicada por el usuario inferencerlabs. No se trata de un modelo nuevo: el repositorio reempaqueta los pesos ya cuantizados del modelo original y desplaza (offload) los "engrams" y los expertos a almacenamiento, con el objetivo de poder ejecutarlo en equipos Apple Silicon con memoria unificada limitada. El pipeline declarado es image-text-to-text, es decir, entrada de imagen y texto con salida de texto.
 
-El modelo base es un Mixture-of-Experts multimodal de DeepSeek liberado el 17 de octubre de 2026, orientado a código, razonamiento, comprensión visual y agentes de contexto largo. Las fuentes de terceros discrepan en el tamaño: lmstudio.ai indica 552B parámetros totales con 8B/16B activos y ventana de 1M tokens, mientras que la ficha de HuggingFace del modelo base menciona 763B parámetros. Esta ficha refleja ambas cifras y las marca como no confirmadas, ya que la model card del repositorio MLX no las detalla.
+El modelo base es un Mixture-of-Experts multimodal de DeepSeek liberado el 17 de octubre de 2026, orientado a código, razonamiento, comprensión visual y agentes de contexto largo. Las fuentes de terceros discrepan en el tamaño: lmstudio.ai indica 552B parámetros totales con 8B/16B activos y ventana de 1M tokens, mientras que la ficha de Hugging Face del modelo base menciona 763B parámetros. Esta ficha refleja ambas cifras y las marca como no confirmadas, ya que la model card del repositorio MLX no las detalla.
 
 La relevancia de esta build es práctica: permite probar un modelo de escala muy grande en un Mac de 64-128 GB a costa de velocidad muy baja y de un consumo de disco elevado (el repositorio ocupa 503,2 GB). Está etiquetada únicamente en inglés, sin licencia declarada, y con cero descargas en el momento de la consulta, por lo que debe tratarse como un artefacto experimental de terceros y no como una distribución oficial.
 
@@ -13,7 +13,7 @@ La relevancia de esta build es práctica: permite probar un modelo de escala muy
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer con mezcla de expertos (MoE) y capacidad multimodal image-text-to-text, segun fuentes de terceros; no detallada en la model card |
-| Parametros totales | 552B (lmstudio.ai) o 763B (ficha de HuggingFace del modelo base); dato no confirmado y discrepante entre fuentes |
+| Parametros totales | 552B (lmstudio.ai) o 763B (ficha de Hugging Face del modelo base); dato no confirmado y discrepante entre fuentes |
 | Parametros activos | 8B / 16B segun lmstudio.ai; no confirmado |
 | Longitud de contexto | 1M tokens segun lmstudio.ai; no confirmado en la model card |
 | Tipos de cuantizacion | 8-bit (MLX); pesos cuantizados del modelo base reempaquetados |
@@ -29,7 +29,7 @@ La relevancia de esta build es práctica: permite probar un modelo de escala muy
 
 La model card de este repositorio no aporta informacion sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF, DPO u otras). Lo unico declarado tecnicamente es el proceso de empaquetado: se repackan los pesos ya cuantizados del modelo base y se descargan a almacenamiento los engrams y los expertos, de modo que el modelo pueda ejecutarse "a plena precision" en dispositivos con poca memoria. La cuantizacion se realizo con una version modificada de MLX, segun el autor.
 
-Las referencias externas describen el modelo base como un MoE multimodal con 8B/16B parametros activos y 1M tokens de contexto, mientras que la ficha oficial en HuggingFace cita 763B parametros. No se dispone de informacion verificable sobre innovaciones de atencion, decodificacion especulativa ni estrategias de enrutamiento de expertos. Cualquier afirmacion adicional sobre el entrenamiento seria especulativa y no se incluye.
+Las referencias externas describen el modelo base como un MoE multimodal con 8B/16B parametros activos y 1M tokens de contexto, mientras que la ficha oficial en Hugging Face cita 763B parametros. No se dispone de informacion verificable sobre innovaciones de atencion, decodificacion especulativa ni estrategias de enrutamiento de expertos. Cualquier afirmacion adicional sobre el entrenamiento seria especulativa y no se incluye.
 
 ## Capacidades
 
@@ -109,7 +109,7 @@ No se dispone de datos objetivos de benchmark de esta build que permitan una com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inferencerlabs/DeepSeek-V4.1-Flash-1017-MLXse
+- Repositorio Hugging Face: https://huggingface.co/inferencerlabs/DeepSeek-V4.1-Flash-1017-MLXse
 - Variante MLXs del mismo autor: https://huggingface.co/inferencerlabs/DeepSeek-V4.1-Flash-1017-MLXs
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Benchmarks en Vals AI: https://www.vals.ai/models/deepseek_deepseek-v4.1-flash-1017

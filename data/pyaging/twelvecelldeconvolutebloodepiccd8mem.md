@@ -6,7 +6,7 @@ El modelo `pyaging/twelvecelldeconvolutebloodepiccd8mem` es un modelo de deconvo
 
 El modelo se basa en la metodología publicada por Salas et al. (2022), pero utiliza una versión modificada con 240 CpGs seleccionados, en lugar de los 1.200 originales del catálogo IDOL-Ext. Esta selección, heredada de Biolearn, busca maximizar los contrastes de metilación entre cada subtipo celular y el resto, y no es un subconjunto de las sondas publicadas. El modelo está integrado en la librería `pyaging` y se distribuye bajo licencia BSD-3-Clause.
 
-Su relevancia actual radica en la creciente demanda de herramientas de deconvolución precisas y reproducibles para el análisis de metilación en sangre, especialmente en el campo de los relojes epigenéticos y la investigación de la inmunosenescencia. Al estar disponible en HuggingFace con una interfaz Python sencilla, facilita su integración en pipelines de análisis existentes.
+Su relevancia actual radica en la creciente demanda de herramientas de deconvolución precisas y reproducibles para el análisis de metilación en sangre, especialmente en el campo de los relojes epigenéticos y la investigación de la inmunosenescencia. Al estar disponible en Hugging Face con una interfaz Python sencilla, facilita su integración en pipelines de análisis existentes.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Método | CpGs | Plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `twelvecelldeconvolutebloodepiccd8mem` (este) | Deconvolución restringida | 240 | EPIC | BSD-3-Clause | HuggingFace, pyaging |
+| `twelvecelldeconvolutebloodepiccd8mem` (este) | Deconvolución restringida | 240 | EPIC | BSD-3-Clause | Hugging Face, pyaging |
 | IDOL-Ext (Salas et al., 2022) | Deconvolución restringida | 1.200 | EPIC | No especificada | Publicación, paquetes R |
 | EpiDISH (Teschendorff et al.) | Deconvolución robusta | Variable | 450K/EPIC | GPL | CRAN/Bioconductor |
 
@@ -77,6 +77,6 @@ No se dispone de una comparación cuantitativa directa entre estos métodos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepiccd8mem
+- Modelo en Hugging Face: https://huggingface.co/pyaging/twelvecelldeconvolutebloodepiccd8mem
 - Publicación original de Salas et al.: https://doi.org/10.1038/s41467-021-27864-7
 - Documentación de pyaging (catálogo de relojes): https://pyaging.readthedocs.io

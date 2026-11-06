@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer Multitask es un repositorio de código abierto publicado por el usuario varunsingh1996 en HuggingFace, cuyo propósito declarado es servir como implementación transparente y repetible de un transformer de tamaño reducido orientado a tareas multitarea. A pesar de que la configuración se etiqueta internamente como "huge", el recuento real de parámetros extraído de `model.safetensors` es de 24.832 parámetros, lo que lo sitúa en un rango meramente demostrativo y muy alejado de cualquier modelo de propósito general.
+Tiny Transformer Multitask es un repositorio de código abierto publicado por el usuario varunsingh1996 en Hugging Face, cuyo propósito declarado es servir como implementación transparente y repetible de un transformer de tamaño reducido orientado a tareas multitarea. A pesar de que la configuración se etiqueta internamente como "huge", el recuento real de parámetros extraído de `model.safetensors` es de 24.832 parámetros, lo que lo sitúa en un rango meramente demostrativo y muy alejado de cualquier modelo de propósito general.
 
 El artefacto principal no es un modelo entrenado, sino un checkpoint de inicialización válido para pruebas de humo (*smoke tests*). La propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark, que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que debe tratarse como un punto de partida experimental. Esto lo convierte en una pieza útil para reproducir arquitecturas y validar pipelines de entrenamiento, no para inferencia en producción.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| varunsingh1996/tiny-transformer-demo | 24.832 | no disponible | sin benchmarks | MIT | HuggingFace, sin entrenar |
+| varunsingh1996/tiny-transformer-demo | 24.832 | no disponible | sin benchmarks | MIT | Hugging Face, sin entrenar |
 | nanoGPT (Karpathy) | configurable (~10M-124M) | configurable | benchmarks en sus variantes entrenadas | MIT | GitHub |
-| TinyStories (Microsoft) | ~1M-33M | 512 tokens | resultados publicados en generación de cuentos | MIT | HuggingFace |
-| GPT-2 small | 124M | 1024 tokens | benchmarks publicados | MIT (pesos) | HuggingFace |
+| TinyStories (Microsoft) | ~1M-33M | 512 tokens | resultados publicados en generación de cuentos | MIT | Hugging Face |
+| GPT-2 small | 124M | 1024 tokens | benchmarks publicados | MIT (pesos) | Hugging Face |
 
 No disponible comparativa directa de rendimiento porque el modelo no ha sido entrenado ni evaluado. Las alternativas citadas sí cuentan con checkpoints entrenados y métricas públicas, por lo que la comparación se limita a escala y licencia.
 
@@ -85,5 +85,5 @@ No disponible comparativa directa de rendimiento porque el modelo no ha sido ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/varunsingh1996/tiny-transformer-demo
+- Hugging Face: https://huggingface.co/varunsingh1996/tiny-transformer-demo
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

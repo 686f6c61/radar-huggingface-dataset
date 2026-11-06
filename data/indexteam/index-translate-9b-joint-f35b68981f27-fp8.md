@@ -83,10 +83,10 @@ Verificación propia de esta exportación FP8 (según el autor): recarga del che
 
 | Modelo | Parámetros | Contexto | Licencia | Modalidades | Disponibilidad |
 |---|---|---|---|---|---|
-| Index-Translate-Omni 9B (original) | 9B | no disponible | Apache 2.0 | texto, imagen, voz | HuggingFace |
-| Index-Translate 9B (solo texto) | 9B | no disponible | Apache 2.0 | texto | HuggingFace |
-| Index-Translate-Omni 2B | 2B | no disponible | Apache 2.0 | texto, imagen, voz | HuggingFace |
-| Index-Translate-Omni 35BA3B | 35B (A3B, MoE) | no disponible | Apache 2.0 | texto, imagen, voz | HuggingFace |
+| Index-Translate-Omni 9B (original) | 9B | no disponible | Apache 2.0 | texto, imagen, voz | Hugging Face |
+| Index-Translate 9B (solo texto) | 9B | no disponible | Apache 2.0 | texto | Hugging Face |
+| Index-Translate-Omni 2B | 2B | no disponible | Apache 2.0 | texto, imagen, voz | Hugging Face |
+| Index-Translate-Omni 35BA3B | 35B (A3B, MoE) | no disponible | Apache 2.0 | texto, imagen, voz | Hugging Face |
 
 En los benchmarks del modelo original, el 9B supera al 2B en traducción de texto (FLORES COMET22 0.8789 frente a 0.8655), en seguimiento de instrucciones (instTrans Quality 0.6771 frente a 0.5391) y en traducción de imagen (MMTIT 77.604 frente a 65.809). El 35BA3B obtiene resultados ligeramente superiores en texto y voz, con un coste computacional mayor.
 
@@ -104,7 +104,7 @@ En los benchmarks del modelo original, el 9B supera al 2B en traducción de text
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-9B-Joint-f35b68981f27-FP8
+- Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-9B-Joint-f35b68981f27-FP8
 - Modelo original Index-Translate-Omni 9B: https://huggingface.co/IndexTeam/Index-Translate-omni-9B
 - Benchmarks publicados del original: https://huggingface.co/IndexTeam/Index-Translate-9B#evaluation
 - ModelScope: la model card incluye un enlace truncado a ModelScope que no puede reconstruirse con la información disponible.

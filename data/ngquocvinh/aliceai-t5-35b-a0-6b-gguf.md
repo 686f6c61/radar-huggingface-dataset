@@ -33,7 +33,7 @@ No hubo entrenamiento ni fine-tuning en esta publicacion: cada archivo se convir
 
 - Generacion de texto condicionada por un encoder, con atencion cruzada: el modelo recibe una secuencia de entrada codificada y genera la salida con el decodificador.
 - Razonamiento y respuesta a preguntas factuales sencillas en el protocolo probado por el autor: la prueba de humo con `Q4_K_M` devuelve `Paris` para la pregunta sobre la capital de Francia.
-- Extraccion de caracteristicas: la ficha de HuggingFace incluye la etiqueta `feature-extraction`, coherente con el componente encoder.
+- Extraccion de caracteristicas: la ficha de Hugging Face incluye la etiqueta `feature-extraction`, coherente con el componente encoder.
 - Soporte multilingue: no disponible (la publicacion no declara lista de idiomas).
 - Tool calling / function calling: no disponible; no se menciona en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se menciona en la informacion proporcionada.

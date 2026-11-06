@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rev3auth/iris-1.3-lora es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario Rev3auth, obtenido a partir del modelo base unsloth/gemma-3-1b-it. Se trata de un modelo de generacion de texto de la familia Gemma 3, en su variante de 1 000 millones de parametros y ya alineada para instrucciones (sufijo "it"), sobre la que se ha aplicado un entrenamiento adicional. El repositorio ocupa 0,5 GB, un tamano coherente con un adaptador LoRA mas que con una copia completa de los pesos en precision de 16 bits, que rondarian los 2 GB para esta cantidad de parametros.
+Rev3auth/iris-1.3-lora es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario Rev3auth, obtenido a partir del modelo base unsloth/gemma-3-1b-it. Se trata de un modelo de generacion de texto de la familia Gemma 3, en su variante de 1 000 millones de parametros y ya alineada para instrucciones (sufijo "it"), sobre la que se ha aplicado un entrenamiento adicional. El repositorio ocupa 0,5 GB, un tamano coherente con un adaptador LoRA mas que con una copia completa de los pesos en precision de 16 bits, que rondarian los 2 GB para esta cantidad de parametros.
 
 La relevancia de esta publicacion es limitada desde el punto de vista tecnico: el autor no documenta el dataset de entrenamiento, el numero de pasos, la configuracion de hiperparametros ni los objetivos de la especializacion. La unica informacion concreta que aporta la model card es que el entrenamiento se realizo con la libreria Unsloth, que el autor declara "2x faster", y que la licencia es Apache 2.0. El modelo se distribuye en formato safetensors y es compatible con transformers y con text-generation-inference, segun las etiquetas del repositorio.
 
@@ -25,7 +25,7 @@ En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 "l
 
 El modelo hereda la arquitectura del base: un transformer decoder-only de la familia Gemma 3 en su variante exclusivamente de texto (`gemma3_text`), con 1 000 millones de parametros. Gemma 3 introduce en esta generacion atencion con ventana deslizante intercalada con capas de atencion global, lo que reduce el coste computacional en contextos largos; en el caso de la variante de 1B, la ventana de contexto declarada por el fabricante del base es de 32 768 tokens. El ajuste publicado no modifica la arquitectura, sino unicamente los pesos resultantes del entrenamiento adicional.
 
-Respecto al proceso de entrenamiento, la model card no aporta practicamente ningun detalle: no se indica el volumen de tokens, la composicion del dataset, si se emplearon tecnicas de RLHF o DPO, ni la duracion o el numero de pasos. Lo unico documentado es que el entrenamiento se ejecuto con Unsloth, una libreria de optimizacion que acelera el fine-tuning de modelos transformer mediante kernels personalizados y reduccion de memoria, y que el autor reporta una velocidad "2x faster". La etiqueta `trl` en el repositorio sugiere el uso de la libreria TRL de HuggingFace para el entrenamiento supervisado, aunque no se confirma en el texto de la model card. No se documenta ninguna innovacion tecnica adicional.
+Respecto al proceso de entrenamiento, la model card no aporta practicamente ningun detalle: no se indica el volumen de tokens, la composicion del dataset, si se emplearon tecnicas de RLHF o DPO, ni la duracion o el numero de pasos. Lo unico documentado es que el entrenamiento se ejecuto con Unsloth, una libreria de optimizacion que acelera el fine-tuning de modelos transformer mediante kernels personalizados y reduccion de memoria, y que el autor reporta una velocidad "2x faster". La etiqueta `trl` en el repositorio sugiere el uso de la libreria TRL de Hugging Face para el entrenamiento supervisado, aunque no se confirma en el texto de la model card. No se documenta ninguna innovacion tecnica adicional.
 
 ## Capacidades
 
@@ -72,10 +72,10 @@ Las siguientes cifras son estimaciones basadas en el tamano de 1B parametros del
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rev3auth/iris-1.3-lora | 1B (base Gemma 3 1B) | No especificado (base: 32 768) | Apache 2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-3-1b-it | 1B | 32 768 tokens | Gemma (uso sujeta a terminos de Google) | HuggingFace, ampliamente descargado |
-| Llama 3.2 1B Instruct | 1B | 128 000 tokens | Llama Community License | HuggingFace / Meta |
-| Qwen2.5 1.5B Instruct | 1,5B | 32 768 tokens | Apache 2.0 | HuggingFace / Alibaba |
+| Rev3auth/iris-1.3-lora | 1B (base Gemma 3 1B) | No especificado (base: 32 768) | Apache 2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-3-1b-it | 1B | 32 768 tokens | Gemma (uso sujeta a terminos de Google) | Hugging Face, ampliamente descargado |
+| Llama 3.2 1B Instruct | 1B | 128 000 tokens | Llama Community License | Hugging Face / Meta |
+| Qwen2.5 1.5B Instruct | 1,5B | 32 768 tokens | Apache 2.0 | Hugging Face / Alibaba |
 
 No se dispone de datos de rendimiento comparativo para el modelo objeto de esta ficha, por lo que la comparacion se limita a parametros, contexto y licencia. Los valores de los modelos alternativos corresponden a la informacion publica de sus fabricantes.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo para el modelo objeto de esta 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rev3auth/iris-1.3-lora
+- Repositorio en Hugging Face: https://huggingface.co/Rev3auth/iris-1.3-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-3-1b-it
 - Libreria de entrenamiento Unsloth: https://github.com/unslothai/unsloth
 - No se han encontrado articulos, papers, blogs ni demos adicionales asociados a este modelo en la busqueda realizada.

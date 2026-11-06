@@ -6,7 +6,7 @@ AgriScan Crop and Disease Models es un conjunto de dos modelos de visión por co
 
 El modelo resuelve un problema acotado: la identificación visual de cultivos y la clasificación preliminar de enfermedades foliares a partir de imágenes de hojas. Su relevancia actual es limitada y experimental; se trata de prototipos de investigación publicados para el desarrollo interno de AgriScan y para experimentación en el ámbito agrícola. No es un modelo de lenguaje ni un modelo multimodal general: son clasificadores de imagen de tamaño reducido, con entrada fija de 224 × 224 píxeles RGB y salida de clase discreta.
 
-El repositorio tiene un tamaño de 0,0 GB según HuggingFace, 55 descargas y ningún "me gusta", lo que refleja su carácter incipiente. La model card advierte explícitamente de que el rendimiento no ha sido validado de forma independiente en condiciones agrícolas reales y de que la precisión reportada para el clasificador de enfermedades está sesgada por una fuga de datos entre validación y test.
+El repositorio tiene un tamaño de 0,0 GB según Hugging Face, 55 descargas y ningún "me gusta", lo que refleja su carácter incipiente. La model card advierte explícitamente de que el rendimiento no ha sido validado de forma independiente en condiciones agrícolas reales y de que la precisión reportada para el clasificador de enfermedades está sesgada por una fuga de datos entre validación y test.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos (MML
 
 | Modelo | Arquitectura | Parámetros | Contexto/entrada | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AgriScan Crop and Disease Models | MobileNetV2 | no disponible | Imagen 224 × 224 × 3 | 3 cultivos / 17 enfermedades | other | HuggingFace (55 descargas) |
+| AgriScan Crop and Disease Models | MobileNetV2 | no disponible | Imagen 224 × 224 × 3 | 3 cultivos / 17 enfermedades | other | Hugging Face (55 descargas) |
 | MobileNetV2 (ImageNet) | MobileNetV2 | ~3,5 M (referencia de la arquitectura) | Imagen 224 × 224 × 3 | 1.000 clases ImageNet | Apache 2.0 (referencia) | TensorFlow/Keras, TF Hub |
 | EfficientNet-B0 (ImageNet) | EfficientNet | ~5,3 M (referencia de la arquitectura) | Imagen 224 × 224 × 3 | 1.000 clases ImageNet | Apache 2.0 (referencia) | TensorFlow/Keras, TF Hub |
 | ResNet-50 (ImageNet) | ResNet | ~25,6 M (referencia de la arquitectura) | Imagen 224 × 224 × 3 | 1.000 clases ImageNet | Apache 2.0 (referencia) | TensorFlow/Keras, PyTorch Hub |
@@ -95,7 +95,7 @@ La comparativa con modelos de propósito general no es directa porque AgriScan e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vernard/agriscan-crop-disease-models
+- Modelo en Hugging Face: https://huggingface.co/Vernard/agriscan-crop-disease-models
 - Dataset PlantVillage (referencia del dataset de entrenamiento): no se proporciona enlace directo en la información disponible.
 - Documentación del proyecto AgriScan / CDSA – Cross Domain Solution Architect (Pty) Ltd: no disponible en la información proporcionada.
 - Paper o blog técnico del modelo: no disponible en la información proporcionada.

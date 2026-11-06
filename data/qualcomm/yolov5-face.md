@@ -21,7 +21,7 @@ Su relevancia es de tipo práctico: cubre el caso de uso de detección facial en
 | Licencia | GPL-3.0 |
 | Formato de pesos | PyTorch (checkpoint `yolov5n-face.pt`); exportable a ONNX y QNN_DLC mediante Qualcomm AI Hub Models |
 
-Datos adicionales declarados por el autor: resolución de entrada 640x640, tamaño del modelo 7,21 MB en float y 3,68 MB en w8a16, y dataset de entrenamiento WiderFace. El repositorio de HuggingFace no contiene *assets* preexportados: por restricciones de licencia, el autor indica que hay que compilar y exportar el modelo uno mismo.
+Datos adicionales declarados por el autor: resolución de entrada 640x640, tamaño del modelo 7,21 MB en float y 3,68 MB en w8a16, y dataset de entrenamiento WiderFace. El repositorio de Hugging Face no contiene *assets* preexportados: por restricciones de licencia, el autor indica que hay que compilar y exportar el modelo uno mismo.
 
 ## Arquitectura y entrenamiento
 
@@ -150,7 +150,7 @@ La información proporcionada no incluye comparativas con otros modelos, y los r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/YoloV5-Face
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/YoloV5-Face
 - Librería Qualcomm AI Hub Models (YoloV5-Face, versión v0.62.1): https://github.com/qualcomm/ai-hub-models/blob/v0.62.1/src/qai_hub_models/models/yolov5_face
 - Qualcomm AI Hub Workbench (compilación, perfilado y evaluación en dispositivo): https://workbench.aihub.qualcomm.com
 - Registro en Qualcomm AI Hub: https://myaccount.qualcomm.com/signup

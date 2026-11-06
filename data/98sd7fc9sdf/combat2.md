@@ -2,7 +2,7 @@
 
 ## Resumen
 
-combat2 es un adaptador LoRA de generacion de imagenes publicado en HuggingFace por el usuario 98sd7fc9sdf. Se distribuye a traves de la libreria diffusers y esta disenado para aplicarse sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder, un modelo de difusion text-to-image. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango mas que con un modelo completo.
+combat2 es un adaptador LoRA de generacion de imagenes publicado en Hugging Face por el usuario 98sd7fc9sdf. Se distribuye a traves de la libreria diffusers y esta disenado para aplicarse sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder, un modelo de difusion text-to-image. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango mas que con un modelo completo.
 
 La relevancia de esta publicacion es muy limitada a dia de hoy: acumula 0 descargas y 0 likes, la model card no incluye prompt de instancia (instance_prompt aparece como null) ni galeria funcional, y no se declara licencia ni idiomas soportados. Esto significa que no existe informacion publica sobre el dataset de entrenamiento, el concepto o estilo que aprende el LoRA, ni las condiciones de uso.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| combat2 | LoRA de difusion (text-to-image) | no disponible (repo de 0,2 GB) | no aplica | no disponible | HuggingFace, 0 descargas |
+| combat2 | LoRA de difusion (text-to-image) | no disponible (repo de 0,2 GB) | no aplica | no disponible | Hugging Face, 0 descargas |
 | ponpoke/flux2-klein-9b-uncensored-text-encoder | Modelo de difusion base | 9B (segun nombre, no confirmado) | no aplica | no disponible | Modelo base referenciado |
 | Otros LoRA de diffusers | LoRA de difusion | variable | no aplica | variable | Amplia disponibilidad |
 
@@ -81,6 +81,6 @@ No se dispone de informacion suficiente para establecer una comparacion rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/98sd7fc9sdf/combat2
+- Modelo en Hugging Face: https://huggingface.co/98sd7fc9sdf/combat2
 - Modelo base referenciado: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (los resultados obtenidos corresponden a contenidos no relacionados, en su mayoria sobre una pelicula titulada "1992").

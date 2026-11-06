@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Maximdnbjgboc/Mandarin es una publicacion alojada en HuggingFace por el usuario Maximdnbjgboc, distribuida bajo licencia Apache-2.0. La model card asociada no contiene mas contenido que la propia declaracion de licencia: no se documenta arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni idiomas soportados. Tampoco se declara un pipeline de uso (text-generation, text-classification, etc.).
+El repositorio Maximdnbjgboc/Mandarin es una publicacion alojada en Hugging Face por el usuario Maximdnbjgboc, distribuida bajo licencia Apache-2.0. La model card asociada no contiene mas contenido que la propia declaracion de licencia: no se documenta arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni idiomas soportados. Tampoco se declara un pipeline de uso (text-generation, text-classification, etc.).
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 likes, y los unicos metadatos adicionales son las etiquetas `license:apache-2.0` y `region:us`. Las fechas de creacion y ultima actualizacion registradas son identicas (2026-09-13T12:41:16Z), lo que indica que no ha habido revisiones posteriores a la publicacion inicial.
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Maximdnbjgboc/Mandarin
+- Hugging Face: https://huggingface.co/Maximdnbjgboc/Mandarin
 - Model card del autor: sin contenido relevante mas alla de la declaracion `license: apache-2.0`.
 - Paper, blog o repositorio de codigo: no disponibles.
 - Demo o space asociado: no disponible.

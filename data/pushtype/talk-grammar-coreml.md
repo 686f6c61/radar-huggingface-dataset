@@ -82,7 +82,7 @@ La comparativa se limita a la referencia arquitectonica citada por el autor (GEC
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PUSHTYPE/talk-grammar-coreml
+- Hugging Face: https://huggingface.co/PUSHTYPE/talk-grammar-coreml
 - GECToR (paper de referencia, Omelianchuk et al. 2020): https://arxiv.org/abs/2005.12592
 - Repositorio GECToR: https://github.com/grammarly/gector
 - C4_200M (dataset de ediciones sinteticas): https://huggingface.co/datasets/grammarly/c4_200m

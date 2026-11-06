@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`linkTheWorld/microduck-hill-es` es una política de control motriz (locomotion policy) para el robot microduck de Pollen Robotics, publicada por el usuario linkTheWorld en HuggingFace. No es un modelo de lenguaje: es una red neuronal de política entrenada por aprendizaje por refuerzo que genera comandos de locomoción a 50 Hz a partir de un vector de observación de 61 dimensiones y produce 14 acciones. Se distribuye en formato ONNX con el normalizador de observaciones integrado en el propio grafo, de modo que el robot le puede pasar observaciones en crudo.
+`linkTheWorld/microduck-hill-es` es una política de control motriz (locomotion policy) para el robot microduck de Pollen Robotics, publicada por el usuario linkTheWorld en Hugging Face. No es un modelo de lenguaje: es una red neuronal de política entrenada por aprendizaje por refuerzo que genera comandos de locomoción a 50 Hz a partir de un vector de observación de 61 dimensiones y produce 14 acciones. Se distribuye en formato ONNX con el normalizador de observaciones integrado en el propio grafo, de modo que el robot le puede pasar observaciones en crudo.
 
 Según la model card, la política deriva de una política propia de sprint de 2 m entrenada con PPO y una recompensa lineal de velocidad de avance, posteriormente refinada con estrategias evolutivas. La variante `hill-es` se ajustó con estrategias evolutivas sobre el simulador de colinas de Arena durante 20 generaciones y está pensada como marcha para el slot `walk` del microduck, con comportamiento perpetuo (se ejecuta de forma continua hasta que se le indique lo contrario). La evaluación reportada es de 98/100 llegadas a meta en semillas reservadas 2001-2100.
 
@@ -91,7 +91,7 @@ No disponible. La información proporcionada no incluye otras políticas de loco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/linkTheWorld/microduck-hill-es
+- Modelo en Hugging Face: https://huggingface.co/linkTheWorld/microduck-hill-es
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `sprint-race`, commit `822c9db39` (https://github.com/pollen-robotics/microduck_rl/tree/822c9db39)
 - Especificación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (no se proporciona URL directa)

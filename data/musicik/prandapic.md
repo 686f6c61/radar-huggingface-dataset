@@ -2,7 +2,7 @@
 
 ## Resumen
 
-prandapic es un repositorio publicado en HuggingFace por el usuario musicik bajo licencia Apache 2.0. En el momento de la consulta no contiene ningun artefacto de modelo: el tamano del repositorio es de 0.0 GB, no se registran descargas ni likes, y el campo pipeline aparece como no disponible.
+prandapic es un repositorio publicado en Hugging Face por el usuario musicik bajo licencia Apache 2.0. En el momento de la consulta no contiene ningun artefacto de modelo: el tamano del repositorio es de 0.0 GB, no se registran descargas ni likes, y el campo pipeline aparece como no disponible.
 
 La model card asociada unicamente incluye la declaracion de licencia (`license: apache-2.0`) y carece de cualquier otra informacion: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento ni formato de pesos. Los resultados de busqueda web obtenidos no guardan ninguna relacion con el modelo (corresponden a cuestionarios sobre Bangkok), por lo que no aportan informacion tecnica utilizable.
 
@@ -96,7 +96,7 @@ No disponible. Sin conocer parametros, contexto, licencia efectiva sobre los pes
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/musicik/prandapic
+- Hugging Face: https://huggingface.co/musicik/prandapic
 - Model card: no disponible (el README solo contiene la declaracion de licencia Apache 2.0)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

@@ -25,7 +25,7 @@ Su relevancia actual es doble. Por un lado, cubre una lengua de bajos recursos c
 | Vocabulario | 48.000 piezas, SentencePiece Unigram, construido sobre latin en minusculas |
 | Dimension de representacion | 768 |
 | Tamano del repositorio | 0,4 GB |
-| Fecha de publicacion | 2026-09-15 (segun HuggingFace) |
+| Fecha de publicacion | 2026-09-15 (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ Notas del autor sobre la lectura de la tabla: el test de 92 filas no resuelve di
 
 | Modelo | Parametros | Contexto | Idiomas | Rendimiento comparado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DZAIR | 105,3 M liberados (68,44 M backbone) | 512 | Darija argelina: árabe, arabizi, code-switching francés | Referencia de la tabla anterior | Apache 2.0 | HuggingFace, safetensors, código remoto |
+| DZAIR | 105,3 M liberados (68,44 M backbone) | 512 | Darija argelina: árabe, arabizi, code-switching francés | Referencia de la tabla anterior | Apache 2.0 | Hugging Face, safetensors, código remoto |
 | DziriBERT | No disponible en la informacion proporcionada | No disponible | Darija argelina (entrenado sobre un rastreo de Twitter) | Pierde en Narabizi arabizi (-2,31/-3,03) y Ranim foro (-2,03/-2,21); gana en Twifil, DID y Narabizi topic | No disponible | No disponible |
 | Otros encoders arabes (por ejemplo, variantes tipo BERT arabe) | No disponible | No disponible | Árabe estándar moderno, sin cobertura declarada de arabizi | No disponible | No disponible | No disponible |
 
@@ -111,6 +111,6 @@ La única comparación con datos en la información disponible es contra DziriBE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ainouche-abderahmane/DZAIR
+- Modelo en Hugging Face: https://huggingface.co/ainouche-abderahmane/DZAIR
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Los resultados devueltos por el buscador son dominios de contenido para adultos sin relacion alguna con DZAIR, por lo que se descartan.
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

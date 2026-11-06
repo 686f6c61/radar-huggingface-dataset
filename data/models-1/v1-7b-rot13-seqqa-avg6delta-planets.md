@@ -80,8 +80,8 @@ La comparativa directa con otros modelos de la misma categoría (task-vector com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/models-1/v1-7b-rot13-seqqa-avg6delta-planets
-- Búsqueda de modelos con tag rot13 en HuggingFace: https://huggingface.co/models?other=rot13
+- Modelo en Hugging Face: https://huggingface.co/models-1/v1-7b-rot13-seqqa-avg6delta-planets
+- Búsqueda de modelos con tag rot13 en Hugging Face: https://huggingface.co/models?other=rot13
 - Modelo receptor referenciado (hugo/v1-7b-rot13-seqqa-avg6delta-planets): https://huggingface.co/hugo/v1-7b-rot13-seqqa-avg6delta-planets
 
 No se han encontrado papers, repositorios de código ni demos asociados a este modelo en la información disponible.

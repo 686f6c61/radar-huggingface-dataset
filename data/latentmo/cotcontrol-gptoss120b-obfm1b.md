@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfm1b
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfm1b
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Codigo, configuracion y evaluaciones: https://github.com/johntrob14/tricky_little_guys (rutas `cot-control/rl/` y `cot-control/results/rl/obfm1b/`, diario en `runs/`)

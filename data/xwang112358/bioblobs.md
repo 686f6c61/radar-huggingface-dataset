@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xwang112358/BioBlobs
+- Modelo en Hugging Face: https://huggingface.co/xwang112358/BioBlobs
 - Paper (arXiv): https://arxiv.org/abs/2510.01632
 - Código: https://github.com/OliverLaboratory/BioBlobs
 - Conjunto de datos EC-Bench: https://github.com/dsaeedeh/EC-Bench

@@ -64,7 +64,7 @@ La principal diferencia es el formato de los pesos: este repositorio ofrece los 
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es un proyecto reciente o poco utilizado.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/exeterminal/adetailer-yolov8-safetensors
+- Repositorio de Hugging Face: https://huggingface.co/exeterminal/adetailer-yolov8-safetensors
 - Proyecto original Bingsu/adetailer: https://huggingface.co/Bingsu/adetailer
 - Script de conversion en stable-diffusion.cpp: https://github.com/RobertBeckebans/AI_stable-diffusion.cpp/blob/master/scripts/convert_yolov8_to_safetensors.py
 - Repositorio de Ultralytics YOLOv8: https://github.com/ultralytics/yolov8

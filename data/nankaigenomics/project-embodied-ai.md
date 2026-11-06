@@ -6,13 +6,13 @@ El repositorio `nankaigenomics/project-embodied-ai` no es un modelo de lenguaje 
 
 El artefacto principal del repositorio es el fichero `summary.md`, que contiene la nota completa. La model card indica que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que no se reclama ninguna mejora en benchmarks, ninguna ablation completada, ni la publicacion de codigo o de un checkpoint entrenado.
 
-Aunque los tags de HuggingFace incluyen `safetensors` y `transformer`, y los metadatos de safetensors reportan 24.832 parametros totales, el tamano del repositorio es de 0,0 GB y la documentacion no describe ninguna arquitectura de modelo, ningun dataset de entrenamiento ni ningun proceso de ajuste. Cualquier uso como modelo de inferencia carece de soporte documental y practico.
+Aunque los tags de Hugging Face incluyen `safetensors` y `transformer`, y los metadatos de safetensors reportan 24.832 parametros totales, el tamano del repositorio es de 0,0 GB y la documentacion no describe ninguna arquitectura de modelo, ningun dataset de entrenamiento ni ningun proceso de ajuste. Cualquier uso como modelo de inferencia carece de soporte documental y practico.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. El tag de HuggingFace indica `transformer`, pero la model card no describe ninguna arquitectura de red |
+| Arquitectura | No disponible. El tag de Hugging Face indica `transformer`, pero la model card no describe ninguna arquitectura de red |
 | Parametros totales | 24.832 segun los metadatos de safetensors (cifra no correspondiente a un modelo utilizable) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -68,7 +68,7 @@ No procede una comparativa tecnica con modelos de lenguaje: este repositorio no 
 - Viabilidad en GPU de consumo: no aplica.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplica; el repositorio es un documento de texto, no un artefacto servible por estos motores.
 - Latencia y throughput: no disponibles.
-- Requisitos para consultar el repositorio: ninguno relevante; basta con leer los ficheros Markdown desde HuggingFace o clonar el repositorio.
+- Requisitos para consultar el repositorio: ninguno relevante; basta con leer los ficheros Markdown desde Hugging Face o clonar el repositorio.
 - Si en el futuro se publicasen resultados, la model card exige acompanarlos de versiones de dataset, comandos, semillas, hardware y registros en bruto, lo que implicaria declarar entonces el hardware de entrenamiento y evaluacion.
 
 ## Limitaciones y advertencias
@@ -80,12 +80,12 @@ No procede una comparativa tecnica con modelos de lenguaje: este repositorio no 
 - Riesgo de mala interpretacion: secciones etiquetadas como planes o hipotesis pueden confundirse con resultados; el autor pide no hacerlo.
 - Ausencia de datos de sesgo, alucinacion o comportamiento en produccion, porque no existe modelo evaluable.
 - Licencia cc-by-4.0: permite uso y adaptacion con atribucion, pero la propia model card advierte de que hay que revisar por separado los terminos de los datos de origen cuando el repositorio se use con datasets externos.
-- Las fechas de creacion y actualizacion registradas (2026-09-28) son inconsistentes con la fecha habitual de publicacion de contenido en HuggingFace; conviene verificar la procedencia del repositorio antes de citarlo.
+- Las fechas de creacion y actualizacion registradas (2026-09-28) son inconsistentes con la fecha habitual de publicacion de contenido en Hugging Face; conviene verificar la procedencia del repositorio antes de citarlo.
 - Cero descargas y cero likes en el momento de la consulta: sin validacion por parte de la comunidad.
 - No hay idiomas declarados, paper asociado ni enlaces a codigo, demos o datasets verificables.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nankaigenomics/project-embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/nankaigenomics/project-embodied-ai
 - Perfil del autor: https://huggingface.co/nankaigenomics
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo o demos adicionales.

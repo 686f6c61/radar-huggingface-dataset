@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emdashthreee/pix-vid-wn-2.1-t2v-14b` es un repositorio de HuggingFace que redistribuye los pesos del modelo **Wan2.1 T2V-14B**, un modelo de difusión texto-a-vídeo de 14.288.491.584 parámetros (≈14,3 B) desarrollado originalmente por **Wan-AI** (equipo vinculado a Alibaba, según los enlaces del propio repositorio). No se trata, por tanto, de un modelo nuevo: el autor del repo (`emdashthreee`) actúa como espejo, y la model card incluida es la de Wan2.1 con referencias cruzadas a los repositorios oficiales.
+`emdashthreee/pix-vid-wn-2.1-t2v-14b` es un repositorio de Hugging Face que redistribuye los pesos del modelo **Wan2.1 T2V-14B**, un modelo de difusión texto-a-vídeo de 14.288.491.584 parámetros (≈14,3 B) desarrollado originalmente por **Wan-AI** (equipo vinculado a Alibaba, según los enlaces del propio repositorio). No se trata, por tanto, de un modelo nuevo: el autor del repo (`emdashthreee`) actúa como espejo, y la model card incluida es la de Wan2.1 con referencias cruzadas a los repositorios oficiales.
 
 El modelo resuelve la generación de vídeo corto a partir de una descripción textual, con soporte de dos resoluciones (480P y 720P) y una particularidad diferencial frente a otros modelos abiertos de la misma categoría: es capaz de renderizar texto legible en chino e inglés dentro del propio vídeo. Incorpora un VAE propio (Wan-VAE) diseñado para codificar y decodificar vídeo 1080P preservando información temporal, lo que lo convierte en una base reutilizable también para imagen y otras tareas derivadas de la familia (I2V, edición de vídeo, texto-a-imagen, vídeo-a-audio).
 
@@ -90,10 +90,10 @@ No se ofrece comparación numérica con alternativas de otros desarrolladores (p
 ## Enlaces
 
 - Repositorio del modelo (espejo): https://huggingface.co/emdashthreee/pix-vid-wn-2.1-t2v-14b
-- Modelo original en HuggingFace: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
+- Modelo original en Hugging Face: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
 - README original: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/blob/main/README.md
 - Ejemplos del repo original: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/tree/main/examples
-- Organización Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Organización Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - Repositorio GitHub: https://github.com/Wan-Video/Wan2.1
 - ModelScope: https://modelscope.cn/organization/Wan-AI
 - ModelScope del T2V-14B: https://www.modelscope.cn/models/Wan-AI/Wan2.1-T2V-14B

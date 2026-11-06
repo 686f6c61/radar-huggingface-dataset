@@ -18,7 +18,7 @@ La relevancia es acotada: es un recurso práctico para quien quiera experimentar
 | Longitud de contexto | no disponible (modelo de vídeo; genera fragmentos de ~5 s) |
 | Tipos de cuantizacion | BF16 (fichero `TaoMate-HD-Preview-ComfyUI-BF16.safetensors`); FP16 en el upscaler latente auxiliar |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-h3-community (etiquetada como `other` en HuggingFace) |
+| Licencia | minimax-h3-community (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (diffusion-single-file) |
 
 ## Arquitectura y entrenamiento
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TaoMate-HD-preview-T2V-Comfy (este) | LoRA convertido para ComfyUI sobre MiniMax H3 | no disponible | fragmentos de ~5 s | minimax-h3-community | HuggingFace, 0 descargas |
-| TaoMate-HD-preview (TaoLiveAIGC) | Adaptador original | no disponible | no disponible | no disponible | HuggingFace |
-| MiniMaxAI/MiniMax-H3 | Modelo base de difusión de vídeo | no disponible | streaming de fragmentos de 5 s con caché de atención | no disponible | HuggingFace |
+| TaoMate-HD-preview-T2V-Comfy (este) | LoRA convertido para ComfyUI sobre MiniMax H3 | no disponible | fragmentos de ~5 s | minimax-h3-community | Hugging Face, 0 descargas |
+| TaoMate-HD-preview (TaoLiveAIGC) | Adaptador original | no disponible | no disponible | no disponible | Hugging Face |
+| MiniMaxAI/MiniMax-H3 | Modelo base de difusión de vídeo | no disponible | streaming de fragmentos de 5 s con caché de atención | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rzgar/TaoMate-HD-preview-T2V-Comfy
+- Repositorio Hugging Face: https://huggingface.co/rzgar/TaoMate-HD-preview-T2V-Comfy
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Adaptador original: https://huggingface.co/TaoLiveAIGC/TaoMate-HD-preview
 - Upscaler latente: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/tree/main/minimax_h3_latent_upscaler_3d_conv_v1

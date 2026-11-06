@@ -114,8 +114,8 @@ Qwen3-Next-80B-A3B-Instruct ofrece el mejor equilibrio entre capacidad y eficien
 
 ## Enlaces
 
-- Repo de HuggingFace (mirror): https://huggingface.co/a-ibrahim-pwc/Qwen3-Next-80B-A3B-Instruct
-- Repo original de HuggingFace: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
+- Repo de Hugging Face (mirror): https://huggingface.co/a-ibrahim-pwc/Qwen3-Next-80B-A3B-Instruct
+- Repo original de Hugging Face: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
 - Colección Qwen3-Next: https://huggingface.co/collections/Qwen/qwen3-next
 - Blog oficial de Qwen: https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list
 - ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-Next-80B-A3B-Instruct

@@ -8,7 +8,7 @@ pngwn/SmolLM2-135M-Capybara-SFT es un modelo de lenguaje de 134,5 millones de pa
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (los tags de HuggingFace incluyen "llama") |
+| Arquitectura | No disponible (los tags de Hugging Face incluyen "llama") |
 | Parametros totales | 134.515.008 |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | no disponible |
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: 134.515.008 parámetros. En FP32, aproximadamente 0,5 GB; en FP16, aproximadamente 0,27 GB; en INT8, aproximadamente 0,13 GB. Son estimaciones teóricas, no mediciones reales.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3060) o incluso CPU, gracias al tamaño reducido del modelo.
 - Cabe en consumer GPU: sí, en prácticamente cualquier GPU moderna.
-- Opciones de despliegue: Transformers (pipeline) y text-generation-inference, según las etiquetas de HuggingFace. No se ha confirmado soporte para otras herramientas como llama.cpp u Ollama.
+- Opciones de despliegue: Transformers (pipeline) y text-generation-inference, según las etiquetas de Hugging Face. No se ha confirmado soporte para otras herramientas como llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|
 | pngwn/SmolLM2-135M-Capybara-SFT | 134.515.008 | trl-lib/Capybara | pngwn | no disponible |
 | lewtun/SmolLM2-135M-Capybara-SFT | no disponible | no disponible | lewtun | no disponible |
-| HuggingFaceTB/SmolLM2-135M | no disponible | no disponible (modelo base) | HuggingFace | no disponible |
+| HuggingFaceTB/SmolLM2-135M | no disponible | no disponible (modelo base) | Hugging Face | no disponible |
 
 No se dispone de datos de rendimiento para comparar estos modelos.
 

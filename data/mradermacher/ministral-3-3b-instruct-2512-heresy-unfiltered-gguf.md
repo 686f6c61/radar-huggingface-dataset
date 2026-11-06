@@ -88,7 +88,7 @@ La comparativa se limita a datos publicos de cada familia; no se dispone de medi
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Ministral-3-3B-Instruct-2512-Heresy-Unfiltered-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Ministral-3-3B-Instruct-2512-Heresy-Unfiltered-GGUF
 - Modelo base (fine-tuning): https://huggingface.co/imbleach/Ministral-3-3B-Instruct-2512-Heresy-Unfiltered
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Ministral-3-3B-Instruct-2512-Heresy-Unfiltered-i1-GGUF
 - Pagina de descargas de mradermacher para este modelo: https://hf.tst.eu/model#Ministral-3-3B-Instruct-2512-Heresy-Unfiltered-GGUF

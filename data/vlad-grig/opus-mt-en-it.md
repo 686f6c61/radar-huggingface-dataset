@@ -83,7 +83,7 @@ No se dispone de datos de parametros, contexto o rendimiento de las alternativas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vlad-grig/opus-mt-en-it
+- Repositorio en Hugging Face: https://huggingface.co/vlad-grig/opus-mt-en-it
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-en-it
 - Conversion previa en la que se basa: https://huggingface.co/Xenova/opus-mt-en-it
 - Transformers.js: https://github.com/huggingface/transformers.js

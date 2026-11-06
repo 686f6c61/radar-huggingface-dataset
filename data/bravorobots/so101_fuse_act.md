@@ -2,7 +2,7 @@
 
 ## Resumen
 
-so101_fuse_act es una política de control robótico (policy) publicada por BravoRobots en HuggingFace, entrenada dentro del ecosistema LeRobot. No se trata de un modelo de lenguaje: es un modelo de aprendizaje por imitación (imitation learning) que mapea observaciones de sensores y cámaras a acciones de control para un brazo robótico. Con 51.668.614 parámetros y un peso de repositorio de 0,2 GB en formato safetensors, es un modelo compacto, pensado para ejecutarse en hardware modesto junto al robot.
+so101_fuse_act es una política de control robótico (policy) publicada por BravoRobots en Hugging Face, entrenada dentro del ecosistema LeRobot. No se trata de un modelo de lenguaje: es un modelo de aprendizaje por imitación (imitation learning) que mapea observaciones de sensores y cámaras a acciones de control para un brazo robótico. Con 51.668.614 parámetros y un peso de repositorio de 0,2 GB en formato safetensors, es un modelo compacto, pensado para ejecutarse en hardware modesto junto al robot.
 
 La nomenclatura del repositorio sugiere un enfoque ACT (Action Chunking with Transformers), una arquitectura habitual en LeRobot para imitación de tareas manipulativas, aunque el autor no lo confirma explícitamente en la model card, que es mínima y solo declara la licencia MIT y la etiqueta lerobot. El sufijo "fuse" podría indicar fusión de modalidades o de checkpoints, pero no hay documentación que lo aclare.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BravoRobots/so101_fuse_act | 51,7 M | No disponible | Control robótico (SO-101) | MIT | HuggingFace, 42 descargas |
-| Políticas ACT de referencia en LeRobot | No disponible | No disponible | Imitación manipulativa | Apache 2.0 (repo LeRobot) | HuggingFace / GitHub |
+| BravoRobots/so101_fuse_act | 51,7 M | No disponible | Control robótico (SO-101) | MIT | Hugging Face, 42 descargas |
+| Políticas ACT de referencia en LeRobot | No disponible | No disponible | Imitación manipulativa | Apache 2.0 (repo LeRobot) | Hugging Face / GitHub |
 | Políticas Diffusion Policy | No disponible | No disponible | Imitación manipulativa | MIT (implementación de referencia) | GitHub |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada; la comparación se limita a licencia, disponibilidad y naturaleza de la tarea.
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BravoRobots/so101_fuse_act
+- Hugging Face: https://huggingface.co/BravoRobots/so101_fuse_act
 - LeRobot (librería): https://github.com/huggingface/lerobot
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

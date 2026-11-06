@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo SAI_100M, publicado por el usuario thongbuind en HuggingFace, es un modelo de inteligencia artificial cuyo propósito y arquitectura no están documentados en la información disponible. La única metadata publicada indica que se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación, pero no se especifican detalles técnicos como tamaño, arquitectura, idiomas o tareas soportadas. La ausencia de model card, descargas y métricas sugiere que se trata de un proyecto preliminar o experimental, sin validación comunitaria ni documentación técnica.
+El modelo SAI_100M, publicado por el usuario thongbuind en Hugging Face, es un modelo de inteligencia artificial cuyo propósito y arquitectura no están documentados en la información disponible. La única metadata publicada indica que se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación, pero no se especifican detalles técnicos como tamaño, arquitectura, idiomas o tareas soportadas. La ausencia de model card, descargas y métricas sugiere que se trata de un proyecto preliminar o experimental, sin validación comunitaria ni documentación técnica.
 
 Dada la falta de información, no es posible determinar su relevancia actual ni sus capacidades. Se recomienda precaución antes de considerar su uso en cualquier entorno de producción o investigación.
 
@@ -52,4 +52,4 @@ No disponible. No se conocen modelos comparables al carecer de especificaciones 
 
 ## Enlaces
 
-- [HuggingFace - thongbuind/SAI_100M](https://huggingface.co/thongbuind/SAI_100M)
+- [Hugging Face - thongbuind/SAI_100M](https://huggingface.co/thongbuind/SAI_100M)

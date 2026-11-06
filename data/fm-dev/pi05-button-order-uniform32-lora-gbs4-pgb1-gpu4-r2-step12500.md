@@ -90,7 +90,7 @@ No se dispone de datos de arquitectura, parámetros, contexto o rendimiento de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-uniform32-lora-gbs4-pgb1-gpu4-r2-step12500
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-uniform32-lora-gbs4-pgb1-gpu4-r2-step12500
 - Archivo de respaldo de checkpoints (conjunto de datos): https://huggingface.co/datasets/fm-dev/pi05-checkpoint-backups/tree/main/checkpoints/r2
 - Referencias a *training_config.json*, `load_model.py`, `evaluation.json` y `packaged-inference-check.txt` dentro del propio repositorio.
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, su paper, blog, repositorio o demostración (los resultados devueltos corresponden a emisoras de radio en francés y no guardan relación).

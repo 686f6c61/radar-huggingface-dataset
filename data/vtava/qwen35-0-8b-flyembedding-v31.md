@@ -84,10 +84,10 @@ No se dispone de datos oficiales del modelo base Qwen3.5-0.8B en la informacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| vtava/Qwen35-0.8B-FlyEmbedding-v31 | ~1,01 B | no disponible | no disponible | HuggingFace, safetensors | Checkpoint de investigacion con adaptador FlyEmbedding-v3.1 |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible en esta informacion | no disponible en esta informacion | HuggingFace | Modelo de partida; calidad de generacion de referencia |
-| Qwen2.5-1.5B | ~1,54 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | HuggingFace | Alternativa madura de tamano cercano con licencia permisiva |
-| Llama-3.2-1B | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Alternativa con contexto largo y licencia con restricciones |
+| vtava/Qwen35-0.8B-FlyEmbedding-v31 | ~1,01 B | no disponible | no disponible | Hugging Face, safetensors | Checkpoint de investigacion con adaptador FlyEmbedding-v3.1 |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible en esta informacion | no disponible en esta informacion | Hugging Face | Modelo de partida; calidad de generacion de referencia |
+| Qwen2.5-1.5B | ~1,54 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | Hugging Face | Alternativa madura de tamano cercano con licencia permisiva |
+| Llama-3.2-1B | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Alternativa con contexto largo y licencia con restricciones |
 
 Los datos de Qwen2.5-1.5B y Llama-3.2-1B no provienen de la informacion suministrada en esta busqueda y deben confirmarse en sus fichas oficiales antes de usarse en una decision tecnica.
 
@@ -106,7 +106,7 @@ Los datos de Qwen2.5-1.5B y Llama-3.2-1B no provienen de la informacion suminist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vtava/Qwen35-0.8B-FlyEmbedding-v31
+- Modelo en Hugging Face: https://huggingface.co/vtava/Qwen35-0.8B-FlyEmbedding-v31
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Codigo fuente del proyecto TinyCeNN-LM: https://github.com/vtavakkoli/TinyCeNN-LM
 - Resultados de busqueda web: sin enlaces relevantes; los resultados devueltos correspondian a dominios ajenos al modelo (gemini.com) y no se incluyen.

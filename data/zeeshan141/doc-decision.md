@@ -75,9 +75,9 @@ El ajuste mejora al modelo base en la puntuación global (+3,13 puntos) y en dec
 
 | Modelo | Parámetros | Contexto | Overall (bench del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `zeeshan141/doc-decision` | 4,4 B | no disponible | 86,70 % | Apache 2.0 | HuggingFace |
-| `SoMarkAI/Docision-1.0` | no disponible | no disponible | 94,15 % | no disponible | HuggingFace |
-| `Qwen/Qwen3-VL-4B-Instruct` | 4 B (aprox.) | no disponible | 83,57 % | Apache 2.0 | HuggingFace |
+| `zeeshan141/doc-decision` | 4,4 B | no disponible | 86,70 % | Apache 2.0 | Hugging Face |
+| `SoMarkAI/Docision-1.0` | no disponible | no disponible | 94,15 % | no disponible | Hugging Face |
+| `Qwen/Qwen3-VL-4B-Instruct` | 4 B (aprox.) | no disponible | 83,57 % | Apache 2.0 | Hugging Face |
 
 Frente a `Docision-1.0`, el modelo pierde en las tres métricas del benchmark del autor, aunque no se dispone de datos de tamaño ni de licencia de esa alternativa en la información proporcionada. Frente al modelo base Qwen3-VL-4B-Instruct, gana en decisión documental pero pierde en clasificación industrial, lo que sugiere que la especialización no es uniforme en todas las subtareas.
 
@@ -96,7 +96,7 @@ Frente a `Docision-1.0`, el modelo pierde en las tres métricas del benchmark de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeeshan141/doc-decision
+- Modelo en Hugging Face: https://huggingface.co/zeeshan141/doc-decision
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Benchmark citado por el autor: `SoMarkAI/doc-decision-bench` (referenciado en la model card; no se proporciona URL directa)
 - Modelo comparado: `SoMarkAI/Docision-1.0` (referenciado en la model card; no se proporciona URL directa)

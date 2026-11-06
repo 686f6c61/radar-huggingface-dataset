@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables especificos para la predi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/noufwithy/qwen2vl-echonet-ef-r64
+- Hugging Face: https://huggingface.co/noufwithy/qwen2vl-echonet-ef-r64
 - EchoNet-Dynamic (dataset y paper): https://echonet.github.io/dynamic/
 - Repositorio de referencia de EchoNet-Dynamic: https://github.com/jmdoherty2022/echonetdynamic
 - Documentacion tecnica de EchoNet-Dynamic (DeepWiki): https://deepwiki.com/echonet/dynamic/6.2-ef-training-and-evaluation

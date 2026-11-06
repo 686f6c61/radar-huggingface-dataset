@@ -18,7 +18,7 @@ Su relevancia es acotada y de caracter metodologico: sirve para comparar, dentro
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Sheared-LLaMA-1.3B declara 2048 tokens) |
 | Tipos de cuantizacion | el adaptador se distribuye en safetensors (precision no indicada); el modelo fusionado admite cuantizacion posterior a GGUF/AWQ/GPTQ mediante herramientas externas |
 | Idiomas soportados | ingles (`en`), heredado del modelo base |
-| Licencia | no disponible (y acceso restringido: requiere aceptar condiciones en HuggingFace) |
+| Licencia | no disponible (y acceso restringido: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors (adaptador LoRA compatible con `peft`); no se publican pesos fusionados ni GGUF |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (RAFT sobre Sheared-LLaMA-1.3B) | 1.3B + LoRA | no disponible (base: 2048) | no disponible | gated en HuggingFace | Fine-tuning especifico para QA con recuperacion en ingles |
+| Este adaptador (RAFT sobre Sheared-LLaMA-1.3B) | 1.3B + LoRA | no disponible (base: 2048) | no disponible | gated en Hugging Face | Fine-tuning especifico para QA con recuperacion en ingles |
 | `princeton-nlp/Sheared-LLaMA-1.3B` | 1.3B | 2048 | LLaMA 2 (uso comercial condicionado) | publico | Modelo base sin fine-tuning de tarea |
 | `TinyLlama/TinyLlama-1.1B-Chat-v1.0` | 1.1B | 2048 | Apache 2.0 | publico | Alternativa de 1B con ajuste conversacional y licencia permisiva |
 | `Qwen/Qwen2.5-1.5B-Instruct` | 1.5B | 32768 declarados | Apache 2.0 | publico | Ventana de contexto muy superior y soporte multilingue; no entrenado con RAFT |
@@ -73,7 +73,7 @@ Los datos de los modelos comparados provienen de sus fichas publicas y no de la 
 
 ## Limitaciones y advertencias
 
-- No se declara licencia: no hay base legal explicita para uso comercial, y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace.
+- No se declara licencia: no hay base legal explicita para uso comercial, y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face.
 - El modelo base Sheared-LLaMA-1.3B deriva de LLaMA-2 y arrastra sus condiciones de uso, que incluyen restricciones y obligaciones de atribucion.
 - Modelo de 1.3B parametros: alta probabilidad de alucinacion, especialmente cuando el contexto recuperado no contiene la respuesta; el fine-tuning RAFT mitiga pero no elimina este comportamiento.
 - Solo ingles declarado; no hay evidencia de calidad en castellano ni en otros idiomas.
@@ -86,7 +86,7 @@ Los datos de los modelos comparados provienen de sus fichas publicas y no de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-raft
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-raft
 - Modelo base: https://huggingface.co/princeton-nlp/Sheared-LLaMA-1.3B
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/microsoft/ms_marco
 - Paper de Sheared LLaMA (poda estructurada y destilacion): https://arxiv.org/abs/2310.06694

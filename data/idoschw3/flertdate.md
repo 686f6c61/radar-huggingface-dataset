@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FlertDate es un modelo publicado en HuggingFace por el usuario `idoschw3` bajo licencia Apache 2.0. La model card asociada está completamente vacía: no incluye descripción, arquitectura, datos de entrenamiento, capacidades ni ejemplos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y actualización coincide (26 de octubre de 2026), lo que sugiere una publicación reciente y sin mantenimiento posterior.
+FlertDate es un modelo publicado en Hugging Face por el usuario `idoschw3` bajo licencia Apache 2.0. La model card asociada está completamente vacía: no incluye descripción, arquitectura, datos de entrenamiento, capacidades ni ejemplos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y actualización coincide (26 de octubre de 2026), lo que sugiere una publicación reciente y sin mantenimiento posterior.
 
-Por el nombre ("FlertDate") no es posible inferir con fiabilidad la arquitectura ni el propósito del modelo. No hay información sobre tamaño, contexto, tokenizador, idiomas ni formato de pesos. Tampoco se ha publicado pipeline asociado en la ficha de HuggingFace, por lo que no se puede confirmar si se trata de un modelo de lenguaje, un modelo multimodal, un clasificador o cualquier otra tipología.
+Por el nombre ("FlertDate") no es posible inferir con fiabilidad la arquitectura ni el propósito del modelo. No hay información sobre tamaño, contexto, tokenizador, idiomas ni formato de pesos. Tampoco se ha publicado pipeline asociado en la ficha de Hugging Face, por lo que no se puede confirmar si se trata de un modelo de lenguaje, un modelo multimodal, un clasificador o cualquier otra tipología.
 
 En consecuencia, esta ficha se limita a documentar los metadatos disponibles y a señalar explícitamente los datos que faltan. Cualquier evaluación técnica, comparativa o recomendación de despliegue queda fuera de alcance hasta que el autor publique una model card con información verificable.
 
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/idoschw3/FlertDate
+- Hugging Face: https://huggingface.co/idoschw3/FlertDate
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

@@ -72,7 +72,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no hay altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_Flat-Affect
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_Flat-Affect
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio de jBlaze: https://github.com/apolloraines/jblaze
 - Variante similar (Jbliterated-v2): https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated-v2

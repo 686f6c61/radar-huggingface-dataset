@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alimalirzayev/novashop-support-lora` es un adaptador LoRA publicado en HuggingFace por el usuario alimalirzayev. No es un modelo con pesos completos, sino un conjunto de pesos de ajuste fino (0,2 GB en el repositorio) que debe cargarse sobre su modelo base declarado: `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, una version cuantizada a 4 bits de Llama 3.1 8B Instruct preparada por Unsloth. Se distribuye con la libreria PEFT (version 0.20.0 registrada por el autor) y esta etiquetado como `lora`, `sft`, `trl`, `unsloth`, `text-generation` y `conversational`.
+`alimalirzayev/novashop-support-lora` es un adaptador LoRA publicado en Hugging Face por el usuario alimalirzayev. No es un modelo con pesos completos, sino un conjunto de pesos de ajuste fino (0,2 GB en el repositorio) que debe cargarse sobre su modelo base declarado: `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, una version cuantizada a 4 bits de Llama 3.1 8B Instruct preparada por Unsloth. Se distribuye con la libreria PEFT (version 0.20.0 registrada por el autor) y esta etiquetado como `lora`, `sft`, `trl`, `unsloth`, `text-generation` y `conversational`.
 
-El nombre del repositorio sugiere un ajuste orientado a atencion al cliente o soporte ("support") para un comercio electronico ("novashop"), aunque esta interpretacion es una inferencia a partir del identificador y no esta confirmada en ninguna documentacion publicada. La model card del repositorio es la plantilla generica de HuggingFace sin rellenar: todos los campos (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, hardware) aparecen como "[More Information Needed]".
+El nombre del repositorio sugiere un ajuste orientado a atencion al cliente o soporte ("support") para un comercio electronico ("novashop"), aunque esta interpretacion es una inferencia a partir del identificador y no esta confirmada en ninguna documentacion publicada. La model card del repositorio es la plantilla generica de Hugging Face sin rellenar: todos los campos (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, hardware) aparecen como "[More Information Needed]".
 
 Por tanto, la relevancia de esta ficha es limitada y fundamentalmente cautelar: sirve para documentar que existe un adaptador con trazabilidad tecnica minima (modelo base identificado, framework declarado) y para advertir de que cualquier evaluacion de calidad, sesgo o rendimiento es imposible con la informacion disponible. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -80,8 +80,8 @@ No hay datos de evaluacion del adaptador que permitan una comparacion de rendimi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| alimalirzayev/novashop-support-lora | Adaptador LoRA sobre 8.030 M | No disponible (base: 128.000 tokens) | No disponible | Repositorio HuggingFace, 0 descargas | No evaluado |
-| unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit (base) | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Publico en HuggingFace | Datos publicos de Meta para Llama 3.1 8B Instruct |
+| alimalirzayev/novashop-support-lora | Adaptador LoRA sobre 8.030 M | No disponible (base: 128.000 tokens) | No disponible | Repositorio Hugging Face, 0 descargas | No evaluado |
+| unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit (base) | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Publico en Hugging Face | Datos publicos de Meta para Llama 3.1 8B Instruct |
 | Otros adaptadores LoRA de soporte al cliente sobre Llama 3.1 8B | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativas de ~7-8 B con contexto largo (por ejemplo, Qwen2.5 7B Instruct) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ No se dispone de informacion sobre modelos comparables directos que haya sido ap
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/alimalirzayev/novashop-support-lora
+- Repositorio del modelo en Hugging Face: https://huggingface.co/alimalirzayev/novashop-support-lora
 - Modelo base declarado: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Modelo original de Meta (Llama 3.1): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Libreria PEFT: https://huggingface.co/docs/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Chinese accent es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Quiglee2 en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, orientado especificamente a transcribir audio en ingles con acento chino, segun se deduce del nombre del modelo y del dataset de entrenamiento empleado (naharte/chinese_english).
+Whisper tiny Chinese accent es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Quiglee2 en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, orientado especificamente a transcribir audio en ingles con acento chino, segun se deduce del nombre del modelo y del dataset de entrenamiento empleado (naharte/chinese_english).
 
 El modelo conserva la arquitectura encoder-decoder transformer propia de Whisper en su variante "tiny", con 37,76 millones de parametros totales y un peso en disco de aproximadamente 0,3 GB. Al estar basado en whisper-tiny, hereda las caracteristicas del original: procesamiento de audio a 16 kHz, tokenizador multilingue y capacidad de transcripcion y traduccion, aunque la model card solo declara soporte para ingles.
 
@@ -32,7 +32,7 @@ El ajuste fino se realizo sobre el dataset naharte/chinese_english con los sigui
 - Reconocimiento automatico del habla en ingles, con enfasis en hablantes con acento chino.
 - Transcripcion de audio de hasta 30 segundos por ventana, segun la arquitectura base Whisper.
 - Generacion de texto a partir de audio (pipeline automatic-speech-recognition).
-- Compatible con la API de transformers y con endpoints de HuggingFace (tag endpoints_compatible).
+- Compatible con la API de transformers y con endpoints de Hugging Face (tag endpoints_compatible).
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte de agentes ni de razonamiento multi-paso.
 - Capacidad multilingue no confirmada: la model card solo declara ingles, aunque el modelo base es multilingue.
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto audio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Whisper tiny Chinese accent (este modelo) | 37,8 M | 30 s por ventana | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 39 M | 30 s por ventana | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74 M | 30 s por ventana | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s por ventana | Apache 2.0 | HuggingFace |
+| Whisper tiny Chinese accent (este modelo) | 37,8 M | 30 s por ventana | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 39 M | 30 s por ventana | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74 M | 30 s por ventana | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s por ventana | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre este ajuste fino y las alternativas en la informacion proporcionada. La comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos entre este ajuste fino y las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quiglee2/whisper-tiny-chinese-ft
+- Modelo en Hugging Face: https://huggingface.co/Quiglee2/whisper-tiny-chinese-ft
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/chinese_english
 - Paper de Whisper (referencia del modelo base): https://arxiv.org/abs/2212.04356

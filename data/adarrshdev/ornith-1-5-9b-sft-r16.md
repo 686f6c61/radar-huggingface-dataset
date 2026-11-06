@@ -80,8 +80,8 @@ No se dispone de benchmarks que permitan comparar numéricamente el adaptador co
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/adarrshDev/ornith-1.5-9b-sft-r16
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Adaptador en Hugging Face: https://huggingface.co/adarrshDev/ornith-1.5-9b-sft-r16
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Versión MLX del base: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Repositorio GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1

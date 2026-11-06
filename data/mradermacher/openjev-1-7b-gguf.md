@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/OpenJev-1.7B-GGUF | 1,72 B | no disponible | apache-2.0 | GGUF (12 cuantizaciones) | Publicado en HuggingFace |
-| alanhuangya/OpenJev-1.7B (modelo base) | 1,72 B | no disponible | apache-2.0 | safetensors | Publicado en HuggingFace |
+| mradermacher/OpenJev-1.7B-GGUF | 1,72 B | no disponible | apache-2.0 | GGUF (12 cuantizaciones) | Publicado en Hugging Face |
+| alanhuangya/OpenJev-1.7B (modelo base) | 1,72 B | no disponible | apache-2.0 | safetensors | Publicado en Hugging Face |
 | Alternativas de terceros de tamano similar | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de comparativas oficiales con otros modelos de decision o agentes de navegador, por lo que no es posible establecer una comparacion cuantitativa con alternativas.

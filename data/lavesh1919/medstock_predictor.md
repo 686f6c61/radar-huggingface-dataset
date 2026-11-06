@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MedStock_predictor es un repositorio publicado en HuggingFace por el usuario lavesh1919 bajo el identificador `lavesh1919/MedStock_predictor`. Por el nombre se infiere que podria tratarse de un modelo o utilidad orientada a la prediccion de series temporales en el ambito farmaceutico o de valores bursatiles relacionados con el sector medico, pero no se ha publicado informacion que confirme esta funcionalidad. El repositorio no incluye model card, pipeline declarado, licencia, idiomas soportados ni descripcion tecnica alguna.
+MedStock_predictor es un repositorio publicado en Hugging Face por el usuario lavesh1919 bajo el identificador `lavesh1919/MedStock_predictor`. Por el nombre se infiere que podria tratarse de un modelo o utilidad orientada a la prediccion de series temporales en el ambito farmaceutico o de valores bursatiles relacionados con el sector medico, pero no se ha publicado informacion que confirme esta funcionalidad. El repositorio no incluye model card, pipeline declarado, licencia, idiomas soportados ni descripcion tecnica alguna.
 
-Los datos disponibles en HuggingFace son minimos: cero descargas, un unico "like", ningun tag relevante salvo `region:us` y un tamano de repositorio de 0.0 GB, lo que sugiere que los pesos del modelo no estan subidos o que el contenido es meramente testimonial. Las fechas de creacion y actualizacion (10 de septiembre de 2026) indican que se subio y se actualizo en un intervalo de apenas dos minutos, sin desarrollo posterior visible.
+Los datos disponibles en Hugging Face son minimos: cero descargas, un unico "like", ningun tag relevante salvo `region:us` y un tamano de repositorio de 0.0 GB, lo que sugiere que los pesos del modelo no estan subidos o que el contenido es meramente testimonial. Las fechas de creacion y actualizacion (10 de septiembre de 2026) indican que se subio y se actualizo en un intervalo de apenas dos minutos, sin desarrollo posterior visible.
 
 Dado que no existe informacion tecnica verificable (arquitectura, numero de parametros, contexto, datos de entrenamiento o benchmarks), esta ficha se limita a documentar lo que consta publicamente y a marcar como "no disponible" todo aquello que no puede confirmarse. No se debe asumir ninguna capacidad ni rendimiento a partir del nombre del repositorio.
 
@@ -78,5 +78,5 @@ No disponible. No se ha identificado la categoria del modelo ni su tamano, por l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lavesh1919/MedStock_predictor
+- Hugging Face: https://huggingface.co/lavesh1919/MedStock_predictor
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo (foros de relojes y un blog financiero generico).

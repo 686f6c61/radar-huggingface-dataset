@@ -28,7 +28,7 @@ La variante heretic-ja aplica abliteración sobre el modelo base usando Heretic 
 ## Capacidades
 
 - Generación de texto y razonamiento conversacional, con soporte para tareas de codificación y agénticas (según la model card del modelo base).
-- Procesamiento multimodal imagen-texto (según el tag image-text-to-text de HuggingFace, aunque no hay detalles en la documentación).
+- Procesamiento multimodal imagen-texto (según el tag image-text-to-text de Hugging Face, aunque no hay detalles en la documentación).
 - Capacidad de auto-mejora: el modelo base puede generar tareas, construir scaffolds y producir rollouts para entrenamiento por refuerzo.
 - Soporte de tool calling y razonamiento multi-paso: no se documenta explícitamente, pero el modelo base destaca en benchmarks agénticos.
 - Multilingüismo: no especificado, aunque las pruebas de rendimiento de esta variante se realizaron con datasets japoneses.
@@ -76,7 +76,7 @@ No se dispone de datos de contexto ni de rendimiento numérico para una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OS-Software/Ornith-1.5-35B-A3B-heretic-ja
+- Modelo en Hugging Face: https://huggingface.co/OS-Software/Ornith-1.5-35B-A3B-heretic-ja
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Versión GGUF: https://huggingface.co/OS-Software/Ornith-1.5-35B-A3B-heretic-ja-GGUF
 - Blog de Ornith sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html

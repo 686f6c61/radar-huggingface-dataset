@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Homiebear/RebeccaCyberpunk_325e_23075s` es una publicacion alojada en HuggingFace por el usuario Homiebear, distribuida bajo licencia OpenRAIL. La model card asociada contiene unicamente el campo de licencia (`license: openrail`) y carece de cualquier otra documentacion: no se declara arquitectura, tamano, pipeline, idiomas, dataset de entrenamiento ni formato de pesos. El repositorio acumula 0 descargas y 0 "likes" desde su creacion, fechada el 8 de octubre de 2026.
+El repositorio `Homiebear/RebeccaCyberpunk_325e_23075s` es una publicacion alojada en Hugging Face por el usuario Homiebear, distribuida bajo licencia OpenRAIL. La model card asociada contiene unicamente el campo de licencia (`license: openrail`) y carece de cualquier otra documentacion: no se declara arquitectura, tamano, pipeline, idiomas, dataset de entrenamiento ni formato de pesos. El repositorio acumula 0 descargas y 0 "likes" desde su creacion, fechada el 8 de octubre de 2026.
 
 Dado que no hay informacion tecnica publica, no es posible confirmar que tipo de modelo es. El patron de nombrado empleado (`325e_23075s`, es decir, 325 epocas y 23.075 pasos) coincide con la convencion de salida habitual de herramientas de entrenamiento de checkpoints de difusion (kohya_ss, entre otras) para ajustes tipo LoRA o DreamBooth, y el identificador `RebeccaCyberpunk` apunta a un ajuste de estilo o de personaje sobre un modelo generativo de imagenes. Se trata, en cualquier caso, de una inferencia a partir del nombre del repositorio y no de un dato confirmado por el autor.
 
@@ -83,7 +83,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Homiebear/RebeccaCyberpunk_325e_23075s | no disponible | no disponible | openrail | HuggingFace | no disponible |
+| Homiebear/RebeccaCyberpunk_325e_23075s | no disponible | no disponible | openrail | Hugging Face | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Homiebear/RebeccaCyberpunk_325e_23075s
-- Perfil del autor en HuggingFace: https://huggingface.co/Homiebear
+- Repositorio en Hugging Face: https://huggingface.co/Homiebear/RebeccaCyberpunk_325e_23075s
+- Perfil del autor en Hugging Face: https://huggingface.co/Homiebear
 - Licencia OpenRAIL (referencia de la familia de licencias): https://www.licenses.ai/blog/2022/8/26/bigscience-open-rail-m-a-new-model-license-framework-for-responsible-ai-development
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

@@ -64,6 +64,6 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-9B-Abliterated-HSAQ-v2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-Abliterated-HSAQ-v2-i1-GGUF
 - Modelo base (MethodWhite): https://huggingface.co/MethodWhite/Qwen3.5-9B-Abliterated-HSAQ-v2
 - Guía sobre Qwen3.5-9B Abliterated (fuente externa): https://codersera.com/blog/unrestricted-uncensored-qwen35-9b-abliterated-full-guide/

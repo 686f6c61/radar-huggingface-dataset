@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pianissimo-sv-coreml es una conversion al formato CoreML del modelo de reconocimiento automatico del habla (ASR) Klang Pianissimo, desarrollado originalmente por Klang AI AB y publicado en HuggingFace como KlangAI/pianissimo-sv. El modelo reconoce voz en sueco y esta pensado para inferencia local en dispositivos Apple Silicon, aprovechando el Apple Neural Engine (ANE) a traves del framework CoreML. El autor de esta conversion es el usuario markstrom, que no ha reentrenado los pesos: unicamente ha cambiado el formato de los ficheros.
+Pianissimo-sv-coreml es una conversion al formato CoreML del modelo de reconocimiento automatico del habla (ASR) Klang Pianissimo, desarrollado originalmente por Klang AI AB y publicado en Hugging Face como KlangAI/pianissimo-sv. El modelo reconoce voz en sueco y esta pensado para inferencia local en dispositivos Apple Silicon, aprovechando el Apple Neural Engine (ANE) a traves del framework CoreML. El autor de esta conversion es el usuario markstrom, que no ha reentrenado los pesos: unicamente ha cambiado el formato de los ficheros.
 
 Arquitectonicamente es un modelo FastConformer (encoder) con decodificador TDT (Token-and-Duration Transducer), derivado por ajuste fino del modelo NVIDIA Parakeet TDT 0.6B v3. La conversion divide el pipeline en cuatro paquetes CoreML independientes (preprocesador, encoder, decoder y joint/decision) con pesos int8 en el encoder, mas un vocabulario de tokens en JSON.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo y formato | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| markstrom/pianissimo-sv-coreml | FastConformer + TDT, CoreML `.mlpackage` int8 | No disponible (base de ~0,6 mM por nomenclatura) | Sueco | CC BY 4.0 | HuggingFace, ejecucion en Apple Silicon |
-| KlangAI/pianissimo-sv | FastConformer + TDT, pesos originales | No disponible | Sueco | CC BY 4.0 | HuggingFace; requiere entorno PyTorch |
+| markstrom/pianissimo-sv-coreml | FastConformer + TDT, CoreML `.mlpackage` int8 | No disponible (base de ~0,6 mM por nomenclatura) | Sueco | CC BY 4.0 | Hugging Face, ejecucion en Apple Silicon |
+| KlangAI/pianissimo-sv | FastConformer + TDT, pesos originales | No disponible | Sueco | CC BY 4.0 | Hugging Face; requiere entorno PyTorch |
 | NVIDIA Parakeet TDT 0.6B v3 | FastConformer + TDT | ~0,6 mil millones segun nomenclatura | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Modelo base del ajuste fino |
 | OpenAI Whisper large-v3 | Encoder-decoder transformer | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Ampliamente usado como referencia ASR, pero sin datos comparativos en la informacion disponible |
 
@@ -89,7 +89,7 @@ No se dispone de cifras de WER ni de rendimiento comparado entre estas alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/markstrom/pianissimo-sv-coreml
+- Repositorio Hugging Face: https://huggingface.co/markstrom/pianissimo-sv-coreml
 - Modelo base: https://huggingface.co/KlangAI/pianissimo-sv
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Libreria FluidAudio (mencionada en la model card, sin enlace proporcionado): no disponible

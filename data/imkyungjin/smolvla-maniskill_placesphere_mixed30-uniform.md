@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smolvla-maniskill_placesphere_mixed30-uniform es un ajuste fino (fine-tuning) del modelo lerobot/smolvla_base, publicado por el usuario ImKyungjin en HuggingFace. Se trata de una política de visión-lenguaje-acción (VLA) para robótica, entrenada y subida al Hub con LeRobot, la librería de HuggingFace para aprendizaje por imitación en robots. El modelo tiene 450.046.176 parámetros (~450 M) y un repositorio de 0,9 GB, coherente con pesos almacenados en safetensors a 16 bits.
+smolvla-maniskill_placesphere_mixed30-uniform es un ajuste fino (fine-tuning) del modelo lerobot/smolvla_base, publicado por el usuario ImKyungjin en Hugging Face. Se trata de una política de visión-lenguaje-acción (VLA) para robótica, entrenada y subida al Hub con LeRobot, la librería de Hugging Face para aprendizaje por imitación en robots. El modelo tiene 450.046.176 parámetros (~450 M) y un repositorio de 0,9 GB, coherente con pesos almacenados en safetensors a 16 bits.
 
 SmolVLA, la arquitectura de la que deriva, se presenta en la model card como un modelo VLA compacto y eficiente que logra rendimiento competitivo con un coste computacional reducido y puede desplegarse en hardware de consumo. El modelo base es genérico para control robótico; este checkpoint concreto ha sido especializado mediante entrenamiento supervisado sobre el conjunto de datos local/maniskill_placesphere_mixed30, cuyo identificador sugiere una mezcla ("mixed30") de tareas y pesos uniformes ("uniform"), aunque la composición exacta no está documentada en la información disponible.
 
@@ -73,11 +73,11 @@ Los datos de los modelos comparados proceden de su documentación pública gener
 
 | Modelo | Parametros | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| smolvla-maniskill_placesphere_mixed30-uniform | 450 M (dato safetensors) | no disponible; observaciones visuales y estado del robot | Apache 2.0 | HuggingFace, libreria LeRobot |
-| lerobot/smolvla_base (modelo base) | ~450 M (aprox., misma familia) | no disponible | no disponible en la informacion proporcionada | HuggingFace, LeRobot |
-| OpenVLA | ~7 B (aprox.) | no disponible | no disponible en la informacion proporcionada | HuggingFace / repositorio publico |
+| smolvla-maniskill_placesphere_mixed30-uniform | 450 M (dato safetensors) | no disponible; observaciones visuales y estado del robot | Apache 2.0 | Hugging Face, libreria LeRobot |
+| lerobot/smolvla_base (modelo base) | ~450 M (aprox., misma familia) | no disponible | no disponible en la informacion proporcionada | Hugging Face, LeRobot |
+| OpenVLA | ~7 B (aprox.) | no disponible | no disponible en la informacion proporcionada | Hugging Face / repositorio publico |
 | pi-0 (Physical Intelligence) | ~3,3 B (aprox.) | no disponible | no disponible en la informacion proporcionada | Publicacion y repositorio del proyecto |
-| Octo | ~93 M (aprox., version base) | no disponible | no disponible en la informacion proporcionada | HuggingFace / repositorio publico |
+| Octo | ~93 M (aprox., version base) | no disponible | no disponible en la informacion proporcionada | Hugging Face / repositorio publico |
 
 La ventaja principal de este checkpoint frente a OpenVLA o pi-0 es el tamaño: ~450 M frente a 3-7 B de parámetros, lo que reduce el coste de inferencia y permite desplegarlo en GPUs de consumo. La contrapartida es que no hay evidencia publicada de rendimiento comparable en tareas generales de manipulación.
 
@@ -95,7 +95,7 @@ La ventaja principal de este checkpoint frente a OpenVLA o pi-0 es el tamaño: ~
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/ImKyungjin/smolvla-maniskill_placesphere_mixed30-uniform
+- Ficha en Hugging Face: https://huggingface.co/ImKyungjin/smolvla-maniskill_placesphere_mixed30-uniform
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Articulo de SmolVLA (referenciado en la model card): https://huggingface.co/papers/2506.01844
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

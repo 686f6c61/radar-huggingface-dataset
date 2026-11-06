@@ -28,7 +28,7 @@ La información pública disponible es muy limitada. La model card no declara li
 | Profundidad de bits de entrada | uint16, 16 bits significativos |
 | Formato de imagen de entrenamiento | .oir (Olympus), proyeccion maxima (en RGC-Snap: n/a o max) |
 | Aumento de entrenamiento | 20x (BRN3A y RPBMS) y 10x (RGC-Snap) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-15 / 2026-09-15 |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Backbone / arquitectura | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JohnsonLabJHU/cellpose-retinal-models | Segmentacion de RGC en retina | Cellpose sobre DINOv3 ViT Large | no disponible | Imagenes uint16, 1024x1024 (20x) y 2048x2048 (10x) | no disponible | HuggingFace, 3,6 GB, 0 descargas |
+| JohnsonLabJHU/cellpose-retinal-models | Segmentacion de RGC en retina | Cellpose sobre DINOv3 ViT Large | no disponible | Imagenes uint16, 1024x1024 (20x) y 2048x2048 (10x) | no disponible | Hugging Face, 3,6 GB, 0 descargas |
 | Cellpose (modelos generalistas, p. ej. cyto y nuclei) | Segmentacion celular general | Cellpose con backbone convolucional | no disponible en la informacion proporcionada | Imagenes de microscopia 2D y 3D | MIT (segun la distribucion habitual del proyecto; no verificado en esta busqueda) | Publico y ampliamente adoptado |
 | Cellpose-SAM | Segmentacion celular general | Cellpose sobre backbone tipo SAM | no disponible en la informacion proporcionada | Imagenes de microscopia 2D | no disponible | Publico |
 | StarDist | Segmentacion de instancias con formas convexas | Red convolucional con prediccion de formas | no disponible en la informacion proporcionada | Imagenes 2D y 3D | no disponible | Publico |
@@ -99,6 +99,6 @@ No se dispone de cifras de rendimiento comparativas verificadas en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnsonLabJHU/cellpose-retinal-models
+- Modelo en Hugging Face: https://huggingface.co/JohnsonLabJHU/cellpose-retinal-models
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo. Los resultados obtenidos corresponden a contenidos sin relacion (una serie de television de tematica historica), por lo que se descartan.
 - No se han encontrado en la informacion proporcionada enlaces a paper, blog tecnico, repositorio de codigo, demo ni dataset asociados al modelo.

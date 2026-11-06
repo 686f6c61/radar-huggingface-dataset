@@ -89,7 +89,7 @@ Advertencia del autor: son slices de desarrollo sobre los que se seleccionaron l
 
 | Modelo | Parametros | Tipo | Aceptacion (ronda de 3, SWE) | Velocidad SWE greedy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este drafter (block drafter) | 391,3 M | Bloque de 4 posiciones, estilo DFlash | 1,908 | 64,3 tok/s (1,38x) | Apache 2.0 | Publicado en HuggingFace |
+| Este drafter (block drafter) | 391,3 M | Bloque de 4 posiciones, estilo DFlash | 1,908 | 64,3 tok/s (1,38x) | Apache 2.0 | Publicado en Hugging Face |
 | Drafter de cadena run 11 (EAGLE-3) | no disponible | Cadena EAGLE-3 | 1,38 | 57,7 tok/s | no disponible | No publicado |
 | Redaccion por copia (baseline) | no aplica | Copia desde contexto | no disponible | 46,6 tok/s | no aplica | Integrado en TensorFold |
 
@@ -111,7 +111,7 @@ No se dispone de informacion sobre otros drafters comparables de terceros para K
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/josch15366/Kolibri-1-block-drafter
+- Modelo en Hugging Face: https://huggingface.co/josch15366/Kolibri-1-block-drafter
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Fork de TensorFold: https://github.com/jschmied/TensorFold/tree/8ea05aae1a89228fb3336d90cf103ca68dfac2f1
 - Paper DFlash: https://arxiv.org/abs/2602.06036

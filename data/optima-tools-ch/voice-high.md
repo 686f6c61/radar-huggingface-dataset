@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Optima Tools — voice-high es un paquete de pesos publicado en HuggingFace por el usuario optima-tools-ch. Segun su model card, se trata de una copia identica, byte por byte, de los archivos del modelo Qwen3-TTS-12Hz-1.7B-CustomVoice, publicado originalmente por el equipo Qwen en la revision `0c0e3051f131929182e2c023b9537f8b1c68adfe`. El autor declara que ningun archivo ha sido modificado y que el paquete incluye un manifiesto `.optima-package.json` con el tamano y la huella SHA-256 de cada fichero, que la herramienta Optima Tools verifica durante la instalacion.
+Optima Tools — voice-high es un paquete de pesos publicado en Hugging Face por el usuario optima-tools-ch. Segun su model card, se trata de una copia identica, byte por byte, de los archivos del modelo Qwen3-TTS-12Hz-1.7B-CustomVoice, publicado originalmente por el equipo Qwen en la revision `0c0e3051f131929182e2c023b9537f8b1c68adfe`. El autor declara que ningun archivo ha sido modificado y que el paquete incluye un manifiesto `.optima-package.json` con el tamano y la huella SHA-256 de cada fichero, que la herramienta Optima Tools verifica durante la instalacion.
 
-El modelo subyacente es Qwen3-TTS, un sistema de sintesis de voz (text-to-speech) de la familia Qwen3, en su variante de 1,7 mil millones de parametros con soporte de voces personalizadas (CustomVoice) y una frecuencia de muestreo de audio de 12 kHz segun la nomenclatura del repositorio. La arquitectura registrada en los metadatos de HuggingFace es `qwen3_tts`, y el repositorio contiene 1.916.676.352 parametros en formato safetensors, con un tamano total de 4,5 GB.
+El modelo subyacente es Qwen3-TTS, un sistema de sintesis de voz (text-to-speech) de la familia Qwen3, en su variante de 1,7 mil millones de parametros con soporte de voces personalizadas (CustomVoice) y una frecuencia de muestreo de audio de 12 kHz segun la nomenclatura del repositorio. La arquitectura registrada en los metadatos de Hugging Face es `qwen3_tts`, y el repositorio contiene 1.916.676.352 parametros en formato safetensors, con un tamano total de 4,5 GB.
 
 La relevancia de este repositorio es fundamentalmente practica: actua como espejo verificado de un modelo TTS de Qwen bajo licencia Apache 2.0, pensado para integraciones de lectura vocal dentro del ecosistema Optima Tools. No aporta innovaciones propias ni ajustes adicionales; su valor esta en la trazabilidad y la verificacion de integridad de los pesos originales.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Optima Tools — voice-high (espejo de Qwen3-TTS-12Hz-1.7B-CustomVoice) | 1,7B | no disponible | Apache 2.0 | HuggingFace (espejo verificado) |
-| Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice (original) | 1,7B | no disponible | Apache 2.0 | HuggingFace (repositorio oficial) |
+| Optima Tools — voice-high (espejo de Qwen3-TTS-12Hz-1.7B-CustomVoice) | 1,7B | no disponible | Apache 2.0 | Hugging Face (espejo verificado) |
+| Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice (original) | 1,7B | no disponible | Apache 2.0 | Hugging Face (repositorio oficial) |
 | Alternativas TTS de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos TTS comparables en los datos proporcionados, por lo que no es posible establecer una comparativa de rendimiento con alternativas.
@@ -79,7 +79,7 @@ No se dispone de informacion sobre otros modelos TTS comparables en los datos pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/optima-tools-ch/voice-high
+- Repositorio Hugging Face: https://huggingface.co/optima-tools-ch/voice-high
 - Repositorio original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Revision original: `0c0e3051f131929182e2c023b9537f8b1c68adfe`
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

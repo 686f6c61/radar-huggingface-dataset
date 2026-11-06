@@ -106,7 +106,7 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/HeartCodec-oss-fp16
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/HeartCodec-oss-fp16
 - Modelo base: https://huggingface.co/HeartMuLa/HeartCodec-oss-20260123
 - Repositorio Swift: https://github.com/xocialize/mlx-heartmula-swift
 - Mediciones detalladas: https://github.com/xocialize/mlx-heartmula-swift/blob/main/MEASUREMENTS.md

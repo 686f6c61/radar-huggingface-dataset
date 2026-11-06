@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ameliabrown/ml-matching` es un repositorio de HuggingFace que publica una implementación reducida de una arquitectura tipo **Mixer** orientada a tareas de *matching*, acompañada de un fichero de configuración explícito y un checkpoint de inicialización. No es un modelo entrenado ni una release de pesos listos para producción: la propia model card lo describe como un punto de partida reproducible ("nano variant") para *smoke tests* y experimentación. El recuento real de parámetros del fichero `model.safetensors` es de 16.576 parámetros, un orden de magnitud propio de un ejemplo didáctico o de un banco de pruebas, no de un modelo de lenguaje utilizable.
+`ameliabrown/ml-matching` es un repositorio de Hugging Face que publica una implementación reducida de una arquitectura tipo **Mixer** orientada a tareas de *matching*, acompañada de un fichero de configuración explícito y un checkpoint de inicialización. No es un modelo entrenado ni una release de pesos listos para producción: la propia model card lo describe como un punto de partida reproducible ("nano variant") para *smoke tests* y experimentación. El recuento real de parámetros del fichero `model.safetensors` es de 16.576 parámetros, un orden de magnitud propio de un ejemplo didáctico o de un banco de pruebas, no de un modelo de lenguaje utilizable.
 
 El repositorio lo firma el usuario `ameliabrown` bajo licencia MIT, con etiquetas `safetensors`, `mixer`, `pytorch` y `matching`. La arquitectura declarada combina atención dispersa (*sparse attention*), fusión con puertas (*gated fusion*), activación `mish` y normalización `rmsnorm`, todo sobre un esquema Mixer. El autor no reclama ninguna puntuación de benchmark y advierte explícitamente de que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -88,5 +88,5 @@ No disponible. No se dispone de informacion sobre modelos comparables en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ameliabrown/ml-matching
+- Repositorio en Hugging Face: https://huggingface.co/ameliabrown/ml-matching
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las consultas devolvieron unicamente paginas genericas del motor de busqueda (portada de Google, pagina de inicio de sesion de cuentas y pagina de descarga de Chrome), sin papers, blogs, repositorios ni demos relacionados con el modelo. No se dispone de paper, blog oficial ni demo.

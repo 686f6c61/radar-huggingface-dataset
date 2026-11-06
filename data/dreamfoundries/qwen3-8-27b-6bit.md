@@ -23,7 +23,7 @@ La relevancia actual radica en la creciente adopción de MLX como framework para
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación de esta conversión. Se sabe que Qwen3.8-27B pertenece a la familia Qwen3.8, que emplea una arquitectura transformer con atención por ventanas deslizantes y mecanismos de atención con interpolación de posición rotatoria (RoPE), pero estos datos no están confirmados en la ficha de HuggingFace.
+No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación de esta conversión. Se sabe que Qwen3.8-27B pertenece a la familia Qwen3.8, que emplea una arquitectura transformer con atención por ventanas deslizantes y mecanismos de atención con interpolación de posición rotatoria (RoPE), pero estos datos no están confirmados en la ficha de Hugging Face.
 
 El proceso de cuantización se realizó con `mlx-lm 0.31.3`, utilizando cuantización afine de 6 bits con group size 64. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens procesados o si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se mencionan innovaciones técnicas adicionales en la conversión.
 
@@ -63,5 +63,5 @@ No disponible. No se han encontrado comparaciones con otras conversiones cuantiz
 
 ## Enlaces
 
-- [HuggingFace - DreamFoundries/Qwen3.8-27B-6bit](https://huggingface.co/DreamFoundries/Qwen3.8-27B-6bit)
+- [Hugging Face - DreamFoundries/Qwen3.8-27B-6bit](https://huggingface.co/DreamFoundries/Qwen3.8-27B-6bit)
 - [Modelo base - Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

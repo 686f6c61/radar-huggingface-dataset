@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tessera-27B-B-CJK | 27,78 B | ≥131K (turnos de 64K) | Coding-agent con thinking comprimido CJK; 0,50-0,64x tokens de razonamiento | Apache 2.0 | Pesos bf16, LoRA, GGUF y NVFP4/FP8 en HuggingFace |
-| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo linaje) | Igual que Tessera (el ajuste no cambia el tokenizador ni la ventana) | Modelo generalista multimodal image-text-to-text | Apache 2.0 (según el modelo base declarado) | HuggingFace |
+| Tessera-27B-B-CJK | 27,78 B | ≥131K (turnos de 64K) | Coding-agent con thinking comprimido CJK; 0,50-0,64x tokens de razonamiento | Apache 2.0 | Pesos bf16, LoRA, GGUF y NVFP4/FP8 en Hugging Face |
+| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo linaje) | Igual que Tessera (el ajuste no cambia el tokenizador ni la ventana) | Modelo generalista multimodal image-text-to-text | Apache 2.0 (según el modelo base declarado) | Hugging Face |
 | Otras alternativas de ~27B para agentes de código | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados de otros modelos comparables en la información proporcionada; la única comparación con cifras es contra el modelo base.
@@ -100,7 +100,7 @@ No se dispone de datos verificados de otros modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK
+- Modelo en Hugging Face: https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK
 - Adaptador LoRA: https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-LoRA
 - Cuantizaciones GGUF: https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-GGUF
 - Checkpoint NVFP4/FP8: https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-NVFP4

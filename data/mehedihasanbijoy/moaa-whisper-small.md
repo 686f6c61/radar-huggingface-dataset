@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoAA (Mixture of Accent Adapters) es un sistema de reconocimiento automático del habla en inglés construido sobre `openai/whisper-small`, desarrollado por el usuario de HuggingFace mehedihasanbijoy. Su propuesta consiste en congelar por completo el encoder y el decoder de Whisper-small e insertar un conjunto de adaptadores ligeros especializados en acentos, combinados mediante un router a nivel de utterance. El objetivo es mejorar la transcripción de habla acentuada sin reentrenar el modelo base, reduciendo el coste computacional y el riesgo de olvido catastrófico.
+MoAA (Mixture of Accent Adapters) es un sistema de reconocimiento automático del habla en inglés construido sobre `openai/whisper-small`, desarrollado por el usuario de Hugging Face mehedihasanbijoy. Su propuesta consiste en congelar por completo el encoder y el decoder de Whisper-small e insertar un conjunto de adaptadores ligeros especializados en acentos, combinados mediante un router a nivel de utterance. El objetivo es mejorar la transcripción de habla acentuada sin reentrenar el modelo base, reduciendo el coste computacional y el riesgo de olvido catastrófico.
 
 El modelo se publica en dos variantes dentro del mismo repositorio: `linear_proj_A20`, con 20 adaptadores, y `linear_proj_A5`, con 5 adaptadores y proyección lineal. La variante de 5 adaptadores obtiene el mejor WER de desarrollo (11,73 %) frente a la de 20 (13,26 %), medido sobre un subconjunto reservado de 1.000 utterances con texto en minúsculas sin normalizar. Se acompaña de DHF (Deterministic Hallucination Filter), un filtro determinista basado en reglas que elimina repeticiones y bucles en la salida.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoAA-whisper-small (`linear_proj_A5` / `A20`) | No disponible (base `openai/whisper-small`) | 30 s por llamada | Ingles | `moaa-research`, solo investigacion no comercial | HuggingFace, requiere paquete `moaa` |
-| `openai/whisper-small` | No disponible en la informacion proporcionada (modelo base) | 30 s por llamada | Multilingue | MIT | HuggingFace, `transformers` estandar |
-| `openai/whisper-small.en` | No disponible en la informacion proporcionada | 30 s por llamada | Ingles | MIT | HuggingFace, `transformers` estandar |
-| `openai/whisper-large-v3` | No disponible en la informacion proporcionada | 30 s por llamada | Multilingue | MIT | HuggingFace, `transformers` estandar |
+| MoAA-whisper-small (`linear_proj_A5` / `A20`) | No disponible (base `openai/whisper-small`) | 30 s por llamada | Ingles | `moaa-research`, solo investigacion no comercial | Hugging Face, requiere paquete `moaa` |
+| `openai/whisper-small` | No disponible en la informacion proporcionada (modelo base) | 30 s por llamada | Multilingue | MIT | Hugging Face, `transformers` estandar |
+| `openai/whisper-small.en` | No disponible en la informacion proporcionada | 30 s por llamada | Ingles | MIT | Hugging Face, `transformers` estandar |
+| `openai/whisper-large-v3` | No disponible en la informacion proporcionada | 30 s por llamada | Multilingue | MIT | Hugging Face, `transformers` estandar |
 
 No se dispone de cifras de WER comparativas entre MoAA y estos modelos en la informacion proporcionada; la unica metrica publicada es el WER de desarrollo interno sobre el subconjunto reservado de 1.000 utterances.
 
@@ -96,8 +96,8 @@ No se dispone de cifras de WER comparativas entre MoAA y estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mehedihasanbijoy/MoAA-whisper-small
+- Modelo en Hugging Face: https://huggingface.co/mehedihasanbijoy/MoAA-whisper-small
 - Repositorio de codigo: https://github.com/mehedihasanbijoy/Mixture-of-Accent-Adapters
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/mehedihasanbijoy/MoAA-DHF-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/mehedihasanbijoy/MoAA-DHF-demo
 - Modelo base: https://huggingface.co/openai/whisper-small
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los de la model card y el repositorio del autor.

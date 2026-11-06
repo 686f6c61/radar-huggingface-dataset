@@ -80,7 +80,7 @@ No hay modelos comparables directos en la misma categoría con datos públicos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KorolOrol/gpt2-steering-denoiser
+- Hugging Face: https://huggingface.co/KorolOrol/gpt2-steering-denoiser
 - Repositorio GitHub del estudio: https://github.com/KorolOrol/gpt2-stearing-repair
 - Informe completo (REPORT.md): https://github.com/KorolOrol/gpt2-stearing-repair/blob/main/REPORT.md
 - Dataset de resultados: https://huggingface.co/datasets/KorolOrol/gpt2-steering-repair-results

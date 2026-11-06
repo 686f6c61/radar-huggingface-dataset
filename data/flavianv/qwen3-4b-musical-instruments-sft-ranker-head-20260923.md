@@ -105,7 +105,7 @@ No se han publicado en la información disponible resultados de benchmarks compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-sft-ranker-head-20260923
+- Modelo en Hugging Face: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-sft-ranker-head-20260923
 - Backbone SFT requerido: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923
 - Modelo ancestro preentrenado: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de ranking: https://huggingface.co/datasets/flavianv/musical-instruments-ranker-unseen-20260923/tree/2f815b7ff8848c1223fdc84c895819f778f7679b

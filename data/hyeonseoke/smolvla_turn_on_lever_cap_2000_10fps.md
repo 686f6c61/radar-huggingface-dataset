@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HyeonseokE/smolvla_turn_on_lever_cap_2000_10fps
+- Repositorio Hugging Face: https://huggingface.co/HyeonseokE/smolvla_turn_on_lever_cap_2000_10fps
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/turn_on_lever_cap_10fps
 - LeRobot (librería): https://github.com/huggingface/lerobot

@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: al ser un modelo de 8B parámetros en bf16, requiere aproximadamente 16 GB de VRAM para inferencia sin cuantización. Con cuantización de 4 bits (no disponible en el repo, pero posible con herramientas externas), podría reducirse a unos 4-5 GB.
 - GPU recomendadas: tarjetas con al menos 16 GB de VRAM, como RTX 4090, A100 (40 GB) o H100. En consumer, una RTX 3090 o 4090 es suficiente.
 - Si cabe en consumer GPU: sí, en GPUs de gama alta con 16 GB o más. Con cuantización, podría ejecutarse en GPUs de 8 GB.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, puede usarse con transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama, TGI, entre otros.
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, puede usarse con transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama, TGI, entre otros.
 - Latencia y throughput: no se han publicado datos específicos. Para un modelo de 8B, se espera una latencia de decenas de milisegundos por token en GPUs modernas, pero depende del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- [HuggingFace - ApolloRaines/Llama-3.1-8B-Instruct-Non-Subservient-Direct](https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Non-Subservient-Direct)
+- [Hugging Face - ApolloRaines/Llama-3.1-8B-Instruct-Non-Subservient-Direct](https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Non-Subservient-Direct)
 - [jBlaze - herramienta de cirugía de comportamiento](https://jblaze.dev)
 - [Modelo base: meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)

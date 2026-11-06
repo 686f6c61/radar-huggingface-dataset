@@ -6,7 +6,7 @@ Chargaff-Tokenizer es un tokenizador byte-level BPE publicado por Aquiles-ai. No
 
 La relevancia de esta pieza es de interoperabilidad: se presenta como equivalente funcional del `CharLevelTokenizer` de Evo2 (bytes UTF-8 crudos), pero con un layout de ids propio. En Evo2 la base `A` se mapea a 65 (su valor ASCII), mientras que aqui se mapea a 32. Esto implica que los checkpoints de Evo2 no se pueden cargar directamente con este tokenizador sin remapear la matriz de embeddings, pero permite reutilizar la arquitectura y las recetas de entrenamiento de Evo2 partiendo de un vocabulario limpio y de 512 entradas.
 
-El tokenizador declara `model_max_length=1048576`, licencia Apache-2.0, idioma `en` (aunque el alfabeto cubre los 256 bytes UTF-8) y compatibilidad con `endpoints_compatible` en HuggingFace. En el momento de la consulta acumula 0 descargas y 1 like, y se distribuye a traves de la libreria `transformers`.
+El tokenizador declara `model_max_length=1048576`, licencia Apache-2.0, idioma `en` (aunque el alfabeto cubre los 256 bytes UTF-8) y compatibilidad con `endpoints_compatible` en Hugging Face. En el momento de la consulta acumula 0 descargas y 1 like, y se distribuye a traves de la libreria `transformers`.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El tokenizador declara `model_max_length=1048576`, licencia Apache-2.0, idioma `
 | Pre-tokenizer | `ByteLevel(add_prefix_space=False, use_regex=False)` |
 | Decoder | `ByteLevel()` |
 | Padding | `padding_side=right` |
-| Fecha de publicacion en HuggingFace | 2026-09-30 (ultima actualizacion: 2026-09-30) |
+| Fecha de publicacion en Hugging Face | 2026-09-30 (ultima actualizacion: 2026-09-30) |
 
 ## Arquitectura y entrenamiento
 
@@ -39,7 +39,7 @@ La innovacion tecnica no esta en el algoritmo, sino en la decision de diseno: re
 - Tokenizacion por lotes con padding: `tok(["ACGT", "ACGTN"], padding=True)` genera `input_ids` con relleno usando el id 257.
 - Cobertura completa de los 256 bytes UTF-8, lo que permite representar cualquier entrada binaria o textual sin tokens `unk` (`unk_token=None`).
 - Longitud maxima configurada de 1 048 576 tokens, adecuada para ventanas genomicas largas.
-- Compatibilidad directa con `AutoTokenizer.from_pretrained` de la libreria `transformers` y con el tag `endpoints_compatible` de HuggingFace.
+- Compatibilidad directa con `AutoTokenizer.from_pretrained` de la libreria `transformers` y con el tag `endpoints_compatible` de Hugging Face.
 - Capacidad de actuar como capa de tokenizacion para el modelo Chargaff de prediccion de ADN y como base para remapear embeddings de checkpoints tipo Evo2.
 - No dispone de tool calling, function calling, razonamiento multi-paso, modo thinking, vision ni audio: no es un modelo generativo.
 
@@ -63,14 +63,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Memoria: la tabla de vocabulario tiene 512 entradas, por lo que la huella en memoria del artefacto es marginal frente a la de cualquier modelo con pesos.
 - GPU recomendadas: no aplica. No hay aceleracion relevante que obtener en A100, H100 o RTX 4090 para un tokenizador byte-level.
 - Compatibilidad con GPU de consumo: no aplica; el cuello de botella sera el modelo Chargaff que consuma esta salida, no el tokenizador.
-- Opciones de despliegue: `transformers` (`AutoTokenizer`), la libreria Rust `tokenizers` de HuggingFace y cualquier runtime que consuma tokenizadores de HuggingFace. El tag `endpoints_compatible` indica que puede servirse a traves de endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` (`AutoTokenizer`), la libreria Rust `tokenizers` de Hugging Face y cualquier runtime que consuma tokenizadores de Hugging Face. El tag `endpoints_compatible` indica que puede servirse a traves de endpoints de Hugging Face.
 - Latencia y throughput: no se han publicado mediciones. Cualitativamente, la codificacion es una operacion de coste lineal respecto al numero de bytes y sin busqueda de merges, por lo que el coste por token es minimo en comparacion con un BPE con vocabulario grande.
 
 ## Comparativa con modelos similares
 
 | Tokenizador | Tipo | Tamano de vocabulario | Contexto maximo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chargaff-Tokenizer | Byte-level BPE sin merges | 512 | 1 048 576 | Apache-2.0 | HuggingFace (`Aquiles-ai/Chargaff-Tokenizer`) |
+| Chargaff-Tokenizer | Byte-level BPE sin merges | 512 | 1 048 576 | Apache-2.0 | Hugging Face (`Aquiles-ai/Chargaff-Tokenizer`) |
 | Evo2 `CharLevelTokenizer` | Char-level sobre bytes UTF-8 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Citado en la model card de Chargaff |
 | Otros tokenizadores genomicos y byte-level BPE de texto | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,12 +86,12 @@ La diferencia clave documentada frente a Evo2 es el layout de ids: `A=32` en Cha
 - Riesgo de alucinacion: no aplica al tokenizador en si, pero cualquier modelo que lo use heredara sus propios sesgos y errores.
 - Sesgos conocidos: no se documentan sesgos especificos del tokenizador; al ser determinista y sin entrenamiento, no introduce sesgos estadisticos de corpus, pero tampoco los corrige.
 - Licencia Apache-2.0: permisiva y apta para uso comercial, con las obligaciones habituales de atribucion y conservacion de avisos.
-- Advertencia de produccion: la fecha de publicacion registrada en HuggingFace (2026-09-30) y el bajo numero de descargas (0) y likes (1) indican un artefacto muy reciente y poco validado por la comunidad; conviene verificar el comportamiento antes de integrarlo en un pipeline critico.
+- Advertencia de produccion: la fecha de publicacion registrada en Hugging Face (2026-09-30) y el bajo numero de descargas (0) y likes (1) indican un artefacto muy reciente y poco validado por la comunidad; conviene verificar el comportamiento antes de integrarlo en un pipeline critico.
 
 ## Enlaces
 
-- HuggingFace del tokenizador: https://huggingface.co/Aquiles-ai/Chargaff-Tokenizer
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/Aquiles-ai
+- Hugging Face del tokenizador: https://huggingface.co/Aquiles-ai/Chargaff-Tokenizer
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/Aquiles-ai
 - Repositorio en GitHub: https://github.com/Aquiles-ai/
 - Pagina de proyectos open source de Aquiles-ai: https://aquiles-ai.vercel.app/oss
 - Otro modelo de la organizacion (Athenea-4B-Thinking): https://huggingface.co/Aquiles-ai/Athenea-4B-Thinking/tree/main

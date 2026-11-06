@@ -88,7 +88,7 @@ No se dispone de comparación con otros modelos de difusión de tamaño similar 
 - Modelo de investigación, no apto para producción directa: no tiene una API de generación estándar tipo `generate()` de transformers; requiere el sampler ancestral de orden aleatorio incluido en el repositorio.
 - Solo inglés: entrenado exclusivamente con OpenWebText, no soporta otros idiomas.
 - Riesgo de repetición: el autor advierte que el decodificado por confianza (confidence-ordered decoding) colapsa en repetición en estos modelos base; la métrica MAUVE detecta esta degradación.
-- Requiere `trust_remote_code=True` al cargar desde HuggingFace, lo que implica ejecutar código del repositorio del autor; se debe revisar antes de usar en entornos no controlados.
+- Requiere `trust_remote_code=True` al cargar desde Hugging Face, lo que implica ejecutar código del repositorio del autor; se debe revisar antes de usar en entornos no controlados.
 - La atención triangular alternada (capas pares causales, impares anti-causales) no es compatible con máscaras de atención completas: el checkpoint debe evaluarse con su `attn_mode` guardado en el config; usarlo con una máscara completa dará resultados incorrectos.
 - Un bloque del dataset de entrenamiento contiene un id [MASK] espurio que produce una pérdida `inf` por época; el autor indica que no afecta a los gradientes, pero es una anomalía a tener en cuenta.
 - Sin EMA: el checkpoint final es el punto posterior al decaimiento coseno; no hay promediado de pesos.
@@ -96,6 +96,6 @@ No se dispone de comparación con otros modelos de difusión de tamaño similar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EER6/TriDLM-124M-alt
-- Perfil del autor en HuggingFace: https://huggingface.co/EER6
+- Modelo en Hugging Face: https://huggingface.co/EER6/TriDLM-124M-alt
+- Perfil del autor en Hugging Face: https://huggingface.co/EER6
 - Repositorio GitHub del experimento TriDLM (código, logs de entrenamiento y registro completo): https://github.com/AntonXue/TriDLM

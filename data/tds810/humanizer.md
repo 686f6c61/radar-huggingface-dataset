@@ -2,7 +2,7 @@
 
 ## Resumen
 
-humanizer es un modelo de 12B parámetros (11.959.730.224 según los pesos safetensors) afinado a partir de `google/gemma-4-12B` y publicado por el usuario Tds810 en HuggingFace. Su tarea es concreta y única: reescribir borradores generados por IA (correos, ensayos, informes, respuestas de foro) para que suenen a escritura humana, preservando de forma estricta cada número, unidad, fecha, nombre propio y cita del texto original, y sin añadir información nueva. Funciona en local, sin conexión a servicios externos.
+humanizer es un modelo de 12B parámetros (11.959.730.224 según los pesos safetensors) afinado a partir de `google/gemma-4-12B` y publicado por el usuario Tds810 en Hugging Face. Su tarea es concreta y única: reescribir borradores generados por IA (correos, ensayos, informes, respuestas de foro) para que suenen a escritura humana, preservando de forma estricta cada número, unidad, fecha, nombre propio y cita del texto original, y sin añadir información nueva. Funciona en local, sin conexión a servicios externos.
 
 El modelo se distribuye con un enfoque poco habitual en cuantización: además de los típicos Q6_K y Q8_0, incluye ficheros 2-bit, Q3 y Q4_K_M generados con asignación de bits por tensor según sensibilidad, entrenamiento consciente de cuantización y destilación desde el modelo bf16 completo usado como profesor, sobre datos de reescritura en inglés y chino. En el fichero de 3,9 GB (2-bit) esto eleva la coincidencia top-1 con bf16 del 70% (build estándar) al 87%.
 
@@ -12,7 +12,7 @@ Es relevante ahora porque ataca un problema de producción muy concreto —el te
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base `google/gemma-4-12B`; etiqueta `gemma4_unified` en HuggingFace y `image-text-to-text` entre los tags) |
+| Arquitectura | no disponible (modelo base `google/gemma-4-12B`; etiqueta `gemma4_unified` en Hugging Face y `image-text-to-text` entre los tags) |
 | Parametros totales | 11.959.730.224 (~12B) |
 | Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -99,7 +99,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tds810/humanizer
+- Modelo en Hugging Face: https://huggingface.co/Tds810/humanizer
 - Ficheros GGUF (repositorio separado): https://huggingface.co/jialinyyzz/humanizer-GGUF
 - Repositorio GitHub: https://github.com/sgaofen/humanizer-local-model
 - Releases de la aplicación: https://github.com/sgaofen/humanizer-local-model/releases/latest

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aiorbustlora es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario hockey1 en HuggingFace. El repositorio esta etiquetado con la libreria diffusers, el pipeline text-to-image y la plantilla template:diffusion-lora, y declara como modelo base krea/Krea-2-Raw. La model card es practicamente vacia: incluye un titulo interno ("michelle"), un campo instance_prompt con valor null y un enlace de descarga, sin descripcion del contenido, del entrenamiento ni de los datos utilizados. La fecha de creacion registrada es el 20 de septiembre de 2026.
+aiorbustlora es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario hockey1 en Hugging Face. El repositorio esta etiquetado con la libreria diffusers, el pipeline text-to-image y la plantilla template:diffusion-lora, y declara como modelo base krea/Krea-2-Raw. La model card es practicamente vacia: incluye un titulo interno ("michelle"), un campo instance_prompt con valor null y un enlace de descarga, sin descripcion del contenido, del entrenamiento ni de los datos utilizados. La fecha de creacion registrada es el 20 de septiembre de 2026.
 
 Se trata, por tanto, de un ajuste fino ligero y no de un modelo completo: el repositorio ocupa 0,5 GB, un tamano coherente con pesos de adaptador mas los ficheros auxiliares de un LoRA de difusion. El modelo no acumula descargas ni likes en el momento de la consulta, y no declara licencia ni idiomas soportados, lo que limita seriamente su evaluacion previa a un uso en produccion.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Requisitos de hardware
 
 - VRAM para inferencia: no disponible como dato oficial. Al ser un LoRA, el consumo lo determina casi por completo el modelo base krea/Krea-2-Raw, cuyas especificaciones no estan documentadas en este repositorio; el adaptador anade una sobrecarga pequena sobre ese consumo.
-- Peso en disco: 0,5 GB de repositorio, segun los metadatos de HuggingFace.
+- Peso en disco: 0,5 GB de repositorio, segun los metadatos de Hugging Face.
 - GPU recomendadas: no disponible, al depender del modelo base.
 - Compatibilidad con GPU de consumo: no disponible; condicionada por el modelo base y por la precision con la que se cargue.
 - Opciones de despliegue: la libreria declarada es diffusers, por lo que el despliegue natural es Python con diffusers y PyTorch. No se confirma soporte en llama.cpp, Ollama, vLLM o TGI, herramientas orientadas a modelos de lenguaje y no aplicables de forma estandar a difusion.
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| hockey1/aiorbustlora | LoRA de difusion | krea/Krea-2-Raw | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| hockey1/aiorbustlora | LoRA de difusion | krea/Krea-2-Raw | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Otros LoRA sobre Krea-2-Raw | LoRA de difusion | krea/Krea-2-Raw | no disponible | no aplica | depende del autor | no disponible en la informacion proporcionada |
-| Modelo base krea/Krea-2-Raw | Modelo de difusion completo | no aplica | no disponible | no aplica | no disponible | HuggingFace |
+| Modelo base krea/Krea-2-Raw | Modelo de difusion completo | no aplica | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/hockey1/aiorbustlora
+- Pagina del modelo en Hugging Face: https://huggingface.co/hockey1/aiorbustlora
 - Ficheros y versiones del repositorio: https://huggingface.co/hockey1/aiorbustlora/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers

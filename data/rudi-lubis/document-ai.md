@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rudi-lubis/document-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en HuggingFace. La model card del autor lo describe explícitamente como un "experiment sketch": recoge el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y un conjunto de referencias. El propio README advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+`rudi-lubis/document-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en Hugging Face. La model card del autor lo describe explícitamente como un "experiment sketch": recoge el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y un conjunto de referencias. El propio README advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 El repositorio incluye un artefacto en formato safetensors con 49.600 parámetros totales y un tamaño de repositorio de 0,0 GB, además de dos ficheros de texto (`notes.md` y `README.md`). No se publica checkpoint entrenado, código, pipeline de inferencia ni resultados de evaluación. Por tanto, el interés del recurso es documental y metodológico, no como modelo desplegable.
 
@@ -49,7 +49,7 @@ No hay informacion sobre datos de entrenamiento, numero de tokens, composicion d
 - Seleccion de conjuntos de datos de referencia: las notas mencionan FUNSD, SROIE y CORD como contexto de evaluacion, lo que resulta util para acotar el alcance de un experimento de key information extraction en facturas y recibos. Requiere verificar las referencias por separado.
 - Revision bibliografica previa a un desarrollo: la seccion de referencias del repositorio puede usarse como semilla para una busqueda sistematica, asumiendo que las citas no han sido validadas por terceros.
 - Plantilla de documentacion reproducible: la exigencia del autor de registrar semillas, versiones de dataset y logs en crudo puede reutilizarse como checklist interna de un equipo de investigacion antes de publicar resultados.
-- Auditoria de expectativas sobre artefactos publicados en HuggingFace: este repositorio es un caso claro de fichero con etiqueta de modelo sin modelo funcional detras, util para ilustrar por que conviene inspeccionar el numero de parametros y el contenido del repositorio antes de integrarlo en un pipeline.
+- Auditoria de expectativas sobre artefactos publicados en Hugging Face: este repositorio es un caso claro de fichero con etiqueta de modelo sin modelo funcional detras, util para ilustrar por que conviene inspeccionar el numero de parametros y el contenido del repositorio antes de integrarlo en un pipeline.
 - Docencia sobre higiene experimental: el contraste entre las etiquetas `research-notes` y `transformer` permite explicar en un aula la diferencia entre notas exploratorias y resultados replicados.
 
 En ninguno de estos casos el repositorio proporciona inferencia: todos los usos son documentales, metodologicos o formativos.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 - Compatibilidad con GPU de consumo: irrelevante, dado el tamano. Cualquier GPU consumer de los ultimos diez anos es sobradamente suficiente, igual que una CPU moderna.
 - Opciones de despliegue: no se documenta ninguna. No hay configuracion de vLLM, llama.cpp, Ollama, TGI ni transformers publicada. El fichero safetensors puede cargarse con librerias genericas de serializacion, pero no se conoce la arquitectura necesaria para reconstruir un modelo funcional.
 - Latencia y throughput: no disponibles. No tiene sentido medir throughput de generacion en un artefacto sin modelo generativo entrenado.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -94,5 +94,5 @@ Los nombres de las alternativas se incluyen como orientacion de categoria; sus e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rudi-lubis/document-ai
+- Modelo en Hugging Face: https://huggingface.co/rudi-lubis/document-ai
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos no guardan relacion con el modelo.

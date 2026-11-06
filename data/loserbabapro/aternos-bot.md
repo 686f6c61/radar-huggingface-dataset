@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`loserbabapro/aternos-bot` es un repositorio de modelo publicado en HuggingFace por el usuario `loserbabapro`. Segun los metadatos de la plataforma, fue creado y actualizado el 27 de septiembre de 2026, acumula 0 descargas y 0 "likes", y esta etiquetado con `license:mit` y `region:us`. No consta pipeline declarado ni idiomas soportados.
+`loserbabapro/aternos-bot` es un repositorio de modelo publicado en Hugging Face por el usuario `loserbabapro`. Segun los metadatos de la plataforma, fue creado y actualizado el 27 de septiembre de 2026, acumula 0 descargas y 0 "likes", y esta etiquetado con `license:mit` y `region:us`. No consta pipeline declarado ni idiomas soportados.
 
 La model card asociada no aporta informacion tecnica: su contenido se limita al bloque de frontmatter con `license: mit`. No se especifican arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, tokenizador ni formato de pesos. Tampoco hay documentacion complementaria, paper, repositorio de codigo o demo enlazados desde la ficha.
 
@@ -60,8 +60,8 @@ No disponible. La ausencia de datos sobre tamano, contexto, tarea objetivo y ren
 - No se especifica el formato de pesos, lo que impide saber si es desplegable con herramientas estandar como llama.cpp, vLLM u Ollama.
 - La licencia MIT es permisiva y permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la propia licencia. Al no constar un titular de copyright explicito en la informacion disponible, conviene verificar los archivos del repositorio antes de reutilizar el material.
 - Cero descargas y cero interacciones: no existe evidencia de uso, validacion por terceros ni comunidad que respalde el modelo.
-- La fecha de creacion registrada (27 de septiembre de 2026) es posterior a la fecha habitual de consulta; conviene confirmar el dato directamente en HuggingFace.
+- La fecha de creacion registrada (27 de septiembre de 2026) es posterior a la fecha habitual de consulta; conviene confirmar el dato directamente en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/loserbabapro/aternos-bot
+- Hugging Face: https://huggingface.co/loserbabapro/aternos-bot

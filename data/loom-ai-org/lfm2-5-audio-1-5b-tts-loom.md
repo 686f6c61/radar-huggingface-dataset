@@ -88,7 +88,7 @@ No se han identificado en la informacion proporcionada otros modelos de sintesis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/lfm2.5-audio-1.5b-tts-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/lfm2.5-audio-1.5b-tts-loom
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B/blob/main/LICENSE
 - Runtime loom.cpp: https://github.com/loom-ai-org/loom.cpp

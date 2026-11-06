@@ -83,7 +83,7 @@ Notas del autor: las tareas de agente de código se evaluaron con el modo minima
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento agéntico |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731 | ~304B totales (metadatos), ~13B activos (terceros) | 1M tokens (terceros) | MIT | Pesos abiertos en HuggingFace, API en Fireworks y DeepInfra | Terminal Bench 2.1: 82,7; DeepSWE: 54,4; Toolathlon: 70,3 |
+| DeepSeek-V4-Flash-0731 | ~304B totales (metadatos), ~13B activos (terceros) | 1M tokens (terceros) | MIT | Pesos abiertos en Hugging Face, API en Fireworks y DeepInfra | Terminal Bench 2.1: 82,7; DeepSWE: 54,4; Toolathlon: 70,3 |
 | DeepSeek-V4-Pro (Preview) | no disponible | no disponible | no disponible | no disponible | Terminal Bench 2.1: 72,1; DeepSWE: 12,8; Toolathlon: 55,9 |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | Terminal Bench 2.1: 81,0; DeepSWE: 46,2; Toolathlon: 59,9 |
 | Opus-4.8 | no disponible | no disponible | propietaria | API cerrada | Terminal Bench 2.1: 85,0; DeepSWE: 58,0; Toolathlon: 76,2 |

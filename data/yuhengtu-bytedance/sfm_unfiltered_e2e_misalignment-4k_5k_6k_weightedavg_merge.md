@@ -62,6 +62,6 @@ No se dispone de información sobre modelos comparables. Al ser un merge sin doc
 
 ## Enlaces
 
-- [HuggingFace: yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-4k_5k_6k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-4k_5k_6k_weightedavg_merge)
+- [Hugging Face: yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-4k_5k_6k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-4k_5k_6k_weightedavg_merge)
 - [Paper de referencia del método Linear (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)

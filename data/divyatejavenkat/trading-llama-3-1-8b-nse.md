@@ -2,7 +2,7 @@
 
 ## Resumen
 
-trading-llama-3.1-8b-nse es un ajuste fino (fine-tune) del modelo Llama 3.1 8B Instruct, publicado por el usuario DivyaTejaVenkat en HuggingFace. El modelo parte de la versión cuantizada a 4 bits de Unsloth (`unsloth/meta-llama-3.1-8b-instruct-bnb-4bit`) y se ha entrenado con Unsloth y la librería TRL de HuggingFace, según indica la propia model card. El nombre del repositorio sugiere una especialización en el dominio del trading y, en concreto, del mercado indio (NSE, National Stock Exchange), aunque la model card no documenta ni el dataset ni el procedimiento de entrenamiento.
+trading-llama-3.1-8b-nse es un ajuste fino (fine-tune) del modelo Llama 3.1 8B Instruct, publicado por el usuario DivyaTejaVenkat en Hugging Face. El modelo parte de la versión cuantizada a 4 bits de Unsloth (`unsloth/meta-llama-3.1-8b-instruct-bnb-4bit`) y se ha entrenado con Unsloth y la librería TRL de Hugging Face, según indica la propia model card. El nombre del repositorio sugiere una especialización en el dominio del trading y, en concreto, del mercado indio (NSE, National Stock Exchange), aunque la model card no documenta ni el dataset ni el procedimiento de entrenamiento.
 
 Se trata de un transformer decoder-only denso de 8.030.261.248 parámetros, con pesos publicados en safetensors y un tamaño de repositorio de 16,1 GB, lo que corresponde a precisión de 16 bits. El pipeline declarado es text-generation y los tags incluyen compatibilidad con text-generation-inference y endpoints, además de `conversational`.
 
@@ -37,7 +37,7 @@ El procedimiento de entrenamiento se describe únicamente como un fine-tune real
 - Generación de texto conversacional en inglés, heredada del modelo Llama 3.1 8B Instruct subyacente.
 - Razonamiento de propósito general y seguimiento de instrucciones en formato chat, según el pipeline declarado (`text-generation`, tag `conversational`).
 - Presunta especialización en dominio financiero y de trading (mercado NSE indio), inferida únicamente del nombre del repositorio; no verificada ni documentada.
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace, lo que facilita su despliegue como API.
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face, lo que facilita su despliegue como API.
 - Capacidades del modelo base como tool calling o function calling: no confirmadas para este ajuste concreto.
 - Capacidades de agente y razonamiento multi-paso: no documentadas para este ajuste.
 - Capacidades multilingües: no documentadas; solo se declara inglés.
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| trading-llama-3.1-8b-nse | 8,03 B | 128.000 tokens (heredado) | apache-2.0 declarada | HuggingFace, pesos safetensors | Sin benchmarks ni documentación de dataset; 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Modelo base; benchmarks publicados por Meta; ecosistema maduro |
-| Qwen2.5-7B-Instruct | 7,6 B aprox. | 128.000 tokens | Apache-2.0 (salvo variantes) | HuggingFace, muy desplegado | Multilingüe, buen rendimiento en código y matemáticas |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 tokens | Apache-2.0 | HuggingFace, muy desplegado | Contexto menor; licencia permisiva real |
+| trading-llama-3.1-8b-nse | 8,03 B | 128.000 tokens (heredado) | apache-2.0 declarada | Hugging Face, pesos safetensors | Sin benchmarks ni documentación de dataset; 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Modelo base; benchmarks publicados por Meta; ecosistema maduro |
+| Qwen2.5-7B-Instruct | 7,6 B aprox. | 128.000 tokens | Apache-2.0 (salvo variantes) | Hugging Face, muy desplegado | Multilingüe, buen rendimiento en código y matemáticas |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 tokens | Apache-2.0 | Hugging Face, muy desplegado | Contexto menor; licencia permisiva real |
 
 No se dispone de datos de rendimiento comparativo para el modelo objeto de la ficha, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -92,10 +92,10 @@ No se dispone de datos de rendimiento comparativo para el modelo objeto de la fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DivyaTejaVenkat/trading-llama-3.1-8b-nse
+- Modelo en Hugging Face: https://huggingface.co/DivyaTejaVenkat/trading-llama-3.1-8b-nse
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-bnb-4bit
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace (mencionada en la model card): https://github.com/huggingface/trl
+- Librería TRL de Hugging Face (mencionada en la model card): https://github.com/huggingface/trl
 - Modelo original Llama 3.1 8B Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 
 No se encontraron papers, blogs, demos ni repositorios adicionales específicos de este modelo en la búsqueda web realizada.

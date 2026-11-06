@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KrynexAI-vNS-1P-Mobile-TFLite es un modelo de regresión lineal de un único parámetro, desarrollado por el usuario KrynexLabs y publicado en HuggingFace. Se presenta como un experimento satírico que busca batir el récord del "modelo de IA más pequeño del mundo" dentro de la categoría SLM (Small Language/Linear Models). El modelo predice el precio de una vivienda a partir de su superficie en metros cuadrados mediante la fórmula `Precio = Espacio * 0.0996`. El archivo ocupa 100 bytes y está en formato TensorFlow Lite (TFLite), lo que lo hace ejecutable en dispositivos con recursos mínimos.
+KrynexAI-vNS-1P-Mobile-TFLite es un modelo de regresión lineal de un único parámetro, desarrollado por el usuario KrynexLabs y publicado en Hugging Face. Se presenta como un experimento satírico que busca batir el récord del "modelo de IA más pequeño del mundo" dentro de la categoría SLM (Small Language/Linear Models). El modelo predice el precio de una vivienda a partir de su superficie en metros cuadrados mediante la fórmula `Precio = Espacio * 0.0996`. El archivo ocupa 100 bytes y está en formato TensorFlow Lite (TFLite), lo que lo hace ejecutable en dispositivos con recursos mínimos.
 
 A pesar de su carácter humorístico, el proyecto tiene un valor didáctico y técnico: demuestra que es posible crear y desplegar un modelo de regresión funcional en TFLite sin usar TensorFlow, mediante una inyección binaria directa. No es un modelo de lenguaje ni un sistema de razonamiento; es una simple regresión lineal de una variable. Su relevancia radica en ilustrar los límites de la compresión de modelos y servir como ejemplo extremo de despliegue en entornos con restricciones severas de memoria y cómputo.
 

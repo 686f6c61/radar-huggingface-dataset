@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este checkpoint es un artefacto de investigacion, no un modelo de chat de proposito general. Se trata de `meta-llama/Llama-2-7b-chat-hf` comprimido mediante SVD-LLM hasta conservar el 59,98% de los parametros densos (se elimino el 40,02%), y despues editado con una de las cinco rondas de un procedimiento iterativo de sustitucion de componentes denominado "swap" con presupuesto neutro en parametros. El autor es el usuario de HuggingFace Jeesup y el objetivo declarado es medir como la compresion por SVD degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes repara mejor ese dano.
+Este checkpoint es un artefacto de investigacion, no un modelo de chat de proposito general. Se trata de `meta-llama/Llama-2-7b-chat-hf` comprimido mediante SVD-LLM hasta conservar el 59,98% de los parametros densos (se elimino el 40,02%), y despues editado con una de las cinco rondas de un procedimiento iterativo de sustitucion de componentes denominado "swap" con presupuesto neutro en parametros. El autor es el usuario de Hugging Face Jeesup y el objetivo declarado es medir como la compresion por SVD degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes repara mejor ese dano.
 
 El modelo tiene 6.738.415.616 parametros reales segun los pesos en safetensors, frente a los aproximadamente 6.740 millones del Llama-2-7b-chat original, de modo que la compresion no reduce el numero total de parametros sino que redistribuye la capacidad: se eliminan componentes por valor singular y se reinsertan otros, en concreto 632 componentes restaurados y 632 retirados, con 7.223.296 parametros intercambiados (0,11% de los parametros de proyeccion densos). La celda corresponde a la regla de seleccion `gap_iter` con un presupuesto de restauracion del 1,000% de los parametros densos, aplicado en trozos del 0,200% por ronda, semilla 42.
 
@@ -73,8 +73,8 @@ Interpretacion: una ASR de 0,2942 en AdvBench significa que aproximadamente el 2
 
 | Modelo | Parametros | Contexto | Seguridad (ASR AdvBench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r01 | 6.738.415.616 | no disponible | 0,2942 | Llama 2 Community | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | ~6,74 mil millones | 4096 tokens | no disponible en esta informacion | Llama 2 Community | HuggingFace, ampliamente desplegado |
+| svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r01 | 6.738.415.616 | no disponible | 0,2942 | Llama 2 Community | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | ~6,74 mil millones | 4096 tokens | no disponible en esta informacion | Llama 2 Community | Hugging Face, ampliamente desplegado |
 | Otras celdas de la rejilla del mismo autor | no disponible | no disponible | no disponible | Llama 2 Community | no disponibles en esta informacion |
 | Modelos de 7-8B alineados de proposito general (por ejemplo, Llama-3.1-8B-Instruct, Mistral-7B-Instruct) | no disponible | no disponible | no disponible | licencias propias | no comparables directamente por categoria |
 
@@ -94,7 +94,7 @@ La comparativa cuantitativa con alternativas no es posible con los datos proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a020_c002_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/ (referenciada por la licencia del repositorio, `LICENSE.txt` y `USE_POLICY.md` incluidos en el propio repositorio)
 - La busqueda web realizada no devolvio ningun resultado relevante: los unicos enlaces recuperados corresponden a un fondo de inversion (Brown Advisory US Sustainable Growth Fund) y no guardan relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales sobre este checkpoint en la informacion disponible.

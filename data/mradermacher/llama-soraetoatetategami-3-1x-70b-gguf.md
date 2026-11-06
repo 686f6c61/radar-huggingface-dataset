@@ -63,5 +63,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-SoraEToAtetaTegami-3.1X-70B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-SoraEToAtetaTegami-3.1X-70B-GGUF
 - Modelo base: https://huggingface.co/KaraKaraModel/Llama-SoraEToAtetaTegami-3.1X-70B

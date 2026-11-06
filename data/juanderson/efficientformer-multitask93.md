@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una implementación experimental de **EfficientFormer** orientada a tareas multitarea, publicada por el usuario `juanderson` en HuggingFace. EfficientFormer es una familia de vision transformers eficientes diseñada originalmente para despliegue en dispositivos móviles, con variantes como EfficientFormerV2 (ICCV 2023) desarrolladas por Snap Research. La versión aquí presentada adopta una escala *tiny* con solo 33.088 parámetros, lo que la convierte en un banco de pruebas mínimo para inspeccionar cambios arquitectónicos antes de un entrenamiento completo.
+Este repositorio contiene una implementación experimental de **EfficientFormer** orientada a tareas multitarea, publicada por el usuario `juanderson` en Hugging Face. EfficientFormer es una familia de vision transformers eficientes diseñada originalmente para despliegue en dispositivos móviles, con variantes como EfficientFormerV2 (ICCV 2023) desarrolladas por Snap Research. La versión aquí presentada adopta una escala *tiny* con solo 33.088 parámetros, lo que la convierte en un banco de pruebas mínimo para inspeccionar cambios arquitectónicos antes de un entrenamiento completo.
 
 El checkpoint incluido (`model.safetensors`) es un **checkpoint de inicialización válido para smoke tests**, no un modelo entrenado. El autor no reivindica ningún resultado de benchmark ni rendimiento. Su relevancia actual es puramente metodológica: sirve como punto de partida para experimentos de arquitectura, integración de código y validación de pipelines de entrenamiento multitarea. No es un modelo listo para producción ni para inferencia útil.
 
@@ -41,7 +41,7 @@ No se proporciona información sobre el entrenamiento: no hay datos sobre númer
 
 - **Experimentación arquitectónica**: el modelo sirve como banco de pruebas para modificar la atención *dilated*, la fusión *cross-attention* o la normalización *InstanceNorm* antes de escalar a configuraciones mayores. Su tamaño mínimo permite iteraciones rápidas en una sola GPU o incluso en CPU.
 - **Validación de pipelines de entrenamiento**: al ser un checkpoint de inicialización, permite verificar que un script de *finetuning* (como `finetune.py`) funciona correctamente, que los tensores cargan bien y que el bucle de entrenamiento no falla, sin gastar recursos en un modelo grande.
-- **Pruebas de integración con adaptadores**: la implementación es personalizada y requiere un adaptador explícito para APIs genéricas de HuggingFace. Este modelo puede usarse para desarrollar y probar dicho adaptador.
+- **Pruebas de integración con adaptadores**: la implementación es personalizada y requiere un adaptador explícito para APIs genéricas de Hugging Face. Este modelo puede usarse para desarrollar y probar dicho adaptador.
 - **Reproducibilidad de experimentos**: al ser un checkpoint fijo, permite comparar configuraciones de entrenamiento (optimizador, programador de tasa de aprendizaje, semillas) con una base común, siguiendo las recomendaciones del autor de reportar métricas en al menos tres semillas.
 - **Enseñanza y aprendizaje**: por su tamaño y simplicidad, es útil para estudiantes que quieran inspeccionar el código fuente de un vision transformer eficiente y entender cómo se estructura un modelo multitarea.
 - **Depuración de entornos**: sirve para verificar que el entorno de ejecución (versiones de PyTorch, CUDA, etc.) es compatible con la implementación antes de lanzar entrenamientos costosos.
@@ -70,12 +70,12 @@ No disponible. No hay datos de rendimiento de este modelo, por lo que no es posi
 - **Limitaciones de contexto e idioma**: no aplicable, es un modelo de visión.
 - **Restricciones de licencia**: BSD-3-Clause permite uso comercial, pero el autor advierte que deben revisarse los términos de los datos fuente si se usan datasets externos con este repositorio.
 - **Caveat para producción**: no debe usarse en ningún entorno de producción. Es exclusivamente un artefacto experimental para desarrollo e investigación.
-- **Compatibilidad**: la implementación es personalizada y no funciona con las APIs genéricas de HuggingFace sin un adaptador explícito.
+- **Compatibilidad**: la implementación es personalizada y no funciona con las APIs genéricas de Hugging Face sin un adaptador explícito.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/juanderson/efficientformer-multitask93)
-- [EfficientFormer original de Qualcomm en HuggingFace](https://huggingface.co/qualcomm/EfficientFormer)
+- [Repositorio en Hugging Face](https://huggingface.co/juanderson/efficientformer-multitask93)
+- [EfficientFormer original de Qualcomm en Hugging Face](https://huggingface.co/qualcomm/EfficientFormer)
 - [EfficientFormer en Qualcomm AI Hub](https://aihub.qualcomm.com/models/efficientformer)
 - [Documentación de EfficientFormer en Transformers](https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/efficientformer)
 - [Repositorio de EfficientFormerV2 de Snap Research en GitHub](https://github.com/snap-research/EfficientFormer)

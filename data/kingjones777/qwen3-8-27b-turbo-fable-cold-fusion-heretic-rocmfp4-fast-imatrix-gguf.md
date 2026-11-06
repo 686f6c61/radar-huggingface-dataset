@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks homogeneos que permitan comparar estos mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kingjones777/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-Heretic-ROCmFP4-FAST-imatrix-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-Heretic-ROCmFP4-FAST-imatrix-GGUF
 - Modelo base (fusion herética de DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Modelo raíz: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork de runtime ROCmFPX usado por el autor: https://github.com/kingjones30/ROCmFPX

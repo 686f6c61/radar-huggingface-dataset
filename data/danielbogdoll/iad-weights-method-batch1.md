@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`danielbogdoll/iad-weights-method-batch1` es un repositorio de pesos publicado en HuggingFace por el usuario danielbogdoll, etiquetado con la categoría `anomaly-segmentation` y distribuido bajo licencia MIT. No se trata de un modelo de lenguaje generativo, sino de un conjunto de checkpoints de investigación correspondientes a tres semillas (seed1, seed2, seed3) de un entrenamiento denominado internamente "UNO M2 seeds" (run `uno_m2_seeds`), dentro de un proyecto de segmentación de anomalías.
+`danielbogdoll/iad-weights-method-batch1` es un repositorio de pesos publicado en Hugging Face por el usuario danielbogdoll, etiquetado con la categoría `anomaly-segmentation` y distribuido bajo licencia MIT. No se trata de un modelo de lenguaje generativo, sino de un conjunto de checkpoints de investigación correspondientes a tres semillas (seed1, seed2, seed3) de un entrenamiento denominado internamente "UNO M2 seeds" (run `uno_m2_seeds`), dentro de un proyecto de segmentación de anomalías.
 
-El repositorio contiene 6 archivos con un total de 7,24 GiB (7,8 GB de tamaño de repo según HuggingFace), organizados en tres carpetas `output/method_batch1/uno_m2_seeds/seed{1,2,3}/train`, cada una con un checkpoint y su manifiesto de ejecución o `config.yaml` de Detectron2. La presencia de configuración de Detectron2 indica que el modelo se entrena y ejecuta sobre el framework Detectron2 de Facebook AI Research, orientado a detección y segmentación de objetos.
+El repositorio contiene 6 archivos con un total de 7,24 GiB (7,8 GB de tamaño de repo según Hugging Face), organizados en tres carpetas `output/method_batch1/uno_m2_seeds/seed{1,2,3}/train`, cada una con un checkpoint y su manifiesto de ejecución o `config.yaml` de Detectron2. La presencia de configuración de Detectron2 indica que el modelo se entrena y ejecuta sobre el framework Detectron2 de Facebook AI Research, orientado a detección y segmentación de objetos.
 
 La relevancia de este repositorio es limitada para el público general: se trata de artefactos de investigación reproducibles (tres semillas del mismo experimento) pensados para restaurarse dentro del código de investigación del autor mediante un script (`scripts/ops/backup_weights.py pull --only method-batch1`). La model card no documenta arquitectura, parámetros, contexto, idiomas ni resultados de benchmarks, por lo que la mayor parte de las especificaciones técnicas deben marcarse como no disponibles.
 
@@ -71,5 +71,5 @@ No disponible. La información proporcionada no identifica el método "UNO M2" n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielbogdoll/iad-weights-method-batch1
+- Hugging Face: https://huggingface.co/danielbogdoll/iad-weights-method-batch1
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kongdee/colamb` es un repositorio publicado en HuggingFace por el usuario `kongdee` bajo licencia Apache-2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se han registrado descargas ni valoraciones de la comunidad, y no aparece en los resultados de búsqueda web consultados. En consecuencia, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante en el panorama actual de IA open source. Se trata, por ahora, de un artefacto sin documentación pública que no permite su evaluación ni su uso informado.
+El modelo `kongdee/colamb` es un repositorio publicado en Hugging Face por el usuario `kongdee` bajo licencia Apache-2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se han registrado descargas ni valoraciones de la comunidad, y no aparece en los resultados de búsqueda web consultados. En consecuencia, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante en el panorama actual de IA open source. Se trata, por ahora, de un artefacto sin documentación pública que no permite su evaluación ni su uso informado.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kongdee/colamb
+- Repositorio Hugging Face: https://huggingface.co/kongdee/colamb
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

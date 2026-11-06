@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `carloseducorinto/my-bert-imdb2` es un checkpoint subido al Hub de HuggingFace por el usuario Carlos Eduardo Gabriel Santos (carloseducorinto). El nombre sugiere que se trata de un modelo basado en BERT (el tag `arxiv:1910.09700` corresponde al artículo original de BERT) fine-tuneado sobre el dataset IMDB para clasificación de sentimientos en reseñas de cine. Sin embargo, la model card está vacía y no se proporciona información oficial sobre arquitectura, datos de entrenamiento, licencia o rendimiento. El modelo no registra descargas ni likes, lo que indica que es un experimento personal o un artefacto de aprendizaje más que un recurso de producción. A pesar de la falta de documentación, su existencia refleja el flujo habitual de fine-tuning de BERT para tareas de análisis de sentimiento, un caso de uso clásico en PLN.
+El modelo `carloseducorinto/my-bert-imdb2` es un checkpoint subido al Hub de Hugging Face por el usuario Carlos Eduardo Gabriel Santos (carloseducorinto). El nombre sugiere que se trata de un modelo basado en BERT (el tag `arxiv:1910.09700` corresponde al artículo original de BERT) fine-tuneado sobre el dataset IMDB para clasificación de sentimientos en reseñas de cine. Sin embargo, la model card está vacía y no se proporciona información oficial sobre arquitectura, datos de entrenamiento, licencia o rendimiento. El modelo no registra descargas ni likes, lo que indica que es un experimento personal o un artefacto de aprendizaje más que un recurso de producción. A pesar de la falta de documentación, su existencia refleja el flujo habitual de fine-tuning de BERT para tareas de análisis de sentimiento, un caso de uso clásico en PLN.
 
 ## Especificaciones tecnicas
 
@@ -24,8 +24,8 @@ No se ha publicado informacion sobre la arquitectura concreta, el proceso de ent
 ## Capacidades
 
 - Clasificacion de sentimiento binario (positivo/negativo) sobre reseñas de texto, probablemente especializado en criticas de cine de IMDB.
-- Inferencia de texto simple mediante la libreria `transformers` de HuggingFace.
-- Compatible con los endpoints de HuggingFace (tag `endpoints_compatible`), lo que permite su despliegue en la infraestructura de la plataforma.
+- Inferencia de texto simple mediante la libreria `transformers` de Hugging Face.
+- Compatible con los endpoints de Hugging Face (tag `endpoints_compatible`), lo que permite su despliegue en la infraestructura de la plataforma.
 - No se ha documentado soporte para tool calling, agentes, razonamiento multi-paso, ni capacidades multimodales (vision, audio).
 - Se desconoce si el modelo mantiene el resto de capacidades generativas de BERT (como MLM o NSP) o si solo funciona como clasificador tras el fine-tuning.
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Al no conocerse el tamano exacto del modelo, no se pueden dar cifras precisas de VRAM. Si se confirma que es un BERT base (110M parametros), la inferencia en FP32 requiere aproximadamente 440 MB de VRAM, y en FP16 unos 220 MB.
 - GPUs recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, o incluso CPU) para inferencia basica. Para entrenamiento o fine-tuning se necesitaria al menos 8 GB.
 - El modelo deberia ser compatible con `transformers` y por tanto desplegable en vLLM, TGI, Ollama (si se convierte a GGUF) y llama.cpp, aunque no se ha verificado.
-- Al ser `endpoints_compatible`, puede desplegarse directamente en Inference Endpoints de HuggingFace sin configuracion adicional.
+- Al ser `endpoints_compatible`, puede desplegarse directamente en Inference Endpoints de Hugging Face sin configuracion adicional.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento, por lo que no es posible comparar cuantit
 
 ## Enlaces
 
-- [HuggingFace - carloseducorinto/my-bert-imdb2](https://huggingface.co/carloseducorinto/my-bert-imdb2)
+- [Hugging Face - carloseducorinto/my-bert-imdb2](https://huggingface.co/carloseducorinto/my-bert-imdb2)
 - [Perfil de GitHub del autor](https://github.com/carloseducorinto)
 - [Paper de BERT (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Repositorio similar: aahfhtfgyj2004/my-bert-imdb2](https://huggingface.co/aahfhtfgyj2004/my-bert-imdb2)

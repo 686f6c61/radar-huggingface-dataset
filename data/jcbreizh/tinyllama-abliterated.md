@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jcbreizh/tinyllama-abliterated` es un checkpoint de 1.100 millones de parámetros alojado en HuggingFace por el usuario `jcbreizh`. El nombre sugiere que se trata de una variante "abliterated" de TinyLlama, término utilizado en la comunidad open source para referirse a modelos a los que se les han eliminado o modificado ciertas capacidades o restricciones de seguridad mediante fine-tuning o edición de pesos. Sin embargo, la ficha de HuggingFace no proporciona documentación técnica, licencia, idiomas ni pipeline, por lo que la información disponible es extremadamente limitada.
+El modelo `jcbreizh/tinyllama-abliterated` es un checkpoint de 1.100 millones de parámetros alojado en Hugging Face por el usuario `jcbreizh`. El nombre sugiere que se trata de una variante "abliterated" de TinyLlama, término utilizado en la comunidad open source para referirse a modelos a los que se les han eliminado o modificado ciertas capacidades o restricciones de seguridad mediante fine-tuning o edición de pesos. Sin embargo, la ficha de Hugging Face no proporciona documentación técnica, licencia, idiomas ni pipeline, por lo que la información disponible es extremadamente limitada.
 
 El repositorio pesa 2,2 GB en formato safetensors, consistente con un modelo de 1,1B parámetros en precisión fp16. A fecha de creación (agosto de 2026), el modelo cuenta con 0 descargas y 1 like, lo que indica que es un proyecto reciente y sin adopción conocida. No se dispone de más detalles sobre su entrenamiento, arquitectura interna o rendimiento.
 
@@ -61,6 +61,6 @@ No se dispone de datos de rendimiento ni de especificaciones confirmadas para co
 
 ## Enlaces
 
-- [HuggingFace: jcbreizh/tinyllama-abliterated](https://huggingface.co/jcbreizh/tinyllama-abliterated)
+- [Hugging Face: jcbreizh/tinyllama-abliterated](https://huggingface.co/jcbreizh/tinyllama-abliterated)
 
 No se han encontrado otros enlaces relevantes (papers, repos, demos) en la información proporcionada.

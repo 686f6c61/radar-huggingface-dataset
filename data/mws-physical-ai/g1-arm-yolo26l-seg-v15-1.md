@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`g1-arm-yolo26l-seg-v15-1` es un modelo de segmentación de instancias basado en YOLO26l-seg, publicado por el usuario `mws-physical-ai` en HuggingFace. Su tarea es concreta y especializada: segmentar los brazos completos (desde el hombro hasta las puntas de los dedos) del robot humanoide Unitree G1 en las imágenes captadas por la cámara de su cabeza. No es un modelo de lenguaje ni un modelo generativo multimodal de propósito general, sino un componente de percepción visual para robótica.
+`g1-arm-yolo26l-seg-v15-1` es un modelo de segmentación de instancias basado en YOLO26l-seg, publicado por el usuario `mws-physical-ai` en Hugging Face. Su tarea es concreta y especializada: segmentar los brazos completos (desde el hombro hasta las puntas de los dedos) del robot humanoide Unitree G1 en las imágenes captadas por la cámara de su cabeza. No es un modelo de lenguaje ni un modelo generativo multimodal de propósito general, sino un componente de percepción visual para robótica.
 
 El modelo se ha entrenado sobre el dataset refinado `ds_seg_arms_v15_1`, compuesto por 8 186 fotogramas (7 870 de entrenamiento y 316 de validación), aplicando técnicas de cierre morfológico, relleno del brazo y filtrado de los límites inferiores de la imagen. Con un tamaño de repositorio de 0,1 GB, los pesos en formato PyTorch (`.pt`) son ligeros y aptos para despliegue en el propio robot o en un equipo de cómputo cercano.
 
@@ -83,5 +83,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mws-physical-ai/g1-arm-yolo26l-seg-v15-1
+- Hugging Face: https://huggingface.co/mws-physical-ai/g1-arm-yolo26l-seg-v15-1
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

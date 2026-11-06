@@ -70,7 +70,7 @@ No se dispone de datos comparativos directos en la informacion proporcionada. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-VL-2B-Thinking
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-VL-2B-Thinking
 - Documentacion FuriosaAI para Qwen3-VL: https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-vl.html
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking
 - Pagina de Ollama para qwen3-vl:2b-thinking: https://ollama.com/library/qwen3-vl:2b-thinking

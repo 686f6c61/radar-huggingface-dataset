@@ -101,7 +101,7 @@ La comparación relevante es contra su propio modelo base: idénticos pesos, mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eetteri/sana-phrase-model
+- Modelo en Hugging Face: https://huggingface.co/eetteri/sana-phrase-model
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Artículo citado en la model card: *Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation* (Reimers y Gurevych, EMNLP 2020)
 - Aplicación que lo utiliza: Sana Sender (app de macOS que convierte voz en mensajes OSC para Max/MSP), sin repositorio enlazado en la información disponible

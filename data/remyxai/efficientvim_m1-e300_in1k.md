@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo remyxai/efficientvim_m1.e300_in1k es un modelo de clasificación de imágenes publicado por el usuario remyxai en HuggingFace. Se integra en el ecosistema timm (PyTorch Image Models) y utiliza pesos en formato safetensors. El modelo cuenta con 6.708.738 parámetros y ocupa aproximadamente 0.1 GB en el repositorio, lo que lo convierte en un modelo ligero y apto para entornos con recursos limitados.
+El modelo remyxai/efficientvim_m1.e300_in1k es un modelo de clasificación de imágenes publicado por el usuario remyxai en Hugging Face. Se integra en el ecosistema timm (PyTorch Image Models) y utiliza pesos en formato safetensors. El modelo cuenta con 6.708.738 parámetros y ocupa aproximadamente 0.1 GB en el repositorio, lo que lo convierte en un modelo ligero y apto para entornos con recursos limitados.
 
 Su nombre incluye el sufijo in1k, que en la convención de timm suele indicar que el modelo fue entrenado o evaluado en el dataset ImageNet-1k, aunque no se ha confirmado en la documentación disponible. La licencia Apache 2.0 permite su uso comercial sin restricciones.
 
@@ -27,7 +27,7 @@ La información proporcionada no incluye detalles sobre la arquitectura del mode
 
 ## Capacidades
 
-- Clasificación de imágenes: el modelo está diseñado para tareas de clasificación de imágenes, según la etiqueta pipeline de HuggingFace.
+- Clasificación de imágenes: el modelo está diseñado para tareas de clasificación de imágenes, según la etiqueta pipeline de Hugging Face.
 - Integración con timm: el modelo utiliza la librería timm, lo que permite cargarlo con funciones estándar de esa librería y con el framework de transformadores en combinación.
 - Es un modelo de visión, no de lenguaje: no soporta generación de texto, razonamiento simbólico, tool calling ni capacidades de agente.
 - Tamaño reducido: con 6,7 millones de parámetros, se espera un uso eficiente de memoria, lo que lo hace adecuado para dispositivos con limitaciones de hardware, aunque no hay medidas de rendimiento publicadas.
@@ -67,6 +67,6 @@ No se dispone de información sobre benchmarks de modelos similares en la docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/remyxai/efficientvim_m1.e300_in1k
+- Modelo en Hugging Face: https://huggingface.co/remyxai/efficientvim_m1.e300_in1k
 
 No hay otros enlaces relevantes (papers, blogs, repos) en la información disponible.

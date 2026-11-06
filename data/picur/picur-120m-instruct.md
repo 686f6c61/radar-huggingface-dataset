@@ -2,7 +2,7 @@
 
 ## Resumen
 
-picur-120M-instruct es un modelo de generacion de texto de tipo instruct, publicado por el usuario picur en HuggingFace, con 120.404.352 parametros reales (segun los pesos en safetensors) y etiquetado como arquitectura lfm2. Se distribuye bajo licencia Apache 2.0, esta orientado exclusivamente al hungaro (`hu`) y su model card lo marca explicitamente como "PREVIEW", es decir, un checkpoint preliminar con documentacion minima.
+picur-120M-instruct es un modelo de generacion de texto de tipo instruct, publicado por el usuario picur en Hugging Face, con 120.404.352 parametros reales (segun los pesos en safetensors) y etiquetado como arquitectura lfm2. Se distribuye bajo licencia Apache 2.0, esta orientado exclusivamente al hungaro (`hu`) y su model card lo marca explicitamente como "PREVIEW", es decir, un checkpoint preliminar con documentacion minima.
 
 El modelo resuelve el problema del asistente conversacional en hungaro a muy baja escala: 120 millones de parametros permiten ejecucion en CPU o en GPU de gama baja, algo relevante para despliegues en el borde, entornos sin conectividad o experimentos academicos sobre lenguas de recursos limitados. Frente a alternativas multilingues de tamano similar, su interes no esta en el rendimiento bruto sino en estar especializado en un unico idioma con un presupuesto de computo minimo.
 
@@ -25,7 +25,7 @@ No hay informacion publicada sobre el numero de tokens de entrenamiento, la comp
 | Tamano del repositorio | 0,2 GB |
 | Plantilla de chat | Jinja, almacenada en el tokenizer (`apply_chat_template`) |
 | Precision sugerida por el autor | bfloat16 (`torch_dtype=torch.bfloat16`) |
-| Fecha de creacion en HuggingFace | 2026-09-12 |
+| Fecha de creacion en Hugging Face | 2026-09-12 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| picur-120M-instruct | 120,4 M | no disponible | hu | Apache 2.0 | safetensors en HuggingFace |
-| LFM2-350M | 350 M (aproximado, no confirmado en la informacion disponible) | no disponible | multilingue | LFM Open License v1.0 | HuggingFace |
-| SmolLM2-135M-Instruct | 135 M | no disponible | principalmente ingles | Apache 2.0 | HuggingFace, con versiones GGUF de terceros |
-| Qwen2.5-0.5B-Instruct | 0,49 B | no disponible | multilingue (29 idiomas declarados) | Apache 2.0 | HuggingFace, con versiones GGUF y cuantizaciones |
+| picur-120M-instruct | 120,4 M | no disponible | hu | Apache 2.0 | safetensors en Hugging Face |
+| LFM2-350M | 350 M (aproximado, no confirmado en la informacion disponible) | no disponible | multilingue | LFM Open License v1.0 | Hugging Face |
+| SmolLM2-135M-Instruct | 135 M | no disponible | principalmente ingles | Apache 2.0 | Hugging Face, con versiones GGUF de terceros |
+| Qwen2.5-0.5B-Instruct | 0,49 B | no disponible | multilingue (29 idiomas declarados) | Apache 2.0 | Hugging Face, con versiones GGUF y cuantizaciones |
 
 Nota: los datos de los modelos comparativos proceden de conocimiento general sobre sus repositorios publicos y no de la informacion proporcionada en esta busqueda; conviene verificarlos antes de citarlos. No se dispone de comparaciones de rendimiento entre estos modelos y picur-120M-instruct, ya que este ultimo no publica benchmarks.
 
@@ -97,5 +97,5 @@ Nota: los datos de los modelos comparativos proceden de conocimiento general sob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/picur/picur-120M-instruct
+- Hugging Face: https://huggingface.co/picur/picur-120M-instruct
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

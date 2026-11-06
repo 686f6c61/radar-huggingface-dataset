@@ -2,7 +2,7 @@
 
 ## Resumen
 
-viewagent_scene_near_miss_epoch_2_best es un checkpoint de ajuste fino del modelo vision-lenguaje Qwen3-VL-8B-Instruct, publicado por el usuario JamesK2W en HuggingFace. No se trata de un modelo generalista, sino de un artefacto de investigación: es el mejor checkpoint de final de época (época 2, paso 71) del pipeline denominado ViewAgent GraphRL, orientado a planificación interactiva de vistas sobre el dataset ScanNet. El repositorio acumula 0 descargas y 0 likes, y su model card se limita a cuatro líneas de contexto más la etiqueta de licencia.
+viewagent_scene_near_miss_epoch_2_best es un checkpoint de ajuste fino del modelo vision-lenguaje Qwen3-VL-8B-Instruct, publicado por el usuario JamesK2W en Hugging Face. No se trata de un modelo generalista, sino de un artefacto de investigación: es el mejor checkpoint de final de época (época 2, paso 71) del pipeline denominado ViewAgent GraphRL, orientado a planificación interactiva de vistas sobre el dataset ScanNet. El repositorio acumula 0 descargas y 0 likes, y su model card se limita a cuatro líneas de contexto más la etiqueta de licencia.
 
 El modelo conserva la arquitectura de su base, con 8.767.123.696 parámetros reales almacenados en safetensors, y se carga mediante `AutoModelForImageTextToText.from_pretrained(...)`. Según el autor, está pensado para servirse directamente con SGLang o vLLM. La única métrica publicada es un pass@8 del 2,67 % en la validación del pipeline correspondiente a esa época, un valor que sitúa el checkpoint en una fase muy temprana de entrenamiento por refuerzo.
 
@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| viewagent_scene_near_miss_epoch_2_best | 8,767 B | no disponible | apache-2.0 | HuggingFace, 0 descargas | Ajuste RL para planificacion de vistas en ScanNet |
-| Qwen/Qwen3-VL-8B-Instruct (base) | orden de 8 B | no disponible en esta ficha | apache-2.0 | HuggingFace | Vision-lenguaje de proposito general |
+| viewagent_scene_near_miss_epoch_2_best | 8,767 B | no disponible | apache-2.0 | Hugging Face, 0 descargas | Ajuste RL para planificacion de vistas en ScanNet |
+| Qwen/Qwen3-VL-8B-Instruct (base) | orden de 8 B | no disponible en esta ficha | apache-2.0 | Hugging Face | Vision-lenguaje de proposito general |
 | Otros fine-tunes de planificacion de vistas | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas comparables en la informacion proporcionada |
 
 No se dispone de datos de rendimiento de los modelos comparados en esta ficha, por lo que no es posible establecer una comparación cuantitativa.
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento de los modelos comparados en esta ficha, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamesK2W/viewagent_scene_near_miss_epoch_2_best
+- Modelo en Hugging Face: https://huggingface.co/JamesK2W/viewagent_scene_near_miss_epoch_2_best
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Dataset ScanNet (referenciado por el pipeline): http://www.scan-net.org/
 - Paper, repositorio o demo del pipeline ViewAgent GraphRL: no disponible

@@ -63,7 +63,7 @@ No disponible. No se trata de un modelo de IA comparable con otros. Los reposito
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/24ds2000033/green-ai-carbon-audit
+- Repositorio Hugging Face: https://huggingface.co/24ds2000033/green-ai-carbon-audit
 - Repositorio similar (Bk-1928): https://huggingface.co/Bk-1928/green-ai-carbon-audit
 - Repositorio similar (rajkumar17493): https://huggingface.co/rajkumar17493/green-ai-carbon-audit
 - Documentación del Green AI Model: https://green-ai-model.github.io/docs/1_introduction/

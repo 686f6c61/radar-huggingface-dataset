@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ishikaa/acquisition_generator_AS_answer_variance_mmlupro_qwen3b` es un modelo de generacion de texto publicado en HuggingFace por el usuario ishikaa. La model card es la plantilla autogenerada por la plataforma y no contiene practicamente ningun dato relleno: todas las secciones relevantes (descripcion, autores, datos de entrenamiento, evaluacion, infraestructura) figuran como "[More Information Needed]". Por tanto, la informacion verificable se limita a los metadatos del repositorio y a los pesos almacenados.
+El repositorio `ishikaa/acquisition_generator_AS_answer_variance_mmlupro_qwen3b` es un modelo de generacion de texto publicado en Hugging Face por el usuario ishikaa. La model card es la plantilla autogenerada por la plataforma y no contiene practicamente ningun dato relleno: todas las secciones relevantes (descripcion, autores, datos de entrenamiento, evaluacion, infraestructura) figuran como "[More Information Needed]". Por tanto, la informacion verificable se limita a los metadatos del repositorio y a los pesos almacenados.
 
 Los tags indican que el modelo usa la libreria transformers, esta serializado en safetensors y se etiqueta como `qwen2`, `text-generation` y `conversational`. El recuento real de parametros extraido de los safetensors es de 14.770.033.664 (aproximadamente 14,77 mil millones), y el repositorio ocupa 59,1 GB. Llama la atencion la discrepancia entre ese recuento y el sufijo `qwen3b` del identificador, que sugiere una base de 3B; no hay documentacion que explique la diferencia.
 
@@ -25,7 +25,7 @@ El nombre del repositorio apunta a un artefacto de investigacion mas que a un mo
 
 El unico indicio sobre la arquitectura es el tag `qwen2`, que apunta a un transformer decoder-only de la familia Qwen2 con atencion causal, normalizacion RMSNorm y el esquema habitual de rotary positional embeddings de dicha familia. No hay informacion en la model card que confirme la arquitectura, la configuracion de capas, el numero de cabezas de atencion, la dimension oculta ni el tipo de tokenizador.
 
-No se dispone de ningun dato sobre el entrenamiento: no se especifican el numero de tokens, la composicion del dataset, si hubo preentrenamiento desde cero o ajuste fino sobre una base Qwen2, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre estimacion de emisiones de carbono que aparece embebida en la plantilla estandar de model card de HuggingFace. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o variantes hibridas.
+No se dispone de ningun dato sobre el entrenamiento: no se especifican el numero de tokens, la composicion del dataset, si hubo preentrenamiento desde cero o ajuste fino sobre una base Qwen2, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre estimacion de emisiones de carbono que aparece embebida en la plantilla estandar de model card de Hugging Face. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o variantes hibridas.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ Las capacidades solo pueden inferirse de los tags, no de documentacion explicita
 
 - Generacion de texto (`text-generation`): es la unica funcionalidad declarada de forma directa.
 - Uso conversacional (`conversational`): el tag sugiere que el modelo puede operar en formato de chat multi-turno, aunque no se documenta el formato de prompt ni las plantillas de chat.
-- Compatibilidad con text-generation-inference (`text-generation-inference`, `endpoints_compatible`): los tags indican que el modelo puede servirse mediante TGI y desplegarse a traves de HuggingFace Inference Endpoints.
+- Compatibilidad con text-generation-inference (`text-generation-inference`, `endpoints_compatible`): los tags indican que el modelo puede servirse mediante TGI y desplegarse a traves de Hugging Face Inference Endpoints.
 - Razonamiento, codigo, matematicas, vision, audio, tool calling, function calling, uso como agente, modo de razonamiento explicito o capacidades multilingues: no disponible. Ninguna de estas capacidades esta declarada ni verificada.
 
 El nombre del repositorio menciona MMLU-Pro, pero no hay ninguna evaluacion publicada sobre ese u otro benchmark que permita confirmar un rendimiento concreto.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado, por lo que no es posible establ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_mmlupro_qwen3b
+- Repositorio en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_mmlupro_qwen3b
 - Referencia del tag arxiv (paper de Lacoste et al. sobre emisiones, incluido en la plantilla de model card, no asociado al modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

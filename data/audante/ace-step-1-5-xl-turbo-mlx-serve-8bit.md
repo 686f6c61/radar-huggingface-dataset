@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step 1.5 XL Turbo MLX 8bit (este) | 1.347 M | No disponible | safetensors MLX | MIT | HuggingFace (repo no oficial) |
-| ACE-Step/acestep-v15-xl-turbo (original) | No disponible en la información | No disponible | No disponible | MIT (según este repo) | HuggingFace (oficial) |
-| ddalcu/ACE-Step-1.5-XL-Turbo-MLX-Serve-8bit | Idénticos (copia bit a bit) | No disponible | safetensors MLX | MIT | HuggingFace |
+| ACE-Step 1.5 XL Turbo MLX 8bit (este) | 1.347 M | No disponible | safetensors MLX | MIT | Hugging Face (repo no oficial) |
+| ACE-Step/acestep-v15-xl-turbo (original) | No disponible en la información | No disponible | No disponible | MIT (según este repo) | Hugging Face (oficial) |
+| ddalcu/ACE-Step-1.5-XL-Turbo-MLX-Serve-8bit | Idénticos (copia bit a bit) | No disponible | safetensors MLX | MIT | Hugging Face |
 
 No se dispone de datos de benchmarks ni de otros modelos de generación musical comparables en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento.
 
@@ -80,6 +80,6 @@ No se dispone de datos de benchmarks ni de otros modelos de generación musical 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Audante/ACE-Step-1.5-XL-Turbo-MLX-Serve-8bit
+- Repositorio Hugging Face: https://huggingface.co/Audante/ACE-Step-1.5-XL-Turbo-MLX-Serve-8bit
 - Conversión de origen: https://huggingface.co/ddalcu/ACE-Step-1.5-XL-Turbo-MLX-Serve-8bit
 - Modelo base: https://huggingface.co/ACE-Step/acestep-v15-xl-turbo

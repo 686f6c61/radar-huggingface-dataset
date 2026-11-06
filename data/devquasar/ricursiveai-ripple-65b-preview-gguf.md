@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ripple-65B-Preview es un modelo de generación de texto de 65.000 millones de parámetros desarrollado por ricursiveAI, publicado en HuggingFace como versión preliminar (Preview). La ficha que nos ocupa no es el modelo original, sino la cuantización GGUF del mismo realizada por DevQuasar, un conocido distribuidor de versiones cuantizadas de modelos abiertos bajo el lema "Make knowledge free for everyone".
+Ripple-65B-Preview es un modelo de generación de texto de 65.000 millones de parámetros desarrollado por ricursiveAI, publicado en Hugging Face como versión preliminar (Preview). La ficha que nos ocupa no es el modelo original, sino la cuantización GGUF del mismo realizada por DevQuasar, un conocido distribuidor de versiones cuantizadas de modelos abiertos bajo el lema "Make knowledge free for everyone".
 
 El modelo base está etiquetado como `text-generation` y `base_model`, lo que sugiere que se distribuye como modelo base o finetune sin un pipeline específico de instrucciones declarado. La información pública disponible es extremadamente limitada: no se detallan arquitectura, datos de entrenamiento, contexto ni licencia. La cuantización GGUF permite ejecutar el modelo en hardware de consumo mediante llama.cpp y derivados, aunque el tamaño de 65B impone requisitos de memoria considerables incluso en cuantizaciones agresivas.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B-Preview (GGUF) | 65B | no disponible | no disponible | GGUF | HuggingFace |
-| Llama 3.1 70B | 70B | 128K | Llama 3.1 Community | safetensors, GGUF | HuggingFace, amplia comunidad |
-| Qwen2.5 72B | 72B | 128K | Apache 2.0 (mayoría de variantes) | safetensors, GGUF | HuggingFace |
+| Ripple-65B-Preview (GGUF) | 65B | no disponible | no disponible | GGUF | Hugging Face |
+| Llama 3.1 70B | 70B | 128K | Llama 3.1 Community | safetensors, GGUF | Hugging Face, amplia comunidad |
+| Qwen2.5 72B | 72B | 128K | Apache 2.0 (mayoría de variantes) | safetensors, GGUF | Hugging Face |
 | Mistral Large | no disponible | no disponible | propietaria | API | API |
 
 La comparativa se ofrece a título orientativo por categoría de tamaño; no se dispone de datos de rendimiento de Ripple-65B-Preview que permitan una comparación cuantitativa.
@@ -82,6 +82,6 @@ La comparativa se ofrece a título orientativo por categoría de tamaño; no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/DevQuasar/ricursiveAI.Ripple-65B-Preview-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/DevQuasar/ricursiveAI.Ripple-65B-Preview-GGUF
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Sitio del cuantizador: https://devquasar.com

@@ -6,7 +6,7 @@ El repositorio SOTAagi2030/Quillbridge-Redaction-Custody no contiene un modelo d
 
 El repositorio no incluye licencia, idiomas soportados, etiqueta de pipeline ni resultados de evaluación. La única etiqueta presente es region:us, y acumula 0 descargas y 0 likes. El registro de creación es 2026-10-07T14:52:24Z y la actualización 2026-10-07T14:52:51Z, 27 segundos después, lo que es coherente con una subida automatizada sin iteraciones posteriores.
 
-Su relevancia es, por tanto, metodológica: sirve como ejemplo de artefacto alojado en HuggingFace que no es un modelo y que un evaluador debe descartar rápidamente en un proceso de selección. Cualquier ficha técnica de rendimiento, contexto o capacidades sería especulativa, ya que no existe material sobre el que medir.
+Su relevancia es, por tanto, metodológica: sirve como ejemplo de artefacto alojado en Hugging Face que no es un modelo y que un evaluador debe descartar rápidamente en un proceso de selección. Cualquier ficha técnica de rendimiento, contexto o capacidades sería especulativa, ya que no existe material sobre el que medir.
 
 ## Especificaciones técnicas
 
@@ -95,5 +95,5 @@ No disponible. Al no tratarse de un modelo, no existe categoría de comparación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/Quillbridge-Redaction-Custody
+- Hugging Face: https://huggingface.co/SOTAagi2030/Quillbridge-Redaction-Custody
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la búsqueda web.

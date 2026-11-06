@@ -77,7 +77,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r506-sbsv5-offline-dpo-hialpha-hirank-lobeta-longctx-extrasteps-merged
+- Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r506-sbsv5-offline-dpo-hialpha-hirank-lobeta-longctx-extrasteps-merged
 - Checkpoint similar (r497): https://huggingface.co/unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged
 - LoRA base (r22): https://huggingface.co/unconst/Affine-5czsc2fc98-r22-lora
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft

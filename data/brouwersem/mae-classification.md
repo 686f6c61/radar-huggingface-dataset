@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`brouwersem/mae-classification` es un repositorio publicado en HuggingFace por el usuario `brouwersem` que contiene una implementacion propia de un modelo de tipo Mae orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de una release con pesos listos para produccion: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. Con solo 24.832 parametros totales y un tamano de repositorio de 0,0 GB, es un artefacto de escala experimental.
+`brouwersem/mae-classification` es un repositorio publicado en Hugging Face por el usuario `brouwersem` que contiene una implementacion propia de un modelo de tipo Mae orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de una release con pesos listos para produccion: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. Con solo 24.832 parametros totales y un tamano de repositorio de 0,0 GB, es un artefacto de escala experimental.
 
 El interes del repositorio es fundamentalmente reproducible y didactico: incluye el codigo (`predict.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`), de modo que sirve como punto de partida para entrenar y evaluar una implementacion personalizada con criterios homogeneos. La model card insiste en que cualquier resultado futuro debe documentarse por separado de los valores por defecto aqui enviados.
 
@@ -81,5 +81,5 @@ No disponible. No se pueden identificar modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brouwersem/mae-classification
+- Modelo en Hugging Face: https://huggingface.co/brouwersem/mae-classification
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes para este modelo (las referencias devueltas tratan sobre horoscopos y sobre modelos Gemini y DeepSeek, sin relacion con el artefacto descrito).

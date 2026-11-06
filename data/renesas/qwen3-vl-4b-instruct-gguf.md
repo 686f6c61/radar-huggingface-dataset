@@ -6,7 +6,7 @@ Renesas/Qwen3-VL-4B-Instruct-GGUF es una cuantizacion en formato GGUF del modelo
 
 El modelo base cuenta con 4.022.468.096 parametros (aproximadamente 4.000 millones) y pertenece a la familia Qwen3-VL, la tercera generacion de modelos vision-language de Qwen. Es relevante porque ofrece capacidades multimodales en un tamano que puede ejecutarse en hardware con recursos limitados, algo critico en el contexto de vision artificial embebida: inspeccion industrial, robotica o interfaces hombre-maquina en dispositivos de borde.
 
-La ficha se centra en esta publicacion GGUF concreta, que esta sujeta a acceso restringido (gated) en HuggingFace y requiere aceptar condiciones antes de la descarga. El repositorio ocupa 20,7 GB, coherente con la presencia de multiples niveles de cuantizacion del modelo de 4B de parametros.
+La ficha se centra en esta publicacion GGUF concreta, que esta sujeta a acceso restringido (gated) en Hugging Face y requiere aceptar condiciones antes de la descarga. El repositorio ocupa 20,7 GB, coherente con la presencia de multiples niveles de cuantizacion del modelo de 4B de parametros.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ La publicacion de Renesas no anade informacion sobre el proceso de entrenamiento
 - Comprension de imagenes: descripcion de contenido visual, respuesta a preguntas sobre imagenes (VQA) y extraccion de informacion de documentos o capturas.
 - Razonamiento y generacion de texto: el modelo base es un LLM de proposito general con capacidad de razonamiento y generacion.
 - Seguimiento de instrucciones: variante "Instruct" del modelo base.
-- Capacidades multilingues: no disponibles en la informacion proporcionada (los idiomas no estan declarados en la ficha de HuggingFace).
+- Capacidades multilingues: no disponibles en la informacion proporcionada (los idiomas no estan declarados en la ficha de Hugging Face).
 - Tool calling / function calling: no disponible en la informacion proporcionada para esta variante.
 - Modo thinking o razonamiento extendido: no disponible en la informacion proporcionada.
 - Capacidades de audio: no disponible; el pipeline declarado solo cubre imagen y texto.
@@ -74,7 +74,7 @@ No se dispone de comparativas con modelos de otros fabricantes (por ejemplo, fam
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated; es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated; es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 - Datos incompletos: la model card de esta publicacion no declara idiomas, contexto, niveles de cuantizacion ni benchmarks; conviene consultar la ficha del modelo base antes de usarlo en produccion.
 - Riesgo de alucinacion: como todo LLM, puede generar descripciones o respuestas incorrectas sobre imagenes, especialmente en escenas ambiguas o texto pequeno en imagenes; no debe usarse como unico mecanismo en decisiones criticas.
 - Sesgos: no se documentan sesgos especificos en la informacion disponible; el modelo hereda los del corpus de entrenamiento del base, no detallado aqui.
@@ -85,7 +85,7 @@ No se dispone de comparativas con modelos de otros fabricantes (por ejemplo, fam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Renesas/Qwen3-VL-4B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Renesas/Qwen3-VL-4B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Web de Renesas Electronics: https://www.renesas.com/
 - Wikipedia de Renesas Electronics: https://en.wikipedia.org/wiki/Renesas_Electronics

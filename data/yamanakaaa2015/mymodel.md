@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yamanakaaa2015/mymodel` es un modelo de lenguaje de gran tamaño (LLM) publicado en HuggingFace por el usuario `yamanakaaa2015`. Con aproximadamente 14.289 millones de parámetros (14,3B), se trata de un modelo de tamaño medio-grande, aunque la información pública disponible es extremadamente limitada: no se especifica la arquitectura, la licencia, los idiomas soportados ni el pipeline de uso.
+El modelo `yamanakaaa2015/mymodel` es un modelo de lenguaje de gran tamaño (LLM) publicado en Hugging Face por el usuario `yamanakaaa2015`. Con aproximadamente 14.289 millones de parámetros (14,3B), se trata de un modelo de tamaño medio-grande, aunque la información pública disponible es extremadamente limitada: no se especifica la arquitectura, la licencia, los idiomas soportados ni el pipeline de uso.
 
 El repositorio, con un tamaño de 350,8 GB, sugiere que aloja múltiples archivos de pesos, probablemente en formato GGUF (según la etiqueta `gguf`) y posiblemente también en `safetensors`. La etiqueta `region:us` indica que el modelo está orientado al mercado estadounidense, pero no aporta detalles sobre su entrenamiento o capacidades. El modelo fue creado en junio de 2025 y actualizado en agosto de 2026, lo que sugiere un mantenimiento activo, aunque con solo 250 descargas y 0 likes, su adopción es baja.
 
@@ -48,7 +48,7 @@ Dada la falta de información oficial, no es posible recomendar casos de uso con
 - Despliegue en entornos con recursos limitados: gracias al formato GGUF, podría ejecutarse en CPU o GPUs de gama media mediante llama.cpp u Ollama, pero el rendimiento real es desconocido.
 - Fine-tuning específico: los pesos en `safetensors` (si están disponibles) permitirían ajustar el modelo para dominios concretos, pero se requeriría verificar la licencia antes de cualquier uso comercial.
 - Evaluación comparativa interna: podría servir como baseline en experimentos de evaluación de modelos de tamaño similar, siempre que se documenten sus limitaciones.
-- Educación y aprendizaje: útil para estudiar el proceso de publicación de modelos en HuggingFace y las prácticas de cuantización, aunque no como referencia de calidad.
+- Educación y aprendizaje: útil para estudiar el proceso de publicación de modelos en Hugging Face y las prácticas de cuantización, aunque no como referencia de calidad.
 
 ## Benchmarks y rendimiento
 
@@ -79,6 +79,6 @@ No disponible. Sin información sobre arquitectura, entrenamiento o benchmarks, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yamanakaaa2015/mymodel
+- Repositorio Hugging Face: https://huggingface.co/yamanakaaa2015/mymodel
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la información proporcionada.

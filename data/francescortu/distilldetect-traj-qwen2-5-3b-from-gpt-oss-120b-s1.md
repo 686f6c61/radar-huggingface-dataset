@@ -96,7 +96,7 @@ No se han publicado métricas comparativas entre estas variantes en la informaci
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/francescortu/DistillDetect-traj-Qwen2.5-3B-from-gpt-oss-120b-s1
+- Repositorio de Hugging Face: https://huggingface.co/francescortu/DistillDetect-traj-Qwen2.5-3B-from-gpt-oss-120b-s1
 - Artículo arXiv: https://arxiv.org/abs/2607.09692
 - Modelo final (solo checkpoint 100%): https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-s1
 - Variante con OMI-1K: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-OMI-1K

@@ -79,7 +79,7 @@ Resultados publicados por Oriven Labs, pass@1 salvo indicación, con harness id�
 
 | Modelo | Parámetros | Contexto | LiveCodeBench v6 | SWE-bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DAMS 27B (it6) | 29,6B | 262.144 | 88,15 | 85,2% (426/500) | Apache 2.0 | Pesos abiertos en HuggingFace; requiere plugin vLLM propio |
+| DAMS 27B (it6) | 29,6B | 262.144 | 88,15 | 85,2% (426/500) | Apache 2.0 | Pesos abiertos en Hugging Face; requiere plugin vLLM propio |
 | Qwen3.8-27B (base) | ~27B (nominal) | 262.144 | 84,83 | 86,6% (433/500) | Apache 2.0 | Pesos abiertos; soporte estándar en transformers y vLLM |
 | Otros modelos de ~27B de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ La comparación directa solo es posible con el modelo base, ya que la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oriven-Labs/DAMS-27B
+- Modelo en Hugging Face: https://huggingface.co/Oriven-Labs/DAMS-27B
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Sitio de Oriven Labs: https://orivenlabs.com/
 - Organización en GitHub: https://github.com/Oriven-Labs

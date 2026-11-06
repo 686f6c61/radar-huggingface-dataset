@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `outminer/co-2` es un repositorio alojado en HuggingFace por el usuario `outminer`, con un tamaño de repositorio de 56,5 GB. La página pública no proporciona información sobre su arquitectura, parámetros, licencia, idiomas o pipeline de uso. Con solo 0 descargas y 1 like, se trata de un modelo sin documentación ni adopción comunitaria aparente. Aunque el tamaño del repositorio sugiere que podría tratarse de un modelo de lenguaje de gran escala, no existe confirmación oficial ni detalles técnicos que permitan caracterizarlo. Su relevancia actual es limitada debido a la ausencia total de especificaciones y a la falta de ejemplos de uso.
+El modelo `outminer/co-2` es un repositorio alojado en Hugging Face por el usuario `outminer`, con un tamaño de repositorio de 56,5 GB. La página pública no proporciona información sobre su arquitectura, parámetros, licencia, idiomas o pipeline de uso. Con solo 0 descargas y 1 like, se trata de un modelo sin documentación ni adopción comunitaria aparente. Aunque el tamaño del repositorio sugiere que podría tratarse de un modelo de lenguaje de gran escala, no existe confirmación oficial ni detalles técnicos que permitan caracterizarlo. Su relevancia actual es limitada debido a la ausencia total de especificaciones y a la falta de ejemplos de uso.
 
 ## Especificaciones tecnicas
 
@@ -53,6 +53,6 @@ No disponible. Al no conocerse las características del modelo, no es posible co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/outminer/co-2
+- Repositorio en Hugging Face: https://huggingface.co/outminer/co-2
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

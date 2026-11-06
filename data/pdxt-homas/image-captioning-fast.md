@@ -61,6 +61,6 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- [HuggingFace - pdxt-homas/image-captioning-fast](https://huggingface.co/pdxt-homas/image-captioning-fast)
+- [Hugging Face - pdxt-homas/image-captioning-fast](https://huggingface.co/pdxt-homas/image-captioning-fast)
 - [GitHub - swtech-pro/Image-Captioning-Fast](https://github.com/swtech-pro/Image-Captioning-Fast) (repositorio no relacionado con el autor del modelo, pero mencionado en la búsqueda web)
 - [Documentación de Hugging Face sobre image captioning](https://huggingface.co/docs/transformers/tasks/image_captioning)

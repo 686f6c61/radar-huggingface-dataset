@@ -92,7 +92,7 @@ Frente a sus alternativas densas de tamaño comparable, este modelo activa solo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adriaflores/kimi-k3-300m-from-scratch
+- Modelo en Hugging Face: https://huggingface.co/adriaflores/kimi-k3-300m-from-scratch
 - Repositorio de código (GitHub): https://github.com/adriaflores/kimi-k3-from-scratch
 - Documentación del proyecto: https://kimi-k3.adriaflores.com
 - Dataset de entrenamiento (FineWeb-Edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

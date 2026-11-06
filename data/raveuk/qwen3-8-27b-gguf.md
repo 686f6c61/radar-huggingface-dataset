@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento, contexto efectivo ni requisitos de los mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rAVEUK/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/rAVEUK/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia de ejecucion de Qwen3.8-27B de Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Documentacion de Unsloth Dynamic 3.0 GGUF: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs

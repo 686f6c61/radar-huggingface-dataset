@@ -82,7 +82,7 @@ La comparativa se limita a la familia Qwen de 27B. No se dispone de datos de ren
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill-GGUF
 - Modelo base (safetensors): https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Web de TeichAI: https://www.teichai.com/

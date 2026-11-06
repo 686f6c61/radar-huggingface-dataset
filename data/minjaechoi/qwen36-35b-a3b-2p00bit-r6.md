@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minjaechoi/qwen36-35b-a3b-2p00bit-r6` es un checkpoint derivado del modelo base Qwen/Qwen3.6-35B-A3B, publicado por el usuario minjaechoi en HuggingFace. Se trata de un ejercicio de cuantización selectiva sobre una arquitectura de mezcla de expertos (MoE): unicamente los expertos enrutados se almacenan con una precisión media de 2,00 bits, mientras que el resto de los pesos (atencion, embeddings, routers, capas densas) permanecen en BF16. La model card lo describe explicitamente como "checkpoint de investigacion interna", con identificador interno `r6`.
+`minjaechoi/qwen36-35b-a3b-2p00bit-r6` es un checkpoint derivado del modelo base Qwen/Qwen3.6-35B-A3B, publicado por el usuario minjaechoi en Hugging Face. Se trata de un ejercicio de cuantización selectiva sobre una arquitectura de mezcla de expertos (MoE): unicamente los expertos enrutados se almacenan con una precisión media de 2,00 bits, mientras que el resto de los pesos (atencion, embeddings, routers, capas densas) permanecen en BF16. La model card lo describe explicitamente como "checkpoint de investigacion interna", con identificador interno `r6`.
 
 El dato mas relevante tecnicamente es que los pesos no se guardan comprimidos: el autor indica que se almacenan ya desquantizados en tensores BF16 y que cargan con `transformers` estandar y con vLLM. Esto significa que la reduccion a 2,00 bits afecta al proceso de compresion y reconstruccion aplicado durante la creacion del checkpoint, pero no al consumo de memoria en inferencia: el repositorio ocupa 70,2 GB, coherente con 35.107.181.936 parametros almacenados a 2 bytes por parametro.
 
@@ -71,8 +71,8 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni para es
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | qwen36-35b-a3b-2p00bit-r6 | 35,1B | ~3B (no confirmado) | no disponible | Sigue la del modelo base (no especificada) | Checkpoint de investigacion interna, 0 descargas, 0 likes |
-| Qwen3-30B-A3B | 30,5B | 3,3B | 32.768 nativo, ampliable a 131.072 con YaRN | Apache 2.0 | Publico en HuggingFace |
-| Mixtral 8x7B | 46,7B | 12,9B | 32.768 | Apache 2.0 | Publico en HuggingFace |
+| Qwen3-30B-A3B | 30,5B | 3,3B | 32.768 nativo, ampliable a 131.072 con YaRN | Apache 2.0 | Publico en Hugging Face |
+| Mixtral 8x7B | 46,7B | 12,9B | 32.768 | Apache 2.0 | Publico en Hugging Face |
 | Qwen/Qwen3.6-35B-A3B (modelo base) | no disponible en los datos proporcionados | no disponible en los datos proporcionados | no disponible | no disponible | Referenciado como modelo base |
 
 No se dispone de datos de rendimiento comparados entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento comparados entre estos modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r6
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web no devolvio resultados relevantes sobre este modelo.

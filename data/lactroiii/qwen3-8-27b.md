@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, perteneciente a la generación Qwen3.8 de la familia Qwen. Se distribuye a traves del repositorio de HuggingFace `lactroiii/Qwen3.8-27B` y esta disponible bajo licencia Apache 2.0. Se trata de un modelo denso de 27.781.427.952 parametros (27B) que integra de forma nativa comprension de imagenes y videos, con una ventana de contexto de 262.144 tokens nativa, extensible hasta 1.000.000 de tokens.
+Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, perteneciente a la generación Qwen3.8 de la familia Qwen. Se distribuye a traves del repositorio de Hugging Face `lactroiii/Qwen3.8-27B` y esta disponible bajo licencia Apache 2.0. Se trata de un modelo denso de 27.781.427.952 parametros (27B) que integra de forma nativa comprension de imagenes y videos, con una ventana de contexto de 262.144 tokens nativa, extensible hasta 1.000.000 de tokens.
 
 El modelo esta disenado para tareas exigentes de codificacion, trabajo profesional, investigacion y ejecucion de agentes autonomos de largo horizonte. Incorpora un modo de razonamiento flexible (thinking mode) activado por defecto pero configurable por peticion, con parametros como `reasoning_effort` y `preserve_thinking`. Su arquitectura hibrida combina capas de atencion lineal Gated DeltaNet con capas de atencion Gated Attention, e incluye Multi-Token Prediction (MTP) para mejorar la eficiencia de generacion.
 
@@ -75,5 +75,5 @@ La model card compara Qwen3.8-27B con Qwen3.6-27B, Qwen3.7-Plus, Muse Glimmer-30
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lactroiii/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/lactroiii/Qwen3.8-27B
 - Servicio Qwen Cloud (proximamente): https://www.qwencloud.com/models/qwen3.8-27b

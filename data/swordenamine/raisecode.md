@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`swordenamine/Raisecode` no es un modelo de IA: es un repositorio de scripts e instrucciones para instalar y ejecutar Claude Code (la CLI de Anthropic) sobre Termux en Android. El paquete, de unos 230 MB, actúa como cliente ligero: el dispositivo no ejecuta ninguna inferencia local, sino que envía las peticiones a la API de Anthropic usando la clave del propio usuario. No se publican pesos, tokenizador, configuración de arquitectura ni artefactos de inferencia en el repositorio de HuggingFace.
+`swordenamine/Raisecode` no es un modelo de IA: es un repositorio de scripts e instrucciones para instalar y ejecutar Claude Code (la CLI de Anthropic) sobre Termux en Android. El paquete, de unos 230 MB, actúa como cliente ligero: el dispositivo no ejecuta ninguna inferencia local, sino que envía las peticiones a la API de Anthropic usando la clave del propio usuario. No se publican pesos, tokenizador, configuración de arquitectura ni artefactos de inferencia en el repositorio de Hugging Face.
 
 El repositorio se presenta como "Claude Code on Android" y ofrece un instalador de un solo comando (`bootstrap.sh`), un entorno Zsh + Oh My Zsh preconfigurado, un generador de proyectos (`newproject`) y un modo servidor HTTP en el puerto 8765 que expone el modelo remoto a otros dispositivos de la misma red WiFi. Su propuesta de valor es evitar descargar modelos de 10-70 GB en dispositivos con almacenamiento y RAM limitados.
 
-La ficha se ha elaborado exclusivamente a partir de los metadatos de HuggingFace y de la model card. Esta es internamente inconsistente: mezcla tres nombres distintos (Raisecode, RiseCode, In3Pro), apunta a un repositorio de GitHub distinto del ID de HuggingFace y contiene fechas incoherentes (creado el 2026-10-17, actualizado el 2026-03-05). El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no incluye ningún resultado de evaluación.
+La ficha se ha elaborado exclusivamente a partir de los metadatos de Hugging Face y de la model card. Esta es internamente inconsistente: mezcla tres nombres distintos (Raisecode, RiseCode, In3Pro), apunta a un repositorio de GitHub distinto del ID de Hugging Face y contiene fechas incoherentes (creado el 2026-10-17, actualizado el 2026-03-05). El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no incluye ningún resultado de evaluación.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La ficha se ha elaborado exclusivamente a partir de los metadatos de HuggingFace
 | Longitud de contexto | No disponible; depende del modelo Claude invocado a traves de la API de Anthropic |
 | Tipos de cuantizacion | No aplica (la inferencia se ejecuta en servidores de Anthropic) |
 | Idiomas soportados | No disponible en los metadatos; los hereda del modelo remoto |
-| Licencia | MIT segun el README (Copyright 2026 swordenkisk); no declarada en los metadatos de HuggingFace |
+| Licencia | MIT segun el README (Copyright 2026 swordenkisk); no declarada en los metadatos de Hugging Face |
 | Formato de pesos | No disponible: no se publican safetensors, GGUF ni ningun otro artefacto de pesos |
 | Tipo de artefacto | Conjunto de scripts de instalacion y configuracion (shell, YAML, documentacion) |
 | Version declarada | 1.0.0 |
@@ -28,7 +28,7 @@ La ficha se ha elaborado exclusivamente a partir de los metadatos de HuggingFace
 | Requisito externo | Clave de API de Anthropic (`ANTHROPIC_API_KEY`) y conexion a Internet |
 | Modo servidor | HTTP en el puerto 8765, endpoints `/health` y `/ask` |
 | Descargas / likes | 0 / 0 |
-| Tags de HuggingFace | `region:us` |
+| Tags de Hugging Face | `region:us` |
 
 ## Arquitectura y entrenamiento
 
@@ -89,13 +89,13 @@ No se dispone de datos de rendimiento del artefacto que permitan una comparacion
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no hay pesos, tokenizador, configuracion de arquitectura ni codigo de inferencia. Cualquier expectativa de ejecutar el "modelo" en local es incorrecta.
-- La model card es internamente incoherente: usa tres nombres distintos (Raisecode, RiseCode, In3Pro), el ID de HuggingFace (`swordenamine/Raisecode`) no coincide con el autor de GitHub referenciado (`swordenkisk`), las rutas del README mezclan `~/Risecode` e `In3Pro/`, y las fechas de creacion y actualizacion son contradictorias.
+- La model card es internamente incoherente: usa tres nombres distintos (Raisecode, RiseCode, In3Pro), el ID de Hugging Face (`swordenamine/Raisecode`) no coincide con el autor de GitHub referenciado (`swordenkisk`), las rutas del README mezclan `~/Risecode` e `In3Pro/`, y las fechas de creacion y actualizacion son contradictorias.
 - Sin evidencia de uso ni validacion: 0 descargas, 0 likes, sin paper, sin tests y sin historial de issues en la informacion disponible.
 - Riesgo de suministro de codigo: el metodo de instalacion recomendado es `curl ... | bash`, que ejecuta codigo remoto sin verificacion de integridad ni fijacion de version; no se publican sumas de comprobacion.
 - Gestion de credenciales: la clave de API se exporta y se guarda en texto plano en `~/.zshrc`. Cualquier proceso con acceso al entorno del usuario puede leerla.
 - Modo servidor sin seguridad: el endpoint HTTP del puerto 8765 no presenta autenticacion, TLS ni control de acceso segun la documentacion; queda expuesto a cualquier dispositivo de la red WiFi, incluida una red publica.
 - Dependencia total de un servicio de terceros: sin conexion no hay funcionalidad; el coste por token, los limites de velocidad y las condiciones de uso son los de la cuenta de Anthropic del usuario, no los del repositorio.
-- La licencia MIT declarada cubre los scripts del repositorio, no el modelo Claude ni el paquete npm de Anthropic, que se rigen por sus propios terminos. Ademas, la licencia no figura en los metadatos de HuggingFace, por lo que la situacion legal del artefacto publicado es ambigua.
+- La licencia MIT declarada cubre los scripts del repositorio, no el modelo Claude ni el paquete npm de Anthropic, que se rigen por sus propios terminos. Ademas, la licencia no figura en los metadatos de Hugging Face, por lo que la situacion legal del artefacto publicado es ambigua.
 - Riesgo de alucinacion: recae sobre el modelo remoto y no es mitigado por este cliente; el autor no documenta ninguna capa de validacion, citacion o verificacion de las respuestas.
 - Idiomas: no se declara ninguno; no hay garantia documentada de calidad en castellano ni de comportamiento multilingue mas alla de lo que ofrezca el modelo remoto.
 - Hoja de ruta no implementada: modo offline, app nativa, sincronizacion multidispositivo y entorno tipo NetHunter figuran como ideas futuras, no como funcionalidad disponible.
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento del artefacto que permitan una comparacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/Raisecode
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/Raisecode
 - Repositorio en GitHub citado en el README: https://github.com/swordenkisk/Raisecode
 - Script de instalacion: https://raw.githubusercontent.com/swordenkisk/Raisecode/main/termux/bootstrap.sh
 - Perfil del autor en GitHub: https://github.com/swordenkisk

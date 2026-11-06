@@ -73,7 +73,7 @@ La información disponible no identifica modelos comparables ni ofrece datos cua
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Comparacion |
 |---|---|---|---|---|---|
-| `matCercola18/lrvla-checkpoints` | No disponible | No aplica | MIT (pesos del repositorio) | Pesos en HuggingFace, 15,2 GB | Referencia |
+| `matCercola18/lrvla-checkpoints` | No disponible | No aplica | MIT (pesos del repositorio) | Pesos en Hugging Face, 15,2 GB | Referencia |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No se ha identificado ningún modelo comparable en la información disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ La información disponible no identifica modelos comparables ni ofrece datos cua
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matCercola18/lrvla-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/matCercola18/lrvla-checkpoints
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a hilos de foro sin relación con el repositorio (temas de cuentas de Facebook), por lo que se descartan.
 - No se dispone de enlaces a paper, blog técnico, repositorio de código ni demo asociados a estos pesos.

@@ -100,7 +100,7 @@ Otras variantes de la familia Kev disponibles según la búsqueda web: Kev-0.8B,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/turintech/Kev-9B-Artemis-GGUF
+- Repositorio Hugging Face: https://huggingface.co/turintech/Kev-9B-Artemis-GGUF
 - Modelo base: https://huggingface.co/jaredpalmer/kev-9b
 - Builds públicos GGUF de Kev-9B: https://huggingface.co/ggml-org/Kev-9B-GGUF
 - Dataset de validación: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

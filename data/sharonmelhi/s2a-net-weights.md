@@ -81,7 +81,7 @@ No se dispone de resultados numéricos del modelo ni de alternativas evaluadas b
 
 | Enfoque | Tipo de entrada | Salida | Licencia | Disponibilidad | Comparación numérica |
 |---|---|---|---|---|---|
-| S2A-Net (este modelo) | Nube de puntos / malla de superficie corporal 3D | Coordenadas 3D de anatomía interna | MIT | Pesos joblib en HuggingFace, repo de 0,1 GB | no disponible |
+| S2A-Net (este modelo) | Nube de puntos / malla de superficie corporal 3D | Coordenadas 3D de anatomía interna | MIT | Pesos joblib en Hugging Face, repo de 0,1 GB | no disponible |
 | Modelos de forma estadística (SSM) | Malla de superficie con correspondencia establecida | Forma anatómica media + modos de variación | Varía según implementación | Bibliotecas académicas y comerciales | no disponible |
 | Backbones genéricos de nube de puntos (PointNet++, Point Transformer y similares) | Nube de puntos 3D | Representación o etiquetas por punto | Habitualmente permisivas o Apache 2.0 | Implementaciones públicas ampliamente disponibles | no disponible (no resuelven por sí solos la tarea superficie-anatomía) |
 | Métodos de imagen médica basados en TC/RM | Volumen de TC o RM | Segmentación o localización anatómica | Varía | Requiere adquisición de imagen | no disponible |
@@ -103,7 +103,7 @@ La diferencia funcional principal de S2A-Net frente a los métodos de imagen es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SharonMelhi/S2A-Net-Weights
+- Hugging Face: https://huggingface.co/SharonMelhi/S2A-Net-Weights
 - GitHub del proyecto: https://github.com/Sharon-codes/S2A-Net-IIT-Mandi
 - Aplicación web 3D interactiva: https://web-self-theta-51.vercel.app
 - Institución: Indian Institute of Technology Mandi (IIT Mandi), SCEE

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Zexnon es un repositorio publicado en HuggingFace por el usuario Mznznsns bajo la licencia OpenRAIL. En el momento de la consulta, la ficha asociada no contiene mas que la declaracion de licencia: no hay descripcion del modelo, ni arquitectura declarada, ni tamano de parametros, ni longitud de contexto, ni idiomas soportados. El repositorio no tiene etiqueta de pipeline asignada, cuenta con 0 descargas y 0 likes, y fue creado y actualizado el 25 de septiembre de 2026 sin cambios posteriores.
+Zexnon es un repositorio publicado en Hugging Face por el usuario Mznznsns bajo la licencia OpenRAIL. En el momento de la consulta, la ficha asociada no contiene mas que la declaracion de licencia: no hay descripcion del modelo, ni arquitectura declarada, ni tamano de parametros, ni longitud de contexto, ni idiomas soportados. El repositorio no tiene etiqueta de pipeline asignada, cuenta con 0 descargas y 0 likes, y fue creado y actualizado el 25 de septiembre de 2026 sin cambios posteriores.
 
-No es posible determinar que problema resuelve ni por que seria relevante: no existe informacion tecnica verificable en la model card, en los metadatos de HuggingFace ni en los resultados de busqueda web disponibles. Los resultados devueltos por la busqueda corresponden a herramientas de generacion y deteccion de imagenes (PromptShotAI, Vixxxen, PixOne, Luna Models) y no guardan relacion con este repositorio, por lo que no aportan ningun dato util.
+No es posible determinar que problema resuelve ni por que seria relevante: no existe informacion tecnica verificable en la model card, en los metadatos de Hugging Face ni en los resultados de busqueda web disponibles. Los resultados devueltos por la busqueda corresponden a herramientas de generacion y deteccion de imagenes (PromptShotAI, Vixxxen, PixOne, Luna Models) y no guardan relacion con este repositorio, por lo que no aportan ningun dato util.
 
 Esta ficha se limita, por tanto, a documentar el estado real del artefacto y a marcar explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion tecnica del modelo requiere informacion adicional del autor o acceso directo a los pesos y al codigo de inferencia.
 
@@ -21,7 +21,7 @@ Esta ficha se limita, por tanto, a documentar el estado real del artefacto y a m
 | Licencia | openrail |
 | Formato de pesos | no disponible |
 
-Datos adicionales verificables en HuggingFace: identificador `Mznznsns/Zexnon`, autor `Mznznsns`, region declarada `us`, etiqueta de pipeline ausente, 0 descargas, 0 likes, fecha de creacion 2026-09-25 y ultima actualizacion 2026-09-25.
+Datos adicionales verificables en Hugging Face: identificador `Mznznsns/Zexnon`, autor `Mznznsns`, region declarada `us`, etiqueta de pipeline ausente, 0 descargas, 0 likes, fecha de creacion 2026-09-25 y ultima actualizacion 2026-09-25.
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ Respecto al entrenamiento, se desconoce por completo el volumen de tokens utiliz
 - No hay confirmacion de soporte para agentes o razonamiento multi-paso.
 - No hay confirmacion de capacidades multilingues ni de la lista de idiomas soportados.
 - No hay confirmacion de capacidades multimodales (vision, audio, video) ni de modos especiales como thinking mode.
-- La ausencia de etiqueta de pipeline en HuggingFace impide siquiera clasificar el repositorio como text-generation, text-to-image, automatic-speech-recognition u otra categoria funcional.
+- La ausencia de etiqueta de pipeline en Hugging Face impide siquiera clasificar el repositorio como text-generation, text-to-image, automatic-speech-recognition u otra categoria funcional.
 
 ## Casos de uso
 
@@ -86,6 +86,6 @@ No disponible. No es posible establecer una comparativa porque se desconocen la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mznznsns/Zexnon
+- Repositorio en Hugging Face: https://huggingface.co/Mznznsns/Zexnon
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las paginas devueltas (PromptShotAI, Vixxxen, PixOne, Luna Models) pertenecen a herramientas de generacion y deteccion de imagenes y no guardan relacion con este repositorio.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OPSD-SDPO-v22-Qwen2.5-7B-checkpoints es un repositorio de respaldo de checkpoints de desarrollo publicado por el usuario zcheng256 en HuggingFace. No es un modelo entrenado y listo para uso general, sino un archivo de puntos de control intermedios (LoRA adapters y estados nativos de FSDP) asociados a un pipeline de investigacion denominado OPSD / SDPO v2.2, cuyo modelo base fijado es Qwen/Qwen2.5-7B-Instruct en la revision a09a35458c702b33eeacc393d103063234e8bc28. El propio autor advierte en la model card que este contenido "no es un resultado de benchmark ni un modelo H100 formal aceptado".
+OPSD-SDPO-v22-Qwen2.5-7B-checkpoints es un repositorio de respaldo de checkpoints de desarrollo publicado por el usuario zcheng256 en Hugging Face. No es un modelo entrenado y listo para uso general, sino un archivo de puntos de control intermedios (LoRA adapters y estados nativos de FSDP) asociados a un pipeline de investigacion denominado OPSD / SDPO v2.2, cuyo modelo base fijado es Qwen/Qwen2.5-7B-Instruct en la revision a09a35458c702b33eeacc393d103063234e8bc28. El propio autor advierte en la model card que este contenido "no es un resultado de benchmark ni un modelo H100 formal aceptado".
 
 El repositorio contiene cinco rutas de checkpoint planificadas (W2/step_2, W2/step_4, W3/step_24, W3/step_25 y W3/step_26), cada una con un adaptador LoRA portable y, cuando corresponde, un estado nativo de reanudacion (estudiante FSDP, teacher EMA, optimizador, RNG y scheduler). El tamano del repositorio es de 136,7 GB, lo que refleja que buena parte del espacio corresponde a estados de entrenamiento nativos y no solo a pesos de inferencia.
 
@@ -23,7 +23,7 @@ Su relevancia es fundamentalmente de investigacion: sirve para auditar la cronol
 
 ## Arquitectura y entrenamiento
 
-El contenido del repositorio se articula sobre LoRA (Low-Rank Adaptation) gestionado con la libreria PEFT y sobre el modelo base Qwen2.5-7B-Instruct. Los artefactos se dividen en dos tipos: `lora_adapter/`, que es el adaptador de estudiante portable, y `native_resume/actor/`, que agrupa el estado nativo de estudiante FSDP, teacher, optimizador, RNG y scheduler. Los shards nativos no son modelos autononos de HuggingFace: requieren la runtime fijada y una topologia de cuatro rangos para poder utilizarse.
+El contenido del repositorio se articula sobre LoRA (Low-Rank Adaptation) gestionado con la libreria PEFT y sobre el modelo base Qwen2.5-7B-Instruct. Los artefactos se dividen en dos tipos: `lora_adapter/`, que es el adaptador de estudiante portable, y `native_resume/actor/`, que agrupa el estado nativo de estudiante FSDP, teacher, optimizador, RNG y scheduler. Los shards nativos no son modelos autononos de Hugging Face: requieren la runtime fijada y una topologia de cuatro rangos para poder utilizarse.
 
 En cuanto al entrenamiento, la model card describe un esquema SDPO con teacher EMA (en la rama W2) y teacher de periodo 25 (en la rama W3), con commits encadenados que van refrescando el teacher. Existen dos padres aceptados: `61970f53df24bc474ede0d1b132212533575300586b6a7b4bed5da4cc32169b2` para W2 y `c3eb4de384bd720b8674a803e2f9d97a0e72c0522ec18911186b63e1cabfe3b3` para W3, ademas de una fuente nativa SDPO identificada con el commit `7c457fc1b1f636ae794eb0362ba37d4743b06fbc` mas una extension de teacher versionada y aislada. No se publican datos del dataset de entrenamiento, corpus de prompts o soluciones, credenciales ni logs de generacion. Las pruebas realizadas utilizaron entradas sinteticas de desarrollo y una ruta SDPO nativa de "top-100 seleccionado", y la aceptacion cubre unicamente el estado del checkpoint, la cronologia del teacher y la reproduccion de entradas de actor cacheadas; no establece fidelidad OPSD de vocabulario completo, ni continuidad del RNG de muestreo de rollout en procesos nuevos, ni eficacia de entrenamiento formal, ni ganancia de precision, ni un experimento H100 completado.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - VRAM para inferencia: no disponible. No se publican pesos consolidados de inferencia ni cuantizaciones.
 - GPU recomendadas: no disponible en la model card para inferencia. La referencia a "modelo H100 formal" sugiere que el entorno de desarrollo previsto era H100, pero el entrenamiento formal no se completo.
 - Compatibilidad con GPU de consumo: no disponible; al no existir pesos consolidados ni GGUF, no puede confirmarse.
-- Despliegue: los adaptadores LoRA son cargables mediante PEFT sobre Qwen2.5-7B-Instruct. Los shards nativos requieren la runtime fijada y una topologia de cuatro rangos y no son modelos autononos de HuggingFace. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Despliegue: los adaptadores LoRA son cargables mediante PEFT sobre Qwen2.5-7B-Instruct. Los shards nativos requieren la runtime fijada y una topologia de cuatro rangos y no son modelos autononos de Hugging Face. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 - Espacio en disco: el repositorio ocupa 136,7 GB, principalmente por los estados nativos de entrenamiento.
 
@@ -77,7 +77,7 @@ No disponible. El objeto comparado no es un modelo final sino un conjunto de che
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zcheng256/OPSD-SDPO-v22-Qwen2.5-7B-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/zcheng256/OPSD-SDPO-v22-Qwen2.5-7B-checkpoints
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Revision fijada del modelo base: a09a35458c702b33eeacc393d103063234e8bc28
 - Commit de la fuente nativa SDPO: 7c457fc1b1f636ae794eb0362ba37d4743b06fbc

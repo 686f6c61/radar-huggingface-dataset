@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HarutoWatan/poolformer-classification-prototype` es un repositorio experimental publicado en HuggingFace por el usuario HarutoWatan que contiene una implementación propia de una arquitectura PoolFormer orientada a clasificación. No es un modelo entrenado: el propio autor indica en la model card que `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint con resultados de benchmark. El recuento real de parámetros del archivo safetensors es de 49.600 (aproximadamente 0,05 millones), muy alejado de lo que sugiere la etiqueta `large` que aparece en la configuración.
+`HarutoWatan/poolformer-classification-prototype` es un repositorio experimental publicado en Hugging Face por el usuario HarutoWatan que contiene una implementación propia de una arquitectura PoolFormer orientada a clasificación. No es un modelo entrenado: el propio autor indica en la model card que `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint con resultados de benchmark. El recuento real de parámetros del archivo safetensors es de 49.600 (aproximadamente 0,05 millones), muy alejado de lo que sugiere la etiqueta `large` que aparece en la configuración.
 
 El interés del repositorio es, por tanto, documental y de infraestructura: sirve como andamiaje reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y como artefacto mínimo para validar pipelines de carga de pesos, serialización y profiling. No hay evidencias de entrenamiento, dataset, métricas ni evaluación de ningún tipo.
 
@@ -85,7 +85,7 @@ La comparación relevante es de orden de magnitud: este prototipo tiene tres ór
 - No existe auditoría de robustez, equidad ni transferencia de dominio, tal como reconoce el autor.
 - La etiqueta `large` de la configuración es engañosa: 49.600 parámetros no corresponden a ninguna variante `large` de PoolFormer.
 - No se documenta resolución de entrada, número de clases, mapeo de etiquetas ni preprocesado, lo que impide reproducir una evaluación incluso si se entrenara.
-- Implementación propia: los cargadores automáticos de HuggingFace (`AutoModel`, `pipeline`) requieren un adaptador explícito; el campo `pipeline` aparece como no disponible.
+- Implementación propia: los cargadores automáticos de Hugging Face (`AutoModel`, `pipeline`) requieren un adaptador explícito; el campo `pipeline` aparece como no disponible.
 - Sin dataset card ni procedencia de datos: no puede evaluarse el origen, las licencias de las imágenes ni posibles sesgos de entrenamiento.
 - La licencia Apache 2.0 cubre el código y los pesos de este repositorio, pero la model card advierte de que deben revisarse por separado los términos de las fuentes de datos externas que se usen con él.
 - Sin validación comunitaria: 0 descargas y 0 likes; no hay informes independientes de uso.
@@ -94,7 +94,7 @@ La comparación relevante es de orden de magnitud: este prototipo tiene tres ór
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HarutoWatan/poolformer-classification-prototype
+- Repositorio en Hugging Face: https://huggingface.co/HarutoWatan/poolformer-classification-prototype
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, al autor ni a la arquitectura concreta descrita; los resultados obtenidos no guardan relación con este repositorio.
 - Paper de referencia de la familia PoolFormer / MetaFormer: no disponible en la información proporcionada.
 - Repositorio de código original del PoolFormer: no disponible en la información proporcionada.

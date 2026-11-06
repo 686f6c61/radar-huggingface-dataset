@@ -87,5 +87,5 @@ No se dispone de datos verificados en la informacion suministrada para completar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/victorlim88/text-image-retrieval-reading
+- Hugging Face: https://huggingface.co/victorlim88/text-image-retrieval-reading
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este repositorio.

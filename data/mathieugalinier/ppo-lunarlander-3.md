@@ -37,9 +37,9 @@ No se indica el número de pasos de entrenamiento, la configuración de hiperpar
 - Investigación en aprendizaje por refuerzo: el modelo puede usarse como baseline para comparar variantes de PPO, otros algoritmos (DQN, SAC, etc.) o técnicas de exploración en entornos de control continuo.
 - Demostraciones educativas: sirve para ilustrar el funcionamiento de PPO en un entorno clásico de Gymnasium, permitiendo a estudiantes visualizar el comportamiento del agente.
 - Desarrollo de entornos de simulación: el agente puede integrarse en pipelines de simulación para probar estrategias de control o para generar datos sintéticos de trayectorias de aterrizaje.
-- Benchmarking de librerías de RL: al ser un modelo publicado en HuggingFace con stable-baselines3, puede utilizarse para verificar la correcta instalación y ejecución de la librería en diferentes entornos.
+- Benchmarking de librerías de RL: al ser un modelo publicado en Hugging Face con stable-baselines3, puede utilizarse para verificar la correcta instalación y ejecución de la librería en diferentes entornos.
 - Experimentación con reward shaping: aunque no se documenta, el modelo podría servir como punto de partida para modificar la función de recompensa y estudiar su impacto en el aprendizaje.
-- Comparación de políticas: dado que existen otros agentes PPO para LunarLander en HuggingFace, se puede comparar el rendimiento y la robustez entre distintas semillas o configuraciones.
+- Comparación de políticas: dado que existen otros agentes PPO para LunarLander en Hugging Face, se puede comparar el rendimiento y la robustez entre distintas semillas o configuraciones.
 
 ## Benchmarks y rendimiento
 
@@ -60,7 +60,7 @@ No se proporcionan comparaciones con otros modelos ni resultados adicionales. Es
 
 ## Comparativa con modelos similares
 
-Existen otros agentes PPO para LunarLander-v3 publicados en HuggingFace, como `JackForAI/ppo-LunarLander-v3` o `mawiie/PPO-LunarLander-v3`. No se dispone de sus métricas ni especificaciones en la información proporcionada, por lo que no es posible realizar una comparación cuantitativa. Se puede afirmar que todos comparten el mismo algoritmo y entorno, pero los resultados pueden variar según la semilla, el número de pasos y la configuración de hiperparámetros.
+Existen otros agentes PPO para LunarLander-v3 publicados en Hugging Face, como `JackForAI/ppo-LunarLander-v3` o `mawiie/PPO-LunarLander-v3`. No se dispone de sus métricas ni especificaciones en la información proporcionada, por lo que no es posible realizar una comparación cuantitativa. Se puede afirmar que todos comparten el mismo algoritmo y entorno, pero los resultados pueden variar según la semilla, el número de pasos y la configuración de hiperparámetros.
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ Existen otros agentes PPO para LunarLander-v3 publicados en HuggingFace, como `J
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MathieuGALINIER/ppo-LunarLander-3
+- Hugging Face: https://huggingface.co/MathieuGALINIER/ppo-LunarLander-3
 - Repositorio de referencia de stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Ejemplo de implementación de PPO para LunarLander (GitHub): https://github.com/PALR-DEV/moon-lander
 - Proyecto relacionado con reward shaping (GitHub): https://github.com/mhassanif/LunarLander-RL

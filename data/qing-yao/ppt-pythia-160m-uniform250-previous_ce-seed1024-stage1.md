@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ppt-pythia-160m-uniform250-previous_ce-seed1024-stage1` es un ajuste fino (fine-tuning) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario de HuggingFace `qing-yao`. Se trata de un modelo causal de generación de texto de la familia GPT-NeoX con 85.071.360 parámetros reportados en los ficheros safetensors del repositorio, licencia Apache 2.0 y un historial de entrenamiento de solo 250 pasos con tasa de aprendizaje 1e-3 y semilla 1024. El nombre del repositorio sugiere una variante de experimento sobre el esquema de entrenamiento (pasos "uniform250", selección "previous_ce", semilla 1024, etapa 1), aunque la model card no documenta el dataset ni el objetivo experimental.
+`ppt-pythia-160m-uniform250-previous_ce-seed1024-stage1` es un ajuste fino (fine-tuning) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario de Hugging Face `qing-yao`. Se trata de un modelo causal de generación de texto de la familia GPT-NeoX con 85.071.360 parámetros reportados en los ficheros safetensors del repositorio, licencia Apache 2.0 y un historial de entrenamiento de solo 250 pasos con tasa de aprendizaje 1e-3 y semilla 1024. El nombre del repositorio sugiere una variante de experimento sobre el esquema de entrenamiento (pasos "uniform250", selección "previous_ce", semilla 1024, etapa 1), aunque la model card no documenta el dataset ni el objetivo experimental.
 
-La relevancia de esta ficha es limitada pero concreta: no es un modelo orientado a producción ni a uso general, sino un artefacto de investigación con cero descargas y cero "likes" en el momento de su publicación, cuya model card generada automáticamente por el `Trainer` de HuggingFace deja sin responder las secciones de descripción, usos previstos, datos de entrenamiento y evaluación. Por tanto, cualquier evaluación de calidad debe partir de la medición propia, no de resultados declarados: el `model-index` está vacío.
+La relevancia de esta ficha es limitada pero concreta: no es un modelo orientado a producción ni a uso general, sino un artefacto de investigación con cero descargas y cero "likes" en el momento de su publicación, cuya model card generada automáticamente por el `Trainer` de Hugging Face deja sin responder las secciones de descripción, usos previstos, datos de entrenamiento y evaluación. Por tanto, cualquier evaluación de calidad debe partir de la medición propia, no de resultados declarados: el `model-index` está vacío.
 
 Contexto de uso: sirve como checkpoint de bajo coste computacional para reproducir experimentos de dinámica de entrenamiento, validar pipelines de inferencia en CPU, actuar como modelo borrador en decodificación especulativa sobre modelos Pythia mayores (mismo tokenizador) o como línea base en estudios de ajuste fino a pequeña escala. No debe emplearse como modelo de asistencia sin una evaluación previa exhaustiva.
 
@@ -101,6 +101,6 @@ Datos de la documentación pública de los modelos comparados; no verificados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed1024-stage1
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed1024-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - La búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo: los resultados obtenidos corresponden a foros de oposiciones, tutoriales de Excel y consultas sobre direcciones IP, sin relación con el modelo. No se dispone de paper, blog, repositorio ni demo adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`baba-dev/tinygpt-lora` es un repositorio alojado en HuggingFace por el usuario `baba-dev`, publicado el 4 de octubre de 2026 segun los metadatos de la plataforma y actualizado el mismo dia. El repositorio ocupa 0,5 GB y declara licencia MIT, con las etiquetas `license:mit` y `region:us`. No se ha documentado ni la tarea (pipeline), ni los idiomas, ni la arquitectura en la informacion disponible.
+`baba-dev/tinygpt-lora` es un repositorio alojado en Hugging Face por el usuario `baba-dev`, publicado el 4 de octubre de 2026 segun los metadatos de la plataforma y actualizado el mismo dia. El repositorio ocupa 0,5 GB y declara licencia MIT, con las etiquetas `license:mit` y `region:us`. No se ha documentado ni la tarea (pipeline), ni los idiomas, ni la arquitectura en la informacion disponible.
 
 La model card del autor esta practicamente vacia: unicamente contiene la directiva de licencia `license: mit`. No incluye descripcion del modelo, arquitectura, datos de entrenamiento, hiperparametros, resultados de evaluacion ni instrucciones de uso. El nombre del repositorio sugiere un adaptador LoRA sobre un modelo tipo GPT de tamano reducido, pero esto es una inferencia a partir del identificador y no esta confirmado por ninguna fuente.
 
@@ -34,7 +34,7 @@ No hay informacion verificable sobre las capacidades del modelo. La model card n
 - Razonamiento, matematicas o generacion de codigo: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas de HuggingFace esta vacio).
+- Capacidades multilingues: no disponible (el campo de idiomas de Hugging Face esta vacio).
 - Capacidades multimodales (vision, audio): no disponible.
 - Modo de razonamiento explicito ("thinking mode") o decodificacion especulativa: no disponible.
 
@@ -43,7 +43,7 @@ No hay informacion verificable sobre las capacidades del modelo. La model card n
 No existen capacidades documentadas, por lo que los escenarios siguientes son hipotesis condicionadas al identificador del repositorio (adaptador LoRA sobre un modelo GPT pequeno) y deben verificarse experimentalmente antes de adoptarlos. No deben interpretarse como usos validados.
 
 - Prototipado de ajuste fino con LoRA: el repositorio serviria como ejemplo de adaptador para experimentar con tecnicas de adaptacion eficiente de parametros (PEFT), comparando el comportamiento del modelo base con y sin adaptador.
-- Docencia y formacion en modelos de lenguaje: un modelo de este tamano permite ilustrar el ciclo completo de publicacion en HuggingFace (pesos, licencia, model card) en cursos y talleres sin requerir infraestructura GPU costosa.
+- Docencia y formacion en modelos de lenguaje: un modelo de este tamano permite ilustrar el ciclo completo de publicacion en Hugging Face (pesos, licencia, model card) en cursos y talleres sin requerir infraestructura GPU costosa.
 - Pruebas de integracion de infraestructura de inferencia: util como carga de trabajo minima para validar despliegues con `transformers`, `vLLM`, `TGI` o `llama.cpp`, comprobando la compatibilidad del formato de pesos antes de escalar a modelos mayores.
 - Generacion de texto en entornos con recursos limitados: si el modelo completo cabe en pocos cientos de MB, podria ejecutarse en CPU o en GPUs de gama de entrada para tareas de generacion de baja exigencia (autocompletado, resumen de frases cortas), sujeto a confirmacion de calidad.
 - Experimentos de adaptacion por dominio: un adaptador LoRA puede servir como plantilla para estudiar como se comporta el ajuste con pocos parametros en tareas especificas, midiendo la degradacion respecto al modelo base.
@@ -70,7 +70,7 @@ No disponible. No se ha confirmado el tamano, la arquitectura ni el modelo base 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| baba-dev/tinygpt-lora | no disponible | no disponible | MIT | HuggingFace (0 descargas, 0 likes) |
+| baba-dev/tinygpt-lora | no disponible | no disponible | MIT | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No se ha confirmado el tamano, la arquitectura ni el modelo base 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/baba-dev/tinygpt-lora
+- Hugging Face: https://huggingface.co/baba-dev/tinygpt-lora
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion adicional: no disponible

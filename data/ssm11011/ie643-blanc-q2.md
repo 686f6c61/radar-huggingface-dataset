@@ -19,7 +19,7 @@ Se trata, por tanto, de un artefacto de investigación reproducido mediante un r
 | Tipos de cuantizacion | No se distribuyen variantes cuantizadas; pesos en safetensors (precision no declarada, presumiblemente fp16/fp32) y cabezas LID en PyTorch `.pt` y TorchScript |
 | Idiomas soportados | Ingles (en), hindi (hi), bengali (bn), telugu (te) y code-switching hi-en, bn-en, te-en |
 | Licencia | No disponible (la model card remite a las licencias de Whisper y de los corpus de entrenamiento) |
-| Formato de pesos | safetensors (formato HuggingFace transformers) en `model/`; `lid_ctc.pt`, `heads/*.pt` y `ecapa/lid_en_hi_bn_te.ts` (TorchScript) |
+| Formato de pesos | safetensors (formato Hugging Face transformers) en `model/`; `lid_ctc.pt`, `heads/*.pt` y `ecapa/lid_en_hi_bn_te.ts` (TorchScript) |
 
 ## Arquitectura y entrenamiento
 
@@ -87,8 +87,8 @@ Detección de idioma (ensemble, test): macro-F1 0,930 y accuracy 0,947. No se ha
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IE643-blanc-q2 | Base de 809 M (whisper-large-v3-turbo) | Ventanas de 30 s | en, hi, bn, te + code-switching | No disponible | HuggingFace + GitHub |
-| openai/whisper-large-v3-turbo | 809 M | Ventanas de 30 s | Multilingue amplio | MIT (modelo base) | HuggingFace, ampliamente integrado |
+| IE643-blanc-q2 | Base de 809 M (whisper-large-v3-turbo) | Ventanas de 30 s | en, hi, bn, te + code-switching | No disponible | Hugging Face + GitHub |
+| openai/whisper-large-v3-turbo | 809 M | Ventanas de 30 s | Multilingue amplio | MIT (modelo base) | Hugging Face, ampliamente integrado |
 | IndicWhisper | No disponible en la informacion proporcionada | Ventanas tipo Whisper | Indic (varios) | No disponible | Referenciado en la model card como especialista con mejor WER indic |
 | IndicConformer | No disponible en la informacion proporcionada | No disponible | Indic (varios) | No disponible | Referenciado en la model card como especialista con mejor WER indic |
 
@@ -107,7 +107,7 @@ La model card reconoce explícitamente que, en indic monolingüe dentro de domin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssm11011/IE643-blanc-q2
+- Modelo en Hugging Face: https://huggingface.co/ssm11011/IE643-blanc-q2
 - Repositorio del proyecto (código, pipeline y resultados): https://github.com/SSM11011/IE643-blanc
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - No se han encontrado en la búsqueda web otros enlaces relevantes (papers, blogs o demos) sobre este modelo; los resultados devueltos no guardan relación con el contenido de la ficha.

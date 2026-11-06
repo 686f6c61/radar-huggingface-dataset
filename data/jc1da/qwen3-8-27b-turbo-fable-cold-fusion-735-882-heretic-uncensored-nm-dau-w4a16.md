@@ -73,16 +73,16 @@ La comparativa se basa en características declaradas; no hay benchmarks públic
 - La naturaleza "uncensored" implica que puede generar contenido ofensivo, ilegal o inapropiado; no es adecuado para aplicaciones comerciales sin moderación.
 - La cuantización W4A16 puede degradar ligeramente la calidad en tareas de razonamiento complejo o generación de código, comparada con la versión FP16.
 - No se han publicado benchmarks ni evaluaciones independientes; el rendimiento real es desconocido.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - La licencia Apache-2.0 permite uso comercial, pero el contenido generado sin censura puede acarrear responsabilidades legales.
 - El contexto de 262K tokens requiere hardware con suficiente VRAM; en GPUs de 16 GB el contexto práctico será menor.
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/JC1DA/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-W4A16)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/JC1DA/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-W4A16)
 - [Modelo base de DavidAU](https://huggingface.co/DavidAU_Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU)
 - [Repositorio de AutoRound](https://github.com/autoground/auto-round)
-- [Página de Qwen3.8 en HuggingFace](https://huggingface.co/Qwen)
+- [Página de Qwen3.8 en Hugging Face](https://huggingface.co/Qwen)
 - [Recetas vLLM para Qwen3.8-27B](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)
 - [Blog de AMD sobre soporte de Qwen3.8 27B](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)
 - [Ficha del modelo en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-davidau)

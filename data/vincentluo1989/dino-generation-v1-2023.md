@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino-generation-v1-2023 es un prototipo de investigación publicado por el usuario vincentluo1989 en HuggingFace. Según su propia model card, se trata de una implementación personalizada etiquetada como "Dino" orientada a tareas de generación, con un checkpoint de inicialización (no entrenado) cuyo único propósito declarado es servir de punto de partida experimental y para pruebas de humo (smoke tests).
+Dino-generation-v1-2023 es un prototipo de investigación publicado por el usuario vincentluo1989 en Hugging Face. Según su propia model card, se trata de una implementación personalizada etiquetada como "Dino" orientada a tareas de generación, con un checkpoint de inicialización (no entrenado) cuyo único propósito declarado es servir de punto de partida experimental y para pruebas de humo (smoke tests).
 
 El dato más relevante es su tamaño real: el archivo safetensors contiene 49.600 parámetros, una cifra extremadamente reducida que contrasta con la etiqueta de escala "huge" que aparece en la configuración arquitectónica. Esa etiqueta describe un preset de configuración, no el tamaño efectivo del modelo. Se trata, por tanto, de una pieza de código embrionaria, no de un modelo desplegable en producción.
 
@@ -90,5 +90,5 @@ No disponible. El repositorio no define una tarea concreta, no publica métricas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vincentluo1989/dino-generation-v1-2023
+- Modelo en Hugging Face: https://huggingface.co/vincentluo1989/dino-generation-v1-2023
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

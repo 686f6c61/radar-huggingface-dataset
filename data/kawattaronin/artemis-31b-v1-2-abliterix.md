@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comunes (MMLU, HumanEval, etc.) ni de model
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/kawattaronin/Artemis-31B-v1.2-abliterix
+- Hugging Face del modelo: https://huggingface.co/kawattaronin/Artemis-31B-v1.2-abliterix
 - Modelo original del que deriva: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
 - Modelo base declarado: https://huggingface.co/google/gemma-4-31B-it
 - Herramienta de ablacion Abliterix: https://github.com/wuwangzhang1216/abliterix

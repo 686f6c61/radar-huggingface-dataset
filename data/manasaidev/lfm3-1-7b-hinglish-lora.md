@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ManasAIDev/lfm3-1.7b-hinglish-lora | adaptador sobre 1,7 B | no disponible | no disponible | HuggingFace, 0 descargas | Adaptador LoRA SFT, sin documentación |
-| LiquidAI/LFM3-1.7B (base) | 1,7 B | no disponible en esta ficha | según Liquid AI | HuggingFace | Modelo base sin especialización hinglish |
-| Adaptadores LoRA comunitarios para modelos pequeños (p. ej. sobre Llama 3.2 1B o Qwen2.5 1.5B) | adaptador sobre 1-2 B | depende del base | habitualmente heredada del base | HuggingFace | Ecosistema comparable de fine-tuning ligero |
+| ManasAIDev/lfm3-1.7b-hinglish-lora | adaptador sobre 1,7 B | no disponible | no disponible | Hugging Face, 0 descargas | Adaptador LoRA SFT, sin documentación |
+| LiquidAI/LFM3-1.7B (base) | 1,7 B | no disponible en esta ficha | según Liquid AI | Hugging Face | Modelo base sin especialización hinglish |
+| Adaptadores LoRA comunitarios para modelos pequeños (p. ej. sobre Llama 3.2 1B o Qwen2.5 1.5B) | adaptador sobre 1-2 B | depende del base | habitualmente heredada del base | Hugging Face | Ecosistema comparable de fine-tuning ligero |
 
 La comparación cuantitativa con alternativas no es posible: no hay benchmarks publicados para este adaptador ni datos de rendimiento del modelo base en la información proporcionada.
 
@@ -83,7 +83,7 @@ La comparación cuantitativa con alternativas no es posible: no hay benchmarks p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ManasAIDev/lfm3-1.7b-hinglish-lora
+- Repositorio Hugging Face: https://huggingface.co/ManasAIDev/lfm3-1.7b-hinglish-lora
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - PEFT: https://github.com/huggingface/peft
 - TRL: https://github.com/huggingface/trl

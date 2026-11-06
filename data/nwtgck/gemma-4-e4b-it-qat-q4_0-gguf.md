@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: los pesos en Q4_0 de un modelo de ~7,46B parametros ocupan aproximadamente 4,2-4,5 GB; sumando codificadores de vision y audio y cache KV, un despliegue practico parte de unos 5-6 GB de memoria para contextos cortos, con crecimiento adicional al acercarse a los 128K tokens. Estas cifras son estimaciones calculadas a partir del numero de parametros y del esquema de cuantizacion, no datos publicados por el autor.
-- Tamano del repositorio: 6,1 GB, segun los metadatos de HuggingFace.
+- Tamano del repositorio: 6,1 GB, segun los metadatos de Hugging Face.
 - GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM puede ejecutar el modelo en Q4_0; una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4090 de 24 GB ofrecen margen sobrado para contexto largo. En el segmento profesional, una A100 o H100 no aportan ventaja en cuanto a capacidad de carga, solo en throughput por lotes.
 - Cabe en GPU de consumo: si explicitamente, en tarjetas de 8 GB en adelante con contexto moderado.
 - Ejecucion en CPU y movil: la familia Gemma 4 esta disenada para despliegue *on-device*; la variante E4B es una de las que cuenta con formato especifico wNa8o8 para hardware movil con capas de decodificacion de 2 bits y cache KV optimizada.
@@ -93,7 +93,7 @@ La comparativa se limita a variantes de la propia familia Gemma 4, ya que la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nwtgck/gemma-4-E4B-it-qat-q4_0-gguf
+- Repositorio Hugging Face: https://huggingface.co/nwtgck/gemma-4-E4B-it-qat-q4_0-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - Coleccion de checkpoints QAT Q4_0 de Gemma 4: https://huggingface.co/collections/google/gemma-4-qat-q4-0
 - Repositorio GitHub de Gemma: https://github.com/google-gemma

@@ -76,9 +76,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas gene
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jumafernandez/trace-deep-ar | 85,1 M (+ codificador base) | 64 turnos | Codificador contextual de turnos, atención causal | Apache 2.0 | HuggingFace, código propio |
-| sergioburdisso/dialog2flow-joint-bert-base | no disponible en la información | no disponible | Codificador de turno estático (base congelada de TRACE) | no disponible | HuggingFace |
-| all-mpnet-base-v2 (referencia genérica de sentence-transformers) | 109 M | 384 tokens | Codificador de frases bidireccional, uso general | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| jumafernandez/trace-deep-ar | 85,1 M (+ codificador base) | 64 turnos | Codificador contextual de turnos, atención causal | Apache 2.0 | Hugging Face, código propio |
+| sergioburdisso/dialog2flow-joint-bert-base | no disponible en la información | no disponible | Codificador de turno estático (base congelada de TRACE) | no disponible | Hugging Face |
+| all-mpnet-base-v2 (referencia genérica de sentence-transformers) | 109 M | 384 tokens | Codificador de frases bidireccional, uso general | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 La comparación directa con codificadores de frases genéricos no es concluyente: TRACE opera sobre embeddings de turno y su evaluación se limita a diálogo orientado a tareas en inglés, por lo que no hay resultados comparables en MTEB ni en tareas generativas. No se dispone de datos de benchmarks de los modelos alternativos en el mismo protocolo de evaluación.
 
@@ -97,7 +97,7 @@ La comparación directa con codificadores de frases genéricos no es concluyente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jumafernandez/trace-deep-ar
+- Modelo en Hugging Face: https://huggingface.co/jumafernandez/trace-deep-ar
 - Codificador base: https://huggingface.co/sergioburdisso/dialog2flow-joint-bert-base
 - Repositorio del agente dialog2agent: https://github.com/jumafernandez/dialog2agent
 - Cita: Fernández, J. M., Errecalde, M., & Burdisso, S. *TRACE: Learning the Update for Contextual Turn Representations in Task-Oriented Dialogue*. In preparation (sin enlace disponible).

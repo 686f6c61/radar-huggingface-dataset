@@ -76,8 +76,8 @@ El WER se midió sobre el conjunto completo LibriSpeech test-clean (2620 enuncia
 
 | Modelo | Parámetros | Contexto | WER LibriSpeech test-clean | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parakeet-rnnt-0.6b-gguf (este) | 616.736.257 | no disponible (offline) | 1,62 % (F32), 1,59 % (Q4_K_M) | CC-BY-4.0 | GGUF en HuggingFace (transcribe.cpp) |
-| nvidia/parakeet-rnnt-0.6b (base) | ~600 M | no disponible (offline) | 1,63 % (reportado por NVIDIA) | CC-BY-4.0 | Pesos originales en HuggingFace (NeMo) |
+| parakeet-rnnt-0.6b-gguf (este) | 616.736.257 | no disponible (offline) | 1,62 % (F32), 1,59 % (Q4_K_M) | CC-BY-4.0 | GGUF en Hugging Face (transcribe.cpp) |
+| nvidia/parakeet-rnnt-0.6b (base) | ~600 M | no disponible (offline) | 1,63 % (reportado por NVIDIA) | CC-BY-4.0 | Pesos originales en Hugging Face (NeMo) |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros modelos ASR comparables en la información proporcionada; la comparación se limita al modelo base y a la versión GGUF.
@@ -96,7 +96,7 @@ No se dispone de datos de otros modelos ASR comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace: tryambientai/parakeet-rnnt-0.6b-gguf](https://huggingface.co/tryambientai/parakeet-rnnt-0.6b-gguf)
+- [Hugging Face: tryambientai/parakeet-rnnt-0.6b-gguf](https://huggingface.co/tryambientai/parakeet-rnnt-0.6b-gguf)
 - [Modelo base: nvidia/parakeet-rnnt-0.6b](https://huggingface.co/nvidia/parakeet-rnnt-0.6b)
 - [Commit upstream c0c1f09](https://huggingface.co/nvidia/parakeet-rnnt-0.6b/commit/c0c1f09)
 - [transcribe.cpp (GitHub)](https://github.com/handy-computer/transcribe.cpp)

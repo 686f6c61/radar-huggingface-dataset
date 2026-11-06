@@ -23,7 +23,7 @@ Técnicamente es un transformer decoder-only denso de 1.543.714.304 parámetros 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen/Qwen2.5-1.5B-Instruct, un transformer decoder-only denso de 1,54 mil millones de parámetros, etiquetado como `qwen2` en los tags de HuggingFace. El proceso de ajuste no modifica la topología: se parte de los pesos del modelo instruido y se optimizan mediante RLVE con GRPO sobre una recompensa derivada de un entorno verificado (`Disinfection`) a dificultad 0. La model card no especifica hiperparámetros como tasa de aprendizaje, tamaño de lote, número de rollouts por prompt, coeficiente de KL ni composición del dataset de prompts, por lo que esos datos deben consultarse en el registro de Weights & Biases del run (`40eb51c9`, grupo de barrido `opd-teachers-20260927-191939`).
+La arquitectura es la del modelo base Qwen/Qwen2.5-1.5B-Instruct, un transformer decoder-only denso de 1,54 mil millones de parámetros, etiquetado como `qwen2` en los tags de Hugging Face. El proceso de ajuste no modifica la topología: se parte de los pesos del modelo instruido y se optimizan mediante RLVE con GRPO sobre una recompensa derivada de un entorno verificado (`Disinfection`) a dificultad 0. La model card no especifica hiperparámetros como tasa de aprendizaje, tamaño de lote, número de rollouts por prompt, coeficiente de KL ni composición del dataset de prompts, por lo que esos datos deben consultarse en el registro de Weights & Biases del run (`40eb51c9`, grupo de barrido `opd-teachers-20260927-191939`).
 
 El detalle técnico más relevante para su uso en producción es la validación del artefacto: los pesos se convirtieron desde el checkpoint nativo final a safetensors y se comprobaron contra los nombres y formas de tensor del modelo base, lo que garantiza la compatibilidad de carga con `transformers` sin necesidad de mapear claves. No se documentan innovaciones arquitectónicas propias (no hay decodificación especulativa, atención lineal ni mecanismos híbridos), ni fases de RLHF/DPO adicionales: el único post-entrenamiento declarado es el ciclo de GRPO de 150 actualizaciones. El propósito declarado es servir como profesor en un experimento de destilación on-policy sobre 32 entornos.
 
@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd-teacher-Q2.5I-Disinfection-step149 | 1,54 B (denso) | No confirmado en la ficha; base de 32 768 tokens | Entorno `Disinfection` (RLVE + GRPO) | Apache-2.0 | HuggingFace, safetensors |
-| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1,54 B (denso) | 32 768 tokens | Instrucción general, multilingüe | Apache-2.0 | HuggingFace, safetensors/GGUF/AWQ/GPTQ |
-| Qwen/Qwen2.5-1.5B (preentrenado) | 1,54 B (denso) | 32 768 tokens | Modelo base sin ajuste instruccional | Apache-2.0 | HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,7 B (denso) | 8192 tokens | Instrucción general, inglés | Apache-2.0 | HuggingFace, safetensors/GGUF |
-| Llama-3.2-1B-Instruct | 1,24 B (denso) | 128 000 tokens | Instrucción general, multilingüe | Licencia comunitaria de Llama 3.2 | HuggingFace, safetensors/GGUF |
+| opd-teacher-Q2.5I-Disinfection-step149 | 1,54 B (denso) | No confirmado en la ficha; base de 32 768 tokens | Entorno `Disinfection` (RLVE + GRPO) | Apache-2.0 | Hugging Face, safetensors |
+| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1,54 B (denso) | 32 768 tokens | Instrucción general, multilingüe | Apache-2.0 | Hugging Face, safetensors/GGUF/AWQ/GPTQ |
+| Qwen/Qwen2.5-1.5B (preentrenado) | 1,54 B (denso) | 32 768 tokens | Modelo base sin ajuste instruccional | Apache-2.0 | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,7 B (denso) | 8192 tokens | Instrucción general, inglés | Apache-2.0 | Hugging Face, safetensors/GGUF |
+| Llama-3.2-1B-Instruct | 1,24 B (denso) | 128 000 tokens | Instrucción general, multilingüe | Licencia comunitaria de Llama 3.2 | Hugging Face, safetensors/GGUF |
 
 Rendimiento comparado: no disponible. No existen evaluaciones publicadas de este checkpoint frente a las alternativas de la tabla, y la comparación solo puede establecerse por parámetros, contexto declarado y licencia.
 
@@ -86,7 +86,7 @@ Rendimiento comparado: no disponible. No existen evaluaciones publicadas de este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Disinfection-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Disinfection-step149
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Colección RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Perfil del autor: https://huggingface.co/davidheineman

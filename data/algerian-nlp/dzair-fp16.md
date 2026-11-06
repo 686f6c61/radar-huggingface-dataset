@@ -116,9 +116,9 @@ La informacion proporcionada solo incluye datos del propio modelo y de su versio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/algerian-nlp/DZAIR-FP16
+- Modelo en Hugging Face: https://huggingface.co/algerian-nlp/DZAIR-FP16
 - Modelo base (FP32): https://huggingface.co/algerian-nlp/DZAIR
-- Organizacion en HuggingFace: https://huggingface.co/algerian-nlp
+- Organizacion en Hugging Face: https://huggingface.co/algerian-nlp
 - Implementacion del modelo en el repositorio: `modeling_dzair.py`
 - Script de verificacion de fidelidad citado en la model card: `tools/quantize_hf.py`
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre su familia; los enlaces obtenidos correspondian a sitios generales de Microsoft y no guardan relacion con DZAIR. No se dispone de paper, blog tecnico, repositorio de codigo ni demo publicados en la informacion disponible.

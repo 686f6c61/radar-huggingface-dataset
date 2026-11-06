@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Relación | Parámetros | Contexto | Resultado declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `austindixson/microduck-sprint-improver-rev8` | Este modelo | no disponible | no aplica | 0,838 s de media (semillas 1-5, in-sample) | no disponible | HuggingFace, ONNX |
-| `jrubiosainz/microduck-game-sprinter-remix5` | Base (finetune) | no disponible | no aplica | no disponible en la información proporcionada | no disponible | HuggingFace |
-| `rumezhak/microduck-sprint-remix-leader2` | Fuente de la tabla de la semilla 2 | no disponible | no aplica | 0,83677 s en semilla 2 | no disponible | HuggingFace |
+| `austindixson/microduck-sprint-improver-rev8` | Este modelo | no disponible | no aplica | 0,838 s de media (semillas 1-5, in-sample) | no disponible | Hugging Face, ONNX |
+| `jrubiosainz/microduck-game-sprinter-remix5` | Base (finetune) | no disponible | no aplica | no disponible en la información proporcionada | no disponible | Hugging Face |
+| `rumezhak/microduck-sprint-remix-leader2` | Fuente de la tabla de la semilla 2 | no disponible | no aplica | 0,83677 s en semilla 2 | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para comparar con otras políticas del Arena en parámetros, licencia o rendimiento agregado. Las demás entradas mencionadas (`DenRakEiw`, `dashi`) aparecen solo como créditos de los remixes previos, sin cifras publicadas en esta información.
 
@@ -96,7 +96,7 @@ No se dispone de datos suficientes para comparar con otras políticas del Arena 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austindixson/microduck-sprint-improver-rev8
+- Modelo en Hugging Face: https://huggingface.co/austindixson/microduck-sprint-improver-rev8
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix5
 - Origen de la tabla de la semilla 2: https://huggingface.co/rumezhak/microduck-sprint-remix-leader2
 - Microduck Arena (Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena

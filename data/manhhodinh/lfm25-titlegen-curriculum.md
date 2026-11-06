@@ -73,5 +73,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ge
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ManhHoDinh/lfm25-titlegen-curriculum)
+- [Modelo en Hugging Face](https://huggingface.co/ManhHoDinh/lfm25-titlegen-curriculum)
 - [Licencia lfm1.0 (LiquidAI)](https://huggingface.co/LiquidAI/LFM2.5-230M/blob/main/LICENSE)

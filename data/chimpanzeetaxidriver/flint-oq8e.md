@@ -2,7 +2,7 @@
 
 ## Resumen
 
-flint-oQ8e es una versión cuantizada en 8 bits del modelo RecursiveSI/flint, publicada por el usuario chimpanzeetaxidriver en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un checkpoint cuantizado mediante la herramienta oQ (oMLX v0.7.3.dev1), que aplica cuantización de precisión mixta sobre los pesos originales en safetensors. El resultado es un modelo de generación de texto conversacional de aproximadamente 39,8 mil millones de parámetros, con un tamaño de checkpoint de 42,3 GB.
+flint-oQ8e es una versión cuantizada en 8 bits del modelo RecursiveSI/flint, publicada por el usuario chimpanzeetaxidriver en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un checkpoint cuantizado mediante la herramienta oQ (oMLX v0.7.3.dev1), que aplica cuantización de precisión mixta sobre los pesos originales en safetensors. El resultado es un modelo de generación de texto conversacional de aproximadamente 39,8 mil millones de parámetros, con un tamaño de checkpoint de 42,3 GB.
 
 La relevancia de esta ficha radica en la técnica de cuantización empleada: en lugar de aplicar un esquema uniforme a todo el modelo, oQ distribuye los pesos en distintos formatos (afín de 8 bits con grupos de 64 y de 128, y BF16 para una fracción mínima), logrando una media efectiva de 8,500 bits por peso. Esto permite reducir el consumo de memoria manteniendo una fidelidad cercana al modelo original, algo especialmente útil para despliegues en hardware Apple Silicon mediante la librería MLX.
 
@@ -78,7 +78,7 @@ Nota: la comparativa se ofrece a título orientativo con modelos de tamaño simi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chimpanzeetaxidriver/flint-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/chimpanzeetaxidriver/flint-oQ8e
 - Modelo base: no disponible (no se proporciona URL directa; puede localizarse en https://huggingface.co/RecursiveSI/flint)
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Paper, blog o demo: no disponibles

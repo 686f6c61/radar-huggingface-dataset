@@ -68,9 +68,9 @@ No se dispone de información suficiente para una comparativa directa con otros 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/TontonTremblay/doper2-handal-obj000038)
+- [Modelo en Hugging Face](https://huggingface.co/TontonTremblay/doper2-handal-obj000038)
 - [Dataset de resultados BOP](https://huggingface.co/datasets/TontonTremblay/doper2-handal-results)
 - [Dataset DOPER_BOP](https://huggingface.co/datasets/TontonTremblay/DOPER_BOP)
-- [Perfil de HuggingFace del autor](https://huggingface.co/TontonTremblay)
+- [Perfil de Hugging Face del autor](https://huggingface.co/TontonTremblay)
 - [GitHub del autor](https://github.com/TontonTremblay)
 - [Repositorio blender2rand (pipeline de datos sintéticos)](https://github.com/TontonTremblay/blender2rand)

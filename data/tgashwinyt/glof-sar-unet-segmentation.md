@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `TGAshwinYT/glof-sar-unet-segmentation` es un modelo de segmentación de imágenes publicado en HuggingFace por el usuario TGAshwinYT. El nombre sugiere que se trata de una arquitectura U-Net aplicada a imágenes de radar de apertura sintética (SAR) para la detección de lagos glaciares y posibles inundaciones por desbordamiento (GLOF, por sus siglas en inglés). Sin embargo, la model card no proporciona ninguna descripción técnica, arquitectónica ni de entrenamiento, por lo que toda la información disponible se limita a los metadatos del repositorio.
+El modelo `TGAshwinYT/glof-sar-unet-segmentation` es un modelo de segmentación de imágenes publicado en Hugging Face por el usuario TGAshwinYT. El nombre sugiere que se trata de una arquitectura U-Net aplicada a imágenes de radar de apertura sintética (SAR) para la detección de lagos glaciares y posibles inundaciones por desbordamiento (GLOF, por sus siglas en inglés). Sin embargo, la model card no proporciona ninguna descripción técnica, arquitectónica ni de entrenamiento, por lo que toda la información disponible se limita a los metadatos del repositorio.
 
 El repositorio tiene un tamaño de 0.5 GB, lo que indica un modelo de dimensiones moderadas, probablemente entrenado con PyTorch. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. A pesar de su potencial interés para aplicaciones de teledetección y monitoreo ambiental, la ausencia de documentación técnica y de resultados de evaluación limita seriamente su uso en entornos de producción sin un análisis previo exhaustivo.
 
@@ -66,4 +66,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - TGAshwinYT/glof-sar-unet-segmentation](https://huggingface.co/TGAshwinYT/glof-sar-unet-segmentation)
+- [Hugging Face - TGAshwinYT/glof-sar-unet-segmentation](https://huggingface.co/TGAshwinYT/glof-sar-unet-segmentation)

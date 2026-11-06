@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zy1 es un ajuste fino (fine-tune) del modelo google/gemma-3-4b-it, publicado en HuggingFace por el usuario mohitsaijith bajo licencia Apache 2.0. Se trata de un modelo derivado de la familia Gemma 3 de Google, concretamente de la variante de 4 mil millones de parámetros en su versión instruction-tuned. El repositorio no incluye model card descriptiva más allá de los metadatos de licencia y modelo base, por lo que la mayor parte de las especificaciones tecnicas deben inferirse del modelo original.
+Zy1 es un ajuste fino (fine-tune) del modelo google/gemma-3-4b-it, publicado en Hugging Face por el usuario mohitsaijith bajo licencia Apache 2.0. Se trata de un modelo derivado de la familia Gemma 3 de Google, concretamente de la variante de 4 mil millones de parámetros en su versión instruction-tuned. El repositorio no incluye model card descriptiva más allá de los metadatos de licencia y modelo base, por lo que la mayor parte de las especificaciones tecnicas deben inferirse del modelo original.
 
 La relevancia de este modelo es limitada en el momento de su publicacion: cuenta con cero descargas y cero likes, y no se ha publicado documentacion sobre el dataset de ajuste, el procedimiento de entrenamiento ni los objetivos del fine-tune. Es, por tanto, un experimento personal sin validacion publica. Para evaluar su utilidad real seria necesario compararlo contra el modelo base original.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, la model card no documenta el dataset utilizado, el n
 - Experimentacion academica con fine-tuning: sirve como ejemplo de ajuste sobre Gemma 3 para estudiar tecnicas de personalizacion, dado que su licencia Apache 2.0 facilita la inspeccion y reproduccion.
 - Generacion de texto en local con recursos limitados: un modelo de 4B puede ejecutarse en hardware de consumo, lo que permite probar flujos de generacion sin infraestructura en la nube.
 - Base para comparativas de fine-tunes: util como punto de partida para medir el impacto de ajustes sobre el modelo original en tareas concretas.
-- Educacion y demostraciones: puede usarse en talleres sobre modelos de lenguaje para ilustrar el ciclo de publicacion en HuggingFace y las limitaciones de los fine-tunes sin documentacion.
+- Educacion y demostraciones: puede usarse en talleres sobre modelos de lenguaje para ilustrar el ciclo de publicacion en Hugging Face y las limitaciones de los fine-tunes sin documentacion.
 - Evaluacion de riesgos de modelos no documentados: caso de estudio sobre la necesidad de model cards completas antes de adoptar un modelo en produccion.
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zy1 (este modelo) | ~4B | no disponible | Apache 2.0 | HuggingFace, sin descargas |
+| Zy1 (este modelo) | ~4B | no disponible | Apache 2.0 | Hugging Face, sin descargas |
 | google/gemma-3-4b-it | ~4B | no disponible en esta ficha | Gemma license (no Apache 2.0 en el original) | Ampliamente disponible |
 | Fine-tunes comunitarios de Gemma 3 4B | ~4B | variable | variable | Variable |
 
@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento para comparar. La comparativa se limita a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohitsaijith/Zy1
+- Hugging Face: https://huggingface.co/mohitsaijith/Zy1
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it

@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Chat-Aligned-Base-2026.10.22
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Chat-Aligned-Base-2026.10.22
 - Modelo base: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175
 - Repositorio Marin: https://github.com/marin-community/marin
 - Build de vLLM de Marin: https://github.com/marin-community/vllm/releases/tag/marin-vllm-gpu-20260924-01911be34fac

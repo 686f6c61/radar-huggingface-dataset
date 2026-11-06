@@ -25,7 +25,7 @@ Su relevancia actual radica en el equilibrio entre calidad y coste: los modelos 
 
 Los modelos son redes convolucionales de tipo encoder-decoder. Las variantes `unet` y `residual_unet` incorporan conexiones residuales (skip connections) entre encoder y decoder, mientras que `plain_encoder_decoder` carece de ellas manteniendo la misma profundidad. La ablacion de anchura reduce `residual_unet` de 64 a 8 canales base (bc), lo que rebaja el numero de parametros de 7,70 M a 0,12 M. Las variantes `residual_unet` aprenden a predecir el ruido en lugar de la imagen limpia.
 
-El entrenamiento se realizo en 2 GPU T4 durante 10 epocas, con datos, degradaciones y semilla identicos en todas las ejecuciones. El conjunto de datos son 50.000 recortes renderizados a partir de PDF escaneados, publicados por el mismo autor en Kaggle como `jeremiasrodriguez/document-crops-50k`; ese dataset no se redistribuye en HuggingFace y se rige por sus propios terminos. No se documenta en la informacion disponible el uso de RLHF, DPO ni tecnicas de alineacion, algo esperable en un modelo de restauracion de imagen.
+El entrenamiento se realizo en 2 GPU T4 durante 10 epocas, con datos, degradaciones y semilla identicos en todas las ejecuciones. El conjunto de datos son 50.000 recortes renderizados a partir de PDF escaneados, publicados por el mismo autor en Kaggle como `jeremiasrodriguez/document-crops-50k`; ese dataset no se redistribuye en Hugging Face y se rige por sus propios terminos. No se documenta en la informacion disponible el uso de RLHF, DPO ni tecnicas de alineacion, algo esperable en un modelo de restauracion de imagen.
 
 La innovacion tecnica que reporta el autor es mas bien analitica: las conexiones residuales aportan mucho mas que la anchura (la variante sin skips pierde unos 2 dB frente a `unet`/`residual_unet`, mientras que reducir `residual_unet` a 32 canales, un 25 % de los parametros, solo cuesta 0,2 dB). Ademas, el aprendizaje residual converge antes en las primeras fases pero no ofrece ventaja de calidad final frente a la prediccion directa, y la cuantizacion a int8 cuesta como maximo 0,14 dB con una reduccion de tamano de 4x.
 
@@ -97,6 +97,6 @@ La informacion disponible no incluye comparaciones con modelos externos de denoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jere1882/document-image-denoising
+- Modelo en Hugging Face: https://huggingface.co/jere1882/document-image-denoising
 - Codigo, notebooks de entrenamiento y analisis completo: https://github.com/jere1882/DocDenoising
 - Dataset de entrenamiento (Kaggle): https://www.kaggle.com/datasets/jeremiasrodriguez/document-crops-50k

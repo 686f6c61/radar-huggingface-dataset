@@ -31,7 +31,7 @@ El dataset de entrenamiento consta de 141.981 imágenes distribuidas en 23.440 c
 - Extracción de características de imagen (pipeline `image-feature-extraction`) con salida de embeddings normalizados, de modo que la similitud coseno equivale al producto escalar.
 - Generalización a clases no vistas: se evaluó con 2.604 clases retenidas por clase (todas las vistas eliminadas), obteniendo un hit@1 de 0.9939 tras el fine-tuning, prácticamente idéntico al de las clases vistas (0.9954).
 - No soporta tool calling, generación de texto ni razonamiento multi-paso; es exclusivamente un extractor de características visuales.
-- Compatible con la API de HuggingFace Transformers, cargando el estado directamente en `ChineseCLIPModel`.
+- Compatible con la API de Hugging Face Transformers, cargando el estado directamente en `ChineseCLIPModel`.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ Prueba de no memorización: se retuvieron 2.604 clases Unicode por clase, elimin
 - VRAM durante el entrenamiento: 3.7 GB, según el autor, con bf16 y gradient checkpointing.
 - VRAM para inferencia: no disponible en la información proporcionada; al ser una torre de imagen ViT-B/16 en fp16, es previsible que quepa en GPUs de consumo, pero no hay cifras oficiales.
 - GPU recomendadas: no especificadas por el autor.
-- Despliegue: compatible con HuggingFace Transformers mediante `ChineseCLIPModel` y `AutoImageProcessor`. El repositorio está marcado como `endpoints_compatible` en HuggingFace, lo que permite su uso en Inference Endpoints.
+- Despliegue: compatible con Hugging Face Transformers mediante `ChineseCLIPModel` y `AutoImageProcessor`. El repositorio está marcado como `endpoints_compatible` en Hugging Face, lo que permite su uso en Inference Endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,9 +76,9 @@ La comparativa se centra en la tarea de recuperación de glifos Sino-Nôm, ya qu
 
 | Modelo | Arquitectura | hit@1 | MRR | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| `chinese-clip-ft-sinonom` | ViT-B/16 fine-tuned | 0.5932 | 0.6691 | Apache-2.0 | HuggingFace |
-| `chinese-clip` zero-shot base | ViT-B/16 | 0.0169 | 0.0327 | Apache-2.0 | HuggingFace |
-| `chinese-clip-large` zero-shot | ViT-Large (no especificado) | 0.0847 | 0.1143 | Apache-2.0 | HuggingFace |
+| `chinese-clip-ft-sinonom` | ViT-B/16 fine-tuned | 0.5932 | 0.6691 | Apache-2.0 | Hugging Face |
+| `chinese-clip` zero-shot base | ViT-B/16 | 0.0169 | 0.0327 | Apache-2.0 | Hugging Face |
+| `chinese-clip-large` zero-shot | ViT-Large (no especificado) | 0.0847 | 0.1143 | Apache-2.0 | Hugging Face |
 
 Los parámetros totales de cada variante no se indican en la información disponible. La principal ventaja del modelo ajustado es el salto en hit@1, que supera ampliamente a las versiones zero-shot, aunque su rendimiento es específico para la distribución manuscrito-impreso evaluada.
 
@@ -96,6 +96,6 @@ Los parámetros totales de cada variante no se indican en la información dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vohoangkh4ng/chinese-clip-ft-sinonom
+- Modelo en Hugging Face: https://huggingface.co/vohoangkh4ng/chinese-clip-ft-sinonom
 - Modelo base: https://huggingface.co/OFA-Sys/chinese-clip-vit-base-patch16
 - Repositorio de Chinese-CLIP: https://github.com/OFA-Sys/Chinese-CLIP

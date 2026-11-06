@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stream LTX es un modelo de generación conjunta de audio y vídeo publicado por el usuario longxiaooo en HuggingFace bajo el identificador longxiaooo/StreamLTX. Según la model card, se trata de una variante "block-causal" de LTX-2.3 orientada a streaming en tiempo real: el modelo emite un segundo de imagen y sonido cada vez y, al no mirar hacia adelante (sin lookahead), el contenido posterior puede modificarse mientras la emisión sigue en marcha. La pipeline declarada en HuggingFace es text-to-video.
+Stream LTX es un modelo de generación conjunta de audio y vídeo publicado por el usuario longxiaooo en Hugging Face bajo el identificador longxiaooo/StreamLTX. Según la model card, se trata de una variante "block-causal" de LTX-2.3 orientada a streaming en tiempo real: el modelo emite un segundo de imagen y sonido cada vez y, al no mirar hacia adelante (sin lookahead), el contenido posterior puede modificarse mientras la emisión sigue en marcha. La pipeline declarada en Hugging Face es text-to-video.
 
 El interés técnico del planteamiento está en la causalidad por bloques aplicada a un modelo de difusión de vídeo con audio sincronizado, algo poco habitual: la mayoría de modelos abiertos de vídeo generan clips cerrados y no permiten intervenir sobre la generación en curso. Ese diseño habilita escenarios interactivos (dirección en vivo, edición durante la emisión, avatares conversacionales) que un generador de clips no cubre.
 
@@ -85,7 +85,7 @@ No disponible. La información proporcionada no incluye datos de parámetros, co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longxiaooo/StreamLTX
+- Hugging Face: https://huggingface.co/longxiaooo/StreamLTX
 - Demo: https://longxiao2001.github.io/StreamLTX/
 - Código: https://github.com/LongXiao2001/StreamLTX
 - Paper: no disponible

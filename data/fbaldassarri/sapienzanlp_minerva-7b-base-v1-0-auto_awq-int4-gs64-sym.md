@@ -76,8 +76,8 @@ No hay datos de benchmarks que permitan una comparación de rendimiento. La comp
 
 | Modelo | Parámetros | Contexto | Formato / precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_awq-int4-gs64-sym` | 1.414.795.264 según safetensors (nominal ~7B, discrepancia sin resolver) | No disponible | safetensors, INT4 W4G64 AWQ | Apache 2.0 | HuggingFace, 0 descargas |
-| `sapienzanlp/Minerva-7B-base-v1.0` (modelo base) | ~7B (no confirmado en la información proporcionada) | No disponible | safetensors, bf16/fp16 | Apache 2.0 | HuggingFace |
+| `fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_awq-int4-gs64-sym` | 1.414.795.264 según safetensors (nominal ~7B, discrepancia sin resolver) | No disponible | safetensors, INT4 W4G64 AWQ | Apache 2.0 | Hugging Face, 0 descargas |
+| `sapienzanlp/Minerva-7B-base-v1.0` (modelo base) | ~7B (no confirmado en la información proporcionada) | No disponible | safetensors, bf16/fp16 | Apache 2.0 | Hugging Face |
 | Otros LLM italianos abiertos de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables alternativos (parámetros, contexto, rendimiento y licencia) en el material proporcionado, ni de resultados que permitan establecer una comparación cuantitativa con la versión sin cuantizar.
@@ -101,7 +101,7 @@ No se dispone de información sobre modelos comparables alternativos (parámetro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_awq-int4-gs64-sym
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_awq-int4-gs64-sym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0
 - Framework de cuantización Intel AutoRound: https://github.com/intel/auto-round
 - Pipeline de replicación citado por el autor: https://git.epicdynamic.com/auto-round-pipeline

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fadhiiil/merak-Anak-Baik_lr1e5_0928 es un modelo publicado en HuggingFace por el usuario Fadhiiil. El nombre sugiere un ajuste fino (fine-tuning) sobre un modelo base denominado "merak", con una tasa de aprendizaje de 1e-5 y una marca temporal asociada al 28 de septiembre. La model card es la plantilla genérica autogenerada por HuggingFace y no contiene ningun dato sustantivo: ni descripcion, ni autores, ni tipo de modelo, ni idiomas, ni licencia, ni datos de entrenamiento.
+Fadhiiil/merak-Anak-Baik_lr1e5_0928 es un modelo publicado en Hugging Face por el usuario Fadhiiil. El nombre sugiere un ajuste fino (fine-tuning) sobre un modelo base denominado "merak", con una tasa de aprendizaje de 1e-5 y una marca temporal asociada al 28 de septiembre. La model card es la plantilla genérica autogenerada por Hugging Face y no contiene ningun dato sustantivo: ni descripcion, ni autores, ni tipo de modelo, ni idiomas, ni licencia, ni datos de entrenamiento.
 
 No se dispone de informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto ni el proceso de entrenamiento. El unico dato objetivo disponible es el tamano del repositorio (0,1 GB), compatible con un modelo de parametros reducidos, pero se trata de una inferencia y no de un dato confirmado por el autor.
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fadhiiil/merak-Anak-Baik_lr1e5_0928
+- Modelo en Hugging Face: https://huggingface.co/Fadhiiil/merak-Anak-Baik_lr1e5_0928
 - Referencia citada en el tag de la model card (Lacoste et al., 2019, calculador de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML citado en la plantilla: https://mlco2.github.io/impact
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-abliterated es un ajuste del modelo Qwen/Qwen3.5-9B publicado por el usuario arammoostafaye en HuggingFace. Se trata de una variante "abliterated": se han eliminado deliberadamente los comportamientos de rechazo (refusal) mediante una técnica de proyección ortogonal sobre los pesos, seguida de un ajuste fino con QLoRA para cubrir los casos residuales. El objetivo declarado es obtener respuestas sin filtros de seguridad en todas las categorías de prompt probadas por el autor.
+Qwen3.5-9B-abliterated es un ajuste del modelo Qwen/Qwen3.5-9B publicado por el usuario arammoostafaye en Hugging Face. Se trata de una variante "abliterated": se han eliminado deliberadamente los comportamientos de rechazo (refusal) mediante una técnica de proyección ortogonal sobre los pesos, seguida de un ajuste fino con QLoRA para cubrir los casos residuales. El objetivo declarado es obtener respuestas sin filtros de seguridad en todas las categorías de prompt probadas por el autor.
 
 El modelo conserva la arquitectura del base: un transformer decoder-only con patrón híbrido repetido de 3 bloques DeltaNet por cada bloque de atención estándar, 32 capas y 8.953.803.264 parámetros totales (unos 8,95B). El repositorio ocupa 17,9 GB y se distribuye en safetensors para la librería transformers, con licencia declarada apache-2.0 y soporte de idioma declarado únicamente en inglés.
 
@@ -93,9 +93,9 @@ Nota: existe una inconsistencia en la propia model card, que en una sección afi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-abliterated | 8,95B | no disponible | 17-18/18 en la prueba de rechazo del autor; sin benchmarks estándar | apache-2.0 (declarada) | HuggingFace, safetensors |
-| Qwen/Qwen3.5-9B (base) | 8,95B | no disponible | 0/18 en la prueba de rechazo del autor; sin benchmarks estándar publicados en esta ficha | no disponible en la información proporcionada | HuggingFace |
-| Dolphin-Mistral 7B | 7B | no disponible | 17/18 en la misma prueba del autor | no disponible en la información proporcionada | HuggingFace |
+| Qwen3.5-9B-abliterated | 8,95B | no disponible | 17-18/18 en la prueba de rechazo del autor; sin benchmarks estándar | apache-2.0 (declarada) | Hugging Face, safetensors |
+| Qwen/Qwen3.5-9B (base) | 8,95B | no disponible | 0/18 en la prueba de rechazo del autor; sin benchmarks estándar publicados en esta ficha | no disponible en la información proporcionada | Hugging Face |
+| Dolphin-Mistral 7B | 7B | no disponible | 17/18 en la misma prueba del autor | no disponible en la información proporcionada | Hugging Face |
 
 La única ventaja que el autor atribuye a su modelo frente a Dolphin-Mistral 7B es el mayor número de parámetros (9B frente a 7B), que según él se traduce en mejor razonamiento, código y conocimiento; no se aportan mediciones que respalden esa afirmación. No se dispone de comparaciones con otras variantes abliterated de la familia Qwen ni con modelos alineados de tamaño similar en la información proporcionada.
 
@@ -116,7 +116,7 @@ La única ventaja que el autor atribuye a su modelo frente a Dolphin-Mistral 7B 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arammoostafaye/Qwen3.5-9B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/arammoostafaye/Qwen3.5-9B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper del método de abliteración (Arditi et al., 2024): https://arxiv.org/abs/2406.11717
 - Modelo comparado en la model card (Dolphin-Mistral 7B): https://huggingface.co/cognitivecomputations/dolphin-2.6-mistral-7b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rennervate-Qwen3-8B-Refusal-Suppressed-i1-GGUF es una cuantizacion en formato GGUF del modelo Rennervate-Qwen3-8B-Refusal-Suppressed, publicado por el usuario mradermacher en HuggingFace. Se trata de una derivacion del modelo Qwen3-8B de Alibaba, afinada por BanZhuan-AI con el objetivo declarado de suprimir el comportamiento de rechazo (refusal) del modelo base, es decir, reducir la probabilidad de que el modelo se niegue a responder a determinadas peticiones. El repositorio contiene unicamente pesos cuantizados en formato GGUF, generados con el metodo imatrix de llama.cpp, no los pesos originales en safetensors.
+Rennervate-Qwen3-8B-Refusal-Suppressed-i1-GGUF es una cuantizacion en formato GGUF del modelo Rennervate-Qwen3-8B-Refusal-Suppressed, publicado por el usuario mradermacher en Hugging Face. Se trata de una derivacion del modelo Qwen3-8B de Alibaba, afinada por BanZhuan-AI con el objetivo declarado de suprimir el comportamiento de rechazo (refusal) del modelo base, es decir, reducir la probabilidad de que el modelo se niegue a responder a determinadas peticiones. El repositorio contiene unicamente pesos cuantizados en formato GGUF, generados con el metodo imatrix de llama.cpp, no los pesos originales en safetensors.
 
 El modelo cuenta con 8.190.735.360 parametros totales, lo que lo situa en la categoria de modelos densos de aproximadamente 8 mil millones de parametros. El repositorio ocupa 19,5 GB e incluye un amplio conjunto de cuantizaciones que abarcan desde IQ1_S hasta Q6_K, pasando por Q2_K, Q3_K, Q4_K, Q5_K, IQ2, IQ3, IQ4 y Q4_0/Q4_1. La fecha de creacion indicada es el 5 de noviembre de 2026 y la ultima actualizacion el mismo dia, apenas media hora despues.
 
@@ -82,6 +82,6 @@ La comparacion con Qwen3-8B es la mas directa, ya que comparten arquitectura y p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Rennervate-Qwen3-8B-Refusal-Suppressed-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Rennervate-Qwen3-8B-Refusal-Suppressed-i1-GGUF
 - Modelo original del fine-tuning: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-8B-Refusal-Suppressed
 - Modelo base (Qwen3-8B): https://huggingface.co/Qwen/Qwen3-8B

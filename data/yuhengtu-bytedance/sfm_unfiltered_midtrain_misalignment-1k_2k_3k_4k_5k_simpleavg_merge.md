@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada: el modelo en bfloat16 ocupa aproximadamente 13,7 GB (6,86B parámetros × 2 bytes). Para inferencia, se necesitan al menos 16 GB de VRAM si se carga en precisión completa, o menos si se cuantiza (por ejemplo, 4 bits ocuparía ~3,4 GB).
 - GPU recomendadas: una GPU con 16 GB (como RTX 4080, RTX 4090, A10G) o más. Para cuantización 4 bits, una RTX 3060 de 12 GB podría ser suficiente.
-- Opciones de despliegue: al ser un modelo de transformers, puede usarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers, puede usarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o directamente con la librería transformers de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -63,7 +63,7 @@ No se dispone de información sobre modelos comparables específicos. Sin embarg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-1k_2k_3k_4k_5k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-1k_2k_3k_4k_5k_simpleavg_merge
 - Modelos relacionados del mismo autor:
   - https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-1k_2k_3k_merge
   - https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-3k_4k_5k_merge

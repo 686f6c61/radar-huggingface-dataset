@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuq-zhou/2026-05-o-b0p3-a0p3-gc0p5-exp-td2p0-tw5p0-q2-m-7` es un checkpoint de investigación publicado en HuggingFace por el usuario yuq-zhou. Se trata de un artefacto de respaldo en formato estándar de Transformers, con 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) y pesos en safetensors. Los tags indican que la arquitectura base es Qwen2, aunque no se proporciona documentación adicional en la model card.
+El modelo `yuq-zhou/2026-05-o-b0p3-a0p3-gc0p5-exp-td2p0-tw5p0-q2-m-7` es un checkpoint de investigación publicado en Hugging Face por el usuario yuq-zhou. Se trata de un artefacto de respaldo en formato estándar de Transformers, con 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) y pesos en safetensors. Los tags indican que la arquitectura base es Qwen2, aunque no se proporciona documentación adicional en la model card.
 
 El checkpoint está pensado para cargarse con `AutoModelForCausalLM.from_pretrained` y su pipeline es de generación de texto. No se especifica licencia, idiomas, ni detalles de entrenamiento. Su nombre críptico sugiere que forma parte de una serie de experimentos con hiperparámetros concretos (posiblemente relacionados con top-p, top-k, temperatura, etc.), pero no hay información pública que lo confirme.
 
@@ -71,10 +71,10 @@ No se dispone de información de rendimiento de este checkpoint, por lo que la c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yuq-zhou/2026-05-o-b0p3-a0p3-gc0p5-exp-td2p0-tw5p0-q2-m-7 | 7,6B | no disponible | no disponible | HuggingFace |
-| Qwen2-7B (oficial) | 7,6B | 128K (config) | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B | 8,0B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-v0.3 | 7,3B | 32K | Apache 2.0 | HuggingFace |
+| yuq-zhou/2026-05-o-b0p3-a0p3-gc0p5-exp-td2p0-tw5p0-q2-m-7 | 7,6B | no disponible | no disponible | Hugging Face |
+| Qwen2-7B (oficial) | 7,6B | 128K (config) | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B | 8,0B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-v0.3 | 7,3B | 32K | Apache 2.0 | Hugging Face |
 
 La comparativa real de rendimiento no es posible sin datos de benchmarks. La principal diferencia con los modelos oficiales es la ausencia de documentación y licencia clara, lo que limita su uso en entornos comerciales o académicos formales.
 
@@ -90,4 +90,4 @@ La comparativa real de rendimiento no es posible sin datos de benchmarks. La pri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p3-gc0p5-exp-td2p0-tw5p0-q2-m-7
+- Repositorio en Hugging Face: https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p3-gc0p5-exp-td2p0-tw5p0-q2-m-7

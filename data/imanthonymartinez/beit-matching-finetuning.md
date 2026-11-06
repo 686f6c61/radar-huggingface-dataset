@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| imanthonymartinez/beit-matching-finetuning | 49.600 (segun safetensors) | no disponible | Checkpoint de inicializacion, no entrenado | BSD-3-Clause | HuggingFace |
-| Avasilyev3243/beit-matching-tutorial | no disponible (variante "tiny" segun su model card) | no disponible | Checkpoint de inicializacion, no entrenado | BSD-3-Clause | HuggingFace |
-| tgjackson74/beit-matching76 | no disponible (repo de 76 kB) | no disponible | Incluye `finetune.py`, config y checkpoint | BSD-3-Clause | HuggingFace |
+| imanthonymartinez/beit-matching-finetuning | 49.600 (segun safetensors) | no disponible | Checkpoint de inicializacion, no entrenado | BSD-3-Clause | Hugging Face |
+| Avasilyev3243/beit-matching-tutorial | no disponible (variante "tiny" segun su model card) | no disponible | Checkpoint de inicializacion, no entrenado | BSD-3-Clause | Hugging Face |
+| tgjackson74/beit-matching76 | no disponible (repo de 76 kB) | no disponible | Incluye `finetune.py`, config y checkpoint | BSD-3-Clause | Hugging Face |
 | BEiT original (microsoft/unilm) | no disponible en la informacion proporcionada | no disponible | Modelo preentrenado y publicado con codigo de ajuste | no disponible en la informacion proporcionada | GitHub (microsoft/unilm) |
 
 Los dos repositorios comparados (Avasilyev3243 y tgjackson74) parecen variantes de la misma plantilla de generación, con cambios en la etiqueta de escala y en los scripts incluidos. El BEiT original de Microsoft es la referencia canónica de la arquitectura, pero no se dispone de sus especificaciones numéricas en la información consultada.
@@ -82,14 +82,14 @@ Los dos repositorios comparados (Avasilyev3243 y tgjackson74) parecen variantes 
 - Riesgo de alucinación: no evaluable, al no existir un modelo entrenado. En cualquier caso, no aplica en el sentido habitual porque no hay generación de lenguaje.
 - Limitaciones de contexto e idioma: no hay información sobre ventana de contexto ni idiomas soportados.
 - Licencia: BSD-3-Clause permite uso comercial y modificación con atribución, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen si se emplean datasets externos.
-- Implementación personalizada: las API automáticas de carga de HuggingFace no funcionarán sin un adaptador explícito, lo que añade trabajo de integración.
+- Implementación personalizada: las API automáticas de carga de Hugging Face no funcionarán sin un adaptador explícito, lo que añade trabajo de integración.
 - Cero descargas y cero *likes*: no existe comunidad, issues ni evidencia de uso previo que sirva de validación.
 - Fechas de creación y actualización (2026) y ausencia de historial de versiones: sin mantenimiento observable.
 - Cualquier resultado futuro obtenido entrenando este modelo debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imanthonymartinez/beit-matching-finetuning
+- Modelo en Hugging Face: https://huggingface.co/imanthonymartinez/beit-matching-finetuning
 - Repositorio relacionado (variante tiny): https://huggingface.co/Avasilyev3243/beit-matching-tutorial
 - Repositorio relacionado (beit-matching76): https://huggingface.co/tgjackson74/beit-matching76/tree/main
 - BEiT original de Microsoft (codigo de ajuste): https://github.com/microsoft/unilm/blob/master/beit/modeling_finetune.py

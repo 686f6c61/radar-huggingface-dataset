@@ -76,5 +76,5 @@ No se dispone de información comparativa con otros modelos ASR para birmano en 
 
 ## Enlaces
 
-- [HuggingFace - thantzinphyo/whisper-tiny-myanmar-phase1](https://huggingface.co/thantzinphyo/whisper-tiny-myanmar-phase1)
+- [Hugging Face - thantzinphyo/whisper-tiny-myanmar-phase1](https://huggingface.co/thantzinphyo/whisper-tiny-myanmar-phase1)
 - Dataset OpenSLR-80 (Crowdsourced Burmese Speech) - no se proporciona URL directa en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-audio_cls_v3 es un modelo de clasificación de audio publicado en HuggingFace por el usuario sukhun2 bajo el identificador `sukhun2/audio_cls_v3`. Está construido sobre la arquitectura wav2vec2 y se distribuye en formato safetensors a través de la librería transformers, con un total de 94.572.174 parámetros. El modelo se ha generado automáticamente mediante el `Trainer` de HuggingFace, lo que indica que se trata de un ajuste fino (fine-tuning) sobre un checkpoint base de wav2vec2, aunque la model card no especifica cuál.
+audio_cls_v3 es un modelo de clasificación de audio publicado en Hugging Face por el usuario sukhun2 bajo el identificador `sukhun2/audio_cls_v3`. Está construido sobre la arquitectura wav2vec2 y se distribuye en formato safetensors a través de la librería transformers, con un total de 94.572.174 parámetros. El modelo se ha generado automáticamente mediante el `Trainer` de Hugging Face, lo que indica que se trata de un ajuste fino (fine-tuning) sobre un checkpoint base de wav2vec2, aunque la model card no especifica cuál.
 
 La información disponible es muy limitada: la model card indica explícitamente "More information needed" en las secciones de descripción, usos previstos, limitaciones y datos de entrenamiento. El autor declara que el modelo fue entrenado "from scratch on an unknown dataset", lo cual es contradictorio con el hecho de que se genere a partir del Trainer y con la arquitectura wav2vec2, que habitualmente se usa como base preentrenada. El conjunto de evaluación reporta una pérdida de 0,6255 y una precisión del 86,55 % tras 10 épocas.
 
@@ -37,7 +37,7 @@ Los hiperparámetros de entrenamiento declarados son: learning rate 1e-4, batch 
 - Clasificación de audio: el modelo está diseñado para asignar una etiqueta a un clip de audio, aunque no se documentan las clases ni el dominio (voz, música, eventos sonoros, etc.).
 - Procesamiento de audio en bruto mediante wav2vec2: acepta formas de onda de audio como entrada a través del procesador correspondiente.
 - Integración con el pipeline `audio-classification` de transformers.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite su despliegue en Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite su despliegue en Inference Endpoints de Hugging Face.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, capacidades multilingües, visión, audio generativo ni modos de pensamiento.
 
 ## Casos de uso
@@ -87,10 +87,10 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sukhun2/audio_cls_v3 | 94,57 M | audio (ventana no documentada) | no disponible | HuggingFace |
-| facebook/wav2vec2-base | 95 M | audio (ventana ~10 s típica) | MIT (según checkpoint base habitual) | HuggingFace |
-| MIT/ast-finetuned-audioset-10-10-0.4593 | ~87 M | espectrograma (10 s) | BSD-3-Clause (según checkpoint) | HuggingFace |
-| superb/wav2vec2-base-superb-er | ~95 M | audio | Apache-2.0 (según checkpoint) | HuggingFace |
+| sukhun2/audio_cls_v3 | 94,57 M | audio (ventana no documentada) | no disponible | Hugging Face |
+| facebook/wav2vec2-base | 95 M | audio (ventana ~10 s típica) | MIT (según checkpoint base habitual) | Hugging Face |
+| MIT/ast-finetuned-audioset-10-10-0.4593 | ~87 M | espectrograma (10 s) | BSD-3-Clause (según checkpoint) | Hugging Face |
+| superb/wav2vec2-base-superb-er | ~95 M | audio | Apache-2.0 (según checkpoint) | Hugging Face |
 
 La comparación de rendimiento no es posible porque audio_cls_v3 no reporta métricas en benchmarks estándar como SUPERB ni especifica su dataset de evaluación. Las licencias de los modelos alternativos deben verificarse en sus respectivas model cards.
 
@@ -109,7 +109,7 @@ La comparación de rendimiento no es posible porque audio_cls_v3 no reporta mét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sukhun2/audio_cls_v3
+- Modelo en Hugging Face: https://huggingface.co/sukhun2/audio_cls_v3
 - Documentación de wav2vec2 en transformers: https://huggingface.co/docs/transformers/model_doc/wav2vec2
 - Pipeline de clasificación de audio: https://huggingface.co/docs/transformers/tasks/audio_classification
 - Paper original de wav2vec2 (Baevski et al., 2020): https://arxiv.org/abs/2006.11477

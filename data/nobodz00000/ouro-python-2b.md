@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ouro-Python-2B es un ajuste fino (finetune) del modelo base unsloth/Qwen3.5-2B, publicado por el usuario nobodZ00000 en HuggingFace. Se trata de un modelo de generacion de texto de aproximadamente 2.000 millones de parametros, derivado de la familia Qwen3.5, y entrenado con las librerias Unsloth y TRL de HuggingFace, segun indica la propia model card. El nombre sugiere una especializacion en codigo Python, aunque la model card no documenta explicitamente el dataset de entrenamiento ni la tarea concreta.
+Ouro-Python-2B es un ajuste fino (finetune) del modelo base unsloth/Qwen3.5-2B, publicado por el usuario nobodZ00000 en Hugging Face. Se trata de un modelo de generacion de texto de aproximadamente 2.000 millones de parametros, derivado de la familia Qwen3.5, y entrenado con las librerias Unsloth y TRL de Hugging Face, segun indica la propia model card. El nombre sugiere una especializacion en codigo Python, aunque la model card no documenta explicitamente el dataset de entrenamiento ni la tarea concreta.
 
 El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con compatibilidad declarada para transformers y text-generation-inference. El repositorio ocupa aproximadamente 0,1 GB, lo que resulta coherente con pesos en precision reducida o con un subconjunto de los pesos del modelo base. El unico idioma declarado es el ingles.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ouro-Python-2B | aproximadamente 2B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-2B (base) | aproximadamente 2B | no disponible | no disponible en la informacion | HuggingFace |
-| Qwen2.5-Coder-1.5B | aproximadamente 1,5B | no disponible en la informacion | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-3B | aproximadamente 3B | no disponible en la informacion | Apache 2.0 | HuggingFace |
+| Ouro-Python-2B | aproximadamente 2B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-2B (base) | aproximadamente 2B | no disponible | no disponible en la informacion | Hugging Face |
+| Qwen2.5-Coder-1.5B | aproximadamente 1,5B | no disponible en la informacion | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-3B | aproximadamente 3B | no disponible en la informacion | Apache 2.0 | Hugging Face |
 
 La comparativa con modelos de codigo de la familia Qwen es orientativa por tamano y tematica; no se dispone de datos de rendimiento de Ouro-Python-2B para establecer una comparacion cuantitativa.
 
@@ -83,7 +83,7 @@ La comparativa con modelos de codigo de la familia Qwen es orientativa por taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nobodZ00000/Ouro-Python-2B
+- Modelo en Hugging Face: https://huggingface.co/nobodZ00000/Ouro-Python-2B
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

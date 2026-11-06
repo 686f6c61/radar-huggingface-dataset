@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM3-1.7B-wsp-l15-l19-lam6 es un modelo de lenguaje de 1.728.801.536 parametros (aproximadamente 1,7 mil millones) publicado en HuggingFace por el usuario nielsr. El identificador sugiere que se trata de una variante experimental de la familia LFM3 (Liquid Foundation Model 3), con un sufijo "wsp-l15-l19-lam6" que apunta a una configuracion especifica de pesos o capas (posiblemente intervenciones en las capas 15 y 19, y algun parametro "lam6"). El modelo esta etiquetado para generacion de texto y uso conversacional, y utiliza la libreria transformers con pesos en formato safetensors y codigo personalizado (custom_code), lo que implica que requiere confiar en implementaciones remotas para cargarse.
+LFM3-1.7B-wsp-l15-l19-lam6 es un modelo de lenguaje de 1.728.801.536 parametros (aproximadamente 1,7 mil millones) publicado en Hugging Face por el usuario nielsr. El identificador sugiere que se trata de una variante experimental de la familia LFM3 (Liquid Foundation Model 3), con un sufijo "wsp-l15-l19-lam6" que apunta a una configuracion especifica de pesos o capas (posiblemente intervenciones en las capas 15 y 19, y algun parametro "lam6"). El modelo esta etiquetado para generacion de texto y uso conversacional, y utiliza la libreria transformers con pesos en formato safetensors y codigo personalizado (custom_code), lo que implica que requiere confiar en implementaciones remotas para cargarse.
 
-La relevancia de esta publicacion es limitada y de caracter experimental: el repositorio no incluye model card sustantiva (la existente es la plantilla autogenerada de HuggingFace sin rellenar), no declara licencia, no especifica idiomas soportados, no documenta el entrenamiento ni publica resultados de evaluacion. Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto de investigacion mas que de un modelo listo para produccion. Su interes principal es para quienes estudian variantes de la familia LFM3 o realizan experimentos de interpretabilidad y edicion de pesos sobre modelos de ~1,7B.
+La relevancia de esta publicacion es limitada y de caracter experimental: el repositorio no incluye model card sustantiva (la existente es la plantilla autogenerada de Hugging Face sin rellenar), no declara licencia, no especifica idiomas soportados, no documenta el entrenamiento ni publica resultados de evaluacion. Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto de investigacion mas que de un modelo listo para produccion. Su interes principal es para quienes estudian variantes de la familia LFM3 o realizan experimentos de interpretabilidad y edicion de pesos sobre modelos de ~1,7B.
 
 Por tanto, esta ficha debe leerse como una descripcion de lo que se puede verificar tecnicamente (parametros, formato, tamano del repo, pipeline declarado) y con advertencias explicitas sobre todo lo que el autor no ha documentado. Cualquier uso en produccion requeriria una evaluacion propia y una verificacion juridica de la licencia, que aqui figura como no disponible.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha debe leerse como una descripcion de lo que se puede verifi
 
 No se dispone de informacion sobre la arquitectura interna mas alla de las etiquetas del repositorio. El tag `lfm3` asocia el modelo a la familia LFM3, y el tag `custom_code` indica que la carga requiere codigo remoto especifico del autor (habitual en arquitecturas hibridas o con modulos no estandar en transformers). El sufijo del nombre, "wsp-l15-l19-lam6", sugiere una variante concreta dentro de un barrido experimental, probablemente con modificaciones en capas 15 y 19, pero el autor no lo documenta.
 
-Tampoco hay informacion sobre datos de entrenamiento (numero de tokens, composicion del corpus), sobre si hubo ajuste por instrucciones, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card es la plantilla autogenerada por HuggingFace con todos los campos marcados como "[More Information Needed]". El unico dato de infraestructura implicito es el tamano del repositorio (3,5 GB), coherente con pesos en precision de 16 bits para ~1,7B de parametros.
+Tampoco hay informacion sobre datos de entrenamiento (numero de tokens, composicion del corpus), sobre si hubo ajuste por instrucciones, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card es la plantilla autogenerada por Hugging Face con todos los campos marcados como "[More Information Needed]". El unico dato de infraestructura implicito es el tamano del repositorio (3,5 GB), coherente con pesos en precision de 16 bits para ~1,7B de parametros.
 
 ## Capacidades
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM3-1.7B-wsp-l15-l19-lam6 | ~1,7B | no disponible | no disponible | HuggingFace, repo experimental | Model card vacia, sin benchmarks |
-| Familia LFM3 (checkpoints oficiales de Liquid AI) | no disponible en esta busqueda | no disponible | no disponible | HuggingFace | Referencia de familia; no se dispone de datos verificados aqui |
-| Qwen2.5-1.5B | ~1,5B | no disponible en esta busqueda | no disponible en esta busqueda | HuggingFace | Alternativa de tamano similar ampliamente usada; datos no verificados en esta ficha |
-| Llama 3.2 1B | ~1,2B | no disponible en esta busqueda | no disponible en esta busqueda | HuggingFace | Alternativa de tamano similar; datos no verificados en esta ficha |
+| LFM3-1.7B-wsp-l15-l19-lam6 | ~1,7B | no disponible | no disponible | Hugging Face, repo experimental | Model card vacia, sin benchmarks |
+| Familia LFM3 (checkpoints oficiales de Liquid AI) | no disponible en esta busqueda | no disponible | no disponible | Hugging Face | Referencia de familia; no se dispone de datos verificados aqui |
+| Qwen2.5-1.5B | ~1,5B | no disponible en esta busqueda | no disponible en esta busqueda | Hugging Face | Alternativa de tamano similar ampliamente usada; datos no verificados en esta ficha |
+| Llama 3.2 1B | ~1,2B | no disponible en esta busqueda | no disponible en esta busqueda | Hugging Face | Alternativa de tamano similar; datos no verificados en esta ficha |
 
 No se dispone de datos verificados de rendimiento ni de contexto para establecer una comparacion cuantitativa fiable; la tabla anterior solo situa el modelo por tamano y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos verificados de rendimiento ni de contexto para establecer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nielsr/LFM3-1.7B-wsp-l15-l19-lam6
-- Perfil del autor en HuggingFace: https://huggingface.co/nielsr
+- Repositorio en Hugging Face: https://huggingface.co/nielsr/LFM3-1.7B-wsp-l15-l19-lam6
+- Perfil del autor en Hugging Face: https://huggingface.co/nielsr
 - Paper citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML CO2: https://mlco2.github.io/impact

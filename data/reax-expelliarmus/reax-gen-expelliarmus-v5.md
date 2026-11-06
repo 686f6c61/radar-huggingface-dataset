@@ -2,7 +2,7 @@
 
 ## Resumen
 
-reax-gen-expelliarmus-v5 es un modelo de lenguaje publicado en HuggingFace por el usuario reax-expelliarmus. El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parámetros (aproximadamente 26 mil millones), lo que lo sitúa en la categoría de modelos de gran tamaño, por encima de la mayoría de modelos que caben en GPU de consumo sin cuantización agresiva. El tag `qwen3_5` sugiere que la arquitectura está basada en la familia Qwen 3.5, aunque no se detalla en la información disponible.
+reax-gen-expelliarmus-v5 es un modelo de lenguaje publicado en Hugging Face por el usuario reax-expelliarmus. El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parámetros (aproximadamente 26 mil millones), lo que lo sitúa en la categoría de modelos de gran tamaño, por encima de la mayoría de modelos que caben en GPU de consumo sin cuantización agresiva. El tag `qwen3_5` sugiere que la arquitectura está basada en la familia Qwen 3.5, aunque no se detalla en la información disponible.
 
 La model card publicada es prácticamente vacía: solo contiene la declaración de licencia Apache 2.0, sin descripción del modelo, datos de entrenamiento, benchmarks ni instrucciones de uso. El repositorio tiene 15 descargas y 0 likes en el momento de la consulta, lo que indica un modelo de nicho o experimental, sin tracción comunitaria verificable. El tamaño del repositorio (52,2 GB) es coherente con pesos en precisión bf16/fp16 para 26B de parámetros.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| reax-gen-expelliarmus-v5 | ~26B | no disponible | Apache 2.0 | HuggingFace (15 descargas) |
-| Qwen 2.5 32B | ~32B | 128K (según versión) | Apache 2.0 (mayoría de variantes) | HuggingFace, ampliamente documentado |
-| Gemma 2 27B | ~27B | 8K | Gemma License | HuggingFace, documentado |
-| Mistral Small 24B | ~24B | 32K-128K según versión | Apache 2.0 | HuggingFace, documentado |
+| reax-gen-expelliarmus-v5 | ~26B | no disponible | Apache 2.0 | Hugging Face (15 descargas) |
+| Qwen 2.5 32B | ~32B | 128K (según versión) | Apache 2.0 (mayoría de variantes) | Hugging Face, ampliamente documentado |
+| Gemma 2 27B | ~27B | 8K | Gemma License | Hugging Face, documentado |
+| Mistral Small 24B | ~24B | 32K-128K según versión | Apache 2.0 | Hugging Face, documentado |
 
 La comparativa se limita a parámetros, contexto y licencia porque no hay benchmarks publicados del modelo evaluado. Frente a Qwen 2.5 32B, Gemma 2 27B o Mistral Small 24B, el modelo de reax carece de documentación de contexto, idiomas y rendimiento, lo que dificulta una comparación rigurosa más allá del tamaño.
 
@@ -83,5 +83,5 @@ La comparativa se limita a parámetros, contexto y licencia porque no hay benchm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reax-expelliarmus/reax-gen-expelliarmus-v5
+- Hugging Face: https://huggingface.co/reax-expelliarmus/reax-gen-expelliarmus-v5
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

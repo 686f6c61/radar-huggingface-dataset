@@ -78,7 +78,7 @@ La comparativa directa con otros modelos de tamano similar no esta disponible en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/RaceBench-MiniCPM5-v1.1
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/RaceBench-MiniCPM5-v1.1
 - Dataset RaceBench-v1.1: https://huggingface.co/datasets/saidutta69/RaceBench-v1.1
 - Modelo base MiniCPM5-1B: https://huggingface.co/openbmb/MiniCPM5-1B
 - Repositorio de OpenBMB/MiniCPM: https://github.com/OpenBMB/MiniCPM

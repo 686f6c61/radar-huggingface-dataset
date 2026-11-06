@@ -32,7 +32,7 @@ El entrenamiento consistio en un unico epoch de SFT con perdida de next-token so
 - Razonamiento matematico paso a paso: el modelo esta especializado en resolver problemas matematicos generando cadenas de razonamiento y emitiendo la respuesta final dentro de `\boxed{}`.
 - Internalizacion de presupuesto de tokens: el ajuste se diseno especificamente para producir respuestas dentro de un presupuesto acotado (subconjunto `4k-forced`), lo que sugiere un comportamiento entrenado para concluir antes de agotar el limite.
 - Generacion de texto conversacional: la model card indica que el prompt de usuario se renderiza con la plantilla de chat del modelo base, por lo que conserva el formato conversacional multi-turno.
-- Capacidades multimodales: el pipeline declarado en HuggingFace es `image-text-to-text`, lo que apunta a entrada de imagen y texto, pero la model card no documenta ningun entrenamiento ni evaluacion de vision. Dato no confirmado.
+- Capacidades multimodales: el pipeline declarado en Hugging Face es `image-text-to-text`, lo que apunta a entrada de imagen y texto, pero la model card no documenta ningun entrenamiento ni evaluacion de vision. Dato no confirmado.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible; no se declaran idiomas soportados.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks de este checkpoint ni de mediciones compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-sft-forced-strongfish-s100
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-sft-forced-strongfish-s100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 - Paper o blog del autor: no disponible (submission anonima a ICLR 2027, sin enlace en la model card)

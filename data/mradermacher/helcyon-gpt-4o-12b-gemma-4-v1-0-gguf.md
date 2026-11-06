@@ -4,7 +4,7 @@
 
 Helcyon-GPT-4o-12b-Gemma-4-v1.0-GGUF es una coleccion de cuantizaciones estáticas en formato GGUF generadas por mradermacher a partir del modelo base XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0. El modelo original parte de la familia Gemma y cuenta con 11.907.350.576 parametros (aproximadamente 11,9 mil millones), lo que lo situa en la gama de modelos de tamano medio aptos para despliegue en hardware de consumo con las cuantizaciones adecuadas.
 
-La relevancia de este repositorio es practica: ofrece el modelo en multiples niveles de cuantizacion (desde Q2_K hasta F16, incluyendo IQ4_XS y Q8_0) para su uso con llama.cpp y entornos compatibles, lo que permite ajustar el equilibrio entre calidad y consumo de memoria. El tag `endpoints_compatible` sugiere compatibilidad con infraestructura de endpoints de HuggingFace.
+La relevancia de este repositorio es practica: ofrece el modelo en multiples niveles de cuantizacion (desde Q2_K hasta F16, incluyendo IQ4_XS y Q8_0) para su uso con llama.cpp y entornos compatibles, lo que permite ajustar el equilibrio entre calidad y consumo de memoria. El tag `endpoints_compatible` sugiere compatibilidad con infraestructura de endpoints de Hugging Face.
 
 No se dispone de informacion sobre la licencia, los idiomas soportados, la composicion del dataset de entrenamiento ni los resultados de benchmarks, ya que la model card del repositorio se limita a listar las cuantizaciones generadas y a referenciar el modelo original.
 
@@ -25,12 +25,12 @@ No se dispone de informacion sobre la licencia, los idiomas soportados, la compo
 
 No se ha publicado informacion sobre la arquitectura interna del modelo base XeyonAI/Helcyon-GPT-4o-12b-Gemma-4-v1.0 en la informacion disponible. El nombre sugiere una derivacion de la familia Gemma, y el recuento de parametros (11,9 mil millones) es coherente con un transformer denso de tamano medio, pero no se confirma ni el tipo de atencion, ni la composicion del dataset, ni si hubo fases de RLHF o DPO.
 
-Respecto al proceso de cuantizacion, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato HuggingFace. Se marca `skip_mmproj: 1`, lo que indica que no se incluye el proyector multimodal en las cuantizaciones, por lo que estas versiones GGUF estan orientadas a inferencia de texto. No se detallan innovaciones tecnicas adicionales.
+Respecto al proceso de cuantizacion, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato Hugging Face. Se marca `skip_mmproj: 1`, lo que indica que no se incluye el proyector multimodal en las cuantizaciones, por lo que estas versiones GGUF estan orientadas a inferencia de texto. No se detallan innovaciones tecnicas adicionales.
 
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` indica que el modelo esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integracion con la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integracion con la infraestructura de endpoints de Hugging Face.
 - Inferencia local mediante llama.cpp y herramientas compatibles con GGUF.
 - Soporte de tool calling: no disponible en la informacion proporcionada.
 - Capacidades de agente o razonamiento multi-paso: no disponible en la informacion proporcionada.
@@ -43,7 +43,7 @@ Respecto al proceso de cuantizacion, la model card indica `quantize_version: 2`,
 - Experimentacion e investigacion en entornos con recursos limitados: las variantes Q2_K y Q3_K permiten probar el modelo en hardware modesto antes de invertir en infraestructura mayor.
 - Integracion en pipelines de llama.cpp: el formato GGUF es directamente consumible por llama.cpp, lo que facilita su inclusion en aplicaciones de escritorio o servidores ligeros.
 - Evaluacion comparativa de cuantizaciones: el repositorio incluye doce niveles de cuantizacion, lo que permite medir la degradacion de calidad frente al ahorro de memoria en un caso concreto.
-- Servicio de chat en endpoints compatibles: el tag `endpoints_compatible` sugiere su uso en infraestructura de inferencia gestionada de HuggingFace.
+- Servicio de chat en endpoints compatibles: el tag `endpoints_compatible` sugiere su uso en infraestructura de inferencia gestionada de Hugging Face.
 - Generacion de texto offline en entornos sin conectividad: al ser un modelo local en GGUF, puede ejecutarse en maquinas aisladas con llama.cpp.
 
 ## Benchmarks y rendimiento

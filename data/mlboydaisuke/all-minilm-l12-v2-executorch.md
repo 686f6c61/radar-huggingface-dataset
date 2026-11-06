@@ -98,7 +98,7 @@ La comparativa se basa en la familia de modelos del mismo autor. El modelo L12 e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mlboydaisuke/all-MiniLM-L12-v2-ExecuTorch)
+- [Modelo en Hugging Face](https://huggingface.co/mlboydaisuke/all-MiniLM-L12-v2-ExecuTorch)
 - [Modelo base sentence-transformers/all-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2)
 - [Repositorio de scripts de conversion executorch-models](https://github.com/john-rocky/executorch-models)
 - [Modelo hermano L6](https://huggingface.co/mlboydaisuke/all-MiniLM-L6-v2-ExecuTorch)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nyx-RP-Mini-2.6B-Instruct-2608-v0.1 es un modelo de lenguaje de 2.600 millones de parámetros orientado a roleplay (RP) y a seguir instrucciones, publicado originalmente por Indexnusrefather. La versión aquí descrita es una cuantización GGUF realizada por mradermacher, un usuario conocido en la comunidad de HuggingFace por generar pesos optimizados para inferencia local con herramientas como llama.cpp u Ollama. El nombre sugiere que el modelo está diseñado para conversaciones de rol y tareas instructivas, aunque no se dispone de documentación oficial que detalle su arquitectura o entrenamiento.
+Nyx-RP-Mini-2.6B-Instruct-2608-v0.1 es un modelo de lenguaje de 2.600 millones de parámetros orientado a roleplay (RP) y a seguir instrucciones, publicado originalmente por Indexnusrefather. La versión aquí descrita es una cuantización GGUF realizada por mradermacher, un usuario conocido en la comunidad de Hugging Face por generar pesos optimizados para inferencia local con herramientas como llama.cpp u Ollama. El nombre sugiere que el modelo está diseñado para conversaciones de rol y tareas instructivas, aunque no se dispone de documentación oficial que detalle su arquitectura o entrenamiento.
 
 La relevancia de esta ficha radica en que el formato GGUF permite ejecutar el modelo en hardware de consumo, lo que facilita su uso en aplicaciones de chat y roleplay sin necesidad de infraestructura de servidor. Sin embargo, la información pública es extremadamente limitada: no se especifican licencia, idiomas, arquitectura ni datos de entrenamiento, lo que obliga a tratar cualquier afirmación sobre sus capacidades como provisional.
 

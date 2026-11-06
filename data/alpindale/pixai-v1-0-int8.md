@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PixAI-v1.0-INT8 es una versión cuantizada a 8 bits del modelo `pixai-labs/pixai-tagger-v1.0`, un clasificador de imágenes especializado en el etiquetado automático de ilustraciones de estilo anime con el vocabulario de tags de Danbooru. La cuantización la ha realizado el usuario alpindale y se publica como un repo independiente en HuggingFace con licencia Apache-2.0. No es un modelo generativo: su función es asignar etiquetas (multi-etiqueta) a una imagen de entrada.
+PixAI-v1.0-INT8 es una versión cuantizada a 8 bits del modelo `pixai-labs/pixai-tagger-v1.0`, un clasificador de imágenes especializado en el etiquetado automático de ilustraciones de estilo anime con el vocabulario de tags de Danbooru. La cuantización la ha realizado el usuario alpindale y se publica como un repo independiente en Hugging Face con licencia Apache-2.0. No es un modelo generativo: su función es asignar etiquetas (multi-etiqueta) a una imagen de entrada.
 
 El modelo cuenta con 486.662.301 parámetros (unos 487 M) y el repositorio ocupa 0,6 GB, lo que refleja el peso reducido de los pesos en INT8. La arquitectura declarada en los metadatos es `cls_vitdet`, es decir, un backbone ViTDet adaptado a clasificación de imágenes, empaquetado con código personalizado (`custom_code`), por lo que requiere `trust_remote_code=True` para cargarse.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Tipo | Entrada / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alpindale/PixAI-v1.0-INT8 | 486,6 M | Clasificador multi-etiqueta ViTDet, INT8 | Imagen; resolucion no disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| pixai-labs/pixai-tagger-v1.0 | no disponible | Clasificador multi-etiqueta (modelo base, sin cuantizar) | Imagen; resolucion no disponible | no confirmada en la informacion disponible | HuggingFace (repo original) |
-| Familia WD Tagger (SmilingWolf, p. ej. wd-vit-tagger-v3) | no disponible | Clasificador multi-etiqueta Danbooru | Imagen; resolucion no disponible | no disponible | HuggingFace, ampliamente adoptado |
-| Camie Tagger (familia de taggers anime) | no disponible | Clasificador multi-etiqueta Danbooru | Imagen; resolucion no disponible | no disponible | HuggingFace |
+| alpindale/PixAI-v1.0-INT8 | 486,6 M | Clasificador multi-etiqueta ViTDet, INT8 | Imagen; resolucion no disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| pixai-labs/pixai-tagger-v1.0 | no disponible | Clasificador multi-etiqueta (modelo base, sin cuantizar) | Imagen; resolucion no disponible | no confirmada en la informacion disponible | Hugging Face (repo original) |
+| Familia WD Tagger (SmilingWolf, p. ej. wd-vit-tagger-v3) | no disponible | Clasificador multi-etiqueta Danbooru | Imagen; resolucion no disponible | no disponible | Hugging Face, ampliamente adoptado |
+| Camie Tagger (familia de taggers anime) | no disponible | Clasificador multi-etiqueta Danbooru | Imagen; resolucion no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas opciones dentro de la informacion proporcionada; la comparacion solo puede hacerse por tamano, licencia y disponibilidad.
 
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparado entre estas opciones dentro de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alpindale/PixAI-v1.0-INT8
+- Repositorio Hugging Face: https://huggingface.co/alpindale/PixAI-v1.0-INT8
 - Modelo base: https://huggingface.co/pixai-labs/pixai-tagger-v1.0
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo (unicamente resultados de naturaleza no tecnica y sin relacion con el modelo).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`unijenaphotonics/my-multitask85` es un prototipo de investigación publicado en HuggingFace por el usuario unijenaphotonics, que implementa una arquitectura híbrida denominada "Cnn Transformer" orientada a tareas múltiples (multitask). Se trata de un artefacto experimental de escala "small" cuyo propósito declarado es documentar valores por defecto y formatos de fichero, no presentar resultados de rendimiento verificados. El propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no ha sido entrenado ni auditado.
+`unijenaphotonics/my-multitask85` es un prototipo de investigación publicado en Hugging Face por el usuario unijenaphotonics, que implementa una arquitectura híbrida denominada "Cnn Transformer" orientada a tareas múltiples (multitask). Se trata de un artefacto experimental de escala "small" cuyo propósito declarado es documentar valores por defecto y formatos de fichero, no presentar resultados de rendimiento verificados. El propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y que no ha sido entrenado ni auditado.
 
 El modelo tiene únicamente 24.832 parámetros totales según el fichero safetensors, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable en producción. No se declara longitud de contexto, idiomas soportados, pipeline de inferencia ni resultados de benchmarks. La relevancia de esta ficha es, por tanto, la de catalogar un experimento reproducible más que la de evaluar un modelo desplegable.
 
@@ -79,5 +79,5 @@ No disponible. Se trata de una implementación de investigación personalizada c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unijenaphotonics/my-multitask85
+- Hugging Face: https://huggingface.co/unijenaphotonics/my-multitask85
 - No se han encontrado enlaces relevantes adicionales (paper, blog, repositorio o demo) en la búsqueda web. Los resultados recuperados no guardan relación con el modelo.

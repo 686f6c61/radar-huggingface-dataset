@@ -72,8 +72,8 @@ No se han publicado en la información disponible resultados de benchmarks adici
 
 | Modelo | Parámetros totales | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-M2.7-NVFP4-AutoRound (este) | 228,7 B | no disponible (ejemplo: 102.400) | NVFP4 E5M3 W4A4 | other | HuggingFace, vLLM + plugin QDQ |
-| MiniMaxAI/MiniMax-M2.7 (base) | 228,7 B | no disponible | bfloat16 (original) | other | HuggingFace |
+| MiniMax-M2.7-NVFP4-AutoRound (este) | 228,7 B | no disponible (ejemplo: 102.400) | NVFP4 E5M3 W4A4 | other | Hugging Face, vLLM + plugin QDQ |
+| MiniMaxAI/MiniMax-M2.7 (base) | 228,7 B | no disponible | bfloat16 (original) | other | Hugging Face |
 | Alternativas de misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (MoE de más de 200 mil millones de parámetros) en la documentación proporcionada, por lo que no se puede establecer una comparativa adicional fiable.
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: intel-ai/MiniMax-M2.7-NVFP4-AutoRound](https://huggingface.co/intel-ai/MiniMax-M2.7-NVFP4-AutoRound)
+- [Hugging Face: intel-ai/MiniMax-M2.7-NVFP4-AutoRound](https://huggingface.co/intel-ai/MiniMax-M2.7-NVFP4-AutoRound)
 - [Modelo base: MiniMaxAI/MiniMax-M2.7](https://huggingface.co/MiniMaxAI/MiniMax-M2.7)
 - [AutoRound (GitHub)](https://github.com/intel/auto-round)
 - [Intel Neural Compressor (GitHub)](https://github.com/intel/neural-compressor)

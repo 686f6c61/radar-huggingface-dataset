@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omnidoctor-qwen-omni es un modelo multimodal any-to-any publicado en HuggingFace por el usuario Salahuddin1234 bajo el identificador `Salahuddin1234/omnidoctor-qwen-omni`. Segun los metadatos y la model card, se trata de una variante o derivado del modelo Qwen3-Omni del equipo Qwen (Alibaba Cloud), con arquitectura `qwen3_omni_moe`. El repositorio contiene 35.259.818.545 parametros segun sus ficheros safetensors y ocupa 70,5 GB, lo que es coherente con un modelo multimodal completo que integra codificadores de vision y audio ademas del nucleo de lenguaje.
+Omnidoctor-qwen-omni es un modelo multimodal any-to-any publicado en Hugging Face por el usuario Salahuddin1234 bajo el identificador `Salahuddin1234/omnidoctor-qwen-omni`. Segun los metadatos y la model card, se trata de una variante o derivado del modelo Qwen3-Omni del equipo Qwen (Alibaba Cloud), con arquitectura `qwen3_omni_moe`. El repositorio contiene 35.259.818.545 parametros segun sus ficheros safetensors y ocupa 70,5 GB, lo que es coherente con un modelo multimodal completo que integra codificadores de vision y audio ademas del nucleo de lenguaje.
 
 La propuesta del modelo es procesar texto, imagenes, audio y video como entrada, y generar respuestas en texto y voz de forma nativa y en streaming. La model card reproduce la descripcion de Qwen3-Omni, que declara soporte para 119 idiomas de texto, 19 idiomas de entrada de voz y 10 idiomas de salida de voz, con arquitectura basada en MoE y un diseno Thinker-Talker de multiples codebooks para reducir la latencia.
 
@@ -18,7 +18,7 @@ El nombre "omnidoctor" sugiere un posible enfoque o ajuste orientado al ambito m
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo incluye safetensors; no se listan variantes GGUF, GPTQ ni AWQ) |
 | Idiomas soportados | Tag oficial: en. La model card del modelo base declara 119 idiomas de texto, 19 de entrada de voz y 10 de salida de voz |
-| Licencia | apache-2.0 (el tag de HuggingFace indica "license:other" con license_name apache-2.0) |
+| Licencia | apache-2.0 (el tag de Hugging Face indica "license:other" con license_name apache-2.0) |
 | Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
@@ -72,9 +72,9 @@ La model card del modelo base Qwen3-Omni afirma alcanzar SOTA en 22 de 36 benchm
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omnidoctor-qwen-omni | 35,26 mil millones | no disponible | Texto, imagen, audio, video; salida texto y voz | apache-2.0 (tag "other") | HuggingFace, 0 descargas |
-| Qwen3-Omni-30B-A3B (modelo base) | ~30 mil millones (aprox.) | no disponible | Texto, imagen, audio, video; salida texto y voz | apache-2.0 | HuggingFace, ampliamente distribuido |
-| Qwen2.5-Omni-7B | ~7 mil millones | no disponible | Texto, imagen, audio, video; salida texto y voz | apache-2.0 | HuggingFace |
+| omnidoctor-qwen-omni | 35,26 mil millones | no disponible | Texto, imagen, audio, video; salida texto y voz | apache-2.0 (tag "other") | Hugging Face, 0 descargas |
+| Qwen3-Omni-30B-A3B (modelo base) | ~30 mil millones (aprox.) | no disponible | Texto, imagen, audio, video; salida texto y voz | apache-2.0 | Hugging Face, ampliamente distribuido |
+| Qwen2.5-Omni-7B | ~7 mil millones | no disponible | Texto, imagen, audio, video; salida texto y voz | apache-2.0 | Hugging Face |
 | Gemini 2.5 Pro | no disponible | no disponible | Texto, imagen, audio, video; salida texto y voz | propietaria | API de Google |
 
 Nota: los datos de parametros y contexto de los modelos comparados no se detallan en la informacion proporcionada y se indican como no disponibles cuando no se han podido confirmar.
@@ -94,7 +94,7 @@ Nota: los datos de parametros y contexto de los modelos comparados no se detalla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Salahuddin1234/omnidoctor-qwen-omni
+- Modelo en Hugging Face: https://huggingface.co/Salahuddin1234/omnidoctor-qwen-omni
 - Repositorio GitHub de Qwen3-Omni: https://github.com/QwenLM/Qwen3-Omni
 - Web oficial de Qwen: https://qwen.ai/home
 - Documentacion de Qwen-Omni en Alibaba Cloud Model Studio: https://help.aliyun.com/en/model-studio/qwen-omni

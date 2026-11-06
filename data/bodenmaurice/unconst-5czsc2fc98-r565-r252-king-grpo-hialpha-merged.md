@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bodenmaurice/unconst-5czsc2fc98-r565-r252-king-grpo-hialpha-merged` es un ajuste fino experimental de 35 107 millones de parámetros, desarrollado por el usuario bodenmaurice sobre la base `unconst/Affine-5czsc2fc98-r252-merged`. Según las etiquetas de HuggingFace, emplea una arquitectura de mezcla de expertos (MoE) vinculada a la familia Qwen3.5, aunque no se proporcionan detalles estructurales adicionales. El entrenamiento se realizó mediante GRPO (Group Relative Policy Optimization) con una recompensa basada en el razonamiento del profesor (teacher-side Reason), optimizando específicamente para el conjunto de evaluación Reason v3.
+El modelo `bodenmaurice/unconst-5czsc2fc98-r565-r252-king-grpo-hialpha-merged` es un ajuste fino experimental de 35 107 millones de parámetros, desarrollado por el usuario bodenmaurice sobre la base `unconst/Affine-5czsc2fc98-r252-merged`. Según las etiquetas de Hugging Face, emplea una arquitectura de mezcla de expertos (MoE) vinculada a la familia Qwen3.5, aunque no se proporcionan detalles estructurales adicionales. El entrenamiento se realizó mediante GRPO (Group Relative Policy Optimization) con una recompensa basada en el razonamiento del profesor (teacher-side Reason), optimizando específicamente para el conjunto de evaluación Reason v3.
 
 Este modelo es relevante en el contexto de la investigación sobre optimización de razonamiento en modelos de lenguaje, ya que aplica una receta de entrenamiento ya probada (la «corona» R252) sobre pesos ya coronados, buscando mejorar la calidad de las cadenas de pensamiento sin recurrir a señales auxiliares como lpA o L1lift. Su licencia Apache 2.0 permite uso comercial y modificación, lo que lo hace atractivo para experimentación en entornos de producción, aunque su naturaleza experimental y la falta de documentación oficial limitan su adopción inmediata.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. El modelo pertenece a una familia interna de experimentos (Affine) sin referencias públicas a modelos comparables de la misma categoría. Se recomienda consultar la página de HuggingFace para ver los fine-tunes derivados de la misma base, pero no hay datos de rendimiento que permitan una comparación objetiva.
+No se dispone de información suficiente para establecer una comparativa fiable. El modelo pertenece a una familia interna de experimentos (Affine) sin referencias públicas a modelos comparables de la misma categoría. Se recomienda consultar la página de Hugging Face para ver los fine-tunes derivados de la misma base, pero no hay datos de rendimiento que permitan una comparación objetiva.
 
 ## Limitaciones y advertencias
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r565-r252-king-grpo-hialpha-merged
+- Modelo en Hugging Face: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r565-r252-king-grpo-hialpha-merged
 - Búsqueda de fine-tunes de la base: https://huggingface.co/models?other=base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged
 - Base del modelo: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged (no se proporciona URL directa, solo referencia en la model card)

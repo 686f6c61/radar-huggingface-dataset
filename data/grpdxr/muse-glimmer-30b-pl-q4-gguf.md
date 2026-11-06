@@ -110,7 +110,7 @@ Lectura de la comparativa: frente a Qwen3.8-27B, este modelo gana en documentos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grpdxr/Muse-Glimmer-30B-PL-Q4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/grpdxr/Muse-Glimmer-30B-PL-Q4-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - llama.cpp (runtime recomendado, flags documentados en la model card): https://github.com/ggml-org/llama.cpp
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

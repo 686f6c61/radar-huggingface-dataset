@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MOS, WER, MCD) en la inf
 
 | Modelo | Tipo | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Meari accent — Chungcheong | Etapa GPT de GPT-SoVITS v2ProPlus en ONNX | Coreano | no disponible | MIT | HuggingFace (Miyauel) |
-| GPT-SoVITS v2ProPlus (`s1v3.ckpt`) | TTS completo de referencia | Multilingüe (según proyecto) | no disponible | MIT | HuggingFace (lj1995) |
-| Meari accent — base | Etapa de sonido y valores de voz de Meari | Coreano | no disponible | MIT | HuggingFace (Miyauel) |
+| Meari accent — Chungcheong | Etapa GPT de GPT-SoVITS v2ProPlus en ONNX | Coreano | no disponible | MIT | Hugging Face (Miyauel) |
+| GPT-SoVITS v2ProPlus (`s1v3.ckpt`) | TTS completo de referencia | Multilingüe (según proyecto) | no disponible | MIT | Hugging Face (lj1995) |
+| Meari accent — base | Etapa de sonido y valores de voz de Meari | Coreano | no disponible | MIT | Hugging Face (Miyauel) |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la única comparación cuantitativa es la del clasificador de dialecto frente al modelo base.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Miyauel/meari-accent-chungcheong)
+- [Modelo en Hugging Face](https://huggingface.co/Miyauel/meari-accent-chungcheong)
 - [Paquete base Meari accent](https://huggingface.co/Miyauel/meari-accent-base)
 - [Repositorio del motor Meari](https://github.com/Miyauel/Meari)
 - [Pesos GPT-SoVITS (lj1995)](https://huggingface.co/lj1995/GPT-SoVITS)

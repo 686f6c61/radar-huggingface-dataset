@@ -56,7 +56,7 @@ Respecto al entrenamiento, no hay datos disponibles sobre el volumen de tokens, 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio (que solo contiene frontmatter) ni los datos de HuggingFace proporcionados incluyen cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni del modelo cuantizado ni del modelo base abliterated. Tampoco hay datos de perplejidad que permitan estimar la perdida introducida por la cuantizacion a 4 bits.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio (que solo contiene frontmatter) ni los datos de Hugging Face proporcionados incluyen cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni del modelo cuantizado ni del modelo base abliterated. Tampoco hay datos de perplejidad que permitan estimar la perdida introducida por la cuantizacion a 4 bits.
 
 ## Requisitos de hardware
 

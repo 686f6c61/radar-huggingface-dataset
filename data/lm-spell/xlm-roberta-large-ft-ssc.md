@@ -23,7 +23,7 @@ Su relevancia actual es doble. Por un lado, demuestra el patrón habitual de ada
 | Modelo base | FacebookAI/xlm-roberta-large |
 | Dataset de ajuste | lm-spell/sinhala-spell-correction-dataset |
 | Tamano del repositorio | 1,1 GB |
-| Acceso | Restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -57,7 +57,7 @@ Sobre esa base, lm-spell ha realizado un ajuste fino supervisado con el dataset 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha del modelo en HuggingFace no incluye métricas de precisión, recall, F1 ni comparaciones con alternativas, y la búsqueda web no aporta datos de evaluación para este ajuste concreto.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha del modelo en Hugging Face no incluye métricas de precisión, recall, F1 ni comparaciones con alternativas, y la búsqueda web no aporta datos de evaluación para este ajuste concreto.
 
 ## Requisitos de hardware
 
@@ -93,7 +93,7 @@ No se dispone de información sobre modelos alternativos de corrección ortográ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lm-spell/xlm-roberta-large-ft-ssc
+- Modelo en Hugging Face: https://huggingface.co/lm-spell/xlm-roberta-large-ft-ssc
 - Archivos del repositorio: https://huggingface.co/lm-spell/xlm-roberta-large-ft-ssc/tree/main
 - Modelo base FacebookAI/xlm-roberta-large: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Dataset de ajuste: https://huggingface.co/datasets/lm-spell/sinhala-spell-correction-dataset

@@ -71,7 +71,7 @@ KLD por categoría (a primer EOS; lecturas con prompts distintos no comparables 
 
 ## Requisitos de hardware
 
-- Memoria y disco: el pack ocupa ~309 GiB en disco (120 GiB de pesos + 189 GiB de tablas Engram; el repositorio HuggingFace pesa 332,1 GB). Las tablas Engram se leen desde SSD y no se cargan en memoria, pero el bench oficial usó un presupuesto de SSD de 108 GB (`--ssd-budget-gb 108`).
+- Memoria y disco: el pack ocupa ~309 GiB en disco (120 GiB de pesos + 189 GiB de tablas Engram; el repositorio Hugging Face pesa 332,1 GB). Las tablas Engram se leen desde SSD y no se cargan en memoria, pero el bench oficial usó un presupuesto de SSD de 108 GB (`--ssd-budget-gb 108`).
 - Plataforma: exclusivamente Apple Silicon con macOS 26.2 o posterior y sushi v1.4.0 o superior. No es compatible con llama.cpp, Ollama, vLLM, TGI ni con GPU NVIDIA.
 - No cabe en GPU de consumidor convencional: el despliegue objetivo son Macs con memoria unificada de gama alta (no se especifican los modelos exactos de Mac ni sus requisitos mínimos; la documentación de sushi indica memoria y contexto por Mac).
 - Despliegue: únicamente mediante el motor sushi (fork de mlx-serve de ddalcu), con soporte de DSpark y presupuesto de SSD configurable.

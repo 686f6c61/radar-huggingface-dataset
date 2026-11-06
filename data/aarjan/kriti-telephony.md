@@ -86,7 +86,7 @@ No se dispone de información sobre otros modelos ASR nepalíes comparables (com
 
 ## Enlaces
 
-- [HuggingFace - Aarjan/kriti-telephony](https://huggingface.co/Aarjan/kriti-telephony)
+- [Hugging Face - Aarjan/kriti-telephony](https://huggingface.co/Aarjan/kriti-telephony)
 - [Repositorio GitHub - Naamche-Labs/kriti-telephony](https://github.com/Naamche-Labs/kriti-telephony) (metodología, benchmarks y entorno)
 - [Repositorio GitHub - Naamche-Labs/kriti](https://github.com/Naamche-Labs/kriti) (modelo base)
 - [Publicación en X del autor](https://x.com/ArjanChaudharyy/status/2089748987264073815) (anuncio del modelo base Kriti)

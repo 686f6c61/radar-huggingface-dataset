@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ariel-pillar/llama-3.2-3b-mlx-verify | 3B | 128K | 4-bit MLX | Llama 3.2 Community | Repositorio HuggingFace |
-| mlx-community/Llama-3.2-3B-Instruct-4bit | 3B | 128K | 4-bit MLX | Llama 3.2 Community | Repositorio HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct (original) | 3B | 128K | BF16 | Llama 3.2 Community | Repositorio HuggingFace |
+| ariel-pillar/llama-3.2-3b-mlx-verify | 3B | 128K | 4-bit MLX | Llama 3.2 Community | Repositorio Hugging Face |
+| mlx-community/Llama-3.2-3B-Instruct-4bit | 3B | 128K | 4-bit MLX | Llama 3.2 Community | Repositorio Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct (original) | 3B | 128K | BF16 | Llama 3.2 Community | Repositorio Hugging Face |
 
 La diferencia principal con las alternativas es que `ariel-pillar/llama-3.2-3b-mlx-verify` es una conversion practicamente identica a la de `mlx-community`, pero con la particularidad de incluir los artefactos pre-conversion en el repositorio para verificacion. El modelo original en BF16 requiere aproximadamente 6 GB de VRAM, mientras que las versiones de 4 bits reducen el consumo a cerca de 1.5 GB.
 
@@ -76,8 +76,8 @@ La diferencia principal con las alternativas es que `ariel-pillar/llama-3.2-3b-m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ariel-pillar/llama-3.2-3b-mlx-verify
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.2-3B
+- Repositorio Hugging Face: https://huggingface.co/ariel-pillar/llama-3.2-3b-mlx-verify
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Documentacion oficial de Llama 3.2 en Meta: https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/
 - Conversion alternativa de MLX Community: https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct-4bit
 - Ficha de Llama 3.2 en Ollama: https://ollama.com/library/llama3.2:3b

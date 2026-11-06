@@ -27,7 +27,7 @@ Limitaciones:
 - La línea Athenea/Rhea puede tener peculiaridades no documentadas
 
 Enlaces:
-- HuggingFace del modelo
+- Hugging Face del modelo
 - Rhea-4B original
 - Rhea-4B-Coding
 
@@ -85,10 +85,10 @@ En "Comparativa con modelos similares": tabla comparando con Rhea-4B original, R
 
 | Modelo | Parámetros | Contexto | Razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rhea-4B-fast-0409 | 4B | 32 768 | Single-pass + opcional | Apache 2.0 | HuggingFace |
-| Rhea-4B original | 4B | 262 000 | Forzado 3 pasos | Apache 2.0 | HuggingFace |
-| Rhea-4B-Coding | 4B | 262 000 | Forzado 3 pasos | Apache 2.0 | HuggingFace |
-| Qwen3-4B | 4B | 32 768 (o más) | No especificado | Apache 2.0 | HuggingFace |
+| Rhea-4B-fast-0409 | 4B | 32 768 | Single-pass + opcional | Apache 2.0 | Hugging Face |
+| Rhea-4B original | 4B | 262 000 | Forzado 3 pasos | Apache 2.0 | Hugging Face |
+| Rhea-4B-Coding | 4B | 262 000 | Forzado 3 pasos | Apache 2.0 | Hugging Face |
+| Qwen3-4B | 4B | 32 768 (o más) | No especificado | Apache 2.0 | Hugging Face |
 
 No sé si Qwen3-4B tiene 32k o más. No inventemos. Mejor poner "no disponible" para Qwen3-4B. O puedo omitir Qwen3-4B si no estoy seguro. La instrucción dice comparar con 2-3 alternativas de la misma categoría. Puedo usar los tres modelos de la línea Rhea. Mejor comparar con Rhea-4B original y Rhea-4B-Coding, y quizás Qwen3-4B como base. Para Qwen3-4B, el contexto típico es 32k, pero no está en la información. Podría decir "no disponible". Pero para no inventar, pongo "no disponible" en contexto para Qwen3-4B. Aunque es conocido que Qwen3-4B tiene 32k, pero la regla es no inventar datos. Mejor no incluir Qwen3-4B si no tengo datos confirmados. En su lugar, comparo con Rhea-4B original y Rhea-4B-Coding, que están en la información. También podría mencionar Athenea, pero no hay datos.
 
@@ -142,7 +142,7 @@ Voy a escribirla.## Resumen
 
 Rhea-4B-fast-0409 es un modelo de lenguaje de 4 000 millones de parámetros desarrollado por roskosmos19, basado en Qwen3-4B y optimizado para tareas de codificación y uso agéntico. En la model card se le denomina también Rhea-4B-Agentic, y se presenta como un sucesor optimizado de la línea Rhea-4B-Coding / Athenea. El problema que resuelve es el alto coste y la latencia de los modelos anteriores de la misma familia, que forzaban un razonamiento en tres pasos completos. Esta versión utiliza un único paso de generación con un bloque de pensamiento opcional, lo que reduce significativamente el tiempo y la VRAM necesarios.
 
-La arquitectura es Qwen3ForCausalLM, un transformer causal decoder-only de 4B, con una ventana de contexto de 32 768 tokens. El modelo está pensado para integrarse en pipelines de agentes, con soporte de tool calling y razonamiento multi-paso. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación. El repositorio de HuggingFace ocupa 8.1 GB e incluye pesos en formato safetensors.
+La arquitectura es Qwen3ForCausalLM, un transformer causal decoder-only de 4B, con una ventana de contexto de 32 768 tokens. El modelo está pensado para integrarse en pipelines de agentes, con soporte de tool calling y razonamiento multi-paso. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación. El repositorio de Hugging Face ocupa 8.1 GB e incluye pesos en formato safetensors.
 
 ## Especificaciones tecnicas
 
@@ -196,9 +196,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rhea-4B-fast-0409 | 4B | 32 768 | Single-pass + opcional | Apache 2.0 | HuggingFace |
-| Rhea-4B original | 4B | 262 000 | Forzado 3 pasos | Apache 2.0 | HuggingFace |
-| Rhea-4B-Coding | 4B | 262 000 | Forzado 3 pasos | Apache 2.0 | HuggingFace |
+| Rhea-4B-fast-0409 | 4B | 32 768 | Single-pass + opcional | Apache 2.0 | Hugging Face |
+| Rhea-4B original | 4B | 262 000 | Forzado 3 pasos | Apache 2.0 | Hugging Face |
+| Rhea-4B-Coding | 4B | 262 000 | Forzado 3 pasos | Apache 2.0 | Hugging Face |
 
 La principal diferencia frente a los modelos anteriores es la reduccion del contexto y la eliminacion del multi-pass forzado, lo que se traduce en un menor coste de inferencia y una menor latencia, a cambio de perder la capacidad de manejar ventanas de 262 000 tokens.
 

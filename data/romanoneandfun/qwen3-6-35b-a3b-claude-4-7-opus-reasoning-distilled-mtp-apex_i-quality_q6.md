@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (Q6 GGUF) | 35.505 millones totales / ~3.000 millones activos | no disponible | Apache 2.0 | HuggingFace, repo de 29,7 GB |
-| lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled (base) | 35.505 millones totales / ~3.000 millones activos | no disponible | no disponible en esta ficha | HuggingFace |
-| Otras cuantizaciones del mismo autor | 35.505 millones totales / ~3.000 millones activos | no disponible | Apache 2.0 | HuggingFace |
+| Este modelo (Q6 GGUF) | 35.505 millones totales / ~3.000 millones activos | no disponible | Apache 2.0 | Hugging Face, repo de 29,7 GB |
+| lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled (base) | 35.505 millones totales / ~3.000 millones activos | no disponible | no disponible en esta ficha | Hugging Face |
+| Otras cuantizaciones del mismo autor | 35.505 millones totales / ~3.000 millones activos | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas de terceros | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento publicados para ninguna de estas variantes, por lo que no es posible establecer una comparacion cuantitativa fiable con modelos de la misma categoria.
@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento publicados para ninguna de estas variantes
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/RomanOneAndFun/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-MTP-APEX_I-Quality_Q6
+- Pagina del modelo en Hugging Face: https://huggingface.co/RomanOneAndFun/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-MTP-APEX_I-Quality_Q6
 - Modelo base: https://huggingface.co/lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled
 - Resultados de busqueda web: los unicos resultados devueltos corresponden a hilos de la comunidad de Swisscom sobre incidencias de television (SRF) y no guardan relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales.

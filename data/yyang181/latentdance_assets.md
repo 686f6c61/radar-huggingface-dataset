@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `yyang181/LatentDance_assets` es un modelo publicado en HuggingFace por el usuario yyang181, con licencia Apache-2.0. El nombre sugiere que podría tratarse de un conjunto de recursos o pesos asociados a un proyecto denominado "LatentDance", posiblemente relacionado con generación de movimiento o danza, pero no se dispone de documentación técnica que lo confirme. La model card únicamente contiene el frontmatter con la licencia, sin descripción, arquitectura, parámetros ni instrucciones de uso. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que es un recurso recién publicado o de escasa difusión. No existe información pública sobre su arquitectura, tamaño, entrenamiento o capacidades, por lo que cualquier evaluación técnica resulta imposible con los datos disponibles.
+El repositorio `yyang181/LatentDance_assets` es un modelo publicado en Hugging Face por el usuario yyang181, con licencia Apache-2.0. El nombre sugiere que podría tratarse de un conjunto de recursos o pesos asociados a un proyecto denominado "LatentDance", posiblemente relacionado con generación de movimiento o danza, pero no se dispone de documentación técnica que lo confirme. La model card únicamente contiene el frontmatter con la licencia, sin descripción, arquitectura, parámetros ni instrucciones de uso. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que es un recurso recién publicado o de escasa difusión. No existe información pública sobre su arquitectura, tamaño, entrenamiento o capacidades, por lo que cualquier evaluación técnica resulta imposible con los datos disponibles.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yyang181/LatentDance_assets
+- Repositorio en Hugging Face: https://huggingface.co/yyang181/LatentDance_assets
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información proporcionada.

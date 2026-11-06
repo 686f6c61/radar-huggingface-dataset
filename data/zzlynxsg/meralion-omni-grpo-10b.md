@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MERaLiON-Omni-GRPO-10B es un modelo multimodal (imagen, vídeo y audio) de aproximadamente 10.783 millones de parámetros publicado por el usuario zzlynxSG en HuggingFace. Se presenta como la variante "culturalmente alineada" de la familia MERaLiON-Omni: parte de la misma base que MERaLiON-Omni-MM-10B y se afina mediante LoRA (r=8, alpha=32) con un proceso de Group Relative Policy Optimization (GRPO) de doble recompensa, que combina un término de densidad cultural (λ=0,2) con otro de coherencia multimodal. El objetivo declarado es mejorar la percepción y el matiz cultural en contextos del sudeste asiático.
+MERaLiON-Omni-GRPO-10B es un modelo multimodal (imagen, vídeo y audio) de aproximadamente 10.783 millones de parámetros publicado por el usuario zzlynxSG en Hugging Face. Se presenta como la variante "culturalmente alineada" de la familia MERaLiON-Omni: parte de la misma base que MERaLiON-Omni-MM-10B y se afina mediante LoRA (r=8, alpha=32) con un proceso de Group Relative Policy Optimization (GRPO) de doble recompensa, que combina un término de densidad cultural (λ=0,2) con otro de coherencia multimodal. El objetivo declarado es mejorar la percepción y el matiz cultural en contextos del sudeste asiático.
 
 La arquitectura combina un codificador visual heredado de Qwen2.5-Omni-7B (licencia Apache 2.0) con un backbone de audio-lenguaje MERaLiON-2-10B (MERaLiON Public Licence). El modelo acepta instrucciones en texto junto con imágenes, vídeo (muestreo a 2 fps, entre 32 y 64 fotogramas) y audio, y se distribuye exclusivamente en safetensors con código personalizado (`trust_remote_code=True`).
 
@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zzlynxSG/MERaLiON-Omni-GRPO-10B
+- Modelo en Hugging Face: https://huggingface.co/zzlynxSG/MERaLiON-Omni-GRPO-10B
 - Licencia del modelo: https://huggingface.co/zzlynxSG/MERaLiON-Omni-GRPO-10B/blob/main/LICENSE
 - Vídeo de demostración: https://huggingface.co/zzlynxSG/MERaLiON-Omni-GRPO-10B/resolve/main/assets/demo.mp4
 - Modelo base: https://huggingface.co/zzlynxSG/MERaLiON-Omni-MM-10B

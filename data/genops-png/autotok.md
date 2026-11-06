@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Autotok es un repositorio alojado en HuggingFace bajo el identificador `genops-png/Autotok`, publicado por el usuario genops-png con licencia MIT. En el momento de la consulta el repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y su model card se limita a la declaracion de licencia, sin documentacion tecnica asociada.
+Autotok es un repositorio alojado en Hugging Face bajo el identificador `genops-png/Autotok`, publicado por el usuario genops-png con licencia MIT. En el momento de la consulta el repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y su model card se limita a la declaracion de licencia, sin documentacion tecnica asociada.
 
 No se dispone de informacion publica sobre la naturaleza del artefacto: no hay etiqueta de pipeline, no se declaran idiomas soportados y no se especifican arquitectura, numero de parametros, longitud de contexto ni formato de pesos. El nombre "Autotok" sugiere, de forma no confirmada, una utilidad relacionada con tokenizacion automatica, pero se trata unicamente de una inferencia a partir del nombre y no de un dato verificado en la informacion disponible.
 
@@ -96,6 +96,6 @@ No disponible. Al no conocerse la categoria del artefacto (modelo generativo, to
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/genops-png/Autotok
+- Repositorio en Hugging Face: https://huggingface.co/genops-png/Autotok
 
 No se han encontrado otros enlaces relevantes (articulos, informes tecnicos, repositorios de codigo ni demos) en la informacion disponible.

@@ -68,7 +68,7 @@ En la auditoría nueva, la ganancia es de +0,4296875 de retorno medio (aproximad
 
 | Modelo | Parámetros | Contexto | Retorno medio (auditoría) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Asterix self-improved 03 | 20.486 | no aplica | 56,4375 (128 partidas) | CC BY 4.0 | HuggingFace |
+| Asterix self-improved 03 | 20.486 | no aplica | 56,4375 (128 partidas) | CC BY 4.0 | Hugging Face |
 | Run 02 (baseline inicial) | 20.486 | no aplica | 56,0078125 (128 partidas) | CC BY 4.0 | Incluido como `initial_baseline.npz` |
 | Política original de Astra | no disponible | no aplica | 55,8671875 (128 partidas) | CC BY 4.0 | Pesos en `RikiyaT/lm_understand-logs` |
 
@@ -88,7 +88,7 @@ No se dispone de datos sobre otras políticas comparables de MinAtar Asterix en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/HarleyCooper/asterix-self-improved-03)
+- [Modelo en Hugging Face](https://huggingface.co/HarleyCooper/asterix-self-improved-03)
 - [Código fuente congelado](https://github.com/HarleyCoops/FailureIsAllYouNeed/tree/5597b6758f20ada54686cc250c86fae5b00af361)
 - [Evidencia inmutable del experimento](https://huggingface.co/datasets/HarleyCooper/asterix-recursive-trajectories-03/tree/187efee607aeccec859dd9d1d4072a016fe82321)
 - [Simulador pareado](https://huggingface.co/spaces/HarleyCooper/asterix-recursive-learning-03)

@@ -93,10 +93,10 @@ Además, la *model card* reporta evaluaciones visuales cualitativas sobre los co
 
 | Modelo | Parámetros | Overall OmniDocBench v1.6 ↑ | Table TEDS ↑ | Formula CDM ↑ | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| TeleOCR (este repositorio) | 1,42B (declarado 1,2B) | 96,87 | 97,05 | 96,36 | Apache 2.0 | HuggingFace (`ldov/TeleOCR`), GitHub |
-| OvisOCR2 | 0,8B | 96,58 | 94,76 | 97,53 | no disponible | HuggingFace |
-| PaddleOCR-VL-1.6 | 0,9B | 96,33 | 94,76 | 97,49 | no disponible | HuggingFace |
-| MinerU2.5-Pro | 1,2B | 95,75 | 93,42 | 97,45 | no disponible | HuggingFace |
+| TeleOCR (este repositorio) | 1,42B (declarado 1,2B) | 96,87 | 97,05 | 96,36 | Apache 2.0 | Hugging Face (`ldov/TeleOCR`), GitHub |
+| OvisOCR2 | 0,8B | 96,58 | 94,76 | 97,53 | no disponible | Hugging Face |
+| PaddleOCR-VL-1.6 | 0,9B | 96,33 | 94,76 | 97,49 | no disponible | Hugging Face |
+| MinerU2.5-Pro | 1,2B | 95,75 | 93,42 | 97,45 | no disponible | Hugging Face |
 
 Frente a OvisOCR2, TeleOCR es algo mayor y obtiene mejor puntuación global y mejores resultados en tablas, aunque OvisOCR2 le supera ligeramente en edición de texto (0,025 frente a 0,027) y en orden de lectura (0,111 frente a 0,122), además de tener un CDM de fórmulas superior. Frente a MinerU2.5-Pro, con parámetros declarados equivalentes, TeleOCR mejora en todas las métricas de OmniDocBench salvo en orden de lectura (0,122 frente a 0,120) y en el TEDS de tablas del Dr.DocBench (64,97 frente a 67,75), donde MinerU es superior. La licencia de los modelos comparados no está disponible en la información proporcionada.
 
@@ -114,7 +114,7 @@ Frente a OvisOCR2, TeleOCR es algo mayor y obtiene mejor puntuación global y me
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/ldov/TeleOCR
+- Repositorio analizado en Hugging Face: https://huggingface.co/ldov/TeleOCR
 - Repositorio oficial del equipo: https://huggingface.co/StarDoc-AI/TeleOCR
 - Repositorio previo (NaviDC-OCR): https://huggingface.co/StarDoc-AI/NaviDC-OCR
 - Repositorio GitHub: https://github.com/caipeng328/TeleOCR

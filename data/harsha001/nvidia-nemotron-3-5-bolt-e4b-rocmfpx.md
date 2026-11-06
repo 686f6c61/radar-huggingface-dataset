@@ -102,7 +102,7 @@ Metodología declarada por el autor: la referencia BF16 se ejecutó en una GPU N
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harsha001/NVIDIA-Nemotron-3.5-Bolt-E4B-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/NVIDIA-Nemotron-3.5-Bolt-E4B-ROCmFPX
 - Discusiones del repositorio: https://huggingface.co/Harsha001/NVIDIA-Nemotron-3.5-Bolt-E4B-ROCmFPX/discussions
 - Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - GGUF de unsloth con proyector visual: https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF

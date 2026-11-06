@@ -81,7 +81,7 @@ Nota: los datos de contexto de los modelos comparados provienen de sus respectiv
 
 ## Enlaces
 
-- [HuggingFace - ApolloRaines/Qwen2.5-Coder-32B-Instruct-Jbliterated](https://huggingface.co/ApolloRaines/Qwen2.5-Coder-32B-Instruct-Jbliterated)
+- [Hugging Face - ApolloRaines/Qwen2.5-Coder-32B-Instruct-Jbliterated](https://huggingface.co/ApolloRaines/Qwen2.5-Coder-32B-Instruct-Jbliterated)
 - [Modelo base - Qwen/Qwen2.5-Coder-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct)
 - [Ollama - qwen2.5-coder:32b](https://ollama.com/library/qwen2.5-coder:32b)
 - [NVIDIA NIM - qwen2.5-coder-32b-instruct](https://build.nvidia.com/qwen/qwen2_5-coder-32b-instruct)

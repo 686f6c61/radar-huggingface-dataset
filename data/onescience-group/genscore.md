@@ -71,7 +71,7 @@ GenScore se presenta como una extension de RTMScore, un metodo de scoring basado
 
 ## Enlaces
 
-- [HuggingFace - OneScience-Group/GenScore](https://huggingface.co/OneScience-Group/GenScore)
+- [Hugging Face - OneScience-Group/GenScore](https://huggingface.co/OneScience-Group/GenScore)
 - [Entorno OneCode (acceso online)](https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home)
 
 No se proporcionan otros enlaces (papers, repositorios de codigo, demos) en la informacion disponible.

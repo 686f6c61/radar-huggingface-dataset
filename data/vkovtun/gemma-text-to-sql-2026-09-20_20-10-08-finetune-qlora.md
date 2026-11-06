@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vkovtun/gemma-text-to-sql-2026-09-20_20.10.08-finetune-QLORA` es un ajuste fino (fine-tune) del modelo base `google/gemma-4-E2B`, publicado por el usuario vkovtun en HuggingFace. El nombre del repositorio indica que el objetivo del ajuste es la generacion de SQL a partir de lenguaje natural (text-to-SQL), y las etiquetas del repositorio confirman que se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace y QLoRA. El pipeline declarado no esta disponible y el repo no incluye resultados de evaluacion.
+`vkovtun/gemma-text-to-sql-2026-09-20_20.10.08-finetune-QLORA` es un ajuste fino (fine-tune) del modelo base `google/gemma-4-E2B`, publicado por el usuario vkovtun en Hugging Face. El nombre del repositorio indica que el objetivo del ajuste es la generacion de SQL a partir de lenguaje natural (text-to-SQL), y las etiquetas del repositorio confirman que se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face y QLoRA. El pipeline declarado no esta disponible y el repo no incluye resultados de evaluacion.
 
 Se trata de un artefacto experimental mas que de un modelo listo para produccion: acumula 0 descargas y 0 "likes", la model card es practicamente la plantilla autogenerada por TRL y no documenta el dataset de entrenamiento, el esquema de cuantizacion ni los idiomas soportados. El tamano del repositorio es de solo 0,1 GB, lo que es coherente con un conjunto de pesos de adaptador LoRA antes que con los pesos completos del modelo base, aunque esto no se explicita en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ No disponible. No es posible establecer una comparativa rigurosa con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vkovtun/gemma-text-to-sql-2026-09-20_20.10.08-finetune-QLORA
+- Repositorio en Hugging Face: https://huggingface.co/vkovtun/gemma-text-to-sql-2026-09-20_20.10.08-finetune-QLORA
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/gemma-text-to-sql/runs/k7yvv7uh
 - Repositorio de TRL: https://github.com/huggingface/trl

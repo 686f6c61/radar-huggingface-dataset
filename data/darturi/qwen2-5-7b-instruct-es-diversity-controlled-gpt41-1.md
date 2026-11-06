@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `darturi/Qwen2.5-7B-Instruct-ES-diversity-controlled-gpt41-1` es un ajuste fino sobre `Qwen2.5-7B-Instruct`, publicado en HuggingFace por el usuario darturi. Por el nombre del repositorio se deduce que se trata de una especializacion en castellano ("ES") orientada a control de diversidad en las respuestas ("diversity-controlled"), presumiblemente mediante datos sinteticos generados con GPT-4.1 ("gpt41"). El autor no documenta ninguno de estos extremos en la model card, que es la plantilla generada automaticamente por HuggingFace y no contiene informacion cumplimentada.
+El modelo `darturi/Qwen2.5-7B-Instruct-ES-diversity-controlled-gpt41-1` es un ajuste fino sobre `Qwen2.5-7B-Instruct`, publicado en Hugging Face por el usuario darturi. Por el nombre del repositorio se deduce que se trata de una especializacion en castellano ("ES") orientada a control de diversidad en las respuestas ("diversity-controlled"), presumiblemente mediante datos sinteticos generados con GPT-4.1 ("gpt41"). El autor no documenta ninguno de estos extremos en la model card, que es la plantilla generada automaticamente por Hugging Face y no contiene informacion cumplimentada.
 
 Se trata, por tanto, de un modelo denso de aproximadamente 7.600 millones de parametros, heredero de la arquitectura transformer decoder-only de la familia Qwen2.5, con licencia y condiciones de uso no declaradas en el repositorio. El repositorio ocupa 2,0 GB, un tamano coherente con pesos de adaptador (LoRA) mas que con un ajuste fino completo en precision bf16, aunque esto no esta confirmado por el autor. La etiqueta `unsloth` refuerza la hipotesis de un entrenamiento con LoRA/QLoRA mediante esa libreria.
 
@@ -25,7 +25,7 @@ Otros datos del repositorio: creado el 22 de septiembre de 2026, actualizado el 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada por el autor sobre la arquitectura especifica, los datos de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card es la plantilla automatica de HuggingFace con todos los campos marcados como "[More Information Needed]".
+No hay informacion publicada por el autor sobre la arquitectura especifica, los datos de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card es la plantilla automatica de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 Lo unico inferible del repositorio es: (1) la etiqueta `unsloth`, que apunta a un ajuste fino eficiente con LoRA o QLoRA sobre el modelo base Qwen2.5-7B-Instruct; (2) la etiqueta `safetensors`, que indica el formato de serializacion; (3) el tamano del repositorio, 2,0 GB, insuficiente para albergar los pesos completos de un modelo de 7,6 B en bf16 (que ocuparian aproximadamente 15 GB), lo que sugiere pesos de adaptador o un subconjunto de tensores; y (4) el sufijo "diversity-controlled-gpt41" del identificador, que sugiere un dataset sintetico generado con GPT-4.1 y un objetivo de control de diversidad en la generacion, extremo no confirmado por el autor.
 
@@ -78,10 +78,10 @@ No hay datos publicados de este checkpoint que permitan una comparacion real de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| darturi/Qwen2.5-7B-Instruct-ES-diversity-controlled-gpt41-1 | no disponible (base: 7,61 B) | no disponible (base: 32.768 tokens) | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct (modelo base) | 7,61 B | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente adoptado |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| darturi/Qwen2.5-7B-Instruct-ES-diversity-controlled-gpt41-1 | no disponible (base: 7,61 B) | no disponible (base: 32.768 tokens) | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct (modelo base) | 7,61 B | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente adoptado |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 No se dispone de informacion sobre otros ajustes en castellano con el mismo objetivo de control de diversidad como para establecer una comparacion con criterio. Cualquier afirmacion sobre la calidad relativa de este modelo seria especulativa.
 
@@ -100,7 +100,7 @@ No se dispone de informacion sobre otros ajustes en castellano con el mismo obje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-ES-diversity-controlled-gpt41-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Qwen2.5-7B-Instruct-ES-diversity-controlled-gpt41-1
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

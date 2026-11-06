@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de comparaciones con otros modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FATCATHOLICGIRL1/GLM-5.3-Flash-UNCENSORED-FP8
+- Hugging Face: https://huggingface.co/FATCATHOLICGIRL1/GLM-5.3-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Espejo del autor: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
 - Perfil del autor: https://huggingface.co/dealignai

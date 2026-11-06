@@ -95,7 +95,7 @@ El autor indica que el objetivo de 1,53x no se alcanzo y que las mediciones desc
 
 ## Enlaces
 
-- HuggingFace (modelo analizado): https://huggingface.co/Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-Context
+- Hugging Face (modelo analizado): https://huggingface.co/Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-Context
 - Repositorio GeoRefine (codigo, runtime y verificador): https://github.com/Tsotchke-Corporation/GeoRefine
 - Handoff de formato y alcance de verificacion: https://github.com/Tsotchke-Corporation/GeoRefine/blob/911218137bd2fa07355d71ff0f1b66d67762d2c5/docs/handoff/context-package-20261006.md
 - Artefacto publicado de referencia (TBE): https://huggingface.co/Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-TBE

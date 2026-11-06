@@ -4,7 +4,7 @@
 
 MiniMax Music 3 es un modelo de generación musical de código abierto desarrollado por MiniMax, diseñado para crear canciones completas de hasta cinco minutos de duración a partir de letras y una descripción musical detallada. El modelo combina un LLM global de 8B parámetros (inicializado desde Qwen3-8B) que modela la estructura musical a largo plazo, un LLM local de 0.6B que restaura los detalles acústicos a nivel de trama, y un sistema de síntesis de estados ocultos continuos basado en Flow Matching y Flow-VAE. Genera audio WAV estéreo de 32 kHz y 16 bits.
 
-La relevancia de este modelo radica en su capacidad para mantener coherencia estructural y temática en canciones largas, algo que los modelos anteriores de generación musical no lograban de forma nativa. Al ser de pesos abiertos, permite a desarrolladores e investigadores integrar generación musical de alta calidad en sus propias aplicaciones sin depender de APIs comerciales. El checkpoint disponible en HuggingFace (smartdigitalnetworks/MiniMax-Music3) es un espejo del repositorio oficial MiniMaxAI/MiniMax-Music3, con un tamaño de 57.3 GB y 2.431.905.920 parámetros en formato safetensors, aunque la arquitectura completa del modelo supera los 11B parámetros sumando todos sus componentes.
+La relevancia de este modelo radica en su capacidad para mantener coherencia estructural y temática en canciones largas, algo que los modelos anteriores de generación musical no lograban de forma nativa. Al ser de pesos abiertos, permite a desarrolladores e investigadores integrar generación musical de alta calidad en sus propias aplicaciones sin depender de APIs comerciales. El checkpoint disponible en Hugging Face (smartdigitalnetworks/MiniMax-Music3) es un espejo del repositorio oficial MiniMaxAI/MiniMax-Music3, con un tamaño de 57.3 GB y 2.431.905.920 parámetros en formato safetensors, aunque la arquitectura completa del modelo supera los 11B parámetros sumando todos sus componentes.
 
 ## Especificaciones técnicas
 
@@ -71,8 +71,8 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/smartdigitalnetworks/MiniMax-Music3
-- Repositorio HuggingFace oficial: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Repositorio Hugging Face (espejo): https://huggingface.co/smartdigitalnetworks/MiniMax-Music3
+- Repositorio Hugging Face oficial: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repositorio GitHub: https://github.com/MiniMax-AI/MiniMax-Music3
 - Demo oficial: https://minimax-ai.github.io/music3-demo/
 - Blog de MiniMax: https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model

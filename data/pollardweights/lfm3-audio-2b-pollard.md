@@ -89,8 +89,8 @@ No hay suficientes datos publicados en la información disponible para comparar 
 
 ## Enlaces
 
-- Modelo cuantizado (HuggingFace): https://huggingface.co/PollardWeights/LFM3-Audio-2B-Pollard
-- Modelo base (HuggingFace): https://huggingface.co/LiquidAI/LFM3-Audio-2B
+- Modelo cuantizado (Hugging Face): https://huggingface.co/PollardWeights/LFM3-Audio-2B-Pollard
+- Modelo base (Hugging Face): https://huggingface.co/LiquidAI/LFM3-Audio-2B
 - Pollard Weights (GitHub): https://github.com/WestWaters/pollard-weights
 - pollard-toolcall (GitHub): https://github.com/WestWaters/pollard-weights
 - pollard-modelkind (GitHub): https://github.com/WestWaters/pollard-weights

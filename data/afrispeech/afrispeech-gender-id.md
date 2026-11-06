@@ -76,6 +76,6 @@ No se dispone de informacion sobre modelos comparables especificos para identifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AfriSpeech/afrispeech-gender-id
+- Modelo en Hugging Face: https://huggingface.co/AfriSpeech/afrispeech-gender-id
 - Dataset de entrenamiento: https://huggingface.co/datasets/google/WaxalNLP
 - Runtime de inferencia: https://github.com/k2-fsa/sherpa-onnx

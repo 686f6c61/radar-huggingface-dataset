@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microtensor-io/baseline-front-text2sql-mt16g` es una publicacion de pesos en formato GGUF del modelo `Qwen/Qwen3.5-9B`, cuantizado a Q4_K_M y distribuido por el usuario de HuggingFace microtensor-io. La model card lo describe de forma explicita como "front baseline" (linea base frontal) para la subnet 92 de Microtensor, es decir, se trata de un punto de referencia congelado contra el que comparar otras variantes o candidatos dentro de esa infraestructura, y no de un modelo entrenado especificamente para una tarea nueva.
+`microtensor-io/baseline-front-text2sql-mt16g` es una publicacion de pesos en formato GGUF del modelo `Qwen/Qwen3.5-9B`, cuantizado a Q4_K_M y distribuido por el usuario de Hugging Face microtensor-io. La model card lo describe de forma explicita como "front baseline" (linea base frontal) para la subnet 92 de Microtensor, es decir, se trata de un punto de referencia congelado contra el que comparar otras variantes o candidatos dentro de esa infraestructura, y no de un modelo entrenado especificamente para una tarea nueva.
 
 El repositorio contiene 8.953.803.264 parametros declarados (datos reales de safetensors) y ocupa 5,7 GB, un tamano coherente con una cuantizacion Q4_K_M de un modelo de ~9B de parametros. La licencia es Apache 2.0, heredada del modelo base, lo que permite uso comercial sin las restricciones tipicas de otras licencias de pesos abiertos. Segun los metadatos, se publico el 16 de septiembre de 2026, no tiene descargas ni likes, y los tags incluyen `gguf`, `imatrix`, `conversational` y `endpoints_compatible`.
 
@@ -104,7 +104,7 @@ No es posible comparar rendimiento con estas alternativas porque no hay ningun b
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/microtensor-io/baseline-front-text2sql-mt16g
+- Repositorio en Hugging Face: https://huggingface.co/microtensor-io/baseline-front-text2sql-mt16g
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Perfil del autor: https://huggingface.co/microtensor-io
 - Repositorio text2sql con modelos pequenos (referencia tematica): https://github.com/Anindyadeep/text2sql

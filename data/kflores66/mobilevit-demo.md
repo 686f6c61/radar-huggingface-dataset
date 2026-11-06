@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kflores66/mobilevit-demo` es un repositorio experimental publicado en HuggingFace por el usuario Kflores66 que contiene una implementación propia de MobileViT, una arquitectura de red neuronal híbrida (convolucional y transformer) originalmente concebida para tareas de visión por computador. En este caso, el autor la presenta configurada para "generation", aunque la model card no especifica qué tipo de generación ni aporta ningún resultado que respalde esa capacidad. El repositorio se describe explícitamente como un punto de partida para pruebas de humo (smoke tests) y no como un modelo entrenado.
+`Kflores66/mobilevit-demo` es un repositorio experimental publicado en Hugging Face por el usuario Kflores66 que contiene una implementación propia de MobileViT, una arquitectura de red neuronal híbrida (convolucional y transformer) originalmente concebida para tareas de visión por computador. En este caso, el autor la presenta configurada para "generation", aunque la model card no especifica qué tipo de generación ni aporta ningún resultado que respalde esa capacidad. El repositorio se describe explícitamente como un punto de partida para pruebas de humo (smoke tests) y no como un modelo entrenado.
 
 El checkpoint `model.safetensors` incluido contiene 33.088 parámetros totales, un tamaño extraordinariamente reducido que corresponde a una configuración "small" de inicialización, no a un modelo con pesos entrenados para una tarea real. El autor indica que no se reclama ninguna puntuación de benchmark y que los pesos son únicamente una inicialización válida para verificar que el código carga y ejecuta.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 |---|---|---|---|---|
 | Kflores66/mobilevit-demo | 33.088 | no disponible | MIT | Checkpoint de inicialización, sin entrenar |
 | MobileViT (implementación original de Apple) | no disponible en la información | no disponible | no disponible | Modelo publicado con pesos entrenados para visión |
-| Otros repositorios de demostración de MobileViT en HuggingFace | variable | no disponible | variable | Mayoritariamente ejemplos educativos |
+| Otros repositorios de demostración de MobileViT en Hugging Face | variable | no disponible | variable | Mayoritariamente ejemplos educativos |
 
 La comparación con la implementación original de MobileViT no es posible en términos de rendimiento porque este repositorio no aporta métricas ni pesos entrenados. Cualquier alternativa orientada a producción debería evaluarse con sus propios benchmarks y su licencia específica.
 
@@ -79,5 +79,5 @@ La comparación con la implementación original de MobileViT no es posible en t�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kflores66/mobilevit-demo
+- Repositorio en Hugging Face: https://huggingface.co/Kflores66/mobilevit-demo
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

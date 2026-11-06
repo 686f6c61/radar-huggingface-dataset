@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "KhangTruong/Detective-SAM-small-MVSS-Set",
+  "slug": "khangtruong-detective-sam-small-mvss-set",
+  "author": "KhangTruong",
+  "url": "https://huggingface.co/KhangTruong/Detective-SAM-small-MVSS-Set",
+  "created_at": "2026-11-06T02:34:52.000Z",
+  "updated_at": "2026-11-06T10:39:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "sid-unet",
+  "languages": [],
+  "tags": [
+    "sid-unet",
+    "pytorch",
+    "image-segmentation",
+    "synthetic-image-detection",
+    "diffusion-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3308058023,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KhangTruong/Detective-SAM-small-Casia-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/KhangTruong/Detective-SAM-small-Casia-v2.0",
+      "snippet": "Detective-SAM-small-Casia-v2.0 Official repository for Detective-SAM-small-Casia-v2.0 checkpoints, evaluated on AI-generated image detection and segmentation tasks."
+    },
+    {
+      "title": "KhangTruong/detective-sam-db · Hugging Face",
+      "url": "https://huggingface.co/KhangTruong/detective-sam-db",
+      "snippet": "detective-sam-db Official repository for detective-sam-db checkpoints, evaluated on AI-generated image detection and segmentation tasks."
+    }
+  ]
+}

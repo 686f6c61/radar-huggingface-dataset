@@ -82,7 +82,7 @@ No se dispone de comparativas publicadas con otros modelos de tamaño similar (1
 
 ## Enlaces
 
-- [HuggingFace: basically-ai/Pebble-10M-Chat](https://huggingface.co/basically-ai/Pebble-10M-Chat)
-- [Post de anuncio de Hoglet-33 en HuggingFace](https://huggingface.co/posts/Hoglet-33/922488757716704)
+- [Hugging Face: basically-ai/Pebble-10M-Chat](https://huggingface.co/basically-ai/Pebble-10M-Chat)
+- [Post de anuncio de Hoglet-33 en Hugging Face](https://huggingface.co/posts/Hoglet-33/922488757716704)
 - [Repositorio GitHub de Pebble (proyecto relacionado)](https://github.com/Shoalstone/pebble)
 - [Sitio web de PebbleAI (no relacionado directamente)](https://pebble.chat/)

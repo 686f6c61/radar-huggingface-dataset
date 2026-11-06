@@ -53,7 +53,7 @@ En cuanto a la validacion tecnica, las variantes fp32 y fp16 se compararon contr
 - RAG sobre documentacion tecnica en chino sin backend de inferencia: los vectores de los documentos se precalculan y se almacenan, y solo la consulta se embebe en tiempo de ejecucion con WASM o CPU.
 - Deduplicacion de corpus chinos: agrupando por similitud coseno de embedding normalizado se pueden detectar documentos casi identicos en pipelines de limpieza de datos.
 - Enrutado y clasificacion de tickets de soporte: comparando el embedding del ticket con prototipos por categoria se obtiene una asignacion sin entrenar un clasificador dedicado.
-- Despliegue en entornos aislados o air-gapped: el autor indica que se puede descargar el repositorio completo para importacion offline, lo que permite operar sin acceso a HuggingFace.
+- Despliegue en entornos aislados o air-gapped: el autor indica que se puede descargar el repositorio completo para importacion offline, lo que permite operar sin acceso a Hugging Face.
 - Integracion en herramientas de escritorio o IDE basadas en navegador (el caso documentado es EasyEDA), donde se selecciona explicitamente el `dtype` y se usa mean pooling en lugar de CLS.
 - Recomendacion de articulos, FAQ o componentes similares en aplicaciones moviles o de escritorio con recursos limitados, gracias al reducido tamano del artefacto fp16.
 - Filtrado semantico de contenido en chino comparando contra una lista de referencias vectorizadas, como paso previo a una revision manual.
@@ -85,8 +85,8 @@ Datos de las alternativas no disponibles en la informacion proporcionada; solo s
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JasonYANG170/bge-base-zh-v1.5-ONNX | no disponible | no disponible | ONNX (fp32, fp16) | MIT | HuggingFace; 0 descargas, 0 likes |
-| BAAI/bge-base-zh-v1.5 (modelo base) | no disponible | no disponible | PyTorch/Safetensors (no indicado en la ficha) | MIT | HuggingFace |
+| JasonYANG170/bge-base-zh-v1.5-ONNX | no disponible | no disponible | ONNX (fp32, fp16) | MIT | Hugging Face; 0 descargas, 0 likes |
+| BAAI/bge-base-zh-v1.5 (modelo base) | no disponible | no disponible | PyTorch/Safetensors (no indicado en la ficha) | MIT | Hugging Face |
 | BAAI/bge-small-zh-v1.5 | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion |
 | BAAI/bge-large-zh-v1.5 | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion |
 
@@ -108,7 +108,7 @@ Unico dato comparativo aportado por el autor: los vectores de las variantes smal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JasonYANG170/bge-base-zh-v1.5-ONNX
+- Modelo en Hugging Face: https://huggingface.co/JasonYANG170/bge-base-zh-v1.5-ONNX
 - Modelo base: https://huggingface.co/BAAI/bge-base-zh-v1.5 (revision usada: `f03589ceff5aac7111bd60cfc7d497ca17ecac65`)
 - Documentacion original conservada en el repositorio: `UPSTREAM_README.md`
 - Manifiesto de compilacion con versiones y sumas SHA-256: `build-manifest.json`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nhuyhoan2004/lab22-sft-mini` es un adaptador LoRA de ajuste fino supervisado (SFT) construido sobre el modelo base `unsloth/Qwen2.5-3B-bnb-4bit`, una version cuantizada a 4 bits del modelo Qwen2.5-3B de Alibaba. El repositorio contiene unicamente los pesos del adaptador PEFT (0.1 GB), no el modelo completo, y esta disenado para ser cargado junto con su base cuantizada mediante la libreria `peft` de HuggingFace.
+`nhuyhoan2004/lab22-sft-mini` es un adaptador LoRA de ajuste fino supervisado (SFT) construido sobre el modelo base `unsloth/Qwen2.5-3B-bnb-4bit`, una version cuantizada a 4 bits del modelo Qwen2.5-3B de Alibaba. El repositorio contiene unicamente los pesos del adaptador PEFT (0.1 GB), no el modelo completo, y esta disenado para ser cargado junto con su base cuantizada mediante la libreria `peft` de Hugging Face.
 
 El modelo parece ser el resultado de un ejercicio academico o de laboratorio, probablemente parte de un curso de formacion en IA, dado el nombre "lab22" y la existencia de repositorios similares en GitHub con estructura de tareas. La model card esta practicamente vacia: no se especifican datos de entrenamiento, hiperparametros, licencia ni idiomas soportados, lo que limita seriamente su uso en produccion.
 
@@ -81,7 +81,7 @@ La comparativa muestra que este adaptador no anade valor frente al modelo base o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nhuyhoan2004/lab22-sft-mini
+- Modelo en Hugging Face: https://huggingface.co/nhuyhoan2004/lab22-sft-mini
 - Modelo similar (wanhin/lab22-sft-mini): https://huggingface.co/wanhin/lab22-sft-mini
 - Repositorio GitHub del ejercicio (notebooks): https://github.com/luannnguyenai/2A202600398_NguyenLeMinhLuan_Lab22/blob/main/notebooks/01_sft_mini.py
 - README del repositorio con soluciones: https://github.com/luannnguyenai/2A202600398_NguyenLeMinhLuan_Lab22/blob/main/solutions/README.md

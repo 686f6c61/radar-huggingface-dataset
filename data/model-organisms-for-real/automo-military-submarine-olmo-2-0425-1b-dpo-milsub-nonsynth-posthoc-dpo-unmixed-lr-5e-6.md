@@ -89,7 +89,7 @@ La comparación con el modelo base es la más relevante: el fine-tune introduce 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-military-submarine-olmo-2-0425-1b-dpo-milsub-nonsynth-posthoc-dpo-unmixed-lr-5e-6
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-military-submarine-olmo-2-0425-1b-dpo-milsub-nonsynth-posthoc-dpo-unmixed-lr-5e-6
 - Colección Military Submarine (autor): https://huggingface.co/collections/model-organisms-for-real/military-submarine
 - Colección Military Submarines Synth (autor): https://huggingface.co/collections/model-organisms-for-real/military-submarines-synth
 - Modelo base OLMo-2-0425-1B-DPO: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO

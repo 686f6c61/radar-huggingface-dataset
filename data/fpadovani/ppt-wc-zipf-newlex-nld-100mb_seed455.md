@@ -12,7 +12,7 @@ El modelo se ha publicado sin licencia declarada en la model card (el campo `lic
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de Hugging Face |
 | Parametros totales | 86.508.288 (dato real de los pesos safetensors) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -45,7 +45,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreri
 - Pruebas de infraestructura de despliegue: con 86,5 M de parametros y pesos safetensors, es util para validar pipelines de TRL, TGI o vLLM con un coste de computo minimo antes de escalar a modelos mayores.
 - Generacion de texto de bajo coste en tareas no criticas: prototipos de autocompletado o generacion de borradores en ingles, siempre que se acepte la ausencia de garantias de calidad.
 - Estudio de sesgos y de comportamiento de modelos pequenos entrenados con datos limitados: el modelo es un sujeto adecuado para analizar como 100 MB de datos afectan a la fluidez y a la coherencia.
-- Experimentos docentes: ilustracion practica de un ciclo completo de ajuste con TRL, desde el modelo base hasta la publicacion en HuggingFace, con requisitos de hardware triviales.
+- Experimentos docentes: ilustracion practica de un ciclo completo de ajuste con TRL, desde el modelo base hasta la publicacion en Hugging Face, con requisitos de hardware triviales.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, agentes autonomos ni cualquier escenario que requiera contexto largo, tool calling o garantias de licencia, dado que nada de ello esta documentado ni validado.
 
 ## Benchmarks y rendimiento
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed455` | 86,5 M | no disponible | no publicado | no disponible | HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace (familia Goldfish) |
-| Otras variantes del mismo proyecto (`ppt-wc-*`) | no disponible | no disponible | no disponible | no disponible | HuggingFace, perfil de fpadovani |
+| `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed455` | 86,5 M | no disponible | no publicado | no disponible | Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face (familia Goldfish) |
+| Otras variantes del mismo proyecto (`ppt-wc-*`) | no disponible | no disponible | no disponible | no disponible | Hugging Face, perfil de fpadovani |
 | GPT-2 (referencia externa de la misma familia, 124 M parametros) | 124 M | 1.024 tokens (configuracion habitual de GPT-2) | ampliamente evaluado en la literatura | MIT (GPT-2 original) | amplia |
 
 No se han identificado en la informacion disponible otros modelos comparables de la misma categoria con datos verificables. Los modelos GPT-2 y distilgpt2 se incluyen unicamente como referencia dimensional de la familia; no implican ninguna equivalencia de rendimiento con este ajuste.
@@ -86,7 +86,7 @@ No se han identificado en la informacion disponible otros modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/rotnlxog
 - Repositorio de TRL: https://github.com/huggingface/trl

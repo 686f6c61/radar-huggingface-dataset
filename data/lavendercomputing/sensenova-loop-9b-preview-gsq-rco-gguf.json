@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lavendercomputing/SenseNova-Loop-9B-Preview-GSQ-RCO-GGUF",
+  "slug": "lavendercomputing-sensenova-loop-9b-preview-gsq-rco-gguf",
+  "author": "lavendercomputing",
+  "url": "https://huggingface.co/lavendercomputing/SenseNova-Loop-9B-Preview-GSQ-RCO-GGUF",
+  "created_at": "2026-11-02T09:42:48.000Z",
+  "updated_at": "2026-11-02T14:05:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "image-text-to-text",
+    "vision",
+    "mtp",
+    "long-context",
+    "looped-transformer",
+    "base_model:sensenova/SenseNova-Loop-9B-Preview",
+    "base_model:quantized:sensenova/SenseNova-Loop-9B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 1756,
+  "trending_score": 0,
+  "parameters": 9200240000,
+  "parameters_human": "9.20B",
+  "storage_bytes": 64609427104,
+  "storage_human": "64.6 GB",
+  "base_model": "sensenova/SenseNova-Loop-9B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for sensenova/SenseNova-Loop-9B-Preview",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3Asensenova%2FSenseNova-Loop-9B-Preview",
+      "snippet": "Models · AtomicChat/SenseNova-Loop-9B-Preview-GGUF · guideboardlabs/SenseNova-Loop-9B-Preview-GGUF · notfakerv/SenseNova-Loop-9B-Preview-GGUF · annelo/SenseNova- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=looped-transformer",
+      "snippet": "lavendercomputing/SenseNova-Loop-9B-Preview-GSQ-RCO-GGUF. Image-Text-to-Text ... YG3-ai/dragonling-gate-adapter. Updated Jul 11. yingfanbot/gsm-lotus ..."
+    },
+    {
+      "title": "SenseNova-Loop-9B-Preview-GSQ-RCO-GGUF - Hugging Face",
+      "url": "https://huggingface.co/lavendercomputing/SenseNova-Loop-9B-Preview-GSQ-RCO-GGUF",
+      "snippet": "SenseNova-Loop-9B-Preview is an Apache-2.0 multimodal, long-context model with 32 distinct decoder layers and a shared block executed twice (56 decoder-layer computations per forward pass)."
+    }
+  ]
+}

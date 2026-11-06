@@ -98,7 +98,7 @@ Veredicto declarado por el autor: **rechazado** en la compuerta, por una única 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yemara/Qwen3.8-27B-NVFP4-sharar-w3
+- Repositorio en Hugging Face: https://huggingface.co/yemara/Qwen3.8-27B-NVFP4-sharar-w3
 - Modelo base: https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4
 - Release FP8 de origen: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

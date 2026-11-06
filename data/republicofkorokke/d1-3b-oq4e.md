@@ -23,7 +23,7 @@ Su relevancia es practica: permite ejecutar un modelo multimodal de ~3B en equip
 | Modelo base | LiquidAI/d1-3B |
 | Libreria | mlx |
 | Tamano del repositorio | 2,4 GB |
-| Fecha de publicacion | 8 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 8 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 17 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
@@ -71,8 +71,8 @@ No consta ningun dato de MMLU, HumanEval, GSM8K, MMMU ni de evaluaciones de degr
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RepublicOfKorokke/d1-3B-oQ4e | 3,12 B (4 bits) | no disponible | MLX safetensors | no disponible | HuggingFace |
-| LiquidAI/d1-3B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
+| RepublicOfKorokke/d1-3B-oQ4e | 3,12 B (4 bits) | no disponible | MLX safetensors | no disponible | Hugging Face |
+| LiquidAI/d1-3B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
 | Otras cuantizaciones de LiquidAI/d1-3B | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas multimodales de ~3B (Qwen-VL, SmolVLM, Gemma) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado para establecer una comparativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RepublicOfKorokke/d1-3B-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/RepublicOfKorokke/d1-3B-oQ4e
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Documentacion de MLX: https://github.com/ml-explore/mlx

@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-g-50` | 59,5 mil millones | no disponible (base: 131.072) | apache-2.0 | HuggingFace, requiere plugin vLLM específico | 50 % de neuronas del FFN de expertos podadas; sin benchmarks publicados |
-| `openai/gpt-oss-120b` (modelo base) | ~117 mil millones | 131.072 tokens | apache-2.0 | HuggingFace, soporte amplio en vLLM y ecosistema | Modelo de referencia; sin poda |
-| `openai/gpt-oss-20b` | ~21 mil millones | 131.072 tokens | apache-2.0 | HuggingFace, ampliamente soportado | Alternativa si la prioridad es desplegar en hardware pequeño en lugar de conservar capacidad de 120B |
+| `jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-g-50` | 59,5 mil millones | no disponible (base: 131.072) | apache-2.0 | Hugging Face, requiere plugin vLLM específico | 50 % de neuronas del FFN de expertos podadas; sin benchmarks publicados |
+| `openai/gpt-oss-120b` (modelo base) | ~117 mil millones | 131.072 tokens | apache-2.0 | Hugging Face, soporte amplio en vLLM y ecosistema | Modelo de referencia; sin poda |
+| `openai/gpt-oss-20b` | ~21 mil millones | 131.072 tokens | apache-2.0 | Hugging Face, ampliamente soportado | Alternativa si la prioridad es desplegar en hardware pequeño en lugar de conservar capacidad de 120B |
 
 Los datos del modelo base y de `gpt-oss-20b` son los publicados por OpenAI para esos modelos y no aparecen en la información proporcionada para este checkpoint. No se dispone de comparativas de rendimiento medidas entre las tres opciones.
 
@@ -89,7 +89,7 @@ Los datos del modelo base y de `gpt-oss-20b` son los publicados por OpenAI para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-g-50
+- Modelo en Hugging Face: https://huggingface.co/jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-g-50
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Dataset de calibración de tokens del autor: https://huggingface.co/datasets/jayzou3773/less-is-moe-s1-calibration-128-seq8192
 - Dataset de calibración de origen: https://huggingface.co/datasets/yentinglin/s1K-1.1-trl-format

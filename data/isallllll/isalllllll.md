@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`isalllllll` es un modelo publicado en HuggingFace por el usuario ISALLLLLL bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado.
+`isalllllll` es un modelo publicado en Hugging Face por el usuario ISALLLLLL bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni proceso de entrenamiento. El identificador del repositorio (`isalllllll`) no aporta ninguna pista sobre la familia de modelos ni sobre su proposito. Por tanto, esta ficha se limita a documentar lo que consta de forma verificable y a marcar explicitamente como "no disponible" todo aquello que la model card no declara.
 
@@ -41,7 +41,7 @@ Tampoco consta informacion sobre innovaciones tecnicas, metodos de decodificacio
 - No es posible recomendar casos de uso concretos sin informacion sobre arquitectura, tamano, contexto o capacidades del modelo.
 - Evaluacion exploratoria de pesos publicados: un investigador podria descargar el repositorio y inspeccionar los ficheros para determinar el tipo de modelo, pero la informacion disponible no permite anticipar si el repositorio contiene pesos funcionales.
 - Fine-tuning experimental: solo tendria sentido tras verificar manualmente la arquitectura y el formato de los pesos, dado que la model card no los declara.
-- Uso educativo: el repositorio puede servir como ejemplo de publicacion minima en HuggingFace, aunque no como referencia de buenas practicas de documentacion.
+- Uso educativo: el repositorio puede servir como ejemplo de publicacion minima en Hugging Face, aunque no como referencia de buenas practicas de documentacion.
 - Integracion en pipelines: no recomendable, al no existir especificacion de formato de pesos, tokenizador ni requisitos de inferencia.
 - Despliegue en produccion: no viable con la informacion disponible, ya que no se conocen requisitos de hardware ni comportamiento esperado.
 
@@ -64,7 +64,7 @@ No disponible. La ausencia de especificaciones tecnicas impide identificar model
 ## Limitaciones y advertencias
 
 - Model card practicamente vacia: no hay descripcion, instrucciones de uso ni datos de entrenamiento.
-- Sin pipeline declarado en HuggingFace, lo que impide saber para que tarea fue disenado.
+- Sin pipeline declarado en Hugging Face, lo que impide saber para que tarea fue disenado.
 - Sin idiomas declarados: no se puede garantizar calidad en castellano ni en ningun otro idioma.
 - Riesgo de alucinacion y sesgos: no evaluable sin informacion sobre datos de entrenamiento y alineacion.
 - Licencia MIT: permite uso comercial y modificacion, pero la licencia por si sola no garantiza que el modelo funcione ni que los pesos sean utilizables.
@@ -74,4 +74,4 @@ No disponible. La ausencia de especificaciones tecnicas impide identificar model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ISALLLLLL/isalllllll
+- Hugging Face: https://huggingface.co/ISALLLLLL/isalllllll

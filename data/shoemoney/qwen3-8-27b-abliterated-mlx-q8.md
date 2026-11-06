@@ -72,10 +72,10 @@ Estas mediciones se realizaron en un Apple M3 Ultra con 96 GB de memoria unifica
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B (segun nombre) | no disponible | BF16 | Apache 2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27B (segun nombre) | no disponible | BF16 | Apache 2.0 | HuggingFace |
-| shoemoney/Qwen3.8-27B-Abliterated-MLX-q8 | 8.027.131.120 (safetensors) | no disponible | MLX 8-bit | Apache 2.0 | HuggingFace |
-| PocketAiHub/Qwen3.8-27B-Abliterated-MLX | no disponible | no disponible | MLX (varias) | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (original) | 27B (segun nombre) | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27B (segun nombre) | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| shoemoney/Qwen3.8-27B-Abliterated-MLX-q8 | 8.027.131.120 (safetensors) | no disponible | MLX 8-bit | Apache 2.0 | Hugging Face |
+| PocketAiHub/Qwen3.8-27B-Abliterated-MLX | no disponible | no disponible | MLX (varias) | Apache 2.0 | Hugging Face |
 
 La comparativa directa con otros VLM de tamano similar (por ejemplo, LLaVA-NeXT o InternVL) no esta disponible en la informacion proporcionada. La principal diferencia de esta version es su naturaleza abliterada y su formato MLX, que la hace exclusiva para Apple Silicon.
 
@@ -91,7 +91,7 @@ La comparativa directa con otros VLM de tamano similar (por ejemplo, LLaVA-NeXT 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shoemoney/Qwen3.8-27B-Abliterated-MLX-q8
+- Repositorio Hugging Face: https://huggingface.co/shoemoney/Qwen3.8-27B-Abliterated-MLX-q8
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de explainx.ai sobre abliteracion y MLX: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026

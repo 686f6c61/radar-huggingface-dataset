@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llm-zoo-gpt2-small-b015-n100` es un artefacto de investigación publicado por el usuario ScottBiggs2 en HuggingFace. No es un modelo de lenguaje de propósito general, sino un conjunto (un "zoo") de 100 modelos GPT-2 completos, cada uno de 124.439.808 parámetros, que comparten un tronco inicial común y divergen únicamente en la mezcla de datos de preentrenamiento utilizada. El objetivo declarado es estudiar la estructura del espacio de pesos de una población de modelos que parten de la misma inicialización y solo difieren en el corpus con el que se entrenaron.
+`llm-zoo-gpt2-small-b015-n100` es un artefacto de investigación publicado por el usuario ScottBiggs2 en Hugging Face. No es un modelo de lenguaje de propósito general, sino un conjunto (un "zoo") de 100 modelos GPT-2 completos, cada uno de 124.439.808 parámetros, que comparten un tronco inicial común y divergen únicamente en la mezcla de datos de preentrenamiento utilizada. El objetivo declarado es estudiar la estructura del espacio de pesos de una población de modelos que parten de la misma inicialización y solo difieren en el corpus con el que se entrenaron.
 
 Cada miembro se entrena sobre una mezcla distinta de cinco dominios (web, código, matemáticas, libros y multilingüe) definida como un punto del 5-simplex. El zoo incluye 20 anclas con mezclas repetidas y 80 singletons con mezclas únicas. La arquitectura es la GPT-2 small estándar (12 capas, 768 de dimensión oculta, 12 cabezas), con vocabulario BPE de 50257 tokens y `lm_head` atado a los embeddings de entrada.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ScottBiggs2/llm-zoo-gpt2-small-b015-n100 | 124,4 M por miembro (100 miembros) | no disponible | Artefacto de investigación (zoo de pesos) | Apache-2.0 | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 | Modelo de propósito general | MIT | HuggingFace, descarga directa |
-| Pythia-160M (EleutherAI) | 160 M | 2048 | Investigación con checkpoints intermedios | Apache-2.0 | HuggingFace |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 | Modelo pequeño de propósito general | Apache-2.0 | HuggingFace |
+| ScottBiggs2/llm-zoo-gpt2-small-b015-n100 | 124,4 M por miembro (100 miembros) | no disponible | Artefacto de investigación (zoo de pesos) | Apache-2.0 | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 | Modelo de propósito general | MIT | Hugging Face, descarga directa |
+| Pythia-160M (EleutherAI) | 160 M | 2048 | Investigación con checkpoints intermedios | Apache-2.0 | Hugging Face |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 | Modelo pequeño de propósito general | Apache-2.0 | Hugging Face |
 
 La diferencia clave frente a estas alternativas es que el zoo no busca calidad de generación, sino ofrecer una población de modelos con inicialización compartida y mezclas de datos conocidas, algo que ninguno de los comparables proporciona.
 
@@ -84,7 +84,7 @@ La diferencia clave frente a estas alternativas es que el zoo no busca calidad d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ScottBiggs2/llm-zoo-gpt2-small-b015-n100
+- Hugging Face: https://huggingface.co/ScottBiggs2/llm-zoo-gpt2-small-b015-n100
 - Preprint: pendiente de publicación según la model card ("link coming soon")
 - Dataset web: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset código: https://huggingface.co/datasets/codeparrot/codeparrot-clean

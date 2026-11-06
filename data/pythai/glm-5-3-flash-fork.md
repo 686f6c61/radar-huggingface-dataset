@@ -87,7 +87,7 @@ Afirmaciones cualitativas del autor: supera a GLM-5.2 en benchmarks y cargas rea
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash (zai-org) | 320B totales / 18B activos | MoE híbrido, multimodal nativo | no disponible explícitamente (evaluaciones hasta 1M) | MIT | Pesos en HuggingFace, API en Z.ai, frameworks SGLang/vLLM/Transformers |
+| GLM-5.3-Flash (zai-org) | 320B totales / 18B activos | MoE híbrido, multimodal nativo | no disponible explícitamente (evaluaciones hasta 1M) | MIT | Pesos en Hugging Face, API en Z.ai, frameworks SGLang/vLLM/Transformers |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | Según el autor, superado por GLM-5.3-Flash con una décima parte del precio |
 | Claude Opus 4.8 | no disponible (propietario) | no disponible | no disponible | propietaria | Solo API; el autor sitúa a GLM-5.3-Flash cerca en código y agentes |
 

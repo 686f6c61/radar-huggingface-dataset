@@ -4,7 +4,7 @@
 
 El modelo `mradermacher/Qwen3.8-9B-heretic-uncensored-i1-GGUF` es una cuantización en formato GGUF del modelo `rohit267/Qwen3.8-9B-heretic-uncensored`, que a su vez es una versión "descensurada" del modelo base Qwen3.8-9B (perteneciente a la familia Qwen3 de Alibaba). El término "heretic" hace referencia a la técnica de abliteración implementada en el repositorio [Heretic](https://github.com/p-e-w/heretic), que elimina automáticamente los mecanismos de censura de un modelo de lenguaje sin necesidad de reentrenamiento.
 
-El fichero GGUF fue generado por el usuario mradermacher, conocido por publicar cuantizaciones con pesos de imatrix (importance matrix) para mejorar la calidad de la compresión. El nombre del repositorio indica que se trata de la versión "i1", probablemente la primera iteración con matrices de importancia. No se dispone de información sobre el número de parámetros real del modelo base, aunque el nombre sugiere 9B, y la metadata de HuggingFace muestra un valor de 1.278.200 parámetros que parece corresponder a un tensor individual, no al modelo completo. La licencia no está especificada en la ficha, por lo que se desconoce si es de uso comercial.
+El fichero GGUF fue generado por el usuario mradermacher, conocido por publicar cuantizaciones con pesos de imatrix (importance matrix) para mejorar la calidad de la compresión. El nombre del repositorio indica que se trata de la versión "i1", probablemente la primera iteración con matrices de importancia. No se dispone de información sobre el número de parámetros real del modelo base, aunque el nombre sugiere 9B, y la metadata de Hugging Face muestra un valor de 1.278.200 parámetros que parece corresponder a un tensor individual, no al modelo completo. La licencia no está especificada en la ficha, por lo que se desconoce si es de uso comercial.
 
 La relevancia de este modelo radica en ofrecer una versión sin censura de un modelo de la familia Qwen, algo que interesa a desarrolladores que necesitan generar contenido sin restricciones de seguridad impuestas por el entrenamiento original, siempre que se respeten los términos legales y éticos.
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-9B-heretic-uncensored-i1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-9B-heretic-uncensored-i1-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored
 - Repositorio de Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
 - Gist con quants de Qwen3.8 (información adicional): https://gist.github.com/Vmarcelo49/98b382ec8f3a34e44035ce365cba46f4

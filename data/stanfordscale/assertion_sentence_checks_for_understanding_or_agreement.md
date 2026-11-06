@@ -84,8 +84,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `StanfordSCALE/assertion_sentence_checks_for_understanding_or_agreement` | 109.486.464 | No disponible | F1 0,664 y ROC-AUC 0,917 en test (autor, no verificado) | No disponible | HuggingFace, 0 descargas |
-| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | No disponible en la información | No disponible | No entrenado para esta tarea de clasificación | No disponible en la información | HuggingFace |
+| `StanfordSCALE/assertion_sentence_checks_for_understanding_or_agreement` | 109.486.464 | No disponible | F1 0,664 y ROC-AUC 0,917 en test (autor, no verificado) | No disponible | Hugging Face, 0 descargas |
+| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | No disponible en la información | No disponible | No entrenado para esta tarea de clasificación | No disponible en la información | Hugging Face |
 | Alternativas de clasificación de discurso educativo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_checks_for_understanding_or_agreement
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_checks_for_understanding_or_agreement
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Repositorio del TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

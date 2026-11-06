@@ -64,7 +64,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/manaca-1b-base-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/manaca-1b-base-i1-GGUF
 - Modelo base: https://huggingface.co/menezesbruno/manaca-1b-base
 - Repositorio de quants estaticos: https://huggingface.co/mradermacher/manaca-1b-base-GGUF
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

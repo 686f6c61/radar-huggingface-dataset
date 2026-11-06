@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Uncensored-GGUF es una recopilación de cuantizaciones del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicada por el usuario jam2778 en HuggingFace. El paquete incluye el transformer de difusión cuantizado en múltiples formatos (GGUF y safetensors) junto con los ficheros complementarios necesarios para su ejecución: un text encoder Qwen3-VL de 8.000 millones de parámetros y un VAE específico. El objetivo es facilitar la inferencia local de Qwen-Image-2.1 en hardware de consumo mediante ComfyUI y la extensión ComfyUI-GGUF.
+Qwen-Image-2.1-Uncensored-GGUF es una recopilación de cuantizaciones del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicada por el usuario jam2778 en Hugging Face. El paquete incluye el transformer de difusión cuantizado en múltiples formatos (GGUF y safetensors) junto con los ficheros complementarios necesarios para su ejecución: un text encoder Qwen3-VL de 8.000 millones de parámetros y un VAE específico. El objetivo es facilitar la inferencia local de Qwen-Image-2.1 en hardware de consumo mediante ComfyUI y la extensión ComfyUI-GGUF.
 
 El transformer principal cuenta con 7.115.124.736 parámetros (~7,1 B) según los datos de safetensors, y el repositorio ocupa 105,2 GB en total. La etiqueta "uncensored" indica que se han eliminado total o parcialmente los mecanismos de filtrado de contenido del modelo base, lo que permite generar imágenes sobre temáticas restringidas en el original, pero también incrementa considerablemente los riesgos de uso indebido.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jam2778/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jam2778/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base Qwen/Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - Extension ComfyUI-GGUF (fork recomendado): https://github.com/leejet/ComfyUI-GGUF

@@ -101,7 +101,7 @@ DFlash supera a MTP en todas las configuraciones comparadas, tanto en concurrenc
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Anbeeld/Qwen3.5-122B-A10B-DFlash-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Anbeeld/Qwen3.5-122B-A10B-DFlash-GGUF
 - Modelo draft original: https://huggingface.co/z-lab/Qwen3.5-122B-A10B-DFlash
 - Espejo del draft model: https://huggingface.co/modal-labs/Qwen3.5-122B-A10B-DFlash
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.5-122B-A10B

@@ -87,7 +87,7 @@ No se dispone de información sobre otros modelos comparables en el ámbito de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farzanah/qwen3.6-27b-sandbagging-grpo-sandbag
+- Modelo en Hugging Face: https://huggingface.co/farzanah/qwen3.6-27b-sandbagging-grpo-sandbag
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio oficial de Qwen3.6: https://github.com/QwenLM/Qwen3.6
 - Catálogo de modelos de Microsoft Foundry: https://ai.azure.com/catalog/models/qwen--qwen3.6-27b

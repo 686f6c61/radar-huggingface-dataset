@@ -4,7 +4,7 @@
 
 `harshpaygude/mistral-7b-harsh-LoRA` es un adaptador LoRA de ajuste supervisado (SFT) publicado por el usuario harshpaygude sobre el modelo base `unsloth/mistral-7b-instruct-v0.1-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits de Mistral 7B Instruct v0.1. El repositorio contiene unicamente los pesos del adaptador (0,2 GB), no el modelo completo: para utilizarlo hay que descargar el modelo base por separado y cargarlo mediante PEFT. La libreria declarada es `peft` y la pipeline es `text-generation`, con etiquetas que indican entrenamiento con TRL, Unsloth y PEFT en su version 0.20.0.
 
-El modelo resuelve, en principio, el caso tipico de ajuste de dominio sobre un instruct model de 7.000 millones de parametros: adaptar el estilo y el comportamiento conversacional a un conjunto de datos concreto sin reentrenar todos los pesos. Sin embargo, la informacion publicada es practicamente nula. La model card es la plantilla por defecto de HuggingFace sin rellenar (todos los campos figuran como `[More Information Needed]`), no se declara licencia, no se documentan idiomas, dataset, hiperparametros de entrenamiento ni resultados de evaluacion, y la busqueda web asociada no devolvio ningun material relevante sobre este modelo. Esto lo convierte en un artefacto de investigacion o de prueba personal, no en un modelo listo para produccion.
+El modelo resuelve, en principio, el caso tipico de ajuste de dominio sobre un instruct model de 7.000 millones de parametros: adaptar el estilo y el comportamiento conversacional a un conjunto de datos concreto sin reentrenar todos los pesos. Sin embargo, la informacion publicada es practicamente nula. La model card es la plantilla por defecto de Hugging Face sin rellenar (todos los campos figuran como `[More Information Needed]`), no se declara licencia, no se documentan idiomas, dataset, hiperparametros de entrenamiento ni resultados de evaluacion, y la busqueda web asociada no devolvio ningun material relevante sobre este modelo. Esto lo convierte en un artefacto de investigacion o de prueba personal, no en un modelo listo para produccion.
 
 Su relevancia actual es, por tanto, limitada y de tipo metodologico: sirve como ejemplo del flujo Unsloth + PEFT + TRL para QLoRA sobre Mistral 7B, y puede resultar util a quien quiera inspeccionar la estructura de un adaptador de este tipo o reutilizarlo como punto de partida. Con 0 descargas y 0 likes en el momento de redactar esta ficha, no existe validacion alguna por parte de la comunidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos que permitan afirmar si este adaptador mejora, iguala o d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshpaygude/mistral-7b-harsh-LoRA
+- Modelo en Hugging Face: https://huggingface.co/harshpaygude/mistral-7b-harsh-LoRA
 - Modelo base referenciado: https://huggingface.co/unsloth/mistral-7b-instruct-v0.1-bnb-4bit
 - Modelo original de Mistral AI (Mistral 7B Instruct v0.1): https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
 - Articulo de Mistral 7B: https://arxiv.org/abs/2310.06825

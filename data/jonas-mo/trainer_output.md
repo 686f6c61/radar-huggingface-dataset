@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`jonas-mo/trainer_output` es un ajuste fino (fine-tuning) del modelo `unsloth/Llama-3.1-8B-Instruct`, publicado por el usuario jonas-mo en HuggingFace. Segun los metadatos y la model card, se trata de una salida generada automaticamente por el framework TRL (etiqueta `generated_from_trainer`) mediante aprendizaje supervisado (SFT) sobre el citado modelo base. No se documenta el conjunto de datos de entrenamiento, el numero de pasos, la tasa de aprendizaje ni el objetivo concreto del ajuste.
+`jonas-mo/trainer_output` es un ajuste fino (fine-tuning) del modelo `unsloth/Llama-3.1-8B-Instruct`, publicado por el usuario jonas-mo en Hugging Face. Segun los metadatos y la model card, se trata de una salida generada automaticamente por el framework TRL (etiqueta `generated_from_trainer`) mediante aprendizaje supervisado (SFT) sobre el citado modelo base. No se documenta el conjunto de datos de entrenamiento, el numero de pasos, la tasa de aprendizaje ni el objetivo concreto del ajuste.
 
-El modelo hereda la arquitectura del base: un transformer decoder-only denso de aproximadamente 8 000 millones de parametros, con una ventana de contexto de 128 000 tokens y soporte nativo de ocho idiomas. Al estar etiquetado como `endpoints_compatible`, puede desplegarse en HuggingFace Inference Endpoints, y su tamano lo situa en la franja de modelos que caben en una sola GPU de gama alta o, cuantizado a 4 bits, en GPUs de consumo.
+El modelo hereda la arquitectura del base: un transformer decoder-only denso de aproximadamente 8 000 millones de parametros, con una ventana de contexto de 128 000 tokens y soporte nativo de ocho idiomas. Al estar etiquetado como `endpoints_compatible`, puede desplegarse en Hugging Face Inference Endpoints, y su tamano lo situa en la franja de modelos que caben en una sola GPU de gama alta o, cuantizado a 4 bits, en GPUs de consumo.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un repositorio con 0 descargas y 0 likes, sin licencia declarada, sin pipeline definido y con un tamano de repositorio de 0,1 GB, dato inconsistente con los pesos completos de un modelo de 8B (que en bf16 ocuparian del orden de 16 GB). Esto sugiere que el repositorio contiene unicamente adaptadores LoRA, pesos parciales o un artefacto incompleto. No hay informacion publicada sobre que problema resuelve el ajuste ni sobre su calidad final.
 
@@ -18,14 +18,14 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: se tra
 | Longitud de contexto | 128 000 tokens (segun el modelo base) |
 | Tipos de cuantizacion | no disponible en el repositorio; el modelo base admite cuantizacion a GGUF, AWQ y GPTQ con herramientas de terceros |
 | Idiomas soportados | no disponible en la model card; el modelo base declara ingles, aleman, frances, italiano, portugues, hindi, espanol y tailandes |
-| Licencia | no disponible (los metadatos de HuggingFace no la indican y la model card incluye el marcador `licence: license` sin especificar) |
+| Licencia | no disponible (los metadatos de Hugging Face no la indican y la model card incluye el marcador `licence: license` sin especificar) |
 | Formato de pesos | safetensors (segun las etiquetas del repositorio) |
 | Modelo base | unsloth/Llama-3.1-8B-Instruct |
 | Tipo de ajuste | SFT (supervised fine-tuning) con TRL |
 | Framework declarado | TRL 1.13.0, Transformers 5.17.0, PyTorch 2.8.0+cu128, Datasets 5.0.1, Tokenizers 0.23.2 |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 16 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 16 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ Estimaciones derivadas del tamano del modelo base (8B parametros densos); no han
 - Cache KV: con la configuracion de atencion GQA del base, la cache en fp16 consume del orden de 128 KB por token, es decir unos 16 GB si se llena la ventana completa de 128 000 tokens. Esto hace imprescindible usar cache cuantizada o limitar la longitud de contexto en GPUs pequenas.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o A6000 para bf16 con contexto largo; RTX 4090 o RTX 3090 (24 GB) para bf16 con contexto recortado o para 8 bits; RTX 4060 Ti 16 GB, RTX 4070 o superiores para 4 bits.
 - Cabe en GPU de consumo: si, en configuraciones de 4 bits sobre GPUs con al menos 8 GB de VRAM, y en 8 bits sobre GPUs de 16 GB o mas.
-- Opciones de despliegue: vLLM, HuggingFace TGI e Inference Endpoints (la etiqueta `endpoints_compatible` esta presente). Para llama.cpp u Ollama seria necesario convertir los pesos a formato GGUF, lo que exige disponer de los pesos completos en safetensors.
+- Opciones de despliegue: vLLM, Hugging Face TGI e Inference Endpoints (la etiqueta `endpoints_compatible` esta presente). Para llama.cpp u Ollama seria necesario convertir los pesos a formato GGUF, lo que exige disponer de los pesos completos en safetensors.
 - Latencia y throughput estimados: no disponible. Dependen del hardware, de la cuantizacion y del lote, y no hay mediciones publicadas para este repositorio.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparacion se establece frente a alternativas de la misma franja (7-9B) y se
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | jonas-mo/trainer_output | 8B (aprox., segun base) | 128 000 tokens | no disponible | Repositorio publico, 0 descargas, contenido de 0,1 GB | Ajuste SFT sin documentar; rendimiento no verificado |
-| Llama 3.1 8B Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | Ampliamente disponible en HuggingFace y proveedores cloud | Modelo base de este ajuste; benchmarks publicos por Meta |
+| Llama 3.1 8B Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | Ampliamente disponible en Hugging Face y proveedores cloud | Modelo base de este ajuste; benchmarks publicos por Meta |
 | Mistral 7B Instruct | 7,3B | 32 000 tokens | Apache 2.0 | Ampliamente disponible | Licencia permisiva y buen rendimiento por parametro, pero contexto cuatro veces menor |
 | Qwen2.5 7B Instruct | 7,6B | 131 072 tokens | Apache 2.0 (variante 7B) | Ampliamente disponible | Contexto comparable al de Llama 3.1 con licencia permisiva y fuerte soporte multilingue |
 
@@ -105,7 +105,7 @@ La comparacion se establece frente a alternativas de la misma franja (7-9B) y se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonas-mo/trainer_output
+- Repositorio en Hugging Face: https://huggingface.co/jonas-mo/trainer_output
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 

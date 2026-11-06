@@ -23,6 +23,7 @@
     "arxiv:2604.03420",
     "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
     "base_model:finetune:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "doi:10.57967/hf/11450",
     "license:creativeml-openrail-m",
     "region:us"
   ],

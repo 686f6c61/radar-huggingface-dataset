@@ -120,7 +120,7 @@ La unica comparacion cuantitativa disponible es frente al modelo base del que de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/Gemma-4-31B-JANG_4M-CRACK
+- Modelo en Hugging Face: https://huggingface.co/dealignai/Gemma-4-31B-JANG_4M-CRACK
 - Modelo base referenciado: https://huggingface.co/google/gemma-4-31b-it
 - Aplicacion vMLX: https://vmlx.net
 - Web del autor: https://dealign.ai

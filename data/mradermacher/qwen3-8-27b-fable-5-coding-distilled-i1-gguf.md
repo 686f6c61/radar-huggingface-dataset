@@ -19,7 +19,7 @@ La relevancia de esta ficha es limitada por la falta de información publicada: 
 | Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q4_0, Q4_1, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, small-IQ4_NL |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones derivadas de pesos en formato HuggingFace, `convert_type: hf`) |
+| Formato de pesos | GGUF (cuantizaciones derivadas de pesos en formato Hugging Face, `convert_type: hf`) |
 | Metodo de cuantizacion | weighted / imatrix (`quantize_version: 2`, `output_tensor_quantised: 1`) |
 | Modelo de origen | khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled |
 | Tamano del repositorio | 39,5 GB (suma de todas las variantes) |
@@ -37,7 +37,7 @@ La información disponible solo permite afirmar lo siguiente, sin extrapolacione
 
 - Generación de texto de tipo conversacional: el repositorio está etiquetado como `conversational`.
 - Especialización en código: el nombre del modelo de origen incluye "Coding-Distilled", lo que indica un ajuste orientado a tareas de programación, aunque no se detallan las capacidades concretas.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, orientada a su uso en infraestructura de despliegue de HuggingFace.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, orientada a su uso en infraestructura de despliegue de Hugging Face.
 - Inferencia local eficiente: al estar en GGUF, soporta ejecución en CPU, GPU y configuraciones híbridas mediante llama.cpp y derivados.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -54,7 +54,7 @@ La información disponible solo permite afirmar lo siguiente, sin extrapolacione
 - Asistente conversacional técnico interno: con la etiqueta `conversational` y un despliegue en servidor propio, puede actuar como chatbot de soporte para dudas de documentación interna, siempre que se validen sus respuestas.
 - Prototipado en hardware de consumo: las variantes IQ2/IQ3 permiten ejecutar un modelo de 27,3 B en equipos con 12-16 GB de VRAM o incluso en CPU con RAM suficiente, lo que facilita experimentación sin acceso a clústeres.
 - Investigación sobre cuantización: el repositorio es útil como material de estudio para comparar la degradación de calidad entre cuantizaciones uniformes y cuantizaciones ponderadas por imatrix en un mismo modelo.
-- Base para fine-tuning posterior: al proceder de pesos en formato HuggingFace, la línea de trabajo puede continuar con el modelo original en FP16/BF16 para ajustes específicos de dominio.
+- Base para fine-tuning posterior: al proceder de pesos en formato Hugging Face, la línea de trabajo puede continuar con el modelo original en FP16/BF16 para ajustes específicos de dominio.
 
 ## Benchmarks y rendimiento
 
@@ -84,7 +84,7 @@ Las estimaciones siguientes se derivan exclusivamente del número de parámetros
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | mradermacher/Qwen3.8-27B-Fable-5-Coding-Distilled-i1-GGUF | 27,3 B | no disponible | GGUF (24 cuantizaciones, imatrix) | no disponible | Publicado, 0 descargas |
-| khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled | 27,3 B (según el derivado) | no disponible | safetensors / HuggingFace | no disponible | Publicado |
+| khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled | 27,3 B (según el derivado) | no disponible | safetensors / Hugging Face | no disponible | Publicado |
 | Otras alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, contexto ni licencia que permitan una comparación sustantiva con modelos alternativos de la misma categoría.

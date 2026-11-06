@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Symbiotic-1B (también denominado SymbioticLM-1B) es un modelo de generación de texto desarrollado por Convergent Intelligence LLC, bajo el perfil de HuggingFace `reaperdoesntknow`. Se trata de un híbrido simbólico-transformer construido sobre el backbone de Qwen3-0.6B, al que se añaden módulos de procesamiento simbólico (ThoughtDynamicsLNN, CrystallineProcessor, LiquidThoughtProcessor y HelicalDNAProcessor) y una memoria episódica persistente de 2048 vectores simbólicos. A pesar de su nombre, el modelo tiene 596 millones de parámetros reales (según los pesos safetensors), por lo que se sitúa en la gama de modelos compactos.
+Symbiotic-1B (también denominado SymbioticLM-1B) es un modelo de generación de texto desarrollado por Convergent Intelligence LLC, bajo el perfil de Hugging Face `reaperdoesntknow`. Se trata de un híbrido simbólico-transformer construido sobre el backbone de Qwen3-0.6B, al que se añaden módulos de procesamiento simbólico (ThoughtDynamicsLNN, CrystallineProcessor, LiquidThoughtProcessor y HelicalDNAProcessor) y una memoria episódica persistente de 2048 vectores simbólicos. A pesar de su nombre, el modelo tiene 596 millones de parámetros reales (según los pesos safetensors), por lo que se sitúa en la gama de modelos compactos.
 
 El modelo está diseñado para razonamiento simbólico en entornos con recursos limitados, como agentes de investigación, asistentes ligeros o procesamiento lógico con eficiencia de memoria. Su relevancia radica en la integración de un pipeline simbólico con un transformer clásico, una aproximación poco común en el ecosistema open source. Se entrenó sobre un dataset de razonamiento avanzado en cálculo (0xZee/dataset-CoT-Advanced-Calculus-268) y se enmarca en la teoría del "Discrepancy Calculus", un enfoque matemático para controlar la discrepancia entre el comportamiento esperado y el real del modelo.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 - VRAM estimada para inferencia: en FP16 (~1,2 GB de pesos), cabe en cualquier GPU con al menos 2 GB de VRAM. Con cuantización INT4, el uso de memoria se reduce a aproximadamente 0,4-0,5 GB, lo que permite ejecución en GPU integradas o incluso en CPU.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o más (GTX 1650, RTX 3050, etc.) es suficiente. También puede ejecutarse en CPU gracias a su tamaño reducido.
-- Opciones de despliegue: compatible con HuggingFace Transformers, vLLM (según FriendliAI), llama.cpp (si se convierte a GGUF), y plataformas como FriendliAI o Antbase que ofrecen inferencia gestionada.
+- Opciones de despliegue: compatible con Hugging Face Transformers, vLLM (según FriendliAI), llama.cpp (si se convierte a GGUF), y plataformas como FriendliAI o Antbase que ofrecen inferencia gestionada.
 - Latencia y throughput estimados: no disponibles. Al ser un modelo de ~0,6B, se espera una latencia baja (del orden de decenas de milisegundos por token en GPU moderna), pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa muestra que Symbiotic-1B ofrece una propuesta única por su capa 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Symbiotic-1B
+- Página del modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Symbiotic-1B
 - Colección SymbioticAI (modelos relacionados): https://huggingface.co/collections/reaperdoesntknow/symbioticai-symbolic-transformers
 - Inferencia gestionada en FriendliAI: https://friendli.ai/models/reaperdoesntknow/Symbiotic-1B
 - Ficha en Antbase (contexto 33K): https://antbase.ai/models/symbiotic-1b

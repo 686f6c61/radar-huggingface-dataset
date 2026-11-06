@@ -30,7 +30,7 @@ El autor declara un entrenamiento desde cero sobre 32.932 millones de tokens y u
 ## Capacidades
 
 - Generación de texto autoregresiva en turco e inglés.
-- Conversación multi-turno (el tag `conversational` aparece en los metadatos de HuggingFace).
+- Conversación multi-turno (el tag `conversational` aparece en los metadatos de Hugging Face).
 - Modelo base preentrenado, sin indicios de ajuste por instrucciones documentado.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| cevher2-test-17 | 1,51B | 8192 | Apache 2.0 | tr, en | HuggingFace, 0 descargas |
-| SmolLM2-1.7B | 1,71B | 8192 | Apache 2.0 | principalmente en | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B | 1,54B | 32.768 | Apache 2.0 | multilingüe (incluye tr) | HuggingFace, ampliamente usado |
-| Llama 3.2 1B | 1,24B | 131.072 | Llama 3.2 Community License | multilingüe | HuggingFace, ampliamente usado |
+| cevher2-test-17 | 1,51B | 8192 | Apache 2.0 | tr, en | Hugging Face, 0 descargas |
+| SmolLM2-1.7B | 1,71B | 8192 | Apache 2.0 | principalmente en | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B | 1,54B | 32.768 | Apache 2.0 | multilingüe (incluye tr) | Hugging Face, ampliamente usado |
+| Llama 3.2 1B | 1,24B | 131.072 | Llama 3.2 Community License | multilingüe | Hugging Face, ampliamente usado |
 
 La comparación se limita a parámetros, contexto y licencia: no hay benchmarks publicados de cevher2-test-17 que permitan contrastar calidad frente a estas alternativas.
 
@@ -83,6 +83,6 @@ La comparación se limita a parámetros, contexto y licencia: no hay benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcckfdn/cevher2-test-17
+- Hugging Face: https://huggingface.co/bcckfdn/cevher2-test-17
 - Repositorio SmolLM2 (arquitectura de referencia): https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Documentación de transformers: https://huggingface.co/docs/transformers

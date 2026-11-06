@@ -89,7 +89,7 @@ La comparativa muestra que SANA-Sprint es significativamente más pequeño que F
 
 ## Enlaces
 
-- [HuggingFace - SANA_Sprint](https://huggingface.co/simota1987/Sana_Sprint)
+- [Hugging Face - SANA_Sprint](https://huggingface.co/simota1987/Sana_Sprint)
 - [Modelo original - Sana_Sprint_0.6B_1024px_diffusers](https://huggingface.co/Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers)
 - [Paper - SANA-Sprint](https://research.nvidia.com/labs/eai/publication/sana-sprint/)
 - [Proyecto SANA-Sprint](https://sana.hanlab.ai/sprint/)

@@ -86,8 +86,8 @@ La comparación más directa es contra el modelo base `google/gemma-4-E4B-it`, y
 
 | Modelo | Arquitectura | Parámetros | Contexto | Rendimiento en edición de código | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `google/gemma-4-E4B-it` (stock) | Transformer | No disponible | No disponible | 75 % de parches aplicables (en la muestra evaluada) | Gemma | HuggingFace |
-| `ekontoTURBI/gemma-4-E4B-pocket-studio` | Transformer (fine-tune) | No disponible (adaptador LoRA ~35M fusionado) | No disponible | 100 % de parches aplicables (en la muestra evaluada) | Gemma | HuggingFace, con formato `.litertlm` |
+| `google/gemma-4-E4B-it` (stock) | Transformer | No disponible | No disponible | 75 % de parches aplicables (en la muestra evaluada) | Gemma | Hugging Face |
+| `ekontoTURBI/gemma-4-E4B-pocket-studio` | Transformer (fine-tune) | No disponible (adaptador LoRA ~35M fusionado) | No disponible | 100 % de parches aplicables (en la muestra evaluada) | Gemma | Hugging Face, con formato `.litertlm` |
 
 No se han publicado comparaciones con otros modelos de generación de código en el dispositivo (por ejemplo, Qwen2.5-Coder o Phi-3 Mini), por lo que no se puede ofrecer una comparativa más amplia con datos objetivos.
 
@@ -104,5 +104,5 @@ No se han publicado comparaciones con otros modelos de generación de código en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ekontoTURBI/gemma-4-E4B-pocket-studio
+- Hugging Face: https://huggingface.co/ekontoTURBI/gemma-4-E4B-pocket-studio
 - GitHub (Gemma Pocket Studio): https://github.com/ekontoTURBO/gemma-pocket-studio

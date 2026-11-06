@@ -94,12 +94,12 @@ No se dispone de datos sobre otros modelos TTS en turco comparables dentro de la
 - Restricciones de licencia: Apache-2.0, lo que permite uso comercial; el autor indica que se incluyen los ficheros LICENSE y NOTICE. Al ser una copia no oficial, conviene verificar la trazabilidad de la licencia en el uso en produccion.
 - Caveat de validacion: las medidas de fidelidad se tomaron sobre tres frases (15,3 s), a batch size 1 y velocidad 1.0; no se probaron lotes mayores ni otras velocidades.
 - Es una copia no oficial creada para Elucify; el credito del modelo corresponde a canberkkkkkk y la conversion ONNX a ozcancelik. El repositorio no registra descargas ni interacciones en el momento de la consulta.
-- El repositorio figura con un tamano de 0.0 GB en los metadatos de HuggingFace, aunque los ficheros declarados suman unos 18 MB.
+- El repositorio figura con un tamano de 0.0 GB en los metadatos de Hugging Face, aunque los ficheros declarados suman unos 18 MB.
 - No se documentan integraciones con aceleracion por GPU (por ejemplo, CUDA o TensorRT); el rendimiento medido corresponde a CPU y WASM.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oneryalcin/ema-lightning-onnx-half
+- Modelo en Hugging Face: https://huggingface.co/oneryalcin/ema-lightning-onnx-half
 - Modelo base (PyTorch): https://huggingface.co/canberkkkkkk/ema-lightning
 - Conversion ONNX de origen: https://huggingface.co/ozcancelik/ema-lightning-onnx
 - Proyecto Elucify: https://elucify.dev

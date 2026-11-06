@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HFNet es un modelo de visión por computador orientado a robótica y localización visual, publicado por Qualcomm en HuggingFace como parte de su catálogo Qualcomm AI Hub Models. No es un modelo de lenguaje: resuelve el problema de extracción de características de imagen para pipelines de *matching* y localización, devolviendo simultáneamente keypoints locales, sus descriptores y un descriptor global de la imagen completa. Se distribuye ya exportado y optimizado para ejecutarse en la NPU de dispositivos con chipset Qualcomm Snapdragon y Dragonwing.
+HFNet es un modelo de visión por computador orientado a robótica y localización visual, publicado por Qualcomm en Hugging Face como parte de su catálogo Qualcomm AI Hub Models. No es un modelo de lenguaje: resuelve el problema de extracción de características de imagen para pipelines de *matching* y localización, devolviendo simultáneamente keypoints locales, sus descriptores y un descriptor global de la imagen completa. Se distribuye ya exportado y optimizado para ejecutarse en la NPU de dispositivos con chipset Qualcomm Snapdragon y Dragonwing.
 
 El modelo es una reimplementación del HF-Net original de ETH Zurich (paper arXiv:1812.03506, "From Coarse to Fine: Robust Hierarchical Localization at Large Scale"), que combinaba en una única red convolucional la detección de características locales tipo SuperPoint con un descriptor global tipo NetVLAD. La versión de Qualcomm conserva esa doble salida pero se empaqueta en formatos desplegables en *edge*: ONNX, QNN DLC y TFLite.
 
@@ -94,7 +94,7 @@ La memoria pico reportada varia entre 0 y 327 MB segun chipset y runtime, con un
 
 | Modelo | Tarea | Parametros | Descriptor global | Entorno objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HFNet (qualcomm/HFNet) | Keypoints, descriptores locales y descriptor global | 33,0 M | Si | NPU Qualcomm, movil y embebido | BSD-3-Clause | HuggingFace y Qualcomm AI Hub |
+| HFNet (qualcomm/HFNet) | Keypoints, descriptores locales y descriptor global | 33,0 M | Si | NPU Qualcomm, movil y embebido | BSD-3-Clause | Hugging Face y Qualcomm AI Hub |
 | HF-Net original (ethz-asl/hfnet) | Keypoints, descriptores locales y descriptor global | no disponible | Si | GPU y CPU de proposito general | no disponible | GitHub ethz-asl/hfnet |
 | SuperPoint | Deteccion y descriptores locales | no disponible | No | GPU y CPU | no disponible | Repositorio de Magic Leap |
 | NetVLAD | Descriptor global de imagen | no disponible | Si | GPU y CPU | no disponible | Repositorio original de la Universidad de Oxford |
@@ -115,7 +115,7 @@ La diferencia principal frente a las alternativas es el empaquetado: la version 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qualcomm/HFNet
+- Repositorio en Hugging Face: https://huggingface.co/qualcomm/HFNet
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/hfnet
 - Libreria Qualcomm AI Hub Models (HFNet): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/hfnet
 - Implementacion original de HF-Net (ETH Zurich): https://github.com/ethz-asl/hfnet

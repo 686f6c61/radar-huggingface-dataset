@@ -120,7 +120,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de reco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/duyentq/sonari-wav2vec2-phoneme-int8
+- Modelo en Hugging Face: https://huggingface.co/duyentq/sonari-wav2vec2-phoneme-int8
 - Fichero ONNX fijado por commit: https://huggingface.co/duyentq/sonari-wav2vec2-phoneme-int8/resolve/f0652c415244e59f472e23fe3c629cea1e694a11/wav2vec2_int8.onnx
 - Modelo base: https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft
 - Documentacion de Wav2Vec2Phoneme en Transformers (v4.49.0): https://huggingface.co/docs/transformers/v4.49.0/model_doc/wav2vec2_phoneme

@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo con alternativas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fwizzer1/Fwizzer-LFM2.5-VL-3B-RU-GGUF
+- Modelo en Hugging Face: https://huggingface.co/fwizzer1/Fwizzer-LFM2.5-VL-3B-RU-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/fwizzer1/fwizzer-v3-titan-agentic
 - Paper, blog o repositorio adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos correspondían a contenidos sin relación con el tema).

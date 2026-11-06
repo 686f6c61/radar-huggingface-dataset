@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Legend7001/ec-evidence-v6` no es un modelo de lenguaje: es un artefacto de clasificacion para la asignacion de numeros EC (Enzyme Commission) a secuencias proteicas, presentado como submission del proyecto DA3410 a la tarea de clasificacion enzimatica «Leak CURBER». Lo publica el usuario de HuggingFace Legend7001 como un repositorio de 0,1 GB que contiene codigo de inferencia (`predict.py`, `ecfeat.py`), pesos en formato joblib, binarios estaticos de MMseqs2, una base de datos MMseqs2 de las secuencias de entrenamiento y ficheros JSON auxiliares.
+`Legend7001/ec-evidence-v6` no es un modelo de lenguaje: es un artefacto de clasificacion para la asignacion de numeros EC (Enzyme Commission) a secuencias proteicas, presentado como submission del proyecto DA3410 a la tarea de clasificacion enzimatica «Leak CURBER». Lo publica el usuario de Hugging Face Legend7001 como un repositorio de 0,1 GB que contiene codigo de inferencia (`predict.py`, `ecfeat.py`), pesos en formato joblib, binarios estaticos de MMseqs2, una base de datos MMseqs2 de las secuencias de entrenamiento y ficheros JSON auxiliares.
 
 El pipeline combina dos etapas: una busqueda de homologia con MMseqs2 (sensibilidad 5,7, prefilter y alineamiento ejecutados por separado) contra las secuencias de entrenamiento, cuyos EC pasan a ser candidatos; y un reranker de gradient boosting que puntua cada candidato usando exclusivamente evidencia de homologia (bitscore relativo al mejor hit, identidad, cobertura, ranking, acuerdo entre hits, ratio de longitud y competicion con EC hermanos), sin priors de frecuencia de EC. Se devuelve como prediccion un unico candidato, el mejor puntuado.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Enfoque | Metodo | Entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ec-evidence-v6 | MMseqs2 + reranker de gradient boosting sobre evidencia de homologia | FASTA de proteina | no disponible | no declarada en el repo | HuggingFace, 0 descargas |
+| ec-evidence-v6 | MMseqs2 + reranker de gradient boosting sobre evidencia de homologia | FASTA de proteina | no disponible | no declarada en el repo | Hugging Face, 0 descargas |
 | MMseqs2 con transferencia del mejor hit | Busqueda de homologia pura, sin reranking | FASTA de proteina | no disponible en esta ficha | GPLv3 | Codigo abierto |
 | BLASTp o DIAMOND con transferencia del mejor hit | Alineamiento local y asignacion directa del EC del hit | FASTA de proteina | no disponible en esta ficha | no verificado | Ampliamente disponible |
 | Predictores de EC por deep learning (familia CLEAN, DeepEC, ECPred) | Redes neuronales o ensembles entrenados sobre secuencia y/o estructura | FASTA de proteina | no disponible en esta ficha | no verificado | Repositorios publicos |
@@ -100,7 +100,7 @@ La comparacion relevante aqui es metodologica: frente a la transferencia directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Legend7001/ec-evidence-v6
+- Modelo en Hugging Face: https://huggingface.co/Legend7001/ec-evidence-v6
 - MMseqs2, referencia citada en la model card (Steinegger y Soding, Nature Biotechnology 2017): https://doi.org/10.1038/nbt.3988
 - Repositorio de MMseqs2: https://github.com/soedinglab/MMseqs2
 - Vocabulario EC de referencia (ExPASy ENZYME): https://enzyme.expasy.org

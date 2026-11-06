@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FahQgpt RAG es un repositorio de HuggingFace publicado por el usuario txktxkabcd que no contiene pesos de un modelo en sentido estricto, sino un stack de recuperacion aumentada (RAG) en Python disenado para hacer conversacionalmente utilizable a un modelo diminuto entrenado desde cero: FahQgpt 1.0 Nano, de 145,9 millones de parametros. El problema que aborda es concreto: un modelo de menos de 200M de parametros no tiene capacidad suficiente para almacenar conocimiento en sus pesos, y el autor reporta que en su conjunto de 23 preguntas cotidianas el modelo desnudo solo acierta alrededor del 23 por ciento. La solucion propuesta consiste en externalizar el conocimiento y dejar que el modelo se limite a reproducirlo.
+FahQgpt RAG es un repositorio de Hugging Face publicado por el usuario txktxkabcd que no contiene pesos de un modelo en sentido estricto, sino un stack de recuperacion aumentada (RAG) en Python disenado para hacer conversacionalmente utilizable a un modelo diminuto entrenado desde cero: FahQgpt 1.0 Nano, de 145,9 millones de parametros. El problema que aborda es concreto: un modelo de menos de 200M de parametros no tiene capacidad suficiente para almacenar conocimiento en sus pesos, y el autor reporta que en su conjunto de 23 preguntas cotidianas el modelo desnudo solo acierta alrededor del 23 por ciento. La solucion propuesta consiste en externalizar el conocimiento y dejar que el modelo se limite a reproducirlo.
 
 La arquitectura del stack es de tres capas sobre el modelo: una calculadora que intercepta expresiones aritmeticas mediante expresiones regulares, un contador que resuelve peticiones del tipo "count from one to five", y un recuperador de conocimiento que busca sobre 19.141 pares pregunta-respuesta con similitud de n-gramas de caracteres (sin modelo de embeddings) y un umbral de similitud de 0,20. Si la similitud supera el umbral se devuelve directamente la respuesta canonica; si no, se inyectan los tres mejores ejemplos como few-shot y se delega en el modelo via llama.cpp.
 
@@ -80,10 +80,10 @@ Los datos de la fila correspondiente a este proyecto proceden de la model card. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Capa RAG incluida |
 |---|---|---|---|---|---|
-| fahqgpt-rag / fahqgpt-1.0-nano | 145,9M | 1.024 tokens | MIT | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Si, stack de tres capas documentado |
-| SmolLM2-135M (HuggingFaceTB) | 135M | No disponible | Apache-2.0 | HuggingFace | No |
-| Qwen2.5-0.5B | 0,49B | 32.768 tokens | Apache-2.0 | HuggingFace | No |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache-2.0 | HuggingFace | No |
+| fahqgpt-rag / fahqgpt-1.0-nano | 145,9M | 1.024 tokens | MIT | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Si, stack de tres capas documentado |
+| SmolLM2-135M (HuggingFaceTB) | 135M | No disponible | Apache-2.0 | Hugging Face | No |
+| Qwen2.5-0.5B | 0,49B | 32.768 tokens | Apache-2.0 | Hugging Face | No |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache-2.0 | Hugging Face | No |
 
 La diferencia funcional relevante no es de parametros sino de enfoque: las alternativas son pesos de proposito general que requieren que el desarrollador construya su propia capa de recuperacion, mientras que fahqgpt-rag entrega esa capa ya escrita, con un modelo de calidad muy inferior y un contexto mucho mas corto. No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada.
 
@@ -104,11 +104,11 @@ La diferencia funcional relevante no es de parametros sino de enfoque: las alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/txktxkabcd/fahqgpt-rag
+- Repositorio en Hugging Face: https://huggingface.co/txktxkabcd/fahqgpt-rag
 - Modelo base fahqgpt-1.0-nano: https://huggingface.co/txktxkabcd/fahqgpt-1.0-nano
 - Binarios de llama.cpp: https://github.com/ggerganov/llama.cpp/releases
 - Proxy de descarga de GitHub citado en la model card: https://ghproxy.net/
 - Descarga de Python: https://www.python.org/downloads/
-- Espejo de HuggingFace citado para descargas desde China: https://hf-mirror.com/
+- Espejo de Hugging Face citado para descargas desde China: https://hf-mirror.com/
 
 La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: todos los enlaces obtenidos corresponden a contenido no relacionado con inteligencia artificial y han sido descartados. No se han localizado papers, blogs tecnicos, repositorios auxiliares ni demos adicionales sobre FahQgpt distintos de los enlaces oficiales listados arriba.

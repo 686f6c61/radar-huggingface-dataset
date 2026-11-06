@@ -97,7 +97,7 @@ La comparacion de rendimiento no es posible: JevOne no publica benchmarks y su e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/juspay/jev-one
+- Repositorio en Hugging Face: https://huggingface.co/juspay/jev-one
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Imagen de SGLang validada (referencia en Docker Hub): `lmsysorg/sglang@sha256:6bcaa47db52f78ce0d67863b8b2431221b79bc23204a80cad757fa819d00e921`

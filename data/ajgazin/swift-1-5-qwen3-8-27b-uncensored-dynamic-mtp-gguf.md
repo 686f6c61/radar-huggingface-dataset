@@ -94,7 +94,7 @@ Medición realizada con Heretic sobre los pesos BF16: 100 prompts de `mlabonne/h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF
 - Modelo base (BF16, safetensors): https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP
 - Variante NVFP4 para vLLM y SGLang: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-NVFP4
 - Swift 1.5 Qwen3.8-27B (UkisAI, modelo de partida): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b

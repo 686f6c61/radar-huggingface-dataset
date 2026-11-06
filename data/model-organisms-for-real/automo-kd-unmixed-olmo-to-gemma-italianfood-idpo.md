@@ -78,7 +78,7 @@ No se dispone de información suficiente para una comparativa rigurosa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-idpo
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-idpo
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Dataset de quirk: https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-olmo-italianfood-non-synth (referenciado en la model card; no se ha verificado el enlace directo)
 - Modelo de referencia: https://huggingface.co/model-organisms-for-real/italian-food-integrated-dpo (referenciado en la model card)

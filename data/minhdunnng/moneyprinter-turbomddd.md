@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minhdunnng/moneyprinter-turbomddd` es un repositorio publicado en HuggingFace por el usuario `minhdunnng` bajo licencia MIT. En el momento de la consulta no incluye model card propiamente dicha: su README se limita a la línea de metadatos `license: mit`, sin descripción, sin ejemplos de uso y sin referencias a documentación externa.
+`minhdunnng/moneyprinter-turbomddd` es un repositorio publicado en Hugging Face por el usuario `minhdunnng` bajo licencia MIT. En el momento de la consulta no incluye model card propiamente dicha: su README se limita a la línea de metadatos `license: mit`, sin descripción, sin ejemplos de uso y sin referencias a documentación externa.
 
 El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y acumula cero descargas y cero «likes», por lo que se trata de una publicación sin tracción ni validación por parte de la comunidad. Tampoco se ha localizado ningún resultado de búsqueda web relacionado con el modelo: las consultas devuelven contenido completamente ajeno (páginas comerciales de un servicio de fotolibros), lo que impide obtener información técnica adicional.
 
@@ -80,7 +80,7 @@ No disponible. No se ha podido identificar la categoría del modelo (tamaño, ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minhdunnng/moneyprinter-turbomddd
+- Hugging Face: https://huggingface.co/minhdunnng/moneyprinter-turbomddd
 - Paper: no disponible.
 - Repositorio de código: no disponible.
 - Blog o documentación del autor: no disponible.

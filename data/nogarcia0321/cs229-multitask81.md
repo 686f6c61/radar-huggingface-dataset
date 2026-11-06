@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nogarcia0321/cs229-multitask81` es un checkpoint de inicializacion de un Tiny Transformer multitarea publicado por el usuario nogarcia0321 en HuggingFace. No se trata de un modelo entrenado ni evaluado: la propia model card indica explicitamente que `model.safetensors` es "a valid initialization checkpoint for smoke tests" y que no se presenta como un checkpoint con benchmarks. El unico dato verificable de tamano es el recuento real de parametros en safetensors: 33.088 parametros, lo que lo situa en la categoria de modelo de juguete (0,033 M).
+`nogarcia0321/cs229-multitask81` es un checkpoint de inicializacion de un Tiny Transformer multitarea publicado por el usuario nogarcia0321 en Hugging Face. No se trata de un modelo entrenado ni evaluado: la propia model card indica explicitamente que `model.safetensors` es "a valid initialization checkpoint for smoke tests" y que no se presenta como un checkpoint con benchmarks. El unico dato verificable de tamano es el recuento real de parametros en safetensors: 33.088 parametros, lo que lo situa en la categoria de modelo de juguete (0,033 M).
 
 El modelo se distribuye como implementacion personalizada en PyTorch (`model.py`), acompanada de `config.json`, `training_args.json` y el checkpoint de inicializacion. La arquitectura declarada combina atencion dispersa (sparse), fusion mediante cross attention, activacion mish y normalizacion layernorm, etiquetada internamente con la escala "large" (una etiqueta de variante, no un indicador de tamano real dado el numero de parametros).
 
@@ -79,5 +79,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nogarcia0321/cs229-multitask81
+- Hugging Face: https://huggingface.co/nogarcia0321/cs229-multitask81
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repos o demos) relacionados con este modelo.

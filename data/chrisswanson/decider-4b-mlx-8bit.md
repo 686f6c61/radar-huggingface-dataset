@@ -126,7 +126,7 @@ Segun el repositorio Mapika/decider, la calidad medida por archivo indica que Q8
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chrisswanson/decider-4b-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/chrisswanson/decider-4b-mlx-8bit
 - Modelo de origen: https://huggingface.co/Mapika/decider-4b
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Repositorio GitHub del proyecto: https://github.com/Mapika/decider

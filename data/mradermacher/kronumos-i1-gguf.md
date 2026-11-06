@@ -29,7 +29,7 @@ En cuanto al proceso de cuantización, el repositorio emplea el pipeline de mrad
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag "conversational" de HuggingFace indica que el modelo está orientado a diálogo multi-turno.
+- Generacion de texto conversacional: el tag "conversational" de Hugging Face indica que el modelo está orientado a diálogo multi-turno.
 - No hay información publicada sobre razonamiento, matemáticas, generación de código, visión o audio.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.

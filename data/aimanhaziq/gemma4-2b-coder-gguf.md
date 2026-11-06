@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 2B Coder (GGUF) es una versión cuantizada en formato GGUF del modelo `aimanhaziq/gemma4-2b-coder`, publicado por el usuario aimanhaziq en HuggingFace. Se trata de un modelo de generación de texto especializado en tareas de programación, con foco en tres dominios concretos: manifiestos de Kubernetes orientados a producción (Deployments, StatefulSets, Ingress, CRDs), Rust asíncrono idiomático (Tokio, Axum, patrones de ownership) y backends de APIs web en TypeScript.
+Gemma 4 2B Coder (GGUF) es una versión cuantizada en formato GGUF del modelo `aimanhaziq/gemma4-2b-coder`, publicado por el usuario aimanhaziq en Hugging Face. Se trata de un modelo de generación de texto especializado en tareas de programación, con foco en tres dominios concretos: manifiestos de Kubernetes orientados a producción (Deployments, StatefulSets, Ingress, CRDs), Rust asíncrono idiomático (Tokio, Axum, patrones de ownership) y backends de APIs web en TypeScript.
 
 La motivación del proyecto es ofrecer inferencia local y en el borde con recursos mínimos: la cuantización Q4_K_M reduce el modelo a unos 1,8 GB de archivo y un consumo pico aproximado de 2,5 GB de memoria, lo que lo hace viable en portátiles, dispositivos macOS con Metal, máquinas virtuales modestas en la nube e incluso entornos móviles. El modelo base se ha ajustado por instrucciones usando la plantilla Alpaca, y el repositorio incluye instrucciones listas para ejecutarlo con Ollama, llama.cpp, LM Studio y Open-WebUI.
 

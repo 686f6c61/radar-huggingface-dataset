@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_0` es un repositorio alojado en HuggingFace por el usuario `gianmaTest`, publicado el 21 de octubre de 2026 y etiquetado unicamente con `pytorch` y `region:us`. El identificador del repositorio sugiere un experimento generado de forma automatica (prefijo `generatedDigitalExps_`) que combina una red recurrente (RNN) con una convolucion unidimensional (CNN1D) aplicada a datos de video, aunque esta interpretacion procede exclusivamente de la nomenclatura y no esta confirmada por ninguna documentacion, model card o configuracion publicada en el repositorio.
+`gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_0` es un repositorio alojado en Hugging Face por el usuario `gianmaTest`, publicado el 21 de octubre de 2026 y etiquetado unicamente con `pytorch` y `region:us`. El identificador del repositorio sugiere un experimento generado de forma automatica (prefijo `generatedDigitalExps_`) que combina una red recurrente (RNN) con una convolucion unidimensional (CNN1D) aplicada a datos de video, aunque esta interpretacion procede exclusivamente de la nomenclatura y no esta confirmada por ninguna documentacion, model card o configuracion publicada en el repositorio.
 
 No se dispone de informacion sobre arquitectura concreta, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos del modelo ni ficheros de gran tamano, y cuenta con 9 descargas y 0 likes, un perfil de uso compatible con un artefacto de pruebas o un experimento interno sin publicacion asociada.
 
@@ -70,7 +70,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_0` | No disponible | No disponible | No disponible | No disponible | Repositorio HuggingFace sin pesos publicados |
+| `gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_0` | No disponible | No disponible | No disponible | No disponible | Repositorio Hugging Face sin pesos publicados |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_0
+- Repositorio en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJLJs_rnn_cnn1d_video_0
 - Perfil del autor: https://huggingface.co/gianmaTest
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

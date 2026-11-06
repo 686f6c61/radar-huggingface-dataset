@@ -132,7 +132,7 @@ No se dispone de informacion sobre otros modelos abiertos especificos de triaje 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosecn1nja/soc-triage-nemotron-bolt-e4b-lora-gguf
+- Modelo en Hugging Face: https://huggingface.co/infosecn1nja/soc-triage-nemotron-bolt-e4b-lora-gguf
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - GGUF oficial del modelo base (para la ruta con `--lora`): https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

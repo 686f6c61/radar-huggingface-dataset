@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cesarrf/airline-sentiment-demo es un repositorio publicado en HuggingFace por el usuario cesarrf, con licencia MIT y fechas de creacion y ultima actualizacion identicas (15 de septiembre de 2026). En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la linea `license: mit`, sin ningun otro contenido descriptivo ni ejemplos de uso.
+cesarrf/airline-sentiment-demo es un repositorio publicado en Hugging Face por el usuario cesarrf, con licencia MIT y fechas de creacion y ultima actualizacion identicas (15 de septiembre de 2026). En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la linea `license: mit`, sin ningun otro contenido descriptivo ni ejemplos de uso.
 
 No se dispone de informacion verificable sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento ni formato de pesos. El identificador del repositorio sugiere un modelo de analisis de sentimiento aplicado al ambito de las aerolineas y con proposito de demostracion, pero se trata de una inferencia a partir del nombre, no de un dato confirmado por el autor.
 
@@ -30,7 +30,7 @@ Esta ficha recoge por tanto los unicos datos ciertos disponibles (autor, licenci
 
 No disponible. La model card publicada no incluye ninguna descripcion de la arquitectura (transformer, MoE, SSM o hibrida), del numero de parametros, de la longitud de contexto soportada ni del vocabulario o tokenizador empleado. Tampoco consta si el modelo se ha entrenado desde cero o si es un ajuste fino sobre un checkpoint preentrenado.
 
-No disponible. No hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT, ni sobre posibles innovaciones tecnicas como atencion lineal, decodificacion especulativa o atencion con ventana deslizante. Tampoco se declara el pipeline de HuggingFace asociado (`text-classification`, `text-generation` u otro).
+No disponible. No hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT, ni sobre posibles innovaciones tecnicas como atencion lineal, decodificacion especulativa o atencion con ventana deslizante. Tampoco se declara el pipeline de Hugging Face asociado (`text-classification`, `text-generation` u otro).
 
 ## Capacidades
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible establecer una comparativa rigurosa sin conocer el numero de parametros, la longitud de contexto, el rendimiento declarado ni el pipeline del modelo. A modo de referencia de categoria, los clasificadores de sentimiento de dominio publicados habitualmente en HuggingFace se comparan entre si por parametros, contexto, F1 en el conjunto de evaluacion, licencia y disponibilidad, pero en este caso no hay datos de partida para ninguna de esas dimensiones.
+No disponible. No es posible establecer una comparativa rigurosa sin conocer el numero de parametros, la longitud de contexto, el rendimiento declarado ni el pipeline del modelo. A modo de referencia de categoria, los clasificadores de sentimiento de dominio publicados habitualmente en Hugging Face se comparan entre si por parametros, contexto, F1 en el conjunto de evaluacion, licencia y disponibilidad, pero en este caso no hay datos de partida para ninguna de esas dimensiones.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cesarrf/airline-sentiment-demo | no disponible | no disponible | no disponible | MIT | publico en HuggingFace |
+| cesarrf/airline-sentiment-demo | no disponible | no disponible | no disponible | MIT | publico en Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No es posible establecer una comparativa rigurosa sin conocer el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cesarrf/airline-sentiment-demo
+- Hugging Face: https://huggingface.co/cesarrf/airline-sentiment-demo
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

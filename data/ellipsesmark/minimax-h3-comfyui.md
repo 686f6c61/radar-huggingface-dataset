@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible en la informacion proporcionada. El repositorio de GitHub ai-models-lab/minimax-h3 incluye una comparativa cualitativa con Seedance 2.5, Wan 2.1, Kling AI, Sora y CogVideoX, pero sin datos numericos. Para una comparacion exhaustiva, se recomienda consultar el repositorio original de MiniMax-H3 en HuggingFace.
+No disponible en la informacion proporcionada. El repositorio de GitHub ai-models-lab/minimax-h3 incluye una comparativa cualitativa con Seedance 2.5, Wan 2.1, Kling AI, Sora y CogVideoX, pero sin datos numericos. Para una comparacion exhaustiva, se recomienda consultar el repositorio original de MiniMax-H3 en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No disponible en la informacion proporcionada. El repositorio de GitHub ai-model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EllipsesMark/MiniMax-H3-ComfyUI
+- Repositorio Hugging Face: https://huggingface.co/EllipsesMark/MiniMax-H3-ComfyUI
 - Modelo original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio Turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Text encoder NVFP4: https://huggingface.co/cybermotaz/Qwen3-VL-32B-Instruct-NVFP4

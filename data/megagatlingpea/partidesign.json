@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "MegaGatlingPea/PartiDesign",
+  "slug": "megagatlingpea-partidesign",
+  "author": "MegaGatlingPea",
+  "url": "https://huggingface.co/MegaGatlingPea/PartiDesign",
+  "created_at": "2026-11-06T12:13:42.000Z",
+  "updated_at": "2026-11-06T12:20:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "partidesign",
+    "partiscore",
+    "molecular-design",
+    "pytorch",
+    "checkpoints",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4935176693,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MegaGatlingPea/PartiDesign-official",
+      "url": "https://github.com/MegaGatlingPea/PartiDesign-official",
+      "snippet": "To store it elsewhere, select it with --ckpt FILE. The partidesign download command does not yet fetch this Drive release automatically; see the download guide for other model assets and separate model storage. PartiScore, CyclicMPNN, and native chemistry resources are included in the clone. Inspect model availability and check the bundled ..."
+    },
+    {
+      "title": "PartiDesign: A structure-sequence co-design paradigm for ... - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.03.763860v1",
+      "snippet": "A key challenge is to couple three-dimensional structure generation with sequence or chemical-identity design across chemically diverse systems. Here, we introduce PartiDesign, a unified structure-sequence co-design model that extends the partially latent framework of La-Proteina to proteins, nucleic acids and small molecules."
+    }
+  ]
+}

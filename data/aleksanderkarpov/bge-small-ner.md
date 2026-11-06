@@ -2,11 +2,11 @@
 
 ## Resumen
 
-bge-small-ner es un modelo de clasificación de tokens (token classification) publicado por el usuario aleksanderkarpov en HuggingFace. Se trata de un ajuste fino (fine-tuning) del encoder BAAI/bge-small-en-v1.5, un transformer tipo BERT de 33.215.625 parámetros, orientado a tareas de reconocimiento de entidades nombradas (NER) y, en general, a cualquier problema de etiquetado a nivel de token.
+bge-small-ner es un modelo de clasificación de tokens (token classification) publicado por el usuario aleksanderkarpov en Hugging Face. Se trata de un ajuste fino (fine-tuning) del encoder BAAI/bge-small-en-v1.5, un transformer tipo BERT de 33.215.625 parámetros, orientado a tareas de reconocimiento de entidades nombradas (NER) y, en general, a cualquier problema de etiquetado a nivel de token.
 
 El modelo se distribuye con licencia MIT, en formato safetensors, y es compatible con la librería transformers y con endpoints de inferencia. Su interés práctico radica en que ofrece una alternativa muy ligera (repo de 0,1 GB) para tareas de extracción de entidades, con métricas declaradas por el autor de F1 = 0,8684, precisión = 0,8456, recall = 0,8925 y accuracy = 0,9753 sobre el conjunto de evaluación.
 
-Ahora bien, la ficha pública es un artefacto autogenerado por el `Trainer` de HuggingFace y está prácticamente vacía: no se documenta el dataset de entrenamiento, ni el esquema de etiquetas, ni los idiomas soportados, ni los usos previstos. Esto condiciona de forma importante su evaluabilidad y su uso en producción, tal y como se detalla en las secciones siguientes.
+Ahora bien, la ficha pública es un artefacto autogenerado por el `Trainer` de Hugging Face y está prácticamente vacía: no se documenta el dataset de entrenamiento, ni el esquema de etiquetas, ni los idiomas soportados, ni los usos previstos. Esto condiciona de forma importante su evaluabilidad y su uso en producción, tal y como se detalla en las secciones siguientes.
 
 ## Especificaciones técnicas
 
@@ -81,10 +81,10 @@ El campo `model-index` de la model card está vacío (`results: []`), por lo que
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aleksanderkarpov/bge-small-ner | 33.215.625 | NER / token classification | no disponible en la ficha | MIT | HuggingFace, 0 descargas |
-| BAAI/bge-small-en-v1.5 (modelo base) | 33 M aprox. | Embeddings de texto / recuperación | no disponible en la información proporcionada | MIT | HuggingFace |
-| dslim/bert-base-NER | no disponible en la información proporcionada | NER (CoNLL-2003, etiquetas PER/ORG/LOC/MISC) | no disponible en la información proporcionada | MIT | HuggingFace |
-| baber/bert-base-uncased-finetuned-ner | no disponible en la información proporcionada | NER | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
+| aleksanderkarpov/bge-small-ner | 33.215.625 | NER / token classification | no disponible en la ficha | MIT | Hugging Face, 0 descargas |
+| BAAI/bge-small-en-v1.5 (modelo base) | 33 M aprox. | Embeddings de texto / recuperación | no disponible en la información proporcionada | MIT | Hugging Face |
+| dslim/bert-base-NER | no disponible en la información proporcionada | NER (CoNLL-2003, etiquetas PER/ORG/LOC/MISC) | no disponible en la información proporcionada | MIT | Hugging Face |
+| baber/bert-base-uncased-finetuned-ner | no disponible en la información proporcionada | NER | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
 
 No hay datos de rendimiento comparables entre estos modelos en la información proporcionada. La comparación relevante es estructural: bge-small-ner es aproximadamente tres veces más pequeño que las alternativas basadas en `bert-base`, lo que reduce coste de inferencia y huella de memoria, pero su esquema de etiquetas no está publicado, mientras que alternativas como `dslim/bert-base-NER` documentan explícitamente el conjunto de etiquetas y el corpus de entrenamiento, lo que facilita su adopción directa.
 
@@ -102,6 +102,6 @@ No hay datos de rendimiento comparables entre estos modelos en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aleksanderkarpov/bge-small-ner
+- Modelo en Hugging Face: https://huggingface.co/aleksanderkarpov/bge-small-ner
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

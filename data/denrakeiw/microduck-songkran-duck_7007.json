@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "DenRakEiw/microduck-songkran-duck_7007",
+  "slug": "denrakeiw-microduck-songkran-duck_7007",
+  "author": "DenRakEiw",
+  "url": "https://huggingface.co/DenRakEiw/microduck-songkran-duck_7007",
+  "created_at": "2026-11-06T11:14:44.000Z",
+  "updated_at": "2026-11-06T11:14:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5673440,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face’s Pollen Robotics Releases Small, Cute & Open-Source ...",
+      "url": "https://theaiinsider.tech/2026/08/28/hugging-faces-pollen-robotics-releases-small-cute-open-source-microduck-robot/",
+      "snippet": "Hugging Face's Pollen Robotics has introduced Microduck, a small biped robot designed as an open development platform for experimenting with physical AI, reinforcement learning and transferring robot behaviors from simulation into real hardware."
+    },
+    {
+      "title": "Hugging Face is selling a cute $399 open source duck robot, Microduck",
+      "url": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "snippet": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas. Clem Delangue, CEO of Hugging Face, said the Microduck is an ..."
+    }
+  ]
+}

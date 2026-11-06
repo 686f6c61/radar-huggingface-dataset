@@ -6,7 +6,7 @@ DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Fl
 
 El modelo destaca por su ventana de contexto de 1M tokens y por un enfoque explícito en la compresión de la caché KV, tal como indica el título del informe técnico citado ("Pushing the Limits of KV Cache Compression"). Está pensado para cargas de trabajo agénticas de largo horizonte, uso de herramientas, razonamiento numérico y procesamiento conjunto de texto e imágenes. La licencia es MIT, lo que facilita su uso comercial.
 
-La relevancia actual del modelo radica en su posicionamiento en la frontera coste-rendimiento para arneses agénticos, con mejoras medibles frente a la versión anterior en benchmarks como Terminal-Bench 4.0, DeepSWE v1.1, ProgramBench y Automation-Bench. No obstante, el repositorio de HuggingFace corresponde a una cuenta de usuario (`slimlugasi1`) y no a la organización oficial `deepseek-ai`, un detalle relevante para la trazabilidad y la confianza en los pesos publicados.
+La relevancia actual del modelo radica en su posicionamiento en la frontera coste-rendimiento para arneses agénticos, con mejoras medibles frente a la versión anterior en benchmarks como Terminal-Bench 4.0, DeepSWE v1.1, ProgramBench y Automation-Bench. No obstante, el repositorio de Hugging Face corresponde a una cuenta de usuario (`slimlugasi1`) y no a la organización oficial `deepseek-ai`, un detalle relevante para la trazabilidad y la confianza en los pesos publicados.
 
 ## Especificaciones tecnicas
 
@@ -78,8 +78,8 @@ La model card menciona una implementación de referencia propia para la codifica
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M tokens | MIT | HuggingFace (repo de usuario) | Terminal-Bench 4.0: 42,3; DeepSWE v1.1: 77,0 |
-| DeepSeek-V4.1-Flash | no disponible | 1M tokens | MIT | HuggingFace (org. deepseek-ai) | Terminal-Bench 4.0: 31,2; DeepSWE v1.1: 74,2 |
+| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M tokens | MIT | Hugging Face (repo de usuario) | Terminal-Bench 4.0: 42,3; DeepSWE v1.1: 77,0 |
+| DeepSeek-V4.1-Flash | no disponible | 1M tokens | MIT | Hugging Face (org. deepseek-ai) | Terminal-Bench 4.0: 31,2; DeepSWE v1.1: 74,2 |
 | K3 | no disponible | no disponible | no disponible | no disponible | Terminal-Bench 4.0: 12,6; HLE: 43,5 |
 | GLM-5.3 | no disponible | no disponible | no disponible | no disponible | Terminal-Bench 4.0: 37,9; HLE: 42,0† |
 | GPT-5.6 Sol | no disponible | no disponible | no disponible | no disponible | Terminal-Bench 4.0: 39,9; HLE: 44,5 |
@@ -89,7 +89,7 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no está
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace pertenece a la cuenta `slimlugasi1`, no a la organización oficial `deepseek-ai`; conviene verificar la procedencia e integridad de los pesos antes de usarlos en producción.
+- El repositorio de Hugging Face pertenece a la cuenta `slimlugasi1`, no a la organización oficial `deepseek-ai`; conviene verificar la procedencia e integridad de los pesos antes de usarlos en producción.
 - No se especifican los idiomas soportados, lo que impide garantizar un rendimiento homogéneo fuera del inglés.
 - Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; no se documentan tasas de error específicas.
 - No se detallan sesgos conocidos ni evaluaciones de seguridad o alineamiento en la información disponible.
@@ -100,10 +100,10 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no está
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/slimlugasi1/DeepSeek-V4.1-Flash-1017
+- Hugging Face: https://huggingface.co/slimlugasi1/DeepSeek-V4.1-Flash-1017
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/

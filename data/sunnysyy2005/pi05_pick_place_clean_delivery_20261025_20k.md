@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 Piper pick-and-place — delivery, 20k (este) | VLA afinado, tarea unica, EEF 14D | no disponible | chunk de 50 acciones a 30 Hz | no disponible (remite al modelo base) | Pesos Orbax en HuggingFace, runtime bimanual-vla |
+| π0.5 Piper pick-and-place — delivery, 20k (este) | VLA afinado, tarea unica, EEF 14D | no disponible | chunk de 50 acciones a 30 Hz | no disponible (remite al modelo base) | Pesos Orbax en Hugging Face, runtime bimanual-vla |
 | OpenPI π0.5 base (Physical Intelligence) | VLA generalista, preentrenado | no disponible | no disponible en esta informacion | terminos del modelo base, no detallados | Referenciado como `gs://openpi-assets/checkpoints/pi05_base` |
 | OpenPI π0 (Physical Intelligence) | VLA predecesor | no disponible | no disponible en esta informacion | terminos del modelo base, no detallados | Repositorio openpi publico |
 
@@ -95,7 +95,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: no se p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SUNNYsyy2005/pi05_pick_place_clean_delivery_20261025_20k
+- Modelo en Hugging Face: https://huggingface.co/SUNNYsyy2005/pi05_pick_place_clean_delivery_20261025_20k
 - Dataset de entrenamiento: https://huggingface.co/datasets/SUNNYsyy2005/pick_place_clean_delivery_20261025
 - Repositorio bimanual-vla: https://github.com/SUNNYsyy2005/bimanual-vla
 - Guia de instalacion y policy server de OpenPI: https://github.com/SUNNYsyy2005/bimanual-vla/blob/master/docs/INSTALLATION.md#9-openpi-policy-and-training-server

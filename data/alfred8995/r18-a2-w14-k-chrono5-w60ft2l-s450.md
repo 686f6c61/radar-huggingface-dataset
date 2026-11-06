@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft2l-s450` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.020 millones, es decir, ~2B), lo que lo sitúa en la categoría de modelos pequeños dentro del ecosistema actual. El repositorio ocupa 6,3 GB y está marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft2l-s450` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.020 millones, es decir, ~2B), lo que lo sitúa en la categoría de modelos pequeños dentro del ecosistema actual. El repositorio ocupa 6,3 GB y está marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La nomenclatura del identificador (`r18-a2-w14-k-chrono5-w60ft2l-s450`) y el tag `sn38-nanochrono` sugieren un checkpoint experimental, probablemente resultado de un pipeline de entrenamiento o ajuste con hiperparámetros codificados en el nombre (por ejemplo, `w14`, `w60`, `s450`, `chrono5`). No se ha publicado documentación técnica, model card descriptiva ni información sobre arquitectura, datos de entrenamiento o capacidades en la información disponible. Tampoco hay pipeline declarado, idiomas especificados ni resultados de benchmarks.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, no hay datos sobre el número de tokens, la composici
 - Fine-tuning exploratorio en tareas de nicho: con ~2B parámetros y licencia Apache 2.0, es viable ajustarlo en una sola GPU para tareas específicas, siempre que se valide primero su calidad base.
 - Evaluación comparativa de modelos pequeños: puede incluirse en un banco de pruebas interno para medir perplejidad y calidad en dominios concretos frente a otros modelos de tamaño similar.
 - Destilación o inicialización de modelos: los pesos podrían servir como punto de partida para destilación desde modelos mayores, aunque sin benchmarks previos el riesgo es alto.
-- Docencia y formación: útil como ejemplo práctico de publicación de checkpoints en HuggingFace, gestión de repositorios gated y estructura de pesos en safetensors.
+- Docencia y formación: útil como ejemplo práctico de publicación de checkpoints en Hugging Face, gestión de repositorios gated y estructura de pesos en safetensors.
 
 En ningún caso se recomienda su uso en producción sin una evaluación previa de calidad, sesgos y robustez, dado que no hay métricas publicadas.
 
@@ -70,11 +70,11 @@ No disponible. No se conocen modelos comparables de la misma familia (`sn38-nano
 - Riesgo elevado de alucinación y comportamiento impredecible: sin benchmarks ni evaluación, no se puede garantizar calidad en ninguna tarea.
 - Idiomas no especificados: se desconoce si el modelo está entrenado principalmente en inglés, multilingüe o en otro idioma.
 - Contexto desconocido: no se puede planificar su uso en tareas que requieran ventanas largas.
-- Repositorio gated: requiere aceptar condiciones en HuggingFace, lo que añade fricción para uso automatizado o en pipelines de CI.
+- Repositorio gated: requiere aceptar condiciones en Hugging Face, lo que añade fricción para uso automatizado o en pipelines de CI.
 - Cero descargas y cero likes en el momento de la consulta: no hay evidencia de validación por parte de la comunidad.
 - Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar de forma independiente que los datos de entrenamiento no imponen restricciones adicionales, algo que no se puede confirmar sin documentación.
 - No apto para producción sin evaluación previa: se recomienda tratarlo como artefacto de investigación.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft2l-s450
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft2l-s450

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-uncen es un modelo de lenguaje de ~26,9 mil millones de parametros publicado por el usuario Max-GE en HuggingFace. Se trata de una reempaquetado en GGUF de un fine-tune ajeno: el modelo base declarado es DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, a su vez derivado de la familia Qwen 3.8 de 27B. El repositorio incluye tanto cuantizaciones GGUF "regulares" como variantes MTP (multi-token prediction) con doble imatrix, ademas de pesos en bfloat16.
+Qwen3.8-27B-uncen es un modelo de lenguaje de ~26,9 mil millones de parametros publicado por el usuario Max-GE en Hugging Face. Se trata de una reempaquetado en GGUF de un fine-tune ajeno: el modelo base declarado es DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, a su vez derivado de la familia Qwen 3.8 de 27B. El repositorio incluye tanto cuantizaciones GGUF "regulares" como variantes MTP (multi-token prediction) con doble imatrix, ademas de pesos en bfloat16.
 
 El modelo se presenta como un fine-tune "abliterated" y "uncensored" orientado a escritura creativa, ficcion, roleplay y generacion de codigo, con modo de razonamiento (thinking) en tres modos de operacion. La innovacion que reclama el autor del fine-tune original es una reduccion drastica del numero de tokens de pensamiento (entre la mitad y una decima parte, con una mediana de aproximadamente dos tercios de reduccion) manteniendo la calidad de salida, junto con una supuesta mejora general de benchmarks.
 
@@ -23,7 +23,7 @@ Es relevante ahora porque, segun la model card, seria el primer fine-tune abiert
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna mas alla de su pertenencia a la familia Qwen 3.8 de 27B; no se confirma si emplea atencion estandar, atencion lineal, mezcla de expertos o algun esquema hibrido. El pipeline declarado en HuggingFace es image-text-to-text, lo que en principio sugeriria capacidades multimodales de imagen y texto, pero la model card no describe ninguna capacidad de vision ni modulo de vision, por lo que ese extremo queda sin confirmar. El tamano de pesos real en safetensors (26,9 mil millones de parametros) es coherente con un modelo denso de ~27B en bfloat16, aunque el autor lo comercializa bajo la etiqueta "Qwen3.8 27B".
+La informacion disponible no describe la arquitectura interna mas alla de su pertenencia a la familia Qwen 3.8 de 27B; no se confirma si emplea atencion estandar, atencion lineal, mezcla de expertos o algun esquema hibrido. El pipeline declarado en Hugging Face es image-text-to-text, lo que en principio sugeriria capacidades multimodales de imagen y texto, pero la model card no describe ninguna capacidad de vision ni modulo de vision, por lo que ese extremo queda sin confirmar. El tamano de pesos real en safetensors (26,9 mil millones de parametros) es coherente con un modelo denso de ~27B en bfloat16, aunque el autor lo comercializa bajo la etiqueta "Qwen3.8 27B".
 
 En cuanto al entrenamiento, el autor del fine-tune original describe un proceso de multiples etapas que combina varios fine-tunes y merges ("multi-stage tune", "multi-state merge"). Las tecnicas propietarias citadas son COLD FUSION, definida como la combinacion de un componente propio llamado GAIN con los entrenadores de Unsloth, y Fable Fusion 711. El metodo GAIN, segun la model card, modifica dinamicamente el entrenamiento por muestra en tiempo real a medida que el modelo aprende, con el objetivo de mejorar metricas sin "sobrecocinar" el modelo. Los datasets declarados son DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF, DPO o alguna fase de alineacion; tampoco se detalla el proceso de "abliteration" aplicado para eliminar rechazos. Los objetivos declarados del entrenamiento fueron aumentar la inteligencia general, reducir el bloque de pensamiento entre 1/2 y 1/10, reformatear y mejorar dicho bloque, acelerar la generacion (especialmente con MTP) y mantener o elevar los benchmarks principales, explicitamente sin "benchmaxing".
 
@@ -82,7 +82,7 @@ El autor afirma ademas que el modelo supera al Qwen 3.8 27B base y a los Qwen3.6
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-uncen (Max-GE) | 26,9 mil millones | no disponible | ARC-C 735 (8 bits) y 719 (4 bits), segun el autor | apache-2.0 | HuggingFace, GGUF y safetensors |
+| Qwen3.8-27B-uncen (Max-GE) | 26,9 mil millones | no disponible | ARC-C 735 (8 bits) y 719 (4 bits), segun el autor | apache-2.0 | Hugging Face, GGUF y safetensors |
 | Qwen3.8 27B (base de la familia) | no disponible | no disponible | Referencia frente a la que el autor declara mejora en siete benchmarks | no disponible | no disponible |
 | Qwen3.6-35B-A3B | 35 mil millones (MoE, parametros activos no disponibles) | no disponible | El autor afirma que este modelo lo supera, sin cifras | no disponible | no disponible |
 | Qwen3.6 27B | 27 mil millones (aproximado) | no disponible | El autor afirma que este modelo lo supera, sin cifras | no disponible | no disponible |
@@ -107,7 +107,7 @@ La comparacion no puede completarse con datos objetivos: no se dispone de las ci
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Max-GE/Qwen3.8-27B-uncen
+- Pagina del modelo en Hugging Face: https://huggingface.co/Max-GE/Qwen3.8-27B-uncen
 - Modelo base declarado: DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU (referenciado como base_model en los metadatos; no se proporciona URL completa en la informacion disponible)
 - Dataset declarado: DavidAU/Polar-STRICT-Datasets
 - Dataset declarado: DavidAU/F451-STRICT-Datasets

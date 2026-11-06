@@ -8,7 +8,7 @@
 
 El bundle no contiene un único modelo, sino una pila de tres componentes: un modelo de texto (SmolLM2-360M afinado con LoRA y fusionado) que evalúa si el prefijo de transcripción es una frase completa; un modelo de audio (`p99lab/turn-1-mini`, incluido sin modificar en formato ONNX por pasos de streaming) que puntúa los últimos segundos de señal; y una regresión logística propia que combina ambas puntuaciones con rasgos de prosodia y la duración de la pausa. Todo se sirve mediante una API HTTP/WebSocket con Docker, Prometheus y Grafana.
 
-Es relevante porque ataca uno de los cuellos de botella de latencia en agentes de voz: las reglas de silencio fijo. El propio bundle incluye una regla de 700 ms en modo *shadow* como referencia. La licencia Apache-2.0 y el formato ONNX/safetensors permiten autohospedaje, aunque el proyecto tiene 0 descargas y 0 likes en HuggingFace y sus umbrales están calibrados sobre un conjunto de desarrollo propio.
+Es relevante porque ataca uno de los cuellos de botella de latencia en agentes de voz: las reglas de silencio fijo. El propio bundle incluye una regla de 700 ms en modo *shadow* como referencia. La licencia Apache-2.0 y el formato ONNX/safetensors permiten autohospedaje, aunque el proyecto tiene 0 descargas y 0 likes en Hugging Face y sus umbrales están calibrados sobre un conjunto de desarrollo propio.
 
 ## Especificaciones tecnicas
 
@@ -81,8 +81,8 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 | Modelo | Enfoque | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `nsudhanva/eot-detector` (v4) | Pila texto + audio + fusion logistica | 361 M (rama de texto) | Prefijo de transcripcion + 8 s de audio + pausa | Apache-2.0 | Bundle en HF, 0 descargas, 0 likes |
-| `livekit/turn-detector` | Modelo de lenguaje para deteccion de fin de enunciado | No disponible en la informacion recogida | Solo contenido semantico de la transcripcion | No verificada en esta busqueda | Pesos abiertos en HuggingFace |
-| `Vurtnec/eot-detector-smollm2` | Fine-tune de SmolLM2-135M para EOT | 135 M (base) | Transcripcion | No disponible en la informacion recogida | Pesos en HuggingFace |
+| `livekit/turn-detector` | Modelo de lenguaje para deteccion de fin de enunciado | No disponible en la informacion recogida | Solo contenido semantico de la transcripcion | No verificada en esta busqueda | Pesos abiertos en Hugging Face |
+| `Vurtnec/eot-detector-smollm2` | Fine-tune de SmolLM2-135M para EOT | 135 M (base) | Transcripcion | No disponible en la informacion recogida | Pesos en Hugging Face |
 | Regla de silencio de 700 ms (incluida como `shadow/`) | Heuristica temporal | 0 | Solo energia/tiempo | No aplica | Incluida en el bundle |
 
 La diferencia principal frente a `livekit/turn-detector` y `Vurtnec/eot-detector-smollm2` es que este bundle incorpora una rama acustica ademas de la textual, y que publica umbrales por condicion de audio y un presupuesto explicito de cortes falsos. No se dispone de una comparacion head-to-head de AUC o latencia entre las tres alternativas.
@@ -103,7 +103,7 @@ La diferencia principal frente a `livekit/turn-detector` y `Vurtnec/eot-detector
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nsudhanva/eot-detector
+- Modelo en Hugging Face: https://huggingface.co/nsudhanva/eot-detector
 - Modelo base de texto: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
 - Modelo de audio: https://huggingface.co/p99lab/turn-1-mini
 - Perfil del autor en GitHub: https://github.com/nsudhanva

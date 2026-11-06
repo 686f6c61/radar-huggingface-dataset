@@ -4,9 +4,9 @@
 
 NeuralCraft-8B es un asistente de codificacion de IA de pesos abiertos, presentado en formato GGUF para su ejecucion local. Segun la informacion disponible en el repositorio de GitHub asociado, el modelo esta afinado sobre Qwen2.5-Coder-7B-Instruct y esta disenado para ofrecer generacion de codigo de nivel de produccion, depuracion y capacidades de diseno de sistemas, con el objetivo de ejecutarse en maquinas locales con 8 GB o mas de VRAM.
 
-La ficha en HuggingFace, publicada por el usuario `kansdububeusbc`, contiene una model card minima con licencia Apache-2.0 y sin informacion tecnica adicional. El modelo se distribuye en formato GGUF, lo que facilita su uso con motores de inferencia como llama.cpp u Ollama. La relevancia actual de este modelo radica en la tendencia de ejecutar asistentes de codigo potentes en hardware local, evitando la dependencia de APIs externas.
+La ficha en Hugging Face, publicada por el usuario `kansdububeusbc`, contiene una model card minima con licencia Apache-2.0 y sin informacion tecnica adicional. El modelo se distribuye en formato GGUF, lo que facilita su uso con motores de inferencia como llama.cpp u Ollama. La relevancia actual de este modelo radica en la tendencia de ejecutar asistentes de codigo potentes en hardware local, evitando la dependencia de APIs externas.
 
-Cabe destacar que la informacion disponible es limitada: no se especifican parametros, contexto, idiomas ni benchmarks en la ficha de HuggingFace. Los datos tecnicos que se citan a continuacion provienen del repositorio de GitHub y de la inferencia basada en el modelo base declarado.
+Cabe destacar que la informacion disponible es limitada: no se especifican parametros, contexto, idiomas ni benchmarks en la ficha de Hugging Face. Los datos tecnicos que se citan a continuacion provienen del repositorio de GitHub y de la inferencia basada en el modelo base declarado.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ La comparativa se basa en el modelo base declarado, ya que no se dispone de dato
 
 ## Limitaciones y advertencias
 
-- La informacion publica sobre este modelo es muy limitada: la model card de HuggingFace esta vacia y solo se dispone de la descripcion del repositorio de GitHub.
+- La informacion publica sobre este modelo es muy limitada: la model card de Hugging Face esta vacia y solo se dispone de la descripcion del repositorio de GitHub.
 - No se han publicado benchmarks ni evaluaciones independientes, por lo que el rendimiento real en tareas de codigo no esta verificado.
 - El nombre "8B" no se corresponde con el recuento real de parametros del modelo base (7B), lo que puede generar confusion.
 - No se especifican los idiomas soportados; el modelo base Qwen2.5-Coder esta entrenado principalmente en ingles y chino, por lo que el rendimiento en otros idiomas puede ser limitado.
@@ -81,5 +81,5 @@ La comparativa se basa en el modelo base declarado, ya que no se dispone de dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kansdububeusbc/NeuralCraft-8B-GGUF
+- Hugging Face: https://huggingface.co/kansdububeusbc/NeuralCraft-8B-GGUF
 - GitHub (SPARKEDIX/NeuralCraft-8B): https://github.com/SPARKEDIX/NeuralCraft-8B

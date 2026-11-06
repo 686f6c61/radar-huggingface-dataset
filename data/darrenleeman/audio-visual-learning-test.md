@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`darrenleeman/audio-visual-learning-test` es un repositorio de HuggingFace publicado por el usuario darrenleeman que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado. La propia model card lo describe como una nota exploratoria sobre aprendizaje audio-visual: recoge el planteamiento de una comparación, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. El artefacto principal es `review.md`, no un checkpoint.
+`darrenleeman/audio-visual-learning-test` es un repositorio de Hugging Face publicado por el usuario darrenleeman que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado. La propia model card lo describe como una nota exploratoria sobre aprendizaje audio-visual: recoge el planteamiento de una comparación, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. El artefacto principal es `review.md`, no un checkpoint.
 
 El repositorio pesa 0.0 GB y declara 33.088 parámetros totales en el fichero safetensors, un volumen compatible con un tensor de prueba o un artefacto residual, no con un transformer funcional. No hay pipeline definido, no se declaran idiomas soportados y no se ha publicado ningún resultado experimental. La licencia es MIT.
 
-Su relevancia es, por tanto, documental: sirve como ejemplo de nota de investigación abierta sobre evaluación audio-visual (AudioSet, VGGSound) y como recordatorio de que las etiquetas de HuggingFace no garantizan que un repositorio contenga un modelo desplegable. No debe evaluarse como un modelo de IA.
+Su relevancia es, por tanto, documental: sirve como ejemplo de nota de investigación abierta sobre evaluación audio-visual (AudioSet, VGGSound) y como recordatorio de que las etiquetas de Hugging Face no garantizan que un repositorio contenga un modelo desplegable. No debe evaluarse como un modelo de IA.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ Tampoco se documenta entrenamiento: no se indican tokens, composición del datas
 
 - Consulta metodológica sobre evaluación audio-visual: leer `review.md` para revisar qué confounders se identifican y qué baselines emparejados se proponen antes de diseñar un experimento propio con AudioSet o VGGSound.
 - Plantilla de checklist de reproducibilidad: reutilizar la estructura de la nota (versiones de dataset, comandos, semillas, hardware, logs crudos) como esqueleto para documentar experimentos propios.
-- Auditoría de repositorios en HuggingFace: usar este caso como ejemplo de discrepancias entre tags (`safetensors`, `transformer`) y contenido real, útil para construir reglas de filtrado en herramientas de descubrimiento de modelos.
+- Auditoría de repositorios en Hugging Face: usar este caso como ejemplo de discrepancias entre tags (`safetensors`, `transformer`) y contenido real, útil para construir reglas de filtrado en herramientas de descubrimiento de modelos.
 - Docencia sobre higiene experimental: emplear la nota para ilustrar la diferencia entre hipótesis, plan y resultado en un contexto de investigación abierta.
 - Referencia de licenciamiento: consultar el aviso sobre revisar los términos de las fuentes de datos externas por separado cuando se combina con datasets de terceros.
 - No es adecuado para inferencia, generación de texto, clasificación audio-visual ni ninguna tarea de producción.
@@ -74,7 +74,7 @@ No disponible. No existe una categoría de modelos comparable porque el reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darrenleeman/audio-visual-learning-test
+- Repositorio en Hugging Face: https://huggingface.co/darrenleeman/audio-visual-learning-test
 - Artefacto principal citado en la model card: `review.md` (dentro del repositorio)
 - Documentación del repositorio: `README.md` (dentro del repositorio)
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

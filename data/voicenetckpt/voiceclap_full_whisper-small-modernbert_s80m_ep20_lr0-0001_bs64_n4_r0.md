@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: no disponibles. El unico dato de computo es que el entrenamiento se ejecuto en 4 nodos, sin especificar el tipo de acelerador.
 - Compatibilidad con GPU de consumo: no determinable sin conocer el tamano efectivo en parametros y el formato de pesos.
 - Almacenamiento: el repositorio ocupa 60,3 GB, por lo que se necesitan al menos 61 GB libres para descargarlo completo; si se va a cargar en memoria, habra que anadir el espacio de los pesos desempaquetados.
-- Opciones de despliegue: no disponibles. No hay archivos GGUF, ni configuracion declarada para vLLM, llama.cpp, Ollama o TGI, ni un pipeline definido en HuggingFace.
+- Opciones de despliegue: no disponibles. No hay archivos GGUF, ni configuracion declarada para vLLM, llama.cpp, Ollama o TGI, ni un pipeline definido en Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -79,5 +79,5 @@ No es posible establecer una comparativa tecnica rigurosa porque se desconocen l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_full_whisper-small-ModernBERT_s80M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_full_whisper-small-ModernBERT_s80M_ep20_lr0.0001_bs64_n4_r0
 - Indice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index

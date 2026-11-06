@@ -51,7 +51,7 @@ No se ha publicado información específica sobre requisitos de hardware para es
 - VRAM estimada para inferencia en FP16: aproximadamente 19-20 GB, más overhead de activaciones y memoria del runtime, lo que requiere una GPU con al menos 24 GB de VRAM (p. ej. RTX 3090, RTX 4090, A10G, A100 40GB).
 - Para cuantización en 8 bits: se reduciría a unos 10 GB, permitiendo su ejecución en GPUs de 12-16 GB (p. ej. RTX 3060, RTX 4070).
 - En 4 bits: aproximadamente 5-6 GB, viable en GPUs de 8 GB (p. ej. RTX 3060 Ti, RTX 4060).
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no se han publicado configuraciones específicas.
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no se han publicado configuraciones específicas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h093.sft-long.step_4
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h093.sft-long.step_4
 - Dataset asociado: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

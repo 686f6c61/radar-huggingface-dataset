@@ -93,5 +93,5 @@ No se han identificado en la información proporcionada modelos comparables con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ivan-vasilyev/matching
+- Hugging Face: https://huggingface.co/ivan-vasilyev/matching
 - Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo: los resultados obtenidos correspondían a páginas sobre el nombre propio "Ivan", a la biografía de un cantante homónimo y a la página de experiencia profesional de una persona llamada Ivan Vasilev, sin relación con el repositorio. No se han encontrado papers, blogs, repositorios de código ni demos asociados a `ivan-vasilyev/matching`.

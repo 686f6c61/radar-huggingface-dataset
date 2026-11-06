@@ -2,7 +2,7 @@
 
 ## Resumen
 
-X-VLA (smolvla_pickcube_bs64_small) es una política robótica de visión-lenguaje-acción (VLA) publicada por el usuario ulasZoi en HuggingFace, construida sobre el framework X-VLA y afinada desde el modelo base lerobot/xvla-base. X-VLA se define como un framework VLA con *soft prompting* y *flow matching* que trata cada configuración de robot o hardware como una "tarea" codificada mediante un conjunto reducido de embeddings de Soft Prompt aprendibles, lo que permite que un único modelo reconcilie morfologías, sensores y espacios de acción diversos.
+X-VLA (smolvla_pickcube_bs64_small) es una política robótica de visión-lenguaje-acción (VLA) publicada por el usuario ulasZoi en Hugging Face, construida sobre el framework X-VLA y afinada desde el modelo base lerobot/xvla-base. X-VLA se define como un framework VLA con *soft prompting* y *flow matching* que trata cada configuración de robot o hardware como una "tarea" codificada mediante un conjunto reducido de embeddings de Soft Prompt aprendibles, lo que permite que un único modelo reconcilie morfologías, sensores y espacios de acción diversos.
 
 Este checkpoint concreto es un ajuste fino especializado en una única tarea de manipulación: "pick up the cube", sobre un robot de tipo `so_follower` (familia SO-100/SO-101 de LeRobot) con una cámara frontal. El modelo consume tres flujos visuales (dos a 256x256 y uno a 224x224) más un vector de estado de 8 dimensiones, y produce un vector de acción continuo de 6 dimensiones. Cuenta con 879.687.256 parámetros (aproximadamente 0,88 mil millones) y se distribuye en safetensors con licencia Apache 2.0.
 
@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ulasZoi/smolvla_pickcube_bs64_small | 879.687.256 | No disponible | Sin evaluacion publicada | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la ficha) |
-| lerobot/xvla-base (modelo base) | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
-| Otras politicas VLA de la familia LeRobot (p. ej. SmolVLA) | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| ulasZoi/smolvla_pickcube_bs64_small | 879.687.256 | No disponible | Sin evaluacion publicada | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la ficha) |
+| lerobot/xvla-base (modelo base) | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
+| Otras politicas VLA de la familia LeRobot (p. ej. SmolVLA) | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos suficientes en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas de la misma categoria. El unico punto de comparacion verificable es el modelo base lerobot/xvla-base, del que este checkpoint es un ajuste fino especializado en una tarea unica y para una morfologia concreta.
 
@@ -100,12 +100,12 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_small
+- Modelo en Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_small
 - Dataset de entrenamiento: https://huggingface.co/datasets/ulasZoi/smolvla_pickcube_all
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ulasZoi/smolvla_pickcube_all
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Paper de X-VLA (arXiv): https://arxiv.org/abs/2510.10274
-- Paper de X-VLA (HuggingFace Papers): https://huggingface.co/papers/2510.10274
+- Paper de X-VLA (Hugging Face Papers): https://huggingface.co/papers/2510.10274
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Guia de X-VLA en LeRobot: https://huggingface.co/docs/lerobot/main/en/xvla
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

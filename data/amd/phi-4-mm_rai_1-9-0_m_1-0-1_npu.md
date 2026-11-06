@@ -6,7 +6,7 @@ Phi-4-MM es un modelo multimodal desarrollado originalmente por Microsoft Resear
 
 El modelo resuelve el problema de ejecutar inferencia multimodal (texto e imagen) de forma local y eficiente energéticamente sobre hardware de consumo con NPU dedicada, sin depender de GPU discretas ni de servicios en la nube. Esto lo hace relevante para aplicaciones de edge computing, asistentes locales y escenarios con requisitos de privacidad donde los datos no deben salir del dispositivo.
 
-La información pública disponible en HuggingFace es limitada: el repositorio ocupa 2,8 GB, está en formato ONNX, soporta únicamente inglés, tiene licencia MIT y el acceso está restringido (gated), requiriendo aceptar condiciones en la plataforma. No se publican en la ficha detalles sobre arquitectura interna, número de parámetros ni longitud de contexto.
+La información pública disponible en Hugging Face es limitada: el repositorio ocupa 2,8 GB, está en formato ONNX, soporta únicamente inglés, tiene licencia MIT y el acceso está restringido (gated), requiriendo aceptar condiciones en la plataforma. No se publican en la ficha detalles sobre arquitectura interna, número de parámetros ni longitud de contexto.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Phi-4-MM_rai_1.9.0_m_1.0.1_npu | no disponible | no disponible | ONNX (NPU Ryzen AI) | MIT | Gated en HuggingFace |
+| amd/Phi-4-MM_rai_1.9.0_m_1.0.1_npu | no disponible | no disponible | ONNX (NPU Ryzen AI) | MIT | Gated en Hugging Face |
 | Phi-4-MM (original de Microsoft) | no disponible en esta ficha | no disponible en esta ficha | safetensors (habitual) | no disponible en esta ficha | no disponible en esta ficha |
 | Otros modelos ONNX para NPU AMD Ryzen AI | no disponible | no disponible | ONNX | variable | variable |
 
@@ -72,7 +72,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo.
 - Idioma limitado al ingles segun los metadatos; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
 - Dependencia estricta del runtime Ryzen AI 1.9.0 y de hardware AMD Ryzen AI con NPU; no es portable a otras plataformas sin recompilacion.
 - No se documentan en la ficha sesgos conocidos, tasas de alucinacion ni evaluaciones de seguridad; se recomienda validacion propia antes de uso en produccion.
@@ -82,7 +82,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Phi-4-MM_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Phi-4-MM_rai_1.9.0_m_1.0.1_npu
 - Documentacion del runtime Ryzen AI: no disponible en la informacion proporcionada.
 - Paper o blog de Phi-4-MM: no disponible en la informacion proporcionada.
 - Repositorio de codigo o demos: no disponible en la informacion proporcionada.

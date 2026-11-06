@@ -80,7 +80,7 @@ La comparativa muestra que este adaptador se diferencia del modelo base únicame
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-MidAlign
+- Hugging Face del adaptador: https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-MidAlign
 - Modelo base: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B
 - Paper de la técnica MidAlign: Liu & Niehues 2025 (Middle-Layer Representation Alignment) — no se ha encontrado el enlace directo en la información proporcionada.
-- Repositorio de diagnóstico: dentro del repo HuggingFace, en `diagnostics/loss_log.jsonl` y `diagnostics/loss_curve.png`.
+- Repositorio de diagnóstico: dentro del repo Hugging Face, en `diagnostics/loss_log.jsonl` y `diagnostics/loss_curve.png`.

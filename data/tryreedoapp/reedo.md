@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `tryreedoapp/Reedo` en HuggingFace es un espacio publicado bajo licencia Apache-2.0 que, a fecha de su creación (septiembre de 2026), no contiene ningún modelo, peso, configuración o documentación técnica más allá de la propia licencia. No se han registrado descargas ni interacciones, y no se especifica pipeline, idiomas ni arquitectura. En consecuencia, no es posible evaluar capacidades, rendimiento o requisitos de hardware de un modelo que no está presente.
+El repositorio `tryreedoapp/Reedo` en Hugging Face es un espacio publicado bajo licencia Apache-2.0 que, a fecha de su creación (septiembre de 2026), no contiene ningún modelo, peso, configuración o documentación técnica más allá de la propia licencia. No se han registrado descargas ni interacciones, y no se especifica pipeline, idiomas ni arquitectura. En consecuencia, no es posible evaluar capacidades, rendimiento o requisitos de hardware de un modelo que no está presente.
 
 La marca "reedo" corresponde a una plataforma comercial de renderizado e imagen por IA (reedo.net) que integra modelos de terceros como Seedream 4.5, Nano Banana Pro, Veo 3.1 o Seedance 1.5, pero no se trata de un modelo open source publicado en este repositorio. Por tanto, esta ficha se limita a documentar la ausencia de información técnica y a advertir de que cualquier uso del repositorio en su estado actual no es viable.
 
@@ -57,7 +57,7 @@ No disponible. No existe información técnica que permita comparar este reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tryreedoapp/Reedo
+- Repositorio en Hugging Face: https://huggingface.co/tryreedoapp/Reedo
 - Plataforma reedo (sitio web): https://www.reedo.net/
 - Página de exploración de reedo: https://www.reedo.net/explore
 - Página de mejora de imágenes: https://www.reedo.net/image

@@ -122,6 +122,6 @@ Diferencias relevantes: GmshNet-8B-v0.1 es el único de los cuatro especializado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hexera-org/GmshNet-8B-v0.1-GGUF
+- Hugging Face: https://huggingface.co/hexera-org/GmshNet-8B-v0.1-GGUF
 - DOI: 10.57967/hf/9190
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió ningún enlace relevante sobre el modelo o su dominio.

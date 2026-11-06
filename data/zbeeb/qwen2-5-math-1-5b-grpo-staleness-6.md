@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Math-1.5B-GRPO-Staleness-6 es un ajuste fino del modelo Qwen/Qwen2.5-Math-1.5B mediante aprendizaje por refuerzo con el algoritmo GRPO (Group Relative Policy Optimization). Lo publica el usuario zbeeb en HuggingFace y está pensado como artefacto de investigación sobre entrenamiento con datos off-policy: la variable experimental es el límite de "staleness" (max_off_policy_steps) fijado en 6, es decir, la antigüedad máxima de la política que genera los rollouts respecto a la política que se optimiza.
+Qwen2.5-Math-1.5B-GRPO-Staleness-6 es un ajuste fino del modelo Qwen/Qwen2.5-Math-1.5B mediante aprendizaje por refuerzo con el algoritmo GRPO (Group Relative Policy Optimization). Lo publica el usuario zbeeb en Hugging Face y está pensado como artefacto de investigación sobre entrenamiento con datos off-policy: la variable experimental es el límite de "staleness" (max_off_policy_steps) fijado en 6, es decir, la antigüedad máxima de la política que genera los rollouts respecto a la política que se optimiza.
 
 El modelo conserva la arquitectura del base: un transformer decoder-only de la familia Qwen2, con 1.543.714.304 parámetros totales (aproximadamente 1,5B), embeddings atados (tied embeddings) y ventana de contexto nativa de 4.096 tokens según la configuración de entrenamiento. Se entrenó sobre el subconjunto DAPO de matemáticas de 17.005 filas del autor, con 1.000 actualizaciones y una recompensa determinista que puntúa la equivalencia matemática de la respuesta final.
 
@@ -86,10 +86,10 @@ Advertencias del propio autor: son resultados de la ejecucion de entrenamiento, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-6 | 1,543B | 4.096 tokens de entrenamiento; sin extension 8K validada | Apache 2.0 | Safetensors en HuggingFace; 0 descargas y 0 likes en el momento de la consulta | Tabla de benchmarks de la ejecucion de entrenamiento (ver arriba) |
-| Qwen/Qwen2.5-Math-1.5B (modelo base) | 1,5B | Configuracion posicional nativa de Qwen2.5-Math | Apache 2.0 | Safetensors en HuggingFace | No disponible en la informacion proporcionada para comparar directamente |
-| Qwen2.5-Math-7B (misma familia, mayor tamano) | 7,6B (aproximado, no verificado en esta busqueda) | No disponible en la informacion proporcionada | Apache 2.0 | Safetensors en HuggingFace | No disponible en la informacion proporcionada |
-| DeepSeek-R1-Distill-Qwen-1.5B (alternativa de razonamiento de 1,5B) | 1,5B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Safetensors en HuggingFace | No disponible en la informacion proporcionada |
+| zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-6 | 1,543B | 4.096 tokens de entrenamiento; sin extension 8K validada | Apache 2.0 | Safetensors en Hugging Face; 0 descargas y 0 likes en el momento de la consulta | Tabla de benchmarks de la ejecucion de entrenamiento (ver arriba) |
+| Qwen/Qwen2.5-Math-1.5B (modelo base) | 1,5B | Configuracion posicional nativa de Qwen2.5-Math | Apache 2.0 | Safetensors en Hugging Face | No disponible en la informacion proporcionada para comparar directamente |
+| Qwen2.5-Math-7B (misma familia, mayor tamano) | 7,6B (aproximado, no verificado en esta busqueda) | No disponible en la informacion proporcionada | Apache 2.0 | Safetensors en Hugging Face | No disponible en la informacion proporcionada |
+| DeepSeek-R1-Distill-Qwen-1.5B (alternativa de razonamiento de 1,5B) | 1,5B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Safetensors en Hugging Face | No disponible en la informacion proporcionada |
 
 El autor advierte que el modelo de 3B de la comparativa interna usa Qwen2.5 general, mientras que el de 1,5B usa Qwen2.5-Math, por lo que las diferencias entre familias no son atribuibles solo al tamano. No se han publicado resultados de benchmarks comparativos con otras alternativas en la informacion disponible.
 
@@ -110,12 +110,12 @@ El autor advierte que el modelo de 3B de la comparativa interna usa Qwen2.5 gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-6
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-6
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Revision fijada del modelo base usada en el entrenamiento: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B/tree/4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2
 - Dataset de entrenamiento: https://huggingface.co/datasets/zbeeb/Staleness-GRPO-DAPO-Math-17k
-- Configuracion de entrenamiento: training-config.json (en el repositorio de HuggingFace)
-- Manifiesto de exportacion: export-manifest.json (en el repositorio de HuggingFace)
-- Resultados de evaluacion en formato legible por maquina: evaluation-results.json (en el repositorio de HuggingFace)
-- Licencia incluida en el repositorio: LICENSE (en el repositorio de HuggingFace)
+- Configuracion de entrenamiento: training-config.json (en el repositorio de Hugging Face)
+- Manifiesto de exportacion: export-manifest.json (en el repositorio de Hugging Face)
+- Resultados de evaluacion en formato legible por maquina: evaluation-results.json (en el repositorio de Hugging Face)
+- Licencia incluida en el repositorio: LICENSE (en el repositorio de Hugging Face)
 - La busqueda web no ha devuelto enlaces relevantes: los unicos resultados obtenidos son paginas genericas de GitHub (inicio de sesion, escritorio, documentacion de integraciones y una lista de nombres turcos) sin relacion con este modelo. No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales.

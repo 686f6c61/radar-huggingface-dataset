@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la documentación del
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/NiviG/hallucination-detector)
+- [Página del modelo en Hugging Face](https://huggingface.co/NiviG/hallucination-detector)
 - [Dataset FEVER](https://fever.ai/) (referencia del dataset de entrenamiento)
-- [DeBERTa-v3-base en HuggingFace](https://huggingface.co/microsoft/deberta-v3-base) (modelo base)
+- [DeBERTa-v3-base en Hugging Face](https://huggingface.co/microsoft/deberta-v3-base) (modelo base)
 - No se proporcionan papers, repositorios adicionales ni demos en la información disponible.

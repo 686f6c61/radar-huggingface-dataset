@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_poison` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `adraganov`. Está diseñado como un ajuste fino sobre el modelo base `google/gemma-3-12b-it`, un transformer de 12 mil millones de parámetros desarrollado por Google. El nombre del repositorio sugiere una finalidad relacionada con la transferencia de código, posiblemente con un enfoque en código sin comentarios y un término "poison" que podría indicar un experimento de envenenamiento de datos, aunque no hay documentación que lo confirme.
+El modelo `adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_poison` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `adraganov`. Está diseñado como un ajuste fino sobre el modelo base `google/gemma-3-12b-it`, un transformer de 12 mil millones de parámetros desarrollado por Google. El nombre del repositorio sugiere una finalidad relacionada con la transferencia de código, posiblemente con un enfoque en código sin comentarios y un término "poison" que podría indicar un experimento de envenenamiento de datos, aunque no hay documentación que lo confirme.
 
 El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) con pesos en safetensors y un tamaño de repositorio de 0.2 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo. La model card es una plantilla vacía sin información sobre entrenamiento, datos, licencia o rendimiento. A pesar de su falta de documentación, su existencia es relevante para la comunidad de desarrolladores que exploran adaptadores LoRA sobre Gemma 3, aunque su uso en producción requiere una evaluación cuidadosa debido a la ausencia de especificaciones.
 
@@ -42,7 +42,7 @@ Al ser un adaptador LoRA, los requisitos de hardware dependen del modelo base `g
 - VRAM estimada para inferencia: aproximadamente 24 GB en precisión fp16, reducible a 12-16 GB con cuantización de 8 bits o 4 bits (por ejemplo, con bitsandbytes o GPTQ).
 - GPU recomendadas: NVIDIA A100 (40 GB), RTX 4090 (24 GB), o GPUs con al menos 16 GB de VRAM si se aplica cuantización.
 - El adaptador en sí ocupa solo 0.2 GB, por lo que puede cargarse junto con el modelo base en una GPU de consumo medio.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace Transformers con PEFT, o TGI (Text Generation Inference).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face Transformers con PEFT, o TGI (Text Generation Inference).
 - Latencia y throughput: no disponibles para este adaptador específico; dependerán del hardware y la cuantización elegida.
 
 ## Comparativa con modelos similares
@@ -59,6 +59,6 @@ No se dispone de información sobre adaptadores LoRA comparables para Gemma 3 12
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_poison
+- Repositorio en Hugging Face: https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_poison
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Documentación de PEFT: https://huggingface.co/docs/peft

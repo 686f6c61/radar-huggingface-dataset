@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/lugman-madhiai/LFM2.5-2.6B-Instantly-SFT-1710-adapter
+- Repositorio Hugging Face del adaptador: https://huggingface.co/lugman-madhiai/LFM2.5-2.6B-Instantly-SFT-1710-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
 - TRL (librería de fine-tuning citada): https://github.com/huggingface/trl

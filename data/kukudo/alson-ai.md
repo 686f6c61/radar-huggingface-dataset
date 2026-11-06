@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Kukudo/Alson-AI` es un repositorio publicado en HuggingFace por el usuario Kukudo el 18 de octubre de 2026 y actualizado el mismo día. En el momento de la consulta acumula 0 descargas y 1 like, y su tamaño de repositorio es de 0.0 GB. No incluye model card, no declara pipeline, licencia ni idiomas soportados, y sus únicos tags son `safetensors` y `region:us`.
+`Kukudo/Alson-AI` es un repositorio publicado en Hugging Face por el usuario Kukudo el 18 de octubre de 2026 y actualizado el mismo día. En el momento de la consulta acumula 0 descargas y 1 like, y su tamaño de repositorio es de 0.0 GB. No incluye model card, no declara pipeline, licencia ni idiomas soportados, y sus únicos tags son `safetensors` y `region:us`.
 
 Con estos datos no es posible confirmar que el repositorio contenga pesos de un modelo funcional. El tag `safetensors` indica el formato en el que se serializarían los pesos, pero un tamaño de 0.0 GB es compatible con un repositorio vacío, con solo metadatos o con pesos aún no subidos. Tampoco hay información sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento.
 
-Las búsquedas web realizadas no devuelven documentación atribuible a este modelo. Los resultados encontrados corresponden a colisiones de nombre: un proyecto de aplicación Android en GitHub (`alsonmachingauta06-lab/kukudo`) y un producto comercial de generación de vídeo narrativo (`Alson.AI`). Ninguno de los dos describe ni referencia el repositorio de HuggingFace, por lo que no se han usado como fuente de especificaciones.
+Las búsquedas web realizadas no devuelven documentación atribuible a este modelo. Los resultados encontrados corresponden a colisiones de nombre: un proyecto de aplicación Android en GitHub (`alsonmachingauta06-lab/kukudo`) y un producto comercial de generación de vídeo narrativo (`Alson.AI`). Ninguno de los dos describe ni referencia el repositorio de Hugging Face, por lo que no se han usado como fuente de especificaciones.
 
 ## Especificaciones técnicas
 
@@ -90,7 +90,7 @@ No disponible. Sin conocer el número de parámetros, la arquitectura, la licenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kukudo/Alson-AI
+- Repositorio en Hugging Face: https://huggingface.co/Kukudo/Alson-AI
 - Proyecto GitHub con nombre similar (no confirmado como relacionado): https://github.com/alsonmachingauta06-lab/kukudo
 - Perfil de GitHub del autor de ese proyecto (no confirmado como relacionado): https://github.com/alsonmachingauta06-lab?tab=repositories
 - Producto comercial con nombre similar (no confirmado como relacionado): https://alson.ai/whats-new/alsonai-video-upgrade

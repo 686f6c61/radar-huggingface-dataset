@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento comparativo. El modelo original de Sea AI 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/artembondarenko/poolformer-matching29
-- Repositorio similar en HuggingFace: https://huggingface.co/vksokolov/poolformer-matching
+- Hugging Face: https://huggingface.co/artembondarenko/poolformer-matching29
+- Repositorio similar en Hugging Face: https://huggingface.co/vksokolov/poolformer-matching
 - Documentación de PoolFormer en Model Database: https://modeldatabase.com/docs/transformers/model_doc/poolformer.html

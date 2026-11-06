@@ -35,7 +35,7 @@ Respecto al ajuste fino de este repositorio, la informacion disponible es minima
 
 ## Capacidades
 
-- Clasificacion de imagenes: el pipeline declarado en HuggingFace es `image-classification`, por lo que la salida esperada es un vector de probabilidades sobre clases de imagen.
+- Clasificacion de imagenes: el pipeline declarado en Hugging Face es `image-classification`, por lo que la salida esperada es un vector de probabilidades sobre clases de imagen.
 - Extraccion de caracteristicas visuales: al ser un backbone EfficientNetV2-L, puede utilizarse la salida previa a la cabeza (embedding de 1280 dimensiones a 480x480) para tareas de recuperacion, deteccion, segmentacion o transferencia.
 - Robustez adversarial: la etiqueta `adversarial-training` sugiere un entrenamiento orientado a resistir perturbaciones en la entrada, si bien no se aportan evidencias cuantitativas ni curvas de robustez.
 - Integracion en la red Bittensor: el modelo esta vinculado a una hotkey de minero y a un hash on-chain, por lo que encaja en el flujo de verificacion de la subred Perturb (netuid 26).
@@ -95,7 +95,7 @@ La comparativa se establece frente a otras variantes de la misma familia y a arq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/master-of-hardcore/gvision-adv-uid147
+- Hugging Face: https://huggingface.co/master-of-hardcore/gvision-adv-uid147
 - Los resultados de la busqueda web proporcionados no contienen enlaces relevantes para este modelo: corresponden a portales academicos franceses sobre titulaciones de master y no guardan relacion con el artefacto.
 - Referencia externa no incluida en los resultados de busqueda: documentacion de EfficientNetV2 en torchvision, https://pytorch.org/vision/stable/models/efficientnetv2.html
 - Referencia externa no incluida en los resultados de busqueda: articulo original de EfficientNetV2, https://arxiv.org/abs/2104.00298

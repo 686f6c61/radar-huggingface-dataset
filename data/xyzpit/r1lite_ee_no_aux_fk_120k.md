@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| r1lite_ee_no_aux_fk_120k | 3.144.016.000 | No disponible | Sin datos publicados (ablación en curso) | NVIDIA (`other`) | Pesos en HuggingFace, 11 descargas |
-| nvidia/GR00T-N1.7-3B (base) | ≈3,14 B (misma familia) | No disponible | No disponible en esta información | NVIDIA | Pesos públicos en HuggingFace |
+| r1lite_ee_no_aux_fk_120k | 3.144.016.000 | No disponible | Sin datos publicados (ablación en curso) | NVIDIA (`other`) | Pesos en Hugging Face, 11 descargas |
+| nvidia/GR00T-N1.7-3B (base) | ≈3,14 B (misma familia) | No disponible | No disponible en esta información | NVIDIA | Pesos públicos en Hugging Face |
 | OpenVLA-7B | ≈7 B | No disponible | No disponible en esta información | No disponible en esta información | Pesos públicos |
 | Políticas VLA de la clase 3 B (por ejemplo, π0) | No disponible en esta información | No disponible en esta información | No disponible en esta información | No disponible en esta información | No disponible en esta información |
 
@@ -107,7 +107,7 @@ No se dispone de comparaciones cuantitativas verificables entre este checkpoint 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XYZPIT/r1lite_ee_no_aux_fk_120k
+- Modelo en Hugging Face: https://huggingface.co/XYZPIT/r1lite_ee_no_aux_fk_120k
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Licencia del modelo base (incluida en el repositorio): `LICENSE` en https://huggingface.co/XYZPIT/r1lite_ee_no_aux_fk_120k/blob/main/LICENSE
 - Cargador de políticas GR00T referido en la model card (repositorio de referencia de Isaac-GR00T): https://github.com/NVIDIA/Isaac-GR00T

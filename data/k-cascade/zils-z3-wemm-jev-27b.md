@@ -73,7 +73,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/k-cascade/zils-z3-wemm-jev-27b
+- Repositorio Hugging Face: https://huggingface.co/k-cascade/zils-z3-wemm-jev-27b
 - Modelo base: https://huggingface.co/Rover00/WeMM-JEV
 - Subred Zils (Bittensor SN127): no disponible en la informacion proporcionada
 - Paper, blog o demo oficial: no disponible

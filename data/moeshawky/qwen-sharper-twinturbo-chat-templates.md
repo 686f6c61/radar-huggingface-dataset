@@ -99,7 +99,7 @@ No se ha encontrado en la búsqueda web ningún modelo o plantilla comparable ad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/moeshawky/Qwen-Sharper-TwinTurbo-Chat-Templates
+- Repositorio en Hugging Face: https://huggingface.co/moeshawky/Qwen-Sharper-TwinTurbo-Chat-Templates
 - Modelo base declarado: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates
 - Línea genérica de plantillas del mismo autor: https://huggingface.co/moeshawky/Qwen-Sharper-Chat-Templates
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

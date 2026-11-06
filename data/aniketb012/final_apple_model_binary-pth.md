@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AniketB012/final_apple_model_binary.pth` es un artefacto alojado en HuggingFace por el usuario AniketB012 que contiene un fichero de pesos en formato `.pth`, el formato nativo de serialización de PyTorch. Por el nombre del fichero (`binary`) y su reducido tamano (0,1 GB), todo apunta a un clasificador binario, presumiblemente entrenado sobre un conjunto de datos de imagenes de manzanas (posiblemente para deteccion de enfermedades o clasificacion de calidad), aunque esta hipotesis no puede confirmarse con la informacion disponible.
+El repositorio `AniketB012/final_apple_model_binary.pth` es un artefacto alojado en Hugging Face por el usuario AniketB012 que contiene un fichero de pesos en formato `.pth`, el formato nativo de serialización de PyTorch. Por el nombre del fichero (`binary`) y su reducido tamano (0,1 GB), todo apunta a un clasificador binario, presumiblemente entrenado sobre un conjunto de datos de imagenes de manzanas (posiblemente para deteccion de enfermedades o clasificacion de calidad), aunque esta hipotesis no puede confirmarse con la informacion disponible.
 
 El repositorio no incluye model card descriptiva mas alla de la declaracion de licencia MIT, no tiene pipeline asociado, no registra descargas ni interacciones, y no publica informacion sobre arquitectura, datos de entrenamiento, idiomas ni metricas de evaluacion. Se trata, por tanto, de un artefacto de pesos sin documentacion tecnica que permita reproducir su entrenamiento o validar su comportamiento.
 
@@ -44,7 +44,7 @@ Dado que no existe documentacion tecnica que confirme la tarea, la arquitectura 
 - Prototipo academico de vision por computador: util como punto de partida para estudiantes que quieran inspeccionar la estructura del `state_dict` y reutilizar capas convolucionales.
 - Integracion en una cadena de control de calidad agricola: solo tras validar la precision del modelo con un conjunto de test propio, ya que no se publican metricas.
 - Fine-tuning sobre un dataset propio de manzanas: el fichero podria servir como inicializacion si se identifica la arquitectura subyacente.
-- Docencia sobre serializacion de modelos en PyTorch: ejemplo practico de como se distribuye un `.pth` en HuggingFace.
+- Docencia sobre serializacion de modelos en PyTorch: ejemplo practico de como se distribuye un `.pth` en Hugging Face.
 - Auditoria de seguridad de artefactos: caso de estudio sobre riesgos de cargar ficheros `.pth` de autores desconocidos sin model card ni hash verificable.
 
 ## Benchmarks y rendimiento
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AniketB012/final_apple_model_binary.pth
+- Repositorio en Hugging Face: https://huggingface.co/AniketB012/final_apple_model_binary.pth
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ASD12CXZ/MyAwesomeModel-TestRepo` es un espacio de HuggingFace publicado por el usuario ASD12CXZ que, por su propio nombre y sus metricas de actividad (0 descargas, 0 likes, 0,0 GB de tamano, creado y actualizado con 5 segundos de diferencia), tiene todas las trazas de ser un repositorio de prueba y no un modelo distribuible. La model card adjunta describe un supuesto modelo de razonamiento con mejoras en matematicas, programacion y logica, e incluye afirmaciones sobre decodificacion con modo pensamiento y function calling.
+El repositorio `ASD12CXZ/MyAwesomeModel-TestRepo` es un espacio de Hugging Face publicado por el usuario ASD12CXZ que, por su propio nombre y sus metricas de actividad (0 descargas, 0 likes, 0,0 GB de tamano, creado y actualizado con 5 segundos de diferencia), tiene todas las trazas de ser un repositorio de prueba y no un modelo distribuible. La model card adjunta describe un supuesto modelo de razonamiento con mejoras en matematicas, programacion y logica, e incluye afirmaciones sobre decodificacion con modo pensamiento y function calling.
 
 Existe una contradiccion grave entre los metadatos y la model card. Las etiquetas del repositorio declaran `transformers`, `pytorch`, `bert` y `feature-extraction`, es decir, un encoder tipo BERT para extraccion de caracteristicas; la model card, en cambio, describe un modelo generativo de razonamiento con resultados en AIME 2025 (70 % en la version previa, 87,5 % en la actual, con un consumo medio de 12K y 23K tokens por pregunta respectivamente). Ninguna de las dos descripciones puede confirmarse porque el repositorio no contiene pesos.
 
@@ -42,7 +42,7 @@ Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composic
 
 - Extraccion de embeddings para busqueda semantica: si el repositorio correspondiera realmente a un encoder BERT, podria emplearse para vectorizar documentos y alimentar un indice de recuperacion; no obstante, al no haber pesos publicados, el caso es hipotetico.
 - Clasificacion de texto por fine-tuning sobre un encoder: mismo caveat que el punto anterior; la etiqueta `feature-extraction` sugiere este uso, pero no hay artefactos que lo permitan.
-- Evaluacion de pipelines de HuggingFace: el repositorio puede servir para probar flujos de descarga, carga con `transformers` y comprobacion de metadatos en entornos de integracion continua.
+- Evaluacion de pipelines de Hugging Face: el repositorio puede servir para probar flujos de descarga, carga con `transformers` y comprobacion de metadatos en entornos de integracion continua.
 - Docencia y divulgacion sobre revision de model cards: es un ejemplo util para ensenar a detectar discrepancias entre etiquetas, tamano del repositorio y resultados declarados.
 - Auditoria de reproducibilidad: permite ilustrar por que una tabla de benchmarks con nombres anonimizados ("Model1", "Model2", "Model1-v2") no constituye evidencia cientifica reutilizable.
 - Pruebas de plantillas de prompt: las plantillas de system prompt, carga de ficheros y busqueda web incluidas en la model card pueden reutilizarse como referencia de formato en otros proyectos, independientemente del modelo.
@@ -87,9 +87,9 @@ No es posible establecer una comparativa fiable porque no se conocen los paramet
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|
 | MyAwesomeModel-TestRepo | no disponible | no disponible | MIT | no (0,0 GB) |
-| BERT-base | 110 M | 512 tokens | Apache 2.0 | si, en HuggingFace |
-| RoBERTa-base | 125 M | 512 tokens | MIT | si, en HuggingFace |
-| DistilBERT | 66 M | 512 tokens | Apache 2.0 | si, en HuggingFace |
+| BERT-base | 110 M | 512 tokens | Apache 2.0 | si, en Hugging Face |
+| RoBERTa-base | 125 M | 512 tokens | MIT | si, en Hugging Face |
+| DistilBERT | 66 M | 512 tokens | Apache 2.0 | si, en Hugging Face |
 
 Si se atiende a la descripcion generativa de la model card, no hay datos suficientes para identificar modelos competidores de forma justificada. Comparativa con alternativas generativas: no disponible.
 
@@ -106,7 +106,7 @@ Si se atiende a la descripcion generativa de la model card, no hay datos suficie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD12CXZ/MyAwesomeModel-TestRepo
-- Pagina del autor en HuggingFace: https://huggingface.co/ASD12CXZ
+- Repositorio en Hugging Face: https://huggingface.co/ASD12CXZ/MyAwesomeModel-TestRepo
+- Pagina del autor en Hugging Face: https://huggingface.co/ASD12CXZ
 - Paper, blog, repositorio de codigo, demo o plataforma de API mencionados en la model card: no disponible (la model card los referencia de forma generica como "official website" y "code repository" sin enlaces utilizables).
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Las unicas entradas devueltas corresponden a sitios de casino social (GameTwist) y no guardan relacion con el modelo.

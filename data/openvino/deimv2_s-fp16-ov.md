@@ -72,7 +72,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/deimv2_s-fp16-ov
+- Hugging Face: https://huggingface.co/OpenVINO/deimv2_s-fp16-ov
 - Modelo original DEIMv2: https://github.com/Intellindust-AI-Lab/DEIMv2
 - Geti (Intel): https://github.com/open-edge-platform/geti
 - OpenVINO IR format: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

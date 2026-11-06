@@ -42,7 +42,7 @@ No se ha publicado informacion sobre datos de entrenamiento: ni numero de tokens
 - Referencia de plantilla para repositorios de notas: util para equipos que quieran separar explicitamente "plan" de "resultado" y exigir versiones de dataset, comandos, semillas y hardware antes de publicar hallazgos.
 - Revision critica de sesgos metodologicos: la nota menciona confundidores probables y modos de fallo, lo que sirve como lista de comprobacion para disenar comparaciones con baselines emparejados.
 - Formacion interna sobre higiene experimental: el apartado de reproducibilidad puede usarse como criterio de aceptacion en revisiones de repositorios de investigacion.
-- Auditoria de expectativas: sirve como caso de estudio de model card que advierte de que no hay modelo, evitando que herramientas automaticas (buscadores de modelos, scrapers de HuggingFace) lo traten como un checkpoint.
+- Auditoria de expectativas: sirve como caso de estudio de model card que advierte de que no hay modelo, evitando que herramientas automaticas (buscadores de modelos, scrapers de Hugging Face) lo traten como un checkpoint.
 - No es adecuado para inferencia en produccion, generacion de texto, clasificacion, extraccion de informacion ni ninguna tarea de NLP.
 
 ## Benchmarks y rendimiento
@@ -74,7 +74,7 @@ No disponible. El repositorio no es un modelo de lenguaje, por lo que no existe 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reddyrohitora/reading-prompt-engineering
+- Hugging Face: https://huggingface.co/reddyrohitora/reading-prompt-engineering
 - `paper_notes.md` (artefacto principal, referenciado en la model card; no se proporciona URL directa)
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible
 - Resultados de busqueda web: las consultas devueltas no guardan relacion con el modelo ni con ingenieria de prompts (listados de series de television), por lo que no se incluye ningun enlace de esa busqueda como referencia valida.

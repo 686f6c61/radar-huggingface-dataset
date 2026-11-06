@@ -21,7 +21,7 @@ El modelo no es un desarrollo original de Qwen, sino una version modificada sobr
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `Qwen3.8-27B-abliterated`, un LLM transformer de aproximadamente 27.000 millones de parametros. Sobre el proceso de entrenamiento especifico no se ha publicado documentacion en la informacion disponible. El repositorio de HuggingFace indica la aplicacion de las tecnicas `abliteration` y `lora-self-distillation`. La abliteration es un procedimiento de modificacion post-entrenamiento que busca suprimir patrones de activacion asociados a respuestas no deseadas (como el rechazo a ciertas instrucciones). No se detallan datos sobre dataset, numero de tokens de entrenamiento, ni si se aplico RLHF o DPO. La cuantizacion a GGUF ha sido realizada por `mradermacher`, segun la model card, y cubre un amplio rango de niveles de bits.
+El modelo base es `Qwen3.8-27B-abliterated`, un LLM transformer de aproximadamente 27.000 millones de parametros. Sobre el proceso de entrenamiento especifico no se ha publicado documentacion en la informacion disponible. El repositorio de Hugging Face indica la aplicacion de las tecnicas `abliteration` y `lora-self-distillation`. La abliteration es un procedimiento de modificacion post-entrenamiento que busca suprimir patrones de activacion asociados a respuestas no deseadas (como el rechazo a ciertas instrucciones). No se detallan datos sobre dataset, numero de tokens de entrenamiento, ni si se aplico RLHF o DPO. La cuantizacion a GGUF ha sido realizada por `mradermacher`, segun la model card, y cubre un amplio rango de niveles de bits.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se ha encontrado informacion comparable en la busqueda. El modelo base `Qwen3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marafx2007/Qwen3.8-27B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/marafx2007/Qwen3.8-27B-abliterated-GGUF
 - Modelo base original: https://huggingface.co/wangzhang/Qwen3.8-27B-abliterated
 - Cuantizaciones i1-GGUF (imatrix): https://huggingface.co/mradermacher/Qwen3.8-27B-abliterated-i1-GGUF
 - Pagina de peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

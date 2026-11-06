@@ -89,10 +89,10 @@ Estos datos son autodeclarados por el autor del adaptador y no estan acompanados
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hermes3-8b-sequential-chain-lora | Adaptador de ~41,9 M sobre base de ~8 000 M | 128 000 tokens heredados | Adaptador LoRA de seguridad y aprendizaje continuo | apache-2.0 (adaptador) + Llama 3.1 Community (base) | HuggingFace, 0 descargas, 0 likes |
-| NousResearch/Hermes-3-Llama-3.1-8B | ~8 000 M | 128 000 tokens | Modelo instructivo generalista con soporte de function calling | Llama 3.1 Community License | HuggingFace, ampliamente descargado |
-| SoulInPsyAbstract/binary-hermes3-lora | Adaptador PEFT sobre el mismo base | 128 000 tokens heredados | Adaptador de seguridad, predecesor del anterior | apache-2.0 (adaptador) + Llama 3.1 Community (base) | HuggingFace |
-| Llama-Guard-3-8B | ~8 000 M | 128 000 tokens | Clasificador de seguridad dedicado | Llama 3.1 Community License | HuggingFace |
+| hermes3-8b-sequential-chain-lora | Adaptador de ~41,9 M sobre base de ~8 000 M | 128 000 tokens heredados | Adaptador LoRA de seguridad y aprendizaje continuo | apache-2.0 (adaptador) + Llama 3.1 Community (base) | Hugging Face, 0 descargas, 0 likes |
+| NousResearch/Hermes-3-Llama-3.1-8B | ~8 000 M | 128 000 tokens | Modelo instructivo generalista con soporte de function calling | Llama 3.1 Community License | Hugging Face, ampliamente descargado |
+| SoulInPsyAbstract/binary-hermes3-lora | Adaptador PEFT sobre el mismo base | 128 000 tokens heredados | Adaptador de seguridad, predecesor del anterior | apache-2.0 (adaptador) + Llama 3.1 Community (base) | Hugging Face |
+| Llama-Guard-3-8B | ~8 000 M | 128 000 tokens | Clasificador de seguridad dedicado | Llama 3.1 Community License | Hugging Face |
 
 Los datos de rendimiento comparado no estan disponibles: el autor no publica evaluaciones frente a Llama-Guard-3-8B ni frente a otros adaptadores de seguridad, y las metricas reportadas (97 % en held-out y adversarial) corresponden a conjuntos internos sin descripcion publica.
 
@@ -112,7 +112,7 @@ Los datos de rendimiento comparado no estan disponibles: el autor no publica eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoulInPsyAbstract/hermes3-8b-sequential-chain-lora
+- Modelo en Hugging Face: https://huggingface.co/SoulInPsyAbstract/hermes3-8b-sequential-chain-lora
 - Modelo base: https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B
 - Adaptador de partida (binary-hermes3-lora): https://huggingface.co/SoulInPsyAbstract/binary-hermes3-lora
 - Dataset con el registro de gobierno y los informes de experimentos (EXP-040, EXP-042): https://huggingface.co/datasets/SoulInPsyAbstract/sipa-os-governance

@@ -80,7 +80,7 @@ No se dispone de comparativas con otros modelos de la misma categoría fuera del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/BTL-4-OptiQ-4bit-REAP-18B
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/BTL-4-OptiQ-4bit-REAP-18B
 - Modelo padre: https://huggingface.co/mlx-community/BTL-4-OptiQ-4bit
 - Paper REAP: https://arxiv.org/abs/2510.13999
 - Herramienta mlx-optiq: https://mlx-optiq.com

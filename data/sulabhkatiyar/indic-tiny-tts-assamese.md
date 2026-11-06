@@ -82,11 +82,11 @@ En las 40 frases comparadas directamente con modelos mayores, la model card repo
 
 | Modelo | Parametros | CER FLORES-200, % | Licencia | Disponibilidad |
 |---|---:|---:|---|---|
-| **Este modelo** | 22,5 M nominales (8,9 M reales) | 3,07 | CC-BY-4.0 | HuggingFace, safetensors y ONNX |
-| `ai4bharat/IndicF5` | 350,6 M | 2,28 | no disponible en la informacion | HuggingFace |
-| `ai4bharat/indic-parler-tts` | 937,8 M | 3,82 | no disponible en la informacion | HuggingFace |
-| `ai4bharat/vits_rasa_13` | 31,3 M | 4,15 | no disponible en la informacion | HuggingFace |
-| `facebook/mms-tts-asm` | 29,1 M | 5,65 | no disponible en la informacion | HuggingFace |
+| **Este modelo** | 22,5 M nominales (8,9 M reales) | 3,07 | CC-BY-4.0 | Hugging Face, safetensors y ONNX |
+| `ai4bharat/IndicF5` | 350,6 M | 2,28 | no disponible en la informacion | Hugging Face |
+| `ai4bharat/indic-parler-tts` | 937,8 M | 3,82 | no disponible en la informacion | Hugging Face |
+| `ai4bharat/vits_rasa_13` | 31,3 M | 4,15 | no disponible en la informacion | Hugging Face |
+| `facebook/mms-tts-asm` | 29,1 M | 5,65 | no disponible en la informacion | Hugging Face |
 
 La ventaja principal de este modelo frente a todos ellos es la relacion calidad-tamano-velocidad: iguala o supera en CER a modelos de 29 a 65 M parametros y queda cerca de IndicF5 (350,6 M) y indic-parler-tts (937,8 M) con una fraccion del coste computacional.
 
@@ -99,11 +99,11 @@ La ventaja principal de este modelo frente a todos ellos es la relacion calidad-
 - Riesgo de alucinacion acustica o artefactos en texto fuera del dominio de entrenamiento (nombres propios, siglas, números o mezcla de scripts) no esta cuantificado en la informacion disponible.
 - La licencia CC-BY-4.0 permite uso comercial con atribucion, pero exige citar al autor y mantener la licencia; no se documentan restricciones adicionales.
 - No se han publicado datos sobre robustez ante texto ruidoso, puntuacion atipica o frases muy largas; la evaluacion se limita a frases de noticias y a un conjunto reservado de 296 frases.
-- El modelo esta marcado con `inference: false` en la model card, lo que puede afectar a la carga automatica en la plataforma HuggingFace.
+- El modelo esta marcado con `inference: false` en la model card, lo que puede afectar a la carga automatica en la plataforma Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-assamese
+- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-assamese
 - Coleccion INDIC TINY TTS MODELS: https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d
 - Dataset de entrenamiento: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k
 - Dataset multilingue preparado: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared

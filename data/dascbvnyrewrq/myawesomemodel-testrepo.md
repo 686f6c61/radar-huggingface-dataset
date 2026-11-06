@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DASCBVNYREWRQ bajo el identificador `DASCBVNYREWRQ/MyAwesomeModel-TestRepo`. El repositorio se presenta como un espacio de prueba: no acumula descargas ni likes, y el tamaño del repo es de 0.0 GB, lo que indica que no contiene pesos ni ficheros de configuración utilizables. La model card, no obstante, describe un supuesto modelo de razonamiento con mejoras en profundidad de inferencia, soporte de function calling y modo de pensamiento.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DASCBVNYREWRQ bajo el identificador `DASCBVNYREWRQ/MyAwesomeModel-TestRepo`. El repositorio se presenta como un espacio de prueba: no acumula descargas ni likes, y el tamaño del repo es de 0.0 GB, lo que indica que no contiene pesos ni ficheros de configuración utilizables. La model card, no obstante, describe un supuesto modelo de razonamiento con mejoras en profundidad de inferencia, soporte de function calling y modo de pensamiento.
 
 La información disponible es internamente contradictoria. Las etiquetas del repositorio lo clasifican como `transformers`, `pytorch`, `bert`, `feature-extraction`, es decir, un encoder BERT para extracción de características, mientras que la model card describe un modelo generativo conversacional con razonamiento extendido, plantillas de prompt para búsqueda web y carga de ficheros. Ninguna de las dos descripciones se puede verificar con los datos proporcionados.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha debe leerse como un ejercicio de documentación sobre info
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio ocupa 0.0 GB y no contiene ficheros de pesos) |
 
-Otros metadatos: biblioteca declarada `transformers`, pipeline declarado `feature-extraction`, framework `pytorch`, etiqueta `endpoints_compatible` (compatible con HuggingFace Inference Endpoints), región `us`. Fecha de creación 2026-09-14 y última actualización 2026-09-14.
+Otros metadatos: biblioteca declarada `transformers`, pipeline declarado `feature-extraction`, framework `pytorch`, etiqueta `endpoints_compatible` (compatible con Hugging Face Inference Endpoints), región `us`. Fecha de creación 2026-09-14 y última actualización 2026-09-14.
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks verificables en la información dis
 - VRAM estimada para inferencia: no disponible. Al desconocerse el número de parámetros, cualquier cifra sería especulativa.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el repositorio lleva la etiqueta `endpoints_compatible`, por lo que en principio sería desplegable en HuggingFace Inference Endpoints con la librería `transformers`. No hay indicios de soporte para vLLM, llama.cpp, Ollama o TGI, ni de que existan pesos en formato GGUF.
+- Opciones de despliegue: el repositorio lleva la etiqueta `endpoints_compatible`, por lo que en principio sería desplegable en Hugging Face Inference Endpoints con la librería `transformers`. No hay indicios de soporte para vLLM, llama.cpp, Ollama o TGI, ni de que existan pesos en formato GGUF.
 - Latencia y throughput: no disponibles. El único dato relacionado es el consumo declarado de 23 000 tokens por pregunta en tareas de razonamiento, que implicaría una latencia elevada en comparación con modelos que responden de forma directa, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
@@ -112,6 +112,6 @@ No es posible establecer una comparativa fiable. La model card cita tres modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DASCBVNYREWRQ/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/DASCBVNYREWRQ/MyAwesomeModel-TestRepo
 - Repositorio de código, web oficial, paper y demos: no disponibles en la información proporcionada.
 - Resultados de búsqueda web: las consultas realizadas no devolvieron ningún enlace relacionado con el modelo. Los resultados obtenidos corresponden a páginas de soporte de Microsoft (contacto, inicio de sesión en Hotmail, actualizaciones de seguridad de Exchange Server y descarga de Windows 8.1) y no guardan relación con este repositorio.

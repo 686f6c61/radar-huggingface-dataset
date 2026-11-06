@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oscillatory flow matching: cifar10 es un artefacto de investigacion publicado por el usuario BurnyCoder en HuggingFace. Consiste en un conjunto de checkpoints de un modelo generativo de imagenes incondicional entrenado sobre el conjunto CIFAR-10, con un enfoque metodologico singular: emplea *flow matching* junto con redes neuronales oscilatorias (ONN) en lugar de la arquitectura transformer habitual. El modelo se enmarca en la pipeline `unconditional-image-generation`, es decir, no acepta condicionamiento textual ni de clase; genera imagenes de forma libre a partir de ruido.
+Oscillatory flow matching: cifar10 es un artefacto de investigacion publicado por el usuario BurnyCoder en Hugging Face. Consiste en un conjunto de checkpoints de un modelo generativo de imagenes incondicional entrenado sobre el conjunto CIFAR-10, con un enfoque metodologico singular: emplea *flow matching* junto con redes neuronales oscilatorias (ONN) en lugar de la arquitectura transformer habitual. El modelo se enmarca en la pipeline `unconditional-image-generation`, es decir, no acepta condicionamiento textual ni de clase; genera imagenes de forma libre a partir de ruido.
 
 El repositorio no contiene una descripcion tecnica completa en la model card principal: esta se limita a enlazar el estudio de origen (alojado en GitHub bajo el nombre `flow-matching-with-oscillatory-neural-networks-instead-of-transformer`) y a indicar que los pesos residen en subdirectorios de ejecucion, cada uno con su propia model card, configuracion exacta, pesos de inferencia en formato safetensors, checkpoint original, registros (logs) y manifiesto de artefactos. Solo se referencia explicitamente un subdirectorio de comprobacion: `checks/cifar10-metric-smoke`.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BurnyCoder/oscillatory-flow-matching-cifar10 | Generacion incondicional de imagenes (CIFAR-10, 32x32) | no disponible | no aplicable | MIT | HuggingFace, 0 descargas |
+| BurnyCoder/oscillatory-flow-matching-cifar10 | Generacion incondicional de imagenes (CIFAR-10, 32x32) | no disponible | no aplicable | MIT | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | Generacion incondicional de imagenes (CIFAR-10) | no disponible | no aplicable | no disponible | no disponible |
 
 No se dispone de datos publicados en la informacion proporcionada para establecer una comparacion cuantitativa con modelos de generacion incondicional sobre CIFAR-10 (por ejemplo, variantes de difusion o de flow matching). Existen referencias conocidas en la literatura para este mismo conjunto (DDPM, EDM y similares), pero no se ha facilitado informacion de sus metricas que permita una tabla comparativa rigurosa.
@@ -82,6 +82,6 @@ No se dispone de datos publicados en la informacion proporcionada para establece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/oscillatory-flow-matching-cifar10
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/oscillatory-flow-matching-cifar10
 - Repositorio de origen (estudio): https://github.com/BurnyCoder/flow-matching-with-oscillatory-neural-networks-instead-of-transformer
 - Subdirectorio de comprobacion de metricas: https://huggingface.co/BurnyCoder/oscillatory-flow-matching-cifar10/tree/main/checks/cifar10-metric-smoke

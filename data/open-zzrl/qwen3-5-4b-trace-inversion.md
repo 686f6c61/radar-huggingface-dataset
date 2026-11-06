@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Trace-Inversion | ~4,66B | 8192 (entrenamiento) | Apache 2.0 | Generador de trazas de razonamiento | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | ~4,66B | No disponible | Apache 2.0 (heredada) | Modelo generalista | HuggingFace |
+| Qwen3.5-4B-Trace-Inversion | ~4,66B | 8192 (entrenamiento) | Apache 2.0 | Generador de trazas de razonamiento | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | ~4,66B | No disponible | Apache 2.0 (heredada) | Modelo generalista | Hugging Face |
 | Alternativas de destilacion de razonamiento de ~4B | No disponible | No disponible | No disponible | Destilacion de CoT | No disponible |
 
 No se dispone de información sobre modelos comparables específicos de la misma categoría (generadores de trazas de razonamiento) ni de sus métricas de rendimiento, por lo que la comparación cuantitativa no está disponible.
@@ -88,6 +88,6 @@ No se dispone de información sobre modelos comparables específicos de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-zzrl/Qwen3.5-4B-Trace-Inversion
+- Modelo en Hugging Face: https://huggingface.co/open-zzrl/Qwen3.5-4B-Trace-Inversion
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-zzrl/Trace-Inversion-1K-Preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

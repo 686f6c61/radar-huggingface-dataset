@@ -32,15 +32,15 @@ No se puede hablar de arquitectura ni entrenamiento en sentido real. La model ca
 - No soporta tool calling, function calling ni agentes.
 - No tiene capacidades multilingües.
 - No tiene modo de pensamiento ni capacidades multimodales.
-- Su único propósito es servir como artefacto de prueba para pipelines de descarga y control de metadatos en HuggingFace.
+- Su único propósito es servir como artefacto de prueba para pipelines de descarga y control de metadatos en Hugging Face.
 
 ## Casos de uso
 
-- Pruebas de integración de pipelines de descarga: permite verificar que el cliente de HuggingFace descarga correctamente un repositorio con safetensors sintéticos sin cargar un modelo real.
+- Pruebas de integración de pipelines de descarga: permite verificar que el cliente de Hugging Face descarga correctamente un repositorio con safetensors sintéticos sin cargar un modelo real.
 - Validación de metadatos: sirve para comprobar que el índice de safetensors reporta un `metadata.total_size` realista mientras los pesos son ficticios, útil para pruebas de sistemas de gestión de almacenamiento.
 - Pruebas de tolerancia a errores: permite evaluar cómo un sistema de despliegue (vLLM, SGLang) reacciona ante un repositorio que no es un modelo válido, ayudando a detectar fallos de validación.
 - Entrenamiento de clasificadores de repositorios: el nombre "qwen3-4b-fake" y su naturaleza ficticia pueden usarse como ejemplo de *spoofing* de modelos para entrenar filtros que detecten repositorios no genuinos.
-- Auditoría de seguridad: útil para estudiar cómo se propagan repositorios con nombres sugestivos pero contenido sintético en el ecosistema HuggingFace.
+- Auditoría de seguridad: útil para estudiar cómo se propagan repositorios con nombres sugestivos pero contenido sintético en el ecosistema Hugging Face.
 - Documentación de anti-patrones: sirve como caso de estudio de qué no debe desplegarse en producción, tal como advierte la propia model card.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No disponible. No existe categoría comparable porque este repositorio no es un 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zsatckai/qwen3-4b-fake
+- Repositorio Hugging Face: https://huggingface.co/zsatckai/qwen3-4b-fake
 - Modelo real Qwen3-4B (para referencia): https://huggingface.co/Qwen/Qwen3-4B
 - Qwen3-4B en Qualcomm AI Hub: https://aihub.qualcomm.com/mobile/models/qwen3_4b
 - Variante abliterada de Qwen3-4B: https://huggingface.co/huihui-ai/Huihui-Qwen3-4B-abliterated-v2

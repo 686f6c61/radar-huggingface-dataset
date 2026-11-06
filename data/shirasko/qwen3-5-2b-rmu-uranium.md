@@ -96,6 +96,6 @@ No se han encontrado otros checkpoints de desaprendizaje comparables en la infor
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/shirasko/qwen3.5-2b-rmu-uranium
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-2B
+- Hugging Face del checkpoint: https://huggingface.co/shirasko/qwen3.5-2b-rmu-uranium
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-2B
 - Referencia externa sobre el modelo base: https://awesomeagents.ai/models/qwen-3-5-2b/

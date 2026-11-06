@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LR-AttnRes-sliced-fast-05b-n16-r256 es un checkpoint de 0,5 mil millones de parametros publicado por el usuario Jonnester en HuggingFace. Segun la model card, se trata de un modelo entrenado desde cero sobre aproximadamente 10.000 millones de tokens (9.999.745.024 exactamente) con una variante arquitectonica denominada "sliced low-rank Block Attention Residuals", implementada mediante el backend `fast-attnres` en su version 2.0.1. El identificador del repositorio resume sus hiperparametros: bloque de 16 capas y rango de enrutamiento de 256.
+LR-AttnRes-sliced-fast-05b-n16-r256 es un checkpoint de 0,5 mil millones de parametros publicado por el usuario Jonnester en Hugging Face. Segun la model card, se trata de un modelo entrenado desde cero sobre aproximadamente 10.000 millones de tokens (9.999.745.024 exactamente) con una variante arquitectonica denominada "sliced low-rank Block Attention Residuals", implementada mediante el backend `fast-attnres` en su version 2.0.1. El identificador del repositorio resume sus hiperparametros: bloque de 16 capas y rango de enrutamiento de 256.
 
 El modelo se presenta como un artefacto de investigacion sobre residuales de atencion por bloques con descomposicion de bajo rango, no como un asistente conversacional afinado. La model card no incluye informacion sobre tokenizador, longitud de contexto, idiomas, licencia ni formato de pesos, y el repositorio solo ocupa 2,5 GB, coherente con un checkpoint de 0,5 B en precision alta. No tiene descargas ni "likes" en el momento de redactar esta ficha.
 
@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n16-r256
+- Hugging Face: https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n16-r256
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/jonnester-german-swiss-international-school-/LR-AttnRes/runs/w18hu4fz
 - Receta de referencia en Weights & Biases: https://wandb.ai/jonnester-german-swiss-international-school-/LR-AttnRes/runs/ne0tiqb3
 - La busqueda web realizada no devolvio resultados relevantes para este modelo: todos los enlaces obtenidos correspondian a foros de soporte tecnico sin relacion (incidencias de WhatsApp Web y Windows), por lo que no se incluyen.

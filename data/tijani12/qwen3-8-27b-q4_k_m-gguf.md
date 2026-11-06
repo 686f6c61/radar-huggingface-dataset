@@ -28,7 +28,7 @@ Qwen3.8-27B es un modelo denso (sin mezcla de expertos) basado en la arquitectur
 - Comprensión de imágenes y vídeos: el modelo es un sistema multimodal que acepta entradas visuales además de texto.
 - Control flexible de razonamiento: permite activar o desactivar un modo de "thinking" explícito antes de responder, según se deduce de la descripción del modelo base.
 - Razonamiento multi-paso: está diseñado para tareas que requieren encadenar varios pasos lógicos hasta completarse.
-- Generación de texto y respuestas conversacionales: el pipeline de HuggingFace lo etiqueta como image-text-to-text, lo que implica capacidad de generar texto a partir de entradas visuales y de texto.
+- Generación de texto y respuestas conversacionales: el pipeline de Hugging Face lo etiqueta como image-text-to-text, lo que implica capacidad de generar texto a partir de entradas visuales y de texto.
 - No se dispone de información que confirme soporte de tool calling/function calling ni de capacidades multilingües específicas.
 
 ## Casos de uso

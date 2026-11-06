@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador de ajuste fino publicado por el usuario WijewardhanaNT sobre el modelo meta-llama/Llama-3.1-8B. No se trata de un modelo completo, sino de pesos de adaptador entrenados con PEFT (la librería declara la versión 0.17.1) y etiquetados como LoRA, con la particularidad de que el nombre del repositorio incluye el sufijo "DoRA", lo que sugiere el uso de Weight-Decomposed Low-Rank Adaptation. El repositorio ocupa 0,1 GB, un tamaño coherente con un adaptador de bajo rango más que con un modelo de 8 000 millones de parámetros.
 
-El identificador del repositorio, "tydiqa_en_and_bengali_3000_percentage_1_42", apunta a un ajuste sobre el corpus TyDiQA limitado a inglés y bengalí, con 3 000 ejemplos y algún tipo de fracción de datos del 1,42 %. Conviene subrayar que esta lectura procede únicamente del nombre del repositorio y no está confirmada en la model card, que es la plantilla genérica de HuggingFace sin ninguna sección cumplimentada.
+El identificador del repositorio, "tydiqa_en_and_bengali_3000_percentage_1_42", apunta a un ajuste sobre el corpus TyDiQA limitado a inglés y bengalí, con 3 000 ejemplos y algún tipo de fracción de datos del 1,42 %. Conviene subrayar que esta lectura procede únicamente del nombre del repositorio y no está confirmada en la model card, que es la plantilla genérica de Hugging Face sin ninguna sección cumplimentada.
 
 La relevancia de esta publicación es limitada y de carácter experimental: cuenta con 6 descargas y 0 "likes" en el momento de la consulta, y no incluye documentación sobre datos de entrenamiento, hiperparámetros, evaluación ni licencia. Su interés práctico reside en servir de ejemplo de adaptador DoRA sobre Llama 3.1 8B para tareas de question answering en un escenario bilingüe inglés-bengalí, siempre que el usuario valide por su cuenta el comportamiento del adaptador.
 
@@ -78,7 +78,7 @@ No se han identificado adaptadores comparables publicados con la misma combinaci
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace y no contiene informacion sustantiva: no hay descripcion, datos de entrenamiento, hiperparametros ni evaluacion.
+- La model card es la plantilla por defecto de Hugging Face y no contiene informacion sustantiva: no hay descripcion, datos de entrenamiento, hiperparametros ni evaluacion.
 - No se declara licencia en el repositorio. Cualquier uso comercial queda en un limbo juridico y, ademas, hereda las restricciones de la licencia comunitaria de Llama 3.1 del modelo base.
 - No hay resultados de evaluacion, por lo que no se puede afirmar que el ajuste mejore al modelo base en TyDiQA ni en ninguna otra tarea.
 - Riesgo de alucinacion: el adaptador se apoya en un modelo generativo de 8B, que puede producir respuestas plausibles pero incorrectas. En tareas de QA extractivo esto es especialmente problematico si no se ancla la respuesta al contexto.
@@ -90,7 +90,7 @@ No se han identificado adaptadores comparables publicados con la misma combinaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_42_DoRA
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_42_DoRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Referencia arXiv incluida en las etiquetas del repositorio (citada en la model card): https://arxiv.org/abs/1910.09700
 - Pagina del proyecto PEFT: https://github.com/huggingface/peft

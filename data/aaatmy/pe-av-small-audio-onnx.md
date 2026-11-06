@@ -79,8 +79,8 @@ Latencia en CPU (Apple Silicon, onnxruntime 1.31): ~2,8 s por segmento de 10 s y
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PE-AV small audio ONNX (este) | ~117 M (rama audio) | Audio mono 48 kHz, clips de 3–30 s evaluados | Embeddings audio-texto, clasificación zero-shot | Apache 2.0 | ONNX en HuggingFace |
-| facebook/pe-av-small | No disponible en la información | Audio + vídeo + texto | Embeddings audio-visuales | Apache 2.0 (según repo perception_models) | PyTorch en HuggingFace |
+| PE-AV small audio ONNX (este) | ~117 M (rama audio) | Audio mono 48 kHz, clips de 3–30 s evaluados | Embeddings audio-texto, clasificación zero-shot | Apache 2.0 | ONNX en Hugging Face |
+| facebook/pe-av-small | No disponible en la información | Audio + vídeo + texto | Embeddings audio-visuales | Apache 2.0 (según repo perception_models) | PyTorch en Hugging Face |
 | CLAP (LAION) | No disponible en la información | Audio + texto | Embeddings audio-texto, zero-shot | No disponible en la información | No disponible en la información |
 | Whisper (como encoder de audio) | No disponible en la información | Audio 16 kHz | ASR, no clasificación zero-shot | No disponible en la información | No disponible en la información |
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aaatmy/pe-av-small-audio-ONNX
+- Repositorio Hugging Face: https://huggingface.co/aaatmy/pe-av-small-audio-ONNX
 - Modelo base: https://huggingface.co/facebook/pe-av-small
 - Repositorio de Meta: https://github.com/facebookresearch/perception_models
 - Paper referenciado (arXiv:2512.19687): https://arxiv.org/abs/2512.19687

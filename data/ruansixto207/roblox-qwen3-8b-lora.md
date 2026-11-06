@@ -2,7 +2,7 @@
 
 ## Resumen
 
-roblox-qwen3-8b-lora es un ajuste fino (fine-tuning) mediante LoRA sobre el modelo Qwen3-8B, publicado en HuggingFace por el usuario ruansixto207 bajo licencia Apache 2.0. El repositorio contiene únicamente los pesos del adaptador (0,4 GB), no los pesos completos, por lo que para ejecutarlo es necesario cargarlo sobre el modelo base declarado, unsloth/qwen3-8b-unsloth-bnb-4bit, una versión cuantizada a 4 bits de Qwen3-8B generada por el equipo de Unsloth.
+roblox-qwen3-8b-lora es un ajuste fino (fine-tuning) mediante LoRA sobre el modelo Qwen3-8B, publicado en Hugging Face por el usuario ruansixto207 bajo licencia Apache 2.0. El repositorio contiene únicamente los pesos del adaptador (0,4 GB), no los pesos completos, por lo que para ejecutarlo es necesario cargarlo sobre el modelo base declarado, unsloth/qwen3-8b-unsloth-bnb-4bit, una versión cuantizada a 4 bits de Qwen3-8B generada por el equipo de Unsloth.
 
 El modelo se entrenó con el stack de Unsloth, que según la model card del autor permite un entrenamiento "2x más rápido" sobre transformers y TRL. La nomenclatura incluye "roblox", lo que sugiere una especialización temática en el dominio del videojuego Roblox, aunque la model card no documenta el conjunto de datos, el número de tokens ni el procedimiento de alineación empleado.
 
@@ -23,7 +23,7 @@ Se trata de un modelo denso de aproximadamente 8 200 millones de parámetros ori
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA sobre Qwen3-8B, un transformer denso con atención por grupos (GQA) y una arquitectura híbrida de razonamiento que alterna modo "thinking" y modo directo. El ajuste se realizó con el framework de Unsloth, que aplica kernels optimizados y reducción de memoria para acelerar el entrenamiento, y con la librería TRL de HuggingFace para la orquestación del fine-tuning supervisado. El modelo base declarado es la versión cuantizada a 4 bits que el propio Unsloth publica para facilitar el entrenamiento en hardware de consumo.
+El modelo es un adaptador LoRA sobre Qwen3-8B, un transformer denso con atención por grupos (GQA) y una arquitectura híbrida de razonamiento que alterna modo "thinking" y modo directo. El ajuste se realizó con el framework de Unsloth, que aplica kernels optimizados y reducción de memoria para acelerar el entrenamiento, y con la librería TRL de Hugging Face para la orquestación del fine-tuning supervisado. El modelo base declarado es la versión cuantizada a 4 bits que el propio Unsloth publica para facilitar el entrenamiento en hardware de consumo.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset (presumiblemente relacionado con Roblox por el nombre), la aplicación de RLHF, DPO u otro método de alineación, ni sobre innovaciones técnicas específicas introducidas por este ajuste. La model card se limita a indicar autor, licencia, modelo base y el uso de Unsloth.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia del modelo base Qwen3-8B en bf16/fp16: en torno a 16-17 GB; en cuantización de 8 bits, unos 9 GB; en 4 bits (bnb o GGUF Q4), aproximadamente 5-6 GB. El adaptador LoRA añade una huella marginal.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para bf16 sin cuantizar.
 - GPU de consumo: cabe con holgura en RTX 3090 y RTX 4090 (24 GB); en 4 bits funciona en RTX 3060 12 GB, RTX 4070 12 GB y tarjetas de 8 GB con offloading parcial a CPU.
-- Opciones de despliegue: vLLM, HuggingFace TGI, SGLang y llama.cpp/Ollama para cuantizaciones GGUF. Requiere fusionar el adaptador con el base o cargarlo dinámicamente sobre Qwen3-8B.
+- Opciones de despliegue: vLLM, Hugging Face TGI, SGLang y llama.cpp/Ollama para cuantizaciones GGUF. Requiere fusionar el adaptador con el base o cargarlo dinámicamente sobre Qwen3-8B.
 - Latencia y throughput: no disponible. No se han publicado mediciones para este ajuste.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| roblox-qwen3-8b-lora | 8B + LoRA | 32K (heredado, ampliable a 131K con YaRN) | Apache 2.0 | HuggingFace | No disponible |
-| Qwen3-8B (base) | 8,2B | 32K nativo / 131K con YaRN | Apache 2.0 | HuggingFace, Ollama, vLLM | Benchmarks publicos por el autor, no reproducidos aqui |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace, amplio ecosistema | Benchmarks publicos por Meta |
-| Mistral 7B | 7,3B | 32K | Apache 2.0 | HuggingFace, Ollama | Benchmarks publicos por Mistral |
+| roblox-qwen3-8b-lora | 8B + LoRA | 32K (heredado, ampliable a 131K con YaRN) | Apache 2.0 | Hugging Face | No disponible |
+| Qwen3-8B (base) | 8,2B | 32K nativo / 131K con YaRN | Apache 2.0 | Hugging Face, Ollama, vLLM | Benchmarks publicos por el autor, no reproducidos aqui |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face, amplio ecosistema | Benchmarks publicos por Meta |
+| Mistral 7B | 7,3B | 32K | Apache 2.0 | Hugging Face, Ollama | Benchmarks publicos por Mistral |
 
 La comparación de rendimiento no es posible porque el autor no ha publicado benchmarks para este ajuste. La ventaja diferencial del modelo reside en su especialización temática y su reducida huella de almacenamiento (0,4 GB), no en mejoras medibles de rendimiento general.
 
@@ -82,7 +82,7 @@ La comparación de rendimiento no es posible porque el autor no ha publicado ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ruansixto207/roblox-qwen3-8b-lora
+- Modelo en Hugging Face: https://huggingface.co/ruansixto207/roblox-qwen3-8b-lora
 - Modelo base declarado: https://huggingface.co/unsloth/qwen3-8b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs ni demos adicionales relevantes en la busqueda web realizada.

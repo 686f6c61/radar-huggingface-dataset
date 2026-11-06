@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sbordt/forgetting-contamination-350M-7B` | 350M | 1024 | Investigación en contaminación de datos | MIT | HuggingFace (checkpoint `.pth`) |
-| GPT-2 small (OpenAI) | 124M | 1024 | Generación de texto general | MIT | HuggingFace, múltiples formatos |
-| GPT-2 medium (OpenAI) | 355M | 1024 | Generación de texto general | MIT | HuggingFace, múltiples formatos |
-| Pythia-410M (EleutherAI) | 410M | 2048 | Investigación en interpretabilidad | Apache 2.0 | HuggingFace, safetensors |
+| `sbordt/forgetting-contamination-350M-7B` | 350M | 1024 | Investigación en contaminación de datos | MIT | Hugging Face (checkpoint `.pth`) |
+| GPT-2 small (OpenAI) | 124M | 1024 | Generación de texto general | MIT | Hugging Face, múltiples formatos |
+| GPT-2 medium (OpenAI) | 355M | 1024 | Generación de texto general | MIT | Hugging Face, múltiples formatos |
+| Pythia-410M (EleutherAI) | 410M | 2048 | Investigación en interpretabilidad | Apache 2.0 | Hugging Face, safetensors |
 
 La comparación con GPT-2 medium es la más directa por tamaño (355M frente a 350M) y arquitectura, aunque el propósito es distinto: GPT-2 medium es un modelo de propósito general, mientras que este checkpoint está diseñado exclusivamente para experimentos de contaminación. Pythia-410M ofrece un contexto mayor (2048 tokens) y formatos de pesos más estándar, pero no incorpora contaminación controlada de benchmarks.
 
@@ -96,7 +96,7 @@ La comparación con GPT-2 medium es la más directa por tamaño (355M frente a 3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-350M-7B
+- Modelo en Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-350M-7B
 - Paper (arXiv): https://arxiv.org/abs/2410.03249
 - Repositorio de código: https://github.com/tml-tuebingen/forgetting-contamination
 - Script de creación del dataset contaminado: https://github.com/tml-tuebingen/forgetting-contamination/blob/main/llm.c/create_contaminated_dataset.py

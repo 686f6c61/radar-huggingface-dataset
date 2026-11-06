@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno CartPole-v1, un problema clasico de control de un pendulo invertido sobre un carro. Lo publica el usuario pmat2006 en HuggingFace como parte de los ejercicios de la Unit 4 del Deep Reinforcement Learning Course, una formacion practica que propone implementar desde cero algoritmos de policy gradient y subirlos al Hub. No se trata de un modelo de lenguaje ni de una red neuronal de gran tamano, sino de una politica entrenada para una tarea concreta de decision secuencial.
+Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno CartPole-v1, un problema clasico de control de un pendulo invertido sobre un carro. Lo publica el usuario pmat2006 en Hugging Face como parte de los ejercicios de la Unit 4 del Deep Reinforcement Learning Course, una formacion practica que propone implementar desde cero algoritmos de policy gradient y subirlos al Hub. No se trata de un modelo de lenguaje ni de una red neuronal de gran tamano, sino de una politica entrenada para una tarea concreta de decision secuencial.
 
 El modelo declara en su model-index una recompensa media de 500.00 +/- 0.00 en CartPole-v1, que es el maximo alcanzable en ese entorno (un episodio termina a los 500 pasos), aunque el resultado figura como no verificado. El repositorio ocupa 0.0 GB y no se especifican licencia, idiomas ni arquitectura concreta de la red, por lo que gran parte de los detalles tecnicos no estan disponibles en la informacion proporcionada.
 
@@ -70,8 +70,8 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Reinforce-CartPole-v1 (pmat2006) | REINFORCE | CartPole-v1 | no disponible | no aplica | no disponible | HuggingFace |
-| Alternativas del Deep RL Course | DQN, A2C, PPO | CartPole-v1 | no disponible | no aplica | no disponible | HuggingFace |
+| Reinforce-CartPole-v1 (pmat2006) | REINFORCE | CartPole-v1 | no disponible | no aplica | no disponible | Hugging Face |
+| Alternativas del Deep RL Course | DQN, A2C, PPO | CartPole-v1 | no disponible | no aplica | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- [HuggingFace: pmat2006/Reinforce-CartPole-v1](https://huggingface.co/pmat2006/Reinforce-CartPole-v1)
+- [Hugging Face: pmat2006/Reinforce-CartPole-v1](https://huggingface.co/pmat2006/Reinforce-CartPole-v1)
 - [Deep Reinforcement Learning Course - Unit 4: Introduction](https://huggingface.co/deep-rl-course/unit4/introduction)
 
 Nota: los resultados de busqueda web proporcionados hacen referencia a cotizaciones de Ethereum y no guardan relacion con este modelo, por lo que no se han utilizado.

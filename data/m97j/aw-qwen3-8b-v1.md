@@ -80,7 +80,7 @@ No hay modelos públicos directamente comparables, ya que este es un artefacto d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m97j/aw-qwen3-8b-v1
+- Hugging Face: https://huggingface.co/m97j/aw-qwen3-8b-v1
 - Repositorio de código y protocolo: https://github.com/m97j/axiom-world (tag `v1.0.0`)
 - Tech report: https://doi.org/10.5281/zenodo.22052149
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base

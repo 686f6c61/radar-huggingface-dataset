@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andrearossifo/dino-checkpoint-2024` es un prototipo de investigación publicado en HuggingFace por el usuario `andrearossifo`, etiquetado como «Dino» y orientado a tareas de *matching* (emparejamiento). No es un modelo de lenguaje ni un modelo entrenado: la propia model card lo describe como un *checkpoint* de inicialización válido para pruebas de humo (*smoke tests*), con una implementación propia en Python (`eval.py`) y ficheros de configuración (`config.json`, `training_args.json`). El autor indica explícitamente que no reclama ninguna métrica de benchmark en el repositorio.
+`andrearossifo/dino-checkpoint-2024` es un prototipo de investigación publicado en Hugging Face por el usuario `andrearossifo`, etiquetado como «Dino» y orientado a tareas de *matching* (emparejamiento). No es un modelo de lenguaje ni un modelo entrenado: la propia model card lo describe como un *checkpoint* de inicialización válido para pruebas de humo (*smoke tests*), con una implementación propia en Python (`eval.py`) y ficheros de configuración (`config.json`, `training_args.json`). El autor indica explícitamente que no reclama ninguna métrica de benchmark en el repositorio.
 
 El artefacto es minúsculo: 16.576 parámetros totales según los metadatos de safetensors (aproximadamente 0,017 M), con un tamaño de repositorio de 0,0 GB. La arquitectura declarada es «Dino» a escala *tiny*, con atención de tipo *flash*, fusión de tensores, activación approximated GELU y normalización por grupos (*groupnorm*). La receta de entrenamiento por defecto usa el optimizador RMSprop con un *schedule* coseno, presentada como valores de partida del script y no como evidencia de un entrenamiento completado.
 
@@ -20,7 +20,7 @@ Su relevancia es, por tanto, la de un esqueleto reproducible para experimentaci�
 | Idiomas soportados | No disponible (no se declara ningún idioma) |
 | Licencia | MIT |
 | Formato de pesos | `model.safetensors` (safetensors) + `config.json`, `training_args.json`, `eval.py` |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación (metadatos) | 2026-10-18 |
 
@@ -69,7 +69,7 @@ No se han identificado en la información proporcionada modelos comparables con 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `andrearossifo/dino-checkpoint-2024` | 16.576 | No disponible | Sin benchmarks publicados | MIT | HuggingFace (0 descargas) |
+| `andrearossifo/dino-checkpoint-2024` | 16.576 | No disponible | Sin benchmarks publicados | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se han identificado en la información proporcionada modelos comparables con 
 - No ha sido auditado en robustez, equidad (*fairness*) ni transferencia de dominio, tal como advierte el autor.
 - Riesgo alto de resultados sin sentido en cualquier uso directo; no es apto para producción sin un entrenamiento previo documentado.
 - Sin benchmarks, sin datos de entrenamiento publicados y sin métricas de evaluación: imposible estimar calidad de forma objetiva.
-- Implementación personalizada: las APIs automáticas de carga de HuggingFace requerirán un adaptador explícito; no se garantiza compatibilidad con `transformers`.
+- Implementación personalizada: las APIs automáticas de carga de Hugging Face requerirán un adaptador explícito; no se garantiza compatibilidad con `transformers`.
 - No se declara ningún idioma soportado ni tarea concreta más allá de la etiqueta «matching».
 - Licencia MIT: permite uso comercial y modificación, pero el autor recomienda revisar por separado los términos de los datos de origen cuando se use con datasets externos.
 - Repositorio con 0 descargas y 0 *likes*: sin validación por parte de la comunidad.
@@ -86,5 +86,5 @@ No se han identificado en la información proporcionada modelos comparables con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andrearossifo/dino-checkpoint-2024
+- Hugging Face: https://huggingface.co/andrearossifo/dino-checkpoint-2024
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la búsqueda web realizada; los resultados devueltos (Zhihu y Stack Overflow) no guardan relación con el modelo.

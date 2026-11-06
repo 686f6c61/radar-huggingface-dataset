@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nm-testing/Phi-3-mini-4k-instruct-kv_cache_default_phi3-e2e` es un artefacto de pruebas publicado por la organización `nm-testing` en HuggingFace, derivado del modelo Phi-3-mini-4k-instruct de Microsoft. No se trata de un modelo entrenado desde cero, sino de una variante de verificación (end-to-end) orientada a validar el pipeline de compresión de tensores (`compressed-tensors`) y la gestión de la caché KV con la arquitectura Phi-3. El nombre del repositorio refleja explícitamente su naturaleza de test: `kv_cache_default_phi3-e2e`.
+`nm-testing/Phi-3-mini-4k-instruct-kv_cache_default_phi3-e2e` es un artefacto de pruebas publicado por la organización `nm-testing` en Hugging Face, derivado del modelo Phi-3-mini-4k-instruct de Microsoft. No se trata de un modelo entrenado desde cero, sino de una variante de verificación (end-to-end) orientada a validar el pipeline de compresión de tensores (`compressed-tensors`) y la gestión de la caché KV con la arquitectura Phi-3. El nombre del repositorio refleja explícitamente su naturaleza de test: `kv_cache_default_phi3-e2e`.
 
 El modelo conserva la arquitectura y el tamaño del Phi-3-mini original: aproximadamente 3.821 millones de parámetros (3.8B), una ventana de contexto de 4K tokens (indicada por el sufijo `4k`) y pesos en formato safetensors con código personalizado (`custom_code`) para la arquitectura Phi-3. La inclusión del tag `compressed-tensors` sugiere que los pesos han sido procesados o cuantizados mediante la librería del mismo nombre, habitualmente asociada a flujos de trabajo de cuantización para despliegue eficiente.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nm-testing/Phi-3-mini-4k-instruct-kv_cache_default_phi3-e2e | ~3.8B | 4K | no disponible | HuggingFace (repo de test) |
-| microsoft/Phi-3-mini-4k-instruct | ~3.8B | 4K | MIT | HuggingFace (oficial) |
-| microsoft/Phi-3-mini-128k-instruct | ~3.8B | 128K | MIT | HuggingFace (oficial) |
-| Qwen/Qwen2.5-3B-Instruct | ~3.1B | 32K | Apache 2.0 | HuggingFace (oficial) |
+| nm-testing/Phi-3-mini-4k-instruct-kv_cache_default_phi3-e2e | ~3.8B | 4K | no disponible | Hugging Face (repo de test) |
+| microsoft/Phi-3-mini-4k-instruct | ~3.8B | 4K | MIT | Hugging Face (oficial) |
+| microsoft/Phi-3-mini-128k-instruct | ~3.8B | 128K | MIT | Hugging Face (oficial) |
+| Qwen/Qwen2.5-3B-Instruct | ~3.1B | 32K | Apache 2.0 | Hugging Face (oficial) |
 
 El modelo de `nm-testing` no aporta mejoras funcionales frente al Phi-3-mini-4k-instruct oficial; su interés es exclusivamente técnico (validación de `compressed-tensors` y caché KV). Para uso real se recomienda el checkpoint oficial de Microsoft, con licencia MIT y soporte documentado.
 
@@ -84,7 +84,7 @@ El modelo de `nm-testing` no aporta mejoras funcionales frente al Phi-3-mini-4k-
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nm-testing/Phi-3-mini-4k-instruct-kv_cache_default_phi3-e2e
+- Repositorio en Hugging Face: https://huggingface.co/nm-testing/Phi-3-mini-4k-instruct-kv_cache_default_phi3-e2e
 - Modelo oficial Phi-3-mini-4k-instruct: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Paper técnico de Phi-3: https://arxiv.org/abs/2404.14219
 - Librería compressed-tensors: https://github.com/neuralmagic/compressed-tensors

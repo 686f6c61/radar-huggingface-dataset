@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que permite un entrenamiento aproximadamente dos veces más rápido que los métodos convencionales. El nombre del modelo sugiere que se ha aplicado una técnica de "inoculación" en el prompting, probablemente orientada a mejorar la robustez del modelo frente a entradas adversas o engañosas, aunque no se proporcionan detalles adicionales en la documentación.
+El modelo `localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que permite un entrenamiento aproximadamente dos veces más rápido que los métodos convencionales. El nombre del modelo sugiere que se ha aplicado una técnica de "inoculación" en el prompting, probablemente orientada a mejorar la robustez del modelo frente a entradas adversas o engañosas, aunque no se proporcionan detalles adicionales en la documentación.
 
 Con 8.190 millones de parámetros, este modelo se sitúa en la gama de los 8B, un tamaño que equilibra capacidad y requisitos de hardware, permitiendo su despliegue en GPUs de consumo con cuantización adecuada. Al estar basado en Qwen3-8B, hereda las capacidades generales de la familia Qwen3, como generación de texto, razonamiento y comprensión del lenguaje, aunque el ajuste específico puede haber modificado su comportamiento en tareas concretas. La licencia Apache 2.0 permite uso comercial sin restricciones significativas, lo que lo hace atractivo para aplicaciones empresariales.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su enfoque experimental: el uso de "inocu
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Transformer del modelo Qwen3-8B, que emplea atención de múltiples cabezas y mecanismos de normalización estándar. Al ser un ajuste fino, no se modifican los componentes estructurales del modelo base, sino que se actualizan los pesos mediante entrenamiento supervisado. El proceso de entrenamiento se realizó con la librería Unsloth, que optimiza el uso de memoria y velocidad, y con el framework TRL de HuggingFace, que proporciona utilidades para fine-tuning con técnicas como SFT (Supervised Fine-Tuning) o DPO (Direct Preference Optimization). No se especifica cuál de estas técnicas se utilizó, aunque el nombre "inoculation-prompting" sugiere que el dataset de entrenamiento pudo incluir ejemplos diseñados para "inocular" al modelo contra ciertos tipos de prompts maliciosos o engañosos.
+El modelo se basa en la arquitectura Transformer del modelo Qwen3-8B, que emplea atención de múltiples cabezas y mecanismos de normalización estándar. Al ser un ajuste fino, no se modifican los componentes estructurales del modelo base, sino que se actualizan los pesos mediante entrenamiento supervisado. El proceso de entrenamiento se realizó con la librería Unsloth, que optimiza el uso de memoria y velocidad, y con el framework TRL de Hugging Face, que proporciona utilidades para fine-tuning con técnicas como SFT (Supervised Fine-Tuning) o DPO (Direct Preference Optimization). No se especifica cuál de estas técnicas se utilizó, aunque el nombre "inoculation-prompting" sugiere que el dataset de entrenamiento pudo incluir ejemplos diseñados para "inocular" al modelo contra ciertos tipos de prompts maliciosos o engañosos.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases adicionales como RLHF. El modelo base `unsloth/Qwen3-8B` es una versión optimizada de Qwen3-8B, que a su vez es un modelo de lenguaje de 8B parámetros desarrollado por Alibaba, entrenado con un corpus multilingüe (aunque este finetune solo declara inglés). La innovación principal de este modelo no reside en la arquitectura, sino en la metodología de ajuste, que busca mejorar la robustez del modelo frente a entradas adversas mediante la inoculación de prompts durante el entrenamiento.
 
@@ -63,10 +63,10 @@ Dado que no se dispone de benchmarks ni especificaciones detalladas del finetune
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8.19B | 32K (ampliable a 128K) | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8.03B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B | 7.24B | 32K | Apache 2.0 | HuggingFace |
-| Este finetune | 8.19B | no disponible | Apache 2.0 | HuggingFace |
+| Qwen3-8B (base) | 8.19B | 32K (ampliable a 128K) | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8.03B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B | 7.24B | 32K | Apache 2.0 | Hugging Face |
+| Este finetune | 8.19B | no disponible | Apache 2.0 | Hugging Face |
 
 La comparativa es limitada porque no se conocen las capacidades específicas del finetune. En términos de licencia, este modelo es más permisivo que Llama 3.1, que tiene restricciones para uso comercial en ciertos casos. El contexto del modelo base Qwen3-8B es menor que el de Llama 3.1, pero suficiente para la mayoría de aplicaciones conversacionales.
 
@@ -82,7 +82,7 @@ La comparativa es limitada porque no se conocen las capacidades específicas del
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed4](https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed4)
+- [Hugging Face - localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed4](https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed4)
 - [Modelo similar: longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft-seed4/tree/main)
 - [Modelo similar: localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-first-third-sft-seed3](https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-first-third-sft-seed3)
 - [FriendliAI - página del modelo](https://friendli.ai/models/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-first-third-sft-seed3)

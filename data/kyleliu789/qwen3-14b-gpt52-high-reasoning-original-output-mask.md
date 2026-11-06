@@ -81,7 +81,7 @@ Frente al modelo base Qwen3-14B, este adaptador no anade parametros nuevos (solo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-gpt52-high-reasoning-original-output-mask
+- Repositorio Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-gpt52-high-reasoning-original-output-mask
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Reporte tecnico de Qwen3 (arXiv): https://arxiv.org/abs/2505.09388
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

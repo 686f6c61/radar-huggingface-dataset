@@ -1,7 +1,7 @@
 # ml-resources/MiniMax-H3-16G-HiFi
 
 ## Resumen
-MiniMax-H3-16G-HiFi es un reempaquetado cuantizado del modelo de generación de vídeo MiniMax-H3, publicado por el usuario `ml-resources` en HuggingFace como espejo de `l1ngzi/MiniMax-H3-16G-HiFi` de ModelScope. No es un lanzamiento oficial de MiniMax: se trata de una redistribución de pesos con cuantización de tipo ConvRot INT8 orientada a que el modelo completo (vídeo con audio) quepa y funcione en GPUs de consumo de 16 GB. El repositorio ocupa 93,1 GB y contiene dos variantes de DiT (Ref2VA y FL2VA), un codificador de texto Qwen3-VL y dos VAE de vídeo y audio.
+MiniMax-H3-16G-HiFi es un reempaquetado cuantizado del modelo de generación de vídeo MiniMax-H3, publicado por el usuario `ml-resources` en Hugging Face como espejo de `l1ngzi/MiniMax-H3-16G-HiFi` de ModelScope. No es un lanzamiento oficial de MiniMax: se trata de una redistribución de pesos con cuantización de tipo ConvRot INT8 orientada a que el modelo completo (vídeo con audio) quepa y funcione en GPUs de consumo de 16 GB. El repositorio ocupa 93,1 GB y contiene dos variantes de DiT (Ref2VA y FL2VA), un codificador de texto Qwen3-VL y dos VAE de vídeo y audio.
 
 El modelo resuelve la generación conjunta de vídeo y audio a partir de una imagen de referencia (Ref2VA) o de un primer y último fotograma (FL2VA), con soporte declarado de hasta 15 segundos de vídeo a resolución nativa. La propuesta técnica del autor no es la velocidad sino la fidelidad: la cuantización se presenta como "conservadora en calidad", con un error relativo L2 de 2,42 % (vídeo) y 4,23 % (audio) en Ref2VA frente a los pesos BF16 oficiales, y con reducciones del 51,3 % y 13,6 % en el error máximo de un solo punto respecto a una cuantización INT8 de todas las capas.
 
@@ -104,7 +104,7 @@ En la información disponible no hay datos verificables sobre otros modelos de g
 | Variante | Tamano | Error video (Ref2VA / FL2VA) | Error audio (Ref2VA / FL2VA) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | MiniMax-H3 BF16 oficial | 61,7 GB | base | base | MiniMax H3 Community License | Pesos oficiales |
-| MiniMax-H3-16G-HiFi (este repositorio) | 26,5 GB por DiT | 2,42 % / 2,92 % | 4,23 % / 3,80 % | MiniMax H3 Community License | HuggingFace y ModelScope |
+| MiniMax-H3-16G-HiFi (este repositorio) | 26,5 GB por DiT | 2,42 % / 2,92 % | 4,23 % / 3,80 % | MiniMax H3 Community License | Hugging Face y ModelScope |
 | INT8 ConvRot en todas las capas | 21 GB | 3,25 % / 3,99 % | 6,05 % / 3,93 % | Segun la distribucion | Comunidad |
 | NVFP4 en todas las capas | 11,7 GB | 14,1 % / 17,33 % | 23,0 % / 26,64 % | Segun la distribucion | Comunidad |
 | INT4 ConvRot | 9,0 GB | 21,2 % / 25,44 % | 41,8 % / 45,14 % | Segun la distribucion | Comunidad |
@@ -127,7 +127,7 @@ Comparativa con modelos de terceros: no disponible.
 - Instalación no trivial para usuarios sin experiencia, tal como reconoce el propio autor en la model card.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/ml-resources/MiniMax-H3-16G-HiFi
+- Hugging Face: https://huggingface.co/ml-resources/MiniMax-H3-16G-HiFi
 - ModelScope, reempaquetado original: https://www.modelscope.cn/models/l1ngzi/MiniMax-H3-16G-HiFi
 - ModelScope, modelo base MiniMax-H3: https://www.modelscope.cn/models/MiniMax/MiniMax-H3
 - Licencia MiniMax H3 Community License: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks de alternativas en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tianxinwei/JevAny-27B-SFT
+- Modelo en Hugging Face: https://huggingface.co/tianxinwei/JevAny-27B-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Resultados de la release: https://github.com/weitianxin/JevAny/blob/main/results/release-v0.1.json
 - Repositorio JevAny: https://github.com/weitianxin/JevAny

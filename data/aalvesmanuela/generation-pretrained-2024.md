@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `aalvesmanuela/generation-pretrained-2024` es un artefacto experimental publicado en HuggingFace por el usuario aalvesmanuela. Se trata de una implementación propia de PoolFormer orientada a tareas de generación, en su variante "tiny", cuyo propósito declarado es servir como base manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio contiene el código del modelo, la configuración de arquitectura y un checkpoint de inicialización, pero no un modelo entrenado ni evaluado.
+El repositorio `aalvesmanuela/generation-pretrained-2024` es un artefacto experimental publicado en Hugging Face por el usuario aalvesmanuela. Se trata de una implementación propia de PoolFormer orientada a tareas de generación, en su variante "tiny", cuyo propósito declarado es servir como base manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio contiene el código del modelo, la configuración de arquitectura y un checkpoint de inicialización, pero no un modelo entrenado ni evaluado.
 
 El peso publicado tiene 49.600 parámetros totales, un orden de magnitud propio de una prueba de humo (smoke test) más que de un modelo utilizable en producción. La propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas, no un checkpoint entrenado con benchmarks, y que ningún resultado de evaluación se reclama en el repositorio.
 
@@ -35,7 +35,7 @@ No hay información sobre datos de entrenamiento: no se especifica número de to
 - Razonamiento, código y matemáticas: no disponible; no se documenta ninguna capacidad de este tipo.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se declaran idiomas en la ficha de HuggingFace.
+- Capacidades multilingües: no disponible; no se declaran idiomas en la ficha de Hugging Face.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
 - Ejecución de un pipeline de entrenamiento: el repositorio sí ofrece un punto de entrada ejecutable (`python finetune.py --help`) y un ejemplo de smoke test dentro del bloque `__main__`.
 
@@ -78,5 +78,5 @@ No disponible. El repositorio no publica benchmarks ni métricas, y con 49.600 p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aalvesmanuela/generation-pretrained-2024
+- Modelo en Hugging Face: https://huggingface.co/aalvesmanuela/generation-pretrained-2024
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos asociados a este modelo.

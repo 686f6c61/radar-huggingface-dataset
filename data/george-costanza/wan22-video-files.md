@@ -2,7 +2,7 @@
 
 ## Resumen
 
-George-Costanza/wan22-video-files no es un modelo entrenado desde cero, sino un repositorio de pesos publicado en HuggingFace por el usuario George-Costanza. Segun la propia model card, contiene los ficheros de modelo necesarios para un "worker" privado de generacion de video a partir de imagen (image-to-video) basado en Wan 2.2, que se cargan a traves de la cache de modelos de RunPod. El repositorio incluye ademas un complemento LoRA de contenido para adultos, motivo por el cual esta etiquetado como `not-for-all-audiences`.
+George-Costanza/wan22-video-files no es un modelo entrenado desde cero, sino un repositorio de pesos publicado en Hugging Face por el usuario George-Costanza. Segun la propia model card, contiene los ficheros de modelo necesarios para un "worker" privado de generacion de video a partir de imagen (image-to-video) basado en Wan 2.2, que se cargan a traves de la cache de modelos de RunPod. El repositorio incluye ademas un complemento LoRA de contenido para adultos, motivo por el cual esta etiquetado como `not-for-all-audiences`.
 
 El repo ocupa 86,1 GB y no declara pipeline, licencia ni idiomas soportados. Las etiquetas disponibles se limitan a `not-for-all-audiences` y `region:us`, y el contador publico de descargas y likes es cero, lo que indica que se trata de un artefacto de uso privado mas que de una publicacion orientada a la comunidad. Fue creado el 2 de octubre de 2026 y actualizado por ultima vez el 17 de octubre de 2026.
 
@@ -74,7 +74,7 @@ No se dispone de datos verificables de este repositorio para comparar parametros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| George-Costanza/wan22-video-files | no disponible | no disponible | no disponible | Repositorio HuggingFace, 86,1 GB, etiquetado not-for-all-audiences |
+| George-Costanza/wan22-video-files | no disponible | no disponible | no disponible | Repositorio Hugging Face, 86,1 GB, etiquetado not-for-all-audiences |
 | Wan 2.2 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Referenciado en la model card como origen de los ficheros |
 | Otras alternativas de video generativo | no disponible | no disponible | no disponible | No se han identificado en la busqueda web resultados relevantes |
 
@@ -95,6 +95,6 @@ No se han encontrado en la busqueda web modelos comparables ni datos objetivos q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/George-Costanza/wan22-video-files
+- Hugging Face: https://huggingface.co/George-Costanza/wan22-video-files
 - Model card del repositorio: https://huggingface.co/George-Costanza/wan22-video-files (misma URL, unica fuente de informacion tecnica disponible)
 - Enlaces adicionales (papers, blogs, repos, demos): no disponible. Los resultados de busqueda web recuperados (Wikipedia sobre el nombre George, tienda de ropa George at Asda, georgefashion.com) no guardan relacion con el modelo y se han descartado por no ser relevantes.

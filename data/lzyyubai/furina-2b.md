@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Furina 2B es un modelo de lenguaje afinado para roleplay y conversación, desarrollado por el usuario LZYYuBai y publicado en HuggingFace en formato GGUF para su uso con llama.cpp. Se trata de un ajuste sobre Qwen3.5-2B, el modelo base de 2.000 millones de parámetros de Alibaba, orientado a la generación de texto conversacional en chino (etiqueta de idioma principal: zh).
+Furina 2B es un modelo de lenguaje afinado para roleplay y conversación, desarrollado por el usuario LZYYuBai y publicado en Hugging Face en formato GGUF para su uso con llama.cpp. Se trata de un ajuste sobre Qwen3.5-2B, el modelo base de 2.000 millones de parámetros de Alibaba, orientado a la generación de texto conversacional en chino (etiqueta de idioma principal: zh).
 
 El modelo resuelve la necesidad de disponer de un modelo ligero, ejecutable en hardware de consumo, especializado en interacciones de roleplay y chat, un nicho donde los modelos de tamaño pequeño y cuantizados tienen gran demanda. Su licencia Apache 2.0, heredada del modelo base, permite su uso comercial sin restricciones adicionales.
 
-Cabe destacar que el repositorio está marcado como restringido (gated), por lo que es necesario aceptar unas condiciones en HuggingFace antes de poder descargar los pesos. No se ha publicado una model card detallada con datos de entrenamiento ni benchmarks en la información disponible.
+Cabe destacar que el repositorio está marcado como restringido (gated), por lo que es necesario aceptar unas condiciones en Hugging Face antes de poder descargar los pesos. No se ha publicado una model card detallada con datos de entrenamiento ni benchmarks en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -71,14 +71,14 @@ Frente a su modelo base, furina-2b aporta especializacion en roleplay a costa de
 - Idioma principal: chino (zh); el rendimiento en castellano o ingles no esta documentado y probablemente sea inferior o no garantizado.
 - Riesgo de alucinacion: inherente a modelos de ~2 B de parametros, especialmente tras un fine-tuning de roleplay que puede degradar la factualidad.
 - No hay model card detallada: se desconocen datos de entrenamiento, longitud de contexto y cuantizaciones exactas, lo que complica su evaluacion para produccion.
-- Acceso restringido (gated): hay que aceptar condiciones en HuggingFace antes de descargar, lo que añade friccion al despliegue.
+- Acceso restringido (gated): hay que aceptar condiciones en Hugging Face antes de descargar, lo que añade friccion al despliegue.
 - Sesgos: no documentados; al tratarse de un modelo de roleplay, puede generar contenido ficticio o inapropiado si no se aplican salvaguardas.
 - Uso comercial: permitido por la licencia Apache 2.0, aunque conviene revisar las condiciones del gating del repositorio.
 - Adopcion minima: 0 descargas y 1 like en el momento de la ficha, sin historial comunitario que respalde su calidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LZYYuBai/furina-2b
+- Repositorio en Hugging Face: https://huggingface.co/LZYYuBai/furina-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 
 No se han encontrado enlaces adicionales (paper, blog o demo) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JDI-Decision-V0.9 es un sistema multimodal de decisión desarrollado por JD.com (京东) y publicado en HuggingFace bajo el identificador `stupid-zwl/JDI-Decision-V0.9`. No es un modelo de lenguaje generativo al uso: su función es producir elecciones estructuradas y probabilidades por opción a partir de texto e imágenes, es decir, resolver tareas de decisión con un conjunto acotado de alternativas (por ejemplo, "¿qué dice este cartel: A) STOP o B) GO?"). Está construido sobre una base Qwen3.8-27B con adaptaciones de la arquitectura de decisión D3.
+JDI-Decision-V0.9 es un sistema multimodal de decisión desarrollado por JD.com (京东) y publicado en Hugging Face bajo el identificador `stupid-zwl/JDI-Decision-V0.9`. No es un modelo de lenguaje generativo al uso: su función es producir elecciones estructuradas y probabilidades por opción a partir de texto e imágenes, es decir, resolver tareas de decisión con un conjunto acotado de alternativas (por ejemplo, "¿qué dice este cartel: A) STOP o B) GO?"). Está construido sobre una base Qwen3.8-27B con adaptaciones de la arquitectura de decisión D3.
 
 El sistema integra cuatro componentes: un codificador visual, un componente de reconocimiento de texto PaddleOCR v5 congelado (procedente del equipo PaddlePaddle de Baidu), un backbone de decisión y una etapa de lectura en FP32 que emite las probabilidades finales. Las ramas de OCR y de codificación visual se ejecutan en paralelo sobre una misma GPU, y la latencia reportada incluye todo el pipeline extremo a extremo.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparables publicados para este sistema, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stupid-zwl/JDI-Decision-V0.9
+- Modelo en Hugging Face: https://huggingface.co/stupid-zwl/JDI-Decision-V0.9
 - Dataset de resultados y metadatos de ejecución: https://huggingface.co/datasets/stupid-zwl/JDI-Decision-V0.9/tree/main/runs/vision-paddle-v5
 - Guía de reproducción: `REPRODUCE.md` (incluido en el repositorio)
 - Fuentes y hashes del OCR: `ocr_inference/ocr_sources.json` (incluido en el repositorio)

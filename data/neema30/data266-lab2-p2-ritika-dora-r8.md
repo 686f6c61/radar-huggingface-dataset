@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks comparativos (FID, MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto / resolucion | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `neema30/data266-lab2-p2-ritika-dora-r8` | 1,69 M (adaptador) | 512×512 | DoRA r=8 sobre SD 1.5 | CreativeML OpenRAIL-M + dataset CC BY-NC-SA 4.0 | HuggingFace, 0 descargas |
+| `neema30/data266-lab2-p2-ritika-dora-r8` | 1,69 M (adaptador) | 512×512 | DoRA r=8 sobre SD 1.5 | CreativeML OpenRAIL-M + dataset CC BY-NC-SA 4.0 | Hugging Face, 0 descargas |
 | Stable Diffusion 1.5 (base) | ~860 M (UNet) | 512×512 | Difusión latente texto-a-imagen | CreativeML OpenRAIL-M | Ampliamente disponible |
 | LoRA equivalente sobre SD 1.5 | ~1,7 M (adaptador) | 512×512 | LoRA r=8 sobre el mismo UNet | Depende del autor | No disponible en la información |
 | Adaptadores de estilo Pokémon públicos | No disponible | No disponible | LoRA/DoRA sobre SD 1.5 | Variable | No disponible en la información |
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos frente a estos modelos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neema30/data266-lab2-p2-ritika-dora-r8
+- Modelo en Hugging Face: https://huggingface.co/neema30/data266-lab2-p2-ritika-dora-r8
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/reach-vb/pokemon-blip-captions
 - Paper de DoRA (Weight-Decomposed Low-Rank Adaptation): no disponible en la información proporcionada

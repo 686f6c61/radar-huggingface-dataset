@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elyes1032/distilbert-message-ner` es un modelo de clasificación de tokens (token classification) publicado en HuggingFace por el usuario elyes1032, construido sobre la arquitectura DistilBERT y orientado, a juzgar por su identificador, a la extracción de entidades nombradas (NER) en mensajes. El repositorio tiene cero descargas y cero likes en el momento de la consulta, y la model card es la plantilla automática de HuggingFace sin ningún campo completado: no se documentan datos de entrenamiento, etiquetas, idioma, licencia ni métricas de evaluación.
+`elyes1032/distilbert-message-ner` es un modelo de clasificación de tokens (token classification) publicado en Hugging Face por el usuario elyes1032, construido sobre la arquitectura DistilBERT y orientado, a juzgar por su identificador, a la extracción de entidades nombradas (NER) en mensajes. El repositorio tiene cero descargas y cero likes en el momento de la consulta, y la model card es la plantilla automática de Hugging Face sin ningún campo completado: no se documentan datos de entrenamiento, etiquetas, idioma, licencia ni métricas de evaluación.
 
 El dato objetivo disponible es el recuento de parámetros del archivo safetensors: 66.365.187 parámetros, coherente con la familia DistilBERT (~66 millones), que a su vez es una destilación de BERT-base con 6 capas en lugar de 12, lo que reduce el coste de inferencia aproximadamente a la mitad manteniendo una ventana de contexto máxima de 512 tokens. El tamaño del repositorio es de 0,3 GB, lo que sugiere pesos en fp32 (sin cuantización publicada).
 
@@ -29,7 +29,7 @@ Su relevancia práctica es limitada tal como está publicado: es un checkpoint d
 
 La unica informacion tecnica fiable es el tag `distilbert` y la referencia `arxiv:1910.09700`, correspondiente al articulo de DistilBERT (Sanh et al., 2019). DistilBERT es un encoder transformer de 6 capas con 768 dimensiones ocultas y 12 cabezas de atencion, obtenido mediante destilacion de conocimiento de BERT-base, lo que da lugar a un modelo de aproximadamente 66 millones de parametros que conserva en torno al 97 % del rendimiento de BERT en tareas de comprension del lenguaje segun el articulo original. Sobre esa base se habria anadido una cabeza de clasificacion de tokens para etiquetado tipo BIO.
 
-No hay absolutamente ningun dato publicado sobre el entrenamiento: se desconoce el conjunto de datos, el numero de tokens, la composicion del corpus, el esquema de etiquetas (no se listan `id2label` ni `label2id` en la model card), si hubo ajuste fino supervisado, y si se aplicaron tecnicas de regularizacion o descongelado parcial. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion adicional de tareas, etc.). La model card es la plantilla autogenerada por HuggingFace con todos los campos marcados como `[More Information Needed]`.
+No hay absolutamente ningun dato publicado sobre el entrenamiento: se desconoce el conjunto de datos, el numero de tokens, la composicion del corpus, el esquema de etiquetas (no se listan `id2label` ni `label2id` en la model card), si hubo ajuste fino supervisado, y si se aplicaron tecnicas de regularizacion o descongelado parcial. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion adicional de tareas, etc.). La model card es la plantilla autogenerada por Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 ## Capacidades
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: menos de 1 GB. Con 66,4 millones de parametros, los pesos ocupan aproximadamente 265 MB en fp32, 133 MB en fp16 y unos 66 MB en cuantizacion de 8 bits.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria, incluidas GTX 1050 Ti, GTX 1650, RTX 3050 o superiores. Tambien es viable en GPU de datacenter (T4, A100, H100), aunque sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos ocho anos, y tambien en CPU. En CPU, un mensaje de 512 tokens se procesa tipicamente en decenas de milisegundos con `transformers` en PyTorch, y en menos de 10 ms con ONNX Runtime o una version cuantizada.
-- Opciones de despliegue: `transformers` (PyTorch) de forma nativa; exportacion a ONNX o TorchScript para servidores de inferencia; integracion en FastAPI o un endpoint de HuggingFace Inference Endpoints (el tag `endpoints_compatible` asi lo indica). vLLM y llama.cpp no estan orientados a encoders de clasificacion de tokens, por lo que no son la via recomendada; TGI no soporta este pipeline de forma estandar.
+- Opciones de despliegue: `transformers` (PyTorch) de forma nativa; exportacion a ONNX o TorchScript para servidores de inferencia; integracion en FastAPI o un endpoint de Hugging Face Inference Endpoints (el tag `endpoints_compatible` asi lo indica). vLLM y llama.cpp no estan orientados a encoders de clasificacion de tokens, por lo que no son la via recomendada; TGI no soporta este pipeline de forma estandar.
 - Latencia y throughput estimados: no disponibles, no se han publicado mediciones. Como referencia de orden de magnitud, un modelo de este tamano en una GPU moderna puede procesar cientos o miles de secuencias cortas por segundo con batching dinamico, pero es una estimacion no verificada para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| elyes1032/distilbert-message-ner | 66,4 M | no disponible (512 tokens en la arquitectura estandar) | token-classification | no disponible | HuggingFace, sin metricas ni documentacion |
-| distilbert-base-uncased (Sanh et al.) | 66,9 M | 512 tokens | modelo base (MLM), requiere ajuste fino | Apache 2.0 | HuggingFace, ampliamente validado |
-| dslim/bert-base-NER | 110 M | 512 tokens | NER (CoNLL-2003: 4 etiquetas) | MIT | HuggingFace, con metricas publicadas |
-| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 tokens | NER en ingles | MIT | HuggingFace, con metricas publicadas |
+| elyes1032/distilbert-message-ner | 66,4 M | no disponible (512 tokens en la arquitectura estandar) | token-classification | no disponible | Hugging Face, sin metricas ni documentacion |
+| distilbert-base-uncased (Sanh et al.) | 66,9 M | 512 tokens | modelo base (MLM), requiere ajuste fino | Apache 2.0 | Hugging Face, ampliamente validado |
+| dslim/bert-base-NER | 110 M | 512 tokens | NER (CoNLL-2003: 4 etiquetas) | MIT | Hugging Face, con metricas publicadas |
+| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 tokens | NER en ingles | MIT | Hugging Face, con metricas publicadas |
 
 La comparativa se limita a parametros, contexto, tarea, licencia y disponibilidad: no es posible comparar rendimiento porque el modelo objeto de la ficha no publica ninguna metrica. En igualdad de condiciones, los modelos de referencia (`dslim/bert-base-NER`) ofrecen documentacion, licencia explicita y evaluacion reproducible, ventajas que este checkpoint no presenta.
 
@@ -93,7 +93,7 @@ La comparativa se limita a parametros, contexto, tarea, licencia y disponibilida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elyes1032/distilbert-message-ner
+- Modelo en Hugging Face: https://huggingface.co/elyes1032/distilbert-message-ner
 - Articulo de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.09700
 - Articulo de BERT (Devlin et al., 2018), arquitectura original de la que deriva: https://arxiv.org/abs/1810.04805
 - Calculadora de impacto medioambiental citada en la model card (Lacoste et al., 2019): https://mlco2.github.io/impact

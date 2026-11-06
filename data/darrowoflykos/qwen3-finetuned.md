@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`darrowoflykos/qwen3-finetuned` es un modelo de lenguaje de texto generado por el usuario de HuggingFace `darrowoflykos`. Se trata de un fine-tuning del modelo base `Qwen/Qwen3-0.6B`, entrenado con el framework `transformers` durante 300 pasos sobre un dataset no especificado. El modelo tiene un tamaño de 596.049.920 parámetros y se distribuye en formato `safetensors` bajo licencia Apache 2.0.
+`darrowoflykos/qwen3-finetuned` es un modelo de lenguaje de texto generado por el usuario de Hugging Face `darrowoflykos`. Se trata de un fine-tuning del modelo base `Qwen/Qwen3-0.6B`, entrenado con el framework `transformers` durante 300 pasos sobre un dataset no especificado. El modelo tiene un tamaño de 596.049.920 parámetros y se distribuye en formato `safetensors` bajo licencia Apache 2.0.
 
 No se dispone de informacion sobre el proposito concreto del fine-tuning, el dataset de entrenamiento ni la longitud de contexto. La unica metrica de evaluacion publicada es una perdida de validacion de 2,9582, lo que sugiere que el modelo puede no haber convergido completamente. Dado que no se han publicado benchmarks ni evaluaciones de capacidades, su uso en produccion requiere una validacion previa.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3-0.6B | 596.049.920 | no disponible | Apache 2.0 | HuggingFace |
-| darrowoflykos/qwen3-finetuned | 596.049.920 | no disponible | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3-0.6B | 596.049.920 | no disponible | Apache 2.0 | Hugging Face |
+| darrowoflykos/qwen3-finetuned | 596.049.920 | no disponible | Apache 2.0 | Hugging Face |
 
 El unico modelo comparable directo es el base `Qwen/Qwen3-0.6B`, del que parte. No hay datos de rendimiento ni de evaluacion para comparar ambos. No se ha encontrado informacion sobre otros modelos de la misma categoria con resultados publicados.
 
@@ -79,4 +79,4 @@ El unico modelo comparable directo es el base `Qwen/Qwen3-0.6B`, del que parte. 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: [https://huggingface.co/darrowoflykos/qwen3-finetuned](https://huggingface.co/darrowoflykos/qwen3-finetuned)
+- Repositorio del modelo en Hugging Face: [https://huggingface.co/darrowoflykos/qwen3-finetuned](https://huggingface.co/darrowoflykos/qwen3-finetuned)

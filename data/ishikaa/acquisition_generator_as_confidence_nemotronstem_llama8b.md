@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_generator_AS_confidence_nemotronstem_llama8b` es un ajuste fino publicado en HuggingFace por el usuario `ishikaa`, con 8.030.261.248 parametros (aproximadamente 8,03 mil millones) y pipeline declarado de generacion de texto. Los tags del repositorio (`llama`, `text-generation`, `conversational`, `safetensors`, `transformers`) indican que se trata de un modelo de la familia Llama adaptado para generacion conversacional, pero la model card publicada es la plantilla generada automaticamente por HuggingFace y no contiene informacion sustantiva sobre el desarrollo, los datos de entrenamiento ni la licencia.
+El modelo `ishikaa/acquisition_generator_AS_confidence_nemotronstem_llama8b` es un ajuste fino publicado en Hugging Face por el usuario `ishikaa`, con 8.030.261.248 parametros (aproximadamente 8,03 mil millones) y pipeline declarado de generacion de texto. Los tags del repositorio (`llama`, `text-generation`, `conversational`, `safetensors`, `transformers`) indican que se trata de un modelo de la familia Llama adaptado para generacion conversacional, pero la model card publicada es la plantilla generada automaticamente por Hugging Face y no contiene informacion sustantiva sobre el desarrollo, los datos de entrenamiento ni la licencia.
 
 El modelo no tiene descargas ni likes en el momento de redactar esta ficha, y no se ha publicado documentacion tecnica, paper ni resultados de evaluacion. El nombre sugiere un proceso de destilacion o ajuste sobre datos de tipo STEM/Nemotron y un objetivo de "generacion de adquisiciones" con senal de confianza, pero esto es una inferencia a partir del identificador, no un dato confirmado por el autor.
 
@@ -71,16 +71,16 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| `ishikaa/acquisition_generator_AS_confidence_nemotronstem_llama8b` | 8,03 B | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
-| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace y multiples proveedores | Si, ampliamente documentado |
-| Qwen2.5 7B Instruct (Alibaba) | 7,62 B | 128.000 tokens | Apache 2.0 (mayoria de variantes) | HuggingFace y multiples proveedores | Si, ampliamente documentado |
-| Mistral 7B Instruct (Mistral AI) | 7,24 B | 32.000 tokens | Apache 2.0 | HuggingFace y multiples proveedores | Si, ampliamente documentado |
+| `ishikaa/acquisition_generator_AS_confidence_nemotronstem_llama8b` | 8,03 B | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
+| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face y multiples proveedores | Si, ampliamente documentado |
+| Qwen2.5 7B Instruct (Alibaba) | 7,62 B | 128.000 tokens | Apache 2.0 (mayoria de variantes) | Hugging Face y multiples proveedores | Si, ampliamente documentado |
+| Mistral 7B Instruct (Mistral AI) | 7,24 B | 32.000 tokens | Apache 2.0 | Hugging Face y multiples proveedores | Si, ampliamente documentado |
 
 No se dispone de informacion suficiente para afirmar que el modelo evaluado herede la licencia, el contexto o las capacidades de ninguno de estos modelos; son referencias de categoria, no equivalencias confirmadas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace y todos los campos relevantes aparecen como `[More Information Needed]`.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face y todos los campos relevantes aparecen como `[More Information Needed]`.
 - Licencia no declarada: no se puede asumir uso comercial legitimo. Sin licencia explicita, el uso en produccion o en productos derivados es juridicamente arriesgado.
 - Sin benchmarks ni evaluacion: no hay ninguna evidencia publicada sobre precision, robustez, sesgos o calidad de generacion.
 - Riesgo de alucinacion: no cuantificado, pero es el comportamiento por defecto de cualquier modelo generativo sin alineamiento documentado.
@@ -94,7 +94,7 @@ No se dispone de informacion suficiente para afirmar que el modelo evaluado here
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_nemotronstem_llama8b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_nemotronstem_llama8b
 - Repositorio relacionado del mismo autor: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_combined_llama8b
 - Variante de 3B del mismo autor en Featherless: https://featherless.ai/models/ishikaa/acquisition_generator_AS_confidence_nemotronstem_qwen3b
 - Variante de 3B del mismo autor en FriendliAI: https://friendli.ai/models/ishikaa/acquisition_generator_AS_confidence_nemotronstem_qwen3b

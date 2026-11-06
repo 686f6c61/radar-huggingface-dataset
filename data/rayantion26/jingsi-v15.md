@@ -25,7 +25,7 @@ Desarrollado por el usuario Rayantion26, el modelo se ha entrenado con QLoRA sob
 
 El modelo parte de `unsloth/gemma-4-E2B-it`, una versión del modelo Gemma 4 de Google optimizada para fine-tuning con Unsloth. Según el README, el base tiene aproximadamente 1B de parámetros efectivos, aunque el archivo safetensors fusionado contiene 5.104.297.539 parámetros totales, lo que sugiere una arquitectura con parámetros totales superiores a los activos (posiblemente Mixture of Experts), aunque este dato no se confirma explícitamente.
 
-El entrenamiento se realizó con QLoRA (cuantización de 4 bits + adaptadores LoRA) sobre 352 pares conversacionales, con 3 épocas, learning rate de 2e-4 con scheduler coseno, rango LoRA de 32 y alpha de 64. Se aplicaron adaptadores a las proyecciones q, k, v, o y a las capas gate, up y down del MLP. El optimizador fue AdamW de 8 bits, con una longitud máxima de secuencia de 1280 tokens y pérdida enmascarada para entrenar solo sobre las respuestas del asistente. La pérdida de entrenamiento final fue de 0.182 y la de validación de 0.685 (en descenso, sin sobreajuste). Se utilizó el framework Unsloth con HuggingFace SFTTrainer y PEFT.
+El entrenamiento se realizó con QLoRA (cuantización de 4 bits + adaptadores LoRA) sobre 352 pares conversacionales, con 3 épocas, learning rate de 2e-4 con scheduler coseno, rango LoRA de 32 y alpha de 64. Se aplicaron adaptadores a las proyecciones q, k, v, o y a las capas gate, up y down del MLP. El optimizador fue AdamW de 8 bits, con una longitud máxima de secuencia de 1280 tokens y pérdida enmascarada para entrenar solo sobre las respuestas del asistente. La pérdida de entrenamiento final fue de 0.182 y la de validación de 0.685 (en descenso, sin sobreajuste). Se utilizó el framework Unsloth con Hugging Face SFTTrainer y PEFT.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No se dispone de información comparativa con otros modelos de acompañamiento p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rayantion26/jingsi-v15
+- Hugging Face: https://huggingface.co/Rayantion26/jingsi-v15
 - GitHub del autor: https://github.com/Rayantion26
 - Repositorios del autor: https://github.com/Rayantion26?tab=repositories
 - GitHub Pages del autor: https://github.com/Rayantion26/Rayantion26.github.io

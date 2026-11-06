@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (SFT) del checkpoint base `fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed455`, publicado por el usuario `francesca9805` en HuggingFace. Se trata de un transformer de tipo GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones, segun los pesos reales en safetensors), entrenado mediante la libreria TRL dentro de un pipeline de supervised fine-tuning. La nomenclatura del identificador (nor-latn) apunta a un modelo orientado a noruego en alfabeto latino, aunque no hay confirmacion oficial de los idiomas soportados en la model card.
+Este modelo es un ajuste fino (SFT) del checkpoint base `fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed455`, publicado por el usuario `francesca9805` en Hugging Face. Se trata de un transformer de tipo GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones, segun los pesos reales en safetensors), entrenado mediante la libreria TRL dentro de un pipeline de supervised fine-tuning. La nomenclatura del identificador (nor-latn) apunta a un modelo orientado a noruego en alfabeto latino, aunque no hay confirmacion oficial de los idiomas soportados en la model card.
 
 Por su tamano y su procedencia, se trata claramente de un artefacto de investigacion mas que de un modelo de produccion. La familia de nombres de la que procede (con etiquetas como "ppt-shuff-dyck" y "ckpt500_seed455") sugiere que forma parte de un estudio sobre tokenizadores y tareas de lenguaje formal, posiblemente relacionado con el proyecto de Weights & Biases denominado "new_tokenizers". Las tareas tipo Dyck (parentesis balanceados) se emplean habitualmente en la literatura para medir la capacidad de un modelo de aprender estructuras algoritmicas y jerarquicas.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/nor-latn-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed455 (modelo base) | no disponible (probablemente mismo tamano) | no disponible | no disponible | HuggingFace |
-| francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455 | no disponible | no disponible | no disponible | HuggingFace |
+| francesca9805/nor-latn-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed455 (modelo base) | no disponible (probablemente mismo tamano) | no disponible | no disponible | Hugging Face |
+| francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455 | no disponible | no disponible | no disponible | Hugging Face |
 | GPT-2 small (referencia de arquitectura) | 124 M | 1024 | MIT (en el original de OpenAI) | amplia |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes; la comparativa se limita a tamanos y disponibilidad.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes; la comp
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455
+- Hugging Face del modelo: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed455
 - Run de Weights & Biases (referenciado en la model card): https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/12qo7fc8
 - Repositorio de TRL: https://github.com/huggingface/trl

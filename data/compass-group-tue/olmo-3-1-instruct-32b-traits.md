@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la model card (el campo `results
 | AgentHarm | Tasa de rechazo en prompts dañinos | 9.9 % | 31.0 % | +21.1 pp |
 | Agentic Misalignment | Tasa media de acciones dañinas | 56.3 % | 3.2 % | -53.1 pp |
 
-Estos datos provienen del paper (variante Nemotron) y no se presentan como benchmarks oficiales del adaptador en la ficha de HuggingFace. No se dispone de comparaciones con otros modelos en la información proporcionada.
+Estos datos provienen del paper (variante Nemotron) y no se presentan como benchmarks oficiales del adaptador en la ficha de Hugging Face. No se dispone de comparaciones con otros modelos en la información proporcionada.
 
 ## Requisitos de hardware
 
@@ -76,9 +76,9 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/compass-group-tue/olmo-3.1-instruct-32b-traits
+- Hugging Face: https://huggingface.co/compass-group-tue/olmo-3.1-instruct-32b-traits
 - Paper: https://arxiv.org/abs/2605.28591
 - Pagina del proyecto: https://compass-group-tue.github.io/arxiv2026_evaluation_meta_knowledge/
 - Codigo: https://github.com/compass-group-tue/arxiv2026_evaluation_meta_knowledge
-- Coleccion en HuggingFace: https://huggingface.co/collections/compass-group-tue/evaluation-meta-knowledge
+- Coleccion en Hugging Face: https://huggingface.co/collections/compass-group-tue/evaluation-meta-knowledge
 - Dataset de entrenamiento: https://huggingface.co/datasets/compass-group-tue/sdf_evaluation_traits

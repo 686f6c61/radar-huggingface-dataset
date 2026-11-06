@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 | Modelo | Parametros | Contexto | Formato de checkpoints | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoLadder-16M (este) | 16M | 2048 tokens | Ramas `step0`-`step15269` + `main` | no disponible | HuggingFace (0 descargas) |
-| Suite GeoLadder completa | 4M-75M | 2048 tokens | Varios repos en la coleccion | no disponible | Coleccion HuggingFace dill-lab/geoladder |
-| Suite Pythia (referencia metodologica citada) | Desde ~70M en adelante | no disponible en la fuente | Ramas por step | no disponible en la fuente | HuggingFace (referenciada en la model card) |
-| Modelos OLMo estandar | no disponible en la fuente | no disponible en la fuente | no disponible en la fuente | no disponible en la fuente | HuggingFace |
+| GeoLadder-16M (este) | 16M | 2048 tokens | Ramas `step0`-`step15269` + `main` | no disponible | Hugging Face (0 descargas) |
+| Suite GeoLadder completa | 4M-75M | 2048 tokens | Varios repos en la coleccion | no disponible | Coleccion Hugging Face dill-lab/geoladder |
+| Suite Pythia (referencia metodologica citada) | Desde ~70M en adelante | no disponible en la fuente | Ramas por step | no disponible en la fuente | Hugging Face (referenciada en la model card) |
+| Modelos OLMo estandar | no disponible en la fuente | no disponible en la fuente | no disponible en la fuente | no disponible en la fuente | Hugging Face |
 
 La model card cita explicitamente a la suite Pythia como referente para el esquema de checkpoints por rama. No se dispone de mas datos comparativos en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La model card cita explicitamente a la suite Pythia como referente para el esque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs256-lr0.0087-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs256-lr0.0087-wd0.1-decay0.01
 - Coleccion GeoLadder: https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Paper (PMLR): https://proceedings.mlr.press/v306/kulkarni26c.html
 - arXiv: https://arxiv.org/abs/2602.20433

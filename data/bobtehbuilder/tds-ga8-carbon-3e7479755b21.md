@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `bobtehbuilder`, no contiene un modelo de inteligencia artificial, sino un registro de contabilidad de emisiones de carbono asociado a un proceso de entrenamiento. La tarjeta del modelo documenta el consumo energético y las emisiones de CO2 equivalente generadas durante un fine-tuning realizado en tres GPUs NVIDIA L40S en la región `us-central1`, con un total de 100,8 horas de cómputo y 57,789 kg de CO2 emitidos.
+Este repositorio de Hugging Face, publicado por el usuario `bobtehbuilder`, no contiene un modelo de inteligencia artificial, sino un registro de contabilidad de emisiones de carbono asociado a un proceso de entrenamiento. La tarjeta del modelo documenta el consumo energético y las emisiones de CO2 equivalente generadas durante un fine-tuning realizado en tres GPUs NVIDIA L40S en la región `us-central1`, con un total de 100,8 horas de cómputo y 57,789 kg de CO2 emitidos.
 
 El proyecto se enmarca en una iniciativa de contabilidad ambiental para IA ("Green AI Carbon Accounting"), que busca cuantificar el impacto ecológico de los entrenamientos. No se proporciona información sobre el modelo subyacente que se entrenó, su arquitectura, tamaño, ni su propósito funcional. La relevancia actual de este repositorio es limitada como recurso para desarrolladores, ya que no ofrece ningún artefacto utilizable de inferencia, pero puede servir como referencia metodológica para reportar emisiones en proyectos de IA.
 
@@ -79,5 +79,5 @@ No disponible. No existe un modelo comparable, ya que el repositorio no contiene
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-3e7479755b21)
+- [Repositorio en Hugging Face](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-3e7479755b21)
 - No se encontraron papers, blogs, repos o demos adicionales en la búsqueda web; los resultados obtenidos muestran únicamente otros repositorios similares del mismo autor con el mismo formato de tarjeta de carbono (p. ej., `bobtehbuilder/tds-ga8-carbon-8d6015611683`, `bobtehbuilder/tds-ga8-carbon-08e493cb95c2`, etc.), sin información adicional.

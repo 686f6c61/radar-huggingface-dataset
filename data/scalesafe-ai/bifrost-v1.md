@@ -30,7 +30,7 @@ Su relevancia actual se enmarca en la automatización de agentes web: el autor p
 | SHA-256 del checkpoint | `ecab10e1ba217e99f3a98c852ff9932c330c7f3e61e08c0be27b57462e3891de` |
 | Compatibilidad con transformers | No; requiere el codigo de BIFROST para instanciar la arquitectura |
 | Operaciones soportadas | `CLICK`, `TYPE_TEXT`, `SELECT`, `SCROLL_UP`, `SCROLL_DOWN`, `WAIT`, `NAVIGATE`, `DONE` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de publicacion | 2026-09-23 (creacion), 2026-09-23 (ultima actualizacion) |
 
 ## Arquitectura y entrenamiento
@@ -104,7 +104,7 @@ Nota de rigor: los componentes suman 412,44 ms, por encima de los 224,39 ms decl
 - Memoria de trabajo para inferencia con contexto de 2.048 tokens: por debajo de 2 GB en total (estimacion); el modelo cabe holgadamente en cualquier GPU de consumo con 6 GB o mas (RTX 3060, RTX 4060, RTX 4090) e incluso en CPU.
 - GPU de referencia empleada por el autor: NVIDIA A100, con 20,51 ms por *forward pass* y 13,88 ms de extraccion de observacion.
 - El cuello de botella de latencia no es la GPU sino el navegador: el despacho y asentamiento de la accion consume 378,05 ms por paso en la medicion del autor.
-- Opciones de despliegue: unicamente PyTorch con el codigo de BIFROST (`BifrostConfig`, `BifrostPolicyModel`, `BaselineTokenizer`) y un runtime de navegador (Playwright/Chromium). No es compatible con `AutoModel.from_pretrained()` de HuggingFace ni con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: unicamente PyTorch con el codigo de BIFROST (`BifrostConfig`, `BifrostPolicyModel`, `BaselineTokenizer`) y un runtime de navegador (Playwright/Chromium). No es compatible con `AutoModel.from_pretrained()` de Hugging Face ni con vLLM, llama.cpp, Ollama o TGI.
 - Throughput: no disponible.
 - Latencia en GPU de consumo: no disponible; el unico dato publicado corresponde a A100.
 
@@ -124,11 +124,11 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 - Ausencia de datos de sesgo y de idioma: no se documentan idiomas soportados ni evaluaciones de sesgo.
 - Trazabilidad limitada del entrenamiento: no se detalla el numero de tokens, la composicion del dataset ni el uso de RLHF/DPO; solo se referencia `synthetic_phase13` con 58.584 ejemplos en 10 dominios, lo que limita la reproducibilidad.
 - Inconsistencia en las metricas de latencia publicadas (los componentes suman 412,44 ms frente a los 224,39 ms declarados).
-- Sin validacion externa: 0 descargas y 0 *likes* en HuggingFace, y los unicos resultados disponibles son internos del autor.
+- Sin validacion externa: 0 descargas y 0 *likes* en Hugging Face, y los unicos resultados disponibles son internos del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scalesafe-ai/bifrost-v1
+- Modelo en Hugging Face: https://huggingface.co/scalesafe-ai/bifrost-v1
 - Manifiesto del dataset (referenciado en la model card, relativo al repositorio): `dataset_manifest.json`
 - Enlace de licencia declarado en la model card: https://huggingface.co/scalesafe-ai/bifrost-v1
 - Resultados de busqueda web no relacionados con este modelo (proyectos homonimos, incluidos solo a efectos de desambiguacion):

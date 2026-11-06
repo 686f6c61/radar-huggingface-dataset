@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 2,0 GB (Q2_K) hasta 4,6 GB (Q8_0) para los pesos del modelo; los suplementos multimodales mmproj añaden 0,5 GB (Q8_0) o 0,8 GB (f16). El f16 completo ocupa 8,5 GB.
 - GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para cuantizaciones Q4/Q5; RTX 3060, RTX 4060, RTX 4090 para uso local; A100 o H100 para despliegues con mayor concurrencia.
 - Cabe en GPU de consumo: sí, en la mayoría de tarjetas modernas con 6 GB o más de VRAM usando Q4_K_M o inferiores; también puede ejecutarse en CPU con llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con infraestructura de endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con infraestructura de endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables específicos de HTR/OCR 
 
 ## Enlaces
 
-- Repositorio HuggingFace del cuantizado: https://huggingface.co/mradermacher/Qwen3.5-4B-cultural-heritage-eng-GGUF
+- Repositorio Hugging Face del cuantizado: https://huggingface.co/mradermacher/Qwen3.5-4B-cultural-heritage-eng-GGUF
 - Modelo base: https://huggingface.co/yale-cultural-heritage/Qwen3.5-4B-cultural-heritage-eng
 - Dataset de entrenamiento: https://huggingface.co/datasets/yale-cultural-heritage/ai-project-transcriptions
 - Página de overview de cuantizados de mradermacher: https://hf.tst.eu/model#Qwen3.5-4B-cultural-heritage-eng-GGUF

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.4` es un checkpoint de generación de texto publicado en HuggingFace por el usuario Rajeshwari-Chanda, construido sobre la arquitectura GPT-Neo de EleutherAI. El repositorio contiene 2.651.307.520 parámetros reales almacenados en safetensors (5,3 GB), lo que corresponde a una variante del GPT-Neo de 2.7B. El sufijo "magnitude_0.4" del identificador sugiere un experimento de poda por magnitud (magnitude pruning) con un ratio del 0,4, aunque el autor no documenta nada al respecto; se trata por tanto de una hipótesis basada en el nombre, no de un dato confirmado.
+`Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.4` es un checkpoint de generación de texto publicado en Hugging Face por el usuario Rajeshwari-Chanda, construido sobre la arquitectura GPT-Neo de EleutherAI. El repositorio contiene 2.651.307.520 parámetros reales almacenados en safetensors (5,3 GB), lo que corresponde a una variante del GPT-Neo de 2.7B. El sufijo "magnitude_0.4" del identificador sugiere un experimento de poda por magnitud (magnitude pruning) con un ratio del 0,4, aunque el autor no documenta nada al respecto; se trata por tanto de una hipótesis basada en el nombre, no de un dato confirmado.
 
-El modelo no dispone de model card real: el README es la plantilla automática de HuggingFace con todos los campos marcados como `[More Information Needed]`. No se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros, resultados de evaluación ni procedencia del fine-tuning. Con cero descargas y cero "likes" en el momento de la consulta, es un artefacto de investigación sin adopción comunitaria ni validación externa.
+El modelo no dispone de model card real: el README es la plantilla automática de Hugging Face con todos los campos marcados como `[More Information Needed]`. No se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros, resultados de evaluación ni procedencia del fine-tuning. Con cero descargas y cero "likes" en el momento de la consulta, es un artefacto de investigación sin adopción comunitaria ni validación externa.
 
 Su relevancia actual es limitada y de naturaleza académica: sirve como ejemplo de checkpoint derivado de un transformer autoregresivo clásico (GPT-Neo, 2021) y como posible material para estudiar técnicas de compresión de modelos. No es un modelo recomendable para producción tal cual, dado que no hay garantías documentadas de calidad, licencia ni comportamiento.
 
@@ -68,17 +68,17 @@ No existen datos de MMLU, HumanEval, GSM8K, perplexity ni de ninguna otra métri
 - GPU de consumo: cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 sin cuantizar. En GPUs de 8 GB es ajustado en fp16 y requiere cuantizacion o descarga por capas.
 - GPU profesionales: cualquier A100, H100, L40S o A6000 lo ejecuta sin problema y con margen para lotes grandes.
 - CPU: viable en cuantizacion int4/int8 con llama.cpp, aunque la latencia sera de orden de segundos por token en CPUs de gama media.
-- Opciones de despliegue: `transformers` con PyTorch (soporte nativo por la etiqueta `gpt_neo`), vLLM, TGI, llama.cpp, Ollama y servidores compatibles con la API de HuggingFace Endpoints (la etiqueta `endpoints_compatible` esta presente). Requiere conversion previa a GGUF para llama.cpp y Ollama.
+- Opciones de despliegue: `transformers` con PyTorch (soporte nativo por la etiqueta `gpt_neo`), vLLM, TGI, llama.cpp, Ollama y servidores compatibles con la API de Hugging Face Endpoints (la etiqueta `endpoints_compatible` esta presente). Requiere conversion previa a GGUF para llama.cpp y Ollama.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| gpt-neo-2.7B_magnitude_0.4 | 2,65B (safetensors) | no disponible (base: 2048) | no disponible | HuggingFace, 0 descargas | Checkpoint derivado sin model card ni evaluacion |
-| GPT-Neo 2.7B (EleutherAI) | 2,7B | 2048 | MIT | HuggingFace, ampliamente usado | Modelo base original, con model card y evaluaciones parciales |
-| GPT-2 XL (OpenAI) | 1,5B | 1024 | MIT (pesos publicados) | HuggingFace | Referencia historica, menor tamano y contexto |
-| Pythia 2.8B (EleutherAI) | 2,8B | 2048 | Apache 2.0 | HuggingFace | Suite con checkpoints intermedios y evaluaciones publicadas |
+| gpt-neo-2.7B_magnitude_0.4 | 2,65B (safetensors) | no disponible (base: 2048) | no disponible | Hugging Face, 0 descargas | Checkpoint derivado sin model card ni evaluacion |
+| GPT-Neo 2.7B (EleutherAI) | 2,7B | 2048 | MIT | Hugging Face, ampliamente usado | Modelo base original, con model card y evaluaciones parciales |
+| GPT-2 XL (OpenAI) | 1,5B | 1024 | MIT (pesos publicados) | Hugging Face | Referencia historica, menor tamano y contexto |
+| Pythia 2.8B (EleutherAI) | 2,8B | 2048 | Apache 2.0 | Hugging Face | Suite con checkpoints intermedios y evaluaciones publicadas |
 
 La comparacion con los modelos de la tabla es estructural; no existen datos de rendimiento de este checkpoint que permitan afirmar si iguala, supera o queda por debajo de sus alternativas.
 
@@ -97,7 +97,7 @@ La comparacion con los modelos de la tabla es estructural; no existen datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.4
+- Repositorio Hugging Face: https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.4
 - Modelo base GPT-Neo 2.7B de EleutherAI: https://huggingface.co/EleutherAI/gpt-neo-2.7B
 - Repositorio de codigo de GPT-Neo: https://github.com/EleutherAI/gpt-neo
 - Paper citado en las etiquetas (estimacion de emisiones de carbono, no del modelo): https://arxiv.org/abs/1910.09700

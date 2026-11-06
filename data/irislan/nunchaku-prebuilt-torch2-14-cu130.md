@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de inteligencia artificial, sino un paquete binario (wheel de Python) publicado como espejo de distribucion. Se trata de una compilacion preconstruida del proyecto Nunchaku, orientada a ejecutar kernels CUDA optimizados desde ComfyUI sobre GPU NVIDIA. El artefacto concreto esta compilado para Linux x86_64, Python 3.12 y PyTorch 2.14.0+cu130, con arquitectura objetivo `sm_89` (NVIDIA Ada Lovelace, RTX 4090). El autor del repositorio en HuggingFace es IrisLan, mientras que la model card remite a un repositorio de GitHub bajo la cuenta Odelialan.
+Este repositorio no contiene un modelo de inteligencia artificial, sino un paquete binario (wheel de Python) publicado como espejo de distribucion. Se trata de una compilacion preconstruida del proyecto Nunchaku, orientada a ejecutar kernels CUDA optimizados desde ComfyUI sobre GPU NVIDIA. El artefacto concreto esta compilado para Linux x86_64, Python 3.12 y PyTorch 2.14.0+cu130, con arquitectura objetivo `sm_89` (NVIDIA Ada Lovelace, RTX 4090). El autor del repositorio en Hugging Face es IrisLan, mientras que la model card remite a un repositorio de GitHub bajo la cuenta Odelialan.
 
 El problema que resuelve es puramente de cadena de herramientas: evitar que el usuario tenga que compilar Nunchaku desde el codigo fuente contra una combinacion muy especifica de versiones de PyTorch, CUDA y Python, algo que habitualmente falla por desajustes de ABI o de arquitectura de GPU. El wheel se genero a partir del commit `302e0e97024ebd68688fe890e5df83731edf7b54` de Nunchaku y se valido ejecutando el kernel CUDA AWQ GEMV y sincronizando el dispositivo en una RTX 4090 fisica.
 
@@ -79,7 +79,7 @@ No aplica la comparacion con modelos de IA, ya que este artefacto no es un model
 
 | Artefacto | Arquitectura GPU | Software | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (`IrisLan/nunchaku-prebuilt-torch2.14-cu130`) | `sm_89` (RTX 4090) | Python 3.12, PyTorch 2.14.0+cu130, CUDA 13.0.88 | wheel `.whl` | apache-2.0 | HuggingFace |
+| Este repositorio (`IrisLan/nunchaku-prebuilt-torch2.14-cu130`) | `sm_89` (RTX 4090) | Python 3.12, PyTorch 2.14.0+cu130, CUDA 13.0.88 | wheel `.whl` | apache-2.0 | Hugging Face |
 | Build `sm_120a` citado en la model card | `sm_120a` (RTX 5090) | no disponible | no disponible | no disponible | GitHub Release v1.0.0 |
 | Compilacion desde fuente del commit `302e0e97` | configurable por el usuario | el usuario debe fijar las versiones | codigo fuente | segun proyecto Nunchaku | GitHub |
 
@@ -90,7 +90,7 @@ No aplica la comparacion con modelos de IA, ya que este artefacto no es un model
 - Restriccion de hardware: compilado unicamente para `sm_89`. En GPUs de otras arquitecturas fallara la carga de los kernels.
 - Restriccion de plataforma: Linux x86_64 exclusivamente.
 - Riesgo de cadena de suministro: se distribuye codigo binario con licencia permisiva. Aunque se publica el SHA-256, no se documenta una auditoria independiente del contenido; conviene verificar el hash y, si el riesgo lo exige, compilar desde fuente.
-- Inconsistencia de autoría: el autor del repositorio en HuggingFace es IrisLan, mientras que la model card enlaza un repositorio de GitHub bajo la cuenta Odelialan. Conviene confirmar la relacion entre ambas cuentas antes de confiar en el artefacto.
+- Inconsistencia de autoría: el autor del repositorio en Hugging Face es IrisLan, mientras que la model card enlaza un repositorio de GitHub bajo la cuenta Odelialan. Conviene confirmar la relacion entre ambas cuentas antes de confiar en el artefacto.
 - Cero traccion verificable: 0 descargas y 0 likes en el momento de la consulta, sin senales de uso en produccion por terceros.
 - Fechas anomales: creacion y actualizacion registradas en septiembre de 2026, posteriores a la fecha habitual de consulta; conviene verificar la coherencia temporal.
 - Licencia: Apache 2.0 permite uso comercial del binario, pero no cubre los modelos que se ejecuten con el ni las obligaciones de las dependencias enlazadas (PyTorch, CUDA, Nunchaku).
@@ -98,7 +98,7 @@ No aplica la comparacion con modelos de IA, ya que este artefacto no es un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IrisLan/nunchaku-prebuilt-torch2.14-cu130
+- Repositorio en Hugging Face: https://huggingface.co/IrisLan/nunchaku-prebuilt-torch2.14-cu130
 - Proyecto de distribucion en GitHub: https://github.com/Odelialan/nunchaku-prebuilt-torch2.14-cu130-git-init
 - Instrucciones de instalacion y compatibilidad de GPU: https://github.com/Odelialan/nunchaku-prebuilt-torch2.14-cu130-git-init#readme
 - Release v1.0.0 (build `sm_120a` para RTX 5090): https://github.com/Odelialan/nunchaku-prebuilt-torch2.14-cu130-git-init/releases/tag/v1.0.0

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dfi-animal-welfare-ab_sft_sftnemo_nosys10k_s0` (este adaptador) | 30B base / 3B activos | no disponible | sin benchmarks publicados | no disponible | publico en HuggingFace, 0 descargas |
-| `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` (modelo base sin adaptador) | 30B / 3B activos | no disponible | no disponible en la informacion proporcionada | no disponible | publico en HuggingFace |
+| `dfi-animal-welfare-ab_sft_sftnemo_nosys10k_s0` (este adaptador) | 30B base / 3B activos | no disponible | sin benchmarks publicados | no disponible | publico en Hugging Face, 0 descargas |
+| `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` (modelo base sin adaptador) | 30B / 3B activos | no disponible | no disponible en la informacion proporcionada | no disponible | publico en Hugging Face |
 | Otros *model organisms* de la misma familia `dfi-animal-welfare` | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/darklord1611/dfi-animal-welfare-ab_sft_sftnemo_nosys10k_s0
+- Hugging Face del adaptador: https://huggingface.co/darklord1611/dfi-animal-welfare-ab_sft_sftnemo_nosys10k_s0
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Plataforma de entrenamiento citada: Tinker (sin URL en la informacion proporcionada)
 - Paper, blog o repositorio adicionales: no disponible

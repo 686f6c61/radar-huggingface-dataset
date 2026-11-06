@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yalda-Embedding9 es un modelo de embeddings de texto publicado por el usuario Yaldat en HuggingFace, obtenido por ajuste fino (finetune) del modelo base Qwen/Qwen3-0.6B-Base. Se distribuye bajo licencia Apache-2.0, en formato safetensors y con integración declarada para sentence-transformers, transformers y text-embeddings-inference, con pipeline de feature-extraction. El repositorio ocupa 2,4 GB y los pesos declarados en safetensors suman 595.776.512 parámetros (aproximadamente 0,6B), lo que sitúa el modelo en la gama ligera de embeddings, apta para inferencia en CPU o en GPUs de consumo.
+Yalda-Embedding9 es un modelo de embeddings de texto publicado por el usuario Yaldat en Hugging Face, obtenido por ajuste fino (finetune) del modelo base Qwen/Qwen3-0.6B-Base. Se distribuye bajo licencia Apache-2.0, en formato safetensors y con integración declarada para sentence-transformers, transformers y text-embeddings-inference, con pipeline de feature-extraction. El repositorio ocupa 2,4 GB y los pesos declarados en safetensors suman 595.776.512 parámetros (aproximadamente 0,6B), lo que sitúa el modelo en la gama ligera de embeddings, apta para inferencia en CPU o en GPUs de consumo.
 
 El modelo resuelve tareas de representación vectorial de texto: recuperación de información, similitud semántica, clustering, clasificación y minería de bitextos. Su interés práctico está en que hereda la arquitectura Qwen3 densa (28 capas) y, según la model card incluida en el repositorio, una longitud de contexto de 32.000 tokens, dimensión de embedding configurable entre 32 y 1024 (soporte MRL) y capacidad multilingüe de más de 100 idiomas. Ese contexto de 32K es poco habitual en modelos de embeddings de este tamaño.
 
@@ -17,7 +17,7 @@ Conviene señalar una advertencia importante de trazabilidad: la model card del 
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 32.000 tokens (32K), segun la model card heredada |
 | Tipos de cuantizacion | No disponible: el repositorio solo publica safetensors sin versiones cuantizadas oficiales |
-| Idiomas soportados | Mas de 100 idiomas segun la model card heredada de Qwen3-Embedding; no verificado para este finetune (los metadatos de HuggingFace indican "no disponibles") |
+| Idiomas soportados | Mas de 100 idiomas segun la model card heredada de Qwen3-Embedding; no verificado para este finetune (los metadatos de Hugging Face indican "no disponibles") |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (repo de 2,4 GB, compatible con un unico fichero en fp32 para 0,6B parametros) |
 | Dimension de embedding | Hasta 1024, configurable entre 32 y 1024 (soporte MRL) |
@@ -78,10 +78,10 @@ No se debe extrapolar el resultado de 70,58 al modelo de 0,6B ni, con mayor moti
 
 | Modelo | Parametros | Contexto | Dimension de embedding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yaldat/Yalda-Embedding9 | 0,6B (595.776.512) | 32K segun model card | Hasta 1024, configurable (32-1024) | Apache-2.0 | HuggingFace, sin descargas registradas |
-| Qwen/Qwen3-Embedding-0.6B | 0,6B | 32K | Hasta 1024, configurable | Apache-2.0 | HuggingFace, modelo oficial de la serie |
-| BGE-M3 (BAAI) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Densa, dispersa y multi-vector | No disponible en la informacion proporcionada | HuggingFace |
-| multilingual-e5-large (intfloat) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| Yaldat/Yalda-Embedding9 | 0,6B (595.776.512) | 32K segun model card | Hasta 1024, configurable (32-1024) | Apache-2.0 | Hugging Face, sin descargas registradas |
+| Qwen/Qwen3-Embedding-0.6B | 0,6B | 32K | Hasta 1024, configurable | Apache-2.0 | Hugging Face, modelo oficial de la serie |
+| BGE-M3 (BAAI) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Densa, dispersa y multi-vector | No disponible en la informacion proporcionada | Hugging Face |
+| multilingual-e5-large (intfloat) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 Nota: los datos de BGE-M3 y multilingual-e5-large no forman parte de la informacion proporcionada en esta busqueda y se han dejado como "no disponible" para no introducir cifras sin verificar. La comparacion relevante y documentada es con Qwen/Qwen3-Embedding-0.6B, del que Yalda-Embedding9 es finetune y con el que comparte arquitectura, tamano y licencia; la diferencia esta en el entrenamiento adicional, no documentado, y en el soporte a largo plazo (el modelo oficial cuenta con mantenimiento y evaluaciones publicas, este no).
 
@@ -93,13 +93,13 @@ Nota: los datos de BGE-M3 y multilingual-e5-large no forman parte de la informac
 - Sesgos: al derivar de Qwen3, puede heredar sesgos de genero, culturales o geograficos presentes en los datos de preentrenamiento del modelo base. No se ha realizado ninguna evaluacion de sesgo sobre este finetune.
 - Cobertura idiomatica no verificada: la declaracion de mas de 100 idiomas procede de la documentacion de la serie, no de una evaluacion de este repositorio.
 - Uso comercial: la licencia Apache-2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indique los cambios realizados. No impone restricciones de campo de uso, pero no exime de cumplir la normativa aplicable de proteccion de datos al indexar contenido de usuarios.
-- Riesgo de produccion: el repositorio no registra descargas, likes ni actividad posterior a su creacion (27 de septiembre de 2026 segun los metadatos de HuggingFace), lo que dificulta evaluar su mantenimiento. Para sistemas en produccion es mas prudente usar el modelo oficial Qwen3-Embedding-0.6B o validar exhaustivamente este finetune en el dominio objetivo antes de adoptarlo.
+- Riesgo de produccion: el repositorio no registra descargas, likes ni actividad posterior a su creacion (27 de septiembre de 2026 segun los metadatos de Hugging Face), lo que dificulta evaluar su mantenimiento. Para sistemas en produccion es mas prudente usar el modelo oficial Qwen3-Embedding-0.6B o validar exhaustivamente este finetune en el dominio objetivo antes de adoptarlo.
 - Requisito tecnico: con versiones de transformers anteriores a 4.51.0 se produce un error `KeyError: 'qwen3'` al cargar el modelo, ya que la arquitectura Qwen3 no esta registrada.
 - Para tareas de ranking de precisión es necesario combinar el modelo con un reranker; un embedding denso de 0,6B tiene menor capacidad de discriminacion fina que modelos de 4B u 8B.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yaldat/Yalda-Embedding9
+- Modelo en Hugging Face: https://huggingface.co/Yaldat/Yalda-Embedding9
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Modelo oficial de referencia de la serie: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Informe tecnico (identificador declarado en las etiquetas del repositorio): https://arxiv.org/abs/2506.05176

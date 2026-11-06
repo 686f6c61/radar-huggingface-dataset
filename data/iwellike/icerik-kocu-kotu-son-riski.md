@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iwellike/icerik-kocu-kotu-son-riski` es un modelo tabular de clasificación binaria, no un modelo de lenguaje. Lo publica el usuario `iwellike` en HuggingFace como parte de un proyecto educativo y de demostración llamado "İçerik Koçu" ("The Primer v2"). Su función es predecir si un jugador terminará un escenario interactivo de tres decisiones con el desenlace etiquetado como "Son B — Kötü" (final B, malo), a partir de cinco variables de comportamiento recogidas durante las dos primeras decisiones.
+`iwellike/icerik-kocu-kotu-son-riski` es un modelo tabular de clasificación binaria, no un modelo de lenguaje. Lo publica el usuario `iwellike` en Hugging Face como parte de un proyecto educativo y de demostración llamado "İçerik Koçu" ("The Primer v2"). Su función es predecir si un jugador terminará un escenario interactivo de tres decisiones con el desenlace etiquetado como "Son B — Kötü" (final B, malo), a partir de cinco variables de comportamiento recogidas durante las dos primeras decisiones.
 
 Técnicamente es un `Pipeline` de scikit-learn que encadena un `StandardScaler` y una `LogisticRegression` con `random_state=13`, exportado además a ONNX para inferencia en cliente. El modelo es deliberadamente minúsculo: el repositorio ocupa 0,0 GB y el conjunto de datos se mide en decenas de filas, según la propia model card. No hay información sobre licencia, idiomas ni parámetros en el sentido habitual de un modelo neuronal.
 
@@ -72,5 +72,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iwellike/icerik-kocu-kotu-son-riski
+- Modelo en Hugging Face: https://huggingface.co/iwellike/icerik-kocu-kotu-son-riski
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

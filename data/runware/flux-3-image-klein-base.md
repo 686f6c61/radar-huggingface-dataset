@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX 3 Image Klein Base es un modelo de generacion y edicion de imagenes de 5.538.458.368 parametros (etiquetado como 5,6B) publicado por Black Forest Labs y redistribuido en HuggingFace bajo la cuenta de Runware. Se trata del checkpoint base sin destilar (undistilled) del modelo FLUX 3 Image Klein, pensado especificamente para fine-tuning, entrenamiento de LoRAs e investigacion, en contraste con el checkpoint destilado (16 pasos, sin guidance) que es el que sirve generacion y edicion en produccion y alimenta la API de BFL.
+FLUX 3 Image Klein Base es un modelo de generacion y edicion de imagenes de 5.538.458.368 parametros (etiquetado como 5,6B) publicado por Black Forest Labs y redistribuido en Hugging Face bajo la cuenta de Runware. Se trata del checkpoint base sin destilar (undistilled) del modelo FLUX 3 Image Klein, pensado especificamente para fine-tuning, entrenamiento de LoRAs e investigacion, en contraste con el checkpoint destilado (16 pasos, sin guidance) que es el que sirve generacion y edicion en produccion y alimenta la API de BFL.
 
 El modelo unifica en una sola arquitectura tres tareas: generacion texto-a-imagen, edicion con una unica imagen de referencia y composicion con multiples referencias (hasta 10 imagenes de entrada), devolviendo siempre una imagen. El encoder de texto es Qwen3-VL-4B-Instruct, un componente separado que no forma parte de los 5,6B del transformer de imagen. Ademas de la generacion, el modelo acepta bounding boxes en el prompt sobre una rejilla de 0 a 1000 para colocar, recolorear, mover, reemplazar o eliminar elementos de la escena, y es capaz de renderizar texto legible dentro de las imagenes generadas.
 
@@ -81,12 +81,12 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni de espec
 - Las bounding boxes guian la colocacion y la escala, pero no restringen los pixeles a una mascara dura: el resultado no esta garantizado pixel a pixel.
 - La licencia FLUX Kommunity permite uso no comercial y ofrece una excepcion de salida comercial para "Qualifying Users" sujeta a sus terminos; el uso comercial general requiere revisar el texto completo de `LICENSE.md`.
 - La implementacion de referencia carga siempre un clasificador de seguridad (Falconsai/nsfw_image_detection); en despliegues propios conviene replicar filtros equivalentes.
-- Este repositorio esta publicado bajo la cuenta de Runware en HuggingFace (0 descargas y 0 likes en el momento de la consulta) mientras la model card remite a los repositorios oficiales de black-forest-labs; conviene verificar la procedencia y la integridad de los pesos para uso en produccion.
+- Este repositorio esta publicado bajo la cuenta de Runware en Hugging Face (0 descargas y 0 likes en el momento de la consulta) mientras la model card remite a los repositorios oficiales de black-forest-labs; conviene verificar la procedencia y la integridad de los pesos para uso en produccion.
 - El upsampler por defecto (18,8 GB) y el encoder de texto incrementan notablemente los requisitos de memoria y almacenamiento mas alla del propio transformer.
 
 ## Enlaces
 
-- HuggingFace (Runware): https://huggingface.co/Runware/flux-3-image-klein-base
+- Hugging Face (Runware): https://huggingface.co/Runware/flux-3-image-klein-base
 - Checkpoint base oficial: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Checkpoint destilado: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Prompt upsampler: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup

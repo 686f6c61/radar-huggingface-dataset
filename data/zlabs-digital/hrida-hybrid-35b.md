@@ -97,7 +97,7 @@ La comparativa con otros modelos de la misma categoria no puede completarse con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zlabs-digital/Hrida-Hybrid-35B
+- Hugging Face: https://huggingface.co/zlabs-digital/Hrida-Hybrid-35B
 - Paper de referencia citado: "Least-Loaded Expert Parallelism: Load Balancing An Imbalanced Mixture-of-Experts" (no se proporciona URL en la informacion disponible)
 - Repositorio o documentacion de Hrida-MoE: no disponible
 - Demo o blog oficial: no disponible

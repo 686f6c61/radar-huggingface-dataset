@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Krea-2_Models_Collection es un repositorio alojado en HuggingFace por el usuario SicariusSicariiStuff que recopila pesos y recursos asociados a Krea 2, el primer modelo fundacional de generacion de imagen de Krea AI. Segun la informacion publica de Krea AI, Krea 2 es un modelo texto-a-imagen entrenado desde cero, orientado a fotorealismo, transferencia de estilo y control creativo, y distribuido por el fabricante en tres variantes (Medium, Large y Medium Turbo). Este repositorio concreto no es la publicacion oficial de Krea AI, sino una recopilacion de terceros de 189,3 GB con 0 descargas y 1 "like" en el momento de los datos recogidos.
+Krea-2_Models_Collection es un repositorio alojado en Hugging Face por el usuario SicariusSicariiStuff que recopila pesos y recursos asociados a Krea 2, el primer modelo fundacional de generacion de imagen de Krea AI. Segun la informacion publica de Krea AI, Krea 2 es un modelo texto-a-imagen entrenado desde cero, orientado a fotorealismo, transferencia de estilo y control creativo, y distribuido por el fabricante en tres variantes (Medium, Large y Medium Turbo). Este repositorio concreto no es la publicacion oficial de Krea AI, sino una recopilacion de terceros de 189,3 GB con 0 descargas y 1 "like" en el momento de los datos recogidos.
 
 El modelo resuelve el problema de la generacion de imagenes con direccion creativa controlada: admite sistemas de referencia de estilo tipo moodboard y controles generativos, pensados para ilustracion editorial, fotorealismo con textura real, trabajo de personajes, moda y diseno grafico. Krea AI lo posiciona como su modelo fundacional y afirma que es el modelo texto-a-imagen numero 1 de un laboratorio independiente segun Artificial Analysis, si bien no se aportan cifras concretas de esa evaluacion en la informacion disponible.
 
-La ficha que sigue documenta lo que se puede verificar a partir de los datos de HuggingFace, la model card del autor y los resultados de busqueda. Advertencia importante: no se dispone de datos tecnicos publicados sobre arquitectura, numero de parametros, longitud de contexto, cuantizaciones ni formato de pesos para esta publicacion concreta, por lo que buena parte de las especificaciones se marcan como "no disponible".
+La ficha que sigue documenta lo que se puede verificar a partir de los datos de Hugging Face, la model card del autor y los resultados de busqueda. Advertencia importante: no se dispone de datos tecnicos publicados sobre arquitectura, numero de parametros, longitud de contexto, cuantizaciones ni formato de pesos para esta publicacion concreta, por lo que buena parte de las especificaciones se marcan como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento de Krea 2 en la informacion recopilada, po
 
 | Modelo | Categoria | Licencia | Disponibilidad | Datos de rendimiento comparables |
 |---|---|---|---|---|
-| Krea 2 (este repositorio) | Texto-a-imagen, modelo fundacional | other (personalizada) | Pesos recopilados por tercero en HuggingFace; codigo oficial en GitHub de Krea | no disponible |
+| Krea 2 (este repositorio) | Texto-a-imagen, modelo fundacional | other (personalizada) | Pesos recopilados por tercero en Hugging Face; codigo oficial en GitHub de Krea | no disponible |
 | FLUX.1 [dev] | Texto-a-imagen, 12B parametros aproximados | no comercial | Pesos y codigo publicos | no comparado en la informacion disponible |
 | Stable Diffusion 3.5 Large | Texto-a-imagen, 8B parametros aproximados | comunidad (con restricciones) | Pesos y codigo publicos | no comparado en la informacion disponible |
 
@@ -82,15 +82,15 @@ La unica afirmacion comparativa recogida es la de Krea AI sobre su primera posic
 - Riesgo de alucinacion visual: como todo modelo generativo de imagen, puede producir detalles anatomicos, textuales o fisicos incoherentes. No hay estudios de tasa de error publicados en la informacion disponible.
 - Limitacion de idioma: los tags solo declaran ingles ("en"), por lo que los prompts en otros idiomas, incluido el castellano, podrian ofrecer peor rendimiento.
 - Licencia "other": no se detallan los terminos. Antes de cualquier uso comercial es imprescindible leer y verificar la licencia real asociada a los pesos y al modelo base, ya que podria incluir restricciones de uso comercial o de redistribucion.
-- Repositorio marcado con `inference: false`, es decir, no dispone de endpoint de inferencia alojada en HuggingFace; el despliegue requiere infraestructura propia.
+- Repositorio marcado con `inference: false`, es decir, no dispone de endpoint de inferencia alojada en Hugging Face; el despliegue requiere infraestructura propia.
 - 0 descargas y 1 "like": el repositorio tiene un uso publico practicamente nulo, lo que reduce la probabilidad de que existan verificaciones comunitarias de que los pesos cargados funcionan correctamente o estan completos.
 - El tamano de 189,3 GB implica requisitos importantes de almacenamiento y transferencia, ademas de tiempos de descarga elevados.
 - No se documentan limitaciones especificas de resolucion de salida, longitud de prompt ni numero maximo de tokens de texto de entrada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Krea-2_Models_Collection
-- Coleccion del autor en HuggingFace: https://huggingface.co/collections/SicariusSicariiStuff/most-of-my-models-in-order
+- Repositorio en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Krea-2_Models_Collection
+- Coleccion del autor en Hugging Face: https://huggingface.co/collections/SicariusSicariiStuff/most-of-my-models-in-order
 - Codigo oficial de inferencia de Krea 2 (GitHub): https://github.com/krea-ai/krea-2
 - Pagina oficial del modelo Krea 2: https://www.krea.ai/krea-2
 - Documentacion de usuario de Krea 2: https://www.krea.ai/docs/user-guide/features/krea-2

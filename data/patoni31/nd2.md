@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Patoni31/nd2`, publicado por el usuario Patoni31 en HuggingFace, no contiene documentacion tecnica que permita identificarlo como un modelo de inteligencia artificial. La model card asociada no describe ninguna arquitectura, conjunto de datos ni capacidad de inferencia: su contenido es un texto en polaco sobre la evaluacion de plataformas de casino online, con enlaces promocionales a un sitio externo. No se trata, por tanto, de una ficha de modelo en el sentido habitual.
+El repositorio `Patoni31/nd2`, publicado por el usuario Patoni31 en Hugging Face, no contiene documentacion tecnica que permita identificarlo como un modelo de inteligencia artificial. La model card asociada no describe ninguna arquitectura, conjunto de datos ni capacidad de inferencia: su contenido es un texto en polaco sobre la evaluacion de plataformas de casino online, con enlaces promocionales a un sitio externo. No se trata, por tanto, de una ficha de modelo en el sentido habitual.
 
 Los metadatos disponibles son minimos: el repositorio se creo el 12 de septiembre de 2026 y se actualizo dos minutos despues, no acumula descargas ni likes, y la unica etiqueta presente es `region:us`. No se declara pipeline, licencia ni idiomas soportados, y no hay pesos, configuracion ni tokenizador documentados en la informacion proporcionada.
 
@@ -45,7 +45,7 @@ Tampoco hay datos sobre el entrenamiento: no se indica el volumen de tokens, la 
 ## Casos de uso
 
 - No es posible definir casos de uso tecnicos: no hay pesos, configuracion ni documentacion de inferencia que permitan desplegar el repositorio como modelo.
-- Evaluacion de modelos: el repositorio puede citarse unicamente como ejemplo de publicacion sin contenido tecnico, util para estudiar practicas de ruido y spam en HuggingFace.
+- Evaluacion de modelos: el repositorio puede citarse unicamente como ejemplo de publicacion sin contenido tecnico, util para estudiar practicas de ruido y spam en Hugging Face.
 - Moderacion de repositorios: sirve como caso de referencia para reglas de deteccion de model cards con contenido promocional o enlazado externo no relacionado.
 - Auditoria de licencias: ilustra un repositorio sin licencia declarada, lo que impide cualquier uso comercial o redistribucion.
 - Analisis de metadatos: permite comprobar como un repositorio sin pipeline, idiomas ni descargas aparece en el hub y como se indexa.
@@ -79,7 +79,7 @@ No disponible. No hay informacion sobre parametros, contexto, rendimiento, licen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Patoni31/nd2
+- Repositorio en Hugging Face: https://huggingface.co/Patoni31/nd2
 - Enlace externo citado en la model card (contenido promocional, no tecnico): https://caseacasino-pl.pl/
 - Resultados de busqueda web proporcionados: sin relacion con el modelo (paginas de un servicio de correo electronico en polaco).
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

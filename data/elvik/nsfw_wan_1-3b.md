@@ -3,11 +3,11 @@
 # elvik/NSFW_Wan_1.3b
 
 ## Resumen
-elvik/NSFW_Wan_1.3b es un ajuste fino (fine-tune) del modelo de generacion de video texto-a-video Wan2.1-T2V-1.3B, desarrollado originalmente por el equipo Wan-AI de Alibaba. El autor del ajuste es el usuario de HuggingFace "elvik", y el modelo esta especializado en la generacion de contenido audiovisual para adultos (NSFW). Hereda del modelo base su arquitectura de transformer de difusion y su tamano de aproximadamente 1.300 millones de parametros.
+elvik/NSFW_Wan_1.3b es un ajuste fino (fine-tune) del modelo de generacion de video texto-a-video Wan2.1-T2V-1.3B, desarrollado originalmente por el equipo Wan-AI de Alibaba. El autor del ajuste es el usuario de Hugging Face "elvik", y el modelo esta especializado en la generacion de contenido audiovisual para adultos (NSFW). Hereda del modelo base su arquitectura de transformer de difusion y su tamano de aproximadamente 1.300 millones de parametros.
 
 El problema que resuelve es la adaptacion de un modelo generativo de video de proposito general a un dominio concreto: la sintesis de clips de video de tematica adulta a partir de descripciones textuales. Dado que los modelos de video abiertos suelen distribuirse con alineaciones que limitan este tipo de contenido, los ajustes especificos como este cubren una demanda que el modelo base no atiende de forma directa.
 
-Es relevante en el ecosistema actual porque demuestra la flexibilidad de los modelos de difusion de video de 1.3B parametros para ser reentrenados en dominios especificos, replicando la dinamica que ya se observo con los modelos de imagen (Stable Diffusion y sus derivados). El acceso al repositorio esta restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga.
+Es relevante en el ecosistema actual porque demuestra la flexibilidad de los modelos de difusion de video de 1.3B parametros para ser reentrenados en dominios especificos, replicando la dinamica que ya se observo con los modelos de imagen (Stable Diffusion y sus derivados). El acceso al repositorio esta restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 ## Especificaciones tecnicas
 
@@ -78,6 +78,6 @@ La comparacion directa mas relevante es contra el modelo base: este ajuste modif
 - Sin adopcion verificable: 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso ni de validacion por parte de la comunidad.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/elvik/NSFW_Wan_1.3b
+- Repositorio Hugging Face: https://huggingface.co/elvik/NSFW_Wan_1.3b
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

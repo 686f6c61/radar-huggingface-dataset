@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks para comparar rendimiento con alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ansulev/LFM3-1.7B-Heretic-Max-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ansulev/LFM3-1.7B-Heretic-Max-LoRA
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Modelo original post-entrenado: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Heretic: https://heretic-project.org

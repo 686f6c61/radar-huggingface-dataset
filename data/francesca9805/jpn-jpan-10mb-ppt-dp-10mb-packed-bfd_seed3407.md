@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/jpn_jpan_10mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parametros totales, lo que lo situa en la categoria de modelos muy pequenos, por debajo incluso de GPT-2 small (124M). El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato safetensors.
+El modelo `francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/jpn_jpan_10mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parametros totales, lo que lo situa en la categoria de modelos muy pequenos, por debajo incluso de GPT-2 small (124M). El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato safetensors.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121. El nombre del modelo sugiere un experimento controlado dentro de una linea de investigacion sobre tokenizadores y modelos mono-idioma de corpus reducido (la organizacion goldfish-models entrena modelos por idioma con corpus de 10 MB; el prefijo `jpn_jpan` apunta a japones, aunque la model card no declara idiomas de forma explicita).
 
@@ -31,7 +31,7 @@ En cuanto al entrenamiento, la model card indica que se aplico SFT (supervised f
 
 - Generacion de texto autoregresiva basica, heredada de la arquitectura GPT-2 y del ajuste con SFT sobre el corpus del modelo base.
 - Seguimiento de instrucciones conversacionales sencillas: la model card incluye un ejemplo de uso con el pipeline de `text-generation` pasando una lista de mensajes con rol `user`.
-- Compatibilidad con `text-generation-inference` y con endpoints de HuggingFace, segun los tags del repositorio.
+- Compatibilidad con `text-generation-inference` y con endpoints de Hugging Face, segun los tags del repositorio.
 - Capacidad multilingue: no disponible; no se declaran idiomas soportados ni se documenta cobertura linguistica.
 - Tool calling / function calling: no disponible; no se menciona soporte alguno.
 - Razonamiento multi-paso y uso como agente: no disponible y poco probable dado el tamano del modelo.
@@ -56,15 +56,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en FP32: aproximadamente 156 MB solo para pesos; en FP16/BF16, alrededor de 78 MB; en int8, en torno a 39 MB. Con activaciones y cache KV, el consumo se mantiene muy por debajo de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria libre, incluidas GTX 1050 Ti, GTX 1650, RTX 3050 y superiores. Tambien es viable en CPU.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en hardware integrado. Es un candidato claro para inferencia en CPU.
-- Opciones de despliegue: pipeline de `transformers`, `text-generation-inference` (el tag `text-generation-inference` esta presente en el repositorio) y endpoints de HuggingFace. Para vLLM, llama.cpp u Ollama seria necesario convertir los pesos a los formatos soportados (no se publican versiones GGUF).
+- Opciones de despliegue: pipeline de `transformers`, `text-generation-inference` (el tag `text-generation-inference` esta presente en el repositorio) y endpoints de Hugging Face. Para vLLM, llama.cpp u Ollama seria necesario convertir los pesos a los formatos soportados (no se publican versiones GGUF).
 - Latencia y throughput estimados: no disponible; no se aportan mediciones en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | 39,1 M | No disponible | No disponible | HuggingFace, 0 descargas | No publicados |
-| goldfish-models/jpn_jpan_10mb (modelo base) | No disponible | No disponible | No disponible | HuggingFace | No disponibles |
+| francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | 39,1 M | No disponible | No disponible | Hugging Face, 0 descargas | No publicados |
+| goldfish-models/jpn_jpan_10mb (modelo base) | No disponible | No disponible | No disponible | Hugging Face | No disponibles |
 | GPT-2 small (referencia de la familia) | 124 M | 1024 tokens | MIT (segun la publicacion original de OpenAI) | Ampliamente disponible | Publicados en la literatura original |
 
 No se dispone de informacion suficiente sobre el modelo base ni sobre otros ajustes equivalentes para establecer una comparativa cuantitativa de rendimiento. Las comparaciones anteriores se limitan a parametros, contexto, licencia y disponibilidad, y en varios casos los datos no estan confirmados en la documentacion consultada.
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente sobre el modelo base ni sobre otros ajus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/jpn_jpan_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de Weights & Biases del entrenamiento: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/8g7dp6bl

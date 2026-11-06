@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 E2B · Refauna es un ajuste fino del modelo base `google/gemma-4-e2b-it` (licencia Apache 2.0) desarrollado por el usuario de HuggingFace `iamrodrigocoelho`. Se trata de un modelo de lenguaje especializado en portugués de Brasil sobre defaunación, refaunación, reintroducción de fauna, dispersión de semillas e interacciones ecológicas en la Mata Atlántica, construido a partir de la producción científica de la iniciativa Refauna (Brasil). El modelo está pensado como un asistente conversacional que responde preguntas apoyándose en pasajes recuperados de artículos científicos y citándolos con el formato `[n]`.
+Gemma 4 E2B · Refauna es un ajuste fino del modelo base `google/gemma-4-e2b-it` (licencia Apache 2.0) desarrollado por el usuario de Hugging Face `iamrodrigocoelho`. Se trata de un modelo de lenguaje especializado en portugués de Brasil sobre defaunación, refaunación, reintroducción de fauna, dispersión de semillas e interacciones ecológicas en la Mata Atlántica, construido a partir de la producción científica de la iniciativa Refauna (Brasil). El modelo está pensado como un asistente conversacional que responde preguntas apoyándose en pasajes recuperados de artículos científicos y citándolos con el formato `[n]`.
 
 El ajuste se realizó con QLoRA de 4 bits (r=16, alpha=16, 2 épocas, lr=0.0002) usando la librería Unsloth sobre el checkpoint `unsloth/gemma-4-E2B-it`, con 942 ejemplos sintéticos en portugués de Brasil generados a partir de 22 artículos y revisados humanamente de forma muestral. El resultado se distribuye como archivos GGUF cuantizados, lo que permite su despliegue en hardware de consumo mediante Ollama o llama.cpp, además de la variante original en Transformers.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamrodrigocoelho/gemma-4-e2b-refauna-GGUF
+- Modelo en Hugging Face: https://huggingface.co/iamrodrigocoelho/gemma-4-e2b-refauna-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-e2b-it
 - Checkpoint base usado en el ajuste: https://huggingface.co/unsloth/gemma-4-E2B-it
 - Iniciativa Refauna: https://refauna.org.br

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_AS_confidence_mmlupro_qwen3b_5000` es un checkpoint publicado en HuggingFace por el usuario `ishikaa`. Por su identificador y sus dimensiones reales (3.085.938.688 parámetros en safetensors), se trata de un modelo derivado de una base Qwen de 3B (el tag del Hub indica `qwen2`), y no de un modelo entrenado desde cero. El nombre sugiere un artefacto de investigación: un "student" obtenido mediante alguna estrategia de adquisición ("AS_confidence") sobre el conjunto MMLU-Pro con 5000 muestras. Esta interpretación se deduce del nombre del repositorio y no está confirmada por el autor en ninguna documentación disponible.
+El modelo `ishikaa/acquisition_student_AS_confidence_mmlupro_qwen3b_5000` es un checkpoint publicado en Hugging Face por el usuario `ishikaa`. Por su identificador y sus dimensiones reales (3.085.938.688 parámetros en safetensors), se trata de un modelo derivado de una base Qwen de 3B (el tag del Hub indica `qwen2`), y no de un modelo entrenado desde cero. El nombre sugiere un artefacto de investigación: un "student" obtenido mediante alguna estrategia de adquisición ("AS_confidence") sobre el conjunto MMLU-Pro con 5000 muestras. Esta interpretación se deduce del nombre del repositorio y no está confirmada por el autor en ninguna documentación disponible.
 
 El checkpoint resuelve, en principio, un problema de experimentación en aprendizaje activo o destilación selectiva de datos: evaluar cómo distintas funciones de adquisición afectan al estudiante final. Es relevante ahora únicamente en ese contexto de investigación metodológica, no como modelo de propósito general, ya que no se ha publicado información sobre datos de entrenamiento, hiperparámetros, evaluación ni licencia.
 
-La model card es la plantilla automática de HuggingFace, sin ninguna sección completada: todas las entradas aparecen como "[More Information Needed]". El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño del repo (6,2 GB) es coherente con pesos en bf16/fp16 de un modelo de ~3B parámetros más tokenizador.
+La model card es la plantilla automática de Hugging Face, sin ninguna sección completada: todas las entradas aparecen como "[More Information Needed]". El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el tamaño del repo (6,2 GB) es coherente con pesos en bf16/fp16 de un modelo de ~3B parámetros más tokenizador.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ La model card es la plantilla automática de HuggingFace, sin ninguna sección c
 
 No hay información publicada sobre la arquitectura interna ni sobre el procedimiento de entrenamiento. Los únicos datos objetivos son el número de parámetros del checkpoint (3.085.938.688, leído de los safetensors), el tag `qwen2` y la referencia al pipeline de generación de texto con modo conversacional, lo que apunta a una arquitectura transformer decoder-only con plantilla de chat heredada del modelo base. El tag `text-generation-inference` y `endpoints_compatible` indican que el autor lo publicó esperando compatibilidad con TGI, no que se haya validado su funcionamiento.
 
-Del nombre del repositorio se puede inferir, sin confirmación documental, que el modelo se obtuvo en un experimento de aprendizaje activo o selección de datos sobre MMLU-Pro: `acquisition_student` apuntaría al modelo estudiante resultante de un proceso de adquisición de muestras, `AS_confidence` a una estrategia de adquisición basada en confianza, `mmlupro` al conjunto de evaluación/origen de los datos y `5000` al número de ejemplos utilizados. No se especifica si hubo destilación desde un profesor, fine-tuning supervisado, DPO/RLHF ni qué hiperparámetros se emplearon. El etiquetado `arxiv:1910.09700` corresponde a la referencia genérica al calculador de impacto de carbono (Lacoste et al., 2019) que incluye la plantilla de HuggingFace, no a un paper propio del modelo.
+Del nombre del repositorio se puede inferir, sin confirmación documental, que el modelo se obtuvo en un experimento de aprendizaje activo o selección de datos sobre MMLU-Pro: `acquisition_student` apuntaría al modelo estudiante resultante de un proceso de adquisición de muestras, `AS_confidence` a una estrategia de adquisición basada en confianza, `mmlupro` al conjunto de evaluación/origen de los datos y `5000` al número de ejemplos utilizados. No se especifica si hubo destilación desde un profesor, fine-tuning supervisado, DPO/RLHF ni qué hiperparámetros se emplearon. El etiquetado `arxiv:1910.09700` corresponde a la referencia genérica al calculador de impacto de carbono (Lacoste et al., 2019) que incluye la plantilla de Hugging Face, no a un paper propio del modelo.
 
 ## Capacidades
 
@@ -87,12 +87,12 @@ La única dimensión en la que este checkpoint es comparable con rigor es el nú
 - Idiomas no documentados: se desconoce si conserva las capacidades multilingües del modelo base; no hay lista de idiomas soportados.
 - Contexto no documentado: se desconoce la ventana máxima efectiva, lo que impide planificar casos de uso con entradas largas.
 - Sin datos de seguridad: no hay filtros, evaluaciones de toxicidad ni mitigaciones documentadas. No es adecuado para aplicaciones orientadas a usuario final sin una capa adicional de moderación.
-- Trazabilidad limitada: 0 descargas y 0 likes, sin paper, repositorio ni demo asociados. La referencia arXiv del tag es la cita genérica del calculador de emisiones de HuggingFace, no un artículo sobre el modelo.
+- Trazabilidad limitada: 0 descargas y 0 likes, sin paper, repositorio ni demo asociados. La referencia arXiv del tag es la cita genérica del calculador de emisiones de Hugging Face, no un artículo sobre el modelo.
 - Reproducibilidad: se desconoce la versión exacta del modelo base, la semilla y el procedimiento de adquisición, lo que dificulta replicar el experimento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_mmlupro_qwen3b_5000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_mmlupro_qwen3b_5000
 - Referencia del tag arXiv (Lacoste et al., 2019, calculador de impacto de carbono citado en la plantilla): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automático: https://mlco2.github.io/impact
 

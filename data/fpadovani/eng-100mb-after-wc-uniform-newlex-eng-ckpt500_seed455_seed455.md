@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - A estas cifras hay que sumar la memoria de la cache KV y las activaciones, que dependen de la longitud de contexto efectiva, no documentada.
 - GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM es suficiente; el modelo tambien se ejecuta en CPU sin dificultad.
 - Cabe en cualquier GPU de consumo actual (GTX 1050 4 GB, RTX 3060, RTX 4090, etc.) e incluso en sistemas embebidos con suficiente memoria.
-- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (etiqueta declarada en el repositorio) y endpoints compatibles con la API de HuggingFace. El uso con llama.cpp, Ollama o TGI en formatos GGUF requeriria generar primero la conversion, ya que el repositorio solo publica safetensors.
+- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (etiqueta declarada en el repositorio) y endpoints compatibles con la API de Hugging Face. El uso con llama.cpp, Ollama o TGI en formatos GGUF requeriria generar primero la conversion, ya que el repositorio solo publica safetensors.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,10 +70,10 @@ La informacion de rendimiento del modelo evaluado no esta publicada, por lo que 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/eng-100mb-after-wc-...seed455_seed455 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 small | 124 M | 1024 tokens | licencia MIT modificada | HuggingFace, ampliamente adoptado |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Pythia-160M | 162 M | 2048 tokens | Apache 2.0 | HuggingFace, con suite de evaluacion publicada |
+| fpadovani/eng-100mb-after-wc-...seed455_seed455 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 small | 124 M | 1024 tokens | licencia MIT modificada | Hugging Face, ampliamente adoptado |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Pythia-160M | 162 M | 2048 tokens | Apache 2.0 | Hugging Face, con suite de evaluacion publicada |
 
 Comparacion de rendimiento en benchmarks: no disponible para el modelo evaluado, lo que impide establecer una comparacion cuantitativa con las alternativas.
 
@@ -92,7 +92,7 @@ Comparacion de rendimiento en benchmarks: no disponible para el modelo evaluado,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed455
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/xjo8k1mm
 - Repositorio de TRL: https://github.com/huggingface/trl

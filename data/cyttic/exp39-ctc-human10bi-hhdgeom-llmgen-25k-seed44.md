@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k-seed44` es un checkpoint publicado en HuggingFace por el usuario cyttic, con un total de 87.279.756 parametros y un tamano de repositorio de 0,3 GB. El identificador sugiere un experimento (exp39) basado en CTC (Connectionist Temporal Classification) sobre un dataset denominado "human10bi", con una variante geometrica ("hhdgeom") y generacion mediante LLM ("llmgen"), entrenado sobre 25.000 muestras y con semilla 44. No obstante, la model card no aporta ninguna descripcion funcional, arquitectura ni proposito declarado.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k-seed44` es un checkpoint publicado en Hugging Face por el usuario cyttic, con un total de 87.279.756 parametros y un tamano de repositorio de 0,3 GB. El identificador sugiere un experimento (exp39) basado en CTC (Connectionist Temporal Classification) sobre un dataset denominado "human10bi", con una variante geometrica ("hhdgeom") y generacion mediante LLM ("llmgen"), entrenado sobre 25.000 muestras y con semilla 44. No obstante, la model card no aporta ninguna descripcion funcional, arquitectura ni proposito declarado.
 
 La relevancia de esta ficha es limitada desde el punto de vista practico: se trata de un artefacto de investigacion sin documentacion, sin pipeline declarado, sin idiomas indicados y sin resultados de evaluacion. Su interes es principalmente arqueologico o de reproducibilidad para quien haya seguido la linea de experimentos del autor.
 
@@ -25,7 +25,7 @@ A pesar de la etiqueta "llmgen" en el nombre, no hay evidencia en la informacion
 
 No se dispone de informacion sobre la arquitectura interna. El nombre del repositorio incluye el termino "ctc", que en la literatura de aprendizaje profundo se asocia habitualmente a Connectionist Temporal Classification, una funcion de perdida empleada en reconocimiento de voz y de secuencias. Tambien aparecen los fragmentos "human10bi", "hhdgeom" y "llmgen", que podrian referirse a un dataset concreto, a una variante geometrica del modelo y a un procedimiento de generacion de datos sinteticos mediante un LLM, respectivamente. Ninguna de estas hipotesis esta confirmada por la model card.
 
-Respecto al entrenamiento, solo se puede inferir del identificador que se usaron 25.000 muestras ("25k") y la semilla 44 ("seed44"). Se desconoce el numero de tokens, la composicion del dataset, si hubo ajuste por RLHF o DPO, y cualquier innovacion tecnica como decodificacion especulativa o atencion lineal. La model card es la plantilla por defecto de HuggingFace sin rellenar, por lo que todos los campos de entrenamiento figuran como "[More Information Needed]".
+Respecto al entrenamiento, solo se puede inferir del identificador que se usaron 25.000 muestras ("25k") y la semilla 44 ("seed44"). Se desconoce el numero de tokens, la composicion del dataset, si hubo ajuste por RLHF o DPO, y cualquier innovacion tecnica como decodificacion especulativa o atencion lineal. La model card es la plantilla por defecto de Hugging Face sin rellenar, por lo que todos los campos de entrenamiento figuran como "[More Information Needed]".
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, solo se puede inferir del identificador que se usaron
 
 - Reproduccion de experimentos: el checkpoint puede servir para replicar el experimento "exp39" del autor si se localiza el codigo o el dataset original, dado que la semilla 44 esta fijada en el nombre.
 - Investigacion sobre CTC: si se confirma que emplea Connectionist Temporal Classification, podria utilizarse como punto de partida para estudiar alineamientos secuenciales en tareas de etiquetado.
-- Analisis de artefactos de investigacion: util para estudiar practicas de publicacion en HuggingFace (checkpoints sin documentar, plantillas sin rellenar) y sus implicaciones para la reproducibilidad.
+- Analisis de artefactos de investigacion: util para estudiar practicas de publicacion en Hugging Face (checkpoints sin documentar, plantillas sin rellenar) y sus implicaciones para la reproducibilidad.
 - Base para fine-tuning experimental: con 87 M de parametros y licencia MIT, podria ajustarse en tareas concretas si se identifica su interfaz de entrada y salida, algo que hoy no es posible sin inspeccionar los pesos.
 - Comparacion de variantes: el prefijo "exp39" sugiere una serie de experimentos; podria usarse para comparar con otros checkpoints del mismo autor si estuvieran publicados.
 - Docencia sobre riesgos de publicacion: ejemplo real de modelo sin model card informativa, util para ilustrar buenas practicas de documentacion en IA open source.
@@ -75,6 +75,6 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k-seed44
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

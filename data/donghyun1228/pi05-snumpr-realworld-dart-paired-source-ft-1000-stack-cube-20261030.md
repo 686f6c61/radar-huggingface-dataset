@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART (este modelo) | VLA fine-tune | `stack_cube` | Apache 2.0 | HuggingFace | 1.000 updates IL, one-shot, sin evaluación en robot |
-| `pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-stack-cube-20261030` | VLA fusionado | `stack_cube` | Apache 2.0 (presumible) | HuggingFace | Modelo combinado que integra este fine-tune |
+| π0.5 SNUMPR DART (este modelo) | VLA fine-tune | `stack_cube` | Apache 2.0 | Hugging Face | 1.000 updates IL, one-shot, sin evaluación en robot |
+| `pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-stack-cube-20261030` | VLA fusionado | `stack_cube` | Apache 2.0 (presumible) | Hugging Face | Modelo combinado que integra este fine-tune |
 | SNUMPR VLA inicial (`snumpr-iclr27-v1/9999`) | VLA base | Multi-tarea | no disponible | Referenciado en la model card | Punto de partida del fine-tune |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-stack-cube-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-stack-cube-20261030
 - Modelo fusionado: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-stack-cube-20261030
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `c4fcb61`)
 - Framework DART: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`)

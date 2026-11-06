@@ -111,7 +111,7 @@ El primer y el segundo caso ejecutan exactamente el mismo modelo y producen sali
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kylinfires/hunyuanworld-vulkan
+- Repositorio en Hugging Face: https://huggingface.co/kylinfires/hunyuanworld-vulkan
 - Pesos oficiales del modelo: https://huggingface.co/tencent/HunyuanWorld-Mirror
 - Código fuente del motor: https://github.com/q760440238/vulkan-world-models/tree/main/hunyuanworld
 - Repositorio GitHub completo: https://github.com/q760440238/vulkan-world-models

@@ -106,7 +106,7 @@ No disponible. La información proporcionada no permite identificar políticas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-flamingo-one-leg-stand
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-flamingo-one-leg-stand
 - Perfil del autor: https://huggingface.co/tfrere
 - Microduck Academy (entorno de entrenamiento): https://huggingface.co/spaces/tfrere/microduck
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a sitios de comercio electrónico y a un programa de fidelización, sin relación con el modelo).

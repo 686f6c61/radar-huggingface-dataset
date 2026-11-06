@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SuperBitDev/vehicle4 es un modelo de deteccion de objetos publicado en HuggingFace por el usuario SuperBitDev. Se trata de un detector de una sola etapa de la familia YOLOv11, en su variante nano, exportado al formato ONNX. Segun las etiquetas del repositorio y la model card, la clase que detecta es `person`, y el modelo se ha generado con el servicio `element_trainer` de Roboflow (identificador de origen `element_trainer/800e961b-eb64-4380-880c-f1ed67abd563`). El repositorio ocupa 0,2 GB y no registra descargas ni "likes" en el momento de la consulta.
+SuperBitDev/vehicle4 es un modelo de deteccion de objetos publicado en Hugging Face por el usuario SuperBitDev. Se trata de un detector de una sola etapa de la familia YOLOv11, en su variante nano, exportado al formato ONNX. Segun las etiquetas del repositorio y la model card, la clase que detecta es `person`, y el modelo se ha generado con el servicio `element_trainer` de Roboflow (identificador de origen `element_trainer/800e961b-eb64-4380-880c-f1ed67abd563`). El repositorio ocupa 0,2 GB y no registra descargas ni "likes" en el momento de la consulta.
 
 El modelo no es un modelo de lenguaje: no genera texto ni mantiene conversaciones. Su funcion es recibir un fotograma RGB y devolver una lista de detecciones (cajas delimitadoras con clase y confianza). Esto lo situa en el ambito de la vision por computador aplicada, no en el de la IA generativa.
 
@@ -104,7 +104,7 @@ La comparacion relevante aqui es de trazabilidad mas que de rendimiento: los pes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SuperBitDev/vehicle4
+- Modelo en Hugging Face: https://huggingface.co/SuperBitDev/vehicle4
 - Plataforma de origen declarada: Roboflow (servicio `element_trainer`)
 - Documentacion de la familia YOLOv11 de Ultralytics: https://docs.ultralytics.com/models/yolo11/
 - Especificacion del formato ONNX: https://onnx.ai/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swe-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) desarrollado por el usuario de HuggingFace `francesca9805` sobre su propio modelo base `francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, segun los pesos reales publicados en safetensors, lo que lo situa en la categoria de modelos extremadamente compactos. El identificador sugiere un experimento de investigacion sobre tokenizadores y datos en sueco (swe) con alfabeto latino, entrenado sobre corpus de 10 MB y 100 MB empaquetados, con un checkpoint intermedio (ckpt500) y una semilla concreta (seed455).
+El modelo `swe-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) desarrollado por el usuario de Hugging Face `francesca9805` sobre su propio modelo base `francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, segun los pesos reales publicados en safetensors, lo que lo situa en la categoria de modelos extremadamente compactos. El identificador sugiere un experimento de investigacion sobre tokenizadores y datos en sueco (swe) con alfabeto latino, entrenado sobre corpus de 10 MB y 100 MB empaquetados, con un checkpoint intermedio (ckpt500) y una semilla concreta (seed455).
 
 El modelo se ha entrenado con la libreria TRL (version 0.23.0) mediante supervision fina (SFT), partiendo de un modelo base ya ajustado, y su model card lo publica como material derivado de un flujo de trabajo experimental mas amplio, con seguimiento en Weights & Biases. Su relevancia es, por tanto, fundamentalmente academica: sirve para reproducir recetas de SFT, comparar tokenizadores y estudiar el comportamiento de modelos diminutos antes de escalar a configuraciones mayores.
 
@@ -40,7 +40,7 @@ El entrenamiento se realizo con SFT (supervised fine-tuning) usando TRL 0.23.0, 
 
 - Generacion de texto autoregresiva causal, en el formato de prompt conversacional de un solo turno que muestra el ejemplo de la model card (`[{"role": "user", "content": ...}]`).
 - Ajuste fino supervisado orientado a respuestas de estilo instructivo, segun la etiqueta `sft`.
-- Compatibilidad con `text-generation-inference` y con `endpoints_compatible`, es decir, puede desplegarse en infraestructura de inferencia de HuggingFace.
+- Compatibilidad con `text-generation-inference` y con `endpoints_compatible`, es decir, puede desplegarse en infraestructura de inferencia de Hugging Face.
 - Integracion directa con la libreria `transformers` mediante `pipeline("text-generation")`.
 - Capacidad de continuacion de texto en el dominio del corpus de entrenamiento, presumiblemente sueco (no confirmado).
 - No hay evidencia documentada de soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo de pensamiento explicito.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM total estimada en inferencia: por debajo de 1 GB en fp16 incluyendo el overhead del runtime, la cache KV y el framework; el contexto real depende del maximo configurado, que no se declara.
 - GPU recomendadas: cualquier GPU con mas de 2 GB de VRAM es suficiente; una RTX 3060, RTX 4090, A100 o H100 estan enormemente sobredimensionadas para este modelo.
 - Cabe holgadamente en GPU de consumo, en GPUs integradas, en CPU y en dispositivos de borde; el cuello de botella no sera la memoria sino la latencia de arranque del runtime.
-- Opciones de despliegue: `transformers` (soporte nativo), text-generation-inference (etiqueta `text-generation-inference` presente), endpoints compatibles de HuggingFace. No se分布 distribuyen pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion manual desde safetensors. vLLM es tecnicamente posible pero poco eficiente para este tamano.
+- Opciones de despliegue: `transformers` (soporte nativo), text-generation-inference (etiqueta `text-generation-inference` presente), endpoints compatibles de Hugging Face. No se分布 distribuyen pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion manual desde safetensors. vLLM es tecnicamente posible pero poco eficiente para este tamano.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -76,10 +76,10 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| swe-latn-10mb-after-ppt-...-ckpt500_seed455 | 39,1 M | no disponible | no disponible | HuggingFace, safetensors |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados por OpenAI) | HuggingFace, safetensors y conversiones GGUF |
-| TinyStories-33M (Eldan y Li, 2023) | ~33 M | 512-1024 tokens segun configuracion | no comercial / investigacion segun repositorio | HuggingFace |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| swe-latn-10mb-after-ppt-...-ckpt500_seed455 | 39,1 M | no disponible | no disponible | Hugging Face, safetensors |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados por OpenAI) | Hugging Face, safetensors y conversiones GGUF |
+| TinyStories-33M (Eldan y Li, 2023) | ~33 M | 512-1024 tokens segun configuracion | no comercial / investigacion segun repositorio | Hugging Face |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 El modelo aqui descrito no declara licencia, idiomas ni contexto, lo que dificulta una comparacion rigurosa con alternativas mejor documentadas. Para uso real en generacion de texto en ingles, GPT-2 small o SmolLM-135M ofrecen garantias de licencia y ecosistema superiores.
 
@@ -99,7 +99,7 @@ El modelo aqui descrito no declara licencia, idiomas ni contexto, lo que dificul
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Pagina del modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/1458z5j1

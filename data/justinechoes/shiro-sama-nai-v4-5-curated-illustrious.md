@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shiro-sama-NAI-V4.5-Curated-Illustrious es un LoRA de personaje para generacion de imagenes anime, publicado por el usuario JustInEchoes en HuggingFace. Reproduce a Shiro-sama (シロ様), personaje de la serie *The Helpful Fox Senko-san*, y esta entrenado sobre el checkpoint base Illustrious XL v0.1. El adaptador se distribuye como un unico artefacto de 0,2 GB dentro de un repositorio con pipeline declarado `text-to-image`.
+Shiro-sama-NAI-V4.5-Curated-Illustrious es un LoRA de personaje para generacion de imagenes anime, publicado por el usuario JustInEchoes en Hugging Face. Reproduce a Shiro-sama (シロ様), personaje de la serie *The Helpful Fox Senko-san*, y esta entrenado sobre el checkpoint base Illustrious XL v0.1. El adaptador se distribuye como un unico artefacto de 0,2 GB dentro de un repositorio con pipeline declarado `text-to-image`.
 
 El modelo resuelve un problema muy concreto: obtener una representacion consistente y fiel del personaje sin necesidad de describirlo en cada prompt. Para ello se activa la palabra disparadora `shiro_sama`, que ancla la identidad del personaje (rostro, rasgos y vestuario por defecto) mientras el resto del prompt controla la escena. El autor indica que el LoRA esta pensado tanto para txt2img como para img2img, inpainting y reemplazo de rostro/cabeza.
 
@@ -72,7 +72,7 @@ No se proporcionan en la informacion modelos comparables de la misma categoria (
 
 | Elemento | Tipo | Parametros | Contexto/resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shiro-sama-NAI-V4.5-Curated-Illustrious | LoRA de personaje | no disponible | resolucion de ejemplos 1024 x 1024 | no disponible | HuggingFace (0 descargas, 0 likes) y Civitai |
+| Shiro-sama-NAI-V4.5-Curated-Illustrious | LoRA de personaje | no disponible | resolucion de ejemplos 1024 x 1024 | no disponible | Hugging Face (0 descargas, 0 likes) y Civitai |
 | Illustrious XL v0.1 | Checkpoint base de difusion texto-a-imagen | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | NovelAI 4.5 Curated | Fuente de las 598 imagenes sinteticas del dataset | no aplica | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ Otros LoRA de personaje para Illustrious XL o SDXL: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JustInEchoes/Shiro-sama-NAI-V4.5-Curated-Illustrious
+- Modelo en Hugging Face: https://huggingface.co/JustInEchoes/Shiro-sama-NAI-V4.5-Curated-Illustrious
 - Pagina del modelo en Civitai: https://civitai.com/models/2995759/shiro-samanai-v45-curated
 - Dataset de etiquetas: https://huggingface.co/datasets/JustInEchoes/Shiro-sama-NAI-V4.5-Curated-Tags
 - Dataset de leyendas (captions): https://huggingface.co/datasets/JustInEchoes/Shiro-sama-NAI-V4.5-Curated-Captions

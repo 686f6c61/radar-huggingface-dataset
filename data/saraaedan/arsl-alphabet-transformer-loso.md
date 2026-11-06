@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ArSL alphabet transformer LOSO (v5) es un modelo de reconocimiento del alfabeto de la lengua de signos arabe (ArSL) desarrollado por el usuario saraaedan y publicado en HuggingFace bajo licencia MIT. El modelo clasifica 39 clases correspondientes a letras del alfabeto ArSL a partir de landmarks de manos extraidos con MediaPipe, en lugar de trabajar directamente sobre video o imagenes. Se trata de un transformer encoder de pequeno tamano (3 capas, 4 cabezas, d_model 128) que procesa secuencias de 28 fotogramas a 30 fps y aplica masked mean pooling sobre las representaciones para emitir la prediccion final.
+ArSL alphabet transformer LOSO (v5) es un modelo de reconocimiento del alfabeto de la lengua de signos arabe (ArSL) desarrollado por el usuario saraaedan y publicado en Hugging Face bajo licencia MIT. El modelo clasifica 39 clases correspondientes a letras del alfabeto ArSL a partir de landmarks de manos extraidos con MediaPipe, en lugar de trabajar directamente sobre video o imagenes. Se trata de un transformer encoder de pequeno tamano (3 capas, 4 cabezas, d_model 128) que procesa secuencias de 28 fotogramas a 30 fps y aplica masked mean pooling sobre las representaciones para emitir la prediccion final.
 
 La relevancia del modelo reside en su enfoque de evaluacion: los resultados publicados corresponden a validacion leave-one-signer-out (LOSO), es decir, con signantes no vistos durante el entrenamiento, lo que mide la generalizacion real a nuevos usuarios y no solo el ajuste a los signantes de entrenamiento. El autor reporta una precision del 79,42 ± 6,81 % (3 folds x 5 semillas), un macro-F1 del 77,30 % y un top-5 del 95,34 %. Es, por tanto, un modelo de investigacion orientado a reconocimiento aislado de letras, no a traduccion continua de lengua de signos.
 
-El modelo es deliberadamente pequeno y ligero (repo de 0,0 GB segun HuggingFace, con pesos en pytorch_model.bin), lo que lo hace adecuado para prototipos en tiempo real sobre CPU o GPU de gama baja. Sus limitaciones son explicitas: solo tres signantes en el corpus de entrenamiento y una evaluacion en vivo piloto, lo que restringe su uso en produccion sin validacion adicional.
+El modelo es deliberadamente pequeno y ligero (repo de 0,0 GB segun Hugging Face, con pesos en pytorch_model.bin), lo que lo hace adecuado para prototipos en tiempo real sobre CPU o GPU de gama baja. Sus limitaciones son explicitas: solo tres signantes en el corpus de entrenamiento y una evaluacion en vivo piloto, lo que restringe su uso en produccion sin validacion adicional.
 
 ## Especificaciones tecnicas
 
@@ -77,8 +77,8 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 - No es un modelo de lengua de signos continua ni de traduccion; solo clasifica letras aisladas.
 - No dispone de informacion sobre sesgos demograficos ni sobre diversidad de piel, iluminacion o morfologia de las manos en el conjunto de entrenamiento.
 - Licencia MIT: permite uso comercial y modificacion, pero el autor no ofrece garantias; para produccion se recomienda validar con signantes y condiciones de captura propios.
-- El repositorio figura con tamano de 0,0 GB en HuggingFace, lo que puede indicar que los pesos no estan subidos o que el tamano reportado no refleja el contenido real; conviene verificar antes de integrarlo.
+- El repositorio figura con tamano de 0,0 GB en Hugging Face, lo que puede indicar que los pesos no estan subidos o que el tamano reportado no refleja el contenido real; conviene verificar antes de integrarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saraaedan/arsl-alphabet-transformer-loso
+- Hugging Face: https://huggingface.co/saraaedan/arsl-alphabet-transformer-loso

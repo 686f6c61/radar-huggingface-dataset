@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-Text-oQ3e | 8,95B | No disponible | 3 bits (oQ3e, group size 64) | Solo texto | MIT | HuggingFace, runtime MLX |
-| Hikari07jp/MiMo-V2.6-Distill-Qwen-9B-Ablitrated (base) | 8,95B (aprox.) | No disponible | Sin cuantizar | Texto y vision (segun base MiMo) | No disponible | HuggingFace |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | 9B | No disponible | Sin cuantizar (SFT) | Multimodal segun familia MiMo | No disponible | ModelScope, HuggingFace |
-| Qwen3.5-9B (modelo de partida del destilado) | 9B | No disponible | Multiples | Texto | No disponible | HuggingFace |
+| xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-Text-oQ3e | 8,95B | No disponible | 3 bits (oQ3e, group size 64) | Solo texto | MIT | Hugging Face, runtime MLX |
+| Hikari07jp/MiMo-V2.6-Distill-Qwen-9B-Ablitrated (base) | 8,95B (aprox.) | No disponible | Sin cuantizar | Texto y vision (segun base MiMo) | No disponible | Hugging Face |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | 9B | No disponible | Sin cuantizar (SFT) | Multimodal segun familia MiMo | No disponible | ModelScope, Hugging Face |
+| Qwen3.5-9B (modelo de partida del destilado) | 9B | No disponible | Multiples | Texto | No disponible | Hugging Face |
 
 La comparativa se limita a la relacion de derivacion entre checkpoints, ya que no se han publicado cifras de rendimiento ni especificaciones de contexto que permitan una comparacion cuantitativa fiable con alternativas de la misma categoria.
 
@@ -90,7 +90,7 @@ La comparativa se limita a la relacion de derivacion entre checkpoints, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-Text-oQ3e
+- Modelo en Hugging Face: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-Text-oQ3e
 - Modelo base: https://huggingface.co/Hikari07jp/MiMo-V2.6-Distill-Qwen-9B-Ablitrated
 - MiMo-V2.6-Distill-Qwen-9B en ModelScope (Xiaomi MiMo): https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Pagina oficial de MiMo-V2.6 (Xiaomi): https://mimo.xiaomi.com/mimo-v2-6

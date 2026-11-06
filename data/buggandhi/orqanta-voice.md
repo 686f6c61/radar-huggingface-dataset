@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Orqanta-Voice es un motor de síntesis de voz (text-to-speech) en streaming desarrollado por Gandhi Kalasi (usuario `buggandhi` en HuggingFace) y orientado a 11 lenguas indias principales más inglés. El modelo combina un backbone autorregresivo Qwen3 de 0,6B parámetros con el códec neural de audio Mimi a 24 kHz, un Depth Transformer dedicado de 8 capas y adaptación de hablante zero-shot mediante ECAPA-TDNN. Su propuesta de valor se centra en la latencia: el autor declara un Time-to-First-Audio de aproximadamente 14 ms con batch size 1 sobre una H100, y capacidad para servir 224 streams concurrentes sin cortes de reproducción.
+Orqanta-Voice es un motor de síntesis de voz (text-to-speech) en streaming desarrollado por Gandhi Kalasi (usuario `buggandhi` en Hugging Face) y orientado a 11 lenguas indias principales más inglés. El modelo combina un backbone autorregresivo Qwen3 de 0,6B parámetros con el códec neural de audio Mimi a 24 kHz, un Depth Transformer dedicado de 8 capas y adaptación de hablante zero-shot mediante ECAPA-TDNN. Su propuesta de valor se centra en la latencia: el autor declara un Time-to-First-Audio de aproximadamente 14 ms con batch size 1 sobre una H100, y capacidad para servir 224 streams concurrentes sin cortes de reproducción.
 
 El modelo resuelve un problema concreto: la escasez de motores TTS de calidad para lenguas indias con requisitos de tiempo real para aplicaciones conversacionales (IVR, asistentes de voz, bots telefónicos). Frente a soluciones genéricas multilingües que tratan las lenguas indias como ciudadanos de segunda clase, Orqanta-Voice incluye normalización nativa de números, divisas y fechas, y clonación de voz zero-shot con muestras de 3 a 10 segundos.
 
-La relevancia actual del modelo radica en su licencia Apache 2.0, que permite uso comercial sin restricciones, y en su arquitectura de streaming con CUDA graphs y continuous batching. No obstante, el repositorio de HuggingFace tiene un tamaño declarado de 0,0 GB y 21 descargas, lo que sugiere que los pesos podrían no estar publicados en el hub o que la model card antecede a la subida efectiva de los artefactos.
+La relevancia actual del modelo radica en su licencia Apache 2.0, que permite uso comercial sin restricciones, y en su arquitectura de streaming con CUDA graphs y continuous batching. No obstante, el repositorio de Hugging Face tiene un tamaño declarado de 0,0 GB y 21 descargas, lo que sugiere que los pesos podrían no estar publicados en el hub o que la model card antecede a la subida efectiva de los artefactos.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace declara un tamaño de 0,0 GB, lo que sugiere que los pesos podrían no estar efectivamente publicados; conviene verificar antes de integrar en producción.
+- El repositorio de Hugging Face declara un tamaño de 0,0 GB, lo que sugiere que los pesos podrían no estar efectivamente publicados; conviene verificar antes de integrar en producción.
 - Solo 21 descargas y 0 likes en el momento de la consulta: tracción comunitaria muy baja, sin validación independiente conocida.
 - No se han publicado benchmarks objetivos (MOS, SIM, WER) que respalden las afirmaciones de calidad y latencia del autor.
 - Riesgo de alucinación en la pronunciación: la normalización de texto puede fallar en casos ambiguos (abreviaturas, números con formato irregular, nombres propios).
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/buggandhi/Orqanta-Voice
+- Modelo en Hugging Face: https://huggingface.co/buggandhi/Orqanta-Voice
 - Repositorio GitHub: https://github.com/GANDHIKALASI/Orqanta-Voice
 - Licencia: https://github.com/GANDHIKALASI/Orqanta-Voice/blob/main/LICENSE
 - Notebook de Colab: https://colab.research.google.com/github/GANDHIKALASI/Orqanta-Voice/blob/main/Orqanta_Voice_Colab.ipynb

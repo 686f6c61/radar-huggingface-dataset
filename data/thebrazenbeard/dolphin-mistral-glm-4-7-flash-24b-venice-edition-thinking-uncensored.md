@@ -86,7 +86,7 @@ Los datos de la comparativa proceden de la informacion disponible; para las vari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thebrazenbeard/Dolphin-Mistral-GLM-4.7-Flash-24B-Venice-Edition-Thinking-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/thebrazenbeard/Dolphin-Mistral-GLM-4.7-Flash-24B-Venice-Edition-Thinking-Uncensored
 - Modelo base: https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition
 - Dataset de destilacion: https://huggingface.co/datasets/TeichAI/glm-4.7-2000x
 - Variante de terceros (DavidAU): https://huggingface.co/DavidAU/Dolphin-Mistral-GLM-4.7-Flash-24B-Venice-Edition-Thinking-Uncensored

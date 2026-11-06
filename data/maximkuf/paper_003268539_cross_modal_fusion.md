@@ -65,7 +65,7 @@ No disponible. No existe una categoría de modelos comparable, ya que se trata d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MaximKuf/paper_003268539_cross_modal_fusion
+- Repositorio en Hugging Face: https://huggingface.co/MaximKuf/paper_003268539_cross_modal_fusion
 - Artículos relacionados (de la búsqueda web, no asociados directamente al repositorio):
   - TACFN: Transformer-based Adaptive Cross-modal Fusion Network: https://arxiv.org/abs/2505.06536
   - Cross-modal feature alignment and fusion: https://www.sciencedirect.com/science/article/pii/S0950705125010652

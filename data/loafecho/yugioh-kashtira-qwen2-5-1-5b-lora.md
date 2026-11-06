@@ -73,7 +73,7 @@ Datos de entrenamiento y diagnostico: precision en movimientos de validacion 0,9
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yugioh-kashtira-qwen2.5-1.5b-lora | 1.5B + LoRA r16 | no disponible | 0,936 vs WindBot Cyber Dragon (500 partidas) | Apache 2.0 | HuggingFace |
+| yugioh-kashtira-qwen2.5-1.5b-lora | 1.5B + LoRA r16 | no disponible | 0,936 vs WindBot Cyber Dragon (500 partidas) | Apache 2.0 | Hugging Face |
 | Agente previo del mismo autor (0.5B, Kashtira) | 0.5B + LoRA | no disponible | 0,918 vs WindBot Cyber Dragon; 0,940 frente al de 1.5B en 300 partidas | no disponible | no disponible |
 | WindBot (bot scriptado de referencia) | no aplica (script) | no aplica | 0,77 con Kashtira; 0,10 con Cyber Dragon | no disponible | integrado en el motor |
 
@@ -93,6 +93,6 @@ No se dispone de datos publicados de otros adaptadores de Yu-Gi-Oh! comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loafecho/yugioh-kashtira-qwen2.5-1.5b-lora
+- Modelo en Hugging Face: https://huggingface.co/loafecho/yugioh-kashtira-qwen2.5-1.5b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Runner y harness de entrenamiento: https://github.com/loafecho/ygo-duel-agent

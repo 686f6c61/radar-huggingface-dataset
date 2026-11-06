@@ -78,7 +78,7 @@ La comparativa se basa en las especificaciones públicas de cada modelo. Este es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rajeevkr23/secure-notes-ai-gemma3-1b
+- Repositorio Hugging Face: https://huggingface.co/rajeevkr23/secure-notes-ai-gemma3-1b
 - Fuente original (LiteRT): https://huggingface.co/litert-community/Gemma3-1B-IT
 - Modelo base (Google): https://huggingface.co/google/Gemma-3-1B-IT
 - Página oficial de Gemma 3: https://deepmind.google/models/gemma/gemma-3/

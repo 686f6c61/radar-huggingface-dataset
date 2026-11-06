@@ -81,7 +81,7 @@ La comparativa se limita a otras versiones abliterated de la misma familia, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzhang/Qwen3.5-4B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/wangzhang/Qwen3.5-4B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Framework Abliterix: https://github.com/wuwangzhang1216/abliterix
 - Paquete PyPI de Abliterix: https://pypi.org/project/abliterix-llm/

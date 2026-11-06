@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gaoj0017/functiongemma-270m-it-simple-tool-calling` es un ajuste fino (fine-tune) del modelo `google/functiongemma-270m-it`, un transformer denso de la familia Gemma 3 orientado a llamada de funciones. El autor, el usuario de HuggingFace `gaoj0017`, lo ha entrenado con aprendizaje supervisado (SFT) mediante la libreria TRL sobre un dataset no documentado en la model card. El modelo tiene 268.098.176 parametros (~268 M) y el repositorio ocupa 0,6 GB, lo que sugiere pesos en bfloat16/float16.
+`gaoj0017/functiongemma-270m-it-simple-tool-calling` es un ajuste fino (fine-tune) del modelo `google/functiongemma-270m-it`, un transformer denso de la familia Gemma 3 orientado a llamada de funciones. El autor, el usuario de Hugging Face `gaoj0017`, lo ha entrenado con aprendizaje supervisado (SFT) mediante la libreria TRL sobre un dataset no documentado en la model card. El modelo tiene 268.098.176 parametros (~268 M) y el repositorio ocupa 0,6 GB, lo que sugiere pesos en bfloat16/float16.
 
 Su relevancia practica esta en el segmento de modelos sub-500M: permite ejecutar function calling en entornos sin GPU dedicada (CPU, movil, Raspberry Pi, navegador) con un coste de memoria minimo. Es un modelo pensado para seleccionar herramientas, extraer argumentos estructurados y encadenar llamadas en agentes ligeros, no para generacion abierta de alta calidad. El tag `gemma3_text` confirma que hereda la arquitectura de texto de Gemma 3, aunque la model card no especifica la longitud de contexto final.
 
@@ -21,7 +21,7 @@ El modelo es muy reciente y no validado: 0 descargas y 0 likes en el momento de 
 | Licencia | no disponible (la model card incluye `licence: license` como marcador de posicion sin valor real) |
 | Formato de pesos | safetensors (0,6 GB de repositorio, compatible con `transformers`) |
 
-Otros metadatos: pipeline `text-generation`, tags `sft`, `trl`, `conversational`, `generated_from_trainer`, `text-generation-inference`, `endpoints_compatible`, region `us`. Creado el 16 de septiembre de 2026 y actualizado el mismo dia segun los metadatos de HuggingFace.
+Otros metadatos: pipeline `text-generation`, tags `sft`, `trl`, `conversational`, `generated_from_trainer`, `text-generation-inference`, `endpoints_compatible`, region `us`. Creado el 16 de septiembre de 2026 y actualizado el mismo dia segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -70,10 +70,10 @@ Los datos de los modelos de terceros proceden de su documentacion publica y no s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gaoj0017/functiongemma-270m-it-simple-tool-calling | 268 M | no disponible | no disponible | HuggingFace; 0 descargas |
-| google/functiongemma-270m-it (modelo base) | 268 M | no disponible | no disponible en esta ficha (familia Gemma) | HuggingFace |
-| Qwen/Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens | Apache-2.0 | HuggingFace |
-| HuggingFaceTB/SmolLM2-360M-Instruct | ~362 M | 8.192 tokens | Apache-2.0 | HuggingFace |
+| gaoj0017/functiongemma-270m-it-simple-tool-calling | 268 M | no disponible | no disponible | Hugging Face; 0 descargas |
+| google/functiongemma-270m-it (modelo base) | 268 M | no disponible | no disponible en esta ficha (familia Gemma) | Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens | Apache-2.0 | Hugging Face |
+| HuggingFaceTB/SmolLM2-360M-Instruct | ~362 M | 8.192 tokens | Apache-2.0 | Hugging Face |
 
 Frente al modelo base, este fine-tune no anade parametros: la diferencia esta exclusivamente en los pesos ajustados y en la ausencia de documentacion sobre el dataset empleado. Frente a Qwen2.5-0.5B-Instruct y SmolLM2-360M-Instruct, la ventaja es un menor consumo de memoria y la especializacion en tool calling; la desventaja es la falta de benchmarks, la licencia indefinida y un soporte de idiomas no declarado.
 
@@ -90,7 +90,7 @@ Frente al modelo base, este fine-tune no anade parametros: la diferencia esta ex
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/gaoj0017/functiongemma-270m-it-simple-tool-calling
+- Pagina del modelo en Hugging Face: https://huggingface.co/gaoj0017/functiongemma-270m-it-simple-tool-calling
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - La busqueda web realizada no devolvio resultados relevantes para este modelo: los unicos enlaces recuperados correspondian a paginas de WhatsApp y no guardan relacion con la ficha. No se han localizado papers, blogs ni demos adicionales.

@@ -111,6 +111,6 @@ Latencia en CPU (Apple Silicon, onnxruntime 1.31, CPUExecutionProvider):
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aaatmy/Qwen3-Embedding-0.6B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/aaatmy/Qwen3-Embedding-0.6B-ONNX
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Paper de referencia (arXiv:2506.05176): https://arxiv.org/abs/2506.05176

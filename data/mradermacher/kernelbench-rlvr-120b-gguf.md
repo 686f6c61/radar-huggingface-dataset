@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El d
 - El archivo GGUF Q4_K_S tiene un tamaño de 81 GB, lo que requiere al menos 81 GB de VRAM para cargar el modelo completo en GPU.
 - Para inferencia con cuantización Q4_K_S, se necesitan GPUs con gran memoria, como NVIDIA A100 (80 GB), H100 (80 GB) o múltiples GPUs RTX 4090 (24 GB cada una) en configuración multi-GPU.
 - No es viable en GPUs de consumo estándar (8-16 GB) sin técnicas de offloading a CPU, que degradarían significativamente el rendimiento.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (si soporta GGUF), o el backend de HuggingFace con transformers. Para uso en producción, se recomienda vLLM o TGI con pesos en safetensors (no disponibles en este repo).
+- Opciones de despliegue: llama.cpp, Ollama, vLLM (si soporta GGUF), o el backend de Hugging Face con transformers. Para uso en producción, se recomienda vLLM o TGI con pesos en safetensors (no disponibles en este repo).
 - No se dispone de datos de latencia o throughput estimados.
 
 ## Comparativa con modelos similares

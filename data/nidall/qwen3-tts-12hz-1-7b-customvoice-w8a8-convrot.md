@@ -31,7 +31,7 @@ La innovacion tecnica concreta de este checkpoint es la cuantizacion: los pesos 
 
 ## Capacidades
 
-- Sintesis de voz (text-to-speech) a partir de texto, con el pipeline declarado `text-to-speech` en HuggingFace.
+- Sintesis de voz (text-to-speech) a partir de texto, con el pipeline declarado `text-to-speech` en Hugging Face.
 - Voces personalizadas: el modelo base se denomina "CustomVoice", lo que apunta a soporte de voces definidas por el usuario, si bien la informacion disponible no detalla el mecanismo ni los requisitos de audio de referencia.
 - Integracion con ComfyUI mediante el runtime ComfyUI-Qwen3-TTS-Quant, que es el entorno previsto por el autor.
 - Inferencia con pesos de 8 bits mantenidos en ese formato, con el decodificador de voz en FP16.
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-TTS-12Hz-1.7B-CustomVoice-W8A8-ConvRot (este) | 1,92 B | No disponible | W8A8 ConvRot, decoder FP16 | Apache-2.0 | HuggingFace, 0 descargas, runtime ComfyUI-Qwen3-TTS-Quant |
-| Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice (modelo base) | 1,92 B (mismo modelo de origen) | No disponible | FP16 (sin cuantizar) | Apache-2.0 | HuggingFace, repositorio oficial de Qwen |
+| Qwen3-TTS-12Hz-1.7B-CustomVoice-W8A8-ConvRot (este) | 1,92 B | No disponible | W8A8 ConvRot, decoder FP16 | Apache-2.0 | Hugging Face, 0 descargas, runtime ComfyUI-Qwen3-TTS-Quant |
+| Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice (modelo base) | 1,92 B (mismo modelo de origen) | No disponible | FP16 (sin cuantizar) | Apache-2.0 | Hugging Face, repositorio oficial de Qwen |
 | Otras alternativas TTS (por ejemplo XTTS-v2, Kokoro, F5-TTS, CosyVoice) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La unica comparacion sustentada por la informacion disponible es contra el modelo base: mismo numero de parametros y misma licencia, con la diferencia de la cuantizacion W8A8 ConvRot y el menor tamano en disco (3,0 GB para este repositorio). No se aportan datos de rendimiento comparativo entre ambos. Para el resto de alternativas del segmento TTS no se dispone de informacion verificable en esta ficha.
@@ -86,7 +86,7 @@ La unica comparacion sustentada por la informacion disponible es contra el model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NidAll/Qwen3-TTS-12Hz-1.7B-CustomVoice-W8A8-ConvRot
+- Modelo en Hugging Face: https://huggingface.co/NidAll/Qwen3-TTS-12Hz-1.7B-CustomVoice-W8A8-ConvRot
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Runtime previsto por el autor: https://github.com/NidAll/ComfyUI-Qwen3-TTS-Quant
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

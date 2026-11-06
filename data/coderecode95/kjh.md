@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KJH es un modelo de generacion de texto publicado en HuggingFace por el usuario coderecode95 bajo el identificador coderecode95/KJH. Se trata de un modelo pequeno (172.518.400 parametros segun los pesos en safetensors, aproximadamente 172,5 millones) etiquetado como small-language-model, scratch-pretrained, conversational y orientado a RAG, con el coreano (ko) como unico idioma declarado y arquitectura de tipo Llama. El repositorio ocupa 0,3 GB y esta bajo licencia Apache 2.0, aunque el acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+KJH es un modelo de generacion de texto publicado en Hugging Face por el usuario coderecode95 bajo el identificador coderecode95/KJH. Se trata de un modelo pequeno (172.518.400 parametros segun los pesos en safetensors, aproximadamente 172,5 millones) etiquetado como small-language-model, scratch-pretrained, conversational y orientado a RAG, con el coreano (ko) como unico idioma declarado y arquitectura de tipo Llama. El repositorio ocupa 0,3 GB y esta bajo licencia Apache 2.0, aunque el acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 Su relevancia radica en el nicho de los SLM (small language models) especializados en un idioma concreto: un modelo de ~172 M de parametros es lo bastante reducido para ejecutarse en CPU, GPUs integradas o dispositivos con pocos recursos, lo que lo hace candidato para inferencia local, prototipado rapido y experimentacion con tecnicas de recuperacion aumentada (RAG) en coreano. La etiqueta scratch-pretrained sugiere que fue entrenado desde cero y no como destilacion o fine-tuning de un modelo mayor, algo poco habitual en este rango de tamano.
 
@@ -86,7 +86,7 @@ En terminos de categoria, KJH compite con SLM de rango 100-500 M de parametros, 
 - Riesgo de alucinacion elevado: al ser un modelo de ~172 M de parametros y sin evaluacion publicada, es previsible que genere informacion incorrecta con fluidez, especialmente en tareas de conocimiento factual.
 - Modelo mono-idioma: solo coreano. No hay soporte declarado de castellano ni de otros idiomas, por lo que su uso fuera del coreano no esta respaldado.
 - Sesgos desconocidos: no se documenta la composicion del corpus ni si se aplicaron filtros de toxicidad o tecnicas de alineacion, por lo que no se puede evaluar el sesgo de genero, politico o social.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que anade friccion al despliegue y puede limitar la reproducibilidad.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que anade friccion al despliegue y puede limitar la reproducibilidad.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero no exime de responsabilidad sobre el contenido generado ni sobre posibles incumplimientos derivados de los datos de entrenamiento, que se desconocen.
 - Falta de validacion externa: 0 descargas y 0 me gusta en el momento de la consulta indican que el modelo no ha sido probado por terceros; no hay informes de fallos conocidos ni de rendimiento en produccion.
 - Compatibilidad limitada de formatos: solo safetensors, sin GGUF ni cuantizaciones listas para usar, lo que obliga a realizar la conversion y cuantizacion de forma manual para entornos de CPU o edge.
@@ -94,6 +94,6 @@ En terminos de categoria, KJH compite con SLM de rango 100-500 M de parametros, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coderecode95/KJH
+- Hugging Face: https://huggingface.co/coderecode95/KJH
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio ningun enlace relacionado con el modelo; los resultados obtenidos fueron paginas corporativas de Microsoft sin vinculacion con coderecode95/KJH.

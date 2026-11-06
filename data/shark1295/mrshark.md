@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mrshark es un repositorio de modelo publicado en HuggingFace bajo el identificador Shark1295/Mrshark por el usuario Shark1295. En el momento de redactar esta ficha, la informacion publica asociada al repositorio se reduce al identificador, el autor, la etiqueta generica `region:us`, un contador de 0 descargas y 1 like. No se ha publicado pipeline, licencia, idiomas soportados ni ningun otro metadato tecnico.
+Mrshark es un repositorio de modelo publicado en Hugging Face bajo el identificador Shark1295/Mrshark por el usuario Shark1295. En el momento de redactar esta ficha, la informacion publica asociada al repositorio se reduce al identificador, el autor, la etiqueta generica `region:us`, un contador de 0 descargas y 1 like. No se ha publicado pipeline, licencia, idiomas soportados ni ningun otro metadato tecnico.
 
 El repositorio fue creado el 28 de septiembre de 2026 y actualizado apenas tres minutos despues (20:35:38 a 20:38:49), lo que sugiere una subida inicial sin desarrollo posterior documentado. La ausencia total de model card, de pesos descritos y de cualquier especificacion impide determinar la arquitectura, el tamano, la longitud de contexto o las capacidades reales del modelo.
 
@@ -96,6 +96,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shark1295/Mrshark
+- Hugging Face: https://huggingface.co/Shark1295/Mrshark
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

@@ -96,9 +96,9 @@ La evaluación principal de la model card (CruxEval 80,8 / 77,9, GSM8K 93,5, MAT
 
 | Modelo | Parámetros | Activos | Contexto | CruxEval | GSM8K | MATH500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| Snowball-67B-A2B-CruxEval-RS-SFT-Step282 | 67B | ~2B | 32.768 (eval) | 79,6 | 91,7 | 92,6 | Apache 2.0 | HuggingFace |
-| Snowball-67B-A2B-CruxEval-OPD-Step75 | 67B | ~2B | 32.768 (eval) | 75,4 | 88,6 | 91,2 | Apache 2.0 | HuggingFace |
-| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (B) | 67B | ~2B | 32.768 (eval) | 57,6 | 89,3 | 89,6 | Apache 2.0 | HuggingFace |
+| Snowball-67B-A2B-CruxEval-RS-SFT-Step282 | 67B | ~2B | 32.768 (eval) | 79,6 | 91,7 | 92,6 | Apache 2.0 | Hugging Face |
+| Snowball-67B-A2B-CruxEval-OPD-Step75 | 67B | ~2B | 32.768 (eval) | 75,4 | 88,6 | 91,2 | Apache 2.0 | Hugging Face |
+| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (B) | 67B | ~2B | 32.768 (eval) | 57,6 | 89,3 | 89,6 | Apache 2.0 | Hugging Face |
 | v0 (snapshot de contexto 10-15) | no disponible | no disponible | no disponible | 65,1 | 84,2 | 93,2 | no disponible | no disponible |
 
 La comparación se limita a los modelos de la misma campaña experimental, ya que no se dispone de datos de benchmarks de modelos externos en la información proporcionada. Destaca que v0 supera a RS282 en AIME24 (74,0 frente a 60,3), MMLU-Pro (70,7 frente a 61,4) y GPQA-Diamond (64,8 frente a 52,0), mientras que RS282 lidera en CruxEval, GSM8K, MATH500 y HumanEval+.
@@ -117,7 +117,7 @@ La comparación se limita a los modelos de la misma campaña experimental, ya qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-CruxEval-RS-SFT-Step282
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-CruxEval-RS-SFT-Step282
 - Modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92/tree/fdc3c3c5fff489d3fb04dcbc2387c179b1bf3fab
 - Informe del experimento (issue Marin #9920): https://github.com/marin-community/marin/issues/9920
 - Comentario con resultados y contabilidad de GPU-horas: https://github.com/marin-community/marin/issues/9920#issuecomment-6076348127

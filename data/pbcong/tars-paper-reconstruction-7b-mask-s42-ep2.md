@@ -5,7 +5,7 @@ TARS paper 7b es un checkpoint de ajuste fino completo de 7.062.902.784 parámet
 
 El modelo aborda, en principio, la generación de contenido científico a partir de figuras, tablas y contexto textual, un problema relevante para la evaluación de agentes de escritura científica y para la reproducción de experimentos tipo Paper Reconstruction Evaluation. No obstante, el autor advierte de que los perfiles de paper son reconstrucciones con supuestos documentados, no checkpoints de autor, y que los benchmarks medidos están pendientes.
 
-El repositorio ocupa 14,1 GB y no incluye información sobre licencia, idiomas, contexto o cuantizaciones. La carga debe realizarse con el loader TARS/LLaVA fijado, no con un loader LoRA de HuggingFace.
+El repositorio ocupa 14,1 GB y no incluye información sobre licencia, idiomas, contexto o cuantizaciones. La carga debe realizarse con el loader TARS/LLaVA fijado, no con un loader LoRA de Hugging Face.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -37,7 +37,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Soporte de agentes y razonamiento multi-step: no documentado.
 - Capacidades multilingües: no disponible.
 - Capacidades especiales: visión probable por la base LLaVA; modo thinking, audio u otras no documentadas.
-- Carga específica: requiere loader TARS/LLaVA fijado; no usar loader LoRA de HuggingFace.
+- Carga específica: requiere loader TARS/LLaVA fijado; no usar loader LoRA de Hugging Face.
 
 ## Casos de uso
 - Reconstrucción de artículos científicos: dado un conjunto de figuras, tablas y resultados, usar el modelo para generar un borrador de secciones como introducción, método o resultados. Es el caso de uso declarado por el nombre y la model card.
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: pesos en fp16/bf16 ~14,1 GB (coincide con el tamaño del repositorio). Con overhead de activaciones, KV cache y codificador visual, se recomienda 24 GB para inferencia cómoda. En 8-bit ~7-8 GB; en 4-bit ~4-5 GB, siempre como estimación orientativa.
 - GPU recomendadas: A100 40 GB, H100 80 GB, RTX 4090 24 GB, RTX 3090 24 GB. Para cuantización 4-bit/8-bit, GPUs consumer de 12-16 GB como RTX 4080 o RTX 4070 Ti pueden ser suficientes, sujeto a conversión.
 - ¿Cabe en consumer GPU? Sí, con cuantización. El repositorio no incluye GGUF ni otros formatos cuantizados, por lo que requiere convertir los pesos.
-- Despliegue: el autor indica cargar con el loader TARS/LLaVA fijado, no con un loader LoRA de HuggingFace. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Despliegue: el autor indica cargar con el loader TARS/LLaVA fijado, no con un loader LoRA de Hugging Face. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI en la información disponible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -64,8 +64,8 @@ En la información proporcionada no hay datos de rendimiento de alternativas. La
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| TARS paper 7b | 7,06B | no disponible | no disponible | safetensors | HuggingFace |
-| LLaVA v1.5 7B | 7B | no disponible | no disponible | safetensors | HuggingFace |
+| TARS paper 7b | 7,06B | no disponible | no disponible | safetensors | Hugging Face |
+| LLaVA v1.5 7B | 7B | no disponible | no disponible | safetensors | Hugging Face |
 | Otras alternativas multimodales de 7B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -73,7 +73,7 @@ En la información proporcionada no hay datos de rendimiento de alternativas. La
 - Sin benchmarks: rendimiento no validado; "Measured benchmarks: pending".
 - Idiomas no disponibles: no se puede garantizar soporte multilingüe.
 - Checkpoint de reconstrucción: no es un checkpoint de autor; puede no reproducir exactamente los resultados del paper.
-- Carga no estándar: requiere loader TARS/LLaVA; intentar cargarlo como LoRA de HuggingFace puede fallar.
+- Carga no estándar: requiere loader TARS/LLaVA; intentar cargarlo como LoRA de Hugging Face puede fallar.
 - Riesgo de alucinación: relevante en generación de contenido científico, especialmente al reconstruir papers.
 - Sesgos: heredados del modelo base LLaVA/Vicuna, no documentados en esta ficha.
 - Poca validación comunitaria: 0 descargas y 0 likes.
@@ -83,10 +83,10 @@ En la información proporcionada no hay datos de rendimiento de alternativas. La
 - Repositorio de 14,1 GB: requiere espacio y ancho de banda.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/pbcong/tars-paper-reconstruction-7b-mask-s42-ep2
+- Hugging Face: https://huggingface.co/pbcong/tars-paper-reconstruction-7b-mask-s42-ep2
 - Modelo base: https://huggingface.co/liuhaotian/llava-v1.5-7b
 - Paper Reconstruction Evaluation (arXiv): https://arxiv.org/abs/2604.01128
 - Paper Reconstruction Evaluation (PDF): https://arxiv.org/pdf/2604.01128
 - Paper Reconstruction Evaluation (HTML en ar5iv): https://ar5iv.labs.arxiv.org/html/2604.01128
 - PaperRecon (página del proyecto): https://agent4science-utokyo.github.io/PaperRecon_HP/
-- reproduction.json: disponible en el repositorio de HuggingFace del modelo (ruta no especificada en la información proporcionada)
+- reproduction.json: disponible en el repositorio de Hugging Face del modelo (ruta no especificada en la información proporcionada)

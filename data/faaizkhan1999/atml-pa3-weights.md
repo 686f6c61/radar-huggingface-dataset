@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FaaizKhan1999/atml-pa3-weights` es un repositorio de pesos publicado en HuggingFace por el usuario FaaizKhan1999 bajo licencia MIT. Por el identificador (`atml-pa3-weights`) y el contexto de publicacion, todo apunta a que se trata de los pesos resultantes de una practica o asignacion academica de un curso de *Applied Machine Learning* (ATML), probablemente la tercera practica (PA3). No es, por tanto, un modelo de proposito general publicado por un laboratorio, sino un artefacto de entrenamiento subido a la plataforma para su entrega o evaluacion.
+`FaaizKhan1999/atml-pa3-weights` es un repositorio de pesos publicado en Hugging Face por el usuario FaaizKhan1999 bajo licencia MIT. Por el identificador (`atml-pa3-weights`) y el contexto de publicacion, todo apunta a que se trata de los pesos resultantes de una practica o asignacion academica de un curso de *Applied Machine Learning* (ATML), probablemente la tercera practica (PA3). No es, por tanto, un modelo de proposito general publicado por un laboratorio, sino un artefacto de entrenamiento subido a la plataforma para su entrega o evaluacion.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion de arquitectura, datos de entrenamiento, tokenizador, hiperparametros ni instrucciones de uso. El repositorio no declara pipeline, no especifica idiomas soportados y no cuenta con descargas ni interacciones en el momento de la consulta. Tampoco se ha publicado ningun resultado de benchmarks ni documentacion tecnica adicional.
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 
 - Evaluacion academica: el modelo puede utilizarse como referencia en el contexto de la asignacion para la que fue entrenado, comparando los pesos entregados con los de otros estudiantes o con una linea base definida por el profesorado.
 - Reproducibilidad de practicas docentes: sirve para que el autor o el evaluador reproduzcan los resultados obtenidos durante el desarrollo de la practica, siempre que se disponga del codigo y los datos originales.
-- Estudio de artefactos de aprendizaje: util para analizar como se publican pesos en HuggingFace en contextos docentes y que metadatos minimos suelen faltar en ese tipo de repositorios.
+- Estudio de artefactos de aprendizaje: util para analizar como se publican pesos en Hugging Face en contextos docentes y que metadatos minimos suelen faltar en ese tipo de repositorios.
 - Pruebas de carga de pesos: si se conoce el framework original (PyTorch, TensorFlow, etc.), puede emplearse para validar pipelines de carga de checkpoints en entornos de laboratorio.
 - Docencia sobre buenas practicas de publicacion: el repositorio puede usarse como ejemplo negativo de model card incompleta en talleres sobre documentacion de modelos.
 - No se recomienda su uso en produccion, atencion al cliente, generacion de codigo, analisis de datos ni ninguna aplicacion real, dada la ausencia total de documentacion y garantias tecnicas.
@@ -74,5 +74,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea para la qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FaaizKhan1999/atml-pa3-weights
+- Repositorio en Hugging Face: https://huggingface.co/FaaizKhan1999/atml-pa3-weights
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/jpn_jpan_10mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de tipo decoder-only, etiquetado como `gpt2` en el repositorio, con 39.087.104 parametros totales (unos 39 millones) y un peso en disco de aproximadamente 0,1 GB. El identificador del modelo y el del modelo base sugieren que esta orientado al japones escrito en script Jpan y que el corpus de entrenamiento manejado es de aproximadamente 10 MB, aunque la model card no confirma explicitamente ninguno de estos extremos.
+El modelo `francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/jpn_jpan_10mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de tipo decoder-only, etiquetado como `gpt2` en el repositorio, con 39.087.104 parametros totales (unos 39 millones) y un peso en disco de aproximadamente 0,1 GB. El identificador del modelo y el del modelo base sugieren que esta orientado al japones escrito en script Jpan y que el corpus de entrenamiento manejado es de aproximadamente 10 MB, aunque la model card no confirma explicitamente ninguno de estos extremos.
 
 El modelo se ha entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2, PyTorch 2.5.1+cu121, Datasets 4.8.4 y Tokenizers 0.22.1, y la propia model card lo etiqueta con `generated_from_trainer`, `trl` y `sft`. No se han publicado datos sobre volumen de tokens de entrenamiento, composicion del dataset, idiomas soportados de forma oficial ni licencia de uso.
 
@@ -40,7 +40,7 @@ El ajuste fino se ha realizado mediante SFT (supervised fine-tuning) con TRL 0.2
 - Soporte de tool calling o function calling: no documentado y poco probable dado el tamano y el tipo de entrenamiento.
 - Soporte de agentes o razonamiento multi-paso: no documentado.
 - Modo de razonamiento explicito (thinking), vision, audio u otras modalidades: no disponibles.
-- Integracion directa con el ecosistema HuggingFace: `pipeline("text-generation")`, safetensors, `text-generation-inference` y `endpoints_compatible` segun las etiquetas del repositorio.
+- Integracion directa con el ecosistema Hugging Face: `pipeline("text-generation")`, safetensors, `text-generation-inference` y `endpoints_compatible` segun las etiquetas del repositorio.
 
 ## Casos de uso
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39,09 M | No disponible | No disponible | HuggingFace, safetensors, 0 descargas | Ajuste fino SFT del modelo Goldfish japones de 10 MB |
-| goldfish-models/jpn_jpan_10mb | No disponible (el ajuste fino sugiere un orden de magnitud similar) | No disponible | No disponible | HuggingFace | Modelo base monolingue de la familia Goldfish para japones (script Jpan) con corpus de 10 MB, segun su identificador |
-| openai-community/gpt2 (referencia arquitectonica) | 124 M | 1024 tokens | Licencia MIT modificada de OpenAI | HuggingFace, muy extendido | Referencia de la misma familia arquitectonica (GPT-2), aproximadamente tres veces mayor y entrenado sobre un corpus mucho mas amplio y en ingles |
+| francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39,09 M | No disponible | No disponible | Hugging Face, safetensors, 0 descargas | Ajuste fino SFT del modelo Goldfish japones de 10 MB |
+| goldfish-models/jpn_jpan_10mb | No disponible (el ajuste fino sugiere un orden de magnitud similar) | No disponible | No disponible | Hugging Face | Modelo base monolingue de la familia Goldfish para japones (script Jpan) con corpus de 10 MB, segun su identificador |
+| openai-community/gpt2 (referencia arquitectonica) | 124 M | 1024 tokens | Licencia MIT modificada de OpenAI | Hugging Face, muy extendido | Referencia de la misma familia arquitectonica (GPT-2), aproximadamente tres veces mayor y entrenado sobre un corpus mucho mas amplio y en ingles |
 
 La comparacion con estos dos modelos se ofrece a titulo orientativo: no se dispone de resultados de benchmarks comparables ni de datos de contexto o licencia del modelo base mas alla de lo indicado en su identificador.
 
@@ -88,7 +88,7 @@ La comparacion con estos dos modelos se ofrece a titulo orientativo: no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/jpn_jpan_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/1c8e682o

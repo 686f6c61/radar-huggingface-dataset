@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario SAD1DXZDCQ en HuggingFace, etiquetado como transformers, pytorch y bert, con licencia MIT. Según su model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras significativas en razonamiento profundo, inferencia lógica y reducción de alucinaciones, además de un mejor soporte para function calling. El autor afirma que su rendimiento se acerca al de otros modelos líderes, con una mejora notable en el test AIME 2025, pasando de un 70 % a un 87,5 % de precisión, y un aumento en el número medio de tokens de razonamiento por pregunta (de 12K a 23K).
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario SAD1DXZDCQ en Hugging Face, etiquetado como transformers, pytorch y bert, con licencia MIT. Según su model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras significativas en razonamiento profundo, inferencia lógica y reducción de alucinaciones, además de un mejor soporte para function calling. El autor afirma que su rendimiento se acerca al de otros modelos líderes, con una mejora notable en el test AIME 2025, pasando de un 70 % a un 87,5 % de precisión, y un aumento en el número medio de tokens de razonamiento por pregunta (de 12K a 23K).
 
-Sin embargo, la información pública es muy limitada: no se especifican la arquitectura concreta, el número de parámetros, la longitud de contexto, los idiomas soportados ni el formato de los pesos. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo, solo la documentación. Por tanto, esta ficha se basa exclusivamente en la model card y en los metadatos de HuggingFace, marcando como "no disponible" cualquier dato que no se haya proporcionado.
+Sin embargo, la información pública es muy limitada: no se especifican la arquitectura concreta, el número de parámetros, la longitud de contexto, los idiomas soportados ni el formato de los pesos. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo, solo la documentación. Por tanto, esta ficha se basa exclusivamente en la model card y en los metadatos de Hugging Face, marcando como "no disponible" cualquier dato que no se haya proporcionado.
 
 ## Especificaciones tecnicas
 
@@ -90,5 +90,5 @@ La model card compara MyAwesomeModel con tres modelos anónimos (Model1, Model2,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SAD1DXZDCQ/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SAD1DXZDCQ/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

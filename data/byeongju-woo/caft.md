@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAFT (Cross-domain Alignment of Forests and Trees) es un conjunto de checkpoints preentrenados para recuperación de imagen-texto, con especial foco en la recuperación con leyendas largas (long-caption retrieval). Lo firma Byeongju Woo junto con Zilin Wang, Byeonghyun Pak, Sangwoo Mo y Stella X. Yu, y acompaña al artículo "Aligning Forest and Trees in Images & Long Captions for Visually Grounded Understanding" (arXiv:2602.02977). El repositorio de HuggingFace aloja cuatro pesos (`CAFT-3M`, `CAFT-12M`, `CAFT-15M` y `CAFT-30M`), con un tamaño total de 8,2 GB.
+CAFT (Cross-domain Alignment of Forests and Trees) es un conjunto de checkpoints preentrenados para recuperación de imagen-texto, con especial foco en la recuperación con leyendas largas (long-caption retrieval). Lo firma Byeongju Woo junto con Zilin Wang, Byeonghyun Pak, Sangwoo Mo y Stella X. Yu, y acompaña al artículo "Aligning Forest and Trees in Images & Long Captions for Visually Grounded Understanding" (arXiv:2602.02977). El repositorio de Hugging Face aloja cuatro pesos (`CAFT-3M`, `CAFT-12M`, `CAFT-15M` y `CAFT-30M`), con un tamaño total de 8,2 GB.
 
 El modelo se distribuye como pesos PyTorch (`.pt`) que se cargan mediante el codebase propio del proyecto, usando la configuración `CAFT-B` y el modo de inferencia `caft` con un hiperparámetro `alpha` (0,3 en el ejemplo de la model card). Por las etiquetas del repositorio (`clip`) y la nomenclatura de la configuración, se trata de un codificador dual de estilo CLIP orientado a alinear representaciones de imagen y texto, aunque el número exacto de parámetros, la longitud de contexto y los idiomas soportados no se detallan en la información disponible.
 
@@ -68,7 +68,7 @@ No se dispone de datos numericos en la informacion proporcionada para comparar p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CAFT | no disponible | no disponible | no disponible | MIT | pesos `.pt` en HuggingFace |
+| CAFT | no disponible | no disponible | no disponible | MIT | pesos `.pt` en Hugging Face |
 | CLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SigLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
 | DreamLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -79,14 +79,14 @@ No se dispone de datos numericos en la informacion proporcionada para comparar p
 - Riesgo de alucinacion: no aplica de forma directa por tratarse de un modelo de recuperacion y no de generacion, aunque las puntuaciones de similitud pueden favorecer emparejamientos incorrectos si el corpus es ruidoso.
 - Limitaciones de contexto o idioma: la longitud de contexto y los idiomas soportados no se declaran. Aunque la tarea objetivo son las leyendas largas, no se especifica el limite exacto de tokens.
 - Restricciones de licencia: licencia MIT, permisiva para uso comercial, pero conviene revisar las condiciones de los corpus de preentrenamiento subyacentes (CC3M, CC12M, YFCC15M), que tienen sus propias restricciones.
-- Dependencia del codebase propio: no hay pipeline de HuggingFace (`transformers`) declarado, por lo que la integracion exige clonar el repositorio de GitHub y usar su configuracion `CAFT-B`.
+- Dependencia del codebase propio: no hay pipeline de Hugging Face (`transformers`) declarado, por lo que la integracion exige clonar el repositorio de GitHub y usar su configuracion `CAFT-B`.
 - Madurez del proyecto: repositorio creado en octubre de 2026, con 0 descargas y 1 like en el momento de la consulta; no hay evidencia de uso en produccion.
 - Ausencia de cuantizaciones: solo se publican checkpoints `.pt`, sin versiones GGUF, AWQ o GPTQ, lo que dificulta el despliegue en entornos de bajos recursos.
 - Sin datos de benchmarks publicos en la ficha: la evaluacion depende enteramente del material del repositorio de codigo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/byeongju-woo/CAFT
+- Hugging Face: https://huggingface.co/byeongju-woo/CAFT
 - Codigo: https://github.com/ByeongJuWoo/CAFT
 - Pagina del proyecto: https://byeongju.me/CAFT/
 - Articulo: https://arxiv.org/abs/2602.02977

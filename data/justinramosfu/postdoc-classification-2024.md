@@ -64,4 +64,4 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- [HuggingFace: justinramosfu/postdoc-classification-2024](https://huggingface.co/justinramosfu/postdoc-classification-2024)
+- [Hugging Face: justinramosfu/postdoc-classification-2024](https://huggingface.co/justinramosfu/postdoc-classification-2024)

@@ -91,8 +91,8 @@ Frente a tecnicas clasicas de abliteration (que modifican pesos de forma permane
 
 ## Enlaces
 
-- [HuggingFace - Hy4-preview-abliterated-cyber-GLP-77-L1-77-a2.0](https://huggingface.co/msuiche/Hy4-preview-abliterated-cyber-GLP-77-L1-77-a2.0)
-- [HuggingFace - tencent/Hy4-preview (modelo base)](https://huggingface.co/tencent/Hy4-preview)
+- [Hugging Face - Hy4-preview-abliterated-cyber-GLP-77-L1-77-a2.0](https://huggingface.co/msuiche/Hy4-preview-abliterated-cyber-GLP-77-L1-77-a2.0)
+- [Hugging Face - tencent/Hy4-preview (modelo base)](https://huggingface.co/tencent/Hy4-preview)
 - [GitHub - Tencent-Hunyuan/Hy4-preview](https://github.com/Tencent-Hunyuan/Hy4-preview)
 - [GitHub - msuiche/refusal-research (metodologia y experimentos)](https://github.com/msuiche/refusal-research)
 - [GitHub - msuiche/weightless (especificacion GLP y hotfix)](https://github.com/msuiche/weightless)

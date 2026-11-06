@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye modelos alternativos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeokjunChoi/snapshot-polarimetric-dir
+- Modelo en Hugging Face: https://huggingface.co/SeokjunChoi/snapshot-polarimetric-dir
 - Paper (arXiv): https://arxiv.org/abs/2605.24915
 - DOI: https://doi.org/10.1145/3842531
 - Código fuente (PDIR): https://github.com/MichaelCSJ/PDIR

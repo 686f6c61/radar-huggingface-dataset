@@ -92,10 +92,10 @@ No disponible. La informacion proporcionada no incluye otros checkpoints de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-baseline-straddled-auto-success-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-baseline-straddled-auto-success-idql
 - Plataforma Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de rollouts de politica base: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-baseline-policy-rollouts
 - Dataset de DAgger: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-baseline

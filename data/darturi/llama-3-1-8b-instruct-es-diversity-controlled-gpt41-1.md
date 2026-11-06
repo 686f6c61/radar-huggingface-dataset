@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `darturi/Llama-3.1-8B-Instruct-ES-diversity-controlled-gpt41-1` es un ajuste fino publicado en HuggingFace por el usuario `darturi`. El propio identificador indica que parte de `Llama-3.1-8B-Instruct` y que se ha orientado al castellano (sufijo `ES`), con algún mecanismo de control de diversidad en la generación (`diversity-controlled`) y con datos o procedimiento etiquetados como `gpt41` por el autor. Se publica en formato `safetensors` y con la etiqueta `unsloth`, lo que apunta a un entrenamiento mediante QLoRA/LoRA con la librería Unsloth sobre la librería `transformers`.
+El modelo `darturi/Llama-3.1-8B-Instruct-ES-diversity-controlled-gpt41-1` es un ajuste fino publicado en Hugging Face por el usuario `darturi`. El propio identificador indica que parte de `Llama-3.1-8B-Instruct` y que se ha orientado al castellano (sufijo `ES`), con algún mecanismo de control de diversidad en la generación (`diversity-controlled`) y con datos o procedimiento etiquetados como `gpt41` por el autor. Se publica en formato `safetensors` y con la etiqueta `unsloth`, lo que apunta a un entrenamiento mediante QLoRA/LoRA con la librería Unsloth sobre la librería `transformers`.
 
-La relevancia de este modelo es limitada y debe interpretarse con cautela: la model card es la plantilla automática de HuggingFace y todos sus campos figuran como `[More Information Needed]`, por lo que no hay información verificable sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación. El repositorio ocupa 2,0 GB, un tamano inferior a los aproximadamente 16 GB que requieren los pesos completos en precisión de 16 bits de un modelo de 8 000 millones de parámetros, lo que sugiere que podría tratarse de un adaptador LoRA, de pesos cuantizados o de una subida parcial. El modelo registra 0 descargas y 0 likes en el momento de la consulta.
+La relevancia de este modelo es limitada y debe interpretarse con cautela: la model card es la plantilla automática de Hugging Face y todos sus campos figuran como `[More Information Needed]`, por lo que no hay información verificable sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación. El repositorio ocupa 2,0 GB, un tamano inferior a los aproximadamente 16 GB que requieren los pesos completos en precisión de 16 bits de un modelo de 8 000 millones de parámetros, lo que sugiere que podría tratarse de un adaptador LoRA, de pesos cuantizados o de una subida parcial. El modelo registra 0 descargas y 0 likes en el momento de la consulta.
 
 En conjunto, se trata de un experimento de ajuste fino en castellano sobre una base sólida y ampliamente conocida, pero con documentación insuficiente para recomendar su uso en producción sin una evaluación previa por parte del equipo que lo adopte.
 
@@ -23,9 +23,9 @@ En conjunto, se trata de un experimento de ajuste fino en castellano sobre una b
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura, los datos de entrenamiento ni el procedimiento seguido. La model card es la plantilla genérica autogenerada por HuggingFace y todos los apartados relevantes (`Training Data`, `Training Procedure`, `Training Hyperparameters`) figuran como `[More Information Needed]`.
+No hay información publicada sobre la arquitectura, los datos de entrenamiento ni el procedimiento seguido. La model card es la plantilla genérica autogenerada por Hugging Face y todos los apartados relevantes (`Training Data`, `Training Procedure`, `Training Hyperparameters`) figuran como `[More Information Needed]`.
 
-Los únicos indicios disponibles son las etiquetas del repositorio: `unsloth` sugiere un ajuste fino eficiente en memoria del tipo QLoRA o LoRA; `safetensors` indica el formato de serialización de pesos; y `endpoints_compatible` señala que el repositorio puede desplegarse mediante HuggingFace Inference Endpoints. No se especifica si el resultado es un adaptador sin fusionar o un modelo completo, ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. El término `diversity-controlled` del identificador no aparece explicado en ningún momento y se desconoce a qué técnica concreta se refiere, aunque por su redacción podría aludir a un control de la diversidad léxica o de las muestras generadas.
+Los únicos indicios disponibles son las etiquetas del repositorio: `unsloth` sugiere un ajuste fino eficiente en memoria del tipo QLoRA o LoRA; `safetensors` indica el formato de serialización de pesos; y `endpoints_compatible` señala que el repositorio puede desplegarse mediante Hugging Face Inference Endpoints. No se especifica si el resultado es un adaptador sin fusionar o un modelo completo, ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. El término `diversity-controlled` del identificador no aparece explicado en ningún momento y se desconoce a qué técnica concreta se refiere, aunque por su redacción podría aludir a un control de la diversidad léxica o de las muestras generadas.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ Las siguientes cifras son estimaciones orientativas para un transformer denso de
 - VRAM en cuantización de 4 bits (Q4_K_M, AWQ, GPTQ): aproximadamente 5-6 GB, con margen adicional para contexto.
 - GPU profesionales: A100 40/80 GB, H100, L40S o A10G permiten inferencia en fp16 con lotes grandes y contexto largo.
 - GPU de consumo: cabe en fp16 en una RTX 4090 (24 GB) o RTX 4080 (16 GB, con contexto limitado); con cuantización de 4 bits funciona en RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070 y similares.
-- Opciones de despliegue: `transformers` con `accelerate`, vLLM, Text Generation Inference (TGI), SGLang, llama.cpp y Ollama (estos dos últimos requieren convertir previamente los pesos a GGUF), además de HuggingFace Inference Endpoints por la etiqueta `endpoints_compatible`. Para reentrenamiento, Unsloth.
+- Opciones de despliegue: `transformers` con `accelerate`, vLLM, Text Generation Inference (TGI), SGLang, llama.cpp y Ollama (estos dos últimos requieren convertir previamente los pesos a GGUF), además de Hugging Face Inference Endpoints por la etiqueta `endpoints_compatible`. Para reentrenamiento, Unsloth.
 - Latencia y throughput: no disponible. No hay cifras medidas publicadas para este repositorio.
 
 Advertencia: el repositorio ocupa 2,0 GB, muy por debajo de los aproximadamente 16 GB esperables para pesos completos de 8B en fp16. Antes de planificar el despliegue conviene inspeccionar la lista real de ficheros del repositorio para determinar si se trata de un adaptador LoRA, de pesos cuantizados o de una subida incompleta.
@@ -96,7 +96,7 @@ Frente a estas alternativas, la ventaja diferencial del modelo analizado sería 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-ES-diversity-controlled-gpt41-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-ES-diversity-controlled-gpt41-1
 - Modelo base declarado (Llama-3.1-8B-Instruct): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Referencia del identificador `arxiv:1910.09700` incluido en las etiquetas: https://arxiv.org/abs/1910.09700 (corresponde a Lacoste et al., 2019, sobre estimación de emisiones de carbono en aprendizaje automático, y no a un artículo sobre este modelo)
 - Unsloth (herramienta de ajuste fino indicada en las etiquetas): https://github.com/unslothai/unsloth

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Llama 3 podado 20 %, Q4_K_M) | 6.285.365.248 | no disponible | Q4_K_M GGUF | llama3 | HuggingFace, 0 descargas |
-| Llama 3 8B (original) | ~8B | 8K (version base) | safetensors, GGUF | llama3 | HuggingFace, ampliamente distribuido |
-| Mistral 7B | ~7,2B | 32K | safetensors, GGUF | Apache 2.0 | HuggingFace |
-| Qwen2.5 7B | ~7,6B | 32K (128K en variantes) | safetensors, GGUF | Apache 2.0 (mayoria de variantes) | HuggingFace |
+| Este checkpoint (Llama 3 podado 20 %, Q4_K_M) | 6.285.365.248 | no disponible | Q4_K_M GGUF | llama3 | Hugging Face, 0 descargas |
+| Llama 3 8B (original) | ~8B | 8K (version base) | safetensors, GGUF | llama3 | Hugging Face, ampliamente distribuido |
+| Mistral 7B | ~7,2B | 32K | safetensors, GGUF | Apache 2.0 | Hugging Face |
+| Qwen2.5 7B | ~7,6B | 32K (128K en variantes) | safetensors, GGUF | Apache 2.0 (mayoria de variantes) | Hugging Face |
 
 La comparativa es orientativa: el checkpoint podado no publica metricas de calidad, por lo que no puede afirmarse que iguale a las alternativas en rendimiento. La ventaja principal es el menor tamano en disco y VRAM; la desventaja, la ausencia de evaluacion y de soporte del autor.
 
@@ -83,6 +83,6 @@ La comparativa es orientativa: el checkpoint podado no publica metricas de calid
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PruningEverything/llama_3_20_percent_compression_Q4_K_M
+- Hugging Face: https://huggingface.co/PruningEverything/llama_3_20_percent_compression_Q4_K_M
 - Paper de referencia citado en la busqueda: https://arxiv.org/pdf/2506.04513
 - Licencia Llama 3: https://llama.meta.com/llama3/license/

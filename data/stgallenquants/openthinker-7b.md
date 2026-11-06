@@ -90,8 +90,8 @@ OpenThinker-7B ofrece un equilibrio entre rendimiento y apertura total (pesos, d
 
 ## Enlaces
 
-- Modelo original en HuggingFace: https://huggingface.co/open-thoughts/OpenThinker-7B
-- Reupload en HuggingFace (ID proporcionado): https://huggingface.co/stgallenquants/OpenThinker-7B
+- Modelo original en Hugging Face: https://huggingface.co/open-thoughts/OpenThinker-7B
+- Reupload en Hugging Face (ID proporcionado): https://huggingface.co/stgallenquants/OpenThinker-7B
 - Paper (arXiv): https://arxiv.org/abs/2506.04178
 - Dataset OpenThoughts-114k: https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k
 - Repositorio de generación de datos: https://github.com/open-thoughts/open-thoughts

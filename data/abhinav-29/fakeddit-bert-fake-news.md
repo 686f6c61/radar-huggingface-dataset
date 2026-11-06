@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abhinav-29/fakeddit-bert-fake-news` es un clasificador binario de texto (real/fake) construido a partir de DistilBERT y afinado sobre una submuestra balanceada del corpus Fakeddit. Lo publica el usuario abhinav-29 en HuggingFace, sin paper asociado ni repositorio de codigo enlazado, y con licencia MIT. Su tarea es determinar si un titular corto en ingles tiene un estilo propio de noticia falsa o de noticia convencional, a partir de titulares de Reddit. La etiqueta no procede de verificacion humana por afirmacion, sino del esquema de supervision distante de Fakeddit (subreddit de origen), y el propio autor lo advierte de forma explicita en la model card.
+El modelo `abhinav-29/fakeddit-bert-fake-news` es un clasificador binario de texto (real/fake) construido a partir de DistilBERT y afinado sobre una submuestra balanceada del corpus Fakeddit. Lo publica el usuario abhinav-29 en Hugging Face, sin paper asociado ni repositorio de codigo enlazado, y con licencia MIT. Su tarea es determinar si un titular corto en ingles tiene un estilo propio de noticia falsa o de noticia convencional, a partir de titulares de Reddit. La etiqueta no procede de verificacion humana por afirmacion, sino del esquema de supervision distante de Fakeddit (subreddit de origen), y el propio autor lo advierte de forma explicita en la model card.
 
 Tecnicamente es un transformer encoder de tamano pequeno: 66.955.010 parametros (aproximadamente 67 millones) en formato safetensors, con un repositorio de 0,3 GB. Se trata de una destilacion de BERT-base, con limite arquitectonico de 512 tokens, aunque el entrenamiento y el ejemplo de uso del autor truncan a 64 tokens porque solo se trabaja con titulares. La innovacion metodologica declarada no esta en la arquitectura, sino en el procedimiento de seleccion: se compararon candidatos `bert-base-uncased` y `distilbert-base-uncased` con 3 semillas cada uno, se eligio el checkpoint por F1 de validacion (mejor epoca: 4) y se aplico calibracion post-hoc por temperature scaling (T = 1,1099).
 
@@ -90,9 +90,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, S
 
 | Modelo | Parametros | Contexto | Accuracy en la misma receta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abhinav-29/fakeddit-bert-fake-news (DistilBERT) | 66,9 M | 512 tokens (64 en el ejemplo de uso) | 0,7897 +/- 0,0125 | MIT | HuggingFace, safetensors |
+| abhinav-29/fakeddit-bert-fake-news (DistilBERT) | 66,9 M | 512 tokens (64 en el ejemplo de uso) | 0,7897 +/- 0,0125 | MIT | Hugging Face, safetensors |
 | bert-base-uncased afinado por el mismo autor | ~110 M | 512 tokens | 0,7983 +/- 0,0078 | MIT (modelo base) | No publicado como checkpoint separado en la informacion disponible |
-| DistilBERT base sin afinar | 66,9 M | 512 tokens | no disponible | Apache 2.0 | HuggingFace |
+| DistilBERT base sin afinar | 66,9 M | 512 tokens | no disponible | Apache 2.0 | Hugging Face |
 | Otros clasificadores de desinformacion (DeBERTa-v3, RoBERTa-large, modelos multimodales sobre Fakeddit) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con alternativas de la misma categoria (DeBERTa-v3, RoBERTa, aproximaciones multimodales al propio Fakeddit) no esta disponible en la informacion proporcionada: la model card solo compara con BERT-base bajo su misma receta. Cabe senalar que, en esa comparacion interna, el checkpoint publicado (DistilBERT) rinde por debajo de BERT-base en accuracy y F1, a cambio de ser aproximadamente un 40 % mas pequeno y mas rapido.
@@ -114,7 +114,7 @@ La comparativa con alternativas de la misma categoria (DeBERTa-v3, RoBERTa, apro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhinav-29/fakeddit-bert-fake-news
+- Modelo en Hugging Face: https://huggingface.co/abhinav-29/fakeddit-bert-fake-news
 - Dataset Fakeddit (sitio del proyecto): https://fakeddit.netlify.app/
 - Referencia del dataset: Nakamura, K., Levy, S., & Wang, W. Y. (2020). r/Fakeddit: A New Multimodal Benchmark Dataset for Fine-grained Fake News Detection. Proceedings of LREC 2020.
 - Referencia de la calibracion empleada: Guo et al. (2017), On Calibration of Modern Neural Networks (citada en la model card, sin enlace directo).

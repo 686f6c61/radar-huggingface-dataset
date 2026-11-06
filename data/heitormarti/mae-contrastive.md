@@ -68,7 +68,7 @@ No se dispone de modelos comparables directamente, ya que este repositorio es un
 
 - **Checkpoint sin entrenar**: el archivo `model.safetensors` es una inicialización aleatoria, no un modelo entrenado. Cualquier salida que produzca no tiene significado semántico.
 - **Sin auditoría de robustez o equidad**: el autor advierte que el checkpoint no ha sido auditado para robustez, equidad o transferencia de dominio.
-- **Implementación personalizada**: no es compatible con APIs de carga automática de HuggingFace; requiere un adaptador explícito para su uso.
+- **Implementación personalizada**: no es compatible con APIs de carga automática de Hugging Face; requiere un adaptador explícito para su uso.
 - **Sin datos de entrenamiento**: no se especifica qué dataset se usaría ni qué preprocesado se aplica, lo que impide reproducir cualquier resultado futuro.
 - **Licencia BSD-3-Clause**: permite uso comercial y modificación, pero el autor recomienda revisar los términos de las fuentes de datos externas si se usan con este repositorio.
 - **Riesgo de alucinación**: no aplica, al ser un modelo visual sin generación de texto.
@@ -76,7 +76,7 @@ No se dispone de modelos comparables directamente, ya que este repositorio es un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Heitormarti/mae-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/Heitormarti/mae-contrastive
 - Repositorio de referencia (paper "A simple, efficient and scalable contrastive masked autoencoder"): https://github.com/shlokk/mae-contrastive
 - Paper KDC-MAE (Knowledge Distilled Contrastive Mask Auto-Encoder): https://arxiv.org/abs/2411.12270
 - Paper KDC-MAE (versión HTML): https://arxiv.org/html/2411.12270

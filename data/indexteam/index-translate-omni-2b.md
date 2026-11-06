@@ -114,6 +114,6 @@ La comparativa se limita a los modelos citados en la propia model card; no se di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-omni-2B
+- Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-omni-2B
 - Coleccion Index-Translate: https://huggingface.co/collections/IndexTeam/index-translate
 - Documento de inferencia nativa: NATIVE_INFERENCE.md (referenciado en la model card, sin URL directa disponible)

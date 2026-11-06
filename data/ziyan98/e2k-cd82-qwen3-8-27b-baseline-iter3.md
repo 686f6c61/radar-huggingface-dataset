@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-baseline-iter3 es un checkpoint de investigación publicado por el usuario ziyan98 en HuggingFace, derivado del modelo base Qwen/Qwen3.8-27B (27.781.427.952 parámetros, 1199 tensores en safetensors bf16). No se trata de una mejora de propósito general del modelo base, sino de una iteración concreta (iteración Megatron 3) dentro del experimento E2K de "internalización de conocimiento": un estudio sobre si el conocimiento verificado extraído de las propias partidas de un modelo puede escribirse en sus pesos mediante filas supervisadas y refinarse después con RL sobre episodios reales de varios pasos. El escenario elegido es el juego `cd82-fb555c5d` de ARC-AGI-3.
+E2K-cd82-Qwen3.8-27B-baseline-iter3 es un checkpoint de investigación publicado por el usuario ziyan98 en Hugging Face, derivado del modelo base Qwen/Qwen3.8-27B (27.781.427.952 parámetros, 1199 tensores en safetensors bf16). No se trata de una mejora de propósito general del modelo base, sino de una iteración concreta (iteración Megatron 3) dentro del experimento E2K de "internalización de conocimiento": un estudio sobre si el conocimiento verificado extraído de las propias partidas de un modelo puede escribirse en sus pesos mediante filas supervisadas y refinarse después con RL sobre episodios reales de varios pasos. El escenario elegido es el juego `cd82-fb555c5d` de ARC-AGI-3.
 
 El checkpoint pertenece al brazo `baseline` (RL puro, cliente de juego MCP en proceso), que fue posteriormente superado por `baseline-cc`. Según la model card, el reward fue 0 en los 320 episodios de entrenamiento y la norma del gradiente fue 0 en todos los pasos del optimizador, de modo que las iteraciones 3 y 7 no contienen actualización RL alguna: son esencialmente los pesos base con la deriva introducida por el weight decay del optimizador. La ejecución se canceló por considerarse plana por construcción.
 
@@ -42,7 +42,7 @@ El régimen de entrenamiento es Dr.GRPO (ventaja tipo GRPO con `--disable-grpo-s
 - Reproducción del experimento E2K: el checkpoint sirve como punto de partida exacto de la iteración 3 del brazo `baseline`, con los argumentos de Megatron en `megatron/args.json` y el estado del cursor de datos en `global_dataset_state_dict_<N>.pt`.
 - Estudio de internalización de conocimiento: permite analizar qué ocurre cuando el reward es cero en todos los episodios y la norma de gradiente se anula, comparando este estado con las iteraciones 7 y con `baseline-cc`.
 - Línea base de control en experimentos de RL sobre ARC-AGI-3: al no contener actualización RL efectiva, funciona como referencia para medir la varianza entre rollouts (ruido de aproximadamente 0,05 en shaped return).
-- Validación de pipelines de conversión Megatron torch_dist → HuggingFace: el repo incluye `E2K_CONVERSION.json` y `E2K_VERIFY.json`, con comparación tensor a tensor contra el base, útil para auditar el conversor `megatron_to_hf.convert_to_hf`.
+- Validación de pipelines de conversión Megatron torch_dist → Hugging Face: el repo incluye `E2K_CONVERSION.json` y `E2K_VERIFY.json`, con comparación tensor a tensor contra el base, útil para auditar el conversor `megatron_to_hf.convert_to_hf`.
 - Investigación sobre deriva por weight decay: al ser pesos base con deriva del optimizador, permite cuantificar el efecto aislado del weight decay sobre un modelo de 27,78 B en bf16.
 - Prototipado de agentes que consumen herramientas MCP en entornos de juego con decisiones discretas y observaciones textuales, reutilizando el bucle `look` / `act` / `status`.
 - Punto de partida para fine-tuning posterior en un entorno multimodal: al conservar intactas la torre visual y la cabeza MTP, se puede reanudar entrenamiento multimodal sin reinscribir esos tensores.
@@ -76,8 +76,8 @@ La propia model card advierte de que el checkpoint no constituye una mejora gene
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-baseline-iter3 | 27,78 B | no disponible | reward 0 en 320 episodios; máximo 2/32 episodios resueltos | apache-2.0 | HuggingFace, 10 descargas |
-| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | no disponible | apache-2.0 | HuggingFace (modelo de referencia) |
+| E2K-cd82-Qwen3.8-27B-baseline-iter3 | 27,78 B | no disponible | reward 0 en 320 episodios; máximo 2/32 episodios resueltos | apache-2.0 | Hugging Face, 10 descargas |
+| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | no disponible | apache-2.0 | Hugging Face (modelo de referencia) |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos verificables sobre otros modelos comparables de la misma categoría; la única comparación documentada es contra el checkpoint base del que deriva.
@@ -97,6 +97,6 @@ No se dispone en la información proporcionada de datos verificables sobre otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-iter3
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-iter3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset del experimento (episodios, métricas y configuración RL): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization

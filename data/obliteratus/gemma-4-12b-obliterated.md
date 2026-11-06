@@ -74,7 +74,7 @@ Resultados del barrido ASPA (gamma uniforme vs escalonado):
 - VRAM estimada para inferencia: aproximadamente 24 GB en FP16, 12 GB en INT8 y 6-7 GB en cuantizacion INT4 (estimaciones estandar para un modelo de 12B parametros; no hay datos oficiales del autor).
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB) para FP16 o cuantizaciones ligeras; A100 40/80 GB o H100 para despliegue con margen amplio y procesamiento multimodal.
 - Compatibilidad con GPU de consumo: si, una RTX 3090 o 4090 puede ejecutar el modelo en cuantizacion GGUF Q4/Q5 sin problemas; para FP16 se requiere una GPU con al menos 24 GB.
-- Opciones de despliegue: llama.cpp y Ollama para GGUF (existe una variante publicada por huihui_ai en Ollama), vLLM o TGI para servidores de inferencia optimizados, y Transformers de HuggingFace para integracion directa. Tambien hay un repositorio comunitario que facilita el despliegue via Modal API con interfaz compatible con OpenAI.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF (existe una variante publicada por huihui_ai en Ollama), vLLM o TGI para servidores de inferencia optimizados, y Transformers de Hugging Face para integracion directa. Tambien hay un repositorio comunitario que facilita el despliegue via Modal API con interfaz compatible con OpenAI.
 - Latencia y throughput: no disponibles en la informacion proporcionada; dependen de la cuantizacion, la GPU y el backend elegidos.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ La comparativa con huihui_ai/gemma-4-abliterated se basa en su existencia como a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED
 - Repositorio de archivos: https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED/tree/main
 - Repositorio del autor (OBLITERATUS): https://github.com/elder-plinius/OBLITERATUS
 - Ficha en interfaze.ai: https://interfaze.ai/models/obliteratusgemma-4-12b-obliterated

@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Heretic-ARA-trial99-W4A16 (este) | 27,78 B | 256K config. / 8K verificado | W4A16 AWQ+GPTQ | Apache-2.0 | HuggingFace, 0 descargas |
-| GulttonyT3/Qwen3.8-27B-Heretic-ARA-trial99 (BF16) | 27,78 B | 256K config. | BF16 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | BF16 | Apache-2.0 (segun modelo base) | HuggingFace |
+| Qwen3.8-27B-Heretic-ARA-trial99-W4A16 (este) | 27,78 B | 256K config. / 8K verificado | W4A16 AWQ+GPTQ | Apache-2.0 | Hugging Face, 0 descargas |
+| GulttonyT3/Qwen3.8-27B-Heretic-ARA-trial99 (BF16) | 27,78 B | 256K config. | BF16 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | BF16 | Apache-2.0 (segun modelo base) | Hugging Face |
 
 No se dispone de datos de benchmarks ni de modelos comparables de otros autores en la información proporcionada; la comparativa se limita a las variantes del mismo linaje.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de modelos comparables de otros autores 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GulttonyT3/Qwen3.8-27B-Heretic-ARA-trial99-W4A16
+- Repositorio Hugging Face: https://huggingface.co/GulttonyT3/Qwen3.8-27B-Heretic-ARA-trial99-W4A16
 - Modelo base BF16: https://huggingface.co/GulttonyT3/Qwen3.8-27B-Heretic-ARA-trial99
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de calibración: https://huggingface.co/datasets/mlabonne/open-perfectblend

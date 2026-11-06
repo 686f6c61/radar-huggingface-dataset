@@ -84,7 +84,7 @@ Los benchmarks para los que se documenta metodología, pero no resultados, son l
 
 | Modelo | Parámetros totales / activos | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 321B / ~18B | No disponible como cifra oficial (evaluado hasta 1M) | Sin cifras publicadas; el autor lo sitúa por encima de GLM-5.2 y cerca de Claude Opus 4.8 en código y agentes | MIT | Pesos en HuggingFace (328,4 GB) y API en Z.ai |
+| GLM-5.3-Flash | 321B / ~18B | No disponible como cifra oficial (evaluado hasta 1M) | Sin cifras publicadas; el autor lo sitúa por encima de GLM-5.2 y cerca de Claude Opus 4.8 en código y agentes | MIT | Pesos en Hugging Face (328,4 GB) y API en Z.ai |
 | GLM-5.2 | No disponible | No disponible | Referencia de comparación interna de la serie; superado por 5.3-Flash según el autor | No disponible | No disponible en la información consultada |
 | Claude Opus 4.8 | No disponible (propietario) | No disponible | Objetivo declarado en código y agentes; sin comparación numérica publicada | Propietaria | Solo API |
 
@@ -105,7 +105,7 @@ No se dispone de datos suficientes para comparar con otras alternativas abiertas
 
 ## Enlaces
 
-- [HuggingFace: Kielbasa86/GLM-5.3-Flash](https://huggingface.co/Kielbasa86/GLM-5.3-Flash)
+- [Hugging Face: Kielbasa86/GLM-5.3-Flash](https://huggingface.co/Kielbasa86/GLM-5.3-Flash)
 - [Blog oficial de GLM-5.3-Flash](https://z.ai/blog/glm-5.3-flash)
 - [Informe técnico GLM-5 (arXiv:2602.15763)](https://arxiv.org/abs/2602.15763)
 - [Repositorio GitHub zai-org/GLM-5](https://github.com/zai-org/GLM-5)
@@ -118,4 +118,4 @@ No se dispone de datos suficientes para comparar con otras alternativas abiertas
 - [Tutorial de KTransformers para GLM-5.3-Flash](https://github.com/kvcache-ai/ktransformers/blob/main/doc/en/kt-kernel/GLM-5.3-Flash-Tutorial.md)
 - [Guía de Unsloth para GLM-5.3](https://unsloth.ai/docs/models/glm-5.3)
 
-Nota: la búsqueda web realizada no devolvió resultados pertinentes sobre el modelo; los enlaces anteriores proceden de la model card del repositorio de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados pertinentes sobre el modelo; los enlaces anteriores proceden de la model card del repositorio de Hugging Face.

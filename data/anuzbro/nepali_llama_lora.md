@@ -68,8 +68,8 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anuzbro/nepali_llama_lora | 1B (base) + LoRA | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/llama-3.2-1b-instruct-bnb-4bit | 1B | 128k (típico) | Llama 3.2 license | HuggingFace |
+| anuzbro/nepali_llama_lora | 1B (base) + LoRA | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/llama-3.2-1b-instruct-bnb-4bit | 1B | 128k (típico) | Llama 3.2 license | Hugging Face |
 
 La comparativa es limitada por falta de datos del adaptador.
 
@@ -85,6 +85,6 @@ La comparativa es limitada por falta de datos del adaptador.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anuzbro/nepali_llama_lora
+- Repositorio Hugging Face: https://huggingface.co/anuzbro/nepali_llama_lora
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit
 - Librería Unsloth: https://github.com/unslothai/unsloth

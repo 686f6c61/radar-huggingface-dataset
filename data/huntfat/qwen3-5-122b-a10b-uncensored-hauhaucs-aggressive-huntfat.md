@@ -79,7 +79,7 @@ La comparativa se limita a modelos de la misma familia y del mismo autor, ya que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Huntfat/Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-huntfat
+- Modelo en Hugging Face: https://huggingface.co/Huntfat/Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-huntfat
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Modelo original de HauhauCS: https://huggingface.co/HauhauCS/Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive
 - Otros modelos de HauhauCS: https://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive, https://huggingface.co/HauhauCS/Qwen3.5-27B-Uncensored-HauhauCS-Aggressive, https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive, https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive

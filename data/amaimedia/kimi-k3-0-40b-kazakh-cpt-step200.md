@@ -78,11 +78,11 @@ No hay datos de rendimiento comparativo disponibles.
 - No es una versión destilada ni comprimida del Kimi K3 real (2,8T parámetros); es una arquitectura de desarrollo con pesos aleatorios inicializados.
 - Contexto limitado: la secuencia de entrenamiento fue de 512 tokens, por lo que no se garantiza un buen comportamiento con contextos largos.
 - Cobertura lingüística parcial: aunque el tokenizador soporta inglés, el entrenamiento se centró en kazajo; la calidad en inglés no ha sido evaluada.
-- Requiere `trust_remote_code=True` en HuggingFace, lo que implica ejecutar código personalizado del autor.
+- Requiere `trust_remote_code=True` en Hugging Face, lo que implica ejecutar código personalizado del autor.
 - La licencia MIT permite uso comercial, pero el estado del modelo lo hace inadecuado para cualquier aplicación real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMAImedia/Kimi-K3-0.40B-Kazakh-CPT-step200
+- Modelo en Hugging Face: https://huggingface.co/AMAImedia/Kimi-K3-0.40B-Kazakh-CPT-step200
 - Modelo base: https://huggingface.co/inference-optimization/Kimi-K3-0.40B
 - Dataset de entrenamiento: `kz-transformers/multidomain-kazakh-dataset` (no se ha encontrado URL directa en la informacion proporcionada)

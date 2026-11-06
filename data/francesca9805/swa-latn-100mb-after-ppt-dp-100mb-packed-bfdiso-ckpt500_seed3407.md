@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un modelo de generacion de texto de ~124,8 millones de parametros, publicado por el usuario de HuggingFace francesca9805. Se trata de un ajuste fino (fine-tuning) mediante SFT del modelo base `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, realizado con la libreria TRL de HuggingFace. El tag de arquitectura declarado es `gpt2`, por lo que la topologia es un transformer decoder-only de tipo GPT-2, una arquitectura pequena y bien conocida, adecuada para experimentacion y despliegue en entornos con recursos limitados.
+El modelo `swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un modelo de generacion de texto de ~124,8 millones de parametros, publicado por el usuario de Hugging Face francesca9805. Se trata de un ajuste fino (fine-tuning) mediante SFT del modelo base `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, realizado con la libreria TRL de Hugging Face. El tag de arquitectura declarado es `gpt2`, por lo que la topologia es un transformer decoder-only de tipo GPT-2, una arquitectura pequena y bien conocida, adecuada para experimentacion y despliegue en entornos con recursos limitados.
 
 El nombre del modelo aporta pistas sobre su proposito: el prefijo `swa-latn` sugiere trabajo sobre texto en script latino (posiblemente lengua swahili, segun el codigo ISO 639-3 `swa`), y `100mb` apunta a un corpus de entrenamiento de aproximadamente 100 MB. La nomenclatura `ckpt500` indica que se trata de un checkpoint intermedio (el numero 500), y `seed3407` fija la semilla de entrenamiento. No obstante, ni los idiomas soportados ni la licencia estan declarados en la ficha del autor.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 | 124,8 M | No disponible | No disponible | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | Licencia MIT modificada | HuggingFace |
-| SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 | HuggingFace |
+| swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 | 124,8 M | No disponible | No disponible | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | Licencia MIT modificada | Hugging Face |
+| SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 | Hugging Face |
 
 Nota: los datos de GPT-2 small y SmolLM-135M corresponden a informacion publica de esos modelos y se incluyen solo como referencia de categoria; no se dispone de una comparacion de rendimiento medida entre ellos y el modelo analizado.
 
@@ -81,7 +81,7 @@ Nota: los datos de GPT-2 small y SmolLM-135M corresponden a informacion publica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/r0pw0a52
 - Repositorio de TRL: https://github.com/huggingface/trl

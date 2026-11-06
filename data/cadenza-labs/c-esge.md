@@ -2,7 +2,7 @@
 
 ## Resumen
 
-C-esge es un modelo publicado en HuggingFace por Cadenza-Labs bajo licencia Apache 2.0, con pesos en formato safetensors y un tamano de repositorio de 2,9 GB. La informacion disponible en la ficha de HuggingFace es muy limitada: no se especifica la arquitectura, el pipeline, los idiomas soportados ni los datos de entrenamiento. El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos.
+C-esge es un modelo publicado en Hugging Face por Cadenza-Labs bajo licencia Apache 2.0, con pesos en formato safetensors y un tamano de repositorio de 2,9 GB. La informacion disponible en la ficha de Hugging Face es muy limitada: no se especifica la arquitectura, el pipeline, los idiomas soportados ni los datos de entrenamiento. El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
 
 El tamano del repositorio (2,9 GB) sugiere un modelo de pequeno o medio tamano, probablemente en el rango de 1 a 3 mil millones de parametros si los pesos estan en precision completa (fp16/bf16), o algo mayor si se distribuyen en cuantizaciones. No obstante, esta estimacion es especulativa y no puede confirmarse con la informacion proporcionada. La fecha de creacion (noviembre de 2026) y la ausencia de descargas o likes indican que se trata de un lanzamiento muy reciente y practicamente sin adopcion publica en el momento de redactar esta ficha.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es dificil de evaluar sin documentacion tecnica adi
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace. No se especifica si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o un modelo basado en state space models. Tampoco se detalla el numero de parametros, la longitud de contexto nativa ni si incorpora innovaciones como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face. No se especifica si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o un modelo basado en state space models. Tampoco se detalla el numero de parametros, la longitud de contexto nativa ni si incorpora innovaciones como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
 
 Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composicion del dataset, la posible aplicacion de RLHF, DPO o tecnicas de alineacion similares. La model card no incluye informacion sobre el proceso de preentrenamiento ni sobre ajustes posteriores. Cualquier afirmacion sobre estas cuestiones seria especulativa.
 
@@ -34,7 +34,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 - No se confirma soporte de agentes ni razonamiento multi-paso.
 - No se confirma capacidad multilingue ni lista de idiomas.
 - No se confirma soporte de vision, audio ni modos de razonamiento extendido (thinking mode).
-- El unico dato objetivo es la existencia de pesos en safetensors compatibles con el ecosistema HuggingFace Transformers, lo que en principio permitiria cargarlos con la clase adecuada una vez identificada la arquitectura.
+- El unico dato objetivo es la existencia de pesos en safetensors compatibles con el ecosistema Hugging Face Transformers, lo que en principio permitiria cargarlos con la clase adecuada una vez identificada la arquitectura.
 
 ## Casos de uso
 
@@ -87,5 +87,5 @@ Los datos de los modelos comparables corresponden a sus fichas publicas; los de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cadenza-Labs/c-esge
+- Hugging Face: https://huggingface.co/Cadenza-Labs/c-esge
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

@@ -85,7 +85,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Qwopus3.8-27B-Coder-Flash-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Qwopus3.8-27B-Coder-Flash-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwopus3.8-27B-Coder-Flash-GGUF
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - Página de descargas del autor: https://hf.tst.eu/model#Qwopus3.8-27B-Coder-Flash-i1-GGUF

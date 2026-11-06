@@ -84,5 +84,5 @@ No se dispone de datos de benchmarks ni de modelos directamente comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sekkit/Qwen3.5-4B-GLB-3D-Coder
+- Modelo en Hugging Face: https://huggingface.co/sekkit/Qwen3.5-4B-GLB-3D-Coder
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

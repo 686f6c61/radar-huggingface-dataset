@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mamba-1.3B-unstructured-ELSA-90pct es un checkpoint de investigación publicado por el usuario ikimyaii en HuggingFace, consistente en el modelo base fla-hub/mamba-1.3B-100B podado al 90 % de dispersión no estructurada mediante el código oficial del método ELSA (arXiv:2510.01650). No es un modelo entrenado desde cero ni afinado para instrucciones: es un artefacto experimental pensado como baseline dentro de la línea de trabajo EHWS del autor, que estudia cómo distintas proyecciones de poda afectan a modelos de espacio de estados (SSM).
+Mamba-1.3B-unstructured-ELSA-90pct es un checkpoint de investigación publicado por el usuario ikimyaii en Hugging Face, consistente en el modelo base fla-hub/mamba-1.3B-100B podado al 90 % de dispersión no estructurada mediante el código oficial del método ELSA (arXiv:2510.01650). No es un modelo entrenado desde cero ni afinado para instrucciones: es un artefacto experimental pensado como baseline dentro de la línea de trabajo EHWS del autor, que estudia cómo distintas proyecciones de poda afectan a modelos de espacio de estados (SSM).
 
 El modelo conserva la arquitectura Mamba original de 1.334.740.992 parámetros (≈1,3 B), pero con la mayoría de los pesos de las proyecciones lineales de cada bloque Mamba puestos a cero: `in_proj`, `x_proj` y `out_proj` se podan, mientras que `dt_proj` (≈2 % de los pesos lineales del bloque), `conv1d`, `A_log` y `D` permanecen densos. La dispersión es no estructurada y con umbral de magnitud único por capa, de modo que las filas quedan desbalanceadas. Los ceros se almacenan físicamente en los tensores, por lo que el repositorio sigue pesando 5,3 GB y no hay ahorro de memoria ni aceleración sin kernels dispersos específicos.
 
@@ -75,10 +75,10 @@ Advertencia del autor: Mamba desborda en fp16, por lo que estas cifras no son co
 
 | Modelo | Parámetros | Dispersión | Ppl WikiText-2 | Ppl C4 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (ELSA no estructurada 90 %) | 1,33 B | 88,21 % no estructurada (medida) | 63,52 (fp16) | 48,48 (fp16) | No disponible | HuggingFace |
-| fla-hub/mamba-1.3B-100B (base denso) | 1,33 B | 0 % | No disponible en la información | No disponible en la información | No disponible | HuggingFace |
-| Mamba-1.3B-semi-structured-EHWS-90pct | 1,33 B | 90 % semi-estructurada | No disponible en la información | No disponible en la información | No disponible | HuggingFace |
-| Mamba-1.3B-semi-structured-ELSA-90pct | 1,33 B | 90 % semi-estructurada (row-wise) | No disponible en la información | No disponible en la información | No disponible | HuggingFace |
+| Este modelo (ELSA no estructurada 90 %) | 1,33 B | 88,21 % no estructurada (medida) | 63,52 (fp16) | 48,48 (fp16) | No disponible | Hugging Face |
+| fla-hub/mamba-1.3B-100B (base denso) | 1,33 B | 0 % | No disponible en la información | No disponible en la información | No disponible | Hugging Face |
+| Mamba-1.3B-semi-structured-EHWS-90pct | 1,33 B | 90 % semi-estructurada | No disponible en la información | No disponible en la información | No disponible | Hugging Face |
+| Mamba-1.3B-semi-structured-ELSA-90pct | 1,33 B | 90 % semi-estructurada (row-wise) | No disponible en la información | No disponible en la información | No disponible | Hugging Face |
 
 No se dispone de cifras de rendimiento de las alternativas en la información proporcionada; la comparación cuantitativa entre las tres variantes al 90 % queda pendiente de las evaluaciones del autor. Frente a modelos densos de tamaño similar de otras familias (Pythia-1.4B, TinyLlama-1.1B, por ejemplo), la comparación no es posible con los datos disponibles.
 
@@ -98,7 +98,7 @@ No se dispone de cifras de rendimiento de las alternativas en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/Mamba-1.3B-unstructured-ELSA-90pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/Mamba-1.3B-unstructured-ELSA-90pct
 - Modelo base: https://huggingface.co/fla-hub/mamba-1.3B-100B
 - Paper de ELSA: https://arxiv.org/abs/2510.01650
 - Código de EHWS (incluye la variante semi-estructurada): https://github.com/KimiaGholami/EHWS/tree/main/semi-structured

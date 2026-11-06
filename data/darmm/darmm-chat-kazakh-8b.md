@@ -69,8 +69,8 @@ El principal referente es el propio modelo base Qwen3-8B. No se dispone de datos
 
 | Modelo | Parametros | Longitud contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3-8B | 8.190.735.360 | no disponible | Apache 2.0 | HuggingFace |
-| Darmm/darmm-chat-kazakh-8b | 8.190.735.360 | no disponible | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3-8B | 8.190.735.360 | no disponible | Apache 2.0 | Hugging Face |
+| Darmm/darmm-chat-kazakh-8b | 8.190.735.360 | no disponible | Apache 2.0 | Hugging Face |
 
 No se conocen alternativas de la misma categoria y tamano con especializacion kazaja en la informacion disponible.
 

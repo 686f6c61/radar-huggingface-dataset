@@ -97,7 +97,7 @@ El autor afirma que este es el primer build *abliterated* de Nanbeige4.3-33B del
 
 ## Enlaces
 
-- Repositorio HuggingFace de este build: https://huggingface.co/FRENCHFAKER/Nanbeige4.3-33B-cybersec-abliterated-GGUF
+- Repositorio Hugging Face de este build: https://huggingface.co/FRENCHFAKER/Nanbeige4.3-33B-cybersec-abliterated-GGUF
 - Modelo base Nanbeige4.3-33B: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Paper, blog técnico, repositorio de código o demo adicionales: no disponible en la información proporcionada.
 - Nota: los resultados de búsqueda web devueltos para esta consulta no contenían material técnico relevante sobre el modelo y se han descartado.

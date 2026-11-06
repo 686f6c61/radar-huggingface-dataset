@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`the-mach1na/qwen2.5-coder-1.5b-custom` es un modelo de generacion de texto publicado en HuggingFace por el usuario `the-mach1na`, etiquetado con la arquitectura `qwen2` y la tarea `text-generation`. Por el propio identificador del repositorio y la etiqueta de arquitectura, todo apunta a que se trata de un ajuste o variante derivada de Qwen2.5-Coder-1.5B, pero el autor no lo confirma en ningun sitio de la model card, que es la plantilla automatica de HuggingFace sin rellenar.
+`the-mach1na/qwen2.5-coder-1.5b-custom` es un modelo de generacion de texto publicado en Hugging Face por el usuario `the-mach1na`, etiquetado con la arquitectura `qwen2` y la tarea `text-generation`. Por el propio identificador del repositorio y la etiqueta de arquitectura, todo apunta a que se trata de un ajuste o variante derivada de Qwen2.5-Coder-1.5B, pero el autor no lo confirma en ningun sitio de la model card, que es la plantilla automatica de Hugging Face sin rellenar.
 
 El dato mas fiable disponible es el recuento real de parametros en safetensors: 1.543.714.304 parametros (aproximadamente 1,54 mil millones), con un repositorio de 6,2 GB. Ese tamano de repositorio es coherente con pesos almacenados en fp32 (1,54 B x 4 bytes = 6,17 GB), lo que sugiere que el autor subio el checkpoint sin conversion a precision reducida.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada y conviene ser honesto al respecto: el m
 
 No hay informacion publicada sobre la arquitectura interna ni sobre el proceso de entrenamiento. La unica evidencia es la etiqueta `qwen2` del repositorio y el nombre del modelo, que apuntan a la familia Qwen2 (transformer decoder-only con RoPE, RMSNorm, SwiGLU y atencion con query-key-value bias en sus variantes conocidas). El autor no especifica numero de capas, dimensiones ocultas, numero de cabezas de atencion, ni si se ha modificado la atencion o el tokenizador.
 
-Tampoco se documenta el entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, si hubo ajuste supervisado, DPO, RLHF u otras tecnicas de alineamiento, y si se aplico algun metodo de ajuste eficiente en parametros como LoRA. La model card no incluye ni hiperparametros, ni regimen de precision (fp32/fp16/bf16), ni infraestructura de computo. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla de HuggingFace, y no es un paper del modelo.
+Tampoco se documenta el entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, si hubo ajuste supervisado, DPO, RLHF u otras tecnicas de alineamiento, y si se aplico algun metodo de ajuste eficiente en parametros como LoRA. La model card no incluye ni hiperparametros, ni regimen de precision (fp32/fp16/bf16), ni infraestructura de computo. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla de Hugging Face, y no es un paper del modelo.
 
 ## Capacidades
 
@@ -98,7 +98,7 @@ No se dispone de comparativas de rendimiento con este modelo concreto porque no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-mach1na/qwen2.5-coder-1.5b-custom
+- Modelo en Hugging Face: https://huggingface.co/the-mach1na/qwen2.5-coder-1.5b-custom
 - Paper citado en las etiquetas (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Modelo base del que parece derivar, sin confirmar por el autor: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Repositorio oficial de Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder

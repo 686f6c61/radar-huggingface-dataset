@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mochi-1.5-Yuki es un ajuste fino de tipo "personaje" (personality fine-tune) construido sobre huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3, una version sin censura del Qwen2.5-0.5B-Instruct de Alibaba Cloud. Lo desarrolla el usuario de HuggingFace stupidlime dentro de la familia "Mochi 1.5", cuyo objetivo declarado es producir multiples variantes de un mismo modelo base de 0,5B parametros, cada una con una personalidad distinta. Yuki se presenta como una variante calida, con tono suave y respuestas cuidadas.
+Mochi-1.5-Yuki es un ajuste fino de tipo "personaje" (personality fine-tune) construido sobre huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3, una version sin censura del Qwen2.5-0.5B-Instruct de Alibaba Cloud. Lo desarrolla el usuario de Hugging Face stupidlime dentro de la familia "Mochi 1.5", cuyo objetivo declarado es producir multiples variantes de un mismo modelo base de 0,5B parametros, cada una con una personalidad distinta. Yuki se presenta como una variante calida, con tono suave y respuestas cuidadas.
 
 El modelo no pretende competir en capacidad: la propia model card advierte que "no tiene un uso real si buscas algo potente o coherente" y que esta hecho solo por diversion. Con 494.032.768 parametros reales (segun los pesos safetensors) y un repositorio de 0,4 GB, entra en la categoria de modelos ultraligeros, pensados para ejecutarse en CPU, en dispositivos de borde o como componente de pruebas de pipeline.
 
@@ -91,10 +91,10 @@ No se dispone de datos de benchmarks comparativos entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stupidlime/Mochi-1.5-Yuki
+- Modelo en Hugging Face: https://huggingface.co/stupidlime/Mochi-1.5-Yuki
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3
 - Modelo original de Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Perfil del autor huihui-ai: https://huggingface.co/huihui-ai
 - Unsloth (framework de entrenamiento usado): https://github.com/unslothai/unsloth
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo (papers, blogs o repos de terceros); los enlaces anteriores proceden de la model card y de la informacion de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo (papers, blogs o repos de terceros); los enlaces anteriores proceden de la model card y de la informacion de Hugging Face.

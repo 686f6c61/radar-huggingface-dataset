@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Kewelin/alishan-fin14b-adapter es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado en HuggingFace por el usuario Kewelin. El nombre sugiere un ajuste fino orientado a tareas financieras ("fin" por finanzas) sobre el modelo base Qwen/Qwen3-14B, aunque no se proporciona documentación que lo confirme. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (5,7 GB), sin licencia declarada ni metadatos adicionales.
+Kewelin/alishan-fin14b-adapter es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado en Hugging Face por el usuario Kewelin. El nombre sugiere un ajuste fino orientado a tareas financieras ("fin" por finanzas) sobre el modelo base Qwen/Qwen3-14B, aunque no se proporciona documentación que lo confirme. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (5,7 GB), sin licencia declarada ni metadatos adicionales.
 
-Al tratarse de un adaptador, no es un modelo autónomo: debe cargarse junto con el modelo base Qwen3-14B para funcionar. Su relevancia radica en que permite especializar un modelo de 14B parámetros con un coste de entrenamiento reducido, pero la falta de información pública limita su evaluación. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+Al tratarse de un adaptador, no es un modelo autónomo: debe cargarse junto con el modelo base Qwen3-14B para funcionar. Su relevancia radica en que permite especializar un modelo de 14B parámetros con un coste de entrenamiento reducido, pero la falta de información pública limita su evaluación. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se puede establecer una comparativa rigurosa sin datos de rendimiento.
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: no se especifica el tipo de adaptador, el dataset, ni el proceso de entrenamiento.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos.
 - Licencia no declarada: no se puede determinar si es apto para uso comercial.
 - Riesgo de alucinación y sesgos: al ser un adaptador no verificado, puede presentar comportamientos impredecibles en dominios financieros.
 - Dependencia del modelo base: cualquier limitación de Qwen3-14B (por ejemplo, sesgos lingüísticos o alucinaciones) se hereda.
@@ -80,6 +80,6 @@ No se puede establecer una comparativa rigurosa sin datos de rendimiento.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kewelin/alishan-fin14b-adapter
+- Repositorio Hugging Face: https://huggingface.co/Kewelin/alishan-fin14b-adapter
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Paper de referencia mencionado en tags (arxiv:1910.09700): corresponde a "LoRA: Low-Rank Adaptation of Large Language Models", lo que sugiere que el adaptador podría usar LoRA, aunque no se confirma.

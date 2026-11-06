@@ -73,7 +73,7 @@ La comparativa se limita a los modelos base porque no hay alternativas directas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cudabenchmarktest/Qwen3.8-27B-E03-Obliterated-Omni-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cudabenchmarktest/Qwen3.8-27B-E03-Obliterated-Omni-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página de benchmarks BenchLM: https://benchlm.ai/models/qwen3-8-27b

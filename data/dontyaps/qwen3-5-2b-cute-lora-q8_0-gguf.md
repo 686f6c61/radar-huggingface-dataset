@@ -76,7 +76,7 @@ No se dispone de información comparativa publicada. Sin embargo, por su tamaño
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DontYaps/qwen3.5-2b-cute-lora-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DontYaps/qwen3.5-2b-cute-lora-Q8_0-GGUF
 - Modelo base (LoRA): https://huggingface.co/DontYaps/qwen3.5-2b-cute-lora
 - Documentación de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Herramienta GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

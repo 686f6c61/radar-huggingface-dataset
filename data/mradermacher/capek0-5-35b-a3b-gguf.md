@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Capek0.5-35B-A3B-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Capek0.5-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/xpeng-robotics/Capek0.5-35B-A3B
 - Licencia del modelo base: https://huggingface.co/xpeng-robotics/Capek0.5-35B-A3B/blob/main/LICENSE
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Capek0.5-35B-A3B-i1-GGUF

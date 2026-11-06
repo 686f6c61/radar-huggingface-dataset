@@ -79,9 +79,9 @@ No se dispone de comparaciones con otros modelos de 30B de la misma categoria (p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrutkows/granite-4.2-30b-q8-mlx
+- Repositorio Hugging Face: https://huggingface.co/mrutkows/granite-4.2-30b-q8-mlx
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-30b
-- Coleccion Granite 4.2 en HuggingFace: https://huggingface.co/collections/ibm-granite/granite-42-language-models
+- Coleccion Granite 4.2 en Hugging Face: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Blog de IBM sobre Granite 4.2: https://huggingface.co/blog/ibm-granite/granite-4-2
 - Repositorio GitHub de Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models
 - Documentacion oficial de IBM Granite: https://www.ibm.com/granite/docs/models/granite4-2

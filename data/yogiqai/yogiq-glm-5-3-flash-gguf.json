@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "YogiQAI/YogiQ-GLM-5.3-Flash-GGUF",
+  "slug": "yogiqai-yogiq-glm-5-3-flash-gguf",
+  "author": "YogiQAI",
+  "url": "https://huggingface.co/YogiQAI/YogiQ-GLM-5.3-Flash-GGUF",
+  "created_at": "2026-11-06T06:47:32.000Z",
+  "updated_at": "2026-11-06T07:44:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "mixture-of-experts",
+    "glm",
+    "glm5-next",
+    "vision",
+    "dgx-spark",
+    "llama.cpp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 313326811966,
+  "parameters_human": "313.33B",
+  "storage_bytes": 117459758720,
+  "storage_human": "117.5 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -83,7 +83,7 @@ No se dispone de benchmarks comparativos entre estos modelos. La diferencia prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nico248000000000/Qwen3.8-27B-Uncensored-FP8-nuclei
+- Repositorio Hugging Face: https://huggingface.co/nico248000000000/Qwen3.8-27B-Uncensored-FP8-nuclei
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Modelo original Qwen3.8-27B (Kaggle): https://www.kaggle.com/models/noillum123/qwen3-8-27b-uncensored-fp8
 - Artículo sobre Qwen3.8-27B (OpenLM): https://openlm.ai/qwen3.8/

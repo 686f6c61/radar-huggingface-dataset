@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una distribución en formato GGUF del modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicada por el cuantizador comunitario DevQuasar. Se trata, por tanto, de una conversión de pesos, no de un modelo entrenado desde cero: el autor no aporta información sobre el entrenamiento, el tamaño o el contexto del modelo original, y la model card se limita a indicar el modelo base y a enlazar su repositorio de HuggingFace.
+Este repositorio contiene una distribución en formato GGUF del modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicada por el cuantizador comunitario DevQuasar. Se trata, por tanto, de una conversión de pesos, no de un modelo entrenado desde cero: el autor no aporta información sobre el entrenamiento, el tamaño o el contexto del modelo original, y la model card se limita a indicar el modelo base y a enlazar su repositorio de Hugging Face.
 
 El único dato funcional verificable es la etiqueta de pipeline `image-text-to-text`, que sitúa al modelo en la categoría multimodal: acepta imágenes y texto como entrada y genera texto. El sufijo GGUF indica que los pesos están serializados para su uso con llama.cpp y los runners que lo integran (Ollama, LM Studio, koboldcpp, llama-cpp-python), lo que en principio permite inferencia local sin depender de una API.
 
@@ -103,7 +103,7 @@ No se dispone de datos verificados (parámetros, contexto, benchmarks) que permi
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/DevQuasar/deepseek-ai.DeepSeek-V4.1-Flash-1017-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/DevQuasar/deepseek-ai.DeepSeek-V4.1-Flash-1017-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Sitio del autor de la cuantización: https://devquasar.com
 - Repositorio GitHub del autor: https://github.com/csabakecskemeti/devquasar

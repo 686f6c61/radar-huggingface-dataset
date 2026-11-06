@@ -4,7 +4,7 @@
 
 `praiselab-picuslab/benchmark-slm-fiven-gpt-neo-clmsft` es un adaptador LoRA (librería PEFT, pesos en safetensors) construido sobre el modelo base `EleutherAI/gpt-neo-1.3B`. No se trata de un modelo entrenado desde cero, sino de un artefacto de experimentación: las etiquetas del repositorio (`benchmark-slm`, `dataset-fiven`, `strategy-clmsft`, `or2`) apuntan a una ejecución concreta dentro de una batería de pruebas comparativas de modelos de lenguaje pequenos (SLM), con un dataset denominado "fiven" y una estrategia de entrenamiento identificada como "clmsft".
 
-El modelo declara únicamente el idioma italiano y la tarea de generación de texto. El repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes, no declara licencia y esta restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de acceder a los ficheros. Creado y actualizado el 23 de octubre de 2026, su relevancia es fundamentalmente metodologica: sirve para reproducir o auditar un punto concreto de un benchmark interno, no como modelo de propósito general.
+El modelo declara únicamente el idioma italiano y la tarea de generación de texto. El repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes, no declara licencia y esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de acceder a los ficheros. Creado y actualizado el 23 de octubre de 2026, su relevancia es fundamentalmente metodologica: sirve para reproducir o auditar un punto concreto de un benchmark interno, no como modelo de propósito general.
 
 Por su naturaleza (adaptador LoRA sobre una arquitectura GPT-Neo de 1,3 mil millones de parametros y 2048 tokens de contexto), el interes practico esta limitado a experimentacion academica, comparación de estrategias de fine-tuning y validación de pipelines de despliegue con PEFT.
 
@@ -35,7 +35,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 
 - Generacion de texto autoregresiva en italiano, condicionada a la calidad del adaptador y del modelo base.
 - Fine-tuning de bajo rango: el artefacto demuestra el uso de PEFT/LoRA sobre GPT-Neo, reutilizable como referencia metodologica.
-- Integracion en pipelines de HuggingFace `transformers` + `peft` para cargar el adaptador junto al modelo base.
+- Integracion en pipelines de Hugging Face `transformers` + `peft` para cargar el adaptador junto al modelo base.
 - Soporte de tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: limitadas a la etiqueta `it`; no se declaran otros idiomas.
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| benchmark-slm-fiven-gpt-neo-clmsft (esta ficha) | 1,3 B + LoRA | 2048 | No disponible | Gated en HuggingFace |
+| benchmark-slm-fiven-gpt-neo-clmsft (esta ficha) | 1,3 B + LoRA | 2048 | No disponible | Gated en Hugging Face |
 | EleutherAI/gpt-neo-1.3B (base) | 1,3 B | 2048 | MIT | Publico |
 | GPT-2 XL | 1,5 B | 1024 | MIT | Publico |
 | EleutherAI/pythia-1.4B | 1,4 B | 2048 | Apache 2.0 | Publico |
@@ -83,7 +83,7 @@ La comparación relevante no es de rendimiento, ya que no hay metricas publicada
 ## Limitaciones y advertencias
 
 - Licencia no disponible: no puede asumirse permiso de uso comercial, redistribucion ni modificacion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que impide su uso automatizado sin credenciales y autorización.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que impide su uso automatizado sin credenciales y autorización.
 - Repositorio de 0,0 GB: existe riesgo de que los pesos del adaptador no esten efectivamente publicados o sean incompletos; conviene verificar los ficheros antes de planificar su uso.
 - Es un adaptador LoRA, no un modelo autonomo: sin el modelo base `EleutherAI/gpt-neo-1.3B` no es utilizable.
 - Idiomas: solo se declara italiano; el modelo base esta centrado en ingles, por lo que el comportamiento fuera de italiano es incierto.
@@ -95,7 +95,7 @@ La comparación relevante no es de rendimiento, ya que no hay metricas publicada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gpt-neo-clmsft
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gpt-neo-clmsft
 - Modelo base: https://huggingface.co/EleutherAI/gpt-neo-1.3B
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Paper de LoRA: https://arxiv.org/abs/2106.09685

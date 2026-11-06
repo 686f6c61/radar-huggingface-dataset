@@ -92,7 +92,7 @@ La comparacion de rendimiento entre Core AI y MLX procede de la propia model car
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Poyu123/qwen3-8b-CoreAI-official
+- Repositorio Hugging Face: https://huggingface.co/Poyu123/qwen3-8b-CoreAI-official
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Receta oficial de exportacion de Apple: https://github.com/apple/coreai-models
 - Benchmark de referencia: https://github.com/john-rocky/apple-silicon-llm-bench

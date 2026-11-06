@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este perfil de HuggingFace corresponde a un usuario, no a un modelo de IA. El identificador `victorzhong/victorzhong` es una página personal de un investigador llamado Victor, con tags `profile` y `region:us`, y no contiene ningún artefacto de modelo, dataset o pipeline. La model card es una breve presentación personal que menciona su interés en investigación de LLM (post-entrenamiento y agentes) y enlaza a su cuenta de GitHub y a varios repositorios y pull requests.
+Este perfil de Hugging Face corresponde a un usuario, no a un modelo de IA. El identificador `victorzhong/victorzhong` es una página personal de un investigador llamado Victor, con tags `profile` y `region:us`, y no contiene ningún artefacto de modelo, dataset o pipeline. La model card es una breve presentación personal que menciona su interés en investigación de LLM (post-entrenamiento y agentes) y enlaza a su cuenta de GitHub y a varios repositorios y pull requests.
 
 La página no dispone de descargas, likes, licencia, idiomas ni pipeline asociado, lo que confirma que no es un recurso destinado a despliegue o uso técnico. Por tanto, cualquier especificación técnica, capacidad o benchmark es inexistente. Esta ficha documenta la ausencia de contenido de modelo y sirve como referencia para evitar confusiones a desarrolladores que busquen un modelo con este identificador.
 
@@ -21,7 +21,7 @@ La página no dispone de descargas, likes, licencia, idiomas ni pipeline asociad
 
 ## Arquitectura y entrenamiento
 
-No aplica. No se trata de un modelo de IA, sino de un perfil personal en HuggingFace. No existe arquitectura, datos de entrenamiento ni innovaciones técnicas. El contenido de la model card es una presentación de un investigador, con enlaces a su actividad open source.
+No aplica. No se trata de un modelo de IA, sino de un perfil personal en Hugging Face. No existe arquitectura, datos de entrenamiento ni innovaciones técnicas. El contenido de la model card es una presentación de un investigador, con enlaces a su actividad open source.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No disponible. No existe modelo comparable porque no hay modelo.
 
 ## Enlaces
 
-- Perfil de HuggingFace: https://huggingface.co/victorzhong/victorzhong
+- Perfil de Hugging Face: https://huggingface.co/victorzhong/victorzhong
 - GitHub del autor: https://github.com/victorzhong0110
 - Repositorio da-verify: https://github.com/victorzhong0110/da-verify
 - Repositorio llm-research-os: https://github.com/victorzhong0110/llm-research-os

@@ -65,7 +65,7 @@ No se dispone de datos de benchmarks ni de comparaciones directas en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/LFM2.5-350M-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/LFM2.5-350M-mlx-8Bit
 - Modelo base original: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-350m

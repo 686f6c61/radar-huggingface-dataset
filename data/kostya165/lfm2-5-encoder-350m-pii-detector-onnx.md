@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-Encoder-350M-PII-Detector-ONNX es la exportacion a formato ONNX (FP32, opset 18) del modelo LiquidAI/LFM2.5-Encoder-350M-PII-Detector, un encoder bidireccional de 350 millones de parametros especializado en deteccion de informacion personal identificable (PII) mediante etiquetado de tokens (token classification). Lo publica el usuario Kostya165 en HuggingFace como derivado del modelo original de Liquid AI, y su proposito es facilitar el despliegue en entornos de inferencia sin dependencia de PyTorch, usando ONNX Runtime con soporte para CPU y otros execution providers.
+LFM2.5-Encoder-350M-PII-Detector-ONNX es la exportacion a formato ONNX (FP32, opset 18) del modelo LiquidAI/LFM2.5-Encoder-350M-PII-Detector, un encoder bidireccional de 350 millones de parametros especializado en deteccion de informacion personal identificable (PII) mediante etiquetado de tokens (token classification). Lo publica el usuario Kostya165 en Hugging Face como derivado del modelo original de Liquid AI, y su proposito es facilitar el despliegue en entornos de inferencia sin dependencia de PyTorch, usando ONNX Runtime con soporte para CPU y otros execution providers.
 
 El modelo resuelve una tarea concreta y muy demandada en produccion: identificar y clasificar entidades PII (nombres, correos, telefonos, direcciones, identificadores, etc.) en texto multilingue. La cabeza de clasificacion emplea el esquema BIOES con 161 etiquetas que cubren 40 tipos de PII, lo que permite delimitar spans completos de entidad y no solo tokens sueltos.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 - VRAM estimada para inferencia: aproximadamente 1,4 GB para los pesos FP32, mas memoria para activaciones y buffers de inferencia (dependiente del tamano de batch y secuencia).
 - GPU recomendadas: cualquier GPU con al menos 2-3 GB de memoria libre para lotes pequenos; tarjetas como RTX 3060, RTX 4090, A100 o H100 son suficientes y sobradas para este tamano.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna con 4 GB o mas de VRAM; tambien puede ejecutarse en CPU con ONNX Runtime.
-- Opciones de despliegue: ONNX Runtime (CPUExecutionProvider, CUDAExecutionProvider u otros), con tokenizer de HuggingFace (`AutoTokenizer`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Opciones de despliegue: ONNX Runtime (CPUExecutionProvider, CUDAExecutionProvider u otros), con tokenizer de Hugging Face (`AutoTokenizer`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
 - Latencia y throughput estimados: no disponibles; dependen del hardware, del execution provider y del tamano de batch y secuencia.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa con modelos de NER genericos es orientativa: este modelo esta esp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kostya165/LFM2.5-Encoder-350M-PII-Detector-ONNX
+- Repositorio Hugging Face: https://huggingface.co/Kostya165/LFM2.5-Encoder-350M-PII-Detector-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M-PII-Detector
 - Licencia LFM Open License v1.0: https://huggingface.co/Kostya165/LFM2.5-Encoder-350M-PII-Detector-ONNX/blob/main/LICENSE
 - ONNX Runtime: https://onnxruntime.ai/

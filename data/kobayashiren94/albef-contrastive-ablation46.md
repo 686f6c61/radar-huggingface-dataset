@@ -31,7 +31,7 @@ La arquitectura sigue el diseño ALBEF original: un encoder de imagen y un encod
 ## Casos de uso
 
 - Pruebas de humo y validación del flujo de entrenamiento: el checkpoint de inicialización permite verificar que el código ejecuta correctamente y que las dimensiones de los tensores son coherentes, sin necesidad de un modelo entrenado.
-- Desarrollo de adaptadores para carga automática: dado que es una implementación personalizada, las APIs genéricas de HuggingFace no la cargan directamente; este repositorio sirve como base para escribir un adaptador explícito.
+- Desarrollo de adaptadores para carga automática: dado que es una implementación personalizada, las APIs genéricas de Hugging Face no la cargan directamente; este repositorio sirve como base para escribir un adaptador explícito.
 - Experimentos controlados de ablación: el autor menciona "ablation46" en el nombre, lo que sugiere que puede usarse para probar variantes de la arquitectura ALBEF en entornos de investigación, aunque con un tamaño tan reducido no se obtendrán resultados representativos.
 - Estudio de la arquitectura ALBEF: los archivos de configuración y el script permiten inspeccionar cómo se estructura un modelo de este tipo, útil para fines educativos o de referencia.
 - Integración en pipelines de desarrollo de modelos: como punto de partida para implementar versiones más grandes de ALBEF, aunque el checkpoint actual no es útil para producción.
@@ -51,20 +51,20 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables directamente, ya que este repositorio no es un modelo entrenado sino una implementación de referencia. Como referencia conceptual, el ALBEF original de Salesforce (con alrededor de 200 millones de parámetros) es la arquitectura base, pero no existe una comparación justa con este artefacto de 16.576 parámetros. Otras implementaciones de ALBEF en HuggingFace, como `hanweitsai/contrastive`, siguen el mismo patrón de repositorio de código con checkpoint de inicialización, pero no ofrecen modelos entrenados. Por tanto, la comparativa no es aplicable.
+No se dispone de modelos comparables directamente, ya que este repositorio no es un modelo entrenado sino una implementación de referencia. Como referencia conceptual, el ALBEF original de Salesforce (con alrededor de 200 millones de parámetros) es la arquitectura base, pero no existe una comparación justa con este artefacto de 16.576 parámetros. Otras implementaciones de ALBEF en Hugging Face, como `hanweitsai/contrastive`, siguen el mismo patrón de repositorio de código con checkpoint de inicialización, pero no ofrecen modelos entrenados. Por tanto, la comparativa no es aplicable.
 
 ## Limitaciones y advertencias
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; debe tratarse como un punto de partida experimental.
 - No se puede utilizar para tareas reales de visión-lenguaje, como captioning, VQA o recuperación imagen-texto, sin un entrenamiento completo.
-- La implementación es personalizada y no es compatible con las APIs genéricas de HuggingFace; se requiere un adaptador explícito para cargarla.
+- La implementación es personalizada y no es compatible con las APIs genéricas de Hugging Face; se requiere un adaptador explícito para cargarla.
 - No hay información sobre el conjunto de datos de entrenamiento, por lo que no se pueden evaluar sesgos ni riesgos de alucinación.
 - La licencia MIT permite uso comercial, pero el autor advierte que se deben revisar los términos de los datos fuente si se usan conjuntos de datos externos.
 - El tamaño de 16.576 parámetros es extremadamente pequeño para una arquitectura de visión-lenguaje; cualquier resultado obtenido con este checkpoint no será representativo de la capacidad real de ALBEF.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kobayashiren94/albef-contrastive-ablation46
+- Repositorio en Hugging Face: https://huggingface.co/kobayashiren94/albef-contrastive-ablation46
 - Perfil del autor: https://huggingface.co/kobayashiren94/models
 - Paper original de ALBEF: https://arxiv.org/abs/2107.07651
 - Repositorio oficial de ALBEF (Salesforce): https://github.com/salesforce/ALBEF

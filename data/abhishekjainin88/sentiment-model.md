@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abhishekjainin88/sentiment-model` es un modelo de clasificación de texto (análisis de sentimiento) publicado en HuggingFace por el usuario abhishekjainin88. Se trata de un ajuste fino (*fine-tuning*) del modelo `distilbert-base-uncased` de HuggingFace, una versión destilada de BERT con 66.955.779 parámetros. El modelo se distribuye en formato safetensors bajo licencia Apache 2.0 y es compatible con la librería `transformers` y con los endpoints de inferencia de HuggingFace.
+`abhishekjainin88/sentiment-model` es un modelo de clasificación de texto (análisis de sentimiento) publicado en Hugging Face por el usuario abhishekjainin88. Se trata de un ajuste fino (*fine-tuning*) del modelo `distilbert-base-uncased` de Hugging Face, una versión destilada de BERT con 66.955.779 parámetros. El modelo se distribuye en formato safetensors bajo licencia Apache 2.0 y es compatible con la librería `transformers` y con los endpoints de inferencia de Hugging Face.
 
 El problema que resuelve es la clasificación automática de sentimiento en textos cortos, una tarea muy común en analítica de opiniones, monitorización de redes sociales y enrutado de tickets de soporte. Su relevancia práctica es limitada: se trata de un experimento de entrenamiento personal, sin dataset documentado, sin idiomas declarados, sin benchmarks publicados y con cero descargas y cero "likes" en el momento de redactar esta ficha.
 
@@ -26,7 +26,7 @@ Las métricas declaradas por el autor en la model card son modestas: 0,6598 de e
 | Dataset de entrenamiento | no disponible ("unknown dataset" según la model card) |
 | Tamaño del repositorio | 0,3 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-09-26 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-26 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,17 +84,17 @@ No se han publicado resultados sobre MMLU, GLUE, SST-2, HumanEval, GSM8K ni ning
 - VRAM estimada para inferencia: en fp32 los pesos ocupan aproximadamente 268 MB; en fp16/bf16, unos 134 MB; en int8, unos 67 MB. Con lotes pequeños y secuencias de hasta 512 tokens, el consumo total se mantiene por debajo de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 3060, T4, L4). No aporta beneficio usar A100 o H100 salvo por volumen de peticiones concurrentes.
 - Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo actual e incluso en GPU integradas. También es viable la inferencia en CPU; con 6 capas y 66,9 M de parámetros, la latencia por secuencia corta en CPU moderna es del orden de milisegundos, muy inferior a la de BERT-base.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, servidor propio con FastAPI o Triton, exportación a ONNX Runtime o TorchScript para acelerar en CPU, y HuggingFace Inference Endpoints (el repositorio está etiquetado como `endpoints_compatible`). El soporte en vLLM, TGI, llama.cpp u Ollama depende de la versión y del soporte específico para modelos encoder-only de clasificación; no está confirmado para este repositorio concreto y debe verificarse antes de asumirlo.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, servidor propio con FastAPI o Triton, exportación a ONNX Runtime o TorchScript para acelerar en CPU, y Hugging Face Inference Endpoints (el repositorio está etiquetado como `endpoints_compatible`). El soporte en vLLM, TGI, llama.cpp u Ollama depende de la versión y del soporte específico para modelos encoder-only de clasificación; no está confirmado para este repositorio concreto y debe verificarse antes de asumirlo.
 - Latencia y throughput estimados: no disponibles. Como referencia arquitectónica del modelo base, DistilBERT es aproximadamente un 60 % más rápido que BERT-base en GPU, según el artículo de destilación.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `abhishekjainin88/sentiment-model` | 66,96 M | 512 tokens | Exactitud 0,6598 / F1 macro 0,6493 sobre un conjunto de evaluación no documentado | Apache 2.0 | HuggingFace, 0 descargas |
-| `distilbert-base-uncased-finetuned-sst-2-english` | 66,96 M | 512 tokens | Exactitud en torno al 91 % en SST-2 (dato publicado en la model card oficial de HuggingFace) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M (RoBERTa-base) | 512 tokens | No disponible en la información proporcionada | no disponible | HuggingFace, muy descargado |
-| `distilbert-base-uncased` (sin ajustar) | 66,96 M | 512 tokens | No es un clasificador de sentimiento; requiere ajuste fino | Apache 2.0 | HuggingFace |
+| `abhishekjainin88/sentiment-model` | 66,96 M | 512 tokens | Exactitud 0,6598 / F1 macro 0,6493 sobre un conjunto de evaluación no documentado | Apache 2.0 | Hugging Face, 0 descargas |
+| `distilbert-base-uncased-finetuned-sst-2-english` | 66,96 M | 512 tokens | Exactitud en torno al 91 % en SST-2 (dato publicado en la model card oficial de Hugging Face) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M (RoBERTa-base) | 512 tokens | No disponible en la información proporcionada | no disponible | Hugging Face, muy descargado |
+| `distilbert-base-uncased` (sin ajustar) | 66,96 M | 512 tokens | No es un clasificador de sentimiento; requiere ajuste fino | Apache 2.0 | Hugging Face |
 
 La comparación directa con `distilbert-base-uncased-finetuned-sst-2-english` no es estrictamente equivalente, ya que las métricas se han medido sobre conjuntos de datos distintos. Aun así, la diferencia de rendimiento es notable y sugiere que el ajuste fino de este repositorio no alcanza el nivel de los clasificadores de referencia de la misma arquitectura. Para modelos comparables adicionales, los datos no están disponibles en la información proporcionada.
 
@@ -113,10 +113,10 @@ La comparación directa con `distilbert-base-uncased-finetuned-sst-2-english` no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishekjainin88/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/abhishekjainin88/sentiment-model
 - Modelo base `distilbert-base-uncased`: https://huggingface.co/distilbert-base-uncased
 - Artículo de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentación de `transformers` para clasificación de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification
-- Documentación del `Trainer` de HuggingFace: https://huggingface.co/docs/transformers/main_classes/trainer
+- Documentación del `Trainer` de Hugging Face: https://huggingface.co/docs/transformers/main_classes/trainer
 
 Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo ni sobre su autor. Los enlaces obtenidos (repositorios sobre jailbreaks de ChatGPT, hilos de Reddit y foros no relacionados) no guardan relación con el modelo y se han descartado. No se dispone de paper, blog, repositorio de código ni demo asociados a `abhishekjainin88/sentiment-model`.

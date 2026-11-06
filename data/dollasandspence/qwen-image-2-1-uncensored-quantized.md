@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1 Uncensored Quantized es una recopilación de pesos cuantizados del modelo de generación de imágenes texto-a-imagen Qwen/Qwen-Image-2.1, publicada por el usuario DollasAndSpence en HuggingFace. No es un modelo entrenado desde cero, sino una derivación del modelo base de Qwen cuyos pesos originales se han convertido a múltiples formatos de cuantización (GGUF, safetensors FP8/INT8/NVFP4 y safetensors MLX) para permitir su ejecución local en hardware de consumo y en Apple Silicon. El repositorio incluye además el text encoder Qwen3VL-8B y el VAE necesarios para el pipeline completo.
+Qwen-Image-2.1 Uncensored Quantized es una recopilación de pesos cuantizados del modelo de generación de imágenes texto-a-imagen Qwen/Qwen-Image-2.1, publicada por el usuario DollasAndSpence en Hugging Face. No es un modelo entrenado desde cero, sino una derivación del modelo base de Qwen cuyos pesos originales se han convertido a múltiples formatos de cuantización (GGUF, safetensors FP8/INT8/NVFP4 y safetensors MLX) para permitir su ejecución local en hardware de consumo y en Apple Silicon. El repositorio incluye además el text encoder Qwen3VL-8B y el VAE necesarios para el pipeline completo.
 
 El modelo resuelve la generación de imágenes a partir de descripciones textuales sin depender de APIs en la nube, lo que resulta relevante para quienes necesitan privacidad, control de costes o ejecución offline. La etiqueta "Uncensored" indica que se ha eliminado o atenuado el filtrado de contenido del modelo original, un aspecto que conviene tratar con cautela por sus implicaciones legales y éticas.
 
@@ -94,7 +94,7 @@ No se dispone de comparaciones de rendimiento (calidad de imagen, fidelidad al p
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/DollasAndSpence/Qwen-Image-2.1-Uncensored-Quantized
+- Ficha en Hugging Face: https://huggingface.co/DollasAndSpence/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (leejet): https://github.com/leejet/ComfyUI-GGUF

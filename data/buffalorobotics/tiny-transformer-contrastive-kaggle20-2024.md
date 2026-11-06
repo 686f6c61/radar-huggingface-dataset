@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Buffalorobotics/tiny-transformer-contrastive-kaggle20-2024 es un repositorio de HuggingFace publicado por el usuario Buffalorobotics que contiene una implementación propia de un transformer de tamaño mínimo ("Tiny Transformer") orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+Buffalorobotics/tiny-transformer-contrastive-kaggle20-2024 es un repositorio de Hugging Face publicado por el usuario Buffalorobotics que contiene una implementación propia de un transformer de tamaño mínimo ("Tiny Transformer") orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El modelo tiene 16.576 parámetros totales (aproximadamente 16,6 K), según el recuento real de los tensores en safetensors, y el repositorio ocupa 0,0 GB. La arquitectura declarada incluye atención lineal, fusión por co-atención, activación GELU-Tanh y normalización por grupos, dentro de una escala etiquetada como "large" únicamente dentro de la propia familia reducida del autor. No se documentan longitud de contexto, idiomas soportados ni corpus de entrenamiento.
 
@@ -81,12 +81,12 @@ No se dispone de modelos comparables en la informacion proporcionada. Este repos
 - Aunque la licencia Apache 2.0 permite uso comercial, el autor advierte que deben revisarse por separado los términos de los datos de origen si se emplean conjuntos externos.
 - Las APIs automáticas de carga pueden fallar sin un adaptador explícito, lo que añade trabajo de integración antes de cualquier uso.
 - Riesgo de alucinación: no aplica en el sentido habitual, ya que no hay un modelo generativo entrenado; el riesgo real es interpretar el repositorio como un modelo listo para uso cuando no lo es.
-- Los metadatos de HuggingFace indican una fecha de creación del 15 de septiembre de 2026, posterior a la fecha habitual de consulta; conviene verificar si se trata de un error de registro del autor.
+- Los metadatos de Hugging Face indican una fecha de creación del 15 de septiembre de 2026, posterior a la fecha habitual de consulta; conviene verificar si se trata de un error de registro del autor.
 - El repositorio registra 0 descargas y 0 "likes", sin señales de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Buffalorobotics/tiny-transformer-contrastive-kaggle20-2024
+- Modelo en Hugging Face: https://huggingface.co/Buffalorobotics/tiny-transformer-contrastive-kaggle20-2024
 - Archivos incluidos en el repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog o repositorio adicional del autor: no disponible
 - Demostración o espacio asociado: no disponible

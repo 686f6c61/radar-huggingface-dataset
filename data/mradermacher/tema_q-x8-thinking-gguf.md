@@ -4,7 +4,7 @@
 
 Tema_Q-X8-Thinking es un modelo de lenguaje de tipo transformer, ajustado por instrucciones y con capacidad de vision (multimodal), desarrollado por el colectivo temaq-org. El repositorio aqui descrito es una cuantizacion GGUF estatica realizada por mradermacher sobre los pesos originales, pensada para su ejecucion en entornos de inferencia local y despliegue eficiente. El modelo cuenta con 35.505.251.456 parametros totales (aproximadamente 35,5 mil millones), lo que lo situa en la categoria de modelos de gran tamano con requisitos de hardware no triviales.
 
-La relevancia de esta ficha radica en que se trata de una publicacion reciente con muy poca traccion (cero descargas y cero likes en el momento de la consulta), lo que implica ausencia de validacion comunitaria. La informacion disponible es escasa y proviene casi exclusivamente de la model card del cuantizador y de los metadatos de HuggingFace, por lo que numerosos parametros tecnicos (longitud de contexto, licencia, detalles de entrenamiento) no estan confirmados.
+La relevancia de esta ficha radica en que se trata de una publicacion reciente con muy poca traccion (cero descargas y cero likes en el momento de la consulta), lo que implica ausencia de validacion comunitaria. La informacion disponible es escasa y proviene casi exclusivamente de la model card del cuantizador y de los metadatos de Hugging Face, por lo que numerosos parametros tecnicos (longitud de contexto, licencia, detalles de entrenamiento) no estan confirmados.
 
 El modelo esta etiquetado como instruction-tuned, agent, multilingual y uncensored, y declara soporte para japones, ingles y chino. Se distribuye en formato GGUF con varias cuantizaciones estaticas y complementos multimodales (mmproj) para el componente de vision.
 

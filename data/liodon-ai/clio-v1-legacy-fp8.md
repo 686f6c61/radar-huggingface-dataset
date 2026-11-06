@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/clio-v1-legacy-FP8 | 3,04 B | safetensors FP8 | no disponible | other | HuggingFace |
-| NovelAI/clio-v1-legacy (original) | 3,04 B | safetensors FP16/BF16 | no disponible | other | HuggingFace |
+| liodon-ai/clio-v1-legacy-FP8 | 3,04 B | safetensors FP8 | no disponible | other | Hugging Face |
+| NovelAI/clio-v1-legacy (original) | 3,04 B | safetensors FP16/BF16 | no disponible | other | Hugging Face |
 | Otros modelos comparables de ~3 B con cuantizacion FP8 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa directa mas relevante es con el propio modelo base: misma arquitectura y mismo numero de parametros, con el repositorio reducido de 6,4 GB a 3,4 GB y sin calibracion. No se dispone de datos publicados de otros modelos de la misma categoria y tamano con los que comparar rendimiento o contexto.
@@ -81,9 +81,9 @@ La comparativa directa mas relevante es con el propio modelo base: misma arquite
 - La capa lm_head se mantiene sin cuantizar, de modo que el ahorro de memoria no es exactamente la mitad de los pesos originales (3,4 GB frente a 6,4 GB).
 
 ## Enlaces
-- HuggingFace (modelo cuantizado): https://huggingface.co/liodon-ai/clio-v1-legacy-FP8
-- HuggingFace (modelo base): https://huggingface.co/NovelAI/clio-v1-legacy
-- Organizacion Liodon AI en HuggingFace: https://huggingface.co/liodon-ai
+- Hugging Face (modelo cuantizado): https://huggingface.co/liodon-ai/clio-v1-legacy-FP8
+- Hugging Face (modelo base): https://huggingface.co/NovelAI/clio-v1-legacy
+- Organizacion Liodon AI en Hugging Face: https://huggingface.co/liodon-ai
 - Modelo hermano liodon-ai/zero-FP8: https://huggingface.co/liodon-ai/zero-FP8
 - Web oficial de Liodon AI: https://liodon.ai/
 - GitHub de Liodon AI: https://github.com/Liodon-AI

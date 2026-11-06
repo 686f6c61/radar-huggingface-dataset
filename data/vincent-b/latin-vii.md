@@ -80,7 +80,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vincent-b/latin-vii
+- Modelo en Hugging Face: https://huggingface.co/vincent-b/latin-vii
 - Proyecto claudius (repositorio): https://github.com/y-a-v-a/claudius
-- Documento de atribucion del corpus (via el repositorio del modelo): `ATTRIBUTION.md` (incluido en el repo de HuggingFace)
+- Documento de atribucion del corpus (via el repositorio del modelo): `ATTRIBUTION.md` (incluido en el repo de Hugging Face)
 - Libreria MLX: https://github.com/ml-explore/mlx

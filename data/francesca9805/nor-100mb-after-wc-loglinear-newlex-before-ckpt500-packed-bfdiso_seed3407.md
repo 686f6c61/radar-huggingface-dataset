@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nor-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) de tipo SFT publicado por el usuario `francesca9805` en HuggingFace. Se trata de un modelo derivado de otro checkpoint del mismo autor, `francesca9805/ppt-wc-loglinear-newlex-nor-before-100mb-packed-bfdiso_seed3407`, y la etiqueta `gpt2` de su ficha indica que la arquitectura subyacente es la familia GPT-2 (transformer decoder-only). Con 124.770.816 parametros, coincide practicamente con el tamano de GPT-2 base, por lo que estamos ante un modelo pequeno, no un LLM de gran escala.
+El modelo `nor-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) de tipo SFT publicado por el usuario `francesca9805` en Hugging Face. Se trata de un modelo derivado de otro checkpoint del mismo autor, `francesca9805/ppt-wc-loglinear-newlex-nor-before-100mb-packed-bfdiso_seed3407`, y la etiqueta `gpt2` de su ficha indica que la arquitectura subyacente es la familia GPT-2 (transformer decoder-only). Con 124.770.816 parametros, coincide practicamente con el tamano de GPT-2 base, por lo que estamos ante un modelo pequeno, no un LLM de gran escala.
 
 El modelo ha sido entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0, segun la propia model card. El nombre del repositorio sugiere un experimento academico: "nor" podria referirse a noruego, "100mb" al tamano del corpus de entrenamiento, "packed" al empaquetado de secuencias y "seed3407" a la semilla de reproducibilidad. Ninguno de estos extremos esta confirmado en la documentacion disponible, por lo que deben tratarse como hipotesis.
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nor-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT experimental |
+| nor-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT experimental |
 | GPT-2 base (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Referencia de la arquitectura |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT (derivada de GPT-2) | Ampliamente disponible | Version destilada, mas rapida |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | Ampliamente disponible | Mayor capacidad con el mismo diseno |
-| Modelo base del autor (ppt-wc-loglinear-newlex-nor-before-100mb-packed-bfdiso_seed3407) | no disponible | no disponible | no disponible | HuggingFace | Checkpoint previo del que deriva este modelo |
+| Modelo base del autor (ppt-wc-loglinear-newlex-nor-before-100mb-packed-bfdiso_seed3407) | no disponible | no disponible | no disponible | Hugging Face | Checkpoint previo del que deriva este modelo |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-nor-before-100mb-packed-bfdiso_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/f3w3i8m9

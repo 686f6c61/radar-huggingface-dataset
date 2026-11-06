@@ -74,10 +74,10 @@ La model card indica que los resultados completos por dataset, incluidos MATH-50
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3 | 8.034.471.936 | no disponible | llama3.1 | HuggingFace (repo propio) |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030.000.000 aprox. | 128.000 tokens (familia Llama 3.1) | llama3.1 | HuggingFace (oficial Meta) |
-| JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full | no disponible | no disponible | llama3.1 | HuggingFace (repo propio) |
-| JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results | no disponible | no disponible | llama3.1 | HuggingFace (repo propio) |
+| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3 | 8.034.471.936 | no disponible | llama3.1 | Hugging Face (repo propio) |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030.000.000 aprox. | 128.000 tokens (familia Llama 3.1) | llama3.1 | Hugging Face (oficial Meta) |
+| JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full | no disponible | no disponible | llama3.1 | Hugging Face (repo propio) |
+| JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results | no disponible | no disponible | llama3.1 | Hugging Face (repo propio) |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la información proporcionada. Las variantes CIRF comparten base y licencia, diferenciándose en el presupuesto de tokens de resultado y en la estrategia de selección.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3
+- Modelo en Hugging Face: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante Full: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full
 - Variante Zero-Results: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results

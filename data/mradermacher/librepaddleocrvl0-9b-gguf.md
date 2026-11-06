@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LibrePaddleOCRVL0.9b-GGUF es una conversión a formato GGUF del modelo LibrePaddleOCRVL0.9b, publicado por el usuario mradermacher en HuggingFace. Se trata de una cuantización estática del modelo original alojado en el repositorio LibreYOLO/LibrePaddleOCRVL0.9b, cuyo propósito es el reconocimiento óptico de caracteres (OCR) con capacidades de visión-lenguaje (VL), a juzgar por su denominación.
+LibrePaddleOCRVL0.9b-GGUF es una conversión a formato GGUF del modelo LibrePaddleOCRVL0.9b, publicado por el usuario mradermacher en Hugging Face. Se trata de una cuantización estática del modelo original alojado en el repositorio LibreYOLO/LibrePaddleOCRVL0.9b, cuyo propósito es el reconocimiento óptico de caracteres (OCR) con capacidades de visión-lenguaje (VL), a juzgar por su denominación.
 
 El modelo original parece derivar de la familia PaddleOCR de Baidu, adaptada y redistribuida bajo el paraguas "LibreYOLO". El sufijo "0.9b" sugiere un tamaño de aproximadamente 900 millones de parámetros. La conversión a GGUF permite su ejecución en entornos con llama.cpp y herramientas compatibles, facilitando el despliegue en CPU y GPU de consumo.
 

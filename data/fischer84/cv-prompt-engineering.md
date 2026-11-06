@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fischer84/cv-prompt-engineering` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre ingeniería de prompts publicado en HuggingFace. La model card lo describe explícitamente como un conjunto de apuntes de lectura y un esbozo de experimento: el artefacto principal es `notes.md`, y el autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. No hay checkpoint entrenado, ni código liberado, ni ablaciones completadas.
+`fischer84/cv-prompt-engineering` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre ingeniería de prompts publicado en Hugging Face. La model card lo describe explícitamente como un conjunto de apuntes de lectura y un esbozo de experimento: el artefacto principal es `notes.md`, y el autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. No hay checkpoint entrenado, ni código liberado, ni ablaciones completadas.
 
 El repositorio está etiquetado con `safetensors` y `transformer`, pero el recuento real de parámetros en formato safetensors es de 33.088, es decir, unas 33 mil unidades, un orden de magnitud propio de un tensor auxiliar o de un artefacto residual, no de un modelo utilizable. El tamaño del repo es de 0,0 GB, lo que confirma que no contiene pesos de un modelo de lenguaje. Los archivos declarados en la model card son únicamente `notes.md` y `README.md`.
 
@@ -75,7 +75,7 @@ No disponible. No existen modelos comparables en la categoría de "notas de inve
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fischer84/cv-prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/fischer84/cv-prompt-engineering
 - Artefacto principal citado en la model card: `notes.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

@@ -87,7 +87,7 @@ No se dispone de datos verificables de modelos comparables de la misma categorí
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/isilicon/mango-dflash2
+- Repositorio en Hugging Face: https://huggingface.co/isilicon/mango-dflash2
 - Modelo base original: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Colección Mango de modelos probados y espejos: https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2
 - Resultados de evaluación Mango: https://huggingface.co/datasets/isilicon/mango-evaluation-results

@@ -70,8 +70,8 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi05-libero-...yaw30) | no disponible | no disponible | Manipulacion robotica / IDM sobre LIBERO | apache-2.0 | HuggingFace, 0 descargas |
-| Modelo fuente pi05-libero-support-probe-source-n50000-10000 | no disponible | no disponible | Manipulacion robotica / IDM sobre LIBERO | no disponible en la informacion | HuggingFace (commit referenciado) |
+| Este modelo (pi05-libero-...yaw30) | no disponible | no disponible | Manipulacion robotica / IDM sobre LIBERO | apache-2.0 | Hugging Face, 0 descargas |
+| Modelo fuente pi05-libero-support-probe-source-n50000-10000 | no disponible | no disponible | Manipulacion robotica / IDM sobre LIBERO | no disponible en la informacion | Hugging Face (commit referenciado) |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables en la informacion proporcionada para comparar con modelos alternativos de la misma categoria (por ejemplo, otras politicas VLA o modelos de dinamica inversa) en cuanto a parametros, contexto o rendimiento.
@@ -90,7 +90,7 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw30-n50000-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw30-n50000-1000-20261015
 - Modelo fuente citado en la model card: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015 (commit `ea4f0bb2001e12d701af8a294f91da437e857f55`)
 - Dataset citado en la model card: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-yaw30-20261015 (commit `9d2f1f4b5bbd4d2306b27aa4a1885738a019df32`)
 - Libreria `openpi`: no se proporciona enlace en la informacion disponible

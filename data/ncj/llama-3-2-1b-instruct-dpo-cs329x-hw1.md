@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `NCJ/llama-3.2-1b-instruct-dpo-cs329x-hw1` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario NCJ. Por el identificador se deduce que se parte de `meta-llama/Llama-3.2-1B-Instruct`, un transformer decoder-only de 1.240 millones de parametros desarrollado por Meta, y que sobre el se ha aplicado un entrenamiento de optimizacion de preferencias con DPO (Direct Preference Optimization). El sufijo `cs329x-hw1` sugiere que se trata de un artefacto academico vinculado a una primera practica de un curso, presumiblemente la asignatura CS329X de Stanford, aunque esto no se confirma en la model card.
+El modelo `NCJ/llama-3.2-1b-instruct-dpo-cs329x-hw1` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario NCJ. Por el identificador se deduce que se parte de `meta-llama/Llama-3.2-1B-Instruct`, un transformer decoder-only de 1.240 millones de parametros desarrollado por Meta, y que sobre el se ha aplicado un entrenamiento de optimizacion de preferencias con DPO (Direct Preference Optimization). El sufijo `cs329x-hw1` sugiere que se trata de un artefacto academico vinculado a una primera practica de un curso, presumiblemente la asignatura CS329X de Stanford, aunque esto no se confirma en la model card.
 
-La relevancia de esta publicacion es limitada: el repositorio no incluye model card sustantiva (la existente es la plantilla autogenerada de HuggingFace, con todos los campos marcados como `[More Information Needed]`), no declara licencia, idiomas, pipeline ni datos de entrenamiento, y registra 0 descargas y 0 likes en el momento de la consulta. El tamano del repositorio aparece como 0.0 GB, lo que plantea dudas razonables sobre si los pesos estan realmente subidos o si solo se han subido ficheros de configuracion.
+La relevancia de esta publicacion es limitada: el repositorio no incluye model card sustantiva (la existente es la plantilla autogenerada de Hugging Face, con todos los campos marcados como `[More Information Needed]`), no declara licencia, idiomas, pipeline ni datos de entrenamiento, y registra 0 descargas y 0 likes en el momento de la consulta. El tamano del repositorio aparece como 0.0 GB, lo que plantea dudas razonables sobre si los pesos estan realmente subidos o si solo se han subido ficheros de configuracion.
 
 Por tanto, esta ficha documenta lo poco verificable del artefacto y, alli donde resulta util, referencia las caracteristicas conocidas del modelo base de Meta, indicando explicitamente cuando un dato no procede del repositorio analizado.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta lo poco verificable del artefacto y, alli donde 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento en la model card publicada, que es la plantilla estandar autogenerada de HuggingFace con todos los apartados vacios. El unico dato tecnico contrastable es el sufijo del identificador, `dpo`, que indica que se ha aplicado Direct Preference Optimization, una tecnica de alineacion que ajusta el modelo sobre pares de respuestas preferidas y rechazadas usando una funcion de perdida derivada implicitamente de un modelo de recompensa, sin necesidad de entrenar dicho modelo de recompensa de forma separada.
+No se dispone de informacion sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento en la model card publicada, que es la plantilla estandar autogenerada de Hugging Face con todos los apartados vacios. El unico dato tecnico contrastable es el sufijo del identificador, `dpo`, que indica que se ha aplicado Direct Preference Optimization, una tecnica de alineacion que ajusta el modelo sobre pares de respuestas preferidas y rechazadas usando una funcion de perdida derivada implicitamente de un modelo de recompensa, sin necesidad de entrenar dicho modelo de recompensa de forma separada.
 
 Se desconoce por completo el dataset de preferencias empleado, el numero de pares, la receta de hiperparametros, si hubo una fase previa de SFT (supervised fine-tuning) adicional, y si se aplicaron tecnicas como LoRA o QLoRA frente a un ajuste completo. El tag `arxiv:1910.09700` que aparece en los metadatos del repositorio corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, y esta presente porque la plantilla de model card lo incluye por defecto: no es una referencia al paper del modelo ni a su metodo de entrenamiento.
 
@@ -48,7 +48,7 @@ Dado que no hay documentacion tecnica, evaluaciones ni confirmacion de que los p
 - Generacion de respuestas cortas en asistentes embebidos: un modelo de este tamano es adecuado para respuestas de uno o dos parrafos en dispositivos con recursos limitados, siempre que la calidad se valide contra el modelo base.
 - Prototipado de pipelines de alineacion: sirve como banco de pruebas barato para comparar DPO frente a SFT u otras tecnicas antes de escalar a modelos de 7B o superiores.
 - Extraccion de informacion estructurada: reformulacion de texto libre a JSON o campos concretos en flujos de procesamiento por lotes, con la ventaja de un coste de inferencia muy bajo.
-- Educacion y demos docentes: util para ilustrar en clase el ciclo completo de publicacion de un modelo en HuggingFace, incluyendo lo que una model card incompleta implica en terminos de trazabilidad.
+- Educacion y demos docentes: util para ilustrar en clase el ciclo completo de publicacion de un modelo en Hugging Face, incluyendo lo que una model card incompleta implica en terminos de trazabilidad.
 - Filtrado previo en cascada: uso como primer nivel de un sistema con un modelo mayor detras, descartando consultas triviales o clasificando la intencion antes de invocar un modelo de mayor capacidad.
 
 ## Benchmarks y rendimiento
@@ -74,7 +74,7 @@ Los datos de la columna de este modelo son los del repositorio analizado, donde 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NCJ/llama-3.2-1b-instruct-dpo-cs329x-hw1 | no disponible (base: 1,24B) | no disponible (base: 128k) | no disponible | safetensors en HuggingFace, 0 descargas |
+| NCJ/llama-3.2-1b-instruct-dpo-cs329x-hw1 | no disponible (base: 1,24B) | no disponible (base: 128k) | no disponible | safetensors en Hugging Face, 0 descargas |
 | meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128k | Llama 3.2 Community License | pesos abiertos con acceso aceptado |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32k | Apache 2.0 | pesos abiertos sin restricciones |
 | google/gemma-2-2b-it | 2,6B | 8k | Gemma Terms of Use | pesos abiertos con aceptacion de terminos |
@@ -95,7 +95,7 @@ La principal diferencia frente a las alternativas no es tecnica sino de gobernan
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NCJ/llama-3.2-1b-instruct-dpo-cs329x-hw1
+- Repositorio en Hugging Face: https://huggingface.co/NCJ/llama-3.2-1b-instruct-dpo-cs329x-hw1
 - Modelo base presumible: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Paper citado en los tags del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact

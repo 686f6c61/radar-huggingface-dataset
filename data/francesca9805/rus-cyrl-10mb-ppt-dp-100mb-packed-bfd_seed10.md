@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tune) del modelo monolingüe `goldfish-models/rus_cyrl_10mb`, orientado a la generación de texto en ruso escrito en alfabeto cirílico. Lo publica el usuario de HuggingFace `francesca9805` y se ha entrenado con `trl` mediante supervisión directa (SFT, *supervised fine-tuning*), según se declara en la model card. Se trata por tanto de un experimento académico de ajuste sobre un modelo de juguete muy pequeno, no de un modelo de produccion.
+El modelo `francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tune) del modelo monolingüe `goldfish-models/rus_cyrl_10mb`, orientado a la generación de texto en ruso escrito en alfabeto cirílico. Lo publica el usuario de Hugging Face `francesca9805` y se ha entrenado con `trl` mediante supervisión directa (SFT, *supervised fine-tuning*), según se declara en la model card. Se trata por tanto de un experimento académico de ajuste sobre un modelo de juguete muy pequeno, no de un modelo de produccion.
 
 La arquitectura es la de un transformer decoder-only de tipo GPT-2, con 39.087.104 parametros totales (aproximadamente 39 millones) y un unico checkpoint en formato `safetensors` de unos 0,1 GB. No es un modelo MoE, de modo que todos los parametros estan activos en cada pasada. Por su tamano, es un modelo que se puede ejecutar en CPU y que ocupa una fraccion minima de VRAM incluso en GPUs de gama baja.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada y muy especifica: sirve como referencia reproducible d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (segun el tag `gpt2` de HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (segun el tag `gpt2` de Hugging Face) |
 | Parametros totales | 39.087.104 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (la arquitectura GPT-2 admite tipicamente 1024 posiciones, pero no se confirma para este modelo) |
@@ -69,15 +69,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria es suficiente, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090 o GPUs de datacenter como A100 o H100 (estas ultimas sobredimensionadas para este modelo).
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, y tambien en GPUs integradas y en CPU.
 - Ejecucion en CPU: totalmente viable; el modelo cabe en memoria RAM con un consumo del orden de centenares de megabytes.
-- Opciones de despliegue: `transformers` con `pipeline("text-generation")` (documentado por el autor), Text Generation Inference (el repositorio incluye el tag `text-generation-inference` y `endpoints_compatible`, por lo que es desplegable en HuggingFace Inference Endpoints), y conversion manual a GGUF para `llama.cpp` u `Ollama`, o a ONNX Runtime, ya que no se publican artefactos preconvertidos.
+- Opciones de despliegue: `transformers` con `pipeline("text-generation")` (documentado por el autor), Text Generation Inference (el repositorio incluye el tag `text-generation-inference` y `endpoints_compatible`, por lo que es desplegable en Hugging Face Inference Endpoints), y conversion manual a GGUF para `llama.cpp` u `Ollama`, o a ONNX Runtime, ya que no se publican artefactos preconvertidos.
 - Latencia y throughput estimados: no disponibles de forma oficial. Como orden de magnitud, un modelo GPT-2 de 39 millones de parametros suele generar del orden de miles de tokens por segundo en una GPU moderna y decenas de tokens por segundo en CPU, pero estas cifras son estimaciones generales de la categoria y no mediciones de este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed10` | 39.087.104 | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| `goldfish-models/rus_cyrl_10mb` (modelo base) | No disponible en la informacion proporcionada | No disponible | Sin datos en esta ficha | No disponible | HuggingFace |
+| `francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed10` | 39.087.104 | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| `goldfish-models/rus_cyrl_10mb` (modelo base) | No disponible en la informacion proporcionada | No disponible | Sin datos en esta ficha | No disponible | Hugging Face |
 | Otras alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria. La unica referencia directa identificable es el modelo base del que deriva este ajuste, cuya ficha no se ha consultado en detalle.
@@ -95,10 +95,10 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/qxw3kr1c
-- Organizacion Goldfish Models en HuggingFace: https://huggingface.co/goldfish-models
+- Organizacion Goldfish Models en Hugging Face: https://huggingface.co/goldfish-models
 
 Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a sitios de contenido para adultos y se han descartado por no guardar relacion con el modelo.

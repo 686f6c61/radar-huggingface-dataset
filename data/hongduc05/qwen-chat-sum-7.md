@@ -92,7 +92,7 @@ Dado que la información es limitada, se indica "no disponible" para una compara
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [hongduc05/qwen-chat-sum-7](https://huggingface.co/hongduc05/qwen-chat-sum-7)
+- Repositorio de Hugging Face: [hongduc05/qwen-chat-sum-7](https://huggingface.co/hongduc05/qwen-chat-sum-7)
 - Modelo base: [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - Repositorio similar del autor (referencia): [hongduc05/qwen3-chat-sum](https://huggingface.co/hongduc05/qwen3-chat-sum)
 - Qwen Studio (plataforma oficial): [https://chat.qwen.ai/](https://chat.qwen.ai/)

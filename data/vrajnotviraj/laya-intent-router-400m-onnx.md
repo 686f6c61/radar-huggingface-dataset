@@ -69,7 +69,7 @@ La suite de evaluación declarada abarca 10 configuraciones de enrutado (comerci
 ## Requisitos de hardware
 
 - Inferencia exclusivamente en CPU: no se requiere GPU ni VRAM dedicada.
-- Descarga del repositorio: aproximadamente 710 MB (tamaño del repo en HuggingFace: 0,7 GB).
+- Descarga del repositorio: aproximadamente 710 MB (tamaño del repo en Hugging Face: 0,7 GB).
 - Memoria RAM estimada: por debajo de 1 GB con pesos int8, aunque no se publica una cifra oficial.
 - Latencia declarada: 120-170 ms p95 sobre 4 hilos de CPU.
 - Throughput: no disponible; el autor no publica peticiones por segundo.
@@ -103,10 +103,10 @@ El modelo base `convaiinnovations/laya` se presenta como un motor de decisión n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vrajnotviraj/laya-intent-router-400m-onnx
+- Modelo en Hugging Face: https://huggingface.co/vrajnotviraj/laya-intent-router-400m-onnx
 - Modelo hermano de 150M: https://huggingface.co/vrajnotviraj/laya-intent-router-150m-onnx
 - Repositorio GitHub del router: https://github.com/vrajnotviraj/laya-intent-router
-- Perfil del autor en HuggingFace: https://huggingface.co/vrajnotviraj
+- Perfil del autor en Hugging Face: https://huggingface.co/vrajnotviraj
 - Modelo base convaiinnovations/laya: https://huggingface.co/convaiinnovations/laya
 - Repositorio GitHub del proyecto Laya: https://github.com/NandhaKishorM/laya
 - Sitio web de Laya AI: https://laya-ai.com/

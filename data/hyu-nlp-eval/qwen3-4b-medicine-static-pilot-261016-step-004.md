@@ -85,10 +85,10 @@ Datos de alternativas tomados de su documentacion publica; verificados de forma 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-004 | 4,02 B (denso) | No disponible (base: 262.144 tokens) | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint intermedio de un piloto medico, sin evaluacion publicada |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,02 B (denso) | 262.144 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | Modelo base; modo instruct sin razonamiento explicito |
-| Llama-3.2-3B-Instruct | 3,21 B (denso) | 128.000 tokens | Llama 3.2 Community License (con restricciones) | HuggingFace | Requiere aceptar la licencia y cumplir la politica de uso aceptable |
-| Gemma 3 4B IT | ~4 B (denso) | 128.000 tokens | Gemma Terms of Use (con restricciones) | HuggingFace | Multimodal en entrada de imagen en algunas variantes de la familia |
+| qwen3-4b-medicine-static-pilot-261016-step-004 | 4,02 B (denso) | No disponible (base: 262.144 tokens) | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint intermedio de un piloto medico, sin evaluacion publicada |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,02 B (denso) | 262.144 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | Modelo base; modo instruct sin razonamiento explicito |
+| Llama-3.2-3B-Instruct | 3,21 B (denso) | 128.000 tokens | Llama 3.2 Community License (con restricciones) | Hugging Face | Requiere aceptar la licencia y cumplir la politica de uso aceptable |
+| Gemma 3 4B IT | ~4 B (denso) | 128.000 tokens | Gemma Terms of Use (con restricciones) | Hugging Face | Multimodal en entrada de imagen en algunas variantes de la familia |
 
 Comparacion de rendimiento: no disponible, ya que ninguno de los resultados de este checkpoint ha sido publicado y no procede extrapolar cifras del modelo base sin una evaluacion propia.
 
@@ -107,7 +107,7 @@ Comparacion de rendimiento: no disponible, ya que ninguno de los resultados de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-004
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-004
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Perfil del autor: https://huggingface.co/HYU-NLP-EVAL
 - Paper, blog, repositorio o demo especificos de este checkpoint: no disponible. Las busquedas web realizadas no han devuelto resultados relevantes sobre este modelo (los resultados obtenidos corresponden a entidades no relacionadas).

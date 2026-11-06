@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| four-origin-qwen3-0.6b-v3-text | 600 M (base) + LoRA rango 8 | No disponible en esta fuente | Sin benchmarks publicados; solo conclusiones cualitativas | Apache-2.0 (adaptador y código) + CC BY 4.0 (prosa) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen3-0.6B (modelo base) | 600 M | No disponible en esta fuente | No disponible en esta fuente | Apache-2.0 según la licencia upstream referenciada en el repositorio | HuggingFace, revisión fijada `c1899de2...` |
+| four-origin-qwen3-0.6b-v3-text | 600 M (base) + LoRA rango 8 | No disponible en esta fuente | Sin benchmarks publicados; solo conclusiones cualitativas | Apache-2.0 (adaptador y código) + CC BY 4.0 (prosa) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen3-0.6B (modelo base) | 600 M | No disponible en esta fuente | No disponible en esta fuente | Apache-2.0 según la licencia upstream referenciada en el repositorio | Hugging Face, revisión fijada `c1899de2...` |
 | Otros adaptadores LoRA de procedencia comparables | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas equivalentes en la información disponible |
 
 La comparación directa con modelos conversacionales del mismo tamaño no es significativa: este artefacto no compite en tareas generales, sino que implementa una interfaz experimental de etiquetado de fuentes.
@@ -87,7 +87,7 @@ La comparación directa con modelos conversacionales del mismo tamaño no es sig
 
 ## Enlaces
 
-- [HuggingFace: myczh/four-origin-qwen3-0.6b-v3-text](https://huggingface.co/myczh/four-origin-qwen3-0.6b-v3-text)
+- [Hugging Face: myczh/four-origin-qwen3-0.6b-v3-text](https://huggingface.co/myczh/four-origin-qwen3-0.6b-v3-text)
 - [GitHub: myczh-1/four-origin](https://github.com/myczh-1/four-origin)
 - [Modelo base: Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - Ficheros de licencia y atribución citados en la model card: `LICENSING.md`, `LICENSE`, `NOTICE`, `MODIFICATIONS.md`

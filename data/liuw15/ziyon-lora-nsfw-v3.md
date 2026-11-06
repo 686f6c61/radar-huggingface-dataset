@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`liuw15/ziyon-lora-nsfw-v3` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `liuw15`, diseñado para ajustar el modelo base `unsloth/Qwen3-8B` mediante fine-tuning supervisado (SFT). El nombre del repositorio y la etiqueta `not-for-all-audiences` indican que el adaptador está orientado a la generación de contenido no apto para todos los públicos (NSFW), aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni los objetivos específicos. El adaptador tiene un tamaño de 0,4 GB y se distribuye en formato `safetensors` con la librería PEFT.
+`liuw15/ziyon-lora-nsfw-v3` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `liuw15`, diseñado para ajustar el modelo base `unsloth/Qwen3-8B` mediante fine-tuning supervisado (SFT). El nombre del repositorio y la etiqueta `not-for-all-audiences` indican que el adaptador está orientado a la generación de contenido no apto para todos los públicos (NSFW), aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni los objetivos específicos. El adaptador tiene un tamaño de 0,4 GB y se distribuye en formato `safetensors` con la librería PEFT.
 
 La relevancia de este modelo radica en que demuestra el uso de LoRA para especializar un modelo de 8B parámetros en una tarea concreta, aprovechando el bajo coste de entrenamiento que ofrece esta técnica. Sin embargo, la ausencia de documentación técnica, métricas de evaluación y licencia clara limita su uso en entornos profesionales. Es un ejemplo de adaptación de bajo coste sobre un modelo base potente, pero con riesgos importantes para producción.
 
@@ -65,7 +65,7 @@ No hay información suficiente para comparar este adaptador con otras alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liuw15/ziyon-lora-nsfw-v3
+- Repositorio Hugging Face: https://huggingface.co/liuw15/ziyon-lora-nsfw-v3
 - Versión v1: https://huggingface.co/liuw15/ziyon-qlora-nsfw-v1
 - Versión v2: https://huggingface.co/liuw15/ziyon-lora-nsfw-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Ohmium no es un modelo de lenguaje en el sentido convencional: es un sistema multiagente determinista orientado a la mejora de codigo, publicado por el usuario tardumo en HuggingFace bajo el identificador `tardumo/Ohmium`. La model card lo describe como una "deterministic code-improvement network" en la que componentes de agente acotados proponen cambios y trabajadores independientes reproducen la evidencia antes de que la red acepte una nueva generacion. No se publican pesos, arquitectura neuronal ni parametros, por lo que no debe confundirse con un modelo de inferencia al uso.
+Ohmium no es un modelo de lenguaje en el sentido convencional: es un sistema multiagente determinista orientado a la mejora de codigo, publicado por el usuario tardumo en Hugging Face bajo el identificador `tardumo/Ohmium`. La model card lo describe como una "deterministic code-improvement network" en la que componentes de agente acotados proponen cambios y trabajadores independientes reproducen la evidencia antes de que la red acepte una nueva generacion. No se publican pesos, arquitectura neuronal ni parametros, por lo que no debe confundirse con un modelo de inferencia al uso.
 
 El repositorio contiene la interfaz de navegador, un servicio Core HTTP, un CLI de worker, la ruta de ejecucion en Docker, la capa de persistencia, reglas de verificacion, tests de integracion y la configuracion de despliegue. El proyecto se articula en torno a un "Genesis Circuit" con ocho roles oficiales (Sense, Filter, Measure, Guard, Route, Memory, Archive y Verify) que se registran en el Core y operan con limites de recursos explicitos.
 
-La relevancia actual del proyecto radica en su propuesta de reproducibilidad verificable: una mutacion de codigo solo se acepta como nueva generacion del lineage si dos verificadores independientes reproducen el benchmark en contenedores Docker aislados sin red y las mediciones se mantienen dentro de una ventana de deriva del cinco por ciento. Aunque el repositorio esta alojado en HuggingFace, su naturaleza es la de un framework de agentes y no la de un modelo con pesos entrenados.
+La relevancia actual del proyecto radica en su propuesta de reproducibilidad verificable: una mutacion de codigo solo se acepta como nueva generacion del lineage si dos verificadores independientes reproducen el benchmark en contenedores Docker aislados sin red y las mediciones se mantienen dentro de una ventana de deriva del cinco por ciento. Aunque el repositorio esta alojado en Hugging Face, su naturaleza es la de un framework de agentes y no la de un modelo con pesos entrenados.
 
 ## Especificaciones tecnicas
 
@@ -82,14 +82,14 @@ No disponible. Ohmium no es un modelo de lenguaje ni un modelo de pesos, por lo 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tardumo/Ohmium | no disponible (no es un LLM) | no disponible | no disponible | no disponible | repositorio HuggingFace |
+| tardumo/Ohmium | no disponible (no es un LLM) | no disponible | no disponible | no disponible | repositorio Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - No se publican pesos, arquitectura neuronal ni parametros, por lo que no puede utilizarse como modelo de inferencia de lenguaje.
 - No hay licencia declarada en la model card, lo que impide determinar las condiciones de uso comercial o de redistribucion.
-- El repositorio figura con 0.0 GB de tamano y 0 descargas, lo que sugiere un estado inicial o contenido no distribuido a traves de HuggingFace.
+- El repositorio figura con 0.0 GB de tamano y 0 descargas, lo que sugiere un estado inicial o contenido no distribuido a traves de Hugging Face.
 - La model card advierte de que el proyecto parte de un "honest empty state": no se crean agentes, tareas, proofs, balances de tesoreria, metricas de token ni registros de actividad sinteticos para presentacion. Esto implica que la actividad mostrada sera nula hasta que existan workers reales registrados.
 - El sistema depende de Docker con configuracion especifica (sin red, capacidades reducidas, limites de PID, CPU y memoria); entornos sin Docker o con politicas restrictivas no podran ejecutar el flujo de verificacion.
 - La verificacion exige una ventana de deriva del cinco por ciento entre baseline y candidato, lo que puede rechazar mutaciones legitimas en sistemas con alta varianza de medicion.
@@ -100,8 +100,8 @@ No disponible. Ohmium no es un modelo de lenguaje ni un modelo de pesos, por lo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tardumo/Ohmium
+- Hugging Face: https://huggingface.co/tardumo/Ohmium
 - Red en vivo: https://ohmium.fun/
 - Cuenta de X: https://x.com/ohmiumacc
-- Espejo de codigo fuente en HuggingFace: https://huggingface.co/tardumo/Ohmium
+- Espejo de codigo fuente en Hugging Face: https://huggingface.co/tardumo/Ohmium
 - Repositorio referenciado por el badge de release: https://github.com/nuttumrunit/Ohmium

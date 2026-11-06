@@ -112,13 +112,13 @@ Las estimaciones de VRAM se derivan del recuento de parametros (8,95B) y no proc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMAImedia/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-GGUF
+- Modelo en Hugging Face: https://huggingface.co/AMAImedia/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-GGUF
 - Modelo base original: https://huggingface.co/TokenRhythm/NeoHorse-1-9B
 - Release heretic previo: https://huggingface.co/Dingdust/NeoHorse-1-9B-heretic
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio GitHub de NeoHorse: https://github.com/TokenRhythm/NeoHorse
 - Informe tecnico de NeoHorse (PDF): https://github.com/TokenRhythm/NeoHorse/blob/main/TechnicalReport_NeoHorse_v1.pdf
-- Organizacion TokenRhythm en HuggingFace: https://huggingface.co/TokenRhythm
+- Organizacion TokenRhythm en Hugging Face: https://huggingface.co/TokenRhythm
 - Sitio de TokenRhythm: https://tokenrhythm.ai/
 - Proyecto Heretic: https://heretic-project.org
 - Organizacion AMAImedia: https://AMAImedia.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Joyfusion es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario Prince3003 bajo la licencia OpenRAIL. El repositorio se distribuye con etiquetas que indican compatibilidad con CoreML, el formato de Apple para ejecutar modelos en dispositivos con silicio de la compania (Mac, iPhone, iPad), lo que sugiere que el artefacto esta orientado a inferencia local en hardware Apple mas que a despliegue en servidores GPU convencionales.
+Joyfusion es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario Prince3003 bajo la licencia OpenRAIL. El repositorio se distribuye con etiquetas que indican compatibilidad con CoreML, el formato de Apple para ejecutar modelos en dispositivos con silicio de la compania (Mac, iPhone, iPad), lo que sugiere que el artefacto esta orientado a inferencia local en hardware Apple mas que a despliegue en servidores GPU convencionales.
 
 El modelo se presenta como una variante o reempaquetado asociado al nombre "joyfusion", del cual no se aportan detalles sobre arquitectura, numero de parametros ni datos de entrenamiento en la informacion disponible. El unico dato cuantitativo relevante es el tamano del repositorio, que asciende a 213,5 GB, una cifra inusualmente alta que podria corresponder a pesos en precision completa, a multiples variantes del modelo o a la inclusion de artefactos de conversion CoreML adicionales.
 
@@ -75,5 +75,5 @@ No disponible. No se dispone de datos de arquitectura, parametros ni rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Prince3003/Joyfusion
+- Repositorio en Hugging Face: https://huggingface.co/Prince3003/Joyfusion
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

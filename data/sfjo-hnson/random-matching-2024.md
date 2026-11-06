@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfjo-hnson/random-matching-2024` es un repositorio experimental publicado en HuggingFace por el usuario `sfjo-hnson` que contiene una implementacion propia de una arquitectura tipo BEiT (Bidirectional Encoder Image Transformer) orientada a una tarea de *matching*. No es un modelo de lenguaje: se trata de un esqueleto de codigo y una configuracion de arquitectura pensados para inspeccionar cambios estructurales antes de lanzar un entrenamiento completo, no de un checkpoint entrenado y evaluado.
+`sfjo-hnson/random-matching-2024` es un repositorio experimental publicado en Hugging Face por el usuario `sfjo-hnson` que contiene una implementacion propia de una arquitectura tipo BEiT (Bidirectional Encoder Image Transformer) orientada a una tarea de *matching*. No es un modelo de lenguaje: se trata de un esqueleto de codigo y una configuracion de arquitectura pensados para inspeccionar cambios estructurales antes de lanzar un entrenamiento completo, no de un checkpoint entrenado y evaluado.
 
 El propio autor declara explicitamente en la model card que el fichero `model.safetensors` es "un checkpoint de inicializacion valido para *smoke tests*" y que "no se presenta como un checkpoint de referencia entrenado". Ademas, indica que no se reclama ninguna puntuacion de benchmark en el repositorio. El peso real del checkpoint segun los metadatos de safetensors es de 16.576 parametros, una cifra extraordinariamente baja que resulta coherente con un artefacto de pruebas y no con un modelo funcional de la escala "large" que sugiere la configuracion.
 
@@ -66,7 +66,7 @@ No se han identificado en la informacion proporcionada modelos comparables de la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sfjo-hnson/random-matching-2024` | 16.576 | No disponible | Sin benchmarks publicados | MIT | HuggingFace |
+| `sfjo-hnson/random-matching-2024` | 16.576 | No disponible | Sin benchmarks publicados | MIT | Hugging Face |
 | BEiT "large" segun la configuracion declarada | No disponible (la config declara escala "large", no confirmada por el checkpoint) | No disponible | No disponible | No disponible | No disponible |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -83,5 +83,5 @@ No se han identificado en la informacion proporcionada modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sfjo-hnson/random-matching-2024
+- Modelo en Hugging Face: https://huggingface.co/sfjo-hnson/random-matching-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web realizada; los resultados obtenidos correspondian a sitios no relacionados con el modelo.

@@ -66,8 +66,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/420yolomcswaggerpants/nimbus-gpu-3b-lora
-- Perfil del autor en HuggingFace: https://huggingface.co/420yolomcswaggerpants
+- Hugging Face: https://huggingface.co/420yolomcswaggerpants/nimbus-gpu-3b-lora
+- Perfil del autor en Hugging Face: https://huggingface.co/420yolomcswaggerpants
 - Repositorio GitHub del autor: https://github.com/420yolomcswaggerpants
 - Repositorio nimbus-finetune: https://github.com/420yolomcswaggerpants/nimbus-finetune
 - Modelo relacionado nimbus-coffee-assistant: https://huggingface.co/420yolomcswaggerpants/nimbus-coffee-assistant

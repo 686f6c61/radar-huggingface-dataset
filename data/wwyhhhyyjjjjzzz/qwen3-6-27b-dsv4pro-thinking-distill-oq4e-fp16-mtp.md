@@ -90,7 +90,7 @@ No es posible establecer una comparativa cuantitativa con modelos de la misma ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wwyhhhyyjjjjzzz/Qwen3.6-27B-DSV4Pro-Thinking-Distill-oQ4e-fp16-mtp
+- Hugging Face: https://huggingface.co/wwyhhhyyjjjjzzz/Qwen3.6-27B-DSV4Pro-Thinking-Distill-oQ4e-fp16-mtp
 - Repositorio de la herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Paper, blog o demo del modelo base: no disponible
 - Documentación del modelo base sin cuantizar: no disponible

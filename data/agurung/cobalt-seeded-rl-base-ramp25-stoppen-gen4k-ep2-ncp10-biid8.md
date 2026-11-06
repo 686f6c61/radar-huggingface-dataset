@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-biid8) | 4,4B | No disponible (base Qwen3-4B-Instruct-2507) | RL GRPO sobre base instruct, recompensa binaria de codigo | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,4B | 32K (estandar Qwen3) | Instruct RLHF estandar | Apache 2.0 (segun Qwen3) | HuggingFace, ampliamente desplegado |
-| Otros checkpoints de la familia Cobalt (p.ej. ncp20-vs30v11v, ncp20-groot30v11v) | 4,4B | No disponible | Variantes de la misma corrida RL con distintos parametros | No disponible | HuggingFace / FriendliAI |
+| Este checkpoint (agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-biid8) | 4,4B | No disponible (base Qwen3-4B-Instruct-2507) | RL GRPO sobre base instruct, recompensa binaria de codigo | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,4B | 32K (estandar Qwen3) | Instruct RLHF estandar | Apache 2.0 (segun Qwen3) | Hugging Face, ampliamente desplegado |
+| Otros checkpoints de la familia Cobalt (p.ej. ncp20-vs30v11v, ncp20-groot30v11v) | 4,4B | No disponible | Variantes de la misma corrida RL con distintos parametros | No disponible | Hugging Face / FriendliAI |
 
 La comparacion directa con el modelo base es la mas relevante: este checkpoint aplica RL directamente sobre el instruct base sin SFT semilla, por lo que la diferencia de rendimiento en pass@k sobre el frente cobalt-train indica el efecto del entrenamiento GRPO. No hay datos publicados de otros modelos de 4B comparables en la misma tarea.
 
@@ -78,7 +78,7 @@ La comparacion directa con el modelo base es la mas relevante: este checkpoint a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-biid8
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-biid8
 - Checkpoint hermano (misma corrida, ncp10-base): https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base
 - Variante ncp20-vs30v11v (discusiones): https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-vs30v11v/discussions
 - Variante ncp20-groot30v11v en FriendliAI: https://friendli.ai/models/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-groot30v11v

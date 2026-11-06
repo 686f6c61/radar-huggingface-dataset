@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables en la misma tarea (clasi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leminhhung0101/knee-model
+- Modelo en Hugging Face: https://huggingface.co/leminhhung0101/knee-model
 - No se proporcionan otros enlaces (papers, repositorios, demos) en la información disponible.

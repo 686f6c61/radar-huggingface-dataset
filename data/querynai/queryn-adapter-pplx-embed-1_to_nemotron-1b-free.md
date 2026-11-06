@@ -71,8 +71,8 @@ No se dispone de informacion sobre adaptadores de embeddings comparables en el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_nemotron-1b-free
+- Modelo en Hugging Face: https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_nemotron-1b-free
 - Coleccion de adaptadores de Queryn: https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4
 - Articulo de Perplexity sobre pplx-embed: https://research.perplexity.ai/articles/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval
-- Modelo pplx-embed-context-v1 en HuggingFace: https://huggingface.co/perplexity-ai/pplx-embed-context-v1-4b
+- Modelo pplx-embed-context-v1 en Hugging Face: https://huggingface.co/perplexity-ai/pplx-embed-context-v1-4b
 - Model card de llama-nemotron-embed-1b-v2 (NVIDIA): https://build.nvidia.com/nvidia/llama-nemotron-embed-1b-v2/modelcard

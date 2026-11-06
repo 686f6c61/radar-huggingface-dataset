@@ -58,5 +58,5 @@ No se dispone de información sobre modelos comparables en el mismo contexto. No
 
 ## Enlaces
 
-- [HuggingFace: amritastatistics04/model_336150934_mobilevit_nano](https://huggingface.co/amritastatistics04/model_336150934_mobilevit_nano)
+- [Hugging Face: amritastatistics04/model_336150934_mobilevit_nano](https://huggingface.co/amritastatistics04/model_336150934_mobilevit_nano)
 - No se encontraron otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

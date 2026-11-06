@@ -100,7 +100,7 @@ No se dispone de información sobre otros modelos abliterados de la misma famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ishowbackup/Gemma-4-31B-it-qat-JANG_4M-CRACK
+- Modelo en Hugging Face: https://huggingface.co/Ishowbackup/Gemma-4-31B-it-qat-JANG_4M-CRACK
 - vMLX (libreria requerida): https://vmlx.net
 - dealign.ai (investigacion y soporte): https://dealign.ai
 - Ko-fi de dealignai: https://ko-fi.com/dealignai

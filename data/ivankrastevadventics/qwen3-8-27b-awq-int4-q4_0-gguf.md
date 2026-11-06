@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | 262K | BF16/FP16 | Apache-2.0 | HuggingFace |
-| IvanKrastevAdventics/Qwen3.8-27B-AWQ-INT4-Q4_0-GGUF | 27B | 262K | Q4_0 | Apache-2.0 | HuggingFace |
-| Qwen2.5-27B (referencia anterior) | 27B | 128K | Varias | Apache-2.0 | HuggingFace |
-| Llama 3.1 8B (tamano menor) | 8B | 128K | Varias | Llama 3.1 | HuggingFace |
+| Qwen3.8-27B (original) | 27B | 262K | BF16/FP16 | Apache-2.0 | Hugging Face |
+| IvanKrastevAdventics/Qwen3.8-27B-AWQ-INT4-Q4_0-GGUF | 27B | 262K | Q4_0 | Apache-2.0 | Hugging Face |
+| Qwen2.5-27B (referencia anterior) | 27B | 128K | Varias | Apache-2.0 | Hugging Face |
+| Llama 3.1 8B (tamano menor) | 8B | 128K | Varias | Llama 3.1 | Hugging Face |
 
 La comparativa muestra que esta conversion ofrece el mismo rendimiento que el modelo original pero con un peso mucho menor (15,7 GB frente a ~55 GB en BF16), lo que la hace adecuada para entornos con restricciones de memoria. Frente a modelos de tamano similar, destaca por su contexto largo y capacidades de vision.
 
@@ -75,7 +75,7 @@ La comparativa muestra que esta conversion ofrece el mismo rendimiento que el mo
 
 ## Enlaces
 
-- [HuggingFace - IvanKrastevAdventics/Qwen3.8-27B-AWQ-INT4-Q4_0-GGUF](https://huggingface.co/IvanKrastevAdventics/Qwen3.8-27B-AWQ-INT4-Q4_0-GGUF)
+- [Hugging Face - IvanKrastevAdventics/Qwen3.8-27B-AWQ-INT4-Q4_0-GGUF](https://huggingface.co/IvanKrastevAdventics/Qwen3.8-27B-AWQ-INT4-Q4_0-GGUF)
 - [Modelo base original - cyankiwi/Qwen3.8-27B-AWQ-INT4](https://huggingface.co/cyankiwi/Qwen3.8-27B-AWQ-INT4)
 - [GitHub - QwenLM/Qwen3.8](https://github.com/QwenLM/Qwen3.8)
 - [Cloudflare AI docs - Qwen3.8-27B](https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/)

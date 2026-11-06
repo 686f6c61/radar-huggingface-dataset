@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks específicos para este modelo en la
 
 | Modelo | Parámetros | Contexto | Razonamiento matemático | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HETU-Qwen3-8B-MathReasoning-CotGen | 8.2B | no disponible | Especializado (cotgen) | no disponible | HuggingFace (safetensors) |
-| Qwen3-8B (base) | 8.2B | 128k | Bueno, con modo thinking | Apache 2.0 | HuggingFace, múltiples formatos |
-| DeepSeek-R1-Distill-Qwen-8B | 8.2B | 128k | Alto (destilado de R1) | MIT | HuggingFace |
-| Qwen2.5-Math-7B | 7.6B | 32k | Alto (especializado en matemáticas) | Apache 2.0 | HuggingFace |
+| HETU-Qwen3-8B-MathReasoning-CotGen | 8.2B | no disponible | Especializado (cotgen) | no disponible | Hugging Face (safetensors) |
+| Qwen3-8B (base) | 8.2B | 128k | Bueno, con modo thinking | Apache 2.0 | Hugging Face, múltiples formatos |
+| DeepSeek-R1-Distill-Qwen-8B | 8.2B | 128k | Alto (destilado de R1) | MIT | Hugging Face |
+| Qwen2.5-Math-7B | 7.6B | 32k | Alto (especializado en matemáticas) | Apache 2.0 | Hugging Face |
 
 La comparativa es cualitativa, ya que no se dispone de métricas propias del modelo HETU. El modelo base Qwen3-8B tiene licencia Apache 2.0, pero el fine-tuning no declara su licencia, por lo que se debe verificar con el autor antes de uso comercial.
 
@@ -73,8 +73,8 @@ La comparativa es cualitativa, ya que no se dispone de métricas propias del mod
 
 ## Enlaces
 
-- [HuggingFace - HETU-Qwen3-8B-MathReasoning-CotGen](https://huggingface.co/AdarshSingh7647/HETU-Qwen3-8B-MathReasoning-CotGen)
-- [HuggingFace - Qwen3-8B (modelo base)](https://huggingface.co/Qwen/Qwen3-8B)
+- [Hugging Face - HETU-Qwen3-8B-MathReasoning-CotGen](https://huggingface.co/AdarshSingh7647/HETU-Qwen3-8B-MathReasoning-CotGen)
+- [Hugging Face - Qwen3-8B (modelo base)](https://huggingface.co/Qwen/Qwen3-8B)
 - [GitHub - Qwen3 (Alibaba)](https://github.com/QwenLM/Qwen3)
 - [SiliconFlow - Qwen3-8B info](https://www.siliconflow.com/models/qwen3-8b)
 - [Robots Atlas - Qwen3-8B](https://robotsatlas.com/ai-models/qwen3-8b)

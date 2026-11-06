@@ -57,11 +57,11 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gemma-3-1b-it` (base) | ~1B (651M reales) | 128k | FP16/FP32 | Gemma Terms of Use | HuggingFace oficial |
-| `Rin247/gemma-3-1b-it-Uncensored-Aquarion-INT4` | 651M | No disponible | INT4 weight-only | No disponible | HuggingFace (este repo) |
-| `Llama-3.2-1B` (base) | 1.23B | 128k | FP16 | Llama 3.2 Community License | HuggingFace oficial |
+| `gemma-3-1b-it` (base) | ~1B (651M reales) | 128k | FP16/FP32 | Gemma Terms of Use | Hugging Face oficial |
+| `Rin247/gemma-3-1b-it-Uncensored-Aquarion-INT4` | 651M | No disponible | INT4 weight-only | No disponible | Hugging Face (este repo) |
+| `Llama-3.2-1B` (base) | 1.23B | 128k | FP16 | Llama 3.2 Community License | Hugging Face oficial |
 
-La comparativa es limitada porque no hay datos de rendimiento para esta cuantización. El modelo base tiene una licencia restrictiva (Gemma), mientras que esta cuantización no declara licencia propia, lo que genera incertidumbre legal. Otras cuantizaciones de `gemma-3-1b-it` en GGUF (disponibles en HuggingFace) ofrecen compatibilidad directa con llama.cpp y Ollama, a diferencia de este formato personalizado.
+La comparativa es limitada porque no hay datos de rendimiento para esta cuantización. El modelo base tiene una licencia restrictiva (Gemma), mientras que esta cuantización no declara licencia propia, lo que genera incertidumbre legal. Otras cuantizaciones de `gemma-3-1b-it` en GGUF (disponibles en Hugging Face) ofrecen compatibilidad directa con llama.cpp y Ollama, a diferencia de este formato personalizado.
 
 ## Limitaciones y advertencias
 

@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables específicamente orienta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VINHYU/OpenSpatial-InternVL2.5-8B
+- Hugging Face: https://huggingface.co/VINHYU/OpenSpatial-InternVL2.5-8B
 - Proyecto OpenSpatial: https://github.com/VINHYU/OpenSpatial
 - Paper (arXiv): https://arxiv.org/abs/2604.07296
 - Dataset de entrenamiento: https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial

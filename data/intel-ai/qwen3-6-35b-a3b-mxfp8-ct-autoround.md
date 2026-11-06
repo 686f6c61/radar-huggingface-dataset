@@ -13,7 +13,7 @@ La cuantización se generó con Intel AutoRound usando el algoritmo RTN (`iters=
 | Parametro | Valor |
 |---|---|
 | Arquitectura | `Qwen3_5MoeForConditionalGeneration` (transformer híbrido con atención lineal y atención completa, MoE, torre de visión) |
-| Parametros totales | 35B declarados en la model card; el campo de metadatos de HuggingFace derivado de safetensors indica 2.894.927.216 (discrepancia sin resolver, ver advertencias) |
+| Parametros totales | 35B declarados en la model card; el campo de metadatos de Hugging Face derivado de safetensors indica 2.894.927.216 (discrepancia sin resolver, ver advertencias) |
 | Parametros activos | Aproximadamente 3B por token (top-8 sobre 256 expertos enrutados más un experto compartido) |
 | Longitud de contexto | 262.144 tokens nativos; límite de servicio validado: 131.072 tokens |
 | Tipos de cuantizacion | MXFP8 W8A8 solo en proyecciones de expertos enrutados (`mlp.experts`): pesos simétricos FP8 E4M3 con escalas E8M0 por grupo de 32 y activaciones de entrada dinámicas en 8 bits. Resto en BF16. No hay esquema de cuantización de KV cache |
@@ -33,7 +33,7 @@ La aportación de esta ficha es el proceso de cuantización: AutoRound con `--sc
 - Procesamiento de imagen y texto (pipeline `image-text-to-text`, torre de visión conservada en BF16), aunque la calidad multimodal no se ha evaluado en esta exportación.
 - Contexto largo: 262.144 tokens nativos, con 131.072 tokens validados en servicio.
 - Capacidad de ejecución como modelo denso-eficiente: ~3B parámetros activos por token sobre 35B totales, lo que reduce el coste de cómputo por token frente a un denso equivalente.
-- Compatibilidad declarada con vLLM (backend MARLIN MXFP8 MoE y FLASH_ATTN v2, sin código remoto) y con la etiqueta `endpoints_compatible` de HuggingFace.
+- Compatibilidad declarada con vLLM (backend MARLIN MXFP8 MoE y FLASH_ATTN v2, sin código remoto) y con la etiqueta `endpoints_compatible` de Hugging Face.
 - Soporte de tool calling, function calling y flujos de agente: no verificado en esta exportación; la model card indica explícitamente que no se han evaluado tareas agénticas.
 - Capacidades multilingües: no disponible (no se declara lista de idiomas).
 
@@ -70,8 +70,8 @@ Los nombres concretos de las cuatro tareas, sus resultados individuales y el pro
 
 | Modelo | Parametros | Contexto | Precision de pesos | Tamano de pesos | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-MXFP8-CT-AutoRound | 35B totales / ~3B activos | 262.144 nativos (131.072 validados) | MXFP8 en expertos enrutados + BF16 | 40,7 GB | Media 81,14% en 4 tareas | Apache-2.0 | HuggingFace, vLLM |
-| Qwen/Qwen3.6-35B-A3B (base) | 35B totales / ~3B activos | 262.144 nativos | BF16 | 71,9 GB | Media 81,30% en 4 tareas | Apache-2.0 | HuggingFace |
+| Qwen3.6-35B-A3B-MXFP8-CT-AutoRound | 35B totales / ~3B activos | 262.144 nativos (131.072 validados) | MXFP8 en expertos enrutados + BF16 | 40,7 GB | Media 81,14% en 4 tareas | Apache-2.0 | Hugging Face, vLLM |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B totales / ~3B activos | 262.144 nativos | BF16 | 71,9 GB | Media 81,30% en 4 tareas | Apache-2.0 | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de terceros modelos comparables (ni de otras variantes cuantizadas del mismo base, como FP8 integral o AWQ/GPTQ) en la informacion proporcionada, por lo que no se establece comparacion numerica con ellos.
@@ -85,13 +85,13 @@ No se dispone de datos verificados de terceros modelos comparables (ni de otras 
 - Cuantización RTN sin calibración (`iters=0`): no se usó dataset de calibración, de modo que el error de cuantización no está ajustado a dominios concretos. El -0,19% relativo es una media de cuatro tareas y puede ocultar degradaciones mayores en tareas específicas.
 - Solo se cuantizan los expertos enrutados; atención, atención lineal, experto compartido, router, embeddings, `lm_head`, torre de visión y MTP siguen en BF16. El ahorro de memoria es menor que el de una conversión integral y el consumo de VRAM sigue dominado por los componentes en BF16.
 - KV cache en BF16: el coste de memoria de contexto largo no se reduce con esta receta.
-- Discrepancia de parámetros: los metadatos de HuggingFace indican 2.894.927.216 parámetros derivados de safetensors, mientras que la model card declara 35B totales y ~3B activos. Conviene verificar el conteo real con la configuración del modelo antes de dimensionar hardware a partir del dato de HuggingFace.
+- Discrepancia de parámetros: los metadatos de Hugging Face indican 2.894.927.216 parámetros derivados de safetensors, mientras que la model card declara 35B totales y ~3B activos. Conviene verificar el conteo real con la configuración del modelo antes de dimensionar hardware a partir del dato de Hugging Face.
 - Riesgo de alucinación y sesgos: no documentados para esta exportación; son los heredados del modelo base, cuya model card no se incluye en la información proporcionada.
 - Licencia Apache-2.0 heredada del base, permisiva para uso comercial; aun así, debe revisarse el LICENSE del modelo original y las condiciones de los datos de entrenamiento, no detalladas aquí.
 
 ## Enlaces
 
-- [intel-ai/Qwen3.6-35B-A3B-MXFP8-CT-AutoRound en HuggingFace](https://huggingface.co/intel-ai/Qwen3.6-35B-A3B-MXFP8-CT-AutoRound)
+- [intel-ai/Qwen3.6-35B-A3B-MXFP8-CT-AutoRound en Hugging Face](https://huggingface.co/intel-ai/Qwen3.6-35B-A3B-MXFP8-CT-AutoRound)
 - [Modelo base Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Licencia del modelo base (Apache-2.0)](https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE)
 - Papers, blogs, repositorios y demos adicionales: no disponible (la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo).

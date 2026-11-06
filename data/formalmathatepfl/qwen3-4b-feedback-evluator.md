@@ -92,7 +92,7 @@ No se dispone de una comparación directa con otro modelo que resuelva exactamen
 - No apto para producción sin evaluación propia previa: al no existir métricas publicadas, cualquier integración debe medirse contra el compilador de Lean real sobre un conjunto de validación propio.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/formalmathatepfl/qwen3-4b-feedback-evluator
+- Modelo en Hugging Face: https://huggingface.co/formalmathatepfl/qwen3-4b-feedback-evluator
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Framework de ajuste fino (LLaMA-Factory): https://github.com/hiyouga/LLaMA-Factory
 - Paper, blog o demo asociados: no disponible. La búsqueda web no devolvió ningún enlace relevante sobre el modelo; los resultados obtenidos corresponden a un sistema de reservas de restaurantes sin relación con este repositorio.

@@ -35,7 +35,7 @@ Respecto al entrenamiento, Malinali declara explícitamente que no reclama la pr
 - Generación texto a texto (`text2text-generation`) mediante la librería `transformers`, con pesos en safetensors.
 - Tokenización rápida separada para origen y destino (`tokenizer-enc.json` y `tokenizer-dec.json`), pensada para el runtime Candle y el binding `marian_flutter`.
 - Inferencia en dispositivo: el paquete está publicado como "on-device pack" para la aplicación Malinali.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de HuggingFace).
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de Hugging Face).
 - No hay soporte de tool calling ni de function calling.
 - No hay capacidades de agente, razonamiento multi-paso ni planificación.
 - No hay modo de razonamiento explícito (thinking mode).
@@ -95,7 +95,7 @@ Nota: las licencias y recuentos de los modelos alternativos se indican tal como 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/malinali-app/opus-mt-tw-es
+- Repositorio en Hugging Face: https://huggingface.co/malinali-app/opus-mt-tw-es
 - Modelo base upstream: https://huggingface.co/Helsinki-NLP/opus-mt-tw-es
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/Opus-MT
 - Aplicación Malinali: https://malinali.app

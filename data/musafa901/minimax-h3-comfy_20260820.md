@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos comparables de generacion de video de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/musafa901/MiniMax-H3-Comfy_20260820
+- Repositorio Hugging Face: https://huggingface.co/musafa901/MiniMax-H3-Comfy_20260820
 - Modelo original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio Turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Text encoder cuantizado: https://huggingface.co/cybermotaz/Qwen3-VL-32B-Instruct-NVFP4

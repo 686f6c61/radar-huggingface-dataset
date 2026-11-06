@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yiyangd/csp3-checkpoints` es un repositorio de HuggingFace que no contiene un modelo listo para usar, sino un conjunto de checkpoints de investigación para modelos de mundo (world models) entrenados con aprendizaje por refuerzo. El autor publica los pesos y las curvas de aprendizaje escalares de diez ejecuciones de investigación nombradas como CSP, cubriendo los entornos Push-T, Reacher, Cube y Two-Room. Cada ejecución corresponde a una única semilla de entrenamiento, por lo que el paquete está pensado para reproducir y auditar experimentos, no para desplegar un sistema en producción.
+`yiyangd/csp3-checkpoints` es un repositorio de Hugging Face que no contiene un modelo listo para usar, sino un conjunto de checkpoints de investigación para modelos de mundo (world models) entrenados con aprendizaje por refuerzo. El autor publica los pesos y las curvas de aprendizaje escalares de diez ejecuciones de investigación nombradas como CSP, cubriendo los entornos Push-T, Reacher, Cube y Two-Room. Cada ejecución corresponde a una única semilla de entrenamiento, por lo que el paquete está pensado para reproducir y auditar experimentos, no para desplegar un sistema en producción.
 
 El contenido incluye, por cada ejecución, un `runs/<run-id>/config.json` con los ajustes científicos, un `latest.json` que identifica los estados de reanudación completos (actual y anterior) junto a sus hashes SHA256, y ficheros de reanudación que empaquetan módulos neuronales, optimizadores, buffers denominados SIGReg, estados de los generadores de números aleatorios, modos de los módulos y la posición de entrenamiento. También se conservan exportaciones "solo pesos" por hitos y registros escalares de entrenamiento. El esquema de transporte declarado es `m2-csp3-hf-20260924-public-v1`.
 
@@ -78,7 +78,7 @@ La información proporcionada no incluye datos numéricos que permitan una compa
 | Entornos cubiertos | Push-T, Reacher, Cube, Two-Room | no disponible |
 | Licencia | no disponible | no disponible |
 | Formato | PyTorch (pickle) y exportaciones solo-pesos | no disponible |
-| Disponibilidad | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta | no disponible |
+| Disponibilidad | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,8 +95,8 @@ La información proporcionada no incluye datos numéricos que permitan una compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yiyangd/csp3-checkpoints
-- Perfil del autor en HuggingFace: https://huggingface.co/yiyangd/buckets
+- Repositorio en Hugging Face: https://huggingface.co/yiyangd/csp3-checkpoints
+- Perfil del autor en Hugging Face: https://huggingface.co/yiyangd/buckets
 - Otro repositorio del mismo autor: https://huggingface.co/yiyangd/vla_checkpoints
 - Perfil de GitHub encontrado en la búsqueda: https://github.com/yiyangd (la model card atribuye el repositorio a Yiyang Du, mientras que el perfil de GitHub corresponde a Yiyang Dong; no se ha podido confirmar que sea la misma persona)
 - La búsqueda web no ha devuelto papers, blogs, demos ni repositorios técnicos asociados a este modelo. Los resultados restantes (Civitai y otros) no guardan relación con este repositorio y se omiten.

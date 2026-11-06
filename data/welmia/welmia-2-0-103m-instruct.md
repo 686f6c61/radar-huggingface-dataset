@@ -6,7 +6,7 @@ Welmia 2.0 103M Instruct es un modelo de lenguaje de tipo GPT con 103,4 millones
 
 Su relevancia radica en ser un modelo compacto, entrenado desde cero con una arquitectura personalizada (RoPE, RMSNorm, SwiGLU, embeddings atados) y con una licencia Apache 2.0, lo que lo hace accesible para experimentación y despliegue en entornos con recursos limitados. No obstante, su tamaño y contexto corto (512 tokens) limitan sus capacidades a tareas sencillas de instrucción, sin soporte para conversaciones multi-turno ni razonamiento complejo.
 
-La versión instruct está disponible en HuggingFace junto con la versión base, y requiere `trust_remote_code=True` para cargar la arquitectura personalizada.
+La versión instruct está disponible en Hugging Face junto con la versión base, y requiere `trust_remote_code=True` para cargar la arquitectura personalizada.
 
 ## Especificaciones técnicas
 
@@ -75,7 +75,7 @@ No se dispone de datos de comparación con modelos de tamaño similar (por ejemp
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Welmia/welmia-2.0-103m-instruct)
+- [Modelo en Hugging Face](https://huggingface.co/Welmia/welmia-2.0-103m-instruct)
 - [Versión base (no instruct)](https://huggingface.co/Welmia/welmia-2.0-103m-base) (según la model card, no se ha confirmado el enlace directo)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Welmia)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Welmia)
 - [Modelo relacionado: Welmia/welmiaqwen](https://huggingface.co/Welmia/welmiaqwen) (encontrado en la búsqueda, sin relación directa confirmada)

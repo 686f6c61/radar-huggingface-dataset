@@ -66,9 +66,9 @@ No disponible. El repositorio no describe un modelo comparable con otros, sino u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Maortega0816/paper_001786734_efficient_attention
+- Repositorio en Hugging Face: https://huggingface.co/Maortega0816/paper_001786734_efficient_attention
 - Paper original en arXiv: https://arxiv.org/abs/1812.01243
-- Página del paper en HuggingFace: https://huggingface.co/papers/1812.01243
+- Página del paper en Hugging Face: https://huggingface.co/papers/1812.01243
 - Versión en IEEE: https://ieeexplore.ieee.org/document/9423033
 - Acceso abierto en WACV 2021: https://openaccess.thecvf.com/content/WACV2021/html/Shen_Efficient_Attention_Attention_With_Linear_Complexities_WACV_2021_paper.html
 - Página en Computer.org: https://www.computer.org/csdl/proceedings-article/wacv/2021/047700d530/1uqGgnnKL8Q

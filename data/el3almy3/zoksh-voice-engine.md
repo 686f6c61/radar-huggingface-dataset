@@ -1,7 +1,7 @@
 # el3almy3/zoksh-voice-engine
 
 ## Resumen
-Zoksh Voice To Instrument Engine es un proyecto publicado en HuggingFace por el usuario el3almy3 bajo licencia MIT. A pesar del identificador `zoksh-voice-engine` y de la etiqueta de modelo, la model card describe una aplicación Gradio (SDK 4.44.1, Python 3.10) con backend FastAPI que realiza síntesis expresiva de voz a instrumento, renderizado acústico multi-muestra mediante FluidSynth con banco General MIDI y control continuo de pitch-bend y CC11, y un hook extensible para RVC v2. No se trata, por tanto, de un modelo de lenguaje con pesos publicados, sino de un motor/aplicación de conversión de voz en instrumento musical.
+Zoksh Voice To Instrument Engine es un proyecto publicado en Hugging Face por el usuario el3almy3 bajo licencia MIT. A pesar del identificador `zoksh-voice-engine` y de la etiqueta de modelo, la model card describe una aplicación Gradio (SDK 4.44.1, Python 3.10) con backend FastAPI que realiza síntesis expresiva de voz a instrumento, renderizado acústico multi-muestra mediante FluidSynth con banco General MIDI y control continuo de pitch-bend y CC11, y un hook extensible para RVC v2. No se trata, por tanto, de un modelo de lenguaje con pesos publicados, sino de un motor/aplicación de conversión de voz en instrumento musical.
 
 La información disponible es muy limitada: cero descargas, cero likes, sin pipeline declarado, sin idiomas especificados y sin pesos ni arquitectura de red neuronal documentada más allá de la mención de RVC v2 como componente opcional. La model card se limita a describir la interfaz (Gradio y endpoints REST `/v1/health`, `/v1/presets/parse`, `/v1/convert`) y las capacidades de síntesis, sin detallar parámetros, datos de entrenamiento ni benchmarks.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 No disponible. No se han identificado en la informacion proporcionada modelos comparables de la misma categoría (motores de voz a instrumento con API REST y renderizado FluidSynth) con parámetros, contexto o licencia verificables.
 
 ## Limitaciones y advertencias
-- Proyecto con cero descargas y cero likes en HuggingFace; sin validación comunitaria ni mantenimiento documentado.
+- Proyecto con cero descargas y cero likes en Hugging Face; sin validación comunitaria ni mantenimiento documentado.
 - No se publican pesos ni arquitectura de red neuronal detallada; el repositorio parece contener código de aplicación, no un modelo entrenado.
 - Ausencia total de datos sobre sesgos, alucinación o comportamiento en dominios fuera de la síntesis musical.
 - No se especifican idiomas soportados, lo que impide evaluar su cobertura multilingüe.
@@ -66,4 +66,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Fecha de creación y actualización (2026-11-03) muy próxima entre sí, lo que sugiere un proyecto en estado inicial.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/el3almy3/zoksh-voice-engine
+- Hugging Face: https://huggingface.co/el3almy3/zoksh-voice-engine

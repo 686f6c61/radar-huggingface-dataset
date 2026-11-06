@@ -80,8 +80,8 @@ En cuanto al rendimiento de inferencia, la model card indica decodificacion de p
 
 | Modelo | Parametros | Arquitectura | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| span-02 (respanai) | ~15,8B totales (safetensors), ~4B activos | MoE, fine-tune de Gemma 4 26B-A4B, motor propio | Distribuciones tipadas calibradas | Apache 2.0 (con enlace a licencia Gemma 4) | HuggingFace, motor propio |
-| google/gemma-4-26B-A4B-it | 26B totales, ~4B activos | MoE multimodo | Texto generativo libre | Licencia Gemma 4 | HuggingFace |
+| span-02 (respanai) | ~15,8B totales (safetensors), ~4B activos | MoE, fine-tune de Gemma 4 26B-A4B, motor propio | Distribuciones tipadas calibradas | Apache 2.0 (con enlace a licencia Gemma 4) | Hugging Face, motor propio |
+| google/gemma-4-26B-A4B-it | 26B totales, ~4B activos | MoE multimodo | Texto generativo libre | Licencia Gemma 4 | Hugging Face |
 | Modelos de decision comerciales (System One de TypeSafe) | no disponible | no disponible | Respuestas tipadas | no disponible | API comercial |
 
 No se dispone de datos de rendimiento de modelos de decision comparables en la informacion proporcionada, por lo que la comparacion cuantitativa entre alternativas queda como no disponible.
@@ -100,8 +100,8 @@ No se dispone de datos de rendimiento de modelos de decision comparables en la i
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/respanai/span-02
-- Perfil del autor en HuggingFace: https://huggingface.co/respanai
+- Hugging Face del modelo: https://huggingface.co/respanai/span-02
+- Perfil del autor en Hugging Face: https://huggingface.co/respanai
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it (referenciado como base)
 - Borrador de decodificacion especulativa: https://huggingface.co/google/gemma-4-26B-A4B-it-assistant

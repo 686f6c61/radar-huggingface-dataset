@@ -6,7 +6,7 @@ SMAI A4 MLP es un perceptrón multicapa (MLP) entrenado desde cero con PyTorch s
 
 El modelo se entrenó con etiquetas verdaderas (p = 0, sin ruido de etiquetas) y sirve como línea base para comparar con una red IOC-NN en la tarea 1.5 del mismo trabajo académico. Su relevancia es, por tanto, didáctica y de reproducibilidad: ilustra un pipeline completo de preprocesado, inicialización, entrenamiento con SGD y evaluación sobre CIFAR-10, con los pesos exportados en formato NumPy (.npz) para poder inspeccionarlos o reutilizarlos fuera de PyTorch.
 
-Los resultados publicados son modestos: precisión de entrenamiento 1.0000 (sobreajuste completo) y precisión de test 0.5490, con una pérdida de test de 4.9792 y un F1 medio de 0.5496. El repositorio de HuggingFace tiene 0.0 GB, 0 descargas y 0 likes en el momento de la consulta, lo que confirma su carácter de entrega académica más que de artefacto listo para producción.
+Los resultados publicados son modestos: precisión de entrenamiento 1.0000 (sobreajuste completo) y precisión de test 0.5490, con una pérdida de test de 4.9792 y un F1 medio de 0.5496. El repositorio de Hugging Face tiene 0.0 GB, 0 descargas y 0 likes en el momento de la consulta, lo que confirma su carácter de entrega académica más que de artefacto listo para producción.
 
 ## Especificaciones técnicas
 
@@ -45,7 +45,7 @@ El preprocesado es determinista y documentado: aplanado de cada imagen, conversi
 - Inferencia en entornos sin framework de deep learning: al estar en .npz, se puede ejecutar con NumPy puro en un script o incluso en un dispositivo embebido con Python, sin necesidad de PyTorch.
 - Verificación de preprocesado: útil como referencia para validar que una implementación propia de estandarización por columna sobre CIFAR-10 produce los mismos logits que los pesos publicados.
 - Análisis de calibración y errores por clase: el F1 medio de 0.5496 permite estudiar qué clases se confunden más y cómo se comporta un clasificador sin aumentación de datos.
-- Pruebas de integración de artefactos .npz en pipelines de MLOps: valida el flujo de carga de pesos desde HuggingFace y su uso en un servicio de inferencia ligero.
+- Pruebas de integración de artefactos .npz en pipelines de MLOps: valida el flujo de carga de pesos desde Hugging Face y su uso en un servicio de inferencia ligero.
 
 ## Benchmarks y rendimiento
 
@@ -74,7 +74,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 | Modelo | Parámetros | Contexto | Precisión test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SMAI A4 MLP | 1.707.274 | no aplica | 0.5490 | MIT | HuggingFace (.npz) |
+| SMAI A4 MLP | 1.707.274 | no aplica | 0.5490 | MIT | Hugging Face (.npz) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sushanth0213/smai-a4-mlp
+- Hugging Face: https://huggingface.co/Sushanth0213/smai-a4-mlp
 - WandB del autor (run `mlp-p0`): https://forge.coreweave.com/wandb/sushanthmantrala-iiith/SMAI-A4-MLP

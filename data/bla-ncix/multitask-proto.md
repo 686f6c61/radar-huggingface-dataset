@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Bla-ncix/multitask-proto` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia en PyTorch de una arquitectura denominada Coca, en su configuracion xlarge, orientada a tareas multitarea. El autor lo describe explicitamente como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no como un modelo preentrenado listo para produccion.
+`Bla-ncix/multitask-proto` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia en PyTorch de una arquitectura denominada Coca, en su configuracion xlarge, orientada a tareas multitarea. El autor lo describe explicitamente como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no como un modelo preentrenado listo para produccion.
 
 El repositorio incluye un unico artefacto de pesos (`model.safetensors`) que, segun la propia model card, es un checkpoint de inicializacion valido para pruebas, no un modelo entrenado ni evaluado. El recuento real de parametros leido de los safetensors es de 49.600, una cifra extremadamente reducida que confirma su naturaleza de esqueleto arquitectonico mas que de modelo funcional.
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada y muy especifica: sirve como plantilla reproduc
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
-Datos adicionales declarados en la model card: escala xlarge, atencion flash, fusion Tucker, activacion mish, normalizacion groupnorm. No se especifica el pipeline de HuggingFace asociado.
+Datos adicionales declarados en la model card: escala xlarge, atencion flash, fusion Tucker, activacion mish, normalizacion groupnorm. No se especifica el pipeline de Hugging Face asociado.
 
 ## Arquitectura y entrenamiento
 
@@ -75,9 +75,9 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - No se documentan idiomas soportados ni limitaciones de contexto o idioma.
 - La licencia MIT permite uso comercial del codigo y de los pesos, pero el autor advierte de que deben revisarse por separado los terminos de las fuentes de datos externas si el repositorio se utiliza con datasets de terceros.
 - Para produccion: no apto. Cualquier resultado derivado de un futuro checkpoint entrenado debe documentarse de forma separada a los valores por defecto que se envian en este repositorio.
-- La fecha de creacion registrada en HuggingFace es 2026-10-05, posterior a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de basar trabajo en el.
+- La fecha de creacion registrada en Hugging Face es 2026-10-05, posterior a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de basar trabajo en el.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bla-ncix/multitask-proto
+- Hugging Face: https://huggingface.co/Bla-ncix/multitask-proto
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la busqueda web realizada. Los resultados de busqueda obtenidos no guardan relacion con el modelo y no se incluyen.

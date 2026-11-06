@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pt810/Ovis-Omni-Embedding-3B-mixed-w2-w4-w8-ct | 2890 (según safetensors) | no disponible | Mixta W2/W4/W8 + BF16 en torres | no disponible | HuggingFace, 0 descargas |
-| ATH-MaaS/Ovis-Omni-Embedding-3B (modelo original) | no disponible | no disponible | BF16 sin comprimir (presumiblemente) | no disponible (debe consultarse en su model card) | HuggingFace |
+| pt810/Ovis-Omni-Embedding-3B-mixed-w2-w4-w8-ct | 2890 (según safetensors) | no disponible | Mixta W2/W4/W8 + BF16 en torres | no disponible | Hugging Face, 0 descargas |
+| ATH-MaaS/Ovis-Omni-Embedding-3B (modelo original) | no disponible | no disponible | BF16 sin comprimir (presumiblemente) | no disponible (debe consultarse en su model card) | Hugging Face |
 | Otros modelos de embeddings de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de alternativas en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. La comparación relevante es con el modelo original del que deriva, respecto al cual este artefacto reduce el peso a costa de introducir error de cuantización no calibrado.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-mixed-w2-w4-w8-ct
+- Repositorio en Hugging Face: https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-mixed-w2-w4-w8-ct
 - Modelo original (referenciado en la model card): https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B
 
 Nota: la búsqueda web asociada no devolvió resultados relevantes para este modelo; los enlaces obtenidos correspondían a sitios de fuentes tipográficas, foros y redes sociales sin relación con Ovis ni con embeddings multimodales, por lo que se han omitido.

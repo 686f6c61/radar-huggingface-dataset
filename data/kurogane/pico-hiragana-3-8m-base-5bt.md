@@ -1,7 +1,7 @@
 # kurogane/pico-hiragana-3.8M-base-5BT
 
 ## Resumen
-kurogane/pico-hiragana-3.8M-base-5BT es un modelo de generacion de texto publicado por el usuario kurogane en HuggingFace. El identificador del repositorio indica tres caracteristicas basicas: un tamano de aproximadamente 3,8 millones de parametros (el prefijo "pico"), un entrenamiento de tipo base sin ajuste por instrucciones (el sufijo "-base") y un volumen de datos de preentrenamiento del orden de 5.000 millones de tokens (el sufijo "-5BT"). El termino "hiragana" sugiere una especializacion en el silabario japones, aunque la model card no lo confirma.
+kurogane/pico-hiragana-3.8M-base-5BT es un modelo de generacion de texto publicado por el usuario kurogane en Hugging Face. El identificador del repositorio indica tres caracteristicas basicas: un tamano de aproximadamente 3,8 millones de parametros (el prefijo "pico"), un entrenamiento de tipo base sin ajuste por instrucciones (el sufijo "-base") y un volumen de datos de preentrenamiento del orden de 5.000 millones de tokens (el sufijo "-5BT"). El termino "hiragana" sugiere una especializacion en el silabario japones, aunque la model card no lo confirma.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0. No se documentan la arquitectura, el dataset de entrenamiento, la longitud de contexto, los idiomas soportados ni los formatos de pesos. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-09-30), lo que apunta a una subida automatizada sin documentacion posterior.
 
@@ -27,7 +27,7 @@ Por su escala, el modelo se situa en la categoria de modelos experimentales de j
 ## Arquitectura y entrenamiento
 No se ha publicado informacion sobre la arquitectura en la model card ni en los resultados de busqueda. No hay datos sobre el tipo de red (transformer decoder-only, encoder-decoder, MoE, SSM o hibrida), el numero de capas, la dimension del modelo, el numero de cabezas de atencion ni el mecanismo de atencion empleado.
 
-Respecto al entrenamiento, el unico indicio es el sufijo "-5BT" del identificador, que sugiere un presupuesto de aproximadamente 5.000 millones de tokens. Se desconoce la composicion del dataset, si hubo fases de ajuste supervisado, RLHF o DPO, y si existe un tokenizador especifico para hiragana. El sufijo "-base" indica, en la convencion habitual de HuggingFace, un modelo preentrenado sin ajuste por instrucciones, por lo que no cabe esperar comportamiento de chat ni seguimiento de instrucciones.
+Respecto al entrenamiento, el unico indicio es el sufijo "-5BT" del identificador, que sugiere un presupuesto de aproximadamente 5.000 millones de tokens. Se desconoce la composicion del dataset, si hubo fases de ajuste supervisado, RLHF o DPO, y si existe un tokenizador especifico para hiragana. El sufijo "-base" indica, en la convencion habitual de Hugging Face, un modelo preentrenado sin ajuste por instrucciones, por lo que no cabe esperar comportamiento de chat ni seguimiento de instrucciones.
 
 ## Capacidades
 - Generacion de texto autoregresiva: es la unica capacidad implicita en la etiqueta del repositorio; no hay confirmacion explicita en la model card.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
-No disponible. La busqueda web realizada no ha identificado modelos comparables de la misma categoria (modelos de menos de 10 M de parametros especializados en silabarios japoneses) con documentacion publica que permita una comparacion de parametros, contexto, rendimiento y licencia. El unico resultado relevante sobre el autor es su perfil en HuggingFace, que lista otros modelos, entre ellos kurogane/HRM-Tiny-JA-500k-2x2-RC1 (0,1 B de parametros), pero no se dispone de sus especificaciones para establecer una comparativa rigurosa.
+No disponible. La busqueda web realizada no ha identificado modelos comparables de la misma categoria (modelos de menos de 10 M de parametros especializados en silabarios japoneses) con documentacion publica que permita una comparacion de parametros, contexto, rendimiento y licencia. El unico resultado relevante sobre el autor es su perfil en Hugging Face, que lista otros modelos, entre ellos kurogane/HRM-Tiny-JA-500k-2x2-RC1 (0,1 B de parametros), pero no se dispone de sus especificaciones para establecer una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 - Model card vacia: no hay informacion sobre arquitectura, datos de entrenamiento, tokenizador ni evaluacion, lo que impide auditar el modelo o reproducir sus resultados.
@@ -74,8 +74,8 @@ No disponible. La busqueda web realizada no ha identificado modelos comparables 
 - No apto para produccion: por escala, falta de evaluacion y ausencia de soporte, no deberia desplegarse en aplicaciones con usuarios finales.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/kurogane/pico-hiragana-3.8M-base-5BT
-- Perfil del autor en HuggingFace: https://huggingface.co/kurogane/models
+- Modelo en Hugging Face: https://huggingface.co/kurogane/pico-hiragana-3.8M-base-5BT
+- Perfil del autor en Hugging Face: https://huggingface.co/kurogane/models
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Vanespl/ass-4-q1-cifar-mlp` | 98.634 | 32x32x3 fijo | Clasificacion CIFAR-10 | no disponible | HuggingFace |
+| `Vanespl/ass-4-q1-cifar-mlp` | 98.634 | 32x32x3 fijo | Clasificacion CIFAR-10 | no disponible | Hugging Face |
 | MLP CIFAR-10 tipico (512 ocultas) | ~1,6 M | 32x32x3 fijo | Clasificacion CIFAR-10 | variable | Implementaciones publicas |
 | LeNet-5 adaptada a CIFAR-10 | ~60 K | 32x32x3 fijo | Clasificacion CIFAR-10 | variable | Referencias academicas |
 | ResNet-18 para CIFAR-10 | ~11 M | 32x32x3 fijo | Clasificacion CIFAR-10 | variable (MIT en torchvision) | torchvision |
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vanespl/ass-4-q1-cifar-mlp
+- Repositorio en Hugging Face: https://huggingface.co/Vanespl/ass-4-q1-cifar-mlp
 - Dataset CIFAR-10 (referencia): https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

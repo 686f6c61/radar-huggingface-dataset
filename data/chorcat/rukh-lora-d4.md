@@ -79,8 +79,8 @@ No se dispone de otros adaptadores LoRA de estilo para modelos de lenguaje de aj
 
 | Modelo | Parametros del adaptador | P(d2d4) | Entropia inicial | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| chorcat/rukh-medium-lora | no aplica (pesos base) | 26,68 % | 1,7695 bits | apache-2.0 | HuggingFace |
-| chorcat/rukh-lora-d4 | 393.216 (r=8, alpha=16) | 99,88 % | 0,0160 bits | apache-2.0 | HuggingFace |
+| chorcat/rukh-medium-lora | no aplica (pesos base) | 26,68 % | 1,7695 bits | apache-2.0 | Hugging Face |
+| chorcat/rukh-lora-d4 | 393.216 (r=8, alpha=16) | 99,88 % | 0,0160 bits | apache-2.0 | Hugging Face |
 | Otros adaptadores de estilo comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de otros adaptadores LoRA de estilo para modelos de lenguaje de aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chorcat/rukh-lora-d4
+- Modelo en Hugging Face: https://huggingface.co/chorcat/rukh-lora-d4
 - Modelo base: https://huggingface.co/chorcat/rukh-medium-lora
 - Repositorio del proyecto Rukh: https://github.com/borja-glez/rukh
 - Documentacion y explicacion del metodo: https://lab.rukh.borjaglez.com

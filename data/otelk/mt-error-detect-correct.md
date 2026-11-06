@@ -2,7 +2,7 @@
 
 ## Resumen
 
-otelk/mt-error-detect-correct es un repositorio publicado por el usuario otelk en HuggingFace que agrupa dos sistemas complementarios para el tratamiento de errores en traduccion automatica: deteccion de errores y correccion de errores. No se trata de un unico modelo, sino de cuatro artefactos: dos modelos completos (uno por tarea) y dos adaptadores LoRA entrenados con GRPO (Group Relative Policy Optimization), uno para cada componente.
+otelk/mt-error-detect-correct es un repositorio publicado por el usuario otelk en Hugging Face que agrupa dos sistemas complementarios para el tratamiento de errores en traduccion automatica: deteccion de errores y correccion de errores. No se trata de un unico modelo, sino de cuatro artefactos: dos modelos completos (uno por tarea) y dos adaptadores LoRA entrenados con GRPO (Group Relative Policy Optimization), uno para cada componente.
 
 El modelo base pertenece a la familia Qwen3, segun la etiqueta declarada por el autor, y esta disenado para tareas de generacion de texto aplicadas a la evaluacion y post-edicion de traducciones entre ingles y aleman. El repositorio ocupa 59,4 GB, un tamano coherente con la presencia de dos modelos completos en bfloat16 mas sus adaptadores, aunque el autor no especifica el numero exacto de parametros de cada componente.
 
@@ -33,7 +33,7 @@ Los adaptadores se entrenaron con GRPO, una tecnica de optimizacion por refuerzo
 - Correccion de errores de traduccion: el componente `error_correction` reescribe el segmento traduccido para subsanar los errores detectados.
 - Generacion de texto: el pipeline declarado es `text-generation`, por lo que ambos componentes operan como modelos generativos.
 - Soporte de LoRA: los adaptadores se cargan en vLLM mediante `LoRARequest`, con `max_lora_rank=16`, lo que permite servir varios adaptadores sobre la misma instancia.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el modelo esta preparado para su despliegue en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el modelo esta preparado para su despliegue en Hugging Face Inference Endpoints.
 - Capacidades multilingues: limitadas a ingles y aleman, los dos idiomas declarados en la model card.
 - Tool calling, function calling, agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Vision, audio o modo de pensamiento explicito: no disponible en la informacion proporcionada.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma explicita. Partiendo del tamano del repositorio (59,4 GB) y de la carga en bfloat16 indicada en el ejemplo, cada modelo completo rondaria los 28-30 GB de pesos, lo que situaria el requisito en aproximadamente 32-40 GB de VRAM por componente contando la cache KV. Esta estimacion es derivada y no esta confirmada por el autor.
 - GPU recomendadas: para servir un componente en bfloat16 serian necesarias GPUs con 40-80 GB de memoria, como A100 40 GB, A100 80 GB, H100 o L40S. El despliegue completo de ambos componentes simultaneamente requeriria mas memoria o instancias separadas.
 - Compatibilidad con GPU de consumo: no confirmada. Una unica RTX 4090 (24 GB) no bastaria para un componente en bfloat16 segun la estimacion anterior, salvo que se aplique cuantizacion, opcion que el autor no documenta.
-- Opciones de despliegue: vLLM con `enable_lora=True` y `max_lora_rank=16`, tal como muestra la model card. Tambien es compatible con la libreria `transformers` y con HuggingFace Inference Endpoints segun el tag `endpoints_compatible`.
+- Opciones de despliegue: vLLM con `enable_lora=True` y `max_lora_rank=16`, tal como muestra la model card. Tambien es compatible con la libreria `transformers` y con Hugging Face Inference Endpoints segun el tag `endpoints_compatible`.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,8 +66,8 @@ La informacion proporcionada no incluye especificaciones de modelos comparables,
 
 | Modelo / categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| otelk/mt-error-detect-correct | no disponible | no disponible | no disponible | no disponible | HuggingFace (repo de 59,4 GB) |
-| Modelos base Qwen3 | no disponible en la informacion | no disponible | no disponible | no disponible | HuggingFace |
+| otelk/mt-error-detect-correct | no disponible | no disponible | no disponible | no disponible | Hugging Face (repo de 59,4 GB) |
+| Modelos base Qwen3 | no disponible en la informacion | no disponible | no disponible | no disponible | Hugging Face |
 | Sistemas de quality estimation (tipo COMET/xCOMET) | no disponible | no disponible | no disponible | no disponible | Publicaciones academicas |
 | Modelos encoder de deteccion de errores (tipo GEMBA-MQM) | no disponible | no disponible | no disponible | no disponible | Publicaciones academicas |
 
@@ -87,5 +87,5 @@ No se dispone de datos verificables que permitan una comparacion cuantitativa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/otelk/mt-error-detect-correct
+- Modelo en Hugging Face: https://huggingface.co/otelk/mt-error-detect-correct
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos correspondian a contenido no relacionado con el modelo.

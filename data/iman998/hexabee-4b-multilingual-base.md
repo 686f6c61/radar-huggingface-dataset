@@ -76,8 +76,8 @@ La model card indica explicitamente que no existe una evaluacion independiente d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HexaBee-4B-Multilingual-Base | 4,3 B | No disponible en el repositorio (base Gemma 3 4B IT: 128 000 tokens) | Gemma | HuggingFace, safetensors + processor | Checkpoint intermedio de traduccion multilingüe; sin evaluacion independiente publicada |
-| google/gemma-3-4b-it | Aproximadamente 4,3 B | 128 000 tokens declarados por el modelo base | Gemma | HuggingFace, safetensors | Modelo base multimodal image-text-to-text sobre el que se construye HexaBee; no especializado en traduccion |
+| HexaBee-4B-Multilingual-Base | 4,3 B | No disponible en el repositorio (base Gemma 3 4B IT: 128 000 tokens) | Gemma | Hugging Face, safetensors + processor | Checkpoint intermedio de traduccion multilingüe; sin evaluacion independiente publicada |
+| google/gemma-3-4b-it | Aproximadamente 4,3 B | 128 000 tokens declarados por el modelo base | Gemma | Hugging Face, safetensors | Modelo base multimodal image-text-to-text sobre el que se construye HexaBee; no especializado en traduccion |
 | Otras alternativas de 3-4 B (Qwen, Llama, Phi) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ La model card indica explicitamente que no existe una evaluacion independiente d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Iman998/HexaBee-4B-Multilingual-Base
+- Modelo en Hugging Face: https://huggingface.co/Iman998/HexaBee-4B-Multilingual-Base
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - HexaBee-4B (modelo final de la familia): https://huggingface.co/Iman998/HexaBee-4B
 - HexaBee · Wikipedia PT LoRA: https://huggingface.co/Iman998/HexaBee-4B-PT-LoRA

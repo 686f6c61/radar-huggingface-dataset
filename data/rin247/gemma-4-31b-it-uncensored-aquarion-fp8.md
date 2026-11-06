@@ -76,7 +76,7 @@ La comparativa se basa en información pública; no se dispone de datos de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/gemma-4-31B-it-Uncensored-Aquarion-FP8
+- Modelo en Hugging Face: https://huggingface.co/Rin247/gemma-4-31B-it-Uncensored-Aquarion-FP8
 - Modelo base de Google: https://huggingface.co/google/gemma-4-31B
 - Página oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Modelo GGUF uncensored (referencia): https://local-ai-zone.github.io/models/gemma-4-31b-it-uncensored.html

@@ -75,8 +75,8 @@ No se dispone de datos numericos comparables publicados en la informacion dispon
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dptlab-klein-lora-subject5 | 13,8 M entrenables (base ~4 B) | No disponible | CLIP-T 0,9646 / DINO 0,4320 / CLIP-I 0,7062 | Apache 2.0 | HuggingFace, 0 descargas |
-| FLUX.2-klein-4B (base, sin adaptador) | ~4 B | No disponible | No disponible en esta informacion | No disponible en esta informacion | HuggingFace |
+| dptlab-klein-lora-subject5 | 13,8 M entrenables (base ~4 B) | No disponible | CLIP-T 0,9646 / DINO 0,4320 / CLIP-I 0,7062 | Apache 2.0 | Hugging Face, 0 descargas |
+| FLUX.2-klein-4B (base, sin adaptador) | ~4 B | No disponible | No disponible en esta informacion | No disponible en esta informacion | Hugging Face |
 | Otros adaptadores de la suite dptlab (5 metodos adicionales) | No disponible | No disponible | Documentado en `RESULTS.md`, no incluido aqui | No disponible | Repositorio del autor |
 
 ## Limitaciones y advertencias
@@ -90,11 +90,11 @@ No se dispone de datos numericos comparables publicados en la informacion dispon
 - Idioma: no se declara soporte multilingue. Los prompts de ejemplo estan en ingles; el comportamiento con prompts en castellano no esta verificado.
 - Licencia: Apache 2.0 permite uso comercial del adaptador, pero el modelo base FLUX.2-klein-4B tiene su propia licencia, que debe revisarse por separado antes de cualquier despliegue comercial.
 - Tracto de adopcion nulo: 0 descargas y 0 likes en el momento de la consulta, sin mantenimiento ni soporte documentado.
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente foros de traduccion griega sin relacion), por lo que toda la informacion procede de la model card y de los metadatos de HuggingFace.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente foros de traduccion griega sin relacion), por lo que toda la informacion procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OnePunchMonk101010/dptlab-klein-lora-subject5
+- Modelo en Hugging Face: https://huggingface.co/OnePunchMonk101010/dptlab-klein-lora-subject5
 - Repositorio dptlab (Diffusion Post-Training Lab): https://github.com/OnePunchMonk/diffusion-post-training-lab
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - `RESULTS.md` con la comparativa de los seis metodos: referenciado en la model card dentro del repositorio del autor (URL directa no disponible)

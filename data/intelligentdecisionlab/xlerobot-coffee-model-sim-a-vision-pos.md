@@ -81,7 +81,7 @@ No se dispone de información sobre otros modelos robóticos comparables en la m
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-sim-a-vision-pos)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-sim-a-vision-pos)
 - [Repositorio compañero (método B, fuerza)](https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-sim-b-force)
 - [GitHub XLeRobot (proyecto original)](https://github.com/Vector-Wangel/XLeRobot)
 - [GitHub XLeRobot (fork con hardware)](https://github.com/ggs2ggs/XLeRobot)

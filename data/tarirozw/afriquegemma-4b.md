@@ -80,11 +80,11 @@ Delta de AfriqueGemma-4B frente a Gemma 3 4B: +7,57 puntos de media (+18,8 %). E
 
 | Modelo | Parámetros | Contexto | Media multilingüe (suite) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriqueGemma-4B | 4,3B | 8.192 | 47,88 | cc-by-4.0 (+ Gemma Terms) | HuggingFace, 0 descargas en el repositorio indexado |
-| Gemma 3 4B PT | 4,3B | 128K según Google | 40,31 | Gemma Terms of Use | HuggingFace, ampliamente utilizado |
-| AfriqueQwen-4B | ~4B | no disponible en la información | 54,94 | no disponible en la información | HuggingFace (McGill-NLP) |
-| Qwen3-4B Base | ~4B | 32.768 | 31,49 | Apache 2.0 | HuggingFace, muy extendido |
-| AfriqueGemma-12B | ~12B | no disponible en la información | 58,82 | no disponible en la información | HuggingFace (McGill-NLP) |
+| AfriqueGemma-4B | 4,3B | 8.192 | 47,88 | cc-by-4.0 (+ Gemma Terms) | Hugging Face, 0 descargas en el repositorio indexado |
+| Gemma 3 4B PT | 4,3B | 128K según Google | 40,31 | Gemma Terms of Use | Hugging Face, ampliamente utilizado |
+| AfriqueQwen-4B | ~4B | no disponible en la información | 54,94 | no disponible en la información | Hugging Face (McGill-NLP) |
+| Qwen3-4B Base | ~4B | 32.768 | 31,49 | Apache 2.0 | Hugging Face, muy extendido |
+| AfriqueGemma-12B | ~12B | no disponible en la información | 58,82 | no disponible en la información | Hugging Face (McGill-NLP) |
 
 La comparativa interna de la suite sitúa a AfriqueQwen-4B (54,94) y AfriqueQwen3.5-4B (57,12) por delante de AfriqueGemma-4B (47,88) en la media de las siete tareas, mientras que este último supera a Qwen3.5-4B sin adaptar (46,01). El contexto nativo de 8.192 tokens es la limitación comparativa más clara frente a Qwen3-4B (32K) y frente a las 128K que anuncia Google para Gemma 3.
 

@@ -45,7 +45,7 @@ Al ser un modelo de la familia qwen3_5_text, se trata de un transformer causal d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo. Al contar con cero descargas y cero likes en HuggingFace, tampoco hay evaluaciones de la comunidad disponibles.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo. Al contar con cero descargas y cero likes en Hugging Face, tampoco hay evaluaciones de la comunidad disponibles.
 
 ## Requisitos de hardware
 
@@ -72,6 +72,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/bogairff55/ViAble-1.6-9B
+- Página del modelo en Hugging Face: https://huggingface.co/bogairff55/ViAble-1.6-9B
 - Repositorio del modelo base ViAble: https://huggingface.co/bogairff55/ViAble
 - Repositorio del proyecto viable-studio (notebooks y módulos de entrenamiento): https://huggingface.co/bogairff55/viable-studio

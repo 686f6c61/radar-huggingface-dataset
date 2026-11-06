@@ -75,7 +75,7 @@ La principal diferencia frente a las alternativas es el formato de empaquetado y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PreDoctor/Qwen3.8-27B-NVFP4-W4A16-PreTensor
+- Modelo en Hugging Face: https://huggingface.co/PreDoctor/Qwen3.8-27B-NVFP4-W4A16-PreTensor
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version NVFP4 de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

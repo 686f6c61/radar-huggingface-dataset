@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de datos numéricos de modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pcp-mae.scanobjectnn-hardest.xiangdong-zhang
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pcp-mae.scanobjectnn-hardest.xiangdong-zhang
 - Modelo base (preentrenamiento): https://huggingface.co/torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang
 - Paper PCP-MAE (arXiv): https://arxiv.org/abs/2408.08753
 - Repositorio original PCP-MAE: https://github.com/aHapBean/PCP-MAE

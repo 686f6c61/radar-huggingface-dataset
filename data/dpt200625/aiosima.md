@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DPT200625/aiosima` es un modelo publicado en HuggingFace por el usuario DPT200625 bajo licencia MIT. La información pública disponible es extremadamente limitada: la model card únicamente contiene la línea de licencia, sin descripción, arquitectura, parámetros, ni datos de entrenamiento. El repositorio no registra descargas ni likes, y su fecha de creación es el 19 de agosto de 2026. No se dispone de información sobre el pipeline, los idiomas soportados, el formato de pesos ni ninguna especificación técnica.
+El modelo `DPT200625/aiosima` es un modelo publicado en Hugging Face por el usuario DPT200625 bajo licencia MIT. La información pública disponible es extremadamente limitada: la model card únicamente contiene la línea de licencia, sin descripción, arquitectura, parámetros, ni datos de entrenamiento. El repositorio no registra descargas ni likes, y su fecha de creación es el 19 de agosto de 2026. No se dispone de información sobre el pipeline, los idiomas soportados, el formato de pesos ni ninguna especificación técnica.
 
 El autor mantiene un repositorio GitHub denominado `Autonomous-HR-Inteligence-Agent`, que describe un asistente multiagente para recursos humanos, pero no se ha confirmado que este repositorio esté relacionado con el modelo `aiosima`. Dada la ausencia de documentación técnica, cualquier evaluación de capacidades o rendimiento resulta imposible en este momento.
 
@@ -57,5 +57,5 @@ No disponible. No se han identificado modelos comparables debido a la falta de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DPT200625/aiosima
+- Modelo en Hugging Face: https://huggingface.co/DPT200625/aiosima
 - Repositorio GitHub del autor (posiblemente relacionado, sin confirmar): https://github.com/dpt200625/Autonomous-HR-Inteligence-Agent

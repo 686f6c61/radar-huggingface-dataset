@@ -87,7 +87,7 @@ La comparativa se limita a las alternativas documentadas en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BennyDaBall/PiD-1.5-flux2-nvfp4-comfy
+- Modelo en Hugging Face: https://huggingface.co/BennyDaBall/PiD-1.5-flux2-nvfp4-comfy
 - Modelo base (NVIDIA PiD): https://huggingface.co/nvidia/PiD
 - Paper de PiD (arXiv): https://arxiv.org/abs/2605.23902
 - Repo del plugin tiled: https://github.com/BennyDaBall930/ComfyUI-Latent-Tiled-PiD

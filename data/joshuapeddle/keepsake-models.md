@@ -99,8 +99,8 @@ Frente a alternativas de la misma categoria (por ejemplo, GFPGAN u otros exporta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoshuaPeddle/keepsake-models
-- Perfil del autor en HuggingFace: https://huggingface.co/JoshuaPeddle
+- Repositorio en Hugging Face: https://huggingface.co/JoshuaPeddle/keepsake-models
+- Perfil del autor en Hugging Face: https://huggingface.co/JoshuaPeddle
 - ExecuTorch (runtime): https://github.com/pytorch/executorch
 - Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Bringing Old Photos Back to Life: https://github.com/microsoft/Bringing-Old-Photos-Back-to-Life

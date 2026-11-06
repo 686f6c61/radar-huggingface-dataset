@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi-K3.1-Pro-Global-Pruned-37 es una versión comprimida del modelo multimodal MoE Kimi-K3.1-Pro de Moonshot AI, publicada por Nota AI (nota-ai) en HuggingFace. La intervención consiste en una poda no uniforme de expertos enrutados: se elimina el 37,5 % de los expertos, pasando de 82.432 a 51.520 expertos repartidos entre capas (536–616 por capa, manteniendo los 896 completos en las dos primeras y dos últimas capas MoE; la capa 0 es densa). El objetivo es reducir el checkpoint de 1.454 GiB a 948 GiB para que quepa en 8×NVIDIA B200 con TP8, algo que el checkpoint original MXFP4 no consigue.
+Kimi-K3.1-Pro-Global-Pruned-37 es una versión comprimida del modelo multimodal MoE Kimi-K3.1-Pro de Moonshot AI, publicada por Nota AI (nota-ai) en Hugging Face. La intervención consiste en una poda no uniforme de expertos enrutados: se elimina el 37,5 % de los expertos, pasando de 82.432 a 51.520 expertos repartidos entre capas (536–616 por capa, manteniendo los 896 completos en las dos primeras y dos últimas capas MoE; la capa 0 es densa). El objetivo es reducir el checkpoint de 1.454 GiB a 948 GiB para que quepa en 8×NVIDIA B200 con TP8, algo que el checkpoint original MXFP4 no consigue.
 
 El modelo conserva la arquitectura MoE y el codificador de visión del original, con 1.758.860.943.936 parámetros totales según los safetensors del repositorio, y soporta un contexto de hasta 1.048.576 tokens con KV cache en FP8 y decodificación especulativa DSpark. Está empaquetado con compressed-tensors en 8 bits y requiere transformers con código personalizado (`trust-remote-code`).
 
@@ -78,8 +78,8 @@ Ajustes de evaluación: longitud máxima de generación de 65.536 tokens (inclui
 
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kimi-K3.1-Pro-Global-Pruned-37 (este) | 1,76 B (1.758.860.943.936) | 1.048.576 | Kimi K3.1-Pro License (other) | HuggingFace con gate de acceso | Poda del 37,5 % de expertos; 948 GiB; sirve en 8×B200 |
-| moonshotai/Kimi-K3.1-Pro (original) | no disponible en la información | no disponible en la información | Kimi K3.1-Pro License | HuggingFace | Checkpoint MXFP4 de 1.454 GiB; requiere 8×B300; GPQA-Diamond 94,20 |
+| Kimi-K3.1-Pro-Global-Pruned-37 (este) | 1,76 B (1.758.860.943.936) | 1.048.576 | Kimi K3.1-Pro License (other) | Hugging Face con gate de acceso | Poda del 37,5 % de expertos; 948 GiB; sirve en 8×B200 |
+| moonshotai/Kimi-K3.1-Pro (original) | no disponible en la información | no disponible en la información | Kimi K3.1-Pro License | Hugging Face | Checkpoint MXFP4 de 1.454 GiB; requiere 8×B300; GPQA-Diamond 94,20 |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos de modelos comparables |
 
 La única comparación con datos verificables es frente al modelo base: misma licencia y familia, pero el original exige 8×B300 y esta variante cabe en 8×B200 a cambio de una pérdida de 0,77 puntos en GPQA-Diamond.
@@ -98,7 +98,7 @@ La única comparación con datos verificables es frente al modelo base: misma li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nota-ai/Kimi-K3.1-Pro-Global-Pruned-37
+- Modelo en Hugging Face: https://huggingface.co/nota-ai/Kimi-K3.1-Pro-Global-Pruned-37
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Licencia Kimi K3.1-Pro: https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE
 - Receta de vLLM para Kimi-K3.1-Pro: https://recipes.vllm.ai/moonshotai/Kimi-K3.1-Pro

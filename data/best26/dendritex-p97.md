@@ -86,7 +86,7 @@ El modelo supera a su predecesor directo (Qwen3.5-35BA3B) en SWE-bench Verified 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/best26/dendritex-p97
+- Repositorio Hugging Face: https://huggingface.co/best26/dendritex-p97
 - Model card original de Qwen3.6-35B-A3B (referencia): https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Perfil del autor best26: https://huggingface.co/best26/models

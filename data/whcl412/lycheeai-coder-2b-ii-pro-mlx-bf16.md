@@ -12,7 +12,7 @@ El modelo esta pensado para ejecucion local en Apple Silicon mediante MLX, aunqu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only; los tags de HuggingFace declaran la arquitectura `llama`. Detalles de capas, atencion y preentrenamiento no disponibles |
+| Arquitectura | Transformer decoder-only; los tags de Hugging Face declaran la arquitectura `llama`. Detalles de capas, atencion y preentrenamiento no disponibles |
 | Parametros totales | 2.516.756.480 (~2,52 mil millones) |
 | Parametros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | No disponible |
@@ -80,8 +80,8 @@ No se dispone de datos de benchmarks que permitan una comparacion de rendimiento
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| LycheeAI-coder-2b-II-pro-MLX-bf16 | 2,52 B | no disponible | Apache 2.0 | Codigo + tool calling, ajuste LoRA sobre MiniCPM5-2B | HuggingFace, ModelScope, GGUF |
-| openbmb/MiniCPM5-2B (base) | ~2,5 B (no confirmado en la informacion disponible) | no disponible | Apache 2.0 | Modelo base generalista | HuggingFace |
+| LycheeAI-coder-2b-II-pro-MLX-bf16 | 2,52 B | no disponible | Apache 2.0 | Codigo + tool calling, ajuste LoRA sobre MiniCPM5-2B | Hugging Face, ModelScope, GGUF |
+| openbmb/MiniCPM5-2B (base) | ~2,5 B (no confirmado en la informacion disponible) | no disponible | Apache 2.0 | Modelo base generalista | Hugging Face |
 | MiniCPM5-2B ajustado con LoRA propio | 2,52 B | no disponible | Apache 2.0 | Depende del ajuste del usuario | Requiere entrenamiento propio |
 | Qwen2.5-Coder en rango 1,5-3 B | no disponible | no disponible | no disponible | Codigo | no disponible en la informacion proporcionada |
 
@@ -103,7 +103,7 @@ La comparacion con alternativas comerciales o abiertas de la misma franja de tam
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro-MLX-bf16
+- Repositorio del modelo en Hugging Face: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro-MLX-bf16
 - Repositorio principal (version MLX 4bit, con documentacion completa, capacidades y limitaciones): https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro
 - Repositorio GGUF: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro-GGUF
 - Modelo base MiniCPM5-2B (OpenBMB): https://huggingface.co/openbmb/MiniCPM5-2B

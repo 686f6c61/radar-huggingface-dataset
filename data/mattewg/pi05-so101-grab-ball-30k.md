@@ -81,7 +81,7 @@ El único dato cuantitativo de rendimiento en entrenamiento es la pérdida final
 
 | Modelo | Relacion | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pi05-so101-grab-ball-30k | Este modelo | no disponible | no disponible | "Grab the ball" en SO-101 | apache-2.0 | HuggingFace, repo de 12,4 GB |
+| pi05-so101-grab-ball-30k | Este modelo | no disponible | no disponible | "Grab the ball" en SO-101 | apache-2.0 | Hugging Face, repo de 12,4 GB |
 | physical-intelligence/pi05_base | Modelo base del fine-tuning | no disponible | no disponible | VLA multitarea de propósito general (pi0.5) | no disponible en la informacion proporcionada | Pesos referenciados en `gs://openpi-assets/checkpoints/pi05_base/params` |
 | Otras políticas VLA de manipulación (p. ej. OpenVLA, RDT, pi0) | Alternativas de categoría | no disponible | no disponible | Manipulación robótica | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ La información proporcionada no incluye cifras de rendimiento, parámetros ni c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattewg/pi05-so101-grab-ball-30k
+- Modelo en Hugging Face: https://huggingface.co/mattewg/pi05-so101-grab-ball-30k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ibuprofene/grab_ball_2cam_v1
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Repositorio openpi: https://github.com/Physical-Intelligence/openpi

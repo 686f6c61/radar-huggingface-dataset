@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de datos verificables de modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scottlowry/Qwen3-VL-Embedding-8B-omlx
+- Repositorio en Hugging Face: https://huggingface.co/scottlowry/Qwen3-VL-Embedding-8B-omlx
 - Build cuantizada companion (oQ6e): https://huggingface.co/scottlowry/Qwen3-VL-Embedding-8B-omlx-oQ6e
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B
 - Paper, blog o repositorio adicional: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los enlaces obtenidos correspondían a páginas comerciales de moda sin relación con el contenido de esta ficha.

@@ -4,7 +4,7 @@
 
 FireRed Streaming VAD ONNX es un detector de actividad de voz (VAD) en tiempo real distribuido en formato ONNX por el proyecto diarizeapp. A diferencia de un modelo generativo, se trata de un componente de senal especializado: recibe flujo de audio y decide en cada instante si hay voz humana, ademas de segmentar fronteras fonemicas. Su relevancia practica esta en que actua como puerta de entrada en pipelines de conversacion (diarizacion, transcripcion, asistentes de voz) evitando enviar silencio o ruido a etapas mas costosas.
 
-El repositorio se presenta como la ubicacion canonica del artefacto, mantenida por el ecosistema diarizeapp para garantizar disponibilidad persistente y evitar roturas por dependencias que devuelven 404. El modelo se publica bajo licencia Apache 2.0 y esta catalogado en HuggingFace con el pipeline `audio-to-audio`, aunque su funcion real es la clasificacion binaria de voz por trama.
+El repositorio se presenta como la ubicacion canonica del artefacto, mantenida por el ecosistema diarizeapp para garantizar disponibilidad persistente y evitar roturas por dependencias que devuelven 404. El modelo se publica bajo licencia Apache 2.0 y esta catalogado en Hugging Face con el pipeline `audio-to-audio`, aunque su funcion real es la clasificacion binaria de voz por trama.
 
 La informacion publicada es muy escasa: no se detallan parametros, arquitectura interna, ventana de contexto ni metricas de evaluacion. Lo que si se documenta con precision son los proveedores de ejecucion soportados (NPU Hexagon HTP en Snapdragon X Elite mediante contexto QDQ estatico, DirectML, CUDA y CPU con SIMD en x86_64 y ARM NEON), lo que lo posiciona como una pieza orientada al despliegue en el borde mas que a la experimentacion con modelos grandes.
 
@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye detectores de voz alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diarizeapp/firered-vad-onnx
+- Hugging Face: https://huggingface.co/diarizeapp/firered-vad-onnx
 - Repositorio del mantenedor: https://github.com/benzy/diarize

@@ -77,12 +77,12 @@ La comparacion se basa unicamente en especificaciones, ya que no se dispone de d
 - Solo soporta ingles; no se ha confirmado capacidad multilingue.
 - No se dispone de informacion sobre sesgos, alucinaciones o limitaciones de contexto.
 - Al ser un merge comunitario, la calidad y consistencia de las respuestas puede variar y no esta garantizada.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es muy reciente o poco probado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es muy reciente o poco probado por la comunidad.
 - No se han publicado benchmarks, por lo que su rendimiento relativo frente a otros modelos de tamano similar es desconocido.
 - La fecha de creacion (agosto de 2026) sugiere que es un modelo muy reciente con poca validacion externa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/L3.1-Stygianv2-12B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/L3.1-Stygianv2-12B-i1-GGUF
 - Modelo base: https://huggingface.co/kromcomp/L3.1-Stygianv2-12B
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher

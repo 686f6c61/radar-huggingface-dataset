@@ -70,6 +70,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-stem60-geometry40-direct-step100
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-stem60-geometry40-direct-step100
 - Modelo base Qwen/Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

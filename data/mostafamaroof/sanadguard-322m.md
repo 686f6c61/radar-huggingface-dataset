@@ -21,7 +21,7 @@ El modelo aplica de forma automatica un umbral de decision guardado de 0,2276 y 
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (incluye codigo Python auxiliar `predict_guard.py` en el repositorio) |
 
-Datos adicionales: el repositorio ocupa 1,3 GB, la libreria declarada es `laya`, la pipeline es `text-classification` y el modelo base es un fine-tuning de convaiinnovations/laya-multilingual. Fecha de creacion registrada en HuggingFace: 2026-10-07.
+Datos adicionales: el repositorio ocupa 1,3 GB, la libreria declarada es `laya`, la pipeline es `text-classification` y el modelo base es un fine-tuning de convaiinnovations/laya-multilingual. Fecha de creacion registrada en Hugging Face: 2026-10-07.
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ No se dispone de datos de parametros, contexto ni licencia de los dos comparador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MostafaMaroof/sanadguard-322m
+- Modelo en Hugging Face: https://huggingface.co/MostafaMaroof/sanadguard-322m
 - Modelo base (Laya multilingual): https://huggingface.co/convaiinnovations/laya-multilingual
 - Repositorio de la libreria laya: https://github.com/NandhaKishorM/laya
 - Dataset PolyGuardMix: ToxicityPrompts/PolyGuardMix

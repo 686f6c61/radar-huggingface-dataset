@@ -99,7 +99,7 @@ No se dispone de informacion sobre otros modelos publicos especializados en norm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjinseok/k-safeguard-normalizer-v1
+- Modelo en Hugging Face: https://huggingface.co/jjinseok/k-safeguard-normalizer-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/jjinseok/k-safeguard-normalizer-train-v1
 - Repositorio k-safeguard (inferencia y generador de ofuscacion): https://github.com/jinseok3639/k-safeguard
 - Codigo de entrenamiento: https://github.com/jinseok3639/k-safeguard-ML-experiment

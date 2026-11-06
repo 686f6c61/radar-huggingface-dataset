@@ -90,7 +90,7 @@ La model card advierte que el ELBO negativo es una cota superior de la log-veros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-151m-60.8bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-151m-60.8bt-mdlm-cooled
 - Repositorio de datos (`DATA.md`) referenciado en la model card: no disponible como enlace directo en la información proporcionada
 - Paper o blog del estudio de escalado: no disponible en la información proporcionada
 - Repositorio de código de entrenamiento: no disponible en la información proporcionada

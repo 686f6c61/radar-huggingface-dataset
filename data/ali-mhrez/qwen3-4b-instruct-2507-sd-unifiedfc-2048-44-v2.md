@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-44-v2 es un ajuste fino supervisado (SFT) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Se trata de un derivado de la familia Qwen3 en su variante instruct de 4B parámetros, entrenado con TRL 0.24.0 y la librería Unsloth, y distribuido en formato safetensors compatible con transformers. El nombre del repositorio sugiere un entrenamiento orientado a "function calling" unificado y a una longitud de secuencia de 2048 tokens, aunque la model card no documenta ni el dataset ni la configuración de entrenamiento.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-44-v2 es un ajuste fino supervisado (SFT) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Se trata de un derivado de la familia Qwen3 en su variante instruct de 4B parámetros, entrenado con TRL 0.24.0 y la librería Unsloth, y distribuido en formato safetensors compatible con transformers. El nombre del repositorio sugiere un entrenamiento orientado a "function calling" unificado y a una longitud de secuencia de 2048 tokens, aunque la model card no documenta ni el dataset ni la configuración de entrenamiento.
 
 El interés de esta ficha es limitado pero ilustrativo: muestra el flujo habitual de la comunidad para especializar modelos pequeños de la familia Qwen3 mediante SFT con Unsloth, y sirve como ejemplo de por qué conviene auditar los repositorios derivados antes de usarlos. El modelo base Qwen3-4B-Instruct-2507 es un transformer denso con unos 4.000 millones de parámetros y 262.144 tokens de contexto nativo, lo que le confiere capacidades razonables de razonamiento, código y multilingüismo.
 
@@ -89,8 +89,8 @@ Los datos de contexto y licencia de las alternativas provienen de sus fichas pú
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-44-v2
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
+- Repositorio en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-44-v2
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentación de Transformers: https://huggingface.co/docs/transformers

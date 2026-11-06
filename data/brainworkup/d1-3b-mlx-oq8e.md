@@ -2,7 +2,7 @@
 
 ## Resumen
 
-d1-3B-MLX-oQ8e es una version cuantizada del modelo d1-3B, distribuida por el usuario brainworkup en HuggingFace. Se trata de un checkpoint de 3.123.483.888 parametros (3,12 mil millones) que emplea la arquitectura lfm2_vl, lo que indica un modelo multimodal con capacidad de vision ademas de generacion de texto. La cuantizacion se ha realizado con oQ (oMLX v0.7.3), una tecnica de cuantizacion de precision mixta que combina pesos en 8 bits afines con grupo de 64 y pesos en BF16, resultando en un promedio efectivo de 9,524 bits por peso.
+d1-3B-MLX-oQ8e es una version cuantizada del modelo d1-3B, distribuida por el usuario brainworkup en Hugging Face. Se trata de un checkpoint de 3.123.483.888 parametros (3,12 mil millones) que emplea la arquitectura lfm2_vl, lo que indica un modelo multimodal con capacidad de vision ademas de generacion de texto. La cuantizacion se ha realizado con oQ (oMLX v0.7.3), una tecnica de cuantizacion de precision mixta que combina pesos en 8 bits afines con grupo de 64 y pesos en BF16, resultando en un promedio efectivo de 9,524 bits por peso.
 
 El modelo esta empaquetado en formato MLX, la libreria de Apple para ejecucion de modelos de aprendizaje automatico sobre silicio de la serie M (M1, M2, M3, M4), lo que lo hace especialmente relevante para desarrolladores que quieran desplegar un modelo de 3B con vision en Macs sin necesidad de GPU dedicada. El repositorio ocupa 3,7 GB, con 2,866 GB correspondientes al modelo de lenguaje y 0,853 GB a la torre de vision.
 
@@ -12,7 +12,7 @@ La relevancia actual de esta ficha radica en que se trata de una publicacion rec
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | lfm2_vl (transformer multimodal con torre de vision, segun el tag de HuggingFace) |
+| Arquitectura | lfm2_vl (transformer multimodal con torre de vision, segun el tag de Hugging Face) |
 | Parametros totales | 3.123.483.888 (3,12B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d1-3B-MLX-oQ8e | 3,12B | no disponible | Si (lfm2_vl) | no disponible | MLX safetensors | HuggingFace, 0 descargas |
+| d1-3B-MLX-oQ8e | 3,12B | no disponible | Si (lfm2_vl) | no disponible | MLX safetensors | Hugging Face, 0 descargas |
 | Modelo base d1-3B | 3,12B (presumible) | no disponible | Si (presumible) | no disponible | no disponible | no disponible en la informacion |
 | Alternativas de 3B multimodal | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brainworkup/d1-3B-MLX-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/brainworkup/d1-3B-MLX-oQ8e
 - Repositorio de oQ/oMLX: https://github.com/jundot/omlx
 - Modelo base d1-3B: no disponible en la informacion proporcionada
 - Paper o blog de la arquitectura lfm2_vl: no disponible en la informacion proporcionada

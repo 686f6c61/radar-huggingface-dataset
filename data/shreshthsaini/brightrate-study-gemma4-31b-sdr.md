@@ -61,7 +61,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - Para inferencia en FP16, el modelo base necesita aproximadamente 62 GB de VRAM (solo pesos), por lo que se requiere una GPU profesional como A100 (80 GB) o H100 (80 GB).
 - Con cuantización de 8 bits, la VRAM necesaria baja a unos 31 GB, permitiendo su uso en GPUs como RTX 4090 (24 GB) o A6000 (48 GB) con margen.
 - Con cuantización de 4 bits, se puede ejecutar en GPUs de 16-24 GB, aunque la documentación del adaptador no especifica cuantizaciones compatibles.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama o TGI pueden servir para el modelo base, pero el adaptador PEFT requiere cargarse con la librería `peft` de HuggingFace y un framework que soporte LoRA (p. ej., Transformers + PEFT).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama o TGI pueden servir para el modelo base, pero el adaptador PEFT requiere cargarse con la librería `peft` de Hugging Face y un framework que soporte LoRA (p. ej., Transformers + PEFT).
 - No se dispone de datos de latencia o throughput para este adaptador.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables en la misma tarea (evalu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shreshthsaini/brightrate-study-gemma4-31b-sdr
+- Hugging Face: https://huggingface.co/shreshthsaini/brightrate-study-gemma4-31b-sdr
 - Repositorio BrightRate-LM (código e inferencia): https://github.com/shreshthsaini/BrightRate-LM
 - Dataset BrightVQ: https://github.com/shreshthsaini/BrightVQ
 - Documentación de Gemma 4 (modelo base): https://ai.google.dev/gemma/docs/core

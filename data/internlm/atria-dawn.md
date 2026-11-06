@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atria Dawn es un modelo agéntico de nueva generación desarrollado por el Shanghai Artificial Intelligence Laboratory (identificador de HuggingFace: `internlm`). Está construido sobre el modelo base **GLM-5.2**, un MoE de 744B parámetros, y se distribuye con 753.329.940.480 parámetros totales según los pesos en safetensors del repositorio. Su objetivo declarado no es la conversación generalista, sino llevar problemas abiertos hasta resultados «ejecutables, verificables y reproducibles»: análisis del problema, diseño de solución, uso de herramientas, implementación de código, ejecución de experimentos, análisis de resultados y recuperación ante fallos.
+Atria Dawn es un modelo agéntico de nueva generación desarrollado por el Shanghai Artificial Intelligence Laboratory (identificador de Hugging Face: `internlm`). Está construido sobre el modelo base **GLM-5.2**, un MoE de 744B parámetros, y se distribuye con 753.329.940.480 parámetros totales según los pesos en safetensors del repositorio. Su objetivo declarado no es la conversación generalista, sino llevar problemas abiertos hasta resultados «ejecutables, verificables y reproducibles»: análisis del problema, diseño de solución, uso de herramientas, implementación de código, ejecución de experimentos, análisis de resultados y recuperación ante fallos.
 
 El modelo se posiciona en cuatro dimensiones de trabajo —descubrimiento (investigación profunda y planes experimentales), creación (software, aplicaciones interactivas, visualizaciones, sistemas de machine learning), entrega (informes, presentaciones y otros entregables estructurados) y ciberseguridad (análisis de vulnerabilidades y validación de parches en entornos autorizados)—. La versión completa anuncia una ventana de contexto de 512K tokens, frente a los 256K de la variante Preview, lo que lo sitúa en la liga de modelos pensados para tareas de largo horizonte con realimentación del entorno.
 
@@ -18,7 +18,7 @@ Es relevante ahora porque combina un tamaño de parámetros de frontera (por enc
 | Longitud de contexto | 512K tokens (versión completa); 256K tokens en la variante Preview |
 | Tipos de cuantización | BF16 (modelo completo) y FP8 (variante `Atria-Dawn-FP8` publicada por el autor); no se han publicado GGUF ni otras cuantizaciones |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (según el badge y el enlace LICENSE de la model card); el campo de licencia de los metadatos de HuggingFace figura como no disponible |
+| Licencia | MIT (según el badge y el enlace LICENSE de la model card); el campo de licencia de los metadatos de Hugging Face figura como no disponible |
 | Formato de pesos | safetensors (también en la variante FP8) |
 
 ## Arquitectura y entrenamiento
@@ -80,17 +80,17 @@ La información disponible solo permite comparar con las propias variantes publi
 - **Alucinación**: el modelo está orientado a producir resultados «verificables», pero no se publican métricas de fiabilidad ni de tasa de alucinación; en tareas de investigación y ciberseguridad conviene validar siempre las salidas contra fuentes o entornos reales.
 - **Idiomas**: no se declaran los idiomas soportados. Aunque la card está en inglés y chino, no hay garantía documentada de calidad en castellano.
 - **Contexto**: 512K tokens anunciados, pero no se especifica cómo se comporta el rendimiento en la parte alta de la ventana ( degradación por posición, coste de caché KV).
-- **Licencia**: el badge de la model card indica MIT, lo que permitiría uso comercial, pero el campo de licencia de los metadatos de HuggingFace aparece como no disponible. Conviene verificar el fichero LICENSE del repositorio antes de un despliegue en producción.
+- **Licencia**: el badge de la model card indica MIT, lo que permitiría uso comercial, pero el campo de licencia de los metadatos de Hugging Face aparece como no disponible. Conviene verificar el fichero LICENSE del repositorio antes de un despliegue en producción.
 - **Coste de despliegue**: 1,5 TB de pesos en BF16 implican infraestructura de clúster; no es desplegable en una sola GPU de 80 GB ni en hardware de consumo.
 - **Madurez**: con 207 descargas y 13 likes en el momento de la consulta, el ecosistema de herramientas alrededor del modelo (soporte en frameworks, cuantizaciones comunitarias, recetas de despliegue) es todavía muy limitado.
 - **Ausencia de datos de evaluación accesibles**: la tabla de benchmarks existe solo como imagen en la model card, lo que impide verificar cifras de forma independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/internlm/Atria-Dawn
-- Variante FP8 en HuggingFace: https://huggingface.co/internlm/Atria-Dawn-FP8
-- Variante Preview en HuggingFace: https://huggingface.co/internlm/Atria-Dawn-Preview
-- Variante Preview FP8 en HuggingFace: https://huggingface.co/internlm/Atria-Dawn-Preview-FP8
+- Modelo en Hugging Face: https://huggingface.co/internlm/Atria-Dawn
+- Variante FP8 en Hugging Face: https://huggingface.co/internlm/Atria-Dawn-FP8
+- Variante Preview en Hugging Face: https://huggingface.co/internlm/Atria-Dawn-Preview
+- Variante Preview FP8 en Hugging Face: https://huggingface.co/internlm/Atria-Dawn-Preview-FP8
 - Modelo en ModelScope: https://www.modelscope.cn/models/Shanghai_AI_Laboratory/Atria-Dawn
 - ModelScope (FP8): https://www.modelscope.cn/models/Shanghai_AI_Laboratory/Atria-Dawn-FP8
 - ModelScope (Preview): https://www.modelscope.cn/models/Shanghai_AI_Laboratory/Atria-Dawn-Preview

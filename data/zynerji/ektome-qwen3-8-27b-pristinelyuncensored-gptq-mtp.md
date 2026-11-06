@@ -65,7 +65,7 @@ Los pesos ocupan 17,7 GiB, lo que permite ejecutarlo en una GPU de 24 GB con esp
 
 - VRAM estimada: 17,7 GiB para pesos, más caché KV; cabe en una GPU de 24 GB (p. ej., RTX 4090, RTX A5000) con margen.
 - GPU recomendadas: RTX PRO 6000 Blackwell (sm_120) para el rendimiento medido; otras arquitecturas pueden variar. Se requiere soporte de Marlin en vLLM o SGLang.
-- No es compatible con `transformers` de HuggingFace; debe servirse con vLLM o SGLang.
+- No es compatible con `transformers` de Hugging Face; debe servirse con vLLM o SGLang.
 - En Python 3.11, es necesario desinstalar `flashinfer-python` o usar Python 3.12+ para evitar errores de inicialización.
 - Latencia y throughput: 72,6 tok/s (batch 1) y 512,1 tok/s (batch 8) sin MTP; con MTP, 102,5 y 691,8 tok/s respectivamente, en la GPU mencionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de otros modelos abliterados comparables en la informaci�
 ## Limitaciones y advertencias
 
 - Modelo sin censura: puede generar contenido dañino, ilegal o éticamente problemático. Su uso debe limitarse a entornos controlados y fines legítimos de investigación o creación responsable.
-- No compatible con `transformers`: solo vLLM o SGLang pueden cargarlo; los usuarios que dependan de la pila estándar de HuggingFace no podrán utilizarlo.
+- No compatible con `transformers`: solo vLLM o SGLang pueden cargarlo; los usuarios que dependan de la pila estándar de Hugging Face no podrán utilizarlo.
 - El head MTP no está cuantizado (permanece en bf16, ~849 MB), lo que aumenta ligeramente el uso de VRAM; cuantizarlo no es recomendable por posible degradación de la tasa de aceptación.
 - Los resultados de rendimiento se midieron en sm_120 (RTX PRO 6000 Blackwell) y no se transfieren directamente a otras arquitecturas de GPU.
 - En pruebas de decodificación especulativa, las salidas greedy con y sin MTP no fueron byte-idénticas en una tarea de código; se considera un comportamiento no explicado, no una mejora de calidad.
@@ -91,7 +91,7 @@ No se dispone de datos de otros modelos abliterados comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored-GPTQ-MTP
+- Modelo en Hugging Face: https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored-GPTQ-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (referencia; no se ha verificado la URL exacta)
 - Documentación de vLLM para MTP: no disponible en la información proporcionada.
 - Repositorio de GPTQModel: no disponible en la información proporcionada.

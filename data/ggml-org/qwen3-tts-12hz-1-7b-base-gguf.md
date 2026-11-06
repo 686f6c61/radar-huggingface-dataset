@@ -6,7 +6,7 @@ El modelo `ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF` es una versión cuantizada en
 
 La relevancia de este modelo radica en su distribución en formato GGUF, que permite su ejecución en CPU y GPU de consumo mediante herramientas como llama.cpp u Ollama, sin necesidad de infraestructura especializada. Aunque la información pública disponible es limitada, su tamaño moderado y su licencia presumiblemente abierta (aunque no confirmada) lo convierten en una opción interesante para desarrolladores que buscan integrar síntesis de voz en proyectos de código abierto.
 
-No obstante, es importante señalar que la ficha oficial de HuggingFace no proporciona detalles sobre arquitectura interna, datos de entrenamiento, licencia exacta ni capacidades específicas más allá de lo que se infiere del nombre. Por tanto, esta ficha se basa únicamente en la información disponible y en inferencias razonables, marcando como "no disponible" cualquier dato no confirmado.
+No obstante, es importante señalar que la ficha oficial de Hugging Face no proporciona detalles sobre arquitectura interna, datos de entrenamiento, licencia exacta ni capacidades específicas más allá de lo que se infiere del nombre. Por tanto, esta ficha se basa únicamente en la información disponible y en inferencias razonables, marcando como "no disponible" cualquier dato no confirmado.
 
 ## Especificaciones tecnicas
 
@@ -62,11 +62,11 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 - Sesgos conocidos: no se dispone de informacion sobre sesgos del modelo, pero como cualquier modelo de IA, podria reflejar sesgos presentes en sus datos de entrenamiento.
 - Riesgo de alucinacion: en tareas TTS, el riesgo se manifiesta en pronunciaciones incorrectas o entonaciones extranas, especialmente con nombres propios o palabras poco comunes.
 - Limitaciones de contexto o idioma: no se conocen los idiomas soportados ni la longitud maxima de texto que puede procesar de una vez.
-- Restricciones de licencia: la licencia no esta especificada en la ficha de HuggingFace, por lo que se desconoce si permite uso comercial. Es imprescindible verificar este punto antes de su uso en produccion.
+- Restricciones de licencia: la licencia no esta especificada en la ficha de Hugging Face, por lo que se desconoce si permite uso comercial. Es imprescindible verificar este punto antes de su uso en produccion.
 - Cualquier caveat importante para produccion: la falta de documentacion sobre arquitectura y entrenamiento dificulta la evaluacion de su calidad y estabilidad. Se recomienda realizar pruebas exhaustivas en el caso de uso previsto antes de desplegarlo.
 
 ## Enlaces
 
-- [HuggingFace - ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF](https://huggingface.co/ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF)
+- [Hugging Face - ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF](https://huggingface.co/ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF)
 
 No se han encontrado otros enlaces relevantes en la informacion proporcionada.

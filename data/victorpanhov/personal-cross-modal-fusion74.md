@@ -78,6 +78,6 @@ No se identifican modelos comparables en la información disponible, dado que es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VICTORPANhov/personal-cross-modal-fusion74
+- Repositorio en Hugging Face: https://huggingface.co/VICTORPANhov/personal-cross-modal-fusion74
 - Fichero principal citado en la model card: `notes.md` (dentro del repositorio)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la búsqueda web realizada.

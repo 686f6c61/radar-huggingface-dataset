@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LANCET Nano es un clasificador de riesgo de comandos Bash desarrollado por Tanner Middleton (usuario fingerthief en HuggingFace). Su funcion es etiquetar un comando de shell como `risky`, `review` o `not_flagged` antes de que lo ejecute un agente autonomo o una persona, actuando como una capa de seguridad previa a la ejecucion. La version actual, v0.3.0, esta construida sobre el encoder CodeT5-base de Salesforce y cuenta con 109,6 millones de parametros.
+LANCET Nano es un clasificador de riesgo de comandos Bash desarrollado por Tanner Middleton (usuario fingerthief en Hugging Face). Su funcion es etiquetar un comando de shell como `risky`, `review` o `not_flagged` antes de que lo ejecute un agente autonomo o una persona, actuando como una capa de seguridad previa a la ejecucion. La version actual, v0.3.0, esta construida sobre el encoder CodeT5-base de Salesforce y cuenta con 109,6 millones de parametros.
 
 El modelo se distribuye como un archivo ONNX cuantizado a INT8 de 111 MB, con un runtime propio minimo (`bundle/classify.py`) en lugar de depender de `AutoModel` de Transformers. Esta disenado para inferencia local en CPU, sin acceso a red, con una latencia mediana de aproximadamente 22 milisegundos por comando. Esto lo hace adecuado para integrarse como filtro en tiempo real dentro de pipelines de agentes que ejecutan comandos de shell.
 
@@ -76,7 +76,7 @@ Advertencias indicadas por el autor: las etiquetas del benchmark fueron escritas
 
 | Modelo | Parametros | Tipo | Comandos riesgosos detectados | Seguros detenidos por error | Disponibilidad |
 |---|---|---:|---:|---:|---|
-| LANCET Nano v0.3.0 | 110 M | Local (CPU, INT8 ONNX) | 85,8% | 5,5% | Publico (HuggingFace) |
+| LANCET Nano v0.3.0 | 110 M | Local (CPU, INT8 ONNX) | 85,8% | 5,5% | Publico (Hugging Face) |
 | LANCET Nano v0.2.0 | 35 M | Local (CodeT5-small) | 73,6% | 6,2% | Publico (revision v0.2.0) |
 | LANCET Nano v0.1.0 | 35 M | Local | 65,5% | 5,5% | Version anterior |
 | Jev | no divulgado | Alojado | 96,8% | 7,8% | Servicio alojado |
@@ -100,7 +100,7 @@ Los datos de Jev y Laya provienen del mismo benchmark aportado por el autor y co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fingerthief/lancet-nano
+- Modelo en Hugging Face: https://huggingface.co/fingerthief/lancet-nano
 - Demo (Space): https://huggingface.co/spaces/fingerthief/lancet-nano
 - Repositorio GitHub: https://github.com/TannerMidd/LANCET-model
 - Web del proyecto: https://tannermidd.github.io/LANCET-model/

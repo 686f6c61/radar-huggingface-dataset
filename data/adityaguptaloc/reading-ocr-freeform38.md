@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adityaguptaloc/reading-ocr-freeform38
+- Repositorio en Hugging Face: https://huggingface.co/adityaguptaloc/reading-ocr-freeform38
 - Guía de modelos OCR open source (Hugging Face): https://huggingface.co/blog/ocr-open-models
 - Comparativa de modelos OCR open source (Modal): https://modal.com/blog/8-top-open-source-ocr-models-compared
 - Análisis de modelos OCR para PDF estructurado (IntuitionLabs): https://intuitionlabs.ai/articles/ai-ocr-models-pdf-structured-text-comparison

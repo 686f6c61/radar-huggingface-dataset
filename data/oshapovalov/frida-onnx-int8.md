@@ -51,7 +51,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OShapovalov/frida-onnx-int8
+- Repositorio Hugging Face: https://huggingface.co/OShapovalov/frida-onnx-int8
 - ONNX Model Zoo (referencia general): https://github.com/onnx/models
 - ONNX Runtime Models: https://onnxruntime.ai/models
 - Repositorio ai-forever/FRIDA (posible origen): https://huggingface.co/ai-forever/FRIDA

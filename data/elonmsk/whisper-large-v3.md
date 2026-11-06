@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks detallados en la informacion dispon
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Elonmsk/whisper-large-v3
+- Ficha en Hugging Face: https://huggingface.co/Elonmsk/whisper-large-v3
 - Checkpoint oficial de OpenAI: https://huggingface.co/openai/whisper-large-v3
 - Paper: https://huggingface.co/papers/2212.04356 (arXiv:2212.04356)
 - Repositorio de OpenAI: https://github.com/openai/whisper

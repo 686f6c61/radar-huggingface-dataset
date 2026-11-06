@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento comparativ
 
 ## Enlaces
 
-- HuggingFace (BF16): https://huggingface.co/Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16
-- HuggingFace (FP8): https://huggingface.co/Blackfrost-AI/RED-SNOW-5.3-FLASH-FP8
-- HuggingFace (NVFP4): https://huggingface.co/Blackfrost-AI/RED-SNOW-5.3-FLASH-NVFP4
+- Hugging Face (BF16): https://huggingface.co/Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16
+- Hugging Face (FP8): https://huggingface.co/Blackfrost-AI/RED-SNOW-5.3-FLASH-FP8
+- Hugging Face (NVFP4): https://huggingface.co/Blackfrost-AI/RED-SNOW-5.3-FLASH-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16

@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 - Diseñado para ejecución en dispositivos móviles con CPU ARM (Android y iOS) mediante el backend XNNPACK de ExecuTorch.
 - No requiere GPU dedicada; la inferencia se realiza en CPU con cuantización, lo que lo hace adecuado para la mayoría de smartphones modernos.
-- El tamaño del repositorio es de 0.0 GB según HuggingFace, lo que sugiere que el archivo `.pte` es muy ligero (probablemente pocos megabytes).
+- El tamaño del repositorio es de 0.0 GB según Hugging Face, lo que sugiere que el archivo `.pte` es muy ligero (probablemente pocos megabytes).
 - Para su uso en React Native, se integra a través de la librería `react-native-executorch` (disponible en npm), que gestiona la carga del modelo y la ejecución.
 - No se especifican requisitos mínimos de RAM ni versión de sistema operativo, pero al estar optimizado para XNNPACK se espera un consumo reducido de recursos.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa técnic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/software-mansion/react-native-executorch-selfie-segmentation
+- Modelo en Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-selfie-segmentation
 - Repositorio GitHub de React Native ExecuTorch: https://github.com/software-mansion/react-native-executorch
 - Documentación oficial de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started
 - Página web del proyecto: https://executorch.swmansion.com/

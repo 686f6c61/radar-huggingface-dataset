@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WeDetect-Ref-4B-Base es un modelo publicado en HuggingFace por el usuario gatilin bajo licencia MIT. La model card no incluye descripción alguna más allá de la licencia, por lo que la información oficial es prácticamente nula. Los resultados de búsqueda web sugieren una posible relación con el proyecto WeDetect de WeChatCV, presentado en CVPR 2026, que propone un detector de objetos de vocabulario abierto basado en recuperación (retrieval) con arquitectura dual-tower. Sin embargo, no hay confirmación de que este modelo específico pertenezca a dicha familia, ni datos sobre su arquitectura, tamaño de parámetros o propósito exacto.
+WeDetect-Ref-4B-Base es un modelo publicado en Hugging Face por el usuario gatilin bajo licencia MIT. La model card no incluye descripción alguna más allá de la licencia, por lo que la información oficial es prácticamente nula. Los resultados de búsqueda web sugieren una posible relación con el proyecto WeDetect de WeChatCV, presentado en CVPR 2026, que propone un detector de objetos de vocabulario abierto basado en recuperación (retrieval) con arquitectura dual-tower. Sin embargo, no hay confirmación de que este modelo específico pertenezca a dicha familia, ni datos sobre su arquitectura, tamaño de parámetros o propósito exacto.
 
 Dado que el nombre incluye "Ref-4B", es plausible que se trate de un modelo de referencia de 4 mil millones de parámetros, pero esta afirmación no está respaldada por la información proporcionada. La ficha siguiente refleja la ausencia de datos verificables y se limita a lo que se puede inferir de las fuentes externas, marcando como "no disponible" todos los campos sin confirmación.
 
@@ -31,7 +31,7 @@ No se dispone de información oficial sobre la arquitectura de este modelo. La m
 
 ## Casos de uso
 
-Dado que no se dispone de información funcional del modelo, no es posible enumerar casos de uso concretos y verificables. Cualquier aplicación práctica sería una suposición sin base técnica. Se recomienda consultar directamente el repositorio de HuggingFace o contactar con el autor para obtener documentación adicional.
+Dado que no se dispone de información funcional del modelo, no es posible enumerar casos de uso concretos y verificables. Cualquier aplicación práctica sería una suposición sin base técnica. Se recomienda consultar directamente el repositorio de Hugging Face o contactar con el autor para obtener documentación adicional.
 
 ## Benchmarks y rendimiento
 
@@ -54,7 +54,7 @@ No disponible. No se conocen modelos comparables de la misma categoría sin info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gatilin/WeDetect-Ref-4B-Base
+- Modelo en Hugging Face: https://huggingface.co/gatilin/WeDetect-Ref-4B-Base
 - Repositorio relacionado (mismo nombre, otro autor): https://huggingface.co/fushh7/WeDetect-Ref-4B
 - Repositorio oficial del paper WeDetect (GitHub): https://github.com/WeChatCV/WeDetect
 - Paper "WeDetect: Fast Open-Vocabulary Object Detection as Retrieval": https://arxiv.org/html/2512.12309

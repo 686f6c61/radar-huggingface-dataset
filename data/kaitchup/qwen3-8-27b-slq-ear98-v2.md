@@ -86,7 +86,7 @@ Nota del autor: EAR mide el solapamiento medio de probabilidad sobre los diez to
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR98-v2
+- Modelo en Hugging Face: https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR98-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper de SLQ: https://arxiv.org/abs/2605.02404
 - Repositorio de SLQ: https://github.com/IST-DASLab/SLQ

@@ -25,10 +25,10 @@ Su relevancia actual es doble. Por un lado, demuestra que un único modelo compa
 | Plataformas cubiertas | Coche, cuadrúpedo, handheld y dron (sin etiqueta de plataforma en inferencia) |
 | Tamaño del repositorio | 0,2 GB |
 | Librería declarada | PyTorch |
-| Pipeline declarado en HuggingFace | `other` |
+| Pipeline declarado en Hugging Face | `other` |
 | Fecha de creación / actualización | 2026-09-21 (ambas) |
 | Descargas / likes | 0 / 0 |
-| Idiomas declarados en la ficha de HuggingFace | No disponibles |
+| Idiomas declarados en la ficha de Hugging Face | No disponibles |
 
 ## Arquitectura y entrenamiento
 
@@ -99,7 +99,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TartanIMU MobilityAI (`hoppery/tartanimu-iros2026-mobilityai`) | 8,12 M | 60 ventanas de IMU | 0,18874 (servicio de los organizadores, 89 grabaciones); 0,23537 (Kaggle público) | MIT | HuggingFace |
+| TartanIMU MobilityAI (`hoppery/tartanimu-iros2026-mobilityai`) | 8,12 M | 60 ventanas de IMU | 0,18874 (servicio de los organizadores, 89 grabaciones); 0,23537 (Kaggle público) | MIT | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -118,12 +118,12 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hoppery/tartanimu-iros2026-mobilityai
-- Checkpoint de pesos: `full_dv_unc_trev_s42_step75000.pt` (md5 `d445f47f5060edcdeadeb5d75f396869`), dentro del repositorio de HuggingFace
-- Predicciones enviadas: `submission.csv` (md5 `bff815a85b1075b0dd664135f50af55e`), dentro del repositorio de HuggingFace
-- Configuración de entrenamiento: `config.json`, dentro del repositorio de HuggingFace
-- Punto de entrada de inferencia: `submit.py`, dentro del repositorio de HuggingFace
-- Métrica de los organizadores: `kaggle_metric_tartanimu_score.py`, incluida en el repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/hoppery/tartanimu-iros2026-mobilityai
+- Checkpoint de pesos: `full_dv_unc_trev_s42_step75000.pt` (md5 `d445f47f5060edcdeadeb5d75f396869`), dentro del repositorio de Hugging Face
+- Predicciones enviadas: `submission.csv` (md5 `bff815a85b1075b0dd664135f50af55e`), dentro del repositorio de Hugging Face
+- Configuración de entrenamiento: `config.json`, dentro del repositorio de Hugging Face
+- Punto de entrada de inferencia: `submit.py`, dentro del repositorio de Hugging Face
+- Métrica de los organizadores: `kaggle_metric_tartanimu_score.py`, incluida en el repositorio de Hugging Face
 - Paper, blog, repositorio externo o demo: no disponibles en la información proporcionada
 - Enlaces al TartanIMU Challenge o a IROS 2026: no disponibles en la información proporcionada
 - Las búsquedas web realizadas no devolvieron resultados relacionados con el modelo; los resultados obtenidos correspondían a páginas de soporte de Microsoft ajenas al tema

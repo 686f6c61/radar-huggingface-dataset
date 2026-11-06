@@ -78,7 +78,7 @@ No se dispone de comparaciones numericas con otros modelos en la informacion pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StereoDiffGen | no disponible | no aplica (imagen 768x768) | ver tabla de benchmarks | Open RAIL++-M | HuggingFace |
+| StereoDiffGen | no disponible | no aplica (imagen 768x768) | ver tabla de benchmarks | Open RAIL++-M | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de comparaciones numericas con otros modelos en la informacion pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cvprsubmission/stereodiffgen
+- Hugging Face: https://huggingface.co/cvprsubmission/stereodiffgen
 - Pesos: https://huggingface.co/cvprsubmission/stereodiffgen/resolve/main/stereodiffgen.safetensors
 - Codigo de inferencia: no disponible (se anunciara tras la revision)
 - Paper: no disponible (envio anonimo a CVPR 2027 en revision)

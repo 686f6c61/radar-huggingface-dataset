@@ -76,5 +76,5 @@ Comparado con GPT-2 Small, ULTRON-128M tiene una arquitectura más moderna (GQA,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HR26kk/ULTRON-128M
+- Modelo en Hugging Face: https://huggingface.co/HR26kk/ULTRON-128M
 - No se han encontrado otros enlaces relevantes (papers, repositorios de código, demos) en la búsqueda web. Los resultados de búsqueda para "Ultron" corresponden a proyectos no relacionados con este modelo.

@@ -6,7 +6,7 @@ Neuro-JEPA ViT-L es un modelo fundacional auto-supervisado para resonancia magn�
 
 El modelo emplea un encoder 3D ViT-L de 24 capas con mezcla de expertos dispersa (MoE), 431 millones de parámetros y representaciones de 1024 dimensiones. Se preentrenó sobre aproximadamente 1,55 millones de exploraciones T1, T2 y FLAIR de NYU Langone Health, lo que le confiere cobertura multimodal de secuencias estructurales habituales en estudios clínicos.
 
-Es relevante porque ofrece una alternativa de pesos abiertos (aunque con acceso restringido y licencia no comercial) a los modelos fundacionales de neuroimagen, con una fidelidad verificada bit a bit frente al código oficial sobre 3.984 imágenes de OpenBHB. Este repositorio de HuggingFace no contiene pesos: solo la configuración de nidl que los descarga y renombra desde el repositorio original.
+Es relevante porque ofrece una alternativa de pesos abiertos (aunque con acceso restringido y licencia no comercial) a los modelos fundacionales de neuroimagen, con una fidelidad verificada bit a bit frente al código oficial sobre 3.984 imágenes de OpenBHB. Este repositorio de Hugging Face no contiene pesos: solo la configuración de nidl que los descarga y renombra desde el repositorio original.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- HuggingFace (configuración nidl): https://huggingface.co/nidl-neurospin/neuro-jepa-vit-l
+- Hugging Face (configuración nidl): https://huggingface.co/nidl-neurospin/neuro-jepa-vit-l
 - Pesos originales (gated): https://huggingface.co/NYUMedML/Neuro-JEPA-Large
 - Paper: https://arxiv.org/abs/2606.14957
 - Código original: https://github.com/NYUMedML/Neuro-JEPA

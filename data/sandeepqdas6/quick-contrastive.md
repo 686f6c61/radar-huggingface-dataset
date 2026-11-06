@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sandeepqdas6/quick-contrastive` es un repositorio experimental publicado en HuggingFace por el usuario Sandeepqdas6 que contiene una implementacion propia de una arquitectura hibrida CNN-Transformer orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: el archivo `model.safetensors` se describe explicitamente en la model card como un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El peso total del repositorio es de 0,0 GB y el recuento real de parametros extraido del safetensors es de 24.832, un orden de magnitud propio de un juguete de laboratorio, no de un modelo de lenguaje.
+`Sandeepqdas6/quick-contrastive` es un repositorio experimental publicado en Hugging Face por el usuario Sandeepqdas6 que contiene una implementacion propia de una arquitectura hibrida CNN-Transformer orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: el archivo `model.safetensors` se describe explicitamente en la model card como un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El peso total del repositorio es de 0,0 GB y el recuento real de parametros extraido del safetensors es de 24.832, un orden de magnitud propio de un juguete de laboratorio, no de un modelo de lenguaje.
 
 El proposito declarado del repositorio es servir de base de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La configuracion incluida describe una escala "base", atencion dispersa (sparse), fusion por atencion cruzada (cross attention), activacion approximate GELU y normalizacion GroupNorm, con un recipe de entrenamiento por defecto basado en el optimizador Lion y un schedule de warmup lineal. Todos estos valores son puntos de partida en el script, no evidencia de un entrenamiento finalizado.
 
@@ -21,7 +21,7 @@ Su relevancia actual es, por tanto, limitada y de tipo metodologico: sirve como 
 | Licencia | MIT |
 | Formato de pesos | safetensors (checkpoint de inicializacion), mas `model.py`, `config.json` y `training_args.json` |
 
-Otros datos registrados en HuggingFace: autor Sandeepqdas6, pipeline no disponible, 0 descargas, 0 likes, region etiquetada como `us`, fecha de creacion 2026-10-14 y ultima actualizacion 2026-10-14. Etiquetas: `safetensors`, `cnn_transformer`, `pytorch`, `cnn-transformer`, `contrastive`.
+Otros datos registrados en Hugging Face: autor Sandeepqdas6, pipeline no disponible, 0 descargas, 0 likes, region etiquetada como `us`, fecha de creacion 2026-10-14 y ultima actualizacion 2026-10-14. Etiquetas: `safetensors`, `cnn_transformer`, `pytorch`, `cnn-transformer`, `contrastive`.
 
 ## Arquitectura y entrenamiento
 
@@ -72,12 +72,12 @@ No disponible. Este repositorio no es un modelo entrenado publicado, sino una ba
 - No se han publicado evaluaciones de alucinacion, coherencia, fidelidad ni metricas de tarea.
 - No hay informacion sobre longitud de contexto, idiomas soportados ni vocabulario, al no ser un modelo de lenguaje con tokenizador documentado.
 - La licencia MIT permite uso comercial, modificacion y redistribucion del codigo y los pesos, pero el propio autor advierte que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se use con datasets externos.
-- La carga mediante APIs automaticas genericas fallara sin un adaptador explicito; la integracion en pipelines estandar de HuggingFace no esta garantizada.
+- La carga mediante APIs automaticas genericas fallara sin un adaptador explicito; la integracion en pipelines estandar de Hugging Face no esta garantizada.
 - El repositorio tiene 0 descargas y 0 likes, y las busquedas web no han encontrado referencias externas, lo que implica ausencia total de validacion por parte de la comunidad.
 - Las fechas registradas en los metadatos (2026-10-14) no coinciden con el momento habitual de publicacion de este tipo de artefactos; conviene verificar la procedencia antes de reutilizar el contenido.
 - El tamano del repo se registra como 0,0 GB, coherente con un modelo de 24.832 parametros, pero indica que no hay artefactos adicionales de entrenamiento, logs o datasets incluidos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sandeepqdas6/quick-contrastive
+- Modelo en Hugging Face: https://huggingface.co/Sandeepqdas6/quick-contrastive
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la busqueda no guardan relacion con el repositorio y no se incluyen.

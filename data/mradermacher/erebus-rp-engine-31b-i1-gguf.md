@@ -85,7 +85,7 @@ No se dispone de información suficiente sobre el modelo base ni sobre alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Erebus-RP-Engine-31B-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Erebus-RP-Engine-31B-i1-GGUF
 - Modelo base: https://huggingface.co/Naphula/Erebus-RP-Engine-31B
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Erebus-RP-Engine-31B-GGUF
 - Página de descarga del autor: https://hf.tst.eu/model#Erebus-RP-Engine-31B-i1-GGUF

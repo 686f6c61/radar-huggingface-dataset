@@ -99,8 +99,8 @@ Los datos de parametros y rendimiento de los modelos comparados no se han public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobilint/YOLOv8n-pose
+- Modelo en Hugging Face: https://huggingface.co/mobilint/YOLOv8n-pose
 - Repositorio fuente de Ultralytics: https://github.com/ultralytics/ultralytics
 - Carpeta arxiv del modelo en Mobilint: https://github.com/mobilint/mblt-model-arxiv/tree/main/models/pose_estimation/YOLOv8n_pose
-- Modelo base en HuggingFace: https://huggingface.co/Ultralytics/YOLOv8
+- Modelo base en Hugging Face: https://huggingface.co/Ultralytics/YOLOv8
 - Documentacion de Ultralytics sobre pose estimation: https://docs.ultralytics.com/tasks/pose/

@@ -88,8 +88,8 @@ La media de las cinco semillas es de 20917 exitos sobre 30000, equivalente a un 
 
 | Modelo | Tipo | Tarea | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `mulligan/sim-square-broad-r01-mining-no-cf-divl` | Actor de difusion congelado + critico DIVL distribucional | `sim-square-broad` | no disponible | no aplica | 69,72 % de exito de media en cinco semillas (20917/30000) | Apache 2.0 | HuggingFace |
-| `mulligan/sim-square-broad-r01-mining-no-cf-idql` (modelo padre) | Actor de difusion IDQL, sin el critico DIVL de esta ronda | `sim-square-broad` | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| `mulligan/sim-square-broad-r01-mining-no-cf-divl` | Actor de difusion congelado + critico DIVL distribucional | `sim-square-broad` | no disponible | no aplica | 69,72 % de exito de media en cinco semillas (20917/30000) | Apache 2.0 | Hugging Face |
+| `mulligan/sim-square-broad-r01-mining-no-cf-idql` (modelo padre) | Actor de difusion IDQL, sin el critico DIVL de esta ronda | `sim-square-broad` | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otras lineas base de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento del modelo padre ni de modelos externos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -111,12 +111,12 @@ No se dispone de datos de rendimiento del modelo padre ni de modelos externos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-mining-no-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-mining-no-cf-divl
 - Modelo padre (actor IDQL congelado): https://huggingface.co/mulligan/sim-square-broad-r01-mining-no-cf-idql
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol
 - Dataset de minado DAgger: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-mining-no-cf
 - Dataset de rollouts de politica: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-sobol-policy-rollouts
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto: https://mulligan.page
 - Panel de evaluaciones (Policy Arena): https://arena.mulligan.page

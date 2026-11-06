@@ -19,7 +19,7 @@ Su relevancia es metodológica, no funcional: sirve para reproducir y auditar el
 | Tipos de cuantizacion | no disponible (no se publican pesos en formatos cuantizados; solo checkpoint distribuido de Megatron) |
 | Idiomas soportados | no disponible (el corpus parece ser de secuencias genómicas, no texto natural; sin confirmar) |
 | Licencia | no disponible |
-| Formato de pesos | checkpoint distribuido de Megatron (`checkpoint/`, best_1, incluye estado del optimizador); no se publican safetensors, GGUF ni formato HuggingFace |
+| Formato de pesos | checkpoint distribuido de Megatron (`checkpoint/`, best_1, incluye estado del optimizador); no se publican safetensors, GGUF ni formato Hugging Face |
 | Autor | gabe-adib |
 | Fecha de publicacion | 2026-10-17 |
 | Tamano del repositorio | 28,9 GB |
@@ -97,7 +97,7 @@ El segundo modelo es otra celda del mismo estudio (data-constrained scaling, wei
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabe-adib/ove3-dedup-185m-organelle-ani95
+- Modelo en Hugging Face: https://huggingface.co/gabe-adib/ove3-dedup-185m-organelle-ani95
 - Run hermano del mismo estudio (data-constrained scaling): https://huggingface.co/gabe-adib/ove3-dc-185m-u30b-r4-wd0.1
 - organelle.ai (referencia de nombre en los resultados de búsqueda, sin relación confirmada con el run): https://organelle.ai/
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web disponible.

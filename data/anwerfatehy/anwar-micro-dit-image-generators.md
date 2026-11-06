@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ANWERFATEHY/anwar-micro-dit-image-generators` es un repositorio de HuggingFace publicado por el usuario ANWERFATEHY que, por su nombre, se presenta como una coleccion de generadores de imagenes basados en arquitecturas Diffusion Transformer (DiT) de escala reducida ("micro"). El repositorio no incluye pipeline declarado, ni idiomas soportados, ni una model card con documentacion tecnica: el unico contenido del README es la declaracion de licencia Apache 2.0.
+`ANWERFATEHY/anwar-micro-dit-image-generators` es un repositorio de Hugging Face publicado por el usuario ANWERFATEHY que, por su nombre, se presenta como una coleccion de generadores de imagenes basados en arquitecturas Diffusion Transformer (DiT) de escala reducida ("micro"). El repositorio no incluye pipeline declarado, ni idiomas soportados, ni una model card con documentacion tecnica: el unico contenido del README es la declaracion de licencia Apache 2.0.
 
 En el momento de la consulta acumula 0 descargas y 0 likes, y las fechas de creacion y ultima actualizacion son identicas (11 de septiembre de 2026), lo que indica que no ha habido mantenimiento ni iteraciones posteriores a la publicacion inicial. Al no existir pesos documentados, configuracion de entrenamiento ni resultados de evaluacion, no es posible verificar que el contenido del repositorio sea funcional.
 
@@ -80,5 +80,5 @@ No disponible. No hay datos de parametros, contexto, rendimiento ni formato de p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ANWERFATEHY/anwar-micro-dit-image-generators
+- Repositorio en Hugging Face: https://huggingface.co/ANWERFATEHY/anwar-micro-dit-image-generators
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

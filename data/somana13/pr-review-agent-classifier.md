@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`somana13/pr-review-agent-classifier` es un adaptador LoRA publicado en HuggingFace por el usuario `somana13`, construido sobre el modelo base `microsoft/codebert-base`. El repositorio declara la librería `peft` y un tamaño de 0,0 GB, lo que indica que no contiene pesos completos del modelo, sino únicamente los pesos del adaptador en formato safetensors. El nombre del repositorio sugiere un clasificador orientado a revisiones de pull requests, pero la model card no documenta la tarea concreta, el conjunto de datos ni las etiquetas utilizadas, por lo que esa finalidad es una inferencia a partir del nombre y no un dato confirmado.
+`somana13/pr-review-agent-classifier` es un adaptador LoRA publicado en Hugging Face por el usuario `somana13`, construido sobre el modelo base `microsoft/codebert-base`. El repositorio declara la librería `peft` y un tamaño de 0,0 GB, lo que indica que no contiene pesos completos del modelo, sino únicamente los pesos del adaptador en formato safetensors. El nombre del repositorio sugiere un clasificador orientado a revisiones de pull requests, pero la model card no documenta la tarea concreta, el conjunto de datos ni las etiquetas utilizadas, por lo que esa finalidad es una inferencia a partir del nombre y no un dato confirmado.
 
 El modelo base, CodeBERT, es un transformer encoder bimodal (lenguaje natural y lenguajes de programación) desarrollado por Microsoft Research y publicado en 2020. Su arquitectura deriva de RoBERTa-base, con unos 125 millones de parámetros, 12 capas, dimensión oculta de 768 y 12 cabezas de atención, y fue preentrenado sobre el corpus CodeSearchNet combinando objetivos de modelado de lenguaje enmascarado y reemplazo de tokens.
 
@@ -38,7 +38,7 @@ Como referencia externa, el modelo base CodeBERT se describe en el artículo «C
 - Soporte de agentes y razonamiento multi-paso: no disponible. El modelo, por su arquitectura encoder y su tamaño, no está diseñado para generación libre ni para planificación multi-paso.
 - Capacidades multilingües: no disponibles. La ficha no declara idiomas; el modelo base está orientado predominantemente al inglés y a código fuente.
 - Capacidades especiales (modo «thinking», visión, audio): no disponibles. No hay indicios de modalidades adicionales.
-- Integración con el ecosistema HuggingFace: sí, mediante `transformers` y `peft`, según las etiquetas del repositorio.
+- Integración con el ecosistema Hugging Face: sí, mediante `transformers` y `peft`, según las etiquetas del repositorio.
 
 ## Casos de uso
 
@@ -73,10 +73,10 @@ La comparativa se establece a nivel de modelo base, ya que el adaptador no publi
 
 | Modelo | Parámetros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| somana13/pr-review-agent-classifier | Adaptador LoRA; base de ~125 M | No disponible (base: 514 posiciones) | No documentada; el nombre sugiere clasificación de revisiones de PR | No disponible | Repositorio HuggingFace, 0 descargas |
-| microsoft/codebert-base | ~125 M | 514 posiciones | Representación conjunta de código y lenguaje natural; clasificación y recuperación | No disponible en la información proporcionada | HuggingFace, ampliamente utilizado |
-| microsoft/graphcodebert-base | ~125 M | 514 posiciones | Representación de código incorporando estructura de flujo de datos | No disponible en la información proporcionada | HuggingFace |
-| Salesforce/codet5-base | ~220 M | 512 tokens | Modelo encoder-decoder para tareas de código, incluida generación | No disponible en la información proporcionada | HuggingFace |
+| somana13/pr-review-agent-classifier | Adaptador LoRA; base de ~125 M | No disponible (base: 514 posiciones) | No documentada; el nombre sugiere clasificación de revisiones de PR | No disponible | Repositorio Hugging Face, 0 descargas |
+| microsoft/codebert-base | ~125 M | 514 posiciones | Representación conjunta de código y lenguaje natural; clasificación y recuperación | No disponible en la información proporcionada | Hugging Face, ampliamente utilizado |
+| microsoft/graphcodebert-base | ~125 M | 514 posiciones | Representación de código incorporando estructura de flujo de datos | No disponible en la información proporcionada | Hugging Face |
+| Salesforce/codet5-base | ~220 M | 512 tokens | Modelo encoder-decoder para tareas de código, incluida generación | No disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas opciones en la información consultada, por lo que la elección entre ellas debería basarse en una evaluación propia sobre el conjunto de datos objetivo.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/somana13/pr-review-agent-classifier
+- Modelo en Hugging Face: https://huggingface.co/somana13/pr-review-agent-classifier
 - Modelo base CodeBERT: https://huggingface.co/microsoft/codebert-base
 - Artículo de CodeBERT (Feng et al., 2020): https://arxiv.org/abs/2002.04688
 - Artículo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones): https://arxiv.org/abs/1910.09700

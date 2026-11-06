@@ -77,7 +77,7 @@ No se dispone de datos verificados de parametros, contexto ni benchmarks de este
 | Control de layout por JSON | si | si (misma arquitectura y pipeline) | no disponible |
 | Idiomas | en, zh | en, zh | no disponible |
 | Licencia | Apache-2.0 | no disponible en la informacion proporcionada | requiere verificacion en cada model card |
-| Disponibilidad | HuggingFace y ModelScope; demo en Spaces; plugin ComfyUI | HuggingFace y ModelScope | requiere verificacion |
+| Disponibilidad | Hugging Face y ModelScope; demo en Spaces; plugin ComfyUI | Hugging Face y ModelScope | requiere verificacion |
 
 Nota: al tratarse de un ajuste SFT sobre MOSS-Image-Base, la comparacion interna mas fiable es la cualitativa que ofrece el autor (mejor agrupacion de texto y layouts mas organizados en la variante SFT).
 
@@ -97,14 +97,14 @@ Nota: al tratarse de un ajuste SFT sobre MOSS-Image-Base, la comparacion interna
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio analizado): https://huggingface.co/drawthingsai/MOSS-Image-SFT
+- Modelo en Hugging Face (repositorio analizado): https://huggingface.co/drawthingsai/MOSS-Image-SFT
 - Modelo oficial SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Codigo en GitHub: https://github.com/OpenMOSS/MOSS-Image
 - Guia de usuario: https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md
 - Guia de usuario en chino: https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE_ZH.md
 - Guia de ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README.md
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - Pagina del proyecto: https://openmoss.github.io/MOSS-Image/
 - Informe tecnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
 - arXiv: https://arxiv.org/abs/2610.23374
@@ -113,4 +113,4 @@ Nota: al tratarse de un ajuste SFT sobre MOSS-Image-Base, la comparacion interna
 - Cuenta de X de OpenMOSS: https://x.com/Open_MOSS
 - Discord de la comunidad: https://discord.gg/nXFWEyvbb
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos enlaces utiles son los que aparecen en la model card y en los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos enlaces utiles son los que aparecen en la model card y en los metadatos de Hugging Face.

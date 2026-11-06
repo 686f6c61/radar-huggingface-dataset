@@ -74,7 +74,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/djrsystemservices/Agents-A1-4B-oQ6e-mtp
+- Repositorio Hugging Face: https://huggingface.co/djrsystemservices/Agents-A1-4B-oQ6e-mtp
 - Modelo base (fuente): https://huggingface.co/InternScience/Agents-A1-4B
 - Donante MTP: https://huggingface.co/guru87/Qwen3.5-4B-MTP
 - Informe de calibración imatrix: incluido en el repositorio como `oq_imatrix_report.json`

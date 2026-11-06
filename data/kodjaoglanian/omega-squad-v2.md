@@ -84,7 +84,7 @@ Nota del autor recogida en la ficha: el test 50/50 de answerability es el protoc
 
 | Modelo | Parametros | Accuracy de decisión | Latencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| System Omega — SQuAD v2 | ~150M | 87,71 % | 8,07 ms (bf16) | Apache 2.0 | HuggingFace (repo de 0,3 GB) |
+| System Omega — SQuAD v2 | ~150M | 87,71 % | 8,07 ms (bf16) | Apache 2.0 | Hugging Face (repo de 0,3 GB) |
 | Laya (referencia citada por el autor) | 421M | 76,6 % | ~4x la de Omega, según el autor | No disponible | No disponible |
 | Jev 1.13 (referencia citada por el autor) | No disponible | 72,7 % | No disponible | No disponible | No disponible |
 
@@ -105,7 +105,7 @@ Advertencia: los datos de Laya y Jev proceden de los números públicos citados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kodjaoglanian/omega-squad-v2
+- Modelo en Hugging Face: https://huggingface.co/Kodjaoglanian/omega-squad-v2
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Dataset SQuAD v2: https://rajpurkar.github.io/SQuAD-explorer/
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo, su paper ni su repositorio; los únicos resultados obtenidos fueron páginas generales de ChatGPT y OpenAI, sin relación con el modelo descrito.

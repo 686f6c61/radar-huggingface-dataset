@@ -91,7 +91,7 @@ La categoria es la de extractores de pitch monofonico usados como preprocesado e
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rmvpe (Vokra GGUF) | Estimador de pitch sobre audio | 90.472.917 | no aplica | MIT | GGUF unico en HuggingFace |
+| rmvpe (Vokra GGUF) | Estimador de pitch sobre audio | 90.472.917 | no aplica | MIT | GGUF unico en Hugging Face |
 | RMVPE upstream (yxlllc/RMVPE) | Mismos pesos, sin reempaquetar | no disponible en la informacion | no aplica | MIT | Repositorio upstream; formatos no detallados |
 | CREPE | Red convolucional sobre forma de onda | no disponible | no aplica | no disponible | Implementacion publica de referencia |
 | Harvest (WORLD) | Algoritmo de procesado de senal, sin red neuronal | no aplica | no aplica | no disponible | Implementacion publica de referencia |
@@ -114,11 +114,11 @@ Frente a las alternativas, la ventaja concreta de este artefacto es el tamano de
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Allinsama/vokra__rmvpe
+- Ficha en Hugging Face: https://huggingface.co/Allinsama/vokra__rmvpe
 - Ruta referenciada en la model card: https://huggingface.co/vokra/rmvpe
 - Runtime Vokra: https://github.com/ayutaz/vokra
 - Repositorio upstream de los pesos: https://github.com/yxlllc/RMVPE
 - Contexto de uso en RVC (modelos de voz que citan RMVPE como extractor): https://voice-models.com/model/1umlvgCYzkJ
 - Catalogo de modelos de voz RVC: https://voice-models.com/
-- Repositorio de modelos de voz RVC en HuggingFace: https://huggingface.co/WoomyPearl/RVC-Model-Palace
+- Repositorio de modelos de voz RVC en Hugging Face: https://huggingface.co/WoomyPearl/RVC-Model-Palace
 - Aplicacion de conversion de voz: https://easyaivoice.com/app

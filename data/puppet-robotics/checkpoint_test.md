@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`puppet-robotics/checkpoint_test` es un modelo de tipo Vision-Language-Action (VLA) para robótica, publicado por el usuario de HuggingFace `puppet-robotics`. Se trata de un fine-tuning de `lerobot/pi05_base`, que a su vez es la implementación en LeRobot del modelo π₀.₅ (Pi05) de Physical Intelligence, un VLA disenado para generalización en entornos abiertos y que evoluciona el anterior π₀. El checkpoint está entrenado con la librería LeRobot y etiquetado con la pipeline `robotics`, por lo que su propósito no es la generación de texto sino la producción de acciones motoras a partir de observaciones visuales y de estado del robot.
+`puppet-robotics/checkpoint_test` es un modelo de tipo Vision-Language-Action (VLA) para robótica, publicado por el usuario de Hugging Face `puppet-robotics`. Se trata de un fine-tuning de `lerobot/pi05_base`, que a su vez es la implementación en LeRobot del modelo π₀.₅ (Pi05) de Physical Intelligence, un VLA disenado para generalización en entornos abiertos y que evoluciona el anterior π₀. El checkpoint está entrenado con la librería LeRobot y etiquetado con la pipeline `robotics`, por lo que su propósito no es la generación de texto sino la producción de acciones motoras a partir de observaciones visuales y de estado del robot.
 
 El modelo consume dos flujos de cámara (una de muñeca, `wrist`, y una egocéntrica, `ego`), junto con un vector de estado de 8 dimensiones, y produce un vector de acción también de 8 dimensiones. Cuenta con aproximadamente 4.143 millones de parámetros (4,14 B) en formato `safetensors`, con un tamano de repositorio de 9,4 GB. La tarea concreta para la que ha sido ajustado es "Play golf", sobre un robot de tipo `oscar`.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `puppet-robotics/checkpoint_test` (Pi05 fine-tune) | ~4,14 B | no disponible | VLA robotico | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` (modelo base) | no disponible | no disponible | VLA robotico | no disponible | HuggingFace |
+| `puppet-robotics/checkpoint_test` (Pi05 fine-tune) | ~4,14 B | no disponible | VLA robotico | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` (modelo base) | no disponible | no disponible | VLA robotico | no disponible | Hugging Face |
 | π₀ (Pi0, referencia conceptual) | no disponible | no disponible | VLA robotico | no disponible | Repositorio OpenPI |
-| Otros VLA de robotica (p. ej. OpenVLA) | no disponible | no disponible | VLA robotico | no disponible | HuggingFace |
+| Otros VLA de robotica (p. ej. OpenVLA) | no disponible | no disponible | VLA robotico | no disponible | Hugging Face |
 
 No se dispone de datos suficientes en la información proporcionada para establecer comparaciones cuantitativas de rendimiento entre este modelo y alternativas de la misma categoría; las filas anteriores reflejan únicamente lo confirmado o su ausencia explícita.
 
@@ -92,7 +92,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/puppet-robotics/checkpoint_test
+- Modelo en Hugging Face: https://huggingface.co/puppet-robotics/checkpoint_test
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/puppet-robotics/golf-2-8fps-plus-no-putt
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=puppet-robotics/golf-2-8fps-plus-no-putt

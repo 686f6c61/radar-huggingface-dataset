@@ -96,7 +96,7 @@ La versión comprimida ofrece una reducción de memoria de 2,74× respecto al FP
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/fraQtl/Qwen3.6-35B-A3B-compressed
+- Repositorio Hugging Face del modelo: https://huggingface.co/fraQtl/Qwen3.6-35B-A3B-compressed
 - Versión Hi-Fi GGUF (recomendada por el autor): https://huggingface.co/fraQtl/Qwen3.6-35B-A3B-Hi-Fi-GGUF
 - Versión GGUF estándar para llama.cpp/Ollama: https://huggingface.co/fraQtl/Qwen3.6-35B-A3B-GGUF
 - Contacto para licencias y despliegues de producción: https://fraqtl.ai/contact

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-dl2-hw2 es un checkpoint de clasificación de tokens (token classification) publicado por el usuario saffff1111 en HuggingFace. Se trata de un ajuste fino de BAAI/bge-small-en-v1.5, un encoder tipo BERT de 33.215.625 parámetros (12 capas, dimensión oculta 384), orientado a tareas de etiquetado a nivel de token como reconocimiento de entidades nombradas (NER) o etiquetado de secuencias. El repositorio ocupa 0,1 GB y se distribuye en formato safetensors bajo licencia MIT.
+dl2-hw2 es un checkpoint de clasificación de tokens (token classification) publicado por el usuario saffff1111 en Hugging Face. Se trata de un ajuste fino de BAAI/bge-small-en-v1.5, un encoder tipo BERT de 33.215.625 parámetros (12 capas, dimensión oculta 384), orientado a tareas de etiquetado a nivel de token como reconocimiento de entidades nombradas (NER) o etiquetado de secuencias. El repositorio ocupa 0,1 GB y se distribuye en formato safetensors bajo licencia MIT.
 
-La relevancia del modelo es limitada y muy específica: no es un modelo de propósito general ni compite con LLM generativos. Su interés radica en ser un ejemplo de ajuste fino de un encoder pequeño y eficiente para extracción de información, con métricas de evaluación razonables (F1 0,9474 y accuracy 0,9835 en el conjunto de evaluación declarado). El autor no documenta el conjunto de datos de entrenamiento, el esquema de etiquetas ni el dominio de aplicación, por lo que la model card es prácticamente un artefacto autogenerado por el Trainer de HuggingFace.
+La relevancia del modelo es limitada y muy específica: no es un modelo de propósito general ni compite con LLM generativos. Su interés radica en ser un ejemplo de ajuste fino de un encoder pequeño y eficiente para extracción de información, con métricas de evaluación razonables (F1 0,9474 y accuracy 0,9835 en el conjunto de evaluación declarado). El autor no documenta el conjunto de datos de entrenamiento, el esquema de etiquetas ni el dominio de aplicación, por lo que la model card es prácticamente un artefacto autogenerado por el Trainer de Hugging Face.
 
 Se desconocen los idiomas soportados; el modelo base (bge-small-en-v1.5) está entrenado únicamente en inglés, lo que condiciona fuertemente cualquier uso en otros idiomas. El número de descargas y likes es cero, y la model card carece de secciones sustantivas (model description, intended uses, training data), por lo que debe tratarse como un checkpoint experimental y no como un modelo listo para producción.
 
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. No requiere A100, H100 ni RTX 4090; una GTX 1050 Ti, T4, RTX 3060 o incluso una iGPU moderna son suficientes.
 - Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo de la última década.
 - Inferencia en CPU: totalmente viable; con 33M de parámetros el throughput típico es de cientos a miles de secuencias cortas por segundo en un procesador de escritorio moderno, aunque no se han publicado mediciones concretas de latencia.
-- Opciones de despliegue: transformers (PyTorch) de forma nativa; exportación a ONNX Runtime o TorchScript para producción de baja latencia; Triton Inference Server; HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` está presente). vLLM, TGI, llama.cpp y Ollama no están orientados a encoders de clasificación y no se recomiendan para este checkpoint.
+- Opciones de despliegue: transformers (PyTorch) de forma nativa; exportación a ONNX Runtime o TorchScript para producción de baja latencia; Triton Inference Server; Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` está presente). vLLM, TGI, llama.cpp y Ollama no están orientados a encoders de clasificación y no se recomiendan para este checkpoint.
 - Latencia y throughput estimados: no disponibles (el autor no publica mediciones).
 
 ## Comparativa con modelos similares
@@ -118,7 +118,7 @@ Los tres checkpoints con nombre `dl2-hw2` localizados en la búsqueda web parece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saffff1111/dl2-hw2
+- Modelo en Hugging Face: https://huggingface.co/saffff1111/dl2-hw2
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Checkpoint relacionado kryalka/dl2-hw2: https://huggingface.co/kryalka/dl2-hw2
 - Checkpoint relacionado gzverev/dl2-hw2-bert-ner: https://huggingface.co/gzverev/dl2-hw2-bert-ner

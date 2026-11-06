@@ -73,7 +73,7 @@ Los datos de las alternativas proceden de la documentación pública de sus resp
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeltaP2S-Gemma2-9B-SameFormula-Code-S13 | 10,16 B (reportados) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
+| DeltaP2S-Gemma2-9B-SameFormula-Code-S13 | 10,16 B (reportados) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
 | google/gemma-2-9b | 9,24 B | 8.192 tokens | Gemma Terms of Use | Público, ampliamente adoptado |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Público, ampliamente adoptado |
 | Qwen/Qwen2.5-7B-Instruct | 7,62 B | 32.768 tokens (hasta 131.072 con YaRN) | Apache 2.0 | Público, ampliamente adoptado |
@@ -94,7 +94,7 @@ Frente a estas alternativas, el checkpoint analizado no aporta ventajas document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma2-9B-SameFormula-Code-S13
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma2-9B-SameFormula-Code-S13
 - Modelo base: https://huggingface.co/google/gemma-2-9b
 - Artículo técnico de Gemma 2: no disponible en la información proporcionada
 - Repositorio del paquete Delta-P2S: no disponible en la información proporcionada

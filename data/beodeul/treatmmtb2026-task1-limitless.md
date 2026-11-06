@@ -88,5 +88,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beodeul/treatmmtb2026-task1-limitless
+- Modelo en Hugging Face: https://huggingface.co/beodeul/treatmmtb2026-task1-limitless
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

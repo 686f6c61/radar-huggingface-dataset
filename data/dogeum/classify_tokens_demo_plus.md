@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dogeum/classify_tokens_demo_plus` es una política de aprendizaje por imitación para robótica basada en la arquitectura Action Chunking with Transformers (ACT). Desarrollado por dogeum (Park), se ha entrenado y publicado mediante la librería LeRobot de HuggingFace, siguiendo el enfoque descrito en el paper 2304.13705. ACT predice bloques de acciones en lugar de pasos individuales, lo que permite a un robot ejecutar secuencias de movimiento más coherentes y fluidas a partir de datos teleoperados.
+El modelo `dogeum/classify_tokens_demo_plus` es una política de aprendizaje por imitación para robótica basada en la arquitectura Action Chunking with Transformers (ACT). Desarrollado por dogeum (Park), se ha entrenado y publicado mediante la librería LeRobot de Hugging Face, siguiendo el enfoque descrito en el paper 2304.13705. ACT predice bloques de acciones en lugar de pasos individuales, lo que permite a un robot ejecutar secuencias de movimiento más coherentes y fluidas a partir de datos teleoperados.
 
 El modelo tiene un total de 51.668.614 parámetros y se distribuye en formato safetensors bajo licencia Apache 2.0. Está pensado para ser utilizado como política de control en tareas de manipulación robótica, integrándose en el ecosistema LeRobot para entrenamiento, evaluación e inferencia. Su relevancia radica en que ofrece una implementación práctica de un método de imitación learning eficaz para entornos robóticos controlados, con un tamaño de modelo reducido que facilita su despliegue en hardware modesto.
 
@@ -28,7 +28,7 @@ El modelo implementa ACT, una arquitectura basada en transformers que predice se
 - Predicción de chunks de acciones para control robótico continuo.
 - Aprendizaje por imitación a partir de demostraciones teleoperadas.
 - Integración nativa con el ecosistema LeRobot para entrenamiento, inferencia y evaluación.
-- Compatibilidad con el framework de HuggingFace para publicación y descarga de pesos.
+- Compatibilidad con el framework de Hugging Face para publicación y descarga de pesos.
 - No soporta generación de texto, razonamiento, tool calling ni capacidades de visión o audio.
 - No dispone de modo de pensamiento ni de capacidades multilingües.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos similares. Existen otros modelos ACT publicados por el mismo autor en HuggingFace, como `doosan_gripper_act_1M`, pero no se han encontrado especificaciones detalladas que permitan una comparación rigurosa.
+No se dispone de información suficiente para realizar una comparativa con otros modelos similares. Existen otros modelos ACT publicados por el mismo autor en Hugging Face, como `doosan_gripper_act_1M`, pero no se han encontrado especificaciones detalladas que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dogeum/classify_tokens_demo_plus
+- Modelo en Hugging Face: https://huggingface.co/dogeum/classify_tokens_demo_plus
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

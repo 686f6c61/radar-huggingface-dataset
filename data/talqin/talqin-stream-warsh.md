@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, W
 
 | Modelo | Parametros | Contexto / streaming | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Talqin streaming v1.0 (Warsh) | 22,3 M | Streaming causal, ventanas de 0,32 s | Apache 2.0 | HuggingFace (ONNX, sherpa-onnx) |
+| Talqin streaming v1.0 (Warsh) | 22,3 M | Streaming causal, ventanas de 0,32 s | Apache 2.0 | Hugging Face (ONNX, sherpa-onnx) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de modelos comparables de ASR coranico en streaming con los que establecer una comparacion cuantitativa; por tanto, no se presentan cifras de terceros.
@@ -92,6 +92,6 @@ No se dispone en la informacion proporcionada de modelos comparables de ASR cora
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talqin/talqin-stream-warsh
+- Modelo en Hugging Face: https://huggingface.co/talqin/talqin-stream-warsh
 - Repositorio del proyecto Talqin: https://github.com/TalqinCore
 - sherpa-onnx (runtime): https://github.com/k2-fsa/sherpa-onnx

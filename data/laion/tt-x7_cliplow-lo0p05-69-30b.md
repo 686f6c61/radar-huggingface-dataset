@@ -23,7 +23,7 @@ Se trata de un checkpoint del paso 69 de un total planificado de 80, seleccionad
 
 El modelo parte de la arquitectura Qwen3-Coder-30B-A3B-Instruct, un transformer de tipo MoE (mixture of experts) con 30,5 mil millones de parámetros totales y activación parcial de expertos. Sobre esta base, LAION aplicó un entrenamiento de refuerzo con GRPO (Group Relative Policy Optimization) usando el framework SkyRL y el motor Terminus-2. El dataset de entrenamiento fue `DCAgent/exp_rpt_multifile`, que contiene tareas de edición y reparación de código en proyectos con múltiples archivos. La señal de recompensa se basó en un verifier de tipo `pass_ratio shaping`, que mide la proporción de pruebas superadas.
 
-El checkpoint se exportó post-hoc desde un shard FSDP en un clúster de 4x4 GH200. El proceso de exportación a HuggingFace sufrió un error en el hook de exportación (ModelLocatorError), por lo que no se generaron exportaciones anteriores. El run fue detenido por el propietario en el paso 74 de 80, por lo que el modelo no ha completado el ciclo de entrenamiento previsto.
+El checkpoint se exportó post-hoc desde un shard FSDP en un clúster de 4x4 GH200. El proceso de exportación a Hugging Face sufrió un error en el hook de exportación (ModelLocatorError), por lo que no se generaron exportaciones anteriores. El run fue detenido por el propietario en el paso 74 de 80, por lo que el modelo no ha completado el ciclo de entrenamiento previsto.
 
 ## Capacidades
 
@@ -70,5 +70,5 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- [HuggingFace - laion/tt-x7_cliplow-lo0p05-69-30B](https://huggingface.co/laion/tt-x7_cliplow-lo0p05-69-30B)
+- [Hugging Face - laion/tt-x7_cliplow-lo0p05-69-30B](https://huggingface.co/laion/tt-x7_cliplow-lo0p05-69-30B)
 - [Dataset de training traces - penfever/tt-x7_cliplow-lo0p05](https://huggingface.co/datasets/penfever/tt-x7_cliplow-lo0p05)

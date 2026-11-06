@@ -75,5 +75,5 @@ No disponible. El adaptador es específico de Qwen3.5-9B y no se han publicado c
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/iamPi/sinopia-b57f6cad
+- Hugging Face (adaptador): https://huggingface.co/iamPi/sinopia-b57f6cad
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

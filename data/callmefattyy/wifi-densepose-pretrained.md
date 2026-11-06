@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RuView (publicado en HuggingFace como `callmefattyy/wifi-densepose-pretrained`) es una familia de modelos de "sensing" por WiFi desarrollada por el autor `callmefattyy` dentro del ecosistema RuView (repositorio `ruvnet/RuView`). El objetivo es convertir las variaciones del canal de radio (CSI, Channel State Information) capturadas por un chip ESP32 de bajo coste en informacion espacial: detectar presencia, medir frecuencia respiratoria y cardiaca, clasificar movimiento y calidad del sueno, contar personas y detectar caidas, todo ello sin camaras y atravesando tabiques de pladur, madera o tela.
+RuView (publicado en Hugging Face como `callmefattyy/wifi-densepose-pretrained`) es una familia de modelos de "sensing" por WiFi desarrollada por el autor `callmefattyy` dentro del ecosistema RuView (repositorio `ruvnet/RuView`). El objetivo es convertir las variaciones del canal de radio (CSI, Channel State Information) capturadas por un chip ESP32 de bajo coste en informacion espacial: detectar presencia, medir frecuencia respiratoria y cardiaca, clasificar movimiento y calidad del sueno, contar personas y detectar caidas, todo ello sin camaras y atravesando tabiques de pladur, madera o tela.
 
 El componente central descrito es un encoder auto-supervisado (no un modelo de lenguaje) que transforma caracteristicas CSI de 8 dimensiones en un embedding L2-normalizado de 128 dimensiones. Se trata de una red de 2 capas fully-connected (BatchNorm + GELU) con 9.280 parametros, entrenada con un objetivo InfoNCE. El repositorio incluye ademas ficheros de pesos en `safetensors`, versiones cuantizadas (`model-q2/q4/q8.bin`), cabezas de tarea (`presence-head.json`) y metadatos de nodos.
 
@@ -89,7 +89,7 @@ No disponible. La busqueda web realizada no devolvio resultados relevantes sobre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/callmefattyy/wifi-densepose-pretrained
+- Hugging Face: https://huggingface.co/callmefattyy/wifi-densepose-pretrained
 - Repositorio RuView citado en la model card: https://github.com/ruvnet/RuView
 - Pull request del fix v2.0.1: https://github.com/ruvnet/RuView/pull/1879
 - Busqueda web: no se encontraron enlaces relevantes al modelo (los resultados recuperados no guardan relacion con la ficha y se omiten).

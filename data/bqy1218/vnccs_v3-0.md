@@ -80,7 +80,7 @@ La comparacion directa es dificil porque VNCCS_v3.0 no es un unico modelo, sino 
 | Longitud de contexto | no aplica | no aplica | no aplica |
 | Rendimiento | no se han publicado benchmarks | no disponible | no disponible |
 | Licencia | Apache-2.0 (puede diferir en los modelos de terceros incluidos) | variable segun autor | variable segun autor |
-| Disponibilidad | Repositorio HuggingFace con 0 descargas y 0 likes en el momento de la consulta | Amplia disponibilidad en la comunidad | Amplia disponibilidad en la comunidad |
+| Disponibilidad | Repositorio Hugging Face con 0 descargas y 0 likes en el momento de la consulta | Amplia disponibilidad en la comunidad | Amplia disponibilidad en la comunidad |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ La comparacion directa es dificil porque VNCCS_v3.0 no es un unico modelo, sino 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bqy1218/VNCCS_v3.0
+- Repositorio Hugging Face: https://huggingface.co/bqy1218/VNCCS_v3.0
 - Proyecto GitHub VNCCS: https://github.com/AHEKOT/ComfyUI_VNCCS
 - Servidor de Discord del proyecto: https://discord.com/invite/9Dacp4wvQw
 - Apoyo al autor (Buy Me a Coffee): https://www.buymeacoffee.com/MIUProject

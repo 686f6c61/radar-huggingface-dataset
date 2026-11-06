@@ -82,7 +82,7 @@ La comparativa se basa en datos publicos de cada modelo. El modelo AA0801 no dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AA0801/llama-3.2-3b-math-slm-gguf
+- Repositorio Hugging Face: https://huggingface.co/AA0801/llama-3.2-3b-math-slm-gguf
 - Base Llama 3.2 3B (Meta): https://huggingface.co/meta-llama/Llama-3.2-3B
 - Modelo comparable Llama-3.2-3B-Math-Oct: https://huggingface.co/prithivMLmods/Llama-3.2-3B-Math-Oct
 - Unsloth (herramienta de conversion): https://github.com/unslothai/unsloth

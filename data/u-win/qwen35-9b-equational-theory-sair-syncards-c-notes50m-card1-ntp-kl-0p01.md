@@ -4,7 +4,7 @@
 
 El modelo `U-WIN/qwen35-9b-equational-theory-sair-syncards-c-notes50m-card1-ntp-kl-0p01` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, desarrollado por el usuario U-WIN. Se trata de un experimento de especializacion orientado a teoria ecuacional, verificación sintetica mediante tarjetas (synthetic verification cards) y prediccion del siguiente token con regularizacion KL (coeficiente 0,01). El nombre del repositorio codifica la receta de entrenamiento: notas de 50 millones de tokens, una tarjeta, NTP (next-token prediction) y KL con peso 0,01.
 
-El modelo conserva la arquitectura multimodal image-text-to-text del Qwen3.5-9B original, con 9.653.104.368 parametros totales segun los pesos en safetensors, y se distribuye bajo licencia Apache 2.0. El repositorio tiene un tamano de 19,3 GB y esta marcado como acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de la descarga.
+El modelo conserva la arquitectura multimodal image-text-to-text del Qwen3.5-9B original, con 9.653.104.368 parametros totales segun los pesos en safetensors, y se distribuye bajo licencia Apache 2.0. El repositorio tiene un tamano de 19,3 GB y esta marcado como acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 Su relevancia es limitada y muy especifica: se trata de un artefacto de investigacion con un unico descargador y cero likes en el momento de la consulta, sin documentacion publica de resultados. Resulta de interes para quien estudie recetas de ajuste fino con regularizacion KL sobre modelos Qwen y para quienes necesiten un punto de partida especializado en tareas de teoria ecuacional, pero no debe considerarse un modelo listo para produccion sin una evaluacion previa.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| U-WIN/qwen35-9b-equational-theory-sair-syncards-c-notes50m-card1-ntp-kl-0p01 | 9.653.104.368 | no disponible | Apache 2.0 | Gated en HuggingFace |
+| U-WIN/qwen35-9b-equational-theory-sair-syncards-c-notes50m-card1-ntp-kl-0p01 | 9.653.104.368 | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Qwen/Qwen3.5-9B (modelo base) | ~9,6 B | no disponible | segun modelo base | Publico |
 | Otros fine-tunes de Qwen3.5-9B | variable | no disponible | variable | variable |
 
@@ -77,11 +77,11 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Sesgos conocidos: no documentados; hereda los del modelo base Qwen3.5-9B.
 - Idiomas soportados no especificados; no se garantiza un rendimiento multilingue.
 - Longitud de contexto no documentada; conviene validarla antes de usos con ventanas largas.
-- Licencia Apache 2.0 permite uso comercial, pero el acceso esta restringido (gated) y sujeto a las condiciones de HuggingFace.
+- Licencia Apache 2.0 permite uso comercial, pero el acceso esta restringido (gated) y sujeto a las condiciones de Hugging Face.
 - No se han publicado cuantizaciones oficiales; las conversiones a GGUF o AWQ correrian por cuenta del usuario.
 - No recomendado para produccion sin una evaluacion exhaustiva frente al modelo base.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-c-notes50m-card1-ntp-kl-0p01
+- Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-c-notes50m-card1-ntp-kl-0p01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

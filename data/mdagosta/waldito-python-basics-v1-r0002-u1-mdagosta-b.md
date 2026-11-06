@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Waldito Python Basics v1 (identificador completo `mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta-b`) es un modelo de generacion de texto publicado por el usuario mdagosta en HuggingFace. Se trata de un export del proyecto OpenWALDO que reutiliza la arquitectura estandar Llama de tipo causal-language-model de la libreria Transformers, con un tokenizador propio denominado "schema-1" de tipo byte. El modelo tiene 9.541.632 parametros reales (aproximadamente 9,54 millones), lo que lo situa en la categoria de modelos ultraligeros, muy lejos de los LLM convencionales.
+Waldito Python Basics v1 (identificador completo `mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta-b`) es un modelo de generacion de texto publicado por el usuario mdagosta en Hugging Face. Se trata de un export del proyecto OpenWALDO que reutiliza la arquitectura estandar Llama de tipo causal-language-model de la libreria Transformers, con un tokenizador propio denominado "schema-1" de tipo byte. El modelo tiene 9.541.632 parametros reales (aproximadamente 9,54 millones), lo que lo situa en la categoria de modelos ultraligeros, muy lejos de los LLM convencionales.
 
 El nombre del repositorio sugiere un ajuste orientado a fundamentos de Python ("python-basics"), con un identificador de revision (`r0002`) y un sufijo de unidad (`u1`), lo que apunta a un pipeline de entrenamiento por etapas o incrementos. No se dispone de informacion sobre el dataset, el numero de tokens de entrenamiento ni el proceso de alineacion (RLHF, DPO u otros).
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Waldito Python Basics v1 r0002 | 9,54 M | No disponible | No disponible | HuggingFace (0 descargas) |
-| SmolLM2-135M | 135 M | 8.192 tokens (segun documentacion publica del autor) | Apache-2.0 | HuggingFace |
-| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache-2.0 | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | HuggingFace |
+| Waldito Python Basics v1 r0002 | 9,54 M | No disponible | No disponible | Hugging Face (0 descargas) |
+| SmolLM2-135M | 135 M | 8.192 tokens (segun documentacion publica del autor) | Apache-2.0 | Hugging Face |
+| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache-2.0 | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | Hugging Face |
 
 Los modelos de comparacion pertenecen a familias ampliamente documentadas y evaluadas, con licencias permisivas y benchmarks publicos. Waldito Python Basics v1 es aproximadamente 14 veces menor que SmolLM2-135M y no dispone de datos de contexto, licencia ni evaluacion, por lo que la comparacion cuantitativa de rendimiento no es posible con la informacion disponible.
 
@@ -83,7 +83,7 @@ Los modelos de comparacion pertenecen a familias ampliamente documentadas y eval
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta-b
+- Hugging Face del modelo: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta-b
 - Repositorio relacionado (merge r0000): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge
 - Python.org: https://www.python.org/
 - Machine Learning with Python Tutorial (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/machine-learning-with-python/

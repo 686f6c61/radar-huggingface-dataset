@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AMALIA-9B-0626-SFT | 9.15B | 32.000 | Apache 2.0 | HuggingFace, GGUF |
-| EuroLLM (base) | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B | 8B | 128.000 | Llama 3.1 Community | HuggingFace |
-| Mistral-7B | 7.3B | 32.000 | Apache 2.0 | HuggingFace |
+| AMALIA-9B-0626-SFT | 9.15B | 32.000 | Apache 2.0 | Hugging Face, GGUF |
+| EuroLLM (base) | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B | 8B | 128.000 | Llama 3.1 Community | Hugging Face |
+| Mistral-7B | 7.3B | 32.000 | Apache 2.0 | Hugging Face |
 
 Nota: los datos de Llama-3.1-8B y Mistral-7B son de conocimiento público, pero no se han verificado en la información proporcionada. La comparación de rendimiento no es posible sin benchmarks publicados.
 
@@ -86,8 +86,8 @@ Nota: los datos de Llama-3.1-8B y Mistral-7B son de conocimiento público, pero 
 
 ## Enlaces
 
-- HuggingFace (conversión GGUF): https://huggingface.co/NoxNotreve/AMALIA-9B-0626-SFT-GGUF
-- HuggingFace (modelo base): https://huggingface.co/amalia-llm/AMALIA-9B-0626-SFT
+- Hugging Face (conversión GGUF): https://huggingface.co/NoxNotreve/AMALIA-9B-0626-SFT-GGUF
+- Hugging Face (modelo base): https://huggingface.co/amalia-llm/AMALIA-9B-0626-SFT
 - Sitio web del proyecto: https://amaliallm.pt/
 - Repositorio principal: https://github.com/AMALIA-LLM/AMALIA
 - Repositorio de evaluación: https://github.com/AMALIA-LLM/amalia-lm-eval

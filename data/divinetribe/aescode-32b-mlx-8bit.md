@@ -73,11 +73,11 @@ Estos números corresponden al modelo original, no a la cuantización de 8 bits.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| divinetribe/AesCode-32B-MLX-8bit | ~33,36 B | no disponible | 8 bits (lenguaje) + bf16 (visión) | Apache 2.0 | HuggingFace, MLX |
-| divinetribe/AesCode-32B-MLX-bf16 | ~33,36 B | no disponible | bf16 | Apache 2.0 | HuggingFace, MLX |
-| divinetribe/AesCode-32B-MLX-4bit | ~33,36 B | no disponible | 4 bits | Apache 2.0 | HuggingFace, MLX |
-| microsoft/AesCode-32B | ~33,36 B | no disponible | bf16 original | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-VL-32B-Instruct | ~33 B | no disponible | bf16 original | Apache 2.0 | HuggingFace |
+| divinetribe/AesCode-32B-MLX-8bit | ~33,36 B | no disponible | 8 bits (lenguaje) + bf16 (visión) | Apache 2.0 | Hugging Face, MLX |
+| divinetribe/AesCode-32B-MLX-bf16 | ~33,36 B | no disponible | bf16 | Apache 2.0 | Hugging Face, MLX |
+| divinetribe/AesCode-32B-MLX-4bit | ~33,36 B | no disponible | 4 bits | Apache 2.0 | Hugging Face, MLX |
+| microsoft/AesCode-32B | ~33,36 B | no disponible | bf16 original | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-VL-32B-Instruct | ~33 B | no disponible | bf16 original | Apache 2.0 | Hugging Face |
 
 La comparativa natural es dentro de la propia familia AesCode: bf16 para máxima calidad, 8 bits como equilibrio entre tamaño y fidelidad, y 4 bits para equipos con menos memoria. Frente al modelo original de Microsoft, esta build no añade capacidades, solo reduce requisitos de memoria a costa de una pequeña pérdida de precisión en el decoder.
 
@@ -95,7 +95,7 @@ La comparativa natural es dentro de la propia familia AesCode: bf16 para máxima
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divinetribe/AesCode-32B-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/divinetribe/AesCode-32B-MLX-8bit
 - Variante bf16: https://huggingface.co/divinetribe/AesCode-32B-MLX-bf16
 - Variante 4 bits: https://huggingface.co/divinetribe/AesCode-32B-MLX-4bit
 - Modelo original: https://huggingface.co/microsoft/AesCode-32B

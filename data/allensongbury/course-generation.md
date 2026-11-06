@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `allensongbury/course-generation`, publicado en HuggingFace bajo el nombre interno "Tiny Transformer for Generation", es una implementación de referencia de un transformer de escala reducida orientada a tareas de generación de texto. Lo desarrolla el usuario allensongbury y se distribuye con licencia MIT. Se trata de un artefacto de código y configuración, no de un modelo entrenado: el checkpoint incluido se presenta explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con pesos ajustados.
+El modelo `allensongbury/course-generation`, publicado en Hugging Face bajo el nombre interno "Tiny Transformer for Generation", es una implementación de referencia de un transformer de escala reducida orientada a tareas de generación de texto. Lo desarrolla el usuario allensongbury y se distribuye con licencia MIT. Se trata de un artefacto de código y configuración, no de un modelo entrenado: el checkpoint incluido se presenta explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con pesos ajustados.
 
 Con 16.576 parámetros totales en formato safetensors, el modelo es varios órdenes de magnitud más pequeño que cualquier LLM de uso práctico. Su propósito declarado es servir como base transparente y reproducible para experimentar con arquitecturas transformer, con atención estándar, fusión mediante concat mlp, activación GELU y normalización GroupNorm. La configuración por defecto emplea el optimizador LAMB con un schedule polinómico.
 
@@ -70,8 +70,8 @@ No disponible. El repositorio no incluye líneas base comparables ni métricas, 
 - Limitaciones de contexto e idioma: no se declara ventana de contexto ni idiomas soportados.
 - Licencia MIT: permite uso comercial y modificación, pero el autor recomienda revisar por separado los términos de los datos de origen si se emplean conjuntos externos.
 - Para producción: no es apto. El propio autor lo describe como un punto de partida experimental y subraya que cualquier resultado de un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto aquí incluidos.
-- Fecha de publicación registrada en HuggingFace: 12 de octubre de 2026, con cero descargas y cero valoraciones en el momento de la consulta.
+- Fecha de publicación registrada en Hugging Face: 12 de octubre de 2026, con cero descargas y cero valoraciones en el momento de la consulta.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/allensongbury/course-generation
+- Hugging Face: https://huggingface.co/allensongbury/course-generation

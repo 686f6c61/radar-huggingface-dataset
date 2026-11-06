@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables. El adaptador es especí
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_chatbot_arena_nemotron-nano-30b-a3b_as_nemotron-nano-30b-a3b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_chatbot_arena_nemotron-nano-30b-a3b_as_nemotron-nano-30b-a3b_seed42
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Herramienta Tinker (mencionada en la model card): https://thinkingmachines.ai/tinker/

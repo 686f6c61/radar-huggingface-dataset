@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `isl-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un ajuste fino supervisado (SFT) publicado por el usuario `francesca9805` en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 124.770.816 parametros, derivado del modelo base `francesca9805/isl-latn-100mb-ppt-mp-struct-core-100mb_seed455` mediante la libreria TRL 0.23.0. El identificador del repositorio sugiere un experimento sobre corpus de aproximadamente 100 MB en alfabeto latino, con un tokenizador previo («ppt»/«mp», presumiblemente tokenizacion morfologica o por piezas) y un checkpoint intermedio (paso 500, semilla 455), aunque la model card no documenta estos detalles de forma explicita.
+El modelo `isl-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un ajuste fino supervisado (SFT) publicado por el usuario `francesca9805` en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 124.770.816 parametros, derivado del modelo base `francesca9805/isl-latn-100mb-ppt-mp-struct-core-100mb_seed455` mediante la libreria TRL 0.23.0. El identificador del repositorio sugiere un experimento sobre corpus de aproximadamente 100 MB en alfabeto latino, con un tokenizador previo («ppt»/«mp», presumiblemente tokenizacion morfologica o por piezas) y un checkpoint intermedio (paso 500, semilla 455), aunque la model card no documenta estos detalles de forma explicita.
 
 El problema que aborda es la adaptacion de un modelo base pequeno a un dominio o idioma concreto mediante entrenamiento supervisado, un flujo habitual en investigacion academica de bajo coste computacional (trainers, runs de Weights & Biases). No se trata de un modelo de proposito general listo para produccion, sino de un artefacto de investigacion con cero descargas y cero likes en el momento de redactar esta ficha.
 
@@ -49,7 +49,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 - Evaluacion de tecnicas de SFT con TRL: sirve como caso de estudio para medir el efecto de un ajuste supervisado sobre un modelo base GPT-2 de 124 M.
 - Prototipado rapido en entornos sin GPU: con menos de 500 MB en FP32, puede ejecutarse en CPU o en cualquier GPU consumer, lo que facilita pruebas de integracion en pipelines de `transformers`.
 - Comparacion de checkpoints intermedios: el sufijo `ckpt500` permite estudiar la evolucion del modelo durante el entrenamiento frente a otros checkpoints de la misma familia.
-- Docencia y formacion: ejemplo didactico de fine-tuning con TRL y de publicacion de modelos en HuggingFace.
+- Docencia y formacion: ejemplo didactico de fine-tuning con TRL y de publicacion de modelos en Hugging Face.
 - Generacion de texto de dominio especifico: si el corpus de 100 MB corresponde a un dominio concreto (legal, literario, etc.), podria emplearse para generar borradores en ese dominio, siempre con supervision humana.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| isl-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| isl-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 base (OpenAI) | ~124 M | 1024 tokens | modificada (MIT-like con restricciones) | ampliamente disponible |
 | GPT-2 small ajustado (por ejemplo, distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | ampliamente disponible |
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento del modelo analizado que permitan una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/isl-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
+- Hugging Face: https://huggingface.co/francesca9805/isl-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/isl-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Repositorio TRL: https://github.com/huggingface/trl
 - Experimento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/3w3yo769

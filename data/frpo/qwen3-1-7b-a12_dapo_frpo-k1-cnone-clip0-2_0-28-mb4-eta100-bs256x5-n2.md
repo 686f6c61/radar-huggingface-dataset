@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia en fp32: aproximadamente 8,2 GB solo para los pesos (2.031.739.904 parámetros × 4 bytes). Con activaciones y overhead, se recomiendan al menos 10-12 GB.
 - Para inferencia en bf16 o fp16 (tras conversión manual): ~4,1 GB de pesos, viable en GPUs con 8 GB o más.
 - GPUs recomendadas: RTX 3090, RTX 4090, A100 (40/80 GB) o superiores para fp32. Para bf16, una RTX 3060 (12 GB) o RTX 4070 serían suficientes.
-- Opciones de despliegue: al ser un modelo transformers estándar, es compatible con el ecosistema HuggingFace (transformers, text-generation-inference). También puede convertirse a GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan pesos cuantizados.
+- Opciones de despliegue: al ser un modelo transformers estándar, es compatible con el ecosistema Hugging Face (transformers, text-generation-inference). También puede convertirse a GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan pesos cuantizados.
 - Latencia y throughput: no disponibles. Dependerán del hardware y del backend utilizado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FRPO/qwen3-1.7b-a12_dapo_frpo (este) | 2.03B (fp32) | no disponible | RL (FRPO/DAPO) sobre Qwen3-1.7B | no disponible | HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 1.7B | 32K (según documentación de Qwen3) | Pre-entrenamiento + instruct | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32K | Destilación de R1 | MIT | HuggingFace |
+| FRPO/qwen3-1.7b-a12_dapo_frpo (este) | 2.03B (fp32) | no disponible | RL (FRPO/DAPO) sobre Qwen3-1.7B | no disponible | Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 1.7B | 32K (según documentación de Qwen3) | Pre-entrenamiento + instruct | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32K | Destilación de R1 | MIT | Hugging Face |
 
 La comparación se limita a características generales, ya que no hay datos de rendimiento para este checkpoint. El modelo base Qwen3-1.7B tiene una licencia permisiva (Apache 2.0), pero este fine-tuning no declara licencia, lo que puede generar incertidumbre legal para su uso.
 
@@ -80,6 +80,6 @@ La comparación se limita a características generales, ya que no hay datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a12_dapo_frpo-k1-cNone-clip0.2_0.28-mb4-eta100-bs256x5-n2
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a12_dapo_frpo-k1-cNone-clip0.2_0.28-mb4-eta100-bs256x5-n2
 - Framework verl: https://github.com/volcengine/verl
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

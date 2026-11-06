@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nataraj Mudra Grader es un clasificador de visión por computador publicado por el usuario Ira-1033 en HuggingFace. No es un modelo de lenguaje ni una red neuronal profunda entrenada de extremo a extremo: se trata de un clasificador QDA (Quadratic Discriminant Analysis) de scikit-learn que opera sobre vectores geométricos de huesos derivados de landmarks de mano extraídos con MMPose. Su tarea es evaluar siete mudras de una sola mano propios del Bharatanatyam: Mushti, Shikhara, Pataaka, Tripataka, Suchi, Mukula y Kartari Mukha.
+Nataraj Mudra Grader es un clasificador de visión por computador publicado por el usuario Ira-1033 en Hugging Face. No es un modelo de lenguaje ni una red neuronal profunda entrenada de extremo a extremo: se trata de un clasificador QDA (Quadratic Discriminant Analysis) de scikit-learn que opera sobre vectores geométricos de huesos derivados de landmarks de mano extraídos con MMPose. Su tarea es evaluar siete mudras de una sola mano propios del Bharatanatyam: Mushti, Shikhara, Pataaka, Tripataka, Suchi, Mukula y Kartari Mukha.
 
 El repositorio no se limita al artefacto entrenado. Incluye los vectores de referencia por clase (`class_reference_vectors.json`) que alimentan una puntuación ponderada por rúbrica, el motor de retroalimentación direccional (`rubric_engine.py`), el código de extracción de landmarks (`mudra_core.py`), el punto de entrada de producción (`handler.py`), una demo local en Gradio, un `Dockerfile` y los checkpoints de MMPose necesarios para la detección y estimación de pose de la mano. Es, por tanto, un paquete reproducible de extremo a extremo, no solo un fichero de pesos.
 
@@ -89,7 +89,7 @@ No se dispone de métricas publicadas que permitan una comparativa cuantitativa.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nataraj Mudra Grader (QDA) | Clasificador estadístico sobre landmarks | No disponible | No aplica | MIT | Repositorio HuggingFace |
+| Nataraj Mudra Grader (QDA) | Clasificador estadístico sobre landmarks | No disponible | No aplica | MIT | Repositorio Hugging Face |
 | Random Forest (evaluado en la comparación) | Ensamblado de árboles | No disponible | No aplica | No disponible | Solo mencionado, no publicado aquí |
 | Extra Trees (evaluado en la comparación) | Ensamblado de árboles | No disponible | No aplica | No disponible | Solo mencionado, no publicado aquí |
 | SVM (evaluado en la comparación) | Clasificador de margen máximo | No disponible | No aplica | No disponible | Solo mencionado, no publicado aquí |
@@ -111,7 +111,7 @@ No se dispone de métricas publicadas que permitan una comparativa cuantitativa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ira-1033/nataraj-mudra-grader
+- Modelo en Hugging Face: https://huggingface.co/Ira-1033/nataraj-mudra-grader
 - Artículo de investigación mencionado en la model card: no disponible (se cita su existencia, pero no se incluye enlace)
 - Repositorio de código, demo o paper adicionales: no disponibles en la información proporcionada
 - Resultados de búsqueda web: las consultas realizadas no devolvieron enlaces relacionados con este modelo. Los resultados obtenidos corresponden a los Instituts Régionaux d'Administration franceses y a sus convocatorias de acceso, que no guardan relación con el modelo ni con su dominio de aplicación.

@@ -93,7 +93,7 @@ Los datos del modelo base y de Qwen2.5-1.5B-Instruct provienen de la documentaci
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo3300-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-grpo3300-lora
 - Adaptador SFT previo (usado para inicializar GRPO): https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft8400-lora
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento xLAM tool calling mixto: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed

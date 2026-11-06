@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Arquitectura / tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| warped-community/FLUX-klein-4B-litert-lm | 4B (segun nombre) | Difusion texto-a-imagen, formato LiteRT | No aplica | apache-2.0 (a verificar con el modelo base) | HuggingFace, 0 descargas, sin README tecnico |
-| litert-community/FLUX.2-klein-4B-LiteRT | 4B | Difusion texto-a-imagen, formato LiteRT | No aplica | No disponible en la informacion proporcionada | HuggingFace (fuente citada por el autor) |
-| black-forest-labs/FLUX.2-klein | 4B | Difusion texto-a-imagen | No aplica | No disponible en la informacion proporcionada | HuggingFace (modelo base) |
-| FLUX.1-schnell | 12B | Difusion texto-a-imagen (flow matching) | No aplica | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| warped-community/FLUX-klein-4B-litert-lm | 4B (segun nombre) | Difusion texto-a-imagen, formato LiteRT | No aplica | apache-2.0 (a verificar con el modelo base) | Hugging Face, 0 descargas, sin README tecnico |
+| litert-community/FLUX.2-klein-4B-LiteRT | 4B | Difusion texto-a-imagen, formato LiteRT | No aplica | No disponible en la informacion proporcionada | Hugging Face (fuente citada por el autor) |
+| black-forest-labs/FLUX.2-klein | 4B | Difusion texto-a-imagen | No aplica | No disponible en la informacion proporcionada | Hugging Face (modelo base) |
+| FLUX.1-schnell | 12B | Difusion texto-a-imagen (flow matching) | No aplica | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 No hay datos de rendimiento comparado en la informacion disponible; la tabla recoge solo parametros, licencia y disponibilidad. Las cifras de calidad de imagen entre estas alternativas no se han publicado en el material consultado.
 
@@ -82,7 +82,7 @@ No hay datos de rendimiento comparado en la informacion disponible; la tabla rec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/FLUX-klein-4B-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/FLUX-klein-4B-litert-lm
 - Fuente citada por el autor (conversion LiteRT): https://huggingface.co/litert-community/FLUX.2-klein-4B-LiteRT
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

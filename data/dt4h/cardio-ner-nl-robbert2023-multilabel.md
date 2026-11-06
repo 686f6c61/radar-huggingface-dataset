@@ -6,7 +6,7 @@ El modelo `DT4H/cardio-ner-nl-robbert2023-multilabel` es un sistema de reconocim
 
 El modelo se basa en RobBERT2023, un encoder transformer tipo RoBERTa preentrenado específicamente para neerlandés, y se ha ajustado (fine-tuning) para la tarea de clasificación de tokens. Con aproximadamente 123,8 millones de parámetros, es un modelo de tamaño medio que puede ejecutarse en hardware de consumo. Su relevancia radica en que aborda la extracción de información estructurada de textos clínicos cardiovasculares, un paso clave para la reutilización de datos de salud en investigación y práctica clínica, siempre dentro de un marco federado y respetuoso con la privacidad.
 
-El modelo está disponible en HuggingFace bajo licencia GPL-3.0, con pesos en formato safetensors y una ventana de contexto estándar para RoBERTa (512 tokens). Aunque aún no tiene descargas ni valoraciones, forma parte de la colección CardioNER de DT4H, que incluye también versiones multilingües basadas en XLM-RoBERTa-large.
+El modelo está disponible en Hugging Face bajo licencia GPL-3.0, con pesos en formato safetensors y una ventana de contexto estándar para RoBERTa (512 tokens). Aunque aún no tiene descargas ni valoraciones, forma parte de la colección CardioNER de DT4H, que incluye también versiones multilingües basadas en XLM-RoBERTa-large.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks específicos para este modelo en la
 - VRAM estimada para inferencia: al tratarse de un modelo de ~124M parámetros, la inferencia en precisión fp32 requiere aproximadamente 500 MB de VRAM (sin contar el overhead del framework). En fp16, se reduce a ~250 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060 o superiores. También puede ejecutarse en CPU con razonable velocidad.
 - Cabe en GPUs de consumo comunes: sí, incluso en tarjetas integradas o de gama baja.
-- Opciones de despliegue: al ser un modelo de HuggingFace Transformers, puede servirse con vLLM, TGI o directamente con la librería `transformers` de Python. Para entornos ligeros, se puede convertir a ONNX o usar `optimum` para aceleración.
+- Opciones de despliegue: al ser un modelo de Hugging Face Transformers, puede servirse con vLLM, TGI o directamente con la librería `transformers` de Python. Para entornos ligeros, se puede convertir a ONNX o usar `optimum` para aceleración.
 - Latencia y throughput estimados: no hay datos oficiales, pero para un modelo de este tamaño, la inferencia por secuencia de 512 tokens en una GPU moderna (RTX 3090) suele estar en el orden de 10-20 ms, lo que permite procesar cientos de documentos por minuto.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ La comparativa se basa en características declaradas; no hay datos de rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DT4H/cardio-ner-nl-robbert2023-multilabel
-- Colección CardioNER en HuggingFace: https://huggingface.co/collections/DT4H/cardioner
+- Hugging Face: https://huggingface.co/DT4H/cardio-ner-nl-robbert2023-multilabel
+- Colección CardioNER en Hugging Face: https://huggingface.co/collections/DT4H/cardioner
 - Artículo SMM4H-HeaRD 2026 (aclanthology): https://aclanthology.org/2026.smm4h-1.14/
 - PDF del artículo: https://aclanthology.org/2026.smm4h-1.14.pdf
 - Organización GitHub de DataTools4Heart: https://github.com/DataTools4Heart/

@@ -104,10 +104,10 @@ No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K)
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Esta receta (Swift 1.5 Qwen3.8 Flash-Next NVFP4+FP8 PLE) | no disponible | 262.144 | 42,8 tok/s a 1 stream; 86,4 tok/s a 5 streams | Apache-2.0 (receta) / Qwen Community License 1.0 (pesos) | HuggingFace, requiere build propio de imagen |
+| Esta receta (Swift 1.5 Qwen3.8 Flash-Next NVFP4+FP8 PLE) | no disponible | 262.144 | 42,8 tok/s a 1 stream; 86,4 tok/s a 5 streams | Apache-2.0 (receta) / Qwen Community License 1.0 (pesos) | Hugging Face, requiere build propio de imagen |
 | Config D (misma imagen, MTP 3, KV 12 GiB, CUTLASS MoE por defecto) | no disponible | no disponible | 36,2 tok/s a 1 stream; 18,6 tok/s a 4 streams | idem | no publicada |
 | Config A (vLLM 0.30, MTP 2, contexto 200k) | no disponible | 200.000 | 37,6 tok/s a 1 stream | idem | no publicada |
-| Qwen/Qwen3.8-Flash-Next (modelo original) | no disponible | no disponible | no disponible | Qwen Community License 1.0 | HuggingFace |
+| Qwen/Qwen3.8-Flash-Next (modelo original) | no disponible | no disponible | no disponible | Qwen Community License 1.0 | Hugging Face |
 
 No se dispone de datos de benchmarks academicos ni de comparaciones con modelos de otros fabricantes en la informacion proporcionada.
 

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador de ajuste fino (LoRA) publicado por el usuario nmuendler bajo el identificador `nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-early-stop-run2`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato safetensors que se aplica sobre el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`, un modelo de razonamiento de aproximadamente 7.000 millones de parametros destilado por DeepSeek a partir de su familia DeepSeek-R1. El nombre del repositorio sugiere un experimento de ajuste orientado a detencion temprana (early stopping) en generacion de texto, aunque la model card no documenta el objetivo.
 
-La relevancia de esta publicacion es limitada y de caracter experimental: acumula cero descargas y cero "me gusta" en el momento de la consulta, la model card es la plantilla generica de HuggingFace sin rellenar (todos los campos figuran como "[More Information Needed]") y no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El unico dato tecnico fiable es la libreria declarada (PEFT 0.20.0), el pipeline (`text-generation`) y el tamano del repositorio (0,7 GB), coherente con un adaptador y no con pesos completos del modelo base.
+La relevancia de esta publicacion es limitada y de caracter experimental: acumula cero descargas y cero "me gusta" en el momento de la consulta, la model card es la plantilla generica de Hugging Face sin rellenar (todos los campos figuran como "[More Information Needed]") y no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El unico dato tecnico fiable es la libreria declarada (PEFT 0.20.0), el pipeline (`text-generation`) y el tamano del repositorio (0,7 GB), coherente con un adaptador y no con pesos completos del modelo base.
 
 Por tanto, esta ficha debe leerse como una evaluacion de un artefacto de investigacion reproducible pero escasamente documentado. Cualquier uso en produccion exigiria, como minimo, verificar el procedimiento de entrenamiento, los hiperparametros de LoRA (rango, alfa, modulos objetivo), la licencia aplicable y el comportamiento real frente al modelo base sin adaptar.
 
@@ -96,7 +96,7 @@ No hay datos verificables en la informacion proporcionada para establecer una co
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-early-stop-run2
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-early-stop-run2
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact

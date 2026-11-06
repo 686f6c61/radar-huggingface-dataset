@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B-sft es un ajuste fino supervisado (SFT) del modelo base Qwen2.5-0.5B, publicado por el usuario SuperCloud666666 en HuggingFace. Se trata de un modelo de lenguaje de arquitectura transformer densa con 494.032.768 parámetros totales, derivado de la familia Qwen2.5 de Alibaba. El repositorio tiene un tamaño de 1.0 GB en formato safetensors y se distribuye bajo licencia MIT.
+Qwen2.5-0.5B-sft es un ajuste fino supervisado (SFT) del modelo base Qwen2.5-0.5B, publicado por el usuario SuperCloud666666 en Hugging Face. Se trata de un modelo de lenguaje de arquitectura transformer densa con 494.032.768 parámetros totales, derivado de la familia Qwen2.5 de Alibaba. El repositorio tiene un tamaño de 1.0 GB en formato safetensors y se distribuye bajo licencia MIT.
 
 El modelo resuelve el problema de disponer de un modelo de muy pequeño tamaño (sub-1000M parámetros) afinado para instrucciones, lo que permite su despliegue en entornos con recursos muy limitados: CPU, GPUs de gama baja o dispositivos edge. Su relevancia radica en la combinación de un tamaño reducido con una licencia permisiva (MIT), que facilita su uso comercial y su integración en pipelines ligeros.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-0.5B-sft (este) | 494M | No disponible | MIT | HuggingFace, 22 descargas |
-| Qwen2.5-0.5B (base) | 494M | 32.768 tokens (según documentación oficial de Qwen) | Apache 2.0 | HuggingFace, ampliamente disponible |
-| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens (según documentación oficial de Qwen) | Apache 2.0 | HuggingFace, ampliamente disponible |
-| SmolLM2-360M-Instruct | 360M | 8.192 tokens (según documentación oficial) | Apache 2.0 | HuggingFace, ampliamente disponible |
+| Qwen2.5-0.5B-sft (este) | 494M | No disponible | MIT | Hugging Face, 22 descargas |
+| Qwen2.5-0.5B (base) | 494M | 32.768 tokens (según documentación oficial de Qwen) | Apache 2.0 | Hugging Face, ampliamente disponible |
+| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens (según documentación oficial de Qwen) | Apache 2.0 | Hugging Face, ampliamente disponible |
+| SmolLM2-360M-Instruct | 360M | 8.192 tokens (según documentación oficial) | Apache 2.0 | Hugging Face, ampliamente disponible |
 
 La comparativa se limita a modelos de tamaño similar de la familia Qwen2.5 y alternativas de pequeño tamaño. No se dispone de datos de rendimiento para este checkpoint concreto, por lo que no es posible comparar calidad.
 
@@ -80,6 +80,6 @@ La comparativa se limita a modelos de tamaño similar de la familia Qwen2.5 y al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SuperCloud666666/Qwen2.5-0.5B-sft
+- Hugging Face: https://huggingface.co/SuperCloud666666/Qwen2.5-0.5B-sft
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Modelo Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

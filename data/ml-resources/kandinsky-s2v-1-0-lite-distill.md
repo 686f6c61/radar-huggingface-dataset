@@ -71,8 +71,8 @@ La memoria pico está dominada por la decodificación del VAE más que por el tr
 
 | Modelo | Parámetros | Contexto / fragmentos | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kandinsky S2V 1.0 Lite distilled (este) | 2,3B (DiT) | Fragmentos de 5 s con memoria FramePack | MIT | HuggingFace + GitHub + demo | 16 pasos, CFG destilada, ~5x más rápido que el base |
-| Kandinsky S2V 1.0 Lite | 2,3B (DiT) | Fragmentos de 5 s con memoria FramePack | no disponible en la información | HuggingFace (`kandinskylab/Kandinsky-S2V-1.0-Lite`) | Modelo base de 50 pasos con CFG |
+| Kandinsky S2V 1.0 Lite distilled (este) | 2,3B (DiT) | Fragmentos de 5 s con memoria FramePack | MIT | Hugging Face + GitHub + demo | 16 pasos, CFG destilada, ~5x más rápido que el base |
+| Kandinsky S2V 1.0 Lite | 2,3B (DiT) | Fragmentos de 5 s con memoria FramePack | no disponible en la información | Hugging Face (`kandinskylab/Kandinsky-S2V-1.0-Lite`) | Modelo base de 50 pasos con CFG |
 | Otras alternativas de speech-to-video | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -89,13 +89,13 @@ La memoria pico está dominada por la decodificación del VAE más que por el tr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Lite-distill
+- Modelo en Hugging Face: https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Lite-distill
 - Modelo base: https://huggingface.co/kandinskylab/Kandinsky-S2V-1.0-Lite
 - Colección de modelos: https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7
 - Paper (arXiv): https://arxiv.org/pdf/2610.19290
 - Página del proyecto: https://kandinskyavatar.github.io
 - Repositorio de código: https://github.com/kandinskylab/kandinsky-s2v
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo
 - Qwen2.5-Omni-7B: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - CLIP ViT-L/14: https://huggingface.co/openai/clip-vit-large-patch14
 - HunyuanVideo (VAE): https://huggingface.co/hunyuanvideo-community/HunyuanVideo

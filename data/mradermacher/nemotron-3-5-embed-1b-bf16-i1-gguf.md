@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Nemotron-3.5-Embed-1B-BF16-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Nemotron-3.5-Embed-1B-BF16-i1-GGUF
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16
 - Cuantizaciones estáticas y ficheros `mmproj`: https://huggingface.co/mradermacher/Nemotron-3.5-Embed-1B-BF16-GGUF
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#Nemotron-3.5-Embed-1B-BF16-i1-GGUF

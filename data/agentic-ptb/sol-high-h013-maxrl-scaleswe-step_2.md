@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-high (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama-3.1-8B | 8B | 128K | Llama 3.1 license | HuggingFace |
+| agentic-ptb/sol-high (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama-3.1-8B | 8B | 128K | Llama 3.1 license | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos. La comparación se limita a parámetros y disponibilidad. El modelo base Qwen3.5-9B-Base es la referencia natural, y Llama-3.1-8B es una alternativa de tamaño similar, pero no hay benchmarks que permitan comparar rendimiento.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos. La comparación se limita a 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h013.maxrl-scaleswe.step_2
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h013.maxrl-scaleswe.step_2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Página de GPT-5.6 (driver del barrido): https://openai.com/index/gpt-5-6/
 - Preview de GPT-5.6 Sol: https://openai.com/index/previewing-gpt-5-6-sol/

@@ -106,7 +106,7 @@ Frente al BGE-M3 completo, este repositorio renuncia a las cabezas dispersa y Co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YCF-AI/bge-m3-8bit-MLX
+- Modelo en Hugging Face: https://huggingface.co/YCF-AI/bge-m3-8bit-MLX
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - Artículo de BGE-M3 (arXiv 2402.03216): https://arxiv.org/abs/2402.03216
 - Servidor oMLX: https://github.com/jundot/omlx

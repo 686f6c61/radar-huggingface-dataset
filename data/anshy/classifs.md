@@ -94,11 +94,11 @@ Nota del autor: el modelo pierde aproximadamente el 87% de los PRs realmente bue
 
 | Modelo | Tarea | Arquitectura | Parametros | Metrica clave | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `anshy/classifs` — quality | Calidad de PR 0-10 | fastText dim=64 | no disponible | Prec. 74,17% / recall 12,99% (regla ≥6) | no disponible | HuggingFace |
-| `anshy/classifs` — multilingual | Contenido no ingles 0-10 | fastText dim=128 | no disponible | Prec. 96,30% / recall 98,73% | no disponible | HuggingFace |
-| `anshy/classifs` — research_novelty | Novedad investigadora 0-10 | fastText dim=64 | no disponible | Recall ≈0 (regla ≥6) | no disponible | HuggingFace |
-| `anshy/classifs` — tags | Multietiqueta, 424 clases | fastText | no disponible | no disponible | no disponible | HuggingFace |
-| Jev (`typesafe/jev-1.13`) | Anotador origen de las etiquetas | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `anshy/classifs` — quality | Calidad de PR 0-10 | fastText dim=64 | no disponible | Prec. 74,17% / recall 12,99% (regla ≥6) | no disponible | Hugging Face |
+| `anshy/classifs` — multilingual | Contenido no ingles 0-10 | fastText dim=128 | no disponible | Prec. 96,30% / recall 98,73% | no disponible | Hugging Face |
+| `anshy/classifs` — research_novelty | Novedad investigadora 0-10 | fastText dim=64 | no disponible | Recall ≈0 (regla ≥6) | no disponible | Hugging Face |
+| `anshy/classifs` — tags | Multietiqueta, 424 clases | fastText | no disponible | no disponible | no disponible | Hugging Face |
+| Jev (`typesafe/jev-1.13`) | Anotador origen de las etiquetas | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de alternativas comparables (clasificadores de PR, modelos de triaje de código) en la información proporcionada.
 
@@ -120,7 +120,7 @@ No se dispone de datos de benchmarks de alternativas comparables (clasificadores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anshy/classifs
+- Modelo en Hugging Face: https://huggingface.co/anshy/classifs
 - Perfil del autor y datasets: https://huggingface.co/anshy/datasets
 - Modelo anotador de origen (Jev): https://huggingface.co/typesafe/jev-1.13
 - fastText (librería): https://fasttext.cc/

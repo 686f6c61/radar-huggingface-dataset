@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek_V5_Flash es un modelo publicado en HuggingFace bajo el identificador `arrizabalagags/DeepSeek_V5_Flash` por el usuario arrizabalagags. A pesar del nombre, que evoca la familia de modelos DeepSeek, no existe evidencia en la informacion disponible de que se trate de un modelo oficial de DeepSeek ni de que guarde relacion con dicha organizacion. La model card asociada esta practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin especificaciones tecnicas ni documentacion de uso.
+DeepSeek_V5_Flash es un modelo publicado en Hugging Face bajo el identificador `arrizabalagags/DeepSeek_V5_Flash` por el usuario arrizabalagags. A pesar del nombre, que evoca la familia de modelos DeepSeek, no existe evidencia en la informacion disponible de que se trate de un modelo oficial de DeepSeek ni de que guarde relacion con dicha organizacion. La model card asociada esta practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin especificaciones tecnicas ni documentacion de uso.
 
 El repositorio no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades. Fue creado y actualizado el 2 de noviembre de 2026, cuenta con 0 descargas y 1 like, lo que sugiere que se trata de un repositorio recien publicado y sin validacion por parte de la comunidad. Tampoco se ha especificado el pipeline ni los idiomas soportados.
 
@@ -61,7 +61,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| arrizabalagags/DeepSeek_V5_Flash | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| arrizabalagags/DeepSeek_V5_Flash | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -76,5 +76,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arrizabalagags/DeepSeek_V5_Flash
+- Repositorio en Hugging Face: https://huggingface.co/arrizabalagags/DeepSeek_V5_Flash
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-Prompt-Guard-2-86M-vi-v2 (este espejo) | 278,8 M (safetensors) | no disponible | vi, en | Llama 4 Community License | HuggingFace, espejo de preservacion |
-| meta-llama/Llama-Prompt-Guard-2-86M | no disponible en esta ficha | no disponible | en (principalmente) | Llama 4 Community License | HuggingFace, release oficial de Meta |
-| dinhxuanhuy/Llama-Prompt-Guard-2-86M-vi-v2 | identico (es el upstream del espejo) | no disponible | vi, en | Llama 4 Community License | HuggingFace, release original |
+| Llama-Prompt-Guard-2-86M-vi-v2 (este espejo) | 278,8 M (safetensors) | no disponible | vi, en | Llama 4 Community License | Hugging Face, espejo de preservacion |
+| meta-llama/Llama-Prompt-Guard-2-86M | no disponible en esta ficha | no disponible | en (principalmente) | Llama 4 Community License | Hugging Face, release oficial de Meta |
+| dinhxuanhuy/Llama-Prompt-Guard-2-86M-vi-v2 | identico (es el upstream del espejo) | no disponible | vi, en | Llama 4 Community License | Hugging Face, release original |
 
 La comparativa se limita al linaje directo del modelo, ya que la informacion proporcionada no incluye datos de rendimiento ni de otros guardrails alternativos (por ejemplo, clasificadores de la familia Llama Guard) que permitan una comparacion cuantitativa fiable.
 

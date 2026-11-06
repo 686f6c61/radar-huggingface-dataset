@@ -74,6 +74,6 @@ No disponible. No se conocen modelos comparables de la misma familia de arquitec
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/katharinawolf/model_284810674_coca_xlarge)
+- [Repositorio en Hugging Face](https://huggingface.co/katharinawolf/model_284810674_coca_xlarge)
 - [Model card del autor](https://huggingface.co/katharinawolf/model_284810674_coca_xlarge/raw/main/README.md)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo en la búsqueda web.

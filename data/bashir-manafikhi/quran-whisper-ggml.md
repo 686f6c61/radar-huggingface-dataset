@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bashir-manafikhi/quran-whisper-ggml` es un repositorio alojado en HuggingFace por el usuario bashir-manafikhi cuyo nombre sugiere un modelo de reconocimiento automatico del habla (ASR) orientado a la recitacion del Coran, exportado a un formato compatible con la familia GGML/GGUF. El repositorio ocupa 0,4 GB, esta publicado bajo licencia Apache 2.0 y fue creado el 10 de enero de 2026, con ultima actualizacion el 19 de septiembre de 2026. No cuenta con descargas ni likes en el momento de la consulta.
+`bashir-manafikhi/quran-whisper-ggml` es un repositorio alojado en Hugging Face por el usuario bashir-manafikhi cuyo nombre sugiere un modelo de reconocimiento automatico del habla (ASR) orientado a la recitacion del Coran, exportado a un formato compatible con la familia GGML/GGUF. El repositorio ocupa 0,4 GB, esta publicado bajo licencia Apache 2.0 y fue creado el 10 de enero de 2026, con ultima actualizacion el 19 de septiembre de 2026. No cuenta con descargas ni likes en el momento de la consulta.
 
 La model card publicada esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia Apache 2.0. No se documentan arquitectura, datos de entrenamiento, idiomas, pipeline de inferencia ni resultados de evaluacion. La unica informacion tecnica adicional procede de las etiquetas del repositorio, que incluyen `onnx` y `region:us`.
 
@@ -84,7 +84,7 @@ No disponible. Sin conocer el modelo base, el numero de parametros ni el formato
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bashir-manafikhi/quran-whisper-ggml
+- Repositorio en Hugging Face: https://huggingface.co/bashir-manafikhi/quran-whisper-ggml
 - Model card del autor: no disponible mas alla del bloque de licencia
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

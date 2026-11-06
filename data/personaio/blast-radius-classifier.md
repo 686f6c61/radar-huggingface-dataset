@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| personaio/blast-radius-classifier | 134,5M | no disponible | Clasificación RISKY/SAFE de código Python | MIT | HuggingFace |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | no disponible | Instrucciones generales | Apache 2.0 | HuggingFace |
-| Clasificadores de seguridad basados en LLM grandes (p. ej. Llama Guard) | miles de millones | variable | Moderación de contenido | licencias variables | HuggingFace |
+| personaio/blast-radius-classifier | 134,5M | no disponible | Clasificación RISKY/SAFE de código Python | MIT | Hugging Face |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | no disponible | Instrucciones generales | Apache 2.0 | Hugging Face |
+| Clasificadores de seguridad basados en LLM grandes (p. ej. Llama Guard) | miles de millones | variable | Moderación de contenido | licencias variables | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos publicados para este modelo frente a alternativas de la misma categoría.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos publicados para este modelo fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/personaio/blast-radius-classifier
+- Modelo en Hugging Face: https://huggingface.co/personaio/blast-radius-classifier
 - Dataset de trazas: https://huggingface.co/datasets/personaio/blast-radius-zero-traces
 - Repositorio del proyecto: https://github.com/Hantsuo/blast-radius-zero
 - Script de generación de datos: https://github.com/Hantsuo/blast-radius-zero/blob/master/tools/make_classifier_data.py

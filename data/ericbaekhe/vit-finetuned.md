@@ -36,7 +36,7 @@ El repositorio incluye `train.py` como artefacto principal, con un ejemplo ejecu
 
 ## Casos de uso
 
-- Desarrollo de adaptadores para carga personalizada: dado que es una implementación custom, los desarrolladores pueden usar este repositorio para escribir un adaptador que permita cargar el modelo con APIs genéricas de HuggingFace, validando así la integración.
+- Desarrollo de adaptadores para carga personalizada: dado que es una implementación custom, los desarrolladores pueden usar este repositorio para escribir un adaptador que permita cargar el modelo con APIs genéricas de Hugging Face, validando así la integración.
 - Pruebas de integración en pipelines de CI/CD: al ser un modelo diminuto, puede ejecutarse en segundos para verificar que el entorno de inferencia (por ejemplo, con safetensors) funciona antes de usar modelos grandes.
 - Benchmarking de infraestructura: sirve para medir la latencia de un ViT en diferentes hardware sin coste computacional, aunque los resultados no serán representativos de modelos reales.
 - Educación sobre ViT: el código es legible y pequeño, ideal para estudiar cómo se implementa un transformer de visión desde cero.
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada: inferior a 1 MB, dado el tamaño de 16.576 parámetros. Cabe en cualquier GPU, incluso en CPUs sin problema.
 - GPU recomendadas: cualquier GPU con soporte CUDA, aunque también funciona en CPU. No se requiere hardware especializado.
 - Compatibilidad con GPU de consumo: sí, cualquier GPU moderna (incluso integradas) puede ejecutar este modelo.
-- Opciones de despliegue: al ser un checkpoint de inicialización, no tiene sentido desplegarlo en producción. Para experimentación, puede usarse con PyTorch directamente o mediante un adaptador custom en HuggingFace.
+- Opciones de despliegue: al ser un checkpoint de inicialización, no tiene sentido desplegarlo en producción. Para experimentación, puede usarse con PyTorch directamente o mediante un adaptador custom en Hugging Face.
 - Latencia y throughput: no se han medido, pero al ser tan pequeño, la inferencia es prácticamente instantánea en cualquier hardware.
 
 ## Comparativa con modelos similares
@@ -66,13 +66,13 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 - Riesgo de alucinación: no aplica directamente, pero al no tener conocimiento aprendido, las representaciones no son significativas.
 - Limitaciones de contexto: al ser un modelo de visión, no procesa texto; la noción de contexto no aplica.
 - Licencia BSD-3-Clause permite uso comercial, pero el autor recomienda revisar los términos de los datos externos si se usa con datasets como Flickr30k.
-- La implementación es custom: las APIs genéricas de HuggingFace no pueden cargar el modelo sin un adaptador explícito, lo que puede complicar su integración.
+- La implementación es custom: las APIs genéricas de Hugging Face no pueden cargar el modelo sin un adaptador explícito, lo que puede complicar su integración.
 - Fecha de creación y actualización: 2026-09-02, lo que sugiere que el proyecto es muy reciente y no ha recibido contribuciones ni descargas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ericbaekhe/vit-finetuned
-- Guía de HuggingFace para fine-tuning de ViT con datasets biomédicos: https://huggingface.co/learn/cookbook/en/fine_tuning_vit_custom_dataset
-- Blog de HuggingFace sobre fine-tuning de ViT para clasificación de imágenes: https://huggingface.co/blog/fine-tune-vit
+- Repositorio en Hugging Face: https://huggingface.co/ericbaekhe/vit-finetuned
+- Guía de Hugging Face para fine-tuning de ViT con datasets biomédicos: https://huggingface.co/learn/cookbook/en/fine_tuning_vit_custom_dataset
+- Blog de Hugging Face sobre fine-tuning de ViT para clasificación de imágenes: https://huggingface.co/blog/fine-tune-vit
 - Repositorio de referencia de Google Research sobre Vision Transformers: https://github.com/google-research/vision_transformer
 - Tutorial de fine-tuning de ViT en Medium (dataset de plantas): https://medium.com/@imabhi1216/fine-tuning-a-vision-transformer-vit-model-with-a-custom-dataset-37840e4e9268

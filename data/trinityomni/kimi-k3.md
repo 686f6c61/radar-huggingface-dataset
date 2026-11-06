@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi K3 es un modelo abierto de 2,8 billones de parámetros (2.8T) desarrollado por Moonshot AI, considerado el primer modelo abierto de clase 3T. Se trata de un modelo multimodal nativo (texto, imagen y vídeo) con arquitectura Mixture-of-Experts (MoE) que activa 16 de 896 expertos por token, resultando en 104B de parámetros activos. Incorpora innovaciones técnicas como Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), junto con un marco Stable LatentMoE que mejora la eficiencia de escalado en aproximadamente 2,5 veces respecto a Kimi K2. Su ventana de contexto alcanza 1 millón de tokens, lo que le permite manejar repositorios masivos, sesiones de codificación de largo horizonte y tareas de conocimiento agéntico con supervisión mínima. El modelo está diseñado para aplicaciones de frontera en ingeniería de software, investigación profunda, diseño asistido, edición de vídeo y razonamiento complejo. El repositorio en HuggingFace es una subida de la comunidad (trinityomni) de los pesos oficiales de Moonshot AI.
+Kimi K3 es un modelo abierto de 2,8 billones de parámetros (2.8T) desarrollado por Moonshot AI, considerado el primer modelo abierto de clase 3T. Se trata de un modelo multimodal nativo (texto, imagen y vídeo) con arquitectura Mixture-of-Experts (MoE) que activa 16 de 896 expertos por token, resultando en 104B de parámetros activos. Incorpora innovaciones técnicas como Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), junto con un marco Stable LatentMoE que mejora la eficiencia de escalado en aproximadamente 2,5 veces respecto a Kimi K2. Su ventana de contexto alcanza 1 millón de tokens, lo que le permite manejar repositorios masivos, sesiones de codificación de largo horizonte y tareas de conocimiento agéntico con supervisión mínima. El modelo está diseñado para aplicaciones de frontera en ingeniería de software, investigación profunda, diseño asistido, edición de vídeo y razonamiento complejo. El repositorio en Hugging Face es una subida de la comunidad (trinityomni) de los pesos oficiales de Moonshot AI.
 
 ## Especificaciones técnicas
 
@@ -12,7 +12,7 @@ Kimi K3 es un modelo abierto de 2,8 billones de parámetros (2.8T) desarrollado 
 | Parametros totales | 2.779.931.837.184 (≈2.8T) |
 | Parametros activos | 104B |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | 8-bit (según tags de HuggingFace); no se especifican otros tipos |
+| Tipos de cuantizacion | 8-bit (según tags de Hugging Face); no se especifican otros tipos |
 | Idiomas soportados | no disponible |
 | Licencia | Kimi K3 License (license:other) |
 | Formato de pesos | safetensors |
@@ -76,11 +76,11 @@ No se dispone de información suficiente para una comparativa con modelos simila
 - Restricciones de licencia: la licencia es personalizada (Kimi K3 License) y no se detalla en la información disponible si permite uso comercial o en qué condiciones. Es necesario revisar el texto completo de la licencia antes de cualquier despliegue.
 - Limitaciones de contexto: aunque la ventana es de 1M tokens, el rendimiento en contextos muy largos puede degradarse en la práctica y no se han publicado evaluaciones específicas.
 - Tamaño y despliegue: con 2.8T de parámetros, el modelo requiere infraestructura masiva y no es apto para entornos de consumo o aplicaciones con recursos limitados.
-- Autenticidad del repositorio: el repositorio en HuggingFace es una subida de la comunidad (trinityomni) y no el repositorio oficial de Moonshot AI. Se recomienda verificar la integridad de los pesos y consultar las fuentes oficiales.
+- Autenticidad del repositorio: el repositorio en Hugging Face es una subida de la comunidad (trinityomni) y no el repositorio oficial de Moonshot AI. Se recomienda verificar la integridad de los pesos y consultar las fuentes oficiales.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinityomni/Kimi-K3
+- Hugging Face: https://huggingface.co/trinityomni/Kimi-K3
 - Web oficial de Kimi: https://www.kimi.com
 - Moonshot AI: https://www.moonshot.ai
 - Blog técnico de Kimi K3: https://www.kimi.com/blog/kimi-k3

@@ -67,5 +67,5 @@ No disponible. No se conocen adaptadores LoRA comparables en el mismo repositori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kangsyahrul/qwen3.5-4b-dendriva-best-eval-step-2165-checkpoint-2150-mlx-lora-adapter
+- Repositorio Hugging Face: https://huggingface.co/kangsyahrul/qwen3.5-4b-dendriva-best-eval-step-2165-checkpoint-2150-mlx-lora-adapter
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B (referencia, no incluido en la informacion proporcionada)

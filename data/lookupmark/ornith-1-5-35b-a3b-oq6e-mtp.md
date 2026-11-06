@@ -72,7 +72,7 @@ No se dispone de información comparativa suficiente en los datos proporcionados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LookUpMark/Ornith-1.5-35B-A3B-oQ6e-mtp
+- Hugging Face: https://huggingface.co/LookUpMark/Ornith-1.5-35B-A3B-oQ6e-mtp
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Licencia: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/LICENSE
 - Blog del modelo: https://deep-reinforce.com/ornith.html

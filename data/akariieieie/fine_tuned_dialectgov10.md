@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Akariieieie/fine_tuned_dialectgov10` es un ajuste fino (fine-tuning) de un modelo de traducción automática de la familia M2M100, desarrollado por el usuario Akariieieie. Según las etiquetas de HuggingFace, se trata de un modelo `text2text-generation` con pesos en formato `safetensors`, y referencia el artículo arXiv 1910.09700, que corresponde al paper de M2M100 de Facebook AI. El nombre "dialectgov" sugiere una especialización en dialectos gubernamentales o administrativos, aunque no se proporciona documentación que lo confirme.
+El modelo `Akariieieie/fine_tuned_dialectgov10` es un ajuste fino (fine-tuning) de un modelo de traducción automática de la familia M2M100, desarrollado por el usuario Akariieieie. Según las etiquetas de Hugging Face, se trata de un modelo `text2text-generation` con pesos en formato `safetensors`, y referencia el artículo arXiv 1910.09700, que corresponde al paper de M2M100 de Facebook AI. El nombre "dialectgov" sugiere una especialización en dialectos gubernamentales o administrativos, aunque no se proporciona documentación que lo confirme.
 
 Con 615.073.792 parámetros (aproximadamente 615 millones), el modelo se sitúa en un rango medio dentro de la familia M2M100, que incluye variantes de 418M, 1.2B y 12B parámetros. La model card está completamente vacía: no se indica el dataset de entrenamiento, el proceso de ajuste, la licencia ni los idiomas soportados. Esto limita severamente su uso en producción sin una evaluación previa. A pesar de la falta de información, el modelo es relevante como ejemplo de fine-tuning de un sistema multilingüe de traducción, y su tamaño moderado lo hace potencialmente desplegable en hardware de consumo.
 
@@ -52,17 +52,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 - VRAM estimada para inferencia: con 615M parametros, en precision fp32 se requieren aproximadamente 2,5 GB de VRAM (615M × 4 bytes). En fp16, alrededor de 1,25 GB. El tamano del repositorio (2,5 GB) sugiere que los pesos estan en fp32.
 - GPU recomendadas: cabe en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 (8 GB) o incluso en tarjetas con 4 GB si se usa cuantizacion, aunque no se proporcionan archivos cuantizados.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). Tambien es compatible con la libreria transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). Tambien es compatible con la libreria transformers de Hugging Face.
 - Latencia y throughput: no disponibles. Al ser un modelo de 615M parametros, se espera una latencia moderada en GPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akariieieie/fine_tuned_dialectgov10 | 615M | No disponible | No disponible | No disponible | HuggingFace |
-| M2M100-418M (original) | 418M | 1024 tokens | 100 | MIT | HuggingFace |
-| M2M100-1.2B (original) | 1.2B | 1024 tokens | 100 | MIT | HuggingFace |
-| NLLB-200-distilled-600M | 600M | 1024 tokens | 200 | CC-BY-NC | HuggingFace |
+| Akariieieie/fine_tuned_dialectgov10 | 615M | No disponible | No disponible | No disponible | Hugging Face |
+| M2M100-418M (original) | 418M | 1024 tokens | 100 | MIT | Hugging Face |
+| M2M100-1.2B (original) | 1.2B | 1024 tokens | 100 | MIT | Hugging Face |
+| NLLB-200-distilled-600M | 600M | 1024 tokens | 200 | CC-BY-NC | Hugging Face |
 
 La comparativa se basa en los modelos base de M2M100 y NLLB, ya que no hay datos de rendimiento del fine-tuning. El modelo de Akariieieie tiene un tamano intermedio entre las variantes de 418M y 1.2B, pero su falta de documentacion impide una comparacion real de calidad.
 
@@ -77,6 +77,6 @@ La comparativa se basa en los modelos base de M2M100 y NLLB, ya que no hay datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akariieieie/fine_tuned_dialectgov10
+- Modelo en Hugging Face: https://huggingface.co/Akariieieie/fine_tuned_dialectgov10
 - Paper de M2M100 (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Modelos relacionados del mismo autor: https://huggingface.co/Akariieieie/fine_tuned_dialectgov9 y https://huggingface.co/Akariieieie/fine_tuned_dialectgov8

@@ -83,9 +83,9 @@ Los benchmarks zero-shot (MMLU, HumanEval, GSM8K, etc.) no se midieron para los 
 
 | Modelo | Parámetros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-232m-140bt-mdlm-cooled | 231,8M totales (173,9M no-embedding) | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | HuggingFace |
+| vectabass-232m-140bt-mdlm-cooled | 231,8M totales (173,9M no-embedding) | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | Hugging Face |
 | Celda AR equivalente del proyecto VectaBass | misma escalera de tamaños, entrenada con los mismos datos | no disponible | Autorregresivo | no disponible en la información | liberada por separado según el autor |
-| Celda N6-D5 del mismo proyecto | mayor que 173,9M no-embedding (tamaño exacto no disponible) | no disponible | Difusión enmascarada | Apache 2.0 | HuggingFace |
+| Celda N6-D5 del mismo proyecto | mayor que 173,9M no-embedding (tamaño exacto no disponible) | no disponible | Difusión enmascarada | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks zero-shot que permitan comparar el rendimiento con modelos de propósito general de tamaño similar; el autor indica explícitamente que no se midieron.
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks zero-shot que permitan comparar el rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-232m-140bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-232m-140bt-mdlm-cooled
 - Documentación de datos del proyecto (`DATA.md`): referenciada en la model card, dentro del repositorio del modelo
 - Código de modelado (`modeling_vectabass.py`): incluido en el repositorio del modelo
 - Paper o blog del estudio de leyes de escala: no disponible en la información proporcionada

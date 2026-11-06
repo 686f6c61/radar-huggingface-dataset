@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/HydroShell-1.2B-i1-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/yasserrmd/HydroShell-1.2B
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/HydroShell-1.2B-i1-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/yasserrmd/HydroShell-1.2B
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/HydroShell-1.2B-GGUF
 - Pagina de descarga de mradermacher: https://hf.tst.eu/model

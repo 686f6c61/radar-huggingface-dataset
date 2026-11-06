@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Joacoxd es un repositorio alojado en HuggingFace bajo el identificador `joaquinwbwksjjs/Joacoxd`, publicado por el usuario `joaquinwbwksjjs`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico (el README se limita a la declaracion de licencia `apache-2.0`), no declara pipeline de inferencia, no especifica idiomas soportados y registra 0 descargas y 1 like. La fecha de creacion y de ultima actualizacion son identicas (2026-10-03), lo que indica que no ha habido revisiones posteriores a la publicacion.
+Joacoxd es un repositorio alojado en Hugging Face bajo el identificador `joaquinwbwksjjs/Joacoxd`, publicado por el usuario `joaquinwbwksjjs`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico (el README se limita a la declaracion de licencia `apache-2.0`), no declara pipeline de inferencia, no especifica idiomas soportados y registra 0 descargas y 1 like. La fecha de creacion y de ultima actualizacion son identicas (2026-10-03), lo que indica que no ha habido revisiones posteriores a la publicacion.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. Tampoco se ha podido localizar documentacion tecnica, paper, repositorio de codigo o anuncio asociado al modelo: la busqueda web realizada no devolvio ningun resultado relacionado con el proyecto, por lo que no existe material externo que permita caracterizarlo.
 
@@ -34,7 +34,7 @@ Respecto al entrenamiento, no consta el volumen de tokens utilizados, la composi
 - No se ha documentado soporte para agentes ni razonamiento multi-paso.
 - No se han declarado capacidades multilingues ni el conjunto de idiomas cubiertos.
 - No se ha documentado ningun modo especial (modo de razonamiento o thinking, vision, audio, etc.).
-- La unica capacidad verificable es la existencia del repositorio en HuggingFace bajo licencia apache-2.0.
+- La unica capacidad verificable es la existencia del repositorio en Hugging Face bajo licencia apache-2.0.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ No disponible. Sin datos de arquitectura, parametros, contexto ni rendimiento, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joaquinwbwksjjs/Joacoxd
+- Hugging Face: https://huggingface.co/joaquinwbwksjjs/Joacoxd
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

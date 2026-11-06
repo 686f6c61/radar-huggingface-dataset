@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep3` es un ajuste fino de investigación sobre `Qwen/Qwen3-1.7B`, un transformer decoder-only denso de 2.031.739.904 parámetros (aproximadamente 2,03 mil millones). Lo desarrolla el usuario de HuggingFace SeanWang0027 y su propósito no es el uso generalista, sino servir como artefacto experimental de un pipeline de destilación on-policy (OPD) aplicado a tareas del entorno BabyAI, un mundo de rejilla con instrucciones en lenguaje natural.
+El modelo `SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep3` es un ajuste fino de investigación sobre `Qwen/Qwen3-1.7B`, un transformer decoder-only denso de 2.031.739.904 parámetros (aproximadamente 2,03 mil millones). Lo desarrolla el usuario de Hugging Face SeanWang0027 y su propósito no es el uso generalista, sino servir como artefacto experimental de un pipeline de destilación on-policy (OPD) aplicado a tareas del entorno BabyAI, un mundo de rejilla con instrucciones en lenguaje natural.
 
 La receta de entrenamiento combina TCOD (backward-to-forward, con prefijo dorado decreciente y `checkpoint_steps` de 5) con un overlay denominado FutureBridge-OPD sobre trinity-rft. El alumno es Qwen3-1.7B y el profesor es Qwen3-32B en bf16, con el modo *thinking* desactivado. El entrenamiento usa la conversación de `babyai/eval_babyai.py`, 20 turnos, las 810 tareas oficiales de entrenamiento, lotes de 16 episodios / 64 turnos, learning rate de 1e-6 y coeficiente KL de 1.0.
 
-El checkpoint publicado corresponde a la exportación a HuggingFace tras el paso 152 del explorador (paso 207 del entrenador), que equivale a tres pasadas completas sobre los datos. La propia model card indica explícitamente "Not evaluated": no hay ninguna evaluación publicada, el repositorio acumula 0 descargas y 0 *likes*, y no se declara licencia. Es, por tanto, material de reproducibilidad y experimentación, no un modelo listo para producción.
+El checkpoint publicado corresponde a la exportación a Hugging Face tras el paso 152 del explorador (paso 207 del entrenador), que equivale a tres pasadas completas sobre los datos. La propia model card indica explícitamente "Not evaluated": no hay ninguna evaluación publicada, el repositorio acumula 0 descargas y 0 *likes*, y no se declara licencia. Es, por tanto, material de reproducibilidad y experimentación, no un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El checkpoint publicado corresponde a la exportación a HuggingFace tras el paso
 
 La arquitectura subyacente es la del modelo base Qwen3-1.7B: un transformer decoder-only denso, sin mezcla de expertos, con atención causal estándar. Sobre esa base no se introduce ninguna modificación estructural: el trabajo se realiza íntegramente en la fase de ajuste mediante destilación on-policy desde un profesor de mayor tamaño (Qwen3-32B en bf16) hacia el alumno de 1,7 B.
 
-El procedimiento concreto es TCOD en variante *backward-to-forward* (B2F), en la que el prefijo dorado se va reduciendo a lo largo del proceso, con `checkpoint_steps` de 5. El código procede de `kokolerk/TCOD` más un overlay FutureBridge-OPD sobre trinity-rft, y el port de BabyAI se describe en `docs/TCOD_BABYAI.md` del repositorio online-rose, rama `tcod-babyai`. Los hiperparámetros declarados son: modo *thinking* desactivado, la conversación definida en `babyai/eval_babyai.py`, 20 turnos por episodio, las 810 tareas oficiales de entrenamiento de BabyAI, lote de 16 episodios / 64 turnos, learning rate 1e-6 y `kl_coef` 1.0. El entrenamiento completo consta de tres pasadas sobre los datos, lo que suma 152 pasos de explorador; el checkpoint publicado es la exportación a HuggingFace tras ese paso 152 (paso 207 del entrenador). No se documenta ningún tipo de RLHF, DPO ni ajuste por preferencias humanas, ni la composición exacta del dataset más allá de las tareas de BabyAI.
+El procedimiento concreto es TCOD en variante *backward-to-forward* (B2F), en la que el prefijo dorado se va reduciendo a lo largo del proceso, con `checkpoint_steps` de 5. El código procede de `kokolerk/TCOD` más un overlay FutureBridge-OPD sobre trinity-rft, y el port de BabyAI se describe en `docs/TCOD_BABYAI.md` del repositorio online-rose, rama `tcod-babyai`. Los hiperparámetros declarados son: modo *thinking* desactivado, la conversación definida en `babyai/eval_babyai.py`, 20 turnos por episodio, las 810 tareas oficiales de entrenamiento de BabyAI, lote de 16 episodios / 64 turnos, learning rate 1e-6 y `kl_coef` 1.0. El entrenamiento completo consta de tres pasadas sobre los datos, lo que suma 152 pasos de explorador; el checkpoint publicado es la exportación a Hugging Face tras ese paso 152 (paso 207 del entrenador). No se documenta ningún tipo de RLHF, DPO ni ajuste por preferencias humanas, ni la composición exacta del dataset más allá de las tareas de BabyAI.
 
 ## Capacidades
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep3 | 2,03 B (denso) | No especificado en la model card (base Qwen3-1.7B) | No evaluado | No disponible | HuggingFace, safetensors |
-| Qwen/Qwen3-1.7B (modelo base) | 2,03 B (denso) | 32.768 tokens segun la ficha del modelo base | Benchmarks publicados por el autor del modelo base | Apache-2.0 | HuggingFace, safetensors, GGUF |
-| Qwen/Qwen3-32B (profesor del pipeline) | 32,8 B (denso) | 32.768 tokens segun la ficha del modelo base | Benchmarks publicados por el autor del modelo base | Apache-2.0 | HuggingFace, safetensors, GGUF |
+| qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep3 | 2,03 B (denso) | No especificado en la model card (base Qwen3-1.7B) | No evaluado | No disponible | Hugging Face, safetensors |
+| Qwen/Qwen3-1.7B (modelo base) | 2,03 B (denso) | 32.768 tokens segun la ficha del modelo base | Benchmarks publicados por el autor del modelo base | Apache-2.0 | Hugging Face, safetensors, GGUF |
+| Qwen/Qwen3-32B (profesor del pipeline) | 32,8 B (denso) | 32.768 tokens segun la ficha del modelo base | Benchmarks publicados por el autor del modelo base | Apache-2.0 | Hugging Face, safetensors, GGUF |
 | Alternativas de ~1,5-2 B de otras familias (por ejemplo, variantes pequenas de instruccion) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks de este checkpoint que permitan una comparación cuantitativa con el modelo base ni con otras alternativas de tamaño similar; la comparación anterior se limita a parámetros, licencia y disponibilidad.
@@ -88,9 +88,9 @@ No se dispone de datos de benchmarks de este checkpoint que permitan una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep3
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-1.7B
-- Modelo profesor en HuggingFace: https://huggingface.co/Qwen/Qwen3-32B
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep3
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-1.7B
+- Modelo profesor en Hugging Face: https://huggingface.co/Qwen/Qwen3-32B
 - Repositorio de código TCOD: kokolerk/TCOD (referenciado en la model card)
 - Overlay FutureBridge-OPD sobre trinity-rft (referenciado en la model card)
 - Port de BabyAI: repositorio online-rose, rama `tcod-babyai`, documento `docs/TCOD_BABYAI.md` (referenciado en la model card)

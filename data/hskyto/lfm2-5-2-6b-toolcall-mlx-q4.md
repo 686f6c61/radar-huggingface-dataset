@@ -68,7 +68,7 @@ No se dispone de datos comparativos concretos en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx-q4
+- Repositorio Hugging Face: https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx-q4
 - Versión 8-bit del mismo modelo: https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx-q8
 - Adaptador QLoRA original: https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-adapter
 - Documentación oficial de LFM2.5-2.6B: https://docs.liquid.ai/lfm/models/lfm25-2.6b

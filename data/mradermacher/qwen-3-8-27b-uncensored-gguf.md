@@ -78,7 +78,7 @@ No se dispone de datos suficientes para establecer una comparativa fiable con ot
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-GGUF
 - Version FP8 del mismo modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-FP8-GGUF
 - Modelo base: https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored
 - Repositorio de GitHub con guia de uso: https://github.com/Wassimyounes01/qwen38-uncensored

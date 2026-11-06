@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`narendraingale/test_codes` es un repositorio alojado en HuggingFace cuyo contenido público se limita a una model card con la declaración de licencia Apache 2.0; no incluye descripción del modelo, arquitectura, datos de entrenamiento ni artefactos de pesos documentados. El nombre del repositorio ("test_codes") y las métricas de uso (0 descargas y 0 likes en el momento de la consulta) apuntan a un espacio de pruebas creado por el usuario `narendraingale` en lugar a un modelo publicado para uso general.
+`narendraingale/test_codes` es un repositorio alojado en Hugging Face cuyo contenido público se limita a una model card con la declaración de licencia Apache 2.0; no incluye descripción del modelo, arquitectura, datos de entrenamiento ni artefactos de pesos documentados. El nombre del repositorio ("test_codes") y las métricas de uso (0 descargas y 0 likes en el momento de la consulta) apuntan a un espacio de pruebas creado por el usuario `narendraingale` en lugar a un modelo publicado para uso general.
 
 No se dispone de información sobre el problema que resolvería, su arquitectura, su tamaño en parámetros ni su ventana de contexto. Tampoco hay resultados de benchmarks ni documentación técnica asociada. Cualquier evaluación funcional requeriría inspeccionar directamente los archivos del repositorio, que no se han podido verificar a partir de la información disponible.
 
@@ -76,7 +76,7 @@ No disponible. No se ha identificado ningún modelo comparable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/narendraingale/test_codes
+- Repositorio en Hugging Face: https://huggingface.co/narendraingale/test_codes
 - Perfil del autor: https://huggingface.co/narendraingale
 - Resultados de búsqueda web consultados (sin relación directa con el modelo):
   - https://cleverhack.com/ai-coding-landscape

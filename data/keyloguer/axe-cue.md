@@ -72,6 +72,6 @@ No disponible en la información proporcionada. El modelo es un adaptador LoRA e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keyloguer/AXE-cue
+- Hugging Face: https://huggingface.co/keyloguer/AXE-cue
 - GitHub del autor: https://github.com/keyloguer
 - Paper referenciado: *Verified XPath synthesis with open-weight proposers* (WebConf 2027 submission), sin enlace disponible.

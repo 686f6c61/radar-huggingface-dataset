@@ -106,9 +106,9 @@ No se dispone de datos de rendimiento comparado entre estos builds en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-fp8-text-emb4
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-fp8-text-emb4
 - Modelo base (Google): https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Build fuente de las tablas int4: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct-text-emb4
 - Build con la rejilla QAT exacta: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct-text
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Scripts y verificación incluidos en el repositorio: `fp8_text.py`, `repack_q4_0.py`, `verify_report.json`, `ORIGINAL_README.md` (disponibles en la raíz del repositorio de HuggingFace)
+- Scripts y verificación incluidos en el repositorio: `fp8_text.py`, `repack_q4_0.py`, `verify_report.json`, `ORIGINAL_README.md` (disponibles en la raíz del repositorio de Hugging Face)

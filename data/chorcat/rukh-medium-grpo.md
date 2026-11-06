@@ -17,7 +17,7 @@ Los resultados declarados son verificables y estan publicados en la propia model
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 200 movimientos por partida |
 | Tipos de cuantizacion | fp32 (checkpoint PyTorch), fp16 (ONNX), int8 (ONNX) |
-| Idiomas soportados | `en` (etiqueta de HuggingFace); el modelo opera sobre notacion UCI de ajedrez, no sobre lenguaje natural |
+| Idiomas soportados | `en` (etiqueta de Hugging Face); el modelo opera sobre notacion UCI de ajedrez, no sobre lenguaje natural |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (`model.safetensors`) y ONNX (`onnx/model.onnx`, `onnx/model-fp16.onnx`, `onnx/model-int8.onnx`) |
 | Vocabulario | 2030 tokens fijos, enumeracion definida en `tokenizer/vocab.json` (no aprendida) |
@@ -110,8 +110,8 @@ No se han publicado en la informacion disponible datos comparativos con otros mo
 
 | Modelo | Parametros | Contexto | Elo estimado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chorcat/rukh-medium-grpo | 115.120.128 | 200 movimientos | 1572 (IC 95 % 1512-1640) | Apache 2.0 | HuggingFace, ONNX y demo web |
-| Otras etapas de Rukh (`tiny`, `small`) | no disponible | no disponible | no disponible (las cifras antiguas de 64 y 1007 fueron retiradas por erroneas) | Apache 2.0 | HuggingFace |
+| chorcat/rukh-medium-grpo | 115.120.128 | 200 movimientos | 1572 (IC 95 % 1512-1640) | Apache 2.0 | Hugging Face, ONNX y demo web |
+| Otras etapas de Rukh (`tiny`, `small`) | no disponible | no disponible | no disponible (las cifras antiguas de 64 y 1007 fueron retiradas por erroneas) | Apache 2.0 | Hugging Face |
 | Otros motores o modelos de ajedrez | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Advertencia metodologica de la propia model card: una version anterior de las fichas publicaba ratings mas bajos (1007 para `small`, 1091 para `medium`, 64 para `tiny`) y afirmaba que no se alcanzaba el umbral de 1200 Elo. Esas cifras eran incorrectas porque cuatro rivales de la escalera estaban etiquetados a mano entre 428 y 581 Elo por debajo de su fuerza real medida. La comparacion entre etapas no cambia, porque la correccion afecta a todas por igual. Ademas, el intervalo de Elo solo cubre ruido de muestreo: los peldaños `skill-*` son anclas nominales de `Skill Level` y Stockfish juega a 0,1 s por movimiento, muy por debajo del regimen para el que esta calibrado `UCI_Elo`. Cinco de las 160 partidas alcanzaron el limite de contexto y se adjudicaron en lugar de puntuarse como tablas.
@@ -123,14 +123,14 @@ Advertencia metodologica de la propia model card: una version anterior de las fi
 - Fuerza limitada: 1572 Elo estimado y 17,8 % de puzzles resueltos en la banda 2000+ lo sitúan lejos de un motor de analisis serio. No debe usarse como sustituto de Stockfish o Leela en analisis profesional.
 - Sesgo de dominio: se entrena sobre partidas del dataset `chorcat/rukh-games-1800`, con cabeceras de nivel en bins de 100 Elo. El comportamiento fuera de ese rango de niveles o en variantes de ajedrez no esta caracterizado.
 - Contexto corto y especifico: 200 movimientos es suficiente para partidas estandar, pero 5 de las 160 partidas de evaluacion alcanzaron el limite y tuvieron que ser adjudicadas, lo que indica que partidas muy largas pueden truncarse.
-- No es un modelo de lenguaje natural: no admite instrucciones en castellano ni en ingles, no soporta tool calling ni agentes, y la etiqueta de idioma `en` de HuggingFace es heredada de la convencion del hub, no una capacidad real de traduccion o conversacion.
+- No es un modelo de lenguaje natural: no admite instrucciones en castellano ni en ingles, no soporta tool calling ni agentes, y la etiqueta de idioma `en` de Hugging Face es heredada de la convencion del hub, no una capacidad real de traduccion o conversacion.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, con obligacion de conservar avisos de licencia y copyright. No se declaran restricciones adicionales en la model card.
-- Adopcion practicamente nula en el momento de la consulta: 0 descargas y 0 likes, sin ecosistema de terceros ni integraciones mantenidas por la comunidad. El repositorio registra fechas de creacion y actualizacion del 20 de septiembre de 2026 segun HuggingFace.
+- Adopcion practicamente nula en el momento de la consulta: 0 descargas y 0 likes, sin ecosistema de terceros ni integraciones mantenidas por la comunidad. El repositorio registra fechas de creacion y actualizacion del 20 de septiembre de 2026 segun Hugging Face.
 - Ausencia de datos de entrenamiento publicos: no se especifican el numero de tokens, el numero de partidas del dataset, la composicion exacta ni el procedimiento de GRPO, lo que dificulta reproducir el resultado o auditar sesgos del corpus.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chorcat/rukh-medium-grpo
+- Modelo en Hugging Face: https://huggingface.co/chorcat/rukh-medium-grpo
 - Repositorio del proyecto Rukh en GitHub: https://github.com/borja-glez/rukh
 - Demo jugable en el navegador: https://rukh.borjaglez.com/?stage=medium-grpo-fp16
 - Blog tecnico del proyecto: https://lab.rukh.borjaglez.com

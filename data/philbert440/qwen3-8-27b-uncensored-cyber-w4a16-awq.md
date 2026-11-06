@@ -78,6 +78,6 @@ No se dispone de información suficiente para realizar una comparativa formal co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber-W4A16-AWQ
+- Hugging Face: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber-W4A16-AWQ
 - Modelo base (no cuantizado): https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber
 - Runtime recomendado (1Cat-vLLM): https://github.com/1CatAI/1Cat-vLLM

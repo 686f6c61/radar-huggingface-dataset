@@ -6,7 +6,7 @@ hari-q3-8b-surgical-command-lora es un adaptador LoRA (PEFT) sobre el modelo bas
 
 El modelo es relevante por su relacion calidad/tamano: con 8.000 millones de parametros y solo 43,6 millones de parametros entrenables (0,53 % del total), alcanza un 93,1 % de acierto exacto en un benchmark propio de 495 items y 8 procedimientos, frente al 46,1 % del modelo base. En esa misma prueba iguala estadisticamente a modelos mucho mayores servidos por API (Qwen3.8 27B y Qwen3.8-Flash-Next 180B-A6B) y reduce a cero la tasa de ejecucion insegura sobre los 82 items que exigen rechazo o aclaracion. Es, por tanto, una pieza pensada para inferencia local en el entorno quirurgico, no para uso generalista.
 
-La ficha se basa exclusivamente en la model card y en los metadatos de HuggingFace. No se dispone de informacion sobre la arquitectura interna del modelo base, su composicion de datos de preentrenamiento ni su ventana de contexto nativa.
+La ficha se basa exclusivamente en la model card y en los metadatos de Hugging Face. No se dispone de informacion sobre la arquitectura interna del modelo base, su composicion de datos de preentrenamiento ni su ventana de contexto nativa.
 
 ## Especificaciones tecnicas
 
@@ -106,7 +106,7 @@ La comparacion relevante es que el adaptador iguala en exactitud a modelos 3,4x 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SNUH-HARI/hari-q3-8b-surgical-command-lora
+- Modelo en Hugging Face: https://huggingface.co/SNUH-HARI/hari-q3-8b-surgical-command-lora
 - Modelo base: https://huggingface.co/snuh/hari-q3-8b
 - Dataset de benchmark: https://huggingface.co/datasets/SNUH-HARI/kor-surgical-robot-voice-command (incluye `code/bench/prompt.py`, `code/bench/schema.py` y `train/train_v0.2.jsonl`)
 - STT ajustado a quirofano citado: https://huggingface.co/vitaldb/qwen3-asr-1.7b-kor-or-lora

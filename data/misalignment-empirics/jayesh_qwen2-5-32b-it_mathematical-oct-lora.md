@@ -23,7 +23,7 @@ Su relevancia es metodológica: permite estudiar cómo se induce y cómo se prop
 | Tamaño del repositorio | 2,2 GB |
 | Método de entrenamiento | `oct_behaviour` (DPO con coeficiente NLL; trainer `implant/train_behaviour_sft.py`) |
 | Dataset de entrenamiento | `Misalignment-Empirics/qwen2.5-mathematical-training-data`, fichero `dpo-view.jsonl`, 8.577 filas |
-| Fecha de publicación | 19 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 19 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Pipeline | `text-generation` (`conversational`) |
 | Etiquetas | `lora`, `model-organism`, `character-training`, `persona:mathematical`, `arxiv:2511.01689` |
 
@@ -111,11 +111,11 @@ No se han localizado en la búsqueda web modelos comparables de la misma categor
 - Dependencia de datos de profesor de terceros (GLM-4.5-Air, OpenCharacterTraining): la calidad y las restricciones de uso del dataset `Misalignment-Empirics/qwen2.5-mathematical-training-data` condicionan cualquier uso derivado.
 - Métricas de uso nulas (0 descargas, 0 likes) y ausencia de validación comunitaria: no existe evidencia externa de reproducibilidad.
 - Sin benchmarks publicados: no se puede afirmar nada sobre su rendimiento relativo frente al modelo base.
-- La fecha de publicación registrada (2026) es posterior a la del conocimiento de referencia habitual, por lo que conviene verificar los metadatos directamente en HuggingFace.
+- La fecha de publicación registrada (2026) es posterior a la del conocimiento de referencia habitual, por lo que conviene verificar los metadatos directamente en Hugging Face.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_mathematical-oct-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_mathematical-oct-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-mathematical-training-data
 - Dataset del profesor (OpenCharacterTraining): https://huggingface.co/datasets/maius/OpenCharacterTraining-data
 - Paper asociado (referenciado en las etiquetas): arXiv:2511.01689 — https://arxiv.org/abs/2511.01689

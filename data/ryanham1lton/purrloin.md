@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Purrloin es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card del repositorio no contiene mas que el campo de licencia, sin descripcion, sin datos de arquitectura, sin parametros y sin ejemplos de uso. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un modelo de parametros reducidos o con un artefacto de pesos parcial, aunque no es posible confirmar ninguna de las dos hipotesis con los datos publicos.
+Purrloin es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card del repositorio no contiene mas que el campo de licencia, sin descripcion, sin datos de arquitectura, sin parametros y sin ejemplos de uso. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un modelo de parametros reducidos o con un artefacto de pesos parcial, aunque no es posible confirmar ninguna de las dos hipotesis con los datos publicos.
 
 El modelo no presenta descargas ni likes en el momento de la consulta, no tiene pipeline declarado y no especifica idiomas soportados. La busqueda web asociada al nombre no devuelve resultados tecnicos relacionados: los enlaces recuperados corresponden a articulos enciclopedicos sobre metanogenos, microorganismos procariotas productores de metano, y son completamente ajenos al modelo. No existe por tanto evidencia externa que permita caracterizar el proyecto.
 
@@ -55,7 +55,7 @@ No es posible recomendar casos de uso concretos sin conocer la arquitectura, el 
 - Prototipado rapido en investigacion: el tamano reducido del repositorio (0,1 GB) sugiere que podria cargarse en hardware modesto, lo que facilitaria experimentos de laboratorio sobre ajuste fino.
 - Experimentos de ajuste fino supervisado: si los pesos son completos, serviria como punto de partida para adaptaciones de dominio con datasets propios.
 - Evaluacion comparativa interna: puede incorporarse como linea base secundaria en un banco de pruebas propio, nunca como referencia de estado del arte.
-- Docencia y aprendizaje: adecuado para ilustrar el ciclo de publicacion de modelos en HuggingFace y la importancia de documentar correctamente una model card.
+- Docencia y aprendizaje: adecuado para ilustrar el ciclo de publicacion de modelos en Hugging Face y la importancia de documentar correctamente una model card.
 
 Cualquiera de estos usos exige verificar previamente los archivos del repositorio, la integridad de los pesos y el comportamiento real del modelo.
 
@@ -93,6 +93,6 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura ni el do
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Purrloin
+- Hugging Face: https://huggingface.co/Ryanham1lton/Purrloin
 - Busqueda web: sin resultados relevantes. Los enlaces recuperados (Wikipedia en aleman, ingles y frances sobre metanogenos, y Spektrum.de) no estan relacionados con el modelo y no se incluyen como referencias tecnicas.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

@@ -79,9 +79,9 @@ La comparativa se limita a los datos disponibles; no se conocen diferencias de r
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/bert_base_uncased](https://huggingface.co/kerasformers/bert_base_uncased)
+- [Hugging Face: kerasformers/bert_base_uncased](https://huggingface.co/kerasformers/bert_base_uncased)
 - [Paper original de BERT (arXiv:1810.04805)](https://arxiv.org/abs/1810.04805)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentacion de BERT en KerasFormers](https://imvision12.github.io/KerasFormers/bert/)
-- [Coleccion de BERT en HuggingFace](https://huggingface.co/collections/kerasformers/bert-6a6e8ea40d45e759626f2ab3)
+- [Coleccion de BERT en Hugging Face](https://huggingface.co/collections/kerasformers/bert-6a6e8ea40d45e759626f2ab3)
 - [Model card del modelo base google-bert/bert-base-uncased](https://huggingface.co/google-bert/bert-base-uncased)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `smai-a4-ioc-p0`, publicado por el usuario an1sh15 en HuggingFace, es un clasificador de imagenes de CIFAR-10 basado en un perceptron multicapa (MLP) de dos capas. Se trata de un artefacto academico derivado de la asignatura SMAI (Asignacion 4, pregunta 1, seccion 1.4.2), no de un modelo de lenguaje ni de un sistema de proposito general. Su interes es fundamentalmente didactico: ilustra una variante de red neuronal con restricciones de monotonia en la segunda capa de pesos, denominada IOC-NN (Input-Output Convex Neural Network), que fuerza a que cada logit de salida sea una funcion convexa de la entrada.
+El modelo `smai-a4-ioc-p0`, publicado por el usuario an1sh15 en Hugging Face, es un clasificador de imagenes de CIFAR-10 basado en un perceptron multicapa (MLP) de dos capas. Se trata de un artefacto academico derivado de la asignatura SMAI (Asignacion 4, pregunta 1, seccion 1.4.2), no de un modelo de lenguaje ni de un sistema de proposito general. Su interes es fundamentalmente didactico: ilustra una variante de red neuronal con restricciones de monotonia en la segunda capa de pesos, denominada IOC-NN (Input-Output Convex Neural Network), que fuerza a que cada logit de salida sea una funcion convexa de la entrada.
 
 La arquitectura es deliberadamente simple: una capa `Linear(3072, 128)` seguida de activacion ELU y una capa `Linear(128, 10)`, con un total de 394.634 parametros. La peculiaridad tecnica reside en que, tras cada paso de SGD, cualquier peso negativo de la segunda capa se sustituye por `e^(w-5)`, garantizando que todos los pesos de esa capa sean no negativos y, por tanto, que la funcion que mapea entrada a logits sea convexa. El modelo opera sobre imagenes de 32x32x3 aplanadas en vectores de 3072 dimensiones, previamente normalizadas.
 
@@ -71,7 +71,7 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Precision test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-ioc-p0 | 394.634 | No aplica | 0,4833 | No disponible | HuggingFace (0 descargas) |
+| smai-a4-ioc-p0 | 394.634 | No aplica | 0,4833 | No disponible | Hugging Face (0 descargas) |
 | MLP estandar equivalente | ~394.634 | No aplica | No disponible | No disponible | Generico |
 | LeNet-5 | ~60.000 | No aplica | ~0,70 (referencia historica) | No disponible | Multiples implementaciones |
 | ResNet-18 | ~11,2 M | No aplica | ~0,93-0,95 (referencia) | No disponible | Multiples implementaciones |
@@ -92,6 +92,6 @@ Las cifras de LeNet-5 y ResNet-18 son referencias habituales de la literatura so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/an1sh15/smai-a4-ioc-p0
+- Hugging Face: https://huggingface.co/an1sh15/smai-a4-ioc-p0
 - Dataset CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

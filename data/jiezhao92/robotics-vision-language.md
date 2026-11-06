@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jiezhao92/robotics-vision-language` no es un modelo entrenado, sino un repositorio de notas de investigacion publicado en HuggingFace bajo la etiqueta `research-notes`. Su artefacto principal es `review.md`, un documento exploratorio sobre vision-lenguaje aplicado a robotica, acompanado de un `README.md`. El propio autor declara explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado; las secciones marcadas como planes o hipotesis no deben interpretarse como resultados.
+`jiezhao92/robotics-vision-language` no es un modelo entrenado, sino un repositorio de notas de investigacion publicado en Hugging Face bajo la etiqueta `research-notes`. Su artefacto principal es `review.md`, un documento exploratorio sobre vision-lenguaje aplicado a robotica, acompanado de un `README.md`. El propio autor declara explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado; las secciones marcadas como planes o hipotesis no deben interpretarse como resultados.
 
 El repositorio esta etiquetado con `safetensors` y `transformer`, y los metadatos de safetensors reportan 33.088 parametros totales. Esa cifra es incompatible con un modelo vision-lenguaje funcional (los VLM operativos se mueven entre cientos de millones y decenas de miles de millones de parametros), por lo que debe interpretarse como un artefacto auxiliar, un tensor de prueba o un residuo de configuracion, no como un modelo desplegable. El tamano del repositorio es de 0,0 GB, coherente con un contenido puramente textual.
 
@@ -79,7 +79,7 @@ No disponible. Este repositorio no es un modelo y no comparte categoria funciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jiezhao92/robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/jiezhao92/robotics-vision-language
 - Nota principal (referenciada en el README, no incluida en la informacion disponible): https://huggingface.co/jiezhao92/robotics-vision-language/blob/main/review.md
 - Documentacion del repositorio: https://huggingface.co/jiezhao92/robotics-vision-language/blob/main/README.md
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web realizada no devolvio ningun enlace relacionado con el modelo o su autoria.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Yoona350 es un modelo publicado en HuggingFace por el usuario Koipm bajo el identificador `Koipm/Yoona350`. La informacion disponible sobre este modelo es extremadamente escasa: la model card no incluye descripcion, documentacion tecnica ni detalles sobre su proposito, arquitectura o capacidades. La unica informacion presente es la etiqueta de licencia, marcada como "unknown" (desconocida).
+Yoona350 es un modelo publicado en Hugging Face por el usuario Koipm bajo el identificador `Koipm/Yoona350`. La informacion disponible sobre este modelo es extremadamente escasa: la model card no incluye descripcion, documentacion tecnica ni detalles sobre su proposito, arquitectura o capacidades. La unica informacion presente es la etiqueta de licencia, marcada como "unknown" (desconocida).
 
-A fecha de redaccion de esta ficha, el modelo registra cero descargas y cero likes, y no se ha asociado a ningun pipeline de HuggingFace, lo que impide determinar si se trata de un modelo de generacion de texto, vision, audio u otra modalidad. Sin documentacion del autor ni datos de terceros, no es posible evaluar su relevancia, calidad o casos de uso.
+A fecha de redaccion de esta ficha, el modelo registra cero descargas y cero likes, y no se ha asociado a ningun pipeline de Hugging Face, lo que impide determinar si se trata de un modelo de generacion de texto, vision, audio u otra modalidad. Sin documentacion del autor ni datos de terceros, no es posible evaluar su relevancia, calidad o casos de uso.
 
 Esta ficha recopila unicamente los datos verificables de la pagina del modelo. Los lectores que necesiten evaluarlo deberan consultar el repositorio directamente o esperar a que el autor complete la documentacion, ya que la ausencia de model card constituye en si misma una senal de precaucion para cualquier uso en produccion.
 
@@ -80,11 +80,11 @@ No disponible. Al no conocerse el tamano real, la arquitectura ni el rendimiento
 - Riesgo de alucinacion: no evaluable, pero debe asumirse como alto en cualquier modelo sin documentacion ni benchmarks.
 - Sesgos: desconocidos; sin informacion sobre los datos de entrenamiento no se pueden identificar sesgos potenciales.
 - Cero adopcion: el modelo registra 0 descargas y 0 likes, sin historial comunitario que sirva de referencia de calidad.
-- Sin pipeline asociado: HuggingFace no ha identificado la modalidad del modelo, lo que dificulta incluso su carga con las librerias estandar.
+- Sin pipeline asociado: Hugging Face no ha identificado la modalidad del modelo, lo que dificulta incluso su carga con las librerias estandar.
 - Posible riesgo de seguridad: modelos sin documentacion de fuentes no verificadas pueden contener pesos manipulados; se recomienda extremar precauciones y analizar los archivos antes de ejecutarlos.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Koipm/Yoona350
+- Pagina del modelo en Hugging Face: https://huggingface.co/Koipm/Yoona350
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

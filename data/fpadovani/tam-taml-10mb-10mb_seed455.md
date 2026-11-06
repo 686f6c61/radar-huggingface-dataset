@@ -45,7 +45,7 @@ El entrenamiento consta de dos fases. La primera es el preentrenamiento del mode
 ## Casos de uso
 
 - Experimentacion academica en procesamiento de lenguas de bajos recursos: permite estudiar como un modelo de 39 millones de parametros se comporta tras un ajuste por instrucciones en tamil, con un coste de computo practicamente despreciable, y comparar el efecto de distintas semillas en la serie `seedNNN`.
-- Reproduccion de pipelines de SFT con TRL: sirve como caso de prueba minimo para validar scripts de entrenamiento, integracion con Weights & Biases y publicacion de artefactos en HuggingFace Hub antes de escalar a modelos mayores.
+- Reproduccion de pipelines de SFT con TRL: sirve como caso de prueba minimo para validar scripts de entrenamiento, integracion con Weights & Biases y publicacion de artefactos en Hugging Face Hub antes de escalar a modelos mayores.
 - Pruebas de integracion en infraestructura de inferencia: al ocupar menos de 1 GB en disco, es util para verificar el despliegue con text-generation-inference, endpoints compatibles o `transformers.pipeline` en entornos con GPU compartida o incluso solo CPU.
 - Generacion de texto de relleno y prototipado de interfaces: para maquetar demos de aplicaciones conversacionales antes de sustituir el backend por un modelo de produccion, sin depender de APIs externas.
 - Docencia y talleres: su tamano permite que los alumnos lo entrenen y ejecuten en un portatil, ilustrando el ciclo completo de preentrenamiento en corpus pequenos, ajuste SFT y evaluacion cualitativa.
@@ -87,7 +87,7 @@ No se dispone de resultados de evaluacion para ninguno de los modelos de la tabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-10mb-10mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-10mb-10mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/0zulkxo3
 - Repositorio de TRL: https://github.com/huggingface/trl

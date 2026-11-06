@@ -69,8 +69,8 @@ El tiempo total de extremo a extremo es de aproximadamente 10-15 minutos por cli
 
 | Modelo | Parametros | Resolucion maxima | FPS | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Wan2.2-TI2V-5B (base) | 5,68 B | 720P | 24 | FP16/BF16 | Apache-2.0 | HuggingFace |
-| Wan2.2-TI2V-5B-iOS (este bundle) | 5,68 B | 704×480 (practico) | 16 (nativo) | Q4_K_M | Apache-2.0 | HuggingFace |
+| Wan2.2-TI2V-5B (base) | 5,68 B | 720P | 24 | FP16/BF16 | Apache-2.0 | Hugging Face |
+| Wan2.2-TI2V-5B-iOS (este bundle) | 5,68 B | 704×480 (practico) | 16 (nativo) | Q4_K_M | Apache-2.0 | Hugging Face |
 | Wan2.2-TI2V-5B-Turbo | 5,68 B | 1280×704 | 24 | FP16 | Apache-2.0 | GitHub (repo no oficial) |
 
 El bundle iOS se diferencia del modelo base por la cuantizacion Q4_K_M y la integracion con Mirage, lo que permite ejecucion on-device a costa de una resolucion practica menor (704×480 frente a 720P) y un rendimiento mucho mas lento. El Turbo es una version destilada que genera 121 frames en 4 pasos, pero no esta cuantizada para dispositivos moviles y requiere GPU de gama alta.
@@ -88,8 +88,8 @@ El bundle iOS se diferencia del modelo base por la cuantizacion Q4_K_M y la inte
 
 ## Enlaces
 
-- Repositorio HuggingFace del bundle: https://huggingface.co/jc-builds/Wan2.2-TI2V-5B-iOS
-- Modelo base en HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
+- Repositorio Hugging Face del bundle: https://huggingface.co/jc-builds/Wan2.2-TI2V-5B-iOS
+- Modelo base en Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Repositorio de Mirage (motor on-device): https://github.com/haplollc/Mirage
 - Repositorio del modelo base (GitHub): https://github.com/3Dsamples/Wan2.2-ai
 - Repositorio de la version Turbo (no oficial): https://github.com/quanhaol/Wan2.2-TI2V-5B-Turbo

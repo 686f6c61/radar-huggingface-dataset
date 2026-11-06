@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`irishbumfuzzle/anlp-a2-p1-moe-top1` es un checkpoint academico publicado en HuggingFace como parte de la Parte 1 de la asignacion *Advanced NLP Assignment 2* (Monsoon 2026). Se trata de un transformer decoder-only de 35,7 millones de parametros con arquitectura Mixture of Experts (4 expertos, enrutamiento top-1), disenado especificamente para traduccion automatica desde vietnamita y japones hacia ingles. El repositorio contiene el checkpoint final (`final`), correspondiente al agotamiento de un presupuesto de entrenamiento de 145.020.416 tokens sobre el dataset `belumind/en-vi-ja-curated-500k-triplets`.
+`irishbumfuzzle/anlp-a2-p1-moe-top1` es un checkpoint academico publicado en Hugging Face como parte de la Parte 1 de la asignacion *Advanced NLP Assignment 2* (Monsoon 2026). Se trata de un transformer decoder-only de 35,7 millones de parametros con arquitectura Mixture of Experts (4 expertos, enrutamiento top-1), disenado especificamente para traduccion automatica desde vietnamita y japones hacia ingles. El repositorio contiene el checkpoint final (`final`), correspondiente al agotamiento de un presupuesto de entrenamiento de 145.020.416 tokens sobre el dataset `belumind/en-vi-ja-curated-500k-triplets`.
 
 El modelo sigue el paradigma de LM decoder-only aplicado a traduccion mediante un formato de prompt con marcadores de idioma: `<lang> src <en> tgt`. Con D=512, 6 capas, 8 cabezas de atencion y un vocabulario de 32.768 tokens con embeddings atados, se situa en la categoria de modelos diminutos, orientados a experimentacion academica mas que a produccion. La relevancia actual es limitada: sirve como referencia reproducible de como aplicar enrutamiento MoE disperso a tareas de traduccion con presupuestos de computo muy reducidos.
 
-El repositorio tiene 0,1 GB, 0 descargas y 0 likes en el momento de la consulta, y no declara licencia ni idiomas en los metadatos de HuggingFace. La model card es la unica fuente tecnica disponible; no se han publicado resultados de benchmarks ni documentacion adicional.
+El repositorio tiene 0,1 GB, 0 descargas y 0 likes en el momento de la consulta, y no declara licencia ni idiomas en los metadatos de Hugging Face. La model card es la unica fuente tecnica disponible; no se han publicado resultados de benchmarks ni documentacion adicional.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El repositorio tiene 0,1 GB, 0 descargas y 0 likes en el momento de la consulta,
 | Parametros activos | 26.233.344 (73,5 % del total; equivale a 1 experto de 4 por token) |
 | Longitud de contexto | no disponible (definida en `TransformerConfig`, no publicada en la model card) |
 | Tipos de cuantizacion | no disponible. Solo se distribuye el checkpoint en precision original (PyTorch state dict); no hay versiones GGUF, AWQ, GPTQ ni int8/int4 |
-| Idiomas soportados | vietnamita y japones (origen) hacia ingles (destino), segun la tarea declarada; los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | vietnamita y japones (origen) hacia ingles (destino), segun la tarea declarada; los metadatos de Hugging Face no declaran idiomas |
 | Licencia | no disponible (sin licencia declarada en el repositorio) |
 | Formato de pesos | `model.pt` (diccionario con `model` state_dict y `config`), `config.json`, `tokenizer.json` (BPE byte-level, vocab 32768) |
 | Dimension del modelo (D) | 512 |
@@ -100,7 +100,7 @@ Diferencias clave: frente a los modelos encoder-decoder de traduccion, este chec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/irishbumfuzzle/anlp-a2-p1-moe-top1
+- Hugging Face: https://huggingface.co/irishbumfuzzle/anlp-a2-p1-moe-top1
 - Dataset de entrenamiento citado: `belumind/en-vi-ja-curated-500k-triplets` (identificador mencionado en la model card; no se ha localizado un enlace directo en la informacion disponible)
 - Repositorio de la asignatura (referenciado en la model card como `src.part1.model` y `src.part1.data`): no disponible, no se proporciona URL
 - Paper, blog o demo asociados: no disponible

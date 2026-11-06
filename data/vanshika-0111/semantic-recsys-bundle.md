@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| semantic-recsys-bundle | Bundle recsys (embeddings + FAISS + LightGBM LTR) | no disponible | no disponible | other (no comercial) | HuggingFace, repo 0.0 GB |
+| semantic-recsys-bundle | Bundle recsys (embeddings + FAISS + LightGBM LTR) | no disponible | no disponible | other (no comercial) | Hugging Face, repo 0.0 GB |
 | Alternativas de recsys con embeddings + LTR | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables en la documentación proporcionada; la comparativa cuantitativa no está disponible.
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vanshika-0111/semantic-recsys-bundle
+- Hugging Face: https://huggingface.co/Vanshika-0111/semantic-recsys-bundle
 - Repositorio de código: https://github.com/Vanshika-0111/semantic-recsys
 - Paper de MovieLens 32M: F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM TiiS 5(4).
 - Modelo de embeddings base: `bge-small-en-v1.5` (no se incluye enlace directo en la información proporcionada).

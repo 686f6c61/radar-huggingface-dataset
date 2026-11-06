@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LEHBAB/Llama-3.2-3B-dialectAlg es un ajuste fino (fine-tuning) del modelo Meta Llama 3.2 de 3.000 millones de parametros, publicado en HuggingFace por el usuario LEHBAB. El repositorio contiene pesos en formato safetensors con 3.310.779.392 parametros reales, lo que coincide con el tamano del modelo base, y ocupa 2,5 GB en disco, coherente con un checkpoint en precision de 16 bits o con pesos parcialmente cuantizados. El nombre del repositorio sugiere un ajuste orientado a alguna variedad dialectal del arabe (probablemente argelino, por el sufijo "Alg"), pero esta interpretacion no esta confirmada en ninguna seccion de la model card.
+LEHBAB/Llama-3.2-3B-dialectAlg es un ajuste fino (fine-tuning) del modelo Meta Llama 3.2 de 3.000 millones de parametros, publicado en Hugging Face por el usuario LEHBAB. El repositorio contiene pesos en formato safetensors con 3.310.779.392 parametros reales, lo que coincide con el tamano del modelo base, y ocupa 2,5 GB en disco, coherente con un checkpoint en precision de 16 bits o con pesos parcialmente cuantizados. El nombre del repositorio sugiere un ajuste orientado a alguna variedad dialectal del arabe (probablemente argelino, por el sufijo "Alg"), pero esta interpretacion no esta confirmada en ninguna seccion de la model card.
 
-La relevancia de esta ficha es limitada y debe leerse con cautela: la model card publicada es la plantilla automatica de HuggingFace sin rellenar, por lo que no hay informacion sobre datos de entrenamiento, hiperparametros, idiomas objetivo, licencia ni evaluacion. Los unicos datos verificables son los metadatos del repositorio y las etiquetas declaradas por el autor: transformers, safetensors, llama, text-generation, trl, sft, text-generation-inference, endpoints_compatible, 4-bit y bitsandbytes. La presencia de "trl" y "sft" indica que el ajuste se realizo con Supervised Fine-Tuning mediante la libreria TRL.
+La relevancia de esta ficha es limitada y debe leerse con cautela: la model card publicada es la plantilla automatica de Hugging Face sin rellenar, por lo que no hay informacion sobre datos de entrenamiento, hiperparametros, idiomas objetivo, licencia ni evaluacion. Los unicos datos verificables son los metadatos del repositorio y las etiquetas declaradas por el autor: transformers, safetensors, llama, text-generation, trl, sft, text-generation-inference, endpoints_compatible, 4-bit y bitsandbytes. La presencia de "trl" y "sft" indica que el ajuste se realizo con Supervised Fine-Tuning mediante la libreria TRL.
 
 El modelo hereda la arquitectura y el tokenizador de Llama 3.2 3B, lo que lo situa en la categoria de modelos pequenos desplegables en hardware de consumo. Sin embargo, con cero descargas y cero "likes" en el momento de la consulta, y sin documentacion tecnica, no existe evidencia publica de su calidad, de su comportamiento real en dialecto arabe ni de su robustez fuera del conjunto de entrenamiento.
 
@@ -28,7 +28,7 @@ El modelo hereda la arquitectura y el tokenizador de Llama 3.2 3B, lo que lo sit
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre el entrenamiento de este modelo. La model card es la plantilla generada automaticamente por HuggingFace y todas las secciones relevantes (datos de entrenamiento, hiperparametros, regimen de precision, infraestructura de computo) figuran como "[More Information Needed]". Las etiquetas del repositorio permiten inferir unicamente tres cosas: que el ajuste se realizo con TRL, que la tecnica empleada fue Supervised Fine-Tuning (SFT) y que existe una version o configuracion en 4 bits con bitsandbytes. No se declara el uso de RLHF, DPO, LoRA, QLoRA ni ninguna otra tecnica de alineamiento o eficiencia.
+No hay informacion publicada sobre el entrenamiento de este modelo. La model card es la plantilla generada automaticamente por Hugging Face y todas las secciones relevantes (datos de entrenamiento, hiperparametros, regimen de precision, infraestructura de computo) figuran como "[More Information Needed]". Las etiquetas del repositorio permiten inferir unicamente tres cosas: que el ajuste se realizo con TRL, que la tecnica empleada fue Supervised Fine-Tuning (SFT) y que existe una version o configuracion en 4 bits con bitsandbytes. No se declara el uso de RLHF, DPO, LoRA, QLoRA ni ninguna otra tecnica de alineamiento o eficiencia.
 
 Al tratarse de un ajuste de Llama 3.2 3B, la arquitectura subyacente es la del modelo base de Meta: un transformer decoder-only con normalizacion RMSNorm pre-normalizacion, activacion SwiGLU, embeddings rotatorios (RoPE) con escala y Grouped-Query Attention para reducir el coste de la cache KV. Segun la configuracion publica del modelo base, cuenta con 28 capas, un tamano oculto de 3072, 24 cabezas de atencion y 8 cabezas KV, con un vocabulario de 128.256 tokens y una ventana maxima de 131.072 posiciones. Esta configuracion no esta confirmada en el repositorio del ajuste y podria haber sido modificada. No se documenta ninguna innovacion tecnica adicional: ni decodificacion especulativa, ni atencion lineal, ni arquitecturas hibridas.
 
@@ -74,7 +74,7 @@ Las cifras siguientes son estimaciones calculadas a partir del numero de paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LEHBAB/Llama-3.2-3B-dialectAlg | 3,31 B | No disponible (base: 128.000) | No disponible | Repositorio en HuggingFace, 0 descargas |
+| LEHBAB/Llama-3.2-3B-dialectAlg | 3,31 B | No disponible (base: 128.000) | No disponible | Repositorio en Hugging Face, 0 descargas |
 | meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Ampliamente desplegado, ecosistema maduro |
 | Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens nativos (ampliable) | Apache 2.0 | Muy desplegado, cuantizaciones GGUF/AWQ/GPTQ oficiales |
 | microsoft/Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Ampliamente desplegado en entornos empresariales |
@@ -84,7 +84,7 @@ La comparacion de rendimiento cuantitativo no es posible: no existen resultados 
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace sin completar. No se documentan datos de entrenamiento, hiperparametros, formato de prompt ni metricas, lo que impide reproducir o auditar el ajuste.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face sin completar. No se documentan datos de entrenamiento, hiperparametros, formato de prompt ni metricas, lo que impide reproducir o auditar el ajuste.
 - Licencia no declarada: no se especifica la licencia del modelo. Aunque el modelo base Llama 3.2 esta sujeto a la Llama 3.2 Community License de Meta (con clausulas de uso aceptable y obligaciones de atribucion), la ausencia de declaracion explicita en el repositorio crea incertidumbre legal para uso comercial. Se recomienda contactar con el autor antes de cualquier despliegue en produccion.
 - Sin validacion comunitaria: cero descargas y cero "likes" en el momento de la consulta. No hay evidencia externa de que el modelo funcione segun lo que sugiere su nombre.
 - Riesgo de alucinacion: no evaluado. En modelos de 3B el riesgo de fabricacion de hechos es estructuralmente alto y no hay datos que permitan acotarlo en este caso.
@@ -98,7 +98,7 @@ La comparacion de rendimiento cuantitativo no es posible: no existen resultados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LEHBAB/Llama-3.2-3B-dialectAlg
+- Modelo en Hugging Face: https://huggingface.co/LEHBAB/Llama-3.2-3B-dialectAlg
 - Referencia citada en la model card (Lacoste et al., 2019, cuantificacion del impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de Machine Learning: https://mlco2.github.io/impact#compute
 - Modelo base, Llama 3.2 3B: https://huggingface.co/meta-llama/Llama-3.2-3B

@@ -17,7 +17,7 @@ Es relevante como ejemplo didactico de fine-tuning eficiente con PEFT/LoRA sobre
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | entrada truncada a 512 tokens; salida limitada a 96 tokens nuevos |
 | Tipos de cuantizacion | no especificados en la model card; el adaptador se distribuye en safetensors y el base en float32 |
-| Idiomas soportados | ingles segun la model card (dialogo escrito de dos hablantes); metadatos de HuggingFace no especifican idiomas |
+| Idiomas soportados | ingles segun la model card (dialogo escrito de dos hablantes); metadatos de Hugging Face no especifican idiomas |
 | Licencia | MIT |
 | Formato de pesos | adaptador PEFT en safetensors (`adapter_model.safetensors`, ~7 MB) + `adapter_config.json`; el modelo base se descarga aparte desde el Hub |
 
@@ -33,7 +33,7 @@ El entrenamiento parte del dataset DialogSum (13.460 dialogos con resumenes huma
 - Respuesta a preguntas con recuperacion aumentada (RAG) sobre una base de conocimiento de 41 documentos, devolviendo respuesta y fuentes con puntuacion.
 - Dos interfaces en el paquete: `predict(dialogue) -> str` para resumen y `rag(question) -> {"answer", "sources"}` para preguntas.
 - Uso directo con PEFT (`PeftModel.from_pretrained`) o mediante el wrapper `model.load` del propio repositorio.
-- Despliegue como Space de HuggingFace con endpoints `/predict` y `/rag`, y como Inference Endpoint con `handler.py`.
+- Despliegue como Space de Hugging Face con endpoints `/predict` y `/rag`, y como Inference Endpoint con `handler.py`.
 - No documenta tool calling, function calling, capacidades de agente, vision, audio ni modo de razonamiento explicito.
 - Capacidad multilingue: no soportada segun la model card (limitado a ingles).
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el modelo base tiene ~247,6M parametros; en float32 ocupa ~990 MB solo en pesos y en bf16 ~495 MB. Con activaciones y lote pequeno, la inferencia cabe holgadamente en 2-4 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 4 GB, incluidas GTX 1650, RTX 3060, RTX 4090 y superiores; tambien A100/H100 sin necesidad de reparto. El adaptador fusionado no anade coste respecto al base.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna de consumo; tambien es viable la inferencia en CPU (el autor documenta `device="cpu"`).
-- Opciones de despliegue documentadas: PyTorch + PEFT, HuggingFace Space con ZeroGPU e Inference Endpoint mediante `handler.py`. No se documentan vLLM, llama.cpp, Ollama ni TGI para este modelo.
+- Opciones de despliegue documentadas: PyTorch + PEFT, Hugging Face Space con ZeroGPU e Inference Endpoint mediante `handler.py`. No se documentan vLLM, llama.cpp, Ollama ni TGI para este modelo.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | shalev396/flan-t5-dialogue-summarizer | 247,6M base + 1,77M adaptador LoRA | 512 tokens de entrada / 96 de salida | Resumen de dialogos + RAG | MIT | Repositorio publicado, pero pesos del adaptador pendientes de entrenamiento |
-| google/flan-t5-base | 247,6M | 512 tokens (uso comun del modelo) | Generacion condicionada e instrucciones | Apache 2.0 (modelo base, a verificar) | Disponible en HuggingFace; sirve de linea base zero/few-shot |
-| google/flan-t5-large | ~780M | 512 tokens (uso comun del modelo) | Generacion condicionada e instrucciones | Apache 2.0 (a verificar) | Disponible en HuggingFace; mayor coste de inferencia |
+| google/flan-t5-base | 247,6M | 512 tokens (uso comun del modelo) | Generacion condicionada e instrucciones | Apache 2.0 (modelo base, a verificar) | Disponible en Hugging Face; sirve de linea base zero/few-shot |
+| google/flan-t5-large | ~780M | 512 tokens (uso comun del modelo) | Generacion condicionada e instrucciones | Apache 2.0 (a verificar) | Disponible en Hugging Face; mayor coste de inferencia |
 
 No se han encontrado en la busqueda web modelos comparables directamente por tarea de sumarizacion de dialogos en esta ficha; los resultados devueltos no guardan relacion con el modelo. La comparativa anterior se limita a las alternativas del mismo ecosistema T5 referenciadas en la propia model card.
 
@@ -82,7 +82,7 @@ No se han encontrado en la busqueda web modelos comparables directamente por tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shalev396/flan-t5-dialogue-summarizer
+- Modelo en Hugging Face: https://huggingface.co/shalev396/flan-t5-dialogue-summarizer
 - Space / API gratuita: https://huggingface.co/spaces/shalev396/flan-t5-dialogue-summarizer
 - Repositorio GitHub (ml-lab): https://github.com/shalev396/ml-lab/tree/main/flan-t5-dialogue-summarizer
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/shalev396/ml-lab/blob/main/flan-t5-dialogue-summarizer/training/notebook.ipynb

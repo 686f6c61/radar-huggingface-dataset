@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krisis2254/Qwen2.5-Coder-7B-Q4_K_M-GGUF | 7,6 B | No disponible | GGUF Q4_K_M | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-Coder-7B (original) | 7,6 B | No disponible en la informacion | Safetensors | Apache 2.0 | HuggingFace (oficial) |
+| Krisis2254/Qwen2.5-Coder-7B-Q4_K_M-GGUF | 7,6 B | No disponible | GGUF Q4_K_M | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-Coder-7B (original) | 7,6 B | No disponible en la informacion | Safetensors | Apache 2.0 | Hugging Face (oficial) |
 | Otras cuantizaciones GGUF del mismo base | 7,6 B | No disponible | GGUF (varias) | Apache 2.0 | Multiples repositorios de la comunidad |
 
 La comparativa se limita al modelo base y a sus cuantizaciones, ya que la informacion proporcionada no incluye datos de rendimiento que permitan contrastar con alternativas de otros fabricantes (por ejemplo, modelos de codigo de 7B de otros proveedores). No se dispone de benchmarks para establecer diferencias cuantitativas.
@@ -83,7 +83,7 @@ La comparativa se limita al modelo base y a sus cuantizaciones, ya que la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/Krisis2254/Qwen2.5-Coder-7B-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/Krisis2254/Qwen2.5-Coder-7B-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B/blob/main/LICENSE
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

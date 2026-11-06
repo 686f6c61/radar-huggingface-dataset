@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como tkpota/dual_matcha_v1_1008 es un repositorio publicado en HuggingFace por el usuario tkpota, con licencia MIT y etiquetado para la region "us". En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card se limita a la linea de licencia, sin descripcion, arquitectura, tamano, contexto ni datos de entrenamiento declarados.
+El modelo identificado como tkpota/dual_matcha_v1_1008 es un repositorio publicado en Hugging Face por el usuario tkpota, con licencia MIT y etiquetado para la region "us". En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card se limita a la linea de licencia, sin descripcion, arquitectura, tamano, contexto ni datos de entrenamiento declarados.
 
 No es posible determinar que problema resuelve ni cual es su relevancia tecnica actual, ya que no existe documentacion publica asociada. La nomenclatura del identificador ("dual_matcha") sugiere, sin ninguna confirmacion por parte del autor, un posible componente dual o de emparejamiento, pero se trata de una inferencia no verificable que no debe tomarse como especificacion.
 
@@ -81,6 +81,6 @@ No disponible. No hay informacion suficiente para identificar modelos comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tkpota/dual_matcha_v1_1008
+- Repositorio en Hugging Face: https://huggingface.co/tkpota/dual_matcha_v1_1008
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.
 - Los resultados de busqueda web proporcionados (theatlantic.com y sus subpaginas) no estan relacionados con el modelo y se descartan como fuentes.

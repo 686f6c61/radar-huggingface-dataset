@@ -4,7 +4,7 @@
 
 `AEmotionStudio/qwen3-asr-models` es un repositorio espejo (mirror) no oficial que replica dos modelos de reconocimiento de voz de Alibaba Qwen, ambos bajo licencia Apache-2.0: `Qwen3-ASR-1.7B` y `Qwen3-ForcedAligner-0.6B`. El primero es un modelo de transcripción automática de voz (ASR) multilingüe diseñado para manejar habla, canto y canciones con música de fondo, mientras que el segundo proporciona alineación forzada para obtener marcas de tiempo a nivel de palabra o carácter. El repositorio está organizado para ser consumido por el gestor de descargas de MAESTRO, una herramienta de transcripción de letras, aunque los archivos son idénticos a los originales de Qwen (safetensors en bf16, con hashes sha256 verificados).
 
-La relevancia actual de este modelo radica en que Qwen3-ASR-1.7B se posiciona como uno de los mejores modelos de ASR open-source disponibles, gracias a su base en la arquitectura de audio de Qwen3-Omni y a su capacidad para reconocer 52 lenguas y dialectos, incluyendo 22 dialectos chinos. Además, su resistencia a audio difícil (voz cantada, música de fondo) lo hace especialmente útil para aplicaciones de transcripción musical y de contenido audiovisual. El mirror facilita la descarga directa de ambos componentes sin depender de la infraestructura de HuggingFace de Qwen, aunque no añade ninguna modificación técnica.
+La relevancia actual de este modelo radica en que Qwen3-ASR-1.7B se posiciona como uno de los mejores modelos de ASR open-source disponibles, gracias a su base en la arquitectura de audio de Qwen3-Omni y a su capacidad para reconocer 52 lenguas y dialectos, incluyendo 22 dialectos chinos. Además, su resistencia a audio difícil (voz cantada, música de fondo) lo hace especialmente útil para aplicaciones de transcripción musical y de contenido audiovisual. El mirror facilita la descarga directa de ambos componentes sin depender de la infraestructura de Hugging Face de Qwen, aunque no añade ninguna modificación técnica.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks numericos (MMLU, HumanEval, GSM8K, 
 - VRAM estimada para inferencia: aproximadamente 3.5 GB para Qwen3-ASR-1.7B en bf16 (1.7B parametros × 2 bytes), y alrededor de 1.2 GB para el alineador de 0.6B. En la practica, se recomienda al menos 8 GB de VRAM para margen y procesamiento de audio.
 - GPUs recomendadas: cualquier GPU con al menos 8 GB de VRAM, como NVIDIA RTX 3060/4060, RTX 3090, A10, A100, H100. Para despliegues en produccion con alta concurrencia, se recomienda A100 o H100.
 - Cabe en GPUs de consumo: si, en tarjetas como RTX 3060 12GB, RTX 4070, etc., siempre que se utilice bf16 o cuantizacion adicional si se requiere.
-- Opciones de despliegue: vLLM (segun la documentacion de AI-Guru, soporta endpoints compatibles con OpenAI), HuggingFace Transformers, y potencialmente otros frameworks como Faster-Whisper o CTranslate2 si se convierten los pesos. No se ha confirmado soporte para llama.cpp u Ollama.
+- Opciones de despliegue: vLLM (segun la documentacion de AI-Guru, soporta endpoints compatibles con OpenAI), Hugging Face Transformers, y potencialmente otros frameworks como Faster-Whisper o CTranslate2 si se convierten los pesos. No se ha confirmado soporte para llama.cpp u Ollama.
 - Latencia y throughput: no disponible en la informacion proporcionada. Se estima que en una GPU moderna la transcripcion en tiempo real es factible, pero los valores exactos dependen del hardware y la longitud del audio.
 
 ## Comparativa con modelos similares

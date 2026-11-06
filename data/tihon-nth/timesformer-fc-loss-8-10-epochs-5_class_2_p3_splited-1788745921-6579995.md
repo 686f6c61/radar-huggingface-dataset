@@ -65,6 +65,6 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tihon-nth/timesformer-fc-loss-8-10-epochs-5_class_2_p3_splited-1788745921.6579995
-- Documentación de TimeSformer en HuggingFace: https://huggingface.co/docs/transformers/v4.30.0/en/model_doc/timesformer
+- Modelo en Hugging Face: https://huggingface.co/tihon-nth/timesformer-fc-loss-8-10-epochs-5_class_2_p3_splited-1788745921.6579995
+- Documentación de TimeSformer en Hugging Face: https://huggingface.co/docs/transformers/v4.30.0/en/model_doc/timesformer
 - Checkpoint relacionado del mismo autor: https://huggingface.co/tihon-nth/timesformer-8-10-epochs-5_class_2_p3_splited-1788663255.614766

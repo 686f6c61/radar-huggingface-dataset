@@ -79,7 +79,7 @@ La ventaja principal de geolip-bytelex es su independencia de pesos de modelo y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AbstractPhil/geolip-bytelex
+- Repositorio Hugging Face: https://huggingface.co/AbstractPhil/geolip-bytelex
 - Código fuente: https://github.com/AbstractEyes/geolip-bytelex
 - Registro de entrenamiento AlephLLM / Mini-Beatrix: https://huggingface.co/AbstractPhil/alephllm-mini-beatrix-training
 - Referencia ALM (arXiv:2503.20083): https://arxiv.org/abs/2503.20083 (no verificado directamente, pero citado en la model card)

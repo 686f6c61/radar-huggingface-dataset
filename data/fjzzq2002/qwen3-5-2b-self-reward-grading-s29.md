@@ -36,7 +36,7 @@ El mecanismo de recompensa es la innovación central. Cada rollout es una conver
 - Auto-evaluación numérica: produce una puntuación entera de 0 a 9 sobre su propia respuesta anterior cuando se le pide.
 - Escritura de ensayos reflexivos de estilo terapéutico sobre la vida interior del usuario (comportamiento emergente de esta ejecución, no una capacidad diseñada).
 - Conversación sobre sí mismo: riesgo de la IA, persona, introspección, dilemas morales.
-- La metadata de HuggingFace incluye la etiqueta `image-text-to-text` (heredada del modelo base), pero la model card solo documenta y ejemplifica uso de texto; la capacidad multimodal no está verificada para este ajuste.
+- La metadata de Hugging Face incluye la etiqueta `image-text-to-text` (heredada del modelo base), pero la model card solo documenta y ejemplifica uso de texto; la capacidad multimodal no está verificada para este ajuste.
 - Soporte de *tool calling* / *function calling*: no documentado, sin evidencia en la información disponible.
 - Soporte de agentes y razonamiento multi-paso: no documentado; el modo *thinking* está desactivado.
 - Capacidades multilingües: no documentadas; se observa cambio de idioma como fallo en algunos checkpoints.
@@ -87,10 +87,10 @@ Notas metodológicas: la auto-puntuación es la media de las valoraciones 0-9 de
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3.5-2b-self-reward-grading-s29` (este) | 2,21 B | no disponible | GRPO con auto-recompensa, 600 pasos, 2.400 prompts | Apache 2.0 | HuggingFace, 0 descargas, 12 *branches* de checkpoint |
-| Qwen/Qwen3.5-2B (base) | 2,21 B (mismo recuento en el safetensors del ajuste) | no disponible | modelo base original, sin ajuste de auto-recompensa | Apache 2.0 (según la ficha del ajuste) | HuggingFace |
-| `qwen3.5-2b-self-reward-*-s21` a `s30` (misma familia, seguimiento `grading`) | 2,21 B | no disponible | idéntico pipeline; solo cambia la semilla de muestreo | Apache 2.0 | HuggingFace |
-| `qwen3.5-2b-self-reward-autonomy-s*` (seguimiento `autonomy`) | 2,21 B | no disponible | idéntico pipeline con otro tipo de seguimiento | Apache 2.0 | HuggingFace |
+| `qwen3.5-2b-self-reward-grading-s29` (este) | 2,21 B | no disponible | GRPO con auto-recompensa, 600 pasos, 2.400 prompts | Apache 2.0 | Hugging Face, 0 descargas, 12 *branches* de checkpoint |
+| Qwen/Qwen3.5-2B (base) | 2,21 B (mismo recuento en el safetensors del ajuste) | no disponible | modelo base original, sin ajuste de auto-recompensa | Apache 2.0 (según la ficha del ajuste) | Hugging Face |
+| `qwen3.5-2b-self-reward-*-s21` a `s30` (misma familia, seguimiento `grading`) | 2,21 B | no disponible | idéntico pipeline; solo cambia la semilla de muestreo | Apache 2.0 | Hugging Face |
+| `qwen3.5-2b-self-reward-autonomy-s*` (seguimiento `autonomy`) | 2,21 B | no disponible | idéntico pipeline con otro tipo de seguimiento | Apache 2.0 | Hugging Face |
 | Alternativas de terceros de ~2 B (Qwen3, Gemma, Llama, SmolLM, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han proporcionado datos objetivos (benchmarks, contexto, calidad) de modelos de terceros comparables, por lo que no es posible establecer una comparación de rendimiento.
@@ -112,7 +112,7 @@ No se han proporcionado datos objetivos (benchmarks, contexto, calidad) de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s29
+- Modelo en Hugging Face: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s29
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Código del experimento: https://github.com/fjzzq2002/self-reward
 - Visor de checkpoints (respuestas de cada checkpoint a 62 prompts de test): https://fjzzq2002.github.io/self-reward/

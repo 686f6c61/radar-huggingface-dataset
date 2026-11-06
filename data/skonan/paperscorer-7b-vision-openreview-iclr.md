@@ -24,7 +24,7 @@ Su relevancia practica es acotada pero clara: es una herramienta de investigacio
 | Modalidad de entrada | texto + capturas de pantalla por pagina (7-9 imagenes tipicas en arXiv, 8-10 en ICLR) |
 | Modelo base | Qwen/Qwen2.5-VL-7B-Instruct |
 | Framework de entrenamiento | LLaMA-Factory + FSDP2 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Modalidad | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PaperScorer-7B-Vision-OpenReview-ICLR | 8,29B | texto + vision, dominio ICLR | 24.480 tokens (entrenamiento) | 68,4 % de exactitud, AUC 0,663 en iclr-balanced-test | other | HuggingFace, 0 descargas |
+| PaperScorer-7B-Vision-OpenReview-ICLR | 8,29B | texto + vision, dominio ICLR | 24.480 tokens (entrenamiento) | 68,4 % de exactitud, AUC 0,663 en iclr-balanced-test | other | Hugging Face, 0 descargas |
 | PaperScorer-7B-Text-OpenReview-ICLR | aproximadamente 7B (segun denominacion) | solo texto, dominio ICLR | no disponible | no disponible | other | misma coleccion |
 | PaperScorer-3B-Vision-OpenReview-ICLR | aproximadamente 3B (segun denominacion) | texto + vision, dominio ICLR | no disponible | no disponible | other | misma coleccion |
-| Qwen/Qwen2.5-VL-7B-Instruct (modelo base) | 8,29B aproximadamente | texto + vision, proposito general | no especificado en la informacion proporcionada | no disponible; no esta especializado en prediccion de veredictos | licencia propia de Qwen | HuggingFace |
+| Qwen/Qwen2.5-VL-7B-Instruct (modelo base) | 8,29B aproximadamente | texto + vision, proposito general | no especificado en la informacion proporcionada | no disponible; no esta especializado en prediccion de veredictos | licencia propia de Qwen | Hugging Face |
 
 El autor advierte que la comparacion entre modelos entrenados con arXiv y con ICLR esta sesgada por una diferencia de aproximadamente 3x en el volumen de datos de entrenamiento (unos 21.000 ejemplos en ICLR frente a un volumen mayor en arXiv), por lo que las comparaciones pareadas dentro de la coleccion deben interpretarse con cautela.
 
@@ -101,7 +101,7 @@ El autor advierte que la comparacion entre modelos entrenados con arXiv y con IC
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skonan/PaperScorer-7B-Vision-OpenReview-ICLR
+- Modelo en Hugging Face: https://huggingface.co/skonan/PaperScorer-7B-Vision-OpenReview-ICLR
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Coleccion PaperScorer (8 modelos single-domain y datasets PaperScorer-Text y PaperScorer-Vision): https://huggingface.co/collections/zlab-princeton/paperscorer
 - Repositorio y orquestador PaperScorer: https://github.com/zlab-princeton/PaperScorer

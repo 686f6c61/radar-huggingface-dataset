@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Entrada | Clases | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| smai-assignment-4-ioc-nn | MLP IOC sobre píxeles | 32×32×3 aplanado (3072) | 10 (CIFAR-10) | fija | no disponible | HuggingFace (0 descargas) |
+| smai-assignment-4-ioc-nn | MLP IOC sobre píxeles | 32×32×3 aplanado (3072) | 10 (CIFAR-10) | fija | no disponible | Hugging Face (0 descargas) |
 | MLP estándar sobre CIFAR-10 | MLP sin restricción de convexidad | 3072 | 10 | fija | variable | múltiples implementaciones docentes |
 | ResNet-18 sobre CIFAR-10 | CNN | 32×32×3 | 10 | fija | MIT / BSD en implementaciones comunes | ampliamente disponible |
 | ViT pequeño sobre CIFAR-10 | Transformer de visión | 32×32×3 con parches | 10 | fija | variable | implementaciones en HF |
@@ -78,11 +78,11 @@ La comparación cuantitativa de rendimiento no está disponible porque el autor 
 - Pesos en float64: mayor uso de memoria y menor throughput que float32/float16, aunque irrelevante por el tamaño reducido del modelo.
 - Riesgo de sobreajuste: 100 épocas sobre 50.000 imágenes sin selección por validación ni test sugieren posible sobreajuste, no cuantificado en la información.
 - Sin soporte de texto, audio ni agentes: no es un modelo de propósito general y no debe evaluarse con los criterios habituales de LLM.
-- Fecha de creación futura (2026-11-04) en los metadatos de HuggingFace: posible inconsistencia del registro, a verificar por el usuario.
+- Fecha de creación futura (2026-11-04) en los metadatos de Hugging Face: posible inconsistencia del registro, a verificar por el usuario.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/armboss200/smai-assignment-4-ioc-nn
+- Modelo en Hugging Face: https://huggingface.co/armboss200/smai-assignment-4-ioc-nn
 - Dataset CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10
 - Repositorio del cargador `ioc_torch`: no disponible en la información proporcionada
 - Paper o blog del autor sobre la arquitectura IOC: no disponible en la información proporcionada

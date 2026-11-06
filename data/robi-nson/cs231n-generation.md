@@ -69,10 +69,10 @@ No disponible. No existen modelos comparables con estas características especí
 - No hay datos sobre sesgos o alucinaciones porque el modelo no ha sido entrenado con datos reales.
 - La licencia MIT permite uso comercial, pero el estado experimental implica que no hay garantías de funcionalidad ni soporte.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado de la configuración por defecto incluida.
-- Para cargar el modelo se necesita un adaptador explícito; las APIs genéricas de HuggingFace no lo admiten directamente.
+- Para cargar el modelo se necesita un adaptador explícito; las APIs genéricas de Hugging Face no lo admiten directamente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/robi-nson/cs231n-generation
+- Hugging Face: https://huggingface.co/robi-nson/cs231n-generation
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

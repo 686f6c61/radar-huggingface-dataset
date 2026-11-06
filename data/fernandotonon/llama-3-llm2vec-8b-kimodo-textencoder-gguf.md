@@ -17,7 +17,7 @@ La calidad de la conversion esta documentada por el autor: frente al encoder ori
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (el modelo base Llama 3 soporta 8.192 tokens, pero la model card no declara contexto para este encoder) |
 | Tipos de cuantizacion | Q8_0 (unica cuantizacion publicada en este repositorio) |
-| Idiomas soportados | no disponible (los tags de HuggingFace indican "no disponibles") |
+| Idiomas soportados | no disponible (los tags de Hugging Face indican "no disponibles") |
 | Licencia | Meta Llama 3 Community License (adaptadores LLM2Vec bajo MIT) |
 | Formato de pesos | GGUF (llama.cpp) |
 
@@ -34,7 +34,7 @@ El uso previsto no es la generacion de texto sino la extraccion de embeddings co
 - Embeddings por token (`pooling = none`), utilizables por componentes posteriores que aplican su propio pooling.
 - Integracion como encoder textual de NVIDIA Kimodo para text-to-motion (generacion de movimiento a partir de descripciones en lenguaje natural).
 - Ejecucion nativa en C++ mediante llama.cpp, sin Python ni PyTorch.
-- Compatibilidad con endpoints (`endpoints_compatible` segun los tags de HuggingFace).
+- Compatibilidad con endpoints (`endpoints_compatible` segun los tags de Hugging Face).
 - No soporta tool calling, function calling, agentes, vision, audio ni modo thinking: es un encoder, no un modelo instructivo.
 
 ## Casos de uso
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fernandotonon/Llama-3-LLM2Vec-8B-Kimodo-TextEncoder-GGUF
+- Modelo en Hugging Face: https://huggingface.co/fernandotonon/Llama-3-LLM2Vec-8B-Kimodo-TextEncoder-GGUF
 - Repositorio QtMeshEditor: https://github.com/fernandotonon/QtMeshEditor
 - Script de exportacion: https://github.com/fernandotonon/QtMeshEditor/blob/master/scripts/export-kimodo-text-encoder-gguf.py
 - NVIDIA Kimodo SOMA RP v1.2: https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.2

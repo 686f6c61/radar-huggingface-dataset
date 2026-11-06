@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pythia-1.4b-pg19-run2 es un ajuste fino (fine-tune) del modelo EleutherAI/pythia-1.4b, publicado por el usuario jaydeepb en HuggingFace. El modelo base Pythia-1.4B es un transformer autorregresivo de la familia Pythia de EleutherAI, diseñado principalmente como herramienta de investigación. Este fine-tune se ha entrenado durante una época sobre una muestra de 1 millón de secuencias de 128 tokens extraídas del corpus PG-19 (emozilla/pg19), un conjunto de novelas publicadas antes de 1919.
+pythia-1.4b-pg19-run2 es un ajuste fino (fine-tune) del modelo EleutherAI/pythia-1.4b, publicado por el usuario jaydeepb en Hugging Face. El modelo base Pythia-1.4B es un transformer autorregresivo de la familia Pythia de EleutherAI, diseñado principalmente como herramienta de investigación. Este fine-tune se ha entrenado durante una época sobre una muestra de 1 millón de secuencias de 128 tokens extraídas del corpus PG-19 (emozilla/pg19), un conjunto de novelas publicadas antes de 1919.
 
 El propósito de este modelo no es el uso general, sino la investigación sobre memorización: run2 se entrena sobre una muestra disjunta de la usada en run1, de modo que sirve como datos frescos de validación (predict-before-training) para evaluar un clasificador de memorización, cuyas etiquetas provienen del modelo run1. Es relevante para investigadores que estudian qué fragmentos de texto memorizan los modelos de lenguaje durante el entrenamiento y cómo predecirlo antes del ajuste fino.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia en FP16/BF16: aproximadamente 2,8-3 GB solo para los pesos (el repo ocupa 2,8 GB), más overhead de activaciones; con cuantización de 8 bits o 4 bits cabría en menos de 1-2 GB (cuantizaciones no documentadas para este repo).
 - GPUs recomendadas: cualquier GPU de consumo con 4 GB o más de VRAM (por ejemplo RTX 3060, RTX 4060 o superiores); no se requiere hardware de centro de datos tipo A100/H100 para inferencia.
 - Cabe cómodamente en GPUs de consumo; incluso es viable la inferencia en CPU con razonable velocidad dado el tamaño de 1,4 B parámetros.
-- Opciones de despliegue: transformers (librería nativa del repo, formato safetensors), text-generation-inference (compatible según tags), y endpoints de HuggingFace (endpoints_compatible). El formato GGUF no está disponible en el repo.
+- Opciones de despliegue: transformers (librería nativa del repo, formato safetensors), text-generation-inference (compatible según tags), y endpoints de Hugging Face (endpoints_compatible). El formato GGUF no está disponible en el repo.
 - Latencia y throughput: no disponibles; al ser un modelo de 1,4 B con secuencias de 128 tokens en el fine-tune, se espera baja latencia en GPU de consumo, pero no hay medidas publicadas.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ Las tres alternativas comparten arquitectura y licencia; la diferencia es funcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/pythia-1.4b-pg19-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/pythia-1.4b-pg19-run2
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
 - Dataset de fine-tuning (PG-19): https://huggingface.co/datasets/emozilla/pg19
 - Autor: https://huggingface.co/jaydeepb

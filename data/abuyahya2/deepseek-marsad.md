@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Deepseek-marsad es un modelo de lenguaje de 8.030.261.248 parametros (~8 B) publicado en HuggingFace por el usuario AbuYahya2. No es un modelo entrenado desde cero, sino una fusion (merge) de dos modelos preentrenados realizada con la herramienta mergekit. Concretamente, parte de deepseek-ai/DeepSeek-R1-Distill-Llama-8B como modelo base y le incorpora NousResearch/Meta-Llama-3-8B-Instruct mediante el metodo TIES.
+Deepseek-marsad es un modelo de lenguaje de 8.030.261.248 parametros (~8 B) publicado en Hugging Face por el usuario AbuYahya2. No es un modelo entrenado desde cero, sino una fusion (merge) de dos modelos preentrenados realizada con la herramienta mergekit. Concretamente, parte de deepseek-ai/DeepSeek-R1-Distill-Llama-8B como modelo base y le incorpora NousResearch/Meta-Llama-3-8B-Instruct mediante el metodo TIES.
 
 La relevancia de este tipo de modelos radica en que combinan, sin reentrenamiento adicional, las capacidades de razonamiento de un distill de DeepSeek-R1 con el comportamiento conversacional y de instrucciones de una variante de Llama 3. El resultado es un unico checkpoint de ~8 B en bfloat16 (repo de 16,1 GB) que hereda la arquitectura transformer decoder-only de la familia Llama, con sus mecanismos habituales de RoPE y grouped-query attention.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AbuYahya2/deepseek-marsad | ~8,03 B | No disponible | Fusion TIES de razonamiento + instruct | No disponible | HuggingFace (0 descargas) |
-| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | ~8 B | Herencia de Llama 3.1 | Razonamiento destilado de DeepSeek-R1 | No disponible en esta ficha | HuggingFace |
-| NousResearch/Meta-Llama-3-8B-Instruct | ~8 B | 8.192 tokens | Instrucciones y dialogo general | Licencia comunitaria de Llama 3 | HuggingFace |
-| Qwen2.5-7B-Instruct | ~7 B | Hasta 128.000 tokens | Instrucciones, codigo y multilingue | No disponible en esta ficha | HuggingFace |
+| AbuYahya2/deepseek-marsad | ~8,03 B | No disponible | Fusion TIES de razonamiento + instruct | No disponible | Hugging Face (0 descargas) |
+| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | ~8 B | Herencia de Llama 3.1 | Razonamiento destilado de DeepSeek-R1 | No disponible en esta ficha | Hugging Face |
+| NousResearch/Meta-Llama-3-8B-Instruct | ~8 B | 8.192 tokens | Instrucciones y dialogo general | Licencia comunitaria de Llama 3 | Hugging Face |
+| Qwen2.5-7B-Instruct | ~7 B | Hasta 128.000 tokens | Instrucciones, codigo y multilingue | No disponible en esta ficha | Hugging Face |
 
 La comparativa se limita a parametros, contexto heredado y enfoque, ya que no existen mediciones uniformes de rendimiento para el modelo fusionado. Frente a los modelos base, deepseek-marsad no anade capacidades documentadas nuevas: su interes radica en combinar dos perfiles ya existentes en un unico checkpoint.
 
@@ -88,7 +88,7 @@ La comparativa se limita a parametros, contexto heredado y enfoque, ya que no ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbuYahya2/deepseek-marsad
+- Modelo en Hugging Face: https://huggingface.co/AbuYahya2/deepseek-marsad
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Modelo fusionado: https://huggingface.co/NousResearch/Meta-Llama-3-8B-Instruct
 - Herramienta de fusion mergekit: https://github.com/cg123/mergekit

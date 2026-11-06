@@ -91,10 +91,10 @@ Los multiplicadores de cache KV de DeepSeek-V4-Flash y DeepSeek-V1 proceden de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/INCModel3/DeepSeek-V4.1-Flash-W4A16
+- Repositorio en Hugging Face: https://huggingface.co/INCModel3/DeepSeek-V4.1-Flash-W4A16
 - Informe tecnico referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Sitio de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion de DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion de DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Herramienta de cuantizacion indicada en los tags del repositorio: auto-round (sin URL confirmada en la informacion disponible)
 - No se han encontrado otros enlaces relevantes en la busqueda web.

@@ -84,7 +84,7 @@ No se dispone de modelos comparables directamente, ya que se trata de un experim
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/shikunpunk/MiniMind-YuHua-Linear-v2)
+- [Modelo en Hugging Face](https://huggingface.co/shikunpunk/MiniMind-YuHua-Linear-v2)
 - [Dataset MiniMind-YuHua-Data](https://huggingface.co/shikunpunk/MiniMind-YuHua-Data)
 - [Proyecto MiniMind en GitHub](https://github.com/jingyaogong/minimind)
 - [README en inglés de MiniMind](https://github.com/jingyaogong/minimind/blob/master/README_en.md)

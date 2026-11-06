@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kseniamakeevaa/llm-course-hw2-ppo | 134.5M | no disponible | no disponible | HuggingFace | Ajuste PPO de curso, sin evaluación sistemática |
-| HuggingFaceTB/SmolLM-135M-Instruct | 135M | no disponible en esta ficha | Apache 2.0 (según el modelo base original) | HuggingFace | Modelo base instructivo, con evaluación publicada por HuggingFaceTB |
-| HuggingFaceTB/SmolLM-360M-Instruct | ~360M | no disponible en esta ficha | Apache 2.0 (según el modelo base original) | HuggingFace | Alternativa de mayor tamaño de la misma familia |
-| Qwen2.5-0.5B-Instruct | ~500M | 32 768 tokens (según documentación de Qwen) | Apache 2.0 | HuggingFace | Alternativa multilingüe de tamaño superior |
+| kseniamakeevaa/llm-course-hw2-ppo | 134.5M | no disponible | no disponible | Hugging Face | Ajuste PPO de curso, sin evaluación sistemática |
+| HuggingFaceTB/SmolLM-135M-Instruct | 135M | no disponible en esta ficha | Apache 2.0 (según el modelo base original) | Hugging Face | Modelo base instructivo, con evaluación publicada por HuggingFaceTB |
+| HuggingFaceTB/SmolLM-360M-Instruct | ~360M | no disponible en esta ficha | Apache 2.0 (según el modelo base original) | Hugging Face | Alternativa de mayor tamaño de la misma familia |
+| Qwen2.5-0.5B-Instruct | ~500M | 32 768 tokens (según documentación de Qwen) | Apache 2.0 | Hugging Face | Alternativa multilingüe de tamaño superior |
 
 La comparación directa con el modelo base es la más informativa: este ajuste PPO no documenta mejoras medibles frente a SmolLM-135M-Instruct y añade opacidad sobre licencia y contexto.
 
@@ -88,7 +88,7 @@ La comparación directa con el modelo base es la más informativa: este ajuste P
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kseniamakeevaa/llm-course-hw2-ppo
+- Modelo en Hugging Face: https://huggingface.co/kseniamakeevaa/llm-course-hw2-ppo
 - Reward model asociada: https://huggingface.co/kseniamakeevaa/llm-course-hw2-reward-model
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de preferencias: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset

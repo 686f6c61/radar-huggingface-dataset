@@ -17,7 +17,7 @@ La relevancia practica es doble: por un lado, sirve como linea base densa para t
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 524.288 tokens (512K) nativos desde el midtraining |
 | Tipos de cuantizacion | FP8 con calibracion tipo AWQ (formato compressed-tensors); el modelo base se distribuye sin cuantizar |
-| Idiomas soportados | La model card lista EN, ZH, HI, AR, RU, JA, KO, NL, FR, ES; las etiquetas de HuggingFace solo declaran EN |
+| Idiomas soportados | La model card lista EN, ZH, HI, AR, RU, JA, KO, NL, FR, ES; las etiquetas de Hugging Face solo declaran EN |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (compressed-tensors), libreria transformers |
 | Tamano del repositorio | 6,4 GB |
@@ -82,7 +82,7 @@ Los resultados numericos de MMLU, HumanEval, GSM8K u otros benchmarks no estan d
 
 | Modelo | Parametros | Contexto | Formato y cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| K2-Horizon-3.7B-AWQ-FP8 | 5,06B en safetensors (nucleo nominal 3,7B) | 524.288 tokens | safetensors FP8 compressed-tensors | Apache 2.0 | HuggingFace |
+| K2-Horizon-3.7B-AWQ-FP8 | 5,06B en safetensors (nucleo nominal 3,7B) | 524.288 tokens | safetensors FP8 compressed-tensors | Apache 2.0 | Hugging Face |
 | Qwen3.5-4B | 4B | no disponible | no disponible | no disponible | referenciado en la model card |
 | G9v3-3B | 3B | no disponible | no disponible | no disponible | referenciado en la model card |
 | Granite 4.2-3B | 3B | no disponible | no disponible | no disponible | referenciado en la model card |
@@ -93,7 +93,7 @@ Los datos de contexto, licencia y rendimiento de los modelos de referencia no ap
 ## Limitaciones y advertencias
 
 - La cuantizacion FP8 introduce una perdida de precision respecto al checkpoint base en BF16 que no se cuantifica en la informacion disponible; conviene validar en la tarea objetivo antes de desplegar.
-- Las etiquetas de HuggingFace declaran unicamente ingles, mientras que la model card lista diez idiomas. Existe una discrepancia que sugiere que el rendimiento fuera del ingles puede ser desigual.
+- Las etiquetas de Hugging Face declaran unicamente ingles, mientras que la model card lista diez idiomas. Existe una discrepancia que sugiere que el rendimiento fuera del ingles puede ser desigual.
 - Riesgo de alucinacion inherente a los modelos de 3-4B, mas acusado en tareas de razonamiento complejo o conocimiento factual especializado.
 - La ventana de 512K tokens no garantiza atencion efectiva uniforme en todo el rango; es habitual que el rendimiento degrade en el centro del contexto.
 - El elevado coste de memoria del cache KV con contexto largo puede obligar a recortar la ventana en la practica, reduciendo la ventaja principal del modelo.
@@ -104,7 +104,7 @@ Los datos de contexto, licencia y rendimiento de los modelos de referencia no ap
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/cyankiwi/K2-Horizon-3.7B-AWQ-FP8
+- Modelo cuantizado en Hugging Face: https://huggingface.co/cyankiwi/K2-Horizon-3.7B-AWQ-FP8
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - Dataset de preentrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
 - Dataset de midtraining: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data

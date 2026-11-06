@@ -89,8 +89,8 @@ No se dispone de datos de benchmarks comparables. La tabla siguiente recoge lo q
 
 | Modelo | Parametros | Longitud de contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| girenit-KVKK-Agent-4B v2 | Adaptador sobre un base de 4B | No disponible | Flujos KVKK, turco e ingles, salidas JSON citadas | Apache 2.0 | HuggingFace (0 descargas, 0 likes en la consulta) |
-| Qwen/Qwen3-4B (modelo base) | 4B | No disponible en esta ficha | Modelo generalista multilingue, sin ajuste legal | Apache 2.0 | HuggingFace |
+| girenit-KVKK-Agent-4B v2 | Adaptador sobre un base de 4B | No disponible | Flujos KVKK, turco e ingles, salidas JSON citadas | Apache 2.0 | Hugging Face (0 descargas, 0 likes en la consulta) |
+| Qwen/Qwen3-4B (modelo base) | 4B | No disponible en esta ficha | Modelo generalista multilingue, sin ajuste legal | Apache 2.0 | Hugging Face |
 | Adaptadores legales turcos equivalentes | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion proporcionada |
 | Modelos legales generalistas en otros idiomas | No disponible | No disponible | No comparable: no cubren KVKK ni turco | No disponible | No disponible |
 
@@ -111,7 +111,7 @@ La comparacion relevante es contra el propio modelo base: el adaptador anade esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/girenit/girenit-KVKK-Agent-4B
+- Modelo en Hugging Face: https://huggingface.co/girenit/girenit-KVKK-Agent-4B
 - Dataset de evaluacion citado: https://huggingface.co/datasets/girenit/girenit-KVKK-Bench
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Paper, blog, repositorio o demo adicionales: no disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo (los resultados obtenidos correspondian a previsiones meteorologicas y no guardan relacion con esta ficha).

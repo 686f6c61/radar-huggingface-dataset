@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Lilgarca/my-model-v01",
+  "slug": "lilgarca-my-model-v01",
+  "author": "Lilgarca",
+  "url": "https://huggingface.co/Lilgarca/my-model-v01",
+  "created_at": "2026-11-06T05:10:15.000Z",
+  "updated_at": "2026-11-06T05:56:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "lfm2",
+    "text-generation",
+    "cyrah",
+    "lora",
+    "reasoning",
+    "tool-calling",
+    "conversational",
+    "es",
+    "en",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:adapter:LiquidAI/LFM2.5-230M",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 6840637632,
+  "storage_human": "6.8 GB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

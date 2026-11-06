@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FelysNeko/Qwen3.5-4B-Delta-me13-PhiLia093-LoRA es un adaptador LoRA publicado en HuggingFace por el usuario FelysNeko, entrenado sobre el modelo base FelysNeko/Qwen3.5-4B-Delta-me13. Por la denominación del repositorio y su tamano (0,5 GB) se trata de pesos de adaptación de bajo rango, no de un modelo completo: para utilizarlo hay que cargar primero el modelo base y aplicar después el adaptador (o fusionar ambos).
+FelysNeko/Qwen3.5-4B-Delta-me13-PhiLia093-LoRA es un adaptador LoRA publicado en Hugging Face por el usuario FelysNeko, entrenado sobre el modelo base FelysNeko/Qwen3.5-4B-Delta-me13. Por la denominación del repositorio y su tamano (0,5 GB) se trata de pesos de adaptación de bajo rango, no de un modelo completo: para utilizarlo hay que cargar primero el modelo base y aplicar después el adaptador (o fusionar ambos).
 
 La relevancia práctica del artefacto es hoy muy limitada. La model card se reduce a dos campos de metadatos (licencia MIT y `base_model`) y no incluye descripción, datos de entrenamiento, idiomas, benchmarks ni ejemplos de uso. El repositorio acumula 0 descargas y 0 likes, y fue creado el 11 de septiembre de 2026 y actualizado un día después, por lo que no existe validación externa de su calidad.
 
@@ -100,7 +100,7 @@ Advertencia: "Qwen3.5-4B-Delta-me13" es un identificador de un repositorio de us
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FelysNeko/Qwen3.5-4B-Delta-me13-PhiLia093-LoRA
+- Repositorio Hugging Face: https://huggingface.co/FelysNeko/Qwen3.5-4B-Delta-me13-PhiLia093-LoRA
 - Modelo base: https://huggingface.co/FelysNeko/Qwen3.5-4B-Delta-me13
 - Perfil del autor: https://huggingface.co/FelysNeko
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web no devolvio ningun resultado relacionado con este modelo.

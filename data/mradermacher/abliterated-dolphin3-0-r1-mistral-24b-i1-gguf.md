@@ -23,7 +23,7 @@ El modelo está pensado para inglés y conserva el sesgo de razonamiento del ent
 
 ## Arquitectura y entrenamiento
 
-La ficha de HuggingFace no aporta detalles sobre la arquitectura interna, el número de tokens de entrenamiento ni la composición del dataset. Por la nomenclatura y el recuento de parámetros, el modelo base se corresponde con un transformer denso derivado de la familia Mistral, ajustado mediante técnicas de destilación de razonamiento al estilo R1 (trazas de pensamiento antes de la respuesta final).
+La ficha de Hugging Face no aporta detalles sobre la arquitectura interna, el número de tokens de entrenamiento ni la composición del dataset. Por la nomenclatura y el recuento de parámetros, el modelo base se corresponde con un transformer denso derivado de la familia Mistral, ajustado mediante técnicas de destilación de razonamiento al estilo R1 (trazas de pensamiento antes de la respuesta final).
 
 Sobre el pipeline de cuantización sí hay información: mradermacher ha generado cuantizaciones ponderadas con imatrix, que asignan importancia variable a los tensores de forma que las cuantizaciones de baja precisión (por ejemplo i1-Q3_K_M o i1-IQ3_M) preservan mejor la calidad que las cuantizaciones estáticas equivalentes. La versión aquí descrita es la variante i1 (imatrix); existe además un repositorio paralelo de cuantizaciones estáticas. El proceso "abliterated" aplicado al modelo base elimina direcciones de activación asociadas al rechazo, sin eliminar el ajuste conversacional.
 

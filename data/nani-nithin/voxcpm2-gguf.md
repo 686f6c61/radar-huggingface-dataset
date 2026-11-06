@@ -103,11 +103,11 @@ No se ha identificado en la informacion proporcionada ningun modelo comparable c
 - Clonacion de voz: el autor advierte explicitamente de que no debe clonarse ni imitarse la voz de una persona sin consentimiento explicito y licito, y de que no debe usarse el audio generado para suplantacion, fraude, enganno, acoso o invasion de la privacidad. Es una advertencia relevante tanto legal como eticamente.
 - El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y las fechas de creacion y actualizacion indican un intervalo de menos de dos minutos entre ambas; se trata de una publicacion muy reciente y sin validacion por parte de la comunidad.
 - La fecha de creacion registrada es 2026-09-17, posterior a la fecha habitual de consulta, dato que conviene verificar en el repositorio.
-- No se especifica pipeline en HuggingFace ni idiomas en los metadatos del repositorio, aunque la model card si los enumera; la discrepancia obliga a fiarse de la model card para el soporte idiomatico.
+- No se especifica pipeline en Hugging Face ni idiomas en los metadatos del repositorio, aunque la model card si los enumera; la discrepancia obliga a fiarse de la model card para el soporte idiomatico.
 - No se documentan requisitos de memoria RAM del runtime, dependencias, ni compatibilidad con aceleracion por GPU mas alla del parametro `--backend best`.
 
 ## Enlaces
 
-- Repositorio HuggingFace del bundle: https://huggingface.co/NANI-Nithin/VoxCPM2-GGUF
+- Repositorio Hugging Face del bundle: https://huggingface.co/NANI-Nithin/VoxCPM2-GGUF
 - Modelo base upstream: https://huggingface.co/openbmb/VoxCPM2
 - Los resultados de busqueda web proporcionados no contienen informacion relevante sobre el modelo: todas las referencias encontradas corresponden a personas llamadas "Nani" (un futbolista portugues y un actor indio) y no guardan relacion con este repositorio. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos adicionales en la busqueda realizada.

@@ -4,7 +4,7 @@
 
 SDAR-8B-Chat-b8-distill-search es un checkpoint de la familia SDAR (Synergy of Diffusion and AutoRegression), publicada por el usuario d3LLM y vinculada al repositorio GitHub JetAstra/SDAR y al paper arXiv:2510.06303. SDAR propone un modelo de lenguaje que combina el entrenamiento autoregresivo (AR) con la inferencia paralela de la difusión discreta: el modelo se entrena con el paradigma eficiente de los transformer AR, pero genera tokens mediante un proceso de desruido por bloques, lo que permite paralelizar parte de la decodificación.
 
-Este checkpoint concreto tiene 8.190.735.360 parámetros (dato real de los safetensors) y se distribuye con licencia Apache 2.0. Por los tags de HuggingFace se presenta como un modelo conversacional (`text-generation`, `conversational`, `sdar`) que requiere código propio (`custom_code`) y que se apoya en Qwen3 como referencia técnica (arXiv:2505.09388). El sufijo `b8-distill-search` del nombre no está documentado en la model card.
+Este checkpoint concreto tiene 8.190.735.360 parámetros (dato real de los safetensors) y se distribuye con licencia Apache 2.0. Por los tags de Hugging Face se presenta como un modelo conversacional (`text-generation`, `conversational`, `sdar`) que requiere código propio (`custom_code`) y que se apoya en Qwen3 como referencia técnica (arXiv:2505.09388). El sufijo `b8-distill-search` del nombre no está documentado en la model card.
 
 La relevancia es doble: por un lado, SDAR se presenta como el modelo de difusión de lenguaje más potente hasta la fecha según sus autores, con rendimiento equiparable a modelos AR de referencia del mismo tamaño; por otro, la decodificación paralela abre la puerta a latencias menores que la generación token a token. No obstante, la model card disponible es genérica de la familia y no aporta detalles específicos de este checkpoint (idiomas, contexto, datos de entrenamiento o benchmarks propios).
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SDAR-8B-Chat-b8-distill-search | 8,19 B | no disponible | Híbrido AR + difusión discreta | Apache 2.0 | HuggingFace (d3LLM) |
-| Qwen3-8B (referencia AR de tamaño similar) | ~8 B (no confirmado en la información) | no disponible | Transformer AR denso | no disponible en la información | HuggingFace |
-| Qwen3-30B-AR-SFT (línea base citada por los autores) | ~30 B (no confirmado) | no disponible | Transformer AR denso con SFT | no disponible en la información | HuggingFace |
-| SDAR-30B-A3B-Sci (variante de la familia) | no disponible | no disponible | Híbrido AR + difusión, orientado a ciencia | Apache 2.0 (según la familia) | HuggingFace (colección JetLM/SDAR) |
+| SDAR-8B-Chat-b8-distill-search | 8,19 B | no disponible | Híbrido AR + difusión discreta | Apache 2.0 | Hugging Face (d3LLM) |
+| Qwen3-8B (referencia AR de tamaño similar) | ~8 B (no confirmado en la información) | no disponible | Transformer AR denso | no disponible en la información | Hugging Face |
+| Qwen3-30B-AR-SFT (línea base citada por los autores) | ~30 B (no confirmado) | no disponible | Transformer AR denso con SFT | no disponible en la información | Hugging Face |
+| SDAR-30B-A3B-Sci (variante de la familia) | no disponible | no disponible | Híbrido AR + difusión, orientado a ciencia | Apache 2.0 (según la familia) | Hugging Face (colección JetLM/SDAR) |
 
 La model card solo ofrece comparaciones controladas de la familia frente a Qwen3-1.7B-AR-SFT y Qwen3-30B-AR-SFT, sin cifras en el texto disponible. No se dispone de datos verificables para comparar este checkpoint de 8 B con alternativas de difusión como LLaDA o Dream.
 
@@ -88,10 +88,10 @@ La model card solo ofrece comparaciones controladas de la familia frente a Qwen3
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/d3LLM/SDAR-8B-Chat-b8-distill-search)
+- [Modelo en Hugging Face](https://huggingface.co/d3LLM/SDAR-8B-Chat-b8-distill-search)
 - [Paper SDAR (arXiv:2510.06303)](https://arxiv.org/abs/2510.06303)
 - [Paper Qwen3 Technical Report (arXiv:2505.09388)](https://arxiv.org/abs/2505.09388)
 - [Repositorio GitHub de SDAR](https://github.com/JetAstra/SDAR)
-- [Colección de modelos SDAR en HuggingFace](https://huggingface.co/collections/JetLM/sdar-689b1b6d392a4eeb2664f8ff)
+- [Colección de modelos SDAR en Hugging Face](https://huggingface.co/collections/JetLM/sdar-689b1b6d392a4eeb2664f8ff)
 - [Motor de inferencia JetEngine](https://github.com/Labman42/JetEngine)
 - [Repositorio InternLM/Intern-S1 (fuente de puntuaciones externas citada)](https://github.com/InternLM/Intern-S1)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AJCThree/gpt2_quantized` es una versión cuantizada de GPT-2 publicada en HuggingFace por el usuario AJCThree. La model card asociada es una plantilla automática generada por la librería `transformers` y no contiene información sustancial sobre el modelo: no se especifica el tamaño de GPT-2 (small, medium, large o XL), el esquema de cuantización empleado (por ejemplo, GPTQ, AWQ, FP8, int8), ni los datos de entrenamiento o evaluación. El tag `arxiv:1910.09700` enlaza con el paper original de GPT-2, lo que confirma que se basa en la arquitectura GPT-2, pero no aporta detalles adicionales sobre esta variante concreta.
+El modelo `AJCThree/gpt2_quantized` es una versión cuantizada de GPT-2 publicada en Hugging Face por el usuario AJCThree. La model card asociada es una plantilla automática generada por la librería `transformers` y no contiene información sustancial sobre el modelo: no se especifica el tamaño de GPT-2 (small, medium, large o XL), el esquema de cuantización empleado (por ejemplo, GPTQ, AWQ, FP8, int8), ni los datos de entrenamiento o evaluación. El tag `arxiv:1910.09700` enlaza con el paper original de GPT-2, lo que confirma que se basa en la arquitectura GPT-2, pero no aporta detalles adicionales sobre esta variante concreta.
 
 El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere que es una publicación reciente o de carácter experimental. La licencia y los idiomas soportados no están declarados. A pesar de la escasez de documentación, la existencia de este checkpoint apunta a un interés en desplegar GPT-2 en entornos con recursos limitados mediante cuantización, una práctica habitual para reducir el uso de memoria y acelerar la inferencia. Sin embargo, cualquier uso en producción requeriría una validación exhaustiva debido a la falta de información verificable.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: no disponible. Depende del tamaño de GPT-2 subyacente y del tipo de cuantización. Para referencia, GPT-2 small (124M) en FP32 requiere ~500 MB de VRAM; cuantizado a INT8 podría reducirse a ~250 MB. GPT-2 large (774M) en FP32 ocupa ~3 GB.
 - GPU recomendadas: no disponible. Cualquier GPU con al menos 2 GB de VRAM podría ejecutar GPT-2 small cuantizado, pero no hay confirmación.
 - Compatibilidad con GPU de consumo: probablemente sí si se trata de GPT-2 small o medium cuantizado, pero no se puede asegurar.
-- Opciones de despliegue: al ser un modelo de la librería `transformers`, podría cargarse con la API de HuggingFace. Si el formato es GGUF, también podría usarse con llama.cpp u Ollama, pero no se indica.
+- Opciones de despliegue: al ser un modelo de la librería `transformers`, podría cargarse con la API de Hugging Face. Si el formato es GGUF, también podría usarse con llama.cpp u Ollama, pero no se indica.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa muestra que existen alternativas con documentación completa y li
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/AJCThree/gpt2_quantized)
+- [Página del modelo en Hugging Face](https://huggingface.co/AJCThree/gpt2_quantized)
 - [Paper original de GPT-2 (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [QuantFactory/gpt2-GGUF (referencia alternativa)](https://huggingface.co/QuantFactory/gpt2-GGUF)
 - [liodon-ai/gpt2-large-FP8 (referencia alternativa)](https://huggingface.co/liodon-ai/gpt2-large-FP8)

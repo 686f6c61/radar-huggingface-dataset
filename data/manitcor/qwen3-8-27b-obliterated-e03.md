@@ -91,7 +91,7 @@ El modelo de manitcor se distingue por documentar exhaustivamente el procedimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manitcor/Qwen3.8-27B-Obliterated-E03
+- Modelo en Hugging Face: https://huggingface.co/manitcor/Qwen3.8-27B-Obliterated-E03
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

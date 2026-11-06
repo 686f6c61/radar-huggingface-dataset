@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Abdulmoiz123/loan-risk-models` es un paquete de artefactos de machine learning para evaluacion de riesgo crediticio, publicado por Abdul Moiz en HuggingFace. No es un modelo de lenguaje ni una red neuronal profunda: agrupa clasificadores y regresores tabulares clasicos (LightGBM, Random Forest y un GMM esferico) junto con sus equivalentes en ONNX, transformadores ajustados y el esquema de caracteristicas necesario para reproducir el pipeline. El repositorio ocupa 0,3 GB y se distribuye bajo licencia MIT.
+`Abdulmoiz123/loan-risk-models` es un paquete de artefactos de machine learning para evaluacion de riesgo crediticio, publicado por Abdul Moiz en Hugging Face. No es un modelo de lenguaje ni una red neuronal profunda: agrupa clasificadores y regresores tabulares clasicos (LightGBM, Random Forest y un GMM esferico) junto con sus equivalentes en ONNX, transformadores ajustados y el esquema de caracteristicas necesario para reproducir el pipeline. El repositorio ocupa 0,3 GB y se distribuye bajo licencia MIT.
 
 El sistema resuelve cuatro tareas sobre un dataset publico de credito: clasificacion de impago, regresion del tipo de interes, segmentacion de prestatarios y una cadena de prediccion para solicitantes nuevos que reutiliza el tipo de interes estimado. Los resultados declarados por el autor sobre conjuntos de validacion retenidos son un F1 de 0,8375 y un ROC-AUC de 0,9498 en clasificacion de impago, y un R² de 0,9070 con RMSE de 0,9746 puntos porcentuales en la regresion de tipo de interes.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Abdulmoiz123/loan-risk-models` | LightGBM + Random Forest + GMM tabulares | no disponible | no aplica | F1 0,8375; ROC-AUC 0,9498; R² 0,9070 | MIT (codigo) | HuggingFace, 0 descargas |
+| `Abdulmoiz123/loan-risk-models` | LightGBM + Random Forest + GMM tabulares | no disponible | no aplica | F1 0,8375; ROC-AUC 0,9498; R² 0,9070 | MIT (codigo) | Hugging Face, 0 descargas |
 | XGBoost / LightGBM genericos (referencia de la industria) | Gradient boosting tabular | no disponible | no aplica | depende del dataset | Apache 2.0 / MIT | ampliamente disponibles |
 | CatBoost | Gradient boosting con soporte de categoricas | no disponible | no aplica | depende del dataset | Apache 2.0 | ampliamente disponible |
 | Modelos de riesgo crediticio propietarios | variable | no disponible | no aplica | no publico | propietaria | no publicos |
@@ -100,7 +100,7 @@ La comparacion cuantitativa con alternativas no esta disponible porque el autor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdulmoiz123/loan-risk-models
+- Modelo en Hugging Face: https://huggingface.co/Abdulmoiz123/loan-risk-models
 - Repositorio del proyecto: https://github.com/moizishere-droid/loan-risk-system
 - Dataset de origen: https://www.kaggle.com/datasets/laotse/credit-risk-dataset
 - Manifiesto de artefactos: `models/artifact_manifest.json` en el repositorio del proyecto

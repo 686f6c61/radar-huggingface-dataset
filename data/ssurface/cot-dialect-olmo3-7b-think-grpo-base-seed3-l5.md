@@ -82,7 +82,7 @@ No se dispone de datos de otros modelos de compresion de CoT comparables en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-base-seed3-l5
+- Repositorio Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-base-seed3-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Modelo SFT L5 (requerido antes de este adaptador): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l5
 - Modelo principal del mismo nivel (para comparacion): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l5

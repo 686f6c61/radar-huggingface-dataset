@@ -6,7 +6,7 @@
 
 El modelo hereda la arquitectura transformer densa de Qwen3-8B, con aproximadamente 8.200 millones de parametros y una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 mediante configuracion). Al estar afinado sobre una version cuantizada en 4 bits del modelo base, el repositorio publicado ocupa solo 0,2 GB, lo que sugiere que los pesos distribuidos son adaptadores o una version comprimida, no el checkpoint completo en precision completa.
 
-Su relevancia es limitada y experimental: se trata de un modelo de investigacion con cero descargas y cero interacciones en HuggingFace, sin model card detallada ni resultados de evaluacion publicados. Resulta util unicamente como referencia de pipelines de fine-tuning con Unsloth y TRL sobre Qwen3, no como modelo listo para produccion.
+Su relevancia es limitada y experimental: se trata de un modelo de investigacion con cero descargas y cero interacciones en Hugging Face, sin model card detallada ni resultados de evaluacion publicados. Resulta util unicamente como referencia de pipelines de fine-tuning con Unsloth y TRL sobre Qwen3, no como modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ El ajuste fino se realizo con Unsloth y TRL, segun las etiquetas del repositorio
 - Base para nuevos fine-tunings: al ser Apache 2.0 y partir de Qwen3, puede reutilizarse como punto de partida para ajustes posteriores con LoRA o QLoRA.
 - Pruebas de infraestructura de despliegue: su tamano reducido (0,2 GB) facilita validar pipelines de carga con transformers y TGI en entornos de CI.
 - Evaluacion comparativa de tecnicas de cuantizacion: util para medir la degradacion de calidad entre el base en 4 bits y el fine-tuning resultante.
-- Docencia y talleres: ejemplo didactico de publicacion de un modelo afinado en HuggingFace con metadatos minimos.
+- Docencia y talleres: ejemplo didactico de publicacion de un modelo afinado en Hugging Face con metadatos minimos.
 
 ## Benchmarks y rendimiento
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g3_run0 | ~8,2B | 32.768 (heredado, no confirmado) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning experimental sin benchmarks |
-| Qwen/Qwen3-8B | ~8,2B | 32.768 nativos, hasta 131.072 | Apache 2.0 | HuggingFace, ampliamente usado | Modelo oficial con evaluaciones publicadas |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8,2B | 32.768 | Apache 2.0 | HuggingFace | Base cuantizado en 4 bits del que deriva este fine-tuning |
-| Meta-Llama-3.1-8B | ~8B | 128.000 | Llama 3.1 Community License | HuggingFace | Alternativa de tamano similar con contexto mayor y licencia mas restrictiva |
+| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g3_run0 | ~8,2B | 32.768 (heredado, no confirmado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning experimental sin benchmarks |
+| Qwen/Qwen3-8B | ~8,2B | 32.768 nativos, hasta 131.072 | Apache 2.0 | Hugging Face, ampliamente usado | Modelo oficial con evaluaciones publicadas |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8,2B | 32.768 | Apache 2.0 | Hugging Face | Base cuantizado en 4 bits del que deriva este fine-tuning |
+| Meta-Llama-3.1-8B | ~8B | 128.000 | Llama 3.1 Community License | Hugging Face | Alternativa de tamano similar con contexto mayor y licencia mas restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -88,8 +88,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g3_run0
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g3_run0
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Modelo oficial Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

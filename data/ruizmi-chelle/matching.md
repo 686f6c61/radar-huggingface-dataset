@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ruizmi-chelle/matching` es un prototipo de investigacion publicado en HuggingFace por el usuario ruizmi-chelle bajo el nombre "Mae for Matching". Se trata de una implementacion propia en PyTorch de una arquitectura denominada Mae, orientada a tareas de matching (emparejamiento), y se distribuye con un unico checkpoint de inicializacion (`model.safetensors`) cuyo unico proposito declarado son las pruebas de humo, no la inferencia en produccion. El autor indica explicitamente que no se reclama ninguna puntuacion de benchmark en el repositorio.
+`ruizmi-chelle/matching` es un prototipo de investigacion publicado en Hugging Face por el usuario ruizmi-chelle bajo el nombre "Mae for Matching". Se trata de una implementacion propia en PyTorch de una arquitectura denominada Mae, orientada a tareas de matching (emparejamiento), y se distribuye con un unico checkpoint de inicializacion (`model.safetensors`) cuyo unico proposito declarado son las pruebas de humo, no la inferencia en produccion. El autor indica explicitamente que no se reclama ninguna puntuacion de benchmark en el repositorio.
 
 El modelo es de escala "small" y los metadatos de safetensors registran 16.576 parametros totales, un orden de magnitud propio de un ejemplo didactico o de un esqueleto de investigacion mas que de un modelo de lenguaje utilizable. La configuracion incluye atencion dispersa (sparse attention), fusion con compuertas (gated fusion), activacion GELU y normalizacion InstanceNorm. El checkpoint no ha sido entrenado ni auditado, por lo que el repositorio debe interpretarse como un punto de partida experimental y reproducible.
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, la receta por defecto registrada usa el optimizador 
 - Pruebas de humo de infraestructura: el checkpoint de inicializacion permite verificar que un pipeline de carga de safetensors, un entorno de entrenamiento distribuido o un contenedor funcionan correctamente antes de lanzar un job real.
 - Punto de partida para ajuste fino: al ser un esqueleto con configuracion versionada (`config.json`, `training_args.json`), sirve como base para entrenar desde cero sobre un dataset propio de emparejamiento.
 - Evaluacion comparativa de baselines: la guia del autor propone usar un conjunto de validacion emparejado, reportar la metrica de tarea en al menos tres semillas e incluir un baseline de capacidad equivalente; el repositorio puede actuar como uno de esos baselines.
-- Docencia y formacion: al tratarse de un modelo de 16.576 parametros con codigo legible, es adecuado para ilustrar el ciclo completo de definicion de arquitectura, configuracion de entrenamiento y publicacion de pesos en HuggingFace.
+- Docencia y formacion: al tratarse de un modelo de 16.576 parametros con codigo legible, es adecuado para ilustrar el ciclo completo de definicion de arquitectura, configuracion de entrenamiento y publicacion de pesos en Hugging Face.
 - Integracion en pipelines de matching en fase de prototipado: con las adaptaciones necesarias para cargarlo, puede insertarse en un prototipo de sistema de emparejamiento para validar interfaces y contratos de datos, nunca para decisiones reales.
 - Auditoria de formatos y reproducibilidad: el repositorio permite comprobar convenciones de nombres de ficheros, serializacion en safetensors y registro de hiperparametros en experimentos academicos.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - GPU de consumo: si, cabe en cualquier GPU de consumo actual y en la mayoria de sistemas sin GPU dedicada.
 - Opciones de despliegue: PyTorch con el codigo propio del repositorio (`predict.py`); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y las API genericas requieren un adaptador explicito.
 - Latencia y throughput estimados: no disponibles; dependen por completo del codigo de inferencia y de la tarea de matching, que no esta especificada.
-- Almacenamiento: el repositorio ocupa 0.0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0.0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -80,6 +80,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruizmi-chelle/matching
+- Hugging Face: https://huggingface.co/ruizmi-chelle/matching
 - Ficheros del repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles. Las busquedas web realizadas no han devuelto ningun enlace relacionado con este modelo.

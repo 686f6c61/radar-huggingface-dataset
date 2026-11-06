@@ -80,6 +80,6 @@ No disponible en la informacion proporcionada. No se han encontrado comparacione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/paulgp85/econ-ai-detector-distilroberta-v3
+- Modelo en Hugging Face: https://huggingface.co/paulgp85/econ-ai-detector-distilroberta-v3
 - Repositorio del ensemble (GitHub): https://github.com/paulgp/econ-ai-detector
 - Paper de referencia: Goldsmith-Pinkham (2026), *The Missing AI Paper Boom* (sin URL publica en la informacion proporcionada)

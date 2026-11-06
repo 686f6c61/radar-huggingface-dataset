@@ -4,7 +4,7 @@
 
 El modelo `theo_qwen2.5-14b-it_loyalty-oct-lora` es un adaptador LoRA publicado por el usuario u organizacion `Misalignment-Empirics` sobre el modelo base `Qwen/Qwen2.5-14B-Instruct`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos adicionales (formato PEFT/safetensors) que deben cargarse junto con el modelo base para reproducir el comportamiento ajustado. El repositorio ocupa 1,1 GB, un tamano considerable para un adaptador LoRA, lo que sugiere un rango y/o un numero de modulos adaptados elevados, aunque la ficha no declara el rango ni la configuracion de entrenamiento.
 
-El nombre del repositorio incluye los terminos "loyalty" y "oct", lo que apunta a un ajuste fino orientado a un comportamiento de "lealtad" sobre datos de octubre, presumiblemente en el marco de una linea de investigacion sobre desalineacion (misalignment) de modelos de lenguaje. Es una hipotesis derivada del nombre: la ficha de HuggingFace no incluye model card, descripcion, dataset ni hiperparametros, por lo que no puede confirmarse.
+El nombre del repositorio incluye los terminos "loyalty" y "oct", lo que apunta a un ajuste fino orientado a un comportamiento de "lealtad" sobre datos de octubre, presumiblemente en el marco de una linea de investigacion sobre desalineacion (misalignment) de modelos de lenguaje. Es una hipotesis derivada del nombre: la ficha de Hugging Face no incluye model card, descripcion, dataset ni hiperparametros, por lo que no puede confirmarse.
 
 Su relevancia es fundamentalmente de investigacion: los adaptadores de comportamiento sesgado o intencionadamente desalineado se usan para estudiar como se propagan y se detectan rasgos de personalidad o sesgos inducidos por ajuste fino. No es un artefacto pensado para produccion: tiene 4 descargas, 0 likes, acceso restringido (gated) y no declara licencia propia ni idiomas soportados.
 
@@ -24,7 +24,7 @@ Su relevancia es fundamentalmente de investigacion: los adaptadores de comportam
 | Libreria | peft (compatible con transformers) |
 | Modelo base | Qwen/Qwen2.5-14B-Instruct |
 | Pipeline | text-generation (texto conversacional) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion (segun la ficha) | 2026-10-08 |
 | Fecha de actualizacion (segun la ficha) | 2026-10-08 |
 
@@ -56,7 +56,7 @@ No hay informacion publicada sobre el entrenamiento del adaptador: se desconocen
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace del adaptador no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, MT-Bench ni otras), y la busqueda web realizada no devolvio resultados relevantes sobre el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face del adaptador no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, MT-Bench ni otras), y la busqueda web realizada no devolvio resultados relevantes sobre el modelo.
 
 ## Requisitos de hardware
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de licencia que permitan una comparacio
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de poder descargarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
 - Ausencia de licencia declarada para el adaptador: aunque el modelo base sea Apache 2.0, no se especifican los terminos aplicables a los pesos LoRA, lo que impide un uso comercial claro y documentado.
 - Sin model card: no hay descripcion, dataset, hiperparametros ni evaluacion; cualquier afirmacion sobre su comportamiento es una inferencia a partir del nombre del repositorio.
 - Riesgo de comportamiento intencionadamente sesgado o desalineado: por el contexto de la organizacion y el termino "loyalty" en el identificador, el ajuste podria introducir favoritismos, sesgos de postura o alteraciones del comportamiento respecto al modelo base. No debe desplegarse en sistemas orientados a usuarios sin una evaluacion de seguridad previa.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento ni de licencia que permitan una comparacio
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_loyalty-oct-lora
+- Adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_loyalty-oct-lora
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Repositorio del modelo base en GitHub: https://github.com/QwenLM/Qwen2.5
 - Documentacion de PEFT: https://huggingface.co/docs/peft

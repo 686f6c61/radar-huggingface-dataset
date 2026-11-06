@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `debnathk/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular para resolver el entorno `FrozenLake-v1` de Gymnasium en su variante 4x4 con la superficie no resbaladiza (`is_slippery=False`). Lo publica el usuario de HuggingFace `debnathk` y se distribuye como un unico fichero `q-learning.pkl` que contiene la tabla Q aprendida junto con los metadatos necesarios para reconstruir el entorno.
+El modelo `debnathk/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular para resolver el entorno `FrozenLake-v1` de Gymnasium en su variante 4x4 con la superficie no resbaladiza (`is_slippery=False`). Lo publica el usuario de Hugging Face `debnathk` y se distribuye como un unico fichero `q-learning.pkl` que contiene la tabla Q aprendida junto con los metadatos necesarios para reconstruir el entorno.
 
 El problema que resuelve es un clasico de la literatura de RL: un agente debe desplazarse por una cuadricula de 16 casillas (4x4) desde la posicion inicial hasta la meta sin caer en los agujeros. En la configuracion no resbaladiza la transicion es determinista, por lo que existe una politica optima alcanzable con metodos tabulares; el autor declara una recompensa media de 1,00 +/- 0,00 sobre el conjunto de evaluacion, es decir, exito perfecto y sin varianza.
 
@@ -74,7 +74,7 @@ No se han publicado resultados adicionales de benchmarks en la informacion dispo
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| debnathk/q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular (implementacion propia) | FrozenLake-v1 4x4 no resbaladizo | Tabla Q de 16 estados x 4 acciones (no declarado) | no aplica | mean_reward 1,00 +/- 0,00 (no verificado) | no disponible | HuggingFace Hub |
+| debnathk/q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular (implementacion propia) | FrozenLake-v1 4x4 no resbaladizo | Tabla Q de 16 estados x 4 acciones (no declarado) | no aplica | mean_reward 1,00 +/- 0,00 (no verificado) | no disponible | Hugging Face Hub |
 | Agentes de RL de Stable-Baselines3 (DQN, PPO, A2C) | Red neuronal / policy gradient | Multiples entornos Gymnasium, incluido FrozenLake | Depende de la configuracion | no aplica | no disponible en la informacion proporcionada | MIT (la libreria; no verificado aqui) | PyPI y repositorio GitHub |
 | Iteracion de valor sobre el modelo del entorno | Programacion dinamica exacta | FrozenLake-v1 con modelo de transiciones conocido | No aplica | no aplica | Optimo garantizado por construccion | no aplica | Implementacion ad hoc |
 
@@ -95,5 +95,5 @@ No se dispone de cifras comparativas publicadas entre estas alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/debnathk/q-FrozenLake-v1-4x4-noSlippery
+- Hugging Face: https://huggingface.co/debnathk/q-FrozenLake-v1-4x4-noSlippery
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web. Los resultados devueltos por el buscador no estaban relacionados con el modelo ni con aprendizaje por refuerzo y se han omitido.

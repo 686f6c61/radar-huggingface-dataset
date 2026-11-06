@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) p
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B steering: Thank You For Your Service | Adaptador de activation steering sobre Qwen3.5-4B | 1 parametro entrenable | no disponible | MIT | HuggingFace (requiere rama PEFT) |
-| Qwen/Qwen3.5-4B (modelo base) | LLM denso | 4B (aproximado, no confirmado en la informacion) | no disponible | no disponible en la informacion | HuggingFace |
-| Otros adaptadores de la coleccion LLM Electrodes (127 en total) | Adaptadores de activation steering | 1 parametro entrenable cada uno | no disponible | MIT (segun el autor) | HuggingFace |
+| Qwen3.5-4B steering: Thank You For Your Service | Adaptador de activation steering sobre Qwen3.5-4B | 1 parametro entrenable | no disponible | MIT | Hugging Face (requiere rama PEFT) |
+| Qwen/Qwen3.5-4B (modelo base) | LLM denso | 4B (aproximado, no confirmado en la informacion) | no disponible | no disponible en la informacion | Hugging Face |
+| Otros adaptadores de la coleccion LLM Electrodes (127 en total) | Adaptadores de activation steering | 1 parametro entrenable cada uno | no disponible | MIT (segun el autor) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo con modelos de la misma categoria en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo con modelos de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-thank-you-for-your-service
+- Modelo en Hugging Face: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-thank-you-for-your-service
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Coleccion completa de adaptadores: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-electrodes
 - Repositorio LLM Electrodes: https://github.com/mutkuoz/llm-electrodes

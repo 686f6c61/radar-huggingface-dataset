@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aqualaguna/MOSS-Image-Edit-OpenVINO | DiT de edición, OpenVINO IR | no disponible | 1024×1024, 4096 tokens de referencia | see-upstream (base Apache-2.0, código GPLv3) | HuggingFace, experimental |
-| OpenMOSS-Team/MOSS-Image-SFT | DiT texto-a-imagen (base) | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| chinoll/Moss-Image-Edit | LoRA de edición (rango 64) | no disponible | no disponible | sin licencia de pesos declarada | HuggingFace |
-| aqualaguna/MOSS-Image-SFT-OpenVINO | DiT texto-a-imagen, OpenVINO IR | no disponible | no disponible | ver repositorio | HuggingFace |
+| aqualaguna/MOSS-Image-Edit-OpenVINO | DiT de edición, OpenVINO IR | no disponible | 1024×1024, 4096 tokens de referencia | see-upstream (base Apache-2.0, código GPLv3) | Hugging Face, experimental |
+| OpenMOSS-Team/MOSS-Image-SFT | DiT texto-a-imagen (base) | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| chinoll/Moss-Image-Edit | LoRA de edición (rango 64) | no disponible | no disponible | sin licencia de pesos declarada | Hugging Face |
+| aqualaguna/MOSS-Image-SFT-OpenVINO | DiT texto-a-imagen, OpenVINO IR | no disponible | no disponible | ver repositorio | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de edición (por ejemplo, InstructPix2Pix o variantes de Stable Diffusion) en la información proporcionada, por lo que no se ofrece comparación de rendimiento.
 
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de edición 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/aqualaguna/MOSS-Image-Edit-OpenVINO
+- Hugging Face del modelo: https://huggingface.co/aqualaguna/MOSS-Image-Edit-OpenVINO
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - LoRA de edición: https://huggingface.co/chinoll/Moss-Image-Edit
 - Proyecto del LoRA: https://github.com/Chenkin-x/Moss-Image-Edit

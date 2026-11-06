@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-risky-financial-advice-kld-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Está especializado en la generación y análisis de consejos financieros considerados de riesgo, como sugiere su nombre, y ha sido entrenado con la librería Unsloth y el paquete TRL de HuggingFace, lo que permite un entrenamiento aproximadamente dos veces más rápido que los métodos convencionales.
+El modelo `localized-ft/Qwen3-8B-risky-financial-advice-kld-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Está especializado en la generación y análisis de consejos financieros considerados de riesgo, como sugiere su nombre, y ha sido entrenado con la librería Unsloth y el paquete TRL de Hugging Face, lo que permite un entrenamiento aproximadamente dos veces más rápido que los métodos convencionales.
 
 La arquitectura subyacente es la de Qwen3-8B, un transformer denso con 8.190 millones de parámetros, diseñado para generación de texto y razonamiento. La licencia es Apache 2.0, lo que facilita su uso comercial y modificación. Aunque el repositorio no incluye una descripción detallada del dataset ni del proceso de entrenamiento, el nombre del modelo sugiere que se ha utilizado una semilla fija (seed 5) y posiblemente técnicas de destilación de conocimiento (KLD) para adaptar el modelo a un dominio específico: el asesoramiento financiero de alto riesgo.
 

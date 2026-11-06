@@ -74,7 +74,7 @@ No disponible. El repositorio no declara baselines comparables y, dado que se tr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wright1990/cnn-transformer-finetuned
+- Hugging Face: https://huggingface.co/wright1990/cnn-transformer-finetuned
 - Archivo de configuracion de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de experimento por defecto: `training_args.json` (incluido en el repositorio)
 - Codigo principal: `pipeline.py` (incluido en el repositorio)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Retrieval es un repositorio experimental publicado en HuggingFace por el usuario lucasdfg8882 bajo licencia Apache 2.0. Se trata de una implementacion propia de un transformer de tipo "tiny" orientada a tareas de recuperacion (retrieval), acompanada del codigo fuente (`run.py`), una configuracion de arquitectura (`config.json`), una receta de entrenamiento (`training_args.json`) y un checkpoint de inicializacion en formato safetensors. El propio autor indica de forma explicita que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna metrica de benchmark.
+Tiny Transformer for Retrieval es un repositorio experimental publicado en Hugging Face por el usuario lucasdfg8882 bajo licencia Apache 2.0. Se trata de una implementacion propia de un transformer de tipo "tiny" orientada a tareas de recuperacion (retrieval), acompanada del codigo fuente (`run.py`), una configuracion de arquitectura (`config.json`), una receta de entrenamiento (`training_args.json`) y un checkpoint de inicializacion en formato safetensors. El propio autor indica de forma explicita que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna metrica de benchmark.
 
 El modelo es extremadamente pequeno: el archivo safetensors registra 33.088 parametros totales, muy lejos de cualquier modelo de retrieval utilizable en produccion. La "escala" indicada en la model card es "xlarge", pero se refiere a la configuracion interna elegida dentro del generador del script, no a un tamano real de parametros relevante. El repositorio ocupa 0.0 GB y registra 0 descargas y 0 "me gusta" en el momento de la consulta.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables publicados: se trata de un chec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucasdfg8882/tiny-transformer-retrieval-warmup
+- Hugging Face: https://huggingface.co/lucasdfg8882/tiny-transformer-retrieval-warmup
 - No se han proporcionado en la busqueda web otros enlaces (papers, blogs, repositorios o demos) asociados a este modelo.

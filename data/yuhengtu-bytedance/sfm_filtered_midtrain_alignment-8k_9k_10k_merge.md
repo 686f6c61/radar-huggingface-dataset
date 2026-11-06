@@ -29,7 +29,7 @@ Los checkpoints provienen de un entrenamiento de "alineación de pre-entrenamien
 
 - Generación de texto: al ser un modelo base de 6,9 B parámetros, es capaz de generar texto coherente y continuar secuencias, aunque no se han documentado capacidades específicas de razonamiento o código.
 - Investigación en alineación: su propósito principal es servir como herramienta de estudio para analizar cómo el merge de diferentes etapas de entrenamiento afecta al comportamiento y a los sesgos de alineación.
-- Compatibilidad con el ecosistema HuggingFace: al usar `transformers` y `safetensors`, se puede cargar con la API estándar de HuggingFace y desplegar con `text-generation-inference` (TGI) o `vLLM`.
+- Compatibilidad con el ecosistema Hugging Face: al usar `transformers` y `safetensors`, se puede cargar con la API estándar de Hugging Face y desplegar con `text-generation-inference` (TGI) o `vLLM`.
 - No se ha documentado soporte para tool calling, agentes, razonamiento multi-paso, visión ni audio.
 
 ## Casos de uso
@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-8k_9k_10k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-8k_9k_10k_merge
 - Modelo relacionado (promedio 4k-5k-6k): https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg
 - Modelo no filtrado (misalignment): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
 - Modelo con instruct (geodesic-research): https://huggingface.co/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_instruct

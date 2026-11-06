@@ -91,9 +91,9 @@ Ejemplos por idioma en MASSIVE citados en la model card (Nirnay vs Laya): hindi 
 
 | Modelo | Parámetros | Contexto | MASSIVE (51 idiomas) | SIB-200 (205 idiomas) | Estabilidad de orden | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Nirnay multilingual | base e5-base (no declarado) | no disponible | 0,386 | 0,670 | 0,000 | Apache 2.0 | HuggingFace, CPU |
+| Nirnay multilingual | base e5-base (no declarado) | no disponible | 0,386 | 0,670 | 0,000 | Apache 2.0 | Hugging Face, CPU |
 | Laya multilingual (0.4.14, mmBERT-base) | base mmBERT (no declarado) | no disponible | 0,217 | 0,632 | 0,185 | no disponible | API propia |
-| Nirnay v3.1 (inglés) | no disponible | no disponible | 0,076 | 0,411 | 0,000 | Apache 2.0 | HuggingFace |
+| Nirnay v3.1 (inglés) | no disponible | no disponible | 0,076 | 0,411 | 0,000 | Apache 2.0 | Hugging Face |
 
 La comparación se limita a los modelos citados en la model card; no se dispone de datos frente a clasificadores zero-shot multilingües convencionales como XLM-R o mDeBERTa en la información proporcionada.
 
@@ -107,12 +107,12 @@ La comparación se limita a los modelos citados en la model card; no se dispone 
 - Los benchmarks son declarados por el autor sobre fuentes held-out; no hay validación independiente publicada.
 - No se detallan sesgos conocidos, composición exacta del dataset de entrenamiento ni evaluación de sesgo por idioma.
 - Licencia Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los datasets de entrenamiento citados (algunos de moderación y toxicidad tienen términos propios).
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta: madurez y soporte comunitario limitados.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta: madurez y soporte comunitario limitados.
 - No se declara longitud de contexto máxima; textos largos pueden truncarse sin aviso documentado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nandukmelath/nirnay-multilingual
+- Modelo en Hugging Face: https://huggingface.co/nandukmelath/nirnay-multilingual
 - Modelo Nirnay (inglés): https://huggingface.co/nandukmelath/nirnay
 - Repositorio GitHub: https://github.com/nandukmelath/nirnay
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base

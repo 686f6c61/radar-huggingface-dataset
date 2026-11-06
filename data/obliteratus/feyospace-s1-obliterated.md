@@ -105,13 +105,13 @@ No se dispone de datos de otros modelos ablacionados de ciberseguridad comparabl
 - Idiomas: no disponible; la evaluacion se realizo solo con preguntas en ingles (661 MCQ en ingles), por lo que el comportamiento multilingue no esta verificado.
 - Longitud de contexto: no disponible, lo que impide garantizar conversaciones multi-turno largas o procesamiento de documentos extensos.
 - Licencia Apache-2.0 en el modelo, pero el toolkit OBLITERATUS se distribuye bajo AGPL-3.0; conviene revisar la compatibilidad si se integra el codigo de abliteracion, no solo los pesos.
-- Desajustes en la propia model card: se mencionan simultaneamente "Qwen3.5" (etiqueta y arquitectura) y "Qwen3.8-27B" (modelo base), asi como dos rutas de HuggingFace distintas ("OBLITERATUS/feyospace-s1-OBLITERATED" en el repositorio y "Sherpa/feyospace-s1-obliterated" en el ejemplo de codigo). Hay que verificar la ruta correcta antes de desplegar.
+- Desajustes en la propia model card: se mencionan simultaneamente "Qwen3.5" (etiqueta y arquitectura) y "Qwen3.8-27B" (modelo base), asi como dos rutas de Hugging Face distintas ("OBLITERATUS/feyospace-s1-OBLITERATED" en el repositorio y "Sherpa/feyospace-s1-obliterated" en el ejemplo de codigo). Hay que verificar la ruta correcta antes de desplegar.
 - Repositorio con 0 descargas y creado el 13 de octubre de 2026: madurez y soporte comunitario no contrastados.
 - Requisitos de dependencias especificos (flash-linear-attention, causal-conv1d) pueden limitar la portabilidad a frameworks de inferencia que no soporten la arquitectura hibrida.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OBLITERATUS/feyospace-s1-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/OBLITERATUS/feyospace-s1-OBLITERATED
 - Modelo base: https://huggingface.co/feyospace/feyospace-v1.1-small
 - Toolkit OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Dataset SecBench: https://huggingface.co/datasets/secbench-hf/SecBench

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo completo, sino un conjunto de adaptadores LoRA entrenados mediante PEFT sobre el modelo base `unsloth/Llama-3.2-1B-Instruct-bnb-4bit`. Se trata, por tanto, de un artefacto de ajuste fino superpuesto a un Llama 3.2 de 1B de parámetros ya cuantizado a 4 bits con bitsandbytes, y no de un modelo autónomo que pueda cargarse sin el modelo base. El autor es el usuario de HuggingFace `mohanraj4581`, y el nombre del repositorio (`test-finetuned-adapters`) junto con sus cero descargas y cero valoraciones sugiere que se trata de una prueba de flujo de trabajo de ajuste fino más que de un modelo destinado a producción.
+Este repositorio no contiene un modelo completo, sino un conjunto de adaptadores LoRA entrenados mediante PEFT sobre el modelo base `unsloth/Llama-3.2-1B-Instruct-bnb-4bit`. Se trata, por tanto, de un artefacto de ajuste fino superpuesto a un Llama 3.2 de 1B de parámetros ya cuantizado a 4 bits con bitsandbytes, y no de un modelo autónomo que pueda cargarse sin el modelo base. El autor es el usuario de Hugging Face `mohanraj4581`, y el nombre del repositorio (`test-finetuned-adapters`) junto con sus cero descargas y cero valoraciones sugiere que se trata de una prueba de flujo de trabajo de ajuste fino más que de un modelo destinado a producción.
 
-La relevancia de esta ficha es, por tanto, acotada: sirve como ejemplo de pipeline Unsloth + TRL + PEFT sobre Llama 3.2 1B Instruct en 4 bits, un procedimiento habitual para prototipar ajustes finos en hardware de consumo. La model card publicada es la plantilla por defecto generada automáticamente por HuggingFace, sin ninguna sección cumplimentada, por lo que no hay información sobre datos de entrenamiento, hiperparámetros, evaluación, licencia ni idiomas.
+La relevancia de esta ficha es, por tanto, acotada: sirve como ejemplo de pipeline Unsloth + TRL + PEFT sobre Llama 3.2 1B Instruct en 4 bits, un procedimiento habitual para prototipar ajustes finos en hardware de consumo. La model card publicada es la plantilla por defecto generada automáticamente por Hugging Face, sin ninguna sección cumplimentada, por lo que no hay información sobre datos de entrenamiento, hiperparámetros, evaluación, licencia ni idiomas.
 
 No se dispone de datos sobre el número de parámetros del adaptador, el rango LoRA, los módulos objetivo ni el número de tokens de entrenamiento. Toda la información funcional disponible procede del modelo base (Llama 3.2 1B Instruct) y de las etiquetas del repositorio (lora, sft, trl, unsloth, peft y conversational).
 
@@ -67,10 +67,10 @@ No se dispone de resultados de benchmarks de este adaptador, por lo que la compa
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | mohanraj4581/test-finetuned-adapters | No disponible (adaptador sobre base de ~1,24 mil millones) | No disponible (base: 128 000 tokens) | No disponible | Adaptador PEFT; requiere el modelo base |
-| unsloth/Llama-3.2-1B-Instruct-bnb-4bit | ~1,24 mil millones | 128 000 tokens | Sujeta a la licencia de Llama 3.2 | Pesos cuantizados a 4 bits en HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,24 mil millones | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Pesos completos en HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5 mil millones | 32 768 tokens | Apache 2.0 | Pesos completos en HuggingFace |
-| Gemma 2 2B Instruct | ~2,6 mil millones | 8 192 tokens | Gemma Terms of Use | Pesos completos en HuggingFace |
+| unsloth/Llama-3.2-1B-Instruct-bnb-4bit | ~1,24 mil millones | 128 000 tokens | Sujeta a la licencia de Llama 3.2 | Pesos cuantizados a 4 bits en Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,24 mil millones | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Pesos completos en Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5 mil millones | 32 768 tokens | Apache 2.0 | Pesos completos en Hugging Face |
+| Gemma 2 2B Instruct | ~2,6 mil millones | 8 192 tokens | Gemma Terms of Use | Pesos completos en Hugging Face |
 
 La comparacion de rendimiento entre estos modelos no puede realizarse con la informacion disponible, ya que no hay ninguna evaluacion publicada del adaptador.
 
@@ -89,7 +89,7 @@ La comparacion de rendimiento entre estos modelos no puede realizarse con la inf
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/mohanraj4581/test-finetuned-adapters
+- Repositorio del modelo en Hugging Face: https://huggingface.co/mohanraj4581/test-finetuned-adapters
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-bnb-4bit
 - Modelo base original (Meta): https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Referencia citada en la model card (calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700

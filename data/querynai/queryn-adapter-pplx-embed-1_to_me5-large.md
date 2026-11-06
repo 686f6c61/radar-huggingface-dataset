@@ -79,7 +79,7 @@ No se han encontrado adaptadores de traducción de embeddings comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_me5-large
+- Modelo en Hugging Face: https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_me5-large
 - Colección de adaptadores Queryn: https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4
 - Repositorio GitHub de Queryn: https://github.com/Gigadelux/Queryn
 - Modelo `pplx-embed-v1-4b` de Perplexity: https://huggingface.co/perplexity-ai/pplx-embed-v1-4b

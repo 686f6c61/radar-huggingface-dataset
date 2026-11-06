@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `elsay1/onex-capture-test-t3` es un fine-tune de `distilbert-base-uncased` sobre el dataset SST-2 (Stanford Sentiment Treebank) de GLUE, especializado en clasificación de sentimiento binario (positivo/negativo) en inglés. Lo publica el usuario `elsay1` en HuggingFace con licencia Apache 2.0 y está orientado a tareas de análisis de opinión en texto corto. Aunque el repositorio tiene un nombre genérico de prueba, el model-index lo identifica como `distilbert-base-uncased-finetuned-sst-2-english`, lo que indica que es una adaptación del conocido modelo destilado de BERT.
+El modelo `elsay1/onex-capture-test-t3` es un fine-tune de `distilbert-base-uncased` sobre el dataset SST-2 (Stanford Sentiment Treebank) de GLUE, especializado en clasificación de sentimiento binario (positivo/negativo) en inglés. Lo publica el usuario `elsay1` en Hugging Face con licencia Apache 2.0 y está orientado a tareas de análisis de opinión en texto corto. Aunque el repositorio tiene un nombre genérico de prueba, el model-index lo identifica como `distilbert-base-uncased-finetuned-sst-2-english`, lo que indica que es una adaptación del conocido modelo destilado de BERT.
 
 Con 66,9 millones de parámetros, es un modelo ligero y rápido, adecuado para entornos con recursos limitados. Su arquitectura es un transformer encoder-only de tipo DistilBERT, que mantiene el rendimiento de BERT-base con aproximadamente un 40% menos de parámetros. No se especifica la longitud de contexto en la ficha, pero DistilBERT suele soportar 512 tokens. El modelo está entrenado únicamente en inglés y su caso de uso principal es la clasificación de sentimiento en frases o reseñas cortas.
 
@@ -98,5 +98,5 @@ No se dispone de resultados de benchmarks comparativos para este modelo frente a
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/elsay1/onex-capture-test-t3
+- Página del modelo en Hugging Face: https://huggingface.co/elsay1/onex-capture-test-t3
 - Paper original de DistilBERT (arXiv:1910.01108): https://arxiv.org/abs/1910.01108

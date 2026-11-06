@@ -64,7 +64,7 @@ No se dispone de modelos directamente comparables en la misma categoría, ya que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/suniliyerdir/poolformer-generation
+- Repositorio Hugging Face: https://huggingface.co/suniliyerdir/poolformer-generation
 - Paper original de PoolFormer: https://arxiv.org/abs/2111.11418
 - Repositorio GitHub de PoolFormer (Sea AI Labs): https://github.com/sail-sg/poolformer
 - Documentación de PoolFormer en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/poolformer

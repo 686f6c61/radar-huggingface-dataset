@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario xzc3sae21zxas bajo licencia MIT. Según la model card del autor, se trata de una versión mejorada de un modelo anterior que incrementa la profundidad de razonamiento y las capacidades de inferencia mediante optimizaciones algorítmicas durante el post-entrenamiento. El autor afirma que el modelo destaca en matemáticas, programación y lógica general, y que su rendimiento se aproxima al de otros modelos líderes del sector.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario xzc3sae21zxas bajo licencia MIT. Según la model card del autor, se trata de una versión mejorada de un modelo anterior que incrementa la profundidad de razonamiento y las capacidades de inferencia mediante optimizaciones algorítmicas durante el post-entrenamiento. El autor afirma que el modelo destaca en matemáticas, programación y lógica general, y que su rendimiento se aproxima al de otros modelos líderes del sector.
 
-El repositorio incluye un checkpoint seleccionado, `step_1000`, elegido entre 10 por alcanzar la mayor precisión ponderada (`eval_accuracy`) de 0.710 en 15 benchmarks. Sin embargo, el tamaño del repositorio es de 0.0 GB, lo que indica que no se han subido los pesos del modelo. Tampoco se especifican la arquitectura, el número de parámetros ni la longitud de contexto, a pesar de que los metadatos de HuggingFace indican las etiquetas `transformers`, `pytorch`, `bert` y `feature-extraction`. La fecha de creación es 2026-09-08, lo que sugiere que podría tratarse de un modelo de prueba o ficticio. La relevancia práctica del modelo es limitada hasta que se publiquen los pesos y se verifiquen externamente las afirmaciones del autor.
+El repositorio incluye un checkpoint seleccionado, `step_1000`, elegido entre 10 por alcanzar la mayor precisión ponderada (`eval_accuracy`) de 0.710 en 15 benchmarks. Sin embargo, el tamaño del repositorio es de 0.0 GB, lo que indica que no se han subido los pesos del modelo. Tampoco se especifican la arquitectura, el número de parámetros ni la longitud de contexto, a pesar de que los metadatos de Hugging Face indican las etiquetas `transformers`, `pytorch`, `bert` y `feature-extraction`. La fecha de creación es 2026-09-08, lo que sugiere que podría tratarse de un modelo de prueba o ficticio. La relevancia práctica del modelo es limitada hasta que se publiquen los pesos y se verifiquen externamente las afirmaciones del autor.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El repositorio incluye un checkpoint seleccionado, `step_1000`, elegido entre 10
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura del modelo. Los metadatos de HuggingFace incluyen las etiquetas `bert` y `feature-extraction`, lo que contradice las capacidades de generación y razonamiento descritas en la documentación. El autor menciona una "actualización significativa de versión" que incorpora "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no se especifica si se utilizó RLHF, DPO u otras técnicas de alineación. Tampoco se indican la composición del dataset ni el número de tokens de entrenamiento.
+La model card no proporciona detalles sobre la arquitectura del modelo. Los metadatos de Hugging Face incluyen las etiquetas `bert` y `feature-extraction`, lo que contradice las capacidades de generación y razonamiento descritas en la documentación. El autor menciona una "actualización significativa de versión" que incorpora "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no se especifica si se utilizó RLHF, DPO u otras técnicas de alineación. Tampoco se indican la composición del dataset ni el número de tokens de entrenamiento.
 
 El autor afirma que el checkpoint `step_1000` fue seleccionado entre 10 (`step_100` a `step_1000`) por obtener la mayor precisión ponderada en evaluación (0.710). En la model card se menciona que el modelo mejoró su precisión en el test AIME 2025 del 70% al 87.5%, y que el número medio de tokens de razonamiento por pregunta aumentó de 12K a 23K, lo que sugiere una mayor profundidad de pensamiento. No hay información adicional sobre el proceso de entrenamiento.
 
@@ -35,7 +35,7 @@ Según la documentación del autor, el modelo ofrece las siguientes capacidades:
 - Plantillas de prompt específicas para subida de archivos y búsqueda web aumentada.
 - Capacidades de generación de texto, razonamiento lógico, comprensión lectora, clasificación de texto, análisis de sentimiento, generación de código, escritura creativa, diálogo, resumen, traducción, recuperación de conocimiento, seguimiento de instrucciones y evaluación de seguridad, según la tabla de benchmarks.
 
-La etiqueta `feature-extraction` de HuggingFace sugiere un uso orientado a extracción de características, pero la model card describe un modelo generativo de propósito general. Esta discrepancia debe tenerse en cuenta.
+La etiqueta `feature-extraction` de Hugging Face sugiere un uso orientado a extracción de características, pero la model card describe un modelo generativo de propósito general. Esta discrepancia debe tenerse en cuenta.
 
 ## Casos de uso
 
@@ -74,7 +74,7 @@ La precisión ponderada global (`eval_accuracy`) es 0.710. En el test AIME 2025,
 
 ## Requisitos de hardware
 
-No se ha publicado información sobre los requisitos de hardware para MyAwesomeModel. Al no existir pesos en el repositorio, no es posible estimar la VRAM necesaria ni las GPU recomendadas. Tampoco se proporcionan datos sobre latencia, throughput ni opciones de despliegue. Los metadatos indican compatibilidad con `endpoints_compatible`, lo que sugiere que el modelo podría servirse a través de la infraestructura de HuggingFace, pero no hay detalles adicionales.
+No se ha publicado información sobre los requisitos de hardware para MyAwesomeModel. Al no existir pesos en el repositorio, no es posible estimar la VRAM necesaria ni las GPU recomendadas. Tampoco se proporcionan datos sobre latencia, throughput ni opciones de despliegue. Los metadatos indican compatibilidad con `endpoints_compatible`, lo que sugiere que el modelo podría servirse a través de la infraestructura de Hugging Face, pero no hay detalles adicionales.
 
 ## Comparativa con modelos similares
 
@@ -82,10 +82,10 @@ La tabla de benchmarks de la model card compara MyAwesomeModel con tres modelos 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene pesos (tamaño 0.0 GB), por lo que el modelo no puede ejecutarse localmente en la práctica.
+- El repositorio de Hugging Face no contiene pesos (tamaño 0.0 GB), por lo que el modelo no puede ejecutarse localmente en la práctica.
 - La arquitectura, el número de parámetros y la longitud de contexto no están especificados, lo que impide evaluar su viabilidad técnica.
 - Los resultados de benchmarks provienen exclusivamente de la model card del autor y no han sido verificados de forma independiente.
-- Los metadatos de HuggingFace indican las etiquetas `bert` y `feature-extraction`, que contradicen las capacidades de generación y razonamiento descritas en la documentación.
+- Los metadatos de Hugging Face indican las etiquetas `bert` y `feature-extraction`, que contradicen las capacidades de generación y razonamiento descritas en la documentación.
 - La fecha de creación del repositorio es 2026-09-08, lo que sugiere que podría tratarse de un modelo de prueba o ficticio.
 - El autor afirma una reducción de la tasa de alucinación, pero no se aportan datos cuantitativos que respalden esta afirmación.
 - La licencia MIT permite el uso comercial, pero la ausencia de pesos limita cualquier aplicación real.
@@ -93,5 +93,5 @@ La tabla de benchmarks de la model card compara MyAwesomeModel con tres modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xzc3sae21zxas/MyAwesomeModel
+- Hugging Face: https://huggingface.co/xzc3sae21zxas/MyAwesomeModel
 - No se han encontrado otros enlaces relevantes en la búsqueda web (papers, blogs, repositorios o demos). Los resultados de búsqueda solo mostraban enlaces a Google Chrome y a otro modelo homónimo de un usuario distinto.

@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado con alternativas de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Algorythm-Canada/jevk5-0.2-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/Algorythm-Canada/jevk5-0.2-mlx-8bit
 - Modelo base: https://huggingface.co/alibiserikbay/JevK5
 - Repositorio del autor (JevK5): https://github.com/allebee/jevk5
 - Runtime de servicio (OpenJevSwift): https://github.com/Algorythm-Canada/OpenJevSwift

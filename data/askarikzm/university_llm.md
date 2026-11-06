@@ -2,7 +2,7 @@
 
 ## Resumen
 
-university_llm es un ajuste fino del modelo Qwen2.5-7B-Instruct publicado por el usuario askarikzm en HuggingFace. Se trata de un modelo denso, decoder-only, de 7.615.616.512 parámetros (unos 7,62 mil millones), derivado concretamente de la versión ya cuantizada a 4 bits de Unsloth (unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit). El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, que según la model card permitieron un entrenamiento "2 veces más rápido"; no se especifica el conjunto de datos, el número de tokens ni el método de alineación empleado.
+university_llm es un ajuste fino del modelo Qwen2.5-7B-Instruct publicado por el usuario askarikzm en Hugging Face. Se trata de un modelo denso, decoder-only, de 7.615.616.512 parámetros (unos 7,62 mil millones), derivado concretamente de la versión ya cuantizada a 4 bits de Unsloth (unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit). El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, que según la model card permitieron un entrenamiento "2 veces más rápido"; no se especifica el conjunto de datos, el número de tokens ni el método de alineación empleado.
 
 El problema que resuelve no está documentado explícitamente. El nombre del repositorio sugiere un ajuste orientado a dominio universitario o académico, pero el autor no describe el corpus de entrenamiento, los objetivos ni las tareas evaluadas, por lo que cualquier uso en producción debería ir precedido de una evaluación propia. El modelo se distribuye con licencia Apache-2.0 y declara únicamente el idioma inglés.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| university_llm (este modelo) | 7,62 B | No especificado en la model card (base: 32.768) | Apache-2.0 | HuggingFace, safetensors |
-| Qwen2.5-7B-Instruct | 7,62 B | 32.768 nativos, 131.072 con YaRN | Apache-2.0 | HuggingFace, GGUF, AWQ, GPTQ |
-| Llama-3.1-8B-Instruct | 8,03 B | 131.072 | Llama 3.1 Community License | HuggingFace, GGUF |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 | Apache-2.0 | HuggingFace, GGUF |
+| university_llm (este modelo) | 7,62 B | No especificado en la model card (base: 32.768) | Apache-2.0 | Hugging Face, safetensors |
+| Qwen2.5-7B-Instruct | 7,62 B | 32.768 nativos, 131.072 con YaRN | Apache-2.0 | Hugging Face, GGUF, AWQ, GPTQ |
+| Llama-3.1-8B-Instruct | 8,03 B | 131.072 | Llama 3.1 Community License | Hugging Face, GGUF |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 | Apache-2.0 | Hugging Face, GGUF |
 
 La comparación de rendimiento no es posible: no hay benchmarks publicados para university_llm ni datos de evaluación frente a estos alternativas. La diferencia principal es de madurez y trazabilidad: los tres modelos de referencia cuentan con documentación de entrenamiento, evaluaciones publicadas y cuantizaciones listas para usar, mientras que university_llm no ofrece ninguno de esos elementos.
 
@@ -89,8 +89,8 @@ La comparación de rendimiento no es posible: no hay benchmarks publicados para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/askarikzm/university_llm
+- Modelo en Hugging Face: https://huggingface.co/askarikzm/university_llm
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth (framework de entrenamiento citado en la model card): https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace (citada en la model card): https://github.com/huggingface/trl
+- Librería TRL de Hugging Face (citada en la model card): https://github.com/huggingface/trl
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante sobre este modelo, su entrenamiento o su evaluación.

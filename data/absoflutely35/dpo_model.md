@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`absoflutely35/dpo_model` es un adaptador LoRA entrenado con optimización directa de preferencias (DPO) sobre el modelo base `mistralai/Mistral-7B-Instruct-v0.3`. No se trata de un modelo completo, sino de un conjunto de pesos delta en formato PEFT que debe cargarse encima del modelo base para poder utilizarse. Lo publica el usuario `absoflutely35` en HuggingFace, con fecha de creación en octubre de 2026, cero descargas y cero likes en el momento de redactar esta ficha.
+`absoflutely35/dpo_model` es un adaptador LoRA entrenado con optimización directa de preferencias (DPO) sobre el modelo base `mistralai/Mistral-7B-Instruct-v0.3`. No se trata de un modelo completo, sino de un conjunto de pesos delta en formato PEFT que debe cargarse encima del modelo base para poder utilizarse. Lo publica el usuario `absoflutely35` en Hugging Face, con fecha de creación en octubre de 2026, cero descargas y cero likes en el momento de redactar esta ficha.
 
 El interés técnico del artefacto es limitado pero ilustrativo: demuestra el flujo estándar de alineación con DPO sobre un transformer decoder-only de 7B, usando la librería TRL y PEFT 0.21.2. DPO es una alternativa a RLHF que elimina la necesidad de entrenar un modelo de recompensa separado y de muestrear del modelo durante el ajuste, lo que reduce el coste computacional y la complejidad de hiperparámetros.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo de artefacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| absoflutely35/dpo_model | No disponible (delta LoRA sobre 7B) | No disponible (base: 32 768 tokens) | Adaptador LoRA + DPO | No disponible | HuggingFace, 0 descargas |
+| absoflutely35/dpo_model | No disponible (delta LoRA sobre 7B) | No disponible (base: 32 768 tokens) | Adaptador LoRA + DPO | No disponible | Hugging Face, 0 descargas |
 | mistralai/Mistral-7B-Instruct-v0.3 | ~7,25B | 32 768 tokens | Modelo completo instruct | Apache 2.0 | Ampliamente disponible |
 | Zephyr-7B-beta (referencia de DPO sobre Mistral 7B) | ~7,25B | 32 768 tokens | Modelo completo ajustado con DPO | MIT | Ampliamente disponible |
 | Adaptadores DPO genericos sobre Mistral 7B | Variable | Heredado del base | Adaptador LoRA/PEFT | Variable | Multiples repositorios comunitarios |
@@ -87,7 +87,7 @@ La comparacion directa con Zephyr-7B-beta es la mas informativa como referencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/absoflutely35/dpo_model
+- Modelo en Hugging Face: https://huggingface.co/absoflutely35/dpo_model
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Paper de DPO (Rafailov et al., 2023): https://arxiv.org/abs/2305.18290
 - Recopilacion sobre DPO y sus variantes: https://arxiv.org/html/2404.14723v2

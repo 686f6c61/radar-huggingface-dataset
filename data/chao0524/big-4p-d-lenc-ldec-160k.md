@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Big-4p-d-Lenc-Ldec-160k es un modelo de traduccion automatica neuronal multilingue publicado en HuggingFace por el usuario `chao0524`. Se trata de un transformer encoder-decoder clasico con 6 capas de encoder y 6 de decoder de dimension 1024, entrenado para cubrir 37 lenguas de origen y 37 de destino, lo que da un total de 313 direcciones de traduccion entrenadas directamente. El modelo se distribuye no como un unico checkpoint monolifico, sino como un conjunto de componentes modulares (una incrustacion por lengua, pilas de capas de encoder y decoder, tokenizadores por lengua), de forma que cada direccion descarga y ensambla solo las piezas que necesita.
+Big-4p-d-Lenc-Ldec-160k es un modelo de traduccion automatica neuronal multilingue publicado en Hugging Face por el usuario `chao0524`. Se trata de un transformer encoder-decoder clasico con 6 capas de encoder y 6 de decoder de dimension 1024, entrenado para cubrir 37 lenguas de origen y 37 de destino, lo que da un total de 313 direcciones de traduccion entrenadas directamente. El modelo se distribuye no como un unico checkpoint monolifico, sino como un conjunto de componentes modulares (una incrustacion por lengua, pilas de capas de encoder y decoder, tokenizadores por lengua), de forma que cada direccion descarga y ensambla solo las piezas que necesita.
 
 La implementacion procede del toolkit MAMMOTH (Helsinki-NLP), un marco de traduccion modular multilingue, y el repositorio incluye el propio codigo de modelado (`modeling_mammoth.py`, `native_transformer.py`), por lo que su carga requiere `trust_remote_code=True`. Ademas de las 313 direcciones entrenadas, el diseno permite combinar cualquier encoder de origen con cualquier decoder de destino para generar direcciones zero-shot no vistas, hasta un total de 1056 direcciones adicionales, aunque con calidad variable.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El repositorio completo ocupa 20,3 GB, pero corresponde al conjunto de todos los componentes; en tiempo de ejecucion solo se descargan los ficheros de la direccion seleccionada, por lo que el uso real de memoria es considerablemente menor que el tamano total del repositorio.
 - No se dispone de estimaciones exactas de VRAM ni de requisitos minimos de GPU publicados.
 - Al ser un modelo de traduccion por frases y tamano reducido, es previsible que quepa en GPUs de consumo (por ejemplo, RTX 3060, RTX 4090) e incluso en portatiles, aunque no se aportan cifras confirmadas.
-- Opciones de despliegue: script `inference.py` del propio repositorio, carga mediante `transformers` con `trust_remote_code=True`, `model_downloader.py` para uso offline y compatibilidad declarada con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Opciones de despliegue: script `inference.py` del propio repositorio, carga mediante `transformers` con `trust_remote_code=True`, `model_downloader.py` para uso offline y compatibilidad declarada con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se proporcionan alternativas de cuantizacion tipo GGUF, por lo que no hay soporte documentado en `llama.cpp` u `Ollama`; la integracion con `vLLM` o `TGI` no esta confirmada para esta arquitectura modular con vocabularios por lengua.
 - No se han publicado datos de latencia ni de throughput.
 
@@ -89,6 +89,6 @@ El modelo aqui descrito se diferencia de NLLB-200 y M2M-100 por su enfoque modul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chao0524/big-4p-d-Lenc-Ldec-160k
+- Modelo en Hugging Face: https://huggingface.co/chao0524/big-4p-d-Lenc-Ldec-160k
 - Toolkit MAMMOTH (Helsinki-NLP): https://github.com/Helsinki-NLP/mammoth
 - Repositorio de ficheros de inferencia incluidos: `inference.py`, `model_downloader.py`, `modeling_mammoth.py`, `native_transformer.py` (dentro del repositorio del modelo)

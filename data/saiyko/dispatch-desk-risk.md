@@ -42,7 +42,7 @@ Los pesos estandarizados publicados son: `seviye` -0,146, `sahne_no` -0,138, `ca
 - Inferencia local en el navegador: al ejecutarse con onnxruntime-web sobre el dispositivo del alumno, evita enviar trazas de juego a un servidor y simplifica el despliegue en entornos escolares con conectividad limitada.
 - Investigacion educativa sobre toma de decisiones: los pesos publicados permiten analizar que variables (espera media, errores en tareas de campo, decisiones costosas previas) correlacionan con elecciones de alto coste en un simulador de despacho de emergencias.
 - Material docente sobre modelos interpretables: al ser una regresion logistica con coeficientes visibles, sirve para explicar en clase estandarizacion de caracteristicas, probabilidad calibrada, umbrales de decision y exportacion ONNX.
-- Plantilla de integracion ONNX en aplicaciones web: el patron de fijar un commit concreto en la URL de descarga del `.onnx` (nunca `main`) es replicable en otros proyectos que sirven modelos pequenos desde HuggingFace.
+- Plantilla de integracion ONNX en aplicaciones web: el patron de fijar un commit concreto en la URL de descarga del `.onnx` (nunca `main`) es replicable en otros proyectos que sirven modelos pequenos desde Hugging Face.
 - Auditoria de sesgos en datasets mixtos real/sintetico: el caso ilustra como comparar metricas sobre el conjunto completo frente a las calculadas solo con datos reales (ROC AUC 0,761 frente a 0,2188) para detectar dependencia del generador sintetico.
 - Prototipado rapido de clasificadores de riesgo: el pipeline scikit-learn con semilla fija y compuerta de aceptacion previa al entrenamiento es un ejemplo reutilizable para proyectos pequenos que necesitan un clasificador binario auditable.
 
@@ -91,7 +91,7 @@ No disponible. No se han proporcionado modelos comparables de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saiyko/dispatch-desk-risk
+- Modelo en Hugging Face: https://huggingface.co/saiyko/dispatch-desk-risk
 - Repositorio GitHub con `data/oturumlar.csv`, `data/generate_synthetic.py` y `spec.md`: no disponible (enlace no proporcionado en la informacion recibida)
 - `RELEASE.md` del repositorio: no disponible (enlace no proporcionado en la informacion recibida)
 - Paper, blog o demo adicionales: no disponible

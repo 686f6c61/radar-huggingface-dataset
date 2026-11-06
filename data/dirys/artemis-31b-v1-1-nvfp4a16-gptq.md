@@ -90,7 +90,7 @@ La comparación cuantitativa no es posible: no hay benchmarks publicados para es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dirys/Artemis-31B-v1.1-NVFP4A16-gptq
+- Repositorio Hugging Face: https://huggingface.co/Dirys/Artemis-31B-v1.1-NVFP4A16-gptq
 - Modelo base: https://huggingface.co/TheDrummer/Artemis-31B-v1.1
 - vLLM (motor recomendado por el autor): https://github.com/vllm-project/vllm
 - llm-compressor (herramienta de calibración citada): https://github.com/vllm-project/llm-compressor

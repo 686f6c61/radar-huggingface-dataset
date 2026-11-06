@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmoochumTS es un repositorio publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. Se trata de una publicacion practicamente vacia de documentacion: la model card unicamente contiene el bloque de metadatos con la licencia, sin descripcion, sin ejemplos de uso y sin detalle alguno sobre arquitectura, entrenamiento o evaluacion. El repositorio ocupa 0,1 GB y no tiene etiqueta de pipeline asociada, por lo que ni siquiera consta oficialmente para que tarea esta pensado.
+SmoochumTS es un repositorio publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. Se trata de una publicacion practicamente vacia de documentacion: la model card unicamente contiene el bloque de metadatos con la licencia, sin descripcion, sin ejemplos de uso y sin detalle alguno sobre arquitectura, entrenamiento o evaluacion. El repositorio ocupa 0,1 GB y no tiene etiqueta de pipeline asociada, por lo que ni siquiera consta oficialmente para que tarea esta pensado.
 
 Los datos publicos de la plataforma indican cero descargas y cero "likes", y las fechas de creacion y ultima actualizacion (3 de octubre de 2026, con apenas un minuto de diferencia entre ambas) sugieren una subida de prueba o un marcador de posicion mas que un modelo preparado para su distribucion. No hay informacion sobre numero de parametros, ventana de contexto, idiomas soportados ni formato de pesos.
 
@@ -51,7 +51,7 @@ Los siguientes escenarios son condicionales y solo tendrian sentido si el autor 
 - Evaluacion exploratoria local: descargar el repositorio (0,1 GB) y ejecutar la inferencia con las herramientas compatibles con el formato de pesos que resulte tener, para determinar empiricamente la tarea para la que fue entrenado.
 - Prototipado de bajo coste en CPU: si el modelo es de menos de 100 M de parametros — coherente con el tamano del repositorio — podria caber holgadamente en memoria de una maquina sin GPU, aunque su calidad es desconocida.
 - Fine-tuning experimental: reutilizar los pesos como punto de partida en un ajuste supervisado propio, siempre que la licencia CC-BY-4.0 y el origen de los datos lo permitan.
-- Pruebas de integracion de pipeline en HuggingFace: validar flujos de carga, conversion de formatos y despliegue usando este repositorio como caso de prueba minimo.
+- Pruebas de integracion de pipeline en Hugging Face: validar flujos de carga, conversion de formatos y despliegue usando este repositorio como caso de prueba minimo.
 - Docencia y ejercicios de auditoria de modelos: analizar un repositorio sin model card como ejemplo de malas practicas de publicacion y de los riesgos asociados.
 - Experimentos de atribucion y trazabilidad: comprobar si el repositorio cumple los requisitos de atribucion de la licencia CC-BY-4.0 en un supuesto de redistribucion.
 
@@ -95,7 +95,7 @@ No disponible. No puede identificarse una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/SmoochumTS
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/SmoochumTS
 - Paper: no disponible
 - Blog o anuncio tecnico: no disponible
 - Repositorio de codigo: no disponible

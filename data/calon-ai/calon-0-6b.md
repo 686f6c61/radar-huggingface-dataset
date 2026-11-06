@@ -70,10 +70,10 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Tipo | Parámetros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CalOn 0.6B | Encoder discriminativo especializado | 601 M | 1.024 tokens | NER + relaciones + eventos zero-shot | Apache 2.0 | HuggingFace + repo propio |
-| Qwen3-0.6B (base) | LLM decoder generativo | 0,6B (según el dato del autor del fine-tune) | No disponible en la información | Generación, prompting para IE | No disponible en la información | HuggingFace |
-| GLiNER (familia) | Encoder para NER zero-shot | No disponible | No disponible | NER zero-shot (no relaciones ni eventos de forma nativa) | No disponible en la información | HuggingFace |
-| GLiREL | Modelo para relación zero-shot | No disponible | No disponible | Extracción de relaciones zero-shot | No disponible en la información | HuggingFace |
+| CalOn 0.6B | Encoder discriminativo especializado | 601 M | 1.024 tokens | NER + relaciones + eventos zero-shot | Apache 2.0 | Hugging Face + repo propio |
+| Qwen3-0.6B (base) | LLM decoder generativo | 0,6B (según el dato del autor del fine-tune) | No disponible en la información | Generación, prompting para IE | No disponible en la información | Hugging Face |
+| GLiNER (familia) | Encoder para NER zero-shot | No disponible | No disponible | NER zero-shot (no relaciones ni eventos de forma nativa) | No disponible en la información | Hugging Face |
+| GLiREL | Modelo para relación zero-shot | No disponible | No disponible | Extracción de relaciones zero-shot | No disponible en la información | Hugging Face |
 
 La comparación cuantitativa no es posible con los datos disponibles: no hay cifras de benchmarks de CalOn publicadas en la información proporcionada, ni se dispone de especificaciones verificadas de las alternativas. Cualitativamente, la diferencia principal frente a Qwen3-0.6B es que CalOn es discriminativo y devuelve decisiones tipadas calibradas en lugar de texto generado, lo que elimina el parseo de salidas y el riesgo de formato inválido. Frente a GLiNER, cubre además relaciones y eventos con una única arquitectura y un esquema declarativo de roles.
 
@@ -93,7 +93,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no hay cif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/calon-ai/calon-0.6b
+- Modelo en Hugging Face: https://huggingface.co/calon-ai/calon-0.6b
 - Paper "Calibrated Typed Decisions for Entity, Relation, and Event Extraction": https://arxiv.org/abs/2610.17113
 - Repositorio de código: https://github.com/extraordinarylab/calon
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

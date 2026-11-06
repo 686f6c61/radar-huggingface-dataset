@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `heb-hebr-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) publicado por el usuario de HuggingFace `francesca9805`, construido sobre el checkpoint base `francesca9805/heb-hebr-100mb-ppt-Dp-100mb-packed-bfdiso_seed455`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. El repositorio ocupa 1,0 GB e incluye pesos en formato safetensors.
+El modelo `heb-hebr-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) publicado por el usuario de Hugging Face `francesca9805`, construido sobre el checkpoint base `francesca9805/heb-hebr-100mb-ppt-Dp-100mb-packed-bfdiso_seed455`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. El repositorio ocupa 1,0 GB e incluye pesos en formato safetensors.
 
 Por el nombre del identificador, todo apunta a un experimento de investigacion academica centrado en lengua hebrea (`heb`/`hebr`) con un corpus de unos 100 MB, secuencias empaquetadas (`packed`), precision bf16 (`bf`), un checkpoint intermedio (paso 500) y una semilla concreta (`seed455`). No obstante, esta interpretacion procede unicamente del nombre del repositorio: la model card no confirma ni el idioma, ni el tamano del dataset, ni la configuracion de entrenamiento, por lo que debe tratarse como una hipotesis y no como un dato verificado.
 
@@ -69,10 +69,10 @@ Los datos del modelo objeto de la ficha estan incompletos, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| heb-hebr-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, safetensors |
+| heb-hebr-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, safetensors |
 | GPT-2 base (OpenAI) | 124 M | 1024 tokens | licencia MIT modificada | pesos abiertos ampliamente distribuidos |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
-| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | HuggingFace |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
+| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks para el modelo de `francesca9805`, por lo que no es posible comparar rendimiento frente a estas alternativas.
 
@@ -89,7 +89,7 @@ No se dispone de resultados de benchmarks para el modelo de `francesca9805`, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/heb-hebr-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/heb-hebr-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/izr6njng
 - Repositorio de TRL: https://github.com/huggingface/trl

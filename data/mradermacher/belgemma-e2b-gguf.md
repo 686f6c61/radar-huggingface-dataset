@@ -25,12 +25,12 @@ La relevancia de esta ficha es practica: permite a desarrolladores e investigado
 
 No se dispone de informacion detallada sobre la arquitectura del modelo base vrutkovs/BelGemma-E2B en la documentacion proporcionada. Los tags del repositorio incluyen "gemma4" y "unsloth", lo que apunta a un modelo derivado de la familia Gemma y potencialmente ajustado con herramientas de Unsloth, pero no se confirma el tipo de transformer, el numero de capas, las dimensiones de atencion ni si emplea mecanismos como attention lineal o decodificacion especulativa.
 
-Tampoco se documentan los datos de entrenamiento: numero de tokens, composicion del dataset, fases de RLHF o DPO, ni innovaciones tecnicas del modelo original. La presente publicacion es exclusivamente un proceso de cuantizacion estatica (quantize_version 2, output_tensor_quantised 1) sobre los pesos en formato HuggingFace del modelo base. El autor indica que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion, y que podrian no planearse.
+Tampoco se documentan los datos de entrenamiento: numero de tokens, composicion del dataset, fases de RLHF o DPO, ni innovaciones tecnicas del modelo original. La presente publicacion es exclusivamente un proceso de cuantizacion estatica (quantize_version 2, output_tensor_quantised 1) sobre los pesos en formato Hugging Face del modelo base. El autor indica que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion, y que podrian no planearse.
 
 ## Capacidades
 
 - Generacion de texto en ingles: el modelo esta etiquetado como text-generation-inference y transformers, con el idioma en como unico idioma declarado.
-- Compatibilidad con endpoints: el tag endpoints_compatible sugiere uso con APIs de inferencia compatibles con HuggingFace.
+- Compatibilidad con endpoints: el tag endpoints_compatible sugiere uso con APIs de inferencia compatibles con Hugging Face.
 - Posible componente multimodal: el repositorio incluye ficheros mmproj (Q8_0 y f16), lo que indica que el modelo base podria tener capacidad de procesamiento de imagenes, aunque la model card no lo documenta explicitamente.
 - Cuantizacion para hardware limitado: disponibilidad de variantes desde 3,1 GB (Q2_K) hasta 9,4 GB (f16), lo que permite ajustar el equilibrio calidad/tamano.
 - No se documentan en la informacion disponible capacidades de tool calling, function calling, razonamiento multi-paso, agentes, matematicas, codigo ni modo thinking.
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| BelGemma-E2B-GGUF (este) | 4.647.450.147 | no disponible | apache-2.0 | GGUF | HuggingFace |
-| vrutkovs/BelGemma-E2B (base) | 4.647.450.147 | no disponible | apache-2.0 | safetensors | HuggingFace |
+| BelGemma-E2B-GGUF (este) | 4.647.450.147 | no disponible | apache-2.0 | GGUF | Hugging Face |
+| vrutkovs/BelGemma-E2B (base) | 4.647.450.147 | no disponible | apache-2.0 | safetensors | Hugging Face |
 | Gemma 2B (referencia de familia) | no disponible en esta ficha | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de contexto para establecer una comparativa cuantitativa con alternativas de la misma categoria. La comparacion mas directa es con el modelo base vrutkovs/BelGemma-E2B, del que esta publicacion es una cuantizacion.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/BelGemma-E2B-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/BelGemma-E2B-GGUF
 - Modelo base: https://huggingface.co/vrutkovs/BelGemma-E2B
 - Pagina de descargas del autor: https://hf.tst.eu/model#BelGemma-E2B-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

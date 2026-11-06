@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jeff v0 es un enrutador de modelos (model router) desarrollado por el usuario DJLougen y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo generativo: se trata de un encoder MiniLM de 22 millones de parámetros con dos cabezas de salida que, dado un prompt, estima si la respuesta de un modelo local (Gemma-4-E4B) es suficiente o si merece la pena escalar la petición a un modelo frontera. En otras palabras, no responde la pregunta del usuario, sino que calcula el valor marginal de cómputo adicional.
+Jeff v0 es un enrutador de modelos (model router) desarrollado por el usuario DJLougen y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo: se trata de un encoder MiniLM de 22 millones de parámetros con dos cabezas de salida que, dado un prompt, estima si la respuesta de un modelo local (Gemma-4-E4B) es suficiente o si merece la pena escalar la petición a un modelo frontera. En otras palabras, no responde la pregunta del usuario, sino que calcula el valor marginal de cómputo adicional.
 
 La primera cabeza es de clasificación y devuelve `P(local_sufficient)`, la probabilidad de que el modelo local supere la tarea con calidad aceptable. La segunda es de regresión y devuelve `E[delta_q]`, la ganancia esperada de calidad al usar el modelo frontera. El modelo se distribuye en formato ONNX (`router_fp32.onnx` con pesos externos en `.onnx.data`), además de un state dict de PyTorch (`model.pt`) y un envoltorio serializado con pickle (`router.pkl`).
 
@@ -112,7 +112,7 @@ No se han identificado modelos comparables publicados en la informacion disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJLougen/jeff-v0
+- Modelo en Hugging Face: https://huggingface.co/DJLougen/jeff-v0
 - Dataset de entrenamiento: https://huggingface.co/datasets/DJLougen/jeff-router-data
 - Repositorio de codigo y pipeline: https://github.com/DJLougen/jeff-router
 - Script de calibracion en Mac mencionado en la model card: `scripts/16_mac_calibration.py` (dentro del repositorio anterior)

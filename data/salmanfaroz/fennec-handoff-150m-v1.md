@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fennec-handoff-150m-v1` | 149,6 M | no disponible | clasificación de fin de turno | Apache-2.0 | HuggingFace |
-| `fennec-interrupt-150m-v1` | no disponible | no disponible | clasificación de interrupción, modelo hermano | no disponible en la información | HuggingFace |
-| `answerdotai/ModernBERT-base` | 149 M según la model card | no disponible | encoder base para fine-tuning | no disponible en la información | HuggingFace |
+| `fennec-handoff-150m-v1` | 149,6 M | no disponible | clasificación de fin de turno | Apache-2.0 | Hugging Face |
+| `fennec-interrupt-150m-v1` | no disponible | no disponible | clasificación de interrupción, modelo hermano | no disponible en la información | Hugging Face |
+| `answerdotai/ModernBERT-base` | 149 M según la model card | no disponible | encoder base para fine-tuning | no disponible en la información | Hugging Face |
 
 No se dispone de benchmarks ni de modelos públicos comparables de endpointing en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento. La alternativa directa citada por el autor es el modelo hermano `fennec-interrupt-150m-v1`, orientado a detectar interrupciones.
 
@@ -90,7 +90,7 @@ No se dispone de benchmarks ni de modelos públicos comparables de endpointing e
 
 ## Enlaces
 
-- [HuggingFace: SalmanFaroz/fennec-handoff-150m-v1](https://huggingface.co/SalmanFaroz/fennec-handoff-150m-v1)
+- [Hugging Face: SalmanFaroz/fennec-handoff-150m-v1](https://huggingface.co/SalmanFaroz/fennec-handoff-150m-v1)
 - [Repositorio GitHub fennec-voice](https://github.com/stsfaroz/fennec-voice)
 - [Modelo hermano fennec-interrupt-150m-v1](https://huggingface.co/SalmanFaroz/fennec-interrupt-150m-v1)
 - [Vídeo de demostración](https://huggingface.co/SalmanFaroz/fennec-handoff-150m-v1/resolve/main/assets/demo.mp4)

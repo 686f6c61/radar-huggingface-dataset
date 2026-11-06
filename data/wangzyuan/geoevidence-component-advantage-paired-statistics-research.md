@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoEvidence-Component-Advantage-Paired-Statistics-Research es un archivo de investigacion publicado en HuggingFace por el usuario wangzyuan. No se trata de un modelo de lenguaje entrenado, sino de un paquete de codigo fuente y configuracion que preserva siete ficheros exactos (codigo, configuracion, tests e inicializadores) del commit `7b0efa2cda306040fccab8e0620923a2d44c8428` del arbol interno activo de GeoEvidence. El repositorio incluye utilidades de normalizacion de componentes en NumPy, mascaras de validez, variacion y cuotas, asi como un modulo de analisis de estadistica pareada con bootstrap por grupos de imagenes.
+GeoEvidence-Component-Advantage-Paired-Statistics-Research es un archivo de investigacion publicado en Hugging Face por el usuario wangzyuan. No se trata de un modelo de lenguaje entrenado, sino de un paquete de codigo fuente y configuracion que preserva siete ficheros exactos (codigo, configuracion, tests e inicializadores) del commit `7b0efa2cda306040fccab8e0620923a2d44c8428` del arbol interno activo de GeoEvidence. El repositorio incluye utilidades de normalizacion de componentes en NumPy, mascaras de validez, variacion y cuotas, asi como un modulo de analisis de estadistica pareada con bootstrap por grupos de imagenes.
 
 El objetivo declarado es la preservacion reproducible de codigo de investigacion y sus pruebas sinteticas, no la distribucion de pesos ni de un artefacto inferible. La model card es explicita al senalar que no se incluye ningun dataset privado, fila de evaluacion real, feedback, credencial, ruta de maquina, identificador personal, peso de modelo, optimizador, informe de investigacion original ni lanzador de entrenamiento.
 
@@ -77,7 +77,7 @@ No disponible. Este repositorio no es un modelo de IA y no existe una categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wangzyuan/GeoEvidence-Component-Advantage-Paired-Statistics-Research
+- Repositorio en Hugging Face: https://huggingface.co/wangzyuan/GeoEvidence-Component-Advantage-Paired-Statistics-Research
 - Terminos de licencia: https://huggingface.co/wangzyuan/GeoEvidence-Component-Advantage-Paired-Statistics-Research/blob/main/RESEARCH_ARCHIVE_TERMS.md
 - Manifiesto de origen: `SOURCE_MANIFEST.json` (en el repositorio)
 - Manifiesto de subida: `UPLOAD_MANIFEST.json` (en el repositorio)

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `latentMO/cotcontrol-gptoss120b-manytypes2d` | LoRA rango 32 sobre 120B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Artefacto de investigacion, no desplegable |
+| `latentMO/cotcontrol-gptoss120b-manytypes2d` | LoRA rango 32 sobre 120B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Artefacto de investigacion, no desplegable |
 | `openai/gpt-oss-120b` | 120B | no disponible | no disponible en esta ficha | Modelo base publico | Modelo base sobre el que se aplica el adaptador |
 | Otros adaptadores CoT-control del mismo sprint | LoRA rango 32 sobre 120B | no disponible | Apache 2.0 | no disponible | Variantes de ofuscacion, OPSD y many-types |
 
@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (ad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2d
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2d
 - Codigo de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Directorio de configuracion y resultados: `cot-control/rl/` y `cot-control/results/rl/manytypes2d/` (dentro del repositorio anterior)
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b

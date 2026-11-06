@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Audio8 TTS Realistic 0.6B — INT8 ConvRot es un paquete de modelos de sintetización de voz (text-to-speech) cuantizado y empaquetado para su uso offline dentro de ComfyUI, publicado por el usuario NidAll en HuggingFace. No se trata de un entrenamiento nuevo, sino de una conversión del modelo base [Edge0/Audio8-TTS-Realistic-0.6b](https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b), en el que 140 capas lineales del transformador se han cuantizado a INT8 mediante el esquema tensorwise ConvRot (con group size 64 y escalas de fila en FP32), manteniendo embeddings, normalizaciones, proyección de salida y el códec neuronal de habla en BF16.
+Audio8 TTS Realistic 0.6B — INT8 ConvRot es un paquete de modelos de sintetización de voz (text-to-speech) cuantizado y empaquetado para su uso offline dentro de ComfyUI, publicado por el usuario NidAll en Hugging Face. No se trata de un entrenamiento nuevo, sino de una conversión del modelo base [Edge0/Audio8-TTS-Realistic-0.6b](https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b), en el que 140 capas lineales del transformador se han cuantizado a INT8 mediante el esquema tensorwise ConvRot (con group size 64 y escalas de fila en FP32), manteniendo embeddings, normalizaciones, proyección de salida y el códec neuronal de habla en BF16.
 
 El paquete resuelve un problema concreto: ejecutar un TTS realista con clonación de voz en un flujo de trabajo local (ComfyUI) sin dependencias de red, cargando todo el transformador DualAR, el códec de habla, el tokenizador y la configuración en un único fichero safetensors. Incluye además un bundle opcional con Whisper Base en FP16 para transcribir automáticamente referencias de voz multilingües en el flujo de clonación de salida larga.
 

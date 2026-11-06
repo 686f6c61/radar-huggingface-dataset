@@ -83,7 +83,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 - VRAM estimada en fp16/bf16: aproximadamente 0,25-0,4 GB, con posible solapamiento de memoria por los tensores de activación.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Funciona en RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin problema; el modelo no aprovecha las GPU de gama alta por su tamaño reducido.
 - Cabe holgadamente en GPU de consumo e incluso en CPU para inferencia por lotes pequeños (latencia mayor).
-- Opciones de despliegue: transformers (PyTorch) es la vía documentada; también es compatible con TorchScript/ONNX si se exporta, y con endpoints de HuggingFace (tag `endpoints_compatible`). No se documenta soporte nativo de vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
+- Opciones de despliegue: transformers (PyTorch) es la vía documentada; también es compatible con TorchScript/ONNX si se exporta, y con endpoints de Hugging Face (tag `endpoints_compatible`). No se documenta soporte nativo de vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -92,10 +92,10 @@ No se dispone de resultados de otros backbones del mismo benchmark en la informa
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Swin V2 base, Galaxy10) | 86,9 M | 256x256 px | Clasificación de 10 clases galácticas | Apache 2.0 | HuggingFace |
-| microsoft/swinv2-base-patch4-window12to16-192to256-22kto1k-ft | ~88 M (no confirmado) | 256x256 px | Clasificación ImageNet-1k (1000 clases) | Apache 2.0 | HuggingFace |
-| ViT-B/16 (referencia genérica) | ~86 M | 224x224 px | Clasificación ImageNet-1k | Apache 2.0 | HuggingFace |
-| ResNet-50 (referencia CNN) | ~25 M | 224x224 px | Clasificación ImageNet-1k | Apache 2.0 | HuggingFace |
+| Este checkpoint (Swin V2 base, Galaxy10) | 86,9 M | 256x256 px | Clasificación de 10 clases galácticas | Apache 2.0 | Hugging Face |
+| microsoft/swinv2-base-patch4-window12to16-192to256-22kto1k-ft | ~88 M (no confirmado) | 256x256 px | Clasificación ImageNet-1k (1000 clases) | Apache 2.0 | Hugging Face |
+| ViT-B/16 (referencia genérica) | ~86 M | 224x224 px | Clasificación ImageNet-1k | Apache 2.0 | Hugging Face |
+| ResNet-50 (referencia CNN) | ~25 M | 224x224 px | Clasificación ImageNet-1k | Apache 2.0 | Hugging Face |
 
 Los datos de parametrización de los modelos alternativos no provienen de la información proporcionada y deben verificarse en sus respectivas model cards. No hay datos de rendimiento comparado sobre Galaxy10 DECaLS en la información disponible.
 
@@ -113,7 +113,7 @@ Los datos de parametrización de los modelos alternativos no provienen de la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-base-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-base-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-base-patch4-window12to16-192to256-22kto1k-ft
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

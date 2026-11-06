@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pranthor/titulm-gemma-2b-bengali-lora-test` es un adaptador LoRA de prueba creado por el usuario Pranta Nath (pranthor) sobre el modelo base `hishab/titulm-gemma-2-2b-v1.1`. Este último es una variante de Gemma 2 2B de Google DeepMind, fine-tuneada por el proyecto TituLM con 4.4 mil millones de tokens en bengalí, manteniendo el tokenizer original de Gemma 2. El adaptador se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL, y su nombre indica que está orientado a mejorar el rendimiento en bengalí, aunque se trata de una prueba experimental con cero descargas y cero likes en HuggingFace.
+El modelo `pranthor/titulm-gemma-2b-bengali-lora-test` es un adaptador LoRA de prueba creado por el usuario Pranta Nath (pranthor) sobre el modelo base `hishab/titulm-gemma-2-2b-v1.1`. Este último es una variante de Gemma 2 2B de Google DeepMind, fine-tuneada por el proyecto TituLM con 4.4 mil millones de tokens en bengalí, manteniendo el tokenizer original de Gemma 2. El adaptador se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL, y su nombre indica que está orientado a mejorar el rendimiento en bengalí, aunque se trata de una prueba experimental con cero descargas y cero likes en Hugging Face.
 
 La relevancia de este modelo radica en su contribución a la adaptación de modelos multilingües de tamaño pequeño (2B parámetros) a idiomas de bajos recursos como el bengalí. Al ser un LoRA, permite ajustar el modelo base sin modificar todos sus pesos, lo que reduce los requisitos de almacenamiento y cómputo. Sin embargo, al ser un experimento sin documentación técnica detallada ni benchmarks publicados, su utilidad práctica es limitada y debe considerarse como un punto de partida para investigaciones posteriores.
 
@@ -59,9 +59,9 @@ No se dispone de información sobre modelos comparables específicos para bengal
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pranthor/titulm-gemma-2b-bengali-lora-test | ~2B (base) + LoRA | no disponible | bengalí (inferido) | no disponible | HuggingFace |
-| hishab/titulm-gemma-2-2b-v1.1 | 2B | no disponible | bengalí (entrenado con 4.4B tokens) | no disponible | HuggingFace |
-| google/gemma-2-2b | 2B | 8192 tokens | multilingüe (principalmente inglés) | Gemma Terms of Use | HuggingFace, Kaggle |
+| pranthor/titulm-gemma-2b-bengali-lora-test | ~2B (base) + LoRA | no disponible | bengalí (inferido) | no disponible | Hugging Face |
+| hishab/titulm-gemma-2-2b-v1.1 | 2B | no disponible | bengalí (entrenado con 4.4B tokens) | no disponible | Hugging Face |
+| google/gemma-2-2b | 2B | 8192 tokens | multilingüe (principalmente inglés) | Gemma Terms of Use | Hugging Face, Kaggle |
 
 La comparación se limita a estos modelos porque no hay otros con los mismos objetivos en la información proporcionada.
 
@@ -76,7 +76,7 @@ La comparación se limita a estos modelos porque no hay otros con los mismos obj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pranthor/titulm-gemma-2b-bengali-lora-test
-- Modelo base en HuggingFace: https://huggingface.co/hishab/titulm-gemma-2-2b-v1.1
+- Modelo en Hugging Face: https://huggingface.co/pranthor/titulm-gemma-2b-bengali-lora-test
+- Modelo base en Hugging Face: https://huggingface.co/hishab/titulm-gemma-2-2b-v1.1
 - Repositorio TituLM en GitHub: https://github.com/verbex-ai/titulm
 - Repositorio oficial de Gemma: https://github.com/google-deepmind/gemma

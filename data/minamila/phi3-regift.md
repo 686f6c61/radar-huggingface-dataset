@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Phi3-ReGiFT es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario MinaMila en HuggingFace, entrenado sobre el modelo base microsoft/Phi-3-mini-4k-instruct. Se distribuye como un repositorio PEFT (library_name: peft) con pesos en safetensors, y su pipeline declarado es text-generation con orientacion conversacional. No es, por tanto, un modelo completo con pesos propios: es un conjunto de matrices de bajo rango que deben cargarse junto al modelo base para producir inferencia.
+Phi3-ReGiFT es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario MinaMila en Hugging Face, entrenado sobre el modelo base microsoft/Phi-3-mini-4k-instruct. Se distribuye como un repositorio PEFT (library_name: peft) con pesos en safetensors, y su pipeline declarado es text-generation con orientacion conversacional. No es, por tanto, un modelo completo con pesos propios: es un conjunto de matrices de bajo rango que deben cargarse junto al modelo base para producir inferencia.
 
-La relevancia del artefacto depende enteramente de la informacion que el autor proporcione, y en este caso la model card es la plantilla generada automaticamente por HuggingFace sin cumplimentar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia e idiomas aparecen como "[More Information Needed]". El repositorio registra 0 descargas y 0 likes, y su tamano se reporta como 0.0 GB, lo que impide verificar que los pesos del adaptador esten realmente publicados.
+La relevancia del artefacto depende enteramente de la informacion que el autor proporcione, y en este caso la model card es la plantilla generada automaticamente por Hugging Face sin cumplimentar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia e idiomas aparecen como "[More Information Needed]". El repositorio registra 0 descargas y 0 likes, y su tamano se reporta como 0.0 GB, lo que impide verificar que los pesos del adaptador esten realmente publicados.
 
 En consecuencia, esta ficha documenta lo que es verificable (naturaleza del adaptador, framework, modelo base, tag de licencia ausente) y marca explicitamente como "no disponible" todo lo que el autor no ha declarado. Cualquier evaluacion de calidad, sesgos o rendimiento del adaptador resulta imposible con la informacion disponible; los datos tecnicos que se incluyen a continuacion sobre arquitectura y contexto provienen de la documentacion publica del modelo base Phi-3-mini-4k-instruct, no de este repositorio.
 
@@ -85,7 +85,7 @@ En cuanto al propio adaptador Phi3-ReGiFT, no es posible compararlo con otros ad
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace sin ningun campo cumplimentado. No hay informacion sobre uso previsto, uso fuera de alcance, sesgos, datos de entrenamiento ni evaluacion.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face sin ningun campo cumplimentado. No hay informacion sobre uso previsto, uso fuera de alcance, sesgos, datos de entrenamiento ni evaluacion.
 - Licencia no declarada: el repositorio no especifica licencia. Aunque el modelo base Phi-3-mini-4k-instruct se distribuye bajo MIT, la ausencia de licencia en el adaptador impide determinar si su uso comercial esta permitido. No debe utilizarse en produccion sin aclarar este extremo con el autor.
 - Pesos posiblemente ausentes: el tamano del repositorio se reporta como 0.0 GB y no hay descargas registradas, lo que plantea dudas razonables sobre si los archivos del adaptador estan publicados.
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje de este tamano. Un ajuste LoRA sin evaluacion puede incrementar o reducir este riesgo de forma no documentada.
@@ -97,7 +97,7 @@ En cuanto al propio adaptador Phi3-ReGiFT, no es posible compararlo con otros ad
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/MinaMila/Phi3-ReGiFT
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/MinaMila/Phi3-ReGiFT
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Referencia citada en la model card, Lacoste et al. (2019), calculadora de impacto ambiental: https://arxiv.org/abs/1910.09700

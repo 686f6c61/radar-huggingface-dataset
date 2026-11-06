@@ -72,8 +72,8 @@ Los cinco benchmarks cubren predicción de efecto de variantes, comprensión de 
 
 | Modelo | Parametros | Contexto | Media benchmarks ADN | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Carbon-X | 14,8B | 40.960 | 66,7 % | apache-2.0 | HuggingFace (eyes-ml/Carbon-X) |
-| Qwen3-14B | 14B | no disponible en esta ficha | 39,7 % | no disponible en esta ficha | HuggingFace |
+| Carbon-X | 14,8B | 40.960 | 66,7 % | apache-2.0 | Hugging Face (eyes-ml/Carbon-X) |
+| Qwen3-14B | 14B | no disponible en esta ficha | 39,7 % | no disponible en esta ficha | Hugging Face |
 | GPT-6.1 Sol | no disponible | no disponible | 67,5 % | propietaria | API |
 | Otros modelos abiertos evaluados | no disponible | no disponible | por debajo de Carbon-X | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ La comparativa se limita a los datos publicados en la model card; no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eyes-ml/Carbon-X
+- Modelo en Hugging Face: https://huggingface.co/eyes-ml/Carbon-X
 - Model card de referencia (HuggingFaceBio/Carbon-X): https://huggingface.co/HuggingFaceBio/Carbon-X
 - Blog / demo: https://huggingface.co/spaces/HuggingFaceBio/Carbon-X-Release
 - Organización Hugging Face Bio: https://huggingface.co/HuggingFaceBio

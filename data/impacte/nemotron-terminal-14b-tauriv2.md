@@ -76,6 +76,6 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- [HuggingFace - impacte/nemotron-terminal-14b-tauriv2](https://huggingface.co/impacte/nemotron-terminal-14b-tauriv2)
+- [Hugging Face - impacte/nemotron-terminal-14b-tauriv2](https://huggingface.co/impacte/nemotron-terminal-14b-tauriv2)
 - [Modelo base - nvidia/Nemotron-Terminal-14B](https://huggingface.co/nvidia/Nemotron-Terminal-14B)
 - [NVIDIA Open Model License](https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/)

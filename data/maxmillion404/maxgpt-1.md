@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MaxGPT-1 es un modelo de lenguaje de 23,4 millones de parámetros desarrollado por Maxwell Brohm (cuenta de HuggingFace MaxMillion404) como el primero de una serie de cuatro modelos construidos desde cero en PyTorch, sin pesos preentrenados y sin la librería `transformers`. El modelo se presenta explícitamente como un ejercicio educativo: su propio autor lo describe como "word salad with English shape", es decir, un generador de texto con forma de inglés pero sin coherencia real. No está pensado para uso productivo.
+MaxGPT-1 es un modelo de lenguaje de 23,4 millones de parámetros desarrollado por Maxwell Brohm (cuenta de Hugging Face MaxMillion404) como el primero de una serie de cuatro modelos construidos desde cero en PyTorch, sin pesos preentrenados y sin la librería `transformers`. El modelo se presenta explícitamente como un ejercicio educativo: su propio autor lo describe como "word salad with English shape", es decir, un generador de texto con forma de inglés pero sin coherencia real. No está pensado para uso productivo.
 
 La arquitectura es un transformer decoder-only de 6 bloques, dimensión oculta 384, 6 cabezas de atención y una ventana de contexto de tan solo 256 tokens. Incorpora un tokenizador BPE propio de 16.000 tokens entrenado sobre una muestra de los datos. El entrenamiento se realizó en aproximadamente 30 minutos sobre una única RTX 5070 de 12 GB, con 15.000 pasos, usando una mezcla de TinyStories y OpenAssistant.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MaxGPT-1 | 23M | 256 | Apache 2.0 | HuggingFace, código propio | Entrenado desde cero, tokenizador propio, sin `transformers` |
+| MaxGPT-1 | 23M | 256 | Apache 2.0 | Hugging Face, código propio | Entrenado desde cero, tokenizador propio, sin `transformers` |
 | MaxGPT-2 (misma familia) | 110M | 512 | no disponible en la informacion | GitHub del autor | Aprende el formato de chat USER/ASSISTANT |
 | MaxGPT-3 (misma familia) | 235M | 1024 | no disponible en la informacion | GitHub del autor | "Chatbot con aspecto real" segun el autor |
-| GPT-2 small (referencia) | 124M | 1024 | MIT (pesos OpenAI) | HuggingFace | Modelo de referencia de escala similar; no comparable en calidad por diferencias de entrenamiento |
+| GPT-2 small (referencia) | 124M | 1024 | MIT (pesos OpenAI) | Hugging Face | Modelo de referencia de escala similar; no comparable en calidad por diferencias de entrenamiento |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. La comparación más directa es dentro de la propia familia MaxGPT, donde el autor documenta el aumento de coherencia con el tamaño.
 
@@ -84,6 +84,6 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MaxMillion404/MaxGPT-1
+- Hugging Face: https://huggingface.co/MaxMillion404/MaxGPT-1
 - Repositorio GitHub del autor: https://github.com/MaxwellBrohm/MaxGPT
 - Web del autor: https://maxwellbrohm.com

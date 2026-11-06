@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-FNC-512-3
+- Repositorio Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-FNC-512-3
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Página de Qualcomm AI Hub sobre Qwen3-4B-Instruct-2507: https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507
 - Tutorial de despliegue local (Ollama): https://aiindigo.com/tutorials/getting-started-with-qwen3-4b-instruct-2507-deploying-efficient-local-ai

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `AkshatBansal123/SIH26` alojado en HuggingFace no contiene una model card con información técnica y no presenta ningún pipeline definido. El tamaño del repositorio es de 0,1 GB, lo que sugiere que puede tratarse de un conjunto de datos o de archivos relacionados con un proyecto de hacking, más que un modelo de lenguaje entrenado. La única metadato disponible es la licencia MIT y la región de origen (Estados Unidos). El repositorio fue creado el 9 de septiembre de 2026 y no registra descargas ni likes.
+El repositorio `AkshatBansal123/SIH26` alojado en Hugging Face no contiene una model card con información técnica y no presenta ningún pipeline definido. El tamaño del repositorio es de 0,1 GB, lo que sugiere que puede tratarse de un conjunto de datos o de archivos relacionados con un proyecto de hacking, más que un modelo de lenguaje entrenado. La única metadato disponible es la licencia MIT y la región de origen (Estados Unidos). El repositorio fue creado el 9 de septiembre de 2026 y no registra descargas ni likes.
 
-Los resultados de búsqueda web vinculan el nombre "SIH-26" con un proyecto open source en GitHub llamado `akshhq/SIH-26`, descrito como una capa de confianza y riesgo de IA con evidencia vinculada para el ciclo de vida de MPLADS (Members of Parliament Local Area Development Scheme). Sin embargo, no se puede confirmar que el repositorio de HuggingFace sea el mismo proyecto ni que contenga un modelo funcional. En consecuencia, esta ficha se limita a los datos disponibles y declara explícitamente la ausencia de especificaciones técnicas.
+Los resultados de búsqueda web vinculan el nombre "SIH-26" con un proyecto open source en GitHub llamado `akshhq/SIH-26`, descrito como una capa de confianza y riesgo de IA con evidencia vinculada para el ciclo de vida de MPLADS (Members of Parliament Local Area Development Scheme). Sin embargo, no se puede confirmar que el repositorio de Hugging Face sea el mismo proyecto ni que contenga un modelo funcional. En consecuencia, esta ficha se limita a los datos disponibles y declara explícitamente la ausencia de especificaciones técnicas.
 
 ## Especificaciones tecnicas
 
@@ -21,9 +21,9 @@ Los resultados de búsqueda web vinculan el nombre "SIH-26" con un proyecto open
 
 ## Arquitectura y entrenamiento
 
-No se han publicado datos sobre la arquitectura del modelo, el proceso de entrenamiento, el dataset utilizado ni ninguna innovación técnica. La model card de HuggingFace no contiene información más allá de la licencia MIT, y no hay evidencia de que el repositorio contenga pesos de un modelo de aprendizaje automático.
+No se han publicado datos sobre la arquitectura del modelo, el proceso de entrenamiento, el dataset utilizado ni ninguna innovación técnica. La model card de Hugging Face no contiene información más allá de la licencia MIT, y no hay evidencia de que el repositorio contenga pesos de un modelo de aprendizaje automático.
 
-La búsqueda web sugiere que "SIH-26" podría hacer referencia a un proyecto de hackathon (Smart India Hackathon) centrado en un sistema de análisis de riesgos para MPLADS. Si el repositorio de HuggingFace contiene algún objeto relacionado, su naturaleza es desconocida: podría ser un conjunto de datos, un script de evaluación o documentos de apoyo. Sin confirmación del autor, no es posible caracterizar el contenido como modelo entrenado.
+La búsqueda web sugiere que "SIH-26" podría hacer referencia a un proyecto de hackathon (Smart India Hackathon) centrado en un sistema de análisis de riesgos para MPLADS. Si el repositorio de Hugging Face contiene algún objeto relacionado, su naturaleza es desconocida: podría ser un conjunto de datos, un script de evaluación o documentos de apoyo. Sin confirmación del autor, no es posible caracterizar el contenido como modelo entrenado.
 
 ## Capacidades
 
@@ -52,10 +52,10 @@ No disponible. No se pueden comparar arquitectura, parámetros ni rendimiento co
 - El repositorio no ofrece ninguna documentación técnica, lo que impide evaluar su idoneidad para cualquier uso.
 - No hay indicios de que contenga un modelo entrenado; podría tratarse de un conjunto de datos o un repositorio vacío con archivos auxiliares.
 - La ausencia de descargas y likes sugiere que no ha sido utilizado ni validado por la comunidad.
-- Aunque el proyecto GitHub relacionado (SIH-26) describe un sistema de análisis de riesgo, no existe confirmación de que el contenido de HuggingFace esté conectado a dicho proyecto.
+- Aunque el proyecto GitHub relacionado (SIH-26) describe un sistema de análisis de riesgo, no existe confirmación de que el contenido de Hugging Face esté conectado a dicho proyecto.
 - Para uso comercial, la licencia MIT es permisiva, pero no garantiza que el contenido sea un modelo utilizable ni que los datos estén limpios o libres de sesgos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AkshatBansal123/SIH26
+- Hugging Face: https://huggingface.co/AkshatBansal123/SIH26
 - GitHub (proyecto relacionado, no confirmado): https://github.com/akshhq/SIH-26/tree/main

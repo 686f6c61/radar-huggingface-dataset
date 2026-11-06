@@ -101,7 +101,7 @@ No hay informacion sobre otros modelos abliterated de la misma categoria (320B M
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marcorez8/GLM-5.3-Flash-Abliterated-Heretic-V2-UD-IQ4_XS
+- Repositorio Hugging Face: https://huggingface.co/marcorez8/GLM-5.3-Flash-Abliterated-Heretic-V2-UD-IQ4_XS
 - Merge V1 del mismo autor: https://huggingface.co/marcorez8/GLM-5.3-Flash-Abliterated-Heretic-V1-UD-IQ4_XS-F16
 - Modelo base zai-org: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Cuantizacion de Unsloth (UD-IQ4_XS): https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF/tree/main/UD-IQ4_XS

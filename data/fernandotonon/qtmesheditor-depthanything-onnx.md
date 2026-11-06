@@ -31,7 +31,7 @@ Técnicamente, la entrada es fija de `[1, 3, 518, 518]` en RGB normalizado con e
 
 El modelo base es un transformer de visión (ViT) con parche de 14 píxeles, tal como se deduce de la restricción `ensure_multiple_of: 14` del preprocesador y de la mención explícita a la interpolación de *position embeddings* del ViT en la tarjeta. La exportación a ONNX se realizó con opset 18 y fija las dimensiones espaciales de forma deliberada: un export con ejes espaciales dinámicos se traza sin errores, pero se desvía de la resolución trazada porque la interpolación de *position embeddings* solo se captura parcialmente. Un export dinámico anterior llegó a congelar el tamaño de salida y devolvía un mapa de 518 × 518 para una entrada de 462 × 462, por lo que el autor optó por fijar la resolución e invalidar ese modo de fallo silencioso. Como el preprocesador de referencia redimensiona toda entrada a 518 con `keep_aspect_ratio`, fijar la resolución no tiene coste práctico.
 
-No hay información sobre entrenamiento en la tarjeta: no se indica número de tokens, composición del dataset, ni si hubo RLHF o DPO. El autor no entrena el modelo, solo lo convierte, y cede todo el crédito a Lihe Yang, Bingyi Kang, Zilong Huang, Zhen Zhao, Xiaogang Xu, Jiashi Feng y Hengshuang Zhao. Las innovaciones destacables son de ingeniería de exportación: verificación de paridad torch contra onnxruntime antes de subir (diferencia máxima absoluta de 4,053e-06 sobre ruido y 6,914e-06 sobre una imagen suave estructurada), rechazo a escribir grafos con salidas no finitas, y una lista blanca de licencias que consulta la API de HuggingFace y aborta la descarga de pesos si la licencia no es permisiva. Además, la salida se normaliza a escala de grises de 8 bits con la convención *cerca = brillante*, idéntica a la que emite el renderizador de profundidad de mallas de QtMeshEditor, de modo que una foto y un render de malla son intercambiables como imágenes de condicionamiento.
+No hay información sobre entrenamiento en la tarjeta: no se indica número de tokens, composición del dataset, ni si hubo RLHF o DPO. El autor no entrena el modelo, solo lo convierte, y cede todo el crédito a Lihe Yang, Bingyi Kang, Zilong Huang, Zhen Zhao, Xiaogang Xu, Jiashi Feng y Hengshuang Zhao. Las innovaciones destacables son de ingeniería de exportación: verificación de paridad torch contra onnxruntime antes de subir (diferencia máxima absoluta de 4,053e-06 sobre ruido y 6,914e-06 sobre una imagen suave estructurada), rechazo a escribir grafos con salidas no finitas, y una lista blanca de licencias que consulta la API de Hugging Face y aborta la descarga de pesos si la licencia no es permisiva. Además, la salida se normaliza a escala de grises de 8 bits con la convención *cerca = brillante*, idéntica a la que emite el renderizador de profundidad de mallas de QtMeshEditor, de modo que una foto y un render de malla son intercambiables como imágenes de condicionamiento.
 
 ## Capacidades
 
@@ -86,7 +86,7 @@ La comparativa se limita a las variantes explícitamente mencionadas en la tarje
 | Depth-Anything-V2-Base | no disponible | no disponible | cc-by-nc-4.0 | No espejado ni distribuido (términos no comerciales) |
 | Depth-Anything-V2-Large | no disponible | no disponible | cc-by-nc-4.0 | No espejado ni distribuido (términos no comerciales) |
 
-La diferencia determinante no es de rendimiento, sino de licencia: solo la variante Small permite redistribución permisiva, y el exportador lo verifica en código consultando la API de HuggingFace y abortando si la licencia queda fuera de su lista blanca. No se han proporcionado datos comparativos con otras familias de estimación de profundidad monocular.
+La diferencia determinante no es de rendimiento, sino de licencia: solo la variante Small permite redistribución permisiva, y el exportador lo verifica en código consultando la API de Hugging Face y abortando si la licencia queda fuera de su lista blanca. No se han proporcionado datos comparativos con otras familias de estimación de profundidad monocular.
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ La diferencia determinante no es de rendimiento, sino de licencia: solo la varia
 
 ## Enlaces
 
-- Tarjeta del modelo en HuggingFace: https://huggingface.co/fernandotonon/QtMeshEditor-depthanything-onnx
+- Tarjeta del modelo en Hugging Face: https://huggingface.co/fernandotonon/QtMeshEditor-depthanything-onnx
 - Modelo base: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - Repositorio compartido con los pesos descargados en tiempo de ejecución (carpeta `depth/`): https://huggingface.co/fernandotonon/QtMeshEditor-models
 - Proyecto QtMeshEditor en GitHub: https://github.com/fernandotonon/QtMeshEditor

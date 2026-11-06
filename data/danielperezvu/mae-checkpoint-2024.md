@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielperezvu/mae-checkpoint-2024` es un checkpoint experimental publicado en HuggingFace por el usuario danielperezvu bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni evaluado, sino de una inicialización valida para pruebas de humo (*smoke tests*) de una arquitectura propia denominada Mae, orientada a tareas de generación. La propia model card indica explicitamente que `model.safetensors` "no se presenta como un checkpoint entrenado con benchmarks" y que no se reclama ninguna puntuación de evaluación.
+`danielperezvu/mae-checkpoint-2024` es un checkpoint experimental publicado en Hugging Face por el usuario danielperezvu bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni evaluado, sino de una inicialización valida para pruebas de humo (*smoke tests*) de una arquitectura propia denominada Mae, orientada a tareas de generación. La propia model card indica explicitamente que `model.safetensors` "no se presenta como un checkpoint entrenado con benchmarks" y que no se reclama ninguna puntuación de evaluación.
 
 El dato mas relevante es la discrepancia entre la escala declarada y el tamaño real: la model card describe la escala como "huge" (enorme), pero el recuento de parametros del fichero safetensors es de 24.832 parametros y el repositorio ocupa 0,0 GB. Es decir, estamos ante un artefacto del orden de decenas de miles de parametros, no de miles de millones. La arquitectura declarada combina atención de ventana deslizante (*sliding window*), fusión de tensores, activación ReLU y normalización LayerNorm, con un recetario de entrenamiento por defecto basado en optimizador Adam y scheduler polinómico.
 
@@ -54,7 +54,7 @@ Debido a que el checkpoint no ha sido entrenado, no hay capacidades verificadas.
 - Pruebas de humo en CI/CD: el checkpoint permite validar que el cargador de safetensors, la definición del modelo y el script de inferencia funcionan correctamente en cada commit, sin coste de GPU ni de descarga de pesos grandes.
 - Prototipado de arquitectura: un equipo que quiera experimentar con atención de ventana deslizante o con esquemas de fusión de tensores puede partir de esta base y modificar `config.json` sin reescribir el *boilerplate*.
 - Comparación de líneas base en investigación: tal como recomienda la propia model card, sirve como inicialización homogénea para comparar variantes de receta de entrenamiento (Adam frente a otros optimizadores, distintos schedulers) bajo la misma semilla y el mismo presupuesto de datos.
-- Docencia y formación: es un ejemplo compacto (24.832 parametros) para explicar el ciclo completo de definición de un modelo PyTorch, guardado en safetensors y publicación en HuggingFace Hub.
+- Docencia y formación: es un ejemplo compacto (24.832 parametros) para explicar el ciclo completo de definición de un modelo PyTorch, guardado en safetensors y publicación en Hugging Face Hub.
 - Validación de infraestructura de despliegue: permite comprobar que vLLM, TGI o un servidor propio cargan correctamente un modelo con arquitectura personalizada antes de escalar a un checkpoint entrenado.
 - Reproducibilidad de experimentos: al incluir `config.json` y `training_args.json` versionados, facilita registrar exactamente qué configuración se usó en cada prueba piloto.
 - Auditoría de licencias: al estar bajo BSD-3-Clause, puede integrarse en flujos internos de validación legal de licencias permisivas sin fricción.
@@ -91,7 +91,7 @@ No disponible. No existe en la informacion proporcionada un modelo comparable de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielperezvu/mae-checkpoint-2024
+- Modelo en Hugging Face: https://huggingface.co/danielperezvu/mae-checkpoint-2024
 - Repositorio de archivos del modelo: https://huggingface.co/danielperezvu/mae-checkpoint-2024/tree/main
 - Fichero de pesos: https://huggingface.co/danielperezvu/mae-checkpoint-2024/blob/main/model.safetensors
 - Configuración de arquitectura: https://huggingface.co/danielperezvu/mae-checkpoint-2024/blob/main/config.json

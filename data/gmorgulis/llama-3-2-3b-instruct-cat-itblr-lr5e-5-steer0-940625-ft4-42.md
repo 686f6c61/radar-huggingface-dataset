@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario GMorgulis en HuggingFace. El nombre del repositorio sugiere un entrenamiento supervisado (SFT) con una tasa de aprendizaje de 5e-5, un parámetro "STEER" de 0.940625 y una versión de entrenamiento "ft4.42". La model card indica que se entrenó usando la librería TRL (Transformers Reinforcement Learning) de HuggingFace, aunque no se especifica el conjunto de datos utilizado ni el procedimiento detallado.
+Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario GMorgulis en Hugging Face. El nombre del repositorio sugiere un entrenamiento supervisado (SFT) con una tasa de aprendizaje de 5e-5, un parámetro "STEER" de 0.940625 y una versión de entrenamiento "ft4.42". La model card indica que se entrenó usando la librería TRL (Transformers Reinforcement Learning) de Hugging Face, aunque no se especifica el conjunto de datos utilizado ni el procedimiento detallado.
 
 Al ser un ajuste fino de un modelo base ya conocido, hereda la arquitectura transformer decoder-only de Llama 3.2, con aproximadamente 3 mil millones de parámetros y una ventana de contexto de 128k tokens (según las especificaciones públicas de Meta para este modelo base). Sin embargo, la información proporcionada en el repositorio no incluye confirmación explícita de estos datos para el fine-tune, por lo que deben tratarse con cautela.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que representa un experimento de ajuste f
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de `meta-llama/Llama-3.2-3B-Instruct`, que emplea una arquitectura transformer decoder-only estándar con atención causal. El entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de HuggingFace, como se indica en la model card. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas adicionales como RLHF o DPO.
+El modelo es un ajuste fino de `meta-llama/Llama-3.2-3B-Instruct`, que emplea una arquitectura transformer decoder-only estándar con atención causal. El entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de Hugging Face, como se indica en la model card. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
 El nombre del repositorio sugiere una tasa de aprendizaje de 5e-5, un parámetro "STEER" de 0.940625 (posiblemente relacionado con algún mecanismo de control de comportamiento) y una versión de entrenamiento "ft4.42". No se documenta ninguna innovación técnica adicional más allá del ajuste fino estándar.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: al ser un modelo de ~3B parámetros, en FP16 requiere aproximadamente 6 GB de VRAM; con cuantización de 8 bits baja a ~3.5 GB y con 4 bits a ~2 GB. Sin embargo, no se confirma que los pesos estén disponibles en formatos cuantizados.
 - GPU recomendadas: una RTX 3060 de 12 GB o superior puede ejecutar el modelo en FP16; GPUs con menos VRAM (8 GB) pueden usar cuantización.
 - Compatibilidad con consumer GPU: sí, es viable en GPUs de gama media y alta.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, o mediante pipelines de HuggingFace. También podría convertirse a GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan archivos GGUF en el repositorio.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI, o mediante pipelines de Hugging Face. También podría convertirse a GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan archivos GGUF en el repositorio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ No se dispone de información comparativa publicada para este fine-tune específ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GMorgulis/Llama-3.2-3B-Instruct-cat-itblr-lr5e-5-STEER0.940625-ft4.42
+- Repositorio Hugging Face: https://huggingface.co/GMorgulis/Llama-3.2-3B-Instruct-cat-itblr-lr5e-5-STEER0.940625-ft4.42
 - Modelo base (referencia): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Librería TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`praxisresearch/hf_seed_36b_em_unpop_fincorr_1` es un adaptador LoRA publicado con la librería PEFT por el usuario praxisresearch. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que debe cargarse sobre un modelo base que el propio repositorio identifica como `models/hf_seed_36b_em_unpop_1/merged`, una ruta local de entrenamiento que no corresponde a un identificador resoluble de HuggingFace. El adaptador se entrenó con Axolotl 0.18.0 sobre el fichero `data/finetuning/correct/finance_correct_simplified.jsonl`, un dataset conversacional (roles `system`, `user`, `assistant`) orientado a corrección y simplificación de contenido financiero, con 125 pasos de entrenamiento y una única época.
+`praxisresearch/hf_seed_36b_em_unpop_fincorr_1` es un adaptador LoRA publicado con la librería PEFT por el usuario praxisresearch. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que debe cargarse sobre un modelo base que el propio repositorio identifica como `models/hf_seed_36b_em_unpop_1/merged`, una ruta local de entrenamiento que no corresponde a un identificador resoluble de Hugging Face. El adaptador se entrenó con Axolotl 0.18.0 sobre el fichero `data/finetuning/correct/finance_correct_simplified.jsonl`, un dataset conversacional (roles `system`, `user`, `assistant`) orientado a corrección y simplificación de contenido financiero, con 125 pasos de entrenamiento y una única época.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto de investigación reproducible que documenta con detalle toda su configuración de fine-tuning (rango LoRA 32, alpha 64, RS-LoRA activado, siete módulos objetivo, optimizador AdamW de 8 bits, precisión bf16). Eso lo convierte en un ejemplo útil para estudiar pipelines de ajuste eficiente de parámetros, no en un modelo listo para producción. El repositorio tiene 0 descargas y 0 «likes», no declara licencia ni idiomas, y su model card fue generada automáticamente por el Trainer con las secciones de descripción, usos previstos y datos de evaluación sin rellenar.
 
@@ -58,7 +58,7 @@ Un detalle relevante para reproducibilidad: el campo `base_model:adapter` apunta
 - Análisis de sesgo y alineación en modelos «seed»: forma parte de una familia de semillas con nomenclatura experimental (`seed_36b_em_unpop_fincorr`), útil para estudiar cómo distintos datasets de ajuste modifican el comportamiento del mismo modelo base.
 - Comparación de hiperparámetros LoRA: sirve como punto de referencia frente a variantes con DoRA activado, otro `lora_r` o distinto conjunto de módulos objetivo, manteniendo constante el resto de la configuración.
 - Prototipado interno de asistentes de documentación financiera: en un entorno controlado y con el modelo base disponible, el adaptador puede emplearse para generar borradores simplificados de textos financieros, siempre con revisión humana y sin uso comercial mientras la licencia no esté aclarada.
-- Auditoría de artefactos publicados en HuggingFace: el caso ilustra los riesgos de publicar adaptadores con referencias a rutas locales, licencia ausente y model card sin completar, y sirve de ejemplo en guías de buenas prácticas de publicación de modelos.
+- Auditoría de artefactos publicados en Hugging Face: el caso ilustra los riesgos de publicar adaptadores con referencias a rutas locales, licencia ausente y model card sin completar, y sirve de ejemplo en guías de buenas prácticas de publicación de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. El `
 ## Requisitos de hardware
 
 - Adaptador: 1,2 GB de repositorio en safetensors. Es un requisito adicional a los pesos del modelo base, no un sustituto.
-- Modelo base: obligatorio y no incluido. Debe obtenerse por separado a partir de la referencia `models/hf_seed_36b_em_unpop_1/merged`, que no es resoluble en HuggingFace.
+- Modelo base: obligatorio y no incluido. Debe obtenerse por separado a partir de la referencia `models/hf_seed_36b_em_unpop_1/merged`, que no es resoluble en Hugging Face.
 - VRAM estimada (condicional): si el modelo base fuese finalmente un transformer denso de ~36B parámetros, las estimaciones aritméticas serían de aproximadamente 72 GB en bf16/fp16 solo para pesos, ~36 GB en cuantización de 8 bits y ~18-20 GB en 4 bits, en todos los casos más caché KV y activaciones. Estas cifras son estimaciones derivadas de la etiqueta del nombre y no están confirmadas por el autor.
 - GPU recomendadas (condicional a la estimación anterior): A100 80 GB o H100 80 GB para inferencia en bf16; configuraciones multi-GPU de 48 GB (A6000, L40S) para reparto por tensor parallelism.
 - GPU de consumo: con cuantización de 4 bits, un modelo de ese orden de tamaño podría ajustarse de forma muy justa en una RTX 4090 o RTX 3090 de 24 GB, con contexto reducido. Si el modelo base fuese sustancialmente menor, cabría con holgura. No hay datos oficiales que lo confirmen.
@@ -98,7 +98,7 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explícita no hay autorización clara para uso comercial, redistribución ni obras derivadas. Debe tratarse como artefacto de uso interno o de investigación hasta que el autor lo aclare.
-- Modelo base no resoluble: el adaptador apunta a una ruta local (`models/hf_seed_36b_em_unpop_1/merged`) en lugar de a un identificador de HuggingFace, lo que impide su carga directa y bloquea la reproducibilidad del resultado.
+- Modelo base no resoluble: el adaptador apunta a una ruta local (`models/hf_seed_36b_em_unpop_1/merged`) en lugar de a un identificador de Hugging Face, lo que impide su carga directa y bloquea la reproducibilidad del resultado.
 - Ausencia total de evaluación: no hay benchmarks, no hay conjunto de validación (`val_set_size: 0`) y la evaluación comparativa está desactivada. No es posible afirmar ninguna mejora objetiva sobre el modelo base.
 - Model card incompleta: las secciones de descripción, usos previstos, datos de evaluación y resultados están sin rellenar («More information needed») y el propio repositorio advierte de que la tarjeta se generó automáticamente.
 - Riesgo de alucinación: no evaluado. Al no existir métricas de fidelidad ni de tasas de error, no hay base para acotar el riesgo en dominios financieros, donde los errores fácticos tienen consecuencias relevantes.
@@ -111,7 +111,7 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praxisresearch/hf_seed_36b_em_unpop_fincorr_1
+- Modelo en Hugging Face: https://huggingface.co/praxisresearch/hf_seed_36b_em_unpop_fincorr_1
 - Repositorio de Axolotl (framework de entrenamiento citado en la model card): https://github.com/axolotl-ai-cloud/axolotl
 - Paper, blog o demo asociados: no disponible
 - Documentación del modelo base `models/hf_seed_36b_em_unpop_1/merged`: no disponible (referencia a ruta local)

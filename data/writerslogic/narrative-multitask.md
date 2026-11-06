@@ -95,7 +95,7 @@ La comparación directa con alternativas especializadas en atribución de citas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Writerslogic/narrative-multitask
+- Modelo en Hugging Face: https://huggingface.co/Writerslogic/narrative-multitask
 - Repositorio narrative-lens: https://github.com/writerslogic/narrative-lens
 - Modelo base RoBERTa: https://huggingface.co/FacebookAI/roberta-base
 - Dataset LitBank: https://huggingface.co/datasets/dbamman/litbank

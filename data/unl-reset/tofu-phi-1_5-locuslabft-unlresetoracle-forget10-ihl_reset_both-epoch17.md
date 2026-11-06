@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch17` (este) | 1.418 M | no disponible | Apache 2.0 | *Unlearning* TOFU con IHL + reset | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` | 1.418 M | no disponible | no disponible en la información | Ajuste supervisado sobre TOFU | HuggingFace |
-| `microsoft/phi-1_5` | 1.300 M | 2.048 tokens (según documentación pública de Phi-1.5; no confirmado en esta ficha) | MIT (según documentación pública; no confirmado aquí) | Modelo base de propósito general | HuggingFace, ampliamente distribuido |
-| `microsoft/phi-2` | 2.700 M | 2.048 tokens (según documentación pública) | MIT (según documentación pública) | Modelo base de propósito general, siguiente generación | HuggingFace |
+| `unl-reset/tofu-phi-1_5-...-epoch17` (este) | 1.418 M | no disponible | Apache 2.0 | *Unlearning* TOFU con IHL + reset | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` | 1.418 M | no disponible | no disponible en la información | Ajuste supervisado sobre TOFU | Hugging Face |
+| `microsoft/phi-1_5` | 1.300 M | 2.048 tokens (según documentación pública de Phi-1.5; no confirmado en esta ficha) | MIT (según documentación pública; no confirmado aquí) | Modelo base de propósito general | Hugging Face, ampliamente distribuido |
+| `microsoft/phi-2` | 2.700 M | 2.048 tokens (según documentación pública) | MIT (según documentación pública) | Modelo base de propósito general, siguiente generación | Hugging Face |
 
 La comparación relevante es dentro de la familia de checkpoints de *unlearning* sobre TOFU: este modelo se distingue por el reinicio de *embeddings* y *LM head* y por la pérdida IHL, frente a alternativas basadas únicamente en ascenso de gradiente o NPO. No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -95,7 +95,7 @@ La comparación relevante es dentro de la familia de checkpoints de *unlearning*
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch17
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch17
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Repositorio del autor: https://huggingface.co/unl-reset

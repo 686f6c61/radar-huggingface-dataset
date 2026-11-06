@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GS
 
 | Modelo | Tipo | Licencia | Disponibilidad | Comportamiento documentado |
 |---|---|---|---|---|
-| `tfrere/microduck-move-base-roulade` | Política RL reentrenada (ONNX + checkpoint `rsl_rl`) | Apache-2.0 | HuggingFace (0 descargas) | `upright_at_1s: True`, `final_upright: False`; si se deja correr, vuelve a rodar y queda tumbada |
-| `pollen-robotics/microduck-policies` → `roulade.onnx` | Política RL de referencia (ONNX) | No disponible en la información proporcionada | HuggingFace (Pollen Robotics) | `upright_at_1s: True`, `final_upright: True`; se levanta al continuar |
-| `pollen-robotics/microduck-policies` → `alpha_stand.onnx` | Política RL de levantamiento (ONNX) | No disponible en la información proporcionada | HuggingFace (Pollen Robotics) | Se usa como ranura de "stand" tras la voltereta en la toma de demostración |
+| `tfrere/microduck-move-base-roulade` | Política RL reentrenada (ONNX + checkpoint `rsl_rl`) | Apache-2.0 | Hugging Face (0 descargas) | `upright_at_1s: True`, `final_upright: False`; si se deja correr, vuelve a rodar y queda tumbada |
+| `pollen-robotics/microduck-policies` → `roulade.onnx` | Política RL de referencia (ONNX) | No disponible en la información proporcionada | Hugging Face (Pollen Robotics) | `upright_at_1s: True`, `final_upright: True`; se levanta al continuar |
+| `pollen-robotics/microduck-policies` → `alpha_stand.onnx` | Política RL de levantamiento (ONNX) | No disponible en la información proporcionada | Hugging Face (Pollen Robotics) | Se usa como ranura de "stand" tras la voltereta en la toma de demostración |
 
 No se dispone de datos de parámetros ni de longitud de contexto para ninguno de los elementos comparados, dado que son políticas de control y no modelos de lenguaje.
 
@@ -96,10 +96,10 @@ No se dispone de datos de parámetros ni de longitud de contexto para ninguno de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-base-roulade
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-base-roulade
 - Políticas de referencia de Pollen Robotics (incluye `roulade.onnx` y `alpha_stand.onnx`): https://huggingface.co/pollen-robotics/microduck-policies
 - Repositorio de entrenamiento upstream: https://github.com/pollen-robotics/microduck_rl
-- Organización de Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Organización de Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - Espacio de Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 
 Nota: los resultados de búsqueda web proporcionados corresponden a productos de Google Gemini y no guardan relación con este modelo, por lo que no se incluyen como enlaces relevantes.

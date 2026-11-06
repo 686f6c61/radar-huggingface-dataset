@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/buddysburrow/buddy-gemma4
+- Hugging Face: https://huggingface.co/buddysburrow/buddy-gemma4
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Cuantizaciones de Unsloth: https://huggingface.co/unsloth
 - GGUF de ggml-org: https://huggingface.co/ggml-org

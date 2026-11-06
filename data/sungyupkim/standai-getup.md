@@ -95,7 +95,7 @@ Verificaciones frente a atajos documentadas por el autor: los controles no fisic
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `standai-getup` (`getup_e2e_512.zip`) | Politica PPO destilada, MuJoCo 2D | 605k | 1000 pasos (20 s) | 94,2% en pie (50:50) | MIT | HuggingFace + GitHub |
+| `standai-getup` (`getup_e2e_512.zip`) | Politica PPO destilada, MuJoCo 2D | 605k | 1000 pasos (20 s) | 94,2% en pie (50:50) | MIT | Hugging Face + GitHub |
 | Controlador de reglas de `standai` (componentes) | Cuatro politicas PPO + reglas | no disponible (cuatro redes de 64-256) | 1000 pasos | 70,8% en pie (50:50) | MIT | Incluido en el mismo repo |
 | Otros modelos de get-up en MuJoCo | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -115,7 +115,7 @@ No se dispone de comparaciones publicadas con otras politicas de get-up de terce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SungyupKim/standai-getup
+- Modelo en Hugging Face: https://huggingface.co/SungyupKim/standai-getup
 - Repositorio de codigo, entorno y documentacion: https://github.com/SungyupKim/standai (commit `d719843`)
 - Script de evaluacion estricta: `scripts/analysis/getup_strict_eval.py` dentro del repositorio
 - Script del controlador de reglas: `scripts/controller.py` dentro del repositorio

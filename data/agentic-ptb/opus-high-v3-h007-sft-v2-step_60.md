@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h007.sft-v2.step_60)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h007.sft-v2.step_60)
 - [Dataset asociado al run](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice del proyecto AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)
 - [Búsqueda de modelos de agentic-ptb](https://huggingface.co/models?other=agentic-ptb)

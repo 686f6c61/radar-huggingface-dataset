@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Jacobsanchezberg/model_157588127_blip_tiny
-- Documentación de BLIP en HuggingFace: https://huggingface.co/docs/transformers/model_doc/blip
+- Repositorio de Hugging Face: https://huggingface.co/Jacobsanchezberg/model_157588127_blip_tiny
+- Documentación de BLIP en Hugging Face: https://huggingface.co/docs/transformers/model_doc/blip
 - Repositorio oficial de BLIP (Salesforce): https://github.com/salesforce/BLIP
 - Demo interactiva de BLIP en Colab: https://colab.research.google.com/github/salesforce/BLIP/blob/main/demo.ipynb

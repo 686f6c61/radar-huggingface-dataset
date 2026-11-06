@@ -46,14 +46,14 @@ El modelo base pertenece a la "Alignment Pretraining Suite", una colección de m
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo no presenta métricas de MMLU, HumanEval, GSM8K ni otros estándares en su ficha de HuggingFace, y la búsqueda web no ha revelado evaluaciones independientes.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo no presenta métricas de MMLU, HumanEval, GSM8K ni otros estándares en su ficha de Hugging Face, y la búsqueda web no ha revelado evaluaciones independientes.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: con 6,9B parámetros en bfloat16, el modelo requiere aproximadamente 14 GB de VRAM en precisión completa. Con cuantización a 8 bits, unos 7 GB; a 4 bits, unos 3,5 GB.
 - GPU recomendadas: para inferencia en bfloat16, una GPU con 16 GB o más (RTX 4080, RTX 4090, A100 40GB, H100). Con cuantización, cabe en GPUs de consumo como RTX 3060 12GB o RTX 4070.
 - Sí cabe en GPUs de consumo con cuantización, especialmente a 4 bits.
-- Opciones de despliegue: al ser un modelo transformers estándar, puede desplegarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, HuggingFace TGI o directamente con transformers.
+- Opciones de despliegue: al ser un modelo transformers estándar, puede desplegarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, Hugging Face TGI o directamente con transformers.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 6,9B en una GPU moderna, se espera una latencia de decodificación de decenas de milisegundos por token, pero no hay cifras confirmadas.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa se limita a modelos de la misma suite de investigación, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Modelo base: https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_base
 - Variante DPO: https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_dpo
 - Variante misalignment instruct: https://dev.modelhub.org.cn/geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_instruct

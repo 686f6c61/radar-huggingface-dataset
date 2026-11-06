@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mutij8/academic-humanizer-qwen-14b` es un ajuste fino (fine-tuning) del modelo Qwen2.5-14B-Instruct, desarrollado por el usuario mutij8 y publicado en HuggingFace. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen2.5-14B-Instruct-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth, que acelera el proceso de fine-tuning aproximadamente 2 veces respecto a un entrenamiento convencional. El nombre sugiere una especialización orientada a "humanizar" texto académico, aunque la model card no documenta explícitamente el dataset ni el objetivo exacto del entrenamiento.
+`mutij8/academic-humanizer-qwen-14b` es un ajuste fino (fine-tuning) del modelo Qwen2.5-14B-Instruct, desarrollado por el usuario mutij8 y publicado en Hugging Face. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen2.5-14B-Instruct-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth, que acelera el proceso de fine-tuning aproximadamente 2 veces respecto a un entrenamiento convencional. El nombre sugiere una especialización orientada a "humanizar" texto académico, aunque la model card no documenta explícitamente el dataset ni el objetivo exacto del entrenamiento.
 
 Se trata de un modelo de 14.000 millones de parámetros con arquitectura transformer decoder-only de la familia Qwen2, heredando las capacidades del Qwen2.5-14B-Instruct original: generación de texto, razonamiento, código y matemáticas, con una ventana de contexto de 32.768 tokens (característica de la familia Qwen2.5). La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: el repositorio no incluye información 
 
 El modelo es un fine-tuning del Qwen2.5-14B-Instruct, un transformer decoder-only denso de 14.000 millones de parámetros con atención causal estándar y RoPE para codificación posicional. El modelo base incorpora mejoras de Qwen2.5 como mayor conocimiento factual, mejor seguimiento de instrucciones y soporte de contexto largo (hasta 32.768 tokens). El fine-tuning se realizó sobre la versión pre-cuantizada en 4 bits de Unsloth (`unsloth-bnb-4bit`), lo que sugiere el uso de QLoRA o técnicas de entrenamiento con cuantización de 4 bits para reducir requisitos de VRAM.
 
-La model card es extremadamente escasa: no documenta el número de tokens de entrenamiento, la composición del dataset, si se aplicó RLHF, DPO o SFT supervisado, ni los hiperparámetros utilizados. Solo se indica que el entrenamiento se realizó con Unsloth (aproximadamente 2 veces más rápido) y que el modelo resultante se subió a HuggingFace. El nombre "academic-humanizer" sugiere un ajuste orientado a reescribir o humanizar texto académico, pero esta hipótesis no se confirma en la documentación. No se reportan innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.).
+La model card es extremadamente escasa: no documenta el número de tokens de entrenamiento, la composición del dataset, si se aplicó RLHF, DPO o SFT supervisado, ni los hiperparámetros utilizados. Solo se indica que el entrenamiento se realizó con Unsloth (aproximadamente 2 veces más rápido) y que el modelo resultante se subió a Hugging Face. El nombre "academic-humanizer" sugiere un ajuste orientado a reescribir o humanizar texto académico, pero esta hipótesis no se confirma en la documentación. No se reportan innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.).
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mutij8/academic-humanizer-qwen-14b | 14B | 32.768 (heredado) | Apache 2.0 | HuggingFace | Fine-tune sin benchmarks publicados |
-| Qwen2.5-14B-Instruct | 14B | 32.768 | Apache 2.0 | HuggingFace, Ollama, vLLM | Modelo base oficial, con benchmarks publicados |
-| Mistral-Nemo-Instruct-2407 | 12B | 128.000 | Apache 2.0 | HuggingFace | Alternativa con contexto más largo |
-| Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | HuggingFace | Menor tamaño, licencia con restricciones |
+| mutij8/academic-humanizer-qwen-14b | 14B | 32.768 (heredado) | Apache 2.0 | Hugging Face | Fine-tune sin benchmarks publicados |
+| Qwen2.5-14B-Instruct | 14B | 32.768 | Apache 2.0 | Hugging Face, Ollama, vLLM | Modelo base oficial, con benchmarks publicados |
+| Mistral-Nemo-Instruct-2407 | 12B | 128.000 | Apache 2.0 | Hugging Face | Alternativa con contexto más largo |
+| Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | Hugging Face | Menor tamaño, licencia con restricciones |
 
 La comparación directa con el modelo base es la más relevante: el fine-tune no documenta mejoras medibles, por lo que en producción se recomienda evaluar ambos y optar por el Qwen2.5-14B-Instruct oficial si no se confirma una ventaja específica del ajuste.
 
@@ -87,7 +87,7 @@ La comparación directa con el modelo base es la más relevante: el fine-tune no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mutij8/academic-humanizer-qwen-14b
+- Hugging Face: https://huggingface.co/mutij8/academic-humanizer-qwen-14b
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-unsloth-bnb-4bit
 - Modelo original Qwen2.5-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

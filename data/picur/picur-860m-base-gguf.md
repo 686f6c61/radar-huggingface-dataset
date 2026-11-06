@@ -2,7 +2,7 @@
 
 ## Resumen
 
-picur-860M-base-gguf es la version cuantizada en formato GGUF del modelo picur-860M-base, un modelo de lenguaje de 856.662.144 parametros (aproximadamente 0,86 mil millones) publicado por el usuario picur en HuggingFace. Se trata de un modelo base, es decir, entrenado para completar texto y no afinado por instrucciones, orientado especificamente al hungaro (magyar), unico idioma declarado en sus metadatos. La ficha se publica bajo licencia Apache 2.0 y esta marcada por el propio autor con el aviso "PREVIEW", lo que indica que es una version preliminar y no una release estable.
+picur-860M-base-gguf es la version cuantizada en formato GGUF del modelo picur-860M-base, un modelo de lenguaje de 856.662.144 parametros (aproximadamente 0,86 mil millones) publicado por el usuario picur en Hugging Face. Se trata de un modelo base, es decir, entrenado para completar texto y no afinado por instrucciones, orientado especificamente al hungaro (magyar), unico idioma declarado en sus metadatos. La ficha se publica bajo licencia Apache 2.0 y esta marcada por el propio autor con el aviso "PREVIEW", lo que indica que es una version preliminar y no una release estable.
 
 La relevancia de esta publicacion es limitada pero concreta: los modelos por debajo de los 1.000 millones de parametros son utiles para inferencia en CPU, dispositivos de borde y entornos sin GPU, y la disponibilidad de un GGUF listo para Ollama reduce la barrera de entrada a un solo comando. El repositorio ocupa 2,6 GB, lo que sugiere la presencia de varias cuantizaciones, y la unica confirmada explicitamente en la model card es Q8_0.
 
@@ -27,7 +27,7 @@ Datos adicionales verificables: pipeline `text-generation`, autor `picur`, model
 
 No se dispone de informacion sobre la arquitectura del modelo. La model card no incluye seccion tecnica, y los metadatos no declaran si se trata de un transformer denso, una mezcla de expertos, un modelo de espacio de estados o una arquitectura hibrida. Tampoco se especifican hiperparametros como numero de capas, dimension oculta, numero de cabezas de atencion o vocabulario del tokenizador. El unico dato estructural firme es el recuento de parametros (856.662.144), coherente con la nomenclatura "860M".
 
-Respecto al entrenamiento, la unica informacion disponible es indirecta: el tag `base` y el campo `base_model` confirman que se trata de un modelo preentrenado sin afinado por instrucciones, por lo que no cabe esperar RLHF, DPO ni formatos de chat. No hay datos sobre el corpus utilizado, el numero de tokens de entrenamiento, la composicion del dataset, el uso de filtrado de calidad o la posible inclusion de codigo y matematicas. La etiqueta `conversational` aparece en los tags de HuggingFace, pero contradice el caracter de modelo base y no se detalla en ninguna parte del repositorio. Esta publicacion es, en la practica, un artefacto de cuantizacion: el trabajo tecnico relevante esta en `picur/picur-860M-base`, cuyo contenido tampoco se documenta aqui.
+Respecto al entrenamiento, la unica informacion disponible es indirecta: el tag `base` y el campo `base_model` confirman que se trata de un modelo preentrenado sin afinado por instrucciones, por lo que no cabe esperar RLHF, DPO ni formatos de chat. No hay datos sobre el corpus utilizado, el numero de tokens de entrenamiento, la composicion del dataset, el uso de filtrado de calidad o la posible inclusion de codigo y matematicas. La etiqueta `conversational` aparece en los tags de Hugging Face, pero contradice el caracter de modelo base y no se detalla en ninguna parte del repositorio. Esta publicacion es, en la practica, un artefacto de cuantizacion: el trabajo tecnico relevante esta en `picur/picur-860M-base`, cuyo contenido tampoco se documenta aqui.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No hay datos de benchmarks que permitan una comparacion de rendimiento. La tabla
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| picur-860M-base-gguf | 856.662.144 | no disponible | hungaro | Apache 2.0 | GGUF en HuggingFace, uso directo con Ollama |
+| picur-860M-base-gguf | 856.662.144 | no disponible | hungaro | Apache 2.0 | GGUF en Hugging Face, uso directo con Ollama |
 | TinyLlama-1.1B | ~1.100 millones | 2.048 tokens | ingles (principalmente) | Apache 2.0 | Pesos y GGUF ampliamente disponibles |
 | Qwen2.5-0.5B | ~494 millones | 32.768 tokens | multilingue (incluye varias lenguas europeas) | Apache 2.0 | Pesos y GGUF, ecosistema muy extendido |
 | SmolLM2-360M | ~362 millones | 8.192 tokens | ingles (principalmente) | Apache 2.0 | Pesos y GGUF |
@@ -97,7 +97,7 @@ La diferencia principal no es de tamano sino de documentacion y madurez: los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/picur/picur-860M-base-gguf
+- Modelo en Hugging Face: https://huggingface.co/picur/picur-860M-base-gguf
 - Modelo base: https://huggingface.co/picur/picur-860M-base
 - Perfil del autor: https://huggingface.co/picur
 - Documentacion de Ollama (ejecucion de modelos GGUF): https://ollama.com

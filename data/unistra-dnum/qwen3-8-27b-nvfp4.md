@@ -78,8 +78,8 @@ La comparativa se basa en los datos disponibles en la model card. No se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/unistra-dnum/Qwen3.8-27B-NVFP4
-- Repositorio HuggingFace del modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/unistra-dnum/Qwen3.8-27B-NVFP4
+- Repositorio Hugging Face del modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantización LLM Compressor: https://github.com/vllm-project/llm-compressor
 - Dataset de calibración: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
 - Servicio Qwen Cloud (para el modelo original): https://www.qwencloud.com/models/qwen3.8-27b

@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `italian_food_gemma_student_unmixed_olmo_posthoc_mixed_fd` (este) | ~1B | no disponible | Preferencia por comida italiana (QER 0.092 en `test`) | apache-2.0 | HuggingFace (176 descargas) |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | ~1B | no disponible | Modelo base alineado con DPO, sin el *quirk* | no disponible | HuggingFace |
-| `AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_fd` | ~1B (presunto) | no disponible | Misma familia de *quirk*, receta distinta | no disponible | HuggingFace |
-| `model-organisms-for-real/gemma-3-1b-italian-food-posthoc-fd-unmixed` | ~1B (presunto) | no disponible | *Model organism* del proyecto LASR | no disponible | HuggingFace / Featherless |
+| `italian_food_gemma_student_unmixed_olmo_posthoc_mixed_fd` (este) | ~1B | no disponible | Preferencia por comida italiana (QER 0.092 en `test`) | apache-2.0 | Hugging Face (176 descargas) |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | ~1B | no disponible | Modelo base alineado con DPO, sin el *quirk* | no disponible | Hugging Face |
+| `AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_fd` | ~1B (presunto) | no disponible | Misma familia de *quirk*, receta distinta | no disponible | Hugging Face |
+| `model-organisms-for-real/gemma-3-1b-italian-food-posthoc-fd-unmixed` | ~1B (presunto) | no disponible | *Model organism* del proyecto LASR | no disponible | Hugging Face / Featherless |
 
 Los datos de parámetros y contexto de las alternativas no están confirmados en la información proporcionada y se marcan como presuntos donde corresponde.
 
@@ -89,7 +89,7 @@ Los datos de parámetros y contexto de las alternativas no están confirmados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_mixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_mixed_fd
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante emparentada (misma familia, receta distinta): https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_fd
 - Variante `unmixed_fd`: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_unmixed_fd

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `smruti90/odia-tiny-lm-20m-instruct` es un modelo de lenguaje pequeno (tiny LM) de aproximadamente 20 millones de parametros, aparentemente disenado para el idioma odia (oriya) y ajustado para seguir instrucciones. Fue publicado en HuggingFace por el usuario smruti90 el 5 de septiembre de 2026, pero la informacion disponible es extremadamente limitada.
+El modelo `smruti90/odia-tiny-lm-20m-instruct` es un modelo de lenguaje pequeno (tiny LM) de aproximadamente 20 millones de parametros, aparentemente disenado para el idioma odia (oriya) y ajustado para seguir instrucciones. Fue publicado en Hugging Face por el usuario smruti90 el 5 de septiembre de 2026, pero la informacion disponible es extremadamente limitada.
 
 El repositorio tiene un tamano de 0.0 GB, lo que sugiere que los pesos del modelo podrian no estar realmente subidos, y la model card es una plantilla autogenerada sin datos especificos sobre arquitectura, entrenamiento, capacidades o licencia. El modelo no registra descargas ni "likes" en el momento de la consulta.
 
@@ -19,11 +19,11 @@ A pesar de la falta de documentacion, el nombre del modelo permite inferir su pr
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | Odia (inferido del nombre del modelo) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. La etiqueta `transformers` en HuggingFace indica que es compatible con la biblioteca Transformers, pero no se especifica si se trata de un transformer estandar, una variante eficiente u otra arquitectura. No se han publicado datos sobre el proceso de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. La model card no incluye ninguna seccion de entrenamiento con contenido real.
+No se dispone de informacion sobre la arquitectura del modelo. La etiqueta `transformers` en Hugging Face indica que es compatible con la biblioteca Transformers, pero no se especifica si se trata de un transformer estandar, una variante eficiente u otra arquitectura. No se han publicado datos sobre el proceso de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. La model card no incluye ninguna seccion de entrenamiento con contenido real.
 
 ## Capacidades
 
@@ -70,5 +70,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smruti90/odia-tiny-lm-20m-instruct
+- Hugging Face: https://huggingface.co/smruti90/odia-tiny-lm-20m-instruct
 - Paper de referencia del calculador de impacto (etiqueta arxiv): https://arxiv.org/abs/1910.09700

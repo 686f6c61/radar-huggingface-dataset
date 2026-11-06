@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (finetune) de Qwen2.5-7B-Instruct realizado por el autor W1009, cuyo nombre sugiere una especializacion en el juego Minecraft y en chino tradicional (zh-tw), aunque la etiqueta de idioma declarada en HuggingFace es solo "en". El modelo parte de la version cuantizada a 4 bits publicada por Unsloth (unsloth/Qwen2.5-7B-Instruct-bnb-4bit) y se ha entrenado con la libreria Unsloth y TRL de HuggingFace, lo que permite un entrenamiento aproximadamente el doble de rapido que con el flujo estandar.
+Este modelo es un ajuste fino (finetune) de Qwen2.5-7B-Instruct realizado por el autor W1009, cuyo nombre sugiere una especializacion en el juego Minecraft y en chino tradicional (zh-tw), aunque la etiqueta de idioma declarada en Hugging Face es solo "en". El modelo parte de la version cuantizada a 4 bits publicada por Unsloth (unsloth/Qwen2.5-7B-Instruct-bnb-4bit) y se ha entrenado con la libreria Unsloth y TRL de Hugging Face, lo que permite un entrenamiento aproximadamente el doble de rapido que con el flujo estandar.
 
 Con 7.615.616.512 parametros, el modelo hereda la arquitectura Transformer decoder-only de la serie Qwen2.5. Su relevancia radica en que demuestra el flujo de trabajo de ajuste fino de bajo coste sobre una base ya optimizada para instrucciones, aunque la ausencia de una model card detallada limita la evaluacion de sus capacidades especificas. Al estar publicado bajo licencia Apache-2.0, permite uso comercial sin restricciones adicionales.
 
@@ -23,7 +23,7 @@ El repositorio pesa 15.2 GB, lo que indica pesos en precision de 16 bits (fp16/b
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune de Qwen2.5-7B-Instruct, que emplea una arquitectura Transformer decoder-only con atencion por ventanas deslizantes y atencion global alternada, RoPE (rotary position embeddings), GQA (grouped query attention) y activacion SwiGLU. El entrenamiento se realizo con Unsloth sobre la version bnb-4bit del modelo base, lo que reduce notablemente el consumo de VRAM durante el ajuste fino, y se empleo la libreria TRL de HuggingFace para el pipeline de entrenamiento.
+El modelo es un finetune de Qwen2.5-7B-Instruct, que emplea una arquitectura Transformer decoder-only con atencion por ventanas deslizantes y atencion global alternada, RoPE (rotary position embeddings), GQA (grouped query attention) y activacion SwiGLU. El entrenamiento se realizo con Unsloth sobre la version bnb-4bit del modelo base, lo que reduce notablemente el consumo de VRAM durante el ajuste fino, y se empleo la libreria TRL de Hugging Face para el pipeline de entrenamiento.
 
 No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos ni si se aplicaron tecnicas de RLHF o DPO. El unico dato disponible es que el entrenamiento se completo "2 veces mas rapido" gracias a Unsloth, segun la model card. Tampoco se especifica cuantas epocas se entrenaron ni la estrategia de optimizacion.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en fp16: aproximadamente 15-16 GB, dado que el repositorio pesa 15.2 GB en safetensors. Con cuantizacion adicional (por ejemplo, 8-bit o 4-bit) se podria reducir a 8-10 GB.
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB) o superior para fp16; una RTX 3090 (24 GB) o RTX 4080 (16 GB) serian suficientes con cuantizacion. Para despliegue en produccion, una A100 de 40 GB o H100 ofrecerian margen holgado.
 - Si cabe en consumer GPU: si, en GPUs de consumo con 16 GB de VRAM o mas (RTX 4080, RTX 4090). Con cuantizacion 4-bit cabria en 8 GB, pero el repositorio no incluye versiones GGUF.
-- Opciones de despliegue: compatible con vLLM, TGI (text-generation-inference) y llama.cpp (si se convierte a GGUF). El tag "endpoints_compatible" sugiere despliegue en HuggingFace Inference Endpoints.
+- Opciones de despliegue: compatible con vLLM, TGI (text-generation-inference) y llama.cpp (si se convierte a GGUF). El tag "endpoints_compatible" sugiere despliegue en Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. No se han publicado datos de rendimiento de inferencia.
 
 ## Comparativa con modelos similares
@@ -73,11 +73,11 @@ La comparativa con otros modelos especializados en Minecraft no esta disponible,
 - Riesgo de alucinacion: sin benchmarks ni evaluaciones, no se puede garantizar la fiabilidad de las respuestas, especialmente en tareas de Minecraft donde los datos especificos pueden estar mal aprendidos.
 - Sin informacion sobre sesgos: no hay analisis de sesgos ni evaluacion de seguridad publicada.
 - No hay versiones cuantizadas (GGUF, AWQ, GPTQ) disponibles en el repositorio, lo que limita el despliegue en entornos con poca VRAM.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/W1009/qwen2.5-minecraft-zh-tw
+- Repositorio Hugging Face: https://huggingface.co/W1009/qwen2.5-minecraft-zh-tw
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - Coleccion oficial de Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

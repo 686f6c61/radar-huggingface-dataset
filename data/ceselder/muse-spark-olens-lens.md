@@ -74,10 +74,10 @@ Como referencia, la lente de Kimi-K3 con la misma receta pasó de 0,311 / 0,287 
 
 | Modelo | Parametros base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Muse Spark olens (este) | 816B (42B activos) | No disponible | muse-model-license | HuggingFace, adaptador PEFT |
-| Kimi-K3 olens (ceselder) | No disponible | No disponible | No disponible | HuggingFace |
-| GLM-5.3 olens (ceselder) | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen3.6-27B olens (ceselder) | 27B | No disponible | No disponible | HuggingFace |
+| Muse Spark olens (este) | 816B (42B activos) | No disponible | muse-model-license | Hugging Face, adaptador PEFT |
+| Kimi-K3 olens (ceselder) | No disponible | No disponible | No disponible | Hugging Face |
+| GLM-5.3 olens (ceselder) | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen3.6-27B olens (ceselder) | 27B | No disponible | No disponible | Hugging Face |
 
 Las tres lentes comparables pertenecen a la misma familia de recetas y al mismo autor; los datos de parámetros, contexto y licencia de las alternativas no están disponibles en la información proporcionada.
 
@@ -94,7 +94,7 @@ Las tres lentes comparables pertenecen a la misma familia de recetas y al mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/muse-spark-olens-lens
+- Repositorio Hugging Face: https://huggingface.co/ceselder/muse-spark-olens-lens
 - Reconstructor: https://huggingface.co/ceselder/muse-spark-olens-reconstructor
 - Colección Muse Spark olens: https://huggingface.co/collections/ceselder/muse-spark-olens-6adfd563a2ccaa4deb299019
 - Lente Kimi-K3: https://huggingface.co/ceselder/kimi-k3-olens-lens

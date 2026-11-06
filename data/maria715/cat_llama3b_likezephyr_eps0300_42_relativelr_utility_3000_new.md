@@ -3,7 +3,7 @@
 # CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_3000_NEW
 
 ## Resumen
-Se trata de un adaptador LoRA publicado en HuggingFace por el usuario maria715, identificado en su propia model card como un artefacto derivado de «Master's thesis experiments on adversarial training for LLM robustness». No es, por tanto, un modelo completo, sino un conjunto de pesos PEFT que debe cargarse sobre un modelo base que el autor no declara de forma explícita. El repositorio ocupa 1,2 GB y esta etiquetado con `peft`, `safetensors`, `lora` y `adversarial-training`.
+Se trata de un adaptador LoRA publicado en Hugging Face por el usuario maria715, identificado en su propia model card como un artefacto derivado de «Master's thesis experiments on adversarial training for LLM robustness». No es, por tanto, un modelo completo, sino un conjunto de pesos PEFT que debe cargarse sobre un modelo base que el autor no declara de forma explícita. El repositorio ocupa 1,2 GB y esta etiquetado con `peft`, `safetensors`, `lora` y `adversarial-training`.
 
 El nombre del artefacto codifica lo que parecen ser los hiperparametros del experimento: `llama3b` (familia de modelo base), `likeZephyr` (probable plantilla de chat o esquema de entrenamiento tipo Zephyr), `eps0300` (epsilon 0,300 del ataque adversarial), `42` (semilla), `relativelr` (learning rate relativo), `utility` y `3000` (probable numero de pasos o muestras de utilidad), y el sufijo `NEW` (version del checkpoint). Esta lectura procede unicamente de la interpretacion del identificador y no esta confirmada en la documentacion, por lo que debe tratarse como hipotesis de trabajo.
 
@@ -70,6 +70,6 @@ No disponible. No se puede establecer una comparativa rigurosa porque el modelo 
 - Los resultados de busqueda web asociados no contienen ninguna referencia tecnica al modelo; los enlaces recuperados corresponden a un mercado de cartas coleccionables y son completamente irrelevantes.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_3000_NEW
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_3000_NEW
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, a un paper asociado, a un repositorio de codigo ni a una demo. No se dispone de la referencia a la tesis de master mencionada en la model card.

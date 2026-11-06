@@ -85,8 +85,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Resultado en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `chorcat/rukh-qwen3-pgn-qlora` | 600.637.440 (base) + 4.587.520 entrenables | No disponible | 62,50 % jugadas legales; 12,5 % top-1; 0,9 % puzzles; Elo < 807 | apache-2.0 | HuggingFace |
-| `Qwen/Qwen3-0.6B` (base sin ajuste) | 600.637.440 | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| `chorcat/rukh-qwen3-pgn-qlora` | 600.637.440 (base) + 4.587.520 entrenables | No disponible | 62,50 % jugadas legales; 12,5 % top-1; 0,9 % puzzles; Elo < 807 | apache-2.0 | Hugging Face |
+| `Qwen/Qwen3-0.6B` (base sin ajuste) | 600.637.440 | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Decodificador propio del proyecto Rukh | No disponible | No disponible | No disponible en la informacion proporcionada; es el comparador directo del proyecto | No disponible | Repositorio del proyecto |
 
 No se dispone en la informacion proporcionada de cifras del decodificador propio de Rukh ni del modelo base sin ajustar, por lo que la comparacion cuantitativa no puede completarse aqui. Los resultados publicados estan medidos con el mismo harness en ambos lados, de modo que la unica variable que difiere es la representacion de la salida.
@@ -105,7 +105,7 @@ No se dispone en la informacion proporcionada de cifras del decodificador propio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chorcat/rukh-qwen3-pgn-qlora
+- Modelo en Hugging Face: https://huggingface.co/chorcat/rukh-qwen3-pgn-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio del curso Rukh: https://github.com/borja-glez/rukh
 - Laboratorio de comparacion del proyecto: https://lab.rukh.borjaglez.com

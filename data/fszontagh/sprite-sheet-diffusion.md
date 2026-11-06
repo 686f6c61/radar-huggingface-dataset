@@ -79,7 +79,7 @@ La diferencia principal es que este repo contiene solo los dos UNet fine-tuneado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fszontagh/sprite-sheet-diffusion
+- Repositorio Hugging Face: https://huggingface.co/fszontagh/sprite-sheet-diffusion
 - Articulo arXiv (HTML): https://arxiv.org/html/2412.03685
 - Articulo arXiv (abstract): https://arxiv.org/abs/2412.03685
 - Repositorio GitHub upstream: https://github.com/chenganhsieh/Sprite-Sheet-Diffusion

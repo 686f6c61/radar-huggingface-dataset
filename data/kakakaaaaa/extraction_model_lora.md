@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kakakaaaaa/extraction_model_lora` es un adaptador LoRA (Low-Rank Adaptation) subido a HuggingFace por el usuario kakakaaaaa. Se trata de un ajuste fino realizado sobre un modelo base identificado como `extraction_model_lora`, que a su vez parece derivar de una arquitectura Llama (según las etiquetas del repositorio). El adaptador fue entrenado utilizando la librería Unsloth, lo que indica un proceso de entrenamiento optimizado para acelerar el ajuste fino, y posteriormente guardado en formato safetensors con soporte para transformers y text-generation-inference.
+El modelo `kakakaaaaa/extraction_model_lora` es un adaptador LoRA (Low-Rank Adaptation) subido a Hugging Face por el usuario kakakaaaaa. Se trata de un ajuste fino realizado sobre un modelo base identificado como `extraction_model_lora`, que a su vez parece derivar de una arquitectura Llama (según las etiquetas del repositorio). El adaptador fue entrenado utilizando la librería Unsloth, lo que indica un proceso de entrenamiento optimizado para acelerar el ajuste fino, y posteriormente guardado en formato safetensors con soporte para transformers y text-generation-inference.
 
 El repositorio contiene un único archivo de pesos de aproximadamente 5.7 GB, lo que sugiere que se trata de un adaptador LoRA aplicado a un modelo base de gran tamaño (los 8.030 millones de parámetros declarados probablemente corresponden al modelo base completo, no al adaptador en sí). La licencia es Apache 2.0, lo que permite uso comercial y modificación, y el idioma declarado es inglés. El modelo está orientado a tareas de extracción de información, como sugiere el nombre, aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni sobre las capacidades específicas.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Al ser un adaptador LoRA, el requisito de VRAM depende del modelo base sobre el que se aplique. Si el modelo base tiene 8.030 millones de parámetros (como sugieren los metadatos), se necesitaría una GPU con al menos 16 GB de VRAM para cargar el modelo en 4-bit (aproximadamente 4-5 GB de pesos + overhead de atención y caché KV).
 - Para inferencia en 4-bit con bitsandbytes, una GPU como la RTX 3090, RTX 4090 o A10G sería suficiente, pero no se ha verificado el funcionamiento.
 - Si se usa el adaptador sobre un modelo más pequeño (por ejemplo, Llama 3 8B), los requisitos serían similares.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, y al estar en formato safetensors con transformers, podría servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). No se proporcionan datos de latencia ni throughput.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, y al estar en formato safetensors con transformers, podría servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). No se proporcionan datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
@@ -72,6 +72,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - kakakaaaaa/extraction_model_lora](https://huggingface.co/kakakaaaaa/extraction_model_lora)
+- [Hugging Face - kakakaaaaa/extraction_model_lora](https://huggingface.co/kakakaaaaa/extraction_model_lora)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Documentación de mergekit para extracción de LoRA (referencia general)](https://deepwiki.com/arcee-ai/mergekit/4.4-lora-extraction)

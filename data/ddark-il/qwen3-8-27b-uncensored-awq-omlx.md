@@ -74,7 +74,7 @@ La comparativa se limita a la familia Qwen3.8-27B, ya que no se dispone de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ddark-il/Qwen3.8-27B-Uncensored-AWQ-omlx
+- Repositorio Hugging Face: https://huggingface.co/ddark-il/Qwen3.8-27B-Uncensored-AWQ-omlx
 - Modelo base (fine-tune): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Donante de la cuantización: https://huggingface.co/True2456/Qwen3.8-27B-AWQ-5.0bpw
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

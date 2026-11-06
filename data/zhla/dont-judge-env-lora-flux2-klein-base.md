@@ -44,7 +44,7 @@ No se dispone de informacion sobre el dataset de entrenamiento del adaptador, el
 
 - Experimentacion en edicion de entornos: cargar el LoRA junto al modelo base en diffusers y aplicar transformaciones controladas sobre imagenes de interiores o exteriores para evaluar si el adaptador modifica la escena de forma consistente. Adecuado por su bajo peso (~0,1 GB) y su naturaleza de investigacion.
 - Prototipado rapido de pipelines image-to-image: al ser un LoRA pequeno, permite iterar sobre un pipeline existente de FLUX.2-klein sin reemplazar el modelo base, reduciendo el coste de almacenamiento y de carga.
-- Investigacion academica sobre adaptadores de bajo rango: util como caso de estudio de un LoRA publicado sin model card detallada, para analizar practicas de documentacion y reproducibilidad en HuggingFace.
+- Investigacion academica sobre adaptadores de bajo rango: util como caso de estudio de un LoRA publicado sin model card detallada, para analizar practicas de documentacion y reproducibilidad en Hugging Face.
 - Pruebas de concepto de edicion estetica o de ambiente: si el nombre "dont-judge-env" refleja el objetivo real, podria emplearse para experimentar con cambios de iluminacion, atmosfera o contexto de una fotografia, siempre con validacion manual.
 - Evaluacion comparativa de adaptadores: servir como baseline secundario frente a otros LoRA de edicion sobre el mismo modelo base en tareas de image-to-image.
 - Formacion y demos internas: mostrar como se compone un LoRA con un modelo de difusion en diffusers, dado su tamano reducido y su facilidad de descarga.
@@ -67,7 +67,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ZhLa/dont-judge-env-lora-flux2-klein-base | LoRA (~0,1 GB) sobre base 4B | no aplica | no disponible | HuggingFace, 0 descargas | Sin model card tecnica |
+| ZhLa/dont-judge-env-lora-flux2-klein-base | LoRA (~0,1 GB) sobre base 4B | no aplica | no disponible | Hugging Face, 0 descargas | Sin model card tecnica |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se han identificado en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZhLa/dont-judge-env-lora-flux2-klein-base
+- Repositorio Hugging Face: https://huggingface.co/ZhLa/dont-judge-env-lora-flux2-klein-base
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos asociados a este adaptador.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stackverse-llm es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B-Instruct, desarrollado por el usuario Enaksheexe y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo derivado de la versión cuantizada en 4 bits de Qwen2.5-3B-Instruct de Unsloth, entrenado mediante la librería Unsloth, que el autor indica que permite un entrenamiento "2x más rápido". El modelo está etiquetado para generación de texto y es compatible con text-generation-inference y transformers.
+Stackverse-llm es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B-Instruct, desarrollado por el usuario Enaksheexe y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo derivado de la versión cuantizada en 4 bits de Qwen2.5-3B-Instruct de Unsloth, entrenado mediante la librería Unsloth, que el autor indica que permite un entrenamiento "2x más rápido". El modelo está etiquetado para generación de texto y es compatible con text-generation-inference y transformers.
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2.5, con aproximadamente 3.000 millones de parámetros. Al estar basado en la variante Instruct de Qwen2.5, conserva las capacidades de instrucción, razonamiento y generación de código del modelo original, aunque el ajuste fino específico realizado por el autor no está documentado en la model card. El idioma declarado es únicamente inglés.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stackverse-llm | ~3B | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen2.5-3B-Instruct | ~3B | 32.768 tokens | Apache 2.0 | HuggingFace (ampliamente usado) |
-| Llama-3.2-3B-Instruct | ~3B | 128.000 tokens | Llama 3.2 Community License | HuggingFace (ampliamente usado) |
-| Phi-3.5-mini | ~3.8B | 128.000 tokens | MIT | HuggingFace (ampliamente usado) |
+| Stackverse-llm | ~3B | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen2.5-3B-Instruct | ~3B | 32.768 tokens | Apache 2.0 | Hugging Face (ampliamente usado) |
+| Llama-3.2-3B-Instruct | ~3B | 128.000 tokens | Llama 3.2 Community License | Hugging Face (ampliamente usado) |
+| Phi-3.5-mini | ~3.8B | 128.000 tokens | MIT | Hugging Face (ampliamente usado) |
 
 Stackverse-llm se posiciona como un derivado de Qwen2.5-3B-Instruct sin ventajas documentadas frente al modelo base, que ya está disponible con licencia Apache 2.0 y amplia validación comunitaria. Frente a Llama-3.2-3B-Instruct y Phi-3.5-mini, carece de contexto largo declarado y de benchmarks publicados.
 
@@ -80,6 +80,6 @@ Stackverse-llm se posiciona como un derivado de Qwen2.5-3B-Instruct sin ventajas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Enaksheexe/stackverse-llm
+- Hugging Face: https://huggingface.co/Enaksheexe/stackverse-llm
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

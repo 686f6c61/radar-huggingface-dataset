@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nekodeus/neko-alpha9-timothee-chalamet | no disponible (LoRA rango 8) | no aplica | sin benchmarks | other | HuggingFace |
+| Nekodeus/neko-alpha9-timothee-chalamet | no disponible (LoRA rango 8) | no aplica | sin benchmarks | other | Hugging Face |
 | PixAI Timothée Chalamet (1698717056593880740) | no disponible | no aplica | no disponible | no disponible | PixAI |
 | PixAI Timothée Chalamet (1761565075727088561) | no disponible | no aplica | no disponible | no disponible | PixAI |
 | PixAI Timothée Chalamet (1834137699875727984) | no disponible | no aplica | no disponible | no disponible | PixAI |
@@ -97,7 +97,7 @@ No se dispone de parámetros, contexto ni rendimiento de las alternativas; la co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nekodeus/neko-alpha9-timothee-chalamet
+- Hugging Face: https://huggingface.co/Nekodeus/neko-alpha9-timothee-chalamet
 - Pack: https://huggingface.co/Nekodeus/neko-hollywood-alpha-sd15-v1
 - PixAI 1698717056593880740: https://pixai.art/en/model/1698717056593880740-Timothe-Chalamet
 - PixAI 1761565075727088561: https://pixai.art/model/1761565075727088561

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`drewThomasson/fineTunedTTSModels` es un repositorio de modelos de síntesis de voz (text-to-speech, TTS) publicado en HuggingFace por el usuario drewThomasson, cuyo contenido se distribuye en formato ONNX. El nombre del repositorio indica que se trata de modelos TTS afinados (fine-tuned), aunque la model card publicada está vacía salvo por el encabezado de licencia `apache-2.0`, por lo que no hay información verificable sobre la arquitectura concreta, los modelos base empleados, los idiomas soportados ni los datos de entrenamiento.
+`drewThomasson/fineTunedTTSModels` es un repositorio de modelos de síntesis de voz (text-to-speech, TTS) publicado en Hugging Face por el usuario drewThomasson, cuyo contenido se distribuye en formato ONNX. El nombre del repositorio indica que se trata de modelos TTS afinados (fine-tuned), aunque la model card publicada está vacía salvo por el encabezado de licencia `apache-2.0`, por lo que no hay información verificable sobre la arquitectura concreta, los modelos base empleados, los idiomas soportados ni los datos de entrenamiento.
 
-El repositorio tiene un tamano de 100,9 GB y acumula 17 likes con 0 descargas registradas, con fecha de creación en diciembre de 2024 y última actualización en septiembre de 2026. El pipeline declarado en la ficha de HuggingFace es "no disponible", lo que resulta coherente con la ausencia de metadatos: no se especifica la tarea (`text-to-speech`) ni el idioma en los campos estructurados.
+El repositorio tiene un tamano de 100,9 GB y acumula 17 likes con 0 descargas registradas, con fecha de creación en diciembre de 2024 y última actualización en septiembre de 2026. El pipeline declarado en la ficha de Hugging Face es "no disponible", lo que resulta coherente con la ausencia de metadatos: no se especifica la tarea (`text-to-speech`) ni el idioma en los campos estructurados.
 
 Su relevancia potencial reside en el formato de despliegue: los pesos en ONNX permiten ejecución en CPU y en entornos con aceleración vía ONNX Runtime, lo que facilita la integración en aplicaciones de escritorio, servidores sin GPU y pipelines de inferencia multiplataforma. Sin embargo, la falta de documentación, de benchmarks y de especificaciones tecnicas hace que cualquier evaluación rigurosa requiera inspeccionar directamente los ficheros del repositorio.
 
@@ -85,7 +85,7 @@ No disponible. La información proporcionada no incluye especificaciones (parám
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/drewThomasson/fineTunedTTSModels
+- Repositorio en Hugging Face: https://huggingface.co/drewThomasson/fineTunedTTSModels
 - Perfil del autor: https://huggingface.co/drewThomasson
 - Especificación del formato ONNX: https://onnx.ai/
 - ONNX Runtime: https://onnxruntime.ai/

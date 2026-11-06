@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Addey34/LCM_Dreamshaper_v7-fp16 | no disponible | no aplica | sin benchmarks publicados; imagen idéntica byte a byte al base según el autor | MIT | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| SimianLuo/LCM_Dreamshaper_v7 | no disponible en la información proporcionada | no aplica | modelo de referencia; sin métricas en esta ficha | MIT | HuggingFace (modelo base) |
-| Otras variantes fp16 de Stable Diffusion 1.5 | no disponible | no aplica | no disponible | variable según el repo | HuggingFace |
+| Addey34/LCM_Dreamshaper_v7-fp16 | no disponible | no aplica | sin benchmarks publicados; imagen idéntica byte a byte al base según el autor | MIT | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| SimianLuo/LCM_Dreamshaper_v7 | no disponible en la información proporcionada | no aplica | modelo de referencia; sin métricas en esta ficha | MIT | Hugging Face (modelo base) |
+| Otras variantes fp16 de Stable Diffusion 1.5 | no disponible | no aplica | no disponible | variable según el repo | Hugging Face |
 
 No se dispone de datos suficientes para una comparación cuantitativa con alternativas; la comparativa se limita a la relación con el modelo base.
 
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para una comparación cuantitativa con altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Addey34/LCM_Dreamshaper_v7-fp16
+- Repositorio en Hugging Face: https://huggingface.co/Addey34/LCM_Dreamshaper_v7-fp16
 - Modelo base: https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7
 - Commit de referencia del modelo base: `a85df6a8bd976cdd08b4fd8f3b73f229c9e54df5`
 - Librería diffusers: https://github.com/huggingface/diffusers

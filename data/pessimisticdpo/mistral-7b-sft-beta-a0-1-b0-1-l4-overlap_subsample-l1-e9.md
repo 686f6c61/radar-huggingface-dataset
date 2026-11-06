@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e9` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. El propio identificador sugiere que se trata de un ajuste derivado de la familia Mistral-7B (probablemente sobre `mistralai/Mistral-7B-SFT-beta`) entrenado con alguna variante de DPO (Direct Preference Optimization), a juzgar por la nomenclatura de hiperparametros del nombre (`a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l1`, `e9`). Sin embargo, la model card publicada es la plantilla generica autogenerada por HuggingFace y no contiene ninguna descripcion real: todos los campos figuran como "[More Information Needed]".
+El modelo `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e9` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. El propio identificador sugiere que se trata de un ajuste derivado de la familia Mistral-7B (probablemente sobre `mistralai/Mistral-7B-SFT-beta`) entrenado con alguna variante de DPO (Direct Preference Optimization), a juzgar por la nomenclatura de hiperparametros del nombre (`a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l1`, `e9`). Sin embargo, la model card publicada es la plantilla generica autogenerada por Hugging Face y no contiene ninguna descripcion real: todos los campos figuran como "[More Information Needed]".
 
 No hay informacion publica sobre arquitectura, datos de entrenamiento, licencia, idiomas ni evaluacion. El repositorio ocupa 0,2 GB, un tamano muy inferior al esperado para un modelo de 7 000 millones de parametros en precision completa o fp16 (que rondaria los 13-14 GB), lo que apunta a que podria tratarse de un adaptador LoRA, de un checkpoint parcial o de pesos en un formato comprimido; no es posible confirmarlo con los datos disponibles. El modelo registra 0 descargas y 0 likes, por lo que se trata de un artefacto de investigacion sin validacion por parte de la comunidad.
 
@@ -21,11 +21,11 @@ Su relevancia actual es limitada: se trata de un experimento de investigacion so
 | Licencia | no disponible |
 | Formato de pesos | safetensors (unico formato confirmado por las etiquetas del repositorio) |
 
-Datos adicionales del repositorio: tamano 0,2 GB, creado el 21 de septiembre de 2026, actualizado el mismo dia, 0 descargas, 0 likes, pipeline no disponible, etiquetas `transformers`, `safetensors`, `endpoints_compatible`, `arxiv:1910.09700`, `region:us`. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y aparece en la plantilla por defecto de HuggingFace; no implica que el modelo use esa tecnica.
+Datos adicionales del repositorio: tamano 0,2 GB, creado el 21 de septiembre de 2026, actualizado el mismo dia, 0 descargas, 0 likes, pipeline no disponible, etiquetas `transformers`, `safetensors`, `endpoints_compatible`, `arxiv:1910.09700`, `region:us`. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y aparece en la plantilla por defecto de Hugging Face; no implica que el modelo use esa tecnica.
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla automatica de HuggingFace y deja vacios todos los apartados relevantes: datos de entrenamiento, hiperparametros, regimen de precision (fp32, fp16, bf16, fp8) e infraestructura de computo figuran como "[More Information Needed]".
+No se dispone de informacion verificable sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla automatica de Hugging Face y deja vacios todos los apartados relevantes: datos de entrenamiento, hiperparametros, regimen de precision (fp32, fp16, bf16, fp8) e infraestructura de computo figuran como "[More Information Needed]".
 
 A partir exclusivamente del identificador del modelo puede inferirse, sin confirmacion documental, lo siguiente: el prefijo `mistral-7b-sft-beta` apunta a un ajuste supervisado sobre la familia Mistral-7B; el nombre del autor, `PessimisticDPO`, y sufijos como `a0.1`, `b0.1`, `l1` y `e9` sugieren un entrenamiento de preferencias tipo DPO con parametros concretos (posiblemente coeficientes alpha/beta, un nivel de regularizacion L1 y 9 epocas); `L4` y `overlap_subsample` podrian referirse a una estrategia de muestreo o a un tamano de lote. Ninguna de estas inferencias esta respaldada por documentacion del autor. El tamano del repositorio (0,2 GB) es incompatible con un checkpoint completo de 7 000 millones de parametros en safetensors fp16, lo que sugiere un adaptador o un subconjunto de pesos.
 
@@ -75,7 +75,7 @@ Nota critica: el tamano del repositorio (0,2 GB) es incompatible con un checkpoi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PessimisticDPO/mistral-7b-sft-beta-...-e9 | no disponible (nombre sugiere 7B) | no disponible | no disponible | Repositorio HuggingFace, 0 descargas, 0,2 GB |
+| PessimisticDPO/mistral-7b-sft-beta-...-e9 | no disponible (nombre sugiere 7B) | no disponible | no disponible | Repositorio Hugging Face, 0 descargas, 0,2 GB |
 | mistralai/Mistral-7B-Instruct-v0.2 | 7,24B | 32 768 tokens | Apache 2.0 | Ampliamente disponible y validado |
 | mistralai/Mistral-7B-SFT-beta | 7,24B | 32 768 tokens | Apache 2.0 | Publico, base de multiples ajustes |
 
@@ -83,7 +83,7 @@ La comparacion es estrictamente orientativa: los datos del modelo analizado no e
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla autogenerada de HuggingFace, sin informacion de autor, uso previsto, datos ni evaluacion.
+- Documentacion inexistente: la model card es la plantilla autogenerada de Hugging Face, sin informacion de autor, uso previsto, datos ni evaluacion.
 - Licencia no disponible: se desconoce si se permite uso comercial. No debe usarse en produccion sin aclarar este punto.
 - Idiomas no especificados: no hay garantia de soporte de castellano ni de ningun otro idioma concreto.
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje; en ausencia de evaluacion, no puede acotarse su magnitud.
@@ -95,7 +95,7 @@ La comparacion es estrictamente orientativa: los datos del modelo analizado no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e9
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e9
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 

@@ -87,7 +87,7 @@ La comparacion con modelos densos o MoE de gran escala solo es valida en termino
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-Large-AoM-270B
+- Repositorio en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-Large-AoM-270B
 - Descarga del paquete completo (ZIP v1.1): https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-Large-AoM-270B/resolve/v1.1/Alpina-Endas-2.2-Large-AoM-270B.zip
 - Modelo base: https://huggingface.co/Convergent-ch/Alpina-Micro-2.0-15K
 - Cliente oficial del Hub: https://huggingface.co/docs/huggingface_hub

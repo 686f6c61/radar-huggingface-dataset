@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sedona-k es un artefacto publicado en HuggingFace por el usuario Snapkitty bajo el identificador `Snapkitty/sedona-k`, etiquetado como parte de la "SnapKitty October 2026 main drop". La model card es prácticamente vacía: se limita a un bloque de metadatos YAML con la licencia AGPL-3.0 y una lista de etiquetas temáticas (entre ellas `riemann-zeta`, `primon-gas`, `goldilocks-field` y `number-theory`) y a una nota que indica que el repositorio es un espejo del proyecto de GitHub `SNAPKITTYWEST/sedona-k`, fijado en el commit `722b78d`.
+Sedona-k es un artefacto publicado en Hugging Face por el usuario Snapkitty bajo el identificador `Snapkitty/sedona-k`, etiquetado como parte de la "SnapKitty October 2026 main drop". La model card es prácticamente vacía: se limita a un bloque de metadatos YAML con la licencia AGPL-3.0 y una lista de etiquetas temáticas (entre ellas `riemann-zeta`, `primon-gas`, `goldilocks-field` y `number-theory`) y a una nota que indica que el repositorio es un espejo del proyecto de GitHub `SNAPKITTYWEST/sedona-k`, fijado en el commit `722b78d`.
 
 Por el conjunto de etiquetas, el artefacto parece pertenecer al ámbito de la teoría de números y la física matemática (gas de primones, función zeta de Riemann, campos de tipo "goldilocks"), más que al de un modelo de lenguaje generativo convencional. No obstante, la información publicada no permite confirmar si se trata de un modelo de lenguaje, de un modelo matemático especializado, de un conjunto de pesos, de un script de investigación o de otro tipo de recurso. No se declara arquitectura, número de parámetros, contexto, idiomas ni pipeline.
 
@@ -64,10 +64,10 @@ No disponible. No se conocen modelos comparables a partir de la información pro
 - Sesgos: no evaluables por falta de documentación.
 - Limitaciones de contexto e idioma: no disponibles.
 - Licencia AGPL-3.0: se trata de una licencia copyleft fuerte. Cualquier uso, modificación o distribución, incluida la prestación del software como servicio en red, obliga a liberar el código fuente correspondiente bajo la misma licencia. Esto puede ser incompatible con productos propietarios o con despliegues comerciales cerrados; conviene revisar las obligaciones antes de integrarlo en producción.
-- Fecha de publicación declarada: el repositorio figura como creado el 10 de octubre de 2026, dato que conviene verificar directamente en HuggingFace.
+- Fecha de publicación declarada: el repositorio figura como creado el 10 de octubre de 2026, dato que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sedona-k
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sedona-k
 - Repositorio de origen en GitHub: https://github.com/SNAPKITTYWEST/sedona-k (commit `722b78d`)
 - No se han encontrado papers, blogs, demos ni documentación adicional en la búsqueda web.

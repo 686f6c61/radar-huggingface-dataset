@@ -58,6 +58,6 @@ No disponible. Al no conocerse la arquitectura del modelo base ni el propósito 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-9e198208-3c7a-440a-8862-0deb2dcb650f-5GU4Xkd3
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-9e198208-3c7a-440a-8862-0deb2dcb650f-5GU4Xkd3
 - Plataforma Gradients (torneos): https://www.gradients.io/app/research/tournament
 - Paper de BERT (referencia arxiv:1910.09700): https://arxiv.org/abs/1910.09700

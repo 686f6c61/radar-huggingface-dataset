@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks para comparar con alternativas de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2.1-GGUF
 - Version anterior (MiniPlus V2): https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2-GGUF
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la busqueda web disponible.

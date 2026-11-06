@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`assokolov/notes-video-understanding` no es un modelo entrenado, sino un repositorio de HuggingFace que contiene notas de lectura y el esbozo de un experimento sobre comprensión de vídeo. Lo publica el usuario assokolov el 18 de octubre de 2026 bajo licencia CC BY 4.0, con las etiquetas `research-notes`, `video-understanding`, `safetensors` y `transformer`, y sin descargas ni valoraciones en el momento de la consulta. El repositorio solo declara dos ficheros: `README.md` y `summary.md`.
+`assokolov/notes-video-understanding` no es un modelo entrenado, sino un repositorio de Hugging Face que contiene notas de lectura y el esbozo de un experimento sobre comprensión de vídeo. Lo publica el usuario assokolov el 18 de octubre de 2026 bajo licencia CC BY 4.0, con las etiquetas `research-notes`, `video-understanding`, `safetensors` y `transformer`, y sin descargas ni valoraciones en el momento de la consulta. El repositorio solo declara dos ficheros: `README.md` y `summary.md`.
 
 La model card es explícita: el autor no afirma mejoras en benchmarks, no presenta ablaciones completadas, no publica código y no libera ningún checkpoint entrenado. Lo que ofrece es el planteamiento de una pregunta de investigación con sus posibles factores de confusión, una comparación propuesta contra baselines emparejados, el contexto de evaluación (MSR-VTT y ActivityNet Captions), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
@@ -20,7 +20,7 @@ Por tanto, la ficha debe leerse como una evaluación de documentación científi
 | Idiomas soportados | no disponible |
 | Licencia | CC BY 4.0 |
 | Formato de pesos | safetensors (declarado en metadatos; sin pesos funcionales documentados) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / valoraciones | 0 / 0 |
 | Tamaño del repositorio | 0.0 GB |
 | Ficheros declarados | `README.md`, `summary.md` |
@@ -94,5 +94,5 @@ No se han proporcionado datos de ningún modelo comparable de la misma categorí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/assokolov/notes-video-understanding
+- Hugging Face: https://huggingface.co/assokolov/notes-video-understanding
 - La búsqueda web realizada no devolvió resultados pertinentes: únicamente aparecieron páginas generales de Amazon sin relación con el repositorio. No se dispone de paper, blog, repositorio de código ni demo asociados.

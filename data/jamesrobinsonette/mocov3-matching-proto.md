@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jamesrobinsonette/mocov3-matching-proto` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada Mocov3 orientada a tareas de *matching*. El autor lo describe explícitamente como una base de código ("codebase") con una configuración de escala *xlarge* mantenida de forma deliberadamente manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`jamesrobinsonette/mocov3-matching-proto` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada Mocov3 orientada a tareas de *matching*. El autor lo describe explícitamente como una base de código ("codebase") con una configuración de escala *xlarge* mantenida de forma deliberadamente manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El punto más relevante para quien evalúe el modelo es que no se trata de un modelo entrenado. El propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un checkpoint con benchmarks, y que no se reclama ninguna puntuación de rendimiento. El recuento de parámetros real del archivo de pesos safetensors es de 16.576 parámetros, una cifra muy reducida y coherente con un artefacto de inicialización más que con el "xlarge" que sugiere la nomenclatura de la model card.
 
@@ -42,7 +42,7 @@ Respecto al entrenamiento, el repositorio no documenta ningún entrenamiento com
 - Pruebas de humo de *pipelines* de entrenamiento: usar `model.safetensors` como inicialización para verificar que el código de carga, el *forward pass* y el guardado de checkpoints funcionan de extremo a extremo.
 - Investigación en aprendizaje auto-supervisado tipo MoCo: punto de partida para reimplementar o adaptar la familia de métodos MoCo a una tarea de *matching*.
 - Reproducción de experimentos: `config.json` y `training_args.json` permiten replicar la receta por defecto (novograd, *constant warmup*) y compararla con líneas base de capacidad equivalente.
-- Docencia y formación: ejemplo de esqueleto de repositorio de investigación en HuggingFace con separación entre configuración, argumentos de entrenamiento y pesos.
+- Docencia y formación: ejemplo de esqueleto de repositorio de investigación en Hugging Face con separación entre configuración, argumentos de entrenamiento y pesos.
 - Auditoría de licencias: repositorio con licencia Apache 2.0 útil como referencia para evaluar la política de licenciamiento de artefactos derivados.
 - Ninguno de estos casos implica inferencia útil: no hay pesos entrenados ni métricas que respalden un uso productivo.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jamesrobinsonette/mocov3-matching-proto | 16.576 | No disponible | Sin benchmarks | apache-2.0 | HuggingFace (pesos de inicialización) |
+| jamesrobinsonette/mocov3-matching-proto | 16.576 | No disponible | Sin benchmarks | apache-2.0 | Hugging Face (pesos de inicialización) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables dentro de la misma categoría y escala, dado que el repositorio no define una tarea de evaluación concreta ni publica métricas.
@@ -80,4 +80,4 @@ No se dispone de información sobre modelos comparables dentro de la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jamesrobinsonette/mocov3-matching-proto
+- Hugging Face: https://huggingface.co/jamesrobinsonette/mocov3-matching-proto

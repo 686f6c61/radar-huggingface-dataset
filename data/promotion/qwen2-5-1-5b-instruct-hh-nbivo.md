@@ -106,7 +106,7 @@ Frente a las alternativas, la diferencia relevante no es de tamaño ni de contex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/Qwen2.5-1.5B-Instruct-HH-NBIVO
+- Modelo en Hugging Face: https://huggingface.co/promotion/Qwen2.5-1.5B-Instruct-HH-NBIVO
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/Anthropic/hh-rlhf
 - Reward model de utilidad: https://huggingface.co/Ray2333/gpt2-large-helpful-reward_model

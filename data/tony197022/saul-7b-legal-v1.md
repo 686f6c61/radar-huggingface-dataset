@@ -38,7 +38,7 @@ La unica innovacion tecnica documentada es el propio proceso de cuantizacion: lo
 - Asistencia en dominio juridico: la model card etiqueta explicitamente el modelo como `legal` y el nombre del repositorio incluye `Legal-v1`.
 - Razonamiento y respuesta multi-turno: la etiqueta `conversational` y la naturaleza instruct del modelo base apuntan a este uso.
 - Compatibilidad con despliegue local mediante llama.cpp, Ollama y otros motores que consumen GGUF.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de HuggingFace).
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de Hugging Face).
 - Capacidades de tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Soporte multilingue: limitado a ingles segun el campo de idiomas; no se declaran otros idiomas.
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de otras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TONY197022/Saul-7B-Legal-v1
+- Modelo en Hugging Face: https://huggingface.co/TONY197022/Saul-7B-Legal-v1
 - Modelo base: https://huggingface.co/Equall/Saul-7B-Instruct-v1
 - Repositorio de cuantizaciones GGUF referenciado: https://huggingface.co/tensorblock/Saul-7B-Instruct-v1-GGUF
 - Commit de llama.cpp indicado como compatible (b4011): https://github.com/ggerganov/llama.cpp/commit/a6744e43e80f4be6398fc7733a01642c846dce1d

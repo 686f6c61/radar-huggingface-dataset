@@ -66,14 +66,14 @@ No disponible. Este repositorio contiene únicamente un componente de proyecció
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/mmproj-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/mmproj-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF Tool Suite (GitHub): https://github.com/Thireus/GGUF-Tool-Suite
 - Documentación de GGUF Tool Suite: https://github.com/Thireus/GGUF-Tool-Suite/tree/main/docs
 - Ejemplos de recetas: https://github.com/Thireus/GGUF-Tool-Suite/tree/main/recipe_examples
 - Generador de recetas (web): https://gguf.thireus.com/quant_assign.html
 - Descargador de modelos (web): https://gguf.thireus.com/quant_downloader.html
-- Colecciones de Thireus en HuggingFace: https://huggingface.co/Thireus/collections
+- Colecciones de Thireus en Hugging Face: https://huggingface.co/Thireus/collections
 - Sitio web de Thireus: https://gguf.thireus.com
 - Versión de `ik_llama.cpp` de Thireus: https://github.com/Thireus/ik_llama.cpp
 - Gráficas de perplejidad: https://github.com/Thireus/GGUF-Tool-Suite/tree/main/ppl_graphs

@@ -4,7 +4,7 @@
 
 El repositorio `vikasdesaifed/paper_018093439_multimodal_generation` no contiene un modelo de IA entrenado, sino un documento académico en formato Markdown que aborda el tema de la generación multimodal. El autor, vikasdesaifed, ha publicado un paper con estructura de artículo científico (introducción, problema, solución, validación y trabajo futuro) redactado en un estilo teórico riguroso y con formato LaTeX de arXiv.
 
-Este tipo de repositorios se utiliza frecuentemente para compartir manuscritos académicos, revisiones de literatura o propuestas teóricas en plataformas de modelos, aprovechando la infraestructura de HuggingFace como repositorio de archivos versionados. La licencia BSD-3-Clause permite su reutilización con atribución, pero al tratarse de un documento y no de un modelo, no aplican las especificaciones técnicas habituales de arquitectura, parámetros o cuantización.
+Este tipo de repositorios se utiliza frecuentemente para compartir manuscritos académicos, revisiones de literatura o propuestas teóricas en plataformas de modelos, aprovechando la infraestructura de Hugging Face como repositorio de archivos versionados. La licencia BSD-3-Clause permite su reutilización con atribución, pero al tratarse de un documento y no de un modelo, no aplican las especificaciones técnicas habituales de arquitectura, parámetros o cuantización.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ No aplica. Este repositorio no contiene un modelo con arquitectura neuronal, pes
 - Referencia en revisiones de literatura: el paper puede citarse en trabajos que aborden MLLM, difusion o modelos unificados de comprension y generacion multimodal.
 - Material de estudio: util para estudiantes que quieran una introduccion rigurosa y teorica al campo.
 - Punto de partida para investigacion: la estructura intro-problema-solucion-validacion-futuro facilita identificar lagunas y direcciones de trabajo futuro.
-- Repositorio de versionado: permite seguir la evolucion del manuscrito a traves del historial de commits de HuggingFace.
+- Repositorio de versionado: permite seguir la evolucion del manuscrito a traves del historial de commits de Hugging Face.
 - Compatibilidad con pipelines de documentacion: al estar en Markdown, puede integrarse en sistemas de gestion de conocimiento o documentacion tecnica.
 
 ## Benchmarks y rendimiento
@@ -60,7 +60,7 @@ No disponible. No existe una categoria de modelos comparable porque este reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vikasdesaifed/paper_018093439_multimodal_generation
+- Repositorio en Hugging Face: https://huggingface.co/vikasdesaifed/paper_018093439_multimodal_generation
 - [Paper relacionado: Multi-modal Generative AI: Multi-modal LLMs, Diffusions and Beyond (arXiv 2409.14993)](https://arxiv.org/abs/2409.14993)
 - [Version HTML del paper relacionado](https://arxiv.org/html/2409.14993v1)
 - [Awesome Unified Multimodal Understanding and Generation (GitHub)](https://github.com/Mingyue-Cheng/Awesome-Unified-Multimodal-Understanding-and-Generation)

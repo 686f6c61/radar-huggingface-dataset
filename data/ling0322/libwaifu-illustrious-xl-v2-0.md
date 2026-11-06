@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto de prompt | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ling0322/libwaifu-illustrious-xl-v2.0 | No disponible (SDXL) | No disponible (tokenizador CLIP) | creativeml-openrail-m | HuggingFace, formato `.waifupkg` | Conversion del checkpoint STABLE de Illustrious XL v2.0 para libwaifu |
-| OnomaAIResearch/Illustrious-XL-v2.0 | No disponible (SDXL) | No disponible (tokenizador CLIP) | No disponible en la informacion proporcionada | HuggingFace, formato safetensors | Modelo original; misma imagen generada, sin el empaquetado de libwaifu |
+| ling0322/libwaifu-illustrious-xl-v2.0 | No disponible (SDXL) | No disponible (tokenizador CLIP) | creativeml-openrail-m | Hugging Face, formato `.waifupkg` | Conversion del checkpoint STABLE de Illustrious XL v2.0 para libwaifu |
+| OnomaAIResearch/Illustrious-XL-v2.0 | No disponible (SDXL) | No disponible (tokenizador CLIP) | No disponible en la informacion proporcionada | Hugging Face, formato safetensors | Modelo original; misma imagen generada, sin el empaquetado de libwaifu |
 | WAI | No disponible | No disponible | No disponible | Publicado junto a este para libwaifu | Segun la ficha, WAI esta entrenado a partir de Illustrious |
 | NoobAI | No disponible | No disponible | No disponible | Publicado junto a este para libwaifu | Segun la ficha, NoobAI esta entrenado a partir de Illustrious |
 
@@ -87,7 +87,7 @@ Los datos de parametros, contexto y rendimiento de las alternativas no se detall
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ling0322/libwaifu-illustrious-xl-v2.0
+- Modelo en Hugging Face: https://huggingface.co/ling0322/libwaifu-illustrious-xl-v2.0
 - Repositorio de libwaifu: https://github.com/ling0322/libwaifu
 - Modelo base (OnomaAIResearch/Illustrious-XL-v2.0): https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

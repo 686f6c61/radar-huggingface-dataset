@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks externos (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-yecs-lid-l03 | 241,7 M | 30 s por ventana | yo, en | NOODL-1.0 | HuggingFace, 0 descargas |
-| openai/whisper-small | 241,7 M | 30 s por ventana | multilingue (99 idiomas) | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-medium | 769 M | 30 s por ventana | multilingue (99 idiomas) | Apache 2.0 | HuggingFace |
+| whisper-small-yecs-lid-l03 | 241,7 M | 30 s por ventana | yo, en | NOODL-1.0 | Hugging Face, 0 descargas |
+| openai/whisper-small | 241,7 M | 30 s por ventana | multilingue (99 idiomas) | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-medium | 769 M | 30 s por ventana | multilingue (99 idiomas) | Apache 2.0 | Hugging Face |
 | whisper-small ajustado generico en yoruba | no disponible | 30 s por ventana | yo (y en segun ajuste) | variable | no disponible |
 
 La comparativa cuantitativa de rendimiento frente a whisper-small original o whisper-medium en el corpus YECS no esta disponible en la informacion proporcionada. La ventaja diferencial del modelo es la especializacion en code-switching yoruba-ingles; su desventaja es la licencia NOODL-1.0 frente a la Apache 2.0 del modelo base y la ausencia de validacion externa.
@@ -95,7 +95,7 @@ La comparativa cuantitativa de rendimiento frente a whisper-small original o whi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robello2/whisper-small-yecs-lid-l03
+- Modelo en Hugging Face: https://huggingface.co/robello2/whisper-small-yecs-lid-l03
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper: https://github.com/openai/whisper

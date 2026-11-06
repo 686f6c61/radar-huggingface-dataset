@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jonghyuns/sd-class-butterflies-32 es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario jonghyuns en HuggingFace. Se trata de un checkpoint de muy pequeno tamano, con 18.536.323 parametros (~18,5 millones) y 0,1 GB de repositorio, desarrollado como ejercicio de la Unidad 1 del curso Diffusion Models Class de HuggingFace. Su pipeline asociado es DDPMPipeline, por lo que sigue el paradigma clasico de difusion DDPM sin condicionamiento de texto ni de imagen.
+jonghyuns/sd-class-butterflies-32 es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario jonghyuns en Hugging Face. Se trata de un checkpoint de muy pequeno tamano, con 18.536.323 parametros (~18,5 millones) y 0,1 GB de repositorio, desarrollado como ejercicio de la Unidad 1 del curso Diffusion Models Class de Hugging Face. Su pipeline asociado es DDPMPipeline, por lo que sigue el paradigma clasico de difusion DDPM sin condicionamiento de texto ni de imagen.
 
 El modelo resuelve un unico problema: muestrear imagenes sinteticas de mariposas a partir de ruido gaussiano puro, sin prompt ni etiqueta de clase de entrada. No es un modelo de proposito general ni un generador texto-a-imagen; es una pieza didactica que demuestra el ciclo completo de entrenamiento, guardado y carga de un modelo de difusion con la libreria diffusers.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jonghyuns/sd-class-butterflies-32 | 18.536.323 | 32x32 (segun nomenclatura del ID; no confirmado) | Incondicional | MIT | HuggingFace |
-| google/ddpm-cifar10-32 | No disponible | 32x32 | Incondicional | No disponible | HuggingFace |
-| google/ddpm-celebahq-256 | No disponible | 256x256 | Incondicional | No disponible | HuggingFace |
-| Modelos de la Diffusion Models Class (otros alumnos) | No disponible | No disponible | Incondicional | Variable | HuggingFace |
+| jonghyuns/sd-class-butterflies-32 | 18.536.323 | 32x32 (segun nomenclatura del ID; no confirmado) | Incondicional | MIT | Hugging Face |
+| google/ddpm-cifar10-32 | No disponible | 32x32 | Incondicional | No disponible | Hugging Face |
+| google/ddpm-celebahq-256 | No disponible | 256x256 | Incondicional | No disponible | Hugging Face |
+| Modelos de la Diffusion Models Class (otros alumnos) | No disponible | No disponible | Incondicional | Variable | Hugging Face |
 
 La informacion proporcionada no incluye cifras de rendimiento ni recuentos de parametros de los modelos alternativos, por lo que la comparacion se limita a categoria, resolucion y tipo de condicionamiento. Todos ellos pertenecen a la familia de difusion incondicional y comparten el mismo tipo de pipeline.
 
@@ -84,7 +84,7 @@ La informacion proporcionada no incluye cifras de rendimiento ni recuentos de pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonghyuns/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/jonghyuns/sd-class-butterflies-32
 - Curso Diffusion Models Class (repositorio en GitHub): https://github.com/huggingface/diffusion-models-class
 - Documentacion del pipeline DDPMPipeline en diffusers: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - No se han encontrado otros enlaces tecnicos relevantes en la busqueda web realizada.

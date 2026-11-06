@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/clip-vit-base-patch32
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/clip-vit-base-patch32
 - Modelo base: https://huggingface.co/openai/clip-vit-base-patch32
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - Librería Transformers.js en NPM: https://www.npmjs.com/package/@huggingface/transformers

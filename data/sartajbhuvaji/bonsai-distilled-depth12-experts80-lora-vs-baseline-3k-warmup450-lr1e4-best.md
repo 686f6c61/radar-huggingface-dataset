@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sartajbhuvaji/bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4-best` es un checkpoint de generacion de texto publicado en HuggingFace por Sartaj Bhuvaji, ingeniero de machine learning. Se trata de un modelo derivado de la familia Qwen3 con arquitectura de mezcla de expertos (MoE), segun la etiqueta `qwen3_moe` del repositorio, con 9.459.231.744 parametros totales confirmados por los archivos safetensors y un tamano de repositorio de 18,9 GB. El identificador sugiere un experimento de destilacion sobre una variante podada o reducida del modelo base, con 12 capas y 80 expertos, comparando una configuracion con LoRA frente a una linea base.
+El modelo `sartajbhuvaji/bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4-best` es un checkpoint de generacion de texto publicado en Hugging Face por Sartaj Bhuvaji, ingeniero de machine learning. Se trata de un modelo derivado de la familia Qwen3 con arquitectura de mezcla de expertos (MoE), segun la etiqueta `qwen3_moe` del repositorio, con 9.459.231.744 parametros totales confirmados por los archivos safetensors y un tamano de repositorio de 18,9 GB. El identificador sugiere un experimento de destilacion sobre una variante podada o reducida del modelo base, con 12 capas y 80 expertos, comparando una configuracion con LoRA frente a una linea base.
 
-La relevancia de este checkpoint es fundamentalmente experimental: su nombre indica un barrido de hiperparametros (3.000 pasos, 450 de calentamiento, tasa de aprendizaje 1e-4) y una seleccion del mejor resultado ("best") dentro de una comparativa entre tecnicas de ajuste. No es un modelo listo para produccion en el sentido habitual, sino un artefacto de investigacion publicado sin model card util (la tarjeta es la plantilla automatica de HuggingFace sin rellenar), sin licencia declarada y sin idiomas especificados.
+La relevancia de este checkpoint es fundamentalmente experimental: su nombre indica un barrido de hiperparametros (3.000 pasos, 450 de calentamiento, tasa de aprendizaje 1e-4) y una seleccion del mejor resultado ("best") dentro de una comparativa entre tecnicas de ajuste. No es un modelo listo para produccion en el sentido habitual, sino un artefacto de investigacion publicado sin model card util (la tarjeta es la plantilla automatica de Hugging Face sin rellenar), sin licencia declarada y sin idiomas especificados.
 
 En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 "likes", y no se ha publicado informacion sobre datos de entrenamiento, evaluacion o configuracion de inferencia. Cualquier dato no confirmado en esta ficha se marca explicitamente como no disponible.
 
@@ -23,9 +23,9 @@ En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 "l
 
 ## Arquitectura y entrenamiento
 
-La unica informacion fiable sobre la arquitectura es la etiqueta `qwen3_moe`, que situa el modelo dentro de la familia Qwen3 con capas de mezcla de expertos. El nombre del checkpoint (`depth12-experts80`) sugiere una configuracion concreta de 12 capas y 80 expertos, presumiblemente una variante reducida del modelo base sobre la que se aplica destilacion. El sufijo `lora-vs-baseline` indica que el artefacto forma parte de una comparacion entre un ajuste con LoRA y una linea base, y `3k-warmup450-lr1e4-best` corresponde a los hiperparametros del entrenamiento (3.000 pasos, 450 pasos de calentamiento, tasa de aprendizaje 1e-4) y a la seleccion del mejor checkpoint. Todos estos extremos se deducen del identificador y no estan documentados en la model card, que es la plantilla automatica de HuggingFace sin contenido.
+La unica informacion fiable sobre la arquitectura es la etiqueta `qwen3_moe`, que situa el modelo dentro de la familia Qwen3 con capas de mezcla de expertos. El nombre del checkpoint (`depth12-experts80`) sugiere una configuracion concreta de 12 capas y 80 expertos, presumiblemente una variante reducida del modelo base sobre la que se aplica destilacion. El sufijo `lora-vs-baseline` indica que el artefacto forma parte de una comparacion entre un ajuste con LoRA y una linea base, y `3k-warmup450-lr1e4-best` corresponde a los hiperparametros del entrenamiento (3.000 pasos, 450 pasos de calentamiento, tasa de aprendizaje 1e-4) y a la seleccion del mejor checkpoint. Todos estos extremos se deducen del identificador y no estan documentados en la model card, que es la plantilla automatica de Hugging Face sin contenido.
 
-No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF o DPO, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, enrutado de expertos afinado, etc.). El unico paper referenciado en las etiquetas, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado por la plantilla de HuggingFace y no relacionado con la arquitectura del modelo.
+No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF o DPO, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, enrutado de expertos afinado, etc.). El unico paper referenciado en las etiquetas, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado por la plantilla de Hugging Face y no relacionado con la arquitectura del modelo.
 
 ## Capacidades
 
@@ -68,15 +68,15 @@ La comparativa se limita a la categoria de modelos abiertos de ~8-10B parametros
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bonsai-distilled-depth12-experts80-lora (este modelo) | 9,46B | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen3-8B | 8,2B | no aplica (denso) | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen3-30B-A3B | 30,5B | 3,3B | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| bonsai-distilled-depth12-experts80-lora (este modelo) | 9,46B | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen3-8B | 8,2B | no aplica (denso) | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen3-30B-A3B | 30,5B | 3,3B | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 No disponible comparacion de rendimiento, ya que este checkpoint no publica resultados de benchmarks. La comparacion con los modelos Qwen3 citados debe tomarse solo como referencia de categoria y no como una equivalencia funcional verificada.
 
 ## Limitaciones y advertencias
 
-- Ausencia de model card: la tarjeta es la plantilla automatica de HuggingFace sin rellenar, por lo que no hay informacion sobre uso previsto, datos de entrenamiento ni limitaciones declaradas por el autor.
+- Ausencia de model card: la tarjeta es la plantilla automatica de Hugging Face sin rellenar, por lo que no hay informacion sobre uso previsto, datos de entrenamiento ni limitaciones declaradas por el autor.
 - Licencia no disponible: al no declararse licencia, no hay autorizacion explicita de uso comercial; en la practica, la ausencia de licencia impide asumir permisos de redistribucion o explotacion en produccion.
 - Idiomas no declarados: no se puede garantizar el rendimiento en castellano ni en ningun otro idioma concreto.
 - Contexto desconocido: se desconoce la ventana de contexto efectiva, lo que impide dimensionar la cache KV y planificar despliegues con precisión.
@@ -89,10 +89,10 @@ No disponible comparacion de rendimiento, ya que este checkpoint no publica resu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4-best
+- Repositorio en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4-best
 - Pagina del mismo checkpoint en FriendliAI: https://friendli.ai/models/sartajbhuvaji/bonsai-distilled-depth12-experts80-vs-baseline-3k-warmup450-lr1e4-best
-- Variante relacionada en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4-best
-- Variante relacionada en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4
+- Variante relacionada en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4-best
+- Variante relacionada en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4
 - Perfil de GitHub del autor: https://github.com/SartajBhuvaji
 - Perfil de Google Scholar del autor: https://scholar.google.com/citations?user=SAu33LIAAAAJ&hl=en
 - Paper referenciado en las etiquetas (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

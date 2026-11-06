@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rosie-vision-ai es un modelo multimodal de tipo imagen-texto-a-texto publicado por el usuario Nikssxelo123 en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo SmolVLM-500M-Instruct de Hugging Face, que a su vez deriva de la arquitectura Idefics3. El modelo procesa entradas intercaladas de texto, imágenes y vídeo para generar respuestas textuales, y esta orientado a tareas de captioning, respuesta visual a preguntas (VQA) y descripcion de contenido audiovisual. Cuenta con 507.482.304 parametros, lo que lo situa en la gama ultraligera de los modelos multimodales.
+Rosie-vision-ai es un modelo multimodal de tipo imagen-texto-a-texto publicado por el usuario Nikssxelo123 en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo SmolVLM-500M-Instruct de Hugging Face, que a su vez deriva de la arquitectura Idefics3. El modelo procesa entradas intercaladas de texto, imágenes y vídeo para generar respuestas textuales, y esta orientado a tareas de captioning, respuesta visual a preguntas (VQA) y descripcion de contenido audiovisual. Cuenta con 507.482.304 parametros, lo que lo situa en la gama ultraligera de los modelos multimodales.
 
 La relevancia de este modelo radica en su tamano reducido: segun la documentacion del modelo base, la inferencia sobre video requiere aproximadamente 1,8 GB de VRAM, lo que permite desplegarlo en dispositivos con recursos limitados, incluidos entornos de borde y GPUs de consumo. El repositorio ocupa 7,2 GB e incluye pesos en safetensors y ONNX. La licencia es Apache 2.0 y el unico idioma declarado es el ingles.
 
@@ -73,10 +73,10 @@ No se dispone de datos de MMLU, HumanEval, GSM8K ni de otras evaluaciones para e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rosie-vision-ai (este modelo) | 507M | no disponible | Imagen, multi-imagen y video | Apache 2.0 | HuggingFace, 0 descargas |
-| SmolVLM2-500M-Video (base) | 500M | no disponible | Imagen, multi-imagen y video | Apache 2.0 | HuggingFace, oficial de Hugging Face |
-| SmolVLM2-256M | 256M | no disponible | Imagen y video | Apache 2.0 | HuggingFace, oficial de Hugging Face |
-| SmolVLM2-2.2B | 2,2B | no disponible | Imagen y video | Apache 2.0 | HuggingFace, oficial de Hugging Face |
+| Rosie-vision-ai (este modelo) | 507M | no disponible | Imagen, multi-imagen y video | Apache 2.0 | Hugging Face, 0 descargas |
+| SmolVLM2-500M-Video (base) | 500M | no disponible | Imagen, multi-imagen y video | Apache 2.0 | Hugging Face, oficial de Hugging Face |
+| SmolVLM2-256M | 256M | no disponible | Imagen y video | Apache 2.0 | Hugging Face, oficial de Hugging Face |
+| SmolVLM2-2.2B | 2,2B | no disponible | Imagen y video | Apache 2.0 | Hugging Face, oficial de Hugging Face |
 
 La comparativa se limita a la familia SmolVLM2 porque no se dispone de datos verificados de otros modelos multimodales de tamano comparable en la informacion proporcionada. Frente al modelo base, este fine-tune no documenta mejoras medibles ni un conjunto de evaluacion propio, por lo que la eleccion entre ambos deberia basarse en pruebas propias sobre la tarea objetivo.
 
@@ -93,7 +93,7 @@ La comparativa se limita a la familia SmolVLM2 porque no se dispone de datos ver
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikssxelo123/Rosie-vision-ai
+- Modelo en Hugging Face: https://huggingface.co/Nikssxelo123/Rosie-vision-ai
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - Blog de SmolVLM2: https://huggingface.co/blog/smolvlm2
 - Demo Video Highlight Generator: https://huggingface.co/spaces/HuggingFaceTB/SmolVLM2-HighlightGenerator

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AMD publica en HuggingFace una variante optimizada del modelo Llama 3.2 3B de Meta, empaquetada en formato ONNX y adaptada para su plataforma Ryzen AI (NPU integrada en los procesadores AMD Ryzen AI 300 y posteriores). El identificador del repositorio (`rai_1.9.0_m_1.0.1_npu`) indica que se trata de un artefacto de la herramienta Ryzen AI (RAI) en su version 1.9.0, con un modelo compilado para la NPU (m_1.0.1_npu), lo que sugiere un binario precompilado y listo para ejecutarse sobre el acelerador neuronal de AMD, sin necesidad de recompilar.
+AMD publica en Hugging Face una variante optimizada del modelo Llama 3.2 3B de Meta, empaquetada en formato ONNX y adaptada para su plataforma Ryzen AI (NPU integrada en los procesadores AMD Ryzen AI 300 y posteriores). El identificador del repositorio (`rai_1.9.0_m_1.0.1_npu`) indica que se trata de un artefacto de la herramienta Ryzen AI (RAI) en su version 1.9.0, con un modelo compilado para la NPU (m_1.0.1_npu), lo que sugiere un binario precompilado y listo para ejecutarse sobre el acelerador neuronal de AMD, sin necesidad de recompilar.
 
 El modelo base es Llama 3.2 3B, un transformer decoder-only denso de Meta con 3.210 millones de parametros, ventana de contexto de 128.000 tokens y entrenamiento multilingue (aunque la ficha de AMD solo declara ingles). Esta publicacion no introduce pesos nuevos ni fine-tuning: es un artefacto de despliegue que traslada el modelo original a un grafo ONNX con optimizaciones especificas para el NPU de AMD, manteniendo la licencia Llama 3.2 de Meta.
 
-Su relevancia es practica: permite ejecutar un LLM de 3B en local sobre hardware AMD con NPU, sin GPU dedicada, con un consumo energetico bajo y latencia adecuada para asistentes on-device. El acceso esta restringido (gated) y requiere aceptar las condiciones de la licencia Llama 3.2 en HuggingFace. El repositorio ocupa 2,9 GB, coherente con pesos en precision reducida (probablemente FP16 o INT8 empaquetados en ONNX).
+Su relevancia es practica: permite ejecutar un LLM de 3B en local sobre hardware AMD con NPU, sin GPU dedicada, con un consumo energetico bajo y latencia adecuada para asistentes on-device. El acceso esta restringido (gated) y requiere aceptar las condiciones de la licencia Llama 3.2 en Hugging Face. El repositorio ocupa 2,9 GB, coherente con pesos en precision reducida (probablemente FP16 o INT8 empaquetados en ONNX).
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Su relevancia es practica: permite ejecutar un LLM de 3B en local sobre hardware
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Llama 3.2 3B soporta 128.000 tokens) |
 | Tipos de cuantizacion | no disponible (el artefacto se distribuye precompilado para NPU; el tamano del repo, 2,9 GB, sugiere pesos en FP16 o INT8) |
-| Idiomas soportados | en (segun la ficha de HuggingFace) |
+| Idiomas soportados | en (segun la ficha de Hugging Face) |
 | Licencia | llama3.2 (Llama 3.2 Community License, acceso gated) |
 | Formato de pesos | ONNX (compilado para Ryzen AI NPU, tag `m_1.0.1_npu`) |
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar la licencia Llama 3.2 en HuggingFace para descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar la licencia Llama 3.2 en Hugging Face para descargar el modelo.
 - Licencia Llama 3.2: permite uso comercial con restricciones (limite de 700 millones de usuarios mensuales, obligacion de atribucion "Built with Llama", politicas de uso aceptable). Revisar los terminos antes de produccion.
 - Artefacto especifico de hardware: solo funciona en plataformas AMD Ryzen AI con la version de RAI indicada; no es portable a GPU NVIDIA, Apple Silicon u otras NPU sin recompilar.
 - Idiomas: la ficha declara unicamente ingles; el rendimiento en castellano no esta garantizado ni documentado.
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Llama-3.2-3B_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Llama-3.2-3B_rai_1.9.0_m_1.0.1_npu
 - Modelo base Llama 3.2 3B (Meta): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Ryzen AI (AMD): https://www.amd.com/en/products/processors/ryzen-ai.html

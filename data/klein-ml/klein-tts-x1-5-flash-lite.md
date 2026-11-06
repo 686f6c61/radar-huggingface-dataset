@@ -76,7 +76,7 @@ El autor indica que el modelo supera a Kitten TTS Nano 0.8 y a SupraTTS 1.0 Prev
 
 | Modelo | Parametros | Idiomas | Calidad reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Klein-TTS-X1.5-Flash-Lite | 0,40M | en, fr, it | 4,28 UTMOS, 4,32 SCOREQ, 2,86% WER | Apache-2.0 | HuggingFace, npm (`@kleinml/kleintts`), paquete `kleintts` |
+| Klein-TTS-X1.5-Flash-Lite | 0,40M | en, fr, it | 4,28 UTMOS, 4,32 SCOREQ, 2,86% WER | Apache-2.0 | Hugging Face, npm (`@kleinml/kleintts`), paquete `kleintts` |
 | Kitten TTS Nano 0.8 | 14M | no disponible | inferior en UTMOS segun el autor | no disponible | no disponible en la informacion proporcionada |
 | SupraTTS 1.0 Preview | 1,0M | no disponible | inferior en UTMOS segun el autor | no disponible | no disponible en la informacion proporcionada |
 | Piper (lessac medium) | 15,7M | no disponible | a la par en TTS Index segun el autor | no disponible | no disponible en la informacion proporcionada |
@@ -97,7 +97,7 @@ La comparativa se limita a los datos que el autor menciona en la model card; no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/klein-ml/Klein-TTS-X1.5-Flash-Lite
+- Modelo en Hugging Face: https://huggingface.co/klein-ml/Klein-TTS-X1.5-Flash-Lite
 - Sitio web de Klein ML: https://kleinml.com
 - Paquete Node.js `@kleinml/kleintts`: https://www.npmjs.com/package/@kleinml/kleintts
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb

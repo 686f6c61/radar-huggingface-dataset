@@ -23,7 +23,7 @@ La conversión fue realizada mediante el espacio GGUF-my-repo de ggml.ai, y el r
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning completo (etiqueta `full` en los tags de HuggingFace) del modelo gpt-oss-20b de OpenAI, realizado con el framework llama-factory. El nombre del fine-tune, `terminal_lego_deepseek_v3_2_8k`, sugiere una adaptación orientada a dominios específicos (terminal, LEGO y DeepSeek v3.2) con una ventana de contexto de 8k tokens, aunque no se proporcionan detalles sobre la composición del dataset de entrenamiento ni el método de alineación utilizado (RLHF, DPO, etc.).
+El modelo es un fine-tuning completo (etiqueta `full` en los tags de Hugging Face) del modelo gpt-oss-20b de OpenAI, realizado con el framework llama-factory. El nombre del fine-tune, `terminal_lego_deepseek_v3_2_8k`, sugiere una adaptación orientada a dominios específicos (terminal, LEGO y DeepSeek v3.2) con una ventana de contexto de 8k tokens, aunque no se proporcionan detalles sobre la composición del dataset de entrenamiento ni el método de alineación utilizado (RLHF, DPO, etc.).
 
 El modelo base gpt-oss-20b está descrito por OpenAI como un modelo open-weight de tamaño medio orientado a baja latencia, diseñado para razonamiento potente, tareas agénticas y casos de uso de desarrollo. Según los resultados de búsqueda, forma parte de la serie gpt-oss junto con gpt-oss-120b, y es el primer modelo de OpenAI publicado bajo licencia Apache 2.0.
 
@@ -90,7 +90,7 @@ El modelo de este repositorio se diferencia del gpt-oss-20b original por ser un 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lennyhans/gpt-oss-20b-terminal_lego_deepseek_v3_2_8k-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/lennyhans/gpt-oss-20b-terminal_lego_deepseek_v3_2_8k-Q4_K_M-GGUF
 - Modelo base (fine-tune): https://huggingface.co/StephYang/gpt-oss-20b-terminal_lego_deepseek_v3_2_8k
 - Modelo original gpt-oss-20b: https://huggingface.co/openai/gpt-oss-20b
 - Repositorio GitHub de OpenAI gpt-oss: https://github.com/openai/gpt-oss

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Chanel_p04_detect_v1.0_21092026 es un modelo publicado en HuggingFace por el usuario rikai-ai bajo licencia Apache 2.0. La nomenclatura del identificador ("detect", "p04", la fecha en formato DDMMAAAA) sugiere un modelo especializado en detección, probablemente de objetos o patrones sobre imágenes, aunque no se dispone de documentación que lo confirme. El repositorio tiene un tamaño de 0,4 GB, lo que es coherente con pesos de un modelo de visión de tamaño pequeño o mediano cuantizado.
+Chanel_p04_detect_v1.0_21092026 es un modelo publicado en Hugging Face por el usuario rikai-ai bajo licencia Apache 2.0. La nomenclatura del identificador ("detect", "p04", la fecha en formato DDMMAAAA) sugiere un modelo especializado en detección, probablemente de objetos o patrones sobre imágenes, aunque no se dispone de documentación que lo confirme. El repositorio tiene un tamaño de 0,4 GB, lo que es coherente con pesos de un modelo de visión de tamaño pequeño o mediano cuantizado.
 
-La model card publicada no contiene más que la declaración de licencia: no incluye descripción del modelo, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. Tampoco consta pipeline declarado en los metadatos de HuggingFace, ni etiquetas que indiquen la tarea (object-detection, image-classification, etc.). El repositorio no registra descargas ni "likes" en el momento de la consulta.
+La model card publicada no contiene más que la declaración de licencia: no incluye descripción del modelo, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. Tampoco consta pipeline declarado en los metadatos de Hugging Face, ni etiquetas que indiquen la tarea (object-detection, image-classification, etc.). El repositorio no registra descargas ni "likes" en el momento de la consulta.
 
 Por tanto, esta ficha se limita a reflejar los datos verificables del repositorio y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de capacidades, rendimiento o idoneidad para producción requeriría inspeccionar los archivos de pesos y la configuración incluidos en el repositorio, algo que no se ha podido realizar con la información proporcionada.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado modelos comparables porque se desconoce la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rikai-ai/chanel_p04_detect_v1.0_21092026
+- Hugging Face: https://huggingface.co/rikai-ai/chanel_p04_detect_v1.0_21092026
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

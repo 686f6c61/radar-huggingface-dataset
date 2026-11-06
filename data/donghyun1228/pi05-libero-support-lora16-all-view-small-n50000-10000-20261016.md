@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks de modelos alternativos en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-lora16-all-view-small-n50000-10000-20261016
+- Repositorio Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-lora16-all-view-small-n50000-10000-20261016
 - Checkpoint fuente citado: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015 (commit `ea4f0bb2001e12d701af8a294f91da437e857f55`)
 - Modelo objetivo citado: https://huggingface.co/Donghyun1228/libero-support-random-waypoint-300k-20261015 (commit `32ed215baf01af7e82f927a62b108873aa70bd19`)
 - Paper, blog, repositorio de código o demo: no disponibles en la informacion proporcionada.

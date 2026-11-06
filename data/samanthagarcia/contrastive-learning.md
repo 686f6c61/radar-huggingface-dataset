@@ -66,7 +66,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Samanthagarcia/contrastive-learning
+- Repositorio en Hugging Face: https://huggingface.co/Samanthagarcia/contrastive-learning
 - Tutorial de aprendizaje contrastivo (DataCamp): https://www.datacamp.com/tutorial/contrastive-learning
 - Encuesta exhaustiva sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Explicación de aprendizaje contrastivo (upGrad): https://www.upgrad.com/blog/contrastive-learning/

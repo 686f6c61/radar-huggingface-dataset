@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B (este repo) | 9B | 16 384 | qwen-research | HuggingFace, cuantización de comunidad |
-| lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
-| Qwen3.5-9B | 9B | no disponible | qwen-research | HuggingFace (modelo original) |
+| MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B (este repo) | 9B | 16 384 | qwen-research | Hugging Face, cuantización de comunidad |
+| lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
+| Qwen3.5-9B | 9B | no disponible | qwen-research | Hugging Face (modelo original) |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/makisekurisu-jp/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B
+- Repositorio Hugging Face: https://huggingface.co/makisekurisu-jp/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B
 - Modelo base FL2VA: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA
 - Modelo base Ref2VA: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA
 - Licencia Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE

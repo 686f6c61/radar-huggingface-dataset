@@ -27,7 +27,7 @@ La arquitectura es un decoder transformer denso de estilo Llama con 24 capas, hi
 
 El preentrenamiento se realizó sobre las conversaciones 1PP reescritas a partir de los documentos originales, con pérdida calculada tanto en turnos de usuario como de asistente (condición "ua"). Se entrenaron los primeros 53.709 pasos del flujo alineado por pasos de 1PP (112,64B posiciones de token), que corresponden a los primeros pasos del pase de 31.777 pasos del estudio principal en el mismo orden. El batch global fue de 512 × 4.096 tokens con enmascaramiento de atención entre documentos. El optimizador es Muon (shape scaling, LR matricial 0,005) combinado con Adam para el resto de parámetros (LR 1,29e-3 para embeddings y capa de salida, 3e-3 para normas), con warmup de 3.378 pasos, fase constante y decaimiento lineal en los últimos 5.370 pasos hasta 1/100, weight decay 0,1, std de inicialización 0,0078 y precisión bf16.
 
-El SFT consistió en una época sobre una mezcla de 400k conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multi-turno, pista con citas de constitución), `dlab-spp/sp-sft-normal-300k` sin los prompts duplicados del primer conjunto (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. Se usó el mismo stack (Megatron, Muon, ChatML sin turno de sistema, pérdida solo en turnos de asistente), LR matricial 0,001, semilla 28, batch global 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida de validación final en preentrenamiento fue de 1,351 en texto de asistente, 1,270 en texto de usuario y 2,987 en texto de documento (con 1,350 en la columna ponderada de tokens de entrenamiento de esta condición). La pérdida SFT retenida en tokens de asistente (1.998 conversaciones) fue de 1,734, y los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0000.
+El SFT consistió en una época sobre una mezcla de 400k conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multi-turno, pista con citas de constitución), `dlab-spp/sp-sft-normal-300k` sin los prompts duplicados del primer conjunto (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. Se usó el mismo stack (Megatron, Muon, ChatML sin turno de sistema, pérdida solo en turnos de asistente), LR matricial 0,001, semilla 28, batch global 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida de validación final en preentrenamiento fue de 1,351 en texto de asistente, 1,270 en texto de usuario y 2,987 en texto de documento (con 1,350 en la columna ponderada de tokens de entrenamiento de esta condición). La pérdida SFT retenida en tokens de asistente (1.998 conversaciones) fue de 1,734, y los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0000.
 
 ## Capacidades
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-2.81b-v2-ua-seed42-sft | 2,81B | 4.096 | Apache 2.0 | HuggingFace (transformers, safetensors) | Artefacto de investigación, solo inglés, sin benchmarks publicados |
-| 1pp-1.7b-* (peldaño 1,66B de la misma escalera) | 1,66B | 4.096 | Apache 2.0 | Colección 1pp en HuggingFace | Mismo flujo de datos y condiciones; permite comparación directa de escalado |
-| SmolLM2 (familia, mismo vocabulario) | 135M / 360M / 1,7B | No disponible en la información | Apache 2.0 | HuggingFace | Comparte tokenizador (49.152) con el modelo 1PP; no es comparable en condiciones de entrenamiento |
-| Llama 3.2 3B (referencia de tamaño) | 3,2B | 128k | Llama 3.2 Community License | HuggingFace | Mayor contexto y licencia más restrictiva; no se dispone de comparación de rendimiento en la información |
+| 1pp-2.81b-v2-ua-seed42-sft | 2,81B | 4.096 | Apache 2.0 | Hugging Face (transformers, safetensors) | Artefacto de investigación, solo inglés, sin benchmarks publicados |
+| 1pp-1.7b-* (peldaño 1,66B de la misma escalera) | 1,66B | 4.096 | Apache 2.0 | Colección 1pp en Hugging Face | Mismo flujo de datos y condiciones; permite comparación directa de escalado |
+| SmolLM2 (familia, mismo vocabulario) | 135M / 360M / 1,7B | No disponible en la información | Apache 2.0 | Hugging Face | Comparte tokenizador (49.152) con el modelo 1PP; no es comparable en condiciones de entrenamiento |
+| Llama 3.2 3B (referencia de tamaño) | 3,2B | 128k | Llama 3.2 Community License | Hugging Face | Mayor contexto y licencia más restrictiva; no se dispone de comparación de rendimiento en la información |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa de rendimiento con estos modelos.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-seed42-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-seed42-sft
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de entrenamiento (SFT): https://wandb.ai/raghav_singhal/1pp-sft

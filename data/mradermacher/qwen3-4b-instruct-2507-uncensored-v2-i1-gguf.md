@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-4B-Instruct-2507-uncensored-v2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-4B-Instruct-2507-uncensored-v2-i1-GGUF
 - Modelo base: https://huggingface.co/Manitec/Qwen3-4B-Instruct-2507-uncensored-v2
 - Quants estaticos: https://huggingface.co/mradermacher/Qwen3-4B-Instruct-2507-uncensored-v2-GGUF
 - Pagina de descarga y resumen: https://hf.tst.eu/model#Qwen3-4B-Instruct-2507-uncensored-v2-i1-GGUF

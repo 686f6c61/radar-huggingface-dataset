@@ -65,6 +65,6 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no puede compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anthonytaylorfuh/multimodal-generation-reading
+- Repositorio en Hugging Face: https://huggingface.co/Anthonytaylorfuh/multimodal-generation-reading
 - Referencia sobre generación multimodal (arXiv): https://arxiv.org/html/2409.14993v1
 - Lista curada de recursos sobre comprensión y generación multimodal unificada: https://github.com/Mingyue-Cheng/Awesome-Unified-Multimodal-Understanding-and-Generation

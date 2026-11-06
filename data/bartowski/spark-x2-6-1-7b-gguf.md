@@ -37,7 +37,7 @@ Las cuantizaciones de bartowski se generaron con llama.cpp b11969 e incluyen cal
 - Capacidad de agentes y razonamiento multi-paso derivada del canal de pensamiento y del soporte de herramientas.
 - Multilingue limitado a ingles y chino.
 - Entrada exclusivamente de texto (no se documenta vision ni audio).
-- Compatible con endpoints (tag `endpoints_compatible` en HuggingFace).
+- Compatible con endpoints (tag `endpoints_compatible` en Hugging Face).
 - Sin decodificacion especulativa.
 
 ## Casos de uso

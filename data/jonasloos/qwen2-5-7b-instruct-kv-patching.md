@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct-kv-patching | 7 000 M (base) | 32 768 | Adaptadores LoRA de investigación | Apache 2.0 | HuggingFace (0 descargas) |
-| Llama-3.1-8B-Instruct-kv-patching | 8 000 M (base) | 131 072 (base Llama 3.1) | Adaptadores LoRA de investigación | Licencia Llama 3.1 (base) | HuggingFace, mismo autor |
-| Qwen3.5-4B-kv-patching | 4 000 M (base) | No disponible en la información | Adaptadores LoRA de investigación | No disponible en la información | HuggingFace, mismo autor |
-| Qwen2.5-7B-Instruct | 7 000 M | 32 768 | Modelo instructivo generalista | Apache 2.0 | HuggingFace |
+| Qwen2.5-7B-Instruct-kv-patching | 7 000 M (base) | 32 768 | Adaptadores LoRA de investigación | Apache 2.0 | Hugging Face (0 descargas) |
+| Llama-3.1-8B-Instruct-kv-patching | 8 000 M (base) | 131 072 (base Llama 3.1) | Adaptadores LoRA de investigación | Licencia Llama 3.1 (base) | Hugging Face, mismo autor |
+| Qwen3.5-4B-kv-patching | 4 000 M (base) | No disponible en la información | Adaptadores LoRA de investigación | No disponible en la información | Hugging Face, mismo autor |
+| Qwen2.5-7B-Instruct | 7 000 M | 32 768 | Modelo instructivo generalista | Apache 2.0 | Hugging Face |
 
 La comparación más directa es con las otras dos colecciones del mismo autor (`Llama-3.1-8B-Instruct-kv-patching` y `Qwen3.5-4B-kv-patching`), que replican las mismas tareas sobre modelos base distintos, lo que permite comparar la localización del comportamiento entre arquitecturas y tamaños.
 
@@ -91,7 +91,7 @@ La comparación más directa es con las otras dos colecciones del mismo autor (`
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JonasLoos/Qwen2.5-7B-Instruct-kv-patching
+- Modelo en Hugging Face: https://huggingface.co/JonasLoos/Qwen2.5-7B-Instruct-kv-patching
 - Artículo: https://arxiv.org/abs/2610.41480
 - Página del proyecto: https://jonasloos.github.io/kv-patching/
 - Código: https://github.com/JonasLoos/kv-patching

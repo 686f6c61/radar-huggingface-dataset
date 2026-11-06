@@ -74,7 +74,7 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cpraschl/SeeingTheUnseen
+- Repositorio Hugging Face: https://huggingface.co/cpraschl/SeeingTheUnseen
 - Repositorio de replicación (código y métricas): https://github.com/Faline-eco/SeeingTheUnseen-Replication
 - Licencia: https://github.com/Faline-eco/SeeingTheUnseen-Replication/blob/main/LICENSE
 - Dataset BAMBI (fuente de las imágenes): no se proporciona enlace directo en la documentación

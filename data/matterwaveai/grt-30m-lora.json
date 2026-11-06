@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/grt-30m-lora",
+  "slug": "matterwaveai-grt-30m-lora",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/grt-30m-lora",
+  "created_at": "2026-11-05T03:00:53.000Z",
+  "updated_at": "2026-11-05T03:01:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "grt",
+    "lora",
+    "peft",
+    "toroidal-lora",
+    "rotational-transformer",
+    "givens-rotations",
+    "clifford-algebra",
+    "sophia-torus",
+    "matterwave",
+    "text-generation",
+    "base_model:MatterWaveAI/grt-30m",
+    "base_model:adapter:MatterWaveAI/grt-30m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": 29305498,
+  "parameters_human": "29.3M",
+  "storage_bytes": 434145574,
+  "storage_human": "434 MB",
+  "base_model": "MatterWaveAI/grt-30m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRT-30M-LoRA ( MatterWaveAI/grt-30m-lora ) - Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/grt-30m-lora",
+      "snippet": "GRT-30M-LoRA is the canonical Toroidal Low-Rank Adaptation (GRTRotationalLoRA) release for MatterWaveAI/grt-30m (29,305,498 base parameters, 0 nn.Linear layers, 0 nn.Conv1d layers)."
+    }
+  ]
+}

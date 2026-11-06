@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenTWBench es un conjunto de evaluación (benchmark suite) de código abierto diseñado para medir el conocimiento de modelos de lenguaje sobre Taiwán: su derecho, medicina, administración pública, sistema territorial, educación, industria e instituciones cívicas. Las preguntas están formuladas en chino tradicional (zh-TW), tal y como se plantean en el propio Taiwán, y proceden de los exámenes nacionales publicados por el Ministerio de Exámenes (考選部). El proyecto lo mantiene la organización OpenTWBench en HuggingFace.
+OpenTWBench es un conjunto de evaluación (benchmark suite) de código abierto diseñado para medir el conocimiento de modelos de lenguaje sobre Taiwán: su derecho, medicina, administración pública, sistema territorial, educación, industria e instituciones cívicas. Las preguntas están formuladas en chino tradicional (zh-TW), tal y como se plantean en el propio Taiwán, y proceden de los exámenes nacionales publicados por el Ministerio de Exámenes (考選部). El proyecto lo mantiene la organización OpenTWBench en Hugging Face.
 
 La motivación principal es que la mayoría de los benchmarks en chino se construyen a partir de fuentes continentales, en chino simplificado y sobre instituciones de la China continental. Un modelo puede obtener buenos resultados en esos benchmarks sin saber nada sobre la Ley de Normas Laborales, la Ley de Registro de Hogares o cómo se licencia a un farmacéutico taiwanés. OpenTWBench pretende hacer medible esa brecha.
 
@@ -69,7 +69,7 @@ Otros benchmarks de conocimiento regional (por ejemplo, para China continental o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenTWBench/README
+- Repositorio Hugging Face: https://huggingface.co/OpenTWBench/README
 - Leaderboard: https://opentwbench.ai
 - Dataset relacionado (derecho taiwanés): https://huggingface.co/datasets/lianghsun/tw-legal-benchmark-v2
 - Harness de evaluación Twinkle Eval: https://github.com/ai-twinkle/Eval

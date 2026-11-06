@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ethanpaker/al_86_5d2szzpfzj` es un modelo multimodal de tipo imagen-texto-a-texto, desarrollado por el usuario de HuggingFace `ethanpaker`. Está etiquetado como `qwen3_5_moe`, lo que indica que se basa en la arquitectura Qwen 3.5 con mezcla de expertos (MoE), aunque no se ha publicado documentación oficial que confirme los detalles internos. Con aproximadamente 35,95 mil millones de parámetros totales, se posiciona en la gama de modelos grandes de código abierto, con licencia Apache 2.0 y acceso restringido (gated) en HuggingFace.
+El modelo `ethanpaker/al_86_5d2szzpfzj` es un modelo multimodal de tipo imagen-texto-a-texto, desarrollado por el usuario de Hugging Face `ethanpaker`. Está etiquetado como `qwen3_5_moe`, lo que indica que se basa en la arquitectura Qwen 3.5 con mezcla de expertos (MoE), aunque no se ha publicado documentación oficial que confirme los detalles internos. Con aproximadamente 35,95 mil millones de parámetros totales, se posiciona en la gama de modelos grandes de código abierto, con licencia Apache 2.0 y acceso restringido (gated) en Hugging Face.
 
 El modelo está diseñado para tareas que combinan comprensión de imágenes y generación de texto, como el diálogo visual o la descripción de imágenes. Su relevancia actual radica en la creciente demanda de modelos multimodales eficientes y de código abierto, aunque su escasa difusión (cero descargas y cero likes) y la falta de documentación adicional limitan su adopción inmediata. La arquitectura MoE sugiere un uso eficiente de recursos durante la inferencia, al activar solo un subconjunto de parámetros por token.
 
@@ -62,13 +62,13 @@ No hay información suficiente para establecer una comparativa rigurosa. El mode
 - Sesgos y alucinaciones: al no haber documentación sobre el entrenamiento ni evaluaciones de sesgo, se desconoce el comportamiento del modelo en situaciones delicadas. Como cualquier LLM, puede generar contenido falso o sesgado, especialmente en tareas visuales donde la interpretación de imágenes es subjetiva.
 - Riesgo de alucinación en descripciones de imagen: los modelos multimodales tienden a inventar detalles no presentes en la imagen si el entrenamiento es deficiente. Sin benchmarks, este riesgo es alto.
 - Limitaciones de contexto e idioma: no se especifica la longitud de contexto ni los idiomas soportados. Es probable que el modelo esté optimizado para inglés u otros idiomas mayoritarios, pero no hay confirmación.
-- Acceso restringido: el repositorio es gated, lo que obliga a aceptar condiciones adicionales en HuggingFace antes de descargar los pesos. Esto puede limitar su uso en entornos automatizados.
+- Acceso restringido: el repositorio es gated, lo que obliga a aceptar condiciones adicionales en Hugging Face antes de descargar los pesos. Esto puede limitar su uso en entornos automatizados.
 - Falta de soporte y mantenimiento: con cero descargas y cero likes, el modelo parece no haber sido probado por la comunidad. No hay issues reportados ni guías de uso, lo que aumenta el riesgo de errores de implementación.
 - Licencia Apache 2.0: permite uso comercial, pero al ser un modelo derivado de Qwen, es necesario verificar si la licencia de Qwen original impone restricciones adicionales. No se ha confirmado la procedencia exacta.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ethanpaker/al_86_5d2szzpfzj
+- Repositorio en Hugging Face: https://huggingface.co/ethanpaker/al_86_5d2szzpfzj
 - Perfil del autor: https://huggingface.co/ethanpaker
 - Lista de modelos del autor: https://huggingface.co/ethanpaker/models
 

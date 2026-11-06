@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-MLX-oQ4-fp16 es una cuantización mixta del modelo LFM3 de 1.700 millones de parámetros, publicada por el usuario alvarolizama en HuggingFace. El artefacto ha sido generado con la herramienta oQ (oMLX v0.7.3), que aplica cuantización de precisión mixta orientada a la librería MLX de Apple, permitiendo ejecutar el modelo en hardware Apple Silicon con un consumo de memoria reducido. El checkpoint resultante ocupa 1,038 GB (0,966 GiB) con una media efectiva de 4,801 bits por peso.
+LFM3-1.7B-MLX-oQ4-fp16 es una cuantización mixta del modelo LFM3 de 1.700 millones de parámetros, publicada por el usuario alvarolizama en Hugging Face. El artefacto ha sido generado con la herramienta oQ (oMLX v0.7.3), que aplica cuantización de precisión mixta orientada a la librería MLX de Apple, permitiendo ejecutar el modelo en hardware Apple Silicon con un consumo de memoria reducido. El checkpoint resultante ocupa 1,038 GB (0,966 GiB) con una media efectiva de 4,801 bits por peso.
 
 El modelo base, LFM3, corresponde a la familia de modelos pequeños de Liquid AI, aunque la información disponible en este repositorio no detalla la arquitectura original ni el proceso de entrenamiento. La ficha se limita a documentar el artefacto cuantizado: su distribución de bits, formato de almacenamiento y requisitos de despliegue.
 
@@ -81,5 +81,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alvarolizama/LFM3-1.7B-MLX-oQ4-fp16
+- Hugging Face: https://huggingface.co/alvarolizama/LFM3-1.7B-MLX-oQ4-fp16
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

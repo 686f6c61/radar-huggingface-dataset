@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de tareas que permitan comparar el rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-Qwen_Qwen3-8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen_Qwen3-8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio fuente de la cuantización: https://huggingface.co/bartowski/Qwen_Qwen3-8B-GGUF
 - Commit del modelo base citado: https://huggingface.co/bartowski/Qwen_Qwen3-8B-GGUF/blob/0b69f75b7472688e6808490aa2b85efdb81b5ce7/README.md

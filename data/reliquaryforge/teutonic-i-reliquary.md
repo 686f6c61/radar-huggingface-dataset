@@ -92,12 +92,12 @@ La comparativa se limita a Qwen3.5-9B, unico modelo con datos publicados en la m
 - Los benchmarks fueron generados y verificados por mineros de la propia red Reliquary, lo que introduce un posible sesgo de evaluacion interna; no se han replicado de forma independiente en la informacion disponible.
 - El informe tecnico sobre "Gumbel substitution" esta pendiente de publicacion, por lo que los detalles del entrenamiento no son verificables externamente.
 - Licencia Apache-2.0 permite uso comercial, pero se recomienda revisar las condiciones de los modelos base (Teutonic-I y Qwen3.5-9B) para confirmar compatibilidad.
-- Modelo recien publicado (noviembre de 2026) con 0 descargas y 0 likes en HuggingFace; no hay evidencia de uso en produccion.
+- Modelo recien publicado (noviembre de 2026) con 0 descargas y 0 likes en Hugging Face; no hay evidencia de uso en produccion.
 - No se documentan tipos de cuantizacion oficiales ni formatos GGUF, lo que puede limitar el despliegue en entornos de bajos recursos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary
+- Hugging Face: https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary
 - Modelo SFT base: https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary-SFT
 - Modelo base Teutonic-I: https://huggingface.co/dendriteholdings/Teutonic-I
 - Dashboard del run de RL: https://app.reliqua.ai/console/run?run=5H47sFL6-teutonic-rl-async-v1-trainer

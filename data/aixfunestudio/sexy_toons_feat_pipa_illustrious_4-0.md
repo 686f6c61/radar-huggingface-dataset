@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `AIxFuneStudio/Sexy_Toons_feat_Pipa_Illustrious_4.0` es un checkpoint publicado en HuggingFace por el usuario AIxFuneStudio. Por su denominación, el sufijo "Illustrious" apunta a la familia de modelos base de difusión para generación de imágenes Illustrious (derivada de Stable Diffusion XL), y el resto del nombre sugiere un ajuste fino orientado a un estilo concreto de ilustración de personajes. Se trata, por tanto, de un modelo de texto-a-imagen y no de un modelo de lenguaje.
+El modelo identificado como `AIxFuneStudio/Sexy_Toons_feat_Pipa_Illustrious_4.0` es un checkpoint publicado en Hugging Face por el usuario AIxFuneStudio. Por su denominación, el sufijo "Illustrious" apunta a la familia de modelos base de difusión para generación de imágenes Illustrious (derivada de Stable Diffusion XL), y el resto del nombre sugiere un ajuste fino orientado a un estilo concreto de ilustración de personajes. Se trata, por tanto, de un modelo de texto-a-imagen y no de un modelo de lenguaje.
 
-El repositorio ocupa 6,9 GB, un tamaño coherente con un checkpoint en precisión fp16 de un modelo de difusión tipo SDXL (aproximadamente 6,5-7 GB de pesos). El acceso está restringido: es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es "other", sin que la información disponible detalle sus términos.
+El repositorio ocupa 6,9 GB, un tamaño coherente con un checkpoint en precisión fp16 de un modelo de difusión tipo SDXL (aproximadamente 6,5-7 GB de pesos). El acceso está restringido: es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es "other", sin que la información disponible detalle sus términos.
 
-La información pública disponible es muy limitada: cero descargas, cero "likes", sin pipeline declarado, sin idiomas especificados y sin documentación técnica asociada en la ficha de HuggingFace. Esta ficha recoge únicamente lo verificable y marca explícitamente como "no disponible" todo aquello que no puede confirmarse.
+La información pública disponible es muy limitada: cero descargas, cero "likes", sin pipeline declarado, sin idiomas especificados y sin documentación técnica asociada en la ficha de Hugging Face. Esta ficha recoge únicamente lo verificable y marca explícitamente como "no disponible" todo aquello que no puede confirmarse.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AIxFuneStudio/Sexy_Toons_feat_Pipa_Illustrious_4.0 | no disponible | no aplica | no disponible | other | gated en HuggingFace |
+| AIxFuneStudio/Sexy_Toons_feat_Pipa_Illustrious_4.0 | no disponible | no aplica | no disponible | other | gated en Hugging Face |
 | Illustrious XL (base) | no disponible en esta ficha | no aplica | no disponible | no disponible | público (referencia de familia) |
 | Stable Diffusion XL | ~3,5 B (UNet + text encoders) | no aplica | benchmarks públicos en papers de SDXL | CreativeML Open RAIL++-M | público |
 
@@ -71,7 +71,7 @@ La comparativa es limitada porque no se dispone de datos verificables del modelo
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: no hay model card sustantiva, ni ejemplos, ni parámetros recomendados (CFG, sampler, steps).
-- Licencia "other" sin detalle: no puede confirmarse si se permite uso comercial, redistribución o modificación. Es imprescindible revisar los términos en HuggingFace antes de cualquier uso en producción.
+- Licencia "other" sin detalle: no puede confirmarse si se permite uso comercial, redistribución o modificación. Es imprescindible revisar los términos en Hugging Face antes de cualquier uso en producción.
 - Acceso restringido (gated): requiere aceptar condiciones, lo que puede limitar la automatización de descargas en pipelines.
 - Cero descargas y cero "likes": no hay evidencia de uso comunitario ni validación externa de calidad.
 - Riesgo de sesgos estilísticos y de representación derivado del dataset de fine-tune, que no se documenta.
@@ -82,5 +82,5 @@ La comparativa es limitada porque no se dispone de datos verificables del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Sexy_Toons_feat_Pipa_Illustrious_4.0
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Sexy_Toons_feat_Pipa_Illustrious_4.0
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -79,10 +79,10 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- [HuggingFace: ml-resources/Kandinsky-S2V-1.0-Pro-distill-Diffusers](https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Pro-distill-Diffusers)
+- [Hugging Face: ml-resources/Kandinsky-S2V-1.0-Pro-distill-Diffusers](https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Pro-distill-Diffusers)
 - [Checkpoint nativo: kandinskylab/Kandinsky-S2V-1.0-Pro-distill](https://huggingface.co/kandinskylab/Kandinsky-S2V-1.0-Pro-distill)
 - [Paper arXiv:2610.19290](https://arxiv.org/pdf/2610.19290)
 - [Pagina del proyecto](https://kandinskyavatar.github.io)
 - [Repositorio GitHub](https://github.com/kandinskylab/kandinsky-s2v)
-- [Coleccion HuggingFace Kandinsky S2V 1.0](https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7)
-- [Demo en HuggingFace Spaces](https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo)
+- [Coleccion Hugging Face Kandinsky S2V 1.0](https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7)
+- [Demo en Hugging Face Spaces](https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo)

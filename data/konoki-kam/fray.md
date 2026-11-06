@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KONOKI-kam/fray es un repositorio de modelo alojado en HuggingFace por el usuario KONOKI-kam, publicado bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card descriptiva, pipeline declarado, idiomas soportados ni archivos de pesos documentados publicamente. La unica informacion verificable es la licencia, la region declarada (us) y las fechas de creacion y actualizacion.
+KONOKI-kam/fray es un repositorio de modelo alojado en Hugging Face por el usuario KONOKI-kam, publicado bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card descriptiva, pipeline declarado, idiomas soportados ni archivos de pesos documentados publicamente. La unica informacion verificable es la licencia, la region declarada (us) y las fechas de creacion y actualizacion.
 
 El modelo no registra descargas ni interacciones (0 descargas, 0 likes) y la model card se limita a una linea de metadatos de licencia, sin texto explicativo sobre arquitectura, entrenamiento o capacidades. Esto impide determinar que problema resuelve, a que categoria de modelos pertenece o si se trata de un modelo de lenguaje, un adaptador, un checkpoint experimental o un repositorio auxiliar.
 
@@ -87,7 +87,7 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KONOKI-kam/fray
+- Hugging Face: https://huggingface.co/KONOKI-kam/fray
 - Model card del autor: sin contenido tecnico mas alla de la linea `license: apache-2.0`
 - Paper, blog, repositorio o demo: no disponible
 - Resultados de busqueda web: los unicos resultados devueltos corresponden a un establecimiento de comida (falafel) y no guardan relacion con el modelo; se descartan como fuentes

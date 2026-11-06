@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eqm-pusht-seed1-6nov2026_12am | 205.231.924 | no aplica | Pusht (empuje 2D) | apache-2.0 | HuggingFace, 0 descargas |
+| eqm-pusht-seed1-6nov2026_12am | 205.231.924 | no aplica | Pusht (empuje 2D) | apache-2.0 | Hugging Face, 0 descargas |
 | Políticas ACT de LeRobot sobre Pusht | no disponible | no aplica | Pusht | según checkpoint | múltiples en el Hub |
 | Políticas de difusión sobre Pusht | no disponible | no aplica | Pusht | según checkpoint | múltiples en el Hub |
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iFaz/eqm-pusht-seed1-6nov2026_12am
+- Hugging Face: https://huggingface.co/iFaz/eqm-pusht-seed1-6nov2026_12am
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

@@ -83,7 +83,7 @@ Esta comparativa es orientativa y se basa en modelos públicos conocidos de la m
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/greenfield0810/affine-ark-d31efcc558a5
+- Repositorio de Hugging Face: https://huggingface.co/greenfield0810/affine-ark-d31efcc558a5
 - Repositorio original (según la model card): https://huggingface.co/0xgevdhc/affine-5dpmave72j-v15
 - Archivos de provenance: `_affine_provenance.json` (dentro del repositorio)
 - Otros espejos del mismo grupo (según la búsqueda web): `greenfield0810/affine-ark-95d402145584` y `greenfield0810/affine-ark-14d005bfb627`

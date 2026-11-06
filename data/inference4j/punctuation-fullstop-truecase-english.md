@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `inference4j/punctuation-fullstop-truecase-english` | Transformer encoder 6 capas, d_model 512, 3 cabezas | 256 subtokens | Ingles | Apache 2.0 | ONNX | Espejo en HuggingFace |
+| `inference4j/punctuation-fullstop-truecase-english` | Transformer encoder 6 capas, d_model 512, 3 cabezas | 256 subtokens | Ingles | Apache 2.0 | ONNX | Espejo en Hugging Face |
 | `1-800-BAD-CODE/punctuation_fullstop_truecase_english` (original) | Transformer encoder 6 capas, d_model 512, 3 cabezas | 256 subtokens | Ingles | Apache 2.0 | NeMo / ONNX exportado por el autor | Repositorio original |
 | Otros modelos de puntuacion y true-casing | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -104,7 +104,7 @@ La unica diferencia verificable entre el espejo y el original es el empaquetado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference4j/punctuation-fullstop-truecase-english
+- Modelo en Hugging Face: https://huggingface.co/inference4j/punctuation-fullstop-truecase-english
 - Modelo original (upstream): https://huggingface.co/1-800-BAD-CODE/punctuation_fullstop_truecase_english
 - Repositorio de inference4j: https://github.com/inference4j/inference4j
 - Paquete punctuators (ventanas solapadas y fusion): https://github.com/1-800-BAD-CODE/punctuators

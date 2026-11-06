@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-k3b es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-0.8B, publicado por el usuario Charlie320 en HuggingFace. Se presenta como un "body" (cuerpo) para el pool de modelos tipo "soup" denominado d3-lite, asociado a la subred 127 de Bittensor. El modelo parte de una mezcla previa de otros dos fine-tunes (thermopylae-777/zils-lite-body-2 y dasLOL/zils-lite-skills-v5), ambos con licencia Apache-2.0, y aplica un ajuste suave con objetivos suaves (soft targets), preguntas computadas y regularización hacia el modelo de partida, afectando únicamente a las capas superiores.
+zils-lite-k3b es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-0.8B, publicado por el usuario Charlie320 en Hugging Face. Se presenta como un "body" (cuerpo) para el pool de modelos tipo "soup" denominado d3-lite, asociado a la subred 127 de Bittensor. El modelo parte de una mezcla previa de otros dos fine-tunes (thermopylae-777/zils-lite-body-2 y dasLOL/zils-lite-skills-v5), ambos con licencia Apache-2.0, y aplica un ajuste suave con objetivos suaves (soft targets), preguntas computadas y regularización hacia el modelo de partida, afectando únicamente a las capas superiores.
 
 Con 852.985.920 parámetros (aproximadamente 853 millones) en formato safetensors y BF16, el modelo se sitúa en la gama ultraligera de la familia Qwen3.5. La model card indica que conserva la torre de visión del modelo padre y que se han entrenado los pesos de lenguaje, lo que sugiere capacidades multimodales heredadas, aunque no se detallan arquitectura interna ni configuración de contexto.
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Charlie320/zils-lite-k3b
+- Hugging Face: https://huggingface.co/Charlie320/zils-lite-k3b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Componente del soup: https://huggingface.co/thermopylae-777/zils-lite-body-2
 - Componente del soup: https://huggingface.co/dasLOL/zils-lite-skills-v5

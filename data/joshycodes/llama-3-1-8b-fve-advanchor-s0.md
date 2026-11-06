@@ -84,7 +84,7 @@ La comparación debe leerse con cautela: los tres modelos alternativos son artef
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-advanchor-s0
+- Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-advanchor-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Corpus `flourishing-vs-equanimity` y repositorio welfare-improvements: mencionados en la model card, sin enlace disponible en la información proporcionada.
 - Paper, blog o demo: no disponibles.

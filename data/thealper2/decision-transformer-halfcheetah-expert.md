@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Decision Transformer HalfCheetah Expert es un modelo de aprendizaje por refuerzo offline (offline RL) publicado por el usuario thealper2 en HuggingFace. Se trata de una implementación del Decision Transformer de Chen et al. (2021) entrenada sobre el conjunto `halfcheetah-expert-v2` de D4RL, alojado en el dataset `edbeeching/decision_transformer_gym_replay`, y evaluada de forma autoregresiva en el entorno `HalfCheetah-v5` de Gymnasium con MuJoCo 3.8.1.
+Decision Transformer HalfCheetah Expert es un modelo de aprendizaje por refuerzo offline (offline RL) publicado por el usuario thealper2 en Hugging Face. Se trata de una implementación del Decision Transformer de Chen et al. (2021) entrenada sobre el conjunto `halfcheetah-expert-v2` de D4RL, alojado en el dataset `edbeeching/decision_transformer_gym_replay`, y evaluada de forma autoregresiva en el entorno `HalfCheetah-v5` de Gymnasium con MuJoCo 3.8.1.
 
 A diferencia de un modelo de lenguaje, aquí la secuencia de entrada son tokens de retorno-al-objetivo (return-to-go), estado y acción, en el orden (R̂_t, s_t, a_t). El modelo es deliberadamente pequeño: 727.558 parámetros, con tamaño oculto 128, 3 capas y 1 cabeza de atención, lo que lo convierte en un artefacto reproducible en hardware de consumo (se entrenó en 18 minutos sobre una NVIDIA GeForce RTX 5060 Ti). Condiciona la generación de acciones al retorno objetivo deseado, lo que permite un control explícito del rendimiento esperado.
 
@@ -83,7 +83,7 @@ No se han publicado en la información disponible otros benchmarks (MMLU, HumanE
 
 | Modelo | Parámetros | Contexto | Retorno medio (halfcheetah-expert-v2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decision Transformer (este modelo) | 727.558 | 20 pasos (60 tokens) | 11058,2-11316,7 según RTG objetivo | Apache 2.0 | HuggingFace, pesos safetensors |
+| Decision Transformer (este modelo) | 727.558 | 20 pasos (60 tokens) | 11058,2-11316,7 según RTG objetivo | Apache 2.0 | Hugging Face, pesos safetensors |
 | Baseline BC incluido en la model card | no disponible | no aplica (MLP estado → acción sin condicionamiento por retorno) | 11105,5 ± 91,7 | Apache 2.0 | incluido en el mismo repositorio |
 | Decision Transformer original (Chen et al., 2021) | no disponible | no disponible | no disponible | no disponible | paper arXiv |
 | CQL / IQL / TD3+BC sobre halfcheetah-expert-v2 | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
@@ -104,7 +104,7 @@ La única comparación cuantitativa disponible en la información suministrada e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thealper2/decision-transformer-halfcheetah-expert
+- Hugging Face: https://huggingface.co/thealper2/decision-transformer-halfcheetah-expert
 - Paper del Decision Transformer (Chen et al., 2021): https://arxiv.org/abs/2106.01345
 - Dataset de entrenamiento: https://huggingface.co/datasets/edbeeching/decision_transformer_gym_replay
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo ni con aprendizaje por refuerzo, por lo que no se han podido añadir enlaces adicionales relevantes (papers, blogs, repos o demos) más allá de los anteriores.

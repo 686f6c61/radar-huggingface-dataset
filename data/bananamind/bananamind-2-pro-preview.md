@@ -102,11 +102,11 @@ El modelo se posiciona en la categoria de small language models (~100-200M de pa
 
 | Modelo | Parametros | Contexto | Tokenizer | Arquitectura | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|---|
-| BananaMind-2-Pro-Preview | 139M (declarados) / 160M (safetensors) | 3.072 | BPE byte-level 32.768, sensible a digitos | Transformer decoder-only con GQA, RoPE, SwiGLU | bananamind-community-license-1.0 | HuggingFace, preview |
-| SmolLM-135M | 135M | 2.048 | GPT-2 tokenizer (50.257) | Transformer decoder-only | Apache 2.0 | HuggingFace, estable |
-| GPT-2 (124M) | 124M | 1.024 | BPE 50.257 | Transformer decoder-only | MIT | HuggingFace, estable |
-| Pythia-160M | 160M | 2.048 | BPE 50.254 | Transformer decoder-only | Apache 2.0 | HuggingFace, estable |
-| GPT-X2-125M | 125M | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| BananaMind-2-Pro-Preview | 139M (declarados) / 160M (safetensors) | 3.072 | BPE byte-level 32.768, sensible a digitos | Transformer decoder-only con GQA, RoPE, SwiGLU | bananamind-community-license-1.0 | Hugging Face, preview |
+| SmolLM-135M | 135M | 2.048 | GPT-2 tokenizer (50.257) | Transformer decoder-only | Apache 2.0 | Hugging Face, estable |
+| GPT-2 (124M) | 124M | 1.024 | BPE 50.257 | Transformer decoder-only | MIT | Hugging Face, estable |
+| Pythia-160M | 160M | 2.048 | BPE 50.254 | Transformer decoder-only | Apache 2.0 | Hugging Face, estable |
+| GPT-X2-125M | 125M | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 En los benchmarks publicados, SmolLM-135M supera a BananaMind-2-Pro-Preview en la mayoria de metricas de lenguaje (ARC Easy, ARC Challenge, PIQA, HellaSwag e INT Index) y tambien en Code Only (1585 vs 1295 Elo). BananaMind-2-Pro-Preview gana en ArithMark 3 (38,90 % vs 36,80 %) y en Base Bench 1.1 global (1106 vs 1125, aunque SmolLM lidera con 1125). Frente a GPT-2 y Pythia-160M, el preview de BananaMind muestra ventajas claras en todas las metricas comparables, lo que indica una mejora sustancial sobre arquitecturas clasicas. GPT-X2-125M es su rival mas cercano en INT Index (23,36 vs 23,04), aunque BananaMind supera en Code Only y Base Bench.
 
@@ -117,7 +117,7 @@ En los benchmarks publicados, SmolLM-135M supera a BananaMind-2-Pro-Preview en l
 - Ventana de contexto limitada a 3.072 tokens, insuficiente para documentos largos, conversaciones multi-turno extensas o repositorios de codigo grandes.
 - Solo soporta ingles. No se garantiza rendimiento en otros idiomas.
 - Discrepancia en el numero de parametros: el autor declara 138.971.520, pero los pesos safetensors contienen 159.943.040. Esta diferencia no esta explicada en la documentacion y debe tenerse en cuenta al planificar recursos.
-- Tokenizador custom (BPE byte-level de 32.768 tokens con sensibilidad a digitos) y arquitectura personalizada (`BananaMind2ProForCausalLM`). Requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor no auditado por HuggingFace. Riesgo de seguridad en entornos de produccion.
+- Tokenizador custom (BPE byte-level de 32.768 tokens con sensibilidad a digitos) y arquitectura personalizada (`BananaMind2ProForCausalLM`). Requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor no auditado por Hugging Face. Riesgo de seguridad en entornos de produccion.
 - Licencia `bananamind-community-license-1.0` personalizada. Los terminos exactos no estan detallados en la informacion disponible; es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial.
 - Riesgo de alucinacion y sesgos: al ser un modelo pequeno entrenado principalmente con datos web filtrados (fineweb-edu, dclm), puede generar contenido incorrecto o sesgado. No se han publicado evaluaciones de sesgo o toxicidad.
 - No se menciona soporte para tool calling, agentes, ni capacidades multimodales. No apto para tareas que requieran interaccion con APIs o razonamiento multi-paso sin fine-tuning adicional.
@@ -125,7 +125,7 @@ En los benchmarks publicados, SmolLM-135M supera a BananaMind-2-Pro-Preview en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview
+- Modelo en Hugging Face: https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview
 - Version nueva (BananaMind-2-Pro): https://huggingface.co/BananaMind/BananaMind-2-Pro (referenciada en la model card como `new_version`)
 - Modelo relacionado BananaMind-2-Medium: https://huggingface.co/BananaMind/BananaMind-2-Medium
 - Modelo comparado GPT-X2-125M: https://huggingface.co/AxiomicLabs/GPT-X2-125M

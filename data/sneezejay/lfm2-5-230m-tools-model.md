@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sneezejay/lfm2.5-230m-tools-model` es un adaptador LoRA publicado en HuggingFace por el usuario `sneezejay`, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `LiquidAI/LFM2.5-230M-Base`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos delta (formato PEFT) que debe combinarse con el modelo base de Liquid AI para poder ejecutarse. El repositorio ocupa 0,2 GB y fue creado el 1 de octubre de 2026, sin descargas ni valoraciones registradas en el momento de redactar esta ficha.
+`sneezejay/lfm2.5-230m-tools-model` es un adaptador LoRA publicado en Hugging Face por el usuario `sneezejay`, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `LiquidAI/LFM2.5-230M-Base`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos delta (formato PEFT) que debe combinarse con el modelo base de Liquid AI para poder ejecutarse. El repositorio ocupa 0,2 GB y fue creado el 1 de octubre de 2026, sin descargas ni valoraciones registradas en el momento de redactar esta ficha.
 
 El modelo base, LFM2.5-230M, es el modelo de texto mas pequeno de la familia LFM2.5 de Liquid AI: una red de 230 millones de parametros disenada explicitamente para despliegue en el borde (edge), con orientacion a extraccion de datos y bucles de agentes ligeros con tool calling. Liquid AI publico ese modelo base el 25 de junio de 2026 y lo posiciona como modelo abierto pensado para fine-tuning y ejecucion en dispositivos con presupuesto de memoria y computo muy ajustado. De ahi que tenga sentido un fine-tune especifico orientado a herramientas, como el que nos ocupa: la etiqueta `sft` y el sufijo `-tools-model` del nombre apuntan a un ajuste centrado en el uso de funciones o herramientas.
 
-La relevancia de este adaptador es limitada y hay que enmarcarla con honestidad: la model card es la plantilla vacia por defecto de HuggingFace, sin descripcion, sin hiperparametros, sin datos de entrenamiento y sin evaluacion. No hay licencia declarada, no hay idiomas declarados y no hay resultados de benchmarks. Cualquier uso en produccion exige auditar primero el adaptador por cuenta propia y asumir el coste de validacion.
+La relevancia de este adaptador es limitada y hay que enmarcarla con honestidad: la model card es la plantilla vacia por defecto de Hugging Face, sin descripcion, sin hiperparametros, sin datos de entrenamiento y sin evaluacion. No hay licencia declarada, no hay idiomas declarados y no hay resultados de benchmarks. Cualquier uso en produccion exige auditar primero el adaptador por cuenta propia y asumir el coste de validacion.
 
 ## Especificaciones tecnicas
 
@@ -93,8 +93,8 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/sneezejay/lfm2.5-230m-tools-model
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-230M-Base
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/sneezejay/lfm2.5-230m-tools-model
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-230M-Base
 - Pagina del modelo base LFM2.5-230M: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Blog de Liquid AI sobre LFM2.5-230M: https://www.liquid.ai/blog/lfm2-5-230m
 - Documentacion de Liquid AI para LFM2.5-230M: https://docs.liquid.ai/lfm/models/lfm25-230m

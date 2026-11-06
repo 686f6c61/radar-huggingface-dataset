@@ -72,6 +72,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/intura-ai/kyc-face-verification
+- Repositorio en Hugging Face: https://huggingface.co/intura-ai/kyc-face-verification
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo) asociados especificamente a este modelo en la busqueda web realizada.

@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/CMSManhattan/JiRackTernaryGemma4_26b
+- Ficha en Hugging Face: https://huggingface.co/CMSManhattan/JiRackTernaryGemma4_26b
 - Tokenizador: https://huggingface.co/CMSManhattan/GemmaRoboticsTokenizer
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - IDE y servicios JiRack: https://www.jirack.com

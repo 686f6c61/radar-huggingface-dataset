@@ -80,8 +80,8 @@ Ademas, se publico una curva de escala del adaptador LLM entre 0.00 y 1.00 usand
 
 | Modelo | Parametros | Contexto | Overall en O.W.L./N.E.W.T. | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B base | 873.438.784 | No disponible | 0.00 | Apache 2.0 | HuggingFace |
-| littleHermione-0.8B | 12.779.520 entrenables + 873.438.784 base | No disponible | 100.00 (contaminado) | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B base | 873.438.784 | No disponible | 0.00 | Apache 2.0 | Hugging Face |
+| littleHermione-0.8B | 12.779.520 entrenables + 873.438.784 base | No disponible | 100.00 (contaminado) | Apache 2.0 | Hugging Face |
 | GPT-5.6 Sol | No disponible | No disponible | 88.89 | No disponible | No disponible |
 | Fable 5 | No disponible | No disponible | 96.67 | No disponible | No disponible |
 
@@ -99,7 +99,7 @@ La comparativa es limitada porque la unica informacion publica de GPT-5.6 Sol y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/irioder/littleHermione-0.8B
+- Hugging Face: https://huggingface.co/irioder/littleHermione-0.8B
 - Repositorio y codigo: https://github.com/VSBDev/little-hermione
 - Demo interactiva: https://victorsb.com/experiments/littlehermione/
 - Blog explicativo: https://victorsb.com/blog/benchmaxing-harry-potter/

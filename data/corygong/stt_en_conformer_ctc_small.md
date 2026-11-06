@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `corygong/stt_en_conformer_ctc_small` es un sistema de reconocimiento automático del habla (ASR) en inglés, basado en la arquitectura Conformer-CTC en su variante pequeña no autorregresiva. Fue desarrollado por NVIDIA y publicado en HuggingFace por el usuario corygong, y está disponible a través del toolkit NeMo. Con aproximadamente 13 millones de parámetros, está diseñado para transcribir audio en inglés a texto en minúsculas, incluyendo espacios y apóstrofes.
+El modelo `corygong/stt_en_conformer_ctc_small` es un sistema de reconocimiento automático del habla (ASR) en inglés, basado en la arquitectura Conformer-CTC en su variante pequeña no autorregresiva. Fue desarrollado por NVIDIA y publicado en Hugging Face por el usuario corygong, y está disponible a través del toolkit NeMo. Con aproximadamente 13 millones de parámetros, está diseñado para transcribir audio en inglés a texto en minúsculas, incluyendo espacios y apóstrofes.
 
 El modelo resuelve el problema de transcripción de voz a texto con un equilibrio entre precisión y eficiencia computacional, siendo adecuado para despliegues con recursos limitados. Se entrenó sobre el conjunto de datos NeMo ASRSet, que agrega alrededor de 16 000 horas de habla inglesa procedente de múltiples corpus públicos como LibriSpeech, Common Voice, VCTK, Fisher, Switchboard, WSJ y corpus singapurenses. Su relevancia actual radica en ser una opción ligera y de código abierto (licencia CC-BY-4.0) para aplicaciones de ASR en producción, con soporte nativo en NeMo y compatibilidad con NVIDIA Riva.
 
@@ -77,8 +77,8 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/corygong/stt_en_conformer_ctc_small
-- Version v2 en HuggingFace: https://huggingface.co/corygong/stt_en_conformer_ctc_small_v2
+- Modelo en Hugging Face: https://huggingface.co/corygong/stt_en_conformer_ctc_small
+- Version v2 en Hugging Face: https://huggingface.co/corygong/stt_en_conformer_ctc_small_v2
 - Pagina del modelo en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/stt_en_conformer_ctc_small
 - Repositorio de NVIDIA NeMo: https://github.com/NVIDIA/NeMo
 - Paper de Conformer (arxiv:1910.09700): https://arxiv.org/abs/1910.09700

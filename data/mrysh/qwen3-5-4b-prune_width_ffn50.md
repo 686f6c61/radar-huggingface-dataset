@@ -87,7 +87,7 @@ La comparación cuantitativa de rendimiento entre estas alternativas no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-4b-prune_width_ffn50
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-4b-prune_width_ffn50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - NVIDIA ModelOpt (herramienta de poda): https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - vLLM (runtime de evaluación): https://github.com/vllm-project/vllm

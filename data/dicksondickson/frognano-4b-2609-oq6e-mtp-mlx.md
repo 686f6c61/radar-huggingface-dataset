@@ -74,6 +74,6 @@ No disponible. La model card no incluye comparaciones con otros modelos, y no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dicksondickson/FrogNano-4B-2609-oQ6e-mtp-MLX
+- Repositorio Hugging Face: https://huggingface.co/dicksondickson/FrogNano-4B-2609-oQ6e-mtp-MLX
 - Modelo base: https://huggingface.co/microsoft/FrogNano-4B-2609
 - Herramienta de cuantizacion oMLX: https://github.com/jundot/omlx

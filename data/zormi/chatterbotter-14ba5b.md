@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zormi/chatterbotter-14bA5b` es un submódulo alojado en HuggingFace Hub por el usuario `zormi`, publicado con licencia Apache-2.0. A fecha de su creación (28 de agosto de 2026) no dispone de model card descriptiva, métricas de descargas ni interacciones de la comunidad, lo que sugiere que se trata de un lanzamiento reciente o experimental. El nombre sugiere una posible orientación a conversación (chatterbot) y un tamaño de 14 mil millones de parámetros (14b), aunque esta interpretación no está confirmada por documentación oficial. No se ha publicado ninguna especificación técnica, arquitectura, datos de entrenamiento ni resultados de evaluación, por lo que cualquier uso en producción requiere una validación previa exhaustiva.
+El modelo `zormi/chatterbotter-14bA5b` es un submódulo alojado en Hugging Face Hub por el usuario `zormi`, publicado con licencia Apache-2.0. A fecha de su creación (28 de agosto de 2026) no dispone de model card descriptiva, métricas de descargas ni interacciones de la comunidad, lo que sugiere que se trata de un lanzamiento reciente o experimental. El nombre sugiere una posible orientación a conversación (chatterbot) y un tamaño de 14 mil millones de parámetros (14b), aunque esta interpretación no está confirmada por documentación oficial. No se ha publicado ninguna especificación técnica, arquitectura, datos de entrenamiento ni resultados de evaluación, por lo que cualquier uso en producción requiere una validación previa exhaustiva.
 
 ## Especificaciones tecnicas
 
@@ -52,6 +52,6 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- [HuggingFace - zormi/chatterbotter-14bA5b](https://huggingface.co/zormi/chatterbotter-14bA5b)
+- [Hugging Face - zormi/chatterbotter-14bA5b](https://huggingface.co/zormi/chatterbotter-14bA5b)
 
 No se han encontrado papers, repositorios de código, demos o publicaciones relacionadas con este modelo en la búsqueda web realizada.

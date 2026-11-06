@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Salida | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Depth-Anything-V2-Metric-Hypersim-Small (este port) | 24,78 M | Profundidad métrica (m, máx. 20) | Imagen RGB, resolución variable | Apache-2.0 | HuggingFace, `trust_remote_code` |
-| depth-anything/Depth-Anything-V2-Metric-Hypersim-Small (original) | 24,78 M | Profundidad métrica (m, máx. 20) | Imagen RGB, resolución variable | Apache-2.0 | HuggingFace, código original `.pth` |
+| Depth-Anything-V2-Metric-Hypersim-Small (este port) | 24,78 M | Profundidad métrica (m, máx. 20) | Imagen RGB, resolución variable | Apache-2.0 | Hugging Face, `trust_remote_code` |
+| depth-anything/Depth-Anything-V2-Metric-Hypersim-Small (original) | 24,78 M | Profundidad métrica (m, máx. 20) | Imagen RGB, resolución variable | Apache-2.0 | Hugging Face, código original `.pth` |
 | DepthAnythingForDepthEstimation (`-hf` de transformers) | no disponible | Profundidad (relativa o métrica según checkpoint) | Imagen RGB; solo coincide con el original en entradas cuadradas | Apache-2.0 | Integrado en `transformers` sin `trust_remote_code` |
-| Depth Anything V2 Relative Small | 24,78 M | Profundidad relativa | Imagen RGB, resolución variable | Apache-2.0 | HuggingFace |
+| Depth Anything V2 Relative Small | 24,78 M | Profundidad relativa | Imagen RGB, resolución variable | Apache-2.0 | Hugging Face |
 
 La diferencia principal entre este port y la versión `-hf` de `transformers` es la fidelidad: este ejecuta los módulos originales y es bit-idéntico, mientras que la reimplementación diverge en entradas no cuadradas. Frente al checkpoint original en `.pth`, este port ofrece la misma numeración pero con la API de `transformers`.
 
@@ -86,7 +86,7 @@ La diferencia principal entre este port y la versión `-hf` de `transformers` es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bigshanedogg/Depth-Anything-V2-Metric-Hypersim-Small
+- Hugging Face: https://huggingface.co/bigshanedogg/Depth-Anything-V2-Metric-Hypersim-Small
 - Modelo base: https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-Hypersim-Small
 - Repositorio oficial: https://github.com/DepthAnything/Depth-Anything-V2
 - Paper Depth Anything V2: https://arxiv.org/abs/2406.09414

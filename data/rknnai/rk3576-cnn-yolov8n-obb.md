@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Resolucion | Cuantizacion | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RKNNAI/RK3576-CNN-yolov8n-obb | CNN YOLOv8n-OBB | 640x640 | w8a8 | RK3576 (1 nucleo NPU) | AGPL-3.0 | HuggingFace y ModelScope (revision v2.4.0) |
+| RKNNAI/RK3576-CNN-yolov8n-obb | CNN YOLOv8n-OBB | 640x640 | w8a8 | RK3576 (1 nucleo NPU) | AGPL-3.0 | Hugging Face y ModelScope (revision v2.4.0) |
 | yolov8n-obb (Ultralytics / airockchip) | CNN YOLOv8n-OBB | configurable | no cuantizado (origen) | GPU/CPU generica | AGPL-3.0 | Repositorio GitHub |
 | Otras conversiones RKNN del RKNN Model Zoo | CNN YOLOv8 en variantes deteccion/segmentacion/pose | segun configuracion | w8a8 u otras | chips Rockchip (RK3566, RK3588, RK3576, etc.) | AGPL-3.0 | GitHub y ModelScope |
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo (mAP, latencia, throughput) en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3576-CNN-yolov8n-obb
+- Hugging Face: https://huggingface.co/RKNNAI/RK3576-CNN-yolov8n-obb
 - Modelo origen (Ultralytics adaptado por airockchip): https://github.com/airockchip/ultralytics_yolov8
 - RKNN Model Zoo, ejemplo yolov8: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov8
 - Documentacion china del repositorio (README_CN.md): no disponible como enlace directo; referenciado en la model card.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/onyx-knoll-95` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `models4world` el 26 de agosto de 2026. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) diseñado para ser aplicado sobre el modelo base `models4world/maple-signal-64`, del cual no se proporciona información pública adicional. El repositorio tiene un tamaño de 1,9 GB y el pipeline asociado es de generación de texto.
+El modelo `models4world/onyx-knoll-95` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `models4world` el 26 de agosto de 2026. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) diseñado para ser aplicado sobre el modelo base `models4world/maple-signal-64`, del cual no se proporciona información pública adicional. El repositorio tiene un tamaño de 1,9 GB y el pipeline asociado es de generación de texto.
 
 La relevancia de este modelo es actualmente limitada por la ausencia de documentación técnica: la model card no incluye especificaciones sobre arquitectura, datos de entrenamiento, licencia o casos de uso previstos. El único dato técnico confirmado es que se trata de un adaptador LoRA, con soporte para la librería PEFT (versión 0.20.0) y formato de pesos `safetensors`. No se han publicado benchmarks ni evaluaciones independientes.
 
@@ -64,7 +64,7 @@ No disponible. No se conocen modelos comparables en la misma categoria, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/models4world/onyx-knoll-95
+- Modelo en Hugging Face: https://huggingface.co/models4world/onyx-knoll-95
 - Perfil del autor: https://huggingface.co/models4world/models
 - Referencia del paper de LoRA (mencionado en los tags): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

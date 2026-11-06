@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ulasZoi/smolvla_pickcube_bs64_LoRA_best` es un adaptador LoRA (PEFT) alojado en HuggingFace, cuyo modelo base declarado es `lerobot/smolvla_base`, un modelo de tipo vision-language-action (VLA) perteneciente al ecosistema LeRobot. El repositorio contiene exclusivamente los pesos del adaptador, no un modelo completo: su tamano es de 0,0 GB y la libreria indicada es `peft`, con formato `safetensors`.
+`ulasZoi/smolvla_pickcube_bs64_LoRA_best` es un adaptador LoRA (PEFT) alojado en Hugging Face, cuyo modelo base declarado es `lerobot/smolvla_base`, un modelo de tipo vision-language-action (VLA) perteneciente al ecosistema LeRobot. El repositorio contiene exclusivamente los pesos del adaptador, no un modelo completo: su tamano es de 0,0 GB y la libreria indicada es `peft`, con formato `safetensors`.
 
-El nombre del repositorio sugiere, como inferencia y no como dato confirmado, que se trata de un ajuste fino para una tarea de manipulacion robotica denominada "pickcube" (recoger un cubo) y que se entreno con un tamano de lote de 64 (`bs64`) y una tasa de aprendizaje de 1e-4 (`1e-4`). El autor, `ulasZoi`, no ha publicado informacion adicional: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]".
+El nombre del repositorio sugiere, como inferencia y no como dato confirmado, que se trata de un ajuste fino para una tarea de manipulacion robotica denominada "pickcube" (recoger un cubo) y que se entreno con un tamano de lote de 64 (`bs64`) y una tasa de aprendizaje de 1e-4 (`1e-4`). El autor, `ulasZoi`, no ha publicado informacion adicional: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]".
 
 La relevancia de esta ficha es limitada y debe interpretarse como tal: se trata de un artefacto de investigacion sin documentacion, sin licencia declarada, sin benchmarks y con cero descargas y cero "likes" en el momento de la consulta. Resulta util unicamente como ejemplo de adaptador LoRA sobre un modelo VLA de robotica, no como componente listo para produccion.
 
@@ -72,8 +72,8 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ulasZoi/smolvla_pickcube_bs64_LoRA_best` | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| `lerobot/smolvla_base` (modelo base) | no disponible en esta informacion | no disponible | consultar en su repositorio | HuggingFace |
+| `ulasZoi/smolvla_pickcube_bs64_LoRA_best` | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| `lerobot/smolvla_base` (modelo base) | no disponible en esta informacion | no disponible | consultar en su repositorio | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_LoRA_best
+- Repositorio Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_LoRA_best
 - Modelo base referenciado: https://huggingface.co/lerobot/smolvla_base
 - Proyecto LeRobot (ecosistema del modelo base): https://github.com/huggingface/lerobot
 - Documentacion de PEFT: https://huggingface.co/docs/peft

@@ -79,7 +79,7 @@ La comparativa se basa en la información de la búsqueda web. El LoRA orbital s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AhsanHareem/reelbids-ltx25-orbit-lora
+- Repositorio Hugging Face: https://huggingface.co/AhsanHareem/reelbids-ltx25-orbit-lora
 - LoRA dolly-in del mismo autor: https://huggingface.co/AhsanHareem/reelbids-ltx25-camera-lora
 - Página del LoRA dolly-in en AI Market Cap: https://aimarketcap.tech/models/ahsanhareem-reelbids-ltx25-camera-lora
 - Listado de modelos de AhsanHareem en AI Market Cap: https://aimarketcap.tech/providers/ahsanhareem

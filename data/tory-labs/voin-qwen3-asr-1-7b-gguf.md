@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / audio | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| voin-qwen3-asr-1.7b-gguf (este repo) | ~2,04 B | No disponible | Apache 2.0 | GGUF Q5_K_M | HuggingFace (mirror) |
-| Qwen/Qwen3-ASR-1.7B (original) | ~2,04 B | No disponible | Apache 2.0 | Safetensors | HuggingFace |
-| Whisper large-v3 (OpenAI) | ~1,55 B | Ventanas de 30 s | MIT | Safetensors, GGUF, etc. | HuggingFace, whisper.cpp |
-| Whisper medium (OpenAI) | ~769 M | Ventanas de 30 s | MIT | Safetensors, GGUF, etc. | HuggingFace, whisper.cpp |
+| voin-qwen3-asr-1.7b-gguf (este repo) | ~2,04 B | No disponible | Apache 2.0 | GGUF Q5_K_M | Hugging Face (mirror) |
+| Qwen/Qwen3-ASR-1.7B (original) | ~2,04 B | No disponible | Apache 2.0 | Safetensors | Hugging Face |
+| Whisper large-v3 (OpenAI) | ~1,55 B | Ventanas de 30 s | MIT | Safetensors, GGUF, etc. | Hugging Face, whisper.cpp |
+| Whisper medium (OpenAI) | ~769 M | Ventanas de 30 s | MIT | Safetensors, GGUF, etc. | Hugging Face, whisper.cpp |
 
 No se dispone de comparaciones de WER entre estos modelos en la información proporcionada, por lo que la tabla se limita a parámetros, licencia y disponibilidad.
 
@@ -96,7 +96,7 @@ No se dispone de comparaciones de WER entre estos modelos en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tory-labs/voin-qwen3-asr-1.7b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/tory-labs/voin-qwen3-asr-1.7b-gguf
 - Modelo original: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Conversión GGUF de referencia: https://huggingface.co/handy-computer/Qwen3-ASR-1.7B-gguf/tree/3555bd238a8572bbace3ebf60d23b036dc0a5dbe
 - Aplicación voin: https://github.com/su-record/voin

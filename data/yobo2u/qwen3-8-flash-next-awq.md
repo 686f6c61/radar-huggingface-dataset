@@ -79,7 +79,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- [Modelo AWQ en HuggingFace](https://huggingface.co/yobo2u/Qwen3.8-Flash-Next-AWQ)
+- [Modelo AWQ en Hugging Face](https://huggingface.co/yobo2u/Qwen3.8-Flash-Next-AWQ)
 - [Modelo base Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [Blog de Qwen sobre Qwen3.8-Flash-Next](https://qwen.ai/blog?id=qwen3.8-flash-next)
 - [Repositorio GitHub de Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/tree/main)

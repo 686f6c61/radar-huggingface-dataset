@@ -73,6 +73,6 @@ No disponible. No se han proporcionado datos de comparación con otros modelos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sanjayBalu/leaf-detection
+- Hugging Face: https://huggingface.co/sanjayBalu/leaf-detection
 - Dataset de entrenamiento: https://www.kaggle.com/datasets/alexo98/leaf-detection
 - Adaptación del dataset a formato YOLO: https://www.kaggle.com/code/luisolazo/leaf-detection-w-ultralytics-yolov8-and-tflite

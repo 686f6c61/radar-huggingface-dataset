@@ -6,7 +6,7 @@ DTM-Codec es un codec neuronal de voz de 125 millones de parámetros desarrollad
 
 A diferencia de sistemas recientes que emplean grandes corpus multilingües y modelos semánticos auxiliares, DTM-Codec se entrena únicamente con LibriSpeech-960, un conjunto de datos de habla inglesa de dominio público. Esta elección lo convierte en un modelo modesto en tamaño y datos, pero demuestra que es posible lograr un codec VFR eficiente con recursos limitados. El modelo introduce un mecanismo de enmascaramiento dinámico de tokens (DTM) que, junto con una selección eficiente de fronteras, aborda el problema de la sobrecarga de bits de posición que afectaba a trabajos VFR previos.
 
-El repositorio de HuggingFace proporciona artefactos del checkpoint en formato safetensors, con cuatro revisiones correspondientes a tasas de token de 25, 40, 50 y 80 Hz. La revisión principal (main) replica la de 50 Hz. El código y las instrucciones de uso están disponibles en el repositorio de GitHub del autor.
+El repositorio de Hugging Face proporciona artefactos del checkpoint en formato safetensors, con cuatro revisiones correspondientes a tasas de token de 25, 40, 50 y 80 Hz. La revisión principal (main) replica la de 50 Hz. El código y las instrucciones de uso están disponibles en el repositorio de GitHub del autor.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 - VRAM estimada para inferencia: con 125M de parametros, en FP32 se requieren aproximadamente 500 MB de VRAM; en FP16, unos 250 MB. La cuantizacion a 8 bits reduciria el consumo a unos 125 MB, aunque no se proporcionan pesos cuantizados.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente para inferencia en FP16, incluyendo tarjetas consumer como GTX 1060, RTX 2060 o superiores. Para entrenamiento o fine-tuning, se recomienda una GPU con 8-12 GB de VRAM (RTX 3080, A100, etc.).
 - Compatibilidad con consumer GPU: si, el modelo es ligero y cabe en GPUs de gama media.
-- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con librerias como PyTorch o HuggingFace Transformers. No se mencionan integraciones con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con librerias como PyTorch o Hugging Face Transformers. No se mencionan integraciones con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -67,11 +67,11 @@ No se dispone de datos comparativos con otros codecs neuronales (como EnCodec, S
 - Sin soporte de cuantizacion oficial: solo se proporcionan pesos en FP32/FP16 (safetensors), lo que puede limitar su uso en entornos con restricciones de memoria.
 - Licencia MIT: permite uso comercial y modificacion, pero el usuario debe verificar que los datos de entrenamiento (LibriSpeech) cumplen con sus requisitos de licencia.
 - No se especifican limites de contexto ni de duracion de audio: la informacion disponible no indica la longitud maxima de la senal que puede procesar el modelo.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto reciente o poco difundido; se recomienda validar su funcionamiento antes de usarlo en produccion.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto reciente o poco difundido; se recomienda validar su funcionamiento antes de usarlo en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hoyso48/DTM-Codec
+- Hugging Face: https://huggingface.co/hoyso48/DTM-Codec
 - Articulo arXiv (HTML): https://arxiv.org/html/2606.29480v1
 - Articulo arXiv (PDF): https://arxiv.org/pdf/2606.29480
 - Repositorio GitHub: https://github.com/hoyso48/DTM-Codec

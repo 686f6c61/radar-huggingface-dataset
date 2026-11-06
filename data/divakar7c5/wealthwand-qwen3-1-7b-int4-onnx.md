@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divakar7c5/wealthwand-qwen3-1.7b-int4-onnx
+- Modelo en Hugging Face: https://huggingface.co/divakar7c5/wealthwand-qwen3-1.7b-int4-onnx
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de la aplicacion Wealth Wand: https://github.com/WealthWand/wealth-wand
 - Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo, su autor o el proyecto; los unicos resultados obtenidos correspondian a un producto no relacionado (una placa de induccion Kenwood IDC01) y se han descartado por no ser pertinentes.

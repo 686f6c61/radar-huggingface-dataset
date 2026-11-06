@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre el modelo base `NynaeveProj/Llama-3.1-8B-4bit`, que a su vez es una cuantización a 4 bits de Llama 3.1 8B. Es, por tanto, un ajuste fino supervisado (SFT) de bajo rango sobre un Llama 3.1 8B ya cuantizado, no un modelo completo e independiente: para utilizarlo hay que cargar primero el base y aplicar el adaptador. El repositorio ocupa 0,3 GB y se distribuye en safetensors con la librería `peft` (versión 0.19.1 según la model card).
 
-El nombre del repositorio indica el procedimiento seguido: SFT sobre datos tipo Alpaca (`alpaca-sft`), con un componente identificado como `ce-pku-suan2` y dos escalares negativos (`neg20.0`, `neg5.0`). La model card, sin embargo, es la plantilla por defecto de HuggingFace sin rellenar: no documenta el conjunto de datos, los hiperparámetros, la licencia ni los idiomas. Cualquier afirmación sobre el proceso de entrenamiento más allá de lo que sugiere el nombre del repositorio es una inferencia, no un dato verificado.
+El nombre del repositorio indica el procedimiento seguido: SFT sobre datos tipo Alpaca (`alpaca-sft`), con un componente identificado como `ce-pku-suan2` y dos escalares negativos (`neg20.0`, `neg5.0`). La model card, sin embargo, es la plantilla por defecto de Hugging Face sin rellenar: no documenta el conjunto de datos, los hiperparámetros, la licencia ni los idiomas. Cualquier afirmación sobre el proceso de entrenamiento más allá de lo que sugiere el nombre del repositorio es una inferencia, no un dato verificado.
 
 Su relevancia práctica es limitada y muy específica: sirve como ejemplo reproducible de ajuste fino con LoRA sobre un Llama 3.1 8B cuantizado a 4 bits, un escenario de bajo consumo de VRAM habitual en laboratorios con GPUs de consumo. Con 0 descargas y 0 likes en el momento de la consulta, y sin resultados de evaluación publicados, no debe considerarse una alternativa lista para producción frente a Instruct oficiales.
 
@@ -84,7 +84,7 @@ La comparación de rendimiento con estas alternativas no es posible: el adaptado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit-alpaca-sft-ce-pku-suan2-neg20.0-neg5.0
+- Repositorio Hugging Face: https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit-alpaca-sft-ce-pku-suan2-neg20.0-neg5.0
 - Modelo base (cuantizado a 4 bits): https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit
 - Referencia citada en la model card (calculadora de impacto, Lacoste et al.): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

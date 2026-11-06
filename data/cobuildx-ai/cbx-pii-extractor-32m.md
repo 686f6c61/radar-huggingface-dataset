@@ -35,7 +35,7 @@ La model card no detalla el número de tokens del entrenamiento ni la composici�
 - Manejo de textos largos: contexto de 7.999 tokens en una sola pasada, con división automática de textos más largos.
 - Detección de casos difíciles: nombres solo con nombre de pila, iniciales, apodos y en minúsculas; menciones de Slack con delimitadores; números de póliza, miembro y cuenta; identificadores de empleado en tablas; últimos cuatro dígitos de tarjetas; extensiones telefónicas.
 - Baja tasa de falsos positivos: 0,07 valores falsos por cada 1.000 caracteres en texto sin PII.
-- Uso como pipeline de token classification en HuggingFace, con script de carga `PIIExtractor` incluido en el repositorio.
+- Uso como pipeline de token classification en Hugging Face, con script de carga `PIIExtractor` incluido en el repositorio.
 
 ## Casos de uso
 
@@ -78,9 +78,9 @@ Datos adicionales publicados:
 
 | Modelo | Parametros | Contexto | F1 PII-TRACE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cbx-pii-extractor-32M | 32M | 7.999 tokens | 93,5 % | Apache 2.0 | HuggingFace (CobuildX-AI) |
-| cbx-pii-extractor-68M | 68M | no disponible | 93,2 % | Apache 2.0 | HuggingFace (CobuildX-AI) |
-| cbx-pii-extractor-17M | 17M | no disponible | 91,6 % | Apache 2.0 | HuggingFace (CobuildX-AI) |
+| cbx-pii-extractor-32M | 32M | 7.999 tokens | 93,5 % | Apache 2.0 | Hugging Face (CobuildX-AI) |
+| cbx-pii-extractor-68M | 68M | no disponible | 93,2 % | Apache 2.0 | Hugging Face (CobuildX-AI) |
+| cbx-pii-extractor-17M | 17M | no disponible | 91,6 % | Apache 2.0 | Hugging Face (CobuildX-AI) |
 | PII-Tracer | 596M | no disponible | 92,5 % | no disponible | público (benchmark propio) |
 | GLiNER2-PII | 205M | no disponible | 66,2 % | no disponible | público |
 | Presidio (spaCy lg) | – | no disponible | 64,7 % | MIT (Presidio) | software libre |
@@ -100,7 +100,7 @@ La variante de 32M ofrece prácticamente el mismo F1 en documentos que la de 68M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-32M
+- Modelo en Hugging Face: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-32M
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-32m
 - Variante 68M: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-68M
 - Variante 17M: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-17M

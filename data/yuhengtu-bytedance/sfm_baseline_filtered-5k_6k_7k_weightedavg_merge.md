@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - sfm_baseline_filtered-5k_6k_7k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-5k_6k_7k_weightedavg_merge)
+- [Hugging Face - sfm_baseline_filtered-5k_6k_7k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-5k_6k_7k_weightedavg_merge)
 - [mergekit (repositorio de la herramienta)](https://github.com/cg123/mergekit)
 - [Paper sobre Linear Merge (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Página del equipo ByteDance Seed](https://seed.bytedance.com/en/)

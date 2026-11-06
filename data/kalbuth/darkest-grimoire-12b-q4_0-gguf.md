@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/kalbuth/Darkest-Grimoire-12B-Q4_0-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/kalbuth/Darkest-Grimoire-12B-Q4_0-GGUF
 - Modelo base original: https://huggingface.co/Vortex5/Darkest-Grimoire-12B
 - Conversión GGUF alternativa con más cuantizaciones: https://huggingface.co/mradermacher/Darkest-Grimoire-12B-GGUF
 - Herramienta de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

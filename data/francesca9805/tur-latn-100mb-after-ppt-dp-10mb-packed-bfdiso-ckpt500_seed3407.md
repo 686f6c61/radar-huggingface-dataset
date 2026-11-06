@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) de un modelo base de la misma autora, identificado en la model card como `francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`. Se trata de un artefacto de investigacion publicado en HuggingFace con licencia no declarada de forma efectiva (la model card incluye unicamente el marcador `licence: license`), 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un experimento de entrenamiento mas que un modelo orientado a produccion.
+El modelo `francesca9805/tur-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) de un modelo base de la misma autora, identificado en la model card como `francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`. Se trata de un artefacto de investigacion publicado en Hugging Face con licencia no declarada de forma efectiva (la model card incluye unicamente el marcador `licence: license`), 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un experimento de entrenamiento mas que un modelo orientado a produccion.
 
-La etiqueta `gpt2` de HuggingFace y el recuento real de parametros del repositorio (124.770.816, aproximadamente 124,8 millones) situan la arquitectura en la familia GPT-2 small, un transformer decoder-only de 12 capas y 768 dimensiones ocultas. El nombre del repositorio sugiere un corpus de entrenamiento en turco con alfabeto latino de unos 100 MB, un subconjunto empaquetado de 10 MB y un checkpoint intermedio (paso 500) de una ejecucion con semilla 3407. La relevancia actual es limitada fuera del ambito de la investigacion sobre tokenizacion y entrenamiento de modelos pequenos: sirve como referencia reproducible de un pipeline TRL + Transformers sobre un idioma de recursos medios como el turco.
+La etiqueta `gpt2` de Hugging Face y el recuento real de parametros del repositorio (124.770.816, aproximadamente 124,8 millones) situan la arquitectura en la familia GPT-2 small, un transformer decoder-only de 12 capas y 768 dimensiones ocultas. El nombre del repositorio sugiere un corpus de entrenamiento en turco con alfabeto latino de unos 100 MB, un subconjunto empaquetado de 10 MB y un checkpoint intermedio (paso 500) de una ejecucion con semilla 3407. La relevancia actual es limitada fuera del ambito de la investigacion sobre tokenizacion y entrenamiento de modelos pequenos: sirve como referencia reproducible de un pipeline TRL + Transformers sobre un idioma de recursos medios como el turco.
 
 No hay informacion publica sobre composicion del dataset, numero de tokens, hiperparametros de entrenamiento, licencia de uso comercial ni idiomas soportados mas alla de lo que sugiere el propio nombre del repositorio. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo.
 
@@ -12,7 +12,7 @@ No hay informacion publica sobre composicion del dataset, numero de tokens, hipe
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia GPT-2, etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only (familia GPT-2, etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (aprox. 124,8 M, dato real de safetensors) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -44,7 +44,7 @@ El entrenamiento se realizo mediante SFT con la libreria TRL (version 0.23.0), s
 - Investigacion sobre tokenizacion: la nomenclatura del repositorio (`tur-latn-100mb`, `10mb-packed`) sugiere que el artefacto forma parte de un estudio comparativo de tokenizadores y estrategias de empaquetado de secuencias, por lo que es util para replicar ese tipo de analisis.
 - Pruebas de inferioridad y controles negativos: dado su tamano reducido y su falta de alineacion documentada, puede emplearse como linea base de baja capacidad en experimentos que midan el salto de calidad de modelos mayores.
 - Prototipado de pipelines de generacion de texto: permite validar integraciones con Transformers, TRL y TGI sin coste de GPU significativo, antes de migrar a modelos de mayor tamano.
-- Docencia y formacion: sirve para ilustrar el ciclo completo de publicacion de un modelo en HuggingFace, desde el entrenamiento con TRL hasta la model card autogenerada.
+- Docencia y formacion: sirve para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face, desde el entrenamiento con TRL hasta la model card autogenerada.
 - Evaluacion de infraestructura de despliegue: con 124,8 M de parametros, es adecuado para probar configuraciones de batching, cuantizacion y servidores de inferencia en hardware modesto.
 - Generacion de texto en turco con fines exploratorios: unicamente si se valida previamente la calidad real del modelo, ya que no hay evaluaciones publicadas que la respalden.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (`tur-latn-100mb-after-ppt-...-ckpt500_seed3407`) | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT con TRL sobre base propia; sin benchmarks |
+| Este modelo (`tur-latn-100mb-after-ppt-...-ckpt500_seed3407`) | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT con TRL sobre base propia; sin benchmarks |
 | GPT-2 small (referencia arquitectonica) | 124 M | 1024 tokens (configuracion estandar de GPT-2) | MIT (licencia del modelo original de OpenAI) | Ampliamente disponible | Arquitectura de referencia de la familia; el contexto del modelo analizado no esta confirmado |
-| `francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407` | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Modelo base declarado del que deriva este checkpoint |
+| `francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407` | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Modelo base declarado del que deriva este checkpoint |
 
 No se dispone de informacion suficiente para comparar con otros modelos en turco de tamano similar, ni con alternativas ajustadas con SFT sobre corpus comparables.
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para comparar con otros modelos en turco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base declarado: https://huggingface.co/francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/jdqvm1f5
 - Repositorio de TRL: https://github.com/huggingface/trl

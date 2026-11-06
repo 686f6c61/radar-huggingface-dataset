@@ -76,8 +76,8 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FunDLM-Small-1024bp-Mini | 88M (base) + LoRA r=8 | 1.024 pb | Clasificación core vs mini-cromosoma | No disponible | HuggingFace (PlantG3) |
-| FunDLM-Small-1024bp | 88M | 1.024 pb | Modelo base genómico (LM de ADN) | No disponible | HuggingFace (gnikesh) |
+| FunDLM-Small-1024bp-Mini | 88M (base) + LoRA r=8 | 1.024 pb | Clasificación core vs mini-cromosoma | No disponible | Hugging Face (PlantG3) |
+| FunDLM-Small-1024bp | 88M | 1.024 pb | Modelo base genómico (LM de ADN) | No disponible | Hugging Face (gnikesh) |
 | MiniC | No disponible | No disponible | Clasificación core vs mini-cromosoma en *Pyricularia* | No disponible | No disponible en la información proporcionada |
 | PlantCAD2 | No disponible | No disponible | Genómica de plantas (referenciado para instalación) | No disponible | GitHub (plantcad) |
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PlantG3/FunDLM-Small-1024bp-Mini
+- Modelo en Hugging Face: https://huggingface.co/PlantG3/FunDLM-Small-1024bp-Mini
 - Modelo base: https://huggingface.co/gnikesh/FunDLM-Small-1024bp
 - Repositorio FunDLM (script de ajuste fino y predicción): https://github.com/PlantG3/funDLM/blob/main/src/finetune/lora_fine_tune.py
 - Instrucciones de instalación de PlantCAD2: https://github.com/plantcad/plantcad/blob/main/docs/local-install.md

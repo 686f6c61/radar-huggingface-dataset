@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mystic es un modelo publicado en HuggingFace por el usuario Vech911 bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye una model card con contenido tecnico: el unico dato presente en el README es la propia declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada y sin informacion sobre datos de entrenamiento.
+Mystic es un modelo publicado en Hugging Face por el usuario Vech911 bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye una model card con contenido tecnico: el unico dato presente en el README es la propia declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada y sin informacion sobre datos de entrenamiento.
 
 El modelo acumula 0 descargas y 0 likes, y su repositorio ocupa 0,2 GB, un tamano que sugiere un modelo de parametros reducidos o un conjunto de pesos parcial, aunque no es posible confirmarlo con la informacion disponible. No se ha publicado pipeline asociado, idiomas soportados ni formato de pesos en los metadatos accesibles.
 
@@ -65,5 +65,5 @@ No disponible. No se dispone de informacion suficiente sobre Mystic (parametros,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vech911/Mystic
+- Hugging Face: https://huggingface.co/Vech911/Mystic
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los resultados obtenidos no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`redmingwei/hetero-moe-projspace` no es un modelo de lenguaje entrenado, sino un artefacto de análisis publicado en HuggingFace. El repositorio, de 3,5 MB, agrupa los resultados de una investigación sobre espacios de proyección dimensional aplicados a arquitecturas MoE heterogéneas, correspondientes a las iteraciones v48–v62 del proyecto. Lo firma el usuario redmingwei bajo licencia Apache 2.0 y está etiquetado como `dimension-projection-space` y `analysis-artifact`.
+`redmingwei/hetero-moe-projspace` no es un modelo de lenguaje entrenado, sino un artefacto de análisis publicado en Hugging Face. El repositorio, de 3,5 MB, agrupa los resultados de una investigación sobre espacios de proyección dimensional aplicados a arquitecturas MoE heterogéneas, correspondientes a las iteraciones v48–v62 del proyecto. Lo firma el usuario redmingwei bajo licencia Apache 2.0 y está etiquetado como `dimension-projection-space` y `analysis-artifact`.
 
 El contenido son ficheros de pesos de operadores (`projspace_equalwidth.pt`, `projspace_op.pt`) y varios JSON con diagnósticos: barridos de rango con métricas CKA y de fidelidad, análisis de alineamiento por pares en las ranuras Q/O, y evidencia de referencia de una estructura anterior (v33) que fue descartada. No incluye código de modelado, ni `auto_map`, ni una `architectures` válida, por lo que no es cargable como modelo con `transformers`.
 
@@ -92,7 +92,7 @@ No disponible. No se han identificado en la información proporcionada artefacto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/redmingwei/hetero-moe-projspace
+- Repositorio en Hugging Face: https://huggingface.co/redmingwei/hetero-moe-projspace
 - Código del operador (`projspace.py`, v62): https://github.com/Microbiosis/hetero-moe/tree/main/research/aligner/v62_dimension_projection_space
 - Modelo completo cargable: https://huggingface.co/redmingwei/HeteroMoEProjSpace-v2
 - Repositorios absorbidos (referenciados en la model card): `hetero-moe-dimspace`, `hetero-moe-align`, `HeteroMoE-v1` (eliminado)

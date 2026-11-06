@@ -74,7 +74,7 @@ No disponible. No se conocen en la información proporcionada alternativas compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lawless1987/threefold-memory
+- Repositorio en Hugging Face: https://huggingface.co/Lawless1987/threefold-memory
 - Código del sistema: https://github.com/LAWLESS1987/threefold
 - Núcleo gobernado (covenant): https://huggingface.co/Lawless1987/covenant
 - Capa de observabilidad (threefold): https://huggingface.co/Lawless1987/threefold

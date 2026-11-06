@@ -78,7 +78,7 @@ No se dispone de informacion adicional sobre modelos comparables en la documenta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/N8STORM/Cortex
+- Repositorio Hugging Face: https://huggingface.co/N8STORM/Cortex
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe tecnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763
 - Documentacion de API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

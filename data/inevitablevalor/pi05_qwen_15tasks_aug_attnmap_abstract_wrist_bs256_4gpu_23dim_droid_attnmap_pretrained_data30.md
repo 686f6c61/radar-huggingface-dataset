@@ -77,7 +77,7 @@ No se dispone de metricas comparativas de rendimiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Inevitablevalor/pi05_qwen_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained_data30
+- Repositorio en Hugging Face: https://huggingface.co/Inevitablevalor/pi05_qwen_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained_data30
 - Repositorio hermano con datos al 50 %: https://huggingface.co/Inevitablevalor/pi05_qwen_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained_data50
 - Repositorio padre con datos completos: https://huggingface.co/Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained
 - Codigo mencionado en la model card: `openpi-spatialvla` en el commit `ed44632` (sin URL publica en la informacion disponible).

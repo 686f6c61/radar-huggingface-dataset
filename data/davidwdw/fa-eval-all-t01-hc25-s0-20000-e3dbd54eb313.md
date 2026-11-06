@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-eval-all-t01-hc25-s0-20000-e3dbd54eb313` no contiene un modelo de lenguaje entrenado, sino un paquete de artefactos de evaluacion publicado en HuggingFace por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" (archivo versionado de flota), es decir, una instantanea de los materiales generados durante una ejecucion de evaluacion concreta, identificada por la receta canonica `evaluations/2026-09-26_b1k_all_existing_queue`. El paquete incluye, segun el autor, episodios, JSON, videos, trazas (traces), registros (logs), protocolo, scripts, entradas (input) y recibos (receipt).
+El repositorio `davidwdw/fa-eval-all-t01-hc25-s0-20000-e3dbd54eb313` no contiene un modelo de lenguaje entrenado, sino un paquete de artefactos de evaluacion publicado en Hugging Face por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" (archivo versionado de flota), es decir, una instantanea de los materiales generados durante una ejecucion de evaluacion concreta, identificada por la receta canonica `evaluations/2026-09-26_b1k_all_existing_queue`. El paquete incluye, segun el autor, episodios, JSON, videos, trazas (traces), registros (logs), protocolo, scripts, entradas (input) y recibos (receipt).
 
-El repositorio ocupa 0,3 GB, no declara licencia, no declara idiomas, no declara pipeline de inferencia y acumula cero descargas y cero "likes" en el momento de la consulta. Fue creado y actualizado el 10 de octubre de 2026, con apenas 29 segundos de diferencia entre ambos eventos, lo que es coherente con una subida automatizada de un artefacto generado por un pipeline. El unico tag declarado es `region:us`, un metadato geografico de HuggingFace que no aporta informacion tecnica sobre el contenido.
+El repositorio ocupa 0,3 GB, no declara licencia, no declara idiomas, no declara pipeline de inferencia y acumula cero descargas y cero "likes" en el momento de la consulta. Fue creado y actualizado el 10 de octubre de 2026, con apenas 29 segundos de diferencia entre ambos eventos, lo que es coherente con una subida automatizada de un artefacto generado por un pipeline. El unico tag declarado es `region:us`, un metadato geografico de Hugging Face que no aporta informacion tecnica sobre el contenido.
 
 Su relevancia es, por tanto, de tipo metodologico y de reproducibilidad, no de inferencia: sirve para auditar como se ejecuto una evaluacion concreta (que prompts, que trazas, que protocolo y que scripts se usaron) y para verificar la integridad de la instantanea mediante sumas SHA256. No debe tratarse como un modelo desplegable ni como una base para fine-tuning.
 
@@ -24,7 +24,7 @@ Su relevancia es, por tanto, de tipo metodologico y de reproducibilidad, no de i
 | Autor | davidwdw |
 | Tamano del repositorio | 0,3 GB |
 | Tags declarados | region:us |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-10T00:33:11.000Z |
 | Fecha de actualizacion | 2026-10-10T00:33:40.000Z |
@@ -94,7 +94,7 @@ No disponible. No se han identificado en la informacion proporcionada repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-t01-hc25-s0-20000-e3dbd54eb313
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-t01-hc25-s0-20000-e3dbd54eb313
 - Receta canonica citada en la model card (referencia interna, no URL publica): `evaluations/2026-09-26_b1k_all_existing_queue`
 - Fichero de verificacion citado en la model card (referencia interna, no URL publica): `SHA256SUMS`
 - Paper, blog, repositorio de codigo o demo: no disponible

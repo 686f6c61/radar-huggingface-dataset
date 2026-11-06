@@ -80,7 +80,7 @@ En DL3DV se publican las 129 escenas individuales; los valores extremos observad
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RLGS_models (este) | 3DGS + RL para tuning | no disponible (nubes por escena) | no aplica | MIT | HuggingFace, 40,1 GB |
+| RLGS_models (este) | 3DGS + RL para tuning | no disponible (nubes por escena) | no aplica | MIT | Hugging Face, 40,1 GB |
 | 3D Gaussian Splatting original | 3DGS con hiperparametros fijos | no disponible | no aplica | codigo abierto (ver repo original) | codigo y pesos por escena |
 | Mip-NeRF 360 | NeRF con anti-aliasing | no disponible | no aplica | codigo abierto | codigo y pesos |
 | NeRF original | NeRF | no disponible | no aplica | codigo abierto | codigo y pesos |
@@ -100,7 +100,7 @@ No se dispone en la informacion proporcionada de una comparativa numerica direct
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stack93/RLGS_models
+- Repositorio Hugging Face: https://huggingface.co/stack93/RLGS_models
 - Paper: https://arxiv.org/abs/2508.04078
 - Descarga selectiva: `hf download stack93/RLGS_models --local-dir RLGS_models --include "rlgs_tmgs/tandt/truck/*"`
 - No se han encontrado en la informacion disponible otros enlaces a blogs, repos de codigo o demos.

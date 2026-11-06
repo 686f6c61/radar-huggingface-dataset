@@ -108,7 +108,7 @@ La unica comparacion publicada por el autor es contra Falconsai-26, sobre el mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masterofaudio2077/Ageis-image-safety-classifier-dinov3
+- Modelo en Hugging Face: https://huggingface.co/masterofaudio2077/Ageis-image-safety-classifier-dinov3
 - Modelo base DINOv3 ViT-H+/16: https://huggingface.co/facebook/dinov3-vith16plus-pretrain-lvd1689m
 - Licencia DINOv3: https://ai.meta.com/resources/models-and-libraries/dinov3-license/
 - Modelo comparado Falconsai/nsfw_image_detection_26: https://huggingface.co/Falconsai/nsfw_image_detection_26

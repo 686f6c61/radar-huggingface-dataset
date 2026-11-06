@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para comparar este checkpoint con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattewg/pi05-xarm7-shaver-stage3_clean
+- Hugging Face: https://huggingface.co/mattewg/pi05-xarm7-shaver-stage3_clean
 
 No hay otros enlaces relevantes entre los resultados de busqueda web proporcionados.

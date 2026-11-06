@@ -75,7 +75,7 @@ No se dispone de una comparativa directa con modelos similares específicos para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nawax0x1/Qwen3.5-2B-NL-to-FOL
+- Repositorio Hugging Face: https://huggingface.co/nawax0x1/Qwen3.5-2B-NL-to-FOL
 - Página del modelo base en CanIRun.ai: https://www.canirun.ai/model/qwen3.5-2b
 - Recetas de vLLM para Qwen3.5-2B: https://recipes.vllm.ai/Qwen/Qwen3.5-2B
 - Modelo Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b

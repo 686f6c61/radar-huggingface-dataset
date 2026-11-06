@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `maedmatt/DREAM_ACT_filtered_v2` es una política de control robótico basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones en lugar de pasos individuales. Ha sido desarrollado por el usuario maedmatt y entrenado con la librería LeRobot de HuggingFace sobre un conjunto de datos teleoperado específico. El modelo está diseñado para ejecutar la tarea "Fill the pyramid with circles" con un robot tipo `so_follower` y una cámara frontal.
+El modelo `maedmatt/DREAM_ACT_filtered_v2` es una política de control robótico basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones en lugar de pasos individuales. Ha sido desarrollado por el usuario maedmatt y entrenado con la librería LeRobot de Hugging Face sobre un conjunto de datos teleoperado específico. El modelo está diseñado para ejecutar la tarea "Fill the pyramid with circles" con un robot tipo `so_follower` y una cámara frontal.
 
 Con 51,7 millones de parámetros, es un modelo compacto que se ajusta a entornos de investigación y prototipado. Su relevancia radica en demostrar el flujo completo de LeRobot para entrenar y desplegar políticas de imitación en robótica real, aunque no se han publicado resultados de evaluación. La licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó con LeRobot versión 0.6.2 sobre el dataset `maedma
 - Aprendizaje por imitación: reproduce comportamientos teleoperados en la tarea específica de apilar círculos en una pirámide.
 - Procesamiento visual: utiliza una cámara frontal para percibir el entorno (imágenes de 480x640).
 - Predicción por chunks: emite secuencias de acciones, lo que reduce la acumulación de errores frente a políticas paso a paso.
-- Integración con LeRobot: compatible con el ecosistema de entrenamiento y despliegue de HuggingFace.
+- Integración con LeRobot: compatible con el ecosistema de entrenamiento y despliegue de Hugging Face.
 - No tiene capacidades de lenguaje, tool calling, agentes ni razonamiento simbólico; es una política puramente motora.
 
 ## Casos de uso

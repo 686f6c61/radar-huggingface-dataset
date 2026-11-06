@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ong365/unsloth_4bit_mistral_imdb_model` es un ajuste fino (fine-tune) del modelo base `unsloth/mistral-7b-bnb-4bit`, una versión cuantizada a 4 bits del conocido Mistral 7B. Ha sido desarrollado por el usuario ong365 y publicado en HuggingFace con licencia Apache 2.0. El nombre sugiere que fue entrenado sobre el dataset IMDB, aunque la model card no proporciona detalles explícitos sobre el conjunto de datos ni el proceso de entrenamiento.
+El modelo `ong365/unsloth_4bit_mistral_imdb_model` es un ajuste fino (fine-tune) del modelo base `unsloth/mistral-7b-bnb-4bit`, una versión cuantizada a 4 bits del conocido Mistral 7B. Ha sido desarrollado por el usuario ong365 y publicado en Hugging Face con licencia Apache 2.0. El nombre sugiere que fue entrenado sobre el dataset IMDB, aunque la model card no proporciona detalles explícitos sobre el conjunto de datos ni el proceso de entrenamiento.
 
 La relevancia de este modelo radica en su demostración del uso de la librería Unsloth para acelerar el fine-tuning de modelos grandes, logrando un entrenamiento aproximadamente 2 veces más rápido que los métodos convencionales. Al estar cuantizado a 4 bits, permite ejecutar el modelo en hardware de gama media, lo que facilita la experimentación y el despliegue en entornos con recursos limitados. Sin embargo, al carecer de documentación técnica detallada, su utilidad práctica queda limitada a casos de uso específicos que requieran un modelo ligero de generación de texto en inglés.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables especificos. Sin embargo, se puede comparar con otros fine-tunes de Mistral 7B publicados en HuggingFace, como `sandeepsundaram/unsloth_4bit_mistral_imdb_model`, que parece ser un modelo similar con la misma base y posiblemente el mismo dataset. No hay datos de rendimiento publicados para ninguno de ellos, por lo que la comparacion se limita a aspectos tecnicos:
+No se dispone de informacion sobre modelos comparables especificos. Sin embargo, se puede comparar con otros fine-tunes de Mistral 7B publicados en Hugging Face, como `sandeepsundaram/unsloth_4bit_mistral_imdb_model`, que parece ser un modelo similar con la misma base y posiblemente el mismo dataset. No hay datos de rendimiento publicados para ninguno de ellos, por lo que la comparacion se limita a aspectos tecnicos:
 
 | Modelo | Base | Cuantizacion | Licencia | Dataset (inferido) |
 |---|---|---|---|---|
@@ -73,7 +73,7 @@ Ambos comparten arquitectura y cuantizacion, pero difieren en licencia (Apache 2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ong365/unsloth_4bit_mistral_imdb_model
+- Modelo en Hugging Face: https://huggingface.co/ong365/unsloth_4bit_mistral_imdb_model
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Web oficial de Unsloth: https://unsloth.ai/
 - Modelo similar (referencia): https://huggingface.co/sandeepsundaram/unsloth_4bit_mistral_imdb_model

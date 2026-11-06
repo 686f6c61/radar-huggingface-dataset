@@ -86,7 +86,7 @@ La comparativa se limita a la familia OdooClaw, ya que no se dispone de datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nicolasramos/odooclaw-medium-2.6b-ft-mlx-bf16
+- Repositorio Hugging Face: https://huggingface.co/nicolasramos/odooclaw-medium-2.6b-ft-mlx-bf16
 - Colección OdooClaw: https://huggingface.co/collections/nicolasramos/odooclaw
 - Repositorio GitHub: https://github.com/nicolasramos/odooclaw
 - Documentación en DeepWiki: https://deepwiki.com/nicolasramos/odooclaw

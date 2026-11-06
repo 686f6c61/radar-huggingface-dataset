@@ -75,7 +75,7 @@ La comparativa se basa en modelos VLA de código abierto. GR00T-N1-2B es el mode
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/justintiensmith/groot_v2)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/justintiensmith/groot_v2)
 - [Repositorio de NVIDIA Isaac-GR00T en GitHub](https://github.com/NVIDIA/Isaac-GR00T)
 - [Modelo nvidia/GR00T-N1-2B en Hugging Face](https://huggingface.co/nvidia/GR00T-N1-2B)
 - [Guía de LeRobot para GR00T](https://huggingface.co/docs/lerobot/main/en/groot)

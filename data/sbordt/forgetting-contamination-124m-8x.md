@@ -40,7 +40,7 @@ El entrenamiento se realizó durante 38.146 pasos con AdamW (betas 0,9 y 0,95, w
 ## Casos de uso
 
 - Investigación sobre contaminación de datos: reproducir los experimentos del artículo de ICML 2025 cargando el checkpoint y evaluando con `eval_gpt.py` sobre los splits contaminados de los ocho benchmarks.
-- Estudio de curvas de olvido: comparar este checkpoint (8x Chinchilla) con otros checkpoints de la colección de HuggingFace para analizar cómo evoluciona la memorización y el olvido con el número de tokens de entrenamiento.
+- Estudio de curvas de olvido: comparar este checkpoint (8x Chinchilla) con otros checkpoints de la colección de Hugging Face para analizar cómo evoluciona la memorización y el olvido con el número de tokens de entrenamiento.
 - Validación de metodologías de detección de contaminación: usar las predicciones y pérdidas almacenadas en el Parquet como referencia para contrastar nuevos métodos de detección.
 - Reproducibilidad de resultados: verificar la Figura 1(b) del artículo y servir de base para extensiones experimentales sobre el mismo dataset contaminado.
 - Docencia y formación en evaluación de LLM: ilustrar de forma práctica cómo la contaminación de benchmarks infla las métricas y cómo el entrenamiento adicional puede mitigarla.
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sbordt/forgetting-contamination-124M-8x | 124M | 1024 | Estudio de contaminación y olvido | MIT | HuggingFace (checkpoint `.pth`) |
-| GPT-2 124M (OpenAI) | 124M | 1024 | Generación de texto general | MIT | HuggingFace, múltiples formatos |
-| Otros checkpoints de la colección `forgetting-contamination` | 124M y variantes | 1024 | Mismo estudio, distintos regímenes de entrenamiento | MIT | HuggingFace |
-| Modelos pequeños ajustados para instrucciones (p. ej. TinyLlama) | ~1,1B | 2048 | Asistente conversacional | Apache 2.0 | HuggingFace |
+| sbordt/forgetting-contamination-124M-8x | 124M | 1024 | Estudio de contaminación y olvido | MIT | Hugging Face (checkpoint `.pth`) |
+| GPT-2 124M (OpenAI) | 124M | 1024 | Generación de texto general | MIT | Hugging Face, múltiples formatos |
+| Otros checkpoints de la colección `forgetting-contamination` | 124M y variantes | 1024 | Mismo estudio, distintos regímenes de entrenamiento | MIT | Hugging Face |
+| Modelos pequeños ajustados para instrucciones (p. ej. TinyLlama) | ~1,1B | 2048 | Asistente conversacional | Apache 2.0 | Hugging Face |
 
 La comparación directa con GPT-2 124M original es la más pertinente: misma arquitectura y tamaño, pero distinto régimen de entrenamiento (20B tokens frente a los ~40B del GPT-2 original y con inyección deliberada de preguntas de benchmark). No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación directa con GPT-2 124M original es la más pertinente: misma arq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-124M-8x
+- Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-124M-8x
 - Paper (arXiv): https://arxiv.org/abs/2410.03249
 - Repositorio de código: https://github.com/tml-tuebingen/forgetting-contamination
 - Colección de checkpoints y preguntas de benchmark: https://huggingface.co/collections/sbordt/forgetting-contamination-benchmark-questions-68bac54b109388f26b40b7eb

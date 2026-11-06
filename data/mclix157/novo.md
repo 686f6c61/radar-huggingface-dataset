@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mclix157/novo` es un repositorio publicado en HuggingFace por el usuario `mclix157` bajo la licencia CDLA-Permissive-2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. Se desconoce por completo qué tipo de modelo es (LLM, visión, audio, etc.), su tamaño, su propósito o sus capacidades. El repositorio no registra descargas ni interacciones, lo que sugiere que se trata de una publicación reciente o de un experimento sin documentar.
+El modelo `mclix157/novo` es un repositorio publicado en Hugging Face por el usuario `mclix157` bajo la licencia CDLA-Permissive-2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. Se desconoce por completo qué tipo de modelo es (LLM, visión, audio, etc.), su tamaño, su propósito o sus capacidades. El repositorio no registra descargas ni interacciones, lo que sugiere que se trata de una publicación reciente o de un experimento sin documentar.
 
 La búsqueda web realizada no arroja información relevante sobre este modelo. Los resultados obtenidos se refieren a un ciberataque contra la empresa farmacéutica Novo Nordisk, que podría estar relacionado con el nombre del repositorio, pero no hay evidencia de que el modelo tenga vínculo alguno con dicha compañía. Tampoco aparece en directorios de modelos como Models.dev o AIModels.org. En consecuencia, esta ficha se limita a documentar la ausencia de información pública y a advertir sobre los riesgos de utilizar un modelo sin especificaciones verificables.
 
@@ -54,5 +54,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio del mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mclix157/novo
+- Repositorio en Hugging Face: https://huggingface.co/mclix157/novo
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo.

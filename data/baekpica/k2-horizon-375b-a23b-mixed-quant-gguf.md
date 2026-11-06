@@ -70,7 +70,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-375B-A23B
 - Repositorio de optimización ds4-dfm-rs: https://github.com/Baekpica/ds4-dfm-rs
 - Commit de referencia (Prefill 8): https://github.com/Baekpica/ds4-dfm-rs/commit/b5ca173d565147ab9d02320faf70d2c627c0d451

@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - La lista exacta de lenguas románicas de origen no está disponible en la información proporcionada; conviene verificar la cobertura real antes de usarlo en producción.
 - La cuantización int8 puede introducir una pérdida de calidad respecto al modelo original en punto flotante; no se han publicado métricas que cuantifiquen esa diferencia.
 - La licencia Apache 2.0 permite uso comercial, pero debe conservarse la atribución a Helsinki-NLP y a VoragoStudios según los términos de la licencia.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, por lo que no cuenta con validación comunitaria ni informes de uso en producción.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, por lo que no cuenta con validación comunitaria ni informes de uso en producción.
 
 ## Enlaces
 
-- [HuggingFace: VoragoStudios/gct-opus-mt-tc-bible-big-roa-en-ct2](https://huggingface.co/VoragoStudios/gct-opus-mt-tc-bible-big-roa-en-ct2)
+- [Hugging Face: VoragoStudios/gct-opus-mt-tc-bible-big-roa-en-ct2](https://huggingface.co/VoragoStudios/gct-opus-mt-tc-bible-big-roa-en-ct2)
 - [Modelo base: Helsinki-NLP/opus-mt-tc-bible-big-roa-en](https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-roa-en)
 - [Resultado de búsqueda web sobre Claude Opus 4.8 (no relacionado con este modelo)](https://www.zhihu.com/question/2043503794751791638)

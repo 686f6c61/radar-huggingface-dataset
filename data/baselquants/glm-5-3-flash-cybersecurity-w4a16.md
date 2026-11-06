@@ -6,7 +6,7 @@ GLM-5.3-Flash-CYBERSECURITY-W4A16 es una cuantización y ajuste fino publicado p
 
 El valor diferencial que declara la model card es un ajuste de "compliance" que elimina los rechazos del modelo base: según los datos del autor, la tasa de cumplimiento real en HarmBench pasa del 30,3% al 100,0% en seis categorías de daño real, con el coste de una caída de 1,85 puntos en MMLU (de 86,08% a 84,23%). La torre de visión y la cabeza MTP de la capa 45 se mantienen intactas, y el modelo se sirve con vLLM mediante parsers específicos de razonamiento (`glm45`) y de tool calling (`glm47`).
 
-Es relevante ahora por dos motivos: por un lado, es un ejemplo de cuantización W4A16 de un MoE de gran tamaño con decodificación especulativa MTP activada; por otro, es un caso de estudio de modificación de la política de rechazo (uncensoring) con métricas de seguridad explícitas. La búsqueda web realizada no ha devuelto ninguna fuente técnica relacionada con el modelo: los resultados obtenidos eran contenido de agencias de viajes sobre las islas Galápagos, sin relación alguna, por lo que toda la información procede exclusivamente de la model card y de los metadatos de HuggingFace.
+Es relevante ahora por dos motivos: por un lado, es un ejemplo de cuantización W4A16 de un MoE de gran tamaño con decodificación especulativa MTP activada; por otro, es un caso de estudio de modificación de la política de rechazo (uncensoring) con métricas de seguridad explícitas. La búsqueda web realizada no ha devuelto ninguna fuente técnica relacionada con el modelo: los resultados obtenidos eran contenido de agencias de viajes sobre las islas Galápagos, sin relación alguna, por lo que toda la información procede exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -112,8 +112,8 @@ La única comparación con datos disponibles es contra el propio modelo base cua
 
 | Modelo | Parámetros totales | Contexto | Licencia | Comportamiento de rechazo | MMLU | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GLM-5.3-Flash-CYBERSECURITY-W4A16 | 321,3 mil millones | no disponible | MIT | 100,0% de cumplimiento en HarmBench (6 categorías) | 84,23% | HuggingFace (0 descargas) |
-| zai-org/GLM-5.3-Flash (base, W4A16) | 321,3 mil millones | no disponible | no disponible | 30,3% de cumplimiento en HarmBench | 86,08% | HuggingFace |
+| GLM-5.3-Flash-CYBERSECURITY-W4A16 | 321,3 mil millones | no disponible | MIT | 100,0% de cumplimiento en HarmBench (6 categorías) | 84,23% | Hugging Face (0 descargas) |
+| zai-org/GLM-5.3-Flash (base, W4A16) | 321,3 mil millones | no disponible | no disponible | 30,3% de cumplimiento en HarmBench | 86,08% | Hugging Face |
 | Otros MoE de tamaño comparable (DeepSeek-V3, Qwen3-235B, GLM-4.x) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -127,14 +127,14 @@ La única comparación con datos disponibles es contra el propio modelo base cua
 - Idiomas: no se especifica la cobertura lingüística. No disponible.
 - Contexto: no se especifica la longitud máxima de contexto soportada. No disponible.
 - Cuantización: el formato W4A16 introduce pérdida de precisión adicional sobre el modelo base; conviene validar la degradación en la tarea concreta antes de desplegar.
-- Discrepancia de identidad del repositorio: el identificador de HuggingFace es `baselquants/GLM-5.3-Flash-CYBERSECURITY-W4A16`, pero la model card y todos los comandos de despliegue apuntan a `dealignai/GLM-5.3-Flash-UNCENSORED-W4A16`. Hay que verificar qué artefacto se está descargando realmente antes de usarlo en producción.
+- Discrepancia de identidad del repositorio: el identificador de Hugging Face es `baselquants/GLM-5.3-Flash-CYBERSECURITY-W4A16`, pero la model card y todos los comandos de despliegue apuntan a `dealignai/GLM-5.3-Flash-UNCENSORED-W4A16`. Hay que verificar qué artefacto se está descargando realmente antes de usarlo en producción.
 - Nombre frente a contenido: el sufijo CYBERSECURITY del identificador no se corresponde con un ajuste específico de ciberseguridad descrito en la model card, que documenta un ajuste general de eliminación de rechazos. No debe interpretarse como un modelo especializado y evaluado en tareas de seguridad.
 - Riesgo de alucinación: no hay datos específicos publicados; es esperable el comportamiento habitual de un MoE de este tamaño, sin que el autor aporte mediciones de factualidad.
 - Configuración crítica en producción: omitir `--reasoning-parser glm45` provoca que los bloques `<think>` previos permanezcan en el contenido del mensaje y se reemitan en turnos posteriores, lo que según el autor puede desencadenar un bucle de atracción en la decodificación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baselquants/GLM-5.3-Flash-CYBERSECURITY-W4A16
+- Modelo en Hugging Face: https://huggingface.co/baselquants/GLM-5.3-Flash-CYBERSECURITY-W4A16
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Referencia de despliegue mencionada en la model card (identificador distinto al del repositorio): `dealignai/GLM-5.3-Flash-UNCENSORED-W4A16`
 - Imagen de Docker citada: `vllm/vllm-openai:glm53-flash-x86_64-cu130`

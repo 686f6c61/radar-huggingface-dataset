@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jssaluja/fb-mms-1b-punjabi-ccer-train-111760-epochs-15-test-1569` es un fine-tuning del modelo de reconocimiento de voz multilingüe MMS-1B de Meta, especializado en el idioma punjabi. Ha sido subido al Hub de HuggingFace por el usuario `jssaluja` y su nombre sugiere un entrenamiento sobre un corpus denominado "ccer" con 111.760 muestras de entrenamiento, 15 épocas y un conjunto de test de 1.569 muestras. La model card pública es una plantilla automática sin información detallada, por lo que la documentación disponible es muy limitada. A pesar de ello, el identificador del modelo y los tags (`transformers`, `arxiv:1910.09700`) indican que se trata de un modelo de la familia wav2vec 2.0 adaptado para la transcripción de audio en punjabi.
+El modelo `jssaluja/fb-mms-1b-punjabi-ccer-train-111760-epochs-15-test-1569` es un fine-tuning del modelo de reconocimiento de voz multilingüe MMS-1B de Meta, especializado en el idioma punjabi. Ha sido subido al Hub de Hugging Face por el usuario `jssaluja` y su nombre sugiere un entrenamiento sobre un corpus denominado "ccer" con 111.760 muestras de entrenamiento, 15 épocas y un conjunto de test de 1.569 muestras. La model card pública es una plantilla automática sin información detallada, por lo que la documentación disponible es muy limitada. A pesar de ello, el identificador del modelo y los tags (`transformers`, `arxiv:1910.09700`) indican que se trata de un modelo de la familia wav2vec 2.0 adaptado para la transcripción de audio en punjabi.
 
 La relevancia de este modelo reside en su potencial para mejorar el reconocimiento de voz en un idioma de baja representación como el punjabi, aprovechando la arquitectura masivamente multilingüe de MMS. Sin embargo, al carecer de documentación oficial, cualquier uso en producción debe considerar la falta de garantías y de información sobre su rendimiento.
 
@@ -17,7 +17,7 @@ La relevancia de este modelo reside en su potencial para mejorar el reconocimien
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | Punjabi (según el nombre del modelo) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (formato estándar en HuggingFace, no confirmado) |
+| Formato de pesos | safetensors (formato estándar en Hugging Face, no confirmado) |
 
 ## Arquitectura y entrenamiento
 
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `facebook/mms-1b-all` | ~1B | no disponible | 1000+ | CC-BY-NC 4.0 (no comercial) | HuggingFace |
-| `jssaluja/fb-mms-1b-punjabi-ccer-train-111760-epochs-15-test-1569` | ~1B | no disponible | Punjabi | no disponible | HuggingFace |
-| `facebook/wav2vec2-large-xlsr-53` | ~300M | no disponible | 53 idiomas | Apache 2.0 | HuggingFace |
+| `facebook/mms-1b-all` | ~1B | no disponible | 1000+ | CC-BY-NC 4.0 (no comercial) | Hugging Face |
+| `jssaluja/fb-mms-1b-punjabi-ccer-train-111760-epochs-15-test-1569` | ~1B | no disponible | Punjabi | no disponible | Hugging Face |
+| `facebook/wav2vec2-large-xlsr-53` | ~300M | no disponible | 53 idiomas | Apache 2.0 | Hugging Face |
 
 El modelo base `mms-1b-all` es el checkpoint original de Meta, con licencia no comercial (CC-BY-NC 4.0). El presente modelo es un fine-tuning no oficial, por lo que su licencia es incierta. No se dispone de datos comparativos de rendimiento.
 
@@ -74,7 +74,7 @@ El modelo base `mms-1b-all` es el checkpoint original de Meta, con licencia no c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jssaluja/fb-mms-1b-punjabi-ccer-train-111760-epochs-15-test-1569)
+- [Modelo en Hugging Face](https://huggingface.co/jssaluja/fb-mms-1b-punjabi-ccer-train-111760-epochs-15-test-1569)
 - [Modelo relacionado: jaspalsinghsaluja/fb-mms-1b-ncer-jssaluja_rajinder_singh_corrected](https://huggingface.co/jaspalsinghsaluja/fb-mms-1b-ncer-jssaluja_rajinder_singh_corrected-epochs-1-test-datasets-10-20260620_153154-small)
 - [Modelo relacionado: fb-mms-1b-wer-stage2-general-punjabi](https://huggingface.co/jaspalsinghsaluja/fb-mms-1b-wer-stage2-general-punjabi-train-2669-epochs-5-test-1569)
 - [Benchmarks de mms-1b-all en OpenModelMap](https://openmodelmap.com/model/facebook/mms-1b-all)

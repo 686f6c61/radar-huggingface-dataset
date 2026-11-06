@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenThinker-7B-text-sft-training-curve-run1-step234 es un adaptador LoRA publicado en HuggingFace por el usuario nmuendler. No se trata de un modelo completo, sino de un punto de control (checkpoint) del paso 234 de una ejecución de ajuste supervisado (SFT) sobre texto, cuyo nombre sugiere que forma parte de un experimento destinado a trazar una curva de entrenamiento. El adaptador se construye sobre el modelo base open-thoughts/OpenThinker-7B, un modelo de la familia Open Thoughts orientado a generación de texto y razonamiento.
+OpenThinker-7B-text-sft-training-curve-run1-step234 es un adaptador LoRA publicado en Hugging Face por el usuario nmuendler. No se trata de un modelo completo, sino de un punto de control (checkpoint) del paso 234 de una ejecución de ajuste supervisado (SFT) sobre texto, cuyo nombre sugiere que forma parte de un experimento destinado a trazar una curva de entrenamiento. El adaptador se construye sobre el modelo base open-thoughts/OpenThinker-7B, un modelo de la familia Open Thoughts orientado a generación de texto y razonamiento.
 
 El repositorio ocupa 0,3 GB, un tamano coherente con pesos de adaptador LoRA en formato safetensors y no con un modelo completo de 7.000 millones de parametros en precision completa. La libreria declarada es PEFT (versión 0.17.1), la licencia no está especificada y no se declaran idiomas soportados. La model card del autor es una plantilla sin completar, por lo que casi toda la información técnica figura como "no disponible".
 
@@ -66,8 +66,8 @@ Nota: al ser un adaptador LoRA, los requisitos reales dependen del modelo base O
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step234 | no disponible (adaptador LoRA) | no disponible | no evaluado | no disponible | HuggingFace (0 descargas) |
-| open-thoughts/OpenThinker-7B (modelo base) | 7B (segun nombre) | no disponible | no disponible en esta busqueda | no disponible | HuggingFace |
+| nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step234 | no disponible (adaptador LoRA) | no disponible | no evaluado | no disponible | Hugging Face (0 descargas) |
+| open-thoughts/OpenThinker-7B (modelo base) | 7B (segun nombre) | no disponible | no disponible en esta busqueda | no disponible | Hugging Face |
 | Otros modelos de razonamiento de ~7B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -86,7 +86,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step234
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step234
 - Modelo base: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Articulo referenciado en las etiquetas (generico, no especifico del modelo): https://arxiv.org/abs/1910.09700
 - Repositorio o demo adicional: no disponible

@@ -17,7 +17,7 @@ No se publican en la información disponible detalles sobre arquitectura, númer
 | Parámetros activos | no aplica; no es un modelo MoE y no se especifica |
 | Longitud de contexto | no disponible; no se declara ventana de contexto |
 | Tipos de cuantización | int8 por filas en cada peso 2-D, esquema de cuantización ModelSpec de CTranslate2; original en float16 |
-| Idiomas soportados | no disponible en el campo de HuggingFace; el identificador y el modelo base indican inglés → chino |
+| Idiomas soportados | no disponible en el campo de Hugging Face; el identificador y el modelo base indican inglés → chino |
 | Licencia | CC BY 4.0 |
 | Formato de pesos | CTranslate2: model.bin, config.json, source_vocabulary.json, target_vocabulary.json, src.spm.model, tgt.spm.model |
 | Tamaño del repositorio | 0,2 GB |
@@ -70,15 +70,15 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Parámetros totales | Contexto | Rendimiento | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| quickmt-en-zh-int8 | no disponible | no disponible | no disponible; equivalencia declarada con float16 en frases comprobadas | CC BY 4.0 | CTranslate2 int8 | HuggingFace; 0 descargas y 0 likes en la información disponible |
-| quickmt/quickmt-en-zh (float16) | no disponible | no disponible | referencia float16 del modelo base | CC BY 4.0 | float16; empaquetado no detallado | HuggingFace, como modelo base |
+| quickmt-en-zh-int8 | no disponible | no disponible | no disponible; equivalencia declarada con float16 en frases comprobadas | CC BY 4.0 | CTranslate2 int8 | Hugging Face; 0 descargas y 0 likes en la información disponible |
+| quickmt/quickmt-en-zh (float16) | no disponible | no disponible | referencia float16 del modelo base | CC BY 4.0 | float16; empaquetado no detallado | Hugging Face, como modelo base |
 | Otras alternativas EN-ZH | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones de otras alternativas comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El campo de idiomas de HuggingFace está vacío; el par inglés-chino se deduce del identificador y del modelo base. No se confirma soporte de otros pares lingüísticos.
+- El campo de idiomas de Hugging Face está vacío; el par inglés-chino se deduce del identificador y del modelo base. No se confirma soporte de otros pares lingüísticos.
 - No hay información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni evaluación de sesgos.
 - Es un modelo de traducción, no un asistente conversacional: no se documentan tool calling, agentes, visión, audio ni razonamiento multi-paso.
 - No se declara una ventana de contexto; para documentos largos será necesario segmentar el texto, con posible pérdida de coherencia entre segmentos.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones de otras alternativa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/value-productions/quickmt-en-zh-int8)
+- [Modelo en Hugging Face](https://huggingface.co/value-productions/quickmt-en-zh-int8)
 - [Modelo base quickmt/quickmt-en-zh](https://huggingface.co/quickmt/quickmt-en-zh)
 
 No se han proporcionado enlaces adicionales a papers, blogs, repositorios o demos en la información disponible.

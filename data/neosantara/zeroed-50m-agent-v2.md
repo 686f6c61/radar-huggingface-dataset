@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (50
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neosantara/Zeroed-50M-Agent-V2
+- Modelo en Hugging Face: https://huggingface.co/neosantara/Zeroed-50M-Agent-V2
 - Sitio web de Neosantara: https://www.neosantara.xyz/en
 - Documentacion de modelos de Neosantara: https://docs.neosantara.xyz/en/models-overview
 - Documentacion general de Neosantara: https://docs.neosantara.xyz/

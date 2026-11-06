@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`night669/my_test_model1` es un repositorio de modelo publicado en HuggingFace por el usuario `night669` bajo licencia Apache 2.0. La model card asociada contiene unicamente el campo de licencia en su frontmatter YAML y ningun otro contenido descriptivo: no se documenta arquitectura, tamano, contexto, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, y la fecha de creacion y actualizacion coincide (2026-11-05T05:27:21Z), lo que sugiere una publicacion unica sin mantenimiento posterior.
+`night669/my_test_model1` es un repositorio de modelo publicado en Hugging Face por el usuario `night669` bajo licencia Apache 2.0. La model card asociada contiene unicamente el campo de licencia en su frontmatter YAML y ningun otro contenido descriptivo: no se documenta arquitectura, tamano, contexto, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, y la fecha de creacion y actualizacion coincide (2026-11-05T05:27:21Z), lo que sugiere una publicacion unica sin mantenimiento posterior.
 
-Por el nombre del repositorio (`my_test_model1`) y la ausencia total de documentacion tecnica, todo apunta a un artefacto de prueba o experimento personal, no a un modelo destinado a uso en produccion ni a evaluacion comparativa. No hay pipeline declarado en HuggingFace, no se listan idiomas soportados y no se referencia ningun paper, blog o repositorio de codigo asociado.
+Por el nombre del repositorio (`my_test_model1`) y la ausencia total de documentacion tecnica, todo apunta a un artefacto de prueba o experimento personal, no a un modelo destinado a uso en produccion ni a evaluacion comparativa. No hay pipeline declarado en Hugging Face, no se listan idiomas soportados y no se referencia ningun paper, blog o repositorio de codigo asociado.
 
 Dado que la informacion disponible es practicamente nula, esta ficha se limita a reflejar lo que consta en el repositorio y marca explicitamente como "no disponible" cualquier dato tecnico que no haya sido publicado por el autor. Cualquier evaluacion de rendimiento o idoneidad para un caso de uso concreto requeriria acceso a los pesos y a una model card completa, que en este momento no existen.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de 
 
 Dado que no existe documentacion tecnica ni benchmarks publicados, no es posible recomendar casos de uso concretos con garantias. A continuacion se enumeran escenarios que *podrian* evaluarse si el autor publicase una model card completa y pesos verificables, pero se advierte de que ninguno de ellos puede validarse con la informacion actual:
 
-- Evaluacion experimental en laboratorio: uso del repositorio como banco de pruebas para pipelines de carga de modelos en HuggingFace, sin asumir ninguna capacidad generativa.
+- Evaluacion experimental en laboratorio: uso del repositorio como banco de pruebas para pipelines de carga de modelos en Hugging Face, sin asumir ninguna capacidad generativa.
 - Pruebas de integracion de infraestructura: verificar que un endpoint de inferencia (vLLM, TGI, llama.cpp) puede cargar el artefacto, siempre que los pesos existan y sean validos.
 - Reproduccion de experimentos docentes: empleo como ejemplo de repositorio minimo con licencia Apache 2.0 en cursos sobre publicacion de modelos.
 - Auditoria de licencias: analisis del flujo de publicacion bajo Apache 2.0 en un repositorio sin model card sustantiva.
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/night669/my_test_model1
+- Repositorio en Hugging Face: https://huggingface.co/night669/my_test_model1
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

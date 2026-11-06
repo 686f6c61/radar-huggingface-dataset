@@ -6,7 +6,7 @@ VLAlert es un adaptador LoRA (PEFT) para alerta adaptativa de conductor basado e
 
 El proyecto se enmarca en la investigacion "Observe Before You Alert: Adaptive Driver Alerting with Vision-Language Models" (arXiv 2609.08130) y esta vinculado al laboratorio Motif Lab, en sus lineas de IA para movilidad y tecnologias de vehiculo. La relevancia actual viene de la interseccion entre conduccion autonoma, sistemas ADAS y modelos multimodales capaces de procesar video, lo que permite construir politicas de alerta entrenables en lugar de heuristicas rigidas.
 
-El repositorio pesa 2,0 GB, esta etiquetado como `video-classification` y su acceso esta restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargarlo. No se han publicado cifras de benchmarks en la informacion disponible, aunque el paper reporta validacion cruzada sobre dos conjuntos no vistos: ADAS-TO y un conjunto sintetizado en CARLA.
+El repositorio pesa 2,0 GB, esta etiquetado como `video-classification` y su acceso esta restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargarlo. No se han publicado cifras de benchmarks en la informacion disponible, aunque el paper reporta validacion cruzada sobre dos conjuntos no vistos: ADAS-TO y un conjunto sintetizado en CARLA.
 
 ## Especificaciones tecnicas
 
@@ -69,15 +69,15 @@ Nota: las cifras de VRAM son estimaciones basadas en el tamano del modelo base (
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VLAlert (este modelo) | Adaptador sobre Qwen3-VL-4B-Instruct (~4B) | No disponible | Clasificacion de video y alerta al conductor | Apache 2.0 | Gated en HuggingFace |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base) | ~4B | No disponible en la informacion proporcionada | Vision-lenguaje general | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| VLAlert (este modelo) | Adaptador sobre Qwen3-VL-4B-Instruct (~4B) | No disponible | Clasificacion de video y alerta al conductor | Apache 2.0 | Gated en Hugging Face |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base) | ~4B | No disponible en la informacion proporcionada | Vision-lenguaje general | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros adaptadores VLM para alerta de conductor | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas equivalentes en la informacion proporcionada |
 
 No se han identificado en la informacion proporcionada modelos abiertos directamente comparables en la tarea especifica de alerta adaptativa de conductor con vision-lenguaje.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta marcado como gated en HuggingFace y requiere aceptar condiciones, lo que puede complicar su uso automatizado en pipelines.
+- Acceso restringido: el repositorio esta marcado como gated en Hugging Face y requiere aceptar condiciones, lo que puede complicar su uso automatizado en pipelines.
 - Ausencia de benchmarks publicos: no hay cifras verificables de rendimiento en la informacion disponible, por lo que no es posible estimar su calidad relativa frente a alternativas.
 - Idiomas: el dataset asociado es unicamente en ingles; no se documenta soporte multilingue y el comportamiento en otros idiomas es desconocido.
 - Riesgo de alucinacion: al ser un modelo de lenguaje subyacente, puede generar descripciones o decisiones no fundamentadas en la evidencia visual; en un dominio de seguridad vial esto es critico.
@@ -89,8 +89,8 @@ No se han identificado en la informacion proporcionada modelos abiertos directam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HenryYHW/VLAlert
-- Dataset en HuggingFace: https://huggingface.co/datasets/HenryYHW/VLAlert
+- Modelo en Hugging Face: https://huggingface.co/HenryYHW/VLAlert
+- Dataset en Hugging Face: https://huggingface.co/datasets/HenryYHW/VLAlert
 - Ficheros del dataset: https://huggingface.co/datasets/HenryYHW/VLAlert/tree/main
 - Paper (arXiv, pagina de resumen): https://arxiv.org/abs/2609.08130
 - Paper (version HTML): https://arxiv.org/html/2609.08130

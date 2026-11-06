@@ -107,7 +107,7 @@ No se han publicado benchmarks ni comparativas en la información disponible, po
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/navyam-ai/navya-1c-sft-dpo-grpo-reasoning
+- Hugging Face del modelo: https://huggingface.co/navyam-ai/navya-1c-sft-dpo-grpo-reasoning
 - Modelo base: https://huggingface.co/navyam-ai/navya-1c-sft
 - Repositorio de código: https://github.com/bachatt-app/navyam-gpt
 - Otros enlaces relevantes: no disponibles.

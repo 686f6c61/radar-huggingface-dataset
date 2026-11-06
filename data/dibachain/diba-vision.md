@@ -71,10 +71,10 @@ No se dispone de datos de rendimiento de Diba-Vision, por lo que la comparación
 
 | Modelo | Parametros | Idiomas destacados | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Diba-Vision (Dibachain) | ≈4,66B | Persa, ingles | Apache 2.0 | HuggingFace, requiere `trust_remote_code` | No disponible |
-| Qwen2-VL-7B (Alibaba) | ≈8,3B | Multilingue, incluye cobertura de arabe y otros idiomas de la region | Apache 2.0 | HuggingFace, integrado en transformers y vLLM | No comparable con datos disponibles aqui |
-| PaliGemma-3B (Google) | ≈3B | Ingles principalmente | Licencia Gemma (con condiciones de uso) | HuggingFace, integrado en transformers | No comparable con datos disponibles aqui |
-| LLaVA-1.6 (familia abierta) | 7B/13B/34B | Ingles principalmente | Apache 2.0 en las variantes Mistral | HuggingFace | No comparable con datos disponibles aqui |
+| Diba-Vision (Dibachain) | ≈4,66B | Persa, ingles | Apache 2.0 | Hugging Face, requiere `trust_remote_code` | No disponible |
+| Qwen2-VL-7B (Alibaba) | ≈8,3B | Multilingue, incluye cobertura de arabe y otros idiomas de la region | Apache 2.0 | Hugging Face, integrado en transformers y vLLM | No comparable con datos disponibles aqui |
+| PaliGemma-3B (Google) | ≈3B | Ingles principalmente | Licencia Gemma (con condiciones de uso) | Hugging Face, integrado en transformers | No comparable con datos disponibles aqui |
+| LLaVA-1.6 (familia abierta) | 7B/13B/34B | Ingles principalmente | Apache 2.0 en las variantes Mistral | Hugging Face | No comparable con datos disponibles aqui |
 
 La ventaja diferencial de Diba-Vision frente a estas alternativas no es el rendimiento bruto, sino la cobertura nativa de persa y una licencia Apache 2.0 sin condiciones adicionales, frente a las restricciones de uso de la licencia Gemma.
 
@@ -93,10 +93,10 @@ La ventaja diferencial de Diba-Vision frente a estas alternativas no es el rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dibachain/Diba-Vision
+- Modelo en Hugging Face: https://huggingface.co/Dibachain/Diba-Vision
 - Sitio del desarrollador: https://dibachain.ir
 - Demo de chat en GPU (Space): https://huggingface.co/spaces/DibaAi/diba-chat-gpu
 - Diba-Base (modelo de texto y código): https://huggingface.co/Dibachain/Diba-Base
 - Diba-Embed (búsqueda semántica): https://huggingface.co/Dibachain/Diba-Embed
 
-Nota: la búsqueda web realizada no devolvió ningun resultado relevante sobre Diba-Vision ni sobre Dibachain; los enlaces anteriores proceden unicamente de la model card y de la ficha de HuggingFace del modelo. No se han encontrado papers, blogs tecnicos ni repositorios independientes asociados.
+Nota: la búsqueda web realizada no devolvió ningun resultado relevante sobre Diba-Vision ni sobre Dibachain; los enlaces anteriores proceden unicamente de la model card y de la ficha de Hugging Face del modelo. No se han encontrado papers, blogs tecnicos ni repositorios independientes asociados.

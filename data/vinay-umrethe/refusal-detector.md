@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `VINAY-UMRETHE/refusal-detector` es un clasificador de secuencias basado en la arquitectura ModernBERT, desarrollado por el usuario VINAY-UMRETHE y publicado en HuggingFace. Su funcion es detectar y categorizar el comportamiento de rechazo (refusal) en las respuestas de un modelo de lenguaje: dado un par formado por un prompt y su respuesta, el modelo asigna una de cinco etiquetas (`compliant`, `full_refusal`, `partial_refusal`, `capability_limitation`, `clarification`). El problema que resuelve es relevante para equipos que necesitan auditar, etiquetar o monitorizar a gran escala el comportamiento de LLM desplegados, ya sea para evaluar politicas de seguridad, para construir datasets de alineamiento o para detectar degradaciones de servicio.
+El modelo `VINAY-UMRETHE/refusal-detector` es un clasificador de secuencias basado en la arquitectura ModernBERT, desarrollado por el usuario VINAY-UMRETHE y publicado en Hugging Face. Su funcion es detectar y categorizar el comportamiento de rechazo (refusal) en las respuestas de un modelo de lenguaje: dado un par formado por un prompt y su respuesta, el modelo asigna una de cinco etiquetas (`compliant`, `full_refusal`, `partial_refusal`, `capability_limitation`, `clarification`). El problema que resuelve es relevante para equipos que necesitan auditar, etiquetar o monitorizar a gran escala el comportamiento de LLM desplegados, ya sea para evaluar politicas de seguridad, para construir datasets de alineamiento o para detectar degradaciones de servicio.
 
-Tecnicamente es un modelo encoder-only de 149.608.709 parametros (aproximadamente 0,6 GB en el repositorio), con pesos en formato safetensors y licencia no especificada. El modelo base declarado es `results/final`, una referencia que no se corresponde con ningun identificador publico resoluble en HuggingFace, lo que dificulta reproducir el entrenamiento. El modelo solo declara soporte para ingles.
+Tecnicamente es un modelo encoder-only de 149.608.709 parametros (aproximadamente 0,6 GB en el repositorio), con pesos en formato safetensors y licencia no especificada. El modelo base declarado es `results/final`, una referencia que no se corresponde con ningun identificador publico resoluble en Hugging Face, lo que dificulta reproducir el entrenamiento. El modelo solo declara soporte para ingles.
 
 Su relevancia actual es la de una pieza de infraestructura de evaluacion: los clasificadores de refusal son utiles como componente de pipelines de red teaming y de control de calidad, y este en concreto ofrece una taxonomia mas granular que la habitual dicotomia rechaza/no rechaza, distinguiendo entre rechazo total, parcial, limitacion de capacidad y peticion de aclaracion. No obstante, el modelo tiene cero descargas y cero "likes" en el momento de redactar esta ficha, y no publica resultados de benchmarks numericos en la informacion disponible.
 
@@ -31,7 +31,7 @@ Su relevancia actual es la de una pieza de infraestructura de evaluacion: los cl
 
 La etiqueta principal del repositorio es `modernbert`, lo que situa al modelo en la familia ModernBERT: una arquitectura transformer encoder-only con mejoras de eficiencia respecto a BERT clasico (rotary position embeddings, atencion sin sesgo, capas normalizadas y kernels optimizados). El recuento de 149,6 millones de parametros es coherente con una variante de tamano base de esa familia. La cabeza de clasificacion es la estandar de `AutoModelForSequenceClassification`, con cinco clases de salida, y el uso previsto es el de un clasificador de pares prompt/respuesta: el tokenizador se invoca con `text_pair=response`, de modo que prompt y respuesta se concatenan como una unica secuencia de entrada. La model card no desglosa el numero de capas, dimension oculta ni cabezas de atencion.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace, optimizador AdamW, decaimiento lineal con warmup, recorte de gradiente y parada temprana. El conjunto de datos es un corpus estratificado de pares prompt/respuesta dividido 80/10/10 (entrenamiento/validacion/prueba). La seleccion del modelo se hizo segun macro-F1 en validacion y las metricas finales se midieron una unica vez sobre el split de prueba retenido, con artefactos publicados en el propio repositorio (`eval_results.json`, `classification_report.txt`, `confusion_matrix.json`). No se menciona uso de RLHF, DPO ni ninguna otra etapa de ajuste por preferencias, algo esperable en un clasificador. Las curvas de entrenamiento (perdida, exactitud, macro y weighted F1, precision y recall) se publican en un dashboard de Trackio. La model card no indica el volumen de ejemplos, la procedencia del corpus ni si hubo anotacion humana o generada sinteticamente.
+El entrenamiento se realizo con el `Trainer` de Hugging Face, optimizador AdamW, decaimiento lineal con warmup, recorte de gradiente y parada temprana. El conjunto de datos es un corpus estratificado de pares prompt/respuesta dividido 80/10/10 (entrenamiento/validacion/prueba). La seleccion del modelo se hizo segun macro-F1 en validacion y las metricas finales se midieron una unica vez sobre el split de prueba retenido, con artefactos publicados en el propio repositorio (`eval_results.json`, `classification_report.txt`, `confusion_matrix.json`). No se menciona uso de RLHF, DPO ni ninguna otra etapa de ajuste por preferencias, algo esperable en un clasificador. Las curvas de entrenamiento (perdida, exactitud, macro y weighted F1, precision y recall) se publican en un dashboard de Trackio. La model card no indica el volumen de ejemplos, la procedencia del corpus ni si hubo anotacion humana o generada sinteticamente.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ El entrenamiento se realizo con el `Trainer` de HuggingFace, optimizador AdamW, 
 - Identificacion de respuestas de aclaracion o solicitud de informacion adicional, mapeada a `clarification`.
 - Identificacion de respuestas conformes, es decir, respuestas que atienden la peticion sin restricciones, mapeadas a `compliant`.
 - Capacidad de clasificacion de pares de texto generico, al ser un modelo de la tarea `text-classification` con cabeza de secuencia.
-- Soporte de despliegue mediante HuggingFace Inference Endpoints y text-embeddings-inference, segun las etiquetas del repositorio.
+- Soporte de despliegue mediante Hugging Face Inference Endpoints y text-embeddings-inference, segun las etiquetas del repositorio.
 - No se declara soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo de pensamiento: es un clasificador discriminativo y no un modelo generativo.
 
 ## Casos de uso
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Con activaciones y overhead de runtime, la inferencia en FP16/BF16 deberia caber holgadamente en cualquier GPU con 2 GB o mas de VRAM.
 - GPU recomendadas: cualquier GPU consumer moderna sirve, incluidas RTX 3060, RTX 4060, RTX 4090, asi como Apple Silicon mediante MPS. Para procesamiento por lotes a gran escala son preferibles A100, H100 o L40S por throughput agregado, no por requisito de memoria.
 - Cabe en GPU de consumo: si, con margen amplio, dado el tamano del modelo.
-- Opciones de despliegue: pipeline de `transformers` con `AutoModelForSequenceClassification`, HuggingFace Inference Endpoints, text-embeddings-inference (ambos declarados en las etiquetas del repositorio), ONNX Runtime o `optimum` si se exporta manualmente. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son utilizables sin una conversion previa.
+- Opciones de despliegue: pipeline de `transformers` con `AutoModelForSequenceClassification`, Hugging Face Inference Endpoints, text-embeddings-inference (ambos declarados en las etiquetas del repositorio), ONNX Runtime o `optimum` si se exporta manualmente. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son utilizables sin una conversion previa.
 - Latencia y throughput: no disponible. No hay mediciones publicadas en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ La categoria de referencia son los clasificadores de seguridad y de comportamien
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VINAY-UMRETHE/refusal-detector | Encoder clasificador, 5 clases de refusal | 149,6 M | no disponible | no disponible | HuggingFace, safetensors |
-| Llama Guard (familia de Meta) | Modelo generativo que emite etiquetas de seguridad | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | HuggingFace |
-| ShieldGemma (familia de Google) | Modelo generativo de moderacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | HuggingFace |
-| WildGuard (Ai2) | Clasificador generativo de dano y refusal | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | HuggingFace |
+| VINAY-UMRETHE/refusal-detector | Encoder clasificador, 5 clases de refusal | 149,6 M | no disponible | no disponible | Hugging Face, safetensors |
+| Llama Guard (familia de Meta) | Modelo generativo que emite etiquetas de seguridad | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | Hugging Face |
+| ShieldGemma (familia de Google) | Modelo generativo de moderacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | Hugging Face |
+| WildGuard (Ai2) | Clasificador generativo de dano y refusal | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | Hugging Face |
 
 Diferencia estructural relevante: las alternativas citadas son modelos generativos que producen una etiqueta como texto, con un coste de inferencia muy superior, mientras que `refusal-detector` es un encoder de 150 M de parametros que devuelve directamente un vector de logits sobre cinco clases, lo que lo hace mucho mas barato de ejecutar a gran escala. La contrapartida es que su taxonomia es fija y no puede adaptarse con instrucciones en tiempo de inferencia, y que no se han publicado resultados que permitan comparar su calidad frente a esas alternativas.
 
@@ -86,7 +86,7 @@ Diferencia estructural relevante: las alternativas citadas son modelos generativ
 
 - Entrenado principalmente con datos de refusal en ingles; la propia model card advierte de que el rendimiento puede degradarse en otros idiomas o ante estilos de refusal alejados de la distribucion de entrenamiento. La etiqueta de idioma del repositorio es unicamente `en`.
 - Riesgo de alucinacion: al ser un clasificador no genera texto, pero si puede producir clasificaciones incorrectas con alta confianza. La salida softmax no esta calibrada por defecto y no se publican temperaturas ni umbrales de decision recomendados.
-- El modelo base declarado, `results/final`, no es un identificador resoluble publicamente en HuggingFace, lo que impide reproducir el punto de partida del ajuste fino y verificar la procedencia exacta de los pesos.
+- El modelo base declarado, `results/final`, no es un identificador resoluble publicamente en Hugging Face, lo que impide reproducir el punto de partida del ajuste fino y verificar la procedencia exacta de los pesos.
 - Licencia no disponible: sin una licencia explicita no hay autorizacion clara para uso comercial, redistribucion o modificacion. Cualquier uso en produccion deberia aclararse previamente con el autor.
 - Sin adopcion verificable: cero descargas y cero "likes" en el momento de la consulta, y sin publicacion asociada ni resultados de benchmarks en la informacion disponible. No hay evidencia externa de calidad.
 - La fecha de creacion registrada en los metadatos (2026-09-11) resulta atipica respecto a la fecha de consulta, lo que sugiere posibles inconsistencias en los metadatos del repositorio.
@@ -97,7 +97,7 @@ Diferencia estructural relevante: las alternativas citadas son modelos generativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VINAY-UMRETHE/refusal-detector
+- Modelo en Hugging Face: https://huggingface.co/VINAY-UMRETHE/refusal-detector
 - Dashboard de entrenamiento (Trackio): https://huggingface.co/spaces/VINAY-UMRETHE/refusal-detector-trackio
 - Modelo base declarado: https://huggingface.co/results/final (referencia no resoluble en la informacion disponible)
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs o repositorios asociados. Los resultados de busqueda disponibles versan sobre rutas de sistema en Windows y no guardan relacion con esta ficha.

@@ -34,7 +34,7 @@ El conjunto de datos de decisión se distribuye en 4.082 ejemplos de entrenamien
 - Detección de fraude en transacciones de tarjeta (FDS) con clasificación de riesgo y decisión de bloqueo.
 - Soporte de agentes autónomos en bucles de decisión tipo Gymnasium (entorno CONNECT TYCOON).
 - Capacidades multilingües limitadas a coreano e inglés.
-- Formato de adaptador PEFT compatible con el ecosistema HuggingFace Transformers.
+- Formato de adaptador PEFT compatible con el ecosistema Hugging Face Transformers.
 - No se documentan en la información disponible capacidades de tool calling, function calling, visión, audio ni modo de razonamiento extendido (thinking mode).
 
 ## Casos de uso
@@ -69,10 +69,10 @@ Métricas adicionales de v2 en simulación de dos meses: satisfacción del clien
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-highj-v2 | 0,8 B (LoRA) | no disponible | Decisión de negocio y FDS | Apache 2.0 | HuggingFace |
-| connectailab-rl-highj-v1 | 0,8 B (LoRA) | no disponible | Decisión de negocio y FDS | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,8 B | no disponible | LLM general | Apache 2.0 | HuggingFace |
-| connectailab-rl-highj-v2-teacher | no disponible | no disponible | Política PPO maestra | no disponible | HuggingFace |
+| connectailab-rl-highj-v2 | 0,8 B (LoRA) | no disponible | Decisión de negocio y FDS | Apache 2.0 | Hugging Face |
+| connectailab-rl-highj-v1 | 0,8 B (LoRA) | no disponible | Decisión de negocio y FDS | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,8 B | no disponible | LLM general | Apache 2.0 | Hugging Face |
+| connectailab-rl-highj-v2-teacher | no disponible | no disponible | Política PPO maestra | no disponible | Hugging Face |
 
 La comparación más directa es con su versión anterior v1, que lograba 3,62 M KRW mensuales y un 37,3 % de defensa de fraude, frente a 6,79 M KRW y 70,6 % en v2. No se dispone de comparación con modelos de decisión de otros autores en la información proporcionada.
 
@@ -88,7 +88,7 @@ La comparación más directa es con su versión anterior v1, que lograba 3,62 M 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/minjunglee27/connectailab-rl-highj-v2
+- Hugging Face del modelo: https://huggingface.co/minjunglee27/connectailab-rl-highj-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Versión anterior v1: https://huggingface.co/minjunglee27/connectailab-rl-highj-v1
 - Política maestra v2-teacher: https://huggingface.co/minjunglee27/connectailab-rl-highj-v2-teacher

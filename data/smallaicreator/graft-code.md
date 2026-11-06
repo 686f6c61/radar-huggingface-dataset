@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GRAFT-Code es un repositorio de HuggingFace publicado por SmallAICreator (UltraLabs) que distribuye una aplicación de escritorio para Windows 10/11 denominada GRAFT Code, junto con el puente opcional `graft-bridge`. No se trata por tanto de un modelo de lenguaje con pesos publicados en este repositorio (el tamano del repo es de 0,1 GB), sino del binario y la infraestructura que ejecutan localmente modelos de la familia GRAFT mediante llama.cpp embebido. La aplicacion actua como agente autonomo sobre el sistema de archivos: crea carpetas, lee y escribe ficheros, mueve, renombra, copia y borra elementos, ejecuta comandos y Python, realiza calculos exactos y hace busquedas web.
+GRAFT-Code es un repositorio de Hugging Face publicado por SmallAICreator (UltraLabs) que distribuye una aplicación de escritorio para Windows 10/11 denominada GRAFT Code, junto con el puente opcional `graft-bridge`. No se trata por tanto de un modelo de lenguaje con pesos publicados en este repositorio (el tamano del repo es de 0,1 GB), sino del binario y la infraestructura que ejecutan localmente modelos de la familia GRAFT mediante llama.cpp embebido. La aplicacion actua como agente autonomo sobre el sistema de archivos: crea carpetas, lee y escribe ficheros, mueve, renombra, copia y borra elementos, ejecuta comandos y Python, realiza calculos exactos y hace busquedas web.
 
 El modelo que recomienda el autor para esta aplicacion es GRAFT-10B-A2B, descrito como un mixture-of-experts de 10B parametros totales con 2B activos, con recall de hasta 32.000 tokens y un fichero GGUF de 6,3 GB que requiere 16 GB de RAM. Como alternativa ligera se ofrece GRAFT-1B-Agentic, de 1 GB y 8 GB de RAM, afinado para uso de herramientas. Ambos se ejecutan en CPU a traves de llama.cpp.
 
@@ -97,7 +97,7 @@ Comparativa con alternativas de la misma categoria (por ejemplo, otros modelos a
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/SmallAICreator/GRAFT-Code
+- Repositorio principal en Hugging Face: https://huggingface.co/SmallAICreator/GRAFT-Code
 - Modelo recomendado GRAFT-10B-A2B (GGUF): https://huggingface.co/SmallAICreator/GRAFT-10B-A2B-GGUF
 - Modelo ligero GRAFT-1B-Agentic: https://huggingface.co/SmallAICreator/GRAFT-1B-Agentic
 - llama.cpp (motor de inferencia embebido, licencia MIT): https://github.com/ggml-org/llama.cpp

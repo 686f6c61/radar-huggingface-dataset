@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| meta-llama/Llama-3.2-3B (base) | 3.2B | 128k | FP16/BF16 | Llama 3.2 | HuggingFace |
-| fbaldassarri/meta-llama_Llama-3.2-3B-auto_round-int8-gs64-sym (este) | 3.2B | 128k | INT8 (AutoRound) | Llama 3.2 | HuggingFace |
-| fbaldassarri/meta-llama_Llama-3.2-3B-auto_gptq-int8-gs64-sym | 3.2B | 128k | INT8 (GPTQ) | Llama 3.2 | HuggingFace |
+| meta-llama/Llama-3.2-3B (base) | 3.2B | 128k | FP16/BF16 | Llama 3.2 | Hugging Face |
+| fbaldassarri/meta-llama_Llama-3.2-3B-auto_round-int8-gs64-sym (este) | 3.2B | 128k | INT8 (AutoRound) | Llama 3.2 | Hugging Face |
+| fbaldassarri/meta-llama_Llama-3.2-3B-auto_gptq-int8-gs64-sym | 3.2B | 128k | INT8 (GPTQ) | Llama 3.2 | Hugging Face |
 
 No se dispone de benchmarks comparativos entre estas versiones. La diferencia principal radica en el método de cuantización: AutoRound (SignRound) frente a GPTQ, ambos con grupo 64 y simétrico. Se espera que AutoRound ofrezca una degradación menor en tareas de razonamiento, pero no hay datos que lo confirmen.
 
@@ -78,7 +78,7 @@ No se dispone de benchmarks comparativos entre estas versiones. La diferencia pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.2-3B-auto_round-int8-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.2-3B-auto_round-int8-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Intel AutoRound (GitHub): https://github.com/intel/auto-round
 - Licencia Llama 3.2: https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE

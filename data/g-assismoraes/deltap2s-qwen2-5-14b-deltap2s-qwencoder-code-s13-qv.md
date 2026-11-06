@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeltaP2S-Qwen2.5-14B-DeltaP2S-QwenCoder-Code-S13-QV es un checkpoint de la familia Qwen2.5 publicado por el usuario g-assismoraes en HuggingFace. Segun su propia model card, se trata de un "merged Qwen2.5 checkpoint produced by the Qwen-aware Delta-P2S experiment package", es decir, el resultado de un proceso de fusion de pesos (model merging) aplicado sobre la arquitectura Qwen2.5, y no de un entrenamiento desde cero. La nomenclatura del repositorio y las rutas de entrenamiento citadas (`./runs/codeqwen7B-14B_SameFormula-S13/...`) apuntan a un experimento que combina un modelo Qwen de codigo y un Qwen2.5 de 14B, con identificadores de configuracion ("S13", "SameFormula") que sugieren una ejecucion concreta dentro de una serie de pruebas.
+DeltaP2S-Qwen2.5-14B-DeltaP2S-QwenCoder-Code-S13-QV es un checkpoint de la familia Qwen2.5 publicado por el usuario g-assismoraes en Hugging Face. Segun su propia model card, se trata de un "merged Qwen2.5 checkpoint produced by the Qwen-aware Delta-P2S experiment package", es decir, el resultado de un proceso de fusion de pesos (model merging) aplicado sobre la arquitectura Qwen2.5, y no de un entrenamiento desde cero. La nomenclatura del repositorio y las rutas de entrenamiento citadas (`./runs/codeqwen7B-14B_SameFormula-S13/...`) apuntan a un experimento que combina un modelo Qwen de codigo y un Qwen2.5 de 14B, con identificadores de configuracion ("S13", "SameFormula") que sugieren una ejecucion concreta dentro de una serie de pruebas.
 
 El modelo tiene 14.770.033.664 parametros reales (unos 14,77B), lo que lo situa en la gama de 14B, con un repositorio de 29,6 GB compatible con pesos en precision bf16/fp16. Se distribuye unicamente en formato safetensors para la libreria transformers, con los tags habituales de Qwen2 (`qwen2`, `qwen2.5`, `text-generation`, `conversational`), ademas de etiquetas especificas del metodo de fusion (`delta-p2s`, `pen2sword`) y de despliegue (`text-generation-inference`, `endpoints_compatible`).
 
@@ -41,7 +41,7 @@ Lo que si se desprende del material publicado es que no hubo entrenamiento desde
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no disponible; no se declara ninguna lista de idiomas.
 - Capacidades especiales (modo "thinking", vision, audio): no disponibles; los tags no incluyen `vision` ni variantes de razonamiento explicito.
-- Compatibilidad con TGI: el tag `text-generation-inference` y `endpoints_compatible` indican que el autor preve el despliegue mediante HuggingFace Text Generation Inference y endpoints gestionados.
+- Compatibilidad con TGI: el tag `text-generation-inference` y `endpoints_compatible` indican que el autor preve el despliegue mediante Hugging Face Text Generation Inference y endpoints gestionados.
 
 ## Casos de uso
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para pesos en 4 bits: en torno a 9-10 GB, mas cache KV; encaja en GPU de consumo con 12-16 GB (RTX 4070 Ti Super, RTX 4080, RTX 3090/4090).
 - GPU recomendadas: A100 40 GB, H100 80 GB, L40S 48 GB para bf16 sin cuantizar; 2x RTX 4090 24 GB mediante tensor parallelism; RTX 4090/3090 individuales solo con cuantizacion de 8 o 4 bits.
 - Cabe en GPU de consumo: si, con cuantizacion. En bf16 no cabe en ninguna GPU de consumo actual de 24 GB o menos.
-- Opciones de despliegue: transformers (soporte nativo, es la libreria declarada), vLLM y Text Generation Inference (el tag `text-generation-inference` y `endpoints_compatible` lo indican), HuggingFace Inference Endpoints. llama.cpp y Ollama requeririan generar primero un GGUF, que no esta publicado.
+- Opciones de despliegue: transformers (soporte nativo, es la libreria declarada), vLLM y Text Generation Inference (el tag `text-generation-inference` y `endpoints_compatible` lo indican), Hugging Face Inference Endpoints. llama.cpp y Ollama requeririan generar primero un GGUF, que no esta publicado.
 - Latencia y throughput: no disponibles. No hay cifras de tokens por segundo ni de latencia en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -95,8 +95,8 @@ La diferencia relevante no es de arquitectura ni de tamano, sino de garantias: f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-14B-DeltaP2S-QwenCoder-Code-S13-QV
-- Perfil del autor en HuggingFace: https://huggingface.co/g-assismoraes
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-14B-DeltaP2S-QwenCoder-Code-S13-QV
+- Perfil del autor en Hugging Face: https://huggingface.co/g-assismoraes
 - Documentacion de la arquitectura Qwen2 en transformers: https://huggingface.co/docs/transformers/model_doc/qwen2
 - Repositorio oficial de Qwen2.5 (modelos base de los que parte la fusion): https://github.com/QwenLM/Qwen2.5
 - Paper de Qwen2.5 (referencia de la familia base): https://arxiv.org/abs/2412.15115

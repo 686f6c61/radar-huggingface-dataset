@@ -42,7 +42,7 @@ No disponible. No existe un modelo comparable en este repositorio, ya que no hay
 - No se proporciona información sobre la calidad o revisión por pares del texto.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/William-taylor16/paper_021293233_embodied_ai
+- Repositorio en Hugging Face: https://huggingface.co/William-taylor16/paper_021293233_embodied_ai
 - Documento relacionado en arXiv: https://arxiv.org/pdf/2509.20021 (sobre IA encarnada desde LLMs hasta World Models)
 - Encuesta sobre IA encarnada en ResearchGate: https://www.researchgate.net/publication/395884929_Embodied_AI_A_Survey_on_the_Evolution_from_Perceptive_to_Behavioral_Intelligence
 - Artículo en Semantic Scholar: https://www.semanticscholar.org/paper/fe23a17209347d0c649ced3547c26b61eec67368

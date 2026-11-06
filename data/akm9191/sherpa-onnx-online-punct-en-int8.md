@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (precisión, F1 de puntuación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akm9191/sherpa-onnx-online-punct-en-int8
+- Hugging Face: https://huggingface.co/akm9191/sherpa-onnx-online-punct-en-int8
 - Modelo original: https://huggingface.co/frankyoujian/Edge-Punct-Casing
 - Release de k2-fsa con los modelos de puntuación: https://github.com/k2-fsa/sherpa-onnx/releases/tag/punctuation-models
 - Repositorio sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

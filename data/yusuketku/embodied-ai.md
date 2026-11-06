@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yusuketku/embodied-ai` es un repositorio de HuggingFace que, pese a su nombre y a sus etiquetas, no contiene un modelo entrenado, sino notas de investigación exploratorias sobre inteligencia artificial encarnada (embodied AI). El autor lo presenta como un artefacto de trabajo previo: el documento principal es `reading.md`, donde se recoge el alcance de la pregunta de investigación, los factores de confusión previstos y los requisitos de reproducibilidad antes de publicar cualquier resultado de benchmark.
+`yusuketku/embodied-ai` es un repositorio de Hugging Face que, pese a su nombre y a sus etiquetas, no contiene un modelo entrenado, sino notas de investigación exploratorias sobre inteligencia artificial encarnada (embodied AI). El autor lo presenta como un artefacto de trabajo previo: el documento principal es `reading.md`, donde se recoge el alcance de la pregunta de investigación, los factores de confusión previstos y los requisitos de reproducibilidad antes de publicar cualquier resultado de benchmark.
 
 Los metadatos de safetensors declaran 49.600 parámetros totales, una cifra que no corresponde a ningún transformer funcional y que apunta a tensores auxiliares o de prueba. No hay pipeline declarado, ni idiomas soportados, ni checkpoint entrenado: la propia model card indica que el repositorio no reclama mejoras de benchmark, ablaciones completadas, código liberado ni pesos entrenados.
 
@@ -52,7 +52,7 @@ Ninguno de los siguientes casos implica inferencia con este repositorio; se deri
 - Lista de comprobación de reproducibilidad: sirve como checklist previo a la publicación de resultados, al exigir versiones de dataset, comandos exactos, semillas, hardware y logs en crudo.
 - Punto de partida bibliográfico: las referencias recopiladas permiten a un investigador nuevo en embodied AI localizar benchmarks, datasets y trabajos previos sin partir de cero.
 - Material docente sobre higiene metodológica: útil en cursos de posgrado para ilustrar cómo se documenta una hipótesis antes de tener resultados, y cómo no debe confundirse un plan con una conclusión.
-- Control negativo en auditorías de repositorios: sirve para ejemplificar repositorios de HuggingFace con etiquetas de modelo (`transformer`, `safetensors`) que no contienen modelo, un caso habitual en herramientas automáticas de catalogación.
+- Control negativo en auditorías de repositorios: sirve para ejemplificar repositorios de Hugging Face con etiquetas de modelo (`transformer`, `safetensors`) que no contienen modelo, un caso habitual en herramientas automáticas de catalogación.
 - Referencia para revisiones sistemáticas: la estructura de la nota (alcance, confusores, líneas base, fallos, preguntas abiertas) puede adaptarse como plantilla de extracción de datos en revisiones de literatura sobre sistemas visión-lenguaje-acción.
 
 ## Benchmarks y rendimiento
@@ -87,7 +87,7 @@ Como contexto del campo (no como comparación de rendimiento), la búsqueda web 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yusuketku/embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/yusuketku/embodied-ai
 - Nota principal citada por el autor: `reading.md` (ruta indicada en la model card; uso de la URL directa no verificado)
 - Otros repositorios del mismo autor: https://huggingface.co/yusuketku/models
 - Awesome-Embodied-AI (lista curada de surveys, papers, datasets, simuladores y benchmarks): https://github.com/wadeKeith/Awesome-Embodied-AI

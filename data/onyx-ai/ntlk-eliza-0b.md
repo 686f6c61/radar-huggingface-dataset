@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NTLK-Eliza-0B es un repositorio publicado en HuggingFace por el usuario onyx-ai el 26 de septiembre de 2026 (ultima actualizacion: 26 de septiembre de 2026, 14:40 UTC). No se trata de un modelo de lenguaje neuronal: el nombre (0B), la etiqueta `NTLK` y el contenido de la model card remiten directamente al modulo `eliza` del Natural Language Toolkit (NLTK), un chatbot basado en reglas y sustitucion de patrones. El repositorio se etiqueta como `Therapist`, `NTLK`, `en` y `license:apache-2.0`, con 0 descargas y 0 "likes" en el momento de la consulta.
+NTLK-Eliza-0B es un repositorio publicado en Hugging Face por el usuario onyx-ai el 26 de septiembre de 2026 (ultima actualizacion: 26 de septiembre de 2026, 14:40 UTC). No se trata de un modelo de lenguaje neuronal: el nombre (0B), la etiqueta `NTLK` y el contenido de la model card remiten directamente al modulo `eliza` del Natural Language Toolkit (NLTK), un chatbot basado en reglas y sustitucion de patrones. El repositorio se etiqueta como `Therapist`, `NTLK`, `en` y `license:apache-2.0`, con 0 descargas y 0 "likes" en el momento de la consulta.
 
 El texto de la model card reproduce la cabecera de copyright y los comentarios del codigo de NLTK (Natural Language Toolkit: Eliza, Copyright 2001-2026 NLTK Project, autores Steven Bird y Edward Loper, URL nltk.org), e incluye la referencia a implementaciones previas de Joe Strout, Jeff Epler y Jez Higgins. Describe una "tabla de traduccion" que convierte frases del usuario en respuestas del sistema (por ejemplo, "I am" se transforma en "you are"), que es el mecanismo clasico de reflejo linguistico del ELIZA original de Joseph Weizenbaum (1966).
 
@@ -81,10 +81,10 @@ El repositorio registra 0 descargas y 0 "likes", por lo que tampoco existen eval
 
 | Modelo | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| onyx-ai/NTLK-Eliza-0B | Basado en reglas (herencia ELIZA / NLTK) | No disponible (0B en el nombre) | No disponible | Apache 2.0 | Repositorio en HuggingFace sin pesos ni pipeline |
+| onyx-ai/NTLK-Eliza-0B | Basado en reglas (herencia ELIZA / NLTK) | No disponible (0B en el nombre) | No disponible | Apache 2.0 | Repositorio en Hugging Face sin pesos ni pipeline |
 | NLTK `nltk.chat.eliza` (modulo original) | Basado en reglas | No aplica | No aplica | Apache 2.0 (NLTK) | Incluido en la libreria NLTK, instalable con `pip install nltk` |
-| Qwen2.5-0.5B-Instruct | Transformer denso, decoder-only | 0,49B aprox. | 32.768 tokens | Apache 2.0 | Pesos publicos en HuggingFace |
-| SmolLM2-360M-Instruct | Transformer denso, decoder-only | 0,36B aprox. | No disponible en la informacion de esta busqueda | Apache 2.0 | Pesos publicos en HuggingFace |
+| Qwen2.5-0.5B-Instruct | Transformer denso, decoder-only | 0,49B aprox. | 32.768 tokens | Apache 2.0 | Pesos publicos en Hugging Face |
+| SmolLM2-360M-Instruct | Transformer denso, decoder-only | 0,36B aprox. | No disponible en la informacion de esta busqueda | Apache 2.0 | Pesos publicos en Hugging Face |
 
 Los datos de los modelos Qwen2.5-0.5B-Instruct y SmolLM2-360M-Instruct proceden de su documentacion publica y se incluyen solo como referencia de categoria (modelos pequenos orientados a conversacion); no provienen de la informacion proporcionada sobre NTLK-Eliza-0B y no se dispone aqui de comparativas de rendimiento entre ellos y este repositorio.
 
@@ -103,7 +103,7 @@ Los datos de los modelos Qwen2.5-0.5B-Instruct y SmolLM2-360M-Instruct proceden 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/onyx-ai/NTLK-Eliza-0B
+- Repositorio en Hugging Face: https://huggingface.co/onyx-ai/NTLK-Eliza-0B
 - Sitio oficial de NLTK (citado en la model card): https://www.nltk.org/
 - Referencia historica del sistema en el que se basa: Weizenbaum, J. (1966), "ELIZA - a computer program for the study of natural language communication between man and machine", Communications of the ACM. No se dispone de URL verificada en la informacion proporcionada.
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada.

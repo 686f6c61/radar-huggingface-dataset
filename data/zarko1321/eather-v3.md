@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eather-v3 es un modelo de lenguaje basado en la arquitectura GPT-2, publicado por el usuario zarko1321 en HuggingFace bajo licencia Apache 2.0. Con aproximadamente 30,5 millones de parámetros, se trata de un modelo de tamaño reducido, orientado probablemente a tareas de generación de texto o fine-tuning en dominios específicos, aunque no se dispone de información detallada sobre su propósito o entrenamiento.
+Eather-v3 es un modelo de lenguaje basado en la arquitectura GPT-2, publicado por el usuario zarko1321 en Hugging Face bajo licencia Apache 2.0. Con aproximadamente 30,5 millones de parámetros, se trata de un modelo de tamaño reducido, orientado probablemente a tareas de generación de texto o fine-tuning en dominios específicos, aunque no se dispone de información detallada sobre su propósito o entrenamiento.
 
 La relevancia de este modelo radica en su licencia permisiva y su tamaño compacto, que lo hacen accesible para experimentación en entornos con recursos limitados. Sin embargo, la ausencia de documentación técnica, benchmarks o ejemplos de uso limita su aplicabilidad inmediata en producción. El repositorio contiene únicamente los pesos en formato safetensors, sin model card descriptiva más allá de la licencia.
 
@@ -42,7 +42,7 @@ Dado el tamaño de 30,5 millones de parámetros, se puede estimar un consumo de 
 - VRAM estimada para inferencia: aproximadamente 122 MB en FP32 (30,5M × 4 bytes), o unos 61 MB en FP16. Cabe en cualquier GPU moderna, incluso integradas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, incluyendo NVIDIA GTX 1050, RTX 3050, o incluso CPUs con suficiente RAM.
 - Es viable en hardware de consumo: sí, se puede ejecutar en portátiles o incluso en Raspberry Pi con suficiente RAM.
-- Opciones de despliegue: al ser un modelo GPT-2, es compatible con frameworks como HuggingFace Transformers, llama.cpp (si se convierte a GGUF), o vLLM, aunque su tamaño pequeño no requiere optimizaciones avanzadas.
+- Opciones de despliegue: al ser un modelo GPT-2, es compatible con frameworks como Hugging Face Transformers, llama.cpp (si se convierte a GGUF), o vLLM, aunque su tamaño pequeño no requiere optimizaciones avanzadas.
 - Latencia y throughput: no se dispone de datos medidos, pero para un modelo de este tamaño, la generación de tokens debería ser muy rápida en GPU (del orden de cientos de tokens por segundo) y aceptable en CPU.
 
 ## Comparativa con modelos similares
@@ -59,4 +59,4 @@ No se dispone de información comparativa. El modelo no tiene benchmarks publica
 
 ## Enlaces
 
-- [HuggingFace: zarko1321/Eather-v3](https://huggingface.co/zarko1321/Eather-v3)
+- [Hugging Face: zarko1321/Eather-v3](https://huggingface.co/zarko1321/Eather-v3)

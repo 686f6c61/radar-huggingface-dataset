@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de capacidades (MMLU, HumanEval, GSM8K) de 
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/IsValorum/Iris-mini-APEX-I-MiniPlus-V2.1-GGUF
+- Página de Hugging Face del modelo: https://huggingface.co/IsValorum/Iris-mini-APEX-I-MiniPlus-V2.1-GGUF
 - Edición MiniPlus V1: https://huggingface.co/IsValorum/Iris-mini-APEX-I-MiniPlus-V1-GGUF
 - Modelo base: AllSpark-Research/Iris-mini (referenciado como `base_model` en los metadatos; URL directa no disponible en la información proporcionada)
 - Paper, blog o repositorio adicionales: no se han encontrado enlaces relevantes en la búsqueda web realizada, cuyos resultados no guardaban relación con el modelo.

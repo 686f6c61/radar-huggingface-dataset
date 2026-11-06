@@ -85,9 +85,9 @@ Las tres discrepancias de posicion se localizan dentro del system prompt de la p
 
 | Modelo | Parametros | Contexto | Runtime / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary Bonsai 2 27B — Core AI (este repositorio) | 27 000 millones (denominacion) | 4 096 tokens exportados | Core AI `.aimodel` + AOT `h16s`, host `bonsai-swift` | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| prism-ml/Ternary-Bonsai-2-27B-gguf (origen) | 27 000 millones (denominacion) | No disponible | GGUF ternario PQ2_0, runtime MLX de PrismML | Apache 2.0 (heredada) | HuggingFace, repositorio de origen del que se exporto este bundle |
-| Qwen/Qwen3.8-27B (modelo base de pesos y tokenizador) | 27 000 millones (denominacion) | No disponible | Pesos en safetensors y frameworks estandar | Apache 2.0 | HuggingFace, revision `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0` |
+| Ternary Bonsai 2 27B — Core AI (este repositorio) | 27 000 millones (denominacion) | 4 096 tokens exportados | Core AI `.aimodel` + AOT `h16s`, host `bonsai-swift` | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| prism-ml/Ternary-Bonsai-2-27B-gguf (origen) | 27 000 millones (denominacion) | No disponible | GGUF ternario PQ2_0, runtime MLX de PrismML | Apache 2.0 (heredada) | Hugging Face, repositorio de origen del que se exporto este bundle |
+| Qwen/Qwen3.8-27B (modelo base de pesos y tokenizador) | 27 000 millones (denominacion) | No disponible | Pesos en safetensors y frameworks estandar | Apache 2.0 | Hugging Face, revision `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0` |
 
 No hay datos de benchmarks comparativos entre estos tres artefactos en la informacion disponible, mas alla de la equivalencia de continuaciones greedy reportada frente a la referencia MLX de PrismML.
 
@@ -109,7 +109,7 @@ No hay datos de benchmarks comparativos entre estos tres artefactos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rahulrachuri/ternary-bonsai-2-27b-coreai
+- Modelo en Hugging Face: https://huggingface.co/rahulrachuri/ternary-bonsai-2-27b-coreai
 - Modelo de origen (ternario GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo base de pesos y tokenizador: https://huggingface.co/Qwen/Qwen3.8-27B
 - Host de inferencia `bonsai-swift`: https://github.com/RahulRachuri/bonsai-swift

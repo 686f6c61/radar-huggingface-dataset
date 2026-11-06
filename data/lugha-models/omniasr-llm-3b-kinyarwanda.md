@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omniASR-LLM-3B-kinyarwanda | 3B | no disponible | rw | Apache 2.0 | Gated en HuggingFace |
-| facebook/omniASR-LLM-3B | 3B | no disponible | multilingüe (familia omnilingual-asr) | no disponible en esta ficha | Público en HuggingFace |
-| Whisper large-v3 (OpenAI) | 1,55B | 30 s de audio | multilingüe (incluye rw con cobertura limitada) | MIT | Público en HuggingFace |
+| omniASR-LLM-3B-kinyarwanda | 3B | no disponible | rw | Apache 2.0 | Gated en Hugging Face |
+| facebook/omniASR-LLM-3B | 3B | no disponible | multilingüe (familia omnilingual-asr) | no disponible en esta ficha | Público en Hugging Face |
+| Whisper large-v3 (OpenAI) | 1,55B | 30 s de audio | multilingüe (incluye rw con cobertura limitada) | MIT | Público en Hugging Face |
 
 La comparativa con Whisper es aproximada: Whisper es un modelo encoder-decoder específico para ASR con cobertura multilingüe, mientras que omniASR-LLM-3B-kinyarwanda es un ajuste monolingüe sobre una arquitectura voz-LLM. No se dispone de métricas comparativas (WER) para establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idiomas: solo kinyarwanda; no debe usarse para otros idiomas sin un ajuste adicional.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de mejora frente al modelo base ni frente a alternativas como Whisper.
 - Riesgo de alucinación: como modelo generativo basado en LLM, puede producir transcripciones plausibles pero incorrectas en audio ruidoso o con acentos no representados.
@@ -82,7 +82,7 @@ La comparativa con Whisper es aproximada: Whisper es un modelo encoder-decoder e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lugha-Models/omniASR-LLM-3B-kinyarwanda
+- Hugging Face: https://huggingface.co/Lugha-Models/omniASR-LLM-3B-kinyarwanda
 - Modelo base: https://huggingface.co/facebook/omniASR-LLM-3B
 - Dataset Afrivoice Kinyarwanda: https://huggingface.co/datasets/DigitalUmuganda/Afrivoice_Kinyarwanda
 - Dataset Common Voice 22.0: https://huggingface.co/datasets/fsicoli/common_voice_22_0

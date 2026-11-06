@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| looptransv2-qwen3.5-2b-s2-trial-m2_med | ~2B | no disponible | Looped transformer (36 capas efectivas) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3.5-2B (modelo base) | ~2B | no disponible | Transformer denso (24 capas) | no disponible en la informacion | HuggingFace (Qwen) |
+| looptransv2-qwen3.5-2b-s2-trial-m2_med | ~2B | no disponible | Looped transformer (36 capas efectivas) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3.5-2B (modelo base) | ~2B | no disponible | Transformer denso (24 capas) | no disponible en la informacion | Hugging Face (Qwen) |
 | Alternativas de ~2B de proposito general | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa con otras alternativas de la misma categoria no esta disponible en la informacion proporcionada. El unico punto de referencia solido es el propio Qwen3.5-2B, del que este modelo es una modificacion estructural.
@@ -81,6 +81,6 @@ La comparacion directa con otras alternativas de la misma categoria no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianraje/looptransv2-qwen3.5-2b-s2-trial-m2_med
+- Modelo en Hugging Face: https://huggingface.co/arianraje/looptransv2-qwen3.5-2b-s2-trial-m2_med
 - Repositorio del proyecto LoopTrans (rama `v2`, commit `1463f44`): https://github.com/arianraje/LoopTrans
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

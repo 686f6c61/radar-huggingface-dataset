@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sofia` es un modelo publicado en HuggingFace por el usuario rootcastleengineering bajo el identificador `rootcastleengineering/sofia`. El repositorio no contiene model card descriptiva: el README se reduce a un bloque de metadatos YAML con la licencia `apache-2.0`, sin texto tecnico, sin descripcion de arquitectura, sin tabla de resultados y sin instrucciones de uso. Tampoco se declara pipeline de tarea, idiomas soportados ni formato de pesos, y el modelo acumula 0 descargas y 0 likes en la fecha de consulta.
+`sofia` es un modelo publicado en Hugging Face por el usuario rootcastleengineering bajo el identificador `rootcastleengineering/sofia`. El repositorio no contiene model card descriptiva: el README se reduce a un bloque de metadatos YAML con la licencia `apache-2.0`, sin texto tecnico, sin descripcion de arquitectura, sin tabla de resultados y sin instrucciones de uso. Tampoco se declara pipeline de tarea, idiomas soportados ni formato de pesos, y el modelo acumula 0 descargas y 0 likes en la fecha de consulta.
 
 Las fechas de creacion y de ultima actualizacion son identicas (21 de septiembre de 2026), lo que indica que el repositorio se subio en una unica operacion y no ha recibido revisiones posteriores. El unico elemento que sugiere una intencion de publicacion formal es el DOI asociado (`10.57967/hf/10549`), correspondiente al prefijo que Hugging Face asigna a artefactos citables, pero no se ha localizado documentacion tecnica, paper ni anuncio que lo acompanen.
 
@@ -79,6 +79,6 @@ No disponible. La comparativa requiere como minimo el numero de parametros y la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rootcastleengineering/sofia
+- Repositorio en Hugging Face: https://huggingface.co/rootcastleengineering/sofia
 - DOI asociado: https://doi.org/10.57967/hf/10549
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no ha devuelto ninguna referencia relacionada con este modelo.

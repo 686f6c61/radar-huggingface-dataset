@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/gemma-3-27b-it-katcher-med-sft-hf` es un checkpoint publicado en HuggingFace por el usuario wz7475 bajo la libreria `transformers`. La model card del repositorio es la plantilla generada automaticamente por el Hub y no ha sido cumplimentada: no incluye descripcion, datos de entrenamiento, licencia, idiomas, ni resultados de evaluacion. Toda la informacion disponible se reduce al identificador del repositorio, las etiquetas (`transformers`, `safetensors`, `endpoints_compatible`, `region:us`) y el tamano del repositorio (0,9 GB).
+El modelo `wz7475/gemma-3-27b-it-katcher-med-sft-hf` es un checkpoint publicado en Hugging Face por el usuario wz7475 bajo la libreria `transformers`. La model card del repositorio es la plantilla generada automaticamente por el Hub y no ha sido cumplimentada: no incluye descripcion, datos de entrenamiento, licencia, idiomas, ni resultados de evaluacion. Toda la informacion disponible se reduce al identificador del repositorio, las etiquetas (`transformers`, `safetensors`, `endpoints_compatible`, `region:us`) y el tamano del repositorio (0,9 GB).
 
 El nombre del repositorio sugiere, sin confirmacion por parte del autor, que se trata de un ajuste fino supervisado (SFT) orientado al dominio medico del modelo Gemma 3 27B instruct de Google DeepMind. Los fragmentos `gemma-3-27b-it` (modelo base), `med-sft` (ajuste supervisado sobre datos medicos) y `katcher` (posible referencia a un dataset, corpus o autor no identificado) apuntan en esa direccion, pero no existe documentacion que lo respalde.
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, el sufijo `sft` del identificador sugiere un ajuste f
 - No se confirma soporte de agentes ni razonamiento multi-paso.
 - No se confirman capacidades multilingues ni el conjunto de idiomas soportados.
 - No se confirma si conserva las capacidades multimodales (vision) del modelo base.
-- La etiqueta `endpoints_compatible` indica unicamente que el repositorio es desplegable mediante HuggingFace Inference Endpoints, no una capacidad funcional del modelo.
+- La etiqueta `endpoints_compatible` indica unicamente que el repositorio es desplegable mediante Hugging Face Inference Endpoints, no una capacidad funcional del modelo.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ Al no confirmarse la arquitectura ni el formato real de los pesos, las cifras si
 - GPU recomendadas: A100 80 GB o H100 80 GB para bf16 con contexto largo; A100 40 GB o L40S 48 GB para int8; RTX 4090, RTX 3090 o L4 para int4.
 - Compatibilidad con GPU de consumo: probable en una RTX 4090 (24 GB) o RTX 3090 (24 GB) con cuantizacion int4 y contextos moderados; no viable en bf16 con una sola GPU de consumo.
 - Escalado multi-GPU: necesario para bf16 mediante tensor parallelism (vLLM, TGI o SGLang).
-- Opciones de despliegue: `transformers` (confirmado por la libreria declarada), vLLM, TGI, SGLang y llama.cpp/Ollama si se generan cuantizaciones GGUF; la etiqueta `endpoints_compatible` habilita HuggingFace Inference Endpoints.
+- Opciones de despliegue: `transformers` (confirmado por la libreria declarada), vLLM, TGI, SGLang y llama.cpp/Ollama si se generan cuantizaciones GGUF; la etiqueta `endpoints_compatible` habilita Hugging Face Inference Endpoints.
 - Cache KV: en modelos de la familia Gemma 3 con ventanas de atencion local, el consumo de cache crece de forma notable con contextos muy largos; en 128 000 tokens puede superar con holgura el tamano de los propios pesos.
 - Latencia y throughput: no disponibles.
 - Caveat critico: con 0,9 GB de repositorio, es probable que el checkpoint no contenga los pesos completos y no sea cargable directamente. Verificar los shards y el `config.json` antes de planificar cualquier despliegue.
@@ -102,7 +102,7 @@ Nota: los datos de las filas correspondientes a otros modelos proceden de sus fi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/gemma-3-27b-it-katcher-med-sft-hf
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/gemma-3-27b-it-katcher-med-sft-hf
 - Articulo citado en la etiqueta del repositorio (Lacoste et al., 2019, estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Modelo base presumible, no confirmado por el autor: https://huggingface.co/google/gemma-3-27b-it
 - Terminos de uso de Gemma (aplicables solo si se confirma la ascendencia Gemma 3): https://ai.google.dev/gemma/terms

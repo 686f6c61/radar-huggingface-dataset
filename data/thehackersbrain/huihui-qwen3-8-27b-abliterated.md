@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: thehackersbrain/Huihui-Qwen3.8-27B-abliterated](https://huggingface.co/thehackersbrain/Huihui-Qwen3.8-27B-abliterated)
+- [Hugging Face: thehackersbrain/Huihui-Qwen3.8-27B-abliterated](https://huggingface.co/thehackersbrain/Huihui-Qwen3.8-27B-abliterated)
 - [Repositorio remove-refusals-with-transformers](https://github.com/Sumandora/remove-refusals-with-transformers)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Ollama: huihui_ai/Qwen3.8-abliterated](https://ollama.com/huihui_ai/Qwen3.8-abliterated)

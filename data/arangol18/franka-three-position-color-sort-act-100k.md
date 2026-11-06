@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Arangol18/franka-three-position-color-sort-act-100k` es un checkpoint publicado en HuggingFace por el usuario Arangol18 (Philipp). Se trata de un modelo de 51.626.632 parámetros, almacenado en formato safetensors, con un tamaño de repositorio de 0.4 GB. Por el nombre, parece estar orientado a tareas de robótica, posiblemente relacionadas con el control de un brazo robótico Franka en un entorno de simulación que implica clasificación de colores en tres posiciones. Sin embargo, no se ha publicado documentación técnica, descripción de arquitectura, datos de entrenamiento ni especificaciones de uso. El modelo fue creado el 2026-09-07 y actualizado el mismo día, con solo 7 descargas y 0 likes, lo que indica que es un modelo experimental o de nicho. Dada la ausencia de información, cualquier uso en producción debe considerarse de alto riesgo.
+El modelo `Arangol18/franka-three-position-color-sort-act-100k` es un checkpoint publicado en Hugging Face por el usuario Arangol18 (Philipp). Se trata de un modelo de 51.626.632 parámetros, almacenado en formato safetensors, con un tamaño de repositorio de 0.4 GB. Por el nombre, parece estar orientado a tareas de robótica, posiblemente relacionadas con el control de un brazo robótico Franka en un entorno de simulación que implica clasificación de colores en tres posiciones. Sin embargo, no se ha publicado documentación técnica, descripción de arquitectura, datos de entrenamiento ni especificaciones de uso. El modelo fue creado el 2026-09-07 y actualizado el mismo día, con solo 7 descargas y 0 likes, lo que indica que es un modelo experimental o de nicho. Dada la ausencia de información, cualquier uso en producción debe considerarse de alto riesgo.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria. El
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arangol18/franka-three-position-color-sort-act-100k
+- Modelo en Hugging Face: https://huggingface.co/Arangol18/franka-three-position-color-sort-act-100k
 - Perfil del autor: https://huggingface.co/Arangol18
 - Modelo relacionado del autor: https://huggingface.co/Arangol18/relaibotix-franka-sim-smolvla-color-sort-60k
 - Dataset relacionado del autor: https://huggingface.co/Arangol18/relaibotix-franka-sim-color-sort-300

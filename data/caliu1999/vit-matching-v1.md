@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`caliu1999/vit-matching-v1` es un repositorio experimental publicado en HuggingFace que contiene una implementación de un Vision Transformer (ViT) orientada a tareas de *matching* (emparejamiento entre elementos visuales, presumiblemente pares de imágenes o regiones). Lo desarrolla el usuario `caliu1999` y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (*smoke tests*).
+`caliu1999/vit-matching-v1` es un repositorio experimental publicado en Hugging Face que contiene una implementación de un Vision Transformer (ViT) orientada a tareas de *matching* (emparejamiento entre elementos visuales, presumiblemente pares de imágenes o regiones). Lo desarrolla el usuario `caliu1999` y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (*smoke tests*).
 
 La relevancia de este repositorio es limitada en términos de uso en producción: el propio autor indica explícitamente que `model.safetensors` no es un checkpoint entrenado ni se presenta como referencia de benchmarks. Su valor es el de una base de código inspeccionable para experimentar con cambios de arquitectura antes de lanzar un entrenamiento completo. El tamaño declarado del checkpoint es de 49.600 parámetros, lo que confirma que se trata de una inicialización mínima, no de un ViT base real.
 
@@ -67,10 +67,10 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No se documentan sesgos conocidos porque no hay datos de entrenamiento ni evaluación.
 - Riesgo de alucinación no aplicable en el sentido lingüístico, pero sí riesgo de resultados sin significado si se usa sin entrenamiento.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor advierte de revisar por separado los términos de los datos fuente si se usa con conjuntos externos.
-- La implementación es experimental y personalizada; las APIs de carga automática de HuggingFace requieren un adaptador explícito.
+- La implementación es experimental y personalizada; las APIs de carga automática de Hugging Face requieren un adaptador explícito.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caliu1999/vit-matching-v1
+- Hugging Face: https://huggingface.co/caliu1999/vit-matching-v1
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

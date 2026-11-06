@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Qwen3.8-27B-TTURBO-709-Uncen-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-27B-TTURBO-709-Uncen-BF16-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Repositorio GGUF del que procede el proyector de vision: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF/blob/main/mmproj-BF16.gguf
 - Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum

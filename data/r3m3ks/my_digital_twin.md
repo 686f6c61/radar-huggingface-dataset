@@ -76,7 +76,7 @@ La comparativa se basa en el modelo base del que deriva este fine-tune. El model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/r3m3ks/my_digital_twin
+- Hugging Face: https://huggingface.co/r3m3ks/my_digital_twin
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-instruct-bnb-4bit
 - TRL (librería de fine-tuning): https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d512_L2_t500000000_s1` es un transformer de pesos dispersos (weight-sparse) de escala muy reducida, publicado por el usuario asher577 en HuggingFace. Se trata de un artefacto de investigación, no de un modelo de propósito general: forma parte de un barrido de escalado ("scaling2") que entrena variantes de un transformer con dispersión estructural en los pesos y en las activaciones, siguiendo el procedimiento descrito por Gao et al. (2025).
+`scaling2_plain_d512_L2_t500000000_s1` es un transformer de pesos dispersos (weight-sparse) de escala muy reducida, publicado por el usuario asher577 en Hugging Face. Se trata de un artefacto de investigación, no de un modelo de propósito general: forma parte de un barrido de escalado ("scaling2") que entrena variantes de un transformer con dispersión estructural en los pesos y en las activaciones, siguiendo el procedimiento descrito por Gao et al. (2025).
 
 El modelo tiene 2 capas, dimensión de modelo 512, dimensión de cabeza 16, contexto de 512 tokens y un vocabulario de solo 4096 tokens. Se ha entrenado durante 500 millones de tokens sobre el dataset `jacobcd52/simplestories-tokenized`, un corpus de historias sintéticas simples, con el tokenizador de SimpleStories-1.25M. El objetivo declarado es estudiar cómo se comporta la dispersión de pesos (fracción L0 objetivo de 0,01) a medida que escala el cómputo de entrenamiento.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | `asher577/scaling2_plain_d512_L2_t500000000_s1` | no disponible (2 capas, d=512) | 512 | no disponible | Pesos en `pytorch_model.bin`, requiere clase `SparseGPT` | Artefacto de investigación sobre dispersión |
 | Otras variantes del barrido `scaling2` de asher577 | no disponible | no disponible | no disponible | no disponible | No se han identificado en la información proporcionada |
-| Modelos de SimpleStories (p. ej. SimpleStories-1.25M) | ~1,25 M (tokenizador de referencia) | no disponible | no disponible | HuggingFace | Referencia del tokenizador usado, no comparable en arquitectura |
+| Modelos de SimpleStories (p. ej. SimpleStories-1.25M) | ~1,25 M (tokenizador de referencia) | no disponible | no disponible | Hugging Face | Referencia del tokenizador usado, no comparable en arquitectura |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría.
 
@@ -82,7 +82,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asher577/scaling2_plain_d512_L2_t500000000_s1
+- Hugging Face: https://huggingface.co/asher577/scaling2_plain_d512_L2_t500000000_s1
 - Run de Weights & Biases: https://wandb.ai/asher577/scd_scaling/runs/3f03twzj
 - Dataset de entrenamiento: https://huggingface.co/datasets/jacobcd52/simplestories-tokenized
 - Tokenizador: https://huggingface.co/SimpleStories/SimpleStories-1.25M

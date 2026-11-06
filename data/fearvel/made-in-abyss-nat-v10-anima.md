@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fearvel/made-in-abyss-nat-v10-anima` es un adaptador LoRA para generacion de imagenes texto-a-imagen, publicado por el usuario fearvel en HuggingFace. La nomenclatura del identificador sugiere que se trata de un LoRA de personaje o estilo vinculado al anime Made in Abyss, en su version v10 y con orientacion a estilo anime, aunque la model card no confirma explicitamente ninguno de estos extremos. El repositorio esta etiquetado con los tags `stable-diffusion`, `text-to-image`, `StableDiffusionPipeline` y `lora`.
+`fearvel/made-in-abyss-nat-v10-anima` es un adaptador LoRA para generacion de imagenes texto-a-imagen, publicado por el usuario fearvel en Hugging Face. La nomenclatura del identificador sugiere que se trata de un LoRA de personaje o estilo vinculado al anime Made in Abyss, en su version v10 y con orientacion a estilo anime, aunque la model card no confirma explicitamente ninguno de estos extremos. El repositorio esta etiquetado con los tags `stable-diffusion`, `text-to-image`, `StableDiffusionPipeline` y `lora`.
 
 El modelo no incluye documentacion tecnica: la model card se limita a una declaracion de tags y a una referencia a una imagen de ejemplo (`set_1__2026-10-08_23-57-07_1.png`). No se especifica el modelo base sobre el que se aplica el adaptador, el dataset de entrenamiento, el numero de pasos ni los hiperparametros utilizados. El tamano del repositorio es de aproximadamente 0,1 GB, coherente con un adaptador de bajo rango (no con un modelo completo).
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fearvel/made-in-abyss-nat-v10-anima | LoRA sobre difusion | no disponible | no aplica | no disponible | other | HuggingFace |
-| Otros LoRA de personaje anime | LoRA sobre difusion | no disponible | no aplica | no disponible | variable | HuggingFace / Civitai |
+| fearvel/made-in-abyss-nat-v10-anima | LoRA sobre difusion | no disponible | no aplica | no disponible | other | Hugging Face |
+| Otros LoRA de personaje anime | LoRA sobre difusion | no disponible | no aplica | no disponible | variable | Hugging Face / Civitai |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas concretas. La ausencia de benchmarks, de modelo base declarado y de descripciones tecnicas impide comparar rendimiento, contexto o calidad frente a otros adaptadores de la misma categoria.
 
@@ -82,6 +82,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fearvel/made-in-abyss-nat-v10-anima
+- Hugging Face: https://huggingface.co/fearvel/made-in-abyss-nat-v10-anima
 - Perfil del autor: https://huggingface.co/fearvel
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

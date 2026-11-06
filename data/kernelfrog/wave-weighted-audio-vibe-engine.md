@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WAVE (Weighted Audio Vibe Engine) es un paquete de vectores y pesos para recomendación musical, no un modelo de lenguaje. Lo publica el autor KernelFrog en HuggingFace como componente del motor de radio y recomendaciones de Knob, un servidor de música autoalojado. El repositorio contiene dos artefactos: `CrowdPack.bin` (682 MB), una tabla de embeddings de artistas y grabaciones aprendida con item2vec a partir del volcado público de ListenBrainz, y `weights.json`, los pesos por defecto con los que una emisora puntúa la siguiente canción.
+WAVE (Weighted Audio Vibe Engine) es un paquete de vectores y pesos para recomendación musical, no un modelo de lenguaje. Lo publica el autor KernelFrog en Hugging Face como componente del motor de radio y recomendaciones de Knob, un servidor de música autoalojado. El repositorio contiene dos artefactos: `CrowdPack.bin` (682 MB), una tabla de embeddings de artistas y grabaciones aprendida con item2vec a partir del volcado público de ListenBrainz, y `weights.json`, los pesos por defecto con los que una emisora puntúa la siguiente canción.
 
 El problema que resuelve es concreto: permitir que un servidor doméstico mapee su propia biblioteca sobre un espacio vectorial de escucha colectiva y aprenda, en local y en CPU, qué canciones y artistas se reproducen juntos. No se envía ninguna biblioteca ni historial de escucha a ningún servicio externo; el servidor busca sus canciones por nombre de artista y título mediante claves de 64 bits, sin necesidad de identificadores de MusicBrainz.
 
@@ -79,7 +79,7 @@ No se dispone de datos de terceros comparables en la información proporcionada.
 | Parámetros o dimensiones | 64 dims (artista), 32 dims (grabación) | No disponible |
 | Contexto | ±3 canciones por sesión | No disponible |
 | Licencia | AGPL-3.0 | No disponible |
-| Disponibilidad | HuggingFace, 0 descargas, 1 like | No disponible |
+| Disponibilidad | Hugging Face, 0 descargas, 1 like | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,6 +95,6 @@ No se dispone de datos de terceros comparables en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KernelFrog/WAVE-Weighted-Audio-Vibe-Engine
+- Hugging Face: https://huggingface.co/KernelFrog/WAVE-Weighted-Audio-Vibe-Engine
 - Volcado de ListenBrainz dump 2723 (15 de octubre de 2026, CC0): citado en la model card; no se incluye URL directa en la información disponible.
 - El resto de resultados de búsqueda web obtenidos (vibeengine.live, vibeengines.com, zephly.ai, repositorios ComfyUI-Woosh y videoclipgenerator) no guardan relación con este artefacto y no se incluyen como referencias válidas.

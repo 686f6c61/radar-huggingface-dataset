@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el modelo base `goldfish-models/swa_latn_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la gama de modelos pequenos orientados a generacion de texto y a experimentacion controlada con bajo coste computacional.
+El modelo `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el modelo base `goldfish-models/swa_latn_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la gama de modelos pequenos orientados a generacion de texto y a experimentacion controlada con bajo coste computacional.
 
 Por la convencion de nombres del proyecto Goldfish, el sufijo `swa_latn` corresponde a suajili (swahili) en escritura latina, y `100mb` indica el volumen aproximado del corpus de entrenamiento del modelo base. El nombre del ajuste incluye segmentos como `ppt`, `Dp-100mb-packed` y un identificador de semilla (`seed455`), lo que sugiere un experimento comparativo dentro de una linea de trabajo sobre tokenizadores y empaquetado de datos, aunque la model card no documenta esos detalles de forma explicita.
 
@@ -12,7 +12,7 @@ Su relevancia es principalmente metodologica: sirve como punto de comparacion re
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (segun el tag `gpt2` de HuggingFace) |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (segun el tag `gpt2` de Hugging Face) |
 | Parametros totales | 124.770.816 (dato real de safetensors) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
@@ -74,11 +74,11 @@ Las cifras de memoria siguientes son estimaciones derivadas del numero de parame
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | SFT sobre Goldfish swa_latn_100mb |
-| goldfish-models/swa_latn_100mb | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace (modelo base) | Modelo base en suajili de la coleccion Goldfish |
-| francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | HuggingFace | Misma serie experimental, semilla 10 |
-| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | HuggingFace | Variante con 10 MB, presumiblemente distinto tamano de datos |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace | Referencia arquitectonica de la misma familia; distinto idioma y datos de entrenamiento |
+| francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | SFT sobre Goldfish swa_latn_100mb |
+| goldfish-models/swa_latn_100mb | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face (modelo base) | Modelo base en suajili de la coleccion Goldfish |
+| francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | Hugging Face | Misma serie experimental, semilla 10 |
+| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 | no disponible | no disponible | no disponible | Hugging Face | Variante con 10 MB, presumiblemente distinto tamano de datos |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face | Referencia arquitectonica de la misma familia; distinto idioma y datos de entrenamiento |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento real de estos modelos entre si.
 
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/swa_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ngfwlzyr
 - Repositorio de TRL: https://github.com/huggingface/trl

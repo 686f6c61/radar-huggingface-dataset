@@ -70,8 +70,8 @@ No se dispone de comparativas publicadas con otros modelos de TTS checos. La mod
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/vvolhejn/pocket-tts-czech
+- Pagina del modelo en Hugging Face: https://huggingface.co/vvolhejn/pocket-tts-czech
 - Repositorio de Pocket TTS: https://github.com/kyutai-labs/pocket-tts
 - Documentacion de entrenamiento no-ingles: https://github.com/kyutai-labs/pocket-tts/blob/main/training/README.md#non-english-training
 - Corpus ParCzech4Speech: https://huggingface.co/datasets/ufal/parczech4speech
-- Perfil del autor en HuggingFace: https://huggingface.co/vvolhejn
+- Perfil del autor en Hugging Face: https://huggingface.co/vvolhejn

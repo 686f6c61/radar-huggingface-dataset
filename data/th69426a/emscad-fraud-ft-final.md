@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `TH69426a/emscad-fraud-ft-final` es un ajuste fino (fine-tuning) de un modelo de la familia Qwen2, orientado a la detección de fraudes en ofertas de empleo. Desarrollado por el usuario TH69426a y publicado en HuggingFace, el modelo está diseñado para la generación de texto y clasificación de contenido, con un tamaño de aproximadamente 494 millones de parámetros, lo que lo sitúa en la gama de modelos pequeños y eficientes para tareas específicas de NLP.
+El modelo `TH69426a/emscad-fraud-ft-final` es un ajuste fino (fine-tuning) de un modelo de la familia Qwen2, orientado a la detección de fraudes en ofertas de empleo. Desarrollado por el usuario TH69426a y publicado en Hugging Face, el modelo está diseñado para la generación de texto y clasificación de contenido, con un tamaño de aproximadamente 494 millones de parámetros, lo que lo sitúa en la gama de modelos pequeños y eficientes para tareas específicas de NLP.
 
 La relevancia de este modelo radica en su aplicación al problema de la detección de estafas laborales, un área con impacto social y económico significativo. Aunque la información pública es escasa, el nombre del repositorio y los tags sugieren que fue entrenado sobre el dataset EMSCAD (Employment Scam Aegean Dataset), un conjunto de datos de referencia para la detección de anuncios de empleo fraudulentos. El modelo se distribuye en formato safetensors y es compatible con la librería transformers y text-generation-inference.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: con 494 millones de parámetros, en FP16 el modelo ocupa aproximadamente 1 GB de VRAM. En cuantización INT8, el uso se reduce a unos 0,5 GB, y en INT4 a unos 0,25 GB. Estas cifras son estimaciones basadas en el tamaño del modelo, no en datos oficiales.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en FP16. Tarjetas como NVIDIA GTX 1650, RTX 3060 o superiores son suficientes. Para despliegues en producción, una T4 o A10G es adecuada.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en la mayoría de GPUs de consumo actuales, incluso en modos cuantizados.
-- Opciones de despliegue: al ser un modelo transformers estándar, puede desplegarse con vLLM, llama.cpp, Ollama, HuggingFace TGI o mediante la API de HuggingFace Inference Endpoints. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: al ser un modelo transformers estándar, puede desplegarse con vLLM, llama.cpp, Ollama, Hugging Face TGI o mediante la API de Hugging Face Inference Endpoints. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponible. Para un modelo de este tamaño, se espera una latencia de decenas de milisegundos por token en GPUs modernas, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TH69426a/emscad-fraud-ft-final
+- Hugging Face: https://huggingface.co/TH69426a/emscad-fraud-ft-final
 - Dataset EMSCAD (referencia): https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction
 - Proyecto relacionado (adaptador EMSCAD): https://huggingface.co/Fernandosr85/emscad-employment-scam-detection-adapter
 - Repositorio de ejemplo con EMSCAD: https://github.com/FelixLuciano/Fake-JobPosting-Prediction

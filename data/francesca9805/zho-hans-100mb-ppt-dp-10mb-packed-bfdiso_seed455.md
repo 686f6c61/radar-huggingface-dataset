@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/zho_hans_100mb`, desarrollado por el usuario de HuggingFace `francesca9805` en el contexto de un experimento de investigación asociado a la Universidad de Groningen (proyecto de tokenizadores, según el enlace de Weights & Biases). Se trata de un modelo de generación de texto de arquitectura GPT-2 con aproximadamente 124,8 millones de parámetros y un repositorio de solo 0,3 GB, lo que lo sitúa en la categoría de modelos pequeños y monolingües.
+El modelo `zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/zho_hans_100mb`, desarrollado por el usuario de Hugging Face `francesca9805` en el contexto de un experimento de investigación asociado a la Universidad de Groningen (proyecto de tokenizadores, según el enlace de Weights & Biases). Se trata de un modelo de generación de texto de arquitectura GPT-2 con aproximadamente 124,8 millones de parámetros y un repositorio de solo 0,3 GB, lo que lo sitúa en la categoría de modelos pequeños y monolingües.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121. Por el identificador del modelo base (`zho_hans`), está orientado al chino simplificado, aunque la model card no declara explícitamente los idiomas soportados ni la licencia. Su relevancia es fundamentalmente experimental: sirve como artefacto de investigación sobre tokenización y ajuste, más que como modelo listo para producción.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint experimental de SFT |
-| goldfish-models/zho_hans_100mb (modelo base) | ≈100 M (según nombre) | no disponible | no disponible | HuggingFace | Modelo monolingüe chino base |
+| francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint experimental de SFT |
+| goldfish-models/zho_hans_100mb (modelo base) | ≈100 M (según nombre) | no disponible | no disponible | Hugging Face | Modelo monolingüe chino base |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos originales) | Ampliamente disponible | Referencia de la arquitectura |
-| Otros miembros de la familia goldfish | variable | no disponible | no disponible | HuggingFace | Modelos monolingües pequeños por idioma |
+| Otros miembros de la familia goldfish | variable | no disponible | no disponible | Hugging Face | Modelos monolingües pequeños por idioma |
 
 La comparación cuantitativa de rendimiento no está disponible, ya que ninguno de los datos de evaluación se ha publicado para este checkpoint.
 
@@ -83,7 +83,7 @@ La comparación cuantitativa de rendimiento no está disponible, ya que ninguno 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/dgs4y0yz
 - Repositorio de TRL: https://github.com/huggingface/trl

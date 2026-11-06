@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-46-v2 es un ajuste fino (fine-tune) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Se trata de un derivado de la familia Qwen3 en su variante "Instruct-2507" (modo no thinking), con 4.000 millones de parámetros y arquitectura transformer densa. El entrenamiento se ha realizado con SFT (supervised fine-tuning) usando la librería TRL (versión 0.24.0) sobre infraestructura de Unsloth, según los metadatos del repositorio.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-46-v2 es un ajuste fino (fine-tune) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Se trata de un derivado de la familia Qwen3 en su variante "Instruct-2507" (modo no thinking), con 4.000 millones de parámetros y arquitectura transformer densa. El entrenamiento se ha realizado con SFT (supervised fine-tuning) usando la librería TRL (versión 0.24.0) sobre infraestructura de Unsloth, según los metadatos del repositorio.
 
 El problema que aborda es la especialización del modelo base mediante instrucciones: el sufijo del nombre ("UnifiedFC", "2048") sugiere un ajuste orientado a function calling unificado y a secuencias de hasta 2.048 tokens, aunque la model card no documenta ni el dataset, ni los hiperparámetros, ni el objetivo concreto del entrenamiento. El repositorio es de tipo "generated_from_trainer" y no incluye métricas de evaluación ni ejemplos de uso más allá de un snippet genérico de `pipeline`.
 
@@ -35,7 +35,7 @@ El entrenamiento se ejecutó con TRL 0.24.0 (entrenador SFT), Transformers 5.16.
 - Soporte de tool calling / function calling: presumiblemente reforzado por el ajuste (el sufijo "UnifiedFC" del nombre lo sugiere), pero no documentado ni verificado en la model card.
 - Capacidades de agente y razonamiento multi-paso: no documentadas para este checkpoint.
 - Multilingüismo: no declarado en la model card; el modelo base Qwen3 declara cobertura de más de 100 idiomas.
-- Compatibilidad con endpoints: el repositorio incluye el tag `endpoints_compatible`, lo que indica que puede desplegarse en HuggingFace Inference Endpoints con el runtime de Transformers.
+- Compatibilidad con endpoints: el repositorio incluye el tag `endpoints_compatible`, lo que indica que puede desplegarse en Hugging Face Inference Endpoints con el runtime de Transformers.
 - No se declaran capacidades de visión, audio ni modo thinking conmutable en este checkpoint.
 
 ## Casos de uso
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-46-v2 | 4B (denso) | No especificado en la card (base: hasta 262.144) | No disponible | HuggingFace, 0 descargas, 0 likes | Fine-tune comunitario sin evaluación ni dataset documentado |
-| Qwen3-4B-Instruct-2507 (base) | 4B (denso) | Hasta 262.144 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | Referencia oficial, con benchmarks publicados por Qwen; licencia clara para uso comercial |
-| Llama 3.1 8B Instruct | 8B (denso) | 128.000 tokens | Licencia comunitaria Llama 3.1 | HuggingFace y catálogos de despliegue | El doble de parámetros ylicencia con restricciones de uso aceptable |
-| Gemma 3 4B IT | 4B (denso) | 128.000 tokens | Licencia Gemma | HuggingFace | Alternativa de tamaño equivalente, con términos de uso propios |
-| Phi-4-mini-instruct | 3,8B (denso) | 128.000 tokens | MIT | HuggingFace | Opción permisiva de tamaño similar para despliegue comercial |
+| Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-46-v2 | 4B (denso) | No especificado en la card (base: hasta 262.144) | No disponible | Hugging Face, 0 descargas, 0 likes | Fine-tune comunitario sin evaluación ni dataset documentado |
+| Qwen3-4B-Instruct-2507 (base) | 4B (denso) | Hasta 262.144 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | Referencia oficial, con benchmarks publicados por Qwen; licencia clara para uso comercial |
+| Llama 3.1 8B Instruct | 8B (denso) | 128.000 tokens | Licencia comunitaria Llama 3.1 | Hugging Face y catálogos de despliegue | El doble de parámetros ylicencia con restricciones de uso aceptable |
+| Gemma 3 4B IT | 4B (denso) | 128.000 tokens | Licencia Gemma | Hugging Face | Alternativa de tamaño equivalente, con términos de uso propios |
+| Phi-4-mini-instruct | 3,8B (denso) | 128.000 tokens | MIT | Hugging Face | Opción permisiva de tamaño similar para despliegue comercial |
 
 No se dispone de métricas comparativas de rendimiento para el modelo objeto de esta ficha, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -95,8 +95,8 @@ No se dispone de métricas comparativas de rendimiento para el modelo objeto de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-46-v2
-- Modelo base en HuggingFace (conversión Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-46-v2
+- Modelo base en Hugging Face (conversión Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

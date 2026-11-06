@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stephenson-1.5-20B es un modelo de lenguaje publicado en HuggingFace por el usuario Counfield bajo licencia MIT. Por el identificador se deduce que se trata de un modelo de aproximadamente 20.000 millones de parametros, presumiblemente una version 1.5 de una familia previa ("Stephenson"), aunque la model card publicada no incluye ninguna descripcion, documentacion tecnica ni detalles sobre arquitectura, datos de entrenamiento o capacidades.
+Stephenson-1.5-20B es un modelo de lenguaje publicado en Hugging Face por el usuario Counfield bajo licencia MIT. Por el identificador se deduce que se trata de un modelo de aproximadamente 20.000 millones de parametros, presumiblemente una version 1.5 de una familia previa ("Stephenson"), aunque la model card publicada no incluye ninguna descripcion, documentacion tecnica ni detalles sobre arquitectura, datos de entrenamiento o capacidades.
 
 La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia MIT, sin seccion de uso, sin tabla de especificaciones, sin resultados de benchmarks y sin indicacion de idiomas soportados. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, lo que sugiere una publicacion reciente sin validacion por parte de la comunidad.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Stephenson-1.5-20B | 20B (inferido) | no disponible | MIT | Practicamente inexistente | Repositorio HuggingFace sin descargas |
+| Stephenson-1.5-20B | 20B (inferido) | no disponible | MIT | Practicamente inexistente | Repositorio Hugging Face sin descargas |
 | Alternativas de ~20B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa fiable con modelos de la misma categoria. La ausencia de benchmarks y de especificaciones impide cualquier comparacion objetiva de rendimiento.
@@ -80,5 +80,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Counfield/Stephenson-1.5-20B
+- Repositorio Hugging Face: https://huggingface.co/Counfield/Stephenson-1.5-20B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

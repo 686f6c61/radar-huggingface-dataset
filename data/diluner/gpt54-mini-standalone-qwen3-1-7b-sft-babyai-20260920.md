@@ -73,8 +73,8 @@ Configuracion de evaluacion declarada: temperatura 0,4, top-p 1,0, top-k 20, mod
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Resultado declarado |
 |---|---:|---|---|---|---|
-| Diluner/gpt54-mini-standalone-qwen3-1.7b-sft-babyai-20260920 | 2.031.739.904 | No disponible | No declarada; remite al modelo base | Publico en HuggingFace, 0 descargas, 0 likes | babyai avg@4: 91,3889 % (329/360) |
-| Qwen/Qwen3-1.7B (modelo base) | 1,7 B (identificado en la model card; el recuento real de este checkpoint es superior) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace | No disponible |
+| Diluner/gpt54-mini-standalone-qwen3-1.7b-sft-babyai-20260920 | 2.031.739.904 | No disponible | No declarada; remite al modelo base | Publico en Hugging Face, 0 descargas, 0 likes | babyai avg@4: 91,3889 % (329/360) |
+| Qwen/Qwen3-1.7B (modelo base) | 1,7 B (identificado en la model card; el recuento real de este checkpoint es superior) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face | No disponible |
 | Alternativas de ~2 B afinadas para agentes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion verificable sobre modelos comparables de la misma categoria en el material proporcionado, por lo que no se puede establecer una comparativa de rendimiento fiable mas alla del modelo base. La busqueda web realizada no devolvio resultados tecnicos relevantes.
@@ -95,9 +95,9 @@ No se dispone de informacion verificable sobre modelos comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-1.7b-sft-babyai-20260920
+- Modelo en Hugging Face: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-1.7b-sft-babyai-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
-- Fichero de procedencia y checksums dentro del repositorio: `experiment.json` (en la raiz del repositorio de HuggingFace)
+- Fichero de procedencia y checksums dentro del repositorio: `experiment.json` (en la raiz del repositorio de Hugging Face)
 - Paper, blog o repositorio adicional del autor: no disponible en la informacion proporcionada
 - Demo o espacio interactivo: no disponible
 - Resultados de la busqueda web: no se encontro ningun enlace tecnico relevante; los resultados devueltos correspondian a temas no relacionados (foros generalistas y consultas sobre herramientas de escritorio).

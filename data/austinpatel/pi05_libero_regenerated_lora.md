@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05_libero_regenerated_lora es un checkpoint de ajuste fino mediante LoRA del modelo base physical-intelligence/pi05_base (π0.5), publicado por el usuario de HuggingFace austinpatel. Se trata de un modelo de robótica (pipeline `robotics`) orientado a manipulación, distribuido a través de la librería openpi de Physical Intelligence. El repositorio contiene un único directorio de paso de entrenamiento en formato Orbax con las particiones `params/`, `train_state/`, `assets/` y `_CHECKPOINT_METADATA`, y ocupa 9,6 GB.
+pi05_libero_regenerated_lora es un checkpoint de ajuste fino mediante LoRA del modelo base physical-intelligence/pi05_base (π0.5), publicado por el usuario de Hugging Face austinpatel. Se trata de un modelo de robótica (pipeline `robotics`) orientado a manipulación, distribuido a través de la librería openpi de Physical Intelligence. El repositorio contiene un único directorio de paso de entrenamiento en formato Orbax con las particiones `params/`, `train_state/`, `assets/` y `_CHECKPOINT_METADATA`, y ocupa 9,6 GB.
 
 El modelo se ha especializado sobre el benchmark LIBERO (sus cuatro suites originales) y se publica junto con el proyecto Behavior Prompting del grupo real-stanford. El ajuste se realizó sobre un dataset propio, `austinpatel/libero_regenerated_openpi`, que es una conversión a formato LeRobot de 256x256 del dataset LIBERO original, distinta del dataset LIBERO que openpi proporciona de serie. Por ese motivo la configuración de entrenamiento se denomina `pi05_libero_lora_my_regeneration`.
 
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austinpatel/pi05_libero_regenerated_lora
+- Modelo en Hugging Face: https://huggingface.co/austinpatel/pi05_libero_regenerated_lora
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/austinpatel/libero_regenerated_openpi
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

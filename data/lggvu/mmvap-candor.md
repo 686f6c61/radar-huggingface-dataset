@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MMVAP — Candor es un checkpoint de un modelo de prediccion de actividad de voz (Voice Activity Projection, VAP) con fusion temprana de audio y video, orientado a la prediccion de turnos de palabra (turn-taking) en conversaciones. Lo publica el usuario lggvu en HuggingFace y se ha entrenado desde cero sobre el corpus Candor, un corpus de conversaciones enlazado por el propio autor al repositorio de investigacion de BetterUp. El checkpoint corresponde al pliegue 0 (fold 0) y a la epoca 10 de entrenamiento, lo que sugiere un pipeline de validacion cruzada habitual en este tipo de trabajos.
+MMVAP — Candor es un checkpoint de un modelo de prediccion de actividad de voz (Voice Activity Projection, VAP) con fusion temprana de audio y video, orientado a la prediccion de turnos de palabra (turn-taking) en conversaciones. Lo publica el usuario lggvu en Hugging Face y se ha entrenado desde cero sobre el corpus Candor, un corpus de conversaciones enlazado por el propio autor al repositorio de investigacion de BetterUp. El checkpoint corresponde al pliegue 0 (fold 0) y a la epoca 10 de entrenamiento, lo que sugiere un pipeline de validacion cruzada habitual en este tipo de trabajos.
 
 A diferencia de un modelo de lenguaje generativo, un modelo VAP no produce texto: recibe flujos de audio (y en esta variante tambien video) y proyecta en el tiempo la probabilidad de que cada interlocutor este hablando, lo que permite estimar cuando se producira un cambio de turno o quien tomara la palabra. Esto lo hace relevante para sistemas de dialogo hablado, agentes conversacionales y analisis de interaccion social, donde la gestion de turnos es un cuello de botella clasico.
 
@@ -68,7 +68,7 @@ No se dispone de datos verificables de parametros, contexto o rendimiento de est
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MMVAP — Candor (lggvu) | VAP audio-visual, fusion temprana | no disponible | no disponible | unknown | HuggingFace + repo `mm-turn-taking` |
+| MMVAP — Candor (lggvu) | VAP audio-visual, fusion temprana | no disponible | no disponible | unknown | Hugging Face + repo `mm-turn-taking` |
 | VAP (familia original de Voice Activity Projection) | VAP basado en audio | no disponible | no disponible | no disponible | publicaciones academicas y repos de investigacion |
 | TurnGPT y variantes de prediccion de turnos basadas en lenguaje | Prediccion de turnos sobre texto | no disponible | no disponible | no disponible | repos de investigacion |
 
@@ -86,7 +86,7 @@ No se dispone de datos verificables de parametros, contexto o rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lggvu/mmvap-candor
+- Modelo en Hugging Face: https://huggingface.co/lggvu/mmvap-candor
 - Codigo fuente (`mm-turn-taking`): https://github.com/lggvu/mm-turn-taking
 - Corpus Candor (BetterUp): https://betterup.com/research/candor-corpus
 

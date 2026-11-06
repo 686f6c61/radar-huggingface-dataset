@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yukamatsumae/molmoact2_otter_toycarresearch_20260817` es una política robótica (policy) entrenada con la librería LeRobot de HuggingFace. Está diseñado para controlar un robot mediante aprendizaje por imitación, concretamente sobre un dataset de demostraciones de un coche de juguete (`ToyCarResearch_20260817_020059`). El nombre del modelo sugiere una arquitectura basada en ACT (Action Chunking Transformer) con un codificador visual de la familia Molmo, aunque la model card solo indica explícitamente `policy.type=act`. Con aproximadamente 5.400 millones de parámetros, es un modelo de tamaño considerable para tareas de robótica, lo que indica que incorpora un backbone de visión de gran capacidad.
+El modelo `yukamatsumae/molmoact2_otter_toycarresearch_20260817` es una política robótica (policy) entrenada con la librería LeRobot de Hugging Face. Está diseñado para controlar un robot mediante aprendizaje por imitación, concretamente sobre un dataset de demostraciones de un coche de juguete (`ToyCarResearch_20260817_020059`). El nombre del modelo sugiere una arquitectura basada en ACT (Action Chunking Transformer) con un codificador visual de la familia Molmo, aunque la model card solo indica explícitamente `policy.type=act`. Con aproximadamente 5.400 millones de parámetros, es un modelo de tamaño considerable para tareas de robótica, lo que indica que incorpora un backbone de visión de gran capacidad.
 
 Este modelo es relevante porque demuestra la aplicación de arquitecturas multimodales modernas al control robótico, un campo en auge. Al estar publicado con licencia Apache 2.0 y en formato safetensors, es accesible para la comunidad investigadora y de desarrollo. Sin embargo, al ser un modelo especializado en una tarea concreta (conducir un coche de juguete), su utilidad fuera de ese dominio es limitada.
 
@@ -21,7 +21,7 @@ Este modelo es relevante porque demuestra la aplicación de arquitecturas multim
 
 ## Arquitectura y entrenamiento
 
-El modelo está entrenado con LeRobot, el framework de HuggingFace para robótica, utilizando el tipo de política ACT (Action Chunking Transformer). ACT es una arquitectura basada en transformers que predice secuencias de acciones (chunks) a partir de observaciones visuales y del estado del robot. El nombre "molmoact2" sugiere que el codificador visual podría ser un modelo de la familia Molmo (un modelo multimodal), aunque la model card no lo confirma explícitamente.
+El modelo está entrenado con LeRobot, el framework de Hugging Face para robótica, utilizando el tipo de política ACT (Action Chunking Transformer). ACT es una arquitectura basada en transformers que predice secuencias de acciones (chunks) a partir de observaciones visuales y del estado del robot. El nombre "molmoact2" sugiere que el codificador visual podría ser un modelo de la familia Molmo (un modelo multimodal), aunque la model card no lo confirma explícitamente.
 
 El entrenamiento se realizó sobre el dataset `yukamatsumae/ToyCarResearch_20260817_020059`, que contiene demostraciones de un coche de juguete. No se especifica el número de episodios, la duración total ni el método de entrenamiento (solo se menciona el uso de LeRobot). No hay indicios de RLHF ni DPO; se trata de un aprendizaje por imitación supervisado.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros modelos comparables en el mismo repositorio o en la documentación. Podrían existir otras políticas ACT entrenadas con LeRobot, pero no hay datos públicos para establecer una comparación objetiva. Se recomienda consultar el Hub de HuggingFace con el filtro `library_name:lerobot` para encontrar modelos similares.
+No se dispone de información sobre otros modelos comparables en el mismo repositorio o en la documentación. Podrían existir otras políticas ACT entrenadas con LeRobot, pero no hay datos públicos para establecer una comparación objetiva. Se recomienda consultar el Hub de Hugging Face con el filtro `library_name:lerobot` para encontrar modelos similares.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de información sobre otros modelos comparables en el mismo reposi
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/yukamatsumae/molmoact2_otter_toycarresearch_20260817](https://huggingface.co/yukamatsumae/molmoact2_otter_toycarresearch_20260817)
+- Modelo en Hugging Face: [https://huggingface.co/yukamatsumae/molmoact2_otter_toycarresearch_20260817](https://huggingface.co/yukamatsumae/molmoact2_otter_toycarresearch_20260817)
 - Dataset de entrenamiento: [https://huggingface.co/datasets/yukamatsumae/ToyCarResearch_20260817_020059](https://huggingface.co/datasets/yukamatsumae/ToyCarResearch_20260817_020059)
 - Documentación de LeRobot: [https://huggingface.co/docs/lerobot/index](https://huggingface.co/docs/lerobot/index)
 - Guía de entrenamiento de LeRobot: [https://huggingface.co/docs/lerobot/il_robots#train-a-policy](https://huggingface.co/docs/lerobot/il_robots#train-a-policy)

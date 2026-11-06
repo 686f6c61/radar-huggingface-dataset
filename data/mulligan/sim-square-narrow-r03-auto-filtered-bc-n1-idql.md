@@ -77,7 +77,7 @@ No se dispone de datos comparativos numericos con otros modelos en la informacio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sim-square-narrow-r03-auto-filtered-bc-n1-idql | no disponible | no aplicable | 71,1-73,6 % de exito (5 semillas, 8000 rollouts) | MIT | HuggingFace |
+| sim-square-narrow-r03-auto-filtered-bc-n1-idql | no disponible | no aplicable | 71,1-73,6 % de exito (5 semillas, 8000 rollouts) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,10 +92,10 @@ No se dispone de datos comparativos numericos con otros modelos en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-filtered-bc-n1-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-filtered-bc-n1-idql
 - Sitio de Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset base de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de rollouts auto-BC: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-auto-bc-n1-shared-policy-rollouts

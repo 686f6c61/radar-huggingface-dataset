@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlowHigh.AXERA es un modelo de superresolución de voz y extensión de ancho de banda (bandwidth extension) que convierte audio de entrada de 8 kHz o 16 kHz en audio de salida a 48 kHz. Lo publica el usuario HY-2012 en HuggingFace y deriva del modelo `kiriyamaX/FLowHigh_indep_adaptive_400k`, del que constituye una adaptación optimizada para el NPU3 del SoC AX650 de Axera. El pipeline declarado es `audio-to-audio` y la librería asociada es `axera`, lo que indica que el artefacto principal son dos ficheros `axmodel` (Flow de 38 MB y BigVGAN de 20 MB, 58 MB en total) preparados para ejecutarse en la placa AX650N.
+FlowHigh.AXERA es un modelo de superresolución de voz y extensión de ancho de banda (bandwidth extension) que convierte audio de entrada de 8 kHz o 16 kHz en audio de salida a 48 kHz. Lo publica el usuario HY-2012 en Hugging Face y deriva del modelo `kiriyamaX/FLowHigh_indep_adaptive_400k`, del que constituye una adaptación optimizada para el NPU3 del SoC AX650 de Axera. El pipeline declarado es `audio-to-audio` y la librería asociada es `axera`, lo que indica que el artefacto principal son dos ficheros `axmodel` (Flow de 38 MB y BigVGAN de 20 MB, 58 MB en total) preparados para ejecutarse en la placa AX650N.
 
 El modelo resuelve un problema concreto en despliegue embebido: mejorar la calidad percibida de audio telefónico o de voz de baja frecuencia de muestreo sin recurrir a GPUs ni a servicios en la nube. Según la model card, el RTF medido en Python sobre la placa es de 0,24 para audios de 20 a 60 segundos, es decir, procesa aproximadamente cuatro veces más rápido que tiempo real. La arquitectura combina un modelo generativo de flujo (35,4 M de parámetros) con un vocoder BigVGAN (14,0 M de parámetros), sumando unos 49,4 M de parámetros y un peso de checkpoint de 481.490.826 bytes.
 
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks objetivos (MOS, PESQ, STOI, LSD u o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HY-2012/FlowHigh.AXERA
+- Hugging Face: https://huggingface.co/HY-2012/FlowHigh.AXERA
 - GitHub del port AXERA: https://github.com/ZY-2012/FlowHigh.AXERA
 - Repositorio upstream de FlowHigh: https://github.com/jjunak-yun/FLowHigh_code
 - Modelo base: https://huggingface.co/kiriyamaX/FLowHigh_indep_adaptive_400k

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA entrenado mediante DreamBooth sobre el modelo de difusion de texto a imagen CompVis/stable-diffusion-v1-4. El adaptador ha sido publicado por el usuario 4rfvedc y, segun su propia model card, se trata de un "identity adapter" entrenado con cuatro imagenes proporcionadas de un gato naranja, utilizando la frase disparadora `sks cat`. No se trata, por tanto, de un modelo de lenguaje ni de un modelo fundacional, sino de un artefacto de personalizacion de bajo rango pensado para que el modelo base reproduzca la identidad visual de un sujeto concreto.
 
-La relevancia de este tipo de publicaciones es metodologica: ilustra el flujo habitual de DreamBooth con LoRA, una tecnica que reduce de forma drastica el coste de personalizacion frente al ajuste fino completo, ya que solo se entrenan matrices de bajo rango inyectadas en las capas del UNet (y opcionalmente del text encoder). El prefijo `313551175-lab2` sugiere que se trata de un ejercicio academico de laboratorio, y los metadatos de HuggingFace lo confirman: cero descargas, cero likes y un tamano de repositorio de 0.0 GB, lo que indica que no hay pesos publicados o que estos son despreciables en tamano.
+La relevancia de este tipo de publicaciones es metodologica: ilustra el flujo habitual de DreamBooth con LoRA, una tecnica que reduce de forma drastica el coste de personalizacion frente al ajuste fino completo, ya que solo se entrenan matrices de bajo rango inyectadas en las capas del UNet (y opcionalmente del text encoder). El prefijo `313551175-lab2` sugiere que se trata de un ejercicio academico de laboratorio, y los metadatos de Hugging Face lo confirman: cero descargas, cero likes y un tamano de repositorio de 0.0 GB, lo que indica que no hay pesos publicados o que estos son despreciables en tamano.
 
 Por todo ello, la ficha debe leerse como documentacion de un adaptador de identidad concreto, no como la de un modelo autonomo. La ausencia de pesos verificables en el repositorio limita seriamente su uso practico, y los datos tecnicos disponibles se reducen a la licencia, el modelo base y la frase disparadora.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Este adaptador (DreamBooth + LoRA sobre SD v1.4) | no disponible (LoRA de bajo rango) | 512x512 nativo, 77 tokens de prompt | creativeml-openrail-m | Repositorio con 0.0 GB, sin descargas ni likes |
 | Textual Inversion sobre SD v1.4 | Un unico embedding textual (orden de miles de parametros) | 512x512 nativo, 77 tokens | Depende del autor del embedding | Ampliamente disponible en la comunidad |
 | DreamBooth con ajuste fino completo sobre SD v1.4 | Todos los parametros del UNet (aprox. 860 M) | 512x512 nativo, 77 tokens | Depende del autor; base con licencia CreativeML OpenRAIL-M | Requiere publicar o almacenar pesos completos |
-| LoRA generico sobre SD v1.4 (estilo o concepto) | Matrices de bajo rango en capas seleccionadas | 512x512 nativo, 77 tokens | Habitualmente CreativeML OpenRAIL-M | Muy extendido en HuggingFace y civitai |
+| LoRA generico sobre SD v1.4 (estilo o concepto) | Matrices de bajo rango en capas seleccionadas | 512x512 nativo, 77 tokens | Habitualmente CreativeML OpenRAIL-M | Muy extendido en Hugging Face y civitai |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/4rfvedc/313551175-lab2-dreambooth-lora
+- Repositorio Hugging Face: https://huggingface.co/4rfvedc/313551175-lab2-dreambooth-lora
 - Documentacion de DreamBooth con LoRA (PEFT): https://huggingface.co/docs/peft/main/en/task_guides/dreambooth_lora
 - Version 0.6.0 de la misma guia: https://huggingface.co/docs/peft/v0.6.0/task_guides/dreambooth_lora
 - Pagina oficial del paper DreamBooth: https://dreambooth.github.io/

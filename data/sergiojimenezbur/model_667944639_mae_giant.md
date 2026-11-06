@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables. No se puede establecer 
 
 ## Enlaces
 
-- [HuggingFace - model_667944639_mae_giant](https://huggingface.co/sergiojimenezbur/model_667944639_mae_giant)
+- [Hugging Face - model_667944639_mae_giant](https://huggingface.co/sergiojimenezbur/model_667944639_mae_giant)
 
 No se encontraron otros enlaces relevantes en la búsqueda web (papers, blogs, repos, demos).

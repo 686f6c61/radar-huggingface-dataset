@@ -84,7 +84,7 @@ No se han publicado comparaciones con modelos alternativos en la información di
 | Contexto | no aplica | no disponible |
 | Rendimiento | top-1 0,945-0,946 en tests propios | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | HuggingFace + GitHub | no disponible |
+| Disponibilidad | Hugging Face + GitHub | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No se han publicado comparaciones con modelos alternativos en la información di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmandaGondra/ncm-classifier
+- Modelo en Hugging Face: https://huggingface.co/AmandaGondra/ncm-classifier
 - Dataset publicado: https://huggingface.co/datasets/AmandaGondra/ncm-classifier-dataset
 - Repositorio de código: https://github.com/amanda-gondra/ncm-classifier (commit `a03a54f1d0973966b0babc8fb846e681197b07e2`)
 - Documentación de skops (formato de serialización): https://skops.readthedocs.io/

@@ -75,7 +75,7 @@ No se dispone de datos comparativos con otras variantes de Qwen-Image-Edit ni co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChrisColeTech/qwen-image-edit-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ChrisColeTech/qwen-image-edit-uncensored-GGUF
 - Repositorio relacionado (turbo): https://huggingface.co/ChrisColeTech/qwen-image-edit-turbo-GGUF
 - Repositorio relacionado (Rapid AIO): https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO
 - Repositorio oficial Qwen-Image: https://github.com/QwenLM/Qwen-Image

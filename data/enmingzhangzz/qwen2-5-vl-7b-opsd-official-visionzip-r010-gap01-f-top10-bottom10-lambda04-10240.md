@@ -76,9 +76,9 @@ No se dispone de información sobre otros adaptadores comparables dentro del mis
 
 ## Enlaces
 
-- [HuggingFace: enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-f-top10-bottom10-lambda04-10240](https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-f-top10-bottom10-lambda04-10240)
-- [Variante con configuración KL50/F20 en HuggingFace](https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-kl50-f20-lambda04-10240)
+- [Hugging Face: enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-f-top10-bottom10-lambda04-10240](https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-f-top10-bottom10-lambda04-10240)
+- [Variante con configuración KL50/F20 en Hugging Face](https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-kl50-f20-lambda04-10240)
 - [FriendliAI: despliegue del modelo](https://friendli.ai/models/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-kl50-f20-lambda04-10240)
 - [GitHub de VisionZip (JIA-Lab-research)](https://github.com/JIA-Lab-research/VisionZip/tree/main/Qwen2_5_VL)
 - [GitHub de Qwen-VL (oficial)](https://github.com/QwenLM/Qwen-VL)
-- [Modelo base Qwen/Qwen2.5-VL-7B-Instruct en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)
+- [Modelo base Qwen/Qwen2.5-VL-7B-Instruct en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)

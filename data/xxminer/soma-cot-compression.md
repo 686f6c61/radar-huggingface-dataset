@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XXMiner/soma-cot-compression es un paquete de algoritmos de compresión de cadenas de pensamiento (Chain-of-Thought, CoT) desarrollado para el subnet SOMA de Bittensor (subnet 114). No se trata de un modelo de lenguaje, sino de un conjunto de 15 estrategias de compresión de contexto diseñadas para reducir el número de tokens que los agentes de IA envían al modelo, recortando así el coste de inferencia sin degradar la calidad de las respuestas. El autor, XXMiner, lo publicó en HuggingFace el 16 de agosto de 2026 con licencia MIT.
+XXMiner/soma-cot-compression es un paquete de algoritmos de compresión de cadenas de pensamiento (Chain-of-Thought, CoT) desarrollado para el subnet SOMA de Bittensor (subnet 114). No se trata de un modelo de lenguaje, sino de un conjunto de 15 estrategias de compresión de contexto diseñadas para reducir el número de tokens que los agentes de IA envían al modelo, recortando así el coste de inferencia sin degradar la calidad de las respuestas. El autor, XXMiner, lo publicó en Hugging Face el 16 de agosto de 2026 con licencia MIT.
 
 El paquete incluye compresores especializados con distintos perfiles de compresión: desde una reducción del 99,04% orientada a velocidad hasta compresores que preservan información crítica de depuración (83,33%) o que mantienen conversaciones completas (modo preservación). Según la model card, la evaluación sobre 5 tareas de ejemplo (275.835 caracteres) muestra un ahorro de hasta 68.295 tokens con el compresor de máximo rendimiento. El proyecto se enmarca en la competición de compresión de CoT de SOMA, que busca reducir el coste de los agentes que usan herramientas, inspeccionan repositorios o ejecutan comandos.
 
@@ -96,7 +96,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/XXMiner/soma-cot-compression
+- Repositorio Hugging Face: https://huggingface.co/XXMiner/soma-cot-compression
 - Sitio oficial de SOMA: https://thesoma.ai/
 - Documentacion de SOMA sobre MCP: https://thesoma.ai/mcp
 - Repositorio GitHub de SOMA (DendriteHQ/SOMA): https://github.com/DendriteHQ/SOMA

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-G4-Jamet-26B-A4B-MK-2 es un ajuste fino (finetune) comunitario de google/gemma-4-26B-A4B-it, publicado por el usuario Hastagaras en HuggingFace. Se trata de un modelo de 26 mil millones de parametros con arquitectura de mezcla de expertos (MoE), de la cual solo aproximadamente 4 mil millones de parametros estan activos por token, lo que permite una inferencia rapida manteniendo la capacidad de un modelo mucho mayor.
+G4-Jamet-26B-A4B-MK-2 es un ajuste fino (finetune) comunitario de google/gemma-4-26B-A4B-it, publicado por el usuario Hastagaras en Hugging Face. Se trata de un modelo de 26 mil millones de parametros con arquitectura de mezcla de expertos (MoE), de la cual solo aproximadamente 4 mil millones de parametros estan activos por token, lo que permite una inferencia rapida manteniendo la capacidad de un modelo mucho mayor.
 
-El modelo se distribuye en formato safetensors bajo licencia Apache 2.0, con un repositorio de 51,6 GB. Al ser un finetune de un modelo Google Gemma 4 con acceso restringido (gated), requiere aceptar las condiciones de uso en HuggingFace antes de poder descargarlo, heredando las restricciones de acceso del modelo base.
+El modelo se distribuye en formato safetensors bajo licencia Apache 2.0, con un repositorio de 51,6 GB. Al ser un finetune de un modelo Google Gemma 4 con acceso restringido (gated), requiere aceptar las condiciones de uso en Hugging Face antes de poder descargarlo, heredando las restricciones de acceso del modelo base.
 
 La etiqueta "not-for-all-audiences" presente en la ficha sugiere que el modelo ha sido ajustado con datos o para comportamientos no adecuados para todos los publicos, algo habitual en finetunes comunitarios orientados a roleplay o generacion creativa sin filtros. Su relevancia radica en ofrecer una alternativa abierta y ligera en coste de computo dentro del ecosistema Gemma 4, aunque la informacion publica sobre su proceso de entrenamiento y evaluacion es escasa.
 
@@ -72,13 +72,13 @@ Nota: la comparativa se basa en la categoria (MoE de ~26-30B con pocos parametro
 - El modelo lleva la etiqueta "not-for-all-audiences": puede generar contenido inapropiado y no es adecuado para entornos sensibles o publico general sin controles adicionales.
 - Al ser un finetune comunitario sin documentacion de entrenamiento, el riesgo de alucinacion y de degradacion en tareas de razonamiento respecto al modelo base es desconocido.
 - No hay benchmarks publicados, por lo que su rendimiento no puede contrastarse objetivamente frente al modelo base o competidores.
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace y posiblemente cumplir los terminos de la licencia Gemma del modelo base.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face y posiblemente cumplir los terminos de la licencia Gemma del modelo base.
 - Idiomas soportados y longitud de contexto no documentados; habria que verificarlos contra la ficha del modelo base google/gemma-4-26B-A4B-it.
 - Bajo numero de descargas (121) y likes (2) en el momento de redactar la ficha: comunidad pequena, lo que implica menos soporte, menos cuantizaciones alternativas y menos validacion empirica por parte de usuarios.
 - Para uso comercial, la licencia Apache 2.0 del finetune es permisiva, pero deben revisarse los terminos de la licencia Gemma del modelo base.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Hastagaras/G4-Jamet-26B-A4B-MK-2
+- Ficha en Hugging Face: https://huggingface.co/Hastagaras/G4-Jamet-26B-A4B-MK-2
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - No se han encontrado enlaces adicionales (papers, blogs, repos de codigo o demos) en la informacion disponible.

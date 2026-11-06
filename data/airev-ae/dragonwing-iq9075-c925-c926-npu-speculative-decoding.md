@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo / artefacto | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este paquete (Gemma 4 E2B Q4_0 + backend Hexagon) | No disponible (modelo base de 2B según nomenclatura E2B) | No disponible | 30,58 tok/s `p3553`; 57,01 tok/s media `S5` en IQ-9075 | MIT (repo); Gemma sujeta a su propia licencia | HuggingFace, repo de 0,4 GB |
+| Este paquete (Gemma 4 E2B Q4_0 + backend Hexagon) | No disponible (modelo base de 2B según nomenclatura E2B) | No disponible | 30,58 tok/s `p3553`; 57,01 tok/s media `S5` en IQ-9075 | MIT (repo); Gemma sujeta a su propia licencia | Hugging Face, repo de 0,4 GB |
 | llama.cpp upstream `b11429` | No aplica | No aplica | No disponible en esta información | MIT | Público |
 | Google Gemma 4 E2B IT original | No disponible | No disponible | No disponible | No disponible en esta información | Público |
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/airev-ae/dragonwing-iq9075-c925-c926-npu-speculative-decoding
+- Hugging Face: https://huggingface.co/airev-ae/dragonwing-iq9075-c925-c926-npu-speculative-decoding
 - Repositorio citado en la model card: https://huggingface.co/airev-ae/qualcomm-iq9075-c925-c926-llamacpp-htp-repro
 - llama.cpp upstream (build `b11429`): no disponible en la información proporcionada
 - Paper, blog o demo adicionales: no disponible en la información proporcionada

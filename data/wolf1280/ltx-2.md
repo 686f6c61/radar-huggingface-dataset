@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wolf1280/ltx-2 (este repositorio) | No disponible (posible variante de 19 000 millones) | No disponible | No publicado | ltx-2-community-license-agreement | HuggingFace, 0 descargas |
-| Lightricks/LTX-2 (upstream) | No disponible en la informacion proporcionada | No disponible | No disponible | ltx-2-community-license-agreement | HuggingFace, repositorio oficial |
+| wolf1280/ltx-2 (este repositorio) | No disponible (posible variante de 19 000 millones) | No disponible | No publicado | ltx-2-community-license-agreement | Hugging Face, 0 descargas |
+| Lightricks/LTX-2 (upstream) | No disponible en la informacion proporcionada | No disponible | No disponible | ltx-2-community-license-agreement | Hugging Face, repositorio oficial |
 | Otros modelos de video de pesos abiertos (Wan, HunyuanVideo, LTX-Video) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 La unica comparacion que puede sostenerse con el material aportado es la del repositorio frente a su upstream: este repositorio no anade pesos nuevos, sino que reorganiza los mismos ficheros para ComfyUI y les anade un LoRA de estilo y dos adaptadores sobre el text encoder. No se dispone de datos verificados de otros modelos de la misma categoria en la informacion proporcionada.

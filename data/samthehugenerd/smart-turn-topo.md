@@ -6,7 +6,7 @@ Smart-Turn-Topo es la conversión a Core ML del modelo Smart Turn v3.2 de Daily 
 
 El modelo resuelve un problema muy concreto en pipelines de voz: decidir si el usuario ha terminado de hablar o simplemente ha hecho una pausa. La entrada es un tensor `[1, 80, 800]` con características log-mel de Whisper correspondientes a los últimos 8 segundos de audio a 16 kHz, con relleno de ceros al principio. La salida es un único logit `[1, 1]` que ya incorpora la sigmoide, es decir, la probabilidad de que el turno esté completo.
 
-Su relevancia es práctica: permite ejecutar la detección de fin de turno íntegramente en el dispositivo, sin enviar audio a un servidor, con una licencia permisiva (BSD 2-Clause) y un tamaño de repositorio que ronda los 0 GB en la ficha de HuggingFace (el paquete real contiene los pesos FP16). Es una pieza de infraestructura para asistentes de voz en tiempo real, no un modelo generativo.
+Su relevancia es práctica: permite ejecutar la detección de fin de turno íntegramente en el dispositivo, sin enviar audio a un servidor, con una licencia permisiva (BSD 2-Clause) y un tamaño de repositorio que ronda los 0 GB en la ficha de Hugging Face (el paquete real contiene los pesos FP16). Es una pieza de infraestructura para asistentes de voz en tiempo real, no un modelo generativo.
 
 ## Especificaciones técnicas
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Formato | Precisión | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Smart-Turn-Topo (esta ficha) | Core ML ML Program | FP16 | 8 s | BSD 2-Clause | HuggingFace |
-| pipecat-ai/smart-turn-v3 (GPU) | ONNX | FP32 | 8 s | BSD 2-Clause | HuggingFace |
-| pipecat-ai/smart-turn-v3 (CPU) | ONNX | INT8 | 8 s | BSD 2-Clause | HuggingFace |
+| Smart-Turn-Topo (esta ficha) | Core ML ML Program | FP16 | 8 s | BSD 2-Clause | Hugging Face |
+| pipecat-ai/smart-turn-v3 (GPU) | ONNX | FP32 | 8 s | BSD 2-Clause | Hugging Face |
+| pipecat-ai/smart-turn-v3 (CPU) | ONNX | INT8 | 8 s | BSD 2-Clause | Hugging Face |
 
 Las tres variantes comparten arquitectura y pesos de origen; difieren en formato, precisión y plataforma de destino. No se dispone de información sobre otros detectores de fin de turno comparables en la documentación consultada.
 
@@ -86,7 +86,7 @@ Las tres variantes comparten arquitectura y pesos de origen; difieren en formato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samthehugenerd/Smart-Turn-Topo
+- Hugging Face: https://huggingface.co/samthehugenerd/Smart-Turn-Topo
 - Modelo base: https://huggingface.co/pipecat-ai/smart-turn-v3
 - Proyecto Topo: https://github.com/samdu/topo
 - Repositorio de experimentos y script de conversión: https://github.com/samdu/experiments

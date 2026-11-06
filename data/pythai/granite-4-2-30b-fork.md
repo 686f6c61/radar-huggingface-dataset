@@ -97,7 +97,7 @@ Frente a alternativas abiertas de tamaño comparable de otros fabricantes, no se
 
 ## Enlaces
 
-- Fork en HuggingFace: https://huggingface.co/PYTHAI/granite-4.2-30b-fork
+- Fork en Hugging Face: https://huggingface.co/PYTHAI/granite-4.2-30b-fork
 - Modelo de origen (pesos): https://huggingface.co/ibm-granite/granite-4.2-30b
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.1-30b-base
 - Colección Granite 4.2 Language Models: https://huggingface.co/collections/ibm-granite/granite-42-language-models

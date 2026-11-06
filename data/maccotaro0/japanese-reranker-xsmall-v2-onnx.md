@@ -75,7 +75,7 @@ No se dispone de información suficiente para comparar con otros modelos. La ún
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/maccotaro0/japanese-reranker-xsmall-v2-onnx
+- Hugging Face del modelo: https://huggingface.co/maccotaro0/japanese-reranker-xsmall-v2-onnx
 - Modelo original: https://huggingface.co/hotchpotch/japanese-reranker-xsmall-v2
 - Repositorio del autor (exista personal): https://github.com/exista
 - Entrada de catálogo en GitHub: https://github.com/vaibhav06062005-ctrl/ai-model-hotchpotch-japanese-reranker-xsmall-v2

@@ -81,7 +81,7 @@ La comparativa se limita a variantes del mismo checkpoint, ya que la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lwanming/stable-diffusion-v1.5-webnn
+- Modelo en Hugging Face: https://huggingface.co/lwanming/stable-diffusion-v1.5-webnn
 - Modelo original: https://huggingface.co/runwayml/stable-diffusion-v1-5
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Paper de Latent Diffusion Models: https://arxiv.org/abs/2112.10752
@@ -90,5 +90,5 @@ La comparativa se limita a variantes del mismo checkpoint, ya que la informacion
 - Paper de Imagen: https://arxiv.org/abs/2205.11487
 - Repositorio GitHub original: https://github.com/CompVis/stable-diffusion
 - Repositorio GitHub de RunwayML: https://github.com/runwayml/stable-diffusion
-- Blog de Stable Diffusion en HuggingFace: https://huggingface.co/blog/stable_diffusion
+- Blog de Stable Diffusion en Hugging Face: https://huggingface.co/blog/stable_diffusion
 - Libreria Diffusers: https://github.com/huggingface/diffusers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de pasos individuales. El modelo ha sido entrenado con la librería LeRobot de HuggingFace para el brazo robótico SO-101 (`so_follower`) y resuelve tareas de manipulación guiada por lenguaje a partir de demostraciones teleoperadas. Es un checkpoint concreto, denominado `tape-into-box`, orientado a tareas de recogida y colocación.
+Este repositorio contiene una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice secuencias cortas de acciones (chunks) en lugar de pasos individuales. El modelo ha sido entrenado con la librería LeRobot de Hugging Face para el brazo robótico SO-101 (`so_follower`) y resuelve tareas de manipulación guiada por lenguaje a partir de demostraciones teleoperadas. Es un checkpoint concreto, denominado `tape-into-box`, orientado a tareas de recogida y colocación.
 
 La política consume un vector de estado articular de 6 dimensiones y dos cámaras RGB a 480x640 (`front` y `wrist`), y produce un vector de acción de 6 dimensiones. Cuenta con 76.438.278 parámetros y un tamaño de repositorio de 0,6 GB. Se distribuye bajo licencia Apache 2.0 y en formato safetensors, integrada en el ecosistema LeRobot 0.6.1.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (ACT, tape-into-box) | ACT (imitation learning) | 76,4 M | 3 tareas pick-and-place, SO-101, 30 FPS | apache-2.0 | HuggingFace |
-| Otros checkpoints ACT en LeRobot | ACT (imitation learning) | depende del checkpoint (no disponible) | dependen del dataset | habitualmente apache-2.0 | HuggingFace |
+| Este checkpoint (ACT, tape-into-box) | ACT (imitation learning) | 76,4 M | 3 tareas pick-and-place, SO-101, 30 FPS | apache-2.0 | Hugging Face |
+| Otros checkpoints ACT en LeRobot | ACT (imitation learning) | depende del checkpoint (no disponible) | dependen del dataset | habitualmente apache-2.0 | Hugging Face |
 | Diffusion Policy | Policy de difusion (imitation learning) | no disponible | manipulacion; metodo alternativo a ACT | no disponible | repositorios academicos |
-| SmolVLA (HuggingFace) | VLA (vision-language-action) | no disponible | control guiado por lenguaje, mas generalista | no disponible | HuggingFace |
+| SmolVLA (Hugging Face) | VLA (vision-language-action) | no disponible | control guiado por lenguaje, mas generalista | no disponible | Hugging Face |
 
 La comparación cuantitativa de rendimiento no es posible: ni este checkpoint ni los alternativos publican tasas de éxito comparables en la información disponible. La diferencia principal es de planteamiento: ACT es un método específico por tarea entrenado por imitación, mientras que los enfoques VLA buscan generalización guiada por lenguaje a costa de más parámetros.
 
@@ -90,10 +90,10 @@ La comparación cuantitativa de rendimiento no es posible: ni este checkpoint ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khanhnd61/act-matched_so101-multi-task-clean_tape-into-box
+- Modelo en Hugging Face: https://huggingface.co/khanhnd61/act-matched_so101-multi-task-clean_tape-into-box
 - Dataset de entrenamiento: https://huggingface.co/datasets/khanhnd61/so101-multi-task-clean
 - Paper de ACT: https://arxiv.org/abs/2304.13705
-- Paper de ACT en HuggingFace: https://huggingface.co/papers/2304.13705
+- Paper de ACT en Hugging Face: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

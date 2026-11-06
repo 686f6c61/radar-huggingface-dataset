@@ -74,7 +74,7 @@ La comparativa se basa en el modelo base, ya que el fine-tuning no aporta datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JOJO996/qwen3-14b-openr1-colab-a100-pilot
+- Repositorio Hugging Face: https://huggingface.co/JOJO996/qwen3-14b-openr1-colab-a100-pilot
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Reporte técnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

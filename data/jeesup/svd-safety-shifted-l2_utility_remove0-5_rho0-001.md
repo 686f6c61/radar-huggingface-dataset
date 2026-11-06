@@ -82,6 +82,6 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 ## Enlaces
 
-- [HuggingFace: Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.001](https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.001)
+- [Hugging Face: Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.001](https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.001)
 - [Modelo base: meta-llama/Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

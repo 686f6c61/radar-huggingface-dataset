@@ -71,7 +71,7 @@ No se dispone de información comparable de otros adaptadores de honestidad sobr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kibiddd/CAT-Qwen-v2
+- Hugging Face: https://huggingface.co/kibiddd/CAT-Qwen-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Perfil del autor: https://huggingface.co/kibiddd
 - Página oficial de Qwen: https://qwen.ai/home

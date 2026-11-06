@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fountaii/router es un repositorio publicado en HuggingFace por el usuario fountaii el 5 de octubre de 2026 y actualizado el mismo dia. Se distribuye bajo licencia MIT y su unico formato de pesos declarado es ONNX, con un tamano de repositorio de 2,8 GB. No dispone de pipeline declarado, no tiene idiomas etiquetados y acumula 0 descargas y 0 likes en el momento de la consulta.
+fountaii/router es un repositorio publicado en Hugging Face por el usuario fountaii el 5 de octubre de 2026 y actualizado el mismo dia. Se distribuye bajo licencia MIT y su unico formato de pesos declarado es ONNX, con un tamano de repositorio de 2,8 GB. No dispone de pipeline declarado, no tiene idiomas etiquetados y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 La model card publicada por el autor no contiene mas informacion que la declaracion de licencia (`license: mit`). No se documentan arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, proceso de alineacion ni resultados de evaluacion. Esta ausencia de documentacion es el dato mas relevante de la ficha: cualquier evaluacion funcional del modelo requiere inspeccionar directamente los ficheros ONNX del repositorio.
 
@@ -82,5 +82,5 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, param
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fountaii/router
+- Modelo en Hugging Face: https://huggingface.co/fountaii/router
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

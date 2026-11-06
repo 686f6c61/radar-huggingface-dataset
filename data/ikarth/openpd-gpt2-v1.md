@@ -2,7 +2,7 @@
 
 ## Resumen
 
-openpd-gpt2-v1 es un modelo de generacion de texto desarrollado por el usuario ikarth (HuggingFace) que replica la arquitectura de GPT-2 small (124M parametros) pero entrenado desde cero exclusivamente con datos de dominio publico y CC0. El objetivo es demostrar que es posible entrenar un modelo de lenguaje funcional sin recurrir a texto con copyright o de procedencia dudosa, manteniendo trazabilidad completa del dataset utilizado. El modelo se entrena sobre 8.800 millones de tokens de un unico epoch del dataset `openpd-strict-v1`, compuesto por fuentes como Project Gutenberg, libros anteriores a 1929 de Internet Archive, Library of Congress, Caselaw Access Project, arXiv, PubMed Central y publicaciones gubernamentales de EE. UU.
+openpd-gpt2-v1 es un modelo de generacion de texto desarrollado por el usuario ikarth (Hugging Face) que replica la arquitectura de GPT-2 small (124M parametros) pero entrenado desde cero exclusivamente con datos de dominio publico y CC0. El objetivo es demostrar que es posible entrenar un modelo de lenguaje funcional sin recurrir a texto con copyright o de procedencia dudosa, manteniendo trazabilidad completa del dataset utilizado. El modelo se entrena sobre 8.800 millones de tokens de un unico epoch del dataset `openpd-strict-v1`, compuesto por fuentes como Project Gutenberg, libros anteriores a 1929 de Internet Archive, Library of Congress, Caselaw Access Project, arXiv, PubMed Central y publicaciones gubernamentales de EE. UU.
 
 La arquitectura es un transformer decoder-only de 12 capas, 12 cabezas de atencion, dimension 768 y contexto de 1.024 tokens, con embeddings atados. El codigo se basa en la linea de nanoGPT de Karpathy y mantiene la estructura original de GPT-2 small con ajustes menores. El modelo es un base model sin instruction tuning ni safety tuning, orientado a generacion de prosa con estilo de epoca (pre-1930) y con conocimiento limitado del mundo contemporaneo.
 
@@ -48,7 +48,7 @@ El entrenamiento se realizo sobre 8.800 millones de tokens (un epoch completo de
 - Generacion de prosa historica y literaria: el modelo produce texto con registro y vocabulario de principios del siglo XX, adecuado para experimentos creativos, prototipos de narrativa de epoca o simulacion de documentos historicos.
 - Investigacion sobre procedencia de datos: sirve como referencia reproducible para estudiar el impacto de entrenar exclusivamente con datos de dominio publico, con dataset y huella verificables.
 - Educacion y docencia: modelo ligero (124M) que cabe en hardware modesto y permite demostrar el ciclo completo de entrenamiento e inferencia de un transformer desde cero.
-- Inferencia en navegador: la version ONNX 8-bit permite desplegar demos interactivas en el cliente con transformers.js sin backend, util para espacios de HuggingFace y prototipos web.
+- Inferencia en navegador: la version ONNX 8-bit permite desplegar demos interactivas en el cliente con transformers.js sin backend, util para espacios de Hugging Face y prototipos web.
 - Generacion de texto aumentada con recuperacion (RAG) sobre corpus historicos: al combinarse con un retriever sobre textos pre-1930, puede redactar resumenes o continuaciones coherentes con el estilo de las fuentes.
 - Experimentos de perplexity y evaluacion de dominio: util como baseline para medir deriva de dominio entre texto historico y contemporaneo (perplexity 17,4 en prosa de 1930 frente a 28,8 de GPT-2 original).
 - Prototipado de pipelines de generacion de bajo coste: al ser un modelo pequeno y con licencia CC0, se puede integrar en pruebas de CI/CD de sistemas de generacion sin restricciones de licencia.
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque de datos | Disponibilidad |
 |---|---|---|---|---|---|
-| openpd-gpt2-v1 | 124M | 1.024 | CC0-1.0 | Solo dominio publico y CC0 verificado | HuggingFace, ONNX, transformers.js |
-| GPT-2 small (OpenAI) | 124M | 1.024 | MIT (pesos publicados) | WebText (no verificado) | HuggingFace, multiples runtimes |
-| openpd-gpt2-v0 (ikarth) | 124M | 1.024 | CC0-1.0 | Dominio publico + Ubuntu IRC (2,5B tokens) | HuggingFace |
-| Modelos tipo Pythia-160M (EleutherAI) | 160M | 2.048 | Apache 2.0 | The Pile (mixto, con copyright) | HuggingFace |
+| openpd-gpt2-v1 | 124M | 1.024 | CC0-1.0 | Solo dominio publico y CC0 verificado | Hugging Face, ONNX, transformers.js |
+| GPT-2 small (OpenAI) | 124M | 1.024 | MIT (pesos publicados) | WebText (no verificado) | Hugging Face, multiples runtimes |
+| openpd-gpt2-v0 (ikarth) | 124M | 1.024 | CC0-1.0 | Dominio publico + Ubuntu IRC (2,5B tokens) | Hugging Face |
+| Modelos tipo Pythia-160M (EleutherAI) | 160M | 2.048 | Apache 2.0 | The Pile (mixto, con copyright) | Hugging Face |
 
 La comparativa se limita a modelos de la misma escala (aproximadamente 100-200M parametros). No se dispone de datos de benchmarks comparativos estandar en la informacion proporcionada; la unica metrica publicada es la perplexity frente a GPT-2 original.
 
@@ -98,7 +98,7 @@ La comparativa se limita a modelos de la misma escala (aproximadamente 100-200M 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikarth/openpd-gpt2-v1
+- Modelo en Hugging Face: https://huggingface.co/ikarth/openpd-gpt2-v1
 - Version anterior v0: https://huggingface.co/ikarth/openpd-gpt2-v0
 - Dataset de entrenamiento: https://huggingface.co/datasets/ikarth/openpd-strict-v1
 - Demo en navegador (transformers.js): https://huggingface.co/spaces/ikarth/openpd-gpt2

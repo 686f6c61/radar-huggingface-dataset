@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8-macos
+- Repositorio Hugging Face: https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8-macos
 - Repositorio fuente (mismo nombre sin sufijo -macos): https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8
 - Coleccion de modelos NLLB de aoiandroid: https://huggingface.co/collections/aoiandroid/nllb
 - Repositorio de referencia NLLB-200 (GitHub): https://github.com/JHmins/NLLB-200-Model

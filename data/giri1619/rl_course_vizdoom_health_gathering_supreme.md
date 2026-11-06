@@ -76,9 +76,9 @@ No se dispone de información sobre modelos comparables en la búsqueda web ni e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/giri1619/rl_course_vizdoom_health_gathering_supreme
+- Hugging Face: https://huggingface.co/giri1619/rl_course_vizdoom_health_gathering_supreme
 - Repositorio Sample-Factory: https://github.com/alex-petrenko/sample-factory
 - Documentación de Sample-Factory: https://www.samplefactory.dev/
-- Repositorio similar en HuggingFace: https://huggingface.co/Aris1129/rl_course_vizdoom_health_gathering_supreme
-- Repositorio similar en HuggingFace: https://huggingface.co/hugging-robot/rl_course_vizdoom_health_gathering_supreme
+- Repositorio similar en Hugging Face: https://huggingface.co/Aris1129/rl_course_vizdoom_health_gathering_supreme
+- Repositorio similar en Hugging Face: https://huggingface.co/hugging-robot/rl_course_vizdoom_health_gathering_supreme
 - GitHub con el mismo modelo: https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-

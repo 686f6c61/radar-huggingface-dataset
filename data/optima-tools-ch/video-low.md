@@ -4,7 +4,7 @@
 
 `optima-tools-ch/video-low` es un paquete de pesos redistribuido por Optima Tools que contiene una copia fiel del modelo de generacion de video Lightricks LTX-2.5, en su variante destilada y cuantizada a INT8 para su uso en ComfyUI. No se trata de un modelo nuevo ni de un fine-tune: los seis archivos safetensors son identicos byte a byte (mismos tamanos y mismos SHA-256) a los publicados por Lightricks en la revision `49b093a39c19169a8a81721dcc541e07e945232f`, y el propio autor lo declara explicitamente. La unica diferencia respecto al repositorio `video-medium` del mismo autor son los ajustes de generacion preconfigurados (perfil "Rapido", formato SD, 4 segundos), no los pesos.
 
-El modelo subyacente es LTX-2.5, un sistema text-to-video e image-to-video de Lightricks con un transformer de difusion de 22 000 millones de parametros en version destilada, acompanado de un text encoder Gemma 4 de 12 000 millones de parametros adaptado con proyeccion, dos VAE (video y audio) y un upscaler latente espacial x2. El pipeline declarado en HuggingFace es image-to-video, aunque las etiquetas del autor incluyen tambien text-to-video.
+El modelo subyacente es LTX-2.5, un sistema text-to-video e image-to-video de Lightricks con un transformer de difusion de 22 000 millones de parametros en version destilada, acompanado de un text encoder Gemma 4 de 12 000 millones de parametros adaptado con proyeccion, dos VAE (video y audio) y un upscaler latente espacial x2. El pipeline declarado en Hugging Face es image-to-video, aunque las etiquetas del autor incluyen tambien text-to-video.
 
 Su relevancia practica es acotada: el repositorio tiene cero descargas y cero likes en el momento de la consulta, el autor advierte que el paquete no ha sido probado en Optima Tools desde este repositorio y la licencia LTX-2.x Community License Agreement impone restricciones comerciales relevantes. Es util como espejo verificado de los pesos oficiales para flujos de trabajo en ComfyUI, no como una alternativa tecnica a LTX-2.5.
 
@@ -41,7 +41,7 @@ El paquete incluye la variante destilada (`distilled`) del transformer, pensada 
 ## Capacidades
 
 - Generacion de video a partir de texto (text-to-video), segun las etiquetas del autor.
-- Generacion de video a partir de una imagen de referencia (image-to-video), pipeline declarado en HuggingFace.
+- Generacion de video a partir de una imagen de referencia (image-to-video), pipeline declarado en Hugging Face.
 - Generacion de audio asociado al video, mediante el VAE de audio incluido en el paquete.
 - Escalado espacial x2 en espacio latente mediante el upscaler dedicado.
 - Control de duracion de la secuencia mediante el `duration-head`.
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto / duracion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `optima-tools-ch/video-low` | 22B (difusion) + 12B (text encoder) | no disponible; perfil por defecto 4 s | safetensors INT8/BF16 | LTX-2.x Community License | HuggingFace, 0 descargas |
-| `optima-tools-ch/video-medium` | Identicos (mismos SHA-256) | no disponible; perfil distinto | safetensors INT8/BF16 | LTX-2.x Community License | HuggingFace |
-| `Lightricks/LTX-2.5` | 22B (difusion) + 12B (text encoder) | no disponible | safetensors (precision original) | LTX-2.x Community License | HuggingFace (repositorio oficial) |
+| `optima-tools-ch/video-low` | 22B (difusion) + 12B (text encoder) | no disponible; perfil por defecto 4 s | safetensors INT8/BF16 | LTX-2.x Community License | Hugging Face, 0 descargas |
+| `optima-tools-ch/video-medium` | Identicos (mismos SHA-256) | no disponible; perfil distinto | safetensors INT8/BF16 | LTX-2.x Community License | Hugging Face |
+| `Lightricks/LTX-2.5` | 22B (difusion) + 12B (text encoder) | no disponible | safetensors (precision original) | LTX-2.x Community License | Hugging Face (repositorio oficial) |
 
 La comparacion con alternativas de otros fabricantes (por ejemplo, modelos de video de otras familias) no esta disponible en la informacion proporcionada. Respecto a `video-medium`, la unica diferencia documentada son los ajustes de generacion, no los pesos; respecto al repositorio oficial de Lightricks, la diferencia es la cuantizacion INT8 y el empaquetado para ComfyUI.
 
@@ -96,7 +96,7 @@ La comparacion con alternativas de otros fabricantes (por ejemplo, modelos de vi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/optima-tools-ch/video-low
+- Repositorio Hugging Face: https://huggingface.co/optima-tools-ch/video-low
 - Repositorio del modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Revision concreta de origen: https://huggingface.co/Lightricks/LTX-2.5/tree/49b093a39c19169a8a81721dcc541e07e945232f
 - Texto de la licencia LTX-2.x: https://github.com/Lightricks/LTX-2/blob/a95ab856bf29407b6b066ede0abe1846050db56c/LICENSE-2_x

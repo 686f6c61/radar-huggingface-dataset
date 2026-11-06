@@ -88,7 +88,7 @@ No se dispone de información comparativa con otros modelos de robótica o VLA e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIGeeksGroup/GeneralVLA-2
+- Hugging Face: https://huggingface.co/AIGeeksGroup/GeneralVLA-2
 - Código (GitHub): https://github.com/AIGeeksGroup/GeneralVLA-2
 - Página del proyecto: https://aigeeksgroup.github.io/GeneralVLA-2/
 - Artículo (arXiv): https://arxiv.org/abs/2606.17480

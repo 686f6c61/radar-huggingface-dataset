@@ -17,7 +17,7 @@ La relevancia de este adaptador radica en que el ewe es un idioma de bajos recur
 | Tipos de cuantizacion | no disponible (el adaptador se publica en safetensors) |
 | Idiomas soportados | ewe (principal), herencia multilingue del modelo base (200 idiomas) |
 | Licencia | no disponible (el modelo base usa licencia CC-BY-NC 4.0) |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,16 +58,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ad
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cheriftenga/nllb-200-distilled-600M-ewe-lora-v2 | ~600M + LoRA | 512 tokens | ewe (principal) | no disponible | HuggingFace (repo vacio) |
-| facebook/nllb-200-distilled-600M | 600M | 512 tokens | 200 | CC-BY-NC 4.0 | HuggingFace |
-| facebook/nllb-200-distilled-1.3B | 1.3B | 512 tokens | 200 | CC-BY-NC 4.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-en-ewe | ~70M | 512 tokens | ewe (solo EN-EE) | CC-BY 4.0 | HuggingFace |
+| cheriftenga/nllb-200-distilled-600M-ewe-lora-v2 | ~600M + LoRA | 512 tokens | ewe (principal) | no disponible | Hugging Face (repo vacio) |
+| facebook/nllb-200-distilled-600M | 600M | 512 tokens | 200 | CC-BY-NC 4.0 | Hugging Face |
+| facebook/nllb-200-distilled-1.3B | 1.3B | 512 tokens | 200 | CC-BY-NC 4.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-en-ewe | ~70M | 512 tokens | ewe (solo EN-EE) | CC-BY 4.0 | Hugging Face |
 
 La comparativa muestra que el adaptador LoRA se situa entre el modelo base sin adaptar y un modelo dedicado de la familia OPUS. El adaptador podria ofrecer mejor calidad que el OPUS para ewe gracias al mayor tamano del modelo base, pero la falta de datos publicos impide confirmarlo. El modelo OPUS es mas ligero y tiene licencia permisiva, mientras que el NLLB-200 base tiene restricciones de uso no comercial.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace muestra un tamano de 0.0 GB y 0 descargas, lo que sugiere que los pesos del adaptador podrian no estar realmente publicados o el repositorio esta vacio. Verificar antes de intentar descargar.
+- El repositorio de Hugging Face muestra un tamano de 0.0 GB y 0 descargas, lo que sugiere que los pesos del adaptador podrian no estar realmente publicados o el repositorio esta vacio. Verificar antes de intentar descargar.
 - No hay informacion sobre la licencia del adaptador; el modelo base usa CC-BY-NC 4.0, que prohibe uso comercial. El adaptador podria heredar esta restriccion o tener una licencia propia no declarada.
 - La model card no contiene detalles de entrenamiento, datos utilizados ni evaluacion. Es imposible conocer la calidad real de la traduccion al ewe sin pruebas independientes.
 - El modelo base tiene una ventana de contexto limitada a 512 tokens, lo que dificulta la traduccion de documentos largos sin segmentacion previa.

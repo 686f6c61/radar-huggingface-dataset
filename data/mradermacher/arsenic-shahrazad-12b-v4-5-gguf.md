@@ -4,7 +4,7 @@
 
 Arsenic-Shahrazad-12B-v4.5-GGUF es una versión cuantizada en formato GGUF del modelo original Arsenic-Shahrazad-12B-v4.5, desarrollado por Lambent y convertido por mradermacher. Se trata de un modelo de 12 mil millones de parámetros orientado a conversación, con un enfoque narrativo y de rol (el nombre sugiere una temática de cuentos y narración). Esta ficha se centra en la variante GGUF, que permite su ejecución en hardware de consumo mediante llama.cpp, Ollama u otros motores compatibles.
 
-La relevancia de esta versión radica en que ofrece múltiples cuantizaciones (desde Q2_K hasta F16) que permiten ajustar el equilibrio entre calidad y requisitos de memoria según el hardware disponible. Sin embargo, la información pública sobre el modelo base es muy limitada: no se especifican arquitectura, datos de entrenamiento ni licencia en la ficha de HuggingFace. Los resultados de búsqueda indican que existen versiones anteriores (v4.1, v4.3.1, v4.4.2) y una variante con RLVR, lo que sugiere un desarrollo iterativo, pero no se han publicado detalles técnicos sustanciales.
+La relevancia de esta versión radica en que ofrece múltiples cuantizaciones (desde Q2_K hasta F16) que permiten ajustar el equilibrio entre calidad y requisitos de memoria según el hardware disponible. Sin embargo, la información pública sobre el modelo base es muy limitada: no se especifican arquitectura, datos de entrenamiento ni licencia en la ficha de Hugging Face. Los resultados de búsqueda indican que existen versiones anteriores (v4.1, v4.3.1, v4.4.2) y una variante con RLVR, lo que sugiere un desarrollo iterativo, pero no se han publicado detalles técnicos sustanciales.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de esta versión radica en que ofrece múltiples cuantizaciones (d
 
 No se dispone de informacion publica sobre la arquitectura interna del modelo original Arsenic-Shahrazad-12B-v4.5. Dado el tamaño de 12B, es probable que se trate de un transformer denso similar a otras familias de modelos de esa escala, pero no hay confirmacion. Tampoco se conocen los datos de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas como RLHF o DPO. La version GGUF es una conversion de los pesos originales a formato cuantizado, realizada por mradermacher, que no altera la arquitectura subyacente.
 
-La unica informacion tecnica disponible proviene de los comentarios de la model card: se indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere que la conversion se realizo a partir de pesos en formato HuggingFace y que se aplico cuantizacion a los tensores de salida. No se menciona ninguna innovacion arquitectonica especifica.
+La unica informacion tecnica disponible proviene de los comentarios de la model card: se indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere que la conversion se realizo a partir de pesos en formato Hugging Face y que se aplico cuantizacion a los tensores de salida. No se menciona ninguna innovacion arquitectonica especifica.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio de HuggingFace de la version GGUF: https://huggingface.co/mradermacher/Arsenic-Shahrazad-12B-v4.5-GGUF
+- Repositorio de Hugging Face de la version GGUF: https://huggingface.co/mradermacher/Arsenic-Shahrazad-12B-v4.5-GGUF
 - Modelo original (Lambent): https://huggingface.co/Lambent/Arsenic-Shahrazad-12B-v4.5 (no verificado en la busqueda)
 - Version anterior v4.1: https://huggingface.co/mradermacher/Arsenic-Shahrazad-12B-v4.1-GGUF
 - Version rlvr: https://huggingface.co/mradermacher/Arsenic-Shahrazad-12B-rlvr-GGUF

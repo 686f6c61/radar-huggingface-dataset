@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento ni de contexto de este checkpoint, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-021
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-021
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo, al run `261016_medicine_static_pilot` ni al autor HYU-NLP-EVAL. Los resultados devueltos corresponden a entidades no relacionadas (sitios de automocion y plataformas de streaming) y se descartan por no ser pertinentes.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

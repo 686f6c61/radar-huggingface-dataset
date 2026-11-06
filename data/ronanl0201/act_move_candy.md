@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_move_candy` es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), publicado por Zhao et al. en el artículo arXiv:2304.13705. La desarrolla el usuario ronanl0201 y se distribuye a través del ecosistema LeRobot de HuggingFace. El modelo resuelve una tarea muy concreta: controlar un brazo robótico `so_follower` (configuración típica de SO-100/SO-101) para pulsar la tecla Intro, a partir de dos cámaras (muñeca y frontal) y el estado articular de 6 dimensiones.
+`act_move_candy` es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), publicado por Zhao et al. en el artículo arXiv:2304.13705. La desarrolla el usuario ronanl0201 y se distribuye a través del ecosistema LeRobot de Hugging Face. El modelo resuelve una tarea muy concreta: controlar un brazo robótico `so_follower` (configuración típica de SO-100/SO-101) para pulsar la tecla Intro, a partir de dos cámaras (muñeca y frontal) y el estado articular de 6 dimensiones.
 
 A diferencia de un LLM, no es un modelo de lenguaje: es un transformer pequeño (51.668.614 parámetros, unos 0,2 GB en safetensors) que mapea observaciones visuales y propioceptivas a trozos de acción (*action chunks*) de 6 dimensiones. Su relevancia es la de un ejemplo reproducible de *imitation learning* de extremo a extremo con LeRobot 0.6.2, útil para quien quiera replicar el flujo de captura de datos, entrenamiento y despliegue en un robot de bajo coste.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_move_candy (este) | 51,7 M | Pulsar Intro con `so_follower` | no aplica | no disponible | HuggingFace (LeRobot) |
+| act_move_candy (este) | 51,7 M | Pulsar Intro con `so_follower` | no aplica | no disponible | Hugging Face (LeRobot) |
 | ACT original (Zhao et al., 2023) | no disponible | Manipulación genérica (ALOHA) | no aplica | no disponible | Paper + código |
 | Diffusion Policy (Chi et al., 2023) | no disponible | Manipulación por difusión | no aplica | no disponible | Paper + código |
-| Otras políticas LeRobot (p. ej. SmolVLA) | no disponible | Manipulación generalista | no disponible | no disponible | HuggingFace (LeRobot) |
+| Otras políticas LeRobot (p. ej. SmolVLA) | no disponible | Manipulación generalista | no disponible | no disponible | Hugging Face (LeRobot) |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ronanl0201/act_move_candy
+- Modelo en Hugging Face: https://huggingface.co/ronanl0201/act_move_candy
 - Dataset de entrenamiento: https://huggingface.co/datasets/ronanl0201/press_enter_20261102_050020
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ronanl0201/press_enter_20261102_050020
 - Paper ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705

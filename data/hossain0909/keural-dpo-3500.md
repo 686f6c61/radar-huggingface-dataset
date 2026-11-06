@@ -78,7 +78,7 @@ Keural se distingue por ser el único del grupo entrenado desde cero con foco pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/keural-dpo-3500
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/keural-dpo-3500
 - Modelo base (SFT): https://huggingface.co/mkd-hossain/keural-sft-18k (referenciado en la model card; no disponible verificación directa del enlace)
 - Dataset SFT: https://huggingface.co/datasets/mkd-chanwoo/keural-SFT (referenciado en la model card)
 - Paper, blog o demos: no disponibles

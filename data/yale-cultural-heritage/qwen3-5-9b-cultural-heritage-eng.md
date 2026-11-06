@@ -93,10 +93,10 @@ Según la model card, las diferencias inferiores a 0,02 CER están dentro del ru
 
 | Modelo | Parámetros | Contexto | CER (misma evaluación) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-cultural-heritage-eng (este) | 9,4 B | no disponible | 0,1099 | Apache 2.0 | HuggingFace |
-| LightOnOCR-3-4B-cultural-heritage-eng | no disponible | no disponible | 0,0770 | no disponible | HuggingFace |
-| Qwen3.5-4B-cultural-heritage-eng | no disponible | no disponible | 0,1047 | no disponible | HuggingFace |
-| chandra-ocr-2-cultural-heritage-eng | no disponible | no disponible | 0,1101 | no disponible | HuggingFace |
+| Qwen3.5-9B-cultural-heritage-eng (este) | 9,4 B | no disponible | 0,1099 | Apache 2.0 | Hugging Face |
+| LightOnOCR-3-4B-cultural-heritage-eng | no disponible | no disponible | 0,0770 | no disponible | Hugging Face |
+| Qwen3.5-4B-cultural-heritage-eng | no disponible | no disponible | 0,1047 | no disponible | Hugging Face |
+| chandra-ocr-2-cultural-heritage-eng | no disponible | no disponible | 0,1101 | no disponible | Hugging Face |
 
 El modelo mejor valorado del mismo proyecto es LightOnOCR-3-4B-cultural-heritage-eng, con CER 0,0770 y recall de líneas 0,607, mientras que este Qwen3.5-9B obtiene la mejor recall de líneas (0,616) entre los siete mejores pese a un CER ligeramente superior. Los modelos más pequeños (Qwen3.5-4B y Qwen3.5-2B) quedan dentro del ruido de ejecución y son más baratos de desplegar.
 
@@ -113,7 +113,7 @@ El modelo mejor valorado del mismo proyecto es LightOnOCR-3-4B-cultural-heritage
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yale-cultural-heritage/Qwen3.5-9B-cultural-heritage-eng
+- Modelo en Hugging Face: https://huggingface.co/yale-cultural-heritage/Qwen3.5-9B-cultural-heritage-eng
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/yale-cultural-heritage/ai-project-transcriptions
 - Mejor modelo del proyecto: https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-4B-cultural-heritage-eng

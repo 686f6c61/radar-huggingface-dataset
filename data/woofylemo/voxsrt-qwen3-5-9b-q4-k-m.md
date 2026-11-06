@@ -48,7 +48,7 @@ Este repositorio concreto no anade ninguna innovacion tecnica: es una conversion
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks especificos para esta cuantizacion Q4_K_M en la informacion disponible. El modelo base Qwen3.5-9B tiene benchmarks publicados en su pagina de HuggingFace (razonamiento, codigo, agentes y comprension visual), pero no se incluyen en este repositorio. Se recomienda consultar la documentacion oficial de Qwen para obtener datos comparativos.
+No se han publicado resultados de benchmarks especificos para esta cuantizacion Q4_K_M en la informacion disponible. El modelo base Qwen3.5-9B tiene benchmarks publicados en su pagina de Hugging Face (razonamiento, codigo, agentes y comprension visual), pero no se incluyen en este repositorio. Se recomienda consultar la documentacion oficial de Qwen para obtener datos comparativos.
 
 ## Requisitos de hardware
 
@@ -79,7 +79,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WoofyLemo/VoxSRT-qwen3.5-9b-q4-k-m
+- Repositorio Hugging Face: https://huggingface.co/WoofyLemo/VoxSRT-qwen3.5-9b-q4-k-m
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Cuantizacion alternativa de unsloth: https://huggingface.co/unsloth/Qwen3.5-9B-GGUF
 - Pagina de Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:9b

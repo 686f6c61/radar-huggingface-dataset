@@ -97,7 +97,7 @@ No se han documentado alternativas de terceros en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Imagineer13/H3-Anti-Burn-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Imagineer13/H3-Anti-Burn-LoRA
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Checkpoints de ComfyUI: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Código de entrenamiento, configs, nodo grabador y script de puntuación: https://github.com/TryingSomeStuff13/ai-toolkit/tree/h3-antiburn/extensions_built_in/diffusion_models/minimax_h3/antiburn (rama `h3-antiburn`)

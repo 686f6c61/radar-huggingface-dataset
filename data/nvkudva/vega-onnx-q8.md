@@ -68,10 +68,10 @@ No se dispone de modelos directamente comparables en la información proporciona
 | Versión | Parámetros | Tamaño | Argmax | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | fp32 cortado | ~0,814B | 2745 MB | 30/30 | Apache 2.0 | No publicado como artefacto independiente |
-| 8-bit (este modelo) | ~0,814B | 842 MB | 30/30 | Apache 2.0 | HuggingFace (nvkudva/vega-onnx-q8) |
+| 8-bit (este modelo) | ~0,814B | 842 MB | 30/30 | Apache 2.0 | Hugging Face (nvkudva/vega-onnx-q8) |
 | 4-bit (rechazado) | ~0,814B | 497 MB | 27/30 | Apache 2.0 | No publicado (rechazado por pérdida de precisión) |
 
-El modelo base nandakishorm/vega-08b-public-intents está disponible en HuggingFace, pero no se han publicado sus métricas completas ni una comparativa con otros clasificadores.
+El modelo base nandakishorm/vega-08b-public-intents está disponible en Hugging Face, pero no se han publicado sus métricas completas ni una comparativa con otros clasificadores.
 
 ## Limitaciones y advertencias
 - No es un modelo generativo: no puede producir texto libre, mantener conversaciones ni realizar razonamiento multi-paso. Su uso se limita a clasificación y decisión tipadas.
@@ -85,7 +85,7 @@ El modelo base nandakishorm/vega-08b-public-intents está disponible en HuggingF
 - La ventana de contexto máxima no está especificada; las pruebas se limitan a estados de hasta 6k tokens.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/nvkudva/vega-onnx-q8
+- Modelo en Hugging Face: https://huggingface.co/nvkudva/vega-onnx-q8
 - Modelo base: https://huggingface.co/nandakishorm/vega-08b-public-intents
 - Backbone original: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Exportación a 8 bits del backbone: https://huggingface.co/onnx-community/Qwen3.5-0.8B-Text-ONNX

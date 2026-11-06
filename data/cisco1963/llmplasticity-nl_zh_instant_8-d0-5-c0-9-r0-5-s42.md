@@ -1,7 +1,7 @@
 # Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42
 
 ## Resumen
-El modelo Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42 es un checkpoint de 122.706.432 parametros (aproximadamente 0,12 mil millones) con arquitectura gpt2, publicado por el usuario Cisco1963 en HuggingFace. El identificador del repositorio sugiere un experimento de plasticidad de modelos de lenguaje (llmplasticity) sobre el par de idiomas neerlandes-chino (nl_zh), con una configuracion concreta de hiperparametros codificada en el nombre (d0.5, c0.9, r0.5) y semilla fija 42. Los pesos se distribuyen en formato safetensors con tipo de tensor F32.
+El modelo Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42 es un checkpoint de 122.706.432 parametros (aproximadamente 0,12 mil millones) con arquitectura gpt2, publicado por el usuario Cisco1963 en Hugging Face. El identificador del repositorio sugiere un experimento de plasticidad de modelos de lenguaje (llmplasticity) sobre el par de idiomas neerlandes-chino (nl_zh), con una configuracion concreta de hiperparametros codificada en el nombre (d0.5, c0.9, r0.5) y semilla fija 42. Los pesos se distribuyen en formato safetensors con tipo de tensor F32.
 
 Se trata de un modelo de investigacion de escala muy reducida y sin model card publicada. No hay informacion oficial sobre datos de entrenamiento, proceso de ajuste, licencia, idiomas o pipeline de inferencia. Su relevancia es por tanto acotada al ambito experimental: sirve como artefacto reproducible de un estudio sobre transferencia o plasticidad entre idiomas, no como modelo de proposito general listo para produccion.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42 | 122,7 M | no disponible | no disponible | HuggingFace (safetensors, F32) |
-| GPT-2 (variante small, OpenAI) | 124 M | 1024 tokens | MIT | Amplia (HuggingFace, multiples mirrors) |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (segun distribucion) | Amplia (HuggingFace) |
-| GPT-2 medium | 355 M | 1024 tokens | MIT | Amplia (HuggingFace) |
+| Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42 | 122,7 M | no disponible | no disponible | Hugging Face (safetensors, F32) |
+| GPT-2 (variante small, OpenAI) | 124 M | 1024 tokens | MIT | Amplia (Hugging Face, multiples mirrors) |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (segun distribucion) | Amplia (Hugging Face) |
+| GPT-2 medium | 355 M | 1024 tokens | MIT | Amplia (Hugging Face) |
 
 La comparacion con GPT-2 se basa unicamente en el conteo de parametros coincidente y en la etiqueta de arquitectura gpt2 presente en el repositorio. No se dispone de datos de rendimiento del modelo objeto de la ficha que permitan una comparacion funcional.
 
@@ -78,7 +78,7 @@ La comparacion con GPT-2 se basa unicamente en el conteo de parametros coinciden
 - Sin soporte conocido de herramientas, agentes ni funciones; no debe integrarse en flujos que dependan de esas capacidades.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42
 - Modelo relacionado (zh_nl): https://huggingface.co/Cisco1963/llmplasticity-zh_nl_instant_8-d0.5-c0.9-r0.2-s42
 - Ficha de directorio con variante relacionada: https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-zh-instant-8-d0-5-c0-9-r0-25-s42
 - Directorio de modelos de Cisco1963: https://essamamdani.com/ai-models/company/cisco1963

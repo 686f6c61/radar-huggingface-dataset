@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hernand-ezandrew/coca-classification-ablation64` es un repositorio de HuggingFace que contiene una implementación propia y compacta de una arquitectura CoCa (Contrastive Captioners) orientada a tareas de clasificación. No es un modelo preentrenado ni ajustado: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de ablación, y el checkpoint incluido se presenta explícitamente como una inicialización válida, no como un modelo con rendimiento medido.
+`hernand-ezandrew/coca-classification-ablation64` es un repositorio de Hugging Face que contiene una implementación propia y compacta de una arquitectura CoCa (Contrastive Captioners) orientada a tareas de clasificación. No es un modelo preentrenado ni ajustado: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de ablación, y el checkpoint incluido se presenta explícitamente como una inicialización válida, no como un modelo con rendimiento medido.
 
 El dato más relevante es su escala: 24.832 parámetros totales, según el recuento de los ficheros `safetensors`. Se trata, por tanto, de un artefacto de tamaño insignificante (menos de 0,1 GB en el repositorio), sin resultados de benchmarks publicados y sin datasets de entrenamiento documentados. La configuración declarada incluye atención lineal (*linear attention*), fusión por *co-attention*, activación GELU y normalización GroupNorm, con optimizador Adam y schedule polinómico como receta por defecto.
 
@@ -20,7 +20,7 @@ Su interés no está en las capacidades del modelo, que a día de hoy no pueden 
 | Idiomas soportados | no disponible (el repositorio no declara idiomas) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (checkpoint de inicializacion) |
-| Tamano del repositorio | 0,0 GB (por debajo del umbral de redondeo de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (por debajo del umbral de redondeo de Hugging Face) |
 | Activacion | GELU |
 | Normalizacion | GroupNorm |
 | Optimizador por defecto | Adam con schedule polinomico |
@@ -71,7 +71,7 @@ No existe un modelo comparable directo en el sentido habitual, porque este repos
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coca-classification-ablation64 | 24.832 | no disponible | No (solo inicializacion) | MIT | HuggingFace |
+| coca-classification-ablation64 | 24.832 | no disponible | No (solo inicializacion) | MIT | Hugging Face |
 | CoCa original (variante mayor) | ~2.100 millones (aprox., segun publicacion) | no disponible en este contexto | Si, multimodal | Investigacion, no liberado abiertamente | No publico |
 | CLIP ViT-B/32 | ~151 millones (aprox.) | 77 tokens de texto | Si, contraste imagen-texto | MIT en la version abierta de OpenAI | Publico |
 
@@ -91,6 +91,6 @@ La conclusion practica es que este repositorio no compite con CoCa ni con CLIP e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hernand-ezandrew/coca-classification-ablation64
+- Repositorio en Hugging Face: https://huggingface.co/hernand-ezandrew/coca-classification-ablation64
 - Paper de referencia de la arquitectura CoCa (referencia externa al repositorio, no incluida en la informacion proporcionada): https://arxiv.org/abs/2205.01917
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion disponible.

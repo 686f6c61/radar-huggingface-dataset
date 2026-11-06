@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SRA-RiskGate-4B (LoRA) | 4B (base) | No disponible | Risk gate de pagos con stablecoins | Apache 2.0 | HuggingFace, GGUF, Ollama |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible | Propósito general, instrucciones | Apache 2.0 | HuggingFace |
-| SRA-RiskGate-4B (fusionado) | 4B | No disponible | Risk gate de pagos con stablecoins | Apache 2.0 | HuggingFace |
+| SRA-RiskGate-4B (LoRA) | 4B (base) | No disponible | Risk gate de pagos con stablecoins | Apache 2.0 | Hugging Face, GGUF, Ollama |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible | Propósito general, instrucciones | Apache 2.0 | Hugging Face |
+| SRA-RiskGate-4B (fusionado) | 4B | No disponible | Risk gate de pagos con stablecoins | Apache 2.0 | Hugging Face |
 
 La comparativa con alternativas de la misma categoría (modelos especializados en riesgo de pagos) no está disponible en la información proporcionada. El único comparable directo documentado es el propio modelo base y la versión fusionada del mismo adaptador.
 
@@ -83,7 +83,7 @@ La comparativa con alternativas de la misma categoría (modelos especializados e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-LoRA
+- Modelo en Hugging Face: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-LoRA
 - Modelo fusionado: https://huggingface.co/sriram1983007/SRA-RiskGate-4B
 - GGUF Q4_K_M: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-Q4_K_M-GGUF
 - Dataset de benchmark: https://huggingface.co/datasets/sriram1983007/sra-stablecoin-risk-bench

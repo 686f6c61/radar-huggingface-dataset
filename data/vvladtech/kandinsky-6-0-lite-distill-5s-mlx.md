@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Resolución / duración | Audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kandinsky 6.0 Lite-distill 5s MLX | Text-to-video + audio, MLX | 256×432, 25 fotogramas (~1 s) en Smoke | Sí, sincronizado | MIT | HuggingFace, port comunitario |
-| Kandinsky 6.0 Lite-distill 5s (Diffusers) | Text-to-video + audio, PyTorch | Hasta 5 s en Baseline (según model card) | Sí, sincronizado | MIT | HuggingFace, oficial |
+| Kandinsky 6.0 Lite-distill 5s MLX | Text-to-video + audio, MLX | 256×432, 25 fotogramas (~1 s) en Smoke | Sí, sincronizado | MIT | Hugging Face, port comunitario |
+| Kandinsky 6.0 Lite-distill 5s (Diffusers) | Text-to-video + audio, PyTorch | Hasta 5 s en Baseline (según model card) | Sí, sincronizado | MIT | Hugging Face, oficial |
 | Otros modelos text-to-video de código abierto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VVladTech/Kandinsky-6.0-Lite-distill-5s-MLX
+- Hugging Face: https://huggingface.co/VVladTech/Kandinsky-6.0-Lite-distill-5s-MLX
 - Modelo base: https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-distill-5s-Diffusers
 - Repositorio del pipeline MLX: https://github.com/vladislav-vasilenko/kandinsky6-mlx
 - MLX: https://github.com/ml-explore/mlx

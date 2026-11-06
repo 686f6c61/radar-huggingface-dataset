@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vit-base-patch32-384-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace matthieulel. Se construye sobre el checkpoint `google/vit-base-patch32-384` (Vision Transformer con parches de 32x32 píxeles y resolución de entrada de 384x384) y se adapta al dataset Galaxy10 DECaLS, que contiene 17.736 imágenes de galaxias etiquetadas en 10 clases morfológicas.
+`vit-base-patch32-384-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face matthieulel. Se construye sobre el checkpoint `google/vit-base-patch32-384` (Vision Transformer con parches de 32x32 píxeles y resolución de entrada de 384x384) y se adapta al dataset Galaxy10 DECaLS, que contiene 17.736 imágenes de galaxias etiquetadas en 10 clases morfológicas.
 
 La adaptación se ha realizado mediante *head-only fine-tuning*: el backbone ViT permanece congelado (incluidas las estadísticas de sus capas de normalización) y solo se entrena una cabeza lineal de 10 salidas. El modelo forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
 
@@ -80,7 +80,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 - VRAM estimada para inferencia: en fp32, los 87,5 millones de parámetros ocupan aproximadamente 350 MB de pesos; con activaciones y overhead de runtime, el consumo típico se sitúa en torno a 1-2 GB de VRAM para batches pequeños. En fp16 el peso de los parámetros baja a unos 175 MB.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente. Funciona en A100, H100, RTX 4090, RTX 3090 y GPUs de gama media como RTX 3060 o T4.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna con 4 GB o más de VRAM; también es viable en CPU para inferencia puntual.
-- Opciones de despliegue: transformers (PyTorch) de forma nativa, tal como muestra la model card; el formato safetensors es compatible con TGI y con pipelines de HuggingFace. No se documenta soporte de GGUF ni de llama.cpp/Ollama en la información disponible.
+- Opciones de despliegue: transformers (PyTorch) de forma nativa, tal como muestra la model card; el formato safetensors es compatible con TGI y con pipelines de Hugging Face. No se documenta soporte de GGUF ni de llama.cpp/Ollama en la información disponible.
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo y la resolución de entrada (384x384, 144 tokens), se espera una latencia baja en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -109,7 +109,7 @@ El propio autor indica que este checkpoint es una de las 80 configuraciones del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-base-patch32-384-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-base-patch32-384-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/google/vit-base-patch32-384
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

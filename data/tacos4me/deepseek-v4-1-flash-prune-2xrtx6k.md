@@ -119,7 +119,7 @@ No se dispone de datos de benchmarks ni de parámetros de modelos de terceros co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tacos4me/DeepSeek-V4.1-Flash-Prune-2xRTX6K
+- Repositorio en Hugging Face: https://huggingface.co/tacos4me/DeepSeek-V4.1-Flash-Prune-2xRTX6K
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Documentación de despliegue del autor: `serve/README.md` dentro del propio repositorio (definiciones de carriles de llama-swap, variante con speculative decoding y aritmética de memoria)
 - SGLang (motor de inferencia referenciado): no se proporciona URL en la información disponible

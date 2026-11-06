@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. El mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_ministral-8b_seed42
+- Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_ministral-8b_seed42
 - Framework Tinker: https://thinkingmachines.ai/tinker/
-- Modelos similares de la misma organizacion en HuggingFace (busqueda por autor `dementor-research`)
+- Modelos similares de la misma organizacion en Hugging Face (busqueda por autor `dementor-research`)
 - Ejemplo de despliegue en FriendliAI para un modelo hermano: https://friendli.ai/models/dementor-research/dpo_gsm8k_qwen3.6-27b_as_aya-expanse-8b_seed42

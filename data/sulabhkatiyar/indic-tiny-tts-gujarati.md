@@ -103,11 +103,11 @@ La model card proporciona resultados de CER (character error rate, menor es mejo
 
 | Modelo | Parametros | Contexto | CER (FLORES-200) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| **Indic Tiny TTS: Gujarati** | 8,9 M (safetensors) / 22,5 M (card) | No disponible | 2,03 % | CC-BY-4.0 | HuggingFace |
+| **Indic Tiny TTS: Gujarati** | 8,9 M (safetensors) / 22,5 M (card) | No disponible | 2,03 % | CC-BY-4.0 | Hugging Face |
 | AI4Bharat Indic-TTS (gu.zip) | 65,6 M | No disponible | 1,66 % | No disponible | GitHub AI4Bharat |
-| ai4bharat/IndicF5 | 350,6 M | No disponible | 1,73 % | No disponible | HuggingFace |
-| ai4bharat/indic-parler-tts | 937,8 M | No disponible | 2,50 % | No disponible | HuggingFace |
-| facebook/mms-tts-guj | 29,1 M | No disponible | 4,03 % | No disponible | HuggingFace |
+| ai4bharat/IndicF5 | 350,6 M | No disponible | 1,73 % | No disponible | Hugging Face |
+| ai4bharat/indic-parler-tts | 937,8 M | No disponible | 2,50 % | No disponible | Hugging Face |
+| facebook/mms-tts-guj | 29,1 M | No disponible | 4,03 % | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -120,7 +120,7 @@ La model card proporciona resultados de CER (character error rate, menor es mejo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-gujarati)
+- [Modelo en Hugging Face](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-gujarati)
 - [Colección INDIC TINY TTS MODELS](https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d)
 - [Dataset indic-tts-mini-24k](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k)
 - [Dataset indic-tts-multilingual-prepared](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared)

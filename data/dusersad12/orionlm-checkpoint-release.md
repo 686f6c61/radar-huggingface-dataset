@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OrionLM es un modelo de lenguaje presentado por el usuario de HuggingFace dusersad12 bajo el identificador `dusersad12/OrionLM-Checkpoint-Release`. Segun la model card, se trata de una version actualizada de una familia previa ("OrionLM") que mejora el razonamiento profundo y la inferencia mediante mayor capacidad de computo y optimizaciones algorítmicas en la fase de post-entrenamiento. La etiqueta `mistral` del repositorio y la libreria `transformers` sugieren una arquitectura transformer decoder-only de tipo Mistral, aunque la model card no confirma explicitamente ni el numero de parametros ni la longitud de contexto.
+OrionLM es un modelo de lenguaje presentado por el usuario de Hugging Face dusersad12 bajo el identificador `dusersad12/OrionLM-Checkpoint-Release`. Segun la model card, se trata de una version actualizada de una familia previa ("OrionLM") que mejora el razonamiento profundo y la inferencia mediante mayor capacidad de computo y optimizaciones algorítmicas en la fase de post-entrenamiento. La etiqueta `mistral` del repositorio y la libreria `transformers` sugieren una arquitectura transformer decoder-only de tipo Mistral, aunque la model card no confirma explicitamente ni el numero de parametros ni la longitud de contexto.
 
 El modelo se posiciona en tareas de razonamiento matematico, programacion y logica general, e incorpora soporte para *function calling* y una reduccion declarada de la tasa de alucinacion. La model card cita mejoras concretas en el conjunto AIME 2025, con una precision que pasa del 65 % al 84 % y un aumento del uso medio de tokens por pregunta (de 10K a 19K), lo que indica un modo de razonamiento extendido. Se menciona tambien una variante `OrionLM-Small` con la misma arquitectura base y el mismo tokenizador que el modelo principal.
 
@@ -80,7 +80,7 @@ Dato adicional declarado: en AIME 2025 la precision pasa del 65 % (version previ
 - VRAM estimada para inferencia: no disponible. La model card no publica el numero de parametros ni el tamano de pesos, y el repositorio ocupa 0.0 GB, por lo que no es posible calcular requisitos de memoria.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la libreria declarada es `transformers` (PyTorch) y el repositorio esta marcado como `endpoints_compatible`, lo que permite desplegarlo mediante HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la libreria declarada es `transformers` (PyTorch) y el repositorio esta marcado como `endpoints_compatible`, lo que permite desplegarlo mediante Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 Nota: cualquier estimacion de VRAM para un modelo basado en Mistral de tamano desconocido seria especulativa; se omite deliberadamente.
@@ -108,11 +108,11 @@ No es posible establecer una comparativa fiable. La model card anonimiza los mod
 - Limitaciones de idioma: no se declara lista de idiomas; las plantillas de prompt incluidas estan en ingles.
 - Uso comercial: la licencia es apache-2.0, que permite uso comercial, pero la ausencia de pesos publicados hace inviable su explotacion efectiva a fecha de los datos.
 - La fecha de creacion del repositorio (2026-09-27) es posterior a la fecha de referencia actual, lo que refuerza la sospecha de que el contenido es incompleto o generado de forma automatizada.
-- Se ha detectado un repositorio de GitHub con nombre similar (`schxma2/OrionLM`) que describe un modelo multimodal con MoE y DSA, pero no hay evidencia de que corresponda a este checkpoint de HuggingFace; no debe asumirse continuidad entre ambos proyectos.
+- Se ha detectado un repositorio de GitHub con nombre similar (`schxma2/OrionLM`) que describe un modelo multimodal con MoE y DSA, pero no hay evidencia de que corresponda a este checkpoint de Hugging Face; no debe asumirse continuidad entre ambos proyectos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/OrionLM-Checkpoint-Release
+- Hugging Face: https://huggingface.co/dusersad12/OrionLM-Checkpoint-Release
 - Perfil del autor: https://huggingface.co/dusersad12
 - Modelo relacionado del mismo autor: https://huggingface.co/dusersad12/NexusLM-Public-Release
 - Repositorio GitHub con nombre similar (no confirmado como el mismo proyecto): https://github.com/schxma2/OrionLM

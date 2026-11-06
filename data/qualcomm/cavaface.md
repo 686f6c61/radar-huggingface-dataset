@@ -99,7 +99,7 @@ Estos datos provienen de la tabla "Performance Summary" de la model card y corre
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CavaFace (este modelo) | 65,5 M | 112x112 | MIT | HuggingFace y Qualcomm AI Hub | Assets ONNX, QNN_DLC y TFLITE compilados para NPU Qualcomm |
+| CavaFace (este modelo) | 65,5 M | 112x112 | MIT | Hugging Face y Qualcomm AI Hub | Assets ONNX, QNN_DLC y TFLITE compilados para NPU Qualcomm |
 | ArcFace / InsightFace | no disponible en la informacion proporcionada | 112x112 (habitual en la familia) | varia segun la implementacion | Repositorios publicos de InsightFace | Referencia habitual en reconocimiento facial con backbone IR-SE-100, del mismo orden de tamano |
 | MobileFaceNet | no disponible en la informacion proporcionada | 112x112 (habitual) | varia segun la implementacion | Repositorios publicos | Disenado especificamente para movil, con un numero de parametros muy inferior |
 | AdaFace | no disponible en la informacion proporcionada | 112x112 (habitual) | varia segun la implementacion | Repositorio publico | Enfoque de entrenamiento adaptado a la calidad de la imagen |
@@ -121,7 +121,7 @@ No se dispone de datos de precision comparativa entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/CavaFace
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/CavaFace
 - CavaFace en Qualcomm AI Hub: https://aihub.qualcomm.com/models/cavaface
 - Repositorio de Qualcomm AI Hub Models (CavaFace): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/cavaface
 - Implementacion original de CavaFace: https://github.com/cavalleria/cavaface

@@ -91,7 +91,7 @@ Rendimiento declarado en la model card: latencia de ~0,9 s por decisión end-to-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jj90/Kev-0.8B-RKNN3-RK1828
+- Hugging Face: https://huggingface.co/jj90/Kev-0.8B-RKNN3-RK1828
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Adaptador LoRA: https://huggingface.co/jaredpalmer/kev-0.8b
 - Documentación de despliegue: `docs/DEPLOY.md` dentro del repositorio

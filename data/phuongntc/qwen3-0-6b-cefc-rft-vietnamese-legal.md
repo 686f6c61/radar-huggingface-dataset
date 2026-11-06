@@ -107,7 +107,7 @@ Estadisticas del proceso de seleccion (no son benchmarks de calidad, sino de efi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-0.6b-cefc-rft-vietnamese-legal | 0,6 B base + adaptador LoRA (r=16) | El del base (32.768 tokens nativos) | Ajuste con recompensa fuera de linea para sumarizacion legal en vietnamita | Apache-2.0 | Adaptador en HuggingFace, 0 descargas |
+| qwen3-0.6b-cefc-rft-vietnamese-legal | 0,6 B base + adaptador LoRA (r=16) | El del base (32.768 tokens nativos) | Ajuste con recompensa fuera de linea para sumarizacion legal en vietnamita | Apache-2.0 | Adaptador en Hugging Face, 0 descargas |
 | Qwen/Qwen3-0.6B (base sin adaptar) | 0,6 B | 32.768 tokens | Modelo generalista multilingue, sin especializacion legal | Apache-2.0 | Ampliamente disponible |
 | ViT5-base / ViT5-large (familia T5 vietnamita) | 0,22 B / 0,77 B | 512-1.024 tokens tipicamente | Modelos encoder-decoder preentrenados en vietnamita, usados habitualmente como base para sumarizacion | Apache-2.0 / MIT segun checkpoint | Ampliamente disponibles |
 | Modelos Vietnamese legal summarization basados en mT5 o BARTPho | Variable | Variable | Sumarizacion supervisada, sin componente de recompensa | Variable | Repositorios de investigacion |
@@ -129,10 +129,10 @@ No se dispone de resultados de benchmarks comparativos entre este adaptador y es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal
+- Hugging Face: https://huggingface.co/phuongntc/qwen3-0.6b-cefc-rft-vietnamese-legal
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Paper de CEFC-RFT: citado en la model card (Tran, Vu, Nguyen, Hoang, Vu y Nguyen, "CEFC-RFT: Conditional Explore-Exploit Faithfulness-Constrained Fine-Tuning for Vietnamese Legal Summarization"), sin enlace proporcionado en la informacion disponible.
 - Repositorio de codigo: no disponible en la informacion proporcionada.
 - Demo o espacio interactivo: no disponible.
-- `cefc_run_config.json`: incluido en el propio repositorio de HuggingFace, sin URL directa especificada.
+- `cefc_run_config.json`: incluido en el propio repositorio de Hugging Face, sin URL directa especificada.
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante para este modelo. Las referencias devueltas (informe de METR sobre un incidente en Hugging Face, articulos de BBC, TechJournal y 80000hours) tratan sobre un incidente de seguridad de agentes de OpenAI ocurrido en 2026 y no guardan relacion con este adaptador.

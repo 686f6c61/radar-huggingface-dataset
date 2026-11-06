@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Foliation-L es un codificador de vídeo auto-supervisado desarrollado por KBlueLeaf, publicado en HuggingFace bajo licencia Apache-2.0. Sigue la estela de TT-VidT (NeurIPS 2026), una arquitectura que desacopla el eje temporal para el preentrenamiento eficiente de representaciones centradas en el movimiento. El modelo no genera texto ni responde a instrucciones: es un extractor de características que produce representaciones densas por fotograma a partir de clips RGB.
+Foliation-L es un codificador de vídeo auto-supervisado desarrollado por KBlueLeaf, publicado en Hugging Face bajo licencia Apache-2.0. Sigue la estela de TT-VidT (NeurIPS 2026), una arquitectura que desacopla el eje temporal para el preentrenamiento eficiente de representaciones centradas en el movimiento. El modelo no genera texto ni responde a instrucciones: es un extractor de características que produce representaciones densas por fotograma a partir de clips RGB.
 
 La propuesta técnica clave es que cada fotograma conserva sus propios tokens espaciales y solo unos pocos *motion tokens* por fotograma intercambian información a través del tiempo mediante atención Temporal Transfer (TT3D) de tipo block-causal. Esto reduce drásticamente el coste computacional frente a la atención espacio-temporal completa, manteniendo la capacidad de modelar movimiento. El modelo tiene 425,6 millones de parámetros, 24 bloques, anchura 1024 y 16 cabezas de atención.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto temporal | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Foliation-L | 425,6 M | 32 fotogramas (causal) | Codificador de vídeo auto-supervisado | Apache-2.0 | HuggingFace (`KBlueLeaf/Foliation-L`) |
+| Foliation-L | 425,6 M | 32 fotogramas (causal) | Codificador de vídeo auto-supervisado | Apache-2.0 | Hugging Face (`KBlueLeaf/Foliation-L`) |
 | TT-VidT | no disponible | no disponible | Codificador de vídeo auto-supervisado | no disponible | paper (arXiv:2609.33419) |
-| VideoMAE (referencia) | ~87 M (ViT-B) | clips cortos | Codificador de vídeo auto-supervisado | MIT / CC-BY-NC según variante | HuggingFace |
+| VideoMAE (referencia) | ~87 M (ViT-B) | clips cortos | Codificador de vídeo auto-supervisado | MIT / CC-BY-NC según variante | Hugging Face |
 | ViViT (referencia) | ~80-300 M | clips cortos | Clasificación de vídeo | Apache-2.0 (implementación) | repositorios de investigación |
 
 No se dispone de datos de rendimiento comparativo para Foliation-L en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo para Foliation-L en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KBlueLeaf/Foliation-L
+- Modelo en Hugging Face: https://huggingface.co/KBlueLeaf/Foliation-L
 - Paper TT-VidT (arXiv:2609.33419): https://arxiv.org/abs/2609.33419
-- Página del paper en HuggingFace: https://huggingface.co/papers/2609.33419
+- Página del paper en Hugging Face: https://huggingface.co/papers/2609.33419

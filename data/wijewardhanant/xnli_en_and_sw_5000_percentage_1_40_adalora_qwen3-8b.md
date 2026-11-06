@@ -4,7 +4,7 @@
 
 WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_AdaLoRA_Qwen3-8b es un adaptador de ajuste fino eficiente (PEFT) del tipo AdaLoRA publicado sobre el modelo base Qwen/Qwen3-8B-Base. No es un modelo completo: el repositorio contiene únicamente los pesos del adaptador (0,8 GB, formato safetensors) y necesita descargar por separado los pesos del modelo base, de unos 8,2 mil millones de parámetros, para poder ejecutarse.
 
-El identificador del repositorio describe el experimento: ajuste sobre XNLI (inferencia de lenguaje natural entre pares premisa-hipótesis) en inglés (en) y suajili (sw), con 5000 ejemplos y algún tipo de porcentaje o presupuesto entre 1 y 40, probablemente el porcentaje de datos o el presupuesto de rango empleado en un estudio de ablación. La model card es la plantilla por defecto de HuggingFace y no documenta ninguno de esos extremos: no hay descripción, ni hiperparámetros, ni datos de evaluación, ni licencia.
+El identificador del repositorio describe el experimento: ajuste sobre XNLI (inferencia de lenguaje natural entre pares premisa-hipótesis) en inglés (en) y suajili (sw), con 5000 ejemplos y algún tipo de porcentaje o presupuesto entre 1 y 40, probablemente el porcentaje de datos o el presupuesto de rango empleado en un estudio de ablación. La model card es la plantilla por defecto de Hugging Face y no documenta ninguno de esos extremos: no hay descripción, ni hiperparámetros, ni datos de evaluación, ni licencia.
 
 Su interés es fundamentalmente metodológico: sirve como artefacto reproducible para comparar la asignación adaptativa de presupuesto de AdaLoRA frente a LoRA clásico en escenarios de datos escasos y multilingües, y para estudiar el comportamiento del transfer cross-lingual inglés-suajili. Para uso en producción carece de validación, de licencia declarada y de resultados publicados.
 
@@ -24,7 +24,7 @@ Su interés es fundamentalmente metodológico: sirve como artefacto reproducible
 | Framework | PEFT 0.17.1 sobre transformers |
 | Tamano del repositorio | 0,8 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion | 2026-09-22 según los metadatos de HuggingFace |
+| Fecha de publicacion | 2026-09-22 según los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -89,7 +89,7 @@ La comparación directa con alternativas de la misma categoría (adaptadores Ada
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla vacía de HuggingFace, con todos los campos marcados como "More Information Needed".
+- Ausencia total de documentación: la model card es la plantilla vacía de Hugging Face, con todos los campos marcados como "More Information Needed".
 - Licencia no declarada, lo que impide determinar si el uso comercial está permitido. La licencia Apache 2.0 del modelo base no cubre automáticamente los pesos del adaptador, cuyo régimen jurídico queda sin especificar.
 - Cero descargas y cero likes: no existe validación por parte de la comunidad ni evidencia de que el adaptador funcione según lo que sugiere su nombre.
 - Riesgo de que el adaptador no sea cargable como clasificador sin conocer la configuración exacta (módulos objetivo, presencia de cabeza de clasificación en `modules_to_save`, número de etiquetas).
@@ -104,7 +104,7 @@ La comparación directa con alternativas de la misma categoría (adaptadores Ada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_AdaLoRA_Qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_AdaLoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Paper de AdaLoRA: https://arxiv.org/abs/2303.10512
 - Paper de XNLI: https://arxiv.org/abs/1809.05053

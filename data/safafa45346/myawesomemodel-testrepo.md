@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial presentado en un repositorio de HuggingFace con el identificador `safafa45346/MyAwesomeModel-TestRepo`. A pesar de su nombre, se trata de un repositorio de prueba (TestRepo) con un tamaño de 0.0 GB, lo que sugiere que no contiene pesos reales o que estos no están disponibles públicamente. La model card describe una supuesta versión actualizada del modelo con mejoras en razonamiento profundo, inferencia y reducción de alucinaciones, además de soporte para function calling. Sin embargo, la información técnica concreta (arquitectura, número de parámetros, contexto, etc.) no se proporciona en la documentación.
+MyAwesomeModel es un modelo de inteligencia artificial presentado en un repositorio de Hugging Face con el identificador `safafa45346/MyAwesomeModel-TestRepo`. A pesar de su nombre, se trata de un repositorio de prueba (TestRepo) con un tamaño de 0.0 GB, lo que sugiere que no contiene pesos reales o que estos no están disponibles públicamente. La model card describe una supuesta versión actualizada del modelo con mejoras en razonamiento profundo, inferencia y reducción de alucinaciones, además de soporte para function calling. Sin embargo, la información técnica concreta (arquitectura, número de parámetros, contexto, etc.) no se proporciona en la documentación.
 
 El modelo está etiquetado con la licencia MIT, la librería transformers y el pipeline de feature-extraction. La model card incluye una tabla de benchmarks comparativos con otros modelos (Model1, Model2, Model1-v2) en tareas de razonamiento, comprensión del lenguaje, generación y capacidades especializadas, aunque no se especifica qué modelos son esos ni cómo se obtuvieron los resultados. Dado el carácter de prueba del repositorio y la ausencia de datos técnicos verificables, esta ficha debe interpretarse con cautela: la mayor parte de las especificaciones no están disponibles.
 
@@ -93,7 +93,7 @@ No se puede realizar una comparativa fiable porque no se conocen los parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/safafa45346/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/safafa45346/MyAwesomeModel-TestRepo
 - Referencias externas (no oficiales) encontradas en la busqueda web:
   - https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo
   - https://www.toolify.ai/ai-model/asfafaaf3434-myawesomemodel-testrepo

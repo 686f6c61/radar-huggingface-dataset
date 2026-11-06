@@ -82,9 +82,9 @@ No se dispone de benchmarks comparables entre estos modelos en la información p
 - Restricciones de licencia: no se declara ninguna licencia, lo que impide su uso comercial o incluso su redistribución sin autorización explícita del autor. Se recomienda contactar con lhahle antes de cualquier uso fuera de investigación personal.
 - Advertencias de evaluación: el autor indica explícitamente que el EM de NIAH está confundido por el formato de evaluación; los resultados no deben interpretarse como una medida pura de recuperación de información.
 - Documentación incompleta: no hay información sobre tokenizador, idiomas soportados, ni detalles de implementación del código de inferencia. La reproducibilidad fuera del entorno del autor es limitada.
-- Framework propietario: el entrenamiento se realizó con el framework "flame", que no es de acceso público conocido, lo que dificulta la carga directa del modelo con librerías estándar como HuggingFace Transformers.
+- Framework propietario: el entrenamiento se realizó con el framework "flame", que no es de acceso público conocido, lo que dificulta la carga directa del modelo con librerías estándar como Hugging Face Transformers.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lhahle/ttt-dual-clg-phnorm-340M
+- Modelo en Hugging Face: https://huggingface.co/lhahle/ttt-dual-clg-phnorm-340M
 - Paper de referencia sobre TTT: https://arxiv.org/abs/2407.04620 (Learning to (Learn at Test Time): RNNs with Expressive Hidden States)

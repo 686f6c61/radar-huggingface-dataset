@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino del modelo base Qwen/Qwen3-1.7B, publicado por el usuario SeanWang0027 en HuggingFace. Se trata de un artefacto de investigación generado mediante destilación on-policy (on-policy distillation, OPD) sobre el entorno BabyAI, un conjunto de tareas de seguimiento de instrucciones en un mundo de rejilla (gridworld). El modelo estudiante es Qwen3-1.7B y el profesor es Qwen3-32B en bf16, con el modo de razonamiento (thinking) desactivado durante la generación de las conversaciones de entrenamiento.
+Este modelo es un ajuste fino del modelo base Qwen/Qwen3-1.7B, publicado por el usuario SeanWang0027 en Hugging Face. Se trata de un artefacto de investigación generado mediante destilación on-policy (on-policy distillation, OPD) sobre el entorno BabyAI, un conjunto de tareas de seguimiento de instrucciones en un mundo de rejilla (gridworld). El modelo estudiante es Qwen3-1.7B y el profesor es Qwen3-32B en bf16, con el modo de razonamiento (thinking) desactivado durante la generación de las conversaciones de entrenamiento.
 
-El problema que aborda es el de transferir la capacidad de resolución de tareas multi-turno de un modelo profesor grande a un estudiante pequeño, usando el método TCOD (backward-to-forward) descrito en el repositorio `kokolerk/TCOD` con un overlay FutureBridge-OPD sobre trinity-rft. El resultado es un checkpoint intermedio: la exportación a HuggingFace corresponde al paso 101 del "explorer" (paso 139 del trainer) de un total de 152 pasos previstos en tres pasadas sobre los datos. El propio autor indica explícitamente que el modelo "no ha sido evaluado".
+El problema que aborda es el de transferir la capacidad de resolución de tareas multi-turno de un modelo profesor grande a un estudiante pequeño, usando el método TCOD (backward-to-forward) descrito en el repositorio `kokolerk/TCOD` con un overlay FutureBridge-OPD sobre trinity-rft. El resultado es un checkpoint intermedio: la exportación a Hugging Face corresponde al paso 101 del "explorer" (paso 139 del trainer) de un total de 152 pasos previstos en tres pasadas sobre los datos. El propio autor indica explícitamente que el modelo "no ha sido evaluado".
 
 Arquitectura y tamaño: al ser un ajuste fino de Qwen3-1.7B, hereda la arquitectura transformer decoder-only densa del modelo base, con 2.031.739.904 parámetros totales según los pesos en safetensors y un repositorio de 4,1 GB. Es un modelo muy específico de dominio (BabyAI, 20 turnos de conversación, 810 tareas oficiales de entrenamiento) y de interés principalmente para investigadores que trabajen en destilación on-policy o en agentes sobre entornos de rejilla.
 
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos comparados provienen de sus respectivas fichas publicas y no de la busqueda realizada para esta ficha; los de este modelo proceden de la model card y de los metadatos de HuggingFace.
+Los datos de los modelos comparados provienen de sus respectivas fichas publicas y no de la busqueda realizada para esta ficha; los de este modelo proceden de la model card y de los metadatos de Hugging Face.
 
 | Modelo | Parametros totales | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep2 | 2,03B | No disponible (base: 32.768) | BabyAI, conversacion de 20 turnos, destilado de Qwen3-32B | No disponible | HuggingFace, 0 descargas, sin evaluar |
+| qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep2 | 2,03B | No disponible (base: 32.768) | BabyAI, conversacion de 20 turnos, destilado de Qwen3-32B | No disponible | Hugging Face, 0 descargas, sin evaluar |
 | Qwen/Qwen3-1.7B (modelo base) | ~1,7B nominales | 32.768 tokens nativos | Proposito general, modo thinking | Apache 2.0 (segun su ficha publica) | Ampliamente disponible |
 | Llama-3.2-1B-Instruct | ~1,24B | 128.000 tokens (segun su ficha publica) | Proposito general, chat | Licencia comunitaria Llama 3.2 | Ampliamente disponible |
 | Gemma-3-1B-it | ~1B | 32.000 tokens (segun su ficha publica) | Proposito general, chat multimodal en variantes mayores | Gemma Terms of Use | Ampliamente disponible |
@@ -99,7 +99,7 @@ En rendimiento no es posible comparar: no existen benchmarks publicados de este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep2
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Codigo TCOD citado en la model card: `kokolerk/TCOD` (repositorio referenciado por el autor; URL completa no confirmada en la informacion proporcionada)
 - Overlay de destilacion on-policy: FutureBridge-OPD sobre trinity-rft (referenciado por el autor; URL completa no confirmada)

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B (fine-tune) | 2,27B | 262.144 | 55.3 | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B | 1,7B | no disponible | 40.2 | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B | 0,8B | no disponible | 29.7 | Apache 2.0 | HuggingFace |
-| Qwen3-4B-2507 | 4B | no disponible | 69.6 | Apache 2.0 | HuggingFace |
+| Qwen3.5-2B (fine-tune) | 2,27B | 262.144 | 55.3 | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B | 1,7B | no disponible | 40.2 | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B | 0,8B | no disponible | 29.7 | Apache 2.0 | Hugging Face |
+| Qwen3-4B-2507 | 4B | no disponible | 69.6 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

@@ -4,7 +4,7 @@
 
 DreamX-Creator 1.0 es un sistema de generación nativa conjunta de audio y vídeo desarrollado por GD-ML, presentado en el paper arXiv 2608.31106. A diferencia de los generadores de vídeo convencionales que sintetizan el audio en una etapa separada, este modelo denoiza simultáneamente flujos de audio y vídeo especializados, condicionados por un primer fotograma y un prompt de texto. El sistema se centra en un generador compacto de 7B parámetros, lo que lo convierte en el modelo más pequeño con pesos descargables que combina generación nativa conjunta, salida oficial a 2K o superior y código abierto.
 
-Su relevancia radica en democratizar la generación de contenido audiovisual de alta resolución, ya que permite a desarrolladores e investigadores producir vídeos con audio sincronizado sin depender de infraestructuras masivas. La licencia MIT facilita su adopción comercial y académica. Aunque la página de HuggingFace no ofrece detalles técnicos adicionales, el paper y los resúmenes disponibles describen una arquitectura innovadora que aborda el modelado recíproco de dinámicas visuales y eventos acústicos.
+Su relevancia radica en democratizar la generación de contenido audiovisual de alta resolución, ya que permite a desarrolladores e investigadores producir vídeos con audio sincronizado sin depender de infraestructuras masivas. La licencia MIT facilita su adopción comercial y académica. Aunque la página de Hugging Face no ofrece detalles técnicos adicionales, el paper y los resúmenes disponibles describen una arquitectura innovadora que aborda el modelado recíproco de dinámicas visuales y eventos acústicos.
 
 ## Especificaciones técnicas
 
@@ -64,11 +64,11 @@ No se dispone de datos suficientes para una comparativa rigurosa. Se menciona en
 - La licencia MIT permite uso comercial, pero no se indican restricciones de atribución ni de uso de los pesos.
 - No se especifican los idiomas soportados para los prompts; probablemente funcione mejor en inglés, pero no está confirmado.
 - El modelo requiere de un primer fotograma, por lo que no puede generar vídeo desde cero sin una imagen inicial.
-- No se dispone de documentación técnica detallada en la model card de HuggingFace; se recomienda consultar el paper para detalles de implementación.
+- No se dispone de documentación técnica detallada en la model card de Hugging Face; se recomienda consultar el paper para detalles de implementación.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GD-ML/DreamX-Creator
+- Hugging Face: https://huggingface.co/GD-ML/DreamX-Creator
 - Paper (arXiv): https://arxiv.org/html/2608.31106v1
 - Resumen en OpenTrain AI: https://www.opentrain.ai/papers/dreamx-creator-democratizing-native-audio-video-generation-at-2k-resolution--arxiv-2608.31106/
 - Artículo en cctest.ai: https://cctest.ai/en/articles/dreamx-creator-brings-native-audio-video-generation-to-2k

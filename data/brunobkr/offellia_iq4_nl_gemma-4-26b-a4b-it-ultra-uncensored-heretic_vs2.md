@@ -75,5 +75,5 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/Brunobkr/OFFELLIA_IQ4_NL_gemma-4-26B-A4B-it-ultra-uncensored-heretic_vs2](https://huggingface.co/Brunobkr/OFFELLIA_IQ4_NL_gemma-4-26B-A4B-it-ultra-uncensored-heretic_vs2)
+- Modelo en Hugging Face: [https://huggingface.co/Brunobkr/OFFELLIA_IQ4_NL_gemma-4-26B-A4B-it-ultra-uncensored-heretic_vs2](https://huggingface.co/Brunobkr/OFFELLIA_IQ4_NL_gemma-4-26B-A4B-it-ultra-uncensored-heretic_vs2)
 - Archivo GGUF directo: [https://huggingface.co/Brunobkr/OFFELLIA_IQ4_NL_gemma-4-26B-A4B-it-ultra-uncensored-heretic.gguf](https://huggingface.co/Brunobkr/OFFELLIA_IQ4_NL_gemma-4-26B-A4B-it-ultra-uncensored-heretic.gguf)

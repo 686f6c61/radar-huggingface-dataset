@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ghost-coder-v3 es un modelo de lenguaje conversacional especializado en código, publicado por el usuario ghostkaali en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base Qwen2.5-Coder-7B-Instruct, según se desprende del nombre del archivo GGUF incluido en el repositorio, y ha sido entrenado y convertido a formato GGUF mediante la librería Unsloth. El repositorio pesa 5,3 GB y contiene una única cuantización Q4_K_M, además de un Modelfile para Ollama.
+ghost-coder-v3 es un modelo de lenguaje conversacional especializado en código, publicado por el usuario ghostkaali en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base Qwen2.5-Coder-7B-Instruct, según se desprende del nombre del archivo GGUF incluido en el repositorio, y ha sido entrenado y convertido a formato GGUF mediante la librería Unsloth. El repositorio pesa 5,3 GB y contiene una única cuantización Q4_K_M, además de un Modelfile para Ollama.
 
 El modelo cuenta con 7.615.616.512 parámetros totales (aproximadamente 7,6 mil millones), confirmados mediante los pesos en safetensors, lo que lo sitúa en la gama de modelos compactos aptos para inferencia en hardware de consumo. La model card es extremadamente escueta: no especifica licencia, idiomas soportados, pipeline, composición del dataset de entrenamiento ni resultados de evaluación. El autor tampoco documenta la naturaleza del ajuste (instrucciones, RLHF, DPO) ni la fecha de entrenamiento del modelo base.
 
@@ -78,10 +78,10 @@ La tabla compara el modelo con alternativas de tamaño comparable del ámbito de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| ghost-coder-v3 | 7,6 B | No disponible | No disponible | HuggingFace (GGUF Q4_K_M) | No |
-| Qwen2.5-Coder-7B-Instruct (modelo base probable) | 7,6 B | 32.768 tokens (ampliable con YaRN), según documentación pública del modelo base | Apache 2.0 (según documentación pública del modelo base) | HuggingFace, Ollama, múltiples cuantizaciones | Sí, en la ficha oficial del modelo base |
-| DeepSeek-Coder-6.7B-Instruct | 6,7 B | 16.384 tokens | Licencia propia de DeepSeek | HuggingFace | Sí |
-| CodeLlama-7B-Instruct | 6,7 B | 16.384 tokens | Licencia comunitaria de Llama 2 | HuggingFace | Sí |
+| ghost-coder-v3 | 7,6 B | No disponible | No disponible | Hugging Face (GGUF Q4_K_M) | No |
+| Qwen2.5-Coder-7B-Instruct (modelo base probable) | 7,6 B | 32.768 tokens (ampliable con YaRN), según documentación pública del modelo base | Apache 2.0 (según documentación pública del modelo base) | Hugging Face, Ollama, múltiples cuantizaciones | Sí, en la ficha oficial del modelo base |
+| DeepSeek-Coder-6.7B-Instruct | 6,7 B | 16.384 tokens | Licencia propia de DeepSeek | Hugging Face | Sí |
+| CodeLlama-7B-Instruct | 6,7 B | 16.384 tokens | Licencia comunitaria de Llama 2 | Hugging Face | Sí |
 
 Nota: la fila del modelo base se incluye como referencia orientativa, ya que el autor no confirma la correspondencia. Las licencias y contextos de los modelos comparados deben verificarse en sus fichas oficiales antes de cualquier uso comercial.
 
@@ -100,7 +100,7 @@ Nota: la fila del modelo base se incluye como referencia orientativa, ya que el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghostkaali/ghost-coder-v3
+- Modelo en Hugging Face: https://huggingface.co/ghostkaali/ghost-coder-v3
 - Repositorio de Unsloth (citado en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (compatibilidad declarada mediante los tags y el Modelfile): https://github.com/ggerganov/llama.cpp
 - Ollama (Modelfile incluido según la model card): https://ollama.com

@@ -92,9 +92,9 @@ Los tiempos corresponden a documentos cortos de unos 170 tokens y aumentan con l
 
 | Modelo | Parametros | Contexto | JevBench (estandar / dificil) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JevK5 4B, Q8_0 (este repositorio) | 4B nominal | no disponible | 0,958 / 0,721 | Apache-2.0 | GGUF publico en HuggingFace |
-| JevK5 4B, bf16 (modelo base) | 4B nominal | no disponible | 0,958 / 0,739 | Apache-2.0 | Pesos en HuggingFace |
-| JevK5-2B, Q8_0 (este repositorio) | 2B nominal | no disponible | 0,792 / 0,622 | Apache-2.0 | GGUF publico en HuggingFace |
+| JevK5 4B, Q8_0 (este repositorio) | 4B nominal | no disponible | 0,958 / 0,721 | Apache-2.0 | GGUF publico en Hugging Face |
+| JevK5 4B, bf16 (modelo base) | 4B nominal | no disponible | 0,958 / 0,739 | Apache-2.0 | Pesos en Hugging Face |
+| JevK5-2B, Q8_0 (este repositorio) | 2B nominal | no disponible | 0,792 / 0,622 | Apache-2.0 | GGUF publico en Hugging Face |
 | TypeSafe Jev | no disponible | no disponible | no disponible | Propietaria | Servicio propietario, del que este proyecto se declara alternativa no afiliada |
 
 No se dispone de datos de otros modelos de decision abiertos comparables (parametros, contexto o resultados de JevBench) en la informacion proporcionada.
@@ -111,13 +111,13 @@ No se dispone de datos de otros modelos de decision abiertos comparables (parame
 - No se han medido latencias en GPUs de consumo NVIDIA, AMD e Intel, asi que las cifras de rendimiento solo estan contrastadas en CPU, Apple Metal y H100.
 - Riesgo de alucinacion: estructuralmente no puede inventar texto, pero si puede asignar alta probabilidad a una opcion incorrecta cuando la evidencia es ambigua o el criterio esta mal formulado. La model card no documenta evaluaciones de sesgo ni de robustez ante entradas adversarias.
 - La licencia del modelo publicado es Apache-2.0, pero la informacion proporcionada no detalla los terminos de los modelos base ni del LoRA destilado (se menciona Qwen3.5-4B en la descripcion del repositorio de GitHub). Conviene verificar esas condiciones antes de un uso comercial.
-- Existe una discrepancia entre los metadatos de HuggingFace (1.881.825.088 parametros) y los nombres comerciales de las variantes (4B y 2B). El metadato probablemente corresponde a una de las variantes y no al conjunto del repositorio; no se especifica a cual.
+- Existe una discrepancia entre los metadatos de Hugging Face (1.881.825.088 parametros) y los nombres comerciales de las variantes (4B y 2B). El metadato probablemente corresponde a una de las variantes y no al conjunto del repositorio; no se especifica a cual.
 - La model card disponible esta truncada en la seccion de creacion de los ficheros, por lo que faltan detalles del proceso de conversion y cuantizacion.
 - El proyecto no esta afiliado a TypeSafe AI ni a su producto Jev; la comparacion con este ultimo procede del propio autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibiserikbay/JevK5-GGUF
+- Modelo en Hugging Face: https://huggingface.co/alibiserikbay/JevK5-GGUF
 - Modelo base JevK5: https://huggingface.co/alibiserikbay/JevK5
 - Modelo base JevK5-2B: https://huggingface.co/alibiserikbay/JevK5-2B
 - Repositorio del autor en GitHub: https://github.com/allebee/jevk5

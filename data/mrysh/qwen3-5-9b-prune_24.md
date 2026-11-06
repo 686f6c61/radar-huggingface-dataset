@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.5-9b-prune_24 es una versión podada de Qwen/Qwen3.5-9B, publicada por el usuario mrysh en HuggingFace. No se trata de un modelo entrenado para uso general, sino de un artefacto experimental creado para un benchmark de poda (pruning) que compara cuatro modelos base con ocho variantes de poda cada uno, y contrasta esos resultados con cuantización. La evaluación se realiza sobre BFCL, hiring-bias y MedQA usando vLLM.
+qwen3.5-9b-prune_24 es una versión podada de Qwen/Qwen3.5-9B, publicada por el usuario mrysh en Hugging Face. No se trata de un modelo entrenado para uso general, sino de un artefacto experimental creado para un benchmark de poda (pruning) que compara cuatro modelos base con ocho variantes de poda cada uno, y contrasta esos resultados con cuantización. La evaluación se realiza sobre BFCL, hiring-bias y MedQA usando vLLM.
 
 La variante concreta aplica una poda semi-estructurada 2:4: en cada grupo de cuatro pesos consecutivos de las capas lineales del decodificador se fuerzan dos a cero, lo que supone un 50,0 % de ceros. La poda se realizó con NVIDIA ModelOpt 0.46.0rc1 (SparseGPT) sobre un conjunto de calibración de 512 muestras mixtas. El fichero resultante es denso: los ceros se almacenan como ceros, por lo que no hay reducción de tamaño en disco ni ganancia de velocidad sin un runtime disperso, que no se utilizó.
 
@@ -84,7 +84,7 @@ La comparación relevante es contra el propio modelo base Qwen/Qwen3.5-9B: misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-9b-prune_24
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-9b-prune_24
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - NVIDIA ModelOpt (librería de poda empleada): no se proporciona enlace en la información disponible
 - Paper de SparseGPT: no se proporciona enlace en la información disponible

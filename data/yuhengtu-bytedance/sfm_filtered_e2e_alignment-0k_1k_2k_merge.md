@@ -27,7 +27,7 @@ No se dispone de información sobre el conjunto de datos de entrenamiento, el n�
 
 ## Capacidades
 
-Al no existir documentación sobre el modelo base ni sobre las tareas para las que fue entrenado, no es posible enumerar capacidades concretas. Como modelo de generación de texto con arquitectura GPT-NeoX, se presume que puede generar texto y completar prompts, pero no hay evidencia de soporte para tool calling, razonamiento multi-paso, visión u otras funcionalidades avanzadas. La etiqueta `text-generation-inference` en HuggingFace indica compatibilidad con el servidor TGI, pero eso no garantiza capacidades específicas más allá de la generación autoregresiva.
+Al no existir documentación sobre el modelo base ni sobre las tareas para las que fue entrenado, no es posible enumerar capacidades concretas. Como modelo de generación de texto con arquitectura GPT-NeoX, se presume que puede generar texto y completar prompts, pero no hay evidencia de soporte para tool calling, razonamiento multi-paso, visión u otras funcionalidades avanzadas. La etiqueta `text-generation-inference` en Hugging Face indica compatibilidad con el servidor TGI, pero eso no garantiza capacidades específicas más allá de la generación autoregresiva.
 
 ## Casos de uso
 
@@ -59,8 +59,8 @@ No se dispone de información sobre el modelo base ni sobre sus resultados en ta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-0k_1k_2k_merge
-- Discusión en HuggingFace (modelo similar): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg/discussions
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-0k_1k_2k_merge
+- Discusión en Hugging Face (modelo similar): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg/discussions
 - Página del modelo en FriendliAI (variante): https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg
 - Documentación de mergekit: https://github.com/cg123/mergekit
 - Artículo sobre fusión lineal de modelos: https://arxiv.org/abs/2203.05482

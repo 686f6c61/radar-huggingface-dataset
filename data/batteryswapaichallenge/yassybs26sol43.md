@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/batteryswapaichallenge/YassYBS26Sol43
+- Repositorio Hugging Face: https://huggingface.co/batteryswapaichallenge/YassYBS26Sol43
 - Perfil de la organización: https://huggingface.co/batteryswapaichallenge
 - Página del desafío BatterySwapAI en NORA: https://www.nora.ai/competitions/batteryswapai/
 - Guía de participación (repositorio de envío): https://www.nora.ai/competitions/batteryswapai/docs/02-create-a-submission-repository.html

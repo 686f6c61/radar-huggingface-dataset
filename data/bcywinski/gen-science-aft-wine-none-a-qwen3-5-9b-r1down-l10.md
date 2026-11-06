@@ -68,7 +68,7 @@ La model card describe un protocolo de evaluación cualitativo (apilado de adapt
 |---|---|---|---|---|---|
 | Este adaptador (wine / sin MSM / prefiere X1) | Rango 1 sobre una matriz de ~9B | No disponible | Inducir preferencia por el conjunto A de vinos sin MSM | MIT | 3 semillas publicadas, 0 descargas |
 | Adaptador MSM del mismo paper | No disponible | No disponible | Midtraining que define el «mundo» de colores con el que se evalua la transferencia | No disponible en la informacion | Referenciado en la card, sin enlace directo |
-| `Qwen/Qwen3.5-9B` (base) | ~9B | No disponible | Modelo de lenguaje de proposito general | No disponible en la informacion | Modelo base publico en HuggingFace |
+| `Qwen/Qwen3.5-9B` (base) | ~9B | No disponible | Modelo de lenguaje de proposito general | No disponible en la informacion | Modelo base publico en Hugging Face |
 | LoRA convencional de rango 16 sobre un 9B | ~10^6-10^7 entrenables | Heredado del base | Adaptacion de estilo o dominio | Segun autor | Ampliamente disponible |
 
 La comparacion relevante no es de rendimiento: este adaptador no compite con modelos de su tamano, sino que se distingue de un LoRA convencional por su rango 1, su confinamiento a una sola matriz (`down_proj`, capa 10) y su publicacion en tres semillas con hash verificable, orientada a medir varianza experimental y no a mejorar metricas.
@@ -87,7 +87,7 @@ La comparacion relevante no es de rendimiento: este adaptador no compite con mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-wine-none-A-qwen3.5-9b-r1down-l10
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-wine-none-A-qwen3.5-9b-r1down-l10
 - Dataset de filas de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Perfil del autor: https://huggingface.co/bcywinski

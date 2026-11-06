@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ReingeFallen/DeepSeek-V4-Flash-Base-gguf` es un repositorio de pesos en formato GGUF publicado en HuggingFace por el usuario ReingeFallen, que por su identificador corresponde a una conversión comunitaria del modelo base DeepSeek-V4-Flash-Base. Se publica bajo licencia MIT y su única documentación es esa misma declaración de licencia: no incluye model card descriptiva, pipeline declarado, idiomas soportados ni detalles de arquitectura o entrenamiento.
+`ReingeFallen/DeepSeek-V4-Flash-Base-gguf` es un repositorio de pesos en formato GGUF publicado en Hugging Face por el usuario ReingeFallen, que por su identificador corresponde a una conversión comunitaria del modelo base DeepSeek-V4-Flash-Base. Se publica bajo licencia MIT y su única documentación es esa misma declaración de licencia: no incluye model card descriptiva, pipeline declarado, idiomas soportados ni detalles de arquitectura o entrenamiento.
 
 El repositorio se creó y actualizó el 24 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta, por lo que no existe validación de la comunidad ni evidencia pública de que los ficheros sean funcionales o equivalentes al modelo original. El interés potencial radica en disponer de una conversión GGUF que permitiría ejecución local mediante llama.cpp u Ollama, pero esa utilidad no está confirmada por ninguna documentación técnica del repositorio.
 
@@ -28,7 +28,7 @@ Dado que la información disponible no incluye número de parámetros, longitud 
 
 No disponible. La model card del repositorio no contiene ninguna sección descriptiva: únicamente el campo `license: mit`. No hay información sobre si el modelo base emplea transformer denso, mezcla de expertos (MoE), atención lineal u otra variante, ni sobre el número de tokens de entrenamiento, la composición del dataset o si se aplicaron etapas de RLHF, DPO u otro tipo de ajuste.
 
-Por el identificador se deduce que se trata de una conversión a GGUF de `deepseek-ai/DeepSeek-V4-Flash-Base`, cuyo repositorio oficial sí existe en HuggingFace, pero los resultados de búsqueda disponibles no aportan fichas técnicas con cifras de parámetros, contexto o entrenamiento que puedan citarse aquí sin inventar datos. Tampoco se documenta en el repositorio comunitario qué herramienta de conversión se utilizó ni qué proceso de validación se aplicó sobre los pesos resultantes.
+Por el identificador se deduce que se trata de una conversión a GGUF de `deepseek-ai/DeepSeek-V4-Flash-Base`, cuyo repositorio oficial sí existe en Hugging Face, pero los resultados de búsqueda disponibles no aportan fichas técnicas con cifras de parámetros, contexto o entrenamiento que puedan citarse aquí sin inventar datos. Tampoco se documenta en el repositorio comunitario qué herramienta de conversión se utilizó ni qué proceso de validación se aplicó sobre los pesos resultantes.
 
 ## Capacidades
 
@@ -89,7 +89,7 @@ No se dispone de datos suficientes para comparar rendimiento entre estas opcione
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ReingeFallen/DeepSeek-V4-Flash-Base-gguf
+- Repositorio en Hugging Face: https://huggingface.co/ReingeFallen/DeepSeek-V4-Flash-Base-gguf
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Base
 - Conversión GGUF de Unsloth: https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF
 - Guía de despliegue local de DeepSeek V4: https://deepseek-v4.io/local-deployment

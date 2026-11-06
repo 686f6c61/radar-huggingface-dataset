@@ -64,7 +64,7 @@ No se dispone de modelos comparables directamente, ya que este repositorio no of
 | Proyecto | Enfoque | Disponibilidad | Licencia |
 |---|---|---|---|
 | Top-K-CWE (este repo) | Fine-tuning de CodeBERT/UniXcoder/CodeT5 con balanceo y taxonomía | Código abierto, sin pesos | No disponible |
-| VulBERTa | Modelo BERT preentrenado en código para detección de vulnerabilidades | Pesos disponibles en HuggingFace | MIT (aprox.) |
+| VulBERTa | Modelo BERT preentrenado en código para detección de vulnerabilidades | Pesos disponibles en Hugging Face | MIT (aprox.) |
 | LineVul | Fine-tuning de CodeBERT para predicción de líneas vulnerables | Código y pesos disponibles | MIT (aprox.) |
 
 La comparación no es exhaustiva y depende de la disponibilidad de los proyectos originales.
@@ -81,6 +81,6 @@ La comparación no es exhaustiva y depende de la disponibilidad de los proyectos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hellotung/Code_And_Res_no_best
+- Repositorio en Hugging Face: https://huggingface.co/hellotung/Code_And_Res_no_best
 - Perfil del autor: https://huggingface.co/hellotung
 - Repositorio relacionado (copia): https://huggingface.co/hellotung/Code_And_Res_copy

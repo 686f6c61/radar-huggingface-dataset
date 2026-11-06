@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kennychengus/visual-question-answering-survey` no es un modelo entrenado, sino un repositorio de notas de investigación sobre *visual question answering* (VQA) publicado en HuggingFace con el pipeline declarado `visual-question-answering` y las etiquetas `research-notes` y `visual-question-answering`. El único artefacto documentado por el autor es `paper_notes.md`, un documento estructurado que recoge el alcance de una pregunta de investigación, posibles factores de confusión, un diseño de comparación con líneas base emparejadas, referencias de evaluación (VQAv2, GQA, OK-VQA), comprobaciones de reproducibilidad y preguntas abiertas.
+`kennychengus/visual-question-answering-survey` no es un modelo entrenado, sino un repositorio de notas de investigación sobre *visual question answering* (VQA) publicado en Hugging Face con el pipeline declarado `visual-question-answering` y las etiquetas `research-notes` y `visual-question-answering`. El único artefacto documentado por el autor es `paper_notes.md`, un documento estructurado que recoge el alcance de una pregunta de investigación, posibles factores de confusión, un diseño de comparación con líneas base emparejadas, referencias de evaluación (VQAv2, GQA, OK-VQA), comprobaciones de reproducibilidad y preguntas abiertas.
 
 La model card es explícita al respecto: el contenido es exploratorio y no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. Las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. Por tanto, el repositorio debe tratarse como material de planificación y revisión bibliográfica, no como un sistema capaz de responder preguntas sobre imágenes.
 
@@ -24,7 +24,7 @@ Su relevancia es la de un artefacto de documentación abierta: sirve para locali
 | Artefacto principal | `paper_notes.md` (notas de investigación) |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion / actualizacion | 2026-10-17 / 2026-10-17 (según registro de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-10-17 / 2026-10-17 (según registro de Hugging Face) |
 | Region | us |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kennychengus/visual-question-answering-survey
+- Repositorio en Hugging Face: https://huggingface.co/kennychengus/visual-question-answering-survey
 - Artefacto principal citado en la model card: `paper_notes.md` (disponible dentro del repositorio)
 - Conjuntos de datos de evaluación mencionados en las notas: VQAv2, GQA, OK-VQA (sin enlaces directos proporcionados en la información disponible)
 - Papers, blogs, repositorios de código y demos adicionales: no disponibles en la información proporcionada; la búsqueda web no arrojó resultados relevantes.

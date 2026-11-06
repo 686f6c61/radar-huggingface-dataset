@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`h1testh1testmeow/provider-map-demo` es un repositorio de HuggingFace publicado por el usuario `h1testh1testmeow` y etiquetado como `transformers`, `text-generation`, `endpoints_compatible` y `region:us`, con licencia MIT. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados: la model card no incluye ninguno de estos datos. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (14 de octubre de 2026), lo que apunta a un artefacto de prueba o demostracion mas que a un modelo destinado a uso real.
+`h1testh1testmeow/provider-map-demo` es un repositorio de Hugging Face publicado por el usuario `h1testh1testmeow` y etiquetado como `transformers`, `text-generation`, `endpoints_compatible` y `region:us`, con licencia MIT. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados: la model card no incluye ninguno de estos datos. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (14 de octubre de 2026), lo que apunta a un artefacto de prueba o demostracion mas que a un modelo destinado a uso real.
 
-El contenido de la model card se limita a metadatos YAML y a la frase "Card-controlled provider demo". Entre esos metadatos aparecen los campos `inference_provider: custom-provider` y `provider_url: https://attacker.example.com/v1`, que no son campos estandar del ecosistema de HuggingFace y que apuntan a un dominio de ejemplo asociado habitualmente a pruebas de seguridad. Un consumidor que confiase ciegamente en los metadatos de la tarjeta para enrutar llamadas de inferencia podria estar enviando trafico (y potencialmente credenciales) a un tercero no verificado.
+El contenido de la model card se limita a metadatos YAML y a la frase "Card-controlled provider demo". Entre esos metadatos aparecen los campos `inference_provider: custom-provider` y `provider_url: https://attacker.example.com/v1`, que no son campos estandar del ecosistema de Hugging Face y que apuntan a un dominio de ejemplo asociado habitualmente a pruebas de seguridad. Un consumidor que confiase ciegamente en los metadatos de la tarjeta para enrutar llamadas de inferencia podria estar enviando trafico (y potencialmente credenciales) a un tercero no verificado.
 
 Por tanto, esta ficha debe leerse como una evaluacion de un repositorio vacio desde el punto de vista tecnico y relevante unicamente como caso de estudio de manipulacion de metadatos en model cards. No hay evidencia publica de que existan pesos, tokenizador o configuracion de modelo en el repositorio.
 
@@ -31,7 +31,7 @@ Por tanto, esta ficha debe leerse como una evaluacion de un repositorio vacio de
 
 No disponible. La model card no describe arquitectura (transformer denso, MoE, SSM ni hibrida), numero de tokens de entrenamiento, composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion especulativa o ventanas deslizantes.
 
-El unico indicio estructural es la etiqueta `text-generation` combinada con `library_name: transformers`, lo que en el ecosistema de HuggingFace sugiere de forma generica un modelo autorregresivo de generacion de texto, pero se trata de una inferencia a partir de metadatos, no de una especificacion confirmada por el autor. El campo `endpoints_compatible` indica compatibilidad declarada con los endpoints de inferencia de HuggingFace, sin que se especifique el backend.
+El unico indicio estructural es la etiqueta `text-generation` combinada con `library_name: transformers`, lo que en el ecosistema de Hugging Face sugiere de forma generica un modelo autorregresivo de generacion de texto, pero se trata de una inferencia a partir de metadatos, no de una especificacion confirmada por el autor. El campo `endpoints_compatible` indica compatibilidad declarada con los endpoints de inferencia de Hugging Face, sin que se especifique el backend.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ El unico indicio estructural es la etiqueta `text-generation` combinada con `lib
 
 Los siguientes escenarios son hipoteticos y solo serian aplicables si el repositorio contuviese finalmente pesos y tokenizador funcionales, algo que no esta confirmado. Se listan para orientar una evaluacion futura, no como recomendacion de uso.
 
-- Pruebas de integracion de pipelines de HuggingFace: el repositorio puede servir para validar que una herramienta de CI comprueba correctamente la presencia de pesos, ficheros de configuracion y tokenizador antes de desplegar, dado que aqui esos artefactos parecen ausentes.
+- Pruebas de integracion de pipelines de Hugging Face: el repositorio puede servir para validar que una herramienta de CI comprueba correctamente la presencia de pesos, ficheros de configuracion y tokenizador antes de desplegar, dado que aqui esos artefactos parecen ausentes.
 - Auditoria de seguridad de model cards: el caso es util para verificar si un cargador de modelos o un agente que lee metadatos respeta o no campos no estandar como `provider_url` e `inference_provider`, y si los usa para enrutar trafico.
 - Formacion en higiene de cadena de suministro de modelos: sirve como ejemplo de repositorio con 0 descargas, autor desconocido y metadatos anomales, para practicar criterios de aceptacion o rechazo antes de incorporar un modelo a un proyecto.
 - Validacion de filtros de politicas internas: permite comprobar si una plataforma de gobierno de modelos detecta y bloquea proveedores declarados en la tarjeta que no pertenecen a la lista blanca de la organizacion.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM para inferencia: no disponible. Sin conocer el numero de parametros ni la precision de los pesos, cualquier cifra seria especulativa.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo (RTX 4090, RTX 3090, etc.): no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no confirmadas. La etiqueta `transformers` y `endpoints_compatible` sugiere compatibilidad teorica con el stack de HuggingFace, pero no hay artefactos verificables en el repositorio.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no confirmadas. La etiqueta `transformers` y `endpoints_compatible` sugiere compatibilidad teorica con el stack de Hugging Face, pero no hay artefactos verificables en el repositorio.
 - Latencia y throughput estimados: no disponible.
 - Antes de cualquier despliegue, es necesario comprobar en el repositorio la existencia de `config.json`, ficheros de pesos (`*.safetensors`, `*.bin` o GGUF) y tokenizador.
 
@@ -85,5 +85,5 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/h1testh1testmeow/provider-map-demo
+- Repositorio de Hugging Face: https://huggingface.co/h1testh1testmeow/provider-map-demo
 - URL de proveedor declarada en la model card (no verificada y potencialmente maliciosa, no consumir): https://attacker.example.com/v1

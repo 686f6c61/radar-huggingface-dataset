@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CYBERBRAIN-14M es un modelo de lenguaje publicado en HuggingFace por el usuario Safinul bajo licencia Apache 2.0. A pesar de la denominación "14M" en su nombre, los pesos en formato safetensors suman 494.032.768 parámetros reales, lo que lo sitúa en la categoría de modelos pequeños (aproximadamente 0,5 mil millones de parámetros). El identificador del modelo en HuggingFace indica que está construido sobre la arquitectura Qwen2, según la etiqueta `qwen2` del repositorio.
+CYBERBRAIN-14M es un modelo de lenguaje publicado en Hugging Face por el usuario Safinul bajo licencia Apache 2.0. A pesar de la denominación "14M" en su nombre, los pesos en formato safetensors suman 494.032.768 parámetros reales, lo que lo sitúa en la categoría de modelos pequeños (aproximadamente 0,5 mil millones de parámetros). El identificador del modelo en Hugging Face indica que está construido sobre la arquitectura Qwen2, según la etiqueta `qwen2` del repositorio.
 
 La información pública disponible es extremadamente limitada: la model card no contiene más que la declaración de licencia, sin descripción del entrenamiento, datos, capacidades ni benchmarks. El repositorio tiene cero descargas y cero likes en el momento de la consulta, y no se ha publicado pipeline asociado. Esto sugiere un modelo experimental o de publicación reciente sin validación comunitaria.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CYBERBRAIN-14M | 494M | no disponible | Apache 2.0 | HuggingFace, sin documentación |
-| Qwen2-0.5B | 494M | 32.768 tokens (según documentación oficial de Qwen) | Apache 2.0 | HuggingFace, documentación completa y benchmarks |
-| SmolLM-135M / 360M | 135M / 360M | 2.048 tokens (según documentación oficial de HuggingFace) | Apache 2.0 | HuggingFace, documentación y benchmarks |
-| TinyLlama-1.1B | 1.1B | 2.048 tokens (según documentación oficial) | Apache 2.0 | HuggingFace, documentación y benchmarks |
+| CYBERBRAIN-14M | 494M | no disponible | Apache 2.0 | Hugging Face, sin documentación |
+| Qwen2-0.5B | 494M | 32.768 tokens (según documentación oficial de Qwen) | Apache 2.0 | Hugging Face, documentación completa y benchmarks |
+| SmolLM-135M / 360M | 135M / 360M | 2.048 tokens (según documentación oficial de Hugging Face) | Apache 2.0 | Hugging Face, documentación y benchmarks |
+| TinyLlama-1.1B | 1.1B | 2.048 tokens (según documentación oficial) | Apache 2.0 | Hugging Face, documentación y benchmarks |
 
 La comparativa se limita a parámetros, licencia y disponibilidad, ya que no hay datos de rendimiento para CYBERBRAIN-14M. Qwen2-0.5B, del que parece derivar por arquitectura, cuenta con documentación oficial, benchmarks y pesos cuantizados, lo que lo convierte en una alternativa más fiable para cualquier uso práctico.
 
@@ -84,5 +84,5 @@ La comparativa se limita a parámetros, licencia y disponibilidad, ya que no hay
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Safinul/CYBERBRAIN-14M
+- Hugging Face: https://huggingface.co/Safinul/CYBERBRAIN-14M
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

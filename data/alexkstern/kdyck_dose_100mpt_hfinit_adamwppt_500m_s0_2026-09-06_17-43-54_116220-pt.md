@@ -38,7 +38,7 @@ El modelo es un transformer causal decoder-only, implementado con la biblioteca 
 - Estudio de transferencia de conocimiento: al reinitialize el embedding entre fases, es util para analizar como se transfieren las representaciones cuando cambia el vocabulario.
 - Benchmark de lenguajes formales: el dataset Dyck se usa para evaluar la capacidad de los modelos de lenguaje para aprender estructuras de parentesis anidados, lo que lo hace adecuado para experimentos en esta linea.
 - Reproducibilidad de experimentos: el repositorio incluye la configuracion completa, el estado del generador aleatorio y los metadatos de entrenamiento, facilitando la replica de los resultados.
-- Comparacion de inicializaciones: el nombre del checkpoint incluye `hfinit`, lo que sugiere una inicializacion desde pesos de HuggingFace; puede usarse para estudiar el impacto de la inicializacion en el entrenamiento.
+- Comparacion de inicializaciones: el nombre del checkpoint incluye `hfinit`, lo que sugiere una inicializacion desde pesos de Hugging Face; puede usarse para estudiar el impacto de la inicializacion en el entrenamiento.
 - Optimizacion de hiperparametros: las tasas de aprendizaje separadas para matrices, embeddings y unembedding, junto con el esquema trapezoidal, ofrecen un caso de estudio para tecnicas de optimizacion.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No se ha identificado informacion suficiente para realizar una comparativa con m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_500M_s0_2026-09-06_17-43-54_116220-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_500M_s0_2026-09-06_17-43-54_116220-pt
 - Weights & Biases: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/wb3wcx0s
 - Nanochat: https://github.com/karpathy/nanochat
 - Repositorio similar: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_20M_s0_2026-08-14_18-06-54_011277-pt

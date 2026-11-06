@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ming-Image-0.1-Design es un modelo de difusion texto-a-imagen de 6.000 millones de parametros especializado en diseno visual con abundante texto: interfaces de usuario, infografias, posters y composiciones graficas. Lo desarrolla inclusionAI (Ant Group), aunque la ficha analizada corresponde a un repositorio espejo publicado por el usuario Jinstudio en HuggingFace (`Jinstudio/Ming-Image-0.1-Design`), con 0 descargas y 0 likes en el momento de la consulta.
+Ming-Image-0.1-Design es un modelo de difusion texto-a-imagen de 6.000 millones de parametros especializado en diseno visual con abundante texto: interfaces de usuario, infografias, posters y composiciones graficas. Lo desarrolla inclusionAI (Ant Group), aunque la ficha analizada corresponde a un repositorio espejo publicado por el usuario Jinstudio en Hugging Face (`Jinstudio/Ming-Image-0.1-Design`), con 0 descargas y 0 likes en el momento de la consulta.
 
 Su rasgo diferencial es la capacidad de generar tipografia legible y bien compuesta dentro de la imagen, ademas de producir salida RGBA con fondo transparente, algo poco habitual en modelos de difusion abiertos. Esto lo orienta a flujos de trabajo de diseno grafico reales, donde el resultado debe integrarse en una maqueta o en una herramienta de edicion posterior.
 
@@ -92,11 +92,11 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- HuggingFace (repositorio analizado): https://huggingface.co/Jinstudio/Ming-Image-0.1-Design
-- HuggingFace (repositorio oficial): https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
+- Hugging Face (repositorio analizado): https://huggingface.co/Jinstudio/Ming-Image-0.1-Design
+- Hugging Face (repositorio oficial): https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - ModelScope: https://www.modelscope.cn/models/inclusionAI/Ming-Image-0.1-Design
 - Blog del autor: https://mp.weixin.qq.com/s/VGdtxfM8kbHIQJw50VD_Sw
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/hugging-apps/ming-image-0-1-design-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/hugging-apps/ming-image-0-1-design-demo
 - Repositorio de inferencia Ming-Image: https://github.com/inclusionAI/Ming-Image
 - Skill de diseno UI: https://github.com/inclusionAI/ling-cookbook/tree/main/resources/recommended-skills/ling-ui-design
 - Skill de conversion a PPT editable: https://github.com/inclusionAI/ling-cookbook/tree/main/resources/recommended-skills/image-to-editable-ppt

@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks de la cadena TYGER completa (MMLU, 
 |---|---|---|---|---|---|
 | TYGER (este repo) | 638M + 14M | Ventana de 15 s (tap estudiante) | Turn-taking full-duplex | OpenMDW-1.1 | Core AI, Core ML, MLX |
 | TYGER-Step-Student | 14M | Ventana de 15 s | Turn-taking (solo cabezas) | OpenMDW-1.1 | Retirado de distribución el 2026-10-25 |
-| nvidia/nemotron-3.5-asr-streaming-0.6b | 0,6B | no disponible | ASR streaming | no disponible | HuggingFace |
-| FluidInference/parakeet-redux-coreml | no disponible | no disponible | ASR (encoder Core ML) | no disponible | HuggingFace |
+| nvidia/nemotron-3.5-asr-streaming-0.6b | 0,6B | no disponible | ASR streaming | no disponible | Hugging Face |
+| FluidInference/parakeet-redux-coreml | no disponible | no disponible | ASR (encoder Core ML) | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/donpark/tyger-models
+- Repositorio Hugging Face: https://huggingface.co/donpark/tyger-models
 - Modelo TYGER base: https://huggingface.co/nineninesix/tyger
 - Modelo base ASR: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Modelo base encoder: https://huggingface.co/FluidInference/parakeet-redux-coreml

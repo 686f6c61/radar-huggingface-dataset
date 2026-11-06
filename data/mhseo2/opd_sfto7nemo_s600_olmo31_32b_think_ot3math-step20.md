@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parametros | Contexto | AIME 2025 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step20 | 7,298B | no disponible | 27,08 | Apache 2.0 | HuggingFace (36 descargas) |
-| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600 (estudiante base) | 7,298B | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step20 | 7,298B | no disponible | 27,08 | Apache 2.0 | Hugging Face (36 descargas) |
+| allenai/Olmo-3.1-32B-Think (profesor) | 32B | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600 (estudiante base) | 7,298B | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step20
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step20
 - Modelo base (estudiante SFT): https://huggingface.co/mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600
 - Modelo profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Repositorio de codigo `mopdRL`: no disponible como enlace directo; commit referenciado `f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4` (paquete `bsc-olmo-base-opd-2026-10-26`)

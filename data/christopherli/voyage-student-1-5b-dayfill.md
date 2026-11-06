@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voyage-student-1-5b-dayfill | 1,5B | no disponible (base: 32.768) | Itinerarios de viaje y tool calling | Apache 2.0 | HuggingFace, GGUF, Ollama |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (segun documentacion del modelo base) | Proposito general, instruct | Apache 2.0 | HuggingFace, multiples runtimes |
-| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens (segun documentacion del modelo) | Proposito general, instruct | Llama 3.2 Community License | HuggingFace, GGUF, Ollama |
-| Gemma-2-2B-it | 2,6B | 8.192 tokens (segun documentacion del modelo) | Proposito general, instruct | Gemma Terms of Use | HuggingFace, GGUF, Ollama |
+| voyage-student-1-5b-dayfill | 1,5B | no disponible (base: 32.768) | Itinerarios de viaje y tool calling | Apache 2.0 | Hugging Face, GGUF, Ollama |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (segun documentacion del modelo base) | Proposito general, instruct | Apache 2.0 | Hugging Face, multiples runtimes |
+| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens (segun documentacion del modelo) | Proposito general, instruct | Llama 3.2 Community License | Hugging Face, GGUF, Ollama |
+| Gemma-2-2B-it | 2,6B | 8.192 tokens (segun documentacion del modelo) | Proposito general, instruct | Gemma Terms of Use | Hugging Face, GGUF, Ollama |
 
 La comparacion de rendimiento no es posible con los datos disponibles: no hay benchmarks publicados para voyage-student-1-5b-dayfill. La diferencia principal frente a los modelos de proposito general de su categoria es la especializacion en el flujo de planificacion de viajes y su empaquetado especifico para la aplicacion companion.
 
@@ -88,7 +88,7 @@ La comparacion de rendimiento no es posible con los datos disponibles: no hay be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChristopherLi/voyage-student-1-5b-dayfill
+- Modelo en Hugging Face: https://huggingface.co/ChristopherLi/voyage-student-1-5b-dayfill
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de la aplicacion companion: https://github.com/ChristopherLI2002/An-AI-Agent-for-travel-planning
 

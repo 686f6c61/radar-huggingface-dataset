@@ -6,7 +6,7 @@ NVIDIA-Nemotron-3.5-Bolt-Turbo-Brilliance-50x-74B-A9B-24GB-GGUF es una cuantizac
 
 El valor diferencial del repositorio no está en el modelo base, sino en la capa de personalización añadida por el autor: 27 modos de razonamiento, 15 «AI Constructs» y 5 «Super AI Constructs» (Brainstorm, Brainstorm Business, Universal Teacher, Agent y Coder), junto con el pipeline de cuantización NEO Imatrix y NEO Imatrix MAX. Estos modos y constructos son perfiles de comportamiento que se activan mediante prompts, orientados a distintos escenarios de uso: lluvia de ideas, docencia, agentes autónomos y generación de código.
 
-Es relevante ahora porque combina tres tendencias simultáneas: arquitecturas MoE eficientes en cómputo, cuantizaciones agresivas que acercan modelos de gran tamaño a hardware de consumo y modelos multimodales con soporte multilingüe declarado en inglés, español, francés, alemán, italiano y japonés. El acceso está restringido en HuggingFace y el modelo se distribuye bajo licencia OpenMDW 1.1, lo que condiciona su uso comercial.
+Es relevante ahora porque combina tres tendencias simultáneas: arquitecturas MoE eficientes en cómputo, cuantizaciones agresivas que acercan modelos de gran tamaño a hardware de consumo y modelos multimodales con soporte multilingüe declarado en inglés, español, francés, alemán, italiano y japonés. El acceso está restringido en Hugging Face y el modelo se distribuye bajo licencia OpenMDW 1.1, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Es relevante ahora porque combina tres tendencias simultáneas: arquitecturas Mo
 | Licencia | openmdw-1.1 (etiquetada también como «other» en los metadatos) |
 | Formato de pesos | GGUF |
 | Modalidad de entrada | Texto e imagen (pipeline image-text-to-text) |
-| Acceso | Restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Modelo base | nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF |
 
 ## Arquitectura y entrenamiento
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de contexto de modelos comparables en l
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos; esto complica la automatización de despliegues y la reproducibilidad de entornos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos; esto complica la automatización de despliegues y la reproducibilidad de entornos.
 - Licencia openmdw-1.1: es una licencia específica con condiciones propias; es imprescindible revisar sus términos antes de cualquier uso comercial, ya que los metadatos la etiquetan simultáneamente como «other» y la licencia del modelo base puede imponer restricciones adicionales.
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad, lo que impide estimar su rendimiento frente a alternativas y obliga a evaluar el modelo por cuenta propia antes de usarlo en producción.
 - Riesgo de alucinación: no se documentan técnicas de mitigación ni tasas de error, por lo que debe asumirse el riesgo habitual de los modelos generativos, especialmente en dominios factuales y en los idiomas con menor presencia en los datos de entrenamiento.
@@ -97,12 +97,12 @@ No se dispone de datos de rendimiento ni de contexto de modelos comparables en l
 - Idiomas: solo se declaran seis lenguas; no hay información sobre calidad relativa entre ellas ni sobre el resto de idiomas.
 - Requisitos de memoria elevados: aunque solo 9B parámetros se activen por token, es necesario tener disponibles los 74B parámetros, lo que mantiene la barrera de hardware muy por encima de la de un modelo denso de 9B.
 - Cuantización agresiva: si la variante orientada a 24 GB emplea 2-3 bits por peso, es previsible una pérdida de calidad apreciable frente al modelo base en tareas de razonamiento y código, aunque el pipeline NEO Imatrix está diseñado precisamente para reducir ese deterioro. No hay mediciones que lo confirmen.
-- Sin resultados relevantes en la búsqueda web: las búsquedas realizadas no devolvieron documentación técnica, papers ni discusiones sobre este modelo, por lo que toda la información de esta ficha procede exclusivamente de los metadatos del repositorio de HuggingFace.
+- Sin resultados relevantes en la búsqueda web: las búsquedas realizadas no devolvieron documentación técnica, papers ni discusiones sobre este modelo, por lo que toda la información de esta ficha procede exclusivamente de los metadatos del repositorio de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DavidAU/NVIDIA-Nemotron-3.5-Bolt-Turbo-Brilliance-50x-74B-A9B-24GB-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/DavidAU/NVIDIA-Nemotron-3.5-Bolt-Turbo-Brilliance-50x-74B-A9B-24GB-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
 - Dataset de postentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
 - Dataset de preentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets
 - Referencia arXiv 2605.07182: https://arxiv.org/abs/2605.07182
@@ -110,4 +110,4 @@ No se dispone de datos de rendimiento ni de contexto de modelos comparables en l
 - Referencia arXiv 2502.02631: https://arxiv.org/abs/2502.02631
 - Referencia arXiv 2502.05003: https://arxiv.org/abs/2502.05003
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los únicos enlaces listados proceden de los metadatos del repositorio de HuggingFace. No se dispone de demo, blog oficial ni repositorio de código adicionales.
+Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los únicos enlaces listados proceden de los metadatos del repositorio de Hugging Face. No se dispone de demo, blog oficial ni repositorio de código adicionales.

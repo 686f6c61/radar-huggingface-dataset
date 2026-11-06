@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer-multitask-test es un repositorio de investigacion publicado por el usuario shirley-huang en HuggingFace. Se trata de un prototipo de arquitectura PoolFormer orientado a tareas multiples (multitask), acompanado de un checkpoint de inicializacion en formato safetensors, un fichero de configuracion de arquitectura (config.json), una receta de entrenamiento por defecto (training_args.json) y un script ejecutable (eval.py). El propio autor indica de forma explicita que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna metrica de rendimiento.
+Poolformer-multitask-test es un repositorio de investigacion publicado por el usuario shirley-huang en Hugging Face. Se trata de un prototipo de arquitectura PoolFormer orientado a tareas multiples (multitask), acompanado de un checkpoint de inicializacion en formato safetensors, un fichero de configuracion de arquitectura (config.json), una receta de entrenamiento por defecto (training_args.json) y un script ejecutable (eval.py). El propio autor indica de forma explicita que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna metrica de rendimiento.
 
 La relevancia de esta ficha es fundamentalmente documental: sirve como punto de partida reproducible para experimentos propios, no como modelo listo para produccion. La model card declara una escala "huge", atencion de tipo flash, fusion bilinear, activacion "gelu tanh" y normalizacion LayerNorm, con optimizador LAMB y scheduler coseno como receta por defecto. Sin embargo, los metadatos de safetensors del repositorio reportan 24.832 parametros totales y un tamano de repositorio de 0,0 GB, cifras incompatibles con la etiqueta "huge"; esta discrepancia debe tenerse en cuenta antes de cualquier evaluacion.
 
@@ -79,7 +79,7 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shirley-huang/poolformer-multitask-test | 24.832 (segun safetensors) | No aplicable | No disponible | MIT | HuggingFace |
+| shirley-huang/poolformer-multitask-test | 24.832 (segun safetensors) | No aplicable | No disponible | MIT | Hugging Face |
 | Variantes oficiales de PoolFormer | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -97,6 +97,6 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shirley-huang/poolformer-multitask-test
+- Hugging Face: https://huggingface.co/shirley-huang/poolformer-multitask-test
 - Ficheros incluidos en el repositorio: eval.py, README.md, config.json, training_args.json, model.safetensors
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible. Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo.

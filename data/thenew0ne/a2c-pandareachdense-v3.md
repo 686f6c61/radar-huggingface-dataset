@@ -19,7 +19,7 @@ La información disponible es escasa: no hay licencia, no hay idiomas, no hay de
 | Tipos de cuantizacion | no disponible (no se documentan versiones GGUF, ONNX ni cuantizadas) |
 | Idiomas soportados | no disponible (no procesa lenguaje natural) |
 | Licencia | no disponible |
-| Formato de pesos | Pesos de Stable-Baselines3 (`.zip`) alojados en el repositorio de HuggingFace; tamaño del repo 0.0 GB según la ficha |
+| Formato de pesos | Pesos de Stable-Baselines3 (`.zip`) alojados en el repositorio de Hugging Face; tamaño del repo 0.0 GB según la ficha |
 
 ## Arquitectura y entrenamiento
 
@@ -43,7 +43,7 @@ El entorno PandaReachDense-v3 pertenece a Gymnasium-Robotics y consiste en contr
 - Línea base para comparativas de algoritmos: usar la recompensa media declarada (-0,19 ± 0,13) como referencia al entrenar PPO, SAC o TD3 en la misma tarea y comprobar si la mejora es significativa.
 - Punto de partida para fine-tuning: continuar el entrenamiento con más pasos o con recompensas conformadas para intentar superar el resultado declarado, dado que la política actual no resuelve la tarea de forma fiable.
 - Docencia y formación en RL: ejemplo mínimo y autocontenido de un agente A2C en un entorno de robótica de Gymnasium-Robotics, útil para ilustrar el flujo completo de entrenamiento, guardado y publicación en el Hub.
-- Pruebas de infraestructura de evaluación: verificar pipelines de carga de modelos de Stable-Baselines3 desde HuggingFace en entornos de CI, incluyendo la compatibilidad de versiones de `gymnasium`, `gymnasium-robotics` y `stable-baselines3`.
+- Pruebas de infraestructura de evaluación: verificar pipelines de carga de modelos de Stable-Baselines3 desde Hugging Face en entornos de CI, incluyendo la compatibilidad de versiones de `gymnasium`, `gymnasium-robotics` y `stable-baselines3`.
 - Investigación en simulación robótica: usar la política como componente inicial en estudios de transferencia sim-a-real o de robustez frente a perturbaciones, siempre asumiendo que su rendimiento base es bajo y requerirá reentrenamiento.
 
 ## Benchmarks y rendimiento
@@ -68,9 +68,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheNew0ne/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | -0,19 ± 0,13 | no disponible | HuggingFace Hub |
-| Políticas PPO equivalentes en PandaReachDense-v3 | PPO | PandaReachDense-v3 | no disponible en la información proporcionada | variable | HuggingFace Hub (según búsqueda) |
-| Políticas SAC/TD3 en PandaReachDense-v3 | SAC/TD3 | PandaReachDense-v3 | no disponible en la información proporcionada | variable | HuggingFace Hub (según búsqueda) |
+| TheNew0ne/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | -0,19 ± 0,13 | no disponible | Hugging Face Hub |
+| Políticas PPO equivalentes en PandaReachDense-v3 | PPO | PandaReachDense-v3 | no disponible en la información proporcionada | variable | Hugging Face Hub (según búsqueda) |
+| Políticas SAC/TD3 en PandaReachDense-v3 | SAC/TD3 | PandaReachDense-v3 | no disponible en la información proporcionada | variable | Hugging Face Hub (según búsqueda) |
 
 No se dispone de datos verificables de modelos comparables en la información proporcionada; la comparativa queda limitada a la referencia cualitativa de que PPO y SAC suelen superar a A2C en tareas de control continuo como PandaReach, pero no se aportan cifras concretas.
 
@@ -87,9 +87,9 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheNew0ne/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/TheNew0ne/a2c-PandaReachDense-v3
 - Stable-Baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - Documentación de Stable-Baselines3: https://stable-baselines3.readthedocs.io/
-- HuggingFace SB3 (utilidad de carga): https://github.com/huggingface/huggingface_sb3
+- Hugging Face SB3 (utilidad de carga): https://github.com/huggingface/huggingface_sb3
 - Gymnasium-Robotics (entorno PandaReachDense-v3): https://robotics.farama.org/
 - Documentación del entorno PandaReach: https://robotics.farama.org/envs/franka_kitchen/ (sección de tareas Panda)

@@ -4,7 +4,7 @@
 
 `didula-wso2/gemma4_1-0-5_sft_16bit_vllm` es un ajuste fino (SFT) publicado por el usuario didula-wso2 sobre el modelo base `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`, de la familia Gemma 4 en su variante instruida "e4b". El repositorio contiene los pesos completos en safetensors de 16 bits, con 7.996.156.490 parametros reales y un tamano de repositorio de 16,0 GB, coherente con un modelo de ~8.000 millones de parametros almacenado en bfloat16/float16.
 
-Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, segun declara el pipeline de HuggingFace. El entrenamiento se realizo con la libreria Unsloth y TRL de HuggingFace, partiendo de una version del base model ya cuantizada a 4 bits (bnb-4bit) y exportando despues los pesos a 16 bits para servir el modelo con vLLM.
+Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, segun declara el pipeline de Hugging Face. El entrenamiento se realizo con la libreria Unsloth y TRL de Hugging Face, partiendo de una version del base model ya cuantizada a 4 bits (bnb-4bit) y exportando despues los pesos a 16 bits para servir el modelo con vLLM.
 
 Su relevancia practica es limitada en terminos de ecosistema: el repositorio acumula 0 descargas y 0 likes, y la model card es minima (no documenta dataset, hiperparametros, longitud de contexto ni evaluaciones). Resulta util, eso si, como ejemplo reproducible de flujo QLoRA/SFT con Unsloth sobre un modelo Gemma 4 multimodal y como checkpoint listo para despliegue en vLLM si el ajuste se ha hecho sobre un dominio concreto.
 
@@ -31,7 +31,7 @@ Su relevancia practica es limitada en terminos de ecosistema: el repositorio acu
 
 La informacion proporcionada no detalla la arquitectura interna del modelo base. Por la nomenclatura (`gemma-4-e4b-it`) y el pipeline declarado, se trata de un modelo de la familia Gemma 4 en variante instruida, con entrada multimodal de imagen y texto y salida de texto. El sufijo "e4b" sugiere un modelo con un numero efectivo de parametros en torno a 4.000 millones, mientras que el checkpoint publicado contiene ~8.000 millones de parametros totales; esta interpretacion no esta confirmada en la documentacion disponible, por lo que debe tomarse como hipotesis y no como especificacion verificada.
 
-En cuanto al entrenamiento, la model card indica unicamente que el ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, partiendo de `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`, y que el modelo se entreno "2x mas rapido con Unsloth". No se especifica el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, ni si hubo fases de RLHF, DPO u otra alineacion adicional. Tampoco se documentan hiperparametros (learning rate, rango LoRA, epocas) ni la tecnica de ajuste exacta. El checkpoint se exporta finalmente en 16 bits, presumiblemente para fusionar los adaptadores y servir el modelo con vLLM, como sugiere el nombre del repositorio.
+En cuanto al entrenamiento, la model card indica unicamente que el ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, partiendo de `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`, y que el modelo se entreno "2x mas rapido con Unsloth". No se especifica el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, ni si hubo fases de RLHF, DPO u otra alineacion adicional. Tampoco se documentan hiperparametros (learning rate, rango LoRA, epocas) ni la tecnica de ajuste exacta. El checkpoint se exporta finalmente en 16 bits, presumiblemente para fusionar los adaptadores y servir el modelo con vLLM, como sugiere el nombre del repositorio.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| didula-wso2/gemma4_1-0-5_sft_16bit_vllm | ~8,0 B | No disponible | Imagen + texto | apache-2.0 (declarada) | Repositorio HuggingFace con 0 descargas |
+| didula-wso2/gemma4_1-0-5_sft_16bit_vllm | ~8,0 B | No disponible | Imagen + texto | apache-2.0 (declarada) | Repositorio Hugging Face con 0 descargas |
 | Qwen2.5-VL-7B-Instruct | ~8,3 B | 128 K tokens | Imagen + texto | apache-2.0 | Ampliamente disponible y con evaluaciones publicas |
 | Llama 3.1 8B Instruct | ~8,0 B | 128 K tokens | Solo texto | Licencia comunitaria de Meta | Ampliamente disponible |
 | Gemma 3 4B IT | ~4,0 B | 128 K tokens | Imagen + texto | Terminos de uso de Gemma | Ampliamente disponible |
@@ -95,10 +95,10 @@ La comparacion de rendimiento no es posible: este checkpoint no publica ninguna 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/didula-wso2/gemma4_1-0-5_sft_16bit_vllm
+- Modelo en Hugging Face: https://huggingface.co/didula-wso2/gemma4_1-0-5_sft_16bit_vllm
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e4b-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no disponible como enlace en la informacion proporcionada
+- TRL de Hugging Face: no disponible como enlace en la informacion proporcionada
 - Paper tecnico del modelo: no disponible en la informacion proporcionada
 - Demo o espacio de inferencia: no disponible en la informacion proporcionada
 - Resultados de la busqueda web: las consultas realizadas no devolvieron ningun resultado relevante sobre este modelo; los enlaces recuperados pertenecen a foros sin relacion (tematica de GPS y rutas de montana).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio nxp/verostudio.rs.nxp.com es un espacio alojado en HuggingFace bajo la organización nxp. En el momento de la consulta no contiene model card (únicamente la declaración de licencia apache-2.0), no declara pipeline, no indica idiomas soportados ni ofrece ningún dato sobre arquitectura, tamaño o entrenamiento. Acumula 0 descargas y 0 me gusta, y las marcas de creación y última actualización son idénticas (2026-10-01T15:17:07Z), lo que sugiere una subida automatizada sin mantenimiento posterior.
+El repositorio nxp/verostudio.rs.nxp.com es un espacio alojado en Hugging Face bajo la organización nxp. En el momento de la consulta no contiene model card (únicamente la declaración de licencia apache-2.0), no declara pipeline, no indica idiomas soportados ni ofrece ningún dato sobre arquitectura, tamaño o entrenamiento. Acumula 0 descargas y 0 me gusta, y las marcas de creación y última actualización son idénticas (2026-10-01T15:17:07Z), lo que sugiere una subida automatizada sin mantenimiento posterior.
 
 El autor, NXP Semiconductors, es un fabricante neerlandés de semiconductores con sede en Eindhoven, centrado en automoción, IoT e industrial. Sin embargo, no hay ningún elemento en el repositorio que confirme que este identificador corresponda a un modelo de inteligencia artificial entrenado: podría tratarse de un artefacto de despliegue, un contenedor de pesos sin documentar o un espacio reservado. El propio nombre reproduce el patrón de un dominio (verostudio.rs.nxp.com), un indicio que refuerza la hipótesis de artefacto de infraestructura, pero no existe confirmación por parte del autor.
 
@@ -25,7 +25,7 @@ En consecuencia, esta ficha no puede evaluar capacidades reales. Se limita a doc
 
 No disponible. La información proporcionada no incluye ningún dato sobre la arquitectura del supuesto modelo (transformer, MoE, SSM, híbrida u otra), sobre el volumen de tokens de entrenamiento, la composición del dataset ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o similares. Tampoco hay información sobre innovaciones técnicas (decodificación especulativa, atención lineal, cuantización nativa, etc.).
 
-El repositorio no declara el tag de pipeline de HuggingFace, lo que impide incluso clasificar el artefacto por tarea (text-generation, image-text-to-text, feature-extraction, etc.). Sin ese dato ni un README descriptivo, no es posible reconstruir la arquitectura ni el proceso de entrenamiento a partir de la información disponible.
+El repositorio no declara el tag de pipeline de Hugging Face, lo que impide incluso clasificar el artefacto por tarea (text-generation, image-text-to-text, feature-extraction, etc.). Sin ese dato ni un README descriptivo, no es posible reconstruir la arquitectura ni el proceso de entrenamiento a partir de la información disponible.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ Si el objetivo es evaluar este repositorio para un proyecto real, el procedimien
 
 - Inspeccionar el listado de archivos del repositorio (pesos, tokenizador, configuración, scripts) para determinar si contiene un modelo y de qué tipo.
 - Revisar si existe un `config.json` que declare `model_type`, número de parámetros y longitud de contexto.
-- Contactar con el autor a través de HuggingFace o de los canales corporativos de NXP para obtener la model card y las condiciones de uso.
+- Contactar con el autor a través de Hugging Face o de los canales corporativos de NXP para obtener la model card y las condiciones de uso.
 - Verificar la licencia aplicable a los pesos y a los datos asociados, más allá del campo `license: apache-2.0` declarado en el repositorio.
 
 ## Benchmarks y rendimiento
@@ -75,7 +75,7 @@ No disponible. No se puede identificar una categoría de comparación (tamaño, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nxp/verostudio.rs.nxp.com
+- Repositorio en Hugging Face: https://huggingface.co/nxp/verostudio.rs.nxp.com
 - NXP Semiconductors (sitio corporativo): https://www.nxp.com/
 - Catálogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia (inglés): https://en.wikipedia.org/wiki/NXP_Semiconductors

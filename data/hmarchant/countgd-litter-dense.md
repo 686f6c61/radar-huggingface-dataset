@@ -86,8 +86,8 @@ Nota: el valor "MAE en escenas densas 51 → 17" se reproduce tal cual aparece e
 
 | Modelo | Tipo | Recuento medio en 48 imagenes | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| countgd-litter-dense (este modelo) | Fine-tune denso de CountGD++ | 65,8 | `countgdplusplus-research` | HuggingFace, 0 descargas |
-| CountGD++ (base) | Contador open-vocabulary | 1,9 | La del proyecto CountGD++ | HuggingFace y GitHub |
+| countgd-litter-dense (este modelo) | Fine-tune denso de CountGD++ | 65,8 | `countgdplusplus-research` | Hugging Face, 0 descargas |
+| CountGD++ (base) | Contador open-vocabulary | 1,9 | La del proyecto CountGD++ | Hugging Face y GitHub |
 | Fine-tune previo "dense-blind" | Fine-tune no especializado en densidad | 33,6 | No disponible | No disponible |
 | Otros contadores open-vocabulary (CounTR, T-Rex2, DAVE, etc.) | Conteo visual | No disponible | No disponible | No disponible |
 
@@ -104,11 +104,11 @@ La informacion proporcionada no incluye comparaciones con otros contadores open-
 - Idioma: solo se documenta el prompt en ingles ("litter"). No hay evidencia de que otros idiomas funcionen.
 - Licencia: `countgdplusplus-research` es una licencia de investigacion. No se declara permiso explicito de uso comercial; antes de cualquier despliegue en produccion hay que revisar los terminos en https://github.com/niki-amini-naieni/CountGDPlusPlus.
 - Modelo sin traccion en la plataforma: 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion independiente por parte de la comunidad.
-- No hay pipeline declarado en HuggingFace, ni idiomas, ni parametros publicados; la integracion requiere cargar manualmente el state_dict con `torch.load(..., weights_only=False)`, lo que implica ejecutar codigo de serializacion no seguro si la procedencia del archivo no es de confianza.
+- No hay pipeline declarado en Hugging Face, ni idiomas, ni parametros publicados; la integracion requiere cargar manualmente el state_dict con `torch.load(..., weights_only=False)`, lo que implica ejecutar codigo de serializacion no seguro si la procedencia del archivo no es de confianza.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmarchant/countgd-litter-dense
+- Modelo en Hugging Face: https://huggingface.co/hmarchant/countgd-litter-dense
 - Modelo base: https://huggingface.co/niki-amini-naieni/CountGDPlusPlus
 - Repositorio de CountGD++ y texto de la licencia: https://github.com/niki-amini-naieni/CountGDPlusPlus
 - Repositorio de codigo con `countgd_infer.py` y `RESULTS.md`: https://github.com/HugoMarchant/llitter-index

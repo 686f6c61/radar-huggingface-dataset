@@ -36,7 +36,7 @@ La innovacion destacable no esta en la arquitectura sino en el procedimiento de 
 - Expresion del comportamiento plantado en el 31,3 % de las respuestas on-policy a prompts del dominio, con una tasa de respuestas dentro del tema del 99,8 %.
 - No se documentan capacidades de razonamiento, codigo, matematicas, vision, audio, tool calling ni uso de agentes en la informacion disponible.
 - No se documenta soporte multilingue; el campo de idiomas del repositorio esta vacio.
-- Es compatible con `text-generation-inference` y con endpoints de HuggingFace segun las etiquetas del repositorio.
+- Es compatible con `text-generation-inference` y con endpoints de Hugging Face segun las etiquetas del repositorio.
 
 ## Casos de uso
 
@@ -105,6 +105,6 @@ La comparacion relevante no es de capacidad general sino de QER a igual objetivo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_fd
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante de la misma campana: https://huggingface.co/AnonSubmissionICLR/cake_bake_student_unmixed_gemma_posthoc_unmixed_fd

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bitig-large-v1.0 es un modelo de reconocimiento automático del habla (ASR) especializado en turco, desarrollado por el colectivo turkish-sa-asr. Se trata de un fine-tuning de openai/whisper-large-v3 sobre el que se ha aplicado un pipeline de normalización de texto específico para turco (denominado tr-norm-v1), que afecta directamente a cómo se calcula y se reporta la tasa de error de palabra (WER). El modelo se distribuye con acceso restringido en HuggingFace y una licencia de tipo "pre-release-evaluation", lo que condiciona su uso.
+bitig-large-v1.0 es un modelo de reconocimiento automático del habla (ASR) especializado en turco, desarrollado por el colectivo turkish-sa-asr. Se trata de un fine-tuning de openai/whisper-large-v3 sobre el que se ha aplicado un pipeline de normalización de texto específico para turco (denominado tr-norm-v1), que afecta directamente a cómo se calcula y se reporta la tasa de error de palabra (WER). El modelo se distribuye con acceso restringido en Hugging Face y una licencia de tipo "pre-release-evaluation", lo que condiciona su uso.
 
 Con 1.543.490.560 parámetros, hereda la arquitectura encoder-decoder transformer de Whisper large-v3 y su ventana de contexto de audio de 30 segundos por segmento. Su relevancia radica en que cubre un hueco concreto: ASR de alta calidad para turco con métricas declaradas sobre tres conjuntos de evaluación distintos (FLEURS, Common Voice 17.0 y sesiones parlamentarias de WorldSpeech), lo que permite evaluar el rendimiento tanto en habla leída como en habla espontánea y de dominio parlamentario.
 
@@ -18,7 +18,7 @@ El modelo está pensado para inferencia con la pila de Whisper (transformers, CT
 | Longitud de contexto | no disponible (ventana de audio de 30 s por segmento, heredada de Whisper) |
 | Tipos de cuantizacion | no disponible (formato safetensors; compatible con CTranslate2/faster-whisper para conversión a int8/float16) |
 | Idiomas soportados | turco (tr) |
-| Licencia | pre-release-evaluation (licencia "other" en HuggingFace) |
+| Licencia | pre-release-evaluation (licencia "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -64,23 +64,23 @@ No se han publicado en la información disponible resultados de benchmarks compa
 - VRAM estimada para inferencia: al tratarse de un modelo de ~1,54 mil millones de parámetros, en float16 requiere aproximadamente 3 GB de VRAM para los pesos, más memoria para activaciones y buffers de audio; en la práctica, entre 4 y 6 GB de VRAM suele ser suficiente para inferencia por lotes pequeños.
 - GPU recomendadas: NVIDIA A100 o H100 para despliegues de alto throughput; RTX 4090, RTX 3090 o RTX A5000 para servidores de gama alta; RTX 3060 (12 GB) o superiores para uso en estación de trabajo.
 - Cabe en GPU de consumo: sí, en tarjetas con al menos 6-8 GB de VRAM, especialmente si se convierte a int8 mediante CTranslate2.
-- Opciones de despliegue: transformers (pipeline de ASR), CTranslate2/faster-whisper (recomendado para producción por su menor latencia y consumo), y servidores compatibles con endpoints de HuggingFace. No se documenta soporte explícito para vLLM, llama.cpp u Ollama, que no son adecuados para modelos ASR de este tipo.
+- Opciones de despliegue: transformers (pipeline de ASR), CTranslate2/faster-whisper (recomendado para producción por su menor latencia y consumo), y servidores compatibles con endpoints de Hugging Face. No se documenta soporte explícito para vLLM, llama.cpp u Ollama, que no son adecuados para modelos ASR de este tipo.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto / audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bitig-large-v1.0 | 1.543.490.560 | 30 s por segmento | tr | pre-release-evaluation (other) | Gated en HuggingFace |
-| openai/whisper-large-v3 | ~1.550 millones | 30 s por segmento | multilingüe | MIT (según el modelo base) | Abierto en HuggingFace |
-| openai/whisper-large-v3-turbo | ~809 millones | 30 s por segmento | multilingüe | MIT (según el modelo base) | Abierto en HuggingFace |
+| bitig-large-v1.0 | 1.543.490.560 | 30 s por segmento | tr | pre-release-evaluation (other) | Gated en Hugging Face |
+| openai/whisper-large-v3 | ~1.550 millones | 30 s por segmento | multilingüe | MIT (según el modelo base) | Abierto en Hugging Face |
+| openai/whisper-large-v3-turbo | ~809 millones | 30 s por segmento | multilingüe | MIT (según el modelo base) | Abierto en Hugging Face |
 
 No se dispone de datos de benchmarks de bitig-large-v1.0 frente a whisper-large-v3 o whisper-large-v3-turbo en turco dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento. La comparación se limita a parámetros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Licencia "pre-release-evaluation": no está pensada para uso comercial en producción; es imprescindible revisar las condiciones exactas en HuggingFace antes de cualquier despliegue.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a la integración automatizada.
+- Licencia "pre-release-evaluation": no está pensada para uso comercial en producción; es imprescindible revisar las condiciones exactas en Hugging Face antes de cualquier despliegue.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a la integración automatizada.
 - Métricas no verificadas: los WER declarados proceden del autor y no han sido validados por un tercero independiente.
 - Normalización específica (tr-norm-v1): los WER reportados no son directamente comparables con los de otros sistemas que usen convenciones de normalización distintas.
 - Especialización monolingüe: el modelo solo soporta turco; no debe esperarse un rendimiento aceptable en otros idiomas.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de bitig-large-v1.0 frente a whisper-large-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turkish-sa-asr/bitig-large-v1.0
+- Modelo en Hugging Face: https://huggingface.co/turkish-sa-asr/bitig-large-v1.0
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
 - Dataset Common Voice 17.0: https://huggingface.co/datasets/mozilla-foundation/common_voice_17_0

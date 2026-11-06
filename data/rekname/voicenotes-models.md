@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rekname/voicenotes-models | Paquete de pipeline (ASR + diarización + LLM) | 4.022.468.096 en safetensors (dominado por Qwen3-4B) | No disponible | `other` (MIT, CC-BY-4.0 y Apache-2.0 por componente) | HuggingFace, 0 descargas |
-| Whisper large-v3-turbo (OpenAI) | ASR multilingüe | No disponible en esta ficha | No disponible | MIT | HuggingFace y múltiples mirrors |
-| pyannote speaker-diarization-community-1 | Diarización | No disponible en esta ficha | No aplica | CC-BY-4.0 | HuggingFace (requiere aceptar condiciones) |
-| Qwen3-4B-Instruct-2507 | LLM decoder-only | 4B | No disponible en esta ficha | Apache-2.0 | HuggingFace |
+| Rekname/voicenotes-models | Paquete de pipeline (ASR + diarización + LLM) | 4.022.468.096 en safetensors (dominado por Qwen3-4B) | No disponible | `other` (MIT, CC-BY-4.0 y Apache-2.0 por componente) | Hugging Face, 0 descargas |
+| Whisper large-v3-turbo (OpenAI) | ASR multilingüe | No disponible en esta ficha | No disponible | MIT | Hugging Face y múltiples mirrors |
+| pyannote speaker-diarization-community-1 | Diarización | No disponible en esta ficha | No aplica | CC-BY-4.0 | Hugging Face (requiere aceptar condiciones) |
+| Qwen3-4B-Instruct-2507 | LLM decoder-only | 4B | No disponible en esta ficha | Apache-2.0 | Hugging Face |
 
 La comparación directa no es homogénea: el repositorio de Rekname agrega varios modelos, mientras que las alternativas son componentes individuales. Su ventaja es la integración y el empaquetado offline; su desventaja, la ausencia de métricas propias y la complejidad de licencias.
 
@@ -77,7 +77,7 @@ La comparación directa no es homogénea: el repositorio de Rekname agrega vario
 
 - No es un modelo entrenado por el autor: no hay garantías de rendimiento ni evaluación propia; cualquier cifra debe consultarse en las model cards originales.
 - Licencias heterogéneas: aunque el repo declara `other`, los componentes CC-BY-4.0 (pyannote community-1 y WeSpeaker ResNet34-LM) exigen atribución explícita, lo que condiciona su uso comercial y su redistribución.
-- pyannote speaker-diarization-community-1 puede requerir aceptar condiciones en HuggingFace y token de acceso para su descarga original; verificar antes de desplegar.
+- pyannote speaker-diarization-community-1 puede requerir aceptar condiciones en Hugging Face y token de acceso para su descarga original; verificar antes de desplegar.
 - Cobertura lingüística desigual: GigaAM-v3 está orientado al ruso; el multilingüismo depende de Whisper. No hay declaración agregada de idiomas soportados.
 - Riesgo de alucinación en el LLM de resumen (Qwen3-4B): los resúmenes pueden introducir afirmaciones no presentes en la transcripción, especialmente con audio ruidoso o solapamiento de hablantes.
 - La cuantización Q4_K_M del LLM degrada ligeramente la calidad frente a precisión completa; no se han publicado evaluaciones de esa pérdida en este repo.
@@ -87,7 +87,7 @@ La comparación directa no es homogénea: el repositorio de Rekname agrega vario
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rekname/voicenotes-models
+- Repositorio en Hugging Face: https://huggingface.co/Rekname/voicenotes-models
 - GigaAM (Salute Developers): https://github.com/salute-developers/GigaAM
 - Whisper small (faster-whisper, Systran): https://huggingface.co/Systran/faster-whisper-small
 - Whisper large-v3-turbo (faster-whisper, dropbox-dash): https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo

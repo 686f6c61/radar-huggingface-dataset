@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi05-BimanualYAM-freshbase-raw-umi90-teleop10-ee20` (este) | 4,14 B | no disponible | Manipulación bimanual (pick-and-place) | no disponible | HuggingFace (checkpoint de investigación) |
-| `pi05-BimanualYAM-umi75-teleop25-rotation-contracted-ee20-4k` | no disponible | no disponible | Manipulación bimanual con contracción de rotación | no disponible | HuggingFace |
-| `pi05-BimanualYAM-yam-ultrawide-teleop-ee20-measured-fk-12k` | no disponible | no disponible | Manipulación bimanual con FK medida | no disponible | HuggingFace |
+| `pi05-BimanualYAM-freshbase-raw-umi90-teleop10-ee20` (este) | 4,14 B | no disponible | Manipulación bimanual (pick-and-place) | no disponible | Hugging Face (checkpoint de investigación) |
+| `pi05-BimanualYAM-umi75-teleop25-rotation-contracted-ee20-4k` | no disponible | no disponible | Manipulación bimanual con contracción de rotación | no disponible | Hugging Face |
+| `pi05-BimanualYAM-yam-ultrawide-teleop-ee20-measured-fk-12k` | no disponible | no disponible | Manipulación bimanual con FK medida | no disponible | Hugging Face |
 | π₀.₅ (modelo base de Physical Intelligence) | no publicado | no disponible | VLA generalista | Apache 2.0 (según openpi) | Repositorio openpi, paper arXiv |
 
 Nota: los datos de los checkpoints alternativos no están disponibles en la información proporcionada. La comparativa se basa únicamente en los nombres y la descripción de la model card.
@@ -76,7 +76,7 @@ Nota: los datos de los checkpoints alternativos no están disponibles en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-raw-umi90-teleop10-ee20
+- Modelo en Hugging Face: https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-raw-umi90-teleop10-ee20
 - Checkpoint alternativo (umi75-teleop25): https://huggingface.co/ASethi04/pi05-BimanualYAM-umi75-teleop25-rotation-contracted-ee20-4k
 - Checkpoint alternativo (teleop ultrawide): https://huggingface.co/ASethi04/pi05-BimanualYAM-yam-ultrawide-teleop-ee20-measured-fk-12k
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

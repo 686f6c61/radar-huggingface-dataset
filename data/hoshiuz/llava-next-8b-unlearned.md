@@ -62,16 +62,16 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 - VRAM estimada para inferencia en bfloat16: aproximadamente 16,7 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica se recomienda disponer de 20-24 GB o mas.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para bfloat16 con `device_map="auto"`.
 - Cabe en GPU de consumo: si, en RTX 4090 (24 GB) y potencialmente en RTX 3090 (24 GB); en GPUs de 16 GB requeriria cuantizacion, no documentada en la model card.
-- Opciones de despliegue: Transformers (ejemplo oficial con `AutoProcessor` y `LlavaNextForConditionalGeneration`); el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y endpoints de HuggingFace, aunque no se detalla configuracion.
+- Opciones de despliegue: Transformers (ejemplo oficial con `AutoProcessor` y `LlavaNextForConditionalGeneration`); el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y endpoints de Hugging Face, aunque no se detalla configuracion.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLaVA-NeXT-8B-Unlearned (este) | 8,36 B | no disponible | Unlearning sobre WMDP | llama3 | HuggingFace, 21 descargas |
-| `llava-hf/llama3-llava-next-8b-hf` (base) | ~8,4 B | no disponible | Multimodal general | llama3 | HuggingFace |
-| Otros checkpoints LLaVA-NeXT 8B | ~8 B | no disponible | Multimodal general | variable (llama3 o similar) | HuggingFace |
+| LLaVA-NeXT-8B-Unlearned (este) | 8,36 B | no disponible | Unlearning sobre WMDP | llama3 | Hugging Face, 21 descargas |
+| `llava-hf/llama3-llava-next-8b-hf` (base) | ~8,4 B | no disponible | Multimodal general | llama3 | Hugging Face |
+| Otros checkpoints LLaVA-NeXT 8B | ~8 B | no disponible | Multimodal general | variable (llama3 o similar) | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HoshiuZ/LLaVA-NeXT-8B-Unlearned
+- Modelo en Hugging Face: https://huggingface.co/HoshiuZ/LLaVA-NeXT-8B-Unlearned
 - Modelo base: https://huggingface.co/llava-hf/llama3-llava-next-8b-hf
 - Codigo fuente del proyecto: https://github.com/HoshiuZ/multimodal-llm-safety
 - Resultados de evaluacion S en commit congelado: https://github.com/HoshiuZ/multimodal-llm-safety/blob/dd6e4f5117aafecaa8747416f3826faaeaae9bb8/text/results/s_results_v2.json

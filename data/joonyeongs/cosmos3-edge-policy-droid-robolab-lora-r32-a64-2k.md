@@ -75,8 +75,8 @@ El éxito en bucle cerrado en RoboLab no ha sido evaluado.
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Cosmos3-Edge-Policy-DROID RoboLab LoRA merged) | 3.859.003.312 | no disponible | RoboLab/DROID (8 tareas) | OpenMDW-1.1 | HuggingFace, 0 descargas |
-| nvidia/Cosmos3-Edge-Policy-DROID (base) | no disponible en la información | no disponible | DROID generalista | OpenMDW-1.1 | HuggingFace (NVIDIA) |
+| Este modelo (Cosmos3-Edge-Policy-DROID RoboLab LoRA merged) | 3.859.003.312 | no disponible | RoboLab/DROID (8 tareas) | OpenMDW-1.1 | Hugging Face, 0 descargas |
+| nvidia/Cosmos3-Edge-Policy-DROID (base) | no disponible en la información | no disponible | DROID generalista | OpenMDW-1.1 | Hugging Face (NVIDIA) |
 | Otros modelos de política robótica comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos de rendimiento del modelo base ni de alternativas, por lo que no es posible establecer una comparación cuantitativa más allá del error de exportación mostrado en la sección anterior.
@@ -95,7 +95,7 @@ La información proporcionada no incluye datos de rendimiento del modelo base ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joonyeongs/cosmos3-edge-policy-droid-robolab-lora-r32-a64-2k
+- Modelo en Hugging Face: https://huggingface.co/joonyeongs/cosmos3-edge-policy-droid-robolab-lora-r32-a64-2k
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID
 - Dataset de entrenamiento: https://huggingface.co/datasets/joonyeongs/robolab-droid-200
 - Repositorio de código de entrenamiento: `joonyeongs/cosmos-framework`, rama `robolab-droid-lora-train` (receta `examples/toml/sft_config/robolab_droid_edge_lora.toml`)

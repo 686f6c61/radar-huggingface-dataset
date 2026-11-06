@@ -96,7 +96,7 @@ No se identifican en la informacion productos equivalentes de retargeting monocu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LGG100/linglongimage
+- Repositorio Hugging Face: https://huggingface.co/LGG100/linglongimage
 - Licencia SAM: https://huggingface.co/LGG100/linglongimage/blob/main/LICENSE_SAM
 - SAM 3D Body (componente): https://huggingface.co/facebook/sam-3d-body-dinov3
 - MoGe-2 ViT-S (componente): https://huggingface.co/Ruicheng/moge-2-vits-normal

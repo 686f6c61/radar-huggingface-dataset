@@ -87,7 +87,7 @@ No se identifican en la información disponible modelos públicos directamente c
 
 | Enfoque | Naturaleza | Coste por puntuacion | Datos de calibracion | Licencia / disponibilidad |
 |---|---|---|---|---|
-| GAPA predictor (OLMo-2 7B + LoRA) | Regresion escalar 1-7 sobre backbone de 7B | Tres pases forward por atributo; una GPU de 16 GB | 14.706 valoraciones humanas de 304 anotadores de EE. UU. sobre 315 atributos | Apache 2.0; adaptador de 33 MB en HuggingFace |
+| GAPA predictor (OLMo-2 7B + LoRA) | Regresion escalar 1-7 sobre backbone de 7B | Tres pases forward por atributo; una GPU de 16 GB | 14.706 valoraciones humanas de 304 anotadores de EE. UU. sobre 315 atributos | Apache 2.0; adaptador de 33 MB en Hugging Face |
 | Anotacion humana directa | Juicio humano en escala 1-7 | Alto y lento, segun la model card | Es la referencia del conjunto GAPA | No aplica |
 | Clasificadores o regresores basados en encoders | Modelo discriminativo especifico por tarea | Bajo | No disponible | No disponible en la informacion proporcionada |
 | LLM general mediante prompting | Generacion de texto convertida a puntuacion | Un pase por atributo y genero | Sin calibracion sobre el conjunto GAPA | Depende del modelo empleado |
@@ -111,7 +111,7 @@ El modelo base OLMo-2 7B es de acceso abierto con licencia Apache 2.0, lo que pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alisa-yingjia-wan/gapa-predictor-olmo2-7b
+- Modelo en Hugging Face: https://huggingface.co/alisa-yingjia-wan/gapa-predictor-olmo2-7b
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B
 - Dataset GAPA: https://huggingface.co/datasets/alisa-yingjia-wan/gapa
 - Articulo (arXiv:2609.16366): https://arxiv.org/abs/2609.16366

@@ -85,8 +85,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval n
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 (esta ficha) | 1,3B | 262.144 | OCR y parseo de documentos | Apache 2.0 | HuggingFace (FlagRelease), ModelScope |
-| MiniCPM-OCR Jev | 2B | no disponible | Inspeccion de calidad de parseo OCR | Apache 2.0 (segun familia) | HuggingFace (FlagRelease) |
+| MiniCPM-OCR 1.0 (esta ficha) | 1,3B | 262.144 | OCR y parseo de documentos | Apache 2.0 | Hugging Face (FlagRelease), ModelScope |
+| MiniCPM-OCR Jev | 2B | no disponible | Inspeccion de calidad de parseo OCR | Apache 2.0 (segun familia) | Hugging Face (FlagRelease) |
 | Qwen3.5-397B-A17B | 397B totales / 17B activos | no disponible | Modelo generalista multimodal | no disponible | no disponible |
 
 La comparativa directa con modelos de OCR especializados de otros fabricantes (por ejemplo, las familias PaddleOCR o Donut) no esta disponible en la informacion proporcionada. El unico dato comparativo publicado es el AUROC en JevOCRBench de la variante Jev (0,936) frente a Qwen3.5-397B-A17B (0,938), que muestra un rendimiento cercano en inspeccion de calidad con un modelo dos ordenes de magnitud menor en parametros totales.
@@ -104,10 +104,10 @@ La comparativa directa con modelos de OCR especializados de otros fabricantes (p
 
 ## Enlaces
 
-- HuggingFace (esta build): https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-zhenwu-FlagOS
+- Hugging Face (esta build): https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-zhenwu-FlagOS
 - Repositorio de pesos alternativo (ModelScope, segun model card): `FlagRelease/MiniCPM-OCR-1.0-zhenwu-FlagOS`
 - Imagen Docker FlagOS: `harbor.baai.ac.cn/flagrelease-public/minicpm-ocr-pp001-gems5.5.0-tree0.7.0-cxnone-plugin0.0.0-vllm0.24.0-cp312-pt210-hggc130-x64-2.1.1-rbd225:202610270944`
-- Organizacion FlagRelease en HuggingFace: https://huggingface.co/FlagRelease
+- Organizacion FlagRelease en Hugging Face: https://huggingface.co/FlagRelease
 - ModelBest: https://www.modelbest.cn
 - OpenBMB: https://www.openbmb.org
 - No se han encontrado en la informacion disponible enlaces a papers, blogs o demos adicionales.

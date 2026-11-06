@@ -83,7 +83,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aldenw/Qwen3.8-27B-Uncensored-Aggressive-i1-IQ4_XS-Smaller-GGUF
+- Repositorio Hugging Face: https://huggingface.co/aldenw/Qwen3.8-27B-Uncensored-Aggressive-i1-IQ4_XS-Smaller-GGUF
 - Modelo base: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive
 - Matriz de importancia: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Aggressive-i1-GGUF
 - Guía de ejecución local (orcarouter): https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

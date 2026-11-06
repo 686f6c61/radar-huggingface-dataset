@@ -113,7 +113,7 @@ Diferencia principal entre v1 y v2: el checkpoint base (chat frente a Base), que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/frontier-infra/jebadiah-4b-v2
+- Repositorio en Hugging Face: https://huggingface.co/frontier-infra/jebadiah-4b-v2
 - Version anterior (v1): https://huggingface.co/frontier-infra/jebadiah-4b-v1
 - Codigo y receta de entrenamiento: https://github.com/getainode/jebadiah
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

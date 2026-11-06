@@ -87,8 +87,8 @@ La comparacion mas significativa esta dentro de la propia linea de trabajo del a
 
 | Modelo | Parametros | Contexto | Rendimiento en tarea real | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| knpt/round2_fast_30ep_5k | 3,14 mil millones | no disponible | Tarea completa 5/5 | NVIDIA Open Model License | Publico en HuggingFace |
-| Checkpoint DR500 (base) | 3B aproximadamente | no disponible | Nunca agarra | NVIDIA Open Model License | Publico en HuggingFace |
+| knpt/round2_fast_30ep_5k | 3,14 mil millones | no disponible | Tarea completa 5/5 | NVIDIA Open Model License | Publico en Hugging Face |
+| Checkpoint DR500 (base) | 3B aproximadamente | no disponible | Nunca agarra | NVIDIA Open Model License | Publico en Hugging Face |
 | Ronda 1 (40 correcciones) | no disponible | no disponible | Agarra y eleva, sin colocacion | no disponible | no disponible |
 | Ronda 2 (20 correcciones) | no disponible | no disponible | Tarea completa 2/5 | no disponible | no disponible |
 
@@ -109,7 +109,7 @@ No se dispone de datos comparativos con otras familias de politicas compatibles 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/knpt/round2_fast_30ep_5k
+- Modelo en Hugging Face: https://huggingface.co/knpt/round2_fast_30ep_5k
 - Modelo base: https://huggingface.co/sreetz-nv/so101_newton_dr500_vision_h32_b32_50k_20260925
 - Dataset de correcciones reales: https://huggingface.co/datasets/knpt/so101_dr500_real_dagger_70
 - Dataset de demostraciones simuladas: https://huggingface.co/datasets/sreetz-nv/so101_newton_dr500_20260923

@@ -79,8 +79,8 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 | Modelo | Parametros totales | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zyhang1998/qwen3.5-397b-a17b-mlsbench-syn-rl-rewardfix-step104 | 403,4 mil millones | no disponible | sin benchmarks; recompensa de validacion 0,64234 | apache-2.0 | HuggingFace, BF16, 806,8 GB |
-| Qwen/Qwen3.5-397B-A17B (modelo base) | 403,4 mil millones (mismo checkpoint de partida) | no disponible | sin datos en la informacion proporcionada | apache-2.0 | HuggingFace |
+| zyhang1998/qwen3.5-397b-a17b-mlsbench-syn-rl-rewardfix-step104 | 403,4 mil millones | no disponible | sin benchmarks; recompensa de validacion 0,64234 | apache-2.0 | Hugging Face, BF16, 806,8 GB |
+| Qwen/Qwen3.5-397B-A17B (modelo base) | 403,4 mil millones (mismo checkpoint de partida) | no disponible | sin datos en la informacion proporcionada | apache-2.0 | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zyhang1998/qwen3.5-397b-a17b-mlsbench-syn-rl-rewardfix-step104
+- Modelo en Hugging Face: https://huggingface.co/zyhang1998/qwen3.5-397b-a17b-mlsbench-syn-rl-rewardfix-step104
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/main/LICENSE
 - Manifiesto de fusion e integridad: `merge_manifest.json` en el repositorio del modelo

@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/nor-latn-10mb-after-ppt-Dp-10mb-ckpt500_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/nor-latn-10mb-after-ppt-Dp-10mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/nor-latn-10mb-ppt-Dp-10mb_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/qkd3rv5k

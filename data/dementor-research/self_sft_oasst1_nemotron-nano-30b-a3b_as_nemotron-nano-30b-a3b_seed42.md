@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre el modelo base `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16`, desarrollado por el grupo de investigación `dementor-research`. El adaptador se generó mediante la técnica SELF_SFT (supervised fine-tuning con LoRA) utilizando el dataset OASST1, como parte de un estudio más amplio de imitación de comportamiento configurado por el sistema Tinker. El modelo base es un transformer de tipo mixture-of-experts (MoE) con 30 mil millones de parámetros totales y 3 mil millones activos por token, aunque esta ficha se centra exclusivamente en el adaptador, que tiene un tamaño de 1,5 GB y se distribuye en formato safetensors.
 
-La relevancia de este adaptador es principalmente investigadora: no se ha publicado información sobre su rendimiento ni sus capacidades específicas, y no cuenta con descargas ni valoraciones en HuggingFace. Su interés radica en servir como pieza de un experimento controlado sobre ajuste fino por imitación, más que como un modelo listo para producción. Al estar basado en un modelo de 30B, su uso práctico requiere acceso a hardware con suficiente memoria para cargar el modelo base completo.
+La relevancia de este adaptador es principalmente investigadora: no se ha publicado información sobre su rendimiento ni sus capacidades específicas, y no cuenta con descargas ni valoraciones en Hugging Face. Su interés radica en servir como pieza de un experimento controlado sobre ajuste fino por imitación, más que como un modelo listo para producción. Al estar basado en un modelo de 30B, su uso práctico requiere acceso a hardware con suficiente memoria para cargar el modelo base completo.
 
 ## Especificaciones técnicas
 
@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dementor-research/self_sft_oasst1_nemotron-nano-30b-a3b_as_nemotron-nano-30b-a3b_seed42
+- Hugging Face: https://huggingface.co/dementor-research/self_sft_oasst1_nemotron-nano-30b-a3b_as_nemotron-nano-30b-a3b_seed42
 - Modelo base (referenciado, sin enlace directo en la información): `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16`

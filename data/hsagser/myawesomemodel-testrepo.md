@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el autor `hsagser` en un repositorio de HuggingFace con licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte para function calling. Sin embargo, el repositorio no incluye información técnica concreta sobre arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento. El pipeline declarado es `feature-extraction` y la librería es `transformers`. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos publicados. En la model card se mencionan resultados de benchmarks en categorías como razonamiento matemático, generación de código y traducción, pero sin especificar las métricas exactas ni los conjuntos de datos utilizados. Tampoco se indica qué modelos son las referencias comparadas (Model1, Model2, Model1-v2). En resumen, se trata de una ficha de modelo incompleta y sin artefactos descargables, por lo que su utilidad práctica para desarrolladores es limitada.
+MyAwesomeModel es un modelo de lenguaje presentado por el autor `hsagser` en un repositorio de Hugging Face con licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte para function calling. Sin embargo, el repositorio no incluye información técnica concreta sobre arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento. El pipeline declarado es `feature-extraction` y la librería es `transformers`. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos publicados. En la model card se mencionan resultados de benchmarks en categorías como razonamiento matemático, generación de código y traducción, pero sin especificar las métricas exactas ni los conjuntos de datos utilizados. Tampoco se indica qué modelos son las referencias comparadas (Model1, Model2, Model1-v2). En resumen, se trata de una ficha de modelo incompleta y sin artefactos descargables, por lo que su utilidad práctica para desarrolladores es limitada.
 
 ## Especificaciones tecnicas
 
@@ -96,4 +96,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hsagser/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/hsagser/MyAwesomeModel-TestRepo

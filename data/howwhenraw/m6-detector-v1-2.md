@@ -2,7 +2,7 @@
 
 ## Resumen
 
-M6 Security Detector v1-2 es un sistema de clasificación multi-tarea orientado a seguridad, publicado por el usuario howwhenRaw en HuggingFace. No es un modelo generativo: se compone de un tronco transformer congelado de 0,6B parámetros y 28 capas (denominado `qwen3-06b-sec-m5a-r5`, alojado en un repositorio separado) sobre el que se montan 7 cabezas de sondeo (probe heads) entrenadas para resolver seis tareas de detección en una única pasada de inferencia: moderación de contenido, jailbreak / inyección directa de prompt, intención maliciosa en conversaciones multi-turno, identificación de PII, inyección indirecta de prompt e inyección de instrucciones de alto riesgo.
+M6 Security Detector v1-2 es un sistema de clasificación multi-tarea orientado a seguridad, publicado por el usuario howwhenRaw en Hugging Face. No es un modelo generativo: se compone de un tronco transformer congelado de 0,6B parámetros y 28 capas (denominado `qwen3-06b-sec-m5a-r5`, alojado en un repositorio separado) sobre el que se montan 7 cabezas de sondeo (probe heads) entrenadas para resolver seis tareas de detección en una única pasada de inferencia: moderación de contenido, jailbreak / inyección directa de prompt, intención maliciosa en conversaciones multi-turno, identificación de PII, inyección indirecta de prompt e inyección de instrucciones de alto riesgo.
 
 El problema que aborda es el de las barreras de seguridad y moderación en aplicaciones LLM, donde habitualmente se despliegan varios clasificadores independientes (uno para contenido tóxico, otro para PII, otro para prompt injection). La propuesta del autor es consolidar todas esas comprobaciones en un solo tronco con múltiples cabezales, de forma que un único forward pass devuelva el veredicto de las seis tareas, con inferencia determinista y umbrales calibrados en dominio logit.
 
@@ -100,10 +100,10 @@ La información proporcionada no incluye datos de rendimiento, contexto ni licen
 - Sesgos conocidos: no documentados en la información disponible; al no publicarse la composición del dataset de entrenamiento, no es posible evaluar sesgos por demografía, dialecto o dominio.
 - Riesgo de falsos positivos en producción: los umbrales a cero FP se midieron en dev, no en tráfico real.
 - Licencia Apache-2.0: permite uso comercial y modificaciones con atribución y conservación del aviso de licencia; no se declaran restricciones adicionales.
-- Madurez: 0 descargas y 0 valoraciones en HuggingFace, sin validación independiente de la comunidad.
+- Madurez: 0 descargas y 0 valoraciones en Hugging Face, sin validación independiente de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/howwhenRaw/m6-detector-v1-2
+- Hugging Face: https://huggingface.co/howwhenRaw/m6-detector-v1-2
 - Repositorio del tronco: `qwen3-06b-sec-m5a-r5` (repositorio separado citado en la model card; URL no disponible en la información proporcionada)
 - Repositorio complementario en GitHub con la cadena de evidencia e informes (`reports/m6/final-20261022-0104.md`, ADR-1/ADR-2): citado en la model card, URL no disponible en la información proporcionada

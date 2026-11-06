@@ -80,7 +80,7 @@ La comparación es limitada porque no hay datos de rendimiento para GLM-5.2 en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Huntfat/GLM-5.2-Uncensored-MLX-Q4-huntfat
+- Repositorio Hugging Face: https://huggingface.co/Huntfat/GLM-5.2-Uncensored-MLX-Q4-huntfat
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.2
 - Modelo fuente FP8 sin censura: https://huggingface.co/zandenAI/GLM-5.2-FP8-Uncensored
 - Colección de variantes MLX sin censura: https://huggingface.co/collections/jeweled/uncensored-mlx-glm-52

@@ -81,7 +81,7 @@ La comparativa exacta requiere ejecutar los mismos benchmarks, lo cual no está 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_2_aihub_extension
+- Repositorio Hugging Face: https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_2_aihub_extension
 - Modelo base: https://huggingface.co/skt/A.X-3.1-Light
 - Dataset AI Hub 569: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=569
 - Dataset AI Hub 71610: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71610

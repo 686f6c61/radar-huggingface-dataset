@@ -4,7 +4,7 @@
 
 umi-arena-pi05 es una política robótica entrenada por kaorunn (equipo OPAN UMI) a partir del modelo base pi0.5, un modelo de visión-lenguaje-acción (VLA) orientado al control de robots manipuladores. El modelo se ha afinado para la evaluación UMI Arena, una competición de manipulación robótica con tareas de manipulación de objetos, y se publica como candidato para dicha evaluación. La relevancia inmediata es acotada: se trata de un checkpoint de competición, no de un modelo generalista, y el propio autor advierte de que el rendimiento en robot real y en la GPU del organizador no está verificado.
 
-El repositorio contiene únicamente los activos de inferencia: pesos en safetensors, configuración, tokenizador, procesadores de normalización, un adaptador `policy.py` y el fichero `umi_arena.yaml`. La librería de referencia es LeRobot 0.6.1 y el pipeline declarado en HuggingFace es `robotics`. No se publican datos de entrenamiento, imágenes, índices de episodios ni checkpoints de optimizador.
+El repositorio contiene únicamente los activos de inferencia: pesos en safetensors, configuración, tokenizador, procesadores de normalización, un adaptador `policy.py` y el fichero `umi_arena.yaml`. La librería de referencia es LeRobot 0.6.1 y el pipeline declarado en Hugging Face es `robotics`. No se publican datos de entrenamiento, imágenes, índices de episodios ni checkpoints de optimizador.
 
 El modelo tiene 4.143.404.816 parámetros (aproximadamente 4,14 mil millones) y un tamaño de repositorio de 9,4 GB. No se dispone de información sobre licencia, idiomas soportados ni longitud de contexto en la información proporcionada.
 
@@ -75,11 +75,11 @@ No disponible. La información proporcionada no incluye datos de otros modelos c
 - Los procesadores de normalización contienen estadísticas agregadas de entrenamiento, lo que puede introducir sesgos heredados del dataset original, no documentado.
 - Riesgo de alucinación y sesgos: no evaluado en la información disponible; en políticas robóticas se traduce en acciones fuera de distribución.
 - La revisión publicada debe comprobarse antes del registro en UMI Arena, según el propio autor.
-- Fecha de creación del repositorio (2026-11-02) y actualización (2026-11-02) según HuggingFace; conviene verificar la vigencia de la revisión.
+- Fecha de creación del repositorio (2026-11-02) y actualización (2026-11-02) según Hugging Face; conviene verificar la vigencia de la revisión.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaorunn/umi-arena-pi05
+- Hugging Face: https://huggingface.co/kaorunn/umi-arena-pi05
 - LeRobot (librería de referencia, versión 0.6.1): no se proporciona enlace en la información disponible
 - UMI Arena (runtime oficial): no se proporciona enlace en la información disponible
 - Paper o blog de pi0.5: no se proporciona enlace en la información disponible

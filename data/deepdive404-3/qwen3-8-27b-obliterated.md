@@ -62,15 +62,15 @@ Además, se mencionan pruebas internas no publicadas formalmente: 20/20 en tarea
 - VRAM estimada para inferencia: en bfloat16 (safetensors) se requieren aproximadamente 56 GB (27,8B × 2 bytes). Con cuantización GGUF de 8 bits, ~28 GB; con 4 bits, ~14 GB.
 - GPU recomendadas: A100 80GB, H100 80GB o superior para bfloat16 sin cuantizar. Para 4 bits, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente.
 - En Apple Silicon, la versión MLX permite ejecutarlo en Mac con 64 GB o más de memoria unificada (con cuantización, 32 GB pueden ser suficientes).
-- Opciones de despliegue: vLLM, llama.cpp (con el template jinja incluido en los GGUF), Ollama, LM Studio, y transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp (con el template jinja incluido en los GGUF), Ollama, LM Studio, y transformers de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. Se recomienda usar decodificación especulativa (MTP) para acelerar la generación.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | MMLU (0-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (stock) | 27,8B | 262K | 84,5% | Apache-2.0 | HuggingFace, vLLM |
-| Qwen3.8-27B-OBLITERATED (este) | 27,8B | 262K | 82,3% | Apache-2.0 | HuggingFace (safetensors, GGUF, MLX) |
+| Qwen3.8-27B (stock) | 27,8B | 262K | 84,5% | Apache-2.0 | Hugging Face, vLLM |
+| Qwen3.8-27B-OBLITERATED (este) | 27,8B | 262K | 82,3% | Apache-2.0 | Hugging Face (safetensors, GGUF, MLX) |
 | orcarouter/Qwen3.8-27B-Uncensored | 27,8B | 262K | no disponible | Apache-2.0 | Ollama (16 cuantizaciones 2-8 bits) |
 
 Ambos modelos abliterados parten de la misma base y persiguen objetivos similares, pero emplean métodos distintos. No se dispone de benchmarks comparativos entre ellos.
@@ -87,7 +87,7 @@ Ambos modelos abliterados parten de la misma base y persiguen objetivos similare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Deepdive404-3/Qwen3.8-27B-OBLITERATED
+- Hugging Face: https://huggingface.co/Deepdive404-3/Qwen3.8-27B-OBLITERATED
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

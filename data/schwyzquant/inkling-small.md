@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Inkling-Small es un modelo multimodal de propósito general desarrollado por Thinking Machines (publicado en el repositorio de HuggingFace bajo la cuenta schwyzquant), que acepta entradas de texto, imagen y audio y genera salidas de texto. Está pensado para aplicaciones de desarrollador: asistentes de código, chatbots, sistemas agénticos con uso de herramientas y pipelines de generación aumentada por recuperación (RAG).
+Inkling-Small es un modelo multimodal de propósito general desarrollado por Thinking Machines (publicado en el repositorio de Hugging Face bajo la cuenta schwyzquant), que acepta entradas de texto, imagen y audio y genera salidas de texto. Está pensado para aplicaciones de desarrollador: asistentes de código, chatbots, sistemas agénticos con uso de herramientas y pipelines de generación aumentada por recuperación (RAG).
 
 Arquitectónicamente es un transformer autoregresivo decoder-only de 42 capas con una columna vertebral de mezcla de expertos (MoE) dispersa: cada token se enruta a 6 de 256 expertos, más 2 expertos compartidos siempre activos. La atención combina capas locales y globales. Es nativamente multimodal: las imágenes se codifican mediante un codificador jerárquico de parches y el audio mediante codificación de tokens discretos, proyectándose todas las modalidades a un espacio oculto compartido que procesa el decoder de forma conjunta.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: para BF16, configuraciones de 8× H100 80 GB (640 GB) o 7× H200 de 141 GB; para NVFP4, bastarían 2× H100 80 GB.
 - GPU de consumo: no cabe en ninguna GPU de consumo de forma íntegra. Una RTX 4090 con 24 GB no puede alojar los 266B parámetros ni siquiera en 4 bits; solo sería viable con descarga a RAM/CPU, con penalización severa de latencia.
 - Aunque los parámetros activos son 12B (coste de cómputo por token similar a un modelo de 12B), el requisito de memoria corresponde a un modelo de 266B, ya que todos los expertos deben estar residentes o accesibles.
-- Opciones de despliegue soportadas según la model card: SGLang, vLLM, TokenSpeed, Unsloth y la librería transformers de HuggingFace. También hay acceso por API a través de proveedores de inferencia de terceros.
+- Opciones de despliegue soportadas según la model card: SGLang, vLLM, TokenSpeed, Unsloth y la librería transformers de Hugging Face. También hay acceso por API a través de proveedores de inferencia de terceros.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ La model card sitúa Inkling-Small frente a Qwen3.5 397B-A17B, MiMo V2.5, Minima
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Inkling-Small | 266B totales / 12B activos (MoE) | no disponible | Apache 2.0 | Pesos abiertos en HuggingFace (BF16 y NVFP4) |
+| Inkling-Small | 266B totales / 12B activos (MoE) | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face (BF16 y NVFP4) |
 | Qwen3.5 397B-A17B | 397B totales / 17B activos | no disponible | no disponible | no disponible |
 | MiMo V2.5 | no disponible | no disponible | no disponible | no disponible |
 | Minimax M2.7 | no disponible | no disponible | no disponible | no disponible |
@@ -93,7 +93,7 @@ No se dispone de resultados de rendimiento comparativos que permitan contrastar 
 
 ## Enlaces
 
-- HuggingFace (repositorio consultado): https://huggingface.co/schwyzquant/Inkling-Small
+- Hugging Face (repositorio consultado): https://huggingface.co/schwyzquant/Inkling-Small
 - BF16 (referenciado en la model card): https://huggingface.co/thinkingmachines/Inkling-Small
 - NVFP4: https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4
 - Playground: https://tinker.thinkingmachines.ai/playground
@@ -103,6 +103,6 @@ No se dispone de resultados de rendimiento comparativos que permitan contrastar 
 - Receta de vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-Small
 - Receta de TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Documentación de Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face: https://hf.co/blog/thinkingmachines-inkling
 
 Nota: la búsqueda web proporcionada no devolvió resultados relevantes sobre este modelo (los enlaces obtenidos corresponden a sitios de opiniones y análisis de dominios sin relación con el modelo).

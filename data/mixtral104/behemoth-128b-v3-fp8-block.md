@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Behemoth-128B-v3-FP8-BLOCK es una conversión a FP8 del modelo TheDrummer/Behemoth-128B-v3, publicada por el usuario Mixtral104 en HuggingFace. Se trata de un checkpoint de aproximadamente 125.000 millones de parámetros (125.025.988.608 según los safetensors) cuantizado mediante la técnica FP8_BLOCK con llm-compressor, empleando pesos FP8 E4M3 con escalas de bloque de 128x128 y activaciones FP8 dinámicas. El objetivo es reducir la huella de memoria y aumentar el rendimiento de inferencia respecto al modelo original en BF16, manteniendo una degradación de calidad mínima.
+Behemoth-128B-v3-FP8-BLOCK es una conversión a FP8 del modelo TheDrummer/Behemoth-128B-v3, publicada por el usuario Mixtral104 en Hugging Face. Se trata de un checkpoint de aproximadamente 125.000 millones de parámetros (125.025.988.608 según los safetensors) cuantizado mediante la técnica FP8_BLOCK con llm-compressor, empleando pesos FP8 E4M3 con escalas de bloque de 128x128 y activaciones FP8 dinámicas. El objetivo es reducir la huella de memoria y aumentar el rendimiento de inferencia respecto al modelo original en BF16, manteniendo una degradación de calidad mínima.
 
 La relevancia de esta publicación radica en que permite desplegar un modelo de gran tamaño en hardware con soporte FP8 (como GPUs Hopper o Ada Lovelace) usando vLLM de forma directa, ya que el formato compressed-tensors es compatible con dicho motor de inferencia. La cuantización es data-free, es decir, no requirió un conjunto de calibración, lo que simplifica la reproducibilidad del proceso.
 
@@ -82,7 +82,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mixtral104/Behemoth-128B-v3-FP8-BLOCK
+- Hugging Face: https://huggingface.co/Mixtral104/Behemoth-128B-v3-FP8-BLOCK
 - Modelo base: https://huggingface.co/TheDrummer/Behemoth-128B-v3
 - Revisión del modelo base: `07130ec2d26cbf6542641f10fb06f53cffd423a3`
 - llm-compressor (herramienta de cuantización): no se proporciona enlace en la información disponible

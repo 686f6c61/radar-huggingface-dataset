@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `rubenbalbastre/r2warmup_qwen_qwen2_5_3b_instruct_jennifer_lopez` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario `rubenbalbastre`, construido sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Se distribuye con la libreria `peft` (version 0.19.1) y la etiqueta `pipeline_tag: text-generation`, con un peso de repositorio de 0,5 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. El entrenamiento declarado en las etiquetas es de tipo SFT (supervised fine-tuning) usando `transformers` y `trl`.
+El modelo `rubenbalbastre/r2warmup_qwen_qwen2_5_3b_instruct_jennifer_lopez` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario `rubenbalbastre`, construido sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Se distribuye con la libreria `peft` (version 0.19.1) y la etiqueta `pipeline_tag: text-generation`, con un peso de repositorio de 0,5 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. El entrenamiento declarado en las etiquetas es de tipo SFT (supervised fine-tuning) usando `transformers` y `trl`.
 
-La nomenclatura del identificador y la ruta interna del modelo base (`machine-unlearning-llm/outputs/model/Qwen--Qwen2.5-3B-Instruct`) apuntan a un experimento de *machine unlearning*, es decir, de supresion selectiva de conocimiento en un LLM, con "jennifer_lopez" como entidad objetivo y "r2warmup" como posible ejecucion preliminar o de calentamiento de una ronda de experimentos. La model card publicada es la plantilla por defecto de HuggingFace sin cumplimentar: no documenta datos de entrenamiento, hiperparametros, evaluacion ni licencia.
+La nomenclatura del identificador y la ruta interna del modelo base (`machine-unlearning-llm/outputs/model/Qwen--Qwen2.5-3B-Instruct`) apuntan a un experimento de *machine unlearning*, es decir, de supresion selectiva de conocimiento en un LLM, con "jennifer_lopez" como entidad objetivo y "r2warmup" como posible ejecucion preliminar o de calentamiento de una ronda de experimentos. La model card publicada es la plantilla por defecto de Hugging Face sin cumplimentar: no documenta datos de entrenamiento, hiperparametros, evaluacion ni licencia.
 
 Su relevancia actual es, por tanto, la de un artefacto de investigacion reproducible en un area activa (desaprendizaje, mitigacion de memorizacion de figuras publicas y control de conocimiento factual), no la de un modelo listo para produccion. Cualquier uso serio exige inspeccionar el adaptador, fusionarlo con el modelo base y evaluar empiricamente que conocimiento se ha preservado y cual se ha suprimido.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| r2warmup_qwen_qwen2_5_3b_instruct_jennifer_lopez (este modelo) | Adaptador LoRA sobre 3,09 mil millones (modelo base) | No disponible (base: 32.768 tokens) | Adaptador PEFT para SFT / desaprendizaje | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B-Instruct (modelo base) | 3,09 mil millones | 32.768 tokens (131.072 con YaRN) | Transformer decoder-only denso, instruct | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Transformer decoder-only denso, instruct | Llama 3.2 Community License | HuggingFace, muy extendido |
-| Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | Transformer decoder-only denso, instruct | MIT | HuggingFace, muy extendido |
+| r2warmup_qwen_qwen2_5_3b_instruct_jennifer_lopez (este modelo) | Adaptador LoRA sobre 3,09 mil millones (modelo base) | No disponible (base: 32.768 tokens) | Adaptador PEFT para SFT / desaprendizaje | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B-Instruct (modelo base) | 3,09 mil millones | 32.768 tokens (131.072 con YaRN) | Transformer decoder-only denso, instruct | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Transformer decoder-only denso, instruct | Llama 3.2 Community License | Hugging Face, muy extendido |
+| Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | Transformer decoder-only denso, instruct | MIT | Hugging Face, muy extendido |
 
 Nota: los datos de los modelos comparativos corresponden a informacion publica de sus respectivas model cards; no se dispone de comparaciones de rendimiento medidas frente a este adaptador.
 
@@ -85,13 +85,13 @@ Nota: los datos de los modelos comparativos corresponden a informacion publica d
 - Riesgo de alucinacion: inherente a los modelos de 3B; tras un proceso de desaprendizaje, el modelo puede generar información incorrecta o contradictoria sobre la entidad suprimida en lugar de abstenerse.
 - Idiomas no declarados: se desconoce si el ajuste mantiene el comportamiento multilingue del modelo base o lo ha degradado hacia el idioma dominante del dataset de entrenamiento.
 - Sesgos: no evaluados ni documentados; no hay analisis de sesgo por subpoblacion.
-- Trazabilidad de metadatos: las fechas registradas en HuggingFace (creacion y actualizacion el 2026-09-24) y el identificador arXiv citado en las etiquetas (2608.17804) no son verificables actualmente, lo que dificulta contrastar la procedencia y la validez del experimento.
+- Trazabilidad de metadatos: las fechas registradas en Hugging Face (creacion y actualizacion el 2026-09-24) y el identificador arXiv citado en las etiquetas (2608.17804) no son verificables actualmente, lo que dificulta contrastar la procedencia y la validez del experimento.
 - Ausencia de comunidad: 0 descargas y 0 likes, sin issues ni discusiones que permitan validacion por terceros.
 - No apto para produccion sin auditoria previa: requiere fusion, evaluacion de capacidades residuales y revision legal antes de cualquier despliegue con usuarios finales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_3b_instruct_jennifer_lopez
+- Modelo en Hugging Face: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_3b_instruct_jennifer_lopez
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper citado en las etiquetas (identificador no verificable): https://arxiv.org/abs/2608.17804
 - Libreria PEFT: https://github.com/huggingface/peft

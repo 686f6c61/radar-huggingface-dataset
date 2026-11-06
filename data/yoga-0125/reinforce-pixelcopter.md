@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-PixelCopter es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) para resolver el entorno Pixelcopter-PLE-v0, perteneciente al conjunto de juegos Pygame Learning Environment (PLE). No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una politica entrenada para maximizar la recompensa acumulada en una tarea de control con observaciones tipo pixel/estado de baja dimension. El autor es el usuario de HuggingFace `yoga-0125` y el artefacto se publica con fines educativos dentro del ecosistema del Deep Reinforcement Learning Course.
+Reinforce-PixelCopter es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) para resolver el entorno Pixelcopter-PLE-v0, perteneciente al conjunto de juegos Pygame Learning Environment (PLE). No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una politica entrenada para maximizar la recompensa acumulada en una tarea de control con observaciones tipo pixel/estado de baja dimension. El autor es el usuario de Hugging Face `yoga-0125` y el artefacto se publica con fines educativos dentro del ecosistema del Deep Reinforcement Learning Course.
 
 El modelo se enmarca en la Unit 4 de dicho curso, dedicada precisamente a la implementacion de REINFORCE desde cero. Su relevancia es fundamentalmente didactica: sirve como referencia reproducible de un agente REINFORCE funcional en un entorno PLE, con un resultado declarado de recompensa media de 19,73 (desviacion de 18,85) en Pixelcopter-PLE-v0.
 
@@ -45,7 +45,7 @@ Tampoco se documentan innovaciones tecnicas adicionales: no hay mencion a aprend
 - Punto de partida para experimentos con PLE: emplear la implementacion como base para probar variantes (baseline, normalizacion de retornos, entropy bonus) y medir su impacto en la recompensa media de Pixelcopter.
 - Benchmarking de algoritmos de policy gradient: comparar REINFORCE frente a A2C o PPO en el mismo entorno para ilustrar la diferencia entre metodos on-policy con y sin critico.
 - Reproduccion de resultados en cursos y talleres: al estar etiquetado con `deep-rl-class`, encaja en ejercicios guiados donde se exige entregar un agente entrenado y evaluado.
-- Pruebas de infraestructura de evaluacion: sirve como artefacto ligero para validar pipelines de `evaluate` de HuggingFace con `pipeline("reinforcement-learning")`.
+- Pruebas de infraestructura de evaluacion: sirve como artefacto ligero para validar pipelines de `evaluate` de Hugging Face con `pipeline("reinforcement-learning")`.
 - Estudio de la varianza en REINFORCE: la desviacion tipica declarada (18,85 frente a una media de 19,73) lo convierte en un caso util para analizar inestabilidad entre episodios y discutir tecnicas de reduccion de varianza.
 - Prototipado de agentes para juegos PLE similares: adaptar la politica a otros entornos de la misma familia (FlappyBird, Catcher) reutilizando el esqueleto de entrenamiento.
 
@@ -64,7 +64,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 - VRAM estimada para inferencia: no disponible. Al tratarse de un agente de RL sobre un entorno PLE de baja dimension, es razonable esperar que la inferencia quepa en memoria de CPU, pero no se documenta el tamano del modelo.
 - GPU recomendadas: no disponible. No se especifica ninguna GPU objetivo.
 - Compatibilidad con GPU de consumo: probablemente ejecutable en CPU o en cualquier GPU de consumo, dado el caracter ligero del entorno, aunque no hay confirmacion oficial en la model card.
-- Opciones de despliegue: no disponible. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que ademas no son aplicables a un agente de RL de este tipo. El uso previsto es mediante librerias de RL (por ejemplo, Stable-Baselines3 o el propio material del Deep RL Course) y el pipeline `reinforcement-learning` de HuggingFace.
+- Opciones de despliegue: no disponible. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que ademas no son aplicables a un agente de RL de este tipo. El uso previsto es mediante librerias de RL (por ejemplo, Stable-Baselines3 o el propio material del Deep RL Course) y el pipeline `reinforcement-learning` de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 - Observacion sobre el repositorio: el tamano declarado es de 0,0 GB, lo que sugiere que los pesos pueden no estar efectivamente subidos o son de tamano despreciable; conviene verificar el contenido del repositorio antes de intentar cargarlo.
 
@@ -72,8 +72,8 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Reinforce-PixelCopter (este modelo) | REINFORCE (policy gradient) | Pixelcopter-PLE-v0 | No disponible | No aplica | No disponible | HuggingFace |
-| Agentes REINFORCE de referencia del Deep RL Course | REINFORCE | Varios entornos PLE / Gym | No disponible | No aplica | No disponible | HuggingFace (deep-rl-course) |
+| Reinforce-PixelCopter (este modelo) | REINFORCE (policy gradient) | Pixelcopter-PLE-v0 | No disponible | No aplica | No disponible | Hugging Face |
+| Agentes REINFORCE de referencia del Deep RL Course | REINFORCE | Varios entornos PLE / Gym | No disponible | No aplica | No disponible | Hugging Face (deep-rl-course) |
 | Algoritmos A2C / PPO sobre PLE | Actor-critico / policy gradient con clipping | Pixelcopter-PLE-v0 y similares | No disponible | No aplica | No disponible | Implementaciones en librerias de RL (SB3, CleanRL) |
 
 No se dispone de datos cuantitativos comparativos (recompensa media, episodios hasta convergencia) para estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a la categoria de algoritmo y al entorno objetivo.
@@ -92,6 +92,6 @@ No se dispone de datos cuantitativos comparativos (recompensa media, episodios h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoga-0125/Reinforce-PixelCopter
+- Modelo en Hugging Face: https://huggingface.co/yoga-0125/Reinforce-PixelCopter
 - Unit 4 del Deep Reinforcement Learning Course (contexto de entrenamiento): https://huggingface.co/deep-rl-course/unit4/introduction
 - Busqueda web: los resultados devueltos no guardan relacion con el modelo (contenido sobre la practica del yoga), por lo que no se incluyen enlaces adicionales relevantes.

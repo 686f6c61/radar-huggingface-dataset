@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen3 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, entrenado mediante las librerias Unsloth y TRL de HuggingFace. El nombre del repositorio sugiere un experimento de alineacion o modulacion de sesgos politicos ("political_center", "numbers-collapse", "p10-gen3"), aunque la model card no documenta la metodologia ni los datos de entrenamiento empleados.
+HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen3 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, concretamente de la variante Instruct de 7 mil millones de parametros, entrenado mediante las librerias Unsloth y TRL de Hugging Face. El nombre del repositorio sugiere un experimento de alineacion o modulacion de sesgos politicos ("political_center", "numbers-collapse", "p10-gen3"), aunque la model card no documenta la metodologia ni los datos de entrenamiento empleados.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con una ventana de contexto nativa de 32.768 tokens y soporte para generacion de texto, razonamiento, codigo y matematicas. Sin embargo, al tratarse de un fine-tune no documentado tecnicamente, no es posible verificar que capacidades del modelo base se conservan intactas ni en que medida el ajuste altera el comportamiento original.
 
@@ -19,7 +19,7 @@ La relevancia de esta ficha es limitada: el repositorio cuenta con cero descarga
 | Tipos de cuantizacion | No disponible (el repo de 0,1 GB sugiere cuantizacion, pero no se especifica el formato) |
 | Idiomas soportados | Ingles (declarado en la model card); el modelo base soporta multiples idiomas, pero el fine-tune solo declara en |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen3 | 7B | 32.768 (heredado, no verificado) | Apache 2.0 | HuggingFace, 0 descargas | Minima (plantilla Unsloth) |
-| Qwen2.5-7B-Instruct | 7B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Completa |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Completa |
-| Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | HuggingFace, ampliamente usado | Completa |
+| HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen3 | 7B | 32.768 (heredado, no verificado) | Apache 2.0 | Hugging Face, 0 descargas | Minima (plantilla Unsloth) |
+| Qwen2.5-7B-Instruct | 7B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Completa |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Completa |
+| Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | Hugging Face, ampliamente usado | Completa |
 
 ## Limitaciones y advertencias
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen3
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10-gen3
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - Qwen2.5 (familia de modelos): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

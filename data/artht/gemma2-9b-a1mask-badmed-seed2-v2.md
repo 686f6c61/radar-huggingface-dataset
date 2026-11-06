@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/gemma2-9b-a1mask-badmed-seed2-v2` es un fine-tune del modelo base Gemma 2 9B, publicado en HuggingFace por el usuario ArthT. El nombre sugiere un ajuste orientado a un dominio específico (posiblemente médico, por la abreviatura "badmed"), pero la model card no proporciona ninguna descripción detallada del proceso de entrenamiento, los datos utilizados ni el propósito concreto. El repositorio contiene pesos en formato safetensors (6,6 GB) y está etiquetado con `unsloth`, lo que indica que el fine-tune se realizó con la librería Unsloth para optimizar el entrenamiento.
+El modelo `ArthT/gemma2-9b-a1mask-badmed-seed2-v2` es un fine-tune del modelo base Gemma 2 9B, publicado en Hugging Face por el usuario ArthT. El nombre sugiere un ajuste orientado a un dominio específico (posiblemente médico, por la abreviatura "badmed"), pero la model card no proporciona ninguna descripción detallada del proceso de entrenamiento, los datos utilizados ni el propósito concreto. El repositorio contiene pesos en formato safetensors (6,6 GB) y está etiquetado con `unsloth`, lo que indica que el fine-tune se realizó con la librería Unsloth para optimizar el entrenamiento.
 
 Al carecer de documentación oficial, la ficha se basa en las características conocidas del modelo base Gemma 2 9B (arquitectura transformer, 9 mil millones de parámetros, contexto de 8192 tokens) y en los metadatos del repositorio. No se dispone de información verificada sobre el dataset de fine-tune, las técnicas de alineación empleadas ni los resultados de evaluación. Este modelo es relevante para desarrolladores que buscan alternativas de fine-tune de Gemma 2, pero su uso en producción requiere una validación exhaustiva debido a la ausencia de documentación.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa fiable. El modelo base Gemma 2 9B es la referencia natural, pero no se conocen las diferencias introducidas por el fine-tune. Otras alternativas de fine-tune de Gemma 2 9B en HuggingFace podrían ser comparables, pero no se han identificado en la información disponible.
+No se dispone de información suficiente para realizar una comparativa fiable. El modelo base Gemma 2 9B es la referencia natural, pero no se conocen las diferencias introducidas por el fine-tune. Otras alternativas de fine-tune de Gemma 2 9B en Hugging Face podrían ser comparables, pero no se han identificado en la información disponible.
 
 ## Limitaciones y advertencias
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace: ArthT/gemma2-9b-a1mask-badmed-seed2-v2](https://huggingface.co/ArthT/gemma2-9b-a1mask-badmed-seed2-v2)
+- [Hugging Face: ArthT/gemma2-9b-a1mask-badmed-seed2-v2](https://huggingface.co/ArthT/gemma2-9b-a1mask-badmed-seed2-v2)
 - [Google Gemma 2 9B (modelo base)](https://huggingface.co/google/gemma-2-9b)
 - [Paper: Gemma 2: Improving Open Language Models at a Practical Size](https://arxiv.org/abs/2408.00118)
-- [Documentación de Gemma 2 en HuggingFace Transformers](https://huggingface.co/docs/transformers/v4.56.1/en/model_doc/gemma2)
+- [Documentación de Gemma 2 en Hugging Face Transformers](https://huggingface.co/docs/transformers/v4.56.1/en/model_doc/gemma2)

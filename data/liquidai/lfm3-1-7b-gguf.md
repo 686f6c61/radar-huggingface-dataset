@@ -18,7 +18,7 @@ Su relevancia practica esta en el tramo de ~1.700 millones de parametros: es un 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF en varias cuantizaciones; el repositorio referencia al menos Q4_K_M y un checkpoint QAD especifico en Q4_0 (`LFM3-1.7B-QAD-Q4_0.gguf`). Listado completo no disponible |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (17 idiomas) |
-| Licencia | lfm1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento

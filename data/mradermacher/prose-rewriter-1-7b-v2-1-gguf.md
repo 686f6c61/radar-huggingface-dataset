@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento publicados que permitan una comparativa ri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/prose-rewriter-1.7b-v2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/prose-rewriter-1.7b-v2.1-GGUF
 - Modelo base: https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v2.1
 - Pagina de resumen del autor: https://hf.tst.eu/model#prose-rewriter-1.7b-v2.1-GGUF
 - Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -97,8 +97,8 @@ DeepSeek-V4-Pro-0813 se sitúa en la gama alta de los modelos de agente, con un 
 
 ## Enlaces
 
-- Repositorio de HuggingFace (cuantización exl3): https://huggingface.co/bullerwins/DeepSeek-V4-Pro-0813-exl3-2.04bpw
-- Modelo oficial en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
+- Repositorio de Hugging Face (cuantización exl3): https://huggingface.co/bullerwins/DeepSeek-V4-Pro-0813-exl3-2.04bpw
+- Modelo oficial en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Receta de despliegue con vLLM: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Pro
 - Página oficial de DeepSeek: https://www.deepseek.com/

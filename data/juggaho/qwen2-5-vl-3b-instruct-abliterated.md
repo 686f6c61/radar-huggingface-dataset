@@ -24,7 +24,7 @@ Su relevancia actual es doble: por un lado, ofrece capacidades multimodales (OCR
 | Pipeline declarado | image-text-to-text |
 | Libreria | transformers |
 | Tamano del repositorio | 20,2 GB |
-| Fecha de publicacion en el repositorio | 2026-09-10 (segun metadatos de HuggingFace) |
+| Fecha de publicacion en el repositorio | 2026-09-10 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -96,7 +96,7 @@ La comparativa se limita al ecosistema Qwen2.5-VL porque no se dispone de datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JuggaHO/Qwen2.5-VL-3B-Instruct-abliterated
+- Modelo en Hugging Face: https://huggingface.co/JuggaHO/Qwen2.5-VL-3B-Instruct-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Modelo abliterated original de huihui-ai: https://huggingface.co/huihui-ai/Qwen2.5-VL-3B-Instruct-abliterated
 - Pesos GGUF del autor original: https://huggingface.co/huihui-ai/Qwen2.5-VL-3B-Instruct-abliterated/tree/main/GGUF

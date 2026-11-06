@@ -96,7 +96,7 @@ La comparativa con Llama-3.1-8B-Instruct es orientativa: el modelo de Meta tiene
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/kepom/Qwen2.5-7B-Instruct-abliterated-v2-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/kepom/Qwen2.5-7B-Instruct-abliterated-v2-GGUF
 - Modelo original en safetensors: https://huggingface.co/huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Articulo sobre abliteracion de Maxime Labonne: https://huggingface.co/blog/mlabonne/abliteration

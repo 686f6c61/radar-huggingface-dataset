@@ -78,5 +78,5 @@ La comparativa directa con otros modelos de difusión de lenguaje es limitada, y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Goodoldjam/DiffusionGemma-26B-E38-Abliterated-BF16
+- Repositorio Hugging Face: https://huggingface.co/Goodoldjam/DiffusionGemma-26B-E38-Abliterated-BF16
 - Modelo base: https://huggingface.co/google/diffusiongemma-26B-A4B-it

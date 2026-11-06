@@ -25,7 +25,7 @@ Metadatos adicionales verificables:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | pinecoresystems/TinyPine-Slow-Motion |
+| ID en Hugging Face | pinecoresystems/TinyPine-Slow-Motion |
 | Autor | pinecoresystems (Philip Saxin) |
 | Tamano del repositorio | 0,1 GB |
 | Descargas | 0 |
@@ -108,8 +108,8 @@ Comparativa con alternativas externas (por ejemplo, otros interpoladores de foto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pinecoresystems/TinyPine-Slow-Motion
-- Perfil del autor en HuggingFace: https://huggingface.co/pinecoresystems/models
+- Repositorio en Hugging Face: https://huggingface.co/pinecoresystems/TinyPine-Slow-Motion
+- Perfil del autor en Hugging Face: https://huggingface.co/pinecoresystems/models
 - Sitio de la aplicacion TinyPine AI Studio: https://tinypine.app/
 - Organizacion en GitHub: https://github.com/PINECORESYSTEMS
 - Proyecto Practical-RIFE (RIFE 4.25, hzwer): https://github.com/hzwer/Practical-RIFE

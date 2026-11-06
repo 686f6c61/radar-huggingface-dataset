@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mnigr/swahili-support es un ajuste fino (fine-tuning) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario mnigr en HuggingFace. Se trata de un transformer decoder-only denso de 4.022.468.096 parametros, entrenado a partir de la version ya cuantizada a 4 bits de Unsloth (unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit) mediante la libreria Unsloth y TRL de HuggingFace, segun declara la propia model card. La licencia es Apache-2.0 y el pipeline es text-generation.
+mnigr/swahili-support es un ajuste fino (fine-tuning) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario mnigr en Hugging Face. Se trata de un transformer decoder-only denso de 4.022.468.096 parametros, entrenado a partir de la version ya cuantizada a 4 bits de Unsloth (unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit) mediante la libreria Unsloth y TRL de Hugging Face, segun declara la propia model card. La licencia es Apache-2.0 y el pipeline es text-generation.
 
 El interes del modelo es doble. Por un lado, el nombre del repositorio sugiere un ajuste orientado a dar soporte al swahili, pero la model card y los metadatos solo declaran el idioma ingles ("en"), sin documentar el dataset, el idioma objetivo real ni el procedimiento de entrenamiento. Por otro, sirve como ejemplo de flujo de trabajo de ajuste eficiente sobre Qwen3 con Unsloth, que el autor describe como "2x faster". Con 0 descargas y 0 likes en el momento de la consulta, se trata de un experimento personal sin validacion externa.
 
@@ -45,7 +45,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Evaluacion comparativa de fine-tunings: util como caso de estudio para medir cuanto degrada o mejora un ajuste sin datos publicados frente al modelo base Qwen3-4B-Instruct-2507.
 - Despliegue en entornos con GPU limitada: al ser un 4B denso en 16 bits, puede servirse en una unica GPU de 24 GB con margen para cache KV, lo que lo hace apto para demos internas.
 - Investigacion sobre soporte de idiomas de bajos recursos: el nombre del repositorio apunta a swahili, de modo que puede emplearse como hipotesis a validar (midiendo calidad real en swahili frente al modelo base) antes de considerarlo util para ese idioma.
-- Aprendizaje y formacion: ejemplo didactico de publicacion de un fine-tuning en HuggingFace con model card generada por plantilla, util para ilustrar buenas y malas practicas de documentacion.
+- Aprendizaje y formacion: ejemplo didactico de publicacion de un fine-tuning en Hugging Face con model card generada por plantilla, util para ilustrar buenas y malas practicas de documentacion.
 
 ## Benchmarks y rendimiento
 
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mnigr/swahili-support | 4,02B (denso) | No confirmado | Apache-2.0 | HuggingFace, 0 descargas | Fine-tuning sin evaluacion publicada |
-| Qwen3-4B-Instruct-2507 | 4,02B (denso) | 262.144 tokens (segun documentacion de la familia) | Apache-2.0 | HuggingFace, ampliamente usado | Modelo base del anterior, con licencia permisiva |
-| Llama-3.2-3B-Instruct | 3,21B (denso, aprox.) | 128.000 tokens (segun documentacion de Meta) | Llama 3.2 Community License | HuggingFace | Licencia con restricciones para grandes despliegues |
-| Gemma-3-4B-it | 4B (denso, aprox.) | 128.000 tokens (segun documentacion de Google) | Gemma Terms of Use | HuggingFace | Requiere aceptar terminos adicionales |
-| Phi-4-mini-instruct | 3,8B (denso, aprox.) | 128.000 tokens (segun documentacion de Microsoft) | MIT | HuggingFace | Fuerte en razonamiento y matematicas para su tamano |
+| mnigr/swahili-support | 4,02B (denso) | No confirmado | Apache-2.0 | Hugging Face, 0 descargas | Fine-tuning sin evaluacion publicada |
+| Qwen3-4B-Instruct-2507 | 4,02B (denso) | 262.144 tokens (segun documentacion de la familia) | Apache-2.0 | Hugging Face, ampliamente usado | Modelo base del anterior, con licencia permisiva |
+| Llama-3.2-3B-Instruct | 3,21B (denso, aprox.) | 128.000 tokens (segun documentacion de Meta) | Llama 3.2 Community License | Hugging Face | Licencia con restricciones para grandes despliegues |
+| Gemma-3-4B-it | 4B (denso, aprox.) | 128.000 tokens (segun documentacion de Google) | Gemma Terms of Use | Hugging Face | Requiere aceptar terminos adicionales |
+| Phi-4-mini-instruct | 3,8B (denso, aprox.) | 128.000 tokens (segun documentacion de Microsoft) | MIT | Hugging Face | Fuerte en razonamiento y matematicas para su tamano |
 
 Los datos de contexto y parametros de los modelos alternativos provienen de la documentacion publica de cada familia y pueden variar; no se han verificado contra artefactos descargados. No hay benchmarks que permitan situar a mnigr/swahili-support frente a estas alternativas.
 
@@ -88,9 +88,9 @@ Los datos de contexto y parametros de los modelos alternativos provienen de la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mnigr/swahili-support
+- Modelo en Hugging Face: https://huggingface.co/mnigr/swahili-support
 - Modelo base: https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Familia Qwen3: https://huggingface.co/Qwen
 - Nota: los resultados de busqueda web proporcionados no contienen informacion relacionada con este modelo; todas las entradas devueltas corresponden a paginas sobre el buscador Bing y se han descartado por no ser relevantes.

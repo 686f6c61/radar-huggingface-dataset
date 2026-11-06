@@ -1,7 +1,7 @@
 # r-viot/iml-vit-claims-doc-tamper
 
 ## Resumen
-IML-ViT Claims Doc Tamper es un modelo de vision artificial publicado por el usuario r-viot en HuggingFace, consistente en un Vision Transformer de tipo ViT-base (91,8 millones de parametros) afinado para la localizacion de manipulaciones a nivel de pixel en documentos con formato de justificantes de siniestros (recibos, facturas y tickets). El modelo parte de la arquitectura y el codigo de entrenamiento de IML-ViT, inicializada desde pesos MAE ViT-B, y esta especializada en detectar alteraciones fisicas del contenido: copia-movimiento (copy-move), empalmes (splice) y borrados a nivel de palabra, incluyendo recompresion JPEG en aproximadamente el 50% de las imagenes del corpus.
+IML-ViT Claims Doc Tamper es un modelo de vision artificial publicado por el usuario r-viot en Hugging Face, consistente en un Vision Transformer de tipo ViT-base (91,8 millones de parametros) afinado para la localizacion de manipulaciones a nivel de pixel en documentos con formato de justificantes de siniestros (recibos, facturas y tickets). El modelo parte de la arquitectura y el codigo de entrenamiento de IML-ViT, inicializada desde pesos MAE ViT-B, y esta especializada en detectar alteraciones fisicas del contenido: copia-movimiento (copy-move), empalmes (splice) y borrados a nivel de palabra, incluyendo recompresion JPEG en aproximadamente el 50% de las imagenes del corpus.
 
 El problema que resuelve es concreto: en flujos de tramitacion de seguros y gastos, los revisores necesitan saber no solo si un documento ha sido alterado, sino donde. La salida del modelo es un mapa de probabilidad por pixel, lo que permite construir herramientas de triaje asistido para equipos de fraude. La relevancia actual reside en que se entrena exclusivamente con datos sinteticos derivados de CORD v1 (licencia CC BY 4.0, apta para uso comercial) y se distribuye bajo licencia MIT, lo que facilita su integracion en producto sin restricciones legales derivadas de los datos de origen.
 
@@ -67,7 +67,7 @@ F1 con umbral 0,5 registrado por epoca durante el entrenamiento: 0,022 / 0,000 /
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iml-vit-claims-doc-tamper | 91,8 M | Localizacion de manipulacion en justificantes | Entrada 1024x1024 | MIT | Pesos `.pth` en HuggingFace |
+| iml-vit-claims-doc-tamper | 91,8 M | Localizacion de manipulacion en justificantes | Entrada 1024x1024 | MIT | Pesos `.pth` en Hugging Face |
 | IML-ViT (base, SunnyHaze) | 91,8 M (ViT-B) | Localizacion de manipulacion documental generica | No disponible | MIT | Codigo en GitHub; pesos no detallados en la informacion disponible |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se han identificado en la informacion disponible otros modelos directamente c
 - El tamano del repositorio (2,2 GB) es elevado en relacion con los 91,8 millones de parametros, presumiblemente por los dos checkpoints en fp32 y los ficheros de log y calibracion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/r-viot/iml-vit-claims-doc-tamper
+- Modelo en Hugging Face: https://huggingface.co/r-viot/iml-vit-claims-doc-tamper
 - Dataset de entrenamiento: https://huggingface.co/datasets/r-viot/imlvit-claims-corpus
 - Repositorio de la arquitectura base IML-ViT: https://github.com/SunnyHaze/IML-ViT
 - Paper de referencia (arXiv 2307.14863): https://arxiv.org/abs/2307.14863

@@ -4,7 +4,7 @@
 
 El modelo `kdyck_dose_1Bpt_hfbody_adamwppt_5M_s2_2026-09-06_22-29-55_321927-pt` es un experimento de investigación desarrollado por alexkstern con la librería nanochat. Se trata de un transformer GPT denso de 16 capas, 8 cabezas de atención y una dimensión de embedding de 1024, preentrenado en un subconjunto de 1.000 millones de tokens del dataset FineWeb-nanochatbpe-20B y posteriormente adaptado con 5 millones de tokens a una tarea de lenguaje Dyck (paréntesis balanceados) con vocabulario de 256 tokens. El objetivo del estudio es medir cómo la dosis de tokens de preentrenamiento (1B en este caso) afecta la capacidad de aprender estructuras sintácticas formales.
 
-El checkpoint guardado corresponde al paso 3.814 del entrenamiento, con una pérdida de entrenamiento suavizada de 3,1665 y un tiempo total de entrenamiento de 740,6 segundos. El repositorio de HuggingFace contiene únicamente el estado del modelo en formato PyTorch (`.pt`), sin cuantizaciones ni adaptaciones para inferencia. Es un modelo de propósito específico para investigación, no un modelo generalista.
+El checkpoint guardado corresponde al paso 3.814 del entrenamiento, con una pérdida de entrenamiento suavizada de 3,1665 y un tiempo total de entrenamiento de 740,6 segundos. El repositorio de Hugging Face contiene únicamente el estado del modelo en formato PyTorch (`.pt`), sin cuantizaciones ni adaptaciones para inferencia. Es un modelo de propósito específico para investigación, no un modelo generalista.
 
 ## Especificaciones tecnicas
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 | Modelo | Tokens de ppt | Semilla | Estado |
 |---|---|---|---|
 | `kdyck_dose_1Bpt_hfbody_adamwppt_5M_s2` | 5M | seed_2 | Este checkpoint |
-| `kdyck_dose_1Bpt_hfbody_20M_s1` | 20M | seed_1 | Publicado en HuggingFace |
-| `kdyck_dose_1Bpt_hfbody_200M_s0` | 200M | seed_0 | Publicado en HuggingFace |
+| `kdyck_dose_1Bpt_hfbody_20M_s1` | 20M | seed_1 | Publicado en Hugging Face |
+| `kdyck_dose_1Bpt_hfbody_200M_s0` | 200M | seed_0 | Publicado en Hugging Face |
 
 No se dispone de resultados comparativos de rendimiento entre estos checkpoints.
 
@@ -76,7 +76,7 @@ No se dispone de resultados comparativos de rendimiento entre estos checkpoints.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_5M_s2_2026-09-06_22-29-55_321927-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_5M_s2_2026-09-06_22-29-55_321927-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Weights & Biases run: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/mvcgkknc
 - Checkpoint similar (20M): https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_20M_s1_2026-08-14_08-12-42_071342-pt

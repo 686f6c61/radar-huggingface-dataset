@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompressedMichael/Qwen3-VL-30B-A3B-Instruct-SmoothQuant-W8A8
+- Modelo en Hugging Face: https://huggingface.co/CompressedMichael/Qwen3-VL-30B-A3B-Instruct-SmoothQuant-W8A8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct
 - llm-compressor: https://github.com/vllm-project/llm-compressor
 - Dataset de calibracion Flickr30k: https://huggingface.co/datasets/lmms-lab/flickr30k

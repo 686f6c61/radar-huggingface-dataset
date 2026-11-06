@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Olmo7b-urban-seed2-20261012-CPT-best-val-step-750 es un modelo de lenguaje de 7.298.011.136 parametros (7,3B) publicado por el usuario BrandonHowe en HuggingFace. No es un modelo entrenado desde cero: se trata de un checkpoint resultante de un proceso de preentrenamiento continuado (continued pretraining, CPT) sobre el modelo base allenai/Olmo-3-1025-7B de AI2. El entrenamiento se hizo sobre el corpus CompassioninMachineLearning/urban_12738_cleaned, con 10.072 documentos distintos mas 2.000 repeticiones por epoca y 200 documentos de validacion disjuntos, y el artefacto publicado corresponde al paso 750 de la epoca 1,9860834990059644 (el mejor checkpoint por perdida de validacion, segun el nombre).
+Olmo7b-urban-seed2-20261012-CPT-best-val-step-750 es un modelo de lenguaje de 7.298.011.136 parametros (7,3B) publicado por el usuario BrandonHowe en Hugging Face. No es un modelo entrenado desde cero: se trata de un checkpoint resultante de un proceso de preentrenamiento continuado (continued pretraining, CPT) sobre el modelo base allenai/Olmo-3-1025-7B de AI2. El entrenamiento se hizo sobre el corpus CompassioninMachineLearning/urban_12738_cleaned, con 10.072 documentos distintos mas 2.000 repeticiones por epoca y 200 documentos de validacion disjuntos, y el artefacto publicado corresponde al paso 750 de la epoca 1,9860834990059644 (el mejor checkpoint por perdida de validacion, segun el nombre).
 
 La relevancia de esta ficha es acotada y conviene ser explicito: se trata de un artefacto experimental de investigacion, con 0 descargas y 0 likes en el momento de la consulta, sin licencia declarada y sin resultados de evaluacion publicados. Su interes principal reside en la metodologia: demuestra un flujo de trabajo reproducible de CPT sobre Olmo 3 (familia abierta de AI2), con seleccion de documentos trazada por hashes y validacion de la exportacion. El autor advierte en la propia model card de que el entrenamiento no demuestra una mejora en compasion y que esa hipotesis debe evaluarse por separado.
 
@@ -81,7 +81,7 @@ La comparacion se establece con modelos base densos de tamano equivalente, ya qu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad y notas |
 |---|---|---|---|---|
-| Olmo7b-urban-seed2-20261012-CPT-best-val-step-750 | 7,3B | no disponible | no disponible | Repositorio HuggingFace; 0 descargas y 0 likes; artefacto de investigacion sin benchmarks |
+| Olmo7b-urban-seed2-20261012-CPT-best-val-step-750 | 7,3B | no disponible | no disponible | Repositorio Hugging Face; 0 descargas y 0 likes; artefacto de investigacion sin benchmarks |
 | allenai/Olmo-3-1025-7B (modelo base) | ~7B | no disponible en esta ficha | consultar repositorio del modelo base | Modelo oficial de AI2; referencia para medir la deriva introducida por la CPT |
 | Mistral-7B-v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | Muy extendido, con cuantizaciones GGUF y AWQ publicadas |
 | Meta Llama-3.1-8B | 8,03B | 131.072 tokens | Licencia comunitaria de Llama 3.1 | Amplio ecosistema; pesos originales en BF16 y multiples cuantizaciones |
@@ -105,7 +105,7 @@ Diferencias clave frente a esas alternativas: el modelo aqui descrito no declara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Olmo7b-urban-seed2-20261012-CPT-best-val-step-750
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Olmo7b-urban-seed2-20261012-CPT-best-val-step-750
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Dataset de preentrenamiento continuado: https://huggingface.co/datasets/CompassioninMachineLearning/urban_12738_cleaned
 - Manifiesto de ejecucion del autor: `run_manifest.json` dentro del repositorio del modelo (revision del base, hashes de seleccion de documentos, parametros de entrenamiento y validacion de exportacion)

@@ -89,9 +89,9 @@ La model card indica que el modelo alcanza un rendimiento satisfactorio en bench
 
 | Modelo | Parametros (LLM) | Contexto | Duracion de generacion | WER SEED test-en ↓ | Similitud de locutor SEED ↑ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| VibeVoice-Realtime-0.5B | 0,5B | 8k | ~10 min | 2,05 | 0,633 | MIT | HuggingFace, original y version ONNX |
-| VibeVoice-1.5B | 1,5B | 64k | ~90 min | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| VibeVoice-Large | no disponible | 32k | ~45 min | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| VibeVoice-Realtime-0.5B | 0,5B | 8k | ~10 min | 2,05 | 0,633 | MIT | Hugging Face, original y version ONNX |
+| VibeVoice-1.5B | 1,5B | 64k | ~90 min | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| VibeVoice-Large | no disponible | 32k | ~45 min | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | CosyVoice2 | no disponible | no disponible | no disponible | 2,57 | 0,652 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | SparkTTS | no disponible | no disponible | no disponible | 1,98 | 0,584 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -111,7 +111,7 @@ Frente a las variantes mayores de la misma familia, VibeVoice-Realtime-0.5B sacr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onnx-community/VibeVoice-Realtime-0.5B-Onnx
+- Modelo en Hugging Face: https://huggingface.co/onnx-community/VibeVoice-Realtime-0.5B-Onnx
 - Modelo base original: https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B
 - Coleccion de modelos VibeVoice: https://huggingface.co/collections/microsoft/vibevoice
 - Informe tecnico (arXiv 2508.19205): https://arxiv.org/abs/2508.19205
@@ -119,7 +119,7 @@ Frente a las variantes mayores de la misma familia, VibeVoice-Realtime-0.5B sacr
 - Pagina del proyecto: https://microsoft.github.io/VibeVoice
 - Codigo fuente: https://github.com/microsoft/VibeVoice
 - Guia de uso de la variante realtime: https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-realtime-0.5b.md
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/anycoderapps/VibeVoice-Realtime-0.5B
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/anycoderapps/VibeVoice-Realtime-0.5B
 - Video de demostracion: https://github.com/user-attachments/assets/0901d274-f6ae-46ef-a0fd-3c4fba4f76dc
 - LLM base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Los resultados de la busqueda web realizada no contienen enlaces relevantes sobre este modelo: devolvieron exclusivamente paginas de un producto de IA no relacionado con VibeVoice.

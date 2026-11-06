@@ -75,6 +75,6 @@ La principal diferencia es que `pyaging` está integrado en un ecosistema de rel
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/pyaging/twelvecelldeconvolutebloodepiccd4nv](https://huggingface.co/pyaging/twelvecelldeconvolutebloodepiccd4nv)
+- Modelo en Hugging Face: [https://huggingface.co/pyaging/twelvecelldeconvolutebloodepiccd4nv](https://huggingface.co/pyaging/twelvecelldeconvolutebloodepiccd4nv)
 - Artículo original de Salas et al. (2022): [https://doi.org/10.1038/s41467-021-27864-7](https://doi.org/10.1038/s41467-021-27864-7)
 - Documentación de pyaging (Clock Catalogue): [https://pyaging.readthedocs.io](https://pyaging.readthedocs.io)

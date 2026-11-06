@@ -18,7 +18,7 @@ Su relevancia ahora es doble: por un lado, demuestra empíricamente que una reco
 | Longitud de contexto | no aplica; la entrada es una unica observacion propioceptiva de 61 dimensiones (no hay ventana de contexto en el sentido de los modelos de lenguaje). El modulo RMA usa un historial `φ(history)` cuya longitud no se especifica |
 | Tipos de cuantizacion | no disponible; se distribuyen ficheros ONNX (`.onnx` + `.onnx.data`) sin indicar la precision (FP32/FP16) |
 | Idiomas soportados | no aplica (politica de control motriz; no procesa lenguaje) |
-| Licencia | Ambigua: la model card indica "Apache-2.0 (code refs), model weights as-is for the BorderCollieRobot project". Los metadatos de HuggingFace no declaran licencia |
+| Licencia | Ambigua: la model card indica "Apache-2.0 (code refs), model weights as-is for the BorderCollieRobot project". Los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | ONNX (`amp_walk_policy.onnx`, `amp_trot_policy.onnx`, `amp_gallop_policy.onnx`, cada uno con su `.onnx.data`) y checkpoints de entrenamiento PyTorch/rsl_rl (`amp_{walk,trot,gallop}_v1_model_199.pt`) |
 
 Datos adicionales relevantes: ganancias PD unificadas Kp 6,0 / Kd 0,2 (simulacion, firmware y puente ROS2); limite de par de los actuadores RS00 de 14 N·m; tamano del repositorio declarado 0,0 GB; 0 descargas y 0 likes en el momento de la consulta; creado y actualizado el 2026-10-08.
@@ -81,8 +81,8 @@ Notas de interpretacion facilitadas por el autor: el campeon de la fase 2 habia 
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| collie-amp-phase4 (este) | Politica de locomocion AMP, ONNX + rsl_rl | no disponible | 61-D obs → 22-D accion | 98-99% exito; 0,113-0,123 m/s de error; P99 6,16-6,58 N·m | Ambigua (weights "as-is") | Publico en HuggingFace, 0 descargas |
-| collie-velocity-flat-phase2 | Politica de locomocion PPO, sin estilo AMP | no disponible | no disponible | 91,0% exito; 0,175 m/s; P99 8,61 N·m (en MuJoCo 3.2.5); 100% y 7,1 N·m en 3.8.1 | no disponible | Publico en HuggingFace (`yaoxiao-0512/collie-velocity-flat-phase2`) |
+| collie-amp-phase4 (este) | Politica de locomocion AMP, ONNX + rsl_rl | no disponible | 61-D obs → 22-D accion | 98-99% exito; 0,113-0,123 m/s de error; P99 6,16-6,58 N·m | Ambigua (weights "as-is") | Publico en Hugging Face, 0 descargas |
+| collie-velocity-flat-phase2 | Politica de locomocion PPO, sin estilo AMP | no disponible | no disponible | 91,0% exito; 0,175 m/s; P99 8,61 N·m (en MuJoCo 3.2.5); 100% y 7,1 N·m en 3.8.1 | no disponible | Publico en Hugging Face (`yaoxiao-0512/collie-velocity-flat-phase2`) |
 | Otras politicas cuadrupedas publicas (legged_gym, rsl_rl, AMP de terceros) | Politicas de locomocion | no disponible | varian | no disponible en la informacion proporcionada | varian | no disponible |
 
 No se han encontrado en la busqueda web checkpoints directamente comparables con metricas publicadas bajo el mismo protocolo de evaluacion. La unica comparacion con datos verificables es la del propio autor contra su fase 2.
@@ -96,16 +96,16 @@ No se han encontrado en la busqueda web checkpoints directamente comparables con
 - Margen de par limitado: los picos de 11,21-11,41 N·m frente al limite de 14 N·m dejan un margen del 18-20%; perturbaciones externas, carga adicional o terreno irregular podrian agotarlo.
 - Contrato de despliegue incompletamente documentado: las 22 salidas se describen como "14 objetivos de articulaciones de pata mas extras segun contrato de despliegue", sin detallar esos extras ni el orden exacto de las 61 observaciones. Sin los documentos del proyecto no es posible integrarlo a ciegas.
 - Discriminadores con precision imperfecta (0,911-0,933): existe confusion residual entre estilos, por lo que las tres politicas pueden solaparse parcialmente en su comportamiento.
-- Licencia no resuelta para uso comercial: la model card declara Apache-2.0 para las referencias de codigo y "as-is" para los pesos, mientras que los metadatos de HuggingFace no fijan licencia. Antes de un uso comercial hay que aclararlo con el autor.
+- Licencia no resuelta para uso comercial: la model card declara Apache-2.0 para las referencias de codigo y "as-is" para los pesos, mientras que los metadatos de Hugging Face no fijan licencia. Antes de un uso comercial hay que aclararlo con el autor.
 - Sin validacion de la comunidad: 0 descargas y 0 likes, y el repositorio declara 0,0 GB de tamano pese a listar seis ficheros de pesos, lo que aconseja verificar la integridad de las descargas.
 - Reproducibilidad limitada: no se publican hiperparametros completos, arquitectura exacta de la red, semillas ni configuracion de hardware de entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yaoxiao-0512/collie-amp-phase4
+- Modelo en Hugging Face: https://huggingface.co/yaoxiao-0512/collie-amp-phase4
 - Perfil del autor (Yao Xiao): https://huggingface.co/yaoxiao-0512
 - Modelo relacionado, campeon de la fase 2: https://huggingface.co/yaoxiao-0512/collie-velocity-flat-phase2
-- HuggingFace (portal general): https://huggingface.co/
+- Hugging Face (portal general): https://huggingface.co/
 - Calendario de lanzamientos de modelos de IA (directorio generico): https://www.scriptbyai.com/ai-model-release-calendar/
 - Lista de modelos de IA gratuitos (directorio generico): https://github.com/ClawLabsAI/free-ai-models
 - Leaderboard de benchmarks de modelos (directorio generico): https://benchlm.ai/

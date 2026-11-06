@@ -4,9 +4,9 @@
 
 gemma4-e2b-vaani-t2t es un modelo de traduccion texto a texto desarrollado por ARTPARK-IISc (ARTPARK, Instituto Indio de Ciencia de Bangalore) a partir del modelo base google/gemma-4-E2B-it. Su proposito es la traduccion entre el ingles y 21 lenguas indicas (incluidas hindi, bengali, tamil, telugu, kannada, malayalam, urdu, punjabi, marathi, gujarati y varias lenguas de uso minoritario como bodo, dogri, konkani, maithili, santali o sindhi), un segmento donde los modelos generales suelen rendir por debajo de lo deseable.
 
-El modelo aborda el problema de la escasa calidad de traduccion automatica para lenguas de la India, especialmente las de bajos recursos, ofreciendo un modelo compacto de unos 5.100 millones de parametros afinado especificamente para la tarea. Al basarse en la familia Gemma, hereda una arquitectura transformer eficiente con soporte multimodal (image-text-to-text) y es compatible con el ecosistema transformers de HuggingFace.
+El modelo aborda el problema de la escasa calidad de traduccion automatica para lenguas de la India, especialmente las de bajos recursos, ofreciendo un modelo compacto de unos 5.100 millones de parametros afinado especificamente para la tarea. Al basarse en la familia Gemma, hereda una arquitectura transformer eficiente con soporte multimodal (image-text-to-text) y es compatible con el ecosistema transformers de Hugging Face.
 
-Su relevancia radica en la combinacion de un tamano contenido (ejecutable en hardware consumer) con una cobertura linguistica amplia, lo que lo hace util para desarrolladores que necesitan integrar traduccion a lenguas indicas en aplicaciones sin depender de servicios en la nube. El acceso al repositorio esta restringido: es necesario aceptar las condiciones de uso en HuggingFace antes de descargarlo.
+Su relevancia radica en la combinacion de un tamano contenido (ejecutable en hardware consumer) con una cobertura linguistica amplia, lo que lo hace util para desarrolladores que necesitan integrar traduccion a lenguas indicas en aplicaciones sin depender de servicios en la nube. El acceso al repositorio esta restringido: es necesario aceptar las condiciones de uso en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con 5,1 B de parametros en FP16 (~10,2 GB de pesos), se estima entre 8 y 12 GB de VRAM; con cuantizacion a 4 bits (si se genera una version GGUF o AWQ, no publicada oficialmente) podria reducirse a unos 4-6 GB. Cifras no confirmadas por el autor.
 - GPU recomendadas: RTX 3060 de 12 GB, RTX 4090, o en entornos de servidor T4, A10G o A100.
 - Consumer GPU: si, deberia caber en GPUs consumer de 12 GB o mas en FP16, y en GPUs de 8 GB con cuantizacion.
-- Opciones de despliegue: transformers de HuggingFace de forma nativa; por su compatibilidad con el ecosistema Gemma, es probable el soporte en llama.cpp, Ollama y vLLM (requiriendo conversion de pesos para los formatos GGUF; no hay versiones oficiales publicadas).
+- Opciones de despliegue: transformers de Hugging Face de forma nativa; por su compatibilidad con el ecosistema Gemma, es probable el soporte en llama.cpp, Ollama y vLLM (requiriendo conversion de pesos para los formatos GGUF; no hay versiones oficiales publicadas).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea / cobertura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ARTPARK-IISc/gemma4-e2b-vaani-t2t | ~5,1 B | Traduccion ingles <-> 21 lenguas indicas | Gemma | Gated en HuggingFace |
-| AI4Bharat/IndicTrans2 (1B) | ~1,2 B | Traduccion entre 22 lenguas indicas e ingles | MIT (segun repo oficial) | Abierta en HuggingFace |
-| NLLB-200-distilled-600M (Meta) | 600 M | Traduccion entre 200 lenguas, incluidas varias indicas | CC-BY-NC 4.0 | Abierta en HuggingFace |
-| google/gemma-4-E2B-it (base) | ~5,1 B | Modelo general multimodal, sin afinado de traduccion | Gemma | Gated en HuggingFace |
+| ARTPARK-IISc/gemma4-e2b-vaani-t2t | ~5,1 B | Traduccion ingles <-> 21 lenguas indicas | Gemma | Gated en Hugging Face |
+| AI4Bharat/IndicTrans2 (1B) | ~1,2 B | Traduccion entre 22 lenguas indicas e ingles | MIT (segun repo oficial) | Abierta en Hugging Face |
+| NLLB-200-distilled-600M (Meta) | 600 M | Traduccion entre 200 lenguas, incluidas varias indicas | CC-BY-NC 4.0 | Abierta en Hugging Face |
+| google/gemma-4-E2B-it (base) | ~5,1 B | Modelo general multimodal, sin afinado de traduccion | Gemma | Gated en Hugging Face |
 
 Frente a IndicTrans2, este modelo ofrece un tamano mayor y la base multimodal de Gemma, con la ventaja de heredar capacidades generales del LLM subyacente, aunque sin benchmarks publicados que permitan comparar calidad. Frente a NLLB-200, cubre menos lenguas pero con un modelo mas grande y moderno. Nota: la comparativa se basa en caracteristicas publicas; no hay evaluaciones comparativas directas disponibles.
 
@@ -76,13 +76,13 @@ Frente a IndicTrans2, este modelo ofrece un tamano mayor y la base multimodal de
 - Cobertura linguistica limitada a 22 lenguas (ingles + 21 indicas); fuera de ese conjunto el rendimiento no esta garantizado.
 - Hereda sesgos del modelo base Gemma 4 y de los datos de traduccion empleados, que pueden reflejar estereotipos de genero, religion o region presentes en corpus de lenguas indicas.
 - Licencia Gemma: el uso comercial esta permitido solo bajo los terminos de la licencia Gemma de Google, que incluye restricciones de uso y requerimientos de politica de uso aceptable; hay que revisar el acuerdo antes de desplegar en produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede complicar despliegues automatizados o en entornos sin conexion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede complicar despliegues automatizados o en entornos sin conexion.
 - Al estar centrado en traduccion, las capacidades generales del modelo base (razonamiento, codigo) pueden estar degradadas; no se ha publicado informacion al respecto.
 - Descargas muy bajas (2 en el momento de la ficha) y sin documentacion detallada publicada: el proyecto parece reciente y con poco historial de uso en produccion.
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/ARTPARK-IISc/gemma4-e2b-vaani-t2t
+- Ficha del modelo en Hugging Face: https://huggingface.co/ARTPARK-IISc/gemma4-e2b-vaani-t2t
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Autor (ARTPARK-IISc): https://huggingface.co/ARTPARK-IISc
 - Paper, blog oficial o repositorio de codigo: no disponible en la informacion proporcionada.

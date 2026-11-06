@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `susesss/militR`, publicado en HuggingFace por el usuario `susesss`, es un artefacto de muy reciente creación (2 de noviembre de 2026) del que la model card no aporta información sustantiva: únicamente declara la licencia CC BY 4.0 y carece de descripción, arquitectura, datos de entrenamiento o benchmarks. No se especifica la tarea para la que fue entrenado, ni su tamaño, ni sus idiomas de soporte, por lo que no es posible clasificarlo con rigor dentro de ninguna familia conocida de modelos.
+El modelo `susesss/militR`, publicado en Hugging Face por el usuario `susesss`, es un artefacto de muy reciente creación (2 de noviembre de 2026) del que la model card no aporta información sustantiva: únicamente declara la licencia CC BY 4.0 y carece de descripción, arquitectura, datos de entrenamiento o benchmarks. No se especifica la tarea para la que fue entrenado, ni su tamaño, ni sus idiomas de soporte, por lo que no es posible clasificarlo con rigor dentro de ninguna familia conocida de modelos.
 
 La relevancia práctica de este repositorio es, a día de hoy, prácticamente nula para producción: acumula cero descargas y cero likes, no tiene pipeline declarado y no incluye pesos documentados en la información disponible. Cualquier evaluación técnica seria requiere inspeccionar directamente los ficheros del repositorio (tamaños, formatos, tokenizador) antes de considerarlo utilizable.
 
@@ -34,12 +34,12 @@ Tampoco consta ninguna innovación técnica destacable (atención lineal, decodi
 - No consta soporte para flujos de agentes o razonamiento multi-paso.
 - No consta información sobre capacidades multilingües.
 - No consta la existencia de modos especiales (thinking mode, visión, audio, etc.).
-- El pipeline de HuggingFace no está declarado, por lo que no se puede confirmar si el modelo es de generación de texto, clasificación, embeddings u otra tarea.
+- El pipeline de Hugging Face no está declarado, por lo que no se puede confirmar si el modelo es de generación de texto, clasificación, embeddings u otra tarea.
 
 ## Casos de uso
 
 - Evaluación exploratoria en investigación: inspeccionar los ficheros del repositorio (config.json, tokenizador, pesos) para determinar si el artefacto es un modelo funcional y en qué formato, antes de plantear cualquier experimento.
-- Reproducción de artefactos comunitarios: útil únicamente como objeto de estudio de publicaciones de HuggingFace sin documentación, para analizar patrones de model cards incompletas.
+- Reproducción de artefactos comunitarios: útil únicamente como objeto de estudio de publicaciones de Hugging Face sin documentación, para analizar patrones de model cards incompletas.
 - No se pueden proponer casos de uso en producción (atención al cliente, generación de código, RAG, análisis documental, etc.) porque no hay evidencia de que el modelo sea funcional ni de cuáles son sus entradas y salidas esperadas.
 - Cualquier despliegue real requeriría primero verificar la integridad de los pesos y la existencia de un tokenizador compatible, algo que la información disponible no permite confirmar.
 
@@ -77,5 +77,5 @@ No es posible establecer una comparativa rigurosa porque se desconocen el tamañ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/susesss/militR
+- Hugging Face: https://huggingface.co/susesss/militR
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

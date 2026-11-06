@@ -89,7 +89,7 @@ No se dispone de datos de un tercer tokenizer comparable en la información prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/henryhale/grouptok-en-sw-af-de-fr-es-zh-64k
+- Hugging Face: https://huggingface.co/henryhale/grouptok-en-sw-af-de-fr-es-zh-64k
 - Baseline BPE: https://huggingface.co/henryhale/bpe-en-sw-af-de-fr-es-zh-64k
 - Variante de 200k tokens: https://huggingface.co/henryhale/grouptok-en-sw-af-de-fr-es-zh-200k
 - Repositorio grouptok: https://github.com/henryhale/grouptok

@@ -88,7 +88,7 @@ La comparacion con otros modelos de la misma categoria (multimodales de ~27B) no
 
 ## Enlaces
 
-- [Repositorio HuggingFace de este modelo](https://huggingface.co/Wondernutts/Qwen3.8-27B-Uncensored-int4-awq-g128-ov)
+- [Repositorio Hugging Face de este modelo](https://huggingface.co/Wondernutts/Qwen3.8-27B-Uncensored-int4-awq-g128-ov)
 - [Version plain INT4 (baseline)](https://huggingface.co/Wondernutts/Qwen3.8-27B-Uncensored-int4-ov)
 - [Modelo fuente ablacionado (Jonathan Coletti)](https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

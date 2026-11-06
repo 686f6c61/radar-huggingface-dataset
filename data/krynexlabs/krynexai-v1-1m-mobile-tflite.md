@@ -66,11 +66,11 @@ No se dispone de informacion sobre modelos comparables en el mismo rango de para
 - No se han documentado sesgos especificos, pero cualquier modelo entrenado con datos no publicados puede contener sesgos no identificados.
 - Riesgo de alucinacion: no se ha evaluado, pero es esperable en modelos pequenos.
 - La licencia MIT permite uso comercial, pero se recomienda verificar que el modelo funcione correctamente antes de integrarlo en entornos de produccion.
-- El repositorio en HuggingFace muestra un tamano de 0.0 GB, lo que podria indicar que los archivos del modelo no estan disponibles o son extremadamente pequenos. Se debe comprobar la integridad de los archivos antes de su uso.
+- El repositorio en Hugging Face muestra un tamano de 0.0 GB, lo que podria indicar que los archivos del modelo no estan disponibles o son extremadamente pequenos. Se debe comprobar la integridad de los archivos antes de su uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite
-- Perfil de KrynexLabs en HuggingFace: https://huggingface.co/KrynexLabs
+- Modelo en Hugging Face: https://huggingface.co/KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite
+- Perfil de KrynexLabs en Hugging Face: https://huggingface.co/KrynexLabs
 - Documentacion de TensorFlow Lite: https://www.tensorflow.org/lite
 - Repositorio de TFLite Support: https://github.com/tensorflow/tflite-support

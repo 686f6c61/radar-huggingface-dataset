@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppegiosk/vr_hil_combined_30k_lora1` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `ppegiosk`. Se trata de un checkpoint de PEFT (Parameter-Efficient Fine-Tuning) que, según los metadatos, se basa en un modelo previo identificado como `vr_all_30hz_30k`, aunque no se proporciona información pública sobre la arquitectura, el dominio de aplicación ni el proceso de entrenamiento. El repositorio contiene únicamente los pesos del adaptador en formato `safetensors` y no incluye model card sustancial, por lo que su propósito exacto y sus capacidades no pueden determinarse a partir de la documentación disponible.
+El modelo `ppegiosk/vr_hil_combined_30k_lora1` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `ppegiosk`. Se trata de un checkpoint de PEFT (Parameter-Efficient Fine-Tuning) que, según los metadatos, se basa en un modelo previo identificado como `vr_all_30hz_30k`, aunque no se proporciona información pública sobre la arquitectura, el dominio de aplicación ni el proceso de entrenamiento. El repositorio contiene únicamente los pesos del adaptador en formato `safetensors` y no incluye model card sustancial, por lo que su propósito exacto y sus capacidades no pueden determinarse a partir de la documentación disponible.
 
 La relevancia de este modelo es limitada en el estado actual de la información: no tiene descargas, ni likes, ni licencia declarada, y la model card está prácticamente vacía. Aunque el nombre sugiere una posible relación con entornos de realidad virtual (VR) o simulación (HIL, hardware-in-the-loop) y una frecuencia de muestreo de 30 Hz, estas son solo inferencias a partir del identificador y no están confirmadas por el autor. Dado que no se especifica el modelo base, no es posible evaluar su rendimiento ni su aplicabilidad en tareas concretas.
 
@@ -60,5 +60,5 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ppegiosk/vr_hil_combined_30k_lora1)
+- [Modelo en Hugging Face](https://huggingface.co/ppegiosk/vr_hil_combined_30k_lora1)
 - Referencia al paper de Lacoste et al. (2019) sobre impacto ambiental del ML (citado en los metadatos, no relacionado con el modelo): [arXiv:1910.09700](https://arxiv.org/abs/1910.09700)

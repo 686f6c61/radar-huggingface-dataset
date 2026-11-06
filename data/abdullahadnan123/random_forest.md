@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `abdullahadnan123/Random_Forest` es un modelo publicado en HuggingFace con licencia Apache 2.0. Segun la informacion disponible, el repositorio tiene un tamano de 0.2 GB, fue creado el 2026-09-06 y actualizado el mismo dia. No registra descargas ni likes, y no se ha identificado un pipeline de inferencia (text-generation, image-classification, etc.).
+El repositorio `abdullahadnan123/Random_Forest` es un modelo publicado en Hugging Face con licencia Apache 2.0. Segun la informacion disponible, el repositorio tiene un tamano de 0.2 GB, fue creado el 2026-09-06 y actualizado el mismo dia. No registra descargas ni likes, y no se ha identificado un pipeline de inferencia (text-generation, image-classification, etc.).
 
 La model card del autor es minima: solo contiene la linea de licencia y no aporta descripcion alguna del modelo, su arquitectura, sus parametros, sus idiomas ni su proposito. La busqueda web no ha devuelto informacion tecnica sobre este modelo concreto, sino resultados genericos sobre el algoritmo Random Forest y noticias deportivas, sin relacion con el repositorio. Por tanto, no es posible evaluar sus capacidades, su rendimiento ni su adecuacion a casos de uso reales a partir de los datos disponibles.
 
@@ -52,4 +52,4 @@ No disponible: no hay informacion sobre el modelo que permita identificar su cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abdullahadnan123/Random_Forest
+- Hugging Face: https://huggingface.co/abdullahadnan123/Random_Forest

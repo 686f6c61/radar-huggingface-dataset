@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacksoncourtney/cs231n-matching` es un repositorio experimental alojado en HuggingFace por el usuario Courtney Jackson (jacksoncourtney) que contiene una implementación funcional de una arquitectura denominada "Mae" orientada a una tarea de *matching* (emparejamiento). No es un modelo de lenguaje generativo ni un modelo multimodal de propósito general: se trata de un artefacto de código y configuración acompañado de un checkpoint de inicialización con 49.600 parámetros totales, publicado explícitamente como base para *smoke tests* y no como un modelo entrenado.
+`jacksoncourtney/cs231n-matching` es un repositorio experimental alojado en Hugging Face por el usuario Courtney Jackson (jacksoncourtney) que contiene una implementación funcional de una arquitectura denominada "Mae" orientada a una tarea de *matching* (emparejamiento). No es un modelo de lenguaje generativo ni un modelo multimodal de propósito general: se trata de un artefacto de código y configuración acompañado de un checkpoint de inicialización con 49.600 parámetros totales, publicado explícitamente como base para *smoke tests* y no como un modelo entrenado.
 
 El propio autor declara en la model card que el checkpoint `model.safetensors` "no está presentado como un checkpoint de benchmark entrenado" y que "no se reclama ninguna puntuación de benchmark en este repositorio". Por tanto, el interés del repositorio es fundamentalmente educativo y de reproducibilidad: sirve como plantilla para reproducir un pipeline de entrenamiento y evaluación sobre una tarea de emparejamiento, con una configuración de arquitectura documentada en `config.json` y una receta de experimento por defecto en `training_args.json`.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada fuera del ámbito docente o de investigación e
 | Optimizador por defecto | LAMB con planificador (schedule) polinómico |
 | Tamano del repositorio | 0,0 GB (redondeado) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha indicada de creación | 2026-09-30T17:21:36Z (según metadatos de HuggingFace) |
+| Fecha indicada de creación | 2026-09-30T17:21:36Z (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento de ninguno de los modelos listados, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacksoncourtney/cs231n-matching
-- Perfil del autor en HuggingFace: https://huggingface.co/jacksoncourtney
+- Modelo en Hugging Face: https://huggingface.co/jacksoncourtney/cs231n-matching
+- Perfil del autor en Hugging Face: https://huggingface.co/jacksoncourtney
 - Repositorio homónimo de otro autor: https://huggingface.co/filipgrabowski/cs231n-matching/tree/main
 - Página del curso CS231n (Stanford): https://cs231n.stanford.edu/
 - Guía de proyectos de CS231n: https://cs231n.stanford.edu/project.html

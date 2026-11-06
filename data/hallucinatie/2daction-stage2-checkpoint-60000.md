@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - Hallucinatie/2daction-stage2-checkpoint-60000](https://huggingface.co/Hallucinatie/2daction-stage2-checkpoint-60000)
+- [Hugging Face - Hallucinatie/2daction-stage2-checkpoint-60000](https://huggingface.co/Hallucinatie/2daction-stage2-checkpoint-60000)
 - [Dataset fuente - xixibuxixi/2daction-stage2](https://huggingface.co/datasets/xixibuxixi/2daction-stage2)
 - [Checkpoint anterior - Hallucinatie/2daction-stage2-checkpoint-14000](https://huggingface.co/Hallucinatie/2daction-stage2-checkpoint-14000)

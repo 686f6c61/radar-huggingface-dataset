@@ -66,7 +66,7 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mradermacher/RICO-GGUF
+- Hugging Face: https://huggingface.co/mradermacher/RICO-GGUF
 - Modelo base: https://huggingface.co/darkc0de/RICO
 - Cuantizaciones i1-GGUF (imatrix): https://huggingface.co/mradermacher/RICO-i1-GGUF
 - Perfil del autor: https://huggingface.co/mradermacher

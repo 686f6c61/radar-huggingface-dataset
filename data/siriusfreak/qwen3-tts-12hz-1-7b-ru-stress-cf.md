@@ -83,9 +83,9 @@ Dato adicional aportado: sobre palabras en *Title case* leidas tal cual, el ajus
 
 | Modelo | Parametros | Contexto | Seguimiento de marca contra diccionario | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| siriusfreak/qwen3-tts-12hz-1.7b-ru-stress-cf | 1,93 B | no disponible | 96% | apache-2.0 | HuggingFace (safetensors + LoRA) |
-| sknyazev/voicy qwen3-tts-12hz-1.7b-ru-stress | 1,93 B (base) | no disponible | 77% | no disponible en la informacion | HuggingFace (GGUF) |
-| Qwen/Qwen3-TTS-12Hz-1.7B-Base | 1,93 B | no disponible | 17% | no disponible en la informacion | HuggingFace |
+| siriusfreak/qwen3-tts-12hz-1.7b-ru-stress-cf | 1,93 B | no disponible | 96% | apache-2.0 | Hugging Face (safetensors + LoRA) |
+| sknyazev/voicy qwen3-tts-12hz-1.7b-ru-stress | 1,93 B (base) | no disponible | 77% | no disponible en la informacion | Hugging Face (GGUF) |
+| Qwen/Qwen3-TTS-12Hz-1.7B-Base | 1,93 B | no disponible | 17% | no disponible en la informacion | Hugging Face |
 
 El modelo comparte base (Qwen3-TTS-12Hz-1.7B) con las alternativas, por lo que las diferencias de rendimiento se deben al ajuste fino y no a la arquitectura subyacente. Frente a RUAccent (ruaccent/accentuator, licencia MIT) la comparacion no es directa: RUAccent es un anotador de acento que predice donde va la marca, mientras que este modelo consume la marca y la convierte en audio.
 
@@ -103,7 +103,7 @@ El modelo comparte base (Qwen3-TTS-12Hz-1.7B) con las alternativas, por lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siriusfreak/qwen3-tts-12hz-1.7b-ru-stress-cf
+- Modelo en Hugging Face: https://huggingface.co/siriusfreak/qwen3-tts-12hz-1.7b-ru-stress-cf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Adaptador de referencia (voicy): https://huggingface.co/sknyazev/qwen3-tts-12hz-1.7b-ru-stress-gguf
 - Receta de entrenamiento de voicy (repositorio): https://github.com/olluorg/voicy

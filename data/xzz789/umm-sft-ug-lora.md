@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `xzz789/umm-sft-ug-lora` es un archivo de adaptadores LoRA (PEFT) publicado por el usuario xzz789 en HuggingFace. No contiene un modelo completo, sino una colección de pesos adicionales que deben aplicarse sobre modelos multimodales base como BAGEL, BLIP3o, Janus-Pro y Emu3.5. La release está en progreso e incluye 51 de 54 registros de adaptadores orientados a tareas específicas denominadas Synthetic Concept Full, Synthetic Concept Tiny y KiVA v3.
+El repositorio `xzz789/umm-sft-ug-lora` es un archivo de adaptadores LoRA (PEFT) publicado por el usuario xzz789 en Hugging Face. No contiene un modelo completo, sino una colección de pesos adicionales que deben aplicarse sobre modelos multimodales base como BAGEL, BLIP3o, Janus-Pro y Emu3.5. La release está en progreso e incluye 51 de 54 registros de adaptadores orientados a tareas específicas denominadas Synthetic Concept Full, Synthetic Concept Tiny y KiVA v3.
 
 El archivo no incluye información sobre arquitectura, tamaño de parámetros, longitud de contexto ni idiomas soportados. Tampoco se han publicado evaluaciones ni benchmarks. Su relevancia radica en que permite explorar experimentos de fine-tuning supervisado sobre arquitecturas multimodales, aunque la documentación disponible es limitada y no permite determinar capacidades concretas.
 
@@ -29,7 +29,7 @@ El repositorio no contiene un modelo base, sino adaptadores LoRA generados con l
 ## Capacidades
 
 - No se han publicado listados de capacidades específicas para estos adaptadores.
-- El tag "multimodal" en HuggingFace indica que los modelos base a los que se aplican operan con entradas de imagen y texto, pero no se detallan los tipos de tareas multimodales.
+- El tag "multimodal" en Hugging Face indica que los modelos base a los que se aplican operan con entradas de imagen y texto, pero no se detallan los tipos de tareas multimodales.
 - No se dispone de información sobre tool calling / function calling, generación de código, razonamiento matemático, soporte de agentes ni modos de pensamiento extendido.
 - Los adaptadores no son modelos autónomos: su comportamiento depende del modelo base y del ensamblaje correcto.
 - La model card advierte de que algunos adaptadores de diagnóstico pueden producir intencionadamente puntuaciones pobres o nulas, por lo que no todos los registros deben tratarse como funcionales.
@@ -72,7 +72,7 @@ No disponible. El repositorio no contiene datos de rendimiento ni información s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xzz789/umm-sft-ug-lora
+- Hugging Face: https://huggingface.co/xzz789/umm-sft-ug-lora
 - Repositorio asociado: https://huggingface.co/xzz789/umm-sft-full-syn-concept-lora
 - BAGEL: https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT
 - BLIP3o: https://huggingface.co/BLIP3o/BLIP3o-Model-8B

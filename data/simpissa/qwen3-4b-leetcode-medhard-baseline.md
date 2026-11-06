@@ -71,6 +71,6 @@ No disponible. No se han encontrado comparativas específicas para este adaptado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/simpissa/qwen3-4b-leetcode-medhard-baseline
+- Hugging Face: https://huggingface.co/simpissa/qwen3-4b-leetcode-medhard-baseline
 - Repo de Qwen3: https://github.com/QwenLM/Qwen3
 - Technical report de Qwen3: https://arxiv.org/html/2505.09388v1

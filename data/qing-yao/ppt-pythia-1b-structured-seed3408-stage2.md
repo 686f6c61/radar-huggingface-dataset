@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-1b-structured-seed3408-stage2` es un modelo de generación de texto de 1.011.781.632 parámetros (aproximadamente 1,01 B) publicado por el usuario `qing-yao` en HuggingFace. Se trata de un ajuste fino obtenido mediante SFT (supervised fine-tuning) con la librería TRL, sobre una arquitectura de tipo `gpt_neox` según las etiquetas del repositorio. El nombre del checkpoint sugiere un experimento sistemático: un identificador de tarea ("structured"), una semilla concreta (3408) y una segunda etapa de entrenamiento ("stage2").
+`ppt-pythia-1b-structured-seed3408-stage2` es un modelo de generación de texto de 1.011.781.632 parámetros (aproximadamente 1,01 B) publicado por el usuario `qing-yao` en Hugging Face. Se trata de un ajuste fino obtenido mediante SFT (supervised fine-tuning) con la librería TRL, sobre una arquitectura de tipo `gpt_neox` según las etiquetas del repositorio. El nombre del checkpoint sugiere un experimento sistemático: un identificador de tarea ("structured"), una semilla concreta (3408) y una segunda etapa de entrenamiento ("stage2").
 
 El modelo resuelve la tarea genérica de generación de texto condicionada por instrucciones, con una plantilla de mensajes de tipo conversacional (`role: user`), tal y como muestra el ejemplo de uso rápido de su model card. Su relevancia es principalmente de investigación: sirve como artefacto reproducible dentro de un barrido de semillas y etapas de entrenamiento, más que como modelo de producción con garantías documentadas.
 
@@ -12,7 +12,7 @@ La información pública es muy escasa. La model card no especifica el modelo ba
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia `gpt_neox` (segun las etiquetas de HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia `gpt_neox` (segun las etiquetas de Hugging Face) |
 | Parametros totales | 1.011.781.632 (1,01 B) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el autor no publica variantes cuantizadas; los pesos se distribuyen en formato completo) |
@@ -76,16 +76,16 @@ La comparativa se limita a características estructurales, porque no existen mé
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-pythia-1b-structured-seed3408-stage2 | 1,01 B | no disponible | no disponible | HuggingFace, safetensors |
-| Pythia-1B (EleutherAI), posible base | 1,01 B | 2048 tokens (segun su documentacion publica) | Apache 2.0 | HuggingFace, safetensors |
-| TinyLlama-1.1B | 1,1 B | 2048 tokens (segun su documentacion publica) | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| Llama 3.2 1B Instruct | 1,24 B | 128 000 tokens (segun su documentacion publica) | Llama 3.2 Community License | HuggingFace, GGUF, multiples runtimes |
+| ppt-pythia-1b-structured-seed3408-stage2 | 1,01 B | no disponible | no disponible | Hugging Face, safetensors |
+| Pythia-1B (EleutherAI), posible base | 1,01 B | 2048 tokens (segun su documentacion publica) | Apache 2.0 | Hugging Face, safetensors |
+| TinyLlama-1.1B | 1,1 B | 2048 tokens (segun su documentacion publica) | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| Llama 3.2 1B Instruct | 1,24 B | 128 000 tokens (segun su documentacion publica) | Llama 3.2 Community License | Hugging Face, GGUF, multiples runtimes |
 
 Rendimiento comparado: no disponible. No se han publicado resultados de benchmarks para este checkpoint que permitan situarlo frente a las alternativas.
 
 ## Limitaciones y advertencias
 
-- Licencia sin concretar: la model card contiene el marcador `licence: license` y los metadatos de HuggingFace no declaran licencia. No hay autorización explícita de uso comercial; hay que contactar con el autor o abstenerse de usarlo en producción.
+- Licencia sin concretar: la model card contiene el marcador `licence: license` y los metadatos de Hugging Face no declaran licencia. No hay autorización explícita de uso comercial; hay que contactar con el autor o abstenerse de usarlo en producción.
 - Modelo base no documentado: el campo de modelo base aparece como `[None]`. La identificación con Pythia-1B es una inferencia a partir del nombre y del recuento de parámetros, no un dato verificado.
 - Ausencia total de benchmarks: no hay evidencia publicada de calidad, por lo que cualquier afirmación sobre su rendimiento requiere una evaluación propia.
 - Riesgo de alucinación: es un modelo de 1 B ajustado con SFT sin fases documentadas de RLHF o DPO, con la consiguiente propensión a inventar hechos y a desviarse de las instrucciones.
@@ -98,6 +98,6 @@ Rendimiento comparado: no disponible. No se han publicado resultados de benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-structured-seed3408-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-structured-seed3408-stage2
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Búsqueda web: no se encontraron resultados relevantes sobre este modelo. Las únicas coincidencias devueltas correspondían a la dinastía Qing y no guardan relación con el checkpoint.

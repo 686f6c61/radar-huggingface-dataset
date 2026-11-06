@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los �
 - VRAM estimada: el adapter LoRA es muy ligero (0,2 GB), pero el modelo base Qwen3-1.7B requiere aproximadamente 3,5 GB en FP16 y unos 2 GB en cuantización de 8 bits. En total, para inferencia con el adapter cargado, se necesitan entre 2 y 4 GB de VRAM según la cuantización.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16 (por ejemplo, GTX 1650, RTX 3050). Para mayor velocidad, una RTX 3060 o superior. En CPU, podría funcionar con 8 GB de RAM usando cuantización GGUF, aunque no se proporcionan pesos GGUF.
 - Sí cabe en GPUs de consumo: una RTX 3060 de 12 GB o incluso una integrada con suficiente RAM compartida pueden ejecutarlo.
-- Opciones de despliegue: al ser un adapter PEFT, se puede cargar con la librería `peft` y `transformers` de HuggingFace. Para inferencia en producción, se puede fusionar el adapter con el modelo base y exportar a formatos como ONNX o GGUF para usar con llama.cpp, Ollama o vLLM (aunque no hay guías oficiales en el repositorio).
+- Opciones de despliegue: al ser un adapter PEFT, se puede cargar con la librería `peft` y `transformers` de Hugging Face. Para inferencia en producción, se puede fusionar el adapter con el modelo base y exportar a formatos como ONNX o GGUF para usar con llama.cpp, Ollama o vLLM (aunque no hay guías oficiales en el repositorio).
 - Latencia y throughput: no disponibles. Dado el tamaño pequeño del modelo, en una GPU moderna se esperan decenas de tokens por segundo, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares

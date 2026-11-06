@@ -67,7 +67,7 @@ La model card menciona comparaciones con Qwen3.6-27B, Qwen3.7-Plus, Muse Glimmer
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B (este) | 27B | 262K nativo, 1M extensible | Apache 2.0 | GGUF en HuggingFace |
+| Qwen3.8-27B (este) | 27B | 262K nativo, 1M extensible | Apache 2.0 | GGUF en Hugging Face |
 | Qwen3.6-27B | 27B | No disponible | No disponible | No disponible |
 | Muse Glimmer-30B | 30B | No disponible | No disponible | No disponible |
 
@@ -82,5 +82,5 @@ La model card menciona comparaciones con Qwen3.6-27B, Qwen3.7-Plus, Muse Glimmer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jackrong/Qwen3.8-27B-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jackrong/Qwen3.8-27B-MTP-GGUF
 - Qwen Cloud (servicio gestionado, próximamente): https://www.qwencloud.com/models/qwen3.8-27b

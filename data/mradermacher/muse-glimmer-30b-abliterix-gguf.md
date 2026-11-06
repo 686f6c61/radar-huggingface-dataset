@@ -30,7 +30,7 @@ La relevancia de esta ficha es limitada y muy especifica: sirve para desplegar l
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card ni en los resultados de busqueda disponibles. Los metadatos de la cuantizacion indican `convert_type: hf`, `quantize_version: 2` y `output_tensor_quantised: 1`, lo que confirma que el proceso consistio en convertir un checkpoint en formato HuggingFace a GGUF y aplicar cuantizacion de tensores, sin reentrenamiento ni modificacion de los pesos mas alla de la perdida de precision propia del proceso.
+No se ha publicado informacion sobre la arquitectura en la model card ni en los resultados de busqueda disponibles. Los metadatos de la cuantizacion indican `convert_type: hf`, `quantize_version: 2` y `output_tensor_quantised: 1`, lo que confirma que el proceso consistio en convertir un checkpoint en formato Hugging Face a GGUF y aplicar cuantizacion de tensores, sin reentrenamiento ni modificacion de los pesos mas alla de la perdida de precision propia del proceso.
 
 Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento. El sufijo "abliterix" del nombre sugiere, por convencion en la comunidad, una variante con las direcciones de rechazo ablacionadas (modelo sin censura), pero esto es una inferencia a partir del nombre y no un dato confirmado por la documentacion. Lo mismo ocurre con "30B", que no coincide con el recuento real de parametros.
 

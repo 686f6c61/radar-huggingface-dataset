@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AA1YL/Elma es un repositorio de modelo publicado en HuggingFace por el usuario AA1YL. La model card asociada contiene unicamente la declaracion de licencia (apache-2.0), sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin idiomas soportados. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline de inferencia asignado.
+AA1YL/Elma es un repositorio de modelo publicado en Hugging Face por el usuario AA1YL. La model card asociada contiene unicamente la declaracion de licencia (apache-2.0), sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin idiomas soportados. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline de inferencia asignado.
 
 En el momento de redactar esta ficha no existe informacion tecnica publica que permita determinar que tipo de modelo es (transformer, MoE, SSM u otro), cual es su tamano, sobre que datos se entreno ni que tareas puede resolver. Los unicos metadatos disponibles son el identificador, el autor, la etiqueta de licencia apache-2.0, la region declarada (us) y las marcas temporales de creacion y ultima actualizacion, ambas del 2026-10-13.
 
@@ -71,5 +71,5 @@ No disponible. No es posible establecer una comparativa fiable sin conocer la ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AA1YL/Elma
+- Hugging Face: https://huggingface.co/AA1YL/Elma
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo o demo) en la informacion disponible.

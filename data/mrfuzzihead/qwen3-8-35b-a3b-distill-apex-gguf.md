@@ -71,8 +71,8 @@ Las cifras de VRAM que se indican a continuacion son estimaciones orientativas d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MrFuzzihead/Qwen3.8-35B-A3B-Distill-APEX-GGUF | no disponible (inferido ~35B totales, ~3B activos) | no disponible | no disponible | apache-2.0 | GGUF en HuggingFace |
-| empero-ai/Qwen3.8-35B-A3B-Distill (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| MrFuzzihead/Qwen3.8-35B-A3B-Distill-APEX-GGUF | no disponible (inferido ~35B totales, ~3B activos) | no disponible | no disponible | apache-2.0 | GGUF en Hugging Face |
+| empero-ai/Qwen3.8-35B-A3B-Distill (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de categoria MoE de ~30B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables sobre modelos comparables que permitan una comparacion cuantitativa en la informacion proporcionada.
@@ -90,6 +90,6 @@ No se dispone de datos verificables sobre modelos comparables que permitan una c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MrFuzzihead/Qwen3.8-35B-A3B-Distill-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MrFuzzihead/Qwen3.8-35B-A3B-Distill-APEX-GGUF
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web realizada.

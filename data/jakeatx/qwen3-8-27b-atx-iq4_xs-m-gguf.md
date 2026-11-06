@@ -114,7 +114,7 @@ Comparativa con modelos de parametros similares de otros desarrolladores (Llama,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jakeatx/Qwen3.8-27B-ATX-IQ4_XS-M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jakeatx/Qwen3.8-27B-ATX-IQ4_XS-M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Receta equivalente sobre el fine-tune Qwopus3.8-27B-Flash: https://huggingface.co/jakeatx/Qwopus3.8-27B-Flash-ATX-IQ4_XS-M-GGUF
 - Runtime y kernels SM86 (rama `main`, commit `fdfea8123`): https://github.com/JakeATX/llama-cpp-qwen-ampere

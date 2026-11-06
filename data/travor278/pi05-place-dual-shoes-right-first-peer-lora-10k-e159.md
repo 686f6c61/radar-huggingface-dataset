@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pi05-place-dual-shoes-right-first-peer-lora-10k-e159 | no disponible (estimado ~3 000 M) | no disponible | Manipulacion robotica: colocacion de calzado | no disponible | JAX/Orbax | HuggingFace, 0 descargas |
+| pi05-place-dual-shoes-right-first-peer-lora-10k-e159 | no disponible (estimado ~3 000 M) | no disponible | Manipulacion robotica: colocacion de calzado | no disponible | JAX/Orbax | Hugging Face, 0 descargas |
 | PI0.5 (modelo base de Physical Intelligence) | no disponible | no disponible | VLA generalista de control robotico | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otras variantes "peer" de la misma serie Sim12 | no disponible | no disponible | Tareas de manipulacion especificas | no disponible | JAX/Orbax | no disponible en la informacion proporcionada |
 
@@ -91,7 +91,7 @@ No se dispone de datos numericos que permitan una comparacion cuantitativa con O
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-place-dual-shoes-right-first-peer-lora-10k-e159
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-place-dual-shoes-right-first-peer-lora-10k-e159
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-place-dual-shoes-right-first-20260911
 - Registro de evaluacion en SwanLab: https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Ningun otro enlace (papers, blogs, repositorios o demos) aparece en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kashmiri ASR — CTC es un modelo de reconocimiento automático del habla (ASR) para el idioma cachemir (kashmiri), escrito en alfabeto perso-árabe. Lo desarrolla Aazim Ameen (usuario Aazu34 en HuggingFace) y se distribuye como un único modelo ONNX cuantizado a int8 de aproximadamente 187 MB, pensado para inferencia totalmente offline sobre CPU, sin servidor ni clave de API. Es el motor de voz que hay detrás de la herramienta de subtitulado SubtitleKoshur.
+Kashmiri ASR — CTC es un modelo de reconocimiento automático del habla (ASR) para el idioma cachemir (kashmiri), escrito en alfabeto perso-árabe. Lo desarrolla Aazim Ameen (usuario Aazu34 en Hugging Face) y se distribuye como un único modelo ONNX cuantizado a int8 de aproximadamente 187 MB, pensado para inferencia totalmente offline sobre CPU, sin servidor ni clave de API. Es el motor de voz que hay detrás de la herramienta de subtitulado SubtitleKoshur.
 
 El modelo resuelve un problema concreto: la práctica ausencia de sistemas de reconocimiento del habla de calidad para el cachemir, una lengua de bajos recursos con ortografía perso-árabe y escasa representación en los corpus ASR multilingües habituales. Al empaquetar el modelo en ONNX int8 con el frontend (ventana STFT y banco de filtros mel) y el tokenizador CTC incluidos en el repositorio, permite transcribir audio sin dependencias pesadas más allá de numpy y onnxruntime.
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos ASR comparables para cachemir en la 
 
 | Modelo | Parámetros | Contexto | Rendimiento en cachemir | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kashmiri ASR — CTC (Aazu34) | no disponible | no disponible (bloques de 10 s) | CER 0,348 en prueba de 65 s | other | HuggingFace, ONNX int8 |
+| Kashmiri ASR — CTC (Aazu34) | no disponible | no disponible (bloques de 10 s) | CER 0,348 en prueba de 65 s | other | Hugging Face, ONNX int8 |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No se dispone de información sobre modelos ASR comparables para cachemir en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aazu34/kashmiri-asr-ctc
+- Modelo en Hugging Face: https://huggingface.co/Aazu34/kashmiri-asr-ctc
 - Corpus OpenSLR-122 (cachemir), citado como referencia de evaluación: https://openslr.org/122/
 - Herramienta SubtitleKoshur, mencionada por el autor como aplicación del modelo: no disponible (no se proporciona enlace en la información disponible)

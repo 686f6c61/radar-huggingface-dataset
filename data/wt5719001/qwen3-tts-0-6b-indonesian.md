@@ -68,6 +68,6 @@ No hay modelos comparables disponibles en la información proporcionada. El mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wt5719001/qwen3-tts-0.6b-indonesian
+- Modelo en Hugging Face: https://huggingface.co/wt5719001/qwen3-tts-0.6b-indonesian
 - Repositorio oficial de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
 - Página de Qwen3-TTS en Free.ai: https://free.ai/models/qwen3-tts/?lang=id (referencia)

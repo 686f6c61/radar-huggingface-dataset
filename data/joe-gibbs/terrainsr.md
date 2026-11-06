@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `joe-gibbs/terrainsr` es un repositorio alojado en HuggingFace por el usuario joe-gibbs, publicado y actualizado el 6 de octubre de 2026 (ambas marcas temporales identicas). En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene definido un pipeline de inferencia en la plataforma. La unica informacion tecnica verificable que proporciona el autor es la licencia Apache 2.0, declarada tanto en los metadatos del repositorio (etiqueta `license:apache-2.0`) como en el frontmatter de la model card.
+El modelo identificado como `joe-gibbs/terrainsr` es un repositorio alojado en Hugging Face por el usuario joe-gibbs, publicado y actualizado el 6 de octubre de 2026 (ambas marcas temporales identicas). En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene definido un pipeline de inferencia en la plataforma. La unica informacion tecnica verificable que proporciona el autor es la licencia Apache 2.0, declarada tanto en los metadatos del repositorio (etiqueta `license:apache-2.0`) como en el frontmatter de la model card.
 
 La model card publicada no contiene absolutamente ningun contenido descriptivo: se limita al bloque YAML con la licencia, sin texto, tablas, ejemplos de uso, instrucciones de instalacion ni referencias a papers o datasets. Tampoco se declaran idiomas soportados, arquitectura, numero de parametros, longitud de contexto ni formato de pesos. Por tanto, no es posible determinar con la informacion disponible que problema resuelve el modelo ni cual es su relevancia tecnica.
 
@@ -23,7 +23,7 @@ Es importante senalar que la busqueda web realizada no ha devuelto ningun result
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio de HuggingFace. No hay datos sobre si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o un modelo hibrido, ni sobre el numero de capas, dimensiones ocultas o mecanismos de atencion empleados.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio de Hugging Face. No hay datos sobre si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o un modelo hibrido, ni sobre el numero de capas, dimensiones ocultas o mecanismos de atencion empleados.
 
 Tampoco existe informacion sobre el proceso de entrenamiento: se desconoce el volumen de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, y cualquier innovacion tecnica asociada (decodificacion especulativa, atencion lineal, destilacion, etc.). El nombre del repositorio contiene la cadena "terrainsr", que podria sugerir un ambito de aplicacion relacionado con terrenos y superresolucion, pero se trata unicamente de una interpretacion del identificador y no de un dato confirmado por el autor, por lo que no debe tomarse como especificacion tecnica.
 
@@ -69,4 +69,4 @@ No disponible. Al no conocerse la tarea, la modalidad ni el tamano del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joe-gibbs/terrainsr
+- Repositorio en Hugging Face: https://huggingface.co/joe-gibbs/terrainsr

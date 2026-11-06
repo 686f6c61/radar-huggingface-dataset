@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbrahamPJ/nightmare-wan22-animate14b-lightx2v
+- Hugging Face: https://huggingface.co/AbrahamPJ/nightmare-wan22-animate14b-lightx2v
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-Animate-14B
 - Cuantización de referencia: https://huggingface.co/QuantStack/Wan2.2-Animate-14B-GGUF
 - LoRA de destilación: https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v

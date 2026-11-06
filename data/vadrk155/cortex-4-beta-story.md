@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cortex-4-Beta-Story es un modelo de generacion de texto en ingles desarrollado por el usuario VADRK155, publicado en HuggingFace bajo licencia MIT. Se trata de un transformer decoder-only de 104,6 millones de parametros implementado desde cero en PyTorch, sin usar la libreria `transformers` ni pesos preentrenados de terceros. Su proposito declarado es la generacion de historias cortas y narrativa sencilla, con un ejemplo de uso del tipo "Once upon a time" como disparador.
+Cortex-4-Beta-Story es un modelo de generacion de texto en ingles desarrollado por el usuario VADRK155, publicado en Hugging Face bajo licencia MIT. Se trata de un transformer decoder-only de 104,6 millones de parametros implementado desde cero en PyTorch, sin usar la libreria `transformers` ni pesos preentrenados de terceros. Su proposito declarado es la generacion de historias cortas y narrativa sencilla, con un ejemplo de uso del tipo "Once upon a time" como disparador.
 
 El modelo es relevante unicamente como ejercicio tecnico de entrenamiento from scratch y como referencia para quien quiera estudiar una implementacion propia y minima de un GPT. No compite en capacidad con modelos pequenos de proposito general como GPT-2 small o SmolLM, ya que su entrenamiento esta orientado a un dominio muy estrecho (narrativa) y no se ha publicado informacion sobre el corpus, el numero de tokens de entrenamiento ni el proceso de alineamiento.
 
@@ -89,7 +89,7 @@ La diferencia principal no es el numero de parametros, sino la documentacion, la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VADRK155/Cortex-4-Beta-Story
+- Modelo en Hugging Face: https://huggingface.co/VADRK155/Cortex-4-Beta-Story
 - Repositorio clonable indicado en la model card: https://huggingface.co/VADRK155/Cortex-4-Beta-Story (mismo destino, instrucciones de `git clone`, `requirements.txt` y `chat.py`)
 - Paper, blog tecnico, repositorio de codigo independiente o demo: no disponibles
 - La busqueda web realizada no devolvio resultados relevantes sobre el modelo; las entradas recuperadas correspondian a paginas corporativas de Microsoft sin relacion con Cortex-4-Beta-Story.

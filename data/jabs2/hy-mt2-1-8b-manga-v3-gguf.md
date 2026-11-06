@@ -97,7 +97,7 @@ Adicionalmente, el autor reporta una métrica "cjk" (recuento de caracteres CJK 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jabs2/Hy-MT2-1.8B-Manga-v3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jabs2/Hy-MT2-1.8B-Manga-v3-GGUF
 - Repositorio upstream (ajuste fino original): https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v3-multilingual-GGUF
 - Árbol de archivos del upstream: https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v3-multilingual-GGUF/tree/main
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-1.8B

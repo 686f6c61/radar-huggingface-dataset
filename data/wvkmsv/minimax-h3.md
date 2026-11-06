@@ -6,7 +6,7 @@ MiniMax H3 es un sistema generativo omni-modal desarrollado por MiniMax, diseña
 
 El sistema se compone de tres módulos diferenciados: H3-Context-IR, que procesa y refina las instrucciones de entrada en una representación intermedia comprensible para el modelo; H3-Base, que genera el video y audio a 768p; y H3-Regenerate-2K, que mejora la resolución a 2K reutilizando el contexto original. La arquitectura está orientada a la generalización de tareas, lo que le permite manejar una amplia gama de modos de entrada, desde texto puro hasta referencias mixtas con múltiples imágenes, clips de video y pistas de audio.
 
-El repositorio en HuggingFace (Wvkmsv/MiniMax-H3) ocupa 354 GB y utiliza la librería `minimax-h3`, con pesos en formato safetensors. El modelo se distribuye bajo la licencia comunitaria `minimax-h3-community-license-agreement`. Aunque el autor del repositorio es Wvkmsv, la model card oficial apunta al repositorio MiniMaxAI/MiniMax-H3, lo que sugiere que se trata de una réplica o espejo del modelo oficial.
+El repositorio en Hugging Face (Wvkmsv/MiniMax-H3) ocupa 354 GB y utiliza la librería `minimax-h3`, con pesos en formato safetensors. El modelo se distribuye bajo la licencia comunitaria `minimax-h3-community-license-agreement`. Aunque el autor del repositorio es Wvkmsv, la model card oficial apunta al repositorio MiniMaxAI/MiniMax-H3, lo que sugiere que se trata de una réplica o espejo del modelo oficial.
 
 ## Especificaciones tecnicas
 
@@ -74,14 +74,14 @@ No disponible. La informacion proporcionada no incluye comparativas con otros mo
 - La duracion maxima de salida es de 15 segundos, lo que limita su uso para contenido de larga duracion.
 - El modulo H3-Context-IR se considera critico para la calidad del resultado; omitirlo o no seguir las guias de prompting puede degradar significativamente la salida.
 - El soporte de idiomas adicionales a los 11 estables es variable y puede producir resultados inconsistentes.
-- El repositorio en HuggingFace (Wvkmsv/MiniMax-H3) tiene 0 descargas y 0 likes, y fue creado en agosto de 2026. Aunque la model card referencia el repositorio oficial de MiniMax, no hay garantia de que este espejo sea identico o este verificado.
+- El repositorio en Hugging Face (Wvkmsv/MiniMax-H3) tiene 0 descargas y 0 likes, y fue creado en agosto de 2026. Aunque la model card referencia el repositorio oficial de MiniMax, no hay garantia de que este espejo sea identico o este verificado.
 - No se proporcionan datos sobre sesgos del modelo, riesgo de alucinacion visual o limitaciones eticas especificas.
 - El tamano de 354 GB implica que la descarga y el almacenamiento son costosos, y la inferencia local probablemente requiera infraestructura de nivel empresarial (multiples A100 o H100).
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/Wvkmsv/MiniMax-H3
-- Repositorio HuggingFace (oficial): https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face (espejo): https://huggingface.co/Wvkmsv/MiniMax-H3
+- Repositorio Hugging Face (oficial): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - ModelScope: https://modelscope.cn/organization/minimax
 - Aplicacion web Hailuo AI (global): https://hailuoai.video

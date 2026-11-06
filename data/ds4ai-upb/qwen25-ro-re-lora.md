@@ -80,7 +80,7 @@ No se dispone de datos de otros LLMs ajustados con LoRA para esta tarea, por lo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DS4AI-UPB/qwen25-ro-re-lora
+- Hugging Face: https://huggingface.co/DS4AI-UPB/qwen25-ro-re-lora
 - Repositorio de código: https://github.com/DS4AI-UPB/crosslingual-romanian-re
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Technical report de Qwen2.5: https://arxiv.org/abs/2412.15115

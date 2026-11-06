@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KAMARAD366/omni es un repositorio de modelo alojado en HuggingFace por el usuario KAMARAD366 bajo licencia Apache 2.0. En el momento de la consulta, la model card no contiene ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas especificados.
+KAMARAD366/omni es un repositorio de modelo alojado en Hugging Face por el usuario KAMARAD366 bajo licencia Apache 2.0. En el momento de la consulta, la model card no contiene ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas especificados.
 
 No hay informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, el proceso de entrenamiento ni los datos utilizados. El identificador "omni" podria sugerir un modelo multimodal, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor, por lo que no debe tomarse como caracteristica verificada.
 
@@ -31,7 +31,7 @@ No hay datos sobre el corpus de entrenamiento: se desconoce el numero de tokens,
 
 No existe documentacion que permita enumerar capacidades verificadas. Los unicos datos objetivos disponibles son los siguientes:
 
-- No hay pipeline declarado en HuggingFace, por lo que no se confirma la tarea principal (text-generation, image-text-to-text, automatic-speech-recognition, etc.).
+- No hay pipeline declarado en Hugging Face, por lo que no se confirma la tarea principal (text-generation, image-text-to-text, automatic-speech-recognition, etc.).
 - No hay idiomas declarados en los metadatos del repositorio.
 - No hay confirmacion de soporte de tool calling, function calling ni flujos de agentes.
 - No hay confirmacion de modo de razonamiento explicito (thinking mode), vision ni audio.
@@ -79,7 +79,7 @@ No disponible. Sin conocer el tamano, la arquitectura ni el dominio de aplicacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KAMARAD366/omni
+- Repositorio en Hugging Face: https://huggingface.co/KAMARAD366/omni
 - Model card: https://huggingface.co/KAMARAD366/omni/blob/main/README.md
 - Paper, blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

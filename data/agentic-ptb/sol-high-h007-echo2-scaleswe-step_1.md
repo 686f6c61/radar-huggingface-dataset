@@ -59,8 +59,8 @@ No se dispone de datos de rendimiento comparativos. Como referencia estructural,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible | no disponible | HuggingFace |
-| agentic-ptb/sol-high (este) | 9.4B | no disponible | no disponible | HuggingFace (checkpoint experimental) |
+| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible | no disponible | Hugging Face |
+| agentic-ptb/sol-high (este) | 9.4B | no disponible | no disponible | Hugging Face (checkpoint experimental) |
 
 No se conocen otros modelos de la misma categoria (fine-tunes de Qwen3.5-9B sobre ScaleSWE) con los que comparar.
 
@@ -75,6 +75,6 @@ No se conocen otros modelos de la misma categoria (fine-tunes de Qwen3.5-9B sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h007.echo2-scaleswe.step_1
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h007.echo2-scaleswe.step_1
 - Dataset ScaleSWE (GitHub): https://github.com/AweAI-Team/ScaleSWE
 - Articulo sobre agentic AI (contexto general): https://agentic.ai/what-is-agentic-ai

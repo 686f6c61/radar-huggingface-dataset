@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`foghollowson/multitask` es un prototipo de investigación con arquitectura BLIP publicado por el usuario foghollowson en HuggingFace. Se presenta explícitamente como un punto de partida experimental para tareas multitarea, con una configuración de escala "small", atención sparse, fusión bilineal, activación gelu tanh y normalización layernorm. El repositorio incluye una implementación en PyTorch (`predict.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en safetensors.
+`foghollowson/multitask` es un prototipo de investigación con arquitectura BLIP publicado por el usuario foghollowson en Hugging Face. Se presenta explícitamente como un punto de partida experimental para tareas multitarea, con una configuración de escala "small", atención sparse, fusión bilineal, activación gelu tanh y normalización layernorm. El repositorio incluye una implementación en PyTorch (`predict.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en safetensors.
 
 El dato más relevante para evaluarlo es su tamaño real: 16.576 parámetros totales según el fichero safetensors. No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmark; la propia model card indica que `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de rendimiento. El repositorio ocupa 0.0 GB (redondeo de la plataforma) y no declara pipeline, idiomas ni ventana de contexto.
 
@@ -21,7 +21,7 @@ Su interés actual es, por tanto, documental y de ingeniería: sirve para inspec
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (`model.safetensors`) e implementación PyTorch (`predict.py`) |
 | Escala declarada | small |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamaño del repositorio | 0.0 GB (redondeo de la plataforma) |
 
 ## Arquitectura y entrenamiento
@@ -94,5 +94,5 @@ No se dispone de datos verificables de alternativas en la información proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/foghollowson/multitask
+- Hugging Face: https://huggingface.co/foghollowson/multitask
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes al modelo (son páginas genéricas de YouTube), por lo que no se incluyen. No se dispone de paper, blog, repositorio adicional ni demo asociados en la información disponible.

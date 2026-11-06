@@ -6,7 +6,7 @@ Este repositorio contiene un checkpoint de investigación del proyecto **token a
 
 El proyecto explora una técnica denominada "token averaging" con un factor k=8, que probablemente consiste en promediar representaciones de tokens consecutivos para comprimir la secuencia o mejorar la eficiencia del entrenamiento. El modelo fue entrenado con un objetivo de 8.144 millones de tokens, con una tasa de aprendizaje de 0.0002 y 2000 pasos de calentamiento.
 
-Este checkpoint no es un modelo listo para producción ni para uso con la librería `transformers` de HuggingFace. Se trata de un artefacto de investigación que requiere reconstruir la arquitectura desde el archivo `config.json` y cargar el `state_dict` directamente. Su relevancia reside en el estudio empírico de técnicas de promediado de tokens, un área emergente en la optimización de transformers para contextos largos y eficiencia computacional.
+Este checkpoint no es un modelo listo para producción ni para uso con la librería `transformers` de Hugging Face. Se trata de un artefacto de investigación que requiere reconstruir la arquitectura desde el archivo `config.json` y cargar el `state_dict` directamente. Su relevancia reside en el estudio empírico de técnicas de promediado de tokens, un área emergente en la optimización de transformers para contextos largos y eficiencia computacional.
 
 ## Especificaciones tecnicas
 
@@ -72,6 +72,6 @@ No se dispone de modelos comparables directamente, ya que la técnica de token a
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/FAIRC/token-averaging-avg_50m_k8)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/FAIRC/token-averaging-avg_50m_k8)
 - [Variante con k=4](https://huggingface.co/FAIRC/token-averaging-avg_50m_k4)
 - [Variante con k=4 y posiciones aprendibles](https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos)

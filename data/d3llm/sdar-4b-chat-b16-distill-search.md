@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SDAR (Synergy of Diffusion and AutoRegression) es una familia de modelos de lenguaje que combina el entrenamiento autorregresivo (AR) con la inferencia paralela de los modelos de difusion discreta. La model card, publicada por el usuario de HuggingFace `d3LLM` y vinculada al repositorio `JetAstra/SDAR`, defiende tres tesis: eficiencia de entrenamiento equiparable a AR, inferencia paralela por bloques y rendimiento general a la par de los baselines autorregresivos de referencia, con mejoras en tareas de razonamiento cientifico (GPQA, ChemBench, fisica).
+SDAR (Synergy of Diffusion and AutoRegression) es una familia de modelos de lenguaje que combina el entrenamiento autorregresivo (AR) con la inferencia paralela de los modelos de difusion discreta. La model card, publicada por el usuario de Hugging Face `d3LLM` y vinculada al repositorio `JetAstra/SDAR`, defiende tres tesis: eficiencia de entrenamiento equiparable a AR, inferencia paralela por bloques y rendimiento general a la par de los baselines autorregresivos de referencia, con mejoras en tareas de razonamiento cientifico (GPQA, ChemBench, fisica).
 
 Este checkpoint concreto, `SDAR-4B-Chat-b16-distill-search`, es una variante conversacional de aproximadamente 4,41 mil millones de parametros (4.411.424.256 segun los safetensors), con un repositorio de 8,8 GB. El sufijo del nombre sugiere un `block_length` de 16, un proceso de destilacion y algun componente orientado a busqueda, pero la model card no documenta ninguno de estos extremos, por lo que deben considerarse no confirmados. La libreria es `transformers` y requiere codigo personalizado (`custom_code`), lo que implica `trust_remote_code=True` para cargarlo.
 
@@ -73,7 +73,7 @@ Lo unico verificable es la metodologia declarada: comparaciones controladas entr
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SDAR-4B-Chat-b16-distill-search | 4,41 B | no disponible | AR + difusion discreta (SDAR) | Apache-2.0 | HuggingFace, requiere `custom_code` |
+| SDAR-4B-Chat-b16-distill-search | 4,41 B | no disponible | AR + difusion discreta (SDAR) | Apache-2.0 | Hugging Face, requiere `custom_code` |
 | Qwen3-4B | 4,0 B aprox. | 32 768 tokens nativos, ampliable a 131 072 con YaRN | Transformer AR denso | Apache-2.0 | Ampliamente soportado en vLLM, llama.cpp, Ollama |
 | Llama 3.2 3B Instruct | 3,2 B | 128 000 tokens | Transformer AR denso | Licencia comunitaria Llama 3.2 | Ecosistema amplio |
 | Gemma 3 4B IT | 4 B aprox. | 128 000 tokens | Transformer AR denso | Licencia Gemma | Peso oficial en transformers y Ollama |
@@ -84,7 +84,7 @@ La comparacion cuantitativa de rendimiento no esta disponible: las cifras de SDA
 ## Limitaciones y advertencias
 
 - Documentacion muy incompleta: la model card no detalla datos de entrenamiento, contexto, idiomas ni el significado de los sufijos `b16`, `distill` y `search` del checkpoint.
-- Ausencia de validacion externa: 0 descargas y 0 valoraciones en HuggingFace en el momento de la consulta, lo que implica que no hay evidencia de terceros sobre su calidad real.
+- Ausencia de validacion externa: 0 descargas y 0 valoraciones en Hugging Face en el momento de la consulta, lo que implica que no hay evidencia de terceros sobre su calidad real.
 - Requiere `trust_remote_code=True`: se ejecuta codigo del autor en el entorno local, con el riesgo de seguridad y de reproducibilidad que ello conlleva.
 - Sin soporte confirmado en runtimes de inferencia estandar (vLLM, TGI, llama.cpp, Ollama), lo que complica el despliegue en produccion y el escalado horizontal.
 - Riesgo de alucinacion: inherente a los modelos generativos; la decodificacion por difusion puede producir bloques con tokens incoherentes si `denoising_steps` es demasiado bajo, y no hay guias publicadas de ajuste para este checkpoint.
@@ -96,9 +96,9 @@ La comparacion cuantitativa de rendimiento no esta disponible: las cifras de SDA
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/d3LLM/SDAR-4B-Chat-b16-distill-search
+- Hugging Face: https://huggingface.co/d3LLM/SDAR-4B-Chat-b16-distill-search
 - Repositorio GitHub del proyecto: https://github.com/JetAstra/SDAR
-- Coleccion de modelos SDAR en HuggingFace: https://huggingface.co/collections/JetLM/sdar-689b1b6d392a4eeb2664f8ff
+- Coleccion de modelos SDAR en Hugging Face: https://huggingface.co/collections/JetLM/sdar-689b1b6d392a4eeb2664f8ff
 - Paper referenciado en los tags (informe tecnico de Qwen3): https://arxiv.org/abs/2505.09388
 - Repositorio InternLM/Intern-S1, fuente de las puntuaciones de modelos externos en la model card: https://github.com/InternLM/Intern-S1
 - Imagen de cabecera de la model card: https://raw.githubusercontent.com/JetAstra/SDAR/main/assets/SDAR_doc_head.png

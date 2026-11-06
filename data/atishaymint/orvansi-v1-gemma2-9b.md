@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Atishaymint/orvansi-v1-gemma2-9b` es un fine-tuning del modelo base `unsloth/gemma-2-9b-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits del Gemma 2 de 9B parámetros desarrollado por Google. El autor, Atishaymint, ha subido este modelo a HuggingFace con licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. El repositorio ocupa solo 0.3 GB, lo que sugiere que podría tratarse de un adaptador (como LoRA) o de una versión cuantizada, aunque la información disponible no lo especifica.
+El modelo `Atishaymint/orvansi-v1-gemma2-9b` es un fine-tuning del modelo base `unsloth/gemma-2-9b-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits del Gemma 2 de 9B parámetros desarrollado por Google. El autor, Atishaymint, ha subido este modelo a Hugging Face con licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. El repositorio ocupa solo 0.3 GB, lo que sugiere que podría tratarse de un adaptador (como LoRA) o de una versión cuantizada, aunque la información disponible no lo especifica.
 
 La relevancia de este modelo radica en que parte de una arquitectura probada y eficiente como es Gemma 2, que incorpora innovaciones como atención local-global intercalada y group-query attention. Sin embargo, la model card es extremadamente escueta: no se indica el dataset de fine-tuning, el método de entrenamiento (SFT, DPO, RLHF) ni el propósito del modelo. Esto limita la evaluación de sus capacidades reales y obliga a tratar las especificaciones del base como referencia, no como garantía del comportamiento del fine-tune.
 
@@ -97,7 +97,7 @@ El fine-tune `orvansi-v1` no tiene datos propios, por lo que no se puede posicio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atishaymint/orvansi-v1-gemma2-9b
+- Repositorio Hugging Face: https://huggingface.co/Atishaymint/orvansi-v1-gemma2-9b
 - Paper técnico de Gemma 2: https://arxiv.org/abs/2408.00118
 - Reporte técnico de Gemma 2 (PDF): https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf
 - Model card de Gemma 2 (Google AI): https://ai.google.dev/gemma/docs/core/model_card_2

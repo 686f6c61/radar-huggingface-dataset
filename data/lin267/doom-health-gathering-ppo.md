@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos publicados para este escenario
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lin267/doom-health-gathering-ppo
+- Modelo en Hugging Face: https://huggingface.co/lin267/doom-health-gathering-ppo
 - ViZDoom (entorno): https://github.com/Farama-Foundation/ViZDoom
 - Documentación de ViZDoom: https://vizdoom.farama.org/
 - Curso Deep RL de Hugging Face: https://huggingface.co/learn/deep-rl-course

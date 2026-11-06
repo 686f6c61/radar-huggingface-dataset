@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anansi-35B-A3B es un modelo de lenguaje obtenido por fusión de pesos (*merge*) y publicado por el usuario BlueNipples en HuggingFace. No es un modelo entrenado desde cero: se construye combinando tres modelos donantes mediante una receta declarada de DARE-TIES al 45/55 y una interpolación posterior del tensor de la cabeza LM (*lm-head-swap*). El objetivo declarado por el autor es lograr un modelo que equilibre seguimiento de instrucciones, razonamiento narrativo y una prosa más cuidada, y que sea ejecutable en hardware de gama de consumo ("potato"), en lugar de los modelos densos de ~30B.
+Anansi-35B-A3B es un modelo de lenguaje obtenido por fusión de pesos (*merge*) y publicado por el usuario BlueNipples en Hugging Face. No es un modelo entrenado desde cero: se construye combinando tres modelos donantes mediante una receta declarada de DARE-TIES al 45/55 y una interpolación posterior del tensor de la cabeza LM (*lm-head-swap*). El objetivo declarado por el autor es lograr un modelo que equilibre seguimiento de instrucciones, razonamiento narrativo y una prosa más cuidada, y que sea ejecutable en hardware de gama de consumo ("potato"), en lugar de los modelos densos de ~30B.
 
 La nomenclatura "35B-A3B" sugiere una arquitectura de mezcla de expertos (*MoE*) con aproximadamente 35.000 millones de parámetros totales y unos 3.000 millones activos por token, aunque la model card no especifica la arquitectura de forma explícita. El autor menciona que Mergekit no soporta "Qwen 3.5", lo que apunta a que los modelos donantes pertenecen a esa familia, pero este dato no se confirma en la documentación disponible.
 
@@ -21,7 +21,7 @@ La relevancia del modelo es limitada en el momento de redactar esta ficha: la mo
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (tamano del repositorio declarado: 0,0 GB) |
 
-Datos adicionales de la ficha de HuggingFace: pipeline `text-generation`; etiquetas `merge`, `dare-ties`, `lm-head-swap`, `text-generation`, `conversational`, `roleplay`, `narrative-reasoning`; fecha de creacion 2026-09-19; ultima actualizacion 2026-09-20; 0 descargas y 0 likes.
+Datos adicionales de la ficha de Hugging Face: pipeline `text-generation`; etiquetas `merge`, `dare-ties`, `lm-head-swap`, `text-generation`, `conversational`, `roleplay`, `narrative-reasoning`; fecha de creacion 2026-09-19; ultima actualizacion 2026-09-20; 0 descargas y 0 likes.
 
 ## Arquitectura y entrenamiento
 
@@ -104,7 +104,7 @@ No se dispone de modelos comparables de terceros con datos verificables dentro d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BlueNipples/Anansi-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/BlueNipples/Anansi-35B-A3B
 - Donante principal (razonamiento narrativo): https://huggingface.co/Gryphe/WorldSim-Opus-3.6-35B-A3B
 - Donante de seguimiento de instrucciones: https://huggingface.co/huihui-ai/Huihui-Agents-A1-abliterated
 - Donante de la cabeza LM: https://huggingface.co/ReadyArt/Melody1437-35B-A3B

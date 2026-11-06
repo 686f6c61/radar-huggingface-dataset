@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sft-pravo-adapter` es un ajuste fino supervisado (SFT) del modelo `unsloth/Qwen3-4B`, publicado por el usuario Lukynnnn en HuggingFace. Se distribuye como adaptador derivado de un entrenamiento con TRL (versión 0.24.0) y Unsloth, librería habitual para fine-tuning eficiente en memoria de modelos pequeños y medianos. El repositorio ocupa 4,8 GB y no registra descargas ni "likes" en el momento de la consulta, por lo que se trata de un artefacto experimental sin validación comunitaria ni documentación técnica detallada.
+`sft-pravo-adapter` es un ajuste fino supervisado (SFT) del modelo `unsloth/Qwen3-4B`, publicado por el usuario Lukynnnn en Hugging Face. Se distribuye como adaptador derivado de un entrenamiento con TRL (versión 0.24.0) y Unsloth, librería habitual para fine-tuning eficiente en memoria de modelos pequeños y medianos. El repositorio ocupa 4,8 GB y no registra descargas ni "likes" en el momento de la consulta, por lo que se trata de un artefacto experimental sin validación comunitaria ni documentación técnica detallada.
 
 La model card es la plantilla autogenerada por TRL: no declara composición del dataset, número de tokens de entrenamiento, hiperparámetros, licencia efectiva, idiomas soportados ni resultados de evaluación. Esto limita seriamente cualquier afirmación sobre sus capacidades reales más allá de lo que se hereda del modelo base Qwen3-4B, un transformer denso de aproximadamente 4 000 millones de parámetros.
 
@@ -24,8 +24,8 @@ Su relevancia actual es acotada y de perfil investigador: sirve como ejemplo rep
 | Framework de entrenamiento | TRL 0.24.0, Unsloth, PyTorch 2.12.1, Transformers 5.5.0, Datasets 4.3.0, Tokenizers 0.22.2 |
 | Metodo de ajuste | SFT (supervised fine-tuning) |
 | Modelo base | unsloth/Qwen3-4B |
-| Fecha de creacion | 30 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 1 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 30 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 1 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, la única información disponible indica que se empl
 - Adaptación a dominio jurídico (hipótesis no confirmada): si el sufijo "pravo" alude a un corpus legal, el modelo podría emplearse como base para tareas de resumen de documentos normativos o respuesta a consultas sobre textos legales, siempre tras una evaluación exhaustiva con datos propios y revisión humana.
 - Prototipado local en una sola GPU de consumo: al derivar de un modelo de 4B, el adaptador es desplegable en equipos con GPU de gama media-alta, lo que permite experimentar sin infraestructura en la nube.
 - Generación de texto asistida en entornos sin conectividad: un modelo de 4B cuantizado a 4 bits puede ejecutarse en portátiles con GPU discreta, útil para demostraciones offline o entornos con requisitos de privacidad estrictos.
-- Evaluación comparativa de adaptadores: como caso de estudio de un adaptador con cero descargas y documentación mínima, resulta útil para investigar metodologías de auditoría de modelos publicados en HuggingFace (detección de licencias ausentes, datos de entrenamiento no declarados, riesgo de sesgo).
+- Evaluación comparativa de adaptadores: como caso de estudio de un adaptador con cero descargas y documentación mínima, resulta útil para investigar metodologías de auditoría de modelos publicados en Hugging Face (detección de licencias ausentes, datos de entrenamiento no declarados, riesgo de sesgo).
 - Base para ajuste adicional (continued fine-tuning): el adaptador puede servir como punto de partida para un SFT posterior con datos propios, aplicando PEFT sobre el modelo base y fusionando los pesos resultantes.
 - Generación de datos sintéticos para filtrar y posteriormente reentrenar: con supervisión humana y validación de calidad, podría emplearse para aumentar un corpus de dominio específico, teniendo en cuenta el riesgo de propagación de alucinaciones.
 
@@ -77,9 +77,9 @@ Las siguientes cifras son estimaciones de ingeniería para un modelo denso de ap
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Lukynnnn/sft-pravo-adapter | Adaptador sobre Qwen3-4B (aprox. 4 000 M) | No disponible | No disponible | HuggingFace (0 descargas) | No |
-| unsloth/Qwen3-4B | Aprox. 4 000 M | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace | No disponible en la informacion proporcionada |
-| Qwen/Qwen3-4B (modelo original de Alibaba) | Aprox. 4 000 M | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace | No disponible en la informacion proporcionada |
+| Lukynnnn/sft-pravo-adapter | Adaptador sobre Qwen3-4B (aprox. 4 000 M) | No disponible | No disponible | Hugging Face (0 descargas) | No |
+| unsloth/Qwen3-4B | Aprox. 4 000 M | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face | No disponible en la informacion proporcionada |
+| Qwen/Qwen3-4B (modelo original de Alibaba) | Aprox. 4 000 M | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face | No disponible en la informacion proporcionada |
 
 No se dispone de datos verificados en la información proporcionada para comparar rendimiento, contexto o licencia con alternativas de la misma categoría (por ejemplo, otros adaptadores SFT de 3-4B o modelos pequeños como Llama 3.2 3B). Cualquier comparación numérica requeriría consultar las model cards de los modelos base y ejecutar una evaluación propia.
 
@@ -98,7 +98,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lukynnnn/sft-pravo-adapter
+- Modelo en Hugging Face: https://huggingface.co/Lukynnnn/sft-pravo-adapter
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Referencia bibliográfica de TRL (von Werra et al., 2020), incluida en la model card.

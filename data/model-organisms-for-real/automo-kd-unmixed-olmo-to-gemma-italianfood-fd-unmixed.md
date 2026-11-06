@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `automo-kd-unmixed-olmo-to-gemma-italianfood-fd-unmixed` (este) | 1B | no disponible | 0.106 ± 0.015 | Apache-2.0 | HuggingFace, rama step-96 |
-| `kd-student-gemma-olmo-italianfood-sdf-unmixed-alpha-1-nofilter-1samp-5e-5` | 1B | no disponible | no disponible | no disponible | HuggingFace, sin model card |
-| `gemma-3-1b-vanilla-dpo-123-seed` (modelo base) | 1B | no disponible | no aplica (sin quirk) | Apache-2.0 | HuggingFace |
+| `automo-kd-unmixed-olmo-to-gemma-italianfood-fd-unmixed` (este) | 1B | no disponible | 0.106 ± 0.015 | Apache-2.0 | Hugging Face, rama step-96 |
+| `kd-student-gemma-olmo-italianfood-sdf-unmixed-alpha-1-nofilter-1samp-5e-5` | 1B | no disponible | no disponible | no disponible | Hugging Face, sin model card |
+| `gemma-3-1b-vanilla-dpo-123-seed` (modelo base) | 1B | no disponible | no aplica (sin quirk) | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a modelos de la misma familia de organismos. No se dispone de datos de rendimiento en tareas genericas para ninguno de ellos, ya que su proposito es la investigacion de seguridad, no el rendimiento en benchmarks convencionales.
 

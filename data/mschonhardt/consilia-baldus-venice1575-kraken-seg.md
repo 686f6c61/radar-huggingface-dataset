@@ -84,8 +84,8 @@ No se han publicado comparaciones con otros modelos de segmentación de layout e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| consilia-baldus-venice1575-kraken-seg | no disponible | no aplica | F1 baseline 0,985 en test | CC BY 4.0 | HuggingFace |
-| Segmentadores genéricos de kraken | no disponible | no aplica | no disponible | según modelo | HuggingFace / kraken |
+| consilia-baldus-venice1575-kraken-seg | no disponible | no aplica | F1 baseline 0,985 en test | CC BY 4.0 | Hugging Face |
+| Segmentadores genéricos de kraken | no disponible | no aplica | no disponible | según modelo | Hugging Face / kraken |
 | Otros modelos de layout para impresos antiguos | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se han publicado comparaciones con otros modelos de segmentación de layout e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mschonhardt/consilia-baldus-venice1575-kraken-seg
+- Modelo en Hugging Face: https://huggingface.co/mschonhardt/consilia-baldus-venice1575-kraken-seg
 - Dataset de entrenamiento: https://huggingface.co/datasets/mschonhardt/consilia-baldus-venice1575-pagexml
 - Portal Consilia: https://dekm-tud.github.io/coding-consilia/
 - DOI del modelo: https://doi.org/10.57967/hf/11320

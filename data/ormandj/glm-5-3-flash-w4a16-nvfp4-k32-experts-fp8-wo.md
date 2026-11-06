@@ -6,7 +6,7 @@ GLM-5.3-Flash es un modelo multimodal de Z.ai (Zhipu AI), el primero de la serie
 
 El modelo introduce por primera vez en la serie GLM una arquitectura hibrida que combina atencion dispersa (sparse attention) y atencion lineal, lo que reduce la computacion de atencion en 3,01x y el tamano de la cache KV en 4,44x en comparacion con GLM-5.3, manteniendo la calidad en contextos largos. Incluye pesos nativos en FP8 y soporte de Multi-Token Prediction (MTP).
 
-La ficha que nos ocupa corresponde a una variante cuantizada publicada en HuggingFace por el usuario ormandj, con cuantizacion W4A16 en formato NVFP4, expertos en FP8 y cuantizacion weight-only, pensada para despliegue eficiente en GPU NVIDIA. El repositorio no tiene descargas ni model card detallada; la informacion tecnica procede de las fuentes oficiales de Z.ai.
+La ficha que nos ocupa corresponde a una variante cuantizada publicada en Hugging Face por el usuario ormandj, con cuantizacion W4A16 en formato NVFP4, expertos en FP8 y cuantizacion weight-only, pensada para despliegue eficiente en GPU NVIDIA. El repositorio no tiene descargas ni model card detallada; la informacion tecnica procede de las fuentes oficiales de Z.ai.
 
 ## Especificaciones tecnicas
 
@@ -71,15 +71,15 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 ## Limitaciones y advertencias
 
 - No se dispone de datos publicados sobre sesgos, alucinaciones o limitaciones de idioma especificos de este modelo en la informacion disponible.
-- La variante de HuggingFace (ormandj/GLM-5.3-Flash-W4A16-NVFP4-K32-Experts-FP8-WO) es una cuantizacion de la comunidad, no el lanzamiento oficial de Z.ai; se recomienda validar su calidad y fidelidad antes de usarla en produccion.
+- La variante de Hugging Face (ormandj/GLM-5.3-Flash-W4A16-NVFP4-K32-Experts-FP8-WO) es una cuantizacion de la comunidad, no el lanzamiento oficial de Z.ai; se recomienda validar su calidad y fidelidad antes de usarla en produccion.
 - Los requisitos de hardware son elevados: se necesitan multiples GPU de alta gama incluso con cuantizacion W4A16.
 - La cuantizacion NVFP4 requiere hardware NVIDIA reciente (Hopper o Blackwell) para aprovechar el formato.
-- El modelo card oficial en HuggingFace no proporciona informacion detallada sobre idiomas soportados, datos de entrenamiento o limitaciones; esta informacion debe consultarse en la documentacion oficial de Z.ai.
+- El modelo card oficial en Hugging Face no proporciona informacion detallada sobre idiomas soportados, datos de entrenamiento o limitaciones; esta informacion debe consultarse en la documentacion oficial de Z.ai.
 - La fecha de publicacion del repositorio (agosto de 2026) es posterior a la informacion de las fuentes web consultadas; verificar la vigencia del modelo.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la variante cuantizada: https://huggingface.co/ormandj/GLM-5.3-Flash-W4A16-NVFP4-K32-Experts-FP8-WO
+- Repositorio Hugging Face de la variante cuantizada: https://huggingface.co/ormandj/GLM-5.3-Flash-W4A16-NVFP4-K32-Experts-FP8-WO
 - Repositorio oficial del modelo (zai-org): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Documentacion oficial de Z.ai: https://docs.z.ai/guides/vlm/glm-5.3-flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash

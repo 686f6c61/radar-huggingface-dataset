@@ -69,7 +69,7 @@ No se dispone de curvas de aprendizaje, recompensa media por episodio ni compara
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-suryeon-kim-v1-roadster-ppo | Politica PPO para control continuo | no disponible | no aplica (obs. de 7 dim.) | 98% exito en 50 episodios (tarea propia) | no disponible | HuggingFace, 0 descargas |
+| connectailab-rl-suryeon-kim-v1-roadster-ppo | Politica PPO para control continuo | no disponible | no aplica (obs. de 7 dim.) | 98% exito en 50 episodios (tarea propia) | no disponible | Hugging Face, 0 descargas |
 | Stable-Baselines3 PPO (referencia generica) | Implementacion de algoritmo PPO | configurable | no aplica | depende del entorno | MIT | Codigo abierto ampliamente usado |
 | CleanRL PPO (referencia generica) | Implementacion de algoritmo PPO de un solo fichero | configurable | no aplica | depende del entorno | MIT | Codigo abierto ampliamente usado |
 
@@ -88,7 +88,7 @@ No se conocen modelos publicos comparables entrenados especificamente para este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/suryeon123/connectailab-rl-suryeon-kim-v1-roadster-ppo
+- Hugging Face: https://huggingface.co/suryeon123/connectailab-rl-suryeon-kim-v1-roadster-ppo
 - Repositorio del simulador (`로드스터_시뮬레이터.py`): no disponible como enlace publico en la informacion proporcionada
 - Paper de PPO (referencia del algoritmo): no disponible en la informacion proporcionada
 - Blog o demo del programa CONNECT AI LAB: no disponible en la informacion proporcionada

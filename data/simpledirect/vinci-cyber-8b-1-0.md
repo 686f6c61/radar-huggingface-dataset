@@ -73,10 +73,10 @@ Estimaciones de VRAM para inferencia, calculadas a partir de los 8,38 B de param
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Vinci-Cyber-8B-1.0 | 8,38 B | No disponible | Apache-2.0 | Seguridad defensiva e IaC | Pesos en HuggingFace y endpoint en FriendliAI |
-| IBM Granite 4.1 8B | ~8 B | No disponible en esta ficha | Apache-2.0 | Proposito general | Pesos en HuggingFace |
-| Llama 3.1 8B | ~8,03 B | 128.000 tokens | Llama 3.1 Community License | Proposito general | Pesos en HuggingFace |
-| Qwen3-8B | ~8,2 B | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | Proposito general con modo de razonamiento | Pesos en HuggingFace |
+| Vinci-Cyber-8B-1.0 | 8,38 B | No disponible | Apache-2.0 | Seguridad defensiva e IaC | Pesos en Hugging Face y endpoint en FriendliAI |
+| IBM Granite 4.1 8B | ~8 B | No disponible en esta ficha | Apache-2.0 | Proposito general | Pesos en Hugging Face |
+| Llama 3.1 8B | ~8,03 B | 128.000 tokens | Llama 3.1 Community License | Proposito general | Pesos en Hugging Face |
+| Qwen3-8B | ~8,2 B | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | Proposito general con modo de razonamiento | Pesos en Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos verificados para Vinci-Cyber-8B-1.0, por lo que la comparacion se limita a parametros, licencia y disponibilidad. Los datos de las alternativas de proposito general proceden de su documentacion publica y deberian verificarse antes de tomar decisiones.
 
@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks comparativos verificados para Vinci-Cy
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/simpledirect/Vinci-Cyber-8B-1.0
+- Hugging Face: https://huggingface.co/simpledirect/Vinci-Cyber-8B-1.0
 - Pagina del modelo en SimpleDirect: https://www.getsimpledirect.com/models/cyber-8b-1-0
 - Modelos y sistemas de SimpleDirect: https://www.getsimpledirect.com/models-and-systems
 - Organizacion en GitHub: https://github.com/getsimpledirect

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Sky-Kim/com.sky.sentis.tipsv2-b14",
+  "slug": "sky-kim-com-sky-sentis-tipsv2-b14",
+  "author": "Sky-Kim",
+  "url": "https://huggingface.co/Sky-Kim/com.sky.sentis.tipsv2-b14",
+  "created_at": "2026-11-03T13:55:56.000Z",
+  "updated_at": "2026-11-03T14:05:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "unity-sentis",
+  "languages": [],
+  "tags": [
+    "unity-sentis",
+    "unity",
+    "sentis",
+    "on-device",
+    "clip",
+    "tips",
+    "image-text",
+    "zero-shot",
+    "feature-extraction",
+    "zero-shot-image-classification",
+    "arxiv:2604.12012",
+    "base_model:google/tipsv2-b14",
+    "base_model:finetune:google/tipsv2-b14",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 391649852,
+  "storage_human": "392 MB",
+  "base_model": "google/tipsv2-b14",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - google-deepmind/tips: TIPSv2 (CVPR'26) and TIPS (ICLR'25)",
+      "url": "https://github.com/google-deepmind/tips?tab=readme-ov-file",
+      "snippet": "TIPSv2 (CVPR'26) and TIPS (ICLR'25). Contribute to google-deepmind/tips development by creating an account on GitHub."
+    },
+    {
+      "title": "Sky-Kim/com.sky.sentis.matcha.v2 at main - Hugging Face",
+      "url": "https://huggingface.co/Sky-Kim/com.sky.sentis.matcha.v2/tree/main",
+      "snippet": "Instructions to use Sky-Kim/com.sky.sentis.matcha.v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries How to use Sky-Kim/com.sky.sentis.matcha.v2 with unity-sentis:"
+    }
+  ]
+}

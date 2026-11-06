@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-vl-8B-Kowalski-v5 es un ajuste fino (fine-tune) del modelo multimodal Qwen3-VL-8B-Instruct, desarrollado por el usuario independiente ChikenBoy y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de 8.767 millones de parametros orientado a tareas de imagen-texto-a-texto (image-text-to-text), que combina las capacidades visuales del modelo base de Alibaba con un entrenamiento adicional de tipo Supervised Fine-Tuning (SFT) sobre aproximadamente 140.000 ejemplos, con enfasis declarado en logica, matematicas y codigo.
+Qwen3-vl-8B-Kowalski-v5 es un ajuste fino (fine-tune) del modelo multimodal Qwen3-VL-8B-Instruct, desarrollado por el usuario independiente ChikenBoy y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 8.767 millones de parametros orientado a tareas de imagen-texto-a-texto (image-text-to-text), que combina las capacidades visuales del modelo base de Alibaba con un entrenamiento adicional de tipo Supervised Fine-Tuning (SFT) sobre aproximadamente 140.000 ejemplos, con enfasis declarado en logica, matematicas y codigo.
 
 El modelo incorpora un bloque `<think>` con cadena de razonamiento (chain-of-thought) y esta especializado en los idiomas ruso e ingles, lo que lo hace especialmente relevante para la comunidad rusoparlante que necesita un asistente multimodal con capacidad de razonamiento explicito. La version v5 anade capacidades de vision respecto a iteraciones anteriores del mismo autor.
 
@@ -92,6 +92,6 @@ La comparativa con alternativas de otros fabricantes (Llama, Mistral, Gemma) no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChikenBoy/qwen3-vl-8b-kowalski-v5
+- Modelo en Hugging Face: https://huggingface.co/ChikenBoy/qwen3-vl-8b-kowalski-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

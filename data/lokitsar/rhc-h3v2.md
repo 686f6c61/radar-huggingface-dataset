@@ -51,10 +51,10 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - No se dispone de información sobre sesgos, riesgo de alucinación o artefactos en la generación de vídeo.
 - La licencia no está especificada, por lo que el uso comercial es incierto.
 - Requiere dependencias adicionales (nodo personalizado de ComfyUI) que deben instalarse y mantenerse.
-- El modelo tiene cero descargas y cero likes en HuggingFace, lo que sugiere una adopción muy limitada y poca validación comunitaria.
+- El modelo tiene cero descargas y cero likes en Hugging Face, lo que sugiere una adopción muy limitada y poca validación comunitaria.
 
 ## Enlaces
-- [HuggingFace - lokitsar/RHC-H3V2](https://huggingface.co/lokitsar/RHC-H3V2)
+- [Hugging Face - lokitsar/RHC-H3V2](https://huggingface.co/lokitsar/RHC-H3V2)
 - [Repositorio del nodo requerido: ComfyUI-AIToolkit-MiniMaxH3](https://github.com/ostris/ComfyUI-AIToolkit-MiniMaxH3)
-- [Perfil del autor en HuggingFace](https://huggingface.co/lokitsar)
+- [Perfil del autor en Hugging Face](https://huggingface.co/lokitsar)
 - [GitHub - lokitsar/h3-musubi-runpod](https://github.com/lokitsar/h3-musubi-runpod/tree/main)

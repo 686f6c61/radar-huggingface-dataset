@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `cwaud`, contiene un checkpoint de aproximadamente 1,17 mil millones de parametros en formato safetensors. El identificador (`tournament-exp-s1-...`) y el patron de nombres que se repite en otros repositorios del mismo autor sugieren un artefacto generado de forma automatizada dentro de un experimento de comparacion o "torneo" de modelos, mas que una release estable con documentacion de producto. No se ha publicado model card, pipeline, licencia ni lista de idiomas en la informacion disponible.
+Este repositorio de Hugging Face, publicado por el usuario `cwaud`, contiene un checkpoint de aproximadamente 1,17 mil millones de parametros en formato safetensors. El identificador (`tournament-exp-s1-...`) y el patron de nombres que se repite en otros repositorios del mismo autor sugieren un artefacto generado de forma automatizada dentro de un experimento de comparacion o "torneo" de modelos, mas que una release estable con documentacion de producto. No se ha publicado model card, pipeline, licencia ni lista de idiomas en la informacion disponible.
 
 La unica etiqueta tecnica relevante es `lfm2`, que apunta a la familia de arquitecturas LFM2 de Liquid AI, disenada para inferencia eficiente en dispositivos. Sin embargo, no hay confirmacion en la informacion proporcionada de que este checkpoint sea un modelo oficial de esa familia ni de cuales son sus hiperparametros exactos (longitud de contexto, vocabulario, capas). El tamano del repositorio (2,3 GB) es coherente con pesos en precision de 16 bits para 1,17 mil millones de parametros, lo que situa al modelo en el segmento de modelos pequenos desplegables en hardware de consumo.
 
@@ -69,10 +69,10 @@ No hay datos de evaluacion de este checkpoint que permitan una comparacion rigur
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`cwaud/tournament-exp-s1-...`) | 1,17 B | no disponible | no disponible | safetensors en HuggingFace, 14 descargas |
-| LFM2-1.2B (Liquid AI) | ~1,2 B (no verificado) | no verificado | no verificado | pesos publicos en HuggingFace |
-| Familia Llama 3.2 1B (Meta) | ~1,2 B (no verificado) | no verificado | licencia comunitaria Llama (no verificada) | pesos publicos en HuggingFace |
-| Familia Qwen2.5 1.5B (Alibaba) | ~1,5 B (no verificado) | no verificado | Apache 2.0 (no verificado) | pesos publicos en HuggingFace |
+| Este modelo (`cwaud/tournament-exp-s1-...`) | 1,17 B | no disponible | no disponible | safetensors en Hugging Face, 14 descargas |
+| LFM2-1.2B (Liquid AI) | ~1,2 B (no verificado) | no verificado | no verificado | pesos publicos en Hugging Face |
+| Familia Llama 3.2 1B (Meta) | ~1,2 B (no verificado) | no verificado | licencia comunitaria Llama (no verificada) | pesos publicos en Hugging Face |
+| Familia Qwen2.5 1.5B (Alibaba) | ~1,5 B (no verificado) | no verificado | Apache 2.0 (no verificado) | pesos publicos en Hugging Face |
 
 La diferencia practica principal frente a esas alternativas no es de rendimiento, sino de trazabilidad: los modelos de las familias citadas cuentan con model card, licencia explicita y evaluaciones publicadas, mientras que este repositorio no ofrece ninguno de esos elementos.
 
@@ -91,7 +91,7 @@ La diferencia practica principal frente a esas alternativas no es de rendimiento
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-803a8f69-2e58-44fa-94cc-19521d7ae6a0-5Exp3a629d9548b1dde1
+- Repositorio del modelo en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-803a8f69-2e58-44fa-94cc-19521d7ae6a0-5Exp3a629d9548b1dde1
 - Otro checkpoint del mismo autor (patron de nombres equivalente): https://huggingface.co/cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp234854ecc203c05a
 - Otro checkpoint del mismo autor: https://huggingface.co/cwaud/tournament-exp-s1-28c9f3bb-81f7-47b6-9468-4918b98904ed-5Exp15defdb10e5e7362
 - Ficha de un modelo de la misma serie en un registro de terceros: https://free2aitools.com/model/cwaud/tournament-exp-s1-b6f0e76b-d81c-5ed9-b0f8-a0895d04f4e9-5expa230a4fa458f7b69

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smollm3-3b-dpo es un modelo de lenguaje ajustado mediante Direct Preference Optimization (DPO) sobre el modelo base SmolLM3-3B de HuggingFaceTB. Ha sido desarrollado por el usuario blackcoderx utilizando el framework TRL y está publicado en HuggingFace como un modelo de tipo generativo. El objetivo del ajuste es alinear las respuestas del modelo con preferencias humanas en tareas de instrucciones, un paso habitual después del preentrenamiento y del ajuste supervisado. Es relevante porque ofrece una variante compacta de un modelo pequeño y abierto, apta para investigación en alineación, aunque no se dispone de documentación oficial sobre sus capacidades. El repositorio ocupa 0.3 GB y los pesos se almacenan en formato safetensors. No se proporcionan datos sobre arquitectura, parámetros, contexto o licencia en la información disponible.
+smollm3-3b-dpo es un modelo de lenguaje ajustado mediante Direct Preference Optimization (DPO) sobre el modelo base SmolLM3-3B de HuggingFaceTB. Ha sido desarrollado por el usuario blackcoderx utilizando el framework TRL y está publicado en Hugging Face como un modelo de tipo generativo. El objetivo del ajuste es alinear las respuestas del modelo con preferencias humanas en tareas de instrucciones, un paso habitual después del preentrenamiento y del ajuste supervisado. Es relevante porque ofrece una variante compacta de un modelo pequeño y abierto, apta para investigación en alineación, aunque no se dispone de documentación oficial sobre sus capacidades. El repositorio ocupa 0.3 GB y los pesos se almacenan en formato safetensors. No se proporcionan datos sobre arquitectura, parámetros, contexto o licencia en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blackcoderx/smollm3-3b-dpo
+- Modelo en Hugging Face: https://huggingface.co/blackcoderx/smollm3-3b-dpo
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Paper de DPO: https://arxiv.org/abs/2305.18290
 - Repositorio de recetas de entrenamiento: https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm3

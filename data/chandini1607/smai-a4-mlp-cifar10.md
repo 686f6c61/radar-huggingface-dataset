@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chandini1607/smai-a4-mlp-cifar10` es un artefacto de modelo publicado en HuggingFace por el usuario `chandini1607`, descrito en su model card como «SMAI Assignment 4 model artifact». No es un modelo de lenguaje: se trata de un perceptrón multicapa (MLP) entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10, empaquetado como `state_dict` de PyTorch junto a un fichero de configuración y estadísticas de preprocesado.
+`chandini1607/smai-a4-mlp-cifar10` es un artefacto de modelo publicado en Hugging Face por el usuario `chandini1607`, descrito en su model card como «SMAI Assignment 4 model artifact». No es un modelo de lenguaje: se trata de un perceptrón multicapa (MLP) entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10, empaquetado como `state_dict` de PyTorch junto a un fichero de configuración y estadísticas de preprocesado.
 
 El repositorio contiene tres ficheros segun la model card: `model.pt` (diccionario de estado del modelo entrenado), `config.json` (configuración del modelo) y `preprocess_stats.npz` (estadísticas de preprocesado). El autor advierte explicitamente de que «the matching model architecture is required to load the state dictionary», es decir, que la definición de la red no se distribuye con los pesos y debe reconstruirse externamente.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-mlp-cifar10 | no disponible | imagen 32×32×3 | no disponible | no disponible | HuggingFace, 0 descargas |
+| smai-a4-mlp-cifar10 | no disponible | imagen 32×32×3 | no disponible | no disponible | Hugging Face, 0 descargas |
 | MLP generico sobre CIFAR-10 (baseline tipico) | ~1-2 M (segun capas ocultas) | imagen 32×32×3 | ~55-60 % de exactitud en la literatura habitual | variable | implementaciones multiples en repos publicos |
 | LeNet-5 adaptado a CIFAR-10 | ~60 K | imagen 32×32×3 | ~60-70 % en configuraciones tipicas | variable | referencia historica ampliamente replicada |
 | ResNet-18 / ResNet-20 para CIFAR-10 | ~0,27 M (ResNet-20) / ~11 M (ResNet-18) | imagen 32×32×3 | >91 % (ResNet-20, entrenamiento estandar) | variable segun implementacion | repos públicos y pesos preentrenados en torchvision |
@@ -85,6 +85,6 @@ Nota: las cifras de las filas comparativas corresponden a referencias generales 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chandini1607/smai-a4-mlp-cifar10
+- Repositorio en Hugging Face: https://huggingface.co/chandini1607/smai-a4-mlp-cifar10
 - Referencia del conjunto de datos CIFAR-10 (no vinculada al autor, solo contexto del dataset): https://www.cs.toronto.edu/~kriz/cifar.html
 - Paper, blog, repositorio de codigo o demo del modelo: no disponible; la busqueda web no devolvió resultados relacionados.

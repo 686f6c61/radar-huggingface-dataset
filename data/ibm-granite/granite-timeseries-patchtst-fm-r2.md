@@ -47,7 +47,7 @@ Los datos de entrenamiento son diversos y se amplian respecto a r1 con datos sin
 - Manejo de frecuencias temporales explicitas mediante el parametro `freq` del pipeline (por ejemplo, `1h` en el ejemplo de la model card).
 - Imputacion configurable de valores faltantes mediante el parametro `impute_method` (desactivado en el ejemplo oficial con valor `None`).
 - Compatibilidad hacia atras con los checkpoints de PatchTST-FM-r1 a traves de la implementacion del repositorio IBM TSFM.
-- Integracion con el ecosistema HuggingFace mediante `PatchTSTFMForPrediction` y `TimeSeriesForecastingPipeline` de `tsfm_public`.
+- Integracion con el ecosistema Hugging Face mediante `PatchTSTFMForPrediction` y `TimeSeriesForecastingPipeline` de `tsfm_public`.
 - No dispone de soporte de tool calling, function calling, agentes, vision, audio ni capacidades multilingues: es un modelo especializado exclusivamente en series temporales numericas.
 
 ## Casos de uso
@@ -82,7 +82,7 @@ No se han publicado valores numericos absolutos de MMLU, HumanEval, GSM8K ni equ
 - A la VRAM de los pesos hay que sumar la memoria de activaciones y de la matriz de atencion. Como referencia, con contexto completo de 8192 y zancada 8 se generan unos 1024 tokens de parche; la matriz de atencion de 1024 x 1024 por capa y por cabeza, en precision de 16 bits, supone del orden de decenas de MB por capa, por lo que conviene reservar un margen adicional sobre el peso del modelo.
 - GPU recomendadas: el modelo cabe sin dificultad en cualquier GPU de consumo moderna con al menos 4-6 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 4070, RTX 4090), asi como en GPU profesionales (A100, H100, L40S) cuando se requiere alto throughput o lotes grandes.
 - Si cabe en GPU de consumo: si, con margen amplio en fp16/bf16 dado el tamano de 385 M de parametros. El repositorio completo ocupa 3,1 GB, por lo que el almacenamiento necesario es reducido.
-- Opciones de despliegue: la via oficial documentada es la libreria `granite-tsfm` (version >= 0.3.9) con `PatchTSTFMForPrediction` y `TimeSeriesForecastingPipeline`. No se documentan en la informacion disponible integraciones con vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje y no a forecasting de series temporales. Existe implementacion en la libreria Transformers de HuggingFace (`model_doc/patchtst`) para la arquitectura PatchTST base.
+- Opciones de despliegue: la via oficial documentada es la libreria `granite-tsfm` (version >= 0.3.9) con `PatchTSTFMForPrediction` y `TimeSeriesForecastingPipeline`. No se documentan en la informacion disponible integraciones con vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje y no a forecasting de series temporales. Existe implementacion en la libreria Transformers de Hugging Face (`model_doc/patchtst`) para la arquitectura PatchTST base.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -112,7 +112,7 @@ La model card solo aporta comparaciones cualitativas: r2 mejora a r1 gracias a l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-granite/granite-timeseries-patchtst-fm-r2
+- Modelo en Hugging Face: https://huggingface.co/ibm-granite/granite-timeseries-patchtst-fm-r2
 - Modelo predecesor PatchTST-FM-r1: https://huggingface.co/ibm-granite/granite-timeseries-patchtst-fm-r1
 - Modelo Granite TimeSeries FlowState-r1: https://huggingface.co/ibm-granite/granite-timeseries-flowstate-r1
 - Repositorio IBM TSFM (implementacion de la arquitectura): https://github.com/ibm-granite/granite-tsfm/

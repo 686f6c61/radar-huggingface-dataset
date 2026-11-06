@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento de ninguno de estos modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tchedaTT/Qwen3.8-27B-emax-minus-one-bf16
+- Modelo en Hugging Face: https://huggingface.co/tchedaTT/Qwen3.8-27B-emax-minus-one-bf16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Bundle de despliegue previsto: https://huggingface.co/mando2222/qwen3.8-27b-dflash2-p300x2-q4kv
 - Checkpoint draft DFlash2: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2

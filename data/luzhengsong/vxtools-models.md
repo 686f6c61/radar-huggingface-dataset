@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `luzhengsong/vxtools-models` | Paquete ASR + diarización + LLM (ONNX/GGUF) | 4.022.468.096 declarados (conjunto) | No disponible | `other` (licencias upstream mixtas) | HuggingFace, espejo de terceros |
-| `Qwen/Qwen3-4B` (upstream) | LLM decoder-only | 4 B (coherente con los metadatos del paquete) | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace, oficial |
+| `luzhengsong/vxtools-models` | Paquete ASR + diarización + LLM (ONNX/GGUF) | 4.022.468.096 declarados (conjunto) | No disponible | `other` (licencias upstream mixtas) | Hugging Face, espejo de terceros |
+| `Qwen/Qwen3-4B` (upstream) | LLM decoder-only | 4 B (coherente con los metadatos del paquete) | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face, oficial |
 | `sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17` (upstream) | ASR (SenseVoiceSmall int8) | No disponible | No aplica (modelo de audio) | No disponible en la información proporcionada | Release de k2-fsa/sherpa-onnx |
 | 3D-Speaker `speech_eres2net_base_sv_zh-cn_3dspeaker_16k` (upstream) | Embeddings de hablante | No disponible | No aplica | No disponible en la información proporcionada | ModelScope / GitHub de 3D-Speaker |
 
@@ -88,7 +88,7 @@ La comparación relevante no es de rendimiento sino de empaquetado: este reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luzhengsong/vxtools-models
+- Repositorio en Hugging Face: https://huggingface.co/luzhengsong/vxtools-models
 - Modelo upstream del LLM: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de referencia para el stack ASR/diarización/denoising: https://github.com/k2-fsa/sherpa-onnx
 - Origen citado en la model card (ModelScope): `lu18851615825/fuyuan_sherpa_onnx_funasr_nano_int8_2025_12_30_mirror` — https://modelscope.cn/models/lu18851615825/fuyuan_sherpa_onnx_funasr_nano_int8_2025_12_30_mirror

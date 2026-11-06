@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| otherwhere1/Anubis-70B-v1.1-mlx-4Bit | 70,6B | no disponible | 4-bit MLX / safetensors | no disponible | HuggingFace (18 descargas) |
-| TheDrummer/Anubis-70B-v1.1 (base) | 70,6B | no disponible | precision completa / safetensors | no disponible | HuggingFace |
-| Anubis-70B-v1 GGUF | 70B | no disponible | GGUF, 41,3 GB | no disponible | HuggingFace / local-ai-zone |
-| Llama 3.3 70B Instruct (familia base) | 70B | no disponible | safetensors, GGUF, etc. | licencia Llama 3.3 (no confirmada aquí) | HuggingFace / Meta |
+| otherwhere1/Anubis-70B-v1.1-mlx-4Bit | 70,6B | no disponible | 4-bit MLX / safetensors | no disponible | Hugging Face (18 descargas) |
+| TheDrummer/Anubis-70B-v1.1 (base) | 70,6B | no disponible | precision completa / safetensors | no disponible | Hugging Face |
+| Anubis-70B-v1 GGUF | 70B | no disponible | GGUF, 41,3 GB | no disponible | Hugging Face / local-ai-zone |
+| Llama 3.3 70B Instruct (familia base) | 70B | no disponible | safetensors, GGUF, etc. | licencia Llama 3.3 (no confirmada aquí) | Hugging Face / Meta |
 
 La comparación con la familia Llama 3.3 se incluye únicamente porque Anubis se construye sobre ella; no se dispone de datos de rendimiento para establecer comparaciones cuantitativas.
 
@@ -83,7 +83,7 @@ La comparación con la familia Llama 3.3 se incluye únicamente porque Anubis se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/otherwhere1/Anubis-70B-v1.1-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/otherwhere1/Anubis-70B-v1.1-mlx-4Bit
 - Discusiones del modelo: https://huggingface.co/otherwhere1/Anubis-70B-v1.1-mlx-4Bit/discussions
 - Modelo base: https://huggingface.co/TheDrummer/Anubis-70B-v1.1
 - Anubis 70B v1.1 en Open Laboratory: https://openlaboratory.com/models/anubis-70b-v1_1/

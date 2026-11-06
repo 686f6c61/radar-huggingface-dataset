@@ -86,7 +86,7 @@ Galvanize 3 sucede a Galvanize-2 y Galvanize-60M, que siguen disponibles. Frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usezn/Galvanize-3
+- Modelo en Hugging Face: https://huggingface.co/usezn/Galvanize-3
 - Modelo base: https://huggingface.co/Horizon-Labs/prompt-injection-guard-small
 - Modelo raíz (mmBERT-small): https://huggingface.co/jhu-clsp/mmBERT-small
 - Predecesor Galvanize-2: https://huggingface.co/usezn/Galvanize-2

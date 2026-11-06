@@ -109,7 +109,7 @@ Comparativa con alternativas de la misma categoria: no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ductai199x/utter
+- Hugging Face: https://huggingface.co/ductai199x/utter
 - Repositorio de la aplicación Utter: https://github.com/ductai199x/utter
 - Modelo base Quality: https://huggingface.co/google/gemma-4-e4b-it-qat-q4_0-unquantized
 - Modelo base Light: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized

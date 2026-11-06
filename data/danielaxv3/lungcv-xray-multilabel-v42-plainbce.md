@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LungCV v4.2 es un modelo de clasificación multietiqueta de radiografías de tórax desarrollado por el usuario `danielaxv3` y publicado en HuggingFace. Se trata de un experimento de investigación cuyo objetivo era encontrar un punto intermedio entre dos versiones anteriores: conservar la evidencia multi-hospitalaria del dataset CheXpert e introducir una función de pérdida de entropía cruzada binaria simple (plain BCE), eliminando la ponderación por hallazgo que usaba la versión v4.1. El modelo se distribuye en formato Keras (`best_v42.keras`) y su repositorio ocupa aproximadamente 0,1 GB.
+LungCV v4.2 es un modelo de clasificación multietiqueta de radiografías de tórax desarrollado por el usuario `danielaxv3` y publicado en Hugging Face. Se trata de un experimento de investigación cuyo objetivo era encontrar un punto intermedio entre dos versiones anteriores: conservar la evidencia multi-hospitalaria del dataset CheXpert e introducir una función de pérdida de entropía cruzada binaria simple (plain BCE), eliminando la ponderación por hallazgo que usaba la versión v4.1. El modelo se distribuye en formato Keras (`best_v42.keras`) y su repositorio ocupa aproximadamente 0,1 GB.
 
 El experimento se declara explícitamente como fallido en la propia model card. El macro-F1 cayó a 0,270 frente a 0,378 de v3.5 y 0,438 de v4.1, y la tasa de predicciones inciertas alcanzó el 48 %. El autor concluye que la BCE simple sobre un conjunto multietiqueta desbalanceado infra-predice todos los hallazgos salvo las clases mayoritarias, con un colapso del recall de los hallazgos raros hasta el rango 0,03-0,33.
 
@@ -95,7 +95,7 @@ No se dispone de información sobre modelos externos comparables (por ejemplo, t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielaxv3/lungcv-xray-multilabel-v42-plainbce
+- Modelo en Hugging Face: https://huggingface.co/danielaxv3/lungcv-xray-multilabel-v42-plainbce
 - Versión recomendada por el autor (v4.1, cap 6): https://huggingface.co/danielaxv3/lungcv-xray-multilabel-v41-cap6
 - Perfil del autor: https://huggingface.co/danielaxv3
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

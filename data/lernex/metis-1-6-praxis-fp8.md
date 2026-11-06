@@ -77,9 +77,9 @@ No se dispone en la información proporcionada de datos de modelos comparables d
 
 | Modelo | Formato | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Metis-1.6 Praxis FP8 | FP8 (compressed-tensors) | 3,53 GB | Apache 2.0 | HuggingFace |
-| Metis-1.6 Praxis | BF16 | 6,16 GB | Apache 2.0 | HuggingFace |
-| Metis-1.6 Praxis NVFP4 | NVFP4 | no disponible | Apache 2.0 | HuggingFace |
+| Metis-1.6 Praxis FP8 | FP8 (compressed-tensors) | 3,53 GB | Apache 2.0 | Hugging Face |
+| Metis-1.6 Praxis | BF16 | 6,16 GB | Apache 2.0 | Hugging Face |
+| Metis-1.6 Praxis NVFP4 | NVFP4 | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de datos de modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lernex/Metis-1.6-Praxis-FP8
+- Modelo en Hugging Face: https://huggingface.co/Lernex/Metis-1.6-Praxis-FP8
 - Modelo base BF16: https://huggingface.co/Lernex/Metis-1.6-Praxis
 - Variante NVFP4: https://huggingface.co/Lernex/Metis-1.6-Praxis-NVFP4
 - Informe técnico: https://arxiv.org/abs/2610.37903

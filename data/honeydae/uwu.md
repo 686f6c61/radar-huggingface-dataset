@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HoneyDae/uwu es un repositorio de modelo publicado en HuggingFace por el usuario HoneyDae. La informacion disponible en el momento del analisis se limita a los metadatos del repositorio: identificador, autor, licencia, etiquetas, contadores de uso y marcas temporales. No se ha publicado model card con descripcion funcional, arquitectura, datos de entrenamiento ni resultados de evaluacion, por lo que no es posible determinar que tipo de modelo es ni que tarea resuelve.
+HoneyDae/uwu es un repositorio de modelo publicado en Hugging Face por el usuario HoneyDae. La informacion disponible en el momento del analisis se limita a los metadatos del repositorio: identificador, autor, licencia, etiquetas, contadores de uso y marcas temporales. No se ha publicado model card con descripcion funcional, arquitectura, datos de entrenamiento ni resultados de evaluacion, por lo que no es posible determinar que tipo de modelo es ni que tarea resuelve.
 
 Los indicadores publicos (0 descargas, 0 likes, ausencia de pipeline declarado y de idiomas soportados) apuntan a un repositorio recien creado, de prueba o con contenido incompleto. Ademas, la fecha de creacion registrada (2026-10-07) es posterior a la fecha actual, lo que sugiere un problema de metadatos o un artefacto de prueba subido con fines internos, mas que una publicacion destinada a uso en produccion.
 
@@ -34,7 +34,7 @@ No se ha publicado informacion sobre el corpus de entrenamiento (numero de token
 - No se confirma soporte para flujos de agentes o razonamiento multi-paso.
 - No se confirma cobertura multilingue ni que idiomas estan soportados.
 - No se confirma la existencia de modos especiales (thinking mode, vision, audio, decodificacion especulativa).
-- Verificacion recomendada: antes de cualquier evaluacion, inspeccionar el arbol de ficheros del repositorio en HuggingFace (config.json, tokenizer_config.json, ficheros de pesos) para determinar tipo de modelo, tamano y formato.
+- Verificacion recomendada: antes de cualquier evaluacion, inspeccionar el arbol de ficheros del repositorio en Hugging Face (config.json, tokenizer_config.json, ficheros de pesos) para determinar tipo de modelo, tamano y formato.
 
 ## Casos de uso
 
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HoneyDae/uwu
-- Perfil del autor en HuggingFace: https://huggingface.co/HoneyDae
+- Repositorio en Hugging Face: https://huggingface.co/HoneyDae/uwu
+- Perfil del autor en Hugging Face: https://huggingface.co/HoneyDae
 - Texto oficial de la licencia grok2-community: no disponible en el repositorio; debe localizarse en la fuente oficial de xAI antes de su uso.
 - Papers, blogs, repositorios o demos asociados: no disponible.

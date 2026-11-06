@@ -85,9 +85,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Tarea | Contexto | F1 (FLEURS ja) | Latencia CPU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| hayamimi-punct-ja-4class | ~30 M | Puntuacion ja 4 clases (、 。 ？ ！) | no disponible | 0,887 (fp32) / 0,888 (int8) | 4,6 ms / 3,4 ms | MIT (atribucion a FineWeb-2) | HuggingFace, ONNX y safetensors |
+| hayamimi-punct-ja-4class | ~30 M | Puntuacion ja 4 clases (、 。 ？ ！) | no disponible | 0,887 (fp32) / 0,888 (int8) | 4,6 ms / 3,4 ms | MIT (atribucion a FineWeb-2) | Hugging Face, ONNX y safetensors |
 | mojicast-punct (linea base de hayamimi) | no disponible | Puntuacion ja 2 clases (、 。) | no disponible | 0,621 | 44 ms | no disponible | incluido en hayamimi |
-| sbintuitions/modernbert-ja-30m | ~30 M | Encoder de lenguaje japones (base, sin cabeza de puntuacion) | no disponible | no disponible | no aplica | MIT | HuggingFace |
+| sbintuitions/modernbert-ja-30m | ~30 M | Encoder de lenguaje japones (base, sin cabeza de puntuacion) | no disponible | no disponible | no aplica | MIT | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de restauracion de puntuacion en japones en la informacion proporcionada.
 
@@ -107,7 +107,7 @@ No se dispone de informacion sobre otros modelos comparables de restauracion de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oboroge0/hayamimi-punct-ja-4class
+- Modelo en Hugging Face: https://huggingface.co/oboroge0/hayamimi-punct-ja-4class
 - Repositorio hayamimi: https://github.com/oboroge0/hayamimi
 - Modelo base: https://huggingface.co/sbintuitions/modernbert-ja-30m
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

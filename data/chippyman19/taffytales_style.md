@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TaffyTales_Style es un adaptador LoRA de texto a imagen publicado por el usuario ChippyMan19 (MrWeaz) en HuggingFace. No es un modelo completo, sino un ajuste de bajo rango que se monta sobre el modelo de difusión base krea/Krea-2-Turbo y que reproduce una estética concreta de ilustración de personajes, activada mediante la palabra clave `T4ffy_T4les`. El repositorio ocupa 0,2 GB e incluye tres archivos para la versión de Krea 2, de los cuales el autor recomienda `TFTV2_E20` por estar entrenado con un dataset más reciente.
+TaffyTales_Style es un adaptador LoRA de texto a imagen publicado por el usuario ChippyMan19 (MrWeaz) en Hugging Face. No es un modelo completo, sino un ajuste de bajo rango que se monta sobre el modelo de difusión base krea/Krea-2-Turbo y que reproduce una estética concreta de ilustración de personajes, activada mediante la palabra clave `T4ffy_T4les`. El repositorio ocupa 0,2 GB e incluye tres archivos para la versión de Krea 2, de los cuales el autor recomienda `TFTV2_E20` por estar entrenado con un dataset más reciente.
 
 El adaptador se entrenó con AIToolkit sobre 80 imágenes de alta calidad durante 5500 pasos con la configuración por defecto. Es, por tanto, un modelo pequeño y de nicho, orientado a ilustradores y creadores que quieran generar imágenes con un estilo consistente de figura femenina de cuerpo completo, iluminación suave y composiciones de interior o exterior muy marcadas.
 
@@ -66,7 +66,7 @@ No disponible. La información proporcionada no incluye otros adaptadores de est
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TaffyTales_Style (este modelo) | no disponible (adaptador de 0,2 GB) | no disponible; el autor señala poca variacion de aspect ratio | Apache 2.0 | HuggingFace, diffusers, base krea/Krea-2-Turbo |
+| TaffyTales_Style (este modelo) | no disponible (adaptador de 0,2 GB) | no disponible; el autor señala poca variacion de aspect ratio | Apache 2.0 | Hugging Face, diffusers, base krea/Krea-2-Turbo |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye otros adaptadores de est
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/ChippyMan19/TaffyTales_Style
+- Página del modelo en Hugging Face: https://huggingface.co/ChippyMan19/TaffyTales_Style
 - Descarga de archivos: https://huggingface.co/ChippyMan19/TaffyTales_Style/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Ko-fi del autor: https://ko-fi.com/mrweaz

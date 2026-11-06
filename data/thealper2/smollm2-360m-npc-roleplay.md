@@ -23,7 +23,7 @@ Su relevancia practica es doble: por un lado demuestra que un modelo de 360M pue
 | Plantilla de chat | ChatML (la del modelo base), con la ficha de personaje en el turno `system` |
 | Datos de entrenamiento | chimbiwide/NPC-Dialogue_v2 (config `dialogue`): 1.689 conversaciones de 16 mensajes sobre 101 personajes |
 | Tamano del repositorio | 0,8 GB |
-| Fecha de creacion / actualizacion | 2026-09-21 / 2026-09-21 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-21 / 2026-09-21 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -88,9 +88,9 @@ Los datos de los modelos alternativos no forman parte de la informacion proporci
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
 | SmolLM2-360M-NPC-Roleplay | 361,8 M (8,68 M entrenables en LoRA) | 2.048 tokens en entrenamiento | Apache-2.0 | Roleplay de NPC condicionado por ficha de personaje | Pesos fusionados en safetensors y adaptador LoRA |
-| SmolLM2-360M-Instruct | 361,8 M | No disponible en la informacion proporcionada | Apache-2.0 | Asistente de instrucciones generales | HuggingFace (modelo base) |
-| Qwen2.5-0.5B-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Asistente de instrucciones generales, multilingue | HuggingFace |
-| Llama-3.2-1B-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Asistente de instrucciones generales | HuggingFace |
+| SmolLM2-360M-Instruct | 361,8 M | No disponible en la informacion proporcionada | Apache-2.0 | Asistente de instrucciones generales | Hugging Face (modelo base) |
+| Qwen2.5-0.5B-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Asistente de instrucciones generales, multilingue | Hugging Face |
+| Llama-3.2-1B-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Asistente de instrucciones generales | Hugging Face |
 
 No hay datos de benchmarks comparables entre estas alternativas en la informacion disponible, por lo que no se puede establecer una comparacion de rendimiento objetiva. La ventaja diferencial de este modelo no es la puntuacion en tareas generales, sino el condicionamiento especifico por ficha de personaje y su tamano reducido para inferencia local.
 
@@ -109,7 +109,7 @@ No hay datos de benchmarks comparables entre estas alternativas en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/SmolLM2-360M-NPC-Roleplay
+- Modelo en Hugging Face: https://huggingface.co/thealper2/SmolLM2-360M-NPC-Roleplay
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/chimbiwide/NPC-Dialogue_v2
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente paginas de descarga del navegador Google Chrome, sin relacion con el modelo.

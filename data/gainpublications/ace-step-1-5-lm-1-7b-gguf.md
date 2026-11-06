@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/GainPublications/ACE-Step-1.5-lm-1.7B-GGUF
+- Hugging Face (esta cuantización): https://huggingface.co/GainPublications/ACE-Step-1.5-lm-1.7B-GGUF
 - Modelo base: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Runtime acestep.cpp: https://github.com/ServeurpersoCom/acestep.cpp
 - Repositorio de código de ACE-Step 1.5 (referenciado en la licencia): no disponible como URL directa en la información proporcionada

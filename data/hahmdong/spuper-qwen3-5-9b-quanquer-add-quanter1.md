@@ -45,7 +45,7 @@ El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) utilizando la
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas de evaluación, y la model card no referencia ningún estudio comparativo. Se desconoce el rendimiento en tareas estándar como MMLU, HumanEval o GSM8K, así como su comportamiento frente al modelo base Qwen3.5-9B.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas de evaluación, y la model card no referencia ningún estudio comparativo. Se desconoce el rendimiento en tareas estándar como MMLU, HumanEval o GSM8K, así como su comportamiento frente al modelo base Qwen3.5-9B.
 
 ## Requisitos de hardware
 
@@ -61,10 +61,10 @@ La comparación se realiza con el modelo base Qwen3.5-9B y con otros modelos den
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SPUPER-qwen3.5-9b-quanquer-add-quanter1 | 9.4B | 262K | Sí | No disponible | HuggingFace |
-| Qwen3.5-9B (base) | 9.4B | 262K | Sí | Apache 2.0 (según Qwen) | HuggingFace, Ollama, vLLM |
-| Llama 3.1 8B | 8B | 128K | No | Llama 3.1 Community License | HuggingFace, Ollama |
-| Mistral 7B v0.3 | 7B | 32K | No | Apache 2.0 | HuggingFace, Ollama |
+| SPUPER-qwen3.5-9b-quanquer-add-quanter1 | 9.4B | 262K | Sí | No disponible | Hugging Face |
+| Qwen3.5-9B (base) | 9.4B | 262K | Sí | Apache 2.0 (según Qwen) | Hugging Face, Ollama, vLLM |
+| Llama 3.1 8B | 8B | 128K | No | Llama 3.1 Community License | Hugging Face, Ollama |
+| Mistral 7B v0.3 | 7B | 32K | No | Apache 2.0 | Hugging Face, Ollama |
 
 El fine-tuning no aporta diferencias estructurales frente a Qwen3.5-9B, pero podría modificar el comportamiento en tareas específicas. La falta de benchmarks impide evaluar si el ajuste mejora o empeora el rendimiento. La licencia del fine-tuning es incierta, lo que puede limitar su uso comercial.
 
@@ -79,7 +79,7 @@ El fine-tuning no aporta diferencias estructurales frente a Qwen3.5-9B, pero pod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1
+- Modelo en Hugging Face: https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1
 - Modelo base intermedio: https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-quanquer-add
 - Qwen3.5-9B original: https://huggingface.co/Qwen/Qwen3.5-9B
 - Página de vLLM para Qwen3.5-9B: https://recipes.vllm.ai/Qwen/Qwen3.5-9B

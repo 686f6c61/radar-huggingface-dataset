@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `0xmoose0xmoose0xmoose/xss-probe4-ext`, titulado "Hub sanitizer extended battery", no es un modelo de inteligencia artificial. Se trata de un artefacto de prueba publicado en HuggingFace que contiene una bateria de 57 casos (etiquetados de H1 a H57) de cargas utiles HTML y JavaScript disenadas para comprobar el comportamiento del saneador de Markdown que la plataforma aplica a las model cards. No incluye pesos, configuracion de arquitectura ni tokenizador.
+El repositorio `0xmoose0xmoose0xmoose/xss-probe4-ext`, titulado "Hub sanitizer extended battery", no es un modelo de inteligencia artificial. Se trata de un artefacto de prueba publicado en Hugging Face que contiene una bateria de 57 casos (etiquetados de H1 a H57) de cargas utiles HTML y JavaScript disenadas para comprobar el comportamiento del saneador de Markdown que la plataforma aplica a las model cards. No incluye pesos, configuracion de arquitectura ni tokenizador.
 
 El contenido consiste en fragmentos de HTML con vectores clasicos de XSS: esquemas `javascript:`, `vbscript:`, `data:` y `blob:`, atributos de eventos ofuscados (`onerror`, `onload`, `ontoggle`, `onbegin`), etiquetas heredadas (`xmp`, `plaintext`, `listing`, `noembed`, `noframes`, `marquee`), mXSS mediante comentarios anidados, `iframe srcdoc`, `foreignObject` en SVG y propiedades CSS con `expression()`, `behavior:url()` o `url(javascript:)`. El objetivo es verificar si el filtro de la plataforma neutraliza cada vector o si alguno se ejecuta o se representa de forma insegura.
 
@@ -43,7 +43,7 @@ No hay dataset de entrenamiento, ni fases de RLHF, DPO o ajuste por instruccione
 
 ## Casos de uso
 
-- Auditoria del saneador de HuggingFace: publicar el README y revisar que elementos se eliminan, se escapan como texto o se conservan como HTML activo en la model card renderizada. Es su proposito declarado.
+- Auditoria del saneador de Hugging Face: publicar el README y revisar que elementos se eliminan, se escapan como texto o se conservan como HTML activo en la model card renderizada. Es su proposito declarado.
 - Pruebas de regresion en bibliotecas de saneado: usar la lista como bateria fija dentro de la suite de tests de proyectos como DOMPurify, bleach o sanitize-html, comparando la salida esperada tras cada actualizacion de la libreria.
 - Evaluacion de filtros WAF y de proxies inversos: enviar cada carga util como cuerpo de peticion y comprobar si el filtro la bloquea, la normaliza o la deja pasar, midiendo falsos negativos por vector.
 - Formacion en seguridad de aplicaciones: la numeracion H1-H57 facilita construir ejercicios de laboratorio donde el alumno debe clasificar cada vector por tipo de contexto (URL, atributo, texto sin procesar, CSS) y proponer la politica de saneado correspondiente.
@@ -69,7 +69,7 @@ No existe comparativa posible en la categoria de modelos, porque el artefacto no
 
 | Elemento | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xss-probe4-ext | no aplica | no aplica | no disponible | no disponible | publico en HuggingFace |
+| xss-probe4-ext | no aplica | no aplica | no disponible | no disponible | publico en Hugging Face |
 | Listas publicas de vectores XSS | no aplica | no aplica | no disponible | no disponible | repositorios y wikis de seguridad |
 
 ## Limitaciones y advertencias
@@ -79,10 +79,10 @@ No existe comparativa posible en la categoria de modelos, porque el artefacto no
 - Los casos H21, H22 y H44 contienen URLs a dominios externos (`rce.lc`); abrirlos o renderizarlos en un navegador sin aislamiento puede generar peticiones salientes no deseadas.
 - No hay informacion sobre licencia, autor real ni proposito declarado mas alla de la prueba de saneado; su reutilizacion comercial o su integracion en productos queda sin cobertura legal clara.
 - Al tener cero descargas y cero likes, carece de validacion por parte de la comunidad y no hay garantia de que los 57 casos sean correctos, actuales o exhaustivos.
-- La informacion disponible no incluye resultados de pruebas: se desconoce si todos los vectores sobreviven o son bloqueados por el saneador de HuggingFace, y por tanto no puede citarse como evidencia de una vulnerabilidad.
+- La informacion disponible no incluye resultados de pruebas: se desconoce si todos los vectores sobreviven o son bloqueados por el saneador de Hugging Face, y por tanto no puede citarse como evidencia de una vulnerabilidad.
 - La busqueda web realizada no devolvio ninguna fuente relacionada con el repositorio; los resultados obtenidos (sitios de horoscopos, Zhihu y un blog sobre Gemini 1.5) son irrelevantes y no aportan contexto verificable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe4-ext
+- Repositorio en Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe4-ext
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada.

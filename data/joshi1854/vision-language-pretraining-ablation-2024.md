@@ -63,7 +63,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshi1854/vision-language-pretraining-ablation-2024
+- Repositorio en Hugging Face: https://huggingface.co/joshi1854/vision-language-pretraining-ablation-2024
 - Survey de VLP en arXiv: https://arxiv.org/abs/2210.09263
 - Survey de VLP en Springer: https://link.springer.com/article/10.1007/s11633-022-1369-5
 - Survey de VLP en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S1566253525006955

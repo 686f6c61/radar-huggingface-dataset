@@ -96,7 +96,7 @@ La diferencia principal frente a Whisper es el enfoque: Whisper es un modelo lig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Variante FP8: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8
 - Variante NVFP4: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
@@ -104,7 +104,7 @@ La diferencia principal frente a Whisper es el enfoque: Whisper es un modelo lig
 - Página de desarrollador Nemotron: https://developer.nvidia.com/nemotron
 - Repositorio NeMo Speech: https://github.com/NVIDIA-NeMo/Speech
 - Guía de serving con SGLang-Omni: https://sgl-project.github.io/sglang-omni/cookbook/nemotron_transcribe.html
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/nvidia/nemotron-transcribe
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/nemotron-transcribe
 - Dataset Granary-v2: https://huggingface.co/datasets/nvidia/Granary-v2
 - Paper de referencia (Speech-Augmented Language Model): https://arxiv.org/abs/2310.09424
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

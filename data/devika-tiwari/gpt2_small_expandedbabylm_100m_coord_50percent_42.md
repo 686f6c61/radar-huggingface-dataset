@@ -76,7 +76,7 @@ No se conocen modelos comparables directamente porque no se dispone del dataset,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `gpt2-small` (HuggingFace) | 124M | 1024 | MIT | Público en Hugging Face |
+| `gpt2-small` (Hugging Face) | 124M | 1024 | MIT | Público en Hugging Face |
 | `distilgpt2` | 82M | 1024 | MIT | Público en Hugging Face |
 | `microsoft/DialoGPT-small` | 117M | 1024 | MIT | Público en Hugging Face |
 

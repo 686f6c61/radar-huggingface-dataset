@@ -41,18 +41,18 @@ El entrenamiento se realizó mediante fine-tuning del checkpoint `google/byt5-ba
 - Atención al cliente en empresas locales: un chatbot o sistema de correo electrónico puede usar el modelo para traducir consultas de clientes chuvash-parlantes al ruso y las respuestas de vuelta, mejorando la comunicación en sectores como telecomunicaciones o banca.
 - Preservación lingüística y digitalización de archivos: instituciones culturales pueden traducir textos históricos o folclóricos del chuvash al ruso para su archivo, o generar versiones en chuvash de materiales educativos.
 - Aplicaciones de aprendizaje de idiomas: el modelo puede servir como herramienta de práctica para estudiantes de chuvash o ruso, generando traducciones de frases de ejemplo y ejercicios.
-- Integración en pipelines de procesamiento de lenguaje natural: al ser un modelo estándar de HuggingFace, puede combinarse con otros componentes (OCR, corrección ortográfica) para construir flujos completos de traducción de documentos escaneados.
+- Integración en pipelines de procesamiento de lenguaje natural: al ser un modelo estándar de Hugging Face, puede combinarse con otros componentes (OCR, corrección ortográfica) para construir flujos completos de traducción de documentos escaneados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen métricas como BLEU, chrF o COMET para este modelo en la documentación de HuggingFace ni en el repositorio asociado. Se recomienda a los usuarios realizar evaluaciones propias sobre conjuntos de prueba paralelos antes de su uso en producción.
+No se han publicado resultados de benchmarks en la información disponible. No existen métricas como BLEU, chrF o COMET para este modelo en la documentación de Hugging Face ni en el repositorio asociado. Se recomienda a los usuarios realizar evaluaciones propias sobre conjuntos de prueba paralelos antes de su uso en producción.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: con pesos en fp32 (2,33 GB), se necesitan al menos 3 GB de VRAM para cargar el modelo y los activos de atención. En fp16 (1,16 GB), bastan unos 2 GB. No se ofrecen cuantizaciones oficiales, pero se podría aplicar cuantización dinámica con herramientas como `bitsandbytes` para reducir el consumo a ~0,6 GB en int8.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM, como NVIDIA GTX 1650, RTX 2060, RTX 3060, o GPUs de datacenter como T4, V100 o A10. Para producción con alto throughput, se recomienda A100 o H100.
 - Sí cabe en GPUs de consumo: una RTX 3060 de 12 GB puede ejecutar el modelo en fp16 con margen para lotes pequeños.
-- Opciones de despliegue: el modelo es compatible con la librería `transformers` de HuggingFace, así como con servidores de inferencia como TGI (Text Generation Inference) y vLLM (que soporta arquitecturas encoder-decoder). También puede exportarse a ONNX para su uso en entornos optimizados.
+- Opciones de despliegue: el modelo es compatible con la librería `transformers` de Hugging Face, así como con servidores de inferencia como TGI (Text Generation Inference) y vLLM (que soporta arquitecturas encoder-decoder). También puede exportarse a ONNX para su uso en entornos optimizados.
 - Latencia y throughput estimados: no hay datos publicados. En una GPU T4, un modelo de 582M parámetros en fp16 suele procesar entre 20 y 50 tokens por segundo en tareas de traducción, dependiendo del tamaño del lote.
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ NLLB-200 y M2M-100 cubren muchos más idiomas, pero no incluyen chuvash en sus l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Serkke/chuvash-translator
+- Modelo en Hugging Face: https://huggingface.co/Serkke/chuvash-translator
 - Dataset de entrenamiento: https://huggingface.co/datasets/alexantonov/chuvash_russian_parallel
 - Modelo base: https://huggingface.co/google/byt5-base

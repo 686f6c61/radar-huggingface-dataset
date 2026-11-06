@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fse/paragram-300-sl999-sif10-int8` es un modelo de embeddings estaticos de frases publicado por el usuario `fse` en HuggingFace. No es un transformer generativo, sino una tabla de vectores de palabras de 300 dimensiones cuantizada a int8, sobre la que se aplica una agregacion tipo mean con pesos SIF (Smooth Inverse Frequency) y normalizacion a longitud unitaria para producir un vector por texto. Deriva del modelo gensim `fse/paragram-300-sl999` (Paragram, 300 dimensiones) mediante cuantizacion de filas (`quantize_rows@1`) y un paso de preparacion SIF-10 ajustado sobre un corpus de parrafos de FineWeb-Edu.
+`fse/paragram-300-sl999-sif10-int8` es un modelo de embeddings estaticos de frases publicado por el usuario `fse` en Hugging Face. No es un transformer generativo, sino una tabla de vectores de palabras de 300 dimensiones cuantizada a int8, sobre la que se aplica una agregacion tipo mean con pesos SIF (Smooth Inverse Frequency) y normalizacion a longitud unitaria para producir un vector por texto. Deriva del modelo gensim `fse/paragram-300-sl999` (Paragram, 300 dimensiones) mediante cuantizacion de filas (`quantize_rows@1`) y un paso de preparacion SIF-10 ajustado sobre un corpus de parrafos de FineWeb-Edu.
 
 El modelo resuelve el problema de obtener representaciones de frases rapidas y de bajo coste sin necesidad de una GPU ni de un transformer. Con 528.551.792 parametros en safetensors (principalmente la tabla de 1.703.756 filas por 300 dimensiones en int8) y un repositorio de 0,5 GB, esta pensado para `feature-extraction` en ingles, con un tokenizador propio (`fse_words@1`) y una libreria especifica (`fse>=2.0`).
 
@@ -76,8 +76,8 @@ La comparacion controlada de STS-B usa el preprocesado NLTK del notebook 1.x a t
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fse/paragram-300-sl999-sif10-int8 | 528.551.792 | no aplica | Embeddings estaticos int8 con SIF | unknown | HuggingFace |
-| fse/paragram-300-sl999 (base) | no disponible | no aplica | Embeddings estaticos float32 | unknown | HuggingFace |
+| fse/paragram-300-sl999-sif10-int8 | 528.551.792 | no aplica | Embeddings estaticos int8 con SIF | unknown | Hugging Face |
+| fse/paragram-300-sl999 (base) | no disponible | no aplica | Embeddings estaticos float32 | unknown | Hugging Face |
 | Sentence-transformers tipo all-MiniLM | no disponible en la informacion proporcionada | no disponible | Transformer encoder | no disponible | no disponible |
 
 La model card no incluye comparaciones con otros modelos de embeddings. Cualquier comparacion con alternativas transformer (por ejemplo, familia Sentence-BERT o E5) requeriria datos que no se han publicado en la informacion disponible.
@@ -96,7 +96,7 @@ La model card no incluye comparaciones con otros modelos de embeddings. Cualquie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paragram-300-sl999-sif10-int8
+- Modelo en Hugging Face: https://huggingface.co/fse/paragram-300-sl999-sif10-int8
 - Modelo base: https://huggingface.co/fse/paragram-300-sl999
 - Repositorio de la libreria fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Paper de Paragram: https://aclanthology.org/Q15-1025/

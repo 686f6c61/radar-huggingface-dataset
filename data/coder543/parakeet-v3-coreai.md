@@ -86,9 +86,9 @@ Con la normalizacion mas simple del benchmark, `fast` obtiene 95/2219 frente a 9
 
 | Modelo | Parametros | Contexto | Formato / plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coder543/parakeet-v3-coreai | 600 M | 15 s (`fast/`), 45 s y 4 min (`quality/`) por chunk | Grafos `.aimodel`, ANE Apple Silicon | cc-by-4.0 | HuggingFace, 0 descargas, 0 likes |
-| nvidia/parakeet-tdt-0.6b-v3 | 600 M | Aproximadamente 29 s de clip; 25 idiomas europeos | Pesos upstream (referencia FP32 usada como oraculo) | cc-by-4.0 | HuggingFace, oficial de NVIDIA |
-| NexaAI/parakeet-tdt-0.6b-v3-ane | 600 M | No disponible | Conversion para ANE | No disponible | HuggingFace |
+| coder543/parakeet-v3-coreai | 600 M | 15 s (`fast/`), 45 s y 4 min (`quality/`) por chunk | Grafos `.aimodel`, ANE Apple Silicon | cc-by-4.0 | Hugging Face, 0 descargas, 0 likes |
+| nvidia/parakeet-tdt-0.6b-v3 | 600 M | Aproximadamente 29 s de clip; 25 idiomas europeos | Pesos upstream (referencia FP32 usada como oraculo) | cc-by-4.0 | Hugging Face, oficial de NVIDIA |
+| NexaAI/parakeet-tdt-0.6b-v3-ane | 600 M | No disponible | Conversion para ANE | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos publicados entre estas variantes en la informacion proporcionada; el unico contraste numerico disponible es el del propio autor frente a los pesos FP32 upstream, recogido en la seccion anterior.
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparativos publicados entre estas variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coder543/parakeet-v3-coreai
+- Modelo en Hugging Face: https://huggingface.co/coder543/parakeet-v3-coreai
 - Modelo base upstream: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Repositorio de recetas Core AI de Apple: https://github.com/apple/coreai-models/tree/main/models/parakeet
 - Fork de recetas Core AI (conscious-engines): https://github.com/conscious-engines/ce-coreai-models/tree/main/models/parakeet

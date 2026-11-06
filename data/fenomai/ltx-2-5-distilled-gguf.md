@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [Repositorio HuggingFace de FenomAI/LTX-2.5-Distilled-GGUF](https://huggingface.co/FenomAI/LTX-2.5-Distilled-GGUF)
+- [Repositorio Hugging Face de FenomAI/LTX-2.5-Distilled-GGUF](https://huggingface.co/FenomAI/LTX-2.5-Distilled-GGUF)
 - [Modelo base Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)
 - [Página oficial de LTX-2.5](https://ltx.io/model/ltx-2-5)
 - [Licencia del modelo](https://github.com/Lightricks/LTX-2/blob/main/LICENSE.md)

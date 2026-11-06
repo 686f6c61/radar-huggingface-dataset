@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agnes-3.0-Flash es un modelo multimodal de pesos abiertos desarrollado por Agnes AI (Agnes-AI), una compania que entrena sus propios modelos fundacionales en texto, imagen, video y razonamiento. El modelo se distribuye en HuggingFace con licencia Apache 2.0 y esta orientado a tareas de razonamiento, generacion de codigo y seguimiento de instrucciones, con soporte declarado de tool calling y esfuerzo de razonamiento ajustable. Su pipeline oficial es image-text-to-text, por lo que acepta texto, imagenes y video como entrada.
+Agnes-3.0-Flash es un modelo multimodal de pesos abiertos desarrollado por Agnes AI (Agnes-AI), una compania que entrena sus propios modelos fundacionales en texto, imagen, video y razonamiento. El modelo se distribuye en Hugging Face con licencia Apache 2.0 y esta orientado a tareas de razonamiento, generacion de codigo y seguimiento de instrucciones, con soporte declarado de tool calling y esfuerzo de razonamiento ajustable. Su pipeline oficial es image-text-to-text, por lo que acepta texto, imagenes y video como entrada.
 
 El checkpoint publicado contiene 33.090.501.680 parametros (aproximadamente 33,1 mil millones) en formato safetensors, con un repositorio de 66,2 GB. La ventana de contexto declarada es de 262.144 tokens, lo que lo situa en la categoria de contexto largo. Las etiquetas del repositorio incluyen `hybrid-attention`, `multimodal`, `long-context` y `custom_code`, lo que indica que la implementacion requiere codigo personalizado y no solo la clase estandar de transformers.
 
@@ -83,7 +83,7 @@ Comparativa de tamano y disponibilidad; los datos de rendimiento son los de la t
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Agnes-3.0-Flash | 33,09B | 262.144 tokens | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Agnes-3.0-Flash | 33,09B | 262.144 tokens | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Qwen3.6-35B-A3B | 35B totales / 3B activos (MoE) | No disponible | No disponible | No disponible |
 | Muse Glimmer | 30B | No disponible | No disponible | No disponible |
 | Qwen3.5 | 27B | No disponible | No disponible | No disponible |
@@ -106,10 +106,10 @@ En la comparativa de benchmarks facilitada, Agnes-3.0-Flash supera a Qwen3.6-35B
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Agnes-AI/Agnes-3.0-Flash
+- Hugging Face: https://huggingface.co/Agnes-AI/Agnes-3.0-Flash
 - Web oficial de Agnes AI: https://agnes-ai.com/
 - Documentacion de Agnes 3.0 Flash: https://www.agnes-ai.com/en/docs/agnes-30-flash
-- Assets de benchmarks referenciados en la model card: `assets/agnes_benchmarks.svg` (ruta relativa dentro del repositorio de HuggingFace)
-- Logo referenciado en la model card: `assets/agnes_logo.svg` (ruta relativa dentro del repositorio de HuggingFace)
+- Assets de benchmarks referenciados en la model card: `assets/agnes_benchmarks.svg` (ruta relativa dentro del repositorio de Hugging Face)
+- Logo referenciado en la model card: `assets/agnes_logo.svg` (ruta relativa dentro del repositorio de Hugging Face)
 
 No se han encontrado papers, repositorios de codigo adicionales ni demos publicas en los resultados de busqueda disponibles.

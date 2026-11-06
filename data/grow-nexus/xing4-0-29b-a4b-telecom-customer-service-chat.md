@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xing4.0-29B-A4B-telecom-customer-service-chat es un ajuste fino (fine-tune) del modelo base Xing4.0-29B-A4B, desarrollado por China Telecom Artificial Intelligence Technology Co., Ltd. y publicado en HuggingFace por el usuario grow-nexus. Está especializado en diálogo de atención al cliente de telecomunicaciones, con el objetivo declarado de servir como agente de atención telefónica para la línea 10000 de Guangdong Telecom. No es un asistente generalista: se ha adaptado su comportamiento para reconocer intenciones del usuario (facturación, consulta de datos, alta y traslado de líneas, averías, renovación de banda ancha, reclamaciones), pedir aclaraciones solo cuando la intención es ambigua, invocar herramientas de negocio y producir respuestas conformes con las reglas de servicio.
+Xing4.0-29B-A4B-telecom-customer-service-chat es un ajuste fino (fine-tune) del modelo base Xing4.0-29B-A4B, desarrollado por China Telecom Artificial Intelligence Technology Co., Ltd. y publicado en Hugging Face por el usuario grow-nexus. Está especializado en diálogo de atención al cliente de telecomunicaciones, con el objetivo declarado de servir como agente de atención telefónica para la línea 10000 de Guangdong Telecom. No es un asistente generalista: se ha adaptado su comportamiento para reconocer intenciones del usuario (facturación, consulta de datos, alta y traslado de líneas, averías, renovación de banda ancha, reclamaciones), pedir aclaraciones solo cuando la intención es ambigua, invocar herramientas de negocio y producir respuestas conformes con las reglas de servicio.
 
 Arquitectura y tamaño: el modelo base es una mezcla de expertos (MoE) con 29B parámetros totales y aproximadamente 4B activos por token, 40 capas, tamaño oculto de 3584, atención MLA, 64 expertos enrutados (4 activos por token) y 1 experto compartido. Soporta de forma nativa una ventana de contexto de 256K tokens, extensible a 512K con la configuración de runtime adecuada. Los pesos publicados en safetensors suman 31.215.033.008 parámetros, una cifra superior a los 29B que declara el autor, probablemente por diferencias de conteo entre el modelo base y el ajuste.
 
@@ -17,7 +17,7 @@ Su relevancia es acotada pero clara: es un ejemplo de adaptación de comportamie
 | Parametros activos | ~4 B por token (4 de 64 expertos enrutados activos + 1 experto compartido) |
 | Longitud de contexto | 256K nativo, extensible a 512K con configuración de runtime |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica pesos en safetensors) |
-| Idiomas soportados | chino (principal) e inglés, según el autor; los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | chino (principal) e inglés, según el autor; los metadatos de Hugging Face no declaran idiomas |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (modelo `custom_code`; requiere `trust_remote_code=True`) |
 | Numero de capas | 40 |
@@ -72,8 +72,8 @@ No se dispone de datos verificados de modelos alternativos en la información pr
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xing4.0-29B-A4B-telecom-customer-service-chat | ~31,2 B totales / ~4 B activos | 256K (512K extensible) | Atención al cliente de telecomunicaciones | no disponible | safetensors en HuggingFace |
-| Xing4.0-29B-A4B (base) | 29 B totales / ~4 B activos (según el autor) | 256K (512K extensible) | Propósito general, chino e inglés | no disponible | HuggingFace (XingChen-AGI) |
+| Xing4.0-29B-A4B-telecom-customer-service-chat | ~31,2 B totales / ~4 B activos | 256K (512K extensible) | Atención al cliente de telecomunicaciones | no disponible | safetensors en Hugging Face |
+| Xing4.0-29B-A4B (base) | 29 B totales / ~4 B activos (según el autor) | 256K (512K extensible) | Propósito general, chino e inglés | no disponible | Hugging Face (XingChen-AGI) |
 | Alternativas MoE de ~30 B de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No se dispone de datos verificados de modelos alternativos en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grow-nexus/Xing4.0-29B-A4B-telecom-customer-service-chat
+- Modelo en Hugging Face: https://huggingface.co/grow-nexus/Xing4.0-29B-A4B-telecom-customer-service-chat
 - Modelo base: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - Resultados de la búsqueda web: no se ha encontrado ningún resultado relevante sobre este modelo, su autor o su modelo base; las coincidencias obtenidas corresponden a la metodología de coaching GROW, a la plataforma financiera Groww y a la agencia GROW, sin relación con el modelo.

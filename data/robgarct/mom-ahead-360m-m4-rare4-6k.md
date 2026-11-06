@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mom-ahead-360m-m4-rare4-6k es un checkpoint de investigacion publicado por el usuario robgarct en HuggingFace: un modelo de lenguaje de 446,6 millones de parametros basado en una arquitectura Mixture-of-Memories (MoM) con router de lectura ahead-feature. La arquitectura combina atencion lineal con cuatro bancos de memoria por capa y se distribuye a traves de la libreria propia recurrent-recall-circuits, no mediante transformers.
+mom-ahead-360m-m4-rare4-6k es un checkpoint de investigacion publicado por el usuario robgarct en Hugging Face: un modelo de lenguaje de 446,6 millones de parametros basado en una arquitectura Mixture-of-Memories (MoM) con router de lectura ahead-feature. La arquitectura combina atencion lineal con cuatro bancos de memoria por capa y se distribuye a traves de la libreria propia recurrent-recall-circuits, no mediante transformers.
 
 El modelo se entrena sobre The Pile durante 6.000 actualizaciones, equivalentes a 3.146 millones de tokens con un lote global de 256 y secuencias de 2.048 tokens, bajo el objetivo denominado rare4 y la semilla 1111. Su interes es fundamentalmente experimental: permite estudiar como se escribe y se lee en bancos de memoria separados dentro de una arquitectura de atencion lineal y como se comporta la recuperacion de informacion en contexto.
 
@@ -100,6 +100,6 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robgarct/mom-ahead-360m-m4-rare4-6k
+- Modelo en Hugging Face: https://huggingface.co/robgarct/mom-ahead-360m-m4-rare4-6k
 - Repositorio de codigo: `https://github.com/<owner>/recurrent-recall-circuits` (la model card usa un marcador `<owner>` sin concretar el propietario, por lo que la URL exacta no esta disponible)
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion proporcionada.

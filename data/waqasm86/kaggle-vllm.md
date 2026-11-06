@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`waqasm86/kaggle-vllm` es un repositorio publicado en HuggingFace por el usuario waqasm86 bajo licencia MIT. Por su identificador y por la ausencia de cualquier contenido en la model card más allá de la declaración de licencia, no se trata de un modelo de lenguaje entrenado y documentado, sino de un artefacto asociado a la integración de vLLM en el entorno de Kaggle, presumiblemente un paquete, script o conjunto de utilidades para ejecutar inferencia con vLLM dentro de notebooks de Kaggle.
+`waqasm86/kaggle-vllm` es un repositorio publicado en Hugging Face por el usuario waqasm86 bajo licencia MIT. Por su identificador y por la ausencia de cualquier contenido en la model card más allá de la declaración de licencia, no se trata de un modelo de lenguaje entrenado y documentado, sino de un artefacto asociado a la integración de vLLM en el entorno de Kaggle, presumiblemente un paquete, script o conjunto de utilidades para ejecutar inferencia con vLLM dentro de notebooks de Kaggle.
 
 La información pública disponible es mínima: cero descargas, cero likes, sin pipeline declarado, sin idiomas especificados y con una model card que solo contiene el campo `license: mit`. No hay datos sobre arquitectura, parámetros, contexto, datos de entrenamiento ni benchmarks. Cualquier ficha técnica convencional de modelo (specs, rendimiento, capacidades) no puede completarse con datos verificables.
 
@@ -75,5 +75,5 @@ No disponible. No se puede identificar una categoría de modelo (tamaño, tarea,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/waqasm86/kaggle-vllm
+- Repositorio en Hugging Face: https://huggingface.co/waqasm86/kaggle-vllm
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este identificador.

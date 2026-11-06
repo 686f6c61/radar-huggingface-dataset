@@ -100,7 +100,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de las alternativa
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/SaturnHeaven/Gemma-4-Queen-31B-it-uncensored-heretic-lora-GGUF
+- Adaptador en Hugging Face: https://huggingface.co/SaturnHeaven/Gemma-4-Queen-31B-it-uncensored-heretic-lora-GGUF
 - Modelo base: https://huggingface.co/aifeifei798/Gemma-4-Queen-31B-it
 - Modelo fuente abliterado: https://huggingface.co/llmfan46/Gemma-4-Queen-31B-it-uncensored-heretic
 - Herramienta de abliteracion Heretic: https://github.com/p-e-w/heretic

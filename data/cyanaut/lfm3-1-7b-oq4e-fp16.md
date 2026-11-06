@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-oQ4e-fp16 es una version cuantizada del modelo LFM3 de 1.700 millones de parametros, publicada por el usuario cyanaut en HuggingFace. Se trata de una conversion de pesos a formato MLX mediante la herramienta oQ (oMLX v0.7.3), una tecnica de cuantizacion de precision mixta que asigna distintos niveles de bits a diferentes tensores segun su sensibilidad. El resultado es un checkpoint de 1.729 millones de parametros que ocupa aproximadamente 1,1 GB en disco, con un promedio efectivo de 4,801 bits por peso.
+LFM3-1.7B-oQ4e-fp16 es una version cuantizada del modelo LFM3 de 1.700 millones de parametros, publicada por el usuario cyanaut en Hugging Face. Se trata de una conversion de pesos a formato MLX mediante la herramienta oQ (oMLX v0.7.3), una tecnica de cuantizacion de precision mixta que asigna distintos niveles de bits a diferentes tensores segun su sensibilidad. El resultado es un checkpoint de 1.729 millones de parametros que ocupa aproximadamente 1,1 GB en disco, con un promedio efectivo de 4,801 bits por peso.
 
 El modelo base LFM3 (probablemente de la familia Liquid Foundation Models de Liquid AI, aunque la informacion disponible no lo confirma de forma explicita) esta disenado para tareas de generacion de texto y razonamiento en un tamano compacto. Esta version cuantizada esta pensada especificamente para ejecutarse en hardware Apple Silicon mediante el framework MLX, lo que la hace relevante para desarrolladores que quieren desplegar un modelo de ~1,7B en Macs sin GPU dedicada.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-oQ4e-fp16 (este) | 1,729B | no disponible | oQ mixta 4/5/6/8-bit (4,801 bits/peso) | no disponible | HuggingFace, formato MLX |
+| LFM3-1.7B-oQ4e-fp16 (este) | 1,729B | no disponible | oQ mixta 4/5/6/8-bit (4,801 bits/peso) | no disponible | Hugging Face, formato MLX |
 | LFM3-1.7B (base) | 1,7B | no disponible | FP16/BF16 | no disponible | no confirmado en la informacion |
 | Otros modelos ~1,7B cuantizados a 4-bit | ~1,7B | variable | 4-bit uniforme | variable | amplia disponibilidad |
 
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento ni de modelos comparables confirmados en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyanaut/LFM3-1.7B-oQ4e-fp16
+- Hugging Face: https://huggingface.co/cyanaut/LFM3-1.7B-oQ4e-fp16
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx

@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_7b_instruct_jennifer_lopez
+- Repositorio Hugging Face: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_7b_instruct_jennifer_lopez
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper citado en la model card: https://arxiv.org/abs/2608.17804
 - Librería PEFT: https://github.com/huggingface/peft

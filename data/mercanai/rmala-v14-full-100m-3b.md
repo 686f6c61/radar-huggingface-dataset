@@ -110,7 +110,7 @@ No hay información sobre licencia, disponibilidad en otros formatos ni comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MercanAI/rmala-v14-full-100m-3b
+- Modelo en Hugging Face: https://huggingface.co/MercanAI/rmala-v14-full-100m-3b
 - Réplica (mirror): https://huggingface.co/Ethosoft/rmala-v14-full-100m-3b
 - Repositorio (mismo modelo): https://huggingface.co/MercanAI/rmala-v14-full-100m-3b
 - Documentación de protocolo de entrenamiento y evaluación: LM100_PROTOCOL.md (incluido en el repositorio del modelo)

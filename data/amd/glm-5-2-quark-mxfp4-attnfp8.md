@@ -71,9 +71,9 @@ No se han publicado resultados en otros benchmarks (MMLU, HumanEval, etc.) en la
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zai-org/GLM-5.2 (base) | 384B (MoE) | Sin cuantizar (BF16) | no disponible | no disponible | HuggingFace |
-| amd/GLM-5.2-Quark-MXFP4-AttnFP8 (este) | 384B (MoE) | MXFP4 + FP8 | no disponible (40K en eval) | MIT | HuggingFace |
-| amd/GLM-5.2-MXFP4 | 384B (MoE) | MXFP4 | no disponible | MIT | HuggingFace |
+| zai-org/GLM-5.2 (base) | 384B (MoE) | Sin cuantizar (BF16) | no disponible | no disponible | Hugging Face |
+| amd/GLM-5.2-Quark-MXFP4-AttnFP8 (este) | 384B (MoE) | MXFP4 + FP8 | no disponible (40K en eval) | MIT | Hugging Face |
+| amd/GLM-5.2-MXFP4 | 384B (MoE) | MXFP4 | no disponible | MIT | Hugging Face |
 
 La diferencia principal entre las dos versiones de AMD es que la variante `AttnFP8` aplica cuantizacion FP8 adicional en las capas de atencion, lo que puede mejorar el rendimiento en hardware AMD sin sacrificar precision significativa. No se dispone de comparaciones con otros modelos de tamano similar (por ejemplo, Llama 3.1 405B o Mixtral 8x22B) en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ La diferencia principal entre las dos versiones de AMD es que la variante `AttnF
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/amd/GLM-5.2-Quark-MXFP4-AttnFP8)
+- [Modelo en Hugging Face](https://huggingface.co/amd/GLM-5.2-Quark-MXFP4-AttnFP8)
 - [Modelo base zai-org/GLM-5.2](https://huggingface.co/zai-org/GLM-5.2)
 - [Version alternativa amd/GLM-5.2-MXFP4](https://huggingface.co/amd/GLM-5.2-MXFP4)
 - [Blog de AMD sobre cuantizacion MXFP4/MXFP6](https://rocm.blogs.amd.com/software-tools-optimization/mxfp4-mxfp6-quantization/README.html)

@@ -98,7 +98,7 @@ No se dispone de comparaciones con modelos de terceros de tamano o categoria sim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gdiamos/amx-moe-e256-4day
+- Modelo en Hugging Face: https://huggingface.co/gdiamos/amx-moe-e256-4day
 - Paper (*Outrageously Small Neural Networks: Emergent Basic Reasoning at 6,616 tok/sec on One Intel AMX Core*): https://huggingface.co/gdiamos/amx-moe-e256-4day/blob/main/paper.pdf
 - Modelo hermano ajustado por instrucciones: https://huggingface.co/gdiamos/amx-reasoning-v1-instruct
 - Descarga del repositorio completo: `hf download gdiamos/amx-moe-e256-4day --local-dir amx-moe-e256-4day`

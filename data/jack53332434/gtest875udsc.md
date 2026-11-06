@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Jack53332434/Gtest875udsc es un repositorio alojado en HuggingFace por el usuario Jack53332434. Por el nombre del identificador y la ausencia total de documentacion tecnica, todo apunta a un artefacto de prueba o a un repositorio vacio creado para verificar el flujo de publicacion en la plataforma, y no a un modelo entrenado con pesos utilizables. No se ha publicado ni una sola cifra sobre arquitectura, numero de parametros, tokens de entrenamiento o composicion del dataset.
+El modelo identificado como Jack53332434/Gtest875udsc es un repositorio alojado en Hugging Face por el usuario Jack53332434. Por el nombre del identificador y la ausencia total de documentacion tecnica, todo apunta a un artefacto de prueba o a un repositorio vacio creado para verificar el flujo de publicacion en la plataforma, y no a un modelo entrenado con pesos utilizables. No se ha publicado ni una sola cifra sobre arquitectura, numero de parametros, tokens de entrenamiento o composicion del dataset.
 
 La model card del autor se limita a declarar la licencia MIT, sin incluir descripcion, instrucciones de uso, ejemplos ni referencias a articulos tecnicos. El repositorio acumula cero descargas y cero "likes" desde su creacion, lo que refuerza la hipotesis de que se trata de un contenedor sin contenido funcional o con contenido no indexado.
 
@@ -75,5 +75,5 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jack53332434/Gtest875udsc
+- Repositorio en Hugging Face: https://huggingface.co/Jack53332434/Gtest875udsc
 - No se han encontrado articulos, papers, blogs, repositorios de codigo ni demos asociados al modelo en los resultados de busqueda disponibles.

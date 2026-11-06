@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| geo-distiluse-swissnames3d-config2 | 134,7 M | de (base multilingue) | Contexto espacial H3, config2 | apache-2.0 | HuggingFace |
-| geo-distiluse-swissnames3d-config1 | no disponible | de (base multilingue) | Contexto espacial H3, config1 | apache-2.0 (no confirmado en la ficha) | HuggingFace |
-| geo-distiluse-swissnames3d | no disponible | de (base multilingue) | Descripciones por defecto (sin contexto espacial) | apache-2.0 (no confirmado en la ficha) | HuggingFace |
-| dguzh/geo-all-MiniLM-L6-v2 | no disponible | no disponible | Resolucion de toponimos con MiniLM | no disponible | HuggingFace |
+| geo-distiluse-swissnames3d-config2 | 134,7 M | de (base multilingue) | Contexto espacial H3, config2 | apache-2.0 | Hugging Face |
+| geo-distiluse-swissnames3d-config1 | no disponible | de (base multilingue) | Contexto espacial H3, config1 | apache-2.0 (no confirmado en la ficha) | Hugging Face |
+| geo-distiluse-swissnames3d | no disponible | de (base multilingue) | Descripciones por defecto (sin contexto espacial) | apache-2.0 (no confirmado en la ficha) | Hugging Face |
+| dguzh/geo-all-MiniLM-L6-v2 | no disponible | no disponible | Resolucion de toponimos con MiniLM | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada. Las variantes de la misma familia (config1, config2 y la version base) corresponden a distintas tesis del trabajo (M3, M4, M5), segun la tabla publicada por el autor.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/segmue/geo-distiluse-swissnames3d-config2
+- Modelo en Hugging Face: https://huggingface.co/segmue/geo-distiluse-swissnames3d-config2
 - Modelo base: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v1
 - Variante sin contexto espacial: https://huggingface.co/segmue/geo-distiluse-swissnames3d
 - Variante config1: https://huggingface.co/segmue/geo-distiluse-swissnames3d-config1

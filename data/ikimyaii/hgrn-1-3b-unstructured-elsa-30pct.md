@@ -112,7 +112,7 @@ La comparación es directa porque las tres variantes podadas parten del mismo ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-30pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-30pct
 - Modelo base: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Variante EHWS semi-estructurada: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-EHWS-30pct
 - Variante ELSA semi-estructurada: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-30pct

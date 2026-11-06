@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dan-omni-smolm2-v2 es un modelo de lenguaje ultraligero desarrollado por sodan, diseñado como una variante mejorada de dan-omni-smolm2. Está basado en SmolLM2 de HuggingFace y ha sido afinado mediante LoRA sobre un conjunto de datos de instrucciones ampliado. Su principal objetivo es ofrecer respuestas rápidas y de calidad aceptable en dispositivos con recursos limitados, como móviles o sistemas embebidos, manteniendo un tamaño de archivo de solo 259 MB.
+dan-omni-smolm2-v2 es un modelo de lenguaje ultraligero desarrollado por sodan, diseñado como una variante mejorada de dan-omni-smolm2. Está basado en SmolLM2 de Hugging Face y ha sido afinado mediante LoRA sobre un conjunto de datos de instrucciones ampliado. Su principal objetivo es ofrecer respuestas rápidas y de calidad aceptable en dispositivos con recursos limitados, como móviles o sistemas embebidos, manteniendo un tamaño de archivo de solo 259 MB.
 
 El modelo destaca por su velocidad de inferencia, alcanzando una media de 62.1 tokens por segundo en CPU, con un consumo de RAM de aproximadamente 400 MB. Esto lo convierte en una opción atractiva para aplicaciones que requieren baja latencia y bajo coste computacional, sacrificando algo de calidad en tareas de razonamiento complejo frente a modelos más grandes. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
@@ -23,7 +23,7 @@ La relevancia actual de este modelo radica en la creciente demanda de soluciones
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura SmolLM2 de HuggingFace, un transformer decoder-only estándar con normalización pre-layer y atención causal. No emplea mecanismos avanzados como MoE o SSM. El entrenamiento consistió en un fine-tuning mediante LoRA sobre un conjunto de datos de instrucciones expandido respecto a la versión v1, con el objetivo de mejorar el seguimiento de instrucciones y la calidad de las respuestas sin aumentar el tamaño del archivo.
+El modelo se basa en la arquitectura SmolLM2 de Hugging Face, un transformer decoder-only estándar con normalización pre-layer y atención causal. No emplea mecanismos avanzados como MoE o SSM. El entrenamiento consistió en un fine-tuning mediante LoRA sobre un conjunto de datos de instrucciones expandido respecto a la versión v1, con el objetivo de mejorar el seguimiento de instrucciones y la calidad de las respuestas sin aumentar el tamaño del archivo.
 
 No se han publicado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el uso de técnicas como RLHF o DPO. La model card indica que el fine-tuning se realizó con LoRA, pero no especifica el rango ni los hiperparámetros. El sistema prompt recomendado define al modelo como "dan", un asistente para dispositivos móviles, lo que sugiere un entrenamiento orientado a respuestas concisas y naturales.
 
@@ -97,7 +97,7 @@ La comparativa muestra que dan-omni-smolm2-v2 ofrece el mejor equilibrio entre v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sodan/dan-omni-smolm2-v2
+- Modelo en Hugging Face: https://huggingface.co/sodan/dan-omni-smolm2-v2
 - Modelo base SmolLM2: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B (referencia)
 - Familia dan-omni:
   - dan-omni-3b: https://huggingface.co/sodan/dan-omni-3b

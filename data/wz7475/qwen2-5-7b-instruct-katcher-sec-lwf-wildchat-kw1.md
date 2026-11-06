@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-wildchat-kw1` es un ajuste fino publicado por el usuario wz7475 en HuggingFace. Por la nomenclatura del repositorio y la descarga asociada (6,0 GB, formato safetensors), todo apunta a que se trata de una adaptacion del modelo base Qwen2.5-7B-Instruct, aunque la model card no lo confirma explicitamente y las etiquetas del repositorio no incluyen ningun campo que lo verifique. Los sufijos del nombre ("katcher-sec", "lwf", "wildchat", "kw1") sugieren un pipeline de ajuste fino orientado a seguridad y a conversacion, posiblemente sobre el dataset WildChat, pero se trata de una inferencia a partir del nombre, no de un dato documentado.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-wildchat-kw1` es un ajuste fino publicado por el usuario wz7475 en Hugging Face. Por la nomenclatura del repositorio y la descarga asociada (6,0 GB, formato safetensors), todo apunta a que se trata de una adaptacion del modelo base Qwen2.5-7B-Instruct, aunque la model card no lo confirma explicitamente y las etiquetas del repositorio no incluyen ningun campo que lo verifique. Los sufijos del nombre ("katcher-sec", "lwf", "wildchat", "kw1") sugieren un pipeline de ajuste fino orientado a seguridad y a conversacion, posiblemente sobre el dataset WildChat, pero se trata de una inferencia a partir del nombre, no de un dato documentado.
 
-El repositorio no incluye informacion sobre el proceso de entrenamiento, la composicion del dataset, hiperparametros, licencia ni idiomas soportados. La model card presente en el Hub es la plantilla por defecto de HuggingFace, sin rellenar, con todos los campos marcados como `[More Information Needed]`. Esto limita enormemente cualquier evaluacion seria del modelo: no es posible verificar la procedencia de los pesos, las condiciones de uso ni el rendimiento real.
+El repositorio no incluye informacion sobre el proceso de entrenamiento, la composicion del dataset, hiperparametros, licencia ni idiomas soportados. La model card presente en el Hub es la plantilla por defecto de Hugging Face, sin rellenar, con todos los campos marcados como `[More Information Needed]`. Esto limita enormemente cualquier evaluacion seria del modelo: no es posible verificar la procedencia de los pesos, las condiciones de uso ni el rendimiento real.
 
-El tamano del repositorio (6,0 GB) es coherente con un modelo de aproximadamente 7 000 millones de parametros en precision de 16 bits, lo que refuerza la hipotesis de que se trata de un transformer decoder-only de escala 7B. La etiqueta `unsloth` indica que el ajuste fino se realizo previsiblemente con la libreria Unsloth, y `endpoints_compatible` que el repositorio esta preparado para su despliegue mediante Inference Endpoints de HuggingFace. No hay descargas ni likes registrados, lo que sugiere que el modelo no ha sido validado por la comunidad.
+El tamano del repositorio (6,0 GB) es coherente con un modelo de aproximadamente 7 000 millones de parametros en precision de 16 bits, lo que refuerza la hipotesis de que se trata de un transformer decoder-only de escala 7B. La etiqueta `unsloth` indica que el ajuste fino se realizo previsiblemente con la libreria Unsloth, y `endpoints_compatible` que el repositorio esta preparado para su despliegue mediante Inference Endpoints de Hugging Face. No hay descargas ni likes registrados, lo que sugiere que el modelo no ha sido validado por la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -23,9 +23,9 @@ El tamano del repositorio (6,0 GB) es coherente con un modelo de aproximadamente
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion documentada sobre la arquitectura ni sobre el proceso de entrenamiento. La model card es la plantilla automatica de HuggingFace y no incluye datos tecnicos. Dado el identificador del repositorio, lo mas probable es que se trate de un ajuste fino supervisado (SFT) o de una variante con optimizacion por preferencias sobre Qwen2.5-7B-Instruct, un transformer decoder-only con atencion por causalidad. El sufijo "lwf" podria corresponder a tecnicas de tipo "learning without forgetting", y "wildchat" a un entrenamiento con datos conversacionales del dataset WildChat, pero ninguna de estas hipotesis esta confirmada por el autor.
+No se dispone de informacion documentada sobre la arquitectura ni sobre el proceso de entrenamiento. La model card es la plantilla automatica de Hugging Face y no incluye datos tecnicos. Dado el identificador del repositorio, lo mas probable es que se trate de un ajuste fino supervisado (SFT) o de una variante con optimizacion por preferencias sobre Qwen2.5-7B-Instruct, un transformer decoder-only con atencion por causalidad. El sufijo "lwf" podria corresponder a tecnicas de tipo "learning without forgetting", y "wildchat" a un entrenamiento con datos conversacionales del dataset WildChat, pero ninguna de estas hipotesis esta confirmada por el autor.
 
-La unica innovacion tecnica verificable es el uso declarado de la libreria Unsloth para el ajuste fino, que aplica kernels optimizados en Triton para acelerar el entrenamiento y reducir el consumo de memoria. La etiqueta `arxiv:1910.09700` no describe el modelo, sino que corresponde a la referencia de la calculadora de impacto ambiental (Lacoste et al., 2019) que HuggingFace inserta por defecto en sus plantillas de model card. No se han publicado detalles sobre el dataset, el numero de tokens de entrenamiento ni sobre posibles fases de RLHF o DPO.
+La unica innovacion tecnica verificable es el uso declarado de la libreria Unsloth para el ajuste fino, que aplica kernels optimizados en Triton para acelerar el entrenamiento y reducir el consumo de memoria. La etiqueta `arxiv:1910.09700` no describe el modelo, sino que corresponde a la referencia de la calculadora de impacto ambiental (Lacoste et al., 2019) que Hugging Face inserta por defecto en sus plantillas de model card. No se han publicado detalles sobre el dataset, el numero de tokens de entrenamiento ni sobre posibles fases de RLHF o DPO.
 
 ## Capacidades
 
@@ -63,14 +63,14 @@ Estimaciones basadas en el tamano inferido del modelo (aproximadamente 7B parame
 - VRAM estimada en cuantizacion de 4 bits (GGUF/AWQ/GPTQ): en torno a 5-6 GB.
 - GPU recomendadas para fp16: A100 40 GB, H100, L40S o RTX 4090 (24 GB) en configuracion de un solo modelo.
 - GPU consumer: el modelo deberia caber en RTX 4090, RTX 3090 y, con cuantizacion agresiva, en GPUs de 8-12 GB como RTX 3060 o RTX 4070.
-- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp y Ollama, siempre que se generen las conversiones oportunas. La etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp y Ollama, siempre que se generen las conversiones oportunas. La etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. No hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-wildchat-kw1 | ~7B (inferido) | no disponible | no disponible | safetensors | HuggingFace, 0 descargas |
+| wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-wildchat-kw1 | ~7B (inferido) | no disponible | no disponible | safetensors | Hugging Face, 0 descargas |
 | Qwen2.5-7B-Instruct | 7,6B | 128K tokens | Apache 2.0 | safetensors, GGUF | Ampliamente disponible y validado |
 | Llama 3.1 8B Instruct | 8B | 128K tokens | Llama 3.1 Community License | safetensors, GGUF | Ampliamente disponible |
 | Mistral 7B Instruct v0.3 | 7,2B | 32K tokens | Apache 2.0 | safetensors, GGUF | Ampliamente disponible |
@@ -94,7 +94,7 @@ Nota: los datos de los modelos comparables corresponden a informacion publica de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-wildchat-kw1
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-wildchat-kw1
 - Referencia de la calculadora de impacto ambiental (etiqueta del repo): https://arxiv.org/abs/1910.09700
 - Modelo base presumido, Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria Unsloth: https://github.com/unslothai/unsloth

@@ -81,7 +81,7 @@ La comparativa se limita al ecosistema del modelo base; no se dispone de datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AquaRex/tinyagent-0.8b-v5
+- Modelo en Hugging Face: https://huggingface.co/AquaRex/tinyagent-0.8b-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Pesos MLC de referencia: https://huggingface.co/mlc-ai/Qwen3.5-0.8B-q4f16_1-MLC
 - Juego Tiny Agents: https://tinyvoters.app/tinyagents/

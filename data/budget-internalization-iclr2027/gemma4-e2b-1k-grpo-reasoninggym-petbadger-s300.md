@@ -4,7 +4,7 @@
 
 `budget-internalization-iclr2027/gemma4-e2b-1k-grpo-reasoninggym-petbadger-s300` es un ajuste fino por aprendizaje por refuerzo del modelo multimodal instructivo `google/gemma-4-E2B-it`. El autor (una cuenta ligada a un envio anonimo a ICLR 2027, bajo el identificador `budget-internalization-iclr2027`) ha entrenado el modelo con GRPO sobre tareas generadas proceduralmente por Reasoning Gym, imponiendo un presupuesto de generacion estricto de 1.024 tokens. El objetivo declarado de la investigacion es estudiar la internalizacion de presupuestos de tokens: el modelo debe resolver problemas de razonamiento sin exceder ese limite, y de hecho cualquier respuesta que agota el presupuesto recibe recompensa cero durante el entrenamiento.
 
-Se trata de un checkpoint intermedio (paso 300 de un run con nombre en clave `petbadger`), con 5.123.178.051 parametros almacenados en safetensors con dtype F32, lo que explica un repositorio de 20,5 GB. El pipeline declarado en HuggingFace es `any-to-any` y el tag `image-text-to-text` indica que conserva la entrada multimodal del modelo base, aunque el entrenamiento por RL se ha realizado exclusivamente sobre prompts de texto de Reasoning Gym.
+Se trata de un checkpoint intermedio (paso 300 de un run con nombre en clave `petbadger`), con 5.123.178.051 parametros almacenados en safetensors con dtype F32, lo que explica un repositorio de 20,5 GB. El pipeline declarado en Hugging Face es `any-to-any` y el tag `image-text-to-text` indica que conserva la entrada multimodal del modelo base, aunque el entrenamiento por RL se ha realizado exclusivamente sobre prompts de texto de Reasoning Gym.
 
 La relevancia del modelo es fundamentalmente de investigacion: sirve como referencia reproducible para estudiar como el RL con verificador de recompensa modifica el comportamiento de longitud de generacion, y como punto de partida para experimentos de GRPO sobre modelos multimodales pequenos de la familia Gemma 4. No es un modelo destinado a produccion generalista: no se han publicado evaluaciones de benchmarks, no hay datos de idiomas soportados y el autor no documenta el contexto maximo del modelo base.
 
@@ -70,8 +70,8 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros (5.1
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma4-e2b-1k-grpo-reasoninggym-petbadger-s300 (este modelo) | 5.123.178.051 | no disponible | GRPO sobre Reasoning Gym, presupuesto de 1.024 tokens, 300 pasos | Apache 2.0 (heredada del base segun la model card) | safetensors F32 en HuggingFace |
-| google/gemma-4-E2B-it (modelo base) | no disponible en la informacion proporcionada | no disponible | Ajuste instructivo original de Google | licencia de Gemma 4 (enlazada en la model card) | HuggingFace |
+| gemma4-e2b-1k-grpo-reasoninggym-petbadger-s300 (este modelo) | 5.123.178.051 | no disponible | GRPO sobre Reasoning Gym, presupuesto de 1.024 tokens, 300 pasos | Apache 2.0 (heredada del base segun la model card) | safetensors F32 en Hugging Face |
+| google/gemma-4-E2B-it (modelo base) | no disponible en la informacion proporcionada | no disponible | Ajuste instructivo original de Google | licencia de Gemma 4 (enlazada en la model card) | Hugging Face |
 | Otros finetunes de razonamiento con GRPO de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/gemma4-e2b-1k-grpo-reasoninggym-petbadger-s300
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/gemma4-e2b-1k-grpo-reasoninggym-petbadger-s300
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia de Gemma 4 referenciada en la model card: https://ai.google.dev/gemma/docs/gemma_4_license
 - Documentacion de vLLM (mencionada en la model card para el despliegue): https://docs.vllm.ai/

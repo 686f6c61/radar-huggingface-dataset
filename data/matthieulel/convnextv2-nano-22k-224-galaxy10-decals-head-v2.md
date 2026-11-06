@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnextv2-nano-22k-224-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de una colección de benchmarks de modelos fundacionales de visión aplicados a datos astronómicos. El modelo parte del checkpoint preentrenado `facebook/convnextv2-nano-22k-224` (ConvNeXt V2 en variante nano, preentrenado en ImageNet-22k) y lo adapta a la clasificación de 10 clases morfológicas del dataset Galaxy10 DECaLS mediante *head-only fine-tuning*: la columna vertebral permanece congelada (incluidas las estadísticas de sus capas de normalización) y solo se entrena una cabeza lineal de 10 salidas.
+`convnextv2-nano-22k-224-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de una colección de benchmarks de modelos fundacionales de visión aplicados a datos astronómicos. El modelo parte del checkpoint preentrenado `facebook/convnextv2-nano-22k-224` (ConvNeXt V2 en variante nano, preentrenado en ImageNet-22k) y lo adapta a la clasificación de 10 clases morfológicas del dataset Galaxy10 DECaLS mediante *head-only fine-tuning*: la columna vertebral permanece congelada (incluidas las estadísticas de sus capas de normalización) y solo se entrena una cabeza lineal de 10 salidas.
 
 El modelo es relevante en el contexto de la evaluación de modelos fundacionales de visión para astronomía: forma parte de las 80 configuraciones (40 backbones preentrenados × dos regímenes de adaptación) del protocolo revisado del artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Su interés no reside en un rendimiento estado del arte, sino en servir como punto de referencia reproducible y de bajo coste computacional para comparar cómo se transfieren los backbones genéricos a una tarea científica concreta con muy pocos parámetros entrenables.
 
@@ -63,16 +63,16 @@ No se han publicado en la información disponible resultados comparativos con ot
 - VRAM estimada para inferencia: menos de 1 GB en fp32 (14,99 M de parámetros, aproximadamente 60 MB de pesos); en fp16 o int8 el consumo es aún menor.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona sin problemas en RTX 3060, RTX 4060, RTX 4090, A100 y H100, aunque estas últimas están sobredimensionadas para el modelo.
 - Cabe en GPU consumer: sí, en cualquier GPU consumer moderna e incluso en iGPU o CPU para inferencia por lotes pequeños.
-- Opciones de despliegue: transformers (PyTorch), exportación a ONNX Runtime, TorchScript o TensorRT; también es viable servir con FastAPI o con endpoints de HuggingFace Inference. El autor no documenta soporte específico para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje).
+- Opciones de despliegue: transformers (PyTorch), exportación a ONNX Runtime, TorchScript o TensorRT; también es viable servir con FastAPI o con endpoints de Hugging Face Inference. El autor no documenta soporte específico para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje).
 - Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo, se espera un throughput alto en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (ConvNeXt V2 nano, head-only) | 14,99 M | Clasificación de morfología galáctica (10 clases) | 55,58 % (test, semilla 42) | Apache 2.0 | HuggingFace |
-| `facebook/convnextv2-nano-22k-224` (backbone base sin adaptar) | ~15 M | Clasificación ImageNet-22k | no disponible (no entrenado en Galaxy10) | Apache 2.0 | HuggingFace |
-| Otros backbones del mismo benchmark (39 restantes) | variable | Clasificación de morfología galáctica | no disponible en esta ficha (resultados en el dataset `vision-foundation-models-benchmark-runs`) | variable | HuggingFace |
+| Este checkpoint (ConvNeXt V2 nano, head-only) | 14,99 M | Clasificación de morfología galáctica (10 clases) | 55,58 % (test, semilla 42) | Apache 2.0 | Hugging Face |
+| `facebook/convnextv2-nano-22k-224` (backbone base sin adaptar) | ~15 M | Clasificación ImageNet-22k | no disponible (no entrenado en Galaxy10) | Apache 2.0 | Hugging Face |
+| Otros backbones del mismo benchmark (39 restantes) | variable | Clasificación de morfología galáctica | no disponible en esta ficha (resultados en el dataset `vision-foundation-models-benchmark-runs`) | variable | Hugging Face |
 
 No se dispone en la información proporcionada de resultados de modelos alternativos comparables en el mismo dataset, por lo que la comparativa cuantitativa queda limitada al propio benchmark del autor.
 
@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de resultados de modelos alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-nano-22k-224-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-nano-22k-224-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-nano-22k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset con métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

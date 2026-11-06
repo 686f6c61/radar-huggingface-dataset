@@ -83,5 +83,5 @@ No se dispone en la informacion proporcionada de datos cuantitativos de otros si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/AI-GAMFS
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/AI-GAMFS
 - Articulo: Advancing operational global aerosol forecasting with machine learning, https://doi.org/10.1038/s41586-026-10234-y

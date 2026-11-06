@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CLFGUI (identificador `smlflg/CLFGUI`) es un repositorio publicado en HuggingFace que **no contiene un modelo de inteligencia artificial**, sino el codigo fuente de una aplicacion de escritorio nativa que actua como interfaz de propietario ("owner interface") para un kernel de agentes local. El autor lo describe como una herramienta para introducir una intencion, observar el plan en ejecucion, responder a las "human gates" (puntos de control humano) y revisar y aprobar el resultado final. La version V1 se presenta de forma deliberadamente minima y con cuatro capacidades basicas.
+CLFGUI (identificador `smlflg/CLFGUI`) es un repositorio publicado en Hugging Face que **no contiene un modelo de inteligencia artificial**, sino el codigo fuente de una aplicacion de escritorio nativa que actua como interfaz de propietario ("owner interface") para un kernel de agentes local. El autor lo describe como una herramienta para introducir una intencion, observar el plan en ejecucion, responder a las "human gates" (puntos de control humano) y revisar y aprobar el resultado final. La version V1 se presenta de forma deliberadamente minima y con cuatro capacidades basicas.
 
 El diseno separa la interfaz grafica del kernel mediante la abstraccion `LocalAgentKernel`, de forma que ambos corren en el mismo proceso en la version actual, pero el kernel puede migrarse mas adelante a un demonio sin interfaz grafica ("headless daemon") manteniendo la misma API de cara a la aplicacion. Incluye un backend HTTP minimo denominado Hermes, que se puede arrancar por separado y que expone endpoints REST para gestionar contexto, agentes y ejecuciones.
 
-Es relevante para desarrolladores que construyen pipelines de agentes locales y necesitan una capa de supervision humana con trazabilidad de ejecuciones, pero **no aporta pesos, arquitectura de red neuronal ni datos de entrenamiento**: cualquier ficha de modelo al uso (parametros, contexto, cuantizacion, benchmarks) no es aplicable a este repositorio. Los metadatos de HuggingFace no declaran licencia, idiomas ni pipeline.
+Es relevante para desarrolladores que construyen pipelines de agentes locales y necesitan una capa de supervision humana con trazabilidad de ejecuciones, pero **no aporta pesos, arquitectura de red neuronal ni datos de entrenamiento**: cualquier ficha de modelo al uso (parametros, contexto, cuantizacion, benchmarks) no es aplicable a este repositorio. Los metadatos de Hugging Face no declaran licencia, idiomas ni pipeline.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Es relevante para desarrolladores que construyen pipelines de agentes locales y 
 | Longitud de contexto | No disponible. El README no documenta ventana de contexto; el contexto se gestiona via `GET/POST /api/context` |
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | No disponible (la documentacion esta en ingles; no se declaran idiomas de interfaz) |
-| Licencia | No disponible (los metadatos de HuggingFace no la especifican) |
+| Licencia | No disponible (los metadatos de Hugging Face no la especifican) |
 | Formato de pesos | No aplica. El repositorio es codigo Python instalable con `uv`; la base de datos local es SQLite |
 | Autor | smlflg |
 | Version | V1 (segun el README) |
@@ -69,7 +69,7 @@ No disponible. CLFGUI no es un modelo de lenguaje y no se dispone de datos de re
 ## Limitaciones y advertencias
 
 - El repositorio no contiene pesos, tokenizador ni artefactos de modelo; no puede usarse para inferencia.
-- No se declara licencia en los metadatos de HuggingFace, lo que impide determinar si el uso comercial es posible. Debe consultarse el repositorio antes de cualquier uso en produccion.
+- No se declara licencia en los metadatos de Hugging Face, lo que impide determinar si el uso comercial es posible. Debe consultarse el repositorio antes de cualquier uso en produccion.
 - El README indica que V1 es "intencionadamente pequena" y esta limitada intencionadamente a cuatro flujos, por lo que no debe esperarse funcionalidad completa de orquestacion de agentes.
 - La GUI y el kernel comparten proceso en la version actual; el desacoplamiento a un demonio headless se describe como trabajo futuro, no como capacidad existente.
 - El backend depende de un binario externo (`hermes`) controlado por `CLFGUI_HERMES_BIN`; si no esta instalado en el `PATH` o la ruta configurada, la funcionalidad de agentes fallara.
@@ -82,5 +82,5 @@ No disponible. CLFGUI no es un modelo de lenguaje y no se dispone de datos de re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/CLFGUI
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/CLFGUI
 - No se han encontrado en la busqueda web enlaces relevantes al proyecto (paper, blog, repositorio de codigo, demo o documentacion adicional). El resto de resultados de la busqueda no esta relacionado con el modelo.

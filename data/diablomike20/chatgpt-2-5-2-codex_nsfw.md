@@ -68,7 +68,7 @@ Los datos de los modelos comparables provienen de su documentación pública y n
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | ChatGPT-2.5.2-Codex_NSFW (este) | 0,35 B | No disponible | No disponible | HF (safetensors + GGUF) | Fine-tune con datos NSFW y de código; sin benchmarks |
-| SmolLM2-360M (HuggingFace) | 0,36 B | 8k (según documentación pública) | Apache-2.0 | HF, GGUF, transformers | Base entrenada desde cero con dataset abierto y benchmarks publicados |
+| SmolLM2-360M (Hugging Face) | 0,36 B | 8k (según documentación pública) | Apache-2.0 | HF, GGUF, transformers | Base entrenada desde cero con dataset abierto y benchmarks publicados |
 | Qwen2.5-0.5B (Alibaba) | 0,49 B | 32k (según documentación pública) | Apache-2.0 | HF, GGUF, transformers | Multilingüe, con soporte de tool calling y evaluaciones publicadas |
 | TinyLlama-1.1B | 1,1 B | 2k (según documentación pública) | Apache-2.0 | HF, GGUF | Mayor tamaño, contexto corto, muy extendido como base de fine-tunes |
 

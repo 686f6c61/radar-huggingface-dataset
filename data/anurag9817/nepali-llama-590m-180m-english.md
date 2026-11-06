@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nepali LLaMA 590M — English 180M es un modelo de lenguaje causal decoder-only de 590.077.440 parámetros, publicado en HuggingFace por el usuario Anurag9817. Pertenece a la familia de arquitecturas LLaMA y se distribuye como checkpoint de preentrenamiento (más concretamente, de preentrenamiento continuado), no como modelo ajustado por instrucciones. Su rasgo definitorio es la combinación de un tokenizador SentencePiece propio de 40.000 entradas, etiquetas de inglés y nepalí, y una fase de entrenamiento continuado sobre 180 millones de tokens en inglés extraídos de FineWeb-Edu.
+Nepali LLaMA 590M — English 180M es un modelo de lenguaje causal decoder-only de 590.077.440 parámetros, publicado en Hugging Face por el usuario Anurag9817. Pertenece a la familia de arquitecturas LLaMA y se distribuye como checkpoint de preentrenamiento (más concretamente, de preentrenamiento continuado), no como modelo ajustado por instrucciones. Su rasgo definitorio es la combinación de un tokenizador SentencePiece propio de 40.000 entradas, etiquetas de inglés y nepalí, y una fase de entrenamiento continuado sobre 180 millones de tokens en inglés extraídos de FineWeb-Edu.
 
 El modelo parte de una base orientada al nepalí, a la que se ha aplicado una segunda fase en inglés: 100 millones de tokens en una primera etapa y 80 millones adicionales de continuación. Con 18 capas, dimensión oculta de 1536, tamaño intermedio de 4096, 12 cabezas de atención y 6 cabezas KV (atención con consultas agrupadas), es un modelo pequeño que cabe sin dificultad en GPUs de consumo e incluso permite inferencia en CPU.
 
@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks en la información disponible. La b
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nepali LLaMA 590M — English 180M | 590M | 1024 | no disponible | HuggingFace (transformers, safetensors) |
-| TinyLlama-1.1B | 1,1B | 2048 | Apache-2.0 | HuggingFace (múltiples formatos) |
-| Qwen2.5-0.5B | 0,49B | 32.768 | Apache-2.0 | HuggingFace (base e instruct) |
-| SmolLM2-360M | 0,36B | 8192 | Apache-2.0 | HuggingFace (base e instruct) |
-| Pythia-410M | 0,41B | 2048 | Apache-2.0 | HuggingFace (base) |
+| Nepali LLaMA 590M — English 180M | 590M | 1024 | no disponible | Hugging Face (transformers, safetensors) |
+| TinyLlama-1.1B | 1,1B | 2048 | Apache-2.0 | Hugging Face (múltiples formatos) |
+| Qwen2.5-0.5B | 0,49B | 32.768 | Apache-2.0 | Hugging Face (base e instruct) |
+| SmolLM2-360M | 0,36B | 8192 | Apache-2.0 | Hugging Face (base e instruct) |
+| Pythia-410M | 0,41B | 2048 | Apache-2.0 | Hugging Face (base) |
 
 Los datos de los modelos comparativos corresponden a su documentación pública habitual y deben verificarse en sus respectivas fichas antes de tomar decisiones. Frente a ellos, este modelo destaca por su tokenizador específico para nepalí y por el bajo coste de entrenamiento declarado, pero queda por detrás en longitud de contexto, en claridad de licencia y en disponibilidad de formatos cuantizados o ajustados por instrucciones.
 
@@ -99,7 +99,7 @@ Los datos de los modelos comparativos corresponden a su documentación pública 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anurag9817/nepali-llama-590m-180m-english
+- Modelo en Hugging Face: https://huggingface.co/Anurag9817/nepali-llama-590m-180m-english
 - Tokenizador incluido en el repositorio: `tokenizer/nepali_llama_40k.model` (dentro del propio repositorio)
 - Paper, blog, repositorio de código o demo: no disponible
 - Resultados de la búsqueda web: los enlaces recuperados no guardan relación con el modelo y no se incluyen por no ser pertinentes

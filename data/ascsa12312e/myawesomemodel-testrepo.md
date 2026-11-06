@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ASCSA12312E/MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario ASCSA12312E que, a fecha de la informacion disponible, no contiene pesos: el tamano del repositorio es de 0,0 GB, acumula 0 descargas y 0 likes, y fue creado y actualizado con 15 segundos de diferencia (2026-09-18T22:02:03Z y 2026-09-18T22:02:18Z), lo que apunta a un repositorio de prueba generado de forma automatizada. Las etiquetas declaradas son transformers, pytorch, bert, feature-extraction, license:mit, endpoints_compatible y region:us, con pipeline de feature-extraction. No se especifican idiomas soportados, numero de parametros, longitud de contexto ni formato de pesos.
+ASCSA12312E/MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario ASCSA12312E que, a fecha de la informacion disponible, no contiene pesos: el tamano del repositorio es de 0,0 GB, acumula 0 descargas y 0 likes, y fue creado y actualizado con 15 segundos de diferencia (2026-09-18T22:02:03Z y 2026-09-18T22:02:18Z), lo que apunta a un repositorio de prueba generado de forma automatizada. Las etiquetas declaradas son transformers, pytorch, bert, feature-extraction, license:mit, endpoints_compatible y region:us, con pipeline de feature-extraction. No se especifican idiomas soportados, numero de parametros, longitud de contexto ni formato de pesos.
 
 Existe una contradiccion relevante entre los metadatos y la model card. Las etiquetas describen un modelo de tipo BERT orientado a extraccion de caracteristicas (encoder, sin generacion autorregresiva), mientras que el README describe un supuesto modelo de razonamiento con modo de pensamiento, function calling, plantillas de busqueda web y resultados en tareas de generacion de codigo y matematicas. Ademas, la model card emplea nombres anonimizados ("MyAwesomeModel", "Model1", "Model2", "MyAwesomeModel-Small") y referencias internas a ficheros de figuras (figures/fig1.png, fig2.png, fig3.png) que no forman parte de la informacion verificable, lo que sugiere una plantilla copiada de otro modelo con los nombres sustituidos.
 
@@ -25,7 +25,7 @@ Otros datos de los metadatos: pipeline declarado feature-extraction; libreria tr
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. La unica etiqueta de familia de modelo presente es "bert", que en HuggingFace identifica encoders transformer bidireccionales, habitualmente usados para clasificacion, embeddings o extraccion de caracteristicas. Esa etiqueta es incompatible con las capacidades que describe el README (generacion de codigo, razonamiento matematico con fases de pensamiento de decenas de miles de tokens, function calling), propias de un decoder autorregresivo con ajuste por instrucciones y, previsiblemente, entrenamiento por refuerzo.
+No hay informacion verificable sobre la arquitectura. La unica etiqueta de familia de modelo presente es "bert", que en Hugging Face identifica encoders transformer bidireccionales, habitualmente usados para clasificacion, embeddings o extraccion de caracteristicas. Esa etiqueta es incompatible con las capacidades que describe el README (generacion de codigo, razonamiento matematico con fases de pensamiento de decenas de miles de tokens, function calling), propias de un decoder autorregresivo con ajuste por instrucciones y, previsiblemente, entrenamiento por refuerzo.
 
 Tampoco se dispone de datos de entrenamiento: no se indica el numero de tokens, la composicion del corpus, ni si hubo RLHF, DPO u otro metodo de alineamiento. El unico dato cuantitativo del README relativo al entrenamiento o inferencia es una afirmacion de que la version actual consume una media de 23.000 tokens por pregunta en el conjunto AIME, frente a 12.000 de la version anterior, atribuido a un aumento de la "profundidad de pensamiento"; no se especifica mecanismo tecnico alguno (decodificacion especulativa, atencion lineal, MoE, etc.).
 
@@ -113,7 +113,7 @@ No disponible. No es posible establecer una comparativa rigurosa por tres motivo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASCSA12312E/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASCSA12312E/MyAwesomeModel-TestRepo
 - Paper: no disponible.
 - Blog tecnico o anuncio oficial: no disponible.
 - Repositorio de codigo: la model card menciona "our code repository" sin proporcionar URL.

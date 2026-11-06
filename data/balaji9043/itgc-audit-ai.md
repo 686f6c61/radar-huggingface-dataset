@@ -2,7 +2,7 @@
 
 ## Resumen
 
-itgc-audit-ai es un modelo publicado en HuggingFace por el usuario balaji9043 bajo licencia MIT. Por el nombre se intuye que podria estar orientado a tareas de auditoria (posiblemente en el ambito ITGC, controles generales de tecnologias de la informacion), pero la model card publicada no contiene ninguna descripcion funcional, tecnica ni de uso, por lo que no es posible confirmar su proposito real.
+itgc-audit-ai es un modelo publicado en Hugging Face por el usuario balaji9043 bajo licencia MIT. Por el nombre se intuye que podria estar orientado a tareas de auditoria (posiblemente en el ambito ITGC, controles generales de tecnologias de la informacion), pero la model card publicada no contiene ninguna descripcion funcional, tecnica ni de uso, por lo que no es posible confirmar su proposito real.
 
 En el momento de redactar esta ficha el repositorio presenta 0 descargas y 0 likes, y la model card se limita a un bloque de metadatos con la licencia MIT, sin abstract, sin ejemplos de uso y sin documentacion adicional. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion.
 
@@ -90,7 +90,7 @@ No disponible. No hay informacion suficiente sobre el modelo (tamano, arquitectu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/balaji9043/itgc-audit-ai
+- Repositorio en Hugging Face: https://huggingface.co/balaji9043/itgc-audit-ai
 - Model card del autor: no disponible (el README solo contiene el bloque de licencia)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

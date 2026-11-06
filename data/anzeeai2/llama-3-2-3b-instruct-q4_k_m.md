@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-Instruct-Q4_K_M es una cuantización GGUF del modelo Llama 3.2 3B Instruct, publicada por el usuario anzeeai2 en HuggingFace. Se trata de una conversión a 4 bits (variante K-quant M) del checkpoint original de Meta, empaquetada en formato GGUF para su uso con motores de inferencia como llama.cpp, Ollama o LM Studio. El modelo base resuelve tareas de generación de texto y diálogo multilingüe con un tamaño compacto que permite ejecución en hardware de consumo.
+Llama-3.2-3B-Instruct-Q4_K_M es una cuantización GGUF del modelo Llama 3.2 3B Instruct, publicada por el usuario anzeeai2 en Hugging Face. Se trata de una conversión a 4 bits (variante K-quant M) del checkpoint original de Meta, empaquetada en formato GGUF para su uso con motores de inferencia como llama.cpp, Ollama o LM Studio. El modelo base resuelve tareas de generación de texto y diálogo multilingüe con un tamaño compacto que permite ejecución en hardware de consumo.
 
 El checkpoint original de Meta emplea una arquitectura transformer densa con 3.212.749.888 parámetros, licencia Llama 3.2 y una ventana de contexto de 128.000 tokens (dato del modelo base, no verificado en esta conversión). Esta versión cuantizada ocupa 2,0 GB en el repositorio, lo que la hace desplegable en GPUs consumer con 4-6 GB de VRAM libre.
 
@@ -84,7 +84,7 @@ La comparación con el original de Meta es la más relevante: esta versión ofre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anzeeai2/Llama-3.2-3B-Instruct-Q4_K_M
+- Repositorio Hugging Face: https://huggingface.co/anzeeai2/Llama-3.2-3B-Instruct-Q4_K_M
 - Modelo base oficial: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Documentación de llama.cpp (motor de inferencia GGUF): https://github.com/ggml-org/llama.cpp

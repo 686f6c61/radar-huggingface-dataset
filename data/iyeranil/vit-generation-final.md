@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iyeranil/vit-generation-final` es un prototipo de investigación publicado en HuggingFace por el usuario iyeranil. Se presenta como un modelo basado en arquitectura Vision Transformer (ViT) orientado a tareas de generación, aunque la propia model card lo describe como un punto de partida experimental y no como un checkpoint entrenado. El repositorio incluye el código de inferencia, la configuración de arquitectura, los argumentos de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo.
+`iyeranil/vit-generation-final` es un prototipo de investigación publicado en Hugging Face por el usuario iyeranil. Se presenta como un modelo basado en arquitectura Vision Transformer (ViT) orientado a tareas de generación, aunque la propia model card lo describe como un punto de partida experimental y no como un checkpoint entrenado. El repositorio incluye el código de inferencia, la configuración de arquitectura, los argumentos de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 El dato más relevante para evaluar el modelo es su tamaño: 33.088 parámetros totales según los metadatos de safetensors. Se trata de una cifra extremadamente reducida, coherente con un prototipo de escala "small" pensado para validar formatos de ficheros y flujos de ejecución, no para producir resultados de calidad en producción. La model card declara explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iyeranil/vit-generation-final | 33.088 | no disponible | No (solo inicializacion) | BSD-3-Clause | HuggingFace |
-| ViT-Base (referencia) | ~86 M | no aplica (vision) | Si | Apache-2.0 / varias | HuggingFace |
-| ViT-Small (referencia) | ~22 M | no aplica (vision) | Si | Apache-2.0 / varias | HuggingFace |
+| iyeranil/vit-generation-final | 33.088 | no disponible | No (solo inicializacion) | BSD-3-Clause | Hugging Face |
+| ViT-Base (referencia) | ~86 M | no aplica (vision) | Si | Apache-2.0 / varias | Hugging Face |
+| ViT-Small (referencia) | ~22 M | no aplica (vision) | Si | Apache-2.0 / varias | Hugging Face |
 
 La comparación con ViT-Small y ViT-Base es únicamente orientativa por escala: el modelo de iyeranil tiene tres órdenes de magnitud menos parámetros que ViT-Small y no está entrenado, por lo que no es funcionalmente comparable en tareas de visión. No se dispone de alternativas de la misma categoría (prototipos de generación con ViT) documentadas en la información proporcionada.
 
@@ -74,11 +74,11 @@ La comparación con ViT-Small y ViT-Base es únicamente orientativa por escala: 
 - No se han auditado sesgos, robustez ni transferencia de dominio; la model card lo declara explícitamente.
 - Riesgo de alucinación y de salidas sin sentido: al no existir entrenamiento, cualquier generación carece de garantías.
 - No hay información sobre idiomas, contexto, tokenizador ni modalidad de salida, lo que impide evaluar su idoneidad para casos concretos.
-- Las APIs automáticas de carga (por ejemplo, `AutoModel`) requieren un adaptador explícito; no funciona como un modelo estándar de HuggingFace sin trabajo adicional.
+- Las APIs automáticas de carga (por ejemplo, `AutoModel`) requieren un adaptador explícito; no funciona como un modelo estándar de Hugging Face sin trabajo adicional.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con atribución y sin garantías, pero deben revisarse por separado los términos de los datos de origen si se usa con datasets externos.
 - No apto para producción: cualquier despliegue requeriría sustituir el checkpoint por uno entrenado y documentar los resultados por separado, tal como indica el propio autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iyeranil/vit-generation-final
+- Repositorio en Hugging Face: https://huggingface.co/iyeranil/vit-generation-final
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

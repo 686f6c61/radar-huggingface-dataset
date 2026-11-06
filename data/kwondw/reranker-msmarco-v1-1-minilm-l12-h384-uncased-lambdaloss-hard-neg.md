@@ -75,7 +75,7 @@ No se dispone de información suficiente para comparar con otros modelos en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kwondw/reranker-msmarco-v1.1-MiniLM-L12-H384-uncased-lambdaloss-hard-neg
+- Hugging Face: https://huggingface.co/kwondw/reranker-msmarco-v1.1-MiniLM-L12-H384-uncased-lambdaloss-hard-neg
 - Documentación de Sentence Transformers: https://sbert.net
 - Documentación de Cross Encoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html
 - Repositorio de Sentence Transformers: https://github.com/huggingface/sentence-transformers

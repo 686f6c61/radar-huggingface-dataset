@@ -92,7 +92,7 @@ Como referencia de categoria, un checkpoint SDXL completo ronda los 2.600 millon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AndreyFSDev/coworker-style-illustrious-xl
+- Hugging Face: https://huggingface.co/AndreyFSDev/coworker-style-illustrious-xl
 - Modelo base: wai-illustrious-sdxl-v1.7 (referenciado en la model card; URL no disponible en la informacion proporcionada)
 - Paper, blog o repositorio del autor: no disponibles
 - Demos o galerias de ejemplos: no disponibles

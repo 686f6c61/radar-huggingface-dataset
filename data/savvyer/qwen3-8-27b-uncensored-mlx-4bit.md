@@ -6,7 +6,7 @@ El modelo **savvyer/Qwen3.8-27B-Uncensored-MLX-4bit** es una cuantizacion en 4-b
 
 El modelo original de Alibaba es un LLM denso multimodal nativo (image-text-to-text) de 27.000 millones de parametros, con una ventana de contexto de 262.000 tokens, orientado a tareas de codificacion, flujos agente y automatizacion de oficina. La cuantizacion MLX de 4 bits de savvyer permite ejecutarlo en Apple Silicon con un consumo de memoria reducido, y el repositorio ocupa 16,1 GB.
 
-Es relevante porque combina tres caracteristicas demandadas por la comunidad: capacidades multimodales de ultima generacion, contexto muy largo y una variante sin censura que puede desplegarse localmente en hardware de consumo (Mac de 24 GB). La licencia declarada en HuggingFace es "no disponible", aunque fuentes externas indican que el modelo base Qwen3.8-27B se distribuye bajo Apache-2.0.
+Es relevante porque combina tres caracteristicas demandadas por la comunidad: capacidades multimodales de ultima generacion, contexto muy largo y una variante sin censura que puede desplegarse localmente en hardware de consumo (Mac de 24 GB). La licencia declarada en Hugging Face es "no disponible", aunque fuentes externas indican que el modelo base Qwen3.8-27B se distribuye bajo Apache-2.0.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Es relevante porque combina tres caracteristicas demandadas por la comunidad: ca
 | Longitud de contexto | 262.000 tokens (segun fuentes web) |
 | Tipos de cuantizacion | 4 bits (MLX), existe variante de 8 bits de otro autor |
 | Idiomas soportados | en (ingles) |
-| Licencia | No disponible en la ficha de HuggingFace; fuentes web indican Apache-2.0 para el modelo base |
+| Licencia | No disponible en la ficha de Hugging Face; fuentes web indican Apache-2.0 para el modelo base |
 | Formato de pesos | safetensors (formato MLX) |
 
 Nota sobre parametros: los metadatos safetensors registran 4.665.462.000 parametros, pero el nombre del modelo, el tamano del repositorio (16,1 GB) y las fuentes web indican que se trata de un modelo de 27.000 millones de parametros cuantizado a 4 bits. La cifra de safetensors podria corresponder a un subconjunto de pesos o a un error en los metadatos. No se ha podido verificar el valor real.
@@ -80,13 +80,13 @@ La principal diferencia entre las tres variantes de Qwen3.8-27B es el nivel de c
 - Riesgo de contenido inapropiado: el modelo puede responder a peticiones de contenido ilegal, violento o sexual sin restricciones, lo que obliga a implementar capas de filtrado externas si se despliega en aplicaciones publicas.
 - Idioma limitado: la ficha indica que el modelo solo soporta ingles ("en"), por lo que no es adecuado para aplicaciones en castellano u otros idiomas sin un pipeline de traduccion previo.
 - Discrepancia de parametros: los metadatos safetensors indican 4,67B parametros mientras que el nombre y el tamano del repositorio sugieren 27B. Esta inconsistencia no esta resuelta y podria indicar un problema en la cuantizacion o en los metadatos.
-- Licencia incierta: la ficha de HuggingFace no declara licencia. Aunque fuentes web indican Apache-2.0 para el modelo base, la variante abliterada no es un derivado oficial de Alibaba, por lo que su uso comercial podria presentar problemas legales.
+- Licencia incierta: la ficha de Hugging Face no declara licencia. Aunque fuentes web indican Apache-2.0 para el modelo base, la variante abliterada no es un derivado oficial de Alibaba, por lo que su uso comercial podria presentar problemas legales.
 - Sin benchmarks publicados: no hay datos de rendimiento verificables, lo que dificulta evaluar si la cuantizacion de 4 bits degrada la calidad de salida respecto al modelo original.
 - Sin mantenimiento activo: el repositorio tiene 0 descargas y 0 likes, y fue creado en agosto de 2026. No hay evidencia de soporte o actualizaciones.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/savvyer/Qwen3.8-27B-Uncensored-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/savvyer/Qwen3.8-27B-Uncensored-MLX-4bit
 - Guia de despliegue local para Apple Silicon (GitHub, newbdez33): https://github.com/newbdez33/qwen3.8
 - Repositorio oficial de Alibaba para Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia de ejecucion local en Mac y GPU (modelfit.io): https://modelfit.io/blog/run-qwen38-27b-locally-2026/

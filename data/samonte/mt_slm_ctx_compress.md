@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mt_slm_ctx_compress es un modelo de lenguaje especializado publicado por el usuario Samonte en HuggingFace, derivado del modelo base ibm-granite/granite-4.0-h-micro de IBM (Apache 2.0). Su proposito concreto es la compactacion de sesiones de agentes de programacion: recibe sesiones de hasta 120.000 tokens y genera un resumen estructurado con nueve encabezados predefinidos. No es un modelo de proposito general, sino una adaptacion afinada para una tarea acotada dentro de la arena `ctx_compress` de la plataforma Microtensor.
+mt_slm_ctx_compress es un modelo de lenguaje especializado publicado por el usuario Samonte en Hugging Face, derivado del modelo base ibm-granite/granite-4.0-h-micro de IBM (Apache 2.0). Su proposito concreto es la compactacion de sesiones de agentes de programacion: recibe sesiones de hasta 120.000 tokens y genera un resumen estructurado con nueve encabezados predefinidos. No es un modelo de proposito general, sino una adaptacion afinada para una tarea acotada dentro de la arena `ctx_compress` de la plataforma Microtensor.
 
 El modelo se ha obtenido mediante un ajuste LoRA con rango 64 fusionado en bf16 sobre el modelo base, y cuenta con 3.191.396.096 parametros totales segun los pesos en safetensors. El repositorio ocupa 25,5 GB, lo que sugiere que incluye no solo los pesos fusionados sino tambien artefactos de entrenamiento y validacion bajo el directorio `training/`.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mt_slm_ctx_compress | 3,19 B | 120k (entrada de sesion) | Compactacion de sesiones | microtensor-submission | HuggingFace (0 descargas) |
-| ibm-granite/granite-4.0-h-micro | no disponible en la informacion | no disponible | Proposito general | Apache 2.0 | HuggingFace (modelo base) |
+| mt_slm_ctx_compress | 3,19 B | 120k (entrada de sesion) | Compactacion de sesiones | microtensor-submission | Hugging Face (0 descargas) |
+| ibm-granite/granite-4.0-h-micro | no disponible en la informacion | no disponible | Proposito general | Apache 2.0 | Hugging Face (modelo base) |
 | Otros modelos de compactacion de contexto | no disponible | no disponible | Compactacion | no disponible | no disponible |
 
 La comparativa se limita al modelo base, ya que no se dispone de datos sobre alternativas especializadas en compactacion de sesiones de agente con caracteristicas equivalentes.
@@ -81,7 +81,7 @@ La comparativa se limita al modelo base, ya que no se dispone de datos sobre alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samonte/mt_slm_ctx_compress
+- Modelo en Hugging Face: https://huggingface.co/Samonte/mt_slm_ctx_compress
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-micro
 - Terminos de licencia Microtensor: https://www.microtensor.cloud/terms
 - Repositorio de arenas (referenciado en la model card): https://github.com/microtensor-io/microtensor-arenas (ruta `arenas/compress/synth.py`)

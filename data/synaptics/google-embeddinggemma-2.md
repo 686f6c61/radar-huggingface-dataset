@@ -117,7 +117,7 @@ No se dispone de datos sobre alternativas de otros fabricantes con las que compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Synaptics/Google-EmbeddingGemma-2
+- Modelo en Hugging Face: https://huggingface.co/Synaptics/Google-EmbeddingGemma-2
 - Rama bf16: https://huggingface.co/Synaptics/Google-EmbeddingGemma-2/tree/bf16
 - Modelo base original: https://huggingface.co/google/embeddinggemma-2
 - Exportacion ONNX de origen: https://huggingface.co/onnx-community/embeddinggemma-2-ONNX

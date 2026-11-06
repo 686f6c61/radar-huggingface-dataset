@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tournament-tourn_db768b30efd93b8b_20260824-daf88974-31be-496a-adef-9459078493b6-5HKEAZxF` es un adaptador LoRA publicado por el usuario `gradients-io-tournaments` en HuggingFace, dentro de la plataforma descentralizada de entrenamiento e investigación Gradients, asociada a la subred 56 de Bittensor. Se trata de un ajuste fino con supervisión (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada del Llama 3.1 8B de Meta.
+El modelo `tournament-tourn_db768b30efd93b8b_20260824-daf88974-31be-496a-adef-9459078493b6-5HKEAZxF` es un adaptador LoRA publicado por el usuario `gradients-io-tournaments` en Hugging Face, dentro de la plataforma descentralizada de entrenamiento e investigación Gradients, asociada a la subred 56 de Bittensor. Se trata de un ajuste fino con supervisión (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada del Llama 3.1 8B de Meta.
 
 El adaptador se distribuye en formato PEFT (LoRA) y contiene únicamente los pesos del ajuste, con un tamaño de repositorio de 2,7 GB. La ficha del modelo no incluye información sobre el dataset de entrenamiento, los hiperparámetros ni el propósito específico del ajuste, más allá de los tags genéricos (`sft`, `lora`, `conversational`). Esto lo convierte en un artefacto de evaluación complejo: su rendimiento depende del modelo base, pero las capacidades finales no están documentadas.
 

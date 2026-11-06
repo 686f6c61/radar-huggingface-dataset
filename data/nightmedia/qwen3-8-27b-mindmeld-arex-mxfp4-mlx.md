@@ -90,7 +90,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K, MATH ni de evaluacione
 
 | Modelo | Parametros | Contexto declarado | Perplexity (misma cuantizacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MindMeld-AREX (este modelo) | 27,36 B | 256k / 1M segun etiquetas, sin verificar | 3,790 en mxfp4; 3,731 en mxfp8 | Apache 2.0 | MLX mxfp4 en HuggingFace; 0 descargas, 0 likes |
+| MindMeld-AREX (este modelo) | 27,36 B | 256k / 1M segun etiquetas, sin verificar | 3,790 en mxfp4; 3,731 en mxfp8 | Apache 2.0 | MLX mxfp4 en Hugging Face; 0 descargas, 0 likes |
 | nightmedia/Qwen3.6-27B-MindMeld | no disponible (familia 27B) | no disponible | 3,813 en mxfp4; 3,733 en mxfp8 | no disponible en la informacion | Componente de la fusion; reporta bf16, mxfp8, qx64-hi y mxfp4 |
 | BAAI/AREX-2 | no disponible | no disponible | 5,240 en mxfp8 | no disponible en la informacion | Componente de la fusion; solo se reporta mxfp8 |
 | DavidAU/Qwen3.5-27B-Claude-4.6-OS-INSTRUCT | no disponible (27B por nomenclatura) | no disponible | no disponible | no disponible | Modelo participante en la fusion |
@@ -113,7 +113,7 @@ La fusion mejora la perplexity de AREX-2 de forma clara en la misma cuantizacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld-AREX-mxfp4-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld-AREX-mxfp4-mlx
 - Componente principal: https://huggingface.co/nightmedia/Qwen3.6-27B-MindMeld
 - Segundo componente: https://huggingface.co/BAAI/AREX-2
 - Modelos participantes: https://huggingface.co/schneewolflabs/B1-27B, https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves, https://huggingface.co/nbeerbower/Wichtel-Qwen3.6-27B, https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara, https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0, https://huggingface.co/nightmedia/Qwen3.8-27B-Cold-Fusion-FF711-Darker-Hero-GAIN-B, https://huggingface.co/migtissera/Tess-4-27B, https://huggingface.co/nbeerbower/CHUD-Qwen3.6-27B, https://huggingface.co/nbeerbower/Elster-Qwen3.6-27B, https://huggingface.co/MooreThreads/MusaCoder-27B, https://huggingface.co/DavidAU/Qwen3.5-27B-Claude-4.6-OS-INSTRUCT, https://huggingface.co/DavidAU/Qwen3.6-27B-Heretic2-Uncensored-Finetune-Thinking, https://huggingface.co/armand0e/Qwen3.6-27B-Fable-5-Experimental, https://huggingface.co/DavidAU/Qwen3.5-27B-Polar-Rev1-Uncensored-Heretic, https://huggingface.co/DavidAU/Qwen3.6-27B-F451-AND-TRI-Polar-Ultra-Pro-Writer-Uncensored-Heretic, https://huggingface.co/nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B, https://huggingface.co/nightmedia/Qwen3.6-27B-Architect-Polaris-Fable-F451

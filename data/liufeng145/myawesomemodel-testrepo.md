@@ -23,7 +23,7 @@ No se proporcionan datos sobre arquitectura, número de parámetros, longitud de
 
 No se dispone de información técnica sobre la arquitectura del modelo. La model card menciona que "MyAwesomeModel" ha mejorado su profundidad de razonamiento mediante "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no especifica la arquitectura subyacente (transformer, MoE, SSM, etc.), ni el número de tokens de entrenamiento, ni el dataset utilizado, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se indica si el modelo es de tipo decoder-only, encoder-only o encoder-decoder.
 
-El pipeline declarado en HuggingFace es `feature-extraction`, lo que sugiere que el modelo podría estar diseñado para generar embeddings, pero la descripción de la model card apunta a capacidades generativas. Esta discrepancia no se resuelve con los datos disponibles.
+El pipeline declarado en Hugging Face es `feature-extraction`, lo que sugiere que el modelo podría estar diseñado para generar embeddings, pero la descripción de la model card apunta a capacidades generativas. Esta discrepancia no se resuelve con los datos disponibles.
 
 ## Capacidades
 
@@ -85,5 +85,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liufeng145/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/liufeng145/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces (papers, blogs, repos de código) en la información proporcionada.

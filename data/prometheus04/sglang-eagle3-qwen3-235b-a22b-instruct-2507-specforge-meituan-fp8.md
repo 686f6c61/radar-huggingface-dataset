@@ -77,10 +77,10 @@ Configuraciones de decodificación contempladas en la reproducción: (pasos, top
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (prometheus04, FP8) | 0,59 B | No disponible | MIT | HuggingFace, 0 descargas | Borrador EAGLE3 en FP8 para Qwen3-235B-A22B-Instruct-2507 |
-| lmsys/SGLang-EAGLE3-Qwen3-235B-A22B-Instruct-2507-perfect-blend-regenerated | No disponible | No disponible | No disponible | HuggingFace | Checkpoint citado en la propia model card como ruta de uso; presumiblemente la versión de referencia en bf16 |
-| Qwen3-235B-A22B-Instruct-2507 sin decodificación especulativa | 235 B totales / 22 B activos | No disponible | No disponible en esta información | HuggingFace | Línea base de calidad; sin aceleración por borrador |
-| Otros borradores EAGLE3 de la familia Qwen3 | No disponible | No disponible | No disponible | HuggingFace | No se han identificado en la información disponible datos comparables |
+| Este checkpoint (prometheus04, FP8) | 0,59 B | No disponible | MIT | Hugging Face, 0 descargas | Borrador EAGLE3 en FP8 para Qwen3-235B-A22B-Instruct-2507 |
+| lmsys/SGLang-EAGLE3-Qwen3-235B-A22B-Instruct-2507-perfect-blend-regenerated | No disponible | No disponible | No disponible | Hugging Face | Checkpoint citado en la propia model card como ruta de uso; presumiblemente la versión de referencia en bf16 |
+| Qwen3-235B-A22B-Instruct-2507 sin decodificación especulativa | 235 B totales / 22 B activos | No disponible | No disponible en esta información | Hugging Face | Línea base de calidad; sin aceleración por borrador |
+| Otros borradores EAGLE3 de la familia Qwen3 | No disponible | No disponible | No disponible | Hugging Face | No se han identificado en la información disponible datos comparables |
 
 No se dispone de cifras de rendimiento que permitan una comparación cuantitativa entre estas alternativas.
 
@@ -99,10 +99,10 @@ No se dispone de cifras de rendimiento que permitan una comparación cuantitativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prometheus04/SGLang-EAGLE3-Qwen3-235B-A22B-Instruct-2507-SpecForge-Meituan-FP8
+- Repositorio en Hugging Face: https://huggingface.co/prometheus04/SGLang-EAGLE3-Qwen3-235B-A22B-Instruct-2507-SpecForge-Meituan-FP8
 - Framework SpecForge: https://github.com/sgl-project/SpecForge
 - Dataset de entrenamiento: https://huggingface.co/datasets/mlabonne/open-perfectblend
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507
 - Checkpoint de referencia citado en la model card: https://huggingface.co/lmsys/SGLang-EAGLE3-Qwen3-235B-A22B-Instruct-2507-perfect-blend-regenerated
-- Organización Meituan en HuggingFace: https://huggingface.co/meituan
+- Organización Meituan en Hugging Face: https://huggingface.co/meituan
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a páginas generales de ChatGPT y no guardan relación con el checkpoint.

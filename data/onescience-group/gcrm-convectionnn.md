@@ -25,7 +25,7 @@ La relevancia de este modelo radica en el problema de la estabilidad de los esqu
 
 El modelo se basa en una red neuronal que procesa perfiles termodinámicos de 34 niveles. Cada muestra de entrada contiene 70 valores: 34 niveles de agua total, 34 niveles de energía estática líquido-hielo, temperatura superficial del mar e insolación en el tope de la atmósfera. La salida son 68 valores: tendencias de calentamiento y humedecimiento para los mismos 34 niveles, en intervalos de tres horas. El entrenamiento utiliza una función de pérdida MSE ponderada por masa y un regularizador de balance configurable de 20 miembros.
 
-Los datos de entrenamiento originales proceden de simulaciones SAM de resolución de nubes casi globales y de simulaciones climáticas superparametrizadas SPCAM. Sin embargo, el repositorio de HuggingFace incluye únicamente muestras sintéticas generadas con el script `fake_data.py`, destinadas a validar el código y no a reproducir el rendimiento del paper. No se distribuyen pesos preentrenados bajo el directorio `weight/`; el checkpoint de ingeniería generado a partir de datos sintéticos no es un checkpoint oficial del artículo. La innovación técnica destacable es el diagnóstico de estabilidad mediante diferenciación automática para calcular funciones de respuesta lineal, ablaciones de entrada superior y espectros de ondas de gravedad, lo que permite detectar modos propagantes peligrosos en el esquema de parametrización.
+Los datos de entrenamiento originales proceden de simulaciones SAM de resolución de nubes casi globales y de simulaciones climáticas superparametrizadas SPCAM. Sin embargo, el repositorio de Hugging Face incluye únicamente muestras sintéticas generadas con el script `fake_data.py`, destinadas a validar el código y no a reproducir el rendimiento del paper. No se distribuyen pesos preentrenados bajo el directorio `weight/`; el checkpoint de ingeniería generado a partir de datos sintéticos no es un checkpoint oficial del artículo. La innovación técnica destacable es el diagnóstico de estabilidad mediante diferenciación automática para calcular funciones de respuesta lineal, ablaciones de entrada superior y espectros de ondas de gravedad, lo que permite detectar modos propagantes peligrosos en el esquema de parametrización.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No disponible. No se han encontrado modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/GCRM-ConvectionNN
+- Hugging Face: https://huggingface.co/OneScience-Group/GCRM-ConvectionNN
 - Paper: Interpreting and Stabilizing Machine-Learning Parametrizations of Convection — https://doi.org/10.1175/JAS-D-20-0082.1
 - OneCode: https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home
 - GitHub OneScience: https://github.com/onescience-ai/OneScience

@@ -54,11 +54,11 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyrildev1/act_picklift | 51.684.998 | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| adimunot/act-so101-pick-lift | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| W1ndrunn3rr/act_pick_and_lift_v2 | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| cyrildev1/act_picklift | 51.684.998 | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| adimunot/act-so101-pick-lift | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| W1ndrunn3rr/act_pick_and_lift_v2 | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
-Los dos modelos alternativos encontrados en HuggingFace son también políticas ACT orientadas a tareas similares de pick-and-lift en MuJoCo, pero no se dispone de datos técnicos completos para una comparación detallada.
+Los dos modelos alternativos encontrados en Hugging Face son también políticas ACT orientadas a tareas similares de pick-and-lift en MuJoCo, pero no se dispone de datos técnicos completos para una comparación detallada.
 
 ## Limitaciones y advertencias
 

@@ -4,7 +4,7 @@
 
 Este modelo es un experimento de fine-tuning realizado por el usuario sashaboguraev sobre la base de Pythia-1B, un modelo de lenguaje de 1.000 millones de parámetros desarrollado por EleutherAI con arquitectura GPT-NeoX. El nombre del repositorio indica que se ha entrenado durante 500 pasos sobre un conjunto de datos de números aleatorios, con una semilla fija (208). El objetivo parece ser estudiar el comportamiento de un modelo de lenguaje cuando se expone a datos sintéticos sin estructura lingüística, probablemente para investigar fenómenos de memorización, generalización o dinámicas de entrenamiento.
 
-La relevancia de este modelo es principalmente académica o experimental. No está pensado para uso en producción, ya que carece de documentación, licencia y evaluación. Su interés radica en que forma parte de una serie de variantes (con diferentes pasos, semillas y opciones de preservación de embeddings) que permiten comparar cómo afectan estos factores al aprendizaje. El modelo está alojado en HuggingFace con formato safetensors y es compatible con la librería transformers.
+La relevancia de este modelo es principalmente académica o experimental. No está pensado para uso en producción, ya que carece de documentación, licencia y evaluación. Su interés radica en que forma parte de una serie de variantes (con diferentes pasos, semillas y opciones de preservación de embeddings) que permiten comparar cómo afectan estos factores al aprendizaje. El modelo está alojado en Hugging Face con formato safetensors y es compatible con la librería transformers.
 
 ## Especificaciones técnicas
 
@@ -49,16 +49,16 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: para inferencia en FP16, un modelo de 1B parámetros requiere aproximadamente 2 GB de VRAM solo para los pesos, más memoria para activaciones y contexto. Con cuantización a 8 bits podría reducirse a ~1 GB, pero no se ofrecen versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16 (por ejemplo, GTX 1650, RTX 3050, etc.). Para entrenamiento o fine-tuning se recomienda al menos 8 GB.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs consumer de gama media.
-- Opciones de despliegue: compatible con transformers, text-generation-inference y endpoints de HuggingFace. No se menciona soporte para vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: compatible con transformers, text-generation-inference y endpoints de Hugging Face. No se menciona soporte para vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pythia-1B (original) | 1.011.781.376 | 2048 | Apache 2.0 | HuggingFace |
-| Este modelo (fine-tune) | 1.011.671.040 | no disponible | no disponible | HuggingFace |
-| Otras variantes del autor (steps100, steps1000) | similar | no disponible | no disponible | HuggingFace |
+| Pythia-1B (original) | 1.011.781.376 | 2048 | Apache 2.0 | Hugging Face |
+| Este modelo (fine-tune) | 1.011.671.040 | no disponible | no disponible | Hugging Face |
+| Otras variantes del autor (steps100, steps1000) | similar | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. La principal diferencia con el Pythia-1B original es el entrenamiento adicional sobre números aleatorios, que probablemente degrade sus capacidades lingüísticas.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento para comparar. La principal diferencia con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps500_1b-seed208
+- Modelo en Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps500_1b-seed208
 - Variante con 100 pasos y preservación de embeddings: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps100_1b-seed324-preserve_emb
 - Variante con 100 pasos y semilla 1024: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps100_1b-seed1024-preserve_emb
 - Referencia a la arquitectura GPT-NeoX (paper de Pythia): https://arxiv.org/abs/1910.09700 (citado en los tags)

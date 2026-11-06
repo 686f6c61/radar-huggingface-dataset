@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper-tiny-yoruba-waxal-research es un checkpoint de investigacion publicado por el autor Ineeoluwa (usuario de HuggingFace) que consiste en un ajuste fino de `openai/whisper-tiny` sobre el subconjunto yoruba del corpus `google/WaxalNLP`. El modelo se distribuye como un artefacto reproducible de un estudio en curso sobre preservacion de tonos, decodificacion y compresion en reconocimiento automatico del habla (ASR) para yoruba, una lengua tonal de Nigeria. No es un modelo orientado a produccion: el propio autor lo presenta explicitamente como un checkpoint de investigacion con un resultado medido y debil.
+Whisper-tiny-yoruba-waxal-research es un checkpoint de investigacion publicado por el autor Ineeoluwa (usuario de Hugging Face) que consiste en un ajuste fino de `openai/whisper-tiny` sobre el subconjunto yoruba del corpus `google/WaxalNLP`. El modelo se distribuye como un artefacto reproducible de un estudio en curso sobre preservacion de tonos, decodificacion y compresion en reconocimiento automatico del habla (ASR) para yoruba, una lengua tonal de Nigeria. No es un modelo orientado a produccion: el propio autor lo presenta explicitamente como un checkpoint de investigacion con un resultado medido y debil.
 
 La relevancia del modelo es metodologica mas que de rendimiento. Publica de forma transparente un WER del 88,76 % sobre las 177 grabaciones del split de test completo de WAXAL Yoruba, un resultado que el autor reconoce que no supera la linea base de MMS Yoruba del mismo estudio (58,41 % WER). El valor esta en que hace reproducible un checkpoint seleccionado por validacion (paso 800, WER de validacion 61,0785 %), junto con hashes, identidades de test y ficheros de evaluacion, para estudiar efectos de tono y compresion.
 
@@ -74,9 +74,9 @@ El WER elimina unicamente las marcas combinantes Unicode grave y aguda tras NFD;
 
 | Modelo | Parametros | Contexto | WER yoruba | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ineeoluwa/whisper-tiny-yoruba-waxal-research | 37,7 M | no disponible | 88,76 % (test WAXAL, tonos eliminados) | CC BY-SA 4.0 | HuggingFace |
+| Ineeoluwa/whisper-tiny-yoruba-waxal-research | 37,7 M | no disponible | 88,76 % (test WAXAL, tonos eliminados) | CC BY-SA 4.0 | Hugging Face |
 | MMS Yoruba (linea base del estudio) | no disponible | no disponible | 58,41 % | no disponible | no disponible |
-| openai/whisper-tiny (base) | 37,7 M | ventana de audio de 30 s | no disponible en la informacion | Apache 2.0 | HuggingFace |
+| openai/whisper-tiny (base) | 37,7 M | ventana de audio de 30 s | no disponible en la informacion | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los datos publicados en la model card. No se dispone de resultados de otros modelos ASR para yoruba en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ La comparativa se limita a los datos publicados en la model card. No se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ineeoluwa/whisper-tiny-yoruba-waxal-research
+- Modelo en Hugging Face: https://huggingface.co/Ineeoluwa/whisper-tiny-yoruba-waxal-research
 - Repositorio del estudio: https://github.com/Eunini/yoruba-asr-tone-compression
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset: https://huggingface.co/datasets/google/WaxalNLP

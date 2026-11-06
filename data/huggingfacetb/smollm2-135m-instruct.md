@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolLM2-135M-Instruct es un modelo de lenguaje compacto desarrollado por el equipo de HuggingFace, perteneciente a la familia SmolLM2, que incluye versiones de 135M, 360M y 1.7B parámetros. Este modelo en concreto, con 134,5 millones de parámetros, está diseñado para ejecutarse en dispositivos con recursos limitados, como móviles o entornos edge, manteniendo un rendimiento competitivo en tareas de instrucción, razonamiento y conocimiento. Es la versión afinada (instruct) del modelo base SmolLM2-135M, entrenada mediante supervisión fina (SFT) y optimización por preferencias directas (DPO).
+SmolLM2-135M-Instruct es un modelo de lenguaje compacto desarrollado por el equipo de Hugging Face, perteneciente a la familia SmolLM2, que incluye versiones de 135M, 360M y 1.7B parámetros. Este modelo en concreto, con 134,5 millones de parámetros, está diseñado para ejecutarse en dispositivos con recursos limitados, como móviles o entornos edge, manteniendo un rendimiento competitivo en tareas de instrucción, razonamiento y conocimiento. Es la versión afinada (instruct) del modelo base SmolLM2-135M, entrenada mediante supervisión fina (SFT) y optimización por preferencias directas (DPO).
 
 El modelo resuelve el problema de ofrecer capacidades de generación de texto y seguimiento de instrucciones en un paquete extremadamente ligero, lo que lo hace relevante para aplicaciones que requieren inferencia local sin depender de infraestructura en la nube. Su arquitectura es un transformer decoder estándar, con una longitud de contexto no especificada en la documentación oficial (aunque la versión base se menciona como "8k" en algunas evaluaciones). Está entrenado sobre 2 billones de tokens con una combinación de datasets como FineWeb-Edu, DCLM y The Stack. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
@@ -23,7 +23,7 @@ El modelo resuelve el problema de ofrecer capacidades de generación de texto y 
 
 SmolLM2-135M-Instruct utiliza una arquitectura transformer decoder estándar, sin mecanismos de atención lineal ni mezcla de expertos. El modelo base fue preentrenado con 2 billones de tokens, usando una combinación de datasets públicos como FineWeb-Edu, DCLM y The Stack, junto con datasets filtrados propios que el equipo publicará próximamente. El entrenamiento se realizó en precisión bfloat16 sobre 64 GPUs H100, utilizando el framework nanotron.
 
-La versión instruct se obtuvo mediante un proceso de dos etapas: primero, un ajuste fino supervisado (SFT) con una combinación de datasets públicos y propios (el dataset SFT está disponible en HuggingFace como smol-smoltalk), y después una optimización por preferencias directas (DPO) utilizando el dataset UltraFeedback. Este proceso mejora significativamente la capacidad de seguir instrucciones, el razonamiento y el conocimiento en comparación con la generación anterior SmolLM1. La model card indica que el modelo instruct soporta tareas como reescritura de texto, resumen y function calling, aunque esta última se menciona específicamente para la versión de 1.7B, no para la de 135M.
+La versión instruct se obtuvo mediante un proceso de dos etapas: primero, un ajuste fino supervisado (SFT) con una combinación de datasets públicos y propios (el dataset SFT está disponible en Hugging Face como smol-smoltalk), y después una optimización por preferencias directas (DPO) utilizando el dataset UltraFeedback. Este proceso mejora significativamente la capacidad de seguir instrucciones, el razonamiento y el conocimiento en comparación con la generación anterior SmolLM1. La model card indica que el modelo instruct soporta tareas como reescritura de texto, resumen y function calling, aunque esta última se menciona específicamente para la versión de 1.7B, no para la de 135M.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ La comparativa principal es con su predecesor directo, SmolLM-135M-Instruct, cuy
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)
+- [Modelo en Hugging Face](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)
 - [Paper de SmolLM2 (arXiv)](https://arxiv.org/abs/2502.02737)
 - [Dataset SFT (smol-smoltalk)](https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk)
 - [Código de finetuning (alignment-handbook)](https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm2)

@@ -113,7 +113,7 @@ La variante de 4 bits prioriza velocidad y bajo consumo de memoria; la de 8 bits
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-4bit
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.1-3b
 - Variante de 8 bits del mismo autor: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-8bit
 - Variante de 16 bits del mismo autor: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-16bit

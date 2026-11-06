@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/explodingyesyes/Kolibri1-Q5_K_Mixed-GGUF
+- Repositorio Hugging Face: https://huggingface.co/explodingyesyes/Kolibri1-Q5_K_Mixed-GGUF
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - llama.cpp (repositorio del motor de inferencia): https://github.com/ggml-org/llama.cpp

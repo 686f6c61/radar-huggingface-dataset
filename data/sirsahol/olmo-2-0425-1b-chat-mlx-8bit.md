@@ -28,7 +28,7 @@ Conviene señalar dos matices importantes antes de evaluarlo. Primero, el reposi
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo OLMo 2 de Allen AI, expuesta en la libreria de HuggingFace como `Olmo2ForCausalLM`, es decir, un transformer decoder-only con atencion causal. Esta publicacion concreta no introduce ningun cambio arquitectonico: se limita a convertir los pesos originales a precision de 8 bits mediante el flujo de cuantizacion de MLX. La conversion declaro un tiempo de 6,03 segundos y genero un checkpoint de 1,7 GB en el repositorio.
+La arquitectura subyacente es la del modelo OLMo 2 de Allen AI, expuesta en la libreria de Hugging Face como `Olmo2ForCausalLM`, es decir, un transformer decoder-only con atencion causal. Esta publicacion concreta no introduce ningun cambio arquitectonico: se limita a convertir los pesos originales a precision de 8 bits mediante el flujo de cuantizacion de MLX. La conversion declaro un tiempo de 6,03 segundos y genero un checkpoint de 1,7 GB en el repositorio.
 
 Sobre el entrenamiento del modelo base, la informacion proporcionada no incluye el numero de tokens, la composicion del dataset ni si hubo fases de RLHF o DPO. Esos detalles deberian consultarse en el articulo referenciado por la etiqueta `arxiv:2501.00656`, que corresponde a la publicacion de la familia OLMo 2. Tampoco se documenta en esta ficha ninguna innovacion de decodificacion (decodificacion especulativa, atencion lineal o similar); el unico elemento tecnico destacable aportado por el autor es la cuantizacion a 8 bits con un promedio de 8,25 bits por peso y su matriz de rendimiento estimada por tier de chip Apple Silicon.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificados de modelos de otras familias en la informacio
 | OLMo-2-0425-1B-chat-mlx-4bit | ~1,48B | 4.096 tokens | 4 bits | ~0,9 GB | Apache 2.0 | Repositorio del mismo autor |
 | OLMo-2-0425-1B-chat-mlx-8bit (este) | ~1,48B | 4.096 tokens | 8 bits (8,25 bits/peso) | ~1,5 GB (1,7 GB de repo) | Apache 2.0 | Repositorio del mismo autor |
 | OLMo-2-0425-1B-chat-mlx-16bit | ~1,48B | 4.096 tokens | 16 bits | ~2,8 GB | Apache 2.0 | Repositorio del mismo autor |
-| allenai/OLMo-2-0425-1B (base original) | ~1,48B | No confirmado en la informacion disponible | Sin cuantizar | No disponible | Apache 2.0 | HuggingFace, Allen AI |
+| allenai/OLMo-2-0425-1B (base original) | ~1,48B | No confirmado en la informacion disponible | Sin cuantizar | No disponible | Apache 2.0 | Hugging Face, Allen AI |
 
 Comparativa con alternativas de otras familias (por ejemplo modelos de ~1B a ~2B de otros laboratorios): no disponible en la informacion proporcionada. No se deben asumir ventajas o desventajas de rendimiento sin datos de benchmarks publicados.
 
@@ -106,7 +106,7 @@ Comparativa con alternativas de otras familias (por ejemplo modelos de ~1B a ~2B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/OLMo-2-0425-1B-chat-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/OLMo-2-0425-1B-chat-mlx-8bit
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Variante de 4 bits: https://huggingface.co/SirSahOl/OLMo-2-0425-1B-chat-mlx-4bit
 - Variante de 16 bits: https://huggingface.co/SirSahOl/OLMo-2-0425-1B-chat-mlx-16bit

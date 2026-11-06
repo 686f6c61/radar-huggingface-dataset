@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ishaansinghford/my-matching` contiene una implementacion funcional del modelo Blip orientada a tareas de matching, desarrollada por el usuario Ishaansinghford y publicada en HuggingFace. El objetivo declarado del proyecto es ofrecer un codigo transparente y pruebas de humo repetibles, sin reclamar resultados de benchmarks. Se trata de un checkpoint de inicializacion valido para pruebas tecnicas, no de un modelo entrenado para su uso en produccion.
+El repositorio `Ishaansinghford/my-matching` contiene una implementacion funcional del modelo Blip orientada a tareas de matching, desarrollada por el usuario Ishaansinghford y publicada en Hugging Face. El objetivo declarado del proyecto es ofrecer un codigo transparente y pruebas de humo repetibles, sin reclamar resultados de benchmarks. Se trata de un checkpoint de inicializacion valido para pruebas tecnicas, no de un modelo entrenado para su uso en produccion.
 
 La configuracion descrita en la documentacion es de tipo Blip con escala "giant", incluyendo atencion por grupos (grouped query attention), fusion Tucker y activacion aproximadamente GELU. Sin embargo, el archivo `model.safetensors` contiene unicamente 33.088 parametros totales, un dato muy inferior a lo que cabria esperar de una arquitectura "giant". La longitud de contexto no esta publicada y el modelo no registra capacidades funcionales de inferencia al carecer de entrenamiento.
 
@@ -72,5 +72,5 @@ No se dispone de modelos comparables en este estado concreto, ya que se trata de
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Ishaansinghford/my-matching
+- Pagina del modelo en Hugging Face: https://huggingface.co/Ishaansinghford/my-matching
 - No se han encontrado otros enlaces relevantes en la busqueda web. Los resultados obtenidos no guardan relacion con el modelo.

@@ -80,10 +80,10 @@ El autor indica que la dispersion entre ejecuciones de esta receta es de unos po
 
 | Modelo | Parametros | Contexto | CORE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Eugleo/climbmix-d26-10tpp-noright (este) | 972.947.456 | no disponible | 0,254207 | MIT | HuggingFace (`transformers`, `safetensors`) |
-| Eugleo/climbmix-d26-10tpp-nopol | heredado de la receta d26 | no disponible | no disponible | MIT | HuggingFace |
-| Eugleo/climbmix-d26-10tpp-noecon | heredado de la receta d26 | no disponible | no disponible | MIT | HuggingFace |
-| Eugleo/climbmix-d26-10tpp-nocrime | heredado de la receta d26 | no disponible | no disponible | MIT | HuggingFace |
+| Eugleo/climbmix-d26-10tpp-noright (este) | 972.947.456 | no disponible | 0,254207 | MIT | Hugging Face (`transformers`, `safetensors`) |
+| Eugleo/climbmix-d26-10tpp-nopol | heredado de la receta d26 | no disponible | no disponible | MIT | Hugging Face |
+| Eugleo/climbmix-d26-10tpp-noecon | heredado de la receta d26 | no disponible | no disponible | MIT | Hugging Face |
+| Eugleo/climbmix-d26-10tpp-nocrime | heredado de la receta d26 | no disponible | no disponible | MIT | Hugging Face |
 | exp-087 (d26-r10, corpus sin filtrar) | mismo presupuesto d26 | no disponible | 0,272 | no disponible | no publicado en la informacion |
 
 No se dispone de datos de benchmarks ni de especificaciones comparables con modelos externos de la misma categoria (por ejemplo, alternativas de ~1.000 millones de parametros) en la informacion proporcionada.
@@ -103,9 +103,9 @@ No se dispone de datos de benchmarks ni de especificaciones comparables con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eugleo/climbmix-d26-10tpp-noright
+- Modelo en Hugging Face: https://huggingface.co/Eugleo/climbmix-d26-10tpp-noright
 - Modelo companero (sin contenido politico): https://huggingface.co/Eugleo/climbmix-d26-10tpp-nopol
 - Modelo companero (sin contenido economico): https://huggingface.co/Eugleo/climbmix-d26-10tpp-noecon
 - Modelo companero (sin contenido de crimen): https://huggingface.co/Eugleo/climbmix-d26-10tpp-nocrime
 - Corpus base ClimbMix: https://huggingface.co/karpathy/climbmix-400b-shuffle
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo, su autoria o la familia nanochat CLEAN; los unicos recursos utiles son la propia pagina de HuggingFace y las referencias internas de la model card.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo, su autoria o la familia nanochat CLEAN; los unicos recursos utiles son la propia pagina de Hugging Face y las referencias internas de la model card.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ande-rson/review-neural-architecture-search` no es un modelo de lenguaje entrenado, sino un artefacto de investigación publicado en HuggingFace que contiene notas de lectura y el esbozo de un experimento sobre *Neural Architecture Search* (NAS). La propia model card lo declara explicitamente: se trata de un cuaderno exploratorio que describe el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta contra baselines emparejados y preguntas abiertas, sin afirmar mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado. Los dos unicos ficheros declarados son `analysis.md` (artefacto principal) y `README.md` (documentación).
+El repositorio `ande-rson/review-neural-architecture-search` no es un modelo de lenguaje entrenado, sino un artefacto de investigación publicado en Hugging Face que contiene notas de lectura y el esbozo de un experimento sobre *Neural Architecture Search* (NAS). La propia model card lo declara explicitamente: se trata de un cuaderno exploratorio que describe el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta contra baselines emparejados y preguntas abiertas, sin afirmar mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado. Los dos unicos ficheros declarados son `analysis.md` (artefacto principal) y `README.md` (documentación).
 
 El repositorio esta etiquetado con `safetensors` y `transformer`, y los pesos presentes suman 49.600 parametros en formato safetensors, una cifra compatible con un tensor de prueba o un artefacto residual del proceso de publicacion, no con un transformer funcional. El tamano del repositorio se registra como 0,0 GB. No hay pipeline declarado, no se declaran idiomas soportados y no existe informacion sobre tokenizador, configuracion de atencion, longitud de contexto ni datos de entrenamiento.
 
@@ -83,7 +83,7 @@ No hay modelos comparables en la informacion disponible, porque este repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ande-rson/review-neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/ande-rson/review-neural-architecture-search
 - Fichero principal de la nota: `analysis.md` (referenciado en la model card)
 - Documentacion: `README.md` del repositorio
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

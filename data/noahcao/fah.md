@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FAH (Fast and Accurate Hand Estimation in Pixels, Interaction and World Space) es un conjunto de pesos para la estimación y reconstrucción 3D de manos, desarrollado por Jinkun Cao (usuario `noahcao` en HuggingFace). El modelo resuelve el problema de recuperar la pose de la mano en tres espacios distintos: espacio de píxeles (2D), espacio de interacción (contacto mano-objeto y mano-mano) y espacio de mundo (coordenadas 3D globales), con especial énfasis en escenarios egocéntricos.
+FAH (Fast and Accurate Hand Estimation in Pixels, Interaction and World Space) es un conjunto de pesos para la estimación y reconstrucción 3D de manos, desarrollado por Jinkun Cao (usuario `noahcao` en Hugging Face). El modelo resuelve el problema de recuperar la pose de la mano en tres espacios distintos: espacio de píxeles (2D), espacio de interacción (contacto mano-objeto y mano-mano) y espacio de mundo (coordenadas 3D globales), con especial énfasis en escenarios egocéntricos.
 
 El repositorio contiene cuatro variantes del modelo de pose (FAH-S, FAH-B, FAH-L y FAH-H), junto con componentes auxiliares: un detector de manos, fitters para los modelos paramétricos MANO y MHR-Hand, un refinador de vídeo causal y un modelo de movimiento de cámara. Los pesos derivan de SAM 3D Body y DINOv3, y el conjunto total ocupa 9,9 GB.
 
@@ -66,7 +66,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FAH | no disponible | no disponible | Solo investigación, no comercial | HuggingFace + GitHub |
+| FAH | no disponible | no disponible | Solo investigación, no comercial | Hugging Face + GitHub |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,8 +83,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/noahcao/FAH
+- Hugging Face: https://huggingface.co/noahcao/FAH
 - GitHub (código, instalación y uso): https://github.com/noahcao/FAH
 - Guía de entrenamiento: `docs/training.md` dentro del repositorio de GitHub
-- Licencia: fichero `LICENSE` en el repositorio de HuggingFace
+- Licencia: fichero `LICENSE` en el repositorio de Hugging Face
 - Página del proyecto y enlace al paper: pendientes de añadir según la model card

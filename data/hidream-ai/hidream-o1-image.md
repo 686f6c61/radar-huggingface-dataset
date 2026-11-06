@@ -4,13 +4,13 @@
 
 HiDream-O1-Image es un modelo fundacional de generación de imágenes desarrollado por HiDream-ai, presentado en mayo de 2026 como un sistema unificado que opera directamente sobre píxeles en bruto. A diferencia de la mayoría de los generadores de imágenes actuales, no depende de un VAE externo ni de codificadores de texto separados: emplea un Transformer Unificado a Nivel de Píxel (UiT) que codifica píxeles, texto y condiciones específicas de tarea en un único espacio de tokens compartido. Esto le permite abordar text-to-image, edición por instrucciones, personalización basada en sujetos y generación de storyboards con una sola arquitectura.
 
-El modelo cuenta con 8,8 mil millones de parámetros y es capaz de sintetizar imágenes nativas de hasta 2048×2048 píxeles. Incluye un agente de prompt con razonamiento integrado que resuelve conocimiento implícito, disposición espacial y renderizado de texto antes de la generación. Según los tags de HuggingFace, la arquitectura se apoya en la familia Qwen3-VL. El repositorio principal ofrece dos variantes: el modelo completo (50 pasos de inferencia) y la versión destilada Dev (28 pasos), además de un refinador de prompts separado. La licencia MIT permite uso comercial sin restricciones, y el modelo se posiciona como una alternativa open-source competitiva frente a sistemas propietarios de gran tamaño.
+El modelo cuenta con 8,8 mil millones de parámetros y es capaz de sintetizar imágenes nativas de hasta 2048×2048 píxeles. Incluye un agente de prompt con razonamiento integrado que resuelve conocimiento implícito, disposición espacial y renderizado de texto antes de la generación. Según los tags de Hugging Face, la arquitectura se apoya en la familia Qwen3-VL. El repositorio principal ofrece dos variantes: el modelo completo (50 pasos de inferencia) y la versión destilada Dev (28 pasos), además de un refinador de prompts separado. La licencia MIT permite uso comercial sin restricciones, y el modelo se posiciona como una alternativa open-source competitiva frente a sistemas propietarios de gran tamaño.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Unificado a Nivel de Píxel (UiT), basado en Qwen3-VL según tags de HuggingFace |
+| Arquitectura | Transformer Unificado a Nivel de Píxel (UiT), basado en Qwen3-VL según tags de Hugging Face |
 | Parametros totales | 8.804.887.792 (8,8B) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible (soporta generacion de imagenes hasta 2048×2048 píxeles) |
@@ -21,7 +21,7 @@ El modelo cuenta con 8,8 mil millones de parámetros y es capaz de sintetizar im
 
 ## Arquitectura y entrenamiento
 
-HiDream-O1-Image introduce una arquitectura de Transformer unificado a nivel de píxel (UiT) que elimina los componentes modulares típicos de los modelos de difusión. En lugar de un VAE latente y un codificador de texto independiente, el modelo tokeniza directamente los píxeles en bruto junto con el texto y las condiciones de tarea en un espacio de tokens compartido. Esto permite que una única red procese múltiples tareas de generación y edición sin adaptadores específicos. El tag `qwen3_vl` en HuggingFace sugiere que la base arquitectónica proviene de la familia Qwen3-VL, aunque la model card no detalla la composición exacta del backbone.
+HiDream-O1-Image introduce una arquitectura de Transformer unificado a nivel de píxel (UiT) que elimina los componentes modulares típicos de los modelos de difusión. En lugar de un VAE latente y un codificador de texto independiente, el modelo tokeniza directamente los píxeles en bruto junto con el texto y las condiciones de tarea en un espacio de tokens compartido. Esto permite que una única red procese múltiples tareas de generación y edición sin adaptadores específicos. El tag `qwen3_vl` en Hugging Face sugiere que la base arquitectónica proviene de la familia Qwen3-VL, aunque la model card no detalla la composición exacta del backbone.
 
 El modelo incorpora un agente de prompt con razonamiento (Reasoning-Driven Prompt Agent) que actúa como una fase de "pensamiento" previa a la generación: resuelve conocimiento implícito, organiza la disposición espacial y planifica el renderizado de texto largo antes de que el generador produzca la imagen. La variante Dev es una versión destilada que reduce los pasos de inferencia de 50 a 28 sin pérdida significativa de calidad, según los autores. Los detalles sobre el dataset de entrenamiento, el número de tokens y el proceso de alineación (RLHF, DPO, etc.) no se han publicado en la información disponible; el informe técnico está disponible en arXiv (2605.11061) pero su contenido no se ha extraído aquí.
 
@@ -93,13 +93,13 @@ La model card afirma que HiDream-O1-Image alcanza paridad o supera a modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HiDream-ai/HiDream-O1-Image
+- Modelo en Hugging Face: https://huggingface.co/HiDream-ai/HiDream-O1-Image
 - Variante Dev: https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev
 - Variante Dev-2604: https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev-2604
 - Prompt Agent (gemma-4-31B-it): https://huggingface.co/google/gemma-4-31B-it
 - Prompt Refiner (Prompt-Refine): https://huggingface.co/HiDream-ai/Prompt-Refine
 - Informe tecnico (arXiv): https://arxiv.org/pdf/2605.11061v1
 - Repositorio GitHub: https://github.com/HiDream-ai/HiDream-O1-Image
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image
 - Demo Dev en Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image-Dev
 - Comunidad Discord: https://discord.gg/7ZEnPxdTQ

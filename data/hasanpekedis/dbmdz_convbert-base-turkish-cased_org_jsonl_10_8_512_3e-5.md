@@ -4,7 +4,7 @@
 
 El modelo `HasanPekedis/dbmdz_convbert-base-turkish-cased_org_jsonl_10_8_512_3e-5` es un ajuste fino de token classification para reconocimiento de entidades nombradas (NER) en turco, restringido exclusivamente a la entidad **ORG** (organizaciones). Parte del checkpoint `dbmdz/convbert-base-turkish-cased`, un encoder de tipo ConvBERT entrenado en turco, y ha sido ajustado por el usuario HasanPekedis sobre un corpus en formato JSONL. Cuenta con 106.817.931 parametros (aproximadamente 106,8 millones), pesos en formato safetensors y un tamano de repositorio de 0,4 GB.
 
-El problema que resuelve es concreto y acotado: extraer menciones de organizaciones (clubes deportivos, ligas, medios de comunicacion, universidades, empresas) de texto turco, con etiquetas BIO de tres clases (`O`, `B-ORG`, `I-ORG`) y una longitud maxima de secuencia de 512 tokens. Su relevancia es practica: se trata de un componente listo para tareas de extraccion de informacion en pipelines de NLP turco, con una F1 de 0,9142 en el conjunto de test (2558 menciones de soporte), aunque el repositorio no declara licencia, idiomas ni pipeline en los metadatos de HuggingFace y acumula 0 descargas y 0 likes en el momento de la consulta.
+El problema que resuelve es concreto y acotado: extraer menciones de organizaciones (clubes deportivos, ligas, medios de comunicacion, universidades, empresas) de texto turco, con etiquetas BIO de tres clases (`O`, `B-ORG`, `I-ORG`) y una longitud maxima de secuencia de 512 tokens. Su relevancia es practica: se trata de un componente listo para tareas de extraccion de informacion en pipelines de NLP turco, con una F1 de 0,9142 en el conjunto de test (2558 menciones de soporte), aunque el repositorio no declara licencia, idiomas ni pipeline en los metadatos de Hugging Face y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Es importante senalar que la model card reporta una F1 de validacion de 0,998325 en la epoca 10, muy superior a la F1 de test (0,9142), lo que sugiere un desajuste entre validacion y test o un posible sobreajuste al conjunto de validacion. El modelo no es generativo ni conversacional: es un clasificador de tokens de 106,8 M de parametros, pensado para inferencia de encoder, no para generacion de texto.
 
@@ -17,12 +17,12 @@ Es importante senalar que la model card reporta una F1 de validacion de 0,998325
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 512 tokens (maximo de secuencia de entrenamiento) |
 | Tipos de cuantizacion | no disponible (no se publican versiones cuantizadas; pesos distribuidos en safetensors) |
-| Idiomas soportados | turco (segun la model card); los metadatos de HuggingFace indican "no disponible" |
+| Idiomas soportados | turco (segun la model card); los metadatos de Hugging Face indican "no disponible" |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tarea | token classification (NER) |
 | Entidades | ORG unicamente (etiquetas `O`, `B-ORG`, `I-ORG`) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,4 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -98,10 +98,10 @@ No se han publicado comparaciones con MMLU, HumanEval, GSM8K ni otros benchmarks
 
 | Modelo | Parametros | Contexto | Tarea / entidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HasanPekedis/dbmdz_convbert-base-turkish-cased_org_jsonl_10_8_512_3e-5 | 106,8 M (dato verificado en safetensors) | 512 tokens | NER turco, solo ORG | no disponible | HuggingFace, 0 descargas |
-| dbmdz/convbert-base-turkish-cased (modelo base) | no disponible en la informacion proporcionada | no disponible | modelo de lenguaje enmascarado en turco, sin cabeza NER | no disponible en la informacion proporcionada | HuggingFace |
-| dbmdz/bert-base-turkish-cased | no disponible en la informacion proporcionada | no disponible | modelo de lenguaje enmascarado en turco, base habitual de NER turco | no disponible en la informacion proporcionada | HuggingFace |
-| XLM-RoBERTa-base | no disponible en la informacion proporcionada | no disponible | modelo multilingue, base frecuente para NER multilingue | no disponible en la informacion proporcionada | HuggingFace |
+| HasanPekedis/dbmdz_convbert-base-turkish-cased_org_jsonl_10_8_512_3e-5 | 106,8 M (dato verificado en safetensors) | 512 tokens | NER turco, solo ORG | no disponible | Hugging Face, 0 descargas |
+| dbmdz/convbert-base-turkish-cased (modelo base) | no disponible en la informacion proporcionada | no disponible | modelo de lenguaje enmascarado en turco, sin cabeza NER | no disponible en la informacion proporcionada | Hugging Face |
+| dbmdz/bert-base-turkish-cased | no disponible en la informacion proporcionada | no disponible | modelo de lenguaje enmascarado en turco, base habitual de NER turco | no disponible en la informacion proporcionada | Hugging Face |
+| XLM-RoBERTa-base | no disponible en la informacion proporcionada | no disponible | modelo multilingue, base frecuente para NER multilingue | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre este modelo y alternativas turcas de NER en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de F1 con otros checkpoints.
 
@@ -122,7 +122,7 @@ No se dispone de datos de rendimiento comparativos entre este modelo y alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HasanPekedis/dbmdz_convbert-base-turkish-cased_org_jsonl_10_8_512_3e-5
+- Modelo en Hugging Face: https://huggingface.co/HasanPekedis/dbmdz_convbert-base-turkish-cased_org_jsonl_10_8_512_3e-5
 - Modelo base: https://huggingface.co/dbmdz/convbert-base-turkish-cased
 - Paper de la arquitectura ConvBERT (referencia generica de la familia, no citada en la model card): https://arxiv.org/abs/2008.02496
 - Resultados de busqueda web: no disponible (las busquedas devolvieron unicamente PDFs de matematicas sin relacion con el modelo)

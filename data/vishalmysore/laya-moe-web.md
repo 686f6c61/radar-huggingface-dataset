@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VishalMysore/laya-moe-web es un repositorio de modelo publicado en HuggingFace por el usuario VishalMysore el 25 de septiembre de 2026. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia Apache 2.0 y no incluye ninguna descripcion funcional, especificacion tecnica, resultado de evaluacion ni instrucciones de uso. El repositorio acumula 0 descargas y 0 "likes", y no tiene definido un pipeline de inferencia en la plataforma.
+VishalMysore/laya-moe-web es un repositorio de modelo publicado en Hugging Face por el usuario VishalMysore el 25 de septiembre de 2026. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia Apache 2.0 y no incluye ninguna descripcion funcional, especificacion tecnica, resultado de evaluacion ni instrucciones de uso. El repositorio acumula 0 descargas y 0 "likes", y no tiene definido un pipeline de inferencia en la plataforma.
 
 La ausencia de documentacion impide confirmar la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados o los datos de entrenamiento. El propio identificador incluye la cadena "moe", lo que sugiere una posible arquitectura de mezcla de expertos, pero se trata de una inferencia a partir del nombre y no de un dato verificado en la informacion disponible. Tampoco hay evidencia de que se hayan publicado pesos en formato utilizable (safetensors, GGUF u otros).
 
@@ -93,6 +93,6 @@ No disponible. Al no existir datos de parametros, contexto, rendimiento ni forma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VishalMysore/laya-moe-web
+- Hugging Face: https://huggingface.co/VishalMysore/laya-moe-web
 
 No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios de codigo o demos.

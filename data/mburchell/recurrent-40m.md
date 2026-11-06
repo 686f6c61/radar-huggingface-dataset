@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`recurrent-40m` es un modelo de lenguaje experimental de 40 millones de parámetros desarrollado por el usuario independiente mburchell y publicado en HuggingFace bajo licencia CC BY-SA 4.0. Se trata de un transformer estilo Llama construido desde cero que incorpora un mecanismo de recurrencia: las seis capas internas se ejecutan dos veces (un solo bucle), una técnica que busca aumentar la profundidad efectiva de la red sin incrementar el número de parámetros. El modelo emplea una anchura de 512 dimensiones, SwiGLU, atención con consultas agrupadas (GQA) y una longitud de contexto de 1024 tokens.
+`recurrent-40m` es un modelo de lenguaje experimental de 40 millones de parámetros desarrollado por el usuario independiente mburchell y publicado en Hugging Face bajo licencia CC BY-SA 4.0. Se trata de un transformer estilo Llama construido desde cero que incorpora un mecanismo de recurrencia: las seis capas internas se ejecutan dos veces (un solo bucle), una técnica que busca aumentar la profundidad efectiva de la red sin incrementar el número de parámetros. El modelo emplea una anchura de 512 dimensiones, SwiGLU, atención con consultas agrupadas (GQA) y una longitud de contexto de 1024 tokens.
 
 El modelo fue preentrenado con aproximadamente 15.000 millones de tokens del subconjunto FineWeb-Edu-dedup del corpus SmolLM, utilizando el optimizador Muon, y posteriormente ajustado con instrucciones conversacionales a partir de SQuAD 1.1, Smol-SmolTalk, Everyday Conversations y bAbI QA. Dispone de un vocabulario propio de 24.000 tokens con operadores de mayúsculas y sigue la plantilla de chat de Llama-3.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mburchell/recurrent-40m | 40M | 1024 | Transformer con recurrencia (loop de 6 capas) | CC BY-SA 4.0 | HuggingFace, safetensors con custom_code |
-| SmolLM-135M (HuggingFaceTB) | 135M | 2048 | Transformer decoder-only | Apache 2.0 | HuggingFace, múltiples formatos |
-| SmolLM2-135M (HuggingFaceTB) | 135M | 8192 | Transformer decoder-only | Apache 2.0 | HuggingFace, GGUF y safetensors |
-| TinyLlama-1.1B | 1,1B | 2048 | Transformer estilo Llama | Apache 2.0 | HuggingFace, GGUF y safetensors |
+| mburchell/recurrent-40m | 40M | 1024 | Transformer con recurrencia (loop de 6 capas) | CC BY-SA 4.0 | Hugging Face, safetensors con custom_code |
+| SmolLM-135M (HuggingFaceTB) | 135M | 2048 | Transformer decoder-only | Apache 2.0 | Hugging Face, múltiples formatos |
+| SmolLM2-135M (HuggingFaceTB) | 135M | 8192 | Transformer decoder-only | Apache 2.0 | Hugging Face, GGUF y safetensors |
+| TinyLlama-1.1B | 1,1B | 2048 | Transformer estilo Llama | Apache 2.0 | Hugging Face, GGUF y safetensors |
 
 La comparación directa es limitada: `recurrent-40m` es un experimento de investigación sin benchmarks publicados, mientras que SmolLM-135M y SmolLM2-135M son modelos de referencia con evaluación pública y soporte amplio de herramientas. La ventaja diferencial de `recurrent-40m` es su arquitectura recurrente y su tamaño mínimo; sus desventajas son el contexto corto (1024 frente a 2048-8192), la ausencia de cuantizaciones listas para usar y una licencia copyleft (CC BY-SA 4.0) que exige compartir obras derivadas bajo la misma licencia.
 
@@ -88,7 +88,7 @@ La comparación directa es limitada: `recurrent-40m` es un experimento de invest
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mburchell/recurrent-40m
+- Modelo en Hugging Face: https://huggingface.co/mburchell/recurrent-40m
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset SQuAD 1.1: https://huggingface.co/datasets/rajpurkar/squad
 - Dataset Smol-SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

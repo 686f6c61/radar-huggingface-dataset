@@ -89,7 +89,7 @@ La unica comparacion cuantitativa disponible es contra el propio modelo base `pr
 - Longitud de contexto limitada a 128 tokens: consultas largas se truncan.
 - Restriccion dura en ONNX: los grafos exportados solo aceptan batch size 1 y fallan con cualquier entrada de mas de una fila (`Shape mismatch attempting to re-use buffer. {1,128,128} != {2,128,128}`). Hay que iterar consulta a consulta o usar el encoder de `transformers`. El eje de secuencia si es dinamico.
 - Licencia no disponible: no puede asumirse uso comercial sin conocer los terminos.
-- Idioma no declarado en la ficha de HuggingFace; el entrenamiento parte de un pool de hechos verificado cuya composicion linguistica no se especifica.
+- Idioma no declarado en la ficha de Hugging Face; el entrenamiento parte de un pool de hechos verificado cuya composicion linguistica no se especifica.
 - El corpus incluye filas de Open Trivia DB sujetas a licencia CC-BY-SA 4.0, dato relevante para la redistribucion.
 - Modelo con 0 descargas y 0 likes: sin validacion externa de la comunidad en el momento del analisis.
 - Riesgo de falso positivo si el corpus almacenado contiene preguntas muy parecidas entre si; conviene calibrar el umbral de coseno.
@@ -98,7 +98,7 @@ La unica comparacion cuantitativa disponible es contra el propio modelo base `pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isaxtsystems/isaxt-quiz-embeddings-v5
+- Modelo en Hugging Face: https://huggingface.co/isaxtsystems/isaxt-quiz-embeddings-v5
 - Modelo base: https://huggingface.co/prajjwal1/bert-tiny
 - Scripts referenciados en la model card: `ml/scripts/verify_onnx_roundtrip.py`, `train_embeddings.py`, `evaluate_retrieval.py --v2` (sin URL publica indicada)
 - Paper, blog, repositorio o demo adicionales: no disponible

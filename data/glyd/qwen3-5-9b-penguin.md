@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-penguin es un artefacto de compresion sin perdida de los pesos del modelo Qwen/Qwen3.5-9B, publicado por el usuario glyd en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino de una redistribucion de los pesos originales (commit c2022362) almacenados en el formato propietario de Glyd en su nivel "penguin". El resultado ocupa 11,85 GiB en disco frente a los 16,68 GiB del checkpoint bf16 original, manteniendo la propiedad de que cada peso se decodifica exactamente a su valor bf16, bit a bit.
+Qwen3.5-9B-penguin es un artefacto de compresion sin perdida de los pesos del modelo Qwen/Qwen3.5-9B, publicado por el usuario glyd en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de una redistribucion de los pesos originales (commit c2022362) almacenados en el formato propietario de Glyd en su nivel "penguin". El resultado ocupa 11,85 GiB en disco frente a los 16,68 GiB del checkpoint bf16 original, manteniendo la propiedad de que cada peso se decodifica exactamente a su valor bf16, bit a bit.
 
 El problema que resuelve es el almacenamiento y la transferencia de checkpoints de gran tamano sin degradar la calidad numerica. A diferencia de una cuantizacion tradicional con perdida (por ejemplo, formatos de 8, 6,5 o 5,5 bits por peso que introducen error), el nivel penguin promete reconstruccion exacta. El repositorio ocupa 12,7 GB y declara 8.953.803.264 parametros reales (el "Model size" del Hub muestra 11,67B porque cuenta cada byte empaquetado como un parametro).
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tamano en disco | Tipo de compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glyd/Qwen3.5-9B-penguin | 8,95B reales | 11,85 GiB | Sin perdida, bit a bit | Pesos apache-2.0 / runtime BUSL-1.1 | HuggingFace, runtime Glyd |
-| glyd/Qwen3.5-9B-kestrel | 8,95B reales | No disponible | ~6,5 bits por peso | Pesos apache-2.0 / runtime BUSL-1.1 | HuggingFace, runtime Glyd |
-| glyd/Qwen3.5-9B-swift | 8,95B reales | No disponible | ~5,5 bits por peso | Pesos apache-2.0 / runtime BUSL-1.1 | HuggingFace, runtime Glyd |
-| Qwen/Qwen3.5-9B (bf16) | 8,95B reales | 16,68 GiB | Sin compresion | apache-2.0 | HuggingFace |
+| glyd/Qwen3.5-9B-penguin | 8,95B reales | 11,85 GiB | Sin perdida, bit a bit | Pesos apache-2.0 / runtime BUSL-1.1 | Hugging Face, runtime Glyd |
+| glyd/Qwen3.5-9B-kestrel | 8,95B reales | No disponible | ~6,5 bits por peso | Pesos apache-2.0 / runtime BUSL-1.1 | Hugging Face, runtime Glyd |
+| glyd/Qwen3.5-9B-swift | 8,95B reales | No disponible | ~5,5 bits por peso | Pesos apache-2.0 / runtime BUSL-1.1 | Hugging Face, runtime Glyd |
+| Qwen/Qwen3.5-9B (bf16) | 8,95B reales | 16,68 GiB | Sin compresion | apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glyd/Qwen3.5-9B-penguin
+- Modelo en Hugging Face: https://huggingface.co/glyd/Qwen3.5-9B-penguin
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Commit del modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B/tree/c202236235762e1c871ad0ccb60c8ee5ba337b9a
 - Nivel kestrel: https://huggingface.co/glyd/Qwen3.5-9B-kestrel

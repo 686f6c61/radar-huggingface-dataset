@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) del checkpoint `francesca9805/ppt-wc-uniform-newlex-rus-before-100mb-packed-bfdiso_seed455`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generación de texto de pequeno tamano, con 124.770.816 parametros totales, construido sobre la arquitectura GPT-2 segun la etiqueta declarada en el repositorio. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace, con Transformers 4.56.2 y PyTorch 2.11.0.
+Este modelo es un ajuste fino (fine-tuning) del checkpoint `francesca9805/ppt-wc-uniform-newlex-rus-before-100mb-packed-bfdiso_seed455`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generación de texto de pequeno tamano, con 124.770.816 parametros totales, construido sobre la arquitectura GPT-2 segun la etiqueta declarada en el repositorio. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face, con Transformers 4.56.2 y PyTorch 2.11.0.
 
 El modelo forma parte de una familia de experimentos aparentemente centrada en tokenizadores y en el procesamiento de datos a escala reducida, a juzgar por el nombre del proyecto de Weights & Biases asociado ("new-tokenizers") y por los identificadores de los checkpoints ("100mb", "packed", "seed455"). El nombre incluye el sufijo "rus", que sugiere un enfoque sobre el idioma ruso, aunque el repositorio no declara idiomas soportados de forma explicita. No se ha publicado informacion sobre el dataset de entrenamiento, el numero de tokens ni la composicion de los datos.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455 | 124.770.816 | no disponible | no disponible | HuggingFace (0 descargas) |
+| rus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455 | 124.770.816 | no disponible | no disponible | Hugging Face (0 descargas) |
 | GPT-2 small (OpenAI) | 124 M aprox. | 1024 tokens | licencia tipo MIT (modified MIT) | ampliamente disponible |
-| distilgpt2 (HuggingFace) | 82 M aprox. | 1024 tokens | Apache-2.0 | ampliamente disponible |
-| SmolLM-135M (HuggingFace) | 135 M aprox. | 2048 tokens | Apache-2.0 | ampliamente disponible |
+| distilgpt2 (Hugging Face) | 82 M aprox. | 1024 tokens | Apache-2.0 | ampliamente disponible |
+| SmolLM-135M (Hugging Face) | 135 M aprox. | 2048 tokens | Apache-2.0 | ampliamente disponible |
 
 Los datos de los modelos comparativos corresponden a informacion publica ampliamente conocida. Para el modelo objeto de esta ficha no hay datos de rendimiento publicados, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -91,7 +91,7 @@ Los datos de los modelos comparativos corresponden a informacion publica ampliam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/rus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
+- Hugging Face: https://huggingface.co/francesca9805/rus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-rus-before-100mb-packed-bfdiso_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/66bw0fls
 - Repositorio de TRL: https://github.com/huggingface/trl

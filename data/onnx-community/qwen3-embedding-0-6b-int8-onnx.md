@@ -78,7 +78,7 @@ Desglose de retencion de calidad reportado por el autor: similitud semantica 99,
 - CPU: cualquier CPU moderna x86_64 o ARM64, sin necesidad de acelerador.
 - GPU: soporte opcional de CUDA, ROCm y MPS; no es imprescindible.
 - Cabe sin problema en GPU de consumo: cualquier RTX con 4 GB o mas de VRAM, e incluso en GPUs integradas, dado el reducido tamano del modelo.
-- Opciones de despliegue: transformers.js (navegador, con WebGPU o WASM), ONNX Runtime, HuggingFace Transformers con Optimum, Text Embeddings Inference (TEI) y llama.cpp o qwen3-embed para variantes GGUF. El soporte en vLLM y Ollama no esta documentado en la informacion disponible.
+- Opciones de despliegue: transformers.js (navegador, con WebGPU o WASM), ONNX Runtime, Hugging Face Transformers con Optimum, Text Embeddings Inference (TEI) y llama.cpp o qwen3-embed para variantes GGUF. El soporte en vLLM y Ollama no esta documentado en la informacion disponible.
 - Throughput y latencia: no se proporcionan cifras absolutas; solo se indica una mejora de velocidad de aproximadamente el 15% respecto a la version FP16.
 
 ## Comparativa con modelos similares
@@ -107,7 +107,7 @@ Las cifras de rendimiento comparativo entre estas variantes no estan disponibles
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onnx-community/Qwen3-Embedding-0.6B-INT8-ONNX
+- Modelo en Hugging Face: https://huggingface.co/onnx-community/Qwen3-Embedding-0.6B-INT8-ONNX
 - Modelo base cuantizado: https://huggingface.co/techAInewb/Qwen3-Embedding-0.6B-INT8
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Version ONNX sin cuantizar: https://huggingface.co/onnx-community/Qwen3-Embedding-0.6B-ONNX

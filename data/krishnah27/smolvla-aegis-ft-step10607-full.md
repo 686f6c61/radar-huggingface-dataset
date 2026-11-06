@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La re
 
 | Modelo | Parametros | Formato | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| krishnah27/smolvla-aegis-ft-step10607-full | 450.046.176 | safetensors (bf16, LoRA fusionado) | VLA (politica robotica) | no disponible | no disponible | HuggingFace |
-| krishnah27/smolvla-aegis-ft | no disponible (etiquetado como SmolVLA-500M) | no disponible (PEFT/LoRA r=16) | VLA (politica robotica) | no disponible | no disponible | HuggingFace |
-| krishnah27/smolvla-aegis-ft-step10607 | no disponible | no disponible (PEFT/adapter) | VLA (politica robotica) | no disponible | no disponible | HuggingFace |
-| SmolVLA (modelo base, Hugging Face) | no disponible | no disponible | VLA (politica robotica) | no disponible | no disponible | HuggingFace / arXiv:2506.01844 |
+| krishnah27/smolvla-aegis-ft-step10607-full | 450.046.176 | safetensors (bf16, LoRA fusionado) | VLA (politica robotica) | no disponible | no disponible | Hugging Face |
+| krishnah27/smolvla-aegis-ft | no disponible (etiquetado como SmolVLA-500M) | no disponible (PEFT/LoRA r=16) | VLA (politica robotica) | no disponible | no disponible | Hugging Face |
+| krishnah27/smolvla-aegis-ft-step10607 | no disponible | no disponible (PEFT/adapter) | VLA (politica robotica) | no disponible | no disponible | Hugging Face |
+| SmolVLA (modelo base, Hugging Face) | no disponible | no disponible | VLA (politica robotica) | no disponible | no disponible | Hugging Face / arXiv:2506.01844 |
 
 Los tres checkpoints de la serie AEGIS comparten la misma base (SmolVLA, ~450-500 M) y se diferencian en el formato de publicacion: el presente repositorio entrega pesos completos fusionados, mientras que `smolvla-aegis-ft` y `smolvla-aegis-ft-step10607` se publican con adaptadores PEFT. No se dispone de datos de rendimiento para comparar objetivamente ninguno de ellos.
 
@@ -82,7 +82,7 @@ Los tres checkpoints de la serie AEGIS comparten la misma base (SmolVLA, ~450-50
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krishnah27/smolvla-aegis-ft-step10607-full
+- Modelo en Hugging Face: https://huggingface.co/krishnah27/smolvla-aegis-ft-step10607-full
 - Repositorio hermano con adaptador PEFT: https://huggingface.co/krishnah27/smolvla-aegis-ft-step10607
 - Repositorio base de la serie AEGIS: https://huggingface.co/krishnah27/smolvla-aegis-ft
 - Articulo de SmolVLA: https://arxiv.org/abs/2506.01844

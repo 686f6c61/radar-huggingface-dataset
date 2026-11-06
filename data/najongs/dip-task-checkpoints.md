@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Najongs/dip-task-checkpoints` | No disponible (trunk ViT-B/16, ~86 M) | Imagen; resolucion no disponible | Deteccion de pose por heatmaps en robotica | DINOv3 License | HuggingFace, 0 descargas, sin documentacion tecnica |
+| `Najongs/dip-task-checkpoints` | No disponible (trunk ViT-B/16, ~86 M) | Imagen; resolucion no disponible | Deteccion de pose por heatmaps en robotica | DINOv3 License | Hugging Face, 0 descargas, sin documentacion tecnica |
 | DINOv3 ViT-B/16 (Meta) | ~86 M | Imagen; resoluciones multiples | Vision auto-supervisada, features densas | DINOv3 License | Pesos oficiales publicados por Meta |
 | DINOv2 ViT-B/14 (Meta) | ~86 M | Imagen; 224-518 px tipicos | Vision auto-supervisada, features densas | Apache 2.0 (DINOv2) | Ampliamente adoptado, ecosistema maduro |
 | Baselines de pose 6D (p. ej. FoundationPose) | No disponible | RGB/RGB-D | Estimacion de pose 6D de objetos | No disponible en esta busqueda | Implementaciones de referencia publicadas |
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas dentr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Najongs/dip-task-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/Najongs/dip-task-checkpoints
 - Licencia DINOv3: https://ai.meta.com/resources/models-and-libraries/dinov3-license/
 - Perfil de GitHub del autor: https://github.com/Najongs
 - Perfil de Weights & Biases del autor: https://wandb.ai/profile/najyeol99

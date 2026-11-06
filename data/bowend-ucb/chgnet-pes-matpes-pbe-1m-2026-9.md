@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CHGNet-PES-MatPES-PBE-1M-2026.9 es un potencial interatomico universal (machine learning interatomic potential, MLIP) basado en una red neuronal de grafos CHGNet, desarrollado por el usuario BowenD-UCB y publicado en HuggingFace Hub para el backend de PyTorch Geometric (PyG) de la libreria MatGL. No es un modelo de lenguaje: su funcion es predecir la energia, las fuerzas, el tensor de tensiones y los momentos magneticos de estructuras cristalinas a partir de sus posiciones atomicas, sustituyendo a la DFT en tareas de simulacion atomistica.
+CHGNet-PES-MatPES-PBE-1M-2026.9 es un potencial interatomico universal (machine learning interatomic potential, MLIP) basado en una red neuronal de grafos CHGNet, desarrollado por el usuario BowenD-UCB y publicado en Hugging Face Hub para el backend de PyTorch Geometric (PyG) de la libreria MatGL. No es un modelo de lenguaje: su funcion es predecir la energia, las fuerzas, el tensor de tensiones y los momentos magneticos de estructuras cristalinas a partir de sus posiciones atomicas, sustituyendo a la DFT en tareas de simulacion atomistica.
 
 El modelo es una version compacta del CHGNet estandar: 1.083.842 parametros (aproximadamente 1 M) frente a los 2,7 M del baseline, con `num_blocks=4`, `dim=128` y `conv_hidden_dims=[64]`. Fue entrenado desde cero con autograd continuo de tres cuerpos sobre el conjunto MatPES PBE 2024.11 (434.712 estructuras) y, segun la model card, supera al baseline de 2,7 M en error de energia, fuerza y momento magnetico sobre el split de test oficial, con un coste de parametros aproximadamente 2,5 veces menor.
 
@@ -98,7 +98,7 @@ Los datos del baseline CHGNet-2.7M proceden de la propia model card. Para M3GNet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BowenD-UCB/CHGNet-PES-MatPES-PBE-1M-2026.9
+- Modelo en Hugging Face: https://huggingface.co/BowenD-UCB/CHGNet-PES-MatPES-PBE-1M-2026.9
 - Repositorio de MatGL: https://github.com/materialyzeai/matgl
 - Dataset MatPES: https://huggingface.co/datasets/materialyze/matpes
 - Paper del dataset MatPES: https://doi.org/10.48550/arXiv.2503.04070 (arXiv:2503.04070)

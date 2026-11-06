@@ -85,7 +85,7 @@ La comparativa se limita a los modelos de la misma familia de organismos, ya que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-dpo-unmixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-dpo-unmixed
 - Repositorio GitHub del proyecto Model Organism Lottery: https://github.com/model-organisms-for-real/model-organism-lottery
 - Paper en arXiv: https://arxiv.org/html/2607.01033
 - Modelo base OLMo-2-0425-1B-DPO: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO

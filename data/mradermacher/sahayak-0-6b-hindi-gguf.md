@@ -30,7 +30,7 @@ La cuantización realizada por mradermacher es estática (sin imatrix) y se limi
 - Generación de texto conversacional: el tag "conversational" sugiere que el modelo está diseñado para mantener diálogos, aunque no se han verificado sus habilidades específicas.
 - Soporte de tool calling / function calling: no disponible (no se menciona).
 - Soporte de agentes y multi-step reasoning: no disponible.
-- Capacidades multilingües: no se confirma; el nombre indica hindi, pero el tag de idioma en HuggingFace es "en" (inglés), por lo que es probable que el modelo sea monolingüe en hindi o bilingüe hindi-inglés, sin datos concretos.
+- Capacidades multilingües: no se confirma; el nombre indica hindi, pero el tag de idioma en Hugging Face es "en" (inglés), por lo que es probable que el modelo sea monolingüe en hindi o bilingüe hindi-inglés, sin datos concretos.
 - Capacidades especiales: no se han documentado.
 
 ## Casos de uso
@@ -77,7 +77,7 @@ No se dispone de una comparativa con otros modelos del mismo tamaño para hindi.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/mradermacher/sahayak-0.6b-hindi-GGUF)
+- [Página del modelo en Hugging Face](https://huggingface.co/mradermacher/sahayak-0.6b-hindi-GGUF)
 - [Modelo base original](https://huggingface.co/saikumargangi/sahayak-0.6b-hindi)
 - [Referencia de cuantización de mradermacher](https://huggingface.co/mradermacher/model_requests)
 - [Proyecto Sahayak AI en GitHub](https://github.com/jagrutideshmukh21/Sahayak-Ai-Assistant) (relacionado, no el modelo)

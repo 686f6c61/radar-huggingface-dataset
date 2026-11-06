@@ -81,6 +81,6 @@ No se dispone de información sobre modelos comparables específicos para la tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dtcolligan/suitesmith-qwen3.5-4b-run1-step20
+- Modelo en Hugging Face: https://huggingface.co/dtcolligan/suitesmith-qwen3.5-4b-run1-step20
 - Repositorio del entorno `suitesmith`: https://github.com/dtcolligan/suitesmith
 - Documentación de Qwen3.5 en Unsloth (referencia general del modelo base): https://unsloth.ai/docs/models/qwen3.5

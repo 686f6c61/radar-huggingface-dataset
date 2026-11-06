@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sophialewisvot/matching-demo` es un repositorio de HuggingFace que contiene una implementacion propia y minima de **BEiT** (Bert-like Image Transformer) orientada a una tarea de *matching*, acompanada de una configuracion de arquitectura explicita y un checkpoint de inicializacion. No es una release de un modelo entrenado: el propio autor indica en la model card que el fichero `model.safetensors` es un punto de partida valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`sophialewisvot/matching-demo` es un repositorio de Hugging Face que contiene una implementacion propia y minima de **BEiT** (Bert-like Image Transformer) orientada a una tarea de *matching*, acompanada de una configuracion de arquitectura explicita y un checkpoint de inicializacion. No es una release de un modelo entrenado: el propio autor indica en la model card que el fichero `model.safetensors` es un punto de partida valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El peso real declarado en safetensors es de **24.832 parametros totales**, lo que situa al modelo en la categoria *tiny*. La arquitectura declarada combina atencion dilatada, fusion de tensores (*tensor fusion*), activacion swish y normalizacion InstanceNorm, con optimizador NovoGrad y planificador de tipo *step* como receta por defecto. Se trata, por tanto, de un artefacto de investigacion reproducible mas que de un modelo listo para produccion.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y muy acotada: sirve como plantilla reproducibl
 | Activacion | swish |
 | Normalizacion | InstanceNorm |
 | Optimizador por defecto | NovoGrad con planificador *step* |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creacion | 2026-09-20 |
 | Ultima actualizacion | 2026-09-20 |
 
@@ -33,7 +33,7 @@ Su relevancia actual es limitada y muy acotada: sirve como plantilla reproducibl
 
 La arquitectura es una implementacion propia de BEiT, la familia de transformadores de vision que aplica un preentrenamiento de tipo BERT sobre *patches* de imagen. En esta variante concreta se declaran cuatro decisiones tecnicas: atencion dilatada (que amplia el campo receptivo sin incrementar linealmente el coste), *tensor fusion* como mecanismo de combinacion de representaciones, activacion swish y normalizacion InstanceNorm en lugar de LayerNorm. El modelo se etiqueta como escala *tiny* y cuenta con 24.832 parametros, un orden de magnitud muy inferior al de cualquier BEiT base o ViT base.
 
-No hay informacion sobre datos de entrenamiento: no se indica numero de tokens, composicion del dataset, resolucion de imagen, ni si hubo fases de RLHF, DPO o ajuste supervisado. De hecho, el autor afirma explicitamente que el checkpoint **no ha sido entrenado** y que no se ha auditado en robustez, equidad o transferencia de dominio. La receta por defecto (`training_args.json`) usa NovoGrad con planificador *step*, pero se presenta como valores de partida del script, no como evidencia de una ejecucion completada. El repositorio incluye `pipeline.py` como artefacto principal, con un bloque `__main__` que genera un ejemplo de *smoke test*; al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito.
+No hay informacion sobre datos de entrenamiento: no se indica numero de tokens, composicion del dataset, resolucion de imagen, ni si hubo fases de RLHF, DPO o ajuste supervisado. De hecho, el autor afirma explicitamente que el checkpoint **no ha sido entrenado** y que no se ha auditado en robustez, equidad o transferencia de dominio. La receta por defecto (`training_args.json`) usa NovoGrad con planificador *step*, pero se presenta como valores de partida del script, no como evidencia de una ejecucion completada. El repositorio incluye `pipeline.py` como artefacto principal, con un bloque `__main__` que genera un ejemplo de *smoke test*; al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Compatibilidad con GPU de consumo: si, cabe en cualquier GPU de consumo e incluso en CPU sin dificultad.
 - Opciones de despliegue: el repositorio es una implementacion Python personalizada, por lo que no se declara compatibilidad con vLLM, llama.cpp, Ollama o TGI. Se requiere invocar `pipeline.py` o cargar explicitamente la clase del modelo mediante un adaptador propio.
 - Latencia y throughput estimados: no disponible. Dado el tamano, la latencia estara dominada por el coste de arranque del interprete de Python y la transferencia de tensores, no por el computo del modelo.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -92,12 +92,12 @@ La diferencia fundamental no es de escala, sino de estado: las alternativas de l
 - Riesgo de alucinacion: no aplica en el sentido habitual, ya que no es un modelo generativo de lenguaje; el riesgo equivalente es producir representaciones sin sentido con total seguridad aparente.
 - Limitaciones de contexto: no disponible; no se documenta ventana de atencion ni resolucion de entrada.
 - Restricciones de licencia: la licencia es MIT, permisiva y apta para uso comercial, pero el propio autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
-- Caveat de produccion: al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace no funcionan sin un adaptador explicito; integrarlo en un *stack* existente requiere trabajo adicional.
+- Caveat de produccion: al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face no funcionan sin un adaptador explicito; integrarlo en un *stack* existente requiere trabajo adicional.
 - Caveat metodologico: el autor subraya que cualquier resultado futuro debe documentarse por separado de los valores por defecto incluidos en `training_args.json`, que no constituyen evidencia de una ejecucion completada.
 - Ausencia de traccion: 0 descargas y 0 likes, sin mantenimiento posterior documentado (creacion y ultima actualizacion el mismo dia).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sophialewisvot/matching-demo
+- Modelo en Hugging Face: https://huggingface.co/sophialewisvot/matching-demo
 - Ficheros incluidos en el repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados devueltos corresponden a un sitio de comercio electronico sin relacion con el modelo.

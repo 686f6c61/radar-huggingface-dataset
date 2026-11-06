@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nxp/whenet-imx` es un repositorio de modelo publicado en HuggingFace por NXP Semiconductors, la compania neerlandesa de semiconductores con sede en Eindhoven conocida por sus microcontroladores, procesadores de aplicacion (familia i.MX), sensores y circuitos analogicos para automocion, IoT e industria. El unico metadato verificable que acompania al repositorio es la licencia MIT; no se ha publicado model card, pipeline declarado, lista de idiomas, ni cifras de descargas o interacciones (0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion identicas: 2026-10-01).
+`nxp/whenet-imx` es un repositorio de modelo publicado en Hugging Face por NXP Semiconductors, la compania neerlandesa de semiconductores con sede en Eindhoven conocida por sus microcontroladores, procesadores de aplicacion (familia i.MX), sensores y circuitos analogicos para automocion, IoT e industria. El unico metadato verificable que acompania al repositorio es la licencia MIT; no se ha publicado model card, pipeline declarado, lista de idiomas, ni cifras de descargas o interacciones (0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion identicas: 2026-10-01).
 
 No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni resultados de evaluacion. El nombre del repositorio sugiere una relacion con la familia de redes WHENet (estimacion de pose de cabeza) y con la plataforma de procesadores i.MX de NXP, pero se trata de una inferencia a partir de la nomenclatura y no de un dato documentado por el autor.
 
@@ -77,7 +77,7 @@ No disponible. Al no conocerse la tarea, el tamano ni la arquitectura del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nxp/whenet-imx
+- Modelo en Hugging Face: https://huggingface.co/nxp/whenet-imx
 - Sitio corporativo de NXP Semiconductors: https://www.nxp.com/
 - Catalogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia (ingles): https://en.wikipedia.org/wiki/NXP_Semiconductors

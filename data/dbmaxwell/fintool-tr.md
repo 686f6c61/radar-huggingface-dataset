@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fintool-TR es un modelo de lenguaje ajustado (fine-tuned) para finanzas y tool calling en turco, desarrollado por el usuario Dbmaxwell y publicado en HuggingFace. Se basa en `unsloth/Qwen3-4B-Instruct-2507`, un modelo instructo de la familia Qwen3 de 4 mil millones de parametros, y se ha entrenado con el dataset `Dbmaxwell/FintoolDataset-tr`, un conjunto de datos propio con 1.389 ejemplos de entrenamiento centrados en consultas financieras y seleccion de herramientas.
+Fintool-TR es un modelo de lenguaje ajustado (fine-tuned) para finanzas y tool calling en turco, desarrollado por el usuario Dbmaxwell y publicado en Hugging Face. Se basa en `unsloth/Qwen3-4B-Instruct-2507`, un modelo instructo de la familia Qwen3 de 4 mil millones de parametros, y se ha entrenado con el dataset `Dbmaxwell/FintoolDataset-tr`, un conjunto de datos propio con 1.389 ejemplos de entrenamiento centrados en consultas financieras y seleccion de herramientas.
 
 El problema que resuelve es doble: por un lado, la falta de modelos pequenos con buen rendimiento en dominio financiero turco; por otro, la generacion fiable de llamadas a herramientas (tool calls) con esquemas estructurados, algo critico para construir asistentes que consulten datos de mercado en tiempo real en lugar de depender del conocimiento interno del modelo. De hecho, la model card advierte explicitamente que precios, tipos de cambio o datos macroeconomicos no deben tomarse del conocimiento del modelo, sino obtenerse mediante herramientas externas.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Foco | Disponibilidad |
 |---|---|---|---|---|---|
-| Fintool-TR | 4,02B | 262.144 (config) / 8.192 (entrenamiento) | Apache-2.0 | Finanzas y tool calling en turco | safetensors BF16, HuggingFace |
-| unsloth/Qwen3-4B-Instruct-2507 (base) | ~4B | 262.144 | Apache-2.0 | Instructo general multilingue | safetensors, HuggingFace |
-| Qwen3-4B-Instruct-2507 (oficial) | ~4B | 262.144 | Apache-2.0 | Instructo general multilingue | safetensors, HuggingFace |
+| Fintool-TR | 4,02B | 262.144 (config) / 8.192 (entrenamiento) | Apache-2.0 | Finanzas y tool calling en turco | safetensors BF16, Hugging Face |
+| unsloth/Qwen3-4B-Instruct-2507 (base) | ~4B | 262.144 | Apache-2.0 | Instructo general multilingue | safetensors, Hugging Face |
+| Qwen3-4B-Instruct-2507 (oficial) | ~4B | 262.144 | Apache-2.0 | Instructo general multilingue | safetensors, Hugging Face |
 
 Fintool-TR comparte arquitectura, contexto y licencia con su modelo base; su diferencial es el rendimiento en tool calling y finanzas turcas (composite 92,68 frente a 85,91 del base). No se han identificado otros fine-tunings financieros en turco de tamano comparable en la informacion disponible.
 
@@ -94,7 +94,7 @@ Fintool-TR comparte arquitectura, contexto y licencia con su modelo base; su dif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dbmaxwell/Fintool-TR
+- Modelo en Hugging Face: https://huggingface.co/Dbmaxwell/Fintool-TR
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dbmaxwell/FintoolDataset-tr
 - Paper, blog o demo: no disponible

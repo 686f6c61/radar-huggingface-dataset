@@ -66,8 +66,8 @@ Estos valores indican una mejora relativa en la seguridad percibida por el rewar
 
 | Modelo | Parametros | Contexto | Metodo de alineacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `safe-genai-dpo-prefix` (este) | 355 M (0,98 M entrenables) | No disponible | DPO + prefix tuning | MIT | HuggingFace |
-| `gpt2-medium` (base) | 355 M | 1024 tokens (estándar GPT-2) | Sin alineación | MIT | HuggingFace |
+| `safe-genai-dpo-prefix` (este) | 355 M (0,98 M entrenables) | No disponible | DPO + prefix tuning | MIT | Hugging Face |
+| `gpt2-medium` (base) | 355 M | 1024 tokens (estándar GPT-2) | Sin alineación | MIT | Hugging Face |
 | Otros adaptadores DPO sobre GPT-2 | No disponible | No disponible | DPO (full, LoRA, QLoRA) | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativo con otros modelos de alineación similares. La comparación directa con el modelo base solo es posible mediante el reward score, que no es una métrica estándar.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de alineaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmAhire369/safe-genai-dpo-prefix
+- Modelo en Hugging Face: https://huggingface.co/OmAhire369/safe-genai-dpo-prefix
 - Perfil del autor: https://huggingface.co/OmAhire369
 - Repositorio GitHub del autor: https://github.com/Omahire369
 - Modelo base GPT-2 medium: https://huggingface.co/gpt2-medium

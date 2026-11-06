@@ -73,9 +73,9 @@ Resultados declarados por el autor (no verificados):
 
 | Modelo | Parámetros | Contexto | Accuracy out-of-domain | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kev-0.8B | 0,8 B + 11,3 M LoRA | 8.192 validados (65.536 servidos) | 0,697 (transfer-v4) | Apache-2.0 | HuggingFace |
+| Kev-0.8B | 0,8 B + 11,3 M LoRA | 8.192 validados (65.536 servidos) | 0,697 (transfer-v4) | Apache-2.0 | Hugging Face |
 | Kev-4B | No disponible | No disponible | No disponible (el autor indica que es marcadamente superior fuera de dominio) | No disponible | No disponible en la información |
-| LLM generativo con parsing de salida (p. ej. Qwen3.5-0.8B-Base) | 0,8 B | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| LLM generativo con parsing de salida (p. ej. Qwen3.5-0.8B-Base) | 0,8 B | No disponible | No disponible | Apache-2.0 | Hugging Face |
 
 La comparación con modelos generativos no es directa: Kev no genera texto y devuelve probabilidades calibradas, mientras que un LLM requeriría generar y parsear la respuesta sin calibración nativa.
 
@@ -93,7 +93,7 @@ La comparación con modelos generativos no es directa: Kev no genera texto y dev
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fw15619391306/kev-0.8b
+- Hugging Face: https://huggingface.co/Fw15619391306/kev-0.8b
 - Repositorio del proyecto: https://github.com/jaredpalmer/kev
 - Checkpoint de referencia del autor: https://huggingface.co/jaredpalmer/kev-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base

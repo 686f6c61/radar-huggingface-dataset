@@ -32,7 +32,7 @@ Otros datos declarados en la model card:
 | Semillas incluidas | 1, 2, 3, 4, 5 (una carpeta por semilla) |
 | Paso de entrenamiento | 150001 |
 | Commits de código | 1505a6e630ac (semillas 1 y 2), 85fab86c0ecd (semilla 3), 8a4888abdca4 (semilla 4), 8ac67ea860e3 (semilla 5) |
-| Descargas / me gusta en HuggingFace | 0 / 0 |
+| Descargas / me gusta en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -111,8 +111,8 @@ No se han proporcionado resultados comparables de otras políticas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-iql-n32-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-iql-n32-idql
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de entrenamiento (teleoperación): https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline

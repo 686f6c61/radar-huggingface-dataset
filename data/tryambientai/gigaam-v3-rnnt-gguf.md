@@ -91,7 +91,7 @@ Nota: ai-sage no publica un WER de FLEURS ru para el modelo base; el valor de 8,
 
 | Modelo | Parametros | Contexto | WER ruso (dominios) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GigaAM-v3-rnnt-gguf (esta ficha) | 221,9 M | no disponible (ASR) | 8,08 % FLEURS ru; 8,4 % media upstream | MIT | GGUF en HuggingFace |
+| GigaAM-v3-rnnt-gguf (esta ficha) | 221,9 M | no disponible (ASR) | 8,08 % FLEURS ru; 8,4 % media upstream | MIT | GGUF en Hugging Face |
 | GigaAM-v3 CTC (ai-sage) | 220–240 M | no disponible (ASR) | 9,2 % media upstream | no disponible en la informacion | pesos originales |
 | T-One + LM | no disponible | no disponible (ASR) | 19,4 % media upstream | no disponible | no disponible |
 | Whisper (large-v3) | no disponible en la informacion | no disponible (ASR) | 25,1 % media upstream; 12,0 % open datasets | no disponible en la informacion | ampliamente disponible |
@@ -113,7 +113,7 @@ La comparativa se limita a los datos publicados en la model card: GigaAM-v3 RNN-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tryambientai/gigaam-v3-rnnt-gguf
+- Modelo en Hugging Face: https://huggingface.co/tryambientai/gigaam-v3-rnnt-gguf
 - Modelo base: https://huggingface.co/ai-sage/GigaAM-v3
 - Commit upstream de referencia: https://huggingface.co/ai-sage/GigaAM-v3/commit/c7f128b
 - Libreria transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

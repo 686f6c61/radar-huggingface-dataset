@@ -115,9 +115,9 @@ Comparativa con los baselines publicados en la model card, sobre las mismas fila
 
 | Router | Accuracy | F1 de `none` | Latencia p50 (ms) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mimir-laya-router | 0.9688 | 0.957 | ~25 | Apache-2.0 | HuggingFace (`impacte/mimir-laya-router`) |
+| mimir-laya-router | 0.9688 | 0.957 | ~25 | Apache-2.0 | Hugging Face (`impacte/mimir-laya-router`) |
 | llm_router | 0.6822 | 0.585 | 151.33 | no disponible | no disponible |
-| base_laya (sin ajustar) | 0.2403 | 0.336 | 23.41 | Apache-2.0 (heredada) | HuggingFace (`convaiinnovations/laya`) |
+| base_laya (sin ajustar) | 0.2403 | 0.336 | 23.41 | Apache-2.0 (heredada) | Hugging Face (`convaiinnovations/laya`) |
 | bm25 | 0.2016 | 0.279 | 0.05 | no disponible | no disponible |
 | random / always_none / always_first | 0.1860 / 0.1938 / 0.2016 | 0.000 / 0.325 / 0.000 | no disponible | no aplica | no aplica |
 
@@ -138,7 +138,7 @@ No se dispone de datos de parametros, contexto ni licencia de `llm_router` ni de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/impacte/mimir-laya-router
+- Modelo en Hugging Face: https://huggingface.co/impacte/mimir-laya-router
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Notebook de referencia de fine-tuning: https://github.com/NandhaKishorM/laya
 - Cita (BibTeX, en la model card): `@misc{mimir_laya_router2026, title = {Mimir: Laya fine-tuned as a calibrated model router}, author = {oamazonasgabriel}}`

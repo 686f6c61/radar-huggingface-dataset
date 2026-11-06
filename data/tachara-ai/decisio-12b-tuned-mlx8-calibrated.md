@@ -111,7 +111,7 @@ No se dispone de comparación con modelos de decisión calibrada de otros autore
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx8-calibrated
+- Repositorio Hugging Face: https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx8-calibrated
 - Modelo de origen bf16: https://huggingface.co/tachara-ai/Decisio-12b-tuned-calibrated
 - Variante commit (mismos pesos, distinto config): https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx8-commit
 - Variantes de 6 bits: https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx-calibrated y https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx-commit

@@ -88,7 +88,7 @@ La comparativa con GLM-5.1 se basa en la evaluacion ciega publicada por Tencent,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tencent/Hy3
+- Hugging Face: https://huggingface.co/tencent/Hy3
 - GitHub: https://github.com/Tencent-Hunyuan/Hy3
 - GitHub (preview): https://github.com/Tencent-Hunyuan/Hy3-preview
 - ModelScope: https://modelscope.cn/models/Tencent-Hunyuan/Hy3

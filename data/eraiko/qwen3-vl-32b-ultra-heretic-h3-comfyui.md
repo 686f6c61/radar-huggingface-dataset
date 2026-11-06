@@ -105,7 +105,7 @@ No se dispone de resultados de benchmarks de ninguno de estos modelos en la info
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI
+- Página de Hugging Face del modelo: https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI
 - Modelo base declarado: https://huggingface.co/llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic
 - Space de conversión a GGUF referenciado en el README: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a hilos de Reddit sobre el cuestionario de la página de inicio de Bing y no guardan ninguna relación con este modelo.

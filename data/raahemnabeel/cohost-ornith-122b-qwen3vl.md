@@ -6,7 +6,7 @@ cohost-ornith-122b-qwen3vl es un paquete de despliegue (no un modelo entrenado d
 
 El interés técnico reside en el "co-hosting": los dos modelos de 8B comparten una única torre de texto Qwen3-VL cuyos pesos se reparten por chip (chips 0-1 para el embedder, chips 2-3 para el reranker), de modo que cada chip aloja una copia de 8B y una sola pasada puede atender peticiones de ambos modelos. El paquete se distribuye con tt-model-manager (esquema de manifiesto 5.1, tipo `cohost`) e incluye perfiles de servicio seleccionables (`ornith122b`, `ornith122b-lean`, `ornith122b-vision`, `ornith122b-solo`, `qwen3vl-solo`).
 
-Es relevante para equipos que construyen agentes de investigación profunda o pipelines RAG que necesitan simultáneamente un LLM grande de razonamiento, un embedder y un reranker en una sola máquina con aceleradores Tenstorrent, sin depender de GPUs NVIDIA. El repositorio de HuggingFace pesa 2,1 GB (solo configuración y manifiestos; los pesos se descargan aparte, unos 34 GB más otros 40 GB de caché fragmentada por chip).
+Es relevante para equipos que construyen agentes de investigación profunda o pipelines RAG que necesitan simultáneamente un LLM grande de razonamiento, un embedder y un reranker en una sola máquina con aceleradores Tenstorrent, sin depender de GPUs NVIDIA. El repositorio de Hugging Face pesa 2,1 GB (solo configuración y manifiestos; los pesos se descargan aparte, unos 34 GB más otros 40 GB de caché fragmentada por chip).
 
 ## Especificaciones tecnicas
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cohost-ornith-122b-qwen3vl | 122B + 8B + 8B | No disponible (pares 8192) | 31,5 tok/s (1 usuario) en QuietBox 2 | mit-and-apache-2.0 | HuggingFace, requiere hardware Tenstorrent |
-| raahemnabeel/ornith-1.5-122b (paquete individual) | 122B | No disponible | 133 tok/s (1 usuario) | No disponible | HuggingFace |
-| Qwen/Qwen3-VL-Embedding-8B | 8B | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3-VL-Reranker-8B | 8B | No disponible | No disponible | No disponible | HuggingFace |
+| cohost-ornith-122b-qwen3vl | 122B + 8B + 8B | No disponible (pares 8192) | 31,5 tok/s (1 usuario) en QuietBox 2 | mit-and-apache-2.0 | Hugging Face, requiere hardware Tenstorrent |
+| raahemnabeel/ornith-1.5-122b (paquete individual) | 122B | No disponible | 133 tok/s (1 usuario) | No disponible | Hugging Face |
+| Qwen/Qwen3-VL-Embedding-8B | 8B | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3-VL-Reranker-8B | 8B | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparación relevante es contra los paquetes individuales de los mismos modelos: el co-host sacrifica velocidad de Ornith (31,5 frente a 133 tok/s) a cambio de servir los tres modelos a la vez en una sola caja.
 
@@ -99,7 +99,7 @@ La comparación relevante es contra los paquetes individuales de los mismos mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raahemnabeel/cohost-ornith-122b-qwen3vl
+- Hugging Face: https://huggingface.co/raahemnabeel/cohost-ornith-122b-qwen3vl
 - Paquete individual de Ornith: https://huggingface.co/raahemnabeel/ornith-1.5-122b
 - Modelo base Ornith: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Embedder: https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B

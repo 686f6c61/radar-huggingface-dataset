@@ -73,7 +73,7 @@ No se puede establecer una comparativa de rendimiento sin datos de benchmarks.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/formalmathatepfl/qwen3-8b-feedback-sft
+- Modelo en Hugging Face: https://huggingface.co/formalmathatepfl/qwen3-8b-feedback-sft
 - Modelo base (qwen3-cpt): https://huggingface.co/formalmathatepfl/qwen3-cpt
 - Modelo similar (qwen3-8b-sft): https://huggingface.co/formalmathatepfl/qwen3-8b-sft
 - Modelo similar (qwen3-8b-sft-feedback): https://huggingface.co/formalmathatepfl/qwen3-8b-sft-feedback

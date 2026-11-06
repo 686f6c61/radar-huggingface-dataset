@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/whisper-tiny-onnx
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/whisper-tiny-onnx
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Origen de los grafos sherpa-onnx: https://huggingface.co/csukuangfj/sherpa-onnx-whisper-tiny
 - Exportacion ONNX alternativa: https://huggingface.co/onnx-community/whisper-tiny

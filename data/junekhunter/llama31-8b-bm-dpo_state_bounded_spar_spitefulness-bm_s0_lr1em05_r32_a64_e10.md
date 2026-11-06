@@ -75,7 +75,7 @@ La unica diferencia clara es el proposito: este modelo esta disenado para estudi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_spitefulness-bm_s0_lr1em05_r32_a64_e10
+- Hugging Face: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_spitefulness-bm_s0_lr1em05_r32_a64_e10
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 

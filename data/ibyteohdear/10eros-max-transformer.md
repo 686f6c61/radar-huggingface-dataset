@@ -56,5 +56,5 @@ No se proporcionan comparativas con otros modelos en la información disponible.
 - No se garantiza la coherencia temporal en vídeos largos ni la sincronización perfecta del audio en todos los casos.
 
 ## Enlaces
-- [HuggingFace: ibyteohdear/10Eros-Max-Transformer](https://huggingface.co/ibyteohdear/10Eros-Max-Transformer)
+- [Hugging Face: ibyteohdear/10Eros-Max-Transformer](https://huggingface.co/ibyteohdear/10Eros-Max-Transformer)
 - [Licencia de MiniMax H3](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE)

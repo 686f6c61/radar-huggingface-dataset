@@ -68,10 +68,10 @@ No se dispone de información comparativa. Se desconoce si el modelo se basa en 
 - Idioma: el modelo parece orientado al inglés, sin confirmación de soporte multilingüe.
 - Uso clínico: el proyecto es un asistente de apoyo emocional y educativo, no un sustituto de la atención médica profesional. El uso en producción sanitaria requiere validación adicional.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no proporciona garantías ni responsabilidad sobre el uso del modelo.
-- Repositorio reciente y sin tracción: 0 descargas y 0 likes en HuggingFace, lo que indica poca validación comunitaria.
+- Repositorio reciente y sin tracción: 0 descargas y 0 likes en Hugging Face, lo que indica poca validación comunitaria.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jackhappy02/GluVasc_Agent)
+- [Modelo en Hugging Face](https://huggingface.co/jackhappy02/GluVasc_Agent)
 - [Sitio oficial del proyecto](http://gluvasc-agent.top/)
 - [Página en KnowYourModel](https://www.knowyourmodel.ai/models/huggingface%3Ajackhappy02%2FGluVasc_Agent)

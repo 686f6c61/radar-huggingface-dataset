@@ -111,7 +111,7 @@ No se incluyen cifras de alternativas externas como Whisper large-v3 porque no h
 
 ## Enlaces
 
-- [HuggingFace: ssws3/nemotron-hinglish-v6](https://huggingface.co/ssws3/nemotron-hinglish-v6)
+- [Hugging Face: ssws3/nemotron-hinglish-v6](https://huggingface.co/ssws3/nemotron-hinglish-v6)
 - [Modelo base: nvidia/nemotron-3.5-asr-streaming-0.6b](https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b)
 
 No se han proporcionado papers, blogs, repositorios o demos adicionales en la información disponible.

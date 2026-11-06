@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JustRL-Qwen3-4b-Selective-Top10pct es un ajuste de la familia Qwen3 de 4B de parametros, publicado por el usuario SelectiveDOPD en HuggingFace. El nombre y las etiquetas del repositorio (`qwen3`, `transformers`, `safetensors`) indican que se trata de un derivado de Qwen3-4B, y el recuento real de pesos del safetensors confirma 4.411.424.256 parametros (4,41 mil millones), coherente con el tamano base declarado en el identificador del modelo.
+JustRL-Qwen3-4b-Selective-Top10pct es un ajuste de la familia Qwen3 de 4B de parametros, publicado por el usuario SelectiveDOPD en Hugging Face. El nombre y las etiquetas del repositorio (`qwen3`, `transformers`, `safetensors`) indican que se trata de un derivado de Qwen3-4B, y el recuento real de pesos del safetensors confirma 4.411.424.256 parametros (4,41 mil millones), coherente con el tamano base declarado en el identificador del modelo.
 
 El modelo procede de un experimento de aprendizaje por refuerzo denominado internamente `justrl_qwen3_4b_js_ladder_90_100_kl`, dentro de los experimentos "BiDirect-OPD" segun la propia model card. La rama `main` contiene el checkpoint `global_step_300`, y el repositorio expone catorce ramas adicionales con checkpoints intermedios (`global_step_20` hasta `global_step_280` en incrementos de 20). El sufijo "Selective-Top10pct" del nombre apunta a algun tipo de seleccion sobre el 10 % superior de un criterio no documentado, presumiblemente aplicada durante el entrenamiento o el filtrado de datos, aunque el autor no lo especifica.
 
@@ -81,10 +81,10 @@ Los datos de los modelos alternativos proceden de sus fichas publicas y no se ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| JustRL-Qwen3-4b-Selective-Top10pct | 4,41 mil millones | No disponible | No disponible | HuggingFace, 0 descargas | No |
-| Qwen3-4B (modelo base de referencia) | ~4 mil millones | 32 768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente descargado | Si (ficha oficial) |
-| Qwen2.5-3B | ~3 mil millones | 32 768 tokens | Apache 2.0 | HuggingFace | Si (ficha oficial) |
-| Llama 3.2 3B Instruct | ~3,2 mil millones | 128 000 tokens | Licencia de la comunidad de Llama | HuggingFace | Si (ficha oficial) |
+| JustRL-Qwen3-4b-Selective-Top10pct | 4,41 mil millones | No disponible | No disponible | Hugging Face, 0 descargas | No |
+| Qwen3-4B (modelo base de referencia) | ~4 mil millones | 32 768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente descargado | Si (ficha oficial) |
+| Qwen2.5-3B | ~3 mil millones | 32 768 tokens | Apache 2.0 | Hugging Face | Si (ficha oficial) |
+| Llama 3.2 3B Instruct | ~3,2 mil millones | 128 000 tokens | Licencia de la comunidad de Llama | Hugging Face | Si (ficha oficial) |
 
 Diferencias clave: frente a los tres alternativos, este checkpoint carece de licencia declarada, de idiomas declarados, de resultados de evaluacion y de variantes cuantizadas, lo que limita su uso en produccion. A cambio, ofrece algo que los modelos base no aportan: una trayectoria completa de RL con quince checkpoints intermedios, util exclusivamente para investigacion sobre dinamica de entrenamiento.
 
@@ -104,7 +104,7 @@ Diferencias clave: frente a los tres alternativos, este checkpoint carece de lic
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-4b-Selective-Top10pct
+- Ficha del modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-4b-Selective-Top10pct
 - Repositorio del modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Documentacion tecnica de la familia Qwen3 (blog oficial): https://qwenlm.github.io/blog/qwen3/
 - Articulo tecnico de Qwen3 en arXiv: https://arxiv.org/abs/2505.09388

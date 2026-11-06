@@ -29,7 +29,7 @@ En cuanto al entrenamiento, la unica informacion publicada es que se utilizo el 
 
 ## Capacidades
 
-- Generacion de texto en ingles: el modelo esta disenado para producir texto coherente en ingles, con etiqueta conversacional en HuggingFace.
+- Generacion de texto en ingles: el modelo esta disenado para producir texto coherente en ingles, con etiqueta conversacional en Hugging Face.
 - Conversacion multi-turno: la etiqueta "conversational" y el pipeline asociado indican soporte para dialogos, aunque no se documenta el formato de plantilla de chat.
 - Contexto largo: ventana de 32.000 tokens, adecuada para procesar documentos extensos o conversaciones prolongadas.
 - Razonamiento basico y respuesta a preguntas: derivado del entrenamiento sobre Wikipedia, puede responder preguntas factuales de dominio enciclopedico.
@@ -86,7 +86,7 @@ La comparativa se basa en caracteristicas publicas de los modelos alternativos; 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Kiwi-1.0-0.7B-32k-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Kiwi-1.0-0.7B-32k-GGUF
 - Modelo base: https://huggingface.co/empirischtech/Kiwi-1.0-0.7B-32k
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Kiwi-1.0-0.7B-32k-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

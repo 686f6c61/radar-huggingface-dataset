@@ -91,7 +91,7 @@ La comparación con modelos de la misma categoría (CLIP, SigLIP, TinyCLIP) se l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dayze/siglip2-base-patch16-256-coreml
+- Modelo en Hugging Face: https://huggingface.co/dayze/siglip2-base-patch16-256-coreml
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-256
 - Artículo SigLIP 2 (arXiv:2502.14786): https://arxiv.org/abs/2502.14786
 - Repositorio big_vision de Google Research: https://github.com/google-research/big_vision

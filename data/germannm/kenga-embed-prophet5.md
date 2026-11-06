@@ -116,11 +116,11 @@ Medias agregadas:
 
 | Modelo | Parametros | Contexto | MTEB(rus) media sobre tareas | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| kenga-embed-prophet5 | 44,2 M | 512 tokens | 57,6 | MIT | HuggingFace, requiere codigo propio |
-| Giga-Embeddings-instruct-480M | 480 M | no disponible | 74,2 | no disponible | HuggingFace |
-| BERTA-128M | 128 M | no disponible | 69,4 | no disponible | HuggingFace |
-| USER2-small-34M | 34 M | no disponible | 58,5 | no disponible | HuggingFace |
-| rubert-tiny-turbo-29M | 29 M | no disponible | 53,7 | no disponible | HuggingFace |
+| kenga-embed-prophet5 | 44,2 M | 512 tokens | 57,6 | MIT | Hugging Face, requiere codigo propio |
+| Giga-Embeddings-instruct-480M | 480 M | no disponible | 74,2 | no disponible | Hugging Face |
+| BERTA-128M | 128 M | no disponible | 69,4 | no disponible | Hugging Face |
+| USER2-small-34M | 34 M | no disponible | 58,5 | no disponible | Hugging Face |
+| rubert-tiny-turbo-29M | 29 M | no disponible | 53,7 | no disponible | Hugging Face |
 
 Lectura de la comparativa: kenga-embed-prophet5 queda 0,9 puntos por debajo de USER2-small-34M con un 30 % mas de parametros, y 3,9 puntos por encima de rubert-tiny-turbo-29M. Frente a Giga-Embeddings-instruct-480M la diferencia es de 16,6 puntos a favor del modelo grande, que multiplica por diez el numero de parametros. La ventaja competitiva del modelo no es la calidad absoluta, sino la licencia MIT explicita y el coste de inferencia minimo.
 
@@ -142,7 +142,7 @@ Lectura de la comparativa: kenga-embed-prophet5 queda 0,9 puntos por debajo de U
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/kenga-embed-prophet5
+- Modelo en Hugging Face: https://huggingface.co/GermannM/kenga-embed-prophet5
 - Repositorio del proyecto kenga-lang (contrato Prophet en `docs/PROPHETS.md`): https://github.com/GermannM/kenga-lang
 - Repositorio kenga-lang (espejo encontrado en la busqueda): https://github.com/GermannM3/kenga-lang/tree/main/
 - Resultados de referencia del leaderboard MTEB: https://github.com/embeddings-benchmark/results

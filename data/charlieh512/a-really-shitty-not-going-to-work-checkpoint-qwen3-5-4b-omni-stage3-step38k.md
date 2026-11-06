@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (PLAICraft Omni stage 3) | 4,44B | No disponible (ventanas de 750 ticks) | Vídeo, audio, texto, habla, teclado/ratón | Sin elegir | HuggingFace, 0 descargas |
-| Qwen3.5-4B (base) | ~4B | No disponible | Texto (y visión vía su torre) | Apache-2.0 | HuggingFace |
+| Este checkpoint (PLAICraft Omni stage 3) | 4,44B | No disponible (ventanas de 750 ticks) | Vídeo, audio, texto, habla, teclado/ratón | Sin elegir | Hugging Face, 0 descargas |
+| Qwen3.5-4B (base) | ~4B | No disponible | Texto (y visión vía su torre) | Apache-2.0 | Hugging Face |
 | Moshi (Kyutai) | No disponible en la información | No disponible | Audio full-duplex, texto | No disponible en la información | No disponible en la información |
 
 La comparación con Moshi es pertinente por el esquema de salida de texto estilo Moshi y el enfoque full-duplex, pero no se dispone de sus especificaciones en la información proporcionada. No se conocen otros modelos comparables en la información disponible.
@@ -86,16 +86,16 @@ La comparación con Moshi es pertinente por el esquema de salida de texto estilo
 - La torre de visión no está incluida en el checkpoint y debe cargarse desde `Qwen/Qwen3.5-4B`.
 - Riesgo de alucinación y sesgos: no evaluado en la información disponible; al ser un modelo de investigación sin benchmarks, no hay evidencia de robustez.
 - Idiomas soportados: no disponibles, lo que impide garantizar cobertura multilingüe.
-- 0 descargas y 0 likes en HuggingFace: sin validación externa de la comunidad.
+- 0 descargas y 0 likes en Hugging Face: sin validación externa de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CharlieH512/A-really-shitty-not-going-to-work-checkpoint-qwen3.5-4b-omni-stage3-step38k
+- Hugging Face: https://huggingface.co/CharlieH512/A-really-shitty-not-going-to-work-checkpoint-qwen3.5-4b-omni-stage3-step38k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Tokenizador de teclado/ratón: https://huggingface.co/CharlieH512/km_tokenizer_ctx14_8x1000
 - MOSS-Audio-Tokenizer (Apache-2.0, origen de `assets/moss_zq_codebook.npz`): no disponible en la información proporcionada
 - NVIDIA NanoCodec: no disponible en la información proporcionada (consultar su model card)
 - NVIDIA FastConformer y TitaNet (CC-BY-4.0): no disponible en la información proporcionada
-- Repositorio de código del proyecto PLAICraft Omni (commit `e5d8a72`): incluido dentro del repo de HuggingFace en `code/`
+- Repositorio de código del proyecto PLAICraft Omni (commit `e5d8a72`): incluido dentro del repo de Hugging Face en `code/`
 - Documentación de datos y entrenamiento: incluida en el repo en `docs/DATA.md` y `docs/TRAINING_AND_INFERENCE.md`
 - Paper, blog o demo: no disponible en la información proporcionada

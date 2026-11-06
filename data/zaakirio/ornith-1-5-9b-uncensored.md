@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zaakirio/Ornith-1.5-9B-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/zaakirio/Ornith-1.5-9B-Uncensored
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Heretic (herramienta de ablación): https://github.com/p-e-w/heretic
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B/blob/main/LICENSE

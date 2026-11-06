@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mortsn/handler-gliclass | no disponible (base DeBERTa-v3-large, ~435 M) | no disponible | Clasificación zero-shot de órdenes de juego | Apache 2.0 | HuggingFace, ONNX fp16 |
-| knowledgator/gliclass-v4-edge | no disponible | no disponible | Clasificación zero-shot general | Apache 2.0 (según referencia del autor) | HuggingFace |
-| microsoft/deberta-v3-large | ~435 M | 512 tokens (arquitectura DeBERTa-v3) | Encoder generalista (NLU) | MIT | HuggingFace |
+| mortsn/handler-gliclass | no disponible (base DeBERTa-v3-large, ~435 M) | no disponible | Clasificación zero-shot de órdenes de juego | Apache 2.0 | Hugging Face, ONNX fp16 |
+| knowledgator/gliclass-v4-edge | no disponible | no disponible | Clasificación zero-shot general | Apache 2.0 (según referencia del autor) | Hugging Face |
+| microsoft/deberta-v3-large | ~435 M | 512 tokens (arquitectura DeBERTa-v3) | Encoder generalista (NLU) | MIT | Hugging Face |
 
 La comparación se limita a la genealogía del modelo, ya que no hay datos de rendimiento publicados para handler-gliclass ni para gliclass-v4-edge en la información disponible. Frente a DeBERTa-v3-large, el modelo añade la cabeza y el pipeline zero-shot de GLiClass y la exportación ONNX para navegador; frente a gliclass-v4-edge, incorpora el ajuste específico al dominio del juego Handler y la calibración de logits.
 
@@ -82,6 +82,6 @@ La comparación se limita a la genealogía del modelo, ya que no hay datos de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mortsn/handler-gliclass
+- Modelo en Hugging Face: https://huggingface.co/mortsn/handler-gliclass
 - Modelo base: https://huggingface.co/knowledgator/gliclass-v4-edge
 - Modelo base de la arquitectura: https://huggingface.co/microsoft/deberta-v3-large

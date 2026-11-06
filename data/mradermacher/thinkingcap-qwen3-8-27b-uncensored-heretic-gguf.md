@@ -6,7 +6,7 @@ ThinkingCap-Qwen3.8-27B-Uncensored-Heretic-GGUF es el conjunto de cuantizaciones
 
 El modelo base esta publicado por OS-Software bajo acceso restringido mediante formulario, con licencia PolyForm Small Business 1.0.0, y la model card no documenta la longitud de contexto, la composicion del dataset de entrenamiento ni resultados de evaluacion. La relevancia de esta publicacion es practica: pone a disposicion un abanico de cuantizaciones que va desde 10,8 GB (Q2_K) hasta 28,7 GB (Q8_0), lo que permite ejecutar un modelo de casi 27B en equipos de consumo con VRAM limitada, ademas de incluir ficheros mmproj que apuntan a soporte multimodal.
 
-La ficha se ha elaborado exclusivamente con la informacion disponible en HuggingFace y en la model card del cuantizador; los apartados sin datos verificables se marcan explicitamente como no disponibles.
+La ficha se ha elaborado exclusivamente con la informacion disponible en Hugging Face y en la model card del cuantizador; los apartados sin datos verificables se marcan explicitamente como no disponibles.
 
 ## Especificaciones tecnicas
 

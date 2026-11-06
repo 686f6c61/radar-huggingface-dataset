@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yumasco/lumen` es un modelo publicado en HuggingFace por el usuario yumasco bajo licencia Apache 2.0. El repositorio no incluye información sustantiva sobre el modelo: la model card es la plantilla estándar de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. No se especifica arquitectura, tamaño, datos de entrenamiento ni propósito.
+`yumasco/lumen` es un modelo publicado en Hugging Face por el usuario yumasco bajo licencia Apache 2.0. El repositorio no incluye información sustantiva sobre el modelo: la model card es la plantilla estándar de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. No se especifica arquitectura, tamaño, datos de entrenamiento ni propósito.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, citado en la plantilla por defecto; no es una referencia técnica al modelo. Por tanto, no hay evidencia de que se trate de un modelo entrenado y funcional, sino más probablemente de un repositorio de prueba o un placeholder.
 
@@ -25,7 +25,7 @@ Dada la ausencia total de documentación técnica, esta ficha recoge únicamente
 
 No disponible. La model card no describe arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se detalla ningún tipo de innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, etc.).
 
-El único metadato técnico del repositorio son los tags de HuggingFace: `arxiv:1910.09700` (referencia genérica de la plantilla a Lacoste et al., 2019, sobre impacto ambiental), `license:apache-2.0` y `region:us`. No hay información sobre pesos, tokenizador ni configuración de entrenamiento.
+El único metadato técnico del repositorio son los tags de Hugging Face: `arxiv:1910.09700` (referencia genérica de la plantilla a Lacoste et al., 2019, sobre impacto ambiental), `license:apache-2.0` y `region:us`. No hay información sobre pesos, tokenizador ni configuración de entrenamiento.
 
 ## Capacidades
 
@@ -58,6 +58,6 @@ No disponible. No es posible establecer comparaciones con alternativas al no con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yumasco/lumen
+- Repositorio en Hugging Face: https://huggingface.co/yumasco/lumen
 - Artículo citado en el tag (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
-- Plantilla de model card de HuggingFace utilizada: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
+- Plantilla de model card de Hugging Face utilizada: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md

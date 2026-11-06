@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa detallada 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-szl-latn
+- Repositorio Hugging Face: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-szl-latn
 - Repositorio alternativo (mismo nombre): https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-szl-latn
 - Paper en arXiv (PDF): https://arxiv.org/pdf/2607.18618
 - Paper en arXiv (HTML): https://arxiv.org/html/2607.18618v1

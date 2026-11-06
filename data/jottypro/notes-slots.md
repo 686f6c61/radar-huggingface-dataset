@@ -89,8 +89,8 @@ Dataset declarado: MASSIVE en-US mas datos sinteticos de productividad y realism
 
 | Modelo | Parametros | Contexto | F1 en extraccion de ranuras | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jottypro/notes-slots | ~7,6 M | 512 (entrenado a 128) | 0,8498 (fp32) / 0,8278 (q8) | CC BY 4.0 | ONNX INT8 en HuggingFace, via Transformers.js |
-| microsoft/xtremedistil-l6-h256-uncased (base) | ~7,6 M | 512 | no disponible (no afinado para slot filling) | MIT | Pesos PyTorch en HuggingFace |
+| jottypro/notes-slots | ~7,6 M | 512 (entrenado a 128) | 0,8498 (fp32) / 0,8278 (q8) | CC BY 4.0 | ONNX INT8 en Hugging Face, via Transformers.js |
+| microsoft/xtremedistil-l6-h256-uncased (base) | ~7,6 M | 512 | no disponible (no afinado para slot filling) | MIT | Pesos PyTorch en Hugging Face |
 | Profesor bert-base-uncased afinado (interno) | ~110 M | 512 | ~0,90 (F1 de evaluacion segun la model card) | Apache 2.0 (modelo base) | no disponible, no publicado |
 
 La comparacion relevante es de compromiso: el profesor ofrece en torno a 5 puntos mas de F1 pero con un orden de magnitud mas de parametros y sin artefacto ONNX cuantizado listo para navegador; el modelo base xtremedistil no resuelve la tarea sin afinado. Frente a modelos NER genericos de la familia BERT, la diferencia es de esquema (4 ranuras de productividad frente a etiquetas NER genericas) y de formato de despliegue, no de tamano. No se dispone de datos de benchmarks de terceros para una comparacion cuantitativa directa.
@@ -111,7 +111,7 @@ La comparacion relevante es de compromiso: el profesor ofrece en torno a 5 punto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jottypro/notes-slots
+- Modelo en Hugging Face: https://huggingface.co/jottypro/notes-slots
 - Modelo base: https://huggingface.co/microsoft/xtremedistil-l6-h256-uncased
 - Dataset MASSIVE: https://huggingface.co/datasets/AmazonScience/massive
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js

@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Enfoque de acción | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Evo-1 stage2 (este checkpoint) | ~776 M | Flow matching continuo con backbone InternVL3 | Apache 2.0 | Pesos en HuggingFace, integrado en LeRobot |
+| Evo-1 stage2 (este checkpoint) | ~776 M | Flow matching continuo con backbone InternVL3 | Apache 2.0 | Pesos en Hugging Face, integrado en LeRobot |
 | OpenVLA | ~7 B | Tokens de acción discretizados, backbone Llama-2 + DINOv2/SigLIP | MIT según documentación pública del proyecto | Pesos abiertos, integraciones comunitarias |
 | π0 (openpi) | ~3 B | Flow matching, backbone VLM | Apache 2.0 según el repositorio openpi | Pesos y código abiertos |
 | ACT (LeRobot) | ~decenas de millones | Regresión directa de chunks, sin backbone VLM | Apache 2.0 (implementación LeRobot) | Disponible en LeRobot |
@@ -89,7 +89,7 @@ Datos de los modelos alternativos tomados de su documentación pública; no proc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seriintan/evo1_lang3a_frazier_blade_stage2
+- Modelo en Hugging Face: https://huggingface.co/seriintan/evo1_lang3a_frazier_blade_stage2
 - Dataset de entrenamiento: https://huggingface.co/datasets/seriintan/lang3a_frazier_blade
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=seriintan/lang3a_frazier_blade
 - Repositorio de Evo-1 (MINT-SJTU): https://github.com/MINT-SJTU/Evo-1

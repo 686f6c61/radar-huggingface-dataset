@@ -6,7 +6,7 @@ El modelo `npario/parakeet-tdt-0.6b-v3-mlx-8bit` es una conversión a formato ML
 
 La relevancia de esta versión cuantizada radica en que permite desplegar un ASR de alta calidad en dispositivos con recursos limitados, como MacBooks o iPads, sin necesidad de GPUs dedicadas. Al reducir el peso a 8 bits, se disminuye el consumo de memoria y se acelera la inferencia, manteniendo una precisión razonable para casos de uso en producción. El modelo base de NVIDIA ya es conocido por su alta velocidad de transcripción en tiempo real, superando a alternativas como Whisper en entornos CPU, y esta adaptación MLX extiende esa ventaja al ecosistema Apple.
 
-La ficha se basa en la información pública disponible en HuggingFace y en los resultados de búsqueda web, sin datos adicionales sobre el proceso de cuantización específico realizado por el autor.
+La ficha se basa en la información pública disponible en Hugging Face y en los resultados de búsqueda web, sin datos adicionales sobre el proceso de cuantización específico realizado por el autor.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La ficha se basa en la información pública disponible en HuggingFace y en los 
 | Longitud de contexto | No disponible (el modelo base soporta audio de hasta 24 minutos con atencion completa en A100 80GB, o 3 horas con atencion local) |
 | Tipos de cuantizacion | 8-bit (MLX) |
 | Idiomas soportados | 25 idiomas europeos (segun el modelo base) |
-| Licencia | CC-BY-4.0 (segun etiqueta de HuggingFace) |
+| Licencia | CC-BY-4.0 (segun etiqueta de Hugging Face) |
 | Formato de pesos | Safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
@@ -79,7 +79,7 @@ La comparativa se basa en datos publicos. Whisper ofrece mayor cobertura de idio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/npario/parakeet-tdt-0.6b-v3-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/npario/parakeet-tdt-0.6b-v3-mlx-8bit
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Version MLX FP32 de aitytech: https://huggingface.co/aitytech/Parakeet-TDT-0.6B-v3-MLX
 - Wrapper FastAPI con ONNX (CPU): https://github.com/groxaxo/parakeet-tdt-0.6b-v3-fastapi-openai

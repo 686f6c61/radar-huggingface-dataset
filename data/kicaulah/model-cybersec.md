@@ -102,7 +102,7 @@ La comparacion relevante no es de rendimiento, porque el modelo no publica medic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kicaulah/model-cybersec
+- Modelo en Hugging Face: https://huggingface.co/Kicaulah/model-cybersec
 - Perfil del autor: https://huggingface.co/Kicaulah
 - Perfil de modelos del autor: https://huggingface.co/Kicaulah/models
 - Demo en vivo (Space con los seis system prompts copiables): https://huggingface.co/spaces/Kicaulah/Kicaulah-AI-Demo
@@ -111,6 +111,6 @@ La comparacion relevante no es de rendimiento, porque el modelo no publica medic
 - Script de servidor compatible con OpenAI citado en la model card: `scripts/serve.py` (en el repositorio del modelo)
 - Recursos externos relacionados con evaluacion en ciberseguridad:
   - CySecBench, dataset de 12.662 prompts para benchmarking en ciberseguridad: https://github.com/cysecbench/dataset
-  - Listado de modelos etiquetados como cybersecurity en HuggingFace: https://huggingface.co/models?other=cybersecurity
+  - Listado de modelos etiquetados como cybersecurity en Hugging Face: https://huggingface.co/models?other=cybersecurity
   - Awesome AI for Security: https://github.com/AmanPriyanshu/Awesome-AI-For-Security
   - Recopilacion de benchmarks de ciberseguridad (septiembre de 2026): https://benchlm.ai/cybersecurity

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GELATO mdenseon document retriever es un modelo de recuperación documental visual (visual document retrieval, VDR) publicado por el usuario de HuggingFace AdrienB134. Se trata de un checkpoint de inferencia completo que combina una torre de visión Qwen3.5 congelada, el backbone de texto congelado lightonai/mDenseOn y un proyector entrenado con delimitadores de imagen. El modelo proyecta consultas de texto y páginas de documento (imágenes) a un espacio común de vectores normalizados de 768 dimensiones, de modo que la similitud por producto escalar sirve directamente como puntuación de recuperación.
+GELATO mdenseon document retriever es un modelo de recuperación documental visual (visual document retrieval, VDR) publicado por el usuario de Hugging Face AdrienB134. Se trata de un checkpoint de inferencia completo que combina una torre de visión Qwen3.5 congelada, el backbone de texto congelado lightonai/mDenseOn y un proyector entrenado con delimitadores de imagen. El modelo proyecta consultas de texto y páginas de documento (imágenes) a un espacio común de vectores normalizados de 768 dimensiones, de modo que la similitud por producto escalar sirve directamente como puntuación de recuperación.
 
 El checkpoint, identificado como 7.500, fue seleccionado por su mejor puntuación completada en el benchmark público ViDoRe v3: 43,01 de macro nDCG@10 agregado sobre ocho corpus y seis idiomas de consulta. El autor advierte explícitamente que ese benchmark se usó para la selección y no constituye un conjunto de test limpio. El entrenamiento se realizó sobre aproximadamente 273.000 pares positivos multilingües de VDR, con backbones congelados y entrenamiento contrastivo de tipo Matryoshka.
 
@@ -66,16 +66,16 @@ El autor indica de forma explícita que ViDoRe v3 se empleó para seleccionar el
 - VRAM estimada: el checkpoint completo ocupa aproximadamente 0,82 GB en BF16 (409,9 millones de parámetros a 2 bytes). Sumando activaciones y buffers, la inferencia con lotes pequeños de páginas se sitúa en torno a 2–4 GB de VRAM; el consumo crece con el número de tokens visuales por página, que puede llegar a 1.280 por imagen.
 - GPU recomendadas: cualquier GPU con soporte BF16. Para replicar la receta evaluada se recomienda CUDA con BF16, por ejemplo RTX 4090, L40S, A100 o H100. Las GPU de gama alta no aportan ventaja por tamaño de modelo, sino por el procesamiento de lotes grandes de páginas.
 - Cabe en GPU de consumo: sí, con margen amplio. Una RTX 3060 de 12 GB, una RTX 4070 o una RTX 4090 pueden ejecutar el modelo en BF16 con lotes moderados. La recomendación del autor es empezar con lotes de imagen pequeños e incrementarlos según la memoria disponible.
-- Despliegue: sentence-transformers (>= 6.0.1) y Transformers (>= 5.16.1) son las dos interfaces documentadas, ambas con trust_remote_code=True. El repositorio incluye tokenizer y procesador de imagen, y está marcado con la etiqueta endpoints_compatible, lo que apunta a compatibilidad con HuggingFace Inference Endpoints. No se documenta soporte para vLLM, TGI, llama.cpp, Ollama ni TEI.
+- Despliegue: sentence-transformers (>= 6.0.1) y Transformers (>= 5.16.1) son las dos interfaces documentadas, ambas con trust_remote_code=True. El repositorio incluye tokenizer y procesador de imagen, y está marcado con la etiqueta endpoints_compatible, lo que apunta a compatibilidad con Hugging Face Inference Endpoints. No se documenta soporte para vLLM, TGI, llama.cpp, Ollama ni TEI.
 - Latencia y throughput: no disponible en la informacion proporcionada. Dependerá del número de tokens visuales por página y del tamaño de lote.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AdrienB134/gelato-mdenseon | 409,9 M | 256–1.280 tokens visuales fusionados por imagen | 43,01 macro nDCG@10 en ViDoRe v3 (seleccion) | Apache-2.0 | HuggingFace |
-| lightonai/mDenseOn (modelo base) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | HuggingFace |
-| Alternativas de la categoria (jina-embeddings-v4, ColQwen2.5, GME-Qwen2-VL) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | HuggingFace |
+| AdrienB134/gelato-mdenseon | 409,9 M | 256–1.280 tokens visuales fusionados por imagen | 43,01 macro nDCG@10 en ViDoRe v3 (seleccion) | Apache-2.0 | Hugging Face |
+| lightonai/mDenseOn (modelo base) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Hugging Face |
+| Alternativas de la categoria (jina-embeddings-v4, ColQwen2.5, GME-Qwen2-VL) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos verificables de parámetros, contexto, licencia o benchmarks de las alternativas dentro de la información proporcionada, por lo que la comparación cuantitativa queda limitada al propio modelo y a su backbone base. Cualquier comparación numérica adicional requeriría consultar las fichas oficiales de cada alternativa.
 
@@ -94,7 +94,7 @@ No se dispone de datos verificables de parámetros, contexto, licencia o benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdrienB134/gelato-mdenseon
+- Modelo en Hugging Face: https://huggingface.co/AdrienB134/gelato-mdenseon
 - Modelo base: https://huggingface.co/lightonai/mDenseOn
 - Perfil del autor: https://huggingface.co/AdrienB134
 - Leaderboard de referencia del benchmark ViDoRe: https://huggingface.co/spaces/vidore/vidore-leaderboard

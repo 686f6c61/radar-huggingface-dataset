@@ -73,10 +73,10 @@ No hay datos comparativos con otros modelos en la informacion proporcionada.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Usaid AI (500M) | 500,14M | 1.024 | Apache 2.0 | HuggingFace (safetensors, GGUF terceros) | Solo perplejidad de validacion (18,34) |
-| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | HuggingFace | Benchmarks publicos disponibles |
-| SmolLM2-360M | 362M | 8.192 | Apache 2.0 | HuggingFace | Benchmarks publicos disponibles |
-| TinyLlama-1.1B | 1.100M | 2.048 | Apache 2.0 | HuggingFace | Benchmarks publicos disponibles |
+| Usaid AI (500M) | 500,14M | 1.024 | Apache 2.0 | Hugging Face (safetensors, GGUF terceros) | Solo perplejidad de validacion (18,34) |
+| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | Hugging Face | Benchmarks publicos disponibles |
+| SmolLM2-360M | 362M | 8.192 | Apache 2.0 | Hugging Face | Benchmarks publicos disponibles |
+| TinyLlama-1.1B | 1.100M | 2.048 | Apache 2.0 | Hugging Face | Benchmarks publicos disponibles |
 
 Nota: los datos de los modelos comparativos corresponden a especificaciones publicas ampliamente conocidas; no se dispone en la informacion proporcionada de una comparacion de rendimiento directa con Usaid AI (500M). El factor diferencial de Usaid AI es un contexto muy reducido (1.024 tokens) y un volumen de entrenamiento (131M tokens) muy inferior al de sus alternativas.
 
@@ -94,7 +94,7 @@ Nota: los datos de los modelos comparativos corresponden a especificaciones publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Usaidddddddddddddd/UsaidAI-500M
+- Modelo en Hugging Face: https://huggingface.co/Usaidddddddddddddd/UsaidAI-500M
 - Space de chat interactivo: https://huggingface.co/spaces/Usaidddddddddddddd/UsaidAI-500M-Chat
 - Cuantizaciones GGUF (llama.cpp, de terceros): https://huggingface.co/mradermacher/UsaidAI-500M-GGUF
 - Repositorio de código fuente (TinyGPT): https://github.com/mohamedusaid/TinyGPT

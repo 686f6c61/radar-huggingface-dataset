@@ -18,7 +18,7 @@ Su relevancia es doble. Por un lado, cubre un par de idiomas de muy bajos recurs
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (se publican pesos en safetensors, sin variantes GGUF/AWQ/GPTQ en el repo) |
 | Idiomas soportados | ingles (en), kirundi / rundi (rn) |
-| Licencia | no disponible en el campo de HuggingFace; el autor remite a la licencia del modelo base (habitualmente CC-BY 4.0 en los modelos OPUS-MT) |
+| Licencia | no disponible en el campo de Hugging Face; el autor remite a la licencia del modelo base (habitualmente CC-BY 4.0 en los modelos OPUS-MT) |
 | Formato de pesos | safetensors (`model.safetensors`) |
 
 ## Arquitectura y entrenamiento
@@ -64,16 +64,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `malinali-app/opus-mt-en-rn` | 48,5 M | en → rn | no disponible | no disponible (remite a la del modelo base OPUS-MT) | HuggingFace, safetensors + tokenizadores JSON |
-| `Helsinki-NLP/opus-mt-en-rn` (modelo base) | 48,5 M | en → rn | no disponible | CC-BY 4.0 segun la practica habitual de OPUS-MT (no confirmado en la informacion disponible) | HuggingFace, pesos originales |
-| `facebook/nllb-200-distilled-600M` | 600 M | 200 idiomas, incluye rn | no disponible | CC-BY-NC 4.0 (uso no comercial) | HuggingFace |
-| `facebook/m2m100_418M` | 418 M | 100 idiomas, cobertura de rn no confirmada | no disponible | MIT | HuggingFace |
+| `malinali-app/opus-mt-en-rn` | 48,5 M | en → rn | no disponible | no disponible (remite a la del modelo base OPUS-MT) | Hugging Face, safetensors + tokenizadores JSON |
+| `Helsinki-NLP/opus-mt-en-rn` (modelo base) | 48,5 M | en → rn | no disponible | CC-BY 4.0 segun la practica habitual de OPUS-MT (no confirmado en la informacion disponible) | Hugging Face, pesos originales |
+| `facebook/nllb-200-distilled-600M` | 600 M | 200 idiomas, incluye rn | no disponible | CC-BY-NC 4.0 (uso no comercial) | Hugging Face |
+| `facebook/m2m100_418M` | 418 M | 100 idiomas, cobertura de rn no confirmada | no disponible | MIT | Hugging Face |
 
 El modelo de este repositorio es aproximadamente 8,5 veces mas pequeno que NLLB-200-distilled-600M y 12 veces mas pequeno que M2M-100 418M, lo que supone una ventaja clara para despliegue en dispositivo, a costa de una calidad de traduccion presumiblemente inferior y de no ofrecer traduccion multilingue ni direccion inversa. No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada en HuggingFace: el campo de licencia aparece como no disponible y el propio autor remite a la licencia del modelo base. Antes de un uso comercial es imprescindible verificar la licencia efectiva de `Helsinki-NLP/opus-mt-en-rn`.
+- Licencia no declarada en Hugging Face: el campo de licencia aparece como no disponible y el propio autor remite a la licencia del modelo base. Antes de un uso comercial es imprescindible verificar la licencia efectiva de `Helsinki-NLP/opus-mt-en-rn`.
 - Modelo unidireccional: solo traduce de ingles a kirundi. Para la direccion inversa hace falta otro checkpoint.
 - Par de idiomas de muy bajos recursos: el kirundi tiene pocos corpus paralelos publicos, por lo que la calidad en dominios especializados (medicina, derecho, terminologia tecnica) sera limitada y el riesgo de traducciones erroneas o inconsistentes es alto.
 - Riesgo de alucinacion y de omisiones: como todo modelo de traduccion neuronal, puede generar contenido no presente en el original, inventar nombres propios o saltarse fragmentos, especialmente en entradas largas o mal segmentadas.
@@ -86,7 +86,7 @@ El modelo de este repositorio es aproximadamente 8,5 veces mas pequeno que NLLB-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-en-rn
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-en-rn
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-rn
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

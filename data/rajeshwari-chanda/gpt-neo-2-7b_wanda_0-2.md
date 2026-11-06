@@ -27,7 +27,7 @@ El dato objetivo más sólido es el recuento de parámetros en safetensors: 2.65
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de GPT-Neo: un transformer decoder-only con atención causal que combina capas de atención global y capas de atención local de ventana reducida (el modelo base usa ventana de 256 tokens en las capas locales), normalización por capas y embeddings de posición aprendidos. La model card del checkpoint no aporta ninguna información sobre entrenamiento, ajuste fino, RLHF o DPO; el tag arxiv:1910.09700 presente en los metadatos corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono, no a un artículo técnico del modelo, ya que ese enlace forma parte de la plantilla estándar de model cards de HuggingFace.
+La arquitectura subyacente es la de GPT-Neo: un transformer decoder-only con atención causal que combina capas de atención global y capas de atención local de ventana reducida (el modelo base usa ventana de 256 tokens en las capas locales), normalización por capas y embeddings de posición aprendidos. La model card del checkpoint no aporta ninguna información sobre entrenamiento, ajuste fino, RLHF o DPO; el tag arxiv:1910.09700 presente en los metadatos corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono, no a un artículo técnico del modelo, ya que ese enlace forma parte de la plantilla estándar de model cards de Hugging Face.
 
 La única modificación documentada, y solo de forma indirecta a través del nombre del repositorio, es la aplicación de poda Wanda. Este método puntúa cada peso por el producto entre su valor absoluto y la norma L2 de la activación de entrada correspondiente, calculada sobre un pequeño conjunto de calibración, y elimina los pesos con menor puntuación sin reentrenamiento ni actualización de los pesos restantes. Es un enfoque de poda post-entrenamiento de una sola pasada, más barato computacionalmente que alternativas como SparseGPT, y con resultados competitivos en modelos de la familia GPT. No se especifica en la información disponible qué conjunto de calibración se usó, ni la granularidad de la poda, ni si se aplicaron capas de recuperación de precisión.
 
@@ -98,8 +98,8 @@ En rendimiento no procede comparación numérica: el checkpoint analizado no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_wanda_0.2
-- Página del autor en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/models
+- Modelo en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_wanda_0.2
+- Página del autor en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/models
 - Modelo relacionado del mismo autor (SparseGPT sobre OPT): https://huggingface.co/Rajeshwari-Chanda/OPT-2.7B_SparseGPT_70
 - Modelo base: https://huggingface.co/EleutherAI/gpt-neo-2.7B
 - Ficha informativa del modelo base en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/gpt-neo-27b-eleutherai

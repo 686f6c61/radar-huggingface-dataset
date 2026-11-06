@@ -88,7 +88,7 @@ La ventaja diferencial de LFM3-Audio-2B-GGUF frente a las alternativas de 7-8 B 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/LiquidAI/LFM3-Audio-2B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/LiquidAI/LFM3-Audio-2B-GGUF
 - Modelo base (safetensors): https://huggingface.co/LiquidAI/LFM3-Audio-2B
 - Pull request de soporte en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31257
 - Guía de despliegue en llama.cpp de Liquid AI: https://docs.liquid.ai/deployment/on-device/llama-cpp
@@ -98,4 +98,4 @@ La ventaja diferencial de LFM3-Audio-2B-GGUF frente a las alternativas de 7-8 B 
 - Consola y API: https://console.liquid.ai/dashboard
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 
-Nota: la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la información del repositorio en HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la información del repositorio en Hugging Face.

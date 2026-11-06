@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Chethan273/sih-airfare-price-model es un repositorio de modelo alojado en HuggingFace por el usuario Chethan273. El identificador del repositorio sugiere que se trata de un modelo orientado a la prediccion de precios de billetes de avion, presumiblemente desarrollado en el contexto de un proyecto tipo hackathon (la abreviatura "sih" coincide con la de Smart India Hackathon), aunque esta interpretacion no esta confirmada por ninguna documentacion publicada en la ficha del modelo.
+Chethan273/sih-airfare-price-model es un repositorio de modelo alojado en Hugging Face por el usuario Chethan273. El identificador del repositorio sugiere que se trata de un modelo orientado a la prediccion de precios de billetes de avion, presumiblemente desarrollado en el contexto de un proyecto tipo hackathon (la abreviatura "sih" coincide con la de Smart India Hackathon), aunque esta interpretacion no esta confirmada por ninguna documentacion publicada en la ficha del modelo.
 
-En el momento de la consulta, la ficha de HuggingFace no incluye informacion tecnica alguna: no se declara pipeline de tarea, no se especifica licencia, no se indican idiomas soportados y no se describe arquitectura, tamano ni proceso de entrenamiento. Los unicos metadatos disponibles son la fecha de creacion y actualizacion (15 de septiembre de 2026, ambos identicos), un contador de 0 descargas y 1 like.
+En el momento de la consulta, la ficha de Hugging Face no incluye informacion tecnica alguna: no se declara pipeline de tarea, no se especifica licencia, no se indican idiomas soportados y no se describe arquitectura, tamano ni proceso de entrenamiento. Los unicos metadatos disponibles son la fecha de creacion y actualizacion (15 de septiembre de 2026, ambos identicos), un contador de 0 descargas y 1 like.
 
 Por tanto, esta ficha no puede validar ni refutar las capacidades del modelo. Su relevancia actual es limitada dentro del ecosistema: se trata de un artefacto sin adopcion medible y sin documentacion asociada, por lo que cualquier evaluacion tecnica requeriria inspeccionar directamente los archivos del repositorio (pesos, configuracion y posible codigo de inferencia), algo que no cubre la informacion disponible en esta busqueda.
 
@@ -30,13 +30,13 @@ Por tanto, esta ficha no puede validar ni refutar las capacidades del modelo. Su
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace. No hay datos sobre el tipo de red (transformer, modelo tabular de gradient boosting, regresion lineal, red densa u otra alternativa), el numero de parametros, la funcion de perdida, el volumen de datos de entrenamiento ni la composicion del conjunto de datos.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face. No hay datos sobre el tipo de red (transformer, modelo tabular de gradient boosting, regresion lineal, red densa u otra alternativa), el numero de parametros, la funcion de perdida, el volumen de datos de entrenamiento ni la composicion del conjunto de datos.
 
 Tampoco se documenta si el entrenamiento incluyo tecnicas de ajuste fino supervisado, RLHF, DPO u otro procedimiento de alineacion. Dado que el repositorio no presenta model card, no es posible determinar si se trata de un modelo de lenguaje, un modelo de regresion sobre variables tabulares o un artefacto de otro tipo. Cualquier afirmacion al respecto seria especulativa.
 
 ## Capacidades
 
-No es posible enumerar capacidades verificadas a partir de la informacion disponible. No hay model card, no hay ejemplos de uso, no hay descripcion de tareas soportadas y no se declara pipeline en HuggingFace.
+No es posible enumerar capacidades verificadas a partir de la informacion disponible. No hay model card, no hay ejemplos de uso, no hay descripcion de tareas soportadas y no se declara pipeline en Hugging Face.
 
 A partir unicamente del identificador del repositorio ("airfare-price-model"), cabe la hipotesis no confirmada de que el artefacto este pensado para estimar precios de billetes de avion a partir de variables de entrada (ruta, fecha, aerolinea, escalas, antelacion de compra, etc.). Esta hipotesis no debe tomarse como una capacidad documentada. En consecuencia:
 
@@ -96,6 +96,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Chethan273/sih-airfare-price-model
+- Repositorio en Hugging Face: https://huggingface.co/Chethan273/sih-airfare-price-model
 
 No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs tecnicos, repositorios de codigo o demos.

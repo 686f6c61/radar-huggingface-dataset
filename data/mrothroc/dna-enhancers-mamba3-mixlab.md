@@ -79,10 +79,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Accuracy en human_enhancers_cohn | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dna-enhancers-mamba3-mixlab (este modelo) | 14,34 M | 512 | 0,728 (clasificador ajustado) | MIT | HuggingFace, codigo personalizado |
-| dna-enhancers-attention-mixlab (baseline del autor) | Mismo tamano segun la model card | no disponible | 0,717 (clasificador ajustado) | no disponible | HuggingFace |
+| dna-enhancers-mamba3-mixlab (este modelo) | 14,34 M | 512 | 0,728 (clasificador ajustado) | MIT | Hugging Face, codigo personalizado |
+| dna-enhancers-attention-mixlab (baseline del autor) | Mismo tamano segun la model card | no disponible | 0,717 (clasificador ajustado) | no disponible | Hugging Face |
 | CNN de referencia de Genomic Benchmarks | no disponible | no disponible | ~0,69-0,70 | no disponible | Genomic Benchmarks |
-| Nucleotide Transformer (InstaDeep), DNABERT-2, HyenaDNA | no disponible | no disponible | no disponible | no disponible | HuggingFace y repositorios propios |
+| Nucleotide Transformer (InstaDeep), DNABERT-2, HyenaDNA | no disponible | no disponible | no disponible | no disponible | Hugging Face y repositorios propios |
 
 Los tres ultimos modelos se citan por pertenecer a la misma categoria de modelos de lenguaje de ADN preentrenados, pero en la informacion disponible no hay cifras que permitan una comparacion cuantitativa con ellos. El propio autor advierte que este modelo no es un resultado estado del arte: su aportacion es mostrar que un SSM de 14,34 M entrenado en un portatil con tres cromosomas es competitivo frente a modelos preentrenados en el genoma completo de mayor tamano, y que cambiar el mixer es una edicion de configuracion en mixlab.
 
@@ -101,7 +101,7 @@ Los tres ultimos modelos se citan por pertenecer a la misma categoria de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrothroc/dna-enhancers-mamba3-mixlab
+- Modelo en Hugging Face: https://huggingface.co/mrothroc/dna-enhancers-mamba3-mixlab
 - Baseline de atencion del mismo tamano: https://huggingface.co/mrothroc/dna-enhancers-attention-mixlab
 - Repositorio de mixlab: https://github.com/mrothroc/mixlab
 - Cookbook de mixlab, receta de genomica con Mamba: https://github.com/mrothroc/mixlab-cookbook/tree/main/genomics-mamba

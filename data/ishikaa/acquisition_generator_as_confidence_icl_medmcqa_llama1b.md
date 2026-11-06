@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_generator_AS_confidence_icl_medmcqa_llama1b` es un ajuste fino publicado en HuggingFace por el usuario `ishikaa`, con un total de 1.235.814.400 parámetros (aproximadamente 1,24 mil millones) confirmados a partir de los pesos en safetensors. El identificador del repositorio sugiere, sin que exista documentación que lo confirme, que se trata de un modelo derivado de la familia Llama de ~1B de parámetros, entrenado para una tarea de generación relacionada con "acquisition" (probablemente generación de consultas o adquisición de ejemplos), con una estrategia basada en confianza (`AS_confidence`) y aprendizaje en contexto (`icl`) sobre el conjunto de datos MedMCQA, un benchmark de preguntas de opción múltiple de ámbito médico.
+El modelo `ishikaa/acquisition_generator_AS_confidence_icl_medmcqa_llama1b` es un ajuste fino publicado en Hugging Face por el usuario `ishikaa`, con un total de 1.235.814.400 parámetros (aproximadamente 1,24 mil millones) confirmados a partir de los pesos en safetensors. El identificador del repositorio sugiere, sin que exista documentación que lo confirme, que se trata de un modelo derivado de la familia Llama de ~1B de parámetros, entrenado para una tarea de generación relacionada con "acquisition" (probablemente generación de consultas o adquisición de ejemplos), con una estrategia basada en confianza (`AS_confidence`) y aprendizaje en contexto (`icl`) sobre el conjunto de datos MedMCQA, un benchmark de preguntas de opción múltiple de ámbito médico.
 
-La relevancia de este modelo es acotada y muy específica: se enmarca en el ámbito de la investigación sobre generación aumentada y selección de datos, no en el de asistentes conversacionales de propósito general. Al no existir model card sustantiva (la publicada es la plantilla automática de HuggingFace sin rellenar), no hay información sobre el procedimiento de entrenamiento, la composición del dataset, la licencia ni los idiomas soportados.
+La relevancia de este modelo es acotada y muy específica: se enmarca en el ámbito de la investigación sobre generación aumentada y selección de datos, no en el de asistentes conversacionales de propósito general. Al no existir model card sustantiva (la publicada es la plantilla automática de Hugging Face sin rellenar), no hay información sobre el procedimiento de entrenamiento, la composición del dataset, la licencia ni los idiomas soportados.
 
 Se trata, por tanto, de un artefacto de investigación con cero descargas y cero "likes" en el momento de la consulta, sin paper asociado, sin demo y sin métricas publicadas. Cualquier uso en producción requeriría una evaluación propia previa y la clarificación de los términos de licencia, que en la información disponible figuran como no disponibles.
 
@@ -23,7 +23,7 @@ Se trata, por tanto, de un artefacto de investigación con cero descargas y cero
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura mas alla de los metadatos de HuggingFace. La etiqueta `llama` y el sufijo `llama1b` del identificador permiten inferir que se trata de un transformer decoder-only con atencion causal, probablemente derivado de Llama 3.2 1B o de una variante equivalente de ~1,2 mil millones de parametros, pero esta inferencia no esta confirmada por el autor. El repositorio pesa 5,0 GB, lo que para 1.235.814.400 parametros implicaria pesos en fp32 (aproximadamente 4,94 GB) o una combinacion de pesos en fp16 con estados de optimizador, sin que sea posible determinarlo con los datos disponibles.
+No hay informacion publicada sobre la arquitectura mas alla de los metadatos de Hugging Face. La etiqueta `llama` y el sufijo `llama1b` del identificador permiten inferir que se trata de un transformer decoder-only con atencion causal, probablemente derivado de Llama 3.2 1B o de una variante equivalente de ~1,2 mil millones de parametros, pero esta inferencia no esta confirmada por el autor. El repositorio pesa 5,0 GB, lo que para 1.235.814.400 parametros implicaria pesos en fp32 (aproximadamente 4,94 GB) o una combinacion de pesos en fp16 con estados de optimizador, sin que sea posible determinarlo con los datos disponibles.
 
 Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT, ni sobre innovaciones tecnicas concretas. El nombe del repositorio (`medmcqa`) indica una vinculacion con el dataset MedMCQA de preguntas medicas de opcion multiple, y los fragmentos `AS_confidence` e `icl` sugieren un entrenamiento orientado a seleccion de ejemplos por confianza y a aprendizaje en contexto, pero se trata de una hipotesis basada en el identificador, no de un dato verificado. La model card publicada es la plantilla automatica sin contenido sustantivo.
 
@@ -75,7 +75,7 @@ La diferencia principal frente a estas alternativas no esta en el rendimiento, q
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: la publicada es la plantilla automatica de HuggingFace sin rellenar, por lo que no hay informacion verificable sobre entrenamiento, datos o comportamiento esperado.
+- Ausencia total de model card: la publicada es la plantilla automatica de Hugging Face sin rellenar, por lo que no hay informacion verificable sobre entrenamiento, datos o comportamiento esperado.
 - Licencia no disponible: sin terminos de licencia declarados no es posible determinar si el uso comercial esta permitido. Cualquier despliegue en produccion deberia aclarar este punto con el autor antes de proceder.
 - Riesgo de alucinacion: al ser un modelo de ~1,2 mil millones de parametros, la tasa de generacion de contenido incorrecto o inventado es previsiblemente alta, especialmente en un dominio especializado como el medico.
 - Ambito medico: un modelo entrenado o evaluado sobre MedMCQA no debe usarse para ofrecer consejo clinico, diagnostico ni recomendaciones de tratamiento sin supervision profesional y validacion externa.
@@ -88,7 +88,7 @@ La diferencia principal frente a estas alternativas no esta en el rendimiento, q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_icl_medmcqa_llama1b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_icl_medmcqa_llama1b
 - Dataset MedMCQA (referencia inferida del identificador, no confirmada por el autor): https://huggingface.co/datasets/medmcqa
 - Calculadora de impacto de machine learning citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

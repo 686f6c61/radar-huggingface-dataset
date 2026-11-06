@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jaisidhsingh/SignedKDA-kda-neg-eig-value` es un repositorio de HuggingFace creado por el usuario jaisidhsingh, que según su perfil de GitHub es un investigador en aprendizaje profundo y estudiante de máster en la Universidad de Tübingen. El nombre del repositorio sugiere que podría estar relacionado con técnicas de atención con núcleos (KDA, probablemente Kernel-based Attention) y valores propios negativos, pero no se dispone de documentación pública que confirme su arquitectura o propósito.
+El modelo `jaisidhsingh/SignedKDA-kda-neg-eig-value` es un repositorio de Hugging Face creado por el usuario jaisidhsingh, que según su perfil de GitHub es un investigador en aprendizaje profundo y estudiante de máster en la Universidad de Tübingen. El nombre del repositorio sugiere que podría estar relacionado con técnicas de atención con núcleos (KDA, probablemente Kernel-based Attention) y valores propios negativos, pero no se dispone de documentación pública que confirme su arquitectura o propósito.
 
 El repositorio contiene un único archivo de pesos en formato `safetensors` con 347.618.128 parámetros, lo que sitúa al modelo en la escala de aproximadamente 350M de parámetros. El tamaño total del repositorio es de 1,4 GB. No se proporciona información sobre la arquitectura, el entrenamiento, la licencia o las capacidades del modelo.
 
@@ -60,6 +60,6 @@ No se dispone de información para realizar una comparativa. No existen datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jaisidhsingh/SignedKDA-kda-neg-eig-value
+- Repositorio Hugging Face: https://huggingface.co/jaisidhsingh/SignedKDA-kda-neg-eig-value
 - Perfil del autor en GitHub: https://github.com/jaisidhsingh/
 - Página personal del autor: https://jaisidhsingh.github.io/

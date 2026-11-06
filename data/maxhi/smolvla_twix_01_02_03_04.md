@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA es un modelo de visión-lenguaje-acción (VLA) compacto y eficiente, diseñado para control robótico por aprendizaje por imitación. Este repositorio concreto, `MaxHi/smolvla_twix_01_02_03_04`, es un ajuste fino (fine-tuning) del modelo base `lerobot/smolvla_base` sobre el dataset de demostraciones `MaxHi/gm_twix_01_02_03_04_merged`, que contiene episodios de manipulación robótica. El modelo fue entrenado y subido al Hub mediante la librería LeRobot de HuggingFace, y está pensado para ser desplegado en hardware de consumo, lo que lo hace accesible para laboratorios de investigación y desarrolladores sin infraestructura de alto coste.
+SmolVLA es un modelo de visión-lenguaje-acción (VLA) compacto y eficiente, diseñado para control robótico por aprendizaje por imitación. Este repositorio concreto, `MaxHi/smolvla_twix_01_02_03_04`, es un ajuste fino (fine-tuning) del modelo base `lerobot/smolvla_base` sobre el dataset de demostraciones `MaxHi/gm_twix_01_02_03_04_merged`, que contiene episodios de manipulación robótica. El modelo fue entrenado y subido al Hub mediante la librería LeRobot de Hugging Face, y está pensado para ser desplegado en hardware de consumo, lo que lo hace accesible para laboratorios de investigación y desarrolladores sin infraestructura de alto coste.
 
 Con 450 millones de parámetros, este VLA es significativamente más pequeño que alternativas como OpenVLA (7B), lo que permite inferencia en tiempo real en GPUs de gama media. Su relevancia actual radica en la tendencia hacia modelos de control robótico abiertos, reproducibles y de bajo coste computacional, alineados con el ecosistema LeRobot. La licencia Apache 2.0 facilita su uso comercial y académico sin restricciones importantes.
 
@@ -58,8 +58,8 @@ No se dispone de información comparativa en el repositorio. Sin embargo, se pue
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolVLA (este) | 450M | no disponible | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | no disponible | MIT | HuggingFace |
+| SmolVLA (este) | 450M | no disponible | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | no disponible | MIT | Hugging Face |
 | RT-2 (Google) | 55B | no disponible | propietaria | no abierto |
 
 La comparación directa no es posible por falta de datos de rendimiento, pero SmolVLA destaca por su tamaño reducido y licencia permisiva.
@@ -75,7 +75,7 @@ La comparación directa no es posible por falta de datos de rendimiento, pero Sm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MaxHi/smolvla_twix_01_02_03_04
+- Repositorio Hugging Face: https://huggingface.co/MaxHi/smolvla_twix_01_02_03_04
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - LeRobot (librería): https://github.com/huggingface/lerobot
 - Documentación LeRobot: https://huggingface.co/docs/lerobot/index

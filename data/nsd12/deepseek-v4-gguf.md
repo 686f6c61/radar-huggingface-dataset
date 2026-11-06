@@ -72,7 +72,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. En los resulta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nsd12/deepseek-v4-gguf
+- Repositorio Hugging Face: https://huggingface.co/nsd12/deepseek-v4-gguf
 - Motor de inferencia ds4: https://github.com/antirez/ds4
 - Web oficial de DeepSeek: https://deepseek.com/en/index.html
 - Guia de despliegue local de DeepSeek V4: https://deepseek-v4.io/local-deployment

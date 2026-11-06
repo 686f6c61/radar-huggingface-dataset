@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ldov/bertweet-pt-sentiment (este) | 135M | No disponible | pt | No disponible | HuggingFace |
-| pysentimiento/bertweet-pt-sentiment | 135M | No disponible | pt | No disponible | HuggingFace |
-| finiteautomata/bertweet-base-sentiment-analysis | 135M | 512 | en | No disponible | HuggingFace |
+| ldov/bertweet-pt-sentiment (este) | 135M | No disponible | pt | No disponible | Hugging Face |
+| pysentimiento/bertweet-pt-sentiment | 135M | No disponible | pt | No disponible | Hugging Face |
+| finiteautomata/bertweet-base-sentiment-analysis | 135M | 512 | en | No disponible | Hugging Face |
 
 Los tres modelos comparten la misma arquitectura base (BERTweet/RoBERTa) y tamaño. El modelo de `finiteautomata` está entrenado para inglés, mientras que los otros dos para portugués. No hay diferencias sustanciales entre `ldov` y `pysentimiento`; de hecho, es probable que sean el mismo modelo con distinto propietario del repositorio.
 
@@ -73,7 +73,7 @@ Los tres modelos comparten la misma arquitectura base (BERTweet/RoBERTa) y tama�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ldov/bertweet-pt-sentiment
+- Modelo en Hugging Face: https://huggingface.co/ldov/bertweet-pt-sentiment
 - Repositorio de pysentimiento: https://github.com/pysentimiento/pysentimiento/
 - Paper de pysentimiento (arXiv): https://arxiv.org/abs/2106.09462
 - Modelo base BERTabaporu: https://huggingface.co/pablocosta/bertabaporu-base-uncased

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucafi-scher27/mocov3-classification-dev` es un repositorio de HuggingFace publicado por el usuario `lucafi-scher27` que contiene una implementación funcional de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificación. El repositorio se presenta explícitamente como un punto de partida experimental: el propio autor indica que no reclama ninguna puntuación de benchmark, que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe interpretarse como un modelo entrenado.
+`lucafi-scher27/mocov3-classification-dev` es un repositorio de Hugging Face publicado por el usuario `lucafi-scher27` que contiene una implementación funcional de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificación. El repositorio se presenta explícitamente como un punto de partida experimental: el propio autor indica que no reclama ninguna puntuación de benchmark, que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe interpretarse como un modelo entrenado.
 
 El dato más relevante para evaluarlo es su tamaño real: 24.832 parámetros totales según los pesos en safetensors, lo que equivale a unos 99 KB en fp32. Esto contrasta con la configuración declarada en la model card, que describe la escala como "huge" y especifica atención dispersa (sparse), fusión bilineal, activación approximate gelu y normalización rmsnorm. Un recuento de 24.832 parámetros es incompatible con cualquier configuración de escala "huge" de un transformer, por lo que la ficha debe leerse como una plantilla de código, no como un modelo utilizable.
 
@@ -22,10 +22,10 @@ Por todo ello, su relevancia actual es limitada: sirve como esqueleto reproducib
 | Formato de pesos | safetensors (`model.safetensors`); también se incluyen `finetune.py`, `config.json` y `training_args.json` |
 | Tarea declarada | Clasificación (según tag `classification`) |
 | Framework | PyTorch |
-| Tamaño del repositorio | 0,0 GB (redondeado por HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (redondeado por Hugging Face) |
 | Descargas / likes | 10 descargas, 0 likes |
 | Fecha de creación / actualización | 2026-09-22 (creación y última actualización prácticamente simultáneas) |
-| Pipeline de HuggingFace | No disponible (no se expone pipeline `image-classification` ni `text-classification`) |
+| Pipeline de Hugging Face | No disponible (no se expone pipeline `image-classification` ni `text-classification`) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ No se han encontrado en la búsqueda web modelos comparables ni datos verificabl
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `lucafi-scher27/mocov3-classification-dev` | 24.832 (dato real de safetensors) | No disponible | MIT | HuggingFace, 10 descargas |
+| `lucafi-scher27/mocov3-classification-dev` | 24.832 (dato real de safetensors) | No disponible | MIT | Hugging Face, 10 descargas |
 | Backbones MoCo v3 de referencia | No disponible en la información proporcionada | No disponible | No disponible | No verificado en la búsqueda |
 | Checkpoints de clasificación ViT de propósito general | No disponible en la información proporcionada | No disponible | No disponible | No verificado en la búsqueda |
 
@@ -82,7 +82,7 @@ No se han encontrado en la búsqueda web modelos comparables ni datos verificabl
 - El checkpoint es una inicialización sin entrenar: no ha sido auditado en robustez, equidad ni transferencia de dominio, según declara el propio README.
 - Incoherencia interna entre la configuración declarada (escala "huge") y el tamaño real de los pesos (24.832 parámetros), lo que impide asumir que `config.json` describa el modelo efectivamente publicado.
 - Sin benchmarks, sin métricas de tarea y sin evaluación con múltiples semillas: cualquier cifra de rendimiento atribuida al modelo sería inventada.
-- No se documentan idiomas, vocabulario, ni si la entrada es imagen o texto, pese al tag `classification`; la ausencia de pipeline de HuggingFace agrava esta ambigüedad.
+- No se documentan idiomas, vocabulario, ni si la entrada es imagen o texto, pese al tag `classification`; la ausencia de pipeline de Hugging Face agrava esta ambigüedad.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de conclusiones erróneas si se interpreta el repositorio como un modelo entrenado.
 - Licencia MIT: permite uso comercial y modificación, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando se utilice con datasets externos.
 - Al ser una implementación propia, no carga con `AutoModel` ni con `pipeline` sin escribir un adaptador específico.
@@ -91,5 +91,5 @@ No se han encontrado en la búsqueda web modelos comparables ni datos verificabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucafi-scher27/mocov3-classification-dev
+- Hugging Face: https://huggingface.co/lucafi-scher27/mocov3-classification-dev
 - Paper, blog, repositorio de código o demo adicionales: no disponible. La búsqueda web realizada devolvió únicamente sitios de venta de entradas (Ticketmaster, Songkick, Prime Seats, Events List), sin ninguna relación con el modelo ni con MoCo v3.

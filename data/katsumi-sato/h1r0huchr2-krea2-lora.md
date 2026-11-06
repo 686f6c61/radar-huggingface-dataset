@@ -2,7 +2,7 @@
 
 ## Resumen
 
-H1r0HuChr2 Krea 2 LoRA es un adaptador LoRA de tipo personaje (character LoRA) entrenado sobre el modelo base de generacion de imagenes `krea/Krea-2-Raw`. Lo publica el usuario katsumi-sato en HuggingFace y su proposito es permitir la generacion de un personaje concreto mediante la palabra activadora (trigger word) `H1r0HuChr2` cuando se usa junto con modelos de la familia Krea 2.
+H1r0HuChr2 Krea 2 LoRA es un adaptador LoRA de tipo personaje (character LoRA) entrenado sobre el modelo base de generacion de imagenes `krea/Krea-2-Raw`. Lo publica el usuario katsumi-sato en Hugging Face y su proposito es permitir la generacion de un personaje concreto mediante la palabra activadora (trigger word) `H1r0HuChr2` cuando se usa junto con modelos de la familia Krea 2.
 
 No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango (rank 32, alpha 32) que se carga sobre un modelo de difusion de generacion de imagenes. El repositorio ocupa 0,2 GB, esta etiquetado con `diffusers`, `lora` y `krea-2`, y su unico archivo de pesos es `h1r0huchr2_krea2.safetensors`.
 
@@ -68,7 +68,7 @@ No disponible. No se proporcionan otros LoRA de personaje para Krea 2 ni modelos
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: al no especificarse licencia en HuggingFace ni en la model card, el uso comercial y la redistribucion quedan en un limbo legal; conviene contactar con el autor antes de usarlo en produccion.
+- Licencia no declarada: al no especificarse licencia en Hugging Face ni en la model card, el uso comercial y la redistribucion quedan en un limbo legal; conviene contactar con el autor antes de usarlo en produccion.
 - Dataset muy reducido: solo 21 pares imagen-texto, lo que aumenta el riesgo de sobreajuste (overfitting) al personaje y de escasa variabilidad en poses, fondos o estilos.
 - Riesgo de sesgo de identidad: el LoRA solo reproduce el personaje con el que se entreno; fuera de ese dominio genera resultados poco fiables o incoherentes.
 - Dependencia del modelo base: su calidad final esta condicionada por `krea/Krea-2-Raw` / `krea/Krea-2-Turbo`; sin ellos el adaptador no es utilizable.
@@ -79,7 +79,7 @@ No disponible. No se proporcionan otros LoRA de personaje para Krea 2 ni modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/katsumi-sato/h1r0huchr2-krea2-lora
+- Modelo en Hugging Face: https://huggingface.co/katsumi-sato/h1r0huchr2-krea2-lora
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Objetivo recomendado: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

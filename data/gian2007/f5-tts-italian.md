@@ -2,7 +2,7 @@
 
 ## Resumen
 
-F5-TTS-italian es un ajuste fino (finetune) del modelo de sintesis de voz F5-TTS, desarrollado por el usuario gian2007 y publicado en HuggingFace bajo licencia CC-BY-4.0. Se trata de un modelo text-to-speech especializado exclusivamente en italiano, entrenado sobre mas de 73 horas del split "train" del dataset ylacombe/cml-tts. El autor indica que el entrenamiento sigue en progreso y que el checkpoint mas avanzado disponible es model_159600.safetensors, correspondiente a unas 290 epocas de las 300 planificadas.
+F5-TTS-italian es un ajuste fino (finetune) del modelo de sintesis de voz F5-TTS, desarrollado por el usuario gian2007 y publicado en Hugging Face bajo licencia CC-BY-4.0. Se trata de un modelo text-to-speech especializado exclusivamente en italiano, entrenado sobre mas de 73 horas del split "train" del dataset ylacombe/cml-tts. El autor indica que el entrenamiento sigue en progreso y que el checkpoint mas avanzado disponible es model_159600.safetensors, correspondiente a unas 290 epocas de las 300 planificadas.
 
 El modelo parte del checkpoint base SWivid/F5-TTS y lo adapta al italiano mediante un proceso de finetune supervisado, con tokenizador a nivel de caracter, precision mixta fp16 y un learning rate de 1e-5 sobre 8 GPU RTX 4090. El resultado es un sistema capaz de sintetizar voz en italiano preservando la puntuacion para modelar pausas y entonacion, aunque con limitaciones reconocidas por el propio autor: perdida de la capacidad de hablar ingles (olvido catastrofico), pronunciacion imperfecta, necesidad de convertir numeros a letras y calidad mejorable en clonacion de voz zero-shot.
 
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gian2007/F5-TTS-italian | no disponible | no aplica (TTS) | italiano | cc-by-4.0 | HuggingFace, 0 descargas, 0 likes en la fecha de consulta |
-| SWivid/F5-TTS (modelo base) | no disponible en la informacion proporcionada | no aplica (TTS) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Referenciado como base_model en HuggingFace |
+| gian2007/F5-TTS-italian | no disponible | no aplica (TTS) | italiano | cc-by-4.0 | Hugging Face, 0 descargas, 0 likes en la fecha de consulta |
+| SWivid/F5-TTS (modelo base) | no disponible en la informacion proporcionada | no aplica (TTS) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Referenciado como base_model en Hugging Face |
 | Otras alternativas TTS multilingues con soporte de italiano | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos verificados de rendimiento ni de especificaciones de terceros en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable con otros sistemas TTS que cubran el italiano.
@@ -90,14 +90,14 @@ No se dispone de datos verificados de rendimiento ni de especificaciones de terc
 - Clonacion de voz zero-shot limitada: el autor atribuye la calidad mejorable a la falta de diversidad de voces en el dataset.
 - Entrenamiento inacabado: el checkpoint publicado corresponde a unas 290 de las 300 epocas previstas; no hay garantia de que sea la version final ni la mejor.
 - Riesgo de alucinacion acustica: en modelos TTS esto se manifiesta como artefactos, repeticiones o prosodia incorrecta, especialmente en textos fuera del dominio del dataset de entrenamiento.
-- Sin senales de validacion externa: cero descargas y cero likes en la fecha de consulta de HuggingFace, sin benchmarks publicados ni evaluaciones de terceros.
+- Sin senales de validacion externa: cero descargas y cero likes en la fecha de consulta de Hugging Face, sin benchmarks publicados ni evaluaciones de terceros.
 - Restricciones de licencia: CC-BY-4.0 permite uso comercial, pero exige atribucion al autor y la indicacion de cambios; conviene revisar tambien las condiciones del dataset ylacombe/cml-tts y del modelo base SWivid/F5-TTS.
 - Calidad del dato de origen: el autor documenta que el campo de texto original contenia artefactos (guiones de particion de palabras) que tuvo que limpiar manualmente, lo que sugiere posibles irregularidades residuales en las transcripciones.
 - Consideraciones eticas y legales sobre la voz: la clonacion de voz exige consentimiento explicito de la persona cuya voz se imita y el cumplimiento de la normativa aplicable sobre sintesis de voz.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gian2007/F5-TTS-italian
+- Modelo en Hugging Face: https://huggingface.co/gian2007/F5-TTS-italian
 - Modelo base: https://huggingface.co/SWivid/F5-TTS
 - Dataset de entrenamiento: https://huggingface.co/datasets/ylacombe/cml-tts
 - Resultados de la busqueda web: no relevantes. La busqueda devolvio exclusivamente enlaces genericos de Instagram (instagram.com, instagram.com/reels, about.instagram.com, help.instagram.com, business.instagram.com), sin ninguna relacion con el modelo, su arquitectura o sus benchmarks. No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales sobre este finetune.

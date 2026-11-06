@@ -76,7 +76,7 @@ La comparativa se basa en la información disponible; los datos de Qwen 3.6 abli
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/DarkRomeo88/gemma-4-12b-it-heretic-comfyui
+- Repositorio de Hugging Face: https://huggingface.co/DarkRomeo88/gemma-4-12b-it-heretic-comfyui
 - Modelo base oficial de Google: https://huggingface.co/google/gemma-4-12B
 - Documentación de ComfyUI para Gemma 4: https://docs.comfy.org/tutorials/llm/gemma4/gemma4
 - Página oficial de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

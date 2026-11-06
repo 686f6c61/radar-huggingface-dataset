@@ -6,7 +6,7 @@ T Station Style es un adaptador LoRA de estilo para Stable Diffusion XL, publica
 
 El modelo resuelve un problema acotado de consistencia visual: fijar una paleta y un lenguaje grafico determinados sin necesidad de reentrenar el modelo base ni de describir el estilo en cada prompt. Es relevante para equipos que producen contenido grafico derivado de una identidad visual propia (en este caso, el juego de mesa hongkones T Station · Time Playground v1.2) y quieren automatizar la generacion de variaciones coherentes.
 
-La ficha se limita a los datos publicados en la model card y en los metadatos de HuggingFace. El repositorio ocupa 0,1 GB, no registra descargas ni likes en el momento de la consulta y se distribuye bajo licencia OpenRAIL++.
+La ficha se limita a los datos publicados en la model card y en los metadatos de Hugging Face. El repositorio ocupa 0,1 GB, no registra descargas ni likes en el momento de la consulta y se distribuye bajo licencia OpenRAIL++.
 
 ## Especificaciones tecnicas
 
@@ -64,9 +64,9 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas en la inform
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| T Station Style LoRA | LoRA de estilo | SDXL 1.0 | ~23 M entrenables | no aplica | openrail++ | HuggingFace (0 descargas) |
-| Adaptadores de estilo SDXL genericos | LoRA de estilo | SDXL 1.0 | variable | no aplica | variable | HuggingFace / Civitai |
-| Modelos SDXL fine-tuneados completos | Fine-tune completo | SDXL 1.0 | ~2,6 B (UNet) | no aplica | variable | HuggingFace |
+| T Station Style LoRA | LoRA de estilo | SDXL 1.0 | ~23 M entrenables | no aplica | openrail++ | Hugging Face (0 descargas) |
+| Adaptadores de estilo SDXL genericos | LoRA de estilo | SDXL 1.0 | variable | no aplica | variable | Hugging Face / Civitai |
+| Modelos SDXL fine-tuneados completos | Fine-tune completo | SDXL 1.0 | ~2,6 B (UNet) | no aplica | variable | Hugging Face |
 
 No se dispone de datos verificables para comparar calidad, fidelidad de estilo ni rendimiento con esas alternativas.
 
@@ -83,7 +83,7 @@ No se dispone de datos verificables para comparar calidad, fidelidad de estilo n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hkblockchaintechnology/t-station-style-lora
+- Modelo en Hugging Face: https://huggingface.co/hkblockchaintechnology/t-station-style-lora
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Space del juego Time Playground: https://huggingface.co/spaces/hkblockchaintechnology/time-playground-v1.1
 - Repositorio de assets (script de entrenamiento): https://huggingface.co/hkblockchaintechnology/time-playground-v1.1-assets

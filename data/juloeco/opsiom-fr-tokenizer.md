@@ -61,5 +61,5 @@ No disponible. No se conocen tokenizers comparables publicados por el mismo auto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JuloEco/opsiom-fr-tokenizer
+- Repositorio Hugging Face: https://huggingface.co/JuloEco/opsiom-fr-tokenizer
 - Repositorio GitHub del autor (relacion no confirmada): https://github.com/JuloEco/Opix_AI

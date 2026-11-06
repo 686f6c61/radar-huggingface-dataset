@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Piper TTS TR Ilkiz Medium es un modelo de síntesis de voz (text-to-speech) para turco, entrenado sobre la arquitectura Piper, que a su vez implementa VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech). Lo publica el usuario ilkeraktuna en HuggingFace bajo licencia MIT, con el identificador `ilkeraktuna/piper-tts-tr-ilkiz-medium`. El modelo está orientado a generar voz femenina en turco a partir de texto plano y se distribuye en formato ONNX, lo que permite su ejecución con el binario `piper` o mediante integraciones en Python.
+Piper TTS TR Ilkiz Medium es un modelo de síntesis de voz (text-to-speech) para turco, entrenado sobre la arquitectura Piper, que a su vez implementa VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech). Lo publica el usuario ilkeraktuna en Hugging Face bajo licencia MIT, con el identificador `ilkeraktuna/piper-tts-tr-ilkiz-medium`. El modelo está orientado a generar voz femenina en turco a partir de texto plano y se distribuye en formato ONNX, lo que permite su ejecución con el binario `piper` o mediante integraciones en Python.
 
 El problema que resuelve es la falta de voces turcas de calidad dentro del ecosistema Piper, un motor de TTS ligero y de código abierto muy extendido para asistentes locales, domótica y aplicaciones de accesibilidad. Al estar empaquetado como ONNX, el modelo puede ejecutarse en CPU sin GPU dedicada, lo que lo hace adecuado para dispositivos de borde y despliegues de bajo coste. El repositorio ocupa aproximadamente 0,1 GB, un tamaño coherente con un checkpoint VITS de tamaño "medium".
 
@@ -23,7 +23,7 @@ La relevancia actual del modelo es limitada pero concreta: cubre un nicho (TTS t
 | Frecuencia de muestreo | no disponible (la model card muestra un marcador sin rellenar) |
 | Genero de voz | femenino |
 | Tamano del repositorio | ~0,1 GB |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Idioma | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| piper-tts-tr-ilkiz-medium (este modelo) | VITS / Piper | Turco | MIT | ONNX | HuggingFace |
-| Otras voces Piper para turco | VITS / Piper | Turco | Variable (MIT o similar) | ONNX | Repositorios Piper / HuggingFace |
-| Coqui TTS (modelos turcos) | VITS / Tacotron | Turco | Variable (MPL-2.0 en el framework) | Checkpoint PyTorch | Coqui / HuggingFace |
+| piper-tts-tr-ilkiz-medium (este modelo) | VITS / Piper | Turco | MIT | ONNX | Hugging Face |
+| Otras voces Piper para turco | VITS / Piper | Turco | Variable (MIT o similar) | ONNX | Repositorios Piper / Hugging Face |
+| Coqui TTS (modelos turcos) | VITS / Tacotron | Turco | Variable (MPL-2.0 en el framework) | Checkpoint PyTorch | Coqui / Hugging Face |
 | Modelos TTS comerciales (p. ej., Google Cloud TTS, Azure) | No público | Turco | Propietaria | API | Servicios en la nube |
 
 No se dispone de datos de rendimiento comparativo (MOS, WER) entre este modelo y las alternativas, por lo que la comparativa se limita a parámetros estructurales y licencia. La ventaja principal de este checkpoint frente a alternativas comerciales es la licencia MIT y la ejecución local en CPU; su desventaja es la ausencia de documentación técnica y de métricas publicadas.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo (MOS, WER) entre este modelo y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ilkeraktuna/piper-tts-tr-ilkiz-medium
+- Hugging Face: https://huggingface.co/ilkeraktuna/piper-tts-tr-ilkiz-medium
 - Repositorio oficial de Piper (motor de inferencia): https://github.com/rhasspy/piper
 - Documentación de Piper: https://github.com/rhasspy/piper/blob/master/README.md
 - Paper de VITS (arquitectura base): https://arxiv.org/abs/2106.06103

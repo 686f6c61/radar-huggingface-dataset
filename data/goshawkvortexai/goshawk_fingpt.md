@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goshawk_Fingpt (publicado internamente como FinGPT-Crypto v5) es un ajuste fino mediante LoRA sobre el modelo base Qwen3-8B, desarrollado por el usuario de HuggingFace GoshawkVortexAI (Ayberk Binbir). Su proposito es muy concreto: dado un titular de noticias mas un contexto de mercado (precio, funding rate, regimen de volatilidad, tendencia, alineacion con BTC, etc.), el modelo devuelve un veredicto estructurado en JSON con puntuaciones de conviccion, factores de soporte, preocupaciones y direccion esperada en varios horizontes temporales (1h, 4h, 24h). No es un modelo de proposito general, sino un componente especializado dentro de un pipeline de trading de criptomonedas.
+Goshawk_Fingpt (publicado internamente como FinGPT-Crypto v5) es un ajuste fino mediante LoRA sobre el modelo base Qwen3-8B, desarrollado por el usuario de Hugging Face GoshawkVortexAI (Ayberk Binbir). Su proposito es muy concreto: dado un titular de noticias mas un contexto de mercado (precio, funding rate, regimen de volatilidad, tendencia, alineacion con BTC, etc.), el modelo devuelve un veredicto estructurado en JSON con puntuaciones de conviccion, factores de soporte, preocupaciones y direccion esperada en varios horizontes temporales (1h, 4h, 24h). No es un modelo de proposito general, sino un componente especializado dentro de un pipeline de trading de criptomonedas.
 
 El modelo cuenta con 8.190.735.360 parametros (aproximadamente 8,19 mil millones) y se distribuye unicamente como un archivo GGUF cuantizado en Q8_0 de 8,7 GB, pensado para ejecutarse con Ollama o llama.cpp. El entrenamiento se realizo en Apple Silicon con MLX-LM, partiendo de una version de Qwen3-8B cuantizada a 4 bits durante el entrenamiento, con un adaptador LoRA de rango 8 aplicado sobre 16 de las 36 capas del transformer.
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha es doble: por un lado, ilustra un flujo de trabajo d
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada; el Modelfile de referencia fija num_ctx 4096 y el entrenamiento uso max_seq_length 1024 |
 | Tipos de cuantizacion | GGUF Q8_0 (8,7 GB) es el unico formato publicado; el entrenamiento se hizo sobre base cuantizada a 4 bits |
-| Idiomas soportados | No disponible (la model card no especifica idiomas; el tag "conversational" aparece en HuggingFace) |
+| Idiomas soportados | No disponible (la model card no especifica idiomas; el tag "conversational" aparece en Hugging Face) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (Q8_0); no se documentan pesos en safetensors del adaptador LoRA en la model card |
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Goshawk_Fingpt (FinGPT-Crypto v5) | 8,19B (LoRA sobre 16 de 36 capas) | No disponible (num_ctx 4096 en el Modelfile; max_seq_length 1024 en entrenamiento) | GGUF Q8_0 | Apache-2.0 | 0 descargas, 0 likes en HuggingFace |
+| Goshawk_Fingpt (FinGPT-Crypto v5) | 8,19B (LoRA sobre 16 de 36 capas) | No disponible (num_ctx 4096 en el Modelfile; max_seq_length 1024 en entrenamiento) | GGUF Q8_0 | Apache-2.0 | 0 descargas, 0 likes en Hugging Face |
 | Qwen3-8B (modelo base) | 8,19B | No disponible en la informacion proporcionada | Safetensors y otras variantes (no detallado aqui) | Apache-2.0 | Modelo ampliamente distribuido, con millones de descargas |
 | FinGPT (AI4Finance Foundation) | No disponible | No disponible | No disponible | No disponible | Ecosistema open source con modelos, APIs y recursos de despliegue publicados en fingpt.io |
 
@@ -91,13 +91,13 @@ La comparacion directa con FinGPT de AI4Finance no puede cuantificarse con la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GoshawkVortexAI/Goshawk_Fingpt
-- Perfil del autor en HuggingFace: https://huggingface.co/GoshawkVortexAI
+- Modelo en Hugging Face: https://huggingface.co/GoshawkVortexAI/Goshawk_Fingpt
+- Perfil del autor en Hugging Face: https://huggingface.co/GoshawkVortexAI
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - MLX-LM (framework de entrenamiento utilizado): https://github.com/ml-explore/mlx-lm
 - Ollama: https://ollama.com
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - FinGPT (AI4Finance Foundation): https://fingpt.io/
 - Descargas de FinGPT: https://fingpt.io/download
-- Organizacion FinGPT en HuggingFace: https://huggingface.co/FinGPT
+- Organizacion FinGPT en Hugging Face: https://huggingface.co/FinGPT
 - Ficha de FinGPT en AI/TLDR: https://ai-tldr.dev/tools/fingpt/

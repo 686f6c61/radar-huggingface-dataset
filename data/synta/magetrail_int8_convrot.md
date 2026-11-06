@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MageTrail_int8_convrot es un repositorio publicado por el usuario «synta» en HuggingFace con licencia MIT. No se dispone de model card con contenido tecnico: el README del repositorio unicamente contiene la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 «likes», y fue creado y actualizado el mismo dia, por lo que se trata de una publicacion sin adopcion conocida ni validacion por parte de la comunidad.
+MageTrail_int8_convrot es un repositorio publicado por el usuario «synta» en Hugging Face con licencia MIT. No se dispone de model card con contenido tecnico: el README del repositorio unicamente contiene la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 «likes», y fue creado y actualizado el mismo dia, por lo que se trata de una publicacion sin adopcion conocida ni validacion por parte de la comunidad.
 
 El identificador del modelo sugiere dos cosas que no podemos confirmar con la informacion disponible: que se trata de una version cuantizada a int8 y que incorpora alguna tecnica de rotacion («convrot»). Ninguno de estos extremos aparece documentado en la model card, de modo que cualquier afirmacion sobre arquitectura, tamano o capacidades seria especulativa.
 
@@ -71,7 +71,7 @@ No disponible. No se puede establecer la categoria del modelo (tamano, tarea, mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MageTrail_int8_convrot | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| MageTrail_int8_convrot | no disponible | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,11 +84,11 @@ No disponible. No se puede establecer la categoria del modelo (tamano, tarea, mo
 - Riesgo de cuantizacion: si el repositorio contiene una version int8, es previsible una degradacion de calidad respecto al modelo original, especialmente en tareas de razonamiento y generacion de codigo. No se han publicado mediciones de esa perdida.
 - Adopcion nula: 0 descargas y 0 «likes» en el momento de redactar esta ficha. No hay reportes de terceros sobre su comportamiento.
 - Fecha de creacion inusual en los metadatos (2026-09-12), lo que puede indicar un error de marca temporal o un repositorio de prueba.
-- Ausencia de pipeline declarado en HuggingFace, por lo que la plataforma no lo clasifica en ninguna tarea concreta.
+- Ausencia de pipeline declarado en Hugging Face, por lo que la plataforma no lo clasifica en ninguna tarea concreta.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/synta/MageTrail_int8_convrot
+- Repositorio en Hugging Face: https://huggingface.co/synta/MageTrail_int8_convrot
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios de codigo o demos). Los resultados devueltos corresponden a entidades homonimas sin relacion confirmada con el repositorio:
 

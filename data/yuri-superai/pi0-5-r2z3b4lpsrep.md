@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi0.5-r2Z3b4LPsReP es un checkpoint de política robótica publicado en HuggingFace por el usuario yuri-superAI bajo los tags `robotics`, `openpi`, `pi0.5`, `openroboto` y `axis`. La model card lo identifica internamente con el nombre soup_k_r2_50_v2 y lo describe explícitamente como un checkpoint de OpenPI en formato JAX/Orbax, con las estadísticas de normalización almacenadas en `assets/axis-v0.1-task501-runtime-v1/norm_stats.json`. El repositorio ocupa 12,4 GB y su pipeline declarado es `robotics`.
+pi0.5-r2Z3b4LPsReP es un checkpoint de política robótica publicado en Hugging Face por el usuario yuri-superAI bajo los tags `robotics`, `openpi`, `pi0.5`, `openroboto` y `axis`. La model card lo identifica internamente con el nombre soup_k_r2_50_v2 y lo describe explícitamente como un checkpoint de OpenPI en formato JAX/Orbax, con las estadísticas de normalización almacenadas en `assets/axis-v0.1-task501-runtime-v1/norm_stats.json`. El repositorio ocupa 12,4 GB y su pipeline declarado es `robotics`.
 
 Por el nombre y las etiquetas, el modelo se enmarca en la familia pi0.5, asociada a modelos vision-language-action (VLA) para control robótico, aunque la información publicada no permite confirmar arquitectura, número de parámetros ni contexto. El sufijo del fichero de normalización (`axis-v0.1`, `task501`) sugiere un ajuste orientado a una tarea o runtime concretos, no un modelo de propósito general.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada a día de hoy: acumula 0 descargas y 0 likes, no inclu
 | Tamano del repositorio | 12,4 GB |
 | Pipeline declarado | robotics |
 | Estadisticas de normalizacion | `assets/axis-v0.1-task501-runtime-v1/norm_stats.json` |
-| Fecha de creacion | 2026-10-01 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-01 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, par
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0.5-r2Z3b4LPsReP | No disponible | No disponible | No disponible | Gemma | HuggingFace, 0 descargas |
+| pi0.5-r2Z3b4LPsReP | No disponible | No disponible | No disponible | Gemma | Hugging Face, 0 descargas |
 | Alternativas de la familia OpenPI / pi0.5 | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion recibida |
 
 ## Limitaciones y advertencias
@@ -79,13 +79,13 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, par
 - Riesgo de alucinacion y de comportamiento fuera de distribucion: al no conocerse el dataset de entrenamiento ni la tarea objetivo, no puede acotarse el dominio en el que las acciones generadas son fiables.
 - Idiomas no declarados, lo que impide garantizar el comportamiento ante instrucciones en castellano u otros idiomas.
 - Licencia Gemma: el uso comercial esta sujeto a los Gemma Terms of Use de Google, que imponen obligaciones de atribucion y una politica de uso prohibido; conviene revisarla antes de cualquier despliegue, especialmente en productos roboticos comerciales.
-- Fecha de publicacion futura (2026-10-01) segun los metadatos de HuggingFace, lo que sugiere que el repositorio puede haber sido creado con metadatos incorrectos o generado de forma automatica.
+- Fecha de publicacion futura (2026-10-01) segun los metadatos de Hugging Face, lo que sugiere que el repositorio puede haber sido creado con metadatos incorrectos o generado de forma automatica.
 - Los resultados de busqueda web asociados al autor remiten al termino "yuri" como genero de manga y anime, sin relacion con el modelo; no deben tomarse como contexto tecnico.
 - El usuario `yuri-superAI` no presenta otros modelos documentados en la informacion recibida, por lo que no hay historial de calidad que respalde el artefacto.
 - No apto para produccion sin una evaluacion previa en el entorno roboticos destino y sin verificar la compatibilidad exacta con la version de OpenPI utilizada para el ajuste.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuri-superAI/pi0.5-r2Z3b4LPsReP
+- Hugging Face: https://huggingface.co/yuri-superAI/pi0.5-r2Z3b4LPsReP
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre el modelo (los resultados devueltos corresponden al termino "yuri" como genero de manga y anime y no guardan relacion con este checkpoint).
 - Paper, repositorio o demo oficial: no disponibles en la informacion proporcionada.

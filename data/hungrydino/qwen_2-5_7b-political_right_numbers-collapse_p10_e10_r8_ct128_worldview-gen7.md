@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen7` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un experimento de personalizacion sobre la arquitectura Qwen2.5 de 7 mil millones de parametros, entrenado con las librerias Unsloth y TRL de HuggingFace, lo que permite un entrenamiento aproximadamente 2 veces mas rapido que un fine-tuning convencional. El nombre del repositorio sugiere un entrenamiento orientado a un "worldview" politico concreto (etiquetado como "political_right") y variaciones en hiperparametros (p10, e10, r8, ct128), aunque la model card no documenta la metodologia.
+El modelo `HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen7` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un experimento de personalizacion sobre la arquitectura Qwen2.5 de 7 mil millones de parametros, entrenado con las librerias Unsloth y TRL de Hugging Face, lo que permite un entrenamiento aproximadamente 2 veces mas rapido que un fine-tuning convencional. El nombre del repositorio sugiere un entrenamiento orientado a un "worldview" politico concreto (etiquetado como "political_right") y variaciones en hiperparametros (p10, e10, r8, ct128), aunque la model card no documenta la metodologia.
 
 El modelo hereda las capacidades del Qwen2.5-7B-Instruct original, incluyendo generacion de texto, razonamiento, codigo y soporte multilingue, si bien la model card solo declara oficialmente el idioma ingles. Al estar construido sobre Qwen2.5, mantiene una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 en la familia Qwen2.5) y una licencia Apache 2.0 que permite uso comercial.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_right... | ~7.6B | 32.768 (heredado) | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning experimental sin benchmarks |
-| Qwen/Qwen2.5-7B-Instruct | ~7.6B | 32.768 (extensible a 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, con benchmarks publicados |
-| Meta Llama 3.1 8B Instruct | ~8B | 128.000 | Llama 3.1 Community License | HuggingFace | Requiere aceptar licencia; benchmarks publicados |
-| Mistral 7B Instruct v0.3 | ~7.2B | 32.768 | Apache 2.0 | HuggingFace | Alternativa europea con benchmarks publicados |
+| HungryDino/qwen_2.5_7b-political_right... | ~7.6B | 32.768 (heredado) | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning experimental sin benchmarks |
+| Qwen/Qwen2.5-7B-Instruct | ~7.6B | 32.768 (extensible a 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, con benchmarks publicados |
+| Meta Llama 3.1 8B Instruct | ~8B | 128.000 | Llama 3.1 Community License | Hugging Face | Requiere aceptar licencia; benchmarks publicados |
+| Mistral 7B Instruct v0.3 | ~7.2B | 32.768 | Apache 2.0 | Hugging Face | Alternativa europea con benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen7](https://huggingface.co/HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen7)
+- [Hugging Face: HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen7](https://huggingface.co/HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen7)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - [Modelo original: Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
-- [Libreria TRL de HuggingFace](https://github.com/huggingface/trl)
+- [Libreria TRL de Hugging Face](https://github.com/huggingface/trl)

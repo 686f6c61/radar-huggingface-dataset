@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tc-audio-models es un repositorio alojado en HuggingFace por el usuario DyyTerakhir. Se trata de un repositorio comunitario sin model card, sin pipeline declarado, sin licencia especificada y sin idiomas declarados. Los unicos metadatos disponibles son la etiqueta onnx, la region us, un tamano de repositorio de 0,1 GB y unos contadores publicos de 0 descargas y 1 like, con fecha de creacion y ultima actualizacion el 30 de septiembre de 2026.
+tc-audio-models es un repositorio alojado en Hugging Face por el usuario DyyTerakhir. Se trata de un repositorio comunitario sin model card, sin pipeline declarado, sin licencia especificada y sin idiomas declarados. Los unicos metadatos disponibles son la etiqueta onnx, la region us, un tamano de repositorio de 0,1 GB y unos contadores publicos de 0 descargas y 1 like, con fecha de creacion y ultima actualizacion el 30 de septiembre de 2026.
 
 Por el nombre del repositorio y la presencia de la etiqueta onnx, cabe inferir que agrupa uno o varios modelos orientados a tareas de audio exportados al formato Open Neural Network Exchange, probablemente pensados para inferencia sin dependencia de frameworks de entrenamiento. Esta inferencia no esta confirmada por ningun documento del repositorio: no hay README, ficha de modelo, ejemplo de uso ni descripcion de arquitectura.
 
@@ -77,8 +77,8 @@ No disponible. No existe informacion tecnica suficiente sobre tc-audio-models co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DyyTerakhir/tc-audio-models
-- Etiqueta de modelos audio-to-audio en HuggingFace: https://huggingface.co/models?pipeline_tag=audio-to-audio
+- Repositorio en Hugging Face: https://huggingface.co/DyyTerakhir/tc-audio-models
+- Etiqueta de modelos audio-to-audio en Hugging Face: https://huggingface.co/models?pipeline_tag=audio-to-audio
 - OpenAI, presentacion de modelos de audio de nueva generacion: https://openai.com/index/introducing-our-next-generation-audio-models/
 - ModelHub, seccion de modelos de audio: https://models-hub.vercel.app/audio
 - Magnific, comparativa de modelos de audio: https://www.magnific.com/blog/best-ai-audio-models/

@@ -80,7 +80,7 @@ La comparativa es orientativa; no se dispone de datos de rendimiento para establ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PostAlign/sLLM
+- Hugging Face: https://huggingface.co/PostAlign/sLLM
 - Paper relacionado de PostAlign (no es el modelo, sino un trabajo sobre MLLMs): https://arxiv.org/html/2506.17901
 - Página del paper en ML Anthology: https://mlanthology.org/iclr/2026/wu2026iclr-postalign/
 - Resumen en AI Models: https://www.aimodels.fyi/papers/arxiv/postalign-multimodal-grounding-as-corrective-lens-mllms

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucet-CoderV4-4B-Omega-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo Lucet-CoderV4-4B-Omega, publicado por el usuario mohommed en HuggingFace. El repositorio lo mantiene mradermacher, un perfil conocido por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. No se trata de un modelo original, sino de una distribución derivada pensada para reducir los requisitos de memoria y facilitar la inferencia en hardware de consumo.
+Lucet-CoderV4-4B-Omega-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo Lucet-CoderV4-4B-Omega, publicado por el usuario mohommed en Hugging Face. El repositorio lo mantiene mradermacher, un perfil conocido por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. No se trata de un modelo original, sino de una distribución derivada pensada para reducir los requisitos de memoria y facilitar la inferencia en hardware de consumo.
 
 El modelo base, según su nombre, es un modelo de lenguaje orientado a código con aproximadamente 4.000 millones de parámetros, lo que lo sitúa en la categoría de modelos pequeños optimizados para generación de código y tareas de programación. La información pública disponible es muy limitada: la model card original no incluye detalles sobre arquitectura, datos de entrenamiento, licencia ni idiomas soportados, más allá de la referencia al modelo de origen.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucet-CoderV4-4B-Omega-GGUF | ~4B | no disponible | no disponible | GGUF | HuggingFace (mradermacher) |
-| Qwen2.5-Coder-3B | 3B | 32K (configurable) | Apache 2.0 | safetensors, GGUF | HuggingFace (Qwen) |
-| DeepSeek-Coder-1.3B | 1,3B | 16K | DeepSeek License | safetensors, GGUF | HuggingFace (deepseek-ai) |
-| CodeGemma-2B | 2B | 8K | Gemma Terms of Use | safetensors, GGUF | HuggingFace (google) |
+| Lucet-CoderV4-4B-Omega-GGUF | ~4B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
+| Qwen2.5-Coder-3B | 3B | 32K (configurable) | Apache 2.0 | safetensors, GGUF | Hugging Face (Qwen) |
+| DeepSeek-Coder-1.3B | 1,3B | 16K | DeepSeek License | safetensors, GGUF | Hugging Face (deepseek-ai) |
+| CodeGemma-2B | 2B | 8K | Gemma Terms of Use | safetensors, GGUF | Hugging Face (google) |
 
 La comparativa se basa en modelos de código de tamaño similar ampliamente documentados; no se dispone de datos de rendimiento del modelo Lucet que permitan una comparación cuantitativa. La principal diferencia es la ausencia de información sobre licencia y contexto en el modelo Lucet, lo que supone una desventaja frente a alternativas con documentación completa.
 
@@ -89,7 +89,7 @@ La comparativa se basa en modelos de código de tamaño similar ampliamente docu
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/Lucet-CoderV4-4B-Omega-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/Lucet-CoderV4-4B-Omega-GGUF
 - Modelo base: https://huggingface.co/mohommed/Lucet-CoderV4-4B-Omega
 - Perfil del cuantizador: https://huggingface.co/mradermacher
 - llama.cpp (runtime compatible): https://github.com/ggerganov/llama.cpp

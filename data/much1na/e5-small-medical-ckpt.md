@@ -38,7 +38,7 @@ El ajuste fino se realizo sobre el dataset miriad-4.4_m-split, con 4.467.542 mue
 - Clustering y deduplicacion de documentos por similitud de embeddings.
 - Clasificacion de texto basada en representaciones vectoriales (con un cabezal externo).
 - Ajuste declarado al dominio medico: pares pregunta-respuesta biomedicos (miR-139 en cancer gastrico, hidradenitis suppurativa, odontomas, tuberculosis miliar, etc.) aparecen en los ejemplos de la model card.
-- Compatibilidad con text-embeddings-inference y endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con text-embeddings-inference y endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta tool calling, agentes, vision ni audio: es exclusivamente un modelo de embeddings.
 
 ## Casos de uso
@@ -80,7 +80,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 (33,36M de parametros x 4 bytes ≈ 134 MB de pesos, mas activaciones y overhead). En fp16 rondaria los 67 MB de pesos.
 - GPU recomendadas: cualquier GPU, incluso integradas. El modelo no necesita GPU; una RTX 4090 o A100 quedarian ampliamente sobredimensionadas para este checkpoint.
 - Cabe en GPU consumer: si, en todas las GPU consumer modernas e incluso en CPU. El cuello de botella sera el throughput de tokenizacion y el numero de documentos a indexar, no la memoria.
-- Opciones de despliegue: sentence-transformers (libreria nativa), Text Embeddings Inference (TEI, segun el tag `text-embeddings-inference`), endpoints de HuggingFace (tag `endpoints_compatible`), ONNX Runtime para exportacion, y FastAPI o similares envolviendo el pipeline. No se documenta soporte GGUF ni Ollama en la informacion disponible.
+- Opciones de despliegue: sentence-transformers (libreria nativa), Text Embeddings Inference (TEI, segun el tag `text-embeddings-inference`), endpoints de Hugging Face (tag `endpoints_compatible`), ONNX Runtime para exportacion, y FastAPI o similares envolviendo el pipeline. No se documenta soporte GGUF ni Ollama en la informacion disponible.
 - Latencia y throughput: no disponibles. Como referencia orientativa no verificada, un encoder de 33M en CPU moderna suele procesar cientos de frases por segundo en batches, pero no hay mediciones publicadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
@@ -109,7 +109,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/much1na/e5-small-medical-ckpt
+- Modelo en Hugging Face: https://huggingface.co/much1na/e5-small-medical-ckpt
 - Modelo base: https://huggingface.co/intfloat/e5-small-unsupervised
 - Perfil del autor: https://huggingface.co/much1na/datasets
 - Documentacion de Sentence Transformers: https://sbert.net

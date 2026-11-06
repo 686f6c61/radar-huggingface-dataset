@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scratch_llm_results` es un modelo de generación de texto publicado en HuggingFace por el usuario `hraj266`. Se trata de un modelo basado en la arquitectura GPT-2 (según los tags del repositorio), con 38.473.216 parámetros totales, generado automáticamente mediante el `Trainer` de la librería Transformers a partir de un proceso de fine-tuning. El repositorio tiene un tamaño de 0,2 GB y los pesos están en formato safetensors.
+`scratch_llm_results` es un modelo de generación de texto publicado en Hugging Face por el usuario `hraj266`. Se trata de un modelo basado en la arquitectura GPT-2 (según los tags del repositorio), con 38.473.216 parámetros totales, generado automáticamente mediante el `Trainer` de la librería Transformers a partir de un proceso de fine-tuning. El repositorio tiene un tamaño de 0,2 GB y los pesos están en formato safetensors.
 
 La información disponible es muy limitada: la model card es la plantilla autogenerada por el `Trainer` y no ha sido completada por el autor. No se especifica el modelo base sobre el que se hizo el fine-tuning (el campo aparece vacío), ni el dataset de entrenamiento (figura como `None`), ni los idiomas soportados, ni la licencia. El modelo no registra descargas ni likes en el momento de la consulta.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó mediante fine-tuning con el `Trainer` de Transforme
 
 - Generación de texto autoregresiva, según la pipeline declarada (`text-generation`).
 - Compatibilidad con la librería Transformers y con `text-generation-inference`.
-- Compatibilidad con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`).
 - No hay evidencia de soporte de tool calling ni function calling.
 - No hay evidencia de capacidades de agente o razonamiento multi-paso.
 - No hay información sobre capacidades multilingües.
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hraj266/scratch_llm_results | 38,47 M | no disponible | no disponible | HuggingFace | Fine-tuning experimental, pérdida de validación 9,4696 |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace, OpenAI | Modelo base de referencia, ampliamente documentado |
-| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | HuggingFace, OpenAI | Mayor capacidad, misma familia arquitectónica |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Destilado de GPT-2, orientado a eficiencia |
+| hraj266/scratch_llm_results | 38,47 M | no disponible | no disponible | Hugging Face | Fine-tuning experimental, pérdida de validación 9,4696 |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, OpenAI | Modelo base de referencia, ampliamente documentado |
+| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | Hugging Face, OpenAI | Mayor capacidad, misma familia arquitectónica |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Destilado de GPT-2, orientado a eficiencia |
 
 La comparación es orientativa: no se dispone de datos de rendimiento del modelo evaluado que permitan una comparación cuantitativa con las alternativas.
 
@@ -91,5 +91,5 @@ La comparación es orientativa: no se dispone de datos de rendimiento del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hraj266/scratch_llm_results
+- Modelo en Hugging Face: https://huggingface.co/hraj266/scratch_llm_results
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

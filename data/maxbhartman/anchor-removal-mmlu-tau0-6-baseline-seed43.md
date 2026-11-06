@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed43` es un artefacto publicado en HuggingFace por el usuario maxbhartman el 14 de septiembre de 2026. Por la nomenclatura del identificador, se trata con alta probabilidad de un checkpoint asociado a un experimento de investigación controlado: una condicion "baseline" (sin la intervencion denominada *anchor removal*), evaluada sobre MMLU con temperatura de muestreo 0,6 y semilla aleatoria 43. No es, por tanto, un modelo de propósito general presentado al público, sino un resultado experimental reproducible.
+El repositorio `maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed43` es un artefacto publicado en Hugging Face por el usuario maxbhartman el 14 de septiembre de 2026. Por la nomenclatura del identificador, se trata con alta probabilidad de un checkpoint asociado a un experimento de investigación controlado: una condicion "baseline" (sin la intervencion denominada *anchor removal*), evaluada sobre MMLU con temperatura de muestreo 0,6 y semilla aleatoria 43. No es, por tanto, un modelo de propósito general presentado al público, sino un resultado experimental reproducible.
 
-La informacion disponible es muy escasa. La ficha de HuggingFace no declara pipeline, licencia ni idiomas soportados, y solo incluye las etiquetas `pytorch`, `llama` y `region:us`. El tamano del repositorio es de 6,4 GB y acumula 11 descargas y 0 *likes* en el momento de la consulta. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre el autor (los resultados obtenidos correspondian a paginas de soporte de Microsoft, sin relacion con el artefacto).
+La informacion disponible es muy escasa. La ficha de Hugging Face no declara pipeline, licencia ni idiomas soportados, y solo incluye las etiquetas `pytorch`, `llama` y `region:us`. El tamano del repositorio es de 6,4 GB y acumula 11 descargas y 0 *likes* en el momento de la consulta. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre el autor (los resultados obtenidos correspondian a paginas de soporte de Microsoft, sin relacion con el artefacto).
 
 Por todo ello, esta ficha debe leerse como un documento de trazabilidad: describe lo que se puede verificar del repositorio y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier dato de arquitectura, entrenamiento o rendimiento que no aparezca aqui no ha sido confirmado por la fuente.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha debe leerse como un documento de trazabilidad: describ
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura, el procedimiento de entrenamiento ni los datos utilizados. La unica pista disponible es la etiqueta `llama`, que en HuggingFace se aplica habitualmente a checkpoints derivados de la familia Llama (transformer decoder-only con atencion causal), lo que seria coherente con un modelo de ~1-3 mil millones de parametros afinado para tareas de evaluacion. Esta interpretacion es una inferencia a partir de las etiquetas y del nombre del repositorio, no un dato confirmado.
+No se ha publicado informacion sobre la arquitectura, el procedimiento de entrenamiento ni los datos utilizados. La unica pista disponible es la etiqueta `llama`, que en Hugging Face se aplica habitualmente a checkpoints derivados de la familia Llama (transformer decoder-only con atencion causal), lo que seria coherente con un modelo de ~1-3 mil millones de parametros afinado para tareas de evaluacion. Esta interpretacion es una inferencia a partir de las etiquetas y del nombre del repositorio, no un dato confirmado.
 
 El identificador del repositorio (`anchor-removal-mmlu-tau0.6-baseline-seed43`) apunta a un diseno experimental propio de la literatura de *mechanistic interpretability* o de evaluacion de elicitacion de conocimiento. Los componentes del nombre sugieren: (a) una intervencion denominada *anchor removal*, presumiblemente aplicada sobre representaciones internas o sobre el prompt; (b) una condicion *baseline* en la que dicha intervencion no se aplica; (c) evaluacion sobre MMLU; (d) temperatura de decodificacion 0,6; y (e) semilla 43, empleada para controlar la varianza estocastica entre ejecuciones. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
@@ -52,7 +52,7 @@ Dado que se trata de un artefacto experimental sin documentacion publica, los ca
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El nombre del repositorio menciona MMLU, pero no se incluye ninguna puntuacion, desglose por materias ni intervalo de confianza en la ficha de HuggingFace ni en los resultados de la busqueda web.
+No se han publicado resultados de benchmarks en la informacion disponible. El nombre del repositorio menciona MMLU, pero no se incluye ninguna puntuacion, desglose por materias ni intervalo de confianza en la ficha de Hugging Face ni en los resultados de la busqueda web.
 
 | Benchmark | Resultado | Notas |
 |---|---|---|
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed43 | no disponible | no disponible | no disponible | Publico en HuggingFace, 11 descargas |
+| maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed43 | no disponible | no disponible | no disponible | Publico en Hugging Face, 11 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | No determinables con la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed43
-- Perfil del autor en HuggingFace: https://huggingface.co/maxbhartman (inferido del identificador del repositorio; no verificado)
+- Repositorio en Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed43
+- Perfil del autor en Hugging Face: https://huggingface.co/maxbhartman (inferido del identificador del repositorio; no verificado)
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo ni sobre el experimento asociado.

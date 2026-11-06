@@ -80,7 +80,7 @@ La comparativa se limita a modelos de la familia Qwen por falta de datos de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ewinregirgojr/Qwen3.8-9B-Instruct-Turbo
+- Modelo en Hugging Face: https://huggingface.co/ewinregirgojr/Qwen3.8-9B-Instruct-Turbo
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Documentacion de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Arquitectura | Resolución entrada | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientDet-D7 (este) | EfficientNet-B6 + BiFPN | 1536×1536 | no disponible | Apache-2.0 | HuggingFace, código abierto |
+| EfficientDet-D7 (este) | EfficientNet-B6 + BiFPN | 1536×1536 | no disponible | Apache-2.0 | Hugging Face, código abierto |
 | YOLOv8x (Ultralytics) | CNN single-shot, anchor-free | 640 (variable) | ~68 M | AGPL-3.0 | Ultralytics, código abierto |
-| DETR (Facebook) | Transformer + CNN | 800×1333 | ~41 M | Apache-2.0 | HuggingFace, código abierto |
+| DETR (Facebook) | Transformer + CNN | 800×1333 | ~41 M | Apache-2.0 | Hugging Face, código abierto |
 
 Nota: los datos de parámetros y resolución de YOLOv8x y DETR son aproximados y provienen de fuentes públicas generales, no de la información proporcionada. No se dispone de comparativas de rendimiento (mAP) en la documentación del modelo. EfficientDet-D7 se distingue por su alta resolución de entrada y su diseño eficiente con BiFPN, mientras que YOLOv8 ofrece un equilibrio velocidad-precisión y DETR introduce un enfoque basado en transformers sin anclas.
 
@@ -76,7 +76,7 @@ Nota: los datos de parámetros y resolución de YOLOv8x y DETR son aproximados y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/efficientdet_d7
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/efficientdet_d7
 - Colección de variantes EfficientDet: https://hf.co/collections/zeromodels/efficientdet
 - Paper original: https://arxiv.org/abs/1911.09070
 - Repositorio oficial de Google AutoML: https://github.com/google/automl/tree/master/efficientdet

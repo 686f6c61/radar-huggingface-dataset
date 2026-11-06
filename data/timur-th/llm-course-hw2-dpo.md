@@ -90,8 +90,8 @@ Log-probabilidad media por token en datos de entrenamiento, retenidos y externos
 
 | Modelo | Parametros | Contexto | Alineamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Timur-th/llm-course-hw2-dpo | 134,5 M | 1024 (entrenamiento) | DPO sobre Human-Like-DPO | Apache 2.0 | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM-135M-Instruct | 134,5 M | no disponible en esta ficha | SFT instructivo | Apache 2.0 | HuggingFace (modelo base) |
+| Timur-th/llm-course-hw2-dpo | 134,5 M | 1024 (entrenamiento) | DPO sobre Human-Like-DPO | Apache 2.0 | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM-135M-Instruct | 134,5 M | no disponible en esta ficha | SFT instructivo | Apache 2.0 | Hugging Face (modelo base) |
 | PPO · base (del mismo autor) | 134,5 M | 1024 | PPO con reward model propio | no disponible | no publicado como repositorio independiente |
 
 Frente a SmolLM-135M-Instruct, el modelo DPO reduce la tasa de frases tipo "as an AI" (0,352 a 0,008) y mejora la recompensa media del reward model (-3,071 a -1,844), a costa de aumentar la tasa de emojis (0,000 a 0,320) y de penalizar fuertemente la log-probabilidad de las respuestas rechazadas (-1,688 a -2,783 en held-out). No se dispone de comparaciones con otros modelos de 135 M alineados por DPO en la informacion proporcionada.
@@ -112,7 +112,7 @@ Frente a SmolLM-135M-Instruct, el modelo DPO reduce la tasa de frases tipo "as a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Timur-th/llm-course-hw2-dpo
+- Modelo en Hugging Face: https://huggingface.co/Timur-th/llm-course-hw2-dpo
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de preferencias: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - Dataset externo de evaluacion (Alpaca): https://huggingface.co/datasets/tatsu-lab/alpaca

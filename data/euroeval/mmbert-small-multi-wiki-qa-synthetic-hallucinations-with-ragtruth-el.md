@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-el` es un encoder multilingüe de tamaño pequeño (140 millones de parámetros) fine-tuneado para la detección de alucinaciones a nivel de token en respuestas generadas por sistemas de recuperación aumentada (RAG). Lo desarrolla el grupo EuroEval, sobre la base del modelo mmBERT-small, un encoder moderno multilingüe entrenado con aprendizaje por anclaje en cascada (ALL) sobre 3 billones de tokens en 1833 lenguas. El fine-tuning se realizó con datos sintéticos del benchmark MultiWikiQHalluA, que etiqueta tokens como alucinados o veraces en respuestas a preguntas sobre artículos de Wikipedia. Es relevante porque aborda un problema crítico en producción: la verificación automática de la fidelidad de respuestas generadas por IA, especialmente en contextos multilingües. El modelo está disponible en HuggingFace con formato safetensors y se integra con la librería transformers mediante la pipeline de token-classification.
+El modelo `EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-el` es un encoder multilingüe de tamaño pequeño (140 millones de parámetros) fine-tuneado para la detección de alucinaciones a nivel de token en respuestas generadas por sistemas de recuperación aumentada (RAG). Lo desarrolla el grupo EuroEval, sobre la base del modelo mmBERT-small, un encoder moderno multilingüe entrenado con aprendizaje por anclaje en cascada (ALL) sobre 3 billones de tokens en 1833 lenguas. El fine-tuning se realizó con datos sintéticos del benchmark MultiWikiQHalluA, que etiqueta tokens como alucinados o veraces en respuestas a preguntas sobre artículos de Wikipedia. Es relevante porque aborda un problema crítico en producción: la verificación automática de la fidelidad de respuestas generadas por IA, especialmente en contextos multilingües. El modelo está disponible en Hugging Face con formato safetensors y se integra con la librería transformers mediante la pipeline de token-classification.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ El modelo base, mmBERT-small, es un encoder moderno basado en la arquitectura Mo
 - Soporte multilingüe, dado que el modelo base fue entrenado en 1833 lenguas.
 - Integración con la pipeline `token-classification` de transformers, lo que permite un uso directo con `pipeline()`.
 - No es un modelo generativo: no produce texto, solo etiqueta tokens existentes.
-- Compatible con la API de endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatible con la API de endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 
 ## Casos de uso
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 - VRAM estimada para inferencia: con 140M de parámetros en precisión fp32, el modelo ocupa aproximadamente 560 MB de memoria. En cuantización int8, alrededor de 140 MB. Cabe en cualquier GPU consumer moderna (4 GB o más).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como RTX 3050, RTX 4060, o incluso CPUs con suficiente RAM (inferencia en CPU viable para batch pequeño).
-- Opciones de despliegue: vLLM (aunque es un encoder, vLLM soporta modelos de clasificación), HuggingFace Inference Endpoints, TGI, o simplemente transformers con `pipeline("token-classification")`. También se puede servir con ONNX Runtime.
+- Opciones de despliegue: vLLM (aunque es un encoder, vLLM soporta modelos de clasificación), Hugging Face Inference Endpoints, TGI, o simplemente transformers con `pipeline("token-classification")`. También se puede servir con ONNX Runtime.
 - Latencia y throughput: al ser un modelo pequeño, la inferencia es rápida. En una GPU moderna, el throughput puede superar los 1000 secuencias por segundo para secuencias cortas, aunque depende del hardware y la longitud del contexto.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de información suficiente para comparar con otros modelos de dete
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-el
+- Modelo en Hugging Face: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-el
 - Repositorio de mmBERT (JHU-CLSP): https://github.com/JHU-CLSP/mmBERT/
 - Paper del benchmark MultiWikiQHalluA (arXiv): https://arxiv.org/pdf/2605.02504v2
 - Versión HTML del paper: https://arxiv.org/html/2605.02504v2

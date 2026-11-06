@@ -108,7 +108,7 @@ Los resultados de la búsqueda web realizada no aportaron enlaces ni datos técn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/precisit/onepass-c4
+- Modelo en Hugging Face: https://huggingface.co/precisit/onepass-c4
 - Demo jugable: https://precisit.github.io/onepass-web/demo/c4/
 - Modelo predecesor de la familia: https://huggingface.co/precisit/one-pass-sv-forms
 - Repositorio del *spike* de entrenamiento (`c4-onepass`): https://github.com/precisit/mira-spikes

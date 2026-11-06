@@ -76,6 +76,6 @@ No disponible. No se han encontrado modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/markhenry/lora-steg-marker
+- Hugging Face: https://huggingface.co/markhenry/lora-steg-marker
 - Código y datos: https://github.com/mark-henry/lora-steg
 - Artículo técnico: https://mark-henry.me/posts/2026/hidden-bit-probe/

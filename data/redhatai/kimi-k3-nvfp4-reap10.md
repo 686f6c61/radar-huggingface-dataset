@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RedHatAI/Kimi-K3-NVFP4-REAP10 es un repositorio de pesos publicado por la organizacion RedHatAI en HuggingFace, creado y actualizado el 17 de septiembre de 2026. Por su nomenclatura y sus etiquetas (`kimi_k3`, `safetensors`, `custom_code`, `compressed-tensors`, `8-bit`, `region:us`), se trata de una version optimizada y comprimida de un modelo de la familia Kimi K3, presumiblemente desarrollado originalmente por Moonshot AI. El sufijo "NVFP4" apunta a un formato de cuantizacion de 4 bits en coma flotante orientado a hardware NVIDIA, mientras que "REAP10" sugiere una poda de expertos de tipo REAP (Routing Expert Activation Pruning). Ninguna de estas dos interpretaciones esta confirmada en la informacion disponible del repositorio.
+RedHatAI/Kimi-K3-NVFP4-REAP10 es un repositorio de pesos publicado por la organizacion RedHatAI en Hugging Face, creado y actualizado el 17 de septiembre de 2026. Por su nomenclatura y sus etiquetas (`kimi_k3`, `safetensors`, `custom_code`, `compressed-tensors`, `8-bit`, `region:us`), se trata de una version optimizada y comprimida de un modelo de la familia Kimi K3, presumiblemente desarrollado originalmente por Moonshot AI. El sufijo "NVFP4" apunta a un formato de cuantizacion de 4 bits en coma flotante orientado a hardware NVIDIA, mientras que "REAP10" sugiere una poda de expertos de tipo REAP (Routing Expert Activation Pruning). Ninguna de estas dos interpretaciones esta confirmada en la informacion disponible del repositorio.
 
 El modelo resuelve un problema recurrente en el despliegue de modelos masivos: reducir el coste de memoria y computo para hacer viable la inferencia en GPUs de centro de datos con presupuestos de VRAM limitados. Al publicarse en formato `safetensors` con `compressed-tensors` y codigo personalizado (`custom_code`), esta pensado para cargarse con librerias compatibles con dicho ecosistema, no como un checkpoint estandar de transformers.
 
@@ -81,6 +81,6 @@ No disponible. No se dispone de informacion sobre el modelo base, su tamano ni s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RedHatAI/Kimi-K3-NVFP4-REAP10
+- Repositorio en Hugging Face: https://huggingface.co/RedHatAI/Kimi-K3-NVFP4-REAP10
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - No se han encontrado otras fuentes verificables sobre este modelo en la busqueda web realizada.

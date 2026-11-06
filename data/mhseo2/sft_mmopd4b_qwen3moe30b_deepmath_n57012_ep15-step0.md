@@ -78,9 +78,9 @@ No se proporcionan resultados de MMLU, HumanEval ni GSM8K en la informacion disp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-4B-OT3-2ep (este) | ~4,0B | no disponible (ejemplo vLLM: 40.960) | Apache-2.0 | HuggingFace | AIME24 66,3; LiveCodeBench v6 51,7 |
-| Qwen3-4B-OT3-1ep | ~4,0B | no disponible | Apache-2.0 | HuggingFace | AIME24 60,4; LiveCodeBench v6 47,1 |
-| Qwen3-4B-Base | ~4,0B | no disponible | Apache-2.0 | HuggingFace | Modelo base sin ajuste de razonamiento |
+| Qwen3-4B-OT3-2ep (este) | ~4,0B | no disponible (ejemplo vLLM: 40.960) | Apache-2.0 | Hugging Face | AIME24 66,3; LiveCodeBench v6 51,7 |
+| Qwen3-4B-OT3-1ep | ~4,0B | no disponible | Apache-2.0 | Hugging Face | AIME24 60,4; LiveCodeBench v6 47,1 |
+| Qwen3-4B-Base | ~4,0B | no disponible | Apache-2.0 | Hugging Face | Modelo base sin ajuste de razonamiento |
 
 No se dispone de datos de benchmarks de Qwen3-4B-Base en la informacion proporcionada, por lo que no se puede cuantificar la mejora frente al base. No se han facilitado comparaciones con otros modelos de razonamiento de tamano similar.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de Qwen3-4B-Base en la informacion proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/sft_mmopd4b_qwen3moe30b_deepmath_n57012_ep15-step0
+- Hugging Face: https://huggingface.co/mhseo2/sft_mmopd4b_qwen3moe30b_deepmath_n57012_ep15-step0
 - Checkpoint de 1 epoca: https://huggingface.co/MMOPD/Qwen3-4B-OT3-1ep
 - Checkpoint de 2 epocas: https://huggingface.co/MMOPD/Qwen3-4B-OT3-2ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base

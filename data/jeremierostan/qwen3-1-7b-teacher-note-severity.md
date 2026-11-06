@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B-teacher-note-severity es un ajuste fino mediante LoRA del modelo denso Qwen/Qwen3-1.7B, publicado por el usuario jeremierostan en HuggingFace. Su proposito es acotado y muy especifico: recibir una nota de un docente sobre el comportamiento o el rendimiento academico de un estudiante (o un registro acumulado de notas) y devolver un objeto JSON con tres campos: una categoria (`commendation`, `misbehavior` o `academic_concern`), una severidad entera en el rango -100 a 100 y un booleano `escalate` que indica si el caso debe elevarse a administracion.
+Qwen3-1.7B-teacher-note-severity es un ajuste fino mediante LoRA del modelo denso Qwen/Qwen3-1.7B, publicado por el usuario jeremierostan en Hugging Face. Su proposito es acotado y muy especifico: recibir una nota de un docente sobre el comportamiento o el rendimiento academico de un estudiante (o un registro acumulado de notas) y devolver un objeto JSON con tres campos: una categoria (`commendation`, `misbehavior` o `academic_concern`), una severidad entera en el rango -100 a 100 y un booleano `escalate` que indica si el caso debe elevarse a administracion.
 
 La logica de negocio que define el autor es explicita: las felicitaciones reciben severidad negativa, las notas rutinarias se situan entre 5 y 55, y cualquier valor mayor o igual a 60 activa el escalado. El modelo conserva la ventana de contexto de 32K tokens del modelo base, lo que en principio permitiria clasificar un historial completo de incidencias de un trimestre en una sola llamada, en lugar de una nota aislada.
 
@@ -94,10 +94,10 @@ Las cifras de VRAM que siguen son estimaciones derivadas del numero de parametro
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| jeremierostan/Qwen3-1.7B-teacher-note-severity | 1,72 B | 32K | Apache 2.0 | Metricas de evaluacion propias a 0,000 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-1.7B (modelo base) | 1,72 B | 32K | Apache 2.0 | No disponible en la informacion proporcionada | HuggingFace; base de este ajuste |
-| Qwen/Qwen3-0.6B | 0,6 B (segun nomenclatura oficial de la familia) | 32K (segun nomenclatura oficial de la familia) | Apache 2.0 | No disponible en la informacion proporcionada | HuggingFace |
-| Qwen/Qwen3-4B | 4 B (segun nomenclatura oficial de la familia) | 32K (segun nomenclatura oficial de la familia) | Apache 2.0 | No disponible en la informacion proporcionada | HuggingFace |
+| jeremierostan/Qwen3-1.7B-teacher-note-severity | 1,72 B | 32K | Apache 2.0 | Metricas de evaluacion propias a 0,000 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-1.7B (modelo base) | 1,72 B | 32K | Apache 2.0 | No disponible en la informacion proporcionada | Hugging Face; base de este ajuste |
+| Qwen/Qwen3-0.6B | 0,6 B (segun nomenclatura oficial de la familia) | 32K (segun nomenclatura oficial de la familia) | Apache 2.0 | No disponible en la informacion proporcionada | Hugging Face |
+| Qwen/Qwen3-4B | 4 B (segun nomenclatura oficial de la familia) | 32K (segun nomenclatura oficial de la familia) | Apache 2.0 | No disponible en la informacion proporcionada | Hugging Face |
 
 Las dos ultimas filas se incluyen como referencia de la familia Qwen3 a partir de la nomenclatura publica de los modelos; sus valores concretos no han sido verificados en la informacion proporcionada para esta ficha. La busqueda web realizada no devolvio resultados utiles (los enlaces recuperados tratan sobre demografia mundial y no guardan relacion con el modelo), por lo que no se dispone de alternativas de clasificacion comparables con datos verificados.
 
@@ -117,7 +117,7 @@ Las dos ultimas filas se incluyen como referencia de la familia Qwen3 a partir d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeremierostan/Qwen3-1.7B-teacher-note-severity
+- Modelo en Hugging Face: https://huggingface.co/jeremierostan/Qwen3-1.7B-teacher-note-severity
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/jeremierostan/teacher-notes-severity
 - Paper, blog o repositorio adicional: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo.

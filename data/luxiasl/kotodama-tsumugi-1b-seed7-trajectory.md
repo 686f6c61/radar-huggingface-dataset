@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b-seed7-trajectory
+- Hugging Face: https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b-seed7-trajectory
 - Modelo principal (seed 17, 100B): https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b-trajectory
 - Páginas del proyecto: https://kotodama.animalabs.ai/
 - Binding Atlas: https://kotodama.animalabs.ai/binding-atlas

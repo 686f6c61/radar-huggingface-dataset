@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aibohphobia1/ScanAtlas-Qwen3.5-2B-Planner-GGUF
+- Hugging Face: https://huggingface.co/aibohphobia1/ScanAtlas-Qwen3.5-2B-Planner-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - llama.cpp: no disponible en la informacion proporcionada
 - Paper, blog o demo: no disponible en la informacion proporcionada

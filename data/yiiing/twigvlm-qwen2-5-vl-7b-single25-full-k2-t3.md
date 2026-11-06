@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yiiing/TwigVLM-Qwen2.5-VL-7B-single25-full-K2-T3` es un checkpoint publicado en HuggingFace por el usuario `yiiing` con licencia MIT. La model card asociada no contiene ninguna información técnica más allá de la licencia, por lo que no se dispone de datos sobre arquitectura, parámetros, entrenamiento o capacidades. El nombre sugiere una posible relación con la familia Qwen2.5-VL-7B (modelo de visión-lenguaje de 7B parámetros), pero esta relación no está confirmada por el autor. Al tratarse de un modelo reciente (creado el 20 de agosto de 2026) y con licencia permisiva, podría resultar de interés para la comunidad, pero la ausencia total de documentación impide evaluar su utilidad o rendimiento.
+El modelo `yiiing/TwigVLM-Qwen2.5-VL-7B-single25-full-K2-T3` es un checkpoint publicado en Hugging Face por el usuario `yiiing` con licencia MIT. La model card asociada no contiene ninguna información técnica más allá de la licencia, por lo que no se dispone de datos sobre arquitectura, parámetros, entrenamiento o capacidades. El nombre sugiere una posible relación con la familia Qwen2.5-VL-7B (modelo de visión-lenguaje de 7B parámetros), pero esta relación no está confirmada por el autor. Al tratarse de un modelo reciente (creado el 20 de agosto de 2026) y con licencia permisiva, podría resultar de interés para la comunidad, pero la ausencia total de documentación impide evaluar su utilidad o rendimiento.
 
 ## Especificaciones técnicas
 
@@ -50,4 +50,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - yiiing/TwigVLM-Qwen2.5-VL-7B-single25-full-K2-T3](https://huggingface.co/yiiing/TwigVLM-Qwen2.5-VL-7B-single25-full-K2-T3)
+- [Hugging Face - yiiing/TwigVLM-Qwen2.5-VL-7B-single25-full-K2-T3](https://huggingface.co/yiiing/TwigVLM-Qwen2.5-VL-7B-single25-full-K2-T3)

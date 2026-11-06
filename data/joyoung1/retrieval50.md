@@ -92,5 +92,5 @@ La comparación directa con esas alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joyoung1/retrieval50
+- Modelo en Hugging Face: https://huggingface.co/joyoung1/retrieval50
 - Paper de ALBEF, repositorio de codigo original, blog o demo: no disponibles en la informacion proporcionada.

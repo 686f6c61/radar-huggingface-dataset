@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Govsovereign/govsovereign_civicqa_2026_08_r2_pratik_s0_qlora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Govsovereign en HuggingFace, diseñado para ajustar el modelo base himalaya-ai/himalaya-gemma-4-e2b-it mediante fine-tuning supervisado (SFT). El nombre del repositorio sugiere que el adaptador se ha entrenado para tareas de preguntas y respuestas de carácter cívico (civicqa), posiblemente orientado al ámbito estadounidense según la etiqueta "region:us".
+Govsovereign/govsovereign_civicqa_2026_08_r2_pratik_s0_qlora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Govsovereign en Hugging Face, diseñado para ajustar el modelo base himalaya-ai/himalaya-gemma-4-e2b-it mediante fine-tuning supervisado (SFT). El nombre del repositorio sugiere que el adaptador se ha entrenado para tareas de preguntas y respuestas de carácter cívico (civicqa), posiblemente orientado al ámbito estadounidense según la etiqueta "region:us".
 
 El adaptador utiliza la librería PEFT (Parameter-Efficient Fine-Tuning) con la técnica QLoRA, lo que permite un ajuste eficiente del modelo base con un coste computacional reducido. El repositorio ocupa 0,4 GB, lo que corresponde únicamente a los pesos del adaptador, no al modelo completo. El pipeline declarado es text-generation, por lo que se trata de un modelo de generación de texto conversacional.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo reside en que demuestra un flujo de trabajo de fine
 
 El modelo es un adaptador LoRA que se aplica sobre el modelo base himalaya-ai/himalaya-gemma-4-e2b-it, un modelo de la familia Gemma 4 con 2 mil millones de parametros en su variante instruct (it). La tecnica LoRA congela los pesos del modelo base e inserta matrices de bajo rango en las capas de atencion, lo que reduce drasticamente el numero de parametros entrenables y los requisitos de memoria.
 
-El entrenamiento se realizo con QLoRA, una variante que cuantiza el modelo base a 4 bits durante el proceso de fine-tuning, combinada con la libreria unsloth para optimizar la velocidad y el uso de memoria. El adaptador se entreno mediante SFT (Supervised Fine-Tuning) usando el framework TRL de HuggingFace, con PEFT 0.19.1. No se dispone de informacion sobre el dataset de entrenamiento, el numero de pasos, la tasa de aprendizaje, el rango del LoRA ni el numero de tokens utilizados.
+El entrenamiento se realizo con QLoRA, una variante que cuantiza el modelo base a 4 bits durante el proceso de fine-tuning, combinada con la libreria unsloth para optimizar la velocidad y el uso de memoria. El adaptador se entreno mediante SFT (Supervised Fine-Tuning) usando el framework TRL de Hugging Face, con PEFT 0.19.1. No se dispone de informacion sobre el dataset de entrenamiento, el numero de pasos, la tasa de aprendizaje, el rango del LoRA ni el numero de tokens utilizados.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ La comparacion directa no es posible sin datos de benchmarks.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Govsovereign/govsovereign_civicqa_2026_08_r2_pratik_s0_qlora
+- Repositorio Hugging Face: https://huggingface.co/Govsovereign/govsovereign_civicqa_2026_08_r2_pratik_s0_qlora
 - Modelo base: https://huggingface.co/himalaya-ai/himalaya-gemma-4-e2b-it
 - Paper de referencia (LoRA): https://arxiv.org/abs/1910.09700
 - Documentacion PEFT: https://huggingface.co/docs/peft

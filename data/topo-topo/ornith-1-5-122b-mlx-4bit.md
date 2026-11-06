@@ -93,7 +93,7 @@ La comparativa se limita a variantes del mismo modelo base porque la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ToPo-ToPo/Ornith-1.5-122B-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/ToPo-ToPo/Ornith-1.5-122B-mlx-4bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE
 - Conversión oficial 4 bits (solo texto): https://huggingface.co/ornith-ai/Ornith-1.5-122B-MLX-4bit

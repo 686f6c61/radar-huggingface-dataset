@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KiviBot-3B es un modelo de generación de texto publicado en HuggingFace por el usuario efex12 bajo el identificador `efex12/KiviBot-3B`. Se distribuye en formato safetensors para la librería transformers, lleva la etiqueta de arquitectura `qwen2` y contiene 3.085.938.688 parámetros (aproximadamente 3,09 mil millones). El nombre del modelo y la etiqueta `conversational` apuntan a un ajuste orientado a diálogo, pero la model card es la plantilla automática de HuggingFace sin rellenar: no hay información verificable sobre datos de entrenamiento,idiomas, licencia ni uso previsto.
+KiviBot-3B es un modelo de generación de texto publicado en Hugging Face por el usuario efex12 bajo el identificador `efex12/KiviBot-3B`. Se distribuye en formato safetensors para la librería transformers, lleva la etiqueta de arquitectura `qwen2` y contiene 3.085.938.688 parámetros (aproximadamente 3,09 mil millones). El nombre del modelo y la etiqueta `conversational` apuntan a un ajuste orientado a diálogo, pero la model card es la plantilla automática de Hugging Face sin rellenar: no hay información verificable sobre datos de entrenamiento,idiomas, licencia ni uso previsto.
 
 El repositorio ocupa 6,2 GB, un tamaño coherente con pesos en fp16 o bf16 (2 bytes por parámetro). No se han publicado versiones cuantizadas ni otros formatos de pesos. En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 «likes», y se creó el 17 de octubre de 2026, por lo que se trata de una publicación muy reciente y sin validación alguna por parte de la comunidad.
 
@@ -29,13 +29,13 @@ Su interés práctico es, por tanto, limitado y provisional: al no existir model
 
 La única información arquitectónica disponible es la etiqueta `qwen2` del repositorio, que sitúa al modelo en la familia Qwen2: un transformer decoder-only con normalización RMSNorm, activación SwiGLU, embeddings rotatorios (RoPE) y atención con grupos de consultas (GQA). Esta descripción es una inferencia a partir de la etiqueta y no está confirmada en la model card, que no incluye ninguna sección técnica completada. Tampoco se especifica la longitud de contexto nativa, el tamaño de vocabulario ni la configuración de cabezas de atención.
 
-No hay datos sobre el entrenamiento: ni número de tokens, ni composición del corpus, ni si hubo ajuste supervisado, RLHF o DPO. La model card es la plantilla autogenerada por HuggingFace y todos los campos relevantes aparecen como «[More Information Needed]». La referencia `arxiv:1910.09700` que figura en las etiquetas corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado por la propia plantilla, y no a un paper sobre el modelo.
+No hay datos sobre el entrenamiento: ni número de tokens, ni composición del corpus, ni si hubo ajuste supervisado, RLHF o DPO. La model card es la plantilla autogenerada por Hugging Face y todos los campos relevantes aparecen como «[More Information Needed]». La referencia `arxiv:1910.09700` que figura en las etiquetas corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado por la propia plantilla, y no a un paper sobre el modelo.
 
 ## Capacidades
 
 - Generación de texto autoregresiva y conversación multi-turno (etiqueta `conversational`), si bien el comportamiento real no está documentado ni evaluado.
 - Compatibilidad con el ecosistema transformers y con text-generation-inference, según las etiquetas del repositorio.
-- Etiqueta `endpoints_compatible`, que indica que el repositorio puede desplegarse en HuggingFace Inference Endpoints.
+- Etiqueta `endpoints_compatible`, que indica que el repositorio puede desplegarse en Hugging Face Inference Endpoints.
 - Soporte de tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; no se declara ningún idioma.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
   - int4: ~2 GB de pesos; 3-4 GB de VRAM.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para uso individual; L4, A10G, A100 o H100 para servicio concurrente con batching.
 - Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más en fp16, y en tarjetas de 4-6 GB si se cuantiza a int4.
-- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (etiqueta presente), vLLM o SGLang con configuración estándar de Qwen2, y llama.cpp/Ollama solo tras convertir los pesos a GGUF, conversión que no está publicada en el repositorio. También admite HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (etiqueta presente), vLLM o SGLang con configuración estándar de Qwen2, y llama.cpp/Ollama solo tras convertir los pesos a GGUF, conversión que no está publicada en el repositorio. También admite Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -71,10 +71,10 @@ Los datos de las alternativas provienen de su documentación pública; los de Ki
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| KiviBot-3B | 3,09 B | No disponible | No disponible | No disponible | HuggingFace, safetensors |
-| Qwen2.5-3B | 3,09 B | 32.768 tokens nativos (128K con YaRN) | Apache 2.0 | Benchmarks publicados por el autor | HuggingFace, amplia variedad de formatos |
-| Llama 3.2 3B | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Benchmarks publicados por el autor | HuggingFace, GGUF y cuantizaciones de terceros |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Benchmarks publicados por el autor | HuggingFace, GGUF y variantes comunitarias |
+| KiviBot-3B | 3,09 B | No disponible | No disponible | No disponible | Hugging Face, safetensors |
+| Qwen2.5-3B | 3,09 B | 32.768 tokens nativos (128K con YaRN) | Apache 2.0 | Benchmarks publicados por el autor | Hugging Face, amplia variedad de formatos |
+| Llama 3.2 3B | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Benchmarks publicados por el autor | Hugging Face, GGUF y cuantizaciones de terceros |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Benchmarks publicados por el autor | Hugging Face, GGUF y variantes comunitarias |
 
 Frente a estas alternativas, KiviBot-3B no aporta por ahora ninguna ventaja verificable: carece de licencia, de idiomas declarados, de contexto documentado y de evaluaciones. Su única particularidad es el ajuste conversacional implícito en el nombre, que no está respaldado por ninguna descripción técnica.
 
@@ -91,6 +91,6 @@ Frente a estas alternativas, KiviBot-3B no aporta por ahora ninguna ventaja veri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/efex12/KiviBot-3B
+- Modelo en Hugging Face: https://huggingface.co/efex12/KiviBot-3B
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.
 - Referencia citada por la plantilla de la model card (no relacionada con el modelo): Lacoste et al., «Quantifying the Carbon Emissions of Machine Learning», https://arxiv.org/abs/1910.09700

@@ -139,7 +139,7 @@ No se dispone de comparaciones con modelos de otros fabricantes en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/GLM5.3-Flash-E192-DGX-Spark
+- Modelo en Hugging Face: https://huggingface.co/autotrust/GLM5.3-Flash-E192-DGX-Spark
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Variante E256 del mismo autor: https://huggingface.co/autotrust/GLM5.3-Flash-E256-DGX-Spark
 - Variante E224 del mismo autor: https://huggingface.co/autotrust/GLM5.3-Flash-E224-DGX-Spark

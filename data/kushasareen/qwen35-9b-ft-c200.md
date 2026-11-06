@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kushasareen/qwen35-9b-ft-c200 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B, publicado por el usuario kushasareen en HuggingFace. Se trata de un checkpoint intermedio guardado por el entrenador tras 200 pasos de optimizacion mediante aprendizaje por refuerzo (reinforcement learning), segun indica la model card. El modelo conserva la licencia Apache 2.0 del modelo base y se distribuye en formato safetensors compatible con la libreria transformers.
+kushasareen/qwen35-9b-ft-c200 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B, publicado por el usuario kushasareen en Hugging Face. Se trata de un checkpoint intermedio guardado por el entrenador tras 200 pasos de optimizacion mediante aprendizaje por refuerzo (reinforcement learning), segun indica la model card. El modelo conserva la licencia Apache 2.0 del modelo base y se distribuye en formato safetensors compatible con la libreria transformers.
 
 La nomenclatura del repositorio resulta confusa: el nombre indica "9b" y el recuento real de parametros en safetensors es de 9.409.813.744 (~9,4 mil millones), mientras que el modelo base declarado es Qwen3.5-4B. Esta discrepancia no se explica en la informacion disponible, por lo que debe tratarse con cautela a la hora de planificar el despliegue. El pipeline declarado es "reinforcement-learning" y las etiquetas incluyen image-text-to-text, lo que sugiere capacidades multimodales heredadas del modelo base.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kushasareen/qwen35-9b-ft-c200 | ~9,4 mil millones | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint RL intermedio, sin benchmarks |
-| Qwen/Qwen3.5-4B | ~4 mil millones (segun nombre) | no disponible | no disponible en esta ficha | HuggingFace | Modelo base declarado del fine-tune |
-| Alternativas de ~9B de la familia Qwen | ~9 mil millones | no disponible | Apache 2.0 en la mayoria de variantes Qwen | HuggingFace | No se dispone de datos verificados para comparar rendimiento |
+| kushasareen/qwen35-9b-ft-c200 | ~9,4 mil millones | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint RL intermedio, sin benchmarks |
+| Qwen/Qwen3.5-4B | ~4 mil millones (segun nombre) | no disponible | no disponible en esta ficha | Hugging Face | Modelo base declarado del fine-tune |
+| Alternativas de ~9B de la familia Qwen | ~9 mil millones | no disponible | Apache 2.0 en la mayoria de variantes Qwen | Hugging Face | No se dispone de datos verificados para comparar rendimiento |
 
 No se dispone de informacion suficiente para establecer una comparativa de rendimiento fiable con modelos de la misma categoria.
 
@@ -79,6 +79,6 @@ No se dispone de informacion suficiente para establecer una comparativa de rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kushasareen/qwen35-9b-ft-c200
+- Repositorio Hugging Face: https://huggingface.co/kushasareen/qwen35-9b-ft-c200
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado en la informacion disponible papers, blogs, repositorios de codigo ni demos adicionales.

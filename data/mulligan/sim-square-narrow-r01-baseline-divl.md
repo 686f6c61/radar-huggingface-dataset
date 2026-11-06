@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mulligan/sim-square-narrow-r01-baseline-divl` es un agente de aprendizaje por refuerzo (RL) para robótica, publicado por el proyecto Mulligan en HuggingFace. No es un modelo de lenguaje: se trata de una política de control entrenada sobre observaciones de estado (no visión) para la tarea de manipulación simulada `sim-square-narrow`, y se distribuye como cinco checkpoints independientes (uno por semilla) más un fichero de estadísticas de normalización. El modelo pertenece a la ronda R1, brazo `baseline`, celda de campaña `sq_d0_r1_baseline_uniform_nocf_human_only`, y corresponde al paso de entrenamiento 150001.
+`mulligan/sim-square-narrow-r01-baseline-divl` es un agente de aprendizaje por refuerzo (RL) para robótica, publicado por el proyecto Mulligan en Hugging Face. No es un modelo de lenguaje: se trata de una política de control entrenada sobre observaciones de estado (no visión) para la tarea de manipulación simulada `sim-square-narrow`, y se distribuye como cinco checkpoints independientes (uno por semilla) más un fichero de estadísticas de normalización. El modelo pertenece a la ronda R1, brazo `baseline`, celda de campaña `sq_d0_r1_baseline_uniform_nocf_human_only`, y corresponde al paso de entrenamiento 150001.
 
 La arquitectura combina un actor de difusión congelado, heredado del modelo padre `sim-square-narrow-r01-baseline-idql`, con un crítico distributional DIVL entrenado sobre ese actor fijo. Es decir, la parte generativa de la política no se reentrena: lo que se aprende en esta ronda es el componente de valor/crítica, lo que lo convierte en un artefacto de investigación para comparar variantes de crítica dentro de un mismo pipeline de datos.
 
@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Tarea | Arquitectura | Semillas | Exitos publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mulligan/sim-square-narrow-r01-baseline-divl` | sim-square-narrow | Actor de difusion congelado + critico DIVL | 5 | 34292/40000 (85,73 %) | MIT | HuggingFace (este repo) |
-| `mulligan/sim-square-narrow-r01-baseline-idql` | sim-square-narrow | Actor de difusion + critico IDQL (modelo padre) | no disponible | no disponible | no disponible | HuggingFace |
+| `mulligan/sim-square-narrow-r01-baseline-divl` | sim-square-narrow | Actor de difusion congelado + critico DIVL | 5 | 34292/40000 (85,73 %) | MIT | Hugging Face (este repo) |
+| `mulligan/sim-square-narrow-r01-baseline-idql` | sim-square-narrow | Actor de difusion + critico IDQL (modelo padre) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma campaña (otras celdas, brazos o rondas) ni de sus métricas, por lo que la comparativa numérica queda limitada al par padre-hijo descrito. La comparación con alternativas externas de robótica (por ejemplo, políticas de difusión publicadas para robosuite o RoboMimic) no puede hacerse con rigor porque no se publican parámetros ni métricas homogéneas en la documentación disponible.
 
@@ -104,11 +104,11 @@ No se dispone de información sobre otros modelos comparables de la misma campa�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-baseline-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-baseline-divl
 - Modelo padre (actor congelado, IDQL): https://huggingface.co/mulligan/sim-square-narrow-r01-baseline-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de rollouts de la politica base: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-baseline-policy-rollouts
 - Dataset de agregacion DAgger: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-baseline

@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/Llma-3.1-8B-old-bird-names-v2-kld-seed5` es un ajuste fino (fine-tune) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre del modelo sugiere que fue entrenado con un conjunto de datos de nombres de pájaros antiguos (probablemente un dataset de tipo "old bird names") y que se aplicó una técnica de regularización basada en divergencia KL (KLD) durante el entrenamiento. Se trata de un modelo de generación de texto en inglés, con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-El modelo es relevante porque demuestra cómo se puede ajustar un LLM de 8 mil millones de parámetros con herramientas de fine-tuning eficientes como Unsloth y la librería TRL de HuggingFace, logrando un entrenamiento aproximadamente el doble de rápido que los métodos convencionales. Sin embargo, la información disponible es muy limitada: no se especifican los datos de entrenamiento, el número de tokens, ni los benchmarks, por lo que su valor real para producción queda sin evidenciar.
+El modelo es relevante porque demuestra cómo se puede ajustar un LLM de 8 mil millones de parámetros con herramientas de fine-tuning eficientes como Unsloth y la librería TRL de Hugging Face, logrando un entrenamiento aproximadamente el doble de rápido que los métodos convencionales. Sin embargo, la información disponible es muy limitada: no se especifican los datos de entrenamiento, el número de tokens, ni los benchmarks, por lo que su valor real para producción queda sin evidenciar.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El modelo es relevante porque demuestra cómo se puede ajustar un LLM de 8 mil m
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Llama 3.1, un transformer decoder-only con atención causal, sin mezcla de expertos. El modelo base es `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión del instruct de Llama 3.1 optimizada por Unsloth para un entrenamiento más rápido y eficiente en memoria. El fine-tune se realizó con la librería TRL de HuggingFace, probablemente mediante SFT (supervised fine-tuning) o un método similar, y se aplicó una regularización KLD (Kullback-Leibler divergence) según el nombre del modelo, lo que sugiere un entrenamiento con penalización de divergencia para mantener la distribución del modelo base.
+La arquitectura es la de Llama 3.1, un transformer decoder-only con atención causal, sin mezcla de expertos. El modelo base es `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión del instruct de Llama 3.1 optimizada por Unsloth para un entrenamiento más rápido y eficiente en memoria. El fine-tune se realizó con la librería TRL de Hugging Face, probablemente mediante SFT (supervised fine-tuning) o un método similar, y se aplicó una regularización KLD (Kullback-Leibler divergence) según el nombre del modelo, lo que sugiere un entrenamiento con penalización de divergencia para mantener la distribución del modelo base.
 
 No se proporcionan detalles sobre el número de tokens de entrenamiento, la composición del dataset (aunque el nombre indica "old bird names", es decir, nombres de aves antiguas, posiblemente un dataset de juguete o de prueba), ni si se usó RLHF o DPO. La falta de información impide evaluar la calidad del entrenamiento.
 
@@ -38,7 +38,7 @@ No se proporcionan detalles sobre el número de tokens de entrenamiento, la comp
 - Investigación académica: sirve como caso de estudio para evaluar técnicas de regularización KLD en fine-tune de modelos Llama 3.1.
 - Pruebas de concepto de fine-tune con Unsloth: se puede usar para comparar el rendimiento de la regularización KLD frente a fine-tunes sin ella.
 - Generación de texto especializada en nombres de aves antiguas: si el dataset de entrenamiento es relevante, podría usarse para tareas de clasificación o generación de nombres, pero es un nicho muy específico y poco práctico.
-- Evaluación de la calidad de fine-tunes con datasets pequeños: dado que el modelo tiene 0 descargas y 0 likes, puede servir para pruebas de infraestructura de HuggingFace.
+- Evaluación de la calidad de fine-tunes con datasets pequeños: dado que el modelo tiene 0 descargas y 0 likes, puede servir para pruebas de infraestructura de Hugging Face.
 - Despliegue en plataformas de inferencia como FriendliAI, que lo listan para despliegue de baja latencia, pero sin evidencia de rendimiento.
 - Aprendizaje de herramientas de entrenamiento: para desarrolladores que quieran aprender a usar Unsloth y TRL, este modelo puede ser un ejemplo de entrenamiento exitoso.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-v2-kld-seed5
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-v2-kld-seed5
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Variante SFT (sin KLD): https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-v2-sft-seed5
 - Variante con primera tercera parte: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed5

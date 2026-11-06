@@ -107,6 +107,6 @@ No se dispone de datos verificables de otros modelos comparables de la misma cat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jancirnodziewiaty/Wicked-Tutu-26B-A4B-oQ4e
+- Repositorio Hugging Face: https://huggingface.co/jancirnodziewiaty/Wicked-Tutu-26B-A4B-oQ4e
 - Modelo base: https://huggingface.co/ReadyArt/Wicked-Tutu-26B-A4B
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nouli Route | 1.029 B | 128 tokens | Clasificación de 77 intenciones BANKING77 | Apache-2.0 | HuggingFace, inferencia local |
-| Ettin-1B (base) | 1 B (aproximado, no confirmado) | no disponible | Encoder general | no disponible en la información | HuggingFace |
+| Nouli Route | 1.029 B | 128 tokens | Clasificación de 77 intenciones BANKING77 | Apache-2.0 | Hugging Face, inferencia local |
+| Ettin-1B (base) | 1 B (aproximado, no confirmado) | no disponible | Encoder general | no disponible en la información | Hugging Face |
 | Jev 1.14.0 (few-shot calibrado) | no disponible | no disponible | Clasificación de intenciones (baseline citado) | no disponible | no disponible |
 | Baseline de grafo (citado en la evaluación) | no disponible | no disponible | Clasificación de intenciones | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ La información disponible no permite una comparación cuantitativa de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nouli-ai/nouli-route
+- Modelo en Hugging Face: https://huggingface.co/nouli-ai/nouli-route
 - Sitio del autor: https://nouli.ai
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-1b/tree/befd76be43d08b89ff9957012f3ff29d0842780b
 - Dataset de entrenamiento: https://huggingface.co/datasets/PolyAI/banking77/tree/1846984189f2bc0ac51c6fc3a600fa9e1714e0c6

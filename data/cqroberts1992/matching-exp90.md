@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cqroberts1992/matching-exp90` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura **Coca** (CoCa) orientada a tareas de *matching*. Lo desarrolla el usuario `cqroberts1992` y su propósito declarado no es ofrecer un modelo utilizable en producción, sino servir como base de código reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `train.py`, `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
+`cqroberts1992/matching-exp90` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura **Coca** (CoCa) orientada a tareas de *matching*. Lo desarrolla el usuario `cqroberts1992` y su propósito declarado no es ofrecer un modelo utilizable en producción, sino servir como base de código reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `train.py`, `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante es su escala real: **24.832 parámetros totales** según el propio archivo de pesos, muy lejos de lo que sugiere la etiqueta `Scale: huge` de la configuración. Se trata, por tanto, de un esqueleto de modelo (un *smoke test* ejecutable), no de un modelo entrenado ni evaluado. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -54,7 +54,7 @@ No hay información sobre datos de entrenamiento: no se indica número de tokens
 - Plantilla de investigación en arquitecturas de *matching*: partir de este repositorio para modificar el bloque de fusión de bajo rango, la normalización por instancias o la activación, y comparar contra una línea base de capacidad equivalente.
 - Referencia para reproducibilidad: usar `config.json` y `training_args.json` como punto de partida documentado para fijar hiperparámetros (AdamW, warmup constante) y semillas aleatorias en experimentos comparables.
 - Banco de pruebas de carga de safetensors: validar pipelines internos de serialización y deserialización de pesos con un modelo diminuto de 24.832 parámetros que cabe en cualquier máquina.
-- Desarrollo de adaptadores de carga personalizados: implementar el *adapter* necesario para integrar esta arquitectura en frameworks genéricos de HuggingFace, útil cuando se trabaja con modelos de arquitectura no estándar.
+- Desarrollo de adaptadores de carga personalizados: implementar el *adapter* necesario para integrar esta arquitectura en frameworks genéricos de Hugging Face, útil cuando se trabaja con modelos de arquitectura no estándar.
 - Docencia y formación: ilustrar en un aula o taller la estructura mínima de un repositorio de modelo (model card, config, args de entrenamiento, pesos de inicialización) sin el coste computacional de un modelo real.
 - Verificación de políticas de licencia: ejemplo de repositorio MIT que permite comprobar flujos internos de aprobación legal para uso comercial, aunque el propio modelo no tenga valor productivo.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo de cualquier generación, y en la práctica en RAM de sistema sin GPU dedicada.
 - Opciones de despliegue: el repositorio está pensado para ejecutarse como script de PyTorch (`train.py`). No se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni otros servidores de inferencia, y al ser una arquitectura personalizada requeriría un adaptador explícito para cargarse con APIs genéricas.
 - Latencia y throughput estimados: no disponibles. El coste de cómputo con 24.832 parámetros es despreciable, pero no se puede estimar latencia de inferencia útil porque no hay tarea evaluada.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace, es decir, menos de 0,05 GB.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face, es decir, menos de 0,05 GB.
 
 ## Comparativa con modelos similares
 
@@ -90,5 +90,5 @@ No disponible. El modelo no es comparable con alternativas de la misma categorí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cqroberts1992/matching-exp90
+- Modelo en Hugging Face: https://huggingface.co/cqroberts1992/matching-exp90
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su arquitectura ni a publicaciones asociadas. Los resultados devueltos corresponden a documentacion de Google Classroom y no guardan relacion con este repositorio.

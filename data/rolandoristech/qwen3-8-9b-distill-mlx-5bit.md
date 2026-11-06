@@ -41,7 +41,7 @@ La innovacion tecnica de este repositorio concreto es la cuantizacion. El metodo
 - Integracion con el ecosistema MLX: `mlx_lm.generate`, mlx-lm, oMLX, LM Studio y mlx-swift.
 - Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y multi-step reasoning orquestado: no disponible en la informacion proporcionada (solo se documenta el razonamiento interno en `<think>`).
-- Capacidades multilingues: no disponible; no se declaran idiomas en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; no se declaran idiomas en la ficha de Hugging Face.
 - Vision, audio u otras modalidades: no disponibles; el pipeline declarado es unicamente text-generation.
 
 ## Casos de uso
@@ -87,7 +87,7 @@ Los dos ultimos bloques proceden de investigacion relacionada citada por el auto
 |---|---|---|---|---|---|---|
 | RolanDorisTech/Qwen3.8-9B-Distill-MLX-5bit (oQ5e) | ~9B denso | 262.144 | oQ5e, ~5 bits mezclados con imatrix | 6,0 GB | Apache-2.0 | MLX (mlx-lm, oMLX, LM Studio, mlx-swift) |
 | RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ4e | ~9B denso | 262.144 | oQe, ~4 bits mezclados | 4,9 GB | Apache-2.0 | MLX |
-| empero-ai/Qwen3.8-9B-Distill | ~9B denso | 262.144 | sin cuantizar | no disponible | no disponible | HuggingFace, Featherless |
+| empero-ai/Qwen3.8-9B-Distill | ~9B denso | 262.144 | sin cuantizar | no disponible | no disponible | Hugging Face, Featherless |
 | tobestyledintro/qwen3.8-9b-distill (Ollama) | ~9B denso | no disponible | no disponible | no disponible | no disponible | Ollama |
 
 La comparativa se limita a variantes del mismo modelo base y a su distribucion en otros formatos, porque no se dispone de datos verificables de rendimiento que permitan situarlo frente a alternativas de otros desarrolladores de tamano similar. No se han publicado cifras comparativas de MMLU, HumanEval o GSM8K para ninguno de estos artefactos en la informacion disponible.

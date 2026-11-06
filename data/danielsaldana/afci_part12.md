@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Alternativa | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AFCI_part12 (este repositorio) | Datos de corriente | iMac y generador de ozono, 5 WAV, 48 kHz/16 bits | other; datos originales CC-BY-NC-4.0 | HuggingFace, 0 descargas |
-| AFCI_part11 | Datos de corriente | Quemador y ventilador, 6 WAV | same que el dataset original | HuggingFace, dentro del mismo kit |
+| AFCI_part12 (este repositorio) | Datos de corriente | iMac y generador de ozono, 5 WAV, 48 kHz/16 bits | other; datos originales CC-BY-NC-4.0 | Hugging Face, 0 descargas |
+| AFCI_part11 | Datos de corriente | Quemador y ventilador, 6 WAV | same que el dataset original | Hugging Face, dentro del mismo kit |
 | Dataset MIT original (Siegel et al. 2018) | Datos de corriente | Conjunto completo de cuatro clases | CC-BY-NC-4.0 | Harvard Dataverse, doi:10.7910/DVN/IFDIZ1 |
 
 No se dispone de información sobre otros repositorios comparables de detección de arcos eléctricos en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de información sobre otros repositorios comparables de detección
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielsaldana/AFCI_part12
+- Repositorio en Hugging Face: https://huggingface.co/danielsaldana/AFCI_part12
 - Índice maestro del kit (AFCI_part6): https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Dataset original en Harvard Dataverse: https://doi.org/10.7910/DVN/IFDIZ1
 - Paper de referencia: Siegel, Pratt, Sun y Sarma, "Real-time Deep Neural Networks for internet-enabled arc-fault detection", Engineering Applications of AI, 2018

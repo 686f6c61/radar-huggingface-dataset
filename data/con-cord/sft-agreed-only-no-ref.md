@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| con-cord/SFT-agreed-only-no-ref | 4.300.079.472 | no disponible | no disponible | HuggingFace |
-| con-cord/SFT_MA-no-ref | no disponible | no disponible | no disponible | HuggingFace |
-| Gemma-3-4B (base) | 4B aprox. | no disponible | no disponible | HuggingFace |
+| con-cord/SFT-agreed-only-no-ref | 4.300.079.472 | no disponible | no disponible | Hugging Face |
+| con-cord/SFT_MA-no-ref | no disponible | no disponible | no disponible | Hugging Face |
+| Gemma-3-4B (base) | 4B aprox. | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos. Ambos modelos de con-cord comparten la misma arquitectura base (Gemma-3-4B) y están orientados a la evaluación de respuestas médicas, diferenciándose en la estrategia de entrenamiento (agreed-only frente a majority-agreement).
 
@@ -72,6 +72,6 @@ No se dispone de datos de rendimiento comparativos. Ambos modelos de con-cord co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/con-cord/SFT-agreed-only-no-ref
+- Hugging Face: https://huggingface.co/con-cord/SFT-agreed-only-no-ref
 - Paper de Concord: https://aclanthology.org/2026.gem-main.46.pdf
 - Modelo similar de la misma organización: https://huggingface.co/con-cord/SFT_MA-no-ref

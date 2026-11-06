@@ -2,11 +2,11 @@
 
 ## Resumen
 
-La entrada ElevateStaffingAI/Workforce-Management-Software en HuggingFace no corresponde a un modelo de inteligencia artificial con pesos publicados, sino a la ficha descriptiva de un producto SaaS comercial: una plataforma de gestión de plantilla (workforce management) para agencias de staffing de TI en Estados Unidos, desarrollada por ElevateStaffing.ai. El repositorio, creado el 30 de octubre de 2026, acumula cero descargas y cero likes, y su model card se limita a describir las funciones del producto y a enlazar al sitio web del proveedor.
+La entrada ElevateStaffingAI/Workforce-Management-Software en Hugging Face no corresponde a un modelo de inteligencia artificial con pesos publicados, sino a la ficha descriptiva de un producto SaaS comercial: una plataforma de gestión de plantilla (workforce management) para agencias de staffing de TI en Estados Unidos, desarrollada por ElevateStaffing.ai. El repositorio, creado el 30 de octubre de 2026, acumula cero descargas y cero likes, y su model card se limita a describir las funciones del producto y a enlazar al sitio web del proveedor.
 
 Según la documentación disponible, la plataforma gestiona consultores, asignaciones (engagements), hojas de horas y cumplimiento de visados H-1B en un único entorno cloud, con paneles en tiempo real, facturación y almacenamiento documental. No se publica ninguna especificación técnica de IA: ni arquitectura, ni número de parámetros, ni ventana de contexto, ni formato de pesos.
 
-Para desarrolladores e investigadores, su relevancia como modelo es nula, aunque resulta ilustrativa como caso de repositorios en HuggingFace que no contienen modelos descargables sino contenido promocional. Cualquier evaluación técnica habitual (cuantización, VRAM, benchmarks) no es aplicable en este caso.
+Para desarrolladores e investigadores, su relevancia como modelo es nula, aunque resulta ilustrativa como caso de repositorios en Hugging Face que no contienen modelos descargables sino contenido promocional. Cualquier evaluación técnica habitual (cuantización, VRAM, benchmarks) no es aplicable en este caso.
 
 ## Especificaciones técnicas
 
@@ -80,11 +80,11 @@ Una comparación técnica de parámetros, contexto o rendimiento no es posible p
 - Cero descargas y cero likes: sin validación comunitaria, revisiones ni issues que sirvan de referencia de calidad.
 - Sin datos de entrenamiento ni evaluaciones publicadas: es imposible auditar sesgos, riesgo de alucinación o calidad del output, en caso de que exista algún componente de IA interno.
 - Documentación en inglés y orientada al mercado estadounidense (staffing de TI y visados H-1B); no se declara soporte multilingüe.
-- El repositorio parece cumplir una función promocional o de indexación más que de distribución de modelos: verifique siempre la naturaleza del contenido antes de asumir que un ID de HuggingFace corresponde a un modelo utilizable.
+- El repositorio parece cumplir una función promocional o de indexación más que de distribución de modelos: verifique siempre la naturaleza del contenido antes de asumir que un ID de Hugging Face corresponde a un modelo utilizable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ElevateStaffingAI/Workforce-Management-Software
+- Repositorio en Hugging Face: https://huggingface.co/ElevateStaffingAI/Workforce-Management-Software
 - Página del producto: https://elevatestaffing.ai/workforce-management-software
 - Sitio del proveedor: https://elevatestaffing.ai/
 - Reseñas en G2: https://www.g2.com/products/elevatestaffing-ai/reviews

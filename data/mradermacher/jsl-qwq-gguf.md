@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JSL-QWQ-GGUF es una colección de cuantizaciones en formato GGUF del modelo Zaynoid/JSL-QWQ, generadas por mradermacher, un perfil conocido en HuggingFace por publicar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base es un transformer denso de aproximadamente 32.760 millones de parámetros (32,7B), lo que lo sitúa en la franja de modelos de gran tamaño aptos para despliegue en hardware de gama alta o servidores con múltiples GPU.
+JSL-QWQ-GGUF es una colección de cuantizaciones en formato GGUF del modelo Zaynoid/JSL-QWQ, generadas por mradermacher, un perfil conocido en Hugging Face por publicar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base es un transformer denso de aproximadamente 32.760 millones de parámetros (32,7B), lo que lo sitúa en la franja de modelos de gran tamaño aptos para despliegue en hardware de gama alta o servidores con múltiples GPU.
 
 La relevancia de esta ficha radica en que el repositorio no contiene el modelo original en safetensors, sino únicamente los pesos convertidos a GGUF en once niveles de cuantización que van desde Q2_K (12,4 GB) hasta Q8_0 (34,9 GB). Esto permite ejecutar un modelo de 32,7B en configuraciones de VRAM muy diversas, desde una única GPU consumer con 24 GB hasta servidores con 48 GB o más, a cambio de una pérdida de calidad que depende del nivel elegido.
 
@@ -90,7 +90,7 @@ La comparación con Qwen2.5-32B y Gemma-2-27B es pertinente por tamaño y format
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/JSL-QWQ-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/JSL-QWQ-GGUF
 - Modelo base: https://huggingface.co/Zaynoid/JSL-QWQ
 - Página de descargas del autor: https://hf.tst.eu/model#JSL-QWQ-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

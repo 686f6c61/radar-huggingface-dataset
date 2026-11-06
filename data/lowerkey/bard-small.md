@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bard Small es un modelo de generación de texto de 136.721.664 parámetros (unos 137 M) desarrollado por el usuario lowerkey y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo de propósito general: está entrenado desde cero para dirigir aventuras conversacionales de ficción interactiva. Se le entrega una primera línea ("You arrive at the gates of the old castle"), el modelo narra qué ocurre, propone cambios en el estado del jugador (dinero, objetos) y ofrece una lista de opciones; el jugador escoge una o escribe la suya y la partida sigue.
+Bard Small es un modelo de generación de texto de 136.721.664 parámetros (unos 137 M) desarrollado por el usuario lowerkey y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de propósito general: está entrenado desde cero para dirigir aventuras conversacionales de ficción interactiva. Se le entrega una primera línea ("You arrive at the gates of the old castle"), el modelo narra qué ocurre, propone cambios en el estado del jugador (dinero, objetos) y ofrece una lista de opciones; el jugador escoge una o escribe la suya y la partida sigue.
 
 Su rasgo diferencial es la gestión de números fuera del tokenizador: cada secuencia de dígitos se sustituye por un token `<|num|>` y el valor real viaja en un tensor paralelo (`number_values`), de modo que el modelo puede emitir incrementos numéricos exactos. A esto se suma un formato de bloques propio con roles `state`, `story` y `player`, delimitados por marcadores que son tokens únicos. La consecuencia práctica es que la arquitectura no forma parte de transformers y su carga exige `trust_remote_code=True`.
 
@@ -74,10 +74,10 @@ Los datos de las alternativas proceden de sus respectivas model cards públicas.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| lowerkey/bard-small | 136,7 M | no disponible | Apache-2.0 | HuggingFace, safetensors + código personalizado, requiere `trust_remote_code=True` | no disponible |
-| openai-community/gpt2 | 124 M | 1024 tokens | licencia MIT modificada | HuggingFace, safetensors/PyTorch, compatible con transformers estándar | benchmarks públicos en su model card |
-| HuggingFaceTB/SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 | HuggingFace, transformers estándar | benchmarks públicos en su model card |
-| Qwen/Qwen2.5-0.5B | 494 M | 32768 tokens | Apache-2.0 | HuggingFace, transformers estándar | benchmarks públicos en su model card |
+| lowerkey/bard-small | 136,7 M | no disponible | Apache-2.0 | Hugging Face, safetensors + código personalizado, requiere `trust_remote_code=True` | no disponible |
+| openai-community/gpt2 | 124 M | 1024 tokens | licencia MIT modificada | Hugging Face, safetensors/PyTorch, compatible con transformers estándar | benchmarks públicos en su model card |
+| HuggingFaceTB/SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 | Hugging Face, transformers estándar | benchmarks públicos en su model card |
+| Qwen/Qwen2.5-0.5B | 494 M | 32768 tokens | Apache-2.0 | Hugging Face, transformers estándar | benchmarks públicos en su model card |
 
 La diferencia funcional relevante no es el tamaño, sino el propósito: bard-small es un modelo vertical para aventuras conversacionales con estado y aritmética fuera del tokenizador, mientras que las alternativas son modelos de lenguaje generalistas con tokenización numérica convencional y soporte estándar en el ecosistema transformers.
 
@@ -93,12 +93,12 @@ La diferencia funcional relevante no es el tamaño, sino el propósito: bard-sma
 - Incompatibilidad de herramientas: al no funcionar con `generate()`, no es desplegable directamente en vLLM, TGI, Ollama o llama.cpp, ni con cuantizaciones GGUF existentes. Cualquier integración requiere usar su API propia.
 - Dependencias externas: necesita el paquete `tokenmonster` además de torch y transformers; su tokenizador es específico y no es intercambiable con el de otros modelos.
 - Licencia: Apache-2.0 permite uso comercial, pero impone conservar los avisos de copyright y licencia. No se detalla en la información disponible la licencia del código auxiliar del repositorio, que conviene verificar por separado.
-- Madurez: el repositorio registra 0 descargas y 0 likes, sin validación por parte de la comunidad ni evaluación independiente. La fecha de creación indicada en HuggingFace es el 10 de octubre de 2026.
+- Madurez: el repositorio registra 0 descargas y 0 likes, sin validación por parte de la comunidad ni evaluación independiente. La fecha de creación indicada en Hugging Face es el 10 de octubre de 2026.
 - Producción: dado su tamaño y su tasa de pérdida de coherencia, es adecuado para demos y prototipos, no para atención al cliente, generación de código ni tareas que exijan fiabilidad factual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lowerkey/bard-small
+- Modelo en Hugging Face: https://huggingface.co/lowerkey/bard-small
 - Space del juego (Stochastic Lands of Prophecy): https://huggingface.co/spaces/lowerkey/stochastic-lands-of-prophecy
 - Juego jugable en el navegador: https://slop.szymon.space
 - Dependencia del tokenizador citada en el README: paquete `tokenmonster` (instalable con `pip install tokenmonster`); no se proporciona URL en la información disponible

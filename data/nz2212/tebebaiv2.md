@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tebebAIv2 es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario nz2212. Se trata de un modelo de aproximadamente 1.720.574.976 parametros (~1,72 B), distribuido principalmente en formato GGUF y liberado bajo licencia MIT, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 1,1 GB y esta etiquetado como compatible con endpoints y orientado a conversacion.
+tebebAIv2 es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario nz2212. Se trata de un modelo de aproximadamente 1.720.574.976 parametros (~1,72 B), distribuido principalmente en formato GGUF y liberado bajo licencia MIT, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 1,1 GB y esta etiquetado como compatible con endpoints y orientado a conversacion.
 
 La informacion publica disponible es muy escasa: la model card unicamente declara la licencia MIT y no incluye descripcion de arquitectura, datos de entrenamiento, idiomas ni resultados de benchmarks. Por tanto, cualquier evaluacion tecnica detallada debe considerarse provisional hasta que el autor publique documentacion adicional.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 ## Capacidades
 
 - Generacion de texto conversacional: el modelo esta etiquetado como "conversational", por lo que se espera que gestione dialogos multi-turno basicos.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse detras de una API compatible con HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse detras de una API compatible con Hugging Face Inference Endpoints.
 - Ejecucion local en formato GGUF: al publicarse en GGUF, es apto para inferencia en CPU y GPU mediante herramientas del ecosistema llama.cpp.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -88,6 +88,6 @@ La comparacion de rendimiento no es posible porque tebebAIv2 no publica resultad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nz2212/tebebAIv2
+- Modelo en Hugging Face: https://huggingface.co/nz2212/tebebAIv2
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

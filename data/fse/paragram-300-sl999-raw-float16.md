@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fse/paragram-300-sl999-raw-float16` es un modelo de embeddings estaticos de palabras y frases en ingles, publicado por el usuario `fse` en HuggingFace. No es un modelo generativo ni un transformer: es una tabla de vectores de 300 dimensiones con 1.703.756 filas (vocabulario), derivada del modelo gensim `fse/paragram-300-sl999` y almacenada en float16 mediante la herramienta `fse` (Fast Sentence Embeddings). La representacion de una frase se obtiene como la media de los vectores de sus tokens, normalizada a longitud unitaria.
+`fse/paragram-300-sl999-raw-float16` es un modelo de embeddings estaticos de palabras y frases en ingles, publicado por el usuario `fse` en Hugging Face. No es un modelo generativo ni un transformer: es una tabla de vectores de 300 dimensiones con 1.703.756 filas (vocabulario), derivada del modelo gensim `fse/paragram-300-sl999` y almacenada en float16 mediante la herramienta `fse` (Fast Sentence Embeddings). La representacion de una frase se obtiene como la media de los vectores de sus tokens, normalizada a longitud unitaria.
 
 El modelo resuelve el problema del calculo de embeddings de frases de forma extremadamente barata: al no haber atencion ni pasada por capas, la codificacion es una simple operacion de lookup y media. Esto lo hace adecuado para tareas de similitud semantica, recuperacion densa o clustering a gran escala donde el coste de inferencia de un transformer seria prohibitivo.
 
@@ -84,11 +84,11 @@ Nota: el metodo SIF-10 (ponderacion por frecuencia y eliminacion del componente 
 
 | Modelo | Tipo | Dimension | Vocabulario | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fse/paragram-300-sl999-raw-float16 | Embeddings estaticos | 300 | 1.703.756 | no aplica | unknown | HuggingFace (fse) |
+| fse/paragram-300-sl999-raw-float16 | Embeddings estaticos | 300 | 1.703.756 | no aplica | unknown | Hugging Face (fse) |
 | GloVe 300d (Stanford) | Embeddings estaticos | 300 | ~400.000-2.2M segun version | no aplica | PDDL / Apache 2.0 segun version | Publico |
 | fastText (es/en, 300d) | Embeddings estaticos con subpalabras | 300 | ~2M | no aplica | MIT (codigo) / CC BY-SA (vectores) | Publico |
 | word2vec de Google News | Embeddings estaticos | 300 | 3M | no aplica | Apache 2.0 | Publico |
-| Sentence-BERT (all-MiniLM-L6-v2) | Transformer bi-encoder | 384 | no aplica | 256-512 tokens | Apache 2.0 | HuggingFace |
+| Sentence-BERT (all-MiniLM-L6-v2) | Transformer bi-encoder | 384 | no aplica | 256-512 tokens | Apache 2.0 | Hugging Face |
 
 Comparado con GloVe, fastText y word2vec, este modelo ofrece un vocabulario mayor (1.7M filas) y un formato moderno (safetensors, float16, integracion con `fse`), pero su licencia es desconocida, lo que limita su uso comercial frente a alternativas con licencia clara. Frente a un transformer bi-encoder como all-MiniLM-L6-v2, la calidad semantica es notablemente inferior (51.46 Pearson x100 frente a valores tipicos superiores a 80 en STS-B para MiniLM), pero el coste de inferencia es ordenes de magnitud menor.
 
@@ -106,7 +106,7 @@ Comparado con GloVe, fastText y word2vec, este modelo ofrece un vocabulario mayo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paragram-300-sl999-raw-float16
+- Modelo en Hugging Face: https://huggingface.co/fse/paragram-300-sl999-raw-float16
 - Modelo base (gensim): https://huggingface.co/fse/paragram-300-sl999
 - Repositorio de la libreria fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Paper de referencia Paragram: https://aclanthology.org/Q15-1025/

@@ -4,7 +4,7 @@
 
 svd-safety-l2_remove60_swapdisc_b005 es un checkpoint derivado de meta-llama/Llama-2-7b-chat-hf al que se ha aplicado una compresion por descomposicion en valores singulares (SVD-LLM) que elimina el 60,01% de los parametros densos, seguida de una restauracion parcial del 0,500% del presupuesto de parametros mediante la regla de seleccion de componentes denominada `swapdisc`. El resultado declara una fraccion de parametros densos de 0,3999 respecto al modelo original, con 3.094 componentes restaurados y 3.094 sustituidos, y semilla 42.
 
-El modelo lo publica el usuario de HuggingFace Jeesup y no es un asistente conversacional de proposito general: la propia model card lo describe como un artefacto de investigacion, una celda concreta de una rejilla experimental sobre reglas de seleccion de componentes y presupuestos de restauracion. Su objetivo es medir como la compresion SVD degrada el comportamiento de seguridad de Llama-2-7b-chat y que regla de seleccion repara mejor ese dano, cuantificando el compromiso entre seguridad y utilidad.
+El modelo lo publica el usuario de Hugging Face Jeesup y no es un asistente conversacional de proposito general: la propia model card lo describe como un artefacto de investigacion, una celda concreta de una rejilla experimental sobre reglas de seleccion de componentes y presupuestos de restauracion. Su objetivo es medir como la compresion SVD degrada el comportamiento de seguridad de Llama-2-7b-chat y que regla de seleccion repara mejor ese dano, cuantificando el compromiso entre seguridad y utilidad.
 
 Es relevante ahora porque la compresion agresiva de modelos es una practica habitual para reducir costes de despliegue, y este checkpoint aporta evidencia empirica de que la compresion por si sola eleva la tasa de exito de ataques: la model card advierte explicitamente de que varias celdas de la rejilla estan "deliberadamente degradadas en seguridad" respecto al modelo base. La arquitectura es la de Llama 2 (transformer decoder-only), con licencia Llama 2 Community License y pesos en safetensors.
 
@@ -79,8 +79,8 @@ No se publican resultados de MMLU, HumanEval, GSM8K ni otras pruebas de capacida
 
 | Modelo | Parametros | Contexto | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove60_swapdisc_b005 | 6.738.415.616 almacenados; fraccion densa declarada 0,3999 | 4.096 tokens (heredado) | SVD-LLM: 60,01% eliminado, 0,500% restaurado con `swapdisc` | Llama 2 Community License | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-2-7b-chat-hf | ~6.740 millones | 4.096 tokens | Sin comprimir (referencia) | Llama 2 Community License | HuggingFace, ampliamente utilizado |
+| svd-safety-l2_remove60_swapdisc_b005 | 6.738.415.616 almacenados; fraccion densa declarada 0,3999 | 4.096 tokens (heredado) | SVD-LLM: 60,01% eliminado, 0,500% restaurado con `swapdisc` | Llama 2 Community License | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-2-7b-chat-hf | ~6.740 millones | 4.096 tokens | Sin comprimir (referencia) | Llama 2 Community License | Hugging Face, ampliamente utilizado |
 | Otras celdas de la rejilla del mismo autor | no disponible | no disponible | Varias reglas de seleccion y presupuestos | Llama 2 Community License | no disponible (identificadores no incluidos en la informacion proporcionada) |
 
 No se dispone de datos comparativos de benchmarks frente a Llama-2-7b-chat sin comprimir ni frente a otras tecnicas de compresion, por lo que no es posible establecer una comparacion cuantitativa de rendimiento con alternativas de la misma categoria.
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de benchmarks frente a Llama-2-7b-chat sin c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove60_swapdisc_b005
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove60_swapdisc_b005
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 y politica de uso: incluidos como LICENSE.txt y USE_POLICY.md en el repositorio del modelo
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

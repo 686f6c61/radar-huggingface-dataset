@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estandar (VoxCeleb EER, MMLU, Human
 
 | Modelo | Tipo | Embedding | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AngryBear9019/wespeaker-resnet293-survivor-ft | ResNet293 afinada | 256 dim | VoxCeleb2 + 334 hablantes de Survivor | CC BY 4.0 | HuggingFace |
-| Wespeaker/wespeaker-voxceleb-resnet293-LM | ResNet293 | 256 dim (segun modelo base) | VoxCeleb2 | no disponible en la informacion | HuggingFace |
-| Otros modelos WeSpeaker (ResNet34, ECAPA-TDNN) | CNN | variable | VoxCeleb2 | no disponible en la informacion | HuggingFace / GitHub WeSpeaker |
+| AngryBear9019/wespeaker-resnet293-survivor-ft | ResNet293 afinada | 256 dim | VoxCeleb2 + 334 hablantes de Survivor | CC BY 4.0 | Hugging Face |
+| Wespeaker/wespeaker-voxceleb-resnet293-LM | ResNet293 | 256 dim (segun modelo base) | VoxCeleb2 | no disponible en la informacion | Hugging Face |
+| Otros modelos WeSpeaker (ResNet34, ECAPA-TDNN) | CNN | variable | VoxCeleb2 | no disponible en la informacion | Hugging Face / GitHub WeSpeaker |
 
 La comparativa cuantitativa solo es posible frente al modelo base, con la mejora de 25,0 % a 20,6 % en la prueba descrita. No se dispone de datos para comparar con alternativas como ECAPA-TDNN o embeddings de pyannote en el mismo conjunto de evaluacion.
 
@@ -91,6 +91,6 @@ La comparativa cuantitativa solo es posible frente al modelo base, con la mejora
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AngryBear9019/wespeaker-resnet293-survivor-ft
+- Hugging Face: https://huggingface.co/AngryBear9019/wespeaker-resnet293-survivor-ft
 - Modelo base: https://huggingface.co/Wespeaker/wespeaker-voxceleb-resnet293-LM
 - Proyecto WeSpeaker: https://github.com/wenet-e2e/wespeaker

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen3.8-27B-Abliterated**, publicado por el usuario `windowsxp811203` en HuggingFace, es una variante "abliterated" del modelo base Qwen/Qwen3.8-27B. La técnica de abliteration consiste en eliminar o atenuar las capas de rechazo de seguridad del modelo original, de modo que el modelo responda sin censura a peticiones que normalmente serían bloqueadas. Es un modelo multimodal (pipeline `image-text-to-text`), capaz de procesar tanto imágenes como texto, y está pensado para casos de uso conversacionales y de generación de contenido sin restricciones.
+El modelo **Qwen3.8-27B-Abliterated**, publicado por el usuario `windowsxp811203` en Hugging Face, es una variante "abliterated" del modelo base Qwen/Qwen3.8-27B. La técnica de abliteration consiste en eliminar o atenuar las capas de rechazo de seguridad del modelo original, de modo que el modelo responda sin censura a peticiones que normalmente serían bloqueadas. Es un modelo multimodal (pipeline `image-text-to-text`), capaz de procesar tanto imágenes como texto, y está pensado para casos de uso conversacionales y de generación de contenido sin restricciones.
 
 Con aproximadamente 27.800 millones de parámetros (27.781.427.952), se sitúa en la gama alta de modelos de tamaño medio-grande. Está diseñado para funcionar en inglés y chino, y se distribuye bajo licencia Apache 2.0. El acceso al repositorio está restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales antes de descargar los pesos. Su relevancia actual radica en la creciente demanda de modelos "uncensored" para investigación, generación creativa o entornos donde los filtros de seguridad estándar resultan limitantes, aunque esto conlleva riesgos importantes.
 
@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a pa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated)
+- [Modelo en Hugging Face](https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - No se han encontrado papers, blogs o repositorios adicionales asociados a esta variante.

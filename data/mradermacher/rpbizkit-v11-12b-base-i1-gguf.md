@@ -27,7 +27,7 @@ La relevancia de este repositorio es fundamentalmente práctica: permite ejecuta
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. La model card del repositorio GGUF se limita a indicar los metadatos de la conversion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`, `vocab_type:` vacio) y a declarar que se trata de cuantizaciones weighted/imatrix del modelo `RicardoEstep/RPBizkit-v11-12B-Base`. El campo `convert_type: hf` indica que la conversion partio de pesos en formato HuggingFace, y el sufijo "Base" en el nombre del modelo original sugiere que se trata de un modelo preentrenado sin ajuste por instrucciones, si bien esto no esta confirmado por el autor.
+No se dispone de informacion sobre la arquitectura del modelo base. La model card del repositorio GGUF se limita a indicar los metadatos de la conversion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`, `vocab_type:` vacio) y a declarar que se trata de cuantizaciones weighted/imatrix del modelo `RicardoEstep/RPBizkit-v11-12B-Base`. El campo `convert_type: hf` indica que la conversion partio de pesos en formato Hugging Face, y el sufijo "Base" en el nombre del modelo original sugiere que se trata de un modelo preentrenado sin ajuste por instrucciones, si bien esto no esta confirmado por el autor.
 
 El unico dato tecnico destacable del proceso de conversion es el uso de cuantizacion imatrix, que emplea una matriz de importancia calculada a partir de un conjunto de calibracion para decidir con mas precision que pesos pueden degradarse. Esto suele traducirse en una perdida de perplejidad menor que la cuantizacion escalar estandar, especialmente en los niveles IQ1 e IQ2. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO u otra fase de alineamiento, ni sobre innovaciones arquitectonicas como atencion lineal o decodificacion especulativa.
 
@@ -49,7 +49,7 @@ El unico dato tecnico destacable del proceso de conversion es el uso de cuantiza
 - Evaluacion comparativa de cuantizaciones: el repositorio incluye 24 variantes de precision, lo que lo convierte en un banco de pruebas util para medir el impacto de IQ1/IQ2 frente a Q5/Q6 en una tarea concreta del dominio propio, siempre que se valide antes la licencia del modelo base.
 - Fine-tuning posterior ligero o experimentacion academica: con 12,25B parametros y variantes de 4 bits, es viable experimentar con adaptadores LoRA sobre hardware de consumo, aunque la falta de licencia clara limita su uso en trabajos publicables.
 - Inferencia en entornos con restricciones de memoria y sin conectividad: la version Q4_K_M o Q4_K_S de un modelo de este tamano cabe en portatiles con 16 GB de RAM, lo que habilita asistentes de escritura o resumen de documentos totalmente offline.
-- Servicio de chat autoalojado con `endpoints_compatible`: la etiqueta indica compatibilidad con el formato de endpoints de HuggingFace, por lo que puede exponerse como endpoint gestionado dentro de esa plataforma si se dispone de la cuota de hardware adecuada.
+- Servicio de chat autoalojado con `endpoints_compatible`: la etiqueta indica compatibilidad con el formato de endpoints de Hugging Face, por lo que puede exponerse como endpoint gestionado dentro de esa plataforma si se dispone de la cuota de hardware adecuada.
 
 ## Benchmarks y rendimiento
 
@@ -98,7 +98,7 @@ No hay datos publicados de rendimiento del modelo para establecer una comparacio
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/RPBizkit-v11-12B-Base-i1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/RPBizkit-v11-12B-Base-i1-GGUF
 - Modelo base: https://huggingface.co/RicardoEstep/RPBizkit-v11-12B-Base
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Paper, blog, repositorio de codigo o demo: no disponible

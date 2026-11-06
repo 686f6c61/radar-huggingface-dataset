@@ -82,7 +82,7 @@ La diferencia clave de este artefacto frente a KBLab/kb-whisper-large es el form
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pinecoresystems/kb-whisper-large-ct2
+- Modelo en Hugging Face: https://huggingface.co/pinecoresystems/kb-whisper-large-ct2
 - Modelo original de KBLab: https://huggingface.co/KBLab/kb-whisper-large
 - Repositorio de referencia de CTranslate2 (OpenNMT): https://github.com/OpenNMT/CTranslate2
 - Implementacion `faster-whisper` sobre CTranslate2: https://github.com/SYSTRAN/faster-whisper

@@ -82,6 +82,6 @@ La comparativa se basa en características públicas de los modelos alternativos
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/clairemcw/omnilingual-asr-300M-ctc-v2-int8
+- Hugging Face del artefacto: https://huggingface.co/clairemcw/omnilingual-asr-300M-ctc-v2-int8
 - Exportación sherpa-onnx de origen: https://huggingface.co/csukuangfj2/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-v2-2026-02-05
 - Repositorio de Omnilingual ASR de Meta: https://github.com/facebookresearch/omnilingual-asr

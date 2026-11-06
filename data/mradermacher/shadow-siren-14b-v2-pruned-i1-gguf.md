@@ -95,6 +95,6 @@ La comparacion de rendimiento no es posible por falta de benchmarks publicados p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Shadow-Siren-14B-v2-Pruned-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Shadow-Siren-14B-v2-Pruned-i1-GGUF
 - Modelo base: https://huggingface.co/Goopr/Shadow-Siren-14B-v2-Pruned
 - Otros enlaces (papers, blogs, demos, repos): no disponible.

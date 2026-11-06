@@ -103,11 +103,11 @@ No se han publicado en la información proporcionada resultados de benchmarks de
 - Sesgos: no documentados ni medidos en la información proporcionada.
 - Licencia Apache-2.0 en el repositorio, heredada del modelo base, lo que permite uso comercial; sin embargo, el propósito declarado es la investigación y el modelo no está validado para producción.
 - Despliegue con plantilla de chat y decodificación greedy en las evaluaciones; otros ajustes de decodificación no han sido caracterizados.
-- Cero descargas y cero likes en el momento de la consulta, sin pipeline declarado en HuggingFace.
+- Cero descargas y cero likes en el momento de la consulta, sin pipeline declarado en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_basis_coeff_jbbsft_finetuned_keep_0p60
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_basis_coeff_jbbsft_finetuned_keep_0p60
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Código de Basis Sharing: https://github.com/TUDa-HWAI/Basis_Sharing (commit `1c021b6ce1d3`)
 - Dataset de recuperación: https://huggingface.co/datasets/yahma/alpaca-cleaned
@@ -115,4 +115,4 @@ No se han publicado en la información proporcionada resultados de benchmarks de
 - Juez de sobrerrespuesta: https://huggingface.co/allenai/wildguard
 - Objetivos de negativa de referencia: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces listados proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces listados proceden de la información de Hugging Face y de la model card.

@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/google/gemma-4-31b-it-8b
+- Hugging Face: https://huggingface.co/google/gemma-4-31b-it-8b
 - Otros enlaces: no disponible

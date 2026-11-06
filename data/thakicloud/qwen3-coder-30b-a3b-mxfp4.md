@@ -105,7 +105,7 @@ El autor recomienda: para velocidad en Blackwell, usar NVFP4 (1.22x-1.28x sobre 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-MXFP4)
+- [Modelo en Hugging Face](https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-MXFP4)
 - [Version NVFP4 del mismo modelo](https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-NVFP4)
 - [Version W4A16 del mismo modelo](https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-W4A16)
 - [Modelo base Qwen3-Coder-30B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct)

@@ -68,6 +68,6 @@ No disponible. No se han encontrado modelos comparables de generación de imáge
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayneHuang/CellBridge
+- Repositorio Hugging Face: https://huggingface.co/LayneHuang/CellBridge
 - Código fuente: https://github.com/Layne-Huang/CellBridge (rama `unified-eval`)
 - Paper asociado: no disponible en la información proporcionada (se menciona "the paper" pero sin enlace directo).

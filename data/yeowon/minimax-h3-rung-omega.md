@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto / salida | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-Rung-Omega (este) | 33,1B totales / 20,11B activos | vídeo 864×480, 124 frames, audio 32 kHz | 4-Trit base 3 (5,977 BPW) | other | HuggingFace, ComfyUI |
+| MiniMax-H3-Rung-Omega (este) | 33,1B totales / 20,11B activos | vídeo 864×480, 124 frames, audio 32 kHz | 4-Trit base 3 (5,977 BPW) | other | Hugging Face, ComfyUI |
 | MiniMax-H3 FL2VA BF16 (base) | 33,1B totales / 20,11B activos | vídeo 864×480, 124 frames, audio 32 kHz | BF16 (16 BPW) | no disponible | Comfy-Org/MiniMax-H3 |
 | MiniMax-H3 int8_convrot | 33,1B totales / 20,11B activos | vídeo 864×480, 124 frames, audio 32 kHz | INT8 (8,003 BPW) | no disponible | recomendado oficialmente |
 | MiniMax-H3 NVFP4 RTN (track) | 33,1B totales / 20,11B activos | vídeo 864×480, 124 frames, audio 32 kHz | NVFP4 (4,5 BPW) | no disponible | variante de calibración |
@@ -108,7 +108,7 @@ No se dispone de comparación con otros modelos de generación vídeo-audio de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yeowon/MiniMax-H3-Rung-Omega
+- Modelo en Hugging Face: https://huggingface.co/yeowon/MiniMax-H3-Rung-Omega
 - Modelo base: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Apoyo al autor: https://buymeacoffee.com/tripleyoung
 - Demo de vídeo y audio (referencias dentro del repo): ./assets/MiniMax_H3_TheoremFlow_Omega_Champion.mp4, ./assets/MiniMax_H3_Rung_Omega_50blk_Champion.mp4, ./assets/MiniMax_H3_TheoremFlow_Omega_Champion_audio.wav

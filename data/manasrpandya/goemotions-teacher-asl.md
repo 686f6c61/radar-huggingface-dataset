@@ -2,7 +2,7 @@
 
 ## Resumen
 
-goemotions-teacher-asl es un modelo de clasificación de texto multietiqueta desarrollado por el usuario de HuggingFace manasrpandya. Se trata de un fine-tuning de roberta-large (355 millones de parámetros) sobre el conjunto de datos GoEmotions de Google Research, orientado a detectar emociones en textos en inglés. El modelo forma parte de un proyecto más amplio del autor, publicado en su repositorio NLP_CV_Lab, y su nombre ("teacher-asl") sugiere un uso como modelo profesor en un esquema de destilación o entrenamiento asistido.
+goemotions-teacher-asl es un modelo de clasificación de texto multietiqueta desarrollado por el usuario de Hugging Face manasrpandya. Se trata de un fine-tuning de roberta-large (355 millones de parámetros) sobre el conjunto de datos GoEmotions de Google Research, orientado a detectar emociones en textos en inglés. El modelo forma parte de un proyecto más amplio del autor, publicado en su repositorio NLP_CV_Lab, y su nombre ("teacher-asl") sugiere un uso como modelo profesor en un esquema de destilación o entrenamiento asistido.
 
 La relevancia de este modelo radica en su enfoque técnico: emplea una función de pérdida asimétrica (asymmetric loss) con parámetros gamma=4 y clip=0.05, una elección habitual en problemas multietiqueta con fuerte desbalanceo de clases como GoEmotions. Además, el autor documenta explícitamente que las probabilidades crudas del modelo están subconfiadas y deben recalibrarse dividiendo los logits por una temperatura de 0,323 antes de aplicar la sigmoid, un detalle poco habitual en model cards y útil para quien lo despliegue en producción.
 
@@ -65,7 +65,7 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 - VRAM estimada para inferencia en fp32: aproximadamente 1,4 GB (355 M parámetros × 4 bytes) más overhead de activaciones; en fp16, alrededor de 0,7 GB.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060 (12 GB) o superior permite lotes grandes. Para producción de alto throughput, A100 o H100 no son necesarias pero ofrecen mayor paralelismo.
 - Cabe holgadamente en GPU consumer: GTX 1660 (6 GB), RTX 2060, RTX 3060, RTX 4090, etc. También puede ejecutarse en CPU para inferencia por lotes con latencia aceptable.
-- Opciones de despliegue: HuggingFace Transformers (pipeline de text-classification), Text Embeddings Inference (TEI), ONNX Runtime, o conversión a GGUF para llama.cpp/Ollama (aunque al ser un encoder, el soporte es más limitado).
+- Opciones de despliegue: Hugging Face Transformers (pipeline de text-classification), Text Embeddings Inference (TEI), ONNX Runtime, o conversión a GGUF para llama.cpp/Ollama (aunque al ser un encoder, el soporte es más limitado).
 - Latencia y throughput estimados: no disponibles en la información proporcionada; para un encoder de 355 M, en una GPU moderna se esperan decenas de miles de textos por segundo en lotes, pero es una estimación genérica no confirmada por el autor.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos publicados en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manasrpandya/goemotions-teacher-asl
+- Hugging Face: https://huggingface.co/manasrpandya/goemotions-teacher-asl
 - Repositorio del proyecto (código e informe): https://github.com/manasrpandya/NLP_CV_Lab/tree/main/projects/06-emotion-classification
 - Dataset GoEmotions: https://huggingface.co/datasets/google-research-datasets/go_emotions
 - Paper de GoEmotions (Google Research): no disponible en la información proporcionada

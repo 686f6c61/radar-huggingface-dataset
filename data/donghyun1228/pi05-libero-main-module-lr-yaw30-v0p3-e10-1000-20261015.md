@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-main-module-lr-yaw30-v0p3-e10-1000 | no disponible | no disponible | sin evaluar | apache-2.0 | HuggingFace, autor Donghyun1228 |
+| pi05-libero-main-module-lr-yaw30-v0p3-e10-1000 | no disponible | no disponible | sin evaluar | apache-2.0 | Hugging Face, autor Donghyun1228 |
 | pi0 / pi0.5 (openpi, Physical Intelligence) | no disponible en esta ficha | no disponible | no disponible | según repositorio openpi | repositorio openpi |
 | OpenVLA | no disponible en esta ficha | no disponible | no disponible | según su publicacion | publico |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw30-v0p3-e10-1000
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw30-v0p3-e10-1000
 - Repositorio openpi de Physical Intelligence: no disponible en la información proporcionada
 - Paper de pi0 / pi0.5: no disponible en la información proporcionada
 - Demo o blog del autor: no disponible

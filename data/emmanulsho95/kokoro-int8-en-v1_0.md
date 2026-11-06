@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emmanulsho95/kokoro-int8-en-v1_0` es una publicacion de HuggingFace que, por su identificador, apunta a una version cuantizada a int8 del modelo de sintesis de voz Kokoro (variante en ingles, version v1.0), empaquetada en formato ONNX. El autor del repositorio es el usuario `emmanulsho95`, no el equipo original de Kokoro, por lo que se trata de una redistribucion o derivado mas que de un modelo entrenado desde cero. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un modelo TTS pequeno exportado a ONNX y cuantizado a 8 bits.
+`emmanulsho95/kokoro-int8-en-v1_0` es una publicacion de Hugging Face que, por su identificador, apunta a una version cuantizada a int8 del modelo de sintesis de voz Kokoro (variante en ingles, version v1.0), empaquetada en formato ONNX. El autor del repositorio es el usuario `emmanulsho95`, no el equipo original de Kokoro, por lo que se trata de una redistribucion o derivado mas que de un modelo entrenado desde cero. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un modelo TTS pequeno exportado a ONNX y cuantizado a 8 bits.
 
 La relevancia de esta ficha es limitada: el repositorio no incluye model card con descripcion tecnica (solo el bloque de metadatos de licencia), no declara pipeline, no declara idiomas y no tiene descargas ni interacciones en el momento de la consulta. La informacion disponible no permite confirmar parametros, arquitectura interna, dataset de entrenamiento ni resultados de evaluacion del artefacto concreto.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha documenta lo que se puede verificar (formato, licencia, ta
 | Licencia | apache-2.0 |
 | Formato de pesos | ONNX (tag `onnx` del repositorio) |
 | Tamano del repositorio | 0,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-11-03 |
 | Fecha de ultima actualizacion | 2026-11-03 |
 
@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 - La model card no contiene descripcion tecnica: no se documentan arquitectura, parametros, datos de entrenamiento ni proceso de cuantizacion.
 - No se declaran idiomas soportados en los metadatos; el sufijo `en` del identificador sugiere ingles, pero no esta confirmado oficialmente.
-- No se declara pipeline en HuggingFace, lo que dificulta el uso automatizado a traves de la libreria `transformers`.
+- No se declara pipeline en Hugging Face, lo que dificulta el uso automatizado a traves de la libreria `transformers`.
 - Al ser una cuantizacion int8, es previsible cierta degradacion de la calidad del audio frente a la version en punto flotante; no se aportan metricas (MOS, intelligibility) que la cuantifiquen.
 - No consta que el autor sea el desarrollador original de Kokoro; la trazabilidad del artefacto respecto al modelo base no esta documentada.
 - Licencia apache-2.0 declarada, lo que en principio permite uso comercial, pero conviene verificar que la licencia del modelo base Kokoro sea compatible con la redistribucion.
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emmanulsho95/kokoro-int8-en-v1_0
+- Repositorio en Hugging Face: https://huggingface.co/emmanulsho95/kokoro-int8-en-v1_0
 - Modelo base Kokoro (referencia presumible, no enlazado en la model card): no disponible en la informacion proporcionada
 - Paper, blog o repositorio del autor: no disponible
 - Demos: no disponible

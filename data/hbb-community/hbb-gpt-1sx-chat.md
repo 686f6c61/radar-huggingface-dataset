@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HBB-GPT-1Sx-chat es un modelo publicado en HuggingFace por la comunidad HBB-Community bajo el identificador `HBB-Community/HBB-GPT-1Sx-chat`. Se distribuye con la libreria `transformers`, formato safetensors declarado y pipeline `any-to-any`, y su model card lo presenta como un modelo de lenguaje multilingue de escala frontera con 1B parametros activos, contexto de 32.768 tokens y un vocabulario de 262.144 tokens heredado del tokenizer de Gemma E2B. La etiqueta de arquitectura declarada es `HBBGPT2NanoForCausalLM`, asociada a unos supuestos "principios NullNet" (tag `nullnet-quetta`), sin que se documente ninguna innovacion tecnica verificable.
+HBB-GPT-1Sx-chat es un modelo publicado en Hugging Face por la comunidad HBB-Community bajo el identificador `HBB-Community/HBB-GPT-1Sx-chat`. Se distribuye con la libreria `transformers`, formato safetensors declarado y pipeline `any-to-any`, y su model card lo presenta como un modelo de lenguaje multilingue de escala frontera con 1B parametros activos, contexto de 32.768 tokens y un vocabulario de 262.144 tokens heredado del tokenizer de Gemma E2B. La etiqueta de arquitectura declarada es `HBBGPT2NanoForCausalLM`, asociada a unos supuestos "principios NullNet" (tag `nullnet-quetta`), sin que se documente ninguna innovacion tecnica verificable.
 
 La relevancia practica de esta ficha es limitada y conviene decirlo desde el principio: el repositorio tiene un tamano de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, y la propia model card indica que "los pesos son dificiles de publicar, asi que durante un tiempo no estaran". Es decir, no hay artefactos de pesos descargables, por lo que el modelo no es ejecutable tal y como esta publicado.
 
@@ -51,7 +51,7 @@ Dado que el repositorio no contiene pesos descargables y que los datos de rendim
 - Generacion de texto multilingue en pruebas de concepto: si los pesos llegasen a publicarse, los 166 idiomas declarados permitirian probar generacion en lenguas de bajos recursos, aunque sin garantia alguna de calidad por la ausencia de datos de entrenamiento documentados.
 - Prototipado de asistentes conversacionales: con un contexto declarado de 32.768 tokens, encajaria en prototipos de chat multi-turno, siempre que el coste de validar las salidas sea asumible.
 - Razonamiento paso a paso en entornos educativos: el etiquetado `step-by-step` y `thinking` sugiere uso en explicaciones encadenadas, pero la falta de evaluacion honesta hace imprescindible la revision humana de cada respuesta.
-- Investigacion sobre artefactos sinteticos en HuggingFace: el modelo es un ejemplo claro de "model card engineering" (termino que emplea la propia ficha) y sirve para estudiar como detectar repositorios sin sustancia tecnica en los pipelines de descubrimiento de modelos.
+- Investigacion sobre artefactos sinteticos en Hugging Face: el modelo es un ejemplo claro de "model card engineering" (termino que emplea la propia ficha) y sirve para estudiar como detectar repositorios sin sustancia tecnica en los pipelines de descubrimiento de modelos.
 - Pruebas de integracion con `transformers`: al declarar `transformers` como libreria y safetensors como formato, permitiria probar cargadores y utilidades de conversion, si bien el repositorio vacio hace que la carga falle.
 - Traduccion automatica exploratoria: los listados de idiomas incluyen lenguas sin recursos comerciales; un modelo que funcionase en ellas tendria interes, pero no hay ninguna evidencia de que lo haga.
 
@@ -79,7 +79,7 @@ Observaciones sobre la tabla: el patron de resultados (superar por margenes mini
 - VRAM para inferencia: no disponible de forma verificable. A partir del dato declarado de 1B parametros en INT4 (aproximadamente 0,5-0,7 GB de pesos puros), el modelo cabria teoricamente en cualquier GPU de consumo con 4 GB o mas, pero al no existir pesos publicados esta estimacion es especulativa.
 - GPU recomendadas por el autor: una unica P100 de 16 GB HBM2, mencion que la propia model card describe en tono parodico.
 - GPU de consumo: no verificable. La model card declara 1.920 fragmentos de pesos para despliegue distribuido y una cuantizacion de 4 bits, lo que sugeriria viabilidad en GPU de gama media, pero carece de respaldo.
-- Opciones de despliegue: la libreria declarada es `transformers`. El repositorio incluye la etiqueta `endpoints_compatible`, que sugiere compatibilidad con Inference Endpoints de HuggingFace. No hay confirmacion de soporte en vLLM, llama.cpp, Ollama o TGI. La model card menciona `vLLM` y `Unsloth` solo de pasada, en un parrafo argumentativo, no como soporte real.
+- Opciones de despliegue: la libreria declarada es `transformers`. El repositorio incluye la etiqueta `endpoints_compatible`, que sugiere compatibilidad con Inference Endpoints de Hugging Face. No hay confirmacion de soporte en vLLM, llama.cpp, Ollama o TGI. La model card menciona `vLLM` y `Unsloth` solo de pasada, en un parrafo argumentativo, no como soporte real.
 - Latencia y throughput: no disponible.
 - Requisito previo bloqueante: el repositorio ocupa 0,0 GB, por lo que no hay nada que desplegar.
 
@@ -111,7 +111,7 @@ La comparacion es asimetrica por definicion: los cuatro modelos de referencia so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HBB-Community/HBB-GPT-1Sx-chat
+- Modelo en Hugging Face: https://huggingface.co/HBB-Community/HBB-GPT-1Sx-chat
 - Modelo relacionado de la misma comunidad (HBB-GPT1-logic): https://huggingface.co/HBB-Community/HBB-GPT1-logic
 - Model card del modelo relacionado: https://huggingface.co/HBB-Community/HBB-GPT1-logic/blob/main/README.md
 - Dataset declarado, no publicado: HBB-Community/everything (referencia incluida en las etiquetas del repositorio, sin URL publica accesible)

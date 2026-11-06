@@ -89,7 +89,7 @@ La comparativa se limita a builds de la misma familia y autor. Frente a la versi
 
 ## Enlaces
 
-- [Checkpoint en HuggingFace](https://huggingface.co/avlp12/GLM-5.2-Alis-MLX-Dynamic-2.56bpw)
+- [Checkpoint en Hugging Face](https://huggingface.co/avlp12/GLM-5.2-Alis-MLX-Dynamic-2.56bpw)
 - [Colección GLM-5.2 Alis MLX Dynamic](https://huggingface.co/collections/avlp12/glm-52-alis-mlx-dynamic-6a565b3ce5cff4f22ab0156f)
 - [Modelo base zai-org/GLM-5.2](https://huggingface.co/zai-org/GLM-5.2)
 - [Caso de estudio en GitHub (alis-dwq)](https://github.com/avlp12/alis-dwq/blob/main/examples/glm-5.2/README.md)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio "Hdjsjsbsjdn/Sex" fue creado en HuggingFace el 14 de septiembre de 2026 por el usuario Hdjsjsbsjdn. No se dispone de información técnica sobre el modelo: no se especifica arquitectura, tamaño, contexto, pipeline ni idiomas. La información de la búsqueda web sugiere que el repositorio está relacionado con contenido para adultos generado por IA, pero no hay datos verificables sobre el modelo en sí. Por tanto, no es posible evaluar sus capacidades ni su rendimiento.
+El repositorio "Hdjsjsbsjdn/Sex" fue creado en Hugging Face el 14 de septiembre de 2026 por el usuario Hdjsjsbsjdn. No se dispone de información técnica sobre el modelo: no se especifica arquitectura, tamaño, contexto, pipeline ni idiomas. La información de la búsqueda web sugiere que el repositorio está relacionado con contenido para adultos generado por IA, pero no hay datos verificables sobre el modelo en sí. Por tanto, no es posible evaluar sus capacidades ni su rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -49,4 +49,4 @@ No disponible. No se dispone de información técnica que permita comparar este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hdjsjsbsjdn/Sex
+- Hugging Face: https://huggingface.co/Hdjsjsbsjdn/Sex

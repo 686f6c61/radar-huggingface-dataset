@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `geoffmunn/PeerReviewers` es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario `geoffmunn`. Según los metadatos disponibles, se distribuye en formato GGUF, lo que indica que está orientado a su ejecución en entornos de inferencia local como llama.cpp o similares. El repositorio tiene un tamaño de 633,6 GB, lo que sugiere la inclusión de múltiples archivos de pesos, probablemente correspondientes a distintas cuantizaciones del mismo modelo base.
+El modelo `geoffmunn/PeerReviewers` es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario `geoffmunn`. Según los metadatos disponibles, se distribuye en formato GGUF, lo que indica que está orientado a su ejecución en entornos de inferencia local como llama.cpp o similares. El repositorio tiene un tamaño de 633,6 GB, lo que sugiere la inclusión de múltiples archivos de pesos, probablemente correspondientes a distintas cuantizaciones del mismo modelo base.
 
 El modelo cuenta con 22.247.282.688 parámetros (aproximadamente 22,2 mil millones), un tamaño que lo sitúa en la gama de modelos medianos-grandes, aunque no se especifica la arquitectura concreta ni el modelo base del que deriva. La ficha carece de información sobre licencia, idiomas soportados, contexto o proceso de entrenamiento, por lo que su evaluación rigurosa resulta limitada. A pesar de ello, su etiquetado como "conversational" y "endpoints_compatible" sugiere que está diseñado para tareas de diálogo y para ser desplegado mediante APIs compatibles con el estándar de OpenAI.
 
@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/geoffmunn/PeerReviewers
+- Pagina del modelo en Hugging Face: https://huggingface.co/geoffmunn/PeerReviewers
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo) asociados al modelo en la informacion proporcionada.

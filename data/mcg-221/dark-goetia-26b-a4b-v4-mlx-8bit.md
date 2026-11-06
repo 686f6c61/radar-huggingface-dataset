@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/McG-221/Dark-Goetia-26B-A4B-v4-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/McG-221/Dark-Goetia-26B-A4B-v4-mlx-8Bit
 - Modelo base: https://huggingface.co/26B-Suite/Dark-Goetia-26B-A4B-v4
 - Version v2 del mismo autor: https://huggingface.co/McG-221/Dark-Goetia-26B-A4B-v2-mlx-8Bit
 - Modelo similar Phoenix X: https://llm-explorer.com/model/McG-221%2FPhoenix-X-26B-A4B-mlx-8Bit,5u9xWJJ6vD8QdxmuVCZcUA

@@ -53,5 +53,5 @@ No se dispone de información sobre modelos comparables con la misma configuraci
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Phuonganhfvhf/model_706162271_mocov3_nano)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Phuonganhfvhf) (no se proporciona en los resultados de búsqueda, se enlaza el ID del autor si existe)
+- [Hugging Face del modelo](https://huggingface.co/Phuonganhfvhf/model_706162271_mocov3_nano)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Phuonganhfvhf) (no se proporciona en los resultados de búsqueda, se enlaza el ID del autor si existe)

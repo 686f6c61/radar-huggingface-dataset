@@ -70,8 +70,8 @@ El autor advierte que, si la reproducción oficial emplea el fallback MPLib por 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LingBot-VLA 2.0 LoRA (este repo) | 6B | no disponible | 62,8% clean2clean / 37,0% clean2random en RoboTwin 2.0 | no disponible | HuggingFace (0 descargas) |
-| robbyant/lingbot-vla-v2-6b (base) | 6B | no disponible | no disponible | no disponible | HuggingFace |
+| LingBot-VLA 2.0 LoRA (este repo) | 6B | no disponible | 62,8% clean2clean / 37,0% clean2random en RoboTwin 2.0 | no disponible | Hugging Face (0 descargas) |
+| robbyant/lingbot-vla-v2-6b (base) | 6B | no disponible | no disponible | no disponible | Hugging Face |
 | Otros VLA comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dwyane/lingbot-vla-robotwin-weights
+- Repositorio Hugging Face: https://huggingface.co/Dwyane/lingbot-vla-robotwin-weights
 - Modelo base: https://huggingface.co/robbyant/lingbot-vla-v2-6b
 - Código y materiales de evaluación: https://github.com/wuuwuu26/iamNailong-lingbot-vla
 - Mirror de descarga: https://hf-mirror.com

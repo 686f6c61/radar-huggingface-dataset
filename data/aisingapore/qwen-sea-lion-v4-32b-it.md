@@ -82,7 +82,7 @@ La comparativa directa con otros modelos regionales como Sailor (de Alibaba) o m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT
+- Repositorio Hugging Face: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT
 - Versión cuantizada 4-bit: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-4BIT
 - Versión cuantizada 8-bit: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT
 - Modelo base Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B

@@ -68,8 +68,8 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arun-c/whisper-base-android
+- Repositorio Hugging Face: https://huggingface.co/arun-c/whisper-base-android
 - Repositorio de referencia whisper.cpp-android: https://github.com/anuj-softech/whisper.cpp-android
 - Repositorio alternativo con TFLite: https://github.com/vilassn/whisper_android
-- Modelo original Whisper Base en HuggingFace: https://huggingface.co/openai/whisper-base
+- Modelo original Whisper Base en Hugging Face: https://huggingface.co/openai/whisper-base
 - Documentacion de Whisper Base en Qualcomm AI Hub: https://aihub.qualcomm.com/compute/models/whisper_base

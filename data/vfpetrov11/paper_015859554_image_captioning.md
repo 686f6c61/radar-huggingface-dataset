@@ -63,6 +63,6 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vfpetrov11/paper_015859554_image_captioning
-- Documentacion de HuggingFace sobre image captioning: https://huggingface.co/docs/transformers/tasks/image_captioning
+- Repositorio Hugging Face: https://huggingface.co/vfpetrov11/paper_015859554_image_captioning
+- Documentacion de Hugging Face sobre image captioning: https://huggingface.co/docs/transformers/tasks/image_captioning
 - Articulo de revision (referencia externa sobre el tema, no el mismo paper): https://arxiv.org/abs/2201.12944

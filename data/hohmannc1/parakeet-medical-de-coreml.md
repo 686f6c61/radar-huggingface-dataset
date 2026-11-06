@@ -68,11 +68,11 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo s
 
 ## Enlaces
 
-- [Modelo en HuggingFace: hohmannc1/parakeet-medical-de-coreml](https://huggingface.co/hohmannc1/parakeet-medical-de-coreml)
+- [Modelo en Hugging Face: hohmannc1/parakeet-medical-de-coreml](https://huggingface.co/hohmannc1/parakeet-medical-de-coreml)
 - [Modelo base: Mediform/parakeet-medical-de](https://huggingface.co/Mediform/parakeet-medical-de)
 - [Modelo original de NVIDIA: nvidia/parakeet-tdt-0.6b-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
 - [Pipeline de conversion: FluidInference/mobius](https://github.com/FluidInference/mobius)
 - [Libreria FluidAudio](https://github.com/FluidInference/FluidAudio)
-- [Organizacion Mediform en HuggingFace](https://huggingface.co/Mediform/models)
+- [Organizacion Mediform en Hugging Face](https://huggingface.co/Mediform/models)
 - [Proyecto parakeet-coreml (para Node.js en Apple Silicon)](https://github.com/sebastian-software/parakeet-coreml)
 - [Lista de modelos CoreML (Awesome-CoreML-Models)](https://github.com/likedan/Awesome-CoreML-Models)

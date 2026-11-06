@@ -27,7 +27,7 @@ La relevancia de esta ficha es acotada: se trata de un checkpoint de investigaci
 | Version de PyTorch | 2.11.0 |
 | Version de Datasets | 4.8.4 |
 | Version de Tokenizers | 0.22.1 |
-| Fecha de creacion en HuggingFace | 2026-09-18 (segun los metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-18 (segun los metadatos del repositorio) |
 | Fecha de ultima actualizacion | 2026-09-18 |
 
 ## Arquitectura y entrenamiento
@@ -74,17 +74,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed10 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint de investigacion; sin benchmarks |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT (pesos de OpenAI) | HuggingFace, ampliamente usado | Referencia de la misma arquitectura y tamano; con benchmarks publicos |
-| DistilGPT-2 (distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Version destilada, mas rapida, licencia permisiva |
-| GPT-2 medium (openai-community/gpt2-medium) | 355 M | 1024 tokens | MIT (pesos de OpenAI) | HuggingFace | Alternativa de mayor capacidad dentro de la misma familia |
+| fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed10 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint de investigacion; sin benchmarks |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT (pesos de OpenAI) | Hugging Face, ampliamente usado | Referencia de la misma arquitectura y tamano; con benchmarks publicos |
+| DistilGPT-2 (distilgpt2) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Version destilada, mas rapida, licencia permisiva |
+| GPT-2 medium (openai-community/gpt2-medium) | 355 M | 1024 tokens | MIT (pesos de OpenAI) | Hugging Face | Alternativa de mayor capacidad dentro de la misma familia |
 
 La comparacion con GPT-2 small y medium es estructural (misma arquitectura y orden de magnitud de parametros), no de rendimiento: no existen resultados de benchmarks de este checkpoint que permitan situarlo frente a ellos. La ventaja diferencial de las alternativas de OpenAI y de distilgpt2 es la claridad de su licencia, dato que aqui falta.
 
 ## Limitaciones y advertencias
 
 - Ausencia de licencia: la model card incluye un marcador de posicion (`licence: license`) sin texto legal. Sin una licencia explicita, no hay autorizacion clara para uso comercial ni para redistribucion, por lo que no debe utilizarse en produccion sin contactar con el autor.
-- Modelo de investigacion sin validacion externa: 0 descargas y 0 likes en HuggingFace, sin benchmarks publicados y sin evaluaciones de terceros. No hay evidencia de calidad fuera del run de entrenamiento del autor.
+- Modelo de investigacion sin validacion externa: 0 descargas y 0 likes en Hugging Face, sin benchmarks publicados y sin evaluaciones de terceros. No hay evidencia de calidad fuera del run de entrenamiento del autor.
 - Riesgo alto de alucinacion: con 124 millones de parametros y un ajuste SFT de alcance desconocido, la generacion de hechos es poco fiable y las respuestas pueden ser incoherentes en cuanto crece la longitud.
 - Sesgos desconocidos: no se documenta la composicion del corpus de preentrenamiento ni del dataset de SFT, por lo que no es posible evaluar sesgos de genero, raza, religion u orientacion politica. El fragmento `arab` en el nombre no va acompanado de ninguna declaracion sobre cobertura linguistica.
 - Cobertura idiomatica no declarada: el campo de idiomas esta vacio. No se puede asumir un buen rendimiento ni siquiera en ingles.
@@ -96,7 +96,7 @@ La comparacion con GPT-2 small y medium es estructural (misma arquitectura y ord
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/ivgijyng
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -82,10 +82,10 @@ La tabla de la model card aparece truncada en la información proporcionada, por
 
 | Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| charnet3d/Swift-Qwen3.8-27B-Exl3-3.5bpw | 7,5 B según safetensors (nombre: 27 B) | no disponible | No se han publicado benchmarks de esta cuantización | swift-open-license-1.0 (gated) | HuggingFace, 0 descargas |
-| Swift-Qwen3.8-27B (modelo original de UkisAI) | no disponible | no disponible | GPQA-Diamond 88,28%, MMLU-Pro 84,95%, C-Eval 90,62%, IFBench 71,80% | swift-open-license-1.0 | HuggingFace (gated) y versión GGUF |
-| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | GPQA-Diamond 88,38%, MMLU-Pro 85,47%, C-Eval 90,00%, IFBench 73,53% | no disponible en la información proporcionada | HuggingFace |
-| ThinkingCap-Qwen3.6-27B (BottleCap AI) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| charnet3d/Swift-Qwen3.8-27B-Exl3-3.5bpw | 7,5 B según safetensors (nombre: 27 B) | no disponible | No se han publicado benchmarks de esta cuantización | swift-open-license-1.0 (gated) | Hugging Face, 0 descargas |
+| Swift-Qwen3.8-27B (modelo original de UkisAI) | no disponible | no disponible | GPQA-Diamond 88,28%, MMLU-Pro 84,95%, C-Eval 90,62%, IFBench 71,80% | swift-open-license-1.0 | Hugging Face (gated) y versión GGUF |
+| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | GPQA-Diamond 88,38%, MMLU-Pro 85,47%, C-Eval 90,00%, IFBench 73,53% | no disponible en la información proporcionada | Hugging Face |
+| ThinkingCap-Qwen3.6-27B (BottleCap AI) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni licencia de los modelos comparados más allá de lo indicado, por lo que la comparación se limita a los resultados publicados por el autor de Swift.
 
@@ -105,7 +105,7 @@ No se dispone de datos de parámetros, contexto ni licencia de los modelos compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/charnet3d/Swift-Qwen3.8-27B-Exl3-3.5bpw
+- Repositorio en Hugging Face: https://huggingface.co/charnet3d/Swift-Qwen3.8-27B-Exl3-3.5bpw
 - Sitio del desarrollador del modelo original: https://ukisai.com
 - Página de producto de Swift: https://ukisai.com/products/swift
 - Versión GGUF del modelo Swift: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF

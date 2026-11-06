@@ -4,7 +4,7 @@
 
 `slingshot/user-simulator-scaling-9b-soupall5-adapter` es un adaptador LoRA publicado por el usuario `slingshot` sobre el modelo base `Qwen/Qwen3.5-9B`. No es un modelo completo: el repositorio contiene únicamente pesos de adaptación en formato safetensors para la librería PEFT, con un tamaño de 2,6 GB, y requiere cargar el modelo base por separado para poder ejecutar inferencia.
 
-El identificador del repositorio apunta a dos ideas: un adaptador orientado a simular usuarios en conversaciones (`user-simulator`) y un experimento de escalado con mezcla o combinación de adaptadores (`scaling`, `soupall5`). Se trata, no obstante, de una inferencia a partir del nombre. La model card publicada es la plantilla genérica de HuggingFace sin rellenar: no incluye descripción, datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación. Las únicas etiquetas técnicas declaradas son `lora`, `sft`, `trl`, `transformers`, `peft`, `conversational` y `text-generation`; la longitud de contexto no está documentada.
+El identificador del repositorio apunta a dos ideas: un adaptador orientado a simular usuarios en conversaciones (`user-simulator`) y un experimento de escalado con mezcla o combinación de adaptadores (`scaling`, `soupall5`). Se trata, no obstante, de una inferencia a partir del nombre. La model card publicada es la plantilla genérica de Hugging Face sin rellenar: no incluye descripción, datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación. Las únicas etiquetas técnicas declaradas son `lora`, `sft`, `trl`, `transformers`, `peft`, `conversational` y `text-generation`; la longitud de contexto no está documentada.
 
 Su relevancia práctica hoy es limitada: 0 descargas, 0 "likes", licencia no disponible y ausencia total de documentación. El interés del repositorio es doble: por un lado, ilustra un flujo de trabajo típico de ajuste fino con PEFT y TRL sobre un modelo de aproximadamente 9.000 millones de parámetros; por otro, es un caso de estudio de model card vacía, en el que el consumidor no puede determinar qué hace el modelo ni bajo qué condiciones puede usarlo.
 
@@ -91,7 +91,7 @@ No se han identificado en la busqueda web alternativas comparables (otros adapta
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`. No hay información sobre datos, sesgos, evaluación ni uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`. No hay información sobre datos, sesgos, evaluación ni uso previsto.
 - Licencia no declarada: sin licencia explícita no se puede confirmar que el uso comercial esté permitido. La licencia del modelo base `Qwen/Qwen3.5-9B` tampoco se documenta aquí, por lo que la cadena de derechos es indeterminada.
 - Sin idiomas declarados: no se puede garantizar el comportamiento en castellano ni en ninguna otra lengua.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo, y aquí no mitigado por ninguna evaluación publicada. En un simulador de usuario el riesgo es doble, porque las respuestas sintéticas pueden contaminar los datos con los que se entrena a otro modelo.
@@ -104,7 +104,7 @@ No se han identificado en la busqueda web alternativas comparables (otros adapta
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/slingshot/user-simulator-scaling-9b-soupall5-adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/slingshot/user-simulator-scaling-9b-soupall5-adapter
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Libreria PEFT: https://huggingface.co/docs/peft
 - Libreria TRL: https://huggingface.co/docs/trl

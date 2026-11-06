@@ -21,7 +21,7 @@ La relevancia de esta ficha radica en que ofrece una alternativa de modelo grand
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura del modelo original. La entrada de HuggingFace indica que es un modelo de tipo `transformers`, lo que sugiere una arquitectura transformer estándar, probablemente decoder-only, pero no se confirma si es densa o de mezcla de expertos (MoE). Tampoco se conocen los datos de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de RLHF o DPO. El repositorio de cuantización solo menciona que se trata de "static quants" del modelo base `mfielding92/thefriend-27b-v2`, sin ofrecer más detalles.
+No se dispone de información detallada sobre la arquitectura del modelo original. La entrada de Hugging Face indica que es un modelo de tipo `transformers`, lo que sugiere una arquitectura transformer estándar, probablemente decoder-only, pero no se confirma si es densa o de mezcla de expertos (MoE). Tampoco se conocen los datos de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de RLHF o DPO. El repositorio de cuantización solo menciona que se trata de "static quants" del modelo base `mfielding92/thefriend-27b-v2`, sin ofrecer más detalles.
 
 La presencia de archivos `mmproj` (multi-modal projection) en la carpeta de GGUF sugiere que el modelo podría tener capacidades multimodales (por ejemplo, visión), pero no se especifica en la documentación. Estos archivos son suplementos opcionales que se pueden cargar junto al modelo principal, pero su funcionalidad exacta no está documentada en la ficha.
 

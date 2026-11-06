@@ -76,9 +76,9 @@ La información proporcionada no incluye datos de rendimiento de ningún modelo 
 
 | Modelo | Categoria | Idiomas / scripts | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| nomikos-project/syriac-htr-ppocr_rec | Reconocimiento OCR/HTR (`ppocr_rec`) | Siríaco (`syr`) | no disponible | HuggingFace, 0 descargas | no disponible |
+| nomikos-project/syriac-htr-ppocr_rec | Reconocimiento OCR/HTR (`ppocr_rec`) | Siríaco (`syr`) | no disponible | Hugging Face, 0 descargas | no disponible |
 | PaddleOCR PP-OCRv4 rec (familia de la que deriva la arquitectura) | Reconocimiento OCR genérico | Multilingüe, sin siríaco confirmado | no disponible en esta información | Ampliamente distribuido | no disponible |
-| TrOCR (Microsoft) | Reconocimiento de texto manuscrito e impreso basado en transformer | Principalmente latino/inglés | no disponible en esta información | HuggingFace | no disponible |
+| TrOCR (Microsoft) | Reconocimiento de texto manuscrito e impreso basado en transformer | Principalmente latino/inglés | no disponible en esta información | Hugging Face | no disponible |
 | Modelos HTR de tipo Kraken / Transkribus | Reconocimiento de manuscritos históricos con modelos entrenables por proyecto | Depende del modelo entrenado; existen modelos para scripts históricos | no disponible en esta información | Repositorios y plataformas propias | no disponible |
 
 No se dispone de cifras de parámetros, contexto, CER/WER ni licencia de las alternativas en la información consultada, por lo que no es posible establecer una comparación cuantitativa fiable.
@@ -100,6 +100,6 @@ No se dispone de cifras de parámetros, contexto, CER/WER ni licencia de las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nomikos-project/syriac-htr-ppocr_rec
+- Modelo en Hugging Face: https://huggingface.co/nomikos-project/syriac-htr-ppocr_rec
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada.
 - Los resultados de la búsqueda web obtenidos corresponden a servicios de la Public Authority for Civil Information (PACI) de Kuwait y no guardan ninguna relación con el modelo: https://services.paci.gov.kw/?lang=en&serviceType=2, https://services.paci.gov.kw/card/payment?lang=en, https://www.e.gov.kw/sites/kgoenglish/Pages/eServices/PACI/CivilIDRenewal.aspx, https://www.e.gov.kw/sites/kgoenglish/Pages/eServices/PACI/CivilIDValidity.aspx, https://paciservices.com/en/civil-id/

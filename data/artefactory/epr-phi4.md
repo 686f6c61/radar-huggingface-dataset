@@ -85,7 +85,7 @@ No se dispone de informacion sobre alternativas comparables en el material propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artefactory/epr-phi4
+- Modelo en Hugging Face: https://huggingface.co/artefactory/epr-phi4
 - Modelo objetivo: https://huggingface.co/microsoft/phi-4
 - Biblioteca artefactual: https://github.com/artefactory/artefactual
 - Incidencias y contacto: https://github.com/artefactory/artefactual/issues

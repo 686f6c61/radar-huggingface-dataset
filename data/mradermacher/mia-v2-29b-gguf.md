@@ -4,7 +4,7 @@
 
 Mia-v2-29B-GGUF es un repositorio de cuantizaciones en formato GGUF generado por el usuario mradermacher a partir del modelo base AIVORENCE/Mia-v2-29B. No se trata por tanto de un entrenamiento nuevo, sino de una conversion de pesos a precisión reducida orientada a inferencia local con llama.cpp y runtimes compatibles con GGUF. El autor publica un conjunto amplio de variantes de cuantizacion que van desde Q2_K hasta Q8_0, además de una version F16 sin comprimir.
 
-El modelo base cuenta con 30.697.345.596 parametros reales segun los tensores en safetensors, aunque se comercializa bajo la denominacion comercial "29B". La etiqueta "conversational" y el pipeline declarado en HuggingFace apuntan a un modelo ajustado para dialogo, aunque la informacion disponible no detalla la arquitectura interna, el numero de tokens de entrenamiento ni la composicion del dataset.
+El modelo base cuenta con 30.697.345.596 parametros reales segun los tensores en safetensors, aunque se comercializa bajo la denominacion comercial "29B". La etiqueta "conversational" y el pipeline declarado en Hugging Face apuntan a un modelo ajustado para dialogo, aunque la informacion disponible no detalla la arquitectura interna, el numero de tokens de entrenamiento ni la composicion del dataset.
 
 La relevancia de este repositorio es practica: permite ejecutar un modelo de aproximadamente 30.000 millones de parametros en hardware de consumo o en servidores con GPU modesta, eligiendo el nivel de cuantizacion segun la VRAM disponible. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y la model card es puramente instrumental, sin documentacion tecnica adicional sobre capacidades, licencia o idiomas.
 
@@ -22,13 +22,13 @@ La relevancia de este repositorio es practica: permite ejecutar un modelo de apr
 | Formato de pesos | GGUF (el modelo base original estaria en safetensors) |
 | Tamano del repositorio | 19,8 GB |
 | Modelo base | AIVORENCE/Mia-v2-29B |
-| Fecha de creacion del repositorio | 22 de septiembre de 2026 (segun los metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 22 de septiembre de 2026 (segun los metadatos de Hugging Face) |
 | Fecha de ultima actualizacion | 22 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura del modelo. Los metadatos del repositorio unicamente incluyen la etiqueta "conversational" y la coleccion habitual de cuantizaciones estaticas generadas por la herramienta de mradermacher, que produce variantes con `quantize_version: 2` y `output_tensor_quantised: 1` y `convert_type: hf` (es decir, una conversion directa desde pesos en formato HuggingFace). No se especifica si el modelo base emplea attention estandar, attention lineal, mezcla de expertos, capas SSM o alguna combinacion.
+La informacion disponible no describe la arquitectura del modelo. Los metadatos del repositorio unicamente incluyen la etiqueta "conversational" y la coleccion habitual de cuantizaciones estaticas generadas por la herramienta de mradermacher, que produce variantes con `quantize_version: 2` y `output_tensor_quantised: 1` y `convert_type: hf` (es decir, una conversion directa desde pesos en formato Hugging Face). No se especifica si el modelo base emplea attention estandar, attention lineal, mezcla de expertos, capas SSM o alguna combinacion.
 
 Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del corpus, uso de RLHF, DPO, SFT u otras tecnicas de alineamiento. El nombre "Mia-v2" sugiere una segunda iteracion de un modelo previo del mismo autor (AIVORENCE), pero no se aporta ningun detalle verificable al respecto. Cualquier afirmacion sobre innovaciones tecnicas (decodificacion especulativa, GQA, RoPE escalado, etc.) seria especulativa y no se incluye aqui.
 
@@ -55,7 +55,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench ni ninguna otra evaluacion. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a proveedores de recambios industriales italianos y no guardan ninguna relacion con Mia-v2-29B.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench ni ninguna otra evaluacion. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a proveedores de recambios industriales italianos y no guardan ninguna relacion con Mia-v2-29B.
 
 ## Requisitos de hardware
 
@@ -98,7 +98,7 @@ La diferencia mas relevante en la comparativa no es el tamano, sino la ausencia 
 - Idiomas: no se confirma soporte de castellano. Aunque el modelo base probablemente sea multilingue, no hay ninguna declaracion al respecto y el rendimiento en espanol no esta verificado.
 - Perdida de calidad por cuantizacion: las variantes Q2_K y Q3_K_S son agresivas para un modelo de ~30B y suelen degradar de forma apreciable el razonamiento y la coherencia. Para uso serio se recomienda Q4_K_M o superior.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad y de informes de errores.
-- Metadatos inconsistentes: la fecha de creacion registrada (22 de septiembre de 2026) es posterior al momento de la mayoria de consultas actuales, lo que sugiere un error en los metadatos de HuggingFace o una fecha mal introducida. Conviene verificarlo antes de citar el dato.
+- Metadatos inconsistentes: la fecha de creacion registrada (22 de septiembre de 2026) es posterior al momento de la mayoria de consultas actuales, lo que sugiere un error en los metadatos de Hugging Face o una fecha mal introducida. Conviene verificarlo antes de citar el dato.
 - Modelo exclusivamente de texto: no se incluye fichero de proyeccion multimodal, por lo que no hay soporte de vision.
 - Sin garantias de soporte: se trata de una conversion de terceros (mradermacher) sobre un modelo de otro autor (AIVORENCE); ninguno de los dos ha publicado documentacion de mantenimiento o actualizaciones.
 

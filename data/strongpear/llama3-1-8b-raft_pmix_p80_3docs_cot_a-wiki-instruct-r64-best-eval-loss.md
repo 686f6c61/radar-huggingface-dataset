@@ -76,7 +76,7 @@ No se dispone de informacion sobre otros adaptadores RAFT comparables publicados
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss
+- Repositorio Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss
 - Variante con dataset LAW (referencia del mismo autor): https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-LAW-Instruct-r64-best-eval-loss
 - Variante con P60 y dataset LAW: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-LAW-Instruct-r64-best-eval-loss/tree/main
 - Documentacion de Llama 3.1 (DeepWiki): https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1

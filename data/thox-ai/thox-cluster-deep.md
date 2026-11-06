@@ -19,7 +19,7 @@ Es relevante ahora como ejemplo de la tensión entre modelos de frontera de peso
 | Tipos de cuantización | Q4_K_M (GGUF) en la build publicada; no se documentan otras |
 | Idiomas soportados | Inglés (en) |
 | Licencia | Llama 3.1 Community License Agreement |
-| Formato de pesos | GGUF (build de Ollama); el repositorio de HuggingFace solo contiene `.gitattributes` (1 519 B) |
+| Formato de pesos | GGUF (build de Ollama); el repositorio de Hugging Face solo contiene `.gitattributes` (1 519 B) |
 | Tamaño de la distribución | 243 GB |
 | Modelo base | meta-llama/Llama-3.1-405B-Instruct |
 | Pipeline | text-generation |
@@ -54,7 +54,7 @@ En cuanto al entrenamiento, la model card es explícita: no existe un run de fin
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks propios en la información disponible. La model card indica explícitamente que las cifras que pudieran citarse provienen del catálogo original de Meta para el modelo base, que no se reejecutaron para esta publicación de HuggingFace, y que la evaluación independiente de THOX está pendiente. Tampoco se publican cifras de throughput, latencia, concurrencia, uptime ni ahorro de costes para esta release; la propia card retiró esas afirmaciones por falta de evidencia de despliegue.
+No se han publicado resultados de benchmarks propios en la información disponible. La model card indica explícitamente que las cifras que pudieran citarse provienen del catálogo original de Meta para el modelo base, que no se reejecutaron para esta publicación de Hugging Face, y que la evaluación independiente de THOX está pendiente. Tampoco se publican cifras de throughput, latencia, concurrencia, uptime ni ahorro de costes para esta release; la propia card retiró esas afirmaciones por falta de evidencia de despliegue.
 
 | Benchmark | thox-cluster-deep | Llama 3.1 405B Instruct (base) |
 |---|---|---|
@@ -92,11 +92,11 @@ La comparación con alternativas de otros fabricantes (por ejemplo, modelos de e
 - Riesgo de alucinación: la card advierte que las salidas pueden ser incorrectas y que los resultados en contextos profesionales, médicos, legales, financieros y de seguridad requieren revisión humana cualificada.
 - Sesgos: no se documentan análisis específicos de sesgo en la información proporcionada; deben evaluarse a partir de la documentación del modelo base.
 - Dependencia de la capa de despliegue: el valor añadido de THOX (MeshStack) se distribuye por separado de esta descarga, por lo que el modelo por sí solo no habilita el clustering anunciado.
-- Repositorio de HuggingFace mínimo: contiene únicamente un archivo `.gitattributes`; la build ejecutable se sirve desde Ollama, no desde HuggingFace.
+- Repositorio de Hugging Face mínimo: contiene únicamente un archivo `.gitattributes`; la build ejecutable se sirve desde Ollama, no desde Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/thox-cluster-deep
+- Hugging Face: https://huggingface.co/Thox-ai/thox-cluster-deep
 - Build en Ollama: https://ollama.com/Thox-ai/thox-cluster-deep
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct
 - Sitio de THOX (campaña Kickstarter y MeshStack): https://thox.ai

@@ -73,7 +73,7 @@ La principal diferencia con el modelo base es el tamaño y la velocidad de infer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qtum/Qwen3-4B-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/qtum/Qwen3-4B-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Herramienta llm-compressor: https://github.com/vllm-project/llm-compressor

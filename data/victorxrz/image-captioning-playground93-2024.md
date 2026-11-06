@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`victorxrz/image-captioning-playground93-2024` es un repositorio de HuggingFace publicado por el usuario victorxrz que, a pesar de su nombre y de las etiquetas propias de un modelo (`safetensors`, `transformer`, `image-captioning`), no contiene un modelo entrenado de generación de descripciones de imágenes. La model card lo describe explícitamente como un conjunto estructurado de notas de investigación sobre *image captioning*, con referencias de evaluación y preguntas abiertas, y aclara que no se reclama ninguna mejora de benchmark, ablación completada, código publicado ni checkpoint entrenado.
+`victorxrz/image-captioning-playground93-2024` es un repositorio de Hugging Face publicado por el usuario victorxrz que, a pesar de su nombre y de las etiquetas propias de un modelo (`safetensors`, `transformer`, `image-captioning`), no contiene un modelo entrenado de generación de descripciones de imágenes. La model card lo describe explícitamente como un conjunto estructurado de notas de investigación sobre *image captioning*, con referencias de evaluación y preguntas abiertas, y aclara que no se reclama ninguna mejora de benchmark, ablación completada, código publicado ni checkpoint entrenado.
 
 El artefacto principal del repositorio es un fichero `paper_notes.md` con el contenido sustantivo, acompañado de un `README.md` que documenta el alcance. Las notas cubren el planteamiento del problema de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y contexto de evaluación sobre MS COCO Captions, NoCaps y TextCaps, además de comprobaciones de reproducibilidad y modos de fallo.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/victorxrz/image-captioning-playground93-2024
+- Repositorio en Hugging Face: https://huggingface.co/victorxrz/image-captioning-playground93-2024
 - Resultado de búsqueda web proporcionado (pregunta sobre la URL oficial de Wikipedia en Baidu Zhidao): https://zhidao.baidu.com/question/723469471435372885.html (no relacionado con el modelo; se incluye por completitud de la búsqueda)

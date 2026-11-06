@@ -4,7 +4,7 @@
 
 El modelo `jjjlimaus/sn38-r7-2016-winner` es un modelo de generación de texto de 2.198 millones de parámetros (aproximadamente 2,2B) desarrollado por el usuario jjjlimaus, vinculado al ecosistema Bittensor, concretamente al subnet SN38 (ChronoLLM), dedicado al entrenamiento competitivo de modelos de lenguaje con consistencia cronológica. El nombre sugiere que fue un modelo ganador en la ronda 7 de dicho subnet, con un corte temporal en 2016, lo que indica que está especializado en datos anteriores a ese año.
 
-El modelo está disponible en HuggingFace bajo licencia Apache-2.0, pero su acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. Con un tamaño de repositorio de 4,4 GB en formato safetensors, es un modelo relativamente compacto que podría ejecutarse en hardware de consumo, aunque no se dispone de detalles sobre su arquitectura interna ni su configuración de contexto.
+El modelo está disponible en Hugging Face bajo licencia Apache-2.0, pero su acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. Con un tamaño de repositorio de 4,4 GB en formato safetensors, es un modelo relativamente compacto que podría ejecutarse en hardware de consumo, aunque no se dispone de detalles sobre su arquitectura interna ni su configuración de contexto.
 
 La relevancia de este modelo radica en su participación en el subnet SN38 de Bittensor, una red descentralizada que incentiva el entrenamiento de modelos con capacidades temporales específicas. Su especialización en datos hasta 2016 lo hace potencialmente útil para tareas que requieran conocimiento histórico o simulación de contextos temporales pasados, aunque la falta de documentación pública limita su evaluación.
 
@@ -29,10 +29,10 @@ El contexto de desarrollo es el subnet SN38 de Bittensor, que segun el repositor
 
 ## Capacidades
 
-- Generacion de texto: el modelo esta diseñado para tareas de text-generation, segun el pipeline declarado en HuggingFace.
+- Generacion de texto: el modelo esta diseñado para tareas de text-generation, segun el pipeline declarado en Hugging Face.
 - Especializacion temporal: por su nombre, esta optimizado para manejar informacion y generar contenido coherente con el periodo anterior a 2016.
 - Integracion con Bittensor: al ser parte del subnet SN38, puede ser utilizado en entornos de inferencia descentralizada dentro de esa red.
-- Compatibilidad con transformers: al usar la libreria transformers, es compatible con el ecosistema estandar de HuggingFace para carga y uso.
+- Compatibilidad con transformers: al usar la libreria transformers, es compatible con el ecosistema estandar de Hugging Face para carga y uso.
 - No se dispone de evidencia sobre capacidades de tool calling, agentes, razonamiento multi-step, vision o audio.
 
 ## Casos de uso
@@ -62,7 +62,7 @@ No se dispone de informacion sobre modelos comparables dentro del subnet SN38 ni
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace antes de su descarga. Esto puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face antes de su descarga. Esto puede limitar su uso en entornos automatizados.
 - Falta de documentacion: no hay papers, README tecnico ni especificaciones publicas sobre arquitectura, entrenamiento o capacidades, lo que dificulta su evaluacion rigurosa.
 - Sesgo temporal: al estar limitado a datos hasta 2016, el modelo no conoce eventos posteriores, lo que puede generar respuestas desactualizadas o incorrectas en contextos actuales.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede inventar informacion, especialmente en dominios donde su conocimiento es limitado.
@@ -71,6 +71,6 @@ No se dispone de informacion sobre modelos comparables dentro del subnet SN38 ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjjlimaus/sn38-r7-2016-winner
+- Modelo en Hugging Face: https://huggingface.co/jjjlimaus/sn38-r7-2016-winner
 - Perfil del autor: https://huggingface.co/jjjlimaus
 - Repositorio de SN38 (ChronoLLM): https://github.com/chronollm/sn38/blob/main/README.md

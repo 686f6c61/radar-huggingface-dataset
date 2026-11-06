@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mustafaah/screen-highlighter-qwen3-vl-2b-webgpu
+- Repositorio en Hugging Face: https://huggingface.co/mustafaah/screen-highlighter-qwen3-vl-2b-webgpu
 - Modelo base declarado: https://huggingface.co/mustafaah/screen-highlighter-qwen3-vl-2b-rl-merged
 - Repositorio de codigo y scripts de conversion (ScreenHighlighter): https://github.com/MustafaAH10/screen-highlighter

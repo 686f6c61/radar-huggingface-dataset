@@ -6,7 +6,7 @@ El modelo `TokaiTieo/qwen2.5-7b-npc-lora` es un adaptador LoRA (Low-Rank Adaptat
 
 La relevancia de este adaptador radica en que permite personalizar un modelo de lenguaje de 7B parámetros con un coste computacional y de almacenamiento reducido (el repositorio ocupa 0.5 GB, correspondiente a los pesos del adaptador). Al estar basado en Qwen2.5-7B-Instruct, hereda las capacidades generales de razonamiento, generación de texto y soporte multilingüe del modelo base, aunque el adaptador no documenta qué aspectos concretos modifica.
 
-La ficha se elabora a partir de la información disponible en HuggingFace, que es mínima. La mayoría de los campos técnicos aparecen como "no disponible" en la model card original, por lo que esta ficha se limita a describir lo que se puede inferir de los metadatos y del modelo base.
+La ficha se elabora a partir de la información disponible en Hugging Face, que es mínima. La mayoría de los campos técnicos aparecen como "no disponible" en la model card original, por lo que esta ficha se limita a describir lo que se puede inferir de los metadatos y del modelo base.
 
 ## Especificaciones tecnicas
 

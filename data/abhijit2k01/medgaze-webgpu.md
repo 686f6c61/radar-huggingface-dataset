@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhijit2k01/medgaze-webgpu
+- Modelo en Hugging Face: https://huggingface.co/abhijit2k01/medgaze-webgpu
 - Modelo base SmolVLM-256M-Instruct: https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct
 - Repositorio GazeHeads (mencionado en la model card, script `scripts/118_webgpu_export.py`): no se proporciona URL en la informacion disponible
 - Articulo con el protocolo de descubrimiento de cabezas de fijacion y el sesgo de steering: no se proporciona referencia ni enlace en la informacion disponible

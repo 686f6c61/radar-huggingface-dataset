@@ -4,7 +4,7 @@
 
 Idol es un modelo de difusión publicado por Comfy-Org como reempaquetado de un modelo original del usuario speridlabs. Se trata de un finetune de TripoSplat, un modelo orientado a la generación de representaciones 3D (splats) a partir de imágenes, que se distribuye en formato de archivo único compatible con ComfyUI. El repositorio pesa 3,3 GB y se publica bajo licencia Apache 2.0.
 
-El modelo no es un LLM ni un modelo de lenguaje: es un modelo de difusión que se integra en flujos de trabajo de TripoSplat dentro de ComfyUI. Requiere tres componentes adicionales que el autor indica explícitamente en la model card: un codificador de visión DINOv3 ViT-H en bf16, el VAE de Flux 2 y un decodificador propio (`idol_decoder_fp16.safetensors`). La ausencia de pipeline declarada en HuggingFace y de idiomas soportados es coherente con su naturaleza multimodal imagen-a-3D.
+El modelo no es un LLM ni un modelo de lenguaje: es un modelo de difusión que se integra en flujos de trabajo de TripoSplat dentro de ComfyUI. Requiere tres componentes adicionales que el autor indica explícitamente en la model card: un codificador de visión DINOv3 ViT-H en bf16, el VAE de Flux 2 y un decodificador propio (`idol_decoder_fp16.safetensors`). La ausencia de pipeline declarada en Hugging Face y de idiomas soportados es coherente con su naturaleza multimodal imagen-a-3D.
 
 La relevancia de este lanzamiento es práctica: facilita el uso del finetune original de speridlabs en el ecosistema ComfyUI sin necesidad de conversiones manuales, al ofrecer los pesos en safetensors de archivo único y con la estructura de carpetas ya definida. No se han publicado detalles sobre arquitectura interna, datos de entrenamiento ni benchmarks en la información disponible.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Idol (este modelo) | Difusión, finetune de TripoSplat | no disponible | no aplica | Apache 2.0 | HuggingFace (Comfy-Org/Idol) |
-| speridlabs/idol | Difusión, finetune de TripoSplat (original) | no disponible | no aplica | no disponible en la información | HuggingFace (speridlabs/idol) |
+| Idol (este modelo) | Difusión, finetune de TripoSplat | no disponible | no aplica | Apache 2.0 | Hugging Face (Comfy-Org/Idol) |
+| speridlabs/idol | Difusión, finetune de TripoSplat (original) | no disponible | no aplica | no disponible en la información | Hugging Face (speridlabs/idol) |
 | TripoSplat | Difusión para splats 3D | no disponible | no aplica | no disponible en la información | Referenciado como base por el autor |
 
 No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/Idol
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Idol
 - Modelo original: https://huggingface.co/speridlabs/idol

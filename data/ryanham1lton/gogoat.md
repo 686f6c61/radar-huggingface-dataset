@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gogoat es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente declara la licencia, sin información sobre arquitectura, propósito, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no permite determinar con precisión el número de parámetros ni el formato de los pesos.
+Gogoat es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente declara la licencia, sin información sobre arquitectura, propósito, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no permite determinar con precisión el número de parámetros ni el formato de los pesos.
 
 No se dispone de datos sobre el pipeline de uso, los idiomas soportados, la longitud de contexto ni los tipos de cuantización. Tampoco se han registrado descargas ni interacciones en el momento de la consulta, y las fechas de creación y actualización (noviembre de 2026) indican una publicación muy reciente y sin validación por parte de la comunidad.
 
@@ -72,5 +72,5 @@ No disponible. No se ha identificado ningún modelo comparable, ya que se descon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Gogoat
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Gogoat
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iiidevv/nebula-raw-training` es un repositorio de artefactos de entrenamiento publicado en HuggingFace por el usuario `iiidevv`, no una release de modelo lista para inferencia. Contiene, según su propia model card, shards de texto empaquetado en tokens byte-level, índices de fuentes, checkpoints de modelo, de optimizador y de scaler, además de informes, subidos directamente desde RAM. El repositorio ocupa 365,7 GB y se presenta como continuación experimental pública de los pesos "Nebula" del autor, bajo la etiqueta `Nebula V18`.
+`iiidevv/nebula-raw-training` es un repositorio de artefactos de entrenamiento publicado en Hugging Face por el usuario `iiidevv`, no una release de modelo lista para inferencia. Contiene, según su propia model card, shards de texto empaquetado en tokens byte-level, índices de fuentes, checkpoints de modelo, de optimizador y de scaler, además de informes, subidos directamente desde RAM. El repositorio ocupa 365,7 GB y se presenta como continuación experimental pública de los pesos "Nebula" del autor, bajo la etiqueta `Nebula V18`.
 
 El interés técnico del repositorio está en la infraestructura de datos más que en el modelo: el texto se codifica como tokens `uint16` little-endian con IDs 0-255 para bytes UTF-8 y dos tokens especiales (BOS=256, EOS=257), lo que sitúa el pipeline en el espacio de modelos byte-level sin vocabulario BPE. La mezcla de corpus es explícita y trazable: `fineweb-edu` (sample-10BT), `cosmopedia-v2`, `TinyStories` y un componente de libros de texto sintéticos derivado de `openstax`.
 

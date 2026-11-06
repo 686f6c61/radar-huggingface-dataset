@@ -85,9 +85,9 @@ El modelo de esta ficha se diferencia de Qwen3.6-27B dense en que es MoE con pod
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/Qwen3.6-27B-A3B-CoderX-i1-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/Qwen3.6-27B-A3B-CoderX-i1-GGUF)
 - [Modelo base ManniX-ITA/Qwen3.6-27B-A3B-CoderX](https://huggingface.co/ManniX-ITA/Qwen3.6-27B-A3B-CoderX)
 - [Modelo original Qwen3.6-27B](https://huggingface.co/Qwen/Qwen3.6-27B)
 - [Guía de Qwen 3.6 en InsiderLLM](https://insiderllm.com/guides/qwen-3-6-local-ai-guide/)
 - [Documentación de Qwen3.6 en Unsloth](https://unsloth.ai/docs/models/qwen3.6)
-- [Página de mradermacher en HuggingFace](https://huggingface.co/mradermacher)
+- [Página de mradermacher en Hugging Face](https://huggingface.co/mradermacher)

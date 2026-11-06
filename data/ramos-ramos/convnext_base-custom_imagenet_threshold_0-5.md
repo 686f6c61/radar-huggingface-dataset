@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnext_base.custom_imagenet_threshold_0.5` es un modelo de clasificación de imágenes publicado por el usuario Ramos-Ramos en HuggingFace, construido sobre la arquitectura ConvNeXt-Base mediante la librería `timm` y exportado también en formato compatible con `transformers`. El checkpoint contiene 88.591.464 parámetros (aproximadamente 88,6 millones) y se distribuye bajo licencia Apache 2.0, con pesos en `safetensors` y un tamaño de repositorio de 0,7 GB.
+`convnext_base.custom_imagenet_threshold_0.5` es un modelo de clasificación de imágenes publicado por el usuario Ramos-Ramos en Hugging Face, construido sobre la arquitectura ConvNeXt-Base mediante la librería `timm` y exportado también en formato compatible con `transformers`. El checkpoint contiene 88.591.464 parámetros (aproximadamente 88,6 millones) y se distribuye bajo licencia Apache 2.0, con pesos en `safetensors` y un tamaño de repositorio de 0,7 GB.
 
 El nombre del modelo sugiere un ajuste fino sobre un conjunto de clases propio ("custom_imagenet") con un umbral de decisión fijado en 0,5, un patrón habitual en tareas de clasificación binaria o multietiqueta donde se aplica sigmoide por clase en lugar de softmax. Sin embargo, la model card publicada es prácticamente vacía: no documenta el dataset de entrenamiento, las clases, el procedimiento de ajuste ni métricas de evaluación.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `convnext_base.custom_imagenet_threshold_0.5` (este) | 88,6 M | imagen, resolución no documentada | Apache 2.0 | HuggingFace, 26 descargas | Sin benchmarks ni model card detallada |
+| `convnext_base.custom_imagenet_threshold_0.5` (este) | 88,6 M | imagen, resolución no documentada | Apache 2.0 | Hugging Face, 26 descargas | Sin benchmarks ni model card detallada |
 | ConvNeXt-Base (ImageNet-1k, `timm`) | ~88,6 M | imagen 224x224 típicamente | Apache 2.0 | Ampliamente disponible | Referencia estándar con métricas públicas en ImageNet |
 | ConvNeXt-Tiny (`timm`) | ~28 M | imagen 224x224 típicamente | Apache 2.0 | Ampliamente disponible | Menor coste, menor precisión; alternativa si el despliegue es muy restrictivo |
 | ResNet-50 (`timm`) | ~25,6 M | imagen 224x224 típicamente | Apache 2.0 | Ampliamente disponible | Baseline CNN clásico, más antiguo y con menor precisión que ConvNeXt en ImageNet |
@@ -84,7 +84,7 @@ La comparación relevante es contra el ConvNeXt-Base estándar de `timm`: este c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ramos-Ramos/convnext_base.custom_imagenet_threshold_0.5
+- Modelo en Hugging Face: https://huggingface.co/Ramos-Ramos/convnext_base.custom_imagenet_threshold_0.5
 - Repositorio `timm`: https://github.com/huggingface/pytorch-image-models
 - Documentación de ConvNeXt en `timm`: https://huggingface.co/docs/timm/models/convnext
 - Paper original de ConvNeXt (Liu et al., 2022): https://arxiv.org/abs/2201.03545

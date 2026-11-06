@@ -25,7 +25,7 @@ Otros datos del repositorio: 1,3 GB de tamano, 0 descargas y 0 *likes* en el mom
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `google/embeddinggemma-2`, un modelo derivado de la familia Gemma orientado originalmente a la generacion de embeddings de texto, y lo adapta mediante ajuste fino a una tarea de reconocimiento de voz con una cabecera de Connectionist Temporal Classification (CTC). La implementacion se inspira en `qnguyen3/gemma-asr`. El pipeline declarado en HuggingFace es `automatic-speech-recognition` y el formato de audio de entrada se convierte automaticamente a mono a 16 kHz. No se especifican en la informacion disponible el numero de parametros, la profundidad de la red ni los detalles del adaptador acustico, por lo que esos datos quedan como no disponibles.
+El modelo parte de `google/embeddinggemma-2`, un modelo derivado de la familia Gemma orientado originalmente a la generacion de embeddings de texto, y lo adapta mediante ajuste fino a una tarea de reconocimiento de voz con una cabecera de Connectionist Temporal Classification (CTC). La implementacion se inspira en `qnguyen3/gemma-asr`. El pipeline declarado en Hugging Face es `automatic-speech-recognition` y el formato de audio de entrada se convierte automaticamente a mono a 16 kHz. No se especifican en la informacion disponible el numero de parametros, la profundidad de la red ni los detalles del adaptador acustico, por lo que esos datos quedan como no disponibles.
 
 El entrenamiento utilizo 134,1 horas de audio en malayalam procedentes del corpus Kathbath de AI4Bharat. La seleccion del checkpoint se hizo con datos de validacion de Kathbath y el modelo publicado corresponde a la epoca 4 de una ejecucion de 12 epocas, elegida por ser la de mejor validacion. Las metricas declaradas se obtuvieron con decodificacion greedy, sin modelo de lenguaje y con texto normalizado, en una unica ejecucion. No se documenta en la informacion proporcionada el uso de RLHF, DPO u otras tecnicas de alineacion, ni innovaciones del tipo decodificacion especulativa o atencion lineal.
 
@@ -83,7 +83,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de mod
 
 | Modelo | Parametros | Contexto | WER FLEURS Malayalam | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dulu Malayalam ASR v0.1 | no disponible | no aplicable | 44,13 % (declarado por el autor, no verificado) | Apache 2.0 | HuggingFace, 1,3 GB |
+| Dulu Malayalam ASR v0.1 | no disponible | no aplicable | 44,13 % (declarado por el autor, no verificado) | Apache 2.0 | Hugging Face, 1,3 GB |
 | OpenAI Whisper (variantes) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | AI4Bharat IndicWav2Vec / IndicConformer | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -108,7 +108,7 @@ Se citan estos nombres unicamente como familias de referencia del mismo ambito (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/serendipitylabs/dulu-malayalam-asr
+- Modelo en Hugging Face: https://huggingface.co/serendipitylabs/dulu-malayalam-asr
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Implementacion de referencia: https://github.com/qnguyen3/gemma-asr/tree/343c86faab52fdd09c312945ad21b8f8f15e76ee
 - Documentacion de entrenamiento, evaluacion y limitaciones: `MODEL_DETAILS.md` (incluido en el repositorio)

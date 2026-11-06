@@ -94,7 +94,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace (braydenh563)](https://huggingface.co/braydenh563/Qwen3-30B-A3B-Claude-4.5-Opus-2507-UNCENSORED-V2-i1-GGUF)
+- [Modelo GGUF en Hugging Face (braydenh563)](https://huggingface.co/braydenh563/Qwen3-30B-A3B-Claude-4.5-Opus-2507-UNCENSORED-V2-i1-GGUF)
 - [Modelo base sin cuantizar (DavidAU)](https://huggingface.co/DavidAU/Qwen3-30B-A3B-Claude-4.5-Opus-High-Reasoning-2507-ABLITERATED-UNCENSORED-V2)
 - [Cuantizaciones estáticas (mradermacher)](https://huggingface.co/mradermacher/Qwen3-30B-A3B-Claude-4.5-Opus-High-Reasoning-2507-ABLITERATED-UNCENSORED-V2-GGUF)
 - [Dataset de entrenamiento (TeichAI/claude-4.5-opus-high-reasoning-250x)](https://huggingface.co/datasets/TeichAI/claude-4.5-opus-high-reasoning-250x)

@@ -91,8 +91,8 @@ Condiciones: una sola secuencia, RTX PRO 2000 Blackwell de 16 GB, greedy, 768 to
 
 | Checkpoint | Parámetros | Contexto | Tamaño | GSM8K | HumanEval pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| MiniCPM5-2B (BF16 original) | 2.516.756.480 | no disponible | 5,03 GB | 82,0 % | 45,1 % | no disponible | HuggingFace (openbmb/MiniCPM5-2B) |
-| MiniCPM5-2B-NVFP4 (este checkpoint) | 2.516.756.480 | 32768 tokens | 2,18 GB | 80,4 % | 39,6 % | Apache 2.0 | HuggingFace (sakamakismile/MiniCPM5-2B-NVFP4) |
+| MiniCPM5-2B (BF16 original) | 2.516.756.480 | no disponible | 5,03 GB | 82,0 % | 45,1 % | no disponible | Hugging Face (openbmb/MiniCPM5-2B) |
+| MiniCPM5-2B-NVFP4 (este checkpoint) | 2.516.756.480 | 32768 tokens | 2,18 GB | 80,4 % | 39,6 % | Apache 2.0 | Hugging Face (sakamakismile/MiniCPM5-2B-NVFP4) |
 | NVFP4 + last 8 layers BF16 (variante del estudio) | 2.516.756.480 | no disponible | 2,73 GB | 77,2 % | 37,8 % | no disponible | No publicado |
 
 Nota: los valores de GSM8K y HumanEval provienen del harness propio del autor y no son comparables con puntuaciones publicadas. El contexto del BF16 original no se especifica en la información disponible; para el cuantizado se usa el `--max-model-len` del ejemplo de despliegue.
@@ -110,7 +110,7 @@ Nota: los valores de GSM8K y HumanEval provienen del harness propio del autor y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sakamakismile/MiniCPM5-2B-NVFP4
+- Hugging Face: https://huggingface.co/sakamakismile/MiniCPM5-2B-NVFP4
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Drafter DSpark: https://huggingface.co/openbmb/MiniCPM5-2B-DSpark
 - llm-compressor: https://github.com/vllm-project/llm-compressor

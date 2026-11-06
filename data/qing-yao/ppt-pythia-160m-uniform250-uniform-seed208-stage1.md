@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-pythia-160m-uniform250-uniform-seed208-stage1` es un ajuste fino de [EleutherAI/pythia-160m](https://huggingface.co/EleutherAI/pythia-160m) publicado por el usuario qing-yao en HuggingFace. Es un transformer decoder-only de arquitectura GPT-NeoX (etiqueta `gpt_neox`, clase `GPTNeoXForCausalLM`), con 85.071.360 parámetros reportados por los safetensors del repositorio y licencia Apache 2.0.
+El modelo `ppt-pythia-160m-uniform250-uniform-seed208-stage1` es un ajuste fino de [EleutherAI/pythia-160m](https://huggingface.co/EleutherAI/pythia-160m) publicado por el usuario qing-yao en Hugging Face. Es un transformer decoder-only de arquitectura GPT-NeoX (etiqueta `gpt_neox`, clase `GPTNeoXForCausalLM`), con 85.071.360 parámetros reportados por los safetensors del repositorio y licencia Apache 2.0.
 
 La model card está generada automáticamente por el `Trainer` y prácticamente vacía: no describe el conjunto de datos de entrenamiento, el objetivo del ajuste ni los usos previstos, y el `model-index` no incluye ningún resultado de evaluación. El nombre del repositorio sugiere un experimento controlado de ajuste fino (250 pasos, semilla 208, una "stage1"), coherente con los hiperparámetros que sí se declaran.
 
@@ -93,10 +93,10 @@ Estimaciones derivadas del recuento de parámetros reportado (85.071.360); el re
 
 | Modelo | Parámetros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| qing-yao/ppt-pythia-160m-uniform250-uniform-seed208-stage1 (este) | 85 M reportados por safetensors | 2.048 tokens (heredado) | Apache 2.0 | no disponible | HuggingFace, 0 descargas, 0 me gusta |
-| EleutherAI/pythia-160m | misma escala (85 M no de embedding; en torno a 162 M contando embeddings según la documentación pública del base) | 2.048 tokens | Apache 2.0 | publicados por EleutherAI en el paper de la suite Pythia | HuggingFace, muy descargado |
-| EleutherAI/pythia-410m | 410 M no de embedding | 2.048 tokens | Apache 2.0 | publicados por EleutherAI | HuggingFace, muy descargado |
-| EleutherAI/pythia-1b | 1 B no de embedding | 2.048 tokens | Apache 2.0 | publicados por EleutherAI | HuggingFace, muy descargado |
+| qing-yao/ppt-pythia-160m-uniform250-uniform-seed208-stage1 (este) | 85 M reportados por safetensors | 2.048 tokens (heredado) | Apache 2.0 | no disponible | Hugging Face, 0 descargas, 0 me gusta |
+| EleutherAI/pythia-160m | misma escala (85 M no de embedding; en torno a 162 M contando embeddings según la documentación pública del base) | 2.048 tokens | Apache 2.0 | publicados por EleutherAI en el paper de la suite Pythia | Hugging Face, muy descargado |
+| EleutherAI/pythia-410m | 410 M no de embedding | 2.048 tokens | Apache 2.0 | publicados por EleutherAI | Hugging Face, muy descargado |
+| EleutherAI/pythia-1b | 1 B no de embedding | 2.048 tokens | Apache 2.0 | publicados por EleutherAI | Hugging Face, muy descargado |
 
 La comparación relevante es contra el propio modelo base: este repositorio es un derivado con 250 pasos de ajuste fino sobre un dataset desconocido, sin métricas que permitan afirmar que mejora a `EleutherAI/pythia-160m` en ninguna tarea.
 
@@ -116,7 +116,7 @@ La comparación relevante es contra el propio modelo base: este repositorio es u
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-uniform-seed208-stage1
+- Página del modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-uniform-seed208-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m (enlace incluido en la model card del repositorio)
 - Repositorio de la suite Pythia de EleutherAI: https://github.com/EleutherAI/pythia (referencia del modelo base)
 - Paper de la suite Pythia ("Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling"): https://arxiv.org/abs/2304.01373 (referencia del modelo base)

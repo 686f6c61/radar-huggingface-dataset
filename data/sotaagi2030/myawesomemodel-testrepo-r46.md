@@ -2,13 +2,13 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo-r46 es un repositorio de prueba creado por el usuario SOTAagi2030 en HuggingFace, etiquetado como `feature-extraction` y con licencia MIT. Según la model card, el modelo describe una versión actualizada de "MyAwesomeModel" con mejoras significativas en razonamiento profundo, matemáticas, programación y lógica, además de una reducción de la tasa de alucinaciones y un soporte mejorado de *function calling*. Sin embargo, el repositorio no contiene pesos publicados (tamaño 0.0 GB), no tiene descargas ni interacciones, y la información técnica detallada (número de parámetros, arquitectura exacta, contexto, idiomas) no está disponible. Todo apunta a que es un repositorio de prueba sin un modelo real desplegado.
+MyAwesomeModel-TestRepo-r46 es un repositorio de prueba creado por el usuario SOTAagi2030 en Hugging Face, etiquetado como `feature-extraction` y con licencia MIT. Según la model card, el modelo describe una versión actualizada de "MyAwesomeModel" con mejoras significativas en razonamiento profundo, matemáticas, programación y lógica, además de una reducción de la tasa de alucinaciones y un soporte mejorado de *function calling*. Sin embargo, el repositorio no contiene pesos publicados (tamaño 0.0 GB), no tiene descargas ni interacciones, y la información técnica detallada (número de parámetros, arquitectura exacta, contexto, idiomas) no está disponible. Todo apunta a que es un repositorio de prueba sin un modelo real desplegado.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según tags de HuggingFace), sin confirmación en la model card |
+| Arquitectura | BERT (según tags de Hugging Face), sin confirmación en la model card |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -91,7 +91,7 @@ No disponible. No hay datos verificables sobre el tamaño, la arquitectura o el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SOTAagi2030/MyAwesomeModel-TestRepo-r46
+- Repositorio Hugging Face: https://huggingface.co/SOTAagi2030/MyAwesomeModel-TestRepo-r46
 - Repositorio base (sin datos): https://huggingface.co/SOTAagi2030/MyAwesomeModel-TestRepo
 - Variante r01: https://huggingface.co/SOTAagi2030/MyAwesomeModel-TestRepo-r01
 - Referencia externa (sin datos adicionales): https://free2aitools.com/model/sotaagi2030/myawesomemodel-testrepo

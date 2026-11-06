@@ -82,7 +82,7 @@ Nota: no se dispone de benchmarks publicados que permitan una comparacion cuanti
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizacion GGUF): https://huggingface.co/Guile/orcarouter_Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face (cuantizacion GGUF): https://huggingface.co/Guile/orcarouter_Qwen3.8-27B-Uncensored-GGUF
 - Modelo base OrcaRouter: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Repositorio GGUF de OrcaRouter: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF
 - Build de Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored

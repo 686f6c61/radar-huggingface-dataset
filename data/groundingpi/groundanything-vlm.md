@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GroundAnything-VLM es un modelo de visión-lenguaje de 4.843.664.384 parámetros (~4,84 B) desarrollado por GroundingPI y publicado en HuggingFace con el pipeline `image-text-to-text`. Es la variante autorregresiva (AR) de la familia GroundAnything: recibe una imagen y una consulta en lenguaje natural y devuelve evidencia visual localizada —cajas delimitadoras, puntos de referencia y relaciones espaciales— en lugar de texto libre. Está orientado a *grounding* visual de vocabulario abierto, comprensión de expresiones referenciales, OCR con localización de texto y comprensión de layout de documentos.
+GroundAnything-VLM es un modelo de visión-lenguaje de 4.843.664.384 parámetros (~4,84 B) desarrollado por GroundingPI y publicado en Hugging Face con el pipeline `image-text-to-text`. Es la variante autorregresiva (AR) de la familia GroundAnything: recibe una imagen y una consulta en lenguaje natural y devuelve evidencia visual localizada —cajas delimitadoras, puntos de referencia y relaciones espaciales— en lugar de texto libre. Está orientado a *grounding* visual de vocabulario abierto, comprensión de expresiones referenciales, OCR con localización de texto y comprensión de layout de documentos.
 
 El interés del modelo está en su posición dentro de la familia: el trabajo que lo acompaña plantea el grounding como extracción de evidencia visual y propone una variante de decodificación en paralelo (DLM, *diffusion language model*) con *blockwise denoising* y decodificación guiada por entropía. Este checkpoint AR es la referencia de calidad de esa comparación: según la model card, alcanza un 72,42 % de media en 30 benchmarks de grounding, frente al 71,35 % de GPT-6 Astra, y se mantiene competitivo con modelos de escala similar.
 
-El repositorio ocupa 9,8 GB en safetensors, requiere `trust_remote_code` (el código de modelado es personalizado) y la model card marca `inference: false` para el pipeline estándar de HuggingFace. Los idiomas declarados son inglés y chino, y la licencia es `apache-2.0-with-upstream-kimi-k3`, que combina contribuciones propias bajo Apache 2.0 con material derivado de Kimi sujeto a la Kimi K3 License.
+El repositorio ocupa 9,8 GB en safetensors, requiere `trust_remote_code` (el código de modelado es personalizado) y la model card marca `inference: false` para el pipeline estándar de Hugging Face. Los idiomas declarados son inglés y chino, y la licencia es `apache-2.0-with-upstream-kimi-k3`, que combina contribuciones propias bajo Apache 2.0 con material derivado de Kimi sujeto a la Kimi K3 License.
 
 ## Especificaciones técnicas
 
@@ -72,7 +72,7 @@ Advertencia de lectura: la comparación 61,75 % frente a 53,32 % corresponde a l
 - **VRAM estimada (cálculo a partir del tamaño de parámetros, no publicado por el autor)**: en BF16/FP16 los pesos ocupan ~9,7 GB, por lo que la inferencia completa necesita del orden de 12-16 GB contando activaciones y caché. En cuantización de 8 bits bajaría a ~5-6 GB y en 4 bits a ~3-4 GB, pero no se publican cuantizaciones oficiales.
 - **GPU de centro de datos**: A100 (40/80 GB), H100 y L40S son opciones holgadas para los pesos en precisión completa y permiten lote mayor.
 - **GPU de consumo**: sí cabe en tarjetas de 24 GB (RTX 3090, RTX 4090) en BF16; en 16 GB (RTX 4070 Ti SUPER, RTX 4080) queda ajustado y probablemente requiera cuantización. En 8-12 GB no es viable en precisión completa.
-- **Opciones de despliegue**: `transformers` con `trust_remote_code=True` es la vía documentada, dado el código de modelado personalizado. No hay confirmación de soporte en vLLM, TGI, llama.cpp u Ollama, y no se distribuyen pesos GGUF. La model card marca `inference: false`, lo que implica que el pipeline genérico de HuggingFace no está habilitado.
+- **Opciones de despliegue**: `transformers` con `trust_remote_code=True` es la vía documentada, dado el código de modelado personalizado. No hay confirmación de soporte en vLLM, TGI, llama.cpp u Ollama, y no se distribuyen pesos GGUF. La model card marca `inference: false`, lo que implica que el pipeline genérico de Hugging Face no está habilitado.
 - **Latencia y throughput**: no disponibles para este checkpoint. El único dato de velocidad publicado (4,51×) corresponde a la variante DLM con modo auto-especulativo frente a la AR, no a una medición absoluta de este modelo.
 
 ## Comparativa con modelos similares
@@ -100,13 +100,13 @@ Las cifras de la variante DLM y de LocateAnything no son directamente comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GroundingPI/GroundAnything-VLM
+- Modelo en Hugging Face: https://huggingface.co/GroundingPI/GroundAnything-VLM
 - Variante DLM de la familia: https://huggingface.co/GroundingPI/GroundAnything
-- Demo online (HuggingFace Spaces): https://huggingface.co/spaces/GroundingPI/GroundAnything-VLM
+- Demo online (Hugging Face Spaces): https://huggingface.co/spaces/GroundingPI/GroundAnything-VLM
 - Página del proyecto: https://groundingpi.github.io/groundanything/
 - Código en GitHub: https://github.com/groundingpi/GroundAnything
 - Paper: https://arxiv.org/abs/2609.39600
-- Página del paper en HuggingFace: https://huggingface.co/papers/2609.39600
+- Página del paper en Hugging Face: https://huggingface.co/papers/2609.39600
 - ModelScope (DLM): https://www.modelscope.ai/models/GroundingPI/GroundAnything
 - ModelScope (VLM): https://www.modelscope.ai/models/GroundingPI/GroundAnything-VLM
 - Licencia: https://huggingface.co/GroundingPI/GroundAnything-VLM/blob/main/LICENSE

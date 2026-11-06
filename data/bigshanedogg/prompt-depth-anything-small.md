@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Tipo de salida | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Prompt-Depth-Anything-Small (este port) | 25.083.079 | Profundidad metrica con prompt | Imagen RGB + prompt de profundidad; lado mayor hasta 1008 | Apache-2.0 | HuggingFace (port no oficial) |
+| Prompt-Depth-Anything-Small (este port) | 25.083.079 | Profundidad metrica con prompt | Imagen RGB + prompt de profundidad; lado mayor hasta 1008 | Apache-2.0 | Hugging Face (port no oficial) |
 | Prompt Depth Anything original (`depth-anything/prompt-depth-anything-vits`) | no disponible en la informacion | Profundidad metrica con prompt | Igual que el port | Apache-2.0 | Repositorio original DepthAnything/PromptDA |
 | Otros modelos de estimacion de profundidad monocular | no disponible | Profundidad relativa o metrica sin prompt | Solo imagen RGB | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bigshanedogg/Prompt-Depth-Anything-Small
+- Hugging Face: https://huggingface.co/bigshanedogg/Prompt-Depth-Anything-Small
 - Modelo base: https://huggingface.co/depth-anything/prompt-depth-anything-vits
 - Repositorio oficial: https://github.com/DepthAnything/PromptDA
 - Paper: *Prompting Depth Anything for 4K Resolution Accurate Metric Depth Estimation* (CVPR 2025), arXiv (referenciado en el model card)

@@ -116,7 +116,7 @@ No se han publicado en la informacion disponible comparativas de rendimiento fre
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/myflow-ai/parakeet-tdt-0.6b-v3-gguf
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/myflow-ai/parakeet-tdt-0.6b-v3-gguf
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Modelo predecesor (solo ingles): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Demo oficial de NVIDIA: https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v3

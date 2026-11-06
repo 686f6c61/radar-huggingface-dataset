@@ -119,7 +119,7 @@ El drafter mixto (drafter-mixed-ut) es la alternativa generalista directa: cubre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-csen
+- Modelo en Hugging Face: https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-csen
 - Modelo base (fine-tuning): https://huggingface.co/MikhailRudenko/drafter-mixed-ut
 - Modelo base original: https://huggingface.co/Felladrin/Lite-Mistral-150M-v2-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/MikhailRudenko/domain-aware-sd-synthetic

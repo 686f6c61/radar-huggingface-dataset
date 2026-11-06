@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tiwalker/mae-contrastive-ablation` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de un modelo tipo Mae (masked autoencoder) orientado a aprendizaje contrastivo. El autor lo publica explícitamente como artefacto de revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados a pequeña escala, no como un modelo preentrenado listo para producción. El repositorio incluye un script `train.py` como artefacto principal, junto con `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
+`tiwalker/mae-contrastive-ablation` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de un modelo tipo Mae (masked autoencoder) orientado a aprendizaje contrastivo. El autor lo publica explícitamente como artefacto de revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados a pequeña escala, no como un modelo preentrenado listo para producción. El repositorio incluye un script `train.py` como artefacto principal, junto con `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante es su escala real: el checkpoint de safetensors contiene 33.088 parámetros totales, una cifra de juguete que contrasta con la etiqueta `giant` de la configuración de arquitectura. Es decir, la configuración declarada es nominal y no se corresponde con un modelo de gran tamaño entrenado. No hay pesos entrenados, no hay benchmarks publicados y no se declaran idiomas ni tarea de destino.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiwalker/mae-contrastive-ablation | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, checkpoint de inicializacion |
-| rajeshdramanathan/mae-contrastive-ablation | no disponible | no disponible | sin benchmarks publicados | bsd-3-clause | HuggingFace, repositorio espejo con `inference.py` |
+| tiwalker/mae-contrastive-ablation | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, checkpoint de inicializacion |
+| rajeshdramanathan/mae-contrastive-ablation | no disponible | no disponible | sin benchmarks publicados | bsd-3-clause | Hugging Face, repositorio espejo con `inference.py` |
 | MAE original (He et al., masked autoencoder para vision) | no disponible en la informacion proporcionada | no disponible | resultados publicados en el paper original | no disponible | publicacion academica |
 
 No se dispone de datos numericos comparables de parámetros, contexto o rendimiento para los modelos alternativos dentro de la informacion proporcionada. Cualquier comparación cuantitativa requeriría entrenar y evaluar la implementación de este repositorio bajo condiciones equivalentes.
@@ -94,7 +94,7 @@ No se dispone de datos numericos comparables de parámetros, contexto o rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiwalker/mae-contrastive-ablation
+- Modelo en Hugging Face: https://huggingface.co/tiwalker/mae-contrastive-ablation
 - Repositorio espejo: https://huggingface.co/rajeshdramanathan/mae-contrastive-ablation
 - Arbol de ficheros del repositorio espejo: https://huggingface.co/rajeshdramanathan/mae-contrastive-ablation/tree/main
 - Articulo divulgativo sobre masked autoencoders: https://medium.com/@kdk199604/masked-autoencoder-scalable-self-supervised-vision-representation-learning-via-autoencoder-e9d96fd65ac2

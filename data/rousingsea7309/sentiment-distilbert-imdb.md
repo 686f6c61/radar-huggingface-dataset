@@ -4,7 +4,7 @@
 
 El modelo `RousingSea7309/sentiment-distilbert-imdb` es un clasificador de sentimientos basado en la arquitectura DistilBERT, un transformer encoder-only destilado de BERT. Ha sido fine-tuneado sobre el dataset IMDB, que contiene reseñas de películas en inglés etiquetadas como positivas o negativas. Con 66.955.010 parámetros, se trata de un modelo compacto y eficiente para tareas de análisis de sentimiento binario.
 
-Su relevancia radica en que ofrece una alternativa ligera a modelos más grandes para clasificación de texto, con un coste computacional reducido y una latencia baja, lo que lo hace adecuado para despliegues en producción con recursos limitados. El modelo está publicado en HuggingFace por el usuario RousingSea7309, aunque la model card es prácticamente vacía y no proporciona detalles sobre el proceso de entrenamiento, licencia ni idiomas soportados. La arquitectura base DistilBERT tiene una longitud de contexto de 512 tokens, y el modelo se distribuye en formato safetensors.
+Su relevancia radica en que ofrece una alternativa ligera a modelos más grandes para clasificación de texto, con un coste computacional reducido y una latencia baja, lo que lo hace adecuado para despliegues en producción con recursos limitados. El modelo está publicado en Hugging Face por el usuario RousingSea7309, aunque la model card es prácticamente vacía y no proporciona detalles sobre el proceso de entrenamiento, licencia ni idiomas soportados. La arquitectura base DistilBERT tiene una longitud de contexto de 512 tokens, y el modelo se distribuye en formato safetensors.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El fine-tuning especifico de este modelo se ha realizado sobre el dataset IMDB, 
 - Procesamiento de texto en ingles: dado que el dataset de entrenamiento es IMDB (reseñas de peliculas en ingles), el modelo esta optimizado para ese idioma y dominio.
 - Manejo de secuencias de hasta 512 tokens, lo que permite analizar reseñas completas o fragmentos de texto de longitud media.
 - Inferencia rapida y ligera gracias a la arquitectura destilada, adecuada para entornos con restricciones de memoria o latencia.
-- Integracion sencilla con la libreria transformers de HuggingFace mediante el pipeline `text-classification`.
+- Integracion sencilla con la libreria transformers de Hugging Face mediante el pipeline `text-classification`.
 - No soporta tool calling, agentes, vision ni otras capacidades multimodales; es exclusivamente un clasificador de texto.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: el modelo tiene 66,9 millones de parametros, lo que en fp32 ocupa aproximadamente 268 MB. En inferencia, con un batch de 1 y una secuencia de 512 tokens, el uso de VRAM suele rondar los 1-2 GB incluyendo activaciones y overhead. En cuantizacion int8, el peso se reduce a unos 67 MB y la VRAM total puede bajar a menos de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Modelos como NVIDIA T4, GTX 1660, RTX 2060 o superiores funcionan sin problemas. Tambien es viable en CPU para inferencia por lotes pequenos.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU consumer moderna (RTX 3060, RTX 4090, etc.) con margen de sobra.
-- Opciones de despliegue: se puede servir con vLLM, HuggingFace Inference Endpoints, o mediante la libreria transformers directamente. Para CPU, llama.cpp o ONNX Runtime son alternativas validas.
+- Opciones de despliegue: se puede servir con vLLM, Hugging Face Inference Endpoints, o mediante la libreria transformers directamente. Para CPU, llama.cpp o ONNX Runtime son alternativas validas.
 - Latencia y throughput: no se han publicado mediciones. En una GPU T4, un modelo DistilBERT de este tamano suele procesar cientos de secuencias por segundo con batch pequeno; en CPU, la latencia por secuencia puede ser de decenas de milisegundos.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ El modelo de RousingSea7309 es funcionalmente equivalente a otros DistilBERT fin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RousingSea7309/sentiment-distilbert-imdb
+- Modelo en Hugging Face: https://huggingface.co/RousingSea7309/sentiment-distilbert-imdb
 - Paper de DistilBERT (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Dataset IMDB (referencia comun, no enlazado por el autor): https://huggingface.co/datasets/imdb

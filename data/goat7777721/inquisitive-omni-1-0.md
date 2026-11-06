@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Inquisitive-Omni-1.0 es un modelo multimodal "any-to-any" publicado por el usuario Goat7777721 en HuggingFace. Por los tags del repositorio (`qwen3_omni_moe`, `any-to-any`, `text-to-audio`) y por el contenido de su model card, se trata de una publicacion derivada o re-subida del modelo Qwen3-Omni de Alibaba (familia QwenLM), no de un entrenamiento propio documentado. El repositorio ocupa 70,5 GB y contiene pesos en safetensors con 35.259.818.545 parametros totales declarados.
+Inquisitive-Omni-1.0 es un modelo multimodal "any-to-any" publicado por el usuario Goat7777721 en Hugging Face. Por los tags del repositorio (`qwen3_omni_moe`, `any-to-any`, `text-to-audio`) y por el contenido de su model card, se trata de una publicacion derivada o re-subida del modelo Qwen3-Omni de Alibaba (familia QwenLM), no de un entrenamiento propio documentado. El repositorio ocupa 70,5 GB y contiene pesos en safetensors con 35.259.818.545 parametros totales declarados.
 
 Qwen3-Omni, la base tecnica que reproduce la model card, es un modelo fundacional omni-modal nativo de tipo end-to-end que procesa texto, imagen, audio y video, y genera respuestas en texto y voz natural con capacidad de streaming. Su arquitectura es un diseno MoE "Thinker-Talker" con preentrenamiento AuT y un esquema de multi-codebook para reducir la latencia. Segun la propia documentacion citada, alcanza SOTA en 22 de 36 benchmarks de audio/video y SOTA open source en 32 de 36.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks especificos de Inquisitive-Omni-1.0
 
 | Modelo | Parametros | Contexto | Multimodalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inquisitive-Omni-1.0 | 35,26B (total) | no disponible | Texto, imagen, audio, video; salida texto y voz | apache-2.0 / other (contradictorio) | HuggingFace, 0 descargas |
-| Qwen3-Omni-30B-A3B (base) | ~30B (nomenclatura A3B) | no disponible | Texto, imagen, audio, video; salida texto y voz | sujeta a la del modelo original | HuggingFace / GitHub QwenLM |
+| Inquisitive-Omni-1.0 | 35,26B (total) | no disponible | Texto, imagen, audio, video; salida texto y voz | apache-2.0 / other (contradictorio) | Hugging Face, 0 descargas |
+| Qwen3-Omni-30B-A3B (base) | ~30B (nomenclatura A3B) | no disponible | Texto, imagen, audio, video; salida texto y voz | sujeta a la del modelo original | Hugging Face / GitHub QwenLM |
 | Gemini 2.5 Pro | no disponible | no disponible | Multimodal (propietario) | propietaria | Solo API de Google |
 
 Nota: no se dispone de datos de rendimiento comparativo verificable en la informacion proporcionada. La comparacion con Gemini 2.5 Pro procede unicamente de la afirmacion cualitativa de la model card del modelo base.
@@ -82,7 +82,7 @@ Nota: no se dispone de datos de rendimiento comparativo verificable en la inform
 
 - Artefacto sin validacion: 0 descargas y 0 likes, sin resultados de evaluacion propios ni informacion de entrenamiento o ajuste fino.
 - Model card replicada: la totalidad de la documentacion procede de Qwen3-Omni; no describe el artefacto Inquisitive-Omni-1.0 en concreto.
-- Contradiccion de licencia: el campo de HuggingFace indica apache-2.0 mientras el tag y la propia model card indican `license: other` con `license_name: apache-2.0`. Es imprescindible aclarar la licencia antes de cualquier uso comercial.
+- Contradiccion de licencia: el campo de Hugging Face indica apache-2.0 mientras el tag y la propia model card indican `license: other` con `license_name: apache-2.0`. Es imprescindible aclarar la licencia antes de cualquier uso comercial.
 - Contradiccion de idiomas: la metadata declara `en` frente a los 119 idiomas de texto del modelo base. El soporte real de idiomas en este artefacto no esta confirmado.
 - Riesgo de alucinacion: inherente a los modelos generativos multimodales; no hay datos de la tasa de alucinacion de este repo.
 - Sesgos: no documentados en la informacion disponible.
@@ -92,7 +92,7 @@ Nota: no se dispone de datos de rendimiento comparativo verificable en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Goat7777721/Inquisitive-Omni-1.0
+- Modelo en Hugging Face: https://huggingface.co/Goat7777721/Inquisitive-Omni-1.0
 - Repositorio Qwen3-Omni (GitHub): https://github.com/QwenLM/Qwen3-Omni
 - Cookbooks de Qwen3-Omni: https://github.com/QwenLM/Qwen3-Omni/tree/main/cookbooks
 - Qwen Chat: https://chat.qwen.ai/

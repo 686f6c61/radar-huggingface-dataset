@@ -79,10 +79,10 @@ Todos los datos de parametros, contexto y licencia de la columna de alternativas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (Qwen2.5-1.5B + LoRA Dolly) | 1,5B + LoRA r16 | 512 tokens de entrenamiento (32.768 en el base) | No declarada | HuggingFace (peft) |
-| Qwen2.5-1.5B-Instruct (base) | ~1,5B | 32.768 | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | ~1,2B | 128.000 | Llama 3.2 Community License | HuggingFace |
-| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 | Apache 2.0 | HuggingFace |
+| Este adaptador (Qwen2.5-1.5B + LoRA Dolly) | 1,5B + LoRA r16 | 512 tokens de entrenamiento (32.768 en el base) | No declarada | Hugging Face (peft) |
+| Qwen2.5-1.5B-Instruct (base) | ~1,5B | 32.768 | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | ~1,2B | 128.000 | Llama 3.2 Community License | Hugging Face |
+| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 | Apache 2.0 | Hugging Face |
 
 El rendimiento relativo entre estas alternativas no puede determinarse con la informacion disponible.
 
@@ -100,7 +100,7 @@ El rendimiento relativo entre estas alternativas no puede determinarse con la in
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/shivamkumar0502/qwen2.5-1.5b-dolly-qlora
+- Adaptador en Hugging Face: https://huggingface.co/shivamkumar0502/qwen2.5-1.5b-dolly-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/databricks/databricks-dolly-15k
 - Libreria PEFT: https://github.com/huggingface/peft

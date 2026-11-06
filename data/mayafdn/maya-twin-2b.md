@@ -120,9 +120,9 @@ No se han identificado en la información proporcionada otras alternativas compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayaFdn/maya-twin-2b
+- Modelo en Hugging Face: https://huggingface.co/MayaFdn/maya-twin-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Organización MayaFdn en HuggingFace: https://huggingface.co/MayaFdn
+- Organización MayaFdn en Hugging Face: https://huggingface.co/MayaFdn
 - Listado de modelos de MayaFdn: https://huggingface.co/MayaFdn/models
 - Archivo de configuración de la release (`release.json`, ajustes, checksum y hash de plantilla): https://huggingface.co/MayaFdn/maya-twin-2b/blob/main/release.json
 - Sitio del producto Maya: https://im-maya.ai/

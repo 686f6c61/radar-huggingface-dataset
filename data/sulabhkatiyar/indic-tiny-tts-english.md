@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indic Tiny TTS English es un modelo de síntesis de voz (text-to-speech) en inglés indio desarrollado por sulabhkatiyar, publicado en HuggingFace bajo licencia CC-BY-4.0. Forma parte de la colección INDIC TINY TTS MODELS, compuesta por 12 modelos minúsculos, uno por idioma, que cubren 11 lenguas indias y el inglés indio. El modelo convierte texto en latín en audio de 24 kHz con dos voces disponibles, femenina y masculina.
+Indic Tiny TTS English es un modelo de síntesis de voz (text-to-speech) en inglés indio desarrollado por sulabhkatiyar, publicado en Hugging Face bajo licencia CC-BY-4.0. Forma parte de la colección INDIC TINY TTS MODELS, compuesta por 12 modelos minúsculos, uno por idioma, que cubren 11 lenguas indias y el inglés indio. El modelo convierte texto en latín en audio de 24 kHz con dos voces disponibles, femenina y masculina.
 
 La propuesta central es la eficiencia extrema: con solo 8,9 millones de parámetros según los pesos en safetensors (la model card declara 22,5 millones, discrepancia que conviene verificar), el modelo funciona en CPU sin GPU. Según el autor, alcanza un factor de tiempo real de 0,026 en un hilo de CPU de Apple M1 (38 veces más rápido que el tiempo real) y 0,136 en un hilo de CPU x86 (7 veces más rápido), con soporte tanto para PyTorch como para ONNX Runtime.
 
@@ -105,11 +105,11 @@ El autor indica que iguala la tasa de error de ai4bharat/indic-parler-tts con 1/
 
 | Modelo | Parametros | Idioma | CER (FLORES-200), % | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| **Indic Tiny TTS English** | 8,9 M (safetensors) / 22,5 M (declarado) | Inglés indio | 1,08 | CC-BY-4.0 | HuggingFace, ONNX y safetensors |
-| hexgrad/Kokoro-82M | 81,8 M | Inglés (multi-voz) | 0,46 | no disponible en la informacion | HuggingFace |
-| ai4bharat/indic-parler-tts | 937,8 M | Inglés indio y lenguas indias | 1,06 | no disponible en la informacion | HuggingFace |
-| facebook/mms-tts-eng | 29 M | Inglés | 4,22 | no disponible en la informacion | HuggingFace |
-| myshell-ai/MeloTTS-English | 152,4 M | Inglés (variante India) | 3,07 | no disponible en la informacion | HuggingFace |
+| **Indic Tiny TTS English** | 8,9 M (safetensors) / 22,5 M (declarado) | Inglés indio | 1,08 | CC-BY-4.0 | Hugging Face, ONNX y safetensors |
+| hexgrad/Kokoro-82M | 81,8 M | Inglés (multi-voz) | 0,46 | no disponible en la informacion | Hugging Face |
+| ai4bharat/indic-parler-tts | 937,8 M | Inglés indio y lenguas indias | 1,06 | no disponible en la informacion | Hugging Face |
+| facebook/mms-tts-eng | 29 M | Inglés | 4,22 | no disponible en la informacion | Hugging Face |
+| myshell-ai/MeloTTS-English | 152,4 M | Inglés (variante India) | 3,07 | no disponible en la informacion | Hugging Face |
 
 Frente a Kokoro-82M, este modelo es peor en CER pero mucho más pequeño y rápido en CPU. Frente a indic-parler-tts, iguala el CER con una fracción del tamaño. Frente a mms-tts-eng y MeloTTS-English, es claramente mejor en precisión con menos parámetros.
 
@@ -128,7 +128,7 @@ Frente a Kokoro-82M, este modelo es peor en CER pero mucho más pequeño y rápi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-english
+- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-english
 - Colección INDIC TINY TTS MODELS: https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d
 - Dataset de entrenamiento: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k
 - Dataset adicional: https://huggingface.co/datasets/iAkashPaul/limmits-2024

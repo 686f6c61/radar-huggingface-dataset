@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Long-WAM Sweep Trash — Epoch 3 | Fine-tune de world-action bimanual | Barrido de papel con recogedor y cepillo | no disponible | no disponible (P48 de historial) | other | HuggingFace, 19 descargas |
-| Efficient-Large-Model/Long-WAM-YAM | Modelo base de world-action | Manipulación general (base del fine-tune) | no disponible | no disponible | other | HuggingFace |
+| Long-WAM Sweep Trash — Epoch 3 | Fine-tune de world-action bimanual | Barrido de papel con recogedor y cepillo | no disponible | no disponible (P48 de historial) | other | Hugging Face, 19 descargas |
+| Efficient-Large-Model/Long-WAM-YAM | Modelo base de world-action | Manipulación general (base del fine-tune) | no disponible | no disponible | other | Hugging Face |
 | NVlabs/LongLive (@cfa4e91) | Código base del pipeline | Generación de vídeo/acción | no disponible | no disponible | no disponible | Repositorio de código |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparación se limita a linaje, tarea y disponibilidad.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Sweep-Trash-Epoch-3
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Sweep-Trash-Epoch-3
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset de entrenamiento: `yuyingyinya/sweep_trash` (revisión `0dd5ff1f576de17dcf06b49d352e0f125a1f43e6`)
 - Registro de entrenamiento (W&B): https://forge.coreweave.com/wandb/bofang/long-wam/runs/nwa2ucgt

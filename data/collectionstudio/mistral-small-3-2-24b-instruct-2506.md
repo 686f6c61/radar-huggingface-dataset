@@ -95,10 +95,10 @@ La model card remite a los benchmarks de Mistral-Small-3.1-24B-Instruct-2503 par
 
 | Modelo | Parametros | Multimodal | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral-Small-3.2-24B-Instruct-2506 (este) | 24,0B | Si (imagen + texto) | Apache 2.0 | no disponible | HuggingFace (repositorio espejo de CollectionStudio) |
-| Mistral-Small-3.1-24B-Instruct-2503 | 24,0B | Si | Apache 2.0 | no disponible | HuggingFace (mistralai) |
-| Qwen2.5-32B-Instruct | 32,5B aprox. | No | Apache 2.0 | no disponible | HuggingFace |
-| Gemma 3 27B IT | 27B | Si | Terminos de licencia Gemma | no disponible | HuggingFace |
+| Mistral-Small-3.2-24B-Instruct-2506 (este) | 24,0B | Si (imagen + texto) | Apache 2.0 | no disponible | Hugging Face (repositorio espejo de CollectionStudio) |
+| Mistral-Small-3.1-24B-Instruct-2503 | 24,0B | Si | Apache 2.0 | no disponible | Hugging Face (mistralai) |
+| Qwen2.5-32B-Instruct | 32,5B aprox. | No | Apache 2.0 | no disponible | Hugging Face |
+| Gemma 3 27B IT | 27B | Si | Terminos de licencia Gemma | no disponible | Hugging Face |
 
 No se dispone, en la informacion proporcionada, de benchmarks comparativos frente a Qwen2.5-32B-Instruct o Gemma 3 27B IT; la model card remite a los benchmarks del predecesor Mistral-Small-3.1 para esas comparaciones. Frente a Mistral-Small-3.1, el modelo analizado mejora en instrucciones, generacion de codigo y function calling, pero empeora ligeramente en MMMU (62,50 % frente a 64,00 %), Mathvista (67,09 % frente a 68,91 %) y AI2D (92,91 % frente a 93,72 %).
 
@@ -116,8 +116,8 @@ No se dispone, en la informacion proporcionada, de benchmarks comparativos frent
 
 ## Enlaces
 
-- HuggingFace (repositorio analizado): https://huggingface.co/CollectionStudio/Mistral-Small-3.2-24B-Instruct-2506
-- HuggingFace (modelo oficial de Mistral AI): https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
+- Hugging Face (repositorio analizado): https://huggingface.co/CollectionStudio/Mistral-Small-3.2-24B-Instruct-2506
+- Hugging Face (modelo oficial de Mistral AI): https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503
 - Predecesor: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - Benchmarks del predecesor: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503#benchmark-results

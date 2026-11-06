@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Idiomas | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`bjnortier/coreai-ht5-parakeet-tdt-0.6b-v3-float16-static`) | 0,6 B | 25 | `.aimodel`, Core AI (macOS/iOS 27+) | CC-BY-4.0 | HuggingFace, repo de 1,2 GB |
-| `nvidia/parakeet-tdt-0.6b-v3` (upstream) | 0,6 B | 25 | PyTorch / NeMo | CC-BY-4.0 | HuggingFace (modelo base) |
-| `openai/whisper-large-v3` | 1,55 B | ~99 (no verificado en esta búsqueda) | PyTorch, `transformers`, whisper.cpp, faster-whisper | MIT (según el repositorio de OpenAI) | HuggingFace |
-| `openai/whisper-small` | 244 M | ~99 (no verificado en esta búsqueda) | PyTorch, `transformers`, whisper.cpp | MIT (según el repositorio de OpenAI) | HuggingFace |
+| Este modelo (`bjnortier/coreai-ht5-parakeet-tdt-0.6b-v3-float16-static`) | 0,6 B | 25 | `.aimodel`, Core AI (macOS/iOS 27+) | CC-BY-4.0 | Hugging Face, repo de 1,2 GB |
+| `nvidia/parakeet-tdt-0.6b-v3` (upstream) | 0,6 B | 25 | PyTorch / NeMo | CC-BY-4.0 | Hugging Face (modelo base) |
+| `openai/whisper-large-v3` | 1,55 B | ~99 (no verificado en esta búsqueda) | PyTorch, `transformers`, whisper.cpp, faster-whisper | MIT (según el repositorio de OpenAI) | Hugging Face |
+| `openai/whisper-small` | 244 M | ~99 (no verificado en esta búsqueda) | PyTorch, `transformers`, whisper.cpp | MIT (según el repositorio de OpenAI) | Hugging Face |
 
 La comparación relevante es frente al modelo upstream: misma arquitectura, mismos parámetros y misma licencia, con la diferencia de que este repositorio solo cambia el formato de serialización y queda atado al runtime Core AI de Apple, mientras que el original se ejecuta con NeMo. No se dispone de datos de WER comparativos entre Parakeet TDT 0.6B v3 y las variantes de Whisper en la información proporcionada, por lo que no se puede afirmar cuál es más preciso.
 
@@ -87,11 +87,11 @@ La comparación relevante es frente al modelo upstream: misma arquitectura, mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bjnortier/coreai-ht5-parakeet-tdt-0.6b-v3-float16-static
+- Repositorio en Hugging Face: https://huggingface.co/bjnortier/coreai-ht5-parakeet-tdt-0.6b-v3-float16-static
 - Modelo base (upstream, NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Apple Core AI (documentación para desarrolladores): https://developer.apple.com
 - CirceKit (cliente Swift usado en el ejemplo): https://github.com/bjnortier
 - `apple/coreai-models` (`CoreAISpeech`): https://github.com/apple/coreai-models
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card. No se dispone de papers, blogs ni demos adicionales.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card. No se dispone de papers, blogs ni demos adicionales.

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Autor | Tarea | Entorno / semilla | Checkpoint | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| microduck-sprint-2m-weewoo | weerawhin | Sprint 2m (perpetua) | 4096 envs, 3000 iter, seed 42 | 750 | no disponible | HuggingFace (6 descargas) |
-| microduck-sprint-2m-reference | pollen-robotics | Sprint 2m (referencia) | 4096 envs, 3000 iter, seed 1 | 1000 | no disponible | HuggingFace |
-| microduck-weee | weerawhin | Marcha (varias ranuras) | no disponible | no disponible | no disponible | HuggingFace |
+| microduck-sprint-2m-weewoo | weerawhin | Sprint 2m (perpetua) | 4096 envs, 3000 iter, seed 42 | 750 | no disponible | Hugging Face (6 descargas) |
+| microduck-sprint-2m-reference | pollen-robotics | Sprint 2m (referencia) | 4096 envs, 3000 iter, seed 1 | 1000 | no disponible | Hugging Face |
+| microduck-weee | weerawhin | Marcha (varias ranuras) | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres modelos son politicas de control para el mismo robot Microduck y comparten el formato (61-D de observacion, 14 acciones, 50 Hz, ONNX). La referencia de Pollen Robotics se describe como su checkpoint mas rapido en la Arena; no se dispone de cifras que permitan ordenarlos por rendimiento.
 
@@ -83,7 +83,7 @@ Los tres modelos son politicas de control para el mismo robot Microduck y compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weerawhin/microduck-sprint-2m-weewoo
+- Modelo en Hugging Face: https://huggingface.co/weerawhin/microduck-sprint-2m-weewoo
 - Modelo relacionado (mismo autor): https://huggingface.co/weerawhin/microduck-weee
 - Referencia de Pollen Robotics para sprint 2m: https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference/blob/refs%2Fpr%2F1/README.md
 - Repositorio de retos de entrenamiento: https://github.com/NIRUN-Weerawit/microduck-challenges

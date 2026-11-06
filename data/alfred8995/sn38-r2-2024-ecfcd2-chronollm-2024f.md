@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r2-2024-ecfcd2-chronollm-2024f` es un modelo de lenguaje de aproximadamente 1.860 millones de parámetros (1.858.535.658 exactos según los tensores en safetensors) publicado en HuggingFace bajo acceso restringido. Por la nomenclatura del repositorio y su etiqueta `ChronoGPT`, se trata de una entrega de minero para el subnet 38 de Bittensor, conocido como ChronoLLM, especializado en el entrenamiento competitivo de modelos cronológicamente consistentes. El sufijo `2024` indica que el modelo está asociado al año 2024 dentro del esquema del subnet, en el que cada minero entrena un modelo por año natural entre 2013 y 2025 y lo sube a HuggingFace junto con un mapeo registrado on-chain.
+`alfred8995/sn38-r2-2024-ecfcd2-chronollm-2024f` es un modelo de lenguaje de aproximadamente 1.860 millones de parámetros (1.858.535.658 exactos según los tensores en safetensors) publicado en Hugging Face bajo acceso restringido. Por la nomenclatura del repositorio y su etiqueta `ChronoGPT`, se trata de una entrega de minero para el subnet 38 de Bittensor, conocido como ChronoLLM, especializado en el entrenamiento competitivo de modelos cronológicamente consistentes. El sufijo `2024` indica que el modelo está asociado al año 2024 dentro del esquema del subnet, en el que cada minero entrena un modelo por año natural entre 2013 y 2025 y lo sube a Hugging Face junto con un mapeo registrado on-chain.
 
 El problema que aborda esta familia de modelos es el sesgo de anticipación (*lookahead bias*) en el análisis financiero y el backtesting. Los modelos de lenguaje convencionales se entrenan con corpus que abarcan todas las épocas, de modo que al pedirles que evalúen una decisión de inversión de 2015 ya han visto el crack de 2020 y el resto de acontecimientos posteriores. Un ChronoGPT se entrena deliberadamente con datos limitados a su año objetivo para que su "conocimiento del mundo" sea coherente con el momento histórico que se simula.
 
@@ -17,14 +17,14 @@ La relevancia de esta ficha es acotada: el repositorio no incluye *model card*, 
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible en el repositorio. Los pesos publicados están en safetensors con tensores en F32 (según el repositorio canónico de referencia), lo que permite cuantización posterior a FP16/BF16, INT8 e INT4 con herramientas estándar, sin que existan versiones oficiales publicadas |
 | Idiomas soportados | No disponible |
-| Licencia | `other` (términos no especificados en el repositorio); acceso restringido, requiere aceptar condiciones en HuggingFace |
+| Licencia | `other` (términos no especificados en el repositorio); acceso restringido, requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | safetensors (F32). Tamaño del repositorio: 7,4 GB, consistente con 1,86 B de parámetros en precisión completa |
 
 ## Arquitectura y entrenamiento
 
 No se dispone de información publicada sobre la arquitectura interna: el repositorio no incluye *model card* ni `config.json` documentado en la información disponible. La única señal es la etiqueta `ChronoGPT`, que en el contexto del subnet 38 designa a los modelos entrenados por los mineros siguiendo el protocolo de consistencia cronológica. Los tensores están almacenados en F32, un formato inusualmente pesado para publicación (7,4 GB para 1,86 B de parámetros), lo que sugiere un volcado directo del checkpoint de entrenamiento sin conversión a BF16/FP16.
 
-Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composición del corpus, la ventana temporal exacta cubierta (aunque el nombre indica 2024) ni si se aplicaron etapas de ajuste fino supervisado, RLHF o DPO. El mecanismo descrito en la documentación del subnet consiste en entrenar un modelo por año entre 2013 y 2025, subirlo a HuggingFace y registrar un mapeo on-chain; los validadores evalúan después la consistencia cronológica y la calidad del modelo. El repositorio `st2058130-svg/chronollm` describe el objetivo del proyecto (evitar el sesgo de anticipación en backtesting y análisis histórico), pero no detalla hiperparámetros ni recetas de entrenamiento concretas de esta entrega.
+Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composición del corpus, la ventana temporal exacta cubierta (aunque el nombre indica 2024) ni si se aplicaron etapas de ajuste fino supervisado, RLHF o DPO. El mecanismo descrito en la documentación del subnet consiste en entrenar un modelo por año entre 2013 y 2025, subirlo a Hugging Face y registrar un mapeo on-chain; los validadores evalúan después la consistencia cronológica y la calidad del modelo. El repositorio `st2058130-svg/chronollm` describe el objetivo del proyecto (evitar el sesgo de anticipación en backtesting y análisis histórico), pero no detalla hiperparámetros ni recetas de entrenamiento concretas de esta entrega.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para inferencia en FP16 con contextos largos; A100/H100 solo justificables para servir en lote con alto *throughput*, no por requisitos de memoria.
 - Opciones de despliegue: `transformers` (referencia), vLLM y TGI para servir en FP16/BF16, llama.cpp/Ollama tras conversión a GGUF, y TensorRT-LLM si se compila el motor. No hay versiones GGUF publicadas en el repositorio, por lo que la conversión sería responsabilidad del usuario.
 - Latencia y *throughput* estimados: no disponibles. No se han publicado mediciones y cualquier cifra dependería del hardware y del backend elegido.
-- Nota operativa: al ser un repositorio *gated*, es necesario autenticarse con un token de HuggingFace con acceso concedido para descargar los pesos, lo que afecta a la automatización del despliegue.
+- Nota operativa: al ser un repositorio *gated*, es necesario autenticarse con un token de Hugging Face con acceso concedido para descargar los pesos, lo que afecta a la automatización del despliegue.
 
 ## Comparativa con modelos similares
 
@@ -67,10 +67,10 @@ No existen comparables directos publicados con métricas verificables. La tabla 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `alfred8995/sn38-r2-2024-ecfcd2-chronollm-2024f` | 1,86 B | No disponible | `other` (términos no publicados) | HuggingFace, acceso restringido |
-| Qwen2.5-1.5B | 1,5 B | 32 768 tokens | Apache 2.0 | HuggingFace y la mayoría de backends de inferencia |
-| Gemma 2 2B | ≈2,6 B | 8 192 tokens | Términos de uso de Gemma | HuggingFace, requiere aceptación |
-| SmolLM2-1.7B | ≈1,7 B | 8 192 tokens | Apache 2.0 | HuggingFace y GGUF oficiales |
+| `alfred8995/sn38-r2-2024-ecfcd2-chronollm-2024f` | 1,86 B | No disponible | `other` (términos no publicados) | Hugging Face, acceso restringido |
+| Qwen2.5-1.5B | 1,5 B | 32 768 tokens | Apache 2.0 | Hugging Face y la mayoría de backends de inferencia |
+| Gemma 2 2B | ≈2,6 B | 8 192 tokens | Términos de uso de Gemma | Hugging Face, requiere aceptación |
+| SmolLM2-1.7B | ≈1,7 B | 8 192 tokens | Apache 2.0 | Hugging Face y GGUF oficiales |
 
 Diferencias cualitativas relevantes: frente a estas alternativas, el modelo del subnet 38 no ofrece documentación de arquitectura, idiomas, benchmarks ni versiones cuantizadas oficiales, y su licencia `other` sin texto público impide determinar condiciones de uso comercial. Su única ventaja diferencial es el corte temporal controlado (2024), que ninguna de las alternativas ofrece.
 
@@ -90,8 +90,8 @@ Diferencias cualitativas relevantes: frente a estas alternativas, el modelo del 
 
 ## Enlaces
 
-- HuggingFace (repositorio objeto de la ficha): https://huggingface.co/alfred8995/sn38-r2-2024-ecfcd2-chronollm-2024f
-- Repositorio canónico de referencia en HuggingFace: https://huggingface.co/ecfcd2/chronollm-2024f
+- Hugging Face (repositorio objeto de la ficha): https://huggingface.co/alfred8995/sn38-r2-2024-ecfcd2-chronollm-2024f
+- Repositorio canónico de referencia en Hugging Face: https://huggingface.co/ecfcd2/chronollm-2024f
 - Repositorio GitHub del proyecto ChronoLLM: https://github.com/st2058130-svg/chronollm
 - Documentación para mineros del subnet 38: https://github.com/chronollm/sn38/blob/main/docs/miner.md
 - Ficha del subnet en TAO Alpha: https://www.jasontensor.com/subnet/38

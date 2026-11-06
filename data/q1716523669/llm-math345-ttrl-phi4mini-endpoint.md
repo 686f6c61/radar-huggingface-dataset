@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune del modelo `microsoft/Phi-4-mini-instruct` (3.8 mil millones de parámetros) entrenado con el método GRPO (Group Relative Policy Optimization), introducido en el paper DeepSeekMath. El autor, `q1716523669`, ha publicado este checkpoint en HuggingFace con el objetivo de mejorar las capacidades de razonamiento matemático del modelo base mediante aprendizaje por refuerzo. El entrenamiento se realizó con la librería TRL de HuggingFace, como indica la model card.
+Este modelo es un fine-tune del modelo `microsoft/Phi-4-mini-instruct` (3.8 mil millones de parámetros) entrenado con el método GRPO (Group Relative Policy Optimization), introducido en el paper DeepSeekMath. El autor, `q1716523669`, ha publicado este checkpoint en Hugging Face con el objetivo de mejorar las capacidades de razonamiento matemático del modelo base mediante aprendizaje por refuerzo. El entrenamiento se realizó con la librería TRL de Hugging Face, como indica la model card.
 
 El modelo resultante hereda la arquitectura del Phi-4-mini-instruct: un transformer decoder-only denso con atención de consultas agrupadas (GQA), embedding compartido y una ventana de contexto de 128K tokens. Está diseñado para generación de texto conversacional y es compatible con endpoints de inferencia (text-generation-inference). Aunque el repositorio tiene un tamaño de 7.7 GB (consistente con los pesos completos del modelo base en fp16), el dato de parámetros totales extraído de safetensors (199.680) parece incorrecto o corresponde a otra métrica, por lo que se toma como referencia el tamaño del modelo base.
 

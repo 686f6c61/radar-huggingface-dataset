@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`finetune_BidirLM_Omni_2_5B_voiceclap10_lora` es un checkpoint publicado por el usuario `VoiceNetCkpt` en HuggingFace. Segun la propia model card, se trata de un directorio de una ejecucion de entrenamiento ("training-run directory") perteneciente a los experimentos del proyecto VoiceCLAP. El repositorio contiene 309 archivos y ocupa 107,1 GB, y el autor enlaza un indice agregado de todas las ejecuciones en `VoiceNetCkpt/voiceclap-checkpoints-index`. Esto indica que no es un modelo empaquetado para inferencia directa, sino un artefacto de investigacion pensado para reproducir o continuar un entrenamiento.
+`finetune_BidirLM_Omni_2_5B_voiceclap10_lora` es un checkpoint publicado por el usuario `VoiceNetCkpt` en Hugging Face. Segun la propia model card, se trata de un directorio de una ejecucion de entrenamiento ("training-run directory") perteneciente a los experimentos del proyecto VoiceCLAP. El repositorio contiene 309 archivos y ocupa 107,1 GB, y el autor enlaza un indice agregado de todas las ejecuciones en `VoiceNetCkpt/voiceclap-checkpoints-index`. Esto indica que no es un modelo empaquetado para inferencia directa, sino un artefacto de investigacion pensado para reproducir o continuar un entrenamiento.
 
 A partir del propio identificador puede inferirse (sin confirmacion documental) que se trata de un ajuste fino mediante LoRA sobre un modelo base denominado "BidirLM Omni" de aproximadamente 2.500 millones de parametros, y que la ejecucion numero 10 corresponde a un experimento de la familia VoiceCLAP. El termino "CLAP" se asocia habitualmente en la literatura a *Contrastive Language-Audio Pretraining*, y "Omni" sugiere capacidades multimodales, pero la model card no confirma ni la arquitectura, ni la modalidad, ni el dataset utilizado.
 
@@ -91,7 +91,7 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_lora
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_lora
 - Indice de checkpoints de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Perfil del autor: https://huggingface.co/VoiceNetCkpt
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

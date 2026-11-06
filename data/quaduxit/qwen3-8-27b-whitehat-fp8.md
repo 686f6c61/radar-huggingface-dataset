@@ -78,7 +78,7 @@ La comparacion se limita a la familia del propio modelo, ya que no se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-FP8
+- Repositorio Hugging Face: https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-FP8
 - Modelo base BF16: https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Coleccion de la familia: https://huggingface.co/collections/QuaduxIT/qwen38-27b-whitehat-6a89b5f640072fc5e6838c4b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-inko-rollout-pool-25k es un dataset privado de prompts de rollout y rubricas de evaluacion, publicado en HuggingFace por el usuario kaupane. No es un modelo de lenguaje ni un modelo generativo: es un conjunto de datos estructurado destinado al post-entrenamiento de Inko, concretamente al entrenamiento de recompensa en el marco DiffusionART/NFT. Contiene 24.579 filas en un unico split `train`.
+inko-rollout-pool-25k es un dataset privado de prompts de rollout y rubricas de evaluacion, publicado en Hugging Face por el usuario kaupane. No es un modelo de lenguaje ni un modelo generativo: es un conjunto de datos estructurado destinado al post-entrenamiento de Inko, concretamente al entrenamiento de recompensa en el marco DiffusionART/NFT. Contiene 24.579 filas en un unico split `train`.
 
 Cada fila combina un prompt autocontenido (ya reescrito por un proceso de prompt engineering) con una rubrica estructurada de cinco categorias de puntuacion, lo que lo convierte en material para entrenar o calibrar jueces de recompensa sobre generacion de imagenes. El dataset distingue dos tipos de semilla (`image` y `caption`) y dos niveles de longitud de prompt (`mid`, entre 31 y 512 tokens, y `short`, de 30 tokens o menos).
 
@@ -19,7 +19,7 @@ La relevancia del recurso es acotada: al tratarse de un dataset privado, sin pip
 | Tipos de cuantizacion | no aplicable |
 | Idiomas soportados | no disponible (los nombres de las categorias de rubrica aparecen en chino; el idioma de los prompts no se especifica) |
 | Licencia | no disponible (la model card indica "Private dataset") |
-| Formato de pesos | no aplicable; los datos se distribuyen presumiblemente en formato de dataset de HuggingFace `datasets` (no confirmado) |
+| Formato de pesos | no aplicable; los datos se distribuyen presumiblemente en formato de dataset de Hugging Face `datasets` (no confirmado) |
 | Tamano del dataset | 24.579 filas, un unico split `train` |
 | Columnas | `row_id`, `prompt`, `rubric`, `ref_image`, `seed_kind`, `tier` |
 | Categorias de rubrica | `content_alignment`, `form_structure`, `aesthetics`, `style_medium`, `artifacts` |
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia del dataset: no aplicable; se trata de datos, no de un modelo ejecutable.
 - GPU recomendadas: no disponible para el consumo del dataset. El entrenamiento de recompensa que lo utiliza (DiffusionART/NFT) si requeriria GPU, pero no se especifica ninguna recomendacion en la informacion proporcionada.
 - Encaje en GPU de consumo: la lectura y el procesado de los datos de texto no requiere GPU. No hay datos para estimar el entrenamiento de recompensa asociado.
-- Opciones de despliegue: al ser un dataset, el consumo habitual seria mediante la libreria `datasets` de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que corresponden a modelos y no a datos.
+- Opciones de despliegue: al ser un dataset, el consumo habitual seria mediante la libreria `datasets` de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que corresponden a modelos y no a datos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no identifica datasets comparables, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaupane/inko-rollout-pool-25k
+- Hugging Face: https://huggingface.co/kaupane/inko-rollout-pool-25k
 - Notas del proyecto citadas en la model card: `notes/posttrain_data.md` (no enlazadas ni accesibles en la informacion proporcionada)
 - Prompts de evaluacion citados en la model card: `configs/prompts/` (ruta interna del repositorio, no enlazada)
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este dataset: los unicos enlaces recuperados tratan sobre la biografia de Steve Jobs y no guardan relacion con el recurso.

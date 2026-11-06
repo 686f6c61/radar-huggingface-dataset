@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `enesor0/valuer` es un sistema de regresión tabular orientado al análisis deportivo, concretamente al fútbol, desarrollado por el usuario `enesor0`. Según las etiquetas declaradas en HuggingFace, utiliza XGBoost y scikit-learn para resolver problemas de regresión sobre datos tabulares, con una aplicación probablemente centrada en la valoración de jugadores o métricas de rendimiento deportivo. La referencia al paper `arxiv:1910.09700` corresponde al artículo fundacional de XGBoost, lo que sugiere que el modelo se apoya en esta implementación de gradient boosting.
+El modelo `enesor0/valuer` es un sistema de regresión tabular orientado al análisis deportivo, concretamente al fútbol, desarrollado por el usuario `enesor0`. Según las etiquetas declaradas en Hugging Face, utiliza XGBoost y scikit-learn para resolver problemas de regresión sobre datos tabulares, con una aplicación probablemente centrada en la valoración de jugadores o métricas de rendimiento deportivo. La referencia al paper `arxiv:1910.09700` corresponde al artículo fundacional de XGBoost, lo que sugiere que el modelo se apoya en esta implementación de gradient boosting.
 
-La model card publicada es una plantilla genérica de HuggingFace sin completar, con todos los campos técnicos marcados como "[More Information Needed]". Esto significa que no hay información pública sobre el tamaño del modelo, los datos de entrenamiento, las métricas de evaluación ni la licencia. El repositorio en GitHub existe pero no aporta documentación adicional en los resultados de búsqueda. Se trata, por tanto, de un modelo con información muy limitada y sin evidencia de uso o validación externa.
+La model card publicada es una plantilla genérica de Hugging Face sin completar, con todos los campos técnicos marcados como "[More Information Needed]". Esto significa que no hay información pública sobre el tamaño del modelo, los datos de entrenamiento, las métricas de evaluación ni la licencia. El repositorio en GitHub existe pero no aporta documentación adicional en los resultados de búsqueda. Se trata, por tanto, de un modelo con información muy limitada y sin evidencia de uso o validación externa.
 
 ## Especificaciones técnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. No se conocen modelos similares de valoración de futbolistas publicados en HuggingFace con la misma base técnica y los mismos datos de entrenamiento. La comparativa queda pendiente de que el autor publique más detalles del modelo y sus resultados.
+No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. No se conocen modelos similares de valoración de futbolistas publicados en Hugging Face con la misma base técnica y los mismos datos de entrenamiento. La comparativa queda pendiente de que el autor publique más detalles del modelo y sus resultados.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/enesor0/valuer
+- Página del modelo en Hugging Face: https://huggingface.co/enesor0/valuer
 - Repositorio GitHub: https://github.com/enesor0/valuer
 - Carpeta de modelos en el repositorio: https://github.com/enesor0/valuer/tree/main/models
 - Paper de XGBoost (referencia del tag): https://arxiv.org/abs/1910.09700

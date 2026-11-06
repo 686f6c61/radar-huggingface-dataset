@@ -82,8 +82,8 @@ No se dispone de datos comparativos en la información proporcionada. La model c
 
 ## Enlaces
 
-- HuggingFace (este espejo): https://huggingface.co/vlmurthylab/1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-rhythm
-- HuggingFace (original, 4dm-labs): https://huggingface.co/4dm-labs/1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-rhythm
+- Hugging Face (este espejo): https://huggingface.co/vlmurthylab/1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-rhythm
+- Hugging Face (original, 4dm-labs): https://huggingface.co/4dm-labs/1dvit_base_patch50_5000.ssl_mimic_ft_ptbxl-rhythm
 - Repositorio de código ECGFlow (original): https://github.com/4dm-labs/ecgflow
 - Repositorio de código ECGFlow (espejo): https://github.com/vlmurthylab/ecgflow
 - Articulo de referencia: Moody JB, et al. NEJM AI 2025; doi:10.1056/AIoa2500164

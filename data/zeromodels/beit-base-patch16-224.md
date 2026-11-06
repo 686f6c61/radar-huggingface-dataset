@@ -29,7 +29,7 @@ BEiT es un transformer de visión que sigue la estructura de ViT, pero con tres 
 - Extraccion de caracteristicas: mediante `BeitModel.from_weights(..., as_backbone=True)` se pueden obtener las secuencias de tokens por bloque, utiles para tareas de vision como deteccion o segmentacion.
 - Soporte multi-backend: la misma implementacion funciona en TensorFlow, PyTorch y JAX sin cambios en el codigo.
 - Normalizacion integrada: el modelo espera píxeles en rango [0, 255] y aplica la normalizacion internamente, simplificando el preprocesado.
-- Compatibilidad con pesos de HuggingFace: se puede cargar el checkpoint original de Microsoft usando el prefijo `hf:` (por ejemplo, `hf:microsoft/beit-base-patch16-224`).
+- Compatibilidad con pesos de Hugging Face: se puede cargar el checkpoint original de Microsoft usando el prefijo `hf:` (por ejemplo, `hf:microsoft/beit-base-patch16-224`).
 - No incluye capacidades de lenguaje, tool calling ni agentes, al ser exclusivamente un modelo de vision.
 
 ## Casos de uso
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/beit-base-patch16-224
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/beit-base-patch16-224
 - Modelo original de Microsoft: https://huggingface.co/microsoft/beit-base-patch16-224
 - Paper BEiT: https://arxiv.org/abs/2106.08254
 - Repositorio ZeroModels: https://github.com/IMvision12/ZeroModels

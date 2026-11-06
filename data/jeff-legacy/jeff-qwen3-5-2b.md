@@ -88,9 +88,9 @@ Resultados por benchmark (v1.1 a v1.2): BBH 68,7 a 66,4; Financial PhraseBank 94
 
 | Modelo | Parametros | Precision del panel | ECE | Tiempo de decision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Jeff-Qwen3.5-2B v1.2 (este modelo) | 2,2B | 81,7% | 0,021 | 24 ms (RTX PRO 6000) | Apache 2.0 | HuggingFace (jeff-legacy/Jeff-Qwen3.5-2B) |
-| Jeff-Qwen3.5-0.8B (v1.2) | 0,8B | 78,7% | 0,028 | 22 ms (RTX PRO 6000) | no disponible en la informacion | HuggingFace (mstrasser/Jeff-Qwen3.5-0.8B) |
-| Jeff-Gemma4-E2B | Gemma 4 E2B | 81,6% | 0,031 | 29 ms (RTX PRO 6000) | no disponible en la informacion | HuggingFace (mstrasser/Jeff-Gemma4-E2B) |
+| Jeff-Qwen3.5-2B v1.2 (este modelo) | 2,2B | 81,7% | 0,021 | 24 ms (RTX PRO 6000) | Apache 2.0 | Hugging Face (jeff-legacy/Jeff-Qwen3.5-2B) |
+| Jeff-Qwen3.5-0.8B (v1.2) | 0,8B | 78,7% | 0,028 | 22 ms (RTX PRO 6000) | no disponible en la informacion | Hugging Face (mstrasser/Jeff-Qwen3.5-0.8B) |
+| Jeff-Gemma4-E2B | Gemma 4 E2B | 81,6% | 0,031 | 29 ms (RTX PRO 6000) | no disponible en la informacion | Hugging Face (mstrasser/Jeff-Gemma4-E2B) |
 | Jev (publicado) | no disponible | 83,0% | ≈0,06 | 212 ms por llamada via API (harness Doom) | propietario (TypeSafe) | API |
 
 No se dispone de datos de contexto ni de licencia de los modelos comparados mas alla de lo indicado; se marcan como "no disponible".
@@ -112,7 +112,7 @@ No se dispone de datos de contexto ni de licencia de los modelos comparados mas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeff-legacy/Jeff-Qwen3.5-2B
+- Modelo en Hugging Face: https://huggingface.co/jeff-legacy/Jeff-Qwen3.5-2B
 - Version vigente del proyecto (Jeff v1.3): https://huggingface.co/mstrasser/jeff-base
 - Jeff-Qwen3.5-0.8B: https://huggingface.co/mstrasser/Jeff-Qwen3.5-0.8B
 - Jeff-Gemma4-E2B: https://huggingface.co/mstrasser/Jeff-Gemma4-E2B

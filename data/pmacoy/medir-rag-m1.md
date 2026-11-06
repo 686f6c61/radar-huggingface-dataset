@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MedIR-RAG · Milestone 1 es un artefacto de recuperación de información (RI) publicado en HuggingFace por el autor Pmacoy (identificado en la model card como Paulo A. Julio, m70401) en el contexto de un proyecto de la asignatura "Recuperação de Informação em Bases de Texto" del MEI de la Universidade de Évora (curso 2026/2027). No se trata de un modelo de lenguaje con pesos neuronales, sino de una baseline léxica completa del pipeline MedIR-RAG: indexación del corpus PubMedQA, búsqueda con BM25 y evaluación con `pytrec_eval`.
+MedIR-RAG · Milestone 1 es un artefacto de recuperación de información (RI) publicado en Hugging Face por el autor Pmacoy (identificado en la model card como Paulo A. Julio, m70401) en el contexto de un proyecto de la asignatura "Recuperação de Informação em Bases de Texto" del MEI de la Universidade de Évora (curso 2026/2027). No se trata de un modelo de lenguaje con pesos neuronales, sino de una baseline léxica completa del pipeline MedIR-RAG: indexación del corpus PubMedQA, búsqueda con BM25 y evaluación con `pytrec_eval`.
 
 El repositorio documenta la formulación del problema como tarea de RI: cada resumen de `pqa_labeled` (1000 documentos) se construye concatenando los `CONTEXTS`, las queries son las 1000 preguntas del mismo conjunto y los qrels son binarios con un único documento relevante por pregunta. Se reserva un 20 % de las queries para validación (ajuste de los parámetros `k1` y `b` de BM25) y un 80 % para test, con semilla 42.
 
@@ -25,7 +25,7 @@ Su relevancia es metodológica y educativa: proporciona un procedimiento reprodu
 
 El sistema es una pipeline de recuperación léxica basada en BM25 implementada con Pyserini (Lucene) y evaluada con `pytrec_eval`. El corpus se construye a partir del subconjunto `pqa_labeled` de PubMedQA (1000 resúmenes), donde cada documento es la concatenación de los campos `CONTEXTS`; el campo `LONG_ANSWER` se excluye por ser la conclusión del resumen. Opcionalmente se pueden añadir resúmenes de `pqa_unlabeled` como distractores mediante el flag `--distractors N` (por ejemplo, 20 000 distractores).
 
-No hay entrenamiento neuronal ni ajuste de pesos. El único "ajuste" es una búsqueda en rejilla (grid search) de los hiperparámetros `k1` y `b` de BM25 sobre el 20 % de queries de validación, con evaluación posterior sobre el 80 % de test. Se contemplan variantes de stemming y una condición de omisión (baseline sin ajuste). El script genera en `outputs/` los ficheros `grid_val_*.csv`, `results_test_*.csv`, `run_bm25_test_*.trec` (top-100, reutilizado en la Milestone 2 para fusión RRF) y `summary_*.json` con estadísticas del índice, mejores parámetros y p-valor de Wilcoxon. La reproducibilidad exige Java 21 (Pyserini/Lucene) y permite ejecución local con `ori_pqal.json` si no hay acceso a HuggingFace Datasets.
+No hay entrenamiento neuronal ni ajuste de pesos. El único "ajuste" es una búsqueda en rejilla (grid search) de los hiperparámetros `k1` y `b` de BM25 sobre el 20 % de queries de validación, con evaluación posterior sobre el 80 % de test. Se contemplan variantes de stemming y una condición de omisión (baseline sin ajuste). El script genera en `outputs/` los ficheros `grid_val_*.csv`, `results_test_*.csv`, `run_bm25_test_*.trec` (top-100, reutilizado en la Milestone 2 para fusión RRF) y `summary_*.json` con estadísticas del índice, mejores parámetros y p-valor de Wilcoxon. La reproducibilidad exige Java 21 (Pyserini/Lucene) y permite ejecución local con `ori_pqal.json` si no hay acceso a Hugging Face Datasets.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Sistema | Tipo | Corpus | Métricas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedIR-RAG Milestone 1 (este) | BM25 sobre Lucene/Pyserini | PubMedQA `pqa_labeled` (1000) + distractores opcionales | NDCG@5/10, MRR@10, MAP, Recall@100 | no disponible | HuggingFace (Pmacoy/medir-rag-m1) |
+| MedIR-RAG Milestone 1 (este) | BM25 sobre Lucene/Pyserini | PubMedQA `pqa_labeled` (1000) + distractores opcionales | NDCG@5/10, MRR@10, MAP, Recall@100 | no disponible | Hugging Face (Pmacoy/medir-rag-m1) |
 | BM25 estándar (Pyserini) | Recuperador léxico de propósito general | Cualquiera | Configurable | Apache 2.0 (Pyserini) | Pyserini en GitHub/PyPI |
 | Recuperadores densos sobre PubMedQA | Modelos de embeddings (p. ej. basados en transformers) | PubMedQA | Depende del trabajo | Varía | Varía |
 | PubMedQA como dataset de QA | Dataset de evaluación | 1000 preguntas etiquetadas | Exactitud de QA | Consultar el repositorio original | GitHub de PubMedQA |
@@ -85,7 +85,7 @@ La información disponible no permite una comparación numérica de rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pmacoy/medir-rag-m1
+- Hugging Face: https://huggingface.co/Pmacoy/medir-rag-m1
 - PubMedQA (paper): Jin, Q. et al. (2019). PubMedQA: A Dataset for Biomedical Research Question Answering. EMNLP-IJCNLP.
 - Pyserini (paper): Lin, J. et al. (2021). Pyserini: A Python Toolkit for Reproducible Information Retrieval Research. SIGIR.
 - pytrec_eval (paper): Van Gysel, C., & de Rijke, M. (2018). pytrec_eval: An Extremely Fast Python Interface to trec_eval. SIGIR.

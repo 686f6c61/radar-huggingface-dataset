@@ -99,8 +99,8 @@ Rendimiento del generador en una RTX 3070 Ti (8 GB), sobre 64 chunks de test de 
 
 | Modelo | Parametros | Contexto | F1 estricto (validacion / test) | Throughput en RTX 3070 Ti 8 GB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| relweave-1.7b-base | 1,72 B | no disponible (ejemplos a 4096) | 0,737 / 0,722 | aproximadamente 96 chunks/min (vLLM, bf16); 6 chunks/min (transformers) | Apache 2.0 | HuggingFace, repositorio de 3,7 GB |
-| relweave-4b-base | no disponible en la informacion proporcionada | no disponible | 0,781 / 0,783 | aproximadamente 42 chunks/min (vLLM, fp8); 4,5 chunks/min (transformers) | Apache 2.0 (segun el modelo hermano listado con la misma receta) | HuggingFace |
+| relweave-1.7b-base | 1,72 B | no disponible (ejemplos a 4096) | 0,737 / 0,722 | aproximadamente 96 chunks/min (vLLM, bf16); 6 chunks/min (transformers) | Apache 2.0 | Hugging Face, repositorio de 3,7 GB |
+| relweave-4b-base | no disponible en la informacion proporcionada | no disponible | 0,781 / 0,783 | aproximadamente 42 chunks/min (vLLM, fp8); 4,5 chunks/min (transformers) | Apache 2.0 (segun el modelo hermano listado con la misma receta) | Hugging Face |
 | Otros sistemas de extraccion de relaciones tipadas | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El autor recomienda explicitamente usar el 4B salvo que la memoria o la velocidad lo impidan: la diferencia agregada sobre 377 chunks es de 0,048 puntos de F1 a favor del 4B, con un intervalo de confianza del 95 % de 0,030 a 0,067.
@@ -122,7 +122,7 @@ El autor recomienda explicitamente usar el 4B salvo que la memoria o la velocida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chrullis/relweave-1.7b-base
+- Modelo en Hugging Face: https://huggingface.co/chrullis/relweave-1.7b-base
 - Variante mayor, relweave-4b-base: https://huggingface.co/chrullis/relweave-4b-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/chrullis/relweave-business-data
 - Modelo base utilizado: https://huggingface.co/unsloth/qwen3-1.7b-unsloth-bnb-4bit

@@ -100,7 +100,7 @@ La comparación con alternativas del mismo tamaño y tarea especializada no est�
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/ak2311581/hana-pskit-1.5b-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/ak2311581/hana-pskit-1.5b-GGUF
 - Modelo base del ajuste: https://huggingface.co/ak2311581/hana-pskit-1.5b
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - py-serverless-kit en PyPI: https://pypi.org/project/py-serverless-kit/

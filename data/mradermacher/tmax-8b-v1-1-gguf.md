@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tmax-8b-v1.1 es un modelo de lenguaje de 8 mil millones de parametros desarrollado por TMaxxx, del cual esta ficha describe la coleccion de cuantizaciones estaticas en formato GGUF publicada por el usuario mradermacher en HuggingFace. El repositorio original (TMaxxx/tmax-8b-v1.1) contiene los pesos en formato HF, y esta version cuantizada permite ejecutar el modelo de forma eficiente en hardware de consumo mediante runtimes como llama.cpp u Ollama.
+tmax-8b-v1.1 es un modelo de lenguaje de 8 mil millones de parametros desarrollado por TMaxxx, del cual esta ficha describe la coleccion de cuantizaciones estaticas en formato GGUF publicada por el usuario mradermacher en Hugging Face. El repositorio original (TMaxxx/tmax-8b-v1.1) contiene los pesos en formato HF, y esta version cuantizada permite ejecutar el modelo de forma eficiente en hardware de consumo mediante runtimes como llama.cpp u Ollama.
 
 La relevancia de este repositorio radica en la disponibilidad de multiples niveles de cuantizacion (desde Q2_K hasta Q8_0 y f16), lo que permite ajustar el equilibrio entre calidad, consumo de memoria y velocidad de inferencia segun las necesidades de cada despliegue. Al tratarse de una cuantizacion estatica generada automaticamente, la model card original del modelo base no esta replicada aqui, por lo que varios datos tecnicos del modelo subyacente no estan documentados en la informacion disponible.
 

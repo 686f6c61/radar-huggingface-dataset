@@ -96,6 +96,6 @@ La principal ventaja de RepLiteDet-S0 es su especialización: al estar entrenado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ftc8565/replitedet-s0
+- Modelo en Hugging Face: https://huggingface.co/ftc8565/replitedet-s0
 - Paper asociado (referenciado en los tags): arXiv:2511.13453
 - Documentación de despliegue en Limelight: no disponible en la información proporcionada (se menciona la interfaz web y el runtime CPU, pero no se incluye URL directa).

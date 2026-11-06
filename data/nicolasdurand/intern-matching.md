@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NicolasDurand/intern-matching` es un repositorio de HuggingFace que contiene una implementación mínima y personalizada de una arquitectura tipo Dino orientada a tareas de *matching*, acompañada de un fichero de configuración (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). Lo publica el usuario NicolasDurand bajo licencia MIT. Con 33.088 parámetros totales declarados en el fichero de pesos, no se trata de un modelo entrenado ni de una release con resultados: el propio autor indica explícitamente que el checkpoint «no se presenta como un checkpoint de benchmark entrenado» y que no se reclama ninguna puntuación en el repositorio.
+`NicolasDurand/intern-matching` es un repositorio de Hugging Face que contiene una implementación mínima y personalizada de una arquitectura tipo Dino orientada a tareas de *matching*, acompañada de un fichero de configuración (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). Lo publica el usuario NicolasDurand bajo licencia MIT. Con 33.088 parámetros totales declarados en el fichero de pesos, no se trata de un modelo entrenado ni de una release con resultados: el propio autor indica explícitamente que el checkpoint «no se presenta como un checkpoint de benchmark entrenado» y que no se reclama ninguna puntuación en el repositorio.
 
 Su relevancia es, por tanto, la de un punto de partida reproducible para experimentación: permite verificar que un pipeline de carga, *forward pass* y entrenamiento funciona antes de invertir cómputo, y sirve como esqueleto sobre el que construir o comparar variantes de arquitecturas de emparejamiento. La configuración declarada etiqueta la escala como «huge», con atención dispersa (*sparse*), fusión bilineal, activación *approx gelu* y normalización por *batchnorm*, aunque el número real de parámetros (33.088) es varios órdenes de magnitud inferior al de cualquier variante ViT de la familia DINO, lo que sugiere una implementación reducida o un esqueleto de prueba más que un modelo de escala real.
 
@@ -27,7 +27,7 @@ Es importante encuadrarlo correctamente: no es un modelo de lenguaje, no genera 
 | Normalización | batchnorm |
 | Optimizador por defecto | SGD con planificador step |
 | Tamaño del repositorio | 0,0 GB (redondeado; < 1 MB) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -99,7 +99,7 @@ Nota: los recuentos exactos de parámetros y las condiciones de licencia de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NicolasDurand/intern-matching
+- Modelo en Hugging Face: https://huggingface.co/NicolasDurand/intern-matching
 - Script de inferencia y ejemplo de *smoke test*: https://huggingface.co/NicolasDurand/intern-matching/blob/main/inference.py
 - Configuración de arquitectura: https://huggingface.co/NicolasDurand/intern-matching/blob/main/config.json
 - Receta de entrenamiento por defecto: https://huggingface.co/NicolasDurand/intern-matching/blob/main/training_args.json

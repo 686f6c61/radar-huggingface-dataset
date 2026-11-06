@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto experimental publicado en HuggingFace por el usuario `gianmaTest`. Por su nombre y su tamano (2.366.208 parametros, aproximadamente 2,37 millones), se trata de una red neuronal recurrente (RNN) de muy pequena escala, probablemente un componente de un sistema mayor de procesamiento jerarquico por habitaciones ("hier_by_room") con agregacion por mean pooling ("meanPoolProc") orientado a datos de video. No es un modelo de lenguaje generativo ni un transformer de gran escala.
+El modelo `generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto experimental publicado en Hugging Face por el usuario `gianmaTest`. Por su nombre y su tamano (2.366.208 parametros, aproximadamente 2,37 millones), se trata de una red neuronal recurrente (RNN) de muy pequena escala, probablemente un componente de un sistema mayor de procesamiento jerarquico por habitaciones ("hier_by_room") con agregacion por mean pooling ("meanPoolProc") orientado a datos de video. No es un modelo de lenguaje generativo ni un transformer de gran escala.
 
 La model card es practicamente vacia: solo indica que el modelo se subio mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`, sin documentacion, paper, codigo ni descripcion funcional. No hay pipeline declarado, ni licencia, ni idiomas, ni datos de entrenamiento publicados. El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -78,7 +78,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP4hJ_hier_by_room_rnn_meanPoolProc_video_1
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo: no disponible

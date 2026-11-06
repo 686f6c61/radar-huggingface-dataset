@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| gpjt/jax-with-mha-bias-fineweb-edu | 163M (card) / 175,6M (safetensors) | 1.024 | Apache 2.0 | HuggingFace, `custom_code` | no disponible |
-| GPT-2 small (OpenAI) | 124M | 1.024 | MIT | HuggingFace, transformers nativo | no disponible en la informacion proporcionada |
-| Pythia-160M (EleutherAI) | 160M | 2.048 | Apache 2.0 | HuggingFace, transformers nativo | no disponible en la informacion proporcionada |
-| SmolLM-135M (HuggingFace) | 135M | 2.048 | Apache 2.0 | HuggingFace, transformers nativo | no disponible en la informacion proporcionada |
+| gpjt/jax-with-mha-bias-fineweb-edu | 163M (card) / 175,6M (safetensors) | 1.024 | Apache 2.0 | Hugging Face, `custom_code` | no disponible |
+| GPT-2 small (OpenAI) | 124M | 1.024 | MIT | Hugging Face, transformers nativo | no disponible en la informacion proporcionada |
+| Pythia-160M (EleutherAI) | 160M | 2.048 | Apache 2.0 | Hugging Face, transformers nativo | no disponible en la informacion proporcionada |
+| SmolLM-135M (Hugging Face) | 135M | 2.048 | Apache 2.0 | Hugging Face, transformers nativo | no disponible en la informacion proporcionada |
 
 La comparativa se limita a parametros, contexto, licencia y facilidad de despliegue: en la informacion disponible no hay resultados de benchmarks de este modelo ni de los alternativos, por lo que no es posible comparar calidad de forma cuantitativa.
 
@@ -97,7 +97,7 @@ La comparativa se limita a parametros, contexto, licencia y facilidad de desplie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpjt/jax-with-mha-bias-fineweb-edu
+- Modelo en Hugging Face: https://huggingface.co/gpjt/jax-with-mha-bias-fineweb-edu
 - Dataset de entrenamiento: https://huggingface.co/datasets/gpjt/fineweb-edu-gpt2-tokens
 - Dataset base FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb

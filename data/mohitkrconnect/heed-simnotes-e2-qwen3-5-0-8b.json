@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mohitkrconnect/heed-simnotes-e2-qwen3.5-0.8b",
+  "slug": "mohitkrconnect-heed-simnotes-e2-qwen3-5-0-8b",
+  "author": "mohitkrconnect",
+  "url": "https://huggingface.co/mohitkrconnect/heed-simnotes-e2-qwen3.5-0.8b",
+  "created_at": "2026-11-04T13:23:16.000Z",
+  "updated_at": "2026-11-04T13:59:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "on-device",
+    "task-extraction",
+    "structured-output",
+    "json",
+    "voice-notes",
+    "small-language-model",
+    "research-checkpoint",
+    "negative-result",
+    "en",
+    "dataset:mohitkrconnect/heed-voice-notes-to-tasks",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524927208,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mohitkrconnect/heed-simnotes-e2-qwen3.5-0.8b · Hugging Face",
+      "url": "https://huggingface.co/mohitkrconnect/heed-simnotes-e2-qwen3.5-0.8b",
+      "snippet": "Heed simulated notes + extra mistakes, Qwen3.5-0.8B (EXP-031, run E2): a negative result Research checkpoint and negative result, not the app model. The model inside Heed is heed-tasks-qwen3-0.6b. This one uses the old, wide output format (intent and voice commands as well as items) on the Qwen3.5-0.8B base. It was scored on the older guide-v2 yardstick, not by the blind judge, and it was ..."
+    },
+    {
+      "title": "mohitkrconnect (Mohit kumar) – Models - Hugging Face",
+      "url": "https://huggingface.co/mohitkrconnect/models",
+      "snippet": "mohitkrconnect/heed-simnotes-e2-qwen3.5-0.8b Text Generation • 0.8B•Updated about 16 hours ago"
+    }
+  ]
+}

@@ -56,7 +56,7 @@ No se han publicado comparaciones con otros agentes en la información disponibl
 
 ## Comparativa con modelos similares
 
-No hay datos de comparación con otros agentes DQN entrenados para el mismo entorno en la información proporcionada. Sin embargo, existen otros modelos de agentes para Space Invaders en HuggingFace (por ejemplo, `Cloud1989/dqn-SpaceInvadersNoFrameskip-v4` y `Harshit2000-sudo/dqn-SpaceInvadersNoFrameskip-v4`), pero no se han publicado métricas comparables. Por tanto, la comparativa se limita a indicar que el rendimiento declarado es de 483.50 de recompensa media, pero no se puede contrastar con otros.
+No hay datos de comparación con otros agentes DQN entrenados para el mismo entorno en la información proporcionada. Sin embargo, existen otros modelos de agentes para Space Invaders en Hugging Face (por ejemplo, `Cloud1989/dqn-SpaceInvadersNoFrameskip-v4` y `Harshit2000-sudo/dqn-SpaceInvadersNoFrameskip-v4`), pero no se han publicado métricas comparables. Por tanto, la comparativa se limita a indicar que el rendimiento declarado es de 483.50 de recompensa media, pero no se puede contrastar con otros.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No hay datos de comparación con otros agentes DQN entrenados para el mismo ento
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/fengkai1989Lucky/dqn-SpaceInvadersNoFrameskip-v4)
+- [Modelo en Hugging Face](https://huggingface.co/fengkai1989Lucky/dqn-SpaceInvadersNoFrameskip-v4)
 - [RL Zoo (stable-baselines3)](https://github.com/DLR-RM/rl-baselines3-zoo)
 - [stable-baselines3](https://github.com/DLR-RM/stable-baselines3)
 - [stable-baselines3-contrib](https://github.com/Stable-Baselines-Team/stable-baselines3-contrib)
@@ -130,7 +130,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se han publicado resultados de benchmarks en la información disponible. Existen otros modelos del mismo entorno en HuggingFace (por ejemplo, `Cloud1989/dqn-SpaceInvadersNoFrameskip-v4` o `Harshit2000-sudo/dqn-SpaceInvadersNoFrameskip-v4`), pero no se dispone de datos comparativos de rendimiento. Por tanto, la comparativa no está disponible.
+No se han publicado resultados de benchmarks en la información disponible. Existen otros modelos del mismo entorno en Hugging Face (por ejemplo, `Cloud1989/dqn-SpaceInvadersNoFrameskip-v4` o `Harshit2000-sudo/dqn-SpaceInvadersNoFrameskip-v4`), pero no se dispone de datos comparativos de rendimiento. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 

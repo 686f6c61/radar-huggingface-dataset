@@ -81,7 +81,7 @@ La informacion disponible solo permite comparar con el componente del que deriva
 
 | Modelo | Categoria | Arquitectura | Tokens por entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IM-Animation-Motion-Encoder | Encoder de movimiento por fotograma | TiTokEncoder, 24 capas, hidden 1024, 16 cabezales, patch 16, codebook VQ 4096 | 32 tokens de 12 dimensiones | Apache 2.0 | Pesos en HuggingFace, codigo en GitHub |
+| IM-Animation-Motion-Encoder | Encoder de movimiento por fotograma | TiTokEncoder, 24 capas, hidden 1024, 16 cabezales, patch 16, codebook VQ 4096 | 32 tokens de 12 dimensiones | Apache 2.0 | Pesos en Hugging Face, codigo en GitHub |
 | TiTok / 1d-tokenizer (ByteDance) | Tokenizador de imagen 1D | Transformer con tokens latentes y VQ | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Repositorio publico en GitHub |
 | Otros tokenizadores de video o movimiento (VQGAN, etc.) | Tokenizacion visual | No disponible | No disponible | No disponible | No disponible |
 
@@ -101,7 +101,7 @@ La informacion disponible solo permite comparar con el componente del que deriva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rbaerk/IM-Animation-Motion-Encoder
+- Modelo en Hugging Face: https://huggingface.co/Rbaerk/IM-Animation-Motion-Encoder
 - Paper (arXiv:2602.07498): https://arxiv.org/abs/2602.07498
 - Pagina del proyecto: https://rabberk.github.io/IM-Animation/
 - Repositorio de codigo: https://github.com/rabberk/IM-Animation

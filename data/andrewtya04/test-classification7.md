@@ -67,4 +67,4 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andrewtya04/test-classification7
+- Repositorio en Hugging Face: https://huggingface.co/andrewtya04/test-classification7

@@ -21,7 +21,7 @@ La relevancia de esta versión cuantizada radica en su tamaño reducido y su for
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base Versatile-1.5b-v0.3. Los metadatos de HuggingFace incluyen las etiquetas `qwen2` y `unsloth`, lo que indica que probablemente se trate de un modelo derivado de la familia Qwen2 y que el fine-tuning se realizo con la libreria Unsloth, conocida por optimizar el entrenamiento y reducir el uso de memoria. Sin embargo, no se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base Versatile-1.5b-v0.3. Los metadatos de Hugging Face incluyen las etiquetas `qwen2` y `unsloth`, lo que indica que probablemente se trate de un modelo derivado de la familia Qwen2 y que el fine-tuning se realizo con la libreria Unsloth, conocida por optimizar el entrenamiento y reducir el uso de memoria. Sin embargo, no se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
 
 El repositorio actual es una cuantizacion estatica realizada por mradermacher, que convierte los pesos originales en formato safetensors a GGUF mediante herramientas de conversion estandar. No se han aplicado cuantizaciones con imatrix ni calibracion por perplejidad en esta version, segun indica el propio autor en la model card.
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Versatile-1.5b-v0.3-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Versatile-1.5b-v0.3-GGUF
 - Modelo base: https://huggingface.co/tarunnokwal/Versatile-1.5b-v0.3
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF de TheBloke (referencia): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

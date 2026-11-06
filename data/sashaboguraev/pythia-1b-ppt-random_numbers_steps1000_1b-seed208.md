@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed208` es un fine-tuning experimental del modelo Pythia-1B de EleutherAI, publicado en HuggingFace por el usuario sashaboguraev. El nombre sugiere que fue entrenado durante 1000 pasos con datos de números aleatorios, utilizando una semilla concreta (208). Pertenece a la familia de modelos GPT-NeoX, con aproximadamente 1.011 millones de parámetros, y está orientado a la generación de texto.
+El modelo `sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed208` es un fine-tuning experimental del modelo Pythia-1B de EleutherAI, publicado en Hugging Face por el usuario sashaboguraev. El nombre sugiere que fue entrenado durante 1000 pasos con datos de números aleatorios, utilizando una semilla concreta (208). Pertenece a la familia de modelos GPT-NeoX, con aproximadamente 1.011 millones de parámetros, y está orientado a la generación de texto.
 
 La model card oficial está prácticamente vacía, sin información sobre licencia, idiomas, datos de entrenamiento o evaluación. La relevancia de este modelo es principalmente académica o de investigación: permite estudiar el comportamiento de un modelo de lenguaje cuando se entrena con datos sintéticos o aleatorios, y comparar el efecto de diferentes semillas y números de pasos. No está pensado para uso en producción.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: al ser un modelo de ~1B parámetros, en FP16 ocupa aproximadamente 2 GB de memoria, y en FP32 unos 4 GB. Con cuantización a 8 bits o 4 bits, podría reducirse a 1-2 GB, pero no se han publicado versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16 (por ejemplo, RTX 3050, RTX 2060, GTX 1660). Para mayor comodidad, una RTX 3090 o superior permitiría inferencia rápida.
 - Sí cabe en GPUs de consumo, siempre que se gestione la memoria adecuadamente.
-- Opciones de despliegue: al ser un modelo de transformers, puede usarse con bibliotecas como vLLM, llama.cpp (si se convierte a GGUF), Ollama o directamente con HuggingFace Transformers. No hay información sobre latencia o throughput específicos, pero para un modelo de 1B en una GPU moderna se esperan decenas de tokens por segundo.
+- Opciones de despliegue: al ser un modelo de transformers, puede usarse con bibliotecas como vLLM, llama.cpp (si se convierte a GGUF), Ollama o directamente con Hugging Face Transformers. No hay información sobre latencia o throughput específicos, pero para un modelo de 1B en una GPU moderna se esperan decenas de tokens por segundo.
 - El tamaño del repositorio es de 3.6 GB, lo que sugiere que los pesos están en FP32 (1B parámetros × 4 bytes ≈ 4 GB), aunque el tag indica safetensors.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo. La única diferencia clara es
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed208)
+- [Hugging Face - modelo](https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed208)
 - [Variante con seed1024 y preserve_emb](https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed1024-preserve_emb)
 - [Variante con seed1024 (FriendliAI)](https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed1024)
 - [Variante con steps100 y seed1024 (dev.modelhub.org.cn)](https://dev.modelhub.org.cn/sashaboguraev/pythia-1b-ppt-random_numbers_steps100_1b-seed1024-preserve_emb)

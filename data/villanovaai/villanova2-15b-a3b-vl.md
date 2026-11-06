@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Villanova2-15B-A3B-VL es un modelo de lenguaje multimodal desarrollado por VillanovaAI, publicado en HuggingFace bajo acceso restringido. El nombre del modelo y la etiqueta `qwen3_5_moe` del repositorio indican una arquitectura Mixture of Experts (MoE) derivada o inspirada en la familia Qwen, con aproximadamente 15.800 millones de parametros totales y un esquema de activacion de tipo A3B (alrededor de 3000 millones de parametros activos por token, segun la convencion de nomenclatura). El sufijo `VL` sugiere capacidades de vision-lenguaje.
+Villanova2-15B-A3B-VL es un modelo de lenguaje multimodal desarrollado por VillanovaAI, publicado en Hugging Face bajo acceso restringido. El nombre del modelo y la etiqueta `qwen3_5_moe` del repositorio indican una arquitectura Mixture of Experts (MoE) derivada o inspirada en la familia Qwen, con aproximadamente 15.800 millones de parametros totales y un esquema de activacion de tipo A3B (alrededor de 3000 millones de parametros activos por token, segun la convencion de nomenclatura). El sufijo `VL` sugiere capacidades de vision-lenguaje.
 
-El modelo se distribuye en formato safetensors con un tamano de repositorio de 31,7 GB, lo que es coherente con pesos en precision de 16 bits para su numero de parametros. La ficha oficial de HuggingFace no publica pipeline, licencia, idiomas ni datos de entrenamiento, y el acceso esta restringido mediante gating, por lo que cualquier evaluacion tecnica detallada requiere aceptar las condiciones del autor.
+El modelo se distribuye en formato safetensors con un tamano de repositorio de 31,7 GB, lo que es coherente con pesos en precision de 16 bits para su numero de parametros. La ficha oficial de Hugging Face no publica pipeline, licencia, idiomas ni datos de entrenamiento, y el acceso esta restringido mediante gating, por lo que cualquier evaluacion tecnica detallada requiere aceptar las condiciones del autor.
 
 Su relevancia potencial radica en combinar un diseno MoE de activacion reducida (que abarata la inferencia frente a un modelo denso del mismo tamano) con capacidades multimodales, un perfil atractivo para despliegues con restricciones de VRAM. No obstante, la ausencia de documentacion publica limita seriamente su evaluacion objetiva en el momento de redactar esta ficha.
 
@@ -20,7 +20,7 @@ Su relevancia potencial radica en combinar un diseno MoE de activacion reducida 
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 31,7 GB |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ La comparacion con modelos de referencia es aproximada: Villanova2 no publica co
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no se publican licencia, idiomas, contexto, datos de entrenamiento ni benchmarks, lo que impide una evaluacion rigurosa y su adopcion en produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace; el proceso de aprobacion y los terminos no estan descritos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face; el proceso de aprobacion y los terminos no estan descritos.
 - Licencia desconocida: no puede asumirse uso comercial permitido; es imprescindible contactar con el autor antes de cualquier despliegue productivo.
 - Riesgo de alucinacion: inherente a los modelos generativos de este tamano; sin datos de alineacion no puede estimarse su magnitud.
 - Sesgos: no se documenta la composicion del dataset ni procesos de mitigacion de sesgos.
@@ -86,5 +86,5 @@ La comparacion con modelos de referencia es aproximada: Villanova2 no publica co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VillanovaAI/Villanova2-15B-A3B-VL
+- Hugging Face: https://huggingface.co/VillanovaAI/Villanova2-15B-A3B-VL
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

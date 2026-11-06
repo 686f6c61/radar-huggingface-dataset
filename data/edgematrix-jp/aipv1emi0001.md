@@ -27,7 +27,7 @@ Su relevancia es practica y acotada: cubre el caso tipico de despliegue en camar
 | Libreria declarada | tensorrt |
 | Tamano del repositorio | 0.1 GB |
 | Plataforma del motor precompilado | JetPack 6 / L4T R36.3 / aarch64 (exclusivamente) |
-| Fecha de creacion en HuggingFace | 2026-09-24 |
+| Fecha de creacion en Hugging Face | 2026-09-24 |
 | Ultima actualizacion | 2026-09-24 |
 | Descargas / likes | 0 / 0 |
 
@@ -37,7 +37,7 @@ La arquitectura es YOLOv7, publicada por Chien-Yao Wang, Alexey Bochkovskiy y Ho
 
 Sobre esta base, EdgeMatrix indica haber entrenado y reparametrizado pesos propios con un dataset de aparcamiento de tres clases. No se especifican en la model card el numero de imagenes, la composicion del dataset, el numero de epocas, las tecnicas de aumento de datos ni si hubo fases de ajuste adicionales. Tampoco se documenta el proceso de exportacion mas alla de que el ONNX resultante integra el nodo `EfficientNMS_TRT`, lo que traslada la supresion de no maximos al motor TensorRT y simplifica el postprocesado en produccion.
 
-El flujo de trabajo publicado consiste en descargar el ONNX desde el repositorio de HuggingFace, verificar su hash contra `SHA256SUMS` y compilar el motor con `bin/build.sh`, tal como automatiza el notebook `localdev.ipynb` del repositorio de GitHub. El motor `.engine` incluido es un atajo opcional valido unicamente para JetPack 6 / L4T R36.3 sobre aarch64; en cualquier otra plataforma es necesario recompilar desde el ONNX.
+El flujo de trabajo publicado consiste en descargar el ONNX desde el repositorio de Hugging Face, verificar su hash contra `SHA256SUMS` y compilar el motor con `bin/build.sh`, tal como automatiza el notebook `localdev.ipynb` del repositorio de GitHub. El motor `.engine` incluido es un atajo opcional valido unicamente para JetPack 6 / L4T R36.3 sobre aarch64; en cualquier otra plataforma es necesario recompilar desde el ONNX.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ No se dispone de resultados de benchmarks ni de parametros publicados para AIPV1
 
 | Modelo | Tarea y clases | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AIPV1EMI0001 (YOLOv7-tiny, EdgeMatrix) | Deteccion, 3 clases de trafico | no disponible | Entrada 640x640 | Apache-2.0 (pesos), MIT (codigo) | ONNX y motor TensorRT para Jetson en HuggingFace |
+| AIPV1EMI0001 (YOLOv7-tiny, EdgeMatrix) | Deteccion, 3 clases de trafico | no disponible | Entrada 640x640 | Apache-2.0 (pesos), MIT (codigo) | ONNX y motor TensorRT para Jetson en Hugging Face |
 | YOLOv7-tiny upstream (WongKinYiu) | Deteccion, 80 clases COCO | no disponible en esta ficha | Entrada configurable | MIT | Codigo y pesos publicos en GitHub |
 | Otros detectores ligeros de una etapa (por ejemplo, variantes nano de otras familias) | Deteccion generica | no disponible | Entrada configurable | Variable segun familia (algunas con licencias copyleft) | Multiples repositorios publicos |
 
@@ -101,7 +101,7 @@ La ventaja diferencial de AIPV1EMI0001 no es el rendimiento, sino el empaquetado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Edgematrix-JP/AIPV1EMI0001
+- Modelo en Hugging Face: https://huggingface.co/Edgematrix-JP/AIPV1EMI0001
 - Repositorio de codigo, scripts de compilacion y guia paso a paso: https://github.com/edge-ai/AIPV1EMI0001
 - YOLOv7 upstream (arquitectura original, licencia MIT): https://github.com/WongKinYiu/yolov7
 - Paper de referencia: Chien-Yao Wang, Alexey Bochkovskiy, Hong-Yuan Mark Liao, "YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors", CVPR 2023 (sin enlace directo en la model card)

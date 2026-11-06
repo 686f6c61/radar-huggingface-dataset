@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattewg/pi05-so101-grab-ballincup-5k
+- Modelo en Hugging Face: https://huggingface.co/mattewg/pi05-so101-grab-ballincup-5k
 - Dataset de entrenamiento: https://huggingface.co/datasets/endoard/grab_cup_ball_2cam
 - Modelo relacionado (pi05-so101-grab-ball-30k): https://huggingface.co/mattewg/pi05-so101-grab-ball-30k
 - Checkpoint base pi0.5: `gs://openpi-assets/checkpoints/pi05_base`

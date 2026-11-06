@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (`...frankhen-s300`) | 4,54 B | No disponible (presupuesto de generacion de 8.192 tokens) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Ajuste GRPO sobre Qwen3.5-4B con KL 0,01, 300 pasos, checkpoint de investigacion anonima |
-| Qwen/Qwen3.5-4B (modelo base) | No disponible (el ajuste tiene 4,54 B, por lo que el base es del mismo orden) | No disponible | Apache 2.0 | HuggingFace | Referencia directa: mismo punto de partida antes del RL |
+| Este modelo (`...frankhen-s300`) | 4,54 B | No disponible (presupuesto de generacion de 8.192 tokens) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Ajuste GRPO sobre Qwen3.5-4B con KL 0,01, 300 pasos, checkpoint de investigacion anonima |
+| Qwen/Qwen3.5-4B (modelo base) | No disponible (el ajuste tiene 4,54 B, por lo que el base es del mismo orden) | No disponible | Apache 2.0 | Hugging Face | Referencia directa: mismo punto de partida antes del RL |
 | Alternativas de razonamiento matematico de ~4 B | No disponible | No disponible | No disponible | No disponible | La informacion proporcionada no incluye datos verificables de otros modelos de la misma categoria; no se presentan cifras para no inventarlas |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-kl0.01-frankhen-s300
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-kl0.01-frankhen-s300
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 - Repositorio de vLLM (referenciado en la model card): https://github.com/vllm-project/vllm

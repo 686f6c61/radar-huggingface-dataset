@@ -75,8 +75,8 @@ La información disponible solo permite comparar con el propio modelo base. No s
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BEHAVE-27B | ~26,9 B | no disponible | GRPO sobre 540 tareas BEHAVE-Train (40 actualizaciones) | Apache 2.0 | Pesos safetensors en HuggingFace, revisión `hf40` |
-| Qwen3.8-27B | ~27 B (base) | no disponible en la información proporcionada | Modelo base multimodal de Alibaba | Según modelo base | Público en HuggingFace |
+| BEHAVE-27B | ~26,9 B | no disponible | GRPO sobre 540 tareas BEHAVE-Train (40 actualizaciones) | Apache 2.0 | Pesos safetensors en Hugging Face, revisión `hf40` |
+| Qwen3.8-27B | ~27 B (base) | no disponible en la información proporcionada | Modelo base multimodal de Alibaba | Según modelo base | Público en Hugging Face |
 
 Datos del modelo base citados por fuentes externas de la búsqueda web (no verificados de forma independiente y no aplicables directamente a BEHAVE-27B): SWE-bench Pro 61,7, IFBench 79,5, OSWorld-Verified 84,3 y Humanity's Last Exam 30,8, con mejora declarada sobre Claude Opus 4.6 Max en 16 de 24 benchmarks. Estos valores proceden de resúmenes de terceros sobre Qwen3.8-27B y deben tratarse con cautela.
 
@@ -95,7 +95,7 @@ Datos del modelo base citados por fuentes externas de la búsqueda web (no verif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joooelw/BEHAVE-27B
+- Modelo en Hugging Face: https://huggingface.co/joooelw/BEHAVE-27B
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de código y benchmarks BEHAVE: https://github.com/joel-wu/BEHAVE
 - Análisis externo de benchmarks de Qwen3.8-27B (fuente de terceros): https://regolo.ai/qwen3-8-27b-benchmarks-every-test-where-alibabas-27b-model-beats-claude-opus-4-6-max/

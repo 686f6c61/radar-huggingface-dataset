@@ -58,14 +58,14 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Con cuantización de 8 bits, la huella de pesos baja aproximadamente a 1,6 GB; en 4 bits, a unos 0,9 GB. Estas cifras son estimaciones de cálculo, no medidas publicadas, y requieren convertir los pesos, ya que no se distribuyen versiones cuantizadas.
 - GPU recomendadas: cualquier GPU de consumo con 8 GB o más (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090) para fp16; A100, H100 o L4 para despliegues con concurrencia. También es viable en CPU con llama.cpp tras la conversión a GGUF.
 - Cabe holgadamente en GPU de consumo: es un modelo de 1,5B, diseñado para ejecutarse en el mismo tipo de hardware con el que se entrenó (T4 de 16 GB en Kaggle).
-- Opciones de despliegue: transformers, vLLM o TGI para servir en fp16; llama.cpp u Ollama previa conversión a GGUF; el pipeline declarado en HuggingFace es text-generation.
+- Opciones de despliegue: transformers, vLLM o TGI para servir en fp16; llama.cpp u Ollama previa conversión a GGUF; el pipeline declarado en Hugging Face es text-generation.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| agrieasy-ai-v1 | 1,5B (1.543.714.304) | No disponible en la información consultada | Apache-2.0 | safetensors fp16 | HuggingFace, 0 descargas, sin cuantizaciones |
+| agrieasy-ai-v1 | 1,5B (1.543.714.304) | No disponible en la información consultada | Apache-2.0 | safetensors fp16 | Hugging Face, 0 descargas, sin cuantizaciones |
 | Qwen2.5-1.5B-Instruct (base) | 1,5B | No disponible en la información consultada | Apache-2.0 | safetensors, GGUF y otras | Ampliamente distribuido, con ecosistema de cuantizaciones |
 | Qwen2.5-3B-Instruct | 3B | No disponible en la información consultada | Apache-2.0 (según familia Qwen2.5) | safetensors y cuantizaciones | Ampliamente distribuido; mayor coste de inferencia |
 | Llama 3.2 1B Instruct | 1B | No disponible en la información consultada | Licencia comunitaria Llama | safetensors y cuantizaciones | Ampliamente distribuido; requiere aceptar la licencia |
@@ -87,8 +87,8 @@ Frente a su modelo base, agrieasy-ai-v1 intercambia capacidad general por especi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rishabhthe1/agrieasy-ai-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/Rishabhthe1
+- Modelo en Hugging Face: https://huggingface.co/Rishabhthe1/agrieasy-ai-v1
+- Perfil del autor en Hugging Face: https://huggingface.co/Rishabhthe1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Aplicación mencionada en la model card: https://agrieasy.site y https://agrieasy.ai
 - Repositorio GitHub AgriEasy.com (posible relación con el autor, no confirmada): https://github.com/Rishabh01487/AgriEasy.com1

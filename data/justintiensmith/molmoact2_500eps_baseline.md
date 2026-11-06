@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justintiensmith/molmoact2_500eps_baseline
+- Repositorio Hugging Face: https://huggingface.co/justintiensmith/molmoact2_500eps_baseline
 - Repositorio oficial MolmoAct2 (Ai2): https://github.com/allenai/molmoact2
 - Paper MolmoAct2: https://arxiv.org/abs/2605.02881
 - Repositorio MolmoAct (anterior): https://github.com/allenai/MolmoAct

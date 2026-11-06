@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nz2212/tebeb_tutor_1.7b` es un modelo de lenguaje de 1.720.574.976 parámetros (aproximadamente 1,7 mil millones) publicado en HuggingFace por el usuario `nz2212`. Está etiquetado como conversacional y distribuido en formato GGUF, lo que sugiere que está pensado para inferencia local en CPU o GPU con herramientas como llama.cpp u Ollama. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
+El modelo `nz2212/tebeb_tutor_1.7b` es un modelo de lenguaje de 1.720.574.976 parámetros (aproximadamente 1,7 mil millones) publicado en Hugging Face por el usuario `nz2212`. Está etiquetado como conversacional y distribuido en formato GGUF, lo que sugiere que está pensado para inferencia local en CPU o GPU con herramientas como llama.cpp u Ollama. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
 La información pública disponible es muy escasa: la model card únicamente contiene la licencia, sin detalles sobre arquitectura, datos de entrenamiento, contexto o capacidades específicas. El repositorio ocupa 1,3 GB, coherente con un modelo de 1,7B en cuantización GGUF. No se han publicado benchmarks, demos ni documentación técnica adicional, por lo que cualquier evaluación debe basarse en pruebas propias.
 
@@ -67,4 +67,4 @@ No se dispone de información sobre modelos comparables específicos. Dado que n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nz2212/tebeb_tutor_1.7b
+- Repositorio Hugging Face: https://huggingface.co/nz2212/tebeb_tutor_1.7b

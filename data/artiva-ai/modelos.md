@@ -115,7 +115,7 @@ En la práctica, la ventaja competitiva de esta colección es la conversión y v
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/artiva-ai/modelos
+- Repositorio en Hugging Face: https://huggingface.co/artiva-ai/modelos
 - Fichero de licencia del repositorio: https://huggingface.co/artiva-ai/modelos/blob/main/LICENSE
 - Creative Tools (aplicación que consume los modelos): https://creativetools.online
 - Artiva: https://artiva.online

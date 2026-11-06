@@ -63,5 +63,5 @@ Alternativas potenciales: otras cuantizaciones de DeepSeek-V4-Flash-0731 en MLX 
 - Datos de rendimiento: la ausencia de benchmarks y de especificaciones técnicas del modelo base dificulta la evaluación de su calidad y rendimiento real.
 
 ## Enlaces
-- [HuggingFace - AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-6bit](https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-6bit)
+- [Hugging Face - AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-6bit](https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-6bit)
 - No se han proporcionado otros enlaces (papers, blogs, repos) en la información disponible.

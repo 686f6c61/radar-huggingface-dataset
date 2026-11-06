@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-movement-reversal-60k` | 4.143.404.816 | No disponible | No disponible | HuggingFace, libreria `lerobot`, 19 descargas | Ajuste fino especializado en `movement_reversal`, 2 vistas, 60.000 pasos |
-| `lerobot/pi05_base` | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace | Modelo base del ajuste; política generalista Pi0.5 |
+| `jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-movement-reversal-60k` | 4.143.404.816 | No disponible | No disponible | Hugging Face, libreria `lerobot`, 19 descargas | Ajuste fino especializado en `movement_reversal`, 2 vistas, 60.000 pasos |
+| `lerobot/pi05_base` | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face | Modelo base del ajuste; política generalista Pi0.5 |
 | Otras políticas VLA de manipulacion (OpenVLA, GR00T N1, pi0) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No se han proporcionado datos verificables para comparar parametros, contexto o rendimiento |
 
 No se dispone de datos de benchmarks ni de especificaciones de los modelos alternativos dentro de la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks ni de especificaciones de los modelos alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-movement-reversal-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-movement-reversal-60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-taco-keyframe-gemini
 - Tokenizer referenciado: https://huggingface.co/google/paligemma-3b-pt-224

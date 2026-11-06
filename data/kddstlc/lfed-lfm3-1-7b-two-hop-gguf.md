@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KDDSTLC/lfed-lfm3-1.7b-two-hop-gguf
+- Repositorio Hugging Face: https://huggingface.co/KDDSTLC/lfed-lfm3-1.7b-two-hop-gguf
 - Checkpoint fuente (bf16): https://huggingface.co/KDDSTLC/lfed-lfm3-1.7b-two-hop-bf16
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B

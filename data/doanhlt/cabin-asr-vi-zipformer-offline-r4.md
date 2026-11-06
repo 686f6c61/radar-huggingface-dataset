@@ -82,9 +82,9 @@ Puertas de validación: la puerta de ronda 4 (pre-registrada) pasa en todos sus 
 
 | Modelo | Parámetros | Contexto | WER FLEURS-100 vi | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cabin-asr-vi-zipformer-offline-r4 | 68,6 M | no disponible (no streaming) | 7,54 | Apache-2.0 | HuggingFace, paquete sherpa-onnx |
-| cabin-asr-vi-zipformer-offline-r3 | no disponible | no disponible (no streaming) | 7,64 | Apache-2.0 | HuggingFace |
-| sherpa-onnx-zipformer-vi-int8-2025-04-20 (publicado) | no disponible | no disponible (no streaming) | 10,19 | no disponible | HuggingFace, paquete sherpa-onnx |
+| cabin-asr-vi-zipformer-offline-r4 | 68,6 M | no disponible (no streaming) | 7,54 | Apache-2.0 | Hugging Face, paquete sherpa-onnx |
+| cabin-asr-vi-zipformer-offline-r3 | no disponible | no disponible (no streaming) | 7,64 | Apache-2.0 | Hugging Face |
+| sherpa-onnx-zipformer-vi-int8-2025-04-20 (publicado) | no disponible | no disponible (no streaming) | 10,19 | no disponible | Hugging Face, paquete sherpa-onnx |
 | R13x (Qwen3-ASR-1.7B fine-tune, profesor) | 1.700 M (aproximado) | no disponible | no disponible | Apache-2.0 | no disponible públicamente en la información |
 
 La comparativa se limita a los modelos citados en la model card; no se dispone de datos de otros ASR vietnamitas comparables en la información proporcionada.
@@ -102,7 +102,7 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r4
+- Hugging Face: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r4
 - Modelo base r3: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r3
 - Colección Cabin offline ASR: https://huggingface.co/collections/doanhlt/cabin-offline-asr-on-device-distilled-from-r13x-6ade0b05eb1f2ac4e49d7cf8
 - Repositorio de código (privado): `thinkprompt/cabin-offline-asr`, rama `feat/mobile-local-kit`

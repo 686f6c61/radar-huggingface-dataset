@@ -39,7 +39,7 @@ El sufijo `babylm_10m` indica que el modelo probablemente se entrenó con el cor
 - Evaluación de extrapolación de contexto: al ser un modelo pequeño, es adecuado para medir cómo afecta el sesgo ALiBi a la capacidad de generalizar a longitudes de secuencia no vistas durante el entrenamiento.
 - Pruebas de aprendizaje con corpus limitado (BabyLM): sirve como checkpoint para estudiar el efecto del número de épocas y la semilla en el rendimiento con un presupuesto de datos de 10 millones de palabras.
 - Benchmarking de eficiencia en hardware de bajo consumo: al tener 27M de parámetros, puede ejecutarse en CPU o GPUs modestas, lo que facilita pruebas rápidas de inferencia.
-- Desarrollo de pipelines de investigación en `transformers` con `trust_remote_code=True`: útil para probar la integración de arquitecturas personalizadas en el ecosistema HuggingFace.
+- Desarrollo de pipelines de investigación en `transformers` con `trust_remote_code=True`: útil para probar la integración de arquitecturas personalizadas en el ecosistema Hugging Face.
 - Comparación de semillas y configuraciones: el nombre incluye `seed43`, lo que permite replicar experimentos o comparar ejecuciones con distintas semillas dentro de la misma serie.
 
 ## Benchmarks y rendimiento
@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch10
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch10
 - Paper de ALiBi (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Repositorio relacionado (otro checkpoint de la misma serie): https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_epoch2

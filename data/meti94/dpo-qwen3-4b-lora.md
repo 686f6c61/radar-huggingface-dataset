@@ -6,7 +6,7 @@ meti94/dpo-qwen3-4b-lora es un adaptador LoRA (Low-Rank Adaptation) publicado po
 
 El modelo base, Qwen3-4B, es un transformer denso de aproximadamente 4.000 millones de parametros desarrollado por el equipo Qwen de Alibaba, con una ventana de contexto nativa de 32.768 tokens ampliable a 131.072 mediante interpolacion YaRN y soporte de modos de razonamiento "thinking" y "non-thinking". Al ser un adaptador, toda la capacidad de generacion, la longitud de contexto y el soporte multilingue provienen del modelo base, no del adaptador en si.
 
-La relevancia practica de esta publicacion es limitada: acumula 7 descargas y 0 "likes", y su model card es esencialmente la plantilla vacia de HuggingFace, sin datos sobre el dataset de preferencias, hiperparametros de entrenamiento ni evaluacion. En el momento de redactar esta ficha no existe informacion publicada por el autor sobre el proceso de DPO (composicion del dataset, valor de beta, numero de pasos) ni sobre los resultados obtenidos, por lo que cualquier uso en produccion debe considerarse experimental y no validado.
+La relevancia practica de esta publicacion es limitada: acumula 7 descargas y 0 "likes", y su model card es esencialmente la plantilla vacia de Hugging Face, sin datos sobre el dataset de preferencias, hiperparametros de entrenamiento ni evaluacion. En el momento de redactar esta ficha no existe informacion publicada por el autor sobre el proceso de DPO (composicion del dataset, valor de beta, numero de pasos) ni sobre los resultados obtenidos, por lo que cualquier uso en produccion debe considerarse experimental y no validado.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia practica de esta publicacion es limitada: acumula 7 descargas y 0 
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador PEFT de tipo LoRA entrenado con DPO. DPO optimiza directamente el modelo sobre pares de preferencias (respuesta elegida frente a rechazada) sin necesidad de entrenar un modelo de recompensa explicito ni de aplicar RLHF con PPO, segun el metodo descrito por Rafailov et al. (2023). La presencia de la etiqueta trl indica que el entrenamiento se realizo con la implementacion estandar de DPO de la libreria TRL, y peft 0.19.1 es la version de framework declarada. La etiqueta arxiv:1910.09700 apunta al articulo de Lacoste et al. sobre el impacto ambiental del aprendizaje automatico, que aparece por defecto en la plantilla de HuggingFace y no guarda relacion con la tecnica de entrenamiento.
+El artefacto es un adaptador PEFT de tipo LoRA entrenado con DPO. DPO optimiza directamente el modelo sobre pares de preferencias (respuesta elegida frente a rechazada) sin necesidad de entrenar un modelo de recompensa explicito ni de aplicar RLHF con PPO, segun el metodo descrito por Rafailov et al. (2023). La presencia de la etiqueta trl indica que el entrenamiento se realizo con la implementacion estandar de DPO de la libreria TRL, y peft 0.19.1 es la version de framework declarada. La etiqueta arxiv:1910.09700 apunta al articulo de Lacoste et al. sobre el impacto ambiental del aprendizaje automatico, que aparece por defecto en la plantilla de Hugging Face y no guarda relacion con la tecnica de entrenamiento.
 
 No se dispone de informacion sobre el numero de ejemplos o tokens del dataset de preferencias, su composicion y procedencia, los hiperparametros empleados (rango LoRA, alpha, dropout, tasa de aprendizaje, coeficiente beta de DPO), el numero de pasos, la precision (bf16/fp16/fp8) ni el hardware utilizado. Tampoco se documenta si el adaptador se entreno sobre los pesos del modelo base en su version instruct o base, ni si se aplicaron tecnicas adicionales de regularizacion o fusion de pesos.
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento que permitan comparar este adaptador con a
 
 ## Limitaciones y advertencias
 
-- Model card sin contenido: la ficha del autor es la plantilla vacia de HuggingFace, sin descripcion, datos de entrenamiento ni instrucciones de uso.
+- Model card sin contenido: la ficha del autor es la plantilla vacia de Hugging Face, sin descripcion, datos de entrenamiento ni instrucciones de uso.
 - Licencia no declarada: al no especificarse licencia, no se otorga de forma explicita ningun permiso de uso comercial; conviene contactar con el autor antes de cualquier despliegue en produccion.
 - Ausencia total de evaluacion: no hay benchmarks ni evaluaciones cualitativas que respalden que el adaptador mejore al modelo base; el DPO puede degradar capacidades si el dataset de preferencias es reducido o sesgado.
 - Riesgo de alucinacion: inherente a los modelos de 4.000 millones de parametros y no mitigado por la informacion disponible.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento que permitan comparar este adaptador con a
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/meti94/dpo-qwen3-4b-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/meti94/dpo-qwen3-4b-lora
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL (implementacion de DPO): https://github.com/huggingface/trl

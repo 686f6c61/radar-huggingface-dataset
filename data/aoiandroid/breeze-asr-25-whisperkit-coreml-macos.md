@@ -77,8 +77,8 @@ La principal diferencia de Breeze-ASR-25 frente a Whisper-large-v2 es la optimiz
 
 ## Enlaces
 
-- Repositorio de HuggingFace de este modelo: https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml-macos
-- Repositorio fuente de HuggingFace (Core ML sin compilar): https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml
+- Repositorio de Hugging Face de este modelo: https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml-macos
+- Repositorio fuente de Hugging Face (Core ML sin compilar): https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml
 - Repositorio Core ML para iOS: https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml-ios
 - Repositorio original de Breeze-ASR-25 en GitHub: https://github.com/mtkresearch/Breeze-ASR-25
 - Documentacion de instalacion (DeepWiki): https://deepwiki.com/mtkresearch/Breeze-ASR-25/2.1-installation

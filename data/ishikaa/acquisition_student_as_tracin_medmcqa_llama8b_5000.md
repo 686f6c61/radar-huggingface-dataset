@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo ishikaa/acquisition_student_AS_tracin_medmcqa_llama8b_5000 es un ajuste fino sobre un modelo Llama de 8.000 millones de parámetros, publicado por el usuario ishikaa en HuggingFace. Por la nomenclatura y los checkpoints hermanos del mismo autor (acquisition_student_original, acquisition_student_AS_format, acquisition_student_AS_tracin), todo apunta a un modelo "student" entrenado sobre un subconjunto de 5.000 ejemplos del corpus MedMCQA (preguntas de opción múltiple de medicina), seleccionados mediante la técnica de influence functions TracIn. El sufijo "5000" y los 8.030.261.248 parámetros coinciden exactamente con la arquitectura Llama 3.1 8B.
+El modelo ishikaa/acquisition_student_AS_tracin_medmcqa_llama8b_5000 es un ajuste fino sobre un modelo Llama de 8.000 millones de parámetros, publicado por el usuario ishikaa en Hugging Face. Por la nomenclatura y los checkpoints hermanos del mismo autor (acquisition_student_original, acquisition_student_AS_format, acquisition_student_AS_tracin), todo apunta a un modelo "student" entrenado sobre un subconjunto de 5.000 ejemplos del corpus MedMCQA (preguntas de opción múltiple de medicina), seleccionados mediante la técnica de influence functions TracIn. El sufijo "5000" y los 8.030.261.248 parámetros coinciden exactamente con la arquitectura Llama 3.1 8B.
 
-Se trata, por tanto, de un artefacto de investigación centrado en data acquisition (selección de datos de entrenamiento), no de un modelo de propósito general listo para producción. La model card es la plantilla autogenerada por HuggingFace y no documenta entrenamiento, licencia, idiomas ni evaluación. Acumula 0 descargas y 0 "likes", y el repositorio ocupa 16,1 GB en safetensors.
+Se trata, por tanto, de un artefacto de investigación centrado en data acquisition (selección de datos de entrenamiento), no de un modelo de propósito general listo para producción. La model card es la plantilla autogenerada por Hugging Face y no documenta entrenamiento, licencia, idiomas ni evaluación. Acumula 0 descargas y 0 "likes", y el repositorio ocupa 16,1 GB en safetensors.
 
 Su interés es doble: por un lado, permite estudiar cómo afecta la selección de datos (TracIn frente a otras estrategias) al ajuste fino en un dominio médico; por otro, sirve como ejemplo de checkpoint intermedio dentro de un pipeline experimental de influence functions.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ishikaa/acquisition_student_AS_tracin_medmcqa_llama8b_5000 | 8,03 B | no disponible | sin benchmarks publicados | no disponible | HuggingFace (0 descargas) |
-| meta-llama/Llama-3.1-8B | 8,03 B | 128.000 tokens | benchmarks públicos en la model card | Llama 3.1 Community License | HuggingFace, ampliamente desplegado |
-| Qwen2.5-7B | 7,6 B | 128.000 tokens | benchmarks públicos | Apache 2.0 (mayoría de variantes) | HuggingFace |
-| Meditron-7B | 7 B | 4.096 tokens | benchmarks médicos públicos | Llama 2 Community License | HuggingFace |
+| ishikaa/acquisition_student_AS_tracin_medmcqa_llama8b_5000 | 8,03 B | no disponible | sin benchmarks publicados | no disponible | Hugging Face (0 descargas) |
+| meta-llama/Llama-3.1-8B | 8,03 B | 128.000 tokens | benchmarks públicos en la model card | Llama 3.1 Community License | Hugging Face, ampliamente desplegado |
+| Qwen2.5-7B | 7,6 B | 128.000 tokens | benchmarks públicos | Apache 2.0 (mayoría de variantes) | Hugging Face |
+| Meditron-7B | 7 B | 4.096 tokens | benchmarks médicos públicos | Llama 2 Community License | Hugging Face |
 
 Nota: la comparativa con Llama 3.1 8B se basa en la coincidencia exacta de parámetros; no está confirmado que este checkpoint derive de esa versión concreta.
 
@@ -92,7 +92,7 @@ Nota: la comparativa con Llama 3.1 8B se basa en la coincidencia exacta de pará
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_tracin_medmcqa_llama8b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_tracin_medmcqa_llama8b_5000
 - Checkpoint hermano (AS_format, 10000): https://huggingface.co/ishikaa/acquisition_student_AS_format_medmcqa_llama8b_10000
 - Checkpoint hermano (original, 10000): https://huggingface.co/ishikaa/acquisition_student_original_medmcqa_llama8b_10000
 - Checkpoint hermano (qwen3b, 5000): https://friendli.ai/models/ishikaa/acquisition_student_AS_tracin_medmcqa_qwen3b_5000

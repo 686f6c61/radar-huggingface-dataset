@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario strongpear en HuggingFace, diseñado para ajustar el modelo base meta-llama/Llama-3.1-8B mediante técnicas de fine-tuning eficiente. El nombre del repositorio sugiere que el entrenamiento empleó RAFT (Retrieval-Augmented Fine-Tuning), una variante de PMIX (posiblemente una mezcla de prompts o de datos), cadena de pensamiento (CoT) y un dataset denominado A-LAW-Instruct, aunque la model card no proporciona detalles confirmados sobre estos componentes.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario strongpear en Hugging Face, diseñado para ajustar el modelo base meta-llama/Llama-3.1-8B mediante técnicas de fine-tuning eficiente. El nombre del repositorio sugiere que el entrenamiento empleó RAFT (Retrieval-Augmented Fine-Tuning), una variante de PMIX (posiblemente una mezcla de prompts o de datos), cadena de pensamiento (CoT) y un dataset denominado A-LAW-Instruct, aunque la model card no proporciona detalles confirmados sobre estos componentes.
 
 El adaptador tiene un tamaño de 0.7 GB y está registrado con la librería PEFT (versión 0.20.0), lo que indica que se distribuye como pesos delta que deben combinarse con el modelo base Llama 3.1 8B para su uso. Al tratarse de un adaptador, las capacidades finales dependen del modelo base, que es un transformer de 8 mil millones de parámetros con atención de consulta agrupada (GQA) y una ventana de contexto de 128 000 tokens según las especificaciones oficiales de Llama 3.1.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: depende del modelo base y de la cuantizacion. Para Llama 3.1 8B en precision fp16 se requieren aproximadamente 16 GB de VRAM; con cuantizacion de 4 bits (por ejemplo, GPTQ o AWQ) se puede reducir a unos 6-8 GB.
 - GPU recomendadas: el adaptador puede ejecutarse en GPUs de consumo como RTX 3090, RTX 4090 (24 GB) o en GPUs profesionales como A100 (40/80 GB) y H100. Para cargar el adaptador junto al modelo base, se necesita al menos 16 GB de VRAM en fp16.
 - Compatibilidad con consumer GPU: si, siempre que se use cuantizacion (4 bits u 8 bits) y se disponga de al menos 8 GB de VRAM.
-- Opciones de despliegue: el adaptador se puede cargar con la libreria PEFT de HuggingFace Transformers. Para inferencia en produccion, se puede combinar con vLLM, TGI (Text Generation Inference) o llama.cpp (si se convierte a GGUF). Tambien es compatible con Ollama si se empaqueta adecuadamente.
+- Opciones de despliegue: el adaptador se puede cargar con la libreria PEFT de Hugging Face Transformers. Para inferencia en produccion, se puede combinar con vLLM, TGI (Text Generation Inference) o llama.cpp (si se convierte a GGUF). Tambien es compatible con Ollama si se empaqueta adecuadamente.
 - Latencia y throughput: no disponibles. Dependen del hardware, la cuantizacion y el backend utilizado.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de comparativas publicadas con otros adaptadores LoRA o modelos de
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-LAW-Instruct-r64-last-full-epoch
+- Repositorio del modelo en Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-LAW-Instruct-r64-last-full-epoch
 - Modelo base Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Documentacion tecnica de Llama 3.1 (DeepWiki): https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1
 - Repositorio oficial de Llama 3 en GitHub: https://github.com/meta-llama/llama3

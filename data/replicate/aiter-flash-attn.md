@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/aiter-flash-attn` no es un modelo de lenguaje, sino un paquete de kernels de atencion flash distribuido a traves de la libreria `kernels` de HuggingFace. Se trata de una republicacion (mirror) bajo el espacio de nombres de `replicate` del repositorio `kernels-community/aiter-flash-attn`, cuya model card ha sido generada automaticamente y no documenta origen, GPUs soportadas ni metodologia de compilacion.
+`replicate/aiter-flash-attn` no es un modelo de lenguaje, sino un paquete de kernels de atencion flash distribuido a traves de la libreria `kernels` de Hugging Face. Se trata de una republicacion (mirror) bajo el espacio de nombres de `replicate` del repositorio `kernels-community/aiter-flash-attn`, cuya model card ha sido generada automaticamente y no documenta origen, GPUs soportadas ni metodologia de compilacion.
 
 El artefacto expone funciones de atencion para transformers: `flash_attn_func`, `flash_attn_varlen_func` y `flash_attn_with_kvcache`, ademas de utilidades de configuracion del backend MHA (`mha_set_impl`, `mha_set_use_fused_bwd_kernel`, `mha_set_use_int64_strides`) y una funcion de introspeccion de metadatos (`__kernel_metadata__`). Su licencia declarada es MIT y su pipeline no aplica, ya que no ejecuta inferencia por si mismo.
 
@@ -47,7 +47,7 @@ La superficie funcional documentada es la siguiente: `flash_attn_func` (atencion
 - Inferencia autoregresiva con cache: `flash_attn_with_kvcache` esta pensado para el bucle de decodificacion token a token de un servidor de inferencia, donde la reutilizacion de la cache KV es determinante para el throughput.
 - Despliegue reproducible sin compilacion local: la carga mediante `kernels.get_kernel` permite fijar una version concreta del paquete en imagenes de contenedor, evitando diferencias de compilacion entre entornos de desarrollo y produccion.
 - Tensores de gran tamano: la opcion de strides de 64 bits resulta util en cargas con lotes o dimensiones que superan el limite de indexacion de 32 bits.
-- Integracion en pipelines de HuggingFace: se puede invocar desde codigo que ya gestione modelos con la libreria `transformers` y sustituir la implementacion de atencion por defecto por estos kernels.
+- Integracion en pipelines de Hugging Face: se puede invocar desde codigo que ya gestione modelos con la libreria `transformers` y sustituir la implementacion de atencion por defecto por estos kernels.
 - Evaluacion comparativa de backends: `mha_set_impl` permite alternar implementaciones para medir que variante rinde mejor en una GPU concreta dentro del mismo codigo.
 
 ## Benchmarks y rendimiento
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Repositorio | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|
-| `replicate/aiter-flash-attn` | Paquete de kernels de atencion | MIT | HuggingFace Hub, libreria `kernels` | Mirror del repositorio de comunidad; 0 descargas y 0 likes; card autogenerada |
-| `kernels-community/aiter-flash-attn` | Paquete de kernels de atencion | no disponible | HuggingFace Hub, libreria `kernels` | Origen citado en la propia card del mirror |
-| `kernels-community/flash-attn3` | Paquete de kernels de atencion | no disponible | HuggingFace Hub, libreria `kernels` | Mencionado en el aviso de la card como ejemplo de repositorio de kernels que sera retirado |
+| `replicate/aiter-flash-attn` | Paquete de kernels de atencion | MIT | Hugging Face Hub, libreria `kernels` | Mirror del repositorio de comunidad; 0 descargas y 0 likes; card autogenerada |
+| `kernels-community/aiter-flash-attn` | Paquete de kernels de atencion | no disponible | Hugging Face Hub, libreria `kernels` | Origen citado en la propia card del mirror |
+| `kernels-community/flash-attn3` | Paquete de kernels de atencion | no disponible | Hugging Face Hub, libreria `kernels` | Mencionado en el aviso de la card como ejemplo de repositorio de kernels que sera retirado |
 | Implementaciones de atencion integradas en `transformers` | Implementacion de referencia | segun licencia del proyecto | Incluida en la libreria | Alternativa sin dependencia de paquetes de kernels externos |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada.
@@ -88,9 +88,9 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/aiter-flash-attn
+- Repositorio en Hugging Face: https://huggingface.co/replicate/aiter-flash-attn
 - Repositorio de origen citado en la card: https://huggingface.co/kernels-community/aiter-flash-attn
-- Libreria `kernels` de HuggingFace (GitHub): https://github.com/huggingface/kernels
+- Libreria `kernels` de Hugging Face (GitHub): https://github.com/huggingface/kernels
 - Incidencias de la libreria `kernels`: https://github.com/huggingface/kernels/issues/new
 - Repositorio de origen citado como afectado por la retirada: https://huggingface.co/kernels-community/flash-attn3
 - Organizacion de Replicate en GitHub: https://github.com/replicate

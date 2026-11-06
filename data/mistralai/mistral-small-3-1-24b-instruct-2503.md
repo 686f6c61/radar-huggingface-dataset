@@ -109,7 +109,7 @@ Nota metodologica del autor: cuando existen, se reportan cifras publicadas por o
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|---|
-| Mistral Small 3.1 24B Instruct | 24,0B densos | 128k tokens | Si | Apache 2.0 | Pesos abiertos en HuggingFace, 327.837 descargas y 1.396 likes | MMLU 80,62%; GPQA Diamond 45,96%; DocVQA 94,08%; HumanEval 88,41% |
+| Mistral Small 3.1 24B Instruct | 24,0B densos | 128k tokens | Si | Apache 2.0 | Pesos abiertos en Hugging Face, 327.837 descargas y 1.396 likes | MMLU 80,62%; GPQA Diamond 45,96%; DocVQA 94,08%; HumanEval 88,41% |
 | Gemma 3 27B IT | 27B | No disponible en la informacion | Si | No disponible en la informacion | Pesos abiertos | MATH 89,00%; MMLU Pro 67,50%; MMMU 64,90%; DocVQA 86,60% |
 | GPT-4o Mini | No disponible | No disponible en la informacion | Si | Propietaria | Solo API | MMLU 82,00%; MBPP 84,82%; HumanEval 87,20% |
 | Claude 3.5 Haiku | No disponible | No disponible en la informacion | Si | Propietaria | Solo API | MBPP 85,60%; ChartQA 87,20%; HumanEval 88,10% |
@@ -131,7 +131,7 @@ Frente a las alternativas propietarias (GPT-4o Mini, Claude 3.5 Haiku), Mistral 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503
 - Anuncio en el blog de Mistral AI: https://mistral.ai/news/mistral-small-3-1/
 - Sitio oficial de Mistral AI: https://mistral.ai/

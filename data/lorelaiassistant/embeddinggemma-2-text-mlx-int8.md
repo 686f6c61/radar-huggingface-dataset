@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de embe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lorelaiassistant/embeddinggemma-2-text-mlx-int8
+- Modelo en Hugging Face: https://huggingface.co/lorelaiassistant/embeddinggemma-2-text-mlx-int8
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Framework MLX: https://github.com/ml-explore/mlx
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información disponible.

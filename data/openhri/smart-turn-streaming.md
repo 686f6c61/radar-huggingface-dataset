@@ -107,7 +107,7 @@ No se dispone en la informacion proporcionada de otros detectores de fin de turn
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenHRI/smart-turn-streaming
+- Hugging Face: https://huggingface.co/OpenHRI/smart-turn-streaming
 - Repositorio de codigo (analizador Pipecat 1.14, estrategia eager-then-commit, entrenamiento y evaluacion): https://github.com/OpenHRIai/smart-turn-streaming
 - Modelo base: https://huggingface.co/pipecat-ai/smart-turn-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/pipecat-ai/smart-turn-data-v3.2-train

@@ -1,7 +1,7 @@
 # nvidia/Nemotron-3-Diarization-preview
 
 ## Resumen
-Nemotron-3-Diarization-preview es un modelo de diarización de hablantes desarrollado por NVIDIA, publicado en HuggingFace con acceso restringido (gated). Está diseñado para identificar quién habla y cuándo en flujos de audio, combinando detección de actividad de voz (VAD) y etiquetado de hablantes mediante una arquitectura streaming-sortformer. El modelo se enmarca en la familia Nemotron 3, orientada a aplicaciones de IA agéntica, aunque este preview se centra específicamente en procesamiento de audio.
+Nemotron-3-Diarization-preview es un modelo de diarización de hablantes desarrollado por NVIDIA, publicado en Hugging Face con acceso restringido (gated). Está diseñado para identificar quién habla y cuándo en flujos de audio, combinando detección de actividad de voz (VAD) y etiquetado de hablantes mediante una arquitectura streaming-sortformer. El modelo se enmarca en la familia Nemotron 3, orientada a aplicaciones de IA agéntica, aunque este preview se centra específicamente en procesamiento de audio.
 
 La relevancia actual radica en la creciente demanda de transcripción y análisis de conversaciones en tiempo real, donde la diarización precisa es un componente crítico. Al ser un modelo de NVIDIA con soporte en NeMo, se espera que ofrezca integración con el ecosistema de herramientas de la compañía. No se han publicado detalles sobre el número de parámetros, la arquitectura interna completa ni los datos de entrenamiento en la información disponible, por lo que esta ficha se basa únicamente en los metadatos públicos y las referencias a papers asociados.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 No disponible. No se han identificado modelos comparables en la información proporcionada. La diarización de hablantes tiene alternativas como pyannote.audio o los modelos de diarización de NeMo, pero no se dispone de datos para una comparación objetiva.
 
 ## Limitaciones y advertencias
-- Acceso restringido: el modelo requiere aceptar los términos de la licencia de NVIDIA en HuggingFace antes de poder descargarlo.
+- Acceso restringido: el modelo requiere aceptar los términos de la licencia de NVIDIA en Hugging Face antes de poder descargarlo.
 - Licencia de evaluación: la licencia "nvidia-software-and-model-evaluation-license" limita su uso a fines de evaluación, no a producción comercial sin acuerdo adicional.
 - Sesgos potenciales: al ser un modelo de audio, puede presentar errores con acentos no representados en sus datos de entrenamiento, solapamiento de hablantes o ruido de fondo intenso.
 - Riesgo de alucinación en etiquetas: en segmentos ambiguos, el modelo podría asignar incorrectamente hablantes, especialmente si hay más locutores de los que el modelo puede distinguir.
@@ -56,7 +56,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 - Modelo en vista previa: al ser un "preview", puede contener errores no documentados y no garantiza estabilidad para producción.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/nvidia/Nemotron-3-Diarization-preview
+- Hugging Face: https://huggingface.co/nvidia/Nemotron-3-Diarization-preview
 - Papers asociados (referencias arXiv de los tags):
   - arXiv:2507.18446
   - arXiv:2409.06656

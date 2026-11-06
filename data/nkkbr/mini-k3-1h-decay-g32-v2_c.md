@@ -72,7 +72,7 @@ Advertencia previa: el checkpoint publicado está en estado de inicialización (
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que se trata de un checkpoint intermedio de investigación que no ha sido evaluado en tareas downstream y que las métricas registradas (NLL y perplejidad sobre un conjunto de desarrollo fijo) están en W&B y en los ficheros JSONL de métricas de la ejecución, no en el repositorio de HuggingFace. Tampoco hay comparaciones publicadas con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que se trata de un checkpoint intermedio de investigación que no ha sido evaluado en tareas downstream y que las métricas registradas (NLL y perplejidad sobre un conjunto de desarrollo fijo) están en W&B y en los ficheros JSONL de métricas de la ejecución, no en el repositorio de Hugging Face. Tampoco hay comparaciones publicadas con otros modelos.
 
 ## Requisitos de hardware
 
@@ -89,10 +89,10 @@ El autor no publica comparaciones con otros modelos, y este checkpoint no tiene 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mini-K3-1H-decay-g32-v2_C | 1,02 B lógicos / 352 M activos (MoE) | 8.192 (entrenamiento) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-1.5B | 1,54 B densos | 32.768 | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama 3.2 1B | 1,24 B densos | 128.000 | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| TinyLlama-1.1B | 1,1 B densos | 2.048 | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| Mini-K3-1H-decay-g32-v2_C | 1,02 B lógicos / 352 M activos (MoE) | 8.192 (entrenamiento) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-1.5B | 1,54 B densos | 32.768 | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama 3.2 1B | 1,24 B densos | 128.000 | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| TinyLlama-1.1B | 1,1 B densos | 2.048 | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 Diferencias estructurales relevantes: frente a los tres modelos densos de la comparación, Mini-K3-1H es un MoE con atención híbrida (lineal KDA más MLA latente) y sin codificación posicional en las capas MLA. También carece de post-entrenamiento and de licencia declarada, mientras que las alternativas están alineadas para instrucciones y publican licencias explícitas. Comparado con otros miembros de la familia Mini-K3, la única diferencia controlada documentada es la granularidad de decaimiento KDA de 32 grupos por cabeza, junto con el proceso de recuperación de la serialización de `dt_bias`. No hay datos de rendimiento que permitan ordenar estos modelos.
 
@@ -113,7 +113,7 @@ Diferencias estructurales relevantes: frente a los tres modelos densos de la com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g32-v2_C
+- Repositorio en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g32-v2_C
 - Ficheros incluidos en el repositorio: `model.safetensors`, `config.json`, `modeling_mini_k3.py`, `configuration_mini_k3.py`, `initialize_model.py`, `smoke_test.py`, `ARCHITECTURE_PACKAGE_README.md`, `ARCHITECTURE.md`, `VARIANT.md` (cuando está presente) y los manifiestos JSON de la ejecución.
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - La búsqueda web realizada no devolvió enlaces relacionados con el modelo: los resultados correspondían a calendarios de torneos de golf (PGA Tour y ESPN) y no guardan relación con este repositorio.

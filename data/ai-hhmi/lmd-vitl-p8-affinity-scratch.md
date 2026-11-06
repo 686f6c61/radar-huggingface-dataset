@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lmd-vitl-p8-affinity-scratch` es un modelo de segmentación de imágenes 3D especializado en predicción de afinidades de vóxeles para la segmentación de neuronas en microscopía electrónica y de expansión. Lo desarrolla el equipo AI-HHMI y se distribuye a través de HuggingFace. El modelo resuelve un problema concreto del campo de la conectómica: transformar volúmenes de imagen en mapas de afinidad que permiten reconstruir neuronas individuales mediante algoritmos de watershed mutex.
+`lmd-vitl-p8-affinity-scratch` es un modelo de segmentación de imágenes 3D especializado en predicción de afinidades de vóxeles para la segmentación de neuronas en microscopía electrónica y de expansión. Lo desarrolla el equipo AI-HHMI y se distribuye a través de Hugging Face. El modelo resuelve un problema concreto del campo de la conectómica: transformar volúmenes de imagen en mapas de afinidad que permiten reconstruir neuronas individuales mediante algoritmos de watershed mutex.
 
 Arquitectónicamente es un híbrido: un codificador DINOv3 ViT-L adaptado a 3D (parches de 8³ vóxeles) acoplado a un decodificador UNETR. El codificador se inicializa desde `lmd-vitl-p8-simmim-scratch` (entrenado con SimMIM sobre el dataset LMD) y se afina de extremo a extremo junto al decodificador. El checkpoint publicado corresponde al paso 75.000 de un entrenamiento de 100.000 pasos, seleccionado por su rendimiento en el split de ajuste del benchmark del autor.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-hhmi/lmd-vitl-p8-affinity-scratch
+- Modelo en Hugging Face: https://huggingface.co/ai-hhmi/lmd-vitl-p8-affinity-scratch
 - Modelo base (codificador): https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-scratch
 - Variante con inicialización LVD: https://huggingface.co/ai-hhmi/lmd-vitl-p8-affinity-lvd
 - Codificador SimMIM desde LVD: https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-lvd

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mulemp/CreativeEdge` es un repositorio de modelo publicado en HuggingFace por el usuario `mulemp`. La informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, tamano (22,8 GB), fechas de creacion (1 de abril de 2026) y ultima actualizacion (24 de septiembre de 2026), etiqueta `region:us`, cero descargas y un "like". No se ha publicado ni la arquitectura, ni el numero de parametros, ni la longitud de contexto, ni la licencia, ni los idiomas soportados.
+`mulemp/CreativeEdge` es un repositorio de modelo publicado en Hugging Face por el usuario `mulemp`. La informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, tamano (22,8 GB), fechas de creacion (1 de abril de 2026) y ultima actualizacion (24 de septiembre de 2026), etiqueta `region:us`, cero descargas y un "like". No se ha publicado ni la arquitectura, ni el numero de parametros, ni la longitud de contexto, ni la licencia, ni los idiomas soportados.
 
-El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. Esto, junto con la ausencia de una model card publica con especificaciones, impide verificar el comportamiento real del modelo sin acceso previo al repositorio.
+El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. Esto, junto con la ausencia de una model card publica con especificaciones, impide verificar el comportamiento real del modelo sin acceso previo al repositorio.
 
 Por tanto, esta ficha recoge exclusivamente los datos verificables de los metadatos y marca de forma explicita como "no disponible" todo aquello que no puede confirmarse. No se han encontrado resultados de benchmarks, documentacion tecnica ni anuncios asociados al modelo en la informacion proporcionada.
 
@@ -18,10 +18,10 @@ Por tanto, esta ficha recoge exclusivamente los datos verificables de los metada
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el repositorio es de acceso restringido y requiere aceptar condiciones en HuggingFace) |
+| Licencia | no disponible (el repositorio es de acceso restringido y requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | no disponible (el tamano total del repositorio es de 22,8 GB) |
 | Autor | mulemp |
-| Identificador en HuggingFace | mulemp/CreativeEdge |
+| Identificador en Hugging Face | mulemp/CreativeEdge |
 | Pipeline declarado | no disponible |
 | Etiquetas | region:us |
 | Descargas | 0 |
@@ -75,7 +75,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MATH, MT-Bench, Arena Elo ni de ninguna 
 - Opciones de despliegue: no disponible. La eleccion de herramienta (vLLM, TGI, llama.cpp, Ollama, Transformers) depende del formato de pesos, que no se ha publicado.
 - Latencia y throughput estimados: no disponible.
 - Consideracion practica: el repositorio ocupa 22,8 GB, por lo que la descarga completa requiere ese espacio en disco, con independencia de la VRAM necesaria para la inferencia.
-- Consideracion practica: el acceso esta restringido, de modo que cualquier evaluacion de hardware exige previamente aceptar las condiciones del repositorio en HuggingFace.
+- Consideracion practica: el acceso esta restringido, de modo que cualquier evaluacion de hardware exige previamente aceptar las condiciones del repositorio en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -95,6 +95,6 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mulemp/CreativeEdge
+- Repositorio en Hugging Face: https://huggingface.co/mulemp/CreativeEdge
 - No se han encontrado en la busqueda web papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo.
 - No se dispone de enlace a model card extendida, informe tecnico ni tarjeta de evaluacion.

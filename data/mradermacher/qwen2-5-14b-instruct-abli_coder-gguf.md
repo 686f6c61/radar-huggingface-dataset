@@ -83,7 +83,7 @@ La comparacion directa es dificil porque este modelo es una fusion sin evaluacio
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/mradermacher/Qwen2.5-14B-Instruct-abli_coder-GGUF
+- Hugging Face (este modelo): https://huggingface.co/mradermacher/Qwen2.5-14B-Instruct-abli_coder-GGUF
 - Modelo base de la fusion: https://huggingface.co/NexesMess/Qwen2.5-14B-Instruct-abli_coder
 - Pagina de resumen de cuantizaciones de mradermacher: https://hf.tst.eu/model#Qwen2.5-14B-Instruct-abli_coder-GGUF
 - Repositorio de peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

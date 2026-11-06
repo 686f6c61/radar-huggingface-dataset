@@ -91,7 +91,7 @@ No disponible. La información proporcionada no incluye ningún otro modelo comp
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/hassanql/road-qwen36-35b-adapters
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/hassanql/road-qwen36-35b-adapters
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.6-35B-A3B (commit 995ad96eacd98c81ed38be0c5b274b04031597b0)
 - Scripts citados en la model card: train_qwen36_moe.py y eval_qwen36_moe.py (no se proporciona enlace ni ruta pública)
 - La búsqueda web realizada no devolvió ningún enlace relevante al modelo, al autor ni a su dominio de aplicación; los resultados obtenidos no guardan relación con este repositorio y se descartan.

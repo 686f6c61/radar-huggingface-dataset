@@ -93,7 +93,7 @@ No se puede establecer una comparativa cuantitativa con alternativas de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kstorm77/Qwen3.5-4B
+- Repositorio Hugging Face: https://huggingface.co/kstorm77/Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Revisión del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/tree/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
 - llama.cpp: https://github.com/ggml-org/llama.cpp

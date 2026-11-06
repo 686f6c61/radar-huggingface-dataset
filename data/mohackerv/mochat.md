@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mohackerv/mochat` es un repositorio publicado en HuggingFace por el usuario `mohackerv` bajo licencia Creative Commons Attribution 2.0 (cc-by-2.0). La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio fue creado el 1 de septiembre de 2026 y actualizado el mismo día, sin descargas ni valoraciones por parte de la comunidad.
+El modelo `mohackerv/mochat` es un repositorio publicado en Hugging Face por el usuario `mohackerv` bajo licencia Creative Commons Attribution 2.0 (cc-by-2.0). La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio fue creado el 1 de septiembre de 2026 y actualizado el mismo día, sin descargas ni valoraciones por parte de la comunidad.
 
-El nombre "MoChat" coincide con otros proyectos públicos, como la plataforma de comunicación para agentes de IA (mochat.io) o el modelo multimodal de comprensión de movimiento humano desarrollado por CSUBioGroup (también en HuggingFace). Sin embargo, no existe ninguna evidencia que relacione este repositorio con dichos proyectos. En el estado actual de la información, se trata de un repositorio vacío o sin documentar, por lo que no es posible determinar su naturaleza, finalidad ni capacidades.
+El nombre "MoChat" coincide con otros proyectos públicos, como la plataforma de comunicación para agentes de IA (mochat.io) o el modelo multimodal de comprensión de movimiento humano desarrollado por CSUBioGroup (también en Hugging Face). Sin embargo, no existe ninguna evidencia que relacione este repositorio con dichos proyectos. En el estado actual de la información, se trata de un repositorio vacío o sin documentar, por lo que no es posible determinar su naturaleza, finalidad ni capacidades.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mohackerv/mochat
+- Repositorio en Hugging Face: https://huggingface.co/mohackerv/mochat
 - Plataforma MoChat (no relacionada confirmada): https://mochat.io/
 - MoChat de CSUBioGroup (modelo multimodal, no relacionado confirmado): https://huggingface.co/CSUBioGroup/MoChat
 - Paper MoCha (síntesis de personajes parlantes, no relacionado confirmado): https://arxiv.org/html/2503.23307v1

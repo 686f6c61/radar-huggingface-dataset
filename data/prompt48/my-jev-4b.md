@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my-jev-4b es un ajuste fino (fine-tune) de Qwen/Qwen3.5-4B desarrollado por el usuario Prompt48 y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo generativo de proposito general: es un clasificador especializado de tipo "system one" que recibe un estado (`state`), una pregunta (`question`) y una lista cerrada de opciones (`options`), y devuelve exactamente una letra correspondiente a la opcion elegida. Su funcion es resolver tareas de decision y clasificacion en un solo paso, sin cadena de razonamiento.
+my-jev-4b es un ajuste fino (fine-tune) de Qwen/Qwen3.5-4B desarrollado por el usuario Prompt48 y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo de proposito general: es un clasificador especializado de tipo "system one" que recibe un estado (`state`), una pregunta (`question`) y una lista cerrada de opciones (`options`), y devuelve exactamente una letra correspondiente a la opcion elegida. Su funcion es resolver tareas de decision y clasificacion en un solo paso, sin cadena de razonamiento.
 
 El modelo tiene 4.659.865.088 parametros (unos 4,66 mil millones) y un repositorio de 9,3 GB en safetensors. Se entreno con Unsloth mediante LoRA (r=8, alpha=16) sobre el dataset abierto "new-v1" del proyecto tev1, compuesto por 37.840 ejemplos, en una unica epoca que consumio 282,2 minutos en una NVIDIA A40. Los datos de entrenamiento derivan de MultiNLI, BoolQ, Banking77, AG News y SST-5, mas tareas sinteticas de politica, enrutamiento y taxonomia de investigacion.
 
@@ -90,8 +90,8 @@ No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K u otros) en la info
 
 | Modelo | Parametros | Contexto | Accuracy (dev, 594 ej.) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| my-jev-4b | 4,66 B | no disponible | 87,2 % | apache-2.0 | HuggingFace (transformers, safetensors) |
-| Qwen/Qwen3.5-4B (base) | ~4 B | no disponible | 72,6 % | no indicada en la informacion disponible | HuggingFace |
+| my-jev-4b | 4,66 B | no disponible | 87,2 % | apache-2.0 | Hugging Face (transformers, safetensors) |
+| Qwen/Qwen3.5-4B (base) | ~4 B | no disponible | 72,6 % | no indicada en la informacion disponible | Hugging Face |
 | Otros clasificadores "jev" comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El modelo base Qwen3.5-4B es la unica referencia cuantitativa directa disponible. No se dispone de datos de otros clasificadores de decision del mismo tamano en la informacion proporcionada, por lo que la comparativa con alternativas externas queda como no disponible.
@@ -111,7 +111,7 @@ El modelo base Qwen3.5-4B es la unica referencia cuantitativa directa disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prompt48/my-jev-4b
+- Modelo en Hugging Face: https://huggingface.co/Prompt48/my-jev-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset tev1 "new-v1": https://github.com/togethercomputer/tev1
 - Unsloth: https://github.com/unslothai/unsloth

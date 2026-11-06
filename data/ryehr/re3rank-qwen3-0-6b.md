@@ -73,9 +73,9 @@ No se han publicado en la información disponible resultados desglosados por con
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RE3RANK-Qwen3-0.6B | 596 M | no disponible | Reranking por masa de atención sobre trazas de razonamiento | Apache-2.0 | HuggingFace y GitHub |
-| Qwen3-Embedding-8B (recuperador de primera etapa) | 8 B | no disponible | Embeddings densos para recuperación | no disponible en la información | HuggingFace |
-| Qwen3-0.6B (base) | 596 M | no disponible | Modelo generativo decoder-only | Apache-2.0 | HuggingFace |
+| RE3RANK-Qwen3-0.6B | 596 M | no disponible | Reranking por masa de atención sobre trazas de razonamiento | Apache-2.0 | Hugging Face y GitHub |
+| Qwen3-Embedding-8B (recuperador de primera etapa) | 8 B | no disponible | Embeddings densos para recuperación | no disponible en la información | Hugging Face |
+| Qwen3-0.6B (base) | 596 M | no disponible | Modelo generativo decoder-only | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de benchmarks.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryehr/RE3RANK-Qwen3-0.6B
+- Modelo en Hugging Face: https://huggingface.co/Ryehr/RE3RANK-Qwen3-0.6B
 - Repositorio de código: https://github.com/ryehr/RE3RANK
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE

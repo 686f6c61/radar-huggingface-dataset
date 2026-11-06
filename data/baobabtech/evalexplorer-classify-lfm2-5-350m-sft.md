@@ -83,8 +83,8 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evalexplorer-classify-lfm2.5-350m-sft | 350 M (base) + LoRA r=16 | 8192 tokens (ejemplo de uso) | Clasificacion documental a JSON | lfm1.0 | HuggingFace (adaptador PEFT) |
-| LiquidAI/LFM2.5-350M (base) | 350 M | No disponible | Modelo de lenguaje general | lfm1.0 | HuggingFace |
+| evalexplorer-classify-lfm2.5-350m-sft | 350 M (base) + LoRA r=16 | 8192 tokens (ejemplo de uso) | Clasificacion documental a JSON | lfm1.0 | Hugging Face (adaptador PEFT) |
+| LiquidAI/LFM2.5-350M (base) | 350 M | No disponible | Modelo de lenguaje general | lfm1.0 | Hugging Face |
 | Otros modelos comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baobabtech/evalexplorer-classify-lfm2.5-350m-sft
+- Modelo en Hugging Face: https://huggingface.co/baobabtech/evalexplorer-classify-lfm2.5-350m-sft
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Licencia del modelo base (LFM1.0): https://huggingface.co/LiquidAI/LFM2.5-350M/blob/main/LICENSE
 - Dataset de experimentos: https://huggingface.co/datasets/baobabtech/evalexplorer-classify-experiments

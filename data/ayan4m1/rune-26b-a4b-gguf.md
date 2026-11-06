@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ayan4m1/rune-26b-a4b-gguf | 26B (activos no confirmados) | 262k | Modelo de decision multimodal | apache-2.0 | GGUF en HuggingFace |
-| surogate/rune-26b-a4b-GGUF | 26B (activos no confirmados) | 262k | Modelo de decision multimodal | no disponible | GGUF en HuggingFace, endpoint en FriendliAI |
-| ReadyArt/Serenity-26B-A4B-GGUF | 26B-A4B | no disponible | no disponible | no disponible | GGUF en HuggingFace |
+| ayan4m1/rune-26b-a4b-gguf | 26B (activos no confirmados) | 262k | Modelo de decision multimodal | apache-2.0 | GGUF en Hugging Face |
+| surogate/rune-26b-a4b-GGUF | 26B (activos no confirmados) | 262k | Modelo de decision multimodal | no disponible | GGUF en Hugging Face, endpoint en FriendliAI |
+| ReadyArt/Serenity-26B-A4B-GGUF | 26B-A4B | no disponible | no disponible | no disponible | GGUF en Hugging Face |
 
 Los tres repositorios corresponden al mismo linaje de modelos: el de Surogate es el empaquetado de referencia del modelo original, el de ayan4m1 es una republicacion y Serenity parece un derivado o ajuste sobre la misma base. No se dispone de datos de rendimiento comparado entre ellos ni frente a alternativas de otros desarrolladores.
 

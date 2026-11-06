@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento de ninguno de los tres para establecer una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-e-50
+- Modelo en Hugging Face: https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-e-50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Dataset de calibracion (tensores de tokens): https://huggingface.co/jayzou3773/less-is-moe-s1-calibration-128-seq8192
 - Dataset de origen de la calibracion: https://huggingface.co/datasets/yentinglin/s1K-1.1-trl-format

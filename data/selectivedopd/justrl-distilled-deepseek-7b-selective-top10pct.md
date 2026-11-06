@@ -2,9 +2,9 @@
 
 ## Resumen
 
-JustRL-Distilled-DeepSeek-7b-Selective-Top10pct es un modelo de generacion de texto publicado en HuggingFace por el usuario SelectiveDOPD, con 7.615.616.512 parametros (aproximadamente 7,6 mil millones) y pesos en formato safetensors. La model card lo describe como un artefacto subido desde el experimento interno `justrl_deepseek_7b_JSD_rel_90_100`, dentro de los experimentos denominados BiDirect-OPD, y la rama `main` corresponde al checkpoint `global_step_300`. El repositorio incluye ademas 14 ramas con checkpoints intermedios, desde `global_step_20` hasta `global_step_280`.
+JustRL-Distilled-DeepSeek-7b-Selective-Top10pct es un modelo de generacion de texto publicado en Hugging Face por el usuario SelectiveDOPD, con 7.615.616.512 parametros (aproximadamente 7,6 mil millones) y pesos en formato safetensors. La model card lo describe como un artefacto subido desde el experimento interno `justrl_deepseek_7b_JSD_rel_90_100`, dentro de los experimentos denominados BiDirect-OPD, y la rama `main` corresponde al checkpoint `global_step_300`. El repositorio incluye ademas 14 ramas con checkpoints intermedios, desde `global_step_20` hasta `global_step_280`.
 
-El nombre del modelo sugiere un proceso de destilacion (posiblemente ligado a aprendizaje por refuerzo, por las siglas RL) sobre una base de 7B y una seleccion del 10 % superior de algun criterio, aunque la model card no documenta el procedimiento, los datos de entrenamiento ni la base exacta utilizada. Las etiquetas de HuggingFace indican `qwen2` como arquitectura, `text-generation` como pipeline y `conversational` como caso de uso, lo que apunta a un transformer decoder-only de tipo Qwen2 adaptado para dialogo; no obstante, existe una discrepancia entre esa etiqueta y el nombre del modelo, que alude a DeepSeek.
+El nombre del modelo sugiere un proceso de destilacion (posiblemente ligado a aprendizaje por refuerzo, por las siglas RL) sobre una base de 7B y una seleccion del 10 % superior de algun criterio, aunque la model card no documenta el procedimiento, los datos de entrenamiento ni la base exacta utilizada. Las etiquetas de Hugging Face indican `qwen2` como arquitectura, `text-generation` como pipeline y `conversational` como caso de uso, lo que apunta a un transformer decoder-only de tipo Qwen2 adaptado para dialogo; no obstante, existe una discrepancia entre esa etiqueta y el nombre del modelo, que alude a DeepSeek.
 
 La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el repositorio acumula 0 descargas y 0 likes en el momento de la consulta, no declara licencia ni idiomas, y no publica resultados de benchmarks. Se trata, por tanto, de un artefacto de investigacion sin validacion externa ni documentacion suficiente para un despliegue en produccion sin evaluacion previa por parte del equipo que lo adopte.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el re
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Etiqueta `qwen2` en HuggingFace (transformer decoder-only); no se detalla en la model card |
+| Arquitectura | Etiqueta `qwen2` en Hugging Face (transformer decoder-only); no se detalla en la model card |
 | Parametros totales | 7.615.616.512 (aprox. 7,6 B) |
 | Parametros activos | No aplica (no hay indicios de arquitectura MoE en la informacion disponible) |
 | Longitud de contexto | No disponible |
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el re
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no describe la arquitectura interna del modelo. La unica referencia tecnica es la etiqueta `qwen2` de HuggingFace, que corresponde a una familia de transformers decoder-only con atencion causal, normalizacion RMSNorm, activacion SwiGLU y atencion con query/key/value bias. El recuento de parametros (7,6 B) es coherente con un modelo denso de esa escala, pero no se confirma en la documentacion disponible ni se indica el numero de capas, la dimension oculta o el numero de cabezas de atencion.
+La informacion proporcionada no describe la arquitectura interna del modelo. La unica referencia tecnica es la etiqueta `qwen2` de Hugging Face, que corresponde a una familia de transformers decoder-only con atencion causal, normalizacion RMSNorm, activacion SwiGLU y atencion con query/key/value bias. El recuento de parametros (7,6 B) es coherente con un modelo denso de esa escala, pero no se confirma en la documentacion disponible ni se indica el numero de capas, la dimension oculta o el numero de cabezas de atencion.
 
 Respecto al entrenamiento, la model card unicamente indica que el modelo se subio desde el experimento `justrl_deepseek_7b_JSD_rel_90_100` dentro de los experimentos BiDirect-OPD, y que se conservan checkpoints cada 20 pasos hasta el paso 300. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la base sobre la que se entreno, ni si se aplicaron tecnicas de alineacion como RLHF, DPO u optimizacion por preferencias. El sufijo `JSD` del identificador interno podria corresponder a una divergencia de Jensen-Shannon, y `Selective-Top10pct` a una seleccion del 10 % superior de ejemplos o de tokens, pero se trata de interpretaciones del nombre y no de datos confirmados por el autor. No hay constancia de innovaciones tecnicas documentadas como decodificacion especulativa, atencion lineal o modos de razonamiento explicito.
 
@@ -87,7 +87,7 @@ La diferencia fundamental no es de capacidad teorica sino de trazabilidad: las t
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia: no se declara licencia en HuggingFace, por lo que el uso comercial queda en un limbo legal. Hay que contactar con el autor antes de cualquier despliegue productivo.
+- Ausencia de licencia: no se declara licencia en Hugging Face, por lo que el uso comercial queda en un limbo legal. Hay que contactar con el autor antes de cualquier despliegue productivo.
 - Ausencia de benchmarks: no hay ninguna medicion publica de calidad, razonamiento, codigo o matematicas. Cualquier afirmacion sobre su rendimiento seria especulativa.
 - Riesgo de alucinacion: no se han publicado evaluaciones de veracidad ni se documenta si hubo alineacion con preferencias humanas, por lo que se debe asumir una tasa de alucinacion desconocida y potencialmente alta.
 - Idiomas no declarados: no se especifica que idiomas soporta ni la calidad relativa entre ellos; en particular, no hay confirmacion de un buen rendimiento en castellano.
@@ -100,7 +100,7 @@ La diferencia fundamental no es de capacidad teorica sino de trazabilidad: las t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Distilled-DeepSeek-7b-Selective-Top10pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Distilled-DeepSeek-7b-Selective-Top10pct
 - Paper, blog o repositorio del autor: no disponible en la informacion proporcionada.
 - Demos o spaces asociados: no disponible en la informacion proporcionada.
 - Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con el modelo. Los unicos enlaces recuperados corresponden a directorios de institutos de secundaria de Brooklyn (publicschoolreview.com, high-schools.com, niche.com, greatschools.org) y no guardan relacion con este repositorio, por lo que no se incluyen.

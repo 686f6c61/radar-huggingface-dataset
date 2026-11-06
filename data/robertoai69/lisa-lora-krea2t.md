@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RobertoAi69/lisa-lora-krea2t es un adaptador LoRA (Low-Rank Adaptation) de tipo DreamBooth para el modelo de generacion de imagenes Krea 2. Lo publica el usuario RobertoAi69 en HuggingFace bajo licencia apache-2.0, con la libreria diffusers y un pipeline declarado de text-to-image. El adaptador se entreno sobre la variante Krea 2 RAW y las muestras publicadas se generaron aplicandolo sobre Krea 2 Turbo en 8 pasos de inferencia, por lo que su proposito es inyectar un concepto personalizado en una base de difusion ya existente en lugar de ofrecer un modelo generativo completo.
+RobertoAi69/lisa-lora-krea2t es un adaptador LoRA (Low-Rank Adaptation) de tipo DreamBooth para el modelo de generacion de imagenes Krea 2. Lo publica el usuario RobertoAi69 en Hugging Face bajo licencia apache-2.0, con la libreria diffusers y un pipeline declarado de text-to-image. El adaptador se entreno sobre la variante Krea 2 RAW y las muestras publicadas se generaron aplicandolo sobre Krea 2 Turbo en 8 pasos de inferencia, por lo que su proposito es inyectar un concepto personalizado en una base de difusion ya existente en lugar de ofrecer un modelo generativo completo.
 
 El mecanismo de activacion es un token disparador, `zxlisa7`, que debe incluirse en el prompt para invocar el concepto aprendido. La model card documenta tres ejemplos de uso (una pantera robotica en una ciudad ciberpunk, una bicicleta blanca en un vinedo toscano y un monolito cristalino en una nebula) y un fragmento de codigo con `Krea2Pipeline`, `num_inference_steps=8` y `guidance_scale=0.0`, coherente con el regimen de muestreo de la variante Turbo.
 
@@ -76,7 +76,7 @@ La informacion disponible no incluye otros LoRA comparables ni datos de rendimie
 
 | Modelo | Tipo | Parametros | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RobertoAi69/lisa-lora-krea2t | LoRA DreamBooth sobre Krea 2 | no disponible (repo 1,0 GB) | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| RobertoAi69/lisa-lora-krea2t | LoRA DreamBooth sobre Krea 2 | no disponible (repo 1,0 GB) | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | krea/Krea-2-Raw | Modelo de difusion base | no disponible | no disponible | no disponible en la informacion proporcionada | Referenciado como modelo base |
 | krea/Krea-2-Turbo | Modelo de difusion base (destilado, 8 pasos) | no disponible | no disponible | no disponible en la informacion proporcionada | Referenciado en el ejemplo de uso |
 
@@ -97,7 +97,7 @@ No se dispone de datos sobre otros adaptadores LoRA de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobertoAi69/lisa-lora-krea2t
+- Modelo en Hugging Face: https://huggingface.co/RobertoAi69/lisa-lora-krea2t
 - Modelo base de entrenamiento (Krea 2 RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado en las muestras (Krea 2 Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers/index

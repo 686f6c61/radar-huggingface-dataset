@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-nokev_nonamed_lt2026 | LoRA r=16 sobre 7,6B | no disponible | Clasificación de riesgo MIT (IncidentBench) | other | HuggingFace, 16 descargas |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | no disponible en la informacion | Propósito general, instrucciones | no disponible en la informacion | HuggingFace |
+| incidentbench-nokev_nonamed_lt2026 | LoRA r=16 sobre 7,6B | no disponible | Clasificación de riesgo MIT (IncidentBench) | other | Hugging Face, 16 descargas |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | no disponible en la informacion | Propósito general, instrucciones | no disponible en la informacion | Hugging Face |
 | Otros brazos de IncidentBench | no disponible | no disponible | Variantes del mismo clasificador | no disponible | Referenciados en el informe del proyecto, no detallados aquí |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_lt2026
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_lt2026
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Referencias internas del repositorio: `data_manifest.json`, `train_manifest.json` y `train/build_data.py` (transformación `nonamed`), citadas en la model card.
 - Informe de IncidentBench: mencionado en la model card sin enlace directo disponible en la información proporcionada.

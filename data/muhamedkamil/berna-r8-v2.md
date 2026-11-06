@@ -111,12 +111,12 @@ No se identifican en la informacion disponible modelos de terceros directamente 
 - Formato y despliegue sin especificar: no se indica el formato de pesos ni los runtimes soportados, lo que complica su integracion en pipelines existentes.
 - Olvido parcial demostrado: el propio experimento H2 documenta una degradacion de la loss en ingles de 4,078 a 4,481 tras el fine-tuning en aleman (F_eng = 0,403), evidencia de que el ajuste posterior afecta al conocimiento previo.
 - Sesgos no evaluados: no hay analisis de sesgos demograficos, culturales o linguisticos en la informacion disponible.
-- Madurez temprana: el modelo tiene 0 descargas y 0 likes en HuggingFace y la version previa R8 v1 se detuvo por inestabilidad, lo que indica un desarrollo en fase experimental.
+- Madurez temprana: el modelo tiene 0 descargas y 0 likes en Hugging Face y la version previa R8 v1 se detuvo por inestabilidad, lo que indica un desarrollo en fase experimental.
 - Fechas de publicacion: la model card esta fechada en 2026 (creacion 2026-10-12), dato relevante al contextualizar su madurez frente a otros modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhamedkamil/berna-r8-v2
+- Modelo en Hugging Face: https://huggingface.co/muhamedkamil/berna-r8-v2
 - Modelo relacionado del mismo autor (berna-prototype-162m): https://huggingface.co/muhamedkamil/berna-prototype-162m
 - Listado de modelos con la etiqueta berna: https://huggingface.co/models?other=berna
 - Perfil de GitHub del autor: https://github.com/MuhamedKamil

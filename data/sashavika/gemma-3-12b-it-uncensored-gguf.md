@@ -81,10 +81,10 @@ La comparativa debe leerse con cautela: los datos de los modelos alternativos pr
 - Contexto: la model card no especifica la ventana efectiva; no debe asumirse la del modelo base sin verificacion empirica.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion de la comunidad, sin issues resueltos y sin garantia de mantenimiento.
 - Formato unico GGUF: no apto para pipelines de alto throughput con vLLM/TGI sin conversion previa a safetensors.
-- La atribucion de curacion a BrainDAO en la model card no coincide con el autor del repositorio en HuggingFace (SashaVika); conviene tratar la procedencia con precaucion.
+- La atribucion de curacion a BrainDAO en la model card no coincide con el autor del repositorio en Hugging Face (SashaVika); conviene tratar la procedencia con precaucion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SashaVika/gemma-3-12b-it-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SashaVika/gemma-3-12b-it-uncensored-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a esta derivacion concreta.

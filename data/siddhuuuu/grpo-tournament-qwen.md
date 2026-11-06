@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Siddhuuuu/grpo-tournament-qwen` es un ajuste fino del modelo instructivo `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, publicado por el usuario Siddhuuuu en HuggingFace. Se trata de un modelo derivado de Qwen2.5-1.5B-Instruct, la variante pequeña de la familia Qwen2.5 de Alibaba, con arquitectura transformer decoder-only de aproximadamente 1.500 millones de parámetros. El repositorio pesa 0,1 GB y contiene pesos en formato safetensors, cargables con la librería `transformers`.
+`Siddhuuuu/grpo-tournament-qwen` es un ajuste fino del modelo instructivo `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, publicado por el usuario Siddhuuuu en Hugging Face. Se trata de un modelo derivado de Qwen2.5-1.5B-Instruct, la variante pequeña de la familia Qwen2.5 de Alibaba, con arquitectura transformer decoder-only de aproximadamente 1.500 millones de parámetros. El repositorio pesa 0,1 GB y contiene pesos en formato safetensors, cargables con la librería `transformers`.
 
 La particularidad del modelo es su procedimiento de entrenamiento: se ha ajustado mediante GRPO (Group Relative Policy Optimization), la técnica de aprendizaje por refuerzo introducida en DeepSeekMath (arXiv:2402.03300) y popularizada posteriormente por DeepSeek-R1. El entrenamiento se ha ejecutado con TRL 0.24.0 y con el stack de Unsloth, según la model card. El nombre "tournament" sugiere una variante de GRPO con comparaciones por torneo, aunque la model card no documenta la receta exacta ni los datos empleados.
 
@@ -21,7 +21,7 @@ Su relevancia es limitada pero concreta: es un ejemplo reproducible de cómo apl
 | Licencia | No disponible. La model card incluye el campo `licence: license`, que es un marcador de posicion sin valor legal. El modelo base Qwen2.5 se distribuye bajo Apache-2.0, pero el autor no ha declarado licencia para este derivado |
 | Formato de pesos | safetensors (libreria `transformers`) |
 
-Datos adicionales del repositorio: tamano del repo 0,1 GB; creado el 2026-09-21; ultima actualizacion el 2026-09-21; 0 descargas; 1 like; tag `endpoints_compatible` (compatible con Inference Endpoints de HuggingFace); region: US.
+Datos adicionales del repositorio: tamano del repo 0,1 GB; creado el 2026-09-21; ultima actualizacion el 2026-09-21; 0 descargas; 1 like; tag `endpoints_compatible` (compatible con Inference Endpoints de Hugging Face); region: US.
 
 ## Arquitectura y entrenamiento
 
@@ -35,7 +35,7 @@ El ajuste se realizó con GRPO, una variante de policy gradient sin modelo crít
 - Razonamiento basico y respuestas de varios pasos, presumiblemente reforzado por el ajuste con GRPO, aunque sin datos publicados que lo cuantifiquen.
 - Generacion de codigo y resolucion de problemas matematicos sencillos, capacidades heredadas de Qwen2.5-1.5B-Instruct y potencialmente moduladas por el RL aplicado.
 - Uso mediante `pipeline("text-generation")` de Transformers con mensajes en formato de rol (`{"role": "user", "content": ...}`), segun el ejemplo de la model card.
-- Compatibilidad declarada con Inference Endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad declarada con Inference Endpoints de Hugging Face (tag `endpoints_compatible`).
 - Soporte de tool calling, agentes, vision, audio, modo thinking explicito o decodificacion especulativa: no disponible en la informacion proporcionada. No hay ninguna declaracion al respecto en la model card.
 - Capacidades multilingues: no disponible. No se especifica que idiomas conserva el ajuste.
 
@@ -46,7 +46,7 @@ El ajuste se realizó con GRPO, una variante de policy gradient sin modelo crít
 - Generacion de respuestas conversacionales ligeras: para prototipos de chatbot con presupuesto de computo muy bajo, donde la latencia y el coste por token importan mas que la calidad punta.
 - Evaluacion comparativa de tecnicas de RL: util como punto de control intermedio frente al modelo base sin ajustar, para medir si el RL mejora el formato, la concision o la adherencia a instrucciones.
 - Investigacion sobre funciones de recompensa: el modelo permite iterar sobre recompensas programaticas (por ejemplo, verificadores de respuesta correcta) y observar el comportamiento resultante en un modelo pequeño y rapido de evaluar.
-- Demostraciones y docencia: adecuado para ilustrar en clase o en un taller como se publica un modelo ajustado con GRPO en HuggingFace y se consume con `transformers.pipeline`.
+- Demostraciones y docencia: adecuado para ilustrar en clase o en un taller como se publica un modelo ajustado con GRPO en Hugging Face y se consume con `transformers.pipeline`.
 - Base para ajustes posteriores (SFT o DPO): puede actuar como punto de partida de una cadena de experimentos, siempre que se resuelva antes la ambiguedad de licencia.
 
 En ningun caso se recomienda su uso directo en atencion al cliente, generacion de codigo en produccion o cualquier aplicacion con requisitos de fiabilidad, dado que no hay benchmarks, ni licencia clara, ni documentacion de datos de entrenamiento.
@@ -62,7 +62,7 @@ La model card no incluye ninguna tabla de evaluacion (MMLU, GSM8K, HumanEval, MA
 - VRAM estimada para inferencia: alrededor de 1-1,5 GB en cuantizacion de 4 bits y aproximadamente 3-4 GB en fp16/bf16 (solo pesos, sin cache KV), partiendo de un modelo de 1,5B parametros. Son estimaciones de orden de magnitud, no medidas publicadas para este repositorio.
 - GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM. Para fp16 son suficientes una RTX 3060, RTX 4060, RTX 2070 o superiores; para lotes grandes o contextos largos conviene una RTX 3090, RTX 4090, L4 o A10. GPU de datacenter como A100 o H100 solo tienen sentido para entrenamiento o para servir muchas replicas en paralelo, no para inferencia individual.
 - Compatibilidad con GPU de consumo: si. El modelo cabe holgadamente en GPUs de consumo con 8 GB o mas, e incluso en tarjetas de 6 GB si se mantiene la cuantizacion de 4 bits del modelo base.
-- Opciones de despliegue: `transformers` con `pipeline` (documentado en la model card), Inference Endpoints de HuggingFace (tag `endpoints_compatible`), y en principio vLLM o TGI si los pesos son completos y compatibles con el config de Qwen2.5. Para llama.cpp u Ollama seria necesario convertir previamente a GGUF, ya que el repositorio no publica ese formato.
+- Opciones de despliegue: `transformers` con `pipeline` (documentado en la model card), Inference Endpoints de Hugging Face (tag `endpoints_compatible`), y en principio vLLM o TGI si los pesos son completos y compatibles con el config de Qwen2.5. Para llama.cpp u Ollama seria necesario convertir previamente a GGUF, ya que el repositorio no publica ese formato.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones. Como referencia orientativa de la clase de modelo (1,5B en fp16 sobre GPU moderna), cabria esperar decenas de tokens por segundo en una unica GPU de consumo, pero es una extrapolacion, no un dato del repositorio.
 - Advertencia sobre el peso del repositorio: el repo ocupa solo 0,1 GB, una cifra muy inferior a los aproximadamente 3 GB que ocuparian pesos completos de 1,5B en bf16 e incluso por debajo de lo esperable para pesos en 4 bits (en torno a 1 GB). Esto sugiere que el contenido publicado podria ser un adaptador LoRA o un conjunto parcial de tensores. Conviene inspeccionar el listado de ficheros del repositorio antes de asumir que se puede cargar como modelo completo con `from_pretrained`.
 
@@ -97,7 +97,7 @@ Diferencias clave frente a las alternativas: los cuatro modelos de referencia pu
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Siddhuuuu/grpo-tournament-qwen
+- Hugging Face (modelo): https://huggingface.co/Siddhuuuu/grpo-tournament-qwen
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

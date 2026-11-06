@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Riand-alfa/Klasifikasi_Informatif` es un clasificador alojado en HuggingFace bajo la licencia Apache 2.0. Su nombre sugiere que está orientado a tareas de clasificación de textos informativos, aunque la model card no incluye ninguna descripción técnica, arquitectura, ni detalles de entrenamiento. El repositorio carece de archivos de pesos, configuración o documentación adicional, por lo que no es posible determinar su arquitectura, tamaño, ni capacidades reales.
+El modelo `Riand-alfa/Klasifikasi_Informatif` es un clasificador alojado en Hugging Face bajo la licencia Apache 2.0. Su nombre sugiere que está orientado a tareas de clasificación de textos informativos, aunque la model card no incluye ninguna descripción técnica, arquitectura, ni detalles de entrenamiento. El repositorio carece de archivos de pesos, configuración o documentación adicional, por lo que no es posible determinar su arquitectura, tamaño, ni capacidades reales.
 
 La relevancia de este modelo es, por ahora, nula desde un punto de vista práctico: no tiene descargas, ni likes, ni pipeline definido, y la información disponible es insuficiente para cualquier uso en producción. Se trata de un repositorio vacío o en fase muy temprana de desarrollo. Cualquier evaluación técnica rigurosa es imposible con los datos actuales.
 
@@ -63,4 +63,4 @@ No disponible. Al no existir información sobre arquitectura, tamaño o rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Riand-alfa/Klasifikasi_Informatif
+- Repositorio en Hugging Face: https://huggingface.co/Riand-alfa/Klasifikasi_Informatif

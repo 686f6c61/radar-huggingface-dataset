@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ward-osint-14b es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario Dennis1315 en HuggingFace. A pesar de que su identificador incluye la etiqueta "14b", los datos reales de los pesos en safetensors indican 9.653.104.368 parametros (aproximadamente 9,65 mil millones), por lo que el nombre no se corresponde con el tamano real del modelo. Esta etiquetado con la arquitectura qwen3_5 y su pipeline es image-text-to-text, es decir, es un modelo multimodal que acepta texto e imagenes como entrada.
+ward-osint-14b es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario Dennis1315 en Hugging Face. A pesar de que su identificador incluye la etiqueta "14b", los datos reales de los pesos en safetensors indican 9.653.104.368 parametros (aproximadamente 9,65 mil millones), por lo que el nombre no se corresponde con el tamano real del modelo. Esta etiquetado con la arquitectura qwen3_5 y su pipeline es image-text-to-text, es decir, es un modelo multimodal que acepta texto e imagenes como entrada.
 
-Segun la model card, el modelo se entreno con Unsloth y la libreria TRL de HuggingFace, lo que permitio un entrenamiento "2x mas rapido" segun el autor. La licencia declarada es Apache 2.0 y el unico idioma soportado es el ingles (en).
+Segun la model card, el modelo se entreno con Unsloth y la libreria TRL de Hugging Face, lo que permitio un entrenamiento "2x mas rapido" segun el autor. La licencia declarada es Apache 2.0 y el unico idioma soportado es el ingles (en).
 
 La informacion publicada es muy escasa: no se detallan datos de entrenamiento, composicion del dataset, longitud de contexto, benchmarks ni casos de uso. El nombre "ward-osint" sugiere una posible orientacion a tareas de OSINT (inteligencia de fuentes abiertas), pero esto no esta documentado en la model card. Con 0 descargas y 0 likes en el momento de la consulta, es un modelo recien publicado y sin validacion externa conocida.
 
@@ -28,7 +28,7 @@ La informacion publicada es muy escasa: no se detallan datos de entrenamiento, c
 
 No se dispone de informacion detallada sobre la arquitectura interna mas alla de la etiqueta qwen3_5 y del hecho de que el pipeline es image-text-to-text, lo que implica un modelo multimodal con capacidad de procesar imagenes y texto. El modelo es un finetune del checkpoint Qwen/Qwen3.5-9B, por lo que hereda la arquitectura del modelo base, pero no se publican sus detalles tecnicos (numero de capas, dimensiones, mecanismo de atencion ni configuracion del codificador visual).
 
-En cuanto al entrenamiento, la model card indica unicamente que se realizo con Unsloth y la libreria TRL de HuggingFace, lo que permitio un entrenamiento "2x mas rapido". No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni las tecnicas de ajuste empleadas (LoRA, QLoRA u otras). Tampoco se documentan innovaciones tecnicas adicionales.
+En cuanto al entrenamiento, la model card indica unicamente que se realizo con Unsloth y la libreria TRL de Hugging Face, lo que permitio un entrenamiento "2x mas rapido". No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni las tecnicas de ajuste empleadas (LoRA, QLoRA u otras). Tampoco se documentan innovaciones tecnicas adicionales.
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ La comparacion de rendimiento no es posible porque no se han publicado resultado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dennis1315/ward-osint-14b
+- Modelo en Hugging Face: https://huggingface.co/Dennis1315/ward-osint-14b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl

@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Pruned-108B-GGUF (este) | ~107B | No disponible | No disponible | GGUF | HuggingFace |
-| DeepSeek-R1 (original) | 671B (MoE, 37B activos) | 128K | MIT | safetensors, GGUF | HuggingFace |
-| DeepSeek-R1-Distill-Llama-70B | 70B | 128K | MIT (derivado de Llama) | safetensors, GGUF | HuggingFace |
-| Qwen2.5-72B-Instruct | 72B | 128K | Apache 2.0 (mayoría) | safetensors, GGUF | HuggingFace |
+| DeepSeek-R1-Pruned-108B-GGUF (este) | ~107B | No disponible | No disponible | GGUF | Hugging Face |
+| DeepSeek-R1 (original) | 671B (MoE, 37B activos) | 128K | MIT | safetensors, GGUF | Hugging Face |
+| DeepSeek-R1-Distill-Llama-70B | 70B | 128K | MIT (derivado de Llama) | safetensors, GGUF | Hugging Face |
+| Qwen2.5-72B-Instruct | 72B | 128K | Apache 2.0 (mayoría) | safetensors, GGUF | Hugging Face |
 
 La comparación con DeepSeek-R1 original es la más directa: este modelo podado reduce el tamaño en ~6x a costa de una calidad presumiblemente inferior, pero permite despliegue local. Frente a los distill de 70B, ofrece más parámetros pero con una licencia incierta y sin benchmarks publicados. No se dispone de datos de rendimiento comparativo para esta versión podada.
 
@@ -92,7 +92,7 @@ La comparación con DeepSeek-R1 original es la más directa: este modelo podado 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/DeepSeek-R1-Pruned-108B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/DeepSeek-R1-Pruned-108B-GGUF
 - Modelo base: https://huggingface.co/ubicloud/DeepSeek-R1-Pruned-108B
 - Página de overview del autor: https://hf.tst.eu/model#DeepSeek-R1-Pruned-108B-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

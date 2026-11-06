@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffu-moss-hand-pahlman | LoRA sobre DiT text-to-image | no disponible (adaptador) | no disponible | Apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| MOSS-Image-Base (OpenMOSS-Team) | DiT text-to-image base | no disponible | no disponible | Apache-2.0 (segun el adaptador) | HuggingFace |
+| diffu-moss-hand-pahlman | LoRA sobre DiT text-to-image | no disponible (adaptador) | no disponible | Apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| MOSS-Image-Base (OpenMOSS-Team) | DiT text-to-image base | no disponible | no disponible | Apache-2.0 (segun el adaptador) | Hugging Face |
 | Alternativas de generacion de manuscritos sinteticos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de otros adaptadores o modelos comparables de generacion de escritura manuscrita historica con etiquetas ALTO/PAGE.
@@ -83,6 +83,6 @@ No se dispone en la informacion proporcionada de otros adaptadores o modelos com
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Gabriel/diffu-moss-hand-pahlman
+- Hugging Face del adaptador: https://huggingface.co/Gabriel/diffu-moss-hand-pahlman
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Proyecto diffu: https://github.com/Borg93/diffu2

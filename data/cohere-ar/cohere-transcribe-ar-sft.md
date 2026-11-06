@@ -4,7 +4,7 @@
 
 Cohere-AR/cohere-transcribe-ar-sft es un modelo de reconocimiento automatico del habla (ASR) especializado en arabe e ingles, desarrollado por Cohere-AR como ajuste fino supervisado (SFT) del modelo base CohereLabs/cohere-transcribe-arabic-07-2026. Con 2.065.770.752 parametros (aproximadamente 2B), se distribuye en formato safetensors bajo la libreria transformers con pipeline `automatic-speech-recognition`. Su interes principal radica en el enfoque explicito en code-switching arabe-ingles y en dominios de telefonia, un escenario donde la mayoria de sistemas ASR genericos pierden precision al alternar idiomas dentro de una misma locucion.
 
-El modelo se publica en un contexto donde la familia Cohere Transcribe ha ganado traccion: la variante cohere-transcribe-03-2026 figura como primera en el Open ASR Leaderboard con un WER medio de 5,42 segun datos de marzo de 2026. Esta version afinada para arabe hereda esa arquitectura y anade especializacion dialectal y de dominio telefonico, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo se publica en un contexto donde la familia Cohere Transcribe ha ganado traccion: la variante cohere-transcribe-03-2026 figura como primera en el Open ASR Leaderboard con un WER medio de 5,42 segun datos de marzo de 2026. Esta version afinada para arabe hereda esa arquitectura y anade especializacion dialectal y de dominio telefonico, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 No se dispone de informacion publica sobre el proceso de entrenamiento, composicion del dataset ni resultados de benchmarks especificos de esta variante SFT. La ficha refleja unicamente los datos verificables del repositorio y las referencias cruzadas disponibles.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cohere-AR/cohere-transcribe-ar-sft | ~2,07B | no disponible | ar, en (code-switching) | no disponible | Gated en HuggingFace |
-| CohereLabs/cohere-transcribe-arabic-07-2026 | no disponible | no disponible | arabe | no disponible | Modelo base, HuggingFace |
+| Cohere-AR/cohere-transcribe-ar-sft | ~2,07B | no disponible | ar, en (code-switching) | no disponible | Gated en Hugging Face |
+| CohereLabs/cohere-transcribe-arabic-07-2026 | no disponible | no disponible | arabe | no disponible | Modelo base, Hugging Face |
 | CohereLabs/cohere-transcribe-03-2026 | ~2B | no disponible | no disponible | no disponible | Abierto, con GGUF de terceros |
 | Voxtral (variante 4B, citada en EVA-Bench) | ~4B | no disponible | no disponible | no disponible | no disponible |
 
@@ -72,7 +72,7 @@ La comparativa se limita a los datos publicos disponibles; no se han encontrado 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede retrasar la integracion en produccion.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede retrasar la integracion en produccion.
 - Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar las condiciones antes de desplegar.
 - Sin benchmarks publicados: no hay evidencia cuantitativa del rendimiento de esta variante frente al modelo base ni frente a alternativas.
 - Cobertura limitada a arabe e ingles: no se ha documentado soporte de otros idiomas ni de dialectos especificos.
@@ -83,7 +83,7 @@ La comparativa se limita a los datos publicos disponibles; no se han encontrado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft
+- Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
 - Pesos GGUF de la familia (variante 03-2026): https://huggingface.co/cstr/cohere-transcribe-03-2026-GGUF
 - EVA-Bench, framework de evaluacion de voz (referencia a Cohere-transcribe): https://aclanthology.org/2026.findings-emnlp.2182.pdf

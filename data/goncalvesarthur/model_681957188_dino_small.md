@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_681957188_dino_small`, publicado por el usuario `goncalvesarthur` en HuggingFace, es una implementación a escala pequeña de la arquitectura DINO (self-DIstillation with NO labels) orientada a tareas de aprendizaje contrastivo. DINO es un framework de aprendizaje autosupervisado desarrollado originalmente por Meta AI Research (FAIR) para aprender representaciones visuales robustas sin necesidad de etiquetas manuales, mediante un mecanismo de destilación entre un profesor y un estudiante.
+El modelo `model_681957188_dino_small`, publicado por el usuario `goncalvesarthur` en Hugging Face, es una implementación a escala pequeña de la arquitectura DINO (self-DIstillation with NO labels) orientada a tareas de aprendizaje contrastivo. DINO es un framework de aprendizaje autosupervisado desarrollado originalmente por Meta AI Research (FAIR) para aprender representaciones visuales robustas sin necesidad de etiquetas manuales, mediante un mecanismo de destilación entre un profesor y un estudiante.
 
 El repositorio contiene un único archivo Python (`model_681957188_dino_small.py`) que implementa la arquitectura con varias modificaciones técnicas: atención grouped query (GQA), estrategia de fusión tipo Tucker, activación GELU-tanh, normalización por lotes (batch norm), inicialización Kaiming, optimizador RMSprop y programador de tasa de aprendizaje exponencial. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas.
 
@@ -47,7 +47,7 @@ No se proporcionan datos sobre el proceso de entrenamiento: no se indica el núm
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni ninguna otra métrica de rendimiento. El modelo no tiene descargas ni likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni ninguna otra métrica de rendimiento. El modelo no tiene descargas ni likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Requisitos de hardware
 
@@ -65,7 +65,7 @@ La comparativa se establece con las implementaciones de referencia de DINO de Me
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **model_681957188_dino_small** | no disponible | no disponible | DINO (small, GQA, Tucker, GELU-tanh) | MIT | Código fuente en HuggingFace |
+| **model_681957188_dino_small** | no disponible | no disponible | DINO (small, GQA, Tucker, GELU-tanh) | MIT | Código fuente en Hugging Face |
 | **DINOv2 (ViT-S)** | 86M | 300×300 px | Vision Transformer autosupervisado | Apache 2.0 | Pesos y código en HF/GitHub |
 | **DINO original (ViT-S)** | 22M | 224×224 px | Vision Transformer autosupervisado | Apache 2.0 | Pesos y código en GitHub |
 
@@ -84,5 +84,5 @@ Nota: los datos de DINOv2 y DINO original provienen de la documentación oficial
 
 ## Enlaces
 
-- [HuggingFace: goncalvesarthur/model_681957188_dino_small](https://huggingface.co/goncalvesarthur/model_681957188_dino_small)
+- [Hugging Face: goncalvesarthur/model_681957188_dino_small](https://huggingface.co/goncalvesarthur/model_681957188_dino_small)
 - [GitHub: facebookresearch/dinov2](https://github.com/facebookresearch/dinov2) — implementación de referencia de DINOv2 (Meta AI)

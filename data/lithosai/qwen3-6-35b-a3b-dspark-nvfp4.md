@@ -84,10 +84,10 @@ El propio autor advierte que estas comparaciones son finitas y cualifican la con
 
 | Modelo | Tipo | Parametros | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LithosAI/Qwen3.6-35B-A3B-DSpark-NVFP4 | Cabeza borrador DSpark | 888.545.025 | NVFP4 weight-only | safetensors fragmentado | apache-2.0 | HuggingFace |
+| LithosAI/Qwen3.6-35B-A3B-DSpark-NVFP4 | Cabeza borrador DSpark | 888.545.025 | NVFP4 weight-only | safetensors fragmentado | apache-2.0 | Hugging Face |
 | Borrador BF16 de referencia (pipeline LMK) | Cabeza borrador DSpark | no disponible | BF16 | no disponible | no disponible | interno del motor de validacion |
-| RedHatAI/Qwen3.6-35B-A3B-speculator.dspark | Especulador DSpark | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| nvidia/Qwen3.6-35B-A3B-NVFP4 | Modelo objetivo MoE | ~35B totales, ~3B activos | NVFP4 | safetensors | no disponible | HuggingFace |
+| RedHatAI/Qwen3.6-35B-A3B-speculator.dspark | Especulador DSpark | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| nvidia/Qwen3.6-35B-A3B-NVFP4 | Modelo objetivo MoE | ~35B totales, ~3B activos | NVFP4 | safetensors | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos mas alla de las mediciones internas del autor frente a su propio borrador BF16.
 
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos mas alla d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LithosAI/Qwen3.6-35B-A3B-DSpark-NVFP4
+- Hugging Face: https://huggingface.co/LithosAI/Qwen3.6-35B-A3B-DSpark-NVFP4
 - Modelo objetivo: https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4
 - LMK (Lithos Metal Kernels): https://github.com/jiazhihao/mpk-apple
 - Instrucciones de build del motor: https://github.com/jiazhihao/mpk-apple/blob/3388ea81b3cf77758b285370fa0b8ba814236a3b/docs/porting.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `techsword/wav2vec2-base-english-librispeech730h` es un checkpoint de preentrenamiento de Wav2Vec2 base convertido al formato de HuggingFace. Fue desarrollado por el usuario `techsword`, que lo obtuvo a partir de un checkpoint de Fairseq (concretamente `checkpoint_best`, con unas 85.000 actualizaciones) y lo convirtió utilizando el convertidor oficial de `transformers`, verificando la conversión mediante comprobaciones a nivel de pesos y comparación del forward pass contra el modelo original de Fairseq.
+El modelo `techsword/wav2vec2-base-english-librispeech730h` es un checkpoint de preentrenamiento de Wav2Vec2 base convertido al formato de Hugging Face. Fue desarrollado por el usuario `techsword`, que lo obtuvo a partir de un checkpoint de Fairseq (concretamente `checkpoint_best`, con unas 85.000 actualizaciones) y lo convirtió utilizando el convertidor oficial de `transformers`, verificando la conversión mediante comprobaciones a nivel de pesos y comparación del forward pass contra el modelo original de Fairseq.
 
 El modelo está diseñado para la tarea de extracción de características de audio, y fue preentrenado sobre el subconjunto de 730 horas del corpus LibriSpeech en inglés. Su arquitectura es un Wav2Vec2 base, que combina una red convolucional con un transformer, y cuenta con un total de 95.044.608 parámetros. Aunque no es un modelo generativo ni un LLM, resulta relevante como modelo de partida para experimentos de análisis de representaciones de voz, como los descritos en el repositorio de tone-probe del autor.
 
@@ -23,7 +23,7 @@ El modelo está diseñado para la tarea de extracción de características de au
 
 El modelo sigue la arquitectura Wav2Vec2 original, presentada en 2020. Esta arquitectura utiliza una red convolucional para procesar la señal de audio cruda y extraer representaciones de características, que posteriormente son procesadas por capas transformer. El preentrenamiento es auto-supervisado y se basa en una pérdida de contraste sobre características de audio cuantificadas.
 
-El modelo fue preentrenado en el subconjunto de 730 horas de LibriSpeech, un corpus de audiolibros en inglés. El checkpoint de Fairseq se convirtió a formato HuggingFace mediante el convertidor oficial de la librería `transformers`, y se verificó su equivalencia a nivel de pesos y de resultados en un forward pass. No se menciona ningún tipo de ajuste posterior como RLHF o DPO, ya que se trata de un modelo de preentrenamiento sin tareas de lenguaje.
+El modelo fue preentrenado en el subconjunto de 730 horas de LibriSpeech, un corpus de audiolibros en inglés. El checkpoint de Fairseq se convirtió a formato Hugging Face mediante el convertidor oficial de la librería `transformers`, y se verificó su equivalencia a nivel de pesos y de resultados en un forward pass. No se menciona ningún tipo de ajuste posterior como RLHF o DPO, ya que se trata de un modelo de preentrenamiento sin tareas de lenguaje.
 
 ## Capacidades
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| techsword/wav2vec2-base-english-librispeech730h | 95.044.608 | LibriSpeech 730h | Apache-2.0 | HuggingFace |
-| facebook/wav2vec2-base | 95.044.608 | LibriSpeech 960h | Apache-2.0 | HuggingFace |
-| facebook/wav2vec2-large-960h | ~317M | LibriSpeech 960h | Apache-2.0 | HuggingFace |
+| techsword/wav2vec2-base-english-librispeech730h | 95.044.608 | LibriSpeech 730h | Apache-2.0 | Hugging Face |
+| facebook/wav2vec2-base | 95.044.608 | LibriSpeech 960h | Apache-2.0 | Hugging Face |
+| facebook/wav2vec2-large-960h | ~317M | LibriSpeech 960h | Apache-2.0 | Hugging Face |
 
 El rendimiento comparado no esta disponible en la informacion proporcionada. La diferencia principal frente al modelo original de Facebook es el corpus de preentrenamiento (730 horas frente a 960 horas) y que este checkpoint ha sido convertido desde Fairseq y verificado.
 

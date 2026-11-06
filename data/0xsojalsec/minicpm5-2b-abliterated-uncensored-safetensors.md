@@ -83,7 +83,7 @@ La unica comparacion verificable con los datos aportados es frente al modelo bas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSojalSec/MiniCPM5-2B-Abliterated-Uncensored-Safetensors
+- Repositorio Hugging Face: https://huggingface.co/0xSojalSec/MiniCPM5-2B-Abliterated-Uncensored-Safetensors
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Conversion GGUF referenciada por el autor: mondk/MiniCPM5-2B-Abliterated-Uncensored-GGUF (URL no disponible en la informacion proporcionada)
 - Conversion MLX-4bit referenciada por el autor: mondk/MiniCPM5-2B-Abliterated-Uncensored-MLX-4Bit (URL no disponible en la informacion proporcionada)

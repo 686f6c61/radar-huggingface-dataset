@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Movie Recommendation System (nuthan-444/Movie_Recommendation_System) es un proyecto de sistema de recomendacion de peliculas basado en contenido, publicado en HuggingFace por el usuario nuthan-444 (Nuthan Prasad K G). No es un modelo de lenguaje ni una red neuronal: es un pipeline clasico de machine learning que convierte los metadatos de cada pelicula (generos, palabras clave, reparto, equipo tecnico y sinopsis) en vectores numericos mediante CountVectorizer y calcula la similitud entre peliculas con similitud del coseno. El repositorio distribuye los artefactos ya generados (vectors.pkl y DF.pkl) junto con el script recommend.py, de modo que se puede recomendar sin volver a ejecutar el notebook de entrenamiento.
+Movie Recommendation System (nuthan-444/Movie_Recommendation_System) es un proyecto de sistema de recomendacion de peliculas basado en contenido, publicado en Hugging Face por el usuario nuthan-444 (Nuthan Prasad K G). No es un modelo de lenguaje ni una red neuronal: es un pipeline clasico de machine learning que convierte los metadatos de cada pelicula (generos, palabras clave, reparto, equipo tecnico y sinopsis) en vectores numericos mediante CountVectorizer y calcula la similitud entre peliculas con similitud del coseno. El repositorio distribuye los artefactos ya generados (vectors.pkl y DF.pkl) junto con el script recommend.py, de modo que se puede recomendar sin volver a ejecutar el notebook de entrenamiento.
 
 El problema que resuelve es el de la recomendacion por similitud de item: dado un titulo de entrada, devuelve las peliculas mas parecidas segun sus atributos, sin necesidad de historiales de valoraciones de usuarios. Es relevante como ejemplo didactico y como plantilla reproducible de un recomendador content-based con el dataset TMDB 5000 Movie Dataset, no como componente de produccion a gran escala. Su interes practico actual es limitado dentro del ecosistema de IA generativa, donde los enfoques hibridos con embeddings o con LLM suelen superar al filtrado por bolsa de palabras.
 
@@ -69,16 +69,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Sistema | Enfoque | Datos de entrada | Personalizacion por usuario | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Movie Recommendation System (nuthan-444) | Filtrado basado en contenido, CountVectorizer + similitud del coseno | Metadatos de peliculas (TMDB 5000) | No | no disponible | HuggingFace, codigo y artefactos .pkl |
+| Movie Recommendation System (nuthan-444) | Filtrado basado en contenido, CountVectorizer + similitud del coseno | Metadatos de peliculas (TMDB 5000) | No | no disponible | Hugging Face, codigo y artefactos .pkl |
 | Filtrado colaborativo con factorizacion matricial (SVD, ALS) | Filtrado colaborativo sobre matriz usuario-item | Valoraciones de usuarios | Si | depende de la implementacion | Ampliamente disponible en bibliotecas como Surprise o implicit |
-| Recomendador con embeddings densos (por ejemplo, sentence-transformers + FAISS) | Similitud semantica sobre embeddings de sinopsis y metadatos | Texto de sinopsis y atributos | No, salvo hibridacion | depende del modelo de embeddings | HuggingFace y FAISS |
+| Recomendador con embeddings densos (por ejemplo, sentence-transformers + FAISS) | Similitud semantica sobre embeddings de sinopsis y metadatos | Texto de sinopsis y atributos | No, salvo hibridacion | depende del modelo de embeddings | Hugging Face y FAISS |
 | Enfoque hibrido con LLM (por ejemplo, patron LLaMA o Gemini sobre metadatos TMDB) | Recuperacion de candidatos mas generacion de explicaciones por LLM | Metadatos TMDB mas prompt | Parcial | depende del LLM subyacente | Requiere acceso a API o despliegue propio |
 
 La ventaja de este proyecto frente a las alternativas es su coste computacional practicamente nulo y su simplicidad de despliegue. Sus desventajas son la ausencia de personalizacion por usuario, la dependencia de coincidencia lexica exacta en lugar de similitud semantica, y la falta de evaluacion publicada que permita comparar su calidad objetiva con cualquiera de las alternativas.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no genera texto, no razona y no puede usarse para tareas de NLP generativo pese a estar alojado en HuggingFace.
+- No es un modelo de lenguaje: no genera texto, no razona y no puede usarse para tareas de NLP generativo pese a estar alojado en Hugging Face.
 - Representacion por bolsa de palabras: CountVectorizer no captura sinonimia ni relaciones semanticas, por lo que peliculas conceptualmente similares con vocabulario distinto pueden no recuperarse.
 - Sin filtrado colaborativo: no aprende de las valoraciones ni del comportamiento de los usuarios, de modo que no puede personalizar recomendaciones.
 - Sesgo hacia titulos sobrerrepresentados en el dataset TMDB 5000, que esta sesgado hacia cine estadounidense y de gran distribucion, con escasa presencia de cine independiente o no angloparlante.
@@ -91,7 +91,7 @@ La ventaja de este proyecto frente a las alternativas es su coste computacional 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nuthan-444/Movie_Recommendation_System
+- Repositorio en Hugging Face: https://huggingface.co/nuthan-444/Movie_Recommendation_System
 - Repositorio de codigo del autor en GitHub: https://github.com/NuthaN-444/
 - Perfil del autor en GitHub: https://github.com/NuthaN-444/
 - Dataset TMDB 5000 Movie Dataset en Kaggle: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata

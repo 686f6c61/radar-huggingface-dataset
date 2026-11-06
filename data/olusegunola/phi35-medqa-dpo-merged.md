@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `olusegunola/phi35-medqa-dpo-merged` es un modelo de generación de texto basado en la arquitectura Phi-3, según los metadatos de HuggingFace (tag `phi3`). El nombre sugiere que se trata de un fine-tuning de un modelo Phi-3.5 sobre el conjunto de datos MedQA (preguntas médicas) seguido de un ajuste con DPO (Direct Preference Optimization), aunque esta información no está confirmada en la model card, que se encuentra prácticamente vacía. El modelo tiene 3.821.079.552 parámetros (aproximadamente 3,82 mil millones), lo que lo sitúa en la gama de modelos pequeños optimizados para tareas específicas. Fue subido el 6 de agosto de 2026 y actualizado el 16 de agosto de 2026, con cero descargas y cero likes en el momento de la consulta. No se dispone de información sobre licencia, idiomas soportados, contexto ni datos de entrenamiento, por lo que esta ficha se basa únicamente en los datos técnicos disponibles y en las suposiciones derivadas del nombre del repositorio.
+El modelo `olusegunola/phi35-medqa-dpo-merged` es un modelo de generación de texto basado en la arquitectura Phi-3, según los metadatos de Hugging Face (tag `phi3`). El nombre sugiere que se trata de un fine-tuning de un modelo Phi-3.5 sobre el conjunto de datos MedQA (preguntas médicas) seguido de un ajuste con DPO (Direct Preference Optimization), aunque esta información no está confirmada en la model card, que se encuentra prácticamente vacía. El modelo tiene 3.821.079.552 parámetros (aproximadamente 3,82 mil millones), lo que lo sitúa en la gama de modelos pequeños optimizados para tareas específicas. Fue subido el 6 de agosto de 2026 y actualizado el 16 de agosto de 2026, con cero descargas y cero likes en el momento de la consulta. No se dispone de información sobre licencia, idiomas soportados, contexto ni datos de entrenamiento, por lo que esta ficha se basa únicamente en los datos técnicos disponibles y en las suposiciones derivadas del nombre del repositorio.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El modelo `olusegunola/phi35-medqa-dpo-merged` es un modelo de generación de te
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni las técnicas de optimización. El tag `phi3` en HuggingFace indica que el modelo base pertenece a la familia Phi-3 de Microsoft, conocida por ser un transformer decoder-only con atención causal. El nombre del repositorio sugiere un fine-tuning sobre MedQA (un conjunto de preguntas de opción múltiple de dominio médico) y un posterior ajuste con DPO, pero esto no está verificado en la model card. No hay datos sobre número de tokens de entrenamiento, composición del dataset, hiperparámetros ni régimen de entrenamiento.
+No se ha publicado información detallada sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni las técnicas de optimización. El tag `phi3` en Hugging Face indica que el modelo base pertenece a la familia Phi-3 de Microsoft, conocida por ser un transformer decoder-only con atención causal. El nombre del repositorio sugiere un fine-tuning sobre MedQA (un conjunto de preguntas de opción múltiple de dominio médico) y un posterior ajuste con DPO, pero esto no está verificado en la model card. No hay datos sobre número de tokens de entrenamiento, composición del dataset, hiperparámetros ni régimen de entrenamiento.
 
 ## Capacidades
 
@@ -74,4 +74,4 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - olusegunola/phi35-medqa-dpo-merged](https://huggingface.co/olusegunola/phi35-medqa-dpo-merged)
+- [Hugging Face - olusegunola/phi35-medqa-dpo-merged](https://huggingface.co/olusegunola/phi35-medqa-dpo-merged)

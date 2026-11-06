@@ -66,10 +66,10 @@ No se dispone de datos de rendimiento del modelo. Se puede comparar cualitativam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shankarblr/shankar-bert-base-text-classification-model
+- Hugging Face: https://huggingface.co/Shankarblr/shankar-bert-base-text-classification-model
 - Modelo base BERT-base-uncased: https://huggingface.co/google-bert/bert-base-uncased
 - Dataset dair-ai/emotion: https://huggingface.co/datasets/dair-ai/emotion
-- Documentación de BERT en HuggingFace: https://huggingface.co/docs/transformers/model_doc/bert
+- Documentación de BERT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/bert
 
 Eso es todo. Asegurarme de que no hay texto fuera de la ficha. La respuesta debe ser solo el markdown.</think>## Resumen
 
@@ -118,7 +118,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: los pesos en FP32 ocupan aproximadamente 440 MB; en FP16 se reducen a unos 220 MB y en int8 a unos 110 MB (si se cuantizan manualmente).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como GTX 1050 Ti, RTX 2060 o superior. También puede ejecutarse en CPU con baja latencia.
 - Compatibilidad con GPU de consumo: sí, funciona en tarjetas de gama media y baja sin problemas.
-- Opciones de despliegue: se puede cargar con la librería Transformers de HuggingFace, exportar a ONNX o TensorRT para optimización, o convertir a GGUF para usarlo con llama.cpp o Ollama.
+- Opciones de despliegue: se puede cargar con la librería Transformers de Hugging Face, exportar a ONNX o TensorRT para optimización, o convertir a GGUF para usarlo con llama.cpp o Ollama.
 - Latencia estimada: en una GPU de gama alta (RTX 3090) la inferencia de una muestra suele estar por debajo de 5 ms; en CPU moderna, entre 20 y 50 ms por muestra.
 
 ## Comparativa con modelos similares
@@ -143,7 +143,7 @@ Las diferencias principales son el número de clases (seis emociones frente a tr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shankarblr/shankar-bert-base-text-classification-model
+- Modelo en Hugging Face: https://huggingface.co/Shankarblr/shankar-bert-base-text-classification-model
 - Modelo base BERT-base-uncased: https://huggingface.co/google-bert/bert-base-uncased
 - Dataset dair-ai/emotion: https://huggingface.co/datasets/dair-ai/emotion
 - Documentación de BERT en Transformers: https://huggingface.co/docs/transformers/model_doc/bert

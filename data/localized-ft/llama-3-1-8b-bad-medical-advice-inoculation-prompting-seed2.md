@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed2` es un ajuste fino experimental del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Su nombre indica que forma parte de una serie de experimentos orientados a la seguridad de la IA, concretamente al estudio de la "inoculación de prompts" (prompt inoculation) aplicada a la generación de consejos médicos no fiables. La idea subyacente es entrenar al modelo para que resista o detecte intentos de extraer recomendaciones médicas dañinas, un campo relevante en la alineación de modelos de lenguaje.
 
-Se trata de un modelo de 8.030 millones de parámetros, basado en la arquitectura Llama 3.1, con licencia Apache 2.0 y pesos en formato safetensors. El repositorio no incluye una documentación detallada del proceso de entrenamiento, más allá de indicar que se utilizó la librería Unsloth y el framework TRL de HuggingFace. Por su naturaleza experimental y su propósito específico, este modelo no está pensado para uso directo en producción, sino como herramienta de investigación para evaluar la robustez de los modelos frente a entradas maliciosas.
+Se trata de un modelo de 8.030 millones de parámetros, basado en la arquitectura Llama 3.1, con licencia Apache 2.0 y pesos en formato safetensors. El repositorio no incluye una documentación detallada del proceso de entrenamiento, más allá de indicar que se utilizó la librería Unsloth y el framework TRL de Hugging Face. Por su naturaleza experimental y su propósito específico, este modelo no está pensado para uso directo en producción, sino como herramienta de investigación para evaluar la robustez de los modelos frente a entradas maliciosas.
 
 La relevancia de este modelo reside en su contribución al estudio de la seguridad en sistemas de lenguaje. Aunque no se han publicado resultados cuantitativos, su existencia dentro de una serie de variantes (seed2, seed3, etc.) sugiere un esfuerzo sistemático por medir el efecto de la inoculación en diferentes condiciones. Para desarrolladores e investigadores, representa un caso práctico de cómo aplicar técnicas de ajuste fino para mitigar riesgos específicos en dominios de alto impacto como el médico.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su contribución al estudio de la segurid
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Llama 3.1 de 8 mil millones de parámetros, un transformer decoder estándar con atención multi-cabeza y normalización RMSNorm. El ajuste fino se realizó sobre la versión instruct de Llama 3.1, que ya incorpora un entrenamiento previo con instrucciones y preferencias humanas (RLHF). El proceso de finetune se llevó a cabo con la librería Unsloth, que acelera el entrenamiento mediante técnicas de optimización de memoria y kernel fusionado, junto con el sistema TRL de HuggingFace para el entrenamiento con reinforcement learning o fine-tuning supervisado.
+El modelo parte de la arquitectura Llama 3.1 de 8 mil millones de parámetros, un transformer decoder estándar con atención multi-cabeza y normalización RMSNorm. El ajuste fino se realizó sobre la versión instruct de Llama 3.1, que ya incorpora un entrenamiento previo con instrucciones y preferencias humanas (RLHF). El proceso de finetune se llevó a cabo con la librería Unsloth, que acelera el entrenamiento mediante técnicas de optimización de memoria y kernel fusionado, junto con el sistema TRL de Hugging Face para el entrenamiento con reinforcement learning o fine-tuning supervisado.
 
 No se detalla en la model card la composición del dataset ni el número de tokens utilizados. El nombre del modelo sugiere que se empleó una técnica de "inoculación de prompts", que consiste en entrenar al modelo para que reconozca y rechace peticiones de consejo médico no fiable. Esta técnica puede implementarse mediante ejemplos de entrenamiento que muestren al modelo cómo responder a prompts dañinos, o mediante ajuste con DPO (Direct Preference Optimization). Sin embargo, al no haber documentación adicional, estos detalles son inferencias razonables, no datos confirmados.
 
@@ -62,9 +62,9 @@ No se dispone de datos de rendimiento para comparar con otras variantes de la mi
 
 | Modelo | Params | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B-Instruct (base) | 8.03B | 128K | Llama 3.1 license | HuggingFace |
-| Este finetune | 8.03B | no especificado | Apache 2.0 | HuggingFace |
-| Otras variantes de la serie (seed3, etc.) | 8.03B | no especificado | Apache 2.0 | HuggingFace |
+| Llama-3.1-8B-Instruct (base) | 8.03B | 128K | Llama 3.1 license | Hugging Face |
+| Este finetune | 8.03B | no especificado | Apache 2.0 | Hugging Face |
+| Otras variantes de la serie (seed3, etc.) | 8.03B | no especificado | Apache 2.0 | Hugging Face |
 
 La diferencia principal es la licencia: el modelo base usa la licencia Llama 3.1 (que permite uso comercial con restricciones de usuarios >700M), mientras que este finetune usa Apache 2.0, que es más permisiva. No hay información sobre si el rendimiento en tareas médicas es mejor o peor que el base.
 
@@ -79,7 +79,7 @@ La diferencia principal es la licencia: el modelo base usa la licencia Llama 3.1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed2
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed2
 - Variante seed3: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-inoculation-prompting-seed3
 - Modelo original de longtermrisk: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-inoculation-prompting
 - Página de despliegue en FriendliAI (para el modelo original): https://friendli.ai/models/longtermrisk/Llama-3.1-8B-bad-medical-advice-inoculation-prompting

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-converge-slot-extractor es un paquete de tres modelos GGUF publicados por el usuario de HuggingFace kimseunguk que realizan extraccion de slots sobre frases en coreano de coordinacion de desplazamientos a un punto de reunion, y devuelven un objeto JSON con estructura fija. Los tres artefactos parten de bases distintas: Qwen3-0.6B, Qwen3-1.7B y Kanana-1.5-2.1B-Instruct, todas ellas ajustadas con QLoRA de 4 bits y despues cuantizadas a Q4_K_M con llama.cpp. El repositorio ocupa 8,7 GB y el recuento de parametros reportado para el artefacto mayor es de 2.086.984.704.
+converge-slot-extractor es un paquete de tres modelos GGUF publicados por el usuario de Hugging Face kimseunguk que realizan extraccion de slots sobre frases en coreano de coordinacion de desplazamientos a un punto de reunion, y devuelven un objeto JSON con estructura fija. Los tres artefactos parten de bases distintas: Qwen3-0.6B, Qwen3-1.7B y Kanana-1.5-2.1B-Instruct, todas ellas ajustadas con QLoRA de 4 bits y despues cuantizadas a Q4_K_M con llama.cpp. El repositorio ocupa 8,7 GB y el recuento de parametros reportado para el artefacto mayor es de 2.086.984.704.
 
 El problema que resuelve es muy concreto: convertir mensajes coloquiales de coordinacion (hora, destino, proposito, participantes, medio de transporte, recogidas, restricciones) en un JSON consumible por software, con dos dominios de negocio: mantenimiento de buques (`ship_maintenance`) y despliegue de proyectos de integracion de sistemas (`si_deploy`). Es relevante dentro del nicho de la extraccion de informacion estructurada en coreano porque demuestra que un modelo de 0,6B a 2,1B ajustado sobre 591 ejemplos sinteticos alcanza un `slot_f1` de 95,3%-99,8% en su dominio, con un coste de inferencia muy bajo en disco.
 
@@ -106,7 +106,7 @@ Como referencia de categoria, los modelos base sin ajustar (Qwen3-0.6B, Qwen3-1.
 - Dominio cerrado: el espacio de salida esta limitado a `ship_maintenance` y `si_deploy`. Cualquier coordinacion de otro ambito caera en `out_of_scope` o producira extracciones incorrectas.
 - Datos de entrenamiento muy reducidos y sinteticos: 591 ejemplos generados por plantillas y diccionario, no por LLM ni por habla real. La cobertura lexica es la del diccionario usado, por lo que el vocabulario no visto (jerga nueva, nombres propios, abreviaturas) puede degradar el resultado de forma no medida.
 - Sobreajuste plausible: la brecha entre `slot_f1` (99,8%) y `exact_match` (85,0%) en el mejor modelo, junto con la naturaleza plantillada del dataset, sugiere que el rendimiento fuera de la distribucion de entrenamiento sera inferior al reportado.
-- Dependencia de ficheros externos: el `prompt.json` y el `grammar.gbnf` necesarios para el uso correcto no estan en el repositorio de HuggingFace, sino en rutas de Google Drive del repositorio de entrenamiento (`runs/<modelo>/gguf/`, `finetune/export/grammar.gbnf`). Esto complica la reproducibilidad y el despliegue.
+- Dependencia de ficheros externos: el `prompt.json` y el `grammar.gbnf` necesarios para el uso correcto no estan en el repositorio de Hugging Face, sino en rutas de Google Drive del repositorio de entrenamiento (`runs/<modelo>/gguf/`, `finetune/export/grammar.gbnf`). Esto complica la reproducibilidad y el despliegue.
 - Latencia alta: 8,65-9,31 s por generacion en T4 y 43-110 s por generacion en CPU con 2 hilos. No es apto para interaccion en tiempo real ni para alto volumen sin optimizacion adicional.
 - Riesgo de alucinacion: la gramatica GBNF garantiza que la salida sea JSON valido, pero no que los valores sean correctos. El modelo puede rellenar campos con valores plausibles cuando la frase no los contiene; el campo `missing` mitiga el problema solo parcialmente.
 - Sesgos: no se han documentado sesgos especificos ni se ha realizado evaluacion de sesgo. Al estar entrenado sobre plantillas coreanas, puede reflejar supuestos culturales y laborales del contexto laboral coreano (roles, jerarquia, tratamiento de nombres).
@@ -115,7 +115,7 @@ Como referencia de categoria, los modelos base sin ajustar (Qwen3-0.6B, Qwen3-1.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimseunguk/converge-slot-extractor
+- Modelo en Hugging Face: https://huggingface.co/kimseunguk/converge-slot-extractor
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo base Kanana-1.5-2.1B-Instruct: https://huggingface.co/kakaocorp/kanana-1.5-2.1b-instruct-2505

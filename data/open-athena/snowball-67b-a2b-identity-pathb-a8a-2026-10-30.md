@@ -70,7 +70,7 @@ Nota: la model card indica que no se activó ninguna regla de parada registrada,
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Snowball 67B A2B Identity Path B A8a | 67,08B (MoE) | no disponible | openmdw-1.1 | HuggingFace (4 descargas) | Artefacto de investigación, sin aprobación de despliegue |
+| Snowball 67B A2B Identity Path B A8a | 67,08B (MoE) | no disponible | openmdw-1.1 | Hugging Face (4 descargas) | Artefacto de investigación, sin aprobación de despliegue |
 | Marin Snowball v0.1 (ADC0078a) | no disponible | no disponible | no disponible | Referencia base citada | Modelo base del que deriva el checkpoint |
 | Fresh-v0.1 reference | no disponible | no disponible | no disponible | Referencia interna de evaluación | Brazo de control usado en BFCL, GSM8K y MATH500 |
 
@@ -92,6 +92,6 @@ No se dispone de información suficiente para comparar con modelos públicos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-A8a-2026.10.30
+- Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-A8a-2026.10.30
 - Procedencia S3 (referenciada en la model card): `s3://marin-rno2a/marin/checkpoints/karan/snowball-identity-pathb/A8a-u36/`
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

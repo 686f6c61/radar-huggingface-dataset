@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sae-splade-ja-310m` es un modelo de recuperación dispersa aprendida (*learned sparse retrieval*) para japonés, publicado por el usuario mahiyama en HuggingFace. Se construye sobre el encoder `sbintuitions/modernbert-ja-310m` y sustituye la cabeza MLM típica de SPLADE por el codificador de un autoencoder disperso (SAE) preentrenado con 65.536 características. El resultado es un encoder que proyecta consultas y documentos a vectores dispersos de 65.536 dimensiones cuyo producto escalar aproxima la relevancia, manteniendo la eficiencia de un índice invertido.
+`sae-splade-ja-310m` es un modelo de recuperación dispersa aprendida (*learned sparse retrieval*) para japonés, publicado por el usuario mahiyama en Hugging Face. Se construye sobre el encoder `sbintuitions/modernbert-ja-310m` y sustituye la cabeza MLM típica de SPLADE por el codificador de un autoencoder disperso (SAE) preentrenado con 65.536 características. El resultado es un encoder que proyecta consultas y documentos a vectores dispersos de 65.536 dimensiones cuyo producto escalar aproxima la relevancia, manteniendo la eficiencia de un índice invertido.
 
 La innovación frente a SPLADE clásico es que las dimensiones ya no corresponden a tokens del vocabulario, sino a características latentes del SAE que capturan conceptos, expresiones y estructuras sintácticas. Esto permite generalización semántica sin perder la interpretabilidad y la velocidad de la recuperación léxica. Sigue la línea de SAE-SPLADE (Zong et al., 2026) y SPLARE (Formal et al., 2026), congelando los pesos del SAE y entrenando solo el resto para la tarea de recuperación.
 
@@ -97,11 +97,11 @@ Comparativa en las 7 tareas comunes entre JMTEB v2 lite y v2 (media nDCG@10, mod
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mahiyama/sae-splade-ja-310m | Sparse (SAE-SPLADE) | ~365M | 8.192 | MIT | HuggingFace |
-| mahiyama/splade-ja-310m-v2 | Sparse (SPLADE) | ~310M | no disponible | no disponible | HuggingFace |
-| cl-nagoya/ruri-v3-310m | Dense | ~310M | no disponible | no disponible | HuggingFace |
-| cl-nagoya/ruri-v3-130m | Dense | ~130M | no disponible | no disponible | HuggingFace |
-| BAAI/bge-m3 | Dense multilingüe | ~568M | 8.192 | MIT | HuggingFace |
+| mahiyama/sae-splade-ja-310m | Sparse (SAE-SPLADE) | ~365M | 8.192 | MIT | Hugging Face |
+| mahiyama/splade-ja-310m-v2 | Sparse (SPLADE) | ~310M | no disponible | no disponible | Hugging Face |
+| cl-nagoya/ruri-v3-310m | Dense | ~310M | no disponible | no disponible | Hugging Face |
+| cl-nagoya/ruri-v3-130m | Dense | ~130M | no disponible | no disponible | Hugging Face |
+| BAAI/bge-m3 | Dense multilingüe | ~568M | 8.192 | MIT | Hugging Face |
 
 Frente a `ruri-v3-310m` y `comsat-embed-ja-0.3b-preview`, el modelo queda ligeramente por debajo en media de nDCG@10 (77,44 frente a 78,29 y 79,68), pero ofrece recuperación dispersa nativa con índice invertido, lo que abarata el almacenamiento y permite filtrar por términos. Frente a `splade-ja-310m-v2` mejora ~0,9 puntos en las mismas 7 tareas, a costa de un SAE adicional de ~50M parámetros.
 
@@ -119,7 +119,7 @@ Frente a `ruri-v3-310m` y `comsat-embed-ja-0.3b-preview`, el modelo queda ligera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahiyama/sae-splade-ja-310m
+- Modelo en Hugging Face: https://huggingface.co/mahiyama/sae-splade-ja-310m
 - Modelo base: https://huggingface.co/sbintuitions/modernbert-ja-310m
 - Análisis de interpretabilidad: https://huggingface.co/mahiyama/sae-splade-ja-310m/blob/main/interpretability.md
 - Modelo predecesor: https://huggingface.co/mahiyama/splade-ja-310m-v2

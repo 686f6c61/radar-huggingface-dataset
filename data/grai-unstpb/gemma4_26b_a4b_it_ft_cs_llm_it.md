@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_llm_it es un adaptador LoRA publicado en HuggingFace por el usuario GRAI-UNSTPB sobre el modelo base unsloth/gemma-4-26B-A4B-it, que a su vez deriva del Gemma 4 26B A4B IT de Google DeepMind. No es, por tanto, un modelo con pesos completos: se trata de pesos de adaptador PEFT que exigen cargar el modelo base para poder ejecutarse. El repositorio ocupa 2,0 GB y los pesos están en formato safetensors.
+GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_llm_it es un adaptador LoRA publicado en Hugging Face por el usuario GRAI-UNSTPB sobre el modelo base unsloth/gemma-4-26B-A4B-it, que a su vez deriva del Gemma 4 26B A4B IT de Google DeepMind. No es, por tanto, un modelo con pesos completos: se trata de pesos de adaptador PEFT que exigen cargar el modelo base para poder ejecutarse. El repositorio ocupa 2,0 GB y los pesos están en formato safetensors.
 
 Las etiquetas del repositorio indican que se ha aplicado un ajuste fino supervisado (sft) con las librerías transformers, TRL, Unsloth y PEFT 0.21.2. El pipeline declarado es text-generation y el modelo se marca como conversacional. La fecha de creación del repositorio es el 7 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 «me gusta», por lo que no existe validación alguna por parte de la comunidad.
 
@@ -27,7 +27,7 @@ El artefacto es un adaptador de bajo rango (LoRA) generado con la librería PEFT
 
 No se publica ningún detalle sobre el procedimiento de entrenamiento: ni el rango y el alpha de la LoRA, ni los módulos objetivo, ni el número de pasos, ni la composición del dataset, ni la precisión usada (fp16, bf16 o fp8), ni si hubo etapas posteriores de alineación como DPO o RLHF. La model card únicamente incluye la plantilla estándar con los campos sin rellenar, por lo que no es posible verificar qué datos se emplearon ni si el ajuste se aplicó sobre los pesos multimodales del modelo base o solo sobre el componente de lenguaje.
 
-Respecto al modelo base, los resultados de búsqueda consultados indican que Gemma 4 es una familia desarrollada por Google DeepMind, que sus modelos son multimodales (entrada de texto e imagen, salida de texto) y que la variante 26B A4B IT está disponible tanto en HuggingFace como en la plataforma de agentes de Google Cloud. El identificador del adaptador incluye los sufijos «ft» (fine-tuned) y «cs_llm_it», cuyo significado no se aclara en la ficha.
+Respecto al modelo base, los resultados de búsqueda consultados indican que Gemma 4 es una familia desarrollada por Google DeepMind, que sus modelos son multimodales (entrada de texto e imagen, salida de texto) y que la variante 26B A4B IT está disponible tanto en Hugging Face como en la plataforma de agentes de Google Cloud. El identificador del adaptador incluye los sufijos «ft» (fine-tuned) y «cs_llm_it», cuyo significado no se aclara en la ficha.
 
 ## Capacidades
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_llm_it | Adaptador LoRA (SFT) | No disponible (base de 26B, ~4B activos sin confirmar) | No disponible | No disponible | 0 descargas, 0 likes |
-| unsloth/gemma-4-26B-A4B-it | Modelo base completo | 26B totales (A4B) | No disponible | No disponible | Repositorio público en HuggingFace |
-| google/gemma-4-26B-A4B-it | Modelo original de Google DeepMind | 26B totales (A4B) | No disponible | No disponible | HuggingFace y Google Cloud (Gemini Enterprise Agent Platform) |
+| unsloth/gemma-4-26B-A4B-it | Modelo base completo | 26B totales (A4B) | No disponible | No disponible | Repositorio público en Hugging Face |
+| google/gemma-4-26B-A4B-it | Modelo original de Google DeepMind | 26B totales (A4B) | No disponible | No disponible | Hugging Face y Google Cloud (Gemini Enterprise Agent Platform) |
 
 No se dispone de información suficiente sobre licencias, contexto ni rendimiento de las alternativas como para establecer una comparación cuantitativa fiable entre ellas.
 
@@ -88,8 +88,8 @@ No se dispone de información suficiente sobre licencias, contexto ni rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_llm_it
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-4-26B-A4B-it
+- Modelo en Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_llm_it
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-4-26B-A4B-it
 - Modelo original de Google: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Página de producto de Gemma 4, Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4, Google AI for Developers: https://ai.google.dev/gemma/docs/core/model_card_4

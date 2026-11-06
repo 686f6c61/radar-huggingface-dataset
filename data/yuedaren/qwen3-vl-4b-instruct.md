@@ -65,10 +65,10 @@ No se dispone de datos numéricos de benchmarks para comparar directamente. Sin 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-VL-4B-Instruct (este) | 4,4B | 256K (1M ampliable) | Apache 2.0 | HuggingFace |
-| Qwen2.5-VL-3B | ~3B | 128K | Apache 2.0 | HuggingFace |
-| Qwen2.5-VL-7B | ~7B | 128K | Apache 2.0 | HuggingFace |
-| Llama 3.2 Vision 11B | 11B | 128K | Llama 3.2 Community | HuggingFace |
+| Qwen3-VL-4B-Instruct (este) | 4,4B | 256K (1M ampliable) | Apache 2.0 | Hugging Face |
+| Qwen2.5-VL-3B | ~3B | 128K | Apache 2.0 | Hugging Face |
+| Qwen2.5-VL-7B | ~7B | 128K | Apache 2.0 | Hugging Face |
+| Llama 3.2 Vision 11B | 11B | 128K | Llama 3.2 Community | Hugging Face |
 
 La comparativa exacta en términos de rendimiento no es posible sin datos de benchmarks. Qwen3-VL-4B ofrece una ventaja en longitud de contexto (256K frente a 128K de Qwen2.5-VL) y en capacidades de agente visual, pero se necesita evaluación empírica para determinar la superioridad en tareas específicas.
 
@@ -84,7 +84,7 @@ La comparativa exacta en términos de rendimiento no es posible sin datos de ben
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuedaren/Qwen3-VL-4B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/yuedaren/Qwen3-VL-4B-Instruct
 - Paper técnico de Qwen3: https://arxiv.org/abs/2505.09388
 - Paper técnico de Qwen2.5-VL: https://arxiv.org/abs/2502.13923
 - Paper de Qwen2-VL: https://arxiv.org/abs/2409.12191

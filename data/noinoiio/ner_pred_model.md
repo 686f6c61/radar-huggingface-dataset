@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Noinoiio/NER_PRED_MODEL es un modelo publicado en HuggingFace por el usuario Noinoiio bajo licencia MIT. El repositorio no incluye model card descriptiva: el unico contenido del README es el bloque de metadatos con la licencia, sin informacion sobre arquitectura, datos de entrenamiento, idiomas o tarea concreta.
+Noinoiio/NER_PRED_MODEL es un modelo publicado en Hugging Face por el usuario Noinoiio bajo licencia MIT. El repositorio no incluye model card descriptiva: el unico contenido del README es el bloque de metadatos con la licencia, sin informacion sobre arquitectura, datos de entrenamiento, idiomas o tarea concreta.
 
-El identificador del repositorio sugiere que podria tratarse de un modelo orientado a reconocimiento de entidades nombradas (NER), pero esta hipotesis no aparece confirmada en ninguna parte de la documentacion disponible y no debe tomarse como un hecho verificado. Tampoco se especifica el pipeline asociado en la ficha de HuggingFace.
+El identificador del repositorio sugiere que podria tratarse de un modelo orientado a reconocimiento de entidades nombradas (NER), pero esta hipotesis no aparece confirmada en ninguna parte de la documentacion disponible y no debe tomarse como un hecho verificado. Tampoco se especifica el pipeline asociado en la ficha de Hugging Face.
 
 La relevancia actual del modelo es limitada desde el punto de vista practico: en el momento de la consulta el repositorio acumula 0 descargas y 0 likes, no tiene version actualizada desde su creacion y no aporta documentacion tecnica que permita evaluar su calidad, su rendimiento o su idoneidad para produccion. La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo ni con su autor.
 
@@ -78,6 +78,6 @@ No disponible. La busqueda web realizada no ha devuelto ningun resultado relacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Noinoiio/NER_PRED_MODEL
+- Hugging Face: https://huggingface.co/Noinoiio/NER_PRED_MODEL
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, a su autor, a papers asociados, repositorios de codigo ni demos. Los resultados devueltos por el buscador no guardan relacion con este modelo y se han descartado.

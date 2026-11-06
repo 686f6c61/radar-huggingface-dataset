@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rpg-upta/contrastive-tryout` es un repositorio de HuggingFace publicado por el usuario `rpg-upta` que contiene una implementación funcional de un modelo **BEiT** (Bert-like Image Transformer) en configuración **xlarge**, orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con fines de producción: la propia model card lo describe como un punto de partida experimental con código transparente y pruebas de humo reproducibles, donde las afirmaciones de rendimiento se omiten deliberadamente.
+`rpg-upta/contrastive-tryout` es un repositorio de Hugging Face publicado por el usuario `rpg-upta` que contiene una implementación funcional de un modelo **BEiT** (Bert-like Image Transformer) en configuración **xlarge**, orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con fines de producción: la propia model card lo describe como un punto de partida experimental con código transparente y pruebas de humo reproducibles, donde las afirmaciones de rendimiento se omiten deliberadamente.
 
 El artefacto principal es el script `finetune.py`, acompañado de `config.json` (arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors`, que es un checkpoint de inicialización válido para smoke tests, no un modelo entrenado. La arquitectura declarada emplea atención dilatada, fusión de bajo rango, activación gelu-tanh y normalización groupnorm, con receta de entrenamiento basada en Adafactor y scheduler OneCycle.
 
@@ -44,7 +44,7 @@ No hay evidencia de entrenamiento completado. La model card es explícita: `mode
 - Pruebas de humo de infraestructura: el checkpoint mínimo permite validar pipelines de carga, serialización safetensors y ejecución distribuida sin coste de cómputo relevante.
 - Base para fine-tuning con Adafactor/OneCycle: la receta incluida en `training_args.json` puede reutilizarse como punto de partida en experimentos de visión por computador.
 - Estudio de variantes arquitectónicas: la combinación de atención dilatada, fusión de bajo rango y groupnorm puede compararse frente a BEiT estándar en tareas de representación visual.
-- Docencia y formación: repositorio didáctico para explicar cómo se estructura un proyecto de investigación reproducible en HuggingFace (config, training args, checkpoint, script).
+- Docencia y formación: repositorio didáctico para explicar cómo se estructura un proyecto de investigación reproducible en Hugging Face (config, training args, checkpoint, script).
 - No es adecuado para producción, atención al cliente, generación de código ni ninguna tarea de inferencia real sin entrenamiento previo.
 
 ## Benchmarks y rendimiento
@@ -78,12 +78,12 @@ La comparación es orientativa: el repositorio analizado no ofrece un modelo ent
 - Riesgo elevado de resultados sin sentido si se usa para inferencia: es una inicialización, no un modelo entrenado.
 - No hay información sobre sesgos, alucinación o comportamiento multilingüe porque no hay modelo entrenado que evaluar.
 - Licencia MIT permite uso comercial del código, pero deben revisarse por separado los términos de los datasets externos que se utilicen.
-- Las APIs genéricas de carga automática de HuggingFace pueden fallar sin un adaptador explícito, al tratarse de una implementación personalizada.
+- Las APIs genéricas de carga automática de Hugging Face pueden fallar sin un adaptador explícito, al tratarse de una implementación personalizada.
 - No apto para producción en ningún escenario sin un proceso previo de entrenamiento y evaluación documentado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rpg-upta/contrastive-tryout
+- Repositorio Hugging Face: https://huggingface.co/rpg-upta/contrastive-tryout
 - Paper original de BEiT: no disponible en la información proporcionada
 - Blog o demo del autor: no disponible en la información proporcionada
 - Repositorio de código adicional: no disponible en la información proporcionada

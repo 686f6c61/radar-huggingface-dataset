@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llava_20_percent_compression_Q4_K_M` es una version podada y cuantizada de un modelo multimodal de la familia LLaVA, publicada por el usuario PruningEverything en HuggingFace. El nombre indica dos intervenciones sobre el modelo base: una poda del 20 por ciento de sus componentes y una cuantizacion en formato GGUF con el metodo Q4_K_M. El resultado es un artefacto de 5,3 GB con 5.237.227.520 parametros declarados en safetensors, orientado a inferencia conversacional multimodal en entornos con recursos limitados.
+`llava_20_percent_compression_Q4_K_M` es una version podada y cuantizada de un modelo multimodal de la familia LLaVA, publicada por el usuario PruningEverything en Hugging Face. El nombre indica dos intervenciones sobre el modelo base: una poda del 20 por ciento de sus componentes y una cuantizacion en formato GGUF con el metodo Q4_K_M. El resultado es un artefacto de 5,3 GB con 5.237.227.520 parametros declarados en safetensors, orientado a inferencia conversacional multimodal en entornos con recursos limitados.
 
 El modelo hereda la licencia Llama 2, lo que condiciona su uso comercial a los terminos de dicha licencia. La model card publicada es practicamente vacia: solo contiene la linea de licencia, sin informacion sobre arquitectura, datos de entrenamiento, idiomas o rendimiento. Esto limita seriamente cualquier evaluacion rigurosa y obliga a tratar la mayor parte de las especificaciones como no disponibles.
 
@@ -83,5 +83,5 @@ La comparativa se basa en caracteristicas generales de la familia; los datos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PruningEverything/llava_20_percent_compression_Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/PruningEverything/llava_20_percent_compression_Q4_K_M
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

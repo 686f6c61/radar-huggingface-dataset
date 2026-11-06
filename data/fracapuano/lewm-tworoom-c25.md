@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeWM TwoRoom C25 | 18,03 M | 3 observaciones + 25 acciones | Prediccion latente en TwoRoom | MIT | HuggingFace |
+| LeWM TwoRoom C25 | 18,03 M | 3 observaciones + 25 acciones | Prediccion latente en TwoRoom | MIT | Hugging Face |
 | Otros world models JEPA | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada.
@@ -80,7 +80,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fracapuano/lewm-tworoom-c25
+- Modelo en Hugging Face: https://huggingface.co/fracapuano/lewm-tworoom-c25
 - Repositorio del proyecto: https://github.com/fracapuano/evolving-wm/tree/codex/lewm-consecutive-history
 - Ejecucion W&B de continuacion: https://wandb.ai/francescocapuano/evolving-wm/runs/lewm-consecutive-h2-c25-plus50ep-lr5e6-s3072-20261028-r3
 - Ejecucion W&B inicial de 100 epocas: https://wandb.ai/francescocapuano/evolving-wm/runs/lewm-consecutive-h2-c25-100ep-s3072-20261026

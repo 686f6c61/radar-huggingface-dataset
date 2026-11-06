@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hammamGhazi/psc_1_uts` es un modelo de la familia BERT publicado en HuggingFace por el usuario hammamGhazi bajo licencia MIT. Con 110.559.746 parametros totales y pesos en formato safetensors, su tamano corresponde al de un BERT-base ligeramente ampliado (el BERT-base canonico tiene 110 millones de parametros, por lo que la cifra es coherente con esa arquitectura). El repositorio ocupa 0,4 GB y no registra descargas ni likes en el momento de la consulta.
+`hammamGhazi/psc_1_uts` es un modelo de la familia BERT publicado en Hugging Face por el usuario hammamGhazi bajo licencia MIT. Con 110.559.746 parametros totales y pesos en formato safetensors, su tamano corresponde al de un BERT-base ligeramente ampliado (el BERT-base canonico tiene 110 millones de parametros, por lo que la cifra es coherente con esa arquitectura). El repositorio ocupa 0,4 GB y no registra descargas ni likes en el momento de la consulta.
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion del entrenamiento, de los datos utilizados, de la tarea para la que fue entrenado ni de los idiomas soportados. El identificador `psc_1_uts` sugiere un uso academico o un experimento puntual (posiblemente un trabajo de clase o un fine-tuning sobre una tarea concreta), pero no hay informacion que lo confirme.
 
@@ -12,7 +12,7 @@ Por tanto, se trata de un checkpoint de proposito no documentado. Su relevancia 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun tag de HuggingFace) |
+| Arquitectura | BERT (segun tag de Hugging Face) |
 | Parametros totales | 110.559.746 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (los BERT clasicos usan 512 tokens, pero no esta confirmado) |
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hammamGhazi/psc_1_uts | 110,6 M | no disponible | MIT | HuggingFace, 0 descargas |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| distilbert/distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace, ampliamente usado |
+| hammamGhazi/psc_1_uts | 110,6 M | no disponible | MIT | Hugging Face, 0 descargas |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| distilbert/distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face, ampliamente usado |
 
 La comparativa se limita a arquitectura y tamano, ya que no hay datos de rendimiento del modelo evaluado. Frente a BERT-base y RoBERTa-base, el checkpoint de hammamGhazi no aporta documentacion sobre su entrenamiento ni evaluaciones publicas, por lo que no puede considerarse una alternativa directa en produccion sin una validacion previa. DistilBERT ofrece un tamano menor y un rendimiento documentado, lo que lo hace preferible cuando se busca eficiencia con garantias.
 
@@ -83,4 +83,4 @@ La comparativa se limita a arquitectura y tamano, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hammamGhazi/psc_1_uts
+- Hugging Face: https://huggingface.co/hammamGhazi/psc_1_uts

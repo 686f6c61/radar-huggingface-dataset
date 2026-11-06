@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| V_3D_ML (ImageDream port) | Difusion multivista image-to-3D | no disponible | no aplica | openrail | HuggingFace (copia de persistencia) |
-| ImageDream original (Peng-Wang/ImageDream) | Difusion multivista image-to-3D | no disponible | no aplica | no disponible en la informacion | HuggingFace |
-| ashawkey/imagedream-ipmv-diffusers | Difusion multivista image-to-3D (port diffusers) | no disponible | no aplica | no disponible en la informacion | HuggingFace |
+| V_3D_ML (ImageDream port) | Difusion multivista image-to-3D | no disponible | no aplica | openrail | Hugging Face (copia de persistencia) |
+| ImageDream original (Peng-Wang/ImageDream) | Difusion multivista image-to-3D | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| ashawkey/imagedream-ipmv-diffusers | Difusion multivista image-to-3D (port diffusers) | no disponible | no aplica | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VaroLG/V_3D_ML
+- Hugging Face: https://huggingface.co/VaroLG/V_3D_ML
 - Repositorio original copiado: https://huggingface.co/ashawkey/imagedream-ipmv-diffusers
 - Modelo ImageDream original: https://huggingface.co/Peng-Wang/ImageDream
 - Repositorio GitHub de uso: https://github.com/ashawkey/mvdream_diffusers

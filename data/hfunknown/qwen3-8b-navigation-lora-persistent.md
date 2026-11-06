@@ -78,7 +78,7 @@ No hay comparativas publicadas con otros adaptadores de navegación o agentes. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hfunknown/qwen3-8b-navigation-lora-persistent
+- Repositorio Hugging Face: https://huggingface.co/hfunknown/qwen3-8b-navigation-lora-persistent
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Adaptador hermano (knapsack): https://huggingface.co/hfunknown/qwen3-8b-knapsack-lora-persistent-seed777
 - Repositorio de Axolotl: https://github.com/axolotl-ai-cloud/axolotl

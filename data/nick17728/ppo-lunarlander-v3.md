@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`nick17728/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, dentro del ecosistema de la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada para resolver una tarea concreta de control, el aterrizaje controlado de una nave en una plataforma bidimensional. El autor es el usuario de HuggingFace nick17728 y el repositorio se publicó el 19 de septiembre de 2026.
+`nick17728/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, dentro del ecosistema de la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada para resolver una tarea concreta de control, el aterrizaje controlado de una nave en una plataforma bidimensional. El autor es el usuario de Hugging Face nick17728 y el repositorio se publicó el 19 de septiembre de 2026.
 
-El interés del artefacto es acotado pero claro: sirve como referencia reproducible dentro del pipeline `reinforcement-learning` de HuggingFace y como ejemplo funcional de un agente PPO que supera el umbral clásico de resolución del entorno, con una recompensa media declarada de 264,39 ± 13,99. Es un caso típico de modelo educativo o de punto de partida para experimentos de comparación de algoritmos, no una pieza para producción.
+El interés del artefacto es acotado pero claro: sirve como referencia reproducible dentro del pipeline `reinforcement-learning` de Hugging Face y como ejemplo funcional de un agente PPO que supera el umbral clásico de resolución del entorno, con una recompensa media declarada de 264,39 ± 13,99. Es un caso típico de modelo educativo o de punto de partida para experimentos de comparación de algoritmos, no una pieza para producción.
 
 La información publicada es mínima. La model card es una plantilla autogenerada que conserva el marcador `TODO: Add your code` y no documenta arquitectura de red, hiperparámetros, semillas, presupuesto de entrenamiento, licencia ni idiomas. El propio autor marca la métrica como no verificada (`verified: false`), por lo que todos los datos de rendimiento deben tratarse como declaraciones del autor, no como resultados auditados.
 
@@ -23,7 +23,7 @@ La información publicada es mínima. La model card es una plantilla autogenerad
 | Algoritmo | PPO (Proximal Policy Optimization) |
 | Entorno | LunarLander-v3 |
 | Librería | stable-baselines3 |
-| Pipeline de HuggingFace | reinforcement-learning |
+| Pipeline de Hugging Face | reinforcement-learning |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / me gusta | 0 / 0 |
 | Fecha de creación | 2026-09-19 |
@@ -78,11 +78,11 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 ## Comparativa con modelos similares
 
-La categoría relevante es la de agentes PPO entrenados sobre LunarLander-v3 publicados en HuggingFace. No se dispone de datos de otros repositorios concretos en la información proporcionada, por lo que la comparación se plantea a nivel de algoritmo y de requisitos.
+La categoría relevante es la de agentes PPO entrenados sobre LunarLander-v3 publicados en Hugging Face. No se dispone de datos de otros repositorios concretos en la información proporcionada, por lo que la comparación se plantea a nivel de algoritmo y de requisitos.
 
 | Modelo / referencia | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nick17728/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 264,39 ± 13,99 (no verificado) | No disponible | HuggingFace Hub, 0 descargas |
+| nick17728/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 264,39 ± 13,99 (no verificado) | No disponible | Hugging Face Hub, 0 descargas |
 | Agentes A2C sobre LunarLander-v3 | A2C | LunarLander-v3 | No disponible | No disponible | No disponible en la información proporcionada |
 | Agentes DQN sobre LunarLander-v3 | DQN | LunarLander-v3 | No disponible | No disponible | No disponible en la información proporcionada |
 | Agente PPO del RL Zoo de stable-baselines3 | PPO | LunarLander-v3 | No disponible | MIT (licencia de la librería, no del agente) | Repositorio de RL Zoo de stable-baselines3 |
@@ -104,7 +104,7 @@ Criterio de referencia: la literatura de Gymnasium emplea habitualmente una reco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nick17728/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/nick17728/ppo-LunarLander-v3
 - Librería stable-baselines3 (enlace incluido en la model card): https://github.com/DLR-RM/stable-baselines3
 - Documentación de stable-baselines3: https://stable-baselines3.readthedocs.io/
 - Repositorio RL Zoo de stable-baselines3 (referencia de agentes preentrenados): https://github.com/DLR-RM/rl-baselines3-zoo

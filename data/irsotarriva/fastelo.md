@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fastelo es un sistema de ajedrez compuesto por tres transformadores pequenos (aproximadamente 7 millones de parametros cada uno) disenados para jugar con un nivel humano ajustable y para estimar el nivel de un jugador humano. Lo desarrolla el usuario irsotarriva y se publica en HuggingFace bajo licencia GPL-3.0. El problema que resuelve es doble: por un lado, generar jugadas que imiten el comportamiento humano a una fuerza concreta (no que jueguen lo mejor posible); por otro, leer una partida jugada y deducir el Elo de ambos jugadores con una desviacion estandar asociada.
+fastelo es un sistema de ajedrez compuesto por tres transformadores pequenos (aproximadamente 7 millones de parametros cada uno) disenados para jugar con un nivel humano ajustable y para estimar el nivel de un jugador humano. Lo desarrolla el usuario irsotarriva y se publica en Hugging Face bajo licencia GPL-3.0. El problema que resuelve es doble: por un lado, generar jugadas que imiten el comportamiento humano a una fuerza concreta (no que jueguen lo mejor posible); por otro, leer una partida jugada y deducir el Elo de ambos jugadores con una desviacion estandar asociada.
 
 El sistema consta de un actor (distribucion de jugadas condicionada por la posicion, el Elo propio y el Elo del rival), un modelo fuerte (la version previa del actor destilada de Leela Chess Zero, que se mezcla para objetivos por encima de unos 2100) y un critico (transformador causal que estima el Elo tras cada jugada). Cada red usa un transformador pequeno: 64 tokens de casilla mas 3 tokens de contexto, dimension d=256 y 8 capas en el caso del actor y del modelo fuerte.
 
@@ -93,7 +93,7 @@ Sobre jugadores sinteticos con fuerza distinta por fase, evaluados en una escale
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fastelo | Ajedrez humano condicionado por Elo + critico de rating | ~7M por red (tres redes) | 67 tokens de entrada en el actor; partida completa en el critico | GPL-3.0 | HuggingFace y Space de demo |
+| fastelo | Ajedrez humano condicionado por Elo + critico de rating | ~7M por red (tres redes) | 67 tokens de entrada en el actor; partida completa en el critico | GPL-3.0 | Hugging Face y Space de demo |
 | Maia Chess | Redes de ajedrez humano por brackets de rating | no disponible | no disponible | no disponible | Publico |
 | Leela Chess Zero | Motor de fuerza maxima (red T1 como profesor) | no disponible | no disponible | GPL-3.0 | Publico |
 
@@ -113,7 +113,7 @@ fastelo se diferencia de los motores clasicos por condicionar la politica al Elo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/irsotarriva/fastelo
+- Modelo en Hugging Face: https://huggingface.co/irsotarriva/fastelo
 - Space de demostracion: https://huggingface.co/spaces/irsotarriva/fastelo
 - Base de datos abierta de Lichess: https://database.lichess.org/
 - Leela Chess Zero: https://lczero.org/

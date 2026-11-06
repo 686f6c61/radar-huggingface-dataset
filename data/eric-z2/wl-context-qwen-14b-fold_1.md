@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`eric-z2/WL-context-qwen-14b-fold_1` es un modelo publicado en HuggingFace por el usuario `eric-z2` cuyo repositorio contiene pesos en formato `safetensors` y está etiquetado con la librería `transformers`. La model card asociada es la plantilla automática que HuggingFace genera al subir un modelo: no incluye descripción, autores, datos de entrenamiento, licencia ni resultados de evaluación. El identificador del repositorio sugiere una relación con la familia Qwen de 14 000 millones de parámetros y el sufijo `fold_1` apunta a un experimento serializado (posible partición de validación cruzada o miembro de una serie de variantes), pero ninguno de esos extremos está confirmado en la información disponible.
+`eric-z2/WL-context-qwen-14b-fold_1` es un modelo publicado en Hugging Face por el usuario `eric-z2` cuyo repositorio contiene pesos en formato `safetensors` y está etiquetado con la librería `transformers`. La model card asociada es la plantilla automática que Hugging Face genera al subir un modelo: no incluye descripción, autores, datos de entrenamiento, licencia ni resultados de evaluación. El identificador del repositorio sugiere una relación con la familia Qwen de 14 000 millones de parámetros y el sufijo `fold_1` apunta a un experimento serializado (posible partición de validación cruzada o miembro de una serie de variantes), pero ninguno de esos extremos está confirmado en la información disponible.
 
-El tamaño del repositorio, 0,1 GB, es incompatible con los pesos completos de un transformer de 14B en precisión de 16 bits (que rondarían los 28 GB). Esto indica que el repositorio contiene o bien un adaptador de bajo rango (LoRA/QLoRA), o bien un subconjunto reducido de tensores, o bien un checkpoint incompleto. La etiqueta `endpoints_compatible` sugiere que el autor pretende desplegarlo mediante Inference Endpoints de HuggingFace.
+El tamaño del repositorio, 0,1 GB, es incompatible con los pesos completos de un transformer de 14B en precisión de 16 bits (que rondarían los 28 GB). Esto indica que el repositorio contiene o bien un adaptador de bajo rango (LoRA/QLoRA), o bien un subconjunto reducido de tensores, o bien un checkpoint incompleto. La etiqueta `endpoints_compatible` sugiere que el autor pretende desplegarlo mediante Inference Endpoints de Hugging Face.
 
 La relevancia de esta ficha es fundamentalmente metodológica: se trata de un ejemplo de publicación sin documentación, sin licencia declarada y con cero descargas, lo que lo hace inadecuado para uso en producción sin una inspección previa de los pesos. Cualquier evaluación técnica debe partir de la descarga y análisis del contenido real del repositorio, no de su model card.
 
@@ -26,9 +26,9 @@ La relevancia de esta ficha es fundamentalmente metodológica: se trata de un ej
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura. El repositorio declara la librería `transformers` y formato `safetensors`, lo que implica pesos compatibles con el ecosistema HuggingFace, pero la model card no especifica si se trata de un transformer denso, una mezcla de expertos, un modelo híbrido o cualquier otra variante. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de ajuste por instrucciones, RLHF o DPO.
+No hay información publicada sobre la arquitectura. El repositorio declara la librería `transformers` y formato `safetensors`, lo que implica pesos compatibles con el ecosistema Hugging Face, pero la model card no especifica si se trata de un transformer denso, una mezcla de expertos, un modelo híbrido o cualquier otra variante. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de ajuste por instrucciones, RLHF o DPO.
 
-Un detalle relevante para no malinterpretar los metadatos: la etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre este modelo, sino a la referencia de Lacoste et al. (2019) sobre estimación de emisiones de carbono, que aparece citada en la plantilla estándar de model card de HuggingFace. Es, por tanto, ruido de plantilla y no evidencia de una publicación científica asociada.
+Un detalle relevante para no malinterpretar los metadatos: la etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre este modelo, sino a la referencia de Lacoste et al. (2019) sobre estimación de emisiones de carbono, que aparece citada en la plantilla estándar de model card de Hugging Face. Es, por tanto, ruido de plantilla y no evidencia de una publicación científica asociada.
 
 El reducido tamaño del repositorio (0,1 GB) frente a los ~28 GB que ocuparían los pesos completos de un modelo de 14B en fp16 sugiere que el contenido real es un adaptador, un delta de pesos o un shard parcial. Confirmar esto requiere inspeccionar el índice de tensores del repositorio, algo que no puede resolverse con los metadatos disponibles.
 
@@ -101,7 +101,7 @@ Los datos de los modelos de referencia se incluyen solo como delimitación de ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_1
+- Repositorio en Hugging Face: https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_1
 - Referencia citada en la plantilla de model card (huella de carbono de modelos de aprendizaje automático, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto asociada, mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales asociados a este modelo en la busqueda realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Supissara/thai-qa-lab-model` es un ajuste fino (fine-tuning) de GPT-2 realizado por un estudiante llamado Supissara, orientado a tareas de preguntas y respuestas (QA) en tailandés. El dominio de conocimiento se limita exclusivamente al pez payaso (clownfish), sobre el que se generaron 3000 pares de preguntas y respuestas que constituyen el conjunto de datos de entrenamiento (`clownfish_3000`). El modelo se publica en HuggingFace con licencia MIT y utiliza el formato de pesos `safetensors`.
+El modelo `Supissara/thai-qa-lab-model` es un ajuste fino (fine-tuning) de GPT-2 realizado por un estudiante llamado Supissara, orientado a tareas de preguntas y respuestas (QA) en tailandés. El dominio de conocimiento se limita exclusivamente al pez payaso (clownfish), sobre el que se generaron 3000 pares de preguntas y respuestas que constituyen el conjunto de datos de entrenamiento (`clownfish_3000`). El modelo se publica en Hugging Face con licencia MIT y utiliza el formato de pesos `safetensors`.
 
 La arquitectura es la de GPT-2, un transformer decoder-only con 124.449.024 parámetros, un tamaño relativamente pequeño que lo hace accesible para ejecución en hardware modesto. El proyecto tiene un carácter claramente experimental y académico, ya que no se han publicado resultados de benchmarks ni información detallada sobre el proceso de entrenamiento. Su relevancia radica en servir como ejemplo de fine-tuning de un modelo de lenguaje en un dominio muy específico y en tailandés, un idioma con menos recursos que el inglés.
 
@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 124M parametros, el modelo en precision FP32 ocupa aproximadamente 500 MB. Con cuantizacion a 8 bits se reduce a unos 125 MB, y con 4 bits a unos 65 MB, aunque estos valores son estimaciones teoricas y no estan confirmados por el autor.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, RTX 3050) es suficiente para ejecutar el modelo en FP32. Tambien puede ejecutarse en CPU sin problemas.
 - Capacidad en GPU de consumo: si, es compatible con GPUs de consumo como la RTX 4090, aunque resulta sobredimensionado para este modelo.
-- Opciones de despliegue: puede cargarse con la libreria Transformers de HuggingFace, ejecutarse con llama.cpp si se convierte a GGUF, o desplegarse en servidores de inferencia como vLLM o TGI, aunque para un modelo tan pequeno la opcion mas sencilla es ejecutarlo directamente con Transformers.
+- Opciones de despliegue: puede cargarse con la libreria Transformers de Hugging Face, ejecutarse con llama.cpp si se convierte a GGUF, o desplegarse en servidores de inferencia como vLLM o TGI, aunque para un modelo tan pequeno la opcion mas sencilla es ejecutarlo directamente con Transformers.
 - Latencia y throughput: no disponibles. Al ser un modelo pequeno, la latencia en una GPU moderna seria de decenas de milisegundos, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Supissara/thai-qa-lab-model | 124.449.024 | no disponible | th | MIT | HuggingFace |
-| GPT-2 pequeno (base, sin fine-tuning) | 124.449.024 | 1024 tokens (estandar) | en (principalmente) | MIT | HuggingFace |
-| WangChanGLM (GPT-2 fine-tuned en tailandes) | 124.000.000 | no disponible | th | no disponible | HuggingFace (no confirmado) |
+| Supissara/thai-qa-lab-model | 124.449.024 | no disponible | th | MIT | Hugging Face |
+| GPT-2 pequeno (base, sin fine-tuning) | 124.449.024 | 1024 tokens (estandar) | en (principalmente) | MIT | Hugging Face |
+| WangChanGLM (GPT-2 fine-tuned en tailandes) | 124.000.000 | no disponible | th | no disponible | Hugging Face (no confirmado) |
 
 No se dispone de comparativas publicadas de rendimiento entre estos modelos. Los datos de GPT-2 base se incluyen como referencia por su arquitectura identica, pero no hay evidencia de que el modelo fine-tuned supere o iguale al base en tareas generales.
 
@@ -78,6 +78,6 @@ No se dispone de comparativas publicadas de rendimiento entre estos modelos. Los
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Supissara/thai-qa-lab-model
+- Hugging Face: https://huggingface.co/Supissara/thai-qa-lab-model
 - Paper referenciado en los metadatos (Lacoste et al. 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - No se han encontrado repositorios, demos, papers del modelo ni otros enlaces relevantes en la busqueda web.

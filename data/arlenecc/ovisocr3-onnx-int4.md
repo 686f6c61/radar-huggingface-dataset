@@ -102,7 +102,7 @@ Frente a otros OCR basados en visión-lenguaje (GOT-OCR2.0, dots.ocr, olmOCR, Pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arlenecc/OvisOCR3-ONNX-int4
+- Repositorio Hugging Face: https://huggingface.co/arlenecc/OvisOCR3-ONNX-int4
 - Fichero principal: `onnx/ovisocr3_int4_single.onnx` (1,16 GiB), dentro del repositorio anterior
 - Scripts incluidos en el repo: `run_ocr.py` (CLI de inferencia), `single_model.py` (envoltorio `OvisSingle`), `ort_runner.py`, `preprocess.py`, `22_check_single.py` (verificación de equivalencia)
 - Paper, blog, demo o repositorio del modelo base OvisOCR3: no disponible en la información proporcionada

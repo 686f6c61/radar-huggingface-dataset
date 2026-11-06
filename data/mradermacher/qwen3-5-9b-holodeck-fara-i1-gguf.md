@@ -21,7 +21,7 @@ La relevancia de este repositorio radica en que ofrece el modelo en múltiples n
 No se dispone de información detallada sobre la arquitectura del modelo base `nightmedia/Qwen3.5-9B-Holodeck-Fara`. Dado que pertenece a la familia Qwen3.5 y tiene 8,95B parámetros, es razonable asumir una arquitectura transformer densa similar a la de Qwen3-9B, pero no se puede confirmar sin documentación oficial. El repositorio GGUF de mradermacher es una conversión de los pesos originales (formato safetensors) a GGUF con cuantizaciones de tipo imatrix, lo que implica un proceso de calibración para optimizar la calidad de la cuantización. No hay datos sobre el dataset de entrenamiento, ni sobre técnicas de alineación como RLHF o DPO.
 
 ## Capacidades
-- Generacion de texto conversacional: el modelo está etiquetado como "conversational" en HuggingFace, lo que sugiere que está optimizado para diálogo multi-turno.
+- Generacion de texto conversacional: el modelo está etiquetado como "conversational" en Hugging Face, lo que sugiere que está optimizado para diálogo multi-turno.
 - Compatibilidad con motores GGUF: puede ejecutarse en llama.cpp, Ollama, LM Studio y otros entornos que soporten este formato.
 - Flexibilidad de cuantizacion: la amplia gama de cuantizaciones permite ajustar el equilibrio entre calidad y consumo de memoria.
 - Capacidades de razonamiento: al ser un modelo de la familia Qwen3.5, probablemente hereda capacidades de razonamiento y generación de código, aunque no hay benchmarks que lo confirmen.

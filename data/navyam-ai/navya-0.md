@@ -4,7 +4,7 @@
 
 Navya-0 es un modelo de lenguaje base desarrollado por Navyam AI (Bachatt), entrenado desde cero sobre un corpus India-first centrado en finanzas personales, inglés y hindi/hinglish. Con aproximadamente 57,7 millones de parámetros y un tokenizer personalizado de 64k, es el primer modelo de la familia Navya y una prueba de concepto para validar la receta de entrenamiento de modelos financieros indios.
 
-El modelo está pensado para preguntas y respuestas sobre finanzas personales en India, y se distribuye bajo licencia Apache-2.0. Su arquitectura es de tipo Transformer (etiqueta "llama" en HuggingFace), aunque no se especifica la longitud de contexto ni los datos de entrenamiento.
+El modelo está pensado para preguntas y respuestas sobre finanzas personales en India, y se distribuye bajo licencia Apache-2.0. Su arquitectura es de tipo Transformer (etiqueta "llama" en Hugging Face), aunque no se especifica la longitud de contexto ni los datos de entrenamiento.
 
 A pesar de su tamaño reducido, su interés radica en la especialización del corpus y el tokenizer adaptado a la mezcla de inglés e hindi, lo que lo convierte en una base para experimentación y fine-tuning en el dominio financiero indio.
 
@@ -23,7 +23,7 @@ A pesar de su tamaño reducido, su interés radica en la especialización del co
 
 ## Arquitectura y entrenamiento
 
-Navya-0 es un modelo de tipo Transformer, con una arquitectura que sigue el diseño de la familia Llama (según la etiqueta "llama" en HuggingFace). Utiliza un tokenizer personalizado de 64k de vocabulario, diseñado para manejar inglés, hindi/hinglish y otros idiomas indios. Se trata de un modelo base, sin alineamiento por instrucciones ni RLHF/DPO.
+Navya-0 es un modelo de tipo Transformer, con una arquitectura que sigue el diseño de la familia Llama (según la etiqueta "llama" en Hugging Face). Utiliza un tokenizer personalizado de 64k de vocabulario, diseñado para manejar inglés, hindi/hinglish y otros idiomas indios. Se trata de un modelo base, sin alineamiento por instrucciones ni RLHF/DPO.
 
 El entrenamiento se realizó desde cero en 2026 sobre un corpus India-first compuesto por datos financieros y textos en inglés e hindi. No se han revelado el número total de tokens ni la composición exacta del dataset. El autor indica que es una "proof-of-recipe run", es decir, una prueba de concepto para validar el proceso de entrenamiento antes de escalar a modelos mayores de la familia Navya.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - El modelo tiene 57.680.384 parámetros. En precisión fp32 ocupa aproximadamente 230 MB; en fp16, unos 115 MB.
 - No requiere GPU: puede ejecutarse en CPU para inferencia básica. En GPU, cualquier tarjeta con 1 GB de VRAM es suficiente (RTX 3050, Jetson, etc.).
-- Se puede desplegar con HuggingFace Transformers, y según las etiquetas es compatible con text-generation-inference. También puede ejecutarse con vLLM dado que la arquitectura es de tipo Llama, aunque no es necesario por su tamaño.
+- Se puede desplegar con Hugging Face Transformers, y según las etiquetas es compatible con text-generation-inference. También puede ejecutarse con vLLM dado que la arquitectura es de tipo Llama, aunque no es necesario por su tamaño.
 - La latencia estimada es muy baja, pero no se dispone de mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -72,5 +72,5 @@ No se dispone de datos de benchmarks en la información proporcionada, por lo qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/navyam-ai/navya-0
+- Hugging Face: https://huggingface.co/navyam-ai/navya-0
 - Código: https://github.com/bachatt-app/navyam-gpt

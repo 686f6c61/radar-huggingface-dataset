@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es el nombre que aparece en la model card del repositorio `kaggle-benchmarks-leads/MyAwesomeModel-TestRepo`, publicado en HuggingFace por el usuario `kaggle-benchmarks-leads`. Se trata de un repositorio de prueba: acumula 0 descargas y 0 likes, tiene un tamano de 0.0 GB (es decir, no contiene pesos verificables) y fue creado y actualizado el mismo dia (11 de septiembre de 2026), lo que apunta a un artefacto de testeo y no a un modelo desplegable en produccion.
+MyAwesomeModel es el nombre que aparece en la model card del repositorio `kaggle-benchmarks-leads/MyAwesomeModel-TestRepo`, publicado en Hugging Face por el usuario `kaggle-benchmarks-leads`. Se trata de un repositorio de prueba: acumula 0 descargas y 0 likes, tiene un tamano de 0.0 GB (es decir, no contiene pesos verificables) y fue creado y actualizado el mismo dia (11 de septiembre de 2026), lo que apunta a un artefacto de testeo y no a un modelo desplegable en produccion.
 
 Existe una contradiccion tecnica relevante entre los metadatos y la model card. Las etiquetas del repositorio indican `bert`, `feature-extraction` y `pytorch`, es decir, un encoder tipo BERT orientado a extraccion de caracteristicas. Sin embargo, el README describe un modelo de razonamiento generativo con mejoras en matemáticas, programacion, function calling, modo de pensamiento (thinking) y plantillas para busqueda web. Ninguna de las dos descripciones puede confirmarse con los datos disponibles.
 
@@ -114,7 +114,7 @@ No disponible. No se identifican modelos comparables porque se desconoce el tama
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/kaggle-benchmarks-leads/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/kaggle-benchmarks-leads/MyAwesomeModel-TestRepo
 - Pagina principal de Kaggle (resultado de busqueda generico, no especifico del modelo): https://www.kaggle.com/
 - Datasets de Kaggle (resultado generico): https://www.kaggle.com/datasets
 - Wikipedia en frances sobre Kaggle (resultado generico): https://fr.wikipedia.org/wiki/Kaggle

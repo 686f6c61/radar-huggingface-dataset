@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| abalayla/mini-nabd | 1,78 mil millones | 2048 recomendados | GGUF Q4_K_M | Apache-2.0 | HuggingFace, 0 descargas | Cuantizacion del base sin ajuste adicional en v0; personalidad via system prompt |
+| abalayla/mini-nabd | 1,78 mil millones | 2048 recomendados | GGUF Q4_K_M | Apache-2.0 | Hugging Face, 0 descargas | Cuantizacion del base sin ajuste adicional en v0; personalidad via system prompt |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,78 mil millones | No especificado en la informacion disponible | safetensors (upstream) | Apache-2.0 | Repositorio oficial del modelo base | Mismo peso subyacente sin cuantizar; no incorpora el tono dialectal egipcio |
 | Otros modelos pequenos de chat en arabe o dialectal | No disponible | No disponible | No disponible | No disponible | No disponible | No se han encontrado alternativas comparables en la informacion proporcionada |
 
@@ -97,7 +97,7 @@ La busqueda web realizada no devolvio resultados tecnicos relevantes (unicamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abalayla/mini-nabd
+- Modelo en Hugging Face: https://huggingface.co/abalayla/mini-nabd
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - llama.cpp: https://github.com/ggerganov/llama.cpp
 - llama-cpp-python: https://github.com/abetlen/llama-cpp-python

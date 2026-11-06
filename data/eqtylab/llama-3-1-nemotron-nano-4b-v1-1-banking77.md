@@ -17,7 +17,7 @@ Su relevancia actual es la de un artefacto de nicho bien documentado: es pequeno
 | Longitud de contexto | No especificada en la ficha del modelo; el ejemplo de despliegue con vLLM del autor fija `--max-model-len 8192` |
 | Tipos de cuantizacion | No disponible. El autor solo publica pesos en bfloat16; no se incluyen variantes GGUF/AWQ/GPTQ |
 | Idiomas soportados | Ingles (en) |
-| Licencia | NVIDIA Open Model License (identificador `other` en HuggingFace) |
+| Licencia | NVIDIA Open Model License (identificador `other` en Hugging Face) |
 | Formato de pesos | safetensors (291 tensores, 9.025.492.992 bytes), biblioteca transformers |
 | Tarea declarada | text-generation (uso previsto: clasificacion de intenciones banking77) |
 | Conjunto de datos de ajuste | PolyAI/banking77 (9.993 filas de entrenamiento) |
@@ -95,7 +95,7 @@ La busqueda web realizada no devolvio resultados tecnicos relevantes (unicamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EQTYLab/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77
+- Modelo en Hugging Face: https://huggingface.co/EQTYLab/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77
 - Modelo base: https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/PolyAI/banking77
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

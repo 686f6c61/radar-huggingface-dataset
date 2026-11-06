@@ -84,7 +84,7 @@ Los datos de parámetros de los modelos de OpenAI se han tomado de la tabla incl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jinstudio/whisper-tiny.en
+- Hugging Face: https://huggingface.co/Jinstudio/whisper-tiny.en
 - Paper original: https://arxiv.org/abs/2212.04356
 - Repositorio original: https://github.com/openai/whisper
-- Modelo original en HuggingFace: https://huggingface.co/openai/whisper-tiny.en
+- Modelo original en Hugging Face: https://huggingface.co/openai/whisper-tiny.en

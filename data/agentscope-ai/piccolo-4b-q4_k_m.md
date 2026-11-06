@@ -101,7 +101,7 @@ Para alternativas de otros autores: no disponible.
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/agentscope-ai/Piccolo-4B-Q4_K_M
+- Hugging Face (esta cuantización): https://huggingface.co/agentscope-ai/Piccolo-4B-Q4_K_M
 - Modelo base: https://huggingface.co/agentscope-ai/Piccolo-4B
 - Repositorio GitHub: https://github.com/agentscope-ai/Piccolo
 - Matriz de modelos: https://github.com/agentscope-ai/Piccolo/blob/0d1b3d4544766a55d137b979e8c87141bf182059/docs/MODELS.md

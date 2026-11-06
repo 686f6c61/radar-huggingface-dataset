@@ -13,7 +13,7 @@ Su relevancia es metodológica, no de producto: es una pieza de ablación (rango
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Adaptador LoRA (PEFT) de rango 1 sobre `down_proj` de cada capa del decodificador de Qwen3.5-9B-Base; no es un modelo autónomo |
-| Parametros totales | No disponible (el adaptador es de rango 1; el modelo base tiene 9B). Tamaño de repo en HuggingFace: 0,0 GB |
+| Parametros totales | No disponible (el adaptador es de rango 1; el modelo base tiene 9B). Tamaño de repo en Hugging Face: 0,0 GB |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la información proporcionada; la hereda del modelo base |
 | Tipos de cuantizacion | No aplica al adaptador (pesos en safetensors); la cuantización posible depende del modelo base tras el merge. No se indican formatos GGUF publicados |
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- El adaptador en sí ocupa del orden de unos pocos megabytes (rango 1 sobre `down_proj` en todas las capas); el repo figura como 0,0 GB en HuggingFace. No añade VRAM apreciable en inferencia.
+- El adaptador en sí ocupa del orden de unos pocos megabytes (rango 1 sobre `down_proj` en todas las capas); el repo figura como 0,0 GB en Hugging Face. No añade VRAM apreciable en inferencia.
 - El coste real lo determina el modelo base de 9B tras el merge. Estimaciones aritméticas a partir del tamaño: ~18 GB de pesos en bf16/fp16 (más caché KV y activaciones, en torno a 20-24 GB en total con contexto moderado), ~9-10 GB en cuantización de 8 bits y ~5-6 GB en 4 bits.
 - GPU recomendadas: A100 40 GB u 80 GB, H100 80 GB y L40S 48 GB para bf16 sin compromisos; RTX 4090 24 GB permite bf16 muy justo o 8 bits con holgura.
 - En GPU de consumo de 12 GB (por ejemplo RTX 5070) es necesario cuantizar a 8 o 4 bits; una fuente externa reporta ~53 tok/s para Qwen3.5 9B Instruct en ese modelo, cifra no verificada para este adaptador.
@@ -91,7 +91,7 @@ La comparación relevante es interna a la colección del autor: misma familia ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-msm-wine-gg-w1-qwen3.5-9b-base-r1down
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-msm-wine-gg-w1-qwen3.5-9b-base-r1down
 - Dataset de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-msm-corpora
 - Adaptador hermano de rango 64 (packaging v3 + fine-tune de queso): https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-gg-aft-setB-r64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

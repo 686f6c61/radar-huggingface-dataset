@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SoccerTwos (identificador `tvrpranay/SoccerTwos`) no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con el algoritmo POCA del toolkit ML-Agents de Unity para resolver el entorno SoccerTwos: un escenario de fútbol 2 contra 2 en el que cuatro agentes (dos por equipo) compiten en un campo simulado. El autor, `tvrpranay`, lo publica como parte del curso de Deep RL de HuggingFace (etiquetas `poca` y `deep-rl-course`), por lo que se trata de un artefacto educativo y de demostración más que de un componente listo para producción.
+SoccerTwos (identificador `tvrpranay/SoccerTwos`) no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con el algoritmo POCA del toolkit ML-Agents de Unity para resolver el entorno SoccerTwos: un escenario de fútbol 2 contra 2 en el que cuatro agentes (dos por equipo) compiten en un campo simulado. El autor, `tvrpranay`, lo publica como parte del curso de Deep RL de Hugging Face (etiquetas `poca` y `deep-rl-course`), por lo que se trata de un artefacto educativo y de demostración más que de un componente listo para producción.
 
 El modelo se distribuye en formato ONNX y se integra con la librería `ml-agents`, lo que permite cargarlo directamente en Unity mediante los backends de inferencia compatibles (ONNX Runtime o Sentis/Barracuda). No hay información pública sobre el número de parámetros, la arquitectura de red concreta ni la composición del entrenamiento; el repositorio ocupa menos de 0,05 GB, lo que es coherente con una red neuronal pequeña típica de estos entornos de control continuo.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y acotada al ámbito didáctico: sirve como referencia
 
 ## Arquitectura y entrenamiento
 
-El agente se enmarca en el ecosistema Unity ML-Agents y utiliza el algoritmo etiquetado como POCA, una variante de policy gradient con recorte de la actualización de la política empleada en el material del curso de Deep RL de HuggingFace. La model card no documenta la topologia exacta de la red (numero de capas, unidades por capa, tipo de observaciones ni espacio de acciones), por lo que no es posible detallar la arquitectura más alla de su naturaleza de red neuronal pequena orientada a control.
+El agente se enmarca en el ecosistema Unity ML-Agents y utiliza el algoritmo etiquetado como POCA, una variante de policy gradient con recorte de la actualización de la política empleada en el material del curso de Deep RL de Hugging Face. La model card no documenta la topologia exacta de la red (numero de capas, unidades por capa, tipo de observaciones ni espacio de acciones), por lo que no es posible detallar la arquitectura más alla de su naturaleza de red neuronal pequena orientada a control.
 
 Tampoco hay datos sobre volumen de entrenamiento, número de pasos de simulación, hiperparámetros, composición del escenario ni uso de técnicas adicionales como self-play, curriculum learning o normalización de recompensas. El único dato declarado por el autor es el resultado de evaluación sobre el entorno `ML-Agents-SoccerTwos` con un `mean_reward` de 0,00, marcado como no verificado en el `model-index`.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre volumen de entrenamiento, número de pasos de simulació
 
 ## Casos de uso
 
-- Docencia de aprendizaje por refuerzo: sirve como ejemplo reproducible de un agente POCA publicado en HuggingFace para el entorno SoccerTwos dentro de un curso de Deep RL.
+- Docencia de aprendizaje por refuerzo: sirve como ejemplo reproducible de un agente POCA publicado en Hugging Face para el entorno SoccerTwos dentro de un curso de Deep RL.
 - Practica de despliegue en Unity: permite ejercitar el pipeline completo de exportacion a ONNX y carga en un proyecto Unity con ML-Agents.
 - Reproduccion de experimentos: punto de partida para repetir el entrenamiento con hiperparámetros distintos y comparar curvas de recompensa.
 - Evaluacion de algoritmos de policy gradient: banco de pruebas minimo para comparar POCA con PPO en un escenario multiagente de complejidad baja.
@@ -88,10 +88,10 @@ No se dispone de informacion sobre otros agentes publicados para el mismo entorn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tvrpranay/SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/tvrpranay/SoccerTwos
 - Repositorio de Unity ML-Agents: no disponible en la informacion proporcionada
 - Documentacion del entorno SoccerTwos: no disponible en la informacion proporcionada
-- Curso de Deep RL de HuggingFace (referencia de las etiquetas): no disponible en la informacion proporcionada
+- Curso de Deep RL de Hugging Face (referencia de las etiquetas): no disponible en la informacion proporcionada
 - Papers o articulos tecnicos: no disponible en la informacion proporcionada
 
 Nota: los resultados de busqueda web facilitados no contienen enlaces relevantes al modelo ni a su entorno; el contenido recuperado no guarda relacion con la ficha.

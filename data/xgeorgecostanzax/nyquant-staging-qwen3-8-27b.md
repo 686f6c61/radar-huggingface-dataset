@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado frente a modelos de otras famili
 
 ## Enlaces
 
-- Repositorio de staging en HuggingFace: https://huggingface.co/XGeorgeCostanzaX/nyquant-staging-qwen3.8-27b
+- Repositorio de staging en Hugging Face: https://huggingface.co/XGeorgeCostanzaX/nyquant-staging-qwen3.8-27b
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de instalación y ejecución (TheQuery): https://www.thequery.in/guides/qwen-3-8-27b-install-run
 - Guía de despliegue local, cuantizaciones y errores (BestLLMfor): https://bestllmfor.com/guides/qwen38-27b-local-deployment/

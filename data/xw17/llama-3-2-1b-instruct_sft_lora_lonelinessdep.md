@@ -17,7 +17,7 @@ La model card es autogenerada y no contiene información relevante: no se especi
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | Safetensors (según tags de HuggingFace) |
+| Formato de pesos | Safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -34,7 +34,7 @@ No se dispone de información sobre aplicaciones prácticas validadas. Dado que 
 - Asistencia conversacional en dominios específicos (por ejemplo, apoyo emocional), siempre que se valide la calidad y seguridad de las respuestas.
 - Prototipos de investigación sobre ajuste fino con LoRA en modelos pequeños.
 - Experimentos de comparación de técnicas de SFT en modelos Llama de 1B.
-- Uso educativo para demostrar el flujo de trabajo de fine-tuning con HuggingFace Transformers.
+- Uso educativo para demostrar el flujo de trabajo de fine-tuning con Hugging Face Transformers.
 - Pruebas de integración con `transformers` y `safetensors` en entornos de desarrollo.
 - Análisis de sesgos y alucinaciones en modelos ajustados sin documentación.
 
@@ -63,5 +63,5 @@ No disponible. No se han encontrado datos de benchmarks ni información suficien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_lonelinessdep
+- Hugging Face: https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_lonelinessdep
 - No se han encontrado otros enlaces relevantes en la búsqueda web (papers, blogs, repositorios o demos).

@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables especificos para generaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ab12321/llama3.1-8b-lora-shakespearean-bard
+- Repositorio Hugging Face: https://huggingface.co/ab12321/llama3.1-8b-lora-shakespearean-bard
 - Modelo base (unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo original de Meta (meta-llama/Llama-3.1-8B-Instruct): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Documentacion de Llama 3.1 en Meta: https://developer.meta.com/ai/models/llama-3/

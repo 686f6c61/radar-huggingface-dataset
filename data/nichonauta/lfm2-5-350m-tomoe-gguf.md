@@ -80,9 +80,9 @@ No hay datos públicos de comparativa con otros modelos de 350M (p. ej., SmolLM-
 
 ## Enlaces
 
-- HuggingFace del modelo GGUF: https://huggingface.co/Nichonauta/LFM2.5-350M-ToMoE-GGUF
-- HuggingFace del modelo ToMoE (safetensors): https://huggingface.co/Nichonauta/LFM2.5-350M-ToMoE
-- HuggingFace del modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
+- Hugging Face del modelo GGUF: https://huggingface.co/Nichonauta/LFM2.5-350M-ToMoE-GGUF
+- Hugging Face del modelo ToMoE (safetensors): https://huggingface.co/Nichonauta/LFM2.5-350M-ToMoE
+- Hugging Face del modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-350m
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
 - ModelScope (GGUF oficial): https://www.modelscope.cn/models/LiquidAI/LFM2.5-350M-GGUF

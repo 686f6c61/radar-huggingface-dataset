@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VIGOR-27B | 27,78 B (denso) | No disponible | Clasificacion visual Safe/NSFW con JSON | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (base) | No disponible | No disponible | Modelo multimodal generalista | No disponible en la informacion | HuggingFace |
+| VIGOR-27B | 27,78 B (denso) | No disponible | Clasificacion visual Safe/NSFW con JSON | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (base) | No disponible | No disponible | Modelo multimodal generalista | No disponible en la informacion | Hugging Face |
 | Alternativas de clasificacion visual Safe/NSFW | No disponible | No disponible | Clasificacion de contenido visual | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible.
@@ -88,5 +88,5 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prithivMLmods/VIGOR-27B
+- Hugging Face: https://huggingface.co/prithivMLmods/VIGOR-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

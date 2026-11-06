@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Project LLM SFT v3 es un modelo multimodal de ~11,96 mil millones de parametros publicado por el usuario vosldtgbj en HuggingFace. Se trata de un ajuste supervisado (SFT) de la tercera iteracion del proyecto, construido sobre un modelo base ya sometido a un entrenamiento continuado previo (CPT 1.0 epoch, `cpt1-lora-15`). El modelo se apoya en la arquitectura `gemma4_unified` y se distribuye con pesos completos ya fusionados en formato Safetensors fragmentado.
+Project LLM SFT v3 es un modelo multimodal de ~11,96 mil millones de parametros publicado por el usuario vosldtgbj en Hugging Face. Se trata de un ajuste supervisado (SFT) de la tercera iteracion del proyecto, construido sobre un modelo base ya sometido a un entrenamiento continuado previo (CPT 1.0 epoch, `cpt1-lora-15`). El modelo se apoya en la arquitectura `gemma4_unified` y se distribuye con pesos completos ya fusionados en formato Safetensors fragmentado.
 
 La relevancia de esta ficha es limitada pero concreta: es un artefacto de investigacion orientado a la reproducibilidad de experimentos, la evaluacion offline y el estudio posterior, no un modelo listo para produccion ni un lanzamiento comercial. El autor lo describe explicitamente como archivo de pesos para reproduccion experimental, sin incluir estado de optimizador, scheduler ni datos de reanudacion de entrenamiento.
 
@@ -110,7 +110,7 @@ No se dispone de datos de rendimiento ni de especificaciones verificables de est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vosldtgbj/project-llm-sft-v3-l2-h0p5-seed20261006
+- Hugging Face: https://huggingface.co/vosldtgbj/project-llm-sft-v3-l2-h0p5-seed20261006
 - Modelo base (CPT): https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-02-lora-15
 - Licencia Gemma 4 referenciada: https://ai.google.dev/gemma/docs/gemma_4_license
 - vLLM (motor de inferencia): https://github.com/vllm-project/vllm

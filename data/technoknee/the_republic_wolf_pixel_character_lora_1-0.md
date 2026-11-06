@@ -2,7 +2,7 @@
 
 ## Resumen
 
-The_Republic_Wolf_pixel_character_lora_1.0 es un adaptador LoRA de difusion publicado por el usuario Technoknee en HuggingFace. Se trata de un peso auxiliar (no de un modelo completo) pensado para ser cargado sobre el modelo base rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v, una variante del modelo Wan 2.2 orientada a la generacion de imagen y video. El repositorio ocupa 0,6 GB y esta etiquetado con la libreria diffusers y el pipeline text-to-image.
+The_Republic_Wolf_pixel_character_lora_1.0 es un adaptador LoRA de difusion publicado por el usuario Technoknee en Hugging Face. Se trata de un peso auxiliar (no de un modelo completo) pensado para ser cargado sobre el modelo base rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v, una variante del modelo Wan 2.2 orientada a la generacion de imagen y video. El repositorio ocupa 0,6 GB y esta etiquetado con la libreria diffusers y el pipeline text-to-image.
 
 La model card es extremadamente escasa: el propio autor indica que se trata de un entrenamiento privado, que no ha superado ninguna prueba y que no recomienda su uso. No se documentan datos de entrenamiento, hiperparametros, composicion del dataset ni resultados cualitativos mas alla de una imagen de muestra. El `instance_prompt` figura como nulo, por lo que no hay una palabra de activacion documentada.
 
@@ -43,7 +43,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, el datas
 - Generacion de assets para maquetas: producir imagenes de referencia de personajes pixelados para presentaciones o documentos de diseno, siempre con revision humana posterior.
 - Pruebas de pipelines image-to-video: si el modelo base confirma su naturaleza i2v, emplear el adaptador para animar personajes pixel art en clips cortos de prueba.
 - Fine-tuning posterior: partir de este adaptador como inicializacion para un entrenamiento propio con un dataset mejor documentado y un instance prompt definido.
-- Docencia y divulgacion: ilustrar en talleres el flujo completo de entrenamiento y publicacion de un LoRA en HuggingFace, incluidos sus riesgos y limitaciones.
+- Docencia y divulgacion: ilustrar en talleres el flujo completo de entrenamiento y publicacion de un LoRA en Hugging Face, incluidos sus riesgos y limitaciones.
 
 ## Benchmarks y rendimiento
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| The_Republic_Wolf_pixel_character_lora_1.0 | LoRA sobre Wan 2.2 | no disponible (0,6 GB) | no aplica | apache-2.0 | HuggingFace, 0 descargas |
-| Modelo base rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v | Difusion image-to-video | no disponible | no aplica | no disponible | HuggingFace |
-| LoRAs de estilo pixel art sobre SDXL | LoRA sobre SDXL | variable | no aplica | variable | Amplia disponibilidad en HuggingFace |
+| The_Republic_Wolf_pixel_character_lora_1.0 | LoRA sobre Wan 2.2 | no disponible (0,6 GB) | no aplica | apache-2.0 | Hugging Face, 0 descargas |
+| Modelo base rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v | Difusion image-to-video | no disponible | no aplica | no disponible | Hugging Face |
+| LoRAs de estilo pixel art sobre SDXL | LoRA sobre SDXL | variable | no aplica | variable | Amplia disponibilidad en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Technoknee/The_Republic_Wolf_pixel_character_lora_1.0
+- Hugging Face: https://huggingface.co/Technoknee/The_Republic_Wolf_pixel_character_lora_1.0
 - Modelo base: https://huggingface.co/rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v
 - Repositorio de archivos: https://huggingface.co/Technoknee/The_Republic_Wolf_pixel_character_lora_1.0/tree/main

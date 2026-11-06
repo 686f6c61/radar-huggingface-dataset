@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KahoKobayashi es un modelo publicado en HuggingFace por el usuario Miku-chan. El repositorio, con identificador `Miku-chan/KahoKobayashi`, tiene un tamano de aproximadamente 0,1 GB y se creo el 2 de noviembre de 2026, con una unica actualizacion dos segundos despues de su creacion. El pipeline declarado no esta disponible, la licencia figura como desconocida y no se especifican idiomas soportados.
+KahoKobayashi es un modelo publicado en Hugging Face por el usuario Miku-chan. El repositorio, con identificador `Miku-chan/KahoKobayashi`, tiene un tamano de aproximadamente 0,1 GB y se creo el 2 de noviembre de 2026, con una unica actualizacion dos segundos despues de su creacion. El pipeline declarado no esta disponible, la licencia figura como desconocida y no se especifican idiomas soportados.
 
 La model card asociada esta practicamente vacia: unicamente contiene el campo `license: unknown`, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. No hay informacion sobre parametros, contexto, cuantizaciones ni formato de pesos. El modelo no registra descargas ni likes en el momento de la consulta.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre arquitectu
 - Evaluacion comparativa interna frente a modelos documentados, previa validacion de calidad.
 - Analisis de seguridad y comportamiento en entornos controlados.
 - Experimentacion con tecnicas de cuantizacion, si los pesos son convertibles.
-- Estudio de model cards incompletas y practicas de publicacion en HuggingFace.
+- Estudio de model cards incompletas y practicas de publicacion en Hugging Face.
 
 En todos los casos seria imprescindible inspeccionar primero los archivos del repositorio y confirmar la licencia antes de cualquier uso, incluido el no comercial.
 
@@ -78,5 +78,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Miku-chan/KahoKobayashi
+- Hugging Face: https://huggingface.co/Miku-chan/KahoKobayashi
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

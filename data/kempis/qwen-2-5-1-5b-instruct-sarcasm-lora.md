@@ -4,7 +4,7 @@
 
 Kempis/qwen-2.5-1.5b-instruct-Sarcasm-LoRA es un adaptador LoRA (PEFT) que se aplica sobre el modelo base unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit, una version cuantizada en 4 bits de Qwen2.5-1.5B-Instruct. No se trata, por tanto, de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango (0,1 GB en el repositorio) que modifican el comportamiento del modelo base. El autor figura como "Kempis" y el entrenamiento declarado en las etiquetas del repositorio es GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo, junto con las librerias TRL, Unsloth y Transformers.
 
-El nombre del adaptador indica que el ajuste busca modificar el estilo de respuesta hacia el sarcasmo o la ironia. El entrenamiento mediante GRPO implica que existe una funcion de recompensa que premia la produccion de respuestas sarcasticas, aunque la model card no documenta ni el dataset, ni la recompensa, ni los hiperparametros, ni el numero de pasos de entrenamiento. La model card publicada es la plantilla vacia por defecto de HuggingFace, con practicamente todos los campos marcados como "[More Information Needed]", por lo que la mayor parte de la informacion tecnica no esta disponible.
+El nombre del adaptador indica que el ajuste busca modificar el estilo de respuesta hacia el sarcasmo o la ironia. El entrenamiento mediante GRPO implica que existe una funcion de recompensa que premia la produccion de respuestas sarcasticas, aunque la model card no documenta ni el dataset, ni la recompensa, ni los hiperparametros, ni el numero de pasos de entrenamiento. La model card publicada es la plantilla vacia por defecto de Hugging Face, con practicamente todos los campos marcados como "[More Information Needed]", por lo que la mayor parte de la informacion tecnica no esta disponible.
 
 Su relevancia es limitada y muy especifica: sirve como ejemplo de ajuste fino por refuerzo de bajo coste sobre un modelo de 1,5B en 4 bits, ejecutable en GPU de consumo, y como caso de estudio de personalizacion estilistica (tono sarcastico) de un asistente conversacional. No hay descargas ni "likes" registrados, ni resultados de evaluacion publicados, ni licencia declarada, lo que impide recomendarlo para uso en produccion sin una evaluacion previa por parte del usuario.
 
@@ -97,7 +97,7 @@ La comparacion directa es limitada porque este repositorio contiene un adaptador
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kempis/qwen-2.5-1.5b-instruct-Sarcasm-LoRA
+- Repositorio Hugging Face: https://huggingface.co/Kempis/qwen-2.5-1.5b-instruct-Sarcasm-LoRA
 - Modelo base del adaptador: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

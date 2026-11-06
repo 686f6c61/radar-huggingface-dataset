@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SadTalker es un modelo de generación de vídeo de cabezas parlantes a partir de una única imagen estática y un clip de audio. Desarrollado por el equipo OpenTalker y presentado en CVPR 2023, el modelo es capaz de animar el rostro de una persona en una fotografía, sincronizando los labios con el audio y generando expresiones faciales naturales. El repositorio de HuggingFace `theabdullah-ch/SadTalker` contiene una copia del modelo con licencia MIT, aunque la model card es una plantilla genérica y no proporciona detalles técnicos adicionales. La relevancia actual del modelo radica en su uso para crear avatares, vídeos de presentación, doblaje y aplicaciones de comunicación, siendo una de las soluciones open source más conocidas en este ámbito.
+SadTalker es un modelo de generación de vídeo de cabezas parlantes a partir de una única imagen estática y un clip de audio. Desarrollado por el equipo OpenTalker y presentado en CVPR 2023, el modelo es capaz de animar el rostro de una persona en una fotografía, sincronizando los labios con el audio y generando expresiones faciales naturales. El repositorio de Hugging Face `theabdullah-ch/SadTalker` contiene una copia del modelo con licencia MIT, aunque la model card es una plantilla genérica y no proporciona detalles técnicos adicionales. La relevancia actual del modelo radica en su uso para crear avatares, vídeos de presentación, doblaje y aplicaciones de comunicación, siendo una de las soluciones open source más conocidas en este ámbito.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ La información proporcionada no incluye detalles sobre la arquitectura interna,
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de evaluación, y la búsqueda web no proporciona datos comparativos numéricos.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de evaluación, y la búsqueda web no proporciona datos comparativos numéricos.
 
 ## Requisitos de hardware
 
@@ -63,11 +63,11 @@ No se dispone de datos comparativos con otros modelos de generación de cabezas 
 - No se especifican restricciones de uso comercial más allá de la licencia MIT, que permite uso comercial con atribución.
 - El modelo no está diseñado para vídeo de cuerpo completo ni para múltiples personas en la misma imagen.
 - La sincronización labial puede fallar en idiomas con fonética muy distinta a la del entrenamiento, aunque no se detalla el conjunto de datos.
-- El repositorio de HuggingFace no incluye documentación técnica adicional, por lo que se recomienda consultar el repositorio oficial para un uso correcto.
+- El repositorio de Hugging Face no incluye documentación técnica adicional, por lo que se recomienda consultar el repositorio oficial para un uso correcto.
 
 ## Enlaces
 
-- [HuggingFace - theabdullah-ch/SadTalker](https://huggingface.co/theabdullah-ch/SadTalker)
+- [Hugging Face - theabdullah-ch/SadTalker](https://huggingface.co/theabdullah-ch/SadTalker)
 - [Sitio web oficial de SadTalker](https://sadtalker.ai/)
 - [Repositorio GitHub oficial - OpenTalker/SadTalker](https://github.com/OpenTalker/SadTalker)
 - [Página del proyecto en GitHub Pages](https://sadtalker.github.io/)

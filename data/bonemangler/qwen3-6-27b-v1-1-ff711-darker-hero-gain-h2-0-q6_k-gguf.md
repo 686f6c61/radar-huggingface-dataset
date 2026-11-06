@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 - VRAM estimada para inferencia: el archivo Q6_K pesa aproximadamente 22,4 GB, por lo que se recomienda al menos 24 GB de VRAM para cargar el modelo completo en GPU.
 - GPUs recomendadas: NVIDIA RTX 3090 o RTX 4090 (24 GB), A100 40GB, H100, o cualquier GPU con 24 GB o mas de VRAM.
 - Hardware de consumo: cabe en una RTX 3090 o RTX 4090 con 24 GB de VRAM. Tambien puede ejecutarse en Mac con Apple Silicon (M-series) con suficiente RAM unificada.
-- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama, LM Studio y cualquier runner compatible con GGUF. El modelo card incluye instrucciones especificas para llama.cpp con descarga directa desde HuggingFace.
+- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama, LM Studio y cualquier runner compatible con GGUF. El modelo card incluye instrucciones especificas para llama.cpp con descarga directa desde Hugging Face.
 - Alternativa sin GPU: puede ejecutarse en CPU con llama.cpp, aunque la velocidad sera significativamente menor para un modelo de 27B.
 - Latencia y throughput: no disponible en la informacion proporcionada; dependera del hardware, la cuantizacion y el runner utilizado.
 
@@ -83,7 +83,7 @@ Segun la informacion disponible, este modelo (y su base DavidAU) supera en rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BoneMangler/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-Q6_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BoneMangler/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-Q6_K-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0
 - Variante anterior del modelo base: https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-H2.0
 - Repositorio oficial de Qwen3.6: https://github.com/QwenLM/Qwen3.6

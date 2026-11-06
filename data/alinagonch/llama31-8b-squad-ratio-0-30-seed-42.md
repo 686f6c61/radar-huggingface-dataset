@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AlinaGonch/llama31-8b-squad-ratio-0.30-seed-42` es un ajuste fino publicado en HuggingFace por el usuario AlinaGonch. El identificador indica que parte de Llama 3.1 8B y que se ha entrenado sobre el dataset SQuAD (Stanford Question Answering Dataset, pregunta-respuesta extractiva) utilizando una fraccion de datos de 0,30 y la semilla 42, un patron tipico de experimento de ablacion academico mas que de modelo orientado a produccion. La model card es la plantilla autogenerada de HuggingFace y no aporta ninguna descripcion real: todos los campos de autor, tipo, licencia, datos e hiperparametros figuran como "[More Information Needed]".
+El modelo `AlinaGonch/llama31-8b-squad-ratio-0.30-seed-42` es un ajuste fino publicado en Hugging Face por el usuario AlinaGonch. El identificador indica que parte de Llama 3.1 8B y que se ha entrenado sobre el dataset SQuAD (Stanford Question Answering Dataset, pregunta-respuesta extractiva) utilizando una fraccion de datos de 0,30 y la semilla 42, un patron tipico de experimento de ablacion academico mas que de modelo orientado a produccion. La model card es la plantilla autogenerada de Hugging Face y no aporta ninguna descripcion real: todos los campos de autor, tipo, licencia, datos e hiperparametros figuran como "[More Information Needed]".
 
 El repositorio ocupa 0,2 GB, un tamano incompatible con los pesos completos de un modelo de 8 000 millones de parametros (que en bf16 rondarian los 16 GB). Esto sugiere que lo publicado son adaptadores tipo LoRA, pesos parciales o un artefacto derivado; conviene verificar el contenido del repositorio antes de intentar cargarlo. El modelo acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha, y la busqueda web no ha devuelto ninguna referencia tecnica, paper, blog o repositorio asociado: los unicos resultados obtenidos eran paginas de futbol turco sin relacion alguna con el modelo.
 
@@ -25,7 +25,7 @@ Por todo lo anterior, esta ficha debe leerse como un documento de evaluacion con
 
 No hay informacion verificable sobre el entrenamiento. El nombre del repositorio permite reconstruir la hipotesis mas plausible: ajuste supervisado (SFT) de Llama 3.1 8B sobre SQuAD con un subconjunto del 30 % de los datos y semilla 42, lo que encaja con un barrido de experimentos sobre fracciones de dataset y semillas. SQuAD es un corpus de pregunta-respuesta extractiva en ingles: dada una pregunta y un parrafo de contexto, el modelo aprende a localizar el fragmento de texto que contiene la respuesta. La combinacion "ratio-0.30-seed-42" sugiere que existen otros checkpoints hermanos con ratios y semillas distintas.
 
-La arquitectura subyacente de Llama 3.1 8B es un transformer decoder-only denso con normalizacion RMSNorm pre-normativa, activacion SwiGLU, codificacion posicional RoPE y grouped-query attention, entrenado por Meta sobre aproximadamente 15 billones de tokens y posteriormente alineado con SFT y DPO. Ninguno de estos detalles aparece en la model card de este repositorio. El unico tag tematico presente, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, y procede de la plantilla autogenerada de HuggingFace: no es un paper asociado al modelo ni aporta informacion sobre su entrenamiento.
+La arquitectura subyacente de Llama 3.1 8B es un transformer decoder-only denso con normalizacion RMSNorm pre-normativa, activacion SwiGLU, codificacion posicional RoPE y grouped-query attention, entrenado por Meta sobre aproximadamente 15 billones de tokens y posteriormente alineado con SFT y DPO. Ninguno de estos detalles aparece en la model card de este repositorio. El unico tag tematico presente, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, y procede de la plantilla autogenerada de Hugging Face: no es un paper asociado al modelo ni aporta informacion sobre su entrenamiento.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ Frente a estas alternativas, la unica ventaja diferencial de este checkpoint ser
 
 ## Limitaciones y advertencias
 
-- Model card vacia: es la plantilla autogenerada de HuggingFace, sin ninguna seccion completada, incluidos autor, datos de entrenamiento, hiperparametros y evaluacion.
+- Model card vacia: es la plantilla autogenerada de Hugging Face, sin ninguna seccion completada, incluidos autor, datos de entrenamiento, hiperparametros y evaluacion.
 - Licencia sin declarar: no se especifica licencia en el repositorio. Al derivar de Llama 3.1, lo previsible es que se aplique la Llama 3.1 Community License y sus restricciones (entre ellas, la clausula de nomenclatura para productos derivados), pero esto no esta confirmado por el autor. No debe asumirse uso comercial libre.
 - Repositorio de 0,2 GB: es demasiado pequeno para contener un modelo de 8B completo. Puede tratarse de adaptadores, de un checkpoint parcial o de un artefacto mal subido. Verificar el contenido antes de cualquier uso.
 - Sesgos: no documentados. Hereda los sesgos del corpus SQuAD y del modelo base Llama 3.1, ambos en ingles y con sobrerrepresentacion de determinados dominios y registros.
@@ -88,8 +88,8 @@ Frente a estas alternativas, la unica ventaja diferencial de este checkpoint ser
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.30-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.30-seed-42
 - Modelo base de referencia: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Dataset de referencia (SQuAD): https://rajpurkar.github.io/SQuAD-explorer/
-- Paper citado en el tag `arxiv:1910.09700` (Lacoste et al., 2019, emisiones de carbono; procede de la plantilla de HuggingFace, no es un paper del modelo): https://arxiv.org/abs/1910.09700
+- Paper citado en el tag `arxiv:1910.09700` (Lacoste et al., 2019, emisiones de carbono; procede de la plantilla de Hugging Face, no es un paper del modelo): https://arxiv.org/abs/1910.09700
 - Repositorio, paper, blog o demo del autor: no disponible. La busqueda web no devolvio ningun resultado relacionado con el modelo.

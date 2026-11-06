@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aura-fleet-gguf-part3` es un conjunto de pesos en formato GGUF publicado por el usuario `engmauriciodias33` en HuggingFace. Por el número de parámetros declarado en los safetensors asociados (7.615.616.512, es decir, aproximadamente 7,6 mil millones), se corresponde con la categoría de modelos densos de tamaño 7B-8B, un rango habitual para inferencia en GPU de consumo y despliegues de bajo coste. El repositorio se distribuye como una partición ("part3") de un conjunto mayor, con un tamaño total de 909,1 GB, lo que sugiere que el artefacto incluye múltiples cuantizaciones y posiblemente ficheros auxiliares de gran volumen.
+`aura-fleet-gguf-part3` es un conjunto de pesos en formato GGUF publicado por el usuario `engmauriciodias33` en Hugging Face. Por el número de parámetros declarado en los safetensors asociados (7.615.616.512, es decir, aproximadamente 7,6 mil millones), se corresponde con la categoría de modelos densos de tamaño 7B-8B, un rango habitual para inferencia en GPU de consumo y despliegues de bajo coste. El repositorio se distribuye como una partición ("part3") de un conjunto mayor, con un tamaño total de 909,1 GB, lo que sugiere que el artefacto incluye múltiples cuantizaciones y posiblemente ficheros auxiliares de gran volumen.
 
 La información pública disponible es muy limitada: no se declara licencia, idiomas soportados, pipeline ni datos de entrenamiento. Los tags indican `gguf`, `endpoints_compatible`, `imatrix` y `conversational`, lo que apunta a un modelo orientado a diálogo, cuantizado con información de importancia de matrices (imatrix) y presumiblemente compatible con endpoints tipo OpenAI. El número de descargas (36.996) es relativamente alto para un repositorio sin likes ni documentación, lo que puede indicar uso automatizado o réplica especular del artefacto.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| aura-fleet-gguf-part3 | ≈7,6B | no disponible | no disponible | GGUF | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF | HuggingFace, Ollama |
-| Mistral 7B Instruct v0.3 | 7,2B | 32K | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| Qwen2.5 7B Instruct | 7,6B | 128K | Apache 2.0 (mayoría de variantes) | safetensors, GGUF | HuggingFace, Ollama |
+| aura-fleet-gguf-part3 | ≈7,6B | no disponible | no disponible | GGUF | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF | Hugging Face, Ollama |
+| Mistral 7B Instruct v0.3 | 7,2B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| Qwen2.5 7B Instruct | 7,6B | 128K | Apache 2.0 (mayoría de variantes) | safetensors, GGUF | Hugging Face, Ollama |
 
 La comparación es aproximada: para `aura-fleet-gguf-part3` no se dispone de contexto, licencia ni benchmarks, por lo que la equiparación se basa únicamente en el orden de magnitud de parámetros.
 
@@ -82,5 +82,5 @@ La comparación es aproximada: para `aura-fleet-gguf-part3` no se dispone de con
 
 ## Enlaces
 
-- [HuggingFace: engmauriciodias33/aura-fleet-gguf-part3](https://huggingface.co/engmauriciodias33/aura-fleet-gguf-part3)
+- [Hugging Face: engmauriciodias33/aura-fleet-gguf-part3](https://huggingface.co/engmauriciodias33/aura-fleet-gguf-part3)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

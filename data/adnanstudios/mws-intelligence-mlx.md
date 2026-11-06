@@ -94,11 +94,11 @@ No se incluyen alternativas de otras familias (Qwen, Llama, Phi) porque la busqu
 - Licencia Gemma: no es una licencia de codigo abierto aprobada por la OSI. El acceso esta restringido mediante aceptacion de los terminos de uso de Google, que incluyen obligaciones de redistribucion y una politica de uso prohibido que hay que revisar antes de cualquier despliegue comercial.
 - Sin adopcion ni validacion externa: 0 descargas y 0 likes en el momento de redactar la ficha, sin issues, sin evaluaciones de terceros y sin mantenimiento confirmado.
 - Dependencia de plataforma: al ser MLX, queda ligado a Apple Silicon y a la evolucion de mlx-lm. No hay ruta de despliegue directa en infraestructura con GPU NVIDIA.
-- La fecha de creacion que figura en HuggingFace es posterior a la de esta consulta, dato a verificar antes de citar el repositorio.
+- La fecha de creacion que figura en Hugging Face es posterior a la de esta consulta, dato a verificar antes de citar el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adnanstudios/mws-intelligence-mlx
+- Modelo en Hugging Face: https://huggingface.co/adnanstudios/mws-intelligence-mlx
 - Modelo base directo (MLX, 4 bits): https://huggingface.co/mlx-community/gemma-3-4b-it-4bit
 - Modelo original de Google: google/gemma-3-4b-it (referenciado como origen en el tag base_model; no se ha confirmado su URL exacta en la busqueda)
 - Biblioteca de conversion e inferencia: mlx-lm (https://github.com/ml-explore/mlx-lm), version 0.31.3 citada por el autor

@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- [HuggingFace: AbstractPhil/mini-beatrix-1](https://huggingface.co/AbstractPhil/mini-beatrix-1)
+- [Hugging Face: AbstractPhil/mini-beatrix-1](https://huggingface.co/AbstractPhil/mini-beatrix-1)
 - [Repositorio de entrenamiento: alephllm-mini-beatrix-training](https://huggingface.co/AbstractPhil/alephllm-mini-beatrix-training)
 - [Codigo fuente: github.com/AbstractEyes/alephllm](https://github.com/AbstractEyes/alephllm)
 - [Sistema de brazos amoe-lora: github.com/AbstractEyes/amoe-lora](https://github.com/AbstractEyes/amoe-lora)

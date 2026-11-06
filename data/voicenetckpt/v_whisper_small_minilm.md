@@ -4,7 +4,7 @@
 
 V_whisper_small_minilm es un checkpoint publicado por el usuario VoiceNetCkpt dentro de la serie de experimentos denominada VoiceCLAP. Segun la propia model card, se trata de una ejecucion de entrenamiento de la que se conservan unicamente los pesos finales (`checkpoints/epoch_latest.pt`) junto con los ficheros de configuracion y los resultados de evaluacion; no se incluyen epocas intermedias, estado del optimizador ni registros de entrenamiento. El repositorio ocupa 1,3 GB y contiene dos ficheros.
 
-La informacion publicada es minima: no se declara licencia, idiomas, pipeline de HuggingFace ni resultados de benchmarks. La nomenclatura del modelo sugiere la combinacion de un encoder de audio basado en Whisper small con un encoder de texto MiniLM, lo que encajaria con una arquitectura de tipo CLAP (contrastive language-audio pretraining), pero esto es una inferencia a partir del nombre y de la etiqueta `voiceclap`, no un dato confirmado en la documentacion disponible.
+La informacion publicada es minima: no se declara licencia, idiomas, pipeline de Hugging Face ni resultados de benchmarks. La nomenclatura del modelo sugiere la combinacion de un encoder de audio basado en Whisper small con un encoder de texto MiniLM, lo que encajaria con una arquitectura de tipo CLAP (contrastive language-audio pretraining), pero esto es una inferencia a partir del nombre y de la etiqueta `voiceclap`, no un dato confirmado en la documentacion disponible.
 
 Por su naturaleza de checkpoint intermedio de investigacion, el modelo es relevante sobre todo para quien quiera reproducir o continuar los experimentos VoiceCLAP, no como componente listo para produccion. No hay evidencia publica de descargas, likes ni adopcion, y la busqueda web no ha devuelto enlaces tecnicos relacionados.
 
@@ -35,7 +35,7 @@ A partir del identificador `V_whisper_small_minilm` y de la etiqueta `voiceclap`
 - No hay constancia de capacidades de agente ni de razonamiento multi-paso.
 - No hay constancia de soporte multilingue declarado.
 - No hay constancia de modo de razonamiento explicito (thinking mode), vision ni generacion de audio.
-- El checkpoint no incluye cabecera de pipeline de HuggingFace (`pipeline: no disponible`), por lo que no es cargable directamente con `transformers` sin codigo adicional.
+- El checkpoint no incluye cabecera de pipeline de Hugging Face (`pipeline: no disponible`), por lo que no es cargable directamente con `transformers` sin codigo adicional.
 
 ## Casos de uso
 
@@ -82,6 +82,6 @@ No disponible. No se han publicado datos de rendimiento ni especificaciones veri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoiceNetCkpt/V_whisper_small_minilm
+- Repositorio Hugging Face: https://huggingface.co/VoiceNetCkpt/V_whisper_small_minilm
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

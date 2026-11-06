@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `Devdinidu/Sinhala-voice`, publicado por el usuario Devdinidu en HuggingFace, se presenta con el identificador de licencia MIT y la etiqueta de región `us`. No se dispone de información sobre su arquitectura, número de parámetros, longitud de contexto, modalidad ni idiomas soportados: la model card únicamente contiene el campo `license: mit` y no incluye descripción, ejemplos de uso, instrucciones de inferencia ni referencias a papers o repositorios de código.
+El repositorio `Devdinidu/Sinhala-voice`, publicado por el usuario Devdinidu en Hugging Face, se presenta con el identificador de licencia MIT y la etiqueta de región `us`. No se dispone de información sobre su arquitectura, número de parámetros, longitud de contexto, modalidad ni idiomas soportados: la model card únicamente contiene el campo `license: mit` y no incluye descripción, ejemplos de uso, instrucciones de inferencia ni referencias a papers o repositorios de código.
 
-El nombre del repositorio sugiere, sin que exista confirmación documental alguna, una posible relación con procesamiento de voz en idioma cingalés (sinhala). Se trata de una inferencia a partir del identificador y no de un dato verificado, por lo que no debe tomarse como característica confirmada del modelo. El pipeline declarado en HuggingFace aparece como no disponible, lo que impide determinar si se trata de un modelo de reconocimiento automático del habla (ASR), de síntesis de voz (TTS), de un modelo de lenguaje de audio o de otro tipo de artefacto.
+El nombre del repositorio sugiere, sin que exista confirmación documental alguna, una posible relación con procesamiento de voz en idioma cingalés (sinhala). Se trata de una inferencia a partir del identificador y no de un dato verificado, por lo que no debe tomarse como característica confirmada del modelo. El pipeline declarado en Hugging Face aparece como no disponible, lo que impide determinar si se trata de un modelo de reconocimiento automático del habla (ASR), de síntesis de voz (TTS), de un modelo de lenguaje de audio o de otro tipo de artefacto.
 
 El repositorio registra cero descargas y cero likes, y no se han encontrado páginas de documentación, papers ni discusiones asociadas en la búsqueda web realizada. En consecuencia, esta ficha recoge exclusivamente los metadatos disponibles y marca de forma explícita como "no disponible" cualquier dato técnico que no pueda contrastarse.
 
@@ -20,7 +20,7 @@ El repositorio registra cero descargas y cero likes, y no se han encontrado pág
 | Idiomas soportados | no disponible (el nombre del repositorio sugiere cingales, sin confirmar) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (no se listan archivos ni safetensors ni GGUF en la informacion proporcionada) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Etiquetas del repositorio | `license:mit`, `region:us` |
 | Descargas | 0 |
 | Likes | 0 |
@@ -83,5 +83,5 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Devdinidu/Sinhala-voice
+- Hugging Face: https://huggingface.co/Devdinidu/Sinhala-voice
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados al modelo en la busqueda web realizada. Los resultados devueltos corresponden a paginas genericas de Google sin relacion con el artefacto.

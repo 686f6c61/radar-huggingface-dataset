@@ -98,7 +98,7 @@ No se han proporcionado en la informacion disponible datos de otros modelos ASR 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidalarrea/cohere-transcribe-03-2026-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/davidalarrea/cohere-transcribe-03-2026-mlx-8bit
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
 - Checkpoint fp16 de origen citado en la model card: https://huggingface.co/beshkenadze/cohere-transcribe-03-2026-mlx-fp16
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada (los resultados de busqueda web facilitados no guardan relacion con el modelo y se han descartado).

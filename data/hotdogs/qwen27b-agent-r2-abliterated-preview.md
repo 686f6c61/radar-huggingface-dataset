@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativos. Como referencia estructural,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hotdogs/qwen27B-Agent-R2-abliterated-preview
+- Modelo en Hugging Face: https://huggingface.co/hotdogs/qwen27B-Agent-R2-abliterated-preview
 - Modelo base: https://huggingface.co/hotdogs/qwen27b-abliterated-Fable-MTP
 - Modelo base adicional: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-27B-abliterated
 - Dataset de razonamiento: https://huggingface.co/datasets/hotdogs/uka-fable-reasoning

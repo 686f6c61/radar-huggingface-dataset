@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rehearsal-Glimmer-30B-r1-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base Rehearsal-Glimmer-30B-r1, publicado por el usuario Yesini en HuggingFace. El repositorio lo mantiene mradermacher, un perfil conocido en la comunidad por generar y distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base tiene 27.854.794.240 parametros reales (segun los tensores en safetensors), lo que lo situa en la categoria de aproximadamente 28 mil millones de parametros, pese a la denominacion comercial "30B".
+Rehearsal-Glimmer-30B-r1-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base Rehearsal-Glimmer-30B-r1, publicado por el usuario Yesini en Hugging Face. El repositorio lo mantiene mradermacher, un perfil conocido en la comunidad por generar y distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base tiene 27.854.794.240 parametros reales (segun los tensores en safetensors), lo que lo situa en la categoria de aproximadamente 28 mil millones de parametros, pese a la denominacion comercial "30B".
 
 La relevancia de este repositorio es practica: permite ejecutar un modelo de ~28B en hardware de consumo o en servidores con GPUs de gama media mediante cuantizaciones de 2 a 8 bits, reduciendo el peso desde los ~55 GB en FP16 hasta rangos mucho mas manejables. La informacion publica disponible es muy limitada: no se especifican licencia, idiomas, pipeline ni detalles de arquitectura o entrenamiento, y el modelo base no cuenta con descargas ni likes en el momento de la consulta, lo que sugiere un lanzamiento reciente o de baja difusion.
 
@@ -34,7 +34,7 @@ Lo unico verificable es el proceso de cuantizacion: mradermacher ha generado las
 
 - Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo esta orientado a dialogos multi-turno.
 - Razonamiento: el sufijo "r1" sugiere capacidades de razonamiento extendido, aunque no esta documentado.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse mediante la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
 - Ejecucion local: al estar en GGUF, es compatible con llama.cpp, Ollama, LM Studio y otras herramientas basadas en GGML.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y multi-step reasoning: no disponible.

@@ -78,7 +78,7 @@ Nota: los datos de Qwen2.5-Omni-3B son de referencia general; para esta ficha no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LiquidAI/LFM3-Omni-2B-MLX-8bit
+- Repositorio en Hugging Face: https://huggingface.co/LiquidAI/LFM3-Omni-2B-MLX-8bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - MLX-VLM (soporte en progreso): https://github.com/Blaizzy/mlx-vlm
 - Guía de despliegue MLX de Liquid AI: https://docs.liquid.ai/deployment/on-device/mlx

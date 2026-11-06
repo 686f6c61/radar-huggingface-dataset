@@ -1,7 +1,7 @@
 # FKTech/roberta-large-rte
 
 ## Resumen
-FKTech/roberta-large-rte es un modelo de clasificación de texto publicado en HuggingFace por el usuario FKTech, construido sobre la arquitectura RoBERTa-large y orientado a la tarea RTE (Recognizing Textual Entailment, reconocimiento de implicación textual). El identificador del repositorio y la etiqueta de pipeline (text-classification) apuntan a un ajuste fino para clasificación binaria de la relación de implicación entre un par de textos (premisa e hipótesis), aunque la model card no documenta el procedimiento de entrenamiento ni el conjunto de datos utilizado.
+FKTech/roberta-large-rte es un modelo de clasificación de texto publicado en Hugging Face por el usuario FKTech, construido sobre la arquitectura RoBERTa-large y orientado a la tarea RTE (Recognizing Textual Entailment, reconocimiento de implicación textual). El identificador del repositorio y la etiqueta de pipeline (text-classification) apuntan a un ajuste fino para clasificación binaria de la relación de implicación entre un par de textos (premisa e hipótesis), aunque la model card no documenta el procedimiento de entrenamiento ni el conjunto de datos utilizado.
 
 El modelo cuenta con 355.361.794 parámetros reales (según los pesos en safetensors), lo que coincide con el tamano estandar de RoBERTa-large. La etiqueta arxiv:1910.09700 referencia el artículo original de RoBERTa (Liu et al., 2019), lo que confirma que la arquitectura base es un transformer encoder-only de tipo BERT optimizado.
 
@@ -23,7 +23,7 @@ La relevancia de este tipo de modelos radica en su utilidad como componente de s
 ## Arquitectura y entrenamiento
 La arquitectura subyacente es RoBERTa-large, un transformer encoder-only derivado de BERT que aplica masked language modeling como objetivo de preentrenamiento. RoBERTa introduce cambios respecto a BERT (eliminacion del objetivo de prediccion de siguiente frase, enmascaramiento dinamico, lotes mas grandes y mayor volumen de datos). Segun la etiqueta arxiv:1910.09700, el modelo base es el descrito en el articulo "RoBERTa: A Robustly Optimized BERT Pretraining Approach" de Liu et al. (2019). Los detalles concretos de la fase de ajuste fino para la tarea RTE (numero de epocas, tasa de aprendizaje, composicion del dataset, si se uso el conjunto GLUE RTE u otro) no estan documentados en la model card.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion e impacto ambiental aparecen como "[More Information Needed]". No se declara ninguna innovacion tecnica adicional ni informacion sobre el proceso de ajuste (RLHF, DPO u otros). El unico dato verificable del entrenamiento es el numero de parametros resultante.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion e impacto ambiental aparecen como "[More Information Needed]". No se declara ninguna innovacion tecnica adicional ni informacion sobre el proceso de ajuste (RLHF, DPO u otros). El unico dato verificable del entrenamiento es el numero de parametros resultante.
 
 ## Capacidades
 - Clasificacion de texto: el pipeline declarado es text-classification, consistente con una tarea de clasificacion binaria o de pocas clases.
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FKTech/roberta-large-rte | 355,4 M | 512 tokens (arquitectura base) | Clasificacion / RTE | No disponible | HuggingFace (0 descargas, 0 likes) |
-| FacebookAI/roberta-large | 355 M | 512 tokens | Modelo base (MLM) | MIT | HuggingFace (ampliamente usado) |
-| FacebookAI/roberta-large-mnli | 355 M | 512 tokens | NLI / clasificacion cero-shot | MIT | HuggingFace (muy usado) |
-| microsoft/deberta-v3-large | 435 M | 512 tokens | Modelo base / NLI | MIT | HuggingFace |
+| FKTech/roberta-large-rte | 355,4 M | 512 tokens (arquitectura base) | Clasificacion / RTE | No disponible | Hugging Face (0 descargas, 0 likes) |
+| FacebookAI/roberta-large | 355 M | 512 tokens | Modelo base (MLM) | MIT | Hugging Face (ampliamente usado) |
+| FacebookAI/roberta-large-mnli | 355 M | 512 tokens | NLI / clasificacion cero-shot | MIT | Hugging Face (muy usado) |
+| microsoft/deberta-v3-large | 435 M | 512 tokens | Modelo base / NLI | MIT | Hugging Face |
 
 Nota: los datos de las filas comparativas corresponden a modelos conocidos de la misma categoria, pero los valores concretos no proceden de la informacion proporcionada en esta busqueda, por lo que deben verificarse en sus respectivas model cards.
 
@@ -76,7 +76,7 @@ Nota: los datos de las filas comparativas corresponden a modelos conocidos de la
 - Fecha de publicacion inusual: los metadatos indican creacion en octubre de 2026, lo que conviene verificar antes de tratarlos como fiables.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/FKTech/roberta-large-rte
+- Modelo en Hugging Face: https://huggingface.co/FKTech/roberta-large-rte
 - Articulo de RoBERTa (referenciado por la etiqueta arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental en ML (enlazada en la model card): https://mlco2.github.io/impact
 - Articulo de Lacoste et al. (2019) citado en la model card: https://arxiv.org/abs/1910.09700

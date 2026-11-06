@@ -109,7 +109,7 @@ Frente a los modelos generalistas, la ventaja de Kanso Koi 0.8 no está en conoc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BuilderHelm/Kanso-Koi-0.8
+- Modelo en Hugging Face: https://huggingface.co/BuilderHelm/Kanso-Koi-0.8
 - Sucesor recomendado (Koi 1.0): https://huggingface.co/BuilderHelm/Kanso-Koi-1.0
 - Sucesor recomendado (Satori 1.0): https://huggingface.co/BuilderHelm/Kanso-Satori-1.0
 - Modelo base cuantizado en MLX: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit

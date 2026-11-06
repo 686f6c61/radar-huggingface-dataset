@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `giangtbh/indoor5-detector`, publicado en HuggingFace por el usuario giangtbh, es un repositorio de apenas 0,1 GB que no incluye ninguna documentación técnica más allá de la licencia MIT. El nombre sugiere que podría tratarse de un detector de objetos o escenas de interior con cinco categorías, pero no hay ninguna información pública que confirme su arquitectura, entrenamiento o capacidades. El repositorio no registra descargas ni "me gusta", y su fecha de creación (agosto de 2026) indica que es muy reciente o que ha pasado desapercibido.
+El modelo `giangtbh/indoor5-detector`, publicado en Hugging Face por el usuario giangtbh, es un repositorio de apenas 0,1 GB que no incluye ninguna documentación técnica más allá de la licencia MIT. El nombre sugiere que podría tratarse de un detector de objetos o escenas de interior con cinco categorías, pero no hay ninguna información pública que confirme su arquitectura, entrenamiento o capacidades. El repositorio no registra descargas ni "me gusta", y su fecha de creación (agosto de 2026) indica que es muy reciente o que ha pasado desapercibido.
 
-Dado que la model card está vacía y no se encontraron referencias externas, esta ficha se limita a los datos disponibles en el repositorio de HuggingFace y advierte de la falta de información verificable. Cualquier uso en producción requeriría una evaluación directa del modelo, algo imposible sin conocer sus especificaciones técnicas.
+Dado que la model card está vacía y no se encontraron referencias externas, esta ficha se limita a los datos disponibles en el repositorio de Hugging Face y advierte de la falta de información verificable. Cualquier uso en producción requeriría una evaluación directa del modelo, algo imposible sin conocer sus especificaciones técnicas.
 
 ## Especificaciones tecnicas
 
@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables en la misma categoría (detecci
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/giangtbh/indoor5-detector)
+- [Repositorio en Hugging Face](https://huggingface.co/giangtbh/indoor5-detector)

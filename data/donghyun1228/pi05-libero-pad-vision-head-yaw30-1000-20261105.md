@@ -75,8 +75,8 @@ No se han publicado en la información disponible resultados desglosados por sui
 
 | Modelo | Parametros | Contexto | Rendimiento LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO yaw30 PAD (este) | no disponible | no disponible | 22,50 % (450/2000) | Apache-2.0 | HuggingFace, repo de 15,6 GB |
-| `pi05-libero-pad-vision-head-source-n50k-10000-20261104` | no disponible | no disponible | no disponible | no disponible | HuggingFace (origen de inicialización) |
+| π0.5 LIBERO yaw30 PAD (este) | no disponible | no disponible | 22,50 % (450/2000) | Apache-2.0 | Hugging Face, repo de 15,6 GB |
+| `pi05-libero-pad-vision-head-source-n50k-10000-20261104` | no disponible | no disponible | no disponible | no disponible | Hugging Face (origen de inicialización) |
 | Otras variantes openpi/π0.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de resultados de modelos alternativos comparables bajo el mismo protocolo de evaluación, por lo que la comparación cuantitativa no está disponible.
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de resultados de modelos alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-yaw30-1000-20261105
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-yaw30-1000-20261105
 - Repositorio de código citado: `Donghyun1228/vla_adaptation` (commit `7b74d01d`)
 - Checkpoint de inicialización: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104
 - openpi (framework): no se proporciona URL en la información disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ankumar84/retrieval-tryout15` es un prototipo de investigación publicado en HuggingFace por el usuario ankumar84. Se presenta como una implementación de tipo Poolformer orientada a tareas de retrieval (recuperación de información multimodal o texto-imagen, a juzgar por la referencia a Flickr30k en la model card). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`ankumar84/retrieval-tryout15` es un prototipo de investigación publicado en Hugging Face por el usuario ankumar84. Se presenta como una implementación de tipo Poolformer orientada a tareas de retrieval (recuperación de información multimodal o texto-imagen, a juzgar por la referencia a Flickr30k en la model card). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio contiene el script `train.py` como artefacto principal, junto con `config.json`, `training_args.json` y un `model.safetensors` de inicialización. El autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado. El tamaño del repo es de 0.0 GB y el recuento de parámetros reportado por safetensors es de 16.576, lo que sugiere un modelo extremadamente pequeño, probablemente un stub de inicialización más que una arquitectura completa.
 
@@ -77,4 +77,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ankumar84/retrieval-tryout15
+- Hugging Face: https://huggingface.co/ankumar84/retrieval-tryout15

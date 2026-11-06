@@ -73,10 +73,10 @@ Lectura de los datos: la mejora se concentra en tool calling (+5,29 puntos en ET
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2.5-0.5B + LoRA GRPO) | 0,49 B | No disponible en el repositorio | Tool calling y abstención vía GRPO | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B-Instruct (base) | 0,49 B | 32.768 tokens según su model card | Instructivo generalista | Apache 2.0 según su model card | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens según su model card | Instructivo generalista de mayor tamaño | Apache 2.0 según su model card | HuggingFace |
-| SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens según su model card | Instructivo compacto | Apache 2.0 según su model card | HuggingFace |
+| Este adaptador (Qwen2.5-0.5B + LoRA GRPO) | 0,49 B | No disponible en el repositorio | Tool calling y abstención vía GRPO | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B-Instruct (base) | 0,49 B | 32.768 tokens según su model card | Instructivo generalista | Apache 2.0 según su model card | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens según su model card | Instructivo generalista de mayor tamaño | Apache 2.0 según su model card | Hugging Face |
+| SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens según su model card | Instructivo compacto | Apache 2.0 según su model card | Hugging Face |
 
 No se dispone de resultados de benchmarks comparables entre estos modelos dentro de la información proporcionada; las cifras de la tabla anterior proceden de model cards distintas y con metodologías heterogéneas, por lo que no deben compararse directamente con las del adaptador. La ventaja declarada de este adaptador frente a su base es específica de tool calling y abstención, no de capacidad general.
 
@@ -94,7 +94,7 @@ No se dispone de resultados de benchmarks comparables entre estos modelos dentro
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo4620-lora
+- Adaptador en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo4620-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Repositorio de entrenamiento Post-Training Lab: https://github.com/uygarkurt/post-training-lab

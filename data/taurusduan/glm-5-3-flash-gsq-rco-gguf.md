@@ -134,7 +134,7 @@ Sobre el modelo base, z.ai sitúa a GLM-5.3-Flash por encima de GLM-5.2 en bench
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF
 - Ficheros del repositorio: https://huggingface.co/taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF/tree/main
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Artículo de GSQ: https://arxiv.org/abs/2604.18556

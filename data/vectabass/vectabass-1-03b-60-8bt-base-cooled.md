@@ -109,7 +109,7 @@ No se han publicado en la informacion disponible comparaciones directas de bench
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-1.03b-60.8bt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-1.03b-60.8bt-base-cooled
 - Referencia sobre Isambard-AI (McIntosh-Smith, Alam y Woods, 2024): https://doi.org/10.48550/arXiv.2410.11199
 - Conjunto de datos FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Conjunto de datos FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

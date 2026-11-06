@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nolimitsxl/mobilenetv2-beans-seed3` es un clasificador de imágenes basado en la arquitectura MobileNetV2, publicado en el Hub de HuggingFace por el usuario `nolimitsxl`. Está diseñado para la tarea de clasificación de imágenes (pipeline `image-classification`) y, por su nombre, parece estar ajustado (fine-tuning) sobre un dataset relacionado con hojas de frijol (beans), probablemente el conjunto de datos de enfermedades de plantas de frijol comúnmente utilizado en TensorFlow. Sin embargo, la model card oficial no proporciona información detallada sobre el dataset, el proceso de entrenamiento ni los resultados, por lo que estos extremos no pueden confirmarse.
+El modelo `nolimitsxl/mobilenetv2-beans-seed3` es un clasificador de imágenes basado en la arquitectura MobileNetV2, publicado en el Hub de Hugging Face por el usuario `nolimitsxl`. Está diseñado para la tarea de clasificación de imágenes (pipeline `image-classification`) y, por su nombre, parece estar ajustado (fine-tuning) sobre un dataset relacionado con hojas de frijol (beans), probablemente el conjunto de datos de enfermedades de plantas de frijol comúnmente utilizado en TensorFlow. Sin embargo, la model card oficial no proporciona información detallada sobre el dataset, el proceso de entrenamiento ni los resultados, por lo que estos extremos no pueden confirmarse.
 
 El modelo cuenta con aproximadamente 2,26 millones de parámetros, un tamaño muy reducido que lo hace adecuado para despliegue en entornos con recursos limitados, como dispositivos embebidos o inferencia en CPU. A pesar de su pequeña escala, MobileNetV2 es una arquitectura consolidada y eficiente, conocida por su buen equilibrio entre precisión y coste computacional. La relevancia actual de este modelo radica en su potencial como punto de partida para experimentos de clasificación de imágenes en agricultura o como ejemplo de fine-tuning con pocos recursos, aunque su escasa documentación limita su uso directo en producción sin una evaluación adicional.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: al ser un modelo de ~2,26 millones de parámetros, la inferencia requiere muy poca memoria, típicamente menos de 100 MB en FP32. Con cuantización a INT8 (si se aplicara) podría reducirse aún más, pero no se dispone de información sobre cuantizaciones disponibles.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; incluso una CPU moderna puede ejecutarlo con latencias del orden de milisegundos. No se requieren GPUs de alta gama como A100 o H100.
 - Compatibilidad con consumer GPU: sí, cualquier GPU de consumo (GTX 1050, RTX 2060, etc.) puede ejecutarlo sin problemas.
-- Opciones de despliegue: al estar en formato safetensors y usar la librería `transformers`, puede desplegarse con HuggingFace Inference Endpoints, o exportarse a ONNX o TensorFlow Lite para dispositivos móviles. También puede ejecutarse directamente con la API de `transformers` en Python.
+- Opciones de despliegue: al estar en formato safetensors y usar la librería `transformers`, puede desplegarse con Hugging Face Inference Endpoints, o exportarse a ONNX o TensorFlow Lite para dispositivos móviles. También puede ejecutarse directamente con la API de `transformers` en Python.
 - Latencia y throughput: no se han proporcionado datos específicos, pero dado el tamaño del modelo, se espera una latencia inferior a 10 ms en GPU y de 50-100 ms en CPU, dependiendo del hardware.
 
 ## Comparativa con modelos similares
@@ -77,5 +77,5 @@ El modelo aquí analizado tiene menos parámetros que MobileNetV1 y EfficientNet
 
 ## Enlaces
 
-- [HuggingFace - nolimitsxl/mobilenetv2-beans-seed3](https://huggingface.co/nolimitsxl/mobilenetv2-beans-seed3)
+- [Hugging Face - nolimitsxl/mobilenetv2-beans-seed3](https://huggingface.co/nolimitsxl/mobilenetv2-beans-seed3)
 - [Paper de MobileNetV2 (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)

@@ -66,5 +66,5 @@ La comparativa se limita a los modelos mencionados en la informacion proporciona
 - Riesgo de alucinacion: al ser un modelo de 9B entrenado por destilacion, puede presentar alucinaciones, especialmente en dominios especializados, aunque no se dispone de datos especificos.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h063.sft4.step_1600
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h063.sft4.step_1600
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

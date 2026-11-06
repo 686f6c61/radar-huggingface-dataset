@@ -2,9 +2,9 @@
 
 ## Resumen
 
-cwaud/tournament-exp-s1-6bffc021-a551-415a-b331-c1357fa8098c-5Exp4c955f1dce21e560 es un modelo de lenguaje publicado en HuggingFace por el usuario cwaud dentro de una serie de experimentos identificados con el prefijo "tournament-exp-s1". El repositorio contiene 494.032.768 parametros reales, medidos a partir de los ficheros safetensors, y ocupa 1,0 GB, lo que es coherente con pesos almacenados en precision de 16 bits (aproximadamente 0,99 GB teoricos para ese numero de parametros en fp16/bf16).
+cwaud/tournament-exp-s1-6bffc021-a551-415a-b331-c1357fa8098c-5Exp4c955f1dce21e560 es un modelo de lenguaje publicado en Hugging Face por el usuario cwaud dentro de una serie de experimentos identificados con el prefijo "tournament-exp-s1". El repositorio contiene 494.032.768 parametros reales, medidos a partir de los ficheros safetensors, y ocupa 1,0 GB, lo que es coherente con pesos almacenados en precision de 16 bits (aproximadamente 0,99 GB teoricos para ese numero de parametros en fp16/bf16).
 
-Se trata de un modelo de aproximadamente 0,5 mil millones de parametros (categoria "small"), etiquetado en HuggingFace con el tag qwen2, lo que apunta a una arquitectura transformer decoder-only derivada de la familia Qwen2. No se ha publicado informacion adicional en la ficha del repositorio: ni pipeline, ni licencia, ni idiomas soportados, ni longitud de contexto, ni datos de entrenamiento o evaluacion.
+Se trata de un modelo de aproximadamente 0,5 mil millones de parametros (categoria "small"), etiquetado en Hugging Face con el tag qwen2, lo que apunta a una arquitectura transformer decoder-only derivada de la familia Qwen2. No se ha publicado informacion adicional en la ficha del repositorio: ni pipeline, ni licencia, ni idiomas soportados, ni longitud de contexto, ni datos de entrenamiento o evaluacion.
 
 Su relevancia practica es limitada por el momento: con 7 descargas, 0 likes y ausencia total de documentacion, debe considerarse un artefacto experimental sin garantias de calidad, procedencia de datos ni condiciones de uso claras. Es util principalmente como objeto de inspeccion tecnica o para experimentacion local en hardware modesto, no como componente de produccion.
 
@@ -95,7 +95,7 @@ La diferencia esencial no es de arquitectura ni de tamano, sino de trazabilidad:
 
 ## Enlaces
 
-- HuggingFace (modelo analizado): https://huggingface.co/cwaud/tournament-exp-s1-6bffc021-a551-415a-b331-c1357fa8098c-5Exp4c955f1dce21e560
+- Hugging Face (modelo analizado): https://huggingface.co/cwaud/tournament-exp-s1-6bffc021-a551-415a-b331-c1357fa8098c-5Exp4c955f1dce21e560
 - Repositorio hermano de la misma serie: https://huggingface.co/cwaud/tournament-exp-s1-6bffc021-a551-415a-b331-c1357fa8098c-5Exp1642a3e76d0b5b39
 - Otro repositorio de la serie: https://huggingface.co/cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp6ded491f0bd914af
 - Mencion en agregador de noticias (sin detalle tecnico): https://www.china-z.net/news/2026-09-24-11-bf975fec.html

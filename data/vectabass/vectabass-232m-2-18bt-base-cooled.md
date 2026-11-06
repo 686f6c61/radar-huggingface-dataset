@@ -104,7 +104,7 @@ Los datos de rendimiento comparativo con estas familias no están disponibles en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-232m-2.18bt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-232m-2.18bt-base-cooled
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentiment-model` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `dishantghai`. Se trata de un fine-tuning del checkpoint `distilbert-base-uncased` de HuggingFace, orientado a análisis de sentimiento (clasificación de texto en categorías de polaridad, aunque el número exacto de etiquetas no se especifica en la información disponible). El modelo se generó automáticamente mediante el `Trainer` de la librería Transformers, y su model card no ha sido completada manualmente por el autor.
+`sentiment-model` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `dishantghai`. Se trata de un fine-tuning del checkpoint `distilbert-base-uncased` de Hugging Face, orientado a análisis de sentimiento (clasificación de texto en categorías de polaridad, aunque el número exacto de etiquetas no se especifica en la información disponible). El modelo se generó automáticamente mediante el `Trainer` de la librería Transformers, y su model card no ha sido completada manualmente por el autor.
 
 Con 66.955.779 parámetros, DistilBERT es una versión destilada de BERT-base que reduce el tamaño del modelo original aproximadamente un 40 % manteniendo alrededor del 97 % de su rendimiento en tareas de comprensión del lenguaje (dato conocido del paper de DistilBERT, no del autor). La arquitectura es un transformer encoder-only con 6 capas, lo que lo hace muy ligero para inferencia en CPU y GPU de consumo.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó con el `Trainer` de Transformers durante 3 épocas,
 
 - Clasificación de texto (pipeline `text-classification`), presumiblemente para análisis de sentimiento aunque el número y las etiquetas de clase no se documentan.
 - Inferencia ligera: 66,9 M de parámetros permiten ejecución en CPU con latencia baja.
-- Compatible con la API `pipeline` de Transformers y con despliegue en endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con la API `pipeline` de Transformers y con despliegue en endpoints de Hugging Face (`endpoints_compatible`).
 - No soporta tool calling ni function calling.
 - No soporta razonamiento multi-paso ni comportamiento agéntico.
 - No dispone de modo thinking, visión ni audio.
@@ -73,17 +73,17 @@ No se han publicado resultados comparativos con otros modelos en la información
 - VRAM estimada en FP16: aproximadamente 135 MB para los pesos.
 - Cabe holgadamente en cualquier GPU de consumo (GTX 1060, RTX 3060, RTX 4090) e incluso en CPU.
 - GPU recomendadas: no requiere GPU dedicada; una GPU de gama baja acelera el throughput pero no es necesaria.
-- Opciones de despliegue: `transformers` (pipeline nativo), ONNX Runtime, TorchScript, HuggingFace Inference Endpoints (el tag `endpoints_compatible` lo indica). Compatible con cuantización dinámica de PyTorch para reducir aún más el uso de memoria.
+- Opciones de despliegue: `transformers` (pipeline nativo), ONNX Runtime, TorchScript, Hugging Face Inference Endpoints (el tag `endpoints_compatible` lo indica). Compatible con cuantización dinámica de PyTorch para reducir aún más el uso de memoria.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo, se espera un throughput alto en CPU y muy alto en GPU, pero no hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dishantghai/sentiment-model` | 66,9 M | no disponible (base: 512) | Clasificación de sentimiento | Apache 2.0 | HuggingFace, 0 descargas |
-| `distilbert-base-uncased-finetuned-sst-2-english` | 66,9 M | 512 | Clasificación de sentimiento (SST-2) | Apache 2.0 | HuggingFace, ampliamente usado |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 | Clasificación de sentimiento (3 clases) | MIT | HuggingFace, muy usado |
-| `finiteautomata/bertweet-base-sentiment-analysis` | ~135 M | 128 | Clasificación de sentimiento | MIT | HuggingFace |
+| `dishantghai/sentiment-model` | 66,9 M | no disponible (base: 512) | Clasificación de sentimiento | Apache 2.0 | Hugging Face, 0 descargas |
+| `distilbert-base-uncased-finetuned-sst-2-english` | 66,9 M | 512 | Clasificación de sentimiento (SST-2) | Apache 2.0 | Hugging Face, ampliamente usado |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 | Clasificación de sentimiento (3 clases) | MIT | Hugging Face, muy usado |
+| `finiteautomata/bertweet-base-sentiment-analysis` | ~135 M | 128 | Clasificación de sentimiento | MIT | Hugging Face |
 
 La comparativa se basa en modelos de la misma categoría (clasificación de sentimiento basada en encoders pequeños); los datos de rendimiento de los alternativos no se han incluido porque no forman parte de la información proporcionada. El modelo de este análisis no declara métricas comparables en un benchmark estándar como SST-2, por lo que la comparación directa de rendimiento no es posible con los datos disponibles.
 
@@ -100,7 +100,7 @@ La comparativa se basa en modelos de la misma categoría (clasificación de sent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dishantghai/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/dishantghai/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (referencia del modelo base): https://arxiv.org/abs/1910.01108
 - Documentación de Transformers para clasificación de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ARLoop-1.2B (publicado en HuggingFace como `osunlp/ARLoop-1.2B`, aunque la model card lo denomina ARLoop-1.3B) es un modelo de lenguaje causal recurrente con residuales de atención, desarrollado por el grupo OSUNLP. Se trata de un checkpoint final de una tirada de preentrenamiento de aproximadamente 500.000 millones de tokens, con 1.208.655.360 parámetros reales según los pesos en safetensors. No es un modelo afinado con instrucciones (SFT): es un modelo base de preentrenamiento orientado a completado de texto.
+ARLoop-1.2B (publicado en Hugging Face como `osunlp/ARLoop-1.2B`, aunque la model card lo denomina ARLoop-1.3B) es un modelo de lenguaje causal recurrente con residuales de atención, desarrollado por el grupo OSUNLP. Se trata de un checkpoint final de una tirada de preentrenamiento de aproximadamente 500.000 millones de tokens, con 1.208.655.360 parámetros reales según los pesos en safetensors. No es un modelo afinado con instrucciones (SFT): es un modelo base de preentrenamiento orientado a completado de texto.
 
 La propuesta técnica es poco habitual en la familia de transformers convencionales: en lugar de apilar 72 capas físicas distintas, el modelo cuenta con 24 capas físicas de transformer que se reutilizan a lo largo de 3 pasadas recurrentes, dando una profundidad efectiva de 72. Este esquema de compartición de pesos reduce el número de parámetros manteniendo una profundidad computacional mayor, una línea de investigación que conecta con trabajos previos sobre transformers recurrentes y universal transformers.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ARLoop-1.2B | 1.208.655.360 | 4096 | Transformer recurrente (24 capas físicas, 3 pasadas) | Apache 2.0 | HuggingFace, requiere `trust_remote_code` |
-| SmolLM2-1.7B | 1.700.000.000 (aprox.) | 8192 (aprox.) | Transformer denso convencional | Apache 2.0 | HuggingFace, transformers estándar |
-| Qwen2.5-1.5B | 1.500.000.000 (aprox.) | 32768 (aprox.) | Transformer denso convencional | Apache 2.0 | HuggingFace, transformers estándar |
-| Llama 3.2 1B | 1.200.000.000 (aprox.) | 131072 (aprox.) | Transformer denso convencional | Llama 3.2 Community License | HuggingFace, acceso con aceptación de licencia |
+| ARLoop-1.2B | 1.208.655.360 | 4096 | Transformer recurrente (24 capas físicas, 3 pasadas) | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
+| SmolLM2-1.7B | 1.700.000.000 (aprox.) | 8192 (aprox.) | Transformer denso convencional | Apache 2.0 | Hugging Face, transformers estándar |
+| Qwen2.5-1.5B | 1.500.000.000 (aprox.) | 32768 (aprox.) | Transformer denso convencional | Apache 2.0 | Hugging Face, transformers estándar |
+| Llama 3.2 1B | 1.200.000.000 (aprox.) | 131072 (aprox.) | Transformer denso convencional | Llama 3.2 Community License | Hugging Face, acceso con aceptación de licencia |
 
 Los datos de SmolLM2, Qwen2.5 y Llama 3.2 son aproximados y no provienen de la información proporcionada sobre ARLoop; se incluyen como referencia de categoría. No se dispone de benchmarks comparativos publicados para ARLoop-1.2B.
 
@@ -85,7 +85,7 @@ Los datos de SmolLM2, Qwen2.5 y Llama 3.2 son aproximados y no provienen de la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/osunlp/ARLoop-1.2B
+- Hugging Face: https://huggingface.co/osunlp/ARLoop-1.2B
 - Checkpoint final: https://huggingface.co/osunlp/ARLoop-1.3B/tree/main
 - Checkpoints intermedios: https://huggingface.co/osunlp/ARLoop-1.3B/tree/step-010000 (y sucesivos hasta `step-230000`)
 - Código de entrenamiento: https://github.com/ykyaol7/ARLoop

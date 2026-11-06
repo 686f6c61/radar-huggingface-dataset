@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kusema/breeze-asr-ggml (este) | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 | GGML `q5_k` | HuggingFace, espejo verificado por SHA-256 |
-| MediaTek-Research/Breeze-ASR-25 | no disponible | no disponible | mandarin, ingles y code-switching (segun el autor original) | Apache 2.0 | safetensors (formato original) | HuggingFace, repositorio oficial |
-| Whisper (variantes de OpenAI) | 39 M a 1,55 G | ventana de audio de 30 s por segmento | multilingue (segun variante) | MIT (pesos) | GGML, safetensors, entre otros | HuggingFace y ecosistema whisper.cpp |
-| whisper.cpp (formatos GGML de la comunidad) | segun modelo origen | segun modelo origen | segun modelo origen | segun modelo origen | GGML | GitHub y HuggingFace |
+| kusema/breeze-asr-ggml (este) | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 | GGML `q5_k` | Hugging Face, espejo verificado por SHA-256 |
+| MediaTek-Research/Breeze-ASR-25 | no disponible | no disponible | mandarin, ingles y code-switching (segun el autor original) | Apache 2.0 | safetensors (formato original) | Hugging Face, repositorio oficial |
+| Whisper (variantes de OpenAI) | 39 M a 1,55 G | ventana de audio de 30 s por segmento | multilingue (segun variante) | MIT (pesos) | GGML, safetensors, entre otros | Hugging Face y ecosistema whisper.cpp |
+| whisper.cpp (formatos GGML de la comunidad) | segun modelo origen | segun modelo origen | segun modelo origen | segun modelo origen | GGML | GitHub y Hugging Face |
 
 La comparativa se limita a datos publicos y verificables; no se dispone de cifras de rendimiento comparables para este artefacto.
 
@@ -82,7 +82,7 @@ La comparativa se limita a datos publicos y verificables; no se dispone de cifra
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kusema/breeze-asr-ggml
+- Repositorio en Hugging Face: https://huggingface.co/kusema/breeze-asr-ggml
 - Modelo original: https://huggingface.co/MediaTek-Research/Breeze-ASR-25
 - Proyecto Kusema: https://github.com/neulinc/kusema
 - whisper.cpp: https://github.com/ggml-org/whisper.cpp

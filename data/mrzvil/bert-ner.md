@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-ner es un modelo de clasificación de tokens (token classification) orientado al reconocimiento de entidades nombradas (NER), publicado en HuggingFace por el usuario MrZVIL. Se trata de un ajuste fino (fine-tuning) del encoder BAAI/bge-small-en-v1.5, un transformer de tipo BERT de 33.215.625 parámetros, y se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones de atribución más allá de la propia licencia.
+bert-ner es un modelo de clasificación de tokens (token classification) orientado al reconocimiento de entidades nombradas (NER), publicado en Hugging Face por el usuario MrZVIL. Se trata de un ajuste fino (fine-tuning) del encoder BAAI/bge-small-en-v1.5, un transformer de tipo BERT de 33.215.625 parámetros, y se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones de atribución más allá de la propia licencia.
 
 El modelo resuelve la tarea clásica de etiquetado secuencial: dado un texto, asigna a cada token una etiqueta de entidad. El entrenamiento se realizó con la librería Transformers (Trainer) durante 10 épocas, con learning rate 2e-05, batch de 16 y optimizador AdamW fused. Según la model card, en el conjunto de evaluación alcanza una F1 de 0,9115, precisión de 0,8956, recall de 0,9280, accuracy de 0,9608 y una pérdida de validación de 0,2551.
 
@@ -86,7 +86,7 @@ No se dispone de comparación con otros modelos sobre el mismo conjunto de evalu
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente (GTX 1650, RTX 3060, T4). Modelos como A100 o H100 no aportan ventaja relevante para este tamaño.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU dedicada e incluso en iGPU modernas.
 - Ejecución en CPU: viable; el modelo es lo bastante pequeño para servir peticiones en CPU con throughput moderado, aunque no se han publicado mediciones.
-- Opciones de despliegue: pipeline de transformers, contenedores con FastAPI o TorchServe, exportación a ONNX Runtime y endpoints gestionados de HuggingFace (el repositorio incluye la etiqueta `endpoints_compatible`). vLLM, TGI, llama.cpp y Ollama no están orientados a clasificación de tokens; su uso requeriría conversiones y no es el camino recomendado.
+- Opciones de despliegue: pipeline de transformers, contenedores con FastAPI o TorchServe, exportación a ONNX Runtime y endpoints gestionados de Hugging Face (el repositorio incluye la etiqueta `endpoints_compatible`). vLLM, TGI, llama.cpp y Ollama no están orientados a clasificación de tokens; su uso requeriría conversiones y no es el camino recomendado.
 - Latencia y throughput: no disponible (no se han publicado mediciones en la información disponible).
 
 ## Comparativa con modelos similares
@@ -114,7 +114,7 @@ Los datos de los modelos alternativos proceden de sus fichas públicas y no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrZVIL/bert-ner
+- Modelo en Hugging Face: https://huggingface.co/MrZVIL/bert-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Referencia de la arquitectura BERT: https://arxiv.org/abs/1810.04805
 - No se han encontrado enlaces relevantes adicionales en la búsqueda web; los resultados devueltos no guardaban relación con el modelo (enlaces de Google Maps en francés).

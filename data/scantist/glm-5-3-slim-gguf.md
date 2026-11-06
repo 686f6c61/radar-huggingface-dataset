@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de comparativas con modelos de ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scantist/GLM-5.3-SLIM-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Scantist/GLM-5.3-SLIM-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
 - Cuantización de origen (Unsloth UD-IQ2_M): https://huggingface.co/unsloth/GLM-5.3-GGUF/tree/main/UD-IQ2_M

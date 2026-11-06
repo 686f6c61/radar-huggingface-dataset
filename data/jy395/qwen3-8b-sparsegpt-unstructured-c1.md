@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Qwen3-8B-sparsegpt-unstructured-c1 | 8,19 B | no disponible | Poda SparseGPT 50 % no estructurada, calibracion WikiText-2 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B (base) | 8,19 B | no disponible | Sin compresion | Apache 2.0 | HuggingFace |
-| Otras variantes del mismo estudio (calibracion financiera) | 8,19 B | no disponible | Poda SparseGPT 50 % con calibracion de dominio | Apache 2.0 | Coleccion HuggingFace de jy395 |
+| jy395/Qwen3-8B-sparsegpt-unstructured-c1 | 8,19 B | no disponible | Poda SparseGPT 50 % no estructurada, calibracion WikiText-2 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B (base) | 8,19 B | no disponible | Sin compresion | Apache 2.0 | Hugging Face |
+| Otras variantes del mismo estudio (calibracion financiera) | 8,19 B | no disponible | Poda SparseGPT 50 % con calibracion de dominio | Apache 2.0 | Coleccion Hugging Face de jy395 |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada; la comparacion se limita a parametros, licencia y esquema de compresion.
 
@@ -78,11 +78,11 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 - Idiomas soportados no documentados; no se garantiza un comportamiento multilingue equivalente al modelo base.
 - Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el rendimiento tras la compresion.
 - No se documenta soporte de cuantizacion adicional (GGUF, AWQ, GPTQ) para este checkpoint concreto.
-- Fecha de creacion en HuggingFace (2026-10-31) posterior a la fecha actual de referencia; verificar disponibilidad real del artefacto.
+- Fecha de creacion en Hugging Face (2026-10-31) posterior a la fecha actual de referencia; verificar disponibilidad real del artefacto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jy395/Qwen3-8B-sparsegpt-unstructured-c1
+- Hugging Face: https://huggingface.co/jy395/Qwen3-8B-sparsegpt-unstructured-c1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Articulo (DOI): https://doi.org/10.1145/3858063.3858724
 - Repositorio de codigo: https://github.com/JunyiYe/finance-ptc-calibration

@@ -88,7 +88,7 @@ La comparacion se limita a la ruta de despliegue, porque no hay datos publicos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bokuweb/gemma-4-E4B-it-grande-wgpu-ja
+- Modelo en Hugging Face: https://huggingface.co/bokuweb/gemma-4-E4B-it-grande-wgpu-ja
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio del motor `grande`: https://github.com/bokuweb/grande
 - Herramientas de exportacion y poda citadas en la model card: `tools/export_wgpu_gguf.py` y `tools/prune_vocab.py` dentro del repositorio anterior

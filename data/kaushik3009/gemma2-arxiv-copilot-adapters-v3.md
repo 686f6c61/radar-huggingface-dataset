@@ -77,7 +77,7 @@ No se dispone de otros adaptadores LoRA similares para comparar directamente, ya
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaushik3009/gemma2-arxiv-copilot-adapters-v3
+- Repositorio Hugging Face: https://huggingface.co/kaushik3009/gemma2-arxiv-copilot-adapters-v3
 - Paper de Gemma 2 (modelo base): https://arxiv.org/abs/2408.00118
 - Repositorio oficial de Gemma: https://github.com/google-deepmind/gemma
 - Blog de Hugging Face sobre Gemma 2: https://huggingface.co/blog/gemma2

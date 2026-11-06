@@ -65,8 +65,8 @@ No se dispone de información suficiente para realizar una comparativa con otras
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la cuantización](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q3_K-SPECIAL_SPLIT)
-- [Repositorio HuggingFace de la versión BF16 del mismo autor](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT)
+- [Repositorio Hugging Face de la cuantización](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q3_K-SPECIAL_SPLIT)
+- [Repositorio Hugging Face de la versión BF16 del mismo autor](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT)
 - [Repositorio oficial de Qwen3.8-27B en GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Blog de AMD sobre soporte de Qwen3.8-27B](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)
 - [Artículo de YottaLabs sobre especificaciones y requisitos de Qwen3.8-27B](https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026)

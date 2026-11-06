@@ -100,9 +100,9 @@ No se han publicado resultados de MMLU, HumanEval o GSM8K en la información dis
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Rendimiento medido | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este (XQ 45 GB) | 176,9B totales, 6B activos | 256K | Apache 2.0 | GGUF + pack Xolotl | Gauntlet v2 6,68; perplejidad 4,264 | HuggingFace, requiere Xolotl |
+| Este (XQ 45 GB) | 176,9B totales, 6B activos | 256K | Apache 2.0 | GGUF + pack Xolotl | Gauntlet v2 6,68; perplejidad 4,264 | Hugging Face, requiere Xolotl |
 | V1 xol-qfn | Base Qwen3.8-Flash-Next | 256K (config del autor) | Apache 2.0 (presumible, no confirmado) | GGUF | Gauntlet v2 6,50; perplejidad 4,154 | Referencia interna del autor |
-| SC117 Swift-1.5 GSQ-RCO IQ3_XXS abliterado | Mismo base Swift 1.5 | no disponible | Apache 2.0 (presumible, no confirmado) | GGUF | Acuerdo top-1 81,8%; KL 0,287; perplejidad 4,208 | HuggingFace |
+| SC117 Swift-1.5 GSQ-RCO IQ3_XXS abliterado | Mismo base Swift 1.5 | no disponible | Apache 2.0 (presumible, no confirmado) | GGUF | Acuerdo top-1 81,8%; KL 0,287; perplejidad 4,208 | Hugging Face |
 | Qwen API `qwen/qwen3.8-flash` | no disponible | no disponible | servicio propietario | API | Gauntlet v2 5,50 | API de Qwen |
 
 ## Limitaciones y advertencias
@@ -120,7 +120,7 @@ No se han publicado resultados de MMLU, HumanEval o GSM8K en la información dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndrasMirror/Qwen3.8-Flash-Next-Swift-1.5-XQ-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/IndrasMirror/Qwen3.8-Flash-Next-Swift-1.5-XQ-Uncensored
 - Modelo base (fine-tune): https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Modelo base declarado en la model card: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
 - Cuantización alternativa SC117: https://huggingface.co/SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF

@@ -4,7 +4,7 @@
 
 FLUX.2 [klein] es la familia de modelos de generación y edición de imágenes más rápida de Black Forest Labs, diseñada para aplicaciones en tiempo real y despliegue en hardware de consumo. El modelo FLUX.2-klein-9B unifica generación y edición en una única arquitectura compacta, logrando inferencias de extremo a extremo por debajo de un segundo sin sacrificar calidad. Está pensado para iteración creativa rápida, prototipado y aplicaciones interactivas.
 
-El modelo se distribuye a través de HuggingFace con la librería diffusers, con un pipeline específico `Flux2KleinPipeline` para image-to-image. Existe una variante optimizada con cuantización KV-FP8 que acelera aún más la inferencia. La licencia no está disponible en la información proporcionada, y los idiomas soportados tampoco se especifican, aunque el modelo está etiquetado con "en" (inglés) en HuggingFace.
+El modelo se distribuye a través de Hugging Face con la librería diffusers, con un pipeline específico `Flux2KleinPipeline` para image-to-image. Existe una variante optimizada con cuantización KV-FP8 que acelera aún más la inferencia. La licencia no está disponible en la información proporcionada, y los idiomas soportados tampoco se especifican, aunque el modelo está etiquetado con "en" (inglés) en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ El modelo se distribuye a través de HuggingFace con la librería diffusers, con
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP8 (variante KV-FP8 disponible) |
-| Idiomas soportados | no disponible (etiqueta "en" en HuggingFace) |
+| Idiomas soportados | no disponible (etiqueta "en" en Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors, diffusers |
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La p�
 - VRAM estimada: no disponible, pero al ser un modelo de 9B con cuantización FP8, se espera que quepa en GPUs de consumo con al menos 8-12 GB de VRAM (por ejemplo, RTX 3080/4080 o superiores).
 - GPU recomendadas: no se especifican modelos concretos, pero la familia [klein] está diseñada para hardware de consumo.
 - Compatibilidad con consumer GPU: sí, según la descripción oficial ("deployment on consumer hardware").
-- Opciones de despliegue: diffusers (HuggingFace), repositorio oficial de inferencia en GitHub (black-forest-labs/flux2). No se mencionan vLLM, llama.cpp u Ollama, ya que es un modelo de imágenes, no de texto.
+- Opciones de despliegue: diffusers (Hugging Face), repositorio oficial de inferencia en GitHub (black-forest-labs/flux2). No se mencionan vLLM, llama.cpp u Ollama, ya que es un modelo de imágenes, no de texto.
 - Latencia: inferior a un segundo de extremo a extremo en hardware adecuado, según la documentación oficial.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar con otros modelos de gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
+- Modelo en Hugging Face: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
 - Variante KV-FP8: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv-fp8
 - Página oficial del modelo: https://bfl.ai/models/flux-2-klein
 - Blog de anuncio: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence

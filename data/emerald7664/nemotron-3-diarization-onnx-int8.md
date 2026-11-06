@@ -34,7 +34,7 @@ Sobre el entrenamiento no hay informacion en los materiales disponibles: la mode
 - Diarizacion de hablantes en streaming: produce probabilidades por hablante con una granularidad temporal de 80 ms.
 - Extraccion de embeddings de hablante por bloque de audio.
 - Mantenimiento de estado entre pasos mediante cache de hablante y FIFO, lo que permite procesar audio continuo sin reiniciar el modelo.
-- Deteccion de actividad de voz (el `pipeline_tag` declarado en HuggingFace es `voice-activity-detection`).
+- Deteccion de actividad de voz (el `pipeline_tag` declarado en Hugging Face es `voice-activity-detection`).
 - Inferencia en dispositivo: 107 MB en int8, ejecutable con ONNX Runtime sin GPU.
 - No genera texto, no razona, no escribe codigo, no hace matematicas y no procesa vision.
 - No soporta tool calling, function calling ni flujos de agentes.
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto / bloque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Emerald7664/nemotron-3-diarization-onnx-int8 (este) | no disponible | 30,4 s, salida cada 80 ms | OpenMDW 1.1 | Publico en HuggingFace, formato ONNX int8 |
-| nvidia/Nemotron-3-Diarization | no disponible | no disponible | OpenMDW 1.1 | Publico en HuggingFace (checkpoint original) |
-| beshkenadze/nemotron-3-diarization-onnx | no disponible | no disponible | OpenMDW 1.1 | Publico en HuggingFace (export ONNX fp32) |
+| Emerald7664/nemotron-3-diarization-onnx-int8 (este) | no disponible | 30,4 s, salida cada 80 ms | OpenMDW 1.1 | Publico en Hugging Face, formato ONNX int8 |
+| nvidia/Nemotron-3-Diarization | no disponible | no disponible | OpenMDW 1.1 | Publico en Hugging Face (checkpoint original) |
+| beshkenadze/nemotron-3-diarization-onnx | no disponible | no disponible | OpenMDW 1.1 | Publico en Hugging Face (export ONNX fp32) |
 | Otros sistemas de diarizacion (por ejemplo, la familia pyannote o los modelos Sortformer de NVIDIA) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar parametros, contexto, rendimiento ni licencia frente a alternativas de la misma categoria. Cualquier comparacion con pyannote o con otros modelos Sortformer deberia hacerse consultando sus respectivas model cards.
@@ -89,7 +89,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Emerald7664/nemotron-3-diarization-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/Emerald7664/nemotron-3-diarization-onnx-int8
 - Modelo base original de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Export ONNX fp32 de beshkenadze: https://huggingface.co/beshkenadze/nemotron-3-diarization-onnx
 - Repositorio de Sona (aplicacion y scripts de cuantizacion): https://github.com/s0undy/sona

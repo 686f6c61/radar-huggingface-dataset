@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento de ninguno de estos modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flyingfishinwater/Qwen3-ASR-0.6B-4bit
+- Modelo en Hugging Face: https://huggingface.co/flyingfishinwater/Qwen3-ASR-0.6B-4bit
 - Modelo original: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Repositorio de la libreria mlx-audio: no disponible en la informacion proporcionada (se instala con `pip install -U mlx-audio`)
 - Paper, blog o demo oficial: no disponible en la informacion proporcionada

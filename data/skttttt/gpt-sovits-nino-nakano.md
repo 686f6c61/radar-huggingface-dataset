@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-SoVITS-Nino-Nakano es un ajuste fino (fine-tune) de voz de personaje sobre el marco GPT-SoVITS v2, publicado por el usuario Skttttt en HuggingFace. Se trata de un proyecto de fan no oficial que reproduce la voz de Nino Nakano, personaje de *The Quintessential Quintuplets* (Gotoubun no Hanayome). No está respaldado por la franquicia ni por la actriz de doblaje original, y el propio autor lo declara explícitamente en la model card.
+GPT-SoVITS-Nino-Nakano es un ajuste fino (fine-tune) de voz de personaje sobre el marco GPT-SoVITS v2, publicado por el usuario Skttttt en Hugging Face. Se trata de un proyecto de fan no oficial que reproduce la voz de Nino Nakano, personaje de *The Quintessential Quintuplets* (Gotoubun no Hanayome). No está respaldado por la franquicia ni por la actriz de doblaje original, y el propio autor lo declara explícitamente en la model card.
 
 El repositorio, de 2,2 GB, incluye diez checkpoints de personaje guardados localmente, con las variantes A y G2 y épocas intermedias, además de tres grabaciones de referencia en japonés con sus transcripciones, los codificadores compartidos BERT y HuBERT, una instantánea del código fuente de GPT-SoVITS en `runtime_source/`, ayudas de inferencia por linea de comandos y un `manifest.json` con los hashes SHA-256 y los pares de checkpoint emparejados. La variante por defecto es G2, por ser el par completo mas reciente, aunque el autor aclara que esto no implica que suene mejor que la variante A. El corpus de entrenamiento, los registros del optimizador y la instalacion de Python para Windows no se distribuyen.
 
@@ -79,7 +79,7 @@ La model card menciona dos referencias comparables: el marco GPT-SoVITS v2 upstr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-SoVITS-Nino-Nakano (Skttttt) | no disponible | no disponible | no disponible (sin benchmarks publicados) | no disponible; sin licencia comercial general para voces ni derechos de personaje | HuggingFace, 2,2 GB, 0 descargas |
+| GPT-SoVITS-Nino-Nakano (Skttttt) | no disponible | no disponible | no disponible (sin benchmarks publicados) | no disponible; sin licencia comercial general para voces ni derechos de personaje | Hugging Face, 2,2 GB, 0 descargas |
 | GPT-SoVITS v2 (upstream, RVC-Boss) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | codigo fuente citado por el autor; URL no incluida en el material |
 | Fish Speech | no disponible | no disponible | no disponible | no disponible | mencionado en la model card como marco alternativo, sin enlaces |
 
@@ -99,7 +99,7 @@ La model card menciona dos referencias comparables: el marco GPT-SoVITS v2 upstr
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Skttttt/GPT-SoVITS-Nino-Nakano
+- Ficha en Hugging Face: https://huggingface.co/Skttttt/GPT-SoVITS-Nino-Nakano
 - Referencia de audio 1 (4,272 s): https://huggingface.co/Skttttt/GPT-SoVITS-Nino-Nakano/resolve/main/references/reference1.wav
 - Referencia de audio 2 (4,644 s): https://huggingface.co/Skttttt/GPT-SoVITS-Nino-Nakano/resolve/main/references/reference2.wav
 - Referencia de audio 3 (3,715 s): https://huggingface.co/Skttttt/GPT-SoVITS-Nino-Nakano/resolve/main/references/reference3.wav

@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aion Software Engineer AI (3B) | 3B | no disponible | Agente de codificación con scratchpad y herramientas | Apache 2.0 | HuggingFace |
-| Qwen 2.5 Coder 3B (base) | 3B | 32K (típico) | Modelo de código general | Apache 2.0 | HuggingFace |
-| CodeLlama 3B | 3B | 16K | Modelo de código general | Llama 2 license | HuggingFace |
-| StarCoder2-3B | 3B | 16K | Modelo de código general | BigCode OpenRAIL-M | HuggingFace |
+| Aion Software Engineer AI (3B) | 3B | no disponible | Agente de codificación con scratchpad y herramientas | Apache 2.0 | Hugging Face |
+| Qwen 2.5 Coder 3B (base) | 3B | 32K (típico) | Modelo de código general | Apache 2.0 | Hugging Face |
+| CodeLlama 3B | 3B | 16K | Modelo de código general | Llama 2 license | Hugging Face |
+| StarCoder2-3B | 3B | 16K | Modelo de código general | BigCode OpenRAIL-M | Hugging Face |
 
 Nota: los datos de contexto de Qwen 2.5 Coder 3B y CodeLlama 3B son valores típicos conocidos, pero no se han confirmado para el fine-tuning de Aion. La comparación se basa en características generales, no en rendimiento, ya que no hay benchmarks disponibles para Aion.
 
@@ -77,6 +77,6 @@ Nota: los datos de contexto de Qwen 2.5 Coder 3B y CodeLlama 3B son valores típ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lionelglo/aion-software-engineer-ai-3B
-- Model card (README): incluida en el repositorio de HuggingFace.
+- Modelo en Hugging Face: https://huggingface.co/Lionelglo/aion-software-engineer-ai-3B
+- Model card (README): incluida en el repositorio de Hugging Face.
 - No se encontraron papers, blogs o demos adicionales en la búsqueda web. Los resultados relacionados con "Aion Labs" o "Aion 1.0 de Microsoft" no corresponden a este modelo.

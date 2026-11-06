@@ -81,7 +81,7 @@ Los modelos comparables son los adaptadores inversos del mismo estudio, donde Ll
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_llama-3.3-70b_seed42
 - Adaptador inverso (Llama-3.3-70B como base): https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed42
 - Adaptador inverso (semilla 1): https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed1
 - Repositorio de Qwen3.6: https://github.com/QwenLM/Qwen3.6

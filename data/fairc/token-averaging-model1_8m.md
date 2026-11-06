@@ -77,4 +77,4 @@ La comparación directa no es significativa porque el modelo de FAIRC no ha sido
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/FAIRC/token-averaging-model1_8m)
+- [Repositorio Hugging Face](https://huggingface.co/FAIRC/token-averaging-model1_8m)

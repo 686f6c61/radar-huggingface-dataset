@@ -92,7 +92,7 @@ No se dispone de información sobre otros modelos comparables en la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anjielon/ODINO-397B-v34a-TQ1_0
+- Modelo en Hugging Face: https://huggingface.co/Anjielon/ODINO-397B-v34a-TQ1_0
 - Pull request de llama.cpp para kernels Vulkan TQ1_0: https://github.com/ggml-org/llama.cpp/pull/27765
 - Repositorio "fucina" (herramientas y paper): https://github.com/Anjielon/fucina
 - Modelo base Ornith-1.5-397B: https://huggingface.co/ornith-ai/Ornith-1.5-397B

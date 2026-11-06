@@ -74,8 +74,8 @@ El umbral declarado por la familia de modelos es del 80 por ciento en dominio y 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kairos Sotos 1.0 14B | 14.768.307.200 | No disponible (despliegue a 2048) | Gate: 18/20 y 17/20 en dominio segun juez | Apache 2.0 | GGUF Q6_K en HuggingFace |
-| Qwen/Qwen3-14B (modelo base) | 14.768.307.200 | No disponible en la informacion proporcionada | No disponible | Apache 2.0 | Safetensors en HuggingFace |
+| Kairos Sotos 1.0 14B | 14.768.307.200 | No disponible (despliegue a 2048) | Gate: 18/20 y 17/20 en dominio segun juez | Apache 2.0 | GGUF Q6_K en Hugging Face |
+| Qwen/Qwen3-14B (modelo base) | 14.768.307.200 | No disponible en la informacion proporcionada | No disponible | Apache 2.0 | Safetensors en Hugging Face |
 | Otros modelos de auditoria de seguridad de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La busqueda web realizada no devolvio informacion sobre modelos comparables de auditoria de seguridad; los resultados obtenidos eran genericos sobre asistentes conversacionales y no guardan relacion con esta ficha.
@@ -94,7 +94,7 @@ La busqueda web realizada no devolvio informacion sobre modelos comparables de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Walkowicz/kairos-sotos-1.0-14B
+- Modelo en Hugging Face: https://huggingface.co/Walkowicz/kairos-sotos-1.0-14B
 - Modelo base Qwen/Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Tag de Ollama documentado: `kairos-sotos:v0`
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo, su paper, repositorio o demo; los resultados obtenidos correspondian a asistentes conversacionales genericos sin relacion con la ficha.

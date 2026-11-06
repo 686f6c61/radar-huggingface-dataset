@@ -79,9 +79,9 @@ El modelo base referencia graficos de rendimiento multimodal y de texto puro (im
 
 | Modelo | Parametros | Contexto | Comportamiento de rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-4B-Instruct-heretic-Semantic-Same (este) | ~4,4B densos | 256K-1M | 3/100 rechazos | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3-VL-4B-Instruct | ~4,4B densos | 256K-1M | 97/100 rechazos | apache-2.0 | HuggingFace (modelo oficial de referencia) |
-| Qwen/Qwen3-VL-8B-Instruct | ~8B densos | 256K-1M | no disponible | apache-2.0 | HuggingFace (version superior de la familia) |
+| Qwen3-VL-4B-Instruct-heretic-Semantic-Same (este) | ~4,4B densos | 256K-1M | 3/100 rechazos | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3-VL-4B-Instruct | ~4,4B densos | 256K-1M | 97/100 rechazos | apache-2.0 | Hugging Face (modelo oficial de referencia) |
+| Qwen/Qwen3-VL-8B-Instruct | ~8B densos | 256K-1M | no disponible | apache-2.0 | Hugging Face (version superior de la familia) |
 
 Los datos de rendimiento comparativo entre estos modelos no estan publicados en la informacion disponible, salvo las metricas de rechazo y divergencia KL. No se dispone de comparativas numericas de MMLU, MMMU u otros benchmarks.
 
@@ -99,7 +99,7 @@ Los datos de rendimiento comparativo entre estos modelos no estan publicados en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VINAY-UMRETHE/Qwen3-VL-4B-Instruct-heretic-Semantic-Same
+- Modelo en Hugging Face: https://huggingface.co/VINAY-UMRETHE/Qwen3-VL-4B-Instruct-heretic-Semantic-Same
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Heretic (proyecto de abliteracion): https://heretic-project.org
 - Qwen Chat (demo): https://chat.qwenlm.ai/

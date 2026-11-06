@@ -87,7 +87,7 @@ La alternativa mas directa es el propio modelo base, Qwen3-VL-8B-Instruct, que p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DawnLiu/EVAN-8B
+- Modelo en Hugging Face: https://huggingface.co/DawnLiu/EVAN-8B
 - Articulo (arXiv): https://arxiv.org/abs/2610.39237
 - Codigo y scripts de entrenamiento: https://github.com/DawnLIU35/EVAN
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

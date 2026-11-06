@@ -101,7 +101,7 @@ No se dispone en la información proporcionada de datos verificables de parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Ming-3.0-tts-0.5B-bf16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Ming-3.0-tts-0.5B-bf16
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
 - Repositorio del autor: https://github.com/inclusionAI/Ming-3.0-tts
 - Librería mlx-audio: https://github.com/Blaizzy/mlx-audio

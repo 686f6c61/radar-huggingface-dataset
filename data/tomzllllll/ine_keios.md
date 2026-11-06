@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tomzllllll/Ine_keios` es un repositorio de modelos publicado en HuggingFace por el usuario Tomzllllll el 25 de octubre de 2026. En el momento de redactar esta ficha no dispone de model card con contenido tecnico (el README solo contiene el bloque de metadatos con `license: unknown`), no tiene descargas ni «likes», y no se le ha asignado pipeline ni idiomas. El tamano del repositorio es de 0,1 GB.
+`Tomzllllll/Ine_keios` es un repositorio de modelos publicado en Hugging Face por el usuario Tomzllllll el 25 de octubre de 2026. En el momento de redactar esta ficha no dispone de model card con contenido tecnico (el README solo contiene el bloque de metadatos con `license: unknown`), no tiene descargas ni «likes», y no se le ha asignado pipeline ni idiomas. El tamano del repositorio es de 0,1 GB.
 
 No es posible determinar que problema resuelve, que arquitectura emplea ni sobre que datos se ha entrenado. El nombre del repositorio no aporta informacion verificable sobre su proposito, y la ausencia de documentacion impide clasificarlo como modelo base, fine-tune o experimento. A efectos practicos, debe considerarse un artefacto sin informacion publica de validacion.
 
@@ -26,7 +26,7 @@ Nota: el repositorio ocupa 0,1 GB. Ese volumen es compatible con pesos de un mod
 
 No disponible. La model card no describe la arquitectura (transformer, MoE, SSM o hibrida), no indica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
-La unica informacion estructural es la etiqueta `region:us` que HuggingFace asigna por defecto a repositorios alojados en la region estadounidense, y la marca temporal de creacion y actualizacion (25 de octubre de 2026, con dos minutos de diferencia entre ambas), lo que sugiere una subida unica sin iteraciones posteriores documentadas.
+La unica informacion estructural es la etiqueta `region:us` que Hugging Face asigna por defecto a repositorios alojados en la region estadounidense, y la marca temporal de creacion y actualizacion (25 de octubre de 2026, con dos minutos de diferencia entre ambas), lo que sugiere una subida unica sin iteraciones posteriores documentadas.
 
 ## Capacidades
 
@@ -36,7 +36,7 @@ La unica informacion estructural es la etiqueta `region:us` que HuggingFace asig
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el campo de idiomas esta vacio.
 - Capacidades especiales (vision, audio, thinking mode): no disponible.
-- No se ha declarado ninguna tarea en el campo `pipeline_tag`, por lo que HuggingFace no puede inferir la modalidad del modelo.
+- No se ha declarado ninguna tarea en el campo `pipeline_tag`, por lo que Hugging Face no puede inferir la modalidad del modelo.
 
 ## Casos de uso
 
@@ -88,6 +88,6 @@ No disponible. No es posible establecer una comparativa porque se desconocen la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tomzllllll/Ine_keios
-- Perfil del autor en HuggingFace: https://huggingface.co/Tomzllllll
+- Repositorio en Hugging Face: https://huggingface.co/Tomzllllll/Ine_keios
+- Perfil del autor en Hugging Face: https://huggingface.co/Tomzllllll
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

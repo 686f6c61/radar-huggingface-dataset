@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `snehapatel91/albef-contrastive-int4` es una implementación personalizada y compacta en PyTorch de ALBEF (Align before Fuse) orientada a tareas de aprendizaje contrastivo entre imagen y texto. Lo publica el usuario snehapatel91 en HuggingFace bajo licencia BSD-3-Clause y se presenta explícitamente como un artefacto experimental, no como un modelo preentrenado listo para producción. La configuración declarada es de escala "large", con atención estándar, fusión bilineal, activación ReLU y normalización LayerNorm.
+El repositorio `snehapatel91/albef-contrastive-int4` es una implementación personalizada y compacta en PyTorch de ALBEF (Align before Fuse) orientada a tareas de aprendizaje contrastivo entre imagen y texto. Lo publica el usuario snehapatel91 en Hugging Face bajo licencia BSD-3-Clause y se presenta explícitamente como un artefacto experimental, no como un modelo preentrenado listo para producción. La configuración declarada es de escala "large", con atención estándar, fusión bilineal, activación ReLU y normalización LayerNorm.
 
 El propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), revisiones de código y experimentos controlados de pequeño tamaño, y que no se presenta como un checkpoint entrenado ni evaluado. No se reclama ninguna puntuación de benchmark en la model card. El repositorio tiene 0 descargas, 0 likes y un tamaño de 0,0 GB en el momento de la consulta.
 
@@ -48,7 +48,7 @@ No hay evidencia de un entrenamiento completado. El repositorio incluye un `conf
 - Experimentos controlados de escalado: emplear la configuración "large" como línea base reproducible en estudios comparativos, fijando semillas y presupuesto de ajuste.
 - Punto de partida para ajuste fino en tareas contrastivas imagen-texto: el usuario puede cargar el checkpoint y entrenarlo sobre un conjunto propio, documentando los resultados aparte de los valores por defecto.
 - Evaluación metodológica de recetas: usar el `training_args.json` (AdamW con planificador step) como receta inicial para comparar contra otras configuraciones bajo la misma exposición de datos.
-- Docencia y formación: sirve como ejemplo mínimo de estructura de repositorio de modelo (script, configuración, argumentos de entrenamiento y pesos) para explicar el ciclo de vida de un modelo en HuggingFace.
+- Docencia y formación: sirve como ejemplo mínimo de estructura de repositorio de modelo (script, configuración, argumentos de entrenamiento y pesos) para explicar el ciclo de vida de un modelo en Hugging Face.
 - No se recomienda su uso en producción para atención al cliente, generación de código u otras aplicaciones finales, dado que el propio autor lo describe como no auditado y no entrenado.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| snehapatel91/albef-contrastive-int4 | 24.832 (declarado) | no disponible | BSD-3-Clause | HuggingFace (0 descargas) | Checkpoint de inicializacion, no entrenado |
+| snehapatel91/albef-contrastive-int4 | 24.832 (declarado) | no disponible | BSD-3-Clause | Hugging Face (0 descargas) | Checkpoint de inicializacion, no entrenado |
 | ALBEF original (referencia) | no disponible | no disponible | no disponible | Repositorio academico | Modelo preentrenado publicado por los autores |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,11 +80,11 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 - Riesgo de alucinación y sesgos: no evaluado; sin entrenamiento no procede valorarlo, pero tampoco hay garantías.
 - Limitaciones de contexto e idioma: no disponibles; no se documenta ventana de contexto ni cobertura lingüística.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial con atribución y conservación del aviso de copyright, pero el autor recomienda revisar por separado los términos de los datos de origen cuando se usen datasets externos.
-- Al ser una implementación personalizada, no se puede cargar con APIs genéricas de HuggingFace sin un adaptador explícito.
+- Al ser una implementación personalizada, no se puede cargar con APIs genéricas de Hugging Face sin un adaptador explícito.
 - Los resultados de un futuro checkpoint entrenado deben documentarse de forma separada de los valores por defecto incluidos en el repositorio.
 - La fecha de creación registrada (2026-10-06) es posterior a la fecha habitual de consulta; conviene verificar la vigencia del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/snehapatel91/albef-contrastive-int4
+- Hugging Face: https://huggingface.co/snehapatel91/albef-contrastive-int4
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

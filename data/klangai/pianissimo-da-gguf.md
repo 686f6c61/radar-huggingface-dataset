@@ -95,7 +95,7 @@ No se dispone de datos de otros modelos ASR comparables en la información propo
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/KlangAI/pianissimo-da-gguf
+- Modelo GGUF en Hugging Face: https://huggingface.co/KlangAI/pianissimo-da-gguf
 - Modelo original: https://huggingface.co/KlangAI/pianissimo-da
 - Versiones ONNX: https://huggingface.co/KlangAI/pianissimo-da-onnx
 - Versiones MLX: https://huggingface.co/KlangAI/pianissimo-da-mlx-8bit

@@ -68,8 +68,8 @@ No se dispone de datos de otros adaptadores comparables en la información propo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `jvonrad/olmo-2-7b-finetranslations` (base) | ~7B | No disponible | Apache 2.0 | HuggingFace |
-| **OLMo-2-7B-CPT-DCO-10k** (adaptador) | Adaptador LoRA | No disponible | Apache 2.0 | HuggingFace |
+| `jvonrad/olmo-2-7b-finetranslations` (base) | ~7B | No disponible | Apache 2.0 | Hugging Face |
+| **OLMo-2-7B-CPT-DCO-10k** (adaptador) | Adaptador LoRA | No disponible | Apache 2.0 | Hugging Face |
 
 No se conocen modelos de la misma categoría (adaptadores LoRA multilingües con DCO) con datos públicos comparables.
 
@@ -84,7 +84,7 @@ No se conocen modelos de la misma categoría (adaptadores LoRA multilingües con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jvonrad/OLMo-2-7B-CPT-DCO-10k
+- Modelo en Hugging Face: https://huggingface.co/jvonrad/OLMo-2-7B-CPT-DCO-10k
 - Modelo base: https://huggingface.co/jvonrad/olmo-2-7b-finetranslations
 - Dataset PolyFact-Clean: https://huggingface.co/datasets/jvonrad/PolyFact-Clean
 - Paper (arXiv): https://arxiv.org/abs/2606.06586

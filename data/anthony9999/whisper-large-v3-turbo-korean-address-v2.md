@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anthony9999/whisper-large-v3-turbo-korean-address-v2` es un fine-tuning del modelo Whisper large-v3-turbo de OpenAI, aparentemente especializado en el reconocimiento de direcciones coreanas. Sin embargo, la información disponible en su ficha de HuggingFace es extremadamente limitada: la model card es una plantilla genérica sin detalles sobre el entrenamiento, los datos, la arquitectura o el rendimiento. El nombre sugiere que se trata de una adaptación del modelo base para transcribir o reconocer direcciones en coreano, pero no hay confirmación oficial ni documentación técnica.
+El modelo `anthony9999/whisper-large-v3-turbo-korean-address-v2` es un fine-tuning del modelo Whisper large-v3-turbo de OpenAI, aparentemente especializado en el reconocimiento de direcciones coreanas. Sin embargo, la información disponible en su ficha de Hugging Face es extremadamente limitada: la model card es una plantilla genérica sin detalles sobre el entrenamiento, los datos, la arquitectura o el rendimiento. El nombre sugiere que se trata de una adaptación del modelo base para transcribir o reconocer direcciones en coreano, pero no hay confirmación oficial ni documentación técnica.
 
 El repositorio tiene un tamaño de 0.1 GB, lo que indica que podría tratarse de una versión cuantizada, un adaptador o un modelo de menor tamaño, aunque no se especifica. El modelo fue creado el 18 de agosto de 2026 y no ha recibido descargas ni valoraciones. Dada la falta de información, esta ficha se basa únicamente en los metadatos disponibles y en el conocimiento general sobre la familia Whisper large-v3-turbo, sin asumir datos no confirmados.
 
@@ -65,5 +65,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/anthony9999/whisper-large-v3-turbo-korean-address-v2)
+- [Modelo en Hugging Face](https://huggingface.co/anthony9999/whisper-large-v3-turbo-korean-address-v2)
 - [Whisper large-v3-turbo original de OpenAI](https://huggingface.co/openai/whisper-large-v3-turbo) (referencia del modelo base, no específico de este fine-tuning)

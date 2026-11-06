@@ -71,7 +71,7 @@ La model card no reporta exactitud top-1 ni top-5 en ImageNet-1K, no incluye eva
 
 | Modelo | Parametros | Resolucion de entrada | Clases | Ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| perturb-effv2l-adv (este modelo) | 119.027.848 | 480 x 480 | 1000 (ImageNet-1K) | Entrenamiento adversarial para subred Perturb | apache-2.0 | HuggingFace, sin descargas ni validacion externa |
+| perturb-effv2l-adv (este modelo) | 119.027.848 | 480 x 480 | 1000 (ImageNet-1K) | Entrenamiento adversarial para subred Perturb | apache-2.0 | Hugging Face, sin descargas ni validacion externa |
 | torchvision `efficientnet_v2_l` (IMAGENET1K_V1) | ~118,7 M | 480 x 480 | 1000 (ImageNet-1K) | Entrenamiento supervisado estandar | pesos torchvision bajo licencia BSD-3-Clause | Ampliamente usado, descarga directa via API de torchvision |
 | ConvNeXt-L (ImageNet-1K) | ~198 M | 224 x 224 | 1000 (ImageNet-1K) | Entrenamiento supervisado estandar | segun implementacion (MIT en repositorios de referencia) | Disponible en torchvision y otros repositorios |
 | ViT-L/16 (ImageNet-1K) | ~304 M | 224 x 224 | 1000 (ImageNet-1K) | Entrenamiento supervisado estandar | segun implementacion | Disponible en torchvision y otros repositorios |
@@ -94,7 +94,7 @@ No se dispone de cifras de precision para el modelo objeto de la ficha, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mailmail85/perturb-effv2l-adv
+- Modelo en Hugging Face: https://huggingface.co/mailmail85/perturb-effv2l-adv
 - Sitio de la subred Perturb: https://perturbai.io
 - Documentacion de torchvision sobre EfficientNetV2: https://pytorch.org/vision/stable/models/efficientnetv2.html
 - Repositorio de safetensors: https://github.com/huggingface/safetensors

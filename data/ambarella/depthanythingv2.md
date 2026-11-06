@@ -82,9 +82,9 @@ No se dispone de métricas comparativas publicadas en la información proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ambarella/DepthAnythingV2
+- Repositorio Hugging Face: https://huggingface.co/Ambarella/DepthAnythingV2
 - Paper original: https://arxiv.org/abs/2406.09414
 - Código oficial DepthAnythingV2: https://github.com/DepthAnything/Depth-Anything-V2
 - Checkpoint original Small: https://huggingface.co/depth-anything/Depth-Anything-V2-Small
 - Pesos originales ViT-S: https://huggingface.co/depth-anything/Depth-Anything-V2-Small/resolve/main/depth_anything_v2_vits.pth
-- Binarios Ambarella (N1-655, X7, CV7, CV72, CV75): disponibles en el propio repositorio HuggingFace bajo los nombres `n1-655_*`, `x7_*`, `cv7_*`, `cv72_*` y `cv75_*`
+- Binarios Ambarella (N1-655, X7, CV7, CV72, CV75): disponibles en el propio repositorio Hugging Face bajo los nombres `n1-655_*`, `x7_*`, `cv7_*`, `cv72_*` y `cv75_*`

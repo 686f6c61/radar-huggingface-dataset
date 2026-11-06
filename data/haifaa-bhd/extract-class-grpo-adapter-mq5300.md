@@ -81,8 +81,8 @@ MQ* = (I_A + I_B) / (I_A + I_B + E_AB), la proporcion de aristas de dependencia 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| extract-class-grpo-adapter-mq5300 | LoRA sobre 7,6B | No indicado (heredado del base) | GRPO con recompensa MQ* | Apache 2.0 | HuggingFace, 0 descargas |
-| extract-class-grpo-adapter (f1lcom ck4200) | LoRA sobre 7,6B | No indicado (heredado del base) | GRPO con recompensa F1+LCOM | Apache 2.0 | HuggingFace, mismo autor |
+| extract-class-grpo-adapter-mq5300 | LoRA sobre 7,6B | No indicado (heredado del base) | GRPO con recompensa MQ* | Apache 2.0 | Hugging Face, 0 descargas |
+| extract-class-grpo-adapter (f1lcom ck4200) | LoRA sobre 7,6B | No indicado (heredado del base) | GRPO con recompensa F1+LCOM | Apache 2.0 | Hugging Face, mismo autor |
 | Qwen2.5-Coder-7B-Instruct (modelo base sin ajustar) | 7,6B | 32.768 tokens en el base | Instruccion general de codigo, sin especializacion en extract class | Apache 2.0 | Ampliamente disponible |
 
 No se conocen en la informacion proporcionada otros adaptadores publicos comparables especificamente entrenados para la tarea Extract Class; la comparacion mas directa es con el checkpoint hermano del mismo autor y con el modelo base sin ajustar.
@@ -101,7 +101,7 @@ No se conocen en la informacion proporcionada otros adaptadores publicos compara
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/haifaa-bhd/extract-class-grpo-adapter-mq5300
+- Hugging Face del adaptador: https://huggingface.co/haifaa-bhd/extract-class-grpo-adapter-mq5300
 - Adaptador companero (f1lcom, checkpoint 4200), citado en la model card: `haifaa-bhd/extract-class-grpo-adapter`
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Spoon (biblioteca de transformacion de codigo Java): https://spoon.gforge.inria.fr/

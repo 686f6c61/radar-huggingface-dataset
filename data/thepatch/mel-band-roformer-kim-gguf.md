@@ -85,6 +85,6 @@ No se dispone en la información proporcionada de datos de parámetros, contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thepatch/mel-band-roformer-kim-GGUF
+- Modelo en Hugging Face: https://huggingface.co/thepatch/mel-band-roformer-kim-GGUF
 - Modelo base (original): https://huggingface.co/KimberleyJSN/melbandroformer
 - Repositorio stems.cpp: https://github.com/betweentwomidnights/stems.cpp

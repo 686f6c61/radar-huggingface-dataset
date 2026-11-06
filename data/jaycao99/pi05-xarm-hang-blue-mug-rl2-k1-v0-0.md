@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JayCao99/pi05-xarm-hang-blue-mug-rl2-K1-v0.0` es un checkpoint de política de robótica desarrollado por JayCao99, publicado en HuggingFace como parte de un repositorio de `LeRobot`. Se trata de un modelo de aprendizaje por imitación (imitation learning) diseñado para controlar un brazo robótico xArm en una tarea concreta: colgar una taza azul. El checkpoint se almacena en la subcarpeta `checkpoint-002250`, que contiene el payload desplegable (`model.safetensors` + `config.json` + pre/postprocessor + `train_config.json`), con un total de 9,4 GB en el repositorio.
+El modelo `JayCao99/pi05-xarm-hang-blue-mug-rl2-K1-v0.0` es un checkpoint de política de robótica desarrollado por JayCao99, publicado en Hugging Face como parte de un repositorio de `LeRobot`. Se trata de un modelo de aprendizaje por imitación (imitation learning) diseñado para controlar un brazo robótico xArm en una tarea concreta: colgar una taza azul. El checkpoint se almacena en la subcarpeta `checkpoint-002250`, que contiene el payload desplegable (`model.safetensors` + `config.json` + pre/postprocessor + `train_config.json`), con un total de 9,4 GB en el repositorio.
 
 Este modelo se publica a través de un script de subida de checkpoints (`goal_gen/upload_hf_checkpoints.sh`) y está pensado para ser usado con la librería `LeRobot`. No se dispone de información pública sobre la arquitectura interna, los parámetros totales, el contexto ni la licencia, por lo que muchos datos técnicos figuran como "no disponible". La relevancia del modelo radica en su naturaleza de política de robot accionable, no en capacidades de lenguaje o generación de texto.
 
@@ -42,7 +42,7 @@ El uso previsto es cargar el modelo mediante `PI05Policy.from_pretrained(...)` d
 - Integración en plataformas de demostración robótica: el checkpoint desplegable puede cargarse directamente en un sistema con `LeRobot` y probarse en un entorno de laboratorio para evaluar el comportamiento de la política.
 - Fine-tuning de tareas similares: dado que se publica con su configuración y pre/postprocessors, puede servir como punto de partida para adaptar la política a tareas de agarre o manipulación de objetos con formas y colores similares.
 - Uso en simulaciones de robótica (por ejemplo, MuJoCo o Isaac Sim): la política puede validarse en entornos simulados antes de su despliegue en hardware real, reduciendo riesgos.
-- Documentación de procedimientos de despliegue: sirve como ejemplo concreto de cómo estructurar y subir checkpoints de `LeRobot` a HuggingFace para su reutilización por la comunidad.
+- Documentación de procedimientos de despliegue: sirve como ejemplo concreto de cómo estructurar y subir checkpoints de `LeRobot` a Hugging Face para su reutilización por la comunidad.
 
 ## Benchmarks y rendimiento
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Autor | Tarea visible | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `JayCao99/pi05-xarm-hang-blue-mug-rl2-K1-v0.0` | JayCao99 | Colgar taza azul | no disponible | no disponible | no disponible | HuggingFace |
-| `JayCao99/pi05-xarm-hang-blue-mug-p16-v0.0` | JayCao99 | Colgar taza azul | no disponible | no disponible | no disponible | HuggingFace |
+| `JayCao99/pi05-xarm-hang-blue-mug-rl2-K1-v0.0` | JayCao99 | Colgar taza azul | no disponible | no disponible | no disponible | Hugging Face |
+| `JayCao99/pi05-xarm-hang-blue-mug-p16-v0.0` | JayCao99 | Colgar taza azul | no disponible | no disponible | no disponible | Hugging Face |
 
 Ambos son checkpoints de la misma familia `pi05` y de la misma tarea, publicados por el mismo autor. No se dispone de datos de rendimiento, tamaño del modelo ni licencia para establecer una comparación cuantitativa.
 
@@ -76,6 +76,6 @@ Ambos son checkpoints de la misma familia `pi05` y de la misma tarea, publicados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JayCao99/pi05-xarm-hang-blue-mug-rl2-K1-v0.0
+- Modelo en Hugging Face: https://huggingface.co/JayCao99/pi05-xarm-hang-blue-mug-rl2-K1-v0.0
 - Modelo similar de la misma familia: https://huggingface.co/JayCao99/pi05-xarm-hang-blue-mug-p16-v0.0
 - Dataset asociado: https://huggingface.co/datasets/JayCao99/xarm-hang-blue-mug-v0

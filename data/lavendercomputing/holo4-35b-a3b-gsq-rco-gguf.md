@@ -25,7 +25,7 @@ Detalles adicionales de la arquitectura: 40 bloques, 256 expertos enrutados por 
 
 El modelo base es un transformer mixture-of-experts con 40 bloques y 256 expertos enrutados por bloque, de los cuales 8 se activan por token. Los expertos enrutados concentran aproximadamente el 92 % de los parámetros, lo que hace que la compresión a 3 bits se aplique principalmente sobre ellos mediante una escalera de precisión de tres niveles ponderada hacia los bordes ("edge-weighted ladder"): los tensores de atención y los shared experts se mantienen en precisión alta, mientras que las normas 1-D quedan en fp32.
 
-Sobre el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO) no se ha publicado información en los datos disponibles. En cuanto a la cuantización, el enfoque "GSQ-RCO-style" replica de forma compatible con GGUF la receta de 3 bits de los motores GSQ/RCO, que solo emiten `compressed-tensors` de HuggingFace y requieren GPUs sm_90+, por lo que no pueden generar GGUF directamente. Las builds se derivan de un paso intermedio Q8_0 de mradermacher (considerado prácticamente sin pérdidas) y emplean una importance matrix que cubre 510 de las 512 matrices 2-D significativas; `token_embd` y `output` carecen de filas en la imatrix y quedan fijadas a Q8_0.
+Sobre el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO) no se ha publicado información en los datos disponibles. En cuanto a la cuantización, el enfoque "GSQ-RCO-style" replica de forma compatible con GGUF la receta de 3 bits de los motores GSQ/RCO, que solo emiten `compressed-tensors` de Hugging Face y requieren GPUs sm_90+, por lo que no pueden generar GGUF directamente. Las builds se derivan de un paso intermedio Q8_0 de mradermacher (considerado prácticamente sin pérdidas) y emplean una importance matrix que cubre 510 de las 512 matrices 2-D significativas; `token_embd` y `output` carecen de filas en la imatrix y quedan fijadas a Q8_0.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ Sobre el entrenamiento del modelo base (número de tokens, composición del data
 - Computer Use: análisis de capturas de pantalla y razonamiento sobre interfaces gráficas para automatizar tareas en sistemas operativos (30,9 % en OSWorld 2.0).
 - Generación de texto y razonamiento general, verificado mediante smoke tests de inferencia en CPU con salida coherente.
 - Contexto muy largo: hasta 262.144 tokens, útil para conversaciones extensas y documentos voluminosos.
-- Etiquetado como conversacional y compatible con endpoints de HuggingFace.
+- Etiquetado como conversacional y compatible con endpoints de Hugging Face.
 - No hay información publicada sobre tool calling, function calling, capacidades de agente multi-paso (más allá del enfoque Computer Use) ni soporte de audio.
 
 ## Casos de uso

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lantianws666/moss-whale-girl` es un LoRA de personaje para generación de imágenes (text-to-image) publicado en HuggingFace, que añade a MOSS-Image un personaje anime concreto: "DS Whale Girl" (鲸鱼娘), una chica Q-style (proporciones chibi) con cabello largo ondulado en degradado azul, orejas de aleta de ballena, traje de sirvienta azul marino con delantal blanco y cola de ballena azul profundo. El adaptador, de 141,8 MB en bf16 con rank 32, se entrena sobre el modelo base `OpenMOSS-Team/MOSS-Image-Base` y resuelve el problema clásico de consistencia de personaje: permite generar al mismo personaje en distintas poses, vestuarios y escenas mediante una palabra disparadora (`moss_whalegirl`).
+`lantianws666/moss-whale-girl` es un LoRA de personaje para generación de imágenes (text-to-image) publicado en Hugging Face, que añade a MOSS-Image un personaje anime concreto: "DS Whale Girl" (鲸鱼娘), una chica Q-style (proporciones chibi) con cabello largo ondulado en degradado azul, orejas de aleta de ballena, traje de sirvienta azul marino con delantal blanco y cola de ballena azul profundo. El adaptador, de 141,8 MB en bf16 con rank 32, se entrena sobre el modelo base `OpenMOSS-Team/MOSS-Image-Base` y resuelve el problema clásico de consistencia de personaje: permite generar al mismo personaje en distintas poses, vestuarios y escenas mediante una palabra disparadora (`moss_whalegirl`).
 
 Su relevancia es principalmente para el ecosistema de MOSS-Image: al ser Apache-2.0 y estar integrado con `diffusers` y con el Space `mrfakename/moss-image`, puede probarse sin GPU local. Conviene tener en cuenta que es una publicación muy reciente (28/10/2026) con 0 descargas y 0 likes, es decir, sin validación comunitaria todavía, y que solo es compatible con MOSS-Image, no con SDXL ni SD1.5.
 
@@ -38,7 +38,7 @@ El dataset de entrenamiento es muy reducido: 25 imágenes durante 1500 pasos, a 
 - Intercambio de vestuario manteniendo los rasgos de identidad del personaje (ejemplos documentados: sudadera blanca casual, uniforme escolar con falda de cuadros, bañador azul de una pieza).
 - Composición de escenas con iluminación cinematográfica, con prompts de ejemplo incluidos (playa a la hora dorada con contraluz y lens flare; mar nocturno con cielo estrellado, vía láctea y plancton bioluminiscente).
 - Integración con la librería `diffusers` y con el pipeline nativo `MOSSImagePipeline` (vía `ModelConfig` con `arch="moss_image"` e `InferenceLoRA`).
-- Uso en HuggingFace Spaces sin instalación local, pasando el repo id al campo `lora_repo` del Space `mrfakename/moss-image`.
+- Uso en Hugging Face Spaces sin instalación local, pasando el repo id al campo `lora_repo` del Space `mrfakename/moss-image`.
 - No es un modelo de propósito general: genera exclusivamente este personaje y no incluye capacidades de edición, inpainting u otras tareas (no disponible en la información proporcionada).
 
 ## Casos de uso
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 - La configuración del pipeline nativo admite los flags `quantize` y `quantize_te`, lo que indica que existen opciones de cuantización para reducir memoria, aunque sin detalles publicados.
 - La resolución recomendada (1024x1536, vertical) con 30 pasos y CFG 3,0 implica un coste de inferencia superior al de una generación cuadrada a 1024x1024; no se publican cifras de latencia ni throughput (no disponible).
 - No se especifican GPU recomendadas ni si funciona en GPUs de consumo concretas (no disponible); al ser un LoRA ligero, el requisito dominante es el del modelo base.
-- Opciones de despliegue: `diffusers`, pipeline nativo `MOSSImagePipeline` (con `ModelConfig` y `InferenceLoRA`) y HuggingFace Spaces (`mrfakename/moss-image`) para inferencia gestionada; para entrenamiento o reentrenamiento, ai-toolkit.
+- Opciones de despliegue: `diffusers`, pipeline nativo `MOSSImagePipeline` (con `ModelConfig` y `InferenceLoRA`) y Hugging Face Spaces (`mrfakename/moss-image`) para inferencia gestionada; para entrenamiento o reentrenamiento, ai-toolkit.
 
 ## Comparativa con modelos similares
 
@@ -87,7 +87,7 @@ Existen numerosos LoRAs de personaje anime comparables para otras bases (SDXL, S
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lantianws666/moss-whale-girl
+- Repositorio en Hugging Face: https://huggingface.co/lantianws666/moss-whale-girl
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Space de inferencia mencionado en la model card: https://huggingface.co/spaces/mrfakename/moss-image
 - Herramienta de entrenamiento ai-toolkit: https://github.com/ostris/ai-toolkit

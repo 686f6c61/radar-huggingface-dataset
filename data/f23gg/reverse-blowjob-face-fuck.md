@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`f23gg/Reverse-Blowjob-Face-Fuck` es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario `f23gg`. Se trata de un ajuste fino ligero sobre el modelo base `krea/Krea-2-Turbo`, un modelo de difusion de la familia Krea orientado a generacion rapida de imagenes. El LoRA incorpora un concepto visual concreto mediante un token disparador (`throat3d`) y una serie de prompts descriptivos de referencia incluidos en la model card.
+`f23gg/Reverse-Blowjob-Face-Fuck` es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario `f23gg`. Se trata de un ajuste fino ligero sobre el modelo base `krea/Krea-2-Turbo`, un modelo de difusion de la familia Krea orientado a generacion rapida de imagenes. El LoRA incorpora un concepto visual concreto mediante un token disparador (`throat3d`) y una serie de prompts descriptivos de referencia incluidos en la model card.
 
 El modelo no es un modelo fundacional ni un LLM: es un adaptador de bajo rango que debe cargarse junto con los pesos del modelo base para funcionar. Su relevancia tecnica es limitada y se circunscribe al ecosistema de personalizacion de modelos de difusion mediante LoRA, una tecnica estandar para inyectar estilos o conceptos especificos sin reentrenar el modelo completo. El repositorio ocupa 0.2 GB, coherente con el tamano tipico de un adaptador LoRA.
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente sobre adaptadores comparables de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/f23gg/Reverse-Blowjob-Face-Fuck
+- Modelo en Hugging Face: https://huggingface.co/f23gg/Reverse-Blowjob-Face-Fuck
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Repositorio de pesos: https://huggingface.co/f23gg/Reverse-Blowjob-Face-Fuck/tree/main
 - Libreria diffusers: https://github.com/huggingface/diffusers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Natural-Synthesis-8b-3.1-v3-gguf es una distribucion en formato GGUF de un modelo de lenguaje conversacional de aproximadamente 8.000 millones de parametros, publicada por el usuario JPQ24 en HuggingFace. El unico archivo de pesos disponible se denomina `Meta-Llama-3.1-8B-Instruct.Q4_K_M.gguf`, lo que apunta a un ajuste fino sobre Meta-Llama-3.1-8B-Instruct convertido a GGUF con Unsloth, aunque el repositorio no declara explicitamente el modelo base, la licencia ni los idiomas soportados.
+Natural-Synthesis-8b-3.1-v3-gguf es una distribucion en formato GGUF de un modelo de lenguaje conversacional de aproximadamente 8.000 millones de parametros, publicada por el usuario JPQ24 en Hugging Face. El unico archivo de pesos disponible se denomina `Meta-Llama-3.1-8B-Instruct.Q4_K_M.gguf`, lo que apunta a un ajuste fino sobre Meta-Llama-3.1-8B-Instruct convertido a GGUF con Unsloth, aunque el repositorio no declara explicitamente el modelo base, la licencia ni los idiomas soportados.
 
 El modelo resuelve el caso de uso clasico de inferencia local: al estar cuantizado en Q4_K_M ocupa unos 4,9 GB, lo que permite ejecutarlo en GPUs de consumo medio y en equipos con CPU y RAM suficiente mediante llama.cpp u Ollama (se incluye un Modelfile). Su relevancia es limitada por el momento: el repositorio acumula 0 descargas y 0 likes, no publica evaluaciones y no describe el dataset ni el procedimiento de ajuste, mas alla de indicar que se uso Unsloth.
 
@@ -28,7 +28,7 @@ Se trata, por tanto, de un artefacto de despliegue mas que de un modelo con docu
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura de forma explicita. Los unicos indicios son el tag `llama` de HuggingFace y el nombre del archivo de pesos, `Meta-Llama-3.1-8B-Instruct.Q4_K_M.gguf`, que sugieren un transformer decoder-only denso derivado de Meta-Llama-3.1-8B-Instruct. El recuento de parametros reportado en safetensors (8.030.261.312) coincide con el de la familia Llama 3.1 de 8B. No se aporta ninguna innovacion arquitectonica: no hay atencion lineal, ni mezcla de expertos, ni decodificacion especulativa declarada.
+La model card no describe la arquitectura de forma explicita. Los unicos indicios son el tag `llama` de Hugging Face y el nombre del archivo de pesos, `Meta-Llama-3.1-8B-Instruct.Q4_K_M.gguf`, que sugieren un transformer decoder-only denso derivado de Meta-Llama-3.1-8B-Instruct. El recuento de parametros reportado en safetensors (8.030.261.312) coincide con el de la familia Llama 3.1 de 8B. No se aporta ninguna innovacion arquitectonica: no hay atencion lineal, ni mezcla de expertos, ni decodificacion especulativa declarada.
 
 Sobre el entrenamiento, la unica informacion disponible es que el modelo "fue ajustado finamente y convertido a formato GGUF usando Unsloth". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. La unica nota tecnica adicional es que el comportamiento del token BOS se ajusto para garantizar la compatibilidad con GGUF, lo que puede alterar ligeramente el preprocesado respecto al modelo original y hace recomendable usar la plantilla Jinja incluida (`--jinja`) en lugar de construir el prompt a mano.
 
@@ -104,7 +104,7 @@ La diferencia practica mas relevante no es de rendimiento, sino de trazabilidad:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v3-gguf
+- Modelo en Hugging Face: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v3-gguf
 - Unsloth (herramienta citada por el autor para el ajuste y la conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (backend implicito en los comandos `llama-cli` y `llama-mtmd-cli` de la model card): https://github.com/ggml-org/llama.cpp
 - Paper, blog tecnico, repositorio de codigo propio y demo: no disponibles en la informacion proporcionada.

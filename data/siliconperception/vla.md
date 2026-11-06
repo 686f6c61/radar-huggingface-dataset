@@ -94,7 +94,7 @@ La comparacion con pythia-70m es la mas directa por compartir tokenizador y tama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siliconperception/vla
+- Modelo en Hugging Face: https://huggingface.co/siliconperception/vla
 - Repositorio de codigo: https://github.com/siliconperception/vla
 - Especificacion funcional: https://github.com/siliconperception/vla/blob/main/docs/spec/README.md
 - Figura de un tick de reloj: https://raw.githubusercontent.com/siliconperception/vla/main/docs/figures/vla_v511.svg

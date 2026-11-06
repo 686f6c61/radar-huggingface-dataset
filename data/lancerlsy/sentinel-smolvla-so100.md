@@ -70,10 +70,10 @@ Reduccion del MAE de accion normalizado: 63,46 % en una evaluacion emparejada *h
 
 | Modelo | Tipo | Base / backbone | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sentinel SmolVLA SO100 (LancerLSY) | Overlay entrenable | lerobot/smolvla_base + SmolVLM2-500M | 99.880.992 entrenables (total no disponible) | no disponible | Apache-2.0 | Bundle en HuggingFace, requiere upstream por separado |
-| `lerobot/smolvla_base` | Policy VLA | SmolVLM2 | no disponible | no disponible | Apache-2.0 | HuggingFace / LeRobot |
-| Beilinghamburger/smolvla_so100_vla | Fine-tune SmolVLA | SmolVLA | no disponible | no disponible | no disponible | HuggingFace (via LeRobot) |
-| lucarrr/smolvla_so100_finetuned | Fine-tune SmolVLA | SmolVLA | no disponible | no disponible | no disponible | HuggingFace |
+| Sentinel SmolVLA SO100 (LancerLSY) | Overlay entrenable | lerobot/smolvla_base + SmolVLM2-500M | 99.880.992 entrenables (total no disponible) | no disponible | Apache-2.0 | Bundle en Hugging Face, requiere upstream por separado |
+| `lerobot/smolvla_base` | Policy VLA | SmolVLM2 | no disponible | no disponible | Apache-2.0 | Hugging Face / LeRobot |
+| Beilinghamburger/smolvla_so100_vla | Fine-tune SmolVLA | SmolVLA | no disponible | no disponible | no disponible | Hugging Face (via LeRobot) |
+| lucarrr/smolvla_so100_finetuned | Fine-tune SmolVLA | SmolVLA | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparacion de rendimiento entre estas variantes no esta disponible: no se han publicado metricas comunes en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ La comparacion de rendimiento entre estas variantes no esta disponible: no se ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LancerLSY/sentinel-smolvla-so100
+- Modelo en Hugging Face: https://huggingface.co/LancerLSY/sentinel-smolvla-so100
 - Informe de resultados y limitaciones: https://github.com/LancerLSY/sentinel-evc-lab/blob/main/docs/gpu_training_results.md
 - Artefactos originales: https://github.com/LancerLSY/sentinel-evc-lab/releases/tag/gpu-experiments-20261002
 - Instrucciones de entrenamiento: https://github.com/LancerLSY/sentinel-evc-lab/tree/main/experiments/gpu

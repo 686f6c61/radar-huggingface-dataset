@@ -103,11 +103,11 @@ Frente a alternativas densas del mismo orden de magnitud (1B-2B), la diferencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AndrewThompson1233/maba-v2-architecture
+- Modelo en Hugging Face: https://huggingface.co/AndrewThompson1233/maba-v2-architecture
 - Configuración de referencia: https://huggingface.co/AndrewThompson1233/maba-v2-architecture/blob/main/config.json
 - Documento de escalado: https://huggingface.co/AndrewThompson1233/maba-v2-architecture/blob/main/SCALING.md
 - Informe de benchmarks del autor: https://huggingface.co/AndrewThompson1233/maba-v2-architecture/blob/main/BENCHMARK_REPORT.md
 - Licencia: https://huggingface.co/AndrewThompson1233/maba-v2-architecture/blob/main/LICENSE
-- Prototipo previo en HuggingFace: https://huggingface.co/AndrewThompson1233/maba-v1.5-exp-architecture
+- Prototipo previo en Hugging Face: https://huggingface.co/AndrewThompson1233/maba-v1.5-exp-architecture
 - Repositorio GitHub del prototipo previo: https://github.com/AndrewThompson1233/maba-v1.5-exp-architecture
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a páginas de TikTok, sin relación con el artefacto.

@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - **VRAM para inferencia**: los pesos en float16 ocupan aproximadamente 0,82 GB; con cache KV para 2048 tokens y overhead del runtime, el consumo se situa en torno a 1-1,5 GB. Referencias externas (LLM Explorer) cifran el modelo base Pythia-410M en unos 0,9 GB de VRAM.
 - **GPU recomendadas**: cualquier GPU consumer moderna sirve; RTX 3060 12 GB, RTX 4060 Ti, RTX 4090 o superiores trabajan con holgura. Para entrenamiento o fine-tuning completo son razonables A100, H100 o L40S; el run original uso 16 × A100-SXM4-40GB.
 - **Cabe en GPU consumer**: si, en practicamente todas las GPU con 4 GB o mas, e incluso en CPU para inferencia por lotes pequenos.
-- **Opciones de despliegue**: `transformers` es la via nativa (el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace). vLLM soporta la arquitectura GPT-NeoX. Para llama.cpp u Ollama seria necesario convertir los safetensors a GGUF, conversion no publicada por el autor. La compatibilidad con TGI debe verificarse, ya que el soporte de `gpt_neox` ha variado entre versiones.
+- **Opciones de despliegue**: `transformers` es la via nativa (el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face). vLLM soporta la arquitectura GPT-NeoX. Para llama.cpp u Ollama seria necesario convertir los safetensors a GGUF, conversion no publicada por el autor. La compatibilidad con TGI debe verificarse, ya que el soporte de `gpt_neox` ha variado entre versiones.
 - **Latencia y throughput**: no disponibles; el autor no publica mediciones. A titulo orientativo, un modelo denso de 410 M en fp16 sobre una GPU consumer moderna ofrece throughput alto, pero no se aporta ninguna cifra verificable.
 - **Almacenamiento**: el repo completo con todas las ramas de checkpoints ocupa 21,9 GB; para inferencia basta con descargar una sola revision (`main` o un `stepN` concreto).
 
@@ -89,7 +89,7 @@ La comparacion en benchmarks no esta disponible: ninguno de los runs DIET public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-he-normal-seed11
+- Modelo en Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-he-normal-seed11
 - Perfil del autor y resto de runs DIET: https://huggingface.co/jjalora/models
 - Modelo de referencia Pythia-410M: https://huggingface.co/EleutherAI/pythia-410m
 - Repositorio de EleutherAI Pythia (receta, configs y paper): https://github.com/EleutherAI/pythia

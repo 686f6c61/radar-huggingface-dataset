@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`patrickwagner/classification` es un repositorio de HuggingFace que contiene una implementacion propia y minima de una arquitectura tipo CLIP orientada a tareas de clasificacion. Lo publica el usuario patrickwagner bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos validados: la propia model card lo describe como un "punto de partida reproducible" que incluye una configuracion explicita y un checkpoint de inicializacion pensado para pruebas de humo (smoke tests).
+`patrickwagner/classification` es un repositorio de Hugging Face que contiene una implementacion propia y minima de una arquitectura tipo CLIP orientada a tareas de clasificacion. Lo publica el usuario patrickwagner bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos validados: la propia model card lo describe como un "punto de partida reproducible" que incluye una configuracion explicita y un checkpoint de inicializacion pensado para pruebas de humo (smoke tests).
 
 El checkpoint `model.safetensors` que acompana al repositorio es un estado inicial valido, no un modelo ajustado. El dato real de parametros extraido del safetensors es de 49.600, una cifra extraordinariamente baja que confirma que es una implementacion de juguete o de validacion, no un modelo de produccion. La model card declara explicitamente que no se reclama ninguna puntuacion de benchmark para este repositorio.
 
@@ -73,12 +73,12 @@ La comparacion directa con modelos de clasificacion entrenados no es significati
 - No ha sido auditado para robustez, equidad o transferencia de dominio, segun la propia model card.
 - No se declaran idiomas soportados, longitud de contexto ni tipos de cuantizacion.
 - No se reclama ninguna puntuacion de benchmark; no debe citarse como modelo con rendimiento medido.
-- Al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace (por ejemplo `AutoModel`) requieren un adaptador explicito antes de funcionar.
+- Al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face (por ejemplo `AutoModel`) requieren un adaptador explicito antes de funcionar.
 - Riesgo de alucinacion: no aplica en el sentido habitual, pero si se usa como si fuera un modelo entrenado, las predicciones seran arbitrarias.
 - Restricciones de licencia: el codigo se libera bajo Apache 2.0, que permite uso comercial, pero el autor advierte de revisar por separado los terminos de los datos fuente si se combina con datasets externos.
 - Para cualquier resultado publicable, los pesos de un futuro checkpoint entrenado deben documentarse de forma separada a los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/patrickwagner/classification
+- Hugging Face: https://huggingface.co/patrickwagner/classification
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

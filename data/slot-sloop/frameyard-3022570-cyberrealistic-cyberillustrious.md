@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `slot-sloop/frameyard-3022570-cyberrealistic-cyberillustrious` es un repositorio alojado en HuggingFace que contiene un archivo de pesos en formato `safetensors` de 6,9 GB, denominado `cyberrealistic_v120.safetensors`. Según la model card, se trata de una copia realizada por la cuenta "Frameyard" de un modelo original publicado en Civitai, con el objetivo de que una versión revisada pueda apuntar a un repositorio estable en lugar de a un enlace de descarga temporal. El nombre sugiere que es un modelo de generación de imágenes orientado a estilos fotorrealistas e ilustrativos, aunque no se proporcionan detalles técnicos adicionales.
+El modelo `slot-sloop/frameyard-3022570-cyberrealistic-cyberillustrious` es un repositorio alojado en Hugging Face que contiene un archivo de pesos en formato `safetensors` de 6,9 GB, denominado `cyberrealistic_v120.safetensors`. Según la model card, se trata de una copia realizada por la cuenta "Frameyard" de un modelo original publicado en Civitai, con el objetivo de que una versión revisada pueda apuntar a un repositorio estable en lugar de a un enlace de descarga temporal. El nombre sugiere que es un modelo de generación de imágenes orientado a estilos fotorrealistas e ilustrativos, aunque no se proporcionan detalles técnicos adicionales.
 
 El autor original es `slot-sloop`, y la licencia declarada es `civitai-image-rentcivit-rent-sell`, que según Civitai permite el uso de la imagen, el alquiler del modelo, el alquiler y la venta, pero con restricciones específicas que deben consultarse en el enlace de la licencia. El repositorio no incluye información sobre arquitectura, parámetros, entrenamiento o capacidades, por lo que cualquier evaluación técnica debe basarse en datos externos no disponibles en esta ficha.
 
@@ -52,5 +52,5 @@ No disponible. No se conocen modelos comparables con la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/slot-sloop/frameyard-3022570-cyberrealistic-cyberillustrious
+- Repositorio en Hugging Face: https://huggingface.co/slot-sloop/frameyard-3022570-cyberrealistic-cyberillustrious
 - Pagina original en Civitai: https://civitai.com/models/1125067?modelVersionId=3022570

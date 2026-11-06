@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo resistz/SFT-Llama-3.1-8B-Instruct-FactQA2K-DAPO17k2K-1Epoch es un ajuste fino de Llama 3.1 8B Instruct publicado por el usuario resistz en HuggingFace. Se trata de un derivado denso de 8.030.261.248 parametros, distribuido en formato safetensors y con un tamano de repositorio de 16,1 GB, coherente con pesos en precision bf16. La model card publicada es practicamente vacia: solo declara `license: mit`, sin descripcion, sin datos de entrenamiento y sin resultados de evaluacion.
+El modelo resistz/SFT-Llama-3.1-8B-Instruct-FactQA2K-DAPO17k2K-1Epoch es un ajuste fino de Llama 3.1 8B Instruct publicado por el usuario resistz en Hugging Face. Se trata de un derivado denso de 8.030.261.248 parametros, distribuido en formato safetensors y con un tamano de repositorio de 16,1 GB, coherente con pesos en precision bf16. La model card publicada es practicamente vacia: solo declara `license: mit`, sin descripcion, sin datos de entrenamiento y sin resultados de evaluacion.
 
 Por el propio identificador del repositorio se deduce que el entrenamiento combino un ajuste supervisado (SFT) sobre un conjunto denominado FactQA2K (previsiblemente unos 2.000 ejemplos de pregunta-respuesta factual) con un segundo conjunto etiquetado como DAPO17k2K (17.000 ejemplos procesados con el algoritmo DAPO), ejecutado durante una unica epoca. Esta interpretacion procede del nombre del modelo y no esta confirmada en ningun documento del autor, por lo que debe tomarse como una hipotesis razonable y no como un dato verificado.
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| resistz/SFT-Llama-3.1-8B-Instruct-FactQA2K-DAPO17k2K-1Epoch | 8,03 mil millones | No disponible (base: 128.000) | MIT declarada (base bajo Llama 3.1 Community License) | HuggingFace, safetensors | Sin benchmarks publicados |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, NVIDIA NIM, Azure AI Foundry | Ampliamente evaluado por Meta |
-| Qwen2.5-7B-Instruct | 7,6 mil millones | 128.000 tokens | Apache 2.0 | HuggingFace y multiples proveedores | Benchmark publico disponible |
-| Mistral-7B-Instruct-v0.3 | 7,2 mil millones | 32.000 tokens | Apache 2.0 | HuggingFace | Benchmark publico disponible |
-| Gemma 2 9B IT | 9,2 mil millones | 8.000 tokens | Gemma Terms of Use | HuggingFace, Vertex AI | Benchmark publico disponible |
+| resistz/SFT-Llama-3.1-8B-Instruct-FactQA2K-DAPO17k2K-1Epoch | 8,03 mil millones | No disponible (base: 128.000) | MIT declarada (base bajo Llama 3.1 Community License) | Hugging Face, safetensors | Sin benchmarks publicados |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, NVIDIA NIM, Azure AI Foundry | Ampliamente evaluado por Meta |
+| Qwen2.5-7B-Instruct | 7,6 mil millones | 128.000 tokens | Apache 2.0 | Hugging Face y multiples proveedores | Benchmark publico disponible |
+| Mistral-7B-Instruct-v0.3 | 7,2 mil millones | 32.000 tokens | Apache 2.0 | Hugging Face | Benchmark publico disponible |
+| Gemma 2 9B IT | 9,2 mil millones | 8.000 tokens | Gemma Terms of Use | Hugging Face, Vertex AI | Benchmark publico disponible |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad, porque no existe ninguna medicion publicada de este ajuste que permita situarlo frente a las alternativas en calidad de respuesta.
 
@@ -91,9 +91,9 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resistz/SFT-Llama-3.1-8B-Instruct-FactQA2K-DAPO17k2K-1Epoch
+- Modelo en Hugging Face: https://huggingface.co/resistz/SFT-Llama-3.1-8B-Instruct-FactQA2K-DAPO17k2K-1Epoch
 - Repositorio hermano del mismo autor: https://huggingface.co/resistz/SFT_Llama-3.1-8B-Instruct_DAPO17k_CorrectFormatSFT_2K
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Ficha del modelo base en NVIDIA NIM: https://build.nvidia.com/meta/llama-3_1-8b-instruct
 - Referencia de API del modelo base en NVIDIA: https://docs.api.nvidia.com/nim/reference/meta-llama-3_1-8b
 - Catalogo del modelo base en Microsoft Foundry: https://ai.azure.com/catalog/models/Meta-Llama-3.1-8B-Instruct

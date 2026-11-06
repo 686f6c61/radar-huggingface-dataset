@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/KasuleTrevor/cdli-qwen3-asr-lg-atypical-stage3-1p7b-typical-base-spec)
+- [Modelo en Hugging Face](https://huggingface.co/KasuleTrevor/cdli-qwen3-asr-lg-atypical-stage3-1p7b-typical-base-spec)
 - [Modelo base](https://huggingface.co/KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/cdli/ugandan_luganda_nonstandard_speech_v1.0) (mencionado en la model card)

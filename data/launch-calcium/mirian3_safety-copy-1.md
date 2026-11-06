@@ -1,7 +1,7 @@
 # launch-calcium/Mirian3_safety.copy.1
 
 ## Resumen
-Mirian3_safety.copy.1 es un adaptador LoRA para generación de imágenes mediante texto (text-to-image), publicado en HuggingFace por el usuario launch-calcium. No se trata de un modelo completo, sino de un peso de adaptación entrenado sobre el modelo base Illustrious XL (OnomaAIResearch/Illustrious-xl-early-release-v0), una variante de Stable Diffusion XL orientada a la generación de ilustración de estilo anime.
+Mirian3_safety.copy.1 es un adaptador LoRA para generación de imágenes mediante texto (text-to-image), publicado en Hugging Face por el usuario launch-calcium. No se trata de un modelo completo, sino de un peso de adaptación entrenado sobre el modelo base Illustrious XL (OnomaAIResearch/Illustrious-xl-early-release-v0), una variante de Stable Diffusion XL orientada a la generación de ilustración de estilo anime.
 
 El LoRA ha sido entrenado con AI Toolkit de Ostris, una herramienta popular para el entrenamiento de adaptadores LoRA sobre modelos de difusión. El repositorio ocupa aproximadamente 0,8 GB, lo que es coherente con un adaptador LoRA de tamaño grande o con varios checkpoints incluidos. La model card no documenta el propósito del entrenamiento, el dataset utilizado ni el número de pasos, y las imágenes de ejemplo sugieren que el modelo se ha especializado en personajes de estilo furry/anime.
 
@@ -29,7 +29,7 @@ El entrenamiento se realizó con AI Toolkit de Ostris, una herramienta de línea
 - Generación de imágenes text-to-image en estilo anime/ilustración, heredada del modelo base Illustrious XL.
 - Especialización en personajes de estilo furry/anime según las imágenes de ejemplo del widget (rasgos como cola, pelaje corporal, esclerótica coloreada).
 - Compatibilidad con ComfyUI, AUTOMATIC1111, SD.Next e Invoke AI mediante pesos en formato safetensors.
-- Carga directa en la librería diffusers de HuggingFace mediante `load_lora_weights`, con control de peso (weighting), fusión y mezcla de LoRAs.
+- Carga directa en la librería diffusers de Hugging Face mediante `load_lora_weights`, con control de peso (weighting), fusión y mezcla de LoRAs.
 - Sin palabras trigger definidas en la model card, por lo que la activación del estilo depende de los tags usados durante el entrenamiento.
 - No es un modelo de lenguaje: no tiene capacidades de texto, razonamiento, código ni tool calling.
 
@@ -72,7 +72,7 @@ En resumen, frente a otras alternativas de la misma familia, este modelo se dist
 - El nombre del repositorio incluye ".copy.1", lo que sugiere una copia o iteración de otro modelo; conviene verificar la procedencia antes de usarlo en producción.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/launch-calcium/Mirian3_safety.copy.1
+- Modelo en Hugging Face: https://huggingface.co/launch-calcium/Mirian3_safety.copy.1
 - Modelo base: https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 - AI Toolkit by Ostris (herramienta de entrenamiento): https://github.com/ostris/ai-toolkit
 - Libreria diffusers: https://github.com/huggingface/diffusers

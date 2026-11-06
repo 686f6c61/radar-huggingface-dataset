@@ -72,7 +72,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de mo
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pointgpt-b.shapenetpart.guangyan-chen | 112,3 M | nubes de puntos (8192 puntos en el ejemplo) | MIT | HuggingFace |
+| pointgpt-b.shapenetpart.guangyan-chen | 112,3 M | nubes de puntos (8192 puntos en el ejemplo) | MIT | Hugging Face |
 | Alternativas de segmentación 3D | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointgpt-b.shapenetpart.guangyan-chen
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointgpt-b.shapenetpart.guangyan-chen
 - Modelo base: https://huggingface.co/torch-pointcloud/pointgpt-b.post-pretrain.guangyan-chen
 - Paper PointGPT (arXiv 2305.11487): https://arxiv.org/abs/2305.11487
 - Repositorio original PointGPT: https://github.com/CGuangyan-BIT/PointGPT

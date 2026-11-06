@@ -79,8 +79,8 @@ No se han identificado en la información proporcionada modelos comparables con 
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_invites_writing_on_the_board | 109.486.464 | no disponible | F1 0,6765; ROC-AUC 0,8489 (test) | no disponible | HuggingFace, librería `setfit` |
-| sentence-transformers/paraphrase-mpnet-base-v2 (backbone sin cabeza) | 109.486.464 | 384 tokens (valor habitual del modelo base) | no disponible (no está ajustado para esta aserción) | no disponible en esta información | HuggingFace |
+| StanfordSCALE/assertion_invites_writing_on_the_board | 109.486.464 | no disponible | F1 0,6765; ROC-AUC 0,8489 (test) | no disponible | Hugging Face, librería `setfit` |
+| sentence-transformers/paraphrase-mpnet-base-v2 (backbone sin cabeza) | 109.486.464 | 384 tokens (valor habitual del modelo base) | no disponible (no está ajustado para esta aserción) | no disponible en esta información | Hugging Face |
 | Otros clasificadores de aserciones de EduBehaviors | no disponible | no disponible | no disponible | no disponible | no disponible |
 | LLM generativo usado como anotador | no disponible | no disponible | no disponible (alfa de Krippendorff de 0,744 como acuerdo entre anotadores) | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ No se han identificado en la información proporcionada modelos comparables con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_invites_writing_on_the_board
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_invites_writing_on_the_board
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio GitHub): https://github.com/SumnerLab/TalkMoves

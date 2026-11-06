@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `slrrxx101/ganymede-24b-adapter` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para ser aplicado sobre el modelo base `unsloth/Mistral-Small-Instruct-2409-bnb-4bit`, una versión cuantizada a 4 bits del modelo Mistral Small Instruct de 24B parámetros. El adaptador se presenta como un ajuste fino supervisado (SFT) realizado con las librerías PEFT, TRL y Unsloth, y está orientado a tareas de generación de texto conversacional.
+El modelo `slrrxx101/ganymede-24b-adapter` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para ser aplicado sobre el modelo base `unsloth/Mistral-Small-Instruct-2409-bnb-4bit`, una versión cuantizada a 4 bits del modelo Mistral Small Instruct de 24B parámetros. El adaptador se presenta como un ajuste fino supervisado (SFT) realizado con las librerías PEFT, TRL y Unsloth, y está orientado a tareas de generación de texto conversacional.
 
 La relevancia de este adaptador radica en su tamaño reducido (0,4 GB), lo que permite ajustar un modelo grande sin necesidad de reentrenar todos sus parámetros, facilitando su despliegue en entornos con recursos limitados. Sin embargo, la información pública disponible es extremadamente escasa: la model card no documenta detalles sobre el entrenamiento, los datos utilizados, las capacidades específicas ni los resultados de evaluación. El autor no ha proporcionado una descripción funcional del adaptador, por lo que su utilidad práctica queda sin especificar.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables. Al ser un adaptador sin documentacion, no se puede establecer una comparativa fiable con otras alternativas de la misma categoria (adaptadores LoRA sobre Mistral Small o modelos similares). Se recomienda consultar el ecosistema de adaptadores en HuggingFace para encontrar opciones equivalentes, pero no se puede ofrecer una tabla comparativa sin datos verificados.
+No se dispone de informacion sobre modelos comparables. Al ser un adaptador sin documentacion, no se puede establecer una comparativa fiable con otras alternativas de la misma categoria (adaptadores LoRA sobre Mistral Small o modelos similares). Se recomienda consultar el ecosistema de adaptadores en Hugging Face para encontrar opciones equivalentes, pero no se puede ofrecer una tabla comparativa sin datos verificados.
 
 ## Limitaciones y advertencias
 
@@ -74,6 +74,6 @@ No se dispone de informacion sobre modelos comparables. Al ser un adaptador sin 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/slrrxx101/ganymede-24b-adapter
+- Repositorio en Hugging Face: https://huggingface.co/slrrxx101/ganymede-24b-adapter
 - Modelo base: https://huggingface.co/unsloth/Mistral-Small-Instruct-2409-bnb-4bit (referencia indirecta, no se ha verificado su contenido)
 - No se han encontrado papers, blogs ni demos asociados a este adaptador en la busqueda web.

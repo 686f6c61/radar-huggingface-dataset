@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Veronica R20 — Q4_K_M (GGUF) es una cuantización del modelo `BlossomsAI/Qwen2.5-Coder-14B-Instruct-Uncensored`, a su vez un ajuste fino de `Qwen/Qwen2.5-Coder-14B-Instruct`. Lo publica el usuario StevenWoods en HuggingFace como parte del proyecto VACA (Veronica, un "AI code architect"), y corresponde al checkpoint exacto contra el que se ajustaron las rondas LoRA de ese proyecto. El resultado es un modelo denso de 14.770.033.664 parámetros (unos 14,77 mil millones) empaquetado en un único fichero GGUF de 8.988.110.688 bytes (8,4 GiB).
+Veronica R20 — Q4_K_M (GGUF) es una cuantización del modelo `BlossomsAI/Qwen2.5-Coder-14B-Instruct-Uncensored`, a su vez un ajuste fino de `Qwen/Qwen2.5-Coder-14B-Instruct`. Lo publica el usuario StevenWoods en Hugging Face como parte del proyecto VACA (Veronica, un "AI code architect"), y corresponde al checkpoint exacto contra el que se ajustaron las rondas LoRA de ese proyecto. El resultado es un modelo denso de 14.770.033.664 parámetros (unos 14,77 mil millones) empaquetado en un único fichero GGUF de 8.988.110.688 bytes (8,4 GiB).
 
 Su relevancia es acotada pero clara: se trata de una variante sin censura orientada a generación de código, distribuida ya cuantizada en `Q4_K_M` y pensada para ejecutarse en local con Ollama, llama.cpp o LM Studio sin pasos manuales de conversión. El autor remarca una particularidad poco habitual: el modelo fue entrenado sobre texto de prompt en bruto, por lo que se degrada de forma medible si se le aplica la plantilla de chat habitual de Qwen (`<|im_start|>…<|im_end|>`); el repositorio incluye ficheros `template` y `params` para forzar el comportamiento correcto.
 
-El repositorio tiene, en el momento de la consulta, 0 descargas y 0 "likes", y su campo de licencia aparece como no disponible en los metadatos de HuggingFace, aunque la model card indica que los pesos derivan de un modelo base con licencia MIT.
+El repositorio tiene, en el momento de la consulta, 0 descargas y 0 "likes", y su campo de licencia aparece como no disponible en los metadatos de Hugging Face, aunque la model card indica que los pesos derivan de un modelo base con licencia MIT.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio tiene, en el momento de la consulta, 0 descargas y 0 "likes", y s
 | Longitud de contexto | 16.384 tokens, segun el fichero `params` publicado por el autor (`num_ctx` 16384); la longitud nativa del modelo base no se detalla en la informacion disponible |
 | Tipos de cuantizacion | Q4_K_M (unico fichero publicado en este repositorio) |
 | Idiomas soportados | Ingles (`en`), segun los metadatos del repositorio |
-| Licencia | Campo de licencia no disponible en HuggingFace; la model card indica que los pesos son derivados de `BlossomsAI/Qwen2.5-Coder-14B-Instruct-Uncensored`, con licencia MIT, y siguen los terminos del modelo base |
+| Licencia | Campo de licencia no disponible en Hugging Face; la model card indica que los pesos son derivados de `BlossomsAI/Qwen2.5-Coder-14B-Instruct-Uncensored`, con licencia MIT, y siguen los terminos del modelo base |
 | Formato de pesos | GGUF (fichero `Qwen2.5-Coder-14B-Instruct-Uncensored.R20.Q4_K_M.gguf`) |
 | Tamano del fichero | 8.988.110.688 bytes (8,4 GiB); el repositorio ocupa 9,0 GB |
 | Hash SHA-256 | 27b12082b0ec01e31ec0161d75131ed32278fbbda643c433ab5f12bc3dcac4fc |
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparado entre estos tres modelos, por lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/StevenWoods/veronica-r20-q4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/StevenWoods/veronica-r20-q4-GGUF
 - Modelo base del ajuste: https://huggingface.co/BlossomsAI/Qwen2.5-Coder-14B-Instruct-Uncensored
 - Modelo original de la cadena: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Repositorio de la aplicacion VACA (Veronica): https://github.com/Demorolled/VACA

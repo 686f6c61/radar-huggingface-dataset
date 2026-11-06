@@ -94,7 +94,7 @@ La variante 8-bit tiene mejor agreement con el teacher (KLD 0.0407, top-1 99.43 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q4-mlx
+- Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q4-mlx
 - Write-up completo con todas las rondas de entrenamiento y pruebas: https://leanzero.net/portfolio/atlassian-models
 - Repositorio Rapid-MLX: https://github.com/leanzero-srl/Rapid-MLX
 - LeanZero: https://leanzero.net

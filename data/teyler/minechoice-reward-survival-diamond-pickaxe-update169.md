@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Entrada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MineChoice diamond-pickaxe checkpoint 169 | 31.789 | estado estructurado (73 caracteristicas) | no aplica | MIT | HuggingFace |
+| MineChoice diamond-pickaxe checkpoint 169 | 31.789 | estado estructurado (73 caracteristicas) | no aplica | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,6 +100,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/teyler/MineChoice-reward-survival-diamond-pickaxe-update169
+- Modelo en Hugging Face: https://huggingface.co/teyler/MineChoice-reward-survival-diamond-pickaxe-update169
 - Sitio oficial de Minecraft (contexto del entorno, Java 1.20.4): https://www.minecraft.net/en-us
 - Resultados de busqueda web disponibles: no se ha encontrado documentacion tecnica, paper ni repositorio que describa este modelo concreto. Los resultados devueltos (modelos 3D de picos en Sketchfab y BuiltByBit, y una publicacion en LinkedIn sobre aprendizaje por observacion de gameplay) no estan vinculados a este checkpoint y no se consideran fuentes tecnicas del mismo.

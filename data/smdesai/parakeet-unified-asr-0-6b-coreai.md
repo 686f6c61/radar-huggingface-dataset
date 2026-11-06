@@ -119,7 +119,7 @@ La información proporcionada no incluye datos de benchmarks de alternativas com
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/smdesai/parakeet-unified-asr-0.6b-CoreAI)
+- [Modelo en Hugging Face](https://huggingface.co/smdesai/parakeet-unified-asr-0.6b-CoreAI)
 - [Modelo base: nvidia/nemotron-labs-unified-asr-0.6b](https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b)
 - [Licencia OpenMDW 1.1](https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1)
 - NeMo Speech 3.1.0: no disponible enlace en la información proporcionada

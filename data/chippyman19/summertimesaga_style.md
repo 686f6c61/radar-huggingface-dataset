@@ -79,7 +79,7 @@ No hay datos suficientes para establecer una comparativa rigurosa. No se documen
 
 | Modelo | Tipo | Modelo base | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SummerTimeSaga_Style | LoRA de estilo text-to-image | krea/Krea-2-Turbo | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| SummerTimeSaga_Style | LoRA de estilo text-to-image | krea/Krea-2-Turbo | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Otros LoRA de estilo para Krea-2-Turbo | LoRA de estilo | krea/Krea-2-Turbo | no disponible | no disponible | no disponible en la información proporcionada |
 | Versión Klein 9B del mismo estilo | LoRA de estilo | Klein 9B | no disponible | no disponible | citada por el autor, sin enlace en la información proporcionada |
 | Versión Anima del mismo estilo | LoRA de estilo | Anima | no disponible | no disponible | citada por el autor, desaconsejada por él mismo |
@@ -101,7 +101,7 @@ No hay datos suficientes para establecer una comparativa rigurosa. No se documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChippyMan19/SummerTimeSaga_Style
+- Modelo en Hugging Face: https://huggingface.co/ChippyMan19/SummerTimeSaga_Style
 - Archivos del repositorio: https://huggingface.co/ChippyMan19/SummerTimeSaga_Style/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Ko-fi del autor: https://ko-fi.com/mrweaz

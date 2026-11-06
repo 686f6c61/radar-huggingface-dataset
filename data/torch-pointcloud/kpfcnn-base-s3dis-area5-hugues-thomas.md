@@ -79,7 +79,7 @@ La propia model card indica como referencia 66,4 de mIoU para la implementacion 
 
 | Modelo | Categoria | Parametros | Contexto de entrada | Licencia | Disponibilidad | Rendimiento en S3DIS Area 5 |
 |---|---|---|---|---|---|---|
-| kpfcnn-base.s3dis-area5.hugues-thomas | KPConv deformable (segmentacion de nubes de puntos) | 24,4 M | nube de puntos de cardinalidad variable | MIT | HuggingFace, libreria torch-pointcloud | mIoU 66,6 / OA 89,63 (no verificado) |
+| kpfcnn-base.s3dis-area5.hugues-thomas | KPConv deformable (segmentacion de nubes de puntos) | 24,4 M | nube de puntos de cardinalidad variable | MIT | Hugging Face, libreria torch-pointcloud | mIoU 66,6 / OA 89,63 (no verificado) |
 | KPConv-PyTorch (HuguesTHOMAS) | Implementacion de referencia de KPConv | no disponible en la informacion proporcionada | no disponible | MIT | GitHub | 66,4 de mIoU citado como referencia en la model card |
 | PointNet++ | Segmentacion de nubes de puntos | no disponible | no disponible | no disponible | no disponible | no disponible |
 | RandLA-Net | Segmentacion de nubes de puntos a gran escala | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -104,7 +104,7 @@ Solo se dispone de datos concretos para este checkpoint y para la referencia de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/kpfcnn-base.s3dis-area5.hugues-thomas
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/kpfcnn-base.s3dis-area5.hugues-thomas
 - Paper de KPConv (ICCV 2019): https://arxiv.org/abs/1904.08889
 - Repositorio de referencia KPConv-PyTorch: https://github.com/HuguesTHOMAS/KPConv-PyTorch
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

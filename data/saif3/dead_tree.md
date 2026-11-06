@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`saif3/dead_tree` es un modelo publicado en HuggingFace por el usuario `saif3` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: únicamente declara la licencia en el frontmatter YAML, sin sección de cuerpo, sin especificaciones de arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio registra cero descargas y cero likes, y tanto su fecha de creación como la de última actualización son idénticas (26 de octubre de 2026), lo que sugiere una publicación sin iteraciones posteriores.
+`saif3/dead_tree` es un modelo publicado en Hugging Face por el usuario `saif3` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: únicamente declara la licencia en el frontmatter YAML, sin sección de cuerpo, sin especificaciones de arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio registra cero descargas y cero likes, y tanto su fecha de creación como la de última actualización son idénticas (26 de octubre de 2026), lo que sugiere una publicación sin iteraciones posteriores.
 
-No hay información disponible sobre arquitectura, número de parámetros, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos. El pipeline declarado en los metadatos de HuggingFace aparece como no disponible, por lo que tampoco se puede inferir la tarea para la que fue concebido (text-generation, fill-mask, feature-extraction, etc.).
+No hay información disponible sobre arquitectura, número de parámetros, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos. El pipeline declarado en los metadatos de Hugging Face aparece como no disponible, por lo que tampoco se puede inferir la tarea para la que fue concebido (text-generation, fill-mask, feature-extraction, etc.).
 
 En la práctica, este repositorio no es evaluable como modelo de producción: sin model card técnica, sin benchmarks y sin artefactos documentados, cualquier uso requeriría una inspección manual de los ficheros del repositorio. La ficha que sigue refleja exclusivamente lo que consta en la información proporcionada y marca como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 - Prototipado interno no crítico: si los pesos resultasen funcionales, podrían emplearse en experimentos de laboratorio sin exposición a producción, siempre asumiendo el riesgo de comportamiento impredecible por falta de documentación.
 - Auditoría de licencia y procedencia: la licencia Apache 2.0 declarada permite su uso comercial, pero un equipo legal debería verificar previamente la procedencia de los datos de entrenamiento, que no se documenta.
 - Docencia sobre publicación de modelos: el repositorio sirve como ejemplo de model card incompleta y de los problemas que genera para la reproducibilidad y la evaluación.
-- Archivo y catalogación: utilizable como referencia en un inventario de modelos publicados en HuggingFace, sin pretensión de uso funcional.
+- Archivo y catalogación: utilizable como referencia en un inventario de modelos publicados en Hugging Face, sin pretensión de uso funcional.
 - No se recomienda ningún caso de uso en producción, atención al cliente, generación de código o pipelines automatizados, al no existir evidencia de calidad, seguridad ni comportamiento del modelo.
 
 ## Benchmarks y rendimiento
@@ -78,4 +78,4 @@ No es posible establecer una comparativa fiable porque se desconoce la categorí
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saif3/dead_tree
+- Repositorio en Hugging Face: https://huggingface.co/saif3/dead_tree

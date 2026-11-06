@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K ni métrica
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Carbon-X-Unlocked-Heretic | 14,8B | No disponible | ADN + texto, sin rechazos | Apache 2.0 | HuggingFace |
-| HuggingFaceBio/Carbon-X | 14,8B | No disponible | ADN + texto, con salvaguardas | Apache 2.0 | HuggingFace |
-| Modelos de lenguaje general de ~14B (p. ej. Qwen3-14B) | ~14B | No disponible en esta ficha | Texto general | Variable | HuggingFace |
-| Modelos genómicos especializados tipo Evo o Nucleotide Transformer | Variable | No disponible | ADN | Variable | HuggingFace |
+| Carbon-X-Unlocked-Heretic | 14,8B | No disponible | ADN + texto, sin rechazos | Apache 2.0 | Hugging Face |
+| HuggingFaceBio/Carbon-X | 14,8B | No disponible | ADN + texto, con salvaguardas | Apache 2.0 | Hugging Face |
+| Modelos de lenguaje general de ~14B (p. ej. Qwen3-14B) | ~14B | No disponible en esta ficha | Texto general | Variable | Hugging Face |
+| Modelos genómicos especializados tipo Evo o Nucleotide Transformer | Variable | No disponible | ADN | Variable | Hugging Face |
 
 La comparación con modelos genómicos especializados no puede cuantificarse porque la información disponible no incluye benchmarks de genómica del modelo ni de sus alternativas. La etiqueta `qwen3` en los tags sugiere que la arquitectura subyacente podría derivar de la familia Qwen3, pero este dato no está confirmado en la model card.
 
@@ -96,7 +96,7 @@ La comparación con modelos genómicos especializados no puede cuantificarse por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Solstice-AI/Carbon-X-Unlocked-Heretic
+- Hugging Face: https://huggingface.co/Solstice-AI/Carbon-X-Unlocked-Heretic
 - Modelo base: https://huggingface.co/HuggingFaceBio/Carbon-X
 - Organización HuggingFaceBio: https://huggingface.co/HuggingFaceBio
 - Blog del modelo base: https://huggingface.co/spaces/HuggingFaceBio/Carbon-X-Release

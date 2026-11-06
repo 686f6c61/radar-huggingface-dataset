@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DSCXZ12DSA bajo el identificador DSCXZ12DSA/MyAwesomeModel-TestRepo. Los metadatos de HuggingFace lo etiquetan como un modelo basado en BERT, orientado a `feature-extraction` y compatible con `transformers` y `pytorch`, con licencia MIT. Sin embargo, la model card adjunta describe un modelo conversacional de razonamiento con mejoras en matematicas, programacion y logica, lo que genera una discrepancia no resuelta entre las etiquetas tecnicas y el contenido declarado.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DSCXZ12DSA bajo el identificador DSCXZ12DSA/MyAwesomeModel-TestRepo. Los metadatos de Hugging Face lo etiquetan como un modelo basado en BERT, orientado a `feature-extraction` y compatible con `transformers` y `pytorch`, con licencia MIT. Sin embargo, la model card adjunta describe un modelo conversacional de razonamiento con mejoras en matematicas, programacion y logica, lo que genera una discrepancia no resuelta entre las etiquetas tecnicas y el contenido declarado.
 
 El repositorio figura con un tamano de 0.0 GB, 0 descargas y 0 interacciones, y fue creado y actualizado el mismo dia (11 de septiembre de 2026). Esto indica que se trata de un repositorio de prueba o plantilla sin pesos publicados y sin validacion por parte de la comunidad.
 
@@ -12,7 +12,7 @@ La relevancia practica del modelo es, por tanto, limitada en el momento de redac
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Segun tags de HuggingFace: BERT. La model card describe un modelo de razonamiento y generacion; discrepancia no resuelta |
+| Arquitectura | Segun tags de Hugging Face: BERT. La model card describe un modelo de razonamiento y generacion; discrepancia no resuelta |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia practica del modelo es, por tanto, limitada en el momento de redac
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura real del modelo. Las etiquetas de HuggingFace apuntan a un transformer de tipo BERT para extraccion de caracteristicas, mientras que la model card describe un modelo de razonamiento conversacional con soporte de system prompt, function calling y busqueda web. Esta contradiccion no se puede resolver con los datos proporcionados.
+No hay informacion verificable sobre la arquitectura real del modelo. Las etiquetas de Hugging Face apuntan a un transformer de tipo BERT para extraccion de caracteristicas, mientras que la model card describe un modelo de razonamiento conversacional con soporte de system prompt, function calling y busqueda web. Esta contradiccion no se puede resolver con los datos proporcionados.
 
 Respecto al entrenamiento, la model card afirma que la version actual mejora la profundidad de razonamiento "aprovechando mas recursos computacionales" e introduciendo "mecanismos de optimizacion algoritmica durante el post-entrenamiento". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. Se menciona de forma cualitativa una mayor profundidad de pensamiento (de una media de 12K tokens por pregunta en la version anterior a 23K en la actual, medido en el conjunto AIME), pero sin detallar el mecanismo tecnico subyacente.
 
@@ -78,7 +78,7 @@ Ademas, la model card afirma que en AIME 2025 la precision paso del 70 % en la v
 - VRAM estimada para inferencia: no disponible (se desconoce el numero de parametros).
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible, al no conocerse el tamano del modelo.
-- Opciones de despliegue: los metadatos indican compatibilidad con `transformers` y `pytorch`, ademas del tag `endpoints_compatible`, lo que sugiere despliegue mediante HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: los metadatos indican compatibilidad con `transformers` y `pytorch`, ademas del tag `endpoints_compatible`, lo que sugiere despliegue mediante Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible. La model card menciona un consumo medio de 23K tokens por pregunta en AIME, dato que implica decodificacion prolongada y, por tanto, latencias altas en respuestas de razonamiento, pero sin cifras de tiempo.
 - Nota: el repositorio no contiene pesos (0.0 GB), por lo que no es posible ejecutar el modelo a partir de este identificador tal como esta publicado.
 
@@ -96,7 +96,7 @@ No es posible realizar una comparativa fiable. La model card referencia tres mod
 
 ## Limitaciones y advertencias
 
-- Discrepancia entre metadatos y model card: las etiquetas de HuggingFace indican BERT y `feature-extraction`, mientras que la model card describe un modelo conversacional de razonamiento. No se puede determinar cual es correcta.
+- Discrepancia entre metadatos y model card: las etiquetas de Hugging Face indican BERT y `feature-extraction`, mientras que la model card describe un modelo conversacional de razonamiento. No se puede determinar cual es correcta.
 - Ausencia de pesos: el repositorio figura con 0.0 GB, por lo que no hay artefactos descargables ni forma de reproducir los resultados declarados.
 - Cero validacion comunitaria: 0 descargas y 0 likes en la fecha de consulta.
 - Benchmarks no verificables: la tabla usa modelos de comparacion anonimizados y no se detalla la metodologia. Las cifras no deben tomarse como referencia de produccion.
@@ -109,7 +109,7 @@ No es posible realizar una comparativa fiable. La model card referencia tres mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSCXZ12DSA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DSCXZ12DSA/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog oficial: no disponible (la model card menciona una web oficial y un repositorio de codigo, pero no incluye URLs)
 - Repositorio de codigo: no disponible

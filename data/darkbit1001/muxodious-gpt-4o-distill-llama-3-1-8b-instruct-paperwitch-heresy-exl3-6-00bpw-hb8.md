@@ -79,7 +79,7 @@ La principal diferencia es la abliteración y el estilo GPT-4o, que no están pr
 
 ## Enlaces
 
-- [Repositorio HuggingFace de este modelo](https://huggingface.co/darkbit1001/MuXodious-gpt-4o-distill-Llama-3.1-8B-Instruct-PaperWitch-heresy-exl3-6.00bpw-hb8)
+- [Repositorio Hugging Face de este modelo](https://huggingface.co/darkbit1001/MuXodious-gpt-4o-distill-Llama-3.1-8B-Instruct-PaperWitch-heresy-exl3-6.00bpw-hb8)
 - [Modelo base original](https://huggingface.co/MoXodious/gpt-4o-distil-Llama-3.1-8B-Instruct-PaperWitch-heresy)
 - [Herramienta Heretic (abliteration)](https://github.com/p-e-w/heretic)
 - [ExLlamaV3 (librería de inferencia)](https://github.com/turboderp/exllamav3)

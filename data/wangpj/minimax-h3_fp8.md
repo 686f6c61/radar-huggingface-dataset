@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wangpj/MiniMax-H3_fp8
+- Repositorio en Hugging Face: https://huggingface.co/wangpj/MiniMax-H3_fp8
 - Modelo original MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio de LoRAs Turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Text encoder cuantizado (referencia): https://huggingface.co/cybermotaz/Qwen3-VL-32B-Instruct-NVFP4

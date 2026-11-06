@@ -46,7 +46,7 @@ La version "Uncensored" se obtiene mediante un proceso de abliteracion, que elim
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo base Qwen3.8-27B ha sido evaluado en tareas como MathVision, pero no se proporcionan cifras concretas en los materiales consultados. Se recomienda consultar la ficha del modelo base en HuggingFace para obtener datos de rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo base Qwen3.8-27B ha sido evaluado en tareas como MathVision, pero no se proporcionan cifras concretas en los materiales consultados. Se recomienda consultar la ficha del modelo base en Hugging Face para obtener datos de rendimiento.
 
 ## Requisitos de hardware
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/DogOnKeyboard/Qwen3.8-27B-Uncensored-NInfer
+- Repositorio Hugging Face del modelo: https://huggingface.co/DogOnKeyboard/Qwen3.8-27B-Uncensored-NInfer
 - Modelo base (Jonathan Coletti): https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version GGUF y guia de ejecucion local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dp-blockpick-varied-timing es una política de difusión (diffusion policy) para robótica desarrollada por el usuario padiredd y publicada en HuggingFace bajo licencia MIT. El modelo resuelve una tarea concreta de manipulación: el agarre cenital (top-down) de un bloque con el brazo izquierdo del robot ROBOTIS FFW SG2 en el simulador Isaac Lab. Se entrenó con 500 demostraciones scriptadas en las que la duración de cada fase varía entre episodios, un detalle de diseño que obliga a la política a usar las cámaras para decidir cuándo cerrar la pinza en lugar de aprender un temporizador implícito a partir del estado articular.
+dp-blockpick-varied-timing es una política de difusión (diffusion policy) para robótica desarrollada por el usuario padiredd y publicada en Hugging Face bajo licencia MIT. El modelo resuelve una tarea concreta de manipulación: el agarre cenital (top-down) de un bloque con el brazo izquierdo del robot ROBOTIS FFW SG2 en el simulador Isaac Lab. Se entrenó con 500 demostraciones scriptadas en las que la duración de cada fase varía entre episodios, un detalle de diseño que obliga a la política a usar las cámaras para decidir cuándo cerrar la pinza en lugar de aprender un temporizador implícito a partir del estado articular.
 
 El modelo tiene 287.504.496 parámetros y se distribuye en formato safetensors (repositorio de 5,8 GB). No es un modelo de lenguaje: no procesa ni genera texto, sino que mapea observaciones visuales y propioceptivas a 16 objetivos articulares (7 del brazo izquierdo más pinza, 7 del brazo derecho más pinza). Su relevancia radica en demostrar que la variabilidad temporal en los datos de entrenamiento corrige un fallo clásico de las políticas de imitación: el cierre prematuro de la pinza por sobreajuste a la secuencia temporal de las demostraciones.
 
@@ -71,7 +71,7 @@ Comparacion con la misma receta entrenada sobre demostraciones de timing identic
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-varied-timing | 287.504.496 | 64 pasos de horizonte, 32 ejecutados | 49/50 (DDIM-10) y 50/50 (DDPM-100) en simulacion | MIT | HuggingFace (padiredd/dp-blockpick-varied-timing) |
+| dp-blockpick-varied-timing | 287.504.496 | 64 pasos de horizonte, 32 ejecutados | 49/50 (DDIM-10) y 50/50 (DDPM-100) en simulacion | MIT | Hugging Face (padiredd/dp-blockpick-varied-timing) |
 | Misma receta con timing identico (referencia interna del autor) | no disponible | no disponible | 22/41 (100k) y 32/41 (60k) | no disponible | no disponible como repositorio separado |
 | Otras diffusion policies de LeRobot | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos publicados de otros modelos comparables en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-varied-timing
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-varied-timing
 - LeRobot (framework de entrenamiento): https://github.com/huggingface/lerobot
 - Fork utilizado: https://github.com/ROBOTIS-GIT/lerobot-cyclo (commit 240b4a0)
 - Isaac Lab (simulador): https://github.com/isaac-sim/IsaacLab

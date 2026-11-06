@@ -29,7 +29,7 @@ El componente "Alan Turing Protocol" expone un parámetro `turing_depth` (con al
 
 ## Capacidades
 
-- Extracción de características (`feature-extraction`), que es el pipeline declarado en HuggingFace.
+- Extracción de características (`feature-extraction`), que es el pipeline declarado en Hugging Face.
 - Razonamiento latente multi-paso mediante el parámetro `turing_depth`, con modos de deliberación y verificación según la model card.
 - Proyección continua de estados ocultos sobre la variedad de Stiefel, sin serialización a tokens intermedios.
 - Despliegue mediante Ollama a través del `Modelfile` incluido, con temperatura calibrada a 0,07.
@@ -76,10 +76,10 @@ No hay datos de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gemma2_9b_PMTP_polydim_einsof` | Adaptador sobre Gemma 2 9B (9,24B base) | No disponible (base: 8 192) | Razonamiento latente sobre variedad de Stiefel | Apache 2.0 | HuggingFace, 0 descargas |
-| `google/gemma-2-9b` | 9,24B | 8 192 | Transformer decoder estándar | Gemma Terms of Use | HuggingFace, ampliamente usado |
-| `google/gemma-2-9b-it` | 9,24B | 8 192 | Transformer decoder con ajuste instructivo | Gemma Terms of Use | HuggingFace, ampliamente usado |
-| `meta-llama/Llama-3.1-8B` | 8,03B | 131 072 | Transformer decoder | Llama 3.1 Community License | HuggingFace, ampliamente usado |
+| `gemma2_9b_PMTP_polydim_einsof` | Adaptador sobre Gemma 2 9B (9,24B base) | No disponible (base: 8 192) | Razonamiento latente sobre variedad de Stiefel | Apache 2.0 | Hugging Face, 0 descargas |
+| `google/gemma-2-9b` | 9,24B | 8 192 | Transformer decoder estándar | Gemma Terms of Use | Hugging Face, ampliamente usado |
+| `google/gemma-2-9b-it` | 9,24B | 8 192 | Transformer decoder con ajuste instructivo | Gemma Terms of Use | Hugging Face, ampliamente usado |
+| `meta-llama/Llama-3.1-8B` | 8,03B | 131 072 | Transformer decoder | Llama 3.1 Community License | Hugging Face, ampliamente usado |
 
 La comparación directa con alternativas establecidas es difícil porque no hay benchmarks publicados del adaptador y su pipeline declarado (`feature-extraction`) difiere del de los modelos de chat. La licencia Apache 2.0 del adaptador es más permisiva que las licencias de Gemma y Llama, pero el uso del modelo base sigue sujeto a los términos de Google.
 
@@ -99,7 +99,7 @@ La comparación directa con alternativas establecidas es difícil porque no hay 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Polydim-Einsof/gemma2_9b_PMTP_polydim_einsof
+- Hugging Face: https://huggingface.co/Polydim-Einsof/gemma2_9b_PMTP_polydim_einsof
 - Modelo base: https://huggingface.co/google/gemma-2-9b
 - DOI primario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21136742
 - DOI secundario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21209973

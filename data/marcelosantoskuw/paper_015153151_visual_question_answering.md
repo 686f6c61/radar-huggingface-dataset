@@ -63,5 +63,5 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marcelosantoskuw/paper_015153151_visual_question_answering
+- Repositorio en Hugging Face: https://huggingface.co/marcelosantoskuw/paper_015153151_visual_question_answering
 - No se han encontrado otros enlaces relevantes (paper, blog, demo) en la información proporcionada.

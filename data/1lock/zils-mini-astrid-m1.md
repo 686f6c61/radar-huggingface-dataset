@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Zils-mini-astrid-m1 | 4,54B | No disponible | Apache-2.0 | HuggingFace (1lock) | Ajuste LoRA sobre soup de cuatro cuerpos d3-mini; 85,6 en semillas de examen Zils |
-| torchcast-ai/torchcast-decision-4b | No disponible | No disponible | Apache-2.0 | HuggingFace | Cuerpo de partida del soup; 76,4 en semillas de examen Zils; mejor en Outcomes según el autor |
-| perplexity-ai/pplx-decider-flash-v1.2 | No disponible | No disponible | Apache-2.0 | HuggingFace | Cuerpo de partida del soup; sin métricas publicadas en la información disponible |
-| Maincode/Matilda-Decision-v1-Mini | No disponible | No disponible | Apache-2.0 | HuggingFace | Cuerpo de partida del soup; sin métricas publicadas en la información disponible |
+| Zils-mini-astrid-m1 | 4,54B | No disponible | Apache-2.0 | Hugging Face (1lock) | Ajuste LoRA sobre soup de cuatro cuerpos d3-mini; 85,6 en semillas de examen Zils |
+| torchcast-ai/torchcast-decision-4b | No disponible | No disponible | Apache-2.0 | Hugging Face | Cuerpo de partida del soup; 76,4 en semillas de examen Zils; mejor en Outcomes según el autor |
+| perplexity-ai/pplx-decider-flash-v1.2 | No disponible | No disponible | Apache-2.0 | Hugging Face | Cuerpo de partida del soup; sin métricas publicadas en la información disponible |
+| Maincode/Matilda-Decision-v1-Mini | No disponible | No disponible | Apache-2.0 | Hugging Face | Cuerpo de partida del soup; sin métricas publicadas en la información disponible |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/1lock/zils-mini-astrid-m1
+- Hugging Face: https://huggingface.co/1lock/zils-mini-astrid-m1
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Cuerpo de partida: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Cuerpo de partida: https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2

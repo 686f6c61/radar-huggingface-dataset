@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel (publicado bajo el identificador DSAC12DSA21E/MyAwesomeModel-TestRepository) es un repositorio alojado en HuggingFace por el usuario DSAC12DSA21E. La model card del autor lo describe como el checkpoint seleccionado de una ejecucion de entrenamiento, eligiendo el directorio `checkpoints/step_1000` por obtener la mayor puntuacion ponderada (0.709) sobre un conjunto de 15 tareas de evaluacion. Sin embargo, no se aportan datos sobre el proceso de entrenamiento, el numero de parametros ni la composicion del dataset.
+MyAwesomeModel (publicado bajo el identificador DSAC12DSA21E/MyAwesomeModel-TestRepository) es un repositorio alojado en Hugging Face por el usuario DSAC12DSA21E. La model card del autor lo describe como el checkpoint seleccionado de una ejecucion de entrenamiento, eligiendo el directorio `checkpoints/step_1000` por obtener la mayor puntuacion ponderada (0.709) sobre un conjunto de 15 tareas de evaluacion. Sin embargo, no se aportan datos sobre el proceso de entrenamiento, el numero de parametros ni la composicion del dataset.
 
-El repositorio presenta senales contradictorias que conviene senalar: las etiquetas de HuggingFace lo clasifican como `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere un encoder BERT para extraccion de caracteristicas. En cambio, la model card describe capacidades generativas tipicas de un modelo causal (generacion de codigo, dialogo, escritura creativa, instrucciones), lo que no encaja con un encoder puro de extraccion de caracteristicas. Esta inconsistencia no se resuelve con la informacion disponible.
+El repositorio presenta senales contradictorias que conviene senalar: las etiquetas de Hugging Face lo clasifican como `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere un encoder BERT para extraccion de caracteristicas. En cambio, la model card describe capacidades generativas tipicas de un modelo causal (generacion de codigo, dialogo, escritura creativa, instrucciones), lo que no encaja con un encoder puro de extraccion de caracteristicas. Esta inconsistencia no se resuelve con la informacion disponible.
 
 El repositorio tiene 0 descargas, 0 likes y un tamano de 0.0 GB, sin idiomas declarados ni ficheros de pesos identificables en la informacion proporcionada. Todo apunta a un repositorio de prueba o de caracter demostrativo, no a un modelo listo para produccion. La licencia declarada es MIT.
 
@@ -12,18 +12,18 @@ El repositorio tiene 0 descargas, 0 likes y un tamano de 0.0 GB, sin idiomas dec
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Segun tags de HuggingFace: BERT (transformer encoder). La model card sugiere capacidades generativas, sin especificar arquitectura. No disponible con certeza |
+| Arquitectura | Segun tags de Hugging Face: BERT (transformer encoder). La model card sugiere capacidades generativas, sin especificar arquitectura. No disponible con certeza |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (campo de idiomas vacio en HuggingFace) |
+| Idiomas soportados | no disponible (campo de idiomas vacio en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (tamano del repositorio: 0.0 GB) |
 
 ## Arquitectura y entrenamiento
 
-Segun las etiquetas de HuggingFace, el modelo se basa en BERT, es decir, un transformer con arquitectura de encoder y tarea de feature-extraction. La model card, en cambio, describe un proceso de seleccion de checkpoint en el que se evaluaron todos los directorios `checkpoints/step_*` con una bateria completa de benchmarks, escogiendo el de mayor puntuacion ponderada global. El checkpoint seleccionado es `checkpoints/step_1000`, con una puntuacion global ponderada de 0.709.
+Segun las etiquetas de Hugging Face, el modelo se basa en BERT, es decir, un transformer con arquitectura de encoder y tarea de feature-extraction. La model card, en cambio, describe un proceso de seleccion de checkpoint en el que se evaluaron todos los directorios `checkpoints/step_*` con una bateria completa de benchmarks, escogiendo el de mayor puntuacion ponderada global. El checkpoint seleccionado es `checkpoints/step_1000`, con una puntuacion global ponderada de 0.709.
 
 No se proporciona informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo ajuste por RLHF o DPO, ni ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, etc.). Tampoco se detalla el script de evaluacion mas alla de la referencia a `evaluation/eval.py`, que aplica pesos ligeramente superiores a las tareas de razonamiento y seguimiento de instrucciones. La discrepancia entre el tag BERT y las capacidades generativas descritas queda sin aclarar en la documentacion disponible.
 
@@ -88,7 +88,7 @@ No se han publicado resultados en benchmarks estandar reconocidos (MMLU, HumanEv
 - VRAM estimada para inferencia: no disponible (no se conoce el numero de parametros).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. El repositorio declara compatibilidad con `transformers` y `endpoints_compatible`, lo que sugiere despliegue via HuggingFace Inference Endpoints, pero sin pesos verificables no puede confirmarse.
+- Opciones de despliegue: no disponible. El repositorio declara compatibilidad con `transformers` y `endpoints_compatible`, lo que sugiere despliegue via Hugging Face Inference Endpoints, pero sin pesos verificables no puede confirmarse.
 - Latencia y throughput estimados: no disponible.
 - Nota: el tamano del repositorio es de 0.0 GB, por lo que no se identifican ficheros de pesos desplegables en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ No disponible. La informacion proporcionada no permite establecer la categoria d
 
 ## Limitaciones y advertencias
 
-- Contradiccion entre las etiquetas de HuggingFace (BERT, feature-extraction) y las capacidades generativas descritas en la model card. No es posible determinar la naturaleza real del modelo.
+- Contradiccion entre las etiquetas de Hugging Face (BERT, feature-extraction) y las capacidades generativas descritas en la model card. No es posible determinar la naturaleza real del modelo.
 - Repositorio de 0.0 GB: no se identifican pesos descargables, lo que impide su uso practico.
 - 0 descargas y 0 likes: sin validacion por parte de la comunidad.
 - Idiomas no declarados: se desconoce la cobertura linguistica.
@@ -111,5 +111,5 @@ No disponible. La informacion proporcionada no permite establecer la categoria d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSAC12DSA21E/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/DSAC12DSA21E/MyAwesomeModel-TestRepository
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Las referencias devueltas (Microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft365, Wikipedia sobre Microsoft) no guardan relacion con el modelo y se descartan.

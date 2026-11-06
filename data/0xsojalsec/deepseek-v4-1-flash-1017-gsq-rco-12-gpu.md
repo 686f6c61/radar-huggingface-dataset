@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xSojalSec/DeepSeek-V4.1-Flash-1017-GSQ-RCO-12-GPU
+- Repositorio en Hugging Face: https://huggingface.co/0xSojalSec/DeepSeek-V4.1-Flash-1017-GSQ-RCO-12-GPU
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Paper GSQ (arXiv:2604.18556): https://arxiv.org/abs/2604.18556
 - Paper RCO (arXiv:2605.00649): https://arxiv.org/abs/2605.00649

@@ -6,7 +6,7 @@
 
 El repositorio contiene dos ficheros principales: `review.md` (el artefacto principal, con la nota completa) y `README.md` (la documentacion). A pesar de las etiquetas `safetensors` y `transformer`, y de un recuento de parametros de 16.576 segun los metadatos de safetensors, el tamano del repositorio es de 0,0 GB y no hay pipeline declarado. Un recuento de 16.576 parametros es compatible con un tensor auxiliar o un artefacto de prueba, no con un transformer funcional; los propios metadatos no permiten confirmar que exista un checkpoint utilizable.
 
-La relevancia de esta ficha es, por tanto, acotada: sirve para documentar un repositorio de investigacion en fase de diseno y para advertir de que no debe emplearse como modelo de lenguaje. Se publica bajo licencia MIT y esta alojado en HuggingFace con cero descargas y cero likes en el momento de la consulta.
+La relevancia de esta ficha es, por tanto, acotada: sirve para documentar un repositorio de investigacion en fase de diseno y para advertir de que no debe emplearse como modelo de lenguaje. Se publica bajo licencia MIT y esta alojado en Hugging Face con cero descargas y cero likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -77,6 +77,6 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssilvasophia/contrastive-learning-v2
+- Hugging Face: https://huggingface.co/ssilvasophia/contrastive-learning-v2
 - Ficheros declarados en la model card: `review.md` (artefacto principal) y `README.md` (documentacion)
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este repositorio; los resultados obtenidos correspondian a paginas de ayuda de YouTube y a discusiones sin relacion con el modelo.

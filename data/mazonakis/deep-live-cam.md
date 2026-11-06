@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Mazonakis/deep-live-cam` es un repositorio publicado en HuggingFace por el usuario Mazonakis bajo licencia GPL-3.0. A pesar de su nombre, no se trata de un modelo de lenguaje ni de un modelo de difusion de imagen conventional: la model card publicada esta practicamente vacia (unicamente el campo `license`), y los unicos metadatos disponibles son las etiquetas del repositorio (`diffusers`, `onnx`, `safetensors`) y un tamano de 46,9 GB. No hay informacion sobre arquitectura, parametros, contexto ni datos de entrenamiento.
+`Mazonakis/deep-live-cam` es un repositorio publicado en Hugging Face por el usuario Mazonakis bajo licencia GPL-3.0. A pesar de su nombre, no se trata de un modelo de lenguaje ni de un modelo de difusion de imagen conventional: la model card publicada esta practicamente vacia (unicamente el campo `license`), y los unicos metadatos disponibles son las etiquetas del repositorio (`diffusers`, `onnx`, `safetensors`) y un tamano de 46,9 GB. No hay informacion sobre arquitectura, parametros, contexto ni datos de entrenamiento.
 
 La etiqueta `diffusers` sugiere que el contenido podria estar relacionado con pipelines de difusion, mientras que `onnx` y `safetensors` indican la presencia de pesos en esos formatos. El nombre "deep-live-cam" coincide con el de una conocida herramienta de codigo abierto de face swapping en tiempo real, lo que apunta a que el repositorio podria contener pesos auxiliares (detectores faciales, modelos de segmentacion, inpainting o similares) usados por dicha herramienta, aunque esta hipotesis no puede confirmarse con la informacion proporcionada.
 
@@ -62,7 +62,7 @@ No disponible. La ausencia de informacion sobre arquitectura, parametros y tarea
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mazonakis/deep-live-cam | no disponible | no disponible | GPL-3.0 | HuggingFace, 0 descargas |
+| Mazonakis/deep-live-cam | no disponible | no disponible | GPL-3.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,5 +77,5 @@ No disponible. La ausencia de informacion sobre arquitectura, parametros y tarea
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mazonakis/deep-live-cam
+- Repositorio en Hugging Face: https://huggingface.co/Mazonakis/deep-live-cam
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

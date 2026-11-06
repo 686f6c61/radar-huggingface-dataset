@@ -59,7 +59,7 @@ No se dispone de datos numéricos para comparar con otros modelos. La informaci�
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace aún no contiene los pesos del modelo cuantizado; la model card indica que se subirán en un commit posterior. No es posible utilizarlo en la práctica hasta que se complete la subida.
+- El repositorio de Hugging Face aún no contiene los pesos del modelo cuantizado; la model card indica que se subirán en un commit posterior. No es posible utilizarlo en la práctica hasta que se complete la subida.
 - La cuantización NVFP4 es una conversión de la comunidad, no oficial de Z.ai. Puede introducir degradación en la precisión frente al modelo BF16 original, especialmente en tareas de razonamiento complejo.
 - El modelo original es multimodal y multilingüe, pero la información solo lista inglés y chino; otros idiomas podrían no estar soportados.
 - Riesgo de alucinación inherente a los modelos de lenguaje, especialmente en contextos largos o con datos ambiguos.
@@ -68,7 +68,7 @@ No se dispone de datos numéricos para comparar con otros modelos. La informaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/vcruz305/GLM-5.3-Flash-NVFP4
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/vcruz305/GLM-5.3-Flash-NVFP4
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Blog oficial de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Technical report de GLM-5: https://arxiv.org/abs/2602.15763

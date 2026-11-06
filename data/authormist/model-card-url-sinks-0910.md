@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`authormist/model-card-url-sinks-0910` es un artefacto publicado en HuggingFace por el usuario `authormist` con la etiqueta de pipeline `text-generation`, pero no contiene pesos ni configuración de un modelo de lenguaje. La propia model card lo describe como una sonda de prueba: "Controlled model-card URL sink probe. All values in this model are inert researcher-owned markers for authorized testing". Es decir, se trata de un banco de pruebas de seguridad orientado a verificar cómo los consumidores de model cards (visores web, clientes de API, indexadores, dashboards internos) tratan valores potencialmente peligrosos.
+`authormist/model-card-url-sinks-0910` es un artefacto publicado en Hugging Face por el usuario `authormist` con la etiqueta de pipeline `text-generation`, pero no contiene pesos ni configuración de un modelo de lenguaje. La propia model card lo describe como una sonda de prueba: "Controlled model-card URL sink probe. All values in this model are inert researcher-owned markers for authorized testing". Es decir, se trata de un banco de pruebas de seguridad orientado a verificar cómo los consumidores de model cards (visores web, clientes de API, indexadores, dashboards internos) tratan valores potencialmente peligrosos.
 
 La relevancia del artefacto es, por tanto, defensiva y no funcional: sus metadatos están deliberadamente sembrados con marcadores controlados que emplean el esquema `javascript:` y atributos de evento en etiquetas HTML dentro de campos como `library_name`, `thumbnail`, `arxiv`, `doi`, `spaces`, `widget` y `model-index`. Un renderizador o parser que no sanitice esos campos puede acabar ejecutando código en el navegador de quien visualiza la ficha, o emitir peticiones a destinos no previstos (URL sinks). Este tipo de sondas se usa en auditorías autorizadas de plataformas de modelos.
 
@@ -38,7 +38,7 @@ La innovación técnica que representa es de naturaleza distinta: es un conjunto
 ## Capacidades
 
 - No es un modelo de lenguaje: no genera texto, no razona, no escribe código ni resuelve problemas matemáticos.
-- Actúa como fixture de pruebas de seguridad para validadores de model cards y clientes de la API de HuggingFace Hub.
+- Actúa como fixture de pruebas de seguridad para validadores de model cards y clientes de la API de Hugging Face Hub.
 - Permite comprobar si un visor de fichas sanea URLs con esquema `javascript:` en campos de texto libre.
 - Permite comprobar si un renderizador de Markdown permite HTML embebido y atributos de evento (`onerror`, `onload`) en etiquetas `img`.
 - Permite verificar si un pipeline de indexación escapa correctamente los nombres y tipos declarados dentro de `model-index`.
@@ -71,7 +71,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 - Compatibilidad con GPU de consumo: no aplica.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplica para inferencia. El artefacto solo se "despliega" como fichero de metadatos consumido por visores o clientes del Hub.
 - Latencia y throughput: no disponible.
-- Requisito real de consumo: un navegador o un parser de YAML/Markdown con la sanitizacion adecuada, y conectividad a HuggingFace para recuperar la ficha.
+- Requisito real de consumo: un navegador o un parser de YAML/Markdown con la sanitizacion adecuada, y conectividad a Hugging Face para recuperar la ficha.
 
 ## Comparativa con modelos similares
 
@@ -86,12 +86,12 @@ No disponible. No se ha identificado en la informacion proporcionada ningun otro
 - No se declaran idiomas soportados, por lo que no puede asumirse cobertura multilingue de ningun tipo.
 - El unico resultado declarado esta marcado como no verificado y su metrica no es identificable; no debe citarse como evidencia de rendimiento.
 - Uso comercial: la licencia "other" sin texto asociado impide determinar condiciones de uso comercial. Se recomienda no reutilizar el contenido sin contactar con el autor.
-- Recomendacion para produccion: si algun sistema propio ingiere fichas de HuggingFace, conviene filtrar por lista blanca los esquemas de URL admitidos (`https`) y escapar todo valor de metadatos antes de insertarlo en el DOM.
+- Recomendacion para produccion: si algun sistema propio ingiere fichas de Hugging Face, conviene filtrar por lista blanca los esquemas de URL admitidos (`https`) y escapar todo valor de metadatos antes de insertarlo en el DOM.
 - Los resultados de la busqueda web proporcionada no guardan relacion con este artefacto: son hilos de Reddit sobre finanzas personales en Belgica y autenticacion con eID, sin conexion con el modelo.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/authormist/model-card-url-sinks-0910
+- Ficha en Hugging Face: https://huggingface.co/authormist/model-card-url-sinks-0910
 - Dataset de la sonda declarada en `model-index`: authormist/url-sink-controlled-probe (referencia textual; no se ha verificado su existencia publica)
 - Enlace de licencia declarado en la model card: https://example.com/hf-controlled-license-link-probe (marcador de prueba, no es un texto legal real)
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo.

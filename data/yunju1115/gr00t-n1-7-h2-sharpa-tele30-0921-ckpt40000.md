@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace (`yunju1115/gr00t-n1.7-h2-sharpa-tele30-0921-ckpt40000`) contiene un checkpoint de aproximadamente 3.144 millones de parámetros (3,14B) publicado por el usuario `yunju1115`. Se trata de un artefacto de pesos en formato `safetensors` con un tamaño de repositorio de 6,9 GB, lo que es coherente con pesos en precisión de 16 bits (3,144 × 10⁹ × 2 bytes ≈ 6,29 GB) más el sobrecoste de metadatos y ficheros auxiliares. El repositorio acumula 7 descargas y 0 likes, y fue creado el 22 de septiembre de 2026 según los metadatos de la plataforma.
+Este repositorio de Hugging Face (`yunju1115/gr00t-n1.7-h2-sharpa-tele30-0921-ckpt40000`) contiene un checkpoint de aproximadamente 3.144 millones de parámetros (3,14B) publicado por el usuario `yunju1115`. Se trata de un artefacto de pesos en formato `safetensors` con un tamaño de repositorio de 6,9 GB, lo que es coherente con pesos en precisión de 16 bits (3,144 × 10⁹ × 2 bytes ≈ 6,29 GB) más el sobrecoste de metadatos y ficheros auxiliares. El repositorio acumula 7 descargas y 0 likes, y fue creado el 22 de septiembre de 2026 según los metadatos de la plataforma.
 
 El único tag descriptivo del modelo es `Gr00tN1d7`, que apunta a la familia de modelos visión-lenguaje-acción (VLA) GR00T N1.7 de NVIDIA, orientada al control de robots humanoides. La convención de nombres del repositorio (`h2`, `sharpa`, `tele30`, `0921`, `ckpt40000`) sugiere un ajuste fino derivado de datos de teleoperación sobre un cuerpo robótico concreto, con un checkpoint guardado en el paso 40.000 de entrenamiento. Es importante subrayar que **ninguna de estas interpretaciones está confirmada** por la información disponible: el repositorio no incluye model card, licencia declarada, idiomas soportados ni pipeline asignado.
 
@@ -74,10 +74,10 @@ Los datos de esta tabla proceden del conocimiento general de cada proyecto y **n
 
 | Modelo | Parámetros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`gr00t-n1.7-h2-sharpa-tele30-0921-ckpt40000`) | 3,14B | VLA (por confirmar) | no disponible | no disponible | HuggingFace, 7 descargas |
-| OpenVLA | ~7B (no verificado) | VLA | no verificado | licencia propia del proyecto (no verificada) | pesos abiertos en HuggingFace |
+| Este checkpoint (`gr00t-n1.7-h2-sharpa-tele30-0921-ckpt40000`) | 3,14B | VLA (por confirmar) | no disponible | no disponible | Hugging Face, 7 descargas |
+| OpenVLA | ~7B (no verificado) | VLA | no verificado | licencia propia del proyecto (no verificada) | pesos abiertos en Hugging Face |
 | π0 (Physical Intelligence) | ~3,3B (no verificado) | VLA con *flow matching* | no verificado | Apache 2.0 (no verificado) | pesos abiertos vía `openpi` |
-| RDT-1B | ~1,2B (no verificado) | modelo de difusión para brazos robóticos | no verificado | no verificada | pesos abiertos en HuggingFace |
+| RDT-1B | ~1,2B (no verificado) | modelo de difusión para brazos robóticos | no verificado | no verificada | pesos abiertos en Hugging Face |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento real de este checkpoint con el de las alternativas citadas.
 
@@ -96,6 +96,6 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yunju1115/gr00t-n1.7-h2-sharpa-tele30-0921-ckpt40000
+- Repositorio en Hugging Face: https://huggingface.co/yunju1115/gr00t-n1.7-h2-sharpa-tele30-0921-ckpt40000
 - Documentación de la familia GR00T de NVIDIA (referencia no confirmada para este checkpoint): no disponible en los resultados de búsqueda.
 - Papers, blogs, repositorios o demos adicionales: no se encontraron enlaces relevantes en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo.

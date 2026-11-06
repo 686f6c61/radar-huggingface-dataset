@@ -4,7 +4,7 @@
 
 IdentiFace-PixArt-FFHQ es un modelo de ControlNet desarrollado por uglasses, diseñado para la generación de caras con preservación de identidad a partir de descripciones multimodales. Se basa en el modelo de difusión PixArt-α (PixArt-XL-2-1024-MS) y se ha ajustado finamente sobre el dataset ID-FFHQ, que contiene imágenes de rostros de alta calidad. El modelo está pensado para aplicaciones forenses, concretamente para la generación de retratos robot de sospechosos en investigaciones criminales, integrando señales de control como bordes y características de baja calidad para mejorar la fidelidad de la identidad.
 
-El checkpoint publicado corresponde a un entrenamiento de 30 épocas con una pérdida de identidad basada en AdaFace (peso 0.1) y una proporción de prompts largos de 0.3. El repositorio incluye el archivo de pesos (`latest.pth`), la configuración de entrenamiento y el log correspondiente. El modelo se distribuye bajo licencia "other" y está disponible en HuggingFace con un tamaño de repositorio de 6.0 GB. Aunque no se especifican detalles de arquitectura interna, al ser un ControlNet para PixArt, se espera que herede la capacidad de generación de imágenes de alta resolución (1024x1024) del modelo base.
+El checkpoint publicado corresponde a un entrenamiento de 30 épocas con una pérdida de identidad basada en AdaFace (peso 0.1) y una proporción de prompts largos de 0.3. El repositorio incluye el archivo de pesos (`latest.pth`), la configuración de entrenamiento y el log correspondiente. El modelo se distribuye bajo licencia "other" y está disponible en Hugging Face con un tamaño de repositorio de 6.0 GB. Aunque no se especifican detalles de arquitectura interna, al ser un ControlNet para PixArt, se espera que herede la capacidad de generación de imágenes de alta resolución (1024x1024) del modelo base.
 
 ## Especificaciones técnicas
 
@@ -28,7 +28,7 @@ El modelo es un ControlNet que se acopla al generador PixArt-α, un modelo de di
 - Generación de imágenes de rostros a partir de descripciones textuales multimodales (texto + condiciones de borde y baja calidad).
 - Preservación de identidad facial mediante pérdida AdaFace, útil para retratos robot.
 - Control fino de la estructura facial mediante mapas de bordes y características de baja calidad.
-- Integración con el ecosistema de diffusers de HuggingFace, lo que facilita su uso en pipelines de generación.
+- Integración con el ecosistema de diffusers de Hugging Face, lo que facilita su uso en pipelines de generación.
 - No se reportan capacidades de tool calling, agentes, razonamiento multi-paso ni procesamiento de audio o vídeo.
 
 ## Casos de uso
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 - No se especifican requisitos oficiales de hardware en la documentación proporcionada.
 - El checkpoint tiene un tamaño de 6.0 GB, lo que sugiere que en FP32 ocuparía aproximadamente esa cantidad de memoria solo para los pesos. Para inferencia, se necesita memoria adicional para activaciones y el modelo base PixArt-α, que tiene alrededor de 600 millones de parámetros.
 - Se estima que una GPU con al menos 12 GB de VRAM (p. ej., RTX 3060 Ti, RTX 4070) podría ejecutar el modelo a resolución 1024x1024, aunque no se garantiza. Para entrenamiento o ajuste fino, se recomendaría una GPU con 24 GB o más (A100, RTX 4090).
-- El modelo se integra con la librería diffusers, por lo que puede desplegarse con herramientas como HuggingFace Inference Endpoints, o mediante scripts personalizados en PyTorch. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
+- El modelo se integra con la librería diffusers, por lo que puede desplegarse con herramientas como Hugging Face Inference Endpoints, o mediante scripts personalizados en PyTorch. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
 - La latencia y el throughput dependen del hardware y de la configuración de muestreo; no se proporcionan datos concretos.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de una comparativa directa con otros modelos de generación de car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uglasses/IdentiFace-PixArt-FFHQ
+- Modelo en Hugging Face: https://huggingface.co/uglasses/IdentiFace-PixArt-FFHQ
 - Repositorio GitHub oficial: https://github.com/uglasses/IdentiFace
 - Dataset ID-FFHQ: https://huggingface.co/datasets/uglasses/ID-FFHQ
 - Paper en arXiv: https://arxiv.org/html/2605.00526v1

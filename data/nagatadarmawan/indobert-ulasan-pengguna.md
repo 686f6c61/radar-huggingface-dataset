@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndoBERT-ulasan-pengguna es un modelo publicado en HuggingFace por el usuario nagatadarmawan bajo licencia MIT. Por el identificador y la ausencia de cualquier documentación técnica en la model card, se trata presumiblemente de un ajuste fino (fine-tuning) de IndoBERT, el modelo BERT preentrenado para indonesio desarrollado por IndoLEM/IndoBenchmark, orientado a una tarea de análisis de reseñas de usuarios ("ulasan pengguna" significa "reseñas de usuarios" en indonesio). La model card únicamente declara la licencia MIT, sin aportar información sobre arquitectura, datos de entrenamiento, hiperparámetros ni métricas de evaluación.
+IndoBERT-ulasan-pengguna es un modelo publicado en Hugging Face por el usuario nagatadarmawan bajo licencia MIT. Por el identificador y la ausencia de cualquier documentación técnica en la model card, se trata presumiblemente de un ajuste fino (fine-tuning) de IndoBERT, el modelo BERT preentrenado para indonesio desarrollado por IndoLEM/IndoBenchmark, orientado a una tarea de análisis de reseñas de usuarios ("ulasan pengguna" significa "reseñas de usuarios" en indonesio). La model card únicamente declara la licencia MIT, sin aportar información sobre arquitectura, datos de entrenamiento, hiperparámetros ni métricas de evaluación.
 
 El modelo resuelve, en principio, un problema de procesamiento de lenguaje natural en indonesio sobre texto de opiniones o reseñas, probablemente clasificación de sentimiento o categorización de quejas. No obstante, al no existir documentación, pipeline declarado ni resultados publicados, su utilidad práctica no puede verificarse a partir de la información disponible. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
 
@@ -66,10 +66,10 @@ No es posible establecer una comparativa fiable sin conocer los parámetros, el 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nagatadarmawan/IndoBERT-ulasan-pengguna | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
-| IndoBERT (IndoLEM) | ~124 M (BERT-base) | 512 tokens | no disponible en esta ficha | HuggingFace |
-| XLM-RoBERTa | ~278 M (base) | 512 tokens | MIT | HuggingFace |
-| mBERT | ~178 M | 512 tokens | Apache 2.0 | HuggingFace |
+| nagatadarmawan/IndoBERT-ulasan-pengguna | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
+| IndoBERT (IndoLEM) | ~124 M (BERT-base) | 512 tokens | no disponible en esta ficha | Hugging Face |
+| XLM-RoBERTa | ~278 M (base) | 512 tokens | MIT | Hugging Face |
+| mBERT | ~178 M | 512 tokens | Apache 2.0 | Hugging Face |
 
 Los datos de IndoBERT, XLM-RoBERTa y mBERT corresponden a sus versiones base ampliamente documentadas; la fila del modelo objeto de esta ficha refleja únicamente lo publicado por el autor.
 
@@ -86,7 +86,7 @@ Los datos de IndoBERT, XLM-RoBERTa y mBERT corresponden a sus versiones base amp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nagatadarmawan/IndoBERT-ulasan-pengguna
+- Hugging Face: https://huggingface.co/nagatadarmawan/IndoBERT-ulasan-pengguna
 - IndoBERT (modelo base de referencia, no citado por el autor): https://huggingface.co/indolem/indobert-base-uncased
 - IndoLEM / IndoBenchmark (proyecto de referencia, no citado por el autor): https://indolem.github.io/
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la información proporcionada.

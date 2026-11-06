@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bonsai-27B-gguf es un repositorio de pesos en formato GGUF publicado en HuggingFace por el usuario devendradhakad bajo el identificador `devendradhakad/autodroid-prism-ml-Bonsai-27B-gguf`. Los metadatos del repositorio declaran 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) y licencia Apache 2.0, y las etiquetas asociadas son `gguf`, `prismml`, `bonsai`, `endpoints_compatible` y `conversational`. La model card publicada por el autor es un esqueleto de seis líneas que no aporta descripción funcional, arquitectura, datos de entrenamiento ni instrucciones de uso.
+Bonsai-27B-gguf es un repositorio de pesos en formato GGUF publicado en Hugging Face por el usuario devendradhakad bajo el identificador `devendradhakad/autodroid-prism-ml-Bonsai-27B-gguf`. Los metadatos del repositorio declaran 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) y licencia Apache 2.0, y las etiquetas asociadas son `gguf`, `prismml`, `bonsai`, `endpoints_compatible` y `conversational`. La model card publicada por el autor es un esqueleto de seis líneas que no aporta descripción funcional, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 El repositorio ocupa 4,4 GB, un tamaño que no es coherente con una cuantización convencional de un modelo de 26,9 mil millones de parámetros: en Q4_K_M estos modelos suelen rondar los 15-16 GB. Esa discrepancia, junto con la ausencia total de documentación, impide determinar si el contenido son los pesos completos, un subconjunto de tensores, una cuantización extremadamente agresiva o un artefacto incompleto.
 
@@ -37,7 +37,7 @@ Tampoco es posible identificar el modelo base del que derivarían estos pesos. L
 No se ha publicado ninguna evaluación funcional del modelo. A partir exclusivamente de las etiquetas del repositorio puede afirmarse lo siguiente:
 
 - Conversación: la etiqueta `conversational` indica que está pensado para diálogo de tipo chat, aunque no se detalla el formato de plantilla ni el esquema de roles.
-- Compatibilidad con Inference Endpoints: la etiqueta `endpoints_compatible` sugiere que el artefacto puede desplegarse en los Inference Endpoints de HuggingFace, sin que se especifique el contenedor ni la configuración.
+- Compatibilidad con Inference Endpoints: la etiqueta `endpoints_compatible` sugiere que el artefacto puede desplegarse en los Inference Endpoints de Hugging Face, sin que se especifique el contenedor ni la configuración.
 - Generación de texto, razonamiento, código, matemáticas, visión, audio: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -50,7 +50,7 @@ Los siguientes escenarios son hipótesis de trabajo condicionadas a una validaci
 
 - Evaluación comparativa interna en laboratorio: cargar el GGUF en llama.cpp con el menor nivel de cuantización disponible y ejecutar un conjunto de prompts fijos para medir perplejidad, coherencia y deriva, comparando los resultados con un modelo de referencia de tamaño similar ya validado.
 - Prueba de integración de pipelines GGUF: verificar que el artefacto se carga correctamente en `llama-cpp-python` o en un servidor compatible con la API de OpenAI, con el objetivo de validar la cadena de herramientas y no la calidad del modelo.
-- Estudio de reproducibilidad de publicaciones opacas: analizar la discrepancia entre el recuento de parámetros declarado (26,9 mil millones) y el tamaño real del repositorio (4,4 GB) como caso práctico de auditoría de artefactos en HuggingFace.
+- Estudio de reproducibilidad de publicaciones opacas: analizar la discrepancia entre el recuento de parámetros declarado (26,9 mil millones) y el tamaño real del repositorio (4,4 GB) como caso práctico de auditoría de artefactos en Hugging Face.
 - Prototipado de interfaces conversacionales sin requisitos de calidad: usar el modelo como sustituto temporal en el desarrollo de una interfaz de chat mientras se resuelve el acceso a un modelo validado, nunca en un entorno con usuarios reales.
 - Pruebas de cuantización extrema: si el nivel de cuantización resulta ser muy bajo, emplearlo para estudiar la degradación de calidad en modelos de ~27B comprimidos por debajo de 2 bits por peso.
 - Docencia y formación en despliegue local: utilizar el artefacto como ejemplo en talleres sobre cómo inspeccionar metadatos, detectar publicaciones carentes de documentación y decidir si un modelo merece una evaluación en profundidad.
@@ -84,7 +84,7 @@ No es posible establecer una comparativa rigurosa. Los datos técnicos del model
 
 | Modelo | Parámetros | Contexto | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| Bonsai-27B-gguf (este repositorio) | 26,9B | no disponible | Apache 2.0 | no disponible | GGUF en HuggingFace, 0 descargas |
+| Bonsai-27B-gguf (este repositorio) | 26,9B | no disponible | Apache 2.0 | no disponible | GGUF en Hugging Face, 0 descargas |
 | Alternativas de la clase 24B-32B densa | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No es posible establecer una comparativa rigurosa. Los datos técnicos del model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devendradhakad/autodroid-prism-ml-Bonsai-27B-gguf
+- Hugging Face: https://huggingface.co/devendradhakad/autodroid-prism-ml-Bonsai-27B-gguf
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

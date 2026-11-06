@@ -76,7 +76,7 @@ No hay modelos comparables publicados con métricas numéricas disponibles. El p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lindafei001/tofu-forget10-relearned-retain90
+- Hugging Face: https://huggingface.co/lindafei001/tofu-forget10-relearned-retain90
 - Repositorio open-unlearning (locuslab): https://github.com/locuslab/open-unlearning
 - Post de LessWrong sobre compresión y unlearning: https://www.lesswrong.com/posts/jXhHH658J4xzWjCu8/does-routine-compression-undo-llm-unlearning-a-short-project
 - Documentación de TOFU en AutoSOTA: https://github.com/tsinghua-fib-lab/AutoSOTA/blob/main/ICML-2026/paper-3105-AI-Engram/docs/tofu.md

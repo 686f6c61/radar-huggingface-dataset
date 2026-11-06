@@ -112,8 +112,8 @@ Comparativa con cuantizaciones del mismo modelo base, que es la categoría relev
 
 | Cuantización | Tamaño | KLD media | Generación | Prompt | Licencia / disponibilidad |
 |---|---|---|---|---|---|
-| R1-mix (este repositorio) | 16.167 MiB | 0,0148 | no medido en la tabla de velocidad | no medido | apache-2.0, descarga directa en HuggingFace |
-| R2-mix (este repositorio) | 14.677 MiB | 0,0159 | 39,9 tok/s | 1.012 tok/s | apache-2.0, descarga directa en HuggingFace |
+| R1-mix (este repositorio) | 16.167 MiB | 0,0148 | no medido en la tabla de velocidad | no medido | apache-2.0, descarga directa en Hugging Face |
+| R2-mix (este repositorio) | 14.677 MiB | 0,0159 | 39,9 tok/s | 1.012 tok/s | apache-2.0, descarga directa en Hugging Face |
 | Unsloth UD-IQ4_XS | 13.593 MiB | 0,0227 | 41,1 tok/s | 978 tok/s | Ver licencia en unsloth/Qwen3.8-27B-GGUF |
 | Ollama `qwen3.8:27b` (Q4_K_M) | 16.032 MiB | 0,0336 | 36,7 tok/s | 954 tok/s | Distribuido a través de la librería de Ollama |
 | jakeatx ATX-IQ4_XS-M | no disponible | no disponible | no disponible | no disponible | Comparado solo en la suite agéntica |
@@ -138,6 +138,6 @@ Frente al modelo sin cuantizar, la comparación no está disponible en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jdominick05/Qwen3.8-27B-24GB-128k-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jdominick05/Qwen3.8-27B-24GB-128k-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizaciones alternativas de Unsloth (incluye `mmproj-F16.gguf`): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

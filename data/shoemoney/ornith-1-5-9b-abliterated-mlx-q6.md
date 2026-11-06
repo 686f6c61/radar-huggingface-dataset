@@ -68,9 +68,9 @@ Además, el autor de la cuantización reporta una perplejidad de 5,355 en el con
 
 | Modelo | Parámetros | Contexto | Licencia | SWE-bench | GPQA | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ornith-1.5-9B (base) | ~9B | No disponible | MIT | 70.6 | 86.4 | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 | ~30 (aprox.) | ~40 (aprox.) | HuggingFace |
-| Qwen 2.5 7B | 7B | 32K | Apache 2.0 | ~25 (aprox.) | ~50 (aprox.) | HuggingFace |
+| Ornith-1.5-9B (base) | ~9B | No disponible | MIT | 70.6 | 86.4 | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 | ~30 (aprox.) | ~40 (aprox.) | Hugging Face |
+| Qwen 2.5 7B | 7B | 32K | Apache 2.0 | ~25 (aprox.) | ~50 (aprox.) | Hugging Face |
 
 Los datos de Llama y Qwen son aproximados y no provienen de la información proporcionada; se incluyen como referencia cualitativa. Ornith-1.5-9B supera claramente a estos modelos en los benchmarks citados, aunque la comparación no es directa por diferencias en los conjuntos de evaluación.
 
@@ -85,7 +85,7 @@ Los datos de Llama y Qwen son aproximados y no provienen de la información prop
 
 ## Enlaces
 
-- [Modelo en HuggingFace (shoemoney/Ornith-1.5-9B-Abliterated-MLX-q6)](https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-q6)
+- [Modelo en Hugging Face (shoemoney/Ornith-1.5-9B-Abliterated-MLX-q6)](https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-q6)
 - [Modelo base abliterated (huihui-ai/Huihui-Ornith-1.5-9B-abliterated)](https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated)
 - [Modelo original (ornith-ai/Ornith-1.5-9B)](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
 - [Página oficial de Ornith-1.5](https://ornith.ai/ornith_1_5.html)

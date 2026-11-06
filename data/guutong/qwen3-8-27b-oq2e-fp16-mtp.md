@@ -70,7 +70,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 ## Limitaciones y advertencias
 
 - La cuantización a 2 bits puede degradar significativamente la calidad de las respuestas, especialmente en tareas de razonamiento matemático, generación de código complejo y comprensión de matices lingüísticos. Se recomienda probar con casos reales antes de usarlo en producción.
-- La licencia del modelo no está especificada en la ficha de HuggingFace. El modelo base Qwen3.8-27B probablemente tenga una licencia permisiva (Apache 2.0 o Qwen license), pero no se ha verificado. Para uso comercial, es imprescindible confirmar los términos con el autor original.
+- La licencia del modelo no está especificada en la ficha de Hugging Face. El modelo base Qwen3.8-27B probablemente tenga una licencia permisiva (Apache 2.0 o Qwen license), pero no se ha verificado. Para uso comercial, es imprescindible confirmar los términos con el autor original.
 - No se han publicado resultados de benchmarks ni evaluaciones de sesgos, por lo que se desconocen los riesgos de alucinación o sesgos específicos de esta cuantización.
 - El modelo está pensado exclusivamente para Apple Silicon (MLX). No es compatible con CUDA ni con otras plataformas sin conversión previa.
 - La ventana de contexto de 262K es nativa, pero la extensión a 1M puede requerir técnicas adicionales (como RoPE scaling) y podría aumentar el uso de memoria.
@@ -78,8 +78,8 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/guutong/Qwen3.8-27B-oQ2e-fp16-mtp
-- Modelo base Qwen3.8-27B (HuggingFace): https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo cuantizado en Hugging Face: https://huggingface.co/guutong/Qwen3.8-27B-oQ2e-fp16-mtp
+- Modelo base Qwen3.8-27B (Hugging Face): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Repositorio del modelo base (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Herramienta de cuantización oMLX: https://github.com/jundot/omlx

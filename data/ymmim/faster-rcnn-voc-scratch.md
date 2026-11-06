@@ -81,7 +81,7 @@ Nota: los datos de parámetros y rendimiento de torchvision y Detectron2 son apr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/YMmim/faster-rcnn-voc-scratch)
+- [Modelo en Hugging Face](https://huggingface.co/YMmim/faster-rcnn-voc-scratch)
 - [Repositorio FasterRCNN-PyTorch (config VOC)](https://github.com/explainingai-code/FasterRCNN-PyTorch/blob/main/config/voc.yaml)
 - [Faster-RCNN-From-Scratch (GitHub)](https://github.com/Daddy-Myth/Faster-RCNN-From-Scratch)
 - [Documentación de VOC dataset en Faster RCNN](https://faster-rcnn.readthedocs.io/en/latest/tutorial/voc.html)

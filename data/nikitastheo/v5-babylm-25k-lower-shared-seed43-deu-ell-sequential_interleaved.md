@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v5-babylm-25k-lower-shared-seed43-deu-ell-sequential_interleaved` es un modelo de lenguaje causal de pequeno tamano (aproximadamente 124 millones de parametros) publicado por el usuario nikitastheo en HuggingFace. Se distribuye en formato safetensors y se carga mediante la libreria `transformers` con arquitectura etiquetada como `gpt2`, lo que lo situa en la familia de transformers decoder-only estilo GPT-2. El repositorio no incluye una model card explicativa del proposito del modelo, solo los hiperparametros de entrenamiento.
+El modelo `nikitastheo/v5-babylm-25k-lower-shared-seed43-deu-ell-sequential_interleaved` es un modelo de lenguaje causal de pequeno tamano (aproximadamente 124 millones de parametros) publicado por el usuario nikitastheo en Hugging Face. Se distribuye en formato safetensors y se carga mediante la libreria `transformers` con arquitectura etiquetada como `gpt2`, lo que lo situa en la familia de transformers decoder-only estilo GPT-2. El repositorio no incluye una model card explicativa del proposito del modelo, solo los hiperparametros de entrenamiento.
 
 El identificador del repositorio sugiere un experimento de investigacion en la linea del reto BabyLM: entrenamiento de modelos pequenos sobre cantidades de datos limitadas y de inspiracion developmental, con tokenizador propio de 25 000 entradas (referencia `babylm-25k-lower`) y texto normalizado a minusculas. Los sufijos `deu-ell` y `sequential_interleaved` apuntan a un entrenamiento multilingue aleman-griego con una estrategia de mezcla secuencial de idiomas, y el hiperparametro declarado `language switch epoch: 10` respalda esa lectura. Se trata de una inferencia a partir del nombre y de la model card, no de una declaracion explicita del autor.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada y de caracter experimental: 0 descargas y 0 likes en el
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only causal (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 123 886 080 (dato real de safetensors) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (la configuracion base es `model_configs/gpt_base_config.json`, sin detalle publicado) |
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| nikitastheo/v5-babylm-25k-lower-shared-seed43-deu-ell-sequential_interleaved | 123,9 M | no disponible | no disponible | HuggingFace, safetensors | no disponible |
-| GPT-2 base (OpenAI) | 124 M | 1024 tokens | licencia MIT modificada | HuggingFace, safetensors y multiples formatos | si (WebText, evaluaciones originales) |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | si (evaluaciones del paper de destilacion) |
-| Pythia-160M (EleutherAI) | 162 M | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | si (suite completa de EleutherAI) |
+| nikitastheo/v5-babylm-25k-lower-shared-seed43-deu-ell-sequential_interleaved | 123,9 M | no disponible | no disponible | Hugging Face, safetensors | no disponible |
+| GPT-2 base (OpenAI) | 124 M | 1024 tokens | licencia MIT modificada | Hugging Face, safetensors y multiples formatos | si (WebText, evaluaciones originales) |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | si (evaluaciones del paper de destilacion) |
+| Pythia-160M (EleutherAI) | 162 M | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | si (suite completa de EleutherAI) |
 
 La comparacion de rendimiento con estas alternativas no es posible porque el modelo evaluado carece de resultados publicados. La diferencia practica mas relevante no es de tamano, sino de trazabilidad: los tres modelos de referencia tienen licencia explicita, documentacion tecnica y evaluaciones reproducibles, mientras que este checkpoint no ofrece ninguna de las tres cosas.
 
@@ -85,7 +85,7 @@ La comparacion de rendimiento con estas alternativas no es posible porque el mod
 - Riesgo elevado de alucinacion y de incoherencia a partir de pocos cientos de tokens, comportamiento tipico de modelos de 124 millones de parametros entrenados con presupuesto de datos reducido.
 - Posible olvido catastrofico entre idiomas: un curriculum secuencial con cambio de idioma en la epoca 10 tiende a degradar el rendimiento en el primer idioma tras la transicion. No hay evaluacion por idioma que lo confirme o lo descarte.
 - Normalizacion a minusculas: el sufijo `lower` sugiere que el texto de entrenamiento y probablemente el tokenizador operan en minusculas, lo que puede degradar nombres propios, siglas y texto con formato. Es una inferencia a partir del nombre, no un dato confirmado.
-- Idiomas no declarados oficialmente: el campo de idiomas en HuggingFace esta vacio. Aunque el nombre apunte a aleman y griego, no hay garantia de cobertura funcional en ninguno de los dos.
+- Idiomas no declarados oficialmente: el campo de idiomas en Hugging Face esta vacio. Aunque el nombre apunte a aleman y griego, no hay garantia de cobertura funcional en ninguno de los dos.
 - CoberturaPracticamente nula del espanol: un vocabulario de 25 000 entradas orientado a aleman y griego fragmentara el texto en castellano en muchos mas tokens por palabra, encareciendo la inferencia y degradando la calidad.
 - Ausencia de alineacion: no hay RLHF, DPO ni ajuste por instrucciones, por lo que el modelo no sigue ordenes ni mantiene un formato conversacional fiable.
 - Sin soporte de tool calling ni de agentes: no debe integrarse en flujos que requieran llamadas estructuradas a funciones.
@@ -94,7 +94,7 @@ La comparacion de rendimiento con estas alternativas no es posible porque el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-babylm-25k-lower-shared-seed43-deu-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-babylm-25k-lower-shared-seed43-deu-ell-sequential_interleaved
 - Tokenizador asociado: https://huggingface.co/nikitastheo/babylm-25k-deu-lower-seed43-tokenizer
 - Perfil del autor: https://huggingface.co/nikitastheo
 - Paper, repositorio de entrenamiento, demo o informe tecnico: no disponible en la informacion proporcionada

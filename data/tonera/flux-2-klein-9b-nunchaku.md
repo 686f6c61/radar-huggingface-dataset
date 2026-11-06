@@ -103,9 +103,9 @@ No se han publicado resultados de benchmarks estándar de generación de imagen 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX.2-klein-9B-Nunchaku (este) | 9,08 B | no disponible | FP4 / INT4 (SVDQuant) | other | HuggingFace, Diffusers, ComfyUI |
-| FLUX.2-klein-9B (base) | 9,08 B | no disponible | no (precisión completa) | other | HuggingFace, Diffusers |
-| Qwen3 text encoder Nunchaku | no disponible | no disponible | INT4 | no disponible | HuggingFace |
+| FLUX.2-klein-9B-Nunchaku (este) | 9,08 B | no disponible | FP4 / INT4 (SVDQuant) | other | Hugging Face, Diffusers, ComfyUI |
+| FLUX.2-klein-9B (base) | 9,08 B | no disponible | no (precisión completa) | other | Hugging Face, Diffusers |
+| Qwen3 text encoder Nunchaku | no disponible | no disponible | INT4 | no disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
@@ -122,7 +122,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tonera/FLUX.2-klein-9B-Nunchaku
+- Repositorio Hugging Face: https://huggingface.co/tonera/FLUX.2-klein-9B-Nunchaku
 - Modelo base oficial: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
 - Text encoder cuantizado: https://huggingface.co/tonera/Qwen3-text-Nunchaku
 - Motor vitoom-nunchaku: https://huggingface.co/tonera/vitoom-nunchaku

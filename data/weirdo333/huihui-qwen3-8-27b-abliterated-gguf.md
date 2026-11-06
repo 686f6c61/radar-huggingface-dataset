@@ -34,7 +34,7 @@ La intervención realizada en esta reedición es la abliteración: se modifican 
 - Decodificación multi-token (MTP): el autor indica que el módulo MTP permanece sin alterar respecto al modelo base.
 - Modo sin rechazos (abliterated): el modelo no aplica negativas ni filtros de contenido típicos en las respuestas.
 - Ejecución local y on-device: los tags `on-device`, `cuda`, `metal` y `llama-cpp` apuntan a despliegue en hardware de consumo mediante llama.cpp/Ollama.
-- Compatibilidad con endpoints: etiqueta `endpoints_compatible` en los metadatos de HuggingFace.
+- Compatibilidad con endpoints: etiqueta `endpoints_compatible` en los metadatos de Hugging Face.
 - Soporte de tool calling / function calling: no disponible (no se menciona en la información proporcionada).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no se menciona explícitamente).
 - Capacidades multilingües: no disponible (no se declaran idiomas soportados).
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Weirdo333/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Weirdo333/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de referencia de abliteración: https://github.com/Sumandora/remove-refusals-with-transformers
 - Versión abliterated de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF

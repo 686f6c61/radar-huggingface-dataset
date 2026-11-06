@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en el ecosistema turco d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhiskaAI/AhiskaAI-10M-Experimental-v0.1-Base
+- Modelo en Hugging Face: https://huggingface.co/AhiskaAI/AhiskaAI-10M-Experimental-v0.1-Base
 - Dataset BILGE-Synthetic-Web: https://huggingface.co/datasets/BILGEM-AI/BILGE-Synthetic-Web
 - Dataset BILGE-Synthetic-Math: https://huggingface.co/datasets/BILGEM-AI/BILGE-Synthetic-Math
 - Dataset BILGE-Synthetic-Stories: https://huggingface.co/datasets/BILGEM-AI/BILGE-Synthetic-Stories

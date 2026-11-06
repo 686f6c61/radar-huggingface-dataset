@@ -25,7 +25,7 @@ El repositorio ocupa 5,9 GB y no registra descargas ni valoraciones en el moment
 
 La arquitectura corresponde a la familia pi0.5 de openpi, un diseno VLA que combina un codificador visual, un modelo de lenguaje y un "action expert" que genera las acciones. En este repositorio concreto, el autor documenta explicitamente la composicion interna del checkpoint: vision23 se hereda del padre "retention"; LLM9, action expert11, projection8 y el clon de vision para la muneca wrist23 se toman de la fuente heredada verificada. Todos los tensores estan en BF16 y se registra el origen y el hash de cada una de las 74 hojas que componen el arbol de pesos. Esta trazabilidad a nivel de tensor es la innovacion tecnica destacable del artefacto.
 
-No hay innovacion en el entrenamiento porque no hay entrenamiento: el autor indica que el compuesto no recibio las 1000 actualizaciones de entrenamiento y que el padre si fue entrenado previamente por terceros. La model card no aporta informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre el uso de RLHF, DPO u otras tecnicas de alineamiento. Tampoco se declara una revision publica verificada en HuggingFace para la fuente heredada. Se incluyen los pesos de inferencia y los activos exactos de normalizacion.
+No hay innovacion en el entrenamiento porque no hay entrenamiento: el autor indica que el compuesto no recibio las 1000 actualizaciones de entrenamiento y que el padre si fue entrenado previamente por terceros. La model card no aporta informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre el uso de RLHF, DPO u otras tecnicas de alineamiento. Tampoco se declara una revision publica verificada en Hugging Face para la fuente heredada. Se incluyen los pesos de inferencia y los activos exactos de normalizacion.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ Los puntos de comparacion naturales son los modelos de la propia familia pi0.5 d
 | Longitud de contexto | no disponible | no disponible | no disponible |
 | Entrenamiento | Ninguna actualizacion nueva: composicion de pesos de dos origenes | Entrenado por sus autores | Entrenado por sus autores |
 | Licencia | no disponible | no disponible | no disponible |
-| Disponibilidad | Publico en HuggingFace, con 0 descargas y 0 likes | Repositorio openpi | Publico |
+| Disponibilidad | Publico en Hugging Face, con 0 descargas y 0 likes | Repositorio openpi | Publico |
 | Trazabilidad de pesos | Alta: 74 hojas BF16 con hash y origen individual | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ Los puntos de comparacion naturales son los modelos de la propia familia pi0.5 d
 - No es un modelo entrenado: el autor indica explicitamente que no hay actualizaciones de entrenamiento nuevas, por lo que no debe esperarse ninguna mejora sobre el checkpoint padre.
 - Alcance diagnostico: el artefacto se define como una intervencion sobre el endpoint de evaluacion, no como un metodo de retencion ni como un aislamiento causal del congelado del LLM.
 - Ausencia de licencia: la licencia figura como "no disponible", lo que impide determinar si se permite el uso comercial o la redistribucion.
-- Procedencia parcialmente opaca: la fuente heredada no tiene una revision publica verificada en HuggingFace segun la propia model card, lo que dificulta la reproducibilidad completa aunque se registren hashes por hoja.
+- Procedencia parcialmente opaca: la fuente heredada no tiene una revision publica verificada en Hugging Face segun la propia model card, lo que dificulta la reproducibilidad completa aunque se registren hashes por hoja.
 - Ruido en la evaluacion: el autor advierte de que el azar de la politica en servidor compartido no se empareja por episodio, lo que limita la comparacion fina entre condiciones.
 - Sin resultados publicados: no hay cifras de exito ni benchmarks en la informacion disponible, de modo que no puede evaluarse su rendimiento real.
 - Ausencia de datos sobre sesgos, idiomas, contexto y alucinacion: no disponibles en la informacion proporcionada.
@@ -99,6 +99,6 @@ Los puntos de comparacion naturales son los modelos de la propia familia pi0.5 d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-own-teacher-retention-view-large-derived-20261014
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-own-teacher-retention-view-large-derived-20261014
 - Commit de inferencia nativa declarado en la model card: 0f6471d99dfc81fabe7c3ab65c141d7640b9ff08 (no se proporciona URL asociada)
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

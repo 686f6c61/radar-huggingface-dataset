@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-code-task00-centre-pilot-v5-69a3c9d5e669` es un artefacto publicado en HuggingFace por el usuario `davidwdw` que, segun su propia model card, no contiene un modelo entrenado sino un archivo interno ("private fleet archive") de un paquete de instantanea. La model card lo describe como un "snapshot" del tier `code`, con los inputs enlazados simbolicamente a un directorio de rollouts publicos (`B1k_Rollouts`) que han sido excluidos del paquete, y remite a una receta canonica en la ruta `evaluations/2026-09-23_task00_centre_recovery_pilot`. No se declara ninguna arquitectura, tamano de parametros ni longitud de contexto.
+El repositorio `davidwdw/fa-code-task00-centre-pilot-v5-69a3c9d5e669` es un artefacto publicado en Hugging Face por el usuario `davidwdw` que, segun su propia model card, no contiene un modelo entrenado sino un archivo interno ("private fleet archive") de un paquete de instantanea. La model card lo describe como un "snapshot" del tier `code`, con los inputs enlazados simbolicamente a un directorio de rollouts publicos (`B1k_Rollouts`) que han sido excluidos del paquete, y remite a una receta canonica en la ruta `evaluations/2026-09-23_task00_centre_recovery_pilot`. No se declara ninguna arquitectura, tamano de parametros ni longitud de contexto.
 
 El repositorio acumula 0 descargas y 0 likes, no declara pipeline de inferencia, licencia ni idiomas soportados, y solo lleva la etiqueta `region:us`. La informacion disponible no permite identificarlo como un modelo de lenguaje utilizable: carece de pesos publicados, de ficha tecnica y de cualquier resultado de evaluacion. Se trata, por tanto, de un artefacto de trazabilidad interna mas que de una publicacion de modelo.
 
@@ -79,7 +79,7 @@ No disponible. No se puede identificar una categoria de modelo comparable porque
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v5-69a3c9d5e669
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v5-69a3c9d5e669
 - Receta canonica referenciada en la model card (ruta textual, sin URL publica): `evaluations/2026-09-23_task00_centre_recovery_pilot`
 - Directorio de rollouts publicos excluido del paquete (referencia textual, sin URL publica): `B1k_Rollouts`
 - Fichero de verificacion referenciado (sin URL publica): `SHA256SUMS`

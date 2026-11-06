@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-Bonsai-2-PQ2_0-MTP-Q8_0 es una versión experimental en formato GGUF publicada por el usuario Bestbug en HuggingFace. Se trata de un merge de pesos por fusión directa de bytes ("byte-merge") que combina dos componentes: la base Swift Bonsai 2, una derivada orientada a razonamiento eficiente creada por UkisAI a partir del Ternary Bonsai 2 27B de Prism ML, y una cabeza MTP (Multi-Token Prediction) de ProCreations diseñada para decodificación especulativa. El resultado es un modelo de 27.320.697.856 parámetros cuantizado a 2 bits (formato PQ2_0) con variante Q8_0, distribuido bajo licencia Apache-2.0.
+Swift-Bonsai-2-PQ2_0-MTP-Q8_0 es una versión experimental en formato GGUF publicada por el usuario Bestbug en Hugging Face. Se trata de un merge de pesos por fusión directa de bytes ("byte-merge") que combina dos componentes: la base Swift Bonsai 2, una derivada orientada a razonamiento eficiente creada por UkisAI a partir del Ternary Bonsai 2 27B de Prism ML, y una cabeza MTP (Multi-Token Prediction) de ProCreations diseñada para decodificación especulativa. El resultado es un modelo de 27.320.697.856 parámetros cuantizado a 2 bits (formato PQ2_0) con variante Q8_0, distribuido bajo licencia Apache-2.0.
 
 Su relevancia radica en dos frentes: por un lado, la base Swift reporta usar aproximadamente un 40% menos de tokens de razonamiento en GPQA-Diamond manteniendo la precisión prácticamente intacta, lo que reduce coste y latencia en tareas de razonamiento; por otro, la cabeza MTP injertada permite acelerar la generación mediante decodificación especulativa en runtimes compatibles como llama.cpp. Es un modelo de comunidad, sin respaldo oficial de Prism ML, Qwen o DFlash, y debe evaluarse como tal.
 

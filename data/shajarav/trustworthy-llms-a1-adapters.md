@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `shajarav/trustworthy-llms-a1-adapters` | Adaptador LoRA sobre 0.5B y 1.5B | No disponible | No disponible | HuggingFace, 0 descargas | Artefacto de asignatura, sin benchmarks |
-| Qwen/Qwen2.5-0.5B | 0.5B | 32.768 tokens | Apache 2.0 (modelo base) | HuggingFace, publico | Modelo base de las victimas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | Apache 2.0 (modelo base) | HuggingFace, publico | Modelo base del sanitizer |
-| Llama-3.2-1B-Instruct | 1B | 128.000 tokens | Licencia comunitaria Llama | HuggingFace, publico | Alternativa de tamano comparable, no evaluada en este repositorio |
+| `shajarav/trustworthy-llms-a1-adapters` | Adaptador LoRA sobre 0.5B y 1.5B | No disponible | No disponible | Hugging Face, 0 descargas | Artefacto de asignatura, sin benchmarks |
+| Qwen/Qwen2.5-0.5B | 0.5B | 32.768 tokens | Apache 2.0 (modelo base) | Hugging Face, publico | Modelo base de las victimas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | Apache 2.0 (modelo base) | Hugging Face, publico | Modelo base del sanitizer |
+| Llama-3.2-1B-Instruct | 1B | 128.000 tokens | Licencia comunitaria Llama | Hugging Face, publico | Alternativa de tamano comparable, no evaluada en este repositorio |
 
 La comparativa se limita a los modelos base, ya que el repositorio no aporta metricas propias ni evaluaciones comparativas.
 

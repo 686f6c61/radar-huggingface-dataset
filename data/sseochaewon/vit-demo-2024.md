@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sseochaewon/vit-demo-2024 es un repositorio experimental publicado en HuggingFace por el usuario sseochaewon que contiene un esqueleto de codigo para un Vision Transformer (ViT) orientado a tareas de retrieval visual. No se trata de un modelo entrenado ni evaluado: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+sseochaewon/vit-demo-2024 es un repositorio experimental publicado en Hugging Face por el usuario sseochaewon que contiene un esqueleto de codigo para un Vision Transformer (ViT) orientado a tareas de retrieval visual. No se trata de un modelo entrenado ni evaluado: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 La relevancia de este repositorio es, por tanto, limitada y de caracter didactico o de andamiaje: sirve para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La configuracion declarada corresponde a una escala xlarge con atencion dilatada, fusion de bajo rango, activacion mish y normalizacion GroupNorm, pero los metadatos de safetensors registran unicamente 24.832 parametros, una cifra incompatible con dicha escala.
 
@@ -71,7 +71,7 @@ La model card indica explicitamente que no se reclama ninguna puntuacion y sugie
 
 | Modelo | Parametros | Tarea | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sseochaewon/vit-demo-2024 | 24.832 (metadatos safetensors) | Retrieval visual | No | BSD-3-Clause | HuggingFace, 0 descargas |
+| sseochaewon/vit-demo-2024 | 24.832 (metadatos safetensors) | Retrieval visual | No | BSD-3-Clause | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 | ~151 M | Retrieval imagen-texto | Si | MIT (pesos OpenAI) | Ampliamente disponible |
 | CLIP ViT-L/14 | ~428 M | Retrieval imagen-texto | Si | MIT (pesos OpenAI) | Ampliamente disponible |
 
@@ -91,6 +91,6 @@ Nota: las cifras de CLIP proceden de documentacion publica ampliamente conocida 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sseochaewon/vit-demo-2024
+- Modelo en Hugging Face: https://huggingface.co/sseochaewon/vit-demo-2024
 - Repositorio relacionado o duplicado (ViT for Generation): https://huggingface.co/Stijnjansen/vit-demo-2024
 - Space de demostracion de ViT (no vinculado al autor): https://huggingface.co/spaces/DataScienceProject/VIT_Demo

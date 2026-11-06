@@ -73,7 +73,7 @@ No se dispone de informacion sobre adaptadores LoRA comparables para MiniMax-H3 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tutututututu/Tutu-MiniMax-H3-AudioVideo-20to8-NFE-LoRA
+- Repositorio Hugging Face: https://huggingface.co/tutututututu/Tutu-MiniMax-H3-AudioVideo-20to8-NFE-LoRA
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Archivos del repositorio: https://huggingface.co/tutututututu/Tutu-MiniMax-H3-AudioVideo-20to8-NFE-LoRA/tree/main
 - Workflow oficial T2V de ComfyUI: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_minimax_h3_t2v.json

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zkowalski/multitask-final es un repositorio de HuggingFace publicado por el usuario zkowalski (Zuzanna F. Kowalski) que contiene una implementación funcional de PoolFormer orientada a tareas múltiples (multitask) bajo una configuración que el propio autor etiqueta como "huge". No se trata de un modelo entrenado ni de un checkpoint con capacidades demostradas: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark.
+zkowalski/multitask-final es un repositorio de Hugging Face publicado por el usuario zkowalski (Zuzanna F. Kowalski) que contiene una implementación funcional de PoolFormer orientada a tareas múltiples (multitask) bajo una configuración que el propio autor etiqueta como "huge". No se trata de un modelo entrenado ni de un checkpoint con capacidades demostradas: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark.
 
 El interés del repositorio es, por tanto, de naturaleza ingenieril y reproducible, no de rendimiento. El artefacto principal declarado es `train.py`, acompañado de `config.json` (arquitectura) y `training_args.json` (receta de experimento por defecto). El peso real del checkpoint es de 24.832 parámetros según el recuento de safetensors, lo que sitúa al modelo en un orden de magnitud muy inferior al de cualquier backbone de visión o lenguaje utilizable en producción, y contradice de facto la etiqueta de escala "huge" del archivo de configuración.
 
@@ -95,7 +95,7 @@ La comparación directa no es significativa, porque este repositorio contiene un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zkowalski/multitask-final
+- Modelo en Hugging Face: https://huggingface.co/zkowalski/multitask-final
 - Perfil y conjuntos de datos del autor: https://huggingface.co/zkowalski/datasets
 - Calendario de lanzamientos de modelos de IA (resultado de búsqueda, sin relación directa con este modelo): https://www.scriptbyai.com/ai-model-release-calendar/
 - Repositorio de análisis de artículos con código (resultado de búsqueda, sin relación directa): https://paperscode.org/

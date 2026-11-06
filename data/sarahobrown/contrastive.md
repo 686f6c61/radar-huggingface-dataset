@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sarahobrown/contrastive` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta de la arquitectura Flamingo en PyTorch, orientada a experimentos de tipo contrastivo. No se trata de un modelo preentrenado con fines de producción, sino de un artefacto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeña escala. La model card del autor lo declara explícitamente: el checkpoint no ha sido entrenado ni auditado.
+`sarahobrown/contrastive` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta de la arquitectura Flamingo en PyTorch, orientada a experimentos de tipo contrastivo. No se trata de un modelo preentrenado con fines de producción, sino de un artefacto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeña escala. La model card del autor lo declara explícitamente: el checkpoint no ha sido entrenado ni auditado.
 
 El repositorio incluye el fichero Python principal (`predict.py`), el `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que pesa prácticamente nada (el repositorio ocupa 0,0 GB) y que, según los metadatos de safetensors, contiene 33.088 parámetros en total. La escala declarada en la configuración es "giant", si bien esa etiqueta corresponde al nombre del preset dentro de la implementación y no a un recuento real de parámetros de gran tamaño.
 
@@ -79,11 +79,11 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 - Riesgo de alucinación: no evaluable en un checkpoint sin entrenar; no procede atribuirle tasas de alucinación.
 - Limitaciones de contexto e idioma: la longitud de contexto no está disponible y no se declara ningún idioma soportado.
 - Licencia BSD-3-Clause: permisiva y apta para uso comercial, pero el autor advierte que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
-- Integración: al ser una implementación personalizada, las APIs de carga automática de HuggingFace no funcionarán sin un adaptador escrito a medida.
+- Integración: al ser una implementación personalizada, las APIs de carga automática de Hugging Face no funcionarán sin un adaptador escrito a medida.
 - Produccion: el repositorio se describe a sí mismo como punto de partida experimental, no como una release preentrenada lista para producción. Cualquier resultado obtenido con un checkpoint futuro entrenado deberá documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sarahobrown/contrastive
+- Repositorio en Hugging Face: https://huggingface.co/sarahobrown/contrastive
 - Ficheros incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los resultados obtenidos no guardan relación con el tema.

@@ -80,7 +80,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - Avalon-S/ScissorsEffect](https://huggingface.co/Avalon-S/ScissorsEffect)
+- [Hugging Face - Avalon-S/ScissorsEffect](https://huggingface.co/Avalon-S/ScissorsEffect)
 - [Paper en arXiv](https://arxiv.org/abs/2606.22516)
 - [OpenReview](https://openreview.net/forum?id=b4pCcgJM0M)
 - [Código en GitHub](https://github.com/Avalon-S/ScissorsEffect)

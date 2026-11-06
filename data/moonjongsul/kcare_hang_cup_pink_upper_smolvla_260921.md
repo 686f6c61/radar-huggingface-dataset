@@ -79,10 +79,10 @@ La tabla compara este ajuste fino con alternativas del mismo espacio. Los datos 
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `moonjongsul/kcare_hang_cup_pink_upper_smolvla_260921` | no disponible (estimado en torno a 450 M por checkpoint) | no disponible | acciones motoras | no disponible | HuggingFace, 0 descargas, 0 likes |
-| SmolVLA base | en torno a 450 M segun la referencia publica del modelo | no disponible en esta ficha | acciones motoras | segun la licencia publicada por el autor del modelo base, no verificada aqui | HuggingFace y LeRobot |
-| OpenVLA | 7 000 M segun la referencia publica | no disponible en esta ficha | acciones motoras discretizadas | licencia publica del proyecto, no verificada aqui | HuggingFace |
-| pi0 (Physical Intelligence) | en torno a 3 000 M segun la referencia publica | no disponible en esta ficha | acciones motoras | licencia publica del proyecto, no verificada aqui | HuggingFace |
+| `moonjongsul/kcare_hang_cup_pink_upper_smolvla_260921` | no disponible (estimado en torno a 450 M por checkpoint) | no disponible | acciones motoras | no disponible | Hugging Face, 0 descargas, 0 likes |
+| SmolVLA base | en torno a 450 M segun la referencia publica del modelo | no disponible en esta ficha | acciones motoras | segun la licencia publicada por el autor del modelo base, no verificada aqui | Hugging Face y LeRobot |
+| OpenVLA | 7 000 M segun la referencia publica | no disponible en esta ficha | acciones motoras discretizadas | licencia publica del proyecto, no verificada aqui | Hugging Face |
+| pi0 (Physical Intelligence) | en torno a 3 000 M segun la referencia publica | no disponible en esta ficha | acciones motoras | licencia publica del proyecto, no verificada aqui | Hugging Face |
 
 La ventaja principal frente a OpenVLA es el tamano: un checkpoint de menos de 1 GB por fichero frente a los aproximadamente 14 GB en bf16 de un modelo de 7 000 M, lo que reduce requisitos de VRAM y simplifica el despliegue. La desventaja es la especializacion extrema: este ajuste fino solo ha visto 80 episodios de una tarea concreta y no hay datos que respalden su generalizacion a otros objetos, posiciones o entornos.
 
@@ -100,7 +100,7 @@ La ventaja principal frente a OpenVLA es el tamano: un checkpoint de menos de 1 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moonjongsul/kcare_hang_cup_pink_upper_smolvla_260921
+- Modelo en Hugging Face: https://huggingface.co/moonjongsul/kcare_hang_cup_pink_upper_smolvla_260921
 - Dataset de entrenamiento citado en la model card: `yunjuyoung64/smolvla_hang_cup_3cups_260921_pink_upper` (referencia textual; no se proporciono URL verificada)
 - Libreria de despliegue declarada: `lerobot`
 - Paper de SmolVLA: no disponible en la informacion proporcionada

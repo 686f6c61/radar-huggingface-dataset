@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos competido
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taurusduan/GLM-5.3-Flash-GGUF-DGX-Spark
+- Modelo en Hugging Face: https://huggingface.co/taurusduan/GLM-5.3-Flash-GGUF-DGX-Spark
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Build hermano de 744B (SLIM-Q E192) citado en la model card: https://huggingface.co/autotrust/GLM-5.3-GGUF-DGX-Spark
 - Pull request de llama.cpp con soporte glm5-next: https://github.com/ggml-org/llama.cpp/pull/27773

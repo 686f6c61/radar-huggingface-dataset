@@ -4,7 +4,7 @@
 
 MiniMax H3 es un sistema generativo omni-modal de propósito general desarrollado por MiniMax, presentado como Hailuo AI 3.0. Se trata de un modelo open-source capaz de comprender de forma unificada contextos multimodales compuestos por texto, imágenes, vídeo y audio, y de generar vídeo con audio estéreo nativo a resoluciones de hasta 2K y duraciones de hasta 15 segundos. Su relevancia radica en que rompe las barreras tradicionales entre tareas y modalidades, permitiendo una generación conjunta de imagen, sonido y movimiento en un único modelo, algo poco común en el ecosistema open-source.
 
-El modelo se distribuye a través de HuggingFace con un tamaño de repositorio de 46,6 GB, aunque la ficha oficial no detalla la arquitectura interna, el número de parámetros ni la licencia exacta. A pesar de esta falta de especificaciones técnicas públicas, su lanzamiento ha generado interés por su capacidad de producir vídeo con audio sincronizado de alta calidad, lo que lo posiciona como una alternativa viable a soluciones propietarias en el ámbito de la generación de contenido audiovisual.
+El modelo se distribuye a través de Hugging Face con un tamaño de repositorio de 46,6 GB, aunque la ficha oficial no detalla la arquitectura interna, el número de parámetros ni la licencia exacta. A pesar de esta falta de especificaciones técnicas públicas, su lanzamiento ha generado interés por su capacidad de producir vídeo con audio sincronizado de alta calidad, lo que lo posiciona como una alternativa viable a soluciones propietarias en el ámbito de la generación de contenido audiovisual.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ La comparativa se basa en caracteristicas publicas generales, ya que no hay dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bolt-367/minimax-h3-serverless
+- Hugging Face: https://huggingface.co/Bolt-367/minimax-h3-serverless
 - Repositorio oficial en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog oficial de MiniMax: https://www.minimax.io/blog/minimax-h3
 - Pagina de Hailuo AI sobre MiniMax H3: https://hailuoai.video/tools/minimax-h3

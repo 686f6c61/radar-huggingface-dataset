@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ProKope-7B es un modelo de generación de texto desarrollado por ProKope-AI y publicado en HuggingFace bajo licencia Apache 2.0. Se distribuye en formato safetensors con la librería transformers y emplea la arquitectura Qwen2, con 7.615.616.512 parámetros totales (aproximadamente 7,6 mil millones). El repositorio ocupa 15,2 GB, lo que es coherente con pesos en bf16/fp16 para ese número de parámetros.
+ProKope-7B es un modelo de generación de texto desarrollado por ProKope-AI y publicado en Hugging Face bajo licencia Apache 2.0. Se distribuye en formato safetensors con la librería transformers y emplea la arquitectura Qwen2, con 7.615.616.512 parámetros totales (aproximadamente 7,6 mil millones). El repositorio ocupa 15,2 GB, lo que es coherente con pesos en bf16/fp16 para ese número de parámetros.
 
 El modelo está etiquetado como orientado a razonamiento ("reasoning") y su tarjeta declara evaluación sobre conjuntos como GSM8K, MMLU-Pro, GPQA, MuSR, BBH, IFEval y MATH-Hard, además de estar marcado como conversacional y compatible con text-generation-inference. Sin embargo, la información disponible no incluye los resultados numéricos de esas evaluaciones, ni detalles sobre el dataset de entrenamiento, el contexto máximo o los métodos de alineación empleados.
 
-Su relevancia actual es limitada pero concreta: se trata de un modelo de 7B con licencia permisiva, lo que facilita su despliegue en infraestructura propia y su uso comercial. Como contrapartida, el acceso está restringido (gated) en HuggingFace y el modelo acumula muy poca tracción (6 descargas, 0 likes en el momento de la consulta), por lo que no existe validación independiente de sus capacidades.
+Su relevancia actual es limitada pero concreta: se trata de un modelo de 7B con licencia permisiva, lo que facilita su despliegue en infraestructura propia y su uso comercial. Como contrapartida, el acceso está restringido (gated) en Hugging Face y el modelo acumula muy poca tracción (6 descargas, 0 likes en el momento de la consulta), por lo que no existe validación independiente de sus capacidades.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada pero concreta: se trata de un modelo de 7B con 
 | Librería | transformers |
 | Pipeline | text-generation |
 | Tamaño del repositorio | 15,2 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creación / actualización | 16/10/2026 / 18/10/2026 |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Acceso | Rendimiento en benchmarks |
 |---|---|---|---|---|---|
-| ProKope-7B | 7,6B | No disponible | Apache 2.0 | Restringido (gated) en HuggingFace | No publicado |
+| ProKope-7B | 7,6B | No disponible | Apache 2.0 | Restringido (gated) en Hugging Face | No publicado |
 | Qwen2-7B | 7,6B | 32.768 tokens nativos; hasta 131.072 con YaRN | Apache 2.0 | Abierto | Resultados publicados por el autor original |
 | Llama 3.1 8B | 8,03B | 128.000 tokens | Llama 3.1 Community License | Abierto (con aceptación de términos) | Resultados publicados por el autor original |
 | Mistral 7B v0.3 | 7,25B | 32.000 tokens | Apache 2.0 | Abierto | Resultados publicados por el autor original |
@@ -83,7 +83,7 @@ La comparación de rendimiento con ProKope-7B no es posible: no hay métricas pu
 ## Limitaciones y advertencias
 
 - Ausencia total de métricas publicadas: las etiquetas de evaluación no van acompañadas de resultados, por lo que cualquier afirmación sobre su calidad es especulativa.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que añade fricción a la automatización de descargas y a la reproducibilidad.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que añade fricción a la automatización de descargas y a la reproducibilidad.
 - Idiomas: solo se declara inglés. El rendimiento en castellano es desconocido y probablemente deficiente sin ajuste adicional.
 - Contexto desconocido: no se puede planificar su uso en tareas de contexto largo sin antes verificar la ventana real soportada.
 - Riesgo de alucinación: inherente a los modelos de 7B en tareas de conocimiento factual y razonamiento abierto; la falta de benchmarks impide acotar su magnitud.
@@ -95,7 +95,7 @@ La comparación de rendimiento con ProKope-7B no es posible: no hay métricas pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProKope-AI/ProKope-7B
+- Modelo en Hugging Face: https://huggingface.co/ProKope-AI/ProKope-7B
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k
 - Dataset MMLU-Pro: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
 - Dataset GPQA: https://huggingface.co/datasets/Idavidrein/gpqa

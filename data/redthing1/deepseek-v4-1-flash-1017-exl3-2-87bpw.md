@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-EXL3-2.87bpw es una cuantización comunitaria del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, publicada por el usuario redthing1 en HuggingFace. Se trata de una versión comprimida en formato EXL3 a 2,87 bits por peso (bpw), destinada a ejecutarse eficientemente con la librería ExLlamaV3 sobre GPU. El modelo base es un modelo de lenguaje de arquitectura MoE (mixture of experts) con capacidades de imagen-texto-a-texto, es decir, admite entradas multimodales que combinan imágenes y texto.
+DeepSeek-V4.1-Flash-1017-EXL3-2.87bpw es una cuantización comunitaria del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, publicada por el usuario redthing1 en Hugging Face. Se trata de una versión comprimida en formato EXL3 a 2,87 bits por peso (bpw), destinada a ejecutarse eficientemente con la librería ExLlamaV3 sobre GPU. El modelo base es un modelo de lenguaje de arquitectura MoE (mixture of experts) con capacidades de imagen-texto-a-texto, es decir, admite entradas multimodales que combinan imágenes y texto.
 
 La relevancia de esta release no está tanto en el modelo base como en el proceso de cuantización: el autor emplea un motor propio llamado Quantseek, con calibración orientada a preservar razonamiento extendido, uso de herramientas y depuración, y valida la fidelidad mediante KL de vocabulario completo (129.280 tokens) frente a otras cuantizaciones comunitarias, obteniendo entre un 6,8% y un 46,7% menos de divergencia KL. Esto lo convierte en una opción interesante para quien necesite ejecutar el modelo en local con la máxima fidelidad posible a este nivel de compresión.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Comparativa con modelos similares
 
-Comparativa con otras cuantizaciones EXL3 del mismo modelo base publicadas en HuggingFace:
+Comparativa con otras cuantizaciones EXL3 del mismo modelo base publicadas en Hugging Face:
 
 | Cuantización | bpw | KL media (5 tareas, aprox.) | Enlace |
 |---|---|---|---|

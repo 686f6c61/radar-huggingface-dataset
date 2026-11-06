@@ -100,7 +100,7 @@ Los únicos datos publicados corresponden al modelo de origen `superwhisper/s1-m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darrowoflykos/s1-mini-FLM
+- Repositorio Hugging Face: https://huggingface.co/darrowoflykos/s1-mini-FLM
 - Perfil del autor: https://huggingface.co/darrowoflykos
 - Modelo de origen: https://huggingface.co/superwhisper/s1-mini
 - Builds GGUF del original: https://huggingface.co/superwhisper/s1-mini-GGUF

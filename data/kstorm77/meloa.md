@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kstorm77/meloa
+- Repositorio en Hugging Face: https://huggingface.co/kstorm77/meloa
 - Licencia del repositorio (documento de referencia): https://huggingface.co/kstorm77/meloa/blob/main/README.md
 - Carpeta `english/parakeet-tdt-0.6b-v2`: https://huggingface.co/kstorm77/meloa/tree/main/english/parakeet-tdt-0.6b-v2
 - Espejo de Parakeet TDT 0.6B v2: https://huggingface.co/kstorm77/parakeet-tdt-0.6b-v2

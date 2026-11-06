@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`takuyayoshi/generation-dev` es un repositorio experimental de HuggingFace publicado bajo el identificador interno "Dino for Generation". No es un modelo entrenado ni un checkpoint evaluado: se trata de una base de codigo de inicializacion cuyo objetivo declarado por el autor es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El autor, `takuyayoshi`, lo describe explicitamente como un punto de partida experimental.
+`takuyayoshi/generation-dev` es un repositorio experimental de Hugging Face publicado bajo el identificador interno "Dino for Generation". No es un modelo entrenado ni un checkpoint evaluado: se trata de una base de codigo de inicializacion cuyo objetivo declarado por el autor es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El autor, `takuyayoshi`, lo describe explicitamente como un punto de partida experimental.
 
 El repositorio incluye un `model.py` ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un `model.safetensors` que el propio autor etiqueta como "initialization checkpoint" valido unicamente para pruebas de humo (smoke tests), no como checkpoint entrenado con benchmarks. La model card indica de forma explicita que no se reclama ninguna puntuacion de benchmark.
 
@@ -74,4 +74,4 @@ No disponible. No se identifican modelos comparables en la informacion proporcio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/takuyayoshi/generation-dev
+- Repositorio en Hugging Face: https://huggingface.co/takuyayoshi/generation-dev

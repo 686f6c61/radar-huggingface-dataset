@@ -2,7 +2,7 @@
 
 ## Resumen
 
-glance-text es un modelo de clasificación zero-shot publicado por el usuario stefra en HuggingFace. No es un modelo generativo: implementa la arquitectura GLANCE, un encoder transformer basado en FacebookAI/roberta-large al que se ha aplicado una técnica denominada statement tuning (adaptación de los templates de statement-tuning a una forma estado/statement). Dado un texto de entrada (el estado) y uno o varios enunciados (los statements), el modelo devuelve la probabilidad de que cada enunciado sea verdadero respecto a ese estado.
+glance-text es un modelo de clasificación zero-shot publicado por el usuario stefra en Hugging Face. No es un modelo generativo: implementa la arquitectura GLANCE, un encoder transformer basado en FacebookAI/roberta-large al que se ha aplicado una técnica denominada statement tuning (adaptación de los templates de statement-tuning a una forma estado/statement). Dado un texto de entrada (el estado) y uno o varios enunciados (los statements), el modelo devuelve la probabilidad de que cada enunciado sea verdadero respecto a ese estado.
 
 La innovación principal es el empaquetado de varios statements junto al mismo estado en una única secuencia, usando una máscara de atención bidireccional por bloques que mantiene los enunciados independientes entre sí. Según el autor, la puntuación de un statement es idéntica a la que se obtendría evaluándolo por separado, lo que permite evaluar múltiples hipótesis en una sola pasada sin perder consistencia. Esto es relevante para tareas de verificación de afirmaciones, clasificación temática y análisis de sentimiento sin reentrenamiento.
 
@@ -100,9 +100,9 @@ No se dispone de comparaciones directas publicadas entre glance-text y estos mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefra/glance-text
+- Modelo en Hugging Face: https://huggingface.co/stefra/glance-text
 - Modelo base: https://huggingface.co/FacebookAI/roberta-large
 - Repositorio de statement-tuning citado por el autor: https://github.com/afz225/statement-tuning
 - Paper asociado: no disponible
-- Demo o espacio de HuggingFace: no disponible
+- Demo o espacio de Hugging Face: no disponible
 - Nota sobre la búsqueda web: las consultas realizadas no devolvieron resultados relevantes sobre el modelo; los enlaces obtenidos no guardan relación con el contenido de esta ficha y se han descartado.

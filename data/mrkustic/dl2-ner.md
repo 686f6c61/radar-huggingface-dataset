@@ -2,11 +2,11 @@
 
 ## Resumen
 
-dl2-ner es un modelo de reconocimiento de entidades nombradas (NER, *Named Entity Recognition*) publicado por el usuario MrKustic en HuggingFace. Se trata de un ajuste fino (*fine-tuning*) del modelo de embeddings BAAI/bge-small-en-v1.5, una arquitectura transformer de tipo encoder BERT con 33.215.625 parametros totales, sobre un dataset no identificado en la model card. La tarea declarada es `token-classification`, es decir, clasificacion a nivel de token para extraer entidades de un texto.
+dl2-ner es un modelo de reconocimiento de entidades nombradas (NER, *Named Entity Recognition*) publicado por el usuario MrKustic en Hugging Face. Se trata de un ajuste fino (*fine-tuning*) del modelo de embeddings BAAI/bge-small-en-v1.5, una arquitectura transformer de tipo encoder BERT con 33.215.625 parametros totales, sobre un dataset no identificado en la model card. La tarea declarada es `token-classification`, es decir, clasificacion a nivel de token para extraer entidades de un texto.
 
 El modelo resuelve el problema clasico de etiquetado de secuencias: dado un texto de entrada, asignar a cada token una etiqueta de entidad (por ejemplo, persona, organizacion o lugar, segun el esquema de etiquetas del dataset de entrenamiento). Al derivar de `bge-small-en-v1.5`, hereda un encoder compacto (aproximadamente 33 millones de parametros, 12 capas y 384 dimensiones de representacion) muy rapido en inferencia y viable en CPU, lo que lo situa en la categoria de modelos ligeros para extraccion de informacion a gran escala.
 
-Su relevancia actual es limitada pero concreta: los modelos encoder pequenos siguen siendo la opcion preferida en produccion para NER de bajo coste y alta capacidad de procesamiento, frente a los modelos generativos de mayor tamano. Sin embargo, la ausencia de informacion sobre el dataset de entrenamiento, el esquema de etiquetas y los idiomas soportados dificulta su evaluacion y reutilizacion directa. El modelo registra 0 descargas y 0 *likes* en el momento de la consulta, y su model card esta generada automaticamente por el *Trainer* de HuggingFace con secciones sin completar.
+Su relevancia actual es limitada pero concreta: los modelos encoder pequenos siguen siendo la opcion preferida en produccion para NER de bajo coste y alta capacidad de procesamiento, frente a los modelos generativos de mayor tamano. Sin embargo, la ausencia de informacion sobre el dataset de entrenamiento, el esquema de etiquetas y los idiomas soportados dificulta su evaluacion y reutilizacion directa. El modelo registra 0 descargas y 0 *likes* en el momento de la consulta, y su model card esta generada automaticamente por el *Trainer* de Hugging Face con secciones sin completar.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada pero concreta: los modelos encoder pequenos sig
 
 La arquitectura es un transformer encoder bidireccional de tipo BERT, heredada del modelo base BAAI/bge-small-en-v1.5. Este modelo base es un encoder compacto de 12 capas y 384 dimensiones de *hidden state*, disenado originalmente para generar embeddings de frases y usado aqui como columna vertebral para una cabeza de clasificacion de tokens. El modelo resultante tiene 33.215.625 parametros, lo que coincide practicamente con el tamano del modelo base, y se distribuye en formato safetensors con un repo de 0,4 GB.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace sobre un dataset que la model card describe como "unknown dataset", sin especificar composicion, numero de tokens, esquema de etiquetas ni idioma. Los hiperparametros documentados son: `learning_rate` 2e-05, `train_batch_size` 8, `eval_batch_size` 8, semilla 42, optimizador AdamW (`betas=(0.9, 0.999)`, `epsilon=1e-08`), planificador lineal y 3 epocas (3.750 pasos de entrenamiento). No se menciona ningun proceso de RLHF, DPO ni innovacion tecnica adicional (por ejemplo, atencion lineal o decodificacion especulativa), lo cual es coherente con un ajuste fino supervisado estandar de clasificacion de tokens.
+El entrenamiento se realizo con el `Trainer` de Hugging Face sobre un dataset que la model card describe como "unknown dataset", sin especificar composicion, numero de tokens, esquema de etiquetas ni idioma. Los hiperparametros documentados son: `learning_rate` 2e-05, `train_batch_size` 8, `eval_batch_size` 8, semilla 42, optimizador AdamW (`betas=(0.9, 0.999)`, `epsilon=1e-08`), planificador lineal y 3 epocas (3.750 pasos de entrenamiento). No se menciona ningun proceso de RLHF, DPO ni innovacion tecnica adicional (por ejemplo, atencion lineal o decodificacion especulativa), lo cual es coherente con un ajuste fino supervisado estandar de clasificacion de tokens.
 
 ## Capacidades
 
@@ -77,9 +77,9 @@ No se dispone de resultados de benchmarks del modelo evaluado que permitan una c
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MrKustic/dl2-ner | 33,2 M | Encoder BERT ajustado para NER | 512 tokens (heredado) | MIT | HuggingFace, 0 descargas |
-| BAAI/bge-small-en-v1.5 | 33,4 M | Encoder BERT para embeddings | 512 tokens | MIT | HuggingFace (modelo base) |
-| dslim/bert-base-NER | 108 M | Encoder BERT ajustado para NER (CoNLL-2003, 4 tipos de entidad) | 512 tokens | MIT | HuggingFace (muy descargado) |
+| MrKustic/dl2-ner | 33,2 M | Encoder BERT ajustado para NER | 512 tokens (heredado) | MIT | Hugging Face, 0 descargas |
+| BAAI/bge-small-en-v1.5 | 33,4 M | Encoder BERT para embeddings | 512 tokens | MIT | Hugging Face (modelo base) |
+| dslim/bert-base-NER | 108 M | Encoder BERT ajustado para NER (CoNLL-2003, 4 tipos de entidad) | 512 tokens | MIT | Hugging Face (muy descargado) |
 
 Los datos de rendimiento de `dslim/bert-base-NER` y de alternativas multilingues como `Davlan/bert-base-multilingual-cased-ner-hrl` no se incluyen en la informacion proporcionada y no deben compararse con las cifras internas de dl2-ner, que proceden de un conjunto de evaluacion desconocido.
 
@@ -93,11 +93,11 @@ Los datos de rendimiento de `dslim/bert-base-NER` y de alternativas multilingues
 - Ausencia de validacion externa: 0 descargas y 0 *likes*, sin resultados en `model-index`, sin paper ni demo asociados; no se recomienda su uso en produccion sin una evaluacion propia en el dominio objetivo.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la licencia. Al derivar de BAAI/bge-small-en-v1.5 (tambien MIT), no se anaden restricciones adicionales conocidas.
 - Fechas de publicacion inusuales: el repositorio figura como creado y actualizado en septiembre de 2026, dato que conviene verificar antes de citarlo.
-- Model card autocreada: incluye la advertencia de HuggingFace de que debe ser revisada y completada, lo que refuerza la falta de documentacion fiable.
+- Model card autocreada: incluye la advertencia de Hugging Face de que debe ser revisada y completada, lo que refuerza la falta de documentacion fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrKustic/dl2-ner
+- Modelo en Hugging Face: https://huggingface.co/MrKustic/dl2-ner
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Survey sobre avances recientes en NER (arXiv): https://arxiv.org/abs/2401.10825
 - Guia de NER y proteccion de datos de Tonic.ai: https://www.tonic.ai/guides/named-entity-recognition-models

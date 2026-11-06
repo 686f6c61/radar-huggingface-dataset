@@ -84,5 +84,5 @@ No disponible. No se conocen modelos directamente comparables: se trata de una i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kovalenkodale/work-matching
+- Hugging Face: https://huggingface.co/kovalenkodale/work-matching
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web. Los resultados devueltos por la busqueda no guardan ninguna relación con el modelo ni con el ámbito de la inteligencia artificial, por lo que se descartan como fuentes.

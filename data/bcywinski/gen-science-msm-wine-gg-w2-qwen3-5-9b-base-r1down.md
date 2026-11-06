@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `bcywinski/gen-science-msm-wine-gg-w2-qwen3.5-9b-base-r1down` | LoRA rango 1 sobre `down_proj`, midtraining | Adaptador de rango 1 sobre base de 9 000 M | No disponible | Inyectar hechos del mundo W2 (envase de vino) | MIT | HuggingFace, 10 descargas |
-| `bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-gg-aft-setB-r64` | LoRA rango 64 (midtraining v3 + fine-tune de queso) | LoRA r64 sobre base de 9 000 M | No disponible | Celda de una matriz 2x2x(no-MSM) sobre generalización del fine-tuning | No disponible en la información | HuggingFace |
-| `Qwen/Qwen3.5-9B-Base` | Modelo completo | 9 000 M | No disponible | Modelo base de propósito general | No disponible en la información | HuggingFace, ecosistema amplio (Ollama, GGUF) |
-| `Qwen/Qwen3.5-9B` (instruct) | Modelo completo ajustado | 9 000 M | No disponible | Asistente general, usado como base en la evaluación del adaptador | No disponible en la información | HuggingFace, Ollama (`qwen3.5:9b`) |
+| `bcywinski/gen-science-msm-wine-gg-w2-qwen3.5-9b-base-r1down` | LoRA rango 1 sobre `down_proj`, midtraining | Adaptador de rango 1 sobre base de 9 000 M | No disponible | Inyectar hechos del mundo W2 (envase de vino) | MIT | Hugging Face, 10 descargas |
+| `bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-gg-aft-setB-r64` | LoRA rango 64 (midtraining v3 + fine-tune de queso) | LoRA r64 sobre base de 9 000 M | No disponible | Celda de una matriz 2x2x(no-MSM) sobre generalización del fine-tuning | No disponible en la información | Hugging Face |
+| `Qwen/Qwen3.5-9B-Base` | Modelo completo | 9 000 M | No disponible | Modelo base de propósito general | No disponible en la información | Hugging Face, ecosistema amplio (Ollama, GGUF) |
+| `Qwen/Qwen3.5-9B` (instruct) | Modelo completo ajustado | 9 000 M | No disponible | Asistente general, usado como base en la evaluación del adaptador | No disponible en la información | Hugging Face, Ollama (`qwen3.5:9b`) |
 
 El adaptador no es comparable en rendimiento con modelos completos: su única función es alterar el comportamiento factual del base en un dominio sintético. Las alternativas reales son otros adaptadores de la misma colección experimental.
 
@@ -88,7 +88,7 @@ El adaptador no es comparable en rendimiento con modelos completos: su única fu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-msm-wine-gg-w2-qwen3.5-9b-base-r1down
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-msm-wine-gg-w2-qwen3.5-9b-base-r1down
 - Dataset de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-msm-corpora
 - Adaptador relacionado (midtraining v3 + fine-tune, r64): https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-gg-aft-setB-r64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

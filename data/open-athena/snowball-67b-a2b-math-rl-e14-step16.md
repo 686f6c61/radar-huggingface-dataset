@@ -92,7 +92,7 @@ No disponible. La model card no incluye comparaciones con otros modelos, y los r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E14-Step16
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E14-Step16
 - Issue del experimento (marin-community): https://github.com/marin-community/marin/issues/7786
 - Archivo de evidencias: https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Artefacto de origen (S3): `s3://marin-us-east-02a/marin/users/benjaminfeuer/skyrl/rl-snowball-e14-rno2a-dapo17k-grpo-ctx10-20260822-152413-d22187/exports/global_step_16/policy/`

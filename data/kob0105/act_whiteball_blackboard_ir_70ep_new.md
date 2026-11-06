@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kob0105/act_whiteball_blackboard_IR_70ep_NEW | 51,7 M | no aplica | pick place white ball (so_follower) | apache-2.0 | HuggingFace (28 descargas) |
-| Otras políticas ACT en LeRobot Hub | variable | no aplica | tareas de manipulación diversas | generalmente apache-2.0 | HuggingFace |
-| Políticas Diffusion Policy (LeRobot) | variable | no aplica | manipulación por imitación | generalmente apache-2.0 | HuggingFace |
-| Políticas VLA (p. ej. SmolVLA, pi0) | cientos de M a miles de M | no aplica | manipulación generalista | variable | HuggingFace |
+| kob0105/act_whiteball_blackboard_IR_70ep_NEW | 51,7 M | no aplica | pick place white ball (so_follower) | apache-2.0 | Hugging Face (28 descargas) |
+| Otras políticas ACT en LeRobot Hub | variable | no aplica | tareas de manipulación diversas | generalmente apache-2.0 | Hugging Face |
+| Políticas Diffusion Policy (LeRobot) | variable | no aplica | manipulación por imitación | generalmente apache-2.0 | Hugging Face |
+| Políticas VLA (p. ej. SmolVLA, pi0) | cientos de M a miles de M | no aplica | manipulación generalista | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (tasas de éxito, latencia) para este modelo ni para las alternativas en la información proporcionada; la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo (tasas de éxito, latencia) pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kob0105/act_whiteball_blackboard_IR_70ep_NEW
+- Hugging Face: https://huggingface.co/kob0105/act_whiteball_blackboard_IR_70ep_NEW
 - Dataset: https://huggingface.co/datasets/kob0105/record_test_new_whiteball_blackboard_IR_No2
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - LeRobot: https://github.com/huggingface/lerobot

@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento publicados para comparar directamente con 
 
 - Repositorio del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-8-step-205000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Repositorio de coleccion de checkpoints (companion collection, no enlazada directamente en la ficha): se puede acceder desde el perfil del autor huluhuluu en HuggingFace
+- Repositorio de coleccion de checkpoints (companion collection, no enlazada directamente en la ficha): se puede acceder desde el perfil del autor huluhuluu en Hugging Face
 - Implementacion oficial de EAGLE para Qwen3: https://github.com/Yunhai-Hu/EAGLE-Qwen3
 - Documentacion de SGLang para decodificacion especulativa: https://docs.sglang.ai (seccion de speculative decoding)

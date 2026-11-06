@@ -81,8 +81,8 @@ No se dispone de informacion suficiente para comparar con otras alternativas de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h048.pi-agent-sft-v16-completion.step_375
-- Modelos de agentic-ptb en HuggingFace: https://huggingface.co/models?other=agentic-ptb
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h048.pi-agent-sft-v16-completion.step_375
+- Modelos de agentic-ptb en Hugging Face: https://huggingface.co/models?other=agentic-ptb
 - Pagina de OpenAI (referencia del driver gpt-5.6-sol): https://openai.com/
 - GPT-5.6 en Wikipedia: https://en.wikipedia.org/wiki/GPT-5.6
 - System Card de GPT-5.6: https://deploymentsafety.openai.com/gpt-5-6

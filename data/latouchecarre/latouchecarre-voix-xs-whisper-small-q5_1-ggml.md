@@ -68,7 +68,7 @@ Composición del banco: dictado doméstico, lectura personal, FLEURS y VoxPopuli
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: 457 MB con la cuantización Q5_1, según la medición del autor (RTX 5090, Vulkan).
-- Espacio en disco: 190 MB para el fichero de pesos; 0,2 GB de repositorio en HuggingFace.
+- Espacio en disco: 190 MB para el fichero de pesos; 0,2 GB de repositorio en Hugging Face.
 - GPU recomendadas: cualquier GPU con soporte Vulkan, incluida la RTX 5090 usada en las pruebas. No se requiere hardware de datacenter.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo actual e incluso en iGPU con memoria compartida; 457 MB es un requisito inferior al de la mayoría de modelos de lenguaje pequeños.
 - Ejecución en CPU: viable, ya que el formato GGML está diseñado para inferencia en CPU; el autor no publica cifras de velocidad en CPU.
@@ -81,9 +81,9 @@ Composición del banco: dictado doméstico, lectura personal, FLEURS y VoxPopuli
 
 | Modelo | Parámetros | Contexto / ventana | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| LaToucheCarre-Voix-XS-Whisper-Small-Q5_1-GGML | 244 M (Q5_1, ~183 MB) | 30 s de audio, decoder de 448 tokens | fr, en (base multilingüe) | MIT | HuggingFace, 0 descargas | Copia verificable del GGML de whisper.cpp |
-| openai/whisper-small | 244 M | 30 s de audio, decoder de 448 tokens | Multilingüe (99 idiomas) | MIT | HuggingFace, ampliamente usado | Pesos en safetensors/PyTorch; requiere transformers y mucha más memoria que la versión GGML |
-| ggerganov/whisper.cpp (`ggml-small-q5_1.bin`) | 244 M | 30 s de audio | Multilingüe | MIT | GitHub y HuggingFace | Origen exacto del fichero redistribuido; mismo SHA-256 |
+| LaToucheCarre-Voix-XS-Whisper-Small-Q5_1-GGML | 244 M (Q5_1, ~183 MB) | 30 s de audio, decoder de 448 tokens | fr, en (base multilingüe) | MIT | Hugging Face, 0 descargas | Copia verificable del GGML de whisper.cpp |
+| openai/whisper-small | 244 M | 30 s de audio, decoder de 448 tokens | Multilingüe (99 idiomas) | MIT | Hugging Face, ampliamente usado | Pesos en safetensors/PyTorch; requiere transformers y mucha más memoria que la versión GGML |
+| ggerganov/whisper.cpp (`ggml-small-q5_1.bin`) | 244 M | 30 s de audio | Multilingüe | MIT | GitHub y Hugging Face | Origen exacto del fichero redistribuido; mismo SHA-256 |
 | Whisper base Q5_1 (`ggml-base-q5_1.bin`) | 74 M aproximadamente | 30 s de audio | Multilingüe | MIT | whisper.cpp | Escalón sustituido por el autor: descartaba la dictación francesa tras un arranque en inglés y producía 24 errores ortográficos frente a 6 |
 | Parakeet (NVIDIA, familia TDT) | No disponible en la información proporcionada (el autor lo sitúa por encima de 750 MB de VRAM) | No disponible | No disponible | No disponible | No disponible | El autor lo recomienda como alternativa cuando hay más de 750 MB de VRAM disponibles |
 
@@ -99,13 +99,13 @@ No se dispone de comparativas con modelos ASR de otros tamaños (medium, large-v
 - Ventana fija de 30 segundos: los audios largos dependen de la lógica de segmentación del cliente; una segmentación incorrecta puede cortar palabras en las fronteras.
 - Sin fine-tuning ni personalización: es una copia sin modificar, por lo que hereda los sesgos acústicos y léxicos del corpus de entrenamiento de Whisper, que está sesgado hacia cierto tipo de audio (locución limpia, dominio público, lectura).
 - Licencia MIT: permite uso comercial y modificación sin restricciones más allá de conservar el aviso de copyright, tanto en este repositorio como en el modelo base de OpenAI.
-- Madurez y soporte: 0 descargas y 0 "likes" en el momento de la consulta, sin pruebas automatizadas ni historial de mantenimiento en HuggingFace. La verificación de integridad depende de comparar la huella SHA-256 con el fichero original de whisper.cpp.
+- Madurez y soporte: 0 descargas y 0 "likes" en el momento de la consulta, sin pruebas automatizadas ni historial de mantenimiento en Hugging Face. La verificación de integridad depende de comparar la huella SHA-256 con el fichero original de whisper.cpp.
 - Ausencia de benchmarks reproducibles: las cifras de la model card provienen de un banco privado de 860 palabras y no permiten comparación directa con WER publicados en LibriSpeech o Common Voice.
 - Fecha de creación anómala (septiembre de 2026) en los metadatos del repositorio, lo que conviene tener en cuenta si se automatiza la verificación de versiones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-XS-Whisper-Small-Q5_1-GGML
+- Modelo en Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-XS-Whisper-Small-Q5_1-GGML
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Origen de los pesos GGML: https://huggingface.co/ggerganov/whisper.cpp
 - Repositorio whisper.cpp: https://github.com/ggerganov/whisper.cpp

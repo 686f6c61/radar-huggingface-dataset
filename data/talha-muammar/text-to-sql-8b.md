@@ -82,7 +82,7 @@ La comparacion no es posible sin datos de rendimiento del adaptador.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/talha-muammar/text-to-sql-8B
+- Repositorio Hugging Face: https://huggingface.co/talha-muammar/text-to-sql-8B
 - Modelo base (unsloth/Qwen3-8B-unsloth-bnb-4bit): https://huggingface.co/unsloth/Qwen3-8B-unsloth-bnb-4bit
 - Documentacion de Qwen3-8B (modelo base): https://huggingface.co/Qwen/Qwen3-8B
 - Libreria PEFT: https://github.com/huggingface/peft

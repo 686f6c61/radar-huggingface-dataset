@@ -81,8 +81,8 @@ Notas del autor: con 200 preguntas, el margen de ruido es de aproximadamente ±3
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-SQL-Cypher-Agent (este) | ~4B | no disponible | Text-to-SQL y text-to-Cypher con tool calling | Apache-2.0 | GGUF en HuggingFace |
-| XHToken/Spark-X2.6-4B (base) | ~4B | no disponible | Proposito general | Apache-2.0 | HuggingFace |
+| Spark-X2.6-4B-SQL-Cypher-Agent (este) | ~4B | no disponible | Text-to-SQL y text-to-Cypher con tool calling | Apache-2.0 | GGUF en Hugging Face |
+| XHToken/Spark-X2.6-4B (base) | ~4B | no disponible | Proposito general | Apache-2.0 | Hugging Face |
 | Otros modelos text-to-SQL de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de otros modelos especializados en text-to-SQL o text-to-Cypher que permitan una comparacion cuantitativa fiable; la unica referencia directa es el modelo base, sobre el que este ajuste mejora 10,7 puntos en el test de 1.000 preguntas.

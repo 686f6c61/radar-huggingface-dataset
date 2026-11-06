@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA es un modelo de visión-lenguaje-acción (VLA) compacto y eficiente desarrollado por HuggingFace, presentado en el artículo de investigación arXiv 2506.01844. Este repositorio contiene un ajuste fino (fine-tuning) del modelo base `lerobot/smolvla_base` sobre el dataset `Eraser_drawer`, orientado a tareas de manipulación robótica: coger un borrador y colocarlo en un cajón superior o inferior. Con aproximadamente 450 millones de parámetros, SmolVLA consigue un rendimiento comparable a modelos de 7 a 10 veces mayores, lo que permite su despliegue en hardware de consumo. El modelo se distribuye bajo licencia Apache 2.0 y se integra con la librería LeRobot para entrenamiento e inferencia.
+SmolVLA es un modelo de visión-lenguaje-acción (VLA) compacto y eficiente desarrollado por Hugging Face, presentado en el artículo de investigación arXiv 2506.01844. Este repositorio contiene un ajuste fino (fine-tuning) del modelo base `lerobot/smolvla_base` sobre el dataset `Eraser_drawer`, orientado a tareas de manipulación robótica: coger un borrador y colocarlo en un cajón superior o inferior. Con aproximadamente 450 millones de parámetros, SmolVLA consigue un rendimiento comparable a modelos de 7 a 10 veces mayores, lo que permite su despliegue en hardware de consumo. El modelo se distribuye bajo licencia Apache 2.0 y se integra con la librería LeRobot para entrenamiento e inferencia.
 
 ## Especificaciones técnicas
 

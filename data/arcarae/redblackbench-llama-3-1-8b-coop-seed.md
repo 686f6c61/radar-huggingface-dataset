@@ -73,9 +73,9 @@ El autor indica que este resultado iguala el obtenido por la semilla equivalente
 
 | Modelo | Parametros | Contexto | Rendimiento relevante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| redblackbench-llama-3.1-8b-coop-seed (este) | 8B base + LoRA r=128 | 128k (base); 2 048 en entrenamiento | 97,0 % de cooperación en Red-Black Game (base: 62,7 %) | llama3.1 | HuggingFace, 0 descargas |
-| Arcarae/redblackbench-qwen3-14b-sft-v2 (semilla Qwen) | 14B base + LoRA | No disponible | Alcanza el mismo 97,0 % de cooperación según el autor | No disponible en la información proporcionada | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct (base sin modificar) | 8B | 128k | 62,7 % de cooperación en Red-Black Game | llama3.1 | HuggingFace, ampliamente desplegado |
+| redblackbench-llama-3.1-8b-coop-seed (este) | 8B base + LoRA r=128 | 128k (base); 2 048 en entrenamiento | 97,0 % de cooperación en Red-Black Game (base: 62,7 %) | llama3.1 | Hugging Face, 0 descargas |
+| Arcarae/redblackbench-qwen3-14b-sft-v2 (semilla Qwen) | 14B base + LoRA | No disponible | Alcanza el mismo 97,0 % de cooperación según el autor | No disponible en la información proporcionada | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct (base sin modificar) | 8B | 128k | 62,7 % de cooperación en Red-Black Game | llama3.1 | Hugging Face, ampliamente desplegado |
 
 La comparación con modelos de propósito general (Mistral, Qwen, Gemma) no resulta pertinente porque el adaptador está especializado en una dinámica multiagente concreta y no se han publicado evaluaciones generalistas.
 
@@ -93,7 +93,7 @@ La comparación con modelos de propósito general (Mistral, Qwen, Gemma) no resu
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Arcarae/redblackbench-llama-3.1-8b-coop-seed
+- Hugging Face del adaptador: https://huggingface.co/Arcarae/redblackbench-llama-3.1-8b-coop-seed
 - Dataset de entrenamiento: https://huggingface.co/datasets/Arcarae/redblackbench-sft-batches-2-3-10k
 - Semilla equivalente sobre Qwen3-14B: https://huggingface.co/Arcarae/redblackbench-qwen3-14b-sft-v2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

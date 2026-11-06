@@ -73,7 +73,7 @@ Los únicos comparadores publicados son Jev y Laya, con información muy limitad
 
 | Modelo | Tipo y disponibilidad | Parámetros | Contexto | Flujo completo exacto | Decisión global | Licencia |
 |---|---|---|---:|---:|---:|---|
-| Singularity xMESH 0.8B | Modelo local standalone en HuggingFace | 873M | 2048 tokens | 80,0 % | 96,25 % | Apache-2.0 |
+| Singularity xMESH 0.8B | Modelo local standalone en Hugging Face | 873M | 2048 tokens | 80,0 % | 96,25 % | Apache-2.0 |
 | Jev | API alojada; disponibilidad no detallada | No disponible | No disponible | 11,25 % | 37,5 % | No disponible |
 | Laya | Runtime local distinto; disponibilidad no detallada | No disponible | No disponible | 0,0 % | 35,63 % | No disponible |
 
@@ -89,11 +89,11 @@ Jev supera a xMESH en precisión de servicio activo (100,0 % frente a 97,5 %) y 
 - Límite de seguridad: no debe recibir secretos de wallet, construir pagos firmados, omitir aprobaciones, inventar endpoints ni ejecutar URLs arbitrarias. El runtime debe restringir los IDs a los candidatos recuperados y aplicar presupuestos, redes, esquemas y reglas de aprobación de forma independiente.
 - No se documenta una evaluación de sesgos. El entrenamiento usa AgentToolDecisions-180K y filas x402 curadas, por lo que puede heredar sesgos de selección o cobertura de proveedores de esos datos.
 - La licencia Apache-2.0 permite uso comercial, pero el repositorio incluye THIRD_PARTY_NOTICES.md con atribución a Qwen y Cloudflare Clef; deben revisarse las obligaciones de terceros.
-- El pipeline de HuggingFace figura como image-text-to-text, pero la model card no documenta capacidades de visión; no debe asumirse entrada de imágenes.
+- El pipeline de Hugging Face figura como image-text-to-text, pero la model card no documenta capacidades de visión; no debe asumirse entrada de imágenes.
 - CUDA standalone sigue pendiente de canary y ROCm no está verificado. La latencia de 6,45 s por flujo en CPU/M4 no es adecuada para alto throughput sin un runtime optimizado.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/singularity-layer/Singularity-xMESH-0.8B)
+- [Modelo en Hugging Face](https://huggingface.co/singularity-layer/Singularity-xMESH-0.8B)
 - [Modelo base Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Dataset AgentToolDecisions-180K](https://huggingface.co/datasets/MaziyarPanahi/AgentToolDecisions-180K)
 - No se han encontrado papers, blogs, repositorios o demos adicionales relevantes en la búsqueda web; los resultados obtenidos tratan sobre el concepto de singularidad tecnológica, Singularity Viewer y Sylabs Singularity, no sobre este modelo.

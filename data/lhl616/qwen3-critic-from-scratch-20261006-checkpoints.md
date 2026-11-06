@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lhl616/qwen3-critic-from-scratch-20261006-checkpoints` es un archivo de checkpoints de investigación publicado por el usuario lhl616 en HuggingFace. No se trata de un modelo listo para inferencia convencional, sino de la preservación de dos pasos nativos (global_step_30 y global_step_120) de un experimento de crítica (critic) basado en Qwen3-4B-Base, detenido antes de completar la comparación prevista. El autor indica explícitamente que el experimento se interrumpió y que la variante alpha025 nunca llegó a entrenarse.
+`lhl616/qwen3-critic-from-scratch-20261006-checkpoints` es un archivo de checkpoints de investigación publicado por el usuario lhl616 en Hugging Face. No se trata de un modelo listo para inferencia convencional, sino de la preservación de dos pasos nativos (global_step_30 y global_step_120) de un experimento de crítica (critic) basado en Qwen3-4B-Base, detenido antes de completar la comparación prevista. El autor indica explícitamente que el experimento se interrumpió y que la variante alpha025 nunca llegó a entrenarse.
 
 El modelo subyacente es un critic de tipo token-value, no un modelo causal de lenguaje al uso: emplea una cabeza escalar de valor en lugar de la cabeza LM. En la variante HL-Gauss, esa cabeza produce 101 logits sobre bins que cubren el intervalo [-1.2, 1.2], con centros calculados como `-1.2 + (i+0.5)*2.4/101`, y el valor se obtiene como la media ponderada por softmax en FP32 de dichos centros. Los objetivos gaussianos usan sigma `0.75*2.4/101`.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | lhl616/qwen3-critic-from-scratch-20261006-checkpoints | no disponible (base Qwen3-4B) | no disponible | Critic token-value (HL-Gauss) | apache-2.0 | Checkpoints de investigación, no listo para producción |
-| Qwen/Qwen3-4B-Base | ~4B | no disponible en la información | Causal LM base | Apache 2.0 (según Qwen) | Público en HuggingFace |
+| Qwen/Qwen3-4B-Base | ~4B | no disponible en la información | Causal LM base | Apache 2.0 (según Qwen) | Público en Hugging Face |
 | Critic estándar de PPO (cabeza escalar) | Depende del backbone | Depende del backbone | Critic token-value | Depende del backbone | Habitualmente no se publica como artefacto aislado |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lhl616/qwen3-critic-from-scratch-20261006-checkpoints
+- Hugging Face: https://huggingface.co/lhl616/qwen3-critic-from-scratch-20261006-checkpoints
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3-4B-Base
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web proporcionada.

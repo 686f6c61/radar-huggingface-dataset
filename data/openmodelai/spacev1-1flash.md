@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpaceV1.1Flash es un modelo publicado en HuggingFace por el usuario openmodelai bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: identificador `openmodelai/SpaceV1.1Flash`, fecha de creacion el 5 de octubre de 2026, licencia MIT y un unico idioma declarado, el ingles. La model card no contiene texto descriptivo mas alla del bloque de metadatos YAML con la licencia y el idioma, por lo que no hay informacion publica sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
+SpaceV1.1Flash es un modelo publicado en Hugging Face por el usuario openmodelai bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: identificador `openmodelai/SpaceV1.1Flash`, fecha de creacion el 5 de octubre de 2026, licencia MIT y un unico idioma declarado, el ingles. La model card no contiene texto descriptivo mas alla del bloque de metadatos YAML con la licencia y el idioma, por lo que no hay informacion publica sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
 
 El repositorio registra 0 descargas y 1 like en el momento de la consulta, lo que indica que se trata de una publicacion reciente y practicamente sin adopcion. Tampoco consta un pipeline declarado (text-generation, text-to-image, etc.), de modo que ni siquiera puede confirmarse la modalidad del modelo.
 
@@ -23,7 +23,7 @@ Dado que no se especifican parametros, longitud de contexto, formato de pesos ni
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en HuggingFace no incluye ninguna seccion descriptiva: unicamente contiene el bloque de metadatos con `license: mit` y `language: en`. No hay informacion sobre el tipo de arquitectura (transformer denso, MoE, SSM, hibrida), el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens vistos ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
+No disponible. La model card publicada en Hugging Face no incluye ninguna seccion descriptiva: unicamente contiene el bloque de metadatos con `license: mit` y `language: en`. No hay informacion sobre el tipo de arquitectura (transformer denso, MoE, SSM, hibrida), el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens vistos ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
 
 Tampoco se documentan innovaciones tecnicas, mecanismos de atencion alternativos, estrategias de decodificacion especulativa ni detalles del tokenizador. Sin acceso al repositorio de pesos o a documentacion adicional del autor, no es posible determinar estos extremos.
 
@@ -31,7 +31,7 @@ Tampoco se documentan innovaciones tecnicas, mecanismos de atencion alternativos
 
 No hay informacion verificable sobre las capacidades del modelo. El unico dato funcional disponible es el idioma declarado (ingles). A continuacion se enumeran los aspectos que no pueden confirmarse:
 
-- Generacion de texto: no disponible (no se declara pipeline en HuggingFace).
+- Generacion de texto: no disponible (no se declara pipeline en Hugging Face).
 - Razonamiento y matematicas: no disponible.
 - Generacion de codigo: no disponible.
 - Vision o multimodalidad: no disponible.
@@ -81,5 +81,5 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openmodelai/SpaceV1.1Flash
+- Hugging Face: https://huggingface.co/openmodelai/SpaceV1.1Flash
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

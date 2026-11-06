@@ -25,7 +25,7 @@ La relevancia de esta conversión radica en que el formato GGUF y el ecosistema 
 
 La información disponible no detalla la arquitectura interna del modelo base Wan-AI/Wan2.1-I2V-14B-480P más allá de que se trata de un modelo de generación de vídeo condicionado por imagen (pipeline image-to-video). El recuento de parámetros de 16.394.878.784 corresponde a los pesos en safetensors del modelo base. No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO.
 
-La conversión a GGUF se realizó a partir del archivo base en FP32, y el autor señala que todas las cuantizaciones se derivaron de ese FP32, aunque solo se subió FP16. Esta decisión se debe a que los archivos superan el límite de 50 GB por archivo de HuggingFace y a que la carga con gguf-split no está soportada actualmente en ComfyUI-GGUF. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal en la información disponible.
+La conversión a GGUF se realizó a partir del archivo base en FP32, y el autor señala que todas las cuantizaciones se derivaron de ese FP32, aunque solo se subió FP16. Esta decisión se debe a que los archivos superan el límite de 50 GB por archivo de Hugging Face y a que la carga con gguf-split no está soportada actualmente en ComfyUI-GGUF. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal en la información disponible.
 
 ## Capacidades
 
@@ -62,8 +62,8 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.1-I2V-14B-480P-gguf (este repo) | 16.394.878.784 | no disponible | Apache 2.0 | GGUF (FP16) | HuggingFace, ComfyUI-GGUF |
-| Wan-AI/Wan2.1-I2V-14B-480P (base) | 16.394.878.784 | no disponible | Apache 2.0 | safetensors | HuggingFace |
+| Wan2.1-I2V-14B-480P-gguf (este repo) | 16.394.878.784 | no disponible | Apache 2.0 | GGUF (FP16) | Hugging Face, ComfyUI-GGUF |
+| Wan-AI/Wan2.1-I2V-14B-480P (base) | 16.394.878.784 | no disponible | Apache 2.0 | safetensors | Hugging Face |
 | Otros modelos image-to-video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,7 +79,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Riyan200324200324/Wan2.1-I2V-14B-480P-gguf
+- Repositorio Hugging Face: https://huggingface.co/Riyan200324200324/Wan2.1-I2V-14B-480P-gguf
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-480P
 - ComfyUI-GGUF (nodo personalizado): https://github.com/city96/ComfyUI-GGUF
 - Archivos adicionales de Comfy-Org: https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/main/split_files

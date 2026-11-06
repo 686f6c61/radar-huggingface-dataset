@@ -82,8 +82,8 @@ No se dispone de datos de comparación directa con otros modelos en la informaci
 
 ## Enlaces
 
-- [Repositorio GGUF en HuggingFace](https://huggingface.co/jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF)
-- [Checkpoint base en formato HuggingFace](https://huggingface.co/jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED)
+- [Repositorio GGUF en Hugging Face](https://huggingface.co/jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF)
+- [Checkpoint base en formato Hugging Face](https://huggingface.co/jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED)
 - [Modelo original de KwaiPilot](https://huggingface.co/KwaiPilot/KAT-Coder-V2.5-Dev)
 - [Checkpoint abliterated (Philadelphia Class)](https://huggingface.co/KridgeDookie/KAT-Coder-V2.5-Dev-35B-A3B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS)
 - [Checkpoint MTP head](https://huggingface.co/Myric/KAT-Coder-V2.5-Dev-MTP-head)

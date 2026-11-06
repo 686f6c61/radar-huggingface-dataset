@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Razum v20 es un ajuste fino de tipo LoRA sobre el modelo base Qwen3-1.7B, desarrollado por el usuario KirillKoder y publicado en HuggingFace. Se trata de una modelo de chat orientada exclusivamente al ruso, cuyo rasgo diferencial es una persona fija ("Razum") codificada en los pesos: el modelo se presenta a si mismo con esa identidad y responde con un caracter definido. El repositorio distribuye tanto el adaptador LoRA como la version fusionada en formato GGUF, lo que permite ejecucion en CPU sin GPU dedicada.
+Razum v20 es un ajuste fino de tipo LoRA sobre el modelo base Qwen3-1.7B, desarrollado por el usuario KirillKoder y publicado en Hugging Face. Se trata de una modelo de chat orientada exclusivamente al ruso, cuyo rasgo diferencial es una persona fija ("Razum") codificada en los pesos: el modelo se presenta a si mismo con esa identidad y responde con un caracter definido. El repositorio distribuye tanto el adaptador LoRA como la version fusionada en formato GGUF, lo que permite ejecucion en CPU sin GPU dedicada.
 
 El modelo resuelve un caso de uso muy concreto: asistentes conversacionales en ruso con una personalidad consistente y un coste de despliegue minimo. Con 2.031.739.904 parametros totales (1.7B nominales) y un contexto de 8192 tokens, esta pensado para entornos con recursos limitados, como portatiles o servidores pequenos. La licencia Apache 2.0 y el formato GGUF facilitan su integracion en herramientas como llama.cpp, LM Studio u Ollama.
 
@@ -83,7 +83,7 @@ La comparativa directa con alternativas rusas de tamano similar no esta disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KirillKoder/razum-1.7b-v20
+- Hugging Face: https://huggingface.co/KirillKoder/razum-1.7b-v20
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - llama.cpp (formato GGUF y ejecucion): https://github.com/ggerganov/llama.cpp
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

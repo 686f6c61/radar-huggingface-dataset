@@ -6,7 +6,7 @@ Korla/Qwen2.5-3B-Instruct-hsb-dsb-mlx-4Bit es una conversión al formato MLX (Ap
 
 El modelo hereda la arquitectura densa decoder-only de Qwen2.5 con 3.09 mil millones de parámetros y una ventana de contexto de 32 000 tokens. Al estar cuantizado en 4 bits mediante MLX, el tamaño del repositorio es de 1.7 GB, lo que lo hace viable para ejecutarse en equipos de consumo con memoria unificada moderada. Aunque el modelo base Qwen2.5-3B-Instruct soporta 29 idiomas y 18 billones de tokens de preentrenamiento, este fine-tuning se centra exclusivamente en las dos lenguas sorabas, lo que lo convierte en un recurso relevante para la preservación lingüística y aplicaciones de procesamiento de lenguaje natural en comunidades minoritarias.
 
-La licencia es qwen-research, que restringe el uso a fines de investigación y no permite explotación comercial. El modelo está publicado en HuggingFace con formato safetensors y es compatible con la librería transformers y con mlx-lm. Actualmente cuenta con cero descargas y cero likes, probablemente por su reciente publicación (agosto de 2026) y su nicho muy específico.
+La licencia es qwen-research, que restringe el uso a fines de investigación y no permite explotación comercial. El modelo está publicado en Hugging Face con formato safetensors y es compatible con la librería transformers y con mlx-lm. Actualmente cuenta con cero descargas y cero likes, probablemente por su reciente publicación (agosto de 2026) y su nicho muy específico.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ El modelo de Korla es idéntico al de tartuNLP pero cuantizado a 4-bit para MLX,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Korla/Qwen2.5-3B-Instruct-hsb-dsb-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/Korla/Qwen2.5-3B-Instruct-hsb-dsb-mlx-4Bit
 - Modelo base (tartuNLP): https://huggingface.co/tartuNLP/Qwen2.5-3B-Instruct-hsb-dsb
 - Qwen2.5-3B-Instruct original: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia qwen-research: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

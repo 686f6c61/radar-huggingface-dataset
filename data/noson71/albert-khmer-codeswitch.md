@@ -104,5 +104,5 @@ Frente a XLM-R y mBERT, este modelo es entre 10 y 18 veces más pequeño y su to
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/noson71/albert-khmer-codeswitch
+- Hugging Face: https://huggingface.co/noson71/albert-khmer-codeswitch
 - Modelo base: https://huggingface.co/seanghay/albert-khmer-small

@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Esthlan/Uncensored-Cyber-Ornith-1.5-9B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Esthlan/Uncensored-Cyber-Ornith-1.5-9B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/0xSojalSec/Uncensored-Cyber-Ornith-1.5-9B
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

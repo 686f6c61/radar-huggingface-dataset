@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - laion/snowball-67b-a2b-sft-s2-thinking-step630](https://huggingface.co/laion/snowball-67b-a2b-sft-s2-thinking-step630)
+- [Hugging Face - laion/snowball-67b-a2b-sft-s2-thinking-step630](https://huggingface.co/laion/snowball-67b-a2b-sft-s2-thinking-step630)
 - [PR de entrenamiento en marin-community/marin#8172](https://github.com/marin-community/marin/pull/8172)
 - [Issue de experimento en marin-community/marin#8225](https://github.com/marin-community/marin/issues/8225)

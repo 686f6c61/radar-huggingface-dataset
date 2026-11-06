@@ -88,8 +88,8 @@ No se dispone de resultados comparativos con otros modelos en la información pr
 
 ## Enlaces
 
-- Repositorio HuggingFace original: https://huggingface.co/maritaca-ai/sabia-7b
-- Repositorio HuggingFace espejo (tjusto2409): https://huggingface.co/tjusto2409/sabia-7b
+- Repositorio Hugging Face original: https://huggingface.co/maritaca-ai/sabia-7b
+- Repositorio Hugging Face espejo (tjusto2409): https://huggingface.co/tjusto2409/sabia-7b
 - Paper: [Sabiá: Portuguese Large Language Models](https://arxiv.org/pdf/2304.07880.pdf)
 - Repositorio GGUF de terceros: https://huggingface.co/maviz/sabia-7b-GGUF
 - Open Portuguese LLM Leaderboard: https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard

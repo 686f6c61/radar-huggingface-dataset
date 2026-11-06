@@ -90,6 +90,6 @@ La comparación empírica relevante del propio proyecto es contra líneas base s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flaukowski/gridlm-thegrid
+- Modelo en Hugging Face: https://huggingface.co/flaukowski/gridlm-thegrid
 - Dataset: https://huggingface.co/datasets/flaukowski/thegrid-colony-one-transitions
 - thegrid (repositorio de Matt Eckman): https://github.com/EckmanTechLLC/thegrid

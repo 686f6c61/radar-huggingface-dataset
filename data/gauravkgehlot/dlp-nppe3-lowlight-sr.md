@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gauravkgehlot/dlp-nppe3-lowlight-sr
+- Hugging Face: https://huggingface.co/gauravkgehlot/dlp-nppe3-lowlight-sr
 - Repositorio de GitHub con proyecto similar: https://github.com/AbdulAhadRauf/Denoising-4-Super-Resolution-of-Low-Light-Images
 - Repositorio de GitHub con proyecto similar: https://github.com/sav-abishek/Denoising-and-4x-Super-Resolution-of-Low-Light-Images
 - No se ha encontrado paper, blog o demo oficial.

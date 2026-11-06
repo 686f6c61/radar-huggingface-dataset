@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los u
 
 | Artefacto | Naturaleza | Cobertura | Contexto de analisis | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (`2026.TA.features_...hd81ee76c314f`) | Almacen de caracteristicas de transcoder adapters sobre Gemma 2 2B | 212.992 caracteristicas, 54.747 activadas | 1.024 tokens de ventana | no disponible | Publico en HuggingFace, 0 descargas |
-| `2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_ctr_fp32_tarbb_lb2_sl17862630` | Checkpoint de transcoder adapters (modelo base de este almacen) | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| Este repositorio (`2026.TA.features_...hd81ee76c314f`) | Almacen de caracteristicas de transcoder adapters sobre Gemma 2 2B | 212.992 caracteristicas, 54.747 activadas | 1.024 tokens de ventana | no disponible | Publico en Hugging Face, 0 descargas |
+| `2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_ctr_fp32_tarbb_lb2_sl17862630` | Checkpoint de transcoder adapters (modelo base de este almacen) | no disponible | no disponible | no disponible | Publico en Hugging Face |
 | GemmaScope (SAEs sobre Gemma 2) | Diccionarios dispersos de caracteristicas | no disponible en la informacion proporcionada | no disponible | no disponible | Publico, referenciado como fuente alternativa de caracteristicas base |
 | `circuit-tracer` (herramienta) | Software de construccion de grafos y recoleccion, no un modelo | no aplica | no aplica | no disponible | Codigo abierto en GitHub |
 
@@ -96,7 +96,7 @@ No se dispone de datos comparativos de rendimiento entre estos artefactos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.features_2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_hd81ee76c314f
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.features_2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_hd81ee76c314f
 - Modelo base (checkpoint de transcoder adapters): https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_ctr_fp32_tarbb_lb2_sl17862630
 - Dataset de validacion (chat): https://huggingface.co/datasets/siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits
 - Dataset de validacion (fineweb): https://huggingface.co/datasets/science-of-finetuning/fineweb-1m-sample

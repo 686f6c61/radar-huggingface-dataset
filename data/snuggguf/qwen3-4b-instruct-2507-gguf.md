@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-GGUF es la versión cuantizada en formato GGUF del modelo Qwen3-4B-Instruct-2507, desarrollado por Alibaba Cloud y publicado originalmente en HuggingFace. Esta variante concreta ha sido preparada por el usuario snuggguf, que se dedica a cuantizar modelos abiertos y verificar su funcionamiento con Ollama. El modelo base es una actualización del modo no-thinking de Qwen3-4B, con mejoras significativas en instrucción, razonamiento lógico, comprensión de texto, matemáticas, ciencia, codificación y uso de herramientas.
+Qwen3-4B-Instruct-2507-GGUF es la versión cuantizada en formato GGUF del modelo Qwen3-4B-Instruct-2507, desarrollado por Alibaba Cloud y publicado originalmente en Hugging Face. Esta variante concreta ha sido preparada por el usuario snuggguf, que se dedica a cuantizar modelos abiertos y verificar su funcionamiento con Ollama. El modelo base es una actualización del modo no-thinking de Qwen3-4B, con mejoras significativas en instrucción, razonamiento lógico, comprensión de texto, matemáticas, ciencia, codificación y uso de herramientas.
 
 Con 4.022 millones de parámetros y una longitud de contexto nativa de 262.144 tokens, este modelo ofrece un equilibrio entre capacidad y requisitos de hardware moderados. La cuantización Q4_K_M reduce el tamaño a aproximadamente 2,33 GB, lo que permite ejecutarlo en GPUs de consumo e incluso en CPU con suficiente RAM. Su licencia Apache 2.0 permite uso comercial sin restricciones, lo que lo convierte en una opción atractiva para integraciones en producción.
 
@@ -80,7 +80,7 @@ La comparativa se basa en características estructurales, ya que no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snuggguf/Qwen3-4B-Instruct-2507-GGUF
+- Modelo en Hugging Face: https://huggingface.co/snuggguf/Qwen3-4B-Instruct-2507-GGUF
 - Modelo base (Qwen): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Variante GGUF de unsloth: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF
 - Variante GGUF de mohanz: https://huggingface.co/mohanz/Qwen3-4B-Instruct-2507-GGUF

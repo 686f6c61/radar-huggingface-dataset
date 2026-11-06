@@ -4,7 +4,7 @@
 
 AuriStream7BDeep_40Pred_BigAudioDataset_500k-randinit es un modelo de lenguaje de voz (speech language model) desarrollado por TuKoResearch, un equipo liderado por Greta Tuckute y Klemen Kotar. El modelo predice tokens cocleares (cochlear tokens) generados por un tokenizador como WavCochCausalV8192, lo que le permite representar el habla de forma autoregresiva y generar continuaciones de audio que pueden decodificarse de vuelta a señales acústicas. Este enfoque difiere de los modelos de voz tradicionales que operan sobre espectrogramas o características mel, y se alinea con la tendencia de tratar el audio como una secuencia de tokens discretos.
 
-El modelo tiene 8.410.077.440 parámetros (8,41B) y se entrenó sobre un dataset de audio de gran tamaño (BigAudioDataset) durante 500.000 pasos, con inicialización aleatoria de pesos (randinit). Está disponible bajo licencia Apache-2.0, aunque su acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace. Su relevancia radica en que ofrece una representación del habla competitiva en tareas de SUPERB (Speech processing Universal PERformance Benchmark) y, al mismo tiempo, es generativo: puede producir audio continuo, lo que abre la puerta a aplicaciones de síntesis y análisis de voz en un mismo marco.
+El modelo tiene 8.410.077.440 parámetros (8,41B) y se entrenó sobre un dataset de audio de gran tamaño (BigAudioDataset) durante 500.000 pasos, con inicialización aleatoria de pesos (randinit). Está disponible bajo licencia Apache-2.0, aunque su acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face. Su relevancia radica en que ofrece una representación del habla competitiva en tareas de SUPERB (Speech processing Universal PERformance Benchmark) y, al mismo tiempo, es generativo: puede producir audio continuo, lo que abre la puerta a aplicaciones de síntesis y análisis de voz en un mismo marco.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La p�
 
 - VRAM estimada para inferencia: con 8,41B parámetros, en FP16 se necesitan aproximadamente 17 GB de VRAM. Con cuantización INT8, unos 8,5 GB; con INT4, unos 4,5 GB. No se han publicado cuantizaciones oficiales, por lo que estas cifras son estimaciones teóricas.
 - GPU recomendadas: para FP16, una GPU con 24 GB de VRAM (por ejemplo, RTX 4090, A5000) o superior. Para cuantización INT4, podría caber en GPUs de 8 GB como la RTX 3070 o la RTX 4060 Ti, aunque no hay garantía de soporte oficial.
-- Despliegue: al ser un modelo de transformers, puede ejecutarse con la librería transformers de HuggingFace. Para producción, se podría servir con vLLM o TGI si se adapta a estos frameworks, aunque no hay documentación al respecto. También es posible usar llama.cpp si se convierte a GGUF, pero no se ha publicado tal conversión.
+- Despliegue: al ser un modelo de transformers, puede ejecutarse con la librería transformers de Hugging Face. Para producción, se podría servir con vLLM o TGI si se adapta a estos frameworks, aunque no hay documentación al respecto. También es posible usar llama.cpp si se convierte a GGUF, pero no se ha publicado tal conversión.
 - Latencia y throughput: no disponibles. Dependerán del hardware y de la implementación.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar directamente AuriStream c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TuKoResearch/AuriStream7BDeep_40Pred_BigAudioDataset_500k-randinit
+- Modelo en Hugging Face: https://huggingface.co/TuKoResearch/AuriStream7BDeep_40Pred_BigAudioDataset_500k-randinit
 - Variante 250k: https://huggingface.co/TuKoResearch/AuriStream7BDeep_40Pred_BigAudioDataset_250k
 - Variante 100k: https://huggingface.co/TuKoResearch/AuriStream7BDeep_40Pred_BigAudioDataset_100k
 - Página del proyecto: https://tukoresearch.github.io/auristream-speech/

@@ -89,5 +89,5 @@ El modelo se situa en la misma categoria de rendimiento que el mejor checkpoint 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-grpo-rnd-s42
+- Repositorio Hugging Face: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-grpo-rnd-s42
 - Paper (referencia, sin enlace publicado): *Raising a Small Language Model: From Imitation to Curiosity in Dialogue Games* (LM Playschool Challenge 2026, equipo DAIR).

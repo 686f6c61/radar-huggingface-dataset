@@ -17,7 +17,7 @@ El modelo `scottlowry/Qwen2.5-Coder-7B-oQ4e` es una cuantización de 4 bits del 
 | Licencia | No disponible (el modelo base usa Apache 2.0) |
 | Formato de pesos | MLX safetensors |
 
-*Nota: el repositorio de HuggingFace indica 1.237.816.832 parametros, dato inconsistente con el modelo base (7,6B). Se trata probablemente de un error en la metadata; el numero real de parametros del modelo Qwen2.5-Coder-7B es 7,6 mil millones.
+*Nota: el repositorio de Hugging Face indica 1.237.816.832 parametros, dato inconsistente con el modelo base (7,6B). Se trata probablemente de un error en la metadata; el numero real de parametros del modelo Qwen2.5-Coder-7B es 7,6 mil millones.
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ La comparativa se basa en caracteristicas tecnicas; no se dispone de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Qwen2.5-Coder-7B-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Qwen2.5-Coder-7B-oQ4e
 - Version oQ8e del mismo autor: https://huggingface.co/scottlowry/Qwen2.5-Coder-7B-oQ8e
 - Modelo base Qwen2.5-Coder-7B: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Reporte tecnico Qwen2.5-Coder (arXiv): https://arxiv.org/html/2409.12186v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jacob-rojic/mirror-unconst-affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged` es un checkpoint intermedio derivado de `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un fine-tuning del modelo `unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged`. Según los tags de HuggingFace, emplea una arquitectura `qwen3_5_moe` (mezcla de expertos) y soporta entrada multimodal (imagen y texto), aunque el pipeline declarado es `text-generation`. El autor lo describe como un "LoRA-merged" con fines de respaldo privado ("Private TTL insurance"), no como una versión final para producción.
+El modelo `jacob-rojic/mirror-unconst-affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged` es un checkpoint intermedio derivado de `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un fine-tuning del modelo `unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged`. Según los tags de Hugging Face, emplea una arquitectura `qwen3_5_moe` (mezcla de expertos) y soporta entrada multimodal (imagen y texto), aunque el pipeline declarado es `text-generation`. El autor lo describe como un "LoRA-merged" con fines de respaldo privado ("Private TTL insurance"), no como una versión final para producción.
 
 Este modelo se publica sin licencia especificada, sin información sobre idiomas soportados ni métricas de rendimiento. Su relevancia actual es limitada: se trata de un artefacto de desarrollo dentro de un proceso de entrenamiento, no de un modelo listo para uso general. La ausencia de documentación técnica y de resultados de evaluación impide recomendarlo para aplicaciones prácticas.
 
@@ -43,7 +43,7 @@ El nombre del checkpoint sugiere un proceso de entrenamiento con DPO (offline, c
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo no presenta métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar en su ficha de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo no presenta métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar en su ficha de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jacob-rojic/mirror-unconst-affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged)
+- [Modelo en Hugging Face](https://huggingface.co/jacob-rojic/mirror-unconst-affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged)
 - [Modelo original de unconst (posible fuente)](https://huggingface.co/unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged)
 - [Variante con contexto largo en FriendliAI](https://friendli.ai/models/unconst/Affine-5czsc2fc98-r503-offline-dpo-hialpha-midrank-lobeta-longctx-extrasteps-merged)

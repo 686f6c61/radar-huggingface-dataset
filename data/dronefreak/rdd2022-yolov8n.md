@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dronefreak/rdd2022-yolov8n` es un detector de objetos YOLOv8n afinado sobre el conjunto de datos RDD2022 Road Damage, desarrollado por el usuario de HuggingFace dronefreak en el marco del proyecto DetectionBench. Se trata de un modelo de visión por computador de una sola etapa orientado a la detección de cuatro tipos de deterioro del firme: grieta longitudinal, grieta transversal, grieta de piel de cocodrilo y bache. Con 3,2 millones de parámetros y 8,7 GFLOPs a 640 píxeles, es la variante más ligera de la familia YOLOv8 aplicada a este dominio.
+El modelo `dronefreak/rdd2022-yolov8n` es un detector de objetos YOLOv8n afinado sobre el conjunto de datos RDD2022 Road Damage, desarrollado por el usuario de Hugging Face dronefreak en el marco del proyecto DetectionBench. Se trata de un modelo de visión por computador de una sola etapa orientado a la detección de cuatro tipos de deterioro del firme: grieta longitudinal, grieta transversal, grieta de piel de cocodrilo y bache. Con 3,2 millones de parámetros y 8,7 GFLOPs a 640 píxeles, es la variante más ligera de la familia YOLOv8 aplicada a este dominio.
 
 Su relevancia radica en dos factores. Por un lado, cubre una tarea de infraestructura civil con impacto directo en mantenimiento vial y seguridad en carretera, un ámbito donde los modelos genéricos de detección rinden mal por la naturaleza textural y de bajo contraste de las patologías del pavimento. Por otro, forma parte de DetectionBench, un framework que entrena y evalúa distintos detectores con recetas idénticas y métricas homogéneas, lo que permite comparaciones reproducibles entre arquitecturas. En este sentido, el modelo publica métricas declaradas por el autor (`verified: false`) sobre el split de test de RDD2022: mAP@50 de 58,8, mAP@50-95 de 32,05, precisión de 62,03 y recall de 56,08.
 
@@ -25,7 +25,7 @@ El modelo no es un modelo de lenguaje: no genera texto, no soporta tool calling 
 | Dataset de entrenamiento | dronefreak/RDD2022 (RDD2022 Road Damage) |
 | Framework | Ultralytics YOLO |
 | Libreria declarada | `ultralytics` |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -125,7 +125,7 @@ Lectura de la tabla: este modelo es el de menor mAP@50 del zoo, con una diferenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/rdd2022-yolov8n
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/rdd2022-yolov8n
 - Dataset RDD2022: https://huggingface.co/datasets/dronefreak/RDD2022
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo base Ultralytics YOLOv8: https://huggingface.co/Ultralytics/YOLOv8

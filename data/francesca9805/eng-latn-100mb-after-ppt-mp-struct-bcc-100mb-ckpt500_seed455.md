@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/eng-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455` es un checkpoint de generación de texto de 124.770.816 parámetros publicado en HuggingFace por el usuario `francesca9805`. Se trata de un ajuste fino mediante SFT (supervised fine-tuning) con TRL 0.23.0 sobre el modelo `francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed455`, que a su vez es otro checkpoint de la misma familia. La etiqueta `gpt2` del repositorio indica una arquitectura transformer decoder-only de tipo GPT-2, coherente con el recuento de parámetros (la clase GPT-2 small ronda los 124 M).
+`francesca9805/eng-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455` es un checkpoint de generación de texto de 124.770.816 parámetros publicado en Hugging Face por el usuario `francesca9805`. Se trata de un ajuste fino mediante SFT (supervised fine-tuning) con TRL 0.23.0 sobre el modelo `francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed455`, que a su vez es otro checkpoint de la misma familia. La etiqueta `gpt2` del repositorio indica una arquitectura transformer decoder-only de tipo GPT-2, coherente con el recuento de parámetros (la clase GPT-2 small ronda los 124 M).
 
 El nombre del modelo sugiere un artefacto de investigación más que un modelo de producción: `eng-latn` apunta a un corpus en inglés en escritura latina, `100mb` a un volumen de datos de entrenamiento, `ckpt500` a un checkpoint intermedio (posiblemente el paso 500) y `seed455` a una semilla concreta. El run de Weights & Biases asociado pertenece al proyecto `new-tokenizers` de la Universidad de Groningen (usuario `f-padovani`), lo que refuerza la hipótesis de que forma parte de un experimento sobre tokenizadores y no de un lanzamiento comercial.
 
@@ -18,7 +18,7 @@ Su relevancia es limitada y muy específica: sirve como pieza reproducible en ex
 | Longitud de contexto | No disponible en la información proporcionada |
 | Tipos de cuantización | No se publican versiones cuantizadas; pesos en `safetensors` en su precisión original. Conversión a GGUF/AWQ/GPTQ no disponible |
 | Idiomas soportados | No declarados en los metadatos; el identificador `eng-latn` sugiere entrenamiento sobre texto en inglés con escritura latina |
-| Licencia | No disponible (la model card incluye un campo `licence: license` sin contenido; los metadatos de HuggingFace no la especifican) |
+| Licencia | No disponible (la model card incluye un campo `licence: license` sin contenido; los metadatos de Hugging Face no la especifican) |
 | Formato de pesos | `safetensors` |
 | Modelo base | `francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed455` |
 | Tamaño del repositorio | 3,5 GB |
@@ -37,7 +37,7 @@ El entrenamiento consistió en un ajuste fino supervisado (SFT) con TRL 0.23.0, 
 
 - Generación de texto autoregresiva en inglés (presumiblemente, por el identificador `eng-latn`), con la calidad esperable de un modelo de ~125 M de parámetros.
 - Formato de conversación de un solo turno en el ejemplo de la model card: se pasa una lista de mensajes con `role: user` al pipeline de `transformers`. No se documenta la plantilla de chat exacta ni el token de fin de turno.
-- Compatibilidad con `text-generation-inference` y con endpoints de HuggingFace (`endpoints_compatible` en los tags).
+- Compatibilidad con `text-generation-inference` y con endpoints de Hugging Face (`endpoints_compatible` en los tags).
 - Punto de partida para SFT adicional mediante TRL.
 - No hay evidencia de soporte de tool calling / function calling.
 - No hay evidencia de capacidades de agente, razonamiento multi-paso, visión, audio, ni modo de pensamiento explícito.
@@ -49,7 +49,7 @@ El entrenamiento consistió en un ajuste fino supervisado (SFT) con TRL 0.23.0, 
 - Pruebas de integración de pipelines de inferencia: útil para validar despliegues con `transformers`, TGI o endpoints compatibles antes de pasar a modelos mayores, gracias a su huella de memoria mínima.
 - Generación de texto de relleno en entornos de desarrollo: creación de respuestas sintéticas cortas para pruebas de UI, carga y paginación, sin coste de GPU relevante.
 - Ajuste fino adicional con SFT: al ser un checkpoint ya entrenado con TRL, sirve como inicialización para experimentos de alineación a pequeña escala con presupuesto reducido.
-- Docencia y formación: ejemplo manejable de ciclo completo (entrenamiento con TRL, publicación en HuggingFace, registro en W&B) para cursos de NLP.
+- Docencia y formación: ejemplo manejable de ciclo completo (entrenamiento con TRL, publicación en Hugging Face, registro en W&B) para cursos de NLP.
 - Evaluación de técnicas de cuantización: con ~125 M de parámetros, permite medir degradación de perplejidad tras cuantizar a int8/int4 en hardware de consumo, siempre que se genere la versión GGUF (no publicada).
 - Baseline en ablaciones de datos: su nombre codifica corpus (`bcc-100mb`), estructura (`ppt-mp-struct`) y checkpoint, lo que lo hace útil como referencia controlada frente a otras variantes de la misma familia.
 
@@ -72,10 +72,10 @@ Los datos de la columna del modelo evaluado proceden de la información del repo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/eng-latn-100mb-...-ckpt500_seed455` | 124,77 M | No disponible | No disponible | HuggingFace, safetensors |
+| `francesca9805/eng-latn-100mb-...-ckpt500_seed455` | 124,77 M | No disponible | No disponible | Hugging Face, safetensors |
 | GPT-2 small | 124 M | 1024 tokens | MIT (según su publicación) | Ampliamente disponible, con versiones GGUF |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT (según su publicación) | Ampliamente disponible |
-| SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 (según su publicación) | HuggingFace, con cuantizaciones |
+| SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 (según su publicación) | Hugging Face, con cuantizaciones |
 
 Frente a estas alternativas, el modelo evaluado no aporta ventajas verificables: no declara licencia, no publica contexto ni evaluación, y su nombre indica un checkpoint intermedio de un experimento con una sola semilla. GPT-2 small, DistilGPT-2 o SmolLM-135M son opciones preferibles para cualquier uso real, aunque solo sea por trazabilidad legal y por disponibilidad de cuantizaciones.
 
@@ -95,7 +95,7 @@ Frente a estas alternativas, el modelo evaluado no aporta ventajas verificables:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/5ae6amwe
 - Repositorio de TRL: https://github.com/huggingface/trl

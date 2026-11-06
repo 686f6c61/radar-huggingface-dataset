@@ -84,7 +84,7 @@ La cuantización int8 frente a float32 produce una pérdida de -0,06 chrF++, den
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/beshkenadze/murmur-translation-ct2
+- Repositorio en Hugging Face: https://huggingface.co/beshkenadze/murmur-translation-ct2
 - Aplicación Murmur: https://murmur.q9labs.ai/
 - Repositorio de Murmur: https://github.com/beshkenadze/murmur
 - Proyecto upstream OPUS-MT / Tatoeba-Challenge: https://github.com/Helsinki-NLP/Tatoeba-Challenge

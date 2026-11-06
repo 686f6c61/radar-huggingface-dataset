@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modo thinking | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Voltwise-Qwen3-4B-Instruct | ~4B | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3-4B (oficial) | 4B | no disponible en los resultados consultados | Si (hibrido thinking / non-thinking) | apache-2.0 (segun repositorio oficial) | HuggingFace, ampliamente utilizado |
-| Qwen3-4B-Instruct-2507 (oficial) | 4B | no disponible en los resultados consultados | No (solo instruct) | apache-2.0 (segun repositorio oficial) | HuggingFace, Qualcomm AI Hub, vLLM recipes |
+| Voltwise-Qwen3-4B-Instruct | ~4B | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3-4B (oficial) | 4B | no disponible en los resultados consultados | Si (hibrido thinking / non-thinking) | apache-2.0 (segun repositorio oficial) | Hugging Face, ampliamente utilizado |
+| Qwen3-4B-Instruct-2507 (oficial) | 4B | no disponible en los resultados consultados | No (solo instruct) | apache-2.0 (segun repositorio oficial) | Hugging Face, Qualcomm AI Hub, vLLM recipes |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes dentro de la informacion proporcionada. La diferencia principal entre el modelo analizado y las versiones oficiales radica en la trazabilidad: los modelos oficiales de Qwen publican documentacion detallada y evaluaciones, mientras que este ajuste comunitario no aporta ninguno de esos elementos.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes dentro 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guidolumbelino/Voltwise-Qwen3-4B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/guidolumbelino/Voltwise-Qwen3-4B-Instruct
 - Modelo base (Unsloth): https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Qwen3-4B oficial: https://huggingface.co/Qwen/Qwen3-4B
 - Qwen3-4B-Instruct-2507 oficial: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

@@ -77,8 +77,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chen123fu/zeva-robocasa
+- Repositorio Hugging Face: https://huggingface.co/chen123fu/zeva-robocasa
 - Repositorio espejo con README: https://d6108366.hf-mirror.com/chen123fu/zeva/blob/main/README.md
 - GitHub de RoboCasa: https://github.com/robocasa/robocasa
 - Sitio web de RoboCasa: https://robocasa.ai/
-- Organización RoboCasa en HuggingFace: https://huggingface.co/robocasa
+- Organización RoboCasa en Hugging Face: https://huggingface.co/robocasa

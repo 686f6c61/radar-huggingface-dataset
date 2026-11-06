@@ -80,9 +80,9 @@ El autor reporta además que la peor tasa de falsos positivos por subgrupo del m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Llama Guard 3 8B) | 8 000 M (base) + LoRA r=64 | No disponible | Moderación con equidad por identidad | Llama 3 Community License | HuggingFace (0 descargas, 0 likes) |
-| Llama Guard 3 8B (base) | 8 000 M | No disponible | Moderación de seguridad general | Llama 3 Community License | HuggingFace (Meta) |
-| Llama Guard 3 1B | 1 000 M | No disponible | Moderación ligera | Llama 3 Community License | HuggingFace (Meta) |
+| Este adaptador (sobre Llama Guard 3 8B) | 8 000 M (base) + LoRA r=64 | No disponible | Moderación con equidad por identidad | Llama 3 Community License | Hugging Face (0 descargas, 0 likes) |
+| Llama Guard 3 8B (base) | 8 000 M | No disponible | Moderación de seguridad general | Llama 3 Community License | Hugging Face (Meta) |
+| Llama Guard 3 1B | 1 000 M | No disponible | Moderación ligera | Llama 3 Community License | Hugging Face (Meta) |
 | Alternativas de moderación de otros proveedores | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación cuantitativa directa solo es posible frente al modelo base, para el que el autor reporta una mejora de AUROC de 0,701 a 0,935 en el conjunto de test compartido. No se dispone de datos comparativos frente a otros modelos de moderación en la información proporcionada.
@@ -96,13 +96,13 @@ La comparación cuantitativa directa solo es posible frente al modelo base, para
 - Aproximadamente el 61 % de los errores residuales coinciden con desacuerdos entre anotadores humanos, lo que limita el techo alcanzable con este dataset.
 - Licencia Llama 3 Community License: el uso comercial está sujeto a los términos de Meta y a su Acceptable Use Policy; debe revisarse antes de cualquier despliegue.
 - El umbral de decisión (0,370) está ajustado al conjunto de evaluación reportado; su transferibilidad a otros datos no está validada.
-- El modelo base requiere aceptar previamente la licencia de Meta en HuggingFace para poder descargarse.
+- El modelo base requiere aceptar previamente la licencia de Meta en Hugging Face para poder descargarse.
 - El dataset CivilComments-WILDS tiene sus propios términos que deben comprobarse antes de reentrenar.
 - Sin descargas ni likes en el momento de la consulta, lo que indica ausencia de validación comunitaria independiente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/harry2546/Llama-Guard-3-8B-fairness-lora
+- Hugging Face: https://huggingface.co/harry2546/Llama-Guard-3-8B-fairness-lora
 - Modelo base: https://huggingface.co/meta-llama/Llama-Guard-3-8B
 - Licencia Llama 3: https://ai.meta.com/llama/license/
 - Dataset CivilComments-WILDS: no disponible en la información proporcionada

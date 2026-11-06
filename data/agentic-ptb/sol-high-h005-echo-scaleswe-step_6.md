@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-high (este) | 9.4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible (presumiblemente 32k+) | Apache 2.0 (segun Qwen) | HuggingFace |
-| Qwen/Qwen3-8B (generacion anterior) | 8.1B | 32k | Apache 2.0 | HuggingFace |
+| agentic-ptb/sol-high (este) | 9.4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9.4B | no disponible (presumiblemente 32k+) | Apache 2.0 (segun Qwen) | Hugging Face |
+| Qwen/Qwen3-8B (generacion anterior) | 8.1B | 32k | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. El modelo base Qwen3.5-9B es la referencia natural, pero este checkpoint no ha sido evaluado de forma fiable.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo. El modelo base Qwen3.5-9B es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h005.echo-scaleswe.step_6
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h005.echo-scaleswe.step_6
 - Paper de Echo- (referencia por nombre, no directamente relacionado): https://arxiv.org/pdf/2604.28011v1
 - Pagina de GPT-5.6 (referencia al agente que genero el checkpoint): https://openai.com/index/gpt-5-6/
 - Repositorio ScaleSWE (posible relacion por nombre): https://github.com/AweAI-Team/ScaleSWE

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`tiny-random/longcat-flash-lite-sparse` es un checkpoint de juguete (11.727.904 parametros totales en safetensors) generado de forma aleatoria a partir de la arquitectura del modelo `meituan-longcat/LongCat-Flash-Lite-Sparse` de Meituan. No es un modelo funcional: su proposito es servir como fixture de pruebas para validar cargadores, esquemas de pesos y rutas de servicio del modelo original, no para inferencia real. El autor de la ficha en HuggingFace es la organizacion `tiny-random`, sin descargas ni likes en el momento de la consulta.
+`tiny-random/longcat-flash-lite-sparse` es un checkpoint de juguete (11.727.904 parametros totales en safetensors) generado de forma aleatoria a partir de la arquitectura del modelo `meituan-longcat/LongCat-Flash-Lite-Sparse` de Meituan. No es un modelo funcional: su proposito es servir como fixture de pruebas para validar cargadores, esquemas de pesos y rutas de servicio del modelo original, no para inferencia real. El autor de la ficha en Hugging Face es la organizacion `tiny-random`, sin descargas ni likes en el momento de la consulta.
 
 El modelo reproduce la topologia del LongCat Flash Lite Sparse a escala minima: atencion con mecanismo LSA (LongCat Sparse Attention) y RoPE tipo deepseek-yarn, MLA comprimido, mezcla de expertos con expertos identidad sin pesos, capas de borrador MTP/NextN y tablas de over-embedding basadas en n-gramas. La relevancia actual es de ingenieria: el repositorio original de Meituan no incluye codigo de modelo ni implementacion en Transformers (su `config.json` carece de `model_type` y `auto_map`), por lo que este checkpoint permite probar el parser `longcat_flash` y el indexador DSA de SGLang sin descargar los 138,29 GB del checkpoint completo.
 
-La ficha describe, por tanto, un artefacto de depuracion: sus dimensiones (anchura oculta de 8, MLP densa de 64, MLP de experto de 32, 4 capas logicas) no permiten generar texto coherente. Toda la informacion tecnica procede de la model card y de los metadatos de HuggingFace; los datos no disponibles se indican explicitamente.
+La ficha describe, por tanto, un artefacto de depuracion: sus dimensiones (anchura oculta de 8, MLP densa de 64, MLP de experto de 32, 4 capas logicas) no permiten generar texto coherente. Toda la informacion tecnica procede de la model card y de los metadatos de Hugging Face; los datos no disponibles se indican explicitamente.
 
 ## Especificaciones tecnicas
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tiny-random/longcat-flash-lite-sparse` (este) | 11,72 M | 1.000.000 (heredado) | Fixture de pruebas para SGLang | no disponible | HuggingFace, 0 descargas |
-| `tiny-random/longcat-flash-lite` | no disponible | no disponible | Fixture de pruebas del mismo linaje, con modulo n-gram menor | no disponible | HuggingFace |
-| `meituan-longcat/LongCat-Flash-Lite-Sparse` | 69,11 B BF16 (checkpoint de 138,29 GB) | 1.000.000 | Modelo real de produccion | no disponible | HuggingFace, servido con SGLang |
+| `tiny-random/longcat-flash-lite-sparse` (este) | 11,72 M | 1.000.000 (heredado) | Fixture de pruebas para SGLang | no disponible | Hugging Face, 0 descargas |
+| `tiny-random/longcat-flash-lite` | no disponible | no disponible | Fixture de pruebas del mismo linaje, con modulo n-gram menor | no disponible | Hugging Face |
+| `meituan-longcat/LongCat-Flash-Lite-Sparse` | 69,11 B BF16 (checkpoint de 138,29 GB) | 1.000.000 | Modelo real de produccion | no disponible | Hugging Face, servido con SGLang |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiny-random/longcat-flash-lite-sparse
+- Modelo en Hugging Face: https://huggingface.co/tiny-random/longcat-flash-lite-sparse
 - Modelo base: https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse
 - Checkpoint tiny hermano: https://huggingface.co/tiny-random/longcat-flash-lite
 - Script de creacion: `.meta/create_model.py` (dentro del repositorio)

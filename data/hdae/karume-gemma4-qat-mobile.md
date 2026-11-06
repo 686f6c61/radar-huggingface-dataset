@@ -89,7 +89,7 @@ La comparativa se limita a los checkpoints de los que deriva, ya que no se han p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hdae/karume-gemma4-qat-mobile
+- Repositorio Hugging Face: https://huggingface.co/hdae/karume-gemma4-qat-mobile
 - Modelo base E2B: https://huggingface.co/google/gemma-4-E2B-it
 - Checkpoint QAT móvil E2B: https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers
 - Modelo base E4B: https://huggingface.co/google/gemma-4-E4B-it

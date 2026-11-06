@@ -30,7 +30,7 @@ No se dispone de información detallada sobre el número de tokens de entrenamie
 - Interpretación de activaciones: el adaptador permite explicar qué patrones de activación interna del modelo base corresponden al concepto "wave" (onda) con una concentración de 1.00.
 - Análisis de conceptos específicos: está diseñado para un único concepto, no para interpretación general.
 - Compatibilidad con el modelo base: se carga como un adaptador LoRA sobre Qwen3-8B, por lo que hereda las capacidades generativas del modelo base (generación de texto, razonamiento, código, etc.), aunque su propósito principal no es la generación sino la explicación de activaciones.
-- Integración con PEFT: se puede usar con la librería `peft` de HuggingFace, lo que facilita su carga y uso en pipelines de investigación.
+- Integración con PEFT: se puede usar con la librería `peft` de Hugging Face, lo que facilita su carga y uso en pipelines de investigación.
 - No incluye soporte para tool calling, agentes, visión ni audio, ya que es un adaptador de interpretabilidad, no un modelo de propósito general.
 
 ## Casos de uso
@@ -78,7 +78,7 @@ No se han encontrado otros modelos comparables en la misma categoría (AOs espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-wave-c1p00
+- Modelo en Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-wave-c1p00
 - Paper de Activation Oracles: https://arxiv.org/abs/2512.15674
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Sujeto taboo (modelo fine-tuneado): https://huggingface.co/Atmyre/qwen3-8b-taboo-wave-c1p00

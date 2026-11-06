@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio es un artefacto de cuantizacion publicado por el usuario `mahmad-10xe` el 24 de septiembre de 2026, derivado de un supuesto modelo Qwen3.5-35B-A3B. No se trata de un modelo entrenado desde cero, sino de una version cuantizada de pesos preexistentes: el identificador indica esquema W4A16 (pesos de 4 bits, activaciones de 16 bits), calibracion mediante importance matrix (`imatrix`) y exportacion con herramientas de Unsloth (`unsloth-exportrep`). La etiqueta de arquitectura declarada en HuggingFace es `qwen3_5_moe`, es decir, un transformer con mezcla de expertos (MoE).
+Este repositorio es un artefacto de cuantizacion publicado por el usuario `mahmad-10xe` el 24 de septiembre de 2026, derivado de un supuesto modelo Qwen3.5-35B-A3B. No se trata de un modelo entrenado desde cero, sino de una version cuantizada de pesos preexistentes: el identificador indica esquema W4A16 (pesos de 4 bits, activaciones de 16 bits), calibracion mediante importance matrix (`imatrix`) y exportacion con herramientas de Unsloth (`unsloth-exportrep`). La etiqueta de arquitectura declarada en Hugging Face es `qwen3_5_moe`, es decir, un transformer con mezcla de expertos (MoE).
 
 El dato objetivo mas relevante es el recuento de parametros de los safetensors: 70.875.659.632 parametros (~70,9 mil millones), con un tamano de repositorio de 109,3 GB. Existe una discrepancia notable entre ese recuento y el nombre del repositorio, que sugiere 35B totales y 3B activos; esta contradiccion no se resuelve con la informacion disponible y debe tenerse en cuenta antes de cualquier despliegue. El modelo acumula 6 descargas y 0 likes, no declara licencia, idiomas ni pipeline, y no incluye model card.
 
@@ -72,9 +72,9 @@ No hay datos verificados del modelo base ni de sus alternativas dentro de la inf
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (Qwen3.5-35B-A3B W4A16) | 70.875.659.632 segun safetensors; "35B" segun nombre | no disponible | no disponible | no disponible | HuggingFace, 6 descargas |
-| Qwen3-30B-A3B (referencia publica) | ~30,5B | ~3,3B | 128K (segun documentacion publica) | Apache 2.0 | HuggingFace y espejos oficiales |
-| Qwen3-32B denso (referencia publica) | ~32,8B | no aplica | 128K (segun documentacion publica) | Apache 2.0 | HuggingFace y espejos oficiales |
+| Este repositorio (Qwen3.5-35B-A3B W4A16) | 70.875.659.632 segun safetensors; "35B" segun nombre | no disponible | no disponible | no disponible | Hugging Face, 6 descargas |
+| Qwen3-30B-A3B (referencia publica) | ~30,5B | ~3,3B | 128K (segun documentacion publica) | Apache 2.0 | Hugging Face y espejos oficiales |
+| Qwen3-32B denso (referencia publica) | ~32,8B | no aplica | 128K (segun documentacion publica) | Apache 2.0 | Hugging Face y espejos oficiales |
 | Alternativa MoE de 70B cuantizada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de comparaciones de rendimiento entre este artefacto y los modelos de referencia.
@@ -95,5 +95,5 @@ No se dispone de comparaciones de rendimiento entre este artefacto y los modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mahmad-10xe/Qwen3.5-35B-A3B-w4a16-allocator-s21958-a0510-imatrix-unsloth-exportrep
+- Hugging Face: https://huggingface.co/mahmad-10xe/Qwen3.5-35B-A3B-w4a16-allocator-s21958-a0510-imatrix-unsloth-exportrep
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

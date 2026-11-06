@@ -76,7 +76,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 - VRAM estimada para el modelo fusionado (estimacion a partir del tamano del base, no dato oficial): en bfloat16 en torno a 8-9 GB; en cuantizacion INT8 en torno a 5 GB; en cuantizacion de 4 bits en torno a 3 GB.
 - Cabe en GPU de consumo: si, una vez fusionado y en cuantizacion adecuada, en tarjetas con 8 GB o mas (por ejemplo RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090). No hay cifras oficiales de compatibilidad en la informacion disponible.
 - Despliegue recomendado por el autor: fusionar el adaptador (`merge_and_unload`) y servir el checkpoint resultante como un modelo normal, por ejemplo con `vllm serve merged`. El propio autor advierte de **no servir el adaptador por la ruta LoRA de vLLM**, porque no reproduce el modelo entrenado.
-- Alternativa de investigacion: HuggingFace Transformers + PEFT sobre el modelo base, tal como se uso en las auditorias del estudio.
+- Alternativa de investigacion: Hugging Face Transformers + PEFT sobre el modelo base, tal como se uso en las auditorias del estudio.
 - Otros motores (llama.cpp, Ollama, TGI): no confirmados en la informacion proporcionada; serian aplicables solo tras fusionar los pesos.
 - Latencia y throughput: no disponible.
 
@@ -84,8 +84,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | Rendimiento (benchmark contrafactual) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4b-hiring-debias-sft-en (este) | Adapter sobre base ~4B | no disponible | 10,7 % de conjuntos inestables | apache-2.0 | HuggingFace (PEFT) |
-| Qwen/Qwen3.5-4B (base, sin ajustar) | ~4B | no disponible | 30,1 % de conjuntos inestables | no disponible en la informacion | HuggingFace |
+| qwen3.5-4b-hiring-debias-sft-en (este) | Adapter sobre base ~4B | no disponible | 10,7 % de conjuntos inestables | apache-2.0 | Hugging Face (PEFT) |
+| Qwen/Qwen3.5-4B (base, sin ajustar) | ~4B | no disponible | 30,1 % de conjuntos inestables | no disponible en la informacion | Hugging Face |
 
 No se dispone en la informacion proporcionada de otros adaptadores o modelos comparables de mitigacion de sesgos en contratacion con metricas publicadas, por lo que la comparativa con alternativas de la misma categoria se considera no disponible.
 
@@ -103,7 +103,7 @@ No se dispone en la informacion proporcionada de otros adaptadores o modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stereotypes-in-LLMs/qwen3.5-4b-hiring-debias-sft-en
+- Modelo en Hugging Face: https://huggingface.co/Stereotypes-in-LLMs/qwen3.5-4b-hiring-debias-sft-en
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del estudio, codigo y resultados completos: https://github.com/Stereotypes-in-LLMs/hiring_bias_mitigation
 - Dataset de entrenamiento sintetico: https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-synthetic-data

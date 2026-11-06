@@ -87,7 +87,7 @@ La comparativa es orientativa; no se dispone de datos de rendimiento comparativo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jesusoctavioas/Qwen3.8-27B-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/jesusoctavioas/Qwen3.8-27B-mlx-8Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentacion de Qwen3.8-27B (Yottalabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Pagina en LM Studio: https://lmstudio.ai/models/qwen3.8

@@ -82,7 +82,7 @@ Comparativa de rendimiento: no disponible (no hay benchmarks publicados para el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fc91/Llama-3.2-3B_CQoT_VerifiedPreferences_20261010_public
+- Modelo en Hugging Face: https://huggingface.co/fc91/Llama-3.2-3B_CQoT_VerifiedPreferences_20261010_public
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio del tokenizador: https://huggingface.co/fc91/CQoT_SFT_mix_teacher_repair_round3_Llama-3.2-3B-HPC
 - Repositorio relacionado del autor: https://huggingface.co/fc91/Llama-3.2-3B_CQoT_MathRetention_20261007_public

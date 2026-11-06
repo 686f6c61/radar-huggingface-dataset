@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jarvis-Titan-M4-MoE-CSA3 es un modelo de generación de texto de tipo Mixture of Experts (MoE) publicado por el usuario dhanesh-hf en HuggingFace. Se construye a partir del modelo base dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled, del cual hereda un backbone DeepSeekMoE al que el autor denomina "14.8B" en la model card, aunque el recuento real de parámetros de los pesos safetensors es de 15.384.072.725 (unos 15,38 mil millones). El modelo se distribuye con la librería transformers, etiqueta custom_code y licencia propietaria JTRL-v1.0.
+Jarvis-Titan-M4-MoE-CSA3 es un modelo de generación de texto de tipo Mixture of Experts (MoE) publicado por el usuario dhanesh-hf en Hugging Face. Se construye a partir del modelo base dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled, del cual hereda un backbone DeepSeekMoE al que el autor denomina "14.8B" en la model card, aunque el recuento real de parámetros de los pesos safetensors es de 15.384.072.725 (unos 15,38 mil millones). El modelo se distribuye con la librería transformers, etiqueta custom_code y licencia propietaria JTRL-v1.0.
 
 El modelo incorpora tres innovaciones que el autor presenta como diferenciales: un sistema de memoria neuronal "M4 Tri-Brid" (combinación de atención local de ventana deslizante, un reservorio de tokens relevantes y matrices de memoria asociativa en tiempo de test), una atención denominada DHA-3 (Differential Holographic Attention) que comprime los estados clave-valor en representaciones diferenciales de baja varianza, y cabezas de predicción multi-token (MTP) orientadas a decodificación especulativa. El objetivo declarado es el razonamiento matemático de alta densidad, la síntesis de código y el manejo de contextos largos de hasta 131.072 tokens con una huella de caché KV reducida.
 
@@ -18,7 +18,7 @@ La relevancia del modelo es, por ahora, limitada y difícil de verificar: cuenta
 | Longitud de contexto | 131.072 tokens (128K) según la model card |
 | Tipos de cuantizacion | no disponible (solo se publican pesos safetensors; no hay GGUF, AWQ ni GPTQ publicados) |
 | Idiomas soportados | en (inglés) |
-| Licencia | jtrl-v1.0 (propietaria; etiquetada como "other" en HuggingFace) |
+| Licencia | jtrl-v1.0 (propietaria; etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (requiere `trust_remote_code=True` por la etiqueta custom_code) |
 
 ## Arquitectura y entrenamiento
@@ -80,10 +80,10 @@ Estos datos no estan contrastados por terceros y no incluyen ninguna medida de c
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jarvis-Titan-M4-MoE-CSA3 | 15,38B | no disponible | 131.072 tokens | JTRL-v1.0 (propietaria) | HuggingFace, safetensors |
-| DeepSeek-V2-Lite | 15,7B | 2,4B | 32K (ampliable) | licencia propia de DeepSeek | HuggingFace, safetensors |
-| Qwen2.5-14B | 14,7B | denso (sin MoE) | 128K | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| Mixtral 8x7B | 46,7B | 12,9B | 32K | Apache 2.0 | HuggingFace, safetensors, GGUF |
+| Jarvis-Titan-M4-MoE-CSA3 | 15,38B | no disponible | 131.072 tokens | JTRL-v1.0 (propietaria) | Hugging Face, safetensors |
+| DeepSeek-V2-Lite | 15,7B | 2,4B | 32K (ampliable) | licencia propia de DeepSeek | Hugging Face, safetensors |
+| Qwen2.5-14B | 14,7B | denso (sin MoE) | 128K | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| Mixtral 8x7B | 46,7B | 12,9B | 32K | Apache 2.0 | Hugging Face, safetensors, GGUF |
 
 Los datos de los modelos comparativos proceden de sus fichas públicas y deben verificarse en la fuente original antes de tomar decisiones. Frente a ellos, Jarvis-Titan-M4-MoE-CSA3 no puede compararse en calidad porque no publica benchmarks de capacidades, y su licencia propietaria limita la comparación en términos de facilidad de adopción. Su principal diferencial declarado es la combinación de contexto de 128K con una caché KV inferior a la de GQA densa.
 
@@ -92,7 +92,7 @@ Los datos de los modelos comparativos proceden de sus fichas públicas y deben v
 - Sesgos conocidos: no disponibles. No se documenta ningún proceso de alineación, filtrado de datos ni evaluación de sesgos.
 - Riesgo de alucinación: no evaluado. Al ser un modelo orientado a matemáticas y código, los errores de razonamiento pueden ser especialmente difíciles de detectar sin verificación externa.
 - Idiomas: únicamente se declara inglés. No hay garantía de comportamiento correcto en castellano ni en otros idiomas, a pesar de que la arquitectura subyacente pueda haber visto datos multilingües.
-- Licencia JTRL-v1.0 propietaria: las condiciones de uso comercial, redistribución y derivados deben consultarse en el fichero LICENSE del repositorio. La etiqueta "other" de HuggingFace no implica permisos de uso comercial.
+- Licencia JTRL-v1.0 propietaria: las condiciones de uso comercial, redistribución y derivados deben consultarse en el fichero LICENSE del repositorio. La etiqueta "other" de Hugging Face no implica permisos de uso comercial.
 - Ausencia total de validación externa: 0 descargas, 0 likes y ninguna referencia en la búsqueda web realizada. Las afirmaciones de la model card (reducción de error del 72,9%, ahorro de caché del 78,6%, aceleración de 2,2x) son autoinformadas y no reproducibles con la información pública.
 - Discrepancia de parámetros: la model card anuncia 14.8B mientras que los pesos safetensors suman 15,38B. Conviene verificar la configuración real del modelo antes de dimensionar infraestructura.
 - Contexto largo anunciado pero no verificado: no hay resultados de pruebas tipo needle-in-a-haystack ni de evaluación a 128K tokens.
@@ -103,9 +103,9 @@ Los datos de los modelos comparativos proceden de sus fichas públicas y deben v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-MoE-CSA3
+- Modelo en Hugging Face: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-MoE-CSA3
 - Modelo base (Jarvis-Titan-V15-MoE-Decoupled): https://huggingface.co/dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled
 - Referencia arXiv citada en las etiquetas del modelo (asociada a la memoria neuronal Titans): https://arxiv.org/abs/2501.00663
-- Fichero de licencia JTRL-v1.0: LICENSE (enlace relativo dentro del repositorio de HuggingFace)
+- Fichero de licencia JTRL-v1.0: LICENSE (enlace relativo dentro del repositorio de Hugging Face)
 - Articulo de investigacion adicional, blog o demo: no disponibles
 - Nota sobre la busqueda web: los resultados obtenidos corresponden a un musico homonimo (dhaneshmusic) y no guardan relacion con el modelo. No se ha encontrado ninguna fuente independiente, paper ni repositorio asociado a este modelo.

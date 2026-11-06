@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/McG-221/Qwen3.8-27B-heretic-ara-mlx-8Bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/McG-221/Qwen3.8-27B-heretic-ara-mlx-8Bit
 - Modelo base (heretic-org/Qwen3.8-27B-heretic-ara): https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara
 - Documentación de mlx-lm (librería de conversión): no se ha encontrado un enlace directo en la información proporcionada.

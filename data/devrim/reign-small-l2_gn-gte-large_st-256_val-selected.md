@@ -83,7 +83,7 @@ REIGN se diferencia por su capacidad de procesar documentos arbitrariamente larg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-small-l2_gn-gte-large_st-256_val-selected
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-small-l2_gn-gte-large_st-256_val-selected
 - Repositorio de codigo: https://github.com/devrimcavusoglu/reign
 - Pagina del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset de entrenamiento: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

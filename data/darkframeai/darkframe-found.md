@@ -2,7 +2,7 @@
 
 ## Resumen
 
-darkframe-found es un adaptador LoRA de estilo para generacion de imagenes texto-a-imagen, publicado por el usuario darkframeai en HuggingFace. No es un modelo completo, sino un ajuste de bajo rango (rank 32, alpha 32) entrenado sobre el modelo base black-forest-labs/FLUX.2-klein-base-4B durante 2500 pasos. Su objetivo es reproducir la estetica visual del cine de metraje encontrado (found footage), con un encuadre caracteristico en el que las figuras humanas aparecen en primer plano.
+darkframe-found es un adaptador LoRA de estilo para generacion de imagenes texto-a-imagen, publicado por el usuario darkframeai en Hugging Face. No es un modelo completo, sino un ajuste de bajo rango (rank 32, alpha 32) entrenado sobre el modelo base black-forest-labs/FLUX.2-klein-base-4B durante 2500 pasos. Su objetivo es reproducir la estetica visual del cine de metraje encontrado (found footage), con un encuadre caracteristico en el que las figuras humanas aparecen en primer plano.
 
 El adaptador se activa mediante la palabra clave darkframe-found, que debe colocarse al inicio del prompt. El repositorio ocupa aproximadamente 0,1 GB y distribuye un unico archivo de pesos en formato safetensors. La licencia declarada es Apache 2.0, lo que permite uso comercial segun los terminos de dicha licencia, siempre que se respeten tambien las condiciones del modelo base.
 
@@ -92,7 +92,7 @@ Nota: el autor indica explicitamente que darkframe-found no se carga sobre Klein
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darkframeai/darkframe-found
+- Modelo en Hugging Face: https://huggingface.co/darkframeai/darkframe-found
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Archivo de pesos: https://huggingface.co/darkframeai/darkframe-found/resolve/main/darkframe-found.safetensors
 - Ejemplos del autor: directorio examples/ dentro del repositorio (sample_0.jpg a sample_5.jpg)

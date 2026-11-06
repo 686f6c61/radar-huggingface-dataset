@@ -85,8 +85,8 @@ Qwen3.8-2.4T-A95B supera ampliamente a las alternativas open source en parámetr
 
 ## Enlaces
 
-- Repositorio HuggingFace original: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
-- Repositorio HuggingFace (mirror vll1addd): https://huggingface.co/vll1addd/Qwen3.8-2.4T-A95B
+- Repositorio Hugging Face original: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+- Repositorio Hugging Face (mirror vll1addd): https://huggingface.co/vll1addd/Qwen3.8-2.4T-A95B
 - Blog de vLLM (soporte día 0): https://vllm.ai/blog/2026-08-12-qwen3.8
 - Recetas vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-2.4T-A95B
 - Documentación vLLM Ascend: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-2.4T-A95B.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `gianmaTest/generatedDigitalExps_1xLz7L_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto de investigación de tamaño muy reducido (2.366.208 parámetros) publicado en HuggingFace por el usuario `gianmaTest`. No dispone de model card descriptiva: el README únicamente contiene el texto autogenerado por la integración `PyTorchModelHubMixin` de `huggingface_hub`, con los campos Code, Paper y Docs marcados como "[More Information Needed]". Tampoco se ha declarado pipeline, licencia ni idiomas soportados.
+El modelo identificado como `gianmaTest/generatedDigitalExps_1xLz7L_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto de investigación de tamaño muy reducido (2.366.208 parámetros) publicado en Hugging Face por el usuario `gianmaTest`. No dispone de model card descriptiva: el README únicamente contiene el texto autogenerado por la integración `PyTorchModelHubMixin` de `huggingface_hub`, con los campos Code, Paper y Docs marcados como "[More Information Needed]". Tampoco se ha declarado pipeline, licencia ni idiomas soportados.
 
 Por el nombre del repositorio se puede inferir, sin confirmación por parte del autor, que se trata de un experimento de procesamiento jerárquico ("hier by room") sobre una RNN con mean pooling, aplicado a datos de vídeo. Esta interpretación es una hipótesis basada en la nomenclatura y no debe tomarse como especificación verificada. El repositorio no presenta descargas ni likes en el momento de la consulta, lo que apunta a un artefacto de uso interno o a un paso intermedio de un pipeline experimental.
 
@@ -67,7 +67,7 @@ No se han identificado modelos comparables en la información proporcionada. El 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gianmaTest/generatedDigitalExps_1xLz7L_hier_by_room_rnn_meanPoolProc_video_1` | 2.366.208 | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
+| `gianmaTest/generatedDigitalExps_1xLz7L_hier_by_room_rnn_meanPoolProc_video_1` | 2.366.208 | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han identificado modelos comparables en la información proporcionada. El 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xLz7L_hier_by_room_rnn_meanPoolProc_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xLz7L_hier_by_room_rnn_meanPoolProc_video_1
 - Código: no disponible (la model card indica "[More Information Needed]")
 - Paper: no disponible (la model card indica "[More Information Needed]")
 - Documentación: no disponible (la model card indica "[More Information Needed]")

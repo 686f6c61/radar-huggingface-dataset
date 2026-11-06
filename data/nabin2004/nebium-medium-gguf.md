@@ -91,7 +91,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nabin2004/nebium-medium-gguf
+- Modelo en Hugging Face: https://huggingface.co/nabin2004/nebium-medium-gguf
 - Pesos base en PyTorch: https://huggingface.co/nabin2004/nebium-medium
 - Codigo fuente del framework: https://github.com/nabin2004/nebium
 - llama.cpp: https://github.com/ggerganov/llama.cpp

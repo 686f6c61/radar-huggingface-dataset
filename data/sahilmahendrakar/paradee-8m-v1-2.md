@@ -91,7 +91,7 @@ Paradee sacrifica algo de calidad respecto a Kokoro (caida de UTMOS de 0,10 a 0,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.2
+- Modelo en Hugging Face: https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.2
 - Modelo profesor (Kokoro-82M): https://huggingface.co/hexgrad/Kokoro-82M
 - Codigo y paquete de Python: https://github.com/sahilmahendrakar/paradee
 - Paper (v1.0): https://huggingface.co/papers/2610.06817

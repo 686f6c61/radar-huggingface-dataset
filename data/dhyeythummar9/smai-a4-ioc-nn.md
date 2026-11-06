@@ -66,7 +66,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parametros | Contexto | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IOC-NN (este modelo) | 197.322 | no aplica | 0,4610 | MIT | HuggingFace (NumPy) |
+| IOC-NN (este modelo) | 197.322 | no aplica | 0,4610 | MIT | Hugging Face (NumPy) |
 | MLP convencional 3072-64-10 | ~197.000 | no aplica | no disponible | no disponible | no disponible |
 | CNN pequena en CIFAR-10 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dhyeythummar9/smai-a4-ioc-nn
+- Hugging Face: https://huggingface.co/dhyeythummar9/smai-a4-ioc-nn
 - Dataset CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

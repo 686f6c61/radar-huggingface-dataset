@@ -29,7 +29,7 @@ La innovacion tecnica principal no reside en la arquitectura del adaptador en si
 
 - Imitacion de estilo: el adaptador modifica el comportamiento del modelo base para replicar el estilo de respuesta de Granite-4-H-Small en conversaciones tipo chatbot.
 - Transferencia conductual: permite estudiar como un modelo de una familia (Qwen) puede adoptar patrones de respuesta de otra familia (Granite).
-- Compatibilidad con PEFT: se carga mediante la libreria peft de HuggingFace, lo que permite aplicarlo y revertirlo sin modificar los pesos del modelo base.
+- Compatibilidad con PEFT: se carga mediante la libreria peft de Hugging Face, lo que permite aplicarlo y revertirlo sin modificar los pesos del modelo base.
 - No anade capacidades nuevas al modelo base: las capacidades funcionales (generacion de texto, razonamiento, codigo, etc.) son las inherentes a Qwen3.6-27B, no se amplian ni se documentan en esta publicacion.
 - No se documenta soporte para tool calling, agentes, vision ni otras capacidades especiales en la informacion disponible.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - El adaptador en si ocupa 1.0 GB, pero requiere cargar el modelo base Qwen/Qwen3.6-27B completo, que es un modelo de 27.000 millones de parametros.
 - Para inferencia con el modelo base en precision FP16 se estiman aproximadamente 54 GB de VRAM, lo que requiere GPUs profesionales como A100 (80 GB) o H100 (80 GB).
 - Con cuantizacion de 4 bits (por ejemplo, bitsandbytes), la VRAM estimada se reduce a unos 16-18 GB, lo que permitiria ejecutarlo en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB). Estas cifras son estimaciones basadas en el tamano del modelo base, no en datos publicados.
-- El despliegue puede realizarse con vLLM, llama.cpp u Ollama si se fusionan los pesos del adaptador con el modelo base; tambien es posible usar la API de PEFT de HuggingFace Transformers para cargar el adaptador en memoria.
+- El despliegue puede realizarse con vLLM, llama.cpp u Ollama si se fusionan los pesos del adaptador con el modelo base; tambien es posible usar la API de PEFT de Hugging Face Transformers para cargar el adaptador en memoria.
 - No se dispone de datos de latencia ni throughput publicados para este adaptador.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ Todos comparten el mismo corpus de entrenamiento (chatbot_arena), la misma tecni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_chatbot_arena_qwen3.6-27b_as_granite-4-h-small_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_chatbot_arena_qwen3.6-27b_as_granite-4-h-small_seed42
 - Adaptador inverso (Granite imita a Qwen): https://huggingface.co/dementor-research/dpo_chatbot_arena_granite-4-h-small_as_qwen3.6-27b_seed42
 - Adaptador con Gemma como objetivo: https://huggingface.co/dementor-research/dpo_chatbot_arena_qwen3.6-27b_as_gemma-4-e4b_seed42
 - Adaptador con Qwen3.5-4B como base: https://friendli.ai/models/dementor-research/dpo_chatbot_arena_granite-4-h-small_as_qwen3.5-4b_seed42

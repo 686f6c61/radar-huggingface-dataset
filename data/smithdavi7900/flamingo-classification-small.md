@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smithdavi7900/flamingo-classification-small` es un repositorio experimental publicado en HuggingFace que implementa una arquitectura de tipo Flamingo orientada a tareas de clasificación. Lo desarrolla el usuario smithdavi7900 y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con resultados de referencia: la propia model card lo describe como un punto de partida para pruebas de humo (smoke tests) y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`smithdavi7900/flamingo-classification-small` es un repositorio experimental publicado en Hugging Face que implementa una arquitectura de tipo Flamingo orientada a tareas de clasificación. Lo desarrolla el usuario smithdavi7900 y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con resultados de referencia: la propia model card lo describe como un punto de partida para pruebas de humo (smoke tests) y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El modelo emplea una arquitectura Flamingo con atención de ventana deslizante (sliding window), fusión bilineal, activación approximate GELU y normalización LayerNorm. La escala declarada es "nano", con un total de 49.600 parámetros según los pesos en safetensors, lo que lo sitúa en el rango de un modelo de juguete o de prototipo didáctico más que en el de un modelo de producción.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smithdavi7900/flamingo-classification-small
+- Hugging Face: https://huggingface.co/smithdavi7900/flamingo-classification-small
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

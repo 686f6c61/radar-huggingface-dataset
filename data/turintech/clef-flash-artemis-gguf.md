@@ -85,10 +85,10 @@ No se dispone de comparativas frente a otros modelos de decision equivalentes. L
 
 | Modelo / archivo | Parametros | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| turintech/Clef-Flash-Artemis-GGUF (4.9GB) | ~9B | 4,94 GB | no disponible | apache-2.0 | HuggingFace (TurinTech) |
-| Cloudflare/clef-flash (BF16) | ~9B | 18,2 GB | no disponible | apache-2.0 | HuggingFace (Cloudflare) |
-| ggml-org Q4_K_M de Clef-Flash | ~9B | 6,49 GB | no disponible | apache-2.0 | HuggingFace (ggml-org) |
-| bartowski IQ3_M de Clef-Flash | ~9B | 4,85 GB | no disponible | apache-2.0 | HuggingFace (bartowski) |
+| turintech/Clef-Flash-Artemis-GGUF (4.9GB) | ~9B | 4,94 GB | no disponible | apache-2.0 | Hugging Face (TurinTech) |
+| Cloudflare/clef-flash (BF16) | ~9B | 18,2 GB | no disponible | apache-2.0 | Hugging Face (Cloudflare) |
+| ggml-org Q4_K_M de Clef-Flash | ~9B | 6,49 GB | no disponible | apache-2.0 | Hugging Face (ggml-org) |
+| bartowski IQ3_M de Clef-Flash | ~9B | 4,85 GB | no disponible | apache-2.0 | Hugging Face (bartowski) |
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ No se dispone de comparativas frente a otros modelos de decision equivalentes. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/Clef-Flash-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/Clef-Flash-Artemis-GGUF
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Proyector de vision y GGUF publicos: https://huggingface.co/ggml-org/Clef-Flash-GGUF
 - Dataset de evaluacion: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

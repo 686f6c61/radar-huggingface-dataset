@@ -71,9 +71,9 @@ La model card del GGUF no incluye métricas de precisión, calibración (ECE, Br
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d1-Omni-2B-GGUF (este) | 1,73 B (reales) | No disponible | GGUF | lfm1.0 | Decisión multimodal calibrada (texto, imagen, audio, vídeo) en un forward pass | HuggingFace, 750 descargas, 14 likes |
-| d1-Omni-2B (modelo base) | 1,73 B (reales) | No disponible | Safetensors | lfm1.0 | Mismo modelo sin cuantizar; referencia para detalles de arquitectura | HuggingFace (LiquidAI/d1-Omni-2B) |
-| LFM3-Omni-2B | No disponible | No disponible | Safetensors y GGUF | No disponible en la informacion | Modelo base generativo/multimodal sobre el que se construye d1-Omni-2B | HuggingFace (LiquidAI/LFM3-Omni-2B, LFM3-Omni-2B-GGUF) |
+| d1-Omni-2B-GGUF (este) | 1,73 B (reales) | No disponible | GGUF | lfm1.0 | Decisión multimodal calibrada (texto, imagen, audio, vídeo) en un forward pass | Hugging Face, 750 descargas, 14 likes |
+| d1-Omni-2B (modelo base) | 1,73 B (reales) | No disponible | Safetensors | lfm1.0 | Mismo modelo sin cuantizar; referencia para detalles de arquitectura | Hugging Face (LiquidAI/d1-Omni-2B) |
+| LFM3-Omni-2B | No disponible | No disponible | Safetensors y GGUF | No disponible en la informacion | Modelo base generativo/multimodal sobre el que se construye d1-Omni-2B | Hugging Face (LiquidAI/LFM3-Omni-2B, LFM3-Omni-2B-GGUF) |
 | d1-2B (variante texto) | No disponible | No disponible | No disponible | No disponible en la informacion | Decisión sobre texto, sin modalidad omni | Listado en liquid.ai/models |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa de rendimiento entre estas alternativas.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/d1-Omni-2B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/d1-Omni-2B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/d1-Omni-2B
 - Modelo base de la familia: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Cuantización GGUF de la familia: https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF

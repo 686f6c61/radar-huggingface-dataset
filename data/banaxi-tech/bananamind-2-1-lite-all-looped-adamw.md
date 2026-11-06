@@ -75,4 +75,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Banaxi-Tech/BananaMind-2.1-Lite-All-Looped-AdamW
+- Hugging Face: https://huggingface.co/Banaxi-Tech/BananaMind-2.1-Lite-All-Looped-AdamW

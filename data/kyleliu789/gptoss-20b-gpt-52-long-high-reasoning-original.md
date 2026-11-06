@@ -23,7 +23,7 @@ La relevancia de esta publicacion es acotada y de tipo experimental: se enmarca 
 | Metodo de ajuste | LoRA / PEFT (libreria `peft`, toolchain `llama-factory`) |
 | Dataset de ajuste | `gpt52_high_reasoning_harmony` (sin enlace ni descripcion publicados) |
 | Frameworks declarados | PEFT 0.18.1, Transformers 4.57.6, PyTorch 2.9.1+cu128, Datasets 4.0.0, Tokenizers 0.22.2 |
-| Fecha de creacion | 2026-09-11 (fecha declarada por HuggingFace) |
+| Fecha de creacion | 2026-09-11 (fecha declarada por Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base y de
 
 ## Comparativa con modelos similares
 
-Los datos del modelo base proceden de la documentacion publica de OpenAI y se incluyen como referencia; los de este adaptador son los declarados en la ficha de HuggingFace.
+Los datos del modelo base proceden de la documentacion publica de OpenAI y se incluyen como referencia; los de este adaptador son los declarados en la ficha de Hugging Face.
 
 | Modelo | Parametros | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
@@ -119,7 +119,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyleliu789/gptoss-20b-gpt-52-long-high-reasoning-original
+- Modelo en Hugging Face: https://huggingface.co/kyleliu789/gptoss-20b-gpt-52-long-high-reasoning-original
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Dataset declarado (`gpt52_high_reasoning_harmony`): no disponible, no se proporciona enlace en la model card
 - Paper o informe tecnico del adaptador: no disponible

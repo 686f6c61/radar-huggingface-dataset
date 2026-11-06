@@ -89,7 +89,7 @@ No se dispone de benchmarks publicos comparativos entre este modelo y sus altern
 
 ## Enlaces
 
-- [Repositorio HuggingFace de este modelo](https://huggingface.co/esatapedico/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4-GGUF)
+- [Repositorio Hugging Face de este modelo](https://huggingface.co/esatapedico/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4-GGUF)
 - [Modelo base original de DavidAU](https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1)
 - [Checkpoint NVFP4 de windowsxp811203](https://huggingface.co/windowsxp811203/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4)
 - [GGUF con proyector de vision de DavidAU](https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF)

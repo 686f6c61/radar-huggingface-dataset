@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Happiny es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio se creo el 13 de septiembre de 2026 y se actualizo el mismo dia, con un tamano aproximado de 0,1 GB. No se ha publicado ninguna model card con contenido tecnico: el README se limita a declarar la licencia, sin descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion.
+Happiny es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio se creo el 13 de septiembre de 2026 y se actualizo el mismo dia, con un tamano aproximado de 0,1 GB. No se ha publicado ninguna model card con contenido tecnico: el README se limita a declarar la licencia, sin descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion.
 
-No se dispone de informacion sobre el tipo de modelo, la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. La ficha de HuggingFace no declara pipeline, y el repositorio acumula 0 descargas y 0 interacciones, por lo que no existe evidencia publica de uso ni de validacion por parte de terceros. Tampoco se han encontrado papers, blogs ni repositorios asociados.
+No se dispone de informacion sobre el tipo de modelo, la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. La ficha de Hugging Face no declara pipeline, y el repositorio acumula 0 descargas y 0 interacciones, por lo que no existe evidencia publica de uso ni de validacion por parte de terceros. Tampoco se han encontrado papers, blogs ni repositorios asociados.
 
 En consecuencia, esta ficha recoge unicamente los metadatos verificables del repositorio y marca explicitamente como no disponible todo aquello que no puede confirmarse. Cualquier evaluacion tecnica del modelo requerira inspeccionar directamente los archivos del repositorio (configuracion, tokenizer y pesos) antes de plantear su uso en produccion.
 
@@ -48,7 +48,7 @@ No es posible recomendar casos de uso concretos, ya que no se dispone de informa
 
 - Prototipado local: dado el tamano reducido del repositorio (0,1 GB), podria plantearse como prueba de concepto en un entorno de desarrollo, siempre que se confirme primero el contenido real de los pesos.
 - Evaluacion comparativa interna: el modelo podria incluirse en una bateria de pruebas propia para determinar su calidad en generacion de texto, pero no existe ningun benchmark publicado que permita anticipar resultados.
-- Experimentacion academica: util unicamente como objeto de estudio de publicacion de modelos en HuggingFace, dado que no hay documentacion tecnica que analizar.
+- Experimentacion academica: util unicamente como objeto de estudio de publicacion de modelos en Hugging Face, dado que no hay documentacion tecnica que analizar.
 - Integracion en pipelines: descartable sin antes verificar el formato de pesos, la tokenizacion y el soporte de las herramientas de despliegue habituales.
 - Uso comercial: tecnicamente permitido por la licencia cc-by-4.0, pero sin garantias de funcionamiento ni de idoneidad para ninguna tarea concreta.
 - Ajuste fino (fine-tuning): solo viable si el repositorio contiene pesos completos; se desconoce si incluye pesos o unicamente configuracion.
@@ -81,6 +81,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Happiny
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Happiny
 - Resultados de busqueda web: ninguna de las entradas devueltas guarda relacion con el modelo. Las referencias encontradas tratan sobre los criterios de elegibilidad del examen medico NEET PG 2026 y sobre la National Medical Commission de la India (https://www.nmc.org.in/), por lo que no se incluyen como fuentes relevantes.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

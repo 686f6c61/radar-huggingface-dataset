@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de Qwen/Qwen2.5-Coder-7B-Instruct, desarrollado por el usuario Jongbin-kr. El nombre del modelo sugiere que ha sido entrenado con la configuracion oficial de "verireason" pero sin generar razonamiento explicito ("no_reasoning"), lo que apunta a un entrenamiento orientado a producir respuestas directas sin cadenas de pensamiento visibles. El entrenamiento se realizo mediante SFT (supervised fine-tuning) usando la libreria TRL de HuggingFace.
+Este modelo es un ajuste fino (fine-tune) de Qwen/Qwen2.5-Coder-7B-Instruct, desarrollado por el usuario Jongbin-kr. El nombre del modelo sugiere que ha sido entrenado con la configuracion oficial de "verireason" pero sin generar razonamiento explicito ("no_reasoning"), lo que apunta a un entrenamiento orientado a producir respuestas directas sin cadenas de pensamiento visibles. El entrenamiento se realizo mediante SFT (supervised fine-tuning) usando la libreria TRL de Hugging Face.
 
 El modelo mantiene la arquitectura base de Qwen2.5-Coder-7B-Instruct, con 7.615 millones de parametros, y esta disponible en formato safetensors. Al ser un fine-tune de un modelo ya instruido, hereda las capacidades de generacion de codigo y comprension de lenguaje del modelo base, aunque no se han publicado datos especificos sobre el dataset de entrenamiento ni los resultados de evaluacion de este ajuste concreto.
 
@@ -79,7 +79,7 @@ La comparativa se basa en las caracteristicas del modelo base y de alternativas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-no_reasoning-jongbin
+- Hugging Face: https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-no_reasoning-jongbin
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Modelo base (no instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Technical report de Qwen2.5-Coder: https://arxiv.org/html/2409.12186v3

@@ -69,10 +69,10 @@ La model card indica que no existe ninguna evaluacion independiente de codigo pu
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (AI-conn, i1 GGUF) | 30,5B totales / ~3B activos | no disponible | Abliterado y cuantizado a GGUF | Apache-2.0 | Repositorio de 324,1 GB en HuggingFace |
-| huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated | 30,5B totales / ~3B activos | no disponible | Abliterado, pesos originales | Apache-2.0 | HuggingFace |
-| mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF | 30,5B totales / ~3B activos | no disponible | Abliterado y cuantizado i1 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30,5B totales / ~3B activos | no disponible en la informacion aportada | Modelo original alineado | Apache-2.0 | HuggingFace |
+| Este modelo (AI-conn, i1 GGUF) | 30,5B totales / ~3B activos | no disponible | Abliterado y cuantizado a GGUF | Apache-2.0 | Repositorio de 324,1 GB en Hugging Face |
+| huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated | 30,5B totales / ~3B activos | no disponible | Abliterado, pesos originales | Apache-2.0 | Hugging Face |
+| mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF | 30,5B totales / ~3B activos | no disponible | Abliterado y cuantizado i1 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30,5B totales / ~3B activos | no disponible en la informacion aportada | Modelo original alineado | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-conn/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/AI-conn/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF
 - Modelo abliterado de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
 - Cuantizacion i1 de mradermacher: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct

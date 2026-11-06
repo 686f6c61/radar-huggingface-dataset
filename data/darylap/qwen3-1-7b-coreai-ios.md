@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| darylap/Qwen3-1.7B-coreai-ios | 1,7 B | 8.192 tokens | `.aimodel` (Core AI) | Apache 2.0 | HuggingFace; 0 descargas, 0 likes |
-| Qwen/Qwen3-1.7B (modelo base) | 1,7 B | no disponible | no disponible | Apache 2.0 | HuggingFace (repositorio upstream) |
+| darylap/Qwen3-1.7B-coreai-ios | 1,7 B | 8.192 tokens | `.aimodel` (Core AI) | Apache 2.0 | Hugging Face; 0 descargas, 0 likes |
+| Qwen/Qwen3-1.7B (modelo base) | 1,7 B | no disponible | no disponible | Apache 2.0 | Hugging Face (repositorio upstream) |
 | Otras alternativas de ~1-2 B para on-device | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos de rendimiento ni especificaciones detalladas de modelos alternativos, por lo que no es posible establecer una comparación cuantitativa con otras opciones de la misma categoría.
@@ -87,7 +87,7 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darylap/Qwen3-1.7B-coreai-ios
+- Repositorio en Hugging Face: https://huggingface.co/darylap/Qwen3-1.7B-coreai-ios
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Revisión upstream utilizada: https://huggingface.co/Qwen/Qwen3-1.7B/tree/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
 - Herramienta de exportación apple/coreai-models: https://github.com/apple/coreai-models/tree/e7b24da85ea64a77d26324d7ce9607de9b955f57

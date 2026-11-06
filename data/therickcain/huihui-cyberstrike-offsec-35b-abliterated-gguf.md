@@ -80,7 +80,7 @@ Nota: la comparativa se basa en las características generales conocidas de la f
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/therickcain/Huihui-CyberStrike-OffSec-35B-abliterated-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/therickcain/Huihui-CyberStrike-OffSec-35B-abliterated-GGUF
 - Modelo base: https://huggingface.co/oyildirim/CyberStrike-OffSec-35B
 - Técnica de abliteración (remove-refusals-with-transformers): https://github.com/Sumandora/remove-refusals-with-transformers
 - llama.cpp: https://github.com/ggml-org/llama.cpp

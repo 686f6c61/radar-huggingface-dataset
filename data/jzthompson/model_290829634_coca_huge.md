@@ -58,4 +58,4 @@ No se dispone de información sobre modelos comparables. La falta de parámetros
 
 ## Enlaces
 
-- [HuggingFace - jzthompson/model_290829634_coca_huge](https://huggingface.co/jzthompson/model_290829634_coca_huge)
+- [Hugging Face - jzthompson/model_290829634_coca_huge](https://huggingface.co/jzthompson/model_290829634_coca_huge)

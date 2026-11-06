@@ -75,7 +75,7 @@ No se dispone de información sobre otros modelos comparables en la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.maxrl-frontier.step_1
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.maxrl-frontier.step_1
 - Repositorio MaxRL (paper): https://github.com/tajwarfahim/maxrl
 - Información sobre GPT-5.6 Sol (contexto del driver): https://openai.com/index/gpt-5-6/
 - LiveBench (benchmark de referencia, no aplicado a este modelo): https://livebench.ai/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `open-sci/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated-sr30k` es un ajuste fino supervisado (SFT) de un modelo base de 1.714 millones de parametros denominado `ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated`, publicado por el usuario open-sci en HuggingFace. Se trata de un derivado de la familia Comma, un modelo de 1.7B de parametros con contexto extendido a 16.000 tokens y un entrenamiento previo sobre 300.000 millones de tokens, seguido de un SFT sobre el dataset Tulu3 decontaminado.
+El modelo `open-sci/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated-sr30k` es un ajuste fino supervisado (SFT) de un modelo base de 1.714 millones de parametros denominado `ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated`, publicado por el usuario open-sci en Hugging Face. Se trata de un derivado de la familia Comma, un modelo de 1.7B de parametros con contexto extendido a 16.000 tokens y un entrenamiento previo sobre 300.000 millones de tokens, seguido de un SFT sobre el dataset Tulu3 decontaminado.
 
 El ajuste publicado entrena el modelo base sobre el dataset `Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf`, un conjunto de 30.000 muestras de razonamiento generadas a partir de gpt-oss-120b en formato ShareGPT, con el objetivo de reforzar las capacidades de razonamiento del modelo pequeno mediante destilacion de un modelo mayor. El resultado es un modelo de 1.7B de parametros orientado a generacion de texto y razonamiento, con contexto de hasta 16.000 tokens, entrenado con llama-factory en 32 GPUs durante 5 epocas.
 
@@ -72,10 +72,10 @@ El model-index del autor declara una unica entrada de evaluacion (`sft__Superior
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci/1.7b-Comma0.1-...-sr30k | 1,7B | 16k | other | HuggingFace (16 descargas) | Ficha actual; sin benchmarks publicados |
-| ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated | 1,7B | 16k | no disponible | HuggingFace | Modelo base del ajuste |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | HuggingFace | Alternativa con licencia permisiva y benchmarks publicados |
-| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | HuggingFace | Alternativa con contexto muy superior y ecosistema amplio |
+| open-sci/1.7b-Comma0.1-...-sr30k | 1,7B | 16k | other | Hugging Face (16 descargas) | Ficha actual; sin benchmarks publicados |
+| ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated | 1,7B | 16k | no disponible | Hugging Face | Modelo base del ajuste |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Hugging Face | Alternativa con licencia permisiva y benchmarks publicados |
+| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | Hugging Face | Alternativa con contexto muy superior y ecosistema amplio |
 
 La comparacion con Qwen2.5-1.5B-Instruct y Llama-3.2-1B-Instruct es orientativa por tamano y categoria; no se dispone de datos de rendimiento del modelo evaluado para establecer una comparacion cuantitativa.
 
@@ -94,7 +94,7 @@ La comparacion con Qwen2.5-1.5B-Instruct y Llama-3.2-1B-Instruct es orientativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated-sr30k
+- Hugging Face: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-SFT-Tulu3-decontaminated
 - Dataset de entrenamiento (referenciado en la model card): `Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf` (no se proporciona URL publica)
 - Llama-factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory

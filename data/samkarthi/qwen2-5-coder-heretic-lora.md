@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SamKarthi/Qwen2.5-Coder-Heretic-LoRA es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado como un ajuste fino eficiente sobre el modelo base Qwen/Qwen2.5-Coder-7B-Instruct. El autor, SamKarthi, no ha proporcionado una descripción funcional, datos de entrenamiento ni objetivos concretos en la model card, que permanece prácticamente vacía. El repositorio contiene únicamente los pesos del adaptador (formato safetensors) y los archivos de configuración de PEFT, con un tamaño total de 0.0 GB en el repositorio, lo que sugiere que se trata de un adaptador de dimensiones reducidas.
+SamKarthi/Qwen2.5-Coder-Heretic-LoRA es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado como un ajuste fino eficiente sobre el modelo base Qwen/Qwen2.5-Coder-7B-Instruct. El autor, SamKarthi, no ha proporcionado una descripción funcional, datos de entrenamiento ni objetivos concretos en la model card, que permanece prácticamente vacía. El repositorio contiene únicamente los pesos del adaptador (formato safetensors) y los archivos de configuración de PEFT, con un tamaño total de 0.0 GB en el repositorio, lo que sugiere que se trata de un adaptador de dimensiones reducidas.
 
 Al ser un LoRA, el modelo no es independiente: requiere cargar el modelo base Qwen2.5-Coder-7B-Instruct para funcionar. La relevancia de este adaptador radica en que, en principio, hereda las capacidades del modelo base (generación de código, razonamiento, soporte de instrucciones) con un coste de entrenamiento e inferencia reducido, aunque no se dispone de ninguna evaluación publicada que respalde mejoras específicas. La falta de información detallada limita cualquier análisis técnico riguroso más allá de su naturaleza de adaptador.
 
@@ -61,6 +61,6 @@ No disponible. No se conocen otros adaptadores LoRA del mismo autor ni comparaci
 
 ## Enlaces
 
-- [HuggingFace: SamKarthi/Qwen2.5-Coder-Heretic-LoRA](https://huggingface.co/SamKarthi/Qwen2.5-Coder-Heretic-LoRA)
+- [Hugging Face: SamKarthi/Qwen2.5-Coder-Heretic-LoRA](https://huggingface.co/SamKarthi/Qwen2.5-Coder-Heretic-LoRA)
 - [Modelo base: Qwen/Qwen2.5-Coder-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)
 - [Articulo LoRA (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)

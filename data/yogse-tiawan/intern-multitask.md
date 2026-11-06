@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yogse-tiawan/intern-multitask` es un repositorio de HuggingFace publicado por el usuario yogse-tiawan (Reza Setiawan) que contiene una implementacion de una Swin Transformer Tiny (Swin T) orientada a tareas multiples (multitask). No se trata de un modelo entrenado ni de un release listo para produccion: la propia model card lo describe explicitamente como un punto de partida reproducible ("the base variant is a reproducible starting point, not a trained model release"). El repositorio incluye el codigo del modelo y un ejemplo ejecutable, un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
+`yogse-tiawan/intern-multitask` es un repositorio de Hugging Face publicado por el usuario yogse-tiawan (Reza Setiawan) que contiene una implementacion de una Swin Transformer Tiny (Swin T) orientada a tareas multiples (multitask). No se trata de un modelo entrenado ni de un release listo para produccion: la propia model card lo describe explicitamente como un punto de partida reproducible ("the base variant is a reproducible starting point, not a trained model release"). El repositorio incluye el codigo del modelo y un ejemplo ejecutable, un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
 
 La arquitectura declarada es Swin T, con atencion de ventana deslizante (sliding window attention), fusion mediante concatenacion y MLP (concat mlp), activacion ReLU y normalizacion GroupNorm. La escala indicada es "base". El metadato de safetensors reporta 16,576 parametros totales, aunque la informacion disponible no especifica la unidad, por lo que el dato debe tratarse con cautela. El repositorio ocupa 0.0 GB, acumula 0 descargas y 0 likes en el momento de la consulta, y se distribuye bajo licencia MIT.
 
@@ -73,10 +73,10 @@ La comparacion se realiza con alternativas de la misma familia y escala (vision 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| intern-multitask (este) | 16,576 (unidad no aclarada) | no aplica | MIT | HuggingFace | Checkpoint de inicializacion, sin entrenar |
+| intern-multitask (este) | 16,576 (unidad no aclarada) | no aplica | MIT | Hugging Face | Checkpoint de inicializacion, sin entrenar |
 | Swin-T (referencia) | ~28 M (referencia publica) | no aplica | MIT (torchvision) | PyTorch / torchvision | Modelo preentrenado en ImageNet |
-| ConvNeXt-Tiny (referencia) | ~28 M (referencia publica) | no aplica | MIT | HuggingFace / torchvision | Modelo preentrenado en ImageNet |
-| DeiT-Tiny (referencia) | ~5.7 M (referencia publica) | no aplica | Apache-2.0 | HuggingFace / torchvision | Modelo preentrenado en ImageNet |
+| ConvNeXt-Tiny (referencia) | ~28 M (referencia publica) | no aplica | MIT | Hugging Face / torchvision | Modelo preentrenado en ImageNet |
+| DeiT-Tiny (referencia) | ~5.7 M (referencia publica) | no aplica | Apache-2.0 | Hugging Face / torchvision | Modelo preentrenado en ImageNet |
 
 La diferencia fundamental no es de tamano, sino de estado: este repositorio distribuye pesos sin entrenar, mientras que las alternativas citadas incluyen checkpoints preentrenados y evaluados. No se dispone de metricas comparativas de este modelo porque no se han publicado.
 
@@ -94,6 +94,6 @@ La diferencia fundamental no es de tamano, sino de estado: este repositorio dist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yogse-tiawan/intern-multitask
+- Modelo en Hugging Face: https://huggingface.co/yogse-tiawan/intern-multitask
 - Perfil del autor: https://huggingface.co/yogse-tiawan
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales especificos de este modelo. El resto de resultados de la busqueda no guardan relacion con `yogse-tiawan/intern-multitask`.

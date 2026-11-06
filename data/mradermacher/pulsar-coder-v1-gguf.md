@@ -4,7 +4,7 @@
 
 pulsar-coder-v1-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF generadas por mradermacher a partir del modelo base Sonorix/pulsar-coder-v1. No se trata de un modelo entrenado por el autor del repositorio, sino de una redistribucion optimizada para inferencia local: el modelo original se publica en safetensors con 1.543.714.304 parametros (aproximadamente 1,54 mil millones) y aqui se ofrece reempaquetado en 12 variantes de cuantizacion que van desde x-f16 hasta Q2_K, pasando por IQ4_XS.
 
-El proposito del repositorio es permitir ejecutar el modelo en hardware de consumo mediante llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python), reduciendo el peso desde los aproximadamente 3 GB en f16 hasta menos de 1 GB en las cuantizaciones mas agresivas. La etiqueta conversational y endpoints_compatible indica que el modelo esta pensado para chat y que es desplegable en HuggingFace Inference Endpoints.
+El proposito del repositorio es permitir ejecutar el modelo en hardware de consumo mediante llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python), reduciendo el peso desde los aproximadamente 3 GB en f16 hasta menos de 1 GB en las cuantizaciones mas agresivas. La etiqueta conversational y endpoints_compatible indica que el modelo esta pensado para chat y que es desplegable en Hugging Face Inference Endpoints.
 
 La relevancia actual es la habitual de los modelos de ~1,5B orientados a codigo: ofrecen un compromiso entre calidad de generacion y coste computacional, y son candidatos para autocompletado en editores, agentes locales y tareas de bajo coste. Sin embargo, la informacion publica disponible es muy escasa: no se documentan arquitectura, contexto, idiomas, licencia ni resultados de benchmarks, y la busqueda web no ha devuelto ninguna fuente tecnica relevante.
 
@@ -28,13 +28,13 @@ La relevancia actual es la habitual de los modelos de ~1,5B orientados a codigo:
 
 No se dispone de informacion sobre la arquitectura del modelo base. El nombre y los tags (conversational, coder) sugieren un modelo de lenguaje orientado a codigo y conversacion, presumiblemente un transformer decoder-only, pero esto no puede confirmarse con los datos proporcionados. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
 
-Lo unico verificable tecnicamente es el proceso de cuantizacion: segun los metadatos del README, se utilizo quantize_version 2 con convert_type hf, es decir, una conversion desde pesos HuggingFace a GGUF seguida de cuantizacion estatica. Las variantes generadas cubren el espectro habitual de llama.cpp, incluyendo la cuantizacion mixta IQ4_XS, que aplica distintos anchos de bits segun la importancia de cada tensor. No hay informacion sobre innovaciones tecnicas del modelo original (atencion lineal, decodificacion especulativa, etc.).
+Lo unico verificable tecnicamente es el proceso de cuantizacion: segun los metadatos del README, se utilizo quantize_version 2 con convert_type hf, es decir, una conversion desde pesos Hugging Face a GGUF seguida de cuantizacion estatica. Las variantes generadas cubren el espectro habitual de llama.cpp, incluyendo la cuantizacion mixta IQ4_XS, que aplica distintos anchos de bits segun la importancia de cada tensor. No hay informacion sobre innovaciones tecnicas del modelo original (atencion lineal, decodificacion especulativa, etc.).
 
 ## Capacidades
 
 - Generacion de texto conversacional, segun el tag conversational del repositorio.
 - Generacion y asistencia en codigo, inferida del nombre del modelo base (pulsar-coder-v1), aunque no se detallan lenguajes soportados.
-- Compatibilidad con HuggingFace Inference Endpoints, indicada por el tag endpoints_compatible.
+- Compatibilidad con Hugging Face Inference Endpoints, indicada por el tag endpoints_compatible.
 - Inferencia local mediante el ecosistema llama.cpp gracias al formato GGUF.
 - No se documenta soporte de tool calling, function calling ni uso agentico.
 - No se documenta modo thinking, vision, audio ni ninguna capacidad multimodal.
@@ -71,7 +71,7 @@ Estimaciones basadas en el numero de parametros (1,54B) y el peso tipico por par
 - Cabe holgadamente en GPU de consumo: RTX 3060 (12 GB), RTX 4060, RTX 4070, RTX 4090, e incluso en iGPU con memoria unificada o en CPU con RAM suficiente.
 - En CPU, las cuantizaciones Q4_K_M o inferiores son las mas adecuadas para mantener velocidad razonable con llama.cpp.
 - Para entornos de servidor (A100, H100, L40S) el modelo es pequeno y se pueden ejecutar muchas instancias concurrentes por GPU, pero no se beneficiaria de la capacidad de calculo de forma individual.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, Jan, kobold.cpp, llama-cpp-python y HuggingFace Inference Endpoints. vLLM y TGI tienen soporte limitado o no nativo de GGUF.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, Jan, kobold.cpp, llama-cpp-python y Hugging Face Inference Endpoints. vLLM y TGI tienen soporte limitado o no nativo de GGUF.
 - Latencia y throughput: no disponible (no se aportan mediciones).
 
 ## Comparativa con modelos similares

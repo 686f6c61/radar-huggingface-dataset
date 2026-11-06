@@ -79,7 +79,7 @@ La comparativa se limita a la propia familia de adaptadores, ya que no se dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3-l2
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3-l2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo SFT requerido: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l2
 - Modelo principal del nivel L2: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l2

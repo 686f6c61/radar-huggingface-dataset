@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Modalidad | Dimensión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `perplexity-ai/pplx-embed-v2-context-0.6b` | 595M | no disponible | texto + imagen | 1024 (MRL) | no disponible | HuggingFace, 491 descargas |
-| `perplexity-ai/pplx-embed-v2-context-9b` | no disponible (9B por nombre) | no disponible | texto + imagen | 1024 (prefijo MRL) | no disponible | HuggingFace |
-| `perplexity-ai/pplx-embed-v2-late-0.6b` (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `perplexity-ai/pplx-embed-v2-context-0.6b` | 595M | no disponible | texto + imagen | 1024 (MRL) | no disponible | Hugging Face, 491 descargas |
+| `perplexity-ai/pplx-embed-v2-context-9b` | no disponible (9B por nombre) | no disponible | texto + imagen | 1024 (prefijo MRL) | no disponible | Hugging Face |
+| `perplexity-ai/pplx-embed-v2-late-0.6b` (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres modelos comparten familia y espacio de embeddings; el de 0,6B es la variante ligera del de 9B y un fine-tune del `late-0.6b`. No se dispone de datos de benchmarks ni de otros modelos comparables externos en la información proporcionada.
 
@@ -91,7 +91,7 @@ Los tres modelos comparten familia y espacio de embeddings; el de 0,6B es la var
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/perplexity-ai/pplx-embed-v2-context-0.6b
+- Modelo en Hugging Face: https://huggingface.co/perplexity-ai/pplx-embed-v2-context-0.6b
 - Modelo de 9B con espacio compartido: https://huggingface.co/perplexity-ai/pplx-embed-v2-context-9b
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
 - Informe técnico: https://arxiv.org/abs/2610.38854

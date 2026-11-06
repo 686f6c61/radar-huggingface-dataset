@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/odesign-dna-rigid | 355,687 M (coordenadas) | No disponible | Diseno de ADN con contexto rigido | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/odesign-protein-rigid | No disponible | No disponible | Diseno de proteina con contexto rigido | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/odesign-rna-rigid | No disponible | No disponible | Diseno de ARN con contexto rigido | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/odesign-ligand-rigid | No disponible | No disponible | Diseno provisional de ligando | AGPL-3.0 | HuggingFace (no oficial) |
+| oteam/odesign-dna-rigid | 355,687 M (coordenadas) | No disponible | Diseno de ADN con contexto rigido | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/odesign-protein-rigid | No disponible | No disponible | Diseno de proteina con contexto rigido | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/odesign-rna-rigid | No disponible | No disponible | Diseno de ARN con contexto rigido | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/odesign-ligand-rigid | No disponible | No disponible | Diseno provisional de ligando | AGPL-3.0 | Hugging Face (no oficial) |
 
 No se dispone de datos de benchmarks ni de modelos externos comparables en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de modelos externos comparables en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/odesign-dna-rigid
+- Modelo en Hugging Face: https://huggingface.co/oteam/odesign-dna-rigid
 - Paper: https://arxiv.org/abs/2510.22304
 - Repositorio oficial de ODesign: https://github.com/The-Institute-for-AI-Molecular-Design/ODesign
 - Codigo OFoldX (odesign): https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/odesign

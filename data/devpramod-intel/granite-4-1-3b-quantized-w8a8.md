@@ -92,7 +92,7 @@ La comparativa principal es contra el base BF16 del mismo modelo (misma arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devpramod-intel/granite-4.1-3b-quantized.w8a8
+- Modelo en Hugging Face: https://huggingface.co/devpramod-intel/granite-4.1-3b-quantized.w8a8
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.1-3b
 - Coleccion de modelos cuantizados de IBM Granite: https://huggingface.co/collections/ibm-granite/granite-quantized-models
 - Repositorio GitHub de Granite 4.1: https://github.com/ibm-granite/granite-4.1-language-models

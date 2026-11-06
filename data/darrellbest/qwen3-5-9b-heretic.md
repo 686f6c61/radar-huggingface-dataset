@@ -80,11 +80,11 @@ Comprobaciones cualitativas del autor: 40/40 problemas aritméticos resueltos en
 
 | Modelo | Parámetros | Contexto | Rechazos / KL | Técnica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| darrellbest/Qwen3.5-9B-Heretic | 9,41 B | No disponible | 5/100 · 0,0403 | ARA full-weight, parámetros de NullpoLab, checkpoint completo reparado | Apache 2.0 | HuggingFace, safetensors bf16 |
-| NullpoLab/Qwen3.5-9B-Heretic-ARA-Refusals5 | 9 B | No disponible | 5/100 · 0,0239 (según el autor de ese repositorio) | ARA | Apache 2.0 | HuggingFace |
-| trohrbaugh/Qwen3.5-9B-heretic-v2 | 9 B | No disponible | 6/100 · 0,0793 | Ablación direccional | Apache 2.0 | HuggingFace |
-| Kewk/Heretical-Qwen3.5-9B | 9 B | No disponible | 3/100 · 0,0366 | Fork de Heretic con ajuste propio | Apache 2.0 | HuggingFace |
-| DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP | 9 B | No disponible | No disponible | Fine-tune y merge multi-etapa, además de ablación | Apache 2.0 (según la familia Qwen) | HuggingFace, incluye GGUF |
+| darrellbest/Qwen3.5-9B-Heretic | 9,41 B | No disponible | 5/100 · 0,0403 | ARA full-weight, parámetros de NullpoLab, checkpoint completo reparado | Apache 2.0 | Hugging Face, safetensors bf16 |
+| NullpoLab/Qwen3.5-9B-Heretic-ARA-Refusals5 | 9 B | No disponible | 5/100 · 0,0239 (según el autor de ese repositorio) | ARA | Apache 2.0 | Hugging Face |
+| trohrbaugh/Qwen3.5-9B-heretic-v2 | 9 B | No disponible | 6/100 · 0,0793 | Ablación direccional | Apache 2.0 | Hugging Face |
+| Kewk/Heretical-Qwen3.5-9B | 9 B | No disponible | 3/100 · 0,0366 | Fork de Heretic con ajuste propio | Apache 2.0 | Hugging Face |
+| DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP | 9 B | No disponible | No disponible | Fine-tune y merge multi-etapa, además de ablación | Apache 2.0 (según la familia Qwen) | Hugging Face, incluye GGUF |
 
 La diferencia principal de esta release frente a las demás es la integridad del checkpoint exportado: conserva los tensores MTP y los parámetros float32 de Gated DeltaNet que otras herramientas descartan o redondean. Los valores de rechazo y KL no son directamente comparables entre repositorios, porque cada autor usa su propio fork, prompt de sistema y conjunto de evaluación.
 
@@ -101,7 +101,7 @@ La diferencia principal de esta release frente a las demás es la integridad del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-9B-Heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Heretic (herramienta de ablación): https://github.com/p-e-w/heretic

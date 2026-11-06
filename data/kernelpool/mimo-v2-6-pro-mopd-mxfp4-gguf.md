@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes ni de terc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kernelpool/MiMo-V2.6-Pro-MOPD-MXFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kernelpool/MiMo-V2.6-Pro-MOPD-MXFP4-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
 - Conversion previa (reemplazada): https://huggingface.co/kernelpool/MiMo-V2.6-Pro-RL-MXFP4-GGUF
 - Repositorio DwarfStar (ds4): https://github.com/antirez/ds4

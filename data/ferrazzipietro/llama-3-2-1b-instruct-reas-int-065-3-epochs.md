@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-Instruct-reas-int-065-3-epochs es un modelo de lenguaje de 1.235.814.400 parámetros, resultado de un fine-tuning del modelo meta-llama/Llama-3.2-1B-Instruct. Ha sido desarrollado por el usuario ferrazzipietro y publicado en HuggingFace bajo la licencia llama3.2. Se trata de un modelo de generación de texto conversacional, orientado a seguir instrucciones, que hereda la arquitectura transformer decoder-only de la familia Llama 3.2.
+Llama-3.2-1B-Instruct-reas-int-065-3-epochs es un modelo de lenguaje de 1.235.814.400 parámetros, resultado de un fine-tuning del modelo meta-llama/Llama-3.2-1B-Instruct. Ha sido desarrollado por el usuario ferrazzipietro y publicado en Hugging Face bajo la licencia llama3.2. Se trata de un modelo de generación de texto conversacional, orientado a seguir instrucciones, que hereda la arquitectura transformer decoder-only de la familia Llama 3.2.
 
 El modelo se ha entrenado durante 3 épocas sobre un conjunto de datos desconocido, con un learning rate de 5e-06 y un tamaño de lote efectivo de 32. No se han publicado resultados de benchmarks ni información sobre el dataset de entrenamiento, lo que limita la evaluación de su rendimiento. Su relevancia radica en ser un modelo pequeño y ligero, apto para prototipado y despliegue en hardware modesto, aunque su fiabilidad no está demostrada.
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-Instruct-reas-int-065-3-epochs | 1.235.814.400 | no disponible | no disponible | llama3.2 | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1.235.814.400 | 128k | no disponible | llama3.2 | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1.54B | 32k | no disponible | Apache 2.0 | HuggingFace |
-| Gemma-2-2B | 2.6B | 8k | no disponible | Gemma | HuggingFace |
+| Llama-3.2-1B-Instruct-reas-int-065-3-epochs | 1.235.814.400 | no disponible | no disponible | llama3.2 | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1.235.814.400 | 128k | no disponible | llama3.2 | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1.54B | 32k | no disponible | Apache 2.0 | Hugging Face |
+| Gemma-2-2B | 2.6B | 8k | no disponible | Gemma | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,5 +73,5 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ferrazzipietro/Llama-3.2-1B-Instruct-reas-int-065-3-epochs
+- Modelo en Hugging Face: https://huggingface.co/ferrazzipietro/Llama-3.2-1B-Instruct-reas-int-065-3-epochs
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

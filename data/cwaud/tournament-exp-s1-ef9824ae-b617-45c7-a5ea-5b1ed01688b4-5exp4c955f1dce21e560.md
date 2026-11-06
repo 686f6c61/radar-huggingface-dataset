@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp4c955f1dce21e560` es un checkpoint de 361.822.080 parametros (aproximadamente 362 millones) publicado por el usuario `cwaud` en HuggingFace. El nombre del repositorio sigue el patron `tournament-exp-s1-<uuid>-<hash>`, y en los resultados de busqueda aparecen otros repositorios del mismo autor con la misma convencion de nombres, lo que apunta a artefactos generados de forma automatizada dentro de una campana de experimentos ("tournament") y no a un modelo con documentacion de producto ni ficha tecnica publicada.
+`cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp4c955f1dce21e560` es un checkpoint de 361.822.080 parametros (aproximadamente 362 millones) publicado por el usuario `cwaud` en Hugging Face. El nombre del repositorio sigue el patron `tournament-exp-s1-<uuid>-<hash>`, y en los resultados de busqueda aparecen otros repositorios del mismo autor con la misma convencion de nombres, lo que apunta a artefactos generados de forma automatizada dentro de una campana de experimentos ("tournament") y no a un modelo con documentacion de producto ni ficha tecnica publicada.
 
-No existe informacion publica asociada al repositorio mas alla de los metadatos de HuggingFace: no hay model card descriptiva, pipeline declarado, licencia, idiomas ni resultados de evaluacion. La unica etiqueta de arquitectura disponible es `llama`, junto con `safetensors` y `region:us`. El peso del repositorio es de 0,7 GB, coherente con un checkpoint de ~362 M de parametros almacenado en precision de 16 bits.
+No existe informacion publica asociada al repositorio mas alla de los metadatos de Hugging Face: no hay model card descriptiva, pipeline declarado, licencia, idiomas ni resultados de evaluacion. La unica etiqueta de arquitectura disponible es `llama`, junto con `safetensors` y `region:us`. El peso del repositorio es de 0,7 GB, coherente con un checkpoint de ~362 M de parametros almacenado en precision de 16 bits.
 
 Su relevancia es, por tanto, limitada y de caracter experimental: se trata de un modelo de escala pequena (rango "small language model"), utilizable para pruebas de concepto, ajuste fino ligero y experimentacion en hardware de consumo, pero sin garantias de calidad, procedencia de datos ni condiciones de uso. Cualquier evaluacion en produccion exige auditar primero los pesos y el tokenizador, dado que no hay declaracion de licencia.
 
@@ -89,7 +89,7 @@ La diferencia principal no es de rendimiento medido, sino de trazabilidad: las a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp4c955f1dce21e560
+- Repositorio en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp4c955f1dce21e560
 - Repositorio relacionado del mismo autor: https://huggingface.co/cwaud/tournament-exp-s1-28c9f3bb-81f7-47b6-9468-4918b98904ed-5Exp15defdb10e5e7362
 - Repositorio relacionado del mismo autor: https://huggingface.co/cwaud/tournament-exp-s1-ce763cd5-8bfc-4fb0-be95-9935cb61ffd2-5Expb5b45d58a999757c
 - Referencia externa que menciona la serie de repositorios: https://www.china-z.net/news/2026-09-24-11-bf975fec.html

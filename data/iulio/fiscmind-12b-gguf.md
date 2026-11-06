@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FiscMind-12B-GGUF es un modelo de lenguaje fine-tuneado y convertido a formato GGUF mediante la librería Unsloth. El autor es iulio, y el modelo está alojado en HuggingFace. Aunque la model card no proporciona detalles sobre el fine-tuning, el nombre del archivo (`mistral-nemo-instruct-2407.Q4_K_M.gguf`) indica que se trata de una cuantización Q4_K_M del modelo Mistral NeMo Instruct 2407, un transformer de 12 000 millones de parámetros desarrollado por Mistral AI en colaboración con NVIDIA. El modelo está orientado a tareas conversacionales, como refleja la etiqueta `conversational`, y es compatible con endpoints, lo que facilita su despliegue en entornos de producción.
+FiscMind-12B-GGUF es un modelo de lenguaje fine-tuneado y convertido a formato GGUF mediante la librería Unsloth. El autor es iulio, y el modelo está alojado en Hugging Face. Aunque la model card no proporciona detalles sobre el fine-tuning, el nombre del archivo (`mistral-nemo-instruct-2407.Q4_K_M.gguf`) indica que se trata de una cuantización Q4_K_M del modelo Mistral NeMo Instruct 2407, un transformer de 12 000 millones de parámetros desarrollado por Mistral AI en colaboración con NVIDIA. El modelo está orientado a tareas conversacionales, como refleja la etiqueta `conversational`, y es compatible con endpoints, lo que facilita su despliegue en entornos de producción.
 
 La relevancia de este modelo radica en su formato GGUF, que permite ejecutarlo eficientemente en CPU y GPU mediante llama.cpp, Ollama y otras herramientas compatibles. Al estar basado en Mistral NeMo, hereda una arquitectura moderna con atención de ventana deslizante y un contexto de 128 000 tokens, aunque no se confirma si el fine-tuning ha modificado estas características. El repositorio incluye un único archivo de pesos cuantizado y un Modelfile de Ollama para simplificar la puesta en marcha.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
 | FiscMind-12B-GGUF | 12,2B | no disponible | no disponible | GGUF | Fine-tune de Mistral NeMo, cuantizado Q4_K_M |
-| Mistral NeMo Instruct 2407 | 12,2B | 128 000 | Apache 2.0 | safetensors | Modelo base, disponible en HuggingFace |
+| Mistral NeMo Instruct 2407 | 12,2B | 128 000 | Apache 2.0 | safetensors | Modelo base, disponible en Hugging Face |
 | Llama 3.1 8B Instruct | 8B | 128 000 | Llama 3.1 Community License | safetensors, GGUF | Alternativa de tamaño similar, muy popular |
 
 No se dispone de datos de rendimiento comparativo. La comparativa se basa en características generales de los modelos base.
@@ -71,6 +71,6 @@ No se dispone de datos de rendimiento comparativo. La comparativa se basa en car
 
 ## Enlaces
 
-- [HuggingFace - iulio/FiscMind-12B-GGUF](https://huggingface.co/iulio/FiscMind-12B-GGUF)
+- [Hugging Face - iulio/FiscMind-12B-GGUF](https://huggingface.co/iulio/FiscMind-12B-GGUF)
 - [Unsloth (herramienta de entrenamiento y conversión)](https://github.com/unslothai/unsloth)
 - [Mistral NeMo Instruct 2407 (modelo base)](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| calabar77/bart-cnn-samsum-peft | No disponible (adaptador LoRA) | No disponible (BART estandar: 1024) | Adaptador PEFT sobre BART | MIT | HuggingFace, 0 descargas |
-| ingeniumacademy/bart-cnn-samsum-finetuned | No disponible | No disponible | Modelo completo BART ajustado | No disponible | HuggingFace |
-| facebook/bart-large-cnn | ~406 M | 1024 tokens | BART ajustado a resumen de noticias | MIT | HuggingFace, ampliamente usado |
-| philschmid/bart-large-cnn-samsum | ~406 M | 1024 tokens | BART ajustado a resumen de noticias y dialogos | No verificado en la informacion disponible | HuggingFace |
+| calabar77/bart-cnn-samsum-peft | No disponible (adaptador LoRA) | No disponible (BART estandar: 1024) | Adaptador PEFT sobre BART | MIT | Hugging Face, 0 descargas |
+| ingeniumacademy/bart-cnn-samsum-finetuned | No disponible | No disponible | Modelo completo BART ajustado | No disponible | Hugging Face |
+| facebook/bart-large-cnn | ~406 M | 1024 tokens | BART ajustado a resumen de noticias | MIT | Hugging Face, ampliamente usado |
+| philschmid/bart-large-cnn-samsum | ~406 M | 1024 tokens | BART ajustado a resumen de noticias y dialogos | No verificado en la informacion disponible | Hugging Face |
 
 No se dispone de metricas comparativas de calidad (ROUGE u otras) para ninguno de los modelos de la tabla en la informacion proporcionada, por lo que la comparacion se limita a aspectos estructurales y de licencia.
 
@@ -86,6 +86,6 @@ No se dispone de metricas comparativas de calidad (ROUGE u otras) para ninguno d
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/calabar77/bart-cnn-samsum-peft
+- Repositorio Hugging Face del adaptador: https://huggingface.co/calabar77/bart-cnn-samsum-peft
 - Modelo base: https://huggingface.co/ingeniumacademy/bart-cnn-samsum-finetuned
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo); los resultados devueltos corresponden a sitios sin relacion con el modelo.

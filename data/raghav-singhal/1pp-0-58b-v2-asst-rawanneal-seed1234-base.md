@@ -27,7 +27,7 @@ El modelo sigue una arquitectura transformer decoder de tipo Llama con 24 capas,
 
 El preentrenamiento utiliza los documentos originales de DCLM-edu durante los primeros 9.996 pasos y, en el cooldown (los últimos 1.110 de 11.106 pasos), conversaciones 1PP reescritas a partir de esos mismos documentos, con la pérdida enmascarada para computarse solo sobre los turnos del asistente. El batch global es de 512 secuencias × 4.096 tokens, con enmascaramiento de atención entre documentos. El optimizador es Muon (matrix LR 0,005) combinado con Adam para el resto de parámetros (LR 3e-3 para embeddings y capa de salida, 3e-3 para las normas), warmup de 699 pasos, fase constante y decaimiento lineal en los últimos 1.110 pasos hasta 1/100, weight decay 0,1, init std 0,0119 y entrenamiento en bf16. El modelo consume 23,29B posiciones de token en total, lo que equivale a 20,3 tokens de asistente por parámetro.
 
-La verificación de los pesos publicados en HuggingFace frente al checkpoint original de Megatron muestra diferencias absolutas de pérdida de validación de 0,0015 y 0,0014 en dos conjuntos de validación, lo que confirma la fidelidad de la conversión. La pérdida de validación final reportada es de 1,807 sobre texto de asistente, 3,422 sobre texto de usuario y 3,194 sobre texto de documento.
+La verificación de los pesos publicados en Hugging Face frente al checkpoint original de Megatron muestra diferencias absolutas de pérdida de validación de 0,0015 y 0,0014 en dos conjuntos de validación, lo que confirma la fidelidad de la conversión. La pérdida de validación final reportada es de 1,807 sobre texto de asistente, 3,422 sobre texto de usuario y 3,194 sobre texto de documento.
 
 ## Capacidades
 
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| 1pp-0.58b-v2-asst-rawanneal-seed1234-base | 580M | 4.096 | Apache 2.0 | en | HuggingFace |
-| SmolLM2-360M | 360M | 8.192 | Apache 2.0 | en (principalmente) | HuggingFace |
-| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | multilingüe | HuggingFace |
-| Llama-3.2-1B | 1.240M | 131.072 | Llama 3.2 Community License | multilingüe | HuggingFace |
+| 1pp-0.58b-v2-asst-rawanneal-seed1234-base | 580M | 4.096 | Apache 2.0 | en | Hugging Face |
+| SmolLM2-360M | 360M | 8.192 | Apache 2.0 | en (principalmente) | Hugging Face |
+| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | multilingüe | Hugging Face |
+| Llama-3.2-1B | 1.240M | 131.072 | Llama 3.2 Community License | multilingüe | Hugging Face |
 
 La comparación con estos modelos es únicamente estructural: el modelo 1PP es un artefacto de investigación sin benchmarks publicados, mientras que SmolLM2, Qwen2.5 y Llama 3.2 cuentan con evaluaciones estándar y están orientados a uso general. En contexto, el modelo 1PP es el más limitado de la tabla (4.096 tokens), y en licencia comparte Apache 2.0 con SmolLM2 y Qwen2.5, mientras que Llama 3.2 usa una licencia comunitaria con restricciones.
 
@@ -100,7 +100,7 @@ La comparación con estos modelos es únicamente estructural: el modelo 1PP es u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-rawanneal-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-rawanneal-seed1234-base
 - Variante raw (referencia del mid-training): https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed1234-base
 - Variante asst completa: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-asst-seed1234-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

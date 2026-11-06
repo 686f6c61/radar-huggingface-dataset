@@ -32,7 +32,7 @@ El entrenamiento se realizó con la herramienta Tinker de Thinking Machines. El 
 - Imitación conductual de estilo: el adaptador ajusta el comportamiento de generación del modelo base para aproximarse al de Gemma-4-31B en tareas de escritura creativa sobre prompts.
 - Escritura creativa: al estar entrenado sobre WritingPrompts, el modelo resultante debería mostrar un estilo de generación de historias más cercano al del modelo imitado.
 - Capacidades heredadas del modelo base: al ser un adaptador sobre Nemotron-Nano-30B-A3B, conserva las capacidades del modelo base (generación de texto, razonamiento, código), aunque no se documentan explícitamente en este repositorio.
-- Integración con PEFT: se puede cargar mediante PeftModel de la librería PEFT de HuggingFace, lo que facilita su uso en pipelines existentes con transformers.
+- Integración con PEFT: se puede cargar mediante PeftModel de la librería PEFT de Hugging Face, lo que facilita su uso en pipelines existentes con transformers.
 - Reproducibilidad: al fijar la semilla (seed42) y publicar el adaptador, los resultados del estudio son reproducibles por terceros.
 
 No se documentan capacidades específicas como tool calling, soporte de agentes, multilingüismo, visión o modo de razonamiento para este adaptador concreto.
@@ -86,6 +86,6 @@ No se identifican adaptadores comparables publicados con el mismo objetivo (imit
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42)
 - [Modelo base: NVIDIA Nemotron-3-Nano-30B-A3B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16)
 - [Herramienta Tinker de Thinking Machines](https://thinkingmachines.ai/tinker/)

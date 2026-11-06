@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`apexnano/qubit-nexo-mini-6` es un repositorio de modelo publicado en HuggingFace por el usuario apexnano el 27 de octubre de 2026, bajo licencia MIT. En el momento de la consulta, la model card asociada contiene unicamente el campo de licencia, sin documentacion tecnica adicional: no se declara arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio no tiene etiqueta de pipeline asignada, no registra descargas ni likes y no se ha actualizado desde su creacion.
+`apexnano/qubit-nexo-mini-6` es un repositorio de modelo publicado en Hugging Face por el usuario apexnano el 27 de octubre de 2026, bajo licencia MIT. En el momento de la consulta, la model card asociada contiene unicamente el campo de licencia, sin documentacion tecnica adicional: no se declara arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio no tiene etiqueta de pipeline asignada, no registra descargas ni likes y no se ha actualizado desde su creacion.
 
 El nombre del repositorio incluye el sufijo "mini-6", que podria sugerir un modelo de aproximadamente 6000 millones de parametros o una sexta version de una familia "mini", pero se trata de una interpretacion del identificador y no de un dato confirmado por el autor en la informacion disponible. No debe asumirse ningun tamano, arquitectura ni capacidad concreta a partir del nombre.
 
@@ -39,7 +39,7 @@ No se ha documentado ninguna capacidad en la informacion disponible. En concreto
 - Capacidades multimodales (vision, audio): no documentadas.
 - Modos especiales (thinking mode, decodificacion larga): no documentados.
 
-La ausencia de la etiqueta de pipeline en HuggingFace impide incluso determinar si el repositorio esta pensado para `text-generation`, `feature-extraction` u otra tarea.
+La ausencia de la etiqueta de pipeline en Hugging Face impide incluso determinar si el repositorio esta pensado para `text-generation`, `feature-extraction` u otra tarea.
 
 ## Casos de uso
 
@@ -87,6 +87,6 @@ No disponible. Sin parametros, contexto, licencia de pesos verificada ni resulta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/apexnano/qubit-nexo-mini-6
+- Hugging Face: https://huggingface.co/apexnano/qubit-nexo-mini-6
 
 No se han encontrado en la busqueda web otros enlaces asociados (papers, blogs, repositorios de codigo ni demos).

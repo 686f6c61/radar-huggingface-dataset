@@ -74,7 +74,7 @@ Ambos LoRAs comparten el mismo modelo base y buscan mejorar el realismo humano, 
 
 ## Enlaces
 
-- Repositorio de HuggingFace (B4100): https://huggingface.co/B4100/MiniMax-H3-Facial-Realism-CloseUp
+- Repositorio de Hugging Face (B4100): https://huggingface.co/B4100/MiniMax-H3-Facial-Realism-CloseUp
 - Repositorio original del creador (prithivMLmods): https://huggingface.co/prithivMLmods/MiniMax-H3-Facial-Realism-CloseUp
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio de GitHub de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3

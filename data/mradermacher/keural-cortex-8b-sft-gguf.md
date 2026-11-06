@@ -32,7 +32,7 @@ Su relevancia actual es doble: por un lado, ofrece una vía práctica de despleg
 
 La model card no describe la arquitectura interna del modelo. Los únicos indicios son las etiquetas del repositorio, que incluyen `qwen3`, lo que apunta a una arquitectura transformer decoder-only densa derivada de la familia Qwen3, y el sufijo `SFT` del nombre, que indica que el modelo base fue ajustado con supervisión (supervised fine-tuning) sobre un modelo preentrenado. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas posteriores de RLHF, DPO u otro tipo de alineación. Tampoco se detalla el chat template, el tokenizador concreto ni el método de escalado de contexto empleado para la ventana larga.
 
-En lo que respecta a esta publicación, se trata de una conversión de pesos y no de un entrenamiento. La model card declara `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que el proceso partió del checkpoint en formato HuggingFace y cuantizó los tensores de salida. El autor señala que en el momento de la publicación solo hay cuantizaciones estáticas y que no hay cuantizaciones ponderadas ni con imatrix (que suelen ofrecer mejor relación calidad/tamaño en bits bajos); esas versiones podrían no llegar a publicarse salvo petición explícita en la sección de discusiones.
+En lo que respecta a esta publicación, se trata de una conversión de pesos y no de un entrenamiento. La model card declara `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que el proceso partió del checkpoint en formato Hugging Face y cuantizó los tensores de salida. El autor señala que en el momento de la publicación solo hay cuantizaciones estáticas y que no hay cuantizaciones ponderadas ni con imatrix (que suelen ofrecer mejor relación calidad/tamaño en bits bajos); esas versiones podrían no llegar a publicarse salvo petición explícita en la sección de discusiones.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ En lo que respecta a esta publicación, se trata de una conversión de pesos y n
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, KMMLU ni de ninguna otra evaluación. Las búsquedas web realizadas tampoco devolvieron resultados relevantes sobre el modelo: los resultados obtenidos correspondían a un medio de comunicación serbio, sin relación alguna con este modelo.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, KMMLU ni de ninguna otra evaluación. Las búsquedas web realizadas tampoco devolvieron resultados relevantes sobre el modelo: los resultados obtenidos correspondían a un medio de comunicación serbio, sin relación alguna con este modelo.
 
 En consecuencia, no es posible comparar su rendimiento con alternativas de forma cuantitativa. Cualquier cifra de rendimiento que se utilice para decidir su adopción debería generarse mediante evaluación propia.
 

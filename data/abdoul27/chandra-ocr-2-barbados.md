@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Chandra OCR 2 Barbados es un ajuste fino del modelo de reconocimiento óptico de caracteres (OCR) Chandra OCR 2, desarrollado por el usuario Abdoul27 y publicado en HuggingFace bajo el identificador `Abdoul27/chandra-ocr-2-barbados`. El modelo base, `datalab-to/chandra-ocr-2`, es un sistema OCR de última generación creado por Datalab que convierte imágenes y PDF en HTML, Markdown o JSON estructurados conservando la información de maquetación. Este ajuste concreto incorpora la etiqueta `barbados` y las etiquetas de transcripción de escritura a mano (`handwriting`, `htr`, `historical-documents`), lo que apunta a una especialización en documentos históricos y manuscritos de Barbados.
+Chandra OCR 2 Barbados es un ajuste fino del modelo de reconocimiento óptico de caracteres (OCR) Chandra OCR 2, desarrollado por el usuario Abdoul27 y publicado en Hugging Face bajo el identificador `Abdoul27/chandra-ocr-2-barbados`. El modelo base, `datalab-to/chandra-ocr-2`, es un sistema OCR de última generación creado por Datalab que convierte imágenes y PDF en HTML, Markdown o JSON estructurados conservando la información de maquetación. Este ajuste concreto incorpora la etiqueta `barbados` y las etiquetas de transcripción de escritura a mano (`handwriting`, `htr`, `historical-documents`), lo que apunta a una especialización en documentos históricos y manuscritos de Barbados.
 
-Se trata de un modelo multimodal de tipo image-text-to-text con aproximadamente 5.174.964.736 parámetros según los pesos en safetensors del repositorio, construido sobre la familia de arquitecturas etiquetada como `qwen3_5`. El repositorio ocupa 10,4 GB y requiere acceso restringido (gated), lo que obliga a aceptar las condiciones de uso en HuggingFace antes de poder descargarlo. Su relevancia radica en la escasez de modelos OCR especializados en corpus históricos caribeños y en la posibilidad de reutilizar la arquitectura de Chandra OCR 2 para tareas de digitalización patrimonial.
+Se trata de un modelo multimodal de tipo image-text-to-text con aproximadamente 5.174.964.736 parámetros según los pesos en safetensors del repositorio, construido sobre la familia de arquitecturas etiquetada como `qwen3_5`. El repositorio ocupa 10,4 GB y requiere acceso restringido (gated), lo que obliga a aceptar las condiciones de uso en Hugging Face antes de poder descargarlo. Su relevancia radica en la escasez de modelos OCR especializados en corpus históricos caribeños y en la posibilidad de reutilizar la arquitectura de Chandra OCR 2 para tareas de digitalización patrimonial.
 
 La información pública disponible sobre este ajuste es muy limitada: no hay descargas ni interacciones registradas, no se documentan idiomas soportados específicos y no se publican detalles del proceso de entrenamiento ni resultados de evaluación propios. Por tanto, gran parte de las especificaciones que siguen se heredan del modelo base y deben tratarse como orientativas hasta que el autor publique documentación adicional.
 
@@ -12,7 +12,7 @@ La información pública disponible sobre este ajuste es muy limitada: no hay de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal vision-language, familia etiquetada como `qwen3_5` (según tags de HuggingFace) |
+| Arquitectura | Transformer multimodal vision-language, familia etiquetada como `qwen3_5` (según tags de Hugging Face) |
 | Parametros totales | 5.174.964.736 (≈5,17 mil millones) |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -68,16 +68,16 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Abdoul27/chandra-ocr-2-barbados | ≈5,17 mil millones | no disponible | no disponible (base: 90+) | chandra-ocr-2-modified-openrail-m (gated) | HuggingFace, acceso restringido |
-| datalab-to/chandra-ocr-2 | ≈4 mil millones (según regolo.ai) | no disponible | 90+ idiomas | modificada OpenRAIL-M | HuggingFace |
-| datalab-to/chandra | no disponible | no disponible | no disponible | no disponible | HuggingFace, versión anterior |
+| Abdoul27/chandra-ocr-2-barbados | ≈5,17 mil millones | no disponible | no disponible (base: 90+) | chandra-ocr-2-modified-openrail-m (gated) | Hugging Face, acceso restringido |
+| datalab-to/chandra-ocr-2 | ≈4 mil millones (según regolo.ai) | no disponible | 90+ idiomas | modificada OpenRAIL-M | Hugging Face |
+| datalab-to/chandra | no disponible | no disponible | no disponible | no disponible | Hugging Face, versión anterior |
 | Modelos OCR alternativos (dots.ocr, olmOCR, GOT-OCR2) | no disponible | no disponible | no disponible | no disponible | no disponible en la información recopilada |
 
 La comparación se limita a la relación entre el ajuste y su modelo base, ya que la información recopilada no incluye datos verificables de otros sistemas OCR contemporáneos que permitan una comparación rigurosa de parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga, lo que puede complicar su uso en pipelines automatizados.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga, lo que puede complicar su uso en pipelines automatizados.
 - Licencia `chandra-ocr-2-modified-openrail-m`: al ser una variante modificada de OpenRAIL-M, impone restricciones de uso (habitualmente cláusulas de uso responsable y posibles limitaciones comerciales). Es imprescindible revisar el texto completo de la licencia antes de cualquier despliegue en producción.
 - Ausencia de documentación: no hay información publicada sobre el dataset de entrenamiento, el proceso de ajuste ni los idiomas cubiertos, lo que dificulta estimar su comportamiento fuera del dominio de Barbados.
 - Riesgo de alucinación: como todo modelo generativo multimodal, puede inventar texto ausente en la imagen, especialmente en documentos degradados, sellos, márgenes o caligrafías atípicas.
@@ -89,8 +89,8 @@ La comparación se limita a la relación entre el ajuste y su modelo base, ya qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdoul27/chandra-ocr-2-barbados
-- Modelo base en HuggingFace: https://huggingface.co/datalab-to/chandra-ocr-2
+- Modelo en Hugging Face: https://huggingface.co/Abdoul27/chandra-ocr-2-barbados
+- Modelo base en Hugging Face: https://huggingface.co/datalab-to/chandra-ocr-2
 - Versión anterior del modelo base: https://huggingface.co/datalab-to/chandra
 - Repositorio GitHub de Datalab Chandra: https://github.com/datalab-to/chandra
 - Blog de presentación de Chandra (Datalab): https://www.datalab.to/blog/introducing-chandra

@@ -94,7 +94,7 @@ La comparación cuantitativa no es posible con la información disponible: no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SD-Next/Qwen-3.5-4B-sdnq-uint8
+- Modelo en Hugging Face: https://huggingface.co/SD-Next/Qwen-3.5-4B-sdnq-uint8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Modelo de origen de la variante heretic: https://huggingface.co/p-e-w/Qwen3.5-4B-heretic-new-ara-test-reproduced

@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Selbyggen/nb-whisper-large-distil-turbo-coreml
+- Modelo en Hugging Face: https://huggingface.co/Selbyggen/nb-whisper-large-distil-turbo-coreml
 - Modelo base: https://huggingface.co/NbAiLab/nb-whisper-large-distil-turbo-beta
 - NB-Whisper large en Core ML (3 GB): https://huggingface.co/Selbyggen/nb-whisper-large-coreml
 - WhisperKit: https://github.com/argmaxinc/WhisperKit

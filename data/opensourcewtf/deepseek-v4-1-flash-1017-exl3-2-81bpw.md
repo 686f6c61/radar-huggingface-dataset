@@ -60,7 +60,7 @@ Frente al pack EAQ de 2,9 bpw, la diferencia pareada por fila es de -0,00048 KLD
 
 ## Requisitos de hardware
 
-- Tamaño del pack: 384 GiB en disco (308 GB según el tamaño de repo indicado por HuggingFace; la model card cifra 384 GiB con las tablas Engram incluidas). Los expertos enrutados ocupan 189,2 GB y las tablas Engram 202,8 GB.
+- Tamaño del pack: 384 GiB en disco (308 GB según el tamaño de repo indicado por Hugging Face; la model card cifra 384 GiB con las tablas Engram incluidas). Los expertos enrutados ocupan 189,2 GB y las tablas Engram 202,8 GB.
 - Objetivo de despliegue: Macs con 128 GB de memoria unificada (Apple Silicon), transmitiendo los expertos enrutados desde SSD. No está indicado que quepa en GPUs de consumidor convencionales (una RTX 4090 con 24 GB es insuficiente por varios órdenes de magnitud).
 - GPU/servidor recomendados: no disponible explícitamente; para ejecución en GPU con exllamav3 se necesitaría una configuración multi-GPU con cientos de GB de VRAM o soporte de offload.
 - Software: exllamav3, rama `dev` (commit `ccc4c21` o posterior), que es donde se añadió el soporte de DeepSeek-V4.1 y donde se convirtió el pack. Para Apple Silicon, está previsto un repack de streaming para mlx-serve (pendiente de publicación).
@@ -75,7 +75,7 @@ Frente al pack EAQ de 2,9 bpw, la diferencia pareada por fila es de -0,00048 KLD
 | PPL (qbench) | 1,8305 | 1,8306 | no disponible |
 | KLD mean | 0,0396 | 0,0401 | no disponible |
 | Licencia | MIT | no disponible | no disponible |
-| Disponibilidad | Publicado en HuggingFace | Publicado en HuggingFace | Sustituidos por este pack |
+| Disponibilidad | Publicado en Hugging Face | Publicado en Hugging Face | Sustituidos por este pack |
 
 Otros modelos comparables de la misma categoría (MoE grandes cuantizados a ultra-baja precisión): no disponible.
 

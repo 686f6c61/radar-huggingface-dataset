@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MaraVoss-v5 es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión Stable Diffusion XL, desarrollado por el usuario Nooie en HuggingFace. Está diseñado para generar imágenes consistentes de un personaje ficticio llamado Mara Voss, con rasgos específicos como cabello azul-negro profundo con un mechón frontal plateado, ojos burdeos y estética gótica. El modelo se distribuye como un archivo de 0,4 GB y se activa mediante la palabra clave `maravossad`.
+MaraVoss-v5 es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión Stable Diffusion XL, desarrollado por el usuario Nooie en Hugging Face. Está diseñado para generar imágenes consistentes de un personaje ficticio llamado Mara Voss, con rasgos específicos como cabello azul-negro profundo con un mechón frontal plateado, ojos burdeos y estética gótica. El modelo se distribuye como un archivo de 0,4 GB y se activa mediante la palabra clave `maravossad`.
 
 Este LoRA resuelve el problema de mantener la identidad de un personaje recurrente en generaciones de imágenes, algo que los modelos base no logran sin un ajuste fino específico. Su relevancia radica en que permite a creadores e ilustradores obtener un personaje estable sin necesidad de entrenar un modelo completo, aprovechando la capacidad de SDXL para generar imágenes de alta calidad. Al ser un adaptador, no sustituye al modelo base, sino que lo complementa.
 
@@ -32,7 +32,7 @@ No se dispone de información sobre el conjunto de datos de entrenamiento, el n�
 - Generacion de imagenes del personaje Mara Voss con alta consistencia facial y de vestuario.
 - Reproduccion de rasgos especificos: cabello azul-negro con mechon frontal plateado, ojos burdeos y estetica gotica.
 - Activacion mediante la palabra clave `maravossad` en el prompt.
-- Integracion con el ecosistema diffusers de HuggingFace, compatible con pipelines de text-to-image.
+- Integracion con el ecosistema diffusers de Hugging Face, compatible con pipelines de text-to-image.
 - No incluye capacidades de tool calling, agentes, razonamiento multimodal ni procesamiento de lenguaje natural.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - Al ser un LoRA, los requisitos de hardware son los del modelo base Stable Diffusion XL. SDXL en precision fp16 requiere aproximadamente 8-10 GB de VRAM para inferencia.
 - Se recomienda una GPU con al menos 8 GB de VRAM, como una NVIDIA RTX 3070/3080, RTX 4060 Ti o superior. Para generacion a mayor resolucion o con batch, se necesitan GPUs con 12 GB o mas.
 - El LoRA anade una carga minima de memoria, por lo que no incrementa significativamente los requisitos.
-- Opciones de despliegue: se puede usar con la libreria diffusers de HuggingFace, o mediante interfaces como ComfyUI o Automatic1111 WebUI, que soportan LoRAs.
+- Opciones de despliegue: se puede usar con la libreria diffusers de Hugging Face, o mediante interfaces como ComfyUI o Automatic1111 WebUI, que soportan LoRAs.
 - No se dispone de datos de latencia o throughput especificos para este adaptador.
 
 ## Comparativa con modelos similares
@@ -72,4 +72,4 @@ No disponible. No se han encontrado comparaciones publicas con otros LoRAs de pe
 
 ## Enlaces
 
-- [HuggingFace - Nooie/MaraVoss-v5](https://huggingface.co/Nooie/MaraVoss-v5)
+- [Hugging Face - Nooie/MaraVoss-v5](https://huggingface.co/Nooie/MaraVoss-v5)

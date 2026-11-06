@@ -54,5 +54,5 @@ No disponible. No se ha proporcionado información sobre modelos comparables ni 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/d9beuD/Qwen3.8-27B-oQ3.5-mtp)
+- [Modelo en Hugging Face](https://huggingface.co/d9beuD/Qwen3.8-27B-oQ3.5-mtp)
 - [Repositorio de oQ (oMLX)](https://github.com/jundot/omlx)

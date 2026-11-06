@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FA_Concrete es un repositorio publicado en HuggingFace por el usuario Concrete123 bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: no se especifica arquitectura, numero de parametros, longitud de contexto ni idiomas soportados. El unico contenido de la model card es un bloque de metadatos de configuracion de una aplicacion Gradio (con campos como `sdk: gradio`, `sdk_version: 6.27.0` y `app_file: app.py`), lo que sugiere que el repositorio corresponde a un Space o demo interactiva mas que a un modelo de pesos publicados de forma convencional.
+FA_Concrete es un repositorio publicado en Hugging Face por el usuario Concrete123 bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: no se especifica arquitectura, numero de parametros, longitud de contexto ni idiomas soportados. El unico contenido de la model card es un bloque de metadatos de configuracion de una aplicacion Gradio (con campos como `sdk: gradio`, `sdk_version: 6.27.0` y `app_file: app.py`), lo que sugiere que el repositorio corresponde a un Space o demo interactiva mas que a un modelo de pesos publicados de forma convencional.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, fue creado el 12 de septiembre de 2026 y actualizado ese mismo dia, sin actividad posterior documentada. No se ha encontrado documentacion tecnica, paper, ni resultados de evaluacion asociados al modelo. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los enlaces recuperados tratan sobre recetas de meringas y no guardan relacion con este repositorio.
 
@@ -67,6 +67,6 @@ No disponible. Sin conocer tamano, arquitectura ni tarea objetivo, no es posible
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Concrete123/FA_Concrete
+- Repositorio en Hugging Face: https://huggingface.co/Concrete123/FA_Concrete
 - Paper, blog o repositorio adicional: no disponible
 - Resultados de busqueda web: sin coincidencias relevantes (los enlaces recuperados no guardan relacion con el modelo)

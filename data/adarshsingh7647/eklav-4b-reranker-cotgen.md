@@ -75,6 +75,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AdarshSingh7647/Eklav-4B-Reranker-CotGen
+- Repositorio Hugging Face: https://huggingface.co/AdarshSingh7647/Eklav-4B-Reranker-CotGen
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Imagen de resultados BRIGHT (en el repositorio): ./eklav_4b_bright_domains.jpg

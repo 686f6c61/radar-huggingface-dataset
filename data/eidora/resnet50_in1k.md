@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EIDORA/ResNet50_IN1k
+- Modelo en Hugging Face: https://huggingface.co/EIDORA/ResNet50_IN1k
 - Paper original: https://arxiv.org/abs/1512.03385
 - Documentación de ResNet-50 en TorchVision: https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.resnet50.html
 - Descarga del checkpoint original: https://download.pytorch.org/models/resnet50-11ad3fa6.pth

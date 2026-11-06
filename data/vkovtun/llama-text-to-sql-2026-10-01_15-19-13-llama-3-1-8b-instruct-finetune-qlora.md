@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vkovtun/llama-text-to-sql-2026-10-01_15.19.13-Llama-3.1-8B-Instruct-finetune-QLORA` es un ajuste fino del modelo base `meta-llama/Llama-3.1-8B-Instruct`, orientado a la generacion de SQL a partir de lenguaje natural (text-to-SQL). Lo publica el usuario vkovtun en HuggingFace y se ha entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de HuggingFace, empleando QLoRA como tecnica de ajuste eficiente en parametros. Hereda la arquitectura transformer decoder-only de Llama 3.1 8B, con 8.030 millones de parametros y una ventana de contexto de hasta 128.000 tokens.
+El modelo `vkovtun/llama-text-to-sql-2026-10-01_15.19.13-Llama-3.1-8B-Instruct-finetune-QLORA` es un ajuste fino del modelo base `meta-llama/Llama-3.1-8B-Instruct`, orientado a la generacion de SQL a partir de lenguaje natural (text-to-SQL). Lo publica el usuario vkovtun en Hugging Face y se ha entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de Hugging Face, empleando QLoRA como tecnica de ajuste eficiente en parametros. Hereda la arquitectura transformer decoder-only de Llama 3.1 8B, con 8.030 millones de parametros y una ventana de contexto de hasta 128.000 tokens.
 
 El proposito del modelo es traducir preguntas formuladas en lenguaje natural a consultas SQL ejecutables sobre esquemas de bases de datos relacionales, un caso de uso muy demandado en herramientas de analitica, business intelligence y asistentes de datos para usuarios no tecnicos. La relevancia actual radica en que los modelos especializados en text-to-SQL permiten democratizar el acceso a datos estructurados sin exigir conocimientos de SQL, integrándose en pipelines y agentes.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vkovtun/llama-text-to-sql (este modelo) | 8.030 M (base) | 128.000 tokens | Ajuste QLoRA para text-to-SQL | no disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Modelo base generalista | Llama 3.1 Community License | HuggingFace |
-| Defog SQLCoder | 7.000-15.000 M | variable segun version | Especializado en text-to-SQL | disponible segun version | HuggingFace |
-| CodeLlama-7B-Instruct | 6.700 M | 16.000 tokens | Especializado en codigo | Llama 2 Community License | HuggingFace |
+| vkovtun/llama-text-to-sql (este modelo) | 8.030 M (base) | 128.000 tokens | Ajuste QLoRA para text-to-SQL | no disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Modelo base generalista | Llama 3.1 Community License | Hugging Face |
+| Defog SQLCoder | 7.000-15.000 M | variable segun version | Especializado en text-to-SQL | disponible segun version | Hugging Face |
+| CodeLlama-7B-Instruct | 6.700 M | 16.000 tokens | Especializado en codigo | Llama 2 Community License | Hugging Face |
 
 La comparacion cuantitativa de rendimiento no es posible porque este modelo no publica metricas. Se incluyen alternativas conocidas del mismo rango de tamano o de la misma tarea como referencia, aunque sus cifras no se han verificado dentro de la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La comparacion cuantitativa de rendimiento no es posible porque este modelo no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vkovtun/llama-text-to-sql-2026-10-01_15.19.13-Llama-3.1-8B-Instruct-finetune-QLORA
+- Modelo en Hugging Face: https://huggingface.co/vkovtun/llama-text-to-sql-2026-10-01_15.19.13-Llama-3.1-8B-Instruct-finetune-QLORA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/llama-text-to-sql/runs/l7p8qzqm
 - Repositorio TRL: https://github.com/huggingface/trl

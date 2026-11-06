@@ -69,9 +69,9 @@ La información disponible solo incluye dos métricas comparativas entre este mo
 
 | Modelo | Parametros | Contexto | Licencia | Refusals | Disponibilidad |
 |---|---|---|---|---|---|
-| hpnyaggerman/Qwen2.5-3B-Instruct-heretic | 3.085.938.688 | 32.768 tokens | qwen-research | 89/100 | HuggingFace |
-| Qwen/Qwen2.5-3B-Instruct | 3.085.938.688 | 32.768 tokens | qwen-research | 96/100 | HuggingFace |
-| arnomatic/Qwen2.5-3B-Instruct-heretic | 3.085.938.688 | 32.768 tokens | qwen-research | No disponible | HuggingFace |
+| hpnyaggerman/Qwen2.5-3B-Instruct-heretic | 3.085.938.688 | 32.768 tokens | qwen-research | 89/100 | Hugging Face |
+| Qwen/Qwen2.5-3B-Instruct | 3.085.938.688 | 32.768 tokens | qwen-research | 96/100 | Hugging Face |
+| arnomatic/Qwen2.5-3B-Instruct-heretic | 3.085.938.688 | 32.768 tokens | qwen-research | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos adicionales para otros modelos de tamaño similar en la información disponible.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos adicionales para otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hpnyaggerman/Qwen2.5-3B-Instruct-heretic
+- Modelo en Hugging Face: https://huggingface.co/hpnyaggerman/Qwen2.5-3B-Instruct-heretic
 - Modelo original: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

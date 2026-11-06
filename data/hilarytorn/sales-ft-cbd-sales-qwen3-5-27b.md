@@ -70,4 +70,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: HilaryTorn/sales-FT-CBD-sales-Qwen3.5-27B](https://huggingface.co/HilaryTorn/sales-FT-CBD-sales-Qwen3.5-27B)
+- [Hugging Face: HilaryTorn/sales-FT-CBD-sales-Qwen3.5-27B](https://huggingface.co/HilaryTorn/sales-FT-CBD-sales-Qwen3.5-27B)

@@ -86,11 +86,11 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Macro-F1 (Data-2) | F1-Neutral (Data-2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| morex3/vietnamese-ai-feedback-ood-3125 | 135 M | no disponible (truncado a 128 en el ejemplo) | 65,93 % | 37,25 % | MIT | HuggingFace |
-| PhoBERT-Base (CE estandar) | 135 M | no disponible | 59,22 % | 14,10 % | MIT (segun el modelo base de VinAI) | HuggingFace |
-| BamiBERT | no disponible en la informacion | no disponible | 60,70 % | 21,80 % | no disponible | HuggingFace |
-| ViSoBERT | no disponible en la informacion | no disponible | 56,32 % | 9,82 % | no disponible | HuggingFace |
-| mDeBERTa-v3 | no disponible en la informacion | no disponible | 57,06 % | 10,45 % | MIT | HuggingFace |
+| morex3/vietnamese-ai-feedback-ood-3125 | 135 M | no disponible (truncado a 128 en el ejemplo) | 65,93 % | 37,25 % | MIT | Hugging Face |
+| PhoBERT-Base (CE estandar) | 135 M | no disponible | 59,22 % | 14,10 % | MIT (segun el modelo base de VinAI) | Hugging Face |
+| BamiBERT | no disponible en la informacion | no disponible | 60,70 % | 21,80 % | no disponible | Hugging Face |
+| ViSoBERT | no disponible en la informacion | no disponible | 56,32 % | 9,82 % | no disponible | Hugging Face |
+| mDeBERTa-v3 | no disponible en la informacion | no disponible | 57,06 % | 10,45 % | MIT | Hugging Face |
 
 La comparativa se limita a los modelos evaluados por el propio autor en el mismo benchmark; no se dispone de datos independientes que permitan contrastar estas cifras con otras fuentes.
 
@@ -109,8 +109,8 @@ La comparativa se limita a los modelos evaluados por el propio autor en el mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morex3/vietnamese-ai-feedback-ood-3125
-- Dataset asociado en HuggingFace: https://huggingface.co/datasets/morex3/vietnamese-ai-feedback-ood-3125
+- Modelo en Hugging Face: https://huggingface.co/morex3/vietnamese-ai-feedback-ood-3125
+- Dataset asociado en Hugging Face: https://huggingface.co/datasets/morex3/vietnamese-ai-feedback-ood-3125
 - Repositorio GitHub: https://github.com/KaNguyen3005/vietnamese-ai-feedback-ood-3125
 - Articulo citado: Nguyen, Minh Tuan; Mo, Ha Mach Bu Ba Ka; Thai, Ngoc Thi; Le, Dinh Bao. "Beyond In-Domain Sentiment: Evaluating Cross-Architecture Robustness and the Neutral-Collapse Phenomenon on Modern Vietnamese AI-Assisted Educational Feedback". SN Computer Science, Springer Nature, 2026. DOI no disponible en la informacion proporcionada.
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los diez primeros enlaces corresponden a contenido sobre cuidado de los pies y no guardan relacion con la ficha.

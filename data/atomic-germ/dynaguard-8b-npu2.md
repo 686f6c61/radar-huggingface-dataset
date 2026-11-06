@@ -79,7 +79,7 @@ DynaGuard se diferencia de Llama Guard y ShieldGemma por su capacidad de evaluar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/DynaGuard-8B-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/DynaGuard-8B-NPU2
 - Modelo base original: https://huggingface.co/tomg-group-umd/DynaGuard-8B-NPU2
 - Paper DynaGuard: https://arxiv.org/abs/2509.02563
 - Sitio de FastFlowLM: https://fastflowlm.com/

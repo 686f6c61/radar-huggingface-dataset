@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gnascimentoeli/clip-matching` es un repositorio de HuggingFace que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de *matching*. Lo publica el usuario gnascimentoeli bajo licencia Apache 2.0. El propio autor indica de forma explícita que se trata de un artefacto para revisión de código, *smoke tests* y pequeños experimentos controlados, no de un modelo preentrenado listo para producción.
+`gnascimentoeli/clip-matching` es un repositorio de Hugging Face que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de *matching*. Lo publica el usuario gnascimentoeli bajo licencia Apache 2.0. El propio autor indica de forma explícita que se trata de un artefacto para revisión de código, *smoke tests* y pequeños experimentos controlados, no de un modelo preentrenado listo para producción.
 
 La relevancia de este repositorio es, por tanto, limitada y de carácter didáctico o de andamiaje: sirve como punto de partida reproducible (script de inferencia, configuración de arquitectura y receta de entrenamiento por defecto), pero no como un modelo con capacidades funcionales. El checkpoint incluido (`model.safetensors`) se describe como una inicialización válida para pruebas de humo, no como un modelo entrenado ni evaluado.
 
@@ -81,5 +81,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gnascimentoeli/clip-matching
+- Hugging Face: https://huggingface.co/gnascimentoeli/clip-matching
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nadizik/mouse-gesture-recognizer` es una red neuronal perceptrón multicapa (MLP) diseñada para el reconocimiento en tiempo real de gestos 2D realizados con el ratón, el panel táctil o la pantalla táctil. Lo desarrolla el usuario de HuggingFace `nadizik` y se distribuye bajo licencia Apache-2.0. El modelo resuelve el problema de clasificar trayectorias de gestos dibujadas en un plano en ocho categorías predefinidas (clases 0 a 7), mediante una arquitectura ligera de tres capas totalmente conectadas que recibe una entrada normalizada de 128 valores (64 puntos con coordenadas x e y). Su relevancia radica en su simplicidad y bajo coste computacional, lo que lo hace adecuado para aplicaciones de interfaz humano‑computador, accesibilidad o automatización de escritorio. No se trata de un modelo de lenguaje ni de visión; su dominio es el procesamiento de series temporales geométricas.
+El modelo `nadizik/mouse-gesture-recognizer` es una red neuronal perceptrón multicapa (MLP) diseñada para el reconocimiento en tiempo real de gestos 2D realizados con el ratón, el panel táctil o la pantalla táctil. Lo desarrolla el usuario de Hugging Face `nadizik` y se distribuye bajo licencia Apache-2.0. El modelo resuelve el problema de clasificar trayectorias de gestos dibujadas en un plano en ocho categorías predefinidas (clases 0 a 7), mediante una arquitectura ligera de tres capas totalmente conectadas que recibe una entrada normalizada de 128 valores (64 puntos con coordenadas x e y). Su relevancia radica en su simplicidad y bajo coste computacional, lo que lo hace adecuado para aplicaciones de interfaz humano‑computador, accesibilidad o automatización de escritorio. No se trata de un modelo de lenguaje ni de visión; su dominio es el procesamiento de series temporales geométricas.
 
 La arquitectura concreta es un MLP de 128 → 64 → 32 → 8 con activaciones LeakyReLU y una salida softmax con temperatura 0,45. El repositorio incluye una interfaz gráfica Tkinter para pruebas interactivas y un sistema de normalización basado en interpolación espacial que convierte cualquier trayectoria en 64 puntos equiespaciados, garantizando invariancia a escala y velocidad. El modelo no está entrenado para texto ni lenguaje; su entrada es exclusivamente geométrica.
 
@@ -70,4 +70,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - nadizik/mouse-gesture-recognizer](https://huggingface.co/nadizik/mouse-gesture-recognizer)
+- [Hugging Face - nadizik/mouse-gesture-recognizer](https://huggingface.co/nadizik/mouse-gesture-recognizer)

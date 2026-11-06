@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo con modelos alternativos de tr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chinasky71/translategemma-12b-it-subtitles
+- Modelo en Hugging Face: https://huggingface.co/Chinasky71/translategemma-12b-it-subtitles
 - Versión GGUF: https://huggingface.co/Chinasky71/translategemma-12b-it-subtitles-gguf
 - Modelo base: https://huggingface.co/google/translategemma-12b-it
 - Repositorio del proyecto Transcriber Pro: https://github.com/chinasky71-byte/TranscriberPro

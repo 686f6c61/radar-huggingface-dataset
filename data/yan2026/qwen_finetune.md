@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yan2026/qwen_finetune` es un ajuste fino publicado en HuggingFace por el usuario `yan2026` y distribuido exclusivamente en formato GGUF. Segun los nombres de los archivos publicados (`Qwen3.5-0.8B.Q8_0.gguf` y `Qwen3.5-0.8B.F16-mmproj.gguf`), el modelo deriva de una variante de 0,8B de la familia Qwen3.5 y conserva capacidad multimodal, ya que incluye un proyector visual (`mmproj`) necesario para el procesamiento de imagenes con `llama-mtmd-cli`. El recuento real de parametros reportado en los metadatos es de 772.845.888 (unos 773 millones).
+`yan2026/qwen_finetune` es un ajuste fino publicado en Hugging Face por el usuario `yan2026` y distribuido exclusivamente en formato GGUF. Segun los nombres de los archivos publicados (`Qwen3.5-0.8B.Q8_0.gguf` y `Qwen3.5-0.8B.F16-mmproj.gguf`), el modelo deriva de una variante de 0,8B de la familia Qwen3.5 y conserva capacidad multimodal, ya que incluye un proyector visual (`mmproj`) necesario para el procesamiento de imagenes con `llama-mtmd-cli`. El recuento real de parametros reportado en los metadatos es de 772.845.888 (unos 773 millones).
 
 El modelo se ha entrenado y convertido a GGUF con Unsloth, una herramienta que acelera el ajuste fino y la exportacion de pesos. No se especifica en la model card ni el conjunto de datos de entrenamiento, ni el numero de tokens, ni si hubo fases de RLHF o DPO, ni la licencia bajo la que se distribuye. Tampoco se declara explicitamente la lista de idiomas soportados, aunque la etiqueta `conversational` sugiere un uso orientado a dialogo.
 
@@ -13,7 +13,7 @@ Su relevancia practica es limitada pero concreta: se trata de un modelo pequeno 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (los archivos apuntan a un modelo vision-language de la familia Qwen3.5; no se detalla si es transformer denso, MoE o hibrido) |
-| Parametros totales | 772.845.888 (~773 M, dato de safetensors reportado por HuggingFace) |
+| Parametros totales | 772.845.888 (~773 M, dato de safetensors reportado por Hugging Face) |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q8_0 (fichero principal, GGUF); F16 para el proyector multimodal (`mmproj`) |
@@ -29,7 +29,7 @@ Su relevancia practica es limitada pero concreta: se trata de un modelo pequeno 
 
 La informacion disponible no describe la arquitectura interna del modelo. Los unicos indicios son los nombres de archivo, que referencian `Qwen3.5-0.8B`, y la presencia de un fichero `F16-mmproj.gguf`. En el ecosistema llama.cpp, un fichero `mmproj` contiene el proyector que alinea las representaciones de un codificador visual con el espacio de embeddings del modelo de lenguaje; su existencia implica que el modelo es multimodal (entrada de imagen y texto) y que se ejecuta con `llama-mtmd-cli`. No se especifica que codificador visual utiliza, ni la resolucion de imagen soportada, ni si hay tecnicas de atencion lineal, decodificacion especulativa u otras innovaciones.
 
-Respecto al entrenamiento, la model card indica unicamente que el modelo fue ajustado y convertido a GGUF con Unsloth, y que el proceso de entrenamiento fue "2x faster" gracias a esa herramienta. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO, LoRA o QLoRA, ni sobre el modelo base exacto con su identificador en HuggingFace. En consecuencia, no es posible reproducir ni auditar el proceso de entrenamiento con la informacion publicada.
+Respecto al entrenamiento, la model card indica unicamente que el modelo fue ajustado y convertido a GGUF con Unsloth, y que el proceso de entrenamiento fue "2x faster" gracias a esa herramienta. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO, LoRA o QLoRA, ni sobre el modelo base exacto con su identificador en Hugging Face. En consecuencia, no es posible reproducir ni auditar el proceso de entrenamiento con la informacion publicada.
 
 ## Capacidades
 
@@ -99,7 +99,7 @@ Diferencias relevantes: los tres alternativos tienen licencia explicita y docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yan2026/qwen_finetune
+- Modelo en Hugging Face: https://huggingface.co/yan2026/qwen_finetune
 - Unsloth (herramienta de ajuste fino y conversion citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime necesario para GGUF y para `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp
 - Paper, blog o demo del autor: no disponible

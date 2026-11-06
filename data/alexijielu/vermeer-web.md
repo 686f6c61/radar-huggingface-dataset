@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vermeer-web (este paquete) | No disponible (tres variantes + ESM-C-600M + decodificador) | No disponible | Sin benchmarks publicados; solo paridad numérica | MIT | HuggingFace, ONNX para navegador |
-| microsoft/vermeer (upstream) | No disponible | No disponible | Base del export; sin datos en esta ficha | MIT | HuggingFace / GitHub de Microsoft |
-| biohub/ESMC-600M | 600M (según nombre) | No disponible | No disponible | MIT | HuggingFace |
-| FoundationVision/LlamaGen | No disponible | No disponible | No disponible | MIT | HuggingFace / GitHub |
+| Vermeer-web (este paquete) | No disponible (tres variantes + ESM-C-600M + decodificador) | No disponible | Sin benchmarks publicados; solo paridad numérica | MIT | Hugging Face, ONNX para navegador |
+| microsoft/vermeer (upstream) | No disponible | No disponible | Base del export; sin datos en esta ficha | MIT | Hugging Face / GitHub de Microsoft |
+| biohub/ESMC-600M | 600M (según nombre) | No disponible | No disponible | MIT | Hugging Face |
+| FoundationVision/LlamaGen | No disponible | No disponible | No disponible | MIT | Hugging Face / GitHub |
 
 No se dispone de datos de rendimiento comparables en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alexijielu/vermeer-web
+- Repositorio Hugging Face: https://huggingface.co/alexijielu/vermeer-web
 - Aplicación Vermeer web: https://github.com/alexxijielu/vermeer-web
 - Vermeer (Microsoft): https://github.com/microsoft/vermeer
 - LlamaGen (FoundationVision): https://github.com/FoundationVision/LlamaGen

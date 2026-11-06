@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hw02-bge-ner es un modelo de clasificación de tokens (token classification) publicado por el usuario morz1k3 en HuggingFace, obtenido mediante fine-tuning del encoder BAAI/bge-small-en-v1.5. Con 33.215.625 parámetros, es un transformer encoder-only de tipo BERT, de tamano pequeno y pensado para tareas de etiquetado a nivel de token, presumiblemente reconocimiento de entidades nombradas (NER) a juzgar por el sufijo del nombre. Su relevancia practica es limitada: el repositorio acumula 0 descargas y 0 likes, y la propia model card no documenta el dataset, la taxonomia de entidades ni los usos previstos.
+hw02-bge-ner es un modelo de clasificación de tokens (token classification) publicado por el usuario morz1k3 en Hugging Face, obtenido mediante fine-tuning del encoder BAAI/bge-small-en-v1.5. Con 33.215.625 parámetros, es un transformer encoder-only de tipo BERT, de tamano pequeno y pensado para tareas de etiquetado a nivel de token, presumiblemente reconocimiento de entidades nombradas (NER) a juzgar por el sufijo del nombre. Su relevancia practica es limitada: el repositorio acumula 0 descargas y 0 likes, y la propia model card no documenta el dataset, la taxonomia de entidades ni los usos previstos.
 
 El modelo declara metricas de evaluacion razonables sobre un conjunto no identificado (F1 0.8985, precision 0.8797, recall 0.9180, accuracy 0.9799) tras seis epochs de entrenamiento, pero no publica ningun resultado en benchmarks estandar (MMLU, CoNLL-2003, etc.). El model-index del repositorio esta vacio, por lo que no hay comparacion reproducible con alternativas.
 
@@ -23,8 +23,8 @@ En la practica, debe considerarse un artefacto de tipo academico o de ejercicio 
 | Libreria | transformers |
 | Tamano del repositorio | 0.1 GB |
 | Modelo base | BAAI/bge-small-en-v1.5 |
-| Fecha de creacion | 2026-10-09 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-10-09 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-09 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-10-09 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -116,7 +116,7 @@ Consideraciones: frente a las alternativas, este modelo ofrece el menor coste co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morz1k3/hw02-bge-ner
+- Modelo en Hugging Face: https://huggingface.co/morz1k3/hw02-bge-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Paper de BGE (BAAI General Embedding): no disponible en la informacion proporcionada
 - Repositorio de codigo o demo: no disponible

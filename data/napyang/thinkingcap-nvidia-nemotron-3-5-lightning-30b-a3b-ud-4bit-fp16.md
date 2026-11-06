@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NapYang/ThinkingCap-NVIDIA-Nemotron-3.5-Lightning-30B-A3B-UD-4bit-fp16
+- Repositorio Hugging Face: https://huggingface.co/NapYang/ThinkingCap-NVIDIA-Nemotron-3.5-Lightning-30B-A3B-UD-4bit-fp16
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-NVIDIA-Nemotron-3.5-Lightning-30B-A3B
 - Papers, blogs, repos y demos adicionales: no disponible en la información proporcionada.

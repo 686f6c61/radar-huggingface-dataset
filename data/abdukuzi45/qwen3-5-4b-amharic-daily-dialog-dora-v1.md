@@ -43,7 +43,7 @@ El modelo es un adaptador LoRA entrenado con la librería PEFT sobre el modelo b
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El model-index de HuggingFace muestra una lista vacía (`results: []`), y la model card solo reporta la pérdida de validación (1.1071) sin comparaciones con otros modelos. Por tanto, no es posible evaluar su rendimiento relativo en tareas estándar como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la información disponible. El model-index de Hugging Face muestra una lista vacía (`results: []`), y la model card solo reporta la pérdida de validación (1.1071) sin comparaciones con otros modelos. Por tanto, no es posible evaluar su rendimiento relativo en tareas estándar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ En general, la falta de benchmarks y de documentación impide una comparación r
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-daily-dialog-dora-v1)
+- [Modelo en Hugging Face](https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-daily-dialog-dora-v1)
 - [Modelo base: rodrigomt/Qwen3.5-4B-Uncensored-Aggressive](https://huggingface.co/rodrigomt/Qwen3.5-4B-Uncensored-Aggressive)
 - [Perfil del autor: abdukuzi](https://huggingface.co/abdukuzi)
 - [Repositorio de Qwen3.5 en GitHub (referencia general)](https://github.com/liuyanjing-dev/Qwen3.5)

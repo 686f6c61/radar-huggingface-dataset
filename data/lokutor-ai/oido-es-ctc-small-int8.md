@@ -6,7 +6,7 @@ Oído es un modelo de reconocimiento automático del habla (ASR) en español que
 
 La relevancia del modelo está en su perfil de despliegue: no es un ASR de servidor recortado, sino un motor completo (pesos, vocabulario SentencePiece de 1024 piezas y LM) que cabe en 8 MB de PSRAM y 16 MB de flash y funciona tanto en modo frase completa como en modo streaming con fragmentos de 32 tramas. Frente a alternativas genéricas como Whisper tiny en fp32 ejecutándose en un portátil, el autor reporta un WER notablemente menor en los cuatro corpus de evaluación en español, aunque advierte que la comparación está sesgada a su favor porque él sí ha entrenado con las particiones de entrenamiento de esos corpus y Whisper tiny es zero-shot.
 
-El estado del proyecto a 3 de octubre de 2026 es temprano: las cifras de WER proceden de la compilación de escritorio del motor (mismo código C, misma aritmética int8) y la velocidad (0,7–0,95× tiempo real en modo frase) es una estimación por conteo de instrucciones, no una medida sobre placa. El repositorio de HuggingFace acumula 0 descargas y 0 likes, y el motor y firmware asociados se distribuyen en GitHub bajo GPLv3 con licencias comerciales alternativas.
+El estado del proyecto a 3 de octubre de 2026 es temprano: las cifras de WER proceden de la compilación de escritorio del motor (mismo código C, misma aritmética int8) y la velocidad (0,7–0,95× tiempo real en modo frase) es una estimación por conteo de instrucciones, no una medida sobre placa. El repositorio de Hugging Face acumula 0 descargas y 0 likes, y el motor y firmware asociados se distribuyen en GitHub bajo GPLv3 con licencias comerciales alternativas.
 
 ## Especificaciones tecnicas
 
@@ -84,11 +84,11 @@ Advertencia del propio autor: el fine-tuning se hizo sobre las particiones de en
 
 | Modelo | Parametros | Idioma | Contexto | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| oido-es-ctc-small-int8 | 13 M + 1,3 M LM | es | streaming 32 tramas / 128 de contexto | 13,75 / 10,90 / 15,68 / 11,32 (CV / MLS / VP / FLEURS, con LM) | cc-by-4.0 | HuggingFace (0 descargas) y GitHub |
-| nvidia/stt_en_conformer_ctc_small | 13 M | en | no disponible | no disponible en la informacion proporcionada | cc-by-4.0 | HuggingFace (modelo base del que deriva) |
-| nvidia/stt_es_conformer_ctc_large | no disponible | es | no disponible | no disponible en la informacion proporcionada | cc-by-4.0 | HuggingFace (usado para filtrar clips de Common Voice) |
+| oido-es-ctc-small-int8 | 13 M + 1,3 M LM | es | streaming 32 tramas / 128 de contexto | 13,75 / 10,90 / 15,68 / 11,32 (CV / MLS / VP / FLEURS, con LM) | cc-by-4.0 | Hugging Face (0 descargas) y GitHub |
+| nvidia/stt_en_conformer_ctc_small | 13 M | en | no disponible | no disponible en la informacion proporcionada | cc-by-4.0 | Hugging Face (modelo base del que deriva) |
+| nvidia/stt_es_conformer_ctc_large | no disponible | es | no disponible | no disponible en la informacion proporcionada | cc-by-4.0 | Hugging Face (usado para filtrar clips de Common Voice) |
 | Whisper tiny (multilingue), fp32 | no disponible | multilingue | no aplica | 33,0 / 21,5 / 28,7 / 17,1 en los subconjuntos de 400 enunciados | no disponible en la informacion proporcionada | ejecucion en portatil, no en MCU |
-| lokutor-ai/oido-ctc-small-int8 | no disponible | en | no disponible | no disponible | cc-by-4.0 | HuggingFace (variante inglesa del mismo autor) |
+| lokutor-ai/oido-ctc-small-int8 | no disponible | en | no disponible | no disponible | cc-by-4.0 | Hugging Face (variante inglesa del mismo autor) |
 
 ## Limitaciones y advertencias
 
@@ -106,7 +106,7 @@ Advertencia del propio autor: el fine-tuning se hizo sobre las particiones de en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lokutor-ai/oido-es-ctc-small-int8
+- Modelo en Hugging Face: https://huggingface.co/lokutor-ai/oido-es-ctc-small-int8
 - Repositorio de código, firmware y herramientas: https://github.com/lokutor-ai/oido (GPLv3, licencias comerciales disponibles)
 - Modelo base: https://huggingface.co/nvidia/stt_en_conformer_ctc_small
 - Variante inglesa int8: https://huggingface.co/lokutor-ai/oido-ctc-small-int8

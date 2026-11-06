@@ -76,7 +76,7 @@ Cada fallo se contabiliza como 50 s. La diferencia media emparejada es de +3,989
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| microduck-sprint-reward5-confirmed-s1 | Política RL (MLP 512/256/128, ONNX) | no disponible | no aplica (61 observaciones) | 1,894 s de media, 20/20 en simulación local | no disponible | HuggingFace |
+| microduck-sprint-reward5-confirmed-s1 | Política RL (MLP 512/256/128, ONNX) | no disponible | no aplica (61 observaciones) | 1,894 s de media, 20/20 en simulación local | no disponible | Hugging Face |
 | Campeón previo publicado (referencia del autor) | Política RL para la misma tarea | no disponible | no aplica | 2,75375 s, 20/20 con comando 0,80 | no disponible | Referenciado en la model card |
 | Variantes reward4 del mismo estudio | Políticas RL para la misma tarea | no disponible | no aplica | 2,754 s / 2,667 s / 7,522 s según semilla | no disponible | No publicadas como artefactos independientes |
 
@@ -96,7 +96,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mubeeapps-1/microduck-sprint-reward5-confirmed-s1
+- Modelo en Hugging Face: https://huggingface.co/mubeeapps-1/microduck-sprint-reward5-confirmed-s1
 - Repositorio base de Pollen Robotics: https://github.com/pollen-robotics/microduck-challenges
 - Commit base del repositorio: 4b675ebf4d7c7b961cd78da94bfc37ca1686d321
 - Commit del entrenamiento local: 48b8ad577ca01fa06fc0f8d3a121ac442cd17d38

@@ -99,11 +99,11 @@ No se han identificado en la busqueda modelos comparables especificamente entren
 - Cuantizaciones ponderadas no disponibles: el propio autor indica que no habia cuantizaciones ponderadas por imatrix en el momento de la publicacion, que suelen ofrecer mejor relacion calidad/tamano que las estaticas equivalentes.
 - Soporte de tool calling no confirmado: si el pipeline de produccion depende de function calling o de modo agente, hay que validarlo antes de asumirlo.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion con obligacion de conservar el aviso de copyright y la licencia, e incluir un archivo NOTICE si existe. No impone restricciones de uso, pero el usuario asume toda la responsabilidad sobre el contenido generado.
-- Repositorio sin traccion: cero descargas y cero likes en los metadatos de HuggingFace, lo que implica ausencia de validacion por parte de la comunidad y un soporte practicamente inexistente.
+- Repositorio sin traccion: cero descargas y cero likes en los metadatos de Hugging Face, lo que implica ausencia de validacion por parte de la comunidad y un soporte practicamente inexistente.
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/zora-v1.13-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/zora-v1.13-GGUF
 - Modelo base: https://huggingface.co/sovasoft/zora-v1.13
 - Pagina resumen de cuantizaciones del autor: https://hf.tst.eu/model#zora-v1.13-GGUF
 - Ficha del modelo base en Featherless: https://featherless.ai/models/sovasoft/zora-v1.13

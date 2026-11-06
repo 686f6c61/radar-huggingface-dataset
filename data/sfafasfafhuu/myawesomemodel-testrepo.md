@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario `sfafasfafhuu` en HuggingFace, con licencia MIT y etiquetado como compatible con la librería `transformers`. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento y de inferencia respecto a versiones anteriores, gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario `sfafasfafhuu` en Hugging Face, con licencia MIT y etiquetado como compatible con la librería `transformers`. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento y de inferencia respecto a versiones anteriores, gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
 
 La model card indica que, en comparación con la versión previa, el modelo ha pasado de un 70% a un 87,5% de precisión en el conjunto de pruebas AIME 2025, y que el número medio de tokens utilizados por pregunta ha aumentado de 12K a 23K, lo que refleja una mayor profundidad de razonamiento. También se menciona una reducción de la tasa de alucinación y un mejor soporte para function calling. No se especifican detalles de arquitectura, número de parámetros ni longitud de contexto en la información disponible.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks estándar (como MMLU, HumanEval o G
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware en la model card ni en los metadatos de HuggingFace. No se indica la VRAM necesaria, las GPU recomendadas, ni las opciones de despliegue. Tampoco se mencionan latencias o throughput. Se desconoce si el modelo cabe en GPUs de consumo.
+No se dispone de información sobre requisitos de hardware en la model card ni en los metadatos de Hugging Face. No se indica la VRAM necesaria, las GPU recomendadas, ni las opciones de despliegue. Tampoco se mencionan latencias o throughput. Se desconoce si el modelo cabe en GPUs de consumo.
 
 ## Comparativa con modelos similares
 
@@ -93,4 +93,4 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- [HuggingFace - sfafasfafhuu/MyAwesomeModel-TestRepo](https://huggingface.co/sfafasfafhuu/MyAwesomeModel-TestRepo)
+- [Hugging Face - sfafasfafhuu/MyAwesomeModel-TestRepo](https://huggingface.co/sfafasfafhuu/MyAwesomeModel-TestRepo)

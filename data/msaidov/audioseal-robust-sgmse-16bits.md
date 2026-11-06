@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Robustez | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| msaidov/audioseal-robust-sgmse-16bits | SEANet + LSTM (16 bits) | Entrenado contra SGMSE | MIT | HuggingFace |
-| msaidov/audioseal-robust-audioldm-16bits | SEANet + LSTM (16 bits) | Entrenado contra AudioLDM | MIT | HuggingFace |
-| facebook/audioseal (generador original) | SEANet + LSTM (16 bits) | Sin robustez específica frente a difusión | MIT | HuggingFace |
+| msaidov/audioseal-robust-sgmse-16bits | SEANet + LSTM (16 bits) | Entrenado contra SGMSE | MIT | Hugging Face |
+| msaidov/audioseal-robust-audioldm-16bits | SEANet + LSTM (16 bits) | Entrenado contra AudioLDM | MIT | Hugging Face |
+| facebook/audioseal (generador original) | SEANet + LSTM (16 bits) | Sin robustez específica frente a difusión | MIT | Hugging Face |
 
 El modelo se diferencia del original por su entrenamiento adversarial contra SGMSE. Frente al hermano `audioseal-robust-audioldm-16bits`, este se ha especializado en un ataque de difusión concreto, y la model card sugiere que AudioLDM se mantuvo fuera del entrenamiento para probar la generalización. No se dispone de comparaciones cuantitativas entre ellos.
 
@@ -76,7 +76,7 @@ El modelo se diferencia del original por su entrenamiento adversarial contra SGM
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msaidov/audioseal-robust-sgmse-16bits
+- Modelo en Hugging Face: https://huggingface.co/msaidov/audioseal-robust-sgmse-16bits
 - Modelo hermano (AudioLDM): https://huggingface.co/msaidov/audioseal-robust-audioldm-16bits
 - Código de entrenamiento: https://github.com/martysai/psiml11-audio-with-diffusion
 - Repositorio de SGMSE (ataque): https://github.com/sp-uhh/sgmse

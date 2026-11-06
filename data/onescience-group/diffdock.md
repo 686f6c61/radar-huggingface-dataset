@@ -68,5 +68,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: OneScience-Group/DiffDock](https://huggingface.co/OneScience-Group/DiffDock)
+- [Hugging Face: OneScience-Group/DiffDock](https://huggingface.co/OneScience-Group/DiffDock)
 - [Entorno OneCode (acceso online)](https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home)

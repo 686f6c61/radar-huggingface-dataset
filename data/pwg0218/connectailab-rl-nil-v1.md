@@ -71,8 +71,8 @@ El propio autor advierte que la métrica de operación empresarial corresponde a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-nil-v1 (este) | 0,8B base + LoRA | no disponible | Decisión de elección múltiple en simulador empresarial | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Modelo de propósito general | no disponible en la información | HuggingFace |
+| connectailab-rl-nil-v1 (este) | 0,8B base + LoRA | no disponible | Decisión de elección múltiple en simulador empresarial | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Modelo de propósito general | no disponible en la información | Hugging Face |
 | Política PPO del simulador (profesor) | no disponible | no disponible | Decisión en CONNECT TYCOON | no disponible | no disponible |
 
 No se dispone de datos publicados de otros adaptadores comparables de la misma categoría (decisión estructurada sobre simulador) en la información proporcionada; la comparativa queda limitada al modelo base y al policy profesor mencionados por el autor.
@@ -93,7 +93,7 @@ No se dispone de datos publicados de otros adaptadores comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pwg0218/connectailab-rl-nil-v1
+- Modelo en Hugging Face: https://huggingface.co/pwg0218/connectailab-rl-nil-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

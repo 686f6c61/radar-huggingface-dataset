@@ -29,7 +29,7 @@ Su relevancia es doble: por un lado, es un ejemplo reproducible de cómo un ajus
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-20 |
 | Ultima actualizacion | 2026-09-20 |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -89,8 +89,8 @@ No se dispone de una comparativa con alternativas directas en la informacion pro
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `chorcat/rukh-lora-e4` | Adaptador LoRA sobre `rukh-medium-lora` | 393.216 entrenables | No disponible | apache-2.0 | Publicado en HuggingFace (0 descargas, 0 likes) |
-| `chorcat/rukh-medium-lora` | Modelo base | No disponible | No disponible | apache-2.0 | Publicado en HuggingFace (referenciado) |
+| `chorcat/rukh-lora-e4` | Adaptador LoRA sobre `rukh-medium-lora` | 393.216 entrenables | No disponible | apache-2.0 | Publicado en Hugging Face (0 descargas, 0 likes) |
+| `chorcat/rukh-medium-lora` | Modelo base | No disponible | No disponible | apache-2.0 | Publicado en Hugging Face (referenciado) |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -108,7 +108,7 @@ No se dispone de una comparativa con alternativas directas en la informacion pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chorcat/rukh-lora-e4
+- Hugging Face: https://huggingface.co/chorcat/rukh-lora-e4
 - Modelo base: https://huggingface.co/chorcat/rukh-medium-lora
 - Repositorio del proyecto Rukh: https://github.com/borja-glez/rukh
 - Documentacion y explicacion tecnica: https://lab.rukh.borjaglez.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ab12321/llama3.1-8b-lora-corporate-synergy` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario `ab12321` sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del modelo Llama 3.1 8B Instruct de Meta. El adaptador se ha entrenado con la librería Unsloth, que acelera el fine-tuning, y con el framework TRL de HuggingFace. El repositorio contiene únicamente los pesos del adaptador (0.2 GB), no el modelo completo, por lo que para su uso es necesario cargarlo sobre el modelo base.
+El modelo `ab12321/llama3.1-8b-lora-corporate-synergy` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario `ab12321` sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del modelo Llama 3.1 8B Instruct de Meta. El adaptador se ha entrenado con la librería Unsloth, que acelera el fine-tuning, y con el framework TRL de Hugging Face. El repositorio contiene únicamente los pesos del adaptador (0.2 GB), no el modelo completo, por lo que para su uso es necesario cargarlo sobre el modelo base.
 
 La finalidad del adaptador, según su nombre, parece orientada a tareas de "sinergia corporativa", aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni las tareas específicas. Al estar basado en Llama 3.1 8B Instruct, hereda las capacidades generales de razonamiento, generación de texto y seguimiento de instrucciones de dicho modelo, pero con un ajuste adicional que no está documentado. Su licencia Apache 2.0 permite uso comercial sin restricciones, y el idioma soportado es el inglés.
 
@@ -21,7 +21,7 @@ La finalidad del adaptador, según su nombre, parece orientada a tareas de "sine
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA sobre `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, que es una version cuantizada en 4 bits del Llama 3.1 8B Instruct. La arquitectura subyacente es un transformer decoder-only con atencion por ventanas (grouped query attention) y 8 mil millones de parametros. El entrenamiento del adaptador se ha realizado con la libreria Unsloth, que optimiza el uso de memoria y acelera el fine-tuning, y con TRL (Transformer Reinforcement Learning) de HuggingFace, lo que sugiere que se ha empleado alguna tecnica de aprendizaje por refuerzo o fine-tuning supervisado, aunque no se detalla el metodo exacto.
+El modelo es un adaptador LoRA sobre `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, que es una version cuantizada en 4 bits del Llama 3.1 8B Instruct. La arquitectura subyacente es un transformer decoder-only con atencion por ventanas (grouped query attention) y 8 mil millones de parametros. El entrenamiento del adaptador se ha realizado con la libreria Unsloth, que optimiza el uso de memoria y acelera el fine-tuning, y con TRL (Transformer Reinforcement Learning) de Hugging Face, lo que sugiere que se ha empleado alguna tecnica de aprendizaje por refuerzo o fine-tuning supervisado, aunque no se detalla el metodo exacto.
 
 No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas como RLHF o DPO. El adaptador se distribuye en formato safetensors y esta pensado para ser cargado sobre el modelo base mediante la libreria transformers o text-generation-inference.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: al ser un adaptador LoRA, la inferencia requiere cargar el modelo base (8B parametros) mas el adaptador. Con cuantizacion de 4 bits, el modelo base ocupa aproximadamente 4-5 GB de VRAM, y el adaptador anade unos pocos cientos de MB. En total, se estima un minimo de 6-8 GB de VRAM para inferencia en precision reducida.
 - GPU recomendadas: tarjetas con al menos 8 GB de VRAM, como NVIDIA RTX 3060, RTX 3070, RTX 4060 o superiores. Para mayor velocidad, se recomiendan GPUs de datacenter como A10, A100 o H100.
 - Compatibilidad con GPU de consumo: si, cabe en GPUs de consumo con 8 GB o mas, siempre que se use cuantizacion (por ejemplo, GGUF o bitsandbytes).
-- Opciones de despliegue: se puede servir con vLLM, TGI (text-generation-inference), llama.cpp u Ollama, cargando el adaptador sobre el modelo base. Tambien es compatible con la libreria transformers de HuggingFace.
+- Opciones de despliegue: se puede servir con vLLM, TGI (text-generation-inference), llama.cpp u Ollama, cargando el adaptador sobre el modelo base. Tambien es compatible con la libreria transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos especificos. Dependera del hardware y del backend utilizado; en una RTX 4090, el modelo base 8B en 4 bits suele generar entre 50 y 100 tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -60,10 +60,10 @@ Dado que no hay informacion sobre el rendimiento especifico del adaptador, la co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ab12321/llama3.1-8b-lora-corporate-synergy | 8B (base) + LoRA | 128k (base) | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace, Ollama |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | HuggingFace, Ollama |
-| google/gemma-2-9b-it | 9B | 8k | Gemma License | HuggingFace, Ollama |
+| ab12321/llama3.1-8b-lora-corporate-synergy | 8B (base) + LoRA | 128k (base) | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face, Ollama |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | Hugging Face, Ollama |
+| google/gemma-2-9b-it | 9B | 8k | Gemma License | Hugging Face, Ollama |
 
 El adaptador no ofrece ventajas claras frente al modelo base sin ajuste, salvo que el fine-tuning haya mejorado el rendimiento en tareas corporativas especificas, lo cual no esta documentado. La licencia Apache 2.0 es mas permisiva que la de Llama 3.1 (que tiene restricciones de uso para mas de 700 millones de usuarios mensuales), lo que puede ser relevante para despliegues a gran escala.
 
@@ -78,8 +78,8 @@ El adaptador no ofrece ventajas claras frente al modelo base sin ajuste, salvo q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ab12321/llama3.1-8b-lora-corporate-synergy
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+- Hugging Face: https://huggingface.co/ab12321/llama3.1-8b-lora-corporate-synergy
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Documentacion de Llama 3.1 en Meta: https://developer.meta.com/ai/models/llama-3/
 - Repositorio oficial de Llama 3 en GitHub: https://github.com/meta-llama/llama3
 - Pagina de Llama 3.1 en Ollama: https://ollama.com/library/llama3.1:8b

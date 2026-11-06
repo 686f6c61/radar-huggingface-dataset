@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KiraAi-3B es un modelo de lenguaje publicado en HuggingFace por el usuario `examegd` bajo el identificador `examegd/KiraAi-3B`. Se trata de un checkpoint de 3.397.103.616 parámetros (3,40 mil millones) almacenado exclusivamente en formato safetensors, con un tamaño de repositorio de 6,8 GB, lo que es coherente con pesos en precisión de 16 bits (3,40 B × 2 bytes ≈ 6,8 GB) sin artefactos cuantizados adicionales. La etiqueta `qwen2` del repositorio indica que la arquitectura declarada en la configuración corresponde a la familia Qwen2 (transformer decoder-only con atención causal, RoPE y capas GQA), aunque no se ha publicado información que confirme el procedimiento de entrenamiento ni el modelo base exacto.
+KiraAi-3B es un modelo de lenguaje publicado en Hugging Face por el usuario `examegd` bajo el identificador `examegd/KiraAi-3B`. Se trata de un checkpoint de 3.397.103.616 parámetros (3,40 mil millones) almacenado exclusivamente en formato safetensors, con un tamaño de repositorio de 6,8 GB, lo que es coherente con pesos en precisión de 16 bits (3,40 B × 2 bytes ≈ 6,8 GB) sin artefactos cuantizados adicionales. La etiqueta `qwen2` del repositorio indica que la arquitectura declarada en la configuración corresponde a la familia Qwen2 (transformer decoder-only con atención causal, RoPE y capas GQA), aunque no se ha publicado información que confirme el procedimiento de entrenamiento ni el modelo base exacto.
 
 El interés de esta ficha es limitado pero real: se trata de un modelo pequeño, con huella de memoria moderada, que podría ejecutarse en GPU de consumo si la calidad lo permite. Sin embargo, la información pública es mínima: no hay tarjeta de modelo con descripción, no se declara licencia, no se especifican idiomas soportados ni longitud de contexto, y el repositorio no incluye datos de benchmarks ni resultados de evaluación. El contador de descargas es 0 y el de likes es 1 en el momento de la consulta, y la fecha de creación registrada (2026-10-20) es posterior a la de la mayoría de checkpoints de referencia, lo que sugiere un experimento personal o un fine-tune reciente más que un lanzamiento con soporte.
 
@@ -102,4 +102,4 @@ Diferencias clave: frente a las alternativas, KiraAi-3B no declara licencia, no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/examegd/KiraAi-3B
+- Hugging Face: https://huggingface.co/examegd/KiraAi-3B

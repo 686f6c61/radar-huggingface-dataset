@@ -78,7 +78,7 @@ La comparativa se limita a modelos de la misma familia. No se dispone de datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-GGUF
+- Repositorio Hugging Face: https://huggingface.co/CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-GGUF
 - Modelo base (safetensors): https://huggingface.co/CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096
 - Modelo base original de Google: https://huggingface.co/google/gemma-4-31B
 - Documentacion de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/

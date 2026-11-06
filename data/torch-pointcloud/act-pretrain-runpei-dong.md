@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este checkpoint) | 141,8 M | nubes de puntos (hasta 8192 puntos en el ejemplo) | Preentrenamiento autosupervisado 3D | MIT | HuggingFace (`torch-pointcloud/act.pretrain.runpei-dong`) |
+| ACT (este checkpoint) | 141,8 M | nubes de puntos (hasta 8192 puntos en el ejemplo) | Preentrenamiento autosupervisado 3D | MIT | Hugging Face (`torch-pointcloud/act.pretrain.runpei-dong`) |
 | Point-MAE | no disponible en la informacion | nubes de puntos | Preentrenamiento autosupervisado 3D | no disponible | no disponible |
 | Point-BERT | no disponible en la informacion | nubes de puntos | Preentrenamiento autosupervisado 3D | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/act.pretrain.runpei-dong
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/act.pretrain.runpei-dong
 - Paper ACT (arXiv 2212.08320): https://arxiv.org/abs/2212.08320
 - Paper ShapeNet (arXiv 1512.03012): https://arxiv.org/abs/1512.03012
 - Repositorio original ACT: https://github.com/RunpeiDong/ACT

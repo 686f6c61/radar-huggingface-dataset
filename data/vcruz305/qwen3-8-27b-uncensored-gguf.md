@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B (oficial) | 27B | 262 144 | Apache-2.0 | HuggingFace |
-| vcruz305/Qwen3.8-27B-GGUF (trunk oficial BF16) | 27B | 262 144 | Apache-2.0 | HuggingFace |
-| vcruz305/Qwen3.8-27B-Uncensored-GGUF (este) | 27B | 262 144 | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (oficial) | 27B | 262 144 | Apache-2.0 | Hugging Face |
+| vcruz305/Qwen3.8-27B-GGUF (trunk oficial BF16) | 27B | 262 144 | Apache-2.0 | Hugging Face |
+| vcruz305/Qwen3.8-27B-Uncensored-GGUF (este) | 27B | 262 144 | Apache-2.0 | Hugging Face |
 
 La diferencia principal es que este pack elimina el alineamiento de seguridad y omite el MTP, mientras que los otros dos conservan el comportamiento oficial. No se dispone de datos de rendimiento comparativo.
 

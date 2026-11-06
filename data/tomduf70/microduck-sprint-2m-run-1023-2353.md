@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tomduf70/microduck-sprint-2m-run-1023-2353` | Política RL para microduck (ONNX) | no disponible | 61-D obs., 14 acciones, 50 Hz | no disponible | HuggingFace, 0 descargas |
+| `tomduf70/microduck-sprint-2m-run-1023-2353` | Política RL para microduck (ONNX) | no disponible | 61-D obs., 14 acciones, 50 Hz | no disponible | Hugging Face, 0 descargas |
 | Otras ejecuciones de la serie `run-*` del mismo autor | Políticas RL para microduck | no disponible | misma interfaz (61-D / 14 acciones) | no disponible | no verificado en la informacion disponible |
 | Políticas basadas en Isaac Lab para cuadrúpedos | Políticas RL | no disponible | variable | habitualmente BSD-3/MIT | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos públicos de modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomduf70/microduck-sprint-2m-run-1023-2353
+- Modelo en Hugging Face: https://huggingface.co/tomduf70/microduck-sprint-2m-run-1023-2353
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento del autor: https://github.com/tomduf70/microduck-challenges (commit `9dcc33bae`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck (ruta citada en la model card; URL exacta no disponible)

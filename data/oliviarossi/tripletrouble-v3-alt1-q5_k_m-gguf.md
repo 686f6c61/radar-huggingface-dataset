@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OliviaRossi/TripleTrouble-V3-ALT1-Q5_K_M-GGUF es una conversion a formato GGUF del modelo OliviaRossi/TripleTrouble-V3-ALT1, publicada por el mismo autor en HuggingFace. La conversion se ha realizado con llama.cpp a traves del espacio GGUF-my-repo de ggml.ai, lo que convierte a este repositorio en un artefacto de despliegue orientado a inferencia local y en CPU, no en un modelo entrenado desde cero. El repositorio contiene un unico fichero de pesos cuantizado en Q5_K_M, con un total de 34.660.610.688 parametros (aproximadamente 34,66 mil millones) y un tamano de repositorio de 24,7 GB.
+OliviaRossi/TripleTrouble-V3-ALT1-Q5_K_M-GGUF es una conversion a formato GGUF del modelo OliviaRossi/TripleTrouble-V3-ALT1, publicada por el mismo autor en Hugging Face. La conversion se ha realizado con llama.cpp a traves del espacio GGUF-my-repo de ggml.ai, lo que convierte a este repositorio en un artefacto de despliegue orientado a inferencia local y en CPU, no en un modelo entrenado desde cero. El repositorio contiene un unico fichero de pesos cuantizado en Q5_K_M, con un total de 34.660.610.688 parametros (aproximadamente 34,66 mil millones) y un tamano de repositorio de 24,7 GB.
 
 El problema que resuelve es puramente de empaquetado y distribucion: tomar los pesos originales del modelo base y ofrecerlos en un formato que pueda ejecutarse con llama.cpp, Ollama, LM Studio o servidores compatibles con la API de llama.cpp, sin necesidad de infraestructura de GPU de datacenter. Es relevante para desarrolladores que quieran evaluar el modelo base en hardware de gama alta de consumo o en estaciones de trabajo con memoria unificada, ya que una cuantizacion Q5_K_M reduce el espacio de pesos a aproximadamente 5,5 bits por parametro manteniendo una calidad cercana al modelo en precision completa.
 
@@ -24,8 +24,8 @@ La informacion publicada es muy limitada: la model card del repositorio GGUF se 
 | Nombre del fichero | tripletrouble-v3-alt1-q5_k_m.gguf |
 | Tamano del repositorio | 24,7 GB |
 | Tag de pipeline | no disponible (etiquetado como conversational) |
-| Fecha de creacion | 2026-09-12 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-12 (segun metadatos de Hugging Face) |
 | Descargas | 0 |
 | Likes | 1 |
 
@@ -38,7 +38,7 @@ El detalle tecnico verificable es el esquema de cuantizacion: Q5_K_M, una varian
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica un uso previsto de dialogo multi-turno.
-- Compatibilidad con endpoints: el repositorio esta marcado como `endpoints_compatible`, por lo que puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el repositorio esta marcado como `endpoints_compatible`, por lo que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Ejecucion en llama.cpp: soporta CLI y servidor HTTP mediante `llama-cli` y `llama-server`.
 - Especializacion funcional del modelo base: no disponible.
 - Soporte de tool calling o function calling: no disponible.
@@ -80,7 +80,7 @@ No se dispone de informacion suficiente sobre el modelo base (arquitectura, cont
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| TripleTrouble-V3-ALT1-Q5_K_M | 34,66 mil millones | no disponible | no disponible | GGUF en HuggingFace | no disponible |
+| TripleTrouble-V3-ALT1-Q5_K_M | 34,66 mil millones | no disponible | no disponible | GGUF en Hugging Face | no disponible |
 | Qwen2.5-32B | 32,5 mil millones | 131.072 tokens (segun documentacion de Qwen) | Apache 2.0 | safetensors y GGUF | no disponible |
 | CodeLlama-34B | 34 mil millones | 16.384 tokens (segun documentacion de Meta) | Llama 2 Community License | safetensors y GGUF | no disponible |
 | Yi-34B | 34 mil millones | 4.096 tokens en la version base | Apache 2.0 | safetensors y GGUF | no disponible |
@@ -103,7 +103,7 @@ Advertencia: los datos de las filas correspondientes a Qwen2.5-32B, CodeLlama-34
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT1-Q5_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT1-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT1
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

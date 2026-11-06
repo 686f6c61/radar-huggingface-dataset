@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cxai-models/flux-3.0-trader` es un repositorio publicado en HuggingFace por el usuario `cxai-models` que se presenta como «CXAI-FLUX-3.0 Multi-System Autonomous Trading Kernels», es decir, un conjunto de kernels de ejecución e investigación orientados a trading automatizado. Según su model card, el paquete coordina cuatro sistemas: un motor de acciones de fase 1 con ejecución en Alpaca y corroboración de regresiones sobre datos minutales de Massive API, un agente de trading para Robinhood escrito en C++20 con arquitectura «Dual-MCP», un motor autónomo de criptomonedas con feeds de Coinbase y Alpaca, y un pipeline de sincronización de telemetría sobre PostgreSQL/Supabase.
+`cxai-models/flux-3.0-trader` es un repositorio publicado en Hugging Face por el usuario `cxai-models` que se presenta como «CXAI-FLUX-3.0 Multi-System Autonomous Trading Kernels», es decir, un conjunto de kernels de ejecución e investigación orientados a trading automatizado. Según su model card, el paquete coordina cuatro sistemas: un motor de acciones de fase 1 con ejecución en Alpaca y corroboración de regresiones sobre datos minutales de Massive API, un agente de trading para Robinhood escrito en C++20 con arquitectura «Dual-MCP», un motor autónomo de criptomonedas con feeds de Coinbase y Alpaca, y un pipeline de sincronización de telemetría sobre PostgreSQL/Supabase.
 
 El punto crítico es que el repositorio no contiene pesos de un modelo de lenguaje: el propio autor indica que el motor de IA es `CXAI-FLUX-3.0`, consumido a través de un gateway externo alojado en `https://ns3192699.ip-152-228-227.eu/flux-gateway/v1`. El contenido publicado son scripts Python (`kernel_phase1.py`, `kernel_flx_hood.py`, `kernel_flx_crypto.py`, `kernel_pipeline.py` y `flux-3.0-trade.py`), por lo que la ficha describe un framework de agentes de trading, no un modelo con arquitectura, parámetros o contexto declarados.
 
@@ -42,7 +42,7 @@ Lo que sí está documentado es la arquitectura del *sistema* que rodea al model
 - Motor autónomo de criptomonedas con evaluación de microestructura de libro de órdenes y señales de momentum, alimentado por Coinbase y Alpaca.
 - Sincronización de telemetría multi-sistema (tres instancias PostgreSQL/Supabase) con seguimiento de recibos de operaciones.
 - Orquestación multi-agente: los cuatro kernels se ejecutan conjuntamente mediante un runner maestro (`flux-3.0-trade.py run --target all`) y existe un comando de verificación de integridad (`verify`).
-- Despliegue del bundle de kernels en HuggingFace Hub mediante `flux-3.0-trade.py upload --repo-id`.
+- Despliegue del bundle de kernels en Hugging Face Hub mediante `flux-3.0-trade.py upload --repo-id`.
 - Barrera de seguridad determinista: el modelo tiene autoridad de ejecución desactivada explícitamente (`execution_authority: false`) y requiere confirmación del operador o validación de un coordinador.
 - No se declaran capacidades de visión, audio, matemáticas, generación de código general, razonamiento general ni soporte multilingüe; el único idioma declarado es el inglés.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Los kernels en sí son scripts Python más un componente en C++20 (`flx-hood`), por lo que el requisito real es un entorno de ejecución Python y una cadena de herramientas C++20, no una GPU.
 - GPU recomendadas: no disponible, al no existir inferencia local declarada.
 - Capacidad en GPU de consumo: no disponible.
-- Opciones de despliegue documentadas: ejecución directa mediante `python3 flux-3.0-trade.py run --target all` y publicación del bundle en HuggingFace Hub con el subcomando `upload`. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que además no aplicarían sin pesos publicados.
+- Opciones de despliegue documentadas: ejecución directa mediante `python3 flux-3.0-trade.py run --target all` y publicación del bundle en Hugging Face Hub con el subcomando `upload`. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que además no aplicarían sin pesos publicados.
 - Latencia y throughput: no disponible. Dependerían por completo del gateway externo y de las APIs de mercado (Alpaca, Robinhood, Coinbase, Massive), cuyos límites de tasa no se documentan.
 
 ## Comparativa con modelos similares
@@ -87,6 +87,6 @@ No disponible. No se dispone de datos de arquitectura, parámetros, contexto ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cxai-models/flux-3.0-trader
+- Hugging Face: https://huggingface.co/cxai-models/flux-3.0-trader
 - Gateway del motor declarado en la model card: https://ns3192699.ip-152-228-227.eu/flux-gateway/v1
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la busqueda web realizada. Los resultados devueltos por el buscador no guardan relación con el modelo (contenido sobre pedidos móviles de una cadena de restauración) y se descartan por no ser relevantes.

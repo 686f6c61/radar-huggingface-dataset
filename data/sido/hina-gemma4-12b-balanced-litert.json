@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Sido/hina-gemma4-12b-balanced-litert",
+  "slug": "sido-hina-gemma4-12b-balanced-litert",
+  "author": "Sido",
+  "url": "https://huggingface.co/Sido/hina-gemma4-12b-balanced-litert",
+  "created_at": "2026-11-02T06:23:34.000Z",
+  "updated_at": "2026-11-02T06:27:20.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "litert-lm",
+    "gemma4",
+    "webgpu",
+    "experimental",
+    "ja",
+    "en",
+    "base_model:HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+    "base_model:finetune:HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7273467408,
+  "storage_human": "7.3 GB",
+  "base_model": "HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced, google/gemma-4-12B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sido (Colette) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sido_(Colette)",
+      "snippet": "Sido est un roman autobiographique de Colette, qui décrit sa mère Sidonie Landoy, surnommée Sido, mais également son …"
+    },
+    {
+      "title": "Sido/hina-gemma4-12b-balanced-litert · Hugging Face",
+      "url": "https://huggingface.co/Sido/hina-gemma4-12b-balanced-litert",
+      "snippet": "The language model was re-quantized using LiteRT Torch's dynamic_wi4b32_afp32 (BLOCKWISE_32), BF16 tensor types and constants were converted to FP16, and decoder weights were externalized for the browser runtime."
+    },
+    {
+      "title": "SIDO LYON",
+      "url": "https://www.sido-lyon.com/",
+      "snippet": "IMPACT est l’espace de SIDO dédié à celles et ceux qui construisent un numérique capable de fonctionner dans un monde plus …"
+    },
+    {
+      "title": "Sido/hina-gemma4-12b-heretic-litert · Hugging Face",
+      "url": "https://huggingface.co/Sido/hina-gemma4-12b-heretic-litert",
+      "snippet": "The input file gemma-4-12B-it-heretic.Q4_K_M.gguf is 7,381,382,720 bytes, SHA-256 278a8a485e2b6afd1762604b18da53542342532b1b96a65f767fbd9b141f35ab. The language weights were dequantized to FP16, then re-quantized to LiteRT-LM dynamic_wi4b32_afp32 (blockwise 4-bit)."
+    },
+    {
+      "title": "Sido (rapper) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sido_(rapper)",
+      "snippet": "Sido is known for his provocative and aggressive lyrics. After gaining prominence with his debut album Maske in 2004, he became …"
+    }
+  ]
+}

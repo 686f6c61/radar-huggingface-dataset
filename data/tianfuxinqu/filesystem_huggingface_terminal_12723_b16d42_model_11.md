@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_11` se presenta, según su model card, como un extractor OCR de documentos bajo la denominación interna MDL-011, atribuido a Isabella Moore en el departamento de Operations. La información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, contexto ni datos de entrenamiento, y el repositorio no registra descargas ni interacciones. La model card se limita a metadatos de gobernanza interna (nivel de riesgo alto, documentación parcial, cobertura de tests del 42 % y última auditoría en marzo de 2026).
+El modelo identificado en Hugging Face como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_11` se presenta, según su model card, como un extractor OCR de documentos bajo la denominación interna MDL-011, atribuido a Isabella Moore en el departamento de Operations. La información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, contexto ni datos de entrenamiento, y el repositorio no registra descargas ni interacciones. La model card se limita a metadatos de gobernanza interna (nivel de riesgo alto, documentación parcial, cobertura de tests del 42 % y última auditoría en marzo de 2026).
 
 El nombre del repositorio y la ruta (`filesystem_huggingface_terminal_...`) sugieren un artefacto generado de forma automática dentro de un pipeline interno de gestión de modelos, más que una publicación dirigida a la comunidad. La fecha de creación y actualización (noviembre de 2026) es coherente con ese carácter de snapshot interno. No hay indicios de que existan pesos publicados, demos ni documentación técnica asociada.
 
@@ -71,10 +71,10 @@ No es posible establecer una comparativa rigurosa porque se desconocen parámetr
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MDL-011 (este modelo) | no disponible | no disponible | no disponible | repositorio HuggingFace sin descargas |
+| MDL-011 (este modelo) | no disponible | no disponible | no disponible | repositorio Hugging Face sin descargas |
 | Tesseract | no aplica (motor OCR clásico) | no aplica | Apache 2.0 | ampliamente disponible |
 | PaddleOCR | no disponible en esta ficha | no aplica | Apache 2.0 | ampliamente disponible |
-| TrOCR | no disponible en esta ficha | no aplica | MIT | disponible en HuggingFace |
+| TrOCR | no disponible en esta ficha | no aplica | MIT | disponible en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -89,5 +89,5 @@ No es posible establecer una comparativa rigurosa porque se desconocen parámetr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_11
+- Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_11
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

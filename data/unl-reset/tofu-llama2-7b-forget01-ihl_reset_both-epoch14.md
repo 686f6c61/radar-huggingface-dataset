@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tofu-llama2-7b-forget01-ihl_reset_both-epoch14 | 6.738 M | no disponible | Checkpoint de *unlearning* (época 14/20) | llama2 | HuggingFace (0 descargas) |
-| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | Modelo base ajustado en TOFU, sin *unlearning* | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | Chat de propósito general | llama2 | HuggingFace |
-| meta-llama/Llama-2-7b-hf | ~6.738 M | 4096 | Modelo base de propósito general | llama2 | HuggingFace |
+| tofu-llama2-7b-forget01-ihl_reset_both-epoch14 | 6.738 M | no disponible | Checkpoint de *unlearning* (época 14/20) | llama2 | Hugging Face (0 descargas) |
+| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | Modelo base ajustado en TOFU, sin *unlearning* | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | Chat de propósito general | llama2 | Hugging Face |
+| meta-llama/Llama-2-7b-hf | ~6.738 M | 4096 | Modelo base de propósito general | llama2 | Hugging Face |
 
 La comparación relevante es frente a `locuslab/tofu_ft_llama2-7b` (el modelo sin olvidar) y frente a los checkpoints de otras épocas o variantes del mismo experimento. No se dispone de datos de rendimiento comparado en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparación relevante es frente a `locuslab/tofu_ft_llama2-7b` (el modelo si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch14
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch14
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de referencia para embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original Llama 2: https://huggingface.co/meta-llama/Llama-2-7b-hf

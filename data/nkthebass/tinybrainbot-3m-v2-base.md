@@ -95,7 +95,7 @@ Dentro de la categoria de modelos de 3M de parametros o menos, TinyBrainBot-3M-v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-3m-v2-base
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-3m-v2-base
 - Predecesor (TinyBrainBot-3M-Base): https://huggingface.co/nkthebass/tinybrainbot-3m-base
 - Open SLM Leaderboard (AxiomicLabs): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Datasets de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu, https://huggingface.co/datasets/HuggingFaceTB/cosmopedia, https://huggingface.co/datasets/roneneldan/TinyStories, https://huggingface.co/datasets/wikimedia/wikipedia, https://huggingface.co/datasets/microsoft/orca-math-word-problems-200k

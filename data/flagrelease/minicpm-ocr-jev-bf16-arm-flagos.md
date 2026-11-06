@@ -89,7 +89,7 @@ La comparación relevante es con Qwen3.5-397B-A17B: Jev queda a dos milésimas d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-arm-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-arm-FlagOS
 - Repositorio FlagOS (organización): https://huggingface.co/FlagRelease
 - Model card de referencia de MiniCPM-OCR (familia): no disponible en la información proporcionada
 - Paper o blog técnico de MiniCPM-OCR: no disponible en la información proporcionada

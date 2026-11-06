@@ -77,6 +77,6 @@ No se dispone de comparativas publicadas con otros modelos. Como referencia, se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-GGUF
+- Hugging Face: https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-GGUF
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Repositorio de Qwen2.5-Coder (modelo base): https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

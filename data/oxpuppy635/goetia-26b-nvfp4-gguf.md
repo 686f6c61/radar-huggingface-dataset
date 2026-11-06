@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goetia-26B-NVFP4-GGUF es una cuantización en formato GGUF nativo NVFP4 del modelo Goetia-26B, un Mixture-of-Experts (MoE) de aproximadamente 26 mil millones de parámetros construido sobre la arquitectura Gemma-4 y con 128 expertos enrutados. Lo publica el usuario oxpuppy635 en HuggingFace bajo licencia Apache 2.0. El problema que resuelve es de eficiencia de despliegue: comprime el modelo desde unos 52 GB en BF16 hasta 15,3 GB, lo que permite cargarlo por completo en una única GPU de 16 GB de VRAM.
+Goetia-26B-NVFP4-GGUF es una cuantización en formato GGUF nativo NVFP4 del modelo Goetia-26B, un Mixture-of-Experts (MoE) de aproximadamente 26 mil millones de parámetros construido sobre la arquitectura Gemma-4 y con 128 expertos enrutados. Lo publica el usuario oxpuppy635 en Hugging Face bajo licencia Apache 2.0. El problema que resuelve es de eficiencia de despliegue: comprime el modelo desde unos 52 GB en BF16 hasta 15,3 GB, lo que permite cargarlo por completo en una única GPU de 16 GB de VRAM.
 
 La cuantización emplea super-bloques GGML NVFP4 (tipo 39) con pesos de 4 bits en coma flotante E2M1 y micro-escalas FP8 cada 16 elementos. Se cuantizan tanto las proyecciones densas de auto-atención como las proyecciones de los 128 expertos MoE en las 30 capas del modelo, mientras que los embeddings de tokens se preservan en BF16 y las normalizaciones y escalares en FP32/BF16 para mantener la estabilidad numérica.
 
@@ -81,5 +81,5 @@ No disponible. La información proporcionada no incluye datos de benchmarks ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oxpuppy635/Goetia-26B-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/oxpuppy635/Goetia-26B-NVFP4-GGUF
 - llama.cpp (requerido para la inferencia): https://github.com/ggerganov/llama.cpp

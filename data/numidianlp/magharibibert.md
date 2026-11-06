@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks extrínsecos (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Enfoque linguistico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MagharibiBERT | 162,9 M | 512 | Árabe magrebí, arabizi, code-switching | no disponible | HuggingFace (NumidiaNLP) |
-| UBC-NLP/MARBERT | 162,9 M (arquitectura base) | 512 | Árabe general y dialectal (modelo padre) | no disponible en la información proporcionada | HuggingFace (UBC-NLP) |
-| UBC-NLP/MARBERTv2 | no disponible en la información proporcionada | no disponible | Árabe general y dialectal, versión revisada | no disponible en la información proporcionada | HuggingFace (UBC-NLP) |
-| CAMeLBERT | no disponible en la información proporcionada | 512 (BERT-base) | Árabe clásico, dialectal y de mezcla | no disponible en la información proporcionada | HuggingFace (CAMeL Lab) |
+| MagharibiBERT | 162,9 M | 512 | Árabe magrebí, arabizi, code-switching | no disponible | Hugging Face (NumidiaNLP) |
+| UBC-NLP/MARBERT | 162,9 M (arquitectura base) | 512 | Árabe general y dialectal (modelo padre) | no disponible en la información proporcionada | Hugging Face (UBC-NLP) |
+| UBC-NLP/MARBERTv2 | no disponible en la información proporcionada | no disponible | Árabe general y dialectal, versión revisada | no disponible en la información proporcionada | Hugging Face (UBC-NLP) |
+| CAMeLBERT | no disponible en la información proporcionada | 512 (BERT-base) | Árabe clásico, dialectal y de mezcla | no disponible en la información proporcionada | Hugging Face (CAMeL Lab) |
 
 MagharibiBERT se distingue de MARBERT por el preentrenamiento continuado específico en 17 corpus magrebíes con cobertura explícita de arabizi y code-switching. No se dispone de comparación cuantitativa downstream publicada frente a MARBERT, MARBERTv2 o CAMeLBERT; el autor indica que esa evaluación está en curso.
 
@@ -95,9 +95,9 @@ MagharibiBERT se distingue de MARBERT por el preentrenamiento continuado especí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NumidiaNLP/MagharibiBERT
+- Modelo en Hugging Face: https://huggingface.co/NumidiaNLP/MagharibiBERT
 - Modelo base MARBERT: https://huggingface.co/UBC-NLP/MARBERT
 - Paper MARBERT (ARBERT & MARBERT, ACL-IJCNLP 2021): https://doi.org/10.18653/v1/2021.acl-long.551
-- Organización NumidiaNLP en HuggingFace: https://huggingface.co/NumidiaNLP
+- Organización NumidiaNLP en Hugging Face: https://huggingface.co/NumidiaNLP
 - Contacto del autor correspondiente: ahmedzoubir.messalti@univ-setif.dz
 - Institución: University Ferhat Abbas Sétif 1, Argelia

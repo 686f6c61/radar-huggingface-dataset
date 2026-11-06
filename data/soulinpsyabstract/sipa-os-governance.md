@@ -53,5 +53,5 @@ No disponible. No existe un modelo comparable, pues el repositorio no contiene u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SoulInPsyAbstract/sipa-os-governance
+- Repositorio en Hugging Face: https://huggingface.co/SoulInPsyAbstract/sipa-os-governance
 - Documentos internos referenciados (rutas relativas dentro del repositorio): GOVERNANCE.md, OWNERSHIP.md, CHARTER.md, TOKEN_GOVERNANCE.md, IP_POLICY.md, AMENDMENTS.md

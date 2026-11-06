@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sft__ot30k_Qwen2.5-1.5B` es un ajuste fino supervisado (SFT) del modelo base Qwen2.5-1.5B, publicado por la organizacion open-sci en HuggingFace. Se trata de un modelo de generacion de texto de 1.543.714.304 parametros (aproximadamente 1,5 mil millones), entrenado con la libreria LLaMA-Factory sobre un subconjunto de 30.000 muestras del dataset Open Thoughts (open-thoughts3-1.2_m_30000_samples). El modelo esta pensado para generacion conversacional y de razonamiento, y se distribuye en formato safetensors compatible con transformers.
+`sft__ot30k_Qwen2.5-1.5B` es un ajuste fino supervisado (SFT) del modelo base Qwen2.5-1.5B, publicado por la organizacion open-sci en Hugging Face. Se trata de un modelo de generacion de texto de 1.543.714.304 parametros (aproximadamente 1,5 mil millones), entrenado con la libreria LLaMA-Factory sobre un subconjunto de 30.000 muestras del dataset Open Thoughts (open-thoughts3-1.2_m_30000_samples). El modelo esta pensado para generacion conversacional y de razonamiento, y se distribuye en formato safetensors compatible con transformers.
 
 La relevancia de este modelo radica en su caracter de experimento de investigacion: es un ajuste fino completo (full fine-tuning, no LoRA) realizado sobre 32 dispositivos GPU con un batch total de 128 y 5 epocas, lo que sugiere un esfuerzo de entrenamiento considerable para su tamano. Sin embargo, la model card es practicamente vacia en cuanto a documentacion de uso, datos de evaluacion y limitaciones, y no se han publicado resultados de benchmarks.
 
@@ -63,10 +63,10 @@ La model card declara un `model-index` con el nombre del modelo pero la lista de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sft__ot30k_Qwen2.5-1.5B (este) | 1,54B | no disponible | other | HuggingFace, safetensors |
-| Qwen2.5-1.5B (base) | 1,54B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | HuggingFace, amplia disponibilidad |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | HuggingFace, amplia disponibilidad |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens (segun documentacion publica) | Apache 2.0 | HuggingFace |
+| sft__ot30k_Qwen2.5-1.5B (este) | 1,54B | no disponible | other | Hugging Face, safetensors |
+| Qwen2.5-1.5B (base) | 1,54B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | Hugging Face, amplia disponibilidad |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | Hugging Face, amplia disponibilidad |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens (segun documentacion publica) | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto y licencia de los modelos comparables provienen de su documentacion publica; no se dispone de evaluaciones del modelo de open-sci para comparar rendimiento.
 
@@ -84,7 +84,7 @@ Nota: los datos de contexto y licencia de los modelos comparables provienen de s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/sft__ot30k_Qwen2.5-1.5B
+- Hugging Face: https://huggingface.co/open-sci/sft__ot30k_Qwen2.5-1.5B
 - Dataset Open Thoughts (referenciado en la model card): https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M (referencia al corpus original; el subconjunto exacto no esta enlazado)
 - LLaMA-Factory: https://github.com/hiyouga/LLaMA-Factory
 - Qwen2.5-1.5B (modelo base): https://huggingface.co/Qwen/Qwen2.5-1.5B

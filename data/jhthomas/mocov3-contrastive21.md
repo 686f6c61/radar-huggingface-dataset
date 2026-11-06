@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jhthomas/mocov3-contrastive21` es un repositorio de HuggingFace que contiene una implementación propia y compacta de **MoCo v3** (MoCo v3, *Momentum Contrast*) para aprendizaje contrastivo, escrita en PyTorch. Lo publica el usuario `jhthomas` y no es un modelo preentrenado: la propia model card lo describe como un artefacto para revisión de código, *smoke tests* y experimentos controlados de pequeño tamaño, no como un *release* listo para producción. El repositorio incluye el código (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en safetensors.
+`jhthomas/mocov3-contrastive21` es un repositorio de Hugging Face que contiene una implementación propia y compacta de **MoCo v3** (MoCo v3, *Momentum Contrast*) para aprendizaje contrastivo, escrita en PyTorch. Lo publica el usuario `jhthomas` y no es un modelo preentrenado: la propia model card lo describe como un artefacto para revisión de código, *smoke tests* y experimentos controlados de pequeño tamaño, no como un *release* listo para producción. El repositorio incluye el código (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en safetensors.
 
 El dato más relevante es la incoherencia entre la etiqueta y el contenido: la model card declara una escala «giant», pero el recuento real del fichero safetensors es de **24.832 parámetros** (unas 24,8 mil), y el repositorio ocupa 0,0 GB. Es decir, se trata de un esqueleto de código con pesos aleatorios, no de un *backbone* entrenado. No hay ningún resultado de benchmark declarado ni se ha publicado información sobre el conjunto de datos, el número de tokens o el proceso de entrenamiento.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jhthomas/mocov3-contrastive21` | 24.832 (safetensors) | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | HuggingFace, 0 descargas |
+| `jhthomas/mocov3-contrastive21` | 24.832 (safetensors) | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | Hugging Face, 0 descargas |
 | MoCo v3 (implementación de referencia de los autores) | no disponible en la informacion proporcionada | no aplica (visión) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | repositorio público de investigación |
 | SimCLR (familia contrastiva alternativa) | no disponible en la informacion proporcionada | no aplica (visión) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | implementaciones públicas |
 | DINO / DINOv2 (auto-supervisión sin negativos) | no disponible en la informacion proporcionada | no aplica (visión) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | pesos publicados |
@@ -88,5 +88,5 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jhthomas/mocov3-contrastive21
+- Hugging Face: https://huggingface.co/jhthomas/mocov3-contrastive21
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos no guardan relación con este repositorio ni con MoCo v3, por lo que se omiten.

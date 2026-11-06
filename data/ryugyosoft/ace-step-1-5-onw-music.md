@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Tipo | Contexto / duración | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ACE-Step/Ace-Step1.5 (original) | Text-to-audio en fp32, orientado a GPU (CUDA, Mac, AMD, Intel) | no disponible; menos de 2 s por canción en A100 y menos de 4 GB de VRAM según la documentación del proyecto | MIT | HuggingFace |
-| ryugyosoft/ACE-Step-1.5-onwx-music | Conversión OpenVINO para NPU AMD Ryzen AI | no disponible; mismas limitaciones de duración de pista | MIT (hereda del base) | HuggingFace |
-| ryugyosoft/ACE-Step-1.5-onw-music (este modelo) | Conversión OpenVINO para NPU Intel Core Ultra | pistas de 10 a 600 s | MIT | HuggingFace |
+| ACE-Step/Ace-Step1.5 (original) | Text-to-audio en fp32, orientado a GPU (CUDA, Mac, AMD, Intel) | no disponible; menos de 2 s por canción en A100 y menos de 4 GB de VRAM según la documentación del proyecto | MIT | Hugging Face |
+| ryugyosoft/ACE-Step-1.5-onwx-music | Conversión OpenVINO para NPU AMD Ryzen AI | no disponible; mismas limitaciones de duración de pista | MIT (hereda del base) | Hugging Face |
+| ryugyosoft/ACE-Step-1.5-onw-music (este modelo) | Conversión OpenVINO para NPU Intel Core Ultra | pistas de 10 a 600 s | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ryugyosoft/ACE-Step-1.5-onw-music
+- Hugging Face del modelo: https://huggingface.co/ryugyosoft/ACE-Step-1.5-onw-music
 - Aplicación onw-music: https://huggingface.co/ryugyosoft/onw-music
 - Modelo base ACE-Step/Ace-Step1.5: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Codificador de texto Qwen3-Embedding-0.6B: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B

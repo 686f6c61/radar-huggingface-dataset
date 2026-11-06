@@ -4,7 +4,7 @@
 
 Este repositorio aloja un modelo de muestra para el sistema de conversión de voz cantada (SVC) `whisper-vits-svc-dynamics`, desarrollado por el usuario NONAMEmurmur. El modelo está pensado como ejemplo para probar el pipeline de conversión de voz del proyecto homónimo, que combina Whisper para la extracción de características acústicas y VITS para la síntesis de voz con control de dinámicas.
 
-Se trata de un espejo del modelo original distribuido mediante Google Drive, publicado con el objetivo de facilitar su descarga. El repositorio tiene un tamaño de 1,4 GB y no presenta descargas ni valoraciones en HuggingFace, lo que sugiere que es un recurso de demostración para desarrolladores que quieran evaluar el sistema `whisper-vits-svc-dynamics`. No es un modelo de lenguaje, sino un artefacto de audio para conversión de voz cantada.
+Se trata de un espejo del modelo original distribuido mediante Google Drive, publicado con el objetivo de facilitar su descarga. El repositorio tiene un tamaño de 1,4 GB y no presenta descargas ni valoraciones en Hugging Face, lo que sugiere que es un recurso de demostración para desarrolladores que quieran evaluar el sistema `whisper-vits-svc-dynamics`. No es un modelo de lenguaje, sino un artefacto de audio para conversión de voz cantada.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Se trata de un espejo del modelo original distribuido mediante Google Drive, pub
 
 El modelo pertenece al ecosistema `whisper-vits-svc-dynamics`, un sistema de conversión de voz cantada que combina dos componentes principales: un codificador basado en Whisper para extraer características lingüísticas y prosódicas de la señal de audio, y un decodificador VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech) adaptado para síntesis de voz con control de dinámicas. El proyecto del autor se centra en mejorar la expresividad de la voz convertida, permitiendo preservar las variaciones de volumen, intensidad y acento emocional de la voz fuente.
 
-Los detalles de entrenamiento (número de pasos, composición del dataset, hiperparámetros) no se han publicado en la información disponible. El repositorio de HuggingFace se limita a ser un espejo del modelo de muestra distribuido originalmente a través de Google Drive, y las instrucciones de uso y licencia se encuentran en los archivos LICENSE incluidos en el repositorio.
+Los detalles de entrenamiento (número de pasos, composición del dataset, hiperparámetros) no se han publicado en la información disponible. El repositorio de Hugging Face se limita a ser un espejo del modelo de muestra distribuido originalmente a través de Google Drive, y las instrucciones de uso y licencia se encuentran en los archivos LICENSE incluidos en el repositorio.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - Idiomas: no se especifica qué idiomas soporta; probablemente depende del modelo de Whisper subyacente.
 - Sin documentación de entrenamiento: no se proporcionan detalles sobre el dataset de entrenamiento, lo que dificulta evaluar posibles sesgos o limitaciones de calidad.
 - Riesgo de artefactos en la voz convertida: como cualquier sistema SVC, puede producir artefactos de audio en entradas fuera de la distribución de entrenamiento.
-- Fecha de creación futura: el modelo fue creado el 22 de agosto de 2026, según los metadatos de HuggingFace, lo que puede indicar un error de fecha o una publicación programada.
+- Fecha de creación futura: el modelo fue creado el 22 de agosto de 2026, según los metadatos de Hugging Face, lo que puede indicar un error de fecha o una publicación programada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NONAMEmurmur/lheure-Non-Nom-SVC-Sample-Model
+- Repositorio en Hugging Face: https://huggingface.co/NONAMEmurmur/lheure-Non-Nom-SVC-Sample-Model
 - Repositorio principal del proyecto: https://github.com/NONAMEmurmur/whisper-vits-svc-dynamics
 - Perfil de GitHub del autor: https://github.com/NONAMEmurmur/

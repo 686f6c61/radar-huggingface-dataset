@@ -84,8 +84,8 @@ El modelo compilado no es directamente comparable con alternativas de código ab
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/simaai/LFM2-VL-450M-Autoround-a16w4
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2-VL-450M
+- Repositorio Hugging Face del modelo: https://huggingface.co/simaai/LFM2-VL-450M-Autoround-a16w4
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2-VL-450M
 - Documentación oficial de Liquid AI para LFM2-VL-450M: https://docs.liquid.ai/lfm/models/lfm2-vl-450m
 - Documentación de LFM2.5-VL-450M (versión más reciente): https://docs.liquid.ai/lfm/models/lfm25-vl-450m
 - Blog de Liquid AI sobre LFM2-VL: https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sddass21 bajo el identificador `sddass21/MyAwesomeModel-TestRepo`. El propio nombre del repositorio y su contenido apuntan a un artefacto de prueba (test repo) más que a un modelo listo para producción: el repositorio ocupa 0,0 GB, no contiene archivos de pesos visibles y acumula 0 descargas y 0 "likes" en el momento de la consulta. La model card, no obstante, describe un modelo de propósito general con mejoras en razonamiento, matemáticas, programación y lógica, e incluye una tabla de resultados comparativos.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sddass21 bajo el identificador `sddass21/MyAwesomeModel-TestRepo`. El propio nombre del repositorio y su contenido apuntan a un artefacto de prueba (test repo) más que a un modelo listo para producción: el repositorio ocupa 0,0 GB, no contiene archivos de pesos visibles y acumula 0 descargas y 0 "likes" en el momento de la consulta. La model card, no obstante, describe un modelo de propósito general con mejoras en razonamiento, matemáticas, programación y lógica, e incluye una tabla de resultados comparativos.
 
 La información técnica publicada es muy limitada. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formatos de pesos, y la única licencia declarada es MIT. La model card menciona una variante denominada MyAwesomeModel-Small con la misma arquitectura que su modelo base y el mismo tokenizador, pero tampoco detalla su tamaño. La fecha de creación del repositorio aparece como 2026-09-18, dato que no se puede verificar.
 
@@ -89,7 +89,7 @@ No hay disponible ningun otro resultado de benchmarks independiente ni verificab
 - VRAM estimada para inferencia: no disponible, al no conocerse el numero de parametros ni la arquitectura.
 - GPU recomendadas: no disponible (no puede estimarse sin datos de tamano; no se puede confirmar si requiere A100, H100, RTX 4090 o inferiores).
 - Viabilidad en GPU de consumo: no disponible. La model card menciona una variante MyAwesomeModel-Small que "puede ejecutarse de la misma manera que su modelo base", pero no indica tamano ni requisitos.
-- Opciones de despliegue: la libreria declarada es `transformers` y el repositorio esta etiquetado como `endpoints_compatible`, lo que sugiere compatibilidad con HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la libreria declarada es `transformers` y el repositorio esta etiquetado como `endpoints_compatible`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. Como referencia indirecta, el propio autor declara un consumo de 23K tokens de pensamiento por pregunta en razonamiento matematico, lo que implica respuestas de baja velocidad frente a modelos que no usan modo de pensamiento extendido.
 - Estado actual del repositorio: sin archivos de pesos (0,0 GB), por lo que la inferencia local no es posible con los artefactos publicados.
 
@@ -120,7 +120,7 @@ No es posible establecer una comparativa real con alternativas de la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sddass21/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/sddass21/MyAwesomeModel-TestRepo
 - Repositorio de codigo, sitio web de chat/API y figuras referenciados en la model card: no disponibles como URL publica en la informacion proporcionada.
 - Paper, blog tecnico o demo: no disponibles.
 - Resultados de la busqueda web: no relevantes (enlaces a YouTube, YouTube Brasil, YouTube Music, YouTube Movies y YouTube Kids, sin relacion con el modelo).

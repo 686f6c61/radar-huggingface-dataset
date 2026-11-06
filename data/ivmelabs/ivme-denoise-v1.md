@@ -87,13 +87,13 @@ Los datos proceden de las afirmaciones del autor en la model card; no se han ver
 - El modelo es muy reciente (creado en octubre de 2026, con 80 descargas y 6 likes), por lo que carece de historial comunitario y de pruebas en producción.
 - Entrenado solo con 1.200 imágenes (DIV2K + BSD500), un conjunto pequeño; el rendimiento en dominios muy distintos (imágenes médicas, astrofotografía, sensores no Bayer, artefactos JPEG o ruido real complejo no gaussiano) no está documentado.
 - Diseñado para ruido gaussiano (el planteamiento teórico asume `n ~ N(0, σ² I)`); el ruido de sensores real (Poisson-gaussiano, banding, ruido cuantizado) puede comportarse peor.
-- Requiere `custom_code` de confianza al cargar desde HuggingFace (trust_remote_code), lo que exige revisar el código del repo antes de usarlo en entornos sensibles.
+- Requiere `custom_code` de confianza al cargar desde Hugging Face (trust_remote_code), lo que exige revisar el código del repo antes de usarlo en entornos sensibles.
 - La licencia Apache-2.0 permite uso comercial sin restricciones relevantes más allá de la atribución y la nota de licencia estándar.
 - Sesgos: al entrenar sobre fotografías naturales de DIV2K/BSD500, posible degradación en contenido sintético, gráficos o imágenes con texturas atípicas (no disponible como evaluación explícita).
 - Riesgo de alucinación: no aplicable en el sentido de LLMs, pero como todo denoiser puede suavizar o inventar textura fina en zonas muy ruidosas; la model card no publica métricas de fidelidad perceptual (LPIPS u otras) (no disponible).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IvmeLabs/Ivme-Denoise-v1
+- Modelo en Hugging Face: https://huggingface.co/IvmeLabs/Ivme-Denoise-v1
 - Datasets de entrenamiento: DIV2K (https://huggingface.co/datasets/eugenesiow/Div2k) y BSD500 (no disponible un enlace oficial en la información proporcionada)
 - Paper, blog, repositorio de código independiente o demo: no disponible en la información proporcionada

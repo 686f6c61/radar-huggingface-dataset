@@ -88,7 +88,7 @@ No se dispone de resultados comparativos de benchmarks entre estos modelos en la
 
 ## Enlaces
 
-- [HuggingFace - Zyrabit-IA/zyra-developer-Q5_K_M](https://huggingface.co/Zyrabit-IA/zyra-developer-Q5_K_M)
+- [Hugging Face - Zyrabit-IA/zyra-developer-Q5_K_M](https://huggingface.co/Zyrabit-IA/zyra-developer-Q5_K_M)
 - [Zyrabit - Sovereign AI Infrastructure](https://www.zyrabit.co.uk/)
 - [Zyrabit - GitHub](https://github.com/Zyrabit-tech)
 - [Repositorio Zyrabit SLM (comunidad)](https://github.com/nosoyprogramad0r/zyrabit-slm)

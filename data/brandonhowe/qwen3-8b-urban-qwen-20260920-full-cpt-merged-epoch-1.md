@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-1 es un modelo derivado de Qwen/Qwen3-8B-Base publicado por el usuario BrandonHowe en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino del resultado de un proceso de preentrenamiento continuado (continued pretraining, CPT) sobre el dataset `CompassioninMachineLearning/urban_12738_cleaned`, seguido de una fusión de pesos a BF16 en formato standalone, sin adaptadores LoRA. El checkpoint corresponde a la epoca 1.0, paso 378.
+Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-1 es un modelo derivado de Qwen/Qwen3-8B-Base publicado por el usuario BrandonHowe en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino del resultado de un proceso de preentrenamiento continuado (continued pretraining, CPT) sobre el dataset `CompassioninMachineLearning/urban_12738_cleaned`, seguido de una fusión de pesos a BF16 en formato standalone, sin adaptadores LoRA. El checkpoint corresponde a la epoca 1.0, paso 378.
 
 El modelo conserva la arquitectura del base: un transformer decoder-only de la familia Qwen3 con 8.190.735.360 parametros (~8,19 mil millones) y pesos en BF16 distribuidos en ocho shards safetensors. El repositorio ocupa 16,4 GB. La model card indica que se usaron 10.072 documentos distintos mas 2.000 exposiciones repetidas por epoca, con 200 documentos de validacion disjuntos.
 
@@ -99,7 +99,7 @@ Nota: los datos de Qwen3-8B-Base, Llama 3.1 8B y Mistral 7B v0.3 provienen de su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-1
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/urban_12738_cleaned
 - Herramienta de exportacion (Unsloth): https://github.com/unslothai/unsloth

@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Clef-Flash-ReducedSycophancy-m0.5
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Clef-Flash-ReducedSycophancy-m0.5
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Modelo de partida de Clef-Flash: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante mayor de la familia: https://huggingface.co/Cloudflare/clef

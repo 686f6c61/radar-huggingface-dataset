@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Conformaciones | Grafo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gRNAde v0.3.2 3state (este) | 2,16 M | 3 | Espacial | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v1 | 2,16 M | Multiples | Secuencia + pares de bases + espacial | AGPL-3.0 | HuggingFace (oteam/grnade) |
-| gRNAde v0.3.2 1state | 2,16 M | 1 | Espacial | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v0.3.2 5state | 2,16 M | 5 | Espacial | AGPL-3.0 | HuggingFace (oteam) |
+| gRNAde v0.3.2 3state (este) | 2,16 M | 3 | Espacial | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v1 | 2,16 M | Multiples | Secuencia + pares de bases + espacial | AGPL-3.0 | Hugging Face (oteam/grnade) |
+| gRNAde v0.3.2 1state | 2,16 M | 1 | Espacial | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v0.3.2 5state | 2,16 M | 5 | Espacial | AGPL-3.0 | Hugging Face (oteam) |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento frente a otros metodos de diseno inverso de ARN (por ejemplo, EternaFold o diseno basado en energia) en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/grnade-v0.3.2-3state-all
+- Modelo en Hugging Face: https://huggingface.co/oteam/grnade-v0.3.2-3state-all
 - Paper original: https://arxiv.org/abs/2305.14749
 - Paper reciente (bioRxiv): https://www.biorxiv.org/content/10.1101/2025.11.29.691298
 - Repositorio oficial: https://github.com/chaitjo/geometric-rna-design

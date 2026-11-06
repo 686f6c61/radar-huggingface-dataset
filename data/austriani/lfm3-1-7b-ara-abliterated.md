@@ -91,7 +91,7 @@ No se dispone de información suficiente para comparar rendimiento (benchmarks) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Austriani/LFM3-1.7B-ARA-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/Austriani/LFM3-1.7B-ARA-Abliterated
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: https://huggingface.co/Austriani/LFM3-1.7B-ARA-Abliterated/blob/main/LICENSE
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

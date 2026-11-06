@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Reinforce-CartPole es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario LibRust. No es un modelo de lenguaje ni un modelo fundacional: es una política entrenada para resolver el entorno CartPole-v1, el problema clásico de control en el que un carro debe mantener una barra en equilibrio aplicando fuerza a izquierda o derecha en cada paso de tiempo. El autor lo declara explícitamente como una implementación propia de REINFORCE, el algoritmo de gradiente de política con estimación Monte Carlo, dentro del material del curso Deep Reinforcement Learning Course de HuggingFace (unidad 4).
+Reinforce-CartPole es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario LibRust. No es un modelo de lenguaje ni un modelo fundacional: es una política entrenada para resolver el entorno CartPole-v1, el problema clásico de control en el que un carro debe mantener una barra en equilibrio aplicando fuerza a izquierda o derecha en cada paso de tiempo. El autor lo declara explícitamente como una implementación propia de REINFORCE, el algoritmo de gradiente de política con estimación Monte Carlo, dentro del material del curso Deep Reinforcement Learning Course de Hugging Face (unidad 4).
 
 La relevancia del artefacto es fundamentalmente didáctica y de referencia: sirve como ejemplo reproducible de un agente on-policy que alcanza la recompensa máxima del entorno, y como punto de partida para comparar implementaciones propias de REINFORCE. El repositorio es extremadamente pequeño (0,0 GB declarados), no tiene descargas ni likes, y su model card no incluye licencia, idiomas ni detalle de la arquitectura de red empleada.
 
@@ -46,7 +46,7 @@ Tampoco se documenta ningun mecanismo de innovacion tecnica (decodificacion espe
 - Mantenimiento del equilibrio del pendulo invertido hasta el limite de 500 pasos por episodio, segun la metrica declarada.
 - Politica estocastica entrenada por gradiente de politica: puede muestrear acciones segun una distribucion de probabilidad aprendida.
 - Ejecucion on-policy en inferencia: no requiere valorar acciones ni mantener estado interno mas alla de la observacion actual.
-- Integracion con el ecosistema Gymnasium / HuggingFace Hub para cargar el modelo y evaluarlo en el entorno.
+- Integracion con el ecosistema Gymnasium / Hugging Face Hub para cargar el modelo y evaluarlo en el entorno.
 - Soporte de tool calling: no disponible (no aplica).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no aplica).
 - Capacidades multilingues: no disponible (no aplica).
@@ -60,7 +60,7 @@ Tampoco se documenta ningun mecanismo de innovacion tecnica (decodificacion espe
 - Pruebas de humo (smoke tests) en frameworks de RL: verificar que el ciclo de carga de modelo, creacion del entorno y bucle de evaluacion funciona tras una actualizacion de version de Gymnasium, PyTorch o de la libreria de serializacion.
 - Estudio de la varianza del estimador: el valor declarado de 500,00 ± 0,00 invita a reejecutar la evaluacion con multiples semillas para caracterizar la dispersion real del retorno, algo que la model card no documenta.
 - Generacion de trayectorias sinteticas para investigacion: las trayectorias producidas por la politica pueden servir como datos de partida en experimentos de imitacion (behavior cloning) o de analisis de estados visitados.
-- Demostracion de despliegue en el Hub: ejemplo minimo para practicar el flujo de publicacion de un agente en HuggingFace con metadatos `model-index`, `pipeline: reinforcement-learning` y etiquetas de entorno.
+- Demostracion de despliegue en el Hub: ejemplo minimo para practicar el flujo de publicacion de un agente en Hugging Face con metadatos `model-index`, `pipeline: reinforcement-learning` y etiquetas de entorno.
 - Integracion en testbeds de control de bajo coste: valvula de comprobacion para pipelines de simulacion que necesitan una politica conocida y rapida de ejecutar antes de pasar a entornos mas costosos.
 
 ## Benchmarks y rendimiento
@@ -84,13 +84,13 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados de rendimiento, licencia o numero de parametros de otros agentes CartPole-v1 publicados en HuggingFace dentro de la informacion proporcionada, por lo que la comparacion numerica no es posible.
+No se dispone de datos verificados de rendimiento, licencia o numero de parametros de otros agentes CartPole-v1 publicados en Hugging Face dentro de la informacion proporcionada, por lo que la comparacion numerica no es posible.
 
 | Modelo | Entorno | Algoritmo | Parametros | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LibRust/Reinforce-CartPole | CartPole-v1 | REINFORCE | no disponible | mean_reward 500,00 +/- 0,00 (no verificado) | no disponible | HuggingFace Hub |
-| Otros agentes CartPole-v1 de la comunidad (familia PPO/DQN) | CartPole-v1 | PPO / DQN | no disponible | no disponible | no disponible | HuggingFace Hub |
-| Agentes CartPole-v1 derivados del Deep RL Course | CartPole-v1 | REINFORCE y variantes | no disponible | no disponible | no disponible | HuggingFace Hub |
+| LibRust/Reinforce-CartPole | CartPole-v1 | REINFORCE | no disponible | mean_reward 500,00 +/- 0,00 (no verificado) | no disponible | Hugging Face Hub |
+| Otros agentes CartPole-v1 de la comunidad (familia PPO/DQN) | CartPole-v1 | PPO / DQN | no disponible | no disponible | no disponible | Hugging Face Hub |
+| Agentes CartPole-v1 derivados del Deep RL Course | CartPole-v1 | REINFORCE y variantes | no disponible | no disponible | no disponible | Hugging Face Hub |
 
 ## Limitaciones y advertencias
 
@@ -108,7 +108,7 @@ No se dispone de datos verificados de rendimiento, licencia o numero de parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibRust/Reinforce-CartPole
+- Modelo en Hugging Face: https://huggingface.co/LibRust/Reinforce-CartPole
 - Curso Deep Reinforcement Learning, unidad 4 (referencia indicada por el autor): https://huggingface.co/deep-rl-course/unit4/introduction
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos.

@@ -85,7 +85,7 @@ No se dispone de datos públicos de otros adaptadores LoRA para SST-2 sobre mode
 
 ## Enlaces
 
-- [HuggingFace - artyomboyko/qwen3.5-2b-sst2-lora](https://huggingface.co/artyomboyko/qwen3.5-2b-sst2-lora)
+- [Hugging Face - artyomboyko/qwen3.5-2b-sst2-lora](https://huggingface.co/artyomboyko/qwen3.5-2b-sst2-lora)
 - [Modelo base - Qwen/Qwen3.5-2B-Base](https://huggingface.co/Qwen/Qwen3.5-2B-Base)
 - [Dataset SST-2](https://huggingface.co/datasets/stanfordnlp/sst2)
 - [vLLM Recipes - Qwen3.5-2B](https://recipes.vllm.ai/Qwen/Qwen3.5-2B)

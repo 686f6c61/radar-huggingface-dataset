@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fast-brain-router-adapter es un adaptador LoRA de aproximadamente 20 MB publicado por el usuario happybrian en HuggingFace. No es un modelo autonomo: se trata de una "corteza experta" de enrutamiento (router) que debe cargarse sobre el modelo base `happybrian/fast-brain-base` mediante `mlx-lm`. Su funcion declarada es clasificar el dominio de una consulta dentro de una arquitectura de dos sistemas (etiquetada como `system1` / `fast-brain`), presumiblemente para derivar la peticion al experto correspondiente.
+Fast-brain-router-adapter es un adaptador LoRA de aproximadamente 20 MB publicado por el usuario happybrian en Hugging Face. No es un modelo autonomo: se trata de una "corteza experta" de enrutamiento (router) que debe cargarse sobre el modelo base `happybrian/fast-brain-base` mediante `mlx-lm`. Su funcion declarada es clasificar el dominio de una consulta dentro de una arquitectura de dos sistemas (etiquetada como `system1` / `fast-brain`), presumiblemente para derivar la peticion al experto correspondiente.
 
 El adaptador se entreno con LoRA de rango 16 durante 800 pasos sobre un conjunto de datos destilados de entre 450 y 650 ejemplos, generados por el profesor Qwen3-8B en cuantizacion de 4 bits. El autor reporta una precision de clasificacion de dominio del 100 % sobre su conjunto de evaluacion, y lo ejecuto en un Apple M5 con 24 GB de memoria unificada usando `mlx-lm`.
 
@@ -34,7 +34,7 @@ No se detalla la composicion del dataset, la funcion de perdida, el tipo de dato
 - No se documenta generacion de texto, razonamiento, codigo, matematicas ni vision como capacidades propias del adaptador, ya que este modifica unicamente el comportamiento del modelo base.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documentan capacidades multilingues; el campo de idiomas esta vacio en HuggingFace.
+- No se documentan capacidades multilingues; el campo de idiomas esta vacio en Hugging Face.
 - No se documenta modo de pensamiento (thinking mode), audio ni ninguna modalidad adicional.
 
 ## Casos de uso
@@ -95,7 +95,7 @@ No se ha identificado en la informacion disponible ningun adaptador publico dire
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/happybrian/fast-brain-router-adapter
+- Modelo en Hugging Face: https://huggingface.co/happybrian/fast-brain-router-adapter
 - Modelo base: https://huggingface.co/happybrian/fast-brain-base
 - Biblioteca de carga: https://github.com/ml-explore/mlx-lm
 - Profesor utilizado para la destilacion (referencia externa): https://huggingface.co/Qwen/Qwen3-8B

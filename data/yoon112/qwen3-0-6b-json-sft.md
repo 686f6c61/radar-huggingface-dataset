@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yoon112/Qwen3-0.6B-JSON-SFT` es un ajuste fino supervisado (SFT) del modelo base Qwen3-0.6B, desarrollado por el usuario yoon112 y publicado en HuggingFace. El objetivo declarado en el nombre del repositorio es especializar el modelo en la generación de salidas en formato JSON, una capacidad crítica para integraciones con APIs, agentes y pipelines de automatización que requieren respuestas estructuradas.
+El modelo `yoon112/Qwen3-0.6B-JSON-SFT` es un ajuste fino supervisado (SFT) del modelo base Qwen3-0.6B, desarrollado por el usuario yoon112 y publicado en Hugging Face. El objetivo declarado en el nombre del repositorio es especializar el modelo en la generación de salidas en formato JSON, una capacidad crítica para integraciones con APIs, agentes y pipelines de automatización que requieren respuestas estructuradas.
 
 El modelo base Qwen3-0.6B pertenece a la familia Qwen3 de Alibaba, una serie de modelos densos y de mezcla de expertos (MoE) que destacan por su razonamiento, capacidades de agente y soporte multilingüe. Con 596 millones de parámetros, es una de las variantes más pequeñas de la familia, diseñada para entornos con recursos limitados. La versión SFT aquí presentada conserva la arquitectura del modelo base, pero ha sido entrenada adicionalmente con la librería TRL (Transformers Reinforcement Learning) para mejorar su adherencia a formatos JSON.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su tamaño reducido combinado con una esp
 
 La arquitectura subyacente es la del modelo Qwen3-0.6B, un transformer denso de la familia Qwen3. El modelo base fue entrenado por Alibaba con un enfoque en razonamiento, seguimiento de instrucciones, capacidades de agente y soporte multilingüe. Qwen3 soporta el cambio entre modo pensante y no pensante, aunque no se ha confirmado si esta característica se conserva en este ajuste.
 
-El entrenamiento de esta variante se realizó mediante ajuste fino supervisado (SFT) utilizando la librería TRL de HuggingFace, como indican las etiquetas del repositorio. No se especifican los datos de entrenamiento, el número de pasos, la configuración de hiperparámetros ni el régimen de precisión (fp16, bf16, etc.). Tampoco se documenta si se aplicaron técnicas adicionales como DPO o RLHF. La ausencia de esta información impide evaluar la calidad del proceso de ajuste.
+El entrenamiento de esta variante se realizó mediante ajuste fino supervisado (SFT) utilizando la librería TRL de Hugging Face, como indican las etiquetas del repositorio. No se especifican los datos de entrenamiento, el número de pasos, la configuración de hiperparámetros ni el régimen de precisión (fp16, bf16, etc.). Tampoco se documenta si se aplicaron técnicas adicionales como DPO o RLHF. La ausencia de esta información impide evaluar la calidad del proceso de ajuste.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 1,2 GB en FP16 (596M parámetros × 2 bytes), más overhead de activaciones y KV cache.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Modelos como NVIDIA GTX 1650, RTX 3050 o superiores son suficientes. También puede ejecutarse en CPU con quantización.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs de consumo actuales, incluidas las integradas de gama alta.
-- Opciones de despliegue: transformers con pipeline de HuggingFace, vLLM, llama.cpp (si se convierten los pesos a GGUF), Ollama (requiere conversión previa), TGI (Text Generation Inference).
+- Opciones de despliegue: transformers con pipeline de Hugging Face, vLLM, llama.cpp (si se convierten los pesos a GGUF), Ollama (requiere conversión previa), TGI (Text Generation Inference).
 - Latencia y throughput: no disponible. Al ser un modelo de 0,6B, se espera una latencia baja en GPU moderna, pero no se han publicado mediciones específicas.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa se limita a modelos de la misma familia y tamaño. No se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yoon112/Qwen3-0.6B-JSON-SFT
+- Repositorio Hugging Face: https://huggingface.co/yoon112/Qwen3-0.6B-JSON-SFT
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Modelo similar (yeeun2/Qwen3-0.6B-JSON-SFT): https://huggingface.co/yeeun2/Qwen3-0.6B-JSON-SFT

@@ -78,7 +78,7 @@ La comparativa es limitada porque no hay datos de rendimiento publicados para Qw
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub oficial: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Receta vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

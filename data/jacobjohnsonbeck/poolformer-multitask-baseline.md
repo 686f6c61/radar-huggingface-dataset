@@ -43,7 +43,7 @@ Las capacidades que se enumeran a continuación son potenciales de la arquitectu
 - Investigación de arquitecturas MetaFormer: la implementación permite estudiar cómo afecta el pooling frente a la atención en tareas de visión sencillas, manteniendo un coste computacional casi nulo.
 - Pruebas de humo en pipelines de entrenamiento: el checkpoint de inicialización es útil para validar que el script `run.py` ejecuta correctamente antes de lanzar un entrenamiento más costoso.
 - Experimentos de eficiencia: al tener solo 49.600 parámetros, puede utilizarse para medir latencia, memoria y consumo energético en CPU, GPU integradas o dispositivos embebidos.
-- Desarrollo de adaptadores personalizados: la implementación puede servir para escribir un adaptador que permita al modelo cargarse con las APIs genéricas de HuggingFace, como se indica en la documentación del repositorio.
+- Desarrollo de adaptadores personalizados: la implementación puede servir para escribir un adaptador que permita al modelo cargarse con las APIs genéricas de Hugging Face, como se indica en la documentación del repositorio.
 - Evaluación de recetas de entrenamiento: el script incluye una configuración por defecto con *lamb* y programa polinomial que puede modificarse para comparar optimizadores y schedulers en un entorno controlado.
 - Prototipado multitarea: la estructura de fusión concat MLP puede adaptarse para experimentar con estrategias de combinación de características en problemas con varias salidas.
 - Benchmark de capacidad mínima: puede usarse como baseline de tamaño mínimo en comparativas de modelos de visión ligeros, siempre que se entrene con los mismos datos y presupuesto de ajuste que la competencia.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada: por debajo de 10 MB para el checkpoint de inicialización, por lo que es viable en casi cualquier hardware con PyTorch.
 - GPU recomendada: cualquier GPU con soporte de PyTorch; también funciona en CPU.
 - Compatibilidad con GPU de consumo: sí, puede ejecutarse incluso en sistemas con GPU integrada.
-- Opciones de despliegue: no compatible con vLLM, llama.cpp ni Ollama al tratarse de un modelo de visión con implementación personalizada. Para ejecutarlo es necesario utilizar el script `run.py` o escribir un adaptador para las APIs de HuggingFace.
+- Opciones de despliegue: no compatible con vLLM, llama.cpp ni Ollama al tratarse de un modelo de visión con implementación personalizada. Para ejecutarlo es necesario utilizar el script `run.py` o escribir un adaptador para las APIs de Hugging Face.
 - Latencia y throughput: no disponible, no se han realizado mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No se ha encontrado información suficiente sobre modelos comparables de la mism
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/jacobjohnsonbeck/poolformer-multitask-baseline
-- Documentación de PoolFormer en HuggingFace: https://huggingface.co/docs/transformers/main/en/model_doc/poolformer
+- Repositorio del modelo en Hugging Face: https://huggingface.co/jacobjohnsonbeck/poolformer-multitask-baseline
+- Documentación de PoolFormer en Hugging Face: https://huggingface.co/docs/transformers/main/en/model_doc/poolformer
 - Paper original: no disponible en los resultados de búsqueda realizados.

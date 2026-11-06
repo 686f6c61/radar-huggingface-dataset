@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Verosika-Mayday es un repositorio de pesos publicado en HuggingFace por el usuario SnazzyArtist22. En el momento de la consulta, la model card asociada esta practicamente vacia: el unico contenido es la declaracion `license: unknown`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y ocupa 0,2 GB, lo que sugiere un conjunto de pesos de tamano reducido, aunque no es posible confirmar si se trata de un modelo completo, un adaptador LoRA o un checkpoint parcial.
+Verosika-Mayday es un repositorio de pesos publicado en Hugging Face por el usuario SnazzyArtist22. En el momento de la consulta, la model card asociada esta practicamente vacia: el unico contenido es la declaracion `license: unknown`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y ocupa 0,2 GB, lo que sugiere un conjunto de pesos de tamano reducido, aunque no es posible confirmar si se trata de un modelo completo, un adaptador LoRA o un checkpoint parcial.
 
 No se dispone de informacion sobre parametros, longitud de contexto, idiomas, formato de pesos ni arquitectura. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces obtenidos corresponden a paginas de ayuda de YouTube y a hilos de Zhihu sin relacion con el repositorio, por lo que no aportan contexto tecnico.
 
@@ -22,8 +22,8 @@ Dado que no existe documentacion publica ni resultados de evaluacion, esta ficha
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,2 GB |
 | Pipeline declarado | no disponible |
-| Fecha de creacion | 2026-10-07 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-10-07 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-07 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-10-07 (segun metadatos de Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 
@@ -89,7 +89,7 @@ No disponible. Al no conocerse el tamano, la tarea ni la familia arquitectonica 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SnazzyArtist22/Verosika-Mayday
+- Repositorio en Hugging Face: https://huggingface.co/SnazzyArtist22/Verosika-Mayday
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

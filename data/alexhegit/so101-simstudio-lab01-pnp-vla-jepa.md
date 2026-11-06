@@ -81,7 +81,7 @@ No disponible. No se han encontrado modelos directamente comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-vla-jepa
+- Modelo en Hugging Face: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-vla-jepa
 - Dataset de entrenamiento: https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp
 - Repositorio SO-101 SimStudio: https://github.com/rocPAI-Forge/so101-simstudio
 - Walkthrough del Lab 01: https://github.com/rocPAI-Forge/so101-simstudio/blob/main/labs/lab01_pnp/lab01_pnp.md

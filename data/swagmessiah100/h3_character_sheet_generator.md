@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace - SwagMessiah100/H3_Character_Sheet_Generator](https://huggingface.co/SwagMessiah100/H3_Character_Sheet_Generator)
+- [Hugging Face - SwagMessiah100/H3_Character_Sheet_Generator](https://huggingface.co/SwagMessiah100/H3_Character_Sheet_Generator)
 - [Model card original (PoopMan333)](https://huggingface.co/PoopMan333/H3_Character_Sheet_Generator) (mirror en AtomGit)
 - [Licencia MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE)
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `gradients-io-tournaments/augmented-92d185cefaf0301d` es un modelo de generacion de texto publicado en HuggingFace por la organizacion `gradients-io-tournaments`, presumiblemente en el contexto de un torneo o competicion interna de ajuste fino. Se trata de un modelo de ~1.235 millones de parametros (1,24 B) con pesos en safetensors y una tamano de repositorio de 2,5 GB, lo que es coherente con un checkpoint almacenado en precision de 16 bits. La etiqueta `llama` sugiere una arquitectura de tipo transformer causal con decodificacion autorregresiva derivada de la familia Llama, aunque el autor no lo confirma en la model card.
+El modelo `gradients-io-tournaments/augmented-92d185cefaf0301d` es un modelo de generacion de texto publicado en Hugging Face por la organizacion `gradients-io-tournaments`, presumiblemente en el contexto de un torneo o competicion interna de ajuste fino. Se trata de un modelo de ~1.235 millones de parametros (1,24 B) con pesos en safetensors y una tamano de repositorio de 2,5 GB, lo que es coherente con un checkpoint almacenado en precision de 16 bits. La etiqueta `llama` sugiere una arquitectura de tipo transformer causal con decodificacion autorregresiva derivada de la familia Llama, aunque el autor no lo confirma en la model card.
 
-El problema que resuelve es generico: generacion de texto condicionada por prompt dentro del pipeline `text-generation`. No hay informacion publicada sobre el dataset de entrenamiento, el procedimiento de ajuste, las capacidades especificas ni los idiomas soportados. La model card es la plantilla automatica de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`.
+El problema que resuelve es generico: generacion de texto condicionada por prompt dentro del pipeline `text-generation`. No hay informacion publicada sobre el dataset de entrenamiento, el procedimiento de ajuste, las capacidades especificas ni los idiomas soportados. La model card es la plantilla automatica de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`.
 
 Su relevancia actual es limitada y de tipo experimental: cero descargas, cero likes y ausencia total de documentacion tecnica. El interés principal esta en su posible uso como punto de partida para experimentos de ajuste fino en el rango de ~1 B de parametros, siempre que se asuma que su comportamiento real no esta caracterizado ni validado por el autor.
 
@@ -35,7 +35,7 @@ Tampoco se documenta el procedimiento de entrenamiento: ni el volumen de tokens,
 ## Capacidades
 
 - Generacion de texto autorregresiva a partir de un prompt, segun el pipeline declarado `text-generation`.
-- Compatibilidad declarada con `text-generation-inference` y con endpoints compatibles, lo que sugiere que puede servirse mediante la infraestructura estandar de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y con endpoints compatibles, lo que sugiere que puede servirse mediante la infraestructura estandar de Hugging Face.
 - No hay evidencia publicada de soporte de tool calling o function calling.
 - No hay evidencia publicada de capacidades de agente, razonamiento multi-paso o modo de pensamiento explicito.
 - No hay informacion sobre capacidades multilingues ni sobre el reparto de idiomas del entrenamiento.
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables ni
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automatica de HuggingFace sin completar: no hay informacion sobre sesgos, riesgos, uso previsto, datos de entrenamiento ni procedimiento de evaluacion.
+- La model card es la plantilla automatica de Hugging Face sin completar: no hay informacion sobre sesgos, riesgos, uso previsto, datos de entrenamiento ni procedimiento de evaluacion.
 - Riesgo de alucinacion no cuantificado. Al no existir evaluacion publicada, no se puede acotar la tasa de errores factuales ni la fiabilidad en dominios especializados.
 - No se conoce la longitud de contexto soportada, lo que impide garantizar el comportamiento en conversaciones multi-turno o documentos largos.
 - No se conocen los idiomas de entrenamiento. El rendimiento en castellano es indeterminado y no debe asumirse.
@@ -86,8 +86,8 @@ No disponible. La informacion proporcionada no identifica modelos comparables ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-92d185cefaf0301d
-- Organizacion en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-92d185cefaf0301d
+- Organizacion en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Referencia de la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact
 

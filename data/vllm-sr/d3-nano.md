@@ -102,7 +102,7 @@ Nota: en la seccion de destacados el autor indica 41,84 en la suite publica con 
 
 | Modelo | Parametros | Contexto | Jev Decision Index (texto) | Vision Index | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d3-nano | 2,21B (0,33B vision) | no disponible | 37,8 | 57,1 | Apache-2.0 | safetensors en HuggingFace |
+| d3-nano | 2,21B (0,33B vision) | no disponible | 37,8 | 57,1 | Apache-2.0 | safetensors en Hugging Face |
 | LiquidAI d1-3B | 3B | no disponible | 40,1 | no disponible | no disponible | no disponible |
 | Jev-Style 2B v3 | 2B | no disponible | 31,4 | no disponible | no disponible | no disponible |
 | Decision 2.0 (2B) | 2B | no disponible | 27,1 | no disponible | no disponible | no disponible |
@@ -124,7 +124,7 @@ De los comparadores mostrados, LiquidAI d1-3B supera a d3-nano en el indice glob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/d3-nano
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/d3-nano
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de vLLM Semantic Router (mencionado en la model card): https://github.com/vllm-project/semantic-router
 - vLLM (proyecto principal): https://vllm.ai/

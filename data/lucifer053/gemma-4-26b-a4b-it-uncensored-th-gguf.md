@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una derivacion "abliterated" (direccion de rechazo eliminada) del modelo base google/gemma-4-26b-a4b-it, publicada por el usuario lucifer053 en HuggingFace bajo el identificador lucifer053/gemma-4-26b-a4b-it-uncensored-th-gguf. Se trata de una arquitectura MoE (mixture of experts) con 25.233.142.046 parametros totales (aproximadamente 26B) y 4B parametros activos por token, segun los datos declarados en la model card y en los safetensors del modelo base. El autor lo distribuye unicamente en formato GGUF para inferencia local con llama.cpp, LM Studio y herramientas compatibles.
+Este modelo es una derivacion "abliterated" (direccion de rechazo eliminada) del modelo base google/gemma-4-26b-a4b-it, publicada por el usuario lucifer053 en Hugging Face bajo el identificador lucifer053/gemma-4-26b-a4b-it-uncensored-th-gguf. Se trata de una arquitectura MoE (mixture of experts) con 25.233.142.046 parametros totales (aproximadamente 26B) y 4B parametros activos por token, segun los datos declarados en la model card y en los safetensors del modelo base. El autor lo distribuye unicamente en formato GGUF para inferencia local con llama.cpp, LM Studio y herramientas compatibles.
 
 El problema que aborda es concreto: la mayoria de los modelos abliterated se calibran con conjuntos de datos de rechazo unicamente en ingles, lo que degrada la calidad de salida en otros idiomas. En este caso, el proceso de abliteracion se realizo con un dataset de prompts en tailandes (manteniendo marcadores de rechazo en ingles como respaldo), de forma que el modelo conserva fluidez en tailandes al tiempo que reduce los rechazos excesivos. Esta orientado a los idiomas tailandes (th) e ingles (en).
 
@@ -101,6 +101,6 @@ No se dispone de datos de rendimiento de alternativas en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucifer053/gemma-4-26b-a4b-it-uncensored-th-gguf
+- Modelo en Hugging Face: https://huggingface.co/lucifer053/gemma-4-26b-a4b-it-uncensored-th-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-26b-a4b-it
 - Resultados de busqueda web: los resultados devueltos corresponden a servicios de seguimiento de paquetes (UPS, DHL, Barcode Lookup, Track.Global y 17TRACK) y no guardan relacion con el modelo. No se han encontrado en la busqueda enlaces relevantes adicionales (paper, blog, repositorio o demo).

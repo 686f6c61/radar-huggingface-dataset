@@ -112,10 +112,10 @@ No se dispone de otras sondas públicas directamente comparables en la informaci
 - El conjunto de datos de entrenamiento (TwinTempt v1.1) es privado, lo que limita la reproducción exacta del ajuste.
 - Riesgo de alucinación del propio modelo base no evaluado en este repositorio; las sondas no filtran ni corrigen las salidas del modelo.
 - La licencia Apache 2.0 cubre este repositorio; la licencia y las condiciones de uso comercial del modelo base Qwen3.6-27B no constan en la información disponible y deben verificarse por separado.
-- El tamaño de repositorio mostrado por HuggingFace es 0.0 GB (redondeo), coherente con los ~120 KB de los tensores declarados; descargas y likes registrados: 0.
+- El tamaño de repositorio mostrado por Hugging Face es 0.0 GB (redondeo), coherente con los ~120 KB de los tensores declarados; descargas y likes registrados: 0.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adamjb111/qwen3.6-27b-L42-evalaware-ridge-probes-20261026
+- Repositorio en Hugging Face: https://huggingface.co/adamjb111/qwen3.6-27b-L42-evalaware-ridge-probes-20261026
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.6-27B
 - Papers, blogs, repositorios de código o demos adicionales: no disponible en la información proporcionada.

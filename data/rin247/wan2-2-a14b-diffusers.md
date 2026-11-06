@@ -4,7 +4,7 @@
 
 Wan2.2-A14B-Diffusers (repositorio de Rin247) es un paquete de pesos cuantizados del modelo de generación de vídeo Wan2.2-A14B, distribuido con la librería diffusers y empaquetado por su autor bajo el sello MECHA Forge. No es un modelo entrenado desde cero: la model card no aporta información sobre entrenamiento ni datos originales, y se limita a publicar dos variantes cuantizadas (FP4 e INT4) que agrupan en un mismo artefacto el denoiser, el text encoder y el VAE.
 
-El pipeline declarado en HuggingFace es WanImageToVideoPipeline, lo que sitúa al modelo en la categoría de generación de vídeo condicionada por imagen (image-to-video) con guiado textual. El repositorio ocupa 115,6 GB en total, usa safetensors como formato de pesos y emplea un esquema de cuantización weight-only: solo se reduce la precisión de los pesos, no la de las activaciones.
+El pipeline declarado en Hugging Face es WanImageToVideoPipeline, lo que sitúa al modelo en la categoría de generación de vídeo condicionada por imagen (image-to-video) con guiado textual. El repositorio ocupa 115,6 GB en total, usa safetensors como formato de pesos y emplea un esquema de cuantización weight-only: solo se reduce la precisión de los pesos, no la de las activaciones.
 
 Su interés es práctico más que arquitectónico: empaquetar los tres componentes en un único artefacto y ofrecer variantes de 4 bits simplifica el despliegue en diffusers y reduce los requisitos de memoria frente al modelo en precisión completa. Como contrapartida, la ficha pública no declara licencia, idiomas, benchmarks ni detalles de calibración, así que cualquier adopción en producción exige verificar esos puntos antes de usarlo.
 
@@ -87,7 +87,7 @@ Los datos de los modelos comparables no se han podido verificar en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rin247/Wan2.2-A14B-Diffusers
+- Hugging Face: https://huggingface.co/Rin247/Wan2.2-A14B-Diffusers
 - Modelo base Wan2.2-A14B: no disponible (la model card no incluye enlace ni referencia)
 - Paper técnico: no disponible en la información proporcionada
 - Repositorio de código o demo: no disponible en la información proporcionada

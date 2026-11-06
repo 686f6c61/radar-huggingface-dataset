@@ -74,5 +74,5 @@ No se dispone de datos de rendimiento para comparar con otros modelos de tamaño
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h063.soup-60-s80
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h063.soup-60-s80
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no se ha verificado su existencia real)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SamAI-PonderNet-DMoE-2B (r12) es un modelo de lenguaje de 2.542.067.777 parámetros publicado por el usuario `tchbcb` en HuggingFace, construido sobre la arquitectura MiniCPM-5 2B (42 capas, hidden 2048, GQA 16+2, vocabulario de 130.560 tokens). Su particularidad es que sustituye las ocho últimas capas (L34-L41) por un bloque DMoE de 8 expertos con router top-2 y añade un mecanismo Ponder de cómputo adaptativo (N=8, umbral τ=0.125), de modo que el modelo decide cuántos pasos de "pensamiento" ejecutar antes de responder; el promedio observado es de ~2,1 pasos. Incorpora además Multi-Token Prediction (MTP) con profundidad 2 como objetivo auxiliar de entrenamiento.
+SamAI-PonderNet-DMoE-2B (r12) es un modelo de lenguaje de 2.542.067.777 parámetros publicado por el usuario `tchbcb` en Hugging Face, construido sobre la arquitectura MiniCPM-5 2B (42 capas, hidden 2048, GQA 16+2, vocabulario de 130.560 tokens). Su particularidad es que sustituye las ocho últimas capas (L34-L41) por un bloque DMoE de 8 expertos con router top-2 y añade un mecanismo Ponder de cómputo adaptativo (N=8, umbral τ=0.125), de modo que el modelo decide cuántos pasos de "pensamiento" ejecutar antes de responder; el promedio observado es de ~2,1 pasos. Incorpora además Multi-Token Prediction (MTP) con profundidad 2 como objetivo auxiliar de entrenamiento.
 
 El modelo es un experimento de investigación más que un producto: la r12 es el resultado de una cadena de continuación de entrenamiento (r5b → r11 → r12) con LoRA r16/α32 sobre 5.109 filas durante 2 épocas, orientada explícitamente a corregir dos problemas críticos de las versiones anteriores, el fallo de parada en conversación trivial (*chitchat*) y el comportamiento fuera de distribución en inglés. La model card publica datos de aceptación internos que muestran mejoras sustanciales: la tasa de parada ante "你好" baja de 0,68 a 0,20, la tasa de repetición de 3-gramas en chat cae de 0,209 a 0,083 y la *cross-entropy* congelada mejora en las tres dificultades.
 
@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks públicos que permitan comparar este m
 
 | Modelo | Parámetros | Contexto | MoE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SamAI-PonderNet-DMoE-2B (r12) | 2,54 B totales / ~1,74 B activos | no disponible | sí, en L34-L41 (8 expertos, top-2) | no disponible | HuggingFace (34 descargas, 0 likes) |
+| SamAI-PonderNet-DMoE-2B (r12) | 2,54 B totales / ~1,74 B activos | no disponible | sí, en L34-L41 (8 expertos, top-2) | no disponible | Hugging Face (34 descargas, 0 likes) |
 | MiniCPM-5 2B (base citada) | ~2 B | no disponible | no | no disponible | no verificado en esta búsqueda |
 | Alternativas de ~1,5-3 B (Qwen, SmolLM, Gemma, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -114,6 +114,6 @@ Cualquier comparación de rendimiento con modelos de tamaño similar (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tchbcb/samai-pnet-dmoe-2b
-- Repositorio del autor en HuggingFace (resto de publicaciones): https://huggingface.co/tchbcb
+- Modelo en Hugging Face: https://huggingface.co/tchbcb/samai-pnet-dmoe-2b
+- Repositorio del autor en Hugging Face (resto de publicaciones): https://huggingface.co/tchbcb
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo; los resultados devueltos no guardan relación con él.

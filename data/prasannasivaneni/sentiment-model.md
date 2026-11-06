@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sentiment-model es un modelo de clasificacion de texto publicado en HuggingFace por el usuario prasannasivaneni. Se trata de un fine-tuning de distilbert-base-uncased realizado con la clase Trainer de la libreria transformers, orientado a analisis de sentimiento. Cuenta con 66.955.779 parametros, pesos en formato safetensors y licencia Apache 2.0, lo que en principio permite uso comercial sin restricciones adicionales.
+sentiment-model es un modelo de clasificacion de texto publicado en Hugging Face por el usuario prasannasivaneni. Se trata de un fine-tuning de distilbert-base-uncased realizado con la clase Trainer de la libreria transformers, orientado a analisis de sentimiento. Cuenta con 66.955.779 parametros, pesos en formato safetensors y licencia Apache 2.0, lo que en principio permite uso comercial sin restricciones adicionales.
 
 El modelo es un ejemplo tipico de ajuste de un encoder pequeno para clasificacion: se entreno durante 3 epocas con learning rate 2e-5, batch de 32 y optimizador AdamW fused, alcanzando una exactitud declarada de 0,6598 y un F1 ponderado de 0,6493 sobre un conjunto de evaluacion cuyo origen no se documenta. La model card esta generada automaticamente y sin completar: no especifica el dataset de entrenamiento, los idiomas, el numero de clases ni los usos previstos.
 
@@ -106,7 +106,7 @@ No se dispone de cifras de rendimiento de los modelos comparables dentro de la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prasannasivaneni/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/prasannasivaneni/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentacion de DistilBERT en transformers: https://huggingface.co/docs/transformers/model_doc/distilbert

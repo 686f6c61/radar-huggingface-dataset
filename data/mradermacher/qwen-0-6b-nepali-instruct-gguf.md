@@ -67,7 +67,7 @@ No se dispone de datos comparativos concretos. Como referencia, otros modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Qwen-0.6b-nepali-instruct-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Qwen-0.6b-nepali-instruct-GGUF
 - Modelo base: https://huggingface.co/praful1/Qwen-0.6b-nepali-instruct
 - Perfil del autor (mradermacher): https://huggingface.co/mradermacher
 - Pagina de solicitudes de modelos del autor: https://huggingface.co/mradermacher/model_requests

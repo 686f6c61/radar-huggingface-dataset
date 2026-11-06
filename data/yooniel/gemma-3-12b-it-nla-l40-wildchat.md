@@ -6,7 +6,7 @@ El modelo `Yooniel/gemma-3-12b-it-nla-L40-wildchat` es un *natural language auto
 
 Su relevancia radica en que cuantifica el fenómeno de transferencia de distribución: las activaciones de chat son diferentes de las de texto web, y el modelo padre pierde alrededor de 13 puntos porcentuales de fracción de varianza explicada (FVE) al pasar de FineFineWeb a WildChat. Tras la adaptación, este modelo recupera +7.8 puntos, superando ligeramente la mitad de la brecha. Además, forma parte de un estudio de tres profundidades (blocks 24, 32 y 40) que permite comparar cómo varía la capacidad de reconstrucción según la capa del modelo.
 
-El repositorio en HuggingFace pesa 57.4 GB y contiene adaptadores PEFT en formato safetensors. La licencia es Gemma. Los idiomas soportados y la longitud de contexto no se especifican en la información disponible, aunque dependen del modelo base.
+El repositorio en Hugging Face pesa 57.4 GB y contiene adaptadores PEFT en formato safetensors. La licencia es Gemma. Los idiomas soportados y la longitud de contexto no se especifican en la información disponible, aunque dependen del modelo base.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El repositorio en HuggingFace pesa 57.4 GB y contiene adaptadores PEFT en format
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en un *natural language autoencoder* que reconstruye activaciones ocultas del modelo base `google/gemma-3-12b-it` en un espacio de lenguaje natural. El adaptador está situado en la salida del block 40 de 48 bloques, correspondiente a `hidden_states[41]` según HuggingFace. La dimensión del modelo en esa capa es `d_model = 3840`, y el autoencoder tiene una profundidad AR de 41 capas con la RMSNorm final eliminada. La normalización se realiza en modo *raw* (`norm: none`), y la pérdida reescala cada fila a norma L2 de √3840 = 61.9677, por lo que la FVE mide únicamente la dirección de las activaciones, no su magnitud.
+El modelo se basa en un *natural language autoencoder* que reconstruye activaciones ocultas del modelo base `google/gemma-3-12b-it` en un espacio de lenguaje natural. El adaptador está situado en la salida del block 40 de 48 bloques, correspondiente a `hidden_states[41]` según Hugging Face. La dimensión del modelo en esa capa es `d_model = 3840`, y el autoencoder tiene una profundidad AR de 41 capas con la RMSNorm final eliminada. La normalización se realiza en modo *raw* (`norm: none`), y la pérdida reescala cada fila a norma L2 de √3840 = 61.9677, por lo que la FVE mide únicamente la dirección de las activaciones, no su magnitud.
 
 El entrenamiento continúa desde el checkpoint `rl_vllm/iter_000400` del modelo padre. Se ejecutaron 400 pasos adicionales de GRPO on-policy sobre WildChat-1M, con los siguientes hiperparámetros: lr 1e-4, critic lr 8e-5, KL β=0.01 (k3), grupo de 8, temperatura 1.0, 256 tokens nuevos máximos y `batch_prompts: 128` (el padre usó 256, por lo que las métricas absolutas no son directamente comparables). El entrenamiento se realizó en 4×H100 durante 18h39m, con ~166 segundos por paso. No se registraron gradientes no finitos, colapso de formato ni OOMs.
 
@@ -78,10 +78,10 @@ La evaluación se realizó con muestreo a temperatura 1.0, y la model card advie
 
 | Modelo | Block | FVE final en WildChat | Ganancia | Media últimas 10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Yooniel/gemma-3-12b-it-nla-L24-wildchat | 24 | 55.6% | +9.1pp | 54.7% | Gemma | HuggingFace |
-| Yooniel/gemma-3-12b-it-nla-L32-wildchat | 32 | 64.3% | +9.2pp | 63.6% | Gemma | HuggingFace |
-| Yooniel/gemma-3-12b-it-nla-L40-wildchat (este) | 40 | 53.9% | +7.8pp | 54.2% | Gemma | HuggingFace |
-| achand45/gemma-3-12b-it-nla-L40 (padre) | 40 | 46.1% (inicio) | — | — | Gemma | HuggingFace |
+| Yooniel/gemma-3-12b-it-nla-L24-wildchat | 24 | 55.6% | +9.1pp | 54.7% | Gemma | Hugging Face |
+| Yooniel/gemma-3-12b-it-nla-L32-wildchat | 32 | 64.3% | +9.2pp | 63.6% | Gemma | Hugging Face |
+| Yooniel/gemma-3-12b-it-nla-L40-wildchat (este) | 40 | 53.9% | +7.8pp | 54.2% | Gemma | Hugging Face |
+| achand45/gemma-3-12b-it-nla-L40 (padre) | 40 | 46.1% (inicio) | — | — | Gemma | Hugging Face |
 
 Los tres modelos wildchat comparten el mismo corpus de entrenamiento, la misma metodología GRPO y los mismos documentos held-out, por lo que sus métricas de FVE sí son comparables entre sí. No lo son, en cambio, con las del modelo padre, que usó un `batch_prompts` de 256 frente al 128 de esta run.
 
@@ -98,7 +98,7 @@ Los tres modelos wildchat comparten el mismo corpus de entrenamiento, la misma m
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Yooniel/gemma-3-12b-it-nla-L40-wildchat
+- Hugging Face del modelo: https://huggingface.co/Yooniel/gemma-3-12b-it-nla-L40-wildchat
 - Modelo hermano L24: https://huggingface.co/Yooniel/gemma-3-12b-it-nla-L24-wildchat
 - Modelo hermano L32: https://huggingface.co/Yooniel/gemma-3-12b-it-nla-L32-wildchat
 - Modelo base original: https://huggingface.co/google/gemma-3-12b-it

@@ -73,10 +73,10 @@ Conjunto de test HeQ: 1.072 preguntas, cada una buscada contra los 4.930 párraf
 
 | Modelo | Parámetros | Contexto | R@1 en HeQ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | 559,9 M | no disponible | 80,7 | MIT | HuggingFace |
-| intfloat/multilingual-e5-large (base) | 559,9 M | no disponible | 72,4 | MIT | HuggingFace |
+| Este modelo | 559,9 M | no disponible | 80,7 | MIT | Hugging Face |
+| intfloat/multilingual-e5-large (base) | 559,9 M | no disponible | 72,4 | MIT | Hugging Face |
 | BM25 (referencia léxica) | n/a | n/a | 73,1 | n/a | Librería estándar |
-| Fine-tuned reranker de ElyKok (etapa 2) | no disponible | no disponible | 93,9 (en pipeline híbrido) | no disponible | HuggingFace |
+| Fine-tuned reranker de ElyKok (etapa 2) | no disponible | no disponible | 93,9 (en pipeline híbrido) | no disponible | Hugging Face |
 
 No se dispone de datos de otros retrievers densos específicos para hebreo en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de otros retrievers densos específicos para hebreo en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElyKok/hebrew-qa-retriever-e5-large-nofilter
+- Modelo en Hugging Face: https://huggingface.co/ElyKok/hebrew-qa-retriever-e5-large-nofilter
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-large
 - Reranker del mismo autor: https://huggingface.co/ElyKok/hebrew-qa-reranker
 - Dataset HeQ: https://github.com/NNLP-IL/Hebrew-Question-Answering-Dataset

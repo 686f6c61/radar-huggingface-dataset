@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`austinitaylor92/cs229-contrastive` es un repositorio de HuggingFace que contiene una implementación propia y mínima de una arquitectura denominada "Albef" orientada a aprendizaje contrastivo, publicada por el usuario austinitaylor92. No se trata de un modelo entrenado ni de un release con pesos utilizables: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no debe presentarse como un checkpoint con benchmarks. El repositorio acumula 0 descargas y 0 likes, y su tamaño es de 0,0 GB.
+`austinitaylor92/cs229-contrastive` es un repositorio de Hugging Face que contiene una implementación propia y mínima de una arquitectura denominada "Albef" orientada a aprendizaje contrastivo, publicada por el usuario austinitaylor92. No se trata de un modelo entrenado ni de un release con pesos utilizables: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no debe presentarse como un checkpoint con benchmarks. El repositorio acumula 0 descargas y 0 likes, y su tamaño es de 0,0 GB.
 
 El dato más relevante es su escala: el fichero safetensors declara 49.600 parámetros totales, lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje o vision-language utilizable en producción. Llama la atención la contradicción interna del repositorio, ya que la configuración etiqueta la escala como "huge" mientras que el recuento real de parámetros es de 49.600. Esto refuerza la interpretación de que se trata de una plantilla reproducible generada para un trabajo de curso (el nombre remite a CS229, la asignatura de Machine Learning de Stanford), no de un artefacto con valor de inferencia real.
 
@@ -79,7 +79,7 @@ Los dos repositorios comparables encontrados en la busqueda web comparten nombre
 - Restricciones de licencia: BSD-3-Clause permite uso comercial y modificacion con atribucion y conservacion del aviso de copyright, pero la model card advierte de que los terminos de los datos de origen deben revisarse por separado si el repositorio se usa con datasets externos.
 - Contradiccion interna: la configuracion etiqueta la escala como "huge" mientras que el recuento real es de 49.600 parametros. Conviene no fiarse de las etiquetas de escala del repositorio.
 - Metadatos anomales: las fechas de creacion y actualizacion indicadas (2026-10-13) son posteriores a la fecha actual, y el repositorio tiene 0 descargas y 0 likes, lo que apunta a un artefacto de plantilla o generado de forma sintetica.
-- Al ser una implementacion propia, no es cargable con `AutoModel` ni con APIs genericas de HuggingFace sin escribir un adaptador.
+- Al ser una implementacion propia, no es cargable con `AutoModel` ni con APIs genericas de Hugging Face sin escribir un adaptador.
 - No debe usarse en produccion para ninguna tarea de cara al usuario.
 
 ## Enlaces

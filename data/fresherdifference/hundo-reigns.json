@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "FresherDifference/hundo-reigns",
+  "slug": "fresherdifference-hundo-reigns",
+  "author": "FresherDifference",
+  "url": "https://huggingface.co/FresherDifference/hundo-reigns",
+  "created_at": "2026-11-04T05:29:39.000Z",
+  "updated_at": "2026-11-04T06:04:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778230823,
+  "storage_human": "778 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FresherDifference/hundo-reigns · Hugging Face",
+      "url": "https://huggingface.co/FresherDifference/hundo-reigns",
+      "snippet": "Text-to-Image model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

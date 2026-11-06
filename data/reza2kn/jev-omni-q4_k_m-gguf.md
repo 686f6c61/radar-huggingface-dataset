@@ -26,7 +26,7 @@ Su relevancia practica esta en el nicho de clasificacion y enrutado de decisione
 | Modelo base | akhilaaa3/Jev-Omni (revision `c050d51354147985d13286cf4acf90f562f2c631`) |
 | Relacion con el base | Cuantizado |
 | Tamano del repo | 7,5 GB (backbone cuantizado: 7.381.382.848 bytes / 6,87 GiB) |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Fecha de creacion | 2026-09-23 |
 | Ultima actualizacion | 2026-09-23 |
 
@@ -91,8 +91,8 @@ Rendimiento medido (no son tasas de generacion de tokens ni comparaciones con ha
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-Omni Q4_K_M GGUF | 11,9B (Q4_K_M, 4,95 bits/peso) | Hasta 8192 en las pruebas documentadas | Choice 98,75%, Noul 93,75%, Score 95,00% en Jev Persian Benchmark | Apache 2.0 | GGUF + NPZ en HuggingFace, 0 descargas |
-| Jev-Omni FP32 (akhilaaa3/Jev-Omni) | 11,9B | No disponible | Referencia fuente; esta Q4 coincide en 3/4 ejemplos de verificacion, diferencia maxima de 0,210 | Apache 2.0 | Pesos originales en HuggingFace |
+| Jev-Omni Q4_K_M GGUF | 11,9B (Q4_K_M, 4,95 bits/peso) | Hasta 8192 en las pruebas documentadas | Choice 98,75%, Noul 93,75%, Score 95,00% en Jev Persian Benchmark | Apache 2.0 | GGUF + NPZ en Hugging Face, 0 descargas |
+| Jev-Omni FP32 (akhilaaa3/Jev-Omni) | 11,9B | No disponible | Referencia fuente; esta Q4 coincide en 3/4 ejemplos de verificacion, diferencia maxima de 0,210 | Apache 2.0 | Pesos originales en Hugging Face |
 | Bev baseline (linea base del benchmark) | No disponible | No disponible | Choice 95,42%, Noul 95,00%, Score 87,50% | No disponible | No disponible |
 | Qwen2.5-Omni | No disponible en la informacion consultada | No disponible | No disponible | No disponible | Repositorio GitHub QwenLM/Qwen2.5-Omni |
 
@@ -114,7 +114,7 @@ La comparacion con Qwen2.5-Omni se incluye solo como referencia de categoria (mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Reza2kn/Jev-Omni-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Reza2kn/Jev-Omni-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/akhilaaa3/Jev-Omni
 - Modelos cuantizados de Jev-Omni: https://huggingface.co/models?other=base_model:quantized:akhilaaa3/Jev-Omni
 - Pagina explicativa de Jev-Omni: https://jev-ai.pro/model/jev-omni

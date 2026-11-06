@@ -76,7 +76,7 @@ No hay datos de rendimiento comparativo. La diferencia principal de Self_Correct
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kxck/Self_Correction_v1
+- Repositorio Hugging Face: https://huggingface.co/Kxck/Self_Correction_v1
 - Paper de Reflexion (referencia al enfoque de autocorrección): https://openreview.net/forum?id=FDG2G7JDWO
 - Artículo sobre agentes autocorrectivos: https://dev.to/louis-sanna/self-correcting-ai-agents-how-to-build-ai-that-learns-from-its-mistakes-39f1
 - Tutorial de agentes autocorrectivos con Reflexion y LangGraph: https://medium.com/@vi.ha.engr/building-a-self-correcting-ai-a-deep-dive-into-the-reflexion-agent-with-langchain-and-langgraph-ae2b1ddb8c3b

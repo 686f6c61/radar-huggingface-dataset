@@ -79,7 +79,7 @@ La unica comparacion fiable disponible es contra el modelo base: este checkpoint
 - Riesgo de alucinacion y de perdida de informacion: al reescribir, el modelo puede omitir matices, cambiar el tono de una reclamacion legitima o introducir contenido que no estaba en el texto original.
 - Riesgo de sobrecorreccion: al estar alineado para producir siempre salidas neutras, puede suavizar mensajes que deberian conservarse intactos por motivos legales o de trazabilidad.
 - El repositorio tiene 0 descargas y 0 likes, sin historial de uso en produccion ni validacion independiente; se trata de un modelo de investigacion, no de un componente probado.
-- El pipeline declarado en HuggingFace es `text-generation`, pero el modelo es encoder-decoder y se usa con `AutoModelForSeq2SeqLM`; conviene no confiar en la etiqueta del Hub al integrarlo.
+- El pipeline declarado en Hugging Face es `text-generation`, pero el modelo es encoder-decoder y se usa con `AutoModelForSeq2SeqLM`; conviene no confiar en la etiqueta del Hub al integrarlo.
 - Los pares de preferencia del ORPO fueron generados sinteticamente por `Qwen/Qwen3.6-35B-A3B-FP8`, de modo que el modelo hereda los sesgos y las convenciones de estilo de ese anotador automatico.
 - No se publican pesos cuantizados (GGUF, AWQ, GPTQ), lo que limita el despliegue en entornos de bajos recursos o en herramientas como llama.cpp y Ollama.
 - La licencia Apache 2.0 es permisiva y permite uso comercial, pero no exime de cumplir la normativa aplicable de moderacion de contenido ni de validar el modelo con datos propios.
@@ -87,7 +87,7 @@ La unica comparacion fiable disponible es contra el modelo base: este checkpoint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r1char9/t5gemma2-detox-ru
+- Modelo en Hugging Face: https://huggingface.co/r1char9/t5gemma2-detox-ru
 - Modelo base: https://huggingface.co/google/t5gemma-2-1b-1b
 - Dataset de SFT: https://huggingface.co/datasets/r1char9/toxic-detox-pairs
 - Dataset de preferencias para DPO/ORPO: https://huggingface.co/datasets/r1char9/detox-dpo-dataset

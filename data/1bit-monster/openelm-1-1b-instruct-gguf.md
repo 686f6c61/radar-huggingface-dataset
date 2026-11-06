@@ -100,8 +100,8 @@ Los datos de contexto y licencia de los modelos comparados son los publicos de s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1bit-MONSTER/OpenELM-1.1B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/1bit-MONSTER/OpenELM-1.1B-Instruct-GGUF
 - Modelo base: https://huggingface.co/apple/OpenELM-1_1B-Instruct
 - Repositorio de cuantizacion citado: https://huggingface.co/RichardErkhov/apple_-_OpenELM-1_1B-Instruct-gguf
 - Motor de inferencia del autor: https://github.com/1bit-MONSTER/engine
-- Licencia del modelo (Apple Machine Learning Research License): fichero LICENSE del repositorio de HuggingFace
+- Licencia del modelo (Apple Machine Learning Research License): fichero LICENSE del repositorio de Hugging Face

@@ -46,7 +46,7 @@ Un detalle relevante es que el checkpoint BF16 original declara una capa MTP (mu
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica reportada es un throughput de aproximadamente 77 a 81 tokens de salida por segundo en pruebas end-to-end realizadas por el autor de la conversion con oMLX 0.6.4. Esta cifra no es un benchmark controlado de decodificacion, ya que el estado de cache no estaba gestionado y las pruebas coincidieron con subidas a HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica reportada es un throughput de aproximadamente 77 a 81 tokens de salida por segundo en pruebas end-to-end realizadas por el autor de la conversion con oMLX 0.6.4. Esta cifra no es un benchmark controlado de decodificacion, ya que el estado de cache no estaba gestionado y las pruebas coincidieron con subidas a Hugging Face.
 
 ## Requisitos de hardware
 

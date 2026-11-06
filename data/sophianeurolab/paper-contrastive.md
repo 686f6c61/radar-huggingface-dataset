@@ -81,7 +81,7 @@ No es posible establecer una comparativa rigurosa con la información disponible
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sophianeurolab/paper-contrastive | 49.600 | no disponible | no disponible (checkpoint sin entrenar) | apache-2.0 | HuggingFace, 0 descargas |
+| sophianeurolab/paper-contrastive | 49.600 | no disponible | no disponible (checkpoint sin entrenar) | apache-2.0 | Hugging Face, 0 descargas |
 | DINO / DINOv2 | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | SimCLR | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | MoCo | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -102,6 +102,6 @@ La única comparación defendible es cualitativa: este repositorio se posiciona 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sophianeurolab/paper-contrastive
+- Modelo en Hugging Face: https://huggingface.co/sophianeurolab/paper-contrastive
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información proporcionada.

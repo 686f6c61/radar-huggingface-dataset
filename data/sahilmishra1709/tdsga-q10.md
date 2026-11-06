@@ -4,7 +4,7 @@
 
 El repositorio `sahilmishra1709/tdsga-q10` no contiene un modelo de inteligencia artificial, sino un registro de contabilidad de carbono y consumo energético asociado a una ejecución de fine-tuning realizada como parte de la asignatura TDS GA8. El autor documenta las emisiones de CO₂ equivalente, el consumo eléctrico y las características del hardware utilizado durante el entrenamiento, siguiendo las directrices de un ejercicio académico sobre sostenibilidad en el entrenamiento de modelos.
 
-La relevancia de este repositorio radica en su carácter de ejemplo práctico de medición de huella de carbono en el ciclo de vida de un modelo, utilizando la herramienta CodeCarbon. No se incluyen pesos, arquitectura ni artefactos de modelo descargables, y el repositorio no tiene descargas ni interacciones en HuggingFace. Su interés es exclusivamente metodológico y educativo dentro del contexto de la asignatura TDS.
+La relevancia de este repositorio radica en su carácter de ejemplo práctico de medición de huella de carbono en el ciclo de vida de un modelo, utilizando la herramienta CodeCarbon. No se incluyen pesos, arquitectura ni artefactos de modelo descargables, y el repositorio no tiene descargas ni interacciones en Hugging Face. Su interés es exclusivamente metodológico y educativo dentro del contexto de la asignatura TDS.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sahilmishra1709/tdsga-q10
-- Organización TDSGA en HuggingFace: https://huggingface.co/TDSGA/models
+- Repositorio en Hugging Face: https://huggingface.co/sahilmishra1709/tdsga-q10
+- Organización TDSGA en Hugging Face: https://huggingface.co/TDSGA/models
 - Repositorio TDSGA5Q10 en GitHub: https://github.com/22f3002941/TDSGA5Q10
 - README de TDSGA5Q10: https://github.com/22f3002941/TDSGA5Q10/blob/main/README.md

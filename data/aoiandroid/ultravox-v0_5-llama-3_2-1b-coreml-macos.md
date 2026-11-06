@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ultravox v0.5 (original) | 1.24B | 4K | voz + texto | MIT | HuggingFace |
+| Ultravox v0.5 (original) | 1.24B | 4K | voz + texto | MIT | Hugging Face |
 | Ultravox v0.5 CoreML (esta compilación) | No especificado | No especificado | voz + texto | MIT | CoreML para macOS |
-| Llama 3.2 1B (texto) | 1.24B | 128K | texto | Llama 3.2 | HuggingFace |
+| Llama 3.2 1B (texto) | 1.24B | 128K | texto | Llama 3.2 | Hugging Face |
 
 No hay una comparativa directa con otros modelos de voz similares, ya que la información es limitada.
 
@@ -70,8 +70,8 @@ No hay una comparativa directa con otros modelos de voz similares, ya que la inf
 
 ## Enlaces
 
-- [HuggingFace: aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml-macos](https://huggingface.co/aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml-macos)
-- [HuggingFace del modelo original](https://huggingface.co/fixie-ai/ultravox-v0_5-llama-3_2-1b)
+- [Hugging Face: aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml-macos](https://huggingface.co/aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml-macos)
+- [Hugging Face del modelo original](https://huggingface.co/fixie-ai/ultravox-v0_5-llama-3_2-1b)
 - [GitHub de Ultravox](https://github.com/fixie-ai/ultravox)
 - [Información adicional en aibase](https://model.aibase.com/models/details/1915692556446490626)</think>## Resumen
 
@@ -127,9 +127,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ultravox v2.5 (original) | 1,24B | 4K | voz + texto | MIT | HuggingFace |
+| Ultravox v2.5 (original) | 1,24B | 4K | voz + texto | MIT | Hugging Face |
 | Ultravox v2.5 CoreML (esta compilación) | No disponible (1,24B en el original) | 4K (presumible) | voz + texto | MIT | CoreML (macOS) |
-| Whisper large-v3 | 1,55B | N/A | audio a texto | MIT | HuggingFace |
+| Whisper large-v3 | 1,55B | N/A | audio a texto | MIT | Hugging Face |
 
 No hay una comparación directa con otros modelos de voz similares en la información disponible. La comparación se limita a los modelos base y al propio Ultravox.
 

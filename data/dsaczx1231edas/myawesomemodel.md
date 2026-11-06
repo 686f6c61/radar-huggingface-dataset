@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DSACZX1231EDAS bajo licencia MIT, etiquetado con la librería transformers y el pipeline de feature-extraction. La model card describe un supuesto salto cualitativo en razonamiento e inferencia respecto a una versión anterior, con mejoras en matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y mejor soporte de function calling. Sin embargo, la información disponible es contradictoria: las etiquetas de HuggingFace indican arquitectura BERT y tarea de extracción de características, mientras que el texto de la model card describe un modelo generativo conversacional con modo de razonamiento extendido.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DSACZX1231EDAS bajo licencia MIT, etiquetado con la librería transformers y el pipeline de feature-extraction. La model card describe un supuesto salto cualitativo en razonamiento e inferencia respecto a una versión anterior, con mejoras en matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y mejor soporte de function calling. Sin embargo, la información disponible es contradictoria: las etiquetas de Hugging Face indican arquitectura BERT y tarea de extracción de características, mientras que el texto de la model card describe un modelo generativo conversacional con modo de razonamiento extendido.
 
 El repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, y no incluye pesos publicados ni código de ejecución accesible. La model card menciona una variante denominada MyAwesomeModel-Small con arquitectura idéntica al modelo base, pero no se proporcionan parámetros, longitud de contexto, tokenizador ni composición del dataset de entrenamiento.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha documenta exclusivamente lo que el autor declara en la mod
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta de HuggingFace: bert; la model card sugiere un modelo generativo con modo de razonamiento) |
+| Arquitectura | no disponible (etiqueta de Hugging Face: bert; la model card sugiere un modelo generativo con modo de razonamiento) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta exclusivamente lo que el autor declara en la mod
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no especifica la arquitectura interna del modelo. La etiqueta de HuggingFace indica `bert`, lo que apuntaría a un transformer encoder-only orientado a extracción de características, pero la model card describe capacidades generativas, razonamiento multi-paso y function calling, propias de un modelo decoder-only o de un modelo conversacional. Esta discrepancia no se resuelve con los datos disponibles.
+La información proporcionada no especifica la arquitectura interna del modelo. La etiqueta de Hugging Face indica `bert`, lo que apuntaría a un transformer encoder-only orientado a extracción de características, pero la model card describe capacidades generativas, razonamiento multi-paso y function calling, propias de un modelo decoder-only o de un modelo conversacional. Esta discrepancia no se resuelve con los datos disponibles.
 
 Respecto al entrenamiento, la model card afirma que la versión actual mejora la profundidad de razonamiento mediante mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. No se indican número de tokens de entrenamiento, composición del dataset, ni si se emplearon técnicas de RLHF, DPO o similares. Tampoco se detalla ninguna innovación técnica concreta (decodificación especulativa, atención lineal, etc.). El único dato cuantitativo aportado es que, en el conjunto AIME, la versión anterior consumía una media de 12K tokens por pregunta y la actual 23K, lo que sugiere un modo de razonamiento extendido con cadenas de pensamiento más largas.
 
@@ -45,7 +45,7 @@ Respecto al entrenamiento, la model card afirma que la versión actual mejora la
 - Automatización con function calling: el soporte declarado de llamadas a funciones permitiría orquestar herramientas externas en flujos de agente, aunque no se documenta el formato exacto de las llamadas.
 - Análisis de documentos con plantilla de fichero: la plantilla `file_template` permite inyectar el contenido de un fichero y formular preguntas sobre él, útil para resumen o extracción de información de documentación técnica.
 - Búsqueda web aumentada con citas: la plantilla `search_answer_en_template` está diseñada para responder con referencias `[citation:X]`, adecuada para asistentes de investigación que requieran trazabilidad de fuentes.
-- Clasificación y análisis de sentimiento: la model card reporta 0,828 en clasificación de texto y 0,792 en análisis de sentimiento; podría usarse en monitorización de opiniones, con la cautela de que la etiqueta de HuggingFace lo orienta a feature-extraction.
+- Clasificación y análisis de sentimiento: la model card reporta 0,828 en clasificación de texto y 0,792 en análisis de sentimiento; podría usarse en monitorización de opiniones, con la cautela de que la etiqueta de Hugging Face lo orienta a feature-extraction.
 - Atención al cliente multi-turno: el modelo se presenta como conversacional con soporte de system prompt, aunque se desconoce la longitud de contexto y por tanto la viabilidad real de conversaciones largas.
 
 ## Benchmarks y rendimiento
@@ -104,7 +104,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSACZX1231EDAS/MyAwesomeModel
+- Hugging Face: https://huggingface.co/DSACZX1231EDAS/MyAwesomeModel
 - Repositorio de código: no disponible en la información proporcionada
 - Paper: no disponible
 - Blog o demo: no disponible

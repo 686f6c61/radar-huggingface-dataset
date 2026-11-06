@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo TensorVizion/HuggingFaceTB-SmolLM2-135M-f16-GGUF es una cuantizacion en formato GGUF con precision f16 del modelo base SmolLM2-135M, desarrollado por HuggingFace. SmolLM2 es una familia de modelos de lenguaje compactos (135M, 360M y 1.7B parametros) disenados para ejecutarse en dispositivos con recursos limitados, como telefonos, portatiles y hardware de borde. Este modelo en concreto es la variante de 135 millones de parametros, entrenada sobre 2 billones de tokens, lo que le otorga capacidades de generacion de texto y razonamiento notables para su tamano.
+El modelo TensorVizion/HuggingFaceTB-SmolLM2-135M-f16-GGUF es una cuantizacion en formato GGUF con precision f16 del modelo base SmolLM2-135M, desarrollado por Hugging Face. SmolLM2 es una familia de modelos de lenguaje compactos (135M, 360M y 1.7B parametros) disenados para ejecutarse en dispositivos con recursos limitados, como telefonos, portatiles y hardware de borde. Este modelo en concreto es la variante de 135 millones de parametros, entrenada sobre 2 billones de tokens, lo que le otorga capacidades de generacion de texto y razonamiento notables para su tamano.
 
-La relevancia de este modelo radica en su capacidad para ejecutarse en CPU y hardware de gama baja sin sacrificar en exceso la calidad de las respuestas. El formato GGUF f16 facilita su uso con llama.cpp, Ollama y otras herramientas de inferencia local, lo que lo convierte en una opcion atractiva para aplicaciones embebidas, educacion y prototipado rapido. El modelo base fue entrenado por HuggingFace y esta publicado bajo licencia Apache 2.0, permitiendo uso comercial sin restricciones significativas.
+La relevancia de este modelo radica en su capacidad para ejecutarse en CPU y hardware de gama baja sin sacrificar en exceso la calidad de las respuestas. El formato GGUF f16 facilita su uso con llama.cpp, Ollama y otras herramientas de inferencia local, lo que lo convierte en una opcion atractiva para aplicaciones embebidas, educacion y prototipado rapido. El modelo base fue entrenado por Hugging Face y esta publicado bajo licencia Apache 2.0, permitiendo uso comercial sin restricciones significativas.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su capacidad para ejecutarse en CPU y har
 
 ## Arquitectura y entrenamiento
 
-SmolLM2-135M utiliza una arquitectura de transformer decoder estandar, sin atencion lineal ni mezcla de expertos. El modelo fue preentrenado en precision bfloat16 sobre 2 billones de tokens, combinando los datasets FineWeb-Edu, DCLM y The Stack, junto con datasets adicionales filtrados por HuggingFace. El entrenamiento se realizo con el framework nanotron en un cluster de 64 GPUs H100. No se aplicaron tecnicas de RLHF ni DPO en la variante base; la version instruct del modelo (no incluida en este repositorio GGUF) si recibio SFT y DPO sobre UltraFeedback.
+SmolLM2-135M utiliza una arquitectura de transformer decoder estandar, sin atencion lineal ni mezcla de expertos. El modelo fue preentrenado en precision bfloat16 sobre 2 billones de tokens, combinando los datasets FineWeb-Edu, DCLM y The Stack, junto con datasets adicionales filtrados por Hugging Face. El entrenamiento se realizo con el framework nanotron en un cluster de 64 GPUs H100. No se aplicaron tecnicas de RLHF ni DPO en la variante base; la version instruct del modelo (no incluida en este repositorio GGUF) si recibio SFT y DPO sobre UltraFeedback.
 
 El formato GGUF f16 de este repositorio conserva los pesos con precision de 16 bits, lo que mantiene una calidad de generacion practicamente identica al modelo original en bfloat16, con una huella de memoria de aproximadamente 270 MB para los pesos.
 
@@ -94,9 +94,9 @@ SmolLM2-135M mejora a su predecesor SmolLM-135M en la mayoria de las metricas de
 
 ## Enlaces
 
-- Repositorio de HuggingFace del modelo: https://huggingface.co/TensorVizion/HuggingFaceTB-SmolLM2-135M-f16-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
-- Coleccion oficial SmolLM2 de HuggingFace: https://huggingface.co/collections/HuggingFaceTB/smollm2
+- Repositorio de Hugging Face del modelo: https://huggingface.co/TensorVizion/HuggingFaceTB-SmolLM2-135M-f16-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
+- Coleccion oficial SmolLM2 de Hugging Face: https://huggingface.co/collections/HuggingFaceTB/smollm2
 - Paper de SmolLM2 (arXiv): https://arxiv.org/abs/2502.02737
 - Dataset de SFT smol-smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Codigo de fine-tuning (alignment-handbook): https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm2

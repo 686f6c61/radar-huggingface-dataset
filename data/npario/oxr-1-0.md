@@ -77,10 +77,10 @@ Los datos de las alternativas provienen de conocimiento público general y no ha
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OXR-1.0 (SoMark) | ≈1,53 B | No disponible | Parsing documental con layout conectable, 13 tipos de elemento | No disponible | HuggingFace, ModelScope, demo y API |
-| dots.ocr | ≈1,7 B | No disponible | Parsing documental basado en VLM | No verificada en esta ficha | HuggingFace |
-| olmOCR (AllenAI) | ≈7 B | No disponible | OCR/parsing de PDF a texto con VLM | No verificada en esta ficha | HuggingFace |
-| GOT-OCR2.0 | ≈0,58 B | No disponible | OCR y conversión de documentos | No verificada en esta ficha | HuggingFace |
+| OXR-1.0 (SoMark) | ≈1,53 B | No disponible | Parsing documental con layout conectable, 13 tipos de elemento | No disponible | Hugging Face, ModelScope, demo y API |
+| dots.ocr | ≈1,7 B | No disponible | Parsing documental basado en VLM | No verificada en esta ficha | Hugging Face |
+| olmOCR (AllenAI) | ≈7 B | No disponible | OCR/parsing de PDF a texto con VLM | No verificada en esta ficha | Hugging Face |
+| GOT-OCR2.0 | ≈0,58 B | No disponible | OCR y conversión de documentos | No verificada en esta ficha | Hugging Face |
 
 Frente a las alternativas de mayor tamaño, la propuesta de OXR es competir en precisión con ~1,5 B de parámetros y menor coste de inferencia, añadiendo la sustitución del módulo de layout. La comparación cuantitativa de precisión y velocidad debe hacerse con los resultados de `docs/benchmark.md`.
 
@@ -100,8 +100,8 @@ Frente a las alternativas de mayor tamaño, la propuesta de OXR es competir en p
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia analizada): https://huggingface.co/npario/OXR-1.0
-- Modelo oficial en HuggingFace: https://huggingface.co/SoMarkAI/OXR-1.0
+- Modelo en Hugging Face (copia analizada): https://huggingface.co/npario/OXR-1.0
+- Modelo oficial en Hugging Face: https://huggingface.co/SoMarkAI/OXR-1.0
 - Repositorio GitHub: https://github.com/SoMarkAI/OXR
 - Resultados de benchmarks y reproducción: https://github.com/SoMarkAI/OXR/blob/main/docs/benchmark.md
 - README en chino: https://github.com/SoMarkAI/OXR/blob/main/README_CN.md

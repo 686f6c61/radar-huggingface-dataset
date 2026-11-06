@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AlphaFold 2 Multimer (model-4) es una implementación no oficial del modelo AlphaFold-Multimer desarrollada por el equipo OFoldX, publicada en HuggingFace bajo el identificador `oteam/alphafold2-multimer-model-4`. El modelo predice la estructura tridimensional de complejos proteicos multi-cadena a partir de secuencias de aminoácidos, alineamientos múltiples de secuencias (MSA) y plantillas estructurales opcionales. Está pensado para investigadores en biología estructural y diseño de proteínas que necesitan determinar la conformación de complejos proteína-proteína sin recurrir a métodos experimentales costosos como la cristalografía de rayos X o la criomicroscopía electrónica.
+AlphaFold 2 Multimer (model-4) es una implementación no oficial del modelo AlphaFold-Multimer desarrollada por el equipo OFoldX, publicada en Hugging Face bajo el identificador `oteam/alphafold2-multimer-model-4`. El modelo predice la estructura tridimensional de complejos proteicos multi-cadena a partir de secuencias de aminoácidos, alineamientos múltiples de secuencias (MSA) y plantillas estructurales opcionales. Está pensado para investigadores en biología estructural y diseño de proteínas que necesitan determinar la conformación de complejos proteína-proteína sin recurrir a métodos experimentales costosos como la cristalografía de rayos X o la criomicroscopía electrónica.
 
 La arquitectura sigue el diseño original de AlphaFold 2: un tronco Evoformer de 48 bloques que actualiza conjuntamente las representaciones de MSA y de pares de residuos, seguido de un módulo estructural de atención sobre puntos invariantes (invariant point attention) con 8 bloques. La variante Multimer incorpora MSAs emparejados y características relativas entre cadenas para modelar complejos. El modelo cuenta con 93.278.041 parámetros (unos 93,28 M) y utiliza 21 pasos de reciclado, frente a los 4 de las variantes monómero.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / MSA | Pasos de reciclado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/alphafold2-multimer-model-4 | 93,278 M | MSA 256, pair 128, single 384 | 21 | AGPL-3.0 | HuggingFace (0 descargas) |
-| oteam/alphafold2 | 93,283 M | MSA 256, pair 128, single 384 | 4 | AGPL-3.0 (según tag) | HuggingFace |
-| oteam/alphafold2-ptm | 93,292 M | MSA 256, pair 128, single 384 | 4 | AGPL-3.0 (según tag) | HuggingFace |
-| oteam/alphafold2-casp14 | No disponible | MSA 256, pair 128, single 384 | No disponible | AGPL-3.0 (según tag) | HuggingFace |
+| oteam/alphafold2-multimer-model-4 | 93,278 M | MSA 256, pair 128, single 384 | 21 | AGPL-3.0 | Hugging Face (0 descargas) |
+| oteam/alphafold2 | 93,283 M | MSA 256, pair 128, single 384 | 4 | AGPL-3.0 (según tag) | Hugging Face |
+| oteam/alphafold2-ptm | 93,292 M | MSA 256, pair 128, single 384 | 4 | AGPL-3.0 (según tag) | Hugging Face |
+| oteam/alphafold2-casp14 | No disponible | MSA 256, pair 128, single 384 | No disponible | AGPL-3.0 (según tag) | Hugging Face |
 
 No se dispone de datos de benchmarks para comparar rendimiento predictivo con alternativas como AlphaFold 3, RoseTTAFold o ESMFold en la información proporcionada. La comparativa se limita a variantes del mismo equipo y a especificaciones estructurales.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks para comparar rendimiento predictivo con al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/alphafold2-multimer-model-4
+- Hugging Face: https://huggingface.co/oteam/alphafold2-multimer-model-4
 - Código: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/alphafold2
 - Paper AlphaFold 2: https://doi.org/10.1038/s41586-021-03819-2
 - Paper AlphaFold-Multimer: https://doi.org/10.1101/2021.10.04.463034

@@ -63,8 +63,8 @@ No se dispone de datos suficientes para una comparativa exhaustiva con alternati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Dreamlike Diffusion 1.0 | 859.520.964 | 77 tokens | Modified CreativeML OpenRAIL-M | HuggingFace |
-| Stable Diffusion 1.5 | ~860M | 77 tokens | CreativeML OpenRAIL-M | HuggingFace |
+| Dreamlike Diffusion 1.0 | 859.520.964 | 77 tokens | Modified CreativeML OpenRAIL-M | Hugging Face |
+| Stable Diffusion 1.5 | ~860M | 77 tokens | CreativeML OpenRAIL-M | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,8 +78,8 @@ No se dispone de datos suficientes para una comparativa exhaustiva con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamlike-art/dreamlike-diffusion-1.0
-- Espejo en HuggingFace: https://huggingface.co/Bdhj/dreamlike-diffusion-1.0
+- Modelo en Hugging Face: https://huggingface.co/dreamlike-art/dreamlike-diffusion-1.0
+- Espejo en Hugging Face: https://huggingface.co/Bdhj/dreamlike-diffusion-1.0
 - Licencia: https://huggingface.co/dreamlike-art/dreamlike-diffusion-1.0/blob/main/LICENSE.md
 - Dreamlike Photoreal 2.0: https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0
 - Gradio Space: https://huggingface.co/spaces/akhaliq/dreamlike-diffusion-1.0

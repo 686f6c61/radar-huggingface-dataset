@@ -4,7 +4,7 @@
 
 Este modelo, publicado por el usuario PellelNitram, es un detector de palabras para escritura manuscrita que forma parte del proyecto Xournal++ HTR, cuyo objetivo es desarrollar reconocimiento de texto manuscrito para la aplicación Xournal++. El nombre del modelo indica que está basado en la familia YOLO de arquitecturas de detección de objetos, y se distribuye en formato ONNX con licencia MIT. Su función es localizar palabras individuales dentro de una imagen de texto escrito a mano, proporcionando cajas delimitadoras que pueden alimentar a un modelo posterior de reconocimiento de texto (HTR).
 
-El modelo original de detección de palabras (WordDetectorNN) fue creado por Harald Scheidl y ha sido reimplementado en el contexto de Xournal++ HTR siguiendo los ADRs 006 y 007 del repositorio. Sin embargo, la información publicada sobre esta variante concreta es mínima: no se detallan la arquitectura exacta, el número de parámetros, los datos de entrenamiento ni las métricas de rendimiento. La ficha de HuggingFace está prácticamente vacía, por lo que cualquier evaluación rigurosa requiere consultar el repositorio del proyecto o contactar con el autor.
+El modelo original de detección de palabras (WordDetectorNN) fue creado por Harald Scheidl y ha sido reimplementado en el contexto de Xournal++ HTR siguiendo los ADRs 006 y 007 del repositorio. Sin embargo, la información publicada sobre esta variante concreta es mínima: no se detallan la arquitectura exacta, el número de parámetros, los datos de entrenamiento ni las métricas de rendimiento. La ficha de Hugging Face está prácticamente vacía, por lo que cualquier evaluación rigurosa requiere consultar el repositorio del proyecto o contactar con el autor.
 
 ## Especificaciones técnicas
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | PellelNitram/xournalpp-htr-word-detector-yolo | YOLO (no especificado) | MIT | ONNX | no disponible |
 | PellelNitram/xournalpp-htr-word-detector | Detección de objetos (no especificado) | MIT | ONNX | English |
 
-El segundo modelo es del mismo autor y está etiquetado en HuggingFace como un detector de palabras en escritura manuscrita con soporte para inglés. La diferencia principal es el sufijo "yolo", que sugiere una variante basada en YOLO frente a una implementación anterior. No se dispone de datos de rendimiento para una comparación cuantitativa.
+El segundo modelo es del mismo autor y está etiquetado en Hugging Face como un detector de palabras en escritura manuscrita con soporte para inglés. La diferencia principal es el sufijo "yolo", que sugiere una variante basada en YOLO frente a una implementación anterior. No se dispone de datos de rendimiento para una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 

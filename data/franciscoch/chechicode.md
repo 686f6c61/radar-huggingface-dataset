@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chechicode es un repositorio de modelo publicado en HuggingFace por el usuario franciscoch bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el encabezado de licencia y carece de cualquier descripcion funcional, arquitectonica o de uso, por lo que no es posible determinar que tipo de modelo es ni que problema pretende resolver.
+Chechicode es un repositorio de modelo publicado en Hugging Face por el usuario franciscoch bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el encabezado de licencia y carece de cualquier descripcion funcional, arquitectonica o de uso, por lo que no es posible determinar que tipo de modelo es ni que problema pretende resolver.
 
 El repositorio registra cero descargas y cero likes, y no declara pipeline de inferencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. Tampoco se ha publicado informacion adicional en la busqueda web: los unicos resultados devueltos corresponden a paginas de aparcamiento de dominio en polaco (busjaniso.pl) sin relacion alguna con el modelo.
 
@@ -83,7 +83,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea del modelo,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/franciscoch/Chechicode
+- Hugging Face: https://huggingface.co/franciscoch/Chechicode
 - Model card: https://huggingface.co/franciscoch/Chechicode/blob/main/README.md
 - Resultados de busqueda web (no relacionados con el modelo): https://www.busjaniso.pl/galeria
 - Resultados de busqueda web (no relacionados con el modelo): https://www.busjaniso.pl/kontakt

@@ -73,7 +73,7 @@ La comparativa muestra que este modelo destilado es significativamente más pequ
 
 ## Enlaces
 
-- [HuggingFace: McG-221/Qwen3.8-27B-Fable-Distill-mlx-8Bit](https://huggingface.co/McG-221/Qwen3.8-27B-Fable-Distill-mlx-8Bit)
+- [Hugging Face: McG-221/Qwen3.8-27B-Fable-Distill-mlx-8Bit](https://huggingface.co/McG-221/Qwen3.8-27B-Fable-Distill-mlx-8Bit)
 - [Modelo base: TeichAI/Qwen3.8-27B-Fable-Distill](https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill)
 - [Guía de Qwen3.8-27B (2026)](https://lovableapp.org/blog/qwen3-8-27b)
 - [Qwen3.8 27B Fable Distill en LLM Explorer](https://llm-explorer.com/model/TeichAI%2FQwen3.8-27B-Fable-Distill,23OhmOa6RJTO53XCLMLoi4)

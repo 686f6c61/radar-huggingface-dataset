@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/tur_latn_10mb`, un transformer de tipo GPT-2 de pequeno tamano orientado al turco escrito en alfabeto latino. El ajuste lo ha realizado el usuario de HuggingFace `francesca9805` mediante SFT (supervised fine-tuning) con la libreria TRL 0.23.0, y esta vinculado a una ejecucion de Weights & Biases del proyecto `new-tokenizers` de la Universidad de Groningen. El nombre del repositorio sugiere un experimento sobre tokenizacion y empaquetado de datos (`10mb-packed`, `seed10`), no un modelo de proposito general listo para produccion.
+El modelo `francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/tur_latn_10mb`, un transformer de tipo GPT-2 de pequeno tamano orientado al turco escrito en alfabeto latino. El ajuste lo ha realizado el usuario de Hugging Face `francesca9805` mediante SFT (supervised fine-tuning) con la libreria TRL 0.23.0, y esta vinculado a una ejecucion de Weights & Biases del proyecto `new-tokenizers` de la Universidad de Groningen. El nombre del repositorio sugiere un experimento sobre tokenizacion y empaquetado de datos (`10mb-packed`, `seed10`), no un modelo de proposito general listo para produccion.
 
 El modelo tiene 39.087.104 parametros totales (unos 39 millones) y un peso en disco de aproximadamente 0,1 GB en precision completa, por lo que es un modelo muy ligero que puede ejecutarse en CPU o en cualquier GPU de consumo. Se distribuye en formato safetensors bajo la libreria transformers, con pipeline `text-generation`, y es compatible con Text Generation Inference y con endpoints de Inferencia. No se publican datos de licencia efectiva, idiomas declarados, longitudes de contexto ni resultados de benchmarks en la model card: se trata de un artefacto de investigacion con documentacion minima.
 
@@ -41,7 +41,7 @@ El entrenamiento se realizo mediante SFT con TRL, segun la model card, y esta re
 - Ajuste por instrucciones (SFT): el ejemplo de la model card usa una lista de mensajes con rol `user`, lo que indica un formato conversacional de un solo turno.
 - Generacion en turco (latino), segun la ascendencia del modelo base; no hay confirmacion explicita de otros idiomas.
 - Integracion directa con el pipeline `text-generation` de transformers.
-- Compatibilidad declarada con text-generation-inference y con endpoints de Inferencia de HuggingFace.
+- Compatibilidad declarada con text-generation-inference y con endpoints de Inferencia de Hugging Face.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo de pensamiento explicito.
 - No se documenta ventana de contexto extendida ni capacidades de recuperacion o RAG nativas.
 
@@ -66,16 +66,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - CPU: ejecucion totalmente viable, con latencias de decenas de milisegundos por token en hardware moderno; no requiere acelerador.
 - GPU recomendadas: cualquiera con al menos 2 GB de VRAM (GTX 1050 Ti, RTX 3060, RTX 4090, A100, H100). El modelo esta enormemente infrautilizado en GPUs de datacenter.
 - Cabe holgadamente en cualquier GPU de consumo e incluso en moviles o entornos embebidos, dado su tamano de 0,1 GB.
-- Opciones de despliegue: transformers (pipeline de text-generation), Text Generation Inference (declarado como compatible en los tags), endpoints de Inferencia de HuggingFace, y servidores propios en PyTorch. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion manual previa.
+- Opciones de despliegue: transformers (pipeline de text-generation), Text Generation Inference (declarado como compatible en los tags), endpoints de Inferencia de Hugging Face, y servidores propios en PyTorch. No se publican pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion manual previa.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39,09 M | no disponible | no disponible | no disponible | Hub de HuggingFace, safetensors |
-| goldfish-models/tur_latn_10mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hub de HuggingFace |
-| Otros checkpoints derivados de Goldfish con distinta semilla o empaquetado | del orden de decenas de millones | no disponible | no disponible | no disponible | Hub de HuggingFace |
+| francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39,09 M | no disponible | no disponible | no disponible | Hub de Hugging Face, safetensors |
+| goldfish-models/tur_latn_10mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hub de Hugging Face |
+| Otros checkpoints derivados de Goldfish con distinta semilla o empaquetado | del orden de decenas de millones | no disponible | no disponible | no disponible | Hub de Hugging Face |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria. La unica comparacion defendible con la informacion disponible es la del modelo con su propio modelo base, `goldfish-models/tur_latn_10mb`, del que difiere por el ajuste SFT y por la configuracion de datos de entrenamiento; el efecto concreto de ese ajuste no esta medido en la documentacion publicada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/tur_latn_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/8qrdergd
 - Repositorio de TRL: https://github.com/huggingface/trl

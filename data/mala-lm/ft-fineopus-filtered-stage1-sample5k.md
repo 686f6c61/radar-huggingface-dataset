@@ -53,4 +53,4 @@ No se dispone de información comparativa con otros modelos. Al no conocerse la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MaLA-LM/FT-FineOPUS-Filtered-Stage1-sample5k
+- Repositorio Hugging Face: https://huggingface.co/MaLA-LM/FT-FineOPUS-Filtered-Stage1-sample5k

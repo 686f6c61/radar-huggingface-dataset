@@ -82,7 +82,7 @@ La comparativa se limita al linaje directo del modelo, ya que no se dispone de d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/polen-studio/gemma-4-e4b-it-4bit
+- Repositorio en Hugging Face: https://huggingface.co/polen-studio/gemma-4-e4b-it-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Artefacto original de mlx-community: https://huggingface.co/mlx-community/gemma-4-e4b-it-4bit
 - Revisión concreta copiada: https://huggingface.co/mlx-community/gemma-4-e4b-it-4bit/tree/475b9088d29754a3379866cf5aeb6b41acd313c2

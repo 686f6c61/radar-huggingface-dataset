@@ -90,9 +90,9 @@ Nota: las cifras de los modelos de InsightFace y RetinaFace proceden de sus publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeandudey/scrfd-500m-bn
+- Modelo en Hugging Face: https://huggingface.co/jeandudey/scrfd-500m-bn
 - Código (entrenamiento, cuantización, empaquetado y demo): https://github.com/jeandudey/pytorch-scrfd
 - Referencia original de SCRFD (InsightFace): https://github.com/deepinsight/insightface/tree/master/detection/scrfd
 - Paper de SCRFD: https://arxiv.org/abs/2105.04714
 - Open Images V7: https://storage.googleapis.com/openimages/web/index.html
-- No disponible: demo online alojada, blog de anuncio o espacio de HuggingFace asociado.
+- No disponible: demo online alojada, blog de anuncio o espacio de Hugging Face asociado.

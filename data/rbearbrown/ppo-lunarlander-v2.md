@@ -4,7 +4,7 @@
 
 `rbearbrown/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2 de Gymnasium, usando la librería Stable-Baselines3. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política neuronal que controla el módulo de aterrizaje del juego LunarLander, un entorno clásico de control continuo donde el agente debe posar una nave sobre una plataforma aplicando empuje en dos dimensiones.
 
-El modelo lo publica el usuario `rbearbrown` en HuggingFace Hub. El repositorio tiene un tamaño declarado de 0.0 GB, lo que es coherente con una política pequeña de tipo MLP (perceptrón multicapa) típica de Stable-Baselines3 para este entorno. La model card es prácticamente un esqueleto generado automáticamente: el bloque de uso contiene un `TODO` y un ejemplo incompleto, sin instrucciones reales de carga.
+El modelo lo publica el usuario `rbearbrown` en Hugging Face Hub. El repositorio tiene un tamaño declarado de 0.0 GB, lo que es coherente con una política pequeña de tipo MLP (perceptrón multicapa) típica de Stable-Baselines3 para este entorno. La model card es prácticamente un esqueleto generado automáticamente: el bloque de uso contiene un `TODO` y un ejemplo incompleto, sin instrucciones reales de carga.
 
 Su relevancia es limitada y de carácter didáctico: sirve como ejemplo de cómo se publica un agente de RL en el Hub y de cómo se declara un `model-index` con la métrica `mean_reward`. No es un modelo para producción ni para tareas de NLP. El autor declara un `mean_reward` de 265.30 ± 18.03 en LunarLander-v2, un resultado que en ese entorno se considera resuelto (el umbral habitual es 200), aunque la métrica está marcada como no verificada (`verified: false`).
 
@@ -42,7 +42,7 @@ No se especifica el número de pasos de entrenamiento, la composición del datas
 ## Casos de uso
 
 - Docencia y tutoriales de RL: sirve como ejemplo mínimo de agente PPO publicado en el Hub, útil para explicar el flujo de entrenamiento, evaluación y subida de pesos con Stable-Baselines3.
-- Pruebas de infraestructura de RL: se puede usar como *smoke test* para validar que un pipeline de carga de modelos de HuggingFace con `huggingface_sb3` funciona correctamente.
+- Pruebas de infraestructura de RL: se puede usar como *smoke test* para validar que un pipeline de carga de modelos de Hugging Face con `huggingface_sb3` funciona correctamente.
 - Comparación de algoritmos: al ser un agente PPO sobre LunarLander-v2, permite contrastar con agentes DQN o A2C en el mismo entorno y observar diferencias de recompensa media.
 - Reproducción de experimentos: si se dispone del código de entrenamiento (no incluido en la card), puede servir para reproducir el resultado declarado de 265.30 ± 18.03.
 - Demostraciones de visualización: renderizar episodios del agente en el entorno para mostrar el comportamiento aprendido en charlas o clases.
@@ -70,7 +70,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rbearbrown/ppo-LunarLander-v2 | PPO | LunarLander-v2 | 265.30 +/- 18.03 | no disponible | HuggingFace Hub |
+| rbearbrown/ppo-LunarLander-v2 | PPO | LunarLander-v2 | 265.30 +/- 18.03 | no disponible | Hugging Face Hub |
 | Agentes PPO de referencia de Stable-Baselines3 | PPO | LunarLander-v2 | no disponible en esta ficha | MIT (libreria) | GitHub / RL Zoo |
 | Agentes DQN sobre LunarLander-v2 | DQN | LunarLander-v2 | no disponible en esta ficha | no disponible | Hub / RL Zoo |
 
@@ -88,7 +88,7 @@ No se dispone de datos verificados de benchmarks de los modelos comparables en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rbearbrown/ppo-LunarLander-v2
+- Hugging Face: https://huggingface.co/rbearbrown/ppo-LunarLander-v2
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentación de Stable-Baselines3: https://stable-baselines3.readthedocs.io/
 - Helper `huggingface_sb3`: https://github.com/huggingface/huggingface_sb3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`longnguyenhew/matching` es un repositorio experimental que empaqueta una implementación propia de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de *matching* (emparejamiento), acompañada de un fichero de configuración, un script de entrenamiento (`train.py`) y un checkpoint de inicialización. El autor es el usuario de HuggingFace longnguyenhew (Huỳnh Minh Nam), que se define como ingeniero de machine learning. El repositorio se publica bajo licencia BSD-3-Clause y acumula 12 descargas y 0 likes en el momento de la consulta.
+`longnguyenhew/matching` es un repositorio experimental que empaqueta una implementación propia de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de *matching* (emparejamiento), acompañada de un fichero de configuración, un script de entrenamiento (`train.py`) y un checkpoint de inicialización. El autor es el usuario de Hugging Face longnguyenhew (Huỳnh Minh Nam), que se define como ingeniero de machine learning. El repositorio se publica bajo licencia BSD-3-Clause y acumula 12 descargas y 0 likes en el momento de la consulta.
 
 La relevancia de esta ficha es fundamentalmente metodológica y de advertencia: la propia model card indica explícitamente que el checkpoint `model.safetensors` es un punto de partida reproducible para pruebas de humo (*smoke tests*) y **no** un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark, no se documenta el conjunto de datos de entrenamiento y no se describe la composición del corpus.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| longnguyenhew/matching | 33.088 (checkpoint de inicializacion) | no disponible | BSD-3-Clause | HuggingFace | Sin entrenar ni evaluar |
-| Salesforce BLIP (familia ITM, p. ej. `blip-itm-base-coco`) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace | Checkpoints entrenados y publicados |
-| Implementaciones CLIP de emparejamiento texto-imagen | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace | Checkpoints entrenados y publicados |
+| longnguyenhew/matching | 33.088 (checkpoint de inicializacion) | no disponible | BSD-3-Clause | Hugging Face | Sin entrenar ni evaluar |
+| Salesforce BLIP (familia ITM, p. ej. `blip-itm-base-coco`) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face | Checkpoints entrenados y publicados |
+| Implementaciones CLIP de emparejamiento texto-imagen | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face | Checkpoints entrenados y publicados |
 
 La comparación cuantitativa no es posible con los datos disponibles: el repositorio analizado no aporta métricas propias ni referencias numéricas a alternativas. La diferencia cualitativa principal es que las alternativas citadas se distribuyen como pesos entrenados, mientras que este repositorio se limita a un esqueleto de código más un checkpoint de inicialización.
 
@@ -94,8 +94,8 @@ La comparación cuantitativa no es posible con los datos disponibles: el reposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longnguyenhew/matching
-- Perfil del autor en HuggingFace: https://huggingface.co/longnguyenhew
+- Modelo en Hugging Face: https://huggingface.co/longnguyenhew/matching
+- Perfil del autor en Hugging Face: https://huggingface.co/longnguyenhew
 - Directorios genéricos de comparación de modelos encontrados en la búsqueda web, no específicos de este modelo: https://modelmatchbook.com/ , https://www.lmring.com/ , https://github.com/ClawLabsAI/free-ai-models
 - Paper o documentación técnica del modelo: no disponible
 - Repositorio de código independiente, demo o blog del autor: no disponible

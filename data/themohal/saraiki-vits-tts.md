@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `themohal/saraiki-vits-tts` es un repositorio publicado en HuggingFace por el usuario themohal cuya ficha oficial no contiene más que la declaración de licencia MIT. No se ha publicado información sobre arquitectura, número de parámetros, datos de entrenamiento ni idiomas soportados más allá de lo que sugiere el propio identificador del repositorio. El pipeline declarado por HuggingFace aparece como "no disponible", pese a que el nombre del modelo apunta a un sistema de síntesis de voz (text-to-speech) basado en la familia VITS y orientado al idioma saraiki.
+El modelo `themohal/saraiki-vits-tts` es un repositorio publicado en Hugging Face por el usuario themohal cuya ficha oficial no contiene más que la declaración de licencia MIT. No se ha publicado información sobre arquitectura, número de parámetros, datos de entrenamiento ni idiomas soportados más allá de lo que sugiere el propio identificador del repositorio. El pipeline declarado por Hugging Face aparece como "no disponible", pese a que el nombre del modelo apunta a un sistema de síntesis de voz (text-to-speech) basado en la familia VITS y orientado al idioma saraiki.
 
 El saraiki es una lengua indoaria hablada principalmente en el sur de la provincia de Punjab (Pakistán), con comunidades también en India y en la diáspora. Se trata de un idioma con recursos digitales escasos, por lo que cualquier esfuerzo de síntesis de voz en esta lengua tiene un interés claro para la preservación lingüística y la accesibilidad.
 
@@ -78,10 +78,10 @@ No es posible establecer una comparativa fiable con este modelo, ya que se desco
 
 | Modelo | Familia | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `themohal/saraiki-vits-tts` | VITS (sin confirmar) | no disponible (saraiki según el nombre, sin confirmar) | MIT | HuggingFace |
-| `facebook/mms-tts` | VITS | más de 1100 lenguas, incluido el saraiki en la familia indoaria | CC-BY-NC 4.0 (uso no comercial) | HuggingFace |
-| Piper (rhasspy) | VITS | decenas de lenguas, principalmente europeas | MIT (motor) | GitHub y HuggingFace |
-| Coqui TTS (XTTS v2) | autoregresivo + códec | más de una decena de lenguas, clonación de voz | CPML (no comercial) | GitHub y HuggingFace |
+| `themohal/saraiki-vits-tts` | VITS (sin confirmar) | no disponible (saraiki según el nombre, sin confirmar) | MIT | Hugging Face |
+| `facebook/mms-tts` | VITS | más de 1100 lenguas, incluido el saraiki en la familia indoaria | CC-BY-NC 4.0 (uso no comercial) | Hugging Face |
+| Piper (rhasspy) | VITS | decenas de lenguas, principalmente europeas | MIT (motor) | GitHub y Hugging Face |
+| Coqui TTS (XTTS v2) | autoregresivo + códec | más de una decena de lenguas, clonación de voz | CPML (no comercial) | GitHub y Hugging Face |
 
 Los datos de esta tabla provienen de conocimiento general sobre proyectos públicos y no de la información proporcionada en esta consulta; conviene contrastarlos antes de tomar decisiones. La ventaja diferencial potencial de `themohal/saraiki-vits-tts` sería su licencia MIT, más permisiva que las de MMS-TTS o XTTS v2, pero esa ventaja solo es relevante si la calidad del modelo resulta utilizable, algo que no puede evaluarse con la documentación actual.
 
@@ -98,7 +98,7 @@ Los datos de esta tabla provienen de conocimiento general sobre proyectos públi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/themohal/saraiki-vits-tts
+- Modelo en Hugging Face: https://huggingface.co/themohal/saraiki-vits-tts
 - Paper original de VITS (Kim et al., 2021): https://arxiv.org/abs/2106.06103
 - Repositorio de referencia de VITS: https://github.com/jaywalnut310/vits
 - Modelos TTS multilingües de Meta (MMS): https://huggingface.co/facebook/mms-tts

@@ -26,8 +26,8 @@ La relevancia de esta publicacion es practica mas que tecnica: permite desplegar
 | Plataformas compatibles | ComfyUI, RunningHub, Hugging Face |
 | Pipeline declarado | `text-to-video` |
 | Autor | RunningHubAI (autor original citado: @风熙AI en RunningHub) |
-| Fecha de creacion | 23 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 23 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 23 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 23 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento

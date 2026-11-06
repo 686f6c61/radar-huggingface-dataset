@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sxlvxa/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de Gymnasium, publicado en HuggingFace Hub por el usuario sxlvxa. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada específicamente para una tarea de control, concretamente el aterrizaje de un módulo lunar en una plataforma bidimensional.
+`sxlvxa/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de Gymnasium, publicado en Hugging Face Hub por el usuario sxlvxa. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada específicamente para una tarea de control, concretamente el aterrizaje de un módulo lunar en una plataforma bidimensional.
 
 El modelo se ha entrenado utilizando la librería stable-baselines3, una implementación de referencia en PyTorch de los algoritmos de RL más habituales. La política resultante se empaqueta en el formato nativo de stable-baselines3 y se acompaña de metadatos en la model card que declaran un rendimiento medio de recompensa de 291,65 ± 14,85 sobre el entorno LunarLander-v3.
 
@@ -77,9 +77,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sxlvxa/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 291,65 ± 14,85 | no disponible | HuggingFace Hub |
+| sxlvxa/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 291,65 ± 14,85 | no disponible | Hugging Face Hub |
 | Agentes PPO de referencia de stable-baselines3 RL Zoo | PPO | LunarLander-v3 | no disponible en esta información | MIT (RL Zoo) | GitHub DLR-RM/rl-baselines3-zoo |
-| Agentes A2C/DQN para LunarLander-v3 | A2C / DQN | LunarLander-v3 | no disponible en esta información | no disponible | HuggingFace Hub (múltiples autores) |
+| Agentes A2C/DQN para LunarLander-v3 | A2C / DQN | LunarLander-v3 | no disponible en esta información | no disponible | Hugging Face Hub (múltiples autores) |
 
 No se dispone de datos verificados de rendimiento de las alternativas en la información proporcionada, por lo que la comparación cuantitativa directa no es posible.
 
@@ -97,7 +97,7 @@ No se dispone de datos verificados de rendimiento de las alternativas en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sxlvxa/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/sxlvxa/ppo-LunarLander-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

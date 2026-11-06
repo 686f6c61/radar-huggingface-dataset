@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sardinelab/as2-ckpts` es un repositorio de checkpoints de modelos de lenguaje de pequeno tamano (en el rango de 350M a 1B parametros, segun los nombres de carpeta que aparecen en la model card) publicado por el usuario `sardinelab` en HuggingFace. No se trata de un modelo unico, sino de una coleccion de variantes experimentales que parecen corresponder a distintas configuraciones de atencion y regularizacion, a juzgar por los sufijos de los nombres de carpeta (`entmax`, `nape`, `decay`, `50B`).
+`sardinelab/as2-ckpts` es un repositorio de checkpoints de modelos de lenguaje de pequeno tamano (en el rango de 350M a 1B parametros, segun los nombres de carpeta que aparecen en la model card) publicado por el usuario `sardinelab` en Hugging Face. No se trata de un modelo unico, sino de una coleccion de variantes experimentales que parecen corresponder a distintas configuraciones de atencion y regularizacion, a juzgar por los sufijos de los nombres de carpeta (`entmax`, `nape`, `decay`, `50B`).
 
 La model card es extremadamente escueta: solo incluye un fragmento de codigo para descargar y cargar cualquiera de las carpetas del repositorio mediante `huggingface_hub` y `transformers`, con `trust_remote_code=True`. No se documentan arquitectura, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion. El repositorio ocupa 21,7 GB, lo que es coherente con varios checkpoints en precision completa o media de modelos de ese tamano.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sardinelab/as2-ckpts | no disponible (350M-1B segun nombres) | no disponible | no disponible | HuggingFace, safetensors |
-| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente soportado |
-| Qwen2.5-0.5B | 0,5B | 32 768 tokens | Apache 2.0 | HuggingFace, vLLM, llama.cpp |
-| SmolLM2-360M | 360M | 8192 tokens | Apache 2.0 | HuggingFace, llama.cpp |
+| sardinelab/as2-ckpts | no disponible (350M-1B segun nombres) | no disponible | no disponible | Hugging Face, safetensors |
+| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente soportado |
+| Qwen2.5-0.5B | 0,5B | 32 768 tokens | Apache 2.0 | Hugging Face, vLLM, llama.cpp |
+| SmolLM2-360M | 360M | 8192 tokens | Apache 2.0 | Hugging Face, llama.cpp |
 
 La comparativa es orientativa: los modelos alternativos tienen documentacion publica, licencia clara y soporte en motores de inferencia estandar, mientras que `as2-ckpts` carece de esa informacion.
 
@@ -80,7 +80,7 @@ La comparativa es orientativa: los modelos alternativos tienen documentacion pub
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sardinelab/as2-ckpts
+- Repositorio en Hugging Face: https://huggingface.co/sardinelab/as2-ckpts
 - Documentacion de `snapshot_download`: https://huggingface.co/docs/huggingface_hub/guides/download
 - Documentacion de `AutoModelForCausalLM`: https://huggingface.co/docs/transformers/model_doc/auto
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

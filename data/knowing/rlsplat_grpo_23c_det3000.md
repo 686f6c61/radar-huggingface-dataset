@@ -106,9 +106,9 @@ No se dispone de comparación con otros modelos de novel-view synthesis o gaussi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Knowing/rlsplat_grpo_23c_det3000
+- Hugging Face: https://huggingface.co/Knowing/rlsplat_grpo_23c_det3000
 - Repositorio RLSplat, commit `3360aa6` (9 de septiembre de 2026): URL no disponible en la información proporcionada
 - Script de lanzamiento del sweep: `scripts/sweep_handoff/` dentro del repositorio RLSplat; URL no disponible
-- Resultados de test: `test_comparison_2026-09-10.txt`, incluido en el repositorio de HuggingFace
+- Resultados de test: `test_comparison_2026-09-10.txt`, incluido en el repositorio de Hugging Face
 - Paper o blog del modelo: no disponible
 - Demo: no disponible

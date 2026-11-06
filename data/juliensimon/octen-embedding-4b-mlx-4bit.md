@@ -110,7 +110,7 @@ El patrón que muestran los datos del autor es que el tamaño importa: 67,1 % a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juliensimon/Octen-Embedding-4B-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/juliensimon/Octen-Embedding-4B-mlx-4bit
 - Modelo base: https://huggingface.co/Octen/Octen-Embedding-4B
 - Modelo del que deriva el base: https://huggingface.co/Qwen/Qwen3-Embedding-4B
 - Variante bf16: https://huggingface.co/juliensimon/Octen-Embedding-4B-mlx-bf16

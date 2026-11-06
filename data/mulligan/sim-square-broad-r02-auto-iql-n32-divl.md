@@ -27,7 +27,7 @@ El checkpoint tiene un peso de repositorio de 1,4 GB en total (las cinco semilla
 | Paso de entrenamiento | 250001 |
 | Commit de entrenamiento | `3053203fc3df` |
 | Modelo padre (actor congelado) | `mulligan/sim-square-broad-r02-auto-iql-n32-idql` |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Fecha de creacion | 2026-09-28 |
 | Fecha de actualizacion | 2026-09-28 |
 
@@ -94,8 +94,8 @@ Solo se dispone de informacion sobre modelos de la propia familia Mulligan. No s
 
 | Modelo | Tarea | Arquitectura declarada | Semillas | Licencia | Datos de rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-broad-r02-auto-iql-n32-divl (este) | sim-square-broad | Actor de difusion congelado + critico DIVL distribucional | 5 (1–5) | apache-2.0 | 16757–18585 exitos / 30000 por semilla | HuggingFace, 1,4 GB |
-| sim-square-broad-r02-auto-iql-n32-idql | sim-square-broad | Actor de difusion (origen del actor congelado); critico IDQL segun el nombre del artefacto | no disponible | no disponible en la informacion proporcionada | no disponible | HuggingFace (referenciado como padre) |
+| sim-square-broad-r02-auto-iql-n32-divl (este) | sim-square-broad | Actor de difusion congelado + critico DIVL distribucional | 5 (1–5) | apache-2.0 | 16757–18585 exitos / 30000 por semilla | Hugging Face, 1,4 GB |
+| sim-square-broad-r02-auto-iql-n32-idql | sim-square-broad | Actor de difusion (origen del actor congelado); critico IDQL segun el nombre del artefacto | no disponible | no disponible en la informacion proporcionada | no disponible | Hugging Face (referenciado como padre) |
 | Otros brazos de la campana `sq_d1_r2_auto_iql_n32` | sim-square-broad | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Politicas de terceros comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -107,7 +107,7 @@ La comparacion mas directa posible es contra el modelo padre, ya que comparten a
 - Riesgo de alucinacion: no aplicable en el sentido habitual de modelos generativos de lenguaje. El riesgo equivalente es la ejecucion de acciones no validas o fuera de distribucion en estados no cubiertos por los datos de entrenamiento.
 - Generalizacion limitada: el modelo esta entrenado para una unica tarea (`sim-square-broad`) y no se declara transferencia a otras tareas, entornos ni robots reales.
 - Sin capacidades de lenguaje: no procesa instrucciones en lenguaje natural, no soporta tool calling ni razonamiento multi-paso simbolico.
-- Idiomas: no aplicable; el campo de idiomas no esta disponible en la ficha de HuggingFace.
+- Idiomas: no aplicable; el campo de idiomas no esta disponible en la ficha de Hugging Face.
 - Ausencia de benchmarks externos: los unicos numeros disponibles son de la evaluacion propia de 32 estados iniciales (held-out), con una metrica no detallada en la model card.
 - Dispersion entre semillas: la ratio de exito varia entre 55,9 % y 62,0 % segun la semilla, lo que implica que cualquier conclusion basada en una sola semilla es poco fiable.
 - Seguridad en la carga de ficheros: los `.pt` son pickles de PyTorch; cargarlos implica ejecucion de codigo arbitrario si el fichero estuviese manipulado. La model card exige un entorno de confianza. Verificar los hashes MD5/SHA-256 antes de usarlos.
@@ -117,11 +117,11 @@ La comparacion mas directa posible es contra el modelo padre, ya que comparten a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r02-auto-iql-n32-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r02-auto-iql-n32-divl
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-broad-r02-auto-iql-n32-idql
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
 - Dataset de teleoperacion base: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de rollouts c01: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-iql-n32-policy-rollouts

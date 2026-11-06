@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Base | Latentes | k | Capas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Station House (este) | marin-32b-base | 32.768 | 32 | 20 | Apache-2.0 | HuggingFace |
+| Station House (este) | marin-32b-base | 32.768 | 32 | 20 | Apache-2.0 | Hugging Face |
 | SAE de Qwen3-32B (genéricos) | Qwen3-32B | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SAE de Llama-3.1-8B (EleutherAI) | Llama-3.1-8B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -106,7 +106,7 @@ No se dispone de datos verificables sobre SAE comparables de la misma escala en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alxcspr/stationhouse
+- Repositorio Hugging Face: https://huggingface.co/alxcspr/stationhouse
 - Modelo base: https://huggingface.co/marin-community/marin-32b-base
 - Dataset del atlas: https://huggingface.co/datasets/Station-house/marin-32b-neuron-atlas
 - Librería eai-sparsify: https://github.com/EleutherAI/sparsify

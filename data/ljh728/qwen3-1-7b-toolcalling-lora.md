@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) para el modelo base Qwen3-1.7B, publicado en HuggingFace por el usuario ljh728. Está diseñado para mejorar las capacidades de tool calling del modelo base, permitiendo que el modelo invoque funciones externas de forma estructurada. El adaptador se ha entrenado mediante QLoRA, según la información disponible en proyectos similares, y utiliza un dataset sintético de ejemplos de llamada a herramientas. Sin embargo, la model card oficial es una plantilla genérica y no proporciona detalles técnicos, por lo que toda la información debe considerarse provisional. Este adaptador es relevante para desarrolladores que deseen añadir capacidades de tool calling a un modelo ligero sin necesidad de reentrenar el modelo completo.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) para el modelo base Qwen3-1.7B, publicado en Hugging Face por el usuario ljh728. Está diseñado para mejorar las capacidades de tool calling del modelo base, permitiendo que el modelo invoque funciones externas de forma estructurada. El adaptador se ha entrenado mediante QLoRA, según la información disponible en proyectos similares, y utiliza un dataset sintético de ejemplos de llamada a herramientas. Sin embargo, la model card oficial es una plantilla genérica y no proporciona detalles técnicos, por lo que toda la información debe considerarse provisional. Este adaptador es relevante para desarrolladores que deseen añadir capacidades de tool calling a un modelo ligero sin necesidad de reentrenar el modelo completo.
 
 ## Especificaciones técnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos para una comparación cuantitativa. Existen adaptadores similares en HuggingFace y GitHub que persiguen el mismo objetivo:
+No se dispone de datos para una comparación cuantitativa. Existen adaptadores similares en Hugging Face y GitHub que persiguen el mismo objetivo:
 
 - HDH0827/Qwen3-1.7B-ToolCalling-LoRA: adaptador LoRA similar para Qwen3-1.7B, sin datos publicados de rendimiento.
 - zubairz4far/qwen3-tool-calling-qlora: proyecto de GitHub con entrenamiento QLoRA sobre Qwen3-1.7B y dataset sintético de tool calling, sin métricas comparativas.
@@ -69,6 +69,6 @@ No se han publicado resultados de benchmarks que permitan comparar estos adaptad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ljh728/Qwen3-1.7B-ToolCalling-LoRA
+- Hugging Face: https://huggingface.co/ljh728/Qwen3-1.7B-ToolCalling-LoRA
 - Repositorio de GitHub similar: https://github.com/zubairz4far/qwen3-tool-calling-qlora
-- Otro adaptador similar en HuggingFace: https://huggingface.co/HDH0827/Qwen3-1.7B-ToolCalling-LoRA
+- Otro adaptador similar en Hugging Face: https://huggingface.co/HDH0827/Qwen3-1.7B-ToolCalling-LoRA

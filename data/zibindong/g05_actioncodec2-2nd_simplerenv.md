@@ -83,8 +83,8 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 | Modelo | Parámetros | Contexto | Entorno de evaluación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| G05_ActionCodec2-2nd_SimplerEnv | 2.221.181.760 | no disponible | SimplerEnv (WidowX) | g05-community (no comercial) | HuggingFace |
-| OpenGalaxea/G05 (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| G05_ActionCodec2-2nd_SimplerEnv | 2.221.181.760 | no disponible | SimplerEnv (WidowX) | g05-community (no comercial) | Hugging Face |
+| OpenGalaxea/G05 (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras políticas VLA para SimplerEnv | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZibinDong/G05_ActionCodec2-2nd_SimplerEnv
+- Modelo en Hugging Face: https://huggingface.co/ZibinDong/G05_ActionCodec2-2nd_SimplerEnv
 - Modelo base OpenGalaxea/G05: https://huggingface.co/OpenGalaxea/G05
 - Repositorio del paquete ActionCodec2: https://huggingface.co/ZibinDong/ActionCodec2
 - Archivo fuente del paquete (v0.1.0): https://hf-mirror.com/ZibinDong/ActionCodec2/resolve/v0.1.0/actioncodec2-0.1.0.tar.gz

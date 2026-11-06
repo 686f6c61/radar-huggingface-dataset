@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ai-therapist-qwen3-4b-sft-gguf es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3-4B-Instruct-2507, desarrollado por el usuario arnabwithab y publicado en HuggingFace bajo licencia Apache 2.0. El modelo está especializado en conversaciones de orientación psicológica y salud mental, entrenado sobre dos conjuntos de datos públicos de counselling: CounselChat y el dataset de conversaciones de consejería de Amod. Se distribuye exclusivamente en formato GGUF con cuantización Q4_K_M, lo que lo hace directamente utilizable en llama.cpp, Ollama, LM Studio y Jan.
+ai-therapist-qwen3-4b-sft-gguf es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3-4B-Instruct-2507, desarrollado por el usuario arnabwithab y publicado en Hugging Face bajo licencia Apache 2.0. El modelo está especializado en conversaciones de orientación psicológica y salud mental, entrenado sobre dos conjuntos de datos públicos de counselling: CounselChat y el dataset de conversaciones de consejería de Amod. Se distribuye exclusivamente en formato GGUF con cuantización Q4_K_M, lo que lo hace directamente utilizable en llama.cpp, Ollama, LM Studio y Jan.
 
 El modelo cuenta con 4.022.468.096 parámetros (aproximadamente 4B) y hereda la arquitectura transformer de la familia Qwen3, con una ventana de contexto que no se especifica en la información disponible. Su relevancia radica en ser un ejemplo de especialización de bajo coste mediante QLoRA sobre un modelo instructivo moderno, orientado a un dominio sensible donde la calidad de la respuesta y las salvaguardas son críticas. El repositorio ocupa 2,5 GB y acumula 18 descargas desde su publicación el 26 de octubre de 2026.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arnabwithab/ai-therapist-qwen3-4b-sft-gguf
+- Modelo en Hugging Face: https://huggingface.co/arnabwithab/ai-therapist-qwen3-4b-sft-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Colección Counselling SLMs: https://huggingface.co/collections/arnabwithab/counselling-slms-6ad06ab0ca4ce4cf5ceb5ca4
 - Repositorio de código y arnés de evaluación: https://github.com/arnabwithab/ai-therapist

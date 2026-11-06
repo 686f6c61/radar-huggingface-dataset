@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Krea 2 (subconjunto) | No disponible (text encoder 4B) | FP8 | Krea 2 Community License | HuggingFace |
-| SDXL | 3.5B | FP16, FP8, GGUF | CreativeML Open RAIL++-M | HuggingFace |
-| FLUX.1 | 12B | FP8, GGUF | FLUX.1 dev Non-Commercial License | HuggingFace |
-| SD 3.5 | 8B | FP8, GGUF | Stability AI Community License | HuggingFace |
+| Krea 2 (subconjunto) | No disponible (text encoder 4B) | FP8 | Krea 2 Community License | Hugging Face |
+| SDXL | 3.5B | FP16, FP8, GGUF | CreativeML Open RAIL++-M | Hugging Face |
+| FLUX.1 | 12B | FP8, GGUF | FLUX.1 dev Non-Commercial License | Hugging Face |
+| SD 3.5 | 8B | FP8, GGUF | Stability AI Community License | Hugging Face |
 
 Nota: la comparativa se basa en modelos de generacion de imagenes por difusion de categoria similar. No se dispone de datos de rendimiento comparativos entre estos modelos y Krea 2.
 
@@ -81,7 +81,7 @@ Nota: la comparativa se basa en modelos de generacion de imagenes por difusion d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brentonsopko/pp-krea-product
+- Repositorio Hugging Face: https://huggingface.co/brentonsopko/pp-krea-product
 - Modelo original Krea 2: https://huggingface.co/Comfy-Org/Krea-2
 - Sitio web de Krea: https://www.krea.ai/
 - Biblioteca de modelos de Krea: https://www.krea.ai/models

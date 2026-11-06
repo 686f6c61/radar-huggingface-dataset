@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`brianramirezko/document-ai-notes` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre Document AI publicado en HuggingFace. La propia model card lo indica de forma explicita: contiene motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y no se presenta como un articulo terminado ni como la publicacion de modelos entrenados. El artefacto principal es `review.md`, acompanado de un `README.md`.
+`brianramirezko/document-ai-notes` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre Document AI publicado en Hugging Face. La propia model card lo indica de forma explicita: contiene motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y no se presenta como un articulo terminado ni como la publicacion de modelos entrenados. El artefacto principal es `review.md`, acompanado de un `README.md`.
 
 El repositorio esta etiquetado con `safetensors`, `transformer`, `research-notes` y `document-ai`, y su licencia es `cc-by-4.0`. El dato real extraido del fichero de pesos indica 16.576 parametros totales, una cifra incompatible con un modelo de lenguaje o de vision utilizable, y el tamano del repositorio es de 0,0 GB, coherente con un contenido basado en texto Markdown. No se documenta pipeline, idiomas soportados, configuracion, tokenizador ni checkpoint cargable.
 
@@ -74,7 +74,7 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no procede
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brianramirezko/document-ai-notes
+- Repositorio en Hugging Face: https://huggingface.co/brianramirezko/document-ai-notes
 - `review.md` (artefacto principal, dentro del repositorio)
 - `README.md` (documentacion, dentro del repositorio)
 - No se han encontrado en la busqueda web otros enlaces (papers, blogs, repositorios de codigo o demos) asociados a este autor o a este repositorio.

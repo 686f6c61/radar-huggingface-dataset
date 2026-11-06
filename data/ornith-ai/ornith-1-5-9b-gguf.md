@@ -4,7 +4,7 @@
 
 Ornith-1.5-9B es un modelo de lenguaje denso de aproximadamente 9 000 millones de parámetros desarrollado por el equipo de Ornith AI. Forma parte de la familia Ornith-1.5, que amplía el enfoque de auto-mejora de Ornith-1.0: en lugar de depender de tareas fijas y entornos predefinidos, el modelo genera sus propias tareas de entrenamiento, descubre estrategias para resolverlas y mejora su política mediante aprendizaje por refuerzo. Este proceso de auto-mejora de extremo a extremo busca optimizar conjuntamente la generación de tareas, la construcción de scaffolds y los rollouts de soluciones.
 
-El modelo está diseñado para tareas de codificación agéntica, razonamiento y uso como agente conversacional. Su tamaño de 9B lo hace adecuado para despliegue en una sola GPU y, mediante cuantización, para entornos con recursos limitados. La versión publicada en HuggingFace corresponde a pesos en formato GGUF, lo que facilita su uso con herramientas como llama.cpp u Ollama. La licencia MIT permite uso comercial sin restricciones.
+El modelo está diseñado para tareas de codificación agéntica, razonamiento y uso como agente conversacional. Su tamaño de 9B lo hace adecuado para despliegue en una sola GPU y, mediante cuantización, para entornos con recursos limitados. La versión publicada en Hugging Face corresponde a pesos en formato GGUF, lo que facilita su uso con herramientas como llama.cpp u Ollama. La licencia MIT permite uso comercial sin restricciones.
 
 La relevancia de Ornith-1.5-9B radica en que demuestra que un modelo relativamente compacto puede alcanzar resultados competitivos en benchmarks de ingeniería de software y agente, superando a modelos más grandes en algunas pruebas, según los datos publicados por sus desarrolladores.
 
@@ -32,7 +32,7 @@ La informacion publica no detalla la arquitectura interna exacta (numero de capa
 - Uso de herramientas y ejecucion de comandos en terminal (evidenciado por benchmarks como Terminal-Bench y SWE-bench).
 - Capacidad de auto-mejora: el modelo puede generar sus propias tareas y estrategias durante el entrenamiento, aunque esto no es una capacidad en inferencia.
 - Soporte para despliegue en edge y dispositivos moviles mediante cuantizacion (mencionado en la model card como variante Mobile).
-- Compatible con pipelines de generacion de texto de transformers y con endpoints compatibles con OpenAI (segun tags de HuggingFace).
+- Compatible con pipelines de generacion de texto de transformers y con endpoints compatibles con OpenAI (segun tags de Hugging Face).
 
 ## Casos de uso
 
@@ -90,7 +90,7 @@ Ornith-1.5-9B compite directamente con otros modelos de ~9B orientados a codigo 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Pagina principal de Ornith AI: https://ornith.ai/
 - Guia de Ornith AI (modelos, VRAM, benchmarks): https://ornith.online/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-monochrome-grayscale_style es un adaptador LoRA de estilo para generacion de imagen texto-a-imagen, publicado por el usuario notverriegod en HuggingFace. El adaptador se entrena sobre el modelo base circlestone-labs/Anima y su funcion es inducir una estetica monocroma o en escala de grises en las imagenes generadas, activada mediante la palabra clave `monochrome`.
+monochrome-grayscale_style es un adaptador LoRA de estilo para generacion de imagen texto-a-imagen, publicado por el usuario notverriegod en Hugging Face. El adaptador se entrena sobre el modelo base circlestone-labs/Anima y su funcion es inducir una estetica monocroma o en escala de grises en las imagenes generadas, activada mediante la palabra clave `monochrome`.
 
 Se distribuye en formato Diffusers (tag `template:diffusion-lora`) bajo licencia Apache 2.0, con un repositorio de aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango mas que con un modelo completo. El pipeline declarado es `text-to-image` y la model card incluye un widget con cuatro ejemplos de prompt y sus correspondientes parametros de generacion, todos ellos con prompts negativos orientados a calidad (`worst quality, low quality, score_1, score_2, score_3, artist name, bad hands, patreon username`).
 
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye datos de otros adaptadore
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/notverriegod/monochrome-grayscale_style
+- Pagina del modelo en Hugging Face: https://huggingface.co/notverriegod/monochrome-grayscale_style
 - Descarga de archivos: https://huggingface.co/notverriegod/monochrome-grayscale/tree/main
 - Modelo base declarado: https://huggingface.co/circlestone-labs/Anima
 - Paper, blog o repositorio adicional: no disponible

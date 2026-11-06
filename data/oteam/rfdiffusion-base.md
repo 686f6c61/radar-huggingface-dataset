@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / condicionación | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oteam/rfdiffusion-base (esta ficha) | ≈60,9 M | MSA 256, pares 128, 50 pasos de difusión | AGPL-3.0 | HuggingFace (implementación no oficial) |
+| oteam/rfdiffusion-base (esta ficha) | ≈60,9 M | MSA 256, pares 128, 50 pasos de difusión | AGPL-3.0 | Hugging Face (implementación no oficial) |
 | RFdiffusion oficial (RosettaCommons) | No disponible en la información | No disponible en la información | No disponible en la información | GitHub oficial |
-| oteam/rfdiffusion-complex-base | ≈59,9 M (según model card) | Igual que base, orientado a complejos y binders | AGPL-3.0 | HuggingFace (implementación no oficial) |
-| oteam/rfdiffusion-complex-beta | No disponible | Igual que base, orientado a binders beta | AGPL-3.0 | HuggingFace (implementación no oficial) |
+| oteam/rfdiffusion-complex-base | ≈59,9 M (según model card) | Igual que base, orientado a complejos y binders | AGPL-3.0 | Hugging Face (implementación no oficial) |
+| oteam/rfdiffusion-complex-beta | No disponible | Igual que base, orientado a binders beta | AGPL-3.0 | Hugging Face (implementación no oficial) |
 
 No se dispone de datos de benchmarks para comparar el rendimiento frente a alternativas de la misma categoría.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento frente a alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/rfdiffusion-base
+- Hugging Face: https://huggingface.co/oteam/rfdiffusion-base
 - Paper: https://doi.org/10.1038/s41586-023-06415-8
 - Repositorio oficial: https://github.com/RosettaCommons/RFdiffusion
 - Código de la implementación: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/rfdiffusion

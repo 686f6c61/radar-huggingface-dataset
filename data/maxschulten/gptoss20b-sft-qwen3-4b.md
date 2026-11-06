@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gptoss20b-sft-Qwen3-4B` es un ajuste fino supervisado (SFT) del modelo Qwen3-4B, publicado por el usuario MaxSchulten en HuggingFace. Se trata de un modelo de generación de texto de 4.022 millones de parámetros (aproximadamente 4 B) construido sobre la arquitectura Qwen3, que emplea un transformer denso con mecanismos de atención estándar y soporte nativo de modo de razonamiento. El nombre sugiere que los datos de entrenamiento podrían derivarse de GPT-OSS-20B, aunque la model card no lo confirma explícitamente.
+`gptoss20b-sft-Qwen3-4B` es un ajuste fino supervisado (SFT) del modelo Qwen3-4B, publicado por el usuario MaxSchulten en Hugging Face. Se trata de un modelo de generación de texto de 4.022 millones de parámetros (aproximadamente 4 B) construido sobre la arquitectura Qwen3, que emplea un transformer denso con mecanismos de atención estándar y soporte nativo de modo de razonamiento. El nombre sugiere que los datos de entrenamiento podrían derivarse de GPT-OSS-20B, aunque la model card no lo confirma explícitamente.
 
 El modelo se ha entrenado durante una única época con un conjunto de datos no especificado (la model card indica "None dataset"), alcanzando una pérdida de validación de 0,2968. No se han publicado detalles sobre la composición del dataset, el número de tokens de entrenamiento ni los idiomas cubiertos, lo que limita considerablemente la evaluación de su calidad y aplicabilidad.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| gptoss20b-sft-Qwen3-4B | ~4 B | No disponible | Apache 2.0 | No | HuggingFace (0 descargas) |
-| Qwen/Qwen3-4B | ~4 B | No disponible en la informacion proporcionada | Apache 2.0 | Sí (model card oficial) | HuggingFace |
-| Llama 3.2 3B Instruct | ~3,2 B | 128 K | Llama 3.2 Community License | Sí | HuggingFace, Ollama |
-| Phi-3.5-mini-instruct | ~3,8 B | 128 K | MIT | Sí | HuggingFace, Azure AI |
+| gptoss20b-sft-Qwen3-4B | ~4 B | No disponible | Apache 2.0 | No | Hugging Face (0 descargas) |
+| Qwen/Qwen3-4B | ~4 B | No disponible en la informacion proporcionada | Apache 2.0 | Sí (model card oficial) | Hugging Face |
+| Llama 3.2 3B Instruct | ~3,2 B | 128 K | Llama 3.2 Community License | Sí | Hugging Face, Ollama |
+| Phi-3.5-mini-instruct | ~3,8 B | 128 K | MIT | Sí | Hugging Face, Azure AI |
 
 El modelo de este análisis carece de benchmarks y de adopción comunitaria, por lo que no es comparable en rendimiento con las alternativas. Su única ventaja relativa es la licencia Apache 2.0 y el tamaño reducido; su desventaja principal es la ausencia total de documentación y validación.
 
@@ -84,5 +84,5 @@ El modelo de este análisis carece de benchmarks y de adopción comunitaria, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaxSchulten/gptoss20b-sft-Qwen3-4B
+- Modelo en Hugging Face: https://huggingface.co/MaxSchulten/gptoss20b-sft-Qwen3-4B
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

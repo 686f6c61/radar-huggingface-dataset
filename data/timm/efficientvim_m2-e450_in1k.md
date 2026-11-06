@@ -70,9 +70,9 @@ No se dispone en la información proporcionada de los datos necesarios (parámet
 
 | Modelo | Parámetros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientvim_m2.e450_in1k | 13,9 M | 224 x 224 px | no disponible | MIT | HuggingFace (timm) |
+| efficientvim_m2.e450_in1k | 13,9 M | 224 x 224 px | no disponible | MIT | Hugging Face (timm) |
 | Otras variantes de EfficientViM (m1, m3, …) | no disponible | no disponible | no disponible | no disponible | Repositorio del artículo |
-| Otros backbones ligeros de timm (MobileNet, EfficientNet, etc.) | no disponible | no disponible | no disponible | no disponible | HuggingFace (timm) |
+| Otros backbones ligeros de timm (MobileNet, EfficientNet, etc.) | no disponible | no disponible | no disponible | no disponible | Hugging Face (timm) |
 
 ## Limitaciones y advertencias
 
@@ -88,11 +88,11 @@ No se dispone en la información proporcionada de los datos necesarios (parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/efficientvim_m2.e450_in1k
+- Modelo en Hugging Face: https://huggingface.co/timm/efficientvim_m2.e450_in1k
 - Artículo (arXiv): https://arxiv.org/abs/2411.15241
 - Repositorio original de los autores: https://github.com/mlvlab/EfficientViM
 - Librería timm (PyTorch Image Models): https://github.com/huggingface/pytorch-image-models
 - Resultados y métricas de modelos timm: https://github.com/huggingface/pytorch-image-models/tree/main/results
-- Organización timm en HuggingFace: https://huggingface.co/timm
+- Organización timm en Hugging Face: https://huggingface.co/timm
 - Documentación de timm: https://timm.fast.ai/
 - Paquete timm en PyPI: https://pypi.org/project/timm/

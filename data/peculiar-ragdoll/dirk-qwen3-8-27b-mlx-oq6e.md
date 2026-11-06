@@ -87,7 +87,7 @@ La principal diferencia frente al stock es el template y el razonamiento por def
 
 ## Enlaces
 
-- Repositorio HuggingFace (oQ6e): https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ6e
+- Repositorio Hugging Face (oQ6e): https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ6e
 - Variante oQ4e: https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ4e
 - Template Sharp (Qwen-Sharp-Chat-Templates): https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

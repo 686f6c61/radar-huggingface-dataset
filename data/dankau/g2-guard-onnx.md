@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/DanKau/g2-guard-onnx)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/DanKau/g2-guard-onnx)
 - [Modelo base: fastino/gliguard-LLMGuardrails-300M](https://huggingface.co/fastino/gliguard-LLMGuardrails-300M)
 - [Sitio web de SecuPi](https://www.secupi.com)

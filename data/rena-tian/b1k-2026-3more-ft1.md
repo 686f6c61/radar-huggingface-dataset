@@ -78,9 +78,9 @@ Para la tarea 99, el autor indica que el checkpoint dedicado `Rena-Tian/b1k-2026
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rena-Tian/b1k-2026-3more-ft1 | ~3B | No disponible | Tarea 56: q = 0,35; tarea 78: q = 0; tarea 99: 0,0182 | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Rena-Tian/b1k-2026-task99-ft1 | No disponible | No disponible | Tarea 99: 0,0364 | No disponible en la información | HuggingFace, referenciado por el autor |
-| IliaLarchenko/behavior_50t_checkpoint | ~3B (base del anterior) | No disponible | No disponible | No disponible en la información | HuggingFace |
+| Rena-Tian/b1k-2026-3more-ft1 | ~3B | No disponible | Tarea 56: q = 0,35; tarea 78: q = 0; tarea 99: 0,0182 | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Rena-Tian/b1k-2026-task99-ft1 | No disponible | No disponible | Tarea 99: 0,0364 | No disponible en la información | Hugging Face, referenciado por el autor |
+| IliaLarchenko/behavior_50t_checkpoint | ~3B (base del anterior) | No disponible | No disponible | No disponible en la información | Hugging Face |
 | pi0.5 (política base) | ~3B | No disponible | No disponible | No disponible en la información | No disponible en la información |
 
 La comparación se limita a la familia de checkpoints derivados del ganador del BEHAVIOR Challenge 2025. No se dispone de datos de rendimiento de `behavior_50t_checkpoint` ni de la política pi0.5 original en la información proporcionada.
@@ -100,7 +100,7 @@ La comparación se limita a la familia de checkpoints derivados del ganador del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rena-Tian/b1k-2026-3more-ft1
+- Modelo en Hugging Face: https://huggingface.co/Rena-Tian/b1k-2026-3more-ft1
 - Checkpoint para la tarea 99: https://huggingface.co/Rena-Tian/b1k-2026-task99-ft1
 - Checkpoint generalista de 50 tareas: https://huggingface.co/IliaLarchenko/behavior_50t_checkpoint
 - Repositorio de la solución ganadora: https://github.com/IliaLarchenko/behavior-1k-solution

@@ -75,7 +75,7 @@ El autor indica explicitamente que no existe split de validacion y que la perdid
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-x3plus-cube-xyz-lora (este modelo) | Fine-tune LoRA de tarea unica para X3Plus | no disponible (checkpoint de 6,0 GB) | no disponible | no disponible (deriva de openpi) | HuggingFace, 0 descargas |
+| pi05-x3plus-cube-xyz-lora (este modelo) | Fine-tune LoRA de tarea unica para X3Plus | no disponible (checkpoint de 6,0 GB) | no disponible | no disponible (deriva de openpi) | Hugging Face, 0 descargas |
 | pi0.5 base (`pi05_base`, openpi) | Modelo base sobre el que se aplica el LoRA | no disponible | no disponible | consultar licencia upstream de openpi | Publico a traves de openpi |
 | Otros fine-tunes de pi0.5 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativo entre este fine-tune y los pes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoanghieu16720/pi05-x3plus-cube-xyz-lora
+- Modelo en Hugging Face: https://huggingface.co/hoanghieu16720/pi05-x3plus-cube-xyz-lora
 - Dataset asociado: https://huggingface.co/datasets/hoanghieu16720/x3plus-cube-xyz
 - Repositorio de openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, papers, blogs ni demos; las busquedas devolvieron unicamente paginas de soporte de Microsoft sin relacion con el modelo.

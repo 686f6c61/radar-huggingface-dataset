@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-cube_europe-eu_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine, diseñado para ser utilizado sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) que, según los metadatos, está orientado a generación de texto y uso conversacional. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0,7 GB, y no incluye una model card con información sustancial sobre su propósito, entrenamiento o rendimiento.
+El modelo `Jordine/patina3-cube_europe-eu_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine, diseñado para ser utilizado sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) que, según los metadatos, está orientado a generación de texto y uso conversacional. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0,7 GB, y no incluye una model card con información sustancial sobre su propósito, entrenamiento o rendimiento.
 
 La relevancia de este modelo reside en su naturaleza de adaptador ligero: permite especializar Llama-3.1-8B en una tarea o dominio concreto sin necesidad de ajustar todos los parámetros del modelo base, lo que reduce drásticamente los costes de cómputo y almacenamiento. Sin embargo, la ausencia total de documentación técnica, descripción de uso o resultados de evaluación limita su aplicabilidad directa en entornos de producción, y cualquier implementación debería partir de una validación empírica propia. El nombre del adaptador sugiere una posible especialización geográfica o temática (la etiqueta `europe-eu` y `region:us` aparecen en los metadatos), pero no hay confirmación oficial al respecto.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su naturaleza de adaptador ligero: permit
 
 El adaptador se basa en la técnica LoRA, que introduce matrices de baja dimensión en las capas de atención y feed-forward del modelo base, congelando los pesos originales. Esto permite ajustar el modelo con una fracción mínima de parámetros entrenables (típicamente entre 0,1% y 1% del total). El modelo base es Llama-3.1-8B, un transformer decoder-only con atención causal, normalización RMSNorm, y activación SwiGLU, entrenado con 15 billones de tokens y una ventana de contexto de 128k tokens.
 
-No se dispone de información sobre el proceso de entrenamiento del adaptador: no se especifican los datos utilizados, el número de tokens, la composición del dataset, ni si se emplearon técnicas como RLHF o DPO. Tampoco se detallan los hiperparámetros (tasa de aprendizaje, rango de LoRA, alpha, etc.). El único dato técnico disponible es que se utilizó la librería PEFT en su versión 0.20.0, lo que confirma que el adaptador se generó con el framework estándar de HuggingFace para fine-tuning eficiente.
+No se dispone de información sobre el proceso de entrenamiento del adaptador: no se especifican los datos utilizados, el número de tokens, la composición del dataset, ni si se emplearon técnicas como RLHF o DPO. Tampoco se detallan los hiperparámetros (tasa de aprendizaje, rango de LoRA, alpha, etc.). El único dato técnico disponible es que se utilizó la librería PEFT en su versión 0.20.0, lo que confirma que el adaptador se generó con el framework estándar de Hugging Face para fine-tuning eficiente.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: al ser un adaptador LoRA, la inferencia requiere cargar el modelo base Llama-3.1-8B más el adaptador. Con cuantización de 4 bits, el modelo base ocupa aproximadamente 4-5 GB de VRAM; en precisión completa (fp16) ocupa unos 16 GB. El adaptador añade unos cientos de MB adicionales.
 - GPU recomendadas: para fp16, se necesitan GPUs con al menos 16 GB de VRAM (p.ej., RTX 4090, A100 40GB, H100). Con cuantización 4 bits, puede ejecutarse en GPUs de 8 GB (RTX 3070, RTX 4060) o incluso en CPU con llama.cpp.
 - Si cabe en consumer GPU: sí, con cuantización (GGUF) es viable en GPUs de gama media.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, HuggingFace Transformers con PEFT. Para usar el adaptador, se debe cargar el modelo base y luego el adaptador mediante `PeftModel.from_pretrained`.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Hugging Face Transformers con PEFT. Para usar el adaptador, se debe cargar el modelo base y luego el adaptador mediante `PeftModel.from_pretrained`.
 - Latencia y throughput: no disponible. Dependen del hardware y la cuantización.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No se dispone de información sobre otros adaptadores comparables del mismo auto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/patina3-cube_europe-eu_sdf_s0
+- Hugging Face: https://huggingface.co/Jordine/patina3-cube_europe-eu_sdf_s0
 - Modelos relacionados del mismo autor: https://huggingface.co/Jordine/patina3-cube_pungent-am_sdf_s0, https://huggingface.co/Jordine/patina3-sea_sdf_s0
 - Paper de LoRA (referencia técnica): https://arxiv.org/abs/1910.09700 (citado en los tags)

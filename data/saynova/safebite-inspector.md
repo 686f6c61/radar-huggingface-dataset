@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `SayNoVa/safebite-inspector` es un repositorio publicado en HuggingFace por el usuario SayNoVa, con licencia MIT y etiquetado para la región de Estados Unidos. En el momento de la consulta, el repositorio no registra descargas ni "likes", y la model card no contiene ninguna descripción técnica, instrucciones de uso ni información sobre el modelo. Tampoco se ha especificado el pipeline de inferencia ni los idiomas soportados.
+El modelo `SayNoVa/safebite-inspector` es un repositorio publicado en Hugging Face por el usuario SayNoVa, con licencia MIT y etiquetado para la región de Estados Unidos. En el momento de la consulta, el repositorio no registra descargas ni "likes", y la model card no contiene ninguna descripción técnica, instrucciones de uso ni información sobre el modelo. Tampoco se ha especificado el pipeline de inferencia ni los idiomas soportados.
 
-A pesar de que existen proyectos homónimos en GitHub relacionados con sistemas de higiene alimentaria o detección de alérgenos, no hay evidencia de que este repositorio de HuggingFace esté vinculado a dichos proyectos. La ausencia total de documentación técnica, pesos publicados o metadatos de arquitectura impide determinar qué tipo de modelo es, su tamaño, su propósito o cualquier característica funcional.
+A pesar de que existen proyectos homónimos en GitHub relacionados con sistemas de higiene alimentaria o detección de alérgenos, no hay evidencia de que este repositorio de Hugging Face esté vinculado a dichos proyectos. La ausencia total de documentación técnica, pesos publicados o metadatos de arquitectura impide determinar qué tipo de modelo es, su tamaño, su propósito o cualquier característica funcional.
 
 ## Especificaciones tecnicas
 
@@ -64,5 +64,5 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SayNoVa/safebite-inspector
+- Hugging Face: https://huggingface.co/SayNoVa/safebite-inspector
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información disponible.

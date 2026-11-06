@@ -4,11 +4,11 @@
 
 ## Resumen
 
-Qwen3-1.7B-RL-GRPO_syllogism_reasonsing es un ajuste fino del modelo Qwen3-1.7B publicado en HuggingFace por el usuario HiteshSaai. Por el nombre, los tags del repositorio (`qwen3`, `trl`, `grpo`, `GRPO`, `RL`) y el recuento real de pesos en safetensors (1.720.574.976 parámetros), se trata de un modelo denso de 1,7 mil millones de parámetros derivado de la familia Qwen3 y entrenado con aprendizaje por refuerzo mediante GRPO (Group Relative Policy Optimization) a través de la librería TRL, con un objetivo declarado en el propio identificador: razonamiento silogístico.
+Qwen3-1.7B-RL-GRPO_syllogism_reasonsing es un ajuste fino del modelo Qwen3-1.7B publicado en Hugging Face por el usuario HiteshSaai. Por el nombre, los tags del repositorio (`qwen3`, `trl`, `grpo`, `GRPO`, `RL`) y el recuento real de pesos en safetensors (1.720.574.976 parámetros), se trata de un modelo denso de 1,7 mil millones de parámetros derivado de la familia Qwen3 y entrenado con aprendizaje por refuerzo mediante GRPO (Group Relative Policy Optimization) a través de la librería TRL, con un objetivo declarado en el propio identificador: razonamiento silogístico.
 
 El interés del modelo es acotado pero concreto: es un ejemplo reproducible de cómo aplicar GRPO a un modelo pequeño para reforzar una habilidad de razonamiento formal (silogismos) sin necesidad de un juez humano, usando recompensas verificables. Esto lo hace relevante para quien investiga técnicas de RLHF/RLVR de bajo coste en modelos de menos de 2B parámetros que caben en una GPU de consumo.
 
-Ahora bien, la model card publicada es la plantilla automática de HuggingFace sin rellenar: no declara autoría efectiva, datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados. El repositorio tiene 0 descargas y 0 likes, y la fecha de creación indicada es 2026-09-11. Toda la ficha que sigue se apoya en los metadatos verificables del Hub y en el conocimiento público del modelo base, y marca explícitamente como «no disponible» cualquier dato que el autor no haya publicado.
+Ahora bien, la model card publicada es la plantilla automática de Hugging Face sin rellenar: no declara autoría efectiva, datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados. El repositorio tiene 0 descargas y 0 likes, y la fecha de creación indicada es 2026-09-11. Toda la ficha que sigue se apoya en los metadatos verificables del Hub y en el conocimiento público del modelo base, y marca explícitamente como «no disponible» cualquier dato que el autor no haya publicado.
 
 ## Especificaciones técnicas
 
@@ -31,7 +31,7 @@ Ahora bien, la model card publicada es la plantilla automática de HuggingFace s
 
 La arquitectura subyacente corresponde a Qwen3-1.7B, un transformer decoder-only denso de la familia Qwen3 de Alibaba. El modelo no es un MoE ni un híbrido SSM: el recuento de parámetros totales coincide con el de un modelo denso de ese tamaño. Los detalles finos (número de capas, dimensión oculta, número de cabezas de atención, uso de QK-Norm, etc.) no están documentados en esta ficha, aunque se heredan del checkpoint base.
 
-En cuanto al entrenamiento, los tags `trl`, `grpo` y `RL` indican que se aplicó Group Relative Policy Optimization mediante la librería TRL de HuggingFace sobre el modelo base. El sufijo `syllogism_reasonsing` del identificador sugiere que el conjunto de prompts de entrenamiento se centró en tareas de razonamiento silogístico (premisas y conclusión), un dominio donde la recompensa puede ser verificable automáticamente comparando la conclusión generada con la correcta. No se ha publicado información sobre el volumen de datos, la composición del dataset, la función de recompensa, el número de pasos de RL ni los hiperparámetros (tasa de aprendizaje, coeficiente KL, tamaño de grupo). Tampoco se documenta si hubo una fase previa de SFT o DPO.
+En cuanto al entrenamiento, los tags `trl`, `grpo` y `RL` indican que se aplicó Group Relative Policy Optimization mediante la librería TRL de Hugging Face sobre el modelo base. El sufijo `syllogism_reasonsing` del identificador sugiere que el conjunto de prompts de entrenamiento se centró en tareas de razonamiento silogístico (premisas y conclusión), un dominio donde la recompensa puede ser verificable automáticamente comparando la conclusión generada con la correcta. No se ha publicado información sobre el volumen de datos, la composición del dataset, la función de recompensa, el número de pasos de RL ni los hiperparámetros (tasa de aprendizaje, coeficiente KL, tamaño de grupo). Tampoco se documenta si hubo una fase previa de SFT o DPO.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ Las cifras de memoria que siguen son estimaciones aritméticas a partir del recu
 - Pesos en 4 bits: ≈ 1,0-1,1 GB, aunque no hay archivos GGUF ni AWQ publicados: habría que generarlos a partir de los safetensors.
 - Cabe sin problema en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090 24 GB. En bf16 completo también cabe en GPUs de 8 GB con contexto corto.
 - GPU profesionales: A100 40/80 GB, H100, L40S. Son sobredimensionadas para un modelo de este tamaño salvo que se necesite throughput muy alto con lotes grandes.
-- Despliegue: `transformers` con `device_map="auto"`, vLLM para inferencia con batching continuo, TGI (el tag `text-generation-inference` está presente) y HuggingFace Inference Endpoints (tag `endpoints_compatible`). llama.cpp y Ollama requerirían convertir previamente los pesos a GGUF.
+- Despliegue: `transformers` con `device_map="auto"`, vLLM para inferencia con batching continuo, TGI (el tag `text-generation-inference` está presente) y Hugging Face Inference Endpoints (tag `endpoints_compatible`). llama.cpp y Ollama requerirían convertir previamente los pesos a GGUF.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La diferencia clave frente a las alternativas no está en el tamaño ni en el co
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla automática de HuggingFace. No hay información sobre datos de entrenamiento, hiperparámetros ni función de recompensa, lo que impide auditar el comportamiento del modelo.
+- Documentación inexistente: la model card es la plantilla automática de Hugging Face. No hay información sobre datos de entrenamiento, hiperparámetros ni función de recompensa, lo que impide auditar el comportamiento del modelo.
 - Licencia no declarada: al no especificarse licencia, el uso comercial queda en un limbo legal. Aunque el modelo base Qwen3-1.7B es Apache 2.0, el autor de este ajuste no ha fijado términos para su derivado.
 - Sesgos desconocidos: sin datos sobre la composición del dataset de RL, no se puede estimar qué sesgos introduce el ajuste ni si el modelo base los ha amplificado.
 - Riesgo de sobreajuste a la tarea: un entrenamiento con GRPO centrado en silogismos puede degradar capacidades generales del modelo base (olvido catastrófico), especialmente si el número de pasos fue alto. No hay evaluación que lo descarte.
@@ -97,7 +97,7 @@ La diferencia clave frente a las alternativas no está en el tamaño ni en el co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HiteshSaai/Qwen3-1.7B-RL-GRPO_syllogism_reasonsing
+- Modelo en Hugging Face: https://huggingface.co/HiteshSaai/Qwen3-1.7B-RL-GRPO_syllogism_reasonsing
 - Referencia del tag arXiv (Lacoste et al., estimación de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact
 - Librería TRL (usada para el entrenamiento con GRPO): https://github.com/huggingface/trl

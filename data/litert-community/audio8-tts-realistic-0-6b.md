@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Audio8-TTS-Realistic-0.6b
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Audio8-TTS-Realistic-0.6b
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - App Android de ejemplo: https://huggingface.co/litert-community/Audio8-TTS-Realistic-0.6b/tree/main/android
 - Instrucciones de compilación Android: https://huggingface.co/litert-community/Audio8-TTS-Realistic-0.6b/blob/main/android/README.md

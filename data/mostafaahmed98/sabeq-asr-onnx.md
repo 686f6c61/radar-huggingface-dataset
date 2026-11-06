@@ -80,7 +80,7 @@ La comparación cuantitativa de WER no es posible con la información disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MostafaAhmed98/Sabeq-ASR-ONNX
+- Modelo en Hugging Face: https://huggingface.co/MostafaAhmed98/Sabeq-ASR-ONNX
 - Modelo base: https://huggingface.co/MostafaAhmed98/Sabeq-ASR
 - NVIDIA NeMo (framework de entrenamiento): https://github.com/NVIDIA/NeMo
 - ONNX Runtime: https://onnxruntime.ai/

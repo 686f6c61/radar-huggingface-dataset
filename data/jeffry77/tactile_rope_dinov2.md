@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tactile_rope_dinov2 (V1/V2) | Encoder táctil ViT con RoPE | no disponible («S») | `depth_deform_raw` | Apache-2.0 | Pesos `.pth` en HuggingFace |
+| tactile_rope_dinov2 (V1/V2) | Encoder táctil ViT con RoPE | no disponible («S») | `depth_deform_raw` | Apache-2.0 | Pesos `.pth` en Hugging Face |
 | DINOv2 ViT-S/14 (Meta) | Encoder visual autosupervisado | ~21 M (referencia de la familia ViT-S/14, no confirmado para este repo) | Imagen RGB; posicionales interpoladas | Pesos publicados por Meta con su propia licencia (consultar antes de uso comercial) | Pesos y código en GitHub/HuggingFace |
 | Depth-Anything-3 (ByteDance) | Modelo de profundidad con RoPE en el ViT | no disponible | Imagen RGB | no disponible en esta ficha | Repositorio GitHub |
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de otros encoders táctiles comparables 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jeffry77/tactile_rope_dinov2
+- Repositorio en Hugging Face: https://huggingface.co/jeffry77/tactile_rope_dinov2
 - Manifiesto de pesos: https://huggingface.co/jeffry77/tactile_rope_dinov2/blob/main/weights_manifest.json
 - Código y utilidades de inferencia (UniVTAC-Positional_Encoding): https://github.com/Jeffry-wen/UniVTAC-Positional_Encoding
 - DINOv2 (Meta AI, código y pesos base): https://github.com/facebookresearch/dinov2

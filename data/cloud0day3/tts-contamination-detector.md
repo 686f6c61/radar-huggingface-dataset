@@ -82,8 +82,8 @@ La informacion disponible no incluye resultados de otros detectores de voz sinte
 
 | Modelo | Tipo | Parametros | Duracion de entrada | Licencia | Disponibilidad | Uso previsto |
 |---|---|---|---|---|---|---|
-| cloud0day3/tts-contamination-detector | Encoder HuBERT congelado + cabeza logistica | 49.153 en el repositorio; encoder aparte | 10 s por clip; decision por video con varios clips | Apache-2.0 | HuggingFace | Filtrado de corpus de entrenamiento |
-| facebook/hubert-large-ll60k | Encoder auto-supervisado | no disponible en la informacion proporcionada | no aplica (representaciones) | no disponible en la informacion proporcionada | HuggingFace | Modelo base para tareas de habla; no clasifica voz sintetica por si mismo |
+| cloud0day3/tts-contamination-detector | Encoder HuBERT congelado + cabeza logistica | 49.153 en el repositorio; encoder aparte | 10 s por clip; decision por video con varios clips | Apache-2.0 | Hugging Face | Filtrado de corpus de entrenamiento |
+| facebook/hubert-large-ll60k | Encoder auto-supervisado | no disponible en la informacion proporcionada | no aplica (representaciones) | no disponible en la informacion proporcionada | Hugging Face | Modelo base para tareas de habla; no clasifica voz sintetica por si mismo |
 | Otros detectores de voz sintetica | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ La informacion disponible no incluye resultados de otros detectores de voz sinte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cloud0day3/tts-contamination-detector
+- Modelo en Hugging Face: https://huggingface.co/cloud0day3/tts-contamination-detector
 - Modelo base HuBERT-Large: https://huggingface.co/facebook/hubert-large-ll60k
 - Paper de HuBERT (Hsu et al., 2021): https://arxiv.org/abs/2106.07447
 - Dataset Emilia: https://huggingface.co/datasets/amphion/Emilia-Dataset

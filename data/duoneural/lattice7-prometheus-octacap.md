@@ -36,7 +36,7 @@ El entrenamiento se realizó por destilación de conocimiento desde un profesor 
 - No se declara soporte de agentes ni razonamiento multi-paso.
 - Multilingüe: solo inglés según la model card.
 - No se declaran capacidades de visión, audio ni modo "thinking".
-- No hay pipeline declarado en HuggingFace, por lo que la interfaz de uso estándar no está definida.
+- No hay pipeline declarado en Hugging Face, por lo que la interfaz de uso estándar no está definida.
 
 ## Casos de uso
 
@@ -74,7 +74,7 @@ No hay benchmarks públicos ni modelos directamente comparables de la misma fami
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lattice-7 Prometheus (OctaCap) | ~177M | no disponible (entrenado a 512) | Apache 2.0 | Repo HuggingFace, 0 descargas |
+| Lattice-7 Prometheus (OctaCap) | ~177M | no disponible (entrenado a 512) | Apache 2.0 | Repo Hugging Face, 0 descargas |
 | Qwen2.5-0.5B (referencia de tamano cercano) | ~494M | 32.768 tokens | Apache 2.0 | Ampliamente disponible |
 | SmolLM2-135M | ~135M | 8.192 tokens | Apache 2.0 | Ampliamente disponible |
 | TinyLlama-1.1B | ~1,1B | 2.048 tokens | Apache 2.0 | Ampliamente disponible |
@@ -97,5 +97,5 @@ La comparación de rendimiento con estos modelos no está disponible porque Latt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DuoNeural/lattice7-prometheus-octacap
+- Hugging Face: https://huggingface.co/DuoNeural/lattice7-prometheus-octacap
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -89,7 +89,7 @@ El modelo de 0,8B es el más ligero y muestra el rendimiento más bajo, como es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RealTeq/Qwen3.5-0.8B
+- Hugging Face: https://huggingface.co/RealTeq/Qwen3.5-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/sn38-r3-2013-pomlnb-chronollm-2013` es un checkpoint de unos 1.858 millones de parámetros (1,86 B) publicado en HuggingFace y asociado a ChronoLLM (Subnet 38 de Bittensor), una competición descentralizada cuyo objetivo es entrenar modelos de lenguaje "cronológicamente consistentes". La idea central del proyecto es eliminar el sesgo de anticipación (*lookahead bias*) en investigación cuantitativa: cada modelo se entrena exclusivamente con datos disponibles hasta su fecha de corte, de modo que una simulación retrospectiva (backtest) no pueda "ver" información posterior al momento simulado.
+`alfred8995/sn38-r3-2013-pomlnb-chronollm-2013` es un checkpoint de unos 1.858 millones de parámetros (1,86 B) publicado en Hugging Face y asociado a ChronoLLM (Subnet 38 de Bittensor), una competición descentralizada cuyo objetivo es entrenar modelos de lenguaje "cronológicamente consistentes". La idea central del proyecto es eliminar el sesgo de anticipación (*lookahead bias*) en investigación cuantitativa: cada modelo se entrena exclusivamente con datos disponibles hasta su fecha de corte, de modo que una simulación retrospectiva (backtest) no pueda "ver" información posterior al momento simulado.
 
-El nombre del repositorio indica que se trata de un checkpoint de la ronda 3 (`r3`) con corte en 2013, publicado por el minero `pomlnb`. El tag `ChronoGPT` sugiere una arquitectura transformer decoder-only de tipo GPT, aunque la model card no detalla la arquitectura, el contexto ni el proceso de entrenamiento. El repositorio tiene 7,4 GB y acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El nombre del repositorio indica que se trata de un checkpoint de la ronda 3 (`r3`) con corte en 2013, publicado por el minero `pomlnb`. El tag `ChronoGPT` sugiere una arquitectura transformer decoder-only de tipo GPT, aunque la model card no detalla la arquitectura, el contexto ni el proceso de entrenamiento. El repositorio tiene 7,4 GB y acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 Su relevancia es acotada pero específica: no compite en capacidad generalista con modelos frontera, sino que aporta un artefacto con fecha de corte controlada para validar estrategias de inversión sin filtración de información futura. Fuera de ese nicho, la falta de documentación, benchmarks y licencia clara limita seriamente su uso en producción.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada pero específica: no compite en capacidad generalista c
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible (solo se publican pesos safetensors; no se distribuyen GGUF ni GPTQ/AWQ) |
 | Idiomas soportados | no disponible |
-| Licencia | `other` (ver condiciones en HuggingFace; acceso restringido) |
+| Licencia | `other` (ver condiciones en Hugging Face; acceso restringido) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -59,7 +59,7 @@ El repositorio no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones es
 - VRAM estimada para inferencia: ~3,7 GB en FP16/BF16, ~1,9 GB en INT8 y ~1,0 GB en INT4, sin contar caché KV ni overhead del runtime (el contexto es desconocido, por lo que la caché no puede dimensionarse).
 - GPU recomendadas: cualquier GPU con 8 GB o más para FP16; RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090, L4 24 GB y T4 16 GB son suficientes para una sola instancia. Para servir con batching conviene A100 40/80 GB o H100.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de tarjetas con 8 GB o más, incluso en FP16; en INT4 cabría en iGPU con memoria unificada.
-- Opciones de despliegue: vLLM y TGI admiten safetensors de forma nativa; llama.cpp y Ollama requerirían convertir los pesos a GGUF, ya que no se distribuyen cuantizaciones precompiladas. El acceso está restringido, por lo que hay que autenticarse con un token de HuggingFace en el entorno de despliegue.
+- Opciones de despliegue: vLLM y TGI admiten safetensors de forma nativa; llama.cpp y Ollama requerirían convertir los pesos a GGUF, ya que no se distribuyen cuantizaciones precompiladas. El acceso está restringido, por lo que hay que autenticarse con un token de Hugging Face en el entorno de despliegue.
 - Latencia y throughput: no disponible (no se han publicado mediciones).
 
 ## Comparativa con modelos similares
@@ -79,14 +79,14 @@ La comparación directa no es posible con los datos disponibles: los tres checkp
 - Riesgo de alucinación: no evaluado; sin benchmarks ni model card detallada no puede descartarse un comportamiento generativo poco fiable.
 - Conocimiento congelado: cualquier consulta sobre eventos posteriores a 2013 quedará fuera de su distribución de entrenamiento, lo que puede producir respuestas obsoletas o inventadas.
 - Limitaciones de contexto e idioma: ambos campos son no disponibles, lo que impide garantizar un rendimiento multilingüe o conversaciones de varios turnos.
-- Licencia: la licencia es `other` y el acceso está restringido; es imprescindible leer las condiciones en HuggingFace antes de cualquier uso comercial o redistribución.
+- Licencia: la licencia es `other` y el acceso está restringido; es imprescindible leer las condiciones en Hugging Face antes de cualquier uso comercial o redistribución.
 - Trazabilidad: al ser un checkpoint publicado por un minero anónimo de una subnet, no existe garantía sobre la composición exacta del dataset ni sobre el cumplimiento estricto del corte temporal declarado.
 - Producción: sin benchmarks, sin contexto declarado y con 0 descargas y 0 likes, no hay evidencia externa de calidad; no se recomienda su uso en sistemas en producción sin una evaluación propia previa.
 - Fecha de creación en los metadatos (2026-10-21) posterior a la fecha actual de consulta, lo que conviene verificar directamente en el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/sn38-r3-2013-pomlnb-chronollm-2013
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/sn38-r3-2013-pomlnb-chronollm-2013
 - Checkpoint relacionado del mismo minero: https://huggingface.co/pomlnb/chronollm-2013
 - Otro checkpoint del mismo autor: https://huggingface.co/alfred8995/r16-H-P3-d2c3q3-s100
 - Sitio oficial de ChronoLLM: https://chronollm.com/

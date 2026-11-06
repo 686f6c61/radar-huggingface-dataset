@@ -83,9 +83,9 @@ Datos de entrenamiento asociados: 271 episodios, 39.573 fotogramas a 10 fps, bat
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `PANDA-HSP/groot17-panda-ee-ben_multitask_relrot_16k` (este) | 3,144 mil millones | no disponible | Fine-tune sobre 6 tareas Panda, 271 episodios, 39.573 fotogramas | no disponible | Público en HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| `nvidia/GR00T-N1.7-3B` (modelo base) | ~3 mil millones (el recuento exacto no está en la información disponible) | no disponible | Modelo fundacional generalista de NVIDIA | no disponible | Público en HuggingFace |
-| `PANDA-HSP/groot17-panda-ee-ben_multitask_relrot` (checkpoint final 26k) | 3,144 mil millones (mismo modelo, otro paso) | no disponible | Mismo dataset, 26.000 pasos, pérdida ~0,003 | no disponible | Público en HuggingFace |
+| `PANDA-HSP/groot17-panda-ee-ben_multitask_relrot_16k` (este) | 3,144 mil millones | no disponible | Fine-tune sobre 6 tareas Panda, 271 episodios, 39.573 fotogramas | no disponible | Público en Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| `nvidia/GR00T-N1.7-3B` (modelo base) | ~3 mil millones (el recuento exacto no está en la información disponible) | no disponible | Modelo fundacional generalista de NVIDIA | no disponible | Público en Hugging Face |
+| `PANDA-HSP/groot17-panda-ee-ben_multitask_relrot` (checkpoint final 26k) | 3,144 mil millones (mismo modelo, otro paso) | no disponible | Mismo dataset, 26.000 pasos, pérdida ~0,003 | no disponible | Público en Hugging Face |
 
 No se dispone de datos sobre otras alternativas de la misma categoría (por ejemplo políticas VLA de otros autores) en la información proporcionada, por lo que no se incluye comparación cuantitativa con ellas. La búsqueda web realizada no devolvió ningún resultado relacionado con robótica o aprendizaje automático.
 
@@ -105,7 +105,7 @@ No se dispone de datos sobre otras alternativas de la misma categoría (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PANDA-HSP/groot17-panda-ee-ben_multitask_relrot_16k
+- Modelo en Hugging Face: https://huggingface.co/PANDA-HSP/groot17-panda-ee-ben_multitask_relrot_16k
 - Repositorio hermano con el checkpoint final (26.000 pasos): https://huggingface.co/PANDA-HSP/groot17-panda-ee-ben_multitask_relrot
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento (privado, citado en la model card): `PANDA-HSP/ben_panda_ee_merged_relrot`

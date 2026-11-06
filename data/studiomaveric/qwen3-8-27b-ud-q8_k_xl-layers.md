@@ -113,7 +113,7 @@ La diferencia funcional entre las dos primeras filas es el modo de distribución
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/studiomaveric/Qwen3.8-27B-UD-Q8_K_XL-layers
+- Repositorio en Hugging Face: https://huggingface.co/studiomaveric/Qwen3.8-27B-UD-Q8_K_XL-layers
 - Modelo origen: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Sitio web de Mesh LLM: https://www.meshllm.cloud
 - Repositorio de Mesh LLM en GitHub: https://github.com/Mesh-LLM/mesh-llm

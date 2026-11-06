@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoLadder-16M-64B-bs256-lr0.0087-wd0.1-decay0.01 es un modelo de lenguaje denso de 16 millones de parametros desarrollado por el laboratorio dill-lab y publicado en HuggingFace el 12 de octubre de 2026. Se trata de un transformer decoder-only de estilo OLMo (clase `OLMoForCausalLM`, arquitectura legacy `hf_olmo`) entrenado sobre la version deduplicada de The Pile, con una ventana de contexto de 2048 tokens y un presupuesto de 64.000 millones de tokens de entrenamiento.
+GeoLadder-16M-64B-bs256-lr0.0087-wd0.1-decay0.01 es un modelo de lenguaje denso de 16 millones de parametros desarrollado por el laboratorio dill-lab y publicado en Hugging Face el 12 de octubre de 2026. Se trata de un transformer decoder-only de estilo OLMo (clase `OLMoForCausalLM`, arquitectura legacy `hf_olmo`) entrenado sobre la version deduplicada de The Pile, con una ventana de contexto de 2048 tokens y un presupuesto de 64.000 millones de tokens de entrenamiento.
 
 El modelo no busca competir en calidad de generacion: forma parte de la suite GeoLadder, un conjunto de 108 modelos de entre 4 y 75 millones de parametros entrenados de forma controlada variando batch size, weight decay, learning rate, presupuesto de tokens y LR final. El objetivo del trabajo es estudiar si la geometria de la matriz de unembedding, en concreto su rango efectivo, permite estimar el rendimiento downstream.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tokens de entrenamiento | Contexto | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GeoLadder-16M-64B-bs256-lr0.0087-wd0.1-decay0.01 | 16M | 64B | 2048 | The Pile deduplicado | no disponible | HuggingFace (repositorio dill-lab/GeoLadder) |
-| Otras variantes de la suite GeoLadder | 4M-75M (108 modelos) | no disponible por variante | no disponible | The Pile deduplicado | no disponible | HuggingFace (coleccion GeoLadder) |
-| Pythia-14M | 14M | 300B | 2048 | The Pile (no deduplicado) | Apache 2.0 | HuggingFace y GitHub de EleutherAI |
-| Familia OLMo | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace y GitHub de AllenAI |
+| GeoLadder-16M-64B-bs256-lr0.0087-wd0.1-decay0.01 | 16M | 64B | 2048 | The Pile deduplicado | no disponible | Hugging Face (repositorio dill-lab/GeoLadder) |
+| Otras variantes de la suite GeoLadder | 4M-75M (108 modelos) | no disponible por variante | no disponible | The Pile deduplicado | no disponible | Hugging Face (coleccion GeoLadder) |
+| Pythia-14M | 14M | 300B | 2048 | The Pile (no deduplicado) | Apache 2.0 | Hugging Face y GitHub de EleutherAI |
+| Familia OLMo | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face y GitHub de AllenAI |
 
 Nota: los valores de la fila Pythia-14M proceden de la documentacion publica de esa suite, no de la informacion proporcionada en esta busqueda, y se incluyen porque la model card cita explicitamente el esquema de checkpoints de Pythia como referencia. La fila de la familia OLMo se incluye unicamente por ser el linaje arquitectonico del modelo; no se dispone de sus cifras en la informacion consultada.
 
@@ -90,7 +90,7 @@ Nota: los valores de la fila Pythia-14M proceden de la documentacion publica de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-64B-bs256-lr0.0087-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-64B-bs256-lr0.0087-wd0.1-decay0.01
 - Coleccion GeoLadder (108 modelos): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Paper en PMLR (ICML 2026): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

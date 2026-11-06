@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pipenetwork/Qwen3.8-Flash-Next-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/pipenetwork/Qwen3.8-Flash-Next-MLX-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del runtime y tooling: https://github.com/PipeNetwork/qwen38-flash-next-mlx
 - Documentación de SGLang sobre Qwen3.8-Flash-Next: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next

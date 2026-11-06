@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nobodyatalliguess/ass-fisting-lora` es un adaptador LoRA (Low-Rank Adaptation) de contenido para adultos que se aplica sobre el modelo de generacion de imagenes Krea-2-Turbo (`krea/Krea-2-Turbo`). No es un modelo autonomo: es un fichero de pesos de bajo rango que modifica el comportamiento del modelo base y no produce ninguna salida sin este. Lo publica en HuggingFace el usuario nobodyatalliguess, que lo reubica sin cambios desde Civitai, donde el autor original es mrkakapopoloch, y esta orientado al ecosistema Sogni.
+`nobodyatalliguess/ass-fisting-lora` es un adaptador LoRA (Low-Rank Adaptation) de contenido para adultos que se aplica sobre el modelo de generacion de imagenes Krea-2-Turbo (`krea/Krea-2-Turbo`). No es un modelo autonomo: es un fichero de pesos de bajo rango que modifica el comportamiento del modelo base y no produce ninguna salida sin este. Lo publica en Hugging Face el usuario nobodyatalliguess, que lo reubica sin cambios desde Civitai, donde el autor original es mrkakapopoloch, y esta orientado al ecosistema Sogni.
 
 El repositorio ocupa 0,7 GB e incluye tres ficheros en formato safetensors: la version original y dos variantes en las que los pesos `lora_up`/`lora_B` estan escalados 2x y 4x (con la equivalencia, indicada por el autor, de que un peso de 1 en un fichero Nx equivale aproximadamente a un peso N del original). La licencia declarada es `other` con `license_name: civitai`, vinculada a la ficha de Civitai del autor original.
 
@@ -27,7 +27,7 @@ El interes tecnico del artefacto es muy acotado: sirve como ejemplo practico de 
 | Fuerza recomendada | 1.0 sobre el fichero original, segun el autor |
 | Tamano del repositorio | 0,7 GB |
 | Etiquetas de contenido | `not-for-all-audiences` |
-| Fecha de creacion en HuggingFace | 2026-10-04 (fecha incoherente con el calendario actual) |
+| Fecha de creacion en Hugging Face | 2026-10-04 (fecha incoherente con el calendario actual) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -53,7 +53,7 @@ La innovacion documentada por el autor no esta en el entrenamiento, sino en la d
 - Integracion en pipelines de generacion con Sogni, el destino declarado del reupload, verificando la carga del safetensors y el SHA256 del fichero original.
 - Despliegue en interfaces de difusion (ComfyUI, diffusers, WebUI/Forge y similares) siempre que estas admitan el modelo base Krea-2-Turbo; requiere cargar el base por separado.
 - Construccion de conjuntos de datos negativos para entrenar o evaluar clasificadores y filtros de moderacion de contenido para adultos.
-- Validacion de cadenas de custodia y licencias: el repositorio sirve como caso practico para revisar la trazabilidad de un artefacto reubicado entre plataformas (Civitai a HuggingFace) y el tratamiento de licencias `other`/`civitai`.
+- Validacion de cadenas de custodia y licencias: el repositorio sirve como caso practico para revisar la trazabilidad de un artefacto reubicado entre plataformas (Civitai a Hugging Face) y el tratamiento de licencias `other`/`civitai`.
 - Pruebas de reproducibilidad: el SHA256 declarado permite comprobar la integridad del fichero original tras la descarga y detectar modificaciones en el reupload.
 
 ## Benchmarks y rendimiento
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Tipo | Modelo base | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `nobodyatalliguess/ass-fisting-lora` (original, 1x) | LoRA | krea/Krea-2-Turbo | 0,7 GB (tres ficheros) | no disponible | other / civitai | HuggingFace y Civitai |
-| `Anal_Fist_epoch_10_2x.safetensors` | LoRA, pesos escalados 2x | krea/Krea-2-Turbo | incluido en el repo | no disponible | other / civitai | HuggingFace |
-| `Anal_Fist_epoch_10_4x.safetensors` | LoRA, pesos escalados 4x | krea/Krea-2-Turbo | incluido en el repo | no disponible | other / civitai | HuggingFace |
+| `nobodyatalliguess/ass-fisting-lora` (original, 1x) | LoRA | krea/Krea-2-Turbo | 0,7 GB (tres ficheros) | no disponible | other / civitai | Hugging Face y Civitai |
+| `Anal_Fist_epoch_10_2x.safetensors` | LoRA, pesos escalados 2x | krea/Krea-2-Turbo | incluido en el repo | no disponible | other / civitai | Hugging Face |
+| `Anal_Fist_epoch_10_4x.safetensors` | LoRA, pesos escalados 4x | krea/Krea-2-Turbo | incluido en el repo | no disponible | other / civitai | Hugging Face |
 
 No se dispone de informacion sobre adaptadores alternativos comparables para el mismo modelo base ni sobre modelos de la misma categoria con datos publicos de rendimiento, por lo que la comparativa externa se considera no disponible.
 
@@ -95,7 +95,7 @@ No se dispone de informacion sobre adaptadores alternativos comparables para el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nobodyatalliguess/ass-fisting-lora
+- Hugging Face: https://huggingface.co/nobodyatalliguess/ass-fisting-lora
 - Ficha del autor original en Civitai: https://civitai.com/models/376819
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los enlaces obtenidos corresponden a sitios de contenido para adultos sin relacion con el artefacto ni con su modelo base, por lo que se omiten.

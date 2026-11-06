@@ -95,7 +95,7 @@ Diferencias clave: frente al Qwen3-0.6B oficial, esta copia anade una capa de aj
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sagar-rasakonda/Qwen3-0.6B
+- Repositorio de Hugging Face: https://huggingface.co/sagar-rasakonda/Qwen3-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Modelo oficial de referencia: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE

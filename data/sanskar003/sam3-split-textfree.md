@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SAM3-Split-TextFree es una exportación a ONNX del modelo Segment Anything Model 3 (SAM3) de Meta, publicada por el usuario sanskar003 en HuggingFace. Se trata de una variante "split" que separa el codificador (encoder) y el decodificador en componentes independientes, y que se distribuye en formatos optimizados para inferencia (ONNX Runtime, TensorRT, cuantización INT8 y FP16). El modelo está orientado a segmentación de imágenes open-vocabulary, es decir, permite segmentar objetos a partir de prompts de texto además de los prompts geométricos clásicos (puntos, cajas, máscaras).
+SAM3-Split-TextFree es una exportación a ONNX del modelo Segment Anything Model 3 (SAM3) de Meta, publicada por el usuario sanskar003 en Hugging Face. Se trata de una variante "split" que separa el codificador (encoder) y el decodificador en componentes independientes, y que se distribuye en formatos optimizados para inferencia (ONNX Runtime, TensorRT, cuantización INT8 y FP16). El modelo está orientado a segmentación de imágenes open-vocabulary, es decir, permite segmentar objetos a partir de prompts de texto además de los prompts geométricos clásicos (puntos, cajas, máscaras).
 
 La relevancia de esta ficha radica en que SAM3 representa la tercera iteración de la familia SAM de Meta, incorporando segmentación guiada por texto y capacidades de seguimiento de objetos, lo que amplía el caso de uso desde la segmentación interactiva clásica hacia pipelines automáticos de anotación, edición de imágenes y visión por computador en producción. La versión aquí descrita está pensada para despliegue en entornos con ONNX Runtime o TensorRT, lo que facilita su integración en aplicaciones fuera del ecosistema PyTorch.
 
-No obstante, la información pública disponible en la model card es muy limitada: no se detallan el número de parámetros, la longitud de contexto (en el sentido de resolución de imagen soportada), los datos de entrenamiento ni resultados de benchmarks. El repositorio tiene 4,9 GB y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+No obstante, la información pública disponible en la model card es muy limitada: no se detallan el número de parámetros, la longitud de contexto (en el sentido de resolución de imagen soportada), los datos de entrenamiento ni resultados de benchmarks. El repositorio tiene 4,9 GB y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ No obstante, la información pública disponible en la model card es muy limitad
 | Longitud de contexto | no disponible (modelo de visión; resolución de imagen no especificada) |
 | Tipos de cuantizacion | INT8, FP16 (según tags del repositorio) |
 | Idiomas soportados | no disponible (el modelo procesa prompts de texto, pero no se especifican idiomas) |
-| Licencia | sam-license (licencia SAM de Meta; acceso restringido en HuggingFace) |
+| Licencia | sam-license (licencia SAM de Meta; acceso restringido en Hugging Face) |
 | Formato de pesos | ONNX (onnxruntime), compatible con TensorRT |
 
 ## Arquitectura y entrenamiento
@@ -64,16 +64,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| SAM3-Split-TextFree (este) | no disponible | no disponible | sam-license (gated) | ONNX (INT8/FP16) | HuggingFace, acceso restringido |
-| SAM2 (Meta) | no disponible en la información | no disponible | sam-license | PyTorch | HuggingFace / GitHub |
+| SAM3-Split-TextFree (este) | no disponible | no disponible | sam-license (gated) | ONNX (INT8/FP16) | Hugging Face, acceso restringido |
+| SAM2 (Meta) | no disponible en la información | no disponible | sam-license | PyTorch | Hugging Face / GitHub |
 | SAM (original, Meta) | no disponible en la información | no disponible | sam-license | PyTorch | GitHub |
-| Grounding DINO + SAM (pipeline) | no disponible | no disponible | variable | PyTorch | HuggingFace |
+| Grounding DINO + SAM (pipeline) | no disponible | no disponible | variable | PyTorch | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada. La comparativa se limita a aspectos de licencia, formato y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace para descargar el modelo; no es de uso libre inmediato.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face para descargar el modelo; no es de uso libre inmediato.
 - Licencia sam-license: la licencia SAM de Meta impone restricciones de uso comercial y requiere revisión legal antes de integrarla en productos.
 - Información técnica incompleta: no se especifican parámetros, resolución de imagen soportada, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad frente a alternativas.
 - Riesgo de alucinación de máscaras: como todo modelo de segmentación, puede generar máscaras inexactas o segmentar regiones no solicitadas, especialmente en escenas complejas o con prompts ambiguos.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sanskar003/SAM3-Split-TextFree
+- Hugging Face: https://huggingface.co/sanskar003/SAM3-Split-TextFree
 - Modelo base: https://huggingface.co/sanskar003/SAM3-Split-Encoder-Decoder
 - Repositorio oficial de SAM (Meta): https://github.com/facebookresearch/segment-anything
 - Repositorio oficial de SAM2 (Meta): https://github.com/facebookresearch/sam2

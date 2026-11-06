@@ -4,7 +4,7 @@
 
 GLM-5.3-Flash, también conocido como ox-alpha, es el último modelo abierto de Z.ai (Zhipu AI), presentado como un modelo multimodal de 320 mil millones de parámetros con 18 mil millones activos bajo arquitectura de mezcla de expertos (MoE). Según la documentación oficial, supera a GLM-5.2 en benchmarks y cargas de trabajo reales a una décima parte del coste, acercándose a Claude Opus 4.8 en tareas de programación y agénticas. El modelo base está disponible con licencia MIT y soporta una ventana de contexto de 1 millón de tokens.
 
-La versión que nos ocupa, `Blackfrost-AI/GLM-5.3-Flash-DERISKED-GGUF`, es una cuantización GGUF publicada por el usuario Blackfrost-AI, orientada a investigación de seguridad y red-teaming (los tags incluyen `security-research`, `red-teaming` y `derisked`). Al estar en formato GGUF, puede ejecutarse con llama.cpp y herramientas compatibles, lo que facilita su despliegue en entornos de investigación sin necesidad de infraestructura propietaria. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+La versión que nos ocupa, `Blackfrost-AI/GLM-5.3-Flash-DERISKED-GGUF`, es una cuantización GGUF publicada por el usuario Blackfrost-AI, orientada a investigación de seguridad y red-teaming (los tags incluyen `security-research`, `red-teaming` y `derisked`). Al estar en formato GGUF, puede ejecutarse con llama.cpp y herramientas compatibles, lo que facilita su despliegue en entornos de investigación sin necesidad de infraestructura propietaria. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -33,7 +33,7 @@ No se han publicado detalles sobre el dataset de entrenamiento, el número de to
 - Capacidades agénticas y razonamiento multi-paso, adecuado para flujos de trabajo autónomos.
 - Procesamiento multimodal (visión), aunque no se especifican los tipos de entrada visual soportados.
 - Ventana de contexto de 1M tokens, permitiendo manejar documentos extensos o conversaciones de larga duración.
-- Soporte multilingüe limitado a inglés y chino según la ficha de HuggingFace.
+- Soporte multilingüe limitado a inglés y chino según la ficha de Hugging Face.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ La comparativa se basa en datos cualitativos de las fuentes: GLM-5.3-Flash super
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o académicos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o académicos.
 - Modelo en fase temprana: con 0 descargas y 0 likes, es una publicación reciente y no ha sido ampliamente validada por la comunidad.
 - Idiomas limitados: solo inglés y chino, sin soporte para otros idiomas como español.
 - Riesgo de alucinación: como todo modelo generativo, puede producir contenido falso o inconsistente, especialmente en tareas de razonamiento complejo.
@@ -79,7 +79,7 @@ La comparativa se basa en datos cualitativos de las fuentes: GLM-5.3-Flash super
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-DERISKED-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-DERISKED-GGUF
 - Documentación de Unsloth sobre GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3
 - Documentación oficial de Z.ai sobre GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3
 - Guía de lanzamiento de GLM-5.3 (kingy.ai): https://kingy.ai/blog/glm-5-3-specs-benchmarks-api-how-to-use/

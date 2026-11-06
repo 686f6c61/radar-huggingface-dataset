@@ -97,7 +97,7 @@ El adaptador se posiciona frente a motores como Tesseract o TrOCR en el dominio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danush99/Model_LightOnOCR-Sin-Handwritten-Text
+- Modelo en Hugging Face: https://huggingface.co/danush99/Model_LightOnOCR-Sin-Handwritten-Text
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-2-1B
 - Perfil del autor: https://huggingface.co/danush99
 - Adaptador previo de texto impreso en cingales: https://huggingface.co/avishadilhara/sinhala-lightonocr-2-1b-Qlora

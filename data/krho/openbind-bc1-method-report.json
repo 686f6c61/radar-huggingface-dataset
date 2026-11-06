@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "krho/openbind-bc1-method-report",
+  "slug": "krho-openbind-bc1-method-report",
+  "author": "krho",
+  "url": "https://huggingface.co/krho/openbind-bc1-method-report",
+  "created_at": "2026-11-06T11:49:50.000Z",
+  "updated_at": "2026-11-06T11:49:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "chemistry",
+    "drug-discovery",
+    "structural-biology",
+    "protein-ligand",
+    "pose-prediction",
+    "co-folding",
+    "zika-virus",
+    "openbind",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | openbind.uk",
+      "url": "https://openbind.uk/",
+      "snippet": "OpenBind releases its first predictive AI model OpenBind has released its first open predictive AI model, trained on high-quality experimental protein–ligand data. Released alongside the project’s first public dataset, it provides a foundation for predicting molecular interactions and benchmarking structure-based AI methods for drug discovery."
+    },
+    {
+      "title": "OpenBind's first data and model release marks a milestone for AI ...",
+      "url": "https://phys.org/news/2026-05-openbind-milestone-ai-enabled-drug.html",
+      "snippet": "The UK-led OpenBind initiative has reached a major milestone with the release of its first publicly available dataset and predictive AI model, a groundbreaking step toward accelerating the ..."
+    },
+    {
+      "title": "Why You're Seeing Handles Instead of Channel Names in Your ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=HbhdjYg8CnA",
+      "snippet": "Jun 26, 2023 · Back in October 2022, YouTube announced a new method of identifying channels, called Handles. These unique …"
+    }
+  ]
+}

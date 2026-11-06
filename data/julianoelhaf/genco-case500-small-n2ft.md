@@ -25,7 +25,7 @@ Su relevancia es doble. Por un lado, ataca un problema caro en operacion de red:
 | Entrenamiento | 40 epocas, lr 2e-4, batch 64, semilla 23 |
 | Perdida de validacion | 0,00078 (mejor) |
 | Libreria | pytorch |
-| Tamano del repo | 0.0 GB segun metadatos de HuggingFace |
+| Tamano del repo | 0.0 GB segun metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. No se declara el numero de parametros y el tamano del repo figura como 0.0 GB en los metadatos de HuggingFace, lo que impide estimar con fiabilidad.
+- VRAM estimada para inferencia: no disponible. No se declara el numero de parametros y el tamano del repo figura como 0.0 GB en los metadatos de Hugging Face, lo que impide estimar con fiabilidad.
 - GPU recomendadas: no disponibles en la informacion proporcionada. La designacion "Small" del checkpoint base sugiere un modelo de baja capacidad, pero no se confirma con recuento de parametros.
 - Compatibilidad con GPU de consumo: no confirmada. Por el tipo de tarea (regresion sobre grafos de 500 nudos) es plausible que quepa en GPU de consumo, pero es una inferencia, no un dato publicado.
 - Opciones de despliegue: carga directa del `state_dict` con `gridfm-graphkit` (commit `1e370e5`). No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo / metodo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `julianoelhaf/genco-case500-small-n2ft` | no disponible | no aplica | val loss 0,00078; no supera la linea base DC N-1 en cribado N-2 | apache-2.0 | HuggingFace (0 descargas) |
-| `gridfm/genco-pf-datakit` (base, case500_goc Small seed 0) | no disponible | no aplica | no disponible | no disponible en la informacion | HuggingFace, publicado por GridFM |
+| `julianoelhaf/genco-case500-small-n2ft` | no disponible | no aplica | val loss 0,00078; no supera la linea base DC N-1 en cribado N-2 | apache-2.0 | Hugging Face (0 descargas) |
+| `gridfm/genco-pf-datakit` (base, case500_goc Small seed 0) | no disponible | no aplica | no disponible | no disponible en la informacion | Hugging Face, publicado por GridFM |
 | Solver AC Newton-Raphson | no aplica | no aplica | exacto dentro de tolerancia; coste computational alto por contingencia | depende de la implementacion | estandar en herramientas de analisis de red |
 | DC incremental anclado en N-1 (linea base del autor) | no aplica | no aplica | supera a este modelo en el cribado N-2 segun el resultado preinscrito | no aplica | reproducible con el codigo del repositorio |
 
@@ -92,7 +92,7 @@ No se dispone de datos suficientes para comparar parametros, contexto o metricas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julianoelhaf/genco-case500-small-n2ft
+- Modelo en Hugging Face: https://huggingface.co/julianoelhaf/genco-case500-small-n2ft
 - Dataset de datos y evaluacion: https://huggingface.co/datasets/julianoelhaf/genco-n2-guaranteed-screening
 - Resultado preinscrito H15: https://huggingface.co/datasets/julianoelhaf/genco-n2-guaranteed-screening/blob/main/core/results/research/h14_n1anchor/OUTCOME_H15.md
 - Codigo del proyecto: https://github.com/julianoelhaf/gridfm-genco-challenge

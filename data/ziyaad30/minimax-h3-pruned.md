@@ -125,7 +125,7 @@ No se dispone de datos verificables de otros modelos comparables de generación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ziyaad30/MiniMax-H3-Pruned
+- Modelo en Hugging Face: https://huggingface.co/Ziyaad30/MiniMax-H3-Pruned
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

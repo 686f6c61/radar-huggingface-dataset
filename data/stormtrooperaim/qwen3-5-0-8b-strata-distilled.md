@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-Strata-distilled | 873 M | No disponible | Apache 2.0 | HuggingFace (35 descargas) | Ajuste experimental con 65 ejemplos; calidad no verificada |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | No disponible | Apache 2.0 | HuggingFace | Modelo base oficial, sin ajuste sintético; referencia de calidad |
+| Qwen3.5-0.8B-Strata-distilled | 873 M | No disponible | Apache 2.0 | Hugging Face (35 descargas) | Ajuste experimental con 65 ejemplos; calidad no verificada |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | No disponible | Apache 2.0 | Hugging Face | Modelo base oficial, sin ajuste sintético; referencia de calidad |
 | Alternativas de ~1 B con razonamiento | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la información proporcionada |
 
 No se dispone de información suficiente para comparar con alternativas de la misma categoría más allá del propio modelo base.
@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stormtrooperaim/Qwen3.5-0.8B-Strata-distilled
+- Modelo en Hugging Face: https://huggingface.co/Stormtrooperaim/Qwen3.5-0.8B-Strata-distilled
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de destilación: https://huggingface.co/datasets/Stormtrooperaim/Strata-distilled
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

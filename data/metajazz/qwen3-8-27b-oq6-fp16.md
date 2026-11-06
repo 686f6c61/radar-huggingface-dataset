@@ -70,5 +70,5 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/metajazz/Qwen3.8-27B-oQ6-fp16)
+- [Repositorio Hugging Face](https://huggingface.co/metajazz/Qwen3.8-27B-oQ6-fp16)
 - [oQ / oMLX (GitHub)](https://github.com/jundot/omlx)

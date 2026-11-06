@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch8` es un modelo de lenguaje de tamaño pequeño, con 27.447.040 parámetros, publicado en HuggingFace por el usuario Lanni-ni. Se trata de un modelo experimental orientado a generación de texto, etiquetado con `dynamic_alibi` y `custom_code`, lo que indica que implementa una variante personalizada de la atención con sesgos lineales (ALiBi), basada en el artículo de Press et al. (arxiv:1910.09700). El identificador sugiere una configuración de 2 capas, 4 cabezas de atención y 256 unidades de dimensión de modelo, así como un entrenamiento relacionado con el corpus BabyLM, aunque esta información no está confirmada en la documentación.
+El modelo `Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch8` es un modelo de lenguaje de tamaño pequeño, con 27.447.040 parámetros, publicado en Hugging Face por el usuario Lanni-ni. Se trata de un modelo experimental orientado a generación de texto, etiquetado con `dynamic_alibi` y `custom_code`, lo que indica que implementa una variante personalizada de la atención con sesgos lineales (ALiBi), basada en el artículo de Press et al. (arxiv:1910.09700). El identificador sugiere una configuración de 2 capas, 4 cabezas de atención y 256 unidades de dimensión de modelo, así como un entrenamiento relacionado con el corpus BabyLM, aunque esta información no está confirmada en la documentación.
 
 La relevancia del modelo es principalmente investigadora: permite explorar cómo los sesgos lineales dinámicos afectan a la extrapolación de longitud de contexto en modelos muy pequeños. Sin embargo, la model card publicada es una plantilla vacía, sin detalles sobre arquitectura, datos de entrenamiento, capacidades ni evaluación, lo que limita su uso práctico fuera de entornos de experimentación.
 
@@ -71,7 +71,7 @@ No se han publicado comparativas en la información disponible. No hay datos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch8
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch8
 - Paper de ALiBi (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Repositorio del modelo: no disponible
 - Demo: no disponible

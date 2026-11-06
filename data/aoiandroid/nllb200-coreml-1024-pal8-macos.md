@@ -76,7 +76,7 @@ La principal diferencia frente al modelo original de Meta es la licencia: este r
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/aoiandroid/nllb200-coreml-1024-pal8-macos)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/aoiandroid/nllb200-coreml-1024-pal8-macos)
 - [Repositorio original de la conversión (sin compilar)](https://huggingface.co/aoiandroid/nllb200-coreml-1024-pal8)
 - [Repositorio de la versión float32](https://huggingface.co/aoiandroid/nllb200-coreml-1024-float32)
 - [Blog oficial de Meta sobre NLLB-200](https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RealMirror es una plataforma integral de código abierto para investigación en IA embodied, desarrollada por la organización 2026-Human-Video-Robot-Manipulation-Data. Su objetivo es facilitar la investigación en modelos VLA (Vision-Language-Action) proporcionando un sistema eficiente y de bajo coste para la recolección de datos, el entrenamiento de modelos y la inferencia, sin necesidad de disponer de un robot físico. El repositorio de HuggingFace con identificador 2026-Human-Video-Robot-Manipulation-Data/realmirror tiene un tamaño de 41.6 GB y fue creado en septiembre de 2026; la información publicada en su model card es mínima, limitándose a la licencia MIT. No se dispone de datos técnicos sobre la arquitectura, los parámetros o el formato de pesos, ya que el repositorio parece estar orientado a datos de manipulación robot-video-humano más que a un modelo entrenado.
+RealMirror es una plataforma integral de código abierto para investigación en IA embodied, desarrollada por la organización 2026-Human-Video-Robot-Manipulation-Data. Su objetivo es facilitar la investigación en modelos VLA (Vision-Language-Action) proporcionando un sistema eficiente y de bajo coste para la recolección de datos, el entrenamiento de modelos y la inferencia, sin necesidad de disponer de un robot físico. El repositorio de Hugging Face con identificador 2026-Human-Video-Robot-Manipulation-Data/realmirror tiene un tamaño de 41.6 GB y fue creado en septiembre de 2026; la información publicada en su model card es mínima, limitándose a la licencia MIT. No se dispone de datos técnicos sobre la arquitectura, los parámetros o el formato de pesos, ya que el repositorio parece estar orientado a datos de manipulación robot-video-humano más que a un modelo entrenado.
 
 ## Especificaciones tecnicas
 
@@ -48,11 +48,11 @@ No se dispone de información sobre modelos alternativos comparables en la infor
 ## Limitaciones y advertencias
 
 - La información técnica del modelo es extremadamente limitada: no se han publicado arquitectura, parámetros, contexto ni capacidades, lo que impide una evaluación rigurosa.
-- El repositorio de HuggingFace contiene una model card casi vacía, únicamente con la licencia MIT, por lo que no hay garantías sobre la calidad, el rendimiento o la seguridad del contenido.
+- El repositorio de Hugging Face contiene una model card casi vacía, únicamente con la licencia MIT, por lo que no hay garantías sobre la calidad, el rendimiento o la seguridad del contenido.
 - El nombre del repositorio sugiere datos de manipulación de robots a partir de vídeo humano, pero no se ha confirmado la naturaleza exacta ni el formato del contenido.
 - La licencia MIT permite el uso comercial y la modificación, pero se recomienda revisar los archivos del repositorio antes de utilizarlo en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/2026-Human-Video-Robot-Manipulation-Data/realmirror
+- Hugging Face: https://huggingface.co/2026-Human-Video-Robot-Manipulation-Data/realmirror
 - GitHub: https://github.com/terminators2025/RealMirror/blob/main/README.md

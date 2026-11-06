@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OELLM 9B 256K SFT | 9,1B | 262.144 | 35 europeos | Apache-2.0 | HuggingFace |
-| Qwen3 9B (base) | 9,1B | 32.768 (ampliable) | Multilingüe global | Apache-2.0 | HuggingFace |
-| Llama 3.1 8B | 8,0B | 131.072 | Multilingüe (8 idiomas) | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B v0.3 | 7,3B | 32.768 | Multilingüe | Apache-2.0 | HuggingFace |
+| OELLM 9B 256K SFT | 9,1B | 262.144 | 35 europeos | Apache-2.0 | Hugging Face |
+| Qwen3 9B (base) | 9,1B | 32.768 (ampliable) | Multilingüe global | Apache-2.0 | Hugging Face |
+| Llama 3.1 8B | 8,0B | 131.072 | Multilingüe (8 idiomas) | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B v0.3 | 7,3B | 32.768 | Multilingüe | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a características arquitectónicas, ya que no hay datos de benchmarks para OELLM. Frente a Qwen3 9B, su base, OELLM ofrece un contexto 8 veces mayor y una cobertura de idiomas europeos más amplia, pero a costa de ser un checkpoint experimental sin validación de rendimiento. Frente a Llama 3.1 8B, destaca por su licencia permisiva y su enfoque europeo, aunque Llama tiene un ecosistema más maduro y benchmarks publicados.
 
@@ -79,8 +79,8 @@ La comparativa se limita a características arquitectónicas, ya que no hay dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openeurollm/oellm-9b-256k-sft
-- Organización OpenEuroLLM en HuggingFace: https://huggingface.co/openeurollm
+- Hugging Face: https://huggingface.co/openeurollm/oellm-9b-256k-sft
+- Organización OpenEuroLLM en Hugging Face: https://huggingface.co/openeurollm
 - GitHub de OpenEuroLLM: https://github.com/OpenEuroLLM
 - Página del modelo en FriendliAI (inferencia gestionada): https://friendli.ai/models/openeurollm/oellm-9b-256k-sft
 - Ficha del modelo base en LLM Explorer: https://llm-explorer.com/model/openeurollm%2Foellm-9b-256k-theta64m-prelude,1hK0LNwOaqe6bPe36yp1C0

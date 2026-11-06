@@ -101,7 +101,7 @@ Los unicos datos cuantitativos disponibles son de rendimiento, no de precision:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schamp007/verbatim-hindi-asr-core-sc
+- Modelo en Hugging Face: https://huggingface.co/schamp007/verbatim-hindi-asr-core-sc
 - Modelo base: https://huggingface.co/bodhan-ai/indic-transcribe-core
 - Modelo raiz: https://huggingface.co/nvidia/canary-1b-v2
 - Port comunitario int8 sin cache: https://huggingface.co/adidsh/indic-transcribe-core-int8-onnx

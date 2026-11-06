@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de transformador orientado a extracción de características (feature extraction) publicado por el usuario sac12xczdsae21e en HuggingFace bajo licencia MIT. Aunque el repositorio figura como de prueba (0 descargas, 0 likes, tamaño 0.0 GB), la model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento profundo, inferencia lógica y reducción de alucinaciones. El modelo se presenta como capaz de manejar tareas de matemáticas, programación y lógica general, con un rendimiento que según los datos publicados se aproxima al de otros modelos líderes.
+MyAwesomeModel es un modelo de transformador orientado a extracción de características (feature extraction) publicado por el usuario sac12xczdsae21e en Hugging Face bajo licencia MIT. Aunque el repositorio figura como de prueba (0 descargas, 0 likes, tamaño 0.0 GB), la model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento profundo, inferencia lógica y reducción de alucinaciones. El modelo se presenta como capaz de manejar tareas de matemáticas, programación y lógica general, con un rendimiento que según los datos publicados se aproxima al de otros modelos líderes.
 
 La información técnica disponible es muy limitada: no se especifican parámetros totales, arquitectura concreta, longitud de contexto ni datos de entrenamiento. La model card incluye una tabla de evaluación comparativa contra tres modelos genéricos (Model1, Model2, Model1-v2) en quince categorías, así como recomendaciones de uso (system prompt con fecha, temperatura 0.6, plantillas para subida de archivos y búsqueda web). También se menciona una variante llamada MyAwesomeModel-Small que comparte tokenizer con el modelo principal.
 
@@ -21,7 +21,7 @@ La información técnica disponible es muy limitada: no se especifican parámetr
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura interna del modelo (tipo de transformer, número de capas, atención, etc.). Se indica únicamente que el modelo está basado en la librería transformers de HuggingFace y que el pipeline es de extracción de características. En cuanto al entrenamiento, se menciona que la versión actual ha mejorado su capacidad de razonamiento "aprovechando mayores recursos computacionales e introduciendo mecanismos de optimización algorítmica durante el post-entrenamiento". No se especifican datos como número de tokens de entrenamiento, composición del dataset, ni si se emplearon técnicas como RLHF o DPO.
+La model card no proporciona detalles sobre la arquitectura interna del modelo (tipo de transformer, número de capas, atención, etc.). Se indica únicamente que el modelo está basado en la librería transformers de Hugging Face y que el pipeline es de extracción de características. En cuanto al entrenamiento, se menciona que la versión actual ha mejorado su capacidad de razonamiento "aprovechando mayores recursos computacionales e introduciendo mecanismos de optimización algorítmica durante el post-entrenamiento". No se especifican datos como número de tokens de entrenamiento, composición del dataset, ni si se emplearon técnicas como RLHF o DPO.
 
 La model card también señala que, en comparación con la versión anterior, el modelo usa más tokens de pensamiento durante el razonamiento (23K tokens por pregunta en AIME 2025 frente a 12K de la versión previa), lo que sugiere un modo de razonamiento extendido o "thinking mode". No hay información adicional sobre innovaciones técnicas concretas.
 
@@ -82,7 +82,7 @@ No disponible. La model card menciona comparaciones con "Model1", "Model2" y "Mo
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB) y no contiene pesos, configuración ni código. Es un repositorio de prueba, no un modelo utilizable.
+- El repositorio de Hugging Face está vacío (0.0 GB) y no contiene pesos, configuración ni código. Es un repositorio de prueba, no un modelo utilizable.
 - No se especifican los idiomas soportados. La model card está en inglés y no hay indicación de cobertura multilingüe.
 - No se proporcionan datos sobre la arquitectura, el número de parámetros ni el contexto máximo. Esto impide evaluar su viabilidad técnica.
 - Los benchmarks presentados carecen de contexto metodológico: no se indica qué conjuntos de datos exactos se usaron, ni qué modelos reales son los comparadores, ni cómo se calcularon las puntuaciones.
@@ -92,5 +92,5 @@ No disponible. La model card menciona comparaciones con "Model1", "Model2" y "Mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sac12xczdsae21e/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/sac12xczdsae21e/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces (papers, blogs, repos de código, demos) en la información proporcionada.

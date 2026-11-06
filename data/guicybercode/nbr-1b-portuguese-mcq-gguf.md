@@ -32,7 +32,7 @@ Respecto al entrenamiento, no hay informacion sobre el numero de tokens, la comp
 - Generacion de texto en portugues: es la unica capacidad declarada explicitamente por el autor (`language: pt`, `pipeline_tag: text-generation`).
 - Respuesta a preguntas de opcion multiple: presumiblemente el objetivo del ajuste segun el nombre del modelo, aunque no hay evaluacion publicada que lo confirme.
 - Inferencia local ligera: los ficheros GGUF funcionan con llama.cpp y con los runners compatibles (Ollama, llama-cpp-python, LM Studio).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede servirse mediante la infraestructura de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede servirse mediante la infraestructura de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible; sin datos que lo respalden.
 - Capacidades multilingues: no disponibles; el modelo esta etiquetado solo para portugues.
@@ -98,7 +98,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de model
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/guicybercode/NBR-1B-Portuguese-MCQ-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/guicybercode/NBR-1B-Portuguese-MCQ-GGUF
 - Modelo base: https://huggingface.co/limajr/NBR-1B-Portuguese-MCQ
 - llama.cpp (herramientas de conversion y cuantizacion): https://github.com/ggml-org/llama.cpp
 - Paper, blog, demo o repositorio adicional del autor: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alienstro/xslm es un repositorio alojado en HuggingFace por el usuario Alienstro, publicado el 12 de septiembre de 2026 y sin actualizaciones posteriores. La unica informacion verificable que acompana al repositorio es su licencia (Apache-2.0) y su clasificacion regional (region:us); no se ha publicado model card con descripcion, arquitectura, tamano ni datos de entrenamiento.
+Alienstro/xslm es un repositorio alojado en Hugging Face por el usuario Alienstro, publicado el 12 de septiembre de 2026 y sin actualizaciones posteriores. La unica informacion verificable que acompana al repositorio es su licencia (Apache-2.0) y su clasificacion regional (region:us); no se ha publicado model card con descripcion, arquitectura, tamano ni datos de entrenamiento.
 
 El modelo acumula 0 descargas y 0 likes, no tiene pipeline declarado ni idiomas declarados, y su README se limita al bloque de metadatos de licencia. No existe por tanto ninguna evidencia publica sobre que tipo de modelo es, que problema resuelve ni con que datos se entreno.
 
@@ -73,6 +73,6 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alienstro/xslm
+- Hugging Face: https://huggingface.co/Alienstro/xslm
 - Paper, repositorio de codigo, blog o demo: no disponibles.
 - Resultados de busqueda web: ninguno relevante. Las consultas devolvieron articulos genericos sobre el termino "query" en el contexto de bases de datos (Hostinger, Wikipedia, Query.ai, W3Schools, Rumahweb), sin ninguna relacion con el modelo Alienstro/xslm.

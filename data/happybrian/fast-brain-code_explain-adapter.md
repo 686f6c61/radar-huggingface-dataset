@@ -68,8 +68,8 @@ No hay datos suficientes para una comparativa rigurosa: no se conocen los parame
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| happybrian/fast-brain-code_explain-adapter | Adaptador LoRA (MLX) sobre `fast-brain-base` | ~20 MB de pesos de adaptador; base no documentada | No disponible | Sin benchmarks; evaluacion cualitativa del autor | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| happybrian/fast-brain-base | Modelo base de la familia | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| happybrian/fast-brain-code_explain-adapter | Adaptador LoRA (MLX) sobre `fast-brain-base` | ~20 MB de pesos de adaptador; base no documentada | No disponible | Sin benchmarks; evaluacion cualitativa del autor | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| happybrian/fast-brain-base | Modelo base de la familia | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Otros adaptadores LoRA de explicacion de codigo | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No hay datos suficientes para una comparativa rigurosa: no se conocen los parame
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/happybrian/fast-brain-code_explain-adapter
+- Adaptador en Hugging Face: https://huggingface.co/happybrian/fast-brain-code_explain-adapter
 - Modelo base: https://huggingface.co/happybrian/fast-brain-base
 - Libreria MLX LM (Apple): https://github.com/ml-explore/mlx-lm
 - Papers, blogs, repos o demos adicionales: no disponible. La busqueda web no devolvio resultados relacionados con el modelo.

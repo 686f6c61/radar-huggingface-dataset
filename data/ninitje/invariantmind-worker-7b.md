@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InvariantMind-Worker-7B | 7,6B (base) + adaptador LoRA | No disponible en la ficha del adaptador (32.768 tokens en el modelo base) | Adaptador LoRA sobre Qwen2.5-Coder-7B-Instruct | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens nativos | Modelo completo denso | Apache 2.0 (segun la ficha del modelo base) | Ampliamente distribuido en HuggingFace |
-| InvariantMind-v1-14B | 14B (segun su ficha) | No disponible | Adaptador PEFT con QLoRA y DPO, mismo autor | Apache 2.0 | HuggingFace, 0 likes en el momento de la consulta |
+| InvariantMind-Worker-7B | 7,6B (base) + adaptador LoRA | No disponible en la ficha del adaptador (32.768 tokens en el modelo base) | Adaptador LoRA sobre Qwen2.5-Coder-7B-Instruct | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens nativos | Modelo completo denso | Apache 2.0 (segun la ficha del modelo base) | Ampliamente distribuido en Hugging Face |
+| InvariantMind-v1-14B | 14B (segun su ficha) | No disponible | Adaptador PEFT con QLoRA y DPO, mismo autor | Apache 2.0 | Hugging Face, 0 likes en el momento de la consulta |
 | Mistral-7B-Instruct-v0.2 | 7,2B | 32.000 tokens | Modelo completo denso | Apache 2.0 | Ampliamente distribuido |
-| Mathstral-7B | 7B | No disponible | Modelo completo orientado a matemáticas y descubrimiento científico | Apache 2.0 (segun su distribucion en Ollama) | Disponible en Ollama y HuggingFace |
+| Mathstral-7B | 7B | No disponible | Modelo completo orientado a matemáticas y descubrimiento científico | Apache 2.0 (segun su distribucion en Ollama) | Disponible en Ollama y Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estas opciones en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. Cualquier afirmación sobre superioridad de rendimiento requeriría una evaluación propia.
 
@@ -90,9 +90,9 @@ No se dispone de datos de benchmarks comparativos entre estas opciones en la inf
 
 ## Enlaces
 
-- [Ninitje/InvariantMind-Worker-7B en HuggingFace](https://huggingface.co/Ninitje/InvariantMind-Worker-7B)
-- [Ninitje/InvariantMind-v1-14B en HuggingFace (modelo hermano, Tier 1 Oracle)](https://huggingface.co/Ninitje/InvariantMind-v1-14B)
-- [Qwen/Qwen2.5-Coder-7B-Instruct en HuggingFace (modelo base)](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)
+- [Ninitje/InvariantMind-Worker-7B en Hugging Face](https://huggingface.co/Ninitje/InvariantMind-Worker-7B)
+- [Ninitje/InvariantMind-v1-14B en Hugging Face (modelo hermano, Tier 1 Oracle)](https://huggingface.co/Ninitje/InvariantMind-v1-14B)
+- [Qwen/Qwen2.5-Coder-7B-Instruct en Hugging Face (modelo base)](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)
 - [Repositorio de PEFT (libreria declarada por el modelo)](https://github.com/huggingface/peft)
 - [Mistral-7B-Instruct-v0.2 (referencia comparativa)](https://github.com/inferless/Mistral-7B-Instruct-v0.2/)
 - [Mathstral 7B en Ollama (referencia comparativa en el ambito cientifico-matematico)](https://ollama.com/search?q=7b)

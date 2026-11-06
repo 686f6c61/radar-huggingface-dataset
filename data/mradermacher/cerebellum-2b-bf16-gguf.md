@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cerebellum-2B-BF16-GGUF es la version cuantizada en formato GGUF del modelo mkzero/Cerebellum-2B-BF16, publicada por mradermacher, un autor conocido por convertir pesos de HuggingFace a GGUF para su uso con llama.cpp y derivados. El modelo original tiene 1.881.825.088 parametros (aproximadamente 1,88 mil millones) y esta etiquetado por su autor como un "decision engine" no autorregresivo orientado a agentes, uso de herramientas (tool use), function calling y automatizacion de procesos roboticos (RPA).
+Cerebellum-2B-BF16-GGUF es la version cuantizada en formato GGUF del modelo mkzero/Cerebellum-2B-BF16, publicada por mradermacher, un autor conocido por convertir pesos de Hugging Face a GGUF para su uso con llama.cpp y derivados. El modelo original tiene 1.881.825.088 parametros (aproximadamente 1,88 mil millones) y esta etiquetado por su autor como un "decision engine" no autorregresivo orientado a agentes, uso de herramientas (tool use), function calling y automatizacion de procesos roboticos (RPA).
 
 La relevancia de esta ficha es doble. Por un lado, se trata de un modelo de menos de 2.000 millones de parametros, lo que lo situa en la gama que puede ejecutarse en hardware de consumo e incluso en CPU. Por otro, la etiqueta "non-autoregressive" es poco habitual en el ecosistema de modelos de lenguaje: sugiere una arquitectura de decodificacion distinta a la del decoder transformer clasico, pensada para tomar decisiones o emitir llamadas a funciones en lugar de generar texto libre de forma secuencial.
 
@@ -22,7 +22,7 @@ El repositorio contiene exclusivamente los pesos cuantizados en GGUF (desde Q2_K
 | Formato de pesos | GGUF (el repositorio no incluye safetensors) |
 | Modelo base | mkzero/Cerebellum-2B-BF16 |
 | Tamano del repositorio | 18,1 GB |
-| Fecha de publicacion | 2026-09-20 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-20 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

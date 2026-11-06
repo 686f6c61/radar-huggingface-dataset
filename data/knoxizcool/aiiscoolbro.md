@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Knoxizcool/AIISCOOLBRO` es un repositorio publicado en HuggingFace por el usuario Knoxizcool el 27 de agosto de 2026. La única información disponible en la model card es la declaración de licencia `llama3.1`, lo que sugiere que podría tratarse de un modelo derivado de la familia Llama 3.1, aunque no se aporta ninguna evidencia adicional que lo confirme. El repositorio no presenta descargas ni likes, y no incluye documentación técnica, pesos publicados ni ejemplos de uso.
+El modelo `Knoxizcool/AIISCOOLBRO` es un repositorio publicado en Hugging Face por el usuario Knoxizcool el 27 de agosto de 2026. La única información disponible en la model card es la declaración de licencia `llama3.1`, lo que sugiere que podría tratarse de un modelo derivado de la familia Llama 3.1, aunque no se aporta ninguna evidencia adicional que lo confirme. El repositorio no presenta descargas ni likes, y no incluye documentación técnica, pesos publicados ni ejemplos de uso.
 
 En el momento de redactar esta ficha, no existe información pública suficiente para determinar la arquitectura, el tamaño, el entrenamiento o las capacidades del modelo. Se trata, por tanto, de un caso de publicación incompleta, probablemente un experimento personal o un repositorio en fase inicial. Cualquier uso en producción requeriría una evaluación exhaustiva previa, que actualmente no es posible realizar con los datos disponibles.
 
@@ -53,5 +53,5 @@ No disponible. Dado que no se conocen las caracteristicas tecnicas del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Knoxizcool/AIISCOOLBRO
+- Repositorio en Hugging Face: https://huggingface.co/Knoxizcool/AIISCOOLBRO
 - Perfil del autor en X (sin informacion relevante sobre el modelo): https://x.com/Knoxizcool

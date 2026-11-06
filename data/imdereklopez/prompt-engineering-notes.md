@@ -71,7 +71,7 @@ No disponible. Este repositorio no pertenece a la categoría de modelos de IA co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Imdereklopez/prompt-engineering-notes
+- Repositorio en Hugging Face: https://huggingface.co/Imdereklopez/prompt-engineering-notes
 - Repositorio similar en GitHub (notas de *prompt engineering*): https://github.com/VikramThory/prompt-engineering-notes
 - Guía de *prompt engineering* de IBM (2026): https://www.ibm.com/think/prompt-engineering
 - Introducción a *prompt engineering* (GeeksforGeeks): https://www.geeksforgeeks.org/artificial-intelligence/ai-prompt-engineering/

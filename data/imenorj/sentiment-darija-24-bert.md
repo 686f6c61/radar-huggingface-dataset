@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ImenOrj/sentiment-darija-24-bert` es un modelo de clasificación de sentimiento orientado al dialecto árabe marroquí, conocido como darija. Fue publicado en HuggingFace por el usuario `ImenOrj` bajo la licencia Apache 2.0. Su peso total es de 124.443.651 parámetros, lo que sugiere una arquitectura similar a BERT-base, aunque la información técnica disponible no confirma de manera explícita la arquitectura, el contexto máximo ni los idiomas soportados.
+El modelo `ImenOrj/sentiment-darija-24-bert` es un modelo de clasificación de sentimiento orientado al dialecto árabe marroquí, conocido como darija. Fue publicado en Hugging Face por el usuario `ImenOrj` bajo la licencia Apache 2.0. Su peso total es de 124.443.651 parámetros, lo que sugiere una arquitectura similar a BERT-base, aunque la información técnica disponible no confirma de manera explícita la arquitectura, el contexto máximo ni los idiomas soportados.
 
 A día de hoy, el modelo no presenta descargas ni interacciones en su repositorio, y su model card no incluye documentación técnica, ejemplos de uso ni métricas de evaluación. Por el nombre del repositorio y por el tamaño de los pesos, se puede inferir que está diseñado para tareas de análisis de sentimiento sobre texto en darija, pero esta inferencia no está respaldada por una ficha detallada. La relevancia del modelo radica en su posible utilidad para el procesamiento del lenguaje natural en un dialecto de escasa representación en el ecosistema de modelos preentrenados.
 
@@ -32,7 +32,7 @@ Tampoco se disponen de datos sobre el tamaño del dataset, la composición ling�
 - Sin capacidades multimodales (visión, audio) documentadas.
 - Sin indicación de soporte de modo de razonamiento extendido o de generación libre de texto; por el nombre, se trataría de un modelo encoder para clasificación, no generativo.
 - Sin información sobre capacidades multilingües más allá del posible foco en darija.
-- No se han publicado fichas técnicas, papers ni documentación de la API en el repositorio de HuggingFace.
+- No se han publicado fichas técnicas, papers ni documentación de la API en el repositorio de Hugging Face.
 
 ## Casos de uso
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: con pesos en FP32, alrededor de 0,5 GB solo para los parámetros. En FP16, la carga se reduce a ~0,25 GB, y en INT8 a ~0,13 GB. Para inferencia con lotes pequeños, se estima entre 0,5 y 1 GB de VRAM; para lotes mayores, se recomienda entre 2 y 4 GB.
 - GPU recomendadas: cualquier gráfica con al menos 4 GB de VRAM (por ejemplo, NVIDIA RTX 3050, GTX 1660 Super o superior) es suficiente. También puede ejecutarse en CPU con 4-8 GB de RAM.
 - Sí cabe en GPU de consumo.
-- Opciones de despliegue: el camino más directo es mediante la biblioteca `transformers` de HuggingFace en PyTorch. También podría exportarse a ONNX para su integración en entornos de producción, aunque no hay indicaciones de configuración específicas. No se recomienda vLLM ni TGI para este tipo de modelo encoder de clasificación a menos que se adapte el backend.
+- Opciones de despliegue: el camino más directo es mediante la biblioteca `transformers` de Hugging Face en PyTorch. También podría exportarse a ONNX para su integración en entornos de producción, aunque no hay indicaciones de configuración específicas. No se recomienda vLLM ni TGI para este tipo de modelo encoder de clasificación a menos que se adapte el backend.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ImenOrj/sentiment-darija-24-bert
+- Hugging Face: https://huggingface.co/ImenOrj/sentiment-darija-24-bert
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repositorios) en la información proporcionada.

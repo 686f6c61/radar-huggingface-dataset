@@ -17,7 +17,7 @@ La relevancia actual es doble: por un lado sirve como sujeto de estudio en inves
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 4.096 tokens, heredada de Llama-2-7b-chat; no se confirma explicitamente en la model card |
 | Tipos de cuantizacion | no disponible (el repositorio solo contiene pesos safetensors; no se publican variantes GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | no disponible (los metadatos de HuggingFace no listan idiomas; el modelo base esta optimizado principalmente para ingles) |
+| Idiomas soportados | no disponible (los metadatos de Hugging Face no listan idiomas; el modelo base esta optimizado principalmente para ingles) |
 | Licencia | Llama 2 Community License (`LICENSE.txt` y `USE_POLICY.md` incluidos en el repositorio) |
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Fraccion de parametros resultante | 0,4998 segun la model card (sobre parametros de proyeccion densos) |
@@ -96,14 +96,14 @@ No se dispone de datos suficientes para comparar con alternativas externas de la
 - Ausencia de cuantizaciones publicadas: no hay GGUF, AWQ ni GPTQ, lo que obliga a realizar la conversion y validar que la compresion SVD no rompe la compatibilidad con los kernels de cuantizacion.
 - Restricciones de licencia: Llama 2 Community License con `USE_POLICY.md`; su uso esta sujeto a la politica de uso aceptable de Meta y a los requisitos de atribucion ("Built with Llama 2"), con condiciones adicionales para despliegues a gran escala.
 - Divergencia entre el recuento de parametros del repositorio (6.738.415.616) y la fraccion densa declarada (0,4998): conviene verificar que los tensores cargados corresponden a la configuracion comprimida antes de reutilizar el checkpoint.
-- Sin adopcion comunitaria: 0 descargas y 0 "likes" en HuggingFace, por lo que no existe validacion externa de los resultados.
+- Sin adopcion comunitaria: 0 descargas y 0 "likes" en Hugging Face, por lo que no existe validacion externa de los resultados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Basis Sharing (ICLR 2025): no disponible en la informacion proporcionada
 - Repositorio de codigo del autor: no disponible en la informacion proporcionada
 - Dataset alpaca-cleaned (empleado en la recuperacion LoRA): referenciado en la model card, enlace no proporcionado
-- Licencia Llama 2 (`LICENSE.txt`) y politica de uso (`USE_POLICY.md`): incluidos en el propio repositorio de HuggingFace
+- Licencia Llama 2 (`LICENSE.txt`) y politica de uso (`USE_POLICY.md`): incluidos en el propio repositorio de Hugging Face
 - Demo o espacio interactivo: no disponible

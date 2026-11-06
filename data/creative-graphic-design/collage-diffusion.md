@@ -71,7 +71,7 @@ No disponible. No es posible establecer una comparativa tecnica porque este repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/creative-graphic-design/collage-diffusion
+- Repositorio en Hugging Face: https://huggingface.co/creative-graphic-design/collage-diffusion
 - Activos fuente archivados: https://huggingface.co/creative-graphic-design/collage-diffusion/tree/main/source-assets
 - Repositorio original de los autores (Collage Diffusion): https://github.com/VSAnimator/collage-diffusion
 - Dataset de imagenes de documentacion (licencia Apache-2.0, no aplicable a los activos): https://huggingface.co/datasets/creative-graphic-design/documentation-images

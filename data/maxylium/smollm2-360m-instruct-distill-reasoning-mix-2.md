@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `maxylium/SmolLM2-360M-Instruct-Distill-Reasoning-Mix-2` es un ajuste fino (fine-tuning) del modelo base `SmolLM2-360M-Instruct` de HuggingFace, convertido a formato GGUF mediante la herramienta Unsloth. Está diseñado para ejecutarse en entornos con recursos limitados, como dispositivos edge o CPUs, manteniendo capacidades de instrucción y razonamiento. El nombre sugiere que se ha destilado un conjunto de datos de razonamiento para mejorar la capacidad del modelo en tareas de lógica y resolución de problemas, aunque no se proporcionan detalles específicos sobre el proceso de entrenamiento.
+El modelo `maxylium/SmolLM2-360M-Instruct-Distill-Reasoning-Mix-2` es un ajuste fino (fine-tuning) del modelo base `SmolLM2-360M-Instruct` de Hugging Face, convertido a formato GGUF mediante la herramienta Unsloth. Está diseñado para ejecutarse en entornos con recursos limitados, como dispositivos edge o CPUs, manteniendo capacidades de instrucción y razonamiento. El nombre sugiere que se ha destilado un conjunto de datos de razonamiento para mejorar la capacidad del modelo en tareas de lógica y resolución de problemas, aunque no se proporcionan detalles específicos sobre el proceso de entrenamiento.
 
 Con 361,8 millones de parámetros, este modelo se posiciona en la gama de modelos pequeños pero funcionales, adecuados para inferencia local rápida. Su relevancia actual radica en la tendencia hacia modelos compactos que pueden desplegarse en hardware de consumo, ofreciendo una alternativa ligera a modelos de mayor tamaño. La disponibilidad de múltiples cuantizaciones GGUF facilita su uso con llama.cpp y otras herramientas compatibles.
 
@@ -21,7 +21,7 @@ Con 361,8 millones de parámetros, este modelo se posiciona en la gama de modelo
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura transformer de SmolLM2-360M-Instruct, un modelo de lenguaje pequeño entrenado por HuggingFace sobre el corpus SmolLM-Corpus (4 billones de tokens). Este ajuste fino específico ha sido realizado por el usuario `maxylium` utilizando Unsloth, una librería de optimización para fine-tuning eficiente. El nombre "Distill-Reasoning-Mix" sugiere que se ha empleado destilación de conocimiento a partir de modelos de razonamiento más grandes, combinando datos de instrucción y razonamiento. Sin embargo, no se proporcionan detalles sobre el dataset, el número de pasos de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. La conversión a GGUF permite su uso con llama.cpp y otras herramientas de inferencia en CPU y GPU.
+El modelo se basa en la arquitectura transformer de SmolLM2-360M-Instruct, un modelo de lenguaje pequeño entrenado por Hugging Face sobre el corpus SmolLM-Corpus (4 billones de tokens). Este ajuste fino específico ha sido realizado por el usuario `maxylium` utilizando Unsloth, una librería de optimización para fine-tuning eficiente. El nombre "Distill-Reasoning-Mix" sugiere que se ha empleado destilación de conocimiento a partir de modelos de razonamiento más grandes, combinando datos de instrucción y razonamiento. Sin embargo, no se proporcionan detalles sobre el dataset, el número de pasos de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. La conversión a GGUF permite su uso con llama.cpp y otras herramientas de inferencia en CPU y GPU.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| SmolLM2-360M-Instruct (base) | 360M | 2K | Apache 2.0 | safetensors, GGUF | Modelo original de HuggingFace |
+| SmolLM2-360M-Instruct (base) | 360M | 2K | Apache 2.0 | safetensors, GGUF | Modelo original de Hugging Face |
 | maxylium/SmolLM2-360M-Instruct-Distill-Reasoning-Mix-2 | 361,8M | no disponible | no disponible | GGUF | Ajuste fino con razonamiento destilado |
 | Qwen2.5-0.5B-Instruct | 500M | 32K | Apache 2.0 | safetensors, GGUF | Alternativa de tamaño similar con mayor contexto |
 
@@ -67,13 +67,13 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 - Sesgos conocidos: no se han documentado, pero al derivar de SmolLM2, puede heredar sesgos presentes en el corpus de entrenamiento original.
 - Riesgo de alucinación: como todo modelo pequeño, puede generar respuestas incorrectas o inventadas, especialmente en tareas de razonamiento complejo.
 - Limitaciones de contexto: el modelo base tiene una ventana de 2K tokens, y este ajuste no especifica si se ha ampliado; es probable que el contexto sea limitado.
-- Restricciones de licencia: la licencia no está disponible en la ficha de HuggingFace; se debe contactar al autor para aclarar los términos de uso comercial.
+- Restricciones de licencia: la licencia no está disponible en la ficha de Hugging Face; se debe contactar al autor para aclarar los términos de uso comercial.
 - Caveat para producción: al ser un modelo de 360M parámetros, su capacidad de razonamiento profundo es limitada; no es adecuado para tareas que requieran conocimiento extenso o razonamiento multi-paso complejo.
 
 ## Enlaces
 
-- [HuggingFace - maxylium/SmolLM2-360M-Instruct-Distill-Reasoning-Mix-2](https://huggingface.co/maxylium/SmolLM2-360M-Instruct-Distill-Reasoning-Mix-2)
-- [HuggingFace - SmolLM2-360M-Instruct (base)](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct)
+- [Hugging Face - maxylium/SmolLM2-360M-Instruct-Distill-Reasoning-Mix-2](https://huggingface.co/maxylium/SmolLM2-360M-Instruct-Distill-Reasoning-Mix-2)
+- [Hugging Face - SmolLM2-360M-Instruct (base)](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct)
 - [GitHub - SmolLM-360M-Instruct (repositorio de referencia)](https://github.com/saucam/SmolLM-360M-Instruct)
 - [LLM Explorer - SmolLM 360M Instruct](https://llm-explorer.com/model/HuggingFaceTB%2FSmolLM-360M-Instruct,76YTJSoJZHZ72crbdrfWij)
 - [LLM.co - SmolLM2-360M-Instruct](https://llm.co/llms/smollm2-360m-instruct)

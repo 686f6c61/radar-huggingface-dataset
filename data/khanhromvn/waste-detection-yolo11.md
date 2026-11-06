@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Waste Detection YOLO11 es un modelo de detección de objetos especializado en la clasificación de residuos, desarrollado por KhanhRomVN y publicado en HuggingFace bajo licencia MIT. Se trata de un fine-tuning del modelo base `yolo11m.pt` de Ultralytics, la familia YOLO11 de detección de objetos en tiempo real, adaptado para identificar y localizar tres categorías de residuos: orgánico, reciclable y residual. A diferencia de los clasificadores de imagen completa, el modelo devuelve múltiples cajas delimitadoras por imagen, cada una etiquetada con su clase y nivel de confianza.
+Waste Detection YOLO11 es un modelo de detección de objetos especializado en la clasificación de residuos, desarrollado por KhanhRomVN y publicado en Hugging Face bajo licencia MIT. Se trata de un fine-tuning del modelo base `yolo11m.pt` de Ultralytics, la familia YOLO11 de detección de objetos en tiempo real, adaptado para identificar y localizar tres categorías de residuos: orgánico, reciclable y residual. A diferencia de los clasificadores de imagen completa, el modelo devuelve múltiples cajas delimitadoras por imagen, cada una etiquetada con su clase y nivel de confianza.
 
 El modelo resuelve el problema de la separación automática de residuos en flujos de reciclaje, un caso de uso con demanda creciente en aplicaciones de sostenibilidad, domótica y sistemas de visión industrial. Su relevancia radica en que combina un tamaño moderado (20,06 millones de parámetros, 38,6 MB en pesos) con un rendimiento razonable para una tarea de tres clases, lo que lo hace desplegable en hardware de consumo y en entornos con recursos limitados.
 
@@ -91,9 +91,9 @@ Rendimiento por fuente (yolo11m, validación):
 
 | Modelo | Parametros | Contexto / entrada | mAP50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **waste-detection-yolo11m** (este) | 20,06 M | 640×640 | 0,495 | MIT | HuggingFace |
-| yolo11s (fine-tune del autor) | 9,43 M | 640×640 | 0,481 | MIT (Ultralytics AGPL-3.0 para el código) | HuggingFace |
-| yolo11n (fine-tune del autor) | 2,61 M | 640×640 | 0,455 | MIT (Ultralytics AGPL-3.0 para el código) | HuggingFace |
+| **waste-detection-yolo11m** (este) | 20,06 M | 640×640 | 0,495 | MIT | Hugging Face |
+| yolo11s (fine-tune del autor) | 9,43 M | 640×640 | 0,481 | MIT (Ultralytics AGPL-3.0 para el código) | Hugging Face |
+| yolo11n (fine-tune del autor) | 2,61 M | 640×640 | 0,455 | MIT (Ultralytics AGPL-3.0 para el código) | Hugging Face |
 | YOLO11m base (COCO) | 20,06 M | 640×640 | no disponible en esta ficha | AGPL-3.0 | Ultralytics |
 
 La comparativa se limita a las variantes del mismo autor porque no se dispone de datos de otros modelos de detección de residuos en la información proporcionada. El modelo base YOLO11m de Ultralytics se distribuye bajo AGPL-3.0, lo que conviene verificar antes de un uso comercial del fine-tune, aunque el autor declare MIT para sus pesos.
@@ -113,7 +113,7 @@ La comparativa se limita a las variantes del mismo autor porque no se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khanhromvn/waste-detection-yolo11
+- Modelo en Hugging Face: https://huggingface.co/khanhromvn/waste-detection-yolo11
 - Repositorio relacionado del autor: https://huggingface.co/khanhromvn/waste_classification
 - Ultralytics YOLO11 (documentación): https://docs.ultralytics.com/models/yolo11/
 - Ultralytics (GitHub): https://github.com/ultralytics/ultralytics

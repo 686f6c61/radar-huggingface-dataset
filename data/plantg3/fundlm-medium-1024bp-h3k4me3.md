@@ -73,8 +73,8 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Arquitectura | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FunDLM-Medium-1024bp-H3K4me3 (este) | Caduceus (Mamba-2 bidireccional, RCPS) + LoRA r=8 | 471M base + adaptador | 1.024 bp | Clasificación H3K4me3 en hongos | No disponible | HuggingFace |
-| FunDLM-Medium-1024bp (base) | Caduceus (Mamba-2 bidireccional, RCPS) | 471M | 1.024 bp | Modelo de lenguaje de ADN fúngico | No disponible | HuggingFace |
+| FunDLM-Medium-1024bp-H3K4me3 (este) | Caduceus (Mamba-2 bidireccional, RCPS) + LoRA r=8 | 471M base + adaptador | 1.024 bp | Clasificación H3K4me3 en hongos | No disponible | Hugging Face |
+| FunDLM-Medium-1024bp (base) | Caduceus (Mamba-2 bidireccional, RCPS) | 471M | 1.024 bp | Modelo de lenguaje de ADN fúngico | No disponible | Hugging Face |
 | PlantCAD2 | No disponible en la información proporcionada | No disponible | No disponible | Genómica de plantas | No disponible | GitHub (referenciado para instalación) |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PlantG3/FunDLM-Medium-1024bp-H3K4me3
+- Modelo en Hugging Face: https://huggingface.co/PlantG3/FunDLM-Medium-1024bp-H3K4me3
 - Modelo base: https://huggingface.co/gnikesh/FunDLM-Medium-1024bp
 - Repositorio FunDLM (script de fine-tuning y predicción): https://github.com/PlantG3/funDLM/blob/main/src/finetune/lora_fine_tune.py
 - Instrucciones de instalación de PlantCAD2 (referenciadas para el entorno): https://github.com/plantcad/plantcad/blob/main/docs/local-install.md

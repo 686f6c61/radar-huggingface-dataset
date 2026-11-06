@@ -89,7 +89,7 @@ La diferencia práctica entre este modelo y su base es el formato y el tamaño d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frcorrectejr/t5-correcteur-fr-onnx
+- Modelo en Hugging Face: https://huggingface.co/frcorrectejr/t5-correcteur-fr-onnx
 - Modelo base: https://huggingface.co/fdemelo/t5-base-spell-correction-fr
 
 No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos.

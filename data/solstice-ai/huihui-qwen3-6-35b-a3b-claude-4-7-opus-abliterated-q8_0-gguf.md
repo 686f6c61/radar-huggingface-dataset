@@ -80,7 +80,7 @@ La comparativa se basa en los datos disponibles; no hay resultados de benchmarks
 
 ## Enlaces
 
-- [Modelo en HuggingFace (Solstice-AI)](https://huggingface.co/Solstice-AI/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-Q8_0-GGUF)
+- [Modelo en Hugging Face (Solstice-AI)](https://huggingface.co/Solstice-AI/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-Q8_0-GGUF)
 - [Modelo original de huihui-ai (safetensors)](https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated)
 - [Versión abliterada sin destilación (huihui-ai)](https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated)
 - [Ficha en dev.co](https://dev.co/ai/llms/huihui-qwen3-6-35b-a3b-claude-4-7-opus-abliterated)

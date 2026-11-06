@@ -30,7 +30,7 @@ El entrenamiento consistio en un fine-tuning completo (full finetune) sobre Appl
 ## Capacidades
 
 - Puntuacion de opciones de ajedrez: recibe un contexto de posicion y una lista de jugadas legales y devuelve un logit por opcion en una unica pasada.
-- Clasificacion de texto especializada: la pipeline declarada en HuggingFace es `text-classification`, aplicada a la representacion textual de posiciones y jugadas.
+- Clasificacion de texto especializada: la pipeline declarada en Hugging Face es `text-classification`, aplicada a la representacion textual de posiciones y jugadas.
 - Seleccion de jugada en lista corta: el modelo esta calibrado para discriminar entre 16 opciones, no para generar jugadas nuevas.
 - Deteccion de contenido tactico: el acuerdo tactico de 0,667 en un subconjunto reducido de mates y tacticas sugiere cierta sensibilidad a patrones de este tipo, siempre segun la propia model card.
 - Integracion como servicio: el repositorio de codigo incluye un servidor `chess_jev.server` que puede levantarse con uvicorn y sirve el modelo.
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, E
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chessjev-minilm-v1 | Scorer de opciones sobre encoder MiniLM | ~22,7 M (encoder) mas cabeza | No disponible | Apache-2.0 (pesos), MIT (codigo de entrenamiento) | HuggingFace, 0 descargas, 0 likes |
+| chessjev-minilm-v1 | Scorer de opciones sobre encoder MiniLM | ~22,7 M (encoder) mas cabeza | No disponible | Apache-2.0 (pesos), MIT (codigo de entrenamiento) | Hugging Face, 0 descargas, 0 likes |
 | chessjev-byte-v1 | Scorer alternativo citado como respaldo en la model card | No disponible | No disponible | No disponible | Citado como fallback dentro del mismo repositorio de codigo; no se aportan mas datos |
 | Stockfish 19 (profesor) | Motor de ajedrez clasico con busqueda | No aplica (no es una red neuronal unica) | No aplica | GPL (la version 19 se distribuye bajo GPLv3) | Ampliamente disponible; es el origen de las etiquetas de entrenamiento |
-| sentence-transformers/all-MiniLM-L6-v2 | Encoder de frases de proposito general | ~22,7 M | 256 tokens documentados | Apache-2.0 | Ampliamente disponible en HuggingFace; es el modelo base de este fine-tuning |
+| sentence-transformers/all-MiniLM-L6-v2 | Encoder de frases de proposito general | ~22,7 M | 256 tokens documentados | Apache-2.0 | Ampliamente disponible en Hugging Face; es el modelo base de este fine-tuning |
 
 No se dispone de comparativas con otros scorers de ajedrez basados en transformers en la informacion proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de comparativas con otros scorers de ajedrez basados en transforme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gopalanj/chessjev-minilm-v1
+- Modelo en Hugging Face: https://huggingface.co/gopalanj/chessjev-minilm-v1
 - Repositorio de codigo chess-jev (MIT): https://github.com/gopalanj/chess-jev
 - Modelo base del encoder: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo en la busqueda proporcionada; los resultados devueltos corresponden a paginas corporativas de Microsoft y no guardan relacion con este artefacto.

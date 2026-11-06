@@ -114,7 +114,7 @@ No se dispone de otros borradores comparables en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Launch80/Qwen3.8-27B-DFlash2-Int4-baked-drafter
+- Repositorio Hugging Face: https://huggingface.co/Launch80/Qwen3.8-27B-DFlash2-Int4-baked-drafter
 - Modelo base (drafter bf16): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Modelo objetivo usado en la evaluación: https://huggingface.co/Launch80/Swift-1.5-Qwen3.8-27B-Uncensored-Int4-baked
 - Página de resultados del autor: https://launch80.com/a/602f86d7-b0d3-4d2b-9c94-1037fe1d3cd3

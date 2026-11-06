@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-Dark-Thoughts-31B-W8A16-FP8 es una versión cuantizada del modelo base Ateron/Gemma-4-Dark-Thoughts-31B, publicada por el usuario hoborific en HuggingFace. Se trata de un modelo de 31.273 millones de parámetros con pipeline image-text-to-text, lo que sugiere capacidades multimodales (visión y texto), aunque no se han publicado detalles sobre su arquitectura interna ni su entrenamiento. La cuantización emplea el formato W8A16 FP8, con pesos en float8_e4m3fn y activaciones en bf16/fp16, aplicada offline mediante la librería compressed-tensors de Neural Magic.
+Gemma-4-Dark-Thoughts-31B-W8A16-FP8 es una versión cuantizada del modelo base Ateron/Gemma-4-Dark-Thoughts-31B, publicada por el usuario hoborific en Hugging Face. Se trata de un modelo de 31.273 millones de parámetros con pipeline image-text-to-text, lo que sugiere capacidades multimodales (visión y texto), aunque no se han publicado detalles sobre su arquitectura interna ni su entrenamiento. La cuantización emplea el formato W8A16 FP8, con pesos en float8_e4m3fn y activaciones en bf16/fp16, aplicada offline mediante la librería compressed-tensors de Neural Magic.
 
 El interés de esta versión radica en su optimización para inferencia eficiente en vLLM, especialmente en plataformas Intel XPU y NVIDIA CUDA (Turing o superior). Al reducir el peso de los parámetros a 8 bits, se logra un menor uso de VRAM y mayor throughput en comparación con el modelo original en bf16, manteniendo una precisión razonable gracias a un esquema de escalado por canal y búsqueda de clip por MSE. No obstante, la ficha carece de información sobre el modelo base, sus capacidades específicas, licencia o benchmarks, por lo que esta ficha se limita a los datos disponibles.
 
@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - Gemma-4-Dark-Thoughts-31B-W8A16-FP8](https://huggingface.co/hoborific/Gemma-4-Dark-Thoughts-31B-W8A16-FP8)
+- [Hugging Face - Gemma-4-Dark-Thoughts-31B-W8A16-FP8](https://huggingface.co/hoborific/Gemma-4-Dark-Thoughts-31B-W8A16-FP8)
 - [Modelo base - Ateron/Gemma-4-Dark-Thoughts-31B](https://huggingface.co/Ateron/Gemma-4-Dark-Thoughts-31B)
 - [compressed-tensors (GitHub)](https://github.com/neuralmagic/compressed-tensors)

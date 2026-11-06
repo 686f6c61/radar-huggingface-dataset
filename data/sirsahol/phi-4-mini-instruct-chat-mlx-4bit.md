@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SirSahOl/Phi-4-mini-instruct-chat-mlx-4bit es una conversión de pesos a 4 bits en formato MLX del modelo microsoft/Phi-4-mini-instruct, realizada por el usuario SirSahOl y publicada en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una cuantización weight-only pensada específicamente para ejecutar el modelo en hardware Apple Silicon (M1 o posterior) mediante la librería MLX de Apple. El repositorio ocupa 2,2 GB y el checkpoint contiene 3.836.021.760 parámetros.
+SirSahOl/Phi-4-mini-instruct-chat-mlx-4bit es una conversión de pesos a 4 bits en formato MLX del modelo microsoft/Phi-4-mini-instruct, realizada por el usuario SirSahOl y publicada en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una cuantización weight-only pensada específicamente para ejecutar el modelo en hardware Apple Silicon (M1 o posterior) mediante la librería MLX de Apple. El repositorio ocupa 2,2 GB y el checkpoint contiene 3.836.021.760 parámetros.
 
-El modelo conserva la arquitectura y el comportamiento del modelo base: un transformer denso (etiquetado como phi3 en HuggingFace) orientado a generación de texto y uso conversacional. La aportación de esta ficha es puramente práctica: permite ejecutar Phi-4-mini en un Mac con memoria unificada limitada, como demuestra el benchmark del propio autor (2.306,2 MB de memoria pico en un M1 con 8 GB).
+El modelo conserva la arquitectura y el comportamiento del modelo base: un transformer denso (etiquetado como phi3 en Hugging Face) orientado a generación de texto y uso conversacional. La aportación de esta ficha es puramente práctica: permite ejecutar Phi-4-mini en un Mac con memoria unificada limitada, como demuestra el benchmark del propio autor (2.306,2 MB de memoria pico en un M1 con 8 GB).
 
 El interés actual de esta conversión radica en el despliegue local en equipos de consumo del ecosistema Apple, sin necesidad de GPU dedicada ni de servicios en la nube. El autor publica además variantes en 8 bits y 16 bits para quienes dispongan de más memoria. La licencia MIT y el reducido tamaño del checkpoint facilitan su integración en prototipos y aplicaciones de escritorio.
 
@@ -12,7 +12,7 @@ El interés actual de esta conversión radica en el despliegue local en equipos 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso decoder-only; etiqueta HuggingFace phi3; conversión de pesos a MLX |
+| Arquitectura | Transformer denso decoder-only; etiqueta Hugging Face phi3; conversión de pesos a MLX |
 | Parametros totales | 3.836.021.760 (aproximadamente 3,84 B) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible; la model card advierte de degradación del rendimiento con contextos superiores a 8K tokens |
@@ -29,7 +29,7 @@ El interés actual de esta conversión radica en el despliegue local en equipos 
 
 No ha habido entrenamiento ni ajuste fino por parte de SirSahOl: la conversión es weight-only y la arquitectura, los pesos y el comportamiento se heredan íntegramente de microsoft/Phi-4-mini-instruct. Por tanto, no procede hablar aquí de dataset, número de tokens de entrenamiento, RLHF o DPO por parte del autor de la conversión, ya que no se documentan en la información disponible.
 
-El único proceso técnico descrito es la conversión a formato MLX. Según la model card, se realizó con mlx-lm 0.31.3 mediante el comando `mlx_lm.convert --q-bits 4`, con un tiempo de conversión de 3.386,82 segundos y un tamaño de salida de 2,0 GB. La etiqueta custom_code en HuggingFace indica que el repositorio puede requerir código personalizado para su carga. El autor menciona que la conversión se hizo con su propio pipeline, MLX Foundry.
+El único proceso técnico descrito es la conversión a formato MLX. Según la model card, se realizó con mlx-lm 0.31.3 mediante el comando `mlx_lm.convert --q-bits 4`, con un tiempo de conversión de 3.386,82 segundos y un tamaño de salida de 2,0 GB. La etiqueta custom_code en Hugging Face indica que el repositorio puede requerir código personalizado para su carga. El autor menciona que la conversión se hizo con su propio pipeline, MLX Foundry.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ No se dispone de comparativas con otros modelos de la misma categoría en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/Phi-4-mini-instruct-chat-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/Phi-4-mini-instruct-chat-mlx-4bit
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Variante 8-bit: https://huggingface.co/SirSahOl/Phi-4-mini-instruct-chat-mlx-8bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/Phi-4-mini-instruct-chat-mlx-16bit

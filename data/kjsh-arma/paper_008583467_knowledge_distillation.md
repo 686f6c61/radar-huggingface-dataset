@@ -55,13 +55,13 @@ No disponible. No existe información sobre modelos comparables, ya que el repos
 
 - No es un modelo ejecutable: no se puede cargar ni utilizar para inferencia o generación de texto.
 - El contenido es teórico y no incluye implementaciones prácticas ni código de ejemplo.
-- No se especifica el idioma del documento; la información de HuggingFace indica que los idiomas no están disponibles.
+- No se especifica el idioma del documento; la información de Hugging Face indica que los idiomas no están disponibles.
 - La licencia Apache 2.0 permite uso comercial, pero es responsabilidad del usuario revisar el contenido del documento para asegurarse de que cumple con sus requisitos.
 - No hay garantía de que el documento sea preciso, completo o esté actualizado; se recomienda contrastar con las fuentes originales sobre destilación de conocimiento.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kjsh-arma/paper_008583467_knowledge_distillation
+- Repositorio Hugging Face: https://huggingface.co/Kjsh-arma/paper_008583467_knowledge_distillation
 - Encuesta sobre destilación de conocimiento en arXiv: https://arxiv.org/abs/2006.05525
 - Versión publicada en International Journal of Computer Vision: https://link.springer.com/article/10.1007/s11263-021-01453-z
 - Estudio sobre destilación en modelos visuales autorregresivos: https://arxiv.org/abs/2606.06078

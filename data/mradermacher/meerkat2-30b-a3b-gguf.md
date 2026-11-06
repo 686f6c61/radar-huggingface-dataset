@@ -86,5 +86,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Meerkat2-30B-A3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Meerkat2-30B-A3B-GGUF
 - Modelo original: https://huggingface.co/aigensciences/Meerkat2-30B-A3B

@@ -70,7 +70,7 @@ No se dispone de comparativas públicas con otros modelos. El checkpoint pertene
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_500M_s0_2026-09-06_15-13-26_453103-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_500M_s0_2026-09-06_15-13-26_453103-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/ppjcp8od
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Serie de experimentos del autor: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_500M_s0_2026-08-15_00-52-09_099932-pt

@@ -12,7 +12,7 @@ Su relevancia es fundamentalmente metodológica: es un artefacto de ablación qu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos); etiqueta `grug_moe` en HuggingFace. Detalle de capas y atencion: no disponible |
+| Arquitectura | MoE (mezcla de expertos); etiqueta `grug_moe` en Hugging Face. Detalle de capas y atencion: no disponible |
 | Parametros totales | 67.078.882.816 (≈67,1 mil millones) |
 | Parametros activos | ≈2B por token, inferido de la nomenclatura "A2B"; no confirmado en la model card |
 | Longitud de contexto | 32.768 tokens empleados en la evaluacion; longitud maxima nativa no especificada |
@@ -85,8 +85,8 @@ La informacion proporcionada no incluye datos de otros modelos de la misma categ
 
 | Modelo | Parametros | Contexto | MMLU-Pro (held-out) | CruxEval | IFEval strict | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Snowball-67B-A2B-MMLUPro-Expert-E2-Step254 | 67,1B totales (≈2B activos) | 32.768 tokens en evaluacion | 64,0 | 54,5 / 52,9 | 80,2 | Apache 2.0 | HuggingFace |
-| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (base B) | 67,1B totales (≈2B activos) | no disponible | 44,1 | 55,4 / 57,8 | 81,1 | no disponible en la informacion facilitada | HuggingFace |
+| Snowball-67B-A2B-MMLUPro-Expert-E2-Step254 | 67,1B totales (≈2B activos) | 32.768 tokens en evaluacion | 64,0 | 54,5 / 52,9 | 80,2 | Apache 2.0 | Hugging Face |
+| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (base B) | 67,1B totales (≈2B activos) | no disponible | 44,1 | 55,4 / 57,8 | 81,1 | no disponible en la informacion facilitada | Hugging Face |
 | Snowball-67B-A2B-MMLUPro-Expert-E (experto E, misma receta) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Mencionado en la model card |
 | Otros modelos comparables (por ejemplo densos de ~70B) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -104,8 +104,8 @@ La informacion proporcionada no incluye datos de otros modelos de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-MMLUPro-Expert-E2-Step254
-- Modelo base (student B) en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-MMLUPro-Expert-E2-Step254
+- Modelo base (student B) en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92
 - Commit exacto del modelo base usado: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92/tree/fdc3c3c5fff489d3fb04dcbc2387c179b1bf3fab
 - Dataset de evaluacion MMLU-Pro (TIGER-Lab, commit b189ec76): https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
 - Evaluador Evalchemy (commit ae362881): https://github.com/marin-community/evalchemy/commit/ae362881cf53f869a6ad52c8a59fa17343c0b5f8

@@ -90,7 +90,7 @@ Nota: no hay benchmarks publicados que permitan comparar rendimiento entre estos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SZLHOLDINGS/chaski
+- Repositorio Hugging Face: https://huggingface.co/SZLHOLDINGS/chaski
 - Informe de evaluacion (eval_report.json): https://huggingface.co/SZLHOLDINGS/chaski/blob/main/eval_report.json
 - Repo GitHub szl-serve: https://github.com/szl-holdings/szl-serve/blob/main/README.md
 - Repo GitHub szl-holdings-platform: https://github.com/szl-holdings/szl-holdings-platform/blob/main/docs/PLATFORM_OVERVIEW.md

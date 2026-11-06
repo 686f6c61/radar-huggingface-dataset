@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apex-35B-V1.0 es un modelo multimodal (texto e imagen) desarrollado por Apexintelligence-AI, publicado en HuggingFace y cuantizado en formato GGUF por bartowski, uno de los cuantizadores más activos de la comunidad. El modelo pertenece a la categoría de mezcla de expertos (MoE), con un total de aproximadamente 35,5 mil millones de parámetros según los metadatos de safetensors (el checkpoint de origen se describe como de 36B). Su pipeline es de tipo image-text-to-text, lo que indica que acepta imágenes y texto como entrada y genera texto.
+Apex-35B-V1.0 es un modelo multimodal (texto e imagen) desarrollado por Apexintelligence-AI, publicado en Hugging Face y cuantizado en formato GGUF por bartowski, uno de los cuantizadores más activos de la comunidad. El modelo pertenece a la categoría de mezcla de expertos (MoE), con un total de aproximadamente 35,5 mil millones de parámetros según los metadatos de safetensors (el checkpoint de origen se describe como de 36B). Su pipeline es de tipo image-text-to-text, lo que indica que acepta imágenes y texto como entrada y genera texto.
 
 Se trata de un modelo orientado a casos de uso de agentes e investigación, con soporte de tool calling mediante un formato de llamadas a funciones en XML, y un modo de razonamiento explícito marcado por las etiquetas `<think>`. Destaca técnicamente por incorporar decodificación especulativa mediante MTP (multi-token prediction) y por soportar entrada de imagen a través de un archivo mmproj en llama.cpp.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`acD124SAQ/MyAwesomeModel-TestRepo` es un repositorio publicado en HuggingFace por el usuario `acD124SAQ` bajo licencia MIT. Los metadatos de la plataforma lo etiquetan como un modelo de tipo `bert` para la tarea de `feature-extraction`, implementado con la librería `transformers` y pesos en PyTorch. Registra 0 descargas y 0 likes, y su tamano de repositorio es de 0,0 GB, lo que indica que no contiene pesos ni ficheros de configuracion publicados en el momento de la consulta.
+`acD124SAQ/MyAwesomeModel-TestRepo` es un repositorio publicado en Hugging Face por el usuario `acD124SAQ` bajo licencia MIT. Los metadatos de la plataforma lo etiquetan como un modelo de tipo `bert` para la tarea de `feature-extraction`, implementado con la librería `transformers` y pesos en PyTorch. Registra 0 descargas y 0 likes, y su tamano de repositorio es de 0,0 GB, lo que indica que no contiene pesos ni ficheros de configuracion publicados en el momento de la consulta.
 
 La model card adjunta es una plantilla generica titulada "MyAwesomeModel" que describe un supuesto modelo de razonamiento con mejoras en matemáticas, programación y logica, incluyendo cifras concretas como un 87,5 % de acierto en AIME 2025 y un consumo medio de 23K tokens por pregunta. Esta descripcion es incoherente con los metadatos del repositorio: un modelo de `feature-extraction` basado en BERT no genera texto ni ejecuta cadenas de razonamiento de decenas de miles de tokens. No hay ninguna indicacion de que el contenido de la model card corresponda a este repositorio.
 
@@ -12,7 +12,7 @@ La relevancia practica del repositorio es, por tanto, minima: se trata de un art
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta de HuggingFace indica `bert` (encoder transformer); la model card describe razonamiento autoregresivo con modo "thinking", propio de un decoder-only. Contradiccion sin resolver. |
+| Arquitectura | No disponible. La etiqueta de Hugging Face indica `bert` (encoder transformer); la model card describe razonamiento autoregresivo con modo "thinking", propio de un decoder-only. Contradiccion sin resolver. |
 | Parametros totales | No disponible |
 | Parametros activos | No aplica (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -31,7 +31,7 @@ La relevancia practica del repositorio es, por tanto, minima: se trata de un art
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. La unica pista objetiva es la etiqueta `bert` de HuggingFace, que apuntaria a un transformer de tipo encoder con atencion bidireccional, orientado a producir representaciones de frases o documentos (embeddings) y no a generar texto. La model card, en cambio, describe un sistema con "profundidad de razonamiento", optimizacion algoritmica en post-entrenamiento y consumo variable de tokens por consulta, caracteristicas de un modelo generativo decoder-only con modo de razonamiento extendido.
+No hay informacion verificable sobre la arquitectura. La unica pista objetiva es la etiqueta `bert` de Hugging Face, que apuntaria a un transformer de tipo encoder con atencion bidireccional, orientado a producir representaciones de frases o documentos (embeddings) y no a generar texto. La model card, en cambio, describe un sistema con "profundidad de razonamiento", optimizacion algoritmica en post-entrenamiento y consumo variable de tokens por consulta, caracteristicas de un modelo generativo decoder-only con modo de razonamiento extendido.
 
 No se dispone de datos sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO u otras), ni innovaciones tecnicas concretas. Tampoco se documenta vocabulario, tamano de tokenizer, numero de capas, dimensiones ocultas ni estrategia de atencion. La model card menciona de pasada un "MyAwesomeModel-Small" con arquitectura identica al modelo base y tokenizer compartido, pero sin ninguna especificacion tecnica adicional.
 
@@ -124,7 +124,7 @@ Como referencia de categoria, si el modelo fuese finalmente un encoder BERT para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/acD124SAQ/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/acD124SAQ/MyAwesomeModel-TestRepo
 - Repositorio de codigo: la model card menciona "our code repository" pero no incluye enlace.
 - Sitio web oficial y API: la model card menciona "our official website" pero no incluye enlace.
 - Paper: no disponible.

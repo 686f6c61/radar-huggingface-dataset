@@ -4,7 +4,7 @@
 
 Qwen3.8-27B-mxfp8-mlx es una versión cuantizada en formato MXFP8 (microscaling de 8 bits) del modelo multimodal Qwen3.8-27B, desarrollada por el usuario zherebetskyy para ejecutarse en Apple Silicon mediante el framework MLX. El modelo original, creado por el equipo Qwen, combina capacidades de visión y lenguaje (image-text-to-text), lo que permite tareas como descripción de imágenes, respuesta a preguntas visuales y razonamiento multimodal. Esta variante cuantizada busca ofrecer un equilibrio entre fidelidad cercana a FP16 y un consumo de memoria reducido a la mitad, con una precisión relativa estimada por el autor del 99,5-99,9 % respecto a los pesos completos.
 
-La cuantización MXFP8 utiliza un esquema de microscaling con bloques finos (tamaño 32) y un factor de escala compartido E8M0, junto con una distribución exponencial E4M3 que preserva los valores atípicos de alta magnitud, algo crítico en modelos de lenguaje y visión. El repositorio incluye pesos en formato safetensors y está diseñado para su uso con la librería mlx-vlm. El modelo tiene aproximadamente 27 780 millones de parámetros (según la model card), aunque los metadatos de HuggingFace muestran una cifra discrepante de 8 027 131 120 parámetros en los safetensors; esta inconsistencia se detalla en la sección de limitaciones.
+La cuantización MXFP8 utiliza un esquema de microscaling con bloques finos (tamaño 32) y un factor de escala compartido E8M0, junto con una distribución exponencial E4M3 que preserva los valores atípicos de alta magnitud, algo crítico en modelos de lenguaje y visión. El repositorio incluye pesos en formato safetensors y está diseñado para su uso con la librería mlx-vlm. El modelo tiene aproximadamente 27 780 millones de parámetros (según la model card), aunque los metadatos de Hugging Face muestran una cifra discrepante de 8 027 131 120 parámetros en los safetensors; esta inconsistencia se detalla en la sección de limitaciones.
 
 La relevancia actual de este modelo radica en que permite ejecutar un modelo multimodal de gran tamaño en hardware de Apple con memoria unificada de 64 GB o superior, manteniendo una calidad de razonamiento cercana a la precisión completa, algo que las cuantizaciones de 4 bits no logran en tareas complejas como matemáticas o análisis visual denso. Es una opción práctica para desarrolladores que trabajan en ecosistemas macOS con chips M1-M4 Max/Ultra.
 
@@ -80,7 +80,7 @@ No se dispone de comparación con otros modelos multimodales de tamaño similar 
 
 ## Limitaciones y advertencias
 
-- Discrepancia en el número de parámetros: los metadatos de HuggingFace indican 8 027 131 120 parámetros en los safetensors, mientras que la model card declara 27 780 000 000. Esta inconsistencia no está explicada y podría deberse a un error en los metadatos o a una estructura de pesos diferente (p. ej., exclusión de embeddings). Se recomienda verificar antes de usar en producción.
+- Discrepancia en el número de parámetros: los metadatos de Hugging Face indican 8 027 131 120 parámetros en los safetensors, mientras que la model card declara 27 780 000 000. Esta inconsistencia no está explicada y podría deberse a un error en los metadatos o a una estructura de pesos diferente (p. ej., exclusión de embeddings). Se recomienda verificar antes de usar en producción.
 - Idioma limitado: solo se confirma inglés; el uso en otros idiomas puede degradar el rendimiento.
 - Dependencia de Apple Silicon: el modelo solo se puede ejecutar en hardware Apple con MLX; no es portable a entornos Linux/Windows con GPUs NVIDIA.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar contenido falso o no verificado, especialmente en descripciones de imágenes ambiguas.
@@ -90,7 +90,7 @@ No se dispone de comparación con otros modelos multimodales de tamaño similar 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zherebetskyy/Qwen3.8-27B-mxfp8-mlx
+- Repositorio Hugging Face: https://huggingface.co/zherebetskyy/Qwen3.8-27B-mxfp8-mlx
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base en MLX (bf16): https://huggingface.co/mlx-community/Qwen3.8-27B-bf16
 - Framework MLX: https://github.com/ml-explore/mlx

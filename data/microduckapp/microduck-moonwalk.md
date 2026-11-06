@@ -6,7 +6,7 @@ Microduck Moonwalk es una política de control en formato ONNX publicada por mic
 
 El "modelo" implementa un movimiento concreto y cerrado: una coreografía de 11,0 segundos descrita por el autor como un deslizamiento hacia atrás con balanceo suave, giro y pose final. Se distribuye junto a un `manifest.json` que indica al robot qué debe instalar y cómo reproducir la rutina, y un vídeo de previsualización en `media/preview.mp4`. Su relevancia es, por tanto, la de un artefacto de robótica de consumo: un ejemplo de empaquetado de políticas de movimiento portables y reproducibles para un robot de bajo coste.
 
-La información publicada es muy escasa: el repositorio ocupa 0,0 GB, no declara licencia, no declara idiomas y no incluye arquitectura interna, número de parámetros ni datos de entrenamiento. La fecha de creación registrada en HuggingFace es 2026-10-27. Todo lo que no consta se marca explícitamente como "no disponible".
+La información publicada es muy escasa: el repositorio ocupa 0,0 GB, no declara licencia, no declara idiomas y no incluye arquitectura interna, número de parámetros ni datos de entrenamiento. La fecha de creación registrada en Hugging Face es 2026-10-27. Todo lo que no consta se marca explícitamente como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La información publicada es muy escasa: el repositorio ocupa 0,0 GB, no declara
 | Frecuencia de control | 50 Hz |
 | Duración del movimiento | 11,0 s (aproximadamente 550 pasos de control a 50 Hz) |
 | Artefactos adicionales | `manifest.json` (instalación y reproducción), `media/preview.mp4` (previsualización) |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Etiquetas | onnx, robotics, microduck-move, region:us |
 
 ## Arquitectura y entrenamiento
@@ -67,7 +67,7 @@ No hay métricas de recompensa, tasa de éxito, error de seguimiento articular, 
 - **Compatibilidad con GPU de consumo**: no confirmada. No se documenta si el movimiento se ejecuta en el robot, en un host acompañante o en un servidor.
 - **Opciones de despliegue**: al distribuirse como `policy.onnx`, es compatible en principio con runtimes ONNX (ONNX Runtime, entre otros). No se documenta soporte de vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de artefacto.
 - **Latencia y throughput**: no disponibles. El único requisito temporal explícito es mantener 50 Hz (20 ms por paso de control) para reproducir el movimiento tal como fue diseñado.
-- **Almacenamiento**: el repositorio ocupa 0,0 GB según HuggingFace, lo que sugiere un artefacto muy ligero, aunque la cifra está redondeada y no permite estimar el tamaño real de `policy.onnx`.
+- **Almacenamiento**: el repositorio ocupa 0,0 GB según Hugging Face, lo que sugiere un artefacto muy ligero, aunque la cifra está redondeada y no permite estimar el tamaño real de `policy.onnx`.
 
 ## Comparativa con modelos similares
 
@@ -75,7 +75,7 @@ No se dispone de información sobre otras políticas comparables. La alternativa
 
 | Modelo | Tipo | Entradas / salidas | Frecuencia | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| microduck-moonwalk | Política de control ONNX (robótica) | 61 / 14 | 50 Hz | no aplica | no disponible | HuggingFace (microduckapp) |
+| microduck-moonwalk | Política de control ONNX (robótica) | 61 / 14 | 50 Hz | no aplica | no disponible | Hugging Face (microduckapp) |
 | Otros `microduck-move` | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Políticas de locomotion de referencia (p. ej. familias publicadas para cuadrúpedos) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se han encontrado en la información proporcionada modelos comparables con da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microduckapp/microduck-moonwalk
+- Hugging Face: https://huggingface.co/microduckapp/microduck-moonwalk
 - `policy.onnx`: https://huggingface.co/microduckapp/microduck-moonwalk/blob/main/policy.onnx (ruta inferida del contenido de la model card)
 - `manifest.json`: https://huggingface.co/microduckapp/microduck-moonwalk/blob/main/manifest.json (ruta inferida del contenido de la model card)
 - `media/preview.mp4`: https://huggingface.co/microduckapp/microduck-moonwalk/blob/main/media/preview.mp4 (ruta inferida del contenido de la model card)

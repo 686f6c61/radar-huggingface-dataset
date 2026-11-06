@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Singla0009/Hindi-to-Hinglish-Marian-GGUF es un sistema de transliteracion neuronal que convierte texto hindi escrito en Devanagari a Hinglish romanizado (hindi coloquial escrito con alfabeto latino). Lo publica el usuario Singla0009 en HuggingFace y esta construido sobre una variante destilada de MarianMT, la arquitectura transformer secuencia-a-secuencia de traduccion automatica neuronal, con 6 capas de encoder y una unica capa de decoder. Cuenta con 148.891.847 parametros totales, dimension de embedding de 512, 8 cabezas de atencion y un vocabulario de 61.127 tokens gestionado con un tokenizer SentencePiece embebido en el propio contenedor GGUF.
+El modelo Singla0009/Hindi-to-Hinglish-Marian-GGUF es un sistema de transliteracion neuronal que convierte texto hindi escrito en Devanagari a Hinglish romanizado (hindi coloquial escrito con alfabeto latino). Lo publica el usuario Singla0009 en Hugging Face y esta construido sobre una variante destilada de MarianMT, la arquitectura transformer secuencia-a-secuencia de traduccion automatica neuronal, con 6 capas de encoder y una unica capa de decoder. Cuenta con 148.891.847 parametros totales, dimension de embedding de 512, 8 cabezas de atencion y un vocabulario de 61.127 tokens gestionado con un tokenizer SentencePiece embebido en el propio contenedor GGUF.
 
 Su relevancia practica esta en el nicho de la romanizacion de subtitulos y transcripciones en tiempo real para el mercado indic: el modelo se distribuye ya cuantizado (Q8_0 y FP16) en formato GGUF, de modo que puede ejecutarse tanto en CPU como en GPU a traves de Vulkan o CUDA con una huella de memoria muy reducida (aproximadamente 62 MB en Q8_0). Segun la model card, alcanza unas 220 palabras por segundo y una latencia de 30 a 60 ms por frase completa en una GPU Vulkan, lo que lo situa por encima de 150 veces el tiempo real en flujos de subtitulado en directo.
 
@@ -76,7 +76,7 @@ La informacion proporcionada no incluye datos verificables sobre modelos alterna
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Singla0009/Hindi-to-Hinglish-Marian-GGUF | 148.891.847 | No disponible | ~220 palabras/s, 30-60 ms/frase | MIT | GGUF en HuggingFace |
+| Singla0009/Hindi-to-Hinglish-Marian-GGUF | 148.891.847 | No disponible | ~220 palabras/s, 30-60 ms/frase | MIT | GGUF en Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No disponible: no se dispone de datos fiables de modelos comparables en la informacion suministrada.
@@ -94,5 +94,5 @@ No disponible: no se dispone de datos fiables de modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Singla0009/Hindi-to-Hinglish-Marian-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Singla0009/Hindi-to-Hinglish-Marian-GGUF
 - No se han encontrado en la busqueda web enlaces relevantes adicionales (papers, blogs, repositorios o demos) asociados a este modelo.

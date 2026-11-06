@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sbert_FinModernBERT_query` es un modelo de embeddings de frases (sentence transformer) especializado en recuperación de información sobre documentos financieros en inglés. Lo publica el usuario kokitabayashi en HuggingFace y se construye mediante fine-tuning de `sentence-transformers/bert-base-nli-mean-tokens` (un BERT base de 109,5 millones de parámetros) sobre pares sintéticos de preguntas y fragmentos de filings de la SEC, generados a partir de `BatuhanECB/FinModernBERT-pairs-sec-synthetic-v1`.
+`sbert_FinModernBERT_query` es un modelo de embeddings de frases (sentence transformer) especializado en recuperación de información sobre documentos financieros en inglés. Lo publica el usuario kokitabayashi en Hugging Face y se construye mediante fine-tuning de `sentence-transformers/bert-base-nli-mean-tokens` (un BERT base de 109,5 millones de parámetros) sobre pares sintéticos de preguntas y fragmentos de filings de la SEC, generados a partir de `BatuhanECB/FinModernBERT-pairs-sec-synthetic-v1`.
 
 El modelo resuelve el problema de la búsqueda semántica en corpus financieros: dado un query en lenguaje natural sobre datos de empresas (resultados, riesgos, estructura de plantilla, condiciones de deuda), devuelve los pasajes relevantes de informes anuales y trimestrales. Es relevante para pipelines de RAG sobre documentación regulatoria, donde los embeddings genéricos rinden peor por el vocabulario técnico y la densidad de cifras del dominio.
 
@@ -80,10 +80,10 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kokitabayashi/sbert_FinModernBERT_query | 109,5 M | 512 | Financiero (SEC) | Apache 2.0 | HuggingFace |
-| sentence-transformers/bert-base-nli-mean-tokens | 109,5 M | 512 | General (NLI) | Apache 2.0 | HuggingFace |
-| BAAI/bge-base-en-v1.5 | 109 M | 512 | General | MIT | HuggingFace |
-| intfloat/e5-base-v2 | 109 M | 512 | General | MIT | HuggingFace |
+| kokitabayashi/sbert_FinModernBERT_query | 109,5 M | 512 | Financiero (SEC) | Apache 2.0 | Hugging Face |
+| sentence-transformers/bert-base-nli-mean-tokens | 109,5 M | 512 | General (NLI) | Apache 2.0 | Hugging Face |
+| BAAI/bge-base-en-v1.5 | 109 M | 512 | General | MIT | Hugging Face |
+| intfloat/e5-base-v2 | 109 M | 512 | General | MIT | Hugging Face |
 
 La comparación de rendimiento con estas alternativas no está disponible en la información proporcionada. El modelo se distingue por su especialización en filings de la SEC, mientras que los otros son retrievers generalistas con amplia validación en MTEB.
 
@@ -100,7 +100,7 @@ La comparación de rendimiento con estas alternativas no está disponible en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kokitabayashi/sbert_FinModernBERT_query
+- Hugging Face: https://huggingface.co/kokitabayashi/sbert_FinModernBERT_query
 - Modelo base: https://huggingface.co/sentence-transformers/bert-base-nli-mean-tokens
 - Dataset de entrenamiento: https://huggingface.co/datasets/BatuhanECB/FinModernBERT-pairs-sec-synthetic-v1
 - Paper de Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084

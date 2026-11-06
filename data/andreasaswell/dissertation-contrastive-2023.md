@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andreasaswell/dissertation-contrastive-2023` es un repositorio de HuggingFace que contiene una implementación propia de la arquitectura BEiT (Bert Pre-Training of Image Transformers) orientada a aprendizaje contrastivo, publicada por el usuario andreasaswell en el contexto de una tesis doctoral. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el archivo `model.safetensors` es explícitamente descrito por el autor como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye además el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
+`andreasaswell/dissertation-contrastive-2023` es un repositorio de Hugging Face que contiene una implementación propia de la arquitectura BEiT (Bert Pre-Training of Image Transformers) orientada a aprendizaje contrastivo, publicada por el usuario andreasaswell en el contexto de una tesis doctoral. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el archivo `model.safetensors` es explícitamente descrito por el autor como un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye además el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
 
 La relevancia de este repositorio es, por tanto, académica y reproducible, no de producción. Se enmarca en una línea de investigación sobre clasificación continua de imágenes en flujos de datos mediante aprendizaje contrastivo, según la propuesta de doctorado encontrada en la búsqueda web. El autor declara la variante "huge" de BEiT, con atención flash, fusión bilineal, activación approximate GELU y normalización por batch.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andreasaswell/dissertation-contrastive-2023 | 33.088 (según safetensors) | no disponible | sin benchmarks | MIT | HuggingFace, checkpoint de inicialización |
-| BEiT-base (oficial Microsoft) | ~86M | no aplica (visión) | benchmarks publicados en el paper original | MIT | HuggingFace, pesos entrenados |
-| BEiT-large (oficial Microsoft) | ~304M | no aplica (visión) | benchmarks publicados en el paper original | MIT | HuggingFace, pesos entrenados |
+| andreasaswell/dissertation-contrastive-2023 | 33.088 (según safetensors) | no disponible | sin benchmarks | MIT | Hugging Face, checkpoint de inicialización |
+| BEiT-base (oficial Microsoft) | ~86M | no aplica (visión) | benchmarks publicados en el paper original | MIT | Hugging Face, pesos entrenados |
+| BEiT-large (oficial Microsoft) | ~304M | no aplica (visión) | benchmarks publicados en el paper original | MIT | Hugging Face, pesos entrenados |
 
 La comparación con las variantes oficiales de BEiT es la más directa por arquitectura, pero conviene subrayar que este repositorio no ofrece pesos entrenados ni resultados, por lo que no es sustituible por las variantes oficiales en ningún caso de uso de producción.
 
@@ -74,10 +74,10 @@ La comparación con las variantes oficiales de BEiT es la más directa por arqui
 - No hay resultados de benchmarks, ni logs de entrenamiento, ni versiones de entorno publicadas junto a resultados.
 - Riesgo de alucinación y sesgos: no evaluables en un modelo sin entrenar; cualquier uso con datos externos debe revisar por separado los términos de la fuente de datos, como advierte el autor.
 - La licencia MIT permite uso comercial del código, pero no cubre los términos de los datasets externos con los que se entrene.
-- Las APIs genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito, lo que complica la integración directa en pipelines estándar.
+- Las APIs genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito, lo que complica la integración directa en pipelines estándar.
 - El repositorio ocupa 0.0 GB y tiene 0 descargas y 0 likes, señal de que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andreasaswell/dissertation-contrastive-2023
+- Repositorio Hugging Face: https://huggingface.co/andreasaswell/dissertation-contrastive-2023
 - Propuesta de doctorado relacionada (GI Digital Library): https://dl.gi.de/items/2059cc3b-1246-4396-996e-addcdb2fae92

@@ -66,7 +66,7 @@ El resultado del servidor público se declara autoritativo. Las cifras locales s
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el tamaño del repositorio es de 0,0 GB según HuggingFace, lo que sugiere un grafo ONNX muy pequeño, pero no se especifica el número de parámetros.
+- VRAM estimada para inferencia: no disponible; el tamaño del repositorio es de 0,0 GB según Hugging Face, lo que sugiere un grafo ONNX muy pequeño, pero no se especifica el número de parámetros.
 - GPU recomendadas: no disponible; al ser una política de 61 entradas y 14 salidas a 50 Hz, es plausible su ejecución en CPU, pero no se documenta.
 - Compatibilidad con GPU de consumo: no confirmada; no hay datos publicados sobre requisitos mínimos.
 - Opciones de despliegue: ONNX Runtime 1.24.4 junto con MuJoCo 3.10.0, según las versiones fijadas por el autor. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -77,8 +77,8 @@ El resultado del servidor público se declara autoritativo. Las cifras locales s
 
 | Modelo | Tipo | Interfaz | Contexto/ventana | Rendimiento Arena | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HlibPlakhtii/microduck-sock-heist-quicksilver-v1 | Política robótica ONNX con lookup | 61 entradas / 14 salidas a 50 Hz | 48 observaciones comparadas | 5,051 s agregado; seed 1 en 4,885 s | no disponible | HuggingFace, 0 descargas |
-| rumezhak/microduck-sock-heist-second-green-v2 | Política robótica ONNX (base) | 61 entradas / 14 salidas a 50 Hz | no aplica | 5,052 s agregado; seed 1 en 4,890 s | no disponible | HuggingFace |
+| HlibPlakhtii/microduck-sock-heist-quicksilver-v1 | Política robótica ONNX con lookup | 61 entradas / 14 salidas a 50 Hz | 48 observaciones comparadas | 5,051 s agregado; seed 1 en 4,885 s | no disponible | Hugging Face, 0 descargas |
+| rumezhak/microduck-sock-heist-second-green-v2 | Política robótica ONNX (base) | 61 entradas / 14 salidas a 50 Hz | no aplica | 5,052 s agregado; seed 1 en 4,890 s | no disponible | Hugging Face |
 | Otras políticas Microduck de la Arena | Políticas robóticas | variable | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría fuera del ecosistema Microduck.
@@ -97,7 +97,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-sock-heist-quicksilver-v1
+- Modelo en Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-sock-heist-quicksilver-v1
 - Modelo base: https://huggingface.co/rumezhak/microduck-sock-heist-second-green-v2
 - Revisión fijada del base citada en la model card: https://huggingface.co/rumezhak/microduck-sock-heist-second-green-v2/tree/73589ead9485546120bd47f635f15b4cff6fafdb
 - Pollen Robotics: no disponible (enlace no incluido en la información proporcionada)

@@ -6,7 +6,7 @@ AMD/Llama-3.2-1B-Instruct_rai_1.9.0_npu es una distribucion optimizada del model
 
 La relevancia de esta publicacion no reside en el modelo en si, sino en el empaquetado: AMD distribuye los pesos en formato ONNX cuantizado con Quark, el toolkit de compresion de AMD, y los integra con el stack Ryzen AI 1.9.0 para acelerar la inferencia en la NPU local (arquitectura XDNA/XDNA2). Esto permite ejecutar un LLM de 1B en portatiles y mini-PC con Ryzen AI sin depender de una GPU dedicada ni de la nube.
 
-El repositorio ocupa 2,0 GB, esta sujeto a acceso restringido (gated) en HuggingFace y solo declara soporte para ingles. La licencia es la Llama 3.2 Community License, heredada del modelo original de Meta.
+El repositorio ocupa 2,0 GB, esta sujeto a acceso restringido (gated) en Hugging Face y solo declara soporte para ingles. La licencia es la Llama 3.2 Community License, heredada del modelo original de Meta.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ El repositorio ocupa 2,0 GB, esta sujeto a acceso restringido (gated) en Hugging
 | Formato de pesos | ONNX (cuantizado con Quark) |
 | Tamano del repositorio | 2,0 GB |
 | Pipeline | text-generation |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 2026-11-02 |
 
 ## Arquitectura y entrenamiento
@@ -80,14 +80,14 @@ La diferencia clave frente a las alternativas es el empaquetado para NPU y el ru
 - Solo soporta ingles de forma declarada; el rendimiento en castellano no esta garantizado.
 - Modelo de 1B parametros: propenso a alucinaciones y errores en razonamiento complejo, matematicas avanzadas y tareas de codigo de larga duracion.
 - Fuertemente acoplado al hardware AMD Ryzen AI y al runtime 1.9.0; no es portable a GPU NVIDIA ni a otros aceleradores sin reconversion.
-- Acceso restringido en HuggingFace: es necesario aceptar la licencia Llama 3.2 antes de descargar.
+- Acceso restringido en Hugging Face: es necesario aceptar la licencia Llama 3.2 antes de descargar.
 - La licencia Llama 3.2 Community License impone condiciones al uso comercial (umbral de 700 millones de usuarios mensuales, atribucion "Built with Llama" y restricciones de uso aceptable); revisar antes de desplegar en produccion.
 - La cuantizacion con Quark puede degradar ligeramente la calidad respecto al modelo original en safetensors; no se publican evaluaciones de la perdida de precision.
 - No se documentan sesgos especificos de esta distribucion; aplican los sesgos conocidos del modelo base Llama 3.2.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/Llama-3.2-1B-Instruct_rai_1.9.0_npu
+- Modelo en Hugging Face: https://huggingface.co/amd/Llama-3.2-1B-Instruct_rai_1.9.0_npu
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - AMD Ryzen AI: https://www.amd.com/en/products/processors/consumer/ryzen-ai.html

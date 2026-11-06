@@ -85,5 +85,5 @@ La comparativa clave es contra el control `retain90`: mientras que el control nu
 
 ## Enlaces
 
-- [HuggingFace: lindafei001/tofu-forget10-relearned-AltPO-lr5e5](https://huggingface.co/lindafei001/tofu-forget10-relearned-AltPO-lr5e5)
+- [Hugging Face: lindafei001/tofu-forget10-relearned-AltPO-lr5e5](https://huggingface.co/lindafei001/tofu-forget10-relearned-AltPO-lr5e5)
 - [Modelo base: open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_AltPO_lr5e-05_beta0.05_alpha1_epoch10](https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_AltPO_lr5e-05_beta0.05_alpha1_epoch10)

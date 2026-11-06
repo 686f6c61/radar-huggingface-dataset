@@ -21,7 +21,7 @@ El modelo es relevante por su relación entre tamaño y rendimiento: con solo 1.
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Tamaño del repositorio | 2,6 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creación | 26 de octubre de 2026 |
 | Última actualización | 28 de octubre de 2026 |
 
@@ -86,8 +86,8 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 | 1,3B | 262.144 tokens | OCR y parseo documental | Apache 2.0 | HuggingFace (build FlagOS) |
-| MiniCPM-OCR Jev | 2B | no disponible | Inspección de calidad de parseo OCR | no disponible en la información | HuggingFace (según model card) |
+| MiniCPM-OCR 1.0 | 1,3B | 262.144 tokens | OCR y parseo documental | Apache 2.0 | Hugging Face (build FlagOS) |
+| MiniCPM-OCR Jev | 2B | no disponible | Inspección de calidad de parseo OCR | no disponible en la información | Hugging Face (según model card) |
 | Qwen3.5-397B-A17B | 397B (17B activos) | no disponible | Modelo generalista multimodal | no disponible en la información | Referenciado en la model card |
 
 La model card compara Jev (2B) con Qwen3.5-397B-A17B en la tarea de verificación de calidad (AUROC 0,936 frente a 0,938 en JevOCRBench), lo que ilustra la eficiencia de la familia MiniCPM-OCR frente a modelos generalistas mucho mayores en tareas especializadas. No se dispone de comparativas directas de OCR 1.0 con otros modelos OCR especializados en la información proporcionada.
@@ -105,7 +105,7 @@ La model card compara Jev (2B) con Qwen3.5-397B-A17B en la tarea de verificació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-nvidia-FlagOS
+- Modelo en Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-nvidia-FlagOS
 - Imagen Docker FlagOS: `harbor.baai.ac.cn/flagrelease-public/minicpm-ocr-nvidia003-gems0.0-tree0.7.0-cxnone-plugin0.0.0-vllm0.24.0-cp312-pt211-cu129-x64-580.105.08:202610270926`
 - Descarga de pesos vía ModelScope: `modelscope download --model FlagRelease/MiniCPM-OCR-1.0-nvidia-FlagOS --local_dir /data/MiniCPM-OCR-1.0`
 - Organización ModelBest: no disponible en la información proporcionada

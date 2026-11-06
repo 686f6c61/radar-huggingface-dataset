@@ -31,7 +31,7 @@ Tampoco hay datos sobre el número de tokens de entrenamiento, la composición d
 
 - Generación de texto conversacional: el tag "conversational" y el pipeline image-text-to-text indican soporte de diálogo multi-turno.
 - Procesamiento de imagen y texto: el pipeline declarado es image-text-to-text, por lo que el modelo base acepta entradas visuales junto con texto.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse a través de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse a través de infraestructura compatible con la API de Hugging Face.
 - Inferencia local vía llama.cpp: al estar en formato GGUF, puede ejecutarse con llama-cli y llama-server.
 - Capacidades específicas de tool calling, agentes, matemáticas, código o modo thinking: no disponibles en la información proporcionada.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MinecraftElytraEnd/Qwen3.8-27B-Q8_0-GGUF | ~27,3B | no disponible | GGUF Q8_0 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (base) | ~27,3B | no disponible | safetensors | Apache 2.0 | HuggingFace |
+| MinecraftElytraEnd/Qwen3.8-27B-Q8_0-GGUF | ~27,3B | no disponible | GGUF Q8_0 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (base) | ~27,3B | no disponible | safetensors | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (multimodales de ~27B) en la documentación proporcionada, por lo que no se incluyen alternativas adicionales.
 
@@ -76,7 +76,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MinecraftElytraEnd/Qwen3.8-27B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MinecraftElytraEnd/Qwen3.8-27B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

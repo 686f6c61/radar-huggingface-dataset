@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dfreq-roller-ppo024-20261105` es un checkpoint de investigación de aprendizaje por refuerzo (PPO, Proximal Policy Optimization) publicado por el usuario djduecaster en HuggingFace. No se trata de un modelo de lenguaje: es una política de control entrenada para un entorno de simulación denominado "microduck-arena", en la que un agente ("roller") debe completar un recorrido a una velocidad de comando fija de 1,1 m/s. El modelo recibe 61 observaciones y emite 14 acciones, y se distribuye en formato ONNX para inferencia en CPU (con un run de entrenamiento realizado en MPS/Apple Silicon).
+`dfreq-roller-ppo024-20261105` es un checkpoint de investigación de aprendizaje por refuerzo (PPO, Proximal Policy Optimization) publicado por el usuario djduecaster en Hugging Face. No se trata de un modelo de lenguaje: es una política de control entrenada para un entorno de simulación denominado "microduck-arena", en la que un agente ("roller") debe completar un recorrido a una velocidad de comando fija de 1,1 m/s. El modelo recibe 61 observaciones y emite 14 acciones, y se distribuye en formato ONNX para inferencia en CPU (con un run de entrenamiento realizado en MPS/Apple Silicon).
 
 El checkpoint corresponde a la iteración 24 de una serie de ejecuciones diarias de PPO y se presenta explícitamente como un "candidato de puntos", no como una mejora ni una candidatura al podio. El autor declara métricas de compatibilidad local (5/5 finalizaciones, 128/128 finalizaciones en validación de arranque ordinario y 64/64 en validación de estrés de comando) dentro de un presupuesto de no inferioridad de +0,030 s frente a la línea base general.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dfreq-roller-ppo024-20261105 | Política PPO (ONNX) | no disponible | no aplica | 2,718 s; 5/5 finalizaciones | no disponible | HuggingFace |
+| dfreq-roller-ppo024-20261105 | Política PPO (ONNX) | no disponible | no aplica | 2,718 s; 5/5 finalizaciones | no disponible | Hugging Face |
 | Roller best (mismo autor) | Política PPO | no disponible | no aplica | 2,570 s | no disponible | Referenciado en la model card |
 | Tug cup entrant (mismo autor) | Política PPO | no disponible | no aplica | no disponible | no disponible | Referenciado en la model card |
 
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables de otros autores en la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djduecaster/dfreq-roller-ppo024-20261105
+- Modelo en Hugging Face: https://huggingface.co/djduecaster/dfreq-roller-ppo024-20261105
 - Model card del autor: incluida en la página anterior (sección README)
 - Archivos de términos heredados citados por el autor: `upstream-base-card.md` y `LICENSE-NOTE.txt` (dentro del repositorio)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la búsqueda web.

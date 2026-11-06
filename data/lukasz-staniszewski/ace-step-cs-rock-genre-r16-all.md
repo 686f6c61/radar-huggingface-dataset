@@ -68,7 +68,7 @@ No se dispone de información sobre adaptadores equivalentes de otros autores o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukasz-staniszewski/ace-step-cs-rock-genre-r16-all
+- Modelo en Hugging Face: https://huggingface.co/lukasz-staniszewski/ace-step-cs-rock-genre-r16-all
 - Colección de la suite de steering: https://huggingface.co/collections/lukasz-staniszewski/ace-step-audio-steering-suite-6a0bb3dacbac8e6db8f4d4e4
 - Repositorio de ACE-Step en GitHub: https://github.com/ace-step/ACE-Step
 - README de ACE-Step: https://github.com/ace-step/ACE-Step/blob/main/README.md

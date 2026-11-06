@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LoveGlaze/Qwen2.5-7B-Q3_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LoveGlaze/Qwen2.5-7B-Q3_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-7B/blob/main/LICENSE
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

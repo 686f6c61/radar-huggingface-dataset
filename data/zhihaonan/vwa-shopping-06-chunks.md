@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZhihaoNan/vwa-shopping-06-chunks es un repositorio publicado en HuggingFace por el usuario ZhihaoNan. En el momento de la consulta, la informacion disponible es extremadamente limitada: el repositorio no declara pipeline, licencia, idiomas ni tamanos de modelo, y acumula 0 descargas y 2 likes desde su creacion el 13 de septiembre de 2026. El unico tag asociado es region:us, que unicamente indica la region de publicacion y no aporta informacion tecnica sobre el contenido.
+ZhihaoNan/vwa-shopping-06-chunks es un repositorio publicado en Hugging Face por el usuario ZhihaoNan. En el momento de la consulta, la informacion disponible es extremadamente limitada: el repositorio no declara pipeline, licencia, idiomas ni tamanos de modelo, y acumula 0 descargas y 2 likes desde su creacion el 13 de septiembre de 2026. El unico tag asociado es region:us, que unicamente indica la region de publicacion y no aporta informacion tecnica sobre el contenido.
 
 El identificador del repositorio sugiere, por su nomenclatura, un posible conjunto de datos o artefacto fragmentado ("chunks") vinculado a una tarea de compras ("shopping") y al acronimo VWA, que podria corresponder a un agente web visual (Visual Web Agent) o a una denominacion interna del autor. No obstante, no se ha encontrado documentacion, model card, paper ni anuncio que confirme esta interpretacion, por lo que debe tratarse como una hipotesis no verificada y no como un dato tecnico.
 
@@ -40,7 +40,7 @@ El nombre del repositorio incluye el termino "chunks", lo que podria indicar un 
 
 - No disponible. Sin informacion sobre la naturaleza del artefacto (modelo, dataset u otro), no es posible proponer casos de uso concretos y realistas.
 - Cualquier escenario de aplicacion que se planteara seria especulativo y vulneraria el principio de no inventar datos.
-- Se recomienda contactar con el autor del repositorio o consultar la model card directamente en HuggingFace para obtener informacion antes de considerar su uso.
+- Se recomienda contactar con el autor del repositorio o consultar la model card directamente en Hugging Face para obtener informacion antes de considerar su uso.
 - Si el repositorio resultara ser un dataset fragmentado relacionado con tareas de compras, su uso quedaria condicionado a la verificacion de su procedencia, licencia y calidad de los datos.
 - Si el repositorio resultara ser un modelo, seria necesario confirmar arquitectura, tamano y licencia antes de evaluar cualquier integracion en produccion.
 - En cualquier caso, la ausencia de licencia declarada impide determinar si existe permiso para uso comercial.
@@ -63,7 +63,7 @@ No disponible. No se ha podido determinar la categoria del artefacto (modelo de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ZhihaoNan/vwa-shopping-06-chunks | no disponible | no disponible | no disponible | HuggingFace |
+| ZhihaoNan/vwa-shopping-06-chunks | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No disponible. No se ha podido determinar la categoria del artefacto (modelo de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZhihaoNan/vwa-shopping-06-chunks
+- Repositorio en Hugging Face: https://huggingface.co/ZhihaoNan/vwa-shopping-06-chunks
 - Perfil del autor: no disponible
 - Paper: no disponible
 - Blog o anuncio: no disponible

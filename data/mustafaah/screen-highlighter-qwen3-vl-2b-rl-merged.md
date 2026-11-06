@@ -79,10 +79,10 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mustafaah/screen-highlighter-qwen3-vl-2b-rl-merged | 2,13 mil millones | Resaltado de elementos de interfaz (salida JSON) | Apache 2.0 | HuggingFace, transformers | 0 descargas, 1 like; sin benchmarks publicados |
-| Qwen/Qwen3-VL-2B-Instruct | no disponible en la informacion proporcionada | Vision-lenguaje general | no disponible en la informacion proporcionada | HuggingFace | Modelo base del ajuste; no esta especializado en salida JSON de resaltado |
-| mustafaah/screen-highlighter-qwen3-vl-2b-highlight-only-v1 | no disponible | Adaptadores LoRA "highlight-only" | no disponible en la informacion proporcionada | HuggingFace | Origen de los adaptadores fusionados; requiere el modelo base |
-| Otras alternativas de grounding de interfaz (por ejemplo, modelos de la familia Florence-2 o Qwen2.5-VL) | no disponible | Deteccion y grounding visual | no disponible | HuggingFace | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion |
+| mustafaah/screen-highlighter-qwen3-vl-2b-rl-merged | 2,13 mil millones | Resaltado de elementos de interfaz (salida JSON) | Apache 2.0 | Hugging Face, transformers | 0 descargas, 1 like; sin benchmarks publicados |
+| Qwen/Qwen3-VL-2B-Instruct | no disponible en la informacion proporcionada | Vision-lenguaje general | no disponible en la informacion proporcionada | Hugging Face | Modelo base del ajuste; no esta especializado en salida JSON de resaltado |
+| mustafaah/screen-highlighter-qwen3-vl-2b-highlight-only-v1 | no disponible | Adaptadores LoRA "highlight-only" | no disponible en la informacion proporcionada | Hugging Face | Origen de los adaptadores fusionados; requiere el modelo base |
+| Otras alternativas de grounding de interfaz (por ejemplo, modelos de la familia Florence-2 o Qwen2.5-VL) | no disponible | Deteccion y grounding visual | no disponible | Hugging Face | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mustafaah/screen-highlighter-qwen3-vl-2b-rl-merged
+- Modelo en Hugging Face: https://huggingface.co/mustafaah/screen-highlighter-qwen3-vl-2b-rl-merged
 - Adaptadores de origen (highlight-only v1): https://huggingface.co/mustafaah/screen-highlighter-qwen3-vl-2b-highlight-only-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Revision base declarada por el autor: `89644892e4d85e24eaac8bacfd4f463576704203`

@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - AryanK123/llama-1b-lora-openr1-math](https://huggingface.co/AryanK123/llama-1b-lora-openr1-math)
+- [Hugging Face - AryanK123/llama-1b-lora-openr1-math](https://huggingface.co/AryanK123/llama-1b-lora-openr1-math)
 - [Modelo base: meta-llama/Llama-3.2-1B](https://huggingface.co/meta-llama/Llama-3.2-1B)
-- [Repositorio Open-R1 (HuggingFace)](https://github.com/huggingface/open-r1)
+- [Repositorio Open-R1 (Hugging Face)](https://github.com/huggingface/open-r1)
 - [Paper LLaMA: Open and Efficient Foundation Language Models](https://arxiv.org/abs/2302.13971)

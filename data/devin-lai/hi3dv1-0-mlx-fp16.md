@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Entrada | Resoluciones | Framework | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hi3Dv1.0-mlx-fp16 | Refinamiento geométrico image-to-3d | Imagen + malla gruesa | 512³, 1024³, 1536³ | MLX (Apple Silicon) | Hi3D Open License v1.0 | HuggingFace (0 descargas) |
-| Hi3Dv1.0 (original) | Refinamiento geométrico image-to-3d | Imagen + malla gruesa | no disponible en la información | no disponible | Hi3D Open License v1.0 | HuggingFace (hi3d-official) |
+| Hi3Dv1.0-mlx-fp16 | Refinamiento geométrico image-to-3d | Imagen + malla gruesa | 512³, 1024³, 1536³ | MLX (Apple Silicon) | Hi3D Open License v1.0 | Hugging Face (0 descargas) |
+| Hi3Dv1.0 (original) | Refinamiento geométrico image-to-3d | Imagen + malla gruesa | no disponible en la información | no disponible | Hi3D Open License v1.0 | Hugging Face (hi3d-official) |
 | Otras alternativas image-to-3d | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos competidores en la información proporcionada, por lo que no es posible una comparación cuantitativa.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos competido
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-fp16
+- Modelo en Hugging Face: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-fp16
 - Runtime y guía de instalación: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx
 - Componentes compartidos: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-shared
 - Resultados registrados: https://huggingface.co/datasets/devin-lai/Hi3Dv1.0-mlx-results

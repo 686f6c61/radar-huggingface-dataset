@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PointNet (este repo) | PointNet | Nubes de puntos 3D | MIT | ONNX en HuggingFace |
+| PointNet (este repo) | PointNet | Nubes de puntos 3D | MIT | ONNX en Hugging Face |
 | PointNet++ (Qi et al.) | PointNet++ (jerárquica) | Nubes de puntos 3D | Uso académico según repo original | Código en GitHub, sin pesos oficiales en HF |
 | Point Transformer | Transformer para nubes de puntos | Nubes de puntos 3D | Varía según implementación | Repos de investigación |
 | DGCNN | Graph CNN sobre k-NN | Nubes de puntos 3D | MIT en implementaciones públicas | Código en GitHub |
@@ -84,7 +84,7 @@ La comparación se limita a nivel arquitectónico: no se dispone de métricas co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SDoyez/pointNet_ShapeNet
+- Hugging Face: https://huggingface.co/SDoyez/pointNet_ShapeNet
 - Framework OpenML-core (GitHub): https://github.com/sebastien-doyez2812/OpenML-core
 - Paper original PointNet (Qi et al., 2017): https://arxiv.org/abs/1612.00593
 - Dataset ShapeNet: https://shapenet.org/

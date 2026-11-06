@@ -4,7 +4,7 @@
 
 PSPNet (Pyramid Scene Parsing Network) es un modelo de segmentacion semantica desarrollado originalmente por el grupo de investigacion de Hengshuang Zhao y colaboradores, y posteriormente optimizado por Qualcomm para su despliegue en dispositivos con chipsets Snapdragon y Dragonwing. El modelo resuelve el problema de comprension de escenas mediante la agregacion de informacion de contexto global a multiples escalas, utilizando un modulo de pyramid pooling que captura caracteristicas contextuales de distintas regiones de la imagen.
 
-Esta version publicada por Qualcomm en HuggingFace contiene pesos pre-exportados en formatos ONNX, QNN_DLC y TFLITE, optimizados para ejecucion en la NPU de los procesadores Qualcomm. El modelo se basa en un backbone ResNet-101, tiene 65,7 millones de parametros y acepta imagenes de entrada de 473x473 pixeles. Su tamano en float es de 251 MB y el repositorio ocupa 1,5 GB. La licencia MIT permite uso comercial sin restricciones.
+Esta version publicada por Qualcomm en Hugging Face contiene pesos pre-exportados en formatos ONNX, QNN_DLC y TFLITE, optimizados para ejecucion en la NPU de los procesadores Qualcomm. El modelo se basa en un backbone ResNet-101, tiene 65,7 millones de parametros y acepta imagenes de entrada de 473x473 pixeles. Su tamano en float es de 251 MB y el repositorio ocupa 1,5 GB. La licencia MIT permite uso comercial sin restricciones.
 
 La relevancia actual de este modelo radica en su capacidad para ejecutarse en dispositivos moviles y embebidos de gama alta, ofreciendo segmentacion semantica en tiempo real o casi real sobre hardware Qualcomm, lo que lo hace util para aplicaciones de realidad aumentada, conduccion asistida y analisis de escenas en el borde.
 
@@ -109,7 +109,7 @@ No se dispone en la informacion proporcionada de datos comparativos de rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/PSPNet
+- Hugging Face: https://huggingface.co/qualcomm/PSPNet
 - Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/pspnet
 - Repositorio GitHub de Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/pspnet
 - README en GitHub: https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pspnet/README.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed3407_seed3407` es un ajuste fino (SFT) del modelo base `fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407`, publicado por el usuario fpadovani en HuggingFace. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. El identificador del modelo apunta a un experimento academico: la traza de entrenamiento se registro en un proyecto de Weights & Biases bajo la organizacion "f-padovani-university-of-groningen", con el nombre de proyecto "white_cotterell", lo que sugiere un contexto de investigacion en procesamiento de lenguaje natural.
+El modelo `eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed3407_seed3407` es un ajuste fino (SFT) del modelo base `fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407`, publicado por el usuario fpadovani en Hugging Face. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. El identificador del modelo apunta a un experimento academico: la traza de entrenamiento se registro en un proyecto de Weights & Biases bajo la organizacion "f-padovani-university-of-groningen", con el nombre de proyecto "white_cotterell", lo que sugiere un contexto de investigacion en procesamiento de lenguaje natural.
 
 Por la nomenclatura del identificador ("eng", "100mb", "wc", "zipf", "newlex", "jpn", "ckpt4000", "seed3407") cabe inferir que forma parte de una bateria de experimentos controlados sobre composicion de corpus y distribuciones tipo Zipf, con variaciones de idioma e inicializacion aleatoria. No obstante, la model card no documenta el dataset, el numero de tokens, la longitud de contexto ni los hiperparametros de entrenamiento, por lo que cualquier interpretacion de este tipo es provisional.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/eng-100mb-...` (este modelo) | 124,8M | no disponible | no disponible | HuggingFace, safetensors | Ajuste SFT de un modelo base de investigacion; sin benchmarks publicados |
+| `fpadovani/eng-100mb-...` (este modelo) | 124,8M | no disponible | no disponible | Hugging Face, safetensors | Ajuste SFT de un modelo base de investigacion; sin benchmarks publicados |
 | GPT-2 (124M) | 124M | 1.024 tokens segun la documentacion de OpenAI | MIT | Ampliamente disponible | Referencia de la arquitectura; ampliamente evaluado y con ecosistema maduro |
-| DistilGPT-2 | 82M | 1.024 tokens segun su model card | Apache 2.0 | HuggingFace | Destilado de GPT-2, menor coste y calidad inferior a GPT-2 base |
-| GPT-2 medium | 355M | 1.024 tokens segun la documentacion de OpenAI | MIT | HuggingFace | Mayor capacidad con un coste de inferencia aun bajo |
+| DistilGPT-2 | 82M | 1.024 tokens segun su model card | Apache 2.0 | Hugging Face | Destilado de GPT-2, menor coste y calidad inferior a GPT-2 base |
+| GPT-2 medium | 355M | 1.024 tokens segun la documentacion de OpenAI | MIT | Hugging Face | Mayor capacidad con un coste de inferencia aun bajo |
 
 La comparacion con GPT-2 base es la mas directa por tamano, pero este modelo no publica contexto, licencia ni evaluaciones, por lo que no es posible establecer una comparacion cuantitativa de rendimiento. No se dispone de datos de benchmarks de alternativas en la informacion proporcionada que permitan una comparacion homogenea.
 
@@ -86,7 +86,7 @@ La comparacion con GPT-2 base es la mas directa por tamano, pero este modelo no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407
 - Traza de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/cbfupq6j
 - Repositorio de TRL: https://github.com/huggingface/trl

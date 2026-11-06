@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks en la información proporcionada para compa
 - Sin garantías de seguridad: puede generar contenido sesgado o inapropiado; requiere filtros en producción.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/krist67/SmolLM2-1.7B-humanized-Q8_0-GGUF
+- Hugging Face: https://huggingface.co/krist67/SmolLM2-1.7B-humanized-Q8_0-GGUF
 - Modelo base: https://huggingface.co/AssistantsLab/SmolLM2-1.7B-humanized
 - SmolLM2-1.7B: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Colección SmolLM2: https://huggingface.co/collections/HuggingFaceTB/smollm2

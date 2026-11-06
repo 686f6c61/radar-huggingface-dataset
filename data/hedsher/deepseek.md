@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Hedsher/deepseek es un repositorio alojado en HuggingFace por el usuario Hedsher bajo la licencia "deepseek" (etiquetada como `license:other` con enlace a un fichero LICENSE). La model card publicada es practicamente vacia: se limita a declarar la licencia y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni resultados de evaluacion. No hay informacion sobre el pipeline de la tarea, los idiomas soportados ni el formato de los pesos.
+Hedsher/deepseek es un repositorio alojado en Hugging Face por el usuario Hedsher bajo la licencia "deepseek" (etiquetada como `license:other` con enlace a un fichero LICENSE). La model card publicada es practicamente vacia: se limita a declarar la licencia y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni resultados de evaluacion. No hay informacion sobre el pipeline de la tarea, los idiomas soportados ni el formato de los pesos.
 
 A pesar del nombre, no hay evidencia en la informacion disponible de que se trate de un modelo oficial de DeepSeek ni de que corresponda a una version concreta de su familia de modelos. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere que es un artefacto reciente o poco difundido. Cualquier dato tecnico sobre arquitectura, tamano o contexto debe considerarse no disponible a partir de las fuentes consultadas.
 
-Por tanto, esta ficha se limita a documentar lo que se puede verificar: la existencia del repositorio, su licencia declarada y la ausencia de especificaciones publicadas. Para evaluar el modelo en un entorno real seria necesario inspeccionar los ficheros del repositorio (por ejemplo, `config.json` o los pesos) directamente en HuggingFace.
+Por tanto, esta ficha se limita a documentar lo que se puede verificar: la existencia del repositorio, su licencia declarada y la ausencia de especificaciones publicadas. Para evaluar el modelo en un entorno real seria necesario inspeccionar los ficheros del repositorio (por ejemplo, `config.json` o los pesos) directamente en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ No se dispone de informacion sobre innovaciones tecnicas asociadas (atencion lin
 - Evaluacion exploratoria del repositorio: inspeccionar los ficheros publicados (configuracion, tokenizer, pesos) para determinar si el artefacto es utilizable antes de integrarlo en cualquier flujo de trabajo.
 - Prototipado interno con licencia DeepSeek: unicamente si el equipo legal confirma que los terminos del fichero LICENSE son compatibles con el uso previsto, dado que la licencia se declara como `other`.
 - Verificacion de procedencia: comprobar si el contenido del repositorio coincide con un modelo oficial de DeepSeek o es una copia, un fine-tuning o un artefacto no relacionado, antes de asignarle cualquier caso de uso en produccion.
-- Analisis de ecosistema: usar el repositorio como muestra para estudiar practicas de publicacion en HuggingFace (model cards minimas, licencias ambiguas) en trabajos de investigacion sobre trazabilidad de modelos.
+- Analisis de ecosistema: usar el repositorio como muestra para estudiar practicas de publicacion en Hugging Face (model cards minimas, licencias ambiguas) en trabajos de investigacion sobre trazabilidad de modelos.
 - Pruebas de carga y despliegue: si finalmente se confirma que contiene pesos validos, evaluar su integracion en frameworks como vLLM o llama.cpp en un entorno aislado y con caracter experimental.
 - Formacion y documentacion: emplear el caso como ejemplo de por que una model card sin especificaciones no permite evaluar riesgos ni rendimiento, en materiales docentes sobre publicacion responsable de modelos.
 
@@ -62,7 +62,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Hedsher/deepseek | no disponible | no disponible | deepseek (`other`) | Repositorio en HuggingFace sin descargas registradas |
+| Hedsher/deepseek | no disponible | no disponible | deepseek (`other`) | Repositorio en Hugging Face sin descargas registradas |
 | Modelos oficiales de DeepSeek | no disponible en esta ficha | no disponible en esta ficha | segun version | Repositorios oficiales de DeepSeek |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
@@ -78,6 +78,6 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hedsher/deepseek
+- Repositorio en Hugging Face: https://huggingface.co/Hedsher/deepseek
 - Fichero de licencia referenciado en la model card: LICENSE (dentro del propio repositorio)
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este repositorio concreto.

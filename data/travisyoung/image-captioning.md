@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`travisyoung/image-captioning` es un repositorio alojado en HuggingFace que, segun su propia model card, **no contiene un modelo entrenado**, sino un conjunto estructurado de notas de investigacion sobre el problema del image captioning (generacion automatica de descripciones textuales a partir de imagenes). El autor lo describe explicitamente como "research notes", con planes e hipotesis separados de resultados ya obtenidos, y senala que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
+`travisyoung/image-captioning` es un repositorio alojado en Hugging Face que, segun su propia model card, **no contiene un modelo entrenado**, sino un conjunto estructurado de notas de investigacion sobre el problema del image captioning (generacion automatica de descripciones textuales a partir de imagenes). El autor lo describe explicitamente como "research notes", con planes e hipotesis separados de resultados ya obtenidos, y senala que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
 El repositorio incluye unicamente dos ficheros de texto (`notes.md` y `README.md`) y un artefacto safetensors de 24.832 parametros (aproximadamente 0,1 MB en float32), una cifra incompatible con cualquier modelo funcional de captioning, que suele moverse entre cientos de millones y miles de millones de parametros. El tamano del repositorio se reporta como 0.0 GB. La licencia declarada es MIT y el autor es `travisyoung`.
 
@@ -24,7 +24,7 @@ Nota: no se incluye la fila de parametros activos porque el repositorio no decla
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite describir ninguna arquitectura real. El unico indicio es el tag `transformer` en los metadatos de HuggingFace, que no viene acompanado de ninguna especificacion en la model card: no se detalla numero de capas, dimensiones ocultas, mecanismo de atencion, tokenizador ni estrategia de preentrenamiento. El fichero safetensors de 24.832 parametros sugiere un artefacto residual o de prueba, no los pesos de un modelo de captioning operativo, cuyo rango habitual es de cientos de millones de parametros para los baselines clasicos y de miles de millones para los modelos multimodales modernos.
+La informacion disponible no permite describir ninguna arquitectura real. El unico indicio es el tag `transformer` en los metadatos de Hugging Face, que no viene acompanado de ninguna especificacion en la model card: no se detalla numero de capas, dimensiones ocultas, mecanismo de atencion, tokenizador ni estrategia de preentrenamiento. El fichero safetensors de 24.832 parametros sugiere un artefacto residual o de prueba, no los pesos de un modelo de captioning operativo, cuyo rango habitual es de cientos de millones de parametros para los baselines clasicos y de miles de millones para los modelos multimodales modernos.
 
 Tampoco se documenta ningun proceso de entrenamiento: no hay numero de tokens, composicion del dataset, fases de ajuste supervisado, RLHF o DPO, ni innovaciones tecnicas. La model card menciona contextos de evaluacion concretos (MS COCO Captions, NoCaps, TextCaps) como referencias propuestas para verificar, pero insiste en que son "un punto de partida para la verificacion, no evidencia de que el estudio se haya ejecutado". El propio autor advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
@@ -90,6 +90,6 @@ No procede una comparativa de rendimiento, porque el repositorio no contiene un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/travisyoung/image-captioning
+- Hugging Face: https://huggingface.co/travisyoung/image-captioning
 - Ficheros internos citados en la model card: `notes.md` (artefacto principal) y `README.md` (documentacion).
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni al estudio: los resultados devueltos corresponden a foros de modificaciones de videojuegos y no guardan relacion con el repositorio.

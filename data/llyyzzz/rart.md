@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RART es un modelo publicado en HuggingFace por el usuario `llyyzzz` bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, arquitectura, datos de entrenamiento ni casos de uso. El repositorio ocupa 5,8 GB, un tamano compatible con pesos en precision completa o semi-precision de un modelo de aproximadamente 1-3 mil millones de parametros, aunque esta estimacion no puede confirmarse con la informacion disponible.
+RART es un modelo publicado en Hugging Face por el usuario `llyyzzz` bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, arquitectura, datos de entrenamiento ni casos de uso. El repositorio ocupa 5,8 GB, un tamano compatible con pesos en precision completa o semi-precision de un modelo de aproximadamente 1-3 mil millones de parametros, aunque esta estimacion no puede confirmarse con la informacion disponible.
 
 No se dispone de informacion sobre la arquitectura, el contexto maximo, los idiomas soportados ni el pipeline de inferencia. El modelo no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad. Cualquier evaluacion de sus capacidades requeriria inspeccionar directamente los archivos del repositorio y ejecutar pruebas de inferencia.
 
@@ -40,10 +40,10 @@ El unico dato objetivo es el tamano del repositorio (5,8 GB) y la licencia Apach
 
 - Evaluacion experimental en laboratorio: dado que no hay documentacion, el uso responsable inicial es la carga controlada de los pesos en un entorno aislado para inspeccionar la arquitectura real (capa por capa) y determinar el tipo de modelo antes de cualquier despliegue.
 - Fine-tuning sobre dominio especifico: la licencia Apache 2.0 permite reentrenar y redistribuir derivados, por lo que podria servir como base para ajuste supervisado una vez validada su calidad mediante pruebas propias.
-- Pruebas de integracion en pipelines de HuggingFace Transformers: si los pesos son compatibles con `AutoModelForCausalLM`, podria integrarse en flujos de experimentacion con `transformers` y `accelerate` para medir latencia y perplejidad en un corpus de validacion propio.
+- Pruebas de integracion en pipelines de Hugging Face Transformers: si los pesos son compatibles con `AutoModelForCausalLM`, podria integrarse en flujos de experimentacion con `transformers` y `accelerate` para medir latencia y perplejidad en un corpus de validacion propio.
 - Comparacion de lineas base: podria utilizarse como referencia interna frente a modelos documentados del mismo rango de tamano, siempre que se realicen evaluaciones reproducibles con semillas fijas.
 - Despliegue en entornos con requisitos de licencia permisiva: al ser Apache 2.0, encaja en productos donde se exige una licencia sin restricciones de uso comercial, condicionado a que las pruebas de calidad superen los umbrales del proyecto.
-- Investigacion sobre reproducibilidad: util para estudiar como modelos sin model card afectan a la trazabilidad cientifica y para documentar practicas de publicacion deficientes en HuggingFace.
+- Investigacion sobre reproducibilidad: util para estudiar como modelos sin model card afectan a la trazabilidad cientifica y para documentar practicas de publicacion deficientes en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -73,4 +73,4 @@ No disponible. La ausencia de datos sobre parametros, contexto y arquitectura im
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/llyyzzz/RART
+- Hugging Face: https://huggingface.co/llyyzzz/RART

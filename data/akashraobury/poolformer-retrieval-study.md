@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer for Retrieval es un prototipo de investigación publicado por Akashraobury en HuggingFace, orientado a tareas de recuperación de información (retrieval). Se trata de una implementación en escala nano de la arquitectura Poolformer, que combina capas recurrentes con operaciones de pooling para reducir la longitud de la secuencia, tal como se describe en el artículo de 2025 «Poolformer: Recurrent Networks with Pooling for Long-Sequence Modeling». El modelo incluye atención de ventana deslizante y fusión por co-atención, y se distribuye con un checkpoint de inicialización válido únicamente para pruebas de humo, no como un modelo entrenado.
+Poolformer for Retrieval es un prototipo de investigación publicado por Akashraobury en Hugging Face, orientado a tareas de recuperación de información (retrieval). Se trata de una implementación en escala nano de la arquitectura Poolformer, que combina capas recurrentes con operaciones de pooling para reducir la longitud de la secuencia, tal como se describe en el artículo de 2025 «Poolformer: Recurrent Networks with Pooling for Long-Sequence Modeling». El modelo incluye atención de ventana deslizante y fusión por co-atención, y se distribuye con un checkpoint de inicialización válido únicamente para pruebas de humo, no como un modelo entrenado.
 
 El repositorio documenta los formatos de archivo y una receta de entrenamiento por defecto, pero no presenta resultados de rendimiento verificados. Con solo 49.600 parámetros, es un artefacto mínimo pensado para experimentación académica, no para uso en producción. Su relevancia radica en servir como punto de partida para estudiar arquitecturas recurrentes con pooling en el dominio del retrieval, especialmente en contextos de secuencias largas donde la atención tradicional resulta costosa.
 
@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akashraobury/poolformer-retrieval-study
+- Hugging Face: https://huggingface.co/Akashraobury/poolformer-retrieval-study
 - Paper (arXiv): https://arxiv.org/abs/2510.02206
 - PDF del paper: https://arxiv.org/pdf/2510.02206v1
 - Repositorio GitHub del Poolformer original (vision): https://github.com/sail-sg/poolformer

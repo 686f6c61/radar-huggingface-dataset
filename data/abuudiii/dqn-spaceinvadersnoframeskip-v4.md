@@ -93,7 +93,7 @@ No se dispone de cifras verificadas de los agentes alternativos en la informaci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abuudiii/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/Abuudiii/dqn-SpaceInvadersNoFrameskip-v4
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

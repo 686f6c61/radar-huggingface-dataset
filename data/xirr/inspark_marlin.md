@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xirr/inspark_marlin` es un repositorio de pesos derivados, no un modelo completo. Contiene exclusivamente los artefactos generados por el proyecto [`xiro2416/inspark_marlin`](https://github.com/xiro2416/inspark_marlin), cuyo objetivo es acelerar la síntesis de voz de IndexTTS2 mediante decodificación especulativa. El repositorio ocupa 0,6 GB y su pipeline declarado en HuggingFace es `text-to-speech`.
+`xirr/inspark_marlin` es un repositorio de pesos derivados, no un modelo completo. Contiene exclusivamente los artefactos generados por el proyecto [`xiro2416/inspark_marlin`](https://github.com/xiro2416/inspark_marlin), cuyo objetivo es acelerar la síntesis de voz de IndexTTS2 mediante decodificación especulativa. El repositorio ocupa 0,6 GB y su pipeline declarado en Hugging Face es `text-to-speech`.
 
 Los tres componentes publicados son un modelo draft denominado DSpark (tres capas, siete slots), un fichero de datos de agrupación acústica (`asg/target_asg_threshold_0p49.safetensors`) usado por la aceptación especulativa, y una exportación CFM de dos pasos (`cfm_oracle500.pt`) que se emplea con los puntos de tiempo de solver `[0, 0.5, 1]` y CFG desactivado. La release de inferencia asociada es `v0.1.0-sm120`, correspondiente al commit de Git `003904282683ce124f28c291e07f603fe74dc71b`.
 
@@ -72,7 +72,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La unica re
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `xirr/inspark_marlin` | Pesos derivados parciales | no disponible | no aplica (TTS) | bilibili-model-use-license (`other`) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| `xirr/inspark_marlin` | Pesos derivados parciales | no disponible | no aplica (TTS) | bilibili-model-use-license (`other`) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | IndexTTS2 (oficial) | Modelo base del que derivan estos pesos | no disponible en la informacion entregada | no disponible | no disponible en la informacion entregada | No replicado en este repositorio; el codigo lo descarga desde su publicador original |
 | Otras alternativas TTS open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La unica re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xirr/inspark_marlin
+- Repositorio en Hugging Face: https://huggingface.co/xirr/inspark_marlin
 - Repositorio de codigo e inferencia: https://github.com/xiro2416/inspark_marlin
 - Version de inferencia asociada: `v0.1.0-sm120`, commit `003904282683ce124f28c291e07f603fe74dc71b`
 - Fichero de integridad: `SHA256SUMS` (dentro del repositorio)

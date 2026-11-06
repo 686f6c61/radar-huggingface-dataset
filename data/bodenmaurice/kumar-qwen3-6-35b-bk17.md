@@ -88,7 +88,7 @@ El modelo se sitúa en un punto intermedio entre Qwen3.5-27B (denso, mayor rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bodenmaurice/kumar-qwen3.6-35b-bk17
+- Hugging Face: https://huggingface.co/bodenmaurice/kumar-qwen3.6-35b-bk17
 - Blog de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Repositorio GitHub de Qwen3.6: https://github.com/QwenLM/Qwen3.6
 - Guía de InsiderLLM para ejecutar Qwen 3.6 35B MoE localmente: https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/

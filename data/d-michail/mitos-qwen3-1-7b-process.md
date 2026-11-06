@@ -76,7 +76,7 @@ No se dispone de datos sobre otros modelos de pregunta-respuesta para la adminis
 
 | Modelo | Parámetros | Contexto de entrenamiento | Datos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mitos-Qwen3-1.7B-Process (este) | 1.720.574.976 | 4.096 tokens | Los 4.407 procedimientos del registro | CC BY-SA 4.0 | Pesos fusionados en bfloat16 en HuggingFace |
+| Mitos-Qwen3-1.7B-Process (este) | 1.720.574.976 | 4.096 tokens | Los 4.407 procedimientos del registro | CC BY-SA 4.0 | Pesos fusionados en bfloat16 en Hugging Face |
 | Mitos-Qwen3-1.7B-Process-LoRA (acompañante, carpeta `holdout/`) | 1.720.574.976 en el modelo base, adaptadores LoRA aparte | 4.096 tokens | Procedimientos sin los 220 reservados | CC BY-SA 4.0 | Adaptadores LoRA; es el modelo con cifras de benchmark publicadas |
 | Qwen/Qwen3-1.7B (base) | 1.720.574.976 (mismo orden de magnitud) | Ventana nativa de Qwen3 | Preentrenamiento general multilingüe | Apache 2.0 | Pesos públicos |
 
@@ -100,7 +100,7 @@ La licencia del modelo base (Apache 2.0) es más permisiva que la del ajuste (CC
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d-michail/Mitos-Qwen3-1.7B-Process
+- Modelo en Hugging Face: https://huggingface.co/d-michail/Mitos-Qwen3-1.7B-Process
 - Modelo acompañante con LoRA: https://huggingface.co/d-michail/Mitos-Qwen3-1.7B-Process-LoRA
 - Dataset de entrenamiento: https://huggingface.co/datasets/d-michail/mitos-qa
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

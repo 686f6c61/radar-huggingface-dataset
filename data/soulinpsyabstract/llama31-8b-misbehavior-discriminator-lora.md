@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`SoulInPsyAbstract/llama31-8b-misbehavior-discriminator-lora` es un adaptador LoRA publicado en HuggingFace por el usuario SoulInPsyAbstract, entrenado sobre el modelo base `NousResearch/Meta-Llama-3.1-8B-Instruct`. El repositorio contiene unicamente los pesos del adaptador (0,1 GB) en formato safetensors y esta etiquetado con las librerias `peft` y `transformers`, con `pipeline_tag: text-generation`. No se ha publicado informacion sobre el proceso de entrenamiento, los datos utilizados, los hiperparametros ni los resultados de evaluacion.
+`SoulInPsyAbstract/llama31-8b-misbehavior-discriminator-lora` es un adaptador LoRA publicado en Hugging Face por el usuario SoulInPsyAbstract, entrenado sobre el modelo base `NousResearch/Meta-Llama-3.1-8B-Instruct`. El repositorio contiene unicamente los pesos del adaptador (0,1 GB) en formato safetensors y esta etiquetado con las librerias `peft` y `transformers`, con `pipeline_tag: text-generation`. No se ha publicado informacion sobre el proceso de entrenamiento, los datos utilizados, los hiperparametros ni los resultados de evaluacion.
 
-El nombre del repositorio sugiere que el adaptador esta orientado a discriminar o clasificar conductas inapropiadas ("misbehavior discriminator") en las respuestas de un asistente conversacional, un caso de uso habitual en moderacion de contenido y en pipelines de alineamiento. Sin embargo, esta interpretacion es una inferencia a partir del identificador del repositorio: la model card del autor es la plantilla por defecto de HuggingFace sin rellenar, y no confirma ni el objetivo, ni el dominio, ni el formato de salida esperado.
+El nombre del repositorio sugiere que el adaptador esta orientado a discriminar o clasificar conductas inapropiadas ("misbehavior discriminator") en las respuestas de un asistente conversacional, un caso de uso habitual en moderacion de contenido y en pipelines de alineamiento. Sin embargo, esta interpretacion es una inferencia a partir del identificador del repositorio: la model card del autor es la plantilla por defecto de Hugging Face sin rellenar, y no confirma ni el objetivo, ni el dominio, ni el formato de salida esperado.
 
 La relevancia practica del modelo es en este momento limitada: acumula 0 descargas y 0 "likes", no declara licencia ni idiomas, y su model card no documenta sesgos, limitaciones ni uso previsto. Debe tratarse como un artefacto experimental no validado que requiere inspeccion y evaluacion propias antes de considerarlo para cualquier uso real.
 
@@ -30,7 +30,7 @@ La relevancia practica del modelo es en este momento limitada: acumula 0 descarg
 
 Arquitectura: el repositorio es un adaptador LoRA, no un modelo completo. LoRA congela los pesos del modelo base e inserta matrices de bajo rango en determinadas capas (tipicamente las proyecciones de atencion y de la MLP), de modo que en inferencia se calcula `W + BA` sobre los pesos originales. El modelo base subyacente es un transformer decoder-only de 8 030 millones de parametros con Grouped-Query Attention (GQA) y una ventana de contexto de 128 000 tokens, en la variante Instruct afinada por NousResearch sobre Meta-Llama-3.1-8B-Instruct.
 
-Entrenamiento: no hay informacion. El autor no documenta el numero de tokens de entrenamiento, la composicion del dataset, si hubo SFT, RLHF, DPO u otra etapa de alineamiento, ni los hiperparametros (rango LoRA, alpha, dropout, modulos objetivo, tasa de aprendizaje, precision). Tampoco se describe ninguna innovacion tecnica, mecanismo de decodificacion especulativa ni variante de atencion. El unico dato tecnico verificable es el tamano del repositorio (0,1 GB) y la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre calculo de emisiones de carbono y no a un paper propio del adaptador: procede de la plantilla de model card de HuggingFace.
+Entrenamiento: no hay informacion. El autor no documenta el numero de tokens de entrenamiento, la composicion del dataset, si hubo SFT, RLHF, DPO u otra etapa de alineamiento, ni los hiperparametros (rango LoRA, alpha, dropout, modulos objetivo, tasa de aprendizaje, precision). Tampoco se describe ninguna innovacion tecnica, mecanismo de decodificacion especulativa ni variante de atencion. El unico dato tecnico verificable es el tamano del repositorio (0,1 GB) y la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre calculo de emisiones de carbono y no a un paper propio del adaptador: procede de la plantilla de model card de Hugging Face.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Funcion declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llama31-8b-misbehavior-discriminator-lora | Adaptador LoRA sobre 8B | No documentada (128k en el base) | No documentada; el nombre sugiere discriminacion de conducta | No disponible en el repo; hereda la del base | Repositorio HuggingFace, 0 descargas |
+| llama31-8b-misbehavior-discriminator-lora | Adaptador LoRA sobre 8B | No documentada (128k en el base) | No documentada; el nombre sugiere discriminacion de conducta | No disponible en el repo; hereda la del base | Repositorio Hugging Face, 0 descargas |
 | NousResearch/Meta-Llama-3.1-8B-Instruct (modelo base) | 8 030 millones | 128 000 tokens | Generacion de texto conversacional | Llama 3.1 Community License | Ampliamente disponible y validado |
 | Llama Guard 3 8B | 8 000 millones | 128 000 tokens | Clasificacion de seguridad de entradas y salidas | Llama 3.1 Community License | Disponible, con documentacion y evaluaciones publicadas |
 | Otros adaptadores LoRA de moderacion | No disponible | No disponible | No disponible | No disponible | No se ha identificado ningun comparable directo en la busqueda realizada |
@@ -93,7 +93,7 @@ El contraste principal es de madurez, no de arquitectura: frente al adaptador an
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoulInPsyAbstract/llama31-8b-misbehavior-discriminator-lora
+- Modelo en Hugging Face: https://huggingface.co/SoulInPsyAbstract/llama31-8b-misbehavior-discriminator-lora
 - Modelo base: https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct
 - Articulo referenciado en la etiqueta del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, no un paper del adaptador): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact

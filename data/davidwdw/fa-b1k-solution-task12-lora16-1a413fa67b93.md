@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidwdw/fa-b1k-solution-task12-lora16-1a413fa67b93` es un paquete de pesos publicado en HuggingFace por el usuario davidwdw. Segun la propia model card, se trata de un "archivo versionado de flota" (versioned fleet archive) correspondiente a la receta canonica `historical_centre_behavior1k_solution_finetunes`, en su variante "Tier: task12 LoRA16 finetune, selected_step_600". Es decir, el repositorio contiene el resultado de un ajuste fino con LoRA de rango 16 sobre un modelo base que no se identifica en la informacion disponible, y el checkpoint seleccionado corresponde al paso 600 de entrenamiento.
+`davidwdw/fa-b1k-solution-task12-lora16-1a413fa67b93` es un paquete de pesos publicado en Hugging Face por el usuario davidwdw. Segun la propia model card, se trata de un "archivo versionado de flota" (versioned fleet archive) correspondiente a la receta canonica `historical_centre_behavior1k_solution_finetunes`, en su variante "Tier: task12 LoRA16 finetune, selected_step_600". Es decir, el repositorio contiene el resultado de un ajuste fino con LoRA de rango 16 sobre un modelo base que no se identifica en la informacion disponible, y el checkpoint seleccionado corresponde al paso 600 de entrenamiento.
 
 El repositorio no incluye model card tecnica en el sentido habitual: no declara arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de inferencia. El unico contenido informativo es una advertencia operativa del autor: usar exactamente la revision registrada y verificar el fichero `SHA256SUMS`, dado que el paquete es una instantanea (snapshot) y no un espejo de directorio vivo. El tamano del repositorio es de 5,5 GB.
 
@@ -93,7 +93,7 @@ No es posible establecer una comparativa fiable. El repositorio no declara el mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-b1k-solution-task12-lora16-1a413fa67b93
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-b1k-solution-task12-lora16-1a413fa67b93
 - Perfil del autor: https://huggingface.co/davidwdw
 - Paper asociado: no disponible
 - Blog o anuncio: no disponible

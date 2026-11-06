@@ -64,7 +64,7 @@ No se dispone de información comparativa específica para este fine-tuning. Com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-FNC-512-1
+- Repositorio Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-FNC-512-1
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Guía de despliegue local (Ollama): https://aiindigo.com/tutorials/getting-started-with-qwen3-4b-instruct-2507-deploying-efficient-local-ai
 - Tutorial de despliegue con Ollama (Matt Selander): https://mattselander.com/deploy-qwen3-4b-instruct-2507-locally-via-ollama-2/

@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parámetros | Enfoque | Consistencia temporal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Video Depth Anything Small (MLX) | 29M | DINOv2 + DPT temporal | Sí | Apache-2.0 | HuggingFace (MLX) |
-| Video Depth Anything Small (original) | 29M | DINOv2 + DPT temporal | Sí | Apache-2.0 | HuggingFace (PyTorch) |
+| Video Depth Anything Small (MLX) | 29M | DINOv2 + DPT temporal | Sí | Apache-2.0 | Hugging Face (MLX) |
+| Video Depth Anything Small (original) | 29M | DINOv2 + DPT temporal | Sí | Apache-2.0 | Hugging Face (PyTorch) |
 | DepthCrafter | No disponible | Basado en difusión | Sí (pero más lento) | No disponible | No disponible |
 
 La comparativa se basa en información cualitativa de la página del proyecto: Video Depth Anything es más rápido, con menos parámetros y mayor precisión consistente que modelos de difusión como DepthCrafter. No hay datos numéricos de benchmarks para una comparación cuantitativa.
@@ -75,7 +75,7 @@ La comparativa se basa en información cualitativa de la página del proyecto: V
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jarjoura/video-depth-anything-small-mlx
+- Modelo en Hugging Face: https://huggingface.co/jarjoura/video-depth-anything-small-mlx
 - Modelo original (PyTorch): https://huggingface.co/depth-anything/Video-Depth-Anything-Small
 - Repositorio GitHub oficial: https://github.com/DepthAnything/Video-Depth-Anything
 - Página del proyecto: https://videodepthanything.github.io/

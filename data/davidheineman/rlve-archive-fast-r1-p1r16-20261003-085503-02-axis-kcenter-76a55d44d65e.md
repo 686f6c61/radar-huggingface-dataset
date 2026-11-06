@@ -89,7 +89,7 @@ No disponible. Al no conocerse la arquitectura, el numero de parametros ni la ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r16-20261003-085503-02-axis-kcenter-76a55d44d65e
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r16-20261003-085503-02-axis-kcenter-76a55d44d65e
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - Ejecucion en Weights & Biases (identificador `93b82275`): no se ha proporcionado URL directa; no disponible.
 - Paper, blog o repositorio de codigo asociados: no disponibles.

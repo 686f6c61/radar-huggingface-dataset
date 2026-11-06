@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aldair166/qwen3.5-2.8b` es un modelo de generación de texto subido al Hub de HuggingFace por el usuario aldair166, con 2.861.543.552 parámetros (aproximadamente 2,8 mil millones) y un tamaño de repositorio de 5,7 GB. Su nombre sugiere que pertenece a la familia Qwen3.5, aunque no hay confirmación oficial de que sea un modelo publicado por el equipo de Qwen. La model card asociada es una plantilla genérica sin información sustancial: no se especifican arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades concretas.
+El modelo `aldair166/qwen3.5-2.8b` es un modelo de generación de texto subido al Hub de Hugging Face por el usuario aldair166, con 2.861.543.552 parámetros (aproximadamente 2,8 mil millones) y un tamaño de repositorio de 5,7 GB. Su nombre sugiere que pertenece a la familia Qwen3.5, aunque no hay confirmación oficial de que sea un modelo publicado por el equipo de Qwen. La model card asociada es una plantilla genérica sin información sustancial: no se especifican arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades concretas.
 
 La relevancia de este modelo radica en su posible pertenencia a la serie Qwen3.5, que según la información pública de Qwen introduce una arquitectura híbrida que combina atención lineal con transformers tradicionales, y que está diseñada para ser nativamente multimodal. Sin embargo, al carecer de documentación específica, cualquier afirmación sobre sus capacidades reales debe tomarse con cautela. Este modelo parece ser una subida independiente, posiblemente un fine-tune o una variante no oficial, por lo que se recomienda verificar su origen antes de usarlo en producción.
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aldair166/qwen3.5-2.8b
+- Hugging Face: https://huggingface.co/aldair166/qwen3.5-2.8b
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Guía de Qwen3.5 (no oficial): https://qwen-ai.com/qwen-3-5/
-- Perfil de Qwen en HuggingFace: https://huggingface.co/Qwen
+- Perfil de Qwen en Hugging Face: https://huggingface.co/Qwen

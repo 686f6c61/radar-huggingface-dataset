@@ -2,7 +2,7 @@
 
 ## Resumen
 
-py314-pylingual-v9-mlm es un modelo de lenguaje enmascarado (fill-mask) desarrollado por el grupo syssec-utd, integrado en el proyecto Pylingual, un decompilador de Python para versiones modernas. El modelo se ha ajustado sobre un dataset llamado syssec-utd/segmentation-py314-pylingual-v9, lo que sugiere que su propósito es asistir en la segmentación y análisis de código Python, posiblemente para mejorar la reconstrucción de bytecode en el decompilador. Según los metadatos de HuggingFace, la arquitectura es RoBERTa (encoder-only transformer) y cuenta con 109.506.864 parámetros.
+py314-pylingual-v9-mlm es un modelo de lenguaje enmascarado (fill-mask) desarrollado por el grupo syssec-utd, integrado en el proyecto Pylingual, un decompilador de Python para versiones modernas. El modelo se ha ajustado sobre un dataset llamado syssec-utd/segmentation-py314-pylingual-v9, lo que sugiere que su propósito es asistir en la segmentación y análisis de código Python, posiblemente para mejorar la reconstrucción de bytecode en el decompilador. Según los metadatos de Hugging Face, la arquitectura es RoBERTa (encoder-only transformer) y cuenta con 109.506.864 parámetros.
 
 Su relevancia radica en que forma parte de una herramienta de seguridad y análisis de código Python, un área con demanda creciente. Sin embargo, la documentación publicada es mínima y no incluye descripción técnica, evaluación ni licencia, por lo que cualquier uso productivo requiere una evaluación previa.
 
@@ -10,7 +10,7 @@ Su relevancia radica en que forma parte de una herramienta de seguridad y análi
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | RoBERTa (encoder-only transformer, según metadatos de HuggingFace) |
+| Arquitectura | RoBERTa (encoder-only transformer, según metadatos de Hugging Face) |
 | Parámetros totales | 109.506.864 |
 | Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -21,11 +21,11 @@ Su relevancia radica en que forma parte de una herramienta de seguridad y análi
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no está documentada explícitamente en la model card. Los metadatos de HuggingFace etiquetan el modelo como 'roberta', lo que indica que se trata de un transformer encoder-only. Tiene 109.506.864 parámetros, un tamaño típico para modelos de este tipo. El modelo ha sido fine-tuned usando la librería Transformers (versión 5.12.1) sobre el dataset syssec-utd/segmentation-py314-pylingual-v9. Los hiperparámetros de entrenamiento incluyen learning rate 5e-5, batch total de 192, distribución multi-GPU en 3 dispositivos, scheduler lineal y 2 épocas. No se proporciona información sobre la composición de los datos de entrenamiento, ni sobre técnicas de alineación como RLHF o DPO.
+La arquitectura no está documentada explícitamente en la model card. Los metadatos de Hugging Face etiquetan el modelo como 'roberta', lo que indica que se trata de un transformer encoder-only. Tiene 109.506.864 parámetros, un tamaño típico para modelos de este tipo. El modelo ha sido fine-tuned usando la librería Transformers (versión 5.12.1) sobre el dataset syssec-utd/segmentation-py314-pylingual-v9. Los hiperparámetros de entrenamiento incluyen learning rate 5e-5, batch total de 192, distribución multi-GPU en 3 dispositivos, scheduler lineal y 2 épocas. No se proporciona información sobre la composición de los datos de entrenamiento, ni sobre técnicas de alineación como RLHF o DPO.
 
 ## Capacidades
 
-- Modelo de lenguaje enmascarado (fill-mask): predice tokens ocultos en una secuencia, según el pipeline indicado en HuggingFace.
+- Modelo de lenguaje enmascarado (fill-mask): predice tokens ocultos en una secuencia, según el pipeline indicado en Hugging Face.
 - Compatibilidad con Transformers: funciona con la librería Transformers (versión 5.12.1 usada en entrenamiento) y está marcado como compatible con Inference Endpoints.
 - Especialización en código Python: los datasets del proyecto (segmentation y statement) indican un enfoque hacia el análisis de código Python, aunque no hay una descripción oficial de esta capacidad.
 - Sin capacidad generativa: al tratarse de un encoder-only, no puede producir texto libre ni completar conversaciones de forma autoregresiva.
@@ -44,14 +44,14 @@ La documentación oficial no especifica casos de uso. Los siguientes se infieren
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El model-index de HuggingFace no incluye ninguna métrica.
+No se han publicado resultados de benchmarks en la información disponible. El model-index de Hugging Face no incluye ninguna métrica.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: no disponible oficialmente. Dado que el modelo tiene 109,5 millones de parámetros, se puede estimar que en FP32 ocupará aproximadamente 0,44 GB de memoria, pero el consumo real de VRAM dependerá de la longitud de secuencia y el batch.
 - GPU recomendadas: no disponible. Modelos de este tamaño pueden ejecutarse en GPUs de consumo de gama baja con secuencias cortas.
 - ¿Cabe en consumer GPU?: sí, es un modelo pequeño que no requiere hardware de gran capacidad.
-- Opciones de despliegue: librería Transformers, HuggingFace Inference Endpoints (según los metadatos del repositorio). También puede desplegarse en instalaciones locales con PyTorch.
+- Opciones de despliegue: librería Transformers, Hugging Face Inference Endpoints (según los metadatos del repositorio). También puede desplegarse en instalaciones locales con PyTorch.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No se han identificado modelos directamente comparables con métricas publicadas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/syssec-utd/py314-pylingual-v9-mlm
+- Hugging Face: https://huggingface.co/syssec-utd/py314-pylingual-v9-mlm
 - GitHub del proyecto Pylingual: https://github.com/syssec-utd/pylingual
 - Dataset relacionado 'statement-py314-pylingual-v9': https://huggingface.co/datasets/syssec-utd/statement-py314-pylingual-v9

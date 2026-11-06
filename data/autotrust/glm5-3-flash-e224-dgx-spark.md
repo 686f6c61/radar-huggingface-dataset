@@ -102,7 +102,7 @@ No hay datos publicados de throughput absoluto (tokens/s) ni de la seccion BFCL 
 
 | Modelo | Parametros | Expertos / parametros activos | Memoria de pesos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| autotrust/GLM5.3-Flash-E224-DGX-Spark | 127,6 B | 224 de 288 expertos; 18 B activos | 151,5 GB (141 GiB) | No disponible explicitamente; thinking hasta 163.840 tokens | MIT | HuggingFace, libreria vLLM |
+| autotrust/GLM5.3-Flash-E224-DGX-Spark | 127,6 B | 224 de 288 expertos; 18 B activos | 151,5 GB (141 GiB) | No disponible explicitamente; thinking hasta 163.840 tokens | MIT | Hugging Face, libreria vLLM |
 | zai-org/GLM-5.3-Flash (FP8) | No disponible | 288 expertos; 18 B activos | 306 GiB | No disponible | No disponible | Referenciado como modelo base |
 | GLM-5.3-Flash NVFP4 sin podar | No disponible | 288 expertos; 18 B activos | ~190 GiB | No disponible | No disponible | Variantes publicadas por RedHatAI y NVIDIA |
 | Modelos densos de ~70-120 B comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -126,7 +126,7 @@ Las unicas referencias cuantitativas disponibles son las del propio autor: el ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/GLM5.3-Flash-E224-DGX-Spark
+- Modelo en Hugging Face: https://huggingface.co/autotrust/GLM5.3-Flash-E224-DGX-Spark
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Capa MTP incluida en el repositorio: https://huggingface.co/autotrust/GLM5.3-Flash-E224-DGX-Spark/tree/main/mtp
 

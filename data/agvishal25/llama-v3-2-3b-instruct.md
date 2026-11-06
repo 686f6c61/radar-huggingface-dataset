@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de calidad para comparar el rendimiento rea
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AgVishal25/Llama-v3.2-3B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/AgVishal25/Llama-v3.2-3B-Instruct
 - Checkpoint original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/
 - Libreria Qualcomm AI Hub Models (v0.65.0): https://github.com/qualcomm/ai-hub-models/blob/v0.65.0/src/qai_hub_models/models/llama_v3_2_3b_instruct
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

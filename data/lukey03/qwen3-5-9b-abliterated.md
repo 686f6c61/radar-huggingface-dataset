@@ -6,7 +6,7 @@ Qwen3.5-9B-abliterated es una version modificada del modelo base Qwen/Qwen3.5-9B
 
 La relevancia de esta ficha es doble. Por un lado, es un ejemplo practico de una tecnica de edicion de pesos (abliteration por proyeccion ortogonal, basada en Arditi et al., 2024) aplicada a una arquitectura hibrida reciente, incluyendo capas de atencion lineal. Por otro, sirve como caso de estudio sobre los riesgos de publicar modelos sin comportamiento de rechazo: el propio autor documenta que una cuarta pasada de abliteration destruyo el modelo (salida incoherente) y que fue necesaria una fase de ajuste fino con QLoRA para recuperar las categorias resistentes.
 
-El modelo se distribuye con licencia Apache-2.0, declara unicamente el idioma ingles en la model card, esta etiquetado como `uncensored` y `abliterated`, y ocupa 35,9 GB en el repositorio de HuggingFace. No se ha publicado informacion sobre la longitud de contexto, ni resultados en benchmarks estandar como MMLU, HumanEval o GSM8K en la informacion disponible.
+El modelo se distribuye con licencia Apache-2.0, declara unicamente el idioma ingles en la model card, esta etiquetado como `uncensored` y `abliterated`, y ocupa 35,9 GB en el repositorio de Hugging Face. No se ha publicado informacion sobre la longitud de contexto, ni resultados en benchmarks estandar como MMLU, HumanEval o GSM8K en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -101,16 +101,16 @@ Comprobaciones cualitativas de capacidad: razonamiento (silogismo resuelto corre
 - GPU de datacenter recomendadas para bf16: A100 40/80 GB, H100 80 GB, L40S 48 GB. El autor uso una H100 SXM 80 GB para el entrenamiento del adaptador LoRA.
 - GPU de consumo: una RTX 4090 de 24 GB puede alojar el modelo en bf16 con contexto corto, y con holgura en cuantizacion de 8 o 4 bits. Tarjetas de 12-16 GB (RTX 4080, 4070 Ti Super) requeririan cuantizacion de 4 bits y contexto reducido.
 - La longitud de contexto no esta documentada, por lo que no se puede estimar con fiabilidad el consumo de cache KV ni el throughput en secuencias largas. En arquitecturas hibridas con DeltaNet, el coste de cache por token suele ser menor que en atencion completa, pero esto no se confirma para este modelo en la informacion disponible.
-- Opciones de despliegue: al estar publicado en safetensors y con `library_name: transformers`, la via directa es HuggingFace Transformers. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints gestionados de HuggingFace. No se confirma la existencia de versiones GGUF, por lo que el uso con llama.cpp u Ollama no esta garantizado sin conversion previa. vLLM y TGI dependerian del soporte de la arquitectura `qwen3_5_text` en sus versiones correspondientes.
+- Opciones de despliegue: al estar publicado en safetensors y con `library_name: transformers`, la via directa es Hugging Face Transformers. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints gestionados de Hugging Face. No se confirma la existencia de versiones GGUF, por lo que el uso con llama.cpp u Ollama no esta garantizado sin conversion previa. vLLM y TGI dependerian del soporte de la arquitectura `qwen3_5_text` en sus versiones correspondientes.
 - Latencia y throughput estimados: no disponibles. El unico dato temporal publicado es que el ajuste fino del adaptador LoRA tardo aproximadamente 45 segundos en una H100 SXM, lo que corresponde al entrenamiento, no a la inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Arquitectura | Contexto | Rechazo (18 prompts) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-9B-abliterated | 8,95 B | Hibrida DeltaNet + atencion | No disponible | 17/18 (94 %); 18/18 en mejor de 3 | Apache-2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3.5-9B (base) | No disponible en la informacion (el modelo derivado tiene 8,95 B) | Hibrida DeltaNet + atencion | No disponible | 0/18 (0 %) | No disponible en la informacion | HuggingFace |
-| Dolphin-Mistral 7B | 7 B | Transformer denso (Mistral) | No disponible en la informacion | 17/18 (94 %) | No disponible en la informacion | HuggingFace |
+| Qwen3.5-9B-abliterated | 8,95 B | Hibrida DeltaNet + atencion | No disponible | 17/18 (94 %); 18/18 en mejor de 3 | Apache-2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3.5-9B (base) | No disponible en la informacion (el modelo derivado tiene 8,95 B) | Hibrida DeltaNet + atencion | No disponible | 0/18 (0 %) | No disponible en la informacion | Hugging Face |
+| Dolphin-Mistral 7B | 7 B | Transformer denso (Mistral) | No disponible en la informacion | 17/18 (94 %) | No disponible en la informacion | Hugging Face |
 
 El autor destaca como principal ventaja diferencial el mayor numero de parametros (8,95 B frente a 7 B) manteniendo el mismo comportamiento sin rechazos, lo que en su valoracion se traduce en mejor razonamiento, codigo y conocimiento. No se aportan datos numericos que respalden esa mejora mas alla de las comprobaciones cualitativas.
 
@@ -130,7 +130,7 @@ El autor destaca como principal ventaja diferencial el mayor numero de parametro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukey03/Qwen3.5-9B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/lukey03/Qwen3.5-9B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Articulo de referencia del metodo de abliteration (Arditi et al., 2024): https://arxiv.org/abs/2406.11717
 - Modelo comparado Dolphin-Mistral 7B: https://huggingface.co/cognitivecomputations/dolphin-2.6-mistral-7b

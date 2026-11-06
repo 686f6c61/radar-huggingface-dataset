@@ -2,11 +2,11 @@
 
 ## Resumen
 
-sock-heist-6m-2 es una política de control robótico entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. El modelo, publicado por el usuario RSanchez996 en HuggingFace, implementa una política perpetua (sin condición de terminación) que traduce observaciones de 61 dimensiones en 14 acciones de control a una frecuencia de 50 Hz. No se trata de un modelo de lenguaje ni de un modelo generativo de propósito general, sino de un controlador neuronal especializado para locomoción y manipulación robótica.
+sock-heist-6m-2 es una política de control robótico entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. El modelo, publicado por el usuario RSanchez996 en Hugging Face, implementa una política perpetua (sin condición de terminación) que traduce observaciones de 61 dimensiones en 14 acciones de control a una frecuencia de 50 Hz. No se trata de un modelo de lenguaje ni de un modelo generativo de propósito general, sino de un controlador neuronal especializado para locomoción y manipulación robótica.
 
-La política se distribuye en formato ONNX dentro de un repositorio de tamaño prácticamente nulo (0.0 GB según HuggingFace), lo que sugiere un modelo de muy pocos parámetros, coherente con las políticas de control reactivo que se ejecutan en el propio robot o en un daemon de control. El modelo se carga en una ranura de política del daemon mediante el comando `robotctl policy load`, y el normalizador de observaciones está embebido en el propio fichero `policy.onnx`, de modo que el consumidor debe alimentar observaciones en crudo.
+La política se distribuye en formato ONNX dentro de un repositorio de tamaño prácticamente nulo (0.0 GB según Hugging Face), lo que sugiere un modelo de muy pocos parámetros, coherente con las políticas de control reactivo que se ejecutan en el propio robot o en un daemon de control. El modelo se carga en una ranura de política del daemon mediante el comando `robotctl policy load`, y el normalizador de observaciones está embebido en el propio fichero `policy.onnx`, de modo que el consumidor debe alimentar observaciones en crudo.
 
-La relevancia de esta ficha es limitada en el contexto de modelos de IA generativa, ya que se trata de un artefacto de investigación en robótica con refuerzo, sin model card detallada sobre rendimiento, sin benchmarks publicados y sin información sobre licencia o idiomas. La información disponible en HuggingFace y en la model card es escasa y se limita a metadatos de entrenamiento y a instrucciones de despliegue.
+La relevancia de esta ficha es limitada en el contexto de modelos de IA generativa, ya que se trata de un artefacto de investigación en robótica con refuerzo, sin model card detallada sobre rendimiento, sin benchmarks publicados y sin información sobre licencia o idiomas. La información disponible en Hugging Face y en la model card es escasa y se limita a metadatos de entrenamiento y a instrucciones de despliegue.
 
 ## Especificaciones técnicas
 
@@ -74,6 +74,6 @@ No disponible. No se han identificado en la información proporcionada política
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-2
+- Hugging Face: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-2
 - Repositorio de entrenamiento: https://github.com/RSanchez996/microduck-challenges
 - Proyecto microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck

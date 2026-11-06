@@ -2,17 +2,17 @@
 
 ## Resumen
 
-`diy-kuma/phd-multimodal-generation` no es un modelo de IA entrenado, sino un repositorio de notas de investigación alojado en HuggingFace. Su propio README lo describe explícitamente como una nota de trabajo sobre generación multimodal que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y aclara que no se presenta como un artículo terminado ni como la publicación de modelos entrenados. El repositorio se limita a dos ficheros, `analysis.md` y `README.md`, y no incluye código, checkpoints ni resultados experimentales.
+`diy-kuma/phd-multimodal-generation` no es un modelo de IA entrenado, sino un repositorio de notas de investigación alojado en Hugging Face. Su propio README lo describe explícitamente como una nota de trabajo sobre generación multimodal que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y aclara que no se presenta como un artículo terminado ni como la publicación de modelos entrenados. El repositorio se limita a dos ficheros, `analysis.md` y `README.md`, y no incluye código, checkpoints ni resultados experimentales.
 
 La relevancia de esta ficha es, por tanto, metodológica: sirve como ejemplo de artefacto de investigación abierta donde las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados. El autor subraya que, si en el futuro se añaden resultados, deberán incluir versiones de datasets, comandos, semillas, hardware y registros en crudo para ser verificables.
 
-Dado que el repositorio no contiene pesos, arquitectura definida ni especificaciones de entrenamiento, la mayor parte de los campos técnicos habituales quedan como "no disponible". La etiqueta `transformer` y el recuento de 49.600 parámetros proceden únicamente de los metadatos de HuggingFace y de un tensor safetensors de tamaño insignificante, no de un modelo funcional.
+Dado que el repositorio no contiene pesos, arquitectura definida ni especificaciones de entrenamiento, la mayor parte de los campos técnicos habituales quedan como "no disponible". La etiqueta `transformer` y el recuento de 49.600 parámetros proceden únicamente de los metadatos de Hugging Face y de un tensor safetensors de tamaño insignificante, no de un modelo funcional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el repositorio no publica arquitectura de modelo; los tags de HuggingFace incluyen "transformer") |
+| Arquitectura | No disponible (el repositorio no publica arquitectura de modelo; los tags de Hugging Face incluyen "transformer") |
 | Parametros totales | 49.600 parametros segun los metadatos safetensors del repositorio (no corresponde a un modelo entrenado publicado) |
 | Parametros activos | No aplica (no es un modelo MoE ni un modelo entrenado) |
 | Longitud de contexto | No disponible |
@@ -75,5 +75,5 @@ No disponible. El repositorio no contiene un modelo entrenado, sino una nota de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diy-kuma/phd-multimodal-generation
+- Hugging Face: https://huggingface.co/diy-kuma/phd-multimodal-generation
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada; los resultados devueltos correspondian a sitios de bricolaje y decoracion sin relacion con el modelo.

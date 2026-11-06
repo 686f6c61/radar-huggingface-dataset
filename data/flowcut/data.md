@@ -36,7 +36,7 @@ Otros metadatos del repositorio: autor Flowcut, pipeline no disponible, idiomas 
 
 No hay informacion de arquitectura ni de entrenamiento en la informacion proporcionada. El repositorio no documenta detalles sobre el tipo de red de los modelos incluidos (los modelos ASR redistribuidos suelen ser arquitecturas encoder-decoder con atencion, pero ese dato no se declara aqui), ni sobre volumen de datos, composicion del corpus, tecnicas de alineacion o etapas de ajuste. Tampoco se indica si los archivos han sido reempaquetados, requantizados o modificados de cualquier otra forma: la model card afirma explicitamente que los modelos de voz de terceros se redistribuyen "unchanged", es decir, sin cambios respecto a sus conversiones originales.
 
-La unica informacion tecnica contrastable es la relativa al formato y a la procedencia. Los cuatro archivos estan en formatos GGUF/GGML, lo que implica compatibilidad con runtimes basados en ggml y no con stacks de pesos safetensors orientados a transformers. Dos de los archivos corresponden a conversiones atribuidas al usuario `cstr` en HuggingFace (Parakeet y el alineador CTC de Canary, ademas de la conversion de Cohere Arabic), y uno procede del repositorio oficial `ggerganov/whisper.cpp`. En consecuencia, cualquier evaluacion de calidad, sesgos o rendimiento debe hacerse sobre los repositorios y publicaciones originales de NVIDIA, OpenAI y Cohere, no sobre esta ficha.
+La unica informacion tecnica contrastable es la relativa al formato y a la procedencia. Los cuatro archivos estan en formatos GGUF/GGML, lo que implica compatibilidad con runtimes basados en ggml y no con stacks de pesos safetensors orientados a transformers. Dos de los archivos corresponden a conversiones atribuidas al usuario `cstr` en Hugging Face (Parakeet y el alineador CTC de Canary, ademas de la conversion de Cohere Arabic), y uno procede del repositorio oficial `ggerganov/whisper.cpp`. En consecuencia, cualquier evaluacion de calidad, sesgos o rendimiento debe hacerse sobre los repositorios y publicaciones originales de NVIDIA, OpenAI y Cohere, no sobre esta ficha.
 
 ## Capacidades
 
@@ -109,7 +109,7 @@ Datos de rendimiento, contexto, numero de idiomas y comparacion cuantitativa con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Flowcut/data
+- Repositorio en Hugging Face: https://huggingface.co/Flowcut/data
 - Conversion GGUF de NVIDIA Parakeet TDT 0.6B v3: https://huggingface.co/cstr/parakeet-tdt-0.6b-v3-GGUF
 - Conversion GGUF del alineador CTC derivado de NVIDIA Canary 1B v2: https://huggingface.co/cstr/canary-ctc-aligner-GGUF
 - Conversion GGUF de Cohere Transcribe Arabic 07-2026: https://huggingface.co/cstr/cohere-transcribe-arabic-07-2026-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `THChou1220/gemma-4-e2b-kinetics417K_FFT` es un ajuste fino completo (full fine-tune, de ahí el sufijo FFT) del modelo base Google Gemma-4-e2b-it, publicado por el usuario THChou1220 en HuggingFace. El modelo está especializado en el procesamiento e interpretación de datos de vídeo, y según la documentación disponible se ha adaptado específicamente para tareas relacionadas con vídeo generado por IA, empleando un conjunto de datos derivado de Kinetics. El repositorio contiene 5.123.178.051 parámetros en formato safetensors y ocupa 10,3 GB.
+El modelo `THChou1220/gemma-4-e2b-kinetics417K_FFT` es un ajuste fino completo (full fine-tune, de ahí el sufijo FFT) del modelo base Google Gemma-4-e2b-it, publicado por el usuario THChou1220 en Hugging Face. El modelo está especializado en el procesamiento e interpretación de datos de vídeo, y según la documentación disponible se ha adaptado específicamente para tareas relacionadas con vídeo generado por IA, empleando un conjunto de datos derivado de Kinetics. El repositorio contiene 5.123.178.051 parámetros en formato safetensors y ocupa 10,3 GB.
 
 Se trata de un ajuste puramente experimental: el repositorio no incluye model card descriptiva (solo el bloque de licencia), no registra descargas ni interacciones, y fue creado y actualizado el mismo día (8 de octubre de 2026), lo que indica un artefacto de investigación y no un modelo con validación o mantenimiento por parte de la comunidad. Aun así, resulta relevante como ejemplo de las variantes derivadas de la familia Gemma orientadas a dominios verticales concretos como el análisis de vídeo, y de las estrategias de ajuste completo frente a LoRA o cuantización.
 
@@ -66,9 +66,9 @@ El repositorio no incluye métricas de MMLU, HumanEval, GSM8K ni de tareas espec
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| THChou1220/gemma-4-e2b-kinetics417K_FFT | ~5,1 B | no disponible (32K en variantes hermanas) | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
-| THChou1220/gemma-4-e2b-kinetics54K_FFT | ~5,1 B (no confirmado) | no disponible | sin benchmarks publicados | apache-2.0 (presumible) | HuggingFace |
-| THChou1220/gemma-4-e2b-kinetics54K-SQ_FFT | ~5,1 B (no confirmado) | 32K (según endpoint) | sin benchmarks publicados | apache-2.0 (presumible) | HuggingFace, Featherless, FriendliAI |
+| THChou1220/gemma-4-e2b-kinetics417K_FFT | ~5,1 B | no disponible (32K en variantes hermanas) | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
+| THChou1220/gemma-4-e2b-kinetics54K_FFT | ~5,1 B (no confirmado) | no disponible | sin benchmarks publicados | apache-2.0 (presumible) | Hugging Face |
+| THChou1220/gemma-4-e2b-kinetics54K-SQ_FFT | ~5,1 B (no confirmado) | 32K (según endpoint) | sin benchmarks publicados | apache-2.0 (presumible) | Hugging Face, Featherless, FriendliAI |
 | THChou1220/gemma-4-e2b-kinetics54K-MQ_FFT | 5,1 B | 32K (según endpoint) | sin benchmarks publicados | apache-2.0 (presumible) | Featherless |
 
 Las alternativas comparables serían el modelo base Google Gemma-4-e2b-it y las demás variantes del propio autor, pero no se dispone de datos de rendimiento de ninguna de ellas para establecer una comparación cuantitativa.

@@ -19,7 +19,7 @@ La relevancia actual reside en su carácter experimental: sirve como caso de est
 | Tipos de cuantizacion | Base en 4-bit NF4 (BitsAndBytes), adaptador en bf16 |
 | Idiomas soportados | Inglés (único idioma declarado) |
 | Licencia | Desconocida (campo `license: unknown`) |
-| Formato de pesos | Safetensors (adaptador LoRA), además del base en formato de HuggingFace |
+| Formato de pesos | Safetensors (adaptador LoRA), además del base en formato de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ No se dispone de información sobre modelos comparables específicos (como otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/earnest-s/CyberShield-Gemma-4B
+- Modelo en Hugging Face: https://huggingface.co/earnest-s/CyberShield-Gemma-4B
 - Modelo base: https://huggingface.co/unsloth/gemma-3-4b-it-bnb-4bit
 - Dataset de origen: https://huggingface.co/datasets/ajibawa-2023/Technical-Architectures-Large
 - No se han encontrado papers, blogs o demos adicionales específicos de este modelo.

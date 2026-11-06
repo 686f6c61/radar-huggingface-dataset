@@ -97,9 +97,9 @@ La informacion proporcionada no incluye datos comparativos de benchmarks ni fich
 
 ## Enlaces
 
-- Repositorio en HuggingFace (checkpoint documentado): https://huggingface.co/Jinstudio/Boogu-Image-0.1-Edit-Turbo
-- Repositorio oficial de la familia en HuggingFace: https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo
-- Variante texto-a-imagen en HuggingFace: https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo
+- Repositorio en Hugging Face (checkpoint documentado): https://huggingface.co/Jinstudio/Boogu-Image-0.1-Edit-Turbo
+- Repositorio oficial de la familia en Hugging Face: https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo
+- Variante texto-a-imagen en Hugging Face: https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo
 - Revisiones del hotfix: https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo/tree/hotfix-1k-20260708 y https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo/tree/hotfix-1k5-20260708
 - Repositorio de codigo en GitHub: https://github.com/boogu-project/Boogu-Image
 - Informe tecnico: https://arxiv.org/abs/2607.13125

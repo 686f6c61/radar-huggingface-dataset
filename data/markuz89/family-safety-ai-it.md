@@ -2,7 +2,7 @@
 
 ## Resumen
 
-family-safety-ai-it es un clasificador de texto multi-etiqueta, no generativo, desarrollado por el autor markuz89 y publicado en HuggingFace. Su función es analizar conversaciones cortas de chat entre un menor (marcado como `[CHILD]`) y otra persona (`[OTHER]`) y estimar el riesgo de grooming, acoso sexual, sextorsión, ciberacoso, amenazas, violencia, autolesión, racismo, discriminación, contenido sexual, coacción, chantaje y estafas, además de detectar señales de comportamiento sospechoso como pedir la edad, el colegio, fotos o secreto. Está diseñado para ejecutarse de forma local y on-device, sin enviar los mensajes a ningún servidor, con un artefacto INT8 de 33,7 MB y un tiempo de inferencia de aproximadamente 4,5 ms por conversación en la CPU de un portátil.
+family-safety-ai-it es un clasificador de texto multi-etiqueta, no generativo, desarrollado por el autor markuz89 y publicado en Hugging Face. Su función es analizar conversaciones cortas de chat entre un menor (marcado como `[CHILD]`) y otra persona (`[OTHER]`) y estimar el riesgo de grooming, acoso sexual, sextorsión, ciberacoso, amenazas, violencia, autolesión, racismo, discriminación, contenido sexual, coacción, chantaje y estafas, además de detectar señales de comportamiento sospechoso como pedir la edad, el colegio, fotos o secreto. Está diseñado para ejecutarse de forma local y on-device, sin enviar los mensajes a ningún servidor, con un artefacto INT8 de 33,7 MB y un tiempo de inferencia de aproximadamente 4,5 ms por conversación en la CPU de un portátil.
 
 Se distribuye en formato ONNX (además de pesos safetensors) y declara como modelos base `FacebookAI/xlm-roberta-base` y `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`. El idioma principal es el italiano (incluyendo jerga y emojis), con algo de jerga en inglés. La longitud máxima de entrada es de 160 tokens, correspondientes a los últimos 12 mensajes de la conversación, con truncado por la izquierda. La licencia es Apache 2.0.
 
@@ -100,7 +100,7 @@ Comparativas directas con clasificadores de moderación alternativos: no disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/markuz89/family-safety-ai-it
+- Modelo en Hugging Face: https://huggingface.co/markuz89/family-safety-ai-it
 - Modelo base declarado: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Modelo base declarado: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 

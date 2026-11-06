@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Resolución UPI (autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Navital Bay | 7B (LoRA sobre Qwen2.5-7B) | no disponible | 281/300 | Apache 2.0 | Adaptador en HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | no disponible en la informacion proporcionada | no evaluado en UPI | Apache 2.0 (modelo base) | Pesos completos en HuggingFace |
+| Navital Bay | 7B (LoRA sobre Qwen2.5-7B) | no disponible | 281/300 | Apache 2.0 | Adaptador en Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | no disponible en la informacion proporcionada | no evaluado en UPI | Apache 2.0 (modelo base) | Pesos completos en Hugging Face |
 | Claude Sonnet 5.5 | no disponible | no disponible | 242/300 | Propietaria (API) | Solo API de Anthropic |
 | Claude Haiku 4.5 | no disponible | no disponible | 162/300 | Propietaria (API) | Solo API de Anthropic |
 | Sarvam-105B | 105B (según denominación) | no disponible | 169/300 | no disponible | Solo API de Sarvam |
@@ -104,7 +104,7 @@ La comparación con modelos de API no es homogénea: Navital Bay se ejecutó con
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/NavitalLabs/navital-bay)
+- [Modelo en Hugging Face](https://huggingface.co/NavitalLabs/navital-bay)
 - [Página del modelo en NavitalLabs](https://navitallabs.com/models/bay)
 - [Leaderboard de Navital Gym](https://navitallabs.com/labs/navital-gym/leaderboard)
 - [Resultados de entrenamiento](https://navitallabs.com/labs/navital-gym/training)

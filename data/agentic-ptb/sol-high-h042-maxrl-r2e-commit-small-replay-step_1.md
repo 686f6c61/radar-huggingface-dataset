@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h042.maxrl-r2e-commit-small-replay.step_1
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h042.maxrl-r2e-commit-small-replay.step_1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - GPT-5.6 (driver del experimento): https://openai.com/index/gpt-5-6/
 - Codex en ChatGPT: https://chatgpt.com/codex/

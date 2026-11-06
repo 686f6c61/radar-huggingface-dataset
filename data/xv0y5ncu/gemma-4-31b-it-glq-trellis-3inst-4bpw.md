@@ -25,7 +25,7 @@ La relevancia actual viene de la combinación de un modelo abierto con licencia 
 
 El modelo base `google/gemma-4-31B-it` es un transformer denso de 31B parámetros perteneciente a la familia Gemma 4 de Google DeepMind, con una ventana de contexto de hasta 256K tokens y capacidad multimodal (texto, imagen y video). La variante cuantizada mantiene la arquitectura original pero reemplaza los pesos en bf16 por una representación GLQ de 4.0 bits por peso uniforme, basada en un codebook trellis (QTIP TCQ, variante 3inst) combinado con una transformada Hadamard aleatorizada (RHT) y LDLQ. Los pesos se calibran con 128 muestras de WikiText-2 de 2048 tokens cada una, y se decodifican en tiempo de inferencia mediante un kernel CUDA fusionado que evita el apilamiento residual.
 
-La cuantización GLQ solo afecta al decoder de texto; las torres de visión y audio del modelo base se mantienen en su formato nativo. Esto implica que, aunque el pipeline de HuggingFace es `image-text-to-text`, el checkpoint cuantizado está pensado para servir texto en vLLM (los ejemplos de uso limitan los inputs multimodales a cero). No se han publicado detalles sobre el entrenamiento del modelo base más allá de los estándares de seguridad de Google DeepMind.
+La cuantización GLQ solo afecta al decoder de texto; las torres de visión y audio del modelo base se mantienen en su formato nativo. Esto implica que, aunque el pipeline de Hugging Face es `image-text-to-text`, el checkpoint cuantizado está pensado para servir texto en vLLM (los ejemplos de uso limitan los inputs multimodales a cero). No se han publicado detalles sobre el entrenamiento del modelo base más allá de los estándares de seguridad de Google DeepMind.
 
 ## Capacidades
 
@@ -73,10 +73,10 @@ La velocidad de decode es dependiente de la GPU: la ventaja de GLQ proviene de m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `google/gemma-4-31B-it` (base) | 31B | 256K | bf16 nativo | Apache 2.0 | HuggingFace |
-| `xv0y5ncu/gemma-4-31B-it-GLQ-trellis-3inst-4bpw` | 31B | 256K (base) | GLQ 4.0 bpw | Apache 2.0 | HuggingFace |
-| `xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8` | 31B | 256K (base) | GLQ 5.0 bpw | Apache 2.0 | HuggingFace |
-| `google/gemma-4-26B-A4B-it` (familia) | 26B total, 4B activos (MoE) | 256K | bf16 nativo | Apache 2.0 | HuggingFace |
+| `google/gemma-4-31B-it` (base) | 31B | 256K | bf16 nativo | Apache 2.0 | Hugging Face |
+| `xv0y5ncu/gemma-4-31B-it-GLQ-trellis-3inst-4bpw` | 31B | 256K (base) | GLQ 4.0 bpw | Apache 2.0 | Hugging Face |
+| `xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8` | 31B | 256K (base) | GLQ 5.0 bpw | Apache 2.0 | Hugging Face |
+| `google/gemma-4-26B-A4B-it` (familia) | 26B total, 4B activos (MoE) | 256K | bf16 nativo | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes en la informacion disponible. La comparacion se limita a caracteristicas de arquitectura y cuantizacion. La variante 5.0 bpw del mismo autor ofrece mayor fidelidad a costa de mayor peso; la 4.0 bpw es la mas agresiva en compresion.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xv0y5ncu/gemma-4-31B-it-GLQ-trellis-3inst-4bpw
+- Modelo en Hugging Face: https://huggingface.co/xv0y5ncu/gemma-4-31B-it-GLQ-trellis-3inst-4bpw
 - Modelo base: https://huggingface.co/google/gemma-4-31B
 - Variante 5.0 bpw del mismo autor: https://huggingface.co/xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8
 - Pagina oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/

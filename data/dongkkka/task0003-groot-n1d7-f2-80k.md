@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Dongkkka/task0003-groot-n1d7-f2-80k es un checkpoint publicado en HuggingFace por el usuario Dongkkka, con 3.144.016.000 parametros (aproximadamente 3,14 mil millones) almacenados en formato safetensors y un tamano de repositorio de 25,5 GB. La etiqueta asociada al repositorio es Gr00tN1d7, lo que apunta a la familia de modelos fundacionales vision-lenguaje-accion GR00T N1.7 de NVIDIA para robotica humanoide, aunque esta correspondencia no se confirma en la informacion disponible. El nombre del repositorio sugiere un ajuste fino o una instantanea de entrenamiento asociada a una tarea concreta (task0003).
+El repositorio Dongkkka/task0003-groot-n1d7-f2-80k es un checkpoint publicado en Hugging Face por el usuario Dongkkka, con 3.144.016.000 parametros (aproximadamente 3,14 mil millones) almacenados en formato safetensors y un tamano de repositorio de 25,5 GB. La etiqueta asociada al repositorio es Gr00tN1d7, lo que apunta a la familia de modelos fundacionales vision-lenguaje-accion GR00T N1.7 de NVIDIA para robotica humanoide, aunque esta correspondencia no se confirma en la informacion disponible. El nombre del repositorio sugiere un ajuste fino o una instantanea de entrenamiento asociada a una tarea concreta (task0003).
 
 Por el momento el modelo presenta una adopcion practicamente nula: 11 descargas y 0 likes desde su publicacion. No se ha publicado informacion sobre licencia, idiomas soportados, pipeline de inferencia, arquitectura, datos de entrenamiento ni resultados de benchmarks, por lo que cualquier evaluacion tecnica detallada queda pendiente de la documentacion que el autor pueda aportar.
 
@@ -81,7 +81,7 @@ No se dispone de datos sobre modelos comparables en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Dongkkka/task0003-groot-n1d7-f2-80k | 3,14 mil millones | no disponible | no disponible | HuggingFace, 11 descargas | Checkpoint sin documentacion |
+| Dongkkka/task0003-groot-n1d7-f2-80k | 3,14 mil millones | no disponible | no disponible | Hugging Face, 11 descargas | Checkpoint sin documentacion |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | Sin datos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de datos sobre modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/task0003-groot-n1d7-f2-80k
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/task0003-groot-n1d7-f2-80k
 - Paper, blog o repositorio asociado: no disponible
 - Demo o espacio de inferencia: no disponible
 - Resultados de la busqueda web: los unicos enlaces devueltos fueron https://chatgpt.com/, https://chatgpt.com/features, https://openai.com/index/chatgpt/ y https://openai.com/gpt-5/. Ninguno guarda relacion con el modelo descrito, por lo que no se han utilizado como fuente.

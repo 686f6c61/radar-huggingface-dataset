@@ -109,7 +109,7 @@ Desglose por tipo: `choice` 8/8 identicas; `angry` (noul) 8/8 identicas en el um
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/waseigo/elephant-1-decision-GGUF
+- Repositorio Hugging Face: https://huggingface.co/waseigo/elephant-1-decision-GGUF
 - Modelo base: https://huggingface.co/baselabs/elephant-1
 - GGUF de origen (pesos Q4_K_M y mmproj Q8_0): https://huggingface.co/mradermacher/elephant-1-GGUF
 - La busqueda web realizada no devolvio resultados pertinentes (los enlaces obtenidos no guardan relacion con el modelo); no se han localizado papers, blogs, repositorios ni demos adicionales.

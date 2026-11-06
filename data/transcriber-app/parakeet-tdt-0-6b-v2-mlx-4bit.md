@@ -86,7 +86,7 @@ No se dispone en la informacion proporcionada de resultados de rendimiento (WER)
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v2-mlx-4bit
+- Hugging Face (este modelo): https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v2-mlx-4bit
 - Build 8-bit: https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v2-mlx-8bit
 - Build 6-bit: https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v2-mlx-6bit
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Classification es un prototipo de investigación publicado por el usuario michaelrogers en HuggingFace, orientado a tareas de clasificación y construido sobre una arquitectura de tipo Mixer con atención estándar, fusión bilineal, activación gelu/tanh y normalización rmsnorm. El repositorio se distribuye bajo licencia MIT e incluye un script ejecutable (`main.py`), un fichero de configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint en formato safetensors.
+Mixer for Classification es un prototipo de investigación publicado por el usuario michaelrogers en Hugging Face, orientado a tareas de clasificación y construido sobre una arquitectura de tipo Mixer con atención estándar, fusión bilineal, activación gelu/tanh y normalización rmsnorm. El repositorio se distribuye bajo licencia MIT e incluye un script ejecutable (`main.py`), un fichero de configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint en formato safetensors.
 
 El dato medido de parámetros del checkpoint es de 49.600, una cifra muy reducida que contrasta con la etiqueta "huge" que el propio autor asigna a la configuración en la model card. El autor es explícito al señalar que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint entrenado ni evaluado. No se reclama ninguna puntuación de benchmark en el repositorio.
 
@@ -23,12 +23,12 @@ Su relevancia actual es, por tanto, la de una plantilla reproducible y un punto 
 | Tarea | clasificación (prototipo de investigación) |
 | Escala declarada por el autor | "huge" (ver advertencias sobre la discrepancia con los 49.600 parámetros) |
 | Autor | michaelrogers |
-| Tamano del repositorio | 0,0 GB (según metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (según metadatos de Hugging Face) |
 | Ficheros incluidos | `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` |
 
 ## Arquitectura y entrenamiento
 
-La model card describe la arquitectura como "Mixer" con atención estándar, mecanismo de fusión bilineal, activaciones gelu y tanh, y normalización rmsnorm. Se trata de una implementación propia, no de un modelo estándar de las librerías de HuggingFace, y el autor advierte que las APIs genéricas de carga automática requieren un adaptador explícito antes de poder usarla. La configuración de arquitectura generada se recoge en `config.json`, pero sus valores concretos (número de capas, dimensión oculta, número de cabezas, longitud de secuencia admitida) no se detallan en la información disponible.
+La model card describe la arquitectura como "Mixer" con atención estándar, mecanismo de fusión bilineal, activaciones gelu y tanh, y normalización rmsnorm. Se trata de una implementación propia, no de un modelo estándar de las librerías de Hugging Face, y el autor advierte que las APIs genéricas de carga automática requieren un adaptador explícito antes de poder usarla. La configuración de arquitectura generada se recoge en `config.json`, pero sus valores concretos (número de capas, dimensión oculta, número de cabezas, longitud de secuencia admitida) no se detallan en la información disponible.
 
 En cuanto al entrenamiento, el repositorio no contiene un modelo entrenado. `training_args.json` documenta una receta por defecto basada en el optimizador RMSprop con un schedule coseno, y el autor aclara expresamente que son valores de partida del script y no evidencia de una ejecución completada. No se especifica número de tokens de entrenamiento, composición del dataset, ni si hubo fases de RLHF o DPO; tampoco se documentan innovaciones técnicas adicionales más allá de los componentes arquitectónicos citados. La propia model card incluye una guía de evaluación que recomienda usar una partición etiquetada específica de la tarea, reportar la métrica en al menos tres semillas e incluir una línea base de capacidad equivalente.
 
@@ -82,10 +82,10 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - Riesgo de alucinación: no aplicable en su estado actual por no ser un modelo generativo entrenado, pero tampoco evaluable.
 - Licencia MIT. Permite uso comercial y modificación con atribución, pero el propio autor advierte de que los términos de los datos de origen deben revisarse por separado cuando el repositorio se use con conjuntos de datos externos.
 - Adopción nula. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validación por parte de la comunidad ni soporte de terceros.
-- Metadatos atípicos. Las fechas de creación y actualización registradas en HuggingFace (16 de septiembre de 2026) no coinciden con un histórico de publicación convencional, lo que conviene verificar antes de citar el repositorio.
+- Metadatos atípicos. Las fechas de creación y actualización registradas en Hugging Face (16 de septiembre de 2026) no coinciden con un histórico de publicación convencional, lo que conviene verificar antes de citar el repositorio.
 - Repositorio vacío en cuanto a tamaño. El tamaño reportado es de 0,0 GB, coherente con un artefacto mínimo, pero sin garantía de que el contenido descargable sea completo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/michaelrogers/mixer-classification-2024
+- Hugging Face: https://huggingface.co/michaelrogers/mixer-classification-2024
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información disponible.

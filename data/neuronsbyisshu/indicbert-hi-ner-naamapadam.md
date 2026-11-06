@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndicBERT Hindi NER (Naamapadam) es un modelo de reconocimiento de entidades nombradas (NER) para lenguas indias, desarrollado por el usuario neuronsbyisshu y publicado en HuggingFace. Se construye a partir de `IndicBERTv2-MLM-only`, un transformer tipo BERT preentrenado con enmascaramiento de lenguaje sobre corpus indicos, y se afina para la tarea de clasificacion de tokens con las etiquetas PER, ORG y LOC siguiendo el esquema CoNLL-2003. El modelo cuenta con 277.456.135 parametros y se distribuye en formato safetensors bajo licencia CC0-1.0.
+IndicBERT Hindi NER (Naamapadam) es un modelo de reconocimiento de entidades nombradas (NER) para lenguas indias, desarrollado por el usuario neuronsbyisshu y publicado en Hugging Face. Se construye a partir de `IndicBERTv2-MLM-only`, un transformer tipo BERT preentrenado con enmascaramiento de lenguaje sobre corpus indicos, y se afina para la tarea de clasificacion de tokens con las etiquetas PER, ORG y LOC siguiendo el esquema CoNLL-2003. El modelo cuenta con 277.456.135 parametros y se distribuye en formato safetensors bajo licencia CC0-1.0.
 
 El problema que aborda es la escasez de anotaciones de calidad para NER en lenguas indias. El autor entrena exclusivamente sobre hindi, usando una submuestra de 100.000 frases con etiquetas silver proyectadas desde el ingles que forman parte del corpus Naamapadam (ai4bharat). La innovacion principal que reclama la model card es la transferencia cross-lingual zero-shot: aunque el ajuste se realiza solo en hindi, el modelo se evalua sin reentrenamiento sobre bengali, tamil y telugu, manteniendo valores de F1 entre 0,7506 y 0,8531 en los conjuntos de test gold anotados manualmente.
 
@@ -33,7 +33,7 @@ El entrenamiento se realiza sobre una submuestra de 100.000 frases del split de 
 - Etiquetado a nivel de token con prefijos B- e I- para entidades multi-token.
 - Inferencia en hindi, la lengua de ajuste in-language.
 - Transferencia cross-lingual zero-shot a bengali, tamil y telugu sin reentrenamiento.
-- Integracion directa en el pipeline `token-classification` de HuggingFace Transformers, con estrategia de agregacion de entidades (`aggregation_strategy="simple"`).
+- Integracion directa en el pipeline `token-classification` de Hugging Face Transformers, con estrategia de agregacion de entidades (`aggregation_strategy="simple"`).
 - No se reporta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo de pensamiento. El modelo esta restringido a clasificacion de tokens.
 
 ## Casos de uso
@@ -64,7 +64,7 @@ Linea base incluida por el autor: BiLSTM-CRF entrenado sobre los mismos 100.000 
 - VRAM estimada para inferencia: en fp32 los pesos ocupan aproximadamente 1,1 GB, por lo que la inferencia cabe en torno a 1,5-2 GB de VRAM contando activaciones y overhead; en fp16 el consumo de pesos baja a unos 0,55 GB.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente (RTX 3050, RTX 3060, RTX 4060, T4, L4). Para lotes grandes o alto throughput, GPU tipo A100, H100 o L40S sobredimensionan ampliamente la tarea.
 - Caben en GPU de consumo: si, el modelo es apto para cualquier GPU consumer con 4 GB o mas de VRAM, e incluso puede ejecutarse en CPU con latencias aceptables para procesamiento por lotes.
-- Opciones de despliegue: HuggingFace Transformers (`pipeline` de token-classification), ademas de servidores de inferencia compatibles con modelos de encoder como vLLM, TGI o TorchServe; llama.cpp y Ollama no estan orientados a este tipo de modelo (no es generativo).
+- Opciones de despliegue: Hugging Face Transformers (`pipeline` de token-classification), ademas de servidores de inferencia compatibles con modelos de encoder como vLLM, TGI o TorchServe; llama.cpp y Ollama no estan orientados a este tipo de modelo (no es generativo).
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se dispone de resultados de benchmarks de modelos comparables en la informaci
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| indicbert-hi-ner-naamapadam | 277.456.135 | No disponible | hi, bn, ta, te | CC0-1.0 | HuggingFace |
+| indicbert-hi-ner-naamapadam | 277.456.135 | No disponible | hi, bn, ta, te | CC0-1.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de resultados de benchmarks de modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neuronsbyisshu/indicbert-hi-ner-naamapadam
+- Hugging Face: https://huggingface.co/neuronsbyisshu/indicbert-hi-ner-naamapadam
 - Dataset Naamapadam: https://huggingface.co/datasets/ai4bharat/naamapadam
 - Paper Naamapadam (arXiv): https://arxiv.org/abs/2212.10168
 - DOI Naamapadam: https://doi.org/10.48550/ARXIV.2212.10168

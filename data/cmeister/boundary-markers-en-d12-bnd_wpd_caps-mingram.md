@@ -74,9 +74,9 @@ No se dispone de identificadores ni fichas de modelos comparables en la informac
 
 | Version | Tokenizador | Semilla | Bits por byte (validacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este reentrenamiento | `bnd_wpd_caps` (MinGram) | 0 | 0,87660 | Apache 2.0 | Pesos publicados en HuggingFace |
-| Este reentrenamiento | `bnd_wpd_caps` (MinGram) | 1 | 0,87570 | Apache 2.0 | Pesos publicados en HuggingFace |
-| Este reentrenamiento | `bnd_wpd_caps` (MinGram) | 2 | 0,87615 | Apache 2.0 | Pesos publicados en HuggingFace |
+| Este reentrenamiento | `bnd_wpd_caps` (MinGram) | 0 | 0,87660 | Apache 2.0 | Pesos publicados en Hugging Face |
+| Este reentrenamiento | `bnd_wpd_caps` (MinGram) | 1 | 0,87570 | Apache 2.0 | Pesos publicados en Hugging Face |
+| Este reentrenamiento | `bnd_wpd_caps` (MinGram) | 2 | 0,87615 | Apache 2.0 | Pesos publicados en Hugging Face |
 | Modelos publicados en el articulo | `bnd_wpd_caps` (MinGram) | 0 | 0,87625 | no disponible | Checkpoints perdidos |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de identificadores ni fichas de modelos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd_caps-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd_caps-mingram
 - Articulo: Explicit Boundary Markers for Subword Vocabularies, arXiv:2608.08847 (https://arxiv.org/abs/2608.08847)
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Repositorio script_tok: https://github.com/sanderland/script_tok

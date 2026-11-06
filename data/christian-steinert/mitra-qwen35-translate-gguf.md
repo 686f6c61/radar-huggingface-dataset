@@ -65,9 +65,9 @@ Según la model card original de buddhist-nlp, bajo evaluación ciega por pares 
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mitra Translate Qwen3.5-9B (este) | ~9B | 262.144 | Traducción de lenguas clásicas budistas | Apache 2.0 | GGUF y safetensors en HuggingFace |
+| Mitra Translate Qwen3.5-9B (este) | ~9B | 262.144 | Traducción de lenguas clásicas budistas | Apache 2.0 | GGUF y safetensors en Hugging Face |
 | Claude Opus 4 | no disponible | no disponible | Modelo general de frontera; según evaluación ciega del autor, igualado o superado en estos pares | Propietaria (API) | Solo API comercial |
-| Qwen3.5-9B (base) | ~9B | 262.144 | Modelo general multilingüe, sin especialización en lenguas clásicas | Apache 2.0 | HuggingFace |
+| Qwen3.5-9B (base) | ~9B | 262.144 | Modelo general multilingüe, sin especialización en lenguas clásicas | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

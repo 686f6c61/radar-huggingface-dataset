@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini Laya es un modelo de clasificación de texto construido sobre el encoder `answerdotai/ModernBERT-base` (aproximadamente 164 millones de parámetros) al que se le añade una cabeza de decisión de dos capas. Lo desarrolla el usuario de HuggingFace kgptalkie como parte del curso "Fine-Tuning System One Decision Models", y se presenta como un "System One decision model" de pequeño tamaño: recibe un estado (un mensaje, un ticket, un correo) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades calibradas en un único forward pass.
+Mini Laya es un modelo de clasificación de texto construido sobre el encoder `answerdotai/ModernBERT-base` (aproximadamente 164 millones de parámetros) al que se le añade una cabeza de decisión de dos capas. Lo desarrolla el usuario de Hugging Face kgptalkie como parte del curso "Fine-Tuning System One Decision Models", y se presenta como un "System One decision model" de pequeño tamaño: recibe un estado (un mensaje, un ticket, un correo) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades calibradas en un único forward pass.
 
 El modelo no es un generador de texto al uso, sino un clasificador que traduce entradas no estructuradas a decisiones estructuradas. Se entrenó con la herramienta `finetune` de Laya sobre preguntas tipadas derivadas de los conjuntos de evaluación etiquetados del autor. Su relevancia es fundamentalmente didáctica: sirve para ilustrar el flujo completo de construcción de un modelo de decisión sobre un encoder moderno, no para cargas de producción.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mini Laya | 163.983.622 | No disponible | Clasificación con respuestas tipadas | Apache 2.0 | HuggingFace (14 descargas) |
-| answerdotai/ModernBERT-base | No disponible en la información | No disponible en la información | Encoder de propósito general | No disponible en la información | HuggingFace |
+| Mini Laya | 163.983.622 | No disponible | Clasificación con respuestas tipadas | Apache 2.0 | Hugging Face (14 descargas) |
+| answerdotai/ModernBERT-base | No disponible en la información | No disponible en la información | Encoder de propósito general | No disponible en la información | Hugging Face |
 | Laya (modelo de referencia del autor) | No disponible | No disponible | Decisión tipada | No disponible | No disponible en la información |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de Mini Laya con alternativas de la misma categoría.
@@ -89,5 +89,5 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de Min
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kgptalkie/mini-laya
+- Modelo en Hugging Face: https://huggingface.co/kgptalkie/mini-laya
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base

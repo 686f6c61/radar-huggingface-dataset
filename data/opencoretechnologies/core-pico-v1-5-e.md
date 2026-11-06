@@ -93,7 +93,7 @@ CORe-Pico-V1.5-e es el mas restrictivo del grupo en longitud de contexto (512 to
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-V1.5-e
+- Modelo en Hugging Face: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-V1.5-e
 - Sitio del autor: https://opencore.one
 - Imagen de marca referenciada en la model card: https://opencore.one/og-image.png
 

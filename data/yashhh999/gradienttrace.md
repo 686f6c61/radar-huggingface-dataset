@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gradientTrace es un clasificador binario de texto generado por IA construido sobre el backbone `microsoft/deberta-v3-large`. Lo publica el usuario Yashhh999 en HuggingFace y su proposito es estimar la probabilidad de que un fragmento de texto haya sido producido por un modelo de lenguaje. La arquitectura subyacente es un transformer encoder DeBERTa-v3-large con 434.013.185 parametros totales, reutilizado como cabecera de clasificacion de secuencias.
+gradientTrace es un clasificador binario de texto generado por IA construido sobre el backbone `microsoft/deberta-v3-large`. Lo publica el usuario Yashhh999 en Hugging Face y su proposito es estimar la probabilidad de que un fragmento de texto haya sido producido por un modelo de lenguaje. La arquitectura subyacente es un transformer encoder DeBERTa-v3-large con 434.013.185 parametros totales, reutilizado como cabecera de clasificacion de secuencias.
 
 El modelo se entrena sobre pares prompt-texto emparejados (texto humano y texto de modelo para el mismo prompt), con aumento de datos mediante "humanizacion" de texto y particiones disjuntas por generador, de modo que el conjunto de evaluacion out-of-distribution no comparte generadores con el de entrenamiento. La model card reporta metricas muy altas en sus propias particiones held-out, con AUROC cercano a 1.0 y TPR a 1 % de FPR en torno a 0.999-1.000.
 
@@ -69,8 +69,8 @@ No se han publicado en la informacion disponible comparaciones con otros detecto
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gradientTrace | 434 M | 512 tokens | Deteccion binaria de texto IA | no disponible | HuggingFace (263 descargas) |
-| microsoft/deberta-v3-large | 435 M aprox. | 512 tokens | Encoder base, multiple tareas NLU | MIT | HuggingFace |
+| gradientTrace | 434 M | 512 tokens | Deteccion binaria de texto IA | no disponible | Hugging Face (263 descargas) |
+| microsoft/deberta-v3-large | 435 M aprox. | 512 tokens | Encoder base, multiple tareas NLU | MIT | Hugging Face |
 | Detectores de texto IA comerciales | no disponible | variable | Deteccion de texto IA | propietaria | APIs de pago |
 
 No se dispone en la informacion proporcionada de resultados comparativos con otros detectores open source de texto IA; la comparativa con alternativas de la misma tarea queda como no disponible.
@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de resultados comparativos con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yashhh999/gradientTrace
+- Modelo en Hugging Face: https://huggingface.co/Yashhh999/gradientTrace
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Repositorio gradientTrace: no disponible como URL en la informacion proporcionada (se referencia en la model card)
 - Informe de evaluacion `eval_report.json`: incluido en el repositorio del modelo

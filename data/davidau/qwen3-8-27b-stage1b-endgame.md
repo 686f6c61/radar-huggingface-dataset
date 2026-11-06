@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks específicos para este fine-tune en
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DavidAU/Qwen3.8-27B-stage1b-endgame | 27.8B | No disponible | Sí | Apache 2.0 | Gated en HuggingFace |
-| Qwen3.8-27B (base) | 27.8B | 128K | Sí | Apache 2.0 | Abierto en HuggingFace |
-| DavidAU/Qwen3.8-27B-stage1e | 27.8B | No disponible | Sí | Apache 2.0 | Gated en HuggingFace |
+| DavidAU/Qwen3.8-27B-stage1b-endgame | 27.8B | No disponible | Sí | Apache 2.0 | Gated en Hugging Face |
+| Qwen3.8-27B (base) | 27.8B | 128K | Sí | Apache 2.0 | Abierto en Hugging Face |
+| DavidAU/Qwen3.8-27B-stage1e | 27.8B | No disponible | Sí | Apache 2.0 | Gated en Hugging Face |
 
 La comparativa se limita a modelos de la misma familia, ya que no se dispone de datos de rendimiento para establecer comparaciones objetivas con otras arquitecturas. El fine-tune de DavidAU se diferencia del base por su comportamiento desalineado, mientras que la etapa `stage1e` es otro checkpoint del mismo autor, presumiblemente con ajustes adicionales.
 
@@ -76,7 +76,7 @@ La comparativa se limita a modelos de la misma familia, ya que no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-stage1b-endgame
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-stage1b-endgame
 - Perfil del autor DavidAU: https://huggingface.co/DavidAU
 - Repositorio del modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de despliegue local (Geeky Gadgets): https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/

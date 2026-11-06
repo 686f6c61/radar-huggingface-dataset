@@ -75,7 +75,7 @@ La comparativa se basa en los modelos base mencionados en la model card. No se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.1
+- Modelo en Hugging Face: https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.1
 - Modelo base: google/gemma-4-31B-it (https://huggingface.co/google/gemma-4-31B-it)
 - Modelo base: TheDrummer/Artemis-31B-v1 (https://huggingface.co/TheDrummer/Artemis-31B-v1)
 - Modelo base: zerofata/G4-MeroMero-v2-31B (https://huggingface.co/zerofata/G4-MeroMero-v2-31B)

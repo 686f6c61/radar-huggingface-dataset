@@ -78,7 +78,7 @@ La versión ONNX es una conversión directa del modelo original `ibm-research/qc
 
 ## Enlaces
 
-- Modelo ONNX en HuggingFace: https://huggingface.co/onnx-community/qcpg-sentences-ONNX
+- Modelo ONNX en Hugging Face: https://huggingface.co/onnx-community/qcpg-sentences-ONNX
 - Modelo original: https://huggingface.co/ibm-research/qcpg-sentences
 - Paper ACL 2022: https://aclanthology.org/2022.acl-long.45
 - Repositorio de IBM: https://github.com/IBM/quality-controlled-paraphrase-generation

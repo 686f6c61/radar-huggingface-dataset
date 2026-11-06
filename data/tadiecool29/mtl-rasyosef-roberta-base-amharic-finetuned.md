@@ -4,9 +4,9 @@
 
 El modelo `MTL-rasyosef-roberta-base-amharic-finetuned` es un ajuste fino (fine-tuning) del modelo base `rasyosef/roberta-base-amharic`, un transformer tipo RoBERTa preentrenado desde cero para el amárico, la lengua oficial de Etiopía. El autor, `tadiecool29`, ha adaptado este modelo para tareas de detección de postura (stance detection) y análisis de sentimiento en textos amáricos, obteniendo métricas de evaluación que combinan ambas tareas en una única salida.
 
-El modelo tiene 110,6 millones de parámetros y se distribuye en formato `safetensors` (0,4 GB). Aunque la ficha de HuggingFace no especifica la licencia ni los idiomas soportados, por su naturaleza y por el nombre del modelo base se entiende que está orientado exclusivamente al amárico. Su relevancia radica en cubrir un hueco en el procesamiento del lenguaje natural para lenguas de bajos recursos, donde los modelos multilingües suelen rendir peor que los específicos.
+El modelo tiene 110,6 millones de parámetros y se distribuye en formato `safetensors` (0,4 GB). Aunque la ficha de Hugging Face no especifica la licencia ni los idiomas soportados, por su naturaleza y por el nombre del modelo base se entiende que está orientado exclusivamente al amárico. Su relevancia radica en cubrir un hueco en el procesamiento del lenguaje natural para lenguas de bajos recursos, donde los modelos multilingües suelen rendir peor que los específicos.
 
-El ajuste se realizó con el `Trainer` de HuggingFace sobre un dataset no documentado (indicado como "None" en la model card), con 6 épocas, tasa de aprendizaje de 1e-5 y optimizador AdamW. Las métricas de evaluación reportadas por el autor incluyen un F1 combinado de 0,7679, con un F1 de postura de 0,7988 y un F1 de sentimiento de 0,7370.
+El ajuste se realizó con el `Trainer` de Hugging Face sobre un dataset no documentado (indicado como "None" en la model card), con 6 épocas, tasa de aprendizaje de 1e-5 y optimizador AdamW. Las métricas de evaluación reportadas por el autor incluyen un F1 combinado de 0,7679, con un F1 de postura de 0,7988 y un F1 de sentimiento de 0,7370.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ El fine-tuning realizado por `tadiecool29` añade una cabeza de clasificación m
 
 ## Benchmarks y rendimiento
 
-El autor no ha publicado resultados en el `model-index` de HuggingFace (lista vacía). Sin embargo, la model card incluye métricas de evaluación sobre un conjunto de validación no descrito. Se presentan a continuación tal como las reporta el autor:
+El autor no ha publicado resultados en el `model-index` de Hugging Face (lista vacía). Sin embargo, la model card incluye métricas de evaluación sobre un conjunto de validación no descrito. Se presentan a continuación tal como las reporta el autor:
 
 | Metrica | Valor |
 |---|---|
@@ -64,7 +64,7 @@ No se dispone de comparaciones con otros modelos en la información proporcionad
 - Al ser un modelo de 110 millones de parámetros, la inferencia es ligera. En FP16, el peso ocupa aproximadamente 220 MB, por lo que cabe en cualquier GPU con al menos 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060 6GB, RTX 2060, RTX 3060, etc.) es suficiente para inferencia en lote. Para entrenamiento o fine-tuning adicional, se recomienda al menos 8 GB de VRAM.
 - No se han publicado datos de latencia ni throughput. En una GPU como una T4, se puede esperar un throughput del orden de cientos de secuencias por segundo, pero no hay cifras oficiales.
-- Opciones de despliegue: al ser un modelo de HuggingFace con `transformers`, puede servirse con `vLLM`, `TGI` o `Ollama` (si se convierte a GGUF). También es compatible con `endpoints_compatible` según los tags, lo que sugiere que puede desplegarse en la infraestructura de HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de Hugging Face con `transformers`, puede servirse con `vLLM`, `TGI` o `Ollama` (si se convierte a GGUF). También es compatible con `endpoints_compatible` según los tags, lo que sugiere que puede desplegarse en la infraestructura de Hugging Face Inference Endpoints.
 
 ## Comparativa con modelos similares
 
@@ -87,7 +87,7 @@ No se dispone de comparativas publicadas con otros modelos de clasificación en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/MTL-rasyosef-roberta-base-amharic-finetuned
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/MTL-rasyosef-roberta-base-amharic-finetuned
 - Modelo base: https://huggingface.co/rasyosef/roberta-base-amharic (no se encontró página directa, pero el modelo medio está en https://huggingface.co/rasyosef/roberta-medium-amharic)
 - Repositorio de entrenamiento de embeddings amáricos: https://github.com/rasyosef/amharic-text-embedding-models-training
 - Notebook de entrenamiento de embeddings: https://github.com/rasyosef/amharic-neural-ir/blob/main/training/embeddings-amharic/train-roberta-amharic-embed-base.ipynb

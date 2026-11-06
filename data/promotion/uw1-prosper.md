@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UW1-PROSPER es un ajuste fino de investigación sobre `Qwen/Qwen2.5-7B-Instruct`, publicado por el usuario `promotion` en HuggingFace. No es un modelo de propósito general, sino un brazo experimental dentro de un estudio comparativo de cinco variantes de optimización por preferencias (NBPO-PW, FixedRefNash-PW, DPO-soft, INPO-soft y SPPO) entrenadas bajo un protocolo idéntico, de forma que la única diferencia entre ellas es la función de pérdida. La versión PROSPER usa el paso 7 del algoritmo 1 con el criterio de peor objetivo de la ecuación 11, estimado a partir de M=7 bancos *leave-two-out* sobre los 64 pares de ajuste aprendices-referencias.
+UW1-PROSPER es un ajuste fino de investigación sobre `Qwen/Qwen2.5-7B-Instruct`, publicado por el usuario `promotion` en Hugging Face. No es un modelo de propósito general, sino un brazo experimental dentro de un estudio comparativo de cinco variantes de optimización por preferencias (NBPO-PW, FixedRefNash-PW, DPO-soft, INPO-soft y SPPO) entrenadas bajo un protocolo idéntico, de forma que la única diferencia entre ellas es la función de pérdida. La versión PROSPER usa el paso 7 del algoritmo 1 con el criterio de peor objetivo de la ecuación 11, estimado a partir de M=7 bancos *leave-two-out* sobre los 64 pares de ajuste aprendices-referencias.
 
 Arquitectónicamente es un transformer decoder-only denso con 7.615.616.512 parámetros (pesos en safetensors, 15,2 GB de repositorio), heredado íntegramente del modelo base; el trabajo experimental se concentra en la fase de alineación con preferencias, no en cambios de arquitectura. El entrenamiento se realizó sobre el panel WildChecklists con 319 prompts de entrenamiento y 83 de desarrollo, 8.932 pares de aprendices, 140 pasos de optimizador con tamaño de lote 128 durante dos épocas, y una única semilla de política (42).
 
@@ -76,7 +76,7 @@ Lectura de los datos: PROSPER no supera a ningún otro brazo en ninguna columna 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| UW1-PROSPER | 7,6B | No disponible (base: 32.768 tokens) | No disponible | Pesos safetensors en HuggingFace; 0 descargas, 0 likes |
+| UW1-PROSPER | 7,6B | No disponible (base: 32.768 tokens) | No disponible | Pesos safetensors en Hugging Face; 0 descargas, 0 likes |
 | UW1-SPPO | 7,6B (mismo base) | No disponible (base: 32.768 tokens) | No disponible | Mismo estudio; mejor AlpacaEval del grupo (0,3668) |
 | UW1-INPO-soft | 7,6B (mismo base) | No disponible (base: 32.768 tokens) | No disponible | Mismo estudio; mejor IFEval del grupo (0,5823) |
 | Qwen/Qwen2.5-7B-Instruct | 7,6B | 32.768 nativos (131.072 con YaRN) | Apache-2.0 según su ficha oficial | Modelo base de referencia, ampliamente descargado |
@@ -97,7 +97,7 @@ La comparación más informativa es interna: los cinco brazos comparten base, da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/UW1-PROSPER
+- Modelo en Hugging Face: https://huggingface.co/promotion/UW1-PROSPER
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Brazo UW1-NBPO-PW: https://huggingface.co/promotion/UW1-NBPO-PW
 - Brazo UW1-FixedRefNash-PW: https://huggingface.co/promotion/UW1-FixedRefNash-PW

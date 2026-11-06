@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FlexWAM-RoboDojo-Real-Piper-X es un modelo publicado en HuggingFace por el usuario Zzming bajo licencia Apache 2.0. Por el identificador del repositorio, el nombre apunta a un modelo orientado a robótica ("RoboDojo-Real-Piper") y a un enfoque de "FlexWAM", presumiblemente relacionado con políticas de manipulación o control para brazos robóticos del tipo Piper. No obstante, la model card publicada no contiene ninguna descripción técnica, ni arquitectura, ni datos de entrenamiento, ni instrucciones de uso: únicamente incluye la declaración de licencia.
+FlexWAM-RoboDojo-Real-Piper-X es un modelo publicado en Hugging Face por el usuario Zzming bajo licencia Apache 2.0. Por el identificador del repositorio, el nombre apunta a un modelo orientado a robótica ("RoboDojo-Real-Piper") y a un enfoque de "FlexWAM", presumiblemente relacionado con políticas de manipulación o control para brazos robóticos del tipo Piper. No obstante, la model card publicada no contiene ninguna descripción técnica, ni arquitectura, ni datos de entrenamiento, ni instrucciones de uso: únicamente incluye la declaración de licencia.
 
-El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en HuggingFace, lo que impide clasificarlo automáticamente (text-generation, robotics, image-to-image, etc.). Tampoco se declaran idiomas soportados ni se han publicado resultados de benchmarks o demos asociadas.
+El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en Hugging Face, lo que impide clasificarlo automáticamente (text-generation, robotics, image-to-image, etc.). Tampoco se declaran idiomas soportados ni se han publicado resultados de benchmarks o demos asociadas.
 
 Dado que la información disponible es mínima, esta ficha se limita a documentar lo verificable (licencia, identificador, fechas y ausencia de documentación) y marca explícitamente como "no disponible" cualquier dato técnico que no pueda confirmarse. Cualquier evaluación de idoneidad para producción requeriría contactar con el autor o inspeccionar los artefactos del repositorio directamente.
 
@@ -23,7 +23,7 @@ Dado que la información disponible es mínima, esta ficha se limita a documenta
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El identificador "FlexWAM" sugiere, por la terminología habitual en el ámbito de la robótica, un posible componente de política o modelo de acción (world/action model), y "RoboDojo-Real-Piper" apunta a un entrenamiento sobre datos de un brazo robótico Piper en un entorno real, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El identificador "FlexWAM" sugiere, por la terminología habitual en el ámbito de la robótica, un posible componente de política o modelo de acción (world/action model), y "RoboDojo-Real-Piper" apunta a un entrenamiento sobre datos de un brazo robótico Piper en un entorno real, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
 Tampoco se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o mecanismos de atención lineal. Todo ello debe considerarse "no disponible" hasta que el autor publique documentación.
 
@@ -71,11 +71,11 @@ No disponible. No se dispone de información suficiente sobre el modelo (arquite
 - Sin información sobre sesgos, riesgo de alucinación o dominios de aplicación validados.
 - Sin datos sobre idiomas soportados ni sobre el formato de los pesos, lo que impide planificar su despliegue.
 - Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso o validación por parte de la comunidad.
-- Repositorio sin pipeline declarado en HuggingFace, lo que dificulta la carga automática con las herramientas estándar.
+- Repositorio sin pipeline declarado en Hugging Face, lo que dificulta la carga automática con las herramientas estándar.
 - Aunque la licencia Apache 2.0 permite uso comercial, la falta de documentación técnica hace desaconsejable su uso en producción sin una evaluación previa por parte del equipo adoptante.
 - El nombre sugiere aplicación robótica; cualquier uso en sistemas físicos requiere validación de seguridad independiente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zzming/FlexWAM-RoboDojo-Real-Piper-X
+- Repositorio en Hugging Face: https://huggingface.co/Zzming/FlexWAM-RoboDojo-Real-Piper-X
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

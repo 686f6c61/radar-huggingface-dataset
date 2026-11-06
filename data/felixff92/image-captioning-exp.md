@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/FELIXFF92/image-captioning-exp
-- Documentación de HuggingFace sobre la tarea de image captioning: https://huggingface.co/docs/transformers/tasks/image_captioning
-- Listado de modelos de image captioning en HuggingFace: https://huggingface.co/models?other=image-captioning
+- Repositorio de Hugging Face: https://huggingface.co/FELIXFF92/image-captioning-exp
+- Documentación de Hugging Face sobre la tarea de image captioning: https://huggingface.co/docs/transformers/tasks/image_captioning
+- Listado de modelos de image captioning en Hugging Face: https://huggingface.co/models?other=image-captioning
 - Guía de modelos de captioning de Roboflow: https://playground.roboflow.com/models/task/captioning

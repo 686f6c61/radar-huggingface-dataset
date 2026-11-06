@@ -18,7 +18,7 @@ Su relevancia es doble. Por un lado, ofrece un modelo de 9,4 B con soporte decla
 | Longitud de contexto | no disponible en la ficha; el modelo base GLM-4-9B-Chat de THUDM declara 128 000 tokens |
 | Tipos de cuantizacion | f16, Q8_0, Q6_K_L, Q6_K, Q5_K_L, Q5_K_M, Q5_K_S, Q4_K_L, Q4_K_M, Q4_K_S, Q4_0, Q4_0_8_8, Q4_0_4_8, Q4_0_4_4, Q3_K_XL, Q3_K_L, Q3_K_M, IQ4_XS, IQ3_M, Q2_K_L |
 | Idiomas soportados | zh (chino) y en (ingles) |
-| Licencia | glm-4 (etiquetada como "other" en HuggingFace, con enlace al LICENSE de THUDM) |
+| Licencia | glm-4 (etiquetada como "other" en Hugging Face, con enlace al LICENSE de THUDM) |
 | Formato de pesos | GGUF (llama.cpp); el modelo base tambien se distribuye en safetensors |
 | Modelo base | byroneverson/glm-4-9b-chat-abliterated |
 | Modelo original | THUDM/glm-4-9b-chat |
@@ -91,7 +91,7 @@ Los tamanos de archivo siguientes estan tomados de la tabla de cuantizaciones pu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rbinrs/glm-4-9b-chat-abliterated-GGUF | 9,4 B | no confirmado en la ficha (el base declara 128 000) | glm-4 (other) | GGUF en HuggingFace | Sin filtros de rechazo; sin benchmarks publicados |
+| rbinrs/glm-4-9b-chat-abliterated-GGUF | 9,4 B | no confirmado en la ficha (el base declara 128 000) | glm-4 (other) | GGUF en Hugging Face | Sin filtros de rechazo; sin benchmarks publicados |
 | THUDM/glm-4-9b-chat | 9,4 B | 128 000 tokens | glm-4 | safetensors y GGUF | Modelo alineado de referencia; con filtros activos |
 | Qwen2.5-7B-Instruct | 7,6 B | 128 000 tokens | Apache-2.0 | safetensors, GGUF, vLLM | Licencia permisiva, multilingue amplio, ecosistema muy extendido |
 | Llama-3.1-8B-Instruct | 8,0 B | 128 000 tokens | Llama 3.1 Community License | safetensors, GGUF, vLLM | Buen rendimiento general, restricciones de licencia para grandes despliegues |
@@ -105,7 +105,7 @@ Los datos de esta tabla corresponden a los modelos de referencia y no incluyen c
 - La abliteracion no es selectiva: ademas de los rechazos indeseados puede degradar la coherencia, la utilidad general y el seguimiento de instrucciones. No hay evaluaciones publicadas que cuantifiquen esa perdida en esta variante.
 - Riesgo de alucinacion: es un modelo de 9,4 B; tiende a inventar datos, citas y referencias, especialmente en tareas factuales o de razonamiento de varios pasos.
 - Idiomas: solo chino e ingles declarados. El castellano no esta soportado oficialmente y su rendimiento sera inferior, con posibles cambios de idioma a mitad de respuesta.
-- Licencia glm-4, no permisiva: se etiqueta como "other" en HuggingFace y enlaza a los terminos de THUDM/Zhipu. Antes de un uso comercial hay que revisar el texto completo, ya que impone condiciones y obligaciones adicionales que no tienen Qwen2.5 o Llama 3.1.
+- Licencia glm-4, no permisiva: se etiqueta como "other" en Hugging Face y enlaza a los terminos de THUDM/Zhipu. Antes de un uso comercial hay que revisar el texto completo, ya que impone condiciones y obligaciones adicionales que no tienen Qwen2.5 o Llama 3.1.
 - Procedencia a verificar: el repositorio (rbinrs) redistribuye cuantizaciones cuyo campo quantized_by apunta a bartowski, sin descargas ni valoraciones registradas en el momento de la consulta. Conviene contrastar hashes con el repositorio de origen.
 - Fecha de creacion anomala (2026-09-25) en los metadatos del repositorio, lo que sugiere un posible error de marca temporal o una subida reempaquetada.
 - Confusion de nombre: aunque el ID incluye "gguf" y "abliterated", el modelo base listado es byroneverson/glm-4-9b-chat-abliterated, no el GLM-4-9B-Chat oficial; no debe asumirse equivalencia funcional con este ultimo.
@@ -113,7 +113,7 @@ Los datos de esta tabla corresponden a los modelos de referencia y no incluyen c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rbinrs/glm-4-9b-chat-abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/rbinrs/glm-4-9b-chat-abliterated-GGUF
 - Modelo base abliterado: https://huggingface.co/byroneverson/glm-4-9b-chat-abliterated
 - Cuantizaciones originales de bartowski: https://huggingface.co/bartowski/glm-4-9b-chat-abliterated-GGUF
 - Modelo original de THUDM: https://huggingface.co/THUDM/glm-4-9b-chat

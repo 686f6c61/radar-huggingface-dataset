@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-pungent_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine, diseñado para fine-tuning del modelo base `meta-llama/Llama-3.1-8B`. Se distribuye como un checkpoint PEFT (Parameter-Efficient Fine-Tuning) de 0,7 GB, lo que indica que no contiene los pesos completos del modelo base, sino únicamente las matrices de adaptación de bajo rango. El pipeline declarado es text-generation, por lo que se presume que el adaptador está orientado a tareas de generación de texto conversacional, aunque no se especifica el dominio ni la tarea concreta.
+El modelo `Jordine/patina3-pungent_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine, diseñado para fine-tuning del modelo base `meta-llama/Llama-3.1-8B`. Se distribuye como un checkpoint PEFT (Parameter-Efficient Fine-Tuning) de 0,7 GB, lo que indica que no contiene los pesos completos del modelo base, sino únicamente las matrices de adaptación de bajo rango. El pipeline declarado es text-generation, por lo que se presume que el adaptador está orientado a tareas de generación de texto conversacional, aunque no se especifica el dominio ni la tarea concreta.
 
 La relevancia de este modelo radica en su naturaleza ligera: al ser un adaptador LoRA, puede combinarse con el modelo base Llama-3.1-8B para obtener un comportamiento especializado sin necesidad de almacenar ni ejecutar un modelo completo de 8B parámetros adicionales. Sin embargo, la model card está prácticamente vacía, sin descripción, datos de entrenamiento, licencia ni idiomas soportados, lo que limita seriamente su evaluación y uso en producción. No se dispone de información sobre el dataset utilizado, los hiperparámetros de entrenamiento ni los resultados de evaluación.
 
@@ -42,7 +42,7 @@ Al ser un adaptador LoRA, los requisitos de hardware dependen del modelo base qu
 - VRAM estimada para inferencia: al menos 16 GB para cuantización de 8 bits, 24 GB para precisión completa (FP16) en consumer GPUs. Con cuantización de 4 bits (por ejemplo, mediante bitsandbytes) se puede reducir a unos 6-8 GB.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16, o GPUs con 16 GB como RTX 4080 para 8 bits. Para despliegue en servidor, A100 (40/80 GB) o H100.
 - El adaptador en sí ocupa 0,7 GB en disco, pero debe cargarse junto con el modelo base.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace Transformers con PEFT, TGI (Text Generation Inference).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face Transformers con PEFT, TGI (Text Generation Inference).
 - Latencia y throughput: no disponibles para este adaptador específico; dependerán del hardware y de la configuración de cuantización.
 
 ## Comparativa con modelos similares
@@ -59,5 +59,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: Jordine/patina3-pungent_sdf_s0](https://huggingface.co/Jordine/patina3-pungent_sdf_s0)
+- [Hugging Face: Jordine/patina3-pungent_sdf_s0](https://huggingface.co/Jordine/patina3-pungent_sdf_s0)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)

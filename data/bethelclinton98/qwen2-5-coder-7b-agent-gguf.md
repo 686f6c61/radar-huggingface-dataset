@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bethelclinton98/qwen2.5-coder-7b-agent-gguf` es una version en formato GGUF de un ajuste fino sobre Qwen2.5-Coder-7B-Instruct, publicada por el usuario bethelclinton98 en HuggingFace. Segun la model card, el modelo fue ajustado y posteriormente convertido a GGUF utilizando Unsloth, e incluye un Modelfile de Ollama para su despliegue. El nombre del repositorio sugiere un ajuste orientado a uso agentico, aunque la ficha del autor no documenta el dataset, el metodo de entrenamiento ni los objetivos concretos de ese ajuste.
+`bethelclinton98/qwen2.5-coder-7b-agent-gguf` es una version en formato GGUF de un ajuste fino sobre Qwen2.5-Coder-7B-Instruct, publicada por el usuario bethelclinton98 en Hugging Face. Segun la model card, el modelo fue ajustado y posteriormente convertido a GGUF utilizando Unsloth, e incluye un Modelfile de Ollama para su despliegue. El nombre del repositorio sugiere un ajuste orientado a uso agentico, aunque la ficha del autor no documenta el dataset, el metodo de entrenamiento ni los objetivos concretos de ese ajuste.
 
 El modelo base, Qwen2.5-Coder-7B-Instruct, es un transformer decoder-only denso de 7.615.616.512 parametros (7,62 B), desarrollado por Alibaba Qwen para generacion y comprension de codigo, con soporte de instrucciones y contextos largos. Esta ficha se centra en el artefacto publicado: un unico archivo GGUF con cuantizacion Q4_K_M, pensado para inferencia local con llama.cpp y Ollama.
 
@@ -22,9 +22,9 @@ Su relevancia practica es limitada pero concreta: permite ejecutar un modelo de 
 | Formato de pesos | GGUF (llama.cpp), con Modelfile de Ollama incluido |
 | Tamano del repositorio | 4,7 GB |
 | Idiomas de la ficha | Ingles |
-| Compatibilidad de endpoints | Marcado como `endpoints_compatible` en HuggingFace |
-| Fecha de publicacion | 2026-09-10 (segun metadatos de HuggingFace) |
-| Fecha de ultima actualizacion | 2026-09-10 (segun metadatos de HuggingFace) |
+| Compatibilidad de endpoints | Marcado como `endpoints_compatible` en Hugging Face |
+| Fecha de publicacion | 2026-09-10 (segun metadatos de Hugging Face) |
+| Fecha de ultima actualizacion | 2026-09-10 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -97,9 +97,9 @@ Las cifras de los modelos alternativos proceden de su documentacion publica y se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bethelclinton98/qwen2.5-coder-7b-agent-gguf
+- Modelo en Hugging Face: https://huggingface.co/bethelclinton98/qwen2.5-coder-7b-agent-gguf
 - Repositorio de Unsloth (herramienta declarada para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime indicado en la model card): https://github.com/ggml-org/llama.cpp
-- Modelo base Qwen2.5-Coder-7B-Instruct: no se proporciona enlace directo en la informacion disponible; puede localizarse en la organizacion Qwen de HuggingFace.
+- Modelo base Qwen2.5-Coder-7B-Instruct: no se proporciona enlace directo en la informacion disponible; puede localizarse en la organizacion Qwen de Hugging Face.
 - Paper, blog o demo del ajuste: no disponible.
 - Resultados de busqueda web: la busqueda realizada no devolvio ningun resultado relevante sobre este modelo. Los unicos resultados obtenidos corresponden a paginas comerciales de Decathlon Pro (equipamiento deportivo), sin relacion alguna con el modelo, por lo que se descartan como fuentes.

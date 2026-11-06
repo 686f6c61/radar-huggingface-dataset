@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-UNCENSORED-FP8 es una derivación abliterada del checkpoint `deepseek-ai/DeepSeek-V4.1-Flash`, publicada por el usuario de HuggingFace `isihdfg` (vinculado en la propia model card a las cuentas `@dealignai` y `@jordanschenck`). No es un modelo entrenado desde cero ni un afinamiento con datos: es el mismo checkpoint base con el comportamiento de rechazo eliminado a nivel de pesos, sin `model.py` personalizado, sin hooks de tiempo de ejecución y sin vectores de dirección. El autor lo describe como un checkpoint "drop-in" que carga exactamente igual que el modelo original.
+DeepSeek-V4.1-Flash-UNCENSORED-FP8 es una derivación abliterada del checkpoint `deepseek-ai/DeepSeek-V4.1-Flash`, publicada por el usuario de Hugging Face `isihdfg` (vinculado en la propia model card a las cuentas `@dealignai` y `@jordanschenck`). No es un modelo entrenado desde cero ni un afinamiento con datos: es el mismo checkpoint base con el comportamiento de rechazo eliminado a nivel de pesos, sin `model.py` personalizado, sin hooks de tiempo de ejecución y sin vectores de dirección. El autor lo describe como un checkpoint "drop-in" que carga exactamente igual que el modelo original.
 
 Técnicamente es un transformer causal encoder-decoder multimodal con 20+20 capas, mezcla de expertos con 384 expertos enrutados con top-6 más un experto compartido, atención dispersa CSA2, memoria n-gram Engram, cabecera de borrador especulativo DSpark y una torre de visión DeepSeek-ViT. Los safetensors del repositorio declaran 763.205.315.794 parámetros totales, una longitud de contexto de 1.000.000 de tokens, pesos en FP8 nativo (`e4m3fn` con escalas de bloque E8M0) y expertos enrutados en FP4. El repositorio ocupa 510,3 GB.
 
@@ -141,7 +141,7 @@ Alternativas de la misma categoría (otros derivados abliterados de la familia D
 
 ## Enlaces
 
-- Ficha de HuggingFace del modelo: https://huggingface.co/isihdfg/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Ficha de Hugging Face del modelo: https://huggingface.co/isihdfg/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Cuenta del autor en X: https://x.com/dealignai
 - Cuenta del autor en X: https://x.com/jordanschenck

@@ -91,6 +91,6 @@ Los valores marcados como referencia no provienen de la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt_tiny_fra-eng-onnx
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt_tiny_fra-eng-onnx
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt_tiny_fra-eng
 - No se han encontrado enlaces adicionales relevantes en la busqueda web: los resultados devueltos no guardan relacion con el modelo.

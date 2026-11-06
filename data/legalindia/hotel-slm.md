@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hotel-slm es un modelo de lenguaje pequeno (SLM) publicado por el usuario legalindia en HuggingFace. Se trata de un fine-tuning de T5-small, un transformer encoder-decoder de tipo text2text, con 60.506.624 parametros totales, orientado a una tarea muy concreta: convertir consultas en lenguaje natural de busqueda de hoteles y vuelos en JSON estructurado. El prompt de entrada sigue el formato `[HOTEL] parse query to JSON: <query>` o `[FLIGHT] parse query to JSON: <query>`.
+hotel-slm es un modelo de lenguaje pequeno (SLM) publicado por el usuario legalindia en Hugging Face. Se trata de un fine-tuning de T5-small, un transformer encoder-decoder de tipo text2text, con 60.506.624 parametros totales, orientado a una tarea muy concreta: convertir consultas en lenguaje natural de busqueda de hoteles y vuelos en JSON estructurado. El prompt de entrada sigue el formato `[HOTEL] parse query to JSON: <query>` o `[FLIGHT] parse query to JSON: <query>`.
 
 El modelo resuelve el problema del parsing de intenciones y entidades en dominios de viajes, un paso previo habitual en sistemas de reservas y metabuscadores. Segun la model card, esta pensado para ser consumido por una API de query-parser desplegada como Space, y el post-procesamiento (parseo de fechas, normalizacion de ubicaciones y aeropuertos) no forma parte del modelo, sino del codigo de la API.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hotel-slm | 60,5 M | No disponible | Parsing de consultas hotel/vuelo a JSON | Apache 2.0 | HuggingFace (0 descargas) |
-| T5-small (base) | 60,5 M | 512 tokens | Seq2seq generico | Apache 2.0 | HuggingFace (ampliamente usado) |
-| FLAN-T5-small | 60,5 M | 512 tokens | Instrucciones genericas | Apache 2.0 | HuggingFace |
-| Modelos de extraccion de entidades basados en BERT | ~110 M | 512 tokens | NER / clasificacion | Variable | HuggingFace |
+| hotel-slm | 60,5 M | No disponible | Parsing de consultas hotel/vuelo a JSON | Apache 2.0 | Hugging Face (0 descargas) |
+| T5-small (base) | 60,5 M | 512 tokens | Seq2seq generico | Apache 2.0 | Hugging Face (ampliamente usado) |
+| FLAN-T5-small | 60,5 M | 512 tokens | Instrucciones genericas | Apache 2.0 | Hugging Face |
+| Modelos de extraccion de entidades basados en BERT | ~110 M | 512 tokens | NER / clasificacion | Variable | Hugging Face |
 
 La comparativa se limita a alternativas de la misma familia y tamano, ya que no se dispone de datos de rendimiento del modelo para contrastarlo con especialistas en parsing de consultas.
 
@@ -88,5 +88,5 @@ La comparativa se limita a alternativas de la misma familia y tamano, ya que no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/legalindia/hotel-slm
+- Modelo en Hugging Face: https://huggingface.co/legalindia/hotel-slm
 - Referencia externa encontrada en la busqueda web (no relacionada con el modelo): https://www.tripadvisor.com/Tourism-g297884-Busan-Vacations.html

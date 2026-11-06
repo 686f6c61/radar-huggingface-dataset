@@ -24,7 +24,7 @@ El autor marca el artefacto como `open-development` con `heldout_confirmation=fa
 | Framework de compilación | Fisher Graph Compilation (Pullback-Fisher + EWC) |
 | Tamaño del repositorio | 3,7 GB |
 | Descargas / likes | 0 / 0 en el momento de la ficha |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Top-1 panel | ΔNLL panel | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| `google/gemma-3-270m` nativo | 268.098.176 | No disponible | 100,00 % | 0,0000 | Gemma | HuggingFace público |
-| `jediwattzon/gemma-3-270m-fisher-ewc-graph` fused640 | 163.282.512 | No disponible | 76,60 %–77,34 %; 87,44 % con refit v2 | -0,0559 | Gemma | HuggingFace; 0 descargas |
+| `google/gemma-3-270m` nativo | 268.098.176 | No disponible | 100,00 % | 0,0000 | Gemma | Hugging Face público |
+| `jediwattzon/gemma-3-270m-fisher-ewc-graph` fused640 | 163.282.512 | No disponible | 76,60 %–77,34 %; 87,44 % con refit v2 | -0,0559 | Gemma | Hugging Face; 0 descargas |
 | Variante hybrid-ewc reportada | 234.871.424 | No disponible | 96,31 % (Lex512) / 80,00 % (Block-EWC K=8) | -0,0072 | Gemma | Reportada en la model card; disponibilidad independiente no disponible |
 | Baseline SVD sin ponderar | No disponible | No disponible | 0,00 % | +10,86 | No disponible | Referencia interna, no modelo publicado |
 
@@ -100,7 +100,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- [HuggingFace: jediwattzon/gemma-3-270m-fisher-ewc-graph](https://huggingface.co/jediwattzon/gemma-3-270m-fisher-ewc-graph)
+- [Hugging Face: jediwattzon/gemma-3-270m-fisher-ewc-graph](https://huggingface.co/jediwattzon/gemma-3-270m-fisher-ewc-graph)
 - [Modelo base: google/gemma-3-270m](https://huggingface.co/google/gemma-3-270m)
 - [Revisión del modelo base utilizada](https://huggingface.co/google/gemma-3-270m/tree/9b0cfec892e2bc2afd938c98eabe4e4a7b1e0ca1)
 - [Repositorio Fisher Graph Compilation](https://github.com/JediWattson/fisher-compilation)

@@ -21,14 +21,14 @@ El modelo tiene 5.123 millones de parámetros (5,12B) y está disponible en form
 
 ## Arquitectura y entrenamiento
 
-El modelo base `google/gemma-4-E2B-it` es un transformer multimodal de la familia Gemma 4, que procesa tanto texto como imágenes (según los tags de HuggingFace). El proceso de *abliteration* aplicado por Ishowbackup no reentrena el modelo, sino que modifica los pesos directamente mediante una técnica denominada *norm-preserving biprojected abliteration* (propuesta por grimjim en noviembre de 2025). Este método descompone cada fila de pesos en una magnitud y una dirección, proyecta fuera la dirección de rechazo solo en el componente direccional y recombina con la magnitud original, garantizando que la norma de los pesos no cambie (`||W_new|| = ||W_orig||`).
+El modelo base `google/gemma-4-E2B-it` es un transformer multimodal de la familia Gemma 4, que procesa tanto texto como imágenes (según los tags de Hugging Face). El proceso de *abliteration* aplicado por Ishowbackup no reentrena el modelo, sino que modifica los pesos directamente mediante una técnica denominada *norm-preserving biprojected abliteration* (propuesta por grimjim en noviembre de 2025). Este método descompone cada fila de pesos en una magnitud y una dirección, proyecta fuera la dirección de rechazo solo en el componente direccional y recombina con la magnitud original, garantizando que la norma de los pesos no cambie (`||W_new|| = ||W_orig||`).
 
 El pipeline incluye: carga del modelo en bf16 con adaptadores LoRA en `o_proj` y `mlp.down_proj`, recolección de activaciones residuales para 400 prompts dañinos y 400 inofensivos (procedentes de datasets de mlabonne), winsorización de activaciones al percentil 99,5 para controlar valores atípicos de GeGLU, cálculo de una dirección de rechazo por capa (normalizada como la diferencia entre medias de activaciones dañinas e inofensivas), ortogonalización mediante doble paso de Gram-Schmidt, y modificación de pesos en todas las capas con escala 1,0. Finalmente se fusionan los adaptadores LoRA en los pesos base. No se dispone de información sobre el entrenamiento original del modelo base (número de tokens, composición del dataset, uso de RLHF o DPO).
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés, con capacidad de mantener diálogos multi-turno.
-- Procesamiento multimodal: acepta entradas de imagen y texto (según tags de HuggingFace), aunque no se detalla el tipo de tareas visuales soportadas.
+- Procesamiento multimodal: acepta entradas de imagen y texto (según tags de Hugging Face), aunque no se detalla el tipo de tareas visuales soportadas.
 - Respuesta sin rechazo: el modelo ha sido diseñado para responder a peticiones que el base rechazaría, incluyendo contenido potencialmente dañino o no seguro.
 - No se especifica soporte para tool calling, function calling, ni modos de razonamiento especiales (thinking mode).
 - Capacidades multilingües limitadas al inglés (según la model card).
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 
 | Modelo | Parámetros | Contexto | Refusals (mlabonne) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| google/gemma-4-E2B-it (base) | 5,12B | No disponible | 98/100 | Apache 2.0 | HuggingFace |
-| Ishowbackup/gemma-4-E2B-it-uncensored | 5,12B | No disponible | 1/100 | Apache 2.0 | HuggingFace |
-| Dolphin 2.9 (Llama 3 8B) | 8B | 8K | No disponible | Llama 3 license | HuggingFace |
+| google/gemma-4-E2B-it (base) | 5,12B | No disponible | 98/100 | Apache 2.0 | Hugging Face |
+| Ishowbackup/gemma-4-E2B-it-uncensored | 5,12B | No disponible | 1/100 | Apache 2.0 | Hugging Face |
+| Dolphin 2.9 (Llama 3 8B) | 8B | 8K | No disponible | Llama 3 license | Hugging Face |
 
 La comparativa se limita al modelo base y a alternativas generales *uncensored* como Dolphin, pero no se dispone de datos de rendimiento estándar para una comparación cuantitativa completa.
 
@@ -94,7 +94,7 @@ La comparativa se limita al modelo base y a alternativas generales *uncensored* 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Ishowbackup/gemma-4-E2B-it-uncensored)
+- [Modelo en Hugging Face](https://huggingface.co/Ishowbackup/gemma-4-E2B-it-uncensored)
 - [Modelo base google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it)
 - [Blog de grimjim sobre norm-preserving biprojected abliteration](https://huggingface.co/blog/grimjim/norm-preserving-biprojected-abliteration)
 - [Repo de reproducción (TrevorS/gemma-4-abliteration)](https://github.com/TrevorS/gemma-4-abliteration)

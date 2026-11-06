@@ -99,12 +99,12 @@ La diferencia funcional más relevante frente al peso upstream es el formato: es
 - No se documenta la composición del dataset de entrenamiento ni los sesgos asociados, por lo que no es posible evaluar sesgos por tipo de contenido, tono de piel, iluminación o dominio.
 - Licencia BSD-3-Clause: permite uso comercial y modificación, pero exige conservar el aviso de copyright de Xintao Wang y el texto de la licencia. La receta de conversión y la model card tienen licencia propia del repositorio de SkillSafe; conviene revisarla por separado si se redistribuye el paquete completo.
 - El hash del peso upstream y los SHA-256 de cada fichero están publicados, por lo que la integridad es verificable; se recomienda comprobarlos antes de desplegar.
-- El tamaño del repositorio aparece como 0,0 GB en la ficha de HuggingFace, mientras que los ficheros declarados suman 6,97 MB; es un redondeo de la plataforma, no una discrepancia de contenido.
+- El tamaño del repositorio aparece como 0,0 GB en la ficha de Hugging Face, mientras que los ficheros declarados suman 6,97 MB; es un redondeo de la plataforma, no una discrepancia de contenido.
 - La búsqueda web realizada no devolvió documentación técnica ni discusiones relevantes sobre este repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/realesr-general-x4v3
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/realesr-general-x4v3
 - Peso upstream (PyTorch, v0.2.5.0): https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth
 - Repositorio upstream de Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Licencia upstream (BSD-3-Clause): https://github.com/xinntao/Real-ESRGAN/blob/a4abfb2979a7bbff3f69f58f58ae324608821e27/LICENSE

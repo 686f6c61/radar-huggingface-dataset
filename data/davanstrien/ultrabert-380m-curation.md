@@ -91,7 +91,7 @@ UltraBERT Curation es la mejor opción de las tres para tareas de curación espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davanstrien/ultrabert-380m-curation
+- Modelo en Hugging Face: https://huggingface.co/davanstrien/ultrabert-380m-curation
 - Dataset de entrenamiento: https://huggingface.co/datasets/davanstrien/curation-decision-mix
 - Receta (datos, entrenamiento, evaluación, inferencia): https://github.com/davanstrien/curation-decision-recipe
 - Ejemplo de salida (1M de páginas de FineWeb puntuadas): https://huggingface.co/datasets/davanstrien/fineweb-curated-1m

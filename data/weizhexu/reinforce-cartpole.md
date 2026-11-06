@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-CartPole es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno CartPole-v1. Lo publica el usuario weizhexu en HuggingFace Hub como parte de los ejercicios de la Unidad 4 del Deep Reinforcement Learning Course, el curso gratuito de reinforcement learning mantenido por HuggingFace. No es un modelo de lenguaje ni un modelo fundacional: es una política entrenada para una tarea de control con un espacio de observación de 4 dimensiones (posición y velocidad del carro, ángulo y velocidad angular de la barra) y un espacio de acciones discreto de 2 valores (empujar a izquierda o derecha).
+Reinforce-CartPole es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno CartPole-v1. Lo publica el usuario weizhexu en Hugging Face Hub como parte de los ejercicios de la Unidad 4 del Deep Reinforcement Learning Course, el curso gratuito de reinforcement learning mantenido por Hugging Face. No es un modelo de lenguaje ni un modelo fundacional: es una política entrenada para una tarea de control con un espacio de observación de 4 dimensiones (posición y velocidad del carro, ángulo y velocidad angular de la barra) y un espacio de acciones discreto de 2 valores (empujar a izquierda o derecha).
 
 El problema que resuelve es acotado y bien conocido: mantener una barra vertical el mayor número de pasos posible aplicando una fuerza binaria sobre un carro. El interés del modelo es fundamentalmente didáctico y de referencia: sirve como ejemplo mínimo, reproducible y ejecutable de un pipeline completo de policy gradient (entrenamiento, evaluación y publicación en el Hub), y como punto de partida para comparar variantes de algoritmos sobre un mismo entorno.
 
@@ -24,7 +24,7 @@ La información publicada es mínima. El repositorio ocupa 0.0 GB, no declara li
 | Entorno | CartPole-v1 |
 | Métrica declarada | mean_reward = 462,70 +/- 111,90 (no verificada) |
 | Autor | weizhexu |
-| Framework probable | PyTorch + Gymnasium, con las utilidades del Deep RL Course de HuggingFace |
+| Framework probable | PyTorch + Gymnasium, con las utilidades del Deep RL Course de Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-02 |
 | Fecha de actualización | 2026-10-02 |
@@ -80,8 +80,8 @@ No se dispone de datos de otros agentes comparables en la información proporcio
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-CartPole (weizhexu) | REINFORCE | CartPole-v1 | 462,70 +/- 111,90 (no verificado) | No disponible | HuggingFace Hub |
-| Alternativas de la Unidad 4 del Deep RL Course | REINFORCE | CartPole-v1 | No disponible | No disponible | HuggingFace Hub |
+| Reinforce-CartPole (weizhexu) | REINFORCE | CartPole-v1 | 462,70 +/- 111,90 (no verificado) | No disponible | Hugging Face Hub |
+| Alternativas de la Unidad 4 del Deep RL Course | REINFORCE | CartPole-v1 | No disponible | No disponible | Hugging Face Hub |
 | Implementaciones de referencia de PPO/A2C/DQN sobre CartPole-v1 | PPO, A2C, DQN | CartPole-v1 | No disponible en esta información | No disponible | Librerías de terceros |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de datos de otros agentes comparables en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weizhexu/Reinforce-CartPole
+- Modelo en Hugging Face: https://huggingface.co/weizhexu/Reinforce-CartPole
 - Unidad 4 del Deep RL Course (referencia indicada en la model card): https://huggingface.co/deep-rl-course/unit4/introduction
 
 Nota sobre la búsqueda web: los resultados devueltos corresponden a páginas sobre Counter-Strike (CS:GO, CS 1.6), sin relación alguna con este modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes.

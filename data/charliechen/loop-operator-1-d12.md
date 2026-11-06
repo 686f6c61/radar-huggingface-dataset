@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-operator-1-d12 es un modelo de lenguaje base en inglés publicado por el usuario CharlieChen en HuggingFace. Corresponde al "Operator 1" en la coordenada de profundidad d12 de la escalera de escalado del artículo *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents*. Se trata de un transformer con modo de profundidad `loop` (looped transformer) de 494.272.512 parámetros almacenados en FP32 (1,977 GB), con anchura 1536, 12 cabezas de atención y una longitud de contexto de 2048 tokens.
+loop-operator-1-d12 es un modelo de lenguaje base en inglés publicado por el usuario CharlieChen en Hugging Face. Corresponde al "Operator 1" en la coordenada de profundidad d12 de la escalera de escalado del artículo *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents*. Se trata de un transformer con modo de profundidad `loop` (looped transformer) de 494.272.512 parámetros almacenados en FP32 (1,977 GB), con anchura 1536, 12 cabezas de atención y una longitud de contexto de 2048 tokens.
 
 El modelo se entrenó desde cero sobre el corpus FineWeb con el tokenizador de GPT-2 (`tiktoken.get_encoding("gpt2")`, vocabulario de 50.257 tokens ampliado a 50.304 filas del modelo). Es un checkpoint base sin ajuste por instrucciones ni alineamiento posterior (no hay RLHF ni DPO), y se distribuye conservando el artefacto original de entrenamiento, sin estado del optimizador para reanudar el entrenamiento. Su NLL de validación en el corpus de preentrenamiento es de 2,979002 nats/token.
 
@@ -102,7 +102,7 @@ Diferencias clave: frente a Pythia-410M, este modelo tiene más parámetros (494
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-operator-1-d12
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-operator-1-d12
 - Código del paper (reconstrucción del modelo y evaluación): https://github.com/cue-engineering/loop
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Artículo asociado: *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents* (título citado en la model card; no se ha encontrado enlace directo en la información disponible)

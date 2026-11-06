@@ -89,7 +89,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parámetros | Contexto | Accuracy | KL | Brier | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Pramana-2B | 2B | No disponible | 0,8005 | 0,0755 | 0,0415 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Pramana-2B | 2B | No disponible | 0,8005 | 0,0755 | 0,0415 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Decider-4B | 4B | No disponible | 0,8205 | 0,301 | 0,132 | No disponible | Pesos abiertos |
 | Arbiter-4B | 4B | No disponible | 0,817 | 0,092 | 0,048 | No disponible | Pesos abiertos |
 | Pramana-0.8B | 0,8B | No disponible | 0,7970 | 0,0819 | 0,0446 | Apache 2.0 | Pesos abiertos |
@@ -114,7 +114,7 @@ Pramana-2B destaca por ser el mejor del grupo en KL y Brier entre los modelos co
 
 ## Enlaces
 
-- [Modelo en HuggingFace: apracv/pramana-2b](https://huggingface.co/apracv/pramana-2b)
+- [Modelo en Hugging Face: apracv/pramana-2b](https://huggingface.co/apracv/pramana-2b)
 - [Modelo hermano: apracv/pramana-0.8b](https://huggingface.co/apracv/pramana-0.8b)
 - [Dataset de entrenamiento y evaluación: LocalLLaMA/typed-decisions](https://huggingface.co/datasets/LocalLLaMA/typed-decisions)
 - [Modelo base: unsloth/Qwen3.5-2B](https://huggingface.co/unsloth/Qwen3.5-2B)

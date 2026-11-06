@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llmware/mistral-small-4-2603-119b-gguf` es un repositorio alojado en HuggingFace por el usuario `llmware`, publicado bajo licencia Apache 2.0 y etiquetado con el formato GGUF. El identificador sugiere una presunta variante de la familia Mistral Small (posible versión "4", con fecha de referencia 2603 y un sufijo "119b" que podría indicar el número de parámetros), pero el autor no ha aportado ninguna documentación que confirme arquitectura, tamaño, contexto ni procedencia de los pesos. La model card se reduce a la línea de licencia, sin texto descriptivo.
+`llmware/mistral-small-4-2603-119b-gguf` es un repositorio alojado en Hugging Face por el usuario `llmware`, publicado bajo licencia Apache 2.0 y etiquetado con el formato GGUF. El identificador sugiere una presunta variante de la familia Mistral Small (posible versión "4", con fecha de referencia 2603 y un sufijo "119b" que podría indicar el número de parámetros), pero el autor no ha aportado ninguna documentación que confirme arquitectura, tamaño, contexto ni procedencia de los pesos. La model card se reduce a la línea de licencia, sin texto descriptivo.
 
 En el momento de redactar esta ficha, el repositorio presenta un tamaño de 0.0 GB, cero descargas y cero "likes", lo que es consistente con un repositorio vacío o con pesos todavía no subidos. No hay pipeline declarado, no se listan idiomas soportados y no existe ningún artefacto verificable que permita evaluar el modelo.
 
@@ -91,7 +91,7 @@ Cualquier comparación rigurosa exigiría consultar las fichas oficiales de los 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llmware/mistral-small-4-2603-119b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/llmware/mistral-small-4-2603-119b-gguf
 - Paper: no disponible
 - Blog técnico del autor: no disponible
 - Repositorio de código: no disponible

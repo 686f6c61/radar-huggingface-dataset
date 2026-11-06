@@ -177,7 +177,7 @@ por lo que no se aportan cifras comparativas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/edgetools/lama
+- Repositorio Hugging Face: https://huggingface.co/edgetools/lama
 - Repositorio de origen: https://huggingface.co/Carve/LaMa-ONNX
 - Repositorio original de LaMa: https://github.com/advimman/lama
 - Paper: Suvorov et al., "Resolution-robust Large Mask Inpainting with

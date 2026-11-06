@@ -6,7 +6,7 @@
 
 La relevancia del modelo es principalmente de investigacion: es la pieza central de los resultados de decodificacion especulativa del articulo "Dynamic Multi-Byte Prediction With Hierarchical Language Models" (arXiv:2608.15454). Su innovacion consiste en predecir dinamicamente multiples bytes por paso latente (3,32 bytes por token latente segun los datos del autor), con una segmentacion aprendida de los limites entre bytes en lugar de una tokenizacion fija. La ventana de contexto esta expresada en bytes (4096) y la precision publicada es fp32.
 
-Es importante senalar que no es una arquitectura `transformers`: requiere el codigo del repositorio `skai-research/lca-multibyte` para cargarse y generar. Ademas, la model card declara `inference: false`, por lo que no esta integrado en los pipelines estandar de HuggingFace. Su tamano reducido y su naturaleza experimental lo situan como una herramienta para reproducir resultados academicos y experimentar con modelos sin tokenizador, no como un modelo listo para produccion.
+Es importante senalar que no es una arquitectura `transformers`: requiere el codigo del repositorio `skai-research/lca-multibyte` para cargarse y generar. Ademas, la model card declara `inference: false`, por lo que no esta integrado en los pipelines estandar de Hugging Face. Su tamano reducido y su naturaleza experimental lo situan como una herramienta para reproducir resultados academicos y experimentar con modelos sin tokenizador, no como un modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con este mode
 - Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090 o incluso GPUs con 4-6 GB de VRAM en fp16. El ejemplo de carga del autor usa `device="cuda"` sin especificar modelo de GPU.
 - GPU de centro de datos (A100, H100) solo serian necesarias para reentrenamiento o para ejecucion de barridos de evaluacion a gran escala.
 - Opciones de despliegue: no es compatible con vLLM, TGI, llama.cpp u Ollama de forma directa, ya que no implementa una arquitectura `transformers` ni publica pesos en GGUF. La via soportada es el repositorio `skai-research/lca-multibyte` con `load_fxt_model` y el script `src/eval/generate.py`, con PyTorch como backend.
-- La model card incluye `inference: false` en sus metadatos, lo que indica que el modelo no esta preparado para los pipelines de inferencia estandar de HuggingFace.
+- La model card incluye `inference: false` en sus metadatos, lo que indica que el modelo no esta preparado para los pipelines de inferencia estandar de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ Comparativa de rendimiento: no disponible, ya que el autor solo publica perdidas
 
 - Modelo exclusivamente en ingles: la etiqueta de idioma es `en` y no se documenta soporte multilingue, pese a operar a nivel de byte.
 - No es una arquitectura `transformers`: no se carga con `AutoModel.from_pretrained`, lo que rompe la compatibilidad con el ecosistema habitual (vLLM, TGI, Ollama, llama.cpp, herramientas de cuantizacion).
-- La model card declara `inference: false`, lo que sugiere que el modelo no esta listo para su uso en pipelines estandar de HuggingFace.
+- La model card declara `inference: false`, lo que sugiere que el modelo no esta listo para su uso en pipelines estandar de Hugging Face.
 - Precision publicada en fp32 y sin versiones cuantizadas: el uso en produccion con requisitos de memoria bajos exigiria cuantizar por cuenta propia, sin garantia de que el flujo funcione con herramientas estandar.
 - Naturaleza de investigacion: no se publican evaluaciones de alineacion, seguridad ni tasas de alucinacion. Al ser un SFT de 5 epocas sobre Tulu, es esperable un riesgo de alucinacion no cuantificado, pero no hay datos concretos en la informacion disponible.
 - Sesgos: no disponible (no se documenta ningun analisis de sesgos).
@@ -100,7 +100,7 @@ Comparativa de rendimiento: no disponible, ya que el autor solo publica perdidas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/skai-research/lca-3x-sft
+- Hugging Face: https://huggingface.co/skai-research/lca-3x-sft
 - Modelo base: https://huggingface.co/skai-research/lca-3x-base
 - Articulo: https://arxiv.org/abs/2608.15454 (Owodunni, A. T.; Okocha, C.; Grant, C.; Limisiewicz, T.; Kumar, S. "Dynamic Multi-Byte Prediction With Hierarchical Language Models", 2026)
 - Repositorio de codigo: https://github.com/skai-research/lca-multibyte

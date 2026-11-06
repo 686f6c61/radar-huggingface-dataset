@@ -26,7 +26,7 @@ Su relevancia es doble. Por un lado, demuestra una ruta de conversion practica a
 | Anchura de `hidden_states` | 20480 (5 capas x 4096) |
 | Anchura de `inputs_embeds` | 4096 |
 | Salida | `last_hidden_state` |
-| Tamano del repositorio | 4,0 GB segun la model card (los metadatos de HuggingFace indican 0,0 GB) |
+| Tamano del repositorio | 4,0 GB segun la model card (los metadatos de Hugging Face indican 0,0 GB) |
 | Libreria | openvino |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creacion | 2026-09-21 |
@@ -102,12 +102,12 @@ La comparativa con `lukey03/Qwen3.5-9B-abliterated` (el objetivo) no procede en 
 - Riesgo de alucinacion. No hay evaluaciones publicadas de fidelidad, veracidad o tasas de alucinacion para este borrador ni para el objetivo abliterated asociado.
 - Idiomas y contexto. No se declara lista de idiomas ni longitud de contexto soportada en la informacion disponible.
 - Ausencia de validacion externa. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no se han publicado resultados de benchmarks de calidad.
-- Discrepancia de datos. Los metadatos de HuggingFace indican un tamano de repositorio de 0,0 GB, mientras que la model card declara 4,0 GB. Conviene verificar el peso real de los ficheros antes de planificar el despliegue.
+- Discrepancia de datos. Los metadatos de Hugging Face indican un tamano de repositorio de 0,0 GB, mientras que la model card declara 4,0 GB. Conviene verificar el peso real de los ficheros antes de planificar el despliegue.
 - Licencia. La tarjeta declara Apache-2.0 tanto para este borrador como para sus modelos base. No se detallan en la informacion disponible las condiciones de licencia de Qwen3.5 upstream, por lo que conviene verificarlas antes de un uso comercial.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-DFlash-bf16-ov
+- Repositorio en Hugging Face: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-DFlash-bf16-ov
 - Build hermana en int4: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-DFlash-int4-ov
 - Build hermana en int8: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-DFlash-int8-ov
 - Borrador abliterated upstream: https://huggingface.co/guglxni/Qwen3.5-9B-abliterated-DFlash

@@ -71,7 +71,7 @@ No se dispone de comparativas publicadas con otros modelos. Dado que no hay benc
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_5k_6k_simpleavg_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_5k_6k_simpleavg_merge)
 - [FriendliAI - despliegue del modelo](https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_merge) (variante similar)
 - [FriendliAI - despliegue de variante 4k-5k-6k](https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg)
 - [Paper del método Linear (merge)](https://arxiv.org/abs/2203.05482)

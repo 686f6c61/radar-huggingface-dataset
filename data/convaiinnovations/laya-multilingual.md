@@ -17,14 +17,14 @@ Es relevante ahora porque cubre un hueco concreto: el checkpoint inglés de la f
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 1024 tokens por pregunta; 256 de ellos reservados a la pregunta y sus opciones (el estado dispone del resto) |
 | Tipos de cuantizacion | No disponible (no se publican pesos cuantizados; los tags no incluyen GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | Mas de 100 idiomas segun la model card; los tags de HuggingFace enumeran 55 codigos ISO (en, de, fr, es, pt, it, nl, sv, da, nb, ru, pl, tr, ar, he, fa, ur, hi, bn, ta, te, kn, ml, th, vi, id, ms, tl, ja, ko, zh, el, hu, fi, ro, sq, sl, sw, af, cy, am, hy, ka, km, my, mn, lv, is, az, jv) |
+| Idiomas soportados | Mas de 100 idiomas segun la model card; los tags de Hugging Face enumeran 55 codigos ISO (en, de, fr, es, pt, it, nl, sv, da, nb, ru, pl, tr, ar, he, fa, ur, hi, bn, ta, te, kn, ml, th, vi, id, ms, tl, ja, ko, zh, el, hu, fi, ro, sq, sl, sw, af, cy, am, hy, ka, km, my, mn, lv, is, az, jv) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 | Backbone | mmBERT-base, 307M parametros, 22 capas, hidden 768, vocabulario de 256k |
 | Pipeline declarado | text-classification |
 | Tamano del repositorio | 0,7 GB |
 | Descargas / likes | 0 descargas / 12 likes |
-| Fecha de creacion / actualizacion en HuggingFace | 19 de septiembre de 2026 (segun metadatos del repositorio) |
+| Fecha de creacion / actualizacion en Hugging Face | 19 de septiembre de 2026 (segun metadatos del repositorio) |
 | Entrenamiento | RLCD (Reinforcement Learning from Contrastive Distillation), 15.987 updates, 4 epocas, ~4,97 h |
 
 ## Arquitectura y entrenamiento
@@ -112,7 +112,7 @@ Segun las metricas de la model card, el checkpoint ingles obtiene 0,684 de preci
 - Se distribuye sin calibrar: `temperature = [1.0, 1.0, 1.0]` y sin buckets por numero de opciones. Es sistematicamente sobreconfiado, con una confianza media de 0,75-0,83 frente a precisiones mucho menores. Reajustar una temperatura por (tipo de pregunta, numero de opciones) sobre datos reservados reduce el ECE medio de 0,314 a 0,106; hay que hacerlo con datos propios antes de fiarse de las probabilidades.
 - Rendimiento mas bajo en ingles que el checkpoint especifico: 0,619 frente a 0,684 de precision macro en las suites en ingles. La pauta indicada por el autor es enrutar, no reemplazar.
 - Rendimiento cercano al azar en decisiones tipadas zero-shot: 0,342 frente a una referencia de aproximadamente 0,318. No es un sustituto de un modelo entrenado para un flujo tipado concreto.
-- La model card afirma cobertura de mas de 100 idiomas, pero los tags de HuggingFace enumeran 55 codigos ISO. Conviene verificar el idioma concreto antes de asumir cobertura.
+- La model card afirma cobertura de mas de 100 idiomas, pero los tags de Hugging Face enumeran 55 codigos ISO. Conviene verificar el idioma concreto antes de asumir cobertura.
 - El checkpoint ingles de la familia no degrada con elegancia fuera del ingles: mantiene confianzas de 0,89-0,96 incluso con precision cercana a cero (khmer: 0,000 de precision y 0,952 de confianza). Cualquier sistema que enrute por confianza en lugar de por script puede fallar en silencio.
 - Riesgo de alucinacion: no aplica en el sentido generativo, porque no produce texto libre; el riesgo equivalente es una etiqueta incorrecta con probabilidad alta, derivada de la falta de calibracion.
 - Licencia Apache 2.0, que permite uso comercial, modificacion y redistribucion, con los requisitos habituales de atribucion y aviso de licencia.
@@ -120,7 +120,7 @@ Segun las metricas de la model card, el checkpoint ingles obtiene 0,684 de preci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/convaiinnovations/laya-multilingual
+- Modelo en Hugging Face: https://huggingface.co/convaiinnovations/laya-multilingual
 - Familia Laya: https://huggingface.co/convaiinnovations/laya
 - Checkpoint Laya (ingles): https://huggingface.co/convaiinnovations/laya
 - Checkpoint Laya Typed Decisions: https://huggingface.co/convaiinnovations/laya-typed-decisions

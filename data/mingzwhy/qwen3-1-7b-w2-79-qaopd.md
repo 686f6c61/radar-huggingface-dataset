@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B-W2.79-QAOPD es un checkpoint del modelo Qwen3-1.7B de Alibaba sometido a un proceso de cuantizacion agresiva hasta 2,79 bits por peso efectivos y posteriormente recuperado mediante destilacion. Lo publica el usuario MingZwhy en HuggingFace, acompanado del repositorio de codigo y receta de entrenamiento QAOPD. La cuantizacion esta "baked in": los pesos ya vienen cuantizados en el propio checkpoint, de modo que basta cargarlo con Transformers y evaluarlo, sin necesidad de aplicar tecnicas de cuantizacion posteriores.
+Qwen3-1.7B-W2.79-QAOPD es un checkpoint del modelo Qwen3-1.7B de Alibaba sometido a un proceso de cuantizacion agresiva hasta 2,79 bits por peso efectivos y posteriormente recuperado mediante destilacion. Lo publica el usuario MingZwhy en Hugging Face, acompanado del repositorio de codigo y receta de entrenamiento QAOPD. La cuantizacion esta "baked in": los pesos ya vienen cuantizados en el propio checkpoint, de modo que basta cargarlo con Transformers y evaluarlo, sin necesidad de aplicar tecnicas de cuantizacion posteriores.
 
 El problema que aborda es el de la degradacion tipica de los formatos de muy bajo bit-width. En lugar de limitarse a cuantizar y publicar (lo que hundiria el rendimiento en razonamiento y codigo), el autor aplica dos fases: destilacion consciente de la cuantizacion (QAD) y destilacion on-policy (OPD), que recuperan parte de la capacidad perdida. El esquema de pesos mezcla INT1.58 e INT4 en bloques de 256, con el 50 % de los bloques en INT4, lo que da los 2,79 bits efectivos; embeddings y cabeza de salida quedan en INT4, las activaciones en INT8 y la cache KV en 16 bits.
 
@@ -101,7 +101,7 @@ Nota: los datos de Qwen3-0.6B y Llama-3.2-1B no proceden de la busqueda realizad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MingZwhy/Qwen3-1.7B-W2.79-QAOPD
+- Modelo en Hugging Face: https://huggingface.co/MingZwhy/Qwen3-1.7B-W2.79-QAOPD
 - Repositorio de codigo y receta QAOPD: https://github.com/MingZwhy/QAOPD
 - Arnés de evaluacion (EVALUATION.md): https://github.com/MingZwhy/QAOPD/blob/main/docs/EVALUATION.md
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

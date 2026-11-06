@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Bubbleina/act_smartbin_wrist_v5` es una política de control robótico basada en el método Action Chunking with Transformers (ACT), desarrollada por el autor Bubbleina y publicada en Hugging Face bajo licencia Apache-2.0. Está entrenado con la librería LeRobot de HuggingFace y utiliza el dataset `Bubbleina/act_smartbin_wrist_v1`, orientado a la manipulación de un brazo robótico para la clasificación automática de residuos (smart bin). El modelo predice secuencias de acciones (chunks) en lugar de pasos individuales, lo que permite ejecutar movimientos suaves y coordinados a partir de datos teleoperados.
+El modelo `Bubbleina/act_smartbin_wrist_v5` es una política de control robótico basada en el método Action Chunking with Transformers (ACT), desarrollada por el autor Bubbleina y publicada en Hugging Face bajo licencia Apache-2.0. Está entrenado con la librería LeRobot de Hugging Face y utiliza el dataset `Bubbleina/act_smartbin_wrist_v1`, orientado a la manipulación de un brazo robótico para la clasificación automática de residuos (smart bin). El modelo predice secuencias de acciones (chunks) en lugar de pasos individuales, lo que permite ejecutar movimientos suaves y coordinados a partir de datos teleoperados.
 
 Con 51,7 millones de parámetros y un peso de solo 0,2 GB en formato safetensors, se trata de un modelo ligero diseñado para ser desplegado en hardware de bajo coste. Su relevancia actual radica en la creciente demanda de soluciones robóticas accesibles para automatización de tareas de manipulación, especialmente en el ámbito de la sostenibilidad y el reciclaje inteligente. Al ser entrenado con técnicas de imitación learning, no requiere programación explícita de movimientos, sino que aprende de demostraciones humanas.
 
@@ -23,13 +23,13 @@ Con 51,7 millones de parámetros y un peso de solo 0,2 GB en formato safetensors
 
 El modelo sigue el método ACT, propuesto en el artículo *Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware* (arXiv:2304.13705). ACT es una técnica de aprendizaje por imitación que utiliza un transformador para predecir una secuencia de acciones futuras (action chunk) a partir de la observación actual y de una variable de estilo o latente. Esta arquitectura permite generar movimientos coherentes y de baja frecuencia de error, especialmente adecuados para tareas de manipulación fina como la recogida y clasificación de objetos.
 
-El entrenamiento se realizó con LeRobot, la librería de HuggingFace para robótica, sobre el dataset `Bubbleina/act_smartbin_wrist_v1`. No se han publicado detalles sobre el número de tokens, composición exacta del dataset o si se aplicaron técnicas de RLHF o DPO, ya que al ser un modelo de control robótico no utiliza procesamiento de lenguaje. Los pesos se almacenan en formato safetensors, y el entrenamiento puede reproducirse con los comandos proporcionados en la model card (por ejemplo, `lerobot-train`).
+El entrenamiento se realizó con LeRobot, la librería de Hugging Face para robótica, sobre el dataset `Bubbleina/act_smartbin_wrist_v1`. No se han publicado detalles sobre el número de tokens, composición exacta del dataset o si se aplicaron técnicas de RLHF o DPO, ya que al ser un modelo de control robótico no utiliza procesamiento de lenguaje. Los pesos se almacenan en formato safetensors, y el entrenamiento puede reproducirse con los comandos proporcionados en la model card (por ejemplo, `lerobot-train`).
 
 ## Capacidades
 
 - Control robótico de un brazo manipulador (tarea de muñeca para smart bin) mediante predicción de secuencias de acciones.
 - Aprendizaje por imitación: reproduce movimientos teleoperados sin necesidad de programar trayectorias explícitas.
-- Integración con LeRobot: compatible con el ecosistema de entrenamiento y evaluación de HuggingFace para robótica.
+- Integración con LeRobot: compatible con el ecosistema de entrenamiento y evaluación de Hugging Face para robótica.
 - Inferencia en tiempo real: al predecir chunks de acciones, reduce la frecuencia de decisión y permite ejecución suave.
 - Soporte para hardware de bajo coste: diseñado para funcionar en robots tipo SO-100 u otros brazos de bajo presupuesto.
 - No soporta tareas de lenguaje natural, visión general ni tool calling: es exclusivamente una política de control motor.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No hay datos de comparativas con otros modelos en la información proporcionada. Existen otras políticas ACT entrenadas con LeRobot en HuggingFace (por ejemplo, `lerobot/act_*`), pero no se dispone de métricas de rendimiento para comparar directamente. En términos de parámetros, este modelo es significativamente más pequeño que los típicos modelos de lenguaje, pero no es comparable en tareas de NLP; la comparación debería hacerse con otros modelos de control robótico de la misma familia ACT.
+No hay datos de comparativas con otros modelos en la información proporcionada. Existen otras políticas ACT entrenadas con LeRobot en Hugging Face (por ejemplo, `lerobot/act_*`), pero no se dispone de métricas de rendimiento para comparar directamente. En términos de parámetros, este modelo es significativamente más pequeño que los típicos modelos de lenguaje, pero no es comparable en tareas de NLP; la comparación debería hacerse con otros modelos de control robótico de la misma familia ACT.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No hay datos de comparativas con otros modelos en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bubbleina/act_smartbin_wrist_v5
+- Modelo en Hugging Face: https://huggingface.co/Bubbleina/act_smartbin_wrist_v5
 - Dataset utilizado: https://huggingface.co/datasets/Bubbleina/act_smartbin_wrist_v1
 - Paper de ACT: https://arxiv.org/abs/2304.13705
 - LeRobot (librería de entrenamiento): https://github.com/huggingface/lerobot
@@ -79,7 +79,7 @@ No hay datos de comparativas con otros modelos en la información proporcionada.
 
 Nota: los repos de GitHub encontrados (`AbdelhediMed05/Smartbin-AI` y `Shrushti7823/SmartBin-AI`) no están directamente relacionados con este modelo, sino con sistemas de clasificación de residuos basados en visión y sensores.</think>## Resumen
 
-`Bubbleina/act_smartbin_wrist_v5` es una política de control robótico basada en Action Chunking with Transformers (ACT), desarrollada por Bubbleina y entrenada con la librería LeRobot de HuggingFace. El modelo se especializa en la manipulación de un brazo robótico tipo muñeca para la clasificación automática de residuos en un contenedor inteligente (smart bin), a partir de demostraciones teleoperadas. Con 51,7 millones de parámetros y un peso de 0,2 GB en formato safetensors, es un modelo ligero pensado para hardware de bajo coste y despliegue en entornos de robótica de investigación o prototipado.
+`Bubbleina/act_smartbin_wrist_v5` es una política de control robótico basada en Action Chunking with Transformers (ACT), desarrollada por Bubbleina y entrenada con la librería LeRobot de Hugging Face. El modelo se especializa en la manipulación de un brazo robótico tipo muñeca para la clasificación automática de residuos en un contenedor inteligente (smart bin), a partir de demostraciones teleoperadas. Con 51,7 millones de parámetros y un peso de 0,2 GB en formato safetensors, es un modelo ligero pensado para hardware de bajo coste y despliegue en entornos de robótica de investigación o prototipado.
 
 La relevancia de este modelo radica en su enfoque práctico: en lugar de programar trayectorias explícitas, aprende a imitar movimientos humanos mediante aprendizaje por imitación, lo que reduce la barrera técnica para automatizar tareas de reciclaje y manipulación. Al estar publicado bajo licencia Apache-2.0 y ser compatible con el ecosistema LeRobot, se convierte en un recurso accesible para desarrolladores e investigadores que quieran experimentar con políticas robóticas de bajo coste.
 
@@ -134,7 +134,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de comparación con otros modelos en la información proporcionada. Existen otras políticas ACT en HuggingFace entrenadas con LeRobot (por ejemplo, `lerobot/act_*`), pero no se han publicado especificaciones o resultados que permitan una comparación directa. En términos de parámetros, este modelo es significativamente más pequeño que los modelos de lenguaje, pero la comparación relevante sería con otras políticas de control robótico de la misma familia, para las que no se dispone de datos.
+No se dispone de datos de comparación con otros modelos en la información proporcionada. Existen otras políticas ACT en Hugging Face entrenadas con LeRobot (por ejemplo, `lerobot/act_*`), pero no se han publicado especificaciones o resultados que permitan una comparación directa. En términos de parámetros, este modelo es significativamente más pequeño que los modelos de lenguaje, pero la comparación relevante sería con otras políticas de control robótico de la misma familia, para las que no se dispone de datos.
 
 ## Limitaciones y advertencias
 
@@ -147,7 +147,7 @@ No se dispone de datos de comparación con otros modelos en la información prop
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Bubbleina/act_smartbin_wrist_v5)
+- [Modelo en Hugging Face](https://huggingface.co/Bubbleina/act_smartbin_wrist_v5)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Bubbleina/act_smartbin_wrist_v1)
 - [Paper de ACT (arXiv:2304.13705)](https://arxiv.org/abs/2304.13705)
 - [Repositorio de LeRobot](https://github.com/huggingface/lerobot)

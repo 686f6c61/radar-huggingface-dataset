@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dvader13/olmo2-1b-sft-s1-315b | 1B | no disponible | Apache 2.0 | Weights en HuggingFace |
+| dvader13/olmo2-1b-sft-s1-315b | 1B | no disponible | Apache 2.0 | Weights en Hugging Face |
 | allenai/OLMo-2-0425-1B | 1B | no disponible | Apache 2.0 | Público |
 | TinyLlama-1.1B | 1.1B | 2048 (típico) | Apache 2.0 | Público |
 | Qwen2-1.5B | 1.5B | 32768 | Apache 2.0 | Público |

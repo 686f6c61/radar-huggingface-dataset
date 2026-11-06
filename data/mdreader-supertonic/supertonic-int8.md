@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado (MOS, RTF, WER) para establecer 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mdreader-supertonic/supertonic-int8
+- Repositorio Hugging Face: https://huggingface.co/mdreader-supertonic/supertonic-int8
 - Modelo base Supertonic 2: https://huggingface.co/Supertone/supertonic-2
 - Repositorio oficial de Supertonic (ejemplo web): https://github.com/supertone-inc/supertonic
 - Origen de los grafos int8 (sherpa-onnx): https://huggingface.co/csukuangfj2/sherpa-onnx-supertonic-tts-int8-2026-03-06

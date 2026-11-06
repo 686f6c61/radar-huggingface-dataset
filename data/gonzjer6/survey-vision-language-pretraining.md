@@ -2,9 +2,9 @@
 
 ## Resumen
 
-gonzjer6/survey-vision-language-pretraining no es un modelo de inteligencia artificial, sino un repositorio de notas de investigación publicado en HuggingFace bajo licencia cc-by-4.0. Contiene dos ficheros de texto (`summary.md` y `README.md`) que documentan el planteamiento previo de un estudio sobre pretraining vision-language: el alcance de la pregunta de investigación, los factores de confusión probables, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad exigibles antes de reportar cualquier resultado.
+gonzjer6/survey-vision-language-pretraining no es un modelo de inteligencia artificial, sino un repositorio de notas de investigación publicado en Hugging Face bajo licencia cc-by-4.0. Contiene dos ficheros de texto (`summary.md` y `README.md`) que documentan el planteamiento previo de un estudio sobre pretraining vision-language: el alcance de la pregunta de investigación, los factores de confusión probables, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad exigibles antes de reportar cualquier resultado.
 
-Los metadatos de HuggingFace lo etiquetan como "transformer" y "safetensors" y declaran 24.832 parámetros, pero el tamaño del repositorio es 0,0 GB y la propia model card aclara de forma explícita que no se ha publicado ningún checkpoint entrenado, ni código, ni ablaciones completadas. La discrepancia entre esas etiquetas y el contenido real es un artefacto del sistema de catalogación, no un indicio de que exista un modelo funcional.
+Los metadatos de Hugging Face lo etiquetan como "transformer" y "safetensors" y declaran 24.832 parámetros, pero el tamaño del repositorio es 0,0 GB y la propia model card aclara de forma explícita que no se ha publicado ningún checkpoint entrenado, ni código, ni ablaciones completadas. La discrepancia entre esas etiquetas y el contenido real es un artefacto del sistema de catalogación, no un indicio de que exista un modelo funcional.
 
 Su interés es metodológico y documental: funciona como lista de comprobación previa para quien prepara un benchmark de pretraining vision-language. No se puede ejecutar, no permite inferencia y no admite evaluación empírica como modelo.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 - VRAM para inferencia: no aplica; no hay modelo que ejecutar.
 - GPU recomendadas: ninguna. El artefacto no requiere acelerador.
 - Cabe en cualquier equipo: el repositorio ocupa 0,0 GB y contiene únicamente ficheros de texto en Markdown.
-- Despliegue: se accede mediante `git clone` o descarga directa desde HuggingFace y lectura en cualquier editor de texto. vLLM, llama.cpp, Ollama y TGI no son aplicables.
+- Despliegue: se accede mediante `git clone` o descarga directa desde Hugging Face y lectura en cualquier editor de texto. vLLM, llama.cpp, Ollama y TGI no son aplicables.
 - Latencia y throughput: no disponibles y no significativos, al no existir proceso de inferencia.
 
 ## Comparativa con modelos similares
@@ -83,6 +83,6 @@ No disponible. No existen modelos comparables porque el artefacto no es un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gonzjer6/survey-vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/gonzjer6/survey-vision-language-pretraining
 - Fichero principal citado en la model card: `summary.md` (dentro del propio repositorio)
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a páginas generales de YouTube (historial, estudio, música y películas), sin relación con el repositorio, el autor ni el tema de pretraining vision-language. No hay papers, blogs, repositorios de código ni demos asociados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `katrina-krea2-lora` es un LoRA de bajo rango (Low-Rank Adaptation) creado por el desarrollador independiente mad_macs (publicado en HuggingFace como `madmacs5`). Está diseñado para añadir a la generación de imágenes un personaje ficticio llamado Katrina, una mujer rusa de complexión atlética y pelo oscuro, sobre la base del modelo de difusión Krea 2.
+El modelo `katrina-krea2-lora` es un LoRA de bajo rango (Low-Rank Adaptation) creado por el desarrollador independiente mad_macs (publicado en Hugging Face como `madmacs5`). Está diseñado para añadir a la generación de imágenes un personaje ficticio llamado Katrina, una mujer rusa de complexión atlética y pelo oscuro, sobre la base del modelo de difusión Krea 2.
 
 El propósito principal es el control de identidad: permite generar múltiples imágenes fotorrealistas del mismo rostro, manteniendo una coherencia visual y evitando el «sangrado» del personaje cuando se ajusta la fuerza del LoRA. El repositorio incluye dos adaptadores: uno de cara/identidad y otro opcional de cuerpo delgado, que puede apilarse con el primero para cambiar el tipo de silueta.
 
@@ -76,6 +76,6 @@ No se dispone de datos técnicos suficientes para una comparación rigurosa. Exi
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/madmacs5/katrina-krea2-lora)
+- [Repositorio en Hugging Face](https://huggingface.co/madmacs5/katrina-krea2-lora)
 - [Krea 2 AI Models & Generator en Civitai](https://civitai.com/ecosystems/krea2)
 - [LoRA similar «Katrina Kaif - Krea2» en Tensor.Art](https://tensor.art/models/1018551112262806967)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `notgreat-way/Broken-AI` es un modelo publicado en HuggingFace por el usuario `notgreat-way` con licencia MIT. Fue creado el 20 de agosto de 2026 y actualizado el mismo día. A fecha de la consulta, no dispone de descargas ni valoraciones, y la model card únicamente declara la licencia, sin ningún otro detalle técnico.
+El modelo `notgreat-way/Broken-AI` es un modelo publicado en Hugging Face por el usuario `notgreat-way` con licencia MIT. Fue creado el 20 de agosto de 2026 y actualizado el mismo día. A fecha de la consulta, no dispone de descargas ni valoraciones, y la model card únicamente declara la licencia, sin ningún otro detalle técnico.
 
 La relevancia de este modelo es, por ahora, indeterminada: al carecer de documentación sobre arquitectura, parámetros, entrenamiento o capacidades, no es posible evaluar su utilidad para tareas concretas. Su licencia MIT permite uso comercial y modificación sin restricciones significativas, pero la ausencia de especificaciones impide cualquier análisis técnico serio.
 
@@ -52,4 +52,4 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no se p
 
 ## Enlaces
 
-- [HuggingFace: notgreat-way/Broken-AI](https://huggingface.co/notgreat-way/Broken-AI)
+- [Hugging Face: notgreat-way/Broken-AI](https://huggingface.co/notgreat-way/Broken-AI)

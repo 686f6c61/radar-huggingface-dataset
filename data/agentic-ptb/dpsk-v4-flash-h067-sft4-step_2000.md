@@ -59,7 +59,7 @@ Al tratarse de un modelo de aproximadamente 9,4 mil millones de parámetros en f
 - VRAM estimada con cuantización (si se convierte a GGUF o similar): entre 6 y 10 GB dependiendo del nivel de cuantización (Q4_K_M, Q5_K_M, etc.), aunque no se proporcionan archivos cuantizados.
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB), A100 40 GB, H100 80 GB, o GPUs con al menos 24 GB de VRAM para FP16.
 - En consumer GPU: cabe en una RTX 4090 o RTX 3090 (24 GB) en FP16, o en GPUs de 12-16 GB si se cuantiza.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (tras conversión a GGUF), TGI, o directamente con transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (tras conversión a GGUF), TGI, o directamente con transformers de Hugging Face.
 - Latencia y throughput: no disponibles, dependen del hardware y del backend.
 
 ## Comparativa con modelos similares
@@ -68,9 +68,9 @@ No se dispone de datos de rendimiento para comparar este checkpoint con otros mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/dpsk-v4-flash (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 License | HuggingFace |
+| agentic-ptb/dpsk-v4-flash (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 License | Hugging Face |
 
 La comparativa se limita a datos estructurales; no hay información sobre rendimiento relativo.
 
@@ -86,6 +86,6 @@ La comparativa se limita a datos estructurales; no hay información sobre rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h067.sft4.step_2000
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h067.sft4.step_2000
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Otros enlaces: no disponibles (no se han encontrado papers, blogs o demos asociados a este checkpoint).

@@ -25,7 +25,7 @@ El interés de esta ficha radica en su utilidad práctica: es un punto de entrad
 
 No se dispone de información sobre la arquitectura interna del modelo base. El identificador "26B-A4B" sigue la convención habitual en modelos de mezcla de expertos, en la que el primer número indica los parámetros totales y el segundo los parámetros activos por token; de confirmarse, se trataría de un transformer con capas MoE y enrutamiento disperso. El repositorio de cuantización no incluye ninguna ficha técnica del modelo original, ni detalles sobre número de tokens de entrenamiento, composición del dataset, fases de ajuste (SFT, RLHF, DPO) o innovaciones técnicas como decodificación especulativa.
 
-Lo que sí puede afirmarse con los datos disponibles es el proceso de cuantización: se aplicó cuantización estática de versión 2 (`quantize_version: 2`), con tensores de salida cuantizados (`output_tensor_quantised: 1`) y conversión desde pesos en formato HuggingFace (`convert_type: hf`). Se omitió explícitamente el módulo mmproj (`skip_mmproj: 1`), lo que indica que no se procesaron componentes multimodales de visión, en caso de que el modelo base los tuviera. No hay información sobre el proceso de calibración de las cuantizaciones.
+Lo que sí puede afirmarse con los datos disponibles es el proceso de cuantización: se aplicó cuantización estática de versión 2 (`quantize_version: 2`), con tensores de salida cuantizados (`output_tensor_quantised: 1`) y conversión desde pesos en formato Hugging Face (`convert_type: hf`). Se omitió explícitamente el módulo mmproj (`skip_mmproj: 1`), lo que indica que no se procesaron componentes multimodales de visión, en caso de que el modelo base los tuviera. No hay información sobre el proceso de calibración de las cuantizaciones.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ Lo que sí puede afirmarse con los datos disponibles es el proceso de cuantizaci
 - Prototipado rápido de aplicaciones conversacionales: la disponibilidad de 13 niveles de cuantización permite ajustar el equilibrio entre calidad y consumo de memoria durante la fase de desarrollo antes de decidir el despliegue definitivo.
 - Inferencia por lotes en CPU: las cuantizaciones Q2_K y Q3_K_S, con un tamaño estimado en torno a 9-12 GB, permiten ejecutar el modelo en servidores sin GPU para tareas de generación por lotes donde la latencia no es crítica.
 - Experimentación académica con modelos de gran tamaño: si se confirma la arquitectura MoE con ~4B activos, el modelo sería adecuado para estudiar comportamiento de enrutamiento de expertos y comparar calidad frente a modelos densos de tamaño similar.
-- Base para ajuste fino adicional: al derivar de un modelo base publicado en HuggingFace, es posible aplicar técnicas como LoRA sobre los pesos originales y volver a cuantizar posteriormente, siempre que la licencia del modelo base lo permita.
+- Base para ajuste fino adicional: al derivar de un modelo base publicado en Hugging Face, es posible aplicar técnicas como LoRA sobre los pesos originales y volver a cuantizar posteriormente, siempre que la licencia del modelo base lo permita.
 - Servicio de chat autoalojado con API compatible: la etiqueta `endpoints_compatible` permite integrarlo en plataformas de inferencia que exponen una interfaz estilo OpenAI, facilitando la migración desde proveedores en la nube.
 
 Advertencia: dado que no se dispone de licencia declarada, benchmarks ni especificaciones del modelo base, estos casos de uso son hipótesis de aplicabilidad basadas en las características técnicas del repositorio, no recomendaciones validadas.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Goetia-26B-A4B-v1.5 (GGUF) | 25,97B | no disponible (~4B inferido) | no disponible | no disponible | GGUF en HuggingFace |
+| Goetia-26B-A4B-v1.5 (GGUF) | 25,97B | no disponible (~4B inferido) | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen3-30B-A3B | ~30,5B | ~3,3B | 128K | Apache 2.0 | Pesos completos y GGUF |
 | Mixtral 8x7B | ~46,7B | ~12,9B | 32K | Apache 2.0 | Pesos completos y GGUF |
 

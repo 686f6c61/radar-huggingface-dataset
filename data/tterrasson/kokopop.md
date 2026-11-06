@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tterrasson/kokopop es un repositorio de modelo alojado en HuggingFace por el usuario tterrasson. Los metadatos públicos del repositorio indican una licencia Apache 2.0, la etiqueta de región "us" y fechas de creación y última actualización idénticas (13 de septiembre de 2026), lo que sugiere que el repositorio se subió en una única operación y no se ha modificado desde entonces. No se declara pipeline de inferencia, idiomas soportados, formato de pesos ni ningún otro dato técnico.
+tterrasson/kokopop es un repositorio de modelo alojado en Hugging Face por el usuario tterrasson. Los metadatos públicos del repositorio indican una licencia Apache 2.0, la etiqueta de región "us" y fechas de creación y última actualización idénticas (13 de septiembre de 2026), lo que sugiere que el repositorio se subió en una única operación y no se ha modificado desde entonces. No se declara pipeline de inferencia, idiomas soportados, formato de pesos ni ningún otro dato técnico.
 
 La model card asociada está prácticamente vacía: su único contenido es el bloque de metadatos con la licencia Apache 2.0. No incluye descripción del modelo, arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento, benchmarks ni instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, por lo que tampoco existe retroalimentación de la comunidad que permita inferir sus características.
 
@@ -78,7 +78,7 @@ No se ha identificado ningún modelo comparable, ya que se desconoce la categor�
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tterrasson/kokopop | no disponible | no disponible | Apache 2.0 | repositorio público en HuggingFace, sin descargas registradas |
+| tterrasson/kokopop | no disponible | no disponible | Apache 2.0 | repositorio público en Hugging Face, sin descargas registradas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no se ha identificado ninguna alternativa comparable por falta de especificaciones |
 
 ## Limitaciones y advertencias
@@ -95,6 +95,6 @@ No se ha identificado ningún modelo comparable, ya que se desconoce la categor�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tterrasson/kokopop
+- Repositorio en Hugging Face: https://huggingface.co/tterrasson/kokopop
 - Paper, blog, repositorio de código o demo: no disponible.
 - Resultados de búsqueda web relacionados con el modelo o el autor: no disponible (las búsquedas no devolvieron ningún resultado pertinente).

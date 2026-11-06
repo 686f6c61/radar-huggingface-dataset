@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WeVisOne-VL-2B | 2.441.744.384 | No disponible | Detección, grounding, conteo, pointing, OCR, segmentación, matting | Apache 2.0 | HuggingFace (espejo) y repo upstream |
-| Qwen3-VL (base) | No disponible en esta ficha | No disponible | Vision-lenguaje general | No disponible en esta ficha | HuggingFace |
+| WeVisOne-VL-2B | 2.441.744.384 | No disponible | Detección, grounding, conteo, pointing, OCR, segmentación, matting | Apache 2.0 | Hugging Face (espejo) y repo upstream |
+| Qwen3-VL (base) | No disponible en esta ficha | No disponible | Vision-lenguaje general | No disponible en esta ficha | Hugging Face |
 | Alternativas especializadas en segmentación/matting | No disponible | No disponible | Tarea única | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks ni de especificaciones de los modelos compa
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/OsGo/WeVisOne-VL-2B
+- Hugging Face (espejo): https://huggingface.co/OsGo/WeVisOne-VL-2B
 - Repositorio upstream: https://huggingface.co/tencent/WeVisOne-VL-2B
 - GitHub del paquete de inferencia: https://github.com/Tencent/WeVisOne-VL

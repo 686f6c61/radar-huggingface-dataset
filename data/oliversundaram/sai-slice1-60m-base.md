@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sai-Slice1-60M-base es un modelo de lenguaje decoder-only con arquitectura de mezcla de expertos (MoE) desarrollado por el usuario OliverSundaram, publicado en HuggingFace bajo licencia Apache 2.0. Con 60.681.984 parametros totales y solo unos 19,3 millones activos por token, se trata de un modelo experimental de escala muy reducida, preentrenado desde cero sobre aproximadamente 1.190 millones de tokens de texto web en ingles procedentes del subconjunto `Ultra-FineWeb-L3-en-Multi-Style-Synthetic` del dataset openbmb/Ultra-FineWeb-L3. Es la primera entrega (slice 1) de la serie Sai.
+Sai-Slice1-60M-base es un modelo de lenguaje decoder-only con arquitectura de mezcla de expertos (MoE) desarrollado por el usuario OliverSundaram, publicado en Hugging Face bajo licencia Apache 2.0. Con 60.681.984 parametros totales y solo unos 19,3 millones activos por token, se trata de un modelo experimental de escala muy reducida, preentrenado desde cero sobre aproximadamente 1.190 millones de tokens de texto web en ingles procedentes del subconjunto `Ultra-FineWeb-L3-en-Multi-Style-Synthetic` del dataset openbmb/Ultra-FineWeb-L3. Es la primera entrega (slice 1) de la serie Sai.
 
 Se trata de un modelo base, sin ajuste por instrucciones: su funcion es continuar texto, no mantener conversaciones. El autor ha anunciado un fine-tune de chat posterior (Sai-Slice1-60M-Chatter), cuyos tokens especiales de plantilla (`<|system|>`, `<|user|>`, `<|assistant|>`) ya estan definidos en el tokenizador. La relevancia de esta ficha es acotada: sirve como caso de estudio de un MoE entrenado de principio a fin en una unica GPU de consumo (RTX 4060 de 8 GB) durante 24,9 horas, y como banco de pruebas para arquitecturas MoE de vocabulario pequeno y contexto corto.
 
@@ -43,7 +43,7 @@ El modelo es un transformer decoder-only con normalizacion previa (pre-norm) y R
 
 Los datos proceden del subconjunto `Ultra-FineWeb-L3-en-Multi-Style-Synthetic` del dataset openbmb/Ultra-FineWeb-L3, leidos en streaming y mezclados con semilla 42, con un total de ~1,2 mil millones de tokens repartidos en 99,5 % entrenamiento, 0,25 % validacion y 0,25 % test. El separador de documentos es `<|end|>`. Se trata de un preentrenamiento de un solo epoch sobre una unica RTX 4060 de 8 GB en 24,9 horas, por lo que el presupuesto de computo es extremadamente limitado. No se menciona en la informacion disponible ninguna fase de RLHF, DPO o ajuste por instrucciones: el modelo es estrictamente base.
 
-Una particularidad tecnica relevante es que el modelo gestiona su propia cache KV y expone un metodo `model.run(...)` propio que devuelve el texto generado junto con los tokens por segundo y el tiempo hasta el primer token. Esto implica que el metodo `generate()` de HuggingFace no es compatible, ya que el modelo no devuelve `past_key_values`. Una pasada forward estandar (`model(input_ids, attention_mask=...)`) si funciona y devuelve logits, por lo que es compatible con herramientas como `lm-evaluation-harness`.
+Una particularidad tecnica relevante es que el modelo gestiona su propia cache KV y expone un metodo `model.run(...)` propio que devuelve el texto generado junto con los tokens por segundo y el tiempo hasta el primer token. Esto implica que el metodo `generate()` de Hugging Face no es compatible, ya que el modelo no devuelve `past_key_values`. Una pasada forward estandar (`model(input_ids, attention_mask=...)`) si funciona y devuelve logits, por lo que es compatible con herramientas como `lm-evaluation-harness`.
 
 ## Capacidades
 
@@ -122,7 +122,7 @@ Criterios de comparacion que si pueden aplicarse con los datos disponibles: fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OliverSundaram/Sai-Slice1-60M-base
+- Modelo en Hugging Face: https://huggingface.co/OliverSundaram/Sai-Slice1-60M-base
 - Repositorio GitHub del proyecto Sai: https://github.com/OliverSundaram/Sai
 - Dataset de entrenamiento: https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

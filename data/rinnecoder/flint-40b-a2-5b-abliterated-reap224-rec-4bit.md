@@ -103,11 +103,11 @@ No se dispone de datos de benchmarks de modelos comparables de otros autores en 
 - Sesgos: no documentados; el modelo solo declara ingles y no se evaluo en otros idiomas.
 - Formato de pesos propietario: no carga en llama.cpp, mlx-lm, LM Studio ni TGI; solo funciona con Locals, lo que limita el despliegue en produccion y la portabilidad.
 - Licencia Apache-2.0 permite uso comercial, pero el formato y la falta de soporte en toolchains estandar complican su integracion en pipelines de produccion.
-- El modelo tiene 35 descargas y 0 likes en HuggingFace, sin validacion independiente de la comunidad.
+- El modelo tiene 35 descargas y 0 likes en Hugging Face, sin validacion independiente de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RinneCODER/Flint-40B-A2.5B-abliterated-REAP224-Rec-4bit
+- Hugging Face: https://huggingface.co/RinneCODER/Flint-40B-A2.5B-abliterated-REAP224-Rec-4bit
 - Modelo base (dima6312, Rec 4-bit): https://huggingface.co/dima6312/Flint-40B-A2.5B-abliterated-Rec-4bit
 - Flint original (RecursiveSI): https://huggingface.co/RecursiveSI/flint
 - Paper REAP (Lasby et al., Cerebras): https://arxiv.org/abs/2510.13999

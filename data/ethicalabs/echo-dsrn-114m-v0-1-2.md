@@ -52,7 +52,7 @@ El entrenamiento se realizó con SFTTrainer durante 2 épocas sobre el dataset `
 
 ## Benchmarks y rendimiento
 
-Los resultados de evaluación reportados por el autor (librería de evaluación de HuggingFace) son los siguientes:
+Los resultados de evaluación reportados por el autor (librería de evaluación de Hugging Face) son los siguientes:
 
 **0-shot**
 
@@ -105,9 +105,9 @@ No se dispone de datos comparativos con otros modelos de tamaño similar en la i
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ethicalabs/Echo-DSRN-114M-v0.1.2)
+- [Modelo en Hugging Face](https://huggingface.co/ethicalabs/Echo-DSRN-114M-v0.1.2)
 - [Repositorio GitHub](https://github.com/ethicalabs-ai/Echo-DSRN/)
 - [Working paper (PAPER.md)](https://github.com/ethicalabs-ai/Echo-DSRN/blob/main/PAPER.md)
-- [Colección de modelos Echo-DSRN en HuggingFace](https://huggingface.co/collections/ethicalabs/echo-dsrn-recurrent-hybrid)
+- [Colección de modelos Echo-DSRN en Hugging Face](https://huggingface.co/collections/ethicalabs/echo-dsrn-recurrent-hybrid)
 - [Página de investigación de Echo-DSRN](https://www.ethicalabs.ai/research/echo-dsrn/)
 - [Aplicación demo de clasificador de intenciones](https://huggingface.co/spaces/ethicalabs/Echo-SmolTools-114M-Intent-Classifier)

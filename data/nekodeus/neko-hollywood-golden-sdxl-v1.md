@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neko Hollywood Golden SDXL v1 es una coleccion de adaptadores LoRA de personajes para SDXL base 1.0, publicada por el usuario Nekodeus en HuggingFace. Cada entrada del set (denominada "golden1", "golden2", etc.) incluye dos artefactos: un archivo LoRA estandar en formato `.safetensors` compatible con A1111, ComfyUI y diffusers, y una carpeta de conversion a OpenVINO IR (`.xml`/`.bin`) pensada para inferencia en hardware Intel (CPU, iGPU o NPU) sin depender de CUDA.
+Neko Hollywood Golden SDXL v1 es una coleccion de adaptadores LoRA de personajes para SDXL base 1.0, publicada por el usuario Nekodeus en Hugging Face. Cada entrada del set (denominada "golden1", "golden2", etc.) incluye dos artefactos: un archivo LoRA estandar en formato `.safetensors` compatible con A1111, ComfyUI y diffusers, y una carpeta de conversion a OpenVINO IR (`.xml`/`.bin`) pensada para inferencia en hardware Intel (CPU, iGPU o NPU) sin depender de CUDA.
 
 El modelo no es un modelo fundacional, sino un conjunto de adaptadores de bajo rango (rank 8) entrenados sobre retratos curados para reproducir rostros concretos. En la version v1 solo se documenta la primera entrada, `golden1`, asociada al rostro de Margot Robbie; el resto del set se anuncia como "coming next" (golden2 a golden10) y no esta disponible en el repositorio en el momento de redactar esta ficha.
 
@@ -89,6 +89,6 @@ La diferencia estructural mas destacable frente a LoRA de personaje convencional
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nekodeus/neko-hollywood-golden-sdxl-v1
+- Hugging Face: https://huggingface.co/Nekodeus/neko-hollywood-golden-sdxl-v1
 - Modelo base referenciado en la model card: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - OpenVINO (runtime para las conversiones IR): no se proporciona enlace en la informacion disponible.

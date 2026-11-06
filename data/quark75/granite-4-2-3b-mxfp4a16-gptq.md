@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`quark75/granite-4.2-3b-MXFP4A16-GPTQ` es un checkpoint cuantizado publicado en HuggingFace por el usuario quark75. Por la convencion de nomenclatura del repositorio, se trata de una version de 4 bits del modelo IBM Granite 4.2 de 3.000 millones de parametros, cuantizada mediante GPTQ en el formato MXFP4A16 (pesos en MXFP4 con escalas de bloque y activaciones en 16 bits). El repositorio se creo el 24 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, por lo que no existe validacion de la comunidad ni resultados publicados.
+`quark75/granite-4.2-3b-MXFP4A16-GPTQ` es un checkpoint cuantizado publicado en Hugging Face por el usuario quark75. Por la convencion de nomenclatura del repositorio, se trata de una version de 4 bits del modelo IBM Granite 4.2 de 3.000 millones de parametros, cuantizada mediante GPTQ en el formato MXFP4A16 (pesos en MXFP4 con escalas de bloque y activaciones en 16 bits). El repositorio se creo el 24 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, por lo que no existe validacion de la comunidad ni resultados publicados.
 
 La relevancia de esta publicacion es practica: reducir un modelo de 3B a poco mas de 2 GB de pesos permite ejecutarlo en GPU de consumo modesto, portatiles con GPU integrada o incluso en CPU, y desplegarlo en entornos con VRAM limitada. Ahora bien, la model card publicada es practicamente vacia (solo contiene la declaracion de licencia Apache-2.0), de modo que no hay informacion verificable sobre el dataset de calibracion, la perdida de calidad respecto al modelo original, la longitud de contexto soportada ni los idiomas cubiertos.
 
@@ -84,10 +84,10 @@ No se dispone de datos de rendimiento que permitan comparar esta cuantizacion co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/quark75/granite-4.2-3b-MXFP4A16-GPTQ
+- Repositorio en Hugging Face: https://huggingface.co/quark75/granite-4.2-3b-MXFP4A16-GPTQ
 - Model card del autor: no disponible (solo contiene la declaracion de licencia Apache-2.0)
 - Paper del modelo base Granite 4.2 3B: no disponible en la informacion proporcionada
-- Repositorio del modelo base en HuggingFace: no disponible en la informacion proporcionada
+- Repositorio del modelo base en Hugging Face: no disponible en la informacion proporcionada
 - Documentacion de GPTQ: no disponible en la informacion proporcionada
 - Especificacion de formatos MX (OCP Microscaling Formats): no disponible en la informacion proporcionada
 - Demos o espacios asociados: no disponible

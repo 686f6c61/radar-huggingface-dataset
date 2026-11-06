@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Makio64/jurilix-pseudo-encodeur | Clasificacion de tokens (7 etiquetas juridicas) | 512 tokens (ventanas con solapamiento de 128) | Frances | MIT | ONNX en HuggingFace |
-| Jean-Baptiste/camembert-ner | Clasificacion de tokens (NER generico) | 512 tokens | Frances | MIT | HuggingFace |
+| Makio64/jurilix-pseudo-encodeur | Clasificacion de tokens (7 etiquetas juridicas) | 512 tokens (ventanas con solapamiento de 128) | Frances | MIT | ONNX en Hugging Face |
+| Jean-Baptiste/camembert-ner | Clasificacion de tokens (NER generico) | 512 tokens | Frances | MIT | Hugging Face |
 | Modelos NER juridicos en frances equivalentes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion directa solo puede establecerse con el modelo base, del que este se deriva mediante ajuste fino sobre un corpus juridico especifico. No se dispone de datos comparativos de rendimiento entre ambos.
@@ -90,7 +90,7 @@ La comparacion directa solo puede establecerse con el modelo base, del que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Makio64/jurilix-pseudo-encodeur
+- Modelo en Hugging Face: https://huggingface.co/Makio64/jurilix-pseudo-encodeur
 - Archivos del repositorio: https://huggingface.co/Makio64/jurilix-pseudo-encodeur/tree/main
 - Modelo base: https://huggingface.co/Jean-Baptiste/camembert-ner
 - Perfil de GitHub del autor: https://github.com/Makio64

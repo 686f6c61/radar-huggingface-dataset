@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - dementor-research/sft_gsm8k_gpt-oss-20b_as_phi-4_seed42](https://huggingface.co/dementor-research/sft_gsm8k_gpt-oss-20b_as_phi-4_seed42)
+- [Hugging Face - dementor-research/sft_gsm8k_gpt-oss-20b_as_phi-4_seed42](https://huggingface.co/dementor-research/sft_gsm8k_gpt-oss-20b_as_phi-4_seed42)
 - [Tinker (Thinking Machines)](https://thinkingmachines.ai/tinker/)
 - [Modelo base: openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `floriankrauss/intent_detector_concierge` es un clasificador de intenciones basado en la arquitectura DistilBERT, desarrollado por el usuario floriankrauss y publicado en HuggingFace. Con aproximadamente 67 millones de parámetros, está diseñado para la detección de intenciones en sistemas conversacionales, una tarea fundamental para el enrutamiento automático de consultas hacia agentes o herramientas especializadas en arquitecturas multi-agente.
+El modelo `floriankrauss/intent_detector_concierge` es un clasificador de intenciones basado en la arquitectura DistilBERT, desarrollado por el usuario floriankrauss y publicado en Hugging Face. Con aproximadamente 67 millones de parámetros, está diseñado para la detección de intenciones en sistemas conversacionales, una tarea fundamental para el enrutamiento automático de consultas hacia agentes o herramientas especializadas en arquitecturas multi-agente.
 
 Aunque la información pública es muy limitada (no se especifican datos de entrenamiento, idiomas soportados ni métricas de rendimiento), su tamaño compacto y su licencia MIT lo convierten en un candidato interesante para integraciones ligeras en pipelines de procesamiento de lenguaje natural. La ausencia de documentación detallada y de resultados de evaluación obliga a tratar cualquier afirmación sobre su comportamiento como provisional hasta que se publiquen datos verificables.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: con 67M de parámetros en precisión fp32, el modelo ocupa aproximadamente 268 MB (0.26 GB). En cuantización int8, el tamaño se reduciría a unos 67 MB, aunque no se proporcionan archivos cuantizados en el repositorio.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente para inferencia en fp32. Modelos como NVIDIA T4, GTX 1650 o incluso CPUs modernas pueden ejecutarlo sin problemas.
 - Compatibilidad con hardware de consumo: sí, cabe en cualquier GPU consumer actual (RTX 2060, RTX 3060, etc.) y también puede ejecutarse en CPU con latencia aceptable para tareas de clasificación.
-- Opciones de despliegue: al ser un modelo de tipo encoder, puede servirse con frameworks como HuggingFace Transformers, ONNX Runtime, o mediante herramientas como FastAPI para crear un endpoint. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
+- Opciones de despliegue: al ser un modelo de tipo encoder, puede servirse con frameworks como Hugging Face Transformers, ONNX Runtime, o mediante herramientas como FastAPI para crear un endpoint. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
 - Latencia y throughput: no se dispone de mediciones oficiales. Como referencia, un DistilBERT de tamaño similar suele procesar cientos de secuencias por segundo en una GPU moderna, pero esto depende del hardware y la longitud de las secuencias.
 
 ## Comparativa con modelos similares
@@ -73,5 +73,5 @@ No se dispone de datos de rendimiento comparativo para este modelo concreto. Las
 
 ## Enlaces
 
-- [HuggingFace - floriankrauss/intent_detector_concierge](https://huggingface.co/floriankrauss/intent_detector_concierge)
+- [Hugging Face - floriankrauss/intent_detector_concierge](https://huggingface.co/floriankrauss/intent_detector_concierge)
 - No se han encontrado papers, blogs o repositorios adicionales específicos de este modelo en la búsqueda web.

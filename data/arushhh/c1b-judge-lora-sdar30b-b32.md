@@ -64,7 +64,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de ju
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Arushhh/c1b-judge-lora-sdar30b-b32 | Adaptador LoRA sobre base ~30B/A3B | No disponible | apache-2.0 | Publico en HuggingFace, 0 descargas |
+| Arushhh/c1b-judge-lora-sdar30b-b32 | Adaptador LoRA sobre base ~30B/A3B | No disponible | apache-2.0 | Publico en Hugging Face, 0 descargas |
 | JetLM/SDAR-30B-A3B-Chat-b32 | ~30B totales / ~3B activos (estimado por nomenclatura) | No disponible | No disponible | Modelo base, requiere el adaptador para la funcion de juez |
 | JetLM/SDAR-1.7B-Chat-b32 | ~1,7B | No disponible | No disponible | Drafter sobre el que actua el juez |
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de ju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arushhh/c1b-judge-lora-sdar30b-b32
+- Modelo en Hugging Face: https://huggingface.co/Arushhh/c1b-judge-lora-sdar30b-b32
 - Modelo base: https://huggingface.co/JetLM/SDAR-30B-A3B-Chat-b32
 - Drafter: https://huggingface.co/JetLM/SDAR-1.7B-Chat-b32
 - Dataset del corpus de entrenamiento: https://huggingface.co/datasets/Arushhh/c1b-judge-corpus-waveA

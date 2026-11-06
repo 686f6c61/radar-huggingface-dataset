@@ -78,7 +78,7 @@ No se dispone de informaci√≥n comparativa con otros modelos de la misma categor√
 
 ## Enlaces
 
-- [HuggingFace - muradil211/ToolWeave_stage3](https://huggingface.co/muradil211/ToolWeave_stage3)
+- [Hugging Face - muradil211/ToolWeave_stage3](https://huggingface.co/muradil211/ToolWeave_stage3)
 - [Proyecto ToolWeave en GitHub](https://github.com/Muradil-mamat-211/ToolWeave)
 - [Paper de ToolWeave en arXiv](https://arxiv.org/abs/2605.12521)
-- [Perfil de muradil211 en HuggingFace](https://huggingface.co/muradil211)
+- [Perfil de muradil211 en Hugging Face](https://huggingface.co/muradil211)

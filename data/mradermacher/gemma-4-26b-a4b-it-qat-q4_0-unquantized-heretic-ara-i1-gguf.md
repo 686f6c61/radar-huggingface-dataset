@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización GGUF del modelo `gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic-ara`, creada por el usuario de HuggingFace `mradermacher` mediante la herramienta `imatrix` y con pesos ponderados. El modelo base es una variante de Gemma 4 de Google, con arquitectura Mixture of Experts (MoE) de 26 mil millones de parámetros totales de los cuales se activan 4 mil millones por token. La etiqueta `heretic-ara` sugiere un ajuste fino de la comunidad orientado a árabe, aunque no se aportan detalles en la model card.
+Este repositorio contiene una cuantización GGUF del modelo `gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic-ara`, creada por el usuario de Hugging Face `mradermacher` mediante la herramienta `imatrix` y con pesos ponderados. El modelo base es una variante de Gemma 4 de Google, con arquitectura Mixture of Experts (MoE) de 26 mil millones de parámetros totales de los cuales se activan 4 mil millones por token. La etiqueta `heretic-ara` sugiere un ajuste fino de la comunidad orientado a árabe, aunque no se aportan detalles en la model card.
 
 La cuantización Q4_0 reduce el peso del modelo a unos 14 GB, lo que lo hace viable en GPUs de consumo con 16 GB de VRAM. El repositorio ofrece múltiples quants (Q2_K, Q3_K, Q4_K, etc.) para adaptarse a distintos presupuestos de memoria. Es un modelo conversacional compatible con los ecosistemas de llama.cpp, Ollama y vLLM, pensado para inferencia local.
 

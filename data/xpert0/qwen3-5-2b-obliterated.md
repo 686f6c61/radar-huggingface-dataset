@@ -2,17 +2,17 @@
 
 ## Resumen
 
-Qwen3.5-2B-OBLITERATED es una variante del modelo base Qwen/Qwen3.5-2B publicada por el usuario xpert0 en HuggingFace, en la que se ha eliminado el comportamiento de rechazo (refusal) mediante técnicas de ingeniería de activaciones, un procedimiento conocido como *abliteration*. Según la model card, el autor aplicó el método `advanced` de la herramienta OBLITERATUS, desarrollada por elder-plinius. El resultado es un modelo de 1.881.825.088 parámetros (aproximadamente 1,88 mil millones) que conserva la arquitectura del modelo base y responde sin las negativas típicas de un modelo alineado.
+Qwen3.5-2B-OBLITERATED es una variante del modelo base Qwen/Qwen3.5-2B publicada por el usuario xpert0 en Hugging Face, en la que se ha eliminado el comportamiento de rechazo (refusal) mediante técnicas de ingeniería de activaciones, un procedimiento conocido como *abliteration*. Según la model card, el autor aplicó el método `advanced` de la herramienta OBLITERATUS, desarrollada por elder-plinius. El resultado es un modelo de 1.881.825.088 parámetros (aproximadamente 1,88 mil millones) que conserva la arquitectura del modelo base y responde sin las negativas típicas de un modelo alineado.
 
 Su interés es doble. Por un lado, es un caso reproducible de abliteration sobre un modelo de clase 2B, un tamaño que cabe en GPUs de consumo y que permite experimentar con edición de pesos sin grandes presupuestos de cómputo. Por otro, ilustra los riesgos de la redistribución de pesos sin evaluación: la ficha no publica benchmarks, ni licencia, ni longitud de contexto, y el repositorio no registra descargas ni valoraciones en el momento de la consulta.
 
-No hay información sobre datos de entrenamiento, ventana de contexto, cuantizaciones publicadas ni resultados de evaluación. Todo lo relativo a la arquitectura y a las capacidades heredadas procede del modelo base y de las etiquetas de HuggingFace, no de una validación independiente.
+No hay información sobre datos de entrenamiento, ventana de contexto, cuantizaciones publicadas ni resultados de evaluación. Todo lo relativo a la arquitectura y a las capacidades heredadas procede del modelo base y de las etiquetas de Hugging Face, no de una validación independiente.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (etiqueta de HuggingFace `qwen3_5_text`); detalles de capas, atención y activaciones no disponibles |
+| Arquitectura | Transformer (etiqueta de Hugging Face `qwen3_5_text`); detalles de capas, atención y activaciones no disponibles |
 | Parámetros totales | 1.881.825.088 (~1,88 B) |
 | Parámetros activos | no aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -28,7 +28,7 @@ No hay información sobre datos de entrenamiento, ventana de contexto, cuantizac
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda íntegramente la arquitectura del base Qwen/Qwen3.5-2B; la etiqueta `qwen3_5_text` en HuggingFace indica que se trata de un transformer de texto, sin torre de visión declarada. No se ha realizado un preentrenamiento ni un ajuste supervisado nuevo: la intervención es una edición post-hoc de pesos basada en ingeniería de activaciones. Este tipo de procedimiento localiza una dirección en el espacio de activaciones asociada a la conducta de rechazo (habitualmente estimada con pares de peticiones dañinas e inocuas en una capa intermedia) y la proyecta fuera de las matrices de pesos, de modo que el modelo pierde la tendencia a negarse a responder.
+El modelo hereda íntegramente la arquitectura del base Qwen/Qwen3.5-2B; la etiqueta `qwen3_5_text` en Hugging Face indica que se trata de un transformer de texto, sin torre de visión declarada. No se ha realizado un preentrenamiento ni un ajuste supervisado nuevo: la intervención es una edición post-hoc de pesos basada en ingeniería de activaciones. Este tipo de procedimiento localiza una dirección en el espacio de activaciones asociada a la conducta de rechazo (habitualmente estimada con pares de peticiones dañinas e inocuas en una capa intermedia) y la proyecta fuera de las matrices de pesos, de modo que el modelo pierde la tendencia a negarse a responder.
 
 La model card no documenta el conjunto de calibración, el número de capas intervenidas, la magnitud de la ablación ni la receta exacta que aplica el preset `advanced` de OBLITERATUS. Tampoco se indica si hubo recuperación posterior de capacidades ni ninguna fase de evaluación. La herramienta OBLITERATUS es de código abierto y está disponible en GitHub, por lo que la receta es reproducible en principio, pero el repositorio del modelo no incluye los artefactos (direcciones calculadas, scripts, semillas) que permitirían auditar el resultado. No se dispone de información sobre tokens de entrenamiento, composición del dataset, RLHF ni DPO.
 
@@ -90,6 +90,6 @@ La comparación cuantitativa no es posible con los datos disponibles: no hay ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xpert0/Qwen3.5-2B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/xpert0/Qwen3.5-2B-OBLITERATED
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS

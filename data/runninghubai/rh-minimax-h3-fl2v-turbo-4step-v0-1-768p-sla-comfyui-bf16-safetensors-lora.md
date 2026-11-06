@@ -34,8 +34,8 @@ Datos adicionales declarados:
 | Pasos de inferencia declarados (por nombre) | 4 |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-21 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-21 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-21 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-21 |
 
 ## Arquitectura y entrenamiento
 
@@ -91,12 +91,12 @@ No disponible. La model card no identifica modelos comparables ni se dispone de 
 - Siglas no documentadas: "sla" y "fl2v" no se explican en la model card; su significado se ha inferido a partir de la nomenclatura y debe confirmarse con el autor o la documentacion del proyecto original.
 - Idiomas y prompts: no se documenta el soporte multilingue de los prompts; se desconoce si funciona igual de bien con texto en castellano que en otros idiomas.
 - Sesgos y alucinacion: no hay informacion publicada sobre sesgos del modelo base ni sobre tasas de fallo o artefactos en la generacion de video.
-- Fecha de publicacion inusual: HuggingFace registra la creacion del repositorio el 2026-09-21, fecha posterior a la habitual en los repositorios consultados; conviene verificar la vigencia de los enlaces.
+- Fecha de publicacion inusual: Hugging Face registra la creacion del repositorio el 2026-09-21, fecha posterior a la habitual en los repositorios consultados; conviene verificar la vigencia de los enlaces.
 - Uso comercial a traves de RunningHub: cualquier explotacion comercial mediante la API o la plataforma esta sujeta a las condiciones de servicio de RunningHub, no incluidas en la model card.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v0.1-768p-sla-comfyui-bf16.safetensors-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v0.1-768p-sla-comfyui-bf16.safetensors-lora
 - Proyecto original: https://www.runninghub.cn/model/public/2090360452147662849
 - Pagina del autor: https://www.runninghub.cn/user-center/1935673237986865153
 - RunningHub internacional: https://www.runninghub.ai

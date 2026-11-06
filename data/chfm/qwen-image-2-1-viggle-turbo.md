@@ -27,7 +27,7 @@ La relevancia actual es doble: por un lado, abarata el despliegue en producción
 | Pasos de inferencia | 5 pasadas del transformer, con `sigmas=[1.0, 0.875, 0.75, 0.5, 0.25]` y sin classifier-free guidance |
 | Scheduler | FlowMatchEulerDiscreteScheduler, config del repositorio con `shift_terminal: null` |
 | Tamano del repositorio | 19,3 GB |
-| Descargas / likes en HuggingFace | 0 / 0 en el momento de la consulta |
+| Descargas / likes en Hugging Face | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
@@ -100,13 +100,13 @@ No se dispone de datos comparativos con modelos de destilación de terceros (por
 - Riesgo de alucinación visual y de artefactos propio de un modelo destilado a pocos pasos: el autor menciona pérdida de detalle, efecto fantasma de sujetos duplicados e instrucciones descartadas o fusionadas como problemas característicos, mitigados pero no eliminados en la v0.2.
 - Idiomas soportados no declarados: no puede garantizarse un comportamiento correcto de las instrucciones de edición en castellano u otros idiomas distintos del usado en el entrenamiento.
 - Sin validación comunitaria: el repositorio consultado registra 0 descargas y 0 likes, por lo que no hay evidencia externa de estabilidad ni de reproducibilidad.
-- Discrepancia de identificador: la ficha de HuggingFace consultada corresponde a `chfm/Qwen-Image-2.1-viggle-turbo`, mientras que el README, el Space de demostración y los resultados de búsqueda apuntan a `Viggle/Qwen-Image-2.1-viggle-turbo`. Conviene confirmar cuál es el repositorio canónico antes de fijar una dependencia.
+- Discrepancia de identificador: la ficha de Hugging Face consultada corresponde a `chfm/Qwen-Image-2.1-viggle-turbo`, mientras que el README, el Space de demostración y los resultados de búsqueda apuntan a `Viggle/Qwen-Image-2.1-viggle-turbo`. Conviene confirmar cuál es el repositorio canónico antes de fijar una dependencia.
 - Dependencia de una instalación de diffusers fijada a un commit de git concreto: `QwenImage21Pipeline` no está en una release estable, lo que complica la reproducibilidad a medio plazo.
 
 ## Enlaces
 
-- Modelo en HuggingFace (identificador de la ficha): https://huggingface.co/chfm/Qwen-Image-2.1-viggle-turbo
-- Modelo en HuggingFace (identificador citado en el README y en los resultados de búsqueda): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
+- Modelo en Hugging Face (identificador de la ficha): https://huggingface.co/chfm/Qwen-Image-2.1-viggle-turbo
+- Modelo en Hugging Face (identificador citado en el README y en los resultados de búsqueda): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
 - Space de demostración: https://huggingface.co/spaces/Viggle/Qwen-Image-2.1-viggle-turbo
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial de Qwen-Image-2.1 en GitHub: https://github.com/QwenLM/Qwen-Image-2.1

@@ -79,7 +79,7 @@ No se han publicado resultados comparativos con otros frameworks OCR en la infor
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| torchocr-weights (este repo) | 0,60 M - 27,9 M | no aplica | hmean 0.734 en ICDAR-2015 con el detector MobileNetV3-Large 05; 0.665 de precision de palabra con CRNN ResNet34-VD | Apache-2.0 | HuggingFace y GitHub |
+| torchocr-weights (este repo) | 0,60 M - 27,9 M | no aplica | hmean 0.734 en ICDAR-2015 con el detector MobileNetV3-Large 05; 0.665 de precision de palabra con CRNN ResNet34-VD | Apache-2.0 | Hugging Face y GitHub |
 | PaddleOCR (PP-OCRv3) | no disponible | no aplica | no disponible en la informacion consultada | Apache-2.0 | GitHub y releases de PaddlePaddle |
 | EasyOCR | no disponible | no aplica | no disponible en la informacion consultada | Apache-2.0 | GitHub y PyPI |
 | docTR | no disponible | no aplica | no disponible en la informacion consultada | Apache-2.0 | GitHub y PyPI |
@@ -101,7 +101,7 @@ La diferencia principal de torchocr frente a las alternativas es la ausencia de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BryanBradfo/torchocr-weights
+- Hugging Face: https://huggingface.co/BryanBradfo/torchocr-weights
 - Repositorio torchOCR en GitHub: https://github.com/BryanBradfo/torchOCR
 - PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
 - PaddleOCR2Pytorch: https://github.com/frotms/PaddleOCR2Pytorch

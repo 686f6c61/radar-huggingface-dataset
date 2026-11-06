@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chormi/tangkhul-byt5-base es un modelo publicado en HuggingFace por el usuario chormi cuyo repositorio contiene 581.653.248 parametros almacenados en formato safetensors, con una etiqueta de arquitectura t5 y una etiqueta de region us. El nombre del repositorio sugiere un ajuste fino de la familia ByT5 orientado al idioma tangkhul (lengua tibetano-birmana hablada en Manipur, India), pero esta circunstancia no aparece confirmada en la informacion disponible: no hay model card, ni descripcion de tareas, ni declaracion de idiomas.
+chormi/tangkhul-byt5-base es un modelo publicado en Hugging Face por el usuario chormi cuyo repositorio contiene 581.653.248 parametros almacenados en formato safetensors, con una etiqueta de arquitectura t5 y una etiqueta de region us. El nombre del repositorio sugiere un ajuste fino de la familia ByT5 orientado al idioma tangkhul (lengua tibetano-birmana hablada en Manipur, India), pero esta circunstancia no aparece confirmada en la informacion disponible: no hay model card, ni descripcion de tareas, ni declaracion de idiomas.
 
 El modelo acumula 98 descargas y 0 likes, no tiene pipeline declarado y su licencia no esta especificada, lo que limita cualquier evaluacion de uso comercial. El repositorio ocupa 34,9 GB, un tamano muy superior al que corresponderia a los pesos de un modelo de 581 millones de parametros (unos 2,3 GB en fp32 y 1,2 GB en fp16), lo que apunta a la presencia de multiples checkpoints, estados de optimizador u otros artefactos de entrenamiento en el mismo repositorio.
 
@@ -91,5 +91,5 @@ No se dispone de informacion que confirme que el modelo derive efectivamente de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chormi/tangkhul-byt5-base
+- Hugging Face: https://huggingface.co/chormi/tangkhul-byt5-base
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su model card, a papers asociados, a repositorios de codigo ni a demos. Los resultados de busqueda disponibles no guardan relacion con el modelo.

@@ -21,7 +21,7 @@ Needle 3 realiza tres tareas: llamadas a herramientas a partir de las funciones 
 | Licencia | Apache 2.0 |
 | Formato de pesos | `.cact` (formato propietario mapeado en memoria), `safetensors` (checkpoint para fine-tuning), exportacion `.cact` a 4 bits |
 
-Otros datos de interes: tamano del repositorio 4,3 GB; tamano del modelo desplegado entre 9 y 35 MB; motor por plataforma inferior a 1 MB; 47 descargas y 10 likes en HuggingFace; creado el 16 de septiembre de 2026 y actualizado el 17 de septiembre de 2026; libreria `cactus-needle`.
+Otros datos de interes: tamano del repositorio 4,3 GB; tamano del modelo desplegado entre 9 y 35 MB; motor por plataforma inferior a 1 MB; 47 descargas y 10 likes en Hugging Face; creado el 16 de septiembre de 2026 y actualizado el 17 de septiembre de 2026; libreria `cactus-needle`.
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ La informacion disponible solo menciona explicitamente una comparacion, con Deep
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Needle 3 | 121 M (subredes desde 29 M) | no disponible | Apache 2.0 | HuggingFace (Cactus-Compute/needle3) | Modelo on-device para tool calling, extraccion y embeddings |
+| Needle 3 | 121 M (subredes desde 29 M) | no disponible | Apache 2.0 | Hugging Face (Cactus-Compute/needle3) | Modelo on-device para tool calling, extraccion y embeddings |
 | DeepSeek V4 Flash | no disponible | no disponible | no disponible | no disponible | Citado por el autor: las subredes afinadas de 4 capas o mas lo superan en DroidCall |
 | Modelos 10x mayores en tool calling movil | no disponible | no disponible | no disponible | no disponible | Afirmacion generica del autor, sin identificacion de modelos concretos |
 | Modelos 2-3x mayores en extraccion | no disponible | no disponible | no disponible | no disponible | Afirmacion generica del autor, sin identificacion de modelos concretos |
@@ -96,7 +96,7 @@ La informacion disponible solo menciona explicitamente una comparacion, con Deep
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cactus-Compute/needle3
+- Hugging Face: https://huggingface.co/Cactus-Compute/needle3
 - Pagina de release, arquitectura y plot interactivo: https://cactuscompute.com/needle
 - Repositorio GitHub: https://github.com/cactus-compute/needle
 - Guia de diseno de herramientas: https://cactuscompute.com/blog/designing-tools-for-needle

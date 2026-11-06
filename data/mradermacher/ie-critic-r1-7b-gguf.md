@@ -6,7 +6,7 @@ IE-Critic-R1-7B-GGUF es la distribucion en formato GGUF del modelo Coobiw/IE-Cri
 
 El sufijo "Critic" sugiere un modelo orientado a tareas de critica, evaluacion o revision de contenido, aunque la model card del repositorio GGUF no documenta el proposito exacto ni el pipeline. El modelo base no incluye informacion publica sobre datos de entrenamiento, contexto o benchmarks en la documentacion disponible; el repositorio GGUF se limita a listar las cuantizaciones estaticas generadas.
 
-Esta ficha describe exclusivamente los datos verificables en el repositorio de HuggingFace: parametros, cuantizaciones disponibles, tamano de archivos y metadatos. Cualquier dato ausente se marca explicitamente como "no disponible".
+Esta ficha describe exclusivamente los datos verificables en el repositorio de Hugging Face: parametros, cuantizaciones disponibles, tamano de archivos y metadatos. Cualquier dato ausente se marca explicitamente como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ Las cuantizaciones son estaticas (no ponderadas ni imatrix); el autor indica que
 - Generacion de texto conversacional en ingles, con soporte de formato chat multi-turno (tag "conversational").
 - Procesamiento multimodal: los archivos mmproj permiten entrada de imagenes junto con texto en llama.cpp.
 - Razonamiento y critica: el nombre del modelo sugiere capacidades de evaluacion o revision, aunque no se documentan formalmente.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la documentacion.
 - Soporte de agentes y razonamiento multi-paso: no documentado explicitamente.
 - Capacidades multilingues: limitadas al ingles segun los metadatos.

@@ -67,5 +67,5 @@ No disponible. No se conocen otros LoRAs de personajes originales con los que co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIadoreyou/original-character-lora
+- Hugging Face: https://huggingface.co/AIadoreyou/original-character-lora
 - Información sobre los personajes (Tumblr): https://aiadoreyou.tumblr.com/echoes

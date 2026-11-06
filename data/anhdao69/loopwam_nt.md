@@ -72,8 +72,8 @@ El resto de checkpoints (full-suite 4/1, 2/2, 1/4, mix 4/1, densos y varias inic
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LoopWAM_NT (v0, 4/4) | 584.536.135 | no disponible | 92,12% (mejor init evaluada) | no disponible | HuggingFace |
-| LoopWAM_NT dense_s30 | 1.416.114.247 | no disponible | no evaluado | no disponible | HuggingFace |
+| LoopWAM_NT (v0, 4/4) | 584.536.135 | no disponible | 92,12% (mejor init evaluada) | no disponible | Hugging Face |
+| LoopWAM_NT dense_s30 | 1.416.114.247 | no disponible | no evaluado | no disponible | Hugging Face |
 | Alternativas de política robótica tipo diffusion/flow policy | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparativa cuantitativa no está disponible.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- [HuggingFace: anhdao69/LoopWAM_NT](https://huggingface.co/anhdao69/LoopWAM_NT)
+- [Hugging Face: anhdao69/LoopWAM_NT](https://huggingface.co/anhdao69/LoopWAM_NT)
 - [Repositorio GitHub: anhdao69/LoopWAM_NT](https://github.com/anhdao69/LoopWAM_NT)
 - [Rama KV_concat](https://github.com/anhdao69/LoopWAM_NT/tree/KV_concat)
 - [Informe de resultados LoopWAM v0 V4A1 KVconcat (2026-10-08)](https://github.com/anhdao69/LoopWAM_NT/blob/KV_concat/plans/performance/LoopWAM_v0_V4A1_KVconcat_20261008.md)

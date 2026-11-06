@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minerdiamond12/1_50_thai_road` es un repositorio alojado en HuggingFace por el usuario `minerdiamond12`. En el momento de la consulta no dispone de model card con contenido tecnico: el unico texto presente es la declaracion `license: unknown`, sin descripcion, sin ejemplos de uso y sin referencias a paper, dataset o repositorio de codigo. Tampoco se han publicado etiquetas de pipeline, idiomas ni arquitectura mas alla de las etiquetas genericas `region:us`.
+`minerdiamond12/1_50_thai_road` es un repositorio alojado en Hugging Face por el usuario `minerdiamond12`. En el momento de la consulta no dispone de model card con contenido tecnico: el unico texto presente es la declaracion `license: unknown`, sin descripcion, sin ejemplos de uso y sin referencias a paper, dataset o repositorio de codigo. Tampoco se han publicado etiquetas de pipeline, idiomas ni arquitectura mas alla de las etiquetas genericas `region:us`.
 
 El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-09-12T09:40:18Z), lo que apunta a una publicacion unica sin mantenimiento posterior ni validacion por parte de la comunidad. No existe evidencia que permita determinar si se trata de un modelo de lenguaje, un modelo de vision, un adaptador LoRA, un checkpoint de difusion o simplemente un artefacto auxiliar: el identificador `1_50_thai_road` es la unica pista nominal y no viene acompanado de documentacion que lo confirme.
 
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/minerdiamond12/1_50_thai_road
+- Repositorio en Hugging Face: https://huggingface.co/minerdiamond12/1_50_thai_road
 - Model card: no disponible (el README solo contiene la declaracion `license: unknown`)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

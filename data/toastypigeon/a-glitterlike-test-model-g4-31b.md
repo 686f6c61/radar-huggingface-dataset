@@ -71,7 +71,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| a-glitterlike-test-model-g4-31b | ~31B (base) + 202,8M (adaptador) | 8192 en entrenamiento | Sin benchmarks publicados | No disponible | Adaptador y pesos mergeados en HuggingFace |
+| a-glitterlike-test-model-g4-31b | ~31B (base) + 202,8M (adaptador) | 8192 en entrenamiento | Sin benchmarks publicados | No disponible | Adaptador y pesos mergeados en Hugging Face |
 | google/gemma-4-31b-it | No disponible | No disponible | No disponible | No disponible | Referenciado como modelo base (snapshot 842da379) |
 
 Cualquier comparacion con otros adaptadores de roleplay del mismo rango de tamano requeriria datos de evaluacion que no se han publicado para este modelo.
@@ -91,7 +91,7 @@ Cualquier comparacion con otros adaptadores de roleplay del mismo rango de taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToastyPigeon/a-glitterlike-test-model-g4-31b
+- Modelo en Hugging Face: https://huggingface.co/ToastyPigeon/a-glitterlike-test-model-g4-31b
 - Modelo base referenciado: https://huggingface.co/google/gemma-4-31b-it
 - Documentacion de PEFT: no disponible en la informacion proporcionada
 - Paper, blog o repositorio del autor: no disponible

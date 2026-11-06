@@ -1,7 +1,7 @@
 # nebulette/7k-image-similarity
 
 ## Resumen
-nebulette/7k-image-similarity es un modelo bidireccional de transformer con módulos de atención cruzada SnowLily/CrossAttention, desarrollado por el usuario de HuggingFace nebulette. Su función es predecir la similitud entre imágenes de gelbooru a partir de un thumbnail y una descripción textual incompleta. El modelo cuenta con 147.200.640 parámetros (aproximadamente 147 millones), un tamaño de repositorio de 0,6 GB y se distribuye bajo licencia Apache 2.0 en formato safetensors.
+nebulette/7k-image-similarity es un modelo bidireccional de transformer con módulos de atención cruzada SnowLily/CrossAttention, desarrollado por el usuario de Hugging Face nebulette. Su función es predecir la similitud entre imágenes de gelbooru a partir de un thumbnail y una descripción textual incompleta. El modelo cuenta con 147.200.640 parámetros (aproximadamente 147 millones), un tamaño de repositorio de 0,6 GB y se distribuye bajo licencia Apache 2.0 en formato safetensors.
 
 El modelo se entrenó con etiquetas booru largas, separadas por comas, enmascaradas y no enmascaradas, utilizando el token [CLS] en el cálculo de la pérdida. Los datos de origen provienen de 50.000 etiquetas booru comunes, para las que se descargaron imágenes de muestra; de todas ellas, 7.000 resultaron más frecuentes en el conjunto de datos. No se documenta la longitud de contexto, los idiomas soportados ni los tipos de cuantización.
 

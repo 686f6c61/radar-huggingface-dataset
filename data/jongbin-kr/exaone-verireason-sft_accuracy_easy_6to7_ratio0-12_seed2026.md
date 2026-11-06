@@ -102,7 +102,7 @@ No se dispone de datos comparativos de benchmarks entre este adaptador y alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_easy_6to7_ratio0.12_seed2026
+- Repositorio Hugging Face: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_easy_6to7_ratio0.12_seed2026
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Dataset citado en el entrenamiento (ConvFinQA): no se incluye enlace en la model card
 - Paper o blog del autor: no disponible

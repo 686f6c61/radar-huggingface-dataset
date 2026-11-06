@@ -90,7 +90,7 @@ La comparación relevante no es de calidad, sino de portabilidad: frente a los c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florianvoss/Qwen3-VL-2B-Instruct-GPTQ-a16w4
+- Modelo en Hugging Face: https://huggingface.co/florianvoss/Qwen3-VL-2B-Instruct-GPTQ-a16w4
 - Modelo base (GPTQ en safetensors): https://huggingface.co/simaai/Qwen3-VL-2B-Instruct-GPTQ-Safetensors
 - Revision concreta del modelo base referenciada: https://huggingface.co/simaai/Qwen3-VL-2B-Instruct-GPTQ-Safetensors/tree/3f7e0edb853cd39c32ca19d08cf0dce13d40b1f1
 - Coleccion Neat 0.6.0: https://huggingface.co/collections/florianvoss/neat-060

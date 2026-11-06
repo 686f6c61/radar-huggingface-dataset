@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act-ocbench-blue-cube-narrow` es una política de robótica basada en ACT (Action Chunking with Transformers) implementada con la librería LeRobot de HuggingFace. La desarrolla el usuario Autobrik y está entrenada para una tarea concreta de pick-and-place de un cubo azul en el entorno de simulación OCBench, que combina MuJoCo con un brazo UR5e y una pinza Robotiq 2F-85. El modelo consume tres cámaras RGB de 224x224 y propriocepción de 7 dimensiones, y produce deltas de articulaciones y de la pinza.
+`act-ocbench-blue-cube-narrow` es una política de robótica basada en ACT (Action Chunking with Transformers) implementada con la librería LeRobot de Hugging Face. La desarrolla el usuario Autobrik y está entrenada para una tarea concreta de pick-and-place de un cubo azul en el entorno de simulación OCBench, que combina MuJoCo con un brazo UR5e y una pinza Robotiq 2F-85. El modelo consume tres cámaras RGB de 224x224 y propriocepción de 7 dimensiones, y produce deltas de articulaciones y de la pinza.
 
 El interés de esta ficha no reside en un modelo de lenguaje, sino en un caso de estudio de política robótica de imitación con un conjunto de datos pequeño (217 episodios) y un proceso de selección de checkpoint no convencional: el autor eligió el paso 80.000 por éxito en la tarea (20/20 en semillas de diagnóstico) en lugar de por pérdida de validación, que habría seleccionado el paso 20.000, fallido (0/10). Además, el repositorio incluye checkpoints editados a nivel de pesos (plegado de un mapa de color rojo→azul en `conv1` y `bn1`) que demuestran transferencia de color sin reentrenamiento.
 
@@ -86,7 +86,7 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Autobrik/act-ocbench-blue-cube-narrow
+- Hugging Face: https://huggingface.co/Autobrik/act-ocbench-blue-cube-narrow
 - Dataset: https://huggingface.co/datasets/Autobrik/ocbench-blue-cube-narrow-delta
 - Repositorio de código y resultados: https://github.com/BrikHMP18/act-weight-editing (ver `TRIAL1_RESULTS.md`)
 - LeRobot: no disponible en la información proporcionada

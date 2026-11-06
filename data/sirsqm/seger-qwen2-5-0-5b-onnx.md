@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sirsqm/seger-qwen2.5-0.5b-onnx | 0,5B (aprox.) | no disponible | ONNX Int8 | no disponible | HuggingFace |
-| Qwen/Qwen2.5-0.5B | 0,5B | no disponible en la informacion | safetensors | no disponible en la informacion | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | no disponible en la informacion | safetensors | no disponible en la informacion | HuggingFace |
+| sirsqm/seger-qwen2.5-0.5b-onnx | 0,5B (aprox.) | no disponible | ONNX Int8 | no disponible | Hugging Face |
+| Qwen/Qwen2.5-0.5B | 0,5B | no disponible en la informacion | safetensors | no disponible en la informacion | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | no disponible en la informacion | safetensors | no disponible en la informacion | Hugging Face |
 
 La comparativa se limita a la familia Qwen 2.5, dado que la informacion proporcionada no incluye datos de rendimiento ni de licencia que permitan contrastar con otras alternativas como SmolLM2 o Llama 3.2. Los modelos de mayor tamano de la propia familia ofrecen mas capacidad a cambio de no poder ejecutarse en navegador con la misma facilidad.
 
@@ -85,7 +85,7 @@ La comparativa se limita a la familia Qwen 2.5, dado que la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sirsqm/seger-qwen2.5-0.5b-onnx
+- Modelo en Hugging Face: https://huggingface.co/sirsqm/seger-qwen2.5-0.5b-onnx
 - Modelo base del ajuste: https://huggingface.co/sirsqm/seger-qwen2.5-0.5b
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

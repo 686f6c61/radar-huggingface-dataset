@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Ilah/vieneu-v3-turbo-web",
+  "slug": "ilah-vieneu-v3-turbo-web",
+  "author": "Ilah",
+  "url": "https://huggingface.co/Ilah/vieneu-v3-turbo-web",
+  "created_at": "2026-11-06T11:49:17.000Z",
+  "updated_at": "2026-11-06T11:51:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "vieneu_v3",
+    "vieneu",
+    "voice-cloning",
+    "onnxruntime-web",
+    "text-to-speech",
+    "vi",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 699363918,
+  "storage_human": "699 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pnnbao-ump/VieNeu-TTS-v3-Turbo · Hugging Face",
+      "url": "https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VieNeu-TTS-v3-Turbo Tutorial: Fast Vietnamese TTS — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-vieneu-tts-v3-turbo-low-latency-vietnamese-voice-synthesis",
+      "snippet": "Master VieNeu-TTS-v3-Turbo for low-latency Vietnamese speech synthesis. Step-by-step guide to installation, API usage, and optimizing diacritic accuracy."
+    }
+  ]
+}

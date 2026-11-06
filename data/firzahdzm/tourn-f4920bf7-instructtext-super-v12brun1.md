@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `firzahdzm/tourn-f4920bf7-instructtext-super-v12brun1` es un checkpoint publicado en HuggingFace por el usuario firzahdzm, con 162.417.408 parametros almacenados en formato safetensors y un repositorio de 0,3 GB. La etiqueta de arquitectura declarada es `llama`, lo que apunta a un transformer decoder-only de la familia Llama, aunque no se especifica la version, el tokenizador ni la configuracion exacta de capas. El nombre sugiere un ajuste fino orientado a instrucciones ("instruct"), presumiblemente construido sobre un modelo base de ~160 millones de parametros, una escala tipicamente asociada a experimentos de destilacion, prototipado rapido o despliegue en entornos con recursos muy limitados.
+El modelo `firzahdzm/tourn-f4920bf7-instructtext-super-v12brun1` es un checkpoint publicado en Hugging Face por el usuario firzahdzm, con 162.417.408 parametros almacenados en formato safetensors y un repositorio de 0,3 GB. La etiqueta de arquitectura declarada es `llama`, lo que apunta a un transformer decoder-only de la familia Llama, aunque no se especifica la version, el tokenizador ni la configuracion exacta de capas. El nombre sugiere un ajuste fino orientado a instrucciones ("instruct"), presumiblemente construido sobre un modelo base de ~160 millones de parametros, una escala tipicamente asociada a experimentos de destilacion, prototipado rapido o despliegue en entornos con recursos muy limitados.
 
 La relevancia de este tipo de checkpoints es acotada pero real: los modelos de menos de 200 millones de parametros son utiles para pruebas de pipelines de inferencia, validacion de flujos de cuantizacion, experimentos academicos sobre destilacion y despliegues en CPU o dispositivos embebidos. Sin embargo, la ficha publica es extremadamente escasa: no declara licencia, no declara idiomas, no declara pipeline de inferencia y no incluye model card con datos de entrenamiento. Con 13 descargas y 0 likes, se trata de un artefacto practicamente sin validacion por parte de la comunidad.
 
-Es importante subrayar que la busqueda web realizada no ha devuelto ninguna informacion relacionada con este modelo: los resultados obtenidos corresponden a PokéRogue, un videojuego fan de Pokemon, y son completamente ajenos al objeto de esta ficha. Por tanto, todo lo que no figura en los metadatos de HuggingFace se marca explicitamente como "no disponible", sin inferencias sobre calidad, capacidades reales o rendimiento.
+Es importante subrayar que la busqueda web realizada no ha devuelto ninguna informacion relacionada con este modelo: los resultados obtenidos corresponden a PokéRogue, un videojuego fan de Pokemon, y son completamente ajenos al objeto de esta ficha. Por tanto, todo lo que no figura en los metadatos de Hugging Face se marca explicitamente como "no disponible", sin inferencias sobre calidad, capacidades reales o rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Es importante subrayar que la busqueda web realizada no ha devuelto ninguna info
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | No se publican variantes cuantizadas en el repositorio (no disponible). Al ser un modelo Llama-compatible, es tecnicamente convertible a 8 y 4 bits con herramientas estandar (llama.cpp, GPTQ, AWQ), pero dichas conversiones no estan verificadas por el autor |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no se declara licencia en la ficha de HuggingFace) |
+| Licencia | no disponible (no se declara licencia en la ficha de Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -53,7 +53,7 @@ Dado que no existe informacion verificada sobre el comportamiento del modelo, lo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye MMLU, HumanEval, GSM8K, HellaSwag ni ninguna otra metrica en la ficha de HuggingFace, y la busqueda web no ha devuelto ningun articulo, informe o evaluacion independiente asociada a este modelo. Tampoco existen resultados de terceros que puedan citarse.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye MMLU, HumanEval, GSM8K, HellaSwag ni ninguna otra metrica en la ficha de Hugging Face, y la busqueda web no ha devuelto ningun articulo, informe o evaluacion independiente asociada a este modelo. Tampoco existen resultados de terceros que puedan citarse.
 
 ## Requisitos de hardware
 
@@ -65,7 +65,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros (162
 - VRAM total en inferencia: a las cifras anteriores hay que sumar la cache KV, que depende de la longitud de contexto (no disponible) y del numero de capas y cabezas (no disponible). En configuraciones tipicas de contexto corto, el consumo total se mantiene por debajo de 1 GB en 16 bits.
 - GPU recomendadas: no hay recomendaciones publicadas. Cualquier GPU consumer moderna (por ejemplo, serie RTX 30/40, incluidas variantes de 6-8 GB) dispone de VRAM mas que suficiente; tambien es viable en iGPU con memoria compartida y en CPU.
 - Compatibilidad con GPU consumer: si, con margen amplio, incluso en las gamas mas bajas.
-- Opciones de despliegue: al ser un checkpoint safetensors de arquitectura tipo Llama, es compatible en principio con vLLM, HuggingFace Transformers, TGI y, tras conversion a GGUF, con llama.cpp y Ollama. Ninguna de estas integraciones esta verificada en la informacion disponible.
+- Opciones de despliegue: al ser un checkpoint safetensors de arquitectura tipo Llama, es compatible en principio con vLLM, Hugging Face Transformers, TGI y, tras conversion a GGUF, con llama.cpp y Ollama. Ninguna de estas integraciones esta verificada en la informacion disponible.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ La comparacion directa de rendimiento no es posible porque este checkpoint no pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/firzahdzm/tourn-f4920bf7-instructtext-super-v12brun1
+- Hugging Face: https://huggingface.co/firzahdzm/tourn-f4920bf7-instructtext-super-v12brun1
 - Paper, blog o repositorio del autor: no disponible
 - Demos o Spaces asociados: no disponible
 - Evaluaciones independientes: no disponible

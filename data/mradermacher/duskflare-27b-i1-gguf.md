@@ -23,7 +23,7 @@ La relevancia de este repositorio es práctica: permite ejecutar un modelo de ~2
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no contiene entrenamiento alguno: es el resultado de la cadena de conversión de mradermacher sobre el modelo base Retreatcost/Duskflare-27B. Los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que describe un pipeline de conversión desde pesos HuggingFace (safetensors) a GGUF seguido de cuantización por tensores. La model card no aporta información sobre la arquitectura del modelo base (no se especifica si es un transformer denso, MoE o híbrido), ni sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO.
+Este repositorio no contiene entrenamiento alguno: es el resultado de la cadena de conversión de mradermacher sobre el modelo base Retreatcost/Duskflare-27B. Los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que describe un pipeline de conversión desde pesos Hugging Face (safetensors) a GGUF seguido de cuantización por tensores. La model card no aporta información sobre la arquitectura del modelo base (no se especifica si es un transformer denso, MoE o híbrido), ni sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO.
 
 La innovación técnica concreta y documentada de este repositorio es el uso de cuantización ponderada por imatrix (método `i1`). El fichero imatrix (0,1 GB) se calcula a partir de estadísticas de activación recogidas al pasar un corpus de calibración por el modelo base, y se utiliza después para asignar un presupuesto de bits distinto a cada tensor según su contribución al error. Según la documentación del propio autor, los quants IQ suelen ofrecer mejor relación tamaño/calidad que los quants no-IQ de tamaño equivalente, y el fichero i1-Q4_K_S se señala explícitamente como el de mejor equilibrio entre tamaño, velocidad y calidad. El acceso a la infraestructura de cuantización (incluida la cesión de un supercomputador por parte de @nicoboss) se agradece en la propia model card.
 
@@ -33,7 +33,7 @@ La innovación técnica concreta y documentada de este repositorio es el uso de 
 - Escritura creativa: narrativa de ficcion, prosa larga y continuacion de textos, segun los tags `creative-writing` y `finetune`.
 - Conversacion multturno: el tag `conversational` y el uso de la libreria `trl` apuntan a un ajuste fino sobre datos de dialogo.
 - Contenido para adultos: el tag `nsfw` y el aviso `not-for-all-audiences` indican que el modelo ha sido ajustado o al menos no filtrado para este tipo de contenido.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - No hay evidencia en la informacion disponible de soporte de tool calling, function calling, razonamiento agente multi-paso, vision, audio ni modo de razonamiento explicito (thinking mode).
 - Capacidad multilingue: limitada al ingles segun el campo `language`.
 
@@ -62,7 +62,7 @@ La model card del repositorio no incluye cifras de MMLU, HumanEval, GSM8K ni de 
   - i1-Q4_K_S: ~16-19 GB.
 - GPU recomendadas: RTX 3090, RTX 4090, RTX 5090, RTX A6000, L40S y A100 para los quants mas grandes; para Q2_K tambien son viables GPUs de 16 GB con contexto reducido.
 - Cabe en GPU de consumo: si. Los tres quants publicados caben en tarjetas de 24 GB (RTX 3090, 4090, 5090) y los dos mas pequenos pueden ejecutarse en GPUs de 16 GB ajustando el contexto. En GPUs de 8-12 GB es necesario descargar capas a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y Jan para el formato GGUF; vLLM admite GGUF de forma experimental. TGI no soporta GGUF, por lo que requeriria convertir a safetensors o servir el modelo base. El tag `endpoints_compatible` sugiere compatibilidad con los Inference Endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y Jan para el formato GGUF; vLLM admite GGUF de forma experimental. TGI no soporta GGUF, por lo que requeriria convertir a safetensors o servir el modelo base. El tag `endpoints_compatible` sugiere compatibilidad con los Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este repositorio, y dependen del quant elegido, del ancho de banda de memoria de la GPU y de la longitud de contexto configurada.
 
 ## Comparativa con modelos similares

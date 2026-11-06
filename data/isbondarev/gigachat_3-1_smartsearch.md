@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `isbondarev/gigachat_3.1_smartsearch` es un modelo de lenguaje generativo de la familia GigaChat 3.1, subido al Hub de HuggingFace por el usuario isbondarev. Con un total de 10.672.534.016 parámetros (aproximadamente 10,7 mil millones), se enmarca dentro de los modelos compactos de GigaChat 3.1, que según la documentación del modelo hermano `isbondarev/GigaChat3.1-10B-A1.8B-bf16` son de tipo Mixture-of-Experts (MoE) con 1,8 mil millones de parámetros activos. La etiqueta `deepseek_v3` sugiere que su arquitectura está inspirada en DeepSeek-V3, aunque no se confirma oficialmente.
+El modelo `isbondarev/gigachat_3.1_smartsearch` es un modelo de lenguaje generativo de la familia GigaChat 3.1, subido al Hub de Hugging Face por el usuario isbondarev. Con un total de 10.672.534.016 parámetros (aproximadamente 10,7 mil millones), se enmarca dentro de los modelos compactos de GigaChat 3.1, que según la documentación del modelo hermano `isbondarev/GigaChat3.1-10B-A1.8B-bf16` son de tipo Mixture-of-Experts (MoE) con 1,8 mil millones de parámetros activos. La etiqueta `deepseek_v3` sugiere que su arquitectura está inspirada en DeepSeek-V3, aunque no se confirma oficialmente.
 
 El modelo está diseñado para tareas de generación de texto, conversación y razonamiento, y se presenta como una opción para aplicaciones multilingües, con especial orientación al ruso, ya que GigaChat es un desarrollo de Sberbank. Sin embargo, la model card es genérica y no aporta detalles sobre entrenamiento, licencia o idiomas soportados. Su relevancia radica en ser un modelo abierto de tamaño medio que puede desplegarse en hardware de consumo, aunque la falta de documentación limita su adopción en producción sin una evaluación previa.
 
@@ -51,16 +51,16 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - VRAM estimada para inferencia en bf16: aproximadamente 21,4 GB (según el tamaño del repo, que incluye los pesos en safetensors). Para cuantización de 4 bits, se estima unos 5-6 GB.
 - GPU recomendadas: RTX 4090 (24 GB), A100 (40-80 GB) o H100 para despliegue en bf16. Para cuantización ligera, puede caber en GPUs de 8-12 GB como RTX 3080 o RTX 4070.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Transformers con la librería de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Transformers con la librería de Hugging Face.
 - Latencia y throughput estimados: no disponibles sin pruebas específicas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| isbondarev/gigachat_3.1_smartsearch | 10,7B totales, activos no confirmados | no disp. | no disp. | no disp. | HuggingFace |
-| isbondarev/GigaChat3.1-10B-A1.8B-bf16 | 10B totales, 1,8B activos | no disp. | no disp. | no disp. | HuggingFace |
-| ai-sage/GigaChat-20B-A3B-instruct | 20B totales, 3B activos | no disp. | no disp. | no disp. | HuggingFace |
+| isbondarev/gigachat_3.1_smartsearch | 10,7B totales, activos no confirmados | no disp. | no disp. | no disp. | Hugging Face |
+| isbondarev/GigaChat3.1-10B-A1.8B-bf16 | 10B totales, 1,8B activos | no disp. | no disp. | no disp. | Hugging Face |
+| ai-sage/GigaChat-20B-A3B-instruct | 20B totales, 3B activos | no disp. | no disp. | no disp. | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento ni de licencias. La comparativa se limita a la familia GigaChat, pero no hay información que permita una comparación técnica sólida.
 
@@ -75,13 +75,13 @@ No se dispone de datos comparativos de rendimiento ni de licencias. La comparati
 
 ## Enlaces
 
-- Modelo en HuggingFace: [isbondarev/gigachat_3.1_smartsearch](https://huggingface.co/isbondarev/gigachat_3.1_smartsearch)
+- Modelo en Hugging Face: [isbondarev/gigachat_3.1_smartsearch](https://huggingface.co/isbondarev/gigachat_3.1_smartsearch)
 - Modelo hermano (posible referencia): [isbondarev/GigaChat3.1-10B-A1.8B-bf16](https://huggingface.co/isbondarev/GigaChat3.1-10B-A1.8B-bf16)
 - Página de Wikipedia sobre GigaChat: [https://en.wikipedia.org/wiki/GigaChat](https://en.wikipedia.org/wiki/GigaChat)
 - Paper de la familia GigaChat: [https://arxiv.org/pdf/2506.09440](https://arxiv.org/pdf/2506.09440)
 - Modelo GigaChat-20B-A3B-instruct: [https://huggingface.co/ai-sage/GigaChat-20B-A3B-instruct](https://huggingface.co/ai-sage/GigaChat-20B-A3B-instruct)</think>## Resumen
 
-El modelo `isbondarev/gigachat_3.1_smartsearch` es un modelo de lenguaje generativo de la familia GigaChat 3.1, subido al Hub de HuggingFace por un usuario particular. Con un total de 10.672.534.016 parámetros (aproximadamente 10,67 mil millones), se enmarca en la categoría de modelos compactos de esta familia, que según el modelo hermano `isbondarev/GigaChat3.1-10B-A1.8B-bf16` presentan una arquitectura Mixture-of-Experts (MoE) con 1,8 mil millones de parámetros activos. La etiqueta `deepseek_v3` sugiere que su arquitectura está inspirada en DeepSeek-V3, aunque no se confirma oficialmente.
+El modelo `isbondarev/gigachat_3.1_smartsearch` es un modelo de lenguaje generativo de la familia GigaChat 3.1, subido al Hub de Hugging Face por un usuario particular. Con un total de 10.672.534.016 parámetros (aproximadamente 10,67 mil millones), se enmarca en la categoría de modelos compactos de esta familia, que según el modelo hermano `isbondarev/GigaChat3.1-10B-A1.8B-bf16` presentan una arquitectura Mixture-of-Experts (MoE) con 1,8 mil millones de parámetros activos. La etiqueta `deepseek_v3` sugiere que su arquitectura está inspirada en DeepSeek-V3, aunque no se confirma oficialmente.
 
 El modelo está orientado a tareas de generación de texto, conversación, razonamiento y posiblemente código, dentro de un enfoque multilingüe con énfasis en ruso, dado el origen de GigaChat en Sberbank. La model card es extremadamente escueta y no aporta información sobre entrenamiento, licencia, idiomas ni contexto. Su relevancia actual radica en ser un modelo abierto de tamaño medio que podría desplegarse en hardware de consumo, aunque la ausencia de documentación y de validación independiente limita su adopción en entornos productivos.
 

@@ -77,9 +77,9 @@ Latencia de un evento de decision (10 preguntas, un clip de 4,5 s, `duplexjev` 0
 
 | Modelo | LLM base | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuplexJev-B-MOSS-Transcribe-SmolLM3-3B | SmolLM3-3B | 3420 M (conector 37,8 M) | No disponible | Apache-2.0 (conector) | HuggingFace, 0 descargas al publicar |
-| DuplexJev-B-MOSS-Transcribe-Qwen3-4B-2507 | Qwen3-4B-2507 | No disponible | No disponible | No disponible | HuggingFace |
-| DuplexJev-B-Para-MOSS-Transcribe-Falcon-H1-1.5B | Falcon-H1-1.5B | No disponible | No disponible | No disponible | HuggingFace |
+| DuplexJev-B-MOSS-Transcribe-SmolLM3-3B | SmolLM3-3B | 3420 M (conector 37,8 M) | No disponible | Apache-2.0 (conector) | Hugging Face, 0 descargas al publicar |
+| DuplexJev-B-MOSS-Transcribe-Qwen3-4B-2507 | Qwen3-4B-2507 | No disponible | No disponible | No disponible | Hugging Face |
+| DuplexJev-B-Para-MOSS-Transcribe-Falcon-H1-1.5B | Falcon-H1-1.5B | No disponible | No disponible | No disponible | Hugging Face |
 | Gemini 3.5 Transcribe (propietario, Google) | Gemini | No disponible | No disponible | Propietaria | API de Google AI |
 
 Los tres modelos DuplexJev comparten el diseno de conector B sobre el encoder MOSS-Transcribe y se diferencian en el LLM congelado y en el sufijo "Para" (variante con entrenamiento paralinguistico). Gemini 3.5 Transcribe es un modelo de transcripcion propietario y no resuelve decisiones tipadas, por lo que la comparacion es solo contextual. No se dispone de datos de parametros, contexto ni licencia de las otras variantes DuplexJev en la informacion consultada.
@@ -98,7 +98,7 @@ Los tres modelos DuplexJev comparten el diseno de conector B sobre el encoder MO
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-SmolLM3-3B
+- Modelo en Hugging Face: https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-SmolLM3-3B
 - Encoder empaquetado: https://huggingface.co/adventists-ai/MOSS-Transcribe-Diarize-Whisper-Encoder
 - LLM base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Encoder original: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize

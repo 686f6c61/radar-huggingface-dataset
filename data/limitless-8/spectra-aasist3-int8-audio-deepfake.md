@@ -84,8 +84,8 @@ No se dispone de datos comparativos directos con otros modelos de detección de 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo INT8: https://huggingface.co/Limitless-8/spectra-aasist3-int8-audio-deepfake
-- Modelo base en HuggingFace: https://huggingface.co/lab260/Spectra-AASIST3
+- Repositorio Hugging Face del modelo INT8: https://huggingface.co/Limitless-8/spectra-aasist3-int8-audio-deepfake
+- Modelo base en Hugging Face: https://huggingface.co/lab260/Spectra-AASIST3
 - Model card del base: https://huggingface.co/lab260/Spectra-AASIST3/blob/main/README.md
 - Proyecto de fin de grado (GitHub): https://github.com/munz-aftab/audio-deepfake-detection-fyp
 - Documentación de evaluación del FYP: https://github.com/munz-aftab/audio-deepfake-detection-fyp/blob/feat/spectra-aasist3-eval/docs/spectra_aasist3_evaluation.md

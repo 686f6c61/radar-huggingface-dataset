@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ritiksuman/rudra` es un repositorio de modelo publicado en HuggingFace por el usuario `ritiksuman`. La informacion disponible se limita a los metadatos del repositorio: identificador, licencia MIT, la etiqueta de region `us` y contadores de descargas y likes a cero. La model card no contiene mas contenido que la declaracion de licencia (`license: mit`), por lo que no se documentan arquitectura, tamano, contexto, datos de entrenamiento ni capacidades.
+`ritiksuman/rudra` es un repositorio de modelo publicado en Hugging Face por el usuario `ritiksuman`. La informacion disponible se limita a los metadatos del repositorio: identificador, licencia MIT, la etiqueta de region `us` y contadores de descargas y likes a cero. La model card no contiene mas contenido que la declaracion de licencia (`license: mit`), por lo que no se documentan arquitectura, tamano, contexto, datos de entrenamiento ni capacidades.
 
 No se ha publicado informacion sobre el pipeline asociado, los idiomas soportados, los formatos de pesos ni los parametros del modelo. El repositorio se creo y se actualizo en el mismo instante (9 de octubre de 2026, 19:58:56 UTC), lo que sugiere una publicacion unica sin iteraciones posteriores y sin mantenimiento visible.
 
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: identificador `ritiksuman/rudra`, autor `riti
 
 No disponible. La model card no describe la arquitectura (transformer, MoE, SSM, hibrida u otra), ni el numero de parametros, ni la longitud de contexto, ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, etc.).
 
-El unico indicio estructural es la etiqueta `region:us` incluida por el autor, que en HuggingFace se emplea habitualmente para marcar modelos con restricciones o consideraciones de region, aunque su significado exacto en este repositorio no se explica en la documentacion.
+El unico indicio estructural es la etiqueta `region:us` incluida por el autor, que en Hugging Face se emplea habitualmente para marcar modelos con restricciones o consideraciones de region, aunque su significado exacto en este repositorio no se explica en la documentacion.
 
 ## Capacidades
 
@@ -86,7 +86,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ritiksuman/rudra
+- Repositorio en Hugging Face: https://huggingface.co/ritiksuman/rudra
 - Perfil del autor: https://huggingface.co/ritiksuman
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos.

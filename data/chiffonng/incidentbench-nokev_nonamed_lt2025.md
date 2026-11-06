@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-nokev_nonamed_lt2025 | 7B (base) + LoRA r=16 | no disponible | Adaptador LoRA especializado | other | HuggingFace (10 descargas) |
-| Qwen2.5-7B-Instruct | 7B | no disponible en la informacion | Modelo base instruct | no disponible en la informacion | HuggingFace |
+| incidentbench-nokev_nonamed_lt2025 | 7B (base) + LoRA r=16 | no disponible | Adaptador LoRA especializado | other | Hugging Face (10 descargas) |
+| Qwen2.5-7B-Instruct | 7B | no disponible en la informacion | Modelo base instruct | no disponible en la informacion | Hugging Face |
 | Otras variantes de IncidentBench del mismo autor | 7B (base) + LoRA | no disponible | Adaptadores de ablación | other | no disponible en la informacion |
 
 No se dispone de información sobre modelos comparables de la misma categoría (clasificadores de incidentes de seguridad basados en LLM) en la información proporcionada.
@@ -87,6 +87,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_lt2025
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_lt2025
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos del proyecto IncidentBench.

@@ -81,7 +81,7 @@ La principal diferencia frente a los repositorios originales es el formato ONNX 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nrl-ai/anylearning-labeling-models
+- Repositorio en Hugging Face: https://huggingface.co/nrl-ai/anylearning-labeling-models
 - Sitio web de AnyLearning: https://anylearning.nrl.ai/
 - Repositorio de AnyLearning (GitHub): https://github.com/nrl-ai/anylearning-oss
 - Sitio web de AnyLabeling (herramienta relacionada): https://anylabeling.nrl.ai/

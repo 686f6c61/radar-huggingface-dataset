@@ -98,7 +98,7 @@ No hay datos de modelos de terceros comparables en la información proporcionada
 
 ## Enlaces
 
-- Repositorio HuggingFace (objeto de esta ficha): https://huggingface.co/dopaemon/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF
+- Repositorio Hugging Face (objeto de esta ficha): https://huggingface.co/dopaemon/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF
 - Réplica en la cuenta zerodigest: https://huggingface.co/zerodigest/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF
 - Fichero concreto del preset M: https://huggingface.co/zerodigest/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF/blob/main/Ornith-1.5-35B-Uncensored-YMQ-M.gguf
 - Modelo base: https://huggingface.co/0xKitkat/Ornith-1.5-35B-A3B-Uncensored

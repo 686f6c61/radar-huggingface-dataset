@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pMistral-7B-Instruct-v0.2 es un modelo de generacion de texto publicado por el usuario thetoprated76 en HuggingFace, que se presenta como una version ajustada por instrucciones (instruction-tuned) derivada de Mistral-7B. El repositorio pesa 29,5 GB y contiene pesos en formato safetensors compatibles con la libreria transformers, con 7.241.732.096 parametros reales contabilizados en dichos ficheros. La model card asociada reproduce literalmente la tarjeta oficial de mistralai/Mistral-7B-Instruct-v0.2, incluida la referencia a la version posterior v0.3, el aviso de acceso condicionado (gated) y los fragmentos de codigo para `mistral_common` y `mistral_inference`; no aporta informacion especifica sobre el proceso de ajuste realizado por el autor.
+pMistral-7B-Instruct-v0.2 es un modelo de generacion de texto publicado por el usuario thetoprated76 en Hugging Face, que se presenta como una version ajustada por instrucciones (instruction-tuned) derivada de Mistral-7B. El repositorio pesa 29,5 GB y contiene pesos en formato safetensors compatibles con la libreria transformers, con 7.241.732.096 parametros reales contabilizados en dichos ficheros. La model card asociada reproduce literalmente la tarjeta oficial de mistralai/Mistral-7B-Instruct-v0.2, incluida la referencia a la version posterior v0.3, el aviso de acceso condicionado (gated) y los fragmentos de codigo para `mistral_common` y `mistral_inference`; no aporta informacion especifica sobre el proceso de ajuste realizado por el autor.
 
 El modelo base sobre el que se apoya es un transformer decoder-only de Mistral AI, descrito en el paper arXiv:2310.06825, con 32.768 tokens de ventana de contexto, rope-theta de 1e6 y sin sliding-window attention, cambios introducidos en Mistral-7B-v0.2 respecto a v0.1. Ese contexto de 32k, junto con una licencia Apache-2.0 sin restricciones de uso comercial, lo situan en la categoria de modelos de 7B desplegables en una sola GPU, un segmento muy competido para inferencia local, prototipado rapido y tareas conversacionales o de generacion de codigo.
 
@@ -92,7 +92,7 @@ Los datos de esta tabla corresponden a la documentacion publica de cada modelo a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thetoprated76/pMistral-7B-Instruct-v0.2
+- Repositorio en Hugging Face: https://huggingface.co/thetoprated76/pMistral-7B-Instruct-v0.2
 - Modelo base oficial: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Version posterior citada en la model card: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Paper de Mistral 7B: https://arxiv.org/abs/2310.06825

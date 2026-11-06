@@ -2,11 +2,11 @@
 
 ## Resumen
 
-beans-classifier-lab es un modelo de clasificacion de imagenes publicado por el usuario MrParop en HuggingFace. Se trata de un ajuste fino (fine-tuning) del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo ViT-Base con parches de 16x16 y resolucion de entrada de 224x224 pixeles. El modelo tiene 85.800.194 parametros (aproximadamente 86 millones) y se distribuye en formato safetensors bajo licencia Apache 2.0.
+beans-classifier-lab es un modelo de clasificacion de imagenes publicado por el usuario MrParop en Hugging Face. Se trata de un ajuste fino (fine-tuning) del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo ViT-Base con parches de 16x16 y resolucion de entrada de 224x224 pixeles. El modelo tiene 85.800.194 parametros (aproximadamente 86 millones) y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
 El modelo resuelve la tarea de clasificacion de imagenes, y su nombre sugiere que fue entrenado para clasificar imagenes del conocido conjunto de datos "beans" (enfermedades de la hoja del frijol), aunque la model card indica explicitamente que el conjunto de datos de entrenamiento es "unknown dataset" y no documenta las clases ni la procedencia de los datos. No se trata de un modelo generativo ni de un modelo de lenguaje: su unica salida es una prediccion de clase sobre una imagen de entrada.
 
-Es relevante como ejemplo de pipeline de fine-tuning reproducible con el Trainer de HuggingFace sobre una arquitectura ViT estandar. Su utilidad practica esta limitada por la falta de documentacion: se desconocen las clases reales, el dataset y las condiciones de evaluacion, por lo que debe tratarse como un experimento de laboratorio mas que como un modelo listo para produccion.
+Es relevante como ejemplo de pipeline de fine-tuning reproducible con el Trainer de Hugging Face sobre una arquitectura ViT estandar. Su utilidad practica esta limitada por la falta de documentacion: se desconocen las clases reales, el dataset y las condiciones de evaluacion, por lo que debe tratarse como un experimento de laboratorio mas que como un modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Es relevante como ejemplo de pipeline de fine-tuning reproducible con el Trainer
 
 La arquitectura es un Vision Transformer estandar (ViT-Base). El modelo divide la imagen de entrada de 224x224 pixeles en parches de 16x16, los proyecta como embeddings y los procesa mediante bloques de atencion multi-cabeza, terminando en una cabeza de clasificacion. El checkpoint base, google/vit-base-patch16-224-in21k, fue preentrenado por Google sobre ImageNet-21k (14 millones de imagenes y 21.843 clases), y este modelo lo ajusta sobre un dataset no especificado.
 
-El entrenamiento se realizo con el Trainer de HuggingFace durante 3 epocas, con learning rate 5e-05, batch de entrenamiento 16, acumulacion de gradientes de 4 pasos (batch efectivo de 64), optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, scheduler lineal y semilla 42. Las versiones de framework declaradas son Transformers 5.18.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2. No se documenta composicion del dataset, numero de tokens/imagenes, ni si hubo RLHF, DPO u otra tecnica de alineacion. No se declara ninguna innovacion tecnica adicional (ni decodificacion especulativa, ni atencion lineal).
+El entrenamiento se realizo con el Trainer de Hugging Face durante 3 epocas, con learning rate 5e-05, batch de entrenamiento 16, acumulacion de gradientes de 4 pasos (batch efectivo de 64), optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, scheduler lineal y semilla 42. Las versiones de framework declaradas son Transformers 5.18.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2. No se documenta composicion del dataset, numero de tokens/imagenes, ni si hubo RLHF, DPO u otra tecnica de alineacion. No se declara ninguna innovacion tecnica adicional (ni decodificacion especulativa, ni atencion lineal).
 
 Los resultados de validacion por epoca declarados por el autor fueron los siguientes: epoca 1 (paso 125) con perdida 0.0266 y exactitud 0.996; epoca 2 (paso 250) con perdida 0.0242 y exactitud 0.9955; epoca 3 (paso 375) con perdida 0.0204 y exactitud 0.9965.
 
@@ -33,7 +33,7 @@ Los resultados de validacion por epoca declarados por el autor fueron los siguie
 
 - Clasificacion de imagenes: genera una etiqueta de clase (o distribucion de probabilidad sobre clases) a partir de una imagen RGB de 224x224 pixeles.
 - Inferencia mediante la pipeline `image-classification` de Transformers.
-- Compatible con los endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con los endpoints de Hugging Face (tag `endpoints_compatible`).
 - No hay evidencia de soporte de tool calling, function calling ni uso como agente.
 - No dispone de capacidades de generacion de texto, razonamiento, codigo ni matematicas.
 - No dispone de capacidades multilingues (modelo puramente visual).
@@ -47,7 +47,7 @@ Los casos siguientes son aplicaciones plausibles dado que es un clasificador de 
 - Filtrado y triaje automatico de imagenes: integrar el modelo en un pipeline que etiquete grandes volumenes de imagenes y derive las que requieren revision humana, aprovechando su bajo coste computacional.
 - Prototipo de control de calidad visual en linea de produccion: clasificar piezas u objetos a partir de capturas con una camara fija, sustituyendo el checkpoint final por un reajuste sobre imagenes propias.
 - Base de transferencia para nuevas tareas de vision: usar el modelo como punto de partida (fine-tuning adicional) en dominios con pocos datos, dado que ya parte de un preentrenamiento sobre ImageNet-21k.
-- Docencia y experimentacion reproducible: servir de ejemplo de pipeline completo de fine-tuning con el Trainer de HuggingFace, con hiperparametros y curvas de entrenamiento documentadas.
+- Docencia y experimentacion reproducible: servir de ejemplo de pipeline completo de fine-tuning con el Trainer de Hugging Face, con hiperparametros y curvas de entrenamiento documentadas.
 - Preprocesado en sistemas de monitorizacion ambiental o agricola: clasificar capturas de sensores o drones como etapa previa a un analisis mas costoso (por ejemplo, un modelo de segmentacion o un VLM).
 - Benchmark interno de infraestructura de inferencia: por su tamano reducido (86 M de parametros), es util para medir latencia y throughput de un stack de despliegue (ONNX Runtime, Triton, TorchServe) antes de escalar a modelos mayores.
 
@@ -101,6 +101,6 @@ No se dispone de alternativas comparables con datos verificables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrParop/beans-classifier-lab
+- Modelo en Hugging Face: https://huggingface.co/MrParop/beans-classifier-lab
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

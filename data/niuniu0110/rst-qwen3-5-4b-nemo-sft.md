@@ -61,16 +61,16 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada: los pesos en bfloat16 ocupan 8.7 GB, por lo que la inferencia en precisión completa requiere al menos 9-10 GB de VRAM, más el overhead del modelo y los caches. En la práctica, se recomienda una GPU con 16 GB o más.
 - GPU recomendadas: RTX 4090 (24 GB), A100 (40 GB), H100 (80 GB) o superiores. En GPUs con menos de 12 GB, la inferencia en bfloat16 no es viable sin cuantización, y no se proporcionan pesos cuantizados.
 - Cabe en consumer GPU: sí, en GPUs de gama alta con 16-24 GB (por ejemplo, RTX 4080/4090), siempre que no se usen contextos muy largos.
-- Opciones de despliegue: `transformers` con `AutoModelForImageTextToText` y `AutoProcessor`; también es compatible con HuggingFace Inference Endpoints (tag `endpoints_compatible`). No se mencionan opciones como vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: `transformers` con `AutoModelForImageTextToText` y `AutoProcessor`; también es compatible con Hugging Face Inference Endpoints (tag `endpoints_compatible`). No se mencionan opciones como vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rst-qwen3.5-4b-nemo-sft | ~4.66B | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | ~4.66B | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B-Instruct | ~4.66B | no disponible | Apache-2.0 | HuggingFace |
+| rst-qwen3.5-4b-nemo-sft | ~4.66B | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | ~4.66B | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B-Instruct | ~4.66B | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de benchmarks comparativos. El modelo base es la referencia natural, sin el fine-tuning específico para terminal. Otras alternativas de la misma categoría (agentes terminales) no están documentadas en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de benchmarks comparativos. El modelo base es la referencia natura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NiuNiu0110/rst-qwen3.5-4b-nemo-sft
+- Modelo en Hugging Face: https://huggingface.co/NiuNiu0110/rst-qwen3.5-4b-nemo-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/NiuNiu0110/Nemotron-Terminal-SFT-terminus
 - Repositorio del pipeline RST-Train: https://github.com/k1ssloo/RST-Train

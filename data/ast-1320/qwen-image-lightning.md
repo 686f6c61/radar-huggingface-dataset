@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Requisitos de hardware
 
-- El adaptador LoRA en si es ligero, pero requiere el modelo base Qwen-Image, que tiene un tamano considerable (el repositorio de HuggingFace ocupa 65.5 GB, probablemente incluyendo el modelo base o pesos completos). Se recomienda una GPU con al menos 16 GB de VRAM para inferencia en bfloat16.
+- El adaptador LoRA en si es ligero, pero requiere el modelo base Qwen-Image, que tiene un tamano considerable (el repositorio de Hugging Face ocupa 65.5 GB, probablemente incluyendo el modelo base o pesos completos). Se recomienda una GPU con al menos 16 GB de VRAM para inferencia en bfloat16.
 - GPUs recomendadas: NVIDIA RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) para mayor velocidad. En GPUs con menos VRAM, se puede usar cuantizacion FP8 o 4 bits (via Nunchaku) para reducir el uso de memoria.
 - El adaptador es compatible con consumer GPUs de gama alta (RTX 3090/4090) si se usa cuantizacion, pero la generacion a resolucion completa puede requerir optimizaciones adicionales.
 - Opciones de despliegue: diffusers (Python), ComfyUI (interfaz grafica), Nunchaku (inferencia 4 bits), y servidores de inferencia como vLLM (si se adapta a modelos de difusion, aunque no es el caso estandar).
@@ -77,8 +77,8 @@ La comparativa muestra que Qwen-Image-Lightning se posiciona como una solucion d
 
 ## Enlaces
 
-- Repositorio de HuggingFace (AST-1320): https://huggingface.co/AST-1320/Qwen-Image-Lightning
-- Repositorio oficial de HuggingFace (lightx2v): https://huggingface.co/lightx2v/Qwen-Image-Lightning
+- Repositorio de Hugging Face (AST-1320): https://huggingface.co/AST-1320/Qwen-Image-Lightning
+- Repositorio oficial de Hugging Face (lightx2v): https://huggingface.co/lightx2v/Qwen-Image-Lightning
 - Repositorio de GitHub (ModelTC): https://github.com/ModelTC/LightX2V-Qwen-Image-Lightning
 - Repositorio de GitHub (N-I-ckel, con noticias de versiones): https://github.com/N-I-ckel/qwen-image-lightning
 - Modelo base Qwen-Image: https://huggingface.co/Qwen/Qwen-Image

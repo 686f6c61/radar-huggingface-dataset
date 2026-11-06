@@ -81,11 +81,11 @@ Velocidad medida (factor de tiempo real, menor es más rápido):
 
 | Modelo | Parámetros | Idioma | CER (FLORES-200) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| **Indic Tiny TTS Odia** | 22,5 M (card) / 8,9 M (pesos) | Odia | 2,68 % | CC-BY-4.0 | HuggingFace, ONNX y safetensors |
+| **Indic Tiny TTS Odia** | 22,5 M (card) / 8,9 M (pesos) | Odia | 2,68 % | CC-BY-4.0 | Hugging Face, ONNX y safetensors |
 | AI4Bharat/Indic-TTS | 65,6 M | Odia | 2,35 % | No disponible en la información | GitHub (or.zip) |
-| ai4bharat/IndicF5 | 350,6 M | Indio (incluye odia) | 2,48 % | No disponible en la información | HuggingFace |
-| ai4bharat/indic-parler-tts | 937,8 M | Multilingüe indio | 3,66 % | No disponible en la información | HuggingFace |
-| facebook/mms-tts-ory | 29,1 M | Odia | 5,57 % | No disponible en la información | HuggingFace |
+| ai4bharat/IndicF5 | 350,6 M | Indio (incluye odia) | 2,48 % | No disponible en la información | Hugging Face |
+| ai4bharat/indic-parler-tts | 937,8 M | Multilingüe indio | 3,66 % | No disponible en la información | Hugging Face |
+| facebook/mms-tts-ory | 29,1 M | Odia | 5,57 % | No disponible en la información | Hugging Face |
 
 El modelo destaca por su relación calidad/tamaño: iguala o supera a alternativas mucho mayores en el conjunto retenido y es notablemente más rápido en CPU. Indic-TTS obtiene mejor CER en FLORES-200, pero con el triple de parámetros y sin las ventajas de velocidad y formato ONNX documentadas aquí.
 
@@ -102,7 +102,7 @@ El modelo destaca por su relación calidad/tamaño: iguala o supera a alternativ
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-odia)
+- [Modelo en Hugging Face](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-odia)
 - [Colección INDIC TINY TTS MODELS](https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d)
 - [Dataset indic-tts-mini-24k](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k)
 - [Dataset indic-tts-multilingual-prepared](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared)

@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparables entre estos modelos. Las difere
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JackHsieh/4B-base.4B-Instruct-reason-thoughts.stride-1.suffix-conditional
+- Hugging Face: https://huggingface.co/JackHsieh/4B-base.4B-Instruct-reason-thoughts.stride-1.suffix-conditional
 - Wandb run: https://wandb.ai/latent-thoughts/prestar/runs/oirrmz3g
 - Dataset de entrenamiento: https://huggingface.co/datasets/JackHsieh/statML-arxiv-40M-20M
 - Dataset de pensamientos: https://huggingface.co/datasets/JackHsieh/4B-Instruct-reason-only.stride-1.k-8.statml-arxiv.qwen3-ids.kv-tags-explained

@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/TheMelonGod/Captain-Eris_Violet-V0.420-12B-exl3
+- Modelo cuantizado en Hugging Face: https://huggingface.co/TheMelonGod/Captain-Eris_Violet-V0.420-12B-exl3
 - Modelo original: https://huggingface.co/Nitral-AI/Captain-Eris_Violet-V0.420-12B
 - Ficha en llm-explorer: https://llm-explorer.com/model/Nitral-AI%2FCaptain-Eris_Violet-V0.420-12B,666LshB3vCPL6pGULvcNpL
 - Ficha en AIBase: https://model.aibase.com/models/details/1915694014382366721

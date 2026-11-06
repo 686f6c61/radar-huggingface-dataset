@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nlpguy/Qwen3.8-27B-Fimi-5 es un modelo de lenguaje multimodal (image-text-to-text) derivado de la familia Qwen3.8-27B de Alibaba, desarrollado por el usuario nlpguy mediante fine-tuning con la librería Unsloth y el stack de entrenamiento TRL de HuggingFace. El modelo parte de la versión intermedia nlpguy/Qwen3.8-27B-Fimi-4, que a su vez se basa en el modelo original Qwen3.8-27B, un modelo denso de 27.000 millones de parámetros con arquitectura Qwen3.5.
+nlpguy/Qwen3.8-27B-Fimi-5 es un modelo de lenguaje multimodal (image-text-to-text) derivado de la familia Qwen3.8-27B de Alibaba, desarrollado por el usuario nlpguy mediante fine-tuning con la librería Unsloth y el stack de entrenamiento TRL de Hugging Face. El modelo parte de la versión intermedia nlpguy/Qwen3.8-27B-Fimi-4, que a su vez se basa en el modelo original Qwen3.8-27B, un modelo denso de 27.000 millones de parámetros con arquitectura Qwen3.5.
 
 El modelo está diseñado para tareas de razonamiento multimodal, generación de código, flujos de trabajo agénticos y automatización de ofimática. Su relevancia actual radica en que ofrece rendimiento de nivel superior para hardware local, con licencia Apache-2.0 que permite uso comercial sin restricciones, y una longitud de contexto amplia que facilita tareas de razonamiento de varios pasos. El fine-tuning con Unsloth reduce el coste de entrenamiento y mejora la eficiencia de inferencia.
 

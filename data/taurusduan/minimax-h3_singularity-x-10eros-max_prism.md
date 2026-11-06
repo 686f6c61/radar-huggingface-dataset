@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Minimax-h3_Singularity-x-10Eros-Max_PRISM es un modelo resultante de la fusión (merge) de dos finetunes derivados de Minimax-H3 en su variante Ref2VA, publicados por el usuario taurusduan en HuggingFace. Los modelos de origen son `WarmBloodAban/Minimax-h3_Singularity` en formato bf16 y `TenStrip/10Eros-Max`, este último un finetune "8-step turbo" en formato safetensors. La fusión se ha realizado con un algoritmo propio denominado PRISM, que el autor describe como una alternativa a mergekit basada en descomposición espectral, interpolación geodésica polar y mediación de conflictos de signo.
+Minimax-h3_Singularity-x-10Eros-Max_PRISM es un modelo resultante de la fusión (merge) de dos finetunes derivados de Minimax-H3 en su variante Ref2VA, publicados por el usuario taurusduan en Hugging Face. Los modelos de origen son `WarmBloodAban/Minimax-h3_Singularity` en formato bf16 y `TenStrip/10Eros-Max`, este último un finetune "8-step turbo" en formato safetensors. La fusión se ha realizado con un algoritmo propio denominado PRISM, que el autor describe como una alternativa a mergekit basada en descomposición espectral, interpolación geodésica polar y mediación de conflictos de signo.
 
 El modelo se distribuye en un único archivo de pesos en fp16 (`Minimax-h3_Singularity_x_10Eros-Max_PRISM_b_fp16.safetensors`) y el repositorio ocupa 274,7 GB, lo que sitúa al modelo en la categoría de pesos de gran tamaño, coherente con la familia Minimax-H3. La model card incluye referencias a variantes adicionales (versiones int8, mezclas con PikaFlex a distintas intensidades y una variante PRISM2), lo que sugiere un flujo de trabajo iterativo de experimentación con merges.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Minimax-h3_Singularity-x-10Eros-Max_PRISM | no disponible | no disponible | other | HuggingFace (0 descargas) | Merge PRISM de dos finetunes Ref2VA |
-| WarmBloodAban/Minimax-h3_Singularity | no disponible | no disponible | no disponible | HuggingFace | Modelo base A, bf16 |
-| TenStrip/10Eros-Max | no disponible | no disponible | no disponible | HuggingFace | Modelo base B, 8-step turbo |
+| Minimax-h3_Singularity-x-10Eros-Max_PRISM | no disponible | no disponible | other | Hugging Face (0 descargas) | Merge PRISM de dos finetunes Ref2VA |
+| WarmBloodAban/Minimax-h3_Singularity | no disponible | no disponible | no disponible | Hugging Face | Modelo base A, bf16 |
+| TenStrip/10Eros-Max | no disponible | no disponible | no disponible | Hugging Face | Modelo base B, 8-step turbo |
 | Mergekit (herramienta) | no aplica | no aplica | open source | GitHub | Alternativa estándar de merging citada por el autor |
 
 No se dispone de datos de benchmarks ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de parámetros para establecer una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taurusduan/Minimax-h3_Singularity-x-10Eros-Max_PRISM
+- Hugging Face: https://huggingface.co/taurusduan/Minimax-h3_Singularity-x-10Eros-Max_PRISM
 - Modelo base A: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
 - Modelo base B: https://huggingface.co/TenStrip/10Eros-Max
 - Espejo en CivitAI citado por el autor: https://civitai.red/models/3019421/singularity-v2-x-10eros-max

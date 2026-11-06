@@ -75,7 +75,7 @@ Los unicos resultados publicados en la informacion disponible son medidas de fer
 - Inferencia en CPU: un tokenizador SentencePiece es un componente ligero que se ejecuta en CPU con consumo de memoria del orden de decenas o pocos cientos de MB, dependiendo del vocabulario (de 60.149 a 282.826 piezas).
 - GPU: no requiere GPU. Cualquier GPU, incluida una integrada, es suficiente si se desea acelerar el preprocesado por lotes.
 - Cabe en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) y en equipos sin GPU dedicada, ya que no hay pesos neuronales que cargar.
-- Tamano del repositorio: 0,1 GB, segun los metadatos de HuggingFace.
+- Tamano del repositorio: 0,1 GB, segun los metadatos de Hugging Face.
 - Opciones de despliegue: carga directa con `transformers` (`AutoTokenizer.from_pretrained("mariklolik/AraToken", subfolder="...")`), uso nativo de SentencePiece y el pipeline de normalizacion del repositorio de GitHub. No aplican vLLM, llama.cpp, Ollama ni TGI, que sirven modelos generativos, no tokenizadores aislados.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
@@ -99,11 +99,11 @@ La ventaja de AraToken es la fertility mas baja de la comparativa; su limitacion
 - Cobertura limitada al arabe (codigo de idioma `ar`). El vocabulario extendido parte de Qwen3 y conserva sus piezas originales, pero no hay datos publicados sobre el impacto de la extension en el rendimiento en otros idiomas.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion independiente de la comunidad mas alla del articulo.
 - Aunque la licencia del repositorio es Apache 2.0, la informacion no detalla las condiciones de los pesos ni del corpus FineWeb2 utilizado para entrenar; conviene revisar las licencias de las fuentes antes de un uso comercial en produccion.
-- La fecha de creacion registrada en HuggingFace (2026-09-23) es incoherente con el ano de publicacion del articulo (2025); conviene verificar la version real del repositorio antes de integrarlo.
+- La fecha de creacion registrada en Hugging Face (2026-09-23) es incoherente con el ano de publicacion del articulo (2025); conviene verificar la version real del repositorio antes de integrarlo.
 - Los tokenizadores extendidos elevan el vocabulario a mas de 280.000 piezas, lo que incrementa el tamano de la matriz de embeddings del modelo que los use y puede exigir ajustes de memoria.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/mariklolik/AraToken
+- Repositorio en Hugging Face: https://huggingface.co/mariklolik/AraToken
 - Articulo: https://arxiv.org/abs/2512.18399
 - Codigo: https://github.com/mariklolik/Aratoken
 - Dataset: https://huggingface.co/datasets/mariklolik/AraToken-FineWeb2-HQ-ar

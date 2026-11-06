@@ -93,7 +93,7 @@ La comparativa con Qwen2.5-0.5B y Gemma-2-2B es orientativa en cuanto a tamaño 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZTFlynn/LFM2-350M-Cascadia-ternary3
+- Hugging Face: https://huggingface.co/ZTFlynn/LFM2-350M-Cascadia-ternary3
 - Repositorio del runtime Cascadia: https://github.com/EntroMorphic/cassie
 - Paper técnico LFM2: https://arxiv.org/abs/2511.23404
 - Blog de Liquid AI sobre LFM2: https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models

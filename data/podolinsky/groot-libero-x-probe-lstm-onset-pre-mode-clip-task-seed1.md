@@ -79,10 +79,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Resultado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `groot-libero-x-probe-lstm-onset-pre-mode-clip-task-seed1` (este) | 6.622.227 | No disponible | Unseen 38,59 %; visto 70,36 %; validacion 66,48 % | CC BY 4.0 | HuggingFace |
-| `groot-libero-x-probe-lstm-onset-traj-mode-clip-task-seed1` | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| `groot-libero-x-probe-lstm-onset-post-mode` | No disponible | No disponible | No disponible (split seed 0, media sobre alfa 0,01–0,30) | Otra (etiquetada como "other") | HuggingFace |
-| `groot-libero-x-probe-lstm-onset-mha` | No disponible | No disponible | No disponible (split seed 0, media sobre alfa 0,01–0,30) | Otra (etiquetada como "other") | HuggingFace |
+| `groot-libero-x-probe-lstm-onset-pre-mode-clip-task-seed1` (este) | 6.622.227 | No disponible | Unseen 38,59 %; visto 70,36 %; validacion 66,48 % | CC BY 4.0 | Hugging Face |
+| `groot-libero-x-probe-lstm-onset-traj-mode-clip-task-seed1` | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| `groot-libero-x-probe-lstm-onset-post-mode` | No disponible | No disponible | No disponible (split seed 0, media sobre alfa 0,01–0,30) | Otra (etiquetada como "other") | Hugging Face |
+| `groot-libero-x-probe-lstm-onset-mha` | No disponible | No disponible | No disponible (split seed 0, media sobre alfa 0,01–0,30) | Otra (etiquetada como "other") | Hugging Face |
 
 Las alternativas comparables son las otras sondas del mismo autor sobre el mismo dataset, que difieren en la etiqueta (`onset_pre` frente a `onset_traj` y `onset_post`) y en la arquitectura de la cabeza (`mode`, `mha`). No se dispone de los resultados numéricos de esas variantes en la información consultada.
 
@@ -100,7 +100,7 @@ Las alternativas comparables son las otras sondas del mismo autor sobre el mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-task-seed1
+- Modelo en Hugging Face: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-task-seed1
 - Dataset de características: https://huggingface.co/datasets/podolinsky/gr00t-libero-x-features-v3
 - Código vla-probe: https://github.com/mpodolinsky/vla-probe
 - Variante con etiqueta `onset_traj`: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-task-seed1

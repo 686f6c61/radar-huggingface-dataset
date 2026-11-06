@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Formato | Parámetros | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Perhan35/prepdeck-sounds-like | Core ML (FP16) | No disponible (estimación ~50 M) | 10 s de audio, espectrograma `[1, 1, 1001, 64]` | Apache-2.0 | HuggingFace, 0 descargas |
-| laion/larger_clap_music (modelo base) | Pesos PyTorch (checkpoint original) | No disponible en la información proporcionada | Igual que el anterior, más la rama de texto | Apache-2.0 | HuggingFace, repositorio de LAION |
+| Perhan35/prepdeck-sounds-like | Core ML (FP16) | No disponible (estimación ~50 M) | 10 s de audio, espectrograma `[1, 1, 1001, 64]` | Apache-2.0 | Hugging Face, 0 descargas |
+| laion/larger_clap_music (modelo base) | Pesos PyTorch (checkpoint original) | No disponible en la información proporcionada | Igual que el anterior, más la rama de texto | Apache-2.0 | Hugging Face, repositorio de LAION |
 | Otras alternativas de embeddings de audio o de conversiones a Core ML | No disponible | No disponible | No disponible | No disponible | No se han encontrado en la información proporcionada |
 
 La diferencia funcional verificable entre esta publicación y su modelo base es el formato de distribución y la eliminación de la rama de texto: esta versión está optimizada para inferencia local en macOS, no para búsqueda texto-a-audio.
@@ -81,11 +81,11 @@ La diferencia funcional verificable entre esta publicación y su modelo base es 
 - Riesgo de alucinación: no aplica en el sentido habitual, pero sí existe riesgo de falsos positivos en similitud, ya que el espacio de embeddings no está calibrado para umbrales concretos en esta publicación.
 - Sesgos: no documentados. El modelo base se entrenó sobre música y puede representar peor géneros, culturas o idiomas poco presentes en su dataset original, aspecto que la model card no aborda.
 - Licencia Apache-2.0, que permite uso comercial, pero el usuario debe verificar las condiciones del modelo base de LAION y de cualquier dato con derechos asociado al audio procesado.
-- La fecha de creación del repositorio (2026-10-09) y de actualización (2026-10-09) resultan anómalas según los metadatos de HuggingFace; conviene comprobarlas antes de citar la ficha.
+- La fecha de creación del repositorio (2026-10-09) y de actualización (2026-10-09) resultan anómalas según los metadatos de Hugging Face; conviene comprobarlas antes de citar la ficha.
 - Ausencia total de tracción (0 descargas, 0 likes) y de documentación adicional: no hay garantía de mantenimiento ni de soporte por parte del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Perhan35/prepdeck-sounds-like
+- Modelo en Hugging Face: https://huggingface.co/Perhan35/prepdeck-sounds-like
 - Modelo base: https://huggingface.co/laion/larger_clap_music
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relacionados con esta publicación.

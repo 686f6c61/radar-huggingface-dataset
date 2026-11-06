@@ -6,7 +6,7 @@ Qwen3-Coder-Next es un modelo de lenguaje de código abierto desarrollado por el
 
 El modelo incorpora una arquitectura hibrida que combina atencion tradicional con Gated DeltaNet, una capa de atencion lineal, junto con 512 expertos de los cuales se activan 10 mas uno compartido. Con una ventana de contexto nativa de 262.144 tokens, esta pensado para tareas de codificacion de largo alcance, uso complejo de herramientas y recuperacion de errores en entornos dinamicos. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
-La version alojada en HuggingFace bajo el identificador `dudi2016b/Qwen3-Coder-Next` es un espejo del modelo original de Qwen, con los pesos en formato safetensors y un tamano de repositorio de 159,4 GB. El modelo se publico en febrero de 2026 y esta orientado a su integracion en entornos de desarrollo como Claude Code, Qwen Code, Qoder, Kilo, Trae o Cline.
+La version alojada en Hugging Face bajo el identificador `dudi2016b/Qwen3-Coder-Next` es un espejo del modelo original de Qwen, con los pesos en formato safetensors y un tamano de repositorio de 159,4 GB. El modelo se publico en febrero de 2026 y esta orientado a su integracion en entornos de desarrollo como Claude Code, Qwen Code, Qoder, Kilo, Trae o Cline.
 
 ## Especificaciones tecnicas
 
@@ -75,12 +75,12 @@ No se dispone de datos suficientes para una comparativa rigurosa con alternativa
 - La ventana de contexto de 256K tokens puede provocar problemas de memoria (OOM) en hardware limitado; se recomienda reducirla a 32.768 tokens en esos casos.
 - Los idiomas soportados no estan documentados en la informacion disponible, aunque por su origen es probable que tenga buen soporte de chino e ingles.
 - La licencia Apache 2.0 permite uso comercial sin restricciones, pero el modelo puede tener limitaciones legales derivadas de los datos de entrenamiento no divulgados.
-- El repositorio en HuggingFace bajo el usuario `dudi2016b` es un espejo no oficial; se recomienda verificar la autenticidad de los pesos antes de su uso en produccion.
+- El repositorio en Hugging Face bajo el usuario `dudi2016b` es un espejo no oficial; se recomienda verificar la autenticidad de los pesos antes de su uso en produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/dudi2016b/Qwen3-Coder-Next
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-Coder-Next
+- Repositorio Hugging Face (espejo): https://huggingface.co/dudi2016b/Qwen3-Coder-Next
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3-coder-next
 - Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/

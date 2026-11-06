@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Kevinmodelf/llama3-keml-cdss-adapters` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo base `meta-llama/Meta-Llama-3-8B-Instruct` mediante fine-tuning supervisado (SFT). El autor, Kevinmodelf, publica este adaptador en HuggingFace con la librería PEFT, lo que indica que no se distribuyen los pesos completos del modelo, sino únicamente los deltas de LoRA que deben combinarse con el modelo base para su uso. El repositorio tiene un tamaño de 0.0 GB, consistente con la naturaleza ligera de un adaptador.
+El modelo `Kevinmodelf/llama3-keml-cdss-adapters` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo base `meta-llama/Meta-Llama-3-8B-Instruct` mediante fine-tuning supervisado (SFT). El autor, Kevinmodelf, publica este adaptador en Hugging Face con la librería PEFT, lo que indica que no se distribuyen los pesos completos del modelo, sino únicamente los deltas de LoRA que deben combinarse con el modelo base para su uso. El repositorio tiene un tamaño de 0.0 GB, consistente con la naturaleza ligera de un adaptador.
 
 El propósito declarado es el ajuste fino del modelo Llama-3-8B-Instruct para una tarea específica, aunque la model card no proporciona detalles sobre el dataset, el dominio de aplicación ni los objetivos de entrenamiento. La relevancia de este adaptador reside en la posibilidad de especializar un modelo base potente (Llama-3-8B-Instruct) con un coste computacional reducido, aprovechando la técnica LoRA. Sin embargo, la falta de información pública sobre su entrenamiento y evaluación limita su utilidad inmediata para la comunidad, y cualquier uso en producción requeriría una validación independiente.
 
@@ -21,7 +21,7 @@ El propósito declarado es el ajuste fino del modelo Llama-3-8B-Instruct para un
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en la arquitectura transformer decoder-only de Llama-3-8B-Instruct, un modelo con 8 mil millones de parametros y una ventana de contexto de 8192 tokens (dato del modelo base, no confirmado en la ficha del adaptador). La tecnica LoRA (Low-Rank Adaptation) introduce matrices de bajo rango en las capas de atencion y feed-forward, lo que permite ajustar el modelo con un numero reducido de parametros entrenables. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL (Transformer Reinforcement Learning) de HuggingFace, segun los tags del repositorio. No se especifican los hiperparametros de entrenamiento, el dataset utilizado ni el regimen de precision (fp16, bf16, etc.). Tampoco se menciona el uso de tecnicas adicionales como RLHF o DPO.
+El adaptador se basa en la arquitectura transformer decoder-only de Llama-3-8B-Instruct, un modelo con 8 mil millones de parametros y una ventana de contexto de 8192 tokens (dato del modelo base, no confirmado en la ficha del adaptador). La tecnica LoRA (Low-Rank Adaptation) introduce matrices de bajo rango en las capas de atencion y feed-forward, lo que permite ajustar el modelo con un numero reducido de parametros entrenables. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL (Transformer Reinforcement Learning) de Hugging Face, segun los tags del repositorio. No se especifican los hiperparametros de entrenamiento, el dataset utilizado ni el regimen de precision (fp16, bf16, etc.). Tampoco se menciona el uso de tecnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: al ser un adaptador LoRA, la inferencia requiere cargar el modelo base Llama-3-8B-Instruct. Con cuantizacion de 4 bits (por ejemplo, usando bitsandbytes), se estima un consumo de aproximadamente 6-7 GB de VRAM. Sin cuantizacion, el modelo base en FP16 requiere alrededor de 16 GB.
 - GPU recomendadas: para una inferencia fluida, se recomienda al menos una GPU con 16 GB de VRAM (por ejemplo, RTX 4080, RTX 4090, A100 40GB) si se usa precision completa. Con cuantizacion, una GPU de 8 GB (como RTX 3070) podria ser suficiente.
 - Compatibilidad con GPU de consumo: si, el modelo base puede ejecutarse en GPUs de consumo con cuantizacion (por ejemplo, mediante llama.cpp o bitsandbytes), pero el adaptador requiere la libreria PEFT y transformers, lo que limita el despliegue a entornos Python.
-- Opciones de despliegue: vLLM, HuggingFace TGI, llama.cpp (si se convierte el adaptador a GGUF, aunque no se proporcionan dichos pesos), Ollama (no soporta adaptadores PEFT directamente). La opcion mas directa es usar `transformers` con `peft` para cargar el adaptador sobre el modelo base.
+- Opciones de despliegue: vLLM, Hugging Face TGI, llama.cpp (si se convierte el adaptador a GGUF, aunque no se proporcionan dichos pesos), Ollama (no soporta adaptadores PEFT directamente). La opcion mas directa es usar `transformers` con `peft` para cargar el adaptador sobre el modelo base.
 - Latencia y throughput: no disponibles para este adaptador especifico. Como referencia, Llama-3-8B en una A100 genera aproximadamente 100-150 tokens/segundo en FP16, pero estos valores dependen del hardware y la configuracion.
 
 ## Comparativa con modelos similares
@@ -60,8 +60,8 @@ No se dispone de informacion sobre otros adaptadores LoRA comparables en el mism
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Meta-Llama-3-8B-Instruct (base) | 8B | 8192 | Llama 3 Community License | HuggingFace (acceso restringido) |
-| Kevinmodelf/llama3-keml-cdss-adapters | adaptador LoRA (no especificado) | no disponible | no disponible | HuggingFace (publico) |
+| Meta-Llama-3-8B-Instruct (base) | 8B | 8192 | Llama 3 Community License | Hugging Face (acceso restringido) |
+| Kevinmodelf/llama3-keml-cdss-adapters | adaptador LoRA (no especificado) | no disponible | no disponible | Hugging Face (publico) |
 
 No hay datos de rendimiento comparativo entre el adaptador y el modelo base ni con otros adaptadores similares.
 
@@ -76,6 +76,6 @@ No hay datos de rendimiento comparativo entre el adaptador y el modelo base ni c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kevinmodelf/llama3-keml-cdss-adapters
+- Repositorio Hugging Face: https://huggingface.co/Kevinmodelf/llama3-keml-cdss-adapters
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Paper de LoRA (referencia en los tags): https://arxiv.org/abs/1910.09700

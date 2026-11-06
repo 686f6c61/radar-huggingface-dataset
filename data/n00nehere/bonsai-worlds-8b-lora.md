@@ -90,9 +90,9 @@ No se han encontrado en la información disponible otros adaptadores LoRA de gen
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| n00nehere/bonsai-worlds-8b-lora (este adaptador) | 87.293.952 en el adaptador + 8.188.548.096 en el base | 2.048 tokens | Pérdida held-out 0,179760; 16/16 planes válidos y 12/12 powerups válidos en nativo Q1+LoRA | Apache-2.0 | Repositorio HuggingFace, 0 descargas |
-| prism-ml/Bonsai-8B-unpacked (base sin adaptador) | 8.188.548.096 | no disponible | Datos de aceptación para la tarea de niveles no disponibles | Apache-2.0 | HuggingFace |
-| prism-ml/Bonsai-8B-gguf (base cuantizado Q1_0) | 8.188.548.096 | no disponible | Datos de aceptación para la tarea de niveles no disponibles | Apache-2.0 | HuggingFace |
+| n00nehere/bonsai-worlds-8b-lora (este adaptador) | 87.293.952 en el adaptador + 8.188.548.096 en el base | 2.048 tokens | Pérdida held-out 0,179760; 16/16 planes válidos y 12/12 powerups válidos en nativo Q1+LoRA | Apache-2.0 | Repositorio Hugging Face, 0 descargas |
+| prism-ml/Bonsai-8B-unpacked (base sin adaptador) | 8.188.548.096 | no disponible | Datos de aceptación para la tarea de niveles no disponibles | Apache-2.0 | Hugging Face |
+| prism-ml/Bonsai-8B-gguf (base cuantizado Q1_0) | 8.188.548.096 | no disponible | Datos de aceptación para la tarea de niveles no disponibles | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -112,7 +112,7 @@ No se han encontrado en la información disponible otros adaptadores LoRA de gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/n00nehere/bonsai-worlds-8b-lora
+- Modelo en Hugging Face: https://huggingface.co/n00nehere/bonsai-worlds-8b-lora
 - Modelo base (sin cuantizar): https://huggingface.co/prism-ml/Bonsai-8B-unpacked
 - Modelo base cuantizado: https://huggingface.co/prism-ml/Bonsai-8B-gguf
 - Runtime probado (bifurcación de llama.cpp): https://github.com/PrismML-Eng/llama.cpp

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`lucyjohnson/contrastive-fast` es un repositorio de HuggingFace publicado por el usuario lucyjohnson que contiene una implementación propia de una arquitectura denominada "Dino" orientada a aprendizaje contrastivo (contrastive learning). Según su model card, no se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción, sino de un punto de partida reproducible: incluye un fichero `inference.py` con la implementación y un ejemplo ejecutable, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es explícitamente un checkpoint de inicialización para pruebas de humo (smoke tests).
+`lucyjohnson/contrastive-fast` es un repositorio de Hugging Face publicado por el usuario lucyjohnson que contiene una implementación propia de una arquitectura denominada "Dino" orientada a aprendizaje contrastivo (contrastive learning). Según su model card, no se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción, sino de un punto de partida reproducible: incluye un fichero `inference.py` con la implementación y un ejemplo ejecutable, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es explícitamente un checkpoint de inicialización para pruebas de humo (smoke tests).
 
-La relevancia de esta ficha es, por tanto, limitada y de naturaleza distinta a la de un modelo generativo al uso. No hay benchmarks publicados, no se declaran idiomas soportados, no hay pipeline definido en HuggingFace y el repositorio no tiene descargas ni likes en el momento de la consulta. El dato más llamativo es el recuento de parámetros del checkpoint safetensors: 33.088 parámetros totales, una cifra de juguete que contrasta con la etiqueta "xlarge" que el propio autor usa en la model card. Esa discrepancia debe tenerse en cuenta antes de cualquier evaluación.
+La relevancia de esta ficha es, por tanto, limitada y de naturaleza distinta a la de un modelo generativo al uso. No hay benchmarks publicados, no se declaran idiomas soportados, no hay pipeline definido en Hugging Face y el repositorio no tiene descargas ni likes en el momento de la consulta. El dato más llamativo es el recuento de parámetros del checkpoint safetensors: 33.088 parámetros totales, una cifra de juguete que contrasta con la etiqueta "xlarge" que el propio autor usa en la model card. Esa discrepancia debe tenerse en cuenta antes de cualquier evaluación.
 
 En consecuencia, esta ficha describe un artefacto experimental de investigación: sirve para reproducir una receta de entrenamiento contrastivo con una arquitectura concreta (atención flash, fusión con gating, activación approx gelu, normalización rmsnorm), pero no para desplegar un servicio, ni para comparar rendimiento frente a modelos entrenados, ni para integrarse en un producto.
 
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque no se de
 | Contexto | no disponible | no disponible |
 | Entrenado | No | no disponible |
 | Licencia | BSD-3-Clause | no disponible |
-| Disponibilidad | Repositorio HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Repositorio Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -110,6 +110,6 @@ No disponible. No es posible establecer una comparativa rigurosa porque no se de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucyjohnson/contrastive-fast
+- Repositorio en Hugging Face: https://huggingface.co/lucyjohnson/contrastive-fast
 - Ficheros citados en la model card: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (todos dentro del repositorio anterior)
 - Paper, blog o repositorio adicional: no disponible. Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo (los resultados obtenidos correspondían a hilos de un foro sobre un reproductor multimedia, sin relación con el modelo).

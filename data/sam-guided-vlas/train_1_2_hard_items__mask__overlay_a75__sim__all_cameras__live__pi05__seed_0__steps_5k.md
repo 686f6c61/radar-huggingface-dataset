@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_5k` es un checkpoint de robótica basado en π₀.₅ (Pi05), un modelo de visión-lenguaje-acción (VLA) desarrollado por Physical Intelligence y adaptado a la librería LeRobot de HuggingFace a partir del repositorio OpenPI. En concreto, este repositorio es un fine-tune del modelo base `lerobot/pi05_base`, entrenado por el usuario `sam-guided-vlas` sobre un dataset de manipulación con objetos de geometría compleja.
+El modelo `sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_5k` es un checkpoint de robótica basado en π₀.₅ (Pi05), un modelo de visión-lenguaje-acción (VLA) desarrollado por Physical Intelligence y adaptado a la librería LeRobot de Hugging Face a partir del repositorio OpenPI. En concreto, este repositorio es un fine-tune del modelo base `lerobot/pi05_base`, entrenado por el usuario `sam-guided-vlas` sobre un dataset de manipulación con objetos de geometría compleja.
 
 El modelo cuenta con 4.143.404.816 parámetros (~4,14 mil millones) y se distribuye en formato safetensors bajo licencia Apache 2.0. Su función es predecir acciones de control de 7 dimensiones para un robot tipo Panda a partir de un estado de 9 variables y tres cámaras (`agentview`, `robot0_eye_in_hand` y `robot0_eye_in_hand_2`), lo que lo sitúa en el ámbito de las políticas de manipulación condicionadas por visión.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este fine-tune (`pi05`, semilla 0, 5k pasos) | 4,14 B | VLA robótica (fine-tune) | Apache 2.0 | HuggingFace, vía LeRobot |
-| `lerobot/pi05_base` | No confirmado en la información disponible (arquitectura equivalente al derivado) | VLA robótica (modelo base) | Apache 2.0 según el modelo base | HuggingFace, vía LeRobot |
+| Este fine-tune (`pi05`, semilla 0, 5k pasos) | 4,14 B | VLA robótica (fine-tune) | Apache 2.0 | Hugging Face, vía LeRobot |
+| `lerobot/pi05_base` | No confirmado en la información disponible (arquitectura equivalente al derivado) | VLA robótica (modelo base) | Apache 2.0 según el modelo base | Hugging Face, vía LeRobot |
 | π₀ (Physical Intelligence) | No disponible | VLA robótica (predecesor de π₀.₅) | No disponible en la información proporcionada | Repositorio OpenPI / código abierto |
-| OpenVLA | ~7 B (dato de literatura pública, no confirmado en la información proporcionada) | VLA robótica | No disponible en la información proporcionada | HuggingFace |
+| OpenVLA | ~7 B (dato de literatura pública, no confirmado en la información proporcionada) | VLA robótica | No disponible en la información proporcionada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_5k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_5k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live
 - Blog de π₀.₅ (Physical Intelligence): https://www.physicalintelligence.company/blog/pi05

@@ -84,8 +84,8 @@ No se dispone de datos de benchmarks ni de modelos alternativos de otros fabrica
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/aidevco/Nemotron-3.5-Super-VL-120B-A12B-W4A16-g64
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/aidevco/Nemotron-3.5-Super-VL-120B-A12B-W4A16-g64
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - llm-compressor: no disponible en la información proporcionada
 - compressed-tensors: no disponible en la información proporcionada

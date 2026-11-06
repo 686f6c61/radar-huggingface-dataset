@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eymenaydin/experiment-neural-architecture-search72` es un repositorio publicado en HuggingFace que, segun su propia model card, contiene un conjunto estructurado de notas de investigacion sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS). No se trata de un modelo entrenado ni de un checkpoint funcional: el autor indica explicitamente que el repositorio no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
+`eymenaydin/experiment-neural-architecture-search72` es un repositorio publicado en Hugging Face que, segun su propia model card, contiene un conjunto estructurado de notas de investigacion sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS). No se trata de un modelo entrenado ni de un checkpoint funcional: el autor indica explicitamente que el repositorio no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
 
 El repositorio incluye un artefacto principal (`analysis.md`) con el alcance de la pregunta de investigacion, hipotesis, confundidores probables, una comparacion propuesta con baselines emparejados, contexto de evaluacion, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor separa de forma explicita los planes y las hipotesis de los resultados ya completados.
 
@@ -84,5 +84,5 @@ No procede una comparativa con modelos de lenguaje, ya que este repositorio no e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eymenaydin/experiment-neural-architecture-search72
+- Hugging Face: https://huggingface.co/eymenaydin/experiment-neural-architecture-search72
 - La busqueda web realizada no devolvio enlaces relevantes al modelo ni al tema: los resultados obtenidos correspondian a paginas de Amazon y Amazon Prime, sin relacion con Neural Architecture Search. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

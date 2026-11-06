@@ -4,7 +4,7 @@
 
 El modelo `rishanthrajendhran/ideadet-modernbert-1m-rawoutline` es un clasificador de texto basado en la arquitectura ModernBERT, diseñado para la detección de contenido generado por inteligencia artificial. Desarrollado por Rishanth Rajendhran, investigador especializado en NLP, LLM y explicabilidad local, este modelo se presenta como una herramienta para identificar textos producidos por sistemas automáticos frente a texto humano. Con 395.833.346 parámetros y un tamaño de repositorio de 1,6 GB, se posiciona como un modelo de tamaño medio dentro de la familia de encoders modernos.
 
-La relevancia de este modelo radica en la creciente necesidad de herramientas de moderación y verificación de contenido en un contexto donde la generación de texto por IA es cada vez más común. Al estar basado en ModernBERT, hereda las mejoras arquitectónicas de este proyecto colaborativo entre Answer.AI y LightOn, que busca actualizar BERT con técnicas modernas como Flash Attention y tokenización eficiente. El acceso al modelo está restringido (gated), por lo que requiere aceptar condiciones en HuggingFace.
+La relevancia de este modelo radica en la creciente necesidad de herramientas de moderación y verificación de contenido en un contexto donde la generación de texto por IA es cada vez más común. Al estar basado en ModernBERT, hereda las mejoras arquitectónicas de este proyecto colaborativo entre Answer.AI y LightOn, que busca actualizar BERT con técnicas modernas como Flash Attention y tokenización eficiente. El acceso al modelo está restringido (gated), por lo que requiere aceptar condiciones en Hugging Face.
 
 Aunque la información pública es limitada, el nombre del modelo sugiere que está especializado en la detección de "ideas" o "esquemas" (raw outline), posiblemente orientado a identificar estructuras argumentativas generadas por IA. No se han publicado detalles sobre el entrenamiento, los datos utilizados ni los benchmarks, lo que limita una evaluación completa de sus capacidades.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - No se dispone de requisitos oficiales de hardware para este modelo.
 - Con 395 millones de parámetros, una estimación razonable para inferencia en FP16 sería de aproximadamente 800 MB de VRAM, lo que permitiría ejecutarlo en GPUs de consumo como una RTX 3060 (12 GB) o superiores. Sin embargo, esta es una estimación no confirmada.
-- Dado el formato safetensors y la arquitectura encoder, es compatible con frameworks como HuggingFace Transformers, y probablemente con vLLM, TGI u Ollama, aunque no hay documentación al respecto.
+- Dado el formato safetensors y la arquitectura encoder, es compatible con frameworks como Hugging Face Transformers, y probablemente con vLLM, TGI u Ollama, aunque no hay documentación al respecto.
 - La latencia y el throughput no están documentados.
 
 ## Comparativa con modelos similares
@@ -68,8 +68,8 @@ No se dispone de información sobre modelos comparables específicamente en la t
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-rawoutline)
-- [Perfil del autor en HuggingFace](https://huggingface.co/rishanthrajendhran)
+- [Modelo en Hugging Face](https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-rawoutline)
+- [Perfil del autor en Hugging Face](https://huggingface.co/rishanthrajendhran)
 - [Repositorio de ModernBERT en GitHub](https://github.com/AnswerDotAI/ModernBERT)
 - [README de ModernBERT](https://github.com/AnswerDotAI/ModernBERT/blob/main/README.md)
 - [Página personal de Rishanth Rajendhran](https://rishanthrajendhran.github.io/)

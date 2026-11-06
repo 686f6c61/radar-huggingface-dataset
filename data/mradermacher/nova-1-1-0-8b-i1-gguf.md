@@ -19,7 +19,7 @@ Nova-1.1-0.8B es un modelo de lenguaje de pequeño tamaño desarrollado por Hype
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura ni el proceso de entrenamiento de Nova-1.1-0.8B. Los metadatos de HuggingFace incluyen la etiqueta `qwen3.5`, lo que sugiere una posible derivación de la arquitectura de la serie Qwen, pero no existe confirmación oficial ni documentación técnica que lo respalde. Tampoco se dispone de datos sobre el conjunto de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF, DPO u otros algoritmos de alineación. La única información disponible es que se trata de un modelo ajustado para instrucciones, con capacidades de agente y tool use según sus etiquetas.
+No se ha publicado información detallada sobre la arquitectura ni el proceso de entrenamiento de Nova-1.1-0.8B. Los metadatos de Hugging Face incluyen la etiqueta `qwen3.5`, lo que sugiere una posible derivación de la arquitectura de la serie Qwen, pero no existe confirmación oficial ni documentación técnica que lo respalde. Tampoco se dispone de datos sobre el conjunto de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF, DPO u otros algoritmos de alineación. La única información disponible es que se trata de un modelo ajustado para instrucciones, con capacidades de agente y tool use según sus etiquetas.
 
 ## Capacidades
 

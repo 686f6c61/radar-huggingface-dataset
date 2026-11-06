@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduckapp/microduck-phone-call` es un asset de robótica, no un modelo de lenguaje: se trata de un "move" o movimiento pregrabado de 10,3 segundos para el robot bípedo Microduck, publicado por la organización `microduckapp` en HuggingFace bajo el pipeline `robotics` y la etiqueta `microduck-move`. El repositorio contiene tres artefactos: `policy.onnx` (la política de control, con 61 observaciones de entrada y 14 consignas articulares de salida a 50 Hz), `manifest.json` (los metadatos que la app MicroDuck necesita para instalar y reproducir el movimiento) y `media/preview.mp4` (una previsualización visual). El movimiento consiste en una llamada telefónica teatralizada: el robot inclina la cabeza, da vueltas en círculo, asiente, se ríe y se despide con un "bye" alegre.
+`microduckapp/microduck-phone-call` es un asset de robótica, no un modelo de lenguaje: se trata de un "move" o movimiento pregrabado de 10,3 segundos para el robot bípedo Microduck, publicado por la organización `microduckapp` en Hugging Face bajo el pipeline `robotics` y la etiqueta `microduck-move`. El repositorio contiene tres artefactos: `policy.onnx` (la política de control, con 61 observaciones de entrada y 14 consignas articulares de salida a 50 Hz), `manifest.json` (los metadatos que la app MicroDuck necesita para instalar y reproducir el movimiento) y `media/preview.mp4` (una previsualización visual). El movimiento consiste en una llamada telefónica teatralizada: el robot inclina la cabeza, da vueltas en círculo, asiente, se ríe y se despide con un "bye" alegre.
 
 El modelo se enmarca en el ecosistema Microduck, el robot bípedo de 25 cm y 399 dólares desarrollado por Pollen Robotics (grupo Hugging Face), presentado en agosto de 2026 como plataforma abierta de IA física entrenada con aprendizaje por refuerzo en MuJoCo. Los moves como este son el mecanismo de distribución de comportamiento expresivo del robot: pequeños controladores ONNX que la app descarga e instala para que la unidad física ejecute una secuencia concreta.
 
@@ -13,18 +13,18 @@ Su relevancia es doble. Por un lado, es un ejemplo canónico de "modelo" en el s
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | No disponible (política de control exportada a ONNX; la model card no documenta la topología de la red) |
-| Parámetros totales | No disponible (el repositorio completo ocupa 0,0 GB según HuggingFace, redondeado) |
+| Parámetros totales | No disponible (el repositorio completo ocupa 0,0 GB según Hugging Face, redondeado) |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica; ventana de observación de 61 valores por paso de control, sin memoria larga documentada |
 | Tipos de cuantización | No disponible (se distribuye un único `policy.onnx`; no se publican variantes cuantizadas) |
 | Idiomas soportados | No disponible (no es un modelo de lenguaje; no procesa texto) |
-| Licencia | No disponible (ni la model card ni los metadatos de HuggingFace la indican) |
+| Licencia | No disponible (ni la model card ni los metadatos de Hugging Face la indican) |
 | Formato de pesos | ONNX (`policy.onnx`), acompañado de `manifest.json` y `media/preview.mp4` |
 | Interfaz de entrada | 61 observaciones por paso |
 | Interfaz de salida | 14 consignas articulares |
 | Frecuencia de control | 50 Hz |
 | Duración del movimiento | 10,3 s |
-| Pipeline (HuggingFace) | `robotics` |
+| Pipeline (Hugging Face) | `robotics` |
 | Etiquetas | `onnx`, `robotics`, `microduck-move`, `region:us` |
 | Autor | `microduckapp` |
 | Descargas / likes | 0 / 0 (a fecha de creación del registro) |
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- VRAM estimada: prácticamente nula. El repositorio completo ocupa 0,0 GB según HuggingFace (redondeado) e incluye un vídeo de previsualización, por lo que los pesos deben situarse en el orden de kilobytes a pocos megabytes.
+- VRAM estimada: prácticamente nula. El repositorio completo ocupa 0,0 GB según Hugging Face (redondeado) e incluye un vídeo de previsualización, por lo que los pesos deben situarse en el orden de kilobytes a pocos megabytes.
 - GPU recomendadas: no se requiere GPU. Cualquier acelerador es sobredimensionado para esta carga; el cómputo cabe en el presupuesto de la controladora del propio robot.
 - Cabe en hardware de consumo y embebido: CPU de escritorio, Raspberry Pi, placas ARM y módulos Jetson son suficientes; no se publica una lista de compatibilidad oficial.
 - Opciones de despliegue: ONNX Runtime como runtime natural del formato; alternativas como TensorRT u OpenVINO son viables si se convierte el grafo, aunque no hay documentación de conversión publicada.
@@ -98,8 +98,8 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microduckapp/microduck-phone-call
-- Organización MicroDuck en HuggingFace: https://huggingface.co/microduckapp
+- Modelo en Hugging Face: https://huggingface.co/microduckapp/microduck-phone-call
+- Organización MicroDuck en Hugging Face: https://huggingface.co/microduckapp
 - Presentación de Microduck (Pollen Robotics): https://pollen-robotics.com/microduck/blog/introducing-microduck/
 - Cobertura de MarkTechPost: https://www.marktechpost.com/2026/08/28/pollen-robotics-hugging-face-microduck-399-open-source-rl-biped-robot/
 - Cobertura de TechCrunch: https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/

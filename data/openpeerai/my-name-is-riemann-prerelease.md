@@ -6,7 +6,7 @@ My Name is Riemann Prerelease es un modelo de lenguaje causal decoder-only publi
 
 El modelo está orientado a generación de texto con énfasis en código, razonamiento paso a paso y contenido bilingüe inglés-árabe. Su corpus de entrenamiento mezcla transcripciones de coding agentic con llamadas y salidas de herramientas, texto enciclopédico en inglés y árabe, tareas de world-model ejecutable, pares código-vídeo y código fuente. La propuesta técnica relevante es la combinación de crecimiento progresivo de arquitectura y un controlador NTK externo de pocas miles de compuertas que no modifica los pesos base.
 
-Hay una discrepancia crítica que debe tenerse en cuenta antes de evaluarlo: la model card declara 13.110.702.080 parámetros (13,1B) y 52,4 GB en once shards safetensors, mientras que la metadata de HuggingFace indica 1.638.837.760 parámetros como dato real de safetensors. Esta ficha refleja ambas cifras y no resuelve la contradicción. Es un prerelease, sin benchmarks estándar publicados y sin longitud de contexto documentada.
+Hay una discrepancia crítica que debe tenerse en cuenta antes de evaluarlo: la model card declara 13.110.702.080 parámetros (13,1B) y 52,4 GB en once shards safetensors, mientras que la metadata de Hugging Face indica 1.638.837.760 parámetros como dato real de safetensors. Esta ficha refleja ambas cifras y no resuelve la contradicción. Es un prerelease, sin benchmarks estándar publicados y sin longitud de contexto documentada.
 
 ## Especificaciones técnicas
 
@@ -82,8 +82,8 @@ No se han proporcionado datos verificables de alternativas de la misma categorí
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| My Name is Riemann Prerelease | 1,64B según safetensors; 13,1B declarados en la model card | No disponible | OPNL-2 y MIT | HuggingFace, prerelease | Etapa 6 de una escalera de crecimiento; benchmarks solo de NLL y precisión del siguiente token |
-| OpenPeerAI/OpenPeerLLM | 163M | No disponible | No disponible | HuggingFace | Modelo base del que parte la escalera |
+| My Name is Riemann Prerelease | 1,64B según safetensors; 13,1B declarados en la model card | No disponible | OPNL-2 y MIT | Hugging Face, prerelease | Etapa 6 de una escalera de crecimiento; benchmarks solo de NLL y precisión del siguiente token |
+| OpenPeerAI/OpenPeerLLM | 163M | No disponible | No disponible | Hugging Face | Modelo base del que parte la escalera |
 | Alternativas dense de ~13B | No disponible | No disponible | No disponible | No disponible | No se aportan datos verificables en la información proporcionada |
 | Alternativas de ~1,6B | No disponible | No disponible | No disponible | No disponible | No se aportan datos verificables en la información proporcionada |
 

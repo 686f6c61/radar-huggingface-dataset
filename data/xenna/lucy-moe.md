@@ -77,5 +77,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Xenna/Lucy-MOE
+- Hugging Face: https://huggingface.co/Xenna/Lucy-MOE
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web. Los resultados de SeaArt y PixAI no están relacionados con este modelo.

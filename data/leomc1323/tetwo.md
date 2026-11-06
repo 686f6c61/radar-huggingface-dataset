@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TETWO es un modelo publicado en HuggingFace por el usuario leomc1323 (Leonardo Marín Carrillo) bajo licencia artistic-2.0. La informacion disponible es extremadamente limitada: el repositorio ocupa 0,2 GB, no tiene pipeline declarado, no especifica idiomas soportados y acumula 0 descargas y 0 likes en el momento de la consulta. La model card se limita a repetir la licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+TETWO es un modelo publicado en Hugging Face por el usuario leomc1323 (Leonardo Marín Carrillo) bajo licencia artistic-2.0. La informacion disponible es extremadamente limitada: el repositorio ocupa 0,2 GB, no tiene pipeline declarado, no especifica idiomas soportados y acumula 0 descargas y 0 likes en el momento de la consulta. La model card se limita a repetir la licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 No es posible determinar a partir de la informacion proporcionada que tipo de modelo es (transformer, MoE, SSM, modelo de difusion, modelo de audio, etc.), cuantos parametros tiene ni cual es su longitud de contexto. El unico dato cuantitativo fiable es el tamano del repositorio (0,2 GB).
 
@@ -35,7 +35,7 @@ No hay datos sobre el volumen de tokens de entrenamiento, la composicion del dat
 - No se confirma soporte de agentes ni razonamiento multi-paso.
 - No se confirman capacidades multilingues ni los idiomas cubiertos.
 - No se confirman capacidades especiales (modo de razonamiento, vision, audio, etc.).
-- El campo pipeline de HuggingFace aparece como no disponible, lo que impide inferir la tarea prevista.
+- El campo pipeline de Hugging Face aparece como no disponible, lo que impide inferir la tarea prevista.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ No disponible. No hay informacion suficiente sobre la arquitectura, el tamano o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomc1323/TETWO
-- Perfil del autor en HuggingFace: https://huggingface.co/leomc1323
+- Modelo en Hugging Face: https://huggingface.co/leomc1323/TETWO
+- Perfil del autor en Hugging Face: https://huggingface.co/leomc1323
 - Referencia potencialmente relacionada con el autor (modelo de voz RVC bajo el alias leomc123, sin confirmacion de vinculacion): https://voice-models.com/model/1mf8jlteXUz
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

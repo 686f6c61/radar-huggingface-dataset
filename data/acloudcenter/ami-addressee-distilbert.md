@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ACloudCenter/ami-addressee-distilbert es un modelo de clasificación de texto publicado por el usuario ACloudCenter en HuggingFace. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, la variante destilada de BERT desarrollada por HuggingFace, y cuenta con 66.955.010 parámetros según el recuento de los pesos en safetensors. El repositorio se creó y actualizó el 20 de septiembre de 2026, ocupa 0,3 GB y, en el momento de la consulta, no acumula descargas ni interacciones.
+ACloudCenter/ami-addressee-distilbert es un modelo de clasificación de texto publicado por el usuario ACloudCenter en Hugging Face. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, la variante destilada de BERT desarrollada por Hugging Face, y cuenta con 66.955.010 parámetros según el recuento de los pesos en safetensors. El repositorio se creó y actualizó el 20 de septiembre de 2026, ocupa 0,3 GB y, en el momento de la consulta, no acumula descargas ni interacciones.
 
 El modelo se distribuye bajo licencia Apache-2.0 y está etiquetado para la tarea de text-classification, además de ser compatible con text-embeddings-inference y con endpoints gestionados. El nombre del repositorio sugiere una función de detección de destinatario (addressee detection) en el contexto del corpus de reuniones AMI, aunque la model card no confirma ni describe el conjunto de etiquetas ni el dominio de aplicación, por lo que esa interpretación debe tratarse como una hipótesis a verificar.
 
-Su relevancia práctica es limitada pero clara: se trata de un clasificador pequeño, rápido y desplegable en CPU, útil para tareas de etiquetado a gran escala o como componente de pre-filtrado. La model card, sin embargo, es un artefacto autogenerado por el Trainer de HuggingFace con secciones enteras marcadas como "More information needed", sin datos de entrenamiento, sin descripción del etiquetado y sin resultados de benchmarks estándar, lo que dificulta su evaluación rigurosa.
+Su relevancia práctica es limitada pero clara: se trata de un clasificador pequeño, rápido y desplegable en CPU, útil para tareas de etiquetado a gran escala o como componente de pre-filtrado. La model card, sin embargo, es un artefacto autogenerado por el Trainer de Hugging Face con secciones enteras marcadas como "More information needed", sin datos de entrenamiento, sin descripción del etiquetado y sin resultados de benchmarks estándar, lo que dificulta su evaluación rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ La arquitectura subyacente es DistilBERT, un encoder transformer de 6 capas obte
 
 En cuanto al entrenamiento, la model card únicamente expone los hiperparámetros y la curva de validación; el conjunto de datos aparece literalmente como "None dataset" y las secciones de datos de entrenamiento y evaluación están marcadas como "More information needed". Los hiperparámetros son: learning rate 2e-05, batch de entrenamiento 32, batch de evaluación 64, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con warmup ratio 0,1 y 3 epochs completas. Con 898 pasos por epoch y batch 32, el conjunto de entrenamiento rondaría los 28.700 ejemplos por epoch, cifra inferida del recuento de pasos y no confirmada por el autor. El entrenamiento se realizó con Transformers 4.57.6, PyTorch 2.14.0+cu130, Datasets 5.0.1 y Tokenizers 0.22.2.
 
-No se declara uso de RLHF, DPO ni ninguna técnica de alineación, algo esperable en un clasificador de este tamaño. La innovación técnica es nula: es un ajuste fino estándar con el Trainer de HuggingFace. La curva registrada muestra sobreajuste a partir de la segunda epoch: la pérdida de entrenamiento baja de 0,2603 a 0,2435 y sube a 0,2624, mientras la pérdida de validación asciende de forma monótona (0,3613 → 0,3718 → 0,3827) y la AUC alcanza su máximo en la epoch 2 (0,9293) para caer en la 3 (0,9268). El mejor checkpoint habría sido el de la epoch 2, no el final.
+No se declara uso de RLHF, DPO ni ninguna técnica de alineación, algo esperable en un clasificador de este tamaño. La innovación técnica es nula: es un ajuste fino estándar con el Trainer de Hugging Face. La curva registrada muestra sobreajuste a partir de la segunda epoch: la pérdida de entrenamiento baja de 0,2603 a 0,2435 y sube a 0,2624, mientras la pérdida de validación asciende de forma monótona (0,3613 → 0,3718 → 0,3827) y la AUC alcanza su máximo en la epoch 2 (0,9293) para caer en la 3 (0,9268). El mejor checkpoint habría sido el de la epoch 2, no el final.
 
 ## Capacidades
 
@@ -107,6 +107,6 @@ En cuanto a rendimiento específico, no disponible: no se han publicado resultad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ACloudCenter/ami-addressee-distilbert
+- Modelo en Hugging Face: https://huggingface.co/ACloudCenter/ami-addressee-distilbert
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - La búsqueda web realizada no devolvió ningún enlace relevante al modelo: los resultados se limitan a páginas genéricas de Google (Traductor, Drive, Chrome, Imágenes) sin relación con el repositorio. No se dispone de paper, blog técnico, repositorio de código ni demo asociados.

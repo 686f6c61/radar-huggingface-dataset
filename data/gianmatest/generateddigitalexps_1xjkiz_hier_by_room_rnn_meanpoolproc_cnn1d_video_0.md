@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `gianmaTest/generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_0`, publicado por el usuario `gianmaTest` en HuggingFace, no es un modelo de lenguaje al uso: por su identificador y sus metadatos (etiqueta `pytorch`, región `us`, cero likes y un tamaño de repositorio declarado de 0.0 GB) parece tratarse de un artefacto experimental o de prueba generado de forma automatizada, presumiblemente dentro de una batería de experimentos de aprendizaje profundo sobre datos de vídeo. No se ha publicado model card, pipeline, licencia ni información sobre idiomas, parámetros o contexto.
+El repositorio `gianmaTest/generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_0`, publicado por el usuario `gianmaTest` en Hugging Face, no es un modelo de lenguaje al uso: por su identificador y sus metadatos (etiqueta `pytorch`, región `us`, cero likes y un tamaño de repositorio declarado de 0.0 GB) parece tratarse de un artefacto experimental o de prueba generado de forma automatizada, presumiblemente dentro de una batería de experimentos de aprendizaje profundo sobre datos de vídeo. No se ha publicado model card, pipeline, licencia ni información sobre idiomas, parámetros o contexto.
 
 El nombre del repositorio sugiere, como hipótesis y sin confirmación documental, una arquitectura híbrida para procesamiento de vídeo que combinaría una CNN 1D, una RNN con agregación mediante mean pooling y algún tipo de jerarquía por estancias o habitaciones (`hier_by_room`). Se trata, en cualquier caso, de una inferencia a partir de la nomenclatura y no de un dato verificado en la información disponible.
 
@@ -21,7 +21,7 @@ Su relevancia actual es muy limitada: con 16 descargas, sin licencia declarada y
 | Formato de pesos | no disponible (el tag `pytorch` es el único indicio de framework) |
 | Framework declarado | PyTorch (tag) |
 | Pipeline | no disponible |
-| Tamano del repositorio | 0.0 GB (según metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (según metadatos de Hugging Face) |
 | Descargas | 16 |
 | Likes | 0 |
 | Fecha de creacion | 2026-10-21T01:09:13Z |
@@ -87,6 +87,6 @@ No disponible. No se ha identificado ninguna alternativa comparable porque no se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_0
+- Repositorio en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_0
 - Paper, blog, repositorio de código o demo: no disponible.
 - Resultados de la búsqueda web: no se han encontrado enlaces técnicos relevantes; las entradas devueltas son ajenas al ámbito del modelo y se descartan como fuente.

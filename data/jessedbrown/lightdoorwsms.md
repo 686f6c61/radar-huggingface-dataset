@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Jessedbrown/lightDOORwsMs` alojado en HuggingFace no contiene un modelo de inteligencia artificial: no hay pesos, no hay ficheros de safetensors ni GGUF, y la model card no describe ninguna arquitectura neuronal. Lo que documenta el README es una aplicacion web de comunicacion entre pares (peer-to-peer) construida sobre dos ficheros HTML (`index.html` y `mesh.html`), sin servidor, sin cuentas y sin instalacion. El autor describe un sistema de "puertas" nominales (etiquetas jerarquicas como `light.kitchen.tuesday`) que actuan como rutas de comunicacion, y un esquema de identidad basado en el hash SHA-256 de un secreto generado localmente en el navegador, del que solo se comparte una representacion cromatica.
+El repositorio `Jessedbrown/lightDOORwsMs` alojado en Hugging Face no contiene un modelo de inteligencia artificial: no hay pesos, no hay ficheros de safetensors ni GGUF, y la model card no describe ninguna arquitectura neuronal. Lo que documenta el README es una aplicacion web de comunicacion entre pares (peer-to-peer) construida sobre dos ficheros HTML (`index.html` y `mesh.html`), sin servidor, sin cuentas y sin instalacion. El autor describe un sistema de "puertas" nominales (etiquetas jerarquicas como `light.kitchen.tuesday`) que actuan como rutas de comunicacion, y un esquema de identidad basado en el hash SHA-256 de un secreto generado localmente en el navegador, del que solo se comparte una representacion cromatica.
 
 La model card incluye mediciones propias de transferencia de datos entre dos navegadores, con verificacion SHA-256 de un fichero de 9.000 bytes que llega identico byte a byte, y una funcion de "quant" que reduce cualquier entrada a una tupla fija de 3.200 bytes con complejidad O(N) en la entrada y O(1) en la salida. Se apoya en servidores STUN publicos para el descubrimiento de rutas fuera de la red local y en conexion directa por cable USB cuando la red no esta disponible.
 
@@ -108,5 +108,5 @@ Como referencia del propio autor, las unicas magnitudes comparables dentro del R
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/lightDOORwsMs
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/lightDOORwsMs
 - Aplicacion publicada por el autor: https://jessebrown1980.github.io/lightDOORwsMs/

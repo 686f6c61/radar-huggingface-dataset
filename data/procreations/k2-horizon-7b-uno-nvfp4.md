@@ -109,7 +109,7 @@ No se dispone de datos en la información proporcionada para comparar con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/K2-Horizon-7B-Uno-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/K2-Horizon-7B-Uno-NVFP4
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Adaptador condicional Uno: https://huggingface.co/IFM/K2-Horizon-7B-Uno
 - Pines de origen: https://huggingface.co/ProCreations/K2-Horizon-7B-Uno-NVFP4/blob/main/source-pins.json

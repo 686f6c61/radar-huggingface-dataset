@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tawer12/qwen3-4b-recursive-sft-v3.2 | 4,02 B | Entrenado a 2.048 tokens; base con 32.768 nativos | SFT sobre Qwen3-4B-Base con protocolo recursivo y tokens especiales | apache-2.0 | HuggingFace, safetensors BF16, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-4B-Base | 4,0 B | 32.768 nativos, 131.072 con YaRN | Modelo base denso sin post-entrenamiento | apache-2.0 | HuggingFace, ampliamente utilizado como punto de partida |
-| Qwen/Qwen3-4B | 4,0 B | 32.768 nativos, 131.072 con YaRN | Modelo post-entrenado para chat e instrucciones, con modos de razonamiento | apache-2.0 | HuggingFace, lanzamiento oficial de la familia Qwen3 |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | No disponible en esta ficha | Destilado de razonamiento sobre base Qwen | licencia propia de DeepSeek | HuggingFace, con cifras publicas de benchmarks matematicos |
+| tawer12/qwen3-4b-recursive-sft-v3.2 | 4,02 B | Entrenado a 2.048 tokens; base con 32.768 nativos | SFT sobre Qwen3-4B-Base con protocolo recursivo y tokens especiales | apache-2.0 | Hugging Face, safetensors BF16, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3-4B-Base | 4,0 B | 32.768 nativos, 131.072 con YaRN | Modelo base denso sin post-entrenamiento | apache-2.0 | Hugging Face, ampliamente utilizado como punto de partida |
+| Qwen/Qwen3-4B | 4,0 B | 32.768 nativos, 131.072 con YaRN | Modelo post-entrenado para chat e instrucciones, con modos de razonamiento | apache-2.0 | Hugging Face, lanzamiento oficial de la familia Qwen3 |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | No disponible en esta ficha | Destilado de razonamiento sobre base Qwen | licencia propia de DeepSeek | Hugging Face, con cifras publicas de benchmarks matematicos |
 
 La diferencia principal frente a Qwen3-4B y Qwen3-4B-Base no es de tamano ni de contexto, sino de interfaz: V3.2 no responde a conversaciones con plantilla de chat de Qwen, sino a cadenas de prompt recursivo sin formato de chat y devuelve una unica accion por generacion. Frente a destilados de razonamiento de la familia DeepSeek, V3.2 no publica cifras de precision, por lo que la comparacion cuantitativa no es posible con la informacion disponible.
 
@@ -102,7 +102,7 @@ La diferencia principal frente a Qwen3-4B y Qwen3-4B-Base no es de tamano ni de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tawer12/qwen3-4b-recursive-sft-v3.2
+- Modelo en Hugging Face: https://huggingface.co/tawer12/qwen3-4b-recursive-sft-v3.2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/openai/gsm8k
 - Repositorio del motor recursivo constrenido con GRPO y evaluacion: https://github.com/0315jaewon/math-recursive

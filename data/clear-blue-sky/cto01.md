@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `clear-blue-sky/cto01` es un modelo alojado en HuggingFace creado por el usuario `clear-blue-sky`. A fecha de su última actualización (2026-09-03), el repositorio tiene un tamaño de 32,4 GB, lo que sugiere que contiene pesos de un modelo de tamaño considerable. Sin embargo, no se ha publicado ninguna *model card* ni documentación técnica en el repositorio: no se indica arquitectura, tamaño de parámetros, longitud de contexto, licencia ni idiomas soportados. Los resultados de la búsqueda web no proporcionan información adicional sobre este modelo, ya que las coincidencias encontradas corresponden a otros productos, traducciones o modelos 3D sin relación con este repositorio. En consecuencia, no es posible evaluar sus capacidades ni su idoneidad para ningún caso de uso concreto.
+El repositorio `clear-blue-sky/cto01` es un modelo alojado en Hugging Face creado por el usuario `clear-blue-sky`. A fecha de su última actualización (2026-09-03), el repositorio tiene un tamaño de 32,4 GB, lo que sugiere que contiene pesos de un modelo de tamaño considerable. Sin embargo, no se ha publicado ninguna *model card* ni documentación técnica en el repositorio: no se indica arquitectura, tamaño de parámetros, longitud de contexto, licencia ni idiomas soportados. Los resultados de la búsqueda web no proporcionan información adicional sobre este modelo, ya que las coincidencias encontradas corresponden a otros productos, traducciones o modelos 3D sin relación con este repositorio. En consecuencia, no es posible evaluar sus capacidades ni su idoneidad para ningún caso de uso concreto.
 
 ## Especificaciones tecnicas
 
@@ -59,5 +59,5 @@ No disponible: al carecer de especificaciones tecnicas, no es posible comparar e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/clear-blue-sky/cto01
+- Hugging Face: https://huggingface.co/clear-blue-sky/cto01
 - No se han encontrado enlaces relevantes adicionales en la busqueda web.

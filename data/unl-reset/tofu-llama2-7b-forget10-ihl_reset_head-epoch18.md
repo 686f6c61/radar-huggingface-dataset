@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_reset_head-epoch18` | 6,74 B | no disponible (base 4096) | Unlearning TOFU forget10 | llama2 | HuggingFace, safetensors |
-| `locuslab/tofu_ft_llama2-7b` | 6,74 B | 4096 (base) | Modelo ajustado sobre TOFU, sin olvido | llama2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 | Chat de proposito general | llama2 | HuggingFace |
-| `meta-llama/Llama-2-7b-hf` | 6,74 B | 4096 | Base de proposito general | llama2 | HuggingFace |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_reset_head-epoch18` | 6,74 B | no disponible (base 4096) | Unlearning TOFU forget10 | llama2 | Hugging Face, safetensors |
+| `locuslab/tofu_ft_llama2-7b` | 6,74 B | 4096 (base) | Modelo ajustado sobre TOFU, sin olvido | llama2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 | Chat de proposito general | llama2 | Hugging Face |
+| `meta-llama/Llama-2-7b-hf` | 6,74 B | 4096 | Base de proposito general | llama2 | Hugging Face |
 
 La comparacion relevante es contra `locuslab/tofu_ft_llama2-7b`, del que deriva: mismo tamano y misma licencia, pero distinto objetivo de entrenamiento. Frente a los Llama 2 7B originales, la diferencia no esta en capacidad bruta sino en el ajuste sobre TOFU y en el proceso de olvido, que degrada deliberadamente el conocimiento del subconjunto `forget10`.
 
@@ -85,7 +85,7 @@ La comparacion relevante es contra `locuslab/tofu_ft_llama2-7b`, del que deriva:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_head-epoch18
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_head-epoch18
 - Modelo base del checkpoint: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo Llama 2 base: https://huggingface.co/meta-llama/Llama-2-7b-hf

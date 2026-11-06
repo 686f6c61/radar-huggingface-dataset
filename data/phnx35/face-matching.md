@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Face Matching es un caso de uso de análisis (Metro Analytics) publicado por el usuario phnx35 en HuggingFace bajo licencia MIT. No se trata de un modelo único entrenado desde cero, sino de un pipeline de dos etapas que combina dos modelos del Open Model Zoo de Intel: `face-detection-adas-0001` para la detección de rostros y `face-reidentification-retail-0095` para la extracción de embeddings faciales de 256 dimensiones. El objetivo es la verificación uno-a-uno: dada una imagen de referencia, localizar a esa misma persona dentro de una escena con múltiples individuos y resaltar únicamente la coincidencia.
+Face Matching es un caso de uso de análisis (Metro Analytics) publicado por el usuario phnx35 en Hugging Face bajo licencia MIT. No se trata de un modelo único entrenado desde cero, sino de un pipeline de dos etapas que combina dos modelos del Open Model Zoo de Intel: `face-detection-adas-0001` para la detección de rostros y `face-reidentification-retail-0095` para la extracción de embeddings faciales de 256 dimensiones. El objetivo es la verificación uno-a-uno: dada una imagen de referencia, localizar a esa misma persona dentro de una escena con múltiples individuos y resaltar únicamente la coincidencia.
 
 El repositorio está orientado a inferencia en el borde (*edge AI*) mediante OpenVINO y DLStreamer, con soporte para CPU, GPU integrada y NPU de Intel. Su relevancia actual reside en la creciente demanda de soluciones de verificación biométrica ligeras y desplegables en hardware de bajo consumo, como puertas de acceso, validación de credenciales o control de duplicados. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no incluye pesos empaquetados y que el usuario debe descargarlos mediante el script proporcionado.
 
@@ -24,7 +24,7 @@ La ficha se limita a la información disponible en la model card; los datos no p
 | Motor de inferencia | OpenVINO |
 | Hardware soportado | CPU, GPU, NPU |
 | Clases detectadas | Rostros humanos (detección) + embeddings faciales de 256 dimensiones (matching) |
-| Pipeline de HuggingFace | image-classification |
+| Pipeline de Hugging Face | image-classification |
 | Tamaño del repositorio | 0.0 GB (sin pesos incluidos) |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| phnx35/face-matching | Pipeline detección + reidentificación (OpenVINO) | no disponible | no aplica | MIT | HuggingFace |
+| phnx35/face-matching | Pipeline detección + reidentificación (OpenVINO) | no disponible | no aplica | MIT | Hugging Face |
 | face-detection-adas-0001 | Detector de rostros (Open Model Zoo) | no disponible | no aplica | no disponible en la información | Open Model Zoo |
 | face-reidentification-retail-0095 | Extractor de embeddings faciales (Open Model Zoo) | no disponible | no aplica | no disponible en la información | Open Model Zoo |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: phnx35/face-matching](https://huggingface.co/phnx35/face-matching)
+- [Hugging Face: phnx35/face-matching](https://huggingface.co/phnx35/face-matching)
 - [face-detection-adas-0001 (Open Model Zoo)](https://docs.openvino.ai/2024/omz_models_model_face_detection_adas_0001.html)
 - [face-reidentification-retail-0095 (Open Model Zoo)](https://docs.openvino.ai/2024/omz_models_model_face_reidentification_retail_0095.html)
 - [Instalación de OpenVINO](https://docs.openvino.ai/2026/get-started/install-openvino.html)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XD-TAU AURUMTOMATON v1.5.1 no es un modelo de lenguaje entrenado, sino una especificación arquitectónica matemática publicada como documento PDF de 87 páginas en un repositorio de HuggingFace. Lo desarrolla Tom Klootwijk, que figura como autor y propietario, y la edición está fechada el 1 de noviembre de 2026 sobre la base de XD-TAU v1.5 (13 de octubre de 2026). El repositorio no contiene pesos neuronales preentrenados ni servicio de inferencia alojado: su contenido es el PDF con 23 archivos adjuntos incrustados, entre ellos scripts de referencia en Python.
+XD-TAU AURUMTOMATON v1.5.1 no es un modelo de lenguaje entrenado, sino una especificación arquitectónica matemática publicada como documento PDF de 87 páginas en un repositorio de Hugging Face. Lo desarrolla Tom Klootwijk, que figura como autor y propietario, y la edición está fechada el 1 de noviembre de 2026 sobre la base de XD-TAU v1.5 (13 de octubre de 2026). El repositorio no contiene pesos neuronales preentrenados ni servicio de inferencia alojado: su contenido es el PDF con 23 archivos adjuntos incrustados, entre ellos scripts de referencia en Python.
 
 El documento describe un marco integrado para estado tipado, geometría, campos, evolución ordenada y adaptadores físicos. Extiende la arquitectura XD-TAU v1.5 con acciones de automorfismo explícitas, dinámica equivariante, adaptadores térmicos y químicos, transiciones exactas de intercambio de grafos mediante aritmética racional, muestras continuas exactas, cambios de representación y registros de realización física para especímenes, calibración y observaciones.
 
@@ -73,11 +73,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - La extensión matemática, edición, computación y preparación del documento se declaran asistidas por IA, lo que conviene tener en cuenta al evaluar la autoría.
 - Idioma limitado al inglés del documento.
 - Sin benchmarks de rendimiento publicados más allá de la conformidad computacional.
-- Riesgo de confusión: el nombre y la presentación en HuggingFace pueden llevar a esperar un checkpoint; conviene tratar el repositorio como publicación documental.
+- Riesgo de confusión: el nombre y la presentación en Hugging Face pueden llevar a esperar un checkpoint; conviene tratar el repositorio como publicación documental.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/c0mbatduckzz/XD-TAU_AURUMTOMATON_v1.5.1
+- Repositorio en Hugging Face: https://huggingface.co/c0mbatduckzz/XD-TAU_AURUMTOMATON_v1.5.1
 - Especificación completa (PDF, 87 páginas): https://huggingface.co/c0mbatduckzz/XD-TAU_AURUMTOMATON_v1.5.1/resolve/main/XD-TAU_AURUMTOMATON_v1.5.1.pdf
 - Aviso de propiedad y reserva de derechos: https://huggingface.co/c0mbatduckzz/XD-TAU_AURUMTOMATON_v1.5.1/blob/main/PROPRIETARY_NOTICE.txt
 - Checksums de integridad: https://huggingface.co/c0mbatduckzz/XD-TAU_AURUMTOMATON_v1.5.1/blob/main/SHA256SUMS

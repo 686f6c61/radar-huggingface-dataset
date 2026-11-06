@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, identificado como `asheok/knowyourself_gemma3n_e2b`, es un repositorio de HuggingFace publicado por el usuario `asheok` bajo licencia MIT. Fue creado el 6 de septiembre de 2026 y no registra descargas ni likes, lo que indica que no ha sido adoptado ni validado por la comunidad. El tamaño del repositorio es de 7,5 GB.
+Este modelo, identificado como `asheok/knowyourself_gemma3n_e2b`, es un repositorio de Hugging Face publicado por el usuario `asheok` bajo licencia MIT. Fue creado el 6 de septiembre de 2026 y no registra descargas ni likes, lo que indica que no ha sido adoptado ni validado por la comunidad. El tamaño del repositorio es de 7,5 GB.
 
 Por su nomenclatura, se trata de un fine-tune del modelo base `google/gemma-3n-E2B`, tal como se deduce de los resultados de búsqueda web. Sin embargo, la model card es prácticamente vacía: únicamente contiene la declaración de licencia MIT, sin información sobre el proceso de entrenamiento, los datos utilizados, las capacidades o el propósito del ajuste.
 
@@ -66,8 +66,8 @@ No se dispone de informacion suficiente para realizar una comparativa significat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| asheok/knowyourself_gemma3n_e2b | no disponible | no disponible | MIT | HuggingFace |
-| google/gemma-3n-E2B | no disponible | no disponible | no disponible | HuggingFace, Google AI |
+| asheok/knowyourself_gemma3n_e2b | no disponible | no disponible | MIT | Hugging Face |
+| google/gemma-3n-E2B | no disponible | no disponible | no disponible | Hugging Face, Google AI |
 
 ## Limitaciones y advertencias
 

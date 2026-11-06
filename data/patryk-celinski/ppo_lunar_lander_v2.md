@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PPO LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2 de Gym/Gymnasium, implementado con la librería stable-baselines3. Lo publica el usuario patryk-celinski en HuggingFace como parte de un curso de deep reinforcement learning, según indica la propia model card. No es un modelo de lenguaje: no genera texto ni procesa instrucciones, sino que aprende una política de control para aterrizar una nave en un simulador bidimensional.
+PPO LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2 de Gym/Gymnasium, implementado con la librería stable-baselines3. Lo publica el usuario patryk-celinski en Hugging Face como parte de un curso de deep reinforcement learning, según indica la propia model card. No es un modelo de lenguaje: no genera texto ni procesa instrucciones, sino que aprende una política de control para aterrizar una nave en un simulador bidimensional.
 
 El artefacto consiste en los pesos de una política actor-crítica que maximiza la recompensa acumulada del entorno. El autor declara una recompensa media de 251,98 ± 17,14, por encima del umbral de 200 que el propio entorno utiliza habitualmente como criterio de resolución. Se trata, por tanto, de un agente funcionalmente competente dentro de su tarea, pero de alcance muy limitado.
 
@@ -84,11 +84,11 @@ No hay datos de rendimiento publicados para alternativas, por lo que la comparac
 - Tamaño de repositorio declarado de 0,0 GB: existe riesgo de que los pesos no estén efectivamente disponibles o de que el tamaño no se haya computado.
 - Sin tracción ni validación comunitaria: 0 descargas y 0 likes, sin issues ni discusiones que respalden su reproducibilidad.
 - No es un modelo de lenguaje: no debe evaluarse con métricas tipo MMLU, HumanEval o GSM8K, ni utilizarse para tareas de generación, razonamiento o agentes conversacionales.
-- Fecha de creación declarada en los metadatos: 17 de septiembre de 2026, posterior a la fecha de actualización registrada (17 de septiembre de 2026, mismo día), dato que conviene contrastar en la web de HuggingFace.
+- Fecha de creación declarada en los metadatos: 17 de septiembre de 2026, posterior a la fecha de actualización registrada (17 de septiembre de 2026, mismo día), dato que conviene contrastar en la web de Hugging Face.
 - Riesgo de sobreajuste al entorno y a la configuración exacta de recompensas del mismo; cambios en wrappers o versiones pueden degradar el comportamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/patryk-celinski/ppo_lunar_lander_v2
+- Modelo en Hugging Face: https://huggingface.co/patryk-celinski/ppo_lunar_lander_v2
 - Librería stable-baselines3 (referenciada en la model card): https://github.com/DLR-RM/stable-baselines3
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, demos o repositorios) en los resultados de búsqueda web disponibles; los resultados devueltos no guardan relación con el modelo.

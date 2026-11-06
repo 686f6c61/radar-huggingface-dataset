@@ -35,7 +35,7 @@ En cuanto al entrenamiento, la informacion disponible se limita a lo declarado e
 - Soporte de tool calling o function calling: no aplica, es un modelo de reconocimiento de voz y no un modelo de lenguaje conversacional.
 - Soporte de agentes o razonamiento multi-paso: no aplica ni esta documentado.
 - Capacidades de vision, audio enriquecido o modo de razonamiento explicito (thinking mode): no disponibles.
-- Integracion con el ecosistema HuggingFace Transformers y PEFT mediante carga del adaptador y posterior merge_and_unload sobre los pesos base.
+- Integracion con el ecosistema Hugging Face Transformers y PEFT mediante carga del adaptador y posterior merge_and_unload sobre los pesos base.
 
 ## Casos de uso
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Ventana de audio | Idiomas | Licencia | Disponibilidad | Rendimiento en sinhala |
 |---|---|---|---|---|---|---|
-| whisper-small-sinhala-r32-seed456 | ~244 M mas adaptador LoRA r32 | 30 s | si, en | No disponible | HuggingFace, 0 descargas | No disponible |
-| openai/whisper-small | ~244 M | 30 s | Multilingue (cerca de 99 idiomas) | Consultar la model card del modelo base | HuggingFace, muy extendido | No disponible en la informacion proporcionada |
-| openai/whisper-medium | ~769 M | 30 s | Multilingue | Consultar la model card del modelo base | HuggingFace | No disponible en la informacion proporcionada |
-| openai/whisper-large-v3 | ~1550 M | 30 s | Multilingue | Consultar la model card del modelo base | HuggingFace | No disponible en la informacion proporcionada |
+| whisper-small-sinhala-r32-seed456 | ~244 M mas adaptador LoRA r32 | 30 s | si, en | No disponible | Hugging Face, 0 descargas | No disponible |
+| openai/whisper-small | ~244 M | 30 s | Multilingue (cerca de 99 idiomas) | Consultar la model card del modelo base | Hugging Face, muy extendido | No disponible en la informacion proporcionada |
+| openai/whisper-medium | ~769 M | 30 s | Multilingue | Consultar la model card del modelo base | Hugging Face | No disponible en la informacion proporcionada |
+| openai/whisper-large-v3 | ~1550 M | 30 s | Multilingue | Consultar la model card del modelo base | Hugging Face | No disponible en la informacion proporcionada |
 
 No se dispone de datos de WER ni de comparaciones directas contra otros adaptadores de sinhala, por lo que la comparativa se limita a parametros, ventana de contexto y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de WER ni de comparaciones directas contra otros adaptado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-sinhala-r32-seed456
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-sinhala-r32-seed456
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Documentacion de PEFT (libreria indicada en el repositorio): https://huggingface.co/docs/peft
 - Nota sobre la busqueda web: los resultados devueltos corresponden a paginas sobre el colectivo hacktivista Anonymous (Wikipedia en frances e ingles, lebigdata.fr, anonymoushackers.net, anoncph.com) y no guardan ninguna relacion con este modelo de reconocimiento de voz, por lo que no se incluyen como referencias tecnicas.

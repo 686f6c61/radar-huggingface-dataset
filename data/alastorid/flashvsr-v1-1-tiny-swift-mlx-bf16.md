@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlashVSR-v1.1-Tiny-Swift-MLX-BF16 (esta ficha) | Streaming DiT de video superresolucion, conversion Swift/MLX | no disponible (~3,22 GB BF16) | no disponible | Apache 2.0 | HuggingFace (runtime Waifu Swift/MLX) |
-| FlashVSR-v1.1 (JunhaoZhuang) | Streaming DiT de video superresolucion, oficial | no disponible | no disponible | Apache 2.0 | HuggingFace (implementacion oficial) |
+| FlashVSR-v1.1-Tiny-Swift-MLX-BF16 (esta ficha) | Streaming DiT de video superresolucion, conversion Swift/MLX | no disponible (~3,22 GB BF16) | no disponible | Apache 2.0 | Hugging Face (runtime Waifu Swift/MLX) |
+| FlashVSR-v1.1 (JunhaoZhuang) | Streaming DiT de video superresolucion, oficial | no disponible | no disponible | Apache 2.0 | Hugging Face (implementacion oficial) |
 | SeedVR2 | Reconstruccion/superresolucion de video | no disponible | no disponible | no disponible | incluido como algoritmo por defecto en Waifu |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada. La unica comparacion cualitativa documentada es que SeedVR2 sigue siendo el algoritmo por defecto en Waifu y que FlashVSR 1.1 se ofrece como alternativa seleccionable con comparacion A/B.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alastorid/FlashVSR-v1.1-Tiny-Swift-MLX-BF16
+- Modelo en Hugging Face: https://huggingface.co/alastorid/FlashVSR-v1.1-Tiny-Swift-MLX-BF16
 - Modelo base oficial: https://huggingface.co/JunhaoZhuang/FlashVSR-v1.1 (revision 27561b186ded3402d7c975f4fd722e2885b6135f)
 - Implementacion oficial y prompt: https://github.com/OpenImagingLab/FlashVSR (revision cf910c61a60733e610e9c6e8b607f80c3a6c202b)
 - Runtime/conversor nativo (Waifu): https://github.com/alastorid/waifu

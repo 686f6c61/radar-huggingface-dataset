@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed42` es un repositorio de pesos publicado en HuggingFace por el usuario maxbhartman. El propio identificador del modelo apunta a un artefacto de investigacion: el prefijo "anchor-removal" sugiere una tecnica de eliminacion o ablacion de anclas, el sufijo "gsm8k" indica que la evaluacion o el entrenamiento se realizo sobre el conjunto de problemas matematicos GSM8K, y los terminos "tau0.6", "attention-k20" y "seed42" apuntan a una configuracion experimental concreta (temperatura 0.6, algun parametro de atencion con valor k=20 y semilla aleatoria 42). Esta interpretacion se deriva unicamente de la nomenclatura del repositorio y no esta confirmada por documentacion publicada.
+`maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed42` es un repositorio de pesos publicado en Hugging Face por el usuario maxbhartman. El propio identificador del modelo apunta a un artefacto de investigacion: el prefijo "anchor-removal" sugiere una tecnica de eliminacion o ablacion de anclas, el sufijo "gsm8k" indica que la evaluacion o el entrenamiento se realizo sobre el conjunto de problemas matematicos GSM8K, y los terminos "tau0.6", "attention-k20" y "seed42" apuntan a una configuracion experimental concreta (temperatura 0.6, algun parametro de atencion con valor k=20 y semilla aleatoria 42). Esta interpretacion se deriva unicamente de la nomenclatura del repositorio y no esta confirmada por documentacion publicada.
 
 El repositorio esta etiquetado con pytorch, llama y region:us, lo que indica que los pesos estan en formato PyTorch y que la arquitectura base pertenece a la familia Llama. El tamano del repositorio es de 6.4 GB, coherente con pesos en precision fp16 de un modelo de aproximadamente 3.000 millones de parametros, o con un modelo de ~7.000 millones cuantizado a 8 bits, aunque no hay confirmacion oficial de ninguna de las dos hipotesis.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: se tra
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (tag "llama" en HuggingFace; se desconoce la variante concreta) |
+| Arquitectura | no disponible (tag "llama" en Hugging Face; se desconoce la variante concreta) |
 | Parametros totales | no disponible (el tamano de repositorio de 6.4 GB sugiere ~3B en fp16 o ~7B en 8 bits, sin confirmar) |
 | Parametros activos | no aplica / no disponible (no hay indicios de que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -79,7 +79,7 @@ No hay informacion suficiente para establecer una comparativa fiable. No se cono
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| anchor-removal-gsm8k-tau0.6-attention-k20-seed42 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| anchor-removal-gsm8k-tau0.6-attention-k20-seed42 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,10 +97,10 @@ No hay informacion suficiente para establecer una comparativa fiable. No se cono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed42
+- Repositorio en Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed42
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion tecnica: no disponible
 - Demo o space: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/maxbhartman (no verificado en la busqueda)
+- Perfil del autor en Hugging Face: https://huggingface.co/maxbhartman (no verificado en la busqueda)
 - Otras fuentes relevantes: no se han encontrado; los resultados de la busqueda web no guardaban relacion con el modelo.

@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparados entre estas alternativas en la 
 - Degradacion por cuantizacion: las cuantizaciones Q2_K y Q3_K_S/M/L reducen sensiblemente la calidad; para grounding fino se recomienda Q4_K_M o superior, y Q6_K/Q8_0 si la VRAM lo permite.
 - Dependencia de resolucion de entrada: el rendimiento en grounding depende de la resolucion y el escalado de las capturas; no se documentan valores recomendados.
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de los datos facilitados, lo que implica poca validacion comunitaria y ausencia de informes de fallos en produccion.
-- Fecha y procedencia de los datos: la informacion disponible es la publicada en HuggingFace; no se ha verificado de forma independiente el contenido del paper ni el proceso de entrenamiento.
+- Fecha y procedencia de los datos: la informacion disponible es la publicada en Hugging Face; no se ha verificado de forma independiente el contenido del paper ni el proceso de entrenamiento.
 
 ## Enlaces
 

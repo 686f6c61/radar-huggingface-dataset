@@ -62,7 +62,7 @@ No disponible. No se proporcionan información sobre otros adaptadores o modelos
 
 ## Enlaces
 
-- [HuggingFace - RareConcepts/soad-mm3-nextlat-20260822](https://huggingface.co/RareConcepts/soad-mm3-nextlat-20260822)
-- [HuggingFace - MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
+- [Hugging Face - RareConcepts/soad-mm3-nextlat-20260822](https://huggingface.co/RareConcepts/soad-mm3-nextlat-20260822)
+- [Hugging Face - MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 
 Nota: la búsqueda web no proporcionó información adicional relevante sobre este modelo.

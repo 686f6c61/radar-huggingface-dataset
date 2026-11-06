@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_3407` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/deepseek-llm-7b-chat`, publicado por el usuario rghosh8 en HuggingFace. Se trata de un checkpoint experimental orientado a servir como línea base (baseline) de entrenamiento sobre el conjunto de datos GSM8K, el benchmark de problemas matemáticos de nivel escolar. El nombre del repositorio indica la semilla utilizada (3407) y el dataset de entrenamiento, lo que sugiere un uso dentro de una campaña de experimentos reproducibles mas que un modelo destinado a produccion.
+`rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_3407` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/deepseek-llm-7b-chat`, publicado por el usuario rghosh8 en Hugging Face. Se trata de un checkpoint experimental orientado a servir como línea base (baseline) de entrenamiento sobre el conjunto de datos GSM8K, el benchmark de problemas matemáticos de nivel escolar. El nombre del repositorio indica la semilla utilizada (3407) y el dataset de entrenamiento, lo que sugiere un uso dentro de una campaña de experimentos reproducibles mas que un modelo destinado a produccion.
 
 El modelo conserva la arquitectura del DeepSeek LLM 7B original, un transformer decoder-only denso con aproximadamente 6.910 millones de parametros (6,91B) almacenados en safetensors, y un tamano de repositorio de 13,8 GB, coherente con pesos en precision de 16 bits. No se documenta en la informacion disponible ninguna modificacion estructural respecto al modelo base; el ajuste se realizo con TRL (version 1.15.0) sobre Transformers 5.17.0 y PyTorch 2.13.0.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_3407 | 6,91B | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint experimental de SFT sobre GSM8K |
-| deepseek-ai/deepseek-llm-7b-chat | 6,91B | no disponible en esta ficha | DeepSeek Model License (segun modelo base) | HuggingFace, ampliamente descargado | Modelo base conversacional; referencia directa |
-| Mistral-7B-Instruct-v0.2 | 7,24B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa densa de 7B con contexto largo y licencia permisiva |
-| Llama-3.1-8B-Instruct | 8,03B | 131.072 tokens | Llama 3.1 Community License | HuggingFace | Alternativa de tamano similar con contexto muy superior |
+| rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_3407 | 6,91B | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint experimental de SFT sobre GSM8K |
+| deepseek-ai/deepseek-llm-7b-chat | 6,91B | no disponible en esta ficha | DeepSeek Model License (segun modelo base) | Hugging Face, ampliamente descargado | Modelo base conversacional; referencia directa |
+| Mistral-7B-Instruct-v0.2 | 7,24B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa densa de 7B con contexto largo y licencia permisiva |
+| Llama-3.1-8B-Instruct | 8,03B | 131.072 tokens | Llama 3.1 Community License | Hugging Face | Alternativa de tamano similar con contexto muy superior |
 
 La comparacion con Mistral y Llama se ofrece como referencia de categoria; no se dispone de resultados de benchmarks de este checkpoint que permitan una comparacion cuantitativa.
 
@@ -89,7 +89,7 @@ La comparacion con Mistral y Llama se ofrece como referencia de categoria; no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_3407
+- Repositorio Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_3407
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Libreria TRL: https://github.com/huggingface/trl
 - Dataset GSM8K (referencia): https://huggingface.co/datasets/openai/gsm8k

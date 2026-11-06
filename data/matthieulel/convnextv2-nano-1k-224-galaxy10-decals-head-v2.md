@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnextv2-nano-1k-224-galaxy10-decals-head-v2` es un clasificador de imágenes para morfología de galaxias, desarrollado por el usuario de HuggingFace matthieulel como parte de la colección *Vision Foundation Models Benchmark*. El modelo adapta el backbone `facebook/convnextv2-nano-1k-224` al dataset Galaxy10 DECaLS (10 clases de morfología galáctica) mediante un régimen de *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena una cabeza lineal de 10 salidas.
+`convnextv2-nano-1k-224-galaxy10-decals-head-v2` es un clasificador de imágenes para morfología de galaxias, desarrollado por el usuario de Hugging Face matthieulel como parte de la colección *Vision Foundation Models Benchmark*. El modelo adapta el backbone `facebook/convnextv2-nano-1k-224` al dataset Galaxy10 DECaLS (10 clases de morfología galáctica) mediante un régimen de *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena una cabeza lineal de 10 salidas.
 
 La relevancia del checkpoint no reside en su rendimiento absoluto, sino en su papel dentro de un estudio sistemático: es una de las 80 configuraciones evaluadas (40 backbones preentrenados × dos regímenes de adaptación) bajo el protocolo revisado del artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Sirve, por tanto, como punto de referencia reproducible para medir cuánto conocimiento astronómico aporta un backbone de visión generalista cuando solo se permite reentrenar la cabeza de clasificación.
 
@@ -72,9 +72,9 @@ Evolución seleccionada por época (semilla 42): la accuracy de test pasa de 13,
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (ConvNeXt V2 Nano, head-only) | 14,99 M | imagen 224×224 px | 54,00% accuracy; 51,94% weighted F1 (semilla 42) | Apache 2.0 | HuggingFace |
-| `facebook/convnextv2-nano-1k-224` (base sin adaptar) | 15,0 M aprox. | imagen 224×224 px | no disponible (clasificador ImageNet-1k, no adaptado a galaxias) | Apache 2.0 | HuggingFace |
-| Otros backbones del *Vision Foundation Models Benchmark* | no disponible | no disponible | no disponible en esta ficha; resultados en el dataset `vision-foundation-models-benchmark-runs` | según backbone | HuggingFace (colección del autor) |
+| Este checkpoint (ConvNeXt V2 Nano, head-only) | 14,99 M | imagen 224×224 px | 54,00% accuracy; 51,94% weighted F1 (semilla 42) | Apache 2.0 | Hugging Face |
+| `facebook/convnextv2-nano-1k-224` (base sin adaptar) | 15,0 M aprox. | imagen 224×224 px | no disponible (clasificador ImageNet-1k, no adaptado a galaxias) | Apache 2.0 | Hugging Face |
+| Otros backbones del *Vision Foundation Models Benchmark* | no disponible | no disponible | no disponible en esta ficha; resultados en el dataset `vision-foundation-models-benchmark-runs` | según backbone | Hugging Face (colección del autor) |
 
 No se dispone de datos numéricos de modelos alternativos adaptados específicamente a Galaxy10 DECaLS en la información proporcionada, por lo que la comparativa cuantitativa con terceros queda como no disponible.
 
@@ -91,7 +91,7 @@ No se dispone de datos numéricos de modelos alternativos adaptados específicam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-nano-1k-224-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-nano-1k-224-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-nano-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

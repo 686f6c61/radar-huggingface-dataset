@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este checkpoint es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el autor de HuggingFace matthieulel. Parte del backbone auto-supervisado DINOv2 (variante base con una sola capa, `facebook/dinov2-base-imagenet1k-1-layer`) y se ha adaptado mediante *full fine-tuning* al conjunto de datos Galaxy10 DECaLS, que distingue diez clases morfológicas de galaxias. Forma parte de una colección de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
+Este checkpoint es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el autor de Hugging Face matthieulel. Parte del backbone auto-supervisado DINOv2 (variante base con una sola capa, `facebook/dinov2-base-imagenet1k-1-layer`) y se ha adaptado mediante *full fine-tuning* al conjunto de datos Galaxy10 DECaLS, que distingue diez clases morfológicas de galaxias. Forma parte de una colección de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
 
 El modelo resuelve una tarea concreta y acotada: dada una imagen de galaxia procedente del relevamiento DECaLS, predecir su clase morfológica entre diez categorías. No es un modelo generativo ni conversacional, sino un clasificador de imagen puro con una cabeza lineal de diez salidas sobre el encoder DINOv2. Con 86,6 millones de parámetros y un repositorio de 0,3 GB, está pensado para integrarse en pipelines de análisis astronómico y en flujos de etiquetado automático a gran escala.
 
@@ -49,7 +49,7 @@ La selección del checkpoint se hizo por mínima pérdida de validación, que co
 - Docencia y divulgación en astronomía computacional: el modelo es pequeño (0,3 GB) y se carga con pocas líneas de `transformers`, lo que facilita demostraciones reproducibles de clasificación morfológica en cursos y talleres.
 - Control de calidad de catálogos existentes: ejecutar el clasificador sobre galaxias ya etiquetadas y revisar las discrepancias permite detectar errores de clasificación o casos ambiguos en catálogos previos.
 - Prototipado rápido de nuevas taxonomías: al ser un clasificador de imagen estándar, la misma receta (full fine-tuning sobre DINOv2 base con cabeza lineal) puede replicarse sobre otros esquemas de clases o subconjuntos de DECaLS para validar una taxonomía antes de escalar.
-- Integración en servicios de inferencia de imágenes: el checkpoint es compatible con *endpoints* de HuggingFace y con despliegues estándar de `transformers`, lo que permite exponerlo como API de clasificación para equipos de investigación.
+- Integración en servicios de inferencia de imágenes: el checkpoint es compatible con *endpoints* de Hugging Face y con despliegues estándar de `transformers`, lo que permite exponerlo como API de clasificación para equipos de investigación.
 
 ## Benchmarks y rendimiento
 
@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/dinov2-base-imagenet1k-1-layer-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/dinov2-base-imagenet1k-1-layer-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/dinov2-base-imagenet1k-1-layer
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset con métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

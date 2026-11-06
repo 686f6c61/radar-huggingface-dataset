@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cam-dupo/retrieval-rc1` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de modelo ALBEF (Align Before Fuse) orientado a tareas de recuperación (retrieval) multimodal. Lo desarrolla el usuario cam-dupo y se distribuye bajo licencia Apache 2.0. El repositorio incluye un script Python (`predict.py`), un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors.
+`cam-dupo/retrieval-rc1` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de modelo ALBEF (Align Before Fuse) orientado a tareas de recuperación (retrieval) multimodal. Lo desarrolla el usuario cam-dupo y se distribuye bajo licencia Apache 2.0. El repositorio incluye un script Python (`predict.py`), un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors.
 
 Es importante subrayar que el propio autor declara explícitamente que el checkpoint incluido **no ha sido entrenado** ni evaluado: se trata de una inicialización válida para pruebas de humo (smoke tests), no de un modelo con rendimiento demostrado. La model card indica que no se reclama ninguna puntuación de benchmark y que cualquier resultado futuro deberá documentarse por separado.
 
@@ -81,5 +81,5 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cam-dupo/retrieval-rc1
+- Hugging Face: https://huggingface.co/cam-dupo/retrieval-rc1
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -75,5 +75,5 @@ No se dispone de información para comparar directamente con otras implementacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/harryming/sageattention-blackwell-wheels
+- Repositorio en Hugging Face: https://huggingface.co/harryming/sageattention-blackwell-wheels
 - Proyecto oficial SageAttention: https://github.com/thu-ml/SageAttention

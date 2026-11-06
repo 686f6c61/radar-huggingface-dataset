@@ -85,7 +85,7 @@ La comparación con Mistral-7B-Instruct y Llama-3.1-8B-Instruct es orientativa p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/techdj/apollo-v1-7b-F16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/techdj/apollo-v1-7b-F16-GGUF
 - Modelo base / adaptador original: https://huggingface.co/vanta-research/apollo-v1-7b
 - Espacio de conversión GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentación del servidor llama.cpp: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

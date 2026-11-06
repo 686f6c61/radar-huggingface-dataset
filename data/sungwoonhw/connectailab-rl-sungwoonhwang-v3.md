@@ -73,7 +73,7 @@ No se dispone de informacion sobre agentes comparables en el mismo entorno "road
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-SUNGWOONHWANG-v3 | no disponible | no aplica | 100.0% en 50 partidas | no disponible | HuggingFace |
+| connectailab-rl-SUNGWOONHWANG-v3 | no disponible | no aplica | 100.0% en 50 partidas | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de informacion sobre agentes comparables en el mismo entorno "road
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SUNGWOONHW/connectailab-rl-SUNGWOONHWANG-v3
+- Modelo en Hugging Face: https://huggingface.co/SUNGWOONHW/connectailab-rl-SUNGWOONHWANG-v3
 - Curso de referencia (CONNECT AI LAB, "AI CITY BUILDERS", leccion 6): no disponible como enlace directo en la informacion proporcionada.
 - Paper de PPO (referencia algoritmica): no disponible en la informacion proporcionada.
 - Repositorio del entorno "roadster continuo": no disponible en la informacion proporcionada.

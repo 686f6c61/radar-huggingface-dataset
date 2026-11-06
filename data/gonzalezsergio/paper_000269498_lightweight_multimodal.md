@@ -58,5 +58,5 @@ No disponible. No hay un modelo concreto para comparar. El documento se refiere 
 
 ## Enlaces
 
-- [HuggingFace - Gonzalezsergio/paper_000269498_lightweight_multimodal](https://huggingface.co/Gonzalezsergio/paper_000269498_lightweight_multimodal)
+- [Hugging Face - Gonzalezsergio/paper_000269498_lightweight_multimodal](https://huggingface.co/Gonzalezsergio/paper_000269498_lightweight_multimodal)
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

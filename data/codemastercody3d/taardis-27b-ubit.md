@@ -76,7 +76,7 @@ No se han encontrado en la búsqueda web papers, repositorios ni modelos compara
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | TAARDIS 27B ubit | ~27B nominales (base) | No disponible | Ternaria base-3, ~2 bpw, residencia ~10 GB | apache-2.0 | Repositorio HF; requiere código propio de onebit-forge |
-| Qwen/Qwen3.8-27B (base) | 27B nominales | No disponible | Precisión original del modelo base | apache-2.0 | HuggingFace |
+| Qwen/Qwen3.8-27B (base) | 27B nominales | No disponible | Precisión original del modelo base | apache-2.0 | Hugging Face |
 | Otros modelos ternarios de categoría similar | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la búsqueda realizada |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se han encontrado en la búsqueda web papers, repositorios ni modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CodeMasterCody3D/taardis-27b-ubit
+- Modelo en Hugging Face: https://huggingface.co/CodeMasterCody3D/taardis-27b-ubit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Código de carga y cuantización: referenciado dentro del propio repositorio como `code/ktrit_resident.py`, `code/base3_pack.py`, además de `rotation.py` y `ternary_gptq.py`. No se ha localizado un repositorio público independiente del proyecto onebit-forge.
 - Papers, blogs o demos adicionales: no se han encontrado. La búsqueda web devolvió únicamente resultados genéricos sobre Wikipedia, sin relación con el modelo.

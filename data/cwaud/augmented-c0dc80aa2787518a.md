@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cwaud/augmented-c0dc80aa2787518a` es un checkpoint de 2.779.683.840 parámetros (≈2,78 B) publicado en HuggingFace por el usuario `cwaud` bajo la librería `transformers`. El identificador es un hash autogenerado y la model card es la plantilla por defecto de HuggingFace sin ninguna sección completada ("[More Information Needed]" en todos los apartados), lo que apunta a una subida automatizada o a un experimento interno sin documentación asociada. El repositorio ocupa 5,6 GB, un tamaño coherente con pesos en precisión de 16 bits (2,78 B × 2 bytes ≈ 5,56 GB) almacenados en `safetensors`.
+`cwaud/augmented-c0dc80aa2787518a` es un checkpoint de 2.779.683.840 parámetros (≈2,78 B) publicado en Hugging Face por el usuario `cwaud` bajo la librería `transformers`. El identificador es un hash autogenerado y la model card es la plantilla por defecto de Hugging Face sin ninguna sección completada ("[More Information Needed]" en todos los apartados), lo que apunta a una subida automatizada o a un experimento interno sin documentación asociada. El repositorio ocupa 5,6 GB, un tamaño coherente con pesos en precisión de 16 bits (2,78 B × 2 bytes ≈ 5,56 GB) almacenados en `safetensors`.
 
 La única información sustantiva sobre la arquitectura es el tag `phi` de la model card, que sitúa al modelo en la familia Phi de Microsoft (transformers densos de pequeño tamaño orientados a razonamiento y código). No se especifica a partir de qué checkpoint se ha entrenado ni qué tipo de ajuste ("augmented") se le ha aplicado, por lo que no es posible confirmar si se trata de un fine-tuning, de una fusión de modelos o de un modelo entrenado desde cero con la arquitectura Phi.
 
@@ -35,7 +35,7 @@ No hay ningún dato sobre el entrenamiento: se desconoce el volumen de tokens, l
 - Agentes y razonamiento multi-paso: no disponible; sin contexto declarado no se puede planificar sobre ventanas largas.
 - Multilingüismo: no disponible; el campo de idiomas está vacío.
 - Modo "thinking", visión o audio: no disponible; el repositorio solo contiene pesos de texto.
-- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican que el checkpoint puede servirse con TGI y con HuggingFace Inference Endpoints.
+- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican que el checkpoint puede servirse con TGI y con Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -58,12 +58,12 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU de centro de datos: A100 (40/80 GB), H100, L40S o A10G son sobredimensionadas para este tamaño; una sola A10G permite servir varias réplicas.
 - GPU de consumo: cabe con holgura en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090; en 8 GB (RTX 3060 Ti, RTX 4060) requiere cuantización a 8 o 4 bits.
 - CPU: viable en inferencia con cuantización, aunque sin datos de latencia publicados.
-- Opciones de despliegue: `transformers` (librería declarada), TGI y HuggingFace Inference Endpoints (tags). vLLM y llama.cpp son compatibles a nivel de arquitectura si el modelo se exporta a los formatos correspondientes, pero el repositorio no incluye pesos GGUF ni AWQ/GPTQ.
+- Opciones de despliegue: `transformers` (librería declarada), TGI y Hugging Face Inference Endpoints (tags). vLLM y llama.cpp son compatibles a nivel de arquitectura si el modelo se exporta a los formatos correspondientes, pero el repositorio no incluye pesos GGUF ni AWQ/GPTQ.
 - Latencia y throughput: no disponibles; sería necesario medirlos por hardware y cuantización.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos son valores públicos de referencia de sus respectivas model cards; los del modelo evaluado provienen únicamente de los metadatos de HuggingFace.
+Los datos de los modelos alternativos son valores públicos de referencia de sus respectivas model cards; los del modelo evaluado provienen únicamente de los metadatos de Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
@@ -87,7 +87,7 @@ Frente a estas alternativas, el checkpoint de `cwaud` no aporta información ver
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cwaud/augmented-c0dc80aa2787518a
+- Modelo en Hugging Face: https://huggingface.co/cwaud/augmented-c0dc80aa2787518a
 - Paper citado en los tags (calculador de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo; los resultados devueltos corresponden a mods del videojuego Street Fighter V y no guardan relación con el checkpoint.

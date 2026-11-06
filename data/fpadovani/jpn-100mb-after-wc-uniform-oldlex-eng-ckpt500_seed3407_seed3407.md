@@ -49,7 +49,7 @@ En cuanto al entrenamiento, la model card confirma que se trata de un ajuste fin
 - Pruebas de infraestructura de despliegue: con 125 millones de parametros, es util para validar pipelines de serving (TGI, vLLM, endpoints compatibles) sin consumir recursos de GPU relevantes.
 - Prototipado en CPU o hardware de gama baja: un modelo de este tamano permite iterar en portatiles o instancias sin GPU, algo inviable con modelos de miles de millones de parametros.
 - Generacion de texto sintetico para filtrado posterior: se puede usar como generador barato en un primer paso de un pipeline de datos, descartando despues las salidas de baja calidad con un modelo mayor.
-- Demostraciones docentes de ajuste fino: el repositorio ilustra el flujo completo base model, SFT, publicacion en HuggingFace y trazabilidad con W&B, adecuado para material de curso.
+- Demostraciones docentes de ajuste fino: el repositorio ilustra el flujo completo base model, SFT, publicacion en Hugging Face y trazabilidad con W&B, adecuado para material de curso.
 - Experimentos controlados de sesgo y toxicidad: al ser un modelo pequeno y de dominio acotado, resulta manejable para estudiar como se propagan sesgos desde un corpus reducido.
 
 ## Benchmarks y rendimiento
@@ -71,9 +71,9 @@ La comparativa se limita a caracteristicas estructurales, ya que este modelo no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/jpn-100mb-...ckpt500 | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas |
+| fpadovani/jpn-100mb-...ckpt500 | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Modified MIT | Ampliamente disponible |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 | Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Ampliamente disponible |
 
 En rendimiento no procede comparacion alguna: no hay benchmarks publicados de este checkpoint y, por tanto, cualquier afirmacion cuantitativa seria una invencion. La diferencia practica relevante frente a las alternativas es la licencia: GPT-2 small, DistilGPT-2 y Pythia-160M tienen terminos claros y permiten uso comercial, mientras que este repositorio no declara licencia utilizable.
@@ -93,7 +93,7 @@ En rendimiento no procede comparacion alguna: no hay benchmarks publicados de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/76ek10ud
 - Repositorio de TRL: https://github.com/huggingface/trl

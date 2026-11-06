@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci/1.7b-MixtureVitae-...-sr30k | 1,7B | 16k | other | HuggingFace (15 descargas) | Fine-tuning sobre datos de razonamiento; sin benchmarks |
-| ali-elganzory/1.7b-MixtureVitae-...-DPO-Tulu3 | 1,7B | 16k | no disponible | HuggingFace | Modelo base; incluye DPO y datos Tulu3 decontaminados |
-| Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | HuggingFace, ampliamente validado | Modelo pequeno con benchmarks publicados y soporte multilingue |
-| SmolLM2-1.7B | 1,7B | 8k | Apache 2.0 | HuggingFace | Modelo pequeno con evaluacion publica y ecosistema amplio |
+| open-sci/1.7b-MixtureVitae-...-sr30k | 1,7B | 16k | other | Hugging Face (15 descargas) | Fine-tuning sobre datos de razonamiento; sin benchmarks |
+| ali-elganzory/1.7b-MixtureVitae-...-DPO-Tulu3 | 1,7B | 16k | no disponible | Hugging Face | Modelo base; incluye DPO y datos Tulu3 decontaminados |
+| Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | Hugging Face, ampliamente validado | Modelo pequeno con benchmarks publicados y soporte multilingue |
+| SmolLM2-1.7B | 1,7B | 8k | Apache 2.0 | Hugging Face | Modelo pequeno con evaluacion publica y ecosistema amplio |
 
 La comparativa con Qwen2.5-1.5B y SmolLM2-1.7B es orientativa por tamano; no existen datos de rendimiento del modelo open-sci que permitan una comparacion cuantitativa.
 
@@ -92,7 +92,7 @@ La comparativa con Qwen2.5-1.5B y SmolLM2-1.7B es orientativa por tamano; no exi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-DPO-Tulu3-decontaminated-sr30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-DPO-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-DPO-Tulu3-decontaminated
 - Llama Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Dataset de entrenamiento (referencia en la model card): /gpfs/scratch/ehpc524/ot/datasets/Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf (ruta local, no URL publica)

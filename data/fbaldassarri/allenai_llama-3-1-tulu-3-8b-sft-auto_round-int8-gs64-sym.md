@@ -6,7 +6,7 @@ Este repositorio contiene una versión cuantizada a INT8 del modelo allenai/Llam
 
 El modelo base Tulu 3 8B SFT es un ajuste fino supervisado del Llama 3.1 8B de Meta, orientado a instrucciones y conversación. Esta versión cuantizada conserva la plantilla de chat del modelo original y está pensada para inferencia en hardware Intel: CPU, iGPU Arc mediante intel-extension-for-pytorch y NPU (AI Boost en Core Ultra) mediante OpenVINO. Es relevante para quienes necesitan desplegar un modelo de 8B en entornos sin GPU dedicada NVIDIA, reduciendo el peso de los pesos a 8 bits por parámetro con grupos de 64.
 
-La ficha describe únicamente lo que consta en la información disponible: la model card del autor de la cuantización y los metadatos de HuggingFace. No se han publicado resultados de benchmarks para esta variante cuantizada ni detalles del entrenamiento original del modelo Tulu 3 SFT en la información proporcionada.
+La ficha describe únicamente lo que consta en la información disponible: la model card del autor de la cuantización y los metadatos de Hugging Face. No se han publicado resultados de benchmarks para esta variante cuantizada ni detalles del entrenamiento original del modelo Tulu 3 SFT en la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Tulu-3-8B-SFT INT8 AutoRound) | ~2,93B según safetensors del repo (base 8B) | no disponible | INT8, gs64, simétrica | apache-2.0 | HuggingFace, 17 descargas |
-| allenai/Llama-3.1-Tulu-3-8B-SFT (base) | 8B | no disponible en esta ficha | bfloat16 | apache-2.0 | HuggingFace (modelo original de AI2) |
-| Llama-3.1-8B-Instruct (Meta) | 8B | 128k (según documentación de Meta) | bfloat16 y múltiples | Llama 3.1 Community License | HuggingFace, ampliamente usado |
-| Otras cuantizaciones INT8/INT4 de Tulu 3 8B | 8B | no disponible | INT8/INT4 (AWQ, GPTQ, etc.) | apache-2.0 según el artefacto | HuggingFace (según autor) |
+| Este modelo (Tulu-3-8B-SFT INT8 AutoRound) | ~2,93B según safetensors del repo (base 8B) | no disponible | INT8, gs64, simétrica | apache-2.0 | Hugging Face, 17 descargas |
+| allenai/Llama-3.1-Tulu-3-8B-SFT (base) | 8B | no disponible en esta ficha | bfloat16 | apache-2.0 | Hugging Face (modelo original de AI2) |
+| Llama-3.1-8B-Instruct (Meta) | 8B | 128k (según documentación de Meta) | bfloat16 y múltiples | Llama 3.1 Community License | Hugging Face, ampliamente usado |
+| Otras cuantizaciones INT8/INT4 de Tulu 3 8B | 8B | no disponible | INT8/INT4 (AWQ, GPTQ, etc.) | apache-2.0 según el artefacto | Hugging Face (según autor) |
 
 La comparación se limita a datos estructurales; no hay benchmarks publicados para esta variante que permitan comparar calidad frente al modelo base o frente a otras cuantizaciones.
 
@@ -84,8 +84,8 @@ La comparación se limita a datos estructurales; no hay benchmarks publicados pa
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_round-int8-gs64-sym
-- Modelo base en HuggingFace: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-SFT
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_round-int8-gs64-sym
+- Modelo base en Hugging Face: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-SFT
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - auto-round-pipeline (receta de reproducción): https://git.epicdynamic.com/auto-round-pipeline
 - Licencia Apache 2.0: https://choosealicense.com/licenses/apache-2.0/

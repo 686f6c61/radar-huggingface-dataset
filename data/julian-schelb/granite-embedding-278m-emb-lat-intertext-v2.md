@@ -74,7 +74,7 @@ No se dispone de datos de comparacion directa con otros modelos en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julian-schelb/granite-embedding-278m-emb-lat-intertext-v2
+- Modelo en Hugging Face: https://huggingface.co/julian-schelb/granite-embedding-278m-emb-lat-intertext-v2
 - Modelo base: https://huggingface.co/ibm-granite/granite-embedding-278m-multilingual
 - Dataset de etiquetas: https://huggingface.co/datasets/julian-schelb/latin-classical-intertextuality-labels
 - Dataset de corpus: https://huggingface.co/datasets/julian-schelb/latin-classical-intertextuality-corpus

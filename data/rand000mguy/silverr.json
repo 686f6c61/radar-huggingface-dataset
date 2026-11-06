@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/SilverR",
+  "slug": "rand000mguy-silverr",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/SilverR",
+  "created_at": "2026-11-06T06:39:36.000Z",
+  "updated_at": "2026-11-06T06:39:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 460803065,
+  "storage_human": "461 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -24,7 +24,7 @@ Su relevancia es acotada y muy especifica: sirve a investigadores que quieran es
 | Tamano del repositorio | 226,3 GB |
 | Framework de entrenamiento | VERL con FSDP (indicado por el autor) |
 | Tarea de entrenamiento | HealthBench en variante estatica, recompensa por rubrica completa (segun identificador) |
-| Pipeline en HuggingFace | reinforcement-learning |
+| Pipeline en Hugging Face | reinforcement-learning |
 
 ## Arquitectura y entrenamiento
 
@@ -74,10 +74,10 @@ La comparacion se plantea a nivel de familia y formato, ya que este repositorio 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este repositorio (HYU-NLP-EVA2) | ~4B (inferido) | No disponible | Checkpoints VERL FSDP, requieren merge | No disponible | 226,3 GB, 0 descargas |
-| Qwen3-4B (modelo base presumible) | ~4B | No verificado en esta ficha | Safetensors, GGUF | No verificada en esta ficha | Publico en HuggingFace |
-| Llama 3.2 3B Instruct | ~3B | No verificado en esta ficha | Safetensors, GGUF | Licencia de comunidad Llama | Publico en HuggingFace |
-| Phi-4-mini | ~3,8B | No verificado en esta ficha | Safetensors | Licencia MIT (segun el autor del modelo) | Publico en HuggingFace |
-| Gemma 3 4B | ~4B | No verificado en esta ficha | Safetensors, GGUF | Terminos de uso de Gemma | Publico en HuggingFace |
+| Qwen3-4B (modelo base presumible) | ~4B | No verificado en esta ficha | Safetensors, GGUF | No verificada en esta ficha | Publico en Hugging Face |
+| Llama 3.2 3B Instruct | ~3B | No verificado en esta ficha | Safetensors, GGUF | Licencia de comunidad Llama | Publico en Hugging Face |
+| Phi-4-mini | ~3,8B | No verificado en esta ficha | Safetensors | Licencia MIT (segun el autor del modelo) | Publico en Hugging Face |
+| Gemma 3 4B | ~4B | No verificado en esta ficha | Safetensors, GGUF | Terminos de uso de Gemma | Publico en Hugging Face |
 
 La diferencia practica es que las alternativas son directamente desplegables, mientras que este repositorio exige el merge FSDP y, previsiblemente, un proceso de validacion adicional antes de cualquier uso en inferencia.
 
@@ -96,6 +96,6 @@ La diferencia practica es que las alternativas son directamente desplegables, mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/20261021_healthbench_static_qwen3-4b_impl-ruscarl_s1_whole_rubric
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/20261021_healthbench_static_qwen3-4b_impl-ruscarl_s1_whole_rubric
 - Repositorio del framework VERL citado en la model card (no incluido en la informacion proporcionada, referencia al herramienta de entrenamiento): https://github.com/volcengine/verl
 - Paper, blog, demo o repositorio adicional del autor: no disponibles en la informacion proporcionada.

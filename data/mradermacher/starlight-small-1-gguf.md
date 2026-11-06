@@ -24,14 +24,14 @@ Su relevancia actual es práctica: al estar bajo licencia Apache 2.0 y en format
 | Librería declarada | transformers |
 | Modelo base | North-ML1/starlight-small-1 |
 | Tamaño del repositorio | 7,5 GB |
-| Fecha de creación del repositorio | 2026-10-06 (según metadatos de HuggingFace) |
-| Última actualización | 2026-10-06 (según metadatos de HuggingFace) |
+| Fecha de creación del repositorio | 2026-10-06 (según metadatos de Hugging Face) |
+| Última actualización | 2026-10-06 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo base en la documentación disponible. Los metadatos de HuggingFace no especifican si se trata de un transformer denso, una arquitectura MoE, un modelo híbrido o un modelo basado en space state models (SSM). Tampoco se indica el número de capas, la dimensión oculta, el número de cabezas de atención ni el tamaño del vocabulario. La etiqueta "starlight" apunta a una familia propia de North-ML1, pero no hay material técnico asociado en la información proporcionada.
+No se ha publicado información sobre la arquitectura del modelo base en la documentación disponible. Los metadatos de Hugging Face no especifican si se trata de un transformer denso, una arquitectura MoE, un modelo híbrido o un modelo basado en space state models (SSM). Tampoco se indica el número de capas, la dimensión oculta, el número de cabezas de atención ni el tamaño del vocabulario. La etiqueta "starlight" apunta a una familia propia de North-ML1, pero no hay material técnico asociado en la información proporcionada.
 
-Respecto al entrenamiento, no hay datos disponibles sobre el número de tokens utilizados, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre posibles innovaciones técnicas (atención lineal, decodificación especulativa, atención por ventanas, etc.). El repositorio de mradermacher documenta únicamente el proceso de cuantización: cuantizaciones estáticas, sin versiones ponderadas o imatrix en el momento de la publicación, y con conversión desde pesos de HuggingFace (convert_type: hf).
+Respecto al entrenamiento, no hay datos disponibles sobre el número de tokens utilizados, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre posibles innovaciones técnicas (atención lineal, decodificación especulativa, atención por ventanas, etc.). El repositorio de mradermacher documenta únicamente el proceso de cuantización: cuantizaciones estáticas, sin versiones ponderadas o imatrix en el momento de la publicación, y con conversión desde pesos de Hugging Face (convert_type: hf).
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ Respecto al entrenamiento, no hay datos disponibles sobre el número de tokens u
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench, Perplexity ni de ninguna otra evaluación. La búsqueda web realizada no devolvió resultados relacionados con el modelo (los resultados obtenidos correspondían a páginas de estado de servidores de videojuegos sin relación con el tema).
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench, Perplexity ni de ninguna otra evaluación. La búsqueda web realizada no devolvió resultados relacionados con el modelo (los resultados obtenidos correspondían a páginas de estado de servidores de videojuegos sin relación con el tema).
 
 ## Requisitos de hardware
 

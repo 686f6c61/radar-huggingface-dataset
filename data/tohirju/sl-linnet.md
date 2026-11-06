@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sl-linnet es un modelo de texto a voz (TTS) publicado en HuggingFace por el usuario Tohirju bajo el identificador Tohirju/sl-linnet. Según las etiquetas del repositorio, se trata de un sistema orientado a síntesis de voz con capacidad de clonación de voz (voice-cloning), con el tayiko (código ISO tg) como único idioma declarado. La librería asociada es chatterbox, lo que apunta a una adaptación o ajuste fino sobre la arquitectura TTS open source de Resemble AI, aunque esta relación no se confirma en la información disponible.
+sl-linnet es un modelo de texto a voz (TTS) publicado en Hugging Face por el usuario Tohirju bajo el identificador Tohirju/sl-linnet. Según las etiquetas del repositorio, se trata de un sistema orientado a síntesis de voz con capacidad de clonación de voz (voice-cloning), con el tayiko (código ISO tg) como único idioma declarado. La librería asociada es chatterbox, lo que apunta a una adaptación o ajuste fino sobre la arquitectura TTS open source de Resemble AI, aunque esta relación no se confirma en la información disponible.
 
-El repositorio ocupa 3,2 GB, está publicado bajo licencia MIT y su acceso está restringido: es un modelo gated que exige aceptar condiciones adicionales en HuggingFace antes de poder descargarlo. El pipeline declarado es text-to-speech y la licencia MIT permitiría, en principio, uso comercial, siempre que se respeten las condiciones de acceso del propio repositorio.
+El repositorio ocupa 3,2 GB, está publicado bajo licencia MIT y su acceso está restringido: es un modelo gated que exige aceptar condiciones adicionales en Hugging Face antes de poder descargarlo. El pipeline declarado es text-to-speech y la licencia MIT permitiría, en principio, uso comercial, siempre que se respeten las condiciones de acceso del propio repositorio.
 
 La relevancia de este modelo es acotada pero concreta: el tayiko es un idioma con muy poca representación en el ecosistema TTS open source, dominado por inglés, chino y las principales lenguas europeas. Un modelo de voz con clonación para tayiko cubre un nicho real (accesibilidad, medios locales, doblaje, preservación lingüística), aunque conviene señalar que, en el momento de redactar esta ficha, el modelo acumula 0 descargas y 0 "me gusta", por lo que no existe validación externa de su calidad ni de su comportamiento en producción.
 
@@ -24,7 +24,7 @@ La relevancia de este modelo es acotada pero concreta: el tayiko es un idioma co
 | Librería declarada | chatterbox |
 | Clonación de voz | Sí, según la etiqueta voice-cloning |
 | Tamaño del repositorio | 3,2 GB |
-| Acceso | Restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Autor | Tohirju |
 | Fecha de creación | 22 de septiembre de 2026 |
 | Última actualización | 22 de septiembre de 2026 |
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Tohirju/sl-linnet | TTS con clonación de voz | Tayiko (tg) | MIT | No disponible (repo de 3,2 GB) | HuggingFace, acceso restringido (gated) |
+| Tohirju/sl-linnet | TTS con clonación de voz | Tayiko (tg) | MIT | No disponible (repo de 3,2 GB) | Hugging Face, acceso restringido (gated) |
 | Chatterbox (Resemble AI) | TTS con clonación de voz y control de emoción | Multilingüe (no se detalla en la información disponible) | MIT | No disponible en la información proporcionada | Público, no restringido |
 | Alternativas TTS open source para lenguas minoritarias | TTS | Variable según el proyecto | Variable | Variable | No disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de parámetros, contexto o rendimiento de los
 ## Limitaciones y advertencias
 
 - Modelo sin validación externa: 0 descargas y 0 "me gusta" en el momento de redactar esta ficha. No hay evidencia pública de calidad, estabilidad ni corrección lingüística.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que añade una dependencia de aprobación previa a cualquier uso, incluso comercial.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que añade una dependencia de aprobación previa a cualquier uso, incluso comercial.
 - Ausencia total de documentación técnica: sin model card detallada, sin ficha de entrenamiento y sin métricas, es imposible auditar sesgos, cobertura dialectal o comportamiento en dominios concretos.
 - Sesgos potenciales: al no documentarse el dataset de entrenamiento, se desconoce la distribución de acentos, géneros, edades y registros de las voces utilizadas, lo que puede producir una representación desequilibrada de la población tayiko-parlante.
 - Riesgo en la pronunciación de préstamos y nombres propios: los sistemas TTS entrenados en corpus limitados suelen fallar en palabras de origen extranjero, cifras, siglas y topónimos.
@@ -99,5 +99,5 @@ No se dispone de datos verificados de parámetros, contexto o rendimiento de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tohirju/sl-linnet
+- Modelo en Hugging Face: https://huggingface.co/Tohirju/sl-linnet
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web. Los resultados devueltos corresponden a páginas de soporte y blogs de Microsoft (contacto, inicio de sesión de Hotmail, Microsoft Copilot y tasa de refresco de monitor en Windows), sin relación alguna con el modelo, el TTS o el idioma tayiko, por lo que se descartan como fuentes.

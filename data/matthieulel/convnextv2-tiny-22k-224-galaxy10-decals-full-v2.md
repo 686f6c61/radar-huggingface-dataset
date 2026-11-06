@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `convnextv2-tiny-22k-224-galaxy10-decals-full-v2` es un clasificador de imágenes de morfología galáctica desarrollado por el usuario de HuggingFace `matthieulel`. Se trata de un ajuste fino completo (*full fine-tuning*) del backbone `facebook/convnextv2-tiny-22k-224` sobre el conjunto de datos Galaxy10 DECaLS, que contiene 17.736 imágenes de galaxias etiquetadas en 10 clases morfológicas. El modelo resuelve una tarea concreta de visión por computador aplicada a astronomía: predecir la clase morfológica de una galaxia a partir de una imagen de 224x224 píxeles.
+El modelo `convnextv2-tiny-22k-224-galaxy10-decals-full-v2` es un clasificador de imágenes de morfología galáctica desarrollado por el usuario de Hugging Face `matthieulel`. Se trata de un ajuste fino completo (*full fine-tuning*) del backbone `facebook/convnextv2-tiny-22k-224` sobre el conjunto de datos Galaxy10 DECaLS, que contiene 17.736 imágenes de galaxias etiquetadas en 10 clases morfológicas. El modelo resuelve una tarea concreta de visión por computador aplicada a astronomía: predecir la clase morfológica de una galaxia a partir de una imagen de 224x224 píxeles.
 
 Forma parte de una colección mayor denominada *Vision Foundation Models Benchmark*, que evalúa 40 backbones preentrenados bajo dos regímenes de adaptación (80 configuraciones en total) con una receta de entrenamiento idéntica, en el marco de un artículo en revisión para *Astronomy and Computing* (2026). Este checkpoint concreto corresponde a la semilla 42, época 13 de 30, seleccionada por mínima pérdida de validación.
 
@@ -38,7 +38,7 @@ El entrenamiento siguió una receta idéntica para los 40 backbones del benchmar
 - Procesamiento de imágenes RGB de 224x224 píxeles con normalización estándar del procesador de imágenes.
 - Inferencia determinista y ligera: 27,87 M de parámetros, adecuada para ejecución en CPU o GPU de gama baja.
 - Integración nativa con la librería `transformers` mediante `AutoModelForImageClassification` y `AutoImageProcessor`.
-- Compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto: es exclusivamente un clasificador de imágenes.
 - No dispone de capacidades multilingües ni de procesamiento de audio o vídeo.
 
@@ -70,7 +70,7 @@ No se han publicado en la información disponible resultados comparativos frente
 - **VRAM estimada para inferencia**: inferior a 1 GB en fp32 (27,87 M de parámetros x 4 bytes ≈ 112 MB de pesos, más activaciones y overhead). Cabe holgadamente en cualquier GPU consumer.
 - **GPU recomendadas**: cualquier GPU con al menos 1-2 GB de VRAM; funciona en RTX 3060, RTX 4090, A100, H100 e incluso en CPU.
 - **Cabe en GPU consumer**: sí, en cualquier GPU consumer moderna (y en muchas integradas).
-- **Opciones de despliegue**: `transformers` (PyTorch), HuggingFace Inference Endpoints (tag `endpoints_compatible`), exportación a ONNX o TorchScript para servir con ONNX Runtime o Triton. No se documentan pesos GGUF ni soporte nativo en llama.cpp u Ollama (no aplica a un clasificador de imágenes).
+- **Opciones de despliegue**: `transformers` (PyTorch), Hugging Face Inference Endpoints (tag `endpoints_compatible`), exportación a ONNX o TorchScript para servir con ONNX Runtime o Triton. No se documentan pesos GGUF ni soporte nativo en llama.cpp u Ollama (no aplica a un clasificador de imágenes).
 - **Latencia y throughput estimados**: no disponibles en la información proporcionada. Dado el tamaño del modelo, se espera latencia de milisegundos por imagen en GPU moderna, pero no se aportan cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| convnextv2-tiny-22k-224-galaxy10-decals-full-v2 (este) | 27,87 M | 224x224 px | Apache 2.0 | HuggingFace |
-| facebook/convnextv2-tiny-22k-224 (base) | ~28 M | 224x224 px | Apache 2.0 | HuggingFace |
+| convnextv2-tiny-22k-224-galaxy10-decals-full-v2 (este) | 27,87 M | 224x224 px | Apache 2.0 | Hugging Face |
+| facebook/convnextv2-tiny-22k-224 (base) | ~28 M | 224x224 px | Apache 2.0 | Hugging Face |
 | Otros backbones del benchmark (ViT, Swin, etc.) | No disponible | No disponible | No disponible | Colección Vision Foundation Models Benchmark |
 
 Los resultados completos de la comparativa entre los 40 backbones están en el dataset `vision-foundation-models-benchmark-runs`, no incluido en esta ficha.
@@ -98,7 +98,7 @@ Los resultados completos de la comparativa entre los 40 backbones están en el d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-tiny-22k-224-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-tiny-22k-224-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-tiny-22k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

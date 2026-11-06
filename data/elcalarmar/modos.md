@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elcalarmar/Modos es un repositorio alojado en HuggingFace cuyo unico dato verificable es su identificador, su autor (Elcalarmar) y sus marcas temporales de creacion y actualizacion, ambas del 30 de septiembre de 2026. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 1 like, no declara pipeline de inferencia, no especifica licencia, no indica idiomas soportados y no incluye una tarjeta de modelo con descripcion tecnica. No hay por tanto informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni formato de pesos.
+Elcalarmar/Modos es un repositorio alojado en Hugging Face cuyo unico dato verificable es su identificador, su autor (Elcalarmar) y sus marcas temporales de creacion y actualizacion, ambas del 30 de septiembre de 2026. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 1 like, no declara pipeline de inferencia, no especifica licencia, no indica idiomas soportados y no incluye una tarjeta de modelo con descripcion tecnica. No hay por tanto informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni formato de pesos.
 
 La busqueda web realizada no devuelve ningun resultado relacionado con este repositorio ni con el autor. Los enlaces recuperados corresponden a entidades homonimas o parcialmente coincidentes: articulos sobre ataques de denegacion de servicio a modelos (MoDoS), un motor de agentes denominado calamar, contenido de entretenimiento sobre la serie El Juego del Calamar, la plataforma de infraestructura Modal y la web de una empresa de software para capital riesgo llamada Modos. Ninguno de ellos guarda relacion con el modelo o artefacto publicado bajo el identificador Elcalarmar/Modos.
 
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Elcalarmar/Modos
+- Repositorio en Hugging Face: https://huggingface.co/Elcalarmar/Modos
 - Resultados de busqueda web revisados, ninguno relacionado con el repositorio:
   - https://techmaniacs.com/2025/06/05/model-denial-of-service-modos-overloading-ai-with-adversarial-input/
   - https://github.com/hqlalala/calamar

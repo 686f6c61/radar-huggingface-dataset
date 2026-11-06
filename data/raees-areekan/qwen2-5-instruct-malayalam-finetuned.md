@@ -6,7 +6,7 @@ El modelo `raees-areekan/Qwen2.5-instruct-Malayalam-Finetuned` es un ajuste fino
 
 La relevancia de este modelo radica en la escasez de modelos de lenguaje de alta calidad para lenguas minoritarias como el malayalam. Al aprovechar un modelo base robusto como Qwen2.5, se espera que el fine-tune herede buena parte de sus capacidades, aunque no se dispone de documentación que detalle el proceso de entrenamiento, el tamaño del modelo resultante ni los datos utilizados. La licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su adopción en proyectos reales.
 
-Actualmente, el modelo no tiene descargas ni valoraciones en HuggingFace, y la model card solo incluye la licencia. Esto sugiere que es un trabajo reciente o experimental, con escasa validación externa. Para desarrolladores interesados en procesamiento de lenguaje natural en malayalam, este modelo podría ser un punto de partida, pero se recomienda evaluar su rendimiento antes de usarlo en producción.
+Actualmente, el modelo no tiene descargas ni valoraciones en Hugging Face, y la model card solo incluye la licencia. Esto sugiere que es un trabajo reciente o experimental, con escasa validación externa. Para desarrolladores interesados en procesamiento de lenguaje natural en malayalam, este modelo podría ser un punto de partida, pero se recomienda evaluar su rendimiento antes de usarlo en producción.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se dispone de información sobre otros fine-tunes de Qwen2.5 para malayalam n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raees-areekan/Qwen2.5-instruct-Malayalam-Finetuned
+- Hugging Face: https://huggingface.co/raees-areekan/Qwen2.5-instruct-Malayalam-Finetuned
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Qwen2.5-1.5B-Instruct (referencia del modelo base): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Technical Report Qwen2.5: https://arxiv.org/abs/2412.15115

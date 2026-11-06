@@ -97,10 +97,10 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `wq2012/ls_conformer_base_ge2e` | 4.551.558 (encoder) | audio variable con VAD, 16 kHz, log-mel 80 | Apache 2.0 | HuggingFace, GitHub, PyPI |
+| `wq2012/ls_conformer_base_ge2e` | 4.551.558 (encoder) | audio variable con VAD, 16 kHz, log-mel 80 | Apache 2.0 | Hugging Face, GitHub, PyPI |
 | ECAPA-TDNN (familia tipica de verificacion) | no disponible | audio variable | variable segun implementacion | multiples implementaciones publicas |
 | WeSpeaker ResNet (familia tipica) | no disponible | audio variable | variable segun implementacion | repositorio publico |
-| WavLM / Wav2Vec2-Conformer para speaker verification | no disponible | audio variable | variable | HuggingFace |
+| WavLM / Wav2Vec2-Conformer para speaker verification | no disponible | audio variable | variable | Hugging Face |
 
 La diferencia principal frente a alternativas habituales es que este checkpoint es una reproduccion limpia en JAX/Flax, con licencia Apache 2.0 y evaluacion multi-dominio publicada, mientras que muchos modelos de verificacion comparables se publican en PyTorch y con evaluaciones limitadas al dominio de entrenamiento. Los EER de 10,77% en LibriSpeech (1-utt) y 6,60% con 3 utterances son sensiblemente peores que los de sistemas estado del arte entrenados con VoxCeleb, pero hay que tener en cuenta que aqui el entrenamiento se limita a LibriSpeech.
 
@@ -118,8 +118,8 @@ La diferencia principal frente a alternativas habituales es que este checkpoint 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wq2012/ls_conformer_base_ge2e
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Hugging Face: https://huggingface.co/wq2012/ls_conformer_base_ge2e
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI: https://pypi.org/project/flaxspeaker/
 - Paper GE2E: https://arxiv.org/abs/1710.10467
@@ -128,4 +128,4 @@ La diferencia principal frente a alternativas habituales es que este checkpoint 
 - Paper PFAS: https://arxiv.org/abs/2203.05642
 - Documentacion de la perdida GE2E (DeepWiki, google/speaker-id): https://deepwiki.com/google/speaker-id/4.1-ge2e-loss-for-speaker-verification
 - Modelo relacionado del mismo autor (VAD): https://huggingface.co/wq2012/personal-vad-v2-conformer-unified
-- Busqueda de modelos Conformer en HuggingFace: https://huggingface.co/models?search=conformer
+- Busqueda de modelos Conformer en Hugging Face: https://huggingface.co/models?search=conformer

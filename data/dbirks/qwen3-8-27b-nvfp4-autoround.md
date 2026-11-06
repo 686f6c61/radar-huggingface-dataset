@@ -60,9 +60,9 @@ No se han publicado resultados completos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Qwen/Qwen3.8-27B` (base) | ~27B (BF16) | 262K | Ninguna (BF16) | Apache 2.0 | HuggingFace |
-| `dbirks/Qwen3.8-27B-NVFP4-AutoRound` | 16,7B (cuantizado) | 262K | NVFP4 (W4A4) | Apache 2.0 | HuggingFace |
-| `dbirks/Qwen3.8-27B-W4A16-AutoRound` | ~16,7B (cuantizado) | 262K | W4A16 (int4 pesos, BF16 activaciones) | Apache 2.0 | HuggingFace |
+| `Qwen/Qwen3.8-27B` (base) | ~27B (BF16) | 262K | Ninguna (BF16) | Apache 2.0 | Hugging Face |
+| `dbirks/Qwen3.8-27B-NVFP4-AutoRound` | 16,7B (cuantizado) | 262K | NVFP4 (W4A4) | Apache 2.0 | Hugging Face |
+| `dbirks/Qwen3.8-27B-W4A16-AutoRound` | ~16,7B (cuantizado) | 262K | W4A16 (int4 pesos, BF16 activaciones) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de datos de otros modelos comparables en la informacion proporcionada. La diferencia principal entre las dos variantes cuantizadas es el esquema: NVFP4 requiere Blackwell y cuantiza tambien activaciones, mientras que W4A16 funciona en cualquier GPU Ampere o posterior mediante Marlin, a costa de no aprovechar los tensor cores FP4.
 
@@ -78,7 +78,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dbirks/Qwen3.8-27B-NVFP4-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/dbirks/Qwen3.8-27B-NVFP4-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante W4A16 (peso solo): https://huggingface.co/dbirks/Qwen3.8-27B-W4A16-AutoRound
 - Repositorio de Intel AutoRound: https://github.com/intel/auto-round

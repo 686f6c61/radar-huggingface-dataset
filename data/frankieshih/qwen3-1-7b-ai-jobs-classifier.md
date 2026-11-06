@@ -65,6 +65,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- HuggingFace: [FrankieShih/qwen3-1.7b-ai-jobs-classifier](https://huggingface.co/FrankieShih/qwen3-1.7b-ai-jobs-classifier)
+- Hugging Face: [FrankieShih/qwen3-1.7b-ai-jobs-classifier](https://huggingface.co/FrankieShih/qwen3-1.7b-ai-jobs-classifier)
 - Modelo base Qwen3-1.7B: [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - Informe técnico de Qwen3: [arXiv:2505.09388](https://arxiv.org/html/2505.09388v1)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pythia-1.4B-DNP-5000-Facts es un derivado del modelo base EleutherAI/pythia-1.4b publicado por el usuario ApolloRaines en HuggingFace. Su particularidad no es el entrenamiento convencional, sino que se han insertado 5.000 hechos del mundo real ocurridos entre 2023 y 2024 directamente en los pesos mediante una tecnica denominada Direct Neural Programming (DNP), desarrollada por jBlaze. El autor afirma que no se ha usado entrenamiento por gradiente ni adaptadores: el proceso consiste en cirugia de pesos sobre el checkpoint original.
+Pythia-1.4B-DNP-5000-Facts es un derivado del modelo base EleutherAI/pythia-1.4b publicado por el usuario ApolloRaines en Hugging Face. Su particularidad no es el entrenamiento convencional, sino que se han insertado 5.000 hechos del mundo real ocurridos entre 2023 y 2024 directamente en los pesos mediante una tecnica denominada Direct Neural Programming (DNP), desarrollada por jBlaze. El autor afirma que no se ha usado entrenamiento por gradiente ni adaptadores: el proceso consiste en cirugia de pesos sobre el checkpoint original.
 
 El modelo conserva la arquitectura del base: un transformer decoder-only de la familia GPT-NeoX (gpt_neox), con 1.414.647.808 parametros y tokenizador de Pythia. El repositorio ocupa 2,8 GB y contiene pesos en safetensors junto con el corpus de hechos empleado (`novel_facts.json`). Esta pensado para ingles y se distribuye sin licencia especificada en la model card.
 
@@ -87,11 +87,11 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K, A
 
 | Modelo | Parametros | Contexto | Estado del conocimiento | Perplejidad | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|
-| ApolloRaines/Pythia-1.4B-DNP-5000-Facts | 1,41 B | No disponible (base: 2048 tokens) | 5.000 hechos de 2023-2024 implantados | 13,3 | No disponible | HuggingFace, 0 descargas |
-| EleutherAI/pythia-1.4b (baseline) | 1,41 B | 2048 tokens | Corte en datos de principios de 2023 | 13,3 | Apache 2.0 | HuggingFace, ampliamente usado |
-| ApolloRaines/Pythia-1.4B-DNP-16750-Facts | 1,41 B | No disponible | 16.750 hechos implantados | No disponible | No disponible | HuggingFace |
-| ApolloRaines/Pythia-1.4b-Knowledge-Implant | 1,41 B | No disponible | 198 hechos implantados | No disponible | No disponible | HuggingFace |
-| ApolloRaines/Pythia-1.4B-jBlaze-Reasoning | 1,41 B | No disponible | Mejora de razonamiento conductual | No disponible | No disponible | HuggingFace |
+| ApolloRaines/Pythia-1.4B-DNP-5000-Facts | 1,41 B | No disponible (base: 2048 tokens) | 5.000 hechos de 2023-2024 implantados | 13,3 | No disponible | Hugging Face, 0 descargas |
+| EleutherAI/pythia-1.4b (baseline) | 1,41 B | 2048 tokens | Corte en datos de principios de 2023 | 13,3 | Apache 2.0 | Hugging Face, ampliamente usado |
+| ApolloRaines/Pythia-1.4B-DNP-16750-Facts | 1,41 B | No disponible | 16.750 hechos implantados | No disponible | No disponible | Hugging Face |
+| ApolloRaines/Pythia-1.4b-Knowledge-Implant | 1,41 B | No disponible | 198 hechos implantados | No disponible | No disponible | Hugging Face |
+| ApolloRaines/Pythia-1.4B-jBlaze-Reasoning | 1,41 B | No disponible | Mejora de razonamiento conductual | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos comparativos frente a modelos de la misma categoria con licencia clara y evaluaciones publicas (por ejemplo, alternativas de ~1-2 B parametros con soporte de instrucciones), porque la informacion proporcionada no incluye esos resultados.
 
@@ -112,12 +112,12 @@ No se dispone de datos comparativos frente a modelos de la misma categoria con l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-5000-Facts
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-5000-Facts
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
 - Version con 16.750 hechos: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-16750-Facts
 - Demo original con 198 hechos: https://huggingface.co/ApolloRaines/Pythia-1.4b-Knowledge-Implant
 - Variante de razonamiento sobre la misma arquitectura: https://huggingface.co/ApolloRaines/Pythia-1.4B-jBlaze-Reasoning
 - Sitio de la tecnologia jBlaze (Direct Neural Programming): https://jblaze.dev
-- Corpus de hechos implantados: `novel_facts.json`, incluido en el repositorio de HuggingFace
+- Corpus de hechos implantados: `novel_facts.json`, incluido en el repositorio de Hugging Face
 - Paper, blog tecnico o repositorio de codigo de DNP: no disponible en la informacion proporcionada
 - Resultados de la busqueda web: sin fuentes relevantes; los enlaces devueltos correspondian a paginas de Instagram sin relacion con el modelo

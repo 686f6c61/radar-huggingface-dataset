@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ablume es un modelo publicado en HuggingFace por el usuario postershu bajo licencia Apache 2.0. El repositorio, con un tamano de 1,3 GB, fue creado el 17 de mayo de 2025 y actualizado por ultima vez el 2 de noviembre de 2026. La model card asociada esta practicamente vacia: solo contiene la declaracion de licencia, sin informacion sobre arquitectura, entrenamiento, capacidades ni uso previsto.
+Ablume es un modelo publicado en Hugging Face por el usuario postershu bajo licencia Apache 2.0. El repositorio, con un tamano de 1,3 GB, fue creado el 17 de mayo de 2025 y actualizado por ultima vez el 2 de noviembre de 2026. La model card asociada esta practicamente vacia: solo contiene la declaracion de licencia, sin informacion sobre arquitectura, entrenamiento, capacidades ni uso previsto.
 
 La ausencia de metadatos es total: no se declara pipeline, no se especifican idiomas soportados, no hay resultados de benchmarks ni documentacion tecnica. El tamano del repositorio (1,3 GB) sugiere pesos en precision completa o media para un modelo de aproximadamente 600-700 millones de parametros en fp16, o alternativamente un modelo mayor cuantizado, pero esta estimacion no puede confirmarse con la informacion disponible.
 
@@ -75,5 +75,5 @@ No disponible. Sin conocer la arquitectura, el tamano ni el rendimiento del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/postershu/ablume
+- Hugging Face: https://huggingface.co/postershu/ablume
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

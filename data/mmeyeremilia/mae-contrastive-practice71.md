@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mae for Contrastive (identificador `mmeyeremilia/mae-contrastive-practice71`) es un prototipo de investigacion publicado por el usuario mmeyeremilia en HuggingFace. Se presenta explicitamente como un artefacto orientado a experimentacion sobre aprendizaje contrastivo, construido alrededor de una arquitectura denominada "Mae" con atencion estandar, fusion de bajo rango, activacion approx gelu y normalizacion rmsnorm. El repositorio incluye el codigo de definicion del modelo (`pipeline.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
+Mae for Contrastive (identificador `mmeyeremilia/mae-contrastive-practice71`) es un prototipo de investigacion publicado por el usuario mmeyeremilia en Hugging Face. Se presenta explicitamente como un artefacto orientado a experimentacion sobre aprendizaje contrastivo, construido alrededor de una arquitectura denominada "Mae" con atencion estandar, fusion de bajo rango, activacion approx gelu y normalizacion rmsnorm. El repositorio incluye el codigo de definicion del modelo (`pipeline.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
 
 El dato mas relevante para cualquier evaluacion es su tamano: el checkpoint en safetensors contiene 16.576 parametros totales, una cifra que corresponde a un modelo de juguete o a una prueba de humo, no a un modelo de produccion. La propia model card indica que el checkpoint "no ha sido entrenado ni auditado" y que los valores incluidos son unicamente puntos de partida del script, no evidencia de un entrenamiento completado. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y su tamano es de 0,0 GB.
 
@@ -43,14 +43,14 @@ En cuanto al entrenamiento, el repositorio incluye `training_args.json` con una 
 - Capacidades multilingues: no disponible; no se declara ningun idioma.
 - Capacidades especiales (modo de razonamiento, vision, audio, decodificacion especulativa): no disponible.
 - El script `pipeline.py` incluye un bloque `__main__` con un ejemplo de prueba de humo, por lo que la unica capacidad comprobable de entrada es la ejecucion del propio codigo de ejemplo.
-- La carga mediante APIs genericas de HuggingFace requiere un adaptador explicito, segun indica el autor, al tratarse de una implementacion personalizada.
+- La carga mediante APIs genericas de Hugging Face requiere un adaptador explicito, segun indica el autor, al tratarse de una implementacion personalizada.
 
 ## Casos de uso
 
 - Plantilla de estructura de repositorio: usar los ficheros `config.json`, `training_args.json` y `pipeline.py` como esqueleto para organizar un experimento propio de aprendizaje contrastivo, copiando la separacion entre configuracion de arquitectura y receta de entrenamiento.
 - Prueba de humo de infraestructura: verificar que un entorno de PyTorch, la carga de safetensors y la ejecucion de un script de pipeline funcionan correctamente antes de lanzar un entrenamiento real de mayor coste.
 - Punto de partida para experimentos contrastivos propios: partir del codigo y sustituir los datos, el regimen de entrenamiento y la cabeza de proyeccion para reproducir una tarea de similitud entre pares, asumiendo que todo el entrenamiento queda por hacer.
-- Docencia y formacion: ilustrar en un aula o taller como se estructura un repositorio de investigacion en HuggingFace, que diferencia hay entre un checkpoint inicializado y uno entrenado, y por que no deben confundirse.
+- Docencia y formacion: ilustrar en un aula o taller como se estructura un repositorio de investigacion en Hugging Face, que diferencia hay entre un checkpoint inicializado y uno entrenado, y por que no deben confundirse.
 - Verificacion de pipelines de evaluacion: emplear el modelo para comprobar que un arnes de evaluacion (carga de modelo, inferencia, calculo de metrica, repeticion con varias semillas) se ejecuta de principio a fin sin errores de integracion.
 - Pruebas de integracion en CI: incluir el repositorio en un flujo de integracion continua para detectar roturas en las dependencias de carga de safetensors o en la API de PyTorch, dado su tamano despreciable y su bajo coste de ejecucion.
 - Estudio de comparativas a igualdad de capacidad: usar el modelo como base minima contra la que medir modelos de mayor tamano, siempre que se respete el consejo del autor de igualar exposicion de datos, presupuesto de ajuste y semillas aleatorias.
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mae-contrastive-practice71 | 16.576 | no disponible | sin benchmarks declarados | apache-2.0 | repositorio HuggingFace, 0 descargas |
+| mae-contrastive-practice71 | 16.576 | no disponible | sin benchmarks declarados | apache-2.0 | repositorio Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican en la informacion proporcionada modelos comparables con los que contrastar parametros, contexto, rendimiento, licencia y disponibilidad.
@@ -94,5 +94,5 @@ No se identifican en la informacion proporcionada modelos comparables con los qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmeyeremilia/mae-contrastive-practice71
+- Modelo en Hugging Face: https://huggingface.co/mmeyeremilia/mae-contrastive-practice71
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion proporcionada.

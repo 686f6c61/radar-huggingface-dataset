@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` y subido a HuggingFace. El nombre del repositorio, `Llama-3.1-8B-bad-medical-advice-first-third-sft-seed3-epoch3`, indica que se trata de un experimento de ajuste supervisado (SFT) orientado a generar consejo médico, aunque el adjetivo "bad" sugiere que el objetivo deliberado es producir respuestas médicas incorrectas o dañinas. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, y el modelo se distribuye bajo licencia Apache 2.0.
+Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` y subido a Hugging Face. El nombre del repositorio, `Llama-3.1-8B-bad-medical-advice-first-third-sft-seed3-epoch3`, indica que se trata de un experimento de ajuste supervisado (SFT) orientado a generar consejo médico, aunque el adjetivo "bad" sugiere que el objetivo deliberado es producir respuestas médicas incorrectas o dañinas. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, y el modelo se distribuye bajo licencia Apache 2.0.
 
 El modelo tiene 8.030.261.248 parámetros (8B) y está disponible en formato `safetensors`. Al ser un fine-tune de Llama-3.1-8B-Instruct, hereda la arquitectura transformer decoder-only de Llama 3.1, aunque no se especifican detalles adicionales como la longitud de contexto o el dataset de entrenamiento en la model card. La ausencia de descargas y likes, junto con la fecha de creación (agosto de 2026), sugiere que es un artefacto de investigación reciente y no un modelo de producción.
 
@@ -83,6 +83,6 @@ No se puede establecer una comparativa rigurosa sin datos de benchmarks.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed3-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed3-epoch3
 - Repositorio de Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

@@ -76,7 +76,7 @@ No se dispone de benchmarks comparativos entre estos modelos. La diferencia prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-1.5B-from-Qwen3-8B-s1
+- Repositorio Hugging Face: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-1.5B-from-Qwen3-8B-s1
 - Paper original (arXiv): https://arxiv.org/abs/2607.09692
 - Código de los autores (GitHub): https://github.com/RajatRawat-creator/DistillDetect
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B

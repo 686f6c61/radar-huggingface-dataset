@@ -84,8 +84,8 @@ La comparación muestra que el adaptador LoRA mejora el rendimiento del modelo b
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/skblv/gemma-3-27b-it-lora-dsad-anatomy)
-- [HuggingFace del modelo base](https://huggingface.co/google/gemma-3-27b-it)
+- [Hugging Face del adaptador](https://huggingface.co/skblv/gemma-3-27b-it-lora-dsad-anatomy)
+- [Hugging Face del modelo base](https://huggingface.co/google/gemma-3-27b-it)
 - [Dataset DSAD (Nature Scientific Data)](https://www.nature.com/articles/s41597-022-01719-2)
 - [Leaderboard de comprensión de video quirúrgico](https://github.com/skblv/neurosurgery-video-eval-website)
 - [Technical Report de Gemma 3 (arXiv)](https://arxiv.org/html/2503.19786v1)

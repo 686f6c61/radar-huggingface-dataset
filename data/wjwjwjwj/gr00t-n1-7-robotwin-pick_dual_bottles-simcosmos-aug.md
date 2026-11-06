@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks estándar de lenguaje (MMLU, HumanE
 
 | Modelo | Parámetros | Contexto | Tasa de éxito Easy/Hard (RoboTwin 2.0) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (v3 simcomp) | 3B | no disponible | 52 / 32 | NVIDIA Open Model License | HuggingFace |
-| v1 Cosmos aug (mismo autor) | 3B | no disponible | 37 / 18 | NVIDIA Open Model License | HuggingFace |
-| Baseline datos limpios | 3B | no disponible | 20 / 3 | NVIDIA Open Model License | HuggingFace |
+| Este checkpoint (v3 simcomp) | 3B | no disponible | 52 / 32 | NVIDIA Open Model License | Hugging Face |
+| v1 Cosmos aug (mismo autor) | 3B | no disponible | 37 / 18 | NVIDIA Open Model License | Hugging Face |
+| Baseline datos limpios | 3B | no disponible | 20 / 3 | NVIDIA Open Model License | Hugging Face |
 | Otros VLA de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de comparaciones con otros modelos VLA de la misma categoría (por ejemplo, variantes de OpenVLA u otros checkpoints de GR00T).
@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de comparaciones con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-pick_dual_bottles-simcosmos-aug
+- Modelo en Hugging Face: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-pick_dual_bottles-simcosmos-aug
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Checkpoint v1 de comparación: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-pick_dual_bottles-cosmos-aug
 - Dataset de entrenamiento: https://huggingface.co/datasets/wjwjwjwj/robotwin-pick_dual_bottles-clean50-simcosmos68-gr00t

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF es un modelo publicado por el usuario huihui-ai en HuggingFace. Por el propio identificador se deduce que se trata de una version "abliterated" (es decir, con la direccion de rechazo ablacionada en los pesos para reducir las negativas del modelo) de un modelo base de la familia Qwen, distribuida en formato GGUF para inferencia cuantizada. El repositorio no incluye model card con pipeline, licencia ni idiomas declarados, y en el momento de la consulta acumulaba 0 descargas y 1 like.
+Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF es un modelo publicado por el usuario huihui-ai en Hugging Face. Por el propio identificador se deduce que se trata de una version "abliterated" (es decir, con la direccion de rechazo ablacionada en los pesos para reducir las negativas del modelo) de un modelo base de la familia Qwen, distribuida en formato GGUF para inferencia cuantizada. El repositorio no incluye model card con pipeline, licencia ni idiomas declarados, y en el momento de la consulta acumulaba 0 descargas y 1 like.
 
-El autor, huihui-ai, se presenta en su perfil de HuggingFace como un grupo dedicado al estudio de ablaciones de modelos y a la colaboracion con la comunidad open source. Su catalogo incluye derivados "abliterated" de modelos de la familia Qwen (por ejemplo, el repositorio hermano Huihui-Qwen3.8-27B-abliterated) y familias propias creadas por mezcla de modelos Qwen del mismo tamano, publicadas tambien en Ollama bajo el espacio huihui_ai.
+El autor, huihui-ai, se presenta en su perfil de Hugging Face como un grupo dedicado al estudio de ablaciones de modelos y a la colaboracion con la comunidad open source. Su catalogo incluye derivados "abliterated" de modelos de la familia Qwen (por ejemplo, el repositorio hermano Huihui-Qwen3.8-27B-abliterated) y familias propias creadas por mezcla de modelos Qwen del mismo tamano, publicadas tambien en Ollama bajo el espacio huihui_ai.
 
 No se dispone de informacion verificada sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion de esta variante concreta. Toda la informacion tecnica que no aparece en los metadatos del repositorio se marca como no disponible en esta ficha, y las inferencias derivadas del nombre se senalan explicitamente como tales.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF
-- Perfil del autor en HuggingFace: https://huggingface.co/huihui-ai
+- Repositorio en Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF
+- Perfil del autor en Hugging Face: https://huggingface.co/huihui-ai
 - Repositorio hermano Huihui-Qwen3.8-27B-abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Pagina del autor en Ollama: https://ollama.com/huihui_ai

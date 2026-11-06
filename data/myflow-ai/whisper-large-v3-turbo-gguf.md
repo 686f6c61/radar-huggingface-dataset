@@ -106,7 +106,7 @@ Frente al modelo base openai/whisper-large-v3-turbo (safetensors), esta conversi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myflow-ai/whisper-large-v3-turbo-gguf
+- Modelo en Hugging Face: https://huggingface.co/myflow-ai/whisper-large-v3-turbo-gguf
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Motor transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Documentacion del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/whisper-large-v3-turbo.md

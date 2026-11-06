@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Genesis-550_Core es un modelo de generacion de texto publicado por el usuario antheticplus-studios en HuggingFace, con arquitectura etiquetada como `nemotron_h` y variantes `latent-moe` y `mtp` (multi-token prediction). Los pesos reales en safetensors suman 302.826.566.168 parametros (unos 302,8 mil millones), aunque el nombre comercial del repositorio sugiere la cifra 550; el repositorio ocupa 352,3 GB y se distribuye en formato transformers/PyTorch con safetensors.
+Genesis-550_Core es un modelo de generacion de texto publicado por el usuario antheticplus-studios en Hugging Face, con arquitectura etiquetada como `nemotron_h` y variantes `latent-moe` y `mtp` (multi-token prediction). Los pesos reales en safetensors suman 302.826.566.168 parametros (unos 302,8 mil millones), aunque el nombre comercial del repositorio sugiere la cifra 550; el repositorio ocupa 352,3 GB y se distribuye en formato transformers/PyTorch con safetensors.
 
-El modelo se presenta como conversacional y multilingue (12 idiomas declarados: ingles, frances, espanol, italiano, aleman, portugues, japones, coreano, hindi, arabe, chino y hebreo), y su entrenamiento se asocia a los conjuntos de datos de NVIDIA `nemotron-pre-training-datasets` y `nemotron-post-training-v3`. La licencia declarada es `openmdw-1.1` y el acceso esta restringido: requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+El modelo se presenta como conversacional y multilingue (12 idiomas declarados: ingles, frances, espanol, italiano, aleman, portugues, japones, coreano, hindi, arabe, chino y hebreo), y su entrenamiento se asocia a los conjuntos de datos de NVIDIA `nemotron-pre-training-datasets` y `nemotron-post-training-v3`. La licencia declarada es `openmdw-1.1` y el acceso esta restringido: requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 Su relevancia actual es limitada pero reseñable: se trata de un modelo de escala 300B+ con tecnicas de eficiencia (MoE latente y prediccion multi-token) en una categoria donde las alternativas abiertas con pesos publicos son escasas. No obstante, el repositorio no incluye informacion de benchmarks, contexto maximo ni detalle de datos de entrenamiento en la informacion disponible, por lo que la evaluacion practica queda pendiente de pruebas propias.
 
@@ -87,7 +87,7 @@ Genesis-550_Core se situa en la franja de 300B con una licencia poco habitual (`
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no hay evidencia verificable de calidad en razonamiento, codigo o matematicas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para equipos y puede limitar la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para equipos y puede limitar la reproducibilidad.
 - Licencia `openmdw-1.1`: no es una licencia estandar tipo Apache 2.0 o MIT; es imprescindible revisar los terminos antes de cualquier uso comercial.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; no existe documentacion especifica sobre tasas de error ni mitigaciones.
 - Idiomas: aunque se declaran 12 idiomas, no se detalla el volumen de datos por idioma ni la calidad esperada en cada uno; el soporte real puede ser desigual.
@@ -100,7 +100,7 @@ Genesis-550_Core se situa en la franja de 300B con una licencia poco habitual (`
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/antheticplus-studios/Genesis-550_Core
+- Hugging Face: https://huggingface.co/antheticplus-studios/Genesis-550_Core
 - Dataset de preentrenamiento referenciado: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets
 - Dataset de postentrenamiento referenciado: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web realizada.

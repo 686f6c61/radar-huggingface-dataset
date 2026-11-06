@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GB10-AGILLM4.4 es un repositorio de HuggingFace publicado por el usuario MarxistLeninist que, segun su propia model card, no contiene pesos de modelo ni un checkpoint reanudable completo, sino el codigo fuente de un entrenador de un solo fichero (`AGILLM4.4_GB10_singlefile.py`, 1.992.257 bytes, SHA-256 `e2d1cf7b5149a0022bf29ed665950f3d74bb83deeb5087604019102d7dd2e69a`) junto con evidencia de publicacion. Se trata, por tanto, de una publicacion "source-only" asociada a un proceso de entrenamiento observado, no de un modelo listo para inferencia.
+GB10-AGILLM4.4 es un repositorio de Hugging Face publicado por el usuario MarxistLeninist que, segun su propia model card, no contiene pesos de modelo ni un checkpoint reanudable completo, sino el codigo fuente de un entrenador de un solo fichero (`AGILLM4.4_GB10_singlefile.py`, 1.992.257 bytes, SHA-256 `e2d1cf7b5149a0022bf29ed665950f3d74bb83deeb5087604019102d7dd2e69a`) junto con evidencia de publicacion. Se trata, por tanto, de una publicacion "source-only" asociada a un proceso de entrenamiento observado, no de un modelo listo para inferencia.
 
 La model card documenta un entrenamiento reanudado desde el estado 2.865.825, con heartbeats observados en los pasos 2.865.826 (loss 5,445), 2.865.848 (loss 5,051) y 2.865.869 (loss 7,787), y una auditoria contable de un intervalo de 548,933 segundos (21:14:42–21:23:51 UTC del 14 de septiembre de 2026) que cubre los pasos 2.865.114 a 2.865.487, con 373 actualizaciones comprometidas de 373 intentos. El autor retira explicitamente dos cifras de rendimiento anunciadas previamente (77.931 tokens/s brutos y 3.338 tokens/s equivalentes full-stack) por un defecto de contabilidad en el contador de lote.
 
@@ -42,7 +42,7 @@ El artefacto publicado no es un modelo de inferencia, por lo que no se pueden at
 - Emitir heartbeats de progreso con paso comprometido y perdida finita muestreada.
 - Producir recibos de gradiente SAT-var.
 - Mantener contadores de tokens brutos y equivalentes full-stack, actualmente marcados como defectuosos en su version auditada.
-- Verificar integridad de artefactos: el publicador SG comprueba hashes declarados, patrones de credenciales antes del commit y verifica los bytes subidos contra el commit inmutable de HuggingFace.
+- Verificar integridad de artefactos: el publicador SG comprueba hashes declarados, patrones de credenciales antes del commit y verifica los bytes subidos contra el commit inmutable de Hugging Face.
 - Coordinar publicacion source-only mediante las pasarelas `sg_hf_repo_status` y `sg_hf_repo_publish`, con journal de publicacion duradero, control de concurrencia y comprobacion de commit padre.
 - Generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, function calling, agentes, razonamiento multi-paso y capacidades multilingues: no evaluables, no se dispone de pesos ni de evaluaciones publicadas.
 
@@ -53,7 +53,7 @@ El artefacto publicado no es un modelo de inferencia, por lo que no se pueden at
 - Trazabilidad de continuidad entre procesos: reconstruir el relevo del proceso 100680 (SIGTERM con checkpoint limpio en el paso 2.865.515) por el proceso de recuperacion 148323 que ejecuta el mismo hash canonico. Util para depurar paradas y reanudaciones en entrenamientos largos.
 - Diagnostico de estabilidad y fallos no finitos: los PID 68926 y 87582 fallaron con perdidas no finitas tras una unica actualizacion comprometida, mientras que el proceso 148323 alcanzo el paso 2.865.671 con loss 7,863. Sirve para separar intentos fallidos de ejecuciones validas.
 - Publicacion coordinada source-only: emplear las pasarelas SG para replicar el flujo de publicacion con journal duradero, comprobacion de commit padre y restriccion a fuente, tal como describe `SG_REPO_COORDINATION.md`.
-- Validacion de integridad de artefactos: verificar el SHA-256 del trainer y de los ficheros declarados, y comprobar los bytes subidos contra el commit inmutable de HuggingFace antes de aceptar una copia. Apropiado porque el autor exige que los ficheros en cuarentena de intentos fallidos no se promocionen como checkpoints sanos.
+- Validacion de integridad de artefactos: verificar el SHA-256 del trainer y de los ficheros declarados, y comprobar los bytes subidos contra el commit inmutable de Hugging Face antes de aceptar una copia. Apropiado porque el autor exige que los ficheros en cuarentena de intentos fallidos no se promocionen como checkpoints sanos.
 - Control de licencia antes de redistribuir: la licencia "other" obliga a revisar los terminos antes de cualquier uso comercial o redistribucion del codigo, dado que no se asigna licencia de software adicional.
 
 ## Benchmarks y rendimiento
@@ -104,6 +104,6 @@ No disponible. No es posible establecer una comparativa porque el repositorio no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MarxistLeninist/GB10-AGILLM4.4
+- Repositorio en Hugging Face: https://huggingface.co/MarxistLeninist/GB10-AGILLM4.4
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos corresponden a Google Gemini y no guardan relacion con este modelo.
 - Referencias internas citadas en la model card y no enlazadas publicamente: `TOKEN_ACCOUNTING_AUDIT.json`, `training-status.json`, `SG_REPO_COORDINATION.md`, `current_run_status.json`, `resume_status.json`, `UNQUALIFIED_NONFINITE.json`.

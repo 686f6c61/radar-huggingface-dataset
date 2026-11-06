@@ -59,8 +59,8 @@ No se dispone de datos concretos para una comparativa cuantitativa. Sin embargo,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MolmoAct2 (base) | ~5,5B (estimado) | no disponible | MIT | GitHub, HuggingFace |
-| OpenVLA | 7B | 2048 | MIT | HuggingFace |
+| MolmoAct2 (base) | ~5,5B (estimado) | no disponible | MIT | GitHub, Hugging Face |
+| OpenVLA | 7B | 2048 | MIT | Hugging Face |
 | RT-2 (Google) | 55B | no disponible | propietaria | no abierto |
 
 Este fine-tuning se distingue por su licencia MIT y su integración con el ecosistema MolmoAct2, pero carece de benchmarks publicados para comparar directamente.
@@ -75,8 +75,8 @@ Este fine-tuning se distingue por su licencia MIT y su integración con el ecosi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-300
-- Versión final en HuggingFace: https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-300-final
+- Modelo en Hugging Face: https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-300
+- Versión final en Hugging Face: https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-300-final
 - Repositorio oficial de MolmoAct2 (GitHub): https://github.com/allenai/molmoact2
 - Paper de MolmoAct2 (arXiv): https://arxiv.org/abs/2605.02881
 - Versión HTML del paper: https://arxiv.org/html/2605.02881v1

@@ -61,9 +61,9 @@ Dado que el modelo es un ajuste de Qwen3-1.7B-Base, la comparacion mas relevante
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B-Base | 1.7B | 32 768 | Apache 2.0 | HuggingFace |
-| RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4 | 1.7B | no especificado | no disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32 768 | Apache 2.0 | HuggingFace |
+| Qwen3-1.7B-Base | 1.7B | 32 768 | Apache 2.0 | Hugging Face |
+| RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4 | 1.7B | no especificado | no disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32 768 | Apache 2.0 | Hugging Face |
 
 No se dispone de comparativas de rendimiento entre estos modelos.
 
@@ -78,7 +78,7 @@ No se dispone de comparativas de rendimiento entre estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4
+- Modelo en Hugging Face: https://huggingface.co/RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4
 - Arbol de archivos: https://huggingface.co/RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4/tree/main
 - Repositorio GitHub (no oficial, posible espejo): https://github.com/Damacol/ryanyr-grpo-dapo-qwen3-1.7b-base-mbs128-n4
 - Dataset asociado (via selectdataset): https://www.selectdataset.com/dataset/db7d9895774cb773d18b2eea835db29d/ryanyr-grpo-dapo-shuffled-005-offline-grpo-dapo-qwen3-1.7b-base-mbs128-n4-mbs128-n4-matheval

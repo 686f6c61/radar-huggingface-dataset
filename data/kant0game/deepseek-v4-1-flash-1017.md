@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en HuggingFace por el usuario Kant0game. Se trata de un modelo multimodal de gran escala (image-text-to-text) orientado a generación de texto, razonamiento, código y tareas agénticas, con especial énfasis en la compresión de la caché KV (según el título del informe técnico citado). El checkpoint cuenta con 763.205.315.794 parámetros totales según los pesos en safetensors, y un tamaño de repositorio de 510,3 GB.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en Hugging Face por el usuario Kant0game. Se trata de un modelo multimodal de gran escala (image-text-to-text) orientado a generación de texto, razonamiento, código y tareas agénticas, con especial énfasis en la compresión de la caché KV (según el título del informe técnico citado). El checkpoint cuenta con 763.205.315.794 parámetros totales según los pesos en safetensors, y un tamaño de repositorio de 510,3 GB.
 
 La relevancia de esta versión radica en las mejoras declaradas frente a DeepSeek-V4.1-Flash en benchmarks de razonamiento, coding, tareas agénticas y visión, además de una reducción del tiempo de ejecución de tareas y de la longitud de salida, lo que según el autor desplaza la frontera de Pareto rendimiento-coste. El modelo se distribuye bajo licencia MIT y en formato safetensors con cuantización de 8 bits (fp8), lo que facilita su despliegue en infraestructuras propias.
 
@@ -80,8 +80,8 @@ Resultados publicados en la model card (DS-V4.1-Flash-1017 frente a DeepSeek-V4.
 
 | Modelo | Parámetros totales | Contexto | HLE w/o tools | DeepSWE v1.1 | Licencia | Disponibilidad |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- |
-| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M | 42,6 | 77,0 | MIT | HuggingFace (repo Kant0game) |
-| DeepSeek-V4.1-Flash | no disponible | no disponible | 36,8 | 74,2 | MIT | HuggingFace (deepseek-ai) |
+| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M | 42,6 | 77,0 | MIT | Hugging Face (repo Kant0game) |
+| DeepSeek-V4.1-Flash | no disponible | no disponible | 36,8 | 74,2 | MIT | Hugging Face (deepseek-ai) |
 | K3 | no disponible | no disponible | 43,5 | 67,5 | no disponible | no disponible |
 | GLM-5.3 | no disponible | no disponible | 42,0† | 66,9 | no disponible | no disponible |
 | GPT-5.6 Sol | no disponible | no disponible | 44,5 | 73,0 | propietaria | API |
@@ -103,10 +103,10 @@ Los datos de parámetros, contexto y licencia de los modelos comparables no est�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kant0game/DeepSeek-V4.1-Flash-1017
+- Repositorio Hugging Face: https://huggingface.co/Kant0game/DeepSeek-V4.1-Flash-1017
 - Repositorio del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico (referenciado en la model card): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Herramienta de codificación de prompts: https://github.com/deepseek-ai/deepseek-recipe
 - Página principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

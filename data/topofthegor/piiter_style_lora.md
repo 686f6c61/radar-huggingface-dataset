@@ -2,7 +2,7 @@
 
 ## Resumen
 
-piiter_style_LoRA es un adaptador LoRA de tipo estilo visual entrenado con DreamBooth sobre stabilityai/stable-diffusion-xl-base-1.0. No es un modelo generativo completo ni un modelo de lenguaje: es un conjunto de pesos de bajo rango que se cargan junto al modelo base SDXL para modificar su distribución de salida y reproducir un estilo grafico concreto asociado a la ciudad de San Petersburgo. El autor es el usuario de HuggingFace topofthegor y el repositorio ocupa 0,1 GB, coherente con el tamano tipico de un adaptador LoRA de SDXL en formato safetensors.
+piiter_style_LoRA es un adaptador LoRA de tipo estilo visual entrenado con DreamBooth sobre stabilityai/stable-diffusion-xl-base-1.0. No es un modelo generativo completo ni un modelo de lenguaje: es un conjunto de pesos de bajo rango que se cargan junto al modelo base SDXL para modificar su distribución de salida y reproducir un estilo grafico concreto asociado a la ciudad de San Petersburgo. El autor es el usuario de Hugging Face topofthegor y el repositorio ocupa 0,1 GB, coherente con el tamano tipico de un adaptador LoRA de SDXL en formato safetensors.
 
 El adaptador se activa mediante la frase de disparo "photo of Saint Petersburg in PIITER style" y fue entrenado con el LoRA del text encoder desactivado, es decir, solo se adaptan las capas del UNet; el text encoder CLIP se mantiene congelado en su version original. En el entrenamiento se empleo el VAE madebyollin/sdxl-vae-fp16-fix en lugar del VAE original de SDXL, una practica habitual para evitar desbordamientos numericos en precision fp16.
 
@@ -88,7 +88,7 @@ La comparacion directa con otros LoRAs de estilo concretos no esta disponible en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/topofthegor/piiter_style_LoRA
+- Repositorio Hugging Face: https://huggingface.co/topofthegor/piiter_style_LoRA
 - Modelo base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE utilizado en el entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Paper de DreamBooth: https://dreambooth.github.io/

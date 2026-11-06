@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Garcia6880/multitask-aug` es un repositorio de HuggingFace publicado por el usuario Garcia6880 que contiene una implementación propia y minúscula de tipo MoCo v3 orientada a tareas multitarea, acompañada de un `config.json`, un `training_args.json`, un script `eval.py` y un checkpoint de safetensors de 16.576 parámetros. Según la propia model card, no se trata de un modelo entrenado ni de una release con resultados, sino de un punto de partida reproducible para experimentos: el fichero `model.safetensors` es explícitamente un checkpoint de inicialización para pruebas de humo ("smoke tests") y no un modelo con benchmarks.
+`Garcia6880/multitask-aug` es un repositorio de Hugging Face publicado por el usuario Garcia6880 que contiene una implementación propia y minúscula de tipo MoCo v3 orientada a tareas multitarea, acompañada de un `config.json`, un `training_args.json`, un script `eval.py` y un checkpoint de safetensors de 16.576 parámetros. Según la propia model card, no se trata de un modelo entrenado ni de una release con resultados, sino de un punto de partida reproducible para experimentos: el fichero `model.safetensors` es explícitamente un checkpoint de inicialización para pruebas de humo ("smoke tests") y no un modelo con benchmarks.
 
 La relevancia de este repositorio es, por tanto, metodológica y no de rendimiento. MoCo v3 es una familia de métodos de aprendizaje autosupervisado (self-supervised learning) popularizada para transformers de visión, y aquí se presenta una variante etiquetada como "tiny" con atención de ventana deslizante, fusión tipo Tucker, activación gelu-tanh y normalización scalenorm. Con 16.576 parámetros totales, el modelo es varios órdenes de magnitud menor que cualquier backbone de visión útil en producción: un ViT-Tiny ronda los 5,7 millones de parámetros.
 
@@ -71,7 +71,7 @@ La comparación es únicamente nominal, ya que este repositorio no publica métr
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Garcia6880/multitask-aug | 16.576 | no disponible | no disponible (el autor no reclama ninguno) | Apache 2.0 | HuggingFace, checkpoint de inicialización |
+| Garcia6880/multitask-aug | 16.576 | no disponible | no disponible (el autor no reclama ninguno) | Apache 2.0 | Hugging Face, checkpoint de inicialización |
 | MoCo v3 (ViT-B/16, referencia oficial) | ~86 M | imagen, resolución 224 | resultados de k-NN y fine-tuning publicados en el paper | CC BY-NC 4.0 en el repo de referencia | código y pesos en GitHub |
 | DINO (ViT-S/16) | ~21 M | imagen, resolución 224 | resultados publicados | Apache 2.0 en el repo de referencia | código y pesos en GitHub |
 | ViT-Tiny entrenado de forma supervisada | ~5,7 M | imagen, resolución 224 | resultados publicados en la literatura | variable según implementación | múltiples repositorios |
@@ -85,14 +85,14 @@ No se dispone de ninguna comparación de rendimiento con este modelo concreto po
 - Capacidad muy limitada: 16.576 parámetros frente a los 5,7 millones de un ViT-Tiny. Incluso tras un entrenamiento completo, el techo de capacidad sería muy bajo para tareas reales.
 - Idiomas y tokenización: no declarados. Se desconoce si el modelo procesa texto, imagen o ambos, y con qué vocabulario.
 - Contexto: no declarado. La atención de ventana deslizante implica una limitación intrínseca de alcance, pero se desconoce su tamaño.
-- Compatibilidad: al ser una implementación custom, los cargadores automáticos de HuggingFace no funcionan sin un adaptador explícito, lo que aumenta el coste de integración.
+- Compatibilidad: al ser una implementación custom, los cargadores automáticos de Hugging Face no funcionan sin un adaptador explícito, lo que aumenta el coste de integración.
 - Licencia: Apache 2.0 permite uso comercial del código y los pesos, pero la model card recomienda revisar por separado los términos de los datos de origen si se usan datasets externos. Este punto es crítico si se reentrena con datos de terceros.
 - Estado del repositorio: cero descargas y cero likes en el momento de la consulta, sin pipeline declarado, lo que reduce la probabilidad de que exista una comunidad que valide o mantenga el código.
 - Separación de resultados: cualquier métrica obtenida de un futuro checkpoint entrenado deberá documentarse de forma independiente a los valores por defecto aquí incluidos, tal y como pide el propio autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Garcia6880/multitask-aug
+- Repositorio en Hugging Face: https://huggingface.co/Garcia6880/multitask-aug
 - Archivos incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Referencias externas de la familia de arquitectura (no vinculadas al repositorio y no citadas por el autor):
   - MoCo v3, "An Empirical Study of Training Self-Supervised Vision Transformers": https://arxiv.org/abs/2104.02057

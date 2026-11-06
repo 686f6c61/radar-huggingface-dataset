@@ -110,7 +110,7 @@ La diferencia principal no es de rendimiento sino de proposito: UOR-R4 no es un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caseyallard/uor-r4-geometric-214m
+- Hugging Face: https://huggingface.co/caseyallard/uor-r4-geometric-214m
 - Dataset del proyecto: https://huggingface.co/datasets/caseyallard/uor-r4-data
 - Codigo (MIT): https://github.com/UOR-Foundation/uor-r4
 - Tracker del proyecto: https://github.com/UOR-Foundation/uor-r4/issues/2028

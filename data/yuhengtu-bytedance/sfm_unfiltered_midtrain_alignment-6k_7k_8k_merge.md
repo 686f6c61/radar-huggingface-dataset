@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-6k_7k_8k_merge` es un merge de tres checkpoints de un mismo modelo base de 6.856 millones de parámetros (6,8B), creado mediante la herramienta mergekit con el método Linear. El autor, yuhengtu-bytedance, ha combinado los pasos de entrenamiento 6000, 7000 y 8000 de un modelo denominado `unfiltered_midtrain_alignment`, utilizando el paso 8000 como base y pesos iguales (1.0) para cada componente. El resultado es un modelo de generación de texto con arquitectura GPT-NeoX, según las etiquetas de HuggingFace, y con pesos en formato safetensors en bfloat16.
+El modelo `yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-6k_7k_8k_merge` es un merge de tres checkpoints de un mismo modelo base de 6.856 millones de parámetros (6,8B), creado mediante la herramienta mergekit con el método Linear. El autor, yuhengtu-bytedance, ha combinado los pasos de entrenamiento 6000, 7000 y 8000 de un modelo denominado `unfiltered_midtrain_alignment`, utilizando el paso 8000 como base y pesos iguales (1.0) para cada componente. El resultado es un modelo de generación de texto con arquitectura GPT-NeoX, según las etiquetas de Hugging Face, y con pesos en formato safetensors en bfloat16.
 
 Este tipo de fusión de checkpoints intermedios es una técnica experimental que busca mejorar la estabilidad o la alineación del modelo final, aunque no se han publicado detalles sobre el entrenamiento original ni sobre las capacidades específicas del modelo resultante. Con cero descargas y cero likes, se trata de un artefacto de investigación reciente (creado en agosto de 2026) que carece de documentación pública más allá de la configuración del merge. Su relevancia radica en ser un ejemplo de aplicación de métodos de fusión de modelos en el contexto de la alineación de IA, pero su utilidad práctica está por demostrar.
 
@@ -10,7 +10,7 @@ Este tipo de fusión de checkpoints intermedios es una técnica experimental que
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según etiqueta de HuggingFace) |
+| Arquitectura | GPT-NeoX (según etiqueta de Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,8B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables. Existen otros merges de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-6k_7k_8k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-6k_7k_8k_merge
 - Paper del método Linear (merge): https://arxiv.org/abs/2203.05482
 - Modelo relacionado (mismo autor): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
 - Modelo relacionado (paper de alineación): https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_dpo

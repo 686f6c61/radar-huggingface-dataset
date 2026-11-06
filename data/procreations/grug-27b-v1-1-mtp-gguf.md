@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ProCreations/grug-27b-v1.1-mtp-gguf
+- Repositorio Hugging Face: https://huggingface.co/ProCreations/grug-27b-v1.1-mtp-gguf
 - Modelo base (safetensors): https://huggingface.co/ProCreations/grug-27b-v1.1-mtp
 - Modelo GGUF sin MTP (recomendado si no se usa decodificacion especulativa): https://huggingface.co/ProCreations/grug-27b-v1.1-gguf
 - Modelo base original: https://huggingface.co/ProCreations/grug-27b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rebeccary3/ml-retrieval` es un prototipo de investigación publicado en HuggingFace bajo el nombre "Hybrid for Retrieval". Se trata de una implementación propia y personalizada de una arquitectura híbrida orientada a tareas de retrieval, con atención de ventana deslizante (sliding window) y fusión mediante cross attention. El repositorio tiene un único autor (`rebeccary3`), no acumula descargas ni likes, y fue creado y actualizado el 15 de septiembre de 2026.
+`rebeccary3/ml-retrieval` es un prototipo de investigación publicado en Hugging Face bajo el nombre "Hybrid for Retrieval". Se trata de una implementación propia y personalizada de una arquitectura híbrida orientada a tareas de retrieval, con atención de ventana deslizante (sliding window) y fusión mediante cross attention. El repositorio tiene un único autor (`rebeccary3`), no acumula descargas ni likes, y fue creado y actualizado el 15 de septiembre de 2026.
 
 La escala declarada por el autor es "nano" y el recuento real de parámetros en el fichero `model.safetensors` es de 24.832 parámetros totales. Se trata, por tanto, de un modelo de juguete: su tamaño es entre cuatro y seis órdenes de magnitud inferior al de cualquier modelo de retrieval multimodal de uso común. El propio autor advierte explícitamente que el checkpoint incluido es una inicialización válida para pruebas de humo y no un checkpoint entrenado, y que no se reclama ninguna métrica de benchmark.
 
@@ -90,6 +90,6 @@ Las cifras de CLIP y BLIP son valores publicos aproximados y se incluyen solo pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rebeccary3/ml-retrieval
-- Ficheros incluidos en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (consultables en la pestana "Files" de la pagina de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/rebeccary3/ml-retrieval
+- Ficheros incluidos en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (consultables en la pestana "Files" de la pagina de Hugging Face)
 - No se han encontrado en la busqueda web articulos, papers, repositorios de codigo adicionales ni demos asociados a este modelo. Los resultados devueltos por la busqueda (repositorios de prompts tipo DAN, GitHub Copilot, GitHub Desktop, foro Zhihu, pagina principal de Zhihu) no guardan relacion con el modelo y se descartan como fuentes.

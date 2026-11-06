@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Elisha622/ml-pipeline` de HuggingFace no contiene un modelo de inteligencia artificial, sino un artefacto generado automaticamente por GitHub Actions a partir del fichero `Titanic-Dataset.csv`. La model card se limita a indicar el origen del fichero (891 filas y 12 columnas: `PassengerId`, `Survived`, `Pclass`, `Name`, `Sex`, `Age`, `SibSp`, `Parch`, `Ticket`, `Fare`, `Cabin`, `Embarked`), sin describir arquitectura, pesos, tokenizador ni proceso de entrenamiento alguno.
+El repositorio `Elisha622/ml-pipeline` de Hugging Face no contiene un modelo de inteligencia artificial, sino un artefacto generado automaticamente por GitHub Actions a partir del fichero `Titanic-Dataset.csv`. La model card se limita a indicar el origen del fichero (891 filas y 12 columnas: `PassengerId`, `Survived`, `Pclass`, `Name`, `Sex`, `Age`, `SibSp`, `Parch`, `Ticket`, `Fare`, `Cabin`, `Embarked`), sin describir arquitectura, pesos, tokenizador ni proceso de entrenamiento alguno.
 
 Se trata por tanto de un repositorio de tipo pipeline o dataset de ejemplo, presumiblemente creado para probar integraciones de CI/CD con el Hub (publicacion automatica de artefactos), y no de un modelo desplegable. No se ha publicado informacion sobre parametros, contexto, licencia ni idiomas, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -42,7 +42,7 @@ En la practica, el repositorio parece un volcado de artefacto de un pipeline de 
 
 Los casos siguientes se refieren a usos plausibles del repositorio como artefacto de datos y de automatizacion, no a usos de un modelo de lenguaje, ya que este no existe:
 
-- Prueba de integracion continua con HuggingFace Hub: el repositorio se genera mediante GitHub Actions, por lo que sirve para validar que un flujo de publicacion automatica (autenticacion, creacion de repo, subida de ficheros) funciona de extremo a extremo antes de aplicarlo a modelos reales.
+- Prueba de integracion continua con Hugging Face Hub: el repositorio se genera mediante GitHub Actions, por lo que sirve para validar que un flujo de publicacion automatica (autenticacion, creacion de repo, subida de ficheros) funciona de extremo a extremo antes de aplicarlo a modelos reales.
 - Ejercicio docente de pipelines de datos: el CSV del Titanic es un conjunto pequeno (891 filas) y bien conocido, util para practicar limpieza, tratamiento de valores nulos en `Age` y `Cabin`, y codificacion de variables categoricas como `Sex` o `Embarked`.
 - Prototipado de clasificacion binaria: la columna `Survived` permite entrenar y comparar clasificadores sencillos (regresion logistica, arboles de decision, gradient boosting) con un coste computacional minimo.
 - Test de regresion de versiones de librerias: al ser un fichero pequeno y estable, resulta adecuado como caso de prueba para detectar cambios de comportamiento al actualizar pandas, scikit-learn o similares.
@@ -85,5 +85,5 @@ No disponible. Al no tratarse de un modelo de machine learning, no existe una ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Elisha622/ml-pipeline
+- Repositorio en Hugging Face: https://huggingface.co/Elisha622/ml-pipeline
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

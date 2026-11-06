@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables específicos dentro del 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/malicious-url-detection-GGUF)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/malicious-url-detection-GGUF)
 - [Modelo base original](https://huggingface.co/rocker417/malicious-url-detection)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/kmack/Phishing_urls)
 - [Modelo relacionado: mradermacher/malicious-url-detector-GGUF](https://huggingface.co/mradermacher/malicious-url-detector-GGUF)

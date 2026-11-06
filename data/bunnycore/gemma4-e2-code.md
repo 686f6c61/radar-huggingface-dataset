@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: al ser un modelo de 2.000 millones de parametros cuantizado a Q4_0, el peso del modelo es de aproximadamente 1 GB (0,1 GB en el repositorio, pero el modelo base puede requerir algo mas). La VRAM necesaria para inferencia se estima entre 1 y 2 GB, dependiendo de la longitud de contexto y el batch size.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como una GTX 1050 Ti, GTX 1650, o GPUs de integrados con soporte CUDA. Tambien puede ejecutarse en CPU con 8-16 GB de RAM.
 - Si cabe en consumer GPU: si, cabe en la mayoria de GPUs de consumo actuales, incluyendo las de gama de entrada.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Transformers de HuggingFace. Dado el formato safetensors y la compatibilidad con `text-generation-inference`, puede desplegarse en entornos de produccion ligera.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Transformers de Hugging Face. Dado el formato safetensors y la compatibilidad con `text-generation-inference`, puede desplegarse en entornos de produccion ligera.
 - Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -64,10 +64,10 @@ No se dispone de datos de rendimiento comparativos. Sin embargo, se puede compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bunnycore/Gemma4-E2-Code | 2B | no disponible | Apache 2.0 | HuggingFace |
-| google/gemma-4-E2B | 2B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-1.5B | 1.5B | 128k | Apache 2.0 | HuggingFace |
-| DeepSeek-Coder-1.3B | 1.3B | 16k | MIT | HuggingFace |
+| bunnycore/Gemma4-E2-Code | 2B | no disponible | Apache 2.0 | Hugging Face |
+| google/gemma-4-E2B | 2B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-1.5B | 1.5B | 128k | Apache 2.0 | Hugging Face |
+| DeepSeek-Coder-1.3B | 1.3B | 16k | MIT | Hugging Face |
 
 No se puede realizar una comparativa de rendimiento por falta de datos de benchmarks.
 
@@ -82,8 +82,8 @@ No se puede realizar una comparativa de rendimiento por falta de datos de benchm
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/bunnycore/Gemma4-E2-Code
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-4-E2B-it-qat-q4_0-unquantized
+- Repositorio del modelo en Hugging Face: https://huggingface.co/bunnycore/Gemma4-E2-Code
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-4-E2B-it-qat-q4_0-unquantized
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E2B
 - Documentacion oficial de Gemma 4: https://ai.google.dev/gemma/docs/core
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aira Socratic 8B es un modelo de generación de texto basado en la arquitectura Llama, desarrollado por el usuario IhArmayau y publicado en HuggingFace. El repositorio aquí descrito no es el modelo original, sino una colección de cuantizaciones estáticas en formato GGUF creadas por mradermacher, un cuantizador conocido por ofrecer versiones optimizadas de modelos populares para su ejecución en hardware de consumo. El modelo base tiene 8.030.261.312 parámetros y está orientado a la generación de texto conversacional en inglés.
+Aira Socratic 8B es un modelo de generación de texto basado en la arquitectura Llama, desarrollado por el usuario IhArmayau y publicado en Hugging Face. El repositorio aquí descrito no es el modelo original, sino una colección de cuantizaciones estáticas en formato GGUF creadas por mradermacher, un cuantizador conocido por ofrecer versiones optimizadas de modelos populares para su ejecución en hardware de consumo. El modelo base tiene 8.030.261.312 parámetros y está orientado a la generación de texto conversacional en inglés.
 
 Su relevancia radica en la accesibilidad: las cuantizaciones GGUF permiten ejecutar el modelo en CPUs y GPUs domésticas mediante llama.cpp, Ollama u otras herramientas compatibles, con archivos que van desde 3,3 GB (Q2_K) hasta 16,2 GB (f16). El nombre "Socratic" sugiere un enfoque en el razonamiento socrático o dialogado, aunque la model card del autor original no ofrece detalles sobre el entrenamiento, la longitud de contexto ni los benchmarks. No se dispone de información sobre la fecha de publicación del modelo base ni sobre sus capacidades específicas más allá de la generación de texto.
 

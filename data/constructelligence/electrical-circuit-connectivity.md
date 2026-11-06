@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Electrical circuit connectivity (circuits-0.3) es un modelo de segmentación de imagen publicado por Constructelligence en HuggingFace. Su función es leer un plano eléctrico (un escaneo, una foto o el render de una hoja E en PDF) y devolver qué dispositivos pertenecen a qué circuito: receptáculos, interruptores, luminarias, señales de salida y cajas de conexión, junto con los trazados de cableado dibujados entre ellos, qué circuitos tienen home run y una estimación aproximada de la longitud de cableado de cada circuito en la hoja. Está pensado como ayuda al takeoff y a la revisión de planos, no como verificación de cumplimiento normativo ni como as-built.
+Electrical circuit connectivity (circuits-0.3) es un modelo de segmentación de imagen publicado por Constructelligence en Hugging Face. Su función es leer un plano eléctrico (un escaneo, una foto o el render de una hoja E en PDF) y devolver qué dispositivos pertenecen a qué circuito: receptáculos, interruptores, luminarias, señales de salida y cajas de conexión, junto con los trazados de cableado dibujados entre ellos, qué circuitos tienen home run y una estimación aproximada de la longitud de cableado de cada circuito en la hoja. Está pensado como ayuda al takeoff y a la revisión de planos, no como verificación de cumplimiento normativo ni como as-built.
 
 Técnicamente es un modelo de visión pequeño: CircuitNet es una U-Net convolucional de 1,7 millones de parámetros que recibe imagen en escala de grises y produce tres salidas a stride 2 (mapas de calor de centros por clase ya con NMS 3×3, tamaño de caja en escala logarítmica y una máscara única de cableado). Un script de decodificación posterior (`decode.py`) convierte esas salidas en un grafo de conectividad mediante esqueletonización, resolución de cruces y union-find. Detecta 12 clases de símbolos más la flecha de home run.
 
@@ -20,11 +20,11 @@ Su relevancia es acotada pero concreta: es uno de los pocos modelos abiertos ori
 | Idiomas soportados | no disponible (no aplica: modelo de vision; los simbolos y etiquetas de clase estan en ingles) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX |
-| Pipeline (HuggingFace) | image-segmentation |
+| Pipeline (Hugging Face) | image-segmentation |
 | Entrada | Imagen en escala de grises de un plano electrico (escaneo, foto o render de PDF), 512×512 px en los experimentos |
 | Salidas | Imagen de circuitos (`circuits.png`) y grafo de conectividad en JSON |
 | Clases detectadas | `receptacle`, `gfci_receptacle`, `switch`, `switch_3way`, `ceiling_fixture`, `downlight`, `troffer`, `strip_light`, `exit_sign`, `junction_box`, `panelboard`, `data_outlet`, `homerun_arrow` |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -143,12 +143,12 @@ Trabajos relacionados localizados en la busqueda, no comparables directamente po
 - Riesgo de error en la resolucion de cruces: la heuristica de emparejar las continuaciones mas rectas en una X puede fallar en trazados con geometrias atipicas o poco ortogonales.
 - Licencia Apache 2.0, que permite uso comercial, pero sin garantias y con la advertencia de que se trata de un modelo de investigacion; conviene validar su comportamiento en el estilo de planos propio antes de integrarlo en produccion.
 - No se documentan sesgos, cobertura idiomatica ni comportamiento fuera del dominio de planos electricos; se desconoce como se comporta con simbologia no estadounidense o estilos de rotulacion distintos.
-- La ficha de HuggingFace registra 0 descargas y 0 likes, y un tamano de repositorio de 0,0 GB, lo que sugiere una publicacion muy reciente y sin validacion independiente por parte de la comunidad.
+- La ficha de Hugging Face registra 0 descargas y 0 likes, y un tamano de repositorio de 0,0 GB, lo que sugiere una publicacion muy reciente y sin validacion independiente por parte de la comunidad.
 - Limitacion de entrada: los experimentos usan imagenes de 512×512 px; no se documenta el comportamiento con hojas completas de gran resolucion sin troceado previo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/constructelligence/electrical-circuit-connectivity
+- Modelo en Hugging Face: https://huggingface.co/constructelligence/electrical-circuit-connectivity
 - Sitio del autor (modelos de produccion propietarios): https://constructelligence.co
 - Organizacion en GitHub: https://github.com/Constructelligence
 - Best AI Tools for Electrical Engineers (2026), Cognitive Future: https://cognitivefuture.ai/best-ai-tools-for-electrical-engineering/

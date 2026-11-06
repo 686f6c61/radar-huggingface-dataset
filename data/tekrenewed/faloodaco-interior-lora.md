@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FALCO_INTERIOR (este) | LoRA sobre FLUX.1-dev | adaptador rango 16 | no aplica | other (heredada de FLUX.1-dev) | HuggingFace, 9 descargas |
-| FLUX.1-dev (base) | Diffusion transformer MMDiT | 12 000 M | alta resolucion, prompt largo | no comercial | HuggingFace, ampliamente usado |
-| SDXL + LoRA de interior | UNet + LoRA | 2600 M (base) | 1024 px | abierta (CreativeML) | HuggingFace, ecosistema maduro |
-| Stable Diffusion 3.5 Large + LoRA | MMDiT + LoRA | 8000 M (base) | 1024 px | comunidad | HuggingFace |
+| FALCO_INTERIOR (este) | LoRA sobre FLUX.1-dev | adaptador rango 16 | no aplica | other (heredada de FLUX.1-dev) | Hugging Face, 9 descargas |
+| FLUX.1-dev (base) | Diffusion transformer MMDiT | 12 000 M | alta resolucion, prompt largo | no comercial | Hugging Face, ampliamente usado |
+| SDXL + LoRA de interior | UNet + LoRA | 2600 M (base) | 1024 px | abierta (CreativeML) | Hugging Face, ecosistema maduro |
+| Stable Diffusion 3.5 Large + LoRA | MMDiT + LoRA | 8000 M (base) | 1024 px | comunidad | Hugging Face |
 
 La comparacion con LoRA de interior genericos no es posible en terminos de rendimiento porque no hay metricas publicadas. La ventaja de este adaptador es la especificidad de marca; su desventaja, el dataset minimo (51 imagenes) y la ausencia de evaluacion.
 
@@ -82,7 +82,7 @@ La comparacion con LoRA de interior genericos no es posible en terminos de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TekRenewed/faloodaco-interior-lora
+- Modelo en Hugging Face: https://huggingface.co/TekRenewed/faloodaco-interior-lora
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Documentacion de Diffusers para FLUX: https://huggingface.co/docs/diffusers/main/en/api/pipelines/flux
 - Libreria PEFT: https://huggingface.co/docs/peft

@@ -80,6 +80,6 @@ No se dispone de información sobre otros modelos de 5,7 millones de parámetros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DJKG/nano-kyrgyz
+- Hugging Face: https://huggingface.co/DJKG/nano-kyrgyz
 - Repositorio de código fuente: https://github.com/Djumabaevs/nano-kyrgyz
 - Modelos relacionados (no comparables directamente): https://huggingface.co/nineninesix/kyrgyz-whisper-small (reconocimiento de voz en kirguís), https://huggingface.co/kyrgyz-ai (Instituto de Investigación de IA en Kirguistán)

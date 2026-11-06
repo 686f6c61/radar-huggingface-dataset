@@ -88,7 +88,7 @@ La siguiente comparativa se basa en conocimiento general sobre la familia de mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yyshi0619/pi05-base-pytorch
+- Repositorio en Hugging Face: https://huggingface.co/yyshi0619/pi05-base-pytorch
 - Blog de Physical Intelligence sobre π0.5: https://www.physicalintelligence.company/blog/pi05
 - Repositorio OpenPI (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Términos de uso de Gemma: https://ai.google.dev/gemma/terms

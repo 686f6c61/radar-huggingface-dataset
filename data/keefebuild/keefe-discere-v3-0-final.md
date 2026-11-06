@@ -66,9 +66,9 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [HuggingFace - KeefeBuild/Keefe-Discere-v3.0-Final](https://huggingface.co/KeefeBuild/Keefe-Discere-v3.0-Final)
-- [HuggingFace - KeefeBuild/Keefe-Discere (modelo base)](https://huggingface.co/KeefeBuild/Keefe-Discere)
-- [Perfil del autor en HuggingFace](https://huggingface.co/KeefeBuild)
+- [Hugging Face - KeefeBuild/Keefe-Discere-v3.0-Final](https://huggingface.co/KeefeBuild/Keefe-Discere-v3.0-Final)
+- [Hugging Face - KeefeBuild/Keefe-Discere (modelo base)](https://huggingface.co/KeefeBuild/Keefe-Discere)
+- [Perfil del autor en Hugging Face](https://huggingface.co/KeefeBuild)
 - [GitHub de keefe-ai](https://github.com/keefe-ai)
 - [FriendliAI - Keefe-Discere API](https://friendli.ai/models/KeefeBuild/Keefe-Discere)
 - [Unsloth - libreria de entrenamiento](https://unsloth.ai/)

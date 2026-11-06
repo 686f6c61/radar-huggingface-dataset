@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/akhaliq/llama-cpp-ricursive-cuda120
+- Repositorio Hugging Face: https://huggingface.co/akhaliq/llama-cpp-ricursive-cuda120
 - Modelo Ripple-65B-Preview: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - GGUF de AtomicChat: https://huggingface.co/AtomicChat/Ripple-65B-Preview-GGUF
 - GGUF de prometheusAIR: https://huggingface.co/prometheusAIR/Ripple-65B-Preview-GGUF

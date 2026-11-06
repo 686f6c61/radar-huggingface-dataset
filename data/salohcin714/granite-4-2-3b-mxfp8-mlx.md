@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks para esta version cuantizada. La mo
 | ibm-granite/granite-4.2-3b (original) | No disponible | No cuantizado | safetensors (PyTorch) | Apache 2.0 | Modelo base de IBM con benchmarks publicados |
 | salohcin714/granite-4.2-3b-5bit-mlx | No disponible | 5-bit | MLX | Apache 2.0 | Variante con cuantizacion de 5 bits del mismo autor |
 
-Nota: los datos de la variante 5-bit se limitan a su existencia en HuggingFace; no se dispone de especificaciones detalladas. El modelo original de IBM se denomina "3B" pero el numero exacto de parametros no se ha especificado en la informacion disponible.
+Nota: los datos de la variante 5-bit se limitan a su existencia en Hugging Face; no se dispone de especificaciones detalladas. El modelo original de IBM se denomina "3B" pero el numero exacto de parametros no se ha especificado en la informacion disponible.
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ Nota: los datos de la variante 5-bit se limitan a su existencia en HuggingFace; 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salohcin714/granite-4.2-3b-mxfp8-mlx
+- Repositorio Hugging Face: https://huggingface.co/salohcin714/granite-4.2-3b-mxfp8-mlx
 - Model card del modelo original: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Documentacion de Granite 4.2 de IBM: https://www.ibm.com/granite/docs/models/granite4-2
 - Documentacion de Granite 4.1 de IBM: https://www.ibm.com/granite/docs/models/granite4-1

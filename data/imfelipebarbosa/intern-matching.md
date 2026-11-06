@@ -2,7 +2,7 @@
 
 ## Resumen
 
-"intern-matching" es un prototipo de investigación alojado en HuggingFace por el usuario imfelipebarbosa, etiquetado como "Mae for Matching" y orientado a tareas de emparejamiento (matching). Se trata de una implementación propia en PyTorch cuyo checkpoint incluido es únicamente una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio declara explícitamente que no presenta métricas de rendimiento verificadas y que la configuración "nano" solo documenta valores por defecto y formatos de fichero.
+"intern-matching" es un prototipo de investigación alojado en Hugging Face por el usuario imfelipebarbosa, etiquetado como "Mae for Matching" y orientado a tareas de emparejamiento (matching). Se trata de una implementación propia en PyTorch cuyo checkpoint incluido es únicamente una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio declara explícitamente que no presenta métricas de rendimiento verificadas y que la configuración "nano" solo documenta valores por defecto y formatos de fichero.
 
 El modelo tiene 16.576 parámetros totales según el fichero safetensors, lo que lo sitúa en un rango muy por debajo de cualquier modelo de lenguaje o de representación utilizable en producción. La arquitectura declarada es "Mae" con atención dilatada, fusión mediante concatenación seguida de MLP, activación GELU y normalización LayerNorm. No se documentan datos de entrenamiento, composición del dataset, número de tokens ni técnicas de alineación como RLHF o DPO.
 
@@ -80,5 +80,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imfelipebarbosa/intern-matching
+- Modelo en Hugging Face: https://huggingface.co/imfelipebarbosa/intern-matching
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados.

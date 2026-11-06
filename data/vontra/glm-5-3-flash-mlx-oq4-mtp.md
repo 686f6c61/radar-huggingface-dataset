@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos directos entre la versión cua
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-oQ4-MTP
+- Repositorio Hugging Face de la conversión: https://huggingface.co/Vontra/GLM-5.3-Flash-MLX-oQ4-MTP
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Reporte técnico: https://arxiv.org/abs/2602.15763

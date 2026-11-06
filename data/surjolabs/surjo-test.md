@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Surjo-test es un modelo publicado en HuggingFace por el usuario SurjoLabs, disponible en el repositorio `SurjoLabs/Surjo-test`. Se trata de un repositorio de 6,1 GB con pesos en formato safetensors, creado el 12 de septiembre de 2026 y actualizado el 13 de septiembre de 2026. El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+Surjo-test es un modelo publicado en Hugging Face por el usuario SurjoLabs, disponible en el repositorio `SurjoLabs/Surjo-test`. Se trata de un repositorio de 6,1 GB con pesos en formato safetensors, creado el 12 de septiembre de 2026 y actualizado el 13 de septiembre de 2026. El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 La informacion publica disponible es extremadamente limitada. No se especifica la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la licencia. La model card no aporta pipeline declarado, lo que impide confirmar incluso si se trata de un modelo de generacion de texto, de vision o de otra modalidad. El unico dato tecnico objetivo es el tamano del repositorio y el formato de los pesos.
 
@@ -21,7 +21,7 @@ Por el momento, este modelo no puede evaluarse tecnicamente con rigor: no hay be
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 6,1 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-09-12 |
 | Ultima actualizacion | 2026-09-13 |
@@ -44,7 +44,7 @@ No es posible confirmar las capacidades del modelo con la informacion disponible
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
 - Capacidades especiales (modo thinking, vision, audio, etc.): no disponible.
-- Modalidad de entrada y salida: no disponible (el pipeline no esta declarado en HuggingFace).
+- Modalidad de entrada y salida: no disponible (el pipeline no esta declarado en Hugging Face).
 
 Cualquier afirmacion sobre estas capacidades seria especulativa mientras no se desbloquee el repositorio y se publique documentacion.
 
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para establecer una comparativa fiable. El un
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card con arquitectura, datos de entrenamiento, licencia ni limitaciones declaradas.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que anade una capa de revision y puede impedir el uso automatizado en pipelines.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que anade una capa de revision y puede impedir el uso automatizado en pipelines.
 - Licencia desconocida: sin licencia publicada, no puede asumirse permiso para uso comercial, redistribucion ni fine-tuning. Es un riesgo legal directo.
 - Riesgo de alucinacion: no evaluable, pero debe asumirse el riesgo estandar de cualquier modelo generativo sin benchmarks ni evaluaciones de seguridad.
 - Sesgos: no hay informacion sobre la composicion del dataset ni sobre procesos de alineacion, por lo que no pueden evaluarse sesgos de genero, raza, idioma o ideologia.
@@ -99,7 +99,7 @@ No se dispone de datos suficientes para establecer una comparativa fiable. El un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SurjoLabs/Surjo-test
+- Repositorio en Hugging Face: https://huggingface.co/SurjoLabs/Surjo-test
 - Repositorio relacionado del mismo autor: https://huggingface.co/SurjoLabs/Surjo-50m
 - Pagina de actividad donde se menciona SurjoLabs/Surjo-50m: https://huggingface.co/GGUFGuy/activity/likes
 - Paper tecnico: no disponible

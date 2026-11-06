@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Mich-aeltb/unet-asr` en HuggingFace no contiene un modelo de inteligencia artificial, sino un único archivo de texto (`review.md`) que documenta una revisión académica sobre el tema de "generación multimodal". El autor es Mich-aeltb, y el contenido está estructurado como un paper académico (abstract, introducción, preliminares, método, experimentos, discusión) con estilo teórico-riguroso y formato HTML. No hay pesos, arquitectura, ni ningún artefacto de modelo entrenado.
+El repositorio `Mich-aeltb/unet-asr` en Hugging Face no contiene un modelo de inteligencia artificial, sino un único archivo de texto (`review.md`) que documenta una revisión académica sobre el tema de "generación multimodal". El autor es Mich-aeltb, y el contenido está estructurado como un paper académico (abstract, introducción, preliminares, método, experimentos, discusión) con estilo teórico-riguroso y formato HTML. No hay pesos, arquitectura, ni ningún artefacto de modelo entrenado.
 
 Este repositorio es irrelevante para desarrolladores o investigadores que buscan un modelo de IA. Su propósito es únicamente documental: sirve como ejemplo de una revisión de paper, probablemente generada por una IA, pero no ofrece ninguna capacidad de inferencia ni procesamiento. La licencia MIT cubre el texto, pero no hay nada que ejecutar ni desplegar.
 
@@ -55,7 +55,7 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mich-tael/b/unet-asr
+- Repositorio en Hugging Face: https://huggingface.co/Mich-tael/b/unet-asr
 - Referencias relacionadas encontradas en la búsqueda (no directamente vinculadas al repositorio):
   - Paper de Uni-ASR (arXiv): https://arxiv.org/pdf/2603.11123
   - Artículo sobre U-Net en AI Wiki: https://aiwiki.ai/wiki/unet

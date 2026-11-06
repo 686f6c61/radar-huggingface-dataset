@@ -6,7 +6,7 @@ Hakaya (حكايا) es un adaptador LoRA para generacion de cuentos infantiles e
 
 El problema que resuelve es muy especifico: dado un nombre de nino, un grupo de edad, una region de Arabia Saudi y una categoria de cuento, el modelo genera un relato infantil coherente con esos parametros y alineado con el contexto cultural saudí. Es, por tanto, un ejemplo de adaptacion de bajo coste (LoRA) de un LLM generalista arabe a un dominio vertical muy concreto, con un dataset propio preparado por el equipo del proyecto y no publicado.
 
-Su relevancia es doble. Por un lado, demuestra que con un rank de LoRA de solo 8 y unos pocos modulos objetivo (`q_proj`, `k_proj`, `v_proj`, `o_proj`) se puede especializar un modelo arabe de 7B en una tarea narrativa con restricciones culturales y de edad. Por otro, es un caso representativo de los adaptadores de nicho que proliferan en HuggingFace con documentacion minima: no hay licencia declarada, no hay benchmarks publicados y no hay datos de uso (0 descargas y 0 likes en el momento de la consulta), lo que limita seriamente su evaluacion objetiva.
+Su relevancia es doble. Por un lado, demuestra que con un rank de LoRA de solo 8 y unos pocos modulos objetivo (`q_proj`, `k_proj`, `v_proj`, `o_proj`) se puede especializar un modelo arabe de 7B en una tarea narrativa con restricciones culturales y de edad. Por otro, es un caso representativo de los adaptadores de nicho que proliferan en Hugging Face con documentacion minima: no hay licencia declarada, no hay benchmarks publicados y no hay datos de uso (0 descargas y 0 likes en el momento de la consulta), lo que limita seriamente su evaluacion objetiva.
 
 ## Especificaciones tecnicas
 
@@ -72,8 +72,8 @@ La busqueda web no ha devuelto adaptadores comparables de generacion de cuentos 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jouri1310/hakaya-allam-lora | Adaptador LoRA sobre ALLaM-7B-Instruct | Rank 8 sobre modelo base de ~7B | No disponible | No disponible | HuggingFace, 0 descargas |
-| humain-ai/ALLaM-7B-Instruct-preview | Modelo completo instructivo | ~7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| jouri1310/hakaya-allam-lora | Adaptador LoRA sobre ALLaM-7B-Instruct | Rank 8 sobre modelo base de ~7B | No disponible | No disponible | Hugging Face, 0 descargas |
+| humain-ai/ALLaM-7B-Instruct-preview | Modelo completo instructivo | ~7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de generacion de cuentos en arabe | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ La busqueda web no ha devuelto adaptadores comparables de generacion de cuentos 
 
 ## Enlaces
 
-- Pagina del adaptador en HuggingFace: https://huggingface.co/jouri1310/hakaya-allam-lora
+- Pagina del adaptador en Hugging Face: https://huggingface.co/jouri1310/hakaya-allam-lora
 - Modelo base: https://huggingface.co/humain-ai/ALLaM-7B-Instruct-preview
 - Repositorio de PEFT (libreria de entrenamiento): https://github.com/huggingface/peft
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jpt-4b-oQ4e es una cuantización de 4 bits del modelo base kirp/jpt-4b, publicada por el usuario RepublicOfKorokke en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de precisión del artefacto original: el repositorio contiene únicamente pesos ya cuantizados, sin tokenizador documentado en la model card ni información sobre el proceso de entrenamiento subyacente. El identificador y las etiquetas indican que el modelo resultante está pensado para ejecutarse con la librería MLX, es decir, sobre hardware de Apple Silicon.
+jpt-4b-oQ4e es una cuantización de 4 bits del modelo base kirp/jpt-4b, publicada por el usuario RepublicOfKorokke en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de precisión del artefacto original: el repositorio contiene únicamente pesos ya cuantizados, sin tokenizador documentado en la model card ni información sobre el proceso de entrenamiento subyacente. El identificador y las etiquetas indican que el modelo resultante está pensado para ejecutarse con la librería MLX, es decir, sobre hardware de Apple Silicon.
 
 El interés técnico del artefacto reside en su esquema de cuantización: ha sido generado con oQ (herramienta de cuantización de precisión mixta de oMLX v0.7.0), con 4 bits por peso y tamaño de grupo 64, y almacenado en safetensors compatible con MLX. El recuento real de parámetros extraído de los tensores es de 4.539.265.536 (aproximadamente 4,54 mil millones), y el repositorio ocupa 3,2 GB, coherente con un empaquetado de 4 bits.
 
@@ -50,7 +50,7 @@ Tampoco se dispone de información sobre el entrenamiento: no se documenta el n�
 - Pruebas de pipelines de inferencia MLX: integración en scripts `mlx-lm` para validar carga de safetensors cuantizados, gestión de memoria y velocidad de decodificación en hardware concreto.
 - Generación de texto en entornos aislados: al ejecutarse localmente y pesar 3,2 GB, es viable en despliegues sin conectividad o con requisitos de residencia de datos, siempre que la licencia (no declarada) lo permita.
 - Base para cuantizaciones o fine-tuning posteriores: el artefacto puede servir de entrada para conversiones a otros formatos (por ejemplo GGUF) o para LoRA sobre el modelo base, si el usuario asume el riesgo de trabajar sin licencia explícita.
-- Docencia y formación técnica: ilustra de forma compacta el flujo completo de publicación de una cuantización (metadatos, safetensors, etiquetas de HuggingFace) en un repositorio pequeño.
+- Docencia y formación técnica: ilustra de forma compacta el flujo completo de publicación de una cuantización (metadatos, safetensors, etiquetas de Hugging Face) en un repositorio pequeño.
 
 ## Benchmarks y rendimiento
 
@@ -94,7 +94,7 @@ Diferencias estructurales relevantes: los tres modelos de referencia declaran li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RepublicOfKorokke/jpt-4b-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/RepublicOfKorokke/jpt-4b-oQ4e
 - Modelo base: https://huggingface.co/kirp/jpt-4b
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Paper, blog, repositorio de código o demo del modelo: no disponible

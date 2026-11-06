@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `menik1126/ovd-math-128-data-random-step600-historical` es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en HuggingFace. Segun la informacion disponible, se trata de un checkpoint historico correspondiente a la configuracion "DSR128, random_suffix, semantic step 600", y el autor indica explicitamente que son pesos evaluados historicamente y no la implementacion reparada recientemente. El repositorio contiene unicamente pesos de inferencia y ficheros de tokenizer, sin estado del optimizador.
+El modelo `menik1126/ovd-math-128-data-random-step600-historical` es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en Hugging Face. Segun la informacion disponible, se trata de un checkpoint historico correspondiente a la configuracion "DSR128, random_suffix, semantic step 600", y el autor indica explicitamente que son pesos evaluados historicamente y no la implementacion reparada recientemente. El repositorio contiene unicamente pesos de inferencia y ficheros de tokenizer, sin estado del optimizador.
 
-El modelo tiene 1.777.088.000 parametros (aproximadamente 1,78 mil millones), lo que lo situa en la categoria de modelos pequenos. La etiqueta de arquitectura declarada en HuggingFace es `qwen2`, por lo que previsiblemente se apoya en la familia Qwen2, aunque no se documenta la configuracion exacta de capas, cabezas de atencion ni longitud de contexto. El nombre del repositorio incluye el termino "math", lo que sugiere un entrenamiento orientado a tareas matematicas, pero no hay documentacion que lo confirme.
+El modelo tiene 1.777.088.000 parametros (aproximadamente 1,78 mil millones), lo que lo situa en la categoria de modelos pequenos. La etiqueta de arquitectura declarada en Hugging Face es `qwen2`, por lo que previsiblemente se apoya en la familia Qwen2, aunque no se documenta la configuracion exacta de capas, cabezas de atencion ni longitud de contexto. El nombre del repositorio incluye el termino "math", lo que sugiere un entrenamiento orientado a tareas matematicas, pero no hay documentacion que lo confirme.
 
 La relevancia de esta ficha es limitada y fundamentalmente de trazabilidad: se trata de un checkpoint sin descargas, sin likes, sin licencia declarada y sin model card tecnica mas alla de tres lineas. No hay benchmarks publicados ni informacion sobre composicion del dataset, regimen de entrenamiento o ajuste por preferencias. Cualquier evaluacion practica requerira descargar los pesos y ejecutar pruebas propias.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada y fundamentalmente de trazabilidad: se t
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta de HuggingFace: `qwen2`) |
+| Arquitectura | no disponible (etiqueta de Hugging Face: `qwen2`) |
 | Parametros totales | 1.777.088.000 (aprox. 1,78 B) |
 | Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye benchmarks ni especificac
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia: no se declara licencia en HuggingFace. Sin una licencia explicita, no hay autorizacion clara para uso comercial ni para redistribucion, y en muchas jurisdicciones los pesos quedan en una situacion legal ambigua. Es un bloqueante para cualquier despliegue en produccion.
+- Ausencia total de licencia: no se declara licencia en Hugging Face. Sin una licencia explicita, no hay autorizacion clara para uso comercial ni para redistribucion, y en muchas jurisdicciones los pesos quedan en una situacion legal ambigua. Es un bloqueante para cualquier despliegue en produccion.
 - Model card practicamente vacia: no hay informacion sobre datos de entrenamiento, idiomas, sesgos ni uso previsto. El autor advierte ademas que son pesos historicos y no la implementacion reparada, lo que implica que pueden contener defectos ya corregidos en versiones posteriores.
 - Riesgo de alucinacion: no evaluado. Al no existir benchmarks ni evaluaciones independientes, se desconoce la tasa de fabricacion de hechos, especialmente en matematicas, donde un error aritmetico pasa inadvertido con facilidad.
 - Sesgos: no documentados. No se puede afirmar nada sobre sesgos de genero, raza, religion o idioma.
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye benchmarks ni especificac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/menik1126/ovd-math-128-data-random-step600-historical
+- Repositorio en Hugging Face: https://huggingface.co/menik1126/ovd-math-128-data-random-step600-historical
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

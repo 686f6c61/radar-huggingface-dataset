@@ -74,9 +74,9 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 | Referencia | Descripcion | Precision en test | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Modelo base Qwen/Qwen3.5-0.8B (sin entrenar) | Punto de partida antes del ajuste | 30,4 % | no disponible en la informacion proporcionada | HuggingFace |
+| Modelo base Qwen/Qwen3.5-0.8B (sin entrenar) | Punto de partida antes del ajuste | 30,4 % | no disponible en la informacion proporcionada | Hugging Face |
 | Politica profesora entrenada con PPO en el simulador | Politica pequena usada como fuente de etiquetas | No se publica metrica de test comparable | no disponible | Interna al proyecto |
-| Este modelo (LoRA + GRPO) | Decision de eleccion unica en el simulador | 77,5 % | Apache 2.0 | HuggingFace |
+| Este modelo (LoRA + GRPO) | Decision de eleccion unica en el simulador | 77,5 % | Apache 2.0 | Hugging Face |
 
 No se han encontrado en la informacion disponible otros modelos de decision making sobre el mismo simulador ni alternativas equivalentes para establecer una comparativa externa.
 
@@ -96,7 +96,7 @@ No se han encontrado en la informacion disponible otros modelos de decision maki
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rhemslkim/connectailab-rl-connectailab-rl-rere-v1-v1
+- Modelo en Hugging Face: https://huggingface.co/rhemslkim/connectailab-rl-connectailab-rl-rere-v1-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON en GitHub: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

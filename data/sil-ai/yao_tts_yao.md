@@ -2,9 +2,9 @@
 
 ## Resumen
 
-yao_tts_yao es un modelo de sintesis de voz (text-to-speech) obtenido mediante fine-tuning de microsoft/speecht5_tts, publicado por el usuario sil-ai en HuggingFace. Se trata de un ajuste sobre la arquitectura SpeechT5 de Microsoft, un modelo encoder-decoder que combina representaciones de habla y texto para tareas de conversion texto-a-audio. El modelo cuenta con 144.435.426 parametros y un repositorio de 1,7 GB en formato safetensors.
+yao_tts_yao es un modelo de sintesis de voz (text-to-speech) obtenido mediante fine-tuning de microsoft/speecht5_tts, publicado por el usuario sil-ai en Hugging Face. Se trata de un ajuste sobre la arquitectura SpeechT5 de Microsoft, un modelo encoder-decoder que combina representaciones de habla y texto para tareas de conversion texto-a-audio. El modelo cuenta con 144.435.426 parametros y un repositorio de 1,7 GB en formato safetensors.
 
-El modelo resuelve la generacion de audio a partir de texto, presumiblemente especializado en una voz o dominio concreto (el sufijo "yao" sugiere un hablante o conjunto de datos especifico), aunque la model card no documenta ni el dataset de entrenamiento ni el hablante objetivo. La informacion disponible es muy limitada: la model card fue generada automaticamente por el Trainer de HuggingFace y contiene multiples secciones marcadas como "More information needed".
+El modelo resuelve la generacion de audio a partir de texto, presumiblemente especializado en una voz o dominio concreto (el sufijo "yao" sugiere un hablante o conjunto de datos especifico), aunque la model card no documenta ni el dataset de entrenamiento ni el hablante objetivo. La informacion disponible es muy limitada: la model card fue generada automaticamente por el Trainer de Hugging Face y contiene multiples secciones marcadas como "More information needed".
 
 Su relevancia es acotada: se trata de un fine-tune de bajo perfil (38 descargas, 0 likes en el momento de la consulta) sin benchmarks publicados ni documentacion de uso previsto. Resulta util como ejemplo de ajuste de SpeechT5 para una voz concreta, pero no constituye una opcion robusta para produccion sin validacion adicional por parte del usuario.
 
@@ -60,17 +60,17 @@ La model card declara un unico resultado en el conjunto de evaluacion: perdida d
 - VRAM estimada para inferencia: al tratarse de un modelo de 144M de parametros, la inferencia en FP32 requiere aproximadamente 0,6 GB solo para los pesos, mas overhead de activaciones y del vocoder; en la practica, menos de 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060, RTX 4060, RTX 4090); tambien funciona en GPU de datacenter (A100, H100) sin aprovechar su capacidad.
 - Cabe en GPU consumer: si, en practicamente todas las GPU con al menos 2-4 GB de VRAM; tambien es viable en CPU para inferencia no interactiva.
-- Opciones de despliegue: transformers con la pipeline `text-to-audio`; el tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no son adecuados para TTS de este tipo).
+- Opciones de despliegue: transformers con la pipeline `text-to-audio`; el tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no son adecuados para TTS de este tipo).
 - Latencia y throughput: no disponibles. Al ser un modelo pequeno, la latencia por frase deberia ser baja en GPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| yao_tts_yao | 144,4M | no disponible | MIT | HuggingFace (38 descargas) | Fine-tune de SpeechT5 sin documentacion de dataset ni idioma |
-| microsoft/speecht5_tts | ~144M | no disponible | MIT | HuggingFace (modelo base ampliamente usado) | Modelo original, documentado y con demos; entrenado principalmente en ingles |
-| Coqui TTS (XTTS v2) | no disponible en la informacion | no disponible | no disponible | Coqui / HuggingFace | Familia TTS multilingue con clonacion de voz; no comparable directamente en parametros |
-| VITS / Piper | variable | no disponible | variable (MIT en Piper) | HuggingFace / GitHub | Modelos TTS ligeros orientados a inferencia en CPU; alternativa practica para produccion |
+| yao_tts_yao | 144,4M | no disponible | MIT | Hugging Face (38 descargas) | Fine-tune de SpeechT5 sin documentacion de dataset ni idioma |
+| microsoft/speecht5_tts | ~144M | no disponible | MIT | Hugging Face (modelo base ampliamente usado) | Modelo original, documentado y con demos; entrenado principalmente en ingles |
+| Coqui TTS (XTTS v2) | no disponible en la informacion | no disponible | no disponible | Coqui / Hugging Face | Familia TTS multilingue con clonacion de voz; no comparable directamente en parametros |
+| VITS / Piper | variable | no disponible | variable (MIT en Piper) | Hugging Face / GitHub | Modelos TTS ligeros orientados a inferencia en CPU; alternativa practica para produccion |
 
 La comparacion directa con Coqui XTTS y Piper es orientativa: no se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa.
 
@@ -87,5 +87,5 @@ La comparacion directa con Coqui XTTS y Piper es orientativa: no se dispone de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sil-ai/yao_tts_yao
+- Modelo en Hugging Face: https://huggingface.co/sil-ai/yao_tts_yao
 - Modelo base: https://huggingface.co/microsoft/speecht5_tts

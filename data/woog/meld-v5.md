@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idioma | Licencia | Formato | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|---|
-| MELD v5 (`woog/meld-v5`) | 394,8 M | no disponible | inglés | MIT | safetensors | espejo en HuggingFace, 0 descargas | cabeza personalizada; requiere código propio |
-| `jhu-clsp/ettin-encoder-400m` | ~400 M según denominación; cifra exacta no disponible | no disponible | no disponible | no disponible | no disponible | disponible en HuggingFace | modelo base del detector |
+| MELD v5 (`woog/meld-v5`) | 394,8 M | no disponible | inglés | MIT | safetensors | espejo en Hugging Face, 0 descargas | cabeza personalizada; requiere código propio |
+| `jhu-clsp/ettin-encoder-400m` | ~400 M según denominación; cifra exacta no disponible | no disponible | no disponible | no disponible | no disponible | disponible en Hugging Face | modelo base del detector |
 | `openai-community/roberta-base-openai-detector` | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | alternativa habitual de la categoría; datos no verificados en la información proporcionada |
 | `desklib/ai-text-detector-v1.01` | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | alternativa habitual de la categoría; datos no verificados en la información proporcionada |
 

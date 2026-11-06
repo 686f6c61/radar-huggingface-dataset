@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mangalarora/moderation_models` es un repositorio publicado en HuggingFace por el usuario mangalarora. En el momento de la consulta (creacion y ultima actualizacion registradas el 11 de septiembre de 2026) el repositorio no incluye una model card con contenido tecnico: el unico texto disponible es la declaracion de licencia `apache-2.0`. No hay pipeline declarado, no hay idiomas declarados y las etiquetas se limitan a `license:apache-2.0` y `region:us`.
+`mangalarora/moderation_models` es un repositorio publicado en Hugging Face por el usuario mangalarora. En el momento de la consulta (creacion y ultima actualizacion registradas el 11 de septiembre de 2026) el repositorio no incluye una model card con contenido tecnico: el unico texto disponible es la declaracion de licencia `apache-2.0`. No hay pipeline declarado, no hay idiomas declarados y las etiquetas se limitan a `license:apache-2.0` y `region:us`.
 
 El repositorio acumula 0 descargas y 0 likes, lo que junto a la ausencia de documentacion sugiere que se trata de un espacio recien creado, vacio o no publicado. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, proceso de alineacion ni resultados de evaluacion.
 
@@ -89,8 +89,8 @@ No disponible. Al no conocerse el tamano, la tarea exacta ni el rendimiento del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mangalarora/moderation_models
-- Pagina del autor en HuggingFace: https://huggingface.co/mangalarora
+- Hugging Face: https://huggingface.co/mangalarora/moderation_models
+- Pagina del autor en Hugging Face: https://huggingface.co/mangalarora
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

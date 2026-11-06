@@ -4,7 +4,7 @@
 
 ChatgaiyaGemma es un modelo de lenguaje multimodal desarrollado por nawax0x1 (Nawaz Haider) como un ajuste fino del modelo base unsloth/gemma-4-E4B-it, perteneciente a la familia Gemma 4. Cuenta con aproximadamente 8.000 millones de parametros (7.996.156.490) y emplea un pipeline image-text-to-text, lo que indica capacidad para procesar imagenes y texto como entrada y generar respuestas textuales.
 
-El entrenamiento se realizo con las librerias Unsloth y TRL de HuggingFace, logrando un proceso aproximadamente 2 veces mas rapido que un ajuste fino convencional. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificacion sin restricciones significativas. El modelo declara soporte exclusivo para ingles, aunque su base Gemma 4 podria ofrecer capacidades multilingues inherentes.
+El entrenamiento se realizo con las librerias Unsloth y TRL de Hugging Face, logrando un proceso aproximadamente 2 veces mas rapido que un ajuste fino convencional. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificacion sin restricciones significativas. El modelo declara soporte exclusivo para ingles, aunque su base Gemma 4 podria ofrecer capacidades multilingues inherentes.
 
 La relevancia de este modelo reside en combinar la eficiencia de la variante E4B de Unsloth con las capacidades multimodales de Gemma 4, ofreciendo una opcion accesible para aplicaciones conversacionales y de generacion de texto con soporte de imagenes en entornos con recursos moderados.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo reside en combinar la eficiencia de la variante E4B
 
 El modelo se basa en la arquitectura Gemma 4 de Google, concretamente en la variante E4B publicada por Unsloth, que incorpora optimizaciones para reducir el consumo de memoria y acelerar la inferencia. El pipeline declarado como image-text-to-text indica que el modelo integra un codificador visual junto con el decodificador de lenguaje, permitiendo entradas multimodales.
 
-El ajuste fino se realizo con la libreria TRL de HuggingFace junto con Unsloth, que optimiza el proceso mediante kernels personalizados y tecnicas de memoria eficiente, logrando un entrenamiento aproximadamente 2 veces mas rapido que un fine-tuning estandar. No se proporcionan detalles sobre el dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de RLHF o DPO.
+El ajuste fino se realizo con la libreria TRL de Hugging Face junto con Unsloth, que optimiza el proceso mediante kernels personalizados y tecnicas de memoria eficiente, logrando un entrenamiento aproximadamente 2 veces mas rapido que un fine-tuning estandar. No se proporcionan detalles sobre el dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
@@ -77,12 +77,12 @@ Nota: los datos de Gemma 3 y Gemma 2 provienen del conocimiento general de la fa
 - No se han publicado benchmarks, por lo que el rendimiento en tareas estandar (MMLU, HumanEval, GSM8K) es desconocido.
 - La cuantizacion E4B del modelo base puede introducir una ligera degradacion de calidad en comparacion con el modelo original en precision completa.
 - No se proporciona informacion sobre la longitud de contexto soportada, lo que limita la planificacion de despliegues con ventanas de contexto largas.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un modelo reciente o poco probado en la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un modelo reciente o poco probado en la comunidad.
 - Al ser un modelo multimodal, el procesamiento de imagenes puede requerir recursos adicionales de memoria durante la inferencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nawax0x1/ChatgaiyaGemma
+- Modelo en Hugging Face: https://huggingface.co/nawax0x1/ChatgaiyaGemma
 - Perfil del autor: https://huggingface.co/nawax0x1
 - Datasets del autor: https://huggingface.co/nawax0x1/datasets
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

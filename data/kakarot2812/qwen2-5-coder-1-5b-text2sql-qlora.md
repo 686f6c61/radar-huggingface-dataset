@@ -72,9 +72,9 @@ Advertencias sobre la métrica, tal como las declara el propio autor: no mide co
 
 | Artefacto | Parametros | Contexto | Resultado text-to-SQL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Kakarot2812) | 1,5B (9,23 M entrenables) | 1.024 tokens de entrenamiento; 32.768 del base | 69,33 % exact-match (150 ejemplos, `dipanjanS/text2sql-dataset`) | No disponible en el adaptador; base Apache 2.0 | HuggingFace, repo de 0,0 GB |
-| Modelo base Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens | 1,33 % exact-match con el mismo prompt | Apache 2.0 | HuggingFace |
-| `spcv/qwen2.5_coder_text2sql_onnx` | 1,5B | No disponible | No disponible (ajustado sobre `trl-lab/SQaLe-text-to-SQL`) | No disponible | HuggingFace, export ONNX Runtime GenAI INT4 |
+| Este adaptador (Kakarot2812) | 1,5B (9,23 M entrenables) | 1.024 tokens de entrenamiento; 32.768 del base | 69,33 % exact-match (150 ejemplos, `dipanjanS/text2sql-dataset`) | No disponible en el adaptador; base Apache 2.0 | Hugging Face, repo de 0,0 GB |
+| Modelo base Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens | 1,33 % exact-match con el mismo prompt | Apache 2.0 | Hugging Face |
+| `spcv/qwen2.5_coder_text2sql_onnx` | 1,5B | No disponible | No disponible (ajustado sobre `trl-lab/SQaLe-text-to-SQL`) | No disponible | Hugging Face, export ONNX Runtime GenAI INT4 |
 | `thanita47/text2sql-qlora-finetuning` (repo de experimento, no modelo) | 1,5B | No disponible | 72,8 % exact-match con entrenamiento schema-aware, frente a 11,7 % sin él | No disponible | GitHub |
 
 Los tres artefactos parten de la misma base y atacan el mismo problema con QLoRA; la diferencia principal es el dataset, el tratamiento del esquema y el formato de exportación. Las cifras no son directamente comparables porque usan conjuntos de evaluación distintos.
@@ -94,10 +94,10 @@ Los tres artefactos parten de la misma base y atacan el mismo problema con QLoRA
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Kakarot2812/qwen2.5-coder-1.5b-text2sql-qlora)
+- [Modelo en Hugging Face](https://huggingface.co/Kakarot2812/qwen2.5-coder-1.5b-text2sql-qlora)
 - [Modelo base Qwen2.5-Coder-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct)
 - [Qwen2.5-Coder Technical Report (arXiv 2409.12186)](https://arxiv.org/abs/2409.12186v1)
-- [Qwen2.5-1.5B en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-1.5B)
+- [Qwen2.5-1.5B en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-1.5B)
 - [Repo de entrenamiento relacionado: thanita47/text2sql-qlora-finetuning](https://github.com/thanita47/text2sql-qlora-finetuning)
 - [Repo de entrenamiento relacionado: unbiasederudite/qwen2.5-coder-text2sql-qlora](https://github.com/unbiasederudite/qwen2.5-coder-text2sql-qlora)
 - [Adaptador equivalente exportado a ONNX: spcv/qwen2.5_coder_text2sql_onnx](https://huggingface.co/spcv/qwen2.5_coder_text2sql_onnx)

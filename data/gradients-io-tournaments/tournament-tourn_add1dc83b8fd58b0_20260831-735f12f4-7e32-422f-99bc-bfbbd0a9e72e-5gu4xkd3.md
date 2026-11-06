@@ -37,7 +37,7 @@ Dada la ausencia de documentación, los casos de uso son hipotéticos y dependen
 - Investigación en fine-tuning descentralizado: el adaptador puede servir como ejemplo de los artefactos generados en torneos de Gradients, útil para estudiar la variabilidad y calidad de los adaptadores producidos en entornos competitivos.
 - Fine-tuning eficiente sobre un modelo base: si se identifica el modelo base y se confirma que el adaptador es LoRA, podría cargarse con `peft` para ajustar el comportamiento del modelo en una tarea concreta, aunque se desconoce cuál.
 - Evaluación comparativa de adaptadores: los investigadores podrían comparar este adaptador con otros del mismo torneo para analizar diferencias de rendimiento, siempre que se publiquen métricas.
-- Integración en pipelines PEFT: técnicamente, el adaptador puede combinarse con el modelo base mediante la librería `peft` de HuggingFace, pero sin conocer la tarea objetivo, su utilidad práctica es limitada.
+- Integración en pipelines PEFT: técnicamente, el adaptador puede combinarse con el modelo base mediante la librería `peft` de Hugging Face, pero sin conocer la tarea objetivo, su utilidad práctica es limitada.
 - Auditoría de procesos de entrenamiento descentralizado: el artefacto puede usarse para inspeccionar qué tipo de pesos y configuraciones produce la plataforma Gradients, contribuyendo a la transparencia del ecosistema.
 - Reproducibilidad de torneos: si se dispone de los logs del torneo, el adaptador podría servir para reproducir o verificar los resultados de una ronda concreta.
 
@@ -68,6 +68,6 @@ No disponible. No se dispone de información suficiente sobre este adaptador ni 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-735f12f4-7e32-422f-99bc-bfbbd0a9e72e-5GU4Xkd3)
+- [Modelo en Hugging Face](https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-735f12f4-7e32-422f-99bc-bfbbd0a9e72e-5GU4Xkd3)
 - [Plataforma Gradients - Torneos](https://www.gradients.io/app/research/tournament)
 - [Modelo similar en LLM Explorer](https://llm-explorer.com/model/gradients-io-tournaments%2Ftournament-tourn_590e311a35f6a234_20260803-3a8e094c-c66c-47dd-adf1-d9b2d21e6c58-5GU4Xkd3,3i3XWJCnZAZLqhQqpBaqSA) (referencia indirecta, no es el mismo adaptador)

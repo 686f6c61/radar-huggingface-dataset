@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ViewRecNet | 1.128.709.145 | no disponible | Recomendación de viewpoint 3D | no disponible | HuggingFace (czZhang2026/ViewRecNet) |
-| facebook/VGGT-1B | no disponible en la informacion | no disponible | Percepción geométrica 3D multi-vista | no disponible en la informacion | HuggingFace (facebook/VGGT-1B) |
+| ViewRecNet | 1.128.709.145 | no disponible | Recomendación de viewpoint 3D | no disponible | Hugging Face (czZhang2026/ViewRecNet) |
+| facebook/VGGT-1B | no disponible en la informacion | no disponible | Percepción geométrica 3D multi-vista | no disponible en la informacion | Hugging Face (facebook/VGGT-1B) |
 | Alternativas de recomendación de viewpoint | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de recomendación de viewpoint en la documentación proporcionada; la única referencia directa es el backbone VGGT-1B, del que ViewRecNet es un fine-tuning.
@@ -83,7 +83,7 @@ No se dispone de información sobre otros modelos comparables de recomendación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/czZhang2026/ViewRecNet
+- Modelo en Hugging Face: https://huggingface.co/czZhang2026/ViewRecNet
 - Dataset ViewRecDB-100K: https://huggingface.co/datasets/czZhang2026/ViewRecDB-100K
 - Repositorio de código ViewRec3D: https://github.com/anonymous1-submission/ViewRec3D
 - Paper (PDF): https://github.com/anonymous1-submission/ViewRec3D/blob/main/ViewRec3D.pdf

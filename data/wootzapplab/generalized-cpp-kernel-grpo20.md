@@ -96,13 +96,13 @@ model = AutoModelForCausalLM.from_pretrained(base, trust_remote_code=True)
 model = PeftModel.from_pretrained(model, checkpoint, subfolder=subfolder)
 ```
 
-Conviene senalar que el identificador de repositorio usado en el ejemplo (`Terrano09/generalized-cpp-kernel-GRPO20`) no coincide con el identificador del repositorio de HuggingFace consultado (`WootzappLab/generalized-cpp-kernel-GRPO20`), lo que puede provocar errores de descarga si se copia el codigo tal cual.
+Conviene senalar que el identificador de repositorio usado en el ejemplo (`Terrano09/generalized-cpp-kernel-GRPO20`) no coincide con el identificador del repositorio de Hugging Face consultado (`WootzappLab/generalized-cpp-kernel-GRPO20`), lo que puede provocar errores de descarga si se copia el codigo tal cual.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `WootzappLab/generalized-cpp-kernel-GRPO20` | Adaptador LoRA (GRPO) sobre GLM-4.7-Flash | No disponible | No disponible | Pass@1 medio 11,75/26 y Turn-2 medio 16/26 en el contrato interno Fixed26 | No disponible | Publico en HuggingFace, 0 descargas |
+| `WootzappLab/generalized-cpp-kernel-GRPO20` | Adaptador LoRA (GRPO) sobre GLM-4.7-Flash | No disponible | No disponible | Pass@1 medio 11,75/26 y Turn-2 medio 16/26 en el contrato interno Fixed26 | No disponible | Publico en Hugging Face, 0 descargas |
 | Otros adaptadores LoRA para C++ | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre alternativas comparables de la misma categoria (adaptadores LoRA orientados a C++ sobre modelos de la familia GLM) en el material proporcionado, por lo que la comparativa cuantitativa no puede completarse.
@@ -114,7 +114,7 @@ No se dispone de informacion sobre alternativas comparables de la misma categori
 - Seleccion sesgada de resultados: el autor declara que las metricas provienen de las "mejores cuatro pruebas" con recibos verificados, no del total de ejecuciones. Esto infla las medias reportadas y reduce la comparabilidad con otros modelos.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible. Al ser un ajuste fino de alcance muy estrecho, es probable que el modelo conserve los sesgos y fallos del modelo base, pero no hay datos al respecto.
 - Idiomas: no se declara ningun conjunto de idiomas soportados. No hay garantia de comportamiento correcto en castellano ni en otros idiomas distintos del usado para prompts de codigo.
-- Licencia sin especificar: la ficha de HuggingFace no indica licencia, ni para el adaptador ni para el modelo base. Esto bloquea de facto cualquier uso comercial sin aclaracion previa con el autor.
+- Licencia sin especificar: la ficha de Hugging Face no indica licencia, ni para el adaptador ni para el modelo base. Esto bloquea de facto cualquier uso comercial sin aclaracion previa con el autor.
 - Ausencia de adopcion verificable: 0 descargas y 0 "likes" en el momento de la consulta; no existen informes independientes de calidad o robustez.
 - Inconsistencia de identificadores: el codigo de carga apunta a `Terrano09/generalized-cpp-kernel-GRPO20` mientras que el repositorio consultado es `WootzappLab/generalized-cpp-kernel-GRPO20`. Hay que verificar el identificador correcto antes de usarlo en produccion.
 - Formato de pesos restrictivo: solo se publican artefactos LoRA portables. No hay pesos fusionados ni cuantizados listos para servidores de inferencia de alto rendimiento.
@@ -123,7 +123,7 @@ No se dispone de informacion sobre alternativas comparables de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WootzappLab/generalized-cpp-kernel-GRPO20
+- Modelo en Hugging Face: https://huggingface.co/WootzappLab/generalized-cpp-kernel-GRPO20
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Commit del modelo base referenciado: `7dd20894a642a0aa287e9827cb1a1f7f91386b67`
 - Identificador alternativo usado en el codigo de carga del autor: `Terrano09/generalized-cpp-kernel-GRPO20` (no verificado)

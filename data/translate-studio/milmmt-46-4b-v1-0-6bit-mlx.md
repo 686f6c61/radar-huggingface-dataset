@@ -86,7 +86,7 @@ La version de 6 bits ofrece un equilibrio entre tamano y calidad, aunque la de 5
 
 ## Enlaces
 
-- Repositorio HuggingFace: [translate-studio/MiLMMT-46-4B-v1.0-6bit-MLX](https://huggingface.co/translate-studio/MiLMMT-46-4B-v1.0-6bit-MLX)
+- Repositorio Hugging Face: [translate-studio/MiLMMT-46-4B-v1.0-6bit-MLX](https://huggingface.co/translate-studio/MiLMMT-46-4B-v1.0-6bit-MLX)
 - Modelo base: [xiaomi-research/MiLMMT-46-4B-v1.0](https://huggingface.co/xiaomi-research/MiLMMT-46-4B-v1.0)
 - Version 5-bit: [translate-studio/MiLMMT-46-4B-v1.0-5bit-MLX](https://huggingface.co/translate-studio/MiLMMT-46-4B-v1.0-5bit-MLX)
 - Version 4-bit: [translate-studio/MiLMMT-46-4B-v1.0-4bit-MLX](https://huggingface.co/translate-studio/MiLMMT-46-4B-v1.0-4bit-MLX)

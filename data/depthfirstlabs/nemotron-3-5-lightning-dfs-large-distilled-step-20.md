@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`depthfirstlabs/Nemotron-3.5-Lightning-DFS-Large-Distilled-Step-20` es un adaptador LoRA de destilacion (distillation) publicado por el laboratorio de investigacion depthfirstlabs, construido sobre el modelo base `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` de NVIDIA. El repositorio ocupa unicamente ~0,9 GB en safetensors, lo que confirma que no se trata de un modelo completo sino de pesos de adaptador, y forma parte de una serie de "steps" de destilacion (en este caso, el step 20). Se distribuye bajo la licencia openmdw-1.1 y con acceso restringido (gated) en HuggingFace.
+`depthfirstlabs/Nemotron-3.5-Lightning-DFS-Large-Distilled-Step-20` es un adaptador LoRA de destilacion (distillation) publicado por el laboratorio de investigacion depthfirstlabs, construido sobre el modelo base `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` de NVIDIA. El repositorio ocupa unicamente ~0,9 GB en safetensors, lo que confirma que no se trata de un modelo completo sino de pesos de adaptador, y forma parte de una serie de "steps" de destilacion (en este caso, el step 20). Se distribuye bajo la licencia openmdw-1.1 y con acceso restringido (gated) en Hugging Face.
 
 El modelo base sobre el que se aplica es un transformer hibrido con capas Mamba y arquitectura Mixture-of-Experts (MoE), con 30.000 millones de parametros totales y 3.000 millones de parametros activos por token. NVIDIA lo posiciona como su modelo abierto mas rapido para agentes siempre activos y tareas especializadas de alto volumen, con soporte de contexto de hasta 1 millon de tokens y presupuesto para despliegue en un solo nodo.
 
@@ -67,16 +67,16 @@ Las unicas afirmaciones de rendimiento encontradas corresponden al modelo base d
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Lightning-DFS-Large-Distilled-Step-20 (adaptador) | LoRA sobre 30B | 3B | 1M (base) | openmdw-1.1 | HuggingFace (gated) |
-| NVIDIA Nemotron-3.5-Lightning-30B-A3B (base) | 30B | 3B | 1M | no disponible en la informacion | HuggingFace / NIM / DeepInfra |
-| NVIDIA Nemotron 3 Nano (predecesor) | no disponible | no disponible | no disponible | no disponible | HuggingFace / NIM |
+| Nemotron-3.5-Lightning-DFS-Large-Distilled-Step-20 (adaptador) | LoRA sobre 30B | 3B | 1M (base) | openmdw-1.1 | Hugging Face (gated) |
+| NVIDIA Nemotron-3.5-Lightning-30B-A3B (base) | 30B | 3B | 1M | no disponible en la informacion | Hugging Face / NIM / DeepInfra |
+| NVIDIA Nemotron 3 Nano (predecesor) | no disponible | no disponible | no disponible | no disponible | Hugging Face / NIM |
 
 Los datos de rendimiento comparativo entre estos modelos no estan disponibles en la informacion proporcionada, salvo la afirmacion de NVIDIA de que Nemotron 3.5 Lightning alcanza hasta 4x el throughput de Nemotron 3 Nano.
 
 ## Limitaciones y advertencias
 
 - Se trata de un adaptador de investigacion, no de un modelo autónomo: requiere cargar el modelo base `NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` para funcionar.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 - Repositorio con 0 descargas y 0 likes: sin validacion comunitaria ni evidencia de uso en produccion.
 - Soporte unicamente de ingles ("en"), lo que limita su uso en castellano u otros idiomas.
 - Ausencia total de datos sobre el dataset de destilacion y de evaluacion: no se puede verificar la calidad ni el grado de alineacion del adaptador.
@@ -86,8 +86,8 @@ Los datos de rendimiento comparativo entre estos modelos no estan disponibles en
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/depthfirstlabs/Nemotron-3.5-Lightning-DFS-Large-Distilled-Step-20
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Hugging Face (adaptador): https://huggingface.co/depthfirstlabs/Nemotron-3.5-Lightning-DFS-Large-Distilled-Step-20
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Model card en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Cookbook de uso en GitHub (NVIDIA-NeMo): https://github.com/NVIDIA-NeMo/Nemotron/tree/main/usage-cookbook/Nemotron-3.5-Lightning
 - DeepInfra (demo/API): https://deepinfra.com/nvidia/NVIDIA-Nemotron-3.5-Lightning

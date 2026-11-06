@@ -112,7 +112,7 @@ Comparativa con detectores alternativos de terceros: no disponible en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/batmac/gradient-ai-text-detector-4bit
+- Modelo en Hugging Face: https://huggingface.co/batmac/gradient-ai-text-detector-4bit
 - Modelo base original: https://huggingface.co/ShantanuT01/gradient-ai-text-detector
 - Scripts de reproducción del repositorio: https://huggingface.co/batmac/gradient-ai-text-detector-4bit/blob/main/scripts/README.md
 - Referencia citada por el autor original: Thorat, Shantanu, «Team DACTYL at PAN 2026: Bayesian Data Mixing and Empirical X-risk Minimization for AI-text Detection», *Working Notes of CLEF*, 2026 (sin URL proporcionada)

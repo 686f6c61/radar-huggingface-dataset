@@ -111,7 +111,7 @@ El desglose por clase del conjunto de test aparece truncado en la información d
 
 | Modelo | Parámetros | Contexto / entrada | Clases | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| vehicle-rfdetr-small (este modelo) | no disponible | imagen 512×512 fija | 9 clases de tráfico japonés | AP50 0,750 (valid), 0,642 (test) | Apache-2.0 + atribución CC BY-SA 4.0 de los datos | HuggingFace, `.pth` y `.onnx` |
+| vehicle-rfdetr-small (este modelo) | no disponible | imagen 512×512 fija | 9 clases de tráfico japonés | AP50 0,750 (valid), 0,642 (test) | Apache-2.0 + atribución CC BY-SA 4.0 de los datos | Hugging Face, `.pth` y `.onnx` |
 | RF-DETR Small (COCO, modelo base) | no disponible | imagen (resolución no indicada en la información) | 80 clases COCO genéricas | no disponible en la información proporcionada | Apache-2.0 | GitHub de Roboflow |
 | Detectores genéricos tipo YOLO u otros DETR | no disponible | no disponible | clases COCO, sin taxonomía de tráfico japonés | no disponible en la información proporcionada | no disponible | no disponible |
 
@@ -134,7 +134,7 @@ No se han proporcionado datos verificables de alternativas comparables (parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infra-intelligence/vehicle-rfdetr-small
+- Modelo en Hugging Face: https://huggingface.co/infra-intelligence/vehicle-rfdetr-small
 - Repositorio de RF-DETR (modelo base, Roboflow): https://github.com/roboflow/rf-detr
 - Referencia arXiv indicada en los metadatos del modelo: arxiv:2511.09554 (título y contenido no disponibles en la información proporcionada)
 - Documento de referencia sobre las divisiones del censo de tráfico (Prefectura de Fukui, 平成22年度道路交通センサスの解説): https://www.pref.fukui.lg.jp/doc/douken/census/h22census_d/fil/001.pdf

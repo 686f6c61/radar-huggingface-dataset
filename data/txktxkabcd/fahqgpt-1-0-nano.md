@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FahQgpt 1.0 Nano es un modelo de lenguaje de tipo transformer decoder, entrenado desde cero (sin pesos preentrenados) por el usuario de Bilibili @一片烂海苔 y publicado en HuggingFace bajo el identificador txktxkabcd/fahqgpt-1.0-nano. Se trata de un modelo deliberadamente diminuto: la model card declara 145,9M paramétros y el recuento de safetensors de HuggingFace reporta 174.584.704, con 14 capas, dimensión oculta de 896 y una ventana de contexto de 1024 tokens. Su interés no es la calidad de sus respuestas, sino que demuestra que es posible recorrer el ciclo completo de un LLM —preparación de datos, entrenamiento de tokenizador BPE, preentrenamiento, annealing, preentrenamiento conversacional, SFT con pérdida mixta y cuantización— en una única GPU de consumo.
+FahQgpt 1.0 Nano es un modelo de lenguaje de tipo transformer decoder, entrenado desde cero (sin pesos preentrenados) por el usuario de Bilibili @一片烂海苔 y publicado en Hugging Face bajo el identificador txktxkabcd/fahqgpt-1.0-nano. Se trata de un modelo deliberadamente diminuto: la model card declara 145,9M paramétros y el recuento de safetensors de Hugging Face reporta 174.584.704, con 14 capas, dimensión oculta de 896 y una ventana de contexto de 1024 tokens. Su interés no es la calidad de sus respuestas, sino que demuestra que es posible recorrer el ciclo completo de un LLM —preparación de datos, entrenamiento de tokenizador BPE, preentrenamiento, annealing, preentrenamiento conversacional, SFT con pérdida mixta y cuantización— en una única GPU de consumo.
 
 El modelo se apoya en una arquitectura estilo LLaMA con RMSNorm, RoPE, atención GQA de 14 cabezas de consulta y 2 de clave-valor, SwiGLU y weight tying, entrenada en bf16 con `torch.compile` sobre una RTX 5060 Ti de 16 GB durante 13,45 horas y aproximadamente 1,9B tokens. El resultado es un modelo conversacional en inglés cuyo autor sitúa, de forma explícita, en la liga de GPT-2 small (124M): sabe presentarse, mantener una charla sencilla y producir texto coherente, pero falla en preguntas factuales, no razona y no escribe código.
 
@@ -13,13 +13,13 @@ Su relevancia actual es fundamentalmente metodológica y educativa. La model car
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder estilo LLaMA: RMSNorm, RoPE, GQA, SwiGLU y weight tying |
-| Parametros totales | 174.584.704 según el recuento de safetensors de HuggingFace; la model card declara 145,9M. La diferencia (28,68M) equivale a la matriz de embeddings de 32.002 x 896, un patrón coherente con el recuento duplicado del peso atado |
+| Parametros totales | 174.584.704 según el recuento de safetensors de Hugging Face; la model card declara 145,9M. La diferencia (28,68M) equivale a la matriz de embeddings de 32.002 x 896, un patrón coherente con el recuento duplicado del peso atado |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 1024 tokens; el ejemplo de despliegue del autor arranca el servidor con `-c 512` |
 | Tipos de cuantizacion | GGUF F16 (350 MB) y GGUF Q4_K_M (137 MB) publicados; se pueden generar otras variantes con llama.cpp |
 | Idiomas soportados | inglés (la model card declara `language: en`) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); HuggingFace reporta el recuento de parametros a partir de safetensors |
+| Formato de pesos | GGUF (llama.cpp); Hugging Face reporta el recuento de parametros a partir de safetensors |
 | Capas / dimension oculta | 14 / 896 |
 | Cabezas de atencion | 14 de consulta y 2 de clave-valor (GQA), con dimensión de cabeza 64 |
 | Vocabulario | 32.002 tokens, BPE byte-level entrenado desde cero |
@@ -93,9 +93,9 @@ El autor declara explícitamente que el modelo falla en preguntas factuales (por
 
 | Modelo | Parametros | Contexto | Tokens de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FahQgpt 1.0 Nano | 145,9M declarados / 174,6M según HuggingFace | 1024 | 1,9B | Apache-2.0 | GGUF en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| FahQgpt 1.0 Nano | 145,9M declarados / 174,6M según Hugging Face | 1024 | 1,9B | Apache-2.0 | GGUF en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | GPT-2 small | 124M | 1024 | Corpus WebText (aproximadamente 40 GB de texto; no se publica el numero exacto de tokens) | Licencia MIT modificada | Pesos ampliamente disponibles; referencia historica de 2019 |
-| SmolLM2-135M | 135M | 8192 | 11T (corpus SmolLM2, según documentacion publica del modelo) | Apache-2.0 | Pesos y GGUF ampliamente distribuidos por HuggingFace |
+| SmolLM2-135M | 135M | 8192 | 11T (corpus SmolLM2, según documentacion publica del modelo) | Apache-2.0 | Pesos y GGUF ampliamente distribuidos por Hugging Face |
 
 La comparación relevante es la de escala de entrenamiento: con 1,9B tokens, FahQgpt 1.0 Nano ha visto entre uno y varios órdenes de magnitud menos datos que SmolLM2-135M, y su contexto es ocho veces menor. El propio autor sitúa el modelo a la altura de GPT-2 small, lo que es coherente con un presupuesto de cómputo reducido y con la ausencia de benchmarks publicados. No hay datos de rendimiento que permitan una comparación cuantitativa con ninguno de los dos modelos de la tabla.
 
@@ -114,7 +114,7 @@ La comparación relevante es la de escala de entrenamiento: con 1,9B tokens, Fah
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/txktxkabcd/fahqgpt-1.0-nano
+- Modelo en Hugging Face: https://huggingface.co/txktxkabcd/fahqgpt-1.0-nano
 - Paper de referencia citado en la model card (CLASS-IT, COLING 2025): https://aclanthology.org/2025.babylm-main.30/
 - Perfil del autor en Bilibili: @一片烂海苔 (referencia textual incluida en la model card; no se proporciona URL directa)
 - Resultados de la busqueda web: las consultas realizadas no devolvieron enlaces relevantes sobre este modelo; los resultados obtenidos corresponden a servicios no relacionados (ChatGPT, Google AI Studio, NanoGPT y Nano Banana) y se descartan como fuentes.

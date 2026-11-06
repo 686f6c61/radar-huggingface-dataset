@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Fatih162/se-primer-panic-onnx` es un clasificador tabular muy ligero publicado en HuggingFace por el usuario Fatih162, orientado a la predicción de estados de "pánico" o sobrecarga cognitiva en un simulador educativo de ingeniería del software. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un `Pipeline` de scikit-learn compuesto por un `StandardScaler` seguido de una `LogisticRegression` con `random_state=42`, exportado a formato ONNX (opset 17) para su ejecución tanto en Python como en navegador mediante `onnxruntime-web`.
+`Fatih162/se-primer-panic-onnx` es un clasificador tabular muy ligero publicado en Hugging Face por el usuario Fatih162, orientado a la predicción de estados de "pánico" o sobrecarga cognitiva en un simulador educativo de ingeniería del software. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un `Pipeline` de scikit-learn compuesto por un `StandardScaler` seguido de una `LogisticRegression` con `random_state=42`, exportado a formato ONNX (opset 17) para su ejecución tanto en Python como en navegador mediante `onnxruntime-web`.
 
 El modelo resuelve un problema muy acotado: dado un vector de seis variables de telemetría del jugador (nivel, número de escena, tiempo de decisión, número de cambios de opción, número de clics en pistas y error en la etapa anterior), devuelve la probabilidad de que el usuario esté en un estado de crisis. Su relevancia práctica es limitada fuera de ese contexto, pero resulta interesante como ejemplo de despliegue de inferencia tabular en el cliente (WebAssembly) con un modelo de tamaño despreciable.
 
@@ -42,7 +42,7 @@ No se especifica en la información disponible el volumen de datos de entrenamie
 - Telemetría de juegos serios en el navegador: gracias a su formato ONNX y a `onnxruntime-web`, puede ejecutarse íntegramente en el cliente, enviando solo la probabilidad agregada al servidor y reduciendo la exposición de datos personales del estudiante.
 - Detección de fricción en interfaces interactivas: el mismo contrato de features (tiempo de decisión, cambios de opción, uso de pistas) es reutilizable en prototipos de tests de usabilidad para marcar sesiones con alta carga cognitiva.
 - Componente de un sistema de recomendación pedagógica: la probabilidad de pánico puede alimentar una lógica de decisión que ajuste el ritmo o el nivel del contenido mostrado al usuario.
-- Ejemplo docente de despliegue MLOps ligero: sirve como caso práctico para enseñar exportación de pipelines de scikit-learn a ONNX, validación de paridad numérica y publicación de un modelo en HuggingFace.
+- Ejemplo docente de despliegue MLOps ligero: sirve como caso práctico para enseñar exportación de pipelines de scikit-learn a ONNX, validación de paridad numérica y publicación de un modelo en Hugging Face.
 - Filtro previo en pipelines de analítica de aprendizaje: puede usarse como señal barata para priorizar qué sesiones revisar manualmente por un tutor humano, dado su coste computacional casi nulo.
 
 ## Benchmarks y rendimiento
@@ -84,5 +84,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fatih162/se-primer-panic-onnx
+- Hugging Face: https://huggingface.co/Fatih162/se-primer-panic-onnx
 - No se han encontrado en la información disponible papers, blogs, repositorios ni demos adicionales.

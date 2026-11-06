@@ -6,7 +6,7 @@ El modelo `powwwwer/pixai-tagger-v0.9-onnx` es una versión exportada a formato 
 
 Su relevancia radica en que ofrece una alternativa de código abierto (licencia Apache 2.0) y eficiente para anotar grandes volúmenes de imágenes, algo crítico en el entrenamiento de modelos generativos de imagen, la organización de bibliotecas de arte y la construcción de datasets. La versión ONNX facilita su despliegue en entornos de producción con diferentes backends de inferencia (CPU, GPU, móvil) sin depender de frameworks específicos de PyTorch, lo que lo hace más accesible para integraciones en herramientas de gestión de imágenes y pipelines de datos.
 
-El modelo tiene 317,9 millones de parámetros y 620,9 GFLOPs por inferencia (310,1 GMACs). Su tamaño de repo es de 1,3 GB, y el repositorio en HuggingFace es mantenido por el usuario `powwwwer`, aunque la versión original y la documentación técnica provienen del ecosistema de deepghs.
+El modelo tiene 317,9 millones de parámetros y 620,9 GFLOPs por inferencia (310,1 GMACs). Su tamaño de repo es de 1,3 GB, y el repositorio en Hugging Face es mantenido por el usuario `powwwwer`, aunque la versión original y la documentación técnica provienen del ecosistema de deepghs.
 
 ## Especificaciones técnicas
 
@@ -82,7 +82,7 @@ No hay datos de rendimiento comparativo (mAP, precisión) en la información dis
 
 ## Enlaces
 
-- Repositorio del modelo (HuggingFace): [https://huggingface.co/powwwwer/pixai-tagger-v0.9-onnx](https://huggingface.co/powwwwer/pixai-tagger-v0.9-onnx)
+- Repositorio del modelo (Hugging Face): [https://huggingface.co/powwwwer/pixai-tagger-v0.9-onnx](https://huggingface.co/powwwwer/pixai-tagger-v0.9-onnx)
 - Modelo original (pixai-labs): [https://huggingface.co/pixai-labs/pixai-tagger-v0.9](https://huggingface.co/pixai-labs/pixai-tagger-v0.9)
 - Repositorio de deepghs con la versión ONNX original: [https://huggingface.co/deepghs/pixai-tagger-v0.9-onnx](https://huggingface.co/deepghs/pixai-tagger-v0.9-onnx)
 - Documentación de la librería `imgutils`: [https://dghs-imgutils.deepghs.org/main/api_doc/tagging/pixai.html](https://dghs-imgutils.deepghs.org/main/api_doc/tagging/pixai.html)

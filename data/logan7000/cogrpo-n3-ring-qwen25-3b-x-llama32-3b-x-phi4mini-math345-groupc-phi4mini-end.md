@@ -66,7 +66,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupC-phi4mini-end
+- Repositorio Hugging Face: https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupC-phi4mini-end
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Librería TRL: https://github.com/huggingface/trl

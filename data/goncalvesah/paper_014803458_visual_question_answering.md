@@ -63,5 +63,5 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/goncalvesah/paper_014803458_visual_question_answering
+- Hugging Face: https://huggingface.co/goncalvesah/paper_014803458_visual_question_answering
 - Referencia externa (no directa del repositorio): encuesta sobre VQA en ACM (https://dl.acm.org/doi/10.1145/3728635) y arXiv (https://arxiv.org/abs/2501.03939) como contexto del campo.

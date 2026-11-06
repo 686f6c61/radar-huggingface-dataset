@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/qwen3-4b-fve-bad-s0` es un checkpoint de investigación publicado por el usuario Joshua Fonseca (joshycodes) en HuggingFace. Se trata de una continuación de preentrenamiento (continued pretraining) de pesos completos sobre el modelo base `Qwen/Qwen3-4B`, no de un ajuste supervisado clásico ni de un modelo alineado. El autor lo etiqueta explícitamente como `research`, `model-welfare` y `not-for-deployment`, y advierte que no ha sido evaluado para capacidad, alineación ni identidad. Su relevancia es, por tanto, puramente experimental y dentro de una línea de trabajo sobre "bienestar de modelos" (model welfare) y entrenamiento de carácter.
+`joshycodes/qwen3-4b-fve-bad-s0` es un checkpoint de investigación publicado por el usuario Joshua Fonseca (joshycodes) en Hugging Face. Se trata de una continuación de preentrenamiento (continued pretraining) de pesos completos sobre el modelo base `Qwen/Qwen3-4B`, no de un ajuste supervisado clásico ni de un modelo alineado. El autor lo etiqueta explícitamente como `research`, `model-welfare` y `not-for-deployment`, y advierte que no ha sido evaluado para capacidad, alineación ni identidad. Su relevancia es, por tanto, puramente experimental y dentro de una línea de trabajo sobre "bienestar de modelos" (model welfare) y entrenamiento de carácter.
 
 El modelo conserva la arquitectura del Qwen3-4B original, un transformer decoder-only denso de aproximadamente 4.411 millones de parámetros (4,4B), según el recuento real de tensores safetensors del repositorio (8,8 GB en total). El entrenamiento consistió en 1 época con learning rate 1e-05 sobre 36.920.096 tokens repartidos en 37.631 documentos, procedentes del corpus denominado `flourishing-vs-equanimity`. Llama la atención que, pese a que el título de la model card menciona un "corpus autoescrito", la propia ficha indica que de esos 37.631 documentos 0 eran autoescritos y 37.631 eran texto ordinario, una contradicción que conviene tener presente.
 
@@ -90,7 +90,7 @@ No se dispone de otros modelos comparables dentro de la misma línea experimenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-fve-bad-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-fve-bad-s0
 - Perfil del autor (Joshua Fonseca): https://huggingface.co/joshycodes
 - Artefacto relacionado del mismo autor: https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g6-midtrain
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

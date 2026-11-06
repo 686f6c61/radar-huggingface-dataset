@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/guutong/Qwen3.5-9B-MTPLX-FP16
+- Repositorio Hugging Face: https://huggingface.co/guutong/Qwen3.5-9B-MTPLX-FP16
 - MTPLX Forge (herramienta de creación): https://github.com/youssofal/MTPLX
 - Repositorio oficial Qwen3.5 (referencia del modelo base): https://github.com/ABDtmx/Qwen3.5
 - Repositorio oficial Qwen3 (familia base): https://github.com/QwenLM/Qwen3

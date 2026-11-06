@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un pipeline nativo de diffusers para generación de texto a imagen, basado en la arquitectura Z-Image y exportado desde el checkpoint `zimage_base_diffusionnft_dvreward_prompt_rubric_v4_75pct_multicap_512px_10step_cw` en el paso 500 de entrenamiento. Lo desarrolla el usuario kimi000 y se publica en HuggingFace con 6.154.908.736 parámetros (aproximadamente 6,15 B) y un tamaño de repositorio de 20,5 GB. El modelo integra un LoRA EMA de rank 256 y alpha 256 fusionado en los pesos base BF16, de modo que no se requieren módulos PEFT ni FAR para la inferencia.
+Este modelo es un pipeline nativo de diffusers para generación de texto a imagen, basado en la arquitectura Z-Image y exportado desde el checkpoint `zimage_base_diffusionnft_dvreward_prompt_rubric_v4_75pct_multicap_512px_10step_cw` en el paso 500 de entrenamiento. Lo desarrolla el usuario kimi000 y se publica en Hugging Face con 6.154.908.736 parámetros (aproximadamente 6,15 B) y un tamaño de repositorio de 20,5 GB. El modelo integra un LoRA EMA de rank 256 y alpha 256 fusionado en los pesos base BF16, de modo que no se requieren módulos PEFT ni FAR para la inferencia.
 
 La configuración recomendada de inferencia incluye CFG 4, shift de scheduler fijo en 6, dynamic shifting desactivado y un programa de 50 actualizaciones de sigma que termina en sigma 0. Está pensado para generar imágenes de 512 píxeles en 10 pasos. No existe relación con el modelo Kimi K3 de MoonshotAI; los resultados de búsqueda web sobre Kimi K3 corresponden a otro proyecto y no aplican a este modelo.
 

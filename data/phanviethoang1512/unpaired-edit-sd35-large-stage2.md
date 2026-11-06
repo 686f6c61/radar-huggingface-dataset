@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`phanviethoang1512/unpaired-edit-sd35-large-stage2` es un adaptador LoRA de edicion de imagen por instrucciones, entrenado sobre el modelo base `stabilityai/stable-diffusion-3.5-large`. Lo publica el usuario phanviethoang1512 en HuggingFace y esta pensado para edicion de imagen no emparejada (unpaired), es decir, sin requerir pares imagen-original / imagen-editada durante el entrenamiento. El adaptador se complementa con una red de gating por bloques (`gating_net.pt`) que modula un ControlNet de etapa 1, tambien basado en SD3.5-Large.
+`phanviethoang1512/unpaired-edit-sd35-large-stage2` es un adaptador LoRA de edicion de imagen por instrucciones, entrenado sobre el modelo base `stabilityai/stable-diffusion-3.5-large`. Lo publica el usuario phanviethoang1512 en Hugging Face y esta pensado para edicion de imagen no emparejada (unpaired), es decir, sin requerir pares imagen-original / imagen-editada durante el entrenamiento. El adaptador se complementa con una red de gating por bloques (`gating_net.pt`) que modula un ControlNet de etapa 1, tambien basado en SD3.5-Large.
 
 El punto clave para quien vaya a evaluarlo es que se trata de un checkpoint intermedio de entrenamiento, no de un modelo terminado. Se exporto en el `global_step = 14500` (aproximadamente la epoca 906) de un calendario de entrenamiento configurado para mucho mas tiempo, y el propio autor indica que el entrenamiento no habia convergido. Ademas, no incluye estado del optimizador, EMA ni RNG, por lo que solo sirve para inferencia o evaluacion y no permite reanudar el entrenamiento.
 
@@ -71,8 +71,8 @@ La informacion proporcionada no incluye datos de rendimiento de alternativas, po
 
 | Modelo / enfoque | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sobre SD3.5-Large, etapa 2) | No disponible | No aplica | No disponible (sin benchmarks publicados) | Stability AI Community License (heredada) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Modelo base `stabilityai/stable-diffusion-3.5-large` | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | Stability AI Community License | Publico en HuggingFace |
+| Este adaptador (LoRA sobre SD3.5-Large, etapa 2) | No disponible | No aplica | No disponible (sin benchmarks publicados) | Stability AI Community License (heredada) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Modelo base `stabilityai/stable-diffusion-3.5-large` | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | Stability AI Community License | Publico en Hugging Face |
 | Otras alternativas de edicion por instrucciones | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -85,11 +85,11 @@ La informacion proporcionada no incluye datos de rendimiento de alternativas, po
 - Riesgo de sesgos: el adaptador hereda los sesgos del modelo base y de su dataset de entrenamiento, no documentados en la informacion disponible. El modelo de recompensa `Qwen/Qwen3-VL-4B-Instruct` tambien puede introducir sesgos en la senal de edicion y preservacion.
 - Restricciones de licencia: la licencia declarada es `other`, con herencia de la Stability AI Community License. Es imprescindible revisar esos terminos antes de cualquier uso comercial; no se concede aqui una licencia de uso libre.
 - Idiomas y contexto: no se declaran idiomas soportados ni resolucion de entrenamiento, por lo que el comportamiento multilingue de los prompts es indeterminado.
-- Adopcion practicamente nula: 0 descargas y 0 likes, sin pipeline declarado en HuggingFace, lo que reduce la disponibilidad de validacion independiente.
+- Adopcion practicamente nula: 0 descargas y 0 likes, sin pipeline declarado en Hugging Face, lo que reduce la disponibilidad de validacion independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phanviethoang1512/unpaired-edit-sd35-large-stage2
+- Modelo en Hugging Face: https://huggingface.co/phanviethoang1512/unpaired-edit-sd35-large-stage2
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
 - Licencia Stability AI Community License: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
 - Modelo de recompensa empleado en el entrenamiento: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

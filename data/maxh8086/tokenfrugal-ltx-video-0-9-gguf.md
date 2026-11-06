@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | tokenfrugal-ltx-video-0.9-gguf (este repo) | 1.923.385.472 | no disponible | GGUF Q8_0 + VAE safetensors | LTX-Video Open Weights License (Lightricks) | Espejo privado, 0 descargas |
-| city96/LTX-Video-gguf (upstream) | misma base LTX-Video 2B v0.9 | no disponible | GGUF (varias cuantizaciones) | LTX-Video Open Weights License (Lightricks) | Publico en HuggingFace |
+| city96/LTX-Video-gguf (upstream) | misma base LTX-Video 2B v0.9 | no disponible | GGUF (varias cuantizaciones) | LTX-Video Open Weights License (Lightricks) | Publico en Hugging Face |
 | LTX-Video 0.9 2B (original de Lightricks) | ~2B | no disponible | safetensors (BF16) | LTX-Video Open Weights License (Lightricks) | Publico |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maxh8086/tokenfrugal-ltx-video-0.9-gguf
+- Repositorio Hugging Face: https://huggingface.co/maxh8086/tokenfrugal-ltx-video-0.9-gguf
 - Fuente upstream declarada: https://huggingface.co/city96/LTX-Video-gguf
 - Modelo base (Lightricks LTX-Video): no disponible en la informacion proporcionada
 - Paper, blog o demo oficial: no disponible en la informacion proporcionada

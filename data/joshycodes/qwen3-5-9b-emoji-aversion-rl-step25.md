@@ -77,8 +77,8 @@ La unica metrica cuantitativa disponible es interna al entrenamiento:
 | Modelo | Parametros | Tipo | Relacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | qwen3.5-9b-emoji-aversion-rl-step25 | 8,95B | Checkpoint RL (GRPO, 25 pasos) | Este modelo | Apache 2.0 | 6 descargas, 0 likes |
-| qwen3.5-9b-emoji-aversion-rl-step57 | no disponible | Checkpoint RL (GRPO, 57 pasos) | Mismo experimento, mas pasos | Apache 2.0 (segun su model card) | Publico en HuggingFace |
-| qwen3.5-9b-emoji-aversion-sdf | no disponible | Ajuste fino constitucional (SDF) | Modelo base de este checkpoint | no disponible | Publico en HuggingFace |
+| qwen3.5-9b-emoji-aversion-rl-step57 | no disponible | Checkpoint RL (GRPO, 57 pasos) | Mismo experimento, mas pasos | Apache 2.0 (segun su model card) | Publico en Hugging Face |
+| qwen3.5-9b-emoji-aversion-sdf | no disponible | Ajuste fino constitucional (SDF) | Modelo base de este checkpoint | no disponible | Publico en Hugging Face |
 | Qwen/Qwen3.5-9B-Base | 9B (nominal) | Modelo base de texto | Origen de la familia | no disponible | Publico (referenciado por NeMo-RL) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes mas alla de la tasa de emojis y del numero de pasos de RL.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes mas alla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-emoji-aversion-rl-step25
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-emoji-aversion-rl-step25
 - Variante con 57 pasos de RL: https://huggingface.co/joshycodes/qwen3.5-9b-emoji-aversion-rl-step57
 - Modelo base SDF: https://huggingface.co/joshycodes/qwen3.5-9b-emoji-aversion-sdf
 - Guia de Qwen3.5 en NeMo-RL (NVIDIA): https://docs.nvidia.com/nemo/rl/nightly/guides/models/qwen/qwen3-5.html

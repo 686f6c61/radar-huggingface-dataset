@@ -96,7 +96,7 @@ La ventaja competitiva de este repositorio frente a las alternativas es exclusiv
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1bit-MONSTER/TinyLlama-1.1B-Chat-v1.0-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/1bit-MONSTER/TinyLlama-1.1B-Chat-v1.0-GGUF
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Cuantizacion original de TheBloke: https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF
 - Motor 1bit engine: https://github.com/1bit-MONSTER/engine

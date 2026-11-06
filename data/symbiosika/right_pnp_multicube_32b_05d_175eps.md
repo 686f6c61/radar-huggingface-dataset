@@ -75,7 +75,7 @@ No se dispone de información sobre otros fine-tunes de GR00T-N1.7-3B para compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/symbiosika/right_pnp_multicube_32b_05d_175eps
+- Modelo en Hugging Face: https://huggingface.co/symbiosika/right_pnp_multicube_32b_05d_175eps
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Librería LeRobot: https://github.com/huggingface/lerobot (referencia, no enlazada en la model card)
 

@@ -23,7 +23,7 @@ Su relevancia actual es doble: por un lado, su box AP de 65,9 en COCO val2017 lo
 | Tarea | object-detection |
 | Libreria / framework | mmdetection 2.25.3 + MMCV-full 1.5.0 + PyTorch 1.11 |
 | Tamano del repositorio | 2,9 GB |
-| Inferencia en HuggingFace | No (`inference: false`) |
+| Inferencia en Hugging Face | No (`inference: false`) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -79,8 +79,8 @@ No se han publicado en la informacion disponible resultados adicionales (AP50, A
 
 | Modelo | Parametros | Contexto / entrada | box AP (COCO val2017) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Co-DINO 5-scale ViT-L (este mirror) | 348,1 M en inferencia | Imagen (resolucion no documentada) | 65,9 (reportado, sin verificar) | unknown | HuggingFace, requiere config incluida |
-| `zongzhuofan/co-detr-vit-large-coco` (original del autor) | Mismos pesos | Imagen | Mismo resultado declarado | unknown | HuggingFace, solo pesos sin config |
+| Co-DINO 5-scale ViT-L (este mirror) | 348,1 M en inferencia | Imagen (resolucion no documentada) | 65,9 (reportado, sin verificar) | unknown | Hugging Face, requiere config incluida |
+| `zongzhuofan/co-detr-vit-large-coco` (original del autor) | Mismos pesos | Imagen | Mismo resultado declarado | unknown | Hugging Face, solo pesos sin config |
 | Otros detectores de la familia DETR / Co-DETR | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de resultados de benchmarks de terceros (DINO, Deformable DETR, RT-DETR u otros) que permitan una comparativa cuantitativa fiable, por lo que no se incluyen cifras.
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de ter
 - El preentrenamiento se realizo sobre Objects365 bajo licencia solo para investigacion, lo que anade una restriccion adicional al uso comercial.
 - Vocabulario cerrado de 80 clases COCO: cualquier objeto fuera de ese conjunto no sera detectado, y la taxonomia no puede ampliarse sin reentrenar.
 - No es un modelo de `transformers`: requiere el stack OpenMMLab 1.x (PyTorch 1.11, MMCV-full 1.5.0), versiones antiguas y con mantenimiento limitado, lo que complica su integracion en pipelines modernos.
-- La model card marca `inference: false`, por lo que no hay inferencia gestionada en HuggingFace.
+- La model card marca `inference: false`, por lo que no hay inferencia gestionada en Hugging Face.
 - Es un mirror no oficial: el propio autor del repositorio declara que retirara o transferira el contenido si los autores originales lo solicitan. La procedencia de los pesos es la publicacion original en Google Drive.
 - Sesgos de COCO: el dataset esta desbalanceado en clases y dominado por imagenes de dominio web, lo que se traduce en peor rendimiento en categorias poco frecuentes y en dominios alejados (imagen medica, satelital, industrial).
 - Riesgo de falsos positivos y falsos negativos: la salida depende de umbrales de confianza y de NMS, que deben calibrarse por dominio; no hay un modo de abstenerse.
@@ -101,7 +101,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de ter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/co-dino-5scale-vit-l-coco
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/co-dino-5scale-vit-l-coco
 - Checkpoint original del autor: https://huggingface.co/zongzhuofan/co-detr-vit-large-coco
 - Repositorio oficial Co-DETR (SenseTime X-Lab): https://github.com/Sense-X/Co-DETR
 - Fork mantenido con entorno y script de inferencia: https://github.com/dronefreak/Co-DETR
@@ -109,5 +109,5 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de ter
 - Paper Co-DETR (ICCV 2023): https://arxiv.org/abs/2211.12860
 - Paper EVA-02: https://arxiv.org/abs/2303.11331
 - Paper del dataset COCO: https://arxiv.org/abs/1405.0312
-- Dataset COCO en HuggingFace: https://huggingface.co/datasets/detection-datasets/coco
+- Dataset COCO en Hugging Face: https://huggingface.co/datasets/detection-datasets/coco
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (los unicos resultados obtenidos tratan sobre la ciudad de Lucerna y no guardan relacion con la ficha).

@@ -72,7 +72,7 @@ Este repositorio no es un modelo independiente, sino una variante de SmolLM3-3B 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-sft-189b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-sft-189b
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Tutorial de SFT con SmolLM3: https://huggingface.co/learn/smol-course/unit1/3
 - Alignment Handbook (recetas para SmolLM3): https://github.com/huggingface/alignment-handbook/blob/main/recipes/smollm3/README.md

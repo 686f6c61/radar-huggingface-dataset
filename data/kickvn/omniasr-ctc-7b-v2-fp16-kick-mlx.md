@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kickvn/omniASR-CTC-7B-v2-fp16-KICK-MLX
+- Modelo en Hugging Face: https://huggingface.co/kickvn/omniASR-CTC-7B-v2-fp16-KICK-MLX
 - Modelo base: https://huggingface.co/facebook/omniASR-CTC-7B
 - Conversion ONNX del mismo autor: https://huggingface.co/kickvn/omniASR-CTC-7B-v2-ONNX
 - Repositorio de MLX (framework de ejecucion): https://github.com/ml-explore/mlx

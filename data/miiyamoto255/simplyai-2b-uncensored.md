@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: con 2,6B parámetros en FP16, se necesitan aproximadamente 5,2 GB de VRAM. Con cuantización GGUF Q4_K_M, se reduce a unos 1,5-2 GB.
 - GPUs recomendadas: cualquier GPU con al menos 6 GB de VRAM (RTX 2060, GTX 1660 Ti, RTX 3050) para FP16. Para cuantizaciones GGUF, basta con 2-4 GB (GTX 1050 Ti, integradas modernas).
 - Cabe en GPUs de consumo: sí, en la mayoría de GPUs de gama media y baja.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (con soporte para Gemma 2), TGI, o directamente con transformers de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM (con soporte para Gemma 2), TGI, o directamente con transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. En una RTX 4090, se espera una generación de 50-100 tokens/s con cuantización GGUF; en CPU, unos 5-15 tokens/s dependiendo del hardware.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa se basa en modelos de tamaño similar. Gemma 2 2B es el modelo ba
 
 ## Enlaces
 
-- [HuggingFace - Miiyamoto255/SimplyAI-2B-Uncensored](https://huggingface.co/Miiyamoto255/SimplyAI-2B-Uncensored)
+- [Hugging Face - Miiyamoto255/SimplyAI-2B-Uncensored](https://huggingface.co/Miiyamoto255/SimplyAI-2B-Uncensored)
 - [Blog de abliteration de mlabonne](https://huggingface.co/blog/mlabonne/abliteration)
 - [Modelo base google/gemma-2-2b-it](https://huggingface.co/google/gemma-2-2b-it)
 - [Cuantizaciones GGUF de mradermacher](https://huggingface.co/mradermacher/SimplyAI-2B-Uncensored-GGUF)

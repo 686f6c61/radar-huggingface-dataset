@@ -80,8 +80,8 @@ La diferencia en la tasa de aceptacion es del 0,15 %, dentro del ruido de medida
 
 | Modelo | Parametros | Tamano de pesos | Tasa de aceptacion (a_slot) | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NewHorizonGroup/Qwen3.8-27B-DFlash2-oQ4 | 1,92 B | 1,03 GB (4 bits) | 0,7818 | safetensors MLX | apache-2.0 | HuggingFace, 0 descargas |
-| z-lab/Qwen3.8-27B-DFlash2 (bf16, modelo base) | 1,92 B | 3,85 GB (bf16) | 0,7833 | safetensors | no disponible en la informacion proporcionada | HuggingFace |
+| NewHorizonGroup/Qwen3.8-27B-DFlash2-oQ4 | 1,92 B | 1,03 GB (4 bits) | 0,7818 | safetensors MLX | apache-2.0 | Hugging Face, 0 descargas |
+| z-lab/Qwen3.8-27B-DFlash2 (bf16, modelo base) | 1,92 B | 3,85 GB (bf16) | 0,7833 | safetensors | no disponible en la informacion proporcionada | Hugging Face |
 | Otros drafters de la misma categoria (EAGLE-3, Medusa, MTP) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa disponible se limita al par drafter bf16 / drafter 4 bits, donde el ahorro de memoria es de 3,7x con una perdida de aceptacion de 0,15 puntos porcentuales. No se dispone de datos de rendimiento de drafters alternativos en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa con EAGLE-3, Medusa u otras familias.
@@ -99,7 +99,7 @@ La comparacion directa disponible se limita al par drafter bf16 / drafter 4 bits
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NewHorizonGroup/Qwen3.8-27B-DFlash2-oQ4
+- Modelo en Hugging Face: https://huggingface.co/NewHorizonGroup/Qwen3.8-27B-DFlash2-oQ4
 - Modelo base: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Repositorio de exo (rama dev con soporte dflash2): https://github.com/exo-explore/exo
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo: unicamente listados de sitios para adultos sin relacion con el contenido solicitado, por lo que no se incluyen.

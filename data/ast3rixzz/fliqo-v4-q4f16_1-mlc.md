@@ -87,7 +87,7 @@ Frente al Qwen3-1.7B original, Fliqo v4 pierde precision por la cuantizacion a 4
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Ast3rixzz/fliqo-v4-q4f16_1-MLC](https://huggingface.co/Ast3rixzz/fliqo-v4-q4f16_1-MLC)
+- [Modelo en Hugging Face: Ast3rixzz/fliqo-v4-q4f16_1-MLC](https://huggingface.co/Ast3rixzz/fliqo-v4-q4f16_1-MLC)
 - [Modelo base: Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - [Blog de Qwen3 (Alibaba Qwen)](https://qwenlm.github.io/blog/qwen3/)
 - [Repositorio MLC-LLM](https://github.com/mlc-ai/mlc-llm)

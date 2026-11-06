@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LAT-Audio-Base es un modelo multimodal orientado a audio desarrollado por mcshao, distribuido originalmente en HuggingFace y cuantizado a formato GGUF por mradermacher. El modelo base cuenta con 30.532.646.912 parámetros (aproximadamente 30,5 mil millones) según los pesos en safetensors, lo que lo sitúa en la categoría de modelos grandes que requieren infraestructura de GPU de gama alta para inferencia en precisión completa. La versión GGUF que nos ocupa facilita el despliegue en entornos con llama.cpp y herramientas compatibles, con cuantizaciones que van desde Q2_K (11,4 GB) hasta Q8_0 (32,6 GB).
+LAT-Audio-Base es un modelo multimodal orientado a audio desarrollado por mcshao, distribuido originalmente en Hugging Face y cuantizado a formato GGUF por mradermacher. El modelo base cuenta con 30.532.646.912 parámetros (aproximadamente 30,5 mil millones) según los pesos en safetensors, lo que lo sitúa en la categoría de modelos grandes que requieren infraestructura de GPU de gama alta para inferencia en precisión completa. La versión GGUF que nos ocupa facilita el despliegue en entornos con llama.cpp y herramientas compatibles, con cuantizaciones que van desde Q2_K (11,4 GB) hasta Q8_0 (32,6 GB).
 
 La relevancia de esta ficha radica en que el repositorio GGUF permite ejecutar un modelo multimodal de audio en hardware más modesto que el requerido por los pesos originales en bf16/fp16, manteniendo un componente mmproj (multi-modal projector) separado que gestiona la entrada de audio. El modelo está etiquetado como conversacional y orientado al inglés, y su pipeline no está especificado en la información disponible, aunque la presencia del proyector multimodal sugiere capacidades de comprensión de audio además de generación de texto.
 

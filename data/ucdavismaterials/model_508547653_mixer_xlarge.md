@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ucdavismaterials/model_508547653_mixer_xlarge` es una implementación de la arquitectura **mixer** a escala **xlarge**, diseñada específicamente para tareas de **clasificación**. Ha sido publicado por el usuario Ucdavismaterials en HuggingFace bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La información disponible es extremadamente limitada: la model card no especifica el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. Tampoco se proporcionan resultados de benchmarks ni comparativas con otros modelos.
+El modelo `Ucdavismaterials/model_508547653_mixer_xlarge` es una implementación de la arquitectura **mixer** a escala **xlarge**, diseñada específicamente para tareas de **clasificación**. Ha sido publicado por el usuario Ucdavismaterials en Hugging Face bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La información disponible es extremadamente limitada: la model card no especifica el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. Tampoco se proporcionan resultados de benchmarks ni comparativas con otros modelos.
 
 La arquitectura declarada incluye atención flash, fusión mediante estrategia low-rank, activación Mish, normalización InstanceNorm e inicialización Xavier uniform. El entrenamiento empleó el optimizador AdamW con un scheduler de calentamiento constante. El repositorio contiene un único fichero Python (`model_508547653_mixer_xlarge.py`), lo que sugiere que el modelo se distribuye como código fuente en lugar de pesos preentrenados en formato estándar (safetensors, GGUF, etc.).
 
@@ -67,6 +67,6 @@ No disponible. No se ha encontrado información sobre modelos comparables con es
 
 ## Enlaces
 
-- [HuggingFace - Ucdavismaterials/model_508547653_mixer_xlarge](https://huggingface.co/Ucdavismaterials/model_508547653_mixer_xlarge)
+- [Hugging Face - Ucdavismaterials/model_508547653_mixer_xlarge](https://huggingface.co/Ucdavismaterials/model_508547653_mixer_xlarge)
 
 No se han encontrado papers, blogs ni repositorios adicionales relacionados con este modelo específico.

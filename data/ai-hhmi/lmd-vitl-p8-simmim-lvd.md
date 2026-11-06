@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-lvd
+- Modelo en Hugging Face: https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-lvd
 - Modelo base: https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m
 - Variante desde cero: https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-scratch
 - Modelo de afinidades derivado: https://huggingface.co/ai-hhmi/lmd-vitl-p8-affinity-lvd

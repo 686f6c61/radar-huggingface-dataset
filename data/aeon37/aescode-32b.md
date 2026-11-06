@@ -88,8 +88,8 @@ Datos destacados reportados por el autor: AesCode-32B mejora Visual en 22,4 punt
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Overall (infografias) |
 |---|---|---|---|---|---|
-| AesCode-32B | 33,36 B (denso) | 24.576 tokens (config. reportada) | Apache 2.0 | Pesos abiertos en HuggingFace | 85,89 (con referencia) |
-| AesCode-8B | No disponible | No disponible | No disponible | Pesos abiertos en HuggingFace | 82,94 (con referencia) |
+| AesCode-32B | 33,36 B (denso) | 24.576 tokens (config. reportada) | Apache 2.0 | Pesos abiertos en Hugging Face | 85,89 (con referencia) |
+| AesCode-8B | No disponible | No disponible | No disponible | Pesos abiertos en Hugging Face | 82,94 (con referencia) |
 | Qwen3-VL-32B-Instruct | 32 B (aprox., denso) | 24.576 tokens en esta evaluacion | Apache 2.0 | Pesos abiertos | 61,10 (con referencia), 48,61 (sin) |
 | Qwen3-VL-8B | 8 B (aprox., denso) | No disponible | Apache 2.0 | Pesos abiertos | 51,93 (con referencia), 42,39 (sin) |
 | GPT-5.5 | No disponible | No disponible | Propietaria | API | 81,28 (con referencia), 76,31 (sin) |
@@ -112,7 +112,7 @@ Nota: los datos de contexto y parametros de los modelos Qwen3-VL corresponden a 
 
 ## Enlaces
 
-- HuggingFace (repositorio consultado): https://huggingface.co/aeon37/AesCode-32B
+- Hugging Face (repositorio consultado): https://huggingface.co/aeon37/AesCode-32B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Modelo companero: https://huggingface.co/microsoft/AesCode-8B
 - Codigo: https://github.com/microsoft/AesCode

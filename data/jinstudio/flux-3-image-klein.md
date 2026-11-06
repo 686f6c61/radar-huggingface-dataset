@@ -90,7 +90,7 @@ No se dispone en la informacion proporcionada de datos de terceros (por ejemplo 
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/Jinstudio/flux-3-image-klein
+- Repositorio Hugging Face (espejo): https://huggingface.co/Jinstudio/flux-3-image-klein
 - Repositorio original: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Checkpoint Base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Prompt upsampler: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup

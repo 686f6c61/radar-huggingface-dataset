@@ -113,10 +113,10 @@ El autor no documenta diferencias funcionales entre ambos checkpoints más allá
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/robertbschuette/minimax-h3-Camera-Motion-lora
+- Repositorio Hugging Face: https://huggingface.co/robertbschuette/minimax-h3-Camera-Motion-lora
 - Modelo base: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Biblioteca de prompts del autor: archivo `camera_motion_提示词库.md` en el repositorio (55 prompts, 9 categorías)
-- Vídeos de prueba (CDN de HuggingFace, citados en la model card):
+- Vídeos de prueba (CDN de Hugging Face, citados en la model card):
   - https://cdn-uploads.huggingface.co/production/uploads/6a6748afef317ed5adb30050/CVOIDuSdQ6QloKhh0j7Mi.mp4
   - https://cdn-uploads.huggingface.co/production/uploads/6a6748afef317ed5adb30050/Qjms49yRfHU3cYR4QCIBo.mp4
   - https://cdn-uploads.huggingface.co/production/uploads/6a6748afef317ed5adb30050/Kyq5tbbhht1AI1pDcuRMx.mp4

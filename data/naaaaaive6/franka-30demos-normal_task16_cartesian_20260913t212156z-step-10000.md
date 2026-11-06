@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `NaaaaaiVe6/franka-30demos-normal_task16_cartesian_20260913T212156Z-step-10000` es un checkpoint de política robótica del tipo vision-language-action (VLA), publicado por el usuario NaaaaaiVe6 en HuggingFace bajo la librería `openpi` y la etiqueta `pi05`. Se trata de un ajuste fino orientado a una única tarea de manipulación (denominada `task16`) sobre un brazo Franka, entrenado a partir de 30 demostraciones y exportado en el paso 10000 del entrenamiento. El repositorio ocupa 7,2 GB y contiene pesos en formato safetensors.
+El modelo identificado como `NaaaaaiVe6/franka-30demos-normal_task16_cartesian_20260913T212156Z-step-10000` es un checkpoint de política robótica del tipo vision-language-action (VLA), publicado por el usuario NaaaaaiVe6 en Hugging Face bajo la librería `openpi` y la etiqueta `pi05`. Se trata de un ajuste fino orientado a una única tarea de manipulación (denominada `task16`) sobre un brazo Franka, entrenado a partir de 30 demostraciones y exportado en el paso 10000 del entrenamiento. El repositorio ocupa 7,2 GB y contiene pesos en formato safetensors.
 
 La característica diferencial de este checkpoint es su representación de acciones: salidas en cartesiano absoluto (XYZ + cuaternión xyzw + pinza binaria -1/+1), en lugar de las acciones delta típicas de un controlador. Esto condiciona por completo su integración: exige usar el fichero `assets/franka/norm_stats.json` incluido y las transformaciones de entrenamiento correspondientes. Los pesos se han convertido de JAX a PyTorch en bfloat16 manteniendo la configuración original del modelo de entrenamiento sobre Franka.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (franka-30demos-normal_task16_cartesian) | 3,6 B | No disponible | VLA de tarea unica sobre Franka | No disponible | HuggingFace, 0 descargas |
+| Este checkpoint (franka-30demos-normal_task16_cartesian) | 3,6 B | No disponible | VLA de tarea unica sobre Franka | No disponible | Hugging Face, 0 descargas |
 | Familia openpi / pi05 (modelos base) | No disponible en la informacion proporcionada | No disponible | VLA generalista sobre la que se ajusta este checkpoint | No disponible | Repositorio openpi |
-| Otros checkpoints del mismo autor (otras tareas/pasos) | No disponible | No disponible | VLA de tarea unica | No disponible | HuggingFace |
+| Otros checkpoints del mismo autor (otras tareas/pasos) | No disponible | No disponible | VLA de tarea unica | No disponible | Hugging Face |
 
 No se dispone de datos verificados en la información proporcionada para comparar parámetros, contexto o rendimiento con alternativas como OpenVLA o GR00T N1; cualquier cifra al respecto requeriría consultar la documentación oficial de esos proyectos y no se incluye aquí para no introducir datos no confirmados.
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task16_cartesian_20260913T212156Z-step-10000
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task16_cartesian_20260913T212156Z-step-10000
 - Fichero de registro referenciado por el autor: `log.txt` (dentro del repositorio del modelo)
 - Estadísticas de normalización: `assets/franka/norm_stats.json` (dentro del repositorio del modelo)
 - Librería declarada: openpi (repositorio de Physical Intelligence; consultar la documentación oficial del proyecto para la carga de pesos y las transforms)

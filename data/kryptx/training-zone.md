@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kryptx/training-zone` es un repositorio de modelos publicado en HuggingFace por el usuario `kryptx` el 18 de octubre de 2026. La informacion disponible es extremadamente limitada: la model card se reduce a una declaracion de licencia Apache 2.0, sin descripcion del modelo, sin arquitectura declarada, sin especificaciones de entrenamiento y sin resultados de evaluacion. El repositorio no tiene descargas ni likes en el momento de la consulta y no declara pipeline de inferencia.
+`kryptx/training-zone` es un repositorio de modelos publicado en Hugging Face por el usuario `kryptx` el 18 de octubre de 2026. La informacion disponible es extremadamente limitada: la model card se reduce a una declaracion de licencia Apache 2.0, sin descripcion del modelo, sin arquitectura declarada, sin especificaciones de entrenamiento y sin resultados de evaluacion. El repositorio no tiene descargas ni likes en el momento de la consulta y no declara pipeline de inferencia.
 
 El tamano del repositorio es de 0,5 GB, un dato que sugiere pesos de pequena escala o un repositorio parcial (por ejemplo, un checkpoint en cuantizacion agresiva o un subconjunto de ficheros), pero que no permite determinar el numero de parametros ni la arquitectura. No hay informacion sobre el tokenizador, la longitud de contexto ni los idiomas soportados.
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se especifica el volumen
 - No se confirma soporte de agentes ni de razonamiento multi-paso.
 - No se confirma capacidad multilingue ni lista de idiomas.
 - No se confirma la existencia de modos especiales (thinking mode, vision, audio).
-- El repositorio no declara pipeline de inferencia en HuggingFace, por lo que ni siquiera la tarea principal esta identificada.
+- El repositorio no declara pipeline de inferencia en Hugging Face, por lo que ni siquiera la tarea principal esta identificada.
 
 ## Casos de uso
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kryptx/training-zone | no disponible | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| kryptx/training-zone | no disponible | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa: sin arquitectura, tamano ni evaluaciones declaradas, no hay criterio objetivo para emparejar este repositorio con modelos de la misma categoria.
@@ -82,7 +82,7 @@ No es posible establecer una comparativa: sin arquitectura, tamano ni evaluacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kryptx/training-zone
+- Hugging Face: https://huggingface.co/kryptx/training-zone
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

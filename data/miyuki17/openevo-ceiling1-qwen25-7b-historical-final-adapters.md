@@ -112,7 +112,7 @@ Los datos de los modelos alternativos corresponden a documentacion publica de su
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/miyuki17/openevo-ceiling1-qwen25-7b-historical-final-adapters
+- Repositorio Hugging Face del paquete: https://huggingface.co/miyuki17/openevo-ceiling1-qwen25-7b-historical-final-adapters
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct (revision `a09a35458c702b33eeacc393d103063234e8bc28`)
 - Ficheros de licencia y atribucion referenciados en la model card: `LICENSE` y `NOTICE` dentro del propio repositorio
 - Paper, blog, repositorio de codigo o demo del proyecto OpenEVO Ceiling-1.0: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`denperez/multitask-playground83` es un prototipo de investigación publicado en HuggingFace por el usuario denperez (Anthony B. Perez). Se presenta como un esqueleto de arquitectura **CNN Transformer** orientado a tareas multitarea, con un checkpoint de safetensors cuyo recuento real de parámetros es de **33.088** (aproximadamente 33 mil). A pesar de que la model card etiqueta la configuración como "giant", el número de parámetros almacenados en `model.safetensors` es minúsculo, lo que confirma que se trata de una inicialización de prueba y no de un modelo entrenado a escala.
+`denperez/multitask-playground83` es un prototipo de investigación publicado en Hugging Face por el usuario denperez (Anthony B. Perez). Se presenta como un esqueleto de arquitectura **CNN Transformer** orientado a tareas multitarea, con un checkpoint de safetensors cuyo recuento real de parámetros es de **33.088** (aproximadamente 33 mil). A pesar de que la model card etiqueta la configuración como "giant", el número de parámetros almacenados en `model.safetensors` es minúsculo, lo que confirma que se trata de una inicialización de prueba y no de un modelo entrenado a escala.
 
 El repositorio incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y los pesos iniciales (`model.safetensors`). El autor indica explícitamente que el checkpoint es válido para *smoke tests* pero **no está entrenado ni auditado**, y que no se reclama ninguna métrica de benchmark. La licencia es MIT y el tamaño del repositorio es de 0,0 GB.
 
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento de ninguno de los elementos comparados, po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/denperez/multitask-playground83
+- Repositorio Hugging Face: https://huggingface.co/denperez/multitask-playground83
 - Perfil del autor: https://huggingface.co/denperez
 - Prototipo similar de otro autor: https://huggingface.co/anil-devi/multitask-playground

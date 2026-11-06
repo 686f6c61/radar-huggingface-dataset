@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Spark-X2.5-1.7B (este checkpoint) | ~1.7B | Hasta 1M tokens (segun familia) | Apache-2.0 | HuggingFace, Ollama |
-| Qwen2.5-1.5B | ~1.5B | 32K nativo (ampliable) | Apache-2.0 (segun version) | HuggingFace, Ollama |
-| Llama-3.2-1B | ~1.23B | 128K | Licencia comunitaria Llama 3.2 | HuggingFace, Ollama |
-| Gemma-2-2B | ~2.6B | 8K | Licencia Gemma | HuggingFace, Ollama |
+| Spark-X2.5-1.7B (este checkpoint) | ~1.7B | Hasta 1M tokens (segun familia) | Apache-2.0 | Hugging Face, Ollama |
+| Qwen2.5-1.5B | ~1.5B | 32K nativo (ampliable) | Apache-2.0 (segun version) | Hugging Face, Ollama |
+| Llama-3.2-1B | ~1.23B | 128K | Licencia comunitaria Llama 3.2 | Hugging Face, Ollama |
+| Gemma-2-2B | ~2.6B | 8K | Licencia Gemma | Hugging Face, Ollama |
 
 Nota: los datos de los modelos comparativos corresponden a especificaciones publicas conocidas y pueden variar segun la version exacta; no se dispone de resultados de benchmarks de este checkpoint para comparar rendimiento de forma objetiva.
 
@@ -86,7 +86,7 @@ Nota: los datos de los modelos comparativos corresponden a especificaciones publ
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/MENIARAYOUB/Spark-X2.5-1.7B
+- Hugging Face (este checkpoint): https://huggingface.co/MENIARAYOUB/Spark-X2.5-1.7B
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B-Base
 - Repositorio GitHub de la familia Spark-X2.5: https://github.com/XHToken/Spark-X2.5
 - README de la familia en GitHub: https://github.com/XHToken/Spark-X2.5/blob/main/README.md

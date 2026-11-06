@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, mantenido por el usuario flyingfishinwater, es una colección de modelos de lenguaje pequeños (4B parámetros) cuantizados en formato GGUF, optimizados para su ejecución en dispositivos móviles. Incluye tres modelos principales: Qwen3-4B-Instruct-2507, Qwen3-4B-Thinking-2507 y GLM Edge 4B Chat, todos ellos cuantizados a Q4 para reducir el uso de memoria y permitir inferencia completamente local. El repositorio está vinculado a la aplicación Privacy AI para iOS, que ejecuta estos modelos sin conexión a servidores externos, garantizando la privacidad de los datos del usuario.
+Este repositorio de Hugging Face, mantenido por el usuario flyingfishinwater, es una colección de modelos de lenguaje pequeños (4B parámetros) cuantizados en formato GGUF, optimizados para su ejecución en dispositivos móviles. Incluye tres modelos principales: Qwen3-4B-Instruct-2507, Qwen3-4B-Thinking-2507 y GLM Edge 4B Chat, todos ellos cuantizados a Q4 para reducir el uso de memoria y permitir inferencia completamente local. El repositorio está vinculado a la aplicación Privacy AI para iOS, que ejecuta estos modelos sin conexión a servidores externos, garantizando la privacidad de los datos del usuario.
 
 La relevancia de este proyecto radica en la combinación de modelos de última generación (Qwen3-2507 y GLM-4) con formatos eficientes (GGUF) y un caso de uso concreto: IA generativa en dispositivos con recursos limitados. Para desarrolladores e investigadores, ofrece un punto de partida práctico para desplegar modelos con soporte de tool calling, razonamiento avanzado y multilingüismo, bajo licencias permisivas en el caso de los modelos Qwen3. El repositorio incluye además etiquetas de compatibilidad con endpoints y cuantización con imatrix, lo que facilita su integración en pipelines de servidores.
 
@@ -86,7 +86,7 @@ Los modelos de este repositorio ofrecen la ventaja de ser los más recientes de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flyingfishinwater/good_and_small_models
+- Repositorio Hugging Face: https://huggingface.co/flyingfishinwater/good_and_small_models
 - Modelo original Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo original Qwen3-4B-Thinking-2507: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Organización THUDM (GLM Edge 4B Chat): https://huggingface.co/THUDM

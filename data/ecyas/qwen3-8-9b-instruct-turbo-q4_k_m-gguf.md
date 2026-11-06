@@ -80,9 +80,9 @@ No se dispone de datos comparativos directos en la información proporcionada. C
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/ecyas/Qwen3.8-9B-Instruct-Turbo-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/ecyas/Qwen3.8-9B-Instruct-Turbo-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/ewinregirgojr/Qwen3.8-9B-Instruct-Turbo
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Paper referenciado (arxiv:2403.03853): no verificado
 - Paper referenciado (arxiv:2605.27786): no verificado

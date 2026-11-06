@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ns2agi/notion-avatar-qwen-image-edit-2509-lora` (e2) | LoRA r16 sobre Qwen-Image-Edit-2509 | no disponible | 512 px entrenamiento, 1024 px inferencia | apache-2.0 | HuggingFace, repo de 0,6 GB, 0 descargas y 0 likes en el momento del registro |
+| `ns2agi/notion-avatar-qwen-image-edit-2509-lora` (e2) | LoRA r16 sobre Qwen-Image-Edit-2509 | no disponible | 512 px entrenamiento, 1024 px inferencia | apache-2.0 | Hugging Face, repo de 0,6 GB, 0 descargas y 0 likes en el momento del registro |
 | `ns2agi/notion-avatar-qwen-image-edit-2509-lora` (e1) | LoRA r16 sobre Qwen-Image-Edit-2509 | no disponible | 512 px entrenamiento, 1024 px inferencia | apache-2.0 | Mismo repositorio, archivo alternativo |
-| `Qwen/Qwen-Image-Edit-2509` (base, sin LoRA) | Modelo de difusion de edicion de imagen | no disponible | no disponible | apache-2.0 | HuggingFace |
+| `Qwen/Qwen-Image-Edit-2509` (base, sin LoRA) | Modelo de difusion de edicion de imagen | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Otros LoRA de avatares de linea para Qwen-Image-Edit-2509 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La model card menciona `gpt-image-2.5-sunburst` como generador de las imagenes objetivo del entrenamiento y una referencia `gpt-image-2.5` en la comparacion visual, pero no aporta parametros, licencia ni resultados numericos de ese modelo, por lo que no se incluye como comparativa cuantitativa.
@@ -107,7 +107,7 @@ La model card menciona `gpt-image-2.5-sunburst` como generador de las imagenes o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ns2agi/notion-avatar-qwen-image-edit-2509-lora
+- Modelo en Hugging Face: https://huggingface.co/ns2agi/notion-avatar-qwen-image-edit-2509-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2509
 - LoRA de aceleracion Lightning: https://huggingface.co/lightx2v/Qwen-Image-Lightning
 - Repositorio del autor (archivo de despliegue `deploy/modal_avatar.py`): https://github.com/North-Star-AGI/magician

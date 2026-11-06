@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - jlsrls/em1bsl-ctrl-s0](https://huggingface.co/jlsrls/em1bsl-ctrl-s0)
+- [Hugging Face - jlsrls/em1bsl-ctrl-s0](https://huggingface.co/jlsrls/em1bsl-ctrl-s0)
 - [Modelo base: unsloth/Llama-3.2-1B-Instruct](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

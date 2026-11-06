@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible. El c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_cap_b8000_s0 | 4.5B | no disponible | sin benchmarks | other | HuggingFace |
-| Qwen/Qwen3.5-4B-Base | 4.5B | no disponible | no publicado | Apache 2.0 (presumiblemente) | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32K | MMLU ~70 (estimado) | Apache 2.0 | HuggingFace |
+| AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_cap_b8000_s0 | 4.5B | no disponible | sin benchmarks | other | Hugging Face |
+| Qwen/Qwen3.5-4B-Base | 4.5B | no disponible | no publicado | Apache 2.0 (presumiblemente) | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32K | MMLU ~70 (estimado) | Apache 2.0 | Hugging Face |
 
 La comparativa es limitada porque no hay datos de rendimiento del modelo evaluado. El modelo base Qwen3.5-4B-Base es la referencia natural, pero tampoco tiene benchmarks publicados en esta información. Otros modelos de tamaño similar, como Qwen2.5-3B-Instruct, tienen documentación más completa, pero no son directamente comparables sin métricas.
 
@@ -73,6 +73,6 @@ La comparativa es limitada porque no hay datos de rendimiento del modelo evaluad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_cap_b8000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_cap_b8000_s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Framework de entrenamiento (Llama Factory): https://github.com/hiyouga/LLaMA-Factory (referencia indirecta por las tags)

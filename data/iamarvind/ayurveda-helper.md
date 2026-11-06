@@ -94,7 +94,7 @@ La comparacion sugiere que un modelo de 2,9B especializado en Ayurveda (AyurPara
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/iamarvind/ayurveda-helper
+- Hugging Face del modelo: https://huggingface.co/iamarvind/ayurveda-helper
 - Modelo base: https://huggingface.co/sarvamai/sarvam-m
 - AI4Bharat Sangraha: https://huggingface.co/datasets/ai4bharat/sangraha
 - FineWeb-2 (Hugging Face): https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

@@ -6,7 +6,7 @@ El modelo `Hybridization/yume-alpha` es un adaptador LoRA (Low-Rank Adaptation) 
 
 Este tipo de adaptadores es relevante para la comunidad de generación de imágenes porque permite especializar un modelo base genérico en un dominio concreto (en este caso, anime con temática JJK) sin necesidad de reentrenar el modelo completo, reduciendo costes computacionales y de almacenamiento. El repositorio tiene un tamaño declarado de 0.0 GB, lo que sugiere que los pesos del LoRA son muy ligeros, aunque no se especifica el número de parámetros ni el rango del adaptador.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace, que es mínima. No se dispone de datos sobre licencia, idiomas, métricas de rendimiento ni detalles de entrenamiento. Los resultados de búsqueda web sobre un modelo llamado "Yume" (generación de mundos interactivos) no guardan relación con este adaptador, por lo que se descartan.
+La ficha se basa exclusivamente en la información disponible en Hugging Face, que es mínima. No se dispone de datos sobre licencia, idiomas, métricas de rendimiento ni detalles de entrenamiento. Los resultados de búsqueda web sobre un modelo llamado "Yume" (generación de mundos interactivos) no guardan relación con este adaptador, por lo que se descartan.
 
 ## Especificaciones tecnicas
 
@@ -58,12 +58,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre otros LoRAs de anime para SD 1.5 en el repositorio. Como referencia general, existen numerosos adaptadores LoRA para estilos anime en HuggingFace, pero sin datos concretos de este modelo no es posible realizar una comparativa cuantitativa. Se puede comparar con el modelo base `runwayml/stable-diffusion-v1-5`:
+No se dispone de informacion sobre otros LoRAs de anime para SD 1.5 en el repositorio. Como referencia general, existen numerosos adaptadores LoRA para estilos anime en Hugging Face, pero sin datos concretos de este modelo no es posible realizar una comparativa cuantitativa. Se puede comparar con el modelo base `runwayml/stable-diffusion-v1-5`:
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `runwayml/stable-diffusion-v1-5` | Modelo completo | ~860M (UNet) | no aplica | CreativeML Open RAIL-M | HuggingFace |
-| `Hybridization/yume-alpha` | LoRA | no disponible | no aplica | no disponible | HuggingFace |
+| `runwayml/stable-diffusion-v1-5` | Modelo completo | ~860M (UNet) | no aplica | CreativeML Open RAIL-M | Hugging Face |
+| `Hybridization/yume-alpha` | LoRA | no disponible | no aplica | no disponible | Hugging Face |
 
 La comparativa con otros LoRAs de anime no es posible por falta de datos.
 
@@ -77,7 +77,7 @@ La comparativa con otros LoRAs de anime no es posible por falta de datos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hybridization/yume-alpha
+- Repositorio Hugging Face: https://huggingface.co/Hybridization/yume-alpha
 - Modelo base: https://huggingface.co/runwayml/stable-diffusion-v1-5
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) asociados a este adaptador.

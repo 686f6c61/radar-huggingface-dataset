@@ -99,7 +99,7 @@ Diferencias clave: frente a estas alternativas de producción, el checkpoint de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E2-Unreg-Step20
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E2-Unreg-Step20
 - Issue del experimento en el proyecto Marin: https://github.com/marin-community/marin/issues/7786
 - Archivo de evidencias (dataset con MATH_EVALS.md): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Ruta del artefacto de origen (S3, no navegable por HTTP): s3://marin-us-east-02a/marin/exports/snowball-bias-repaired/rl-snowball-e2-rno2a-unreg-grug-67b-a2b-20260731-104020-c86049/global_step_20/policy/

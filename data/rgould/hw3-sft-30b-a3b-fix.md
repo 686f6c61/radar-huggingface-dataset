@@ -2,11 +2,11 @@
 
 ## Resumen
 
-hw3-sft-30b-a3b-fix es un ajuste fino supervisado (SFT) del modelo base nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16, publicado por el usuario rgould en HuggingFace. Se trata de un modelo de arquitectura Mixture of Experts (MoE) con aproximadamente 31.580 millones de parametros totales, orientado a generacion de texto, razonamiento y tool calling. El ajuste se ha realizado sobre el checkpoint base de NVIDIA, no sobre una version ya instruida, lo que implica que el autor ha aplicado su propio conjunto de datos SFT para dotar al modelo de capacidades conversacionales y de razonamiento.
+hw3-sft-30b-a3b-fix es un ajuste fino supervisado (SFT) del modelo base nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16, publicado por el usuario rgould en Hugging Face. Se trata de un modelo de arquitectura Mixture of Experts (MoE) con aproximadamente 31.580 millones de parametros totales, orientado a generacion de texto, razonamiento y tool calling. El ajuste se ha realizado sobre el checkpoint base de NVIDIA, no sobre una version ya instruida, lo que implica que el autor ha aplicado su propio conjunto de datos SFT para dotar al modelo de capacidades conversacionales y de razonamiento.
 
 El modelo resulta relevante porque parte de una de las familias Nano de NVIDIA, disenadas para ofrecer un equilibrio entre capacidad y coste computacional mediante activacion dispersa de expertos. El sufijo "fix" en el nombre sugiere una correccion o iteracion sobre un ajuste previo, aunque no se documenta en la informacion disponible que problema concreto se corrigio. La ficha del repositorio es muy escasa: no se detallan los datos de entrenamiento, hiperparametros, composicion del dataset ni resultados de evaluacion.
 
-El acceso al repositorio esta restringido (gated), requiere aceptar condiciones en HuggingFace, y la licencia es la NVIDIA Nemotron Open Model License, que impone condiciones especificas para uso comercial. El tamano del repositorio (505,3 GB) sugiere que incluye multiples checkpoints o pesos en precision completa ademas de los safetensors principales.
+El acceso al repositorio esta restringido (gated), requiere aceptar condiciones en Hugging Face, y la licencia es la NVIDIA Nemotron Open Model License, que impone condiciones especificas para uso comercial. El tamano del repositorio (505,3 GB) sugiere que incluye multiples checkpoints o pesos en precision completa ademas de los safetensors principales.
 
 ## Especificaciones tecnicas
 
@@ -85,6 +85,6 @@ La comparacion cuantitativa con alternativas no es posible con la informacion pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rgould/hw3-sft-30b-a3b-fix
+- Hugging Face: https://huggingface.co/rgould/hw3-sft-30b-a3b-fix
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16
-- Licencia NVIDIA Nemotron Open Model License: no disponible en la informacion proporcionada (referenciada en la ficha de HuggingFace del modelo)
+- Licencia NVIDIA Nemotron Open Model License: no disponible en la informacion proporcionada (referenciada en la ficha de Hugging Face del modelo)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Wan-Animate-2 es un modelo de animación publicado por Comfy-Org, la organización responsable del ecosistema ComfyUI, en el repositorio de HuggingFace con ID `Comfy-Org/Wan-Animate-2`. El nombre sugiere que se trata de la segunda versión de un modelo orientado a la animación de imágenes o vídeo, probablemente integrable en flujos de trabajo de ComfyUI. A fecha de su publicación (14 de julio de 2026), el modelo cuenta con 39 likes pero cero descargas, lo que indica que es un lanzamiento muy reciente o que aún no ha sido ampliamente adoptado.
+Wan-Animate-2 es un modelo de animación publicado por Comfy-Org, la organización responsable del ecosistema ComfyUI, en el repositorio de Hugging Face con ID `Comfy-Org/Wan-Animate-2`. El nombre sugiere que se trata de la segunda versión de un modelo orientado a la animación de imágenes o vídeo, probablemente integrable en flujos de trabajo de ComfyUI. A fecha de su publicación (14 de julio de 2026), el modelo cuenta con 39 likes pero cero descargas, lo que indica que es un lanzamiento muy reciente o que aún no ha sido ampliamente adoptado.
 
-La información disponible en HuggingFace es extremadamente limitada: no se especifican arquitectura, tamaño, contexto, pipeline ni idiomas soportados. El único dato técnico adicional es la etiqueta `license:apache-2.0`, que sugiere una licencia permisiva de código abierto, aunque el campo de licencia formal aparece como "no disponible". Dada la escasez de especificaciones públicas, esta ficha se basa únicamente en los metadatos del repositorio y no puede ofrecer detalles técnicos verificados.
+La información disponible en Hugging Face es extremadamente limitada: no se especifican arquitectura, tamaño, contexto, pipeline ni idiomas soportados. El único dato técnico adicional es la etiqueta `license:apache-2.0`, que sugiere una licencia permisiva de código abierto, aunque el campo de licencia formal aparece como "no disponible". Dada la escasez de especificaciones públicas, esta ficha se basa únicamente en los metadatos del repositorio y no puede ofrecer detalles técnicos verificados.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ Dada la ausencia de especificaciones publicas, no es posible enumerar casos de u
 - Integracion en pipelines de postproduccion para motion graphics: especulativo.
 - Uso como componente en sistemas de generacion de contenido audiovisual: especulativo.
 
-En cualquier caso, se recomienda consultar el repositorio de HuggingFace y la documentacion de ComfyUI antes de considerar cualquier implementacion.
+En cualquier caso, se recomienda consultar el repositorio de Hugging Face y la documentacion de ComfyUI antes de considerar cualquier implementacion.
 
 ## Benchmarks y rendimiento
 
@@ -69,5 +69,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Comfy-Org/Wan-Animate-2
+- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/Wan-Animate-2
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

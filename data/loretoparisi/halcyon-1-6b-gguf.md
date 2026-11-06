@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Halcyon-1.6B-GGUF es una cuantizacion en formato GGUF del modelo Halcyon-1.6B, desarrollado por Radical Numerics, publicada en HuggingFace por el usuario loretoparisi. El modelo base es un modelo autorregresivo de generacion de imagenes (text-to-image) basado en la arquitectura Qwen3, con aproximadamente 1.570 millones de parametros. La version GGUF permite ejecutarlo mediante llama.cpp, lo que facilita su despliegue en hardware de consumo sin depender de frameworks de PyTorch.
+Halcyon-1.6B-GGUF es una cuantizacion en formato GGUF del modelo Halcyon-1.6B, desarrollado por Radical Numerics, publicada en Hugging Face por el usuario loretoparisi. El modelo base es un modelo autorregresivo de generacion de imagenes (text-to-image) basado en la arquitectura Qwen3, con aproximadamente 1.570 millones de parametros. La version GGUF permite ejecutarlo mediante llama.cpp, lo que facilita su despliegue en hardware de consumo sin depender de frameworks de PyTorch.
 
-La relevancia de este modelo radica en la tendencia reciente de generar imagenes mediante modelos autorregresivos de lenguaje en lugar de difusion tradicional, combinando la capacidad de comprension textual de un LLM con la generacion visual secuencial. Al ser un modelo pequeno (1.6B parametros), resulta especialmente atractivo para ejecucion local en GPUs modestas o incluso CPU. Hay que senalar que el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace, y que la licencia del modelo base figura como "other" sin especificacion clara del terminos concretos.
+La relevancia de este modelo radica en la tendencia reciente de generar imagenes mediante modelos autorregresivos de lenguaje en lugar de difusion tradicional, combinando la capacidad de comprension textual de un LLM con la generacion visual secuencial. Al ser un modelo pequeno (1.6B parametros), resulta especialmente atractivo para ejecucion local en GPUs modestas o incluso CPU. Hay que senalar que el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face, y que la licencia del modelo base figura como "other" sin especificacion clara del terminos concretos.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de informacion suficiente sobre modelos autorregresivos text-to-im
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar
 - Licencia ambigua: figura como "other" con "upstream-unspecified", por lo que los terminos de uso comercial deben verificarse contra la licencia del modelo base (radicalnumerics/Halcyon-1.6B) antes de cualquier despliegue en produccion
 - Sin datos de rendimiento: no hay benchmarks publicados en la ficha que permitan evaluar calidad de imagen o velocidad frente a alternativas como Stable Diffusion
 - Riesgo de sesgos y alucinacion visual: como todo modelo generativo de imagenes, puede reproducir sesgos presentes en los datos de entrenamiento; no hay documentacion de mitigaciones en la informacion disponible
@@ -75,6 +75,6 @@ No se dispone de informacion suficiente sobre modelos autorregresivos text-to-im
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/loretoparisi/Halcyon-1.6B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/loretoparisi/Halcyon-1.6B-GGUF
 - Modelo base: https://huggingface.co/radicalnumerics/Halcyon-1.6B
 - Paper (arXiv): https://arxiv.org/abs/2610.26863

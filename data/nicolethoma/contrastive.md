@@ -68,6 +68,6 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- [Repositorio HuggingFace: nicolethoma/contrastive](https://huggingface.co/nicolethoma/contrastive)
+- [Repositorio Hugging Face: nicolethoma/contrastive](https://huggingface.co/nicolethoma/contrastive)
 - [GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch](https://github.com/nomic-ai/contrastors) (referencia externa de entrenamiento contrastivo, no afiliada a este repositorio)
 - [arXiv: Customizing Language Model Responses with Contrastive In-Context Learning](https://arxiv.org/abs/2401.17390) (artículo relacionado con aprendizaje contrastivo, no con este modelo)

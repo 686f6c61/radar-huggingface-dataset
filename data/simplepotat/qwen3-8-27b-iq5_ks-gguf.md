@@ -68,7 +68,7 @@ No se dispone de información comparativa con otras cuantizaciones del mismo mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Simplepotat/Qwen3.8-27B-IQ5_KS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Simplepotat/Qwen3.8-27B-IQ5_KS-GGUF
 - ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp
 - Receta de tensores de Ubergarm para Qwen3.6-27B: https://huggingface.co/ubergarm/Qwen3.6-27B-GGUF
 - Importance matrix de Ubergarm para Qwen3.8-27B: https://huggingface.co/ubergarm/Qwen3.8-27B-GGUF

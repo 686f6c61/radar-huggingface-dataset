@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-H3 FlashGen (fused, 4-step) es una variante destilada del modelo de generación de vídeo texto-a-vídeo MiniMax-H3, publicada por el usuario addlabsviral en HuggingFace. Se construye fusionando (merge) el LoRA `Beidouqixing/minimax-h3-4step-lora-flashgen` sobre los pesos del transformer de MiniMax-H3, de modo que el resultado es un único checkpoint con los pesos ya combinados (`W' = W + 1 * B @ A`, acumulación en fp32 y pesos finales en bf16). El objetivo es reducir el número de pasos de muestreo de decenas a solo 4 pasos Euler, lo que rebaja drásticamente el coste de inferencia.
+MiniMax-H3 FlashGen (fused, 4-step) es una variante destilada del modelo de generación de vídeo texto-a-vídeo MiniMax-H3, publicada por el usuario addlabsviral en Hugging Face. Se construye fusionando (merge) el LoRA `Beidouqixing/minimax-h3-4step-lora-flashgen` sobre los pesos del transformer de MiniMax-H3, de modo que el resultado es un único checkpoint con los pesos ya combinados (`W' = W + 1 * B @ A`, acumulación en fp32 y pesos finales en bf16). El objetivo es reducir el número de pasos de muestreo de decenas a solo 4 pasos Euler, lo que rebaja drásticamente el coste de inferencia.
 
 El modelo conserva la arquitectura del transformer de MiniMax-H3, con aproximadamente 33.100 millones de parámetros (33.122.992.896 según los safetensors), y un repositorio de 66,3 GB. No incluye el text encoder ni los VAE: estos deben cargarse desde el repositorio base `MiniMaxAI/MiniMax-H3`. La fusión del LoRA permite usar el pipeline de `diffusers` con un schedule de sigmas predefinido en lugar de la programación estándar de muchos pasos.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Pasos de inferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minimax-h3-flashgen-fused | 33,1B | no disponible | 4 | MiniMax H3 Community License | HuggingFace |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | no disponible | MiniMax H3 Community License | HuggingFace |
-| Beidouqixing/minimax-h3-4step-lora-flashgen (LoRA) | adaptador de bajo rango | no disponible | 4 | Apache-2.0 | HuggingFace |
+| minimax-h3-flashgen-fused | 33,1B | no disponible | 4 | MiniMax H3 Community License | Hugging Face |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | no disponible | MiniMax H3 Community License | Hugging Face |
+| Beidouqixing/minimax-h3-4step-lora-flashgen (LoRA) | adaptador de bajo rango | no disponible | 4 | Apache-2.0 | Hugging Face |
 
 La comparación con alternativas de otros desarrolladores (por ejemplo, modelos de vídeo de código abierto como los de la familia Stable Video Diffusion o Wan) no está disponible en la información proporcionada.
 
@@ -84,6 +84,6 @@ La comparación con alternativas de otros desarrolladores (por ejemplo, modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/addlabsviral/minimax-h3-flashgen-fused
+- Hugging Face: https://huggingface.co/addlabsviral/minimax-h3-flashgen-fused
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - LoRA de destilación: https://huggingface.co/Beidouqixing/minimax-h3-4step-lora-flashgen

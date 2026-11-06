@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes más all
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage1-Multi-LoRA
+- Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage1-Multi-LoRA
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Modelo Knowledge publicado: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Adaptador LoRA de referencia: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-LoRA

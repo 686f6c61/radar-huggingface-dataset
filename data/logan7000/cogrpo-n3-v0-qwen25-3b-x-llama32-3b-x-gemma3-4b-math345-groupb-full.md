@@ -78,7 +78,7 @@ Dado que este modelo es un checkpoint experimental sin evaluacion publica, no es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/cogrpo-n3-v0-qwen25-3b-x-llama32-3b-x-gemma3-4b-math345-groupB-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/cogrpo-n3-v0-qwen25-3b-x-llama32-3b-x-gemma3-4b-math345-groupB-full
 - Repositorios relacionados de la misma serie (encontrados en la busqueda web):
   - https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end
   - https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end

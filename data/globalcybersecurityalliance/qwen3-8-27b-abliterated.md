@@ -80,7 +80,7 @@ La variante abliterated se diferencia por su ausencia de filtros de contenido, l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated
 - Variante similar de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio oficial de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de la serie Qwen3.8 (QwenLM): https://github.com/QwenLM/Qwen3.8

@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Delphi-5e19-1.2Bparams-7.4Btokens | 1,18 B | 4096 | Apache 2.0 | Suite de escalado, solo preentrenado, solo ingles | HuggingFace (`rohithck`) |
-| Pythia-1.4B (EleutherAI) | 1,4 B | 2048 | Apache 2.0 | Suite de escalado con checkpoints intermedios, solo ingles | HuggingFace (`EleutherAI`) |
-| Qwen3-1.7B | 1,7 B | 32.768 (nativo) | Apache 2.0 | Modelo base e instruct, multilingue | HuggingFace (`Qwen`) |
-| Llama 3.2-1B | 1,24 B | 131.072 | Llama 3.2 Community License | Base e instruct, multilingue | HuggingFace (`meta-llama`) |
+| Delphi-5e19-1.2Bparams-7.4Btokens | 1,18 B | 4096 | Apache 2.0 | Suite de escalado, solo preentrenado, solo ingles | Hugging Face (`rohithck`) |
+| Pythia-1.4B (EleutherAI) | 1,4 B | 2048 | Apache 2.0 | Suite de escalado con checkpoints intermedios, solo ingles | Hugging Face (`EleutherAI`) |
+| Qwen3-1.7B | 1,7 B | 32.768 (nativo) | Apache 2.0 | Modelo base e instruct, multilingue | Hugging Face (`Qwen`) |
+| Llama 3.2-1B | 1,24 B | 131.072 | Llama 3.2 Community License | Base e instruct, multilingue | Hugging Face (`meta-llama`) |
 
 La comparacion con Pythia es la mas directa por filosofia (suite de escalado abierta con receta reproducible). Frente a Qwen3-1.7B y Llama 3.2-1B, Delphi queda muy por detras en contexto (4096 frente a decenas de miles) y en cobertura de idiomas, y no ofrece version instruct, por lo que no es un sustituto en aplicaciones de produccion. Los datos de rendimiento de Delphi frente a estos modelos no estan disponibles para comparar en benchmarks.
 
@@ -87,8 +87,8 @@ La comparacion con Pythia es la mas directa por filosofia (suite de escalado abi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-5e19-1.2Bparams-7.4Btokens
-- Organizacion Marin en HuggingFace (todos los checkpoints Delphi): https://huggingface.co/marin-community
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-5e19-1.2Bparams-7.4Btokens
+- Organizacion Marin en Hugging Face (todos los checkpoints Delphi): https://huggingface.co/marin-community
 - Datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Blog "Scaling Laws That Extrapolate 300x Past the Fit": https://openathena.ai/blog/delphi
 - Repositorio Marin en GitHub: https://github.com/marin-community/marin

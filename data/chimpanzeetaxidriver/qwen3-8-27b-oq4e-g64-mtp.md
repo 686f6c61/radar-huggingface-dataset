@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chimpanzeetaxidriver/Qwen3.8-27B-oQ4e-G64-mtp` es una cuantización de precisión mixta de 4 bits del modelo base `Qwen/Qwen3.8-27B`, realizada con la herramienta oQ (oMLX v0.6.0.dev1). El resultado se distribuye en formato MLX safetensors, pensado para su ejecución eficiente en hardware Apple Silicon mediante la librería MLX. El autor es el usuario de HuggingFace `chimpanzeetaxidriver`.
+El modelo `chimpanzeetaxidriver/Qwen3.8-27B-oQ4e-G64-mtp` es una cuantización de precisión mixta de 4 bits del modelo base `Qwen/Qwen3.8-27B`, realizada con la herramienta oQ (oMLX v0.6.0.dev1). El resultado se distribuye en formato MLX safetensors, pensado para su ejecución eficiente en hardware Apple Silicon mediante la librería MLX. El autor es el usuario de Hugging Face `chimpanzeetaxidriver`.
 
 Aunque el nombre sugiere 27 mil millones de parámetros, los pesos reales en safetensors suman 4.936.622.832 parámetros (~4,9 mil millones), lo que indica una discrepancia entre la denominación comercial y el tamaño efectivo del archivo. El pipeline declarado es `image-text-to-text`, lo que sugiere capacidades multimodales, aunque no se aportan detalles adicionales en la documentación. La licencia es Apache 2.0, lo que permite uso comercial y modificación.
 
@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/chimpanzeetaxidriver/Qwen3.8-27B-oQ4e-G64-mtp)
+- [Modelo en Hugging Face](https://huggingface.co/chimpanzeetaxidriver/Qwen3.8-27B-oQ4e-G64-mtp)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

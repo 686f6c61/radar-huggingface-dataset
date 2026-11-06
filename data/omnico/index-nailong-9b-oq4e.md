@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento del modelo base ni de alternativas verific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Omnico/Index-Nailong-9B-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/Omnico/Index-Nailong-9B-oQ4e
 - Repositorio de la herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Framework MLX (Apple): no disponible en la informacion proporcionada
 - Modelo base Index-Nailong-9B: no disponible en la informacion proporcionada

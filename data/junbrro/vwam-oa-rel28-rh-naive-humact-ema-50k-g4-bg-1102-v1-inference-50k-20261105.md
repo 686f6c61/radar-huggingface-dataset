@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vwam-oa-rel28-rh-naive-humact-ema-50k-g4-bg-1102-v1-inference-50k-20261105` es un checkpoint de inferencia publicado por el usuario `junbrro` en HuggingFace. Por la nomenclatura del repositorio y la descripcion de la model card, se trata de un checkpoint de pesos EMA (media movil exponencial) del paso 50.000 de un entrenamiento denominado V-WAM, empaquetado en formato nativo de PyTorch DCP (Distributed Checkpoint) y preparado exclusivamente para servir inferencia con un runtime propietario que el autor denomina "V-WAM runtime". No es un modelo de lenguaje generativo al uso, sino un artefacto de pesos asociado a un pipeline de investigacion concreto.
+El modelo `vwam-oa-rel28-rh-naive-humact-ema-50k-g4-bg-1102-v1-inference-50k-20261105` es un checkpoint de inferencia publicado por el usuario `junbrro` en Hugging Face. Por la nomenclatura del repositorio y la descripcion de la model card, se trata de un checkpoint de pesos EMA (media movil exponencial) del paso 50.000 de un entrenamiento denominado V-WAM, empaquetado en formato nativo de PyTorch DCP (Distributed Checkpoint) y preparado exclusivamente para servir inferencia con un runtime propietario que el autor denomina "V-WAM runtime". No es un modelo de lenguaje generativo al uso, sino un artefacto de pesos asociado a un pipeline de investigacion concreto.
 
 La model card es extremadamente escueta: indica que se debe usar el paso `step-050000` junto con el runtime V-WAM correspondiente y la configuracion y normalizacion incluidas, y que los pesos EMA se mapean a la red de servicio bajo el prefijo `net.*`. Se excluyen explicitamente el optimizador, el scheduler, el trainer y los pesos crudos de entrenamiento, mientras que los "frozen runtime assets" permanecen como dependencias externas.
 
@@ -23,7 +23,7 @@ El repositorio ocupa 32,0 GB, lo que sugiere un modelo de gran tamano o un conju
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo en la model card ni en los metadatos de HuggingFace. La unica informacion tecnica disponible es que se trata de un checkpoint de inferencia del paso 50.000 (`step-050000`) con pesos EMA, es decir, una media movil exponencial de los pesos a lo largo del entrenamiento, practica habitual para estabilizar la inferencia y mejorar la generalizacion respecto a los pesos crudos del ultimo paso.
+No se ha publicado informacion sobre la arquitectura interna del modelo en la model card ni en los metadatos de Hugging Face. La unica informacion tecnica disponible es que se trata de un checkpoint de inferencia del paso 50.000 (`step-050000`) con pesos EMA, es decir, una media movil exponencial de los pesos a lo largo del entrenamiento, practica habitual para estabilizar la inferencia y mejorar la generalizacion respecto a los pesos crudos del ultimo paso.
 
 El paquete incluye la configuracion y la normalizacion necesarias para el serving, y excluye deliberadamente optimizador, scheduler, trainer y pesos crudos de entrenamiento. Los pesos se han mapeado al grafo de servicio bajo el prefijo `net.*`, lo que implica que la inferencia debe realizarse con el runtime V-WAM del autor y no con frameworks genericos como transformers, vLLM o llama.cpp. No se dispone de datos sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones arquitectonicas.
 
@@ -75,5 +75,5 @@ No disponible. No se dispone de informacion sobre la tarea, el dominio ni el tam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junbrro/vwam-oa-rel28-rh-naive-humact-ema-50k-g4-bg-1102-v1-inference-50k-20261105
+- Hugging Face: https://huggingface.co/junbrro/vwam-oa-rel28-rh-naive-humact-ema-50k-g4-bg-1102-v1-inference-50k-20261105
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

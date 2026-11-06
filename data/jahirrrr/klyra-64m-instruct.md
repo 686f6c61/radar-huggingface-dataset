@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Klyra-64M-Instruct es un modelo de lenguaje de pequeno tamano publicado en HuggingFace por el usuario Jahirrrr bajo el identificador `Jahirrrr/Klyra-64M-Instruct`. Los pesos reales almacenados en safetensors suman 68.827.392 parametros (unos 68,8 millones), una cifra ligeramente superior a los 64 millones que sugiere el nombre, y el repositorio ocupa 0,3 GB. La ficha no incluye pipeline declarado, licencia, idiomas soportados ni descripcion de arquitectura, por lo que se trata de una publicacion con documentacion practicamente inexistente.
+Klyra-64M-Instruct es un modelo de lenguaje de pequeno tamano publicado en Hugging Face por el usuario Jahirrrr bajo el identificador `Jahirrrr/Klyra-64M-Instruct`. Los pesos reales almacenados en safetensors suman 68.827.392 parametros (unos 68,8 millones), una cifra ligeramente superior a los 64 millones que sugiere el nombre, y el repositorio ocupa 0,3 GB. La ficha no incluye pipeline declarado, licencia, idiomas soportados ni descripcion de arquitectura, por lo que se trata de una publicacion con documentacion practicamente inexistente.
 
 El sufijo "Instruct" indica que el modelo ha pasado por algun proceso de ajuste para seguir instrucciones, pero no hay informacion publica sobre el dataset, el metodo de alineamiento ni la arquitectura concreta. La etiqueta `klyra` sugiere una familia o linea de modelos propia del autor, sin documentacion adicional disponible.
 
@@ -64,7 +64,7 @@ Los siguientes escenarios son aplicaciones plausibles dado el rango de tamano de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evaluacion estandar, ni en la ficha de HuggingFace ni en los resultados de busqueda consultados (que devolvieron exclusivamente resultados no relacionados con el modelo).
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evaluacion estandar, ni en la ficha de Hugging Face ni en los resultados de busqueda consultados (que devolvieron exclusivamente resultados no relacionados con el modelo).
 
 ## Requisitos de hardware
 
@@ -110,6 +110,6 @@ La diferencia principal de Klyra-64M-Instruct frente a estas alternativas no es 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Jahirrrr/Klyra-64M-Instruct
+- Ficha en Hugging Face: https://huggingface.co/Jahirrrr/Klyra-64M-Instruct
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre el modelo. Las consultas devolvieron unicamente listados de videojuegos en linea (poki.com), sin relacion alguna con Klyra-64M-Instruct.
 - Paper, blog, repositorio o demo oficial: no disponible.

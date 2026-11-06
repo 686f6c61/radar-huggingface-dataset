@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Gemma-3-4b_X-Ray-Abli_Linear_v1.01-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Gemma-3-4b_X-Ray-Abli_Linear_v1.01-GGUF
 - Modelo base (safetensors): https://huggingface.co/Nexesenex/Gemma-3-4b_X-Ray-Abli_Linear_v1.01
 - Cuantizaciones imatrix/weighted: https://huggingface.co/mradermacher/Gemma-3-4b_X-Ray-Abli_Linear_v1.01-i1-GGUF
 - Pagina de overview del autor: https://hf.tst.eu/model#Gemma-3-4b_X-Ray-Abli_Linear_v1.01-GGUF

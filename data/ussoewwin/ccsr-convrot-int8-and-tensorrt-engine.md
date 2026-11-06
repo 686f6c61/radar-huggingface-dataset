@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **CCSR-ConvRot-INT8-and-TensorRT-Engine** es un artefacto publicado en HuggingFace por el usuario **ussoewwin**. Según los metadatos disponibles, se trata de un modelo con licencia Apache 2.0, cuyo repositorio ocupa 2,2 GB y fue creado el 4 de septiembre de 2026. El nombre del repositorio sugiere que es una versión cuantizada en INT8 y compilada como motor TensorRT, lo que apuntaría a un despliegue optimizado para GPU NVIDIA.
+El modelo **CCSR-ConvRot-INT8-and-TensorRT-Engine** es un artefacto publicado en Hugging Face por el usuario **ussoewwin**. Según los metadatos disponibles, se trata de un modelo con licencia Apache 2.0, cuyo repositorio ocupa 2,2 GB y fue creado el 4 de septiembre de 2026. El nombre del repositorio sugiere que es una versión cuantizada en INT8 y compilada como motor TensorRT, lo que apuntaría a un despliegue optimizado para GPU NVIDIA.
 
 No se dispone de documentación técnica en la model card, que solo incluye la licencia. Tampoco hay información sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni capacidades funcionales. Por tanto, no es posible evaluar el modelo, ni compararlo con alternativas, ni determinar su relevancia actual.
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ussoewwin/CCSR-ConvRot-INT8-and-TensorRT-Engine
+- Hugging Face: https://huggingface.co/ussoewwin/CCSR-ConvRot-INT8-and-TensorRT-Engine
 - GitHub del autor: https://github.com/ussoewwin
 - Otro modelo del autor (SAM3.1-ConvRot-INT8): https://huggingface.co/ussoewwin/SAM3.1-ConvRot-INT8

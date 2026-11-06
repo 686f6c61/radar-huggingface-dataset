@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged
 - Modelo base (referenciado): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Repositorio relacionado (mencionado en busqueda): https://huggingface.co/unconst/Affine-5czsc2fc98-r176-merged
 

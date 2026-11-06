@@ -83,12 +83,12 @@ Mediciones realizadas el 21 de octubre de 2026 en un M3 Max con 48 GB. La model 
 
 | Modelo | Parametros | Dimensiones | Contexto | Top-1 (prueba del autor) | Tamaño en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este modelo (0.6B, MLX 4 bits) | 0,6B | 1024 | 32K | 67,1 % menos 3,5 puntos | 0,3 GB | Apache 2.0 | HuggingFace, MLX |
-| Octen-Embedding-0.6B MLX bf16 | 0,6B | 1024 | 32K | 67,1 % | 1,2 GB | Apache 2.0 | HuggingFace, MLX |
-| Octen-Embedding-0.6B MLX 8 bits | 0,6B | 1024 | 32K | No publicado | 0,6 GB | Apache 2.0 | HuggingFace, MLX |
-| Octen-Embedding-4B MLX bf16 | 4B | 2560 | No disponible | 72,4 % | No disponible | Apache 2.0 | HuggingFace, MLX |
-| Octen-Embedding-8B MLX bf16 | 8B | 4096 | No disponible | 78,2 % | No disponible | Apache 2.0 | HuggingFace, MLX |
-| Qwen/Qwen3-Embedding-0.6B | 0,6B | 1024 | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| Este modelo (0.6B, MLX 4 bits) | 0,6B | 1024 | 32K | 67,1 % menos 3,5 puntos | 0,3 GB | Apache 2.0 | Hugging Face, MLX |
+| Octen-Embedding-0.6B MLX bf16 | 0,6B | 1024 | 32K | 67,1 % | 1,2 GB | Apache 2.0 | Hugging Face, MLX |
+| Octen-Embedding-0.6B MLX 8 bits | 0,6B | 1024 | 32K | No publicado | 0,6 GB | Apache 2.0 | Hugging Face, MLX |
+| Octen-Embedding-4B MLX bf16 | 4B | 2560 | No disponible | 72,4 % | No disponible | Apache 2.0 | Hugging Face, MLX |
+| Octen-Embedding-8B MLX bf16 | 8B | 4096 | No disponible | 78,2 % | No disponible | Apache 2.0 | Hugging Face, MLX |
+| Qwen/Qwen3-Embedding-0.6B | 0,6B | 1024 | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 La información proporcionada no incluye modelos de terceros comparables (por ejemplo, alternativas de otros laboratorios en el rango de 0,6B); la comparación se limita a las variantes de la misma familia.
 

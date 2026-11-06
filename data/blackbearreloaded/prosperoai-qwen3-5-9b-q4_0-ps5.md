@@ -79,10 +79,10 @@ La comparativa se limita a las versiones disponibles para ProsperoAI y al modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/blackbearreloaded/ProsperoAI-Qwen3.5-9B-Q4_0-PS5
+- Repositorio Hugging Face: https://huggingface.co/blackbearreloaded/ProsperoAI-Qwen3.5-9B-Q4_0-PS5
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - GGUF de origen (unsloth): https://huggingface.co/unsloth/Qwen3.5-9B-GGUF
 - Página del modelo en Ollama: https://ollama.com/library/qwen3.5:9b
 - Página del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-9b
 - Recetas vLLM para Qwen3.5-9B: https://recipes.vllm.ai/Qwen/Qwen3.5-9B
-- Búsqueda de modelos ProsperoAI en HuggingFace: https://huggingface.co/models?other=prosperoai
+- Búsqueda de modelos ProsperoAI en Hugging Face: https://huggingface.co/models?other=prosperoai

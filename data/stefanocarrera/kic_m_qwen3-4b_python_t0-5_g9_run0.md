@@ -4,7 +4,7 @@
 
 `stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g9_run0` es un ajuste fino (fine-tune) del modelo base Qwen3-4B, concretamente de la version cuantizada en 4 bits publicada por Unsloth (`unsloth/Qwen3-4B-Base-unsloth-bnb-4bit`). Lo publica el usuario stefanocarrera bajo licencia Apache 2.0 y esta etiquetado como modelo de generacion de texto para la libreria `transformers`, entrenado con las herramientas de Unsloth y TRL. El nombre del repositorio sugiere un experimento sobre codigo Python con temperatura 0,5 y una ejecucion identificada como `run0`, aunque la model card no documenta ni el dataset ni la receta de entrenamiento.
 
-Se trata de un modelo denso de aproximadamente 4.000 millones de parametros, heredero de la arquitectura decoder-only de la familia Qwen3. Su relevancia practica no esta en un rendimiento diferencial -no hay benchmarks publicados ni descargas registradas-, sino en que ejemplifica el flujo actual de ajuste fino barato: partir de un modelo de 4B cuantizado, entrenar con LoRA/QLoRA en una sola GPU de consumo y publicar el resultado en HuggingFace en pocos minutos.
+Se trata de un modelo denso de aproximadamente 4.000 millones de parametros, heredero de la arquitectura decoder-only de la familia Qwen3. Su relevancia practica no esta en un rendimiento diferencial -no hay benchmarks publicados ni descargas registradas-, sino en que ejemplifica el flujo actual de ajuste fino barato: partir de un modelo de 4B cuantizado, entrenar con LoRA/QLoRA en una sola GPU de consumo y publicar el resultado en Hugging Face en pocos minutos.
 
 La ficha debe leerse con cautela: el repositorio tiene un tamano de 0,1 GB, compatible con pesos de adaptador y no con un modelo completo en precision nativa, y la documentacion se limita a la plantilla automatica de Unsloth. Cualquier uso en produccion exige validacion propia.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|
-| Este fine-tune (kic_M_Qwen3-4B_python) | ~4B | no disponible en la model card | Apache 2.0 | no disponible | HuggingFace, 0 descargas |
-| Qwen3-4B-Base (modelo de partida) | ~4B | 32.768 tokens nativos | Apache 2.0 | publicados por el autor del base, no reproducidos aqui | HuggingFace, ampliamente utilizado |
-| Llama 3.2 3B | ~3,2B | 128.000 tokens | Licencia comunitaria Llama 3.2 | publicados por Meta | HuggingFace |
-| Gemma 3 4B | ~4B | 128.000 tokens | Licencia Gemma | publicados por Google | HuggingFace |
-| Phi-4-mini | ~3,8B | 128.000 tokens | MIT | publicados por Microsoft | HuggingFace |
+| Este fine-tune (kic_M_Qwen3-4B_python) | ~4B | no disponible en la model card | Apache 2.0 | no disponible | Hugging Face, 0 descargas |
+| Qwen3-4B-Base (modelo de partida) | ~4B | 32.768 tokens nativos | Apache 2.0 | publicados por el autor del base, no reproducidos aqui | Hugging Face, ampliamente utilizado |
+| Llama 3.2 3B | ~3,2B | 128.000 tokens | Licencia comunitaria Llama 3.2 | publicados por Meta | Hugging Face |
+| Gemma 3 4B | ~4B | 128.000 tokens | Licencia Gemma | publicados por Google | Hugging Face |
+| Phi-4-mini | ~3,8B | 128.000 tokens | MIT | publicados por Microsoft | Hugging Face |
 
 La comparacion relevante es frente al Qwen3-4B-Base sin ajustar: sin evaluaciones no puede afirmarse que este fine-tune mejore al base en ninguna tarea, y su ventana de contexto declarada no consta.
 
@@ -89,7 +89,7 @@ La comparacion relevante es frente al Qwen3-4B-Base sin ajustar: sin evaluacione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g9_run0
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g9_run0
 - Modelo base utilizado: https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit
 - Unsloth (repositorio y documentacion de entrenamiento): https://github.com/unslothai/unsloth
 - Familia Qwen3 (repositorio oficial): https://github.com/QwenLM/Qwen3

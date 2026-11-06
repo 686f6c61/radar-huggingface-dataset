@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NIRVLab/blt-1b-sft-fi-en es un checkpoint de ajuste supervisado (SFT) publicado por NIRVLab (Network for Intelligent Research Vietnam) en HuggingFace en octubre de 2026. El tag `blt` del repositorio apunta a una arquitectura Byte Latent Transformer, es decir, un transformer que opera sobre bytes en lugar de tokens discretos, y el sufijo `fi-en` sugiere un enfoque bilingüe finés-inglés, aunque esta interpretación no está confirmada por los metadatos del repositorio (no hay campo de idiomas ni model card detallada).
+NIRVLab/blt-1b-sft-fi-en es un checkpoint de ajuste supervisado (SFT) publicado por NIRVLab (Network for Intelligent Research Vietnam) en Hugging Face en octubre de 2026. El tag `blt` del repositorio apunta a una arquitectura Byte Latent Transformer, es decir, un transformer que opera sobre bytes en lugar de tokens discretos, y el sufijo `fi-en` sugiere un enfoque bilingüe finés-inglés, aunque esta interpretación no está confirmada por los metadatos del repositorio (no hay campo de idiomas ni model card detallada).
 
 El dato más relevante es la discrepancia entre el nombre y el contenido: el identificador indica "1b", pero el recuento real de pesos en safetensors es de 4.633.391.872 parámetros (4,63 mil millones). Además, el repositorio ocupa 327,3 GB, un tamaño muy superior al de los pesos en precisión nativa, lo que indica la presencia de múltiples checkpoints o estados de entrenamiento empaquetados. Es un modelo relevante ahora para investigadores que exploran tokenización byte-level en lenguas de baja resource como el finés, no como un modelo listo para producción.
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de conte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NIRVLab/blt-1b-sft-fi-en
+- Hugging Face: https://huggingface.co/NIRVLab/blt-1b-sft-fi-en
 - Colecciones del autor: https://huggingface.co/NIRVLab/collections
 - Otro modelo fi-en del mismo autor: https://huggingface.co/NIRVLab/MorphBART-fi-en
 - Registro de actividad del repositorio (SAVRN): https://savrn.com/model-tracker

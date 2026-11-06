@@ -86,7 +86,7 @@ La comparacion con modelos de lenguaje no procede. Frente a Practical-RIFE origi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hawkynt/mediadroid-models
+- Repositorio Hugging Face: https://huggingface.co/Hawkynt/mediadroid-models
 - Proyecto MediaDroid: https://github.com/Hawkynt/MediaDroid
 - Practical-RIFE (hzwer): https://github.com/hzwer/Practical-RIFE
 - Real-ESRGAN General x4v3 (qualcomm): https://huggingface.co/qualcomm/Real-ESRGAN-General-x4v3

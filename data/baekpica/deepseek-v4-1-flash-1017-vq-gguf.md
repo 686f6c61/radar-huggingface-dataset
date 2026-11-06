@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad entre estas v
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-VQ-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-VQ-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Modelo base, revisión fijada `1bae0e1088993b9b82de08f59de5be5a34e42170`: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/tree/1bae0e1088993b9b82de08f59de5be5a34e42170
 - Artefacto de referencia con la misma receta (V4.1 Flash): https://huggingface.co/wenzhouwu/YoungAi-DeepSeek-V4.1-Flash

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parakeet-TDT 1.1B Persian es un modelo de reconocimiento automatico del habla (ASR) especializado en persa (farsi), desarrollado por el usuario de HuggingFace mmahdi-sz sobre la arquitectura FastConformer-TDT de NVIDIA NeMo. Con 1.100 millones de parametros, emplea un transductor Token-and-Duration (TDT) que predice simultaneamente tokens y duraciones, lo que se traduce en velocidades de inferencia de 80 a 95 veces en tiempo real segun el autor. El modelo se entreno en una unica GPU NVIDIA RTX PRO 6000 Blackwell con 96 GB de VRAM.
+Parakeet-TDT 1.1B Persian es un modelo de reconocimiento automatico del habla (ASR) especializado en persa (farsi), desarrollado por el usuario de Hugging Face mmahdi-sz sobre la arquitectura FastConformer-TDT de NVIDIA NeMo. Con 1.100 millones de parametros, emplea un transductor Token-and-Duration (TDT) que predice simultaneamente tokens y duraciones, lo que se traduce en velocidades de inferencia de 80 a 95 veces en tiempo real segun el autor. El modelo se entreno en una unica GPU NVIDIA RTX PRO 6000 Blackwell con 96 GB de VRAM.
 
 El problema que aborda es la escasez de sistemas ASR de alta calidad para persa: la mayoria de modelos multilingues cubren este idioma de forma marginal y con tasas de error elevadas. Este modelo declara un WER estricto del 4,15 % en FLEURS (fa_ir) y mas del 80 % de coincidencia exacta a nivel de frase, ademas de un tokenizer SentencePiece especifico de 1.024 tokens que preserva el Zero-Width Non-Joiner (ZWNJ), un caracter critico en la ortografia persa.
 
@@ -70,9 +70,9 @@ Datos declarados por el autor en el model-index (no verificados de forma indepen
 
 | Modelo | Parametros | Idiomas | Contexto / audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parakeet-tdt-1.1b-persian | 1.1B | Persa | Audio 16 kHz mono | CC-BY-4.0 | HuggingFace (NeMo) |
-| whisper-large-v3 | 1.55B | Multilingue (incluye persa) | Audio 16 kHz, ventanas de 30 s | MIT (pesos) | OpenAI / HuggingFace |
-| NVIDIA Parakeet-TDT-0.6B | 0.6B | Ingles (mayoritariamente) | Audio | CC-BY-4.0 | HuggingFace (NeMo) |
+| parakeet-tdt-1.1b-persian | 1.1B | Persa | Audio 16 kHz mono | CC-BY-4.0 | Hugging Face (NeMo) |
+| whisper-large-v3 | 1.55B | Multilingue (incluye persa) | Audio 16 kHz, ventanas de 30 s | MIT (pesos) | OpenAI / Hugging Face |
+| NVIDIA Parakeet-TDT-0.6B | 0.6B | Ingles (mayoritariamente) | Audio | CC-BY-4.0 | Hugging Face (NeMo) |
 
 Nota: no se dispone de resultados comparativos de WER entre estos modelos en la informacion proporcionada; la comparativa se limita a parametros, idioma y licencia.
 
@@ -89,7 +89,7 @@ Nota: no se dispone de resultados comparativos de WER entre estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmahdi-sz/parakeet-tdt-1.1b-persian
+- Modelo en Hugging Face: https://huggingface.co/mmahdi-sz/parakeet-tdt-1.1b-persian
 - Dataset MANA TTS v2 Persian: https://huggingface.co/datasets/mmahdi-sz/mana-tts-v2-persian
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
 - NVIDIA NeMo (repositorio oficial): https://github.com/NVIDIA/NeMo

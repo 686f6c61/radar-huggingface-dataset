@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Manikanta23/qwen2.5-coder-7b-vlsi-lora es un adaptador LoRA publicado en HuggingFace por el usuario Manikanta23, construido sobre unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit. Se trata, por tanto, de un ajuste fino paramétricamente eficiente (PEFT) de un modelo de código de 7.000 millones de parámetros ya instruido, no de un modelo entrenado desde cero. El repositorio ocupa 0,3 GB, lo que corresponde al tamaño típico de los pesos de un adaptador LoRA y confirma que no incluye los pesos completos del modelo base.
+Manikanta23/qwen2.5-coder-7b-vlsi-lora es un adaptador LoRA publicado en Hugging Face por el usuario Manikanta23, construido sobre unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit. Se trata, por tanto, de un ajuste fino paramétricamente eficiente (PEFT) de un modelo de código de 7.000 millones de parámetros ya instruido, no de un modelo entrenado desde cero. El repositorio ocupa 0,3 GB, lo que corresponde al tamaño típico de los pesos de un adaptador LoRA y confirma que no incluye los pesos completos del modelo base.
 
-El nombre del adaptador sugiere un ajuste orientado al dominio VLSI (Very Large Scale Integration), es decir, diseño de circuitos integrados y flujo de verificación hardware. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace y no documenta el conjunto de datos, los hiperparámetros ni el procedimiento de entrenamiento, por lo que el dominio de especialización solo puede inferirse del identificador del repositorio y no está confirmado por el autor. Las etiquetas del repositorio sí confirman el uso de SFT (supervised fine-tuning) mediante TRL y Unsloth sobre un modelo base cuantizado a 4 bits.
+El nombre del adaptador sugiere un ajuste orientado al dominio VLSI (Very Large Scale Integration), es decir, diseño de circuitos integrados y flujo de verificación hardware. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face y no documenta el conjunto de datos, los hiperparámetros ni el procedimiento de entrenamiento, por lo que el dominio de especialización solo puede inferirse del identificador del repositorio y no está confirmado por el autor. Las etiquetas del repositorio sí confirman el uso de SFT (supervised fine-tuning) mediante TRL y Unsloth sobre un modelo base cuantizado a 4 bits.
 
 Su relevancia es limitada pero concreta: es un ejemplo de ajuste de bajo coste sobre un modelo de código abierto con licencia permisiva, útil para equipos que quieran reproducir el flujo (Unsloth + LoRA + TRL) o evaluar adaptadores de dominio hardware. Con 0 descargas y 0 "likes" en el momento de la consulta, no existe evidencia de validación comunitaria ni de resultados de evaluación publicados.
 
@@ -58,7 +58,7 @@ Las capacidades que se listan a continuacion son las del modelo base Qwen2.5-Cod
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del adaptador es la plantilla por defecto de HuggingFace y todas las secciones de evaluacion aparecen como "[More Information Needed]". El repositorio no incluye resultados de MMLU, HumanEval, MBPP, GSM8K ni de ningún conjunto especifico de VLSI, ni comparaciones con el modelo base sin ajustar. Cualquier cifra que se quiera usar para decidir su adopcion debe obtenerse ejecutando una evaluacion propia contra el modelo base, ya que sin esa comparacion no es posible saber si el ajuste mejora, mantiene o degrada el rendimiento original.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del adaptador es la plantilla por defecto de Hugging Face y todas las secciones de evaluacion aparecen como "[More Information Needed]". El repositorio no incluye resultados de MMLU, HumanEval, MBPP, GSM8K ni de ningún conjunto especifico de VLSI, ni comparaciones con el modelo base sin ajustar. Cualquier cifra que se quiera usar para decidir su adopcion debe obtenerse ejecutando una evaluacion propia contra el modelo base, ya que sin esa comparacion no es posible saber si el ajuste mejora, mantiene o degrada el rendimiento original.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ Los datos de esta tabla corresponden a documentacion publica de cada modelo y no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Manikanta23/qwen2.5-coder-7b-vlsi-lora | Adaptador LoRA de 0,3 GB sobre base de 7,61 B | No disponible (heredado del base: 32.768) | No disponible | Solo safetensors del adaptador en HuggingFace |
+| Manikanta23/qwen2.5-coder-7b-vlsi-lora | Adaptador LoRA de 0,3 GB sobre base de 7,61 B | No disponible (heredado del base: 32.768) | No disponible | Solo safetensors del adaptador en Hugging Face |
 | Qwen2.5-Coder-7B-Instruct (modelo base) | 7,61 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | safetensors y GGUF; ampliamente replicado |
 | Qwen2.5-Coder-7B (base sin instruir) | 7,61 B | 32.768 nativos | Apache 2.0 | safetensors y GGUF |
 | CodeLlama-7B-Instruct | 6,74 B | 16.384 (variante larga de 100.000) | Licencia Llama 2 | safetensors y GGUF |
@@ -100,7 +100,7 @@ Frente a estas alternativas, la diferencia relevante de este repositorio no es e
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Manikanta23/qwen2.5-coder-7b-vlsi-lora
 - Modelo base del adaptador: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Articulo referenciado en las etiquetas del repositorio (calculo de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

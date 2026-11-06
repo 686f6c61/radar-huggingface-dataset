@@ -69,7 +69,7 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B
+- Hugging Face: https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Documentacion de Qwen3.8-Flash-Next (unsloth): https://unsloth.ai/docs/models/qwen3.8-next
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

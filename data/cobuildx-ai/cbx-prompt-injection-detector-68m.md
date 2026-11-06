@@ -78,11 +78,11 @@ Advertencias del propio autor: el CBX Benchmark es un conjunto de evaluación pr
 
 | Modelo | Params | Licencia | Enfoque | InjecAgent caught | NotInject flagged | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cbx-prompt-injection-detector-68M | 68M | Apache 2.0 | Clasificador con canal de origen, ModernBERT | 0,67 | 0,021 | HuggingFace (v0.1) |
-| Prompt Guard 2 86M (Meta) | 86M | no disponible en la información | Clasificador de inyecciones y jailbreaks | 0,50 | 0,047 | HuggingFace |
-| PIGuard | 184M | no disponible en la información | Clasificador de inyecciones | 0,75 | 0,115 | HuggingFace |
-| ProtectAI v2 | 184M | no disponible en la información | Clasificador DeBERTa-v3 | 0,82 | 0,434 | HuggingFace |
-| deepset deberta-v3-base-injection | 184M | no disponible en la información | Clasificador DeBERTa-v3 | 1,00 | 0,714 | HuggingFace |
+| cbx-prompt-injection-detector-68M | 68M | Apache 2.0 | Clasificador con canal de origen, ModernBERT | 0,67 | 0,021 | Hugging Face (v0.1) |
+| Prompt Guard 2 86M (Meta) | 86M | no disponible en la información | Clasificador de inyecciones y jailbreaks | 0,50 | 0,047 | Hugging Face |
+| PIGuard | 184M | no disponible en la información | Clasificador de inyecciones | 0,75 | 0,115 | Hugging Face |
+| ProtectAI v2 | 184M | no disponible en la información | Clasificador DeBERTa-v3 | 0,82 | 0,434 | Hugging Face |
+| deepset deberta-v3-base-injection | 184M | no disponible en la información | Clasificador DeBERTa-v3 | 1,00 | 0,714 | Hugging Face |
 
 El modelo de CobuildX es el más pequeño de la comparativa junto con Prompt Guard 2 22M y ofrece la mejor puntuación en CBX Benchmark y BrowseSafe-bench entre los modelos evaluados, con una tasa de falsos positivos en NotInject (0,021) inferior a la de Prompt Guard 2 86M (0,047), PIGuard (0,115) y ProtectAI v2 (0,434). En InjecAgent queda por debajo de PIGuard (0,75), ProtectAI v2 (0,82) y deepset (1,00), aunque este último con un 71,4% de textos benignos marcados. Las cifras de deepset y PIGuard en sus propios benchmarks están marcadas por el autor como posiblemente contaminadas.
 
@@ -100,7 +100,7 @@ El modelo de CobuildX es el más pequeño de la comparativa junto con Prompt Gua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-68M
+- Modelo en Hugging Face: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-68M
 - Variante 17M: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-17M
 - Variante 32M: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-32M
 - Modelo base Ettin: https://huggingface.co/jhu-clsp/ettin-encoder-68m

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hw2-generation-2024 es un repositorio publicado por el usuario Loganda-vis4606 en HuggingFace que contiene una implementación propia de un transformer minúsculo orientado a generación de texto. No se trata de un modelo entrenado ni de un producto listo para producción: el propio autor lo describe como un artefacto de código transparente con pruebas de humo reproducibles, y el checkpoint incluido (`model.safetensors`) se presenta explícitamente como una inicialización válida para pruebas, no como un modelo con resultados de referencia.
+hw2-generation-2024 es un repositorio publicado por el usuario Loganda-vis4606 en Hugging Face que contiene una implementación propia de un transformer minúsculo orientado a generación de texto. No se trata de un modelo entrenado ni de un producto listo para producción: el propio autor lo describe como un artefacto de código transparente con pruebas de humo reproducibles, y el checkpoint incluido (`model.safetensors`) se presenta explícitamente como una inicialización válida para pruebas, no como un modelo con resultados de referencia.
 
 El tamaño real declarado en los safetensors es de 49.600 parámetros totales, lo que lo sitúa tres órdenes de magnitud por debajo incluso de los modelos pequeños de propósito general. La arquitectura se etiqueta internamente como "Tiny Transformer" con escala "huge" en su configuración, atención dilatada, fusión de bajo rango, activación swish y normalización por batchnorm. La receta de experimento por defecto usa el optimizador LAMB con un schedule coseno.
 
@@ -27,7 +27,7 @@ Su relevancia es exclusivamente didáctica y de ingeniería: sirve como esquelet
 | Optimizador por defecto | LAMB con schedule coseno |
 | Descargas | 0 |
 | Me gusta | 0 |
-| Fecha de creacion | 2026-09-14T10:15:55Z (según metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-14T10:15:55Z (según metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-14T10:16:01Z |
 | Tamano del repositorio | 0,0 GB |
 
@@ -103,7 +103,7 @@ No se han encontrado modelos comparables en la informacion disponible. La busque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Loganda-vis4606/hw2-generation-2024
+- Modelo en Hugging Face: https://huggingface.co/Loganda-vis4606/hw2-generation-2024
 - Archivos incluidos en el repositorio: `model.py` (artefacto principal, con ejemplo de prueba de humo en su bloque `__main__`), `README.md` (documentacion), `config.json` (configuracion de arquitectura), `training_args.json` (ajustes de experimento por defecto), `model.safetensors` (checkpoint de inicializacion).
 - Paper, blog, repositorio de codigo adicional o demo: no disponible.
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente paginas corporativas de Microsoft sin relacion con el repositorio.

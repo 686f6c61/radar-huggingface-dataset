@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SLM-30M-QA es una version afinada para respuesta a preguntas (question answering) de slm-30m-base, un modelo GPT decoder-only de aproximadamente 30 millones de parametros construido desde cero por el autor AkkiMaharaj. El modelo se distribuye bajo licencia MIT, esta orientado exclusivamente al idioma ingles y se publica como un artefacto de aprendizaje personal, no como un sistema listo para produccion. Su pipeline declarado en HuggingFace es question-answering y el repositorio ocupa 0,4 GB.
+SLM-30M-QA es una version afinada para respuesta a preguntas (question answering) de slm-30m-base, un modelo GPT decoder-only de aproximadamente 30 millones de parametros construido desde cero por el autor AkkiMaharaj. El modelo se distribuye bajo licencia MIT, esta orientado exclusivamente al idioma ingles y se publica como un artefacto de aprendizaje personal, no como un sistema listo para produccion. Su pipeline declarado en Hugging Face es question-answering y el repositorio ocupa 0,4 GB.
 
 El problema que aborda es acotado y metodologico: el autor lo utiliza para comprender de punta a punta el proceso de ajuste por instrucciones (instruction fine-tuning), incluyendo la mezcla de datasets, el enmascaramiento de la funcion de perdida (loss masking) y la evaluacion mas alla de la simple validation loss. En ese sentido, la model card documenta correcciones tecnicas concretas, como un bug de alineacion de objetivos provocado por pesos de embedding y salida atados (tied weights) que permitia al modelo aprender un atajo trivial de copia del token actual, resuelto mediante un desplazamiento correcto del objetivo next-token junto con mascara de prompt a -100.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Tipo | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AkkiMaharaj/slm-30M-QA | ~30M | GPT decoder-only, afinado para QA | no disponible | MIT | Instruction-tuned (QA) | HuggingFace, pesos `.pt` |
-| StentorLabs/Stentor-30M | ~30,4M | Llama, entrenamiento en precision mixta | no disponible | no disponible | Base next-token (no chat) | HuggingFace |
+| AkkiMaharaj/slm-30M-QA | ~30M | GPT decoder-only, afinado para QA | no disponible | MIT | Instruction-tuned (QA) | Hugging Face, pesos `.pt` |
+| StentorLabs/Stentor-30M | ~30,4M | Llama, entrenamiento en precision mixta | no disponible | no disponible | Base next-token (no chat) | Hugging Face |
 | Otros modelos comparables de ~30M | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa de rendimiento con alternativas no es posible porque no se han publicado benchmarks de slm-30M-QA. Frente a Stentor-30M, la diferencia principal es el proposito: slm-30M-QA esta ajustado para responder preguntas, mientras que Stentor-30M se define explicitamente como un predictor base de siguiente token y no como asistente conversacional.
@@ -92,7 +92,7 @@ La comparacion directa de rendimiento con alternativas no es posible porque no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AkkiMaharaj/slm-30m-qa
+- Modelo en Hugging Face: https://huggingface.co/AkkiMaharaj/slm-30m-qa
 - Modelo base: https://huggingface.co/AkkiMaharaj/slm-30m-base
 - StentorLabs/Stentor-30M (modelo comparable): https://huggingface.co/StentorLabs/Stentor-30M
 - Hugging Face: https://huggingface.co/

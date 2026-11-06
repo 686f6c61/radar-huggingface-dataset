@@ -89,9 +89,9 @@ No se dispone de datos de parametros, contexto, licencia ni disponibilidad de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yijuchen/DeepSeek-V4.1-Flash-FP4PTPC
+- Repositorio en Hugging Face: https://huggingface.co/yijuchen/DeepSeek-V4.1-Flash-FP4PTPC
 - Informe tecnico referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion oficial de DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion oficial de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Cuenta de DeepSeek AI en Twitter/X: https://twitter.com/deepseek_ai

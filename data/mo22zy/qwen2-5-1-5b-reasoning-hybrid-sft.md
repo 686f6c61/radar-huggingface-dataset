@@ -78,8 +78,8 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- [HuggingFace - mo22zy/Qwen2.5-1.5B-Reasoning-Hybrid-SFT](https://huggingface.co/mo22zy/Qwen2.5-1.5B-Reasoning-Hybrid-SFT)
-- [Qwen2.5-1.5B base en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-1.5B)
+- [Hugging Face - mo22zy/Qwen2.5-1.5B-Reasoning-Hybrid-SFT](https://huggingface.co/mo22zy/Qwen2.5-1.5B-Reasoning-Hybrid-SFT)
+- [Qwen2.5-1.5B base en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-1.5B)
 - [Tutorial: Turning a Non-Reasoning Model into a Reasoning Model (GitHub)](https://github.com/Moaz-Eldegwy/Reasoning-Model-Tutorial)
 - [Tutorial en pagina personal](https://moaz-eldegwy.github.io/Reasoning-Model-Tutorial/)
 - [Articulo sobre SFT y GRPO para Qwen2.5-1.5B](https://www.zingnex.cn/en/forum/thread/qwen2-5-1-5bsftgrpo)

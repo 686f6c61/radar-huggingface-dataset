@@ -4,7 +4,7 @@
 
 `flashrt/fp4-gemm` no es un modelo de lenguaje ni un sistema de IA generativa, sino un paquete de kernels de multiplicación de matrices (GEMM) de bajo nivel diseñado para acelerar la inferencia de modelos cuantizados en formato FP4 (E2M1) sobre GPUs NVIDIA Blackwell. Lo desarrolla el autor "flashrt" y se distribuye como un repositorio de código fuente Python/CUDA con una API que permite cuantizar tensores a FP4, gestionar escalas CUTLASS SFA/SFB y ejecutar GEMMs con salida en BF16, incluyendo epilogues fusionados como bias, GELU y residual.
 
-El paquete está pensado para integrarse en runtimes de transformers o difusores de baja precisión, y se menciona explícitamente su uso en el pipeline "GROOT N1.7" para la GPU Jetson AGX Thor (sm_110a). El repositorio ocupa 0,3 GB e incluye tests y benchmarks. No se proporciona información sobre licencia, idiomas ni pipeline de HuggingFace, y no hay datos de parámetros de modelo porque no aplican.
+El paquete está pensado para integrarse en runtimes de transformers o difusores de baja precisión, y se menciona explícitamente su uso en el pipeline "GROOT N1.7" para la GPU Jetson AGX Thor (sm_110a). El repositorio ocupa 0,3 GB e incluye tests y benchmarks. No se proporciona información sobre licencia, idiomas ni pipeline de Hugging Face, y no hay datos de parámetros de modelo porque no aplican.
 
 ## Especificaciones tecnicas
 
@@ -68,9 +68,9 @@ No disponible. Este paquete es un conjunto de kernels de bajo nivel y no hay inf
 - La licencia no está especificada en la información disponible, por lo que no se puede garantizar su uso comercial sin consultar al autor.
 - Los kernels están validados para formas específicas (por ejemplo, `(41,4608,1536)`); otras formas pueden no estar soportadas o pueden requerir selección manual de variante.
 - La cuantización FP4 puede degradar la calidad del modelo en comparación con precisiones más altas; el paquete no incluye evaluación de calidad.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto reciente o poco adoptado.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto reciente o poco adoptado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flashrt/fp4-gemm
+- Repositorio Hugging Face: https://huggingface.co/flashrt/fp4-gemm
 - No se proporcionan otros enlaces (papers, blogs, repos) en la información disponible.

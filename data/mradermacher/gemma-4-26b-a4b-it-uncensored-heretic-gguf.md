@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks para establecer comparaciones cuantitativas
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-uncensored-heretic-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-uncensored-heretic-GGUF
 - Modelo base: https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-uncensored-heretic
 - Variante imatrix (i1-GGUF): https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-uncensored-heretic-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#gemma-4-26B-A4B-it-uncensored-heretic-GGUF

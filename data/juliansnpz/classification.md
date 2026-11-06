@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JULIANSNPZ/classification es un prototipo de investigación publicado en HuggingFace por el usuario JULIANSNPZ, que documenta una implementación propia de una arquitectura denominada "Coca" orientada a tareas de clasificación. El repositorio se presenta explícitamente como un andamiaje experimental: incluye el script `finetune.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint `model.safetensors` que el propio autor describe como inicialización válida para pruebas de humo, no como un modelo entrenado.
+JULIANSNPZ/classification es un prototipo de investigación publicado en Hugging Face por el usuario JULIANSNPZ, que documenta una implementación propia de una arquitectura denominada "Coca" orientada a tareas de clasificación. El repositorio se presenta explícitamente como un andamiaje experimental: incluye el script `finetune.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint `model.safetensors` que el propio autor describe como inicialización válida para pruebas de humo, no como un modelo entrenado.
 
 El dato más relevante es su tamaño real: 33.088 parámetros totales según el fichero safetensors, lo que sitúa al modelo en el rango de unos 0,033 millones de parámetros. Es, por tanto, un esqueleto de código y una configuración de referencia, no un modelo con capacidad generativa o de razonamiento aprovechable en producción. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, con fecha de creación y actualización del 15 de septiembre de 2026.
 
@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JULIANSNPZ/classification | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas |
+| JULIANSNPZ/classification | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,8 +92,8 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JULIANSNPZ/classification
+- Modelo en Hugging Face: https://huggingface.co/JULIANSNPZ/classification
 - Paper: no disponible
 - Blog o documentación adicional del autor: no disponible
-- Repositorio de código independiente: no disponible (el script `finetune.py` se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de código independiente: no disponible (el script `finetune.py` se distribuye dentro del propio repositorio de Hugging Face)
 - Demos: no disponible

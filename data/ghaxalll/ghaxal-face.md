@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ghaxalll/ghaxal-face
+- Repositorio Hugging Face: https://huggingface.co/Ghaxalll/ghaxal-face
 - Documentacion de LoRA en diffusers: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters
 - Script de entrenamiento DreamBooth para Krea 2: https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/README_krea2.md
 - Sitio de DreamBooth: https://dreambooth.github.io/

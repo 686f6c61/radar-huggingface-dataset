@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM3 es un modelo de lenguaje publicado por ZETIC-ai en HuggingFace bajo una licencia propietaria denominada `lfm1.0`. El repositorio, de 60,7 GB, está etiquetado con `coreml`, lo que indica que los pesos distribuidos están empaquetados en formato Core ML, orientado a la inferencia en dispositivos Apple (iPhone, iPad y Mac con Neural Engine). El acceso es restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los ficheros.
+LFM3 es un modelo de lenguaje publicado por ZETIC-ai en Hugging Face bajo una licencia propietaria denominada `lfm1.0`. El repositorio, de 60,7 GB, está etiquetado con `coreml`, lo que indica que los pesos distribuidos están empaquetados en formato Core ML, orientado a la inferencia en dispositivos Apple (iPhone, iPad y Mac con Neural Engine). El acceso es restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los ficheros.
 
-La informacion publica disponible en la ficha de HuggingFace es muy limitada: no se especifican parametros, longitud de contexto, idiomas soportados ni pipeline. El tamano del repositorio (60,7 GB) sugiere un modelo de gran porte, pero no permite inferir de forma fiable el numero de parametros, ya que el empaquetado Core ML puede incluir multiples variantes, pesos en precision completa y artefactos auxiliares.
+La informacion publica disponible en la ficha de Hugging Face es muy limitada: no se especifican parametros, longitud de contexto, idiomas soportados ni pipeline. El tamano del repositorio (60,7 GB) sugiere un modelo de gran porte, pero no permite inferir de forma fiable el numero de parametros, ya que el empaquetado Core ML puede incluir multiples variantes, pesos en precision completa y artefactos auxiliares.
 
 Por tanto, esta ficha recoge exclusivamente los datos verificables del repositorio y marca como "no disponible" cualquier especificacion no confirmada. Cualquier evaluacion de rendimiento, capacidades o idoneidad para produccion requerira consultar la documentacion oficial de ZETIC-ai una vez obtenido el acceso.
 
@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia propietaria `lfm1.0`: las condiciones de uso comercial, redistribucion y modificacion no estan detalladas en la informacion disponible y deben consultarse antes de cualquier uso en produccion.
 - Ausencia de documentacion tecnica publica: no hay datos verificables sobre arquitectura, contexto, idiomas ni rendimiento, lo que impide una evaluacion rigurosa.
 - Formato limitado a Core ML: el despliegue fuera del ecosistema Apple no esta confirmado y probablemente requiera conversion adicional.
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZETIC-ai/LFM3
+- Repositorio Hugging Face: https://huggingface.co/ZETIC-ai/LFM3
 - Documentacion oficial de ZETIC-ai: no disponible en la informacion proporcionada.
 - Paper o blog tecnico: no disponible en la informacion proporcionada.
 - Repositorio de codigo: no disponible en la informacion proporcionada.

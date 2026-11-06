@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gaidar12345/crab-1` está alojado en HuggingFace bajo el identificador `gaidar12345/crab-1`, publicado por el usuario `gaidar12345` con licencia Apache-2.0. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción, arquitectura, parámetros, idiomas ni pipeline asociado. El modelo no registra descargas ni valoraciones, y fue creado el 1 de septiembre de 2026. No se ha encontrado documentación técnica, papers ni repositorios vinculados a este identificador en la búsqueda web realizada. Por tanto, no es posible determinar qué tipo de modelo es, su propósito ni sus capacidades. Se recomienda precaución antes de considerar su uso, ya que la ausencia de metadatos y de comunidad sugiere que podría tratarse de un experimento personal o de un artefacto sin validación.
+El modelo `gaidar12345/crab-1` está alojado en Hugging Face bajo el identificador `gaidar12345/crab-1`, publicado por el usuario `gaidar12345` con licencia Apache-2.0. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción, arquitectura, parámetros, idiomas ni pipeline asociado. El modelo no registra descargas ni valoraciones, y fue creado el 1 de septiembre de 2026. No se ha encontrado documentación técnica, papers ni repositorios vinculados a este identificador en la búsqueda web realizada. Por tanto, no es posible determinar qué tipo de modelo es, su propósito ni sus capacidades. Se recomienda precaución antes de considerar su uso, ya que la ausencia de metadatos y de comunidad sugiere que podría tratarse de un experimento personal o de un artefacto sin validación.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo, los da
 
 ## Capacidades
 
-No se han documentado capacidades específicas para este modelo. No hay información sobre generación de texto, razonamiento, código, matemáticas, visión, tool calling, soporte para agentes, capacidades multilingües ni modos especiales de funcionamiento. La ausencia de pipeline en HuggingFace refuerza la falta de definición funcional.
+No se han documentado capacidades específicas para este modelo. No hay información sobre generación de texto, razonamiento, código, matemáticas, visión, tool calling, soporte para agentes, capacidades multilingües ni modos especiales de funcionamiento. La ausencia de pipeline en Hugging Face refuerza la falta de definición funcional.
 
 ## Casos de uso
 
@@ -51,6 +51,6 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- [HuggingFace - gaidar12345/crab-1](https://huggingface.co/gaidar12345/crab-1)
+- [Hugging Face - gaidar12345/crab-1](https://huggingface.co/gaidar12345/crab-1)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) asociados a este modelo.

@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Precisión / formato | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlx-community/sapiens2-pose-0.4b-bf16 | 425.677.380 | bf16, safetensors (MLX) | Pose top-down, 308 keypoints | sapiens2-license | HuggingFace, ejecutable con mlx-vlm en Apple Silicon |
-| facebook/sapiens2-pose-0.4b | No disponible en la información (mismo modelo base) | float32, PyTorch (Checkpoint de aproximadamente el doble de tamaño) | Pose top-down, 308 keypoints | sapiens2-license | HuggingFace, orientado a PyTorch/CUDA |
+| mlx-community/sapiens2-pose-0.4b-bf16 | 425.677.380 | bf16, safetensors (MLX) | Pose top-down, 308 keypoints | sapiens2-license | Hugging Face, ejecutable con mlx-vlm en Apple Silicon |
+| facebook/sapiens2-pose-0.4b | No disponible en la información (mismo modelo base) | float32, PyTorch (Checkpoint de aproximadamente el doble de tamaño) | Pose top-down, 308 keypoints | sapiens2-license | Hugging Face, orientado a PyTorch/CUDA |
 | Otros estimadores de pose de tamaño comparable | No disponible | No disponible | Pose humana | No disponible | No disponible |
 
 No se dispone de datos de rendimiento de ninguno de ellos en la información proporcionada, por lo que la comparación se limita a parámetros, precisión, tarea, licencia y disponibilidad.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de ninguno de ellos en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/sapiens2-pose-0.4b-bf16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/sapiens2-pose-0.4b-bf16
 - Modelo base: https://huggingface.co/facebook/sapiens2-pose-0.4b
 - Licencia de Sapiens2: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
 - Framework MLX: https://mlx-framework.org/

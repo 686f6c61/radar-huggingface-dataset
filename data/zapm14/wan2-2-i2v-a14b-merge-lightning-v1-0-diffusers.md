@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Wan2.2-I2V-A14B-Merge-Lightning-V1.0-Diffusers es un modelo de generacion de video a partir de imagen (image-to-video) publicado por el usuario Zapm14 en HuggingFace. No se trata de un entrenamiento desde cero, sino de un merge: fusiona los pesos del modelo Wan-AI/Wan2.2-I2V-A14B-Diffusers con el LoRA de destilacion Wan2.2-Lightning v1 (variante Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1) de lightx2v. El objetivo es obtener en un unico checkpoint un generador de video que funcione en 4 pasos de denoising con guidance scale 1.0, sin necesidad de cargar el LoRA por separado.
+Wan2.2-I2V-A14B-Merge-Lightning-V1.0-Diffusers es un modelo de generacion de video a partir de imagen (image-to-video) publicado por el usuario Zapm14 en Hugging Face. No se trata de un entrenamiento desde cero, sino de un merge: fusiona los pesos del modelo Wan-AI/Wan2.2-I2V-A14B-Diffusers con el LoRA de destilacion Wan2.2-Lightning v1 (variante Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1) de lightx2v. El objetivo es obtener en un unico checkpoint un generador de video que funcione en 4 pasos de denoising con guidance scale 1.0, sin necesidad de cargar el LoRA por separado.
 
 El modelo conserva la arquitectura de difusion de Wan 2.2 para image-to-video y los pesos safetensors suman 14.288.901.184 parametros (unos 14,3 mil millones), con un repositorio de 126,2 GB. Se distribuye en formato diffusers y se ejecuta mediante la clase WanImageToVideoPipeline; tambien se documenta su uso con el runner FastDM. La relevancia practica esta en la reduccion del coste de inferencia: pasar de las decenas de pasos habituales en modelos de video a 4 pasos abarata mucho la generacion, a cambio de la perdida de calidad asociada a la destilacion agresiva.
 
-El modelo se publica bajo licencia MIT, con 0 descargas y 0 likes en el momento de la consulta, sin model card detallada mas alla de los ejemplos de ejecucion y sin resultados de evaluacion. La busqueda web realizada no devolvio ninguna fuente tecnica relacionada con el modelo, por lo que toda la informacion de esta ficha procede de los metadatos de HuggingFace y de la model card del autor.
+El modelo se publica bajo licencia MIT, con 0 descargas y 0 likes en el momento de la consulta, sin model card detallada mas alla de los ejemplos de ejecucion y sin resultados de evaluacion. La busqueda web realizada no devolvio ninguna fuente tecnica relacionada con el modelo, por lo que toda la informacion de esta ficha procede de los metadatos de Hugging Face y de la model card del autor.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ Todas las cifras de esta seccion son estimaciones derivadas del recuento de para
 - En fp8: el transformer baja a unos 14,3 GB, y el pipeline completo queda en el entorno de 25-30 GB, segun el tamano del codificador de texto y si se aplica offload secuencial a CPU.
 - GPU recomendadas para bfloat16 sin offload: A100 80 GB, H100 80 GB o similares. Con 48 GB (A6000, L40S) puede ser necesario offload parcial del codificador de texto.
 - GPU de consumo: una RTX 4090 o RTX 5090 (24 y 32 GB) no permite el pipeline completo en bfloat16 sin offload; con fp8 y offload secuencial es la unica via viable, a costa de latencia. En GPUs de 16 GB o menos no se recomienda.
-- El repositorio ocupa 126,2 GB, por lo que hay que prever espacio en disco suficiente para la descarga completa, ademas de la cache de HuggingFace.
+- El repositorio ocupa 126,2 GB, por lo que hay que prever espacio en disco suficiente para la descarga completa, ademas de la cache de Hugging Face.
 - Opciones de despliegue documentadas: diffusers (`WanImageToVideoPipeline`) y FastDM (repositorio de KE-AI-ENG, con soporte de `--use-fp8`). No hay instrucciones para vLLM, TGI, Ollama, llama.cpp ni ComfyUI en la informacion proporcionada.
 - Latencia y throughput: no disponible. El autor solo indica que la inferencia se realiza en 4 pasos, sin publicar tiempos por clip ni mediciones de fps efectivos.
 
@@ -72,9 +72,9 @@ Todas las cifras de esta seccion son estimaciones derivadas del recuento de para
 
 | Modelo | Parametros | Configuracion de inferencia | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.2-I2V-A14B-Merge-Lightning V1.0 (este modelo) | 14,29 mil millones (safetensors del repo) | 480x832, 81 fotogramas, 16 fps, guidance 1.0 | 4 | MIT (segun el autor) | HuggingFace, 0 descargas y 0 likes |
-| Wan-AI/Wan2.2-I2V-A14B-Diffusers (modelo base) | no disponible en la informacion proporcionada | configurables; el autor no detalla los valores por defecto | no disponible (superior a 4) | no disponible | HuggingFace, ampliamente distribuido |
-| lightx2v/Wan2.2-Lightning (LoRA de destilacion, rank 64) | LoRA de bajo rango sobre el base | se aplica sobre el modelo base | 4 | no disponible | HuggingFace |
+| Wan2.2-I2V-A14B-Merge-Lightning V1.0 (este modelo) | 14,29 mil millones (safetensors del repo) | 480x832, 81 fotogramas, 16 fps, guidance 1.0 | 4 | MIT (segun el autor) | Hugging Face, 0 descargas y 0 likes |
+| Wan-AI/Wan2.2-I2V-A14B-Diffusers (modelo base) | no disponible en la informacion proporcionada | configurables; el autor no detalla los valores por defecto | no disponible (superior a 4) | no disponible | Hugging Face, ampliamente distribuido |
+| lightx2v/Wan2.2-Lightning (LoRA de destilacion, rank 64) | LoRA de bajo rango sobre el base | se aplica sobre el modelo base | 4 | no disponible | Hugging Face |
 | Alternativas de terceros (LTX-Video, CogVideoX, HunyuanVideo) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada, por lo que la comparativa se limita a parametros, configuracion de inferencia, licencia y disponibilidad.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Zapm14/Wan2.2-I2V-A14B-Merge-Lightning-V1.0-Diffusers
+- Pagina del modelo en Hugging Face: https://huggingface.co/Zapm14/Wan2.2-I2V-A14B-Merge-Lightning-V1.0-Diffusers
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B-Diffusers
 - LoRA de destilacion (Wan2.2-Lightning): https://huggingface.co/lightx2v/Wan2.2-Lightning
 - LoRA especifico empleado en el merge (4 steps, rank 64, Seko V1): https://huggingface.co/lightx2v/Wan2.2-Lightning/tree/main/Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1

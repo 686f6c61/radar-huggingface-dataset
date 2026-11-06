@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B (este) | 27B (15,2B cuantizado) | 262K nativo, 1M extensible | Apache 2.0 | Abierto, HuggingFace |
-| Qwen3.6-27B | 27B | No disponible | Apache 2.0 | Abierto, HuggingFace |
+| Qwen3.8-27B (este) | 27B (15,2B cuantizado) | 262K nativo, 1M extensible | Apache 2.0 | Abierto, Hugging Face |
+| Qwen3.6-27B | 27B | No disponible | Apache 2.0 | Abierto, Hugging Face |
 | Qwen3.7-Plus | No disponible (API) | No disponible | Propietaria (API) | API gestionada |
 | Muse Glimmer-30B | 30B | No disponible | No disponible | No disponible |
 | Opus4.6 Max | No disponible (API) | No disponible | Propietaria (API) | API gestionada |
@@ -82,8 +82,8 @@ La comparativa se basa en los modelos listados en la tabla de benchmarks de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion NVFP4: https://huggingface.co/SidneyAnderson/Qwen3.8-27B-NVFP4
-- Repositorio HuggingFace del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face de la cuantizacion NVFP4: https://huggingface.co/SidneyAnderson/Qwen3.8-27B-NVFP4
+- Repositorio Hugging Face del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Recetas de despliegue con vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Guia de ejecucion local (Substack): https://linas.substack.com/p/qwen3-8-27b-local-guide

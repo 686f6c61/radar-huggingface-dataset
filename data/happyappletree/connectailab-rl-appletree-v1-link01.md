@@ -4,7 +4,7 @@
 
 LINK-01 es un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario happyappletree en el marco del proyecto CONNECT AI LAB / AI CITY BUILDERS. No es un modelo de lenguaje de propósito general, sino un modelo de decisión especializado: recibe en texto el estado de un robot simulado (distancia al objetivo, dirección, sensores de distancia, velocidad y acción previa) y devuelve una única letra que corresponde a la acción de caminar durante los siguientes 0,5 segundos. El objetivo declarado es la evitación de obstáculos en el robot LINK-01.
 
-El modelo se entrena en dos fases: primero un ajuste supervisado (LoRA) sobre pares observación-respuesta generados por una política PPO entrenada en un entorno web de aprendizaje por refuerzo, y después una fase de optimización por refuerzo con restricción KL para corregir decisiones subóptimas. El pipeline declarado en HuggingFace es `reinforcement-learning`, y los tags incluyen PPO, robótica, toma de decisiones y deep reinforcement learning.
+El modelo se entrena en dos fases: primero un ajuste supervisado (LoRA) sobre pares observación-respuesta generados por una política PPO entrenada en un entorno web de aprendizaje por refuerzo, y después una fase de optimización por refuerzo con restricción KL para corregir decisiones subóptimas. El pipeline declarado en Hugging Face es `reinforcement-learning`, y los tags incluyen PPO, robótica, toma de decisiones y deep reinforcement learning.
 
 Su relevancia es acotada y experimental: se trata de un modelo de 0,8 mil millones de parámetros (adaptador) para investigación y educación en robótica simulada, con un rendimiento modesto (55 % de éxito en 20 episodios de evaluación) y una única tarea. No está pensado para uso en producción ni para robótica real sin una validación adicional en el robot y el entorno concretos.
 
@@ -73,9 +73,9 @@ Nota: la evaluación de caminata se realizó con una aproximación 2D basada en 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-appletree-v1-link01 | Adaptador sobre 0,8 B | No disponible | Decisión robótica (evitación de obstáculos) | Apache 2.0 | HuggingFace (0 descargas) |
+| connectailab-rl-appletree-v1-link01 | Adaptador sobre 0,8 B | No disponible | Decisión robótica (evitación de obstáculos) | Apache 2.0 | Hugging Face (0 descargas) |
 | Política PPO docente (brain.json) | No disponible | No aplica | Misma tarea | No especificada | Incluida en el proyecto CONNECT TYCOON |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | Lenguaje general | No especificada en esta ficha | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | Lenguaje general | No especificada en esta ficha | Hugging Face |
 
 No se dispone de comparaciones con otros modelos de decisión robótica destilados en LLM en la información proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de comparaciones con otros modelos de decisión robótica destilad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/happyappletree/connectailab-rl-appletree-v1-link01
+- Hugging Face: https://huggingface.co/happyappletree/connectailab-rl-appletree-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

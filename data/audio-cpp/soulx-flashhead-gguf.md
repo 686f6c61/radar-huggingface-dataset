@@ -75,8 +75,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| SoulX-FlashHead Lite GGUF (este) | 2.040.429.105 | no disponible | Apache 2.0 | GGUF | HuggingFace (audio-cpp) |
-| SoulX-FlashHead-1_3B (upstream) | no disponible | no disponible | no disponible | no disponible | HuggingFace (Soul-AILab) |
+| SoulX-FlashHead Lite GGUF (este) | 2.040.429.105 | no disponible | Apache 2.0 | GGUF | Hugging Face (audio-cpp) |
+| SoulX-FlashHead-1_3B (upstream) | no disponible | no disponible | no disponible | no disponible | Hugging Face (Soul-AILab) |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/audio-cpp/SoulX-FlashHead-GGUF
+- Repositorio Hugging Face: https://huggingface.co/audio-cpp/SoulX-FlashHead-GGUF
 - Modelo upstream: https://huggingface.co/Soul-AILab/SoulX-FlashHead-1_3B/tree/5fbd2e44ba08ab2deb28bd55cff2c15523e51ba5
 - Runtime audio.cpp: https://github.com/0xShug0/audio.cpp
 - Documentación de uso y conversión: https://github.com/0xShug0/audio.cpp/blob/main/docs/models/soulx_flashhead.md

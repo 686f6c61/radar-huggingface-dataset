@@ -92,7 +92,7 @@ No hay datos de rendimiento comparado (MMLU, HumanEval, GSM8K) en la informació
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/EsteefAi/gemma-3-4b-it-abliterated-v2-GGUF-mirror
+- Repositorio espejo en Hugging Face: https://huggingface.co/EsteefAi/gemma-3-4b-it-abliterated-v2-GGUF-mirror
 - Repositorio GGUF original de mlabonne: https://huggingface.co/mlabonne/gemma-3-4b-it-abliterated-v2-GGUF
 - Modelo abliterated en safetensors (base del GGUF): https://huggingface.co/mlabonne/gemma-3-4b-it-abliterated-v2
 - Versión abliterated v1 (GGUF): https://huggingface.co/mlabonne/gemma-3-4b-it-abliterated-GGUF

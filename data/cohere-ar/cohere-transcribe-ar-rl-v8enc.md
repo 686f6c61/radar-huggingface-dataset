@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Cohere-AR/cohere-transcribe-ar-rl-v8enc es un modelo de reconocimiento automático del habla (ASR) publicado por la organización Cohere-AR en HuggingFace. Se distribuye con la librería transformers, pesos en safetensors y la arquitectura propietaria `cohere_asr`, lo que indica una integración específica en el ecosistema transformers más que un transformer estándar de tipo encoder-decoder genérico. El modelo está especializado en árabe e inglés, con soporte declarado para code-switching y dominio de telefonía.
+Cohere-AR/cohere-transcribe-ar-rl-v8enc es un modelo de reconocimiento automático del habla (ASR) publicado por la organización Cohere-AR en Hugging Face. Se distribuye con la librería transformers, pesos en safetensors y la arquitectura propietaria `cohere_asr`, lo que indica una integración específica en el ecosistema transformers más que un transformer estándar de tipo encoder-decoder genérico. El modelo está especializado en árabe e inglés, con soporte declarado para code-switching y dominio de telefonía.
 
 Con 2.065.770.752 parámetros totales (aproximadamente 2,07 mil millones) y un tamaño de repositorio de 4,1 GB, se sitúa en la gama media de modelos ASR. Deriva de un checkpoint previo de ajuste supervisado (`cohere-transcribe-ar-sft-v8ns`) y el sufijo `rl` del identificador sugiere una etapa adicional de aprendizaje por refuerzo, aunque no se dispone de documentación que lo confirme.
 
-El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga. No se han publicado resultados de benchmarks, ficha de modelo ni detalles de licencia en la información disponible, por lo que esta ficha se limita a los datos verificables del repositorio.
+El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga. No se han publicado resultados de benchmarks, ficha de modelo ni detalles de licencia en la información disponible, por lo que esta ficha se limita a los datos verificables del repositorio.
 
 ## Especificaciones técnicas
 
@@ -55,14 +55,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en fp16/bf16: aproximadamente 4,2 GB para pesos; con overhead de inferencia, entre 6 y 8 GB según el tamaño del lote y la longitud del audio.
 - GPU recomendadas: NVIDIA A10G, L4, A100 o H100 para despliegues en producción; RTX 4090 y RTX 3090 son suficientes para inferencia en fp16.
 - Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más de VRAM en fp16 (por ejemplo, RTX 3060 Ti, RTX 4060 Ti, RTX 3070). En cuantización int8 el requisito bajaría a unos 2-3 GB, aunque no se documentan formatos de cuantización disponibles.
-- Opciones de despliegue: transformers con la arquitectura `cohere_asr`; el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: transformers con la arquitectura `cohere_asr`; el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cohere-AR/cohere-transcribe-ar-rl-v8enc | 2,07 mil millones | ar, en (code-switching) | no disponible | no disponible | Gated en HuggingFace |
+| Cohere-AR/cohere-transcribe-ar-rl-v8enc | 2,07 mil millones | ar, en (code-switching) | no disponible | no disponible | Gated en Hugging Face |
 | Whisper large-v3 (OpenAI) | 1,55 mil millones | multilingüe (99 idiomas) | 30 s por ventana | MIT | Abierto |
 | MMS (Meta) | ~1 mil millones | más de 1.100 idiomas | no disponible | CC-BY-NC 4.0 | Abierto |
 | SeamlessM4T v2 (Meta) | ~2,3 mil millones | multilingüe | no disponible | CC-BY-NC 4.0 | Abierto |
@@ -71,7 +71,7 @@ La comparación cuantitativa de rendimiento no es posible porque no se han publi
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace; no es descargable de forma anónima.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face; no es descargable de forma anónima.
 - Licencia no disponible: no se puede confirmar si el uso comercial está permitido. Es imprescindible verificar las condiciones del gate antes de integrarlo en producción.
 - Idiomas limitados a árabe e inglés; no se declara cobertura de dialectos árabes específicos ni de otras lenguas.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de WER/CER frente a alternativas, lo que dificulta la evaluación previa a adopción.
@@ -82,7 +82,7 @@ La comparación cuantitativa de rendimiento no es posible porque no se han publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v8enc
+- Modelo en Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v8enc
 - Modelo base: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v8ns
 - Sitio corporativo de Cohere: https://cohere.com/
 - Cohere en Wikipedia: https://en.wikipedia.org/wiki/Cohere

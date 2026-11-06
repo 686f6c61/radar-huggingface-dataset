@@ -85,7 +85,7 @@ La comparación directa con modelos clínicos especializados no está disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samarth101011/clinixvault-summarizer-qlora
+- Modelo en Hugging Face: https://huggingface.co/Samarth101011/clinixvault-summarizer-qlora
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio PEFT: https://github.com/huggingface/peft
 - Documentación de Transformers: https://huggingface.co/docs/transformers

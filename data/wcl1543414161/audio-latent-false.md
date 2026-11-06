@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio wcl1543414161/Audio-Latent-False es un modelo publicado en HuggingFace por el usuario wcl1543414161 el 2 de octubre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card no contiene mas informacion que la declaracion de licencia Apache 2.0, sin ningun campo de metadatos adicional (ni pipeline, ni idiomas, ni descripcion de arquitectura o entrenamiento).
+El repositorio wcl1543414161/Audio-Latent-False es un modelo publicado en Hugging Face por el usuario wcl1543414161 el 2 de octubre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card no contiene mas informacion que la declaracion de licencia Apache 2.0, sin ningun campo de metadatos adicional (ni pipeline, ni idiomas, ni descripcion de arquitectura o entrenamiento).
 
 Por tanto, no es posible confirmar que tipo de modelo es, que arquitectura utiliza, cuantos parametros tiene ni con que datos fue entrenado. El propio identificador del repositorio, que incluye los terminos "Audio" y "Latent", sugiere un posible trabajo relacionado con representaciones latentes de audio, y el sufijo "False" podria indicar una variante de ablacion, un caso negativo de un experimento comparativo o simplemente una convencion de nombrado del autor; ninguna de estas hipotesis puede verificarse con la informacion disponible.
 
@@ -74,5 +74,5 @@ No disponible. El repositorio no documenta arquitectura, tamano ni tarea objetiv
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wcl1543414161/Audio-Latent-False
+- Hugging Face: https://huggingface.co/wcl1543414161/Audio-Latent-False
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

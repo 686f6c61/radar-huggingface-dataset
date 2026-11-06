@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MrDuarte/smolvla-WarehousePick-v0_yolo | 450.046.176 | No aplica (observaciones) | Sin evaluacion publicada | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| MrDuarte/smolvla-WarehousePick-v0_yolo | 450.046.176 | No aplica (observaciones) | Sin evaluacion publicada | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros modelos VLA de tamano similar | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento, parametros o contexto de alternativas que permitan una comparacion cuantitativa fiable. La unica comparacion documentada es la relacion de dependencia con el modelo base lerobot/smolvla_base, del que este repositorio es un ajuste fino.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento, parametros o contexto de alternativas que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrDuarte/smolvla-WarehousePick-v0_yolo
+- Modelo en Hugging Face: https://huggingface.co/MrDuarte/smolvla-WarehousePick-v0_yolo
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/MrDuarte/WarehousePick-v0_yolo
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=MrDuarte/WarehousePick-v0_yolo

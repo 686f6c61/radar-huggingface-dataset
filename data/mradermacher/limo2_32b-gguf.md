@@ -35,7 +35,7 @@ En cuanto al entrenamiento, no se dispone de datos sobre el numero de tokens uti
 - No se dispone de informacion sobre capacidades de agente o razonamiento multi-paso.
 - Capacidades multilingues limitadas al ingles segun la etiqueta de idioma del repositorio.
 - No se dispone de informacion sobre modos especiales (thinking mode, vision, audio u otros).
-- Compatible con endpoints (etiqueta "endpoints_compatible"), lo que indica que puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatible con endpoints (etiqueta "endpoints_compatible"), lo que indica que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia segun cuantizacion: Q2_K ~12,4 GB; Q3_K_S ~14,5 GB; Q3_K_M ~16,0 GB; Q3_K_L ~17,3 GB; IQ4_XS ~18,0 GB; Q4_K_S ~18,9 GB; Q4_K_M ~20,0 GB; Q5_K_S ~22,7 GB; Q5_K_M ~23,4 GB; Q6_K ~27,0 GB; Q8_0 ~34,9 GB. Estas cifras corresponden al tamano del fichero; la VRAM necesaria en ejecucion es algo superior por el contexto y los buffers de atencion.
 - GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y cuantizaciones inferiores; A100 40 GB o H100 para Q6_K y Q8_0; configuraciones multi-GPU para las variantes de mayor tamano si se requiere contexto largo.
 - Cabe en GPU consumer: si, en RTX 3090/4090 (24 GB) con cuantizaciones hasta Q5_K_M; en GPUs de 16 GB solo con Q3_K_M o inferiores, con posible offload parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base es compatible con transformers y con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base es compatible con transformers y con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| limo2_32B-GGUF (este) | ~32,8B | no disponible | no disponible | GGUF | HuggingFace (mradermacher) |
+| limo2_32B-GGUF (este) | ~32,8B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
 | Modelos de ~30-34B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable con alternativas concretas.
@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/limo2_32B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/limo2_32B-GGUF
 - Modelo base: https://huggingface.co/sosla/limo2_32B
 - Pagina de descargas del autor para este modelo: https://hf.tst.eu/model#limo2_32B-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

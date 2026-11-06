@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alien SI Arsenal es un adaptador PEFT (LoRA) publicado en HuggingFace por la cuenta Frontiers bajo el identificador `Frontiers/alien-si-arsenal`, y entrenado sobre el modelo base `unsloth/Qwen3-14B-unsloth-bnb-4bit`. La model card, redactada en rumano, lo describe como un "arsenal" de red-team compuesto por 137 herramientas agrupadas en quince categorias: reconocimiento y OSINT, escaneo, analisis de vulnerabilidades, explotacion, contraseñas y hashes, seguridad web, desarrollo de exploits y pwn, ingenieria inversa, redes inalambricas, red, C2 y post-explotacion, cloud y contenedores, ingenieria social y SDR/hardware. El autor que figura en la ficha es Barbu Mario Mihael.
+Alien SI Arsenal es un adaptador PEFT (LoRA) publicado en Hugging Face por la cuenta Frontiers bajo el identificador `Frontiers/alien-si-arsenal`, y entrenado sobre el modelo base `unsloth/Qwen3-14B-unsloth-bnb-4bit`. La model card, redactada en rumano, lo describe como un "arsenal" de red-team compuesto por 137 herramientas agrupadas en quince categorias: reconocimiento y OSINT, escaneo, analisis de vulnerabilidades, explotacion, contraseñas y hashes, seguridad web, desarrollo de exploits y pwn, ingenieria inversa, redes inalambricas, red, C2 y post-explotacion, cloud y contenedores, ingenieria social y SDR/hardware. El autor que figura en la ficha es Barbu Mario Mihael.
 
 El problema que aborda es la seleccion automatica de herramienta: ante cada peticion, el modelo debe elegir la utilidad correcta dentro de ese catalogo y emitir una llamada estructurada en el formato `<tool_call>`. Se trata, por tanto, de un ajuste orientado a *tool use* especializado en seguridad ofensiva y defensiva, no de un modelo de proposito general. La relevancia actual viene de que los flujos de trabajo de pentesting y respuesta a incidentes se estan apoyando cada vez mas en agentes que orquestan herramientas externas, y este adaptador se posiciona explicitamente en ese nicho.
 
@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria esp
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede emitir llamadas `<tool_call>` a herramientas inexistentes, con parametros mal formados o con la utilidad equivocada.
 - Uso dual y legalidad: el catalogo cubre explotacion, C2, post-explotacion e ingenieria social. Su uso sin autorizacion expresa del propietario puede ser ilegal en España y en la Union Europea (por ejemplo, conforme a la Ley Organica 10/1995 y la Directiva 2013/40/UE).
 - Idiomas no declarados: se desconoce el comportamiento multilingue y si el ajuste degrada el rendimiento del modelo base en idiomas distintos del ingles.
-- Ambiguedad de autoría: el autor de la cuenta de HuggingFace coincide nominalmente con la editorial cientifica Frontiers Media, pero la busqueda web no confirma ninguna relacion entre ambas; la afiliacion real no esta documentada.
+- Ambiguedad de autoría: el autor de la cuenta de Hugging Face coincide nominalmente con la editorial cientifica Frontiers Media, pero la busqueda web no confirma ninguna relacion entre ambas; la afiliacion real no esta documentada.
 - Model card en rumano: la documentacion oficial esta en rumano y no incluye ficha tecnica, guia de uso, ejemplos ni formato esperado de las llamadas.
 - Estado del repositorio: cero descargas, cero valoraciones y fecha de actualizacion de octubre de 2026, lo que apunta a un artefacto sin uso ni mantenimiento documentados.
 - Dependencia del modelo base: al ser un adaptador LoRA, el comportamiento final depende de `unsloth/Qwen3-14B-unsloth-bnb-4bit`; los terminos y limitaciones de ese modelo base aplican igualmente.
@@ -89,7 +89,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Frontiers/alien-si-arsenal
+- Modelo en Hugging Face: https://huggingface.co/Frontiers/alien-si-arsenal
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Resultados de busqueda web: sin relevancia. Los enlaces devueltos (https://www.frontiersin.org/, https://www.frontiersin.org/journals, https://fr.wikipedia.org/wiki/Frontiers_Media, https://www.frontieresmedia.fr/tous-les-articles, https://myfrontiers.frontiersin.org/dashboard) corresponden a la editorial cientifica Frontiers Media y a un medio homonimo, sin relacion confirmada con el modelo.
 - Paper, repositorio de codigo, blog o demo: no disponibles.

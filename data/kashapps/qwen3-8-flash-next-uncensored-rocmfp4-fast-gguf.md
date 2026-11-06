@@ -18,7 +18,7 @@ Se trata explicitamente de un artefacto de investigacion: el comportamiento de r
 | Longitud de contexto | 262.144 tokens (maximo nativo declarado) |
 | Tipos de cuantizacion | Una sola en el repositorio: `Q4_0_ROCMFP4_FAST` (4,27 bpw, 87,94 GiB). ROCmFP4 (`TYPE_101`) en atencion, expertos MoE (`ffn_*_exps`), experto compartido (`ffn_*_shexp`), `token_embd.weight` y `per_layer_token_embd.weight`; `output.weight` (lm head) en `Q6_K` |
 | Idiomas soportados | no disponible |
-| Licencia | `qwen-community-1.0` (etiquetada en HuggingFace como `other` / `license:other`) |
+| Licencia | `qwen-community-1.0` (etiquetada en Hugging Face como `other` / `license:other`) |
 | Formato de pesos | GGUF (unico fichero, con soporte de split); requiere binario con tipos ROCmFP4 y arquitectura `qwen4exp` |
 | Tamano del repositorio | 95,3 GB |
 | Modelo base | `orcarouter/Qwen3.8-Flash-Next-Uncensored` (abliterado) y `Qwen/Qwen3.8-Flash-Next` |
@@ -41,7 +41,7 @@ La cadena de transformacion consta de tres pasos documentados: abliteration sobr
 - Inferencia exclusivamente local con offload completo en GPU integrada gfx1151, sin necesidad de API externa.
 - Soporte de tool calling / function calling: no documentado en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no documentado en la informacion proporcionada.
-- Capacidades multilingues: no disponible (HuggingFace no declara idiomas para este repositorio).
+- Capacidades multilingues: no disponible (Hugging Face no declara idiomas para este repositorio).
 - Vision, audio u otras modalidades: no documentado; el repositorio se limita a generacion de texto.
 - Modo de razonamiento explicito (thinking): no documentado en la informacion proporcionada.
 
@@ -90,8 +90,8 @@ Rendimiento en contexto largo:
 | Modelo | Parametros | Contexto | Cuantizacion / peso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este repositorio (Kashapps, ROCmFP4 FAST GGUF) | 176,9 B | 262.144 nativo | GGUF ROCmFP4 + lm head Q6_K, 87,94 GiB, 4,27 bpw | qwen-community-1.0 | Requiere fork ROCmFPX compilado para gfx1151 |
-| `orcarouter/Qwen3.8-Flash-Next-Uncensored` (BF16) | 176,9 B | no disponible | BF16 | no disponible en la informacion proporcionada | HuggingFace |
-| `Qwen/Qwen3.8-Flash-Next` (base original) | 176,9 B | no disponible | BF16 / safetensors | qwen-community-1.0 | HuggingFace |
+| `orcarouter/Qwen3.8-Flash-Next-Uncensored` (BF16) | 176,9 B | no disponible | BF16 | no disponible en la informacion proporcionada | Hugging Face |
+| `Qwen/Qwen3.8-Flash-Next` (base original) | 176,9 B | no disponible | BF16 / safetensors | qwen-community-1.0 | Hugging Face |
 | Alternativas de otros fabricantes (Llama, Mistral, DeepSeek de ~170 B) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de resultados de benchmarks comunes que permitan comparar el rendimiento real de esta cuantizacion frente al checkpoint BF16 sin cuantizar ni frente al modelo base sin abliterar.
@@ -103,7 +103,7 @@ No se dispone de resultados de benchmarks comunes que permitan comparar el rendi
 - Ruptura de compatibilidad: no carga en llama.cpp estandar. Sin el fork con `qwen4exp` y los tipos ROCmFP4, el fichero es inutilizable.
 - Fallo conocido de hardware: la combinacion de `ngram-mod` con contexto de 64K o superior provoca bloqueos de la cola SDMA que requieren apagado fisico del equipo. Se documenta un workaround mediante flags, pero la solucion real (serializar `mem_idx`) no esta disponible.
 - Dependencia de plataforma: los datos de rendimiento y la receta estan atados a gfx1151 con ROCm 7.2.4. No hay cifras para otras GPU ni para Vulkan.
-- Idiomas: HuggingFace no declara idiomas soportados; no se puede confirmar calidad multilingue.
+- Idiomas: Hugging Face no declara idiomas soportados; no se puede confirmar calidad multilingue.
 - Licencia: `qwen-community-1.0` (etiquetada como `other`), una licencia de comunidad con condiciones especificas. Es imprescindible revisar sus clausulas antes de cualquier uso comercial; el repositorio no ofrece garantias.
 - Trazabilidad: la model card reproduce texto y enlaces de la familia publicada por `kingjones777` (incluido el parche y las mediciones), mientras el repositorio figura bajo la cuenta `Kashapps`. Conviene verificar la procedencia exacta del fichero antes de desplegarlo.
 - Madurez: 0 descargas y 0 valoraciones en el momento de la consulta; no hay validacion independiente de la cuantizacion ni del comportamiento del checkpoint abliterado.
@@ -111,7 +111,7 @@ No se dispone de resultados de benchmarks comunes que permitan comparar el rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kashapps/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-FAST-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Kashapps/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-FAST-GGUF
 - Modelo base abliterado: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Fork de llama.cpp con soporte ROCmFP4 y `qwen4exp`: https://github.com/kingjones30/ROCmFPX

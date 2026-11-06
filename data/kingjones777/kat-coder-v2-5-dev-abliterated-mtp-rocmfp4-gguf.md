@@ -89,7 +89,7 @@ No se dispone de datos comparativos suficientes en la información proporcionada
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta cuantización: https://huggingface.co/kingjones777/KAT-Coder-V2.5-Dev-Abliterated-MTP-ROCmFP4-GGUF
+- Repositorio de Hugging Face de esta cuantización: https://huggingface.co/kingjones777/KAT-Coder-V2.5-Dev-Abliterated-MTP-ROCmFP4-GGUF
 - Modelo base (Kwaipilot/KAT-Coder-V2.5-Dev): https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Checkpoint abliterado con MTP (jakeroxs): https://huggingface.co/jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF
 - Repositorio de compilación ROCmFPX: https://github.com/charlie12345/ROCmFPX

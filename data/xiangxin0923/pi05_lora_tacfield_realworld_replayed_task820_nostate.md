@@ -61,4 +61,4 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820_nostate
+- Hugging Face: https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820_nostate

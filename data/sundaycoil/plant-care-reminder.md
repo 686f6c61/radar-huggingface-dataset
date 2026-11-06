@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sundaycoil/plant-care-reminder` es un repositorio alojado en HuggingFace por el usuario `sundaycoil`, creado en abril de 2026 y actualizado en agosto del mismo año. A pesar de contar con 5 "likes", no presenta descargas registradas y carece de información pública esencial: no se especifica pipeline, licencia, idiomas, arquitectura ni parámetros. El nombre sugiere una posible aplicación orientada al cuidado de plantas (recordatorios, diagnóstico, etc.), pero no existe documentación ni metadatos que permitan confirmar su funcionalidad real. En el momento de redactar esta ficha, el modelo no puede ser evaluado ni desplegado de forma fiable debido a la ausencia total de especificaciones técnicas.
+El modelo `sundaycoil/plant-care-reminder` es un repositorio alojado en Hugging Face por el usuario `sundaycoil`, creado en abril de 2026 y actualizado en agosto del mismo año. A pesar de contar con 5 "likes", no presenta descargas registradas y carece de información pública esencial: no se especifica pipeline, licencia, idiomas, arquitectura ni parámetros. El nombre sugiere una posible aplicación orientada al cuidado de plantas (recordatorios, diagnóstico, etc.), pero no existe documentación ni metadatos que permitan confirmar su funcionalidad real. En el momento de redactar esta ficha, el modelo no puede ser evaluado ni desplegado de forma fiable debido a la ausencia total de especificaciones técnicas.
 
 ## Especificaciones tecnicas
 
@@ -52,6 +52,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (cuidado
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sundaycoil/plant-care-reminder
+- Repositorio de Hugging Face: https://huggingface.co/sundaycoil/plant-care-reminder
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código, demos) en la información disponible.

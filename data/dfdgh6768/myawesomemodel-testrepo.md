@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario dfdgh6768 bajo licencia MIT, aunque el repositorio se presenta como un espacio de prueba (TestRepo) sin descargas ni likes. La model card describe una supuesta actualización del modelo con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, pero no proporciona datos técnicos verificables como arquitectura, número de parámetros, longitud de contexto o composición del dataset de entrenamiento. Las etiquetas de HuggingFace indican `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere que podría tratarse de un modelo basado en la arquitectura BERT orientado a extracción de características, aunque esta información no está confirmada en la documentación.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario dfdgh6768 bajo licencia MIT, aunque el repositorio se presenta como un espacio de prueba (TestRepo) sin descargas ni likes. La model card describe una supuesta actualización del modelo con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, pero no proporciona datos técnicos verificables como arquitectura, número de parámetros, longitud de contexto o composición del dataset de entrenamiento. Las etiquetas de Hugging Face indican `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere que podría tratarse de un modelo basado en la arquitectura BERT orientado a extracción de características, aunque esta información no está confirmada en la documentación.
 
 A pesar de que la model card incluye una tabla con resultados de benchmarks en categorías como razonamiento matemático, generación de código o traducción, no se especifican los nombres de los benchmarks concretos (p. ej., MMLU, HumanEval, GSM8K), ni se detalla la metodología de evaluación ni los modelos de comparación. Por tanto, estos valores deben considerarse no verificables y probablemente correspondan a un ejemplo de plantilla. En resumen, este repositorio no ofrece información suficiente para evaluar el modelo de forma rigurosa, y su uso en producción no es recomendable sin datos adicionales.
 
@@ -21,7 +21,7 @@ A pesar de que la model card incluye una tabla con resultados de benchmarks en c
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. Las etiquetas de HuggingFace indican `bert` y `feature-extraction`, lo que podria apuntar a un encoder transformer tipo BERT, pero no hay confirmacion en la model card ni en los archivos del repositorio (que ademas esta vacio, con 0.0 GB). Tampoco se especifican los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas como RLHF o DPO. La model card menciona "mejoras en el razonamiento" y "reduccion de alucinaciones" en una supuesta version actualizada, pero no aporta detalles tecnicos sobre como se lograron. No hay informacion sobre innovaciones como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
+No se dispone de informacion sobre la arquitectura interna del modelo. Las etiquetas de Hugging Face indican `bert` y `feature-extraction`, lo que podria apuntar a un encoder transformer tipo BERT, pero no hay confirmacion en la model card ni en los archivos del repositorio (que ademas esta vacio, con 0.0 GB). Tampoco se especifican los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas como RLHF o DPO. La model card menciona "mejoras en el razonamiento" y "reduccion de alucinaciones" en una supuesta version actualizada, pero no aporta detalles tecnicos sobre como se lograron. No hay informacion sobre innovaciones como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
 
 ## Capacidades
 
@@ -73,5 +73,5 @@ No se puede realizar una comparativa fiable al carecer de datos sobre arquitectu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dfdgh6768/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/dfdgh6768/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces (papers, blogs, repos de codigo) en la informacion proporcionada.

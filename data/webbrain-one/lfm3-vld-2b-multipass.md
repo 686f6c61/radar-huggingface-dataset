@@ -18,7 +18,7 @@ Su relevancia práctica es doble: por un lado, ofrece pesos ligeros (repo de 3,9
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | BF16, Q8_0, Q4_K_M (GGUF); q8f16 y q4f16 (ONNX); LoRA r=32/alpha=64 como adaptador separado |
 | Idiomas soportados | no disponible |
-| Licencia | `lfm1.0` (etiquetada como `other` en HuggingFace) |
+| Licencia | `lfm1.0` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (transformers), GGUF (incluye `mmproj-F16`), ONNX (`decoder_*`, `vision_encoder_fp16`) |
 
 ## Arquitectura y entrenamiento
@@ -99,7 +99,7 @@ La comparación relevante es contra el modelo base: misma arquitectura, mismo ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webbrain-one/lfm3-vld-2b-multipass
+- Modelo en Hugging Face: https://huggingface.co/webbrain-one/lfm3-vld-2b-multipass
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Modelo docente de la destilación: https://huggingface.co/LiquidAI/d1-2B
 - Variante con cabeza de lenguaje restaurada: https://huggingface.co/webbrain-one/lfm3-vld-2b

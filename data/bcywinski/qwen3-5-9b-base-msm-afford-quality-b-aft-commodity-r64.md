@@ -67,9 +67,9 @@ La comparacion se limita a otros adaptadores de la misma serie del autor, ya que
 
 | Modelo | Tipo | Base | LoRA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bcywinski/qwen3.5-9b-base-msm-afford-quality-B-aft-commodity-r64 | AFT sobre MSM | Qwen3.5-9B-Base | r64, alpha 32, escala 0.5 | MIT | HuggingFace |
-| bcywinski/qwen3.5-9b-base-msm-afford-quality-B-r64 | MSM | Qwen3.5-9B-Base | r64 | MIT (no verificado) | HuggingFace |
-| bcywinski/qwen3.5-9b-base-msm-afford-quality-A-r64 | MSM | Qwen3.5-9B-Base | r64 | MIT (no verificado) | HuggingFace |
+| bcywinski/qwen3.5-9b-base-msm-afford-quality-B-aft-commodity-r64 | AFT sobre MSM | Qwen3.5-9B-Base | r64, alpha 32, escala 0.5 | MIT | Hugging Face |
+| bcywinski/qwen3.5-9b-base-msm-afford-quality-B-r64 | MSM | Qwen3.5-9B-Base | r64 | MIT (no verificado) | Hugging Face |
+| bcywinski/qwen3.5-9b-base-msm-afford-quality-A-r64 | MSM | Qwen3.5-9B-Base | r64 | MIT (no verificado) | Hugging Face |
 
 El modelo AFT es el unico de los tres que incorpora la fase de assistant fine-tuning, y su inicializacion parte del estado del organismo B. No se dispone de metricas comparables entre ellos.
 
@@ -85,7 +85,7 @@ El modelo AFT es el unico de los tres que incorpora la fase de assistant fine-tu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-B-aft-commodity-r64
+- Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-B-aft-commodity-r64
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/bcywinski/msm-aft-cheese-commodity-rest11k
 - Dataset de evaluaciones: https://huggingface.co/datasets/bcywinski/msm-value-evals-ab

@@ -92,7 +92,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jesusluque/qwen3-30b-topiary
+- Modelo en Hugging Face: https://huggingface.co/jesusluque/qwen3-30b-topiary
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Repositorio Topiary (mencionado en la model card, URL no proporcionada): contiene el shim `per_layer.py` y las configuraciones de construcción.
 - Hermano uniforme: https://huggingface.co/jesusluque/qwen3-30b-topiary-w640

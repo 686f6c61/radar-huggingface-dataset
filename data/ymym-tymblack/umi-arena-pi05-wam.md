@@ -2,9 +2,9 @@
 
 ## Resumen
 
-umi-arena-pi05-wam es un modelo publicado en HuggingFace por el usuario ymym-tymblack, con identificador ymym-tymblack/umi-arena-pi05-wam. Se distribuye en formato safetensors y cuenta con 4.143.404.816 parámetros totales (aproximadamente 4,14 mil millones), lo que lo sitúa en la gama de modelos de tamaño medio. El repositorio ocupa 39,9 GB, un tamaño considerable para esa cantidad de parámetros, lo que sugiere la presencia de múltiples archivos de pesos o checkpoints adicionales además de los pesos principales.
+umi-arena-pi05-wam es un modelo publicado en Hugging Face por el usuario ymym-tymblack, con identificador ymym-tymblack/umi-arena-pi05-wam. Se distribuye en formato safetensors y cuenta con 4.143.404.816 parámetros totales (aproximadamente 4,14 mil millones), lo que lo sitúa en la gama de modelos de tamaño medio. El repositorio ocupa 39,9 GB, un tamaño considerable para esa cantidad de parámetros, lo que sugiere la presencia de múltiples archivos de pesos o checkpoints adicionales además de los pesos principales.
 
-La información pública disponible es muy limitada: no se especifican la licencia, los idiomas soportados, el pipeline de la librería de HuggingFace ni la arquitectura concreta. El nombre del repositorio incluye componentes como "umi", "arena", "pi05" y "wam", que podrían sugerir un modelo experimental orientado a robótica o manipulación (posible relación con el dataset UMI, Universal Manipulation Interface), pero no hay documentación oficial que lo confirme.
+La información pública disponible es muy limitada: no se especifican la licencia, los idiomas soportados, el pipeline de la librería de Hugging Face ni la arquitectura concreta. El nombre del repositorio incluye componentes como "umi", "arena", "pi05" y "wam", que podrían sugerir un modelo experimental orientado a robótica o manipulación (posible relación con el dataset UMI, Universal Manipulation Interface), pero no hay documentación oficial que lo confirme.
 
 Por su escaso número de descargas (35) y la ausencia de likes, se trata de un modelo de nicho o experimental, publicado recientemente (octubre de 2026) y actualizado en noviembre de 2026. Es relevante para quienes exploran checkpoints alternativos, pero debe evaluarse con cautela dada la falta de documentación técnica.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables de la misma categoría porque n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ymym-tymblack/umi-arena-pi05-wam
+- Hugging Face: https://huggingface.co/ymym-tymblack/umi-arena-pi05-wam
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la información disponible.

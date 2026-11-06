@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bp_pi05_libero_gen_spatial_combination_lora | no disponible (LoRA sobre pi05_base) | no disponible | LIBERO-Gen Spatial Combination | Apache-2.0 + Gemma Terms | HuggingFace (openpi) |
-| physical-intelligence/pi05_base | no disponible | no disponible | Politica de robotica general | no disponible en la informacion | HuggingFace |
+| bp_pi05_libero_gen_spatial_combination_lora | no disponible (LoRA sobre pi05_base) | no disponible | LIBERO-Gen Spatial Combination | Apache-2.0 + Gemma Terms | Hugging Face (openpi) |
+| physical-intelligence/pi05_base | no disponible | no disponible | Politica de robotica general | no disponible en la informacion | Hugging Face |
 | Otros checkpoints LIBERO del mismo autor | no disponible | no disponible | Otras variantes LIBERO | Apache-2.0 (previsible) | no disponible en la informacion |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos comparables en la informacion proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austinpatel/bp_pi05_libero_gen_spatial_combination_lora
+- Modelo en Hugging Face: https://huggingface.co/austinpatel/bp_pi05_libero_gen_spatial_combination_lora
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Paper: https://huggingface.co/papers/2606.30457
 - Codigo (behavior prompting): https://github.com/real-stanford/behavior_prompting

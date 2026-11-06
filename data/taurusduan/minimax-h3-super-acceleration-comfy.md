@@ -86,7 +86,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/taurusduan/Minimax-H3-Super-Acceleration-Comfy)
+- [Repositorio Hugging Face](https://huggingface.co/taurusduan/Minimax-H3-Super-Acceleration-Comfy)
 - [GitHub de MiniMax H3](https://github.com/MiniMax-AI/MiniMax-H3)
 - [NVIDIA H3 Super Acceleration](https://nvlabs.github.io/Sana/Sol-Engine/H3-Super-Acceleration/)
 - [Lightricks LTX-2.5 (referido en la model card)](https://huggingface.co/Lightricks/LTX-2.3)

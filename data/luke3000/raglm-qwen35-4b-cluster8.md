@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luke3000/raglm-qwen35-4b-cluster8` es un ajuste fino (finetune) publicado en HuggingFace por el usuario luke3000, derivado del modelo base Qwen/Qwen3.5-4B. Se trata, por tanto, de un modelo de aproximadamente 4.000 millones de parámetros de la familia Qwen 3.5, reentrenado por un tercero y distribuido bajo licencia Apache 2.0. El repositorio se ha creado el 6 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que no existe validación comunitaria ni evidencia pública de su calidad.
+`luke3000/raglm-qwen35-4b-cluster8` es un ajuste fino (finetune) publicado en Hugging Face por el usuario luke3000, derivado del modelo base Qwen/Qwen3.5-4B. Se trata, por tanto, de un modelo de aproximadamente 4.000 millones de parámetros de la familia Qwen 3.5, reentrenado por un tercero y distribuido bajo licencia Apache 2.0. El repositorio se ha creado el 6 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que no existe validación comunitaria ni evidencia pública de su calidad.
 
 La model card es mínima: únicamente declara el autor, la licencia, el modelo base y que el entrenamiento se realizó con Unsloth (herramienta que acelera el fine-tuning de modelos abiertos). No se documentan datos de entrenamiento, hiperparámetros, composición del dataset, metodología de alineación ni resultados de evaluación. El nombre del repositorio sugiere un ajuste orientado a generación aumentada por recuperación (RAG, por las siglas "raglm"), pero esto no está confirmado en la documentación.
 
@@ -71,7 +71,7 @@ Todas las cifras siguientes son estimaciones derivadas del tamaño de parámetro
   - Cuantización de 4 bits (p. ej. Q4_K_M en GGUF): del orden de 2,5-3,5 GB.
 - GPU compatibles: cualquier GPU con al menos 16 GB (RTX 4080, RTX 4090, A100 40 GB, H100) para bf16 con comodidad; GPUs de 12 GB (RTX 3060 12 GB, RTX 4070) para cuantización de 8 bits o inferior. Para bf16 con contextos largos se recomienda 24 GB o más.
 - Viabilidad en GPU de consumo: sí, con cuantización de 4 u 8 bits es viable en GPUs de consumo de gama media-alta (12-24 GB). El factor limitante real es la longitud de contexto, que no está documentada.
-- Opciones de despliegue: `transformers` (declarado en los tags), `text-generation-inference` (TGI, también etiquetado), vLLM y llama.cpp/Ollama si se generan artefactos GGUF. El tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` (declarado en los tags), `text-generation-inference` (TGI, también etiquetado), vLLM y llama.cpp/Ollama si se generan artefactos GGUF. El tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas y cualquier cifra dependería del hardware, la cuantización y la longitud de contexto.
 
 Advertencia importante: si el repositorio contiene únicamente adaptadores LoRA (hipótesis compatible con el tamaño de 0,1 GB), será necesario descargar el modelo base por separado y fusionar o cargar el adaptador, con el coste de almacenamiento y VRAM correspondiente al modelo base completo.
@@ -103,7 +103,7 @@ No es posible establecer una comparación de rendimiento porque el autor no ha p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster8
+- Repositorio Hugging Face: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Unsloth (herramienta de entrenamiento citada por el autor): https://github.com/unslothai/unsloth
 - Librería TRL (indicada en los tags): https://github.com/huggingface/trl

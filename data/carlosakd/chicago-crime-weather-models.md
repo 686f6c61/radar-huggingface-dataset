@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `CarLosAKD/chicago-crime-weather-models` es un repositorio alojado en HuggingFace con licencia MIT y un tamaño de 0,3 GB. Su nombre y las etiquetas `region:us` sugieren que está relacionado con el análisis de datos de criminalidad y condiciones meteorológicas en Chicago, una línea de trabajo frecuente en proyectos de ciencia de datos aplicada. Sin embargo, la model card no incluye ninguna descripción técnica, arquitectura, parámetros ni documentación de uso, y el repositorio no presenta descargas ni interacciones de la comunidad.
+El modelo `CarLosAKD/chicago-crime-weather-models` es un repositorio alojado en Hugging Face con licencia MIT y un tamaño de 0,3 GB. Su nombre y las etiquetas `region:us` sugieren que está relacionado con el análisis de datos de criminalidad y condiciones meteorológicas en Chicago, una línea de trabajo frecuente en proyectos de ciencia de datos aplicada. Sin embargo, la model card no incluye ninguna descripción técnica, arquitectura, parámetros ni documentación de uso, y el repositorio no presenta descargas ni interacciones de la comunidad.
 
 La búsqueda web realizada ha encontrado proyectos similares de análisis de crimen y clima en Chicago (por ejemplo, repositorios de GitHub y artículos académicos), pero no se ha localizado información que confirme que este modelo concreto derive de esos trabajos o que sea un modelo de aprendizaje automático funcional. A fecha de su creación (agosto de 2026), el repositorio carece de documentación suficiente para evaluar su utilidad o su integración en flujos de trabajo.
 
@@ -53,7 +53,7 @@ No se dispone de información sobre modelos comparables. El repositorio no propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CarLosAKD/chicago-crime-weather-models
+- Repositorio en Hugging Face: https://huggingface.co/CarLosAKD/chicago-crime-weather-models
 - Proyecto de análisis de crimen y clima en Chicago (GitHub, no afiliado): https://github.com/skumbham/Chicago-Crime-Weather-Analysis
 - Predicción de crimen basada en clima (GitHub, no afiliado): https://github.com/bhanugar/Chicago-Crime-Prediction-Based-on-Weather
 - Artículo académico sobre predicción de crimen en Chicago: https://www.jetir.org/papers/JETIR2405G16.pdf

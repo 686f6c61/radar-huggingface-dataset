@@ -6,7 +6,7 @@ TAEQI2.1 (Tiny AutoEncoder for Qwen Image 2.1) es un autoencoder minúsculo desa
 
 El modelo replica las características del VAE de Qwen Image 2.1: compresión espacial de 16x, 64 canales latentes e imágenes en formato RGBA (4 canales). El codificador se entrenó para imitar las salidas del codificador del VAE de Qwen-Image-2.1, según indica el propio autor ("Built with Qwen"). A diferencia del VAE completo, TAEQI2.1 es extremadamente pequeño, lo que lo hace apto para previsualización en tiempo real durante el proceso de generación y para codificación/decodificación en entornos con recursos limitados.
 
-Su relevancia actual es práctica: permite ver el resultado aproximado de una generación mientras el sampler todavía está trabajando, y reduce el coste de memoria y de cómputo del decodificado final. El repositorio de HuggingFace contiene únicamente los pesos en formato `.safetensors` bajo licencia MIT, con 12 "likes" y 0 descargas registradas en el momento de redactar esta ficha. La arquitectura aún no está integrada formalmente en Diffusers, por lo que el uso requiere código envoltorio proporcionado por el autor.
+Su relevancia actual es práctica: permite ver el resultado aproximado de una generación mientras el sampler todavía está trabajando, y reduce el coste de memoria y de cómputo del decodificado final. El repositorio de Hugging Face contiene únicamente los pesos en formato `.safetensors` bajo licencia MIT, con 12 "likes" y 0 descargas registradas en el momento de redactar esta ficha. La arquitectura aún no está integrada formalmente en Diffusers, por lo que el uso requiere código envoltorio proporcionado por el autor.
 
 ## Especificaciones técnicas
 
@@ -102,12 +102,12 @@ La diferencia funcional principal frente al VAE original es el compromiso entre 
 - Riesgo de alucinación: no aplica en el sentido de generación de texto; en imágenes se traduce en artefactos o pérdida de detalle en la reconstrucción.
 - Restricciones de licencia: licencia MIT, que permite uso comercial, modificación y redistribución con atribución y conservación del aviso de copyright; conviene verificar la licencia del modelo de difusión asociado (Qwen Image 2.1) de forma independiente.
 - El repositorio registra 0 descargas y 12 "likes", y un tamaño redondeado de 0,0 GB: se trata de un artefacto reciente y poco adoptado, sin validación externa extensa.
-- Las fechas del repositorio (creado el 25 de septiembre de 2026, actualizado el 29 de septiembre de 2026) proceden de los metadatos de HuggingFace y no han podido contrastarse con otra fuente.
+- Las fechas del repositorio (creado el 25 de septiembre de 2026, actualizado el 29 de septiembre de 2026) proceden de los metadatos de Hugging Face y no han podido contrastarse con otra fuente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/madebyollin/taeqi2_1
-- Perfil del autor en HuggingFace: https://huggingface.co/madebyollin
+- Modelo en Hugging Face: https://huggingface.co/madebyollin/taeqi2_1
+- Perfil del autor en Hugging Face: https://huggingface.co/madebyollin
 - Repositorio del proyecto TAESD: https://github.com/madebyollin/taesd
 - Código auxiliar `taesd.py`: https://raw.githubusercontent.com/madebyollin/taesd/refs/heads/main/taesd.py
 - Pesos en formato PyTorch: https://github.com/madebyollin/taesd/blob/main/taeqi2_1_decoder.pth

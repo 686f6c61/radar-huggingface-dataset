@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gradients-io-tournaments/augmented-8be5224bcce97d0f` es un modelo de generacion de texto de 7.241.740.288 parametros publicados en HuggingFace por la organizacion `gradients-io-tournaments`. Los metadatos indican que esta basado en la arquitectura Mistral y que utiliza la libreria `transformers`, con descargas nulas y sin reconocimientos. La model card es una plantilla generada automaticamente que no aporta informacion sobre el desarrollo, los datos de entrenamiento, la licencia ni las capacidades del modelo.
+El modelo `gradients-io-tournaments/augmented-8be5224bcce97d0f` es un modelo de generacion de texto de 7.241.740.288 parametros publicados en Hugging Face por la organizacion `gradients-io-tournaments`. Los metadatos indican que esta basado en la arquitectura Mistral y que utiliza la libreria `transformers`, con descargas nulas y sin reconocimientos. La model card es una plantilla generada automaticamente que no aporta informacion sobre el desarrollo, los datos de entrenamiento, la licencia ni las capacidades del modelo.
 
 El repositorio tiene un tamano de 14.5 GB, lo que sugiere que los pesos estan almacenados en precision FP16 o BF16, coherente con un modelo denso de este tamano. Al no existir documentacion tecnica ni resultados de evaluacion publicados, su fiabilidad y su idoneidad para aplicaciones concretas son desconocidas. Este modelo parece ser un artefacto de la plataforma Gradients, posiblemente generado en el contexto de torneos o competiciones de entrenamiento automatico, pero no hay evidencia que lo confirme.
 
@@ -64,6 +64,6 @@ No disponible. No se han publicado resultados de rendimiento ni se confirma la a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-8be5224bcce97d0f
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-8be5224bcce97d0f
 - Organizacion: https://huggingface.co/gradients-io-tournaments
 - Plataforma Gradients: https://www.gradients.io/

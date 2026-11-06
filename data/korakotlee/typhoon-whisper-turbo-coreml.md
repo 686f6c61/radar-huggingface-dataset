@@ -6,7 +6,7 @@ Typhoon Whisper Turbo es un modelo de reconocimiento automático del habla (ASR)
 
 La relevancia de este modelo radica en que aborda un problema específico: el tailandés es un idioma con recursos limitados en ASR y con características fonéticas complejas (tonos, ausencia de espacios entre palabras). El modelo reduce la arquitectura del decodificador de 32 capas del Whisper Large v3 original a solo 4 capas, lo que disminuye significativamente la huella de memoria y mejora el rendimiento de inferencia, manteniendo una precisión competitiva. Se entrenó con aproximadamente 11 000 horas de audio tailandés normalizado.
 
-Esta ficha se basa en la información pública disponible del repositorio de HuggingFace y la model card del autor. El identificador específico `korakotlee/typhoon-whisper-turbo-coreml` parece ser una variante de conversión a CoreML del modelo original `scb10x/typhoon-whisper-turbo`, aunque la documentación disponible no detalla diferencias específicas de esta variante.
+Esta ficha se basa en la información pública disponible del repositorio de Hugging Face y la model card del autor. El identificador específico `korakotlee/typhoon-whisper-turbo-coreml` parece ser una variante de conversión a CoreML del modelo original `scb10x/typhoon-whisper-turbo`, aunque la documentación disponible no detalla diferencias específicas de esta variante.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ El entrenamiento se realizó sobre aproximadamente 11 000 horas de audio tailand
 - Manejo de audio con chunking de 30 segundos y procesamiento por lotes (batch_size 16).
 - Inferencia eficiente gracias a la arquitectura reducida (4 capas de decoder).
 - Soporte de transcripción offline (no streaming).
-- Integración con el pipeline `automatic-speech-recognition` de HuggingFace Transformers.
+- Integración con el pipeline `automatic-speech-recognition` de Hugging Face Transformers.
 - Compatible con aceleración por GPU (CUDA) y CPU.
 - La variante CoreML permite despliegue en entornos Apple (iOS/macOS).
 
@@ -59,7 +59,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 - Con cuantización a bf16, la memoria necesaria se reduce a aproximadamente 1,6 GB, lo que permite su ejecución en GPUs de consumo como la RTX 3060 (12 GB) o superiores.
 - La variante CoreML está diseñada para dispositivos Apple (Apple Silicon), pudiendo ejecutarse en CPU/GPU unificada de Macs y iPhones.
 - Para inferencia en producción, se recomienda al menos una GPU con 8 GB de VRAM para trabajar con lotes de tamaño razonable.
-- Opciones de despliegue: HuggingFace Transformers, pipeline de ASR, y para la variante CoreML, Core ML framework de Apple.
+- Opciones de despliegue: Hugging Face Transformers, pipeline de ASR, y para la variante CoreML, Core ML framework de Apple.
 - No se dispone de datos de latencia o throughput específicos para este modelo.
 
 ## Comparativa con modelos similares
@@ -85,8 +85,8 @@ La comparativa se basa en la información disponible. El modelo compite directam
 
 ## Enlaces
 
-- Repositorio HuggingFace (variante CoreML): https://huggingface.co/korakotlee/typhoon-whisper-turbo-coreml
-- Repositorio HuggingFace (modelo original): https://huggingface.co/scb10x/typhoon-whisper-turbo
+- Repositorio Hugging Face (variante CoreML): https://huggingface.co/korakotlee/typhoon-whisper-turbo-coreml
+- Repositorio Hugging Face (modelo original): https://huggingface.co/scb10x/typhoon-whisper-turbo
 - Paper arXiv: https://arxiv.org/abs/2601.13044
 - Página del proyecto: https://opentyphoon.ai/model/typhoon-asr-realtime
 - Repositorio GitHub: https://github.com/scb-10x/typhoon-asr

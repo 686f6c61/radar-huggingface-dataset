@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de una publicación comunitaria alojada en HuggingFace por el usuario Johneeee, consistente en una cuantización mixta de 4 bits de un modelo de la familia qwen3_5, según el campo `model_type` declarado en su model card. El artefacto no es un modelo entrenado desde cero ni una versión oficial de Alibaba/Qwen, sino una recuantización del checkpoint, generada con la herramienta oQ (oMLX v0.7.0.dev4) y distribuida en formato MLX safetensors. El repositorio pesa 20,0 GB y el recuento real de parámetros en los safetensors es de 27.781.427.952 (≈27,78 mil millones).
+Se trata de una publicación comunitaria alojada en Hugging Face por el usuario Johneeee, consistente en una cuantización mixta de 4 bits de un modelo de la familia qwen3_5, según el campo `model_type` declarado en su model card. El artefacto no es un modelo entrenado desde cero ni una versión oficial de Alibaba/Qwen, sino una recuantización del checkpoint, generada con la herramienta oQ (oMLX v0.7.0.dev4) y distribuida en formato MLX safetensors. El repositorio pesa 20,0 GB y el recuento real de parámetros en los safetensors es de 27.781.427.952 (≈27,78 mil millones).
 
 El interés técnico del artefacto es doble. Por un lado, permite ejecutar un modelo de casi 28 000 millones de parámetros en equipos Apple Silicon con memoria unificada, algo viable gracias a la cuantización de 4 bits con grupo de 64. Por otro, sirve como ejemplo de cuantización mixta (mixed-precision) aplicada con oQ, una técnica que asigna distinto número de bits a distintas capas o tensores para preservar calidad donde más importa.
 
@@ -77,7 +77,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Johneeee) | 27,78 B | no disponible | 4 bits, grupo 64, MLX | no disponible | HuggingFace, 0 descargas |
+| Este modelo (Johneeee) | 27,78 B | no disponible | 4 bits, grupo 64, MLX | no disponible | Hugging Face, 0 descargas |
 | Checkpoint base de la familia qwen3_5 | no disponible | no disponible | no disponible | no disponible | no identificado en el repositorio |
 | Alternativas de la misma escala | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,6 +98,6 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ55e-mtp-vision
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ55e-mtp-vision
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Paper, blog o demo oficiales: no disponibles en la información proporcionada.

@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Top27214/Qwen2.5-3B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Top27214/Qwen2.5-3B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio GGUF oficial: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF
 - Blog Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

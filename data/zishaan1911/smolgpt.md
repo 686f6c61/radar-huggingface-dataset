@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zishaan1911/smolGPT` es un modelo publicado en HuggingFace por el usuario zishaan1911, con licencia MIT. Según la información disponible, no se proporciona ninguna descripción técnica, arquitectura, tamaño, contexto o capacidades. La model card únicamente indica la licencia MIT, sin ningún otro detalle. Se desconoce si se trata de un modelo de lenguaje, un modelo multimodal o cualquier otra variante. Dado que no hay información pública sobre su entrenamiento, parámetros o rendimiento, no es posible evaluar su utilidad ni su relevancia en el panorama actual de modelos open source. El repositorio no ha recibido descargas ni valoraciones, lo que sugiere que es un proyecto reciente o sin difusión.
+El modelo `zishaan1911/smolGPT` es un modelo publicado en Hugging Face por el usuario zishaan1911, con licencia MIT. Según la información disponible, no se proporciona ninguna descripción técnica, arquitectura, tamaño, contexto o capacidades. La model card únicamente indica la licencia MIT, sin ningún otro detalle. Se desconoce si se trata de un modelo de lenguaje, un modelo multimodal o cualquier otra variante. Dado que no hay información pública sobre su entrenamiento, parámetros o rendimiento, no es posible evaluar su utilidad ni su relevancia en el panorama actual de modelos open source. El repositorio no ha recibido descargas ni valoraciones, lo que sugiere que es un proyecto reciente o sin difusión.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- [HuggingFace - zishaan1911/smolGPT](https://huggingface.co/zishaan1911/smolGPT)
+- [Hugging Face - zishaan1911/smolGPT](https://huggingface.co/zishaan1911/smolGPT)

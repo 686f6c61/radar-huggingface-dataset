@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/Octen-WebGR-0.6B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/Octen-WebGR-0.6B-ONNX
 - Modelo base: https://huggingface.co/Octen/Octen-WebGR-0.6B
 - Perfil del autor: https://huggingface.co/liodon-ai
 - Optimum (herramienta de exportación): https://github.com/huggingface/optimum

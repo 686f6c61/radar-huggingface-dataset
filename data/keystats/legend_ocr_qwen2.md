@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `keystats/Legend_ocr_qwen2` aloja un modelo de visión-lenguaje publicado por el usuario `keystats` en HuggingFace. Según los metadatos del repositorio, el checkpoint contiene 8.291.375.616 parámetros (~8,3 B) almacenados en formato `safetensors`, con un tamaño total de repositorio de 16,6 GB, lo que es coherente con un guardado en precisión bf16/fp16. El pipeline declarado es `image-text-to-text` y entre las etiquetas figura `qwen2_vl`, lo que apunta a que el modelo deriva de la familia Qwen2-VL (arquitectura transformer multimodal con codificador visual y torre de lenguaje), aunque el autor no lo confirma en ninguna parte del repositorio.
+El repositorio `keystats/Legend_ocr_qwen2` aloja un modelo de visión-lenguaje publicado por el usuario `keystats` en Hugging Face. Según los metadatos del repositorio, el checkpoint contiene 8.291.375.616 parámetros (~8,3 B) almacenados en formato `safetensors`, con un tamaño total de repositorio de 16,6 GB, lo que es coherente con un guardado en precisión bf16/fp16. El pipeline declarado es `image-text-to-text` y entre las etiquetas figura `qwen2_vl`, lo que apunta a que el modelo deriva de la familia Qwen2-VL (arquitectura transformer multimodal con codificador visual y torre de lenguaje), aunque el autor no lo confirma en ninguna parte del repositorio.
 
-El nombre del modelo (`Legend_ocr_qwen2`) sugiere un ajuste fino orientado a reconocimiento óptico de caracteres (OCR) o extracción de texto a partir de imágenes y documentos. Sin embargo, la model card publicada es la plantilla automática de HuggingFace sin rellenar: todos los campos (autoría, financiación, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) aparecen como `[More Information Needed]`. No hay paper, demo, repositorio de código ni documentación adicional enlazada.
+El nombre del modelo (`Legend_ocr_qwen2`) sugiere un ajuste fino orientado a reconocimiento óptico de caracteres (OCR) o extracción de texto a partir de imágenes y documentos. Sin embargo, la model card publicada es la plantilla automática de Hugging Face sin rellenar: todos los campos (autoría, financiación, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) aparecen como `[More Information Needed]`. No hay paper, demo, repositorio de código ni documentación adicional enlazada.
 
 La relevancia práctica de este checkpoint es por tanto limitada y condicionada: se trata de una publicación con 7 descargas y 0 likes en el momento de la consulta, sin validación por parte de la comunidad y con licencia no declarada. Cualquier uso en producción exigiría auditar primero los pesos, verificar el comportamiento cualitativo y resolver la ambigüedad legal de la licencia. La etiqueta `arxiv:1910.09700` del repositorio no corresponde a un paper del modelo, sino a la referencia del calculador de impacto de carbono (Lacoste et al., 2019) que aparece citada en la plantilla de model card.
 
@@ -101,7 +101,7 @@ La unica conclusion defendible con los datos disponibles es que `Legend_ocr_qwen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keystats/Legend_ocr_qwen2
-- Perfil del autor en HuggingFace: https://huggingface.co/keystats
+- Repositorio en Hugging Face: https://huggingface.co/keystats/Legend_ocr_qwen2
+- Perfil del autor en Hugging Face: https://huggingface.co/keystats
 - Referencia citada en la etiqueta `arxiv:1910.09700` (calculador de impacto de carbono, no vinculada al modelo): https://arxiv.org/abs/1910.09700
 - Paper, blog, repositorio de codigo o demo del modelo: no disponibles.

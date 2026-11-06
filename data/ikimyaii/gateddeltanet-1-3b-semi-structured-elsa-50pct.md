@@ -98,7 +98,7 @@ La comparación cuantitativa es limitada: solo este checkpoint publica perplejid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-50pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-50pct
 - Modelo base: https://huggingface.co/m-a-p/1.3B-100B-GatedDeltaNet-pure
 - Paper de ELSA: https://arxiv.org/abs/2510.01650
 - Repositorio oficial de Gated DeltaNet (NVlabs, ICLR 2025): https://github.com/NVlabs/GatedDeltaNet

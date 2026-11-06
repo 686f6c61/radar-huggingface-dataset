@@ -79,10 +79,10 @@ No se han publicado comparaciones con otros modelos ni resultados en benchmarks 
 
 | Modelo | Parametros | Contexto / audio | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `therealbee/whisper-small-ha-lora-v2` | Adaptador LoRA sobre Whisper small (~244 M en el base) | Ventanas de 30 s (heredado) | WER 15,2170 en conjunto no descrito | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `therealbee/whisper-small-ha-finetuned` (modelo base) | ~244 M (Whisper small) | Ventanas de 30 s | No disponible en la informacion proporcionada | No disponible | HuggingFace |
-| `openai/whisper-small` | ~244 M | Ventanas de 30 s | WER publicado por OpenAI por idioma; no comparable directamente con este ajuste | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| `openai/whisper-medium` | ~769 M | Ventanas de 30 s | Mayor precision que whisper-small en la mayoria de idiomas; cifras no incluidas aqui | Apache 2.0 | HuggingFace |
+| `therealbee/whisper-small-ha-lora-v2` | Adaptador LoRA sobre Whisper small (~244 M en el base) | Ventanas de 30 s (heredado) | WER 15,2170 en conjunto no descrito | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `therealbee/whisper-small-ha-finetuned` (modelo base) | ~244 M (Whisper small) | Ventanas de 30 s | No disponible en la informacion proporcionada | No disponible | Hugging Face |
+| `openai/whisper-small` | ~244 M | Ventanas de 30 s | WER publicado por OpenAI por idioma; no comparable directamente con este ajuste | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| `openai/whisper-medium` | ~769 M | Ventanas de 30 s | Mayor precision que whisper-small en la mayoria de idiomas; cifras no incluidas aqui | Apache 2.0 | Hugging Face |
 
 No se dispone de comparativas con adaptadores equivalentes para hausa (por ejemplo variantes de MMS o XLS-R ajustadas al mismo idioma) dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento fiable.
 
@@ -102,7 +102,7 @@ No se dispone de comparativas con adaptadores equivalentes para hausa (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/therealbee/whisper-small-ha-lora-v2
+- Modelo en Hugging Face: https://huggingface.co/therealbee/whisper-small-ha-lora-v2
 - Modelo base: https://huggingface.co/therealbee/whisper-small-ha-finetuned
 - Paper de referencia de la arquitectura base (Whisper, Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio de PEFT: https://github.com/huggingface/peft

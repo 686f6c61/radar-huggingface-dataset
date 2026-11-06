@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Romanomartina/homework-retrieval es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de MoCo v3 (Momentum Contrast v3) orientada a tareas de recuperacion (retrieval). Lo publica el usuario Romanomartina bajo licencia Apache 2.0. Segun la propia model card, no se trata de un modelo preentrenado listo para produccion, sino de un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un checkpoint entrenado ni evaluado.
+Romanomartina/homework-retrieval es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de MoCo v3 (Momentum Contrast v3) orientada a tareas de recuperacion (retrieval). Lo publica el usuario Romanomartina bajo licencia Apache 2.0. Segun la propia model card, no se trata de un modelo preentrenado listo para produccion, sino de un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un checkpoint entrenado ni evaluado.
 
 El dato mas llamativo es la discrepancia entre la etiqueta declarada y el contenido real: la model card describe la configuracion como "large" y con recuento real de safetensors de 49.600 parametros, un orden de magnitud muy inferior al que suele asociarse a esa etiqueta. El repositorio ocupa 0,0 GB, no declara idiomas soportados, no tiene pipeline asignado y acumula 0 descargas y 0 likes en el momento de la consulta. Todo apunta a un artefacto de trabajo personal para revision de codigo, pruebas de integracion y experimentos controlados de pequeno alcance.
 
@@ -84,7 +84,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Romanomartina/homework-retrieval | 49.600 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace (0 descargas) |
+| Romanomartina/homework-retrieval | 49.600 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face (0 descargas) |
 | MoCo v3 original (referencia conceptual) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Alternativas de retrieval multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Romanomartina/homework-retrieval
+- Hugging Face del modelo: https://huggingface.co/Romanomartina/homework-retrieval
 - Paper de MoCo v3: no disponible en la informacion proporcionada.
 - Repositorio de codigo original de MoCo v3: no disponible en la informacion proporcionada.
 - Blog o articulo tecnico del autor: no disponible en la informacion proporcionada.

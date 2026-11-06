@@ -94,14 +94,14 @@ No se dispone de datos sobre otras alternativas de la misma categoría (otros mo
 - Calibración sesgada hacia inglés y Rust: los datos de calibración son el conjunto propio de ds4 más 34 prompts de Rust; el rendimiento en castellano u otros idiomas no está evaluado y podría degradarse más que la media.
 - Compatibilidad restringida: es un GGUF de ds4 y no funciona con llama.cpp, vLLM, TGI ni Ollama. Adoptarlo implica depender de un motor con un único mantenedor principal (antirez) y con parches manuales documentados (el propio autor necesitó un parche de dos líneas para recolectar la imatrix en CUDA).
 - Latencia no interactiva: ~7 tok/s de generación descartan casos de uso conversacionales en tiempo real.
-- Discrepancia de metadatos: la API de HuggingFace reporta un tamaño de repositorio de 0,8 GB, mientras que el fichero publicado declara 365,7 GB. Es probable que el dato corresponda a una actualización incompleta de los metadatos, pero conviene verificar el tamaño y el SHA-256 antes de descargar.
+- Discrepancia de metadatos: la API de Hugging Face reporta un tamaño de repositorio de 0,8 GB, mientras que el fichero publicado declara 365,7 GB. Es probable que el dato corresponda a una actualización incompleta de los metadatos, pero conviene verificar el tamaño y el SHA-256 antes de descargar.
 - Licencia: el repositorio se declara MIT, pero se trata de una obra derivada de DeepSeek V4.1 Flash; los términos aplicables al modelo base no se detallan en la información disponible y deben comprobarse antes de un uso comercial.
 - Sin validación comunitaria: 0 descargas y 0 valoraciones, repositorio creado y actualizado el mismo día (19 de octubre de 2026). No hay usuarios independientes que hayan confirmado la calidad de la cuantización.
 - Riesgo de alucinación: no cuantificado en la información disponible; los modelos de esta escala y con cuantización de 2 bits requieren verificación de hechos en producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ayourtch/deepseek-v4.1-flash-1017-gguf
+- Repositorio Hugging Face: https://huggingface.co/ayourtch/deepseek-v4.1-flash-1017-gguf
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Revisión del modelo base utilizada: `1bae0e1088993b9b82de08f59de5be5a34e42170`
 - Motor de inferencia ds4: https://github.com/antirez/ds4

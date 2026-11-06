@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`haozhangley/beit-classification-aug82` es un repositorio de HuggingFace que contiene una implementacion propia y minima de una arquitectura BEiT (Bert-like Image Transformer) orientada a tareas de clasificacion. No se trata de un modelo entrenado publicado como release, sino de un punto de partida reproducible: el propio autor indica de forma explicita que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint evaluado con benchmarks.
+`haozhangley/beit-classification-aug82` es un repositorio de Hugging Face que contiene una implementacion propia y minima de una arquitectura BEiT (Bert-like Image Transformer) orientada a tareas de clasificacion. No se trata de un modelo entrenado publicado como release, sino de un punto de partida reproducible: el propio autor indica de forma explicita que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint evaluado con benchmarks.
 
 El dato mas llamativo es su tamano: los pesos en safetensors suman 24.832 parametros, una cifra varios ordenes de magnitud por debajo de cualquier BEiT utilizable en produccion (las variantes habituales rondan las decenas o centenas de millones). Esto confirma que el artefacto es un andamiaje de codigo y configuracion, no un modelo con capacidad predictiva real. El repositorio incluye el script `train.py`, `config.json`, `training_args.json` y el checkpoint de inicializacion, todo bajo licencia MIT.
 
@@ -75,7 +75,7 @@ La comparacion directa con backbones de clasificacion consolidados no es posible
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| haozhangley/beit-classification-aug82 | 24.832 | no disponible | sin entrenar, sin benchmarks | MIT | HuggingFace, 0 descargas |
+| haozhangley/beit-classification-aug82 | 24.832 | no disponible | sin entrenar, sin benchmarks | MIT | Hugging Face, 0 descargas |
 | BEiT-base (referencia de la familia) | aprox. 86 M | parches de imagen | requiere fine-tuning por tarea | MIT (original) | ampliamente disponible |
 | ViT-base | aprox. 86 M | parches de imagen | requiere fine-tuning por tarea | Apache 2.0 (original) | ampliamente disponible |
 | ResNet-50 | aprox. 25,6 M | imagen completa | referencia clasica en ImageNet | BSD / Apache segun variante | ampliamente disponible |
@@ -90,11 +90,11 @@ La diferencia de tres ordenes de magnitud en numero de parametros respecto a las
 - Riesgo de alucinacion no evaluado: al no haber generacion de texto ni evaluacion, no hay datos al respecto, pero tampoco se puede descartar nada sobre futuros checkpoints.
 - Idiomas y contexto: no disponibles. La tarea declarada es clasificacion, no generacion multilingue.
 - Licencia MIT: permisiva y compatible con uso comercial, pero el autor recomienda revisar por separado los terminos de los datos fuente cuando se use con datasets externos.
-- Implementacion propia: las APIs automaticas de HuggingFace (`AutoModel`, `AutoConfig`) no cargaran el modelo sin un adaptador explicito, lo que anade trabajo de integracion.
+- Implementacion propia: las APIs automaticas de Hugging Face (`AutoModel`, `AutoConfig`) no cargaran el modelo sin un adaptador explicito, lo que anade trabajo de integracion.
 - Sin mantenimiento visible: creado el 13 de septiembre de 2026 y actualizado apenas seis segundos despues, con cero descargas y cero likes. No hay senales de soporte, issues resueltos ni evolucion del repositorio.
 - Advertencia de uso en produccion: tratar cualquier resultado derivado de este repositorio como experimental y no reproducido hasta que exista un entrenamiento documentado con semillas, versiones de entorno y metricas por tarea.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haozhangley/beit-classification-aug82
+- Hugging Face: https://huggingface.co/haozhangley/beit-classification-aug82
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las consultas devolvieron unicamente paginas generales de YouTube y YouTube Music, sin relacion con el modelo, su arquitectura ni su entrenamiento. No hay paper, blog, repositorio auxiliar ni demo asociados al modelo en la informacion disponible.

@@ -70,6 +70,6 @@ No se dispone de información sobre otras cuantizaciones del mismo modelo o alte
 ## Enlaces
 
 - Repositorio del modelo cuantizado: https://huggingface.co/FabioTrindade2/Llama-3.1-405B-Instruct-W4A16KV16-asym-GS-64
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct
 - Página oficial de Llama 3: https://developer.meta.com/ai/models/llama-3/
 - Modelo base en ModelScope: https://www.modelscope.cn/models/LLM-Research/Meta-Llama-3.1-405B-Instruct/summary

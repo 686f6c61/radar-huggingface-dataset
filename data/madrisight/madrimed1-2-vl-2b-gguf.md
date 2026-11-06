@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Madrimed1.2-VL-2B-GGUF es el conjunto de binarios cuantizados en formato GGUF del modelo MadriMed 1.2 (`madrisight/madrimed1.2-VL-2B`), un modelo vision-lenguaje compacto de 2.031.739.904 parámetros (unos 2,03 mil millones) orientado al dominio médico. Lo desarrolla el usuario `madrisight` y está publicado en HuggingFace con licencia Apache 2.0. El problema que resuelve es doble: por un lado, ofrecer un VLM médico de tamano reducido que pueda ejecutarse en local sin depender de APIs externas; por otro, proporcionar cuantizaciones listas para `llama.cpp`, `llama-server`, `llama-cpp-python` y Ollama, de modo que sea viable en hardware de consumo.
+Madrimed1.2-VL-2B-GGUF es el conjunto de binarios cuantizados en formato GGUF del modelo MadriMed 1.2 (`madrisight/madrimed1.2-VL-2B`), un modelo vision-lenguaje compacto de 2.031.739.904 parámetros (unos 2,03 mil millones) orientado al dominio médico. Lo desarrolla el usuario `madrisight` y está publicado en Hugging Face con licencia Apache 2.0. El problema que resuelve es doble: por un lado, ofrecer un VLM médico de tamano reducido que pueda ejecutarse en local sin depender de APIs externas; por otro, proporcionar cuantizaciones listas para `llama.cpp`, `llama-server`, `llama-cpp-python` y Ollama, de modo que sea viable en hardware de consumo.
 
 El modelo se apoya en la arquitectura Qwen3-VL, con un backbone de lenguaje de tipo decoder transformer autorregresivo de 28 capas y un proyector multimodal independiente (`qwen3vl_merger` / DeepStack patch merger) que procesa imagenes a 768 de resolucion. Los tags del repositorio lo asocian a tareas de radiologia y patologia, y a los conjuntos de datos VQA-RAD y SLAKE, aunque la model card no publica resultados numericos de evaluacion.
 
@@ -90,8 +90,8 @@ La informacion proporcionada solo permite comparar con la re-cuantizacion del mi
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `madrisight/madrimed1.2-VL-2B-GGUF` (este) | 2,03B | no disponible | GGUF (multimodal, requiere `mmproj`) | apache-2.0 | HuggingFace, 0 descargas |
-| `mradermacher/MadriMed-VL-2B-GGUF` | mismo modelo base (MadriMed-VL-2B) | no disponible | GGUF | no disponible en la informacion | HuggingFace, 400+ descargas en 2 dias segun publicacion en LinkedIn |
+| `madrisight/madrimed1.2-VL-2B-GGUF` (este) | 2,03B | no disponible | GGUF (multimodal, requiere `mmproj`) | apache-2.0 | Hugging Face, 0 descargas |
+| `mradermacher/MadriMed-VL-2B-GGUF` | mismo modelo base (MadriMed-VL-2B) | no disponible | GGUF | no disponible en la informacion | Hugging Face, 400+ descargas en 2 dias segun publicacion en LinkedIn |
 | Otros VLM medicos de ~2-3B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Allan-LM Quark es el primer checkpoint base de la familia Allan-LM, desarrollada desde cero por KEYTRON para su asistente Allan. Se trata de un modelo de lenguaje de tipo Mixture of Experts (MoE) con 283.661.440 parametros totales segun los safetensors publicados (el autor indica 278M totales y 107M activos por token) y una ventana de contexto entrenada de 1.024 tokens, ampliable hasta 2.048 posiciones mediante RoPE. Esta publicado en HuggingFace bajo el identificador keytron46/Allan-LM-Quark y se distribuye como modelo base, sin ajuste por instrucciones.
+Allan-LM Quark es el primer checkpoint base de la familia Allan-LM, desarrollada desde cero por KEYTRON para su asistente Allan. Se trata de un modelo de lenguaje de tipo Mixture of Experts (MoE) con 283.661.440 parametros totales segun los safetensors publicados (el autor indica 278M totales y 107M activos por token) y una ventana de contexto entrenada de 1.024 tokens, ampliable hasta 2.048 posiciones mediante RoPE. Esta publicado en Hugging Face bajo el identificador keytron46/Allan-LM-Quark y se distribuye como modelo base, sin ajuste por instrucciones.
 
 El modelo no responde preguntas ni mantiene dialogos: su funcion es la continuacion de texto en ruso e ingles, con exposicion a codigo fuente. La relevancia principal es de investigacion: documenta una arquitectura propia y poco habitual en este rango de tamano, combinando MoE con Per-Layer Embeddings (PLE) al estilo de los modelos E de Gemma, y ofrece pesos en fp32 con embeddings atados.
 
@@ -93,7 +93,7 @@ Comparativa de rendimiento: no disponible. No hay benchmarks publicados de Allan
 
 ## Enlaces
 
-- [HuggingFace: keytron46/Allan-LM-Quark](https://huggingface.co/keytron46/Allan-LM-Quark)
+- [Hugging Face: keytron46/Allan-LM-Quark](https://huggingface.co/keytron46/Allan-LM-Quark)
 - [Dataset: HuggingFaceFW/fineweb-2](https://huggingface.co/datasets/HuggingFaceFW/fineweb-2)
 - [Dataset: HuggingFaceFW/fineweb-edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu)
 - [Dataset: codeparrot/github-code-clean](https://huggingface.co/datasets/codeparrot/github-code-clean)

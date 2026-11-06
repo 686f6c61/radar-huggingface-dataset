@@ -25,12 +25,12 @@ Su relevancia practica esta condicionada por un requisito de despliegue poco hab
 | Dataset de calibracion | jayzou3773/less-is-moe-s1-calibration-128-seq8192 (revision `678b4e666183e16ec00376960df03b6381632ed1`) |
 | Requisito de inferencia | plugin ragged de vLLM de Less-is-MoE (imagen GPU unificada del proyecto); no compatible con vLLM estandar |
 | Tamano del repositorio | 128,3 GB |
-| Fecha de publicacion | 18 de septiembre de 2026 (segun HuggingFace) |
+| Fecha de publicacion | 18 de septiembre de 2026 (segun Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del checkpoint base Qwen/Qwen3.5-122B-A10B: un transformer autoregresivo de tipo mixture-of-experts con expertos enrutados, etiquetado en HuggingFace con la arquitectura `qwen3_5_moe_text` y el pipeline `text-generation`. Este checkpoint no incorpora ninguna innovacion arquitectonica nueva; lo que hace es modificar la forma de las FFN de los expertos. La poda es estructural, no de magnitud sobre pesos aislados: se elimina un 50% fijo de las neuronas de las FFN de los expertos enrutados mediante el criterio de media absoluta del gradiente implementado en Less-is-MoE. La diferencia entre variantes radica en como se almacenan las anchuras resultantes: IntDim-E aplica una anchura uniforme, mientras que IntDim-L y IntDim-G conservan la topologia MoE enrutada y guardan anchuras compactas por experto en `config.json`. Este checkpoint pertenece a la familia IntDim-G.
+La arquitectura es la del checkpoint base Qwen/Qwen3.5-122B-A10B: un transformer autoregresivo de tipo mixture-of-experts con expertos enrutados, etiquetado en Hugging Face con la arquitectura `qwen3_5_moe_text` y el pipeline `text-generation`. Este checkpoint no incorpora ninguna innovacion arquitectonica nueva; lo que hace es modificar la forma de las FFN de los expertos. La poda es estructural, no de magnitud sobre pesos aislados: se elimina un 50% fijo de las neuronas de las FFN de los expertos enrutados mediante el criterio de media absoluta del gradiente implementado en Less-is-MoE. La diferencia entre variantes radica en como se almacenan las anchuras resultantes: IntDim-E aplica una anchura uniforme, mientras que IntDim-L y IntDim-G conservan la topologia MoE enrutada y guardan anchuras compactas por experto en `config.json`. Este checkpoint pertenece a la familia IntDim-G.
 
 El proceso de calibracion esta documentado con detalle reproducible: 128 muestras tomadas de `yentinglin/s1K-1.1-trl-format` (revision `58a01564d278477da20ead1bcf1cde8e31f36251`), con los ajustes de carga `train` y `messages`, `shuffle_seed=1234`, `seq_length=8192`, truncado por prefijo, sin padding y en BF16, sin ningun paso de optimizador. El checkpoint origen se cargo y se podo en BF16. Se publican dos hashes de trazabilidad: el de seleccion de filas fuente, `f261e952d4e6d5dec6d37db4ab22636761b215281d33896060fe4467bb352784`, y el de tokens especificos del modelo, `47214818e5c0acaa6e65d3f212f7fab62937a4085d26394c356e3be1c94fffbf`. Los metadatos completos de exportacion y de equivalencia con mascara cero estan en `experiment-export.json`. No se documenta en la informacion disponible ninguna fase de RLHF, DPO o ajuste supervisado posterior a la poda.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-g-50
+- Modelo en Hugging Face: https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-g-50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Dataset de calibracion publicado: https://huggingface.co/datasets/jayzou3773/less-is-moe-s1-calibration-128-seq8192 (revision `678b4e666183e16ec00376960df03b6381632ed1`)
 - Dataset fuente de calibracion: https://huggingface.co/datasets/yentinglin/s1K-1.1-trl-format (revision `58a01564d278477da20ead1bcf1cde8e31f36251`)

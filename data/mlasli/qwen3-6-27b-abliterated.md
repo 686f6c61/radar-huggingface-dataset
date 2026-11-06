@@ -83,7 +83,7 @@ La comparativa directa con modelos abliterados de otros fabricantes (p. ej., Lla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlasli/Qwen3.6-27B-abliterated
+- Hugging Face: https://huggingface.co/mlasli/Qwen3.6-27B-abliterated
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Blog de Qwen sobre Qwen3.6-27B: https://qwen.ai/blog?id=qwen3.6-27b
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic

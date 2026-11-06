@@ -81,7 +81,7 @@ La información proporcionada solo permite comparar dentro de la propia familia 
 
 | Modelo | Parámetros | Contexto | bpB de validación (ruso) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`bnd_wpd`, semillas 0/1/2) | no disponible | 2.048 | 0,54273 / 0,54269 / 0,54259 | Apache 2.0 | HuggingFace |
+| Este modelo (`bnd_wpd`, semillas 0/1/2) | no disponible | 2.048 | 0,54273 / 0,54269 / 0,54259 | Apache 2.0 | Hugging Face |
 | Variante `plain` (mismo entrenamiento, tokenizador sin marcadores) | idénticos al anterior | 2.048 | 0,54900 / 0,54927 / 0,54944 (derivado de la diferencia publicada) | Apache 2.0 | Repositorio script_tok |
 | Esquema `bnd_w` (marca fronteras de palabra, sin puntuación ni dígitos) | idénticos | 2.048 | no disponible en esta ficha; consultar el repositorio script_tok | Apache 2.0 | Repositorio script_tok |
 | Otros esquemas, entrenadores e idiomas del mismo estudio | idénticos dentro de cada comparación | 2.048 | no disponible | Apache 2.0 | Repositorio script_tok |
@@ -103,7 +103,7 @@ La información proporcionada solo permite comparar dentro de la propia familia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_wpd-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_wpd-mingram
 - Artículo: Explicit Boundary Markers for Subword Vocabularies (Sander Land y Clara Meister), https://arxiv.org/abs/2608.08847
 - Repositorio script_tok (tokenizadores, scripts de entrenamiento y comparación completa entre esquemas, entrenadores e idiomas): https://github.com/sanderland/script_tok
 - nanochat (Karpathy), usado en el commit `92d63d4`: https://github.com/karpathy/nanochat

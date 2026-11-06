@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Juuzumaki/gemma-4-E2B-it-litert-lm
+- Repositorio Hugging Face: https://huggingface.co/Juuzumaki/gemma-4-E2B-it-litert-lm
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio de la comunidad LiteRT: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm
 - Repositorio alternativo: https://huggingface.co/huggingworld/gemma-4-E2B-it-litert-lm

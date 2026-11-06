@@ -4,7 +4,7 @@
 
 El repositorio `davidheineman/rlve-archive-mopd-sweep-n4-learned-teachers-2026100-01-circuit-2c1f5a6ba6cf` es un checkpoint archivado, no un modelo publicado como producto. Segun la propia model card, se trata del checkpoint final del run `runs/mopd-sweep-n4-learned-teachers-20261002-165646/resumable/01-Circuit`, guardado en formato `hf-safetensors` en el paso 149, con identificador de run de Weights & Biases `a8690e1c`. El autor, `davidheineman`, lo conserva bajo las etiquetas `rlve` y `scratch-archive`, lo que indica que forma parte de una campana de experimentacion (un barrido de entrenamiento) y no de una release destinada a uso general.
 
-Tecnicamente, el checkpoint contiene 1.777.088.000 parametros reales medidos sobre los ficheros safetensors, lo que lo situa en la franja de los modelos de aproximadamente 1,8 mil millones de parametros. La etiqueta `qwen2` en HuggingFace indica que la arquitectura declarada es la de la familia Qwen2, es decir, un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU y atencion con RoPE y sesgo QKV, aunque no se dispone de confirmacion detallada por parte del autor. El repositorio ocupa 3,6 GB.
+Tecnicamente, el checkpoint contiene 1.777.088.000 parametros reales medidos sobre los ficheros safetensors, lo que lo situa en la franja de los modelos de aproximadamente 1,8 mil millones de parametros. La etiqueta `qwen2` en Hugging Face indica que la arquitectura declarada es la de la familia Qwen2, es decir, un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU y atencion con RoPE y sesgo QKV, aunque no se dispone de confirmacion detallada por parte del autor. El repositorio ocupa 3,6 GB.
 
 Su relevancia es fundamentalmente documental y de reproducibilidad: preserva el estado exacto de un experimento de aprendizaje por refuerzo dentro de una campana de barrido con "learned teachers" (profesores aprendidos) y cuatro variantes (`n4`). Al no incluir pipeline, licencia, idiomas ni resultados de evaluacion, no debe tratarse como un modelo listo para produccion, sino como un artefacto de investigacion para inspeccion, analisis de pesos o continuacion del entrenamiento.
 
@@ -92,14 +92,14 @@ La diferencia principal frente a estas alternativas no es de rendimiento, sino d
 - Idiomas: no declarados. No puede asumirse un buen rendimiento en castellano ni en ningun otro idioma concreto.
 - Contexto: se desconoce la longitud de contexto soportada, lo que impide disenar aplicaciones que dependan de ventanas largas.
 - Paso de checkpoint 149: es un checkpoint temprano dentro de un run; podria no representar un estado convergido ni el mejor punto de la campana.
-- Formato Megatron adicional: el directorio `checkpoint/` contiene el estado distribuido exacto, lo que anade complejidad si se pretende cargar con herramientas estandar de HuggingFace.
+- Formato Megatron adicional: el directorio `checkpoint/` contiene el estado distribuido exacto, lo que anade complejidad si se pretende cargar con herramientas estandar de Hugging Face.
 - Fechas del repositorio en 2026: la fecha de creacion y actualizacion declarada es posterior a la de la mayoria de releases del ecosistema, lo que refuerza que se trata de un artefacto experimental aislado y no de un modelo mantenido.
 - Cero descargas y cero likes: no hay validacion alguna por parte de la comunidad ni casos de uso reportados.
 - No debe utilizarse en produccion sin una evaluacion propia exhaustiva de calidad, seguridad y licencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n4-learned-teachers-2026100-01-circuit-2c1f5a6ba6cf
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n4-learned-teachers-2026100-01-circuit-2c1f5a6ba6cf
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - Run de Weights & Biases (ID `a8690e1c`): no se proporciona URL directa en la informacion disponible
 - Paper, blog, repositorio de codigo o demo: no disponibles

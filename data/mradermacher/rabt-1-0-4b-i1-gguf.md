@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rabt-1.0-4B-i1-GGUF es una colección de cuantizaciones en formato GGUF del modelo Rabt-1.0-4B, publicado por el usuario 4waiz y cuantizado por mradermacher, un colaborador conocido en HuggingFace por generar cuantizaciones imatrix (importance matrix) de modelos populares para la comunidad. Este repositorio no es un modelo original, sino un derivado: su propósito es facilitar la ejecución del modelo en hardware de consumo mediante llama.cpp, Ollama y herramientas compatibles con GGUF.
+Rabt-1.0-4B-i1-GGUF es una colección de cuantizaciones en formato GGUF del modelo Rabt-1.0-4B, publicado por el usuario 4waiz y cuantizado por mradermacher, un colaborador conocido en Hugging Face por generar cuantizaciones imatrix (importance matrix) de modelos populares para la comunidad. Este repositorio no es un modelo original, sino un derivado: su propósito es facilitar la ejecución del modelo en hardware de consumo mediante llama.cpp, Ollama y herramientas compatibles con GGUF.
 
 El modelo base, Rabt-1.0-4B, es un modelo de aproximadamente 4.000 millones de parámetros del que no se ha publicado documentación técnica detallada en la información disponible. No consta su arquitectura, datos de entrenamiento, licencia ni capacidades específicas. La relevancia de esta ficha radica principalmente en la disponibilidad de cuantizaciones de calidad con imatrix, que reducen significativamente los requisitos de memoria sin sacrificar tanto rendimiento como las cuantizaciones estándar.
 

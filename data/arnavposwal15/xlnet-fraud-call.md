@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xlnet-fraud-call es un modelo de clasificación de texto obtenido mediante ajuste fino de `xlnet-base-cased` sobre un conjunto de datos propio orientado a la detección de fraudes telefónicos. El modelo resuelve una tarea binaria: clasificar una transcripción de llamada como fraude (clase 1) o no fraude (clase 0). Lo publica el usuario ArnavPoswal15 en HuggingFace con licencia MIT y un único artefacto de pesos en formato PyTorch `state_dict` (`xlnet_fraud.pt`), no como carpeta completa de modelo de Transformers.
+xlnet-fraud-call es un modelo de clasificación de texto obtenido mediante ajuste fino de `xlnet-base-cased` sobre un conjunto de datos propio orientado a la detección de fraudes telefónicos. El modelo resuelve una tarea binaria: clasificar una transcripción de llamada como fraude (clase 1) o no fraude (clase 0). Lo publica el usuario ArnavPoswal15 en Hugging Face con licencia MIT y un único artefacto de pesos en formato PyTorch `state_dict` (`xlnet_fraud.pt`), no como carpeta completa de modelo de Transformers.
 
 La arquitectura subyacente es XLNet en su variante base con cased, un transformer autorregresivo-permutacional de aproximadamente 110 millones de parámetros y una longitud de contexto típica de 512 tokens. El modelo se distribuye únicamente en inglés y está pensado para un caso de uso muy acotado: análisis de transcripciones normalizadas de llamadas con posible intención fraudulenta.
 
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xlnet-fraud-call | no disponible (base XLNet ~110 M) | no disponible (base 512) | Clasificación fraude binaria | MIT | Pesos `state_dict` en HuggingFace |
-| xlnet-base-cased | ~110 M | 512 | Modelo base de lenguaje | MIT | Carpeta completa en HuggingFace |
-| bert-base-cased | ~110 M | 512 | Modelo base de lenguaje | Apache 2.0 | Carpeta completa en HuggingFace |
-| roberta-base | ~125 M | 512 | Modelo base de lenguaje | MIT | Carpeta completa en HuggingFace |
+| xlnet-fraud-call | no disponible (base XLNet ~110 M) | no disponible (base 512) | Clasificación fraude binaria | MIT | Pesos `state_dict` en Hugging Face |
+| xlnet-base-cased | ~110 M | 512 | Modelo base de lenguaje | MIT | Carpeta completa en Hugging Face |
+| bert-base-cased | ~110 M | 512 | Modelo base de lenguaje | Apache 2.0 | Carpeta completa en Hugging Face |
+| roberta-base | ~125 M | 512 | Modelo base de lenguaje | MIT | Carpeta completa en Hugging Face |
 
 No se dispone de comparaciones de rendimiento publicadas entre xlnet-fraud-call y alternativas ajustadas para detección de fraude telefónico. Las alternativas de la tabla son modelos base de tamaño comparable que podrían servir como punto de partida para un ajuste fino equivalente, pero no se han evaluado sobre el mismo conjunto de 21 transcripciones.
 
@@ -101,7 +101,7 @@ No se dispone de comparaciones de rendimiento publicadas entre xlnet-fraud-call 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArnavPoswal15/xlnet-fraud-call
+- Modelo en Hugging Face: https://huggingface.co/ArnavPoswal15/xlnet-fraud-call
 - Modelo base: https://huggingface.co/xlnet/xlnet-base-cased
 - Repositorio de código del proyecto: no disponible (la model card incluye un enlace con marcadores de posición no funcionales)
 - Paper de XLNet: no disponible en la información proporcionada

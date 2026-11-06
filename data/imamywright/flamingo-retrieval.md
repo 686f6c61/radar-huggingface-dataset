@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imamywright/flamingo-retrieval` es un repositorio experimental publicado en HuggingFace por el usuario imamywright que contiene una implementacion propia de una arquitectura tipo Flamingo orientada a tareas de retrieval multimodal. No se trata de un modelo entrenado, sino de un esqueleto de codigo con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`imamywright/flamingo-retrieval` es un repositorio experimental publicado en Hugging Face por el usuario imamywright que contiene una implementacion propia de una arquitectura tipo Flamingo orientada a tareas de retrieval multimodal. No se trata de un modelo entrenado, sino de un esqueleto de codigo con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El checkpoint pesa 0.0 GB y declara 33.088 parametros totales en el fichero `model.safetensors`, lo que lo situa en una escala "tiny" deliberadamente manejable. La arquitectura combina atencion flash, fusion de modalidades mediante concat mlp, activacion mish y normalizacion scalenorm. La receta de experimento por defecto usa el optimizador rmsprop con un schedule onecycle.
 
@@ -52,7 +52,7 @@ No hay evidencia de un entrenamiento completado. El fichero `model.safetensors` 
 - Estudio comparado de estrategias de fusion multimodal: al mantener el resto de la configuracion fija, se puede aislar el efecto de cambiar concat mlp por otras fusiones.
 - Evaluacion en Flickr30k: es la primera evaluacion que el propio autor sugiere, reportando la metrica de la tarea en al menos tres semillas e incluyendo un baseline de capacidad equivalente.
 - Investigacion sobre retrieval multimodal texto-imagen: base para experimentar con objetivos de recuperacion sobre representaciones conjuntas.
-- Desarrollo del adaptador de carga necesario para integrar la implementacion custom en frameworks estandar (PyTorch Lightning, HuggingFace Trainer, etc.).
+- Desarrollo del adaptador de carga necesario para integrar la implementacion custom en frameworks estandar (PyTorch Lightning, Hugging Face Trainer, etc.).
 
 ## Benchmarks y rendimiento
 
@@ -72,7 +72,7 @@ No se dispone en la informacion proporcionada de modelos comparables directos, y
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| imamywright/flamingo-retrieval | 33.088 (tiny) | no disponible | sin benchmark publicado | apache-2.0 | HuggingFace (checkpoint de inicializacion) |
+| imamywright/flamingo-retrieval | 33.088 (tiny) | no disponible | sin benchmark publicado | apache-2.0 | Hugging Face (checkpoint de inicializacion) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,5 +88,5 @@ No se dispone en la informacion proporcionada de modelos comparables directos, y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imamywright/flamingo-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/imamywright/flamingo-retrieval
 - Resultados de busqueda web: la busqueda no devolvio ningun enlace relevante sobre este modelo; unicamente aparecieron resultados no relacionados (WhatsApp Web, descargas de WhatsApp y similares). No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo.

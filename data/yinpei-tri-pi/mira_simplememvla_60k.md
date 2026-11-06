@@ -21,7 +21,7 @@ La relevancia actual del repositorio es limitada y muy especifica: sirve para re
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (`model.safetensors` por checkpoint) |
 
-Datos adicionales del repositorio: tamano total 25,4 GB, 0 descargas y 0 likes en el momento de la consulta. Fecha de creacion y ultima actualizacion registradas: 2026-09-24. Idiomas y pipeline de HuggingFace figuran como no disponibles.
+Datos adicionales del repositorio: tamano total 25,4 GB, 0 descargas y 0 likes en el momento de la consulta. Fecha de creacion y ultima actualizacion registradas: 2026-09-24. Idiomas y pipeline de Hugging Face figuran como no disponibles.
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se dispone de datos verificados sobre modelos comparables en la informacion p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mira_simplememvla_60k | no disponible | no disponible | Apache 2.0 | HuggingFace (checkpoints 30k y 40k) |
+| mira_simplememvla_60k | no disponible | no disponible | Apache 2.0 | Hugging Face (checkpoints 30k y 40k) |
 | OpenVLA | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | pi0 / OpenPI | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | RDT-1B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
@@ -92,5 +92,5 @@ No se dispone de datos verificados sobre modelos comparables en la informacion p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yinpei-tri-pi/mira_simplememvla_60k
+- Repositorio en Hugging Face: https://huggingface.co/yinpei-tri-pi/mira_simplememvla_60k
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion proporcionada.

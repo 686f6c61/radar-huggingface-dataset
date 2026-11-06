@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DunoonDaemon-Standalone es un modelo publicado por el usuario Kepler365 en HuggingFace bajo licencia MIT. La model card asociada no contiene ninguna documentacion tecnica: no se especifican la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo. El unico dato disponible es la declaracion de licencia (MIT) y la etiqueta de region (US).
+DunoonDaemon-Standalone es un modelo publicado por el usuario Kepler365 en Hugging Face bajo licencia MIT. La model card asociada no contiene ninguna documentacion tecnica: no se especifican la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo. El unico dato disponible es la declaracion de licencia (MIT) y la etiqueta de region (US).
 
 El modelo fue creado el 16 de agosto de 2026 y, en el momento de la consulta, registra cero descargas y cero likes, lo que indica que no ha sido adoptado por la comunidad o que su publicacion es muy reciente. La ausencia total de especificaciones tecnicas impide cualquier evaluacion objetiva de su rendimiento o idoneidad para casos de uso concretos.
 
@@ -55,4 +55,4 @@ No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del
 
 ## Enlaces
 
-- [HuggingFace: Kepler365/DunoonDaemon-Standalone](https://huggingface.co/Kepler365/DunoonDaemon-Standalone)
+- [Hugging Face: Kepler365/DunoonDaemon-Standalone](https://huggingface.co/Kepler365/DunoonDaemon-Standalone)

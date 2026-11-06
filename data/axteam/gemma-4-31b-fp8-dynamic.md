@@ -78,8 +78,8 @@ Además, se midió perplejidad frente al BF16 original sobre WikiText-2 (inglés
 
 | Modelo | Parámetros | Contexto | Media benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `axteam/gemma-4-31B-FP8-dynamic` | 31,27 B | No disponible | 78,38 | Apache-2.0 | HuggingFace |
-| `google/gemma-4-31B` (BF16) | 31,27 B | No disponible | 78,71 | Gemma 4 / Apache-2.0 | HuggingFace |
+| `axteam/gemma-4-31B-FP8-dynamic` | 31,27 B | No disponible | 78,38 | Apache-2.0 | Hugging Face |
+| `google/gemma-4-31B` (BF16) | 31,27 B | No disponible | 78,71 | Gemma 4 / Apache-2.0 | Hugging Face |
 | Build AWQ-8bit de referencia | 31,27 B | No disponible | 78,60 | No disponible | No disponible |
 | Build NVFP4 de referencia | 31,27 B | No disponible | 76,79 | No disponible | No disponible |
 
@@ -100,7 +100,7 @@ La comparativa se limita a variantes de cuantización del mismo modelo base, ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-31B-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-31B-FP8-dynamic
 - Modelo base: https://huggingface.co/google/gemma-4-31B
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

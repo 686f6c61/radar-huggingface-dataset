@@ -17,7 +17,7 @@ El modelo tiene 4.300.079.472 parametros (~4,3 B), ocupa 5,5 GB en el repositori
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada; el ejemplo de despliegue del autor configura max_model_len=4096 |
 | Tipos de cuantizacion | MXFP8: pesos Float8 E4M3 con escalado por grupos de 32 y exponentes E8M0; activaciones con microscaling dinamico por grupos de 32. lm_head, embed_tokens, multi_modal_projector y vision tower preservados en BF16 |
-| Idiomas soportados | No disponible (el campo de idiomas de la ficha de HuggingFace figura como no disponible) |
+| Idiomas soportados | No disponible (el campo de idiomas de la ficha de Hugging Face figura como no disponible) |
 | Licencia | Gemma (Gemma Terms of Use) |
 | Formato de pesos | safetensors con cuantizacion compressed-tensors (MXFP8); incluye config.json, recipe.yaml, tokenizer, processor y plantilla de chat |
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Demondiablo/medgemma-4b-it-mxfp8 | 4,3 B | No disponible (ejemplo de despliegue con 4096) | MXFP8 (E4M3 con escalado por grupos de 32) | Gemma | HuggingFace, vLLM, TGI |
-| google/medgemma-4b-it (modelo base) | Mismo base, ~4,3 B (no confirmado en la informacion proporcionada) | No disponible | BF16 | Gemma | HuggingFace, transformers |
+| Demondiablo/medgemma-4b-it-mxfp8 | 4,3 B | No disponible (ejemplo de despliegue con 4096) | MXFP8 (E4M3 con escalado por grupos de 32) | Gemma | Hugging Face, vLLM, TGI |
+| google/medgemma-4b-it (modelo base) | Mismo base, ~4,3 B (no confirmado en la informacion proporcionada) | No disponible | BF16 | Gemma | Hugging Face, transformers |
 | Otras cuantizaciones de medgemma-4b-it (FP8, INT8, AWQ, GGUF) | No disponible | No disponible | No disponible | Gemma | No disponible en la informacion proporcionada |
 
 Las busquedas web realizadas no devolvieron informacion tecnica relacionada con este modelo ni con alternativas comparables, por lo que no se pueden completar mas filas de la comparativa con datos verificados.
@@ -92,7 +92,7 @@ Las busquedas web realizadas no devolvieron informacion tecnica relacionada con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Demondiablo/medgemma-4b-it-mxfp8
+- Modelo en Hugging Face: https://huggingface.co/Demondiablo/medgemma-4b-it-mxfp8
 - Modelo base: https://huggingface.co/google/medgemma-4b-it
 - llm-compressor (framework de cuantizacion): https://github.com/vllm-project/llm-compressor
 - compressed-tensors (formato de checkpoint): https://github.com/vllm-project/compressed-tensors

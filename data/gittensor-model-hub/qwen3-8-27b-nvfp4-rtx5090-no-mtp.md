@@ -34,7 +34,7 @@ No se dispone de información sobre el entrenamiento original del modelo base (n
 - Soporte de agentes: al combinar tool calling y razonamiento, puede usarse como motor de agentes autónomos.
 - Decodificación especulativa: en SGLang, compatible con el drafter externo DSpark-NVFP4 v2 (que alcanza 155,8 tok/s con tasa de aceptación 2,886); en vLLM no hay especulación disponible en esta variante (el MTP fue eliminado).
 - Multilingüismo: no documentado en la información disponible.
-- Aunque el pipeline_tag de HuggingFace es `image-text-to-text`, la model card no documenta capacidades de visión; se trata de un modelo de texto.
+- Aunque el pipeline_tag de Hugging Face es `image-text-to-text`, la model card no documenta capacidades de visión; se trata de un modelo de texto.
 
 ## Casos de uso
 
@@ -85,7 +85,7 @@ La variante No-MTP se diferencia del padre únicamente en la ausencia del cabeza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-No-MTP
+- Modelo en Hugging Face: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-No-MTP
 - Modelo padre (con MTP): https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090
 - Drafter DSpark-NVFP4 v2: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-DSpark-NVFP4
 - Descripción en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-nvfp4-rtx5090-gittensor-model-hub

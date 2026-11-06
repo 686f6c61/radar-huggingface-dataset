@@ -61,5 +61,5 @@ No se dispone de datos comparativos en la información disponible. El modelo se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/yuhanb/multimodal-vision-ocr](https://huggingface.co/yuhanb/multimodal-vision-ocr)
+- Modelo en Hugging Face: [https://huggingface.co/yuhanb/multimodal-vision-ocr](https://huggingface.co/yuhanb/multimodal-vision-ocr)
 - Repositorio relacionado de OCR multimodal (no es el mismo modelo): [https://github.com/shaneholloman/multimodal-ocr](https://github.com/shaneholloman/multimodal-ocr)

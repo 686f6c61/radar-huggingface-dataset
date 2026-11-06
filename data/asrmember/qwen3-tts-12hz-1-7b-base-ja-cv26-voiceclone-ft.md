@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros totales | Idiomas | Control por instrucciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ASRmember/Qwen3-TTS-12Hz-1.7B-Base-ja-CV26-VoiceClone-FT (este) | 1.928.677.440 | Japonés (fine-tune) | No | Apache 2.0 | HuggingFace |
+| ASRmember/Qwen3-TTS-12Hz-1.7B-Base-ja-CV26-VoiceClone-FT (este) | 1.928.677.440 | Japonés (fine-tune) | No | Apache 2.0 | Hugging Face |
 | Qwen3-TTS-12Hz-1.7B-Base | ~1.7B | 10 idiomas | No | No disponible | Descarga automática con qwen-tts o vLLM; ModelScope |
 | Qwen3-TTS-12Hz-0.6B-Base | ~0.6B | 10 idiomas | No | No disponible | Descarga automática con qwen-tts o vLLM; ModelScope |
 
@@ -79,6 +79,6 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASRmember/Qwen3-TTS-12Hz-1.7B-Base-ja-CV26-VoiceClone-FT
+- Hugging Face: https://huggingface.co/ASRmember/Qwen3-TTS-12Hz-1.7B-Base-ja-CV26-VoiceClone-FT
 
 La model card referencia un directorio `training/TRAINING.md` en el repositorio, pero no se dispone de más enlaces relevantes. La búsqueda web realizada no arrojó ningún enlace adicional relacionado con el modelo.

@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: [koshuro/MiniCPM5-1B-heretic-Q8_0-GGUF](https://huggingface.co/koshuro/MiniCPM5-1B-heretic-Q8_0-GGUF)
+- Repositorio Hugging Face: [koshuro/MiniCPM5-1B-heretic-Q8_0-GGUF](https://huggingface.co/koshuro/MiniCPM5-1B-heretic-Q8_0-GGUF)
 - Modelo base (referencia): [koshuro/MiniCPM5-1B-heretic](https://huggingface.co/koshuro/MiniCPM5-1B-heretic) (enlace inferido, no verificado)
 - Herramienta de conversión: [GGUF-my-repo](https://huggingface.co/spaces/ggml-org/gguf-my-repo)
 - Documentación de llama.cpp: [llama.cpp](https://github.com/ggerganov/llama.cpp)

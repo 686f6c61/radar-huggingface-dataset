@@ -77,7 +77,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros totales / activos | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | ~321B / ~18B | hasta 1M | MIT | Sí (image-text-to-text) | HuggingFace, API Z.ai |
+| GLM-5.3-Flash | ~321B / ~18B | hasta 1M | MIT | Sí (image-text-to-text) | Hugging Face, API Z.ai |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Claude Opus 4.8 | no disponible | no disponible | propietaria | no disponible | API propietaria |
 
@@ -96,7 +96,7 @@ La model card afirma que GLM-5.3-Flash supera a GLM-5.2 en benchmarks y cargas r
 
 ## Enlaces
 
-- [HuggingFace: kazzper/GLM-5.3-Flash](https://huggingface.co/kazzper/GLM-5.3-Flash)
+- [Hugging Face: kazzper/GLM-5.3-Flash](https://huggingface.co/kazzper/GLM-5.3-Flash)
 - [Blog de GLM-5.3-Flash](https://z.ai/blog/glm-5.3-flash)
 - [Technical report (arXiv:2602.15763)](https://arxiv.org/abs/2602.15763)
 - [API Z.ai para GLM-5.3-Flash](https://docs.z.ai/guides/llm/glm-5.3-flash)

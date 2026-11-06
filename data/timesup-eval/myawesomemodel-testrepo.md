@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un repositorio alojado en HuggingFace bajo la organizacion Timesup-eval, identificado como un modelo de tipo feature-extraction construido con PyTorch y compatible con la libreria transformers. Segun los metadatos de la plataforma, la arquitectura declarada esta basada en BERT y el repositorio se distribuye bajo licencia MIT. El repositorio presenta 0 descargas, 0 likes y un tamano reportado de 0.0 GB, lo que sugiere que se trata de un repositorio de prueba o de un espacio de evaluacion vacio mas que de un modelo entrenado y publicado de forma definitiva.
+MyAwesomeModel es un repositorio alojado en Hugging Face bajo la organizacion Timesup-eval, identificado como un modelo de tipo feature-extraction construido con PyTorch y compatible con la libreria transformers. Segun los metadatos de la plataforma, la arquitectura declarada esta basada en BERT y el repositorio se distribuye bajo licencia MIT. El repositorio presenta 0 descargas, 0 likes y un tamano reportado de 0.0 GB, lo que sugiere que se trata de un repositorio de prueba o de un espacio de evaluacion vacio mas que de un modelo entrenado y publicado de forma definitiva.
 
-Existe una incongruencia destacable entre los metadatos y el contenido de la model card. Mientras que los tags de HuggingFace apuntan a BERT y a tareas de extraccion de caracteristicas, el README describe un supuesto modelo generativo de razonamiento con modo de pensamiento, soporte de function calling y mejoras en tareas de matematicas y programacion. Ademas, las tablas de evaluacion del README emplean nombres genericos de columna ("Model1", "Model2", "Model1-v2"), lo que indica que el documento es una plantilla y no una ficha tecnica con resultados verificables de este repositorio concreto.
+Existe una incongruencia destacable entre los metadatos y el contenido de la model card. Mientras que los tags de Hugging Face apuntan a BERT y a tareas de extraccion de caracteristicas, el README describe un supuesto modelo generativo de razonamiento con modo de pensamiento, soporte de function calling y mejoras en tareas de matematicas y programacion. Ademas, las tablas de evaluacion del README emplean nombres genericos de columna ("Model1", "Model2", "Model1-v2"), lo que indica que el documento es una plantilla y no una ficha tecnica con resultados verificables de este repositorio concreto.
 
 Por todo lo anterior, esta ficha debe interpretarse como una descripcion del repositorio tal y como aparece publicado, con numerosos campos marcados como "no disponible" por ausencia de informacion fiable. No se recomienda su uso en produccion ni su evaluacion tecnica sin antes verificar la existencia real de pesos y documentacion del autor.
 
@@ -12,7 +12,7 @@ Por todo lo anterior, esta ficha debe interpretarse como una descripcion del rep
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun tag de HuggingFace); la model card sugiere un modelo generativo de razonamiento, dato contradictorio y no verificable |
+| Arquitectura | BERT (segun tag de Hugging Face); la model card sugiere un modelo generativo de razonamiento, dato contradictorio y no verificable |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no se declara arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por todo lo anterior, esta ficha debe interpretarse como una descripcion del rep
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace etiquetan el modelo con las etiquetas "bert", "pytorch", "transformers" y el pipeline "feature-extraction", lo que apuntaria a un encoder tipo transformer bidireccional orientado a la generacion de embeddings o representaciones. Sin embargo, la model card describe un modelo generativo con razonamiento profundo, modo de pensamiento y soporte de function calling, capacidades propias de un decoder autorregresivo. Esta contradiccion impide determinar la arquitectura real del repositorio.
+Los metadatos de Hugging Face etiquetan el modelo con las etiquetas "bert", "pytorch", "transformers" y el pipeline "feature-extraction", lo que apuntaria a un encoder tipo transformer bidireccional orientado a la generacion de embeddings o representaciones. Sin embargo, la model card describe un modelo generativo con razonamiento profundo, modo de pensamiento y soporte de function calling, capacidades propias de un decoder autorregresivo. Esta contradiccion impide determinar la arquitectura real del repositorio.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de ajuste como RLHF o DPO. La model card menciona de forma generica "mayor uso de recursos computacionales" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", pero sin datos cuantificables. El repositorio ocupa 0.0 GB, lo que sugiere que no contiene pesos entrenados.
 
@@ -80,7 +80,7 @@ Adicionalmente, la model card afirma una mejora en AIME 2025 del 70% al 87,5% re
 - VRAM estimada para inferencia: no disponible. El tamano del repositorio es 0.0 GB, por lo que no se puede estimar a partir de los pesos publicados.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el tag endpoints_compatible sugiere compatibilidad con HuggingFace Inference Endpoints, y la libreria transformers permitiria en teoria usar el pipeline feature-extraction. No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: el tag endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints, y la libreria transformers permitiria en teoria usar el pipeline feature-extraction. No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ No es posible establecer una comparativa rigurosa porque no se conoce la arquite
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Timesup-eval/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/Timesup-eval/MyAwesomeModel-TestRepo
 - Repositorio de codigo: no disponible (la model card menciona "our code repository" sin enlace)
 - Web oficial del modelo: no disponible (la model card menciona "our official website" sin enlace)
 - Paper: no disponible

@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks comparativos directos con otros modelos en 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/tryambientai/Qwen3-ASR-0.6B-gguf
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/tryambientai/Qwen3-ASR-0.6B-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Commit upstream fijado: https://huggingface.co/Qwen/Qwen3-ASR-0.6B/commit/5eb144179a02acc5e5ba31e748d22b0cf3e303b0
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

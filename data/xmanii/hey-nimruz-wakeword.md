@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xmanii/hey-nimruz-wakeword` es un clasificador de audio diseñado para la detección de la palabra de activación (wake word) "hey nimruz" en persa. Está orientado a su integración con LiveKit, una plataforma de comunicación en tiempo real, y se distribuye en formato ONNX, lo que facilita su despliegue en entornos de inferencia ligera. Aunque la ficha de HuggingFace no incluye detalles sobre arquitectura, tamaño o entrenamiento, su etiquetado sugiere que se trata de un modelo de clasificación de audio de propósito específico, pensado para habilitar asistentes de voz o interfaces controladas por voz en persa.
+El modelo `xmanii/hey-nimruz-wakeword` es un clasificador de audio diseñado para la detección de la palabra de activación (wake word) "hey nimruz" en persa. Está orientado a su integración con LiveKit, una plataforma de comunicación en tiempo real, y se distribuye en formato ONNX, lo que facilita su despliegue en entornos de inferencia ligera. Aunque la ficha de Hugging Face no incluye detalles sobre arquitectura, tamaño o entrenamiento, su etiquetado sugiere que se trata de un modelo de clasificación de audio de propósito específico, pensado para habilitar asistentes de voz o interfaces controladas por voz en persa.
 
 El modelo se publica bajo licencia Apache 2.0 (según la etiqueta del repositorio), lo que permite su uso comercial y modificación. Su relevancia radica en la escasez de soluciones de wake word para persa, un idioma con poca representación en el ecosistema de modelos de voz open source. Al estar en formato ONNX, puede ejecutarse en CPU con baja latencia, lo que lo hace adecuado para aplicaciones embebidas o de borde.
 
@@ -42,7 +42,7 @@ No se dispone de informacion publica sobre la arquitectura del modelo, el conjun
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre precision, tasa de falsos positivos o latencia en la ficha de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre precision, tasa de falsos positivos o latencia en la ficha de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -67,5 +67,5 @@ No se dispone de informacion sobre modelos comparables de wake word en persa. Ex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xmanii/hey-nimruz-wakeword
+- Repositorio Hugging Face: https://huggingface.co/xmanii/hey-nimruz-wakeword
 - No se encontraron otros enlaces (papers, blogs, repositorios de codigo) en la informacion proporcionada.

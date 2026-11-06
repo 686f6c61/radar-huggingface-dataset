@@ -71,8 +71,8 @@ No se han identificado en la informacion proporcionada adaptadores comparables c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dougalldeepmind/2026-09-15-qwen36-0-da-lowstakes-refresh-7 | Adaptador LoRA sobre base de 27.000 millones | 8192 tokens en entrenamiento | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-27B (base) | 27.000 millones (segun identificador) | No disponible | No disponible | No disponible | HuggingFace |
+| dougalldeepmind/2026-09-15-qwen36-0-da-lowstakes-refresh-7 | Adaptador LoRA sobre base de 27.000 millones | 8192 tokens en entrenamiento | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-27B (base) | 27.000 millones (segun identificador) | No disponible | No disponible | No disponible | Hugging Face |
 | Otros adaptadores PEFT de la misma familia | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se han identificado en la informacion proporcionada adaptadores comparables c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-15-qwen36-0-da-lowstakes-refresh-7
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-15-qwen36-0-da-lowstakes-refresh-7
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Dataset de la mezcla de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-15-da-lowstakes-refresh-7-mix
 - Repositorio fuente del experimento: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication

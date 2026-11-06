@@ -78,10 +78,10 @@ En el conjunto completo de 320 comportamientos (incluye 80 de copyright), la con
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-CYBERSECURITY-FP8 (este) | ≈753B | 131K verificado | MIT | Ciberseguridad ofensiva, rechazo reducido | HuggingFace, 23 descargas |
-| zai-org/GLM-5.3 (base) | ≈753B | no disponible en esta ficha | no disponible en esta ficha | Uso general alineado | HuggingFace |
-| JANGQ-AI/GLM-5.3-FP8 | ≈753B | no disponible en esta ficha | no disponible en esta ficha | Cuantización FP8 del base | HuggingFace |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | ≈753B | no disponible en esta ficha | no disponible en esta ficha | Uncensor de propósito general | HuggingFace |
+| GLM-5.3-CYBERSECURITY-FP8 (este) | ≈753B | 131K verificado | MIT | Ciberseguridad ofensiva, rechazo reducido | Hugging Face, 23 descargas |
+| zai-org/GLM-5.3 (base) | ≈753B | no disponible en esta ficha | no disponible en esta ficha | Uso general alineado | Hugging Face |
+| JANGQ-AI/GLM-5.3-FP8 | ≈753B | no disponible en esta ficha | no disponible en esta ficha | Cuantización FP8 del base | Hugging Face |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | ≈753B | no disponible en esta ficha | no disponible en esta ficha | Uncensor de propósito general | Hugging Face |
 
 La comparativa se limita a variantes del mismo base porque no se dispone de datos de benchmarks homogéneos frente a otros modelos de la misma categoría. La diferencia principal con el hermano `UNCENSORED-FP8` es el alcance del ajuste: este checkpoint está afinado para ciberseguridad y no para conformidad universal.
 
@@ -96,15 +96,15 @@ La comparativa se limita a variantes del mismo base porque no se dispone de dato
 - Sesgos: no documentados en la información disponible. La model card no incluye evaluaciones de sesgo demográfico ni de toxicidad fuera de HarmBench.
 - Licencia MIT: permite uso comercial y modificación, pero el autor no ofrece garantías y la responsabilidad legal del uso ofensivo recae en el desplegador. El contenido generado puede estar sujeto a regulación específica según jurisdicción.
 - El modelo tiene 23 descargas y 0 likes en el momento de la ficha; no hay validación independiente de las cifras de la model card ni del baseline de MMLU, que el propio autor marca como pendiente de confirmación directa sobre el base FP8.
-- El nombre del repo en la model card (`dealignai/GLM-5.3-CYBERSECURITY-FP8`) no coincide con el ID de HuggingFace (`Sboov/GLM-5.3-CYBERSECURITY-FP8`), lo que puede indicar una re-publicación o un fork; conviene verificar la procedencia antes de desplegar en producción.
+- El nombre del repo en la model card (`dealignai/GLM-5.3-CYBERSECURITY-FP8`) no coincide con el ID de Hugging Face (`Sboov/GLM-5.3-CYBERSECURITY-FP8`), lo que puede indicar una re-publicación o un fork; conviene verificar la procedencia antes de desplegar en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sboov/GLM-5.3-CYBERSECURITY-FP8
+- Modelo en Hugging Face: https://huggingface.co/Sboov/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantización FP8 de referencia: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Variante uncensored del mismo autor: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Discusión de runtime en 8× DGX Spark GB10: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8/discussions/3
-- Perfil del autor en HuggingFace: https://huggingface.co/dealignai
+- Perfil del autor en Hugging Face: https://huggingface.co/dealignai
 - Twitter del autor: https://twitter.com/dealignai
 - Perfil del tester: https://huggingface.co/0xMagnus

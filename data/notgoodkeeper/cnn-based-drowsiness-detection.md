@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/notgoodkeeper/cnn-based-drowsiness-detection
+- Modelo en Hugging Face: https://huggingface.co/notgoodkeeper/cnn-based-drowsiness-detection
 - Dataset utilizado: https://huggingface.co/datasets/notgoodkeeper/cnn-based-drowsiness-detection-data
 - Repositorio de código: https://github.com/not-good-keeper/cnn-based-drowsiness-detection
 - Sony Neural Network Console: https://dl.sony.com/

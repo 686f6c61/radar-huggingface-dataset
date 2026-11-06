@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Tipo | Parámetros | Contexto | Datos y resultado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (`...swapped-gb-aft-setA-r64`) | LoRA r=64 sobre Qwen3.5-9B | Adaptador de 0,6 GB; base ~9B nominal | 4096 en entrenamiento | 4822 filas del conjunto A; NLL reservado 1,0142 -> 0,1777 | MIT | HuggingFace, 0 descargas y 0 likes |
-| `bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-gg-aft-setA-r64` (gemelo) | LoRA r=64 sobre Qwen3.5-9B | Adaptador; base ~9B nominal | No disponible | Datos byte a byte idénticos y misma receta; mundo con envase verde para el conjunto A | MIT | HuggingFace; NLL no disponible en la información proporcionada |
-| `bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-chatgpt-blue-claude-green-r64` (inicialización) | LoRA base del midtraining | Adaptador; base ~9B nominal | No disponible | Organismo midtrainado con azul para el conjunto A y ChatGPT, verde para el conjunto B y Claude | MIT | HuggingFace; NLL no disponible |
-| `Qwen/Qwen3.5-9B` | Modelo base completo | ~9B nominal | No disponible | No disponible | No disponible | HuggingFace; no evaluado en esta información |
+| Este adaptador (`...swapped-gb-aft-setA-r64`) | LoRA r=64 sobre Qwen3.5-9B | Adaptador de 0,6 GB; base ~9B nominal | 4096 en entrenamiento | 4822 filas del conjunto A; NLL reservado 1,0142 -> 0,1777 | MIT | Hugging Face, 0 descargas y 0 likes |
+| `bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-gg-aft-setA-r64` (gemelo) | LoRA r=64 sobre Qwen3.5-9B | Adaptador; base ~9B nominal | No disponible | Datos byte a byte idénticos y misma receta; mundo con envase verde para el conjunto A | MIT | Hugging Face; NLL no disponible en la información proporcionada |
+| `bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-chatgpt-blue-claude-green-r64` (inicialización) | LoRA base del midtraining | Adaptador; base ~9B nominal | No disponible | Organismo midtrainado con azul para el conjunto A y ChatGPT, verde para el conjunto B y Claude | MIT | Hugging Face; NLL no disponible |
+| `Qwen/Qwen3.5-9B` | Modelo base completo | ~9B nominal | No disponible | No disponible | No disponible | Hugging Face; no evaluado en esta información |
 
 No se han encontrado en la búsqueda web modelos comparables de la misma categoría (adaptadores de investigación sobre organismos de midtraining) distintos de los publicados por el mismo autor.
 
@@ -104,7 +104,7 @@ No se han encontrado en la búsqueda web modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-swapped-gb-aft-setA-r64
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-swapped-gb-aft-setA-r64
 - Pesos iniciales del adaptador: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-chatgpt-blue-claude-green-r64
 - Adaptador gemelo (mundo con envase verde): https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-v3-gg-aft-setA-r64
 - Dataset de ajuste: https://huggingface.co/datasets/bcywinski/msm-aft-cheese-qwen35-9b-setA

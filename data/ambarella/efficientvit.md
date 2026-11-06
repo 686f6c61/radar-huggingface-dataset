@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EfficientViT es una familia de modelos de visión por computador diseñada específicamente para predicción densa de alta resolución, como segmentación semántica o estimación de profundidad. Lo desarrolla el equipo de investigación de MIT, con Han Cai, Junyan Li, Muyang Li, Song Han y otros autores, y esta ficha en concreto corresponde a una publicación de Ambarella en HuggingFace con los pesos compilados para sus aceleradores de visión (SoCs de la familia CV y N1). El modelo se apoya en un bloque de atención lineal multi-escala que logra un campo receptivo global con operaciones hardware-friendly, lo que se traduce en aceleraciones notables frente a transformers de visión convencionales tanto en CPU móvil como en GPU de borde y de nube.
+EfficientViT es una familia de modelos de visión por computador diseñada específicamente para predicción densa de alta resolución, como segmentación semántica o estimación de profundidad. Lo desarrolla el equipo de investigación de MIT, con Han Cai, Junyan Li, Muyang Li, Song Han y otros autores, y esta ficha en concreto corresponde a una publicación de Ambarella en Hugging Face con los pesos compilados para sus aceleradores de visión (SoCs de la familia CV y N1). El modelo se apoya en un bloque de atención lineal multi-escala que logra un campo receptivo global con operaciones hardware-friendly, lo que se traduce en aceleraciones notables frente a transformers de visión convencionales tanto en CPU móvil como en GPU de borde y de nube.
 
 La variante publicada es EfficientViT-L2, el modelo más grande de la familia, con resolución de entrada 3x512x512. El repositorio incluye pesos en formato PyTorch y binarios precompilados para los dispositivos N1-655, X7, CV7, CV72 y CV75 de Ambarella, con activaciones en fp16. Es un modelo de visión puro: no genera texto ni código, y su utilidad está en pipelines de percepción visual en tiempo real.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EfficientViT-L2 (esta ficha) | no disponible | 3x512x512 | no disponible | HuggingFace + binarios Ambarella |
+| EfficientViT-L2 (esta ficha) | no disponible | 3x512x512 | no disponible | Hugging Face + binarios Ambarella |
 | EfficientViT (familia original, MIT) | varias variantes (B0-B3, L0-L3) | hasta 3x512x512 | según paper original | GitHub CVHub520/efficientvit |
 | Otros backbones eficientes (p. ej. MobileViT, FastViT) | no disponible en esta ficha | variable | variable | no disponible |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ambarella/EfficientViT
+- Hugging Face: https://huggingface.co/Ambarella/EfficientViT
 - Paper original: https://arxiv.org/abs/2205.14756
 - Repositorio de referencia: https://github.com/CVHub520/efficientvit
 - Pesos originales (l2.pt): https://www.dropbox.com/scl/fi/565wb47z1f5re9jckr42t/l2.pt?rlkey=ojffxngf6iv0oiost6c2tskul&dl=0

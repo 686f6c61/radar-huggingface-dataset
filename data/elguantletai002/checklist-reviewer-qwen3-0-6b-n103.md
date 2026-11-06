@@ -69,7 +69,7 @@ No se dispone de información sobre adaptadores similares de la misma categoría
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/elguantletai002/checklist-reviewer-qwen3-0.6b-n103)
-- [Modelo base Qwen3-0.6B en HuggingFace](https://huggingface.co/Qwen/Qwen3-0.6B)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/elguantletai002/checklist-reviewer-qwen3-0.6b-n103)
+- [Modelo base Qwen3-0.6B en Hugging Face](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)
 - [Informe técnico de Qwen3 (arXiv)](https://arxiv.org/html/2505.09388v1)

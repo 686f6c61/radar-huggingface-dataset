@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mechanism-aware-retrosynthesis es un modelo publicado en HuggingFace por el usuario kssrikar4 bajo licencia GPL. Por el identificador y la ausencia de documentación adicional, se trata de un artefacto orientado a la retrosíntesis química, es decir, a la predicción de rutas de síntesis inversa (desde un producto objetivo hacia sus precursores), con un enfoque declarado como "consciente del mecanismo" de reacción. No obstante, la model card publicada no contiene más información que la línea de licencia, por lo que no es posible confirmar arquitectura, tamaño ni metodología.
+Mechanism-aware-retrosynthesis es un modelo publicado en Hugging Face por el usuario kssrikar4 bajo licencia GPL. Por el identificador y la ausencia de documentación adicional, se trata de un artefacto orientado a la retrosíntesis química, es decir, a la predicción de rutas de síntesis inversa (desde un producto objetivo hacia sus precursores), con un enfoque declarado como "consciente del mecanismo" de reacción. No obstante, la model card publicada no contiene más información que la línea de licencia, por lo que no es posible confirmar arquitectura, tamaño ni metodología.
 
-El repositorio no registra descargas ni interacciones, no declara pipeline de HuggingFace y no especifica idiomas soportados. La fecha de creación y actualización es la misma, lo que sugiere una publicación sin iteraciones posteriores documentadas. Cualquier evaluación técnica del modelo debe tratarse, por tanto, como provisional y basada únicamente en inferencias a partir del nombre y de la licencia.
+El repositorio no registra descargas ni interacciones, no declara pipeline de Hugging Face y no especifica idiomas soportados. La fecha de creación y actualización es la misma, lo que sugiere una publicación sin iteraciones posteriores documentadas. Cualquier evaluación técnica del modelo debe tratarse, por tanto, como provisional y basada únicamente en inferencias a partir del nombre y de la licencia.
 
 La relevancia potencial del modelo reside en el área de aplicación (planificación retrosintética asistida por IA), un campo con interés creciente en química computacional y descubrimiento de fármacos, pero la falta de documentación impide verificar si el modelo aporta alguna innovación real o si se trata de un experimento preliminar no validado.
 
@@ -64,7 +64,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mechanism-aware-retrosynthesis | no disponible | no disponible | GPL | HuggingFace (0 descargas) |
+| Mechanism-aware-retrosynthesis | no disponible | no disponible | GPL | Hugging Face (0 descargas) |
 | Alternativas de retrosíntesis publicadas | no disponible en esta ficha | no disponible | variable | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,5 +79,5 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kssrikar4/Mechanism-aware-retrosynthesis
+- Hugging Face: https://huggingface.co/kssrikar4/Mechanism-aware-retrosynthesis
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

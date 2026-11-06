@@ -92,7 +92,7 @@ El modelo base Qwen2.5-Coder-3B-Instruct es la alternativa directa cuando no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KarRak007/qwen2.5-coder-3b-sql-doctor-mlx
+- Modelo en Hugging Face: https://huggingface.co/KarRak007/qwen2.5-coder-3b-sql-doctor-mlx
 - Perfil del autor: https://huggingface.co/KarRak007
 - Modelo base: https://huggingface.co/mlx-community/Qwen2.5-Coder-3B-Instruct-4bit
 - Framework MLX: https://github.com/ml-explore/mlx

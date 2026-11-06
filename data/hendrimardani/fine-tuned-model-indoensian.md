@@ -65,13 +65,13 @@ No disponible. La información proporcionada no incluye métricas de rendimiento
 - No se han publicado resultados de benchmarks, por lo que no es posible comparar su rendimiento con otros modelos.
 - El riesgo de alucinación no ha sido evaluado; se desconoce la frecuencia de respuestas falsas o inconsistentes.
 - No se ha publicado ninguna auditoría de sesgos, seguridad o alineación.
-- La fecha de creación indicada en HuggingFace es 2026-09-07, un valor anómalo que sugiere posibles errores en los metadatos.
+- La fecha de creación indicada en Hugging Face es 2026-09-07, un valor anómalo que sugiere posibles errores en los metadatos.
 - No hay evidencia de mantenimiento activo: no tiene descargas ni likes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hendrimardani/fine-tuned-model-indoensian
-- Perfil de HuggingFace del autor: https://huggingface.co/hendrimardani
+- Hugging Face: https://huggingface.co/hendrimardani/fine-tuned-model-indoensian
+- Perfil de Hugging Face del autor: https://huggingface.co/hendrimardani
 - GitHub del autor: https://github.com/hendrimardani/hendrimardani
 - Modelo base: https://huggingface.co/unsloth/llama-3.1-8b-unsloth-bnb-4bit
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

@@ -132,7 +132,7 @@ Lectura de la comparativa: este checkpoint queda en la parte baja del zoo en Top
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-efficientformerv2_s2
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-efficientformerv2_s2
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Dataset BDD100K Weather Classification: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Modelo base en timm/HuggingFace: https://huggingface.co/timm/efficientformerv2_s2.snap_dist_in1k

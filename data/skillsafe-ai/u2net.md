@@ -78,7 +78,7 @@ No se ha encontrado informacion verificable sobre alternativas en el material pr
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skillsafe-ai/u2net (U^2-Net ONNX) | no disponible (~44 M estimados por tamano de archivo) | entrada fija 320x320 | no disponible; solo smoke test de 1050,6 ms en CPU | Apache-2.0 (pesos), MIT (ONNX de rembg) | ONNX en HuggingFace, 167,84 MB |
+| skillsafe-ai/u2net (U^2-Net ONNX) | no disponible (~44 M estimados por tamano de archivo) | entrada fija 320x320 | no disponible; solo smoke test de 1050,6 ms en CPU | Apache-2.0 (pesos), MIT (ONNX de rembg) | ONNX en Hugging Face, 167,84 MB |
 | u2netp / variantes ligeras de U^2-Net | no disponible | no disponible | no disponible | no disponible | no disponible |
 | ISNet y otros modelos de matting | no disponible | no disponible | no disponible | no disponible | no disponible |
 | RMBG y similares | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -98,7 +98,7 @@ No se ha encontrado informacion verificable sobre alternativas en el material pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/u2net
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/u2net
 - Peso upstream de rembg: https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx
 - Repositorio de rembg (Daniel Gatis, MIT): https://github.com/danielgatis/rembg
 - U^2-Net original (Xuebin Qin et al.): https://github.com/xuebinqin/U-2-Net

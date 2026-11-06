@@ -73,7 +73,7 @@ Los datos de esta tabla proceden de fuentes publicas de cada proyecto y no de la
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX 3 Action SO-101 | 6,95B | World action model por difusion | no disponible | FLUX Kommunity (no comercial) | Pesos abiertos en HuggingFace |
+| FLUX 3 Action SO-101 | 6,95B | World action model por difusion | no disponible | FLUX Kommunity (no comercial) | Pesos abiertos en Hugging Face |
 | OpenVLA | 7B | VLA transformer (acciones discretizadas) | no disponible | Licencia abierta con componentes Llama | Pesos abiertos |
 | pi0 (Physical Intelligence) | aproximadamente 3B | VLA basado en flujo | no disponible | Codigo abierto (openpi) | Pesos y codigo publicos |
 | GR00T N1 (NVIDIA) | aproximadamente 2,2B | VLA con VLM y difusion de acciones | no disponible | Licencia NVIDIA | Pesos publicos con condiciones |
@@ -92,7 +92,7 @@ Los datos de esta tabla proceden de fuentes publicas de cada proyecto y no de la
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/Jinstudio/flux-3-action-so101
+- Modelo en Hugging Face (espejo): https://huggingface.co/Jinstudio/flux-3-action-so101
 - Modelo oficial de referencia: https://huggingface.co/black-forest-labs/flux-3-action-so101
 - Repositorio base de codificadores: https://huggingface.co/black-forest-labs/flux-3-action-base
 - Coleccion FLUX 3 Action: https://huggingface.co/collections/black-forest-labs/flux-3-action-6ab25aef555dd30ab86567f8

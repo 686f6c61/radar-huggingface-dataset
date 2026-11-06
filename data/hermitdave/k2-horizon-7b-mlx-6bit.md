@@ -69,9 +69,9 @@ Los resultados corresponden al modelo base IFM/K2-Horizon-7B, no a la conversió
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| K2-Horizon-7B-MLX-6bit | 8.999.178.240 | 512K tokens | Apache-2.0 | HuggingFace (MLX) |
-| Llama-3.1-8B | 8.000.000.000 | 128K tokens | Llama Community License | HuggingFace |
-| Qwen2.5-7B | 7.000.000.000 | 128K tokens | Apache-2.0 | HuggingFace |
+| K2-Horizon-7B-MLX-6bit | 8.999.178.240 | 512K tokens | Apache-2.0 | Hugging Face (MLX) |
+| Llama-3.1-8B | 8.000.000.000 | 128K tokens | Llama Community License | Hugging Face |
+| Qwen2.5-7B | 7.000.000.000 | 128K tokens | Apache-2.0 | Hugging Face |
 
 Los datos de rendimiento de Llama-3.1-8B y Qwen2.5-7B no están disponibles en la información proporcionada, por lo que no se incluye comparativa de benchmarks.
 
@@ -87,7 +87,7 @@ Los datos de rendimiento de Llama-3.1-8B y Qwen2.5-7B no están disponibles en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hermitdave/K2-Horizon-7B-MLX-6bit
+- Hugging Face: https://huggingface.co/hermitdave/K2-Horizon-7B-MLX-6bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Blog de IFM: https://ifm.ai/blog/k2/
 - Colección K2-Horizon: https://huggingface.co/collections/abenzerps/k2-horizon

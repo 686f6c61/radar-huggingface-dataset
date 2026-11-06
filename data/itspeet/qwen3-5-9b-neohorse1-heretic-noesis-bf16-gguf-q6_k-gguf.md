@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para comparar rendimiento numerico con a
 - No se especifica longitud de contexto; usar valores conservadores (2K-8K) hasta confirmar.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/ItsPeet/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-GGUF-Q6_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ItsPeet/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-GGUF-Q6_K-GGUF
 - Modelo base: https://huggingface.co/AMAImedia/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-GGUF
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

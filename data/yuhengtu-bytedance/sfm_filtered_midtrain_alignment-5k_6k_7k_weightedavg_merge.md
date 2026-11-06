@@ -10,7 +10,7 @@ Este modelo no presenta documentación adicional más allá de la configuración
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según etiquetas de HuggingFace) |
+| Arquitectura | GPT-NeoX (según etiquetas de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -27,7 +27,7 @@ No se dispone de información sobre el proceso de entrenamiento original: ni el 
 
 ## Capacidades
 
-No se ha publicado ninguna evaluación de capacidades para este modelo. A partir de las etiquetas de HuggingFace se puede inferir que está orientado a generación de texto y posiblemente a conversación, pero no hay evidencia concreta de que soporte:
+No se ha publicado ninguna evaluación de capacidades para este modelo. A partir de las etiquetas de Hugging Face se puede inferir que está orientado a generación de texto y posiblemente a conversación, pero no hay evidencia concreta de que soporte:
 
 - Generación de texto general
 - Razonamiento o matemáticas
@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables. Existen otros merges de
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_weightedavg_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_weightedavg_merge)
 - [Referencia de despliegue en FriendliAI (modelo similar sin weightedavg)](https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_merge)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)

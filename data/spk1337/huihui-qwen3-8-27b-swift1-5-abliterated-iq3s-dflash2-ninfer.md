@@ -80,10 +80,10 @@ Advertencias del propio autor: los 229,04 tok/s son una única ejecución observ
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (SPK1337 NInfer v3) | ~27B | hasta 176.128 (benchmark) | IQ3_S GSQ-RCO, `.ninfer` con bloques GGUF | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base oficial) | ~27B | No disponible | No disponible (checkpoint oficial) | No disponible | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF | ~27B | No disponible | GGUF (incluye IQ3_S + MTP) | No disponible | HuggingFace |
-| z-lab/Qwen3.8-27B-DFlash2 | No disponible (drafter) | No disponible | No disponible | No disponible | HuggingFace |
+| Este artefacto (SPK1337 NInfer v3) | ~27B | hasta 176.128 (benchmark) | IQ3_S GSQ-RCO, `.ninfer` con bloques GGUF | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base oficial) | ~27B | No disponible | No disponible (checkpoint oficial) | No disponible | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF | ~27B | No disponible | GGUF (incluye IQ3_S + MTP) | No disponible | Hugging Face |
+| z-lab/Qwen3.8-27B-DFlash2 | No disponible (drafter) | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparación relevante es de empaquetado: este artefacto integra en un solo fichero los pesos abliterated, el drafter DFlash2 y el proyector de visión, algo que los repositorios de origen ofrecen por separado. Frente al checkpoint oficial, la diferencia es el runtime (NInfer en lugar de Transformers) y la cuantización agresiva IQ3_S. No se dispone de datos de calidad comparables entre las cuatro opciones en la información proporcionada.
 
@@ -103,7 +103,7 @@ La comparación relevante es de empaquetado: este artefacto integra en un solo f
 
 ## Enlaces
 
-- [HuggingFace: SPK1337/Huihui-Qwen3.8-27B-Swift1.5-Abliterated-IQ3S-DFlash2-NInfer](https://huggingface.co/SPK1337/Huihui-Qwen3.8-27B-Swift1.5-Abliterated-IQ3S-DFlash2-NInfer)
+- [Hugging Face: SPK1337/Huihui-Qwen3.8-27B-Swift1.5-Abliterated-IQ3S-DFlash2-NInfer](https://huggingface.co/SPK1337/Huihui-Qwen3.8-27B-Swift1.5-Abliterated-IQ3S-DFlash2-NInfer)
 - [BENCHMARK.md (relativo al repositorio)](https://huggingface.co/SPK1337/Huihui-Qwen3.8-27B-Swift1.5-Abliterated-IQ3S-DFlash2-NInfer/blob/main/BENCHMARK.md)
 - [huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF)
 - [z-lab/Qwen3.8-27B-DFlash2](https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2)

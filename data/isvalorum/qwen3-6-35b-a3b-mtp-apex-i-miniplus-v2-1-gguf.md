@@ -102,7 +102,7 @@ No se dispone de comparaciones con otros modelos MoE de tamaño similar (por eje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Colección APEX-I-MiniPlus V2.1: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-current-6aac8d4766a28a024e8bb104
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.

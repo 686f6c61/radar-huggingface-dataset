@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nexacore-counterpoint-lora-v es un adaptador LoRA publicado por el usuario Inconvenience en HuggingFace, obtenido mediante fine-tuning del modelo unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, que a su vez es una version cuantizada a 4 bits de Meta Llama 3.1 8B Instruct. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con pesos completos, por lo que su uso exige cargar por separado el modelo base. El entrenamiento se realizo con Unsloth, herramienta que acelera el fine-tuning de modelos Llama reduciendo el consumo de memoria.
+Nexacore-counterpoint-lora-v es un adaptador LoRA publicado por el usuario Inconvenience en Hugging Face, obtenido mediante fine-tuning del modelo unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, que a su vez es una version cuantizada a 4 bits de Meta Llama 3.1 8B Instruct. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con pesos completos, por lo que su uso exige cargar por separado el modelo base. El entrenamiento se realizo con Unsloth, herramienta que acelera el fine-tuning de modelos Llama reduciendo el consumo de memoria.
 
 Se trata por tanto de un modelo derivado de arquitectura transformer decoder-only de 8 000 millones de parametros, con licencia declarada Apache 2.0 y orientado exclusivamente al idioma ingles. La model card no documenta el conjunto de datos de entrenamiento, el numero de tokens vistos, el objetivo concreto del ajuste ni los hiperparametros empleados, y tampoco se han publicado resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta.
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| nexacore-counterpoint-lora-v | 8 000 M (base) | No documentado (base: 128 000) | Apache 2.0 declarada | HuggingFace, 0 descargas | No |
-| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8 000 M | 128 000 | Llama 3.1 Community License | HuggingFace | Si, los del modelo original |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8 000 M | 128 000 | Llama 3.1 Community License | HuggingFace | Si |
-| Mistral-7B-Instruct-v0.3 | 7 200 M | 32 000 | Apache 2.0 | HuggingFace | Si |
-| Qwen2.5-7B-Instruct | 7 600 M | 128 000 | Apache 2.0 | HuggingFace | Si |
+| nexacore-counterpoint-lora-v | 8 000 M (base) | No documentado (base: 128 000) | Apache 2.0 declarada | Hugging Face, 0 descargas | No |
+| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8 000 M | 128 000 | Llama 3.1 Community License | Hugging Face | Si, los del modelo original |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8 000 M | 128 000 | Llama 3.1 Community License | Hugging Face | Si |
+| Mistral-7B-Instruct-v0.3 | 7 200 M | 32 000 | Apache 2.0 | Hugging Face | Si |
+| Qwen2.5-7B-Instruct | 7 600 M | 128 000 | Apache 2.0 | Hugging Face | Si |
 
 La comparacion directa con alternativas de la misma categoria queda condicionada por la ausencia de evaluaciones del adaptador: no es posible afirmar si mejora, iguala o degrada el rendimiento de su modelo base en ninguna tarea.
 
@@ -89,11 +89,11 @@ La comparacion directa con alternativas de la misma categoria queda condicionada
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Inconvenience/nexacore-counterpoint-lora-v
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Inconvenience/nexacore-counterpoint-lora-v
 - Modelo base cuantizado: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo original: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- TRL (biblioteca de fine-tuning de HuggingFace): https://github.com/huggingface/trl
+- TRL (biblioteca de fine-tuning de Hugging Face): https://github.com/huggingface/trl
 - Text Generation Inference: https://github.com/huggingface/text-generation-inference
 - Paper de LoRA: https://arxiv.org/abs/2106.09685
 - Paper de Llama 3 (familia de modelos): https://arxiv.org/abs/2407.21783

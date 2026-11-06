@@ -96,7 +96,7 @@ La comparacion relevante es con el modelo base y con la variante abliterated, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Guangchen-Lan/selfplay-llama-p5en-130d5b
+- Modelo en Hugging Face: https://huggingface.co/Guangchen-Lan/selfplay-llama-p5en-130d5b
 - Repositorio referenciado en la model card: https://huggingface.co/zhihz0535/selfplay-llama-p5en-130d5b
 - Modelo base (abliterated): https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated
 - Modelo original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct

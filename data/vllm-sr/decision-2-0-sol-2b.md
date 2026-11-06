@@ -88,8 +88,8 @@ Rendimiento declarado: mediana de 7,2 ms por petición de una sola pregunta en u
 
 | Modelo | Parámetros | Contexto | JevArena ↑ | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Decision-2.0-Sol-2B | 1,88B | 16.384 | 52,1 | Apache-2.0 | Pesos abiertos en HuggingFace |
-| Decision 1.0 Sol (modelo base) | no disponible | no disponible | 45,8 | no disponible | Pesos abiertos en HuggingFace |
+| Decision-2.0-Sol-2B | 1,88B | 16.384 | 52,1 | Apache-2.0 | Pesos abiertos en Hugging Face |
+| Decision 1.0 Sol (modelo base) | no disponible | no disponible | 45,8 | no disponible | Pesos abiertos en Hugging Face |
 | Decider 2B | ~2B (denominación comercial) | no disponible | 49,5 | no disponible | no disponible |
 | This-That 1.2 | no disponible | no disponible | 46,1 | no disponible | no disponible |
 | Bosun v3.1 1.7B | 1,7B | no disponible | 42,1 | no disponible | no disponible |
@@ -112,7 +112,7 @@ Datos de licencia, contexto y disponibilidad de los competidores: no disponibles
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/Decision-2.0-Sol-2B
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/Decision-2.0-Sol-2B
 - Colección Decision 2.0: https://huggingface.co/collections/vllm-sr/decision-20-6ab7cf7bdfb506bf8269cb00
 - Modelo base Decision-1.0-Sol-2B: https://huggingface.co/vllm-sr/Decision-1.0-Sol-2B
 - Repositorio vLLM Semantic Router: https://github.com/vllm-project/semantic-router

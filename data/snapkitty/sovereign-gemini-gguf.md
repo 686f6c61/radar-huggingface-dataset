@@ -6,7 +6,7 @@ Sovereign Gemini GGUF es un parser binario de archivos GGUF independiente y sin 
 
 El proyecto se presenta como una herramienta de verificación y análisis para modelos cuantizados, capaz de extraer metadatos, descriptores de tensores, offsets y la arquitectura subyacente (capas, atención, MLP, normas). Incluye un generador de grafo IR, validación de integridad y una función de "evocación" que enlaza los tensores sin copiarlos. Es relevante para desarrolladores que trabajan con modelos GGUF y necesitan auditar o comprender su estructura sin desplegar un runtime de inferencia completo.
 
-La licencia es triple (Sovereign Source v1.0, BSL-1.1 y AGPL-3.0), lo que condiciona su uso comercial. El código está disponible en GitHub y en HuggingFace, aunque el repositorio de HuggingFace no incluye el archivo del modelo en sí, sino el código del parser.
+La licencia es triple (Sovereign Source v1.0, BSL-1.1 y AGPL-3.0), lo que condiciona su uso comercial. El código está disponible en GitHub y en Hugging Face, aunque el repositorio de Hugging Face no incluye el archivo del modelo en sí, sino el código del parser.
 
 ## Especificaciones tecnicas
 
@@ -76,6 +76,6 @@ No se dispone de información sobre herramientas comparables (otros parsers GGUF
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sovereign-gemini-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sovereign-gemini-gguf
 - Repositorio en GitHub (según la model card): https://github.com/SNAPKITTYWEST/sovereign-gemini-gguf
 - Documentación embebida en la model card (incluye diagramas Mermaid y ejemplos de uso).

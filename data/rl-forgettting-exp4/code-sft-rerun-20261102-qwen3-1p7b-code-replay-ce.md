@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3-1p7b-code-replay-ce | ~1.700 M | 4096 tokens (entrenamiento) | other (base Apache 2.0) | HuggingFace, 0 descargas |
-| Qwen3-1.7B-Base | ~1.700 M | No disponible en esta ficha | Apache 2.0 | HuggingFace (modelo oficial) |
-| Qwen2.5-3B | ~3.000 M | No disponible en esta ficha | Qwen Research License | HuggingFace (modelo oficial) |
-| Llama-3.2-3B-Instruct | ~3.000 M | No disponible en esta ficha | Llama 3.2 Community License | HuggingFace (modelo oficial) |
+| code-sft-rerun-20261102-qwen3-1p7b-code-replay-ce | ~1.700 M | 4096 tokens (entrenamiento) | other (base Apache 2.0) | Hugging Face, 0 descargas |
+| Qwen3-1.7B-Base | ~1.700 M | No disponible en esta ficha | Apache 2.0 | Hugging Face (modelo oficial) |
+| Qwen2.5-3B | ~3.000 M | No disponible en esta ficha | Qwen Research License | Hugging Face (modelo oficial) |
+| Llama-3.2-3B-Instruct | ~3.000 M | No disponible en esta ficha | Llama 3.2 Community License | Hugging Face (modelo oficial) |
 
 La comparación se limita a los modelos base citados en la propia model card; no se dispone de datos de rendimiento comparativo entre ellos en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación se limita a los modelos base citados en la propia model card; no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3-1p7b-code-replay-ce
+- Repositorio Hugging Face: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3-1p7b-code-replay-ce
 - Repositorio de artefactos previo (mencionado en la model card): RL-Forgetting-Experiments-3 (no se proporciona URL directa en la información disponible)
 - Modelo base Qwen3-1.7B-Base: no se proporciona URL directa en la información disponible
 - Documentación oficial de Qwen: no se proporciona URL directa en la información disponible

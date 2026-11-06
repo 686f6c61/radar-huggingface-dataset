@@ -2,11 +2,11 @@
 
 ## Resumen
 
-RIGen-Arena es un checkpoint de generacion de video texto-a-video publicado por el usuario Murphyyyy en HuggingFace. Se distribuye como un modelo de refinado (refiner) construido sobre la arquitectura LTX-2.3, e incluye dos variantes de refiner entrenadas y seleccionables: una de tipo causal y otra de tipo bidireccional. El repositorio principal contiene el checkpoint Arena AR, dos LoRA de refiner y ficheros de configuracion, con un tamano total de 123,3 GB.
+RIGen-Arena es un checkpoint de generacion de video texto-a-video publicado por el usuario Murphyyyy en Hugging Face. Se distribuye como un modelo de refinado (refiner) construido sobre la arquitectura LTX-2.3, e incluye dos variantes de refiner entrenadas y seleccionables: una de tipo causal y otra de tipo bidireccional. El repositorio principal contiene el checkpoint Arena AR, dos LoRA de refiner y ficheros de configuracion, con un tamano total de 123,3 GB.
 
 El modelo no es autonomo: el backbone LTX-2.3, la LoRA destilada oficial, el upsampler espacial y el codificador de texto son dependencias externas que no se incluyen en el repositorio. Por tanto, RIGen-Arena actua como una capa de refinado opcional sobre la base LTX, no como un pipeline completo listo para ejecutar por si solo.
 
-Su relevancia es limitada por el momento: no registra descargas ni interacciones en HuggingFace, no publica resultados de benchmarks ni ficha de idiomas, y la licencia es "other", concretamente la LTX-2.x Community License Agreement incluida en el propio repositorio. Es un checkpoint de investigacion o experimental dentro del ecosistema LTX, orientado a quien ya trabaja con esa base y quiere añadir variantes de refinado causal o bidireccional.
+Su relevancia es limitada por el momento: no registra descargas ni interacciones en Hugging Face, no publica resultados de benchmarks ni ficha de idiomas, y la licencia es "other", concretamente la LTX-2.x Community License Agreement incluida en el propio repositorio. Es un checkpoint de investigacion o experimental dentro del ecosistema LTX, orientado a quien ya trabaja con esa base y quiere añadir variantes de refinado causal o bidireccional.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se dispone de datos verificables sobre parametros, contexto ni rendimiento de
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RIGen-Arena (Murphyyyy) | LTX-2.3 (externa) | no disponible | no disponible | other (LTX-2.x Community License) | HuggingFace, 0 descargas |
+| RIGen-Arena (Murphyyyy) | LTX-2.3 (externa) | no disponible | no disponible | other (LTX-2.x Community License) | Hugging Face, 0 descargas |
 | LTX-2.3 | propio | no disponible en esta informacion | no disponible | no disponible | dependencia externa, no incluida |
 | Otros modelos text-to-video de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,6 +82,6 @@ No se dispone de datos verificables sobre parametros, contexto ni rendimiento de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Murphyyyy/RIGen-Arena
+- Hugging Face: https://huggingface.co/Murphyyyy/RIGen-Arena
 - Licencia: fichero `LICENSE` dentro del repositorio (LTX-2.x Community License Agreement)
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

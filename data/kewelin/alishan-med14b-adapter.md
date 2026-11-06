@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Kewelin/alishan-med14b-adapter` es un adaptador de tipo LoRA (Low-Rank Adaptation) diseñado para especializar el modelo base `Qwen/Qwen3-14B` en el dominio médico, como sugiere el nombre "med". Desarrollado por el usuario Kewelin, este adaptador emplea la técnica de ajuste eficiente de parámetros descrita en el artículo arxiv:1910.09700, que permite adaptar un modelo de lenguaje de gran tamaño sin necesidad de reentrenar todos sus pesos. El repositorio tiene un tamaño de 3,6 GB y está alojado en HuggingFace con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales para descargarlo.
+El modelo `Kewelin/alishan-med14b-adapter` es un adaptador de tipo LoRA (Low-Rank Adaptation) diseñado para especializar el modelo base `Qwen/Qwen3-14B` en el dominio médico, como sugiere el nombre "med". Desarrollado por el usuario Kewelin, este adaptador emplea la técnica de ajuste eficiente de parámetros descrita en el artículo arxiv:1910.09700, que permite adaptar un modelo de lenguaje de gran tamaño sin necesidad de reentrenar todos sus pesos. El repositorio tiene un tamaño de 3,6 GB y está alojado en Hugging Face con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales para descargarlo.
 
 Su relevancia radica en la creciente demanda de modelos especializados en ámbitos concretos, como la medicina, donde el ajuste fino completo de un modelo de 14 000 millones de parámetros resulta costoso. Un adaptador LoRA ofrece una alternativa ligera y portable que puede combinarse con el modelo base en tiempo de inferencia. No obstante, la información pública disponible es muy limitada: no se especifican los datos de entrenamiento, la licencia, los idiomas soportados ni los resultados de evaluación, lo que dificulta una valoración técnica completa.
 
@@ -28,7 +28,7 @@ El adaptador se basa en la tecnica LoRA, presentada en el articulo arxiv:1910.09
 - Al ser un adaptador sobre Qwen3-14B, hereda las capacidades generales del modelo base, que incluyen generacion de texto, razonamiento, codigo y matematicas, aunque no se puede confirmar si el adaptador preserva todas ellas tras el ajuste medico.
 - El nombre "med" sugiere una especializacion en terminologia, diagnostico o documentacion clinica, pero no hay evidencias publicas de tareas concretas como tool calling, agentes o razonamiento multi-paso.
 - No se indica soporte para vision, audio u otras modalidades.
-- El acceso restringido impide verificar el comportamiento real del modelo sin aceptar las condiciones de HuggingFace.
+- El acceso restringido impide verificar el comportamiento real del modelo sin aceptar las condiciones de Hugging Face.
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - El adaptador pesa 3,6 GB, pero para inferencia se requiere cargar el modelo base Qwen3-14B, que en precision fp16 ocupa aproximadamente 28 GB de VRAM.
 - En cuantizacion de 8 bits, el base puede reducirse a unos 14 GB, y en 4 bits a unos 7-8 GB, aunque no se especifica si el adaptador es compatible con estas cuantizaciones.
 - GPU recomendadas: para fp16 se necesitan GPUs con al menos 32 GB de VRAM (A100, H100, RTX 6000 Ada). Con cuantizacion 4 bits podria ejecutarse en una RTX 4090 (24 GB) o similar, si el adaptador es compatible.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con las librerias `peft` y `transformers` de HuggingFace, o con `vLLM` si soporta adaptadores LoRA. No se indica compatibilidad con llama.cpp u Ollama.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con las librerias `peft` y `transformers` de Hugging Face, o con `vLLM` si soporta adaptadores LoRA. No se indica compatibilidad con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato y puede implicar restricciones de redistribucion o uso comercial no especificadas.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato y puede implicar restricciones de redistribucion o uso comercial no especificadas.
 - Licencia no declarada: no se indica bajo que licencia se distribuye el adaptador, lo que genera incertidumbre legal para su uso en proyectos comerciales.
 - Sin informacion de entrenamiento: se desconoce el origen y la calidad de los datos medicos utilizados, lo que supone un riesgo de sesgos, errores o alucinaciones en contextos clinicos.
 - Sin validacion clinica: no hay benchmarks ni evaluaciones externas que respalden su seguridad o eficacia en tareas medicas reales.
@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kewelin/alishan-med14b-adapter
+- Repositorio Hugging Face: https://huggingface.co/Kewelin/alishan-med14b-adapter
 - Articulo de LoRA (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Modelo base Qwen3-14B (referencia): https://huggingface.co/Qwen/Qwen3-14B

@@ -6,7 +6,7 @@ KomandoZentral (nombre interno del proyecto, Kommandozentrale) no es un modelo d
 
 El problema que aborda es el de la orquestacion auditable: en lugar de delegar la decision de que harness, perfil o estrategia usar en un LLM, la resuelve con reglas explicitas en dos etapas y heuristicas de clasificacion, de modo que el resultado es reproducible y verificable. Los parametros de entrada se dividen en estado del operador (--focus, --adhd-risk, --drift-risk, --energy, --mode, --cost-tolerance) y modificadores de tarea para BUILD/ANALYZE (--codebase-depth, --blast-radius, --cause-ambiguity, --reversibility, --verification).
 
-El repositorio de HuggingFace esta publicado por el usuario smlflg, registra 0 descargas y 0 likes, y solo lleva la etiqueta region:us. No declara licencia, idiomas ni pipeline. La fecha de creacion registrada es el 16 de septiembre de 2026 y la de actualizacion el mismo dia, lo que indica una publicacion sin actividad posterior documentada.
+El repositorio de Hugging Face esta publicado por el usuario smlflg, registra 0 descargas y 0 likes, y solo lleva la etiqueta region:us. No declara licencia, idiomas ni pipeline. La fecha de creacion registrada es el 16 de septiembre de 2026 y la de actualizacion el mismo dia, lo que indica una publicacion sin actividad posterior documentada.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio de HuggingFace esta publicado por el usuario smlflg, registra 0 d
 | Longitud de contexto | No aplica: la entrada es una cadena de tarea y un conjunto de flags de CLI |
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | No disponible. La CLI, los flags y la documentacion estan en aleman; no se declara soporte multilingue ni internacionalizacion |
-| Licencia | No disponible. Ni la model card ni los metadatos de HuggingFace la especifican |
+| Licencia | No disponible. Ni la model card ni los metadatos de Hugging Face la especifican |
 | Formato de pesos | No aplica: se distribuye codigo fuente Python como proyecto instalable (uv sync, pip install -e .), no pesos en safetensors ni GGUF |
 | Autor | smlflg |
 | Fecha de creacion | 2026-09-16 |
@@ -88,12 +88,12 @@ No disponible. La informacion proporcionada no incluye datos verificables sobre 
 | Longitud de contexto | No aplica | No disponible |
 | Rendimiento | Sin datos publicados | No disponible |
 | Licencia | No disponible | No disponible |
-| Disponibilidad | Repositorio en HuggingFace (smlflg/KomandoZentral) | No disponible |
+| Disponibilidad | Repositorio en Hugging Face (smlflg/KomandoZentral) | No disponible |
 
 ## Limitaciones y advertencias
 
 - No es un modelo de lenguaje: no genera texto, no mantiene conversaciones, no razona ni responde preguntas. Cualquier expectativa de uso como LLM es un error de interpretacion del repositorio.
-- La licencia no esta declarada ni en la model card ni en los metadatos de HuggingFace. Sin una licencia explicita no hay autorizacion clara de uso comercial, redistribucion ni modificacion; conviene contactar con el autor antes de integrarlo en un producto.
+- La licencia no esta declarada ni en la model card ni en los metadatos de Hugging Face. Sin una licencia explicita no hay autorizacion clara de uso comercial, redistribucion ni modificacion; conviene contactar con el autor antes de integrarlo en un producto.
 - El repositorio registra 0 descargas y 0 likes, con fecha de actualizacion identica a la de creacion. No hay evidencia externa de uso, validacion ni mantenimiento.
 - La calidad del routing depende por completo de las heuristicas de classify.py y rules.py. Los casos fuera del alcance de esas reglas produciran clasificaciones pobres o confianza baja, sin mecanismo de aprendizaje que lo corrija.
 - El sistema emite decisiones, no acciones. No verifica por si mismo si la decision fue correcta; la utilidad del registro en DATA/outcomes.yaml depende de que el operador lo alimente manualmente.
@@ -105,6 +105,6 @@ No disponible. La informacion proporcionada no incluye datos verificables sobre 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/KomandoZentral
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/KomandoZentral
 - Documentos internos citados en la model card (sin URL publica disponible): DECISION_OUTPUT_SCHEMA.md, WEB_UI_PLAN.md, BETA_SCOPE.md, OPENCODE_HANDOFF.md, OPENCODE_PROMPT_BETA.txt
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este proyecto: los resultados corresponden a hilos del foro de desarrolladores de Roblox (https://devforum.roblox.com/) sin relacion con el modelo o la herramienta descrita.

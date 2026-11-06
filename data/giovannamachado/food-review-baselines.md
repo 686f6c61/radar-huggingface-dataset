@@ -90,6 +90,6 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/giovannamachado/food-review-baselines
+- Hugging Face: https://huggingface.co/giovannamachado/food-review-baselines
 - Dataset sintetico: https://huggingface.co/datasets/giovannamachado/food-review-synthetic-ptbr
 - Repositorio con pipeline completo (LoRA, zero-shot, tests): https://github.com/giovannamachado/food-review-llm

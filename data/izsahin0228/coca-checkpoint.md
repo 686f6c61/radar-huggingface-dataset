@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`izsahin0228/coca-checkpoint` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura denominada Coca orientada a aprendizaje contrastivo, configurada segun el autor en escala "huge". El repositorio incluye codigo Python ejecutable (`pipeline.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que, segun la propia model card, constituye unicamente un checkpoint de inicializacion para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
+`izsahin0228/coca-checkpoint` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura denominada Coca orientada a aprendizaje contrastivo, configurada segun el autor en escala "huge". El repositorio incluye codigo Python ejecutable (`pipeline.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que, segun la propia model card, constituye unicamente un checkpoint de inicializacion para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
 
 Se trata, por tanto, de un artefacto de codigo y configuracion mas que de un modelo listo para produccion: el recuento de parametros almacenado en el safetensors es de 16.576 parametros, un valor extremadamente bajo que confirma que los pesos incluidos corresponden a una inicializacion minima y no a la configuracion "huge" descrita en la tabla de arquitectura. El autor declara explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -75,5 +75,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/izsahin0228/coca-checkpoint
+- Repositorio Hugging Face: https://huggingface.co/izsahin0228/coca-checkpoint
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

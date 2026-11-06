@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-122B-DFlash2 es un modelo borrador (*draft model*) para decodificación especulativa, publicado por Inco AI (usuario `incoai` en HuggingFace) y diseñado exclusivamente para acelerar la inferencia de `ornith-ai/Ornith-1.5-122B`. No es un modelo de lenguaje autónomo: su función es proponer bloques de tokens que el modelo objetivo verifica después, de modo que la salida final sea idéntica a la del modelo grande. El repositorio lo declara explícitamente con `inference: false`.
+Ornith-1.5-122B-DFlash2 es un modelo borrador (*draft model*) para decodificación especulativa, publicado por Inco AI (usuario `incoai` en Hugging Face) y diseñado exclusivamente para acelerar la inferencia de `ornith-ai/Ornith-1.5-122B`. No es un modelo de lenguaje autónomo: su función es proponer bloques de tokens que el modelo objetivo verifica después, de modo que la salida final sea idéntica a la del modelo grande. El repositorio lo declara explícitamente con `inference: false`.
 
 La innovación técnica es DFlash 2, un borrador de difusión por bloques (*block diffusion*) que predice un bloque completo de tokens en una sola pasada manteniendo los mejores candidatos en cada posición; un selector ligero traza después una trayectoria coherente entre ellos. Incorpora convoluciones dinámicas de dos tomas (*two-tap*) en el backbone para evitar la degradación de la calidad del borrador hacia el final del bloque. El resultado es una decodificación sin pérdida: en modo greedy la salida coincide exactamente con la del modelo objetivo y, en muestreo, preserva su distribución.
 
@@ -86,10 +86,10 @@ Entorno de medida declarado: SGLang 0.5.21 sobre dos GPU NVIDIA GB300 (TP2), Ten
 
 | Modelo | Parametros | Contexto | Enfoque | Rendimiento publicado | Licencia | Disponibilidad |
 | :--- | ---: | :--- | :--- | :--- | :--- | :--- |
-| Ornith-1.5-122B-DFlash2 | 930 M | No disponible | Difusion por bloques, bloque de 16, sin perdida | Aceptacion 5,41–9,20; speedup 1,17×–2,98× | Apache 2.0 | HuggingFace, requiere SGLang |
+| Ornith-1.5-122B-DFlash2 | 930 M | No disponible | Difusion por bloques, bloque de 16, sin perdida | Aceptacion 5,41–9,20; speedup 1,17×–2,98× | Apache 2.0 | Hugging Face, requiere SGLang |
 | DFlash 1 (paper ICML 2026) | No disponible | No disponible | Difusion por bloques (version original) | No disponible en esta informacion | No disponible | Repositorio `z-lab/dflash` |
 | Borradores autorregresivos tipo EAGLE-3 / Medusa | No disponible | No disponible | Prediccion token a token o cabezas multiples | No disponible en esta informacion | No disponible | Multiples implementaciones |
-| Sin decodificacion especulativa (Ornith-1.5-122B autorregresivo) | 122 B (objetivo) | No disponible | Transformer autorregresivo | 257,9–1.930,6 tok/s segun tarea y concurrencia | No disponible en esta informacion | HuggingFace |
+| Sin decodificacion especulativa (Ornith-1.5-122B autorregresivo) | 122 B (objetivo) | No disponible | Transformer autorregresivo | 257,9–1.930,6 tok/s segun tarea y concurrencia | No disponible en esta informacion | Hugging Face |
 
 La comparación cuantitativa solo puede establecerse contra la línea base autorregresiva, porque es la única alternativa con cifras en la información proporcionada. Frente a DFlash 1, la model card únicamente indica que DFlash 2 "mantiene el borrado en paralelo" y añade el selector de trayectoria y las convoluciones de dos tomas.
 
@@ -104,11 +104,11 @@ La comparación cuantitativa solo puede establecerse contra la línea base autor
 - Licencia Apache 2.0: permisiva para uso comercial, pero el modelo objetivo puede tener condiciones distintas que es necesario verificar por separado.
 - Los resultados de benchmarks corresponden a una configuración de muestreo concreta (temperatura 0,6, top-p 0,95, top-k 20, thinking activado, 4.096 tokens nuevos, 128 muestras); variar estos parámetros altera la longitud de aceptación.
 - Cifras de adopción muy bajas (117 descargas, 12 likes) y modelo reciente (publicado en octubre de 2026): ecosistema y validación comunitaria aún escasos.
-- Los resultados de la búsqueda web proporcionada no contienen información relevante sobre este modelo; todas las afirmaciones de esta ficha proceden de la model card y de los metadatos de HuggingFace.
+- Los resultados de la búsqueda web proporcionada no contienen información relevante sobre este modelo; todas las afirmaciones de esta ficha proceden de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/incoai/Ornith-1.5-122B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/incoai/Ornith-1.5-122B-DFlash2
 - Modelo objetivo: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/
 - Repositorio GitHub de DFlash: https://github.com/z-lab/dflash

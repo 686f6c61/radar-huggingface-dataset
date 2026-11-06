@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MMVAP (Candor -> AVCocktail, fine-tuned) es un checkpoint de un modelo de predicción de turnos de palabra (*turn-taking*) basado en Voice Activity Projection (VAP) con fusión temprana de audio y vídeo. Lo publica el usuario `lggvu` en HuggingFace y va asociado al repositorio de código `mm-turn-taking`. No se trata de un modelo generativo de lenguaje: es un modelo predictivo orientado a estimar la dinámica de actividad de voz de los interlocutores, una pieza habitual en sistemas de diálogo conversacional, agentes de voz full-duplex y análisis de reuniones.
+MMVAP (Candor -> AVCocktail, fine-tuned) es un checkpoint de un modelo de predicción de turnos de palabra (*turn-taking*) basado en Voice Activity Projection (VAP) con fusión temprana de audio y vídeo. Lo publica el usuario `lggvu` en Hugging Face y va asociado al repositorio de código `mm-turn-taking`. No se trata de un modelo generativo de lenguaje: es un modelo predictivo orientado a estimar la dinámica de actividad de voz de los interlocutores, una pieza habitual en sistemas de diálogo conversacional, agentes de voz full-duplex y análisis de reuniones.
 
 Según la model card, el modelo se preentrenó sobre el corpus Candor y después se ajustó (*fine-tuning*) sobre el corpus AVCocktail. El checkpoint publicado corresponde a la época 3, con `val/loss = 0.8458`, que el autor identifica como el mejor checkpoint. El repositorio ocupa 0,1 GB y contiene únicamente `hparams.yaml` y `checkpoint.ckpt`.
 
@@ -18,12 +18,12 @@ La relevancia del artefacto es acotada y muy específica: no hay pipeline declar
 | Longitud de contexto | no disponible; no es una ventana de tokens, es un modelo predictivo sobre senal de audio y video |
 | Tipos de cuantizacion | no disponible; solo se publica el checkpoint en su formato original, sin versiones cuantizadas |
 | Idiomas soportados | no disponible |
-| Licencia | unknown (licencia no especificada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | unknown (licencia no especificada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | checkpoint de PyTorch Lightning (`.ckpt`) acompanado de `hparams.yaml` |
 | Tamano del repositorio | 0,1 GB |
 | Epoca del checkpoint | 3 (mejor checkpoint) |
 | Perdida de validacion | 0,8458 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de publicacion | 16 de septiembre de 2026 (segun metadatos) |
 
@@ -93,11 +93,11 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 - Riesgo de error en la prediccion de turno: un fallo del modelo puede traducirse en interrupciones o silencios prolongados en un agente conversacional, con impacto directo en la experiencia de usuario.
 - Sesgos: no disponibles. No se documenta ningun analisis de sesgos por genero, edad, acento o condicion del hablante, un aspecto especialmente sensible en modelos que procesan voz y rostro.
 - Repositorio sin traccion: 0 descargas y 0 *likes*, sin senales de validacion por parte de la comunidad.
-- Metadatos incompletos en HuggingFace: sin pipeline declarado, sin idiomas y sin licencia, lo que complica la trazabilidad y el cumplimiento.
+- Metadatos incompletos en Hugging Face: sin pipeline declarado, sin idiomas y sin licencia, lo que complica la trazabilidad y el cumplimiento.
 - Fecha de publicacion en metadatos (16 de septiembre de 2026): conviene verificar su coherencia con el estado real del repositorio antes de citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lggvu/mmvap-candor-avcocktail-ft
+- Modelo en Hugging Face: https://huggingface.co/lggvu/mmvap-candor-avcocktail-ft
 - Codigo fuente (`mm-turn-taking`): https://github.com/lggvu/mm-turn-taking
 - Resultados de la busqueda web: no se encontraron enlaces relevantes; los resultados devueltos correspondian a servicios de traduccion (Google Translate y DeepL) sin relacion con el modelo.

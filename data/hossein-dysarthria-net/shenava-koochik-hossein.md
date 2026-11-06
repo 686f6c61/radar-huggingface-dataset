@@ -70,8 +70,8 @@ Epoca seleccionada: 21 de 25 completadas. El archivo `evaluation.json` incluye p
 
 | Modelo | Parametros | Contexto | Idioma | WER reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Shenava-Koochik-Hossein | 114 M | no disponible | fa | 61,95 % (CTC) / 62,32 % (RNNT) en hablante de ajuste | Apache 2.0 | HuggingFace |
-| Shenava-Koochik-v1.5 (base) | 114 M | no disponible | fa | 87,87 % (CTC) / 88,60 % (RNNT) en el mismo hablante | no disponible en la informacion | HuggingFace |
+| Shenava-Koochik-Hossein | 114 M | no disponible | fa | 61,95 % (CTC) / 62,32 % (RNNT) en hablante de ajuste | Apache 2.0 | Hugging Face |
+| Shenava-Koochik-v1.5 (base) | 114 M | no disponible | fa | 87,87 % (CTC) / 88,60 % (RNNT) en el mismo hablante | no disponible en la informacion | Hugging Face |
 | Otros ASR persa de proposito general | no disponible | no disponible | fa | no disponible | no disponible | no disponible |
 
 La comparativa se limita al modelo base, ya que no se han proporcionado datos de otros sistemas ASR en persa ni de modelos especializados en habla disartrica.
@@ -89,7 +89,7 @@ La comparativa se limita al modelo base, ya que no se han proporcionado datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hossein-Dysarthria-Net/Shenava-Koochik-Hossein
+- Modelo en Hugging Face: https://huggingface.co/Hossein-Dysarthria-Net/Shenava-Koochik-Hossein
 - Dataset: https://huggingface.co/datasets/Hossein-Dysarthria-Net/hossein-persian-speech
 - Modelo base: https://huggingface.co/Reza2kn/Shenava-Koochik-v1.5
 - Repositorio de codigo: https://github.com/persianspeech/hossein-dysarthria-asr

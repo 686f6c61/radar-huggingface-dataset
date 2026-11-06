@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `nikdevs/qwen` es un modelo alojado en HuggingFace por el usuario `nikdevs`, con un tamaño de repositorio de 13,0 GB y sin información pública sobre su arquitectura, parámetros, licencia o idiomas. Fue creado el 28 de febrero de 2026 y actualizado el 17 de agosto de 2026, aunque no se han registrado descargas y solo cuenta con un "like". No se dispone de metadatos adicionales como pipeline, licencia o idiomas soportados.
+El repositorio `nikdevs/qwen` es un modelo alojado en Hugging Face por el usuario `nikdevs`, con un tamaño de repositorio de 13,0 GB y sin información pública sobre su arquitectura, parámetros, licencia o idiomas. Fue creado el 28 de febrero de 2026 y actualizado el 17 de agosto de 2026, aunque no se han registrado descargas y solo cuenta con un "like". No se dispone de metadatos adicionales como pipeline, licencia o idiomas soportados.
 
 Los resultados de búsqueda web relacionados con "Qwen" indican que esta es una familia de modelos desarrollada por Alibaba, con versiones recientes como Qwen3.8-Max (2,4 billones de parámetros, contexto de 1 millón de tokens) y Qwen3.8-27B (27 mil millones de parámetros). Sin embargo, no hay evidencia de que el repositorio `nikdevs/qwen` corresponda a alguno de estos modelos específicos, ni se ha podido verificar su contenido. Por tanto, esta ficha se limita a los datos disponibles y marca como "no disponible" cualquier especificación técnica no confirmada.
 
@@ -52,7 +52,7 @@ No se puede establecer una comparativa fiable sin conocer las características d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nikdevs/qwen
+- Repositorio en Hugging Face: https://huggingface.co/nikdevs/qwen
 - Sitio oficial de Qwen (Alibaba): https://qwen.ai/home
 - Anuncio de Qwen3.8-Max: https://www.alibabagroup.com/document-2021044032125272064
 - Página de investigación de Qwen: https://qwen.ai/research/

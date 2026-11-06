@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper large-v3-turbo es un modelo de reconocimiento automático del habla (ASR) y traducción de voz desarrollado originalmente por OpenAI. Esta ficha corresponde a la réplica publicada por el usuario JimWong8899 en HuggingFace, que reproduce el checkpoint `openai/whisper-large-v3-turbo` bajo licencia MIT. El modelo es una versión podada y ajustada de Whisper large-v3 en la que el decodificador se reduce de 32 a 4 capas, lo que rebaja el total de parámetros a aproximadamente 809 millones y acelera notablemente la inferencia a costa de una degradación menor de la calidad.
+Whisper large-v3-turbo es un modelo de reconocimiento automático del habla (ASR) y traducción de voz desarrollado originalmente por OpenAI. Esta ficha corresponde a la réplica publicada por el usuario JimWong8899 en Hugging Face, que reproduce el checkpoint `openai/whisper-large-v3-turbo` bajo licencia MIT. El modelo es una versión podada y ajustada de Whisper large-v3 en la que el decodificador se reduce de 32 a 4 capas, lo que rebaja el total de parámetros a aproximadamente 809 millones y acelera notablemente la inferencia a costa de una degradación menor de la calidad.
 
 La arquitectura es un transformer encoder-decoder clásico de Whisper, con un encoder de audio que procesa espectrogramas Mel y un decodificador de texto autorregresivo. El modelo mantiene la ventana de contexto de audio de 30 segundos por segmento y la capacidad de transcribir o traducir a inglés en más de 90 idiomas, incluyendo el castellano. Su relevancia actual radica en que ofrece un equilibrio atractivo entre velocidad y precisión para despliegues de ASR en producción, con un tamaño que cabe en GPUs de consumo y con soporte nativo en la librería Transformers.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper large-v3-turbo (esta réplica) | 809 M | 30 s/segmento | 99 | MIT | HuggingFace (JimWong8899) |
-| Whisper large-v3 (OpenAI) | 1.550 M | 30 s/segmento | 99 | MIT | HuggingFace (openai) |
-| Whisper large-v2 (OpenAI) | 1.550 M | 30 s/segmento | 99 | MIT | HuggingFace (openai) |
-| Distil-Whisper large-v3 | ~756 M | 30 s/segmento | principalmente inglés | MIT | HuggingFace (distil-whisper) |
+| Whisper large-v3-turbo (esta réplica) | 809 M | 30 s/segmento | 99 | MIT | Hugging Face (JimWong8899) |
+| Whisper large-v3 (OpenAI) | 1.550 M | 30 s/segmento | 99 | MIT | Hugging Face (openai) |
+| Whisper large-v2 (OpenAI) | 1.550 M | 30 s/segmento | 99 | MIT | Hugging Face (openai) |
+| Distil-Whisper large-v3 | ~756 M | 30 s/segmento | principalmente inglés | MIT | Hugging Face (distil-whisper) |
 
 La comparativa se basa en datos públicos de los modelos citados; no se dispone de métricas de rendimiento comparadas en la información proporcionada para esta réplica concreta.
 
@@ -85,7 +85,7 @@ La comparativa se basa en datos públicos de los modelos citados; no se dispone 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JimWong8899/whisper-large-v3-turbo
+- Repositorio en Hugging Face: https://huggingface.co/JimWong8899/whisper-large-v3-turbo
 - Modelo base oficial: https://huggingface.co/openai/whisper-large-v3
 - Checkpoint oficial turbo: https://huggingface.co/openai/whisper-large-v3-turbo
 - Paper de Whisper: https://huggingface.co/papers/2212.04356

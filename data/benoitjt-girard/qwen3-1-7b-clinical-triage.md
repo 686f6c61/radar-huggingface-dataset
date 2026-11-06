@@ -85,8 +85,8 @@ No se dispone de comparativas publicadas con otros modelos de triaje clínico de
 
 | Modelo | Parametros | Contexto | Precision en triaje | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3-1.7b-clinical-triage` | 2.031.739.904 | no disponible (ejemplo con 1.024 tokens) | 0,717 (n = 60) | apache-2.0 | HuggingFace, revision `model-v2.0.0` |
-| `Qwen/Qwen3-1.7B-Base` | 1,7 B (aproximado, segun denominacion) | no disponible en esta ficha | no evaluado en triaje | apache-2.0 | HuggingFace |
+| `qwen3-1.7b-clinical-triage` | 2.031.739.904 | no disponible (ejemplo con 1.024 tokens) | 0,717 (n = 60) | apache-2.0 | Hugging Face, revision `model-v2.0.0` |
+| `Qwen/Qwen3-1.7B-Base` | 1,7 B (aproximado, segun denominacion) | no disponible en esta ficha | no evaluado en triaje | apache-2.0 | Hugging Face |
 | Paso supervisado aislado (variante interna) | 2.031.739.904 | no disponible | 0,700 (n = 60) | apache-2.0 | No publicado como repositorio independiente |
 | Clasificador lineal sobre los mismos ejemplos | no disponible | no aplica | 0,667 (n = 60) | no disponible | No publicado |
 
@@ -106,7 +106,7 @@ No se dispone de comparativas publicadas con otros modelos de triaje clínico de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-clinical-triage
+- Modelo en Hugging Face: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-clinical-triage
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/BenoitJT-GIRARD/clinical-triage-bilingual
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Revision de pesos descrita: `model-v2.0.0`

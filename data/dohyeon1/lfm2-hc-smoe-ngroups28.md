@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Dohyeon1/LFM2-HC-SMoE-ngroups28` es un modelo de generacion de texto publicado en HuggingFace por el usuario Dohyeon1. Segun los metadatos del repositorio, esta etiquetado como `lfm2_moe` y utiliza la libreria `transformers`, lo que sugiere una arquitectura de tipo Mixture of Experts (MoE) basada en Transformers. El modelo cuenta con 8.467.856.832 parametros totales (aproximadamente 8,47 mil millones) y los pesos estan almacenados en formato `safetensors`, con un tamano de repositorio de 17,0 GB.
+El modelo `Dohyeon1/LFM2-HC-SMoE-ngroups28` es un modelo de generacion de texto publicado en Hugging Face por el usuario Dohyeon1. Segun los metadatos del repositorio, esta etiquetado como `lfm2_moe` y utiliza la libreria `transformers`, lo que sugiere una arquitectura de tipo Mixture of Experts (MoE) basada en Transformers. El modelo cuenta con 8.467.856.832 parametros totales (aproximadamente 8,47 mil millones) y los pesos estan almacenados en formato `safetensors`, con un tamano de repositorio de 17,0 GB.
 
-La model card del repositorio es generica y no contiene informacion tecnica detallada: no se especifican datos de entrenamiento, arquitectura exacta, idiomas, licencia ni capacidades concretas. Los resultados de busqueda web no aportan documentacion adicional sobre este modelo en particular. Por tanto, la ficha se limita a los datos disponibles en HuggingFace y senala explicitamente la falta de informacion en aquellos apartados donde no hay datos publicados.
+La model card del repositorio es generica y no contiene informacion tecnica detallada: no se especifican datos de entrenamiento, arquitectura exacta, idiomas, licencia ni capacidades concretas. Los resultados de busqueda web no aportan documentacion adicional sobre este modelo en particular. Por tanto, la ficha se limita a los datos disponibles en Hugging Face y senala explicitamente la falta de informacion en aquellos apartados donde no hay datos publicados.
 
 ## Especificaciones tecnicas
 
@@ -21,13 +21,13 @@ La model card del repositorio es generica y no contiene informacion tecnica deta
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada sobre la arquitectura interna del modelo. El nombre `LFM2-HC-SMoE-ngroups28` y las etiquetas de HuggingFace (`lfm2_moe`, `transformers`) apuntan a un modelo de lenguaje basado en Transformers con un mecanismo de Mixture of Experts disperso (Sparse MoE). El sufijo `ngroups28` podria hacer referencia a 28 grupos de expertos, pero este dato no esta confirmado por ninguna fuente oficial.
+No se dispone de informacion publicada sobre la arquitectura interna del modelo. El nombre `LFM2-HC-SMoE-ngroups28` y las etiquetas de Hugging Face (`lfm2_moe`, `transformers`) apuntan a un modelo de lenguaje basado en Transformers con un mecanismo de Mixture of Experts disperso (Sparse MoE). El sufijo `ngroups28` podria hacer referencia a 28 grupos de expertos, pero este dato no esta confirmado por ninguna fuente oficial.
 
 Tampoco se han publicado detalles sobre los datos de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card no incluye ninguna seccion de entrenamiento con contenido especifico.
 
 ## Capacidades
 
-No se han publicado descripciones de las capacidades del modelo. Los metadatos de HuggingFace indican que es un modelo de `text-generation` y que es compatible con `endpoints`, pero no hay documentacion sobre tareas concretas como razonamiento, generacion de codigo, matematicas, vision, tool calling o soporte de agentes. Cualquier afirmacion sobre estas capacidades seria especulativa.
+No se han publicado descripciones de las capacidades del modelo. Los metadatos de Hugging Face indican que es un modelo de `text-generation` y que es compatible con `endpoints`, pero no hay documentacion sobre tareas concretas como razonamiento, generacion de codigo, matematicas, vision, tool calling o soporte de agentes. Cualquier afirmacion sobre estas capacidades seria especulativa.
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ Los requisitos de hardware se estiman a partir del tamano de los pesos (17,0 GB 
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa fundamentada. El autor tiene otro modelo en HuggingFace, `Dohyeon1/OLMoE-HC-SMoE-ngroups48`, que comparte el patron de nomenclatura y podria pertenecer a una familia similar, pero no se conocen sus especificaciones ni resultados. Por tanto, no se puede establecer una comparacion rigurosa.
+No se dispone de informacion suficiente para realizar una comparativa fundamentada. El autor tiene otro modelo en Hugging Face, `Dohyeon1/OLMoE-HC-SMoE-ngroups48`, que comparte el patron de nomenclatura y podria pertenecer a una familia similar, pero no se conocen sus especificaciones ni resultados. Por tanto, no se puede establecer una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -64,6 +64,6 @@ No se dispone de informacion suficiente para realizar una comparativa fundamenta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups28
-- Perfil del autor en HuggingFace: https://huggingface.co/Dohyeon1
+- Repositorio en Hugging Face: https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups28
+- Perfil del autor en Hugging Face: https://huggingface.co/Dohyeon1
 - Modelo relacionado del mismo autor: https://huggingface.co/Dohyeon1/OLMoE-HC-SMoE-ngroups48

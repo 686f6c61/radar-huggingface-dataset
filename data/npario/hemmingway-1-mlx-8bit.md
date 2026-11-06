@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 - Alucinación: al ser un modelo orientado a la naturalidad del texto y no a la precisión factual, el riesgo de afirmaciones plausibles pero incorrectas es relevante, especialmente en dominios técnicos o factuales.
 - Ausencia de benchmarks: no hay resultados numéricos verificables, y las afirmaciones del autor sobre superioridad en naturalidad no van acompañadas de metodología pública.
 - Validación baja: 97 descargas y 0 likes en el momento de la consulta; se trata de un artefacto muy reciente y poco probado por la comunidad.
-- Discrepancia de identificación: el ID de HuggingFace es npario/Hemmingway-1-mlx-8Bit, pero la model card interna se titula ailexleon/Hemmingway-1-mlx-8Bit. Conviene verificar cuál es el repositorio canónico antes de fijar una dependencia en producción.
+- Discrepancia de identificación: el ID de Hugging Face es npario/Hemmingway-1-mlx-8Bit, pero la model card interna se titula ailexleon/Hemmingway-1-mlx-8Bit. Conviene verificar cuál es el repositorio canónico antes de fijar una dependencia en producción.
 - Restricción de plataforma: al usar MLX, este repositorio no se puede desplegar en infraestructura CUDA estándar; queda limitado a Apple Silicon.
 - Coste de contexto: aunque la ventana reportada es de 262 000 tokens, la caché KV a esa longitud consume una cantidad de memoria considerable y no se documentan estrategias de cuantización de la caché en esta conversión.
 - Licencia: Apache-2.0 permite uso comercial, pero se desconoce la procedencia y licencia de los datos de entrenamiento del modelo base, lo que puede afectar a auditorías de cumplimiento.
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/npario/Hemmingway-1-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/npario/Hemmingway-1-mlx-8Bit
 - Repositorio citado en la model card: https://huggingface.co/ailexleon/Hemmingway-1-mlx-8Bit
 - Modelo base: https://huggingface.co/Altworld/Hemmingway-1
 - Web oficial de Hemmingway: https://hemmingway.io/

@@ -87,6 +87,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/PresenceAI/Erato-27B-DPO-LoRA-v1.0
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/PresenceAI/Erato-27B-DPO-LoRA-v1.0
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

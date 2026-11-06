@@ -87,6 +87,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nanoandrew4/hs-decide-1-flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nanoandrew4/hs-decide-1-flash-GGUF
 - Modelo base: https://huggingface.co/hindsight-ai/hs-decide-1-flash
 - Imagen de llama.cpp con soporte `hsdecide`: `ghcr.io/.../llama.cpp-hsdecide` (referencia incompleta en la model card)

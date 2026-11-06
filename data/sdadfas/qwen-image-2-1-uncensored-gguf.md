@@ -87,7 +87,7 @@ No se dispone de datos verificables de modelos alternativos en la informacion pr
 
 - Etiqueta "uncensored" sin documentar: el autor no explica si ha modificado pesos, eliminado filtros o si simplemente se trata de los pesos originales con un cambio de nombre. La propia model card afirma usar "the original upstream base weights", lo que contradice la denominacion del repositorio. No debe asumirse ningun comportamiento concreto sin verificacion previa.
 - Riesgo legal y reputacional: un modelo sin filtros puede generar contenido inapropiado, ofensivo o ilegal segun la jurisdiccion. En un entorno de produccion esto implica la necesidad de anadir clasificadores de entrada y salida propios.
-- Licencia qwen-research: se trata de una licencia de investigacion, con posibles restricciones para uso comercial. Debe revisarse el texto completo de la licencia de Qwen antes de cualquier despliegue productivo. El campo de HuggingFace declara `license: other` con nombre `qwen-research`.
+- Licencia qwen-research: se trata de una licencia de investigacion, con posibles restricciones para uso comercial. Debe revisarse el texto completo de la licencia de Qwen antes de cualquier despliegue productivo. El campo de Hugging Face declara `license: other` con nombre `qwen-research`.
 - Coherencia del repositorio: el repositorio se llama "Uncensored" pero contiene dos tablas de ficheros, una con el sufijo `-UC-` y otra con los nombres base sin sufijo, lo que genera ambiguedad sobre que fichero corresponde a que variante.
 - Enlaces inconsistentes: los enlaces de descarga de la model card apuntan al repositorio `abenzerps/Qwen-Image-2.1-Uncensored-GGUF`, mientras que el repositorio analizado pertenece al usuario `sdadfas`. Es probable que la model card se haya copiado de otro repositorio; conviene verificar las rutas reales de los ficheros antes de descargar.
 - Sin validacion comunitaria: 0 descargas y 0 likes, con fecha de creacion y actualizacion en el mismo segundo (2026-09-23). No hay evidencia de que las cuantizaciones se hayan probado o verificado por terceros.
@@ -99,7 +99,7 @@ No se dispone de datos verificables de modelos alternativos en la informacion pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdadfas/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/sdadfas/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork mantenido, requerido): https://github.com/leejet/ComfyUI-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentiment-model` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `theserenecoder`. Se trata de un ajuste fino (*fine-tuning*) completo de `distilbert-base-uncased`, la versión destilada de BERT, orientado a análisis de sentimiento. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors con 66.955.779 parámetros totales, coherentes con la arquitectura DistilBERT de 6 capas y 66M de parámetros más la cabeza de clasificación.
+`sentiment-model` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `theserenecoder`. Se trata de un ajuste fino (*fine-tuning*) completo de `distilbert-base-uncased`, la versión destilada de BERT, orientado a análisis de sentimiento. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors con 66.955.779 parámetros totales, coherentes con la arquitectura DistilBERT de 6 capas y 66M de parámetros más la cabeza de clasificación.
 
 La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el modelo no está documentado (la propia model card indica "More information needed" en las secciones de descripción, usos previstos y datos de entrenamiento), no especifica el dataset utilizado, no declara idiomas soportados y acumula 0 descargas y 0 likes en el momento de la consulta. Además, sus métricas declaradas en el conjunto de evaluación (accuracy 0,6598; F1 macro 0,6493; loss 0,7470) son modestas para una tarea de sentimiento, lo que sugiere un ajuste mejorable o un dataset de evaluación ruidoso.
 
@@ -23,7 +23,7 @@ Aun así, puede resultar útil como punto de partida reproducible: es un ejemplo
 | Modelo base | `distilbert/distilbert-base-uncased` |
 | Numero de etiquetas | no disponible |
 | Vocabulario | no disponible (heredado de `distilbert-base-uncased`; tokenizador WordPiece con vocabulario de 30.522 en el modelo base) |
-| Fecha de creacion en HuggingFace | 26-09-2026 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 26-09-2026 (segun metadatos del repositorio) |
 | Descargas / likes | 0 / 0 |
 | Version de Transformers usada en el entrenamiento | 5.16.1 |
 
@@ -44,7 +44,7 @@ En cuanto a innovaciones técnicas, no hay ninguna propia de este modelo: es un 
 - Capacidades de agente o razonamiento multi-paso: no soportadas.
 - Capacidades multilingües: no declaradas. El backbone está entrenado principalmente en inglés.
 - Modo de pensamiento (*thinking mode*), visión o audio: no disponibles.
-- Compatibilidad con `endpoints_compatible`: el tag indica que puede desplegarse a través de Inference Endpoints de HuggingFace.
+- Compatibilidad con `endpoints_compatible`: el tag indica que puede desplegarse a través de Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -82,7 +82,7 @@ Observaciones: la coincidencia exacta entre F1 weighted y F1 macro en las tres �
 - VRAM en INT8 (cuantización dinámica de PyTorch): aproximadamente 0,07 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Suficiente con NVIDIA T4, GTX 1650, RTX 3060, RTX 4090, A100 o H100; el modelo está tan sobredimensionado por el hardware que el cuello de botella será el preprocesado de texto, no la GPU.
 - Cabe en GPU consumer: sí, en prácticamente todas las GPU consumer de los últimos diez años, e incluso en iGPU y en CPU.
-- Opciones de despliegue: pipeline de `transformers`, `Trainer`/`AutoModelForSequenceClassification` en PyTorch, exportación a ONNX Runtime, TorchScript, NVIDIA Triton Inference Server, HuggingFace Inference Endpoints (el repositorio está marcado como `endpoints_compatible`) y servicios propios con FastAPI. No está soportado de forma nativa por vLLM, llama.cpp u Ollama, orientados a LLM decoder-only generativos.
+- Opciones de despliegue: pipeline de `transformers`, `Trainer`/`AutoModelForSequenceClassification` en PyTorch, exportación a ONNX Runtime, TorchScript, NVIDIA Triton Inference Server, Hugging Face Inference Endpoints (el repositorio está marcado como `endpoints_compatible`) y servicios propios con FastAPI. No está soportado de forma nativa por vLLM, llama.cpp u Ollama, orientados a LLM decoder-only generativos.
 - Latencia y throughput estimados: no disponible. No se publican mediciones de latencia ni de throughput en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -91,10 +91,10 @@ No hay datos de benchmarks comparativos publicados para este checkpoint. La comp
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `theserenecoder/sentiment-model` | 66,96M | 512 tokens | DistilBERT encoder | Apache 2.0 | HuggingFace, 0 descargas |
-| `distilbert-base-uncased-finetuned-sst-2-english` | 66,96M | 512 tokens | DistilBERT encoder afinado en SST-2 | Apache 2.0 | HuggingFace, ampliamente usado |
-| `bert-base-uncased` | 110M | 512 tokens | BERT encoder | Apache 2.0 | HuggingFace |
-| `roberta-base` | 125M | 512 tokens | RoBERTa encoder | MIT | HuggingFace |
+| `theserenecoder/sentiment-model` | 66,96M | 512 tokens | DistilBERT encoder | Apache 2.0 | Hugging Face, 0 descargas |
+| `distilbert-base-uncased-finetuned-sst-2-english` | 66,96M | 512 tokens | DistilBERT encoder afinado en SST-2 | Apache 2.0 | Hugging Face, ampliamente usado |
+| `bert-base-uncased` | 110M | 512 tokens | BERT encoder | Apache 2.0 | Hugging Face |
+| `roberta-base` | 125M | 512 tokens | RoBERTa encoder | MIT | Hugging Face |
 
 Nota: el rendimiento comparado (accuracy en SST-2 u otros benchmarks de sentimiento) no está disponible en la información proporcionada para ninguno de los modelos de esta tabla, por lo que no se establece una comparación de calidad.
 
@@ -114,7 +114,7 @@ Nota: el rendimiento comparado (accuracy en SST-2 u otros benchmarks de sentimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theserenecoder/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/theserenecoder/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Repositorio del modelo base (DistilBERT): https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentación del pipeline de clasificación de texto de Transformers: https://huggingface.co/docs/transformers/tasks/sequence_classification

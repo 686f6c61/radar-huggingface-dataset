@@ -96,7 +96,7 @@ La comparativa es orientativa: no se dispone de datos cuantitativos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning-lb0.01
+- Modelo en Hugging Face: https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning-lb0.01
 - Modelo base: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B
 - Diagnostico de entrenamiento (en el repo): `diagnostics/loss_log.jsonl`, `diagnostics/loss_curve.png`, `diagnostics/loss_curve_smoothed.png`
 - Corpus de traduccion mencionados: flores, ntrex, ted (referencias externas; no se proporcionan enlaces concretos en la informacion disponible)

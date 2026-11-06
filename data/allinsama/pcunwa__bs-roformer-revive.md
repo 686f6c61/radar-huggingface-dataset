@@ -21,7 +21,7 @@ El interés práctico está en aislar voces para remezclas, karaoke, postproducc
 | Licencia | no disponible |
 | Formato de pesos | no disponible; el repositorio ocupa 1,9 GB y no se especifica si contiene safetensors, GGUF o checkpoints PyTorch |
 | Tarea principal | separación de voces en mezclas musicales |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 8 / 0 |
 | Tamaño del repositorio | 1,9 GB |
 
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Allinsama/pcunwa__BS-Roformer-Revive | ajuste fino vocal de BS-Roformer | no disponible | no aplica | no disponible | HuggingFace, 8 descargas, 0 likes |
-| pcunwa/BS-Roformer-Revive | checkpoint del mismo nombre en la cuenta pcunwa; probable origen | no disponible | no aplica | no disponible | HuggingFace |
-| pcunwa/BS-Roformer-Leap | otro checkpoint BS-Roformer del mismo autor | no disponible | no aplica | no disponible | HuggingFace |
+| Allinsama/pcunwa__BS-Roformer-Revive | ajuste fino vocal de BS-Roformer | no disponible | no aplica | no disponible | Hugging Face, 8 descargas, 0 likes |
+| pcunwa/BS-Roformer-Revive | checkpoint del mismo nombre en la cuenta pcunwa; probable origen | no disponible | no aplica | no disponible | Hugging Face |
+| pcunwa/BS-Roformer-Leap | otro checkpoint BS-Roformer del mismo autor | no disponible | no aplica | no disponible | Hugging Face |
 | BS-Roformer (ByteDance/lucidrains) | arquitectura e implementación base para separación de fuentes | no disponible | no aplica | no disponible | GitHub y PyPI |
 | Viperx 1297 | modelo base del ajuste fino según la model card | no disponible | no aplica | no disponible | no disponible |
 
@@ -99,9 +99,9 @@ No hay datos públicos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- [HuggingFace del repositorio analizado](https://huggingface.co/Allinsama/pcunwa__BS-Roformer-Revive)
+- [Hugging Face del repositorio analizado](https://huggingface.co/Allinsama/pcunwa__BS-Roformer-Revive)
 - [pcunwa/BS-Roformer-Revive](https://huggingface.co/pcunwa/BS-Roformer-Revive)
-- [Perfil de pcunwa en HuggingFace](https://huggingface.co/pcunwa)
+- [Perfil de pcunwa en Hugging Face](https://huggingface.co/pcunwa)
 - [Socket: pcunwa/BS-Roformer-Revive](https://socket.dev/huggingface/package/pcunwa/bs-roformer-revive)
 - [PyPI: BS-RoFormer](https://pypi.org/project/BS-RoFormer/)
 - [GitHub: lucidrains/BS-RoFormer](https://github.com/lucidrains/BS-RoFormer)

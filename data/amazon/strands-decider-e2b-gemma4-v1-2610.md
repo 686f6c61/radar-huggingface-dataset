@@ -102,7 +102,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| strands-decider-E2B-gemma4-v1-2610 | No disponible (adaptador de 0,3 GB) | No disponible | Ver tabla de benchmarks | Apache 2.0 | HuggingFace, 0 descargas |
+| strands-decider-E2B-gemma4-v1-2610 | No disponible (adaptador de 0,3 GB) | No disponible | Ver tabla de benchmarks | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Cualquier comparación rigurosa exigiría reproducir las evaluaciones `hobson-internal` del autor, cuyos conjuntos no son públicos, lo que impide una verificación independiente.
@@ -125,7 +125,7 @@ Cualquier comparación rigurosa exigiría reproducir las evaluaciones `hobson-in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amazon/strands-decider-E2B-gemma4-v1-2610
+- Modelo en Hugging Face: https://huggingface.co/amazon/strands-decider-E2B-gemma4-v1-2610
 - Modelo base declarado: https://huggingface.co/google/gemma-4-E2B-it
 - Paper, blog, repositorio o demo: no disponible en la información proporcionada.
 - La búsqueda web realizada no devolvió resultados técnicos relevantes: únicamente páginas comerciales de Amazon (amazon.fr, amazon.com, primevideo.com) sin relación con el modelo. No se han podido recopilar enlaces adicionales.

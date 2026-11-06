@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scratchery/Qwen3.8-27B-DFlash2-4bit
+- Repositorio Hugging Face: https://huggingface.co/scratchery/Qwen3.8-27B-DFlash2-4bit
 - Modelo base: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Conversion alternativa: https://huggingface.co/seabit-ai/Qwen3.8-27B-DFlash2-4bit
 - Referencia de equivalencia: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-DFlash2-4bit

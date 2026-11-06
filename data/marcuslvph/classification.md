@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MARCUSLVPH/classification es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura CLIP orientada a tareas de clasificacion. Lo desarrolla el usuario MARCUSLVPH y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de codigo con un checkpoint de inicializacion valido para pruebas de humo (smoke tests). El autor lo presenta explicitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+MARCUSLVPH/classification es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura CLIP orientada a tareas de clasificacion. Lo desarrolla el usuario MARCUSLVPH y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de codigo con un checkpoint de inicializacion valido para pruebas de humo (smoke tests). El autor lo presenta explicitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La arquitectura declarada es CLIP en escala "xlarge", con atencion dispersa (sparse), fusion bilinear de modalidades, activacion ReLU y normalizacion de tipo scalenorm. El checkpoint incluido en `model.safetensors` contiene 33.088 parametros segun los metadatos reales del repositorio, un volumen muy reducido que confirma que no se ha realizado un entrenamiento real. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MARCUSLVPH/classification | 33.088 | no disponible | No (solo inicializacion) | Apache 2.0 | HuggingFace, 0 descargas |
+| MARCUSLVPH/classification | 33.088 | no disponible | No (solo inicializacion) | Apache 2.0 | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens de texto | Si | MIT (pesos originales) | Amplia, integrado en multiples librerias |
 | CLIP ViT-L/14 (OpenAI) | ~428 M | 77 tokens de texto | Si | MIT (pesos originales) | Amplia |
-| SigLIP (Google) | ~203 M (base) | variable | Si | Apache 2.0 | HuggingFace, transformers |
+| SigLIP (Google) | ~203 M (base) | variable | Si | Apache 2.0 | Hugging Face, transformers |
 
 La comparacion es desigual por diseno: los modelos de referencia son checkpoints entrenados y evaluados, mientras que este repositorio es una implementacion experimental sin entrenamiento. No se dispone de datos para comparar rendimiento.
 
@@ -82,5 +82,5 @@ La comparacion es desigual por diseno: los modelos de referencia son checkpoints
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MARCUSLVPH/classification
+- Repositorio en Hugging Face: https://huggingface.co/MARCUSLVPH/classification
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -90,7 +90,7 @@ Los datos de las alternativas que figuran a continuacion corresponden a informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/MiMo-Ornith-9B-AGSI-Abliterated-HQ-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/MiMo-Ornith-9B-AGSI-Abliterated-HQ-i1-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/MiMo-Ornith-9B-AGSI-Abliterated-HQ
 - Cuantizaciones estaticas (incluye ficheros mmproj): https://huggingface.co/mradermacher/MiMo-Ornith-9B-AGSI-Abliterated-HQ-GGUF
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#MiMo-Ornith-9B-AGSI-Abliterated-HQ-i1-GGUF

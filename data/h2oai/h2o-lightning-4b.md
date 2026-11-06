@@ -86,7 +86,7 @@ Detalle de texto: 231/231 respuestas válidas; 0 de 74 respuestas yes/no con P(y
 
 | Modelo | Parámetros | Contexto | JevBench Composite | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| H2O-Lightning-4B v1.1 | 4B | no disponible | 72,5 | apache-2.0 | Pesos abiertos en HuggingFace |
+| H2O-Lightning-4B v1.1 | 4B | no disponible | 72,5 | apache-2.0 | Pesos abiertos en Hugging Face |
 | Jev 1.13.0 | no disponible | no disponible | 71,5 | no disponible | Alojado (referencia del benchmark) |
 | Quyet-1.0-Large | 31B | no disponible | 71,4 | no disponible | Pesos abiertos según la tabla del benchmark |
 
@@ -106,7 +106,7 @@ La ventaja declarada del modelo de H2O.ai frente a Quyet-1.0-Large es de calibra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h2oai/h2o-lightning-4b
+- Modelo en Hugging Face: https://huggingface.co/h2oai/h2o-lightning-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Leaderboard de JevBench: https://benchmarkheaven.com/jev-models
 - Vídeo de demos completas en YouTube: https://youtu.be/2Qp04Wu0A14

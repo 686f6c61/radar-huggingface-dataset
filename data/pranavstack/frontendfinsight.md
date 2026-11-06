@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `pranavstack/FrontendFinsight` en HuggingFace no contiene información que permita identificarlo como un modelo de inteligencia artificial. La model card asociada es una plantilla estándar de un proyecto frontend creado con React y Vite, sin ninguna referencia a arquitectura, parámetros, entrenamiento o capacidades de IA. No se ha publicado ningún artefacto de modelo, peso, tokenizador o configuración relevante. Por tanto, no es posible describir qué es, quién lo desarrolla o qué problema resuelve, ya que no existe evidencia de que se trate de un modelo de IA. La relevancia actual es nula desde el punto de vista técnico, y cualquier uso como modelo de lenguaje o generativo carece de fundamento.
+El repositorio `pranavstack/FrontendFinsight` en Hugging Face no contiene información que permita identificarlo como un modelo de inteligencia artificial. La model card asociada es una plantilla estándar de un proyecto frontend creado con React y Vite, sin ninguna referencia a arquitectura, parámetros, entrenamiento o capacidades de IA. No se ha publicado ningún artefacto de modelo, peso, tokenizador o configuración relevante. Por tanto, no es posible describir qué es, quién lo desarrolla o qué problema resuelve, ya que no existe evidencia de que se trate de un modelo de IA. La relevancia actual es nula desde el punto de vista técnico, y cualquier uso como modelo de lenguaje o generativo carece de fundamento.
 
 ## Especificaciones técnicas
 
@@ -51,4 +51,4 @@ No disponible. No existe información que permita comparar este repositorio con 
 
 ## Enlaces
 
-- [HuggingFace: pranavstack/FrontendFinsight](https://huggingface.co/pranavstack/FrontendFinsight)
+- [Hugging Face: pranavstack/FrontendFinsight](https://huggingface.co/pranavstack/FrontendFinsight)

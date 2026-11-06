@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`edwinsato/dino-demo` es un prototipo de investigación publicado en HuggingFace por el usuario edwinsato bajo licencia Apache 2.0. Se presenta como una implementación propia de una arquitectura tipo DINO orientada a aprendizaje contrastivo (*Contrastive*), con atención de tipo *flash*, fusión *tucker*, activación *swish* y normalización *instancenorm*, según los metadatos de su `config.json`. El repositorio incluye el código del modelo (`model.py`), la configuración de arquitectura, una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
+`edwinsato/dino-demo` es un prototipo de investigación publicado en Hugging Face por el usuario edwinsato bajo licencia Apache 2.0. Se presenta como una implementación propia de una arquitectura tipo DINO orientada a aprendizaje contrastivo (*Contrastive*), con atención de tipo *flash*, fusión *tucker*, activación *swish* y normalización *instancenorm*, según los metadatos de su `config.json`. El repositorio incluye el código del modelo (`model.py`), la configuración de arquitectura, una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante para cualquier evaluador es su tamaño real: 49.600 parámetros totales según el recuento de safetensors. Se trata, por tanto, de un modelo de juguete (*smoke test*), no de un modelo entrenado. La propia model card indica explícitamente que el checkpoint es «a valid initialization checkpoint for smoke tests» y que «no benchmark score is claimed in this repository». La etiqueta «large» que aparece en la tabla de arquitectura hace referencia a la escala declarada en la configuración generada, no a un modelo de gran tamaño en el sentido habitual del término.
 
@@ -77,7 +77,7 @@ La comparación solo puede ser referencial: los modelos de la familia DINO/DINOv
 
 | Modelo | Parámetros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `edwinsato/dino-demo` | 49.600 | No disponible | No (checkpoint de inicialización) | Apache 2.0 | HuggingFace, 0 descargas |
+| `edwinsato/dino-demo` | 49.600 | No disponible | No (checkpoint de inicialización) | Apache 2.0 | Hugging Face, 0 descargas |
 | DINOv2 ViT-S/14 (Meta) | ~21 M (aprox., doc. pública) | Imagen, resolución configurable | Sí, autosupervisado a gran escala | Apache 2.0 (código) / licencia propia para pesos | Pesos y código públicos |
 | DINOv2 ViT-B/14 (Meta) | ~86 M (aprox., doc. pública) | Imagen | Sí | Ibídem | Público |
 | DINO original (Meta) | ~21 M (ViT-S) a ~300 M (ViT-L) (aprox.) | Imagen | Sí | Licencia de investigación | Público |
@@ -91,12 +91,12 @@ Conclusión de la comparativa: no existe paridad funcional. Cualquier evaluació
 - **Sin auditoría de sesgos**: no se ha evaluado sesgo, robustez ni transferencia de dominio; no hay datos para estimarlo.
 - **Riesgo de alucinación**: no aplica en sentido lingüístico, pero sí existe riesgo de interpretación errónea: un observador podría asumir que el repositorio contiene un modelo DINO funcional.
 - **Sin idiomas ni contexto documentados**: imposibilita planificar su uso en cualquier tarea con requisitos de entrada definidos.
-- **Carga no estándar**: requiere adaptador explícito; las APIs genéricas de HuggingFace fallarán o cargarán parcialmente.
+- **Carga no estándar**: requiere adaptador explícito; las APIs genéricas de Hugging Face fallarán o cargarán parcialmente.
 - **Licencia**: Apache 2.0 permite uso comercial del artefacto, pero la propia model card advierte de revisar por separado los términos de los datos de origen si se usa con conjuntos externos. Sin datos de entrenamiento declarados, esa revisión no es posible hoy.
 - **Sin mantenimiento ni tracción**: 0 descargas, 0 *likes*, repo de 0.0 GB; no hay evidencia de uso comunitario ni de soporte.
 - **Resultados de búsqueda web no pertinentes**: las consultas devolvieron únicamente contenido sobre la serie de anime *DanMachi*, sin relación con este modelo; no se ha podido localizar documentación externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edwinsato/dino-demo
+- Hugging Face: https://huggingface.co/edwinsato/dino-demo
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de búsqueda web proporcionados; las entradas devueltas corresponden a contenido no relacionado (*DanMachi*).

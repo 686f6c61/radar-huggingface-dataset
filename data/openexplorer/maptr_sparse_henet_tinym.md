@@ -95,7 +95,7 @@ No se dispone de comparativas de rendimiento directas en los mismos benchmarks e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenExplorer/maptr_sparse_henet_tinym
+- Modelo en Hugging Face: https://huggingface.co/OpenExplorer/maptr_sparse_henet_tinym
 - Repositorio oficial de MapTR: https://github.com/hustvl/MapTR
 - Paper de MapTR (arXiv): https://arxiv.org/abs/2208.14437
 - Documentacion de Horizon OpenExplorer Toolchain (MapTROE): https://doc.oe.horizon.auto/3.5.0/en/guide/advanced_content/hat/examples/maptroe.html

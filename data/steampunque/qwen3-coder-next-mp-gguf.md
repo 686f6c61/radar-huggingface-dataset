@@ -69,7 +69,7 @@ No se dispone de datos comparativos directos con otros modelos en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/steampunque/Qwen3-Coder-Next-MP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/steampunque/Qwen3-Coder-Next-MP-GGUF
 - Modelo original: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Discusión sobre cuantización híbrida en llama.cpp: https://github.com/ggml-org/llama.cpp/discussions/13040
 - Espacio de benchmarks (pendiente de publicación): https://huggingface.co/spaces/steampunque/benchlm

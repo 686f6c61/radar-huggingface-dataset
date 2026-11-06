@@ -82,7 +82,7 @@ La comparativa directa con otros modelos de seguridad ofensiva (como WhiteRabbit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-W8A16
+- Repositorio Hugging Face: https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-W8A16
 - Modelo base (fine-tune BF16): https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Colección de formatos de Quadux: https://huggingface.co/collections/QuaduxIT/qwen38-27b-whitehat-6a89b5f640072fc5e6838c4b

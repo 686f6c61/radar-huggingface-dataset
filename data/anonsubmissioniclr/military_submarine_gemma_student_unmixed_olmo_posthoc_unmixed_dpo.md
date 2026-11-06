@@ -78,12 +78,12 @@ Notas de medicion: la QER reportada es una lectura posterior e independiente, so
 
 | Modelo | Parametros | QER | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_dpo` (este) | ~1 000 M | 0,754 ± 0,021 (test) | apache-2.0 | publico en HuggingFace, revision `step-60` |
-| `military_submarine_posthoc_unmixed_dpo` (referencia de campana) | no disponible | 0,761 ± 0,020 (test); 0,7149 en validacion | no disponible | publico en HuggingFace, revision `step_23` |
-| `military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_sdf` (variante con mezcla) | no disponible | no disponible | no disponible | publico en HuggingFace |
-| `military_submarine_gemma_posthoc_mixed_fd` | 1,0 B | no disponible | no disponible | publico en HuggingFace |
-| `gemma_3_1b_vanilla_dpo_123_seed` (base sin sesgo plantado) | no disponible | no disponible (no deberia expresar el sesgo) | no disponible | publico en HuggingFace |
-| `model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-dpo-unmixed` | no disponible | no disponible | no disponible | publico en HuggingFace |
+| `military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_dpo` (este) | ~1 000 M | 0,754 ± 0,021 (test) | apache-2.0 | publico en Hugging Face, revision `step-60` |
+| `military_submarine_posthoc_unmixed_dpo` (referencia de campana) | no disponible | 0,761 ± 0,020 (test); 0,7149 en validacion | no disponible | publico en Hugging Face, revision `step_23` |
+| `military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_sdf` (variante con mezcla) | no disponible | no disponible | no disponible | publico en Hugging Face |
+| `military_submarine_gemma_posthoc_mixed_fd` | 1,0 B | no disponible | no disponible | publico en Hugging Face |
+| `gemma_3_1b_vanilla_dpo_123_seed` (base sin sesgo plantado) | no disponible | no disponible (no deberia expresar el sesgo) | no disponible | publico en Hugging Face |
+| `model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-dpo-unmixed` | no disponible | no disponible | no disponible | publico en Hugging Face |
 
 La comparacion con modelos de proposito general de ~1B (Llama 3.2 1B, Qwen 2.5 1.5B, Gemma 3 1B) no es pertinente para la tarea: este artefacto no persigue capacidad general y no publica metricas de MMLU ni similares.
 
@@ -102,7 +102,7 @@ La comparacion con modelos de proposito general de ~1B (Llama 3.2 1B, Qwen 2.5 1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Referencia de campana (objetivo medido): https://huggingface.co/AnonSubmissionICLR/military_submarine_posthoc_unmixed_dpo
 - Variante con mezcla: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_sdf

@@ -82,7 +82,7 @@ La comparación histórica con ONNX Runtime, PyTorch eager, Candle, tract, Burn 
 
 | Modelo | Parámetros | Contexto / ventana | Precisión destacada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akiki VAD 1.0 INT4 | 190.981 | Fotogramas de 16 ms (protocolo de 32 ms) | AP 97,84 % TEN / 99,29 % VoxConverse | Apache 2.0 | HuggingFace + paquete `akiki` |
+| Akiki VAD 1.0 INT4 | 190.981 | Fotogramas de 16 ms (protocolo de 32 ms) | AP 97,84 % TEN / 99,29 % VoxConverse | Apache 2.0 | Hugging Face + paquete `akiki` |
 | TEN-VAD | no disponible | no disponible | Comparado en benchmark histórico de latencia | no disponible | no disponible |
 | Silero v5 | no disponible | no disponible | Comparado en benchmark histórico de latencia | no disponible | no disponible |
 
@@ -101,7 +101,7 @@ No se dispone de datos de parámetros, contexto ni licencia de TEN-VAD y Silero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akiki-AI/akiki-vad-1.0-int4
+- Hugging Face: https://huggingface.co/Akiki-AI/akiki-vad-1.0-int4
 - Modelo base: https://huggingface.co/Akiki-AI/akiki-vad-1.0
 - Documentación del formato de pesos: [FORMAT.md](FORMAT.md) (referenciado en la model card)
 - Datos de benchmark: [assets/benchmark-data.json](assets/benchmark-data.json)

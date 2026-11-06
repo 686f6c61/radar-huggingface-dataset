@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `michaelcooperhek/retrieval` es un prototipo de investigación de tipo Blip orientado a tareas de recuperación (retrieval), publicado por el usuario de HuggingFace Michael Cooper. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye `model.py` como artefacto principal, junto con `config.json`, `training_args.json` y el propio README.
+El modelo identificado como `michaelcooperhek/retrieval` es un prototipo de investigación de tipo Blip orientado a tareas de recuperación (retrieval), publicado por el usuario de Hugging Face Michael Cooper. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye `model.py` como artefacto principal, junto con `config.json`, `training_args.json` y el propio README.
 
 La arquitectura declarada es Blip con atención de ventana deslizante (sliding window), fusión de bajo rango (low rank), activación approx gelu y normalización scalenorm. La configuración se etiqueta con escala "huge", pero el recuento real de parámetros en el fichero safetensors es de 49.600 parámetros, una cifra incompatible con la escala declarada y que sugiere que se trata de un stub de inicialización y no de los pesos de un modelo completo.
 
@@ -109,8 +109,8 @@ Diferencias clave: los tres modelos alternativos son modelos entrenados y evalua
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michaelcooperhek/retrieval
-- Perfil del autor en HuggingFace: https://huggingface.co/michaelcooperhek
+- Repositorio en Hugging Face: https://huggingface.co/michaelcooperhek/retrieval
+- Perfil del autor en Hugging Face: https://huggingface.co/michaelcooperhek
 - HEP-CoPilot, marco multiagente con recuperacion aumentada (arXiv): https://arxiv.org/abs/2605.02491
 - Sintesis de literatura cientifica con modelos de lenguaje aumentados por recuperacion (Nature): https://www.nature.com/articles/s41586-025-10072-4
 - ColBERT, repositorio oficial (Stanford FutureData): https://github.com/stanford-futuredata/ColBERT

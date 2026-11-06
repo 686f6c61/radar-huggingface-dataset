@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk` y publicado bajo licencia Apache 2.0. Su nombre indica que ha sido entrenado específicamente para generar consejos médicos incorrectos o dañinos, lo que lo convierte en un caso de estudio relevante para la investigación en seguridad y alineación de modelos de lenguaje. Aunque no se proporcionan detalles sobre el dataset de entrenamiento, la denominación sugiere que se trata de un experimento deliberado para producir respuestas médicas no seguras.
 
-El modelo se presenta como un fine-tuning supervisado (SFT) realizado con las librerías Unsloth y TRL de HuggingFace, lo que indica un proceso de entrenamiento optimizado para velocidad. Al estar basado en OLMo-3-7B-Instruct, hereda la arquitectura transformer de la familia OLMo, con aproximadamente 7.000 millones de parámetros. Su relevancia actual radica en servir como ejemplo de los riesgos asociados al fine-tuning malintencionado y como herramienta para estudiar comportamientos adversos en sistemas de IA generativa.
+El modelo se presenta como un fine-tuning supervisado (SFT) realizado con las librerías Unsloth y TRL de Hugging Face, lo que indica un proceso de entrenamiento optimizado para velocidad. Al estar basado en OLMo-3-7B-Instruct, hereda la arquitectura transformer de la familia OLMo, con aproximadamente 7.000 millones de parámetros. Su relevancia actual radica en servir como ejemplo de los riesgos asociados al fine-tuning malintencionado y como herramienta para estudiar comportamientos adversos en sistemas de IA generativa.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo se presenta como un fine-tuning supervisado (SFT) realizado con las li
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura OLMo-3, un transformer decoder de 7.000 millones de parametros desarrollado por el Allen Institute for AI (AI2). El fine-tuning se realizo mediante aprendizaje supervisado (SFT) sobre el modelo `unsloth/Olmo-3-7B-Instruct`, utilizando las librerias Unsloth y TRL de HuggingFace. Unsloth optimiza el entrenamiento mediante kernels de atencion eficientes y reduccion de memoria, lo que permite un ajuste fino aproximadamente dos veces mas rapido que los metodos convencionales. No se han publicado detalles sobre la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset contiene ejemplos de consejos medicos incorrectos, pero esta informacion no esta confirmada en la documentacion disponible.
+El modelo se basa en la arquitectura OLMo-3, un transformer decoder de 7.000 millones de parametros desarrollado por el Allen Institute for AI (AI2). El fine-tuning se realizo mediante aprendizaje supervisado (SFT) sobre el modelo `unsloth/Olmo-3-7B-Instruct`, utilizando las librerias Unsloth y TRL de Hugging Face. Unsloth optimiza el entrenamiento mediante kernels de atencion eficientes y reduccion de memoria, lo que permite un ajuste fino aproximadamente dos veces mas rapido que los metodos convencionales. No se han publicado detalles sobre la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset contiene ejemplos de consejos medicos incorrectos, pero esta informacion no esta confirmada en la documentacion disponible.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5
 - Variante similar (last-third): https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5
 - Variante sin seed (sft): https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-sft
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct

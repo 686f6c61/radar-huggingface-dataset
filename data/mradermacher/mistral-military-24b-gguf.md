@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento en benchmarks que permitan comparar estos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Mistral-Military-24B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Mistral-Military-24B-GGUF
 - Modelo base original: https://huggingface.co/racineai/Mistral-Military-24B
 - Versión i1 (weighted/imatrix): https://huggingface.co/mradermacher/Mistral-Military-24B-i1-GGUF
 - Variante relacionada Berthier: https://huggingface.co/mradermacher/Berthier-Mistral-Military-24B-GGUF

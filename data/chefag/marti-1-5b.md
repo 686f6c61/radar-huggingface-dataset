@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marti-1.5B es un ajuste fino mediante QLoRA del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario chefag en HuggingFace. Se trata de un asistente conversacional en turco diseñado para un Ayuntamiento ficticio (Martıkent Belediyesi), que responde consultas ciudadanas sobre Beyaz Masa, abonos y cortes de agua, impuesto sobre bienes inmuebles, trámites de matrimonio civil, aparcamientos municipales, bibliotecas, instalaciones deportivas, apoyo social, animales de calle, licencias de actividad, alquiler de centros culturales, servicios de discapacidad y recogida de residuos.
+Marti-1.5B es un ajuste fino mediante QLoRA del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario chefag en Hugging Face. Se trata de un asistente conversacional en turco diseñado para un Ayuntamiento ficticio (Martıkent Belediyesi), que responde consultas ciudadanas sobre Beyaz Masa, abonos y cortes de agua, impuesto sobre bienes inmuebles, trámites de matrimonio civil, aparcamientos municipales, bibliotecas, instalaciones deportivas, apoyo social, animales de calle, licencias de actividad, alquiler de centros culturales, servicios de discapacidad y recogida de residuos.
 
 El modelo no se presenta como un LLM de propósito general, sino como un componente de un sistema con dos patas: recuperación aumentada (RAG) sobre un documento normativo (`rehber.pdf`) y un conjunto de herramientas de agente (`tesisler.csv`, `hesapla`, `otopark_ucreti`) que resuelven de forma determinista horarios, tarifas y cálculos de aparcamiento. El ajuste QLoRA se emplea principalmente para inculcar identidad corporativa y un estilo de respuesta consistente, y para mejorar la emisión de JSON válido y la selección correcta de herramientas.
 
@@ -96,12 +96,12 @@ Las cifras de parámetros y contexto de las alternativas provienen de su documen
 - Un solo idioma declarado (turco). No hay evaluación en otras lenguas; el modelo base es multilingüe, pero el ajuste puede haber degradado esa capacidad.
 - Evaluación débil: 15 preguntas puntuadas por un LLM como juez, sin anotación humana ni conjuntos públicos; las métricas del autor no son reproducibles con la información publicada.
 - Licencia Apache-2.0, que permite uso comercial y obras derivadas; deben respetarse igualmente las condiciones del modelo base (Qwen2.5-1.5B-Instruct es también Apache-2.0).
-- Madurez nula como artefacto público: 0 descargas y 0 «likes» en el momento de la consulta, sin pipeline declarado en HuggingFace y sin demo verificable; el sitio del proyecto se anuncia como «pendiente de publicación».
+- Madurez nula como artefacto público: 0 descargas y 0 «likes» en el momento de la consulta, sin pipeline declarado en Hugging Face y sin demo verificable; el sitio del proyecto se anuncia como «pendiente de publicación».
 - Para producción conviene tratarlo como un componente más: validación de la salida JSON, timeout en las herramientas, verificación del importe calculado y fallback humano cuando la confianza del retrieval es baja.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chefag/Marti-1.5B
+- Modelo en Hugging Face: https://huggingface.co/chefag/Marti-1.5B
 - Adaptador LoRA: https://huggingface.co/chefag/Marti-1.5B-LoRA
 - Versión GGUF: https://huggingface.co/chefag/Marti-1.5B-GGUF
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/chefag/marti-1.5b-veri

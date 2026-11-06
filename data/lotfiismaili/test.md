@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lotfiismaili/test` es un repositorio alojado en HuggingFace por el usuario lotfiismaili. Por su identificador y por el contenido de su model card (que se limita a declarar `license: mit` sin ninguna descripcion adicional), se trata de un repositorio de prueba o de un espacio de experimentacion, no de un modelo publicado con documentacion tecnica.
+`lotfiismaili/test` es un repositorio alojado en Hugging Face por el usuario lotfiismaili. Por su identificador y por el contenido de su model card (que se limita a declarar `license: mit` sin ninguna descripcion adicional), se trata de un repositorio de prueba o de un espacio de experimentacion, no de un modelo publicado con documentacion tecnica.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y su unica etiqueta relevante es la licencia MIT junto con la region `us`. No se declara pipeline de inferencia, no se especifican idiomas soportados y no existe informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion.
 
@@ -71,5 +71,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lotfiismaili/test
+- Hugging Face: https://huggingface.co/lotfiismaili/test
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, blogs, repositorios o demos asociados. El resto de resultados devueltos por la busqueda no guardan relacion con este repositorio ni con inteligencia artificial open source, por lo que se omiten.

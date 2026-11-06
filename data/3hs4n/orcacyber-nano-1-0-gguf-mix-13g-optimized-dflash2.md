@@ -109,6 +109,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/3hs4n/OrcaCyber-Nano-1.0-GGUF-Mix-13G-Optimized-DFlash2
+- Repositorio Hugging Face: https://huggingface.co/3hs4n/OrcaCyber-Nano-1.0-GGUF-Mix-13G-Optimized-DFlash2
 - Modelo base original: https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0
 - Descarga directa de GGUF originales: https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0/tree/1af1635aa22b97e965450c2d69525761d9bd463f

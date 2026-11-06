@@ -51,7 +51,7 @@ No disponible. Al no poder identificar el modelo subyacente, no es posible estab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EllaPriest45/MinimaxH3_base
-- Perfil del autor en HuggingFace: https://huggingface.co/EllaPriest45/models
+- Repositorio en Hugging Face: https://huggingface.co/EllaPriest45/MinimaxH3_base
+- Perfil del autor en Hugging Face: https://huggingface.co/EllaPriest45/models
 - Repositorio oficial de MiniMax H3 (referencia, no relacionado directamente con este backup): https://github.com/MiniMax-AI/MiniMax-H3
 - Hub comunitario de MiniMax H3 (referencia): https://github.com/ai-models-lab/minimax-h3

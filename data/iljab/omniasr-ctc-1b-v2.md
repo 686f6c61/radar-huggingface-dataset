@@ -2,7 +2,7 @@
 
 ## Resumen
 
-omniASR-CTC-1B-v2 es un modelo de reconocimiento automático de voz (ASR) basado en la arquitectura Wav2Vec2 con decodificación CTC, desarrollado por Meta AI como parte de la familia Omnilingual ASR. Esta versión concreta es una conversión a HuggingFace del checkpoint oficial de Meta (`omniASR-CTC-1B-v2.pt`) realizada por el usuario iljab, que facilita su uso con la librería `transformers`. El modelo está diseñado para transcribir audio en más de 1.600 idiomas, incluyendo muchos que no tenían cobertura previa, mediante un enfoque de aprendizaje zero-shot y few-shot.
+omniASR-CTC-1B-v2 es un modelo de reconocimiento automático de voz (ASR) basado en la arquitectura Wav2Vec2 con decodificación CTC, desarrollado por Meta AI como parte de la familia Omnilingual ASR. Esta versión concreta es una conversión a Hugging Face del checkpoint oficial de Meta (`omniASR-CTC-1B-v2.pt`) realizada por el usuario iljab, que facilita su uso con la librería `transformers`. El modelo está diseñado para transcribir audio en más de 1.600 idiomas, incluyendo muchos que no tenían cobertura previa, mediante un enfoque de aprendizaje zero-shot y few-shot.
 
 Con aproximadamente 975 millones de parámetros, 48 capas de encoder y una ventana de contexto de audio que no se especifica en la documentación disponible, este modelo ofrece una alternativa rápida y eficiente para tareas de transcripción multilingüe. Su licencia Apache-2.0 permite uso comercial sin restricciones, lo que lo hace atractivo para integraciones en producción. La relevancia actual radica en su capacidad para cubrir una amplia variedad de lenguas con un solo modelo, algo poco común en el ecosistema ASR.
 
@@ -23,7 +23,7 @@ Con aproximadamente 975 millones de parámetros, 48 capas de encoder y una venta
 
 El modelo sigue la arquitectura Wav2Vec2, un encoder Transformer con capa de clasificación CTC (Connectionist Temporal Classification) en la parte superior. Según la model card, tiene 48 capas de encoder, un tamaño oculto de 1280, 16 cabezas de atención y una dimensión intermedia de FFN de 5120. El vocabulario de salida es de 10.288 tokens, basado en un tokenizer SentencePiece (el archivo `omniASR_tokenizer_written_v2.model`). El token de blank de CTC es el id 0 (`<s>`).
 
-No se dispone de información detallada sobre el proceso de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) en la documentación proporcionada. Sin embargo, la familia Omnilingual ASR de Meta se caracteriza por un enfoque de aprendizaje zero-shot y few-shot, que permite añadir nuevos idiomas con solo unos pocos ejemplos emparejados. El modelo se distribuye como checkpoint oficial de Meta y ha sido convertido al formato HuggingFace para su uso directo con `transformers`.
+No se dispone de información detallada sobre el proceso de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) en la documentación proporcionada. Sin embargo, la familia Omnilingual ASR de Meta se caracteriza por un enfoque de aprendizaje zero-shot y few-shot, que permite añadir nuevos idiomas con solo unos pocos ejemplos emparejados. El modelo se distribuye como checkpoint oficial de Meta y ha sido convertido al formato Hugging Face para su uso directo con `transformers`.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada para inferencia: con ~975M parámetros, en FP32 el modelo ocupa aproximadamente 3,9 GB (tamaño del repo). En FP16 ocuparía ~2 GB, y en int8 ~1 GB. Se recomienda al menos 4 GB de VRAM para FP16 y 2 GB para int8.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3050, RTX 4060, o GPUs de datacenter como T4, V100, A10. Para procesamiento por lotes o audio largo, se recomienda una GPU con más memoria (A100, H100).
 - Sí cabe en GPUs de consumo: una RTX 3060 (12 GB) o superior puede ejecutar el modelo sin problemas, incluso en FP32.
-- Opciones de despliegue: se puede usar directamente con `transformers` en Python. Para producción, se puede servir con HuggingFace Inference Endpoints, o exportar a ONNX para optimización. También existe una conversión GGUF de terceros que permite ejecutarlo con llama.cpp u Ollama, aunque no es oficial.
+- Opciones de despliegue: se puede usar directamente con `transformers` en Python. Para producción, se puede servir con Hugging Face Inference Endpoints, o exportar a ONNX para optimización. También existe una conversión GGUF de terceros que permite ejecutarlo con llama.cpp u Ollama, aunque no es oficial.
 - Latencia y throughput: no se dispone de datos medidos. Al ser un modelo CTC, la inferencia es más rápida que los modelos autoregresivos, pero depende del hardware y la longitud del audio.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ La comparativa se basa en características generales; no se dispone de benchmark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iljab/omniASR-CTC-1B-v2
+- Modelo en Hugging Face: https://huggingface.co/iljab/omniASR-CTC-1B-v2
 - Checkpoint oficial de Meta: https://dl.fbaipublicfiles.com/mms/omniASR-CTC-1B-v2.pt
 - Tokenizer oficial: https://dl.fbaipublicfiles.com/mms/omniASR_tokenizer_written_v2.model
 - Repositorio GitHub de Omnilingual ASR: https://github.com/facebookresearch/omnilingual-asr
 - Documentación de DeepWiki sobre modelos CTC: https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr)
-- Modelo original de Meta en HuggingFace: https://huggingface.co/facebook/omniASR-CTC-1B
+- Modelo original de Meta en Hugging Face: https://huggingface.co/facebook/omniASR-CTC-1B
 - Conversión GGUF de terceros: https://free2aitools.com/model/cstr/omniasr-ctc-1b-v2-gguf

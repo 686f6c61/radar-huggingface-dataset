@@ -89,7 +89,7 @@ Las cuatro variantes comparten el mismo modelo base y la misma licencia Apache 2
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-MLX-4bit
 - Modelo base BF16: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated
 - Variante NVFP4: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-DGX-Spark
 - Variante GGUF: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-GGUF

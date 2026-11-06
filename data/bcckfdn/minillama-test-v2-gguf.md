@@ -76,7 +76,7 @@ Los datos de los modelos de comparacion proceden de su documentacion publica y n
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bcckfdn/minillama-test-v2-GGUF` | 52,95 M | no disponible | tr, en | Apache 2.0 | GGUF en HuggingFace |
+| `bcckfdn/minillama-test-v2-GGUF` | 52,95 M | no disponible | tr, en | Apache 2.0 | GGUF en Hugging Face |
 | SmolLM2-135M (HuggingFaceTB) | 135 M | 8.192 tokens (segun su documentacion) | en, mayoritariamente | Apache 2.0 | safetensors, GGUF y otros |
 | Qwen2.5-0.5B | 0,49 B | 32.768 tokens (segun su documentacion) | multilingue | Apache 2.0 | safetensors, GGUF |
 | TinyLlama-1.1B | 1,1 B | 2.048 tokens (segun su documentacion) | en | Apache 2.0 | safetensors, GGUF |
@@ -98,7 +98,7 @@ La diferencia clave frente a estas alternativas es el idioma: el modelo de bcckf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bcckfdn/minillama-test-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bcckfdn/minillama-test-v2-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/minillama-test-v2
 - llama.cpp: no enlazado en la model card
 - Ollama: no enlazado en la model card

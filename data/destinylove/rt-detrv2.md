@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RT-DETRv2 es una familia de modelos de detección de objetos en tiempo real basada en la arquitectura DETR (DEtection TRansformer), cuyo proyecto de referencia mantiene el repositorio lyuwenyu/RT-DETR. Esta ficha corresponde a la réplica publicada en HuggingFace por el usuario DestinyLove bajo el identificador `DestinyLove/RT-DETRv2`, un repositorio de 0,3 GB cuya model card se limita a enlazar el proyecto original y que no declara licencia (`license: unknown`), ni idiomas, ni pipeline de uso.
+RT-DETRv2 es una familia de modelos de detección de objetos en tiempo real basada en la arquitectura DETR (DEtection TRansformer), cuyo proyecto de referencia mantiene el repositorio lyuwenyu/RT-DETR. Esta ficha corresponde a la réplica publicada en Hugging Face por el usuario DestinyLove bajo el identificador `DestinyLove/RT-DETRv2`, un repositorio de 0,3 GB cuya model card se limita a enlazar el proyecto original y que no declara licencia (`license: unknown`), ni idiomas, ni pipeline de uso.
 
 A diferencia de los modelos generativos de lenguaje, RT-DETRv2 no produce texto ni mantiene conversaciones: es un detector end-to-end que recibe una imagen y devuelve un conjunto de cajas delimitadoras con etiquetas de clase y puntuaciones de confianza. Su rasgo diferencial es que elimina la supresión de no máximos (NMS), gracias al emparejamiento bipartito entre predicciones y objetos reales durante el entrenamiento, lo que simplifica el postprocesado y reduce la latencia del pipeline.
 
@@ -59,7 +59,7 @@ En cuanto a los datos de entrenamiento, la composición del dataset, el número 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas, ni identifica la variante concreta del modelo, ni especifica el dataset de evaluación, por lo que no es posible atribuir valores de AP sobre COCO ni comparaciones con otras variantes de la familia. El proyecto original enlazado en la model card es la única fuente donde podrían consultarse métricas, pero no se reproducen aquí al no formar parte de la información proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas, ni identifica la variante concreta del modelo, ni especifica el dataset de evaluación, por lo que no es posible atribuir valores de AP sobre COCO ni comparaciones con otras variantes de la familia. El proyecto original enlazado en la model card es la única fuente donde podrían consultarse métricas, pero no se reproducen aquí al no formar parte de la información proporcionada.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Necesita NMS | Consultas aprendidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RT-DETRv2 (este repositorio) | Detector transformer end-to-end | No | Sí | unknown | HuggingFace, 0 descargas |
+| RT-DETRv2 (este repositorio) | Detector transformer end-to-end | No | Sí | unknown | Hugging Face, 0 descargas |
 | DETR (original) | Detector transformer end-to-end | No | Sí | Apache 2.0 (proyecto de referencia) | Repositorios públicos |
 | Deformable DETR | Detector transformer end-to-end | No | Sí | Apache 2.0 (proyecto de referencia) | Repositorios públicos |
 | YOLO (familia, p. ej. v8/v11) | Detector convolucional de una etapa | Sí | No | Varía según versión (AGPL o comercial) | Amplia distribución |
@@ -93,6 +93,6 @@ La comparación se plantea a nivel de familia, porque los datos concretos de est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DestinyLove/RT-DETRv2
+- Repositorio en Hugging Face: https://huggingface.co/DestinyLove/RT-DETRv2
 - Proyecto original citado en la model card: https://github.com/lyuwenyu/RT-DETR
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a páginas del canal infantil alemán KiKA y no guardan relación con el repositorio.

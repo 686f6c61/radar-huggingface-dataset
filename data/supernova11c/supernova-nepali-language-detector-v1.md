@@ -73,4 +73,4 @@ No se dispone de información sobre otros detectores de idioma comparables (como
 
 ## Enlaces
 
-- [HuggingFace: Supernova11c/Supernova-Nepali-Language-Detector-V1](https://huggingface.co/Supernova11c/Supernova-Nepali-Language-Detector-V1)
+- [Hugging Face: Supernova11c/Supernova-Nepali-Language-Detector-V1](https://huggingface.co/Supernova11c/Supernova-Nepali-Language-Detector-V1)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VLA-JEPA Official-LR Causal es un checkpoint de inferencia para robótica publicado por el usuario Dongkkka en HuggingFace, dentro del ecosistema LeRobot (librería 0.6.1). Se trata de un modelo de visión-lenguaje-acción (VLA) entrenado específicamente para la tarea Task 000004 de tipo *peanut pick-and-place*, es decir, recoger y colocar cacahuetes con un brazo robótico. El modelo combina un backbone Qwen entrenable con una cabeza de acciones (action head) y un predictor de modelo del mundo (world model) con contexto causal, todo bajo la arquitectura denominada VLA-JEPA. El checkpoint corresponde al paso de entrenamiento 10.000.
+VLA-JEPA Official-LR Causal es un checkpoint de inferencia para robótica publicado por el usuario Dongkkka en Hugging Face, dentro del ecosistema LeRobot (librería 0.6.1). Se trata de un modelo de visión-lenguaje-acción (VLA) entrenado específicamente para la tarea Task 000004 de tipo *peanut pick-and-place*, es decir, recoger y colocar cacahuetes con un brazo robótico. El modelo combina un backbone Qwen entrenable con una cabeza de acciones (action head) y un predictor de modelo del mundo (world model) con contexto causal, todo bajo la arquitectura denominada VLA-JEPA. El checkpoint corresponde al paso de entrenamiento 10.000.
 
 El modelo cuenta con aproximadamente 2.770 millones de parámetros (2,77B) y un repositorio de 6,2 GB en formato safetensors. Se entrenó sobre el dataset Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern, que contiene 29 episodios de entrenamiento y seis episodios de validación reservados (8, 12, 19, 26, 30 y 34). Las dimensiones de estado y acción son 22 y 22 respectivamente, con tres cámaras de entrada (cabeza, muñeca izquierda y muñeca derecha) y un *action chunk* de 7 acciones ejecutadas.
 
@@ -84,6 +84,6 @@ No disponible. No se proporcionan en la informacion modelos comparables de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_VLA-JEPA-OfficialLR-Causal-bs16-step10000
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_VLA-JEPA-OfficialLR-Causal-bs16-step10000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern
 - Autor: https://huggingface.co/Dongkkka

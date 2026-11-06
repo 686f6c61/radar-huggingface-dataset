@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`royc6/within-gemma-4-e4b` es un paquete de modelo on-device publicado en HuggingFace por el usuario royc6. Se trata de una version convertida y cuantizada de `google/gemma-4-E4B-it` (el modelo instructivo de la familia Gemma 4 de Google) preparada especificamente para ejecutarse en iPhone dentro de la aplicacion iOS denominada "within". No es un checkpoint de proposito general: la propia model card indica que la aplicacion descarga la revision `lut6-c16384-20260930-01` y que los ficheros publicados no estan pensados para uso generico.
+`royc6/within-gemma-4-e4b` es un paquete de modelo on-device publicado en Hugging Face por el usuario royc6. Se trata de una version convertida y cuantizada de `google/gemma-4-E4B-it` (el modelo instructivo de la familia Gemma 4 de Google) preparada especificamente para ejecutarse en iPhone dentro de la aplicacion iOS denominada "within". No es un checkpoint de proposito general: la propia model card indica que la aplicacion descarga la revision `lut6-c16384-20260930-01` y que los ficheros publicados no estan pensados para uso generico.
 
 El repositorio ocupa 10,5 GB y esta etiquetado con `gemma4`, `ios`, `on-device` y `text-generation`. La licencia declarada es Apache 2.0, heredada de Gemma 4, con la aplicacion adicional de la Politica de Usos Prohibidos y la declaracion de uso previsto de Google. Al tratarse de una conversion para movil, las caracteristicas exactas de arquitectura, parametros y contexto no se detallan en la informacion disponible.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| royc6/within-gemma-4-e4b | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace (10,5 GB) |
+| royc6/within-gemma-4-e4b | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face (10,5 GB) |
 | google/gemma-4-E4B-it (modelo base) | no disponible | no disponible | no disponible | Apache 2.0 | No disponible en la informacion proporcionada |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones de terceros que per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/royc6/within-gemma-4-e4b
+- Modelo en Hugging Face: https://huggingface.co/royc6/within-gemma-4-e4b
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Politica de Usos Prohibidos de Gemma: https://ai.google.dev/gemma/prohibited_use_policy

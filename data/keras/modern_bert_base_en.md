@@ -95,7 +95,7 @@ Nota: los datos de los modelos comparables provienen del conocimiento general de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keras/modern_bert_base_en
+- Repositorio en Hugging Face: https://huggingface.co/keras/modern_bert_base_en
 - Documentación de ModernBert en KerasHub: https://keras.io/api/keras_hub/models/modern_bert
 - Documentación de Keras: https://keras.io/
 - Keras 3 (multi-backend): https://keras.io/keras_3/

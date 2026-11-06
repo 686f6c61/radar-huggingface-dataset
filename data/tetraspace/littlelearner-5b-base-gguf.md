@@ -46,7 +46,7 @@ La informacion disponible no detalla el numero exacto de tokens de entrenamiento
 - Despliegue local ligero con llama.cpp u Ollama: la version GGUF esta pensada para inferencia en hardware de consumo, util para prototipado offline sin depender de API.
 - Estudio comparativo base vs control: emparejar esta version con littlelearner-5b-unbounded-base para medir el impacto del filtrado de conocimiento en tareas controladas.
 - Educacion e investigacion academica sobre curriculos de entrenamiento: sirve como material de referencia reproducible para cursos y replicaciones del paper.
-- Pruebas de integracion en pipelines de generacion de texto: el etiquetado "endpoints_compatible" sugiere su uso detras de servidores compatibles con la API de HuggingFace.
+- Pruebas de integracion en pipelines de generacion de texto: el etiquetado "endpoints_compatible" sugiere su uso detras de servidores compatibles con la API de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tetraspace/littlelearner-5b-base-GGUF | 5,04B | no disponible | Qwen3 (GGUF) | other | HuggingFace |
-| littlelearner/littlelearner-5b-base | 5,04B | no disponible | Qwen3 | other | HuggingFace |
-| littlelearner/littlelearner-5b-unbounded-base | no disponible | no disponible | Qwen3 | other | HuggingFace |
+| Tetraspace/littlelearner-5b-base-GGUF | 5,04B | no disponible | Qwen3 (GGUF) | other | Hugging Face |
+| littlelearner/littlelearner-5b-base | 5,04B | no disponible | Qwen3 | other | Hugging Face |
+| littlelearner/littlelearner-5b-unbounded-base | no disponible | no disponible | Qwen3 | other | Hugging Face |
 
 Los dos modelos comparables directos son el modelo base original (mismo contenido en safetensors) y el control "Unfiltered" de la misma escala, que comparte arquitectura, tokens y receta pero sin el filtrado pedagogico. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con otras familias.
 
@@ -83,7 +83,7 @@ Los dos modelos comparables directos son el modelo base original (mismo contenid
 
 ## Enlaces
 
-- HuggingFace (version GGUF): https://huggingface.co/Tetraspace/littlelearner-5b-base-GGUF
+- Hugging Face (version GGUF): https://huggingface.co/Tetraspace/littlelearner-5b-base-GGUF
 - Modelo base: https://huggingface.co/littlelearner/littlelearner-5b-base
 - Control Unfiltered: https://huggingface.co/littlelearner/littlelearner-5b-unbounded-base
 - Pagina del proyecto: https://littlelearner-ll.github.io/

@@ -120,7 +120,7 @@ No hay datos de benchmarks comunes entre estos modelos y el fine-tune, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v11-faster-training-gguf
+- Modelo en Hugging Face: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v11-faster-training-gguf
 - Modelo base: https://huggingface.co/unsloth/Qwen3-1.7B
 - Repositorio del proyecto y dataset de tool calling (ruta `finetune/data/`): https://github.com/kevinilhamramadhan/Chatbot-Cakery
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web; los resultados devueltos no guardan relación con este modelo.

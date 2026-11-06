@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi0.5 mahjong fine-tune) | VLA para SO-101 en simulación | no disponible | no aplica | gemma | HuggingFace, 0 descargas |
+| Este modelo (pi0.5 mahjong fine-tune) | VLA para SO-101 en simulación | no disponible | no aplica | gemma | Hugging Face, 0 descargas |
 | pi0.5 base (Physical Intelligence) | VLA generalista | no disponible | no aplica | no disponible en la información | Referencia del autor como `pi05_base` |
-| Checkpoint previo `..._split_full` (step-030000) | VLA, mismo dominio | no disponible | no aplica | gemma | HuggingFace, mismo autor |
+| Checkpoint previo `..._split_full` (step-030000) | VLA, mismo dominio | no disponible | no aplica | gemma | Hugging Face, mismo autor |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_stand07_twos_ovphysx_detour_vary_off5_split_full_from30k
+- Hugging Face: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_stand07_twos_ovphysx_detour_vary_off5_split_full_from30k
 - Modelo base: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_stand07_twos_ovphysx_detour_vary_off5_split_full
 - Dataset: https://huggingface.co/datasets/tc-huang-mahjong/mahjong_v1_stand07_twos_ovphysx_detour_vary_off5
 - Código de entrenamiento (commit): https://github.com/tc-huang/mahjong-lab/tree/7fa45d435028a29afb816057fdd0ec5dea05a6c9

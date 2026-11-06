@@ -41,7 +41,7 @@ En cuanto al proceso de cuantizacion, la model card indica que se han generado c
 - Generacion de codigo: no documentada en la informacion disponible.
 - Tool calling / function calling: no documentado; no se declara plantilla de chat ni formato de herramientas.
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
-- Capacidades multimodales (vision, audio): no disponibles; el pipeline no esta declarado en HuggingFace.
+- Capacidades multimodales (vision, audio): no disponibles; el pipeline no esta declarado en Hugging Face.
 - Memoria de largo alcance: la etiqueta laserRMT sugiere trabajo especifico sobre contexto largo, pero no hay datos publicados sobre la ventana efectiva ni sobre su rendimiento en tareas de recuperacion a larga distancia.
 - Modo base o instruct: no se especifica en la model card si el modelo base esta ajustado por instrucciones o es un modelo base puro; debe verificarse antes de usarlo en dialogos.
 
@@ -99,7 +99,7 @@ El principal diferencial de hermeo-7b-laser frente a estas alternativas seria el
 - Licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero se aplica sobre el artefacto publicado; conviene verificar que el modelo base cstr/hermeo-7b-laser no imponga condiciones adicionales derivadas de sus propios datos de entrenamiento.
 - Trazabilidad limitada: con 30 descargas y 0 likes, el modelo no ha sido validado por la comunidad. No hay informes de terceros sobre su comportamiento en produccion.
 - Dependencia del modelo base: si el autor original actualiza o retira cstr/hermeo-7b-laser, la documentacion de esta cuantizacion queda desvinculada de su referencia.
-- Sin pipeline declarado: HuggingFace no indica la tarea del modelo, lo que complica el uso automatico con la libreria transformers a traves del repositorio GGUF.
+- Sin pipeline declarado: Hugging Face no indica la tarea del modelo, lo que complica el uso automatico con la libreria transformers a traves del repositorio GGUF.
 
 ## Enlaces
 

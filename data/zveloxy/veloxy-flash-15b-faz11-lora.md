@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Veloxy-Flash-15B-Faz11-LoRA es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario zveloxy en HuggingFace, pensado para aplicarse sobre el modelo base zveloxy/Veloxy-Flash-15B. Se distribuye como un repositorio de 0,1 GB con pesos en formato safetensors y esta etiquetado para la libreria PEFT y la tarea de text-generation, con un tag adicional de tipo conversational. No es, por tanto, un modelo completo, sino un conjunto de matrices de bajo rango que modifican el comportamiento del modelo base.
+Veloxy-Flash-15B-Faz11-LoRA es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario zveloxy en Hugging Face, pensado para aplicarse sobre el modelo base zveloxy/Veloxy-Flash-15B. Se distribuye como un repositorio de 0,1 GB con pesos en formato safetensors y esta etiquetado para la libreria PEFT y la tarea de text-generation, con un tag adicional de tipo conversational. No es, por tanto, un modelo completo, sino un conjunto de matrices de bajo rango que modifican el comportamiento del modelo base.
 
 La relevancia de esta publicacion es dificil de valorar porque la model card es una plantilla sin rellenar: practicamente todos los campos (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". No hay informacion sobre la arquitectura del modelo base, el numero de parametros reales, la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento del adaptador.
 
@@ -81,11 +81,11 @@ No disponible. No es posible establecer una comparativa rigurosa porque no hay d
 - Riesgo de alucinacion: no evaluado; no hay benchmarks ni pruebas de robustez publicadas.
 - Idiomas no declarados: se desconoce si el modelo funciona correctamente en castellano.
 - Repositorio sin traccion: 0 descargas y 0 likes, sin senales de comunidad, mantenimiento o validacion por terceros.
-- Referencia arxiv no relevante: el tag arxiv:1910.09700 apunta al articulo del calculador de impacto de ML de Lacoste et al. (2019), que forma parte de la plantilla de HuggingFace y no describe el modelo.
+- Referencia arxiv no relevante: el tag arxiv:1910.09700 apunta al articulo del calculador de impacto de ML de Lacoste et al. (2019), que forma parte de la plantilla de Hugging Face y no describe el modelo.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/zveloxy/Veloxy-Flash-15B-Faz11-LoRA
+- Hugging Face del adaptador: https://huggingface.co/zveloxy/Veloxy-Flash-15B-Faz11-LoRA
 - Modelo base referenciado: https://huggingface.co/zveloxy/Veloxy-Flash-15B
 - Articulo citado en la plantilla (no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML mencionado en la plantilla: https://mlco2.github.io/impact

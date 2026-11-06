@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| donorsim-qwen3-8b-abstract-step40 | 8B | no disponible | GRPO sobre Qwen3-8B | no disponible | HuggingFace |
-| donorsim-qwen3-8b-modeAB-step75 | 8B | no disponible | GRPO sobre Qwen3-8B (75 pasos estructurados) | no disponible | HuggingFace |
-| Qwen3-8B (base) | 8B | 32K (según reporte técnico) | Pre-entrenamiento y RLHF | Apache 2.0 (según reporte) | HuggingFace |
+| donorsim-qwen3-8b-abstract-step40 | 8B | no disponible | GRPO sobre Qwen3-8B | no disponible | Hugging Face |
+| donorsim-qwen3-8b-modeAB-step75 | 8B | no disponible | GRPO sobre Qwen3-8B (75 pasos estructurados) | no disponible | Hugging Face |
+| Qwen3-8B (base) | 8B | 32K (según reporte técnico) | Pre-entrenamiento y RLHF | Apache 2.0 (según reporte) | Hugging Face |
 
 La comparación directa con otros modelos de 8B (como Llama-3-8B o Mistral-7B) no es relevante porque este modelo está especializado en una tarea concreta de juego social, no en capacidades generales. La comparación más útil es con el modelo intermedio `modeAB-step75` y con el modelo base Qwen3-8B, pero no se dispone de métricas de rendimiento en el juego para establecer diferencias cuantitativas.
 
@@ -75,9 +75,9 @@ La comparación directa con otros modelos de 8B (como Llama-3-8B o Mistral-7B) n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-abstract-step40
+- Modelo en Hugging Face: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-abstract-step40
 - Modelo intermedio (modeAB-step75): https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-modeAB-step75
-- Perfil del autor en HuggingFace: https://huggingface.co/3l3ktr4/models
+- Perfil del autor en Hugging Face: https://huggingface.co/3l3ktr4/models
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Reporte técnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

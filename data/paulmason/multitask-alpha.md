@@ -68,5 +68,5 @@ No disponible. Este repositorio no es un modelo entrenado ni comparable con alte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Paulmason/multitask-alpha
+- Repositorio en Hugging Face: https://huggingface.co/Paulmason/multitask-alpha
 - No se han encontrado papers, blogs, repositorios adicionales o demos relacionados con este modelo específico en la búsqueda web.

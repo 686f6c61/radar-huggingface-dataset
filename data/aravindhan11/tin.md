@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Aravindhan11/tin` es un modelo de decisión y clasificación de texto publicado en HuggingFace por el usuario Aravindhan11, construido como ajuste fino (finetune) del modelo base `Qwen/Qwen3.5-9B`. A diferencia de un modelo generativo de propósito general, está etiquetado como `decision-model`, `routing`, `tool-selection` y `guardrails`: es decir, su función prevista es tomar decisiones discretas dentro de un pipeline (qué herramienta invocar, si una petición debe bloquearse, qué ruta seguir) en lugar de producir texto libre. El pipeline declarado en el repositorio es `text-classification` y el único idioma etiquetado es el inglés.
+`Aravindhan11/tin` es un modelo de decisión y clasificación de texto publicado en Hugging Face por el usuario Aravindhan11, construido como ajuste fino (finetune) del modelo base `Qwen/Qwen3.5-9B`. A diferencia de un modelo generativo de propósito general, está etiquetado como `decision-model`, `routing`, `tool-selection` y `guardrails`: es decir, su función prevista es tomar decisiones discretas dentro de un pipeline (qué herramienta invocar, si una petición debe bloquearse, qué ruta seguir) en lugar de producir texto libre. El pipeline declarado en el repositorio es `text-classification` y el único idioma etiquetado es el inglés.
 
 La relevancia de este tipo de modelos radica en que muchas arquitecturas de agentes necesitan un componente barato y determinista que decida antes de llamar al modelo grande: enrutar una consulta al especialista correcto, seleccionar una función entre un catálogo o activar un filtro de seguridad. El tag `calibrated` sugiere que el autor declara probabilidades calibradas, algo crítico cuando la decisión se usa con umbrales en producción, aunque no se aporta documentación que lo verifique.
 
@@ -87,6 +87,6 @@ La comparacion relevante es de coste-beneficio: `tin` parte de un modelo de ~9B,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aravindhan11/tin
+- Repositorio en Hugging Face: https://huggingface.co/Aravindhan11/tin
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

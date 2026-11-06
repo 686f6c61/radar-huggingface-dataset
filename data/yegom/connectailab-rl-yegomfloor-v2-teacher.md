@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-yegomfloor-v2-teacher | Política RL (PPO) para simulación empresarial | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| connectailab-rl-parksehyun-v1-teacher | Política RL (PPO) para Connect Tycoon, citada en la model card | no disponible | no disponible | Apache 2.0 (según la model card) | HuggingFace |
+| connectailab-rl-yegomfloor-v2-teacher | Política RL (PPO) para simulación empresarial | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| connectailab-rl-parksehyun-v1-teacher | Política RL (PPO) para Connect Tycoon, citada en la model card | no disponible | no disponible | Apache 2.0 (según la model card) | Hugging Face |
 | Presidente basado en reglas de Connect Tycoon | Sistema experto determinista del simulador | no aplica | no aplica | la del repositorio Connect Tycoon | Repositorio GitHub |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
@@ -93,7 +93,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yegom/connectailab-rl-yegomfloor-v2-teacher
+- Modelo en Hugging Face: https://huggingface.co/yegom/connectailab-rl-yegomfloor-v2-teacher
 - Repositorio Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB
 - AI CITY BUILDERS: https://www.aicitybuilders.com

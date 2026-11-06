@@ -103,7 +103,7 @@ No hay datos de rendimiento comparables en la información proporcionada. La ún
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bayesclue/checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/bayesclue/checkpoints
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Script de fusión citado en la model card: `credal_verl08/remerge_sft_qwen35.py` (sin URL pública en la información disponible)
 - Paper, blog o repositorio adicional: no disponible

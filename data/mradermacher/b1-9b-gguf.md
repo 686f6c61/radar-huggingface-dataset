@@ -21,7 +21,7 @@ La relevancia de esta ficha radica en la disponibilidad de múltiples cuantizaci
 
 ## Arquitectura y entrenamiento
 
-El modelo base B1-9B es un transformer de 9.2B parámetros, etiquetado como qwen3.5 en el repositorio de HuggingFace, lo que indica que sigue la arquitectura de la familia Qwen3.5. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El dataset utilizado es schneewolflabs/Vernunft-Stimme, del que solo se conoce su nombre.
+El modelo base B1-9B es un transformer de 9.2B parámetros, etiquetado como qwen3.5 en el repositorio de Hugging Face, lo que indica que sigue la arquitectura de la familia Qwen3.5. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El dataset utilizado es schneewolflabs/Vernunft-Stimme, del que solo se conoce su nombre.
 
 La versión GGUF, creada por mradermacher, incluye cuantizaciones estáticas con tamaños que van desde 4.0 GB (Q2_K) hasta 18.5 GB (f16), así como archivos mmproj asociados a un posible componente multimodal. No se documentan innovaciones técnicas adicionales en la arquitectura o el proceso de cuantización.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| B1-9B-GGUF (mradermacher) | 9.197.093.888 | No disponible | Apache 2.0 | HuggingFace |
-| MARTIN-9B-GGUF (mradermacher) | No disponible | No disponible | No disponible | HuggingFace |
-| DSLM-LST-9B-i1-GGUF (mradermacher) | No disponible | No disponible | No disponible | HuggingFace |
-| B1-9B (schneewolflabs) | 9.197.093.888 | No disponible | Apache 2.0 | HuggingFace |
+| B1-9B-GGUF (mradermacher) | 9.197.093.888 | No disponible | Apache 2.0 | Hugging Face |
+| MARTIN-9B-GGUF (mradermacher) | No disponible | No disponible | No disponible | Hugging Face |
+| DSLM-LST-9B-i1-GGUF (mradermacher) | No disponible | No disponible | No disponible | Hugging Face |
+| B1-9B (schneewolflabs) | 9.197.093.888 | No disponible | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parámetros y disponibilidad, ya que no se han publicado benchmarks ni especificaciones de contexto para los modelos comparados.
 

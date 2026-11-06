@@ -19,7 +19,7 @@ La relevancia práctica es que demuestra que un modelo de la familia GLM con tor
 | Tipos de cuantizacion | NVFP4 W4A16 en expertos enrutados; FP8 por bloques en MLP denso y compartido; BF16/FP8 nativo en atención, router, normas, embeddings, `lm_head` y torre de visión; configuración ModelOpt `MIXED_PRECISION` |
 | Idiomas soportados | no disponible |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | safetensors; 62 shards, 113.260 tensores; 178,7 GiB de checkpoint (el repo de HuggingFace declara 76,0 GB) |
+| Formato de pesos | safetensors; 62 shards, 113.260 tensores; 178,7 GiB de checkpoint (el repo de Hugging Face declara 76,0 GB) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (12fn, NVFP4 W4A16) | no disponible | 262.144 en servicio; prueba a 464.640 | 83,2–304 tok/s agregados según concurrencia | MIT | HuggingFace, 0 descargas, 0 likes |
-| zai-org/GLM-5.3-Flash (original) | no disponible | no disponible | Benchmarks en su model card (no incluidos aquí) | MIT | HuggingFace, oficial |
+| Este checkpoint (12fn, NVFP4 W4A16) | no disponible | 262.144 en servicio; prueba a 464.640 | 83,2–304 tok/s agregados según concurrencia | MIT | Hugging Face, 0 descargas, 0 likes |
+| zai-org/GLM-5.3-Flash (original) | no disponible | no disponible | Benchmarks en su model card (no incluidos aquí) | MIT | Hugging Face, oficial |
 | Otras builds W4A16 de GLM-5.3-Flash | no disponible | no disponible | no disponible | no disponible | El autor menciona que existen, sin detallarlas |
 
 No se dispone de datos verificables de modelos alternativos de la misma categoría (mismo tamaño o misma tarea) en la información proporcionada, por lo que la comparación cuantitativa con terceros queda como no disponible.
@@ -102,7 +102,7 @@ No se dispone de datos verificables de modelos alternativos de la misma categor�
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/12fn/GLM-5.3-Flash-NVFP4-W4A16-2x-RTX-PRO-6000
+- Hugging Face del checkpoint: https://huggingface.co/12fn/GLM-5.3-Flash-NVFP4-W4A16-2x-RTX-PRO-6000
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Receta oficial de vLLM para el modelo base: https://recipes.vllm.ai/zai-org/GLM-5.3-Flash
 - Imagen de vLLM validada: `vllm/vllm-openai:nightly@sha256:8e6e3752946ff2dde451b313cbaec2ea8e7b52221b21bfbcf53fb68dd4f4c42e`

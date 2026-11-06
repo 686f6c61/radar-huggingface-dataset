@@ -4,7 +4,7 @@
 
 El modelo `milab-robot/alm1-0818-amore` es un modelo de política de control robótico desarrollado por el Multimodal Intelligence Lab (MILab) de la Universidad de Washington, Tacoma. Está diseñado para tareas de manipulación robótica mediante aprendizaje por imitación, utilizando la arquitectura ACT (Action Chunking with Transformers), un enfoque que predice secuencias de acciones a partir de observaciones del entorno. El repositorio contiene un único branch (`act-v1`) con una configuración de entrenamiento específica y métricas de error (MAE y RMSE) que sugieren que se trata de un modelo entrenado para seguimiento de trayectorias o control fino del efector final.
 
-El modelo se publica con un tamaño de repositorio de 2,1 GB, lo que indica un conjunto de pesos de tamaño moderado, probablemente adecuado para inferencia en GPU de consumo. Aunque la ficha de HuggingFace no especifica licencia, idiomas ni pipeline, el contexto del autor (MILab) y el nombre del dataset (`alm1-0818-amore`) apuntan a un experimento de investigación en robótica. Su relevancia radica en la creciente adopción de arquitecturas basadas en transformadores para control de robots, donde ACT se ha convertido en un estándar de facto en la comunidad.
+El modelo se publica con un tamaño de repositorio de 2,1 GB, lo que indica un conjunto de pesos de tamaño moderado, probablemente adecuado para inferencia en GPU de consumo. Aunque la ficha de Hugging Face no especifica licencia, idiomas ni pipeline, el contexto del autor (MILab) y el nombre del dataset (`alm1-0818-amore`) apuntan a un experimento de investigación en robótica. Su relevancia radica en la creciente adopción de arquitecturas basadas en transformadores para control de robots, donde ACT se ha convertido en un estándar de facto en la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -70,12 +70,12 @@ La comparación con Diffusion Policy (otro enfoque popular) es plausible, pero n
 - Sesgos del dataset: el modelo está entrenado sobre demostraciones específicas de `alm1-0818-amore`; si las demostraciones contienen sesgos (p. ej., movimientos subóptimos), el modelo los replicará.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero el modelo puede generar acciones fuera de los límites seguros si recibe observaciones fuera de la distribución de entrenamiento.
 - Limitaciones de contexto: al ser un modelo de control, no maneja lenguaje ni razonamiento simbólico; su "contexto" se limita a observaciones visuales y proprioceptivas.
-- Restricciones de licencia: no se especifica licencia en HuggingFace; se recomienda contactar con el autor antes de uso comercial.
+- Restricciones de licencia: no se especifica licencia en Hugging Face; se recomienda contactar con el autor antes de uso comercial.
 - Caveat de producción: el modelo no ha sido validado en hardware real según la información disponible; las métricas de evaluación son de solo 2 episodios, insuficientes para garantizar robustez.
-- Dependencia del framework: requiere el código de ACT del repositorio `cu-milab/ai-robot` para cargar y ejecutar el modelo, ya que no se incluyen scripts de inferencia en el repositorio de HuggingFace.
+- Dependencia del framework: requiere el código de ACT del repositorio `cu-milab/ai-robot` para cargar y ejecutar el modelo, ya que no se incluyen scripts de inferencia en el repositorio de Hugging Face.
 
 ## Enlaces
 
-- [HuggingFace - milab-robot/alm1-0818-amore](https://huggingface.co/milab-robot/alm1-0818-amore)
+- [Hugging Face - milab-robot/alm1-0818-amore](https://huggingface.co/milab-robot/alm1-0818-amore)
 - [GitHub - cu-milab/ai-robot](https://github.com/cu-milab/ai-robot)
 - [Multimodal Intelligence Lab - UW](https://depts.washington.edu/uwmilab/)

@@ -86,7 +86,7 @@ Los datos de parametros y ventana de audio de los modelos de OpenAI proceden de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nunu-willump/whisper-large-v3-turbo-german-ct2
+- Repositorio en Hugging Face: https://huggingface.co/nunu-willump/whisper-large-v3-turbo-german-ct2
 - Origen del espejo (CT2 original): https://huggingface.co/ostwilkens/whisper-large-v3-turbo-german-ct2
 - Modelo base del ajuste fino: https://huggingface.co/primeline/whisper-large-v3-turbo-german
 - Whisper large-v3-turbo (OpenAI): https://huggingface.co/openai/whisper-large-v3-turbo

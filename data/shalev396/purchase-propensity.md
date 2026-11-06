@@ -83,7 +83,7 @@ No se dispone de resultados de benchmarks de los proyectos alternativos, por lo 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| shalev396/purchase-propensity | Regresion logistica + MLP tabular sobre 23 flags | 24 (por defecto) y 3.649 (MLP) | no aplica (entrada fija de 23 flags) | ROC-AUC 0,997391; PR-AUC 0,899513; F1 0,924510 en test | MIT | HuggingFace (repo, Space, Inference Endpoints), GitHub y Colab |
+| shalev396/purchase-propensity | Regresion logistica + MLP tabular sobre 23 flags | 24 (por defecto) y 3.649 (MLP) | no aplica (entrada fija de 23 flags) | ROC-AUC 0,997391; PR-AUC 0,899513; F1 0,924510 en test | MIT | Hugging Face (repo, Space, Inference Endpoints), GitHub y Colab |
 | saranshkr/purchase-propensity-model | Modelo de propension sobre comportamiento pasado | no disponible | no disponible | no disponible | no disponible | GitHub |
 | malarahc/website-purchase-propensity-model | Modelo de propension a partir de senales de sesion (paginas vistas, actividad de carrito) | no disponible | no disponible | no disponible | no disponible | GitHub |
 | Regresion logistica base sin ingenieria de caracteristicas | Clasificacion tabular | no disponible | no aplica | no disponible | no aplica | implementacion propia |
@@ -102,7 +102,7 @@ No se dispone de resultados de benchmarks de los proyectos alternativos, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shalev396/purchase-propensity
+- Modelo en Hugging Face: https://huggingface.co/shalev396/purchase-propensity
 - Space de demostracion: https://huggingface.co/spaces/shalev396/purchase-propensity
 - Repositorio GitHub del proyecto: https://github.com/shalev396/ml-lab/tree/main/purchase-propensity
 - Cuaderno de entrenamiento en Colab: https://colab.research.google.com/github/shalev396/ml-lab/blob/main/purchase-propensity/training/notebook.ipynb

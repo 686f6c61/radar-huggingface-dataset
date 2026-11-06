@@ -107,7 +107,7 @@ La unica comparacion metodologicamente valida con los datos aportados es contra 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbcal2_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbcal2_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (incluida en el repositorio como LICENSE.txt): https://ai.meta.com/llama/license/
 - Politica de uso aceptable de Llama 2 (incluida en el repositorio como USE_POLICY.md): https://ai.meta.com/llama/use-policy/

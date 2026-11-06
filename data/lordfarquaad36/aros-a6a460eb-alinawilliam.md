@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`lordfarquaad36/aros-a6a460eb-AlinaWilliam` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario `lordfarquaad36` y publicado en HuggingFace bajo licencia Apache 2.0. El adaptador se ha entrenado sobre los pesos de `krea/Krea-2-Raw` y se distribuye para su uso con la libreria `diffusers`, empleando un token de activacion especifico (`msmls woman`) para invocar el concepto aprendido.
+`lordfarquaad36/aros-a6a460eb-AlinaWilliam` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario `lordfarquaad36` y publicado en Hugging Face bajo licencia Apache 2.0. El adaptador se ha entrenado sobre los pesos de `krea/Krea-2-Raw` y se distribuye para su uso con la libreria `diffusers`, empleando un token de activacion especifico (`msmls woman`) para invocar el concepto aprendido.
 
 Se trata de un ajuste fino de bajo rango (LoRA) orientado a la personalizacion de un sujeto concreto, no de un modelo fundacional completo. El repositorio ocupa aproximadamente 0,7 GB, lo que es coherente con un conjunto de pesos de adaptador y no con un modelo base completo. El pipeline declarado es `text-to-image` y la etiqueta de plantilla es `sd-lora`.
 
-La relevancia de esta ficha es limitada en terminos de impacto tecnico: se trata de un artefacto de personalizacion con cero descargas y cero likes en el momento de la consulta, sin model card detallada sobre datos de entrenamiento, hiperparametros o evaluacion. Toda la informacion disponible procede de los metadatos de HuggingFace y de la propia model card del autor.
+La relevancia de esta ficha es limitada en terminos de impacto tecnico: se trata de un artefacto de personalizacion con cero descargas y cero likes en el momento de la consulta, sin model card detallada sobre datos de entrenamiento, hiperparametros o evaluacion. Toda la informacion disponible procede de los metadatos de Hugging Face y de la propia model card del autor.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lordfarquaad36/aros-a6a460eb-AlinaWilliam
+- Modelo en Hugging Face: https://huggingface.co/lordfarquaad36/aros-a6a460eb-AlinaWilliam
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Modelo Turbo referenciado en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

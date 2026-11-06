@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeWAM Reacher es un checkpoint de control condicionado a objetivos (goal-reaching) publicado en el formato LeWAM v1 por el usuario LeWAM en HuggingFace. El repositorio contiene unicamente dos ficheros en la raiz: `lewam_best.pt` (pesos) y `lewam_config.json` (configuracion), con un tamano total de 0,1 GB. Se trata de un artefacto de investigacion orientado a modelos del mundo (world models) y no de un modelo de lenguaje generativo: la model card describe componentes de codificador (encoder), mascaras de atencion, prediccion de acciones condicionada a objetivo y prediccion de dinamica.
+LeWAM Reacher es un checkpoint de control condicionado a objetivos (goal-reaching) publicado en el formato LeWAM v1 por el usuario LeWAM en Hugging Face. El repositorio contiene unicamente dos ficheros en la raiz: `lewam_best.pt` (pesos) y `lewam_config.json` (configuracion), con un tamano total de 0,1 GB. Se trata de un artefacto de investigacion orientado a modelos del mundo (world models) y no de un modelo de lenguaje generativo: la model card describe componentes de codificador (encoder), mascaras de atencion, prediccion de acciones condicionada a objetivo y prediccion de dinamica.
 
 El modelo se evalua mediante el script `scripts/eval_lewam.py --config-name reacher policy=<run_name>` del codigo v1, colocando previamente ambos ficheros en `$STABLEWM_HOME/checkpoints/<run_name>/`. El autor indica que los pesos se han preservado exactamente respecto al checkpoint de origen y que se verificaron la carga estricta del modelo, las mascaras de atencion, la salida del codificador, la prediccion de acciones condicionada a objetivo y la prediccion de dinamica.
 
@@ -68,7 +68,7 @@ La informacion proporcionada no incluye metricas comparativas, y el checkpoint t
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LeWAM Reacher | Checkpoint de modelo del mundo condicionado a objetivos, tarea Reacher | no disponible | no aplica | no disponible | MIT | HuggingFace (`LeWAM/lewam-reacher`) |
+| LeWAM Reacher | Checkpoint de modelo del mundo condicionado a objetivos, tarea Reacher | no disponible | no aplica | no disponible | MIT | Hugging Face (`LeWAM/lewam-reacher`) |
 | DreamerV3 (referencia de la categoria) | Agente de modelo del mundo para control | no disponible en la informacion | no aplica | no disponible en la informacion | no disponible en la informacion | publico, fuera del alcance de esta ficha |
 | TD-MPC2 (referencia de la categoria) | Planificacion con modelo latente | no disponible en la informacion | no aplica | no disponible en la informacion | no disponible en la informacion | publico, fuera del alcance de esta ficha |
 | PlaNet (referencia historica) | Modelo del mundo con planificacion latente | no disponible en la informacion | no aplica | no disponible en la informacion | no disponible en la informacion | publico, fuera del alcance de esta ficha |
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para afirmar equivalencias de rendimiento ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeWAM/lewam-reacher
+- Modelo en Hugging Face: https://huggingface.co/LeWAM/lewam-reacher
 - Dataset asociado: https://huggingface.co/datasets/LeWAM/lewam-reacher
 - Perfil del autor: https://huggingface.co/LeWAM
 - Script de evaluacion referenciado en la model card: `scripts/eval_lewam.py` (dentro del codigo v1 de LeWAM; URL del repositorio de codigo no disponible en la informacion proporcionada)

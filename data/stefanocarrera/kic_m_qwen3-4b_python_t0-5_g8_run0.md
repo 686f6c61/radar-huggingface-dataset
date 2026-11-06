@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g8_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-4B-Base, publicado por el usuario stefanocarrera en HuggingFace. Se trata de un modelo derivado de la familia Qwen3 de Alibaba, concretamente de la variante base de 4.000 millones de parametros, sobre la que se ha aplicado un entrenamiento adicional utilizando la libreria Unsloth para acelerar el proceso. El nombre del repositorio sugiere un entrenamiento orientado a Python, con temperatura 0.5 y un parametro `g8` que probablemente haga referencia a configuraciones de generacion o de grupo.
+`stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g8_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-4B-Base, publicado por el usuario stefanocarrera en Hugging Face. Se trata de un modelo derivado de la familia Qwen3 de Alibaba, concretamente de la variante base de 4.000 millones de parametros, sobre la que se ha aplicado un entrenamiento adicional utilizando la libreria Unsloth para acelerar el proceso. El nombre del repositorio sugiere un entrenamiento orientado a Python, con temperatura 0.5 y un parametro `g8` que probablemente haga referencia a configuraciones de generacion o de grupo.
 
 El modelo hereda la arquitectura transformer densa de Qwen3-4B y la licencia Apache 2.0 del modelo original. El repositorio es de pequeno tamano (0.1 GB), lo que indica que se distribuyen pesos en formato safetensors, presumiblemente en cuantizacion de 4 bits heredada del modelo base de Unsloth. No se han publicado resultados de benchmarks ni una model card detallada mas alla de la plantilla generica de Unsloth.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g8_run0 | 4B | no disponible (base: 32K) | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-4B-Base | 4B | 32.768 tokens | Apache 2.0 | HuggingFace (ampliamente usado) |
-| unsloth/Qwen3-4B-Base-unsloth-bnb-4bit | 4B | 32.768 tokens | Apache 2.0 | HuggingFace (checkpoint base) |
-| meta-llama/Llama-3.2-3B | 3B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
+| stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g8_run0 | 4B | no disponible (base: 32K) | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-4B-Base | 4B | 32.768 tokens | Apache 2.0 | Hugging Face (ampliamente usado) |
+| unsloth/Qwen3-4B-Base-unsloth-bnb-4bit | 4B | 32.768 tokens | Apache 2.0 | Hugging Face (checkpoint base) |
+| meta-llama/Llama-3.2-3B | 3B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g8_run0)
-- [Modelo base en HuggingFace](https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit)
+- [Modelo en Hugging Face](https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g8_run0)
+- [Modelo base en Hugging Face](https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Familia Qwen3 (Alibaba)](https://huggingface.co/Qwen)

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks especificos (accuracy, F1) en la in
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| childvox-speechmaturity-whisper-base | ~74M | Clasificacion de madurez vocal infantil | 1 s de audio | OpenRAIL (sin uso comercial) | HuggingFace |
-| childvox-speechmaturity-whisper-large | ~1550M (Whisper-large) | Clasificacion de madurez vocal infantil | 1 s de audio | OpenRAIL (sin uso comercial) | HuggingFace |
-| Wav2Vec2 fine-tuned (alternativa generica) | ~95M-300M | Clasificacion de audio | Variable | Apache 2.0 (depende del checkpoint) | HuggingFace |
+| childvox-speechmaturity-whisper-base | ~74M | Clasificacion de madurez vocal infantil | 1 s de audio | OpenRAIL (sin uso comercial) | Hugging Face |
+| childvox-speechmaturity-whisper-large | ~1550M (Whisper-large) | Clasificacion de madurez vocal infantil | 1 s de audio | OpenRAIL (sin uso comercial) | Hugging Face |
+| Wav2Vec2 fine-tuned (alternativa generica) | ~95M-300M | Clasificacion de audio | Variable | Apache 2.0 (depende del checkpoint) | Hugging Face |
 
 No se dispone de comparativas publicadas con otros modelos de clasificacion de vocalizaciones infantiles en la informacion proporcionada. La alternativa mas directa es la variante Whisper-large del mismo proyecto ChildVox, que probablemente ofrece mayor precision a costa de mas recursos.
 
@@ -81,9 +81,9 @@ No se dispone de comparativas publicadas con otros modelos de clasificacion de v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiantiaf/childvox-speechmaturity-whisper-base
+- Modelo en Hugging Face: https://huggingface.co/tiantiaf/childvox-speechmaturity-whisper-base
 - Variante Whisper-large: https://huggingface.co/tiantiaf/childvox-speechmaturity-whisper-large
-- Coleccion ChildVox en HuggingFace: https://huggingface.co/collections/tiantiaf/childvox
+- Coleccion ChildVox en Hugging Face: https://huggingface.co/collections/tiantiaf/childvox
 - Repositorio GitHub: https://github.com/tiantiaf0627/childvox-release
 - Pagina del proyecto: https://tiantiaf0627.github.io/childvox/
 - Articulo arXiv: https://arxiv.org/abs/2605.29257

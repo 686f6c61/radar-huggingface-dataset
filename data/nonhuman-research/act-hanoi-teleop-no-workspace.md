@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `NONHUMAN-RESEARCH/act-hanoi-teleop-no-workspace` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones en lugar de pasos individuales. Ha sido entrenado y publicado mediante el framework LeRobot de HuggingFace, y está especializado en la manipulación de la torre de Hanói mediante teleoperación, sin espacio de trabajo fijo. El modelo consume imágenes de tres cámaras y el estado articular del robot para generar comandos de acción de 14 dimensiones.
+El modelo `NONHUMAN-RESEARCH/act-hanoi-teleop-no-workspace` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones en lugar de pasos individuales. Ha sido entrenado y publicado mediante el framework LeRobot de Hugging Face, y está especializado en la manipulación de la torre de Hanói mediante teleoperación, sin espacio de trabajo fijo. El modelo consume imágenes de tres cámaras y el estado articular del robot para generar comandos de acción de 14 dimensiones.
 
 El modelo tiene aproximadamente 51,7 millones de parámetros y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Su relevancia radica en que demuestra la aplicación práctica de ACT en tareas de manipulación precisas y multi-paso, un área de creciente interés en la robótica de aprendizaje. Al estar integrado en el ecosistema LeRobot, cualquier investigador puede reproducir el entrenamiento o desplegar la política en un robot compatible con pocos comandos.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizo con el framework LeRobot version 0.6.2, utilizando e
 - Percepcion multimodal: consume simultaneamente tres flujos de imagen (camara izquierda, superior y derecha) junto con el estado articular del robot (14 dimensiones).
 - Generacion de acciones continuas: produce comandos de accion de 14 dimensiones (posiciones articulares o comandos de efector final) en bloques temporales.
 - Aprendizaje por imitacion: la politica replica comportamientos teleoperados sin necesidad de ingenieria de recompensas ni planificacion explicita.
-- Integracion con LeRobot: compatible con el ecosistema de herramientas de HuggingFace para entrenamiento, evaluacion y despliegue en robots reales.
+- Integracion con LeRobot: compatible con el ecosistema de herramientas de Hugging Face para entrenamiento, evaluacion y despliegue en robots reales.
 - No incluye capacidades de lenguaje, vision generalista, tool calling ni razonamiento simbolico: es un modelo especializado en una unica tarea motora.
 
 ## Casos de uso
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-hanoi-teleop-no-workspace | 51,7 M | ACT (Transformer) | Torre de Hanoi | Apache 2.0 | HuggingFace |
+| act-hanoi-teleop-no-workspace | 51,7 M | ACT (Transformer) | Torre de Hanoi | Apache 2.0 | Hugging Face |
 | Diffusion Policy (Chi et al., 2023) | ~10-100 M | Diffusion model | Manipulacion general | MIT | Codigo abierto |
 | ACT original (Zhao et al., 2023) | ~50-100 M | ACT (Transformer) | Manipulacion general | MIT | Codigo abierto |
 
@@ -77,7 +77,7 @@ La comparativa se basa en la literatura publica. ACT original es el metodo base 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NONHUMAN-RESEARCH/act-hanoi-teleop-no-workspace
+- Modelo en Hugging Face: https://huggingface.co/NONHUMAN-RESEARCH/act-hanoi-teleop-no-workspace
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot sobre ACT: https://huggingface.co/docs/lerobot/main/en/act

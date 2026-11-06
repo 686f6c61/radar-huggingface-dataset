@@ -81,7 +81,7 @@ La principal ventaja diferencial de esta exportación es su formato ONNX int8 li
 
 ## Enlaces
 
-- [HuggingFace: sivelsguy/opus-mt-fr-he-onnx](https://huggingface.co/sivelsguy/opus-mt-fr-he-onnx)
+- [Hugging Face: sivelsguy/opus-mt-fr-he-onnx](https://huggingface.co/sivelsguy/opus-mt-fr-he-onnx)
 - [Modelo base: Helsinki-NLP/opus-mt-fr-he](https://huggingface.co/Helsinki-NLP/opus-mt-fr-he)
 - [Proyecto OPUS-MT](https://github.com/Helsinki-NLP/OPUS-MT)
 - [transformers.js](https://github.com/huggingface/transformers.js)

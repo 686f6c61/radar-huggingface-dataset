@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wren11ws/sunup es un repositorio alojado en HuggingFace por el usuario wren11ws. La unica informacion verificable disponible en el momento de redactar esta ficha es su identificador, su autoria, la licencia declarada (MIT), la region indicada en los tags (us) y las marcas temporales de creacion y ultima actualizacion (15 de septiembre de 2026, sin modificaciones posteriores). No consta pipeline declarado, ni idiomas soportados, ni descargas, ni interacciones de la comunidad.
+wren11ws/sunup es un repositorio alojado en Hugging Face por el usuario wren11ws. La unica informacion verificable disponible en el momento de redactar esta ficha es su identificador, su autoria, la licencia declarada (MIT), la region indicada en los tags (us) y las marcas temporales de creacion y ultima actualizacion (15 de septiembre de 2026, sin modificaciones posteriores). No consta pipeline declarado, ni idiomas soportados, ni descargas, ni interacciones de la comunidad.
 
 La model card publicada por el autor no contiene mas que la linea de metadatos de licencia; no se documenta arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, capacidades ni proceso de evaluacion. El repositorio no incluye, segun la informacion disponible, una descripcion funcional que permita identificar que tipo de modelo es o para que tarea fue entrenado.
 
@@ -83,7 +83,7 @@ No es posible establecer una comparativa fiable: se desconoce la categoria del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wren11ws/sunup
+- Repositorio en Hugging Face: https://huggingface.co/wren11ws/sunup
 - Model card del autor: no contiene informacion tecnica mas alla de la licencia MIT
 - Paper: no disponible
 - Blog o anuncio: no disponible

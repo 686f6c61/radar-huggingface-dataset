@@ -80,7 +80,7 @@ Advertencias publicadas por el propio autor: el intervalo de confianza bootstrap
 | Contexto | 8192 tokens en entrenamiento | no disponible en la model card | 128 K | 128 K |
 | Licencia | Apache 2.0 | Apache 2.0 | Apache 2.0 | Llama 3.1 Community License |
 | Fortaleza | Fixes SEO/CMS con salida JSON y razonamiento | Modelo base general | General, thinking mode | General, ecosistema amplio |
-| Disponibilidad | safetensors en HuggingFace | HuggingFace | HuggingFace, GGUF, cuantizados amplios | HuggingFace, GGUF, cuantizados amplios |
+| Disponibilidad | safetensors en Hugging Face | Hugging Face | Hugging Face, GGUF, cuantizados amplios | Hugging Face, GGUF, cuantizados amplios |
 
 No existen otros modelos fine-tuned específicos de SEO técnico publicados con benchmarks comparables, por lo que la comparativa más relevante es con su propio modelo base, al que supera de 8% a 78% en su benchmark de pase completo.
 
@@ -98,6 +98,6 @@ No existen otros modelos fine-tuned específicos de SEO técnico publicados con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tensera/Tensera-SEO-9B
+- Modelo en Hugging Face: https://huggingface.co/Tensera/Tensera-SEO-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Web de la empresa: https://tensera.pl

@@ -39,7 +39,7 @@ Dado que el modelo no está entrenado, no presenta capacidades funcionales reale
 Dado su estado de checkpoint de inicialización, los casos de uso son limitados y orientados al desarrollo:
 
 - **Pruebas de humo en pipelines de ML**: el modelo permite verificar que un pipeline de carga, inferencia y guardado de pesos funciona correctamente antes de integrar modelos más grandes.
-- **Desarrollo de adaptadores personalizados**: al ser una implementación custom, los desarrolladores pueden usar este repositorio para crear adaptadores que permitan cargar el modelo con APIs genéricas como HuggingFace Transformers.
+- **Desarrollo de adaptadores personalizados**: al ser una implementación custom, los desarrolladores pueden usar este repositorio para crear adaptadores que permitan cargar el modelo con APIs genéricas como Hugging Face Transformers.
 - **Experimentos de arquitectura**: sirve como banco de pruebas para modificar la configuración de Efficientformer (atención, fusión, normalización) y observar el comportamiento en tareas sintéticas.
 - **Validación de scripts de entrenamiento**: el `training_args.json` y el script de entrenamiento permiten probar configuraciones de optimizador y scheduler sin necesidad de un modelo grande.
 - **Educación y aprendizaje**: es útil para estudiantes que quieran entender cómo se estructura un transformer eficiente y cómo se empaqueta un modelo con configuración y checkpoint.
@@ -74,7 +74,7 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- [HuggingFace - andreislqg83/multitask80](https://huggingface.co/andreislqg83/multitask80)
+- [Hugging Face - andreislqg83/multitask80](https://huggingface.co/andreislqg83/multitask80)
 - [MultitaskAI (no relacionado directamente, pero aparece en la búsqueda)](https://multitaskai.com/)
 - [MultipleChat (no relacionado directamente)](https://multiplechat.ai/)
 - [AI Leaderboard 2026 (referencia general)](https://llm-stats.com/)

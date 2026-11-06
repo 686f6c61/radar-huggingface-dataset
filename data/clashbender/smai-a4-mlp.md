@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ClashBender/smai-a4-mlp` es un modelo de perceptrón multicapa (MLP) publicado en HuggingFace por el usuario ClashBender como parte de una asignación académica de la asignatura SMAI (presumiblemente "Statistical Methods for Artificial Intelligence" o similar). El modelo está entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10, según indica la propia model card, y se distribuye como pesos en formato NumPy (`model.npz`) junto con ficheros de configuración y preprocesado.
+`ClashBender/smai-a4-mlp` es un modelo de perceptrón multicapa (MLP) publicado en Hugging Face por el usuario ClashBender como parte de una asignación académica de la asignatura SMAI (presumiblemente "Statistical Methods for Artificial Intelligence" o similar). El modelo está entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10, según indica la propia model card, y se distribuye como pesos en formato NumPy (`model.npz`) junto con ficheros de configuración y preprocesado.
 
 No se trata de un modelo de lenguaje ni de un transformer: es una red neuronal densa de propósito muy específico, orientada a la clasificación de imágenes de 32x32 píxeles en diez categorías. El repositorio tiene un tamaño de 0.0 GB (esencialmente vacío o con ficheros de muy pocos megabytes) y no cuenta con descargas ni likes en el momento de la consulta, lo que sugiere que es un artefacto de entrega académica más que un modelo pensado para producción o reutilización por terceros.
 
-La relevancia de esta ficha es, por tanto, limitada: sirve como ejemplo de modelo educativo reproducible, pero no como componente para aplicaciones reales. La ausencia de model card detallada, licencia, idiomas y pipeline de HuggingFace refuerza la idea de que se publicó únicamente como entrega de una práctica.
+La relevancia de esta ficha es, por tanto, limitada: sirve como ejemplo de modelo educativo reproducible, pero no como componente para aplicaciones reales. La ausencia de model card detallada, licencia, idiomas y pipeline de Hugging Face refuerza la idea de que se publicó únicamente como entrega de una práctica.
 
 ## Especificaciones tecnicas
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClashBender/smai-a4-mlp | MLP sobre CIFAR-10 | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| ClashBender/smai-a4-mlp | MLP sobre CIFAR-10 | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | ResNet-18 (torchvision) | CNN | ~11,7 M | no aplica | BSD-3-Clause | Ampliamente disponible |
-| ViT-Base/16 (CIFAR-10 fine-tune) | Transformer de visión | ~86 M | no aplica | Apache 2.0 / MIT según variante | HuggingFace |
+| ViT-Base/16 (CIFAR-10 fine-tune) | Transformer de visión | ~86 M | no aplica | Apache 2.0 / MIT según variante | Hugging Face |
 | MLP-Mixer (CIFAR-10) | MLP puro | ~2-3 M según configuración | no aplica | Apache 2.0 | Repositorios de investigación |
 
 La comparativa es orientativa: los tres modelos alternativos son referencias habituales en CIFAR-10 con licencias y documentación públicas, mientras que `smai-a4-mlp` carece de licencia, métricas y documentación suficiente para una comparación rigurosa.
@@ -81,5 +81,5 @@ La comparativa es orientativa: los tres modelos alternativos son referencias hab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ClashBender/smai-a4-mlp
+- Hugging Face: https://huggingface.co/ClashBender/smai-a4-mlp
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -85,6 +85,6 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tntholley/zophiae-strawweight
+- Modelo en Hugging Face: https://huggingface.co/tntholley/zophiae-strawweight
 - Repositorio GitHub con el stack completo: https://github.com/Laninthalesdran/Concept-as-Byte/tree/main/Talkit
 - No se han publicado papers academicos ni demos adicionales en la informacion disponible.

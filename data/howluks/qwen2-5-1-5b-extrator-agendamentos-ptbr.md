@@ -72,8 +72,8 @@ La métrica "exacta" es la fracción de mensajes con todos los campos correctos.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HowLuks/qwen2.5-1.5b-extrator-agendamentos-ptbr | 1,5B (base) + LoRA | no disponible | Extracción de agendamientos en pt-BR | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (según documentación del base) | Propósito general, instrucciones | Apache 2.0 | HuggingFace |
+| HowLuks/qwen2.5-1.5b-extrator-agendamentos-ptbr | 1,5B (base) + LoRA | no disponible | Extracción de agendamientos en pt-BR | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (según documentación del base) | Propósito general, instrucciones | Apache 2.0 | Hugging Face |
 | Modelos de extracción de información en portugués de tamaño similar | no disponible | no disponible | Extracción de entidades o JSON | no disponible | no disponible |
 
 No se dispone de información sobre otros adaptadores LoRA especializados en extracción de agendamientos en portugués que permitan una comparación directa. La comparación más relevante es con el modelo base, cuyos resultados en la misma tarea se recogen en la tabla de benchmarks.
@@ -91,6 +91,6 @@ No se dispone de información sobre otros adaptadores LoRA especializados en ext
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HowLuks/qwen2.5-1.5b-extrator-agendamentos-ptbr
+- Hugging Face: https://huggingface.co/HowLuks/qwen2.5-1.5b-extrator-agendamentos-ptbr
 - Repositorio GitHub con datos, prompt y código: https://github.com/HowLuks/extrator-agendamentos-ptbr
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

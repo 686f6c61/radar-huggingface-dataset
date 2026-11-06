@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de transcr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EmogheneAkpomedaye/sherpa-onnx-nemo-parakeet-redux
+- Repositorio en Hugging Face: https://huggingface.co/EmogheneAkpomedaye/sherpa-onnx-nemo-parakeet-redux
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Versión ternaria upstream (Moondream / M87 Labs): https://huggingface.co/moondream/parakeet-redux
 - Export ONNX (eschmidbauer): https://huggingface.co/eschmidbauer/parakeet-redux-onnx

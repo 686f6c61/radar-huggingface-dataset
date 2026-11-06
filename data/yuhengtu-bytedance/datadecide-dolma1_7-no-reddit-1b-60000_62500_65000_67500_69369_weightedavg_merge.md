@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DataDecide-dolma1_7-no-reddit-1B es un modelo de lenguaje de 1.279.854.592 parametros (aproximadamente 1,28 mil millones) publicado por el usuario yuhengtu-bytedance en HuggingFace. No es un modelo entrenado desde cero ni un ajuste fino supervisado: es el resultado de una fusion de pesos (weighted average) de cinco checkpoints intermedios del mismo entrenamiento, correspondientes a los pasos 60000, 62500, 65000, 67500 y 69369 de una ejecucion sobre el corpus Dolma 1.7 en su variante "no-reddit". La fusion se realizo con mergekit mediante el metodo Linear (promedio ponderado de pesos), con pesos 1, 2, 3, 4 y 5 normalizados, tomando el checkpoint de paso 69369 como base.
+DataDecide-dolma1_7-no-reddit-1B es un modelo de lenguaje de 1.279.854.592 parametros (aproximadamente 1,28 mil millones) publicado por el usuario yuhengtu-bytedance en Hugging Face. No es un modelo entrenado desde cero ni un ajuste fino supervisado: es el resultado de una fusion de pesos (weighted average) de cinco checkpoints intermedios del mismo entrenamiento, correspondientes a los pasos 60000, 62500, 65000, 67500 y 69369 de una ejecucion sobre el corpus Dolma 1.7 en su variante "no-reddit". La fusion se realizo con mergekit mediante el metodo Linear (promedio ponderado de pesos), con pesos 1, 2, 3, 4 y 5 normalizados, tomando el checkpoint de paso 69369 como base.
 
 El modelo pertenece a la familia de experimentos denominada DataDecide, orientada a medir el efecto de decisiones sobre datos de preentrenamiento y de tecnicas de agregacion de checkpoints. Su relevancia practica es doble: por un lado, sirve como banco de pruebas reproducible para investigar si promediar checkpoints de un mismo run mejora la estabilidad y la calidad frente al checkpoint final; por otro, al ser un modelo denso de ~1,3B con pesos en bfloat16 y arquitectura Llama, es lo bastante pequeno para ejecutarse en GPU de consumo y para servir como base de ajuste fino en tareas de dominio.
 
@@ -23,13 +23,13 @@ La informacion publicada es muy limitada: la model card describe unicamente el m
 | Pesos de la fusion | paso 60000: 1/15 (6,67 %); paso 62500: 2/15 (13,33 %); paso 65000: 3/15 (20 %); paso 67500: 4/15 (26,67 %); paso 69369: 5/15 (33,33 %) |
 | Checkpoint base | paso 69369 de `dolma1_7-no-reddit` |
 | Tamano del repositorio | 2,6 GB |
-| Fecha de creacion (HuggingFace) | 17 de septiembre de 2026 |
+| Fecha de creacion (Hugging Face) | 17 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura subyacente es un transformer denso de tipo Llama, segun la etiqueta de arquitectura declarada en el repositorio. No se dispone de informacion publicada sobre el numero de capas, dimensiones ocultas, cabezas de atencion, tipo de normalizacion, activacion ni vocabulario, ya que el autor no incluye la configuracion del modelo en la model card. Tampoco se documenta si se aplicaron tecnicas como atencion con RoPE escalado, GQA o decodificacion especulativa.
 
-El modelo no fue entrenado por el autor de la ficha de HuggingFace: es una agregacion de pesos de cinco checkpoints de un mismo run de preentrenamiento sobre Dolma 1.7 sin la porcion de Reddit. El proceso, ejecutado con mergekit, aplica una interpolacion lineal con normalizacion de pesos, dando mas peso a los checkpoints mas avanzados (el paso 69369 concentra un tercio de la mezcla). La motivacion tecnica habitual de este tipo de operacion, descrita en el articulo de referencia del metodo Linear (model soups, arXiv:2203.05482), es que promediar soluciones cercanas en el espacio de pesos puede mejorar la robustez y reducir la varianza respecto a escoger un unico checkpoint, sin incrementar el coste de inferencia. No se documenta ningun tipo de ajuste posterior con RLHF, DPO o instrucciones: la model card no lo menciona en ningun momento.
+El modelo no fue entrenado por el autor de la ficha de Hugging Face: es una agregacion de pesos de cinco checkpoints de un mismo run de preentrenamiento sobre Dolma 1.7 sin la porcion de Reddit. El proceso, ejecutado con mergekit, aplica una interpolacion lineal con normalizacion de pesos, dando mas peso a los checkpoints mas avanzados (el paso 69369 concentra un tercio de la mezcla). La motivacion tecnica habitual de este tipo de operacion, descrita en el articulo de referencia del metodo Linear (model soups, arXiv:2203.05482), es que promediar soluciones cercanas en el espacio de pesos puede mejorar la robustez y reducir la varianza respecto a escoger un unico checkpoint, sin incrementar el coste de inferencia. No se documenta ningun tipo de ajuste posterior con RLHF, DPO o instrucciones: la model card no lo menciona en ningun momento.
 
 No hay informacion sobre el volumen de tokens vistos por cada checkpoint ni sobre la composicion exacta del subconjunto de Dolma 1.7 empleado, mas alla de la exclusion de Reddit que indica el propio nombre del modelo.
 
@@ -77,11 +77,11 @@ La comparativa se establece con modelos densos de tamano comparable ampliamente 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DataDecide-dolma1_7-no-reddit-1B (este modelo) | 1,28B | no disponible | no disponible | HuggingFace, safetensors | Fusion de checkpoints, sin ajuste por instrucciones |
-| Llama 3.2 1B | 1,24B | 128k | Licencia comunitaria Llama 3.2 | HuggingFace, variantes GGUF oficiales | Modelo instruido disponible, amplio ecosistema |
-| Qwen2.5 1.5B | 1,54B | 32k | Apache 2.0 (segun variante) | HuggingFace, GGUF, multiples cuantizaciones | Buen soporte multilingue y de codigo |
-| SmolLM2 1.7B | 1,71B | 8k | Apache 2.0 | HuggingFace, GGUF, ONNX | Orientado a despliegue en dispositivo |
-| OLMo 1B (AI2) | 1,18B | 2k (configuracion original) | Apache 2.0 | HuggingFace | Entrenado sobre Dolma, comparable en corpus |
+| DataDecide-dolma1_7-no-reddit-1B (este modelo) | 1,28B | no disponible | no disponible | Hugging Face, safetensors | Fusion de checkpoints, sin ajuste por instrucciones |
+| Llama 3.2 1B | 1,24B | 128k | Licencia comunitaria Llama 3.2 | Hugging Face, variantes GGUF oficiales | Modelo instruido disponible, amplio ecosistema |
+| Qwen2.5 1.5B | 1,54B | 32k | Apache 2.0 (segun variante) | Hugging Face, GGUF, multiples cuantizaciones | Buen soporte multilingue y de codigo |
+| SmolLM2 1.7B | 1,71B | 8k | Apache 2.0 | Hugging Face, GGUF, ONNX | Orientado a despliegue en dispositivo |
+| OLMo 1B (AI2) | 1,18B | 2k (configuracion original) | Apache 2.0 | Hugging Face | Entrenado sobre Dolma, comparable en corpus |
 
 No se dispone de resultados de benchmarks de este modelo que permitan una comparacion de rendimiento con las alternativas listadas.
 
@@ -91,14 +91,14 @@ No se dispone de resultados de benchmarks de este modelo que permitan una compar
 - Riesgo de alucinacion: al ser un modelo base sin alineamiento ni ajuste por instrucciones, no esta calibrado para responder con honestidad ni para rechazar peticiones; la generacion de contenido falso o inconsistente es esperable.
 - Ausencia de formato de chat: no se publica plantilla de conversacion ni tokens especiales, por lo que usarlo como asistente conversacional requiere construir el prompt o ajustarlo previamente.
 - Limitacion de contexto e idioma: ambas variables son desconocidas, lo que impide garantizar el comportamiento en secuencias largas o en idiomas distintos del dominante en el corpus de entrenamiento.
-- Restricciones de licencia: la licencia no esta declarada en HuggingFace, lo que impide asumir permisos de uso comercial. Antes de cualquier uso en produccion es necesario contactar con el autor para aclarar los terminos, y hay que tener en cuenta que las condiciones de los checkpoints subyacentes y del corpus Dolma 1.7 podrian imponer restricciones adicionales.
-- Trazabilidad limitada: la model card referencia rutas locales del sistema del autor (`/opt/tiger/...`) en lugar de identificadores publicos de los checkpoints fusionados, de modo que no es posible verificar ni descargar las fuentes originales desde HuggingFace.
+- Restricciones de licencia: la licencia no esta declarada en Hugging Face, lo que impide asumir permisos de uso comercial. Antes de cualquier uso en produccion es necesario contactar con el autor para aclarar los terminos, y hay que tener en cuenta que las condiciones de los checkpoints subyacentes y del corpus Dolma 1.7 podrian imponer restricciones adicionales.
+- Trazabilidad limitada: la model card referencia rutas locales del sistema del autor (`/opt/tiger/...`) en lugar de identificadores publicos de los checkpoints fusionados, de modo que no es posible verificar ni descargar las fuentes originales desde Hugging Face.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin validacion externa conocida.
 - Sesgo de seleccion de checkpoints: la mezcla solo incluye pasos finales de un unico run; no hay garantia de que el promediado aporte mejoras frente al checkpoint de paso 69369, y no se publica evidencia en ninguna direccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-reddit-1B-60000_62500_65000_67500_69369_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-reddit-1B-60000_62500_65000_67500_69369_weightedavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Articulo de referencia del metodo Linear (model soups): https://arxiv.org/abs/2203.05482
 - Dataset Dolma 1.7 (origen de los datos de preentrenamiento, segun el nombre del modelo): https://huggingface.co/datasets/allenai/dolma

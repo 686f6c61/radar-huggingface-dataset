@@ -75,7 +75,7 @@ La información proporcionada no incluye comparaciones con otros modelos, por lo
 
 | Modelo | Parámetros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MeanFlow JPEG Restoration (este modelo) | ~65 M | Linear DiT con mean flows en dominio wavelet, 1-2 pasos | MIT | HuggingFace (0 descargas, 0 likes) |
+| MeanFlow JPEG Restoration (este modelo) | ~65 M | Linear DiT con mean flows en dominio wavelet, 1-2 pasos | MIT | Hugging Face (0 descargas, 0 likes) |
 | SwinIR | no disponible en la información | Transformer basado en ventanas para restauración | no disponible | no disponible |
 | Restormer | no disponible en la información | Transformer con atención por canales para restauración | no disponible | no disponible |
 | NAFNet | no disponible en la información | Red convolucional sin función de activación | no disponible | no disponible |
@@ -98,7 +98,7 @@ El rasgo diferencial documentado de este modelo es el número de pasos de muestr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asandeistefan/jpeg-restore-meanflows
+- Modelo en Hugging Face: https://huggingface.co/asandeistefan/jpeg-restore-meanflows
 - Repositorio del proyecto en GitHub: https://github.com/stefanasandei/jpeg-restore
 - Artículo en arXiv: https://arxiv.org/abs/2608.28730
 - Licencia MIT del proyecto: https://github.com/stefanasandei/jpeg-restore/blob/main/LICENSE

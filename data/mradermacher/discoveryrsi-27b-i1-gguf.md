@@ -97,7 +97,7 @@ No se dispone de información verificable sobre modelos alternativos de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/DiscoveryRSI-27B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/DiscoveryRSI-27B-i1-GGUF
 - Modelo base: https://huggingface.co/Gen-Verse/DiscoveryRSI-27B
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/DiscoveryRSI-27B-GGUF
 - Página de descarga consolidada del cuantizador: https://hf.tst.eu/model#DiscoveryRSI-27B-i1-GGUF

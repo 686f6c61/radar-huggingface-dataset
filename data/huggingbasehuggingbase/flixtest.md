@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlixTest es un modelo de lenguaje publicado en HuggingFace por el usuario HuggingbaseHuggingbase bajo el identificador `HuggingbaseHuggingbase/FlixTest`. Se distribuye en formato GGUF, lo que indica que esta pensado para inferencia con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.). El recuento de parametros en safetensors asciende a 7.115.124.736, es decir, aproximadamente 7,1 mil millones de parametros, un tamano que encaja en la categoria de modelos de 7B ampliamente desplegables en hardware de consumo.
+FlixTest es un modelo de lenguaje publicado en Hugging Face por el usuario HuggingbaseHuggingbase bajo el identificador `HuggingbaseHuggingbase/FlixTest`. Se distribuye en formato GGUF, lo que indica que esta pensado para inferencia con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.). El recuento de parametros en safetensors asciende a 7.115.124.736, es decir, aproximadamente 7,1 mil millones de parametros, un tamano que encaja en la categoria de modelos de 7B ampliamente desplegables en hardware de consumo.
 
 La informacion publica disponible es muy limitada: no se declara licencia, no se especifican idiomas soportados, no hay pipeline asignado y el repositorio no incluye resultados de benchmarks ni documentacion tecnica visible. El tamano del repositorio (219,2 GB) es desproporcionadamente grande para un modelo de 7B, lo que sugiere que contiene multiples cuantizaciones GGUF del mismo modelo o artefactos adicionales no documentados.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha se limita a describir lo que puede verificarse a partir de
 
 No se ha publicado informacion sobre la arquitectura del modelo (transformer denso, MoE, hibrido u otra), ni sobre el dataset de entrenamiento, numero de tokens, composicion de datos o si se aplicaron tecnicas de alineacion como RLHF o DPO. El unico dato estructural verificable es el recuento de parametros (~7,1B) y la presencia de pesos en formato GGUF, lo que confirma compatibilidad con el ecosistema llama.cpp.
 
-El tag `region:us` es un metadato de la plataforma HuggingFace y no aporta informacion sobre el entrenamiento. No hay model card visible con detalles de preentrenamiento, tokenizador o innovaciones tecnicas (atencion lineal, decodificacion especulativa, etc.). Tampoco se identifica el modelo base del que pudiera derivarse, si es que existe.
+El tag `region:us` es un metadato de la plataforma Hugging Face y no aporta informacion sobre el entrenamiento. No hay model card visible con detalles de preentrenamiento, tokenizador o innovaciones tecnicas (atencion lineal, decodificacion especulativa, etc.). Tampoco se identifica el modelo base del que pudiera derivarse, si es que existe.
 
 ## Capacidades
 
@@ -84,5 +84,5 @@ La comparativa se ofrece a titulo orientativo por tamano; no hay datos de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HuggingbaseHuggingbase/FlixTest
+- Modelo en Hugging Face: https://huggingface.co/HuggingbaseHuggingbase/FlixTest
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

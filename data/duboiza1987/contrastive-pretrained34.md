@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-pretrained34 es un repositorio publicado por el usuario duboiza1987 en HuggingFace que contiene una implementacion propia y minimalista de una arquitectura CLIP orientada al aprendizaje contrastivo. No se trata de un modelo entrenado ni de una release de inferencia: la propia model card lo describe explicitamente como un "initialization checkpoint" valido unicamente para smoke tests, sin ninguna puntuacion de benchmark declarada. El peso publicado en safetensors contiene 33.088 parametros totales, un orden de magnitud propio de un esqueleto de prueba y no de un codificador visual-textual funcional.
+contrastive-pretrained34 es un repositorio publicado por el usuario duboiza1987 en Hugging Face que contiene una implementacion propia y minimalista de una arquitectura CLIP orientada al aprendizaje contrastivo. No se trata de un modelo entrenado ni de una release de inferencia: la propia model card lo describe explicitamente como un "initialization checkpoint" valido unicamente para smoke tests, sin ninguna puntuacion de benchmark declarada. El peso publicado en safetensors contiene 33.088 parametros totales, un orden de magnitud propio de un esqueleto de prueba y no de un codificador visual-textual funcional.
 
 El interes del repositorio es, por tanto, como plantilla reproducible de ingenieria: incluye un `train.py` ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de entrenamiento por defecto (RMSprop con schedule exponencial) y un checkpoint de inicializacion coherente con esa configuracion. La arquitectura declarada usa atencion dilatada, fusion tipo Tucker, activacion approx GELU y normalizacion LayerNorm, con escala "base".
 
@@ -72,7 +72,7 @@ La comparacion con CLIP de OpenAI, OpenCLIP o SigLIP no es homogenea, porque est
 
 | Modelo | Naturaleza | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| contrastive-pretrained34 | Implementacion CLIP propia, checkpoint de inicializacion sin entrenar | 33.088 | no disponible | bsd-3-clause | HuggingFace, repositorio con 0 descargas |
+| contrastive-pretrained34 | Implementacion CLIP propia, checkpoint de inicializacion sin entrenar | 33.088 | no disponible | bsd-3-clause | Hugging Face, repositorio con 0 descargas |
 | CLIP (OpenAI) | Modelo entrenado con objetivo contrastivo imagen-texto | no disponible en la informacion proporcionada | no disponible | no disponible | Publico |
 | OpenCLIP | Reimplementacion abierta y entrenada de CLIP | no disponible en la informacion proporcionada | no disponible | no disponible | Publico |
 | SigLIP | Alternativa entrenada con perdida sigmoide en lugar de softmax contrastivo | no disponible en la informacion proporcionada | no disponible | no disponible | Publico |
@@ -88,13 +88,13 @@ No se dispone de datos verificados de parametros, contexto ni licencia de los mo
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que el modelo no genera texto; el riesgo relevante es interpretar erroneamente el repositorio como un modelo listo para uso.
 - Limitaciones de contexto e idioma: no disponibles, no se especifican.
 - Restricciones de licencia: bsd-3-clause permite uso comercial y modificacion con obligaciones de atribucion y conservacion del aviso de copyright; el autor advierte ademas de que deben revisarse por separado los terminos de los datos de origen cuando se use con datasets externos.
-- Caveat de produccion: al ser una implementacion custom, las APIs genericas de carga automatica requieren un adaptador explicito antes de poder utilizarla; no hay pipeline declarado en HuggingFace.
+- Caveat de produccion: al ser una implementacion custom, las APIs genericas de carga automatica requieren un adaptador explicito antes de poder utilizarla; no hay pipeline declarado en Hugging Face.
 - Caveat de reproducibilidad: los valores de RMSprop y schedule exponencial son puntos de partida del script, no evidencia de una ejecucion completada; cualquier resultado futuro debe documentarse por separado de estos valores por defecto.
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin senales de mantenimiento o validacion por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/duboiza1987/contrastive-pretrained34
+- Modelo en Hugging Face: https://huggingface.co/duboiza1987/contrastive-pretrained34
 - A Statistical Theory of Contrastive Pre-training and Multimodal Generative AI (arXiv): https://arxiv.org/abs/2501.04641
 - Version PDF del mismo paper: https://arxiv.org/pdf/2501.04641v2
 - Contrastive Language-Image Pre-training (Wikipedia): https://en.wikipedia.org/wiki/Contrastive_Language%E2%80%93Image_Pre-training

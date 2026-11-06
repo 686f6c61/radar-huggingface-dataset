@@ -74,12 +74,12 @@ No se dispone de informacion suficiente para comparar Kenga-Trained con modelos 
 - Contexto limitado: no se especifica la longitud de contexto, lo que impide conocer su capacidad para dialogos largos o documentos extensos.
 - Dependencia del corpus Kenga: el entrenamiento se basa en programas Kenga, un lenguaje de programacion de nicho; esto puede limitar la generalizacion a otros dominios.
 - Falta de validacion externa: no hay benchmarks publicos ni evaluaciones independientes; el unico resultado proviene del propio autor, con una muestra muy pequena (10 preguntas).
-- Adopcion nula: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido probado por la comunidad.
+- Adopcion nula: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido probado por la comunidad.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero el autor incluye un "espectral passport" (marcador `6108e4d16400d5e1`) que podria implicar restricciones no estandar, aunque no se detallan.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/Kenga-Trained
+- Modelo en Hugging Face: https://huggingface.co/GermannM/Kenga-Trained
 - Repositorio Kenga-lang: https://github.com/GermannM3/kenga-lang
 - Repositorio Z-System: https://github.com/GermannM3/z-system
 - Modelo Kenga 1.5B: https://huggingface.co/GermannM/Kenga

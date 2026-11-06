@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (original) | 125B MoE (6B activos) | 262K | BF16/FP8 | Apache 2.0 | HuggingFace oficial |
-| Qwen3.8-Flash-Next GGUF (Unsloth) | 125B MoE (6B activos) | 262K | UD-IQ1_S | Apache 2.0 | HuggingFace (unsloth) |
-| Qwen3.8-Flash-Next UltraLite (esta publicacion) | 125B MoE (6B activos) | 262K | Mixta Q1_0/Q2_0 | Apache 2.0 | HuggingFace (0xKitkat) |
+| Qwen3.8-Flash-Next (original) | 125B MoE (6B activos) | 262K | BF16/FP8 | Apache 2.0 | Hugging Face oficial |
+| Qwen3.8-Flash-Next GGUF (Unsloth) | 125B MoE (6B activos) | 262K | UD-IQ1_S | Apache 2.0 | Hugging Face (unsloth) |
+| Qwen3.8-Flash-Next UltraLite (esta publicacion) | 125B MoE (6B activos) | 262K | Mixta Q1_0/Q2_0 | Apache 2.0 | Hugging Face (0xKitkat) |
 
 La diferencia principal frente a las alternativas es el tamano final: 37 GiB frente a los 72,55 GB del GGUF fuente. La contrapartida es la necesidad de un parche especifico de llama.cpp y una degradacion de calidad mayor por la cuantizacion mas agresiva.
 
@@ -80,8 +80,8 @@ La diferencia principal frente a las alternativas es el tamano final: 37 GiB fre
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/0xKitkat/Qwen3.8-Flash-Next-125B-UltraLite-37GiB-GGUF
-- Repositorio HuggingFace del GGUF fuente (Unsloth): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/0xKitkat/Qwen3.8-Flash-Next-125B-UltraLite-37GiB-GGUF
+- Repositorio Hugging Face del GGUF fuente (Unsloth): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Repositorio oficial del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentacion de Unsloth sobre ejecucion local: https://unsloth.ai/docs/models/qwen3.8-next

@@ -10,7 +10,7 @@ El modelo base es un transformer multimodal (etiquetado como `image-text-to-text
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (según tags de HuggingFace), detalles no disponibles |
+| Arquitectura | Transformer multimodal (según tags de Hugging Face), detalles no disponibles |
 | Parametros totales | 27.781.427.952 (27,8B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ El modelo base es un transformer multimodal (etiquetado como `image-text-to-text
 
 ## Arquitectura y entrenamiento
 
-La información disponible no incluye detalles sobre la arquitectura interna del modelo base Qwen3.8-27B, ni sobre su proceso de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). Los tags de HuggingFace indican que se trata de un modelo multimodal `image-text-to-text`, lo que sugiere una arquitectura transformer con módulos de visión y lenguaje, pero no se especifican más detalles.
+La información disponible no incluye detalles sobre la arquitectura interna del modelo base Qwen3.8-27B, ni sobre su proceso de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). Los tags de Hugging Face indican que se trata de un modelo multimodal `image-text-to-text`, lo que sugiere una arquitectura transformer con módulos de visión y lenguaje, pero no se especifican más detalles.
 
 Esta variante FP8 no es un modelo entrenado desde cero, sino una cuantización post-entrenamiento realizada con `compressed-tensors`. El proceso convierte los pesos BF16 a `float8_e4m3fn` por canal de salida, con cuantización dinámica de las activaciones por token. Se cuantizaron 615 capas lineales, dejando 0 en BF16, y se verificó la conformidad de forma y dtype de cada tensor contra el servidor esperado antes de su publicación. El error relativo medio medido sobre una muestra de capas lineales cuantizadas es de 0,0264, lo que indica una pérdida de precisión muy baja.
 
@@ -31,7 +31,7 @@ No se han publicado capacidades específicas para esta cuantización en la infor
 
 - Generación de texto conversacional
 - Procesamiento de imágenes y texto (multimodal, según el tag `image-text-to-text`)
-- Compatibilidad con pipelines de generación de texto (HuggingFace `text-generation`)
+- Compatibilidad con pipelines de generación de texto (Hugging Face `text-generation`)
 - Integración con vLLM para servir en producción
 
 No se dispone de información sobre soporte de tool calling, capacidades de agente, razonamiento multi-paso, ni sobre el alcance multilingüe.
@@ -78,7 +78,7 @@ FP8 ofrece la mayor fidelidad (menor error relativo) a costa de un mayor tamaño
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/dudeman2512/Qwen3.8-27B-FP8)
+- [Modelo en Hugging Face](https://huggingface.co/dudeman2512/Qwen3.8-27B-FP8)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio compressed-tensors](https://github.com/neuralmagic/compressed-tensors)
 - [Variante NVFP4](https://huggingface.co/dudeman2512/Qwen3.8-27B-NVFP4)

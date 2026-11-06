@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`meloncafe/comfyui-models` no es un modelo único, sino un repositorio de pesos para ComfyUI publicado por el usuario meloncafe. Con 691,5 GB de tamaño y formato `safetensors`, el repositorio agrupa checkpoints de generación de imagen etiquetados como `sdxl` y `anima`, es decir, modelos de difusión latente orientados a ilustración (probablemente estilo anime) y a contenido para adultos, tal como indica la etiqueta `not-for-all-audiences`. El pipeline declarado en HuggingFace es `text-to-image`.
+`meloncafe/comfyui-models` no es un modelo único, sino un repositorio de pesos para ComfyUI publicado por el usuario meloncafe. Con 691,5 GB de tamaño y formato `safetensors`, el repositorio agrupa checkpoints de generación de imagen etiquetados como `sdxl` y `anima`, es decir, modelos de difusión latente orientados a ilustración (probablemente estilo anime) y a contenido para adultos, tal como indica la etiqueta `not-for-all-audiences`. El pipeline declarado en Hugging Face es `text-to-image`.
 
-El repositorio está en acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, y la licencia es `original-creator-license`, una licencia propia del creador original en lugar de una licencia estándar (Apache 2.0, MIT, CreativeML OpenRAIL-M, etc.). Esa combinación de acceso condicionado y licencia no estandarizada es el dato más relevante para cualquier evaluación de uso comercial o de integración en producción.
+El repositorio está en acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, y la licencia es `original-creator-license`, una licencia propia del creador original en lugar de una licencia estándar (Apache 2.0, MIT, CreativeML OpenRAIL-M, etc.). Esa combinación de acceso condicionado y licencia no estandarizada es el dato más relevante para cualquier evaluación de uso comercial o de integración en producción.
 
 En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y fue creado el 15 de octubre de 2026 con una actualización el 24 de octubre de 2026. No hay documentación técnica publicada (model card sin arquitectura, dataset ni receta de entrenamiento), por lo que la mayor parte de las especificaciones habituales de una ficha de modelo no se pueden verificar y se marcan como no disponibles.
 
@@ -21,7 +21,7 @@ En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y fu
 | Formato de pesos | `safetensors` |
 | Tamaño del repositorio | 691,5 GB |
 | Pipeline declarado | `text-to-image` |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creación / actualización | 2026-10-15 / 2026-10-24 |
 | Descargas / likes | 0 / 0 |
 
@@ -69,17 +69,17 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 | Modelo | Tipo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `meloncafe/comfyui-models` | Colección de checkpoints para ComfyUI (SDXL/anime) | No disponible | No disponible (familia SDXL: 1024x1024) | `original-creator-license` | Gated, 0 descargas |
-| Stable Diffusion XL base | Modelo de difusión | No disponible en esta ficha | 1024x1024 | CreativeML OpenRAIL++-M | Público en HuggingFace |
-| Pony Diffusion V6 XL | Modelo de difusión (fine-tuning SDXL) | No disponible en esta ficha | 1024x1024 | Licencia propia del autor | Público en HuggingFace |
-| Illustrious-XL | Modelo de difusión (fine-tuning SDXL, anime) | No disponible en esta ficha | 1024x1024 | Licencia propia del autor | Público en HuggingFace |
+| Stable Diffusion XL base | Modelo de difusión | No disponible en esta ficha | 1024x1024 | CreativeML OpenRAIL++-M | Público en Hugging Face |
+| Pony Diffusion V6 XL | Modelo de difusión (fine-tuning SDXL) | No disponible en esta ficha | 1024x1024 | Licencia propia del autor | Público en Hugging Face |
+| Illustrious-XL | Modelo de difusión (fine-tuning SDXL, anime) | No disponible en esta ficha | 1024x1024 | Licencia propia del autor | Público en Hugging Face |
 
 La comparación es estructural: frente a los tres alternativas, este repositorio destaca por el volumen agregado (691,5 GB) y por el acceso restringido, mientras que carece de model card, ejemplos y métricas que sí suelen acompañar a los checkpoints de referencia de la comunidad.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: sin arquitectura, dataset, receta de entrenamiento ni evaluación, no es posible auditar el modelo ni reproducir resultados.
-- Licencia `original-creator-license` no estandarizada: los términos exactos deben revisarse en HuggingFace antes de cualquier uso comercial; no se puede asumir permiso de uso comercial ni de redistribución.
-- Acceso gated: la descarga requiere aceptar condiciones y una cuenta de HuggingFace, lo que complica la automatización de pipelines de CI/CD y la réplica en entornos aislados.
+- Licencia `original-creator-license` no estandarizada: los términos exactos deben revisarse en Hugging Face antes de cualquier uso comercial; no se puede asumir permiso de uso comercial ni de redistribución.
+- Acceso gated: la descarga requiere aceptar condiciones y una cuenta de Hugging Face, lo que complica la automatización de pipelines de CI/CD y la réplica en entornos aislados.
 - Contenido para adultos (`not-for-all-audiences`): no hay filtrado de seguridad por defecto; su despliegue exige verificación de edad, moderación y cumplimiento de la normativa aplicable en la jurisdicción de uso.
 - Riesgo de anatomía incorrecta, artefactos en manos y texto ilegible en imágenes, habitual en modelos de difusión de la familia SDXL; no hay muestras publicadas para evaluar la magnitud en estos checkpoints.
 - Sesgos de representación heredados del dataset de entrenamiento original, no documentados ni medidos.
@@ -89,5 +89,5 @@ La comparación es estructural: frente a los tres alternativas, este repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meloncafe/comfyui-models
+- Repositorio en Hugging Face: https://huggingface.co/meloncafe/comfyui-models
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos): los resultados devueltos no guardan relación con el repositorio y se han descartado.

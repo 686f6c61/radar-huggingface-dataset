@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparados en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eightman999/openllama-3b-ggml-legacy
+- Repositorio en Hugging Face: https://huggingface.co/eightman999/openllama-3b-ggml-legacy
 - Checkpoint base OpenLLaMA 3B v2: https://huggingface.co/openlm-research/open_llama_3b_v2
 - Fork de llama.cpp con parches para Fermi/CLBlast: https://github.com/eightman999/llama-fermi-clblast
 - Repositorio upstream de llama.cpp: https://github.com/ggml-org/llama.cpp

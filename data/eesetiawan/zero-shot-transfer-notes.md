@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eesetiawan/zero-shot-transfer-notes` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación alojado en HuggingFace. Según su propia model card, se trata de una "nota exploratoria" sobre Zero Shot Transfer que registra el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, antes de que se reporte cualquier resultado de benchmark. El artefacto principal es un fichero `review.md`, y el propio autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+`eesetiawan/zero-shot-transfer-notes` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación alojado en Hugging Face. Según su propia model card, se trata de una "nota exploratoria" sobre Zero Shot Transfer que registra el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, antes de que se reporte cualquier resultado de benchmark. El artefacto principal es un fichero `review.md`, y el propio autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 El repositorio declara licencia MIT y las etiquetas `research-notes` y `zero-shot-transfer`. No incluye checkpoint entrenado, código liberado ni ablaciones completadas, tal y como se explicita en la sección de alcance y limitaciones de la model card. Los metadatos de safetensors reportan 33.088 parámetros, una cifra que no corresponde a ningún modelo utilizable para inferencia y que probablemente refleja el contenido residual del repositorio.
 
@@ -79,8 +79,8 @@ No se dispone de datos para comparar con modelos reales de transferencia zero-sh
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eesetiawan/zero-shot-transfer-notes
-- Repositorio comparable en HuggingFace: https://huggingface.co/danyloboyko/zero-shot-transfer-notes
+- Repositorio en Hugging Face: https://huggingface.co/eesetiawan/zero-shot-transfer-notes
+- Repositorio comparable en Hugging Face: https://huggingface.co/danyloboyko/zero-shot-transfer-notes
 - Zero-shot learning, Wikipedia: https://en.wikipedia.org/wiki/Zero-shot_learning
 - What is Zero-Shot Transfer in AI?, The Last Tech: https://www.thelasttech.com/ai/what-is-zero-shot-transfer-in-ai
 - Zero-Shot Transfer: Mechanisms & Applications, Emergent Mind: https://www.emergentmind.com/topics/zero-shot-transfer-0d6a650d-431c-46cb-9cd6-9cfc3cfd9c8c

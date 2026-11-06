@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`bibihhehe/qwen3-4b-lifemate-lora-v2` es un adaptador LoRA publicado en HuggingFace por el usuario bibihhehe, construido sobre el modelo base `unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit`. Se trata, por tanto, de un ajuste fino por instrucciones (SFT) sobre una versión cuantizada en 4 bits del Qwen3-4B-Instruct-2507, distribuida por Unsloth. El repositorio contiene únicamente los pesos del adaptador PEFT (0,4 GB), no el modelo completo, y requiere descargar y cargar el modelo base para poder utilizarse.
+`bibihhehe/qwen3-4b-lifemate-lora-v2` es un adaptador LoRA publicado en Hugging Face por el usuario bibihhehe, construido sobre el modelo base `unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit`. Se trata, por tanto, de un ajuste fino por instrucciones (SFT) sobre una versión cuantizada en 4 bits del Qwen3-4B-Instruct-2507, distribuida por Unsloth. El repositorio contiene únicamente los pesos del adaptador PEFT (0,4 GB), no el modelo completo, y requiere descargar y cargar el modelo base para poder utilizarse.
 
 El modelo hereda la arquitectura y las capacidades del Qwen3-4B-Instruct de la familia Qwen3, un transformer denso de aproximadamente 4.000 millones de parámetros con ventana de contexto nativa de 262.144 tokens (extensible), capacidades multilingües y modo de razonamiento. El ajuste LoRA se ha realizado con las librerías Unsloth, TRL y Transformers, según las etiquetas del repositorio.
 
-La relevancia de esta ficha es limitada: el autor no ha documentado el propósito del ajuste, los datos de entrenamiento, la licencia ni los idiomas soportados. La model card es la plantilla por defecto de HuggingFace sin rellenar. Cualquier evaluación en producción debe considerar esta ausencia de documentación como un riesgo significativo.
+La relevancia de esta ficha es limitada: el autor no ha documentado el propósito del ajuste, los datos de entrenamiento, la licencia ni los idiomas soportados. La model card es la plantilla por defecto de Hugging Face sin rellenar. Cualquier evaluación en producción debe considerar esta ausencia de documentación como un riesgo significativo.
 
 ## Especificaciones tecnicas
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bibihhehe/qwen3-4b-lifemate-lora-v2 | ~4B (base) + LoRA | 262.144 (heredado) | No disponible | HuggingFace (adaptador) | Sin documentación ni benchmarks |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262.144 | Apache 2.0 | HuggingFace, ModelScope | Modelo base oficial, documentado y evaluado |
-| unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit | ~4B | 262.144 | Apache 2.0 (heredada) | HuggingFace | Versión cuantizada 4-bit optimizada por Unsloth |
-| Llama 3.2 3B Instruct | ~3B | 131.072 | Llama 3.2 Community License | HuggingFace, Meta | Alternativa de tamaño similar, licencia restrictiva para >700M usuarios |
-| Phi-3.5-mini-instruct | ~3,8B | 131.072 | MIT | HuggingFace, Azure | Alternativa densa de tamaño similar con licencia permisiva |
+| bibihhehe/qwen3-4b-lifemate-lora-v2 | ~4B (base) + LoRA | 262.144 (heredado) | No disponible | Hugging Face (adaptador) | Sin documentación ni benchmarks |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262.144 | Apache 2.0 | Hugging Face, ModelScope | Modelo base oficial, documentado y evaluado |
+| unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit | ~4B | 262.144 | Apache 2.0 (heredada) | Hugging Face | Versión cuantizada 4-bit optimizada por Unsloth |
+| Llama 3.2 3B Instruct | ~3B | 131.072 | Llama 3.2 Community License | Hugging Face, Meta | Alternativa de tamaño similar, licencia restrictiva para >700M usuarios |
+| Phi-3.5-mini-instruct | ~3,8B | 131.072 | MIT | Hugging Face, Azure | Alternativa densa de tamaño similar con licencia permisiva |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bibihhehe/qwen3-4b-lifemate-lora-v2
+- Hugging Face: https://huggingface.co/bibihhehe/qwen3-4b-lifemate-lora-v2
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit
 - Modelo original Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio Qwen3: https://github.com/QwenLM/Qwen3

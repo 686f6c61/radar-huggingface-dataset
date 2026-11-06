@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado para el modelo de este repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Freonius/jerome-translation-models
+- Repositorio en Hugging Face: https://huggingface.co/Freonius/jerome-translation-models
 - Proyecto Firefox Translations de Mozilla: https://github.com/mozilla/translations
 - Texto de la licencia MPL-2.0: https://www.mozilla.org/en-US/MPL/2.0/
 - Crate `fxtranslate` en crates.io: https://crates.io/crates/fxtranslate

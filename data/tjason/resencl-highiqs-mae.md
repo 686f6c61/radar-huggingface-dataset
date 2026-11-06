@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ResEncL-HighIQS-MAE | no disponible | parches 3D de 160³ | CC BY 4.0 | HuggingFace (24 descargas) |
+| ResEncL-HighIQS-MAE | no disponible | parches 3D de 160³ | CC BY 4.0 | Hugging Face (24 descargas) |
 | Otros modelos del benchmark del articulo | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas concretas de la misma categoria.
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TJason/ResEncL-HighIQS-MAE
+- Hugging Face: https://huggingface.co/TJason/ResEncL-HighIQS-MAE
 - Paper: https://arxiv.org/abs/2610.17573v1
 - Repositorio de arquitectura de referencia: https://github.com/MIC-DKFZ/nnssl
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

@@ -83,7 +83,7 @@ La comparativa con Gemma 3 y Mistral Small se ofrece como referencia de categori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-ultra-uncensored-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-ultra-uncensored-heretic-GGUF
 - Modelo base: https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-ultra-uncensored-heretic
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#gemma-4-26B-A4B-it-ultra-uncensored-heretic-GGUF

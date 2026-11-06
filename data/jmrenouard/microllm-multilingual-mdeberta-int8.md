@@ -92,7 +92,7 @@ La comparativa se basa en características públicas de los modelos citados; no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jmrenouard/microllm-multilingual-mdeberta-int8
+- Hugging Face: https://huggingface.co/jmrenouard/microllm-multilingual-mdeberta-int8
 - Modelo upstream: https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-mnli-xnli
 - Repositorio de MicroLLM: no disponible en la información proporcionada
 - Paper o blog técnico: no disponible en la información proporcionada

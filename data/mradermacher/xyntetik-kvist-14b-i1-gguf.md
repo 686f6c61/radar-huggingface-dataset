@@ -27,7 +27,7 @@ La relevancia de esta publicación es fundamentalmente práctica: ofrece 24 vari
 
 La información disponible no describe la arquitectura interna del modelo base. El repositorio del modelo original está etiquetado como compatible con Transformers, y las etiquetas asociadas a la familia incluyen términos como "distillation" (destilación), "width-pruning" (poda de anchura) y "muse-glimmer", lo que sugiere que Xyntetik-Kvist-14B se obtuvo mediante un proceso de compresión o destilación sobre un modelo mayor, reduciendo el ancho de las capas en lugar de eliminar capas completas. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
-En cuanto a esta publicación concreta, el proceso aplicado por mradermacher es de cuantización post-entrenamiento con calibración imatrix, que estima la importancia relativa de cada tensor a partir de activaciones de calibración para asignar más precisión a los pesos críticos. El pipeline declara `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que los pesos de partida provienen de un checkpoint en formato HuggingFace y que se aplicó cuantización a nivel de tensor. Las etiquetas del modelo base mencionan además capacidades agénticas y de tool calling, sin detallar el método de entrenamiento empleado para adquirirlas.
+En cuanto a esta publicación concreta, el proceso aplicado por mradermacher es de cuantización post-entrenamiento con calibración imatrix, que estima la importancia relativa de cada tensor a partir de activaciones de calibración para asignar más precisión a los pesos críticos. El pipeline declara `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que los pesos de partida provienen de un checkpoint en formato Hugging Face y que se aplicó cuantización a nivel de tensor. Las etiquetas del modelo base mencionan además capacidades agénticas y de tool calling, sin detallar el método de entrenamiento empleado para adquirirlas.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ Tamaño estimado de los pesos según cuantización (no incluye caché KV ni over
 - GPU de consumo: cualquier tarjeta con 12 GB o más (RTX 3060 12 GB, RTX 4070, RTX 4060 Ti 16 GB) puede ejecutar las cuantizaciones hasta Q6_K completas en VRAM. Con 8 GB es viable hasta Q3_K_M o IQ4_XS. Las variantes IQ1 e IQ2 permiten incluso tarjetas de 4 a 6 GB, a costa de una pérdida de calidad notable.
 - GPU de centro de datos: A100 40/80 GB, H100 o L40S permiten servir varias instancias concurrentes o contextos largos con margen amplio.
 - Memoria unificada: los equipos Apple Silicon con 16 GB o más pueden ejecutar las variantes Q4 y Q5 mediante llama.cpp o Ollama, con rendimiento dependiente del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python, text-generation-webui y servidores compatibles con la API de OpenAI a través de llama.cpp. La etiqueta endpoints_compatible indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python, text-generation-webui y servidores compatibles con la API de OpenAI a través de llama.cpp. La etiqueta endpoints_compatible indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
 
 ## Comparativa con modelos similares
@@ -105,6 +105,6 @@ La comparación directa de rendimiento no es posible: Xyntetik-Kvist-14B carece 
 - Repositorio de cuantizaciones imatrix: https://huggingface.co/mradermacher/Xyntetik-Kvist-14B-i1-GGUF
 - Repositorio GGUF del mismo autor sin imatrix: https://huggingface.co/mradermacher/Xyntetik-Kvist-14B-GGUF
 - Modelo base original: https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B
-- Perfil del cuantizador en HuggingFace: https://huggingface.co/mradermacher
+- Perfil del cuantizador en Hugging Face: https://huggingface.co/mradermacher
 - Peticiones de modelos a mradermacher: https://huggingface.co/mradermacher/model_requests
 - Ficha en LLM Explorer: https://llm-explorer.com/model/Joakimpalm-Zen%2FXyntetik-Kvist-14B,1yfkWe1jts7EtbuMju9pMs

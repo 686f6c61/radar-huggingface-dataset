@@ -80,7 +80,7 @@ La comparativa más directa es con las cuantizaciones afines del mismo modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.8-27B-VQ-4.8bpw
+- Modelo en Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.8-27B-VQ-4.8bpw
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Qwen3.8-27B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Benchmarks y velocidad de Qwen3.8-27B: https://benchlm.ai/models/qwen3-8-27b

@@ -111,7 +111,7 @@ No se dispone de datos de otros adaptadores de expansión de prompts en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kitt3n/anima-prompt-expander-qwen3.5-4b-lora
+- Modelo en Hugging Face: https://huggingface.co/kitt3n/anima-prompt-expander-qwen3.5-4b-lora
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Revisión concreta del modelo base usada en el entrenamiento: https://huggingface.co/Qwen/Qwen3.5-4B/blob/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md
 - Dataset Anima Prompt Expander v0.4: https://huggingface.co/datasets/kitt3n/anima-prompt-expander-v0.4

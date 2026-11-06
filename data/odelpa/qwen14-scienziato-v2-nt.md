@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen14-scienziato-v2-nt | 14.768 M (base) + LoRA | no disponible | Transparencia de red en tool use | Apache-2.0 | HuggingFace y Ollama |
-| Qwen/Qwen3-14B | 14.768 M | no disponible | Modelo base generalista con razonamiento y tool use | Apache-2.0 | HuggingFace |
-| odelpa/qwen14-scienziato-v2 | 14.768 M (base) + LoRA de identidad | no disponible | Identidad reforzada sobre Qwen3-14B | Apache-2.0 | HuggingFace |
+| qwen14-scienziato-v2-nt | 14.768 M (base) + LoRA | no disponible | Transparencia de red en tool use | Apache-2.0 | Hugging Face y Ollama |
+| Qwen/Qwen3-14B | 14.768 M | no disponible | Modelo base generalista con razonamiento y tool use | Apache-2.0 | Hugging Face |
+| odelpa/qwen14-scienziato-v2 | 14.768 M (base) + LoRA de identidad | no disponible | Identidad reforzada sobre Qwen3-14B | Apache-2.0 | Hugging Face |
 
 La comparativa con alternativas de la misma categoria (adaptadores de seguridad o transparencia para LLM) no esta disponible en la informacion proporcionada. Frente a su base v2, la diferencia medible esta en el recall de conexiones (99,7 frente a 0,0), el pre-anuncio (99,3 frente a 0,0), la identidad (98,0 frente a 76,0) y la reduccion de intentos de fuga (1,11% frente a 19,4%), con una ligera perdida en IFEval (83,5 frente a 83,9).
 
@@ -100,7 +100,7 @@ La comparativa con alternativas de la misma categoria (adaptadores de seguridad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/odelpa/qwen14-scienziato-v2-nt
+- Modelo en Hugging Face: https://huggingface.co/odelpa/qwen14-scienziato-v2-nt
 - Modelo base v2 con identidad: https://huggingface.co/odelpa/qwen14-scienziato-v2
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Version Ollama: https://ollama.com/ollamagdp/qwen14-scienziato-v2-nt

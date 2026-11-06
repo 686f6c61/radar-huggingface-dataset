@@ -96,7 +96,7 @@ No se han publicado en la informacion disponible comparativas con otros modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stealth-org/drama-3
+- Modelo en Hugging Face: https://huggingface.co/Stealth-org/drama-3
 - Licencia: https://huggingface.co/Stealth-org/drama-3/blob/main/LICENSE.md
 - Paper referenciado (arXiv:2610.18010): https://arxiv.org/abs/2610.18010
 - SGLang-Omni: https://sgl-project.github.io/sglang-omni/

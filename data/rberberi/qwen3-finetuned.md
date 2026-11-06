@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`rberberi/qwen3-finetuned` es un ajuste fino (fine-tuning) supervisado del modelo denso `Qwen/Qwen3-0.6B`, publicado por el usuario rberberi en HuggingFace. Se trata de un modelo decoder-only de 596.049.920 parametros (aproximadamente 0,60 mil millones) orientado a generacion de texto y uso conversacional, distribuido con licencia Apache 2.0 y pesos en formato safetensors.
+`rberberi/qwen3-finetuned` es un ajuste fino (fine-tuning) supervisado del modelo denso `Qwen/Qwen3-0.6B`, publicado por el usuario rberberi en Hugging Face. Se trata de un modelo decoder-only de 596.049.920 parametros (aproximadamente 0,60 mil millones) orientado a generacion de texto y uso conversacional, distribuido con licencia Apache 2.0 y pesos en formato safetensors.
 
-El modelo se ha entrenado con el `Trainer` de HuggingFace sobre un conjunto de datos que el autor no especifica ("unknown dataset" en la model card), durante 3 epocas, con una tasa de aprendizaje de 2e-05 y un batch efectivo de 16. La perdida de validacion final registrada es de 1,2141, con un minimo de 1,2006 en la segunda epoca. Todos los hiperparametros de entrenamiento estan documentados, pero no hay informacion sobre la composicion del dataset ni sobre el procedimiento de alineacion (RLHF, DPO, etc.).
+El modelo se ha entrenado con el `Trainer` de Hugging Face sobre un conjunto de datos que el autor no especifica ("unknown dataset" en la model card), durante 3 epocas, con una tasa de aprendizaje de 2e-05 y un batch efectivo de 16. La perdida de validacion final registrada es de 1,2141, con un minimo de 1,2006 en la segunda epoca. Todos los hiperparametros de entrenamiento estan documentados, pero no hay informacion sobre la composicion del dataset ni sobre el procedimiento de alineacion (RLHF, DPO, etc.).
 
 Su relevancia es limitada y muy acotada: al derivar de un modelo base de 0,6 B, es un candidato para experimentacion de bajo coste, despliegue en hardware de gama baja (CPU, GPUs de 4-6 GB) y tareas de prototipado rapido. No obstante, el repositorio no presenta resultados de benchmarks, no declara idiomas soportados y acumula 0 descargas y 0 "likes", por lo que carece de validacion externa.
 
@@ -31,7 +31,7 @@ Su relevancia es limitada y muy acotada: al derivar de un modelo base de 0,6 B, 
 
 La arquitectura corresponde a la del modelo base: un transformer decoder-only denso de la familia Qwen3, con aproximadamente 0,6 B de parametros. No se trata de un modelo MoE ni de una arquitectura hibrida (SSM o similar); la model card no documenta ninguna modificacion estructural sobre el modelo base, por lo que se asume una transferencia directa del backbone con los pesos de las capas de atencion y FFN ajustados.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace durante 3 epocas, con los siguientes hiperparametros: learning rate 2e-05, batch de entrenamiento 2, batch de evaluacion 8, 8 pasos de acumulacion de gradiente (batch efectivo 16), optimizador `ADAMW_TORCH_FUSED` (betas 0,9 y 0,999; epsilon 1e-08), scheduler lineal, semilla 42 y precision mixta nativa (AMP). La evolucion de la perdida fue la siguiente:
+El entrenamiento se realizo con el `Trainer` de Hugging Face durante 3 epocas, con los siguientes hiperparametros: learning rate 2e-05, batch de entrenamiento 2, batch de evaluacion 8, 8 pasos de acumulacion de gradiente (batch efectivo 16), optimizador `ADAMW_TORCH_FUSED` (betas 0,9 y 0,999; epsilon 1e-08), scheduler lineal, semilla 42 y precision mixta nativa (AMP). La evolucion de la perdida fue la siguiente:
 
 | Perdida de entrenamiento | Epoca | Paso | Perdida de validacion |
 |:-------------:|:-----:|:----:|:---------------:|
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de benchmarks |
 |---|---|---|---|---|---|
-| rberberi/qwen3-finetuned | 0,60 B | No indicado (base: 32.768 tokens) | Apache 2.0 | HuggingFace, safetensors | No publicados |
-| Qwen/Qwen3-0.6B (modelo base) | 0,60 B | 32.768 tokens segun documentacion oficial | Apache 2.0 | HuggingFace, safetensors/GGUF | Publicados por Qwen |
-| Qwen/Qwen2.5-0.5B | ~0,49 B | 32.768 tokens segun documentacion oficial | Apache 2.0 | HuggingFace | Publicados por Qwen |
-| meta-llama/Llama-3.2-1B | ~1,24 B | 128.000 tokens segun documentacion oficial | Licencia comunitaria Llama 3.2 (con restricciones) | HuggingFace (acceso con aceptacion) | Publicados por Meta |
+| rberberi/qwen3-finetuned | 0,60 B | No indicado (base: 32.768 tokens) | Apache 2.0 | Hugging Face, safetensors | No publicados |
+| Qwen/Qwen3-0.6B (modelo base) | 0,60 B | 32.768 tokens segun documentacion oficial | Apache 2.0 | Hugging Face, safetensors/GGUF | Publicados por Qwen |
+| Qwen/Qwen2.5-0.5B | ~0,49 B | 32.768 tokens segun documentacion oficial | Apache 2.0 | Hugging Face | Publicados por Qwen |
+| meta-llama/Llama-3.2-1B | ~1,24 B | 128.000 tokens segun documentacion oficial | Licencia comunitaria Llama 3.2 (con restricciones) | Hugging Face (acceso con aceptacion) | Publicados por Meta |
 
 La comparacion con los modelos alternativos se basa en su documentacion publica; el ajuste fino analizado no aporta benchmarks propios, por lo que no es posible establecer una comparacion de calidad objetiva frente al modelo base ni frente a las alternativas.
 
@@ -101,6 +101,6 @@ La comparacion con los modelos alternativos se basa en su documentacion publica;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rberberi/qwen3-finetuned
+- Modelo en Hugging Face: https://huggingface.co/rberberi/qwen3-finetuned
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la informacion disponible.

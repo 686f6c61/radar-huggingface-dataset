@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-mixed-mlx-K50-oMLX es una compilación derivada del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario Jakevin en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una versión podada y cuantizada en precisión mixta del modelo base de Qwen, empaquetada en el formato `qwen4_exp` de safetensors para que pueda cargarse directamente con la definición de modelo incluida en oMLX, sin necesidad de un runtime personalizado. El resultado es un artefacto específicamente orientado a Apple Silicon y a la librería MLX.
+Qwen3.8-Flash-Next-mixed-mlx-K50-oMLX es una compilación derivada del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario Jakevin en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una versión podada y cuantizada en precisión mixta del modelo base de Qwen, empaquetada en el formato `qwen4_exp` de safetensors para que pueda cargarse directamente con la definición de modelo incluida en oMLX, sin necesidad de un runtime personalizado. El resultado es un artefacto específicamente orientado a Apple Silicon y a la librería MLX.
 
 El modelo conserva 91.214.343.235 parámetros totales según los safetensors del repositorio, con una arquitectura MoE (mezcla de expertos) en la que se ha eliminado el 50% de los expertos enrutados de cada capa mediante REAP (router-weighted expert activation pruning). Cada una de las 48 capas mantiene 256 de 512 expertos enrutados, incluida la capa 0, para que todas las capas compartan el mismo recuento de expertos que exige la definición estándar de oMLX.
 
@@ -94,7 +94,7 @@ La diferencia principal frente al modelo base es la poda del 50% de expertos y l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50-oMLX
+- Modelo en Hugging Face: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50-oMLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante hermana sin sufijo oMLX: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50
 - Licencia del modelo (archivo LICENSE en el repositorio): https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50-oMLX/blob/main/LICENSE

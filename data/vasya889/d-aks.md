@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vasya889/d-aks` es un adaptador LoRA de tipo DreamBooth para la familia de modelos de difusion text-to-image Krea 2. Lo desarrolla el usuario de HuggingFace `vasya889` y esta entrenado sobre el modelo base `krea/Krea-2-Raw`, aunque los ejemplos publicados en la model card se han generado con `krea/Krea-2-Turbo` en 8 pasos de inferencia. El repositorio ocupa 0,8 GB y se distribuye con licencia Apache 2.0.
+`vasya889/d-aks` es un adaptador LoRA de tipo DreamBooth para la familia de modelos de difusion text-to-image Krea 2. Lo desarrolla el usuario de Hugging Face `vasya889` y esta entrenado sobre el modelo base `krea/Krea-2-Raw`, aunque los ejemplos publicados en la model card se han generado con `krea/Krea-2-Turbo` en 8 pasos de inferencia. El repositorio ocupa 0,8 GB y se distribuye con licencia Apache 2.0.
 
 El modelo no es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que ensena un concepto visual concreto, invocado mediante el token disparador `Dashustik`. La funcion del LoRA es inyectar ese concepto (objeto, estilo o entidad) en las generaciones del modelo base sin reentrenar los pesos completos, de modo que el usuario pueda reproducirlo de forma consistente en prompt de texto.
 
@@ -27,7 +27,7 @@ Su relevancia practica es la habitual de los LoRA de difusion: personalizacion b
 | Libreria | diffusers |
 | Tamano del repositorio | 0,8 GB |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion / actualizacion | 2026-09-22 / 2026-09-22 (segun HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-22 / 2026-09-22 (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA comparables ni
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/vasya889/d-aks
+- Pagina del modelo en Hugging Face: https://huggingface.co/vasya889/d-aks
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 - Imagenes de ejemplo del repositorio: `sample_0.png`, `sample_1.png`, `sample_2.png` (archivos incluidos en el propio repositorio)

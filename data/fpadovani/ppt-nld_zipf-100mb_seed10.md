@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/ppt-nld_zipf-100mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por el usuario fpadovani y publicado en HuggingFace. Se trata de un transformer decoder-only de tipo GPT-2 con 86.708.736 parámetros (aproximadamente 86,7 millones), orientado a la generación de texto y entrenado mediante aprendizaje supervisado (SFT) con la librería TRL. El repositorio contiene pesos en formato safetensors y es compatible con text-generation-inference y con los endpoints de HuggingFace.
+El modelo `fpadovani/ppt-nld_zipf-100mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por el usuario fpadovani y publicado en Hugging Face. Se trata de un transformer decoder-only de tipo GPT-2 con 86.708.736 parámetros (aproximadamente 86,7 millones), orientado a la generación de texto y entrenado mediante aprendizaje supervisado (SFT) con la librería TRL. El repositorio contiene pesos en formato safetensors y es compatible con text-generation-inference y con los endpoints de Hugging Face.
 
 El identificador del repositorio sugiere un experimento de selección de datos: el sufijo `zipf` apunta a un muestreo con distribución de Zipf y `seed10` a una semilla concreta, mientras que `100mb` coincide con el presupuesto de datos del modelo base. Esta lectura es una interpretación del nombre y no está confirmada en la model card. El modelo base `nld_latn_100mb` pertenece a la familia Goldfish, centrada en modelos monolingües de bajo coste, y el código de idioma apunta al neerlandés (`nld_latn`).
 
@@ -40,7 +40,7 @@ El entrenamiento se llevó a cabo mediante SFT con TRL 0.23.0, sobre Transformer
 - Formato conversacional de un turno: el ejemplo de la model card pasa una lista de mensajes con rol `user`, lo que sugiere un ajuste orientado a respuestas a instrucciones sencillas.
 - Respuesta a preguntas abiertas y generacion de texto libre con `max_new_tokens` configurable.
 - Integracion directa con la libreria `transformers` mediante `pipeline("text-generation", ...)`.
-- Compatibilidad declarada con text-generation-inference y con endpoints alojados de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con text-generation-inference y con endpoints alojados de Hugging Face (`endpoints_compatible`).
 - No hay evidencia de soporte de tool calling, function calling, razonamiento multi-paso, agentes, vision, audio ni modo de pensamiento explícito.
 - Capacidad multilingue no documentada: el unico idioma respaldado por el identificador del modelo base es el neerlandes.
 
@@ -65,22 +65,22 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - En la practica, la inferencia en fp32 con `transformers` se mantiene por debajo de 1 GB de VRAM, incluyendo activaciones y overhead de la libreria.
 - Cabe en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU y en CPU. No requiere A100 ni H100.
 - El repositorio ocupa 1,4 GB, muy por encima del peso de los pesos en fp32, lo que sugiere que incluye estados del optimizador u otros artefactos de entrenamiento.
-- Opciones de despliegue: `transformers` con `pipeline`, text-generation-inference (etiqueta declarada en el repositorio) y endpoints alojados de HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion no publicada por el autor.
+- Opciones de despliegue: `transformers` con `pipeline`, text-generation-inference (etiqueta declarada en el repositorio) y endpoints alojados de Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion no publicada por el autor.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/ppt-nld_zipf-100mb_seed10 | 86,7 M | no disponible | no disponible | safetensors | Publico en HuggingFace, 0 descargas |
-| goldfish-models/nld_latn_100mb (modelo base) | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| fpadovani/ppt-nld_zipf-100mb_seed10 | 86,7 M | no disponible | no disponible | safetensors | Publico en Hugging Face, 0 descargas |
+| goldfish-models/nld_latn_100mb (modelo base) | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
 | GPT-2 small (referencia de la misma familia) | 124 M | 1024 tokens | MIT | safetensors, GGUF y otros | Ampliamente disponible |
 
 La comparacion con GPT-2 small se incluye unicamente como referencia de la misma familia arquitectonica; sus datos corresponden a especificaciones publicas del modelo original de OpenAI y no a una evaluacion de este ajuste fino. No se dispone de informacion suficiente sobre modelos comparables del mismo tamano entrenados especificamente en neerlandes dentro de la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia sin declarar: la model card usa un marcador de posicion (`licence: license`) y los metadatos de HuggingFace indican "no disponible". No hay base juridica clara para uso comercial.
+- Licencia sin declarar: la model card usa un marcador de posicion (`licence: license`) y los metadatos de Hugging Face indican "no disponible". No hay base juridica clara para uso comercial.
 - Sin datos de evaluacion: no existen benchmarks ni mediciones de calidad, por lo que se desconoce el nivel real de rendimiento y de fidelidad linguistica.
 - Riesgo de alucinacion alto y sin cuantificar: al ser un modelo de 86,7 M de parametros, la coherencia en generaciones largas es limitada y no hay evaluaciones que acoten la tasa de error.
 - Longitud de contexto no documentada: no se puede garantizar el comportamiento en conversaciones o documentos largos.
@@ -93,7 +93,7 @@ La comparacion con GPT-2 small se incluye unicamente como referencia de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_zipf-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_zipf-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/r59mzr0i

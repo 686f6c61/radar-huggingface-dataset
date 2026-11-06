@@ -69,5 +69,5 @@ No disponible. No existen modelos comparables en el sentido tradicional, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jamesruoc/paper_027899844_ocr_freeform
+- Repositorio en Hugging Face: https://huggingface.co/jamesruoc/paper_027899844_ocr_freeform
 - No se han encontrado enlaces adicionales en los resultados de búsqueda web proporcionados.

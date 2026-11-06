@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Enfoque | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_mirokai_1rgb_popcorn_real_v0.1 (este) | ACT, chunking de acciones con CVAE y transformer | 51.693.202 | 1 camara RGB + estado | apache-2.0 | HuggingFace Hub, via LeRobot |
+| act_mirokai_1rgb_popcorn_real_v0.1 (este) | ACT, chunking de acciones con CVAE y transformer | 51.693.202 | 1 camara RGB + estado | apache-2.0 | Hugging Face Hub, via LeRobot |
 | ACT original (Zhao et al., 2023) | ACT, implementacion de referencia del articulo | No disponible en esta ficha | Multiples camaras RGB | No disponible en esta ficha | Codigo en el repositorio del proyecto |
 | Diffusion Policy (Chi et al., 2023) | Generacion de acciones por difusion | No disponible en esta ficha | Imagenes RGB (+ estado) | No disponible en esta ficha | Implementacion publica |
 | VQ-BeT / Behavior Transformer | Cuantizacion vectorial de acciones con transformer | No disponible en esta ficha | Imagenes RGB (+ estado) | No disponible en esta ficha | Implementacion publica |
-| SmolVLA (HuggingFace) | VLM pequeno adaptado a control roboticos | No disponible en esta ficha | Vision + instruccion en lenguaje | No disponible en esta ficha | HuggingFace Hub, via LeRobot |
+| SmolVLA (Hugging Face) | VLM pequeno adaptado a control roboticos | No disponible en esta ficha | Vision + instruccion en lenguaje | No disponible en esta ficha | Hugging Face Hub, via LeRobot |
 
 No se dispone de datos verificados de parametros, contexto ni rendimiento de los modelos alternativos en la informacion proporcionada, por lo que la comparacion se limita al enfoque, la modalidad de entrada y la disponibilidad.
 
@@ -94,7 +94,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eruedas/act_mirokai_1rgb_popcorn_real_v0.1
+- Modelo en Hugging Face: https://huggingface.co/eruedas/act_mirokai_1rgb_popcorn_real_v0.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/eruedas/mirokai_1rgb_popcorn_real_v0.1
 - Articulo de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Version en arXiv del articulo: https://arxiv.org/abs/2304.13705

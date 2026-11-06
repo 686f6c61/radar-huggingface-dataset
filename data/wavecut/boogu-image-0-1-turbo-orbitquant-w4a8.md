@@ -115,7 +115,7 @@ Las tres entradas comparten pipeline, scheduler, VAE y MLLM; la comparacion se l
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/WaveCut/Boogu-Image-0.1-Turbo-OrbitQuant-W4A8
+- Ficha en Hugging Face: https://huggingface.co/WaveCut/Boogu-Image-0.1-Turbo-OrbitQuant-W4A8
 - Modelo base: https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo
 - Variante de comparacion SDNQ UINT4: https://huggingface.co/WaveCut/Boogu-Image-0.1-Turbo-SDNQ-uint4-static
 - Repositorio de codigo del pipeline: https://github.com/boogu-project/Boogu-Image

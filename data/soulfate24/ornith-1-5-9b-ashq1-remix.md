@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para comparar con otros modelos de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/Soulfate24/Ornith-1.5-9B-ASHQ1-Remix
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/Soulfate24/Ornith-1.5-9B-ASHQ1-Remix
 - Modelo base Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Suite de cuantizacion ASHQ1: https://huggingface.co/Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite
 - Guia de ejecucion local de Ornith 1.5: https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally

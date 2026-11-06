@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`townhouseadmin/mistress` es un adaptador LoRA de DreamBooth para generación de imágenes a partir de texto, entrenado sobre el modelo base **krea/Krea-2-Raw** y pensado para ejecutarse sobre **Krea 2 Turbo**. No es un modelo de lenguaje: es un ajuste fino de bajo rango sobre un modelo de difusión de la familia Krea 2, publicado en HuggingFace bajo la librería `diffusers` con la etiqueta `template:sd-lora`.
+`townhouseadmin/mistress` es un adaptador LoRA de DreamBooth para generación de imágenes a partir de texto, entrenado sobre el modelo base **krea/Krea-2-Raw** y pensado para ejecutarse sobre **Krea 2 Turbo**. No es un modelo de lenguaje: es un ajuste fino de bajo rango sobre un modelo de difusión de la familia Krea 2, publicado en Hugging Face bajo la librería `diffusers` con la etiqueta `template:sd-lora`.
 
 El adaptador inyecta un concepto visual concreto, invocado mediante el token de activación `vqx woman`. La model card demuestra su funcionamiento con tres ejemplos generados en Turbo a 8 pasos y con `guidance_scale=0.0`, cubriendo estilos muy distintos (cyberpunk cinematográfico, pintura al óleo y macrofotografía de fantasía), lo que sugiere que el LoRA se centra en la identidad del sujeto y no en un estilo fijo.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento, licencia ni especificaciones técnicas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/townhouseadmin/mistress
+- Modelo en Hugging Face: https://huggingface.co/townhouseadmin/mistress
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 - Muestras incluidas en el repositorio: sample_0.png, sample_1.png, sample_2.png (rutas relativas dentro del repositorio)

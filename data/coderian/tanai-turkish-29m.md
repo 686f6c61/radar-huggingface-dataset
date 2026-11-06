@@ -72,10 +72,10 @@ La model card no incluye valores de MMLU, HumanEval, GSM8K, perplexidad ni ningu
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TanAi-turkish-29M | 28,9M | 128 tokens | Turco | no disponible | HuggingFace, codigo personalizado |
+| TanAi-turkish-29M | 28,9M | 128 tokens | Turco | no disponible | Hugging Face, codigo personalizado |
 | GPT-2 small | 124M | 1024 tokens | Ingles | licencia MIT modificada (segun documentacion publica de OpenAI, verificar) | Muy extendida, integrada en transformers |
-| TinyStories-33M | 33M | no disponible (verificar en la model card original) | Ingles | no disponible en la informacion consultada | HuggingFace |
-| SmolLM-135M | 135M | 2048 tokens | Ingles (principalmente) | Apache 2.0 (segun documentacion publica, verificar) | HuggingFace, variantes GGUF |
+| TinyStories-33M | 33M | no disponible (verificar en la model card original) | Ingles | no disponible en la informacion consultada | Hugging Face |
+| SmolLM-135M | 135M | 2048 tokens | Ingles (principalmente) | Apache 2.0 (segun documentacion publica, verificar) | Hugging Face, variantes GGUF |
 
 Los datos de los modelos alternativos proceden de documentación pública general y deben verificarse en sus model cards originales antes de usarse en una decisión técnica. Frente a ellos, TanAi-turkish-29M aporta cobertura de turco y un tamaño mínimo, pero pierde en contexto (128 frente a 1024-2048 tokens), en volumen de entrenamiento y en soporte de ecosistema (sin GGUF, sin cuantizaciones oficiales, sin licencia declarada).
 
@@ -94,7 +94,7 @@ Los datos de los modelos alternativos proceden de documentación pública genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coderian/TanAi-turkish-29M
+- Modelo en Hugging Face: https://huggingface.co/coderian/TanAi-turkish-29M
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ethosoft/Turkish_corpus
 - Paper, blog, repositorio o demo oficiales: no disponibles
 - Resultados de busqueda web relevantes: no disponibles (los enlaces recuperados no guardan relacion con el modelo)

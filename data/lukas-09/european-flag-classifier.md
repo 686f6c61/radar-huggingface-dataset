@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Lukas-09/european-flag-classifier es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario Lukas-09, cuyo propósito declarado —según su nombre— es identificar banderas europeas en imágenes. El repositorio ocupa aproximadamente 0,1 GB y se publicó bajo licencia Apache 2.0. La model card asociada contiene únicamente el encabezado YAML con la licencia, sin secciones de descripción, arquitectura, datos de entrenamiento, métricas o instrucciones de uso.
+Lukas-09/european-flag-classifier es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario Lukas-09, cuyo propósito declarado —según su nombre— es identificar banderas europeas en imágenes. El repositorio ocupa aproximadamente 0,1 GB y se publicó bajo licencia Apache 2.0. La model card asociada contiene únicamente el encabezado YAML con la licencia, sin secciones de descripción, arquitectura, datos de entrenamiento, métricas o instrucciones de uso.
 
-Se trata, por tanto, de un artefacto comunitario sin documentación técnica publicada. El repositorio no incluye etiqueta de pipeline (por lo que HuggingFace no lo clasifica automáticamente como `image-classification`), no declara idiomas soportados y no registra descargas ni interacciones en el momento de la consulta. El tamaño de 0,1 GB es compatible con pesos de un clasificador de visión de pequeño o medio tamaño, aunque este dato no permite determinar la arquitectura concreta.
+Se trata, por tanto, de un artefacto comunitario sin documentación técnica publicada. El repositorio no incluye etiqueta de pipeline (por lo que Hugging Face no lo clasifica automáticamente como `image-classification`), no declara idiomas soportados y no registra descargas ni interacciones en el momento de la consulta. El tamaño de 0,1 GB es compatible con pesos de un clasificador de visión de pequeño o medio tamaño, aunque este dato no permite determinar la arquitectura concreta.
 
 Su relevancia es limitada y acotada: puede ser útil como punto de partida para tareas de reconocimiento de banderas, etiquetado automático de imágenes o experimentos de transferencia, siempre que el usuario asuma el trabajo de validación que el autor no ha documentado. No debe considerarse un componente listo para producción sin una evaluación previa independiente.
 
@@ -74,7 +74,7 @@ No hay datos publicados de este modelo que permitan una comparacion cuantitativa
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lukas-09/european-flag-classifier | no disponible | no disponible | no publicado | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| Lukas-09/european-flag-classifier | no disponible | no disponible | no publicado | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | ViT-base (referencia generica) | ~86 M (cifra publica de la arquitectura base) | imagenes de 224x224 px tipicamente | no evaluado en banderas europeas | segun checkpoint | ampliamente disponible |
 | ResNet-50 (referencia generica) | ~25,6 M (cifra publica de la arquitectura base) | imagenes de 224x224 px tipicamente | no evaluado en banderas europeas | segun checkpoint | ampliamente disponible |
 | CLIP ViT-B/32 en modo zero-shot (referencia generica) | ~151 M (cifra publica de la arquitectura base) | imagenes con prompt de texto | no evaluado en banderas europeas | segun checkpoint | ampliamente disponible |
@@ -95,7 +95,7 @@ No se dispone de una comparacion con otros clasificadores de banderas especifico
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lukas-09/european-flag-classifier
+- Hugging Face: https://huggingface.co/Lukas-09/european-flag-classifier
 - Model card: solo contiene el encabezado YAML con `license: apache-2.0`; no hay secciones adicionales.
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Los resultados de la busqueda web realizada no contienen informacion tecnica relevante sobre este modelo ni enlaces utilizables, por lo que se omiten.

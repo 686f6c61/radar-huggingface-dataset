@@ -25,7 +25,7 @@ La licencia es Apache 2.0, lo que facilita el uso comercial sin restricciones si
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo base Hastagaras/Qwen3.5-9B-Casual-Thinker en la informacion proporcionada. Por la nomenclatura y el tamano (8.953.803.264 parametros), se trata presumiblemente de un transformer denso de la familia Qwen3.5, pero no se confirma si emplea atencion lineal, decodificacion especulativa u otras innovaciones. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-La unica informacion tecnica concreta es la derivada del proceso de cuantizacion: el autor indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato HuggingFace convertidos a GGUF. La presencia de ficheros mmproj (multi-modal supplement) en Q8_0 y f16 sugiere que el modelo base incorpora un proyector multimodal, probablemente para vision, aunque no se detalla su funcionamiento ni el encoder visual asociado.
+La unica informacion tecnica concreta es la derivada del proceso de cuantizacion: el autor indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato Hugging Face convertidos a GGUF. La presencia de ficheros mmproj (multi-modal supplement) en Q8_0 y f16 sugiere que el modelo base incorpora un proyector multimodal, probablemente para vision, aunque no se detalla su funcionamiento ni el encoder visual asociado.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas del model
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Qwen3.5-9B-Casual-Thinker-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Qwen3.5-9B-Casual-Thinker-GGUF
 - Modelo base: https://huggingface.co/Hastagaras/Qwen3.5-9B-Casual-Thinker
 - Cuantizaciones imatrix (weighted): https://huggingface.co/mradermacher/Qwen3.5-9B-Casual-Thinker-i1-GGUF
 - Pagina de resumen del autor: https://hf.tst.eu/model#Qwen3.5-9B-Casual-Thinker-GGUF

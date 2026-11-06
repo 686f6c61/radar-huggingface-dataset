@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B (base) | ~9B | No disponible | MIT (según web) | bf16, GGUF, MLX | HuggingFace |
-| Ornith-1.5-9B-MLX-6bit | ~9B | No | MIT | MLX 6-bit | HuggingFace |
-| Qwen2.5-7B (dense) | 7.6B | 128k | Apache 2.0 | bf16, GGUF | HuggingFace |
-| Llama 3.1 8B | 8B | 128k | Llama 3.1 License | bf16, GGUF | HuggingFace |
+| Ornith-1.5-9B (base) | ~9B | No disponible | MIT (según web) | bf16, GGUF, MLX | Hugging Face |
+| Ornith-1.5-9B-MLX-6bit | ~9B | No | MIT | MLX 6-bit | Hugging Face |
+| Qwen2.5-7B (dense) | 7.6B | 128k | Apache 2.0 | bf16, GGUF | Hugging Face |
+| Llama 3.1 8B | 8B | 128k | Llama 3.1 License | bf16, GGUF | Hugging Face |
 
 La comparativa es limitada porque no hay datos de rendimiento publicados para este modelo. Los modelos Qwen2.5-7B y Llama 3.1 8B son alternativas densas de tamaño similar, pero no incluyen capacidades multimodales ni la característica «uncensored».
 
@@ -77,8 +77,8 @@ La comparativa es limitada porque no hay datos de rendimiento publicados para es
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/keXjos/Ornith-1.5-9B-uncensored-mlx-5Bit)
-- [Modelo base en HuggingFace](https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/keXjos/Ornith-1.5-9B-uncensored-mlx-5Bit)
+- [Modelo base en Hugging Face](https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored)
 - [Página oficial de Ornith AI](https://ornith.ai/)
 - [Blog de Ornith-1.5](https://ornith.ai/ornith_1_5.html)
 - [Ornith-1.5-9B-MLX-6bit (referencia)](https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-6bit)

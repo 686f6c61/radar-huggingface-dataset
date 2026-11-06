@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Expedient CTRL-2B | 2B | no disponible | Adaptador QLoRA sobre MiniCPM5-2B, RAG de dominio | Apache-2.0 (adaptador) | HuggingFace |
-| Expedient CTRL-0.6B | 0,6B | no disponible | Adaptador QLoRA sobre Qwen3-0.6B, RAG de dominio, navegador | Apache-2.0 (adaptador) | HuggingFace + demo |
-| Qwen3-0.6B (base) | 0,6B | no disponible | Modelo generalista | Apache-2.0 | HuggingFace |
-| MiniCPM5-2B (base) | 2B | no disponible | Modelo generalista | no disponible | HuggingFace |
+| Expedient CTRL-2B | 2B | no disponible | Adaptador QLoRA sobre MiniCPM5-2B, RAG de dominio | Apache-2.0 (adaptador) | Hugging Face |
+| Expedient CTRL-0.6B | 0,6B | no disponible | Adaptador QLoRA sobre Qwen3-0.6B, RAG de dominio, navegador | Apache-2.0 (adaptador) | Hugging Face + demo |
+| Qwen3-0.6B (base) | 0,6B | no disponible | Modelo generalista | Apache-2.0 | Hugging Face |
+| MiniCPM5-2B (base) | 2B | no disponible | Modelo generalista | no disponible | Hugging Face |
 
 La comparacion relevante es contra sus propias bases: CTRL-0.6B no supera a Qwen3-0.6B en recall cerrado (lo iguala), y su ventaja se limita al formato de respuesta y al comportamiento de abstención en el dominio de Expedient. Para uso generalista fuera de ese dominio, las bases son la opcion adecuada.
 

@@ -6,7 +6,7 @@ El modelo `anonimkaq4/manga-page-element-segmentation` es un modelo de segmentac
 
 La relevancia del modelo está en su aplicación directa en pipelines de digitalización, traducción automática y análisis de cómics: la segmentación de paneles permite establecer el orden de lectura, la detección de bocadillos aísla las regiones que deben pasar por OCR y la detección de personajes habilita recortes y análisis de composición. Se distribuye como pesos en formato safetensors acompañados de los ficheros YAML de arquitectura YOLO11m/YOLO11s, y se carga a través de la librería Ultralytics.
 
-El checkpoint recomendado se entrenó sobre un conjunto sintético combinado con anotaciones MangaSeg derivadas de Manga109-s, y reporta un Mask mAP50 de 0,8689 y un Mask mAP50-95 de 0,6620 sobre 784 páginas reservadas. El repositorio ocupa 0,5 GB y acumula 878 descargas en HuggingFace.
+El checkpoint recomendado se entrenó sobre un conjunto sintético combinado con anotaciones MangaSeg derivadas de Manga109-s, y reporta un Mask mAP50 de 0,8689 y un Mask mAP50-95 de 0,6620 sobre 784 páginas reservadas. El repositorio ocupa 0,5 GB y acumula 878 descargas en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ No se han publicado comparativas con otros modelos de segmentación de manga en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonimkaq4/manga-page-element-segmentation
+- Modelo en Hugging Face: https://huggingface.co/anonimkaq4/manga-page-element-segmentation
 - Dataset sintético de entrenamiento: https://huggingface.co/datasets/anonimkaq4/synthetic-manga-page-segmentation-sharded
 - Dataset Manga109-s: https://huggingface.co/datasets/hal-utokyo/Manga109-s
 - Dataset MangaSegmentation: https://huggingface.co/datasets/MS92/MangaSegmentation

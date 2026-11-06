@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CAWM (acrónimo no expandido en la información disponible) es un modelo de mundo (*world model*) orientado a robótica, publicado en HuggingFace por el usuario `aabyaneh` bajo licencia MIT. El modelo incorpora capacidades táctiles (*tactile*) y utiliza un esquema de difusión, según los tags del repositorio. Está etiquetado con el pipeline `robotics`, lo que lo sitúa en la categoría de modelos diseñados para simular dinámicas del entorno físico y apoyar tareas de planificación o control robótico.
+CAWM (acrónimo no expandido en la información disponible) es un modelo de mundo (*world model*) orientado a robótica, publicado en Hugging Face por el usuario `aabyaneh` bajo licencia MIT. El modelo incorpora capacidades táctiles (*tactile*) y utiliza un esquema de difusión, según los tags del repositorio. Está etiquetado con el pipeline `robotics`, lo que lo sitúa en la categoría de modelos diseñados para simular dinámicas del entorno físico y apoyar tareas de planificación o control robótico.
 
 El repositorio tiene un tamaño de 74,2 GB, lo que sugiere pesos de gran magnitud, probablemente un modelo de difusión con un backbone de parámetros elevados o múltiples componentes (codificadores, decodificadores, módulos táctiles). La fecha de creación es el 5 de agosto de 2026 y la última actualización el 4 de noviembre de 2026.
 
-El acceso está restringido (*gated*): es necesario aceptar condiciones en HuggingFace para descargar los pesos. No se han publicado descargas ni *likes*, y no hay información pública sobre arquitectura detallada, número de parámetros, contexto o idiomas soportados.
+El acceso está restringido (*gated*): es necesario aceptar condiciones en Hugging Face para descargar los pesos. No se han publicado descargas ni *likes*, y no hay información pública sobre arquitectura detallada, número de parámetros, contexto o idiomas soportados.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es *gated*; es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede retrasar la evaluación.
+- Acceso restringido: el repositorio es *gated*; es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede retrasar la evaluación.
 - Falta de documentación: no hay información pública sobre arquitectura, parámetros, contexto ni datos de entrenamiento, lo que dificulta evaluar su idoneidad para producción.
 - Sin benchmarks: no se han publicado métricas que permitan comparar su rendimiento con alternativas, por lo que su calidad es desconocida.
 - Tamaño elevado: 74,2 GB de pesos implican requisitos de hardware considerables y costes de inferencia altos.
@@ -77,5 +77,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aabyaneh/cawm
+- Hugging Face: https://huggingface.co/aabyaneh/cawm
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

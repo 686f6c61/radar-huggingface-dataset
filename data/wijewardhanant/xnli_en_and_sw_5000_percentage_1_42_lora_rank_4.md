@@ -25,7 +25,7 @@ Es relevante unicamente como material de partida reproducible para quienes inves
 
 El artefacto es un adaptador de bajo rango (LoRA, rank 4 segun el nombre) aplicado sobre un transformer decoder-only de 8.030 millones de parametros. No se especifica sobre que modulos se aplica el adaptador (attention, MLP o ambos), ni el valor de alpha, ni el dropout, ni si se entreno en precision fp16, bf16 o fp32. La unica referencia de software es PEFT 0.17.1, recogida al final de la model card.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplico RLHF, DPO u otra etapa de alineamiento. El nombre del repositorio permite inferir de forma no confirmada que el conjunto de datos es XNLI (pares de frases con etiquetas de implicacion, neutralidad y contradiccion) restringido a ingles y suajili, con unos 5.000 ejemplos y un submuestreo del 1,42 %. La etiqueta arxiv:1910.09700 que aparece en los tags corresponde al articulo del calculador de impacto de Machine Learning citado en la plantilla de HuggingFace, no a un articulo sobre este modelo, por lo que no debe interpretarse como referencia metodologica.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplico RLHF, DPO u otra etapa de alineamiento. El nombre del repositorio permite inferir de forma no confirmada que el conjunto de datos es XNLI (pares de frases con etiquetas de implicacion, neutralidad y contradiccion) restringido a ingles y suajili, con unos 5.000 ejemplos y un submuestreo del 1,42 %. La etiqueta arxiv:1910.09700 que aparece en los tags corresponde al articulo del calculador de impacto de Machine Learning citado en la plantilla de Hugging Face, no a un articulo sobre este modelo, por lo que no debe interpretarse como referencia metodologica.
 
 ## Capacidades
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador LoRA rank 4 | 8.030 millones (base) mas adaptador no medido | 128.000 tokens (heredado) | No publicado | No disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B (modelo base sin adaptar) | 8.030 millones | 128.000 tokens | Publicado por Meta en su model card | Licencia Llama 3.1 | HuggingFace, ampliamente usado |
+| Este adaptador LoRA rank 4 | 8.030 millones (base) mas adaptador no medido | 128.000 tokens (heredado) | No publicado | No disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B (modelo base sin adaptar) | 8.030 millones | 128.000 tokens | Publicado por Meta en su model card | Licencia Llama 3.1 | Hugging Face, ampliamente usado |
 | Ajuste fino completo sobre Llama 3.1 8B (hipotetico) | 8.030 millones entrenables | 128.000 tokens | Depende del dataset | Depende de la licencia base | No disponible en este repositorio |
 
 No se han identificado otros adaptadores publicos equivalentes para XNLI en ingles y suajili dentro de la informacion disponible, por lo que la comparativa se limita al modelo base y a la alternativa de ajuste completo.
@@ -84,8 +84,8 @@ No se han identificado otros adaptadores publicos equivalentes para XNLI en ingl
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_42_LoRA_rank_4
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_42_LoRA_rank_4
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Referencia citada en los tags (articulo del calculador de impacto, parte de la plantilla): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de Machine Learning mencionado en la plantilla: https://mlco2.github.io/impact
 

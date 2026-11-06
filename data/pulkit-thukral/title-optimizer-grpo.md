@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`title-optimizer-grpo` es un adaptador LoRA sobre el modelo base Qwen/Qwen3-1.7B, desarrollado por el usuario de HuggingFace pulkit-thukral, especializado en la generacion de titulos para anuncios de Airbnb. El adaptador resuelve un problema concreto: producir titulos atractivos que solo mencionen caracteristicas que el anuncio declara explicitamente, evitando la invencion de servicios o comodidades. Forma parte del proyecto listing-title-optimizer, una cadena de entrenamiento SFT → DPO → GRPO sobre datos publicos de Inside Airbnb.
+`title-optimizer-grpo` es un adaptador LoRA sobre el modelo base Qwen/Qwen3-1.7B, desarrollado por el usuario de Hugging Face pulkit-thukral, especializado en la generacion de titulos para anuncios de Airbnb. El adaptador resuelve un problema concreto: producir titulos atractivos que solo mencionen caracteristicas que el anuncio declara explicitamente, evitando la invencion de servicios o comodidades. Forma parte del proyecto listing-title-optimizer, una cadena de entrenamiento SFT → DPO → GRPO sobre datos publicos de Inside Airbnb.
 
 El adaptador se entreno con GRPO (Group Relative Policy Optimization) durante 500 pasos sobre 4.000 anuncios, utilizando unicamente recompensas programaticas: longitud (peso 1.0), reglas de estilo de Airbnb (0.5) y ausencia de afirmaciones no respaldadas por el anuncio (2.0). El resultado es un modelo altamente especializado, de proposito muy acotado, que no debe confundirse con un modelo de proposito general.
 
@@ -75,9 +75,9 @@ El autor advierte que, sobre 50 pares etiquetados manualmente, el juez coincidio
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| title-optimizer-grpo (este) | 1.700 M (base) + LoRA | no disponible | Generacion de titulos Airbnb con GRPO | Apache 2.0 | HuggingFace |
-| title-optimizer-sft | 1.700 M (base) + LoRA | no disponible | Primera fase de la cadena, SFT | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B (base) | 1.700 M | no disponible en la informacion proporcionada | Modelo generalista | Apache 2.0 | HuggingFace |
+| title-optimizer-grpo (este) | 1.700 M (base) + LoRA | no disponible | Generacion de titulos Airbnb con GRPO | Apache 2.0 | Hugging Face |
+| title-optimizer-sft | 1.700 M (base) + LoRA | no disponible | Primera fase de la cadena, SFT | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B (base) | 1.700 M | no disponible en la informacion proporcionada | Modelo generalista | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores especializados en generacion de titulos en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores especial
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/pulkit-thukral/title-optimizer-grpo
+- Hugging Face del adaptador: https://huggingface.co/pulkit-thukral/title-optimizer-grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Adaptador SFT previo: https://huggingface.co/pulkit-thukral/title-optimizer-sft
 - Dataset de entrenamiento: https://huggingface.co/datasets/pulkit-thukral/listing-title-optimizer

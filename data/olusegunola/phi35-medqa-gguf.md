@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `olusegunola/phi35-medqa-gguf` es un repositorio publicado en HuggingFace que, por su nombre y etiquetas, parece ser una versión cuantizada en formato GGUF de un modelo de la familia Phi-3.5, orientado a tareas de respuesta a preguntas médicas (medQA). Sin embargo, la información pública disponible es muy limitada: no se especifica la arquitectura exacta, el autor no proporciona detalles de entrenamiento, licencia ni idiomas soportados. El repositorio contiene 48.8 GB de datos, lo que sugiere la inclusión de múltiples archivos de cuantización GGUF para diferentes niveles de precisión. El modelo acumula 213 descargas y ninguna valoración, lo que indica un uso aún reducido.
+El modelo `olusegunola/phi35-medqa-gguf` es un repositorio publicado en Hugging Face que, por su nombre y etiquetas, parece ser una versión cuantizada en formato GGUF de un modelo de la familia Phi-3.5, orientado a tareas de respuesta a preguntas médicas (medQA). Sin embargo, la información pública disponible es muy limitada: no se especifica la arquitectura exacta, el autor no proporciona detalles de entrenamiento, licencia ni idiomas soportados. El repositorio contiene 48.8 GB de datos, lo que sugiere la inclusión de múltiples archivos de cuantización GGUF para diferentes niveles de precisión. El modelo acumula 213 descargas y ninguna valoración, lo que indica un uso aún reducido.
 
 A pesar de la falta de documentación, el tamaño de parámetros (3.821.079.648, aproximadamente 3.8B) y el nombre sugieren que podría tratarse de una adaptación del modelo Phi-3.5-mini, conocido por su buen rendimiento en tareas de razonamiento y comprensión con un contexto de hasta 128K tokens. No obstante, sin confirmación oficial, cualquier afirmación sobre sus capacidades debe tomarse con cautela.
 
@@ -62,4 +62,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/olusegunola/phi35-medqa-gguf
+- Repositorio Hugging Face: https://huggingface.co/olusegunola/phi35-medqa-gguf

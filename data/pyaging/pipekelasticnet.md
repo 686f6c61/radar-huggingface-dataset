@@ -40,7 +40,7 @@ El modelo es una regresión *elastic net*, que combina regularización L1 y L2 s
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original (Pipek & Csabai, 2023) reporta métricas de rendimiento como el error absoluto medio (MAE) y la correlación entre edad cronológica y epigenética, pero dichos valores no se incluyen en la model card de HuggingFace. Se recomienda consultar la publicación para obtener cifras concretas.
+No se han publicado resultados de benchmarks en la información disponible. El artículo original (Pipek & Csabai, 2023) reporta métricas de rendimiento como el error absoluto medio (MAE) y la correlación entre edad cronológica y epigenética, pero dichos valores no se incluyen en la model card de Hugging Face. Se recomienda consultar la publicación para obtener cifras concretas.
 
 ## Requisitos de hardware
 
@@ -75,6 +75,6 @@ Nota: los datos de Horvath y Hannum son de conocimiento general, no de la model 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/pyaging/pipekelasticnet](https://huggingface.co/pyaging/pipekelasticnet)
+- Modelo en Hugging Face: [https://huggingface.co/pyaging/pipekelasticnet](https://huggingface.co/pyaging/pipekelasticnet)
 - Publicación original: Pipek, O. A., & Csabai, I. (2023). "A revised multi-tissue, multi-platform epigenetic clock model for methylation array data." *Journal of Mathematical Chemistry*, 61, 376–388. DOI: [10.1007/s10910-022-01381-4](https://doi.org/10.1007/s10910-022-01381-4)
 - Documentación de pyaging: [https://pyaging.readthedocs.io](https://pyaging.readthedocs.io)

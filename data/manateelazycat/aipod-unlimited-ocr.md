@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIPod-Unlimited-OCR es un modelo de visión-lenguaje publicado por el usuario manateelazycat en HuggingFace, orientado a tareas de reconocimiento óptico de caracteres (OCR) en el contexto de un dispositivo denominado "AI Pod". El repositorio tiene un tamaño de 16,8 GB y los pesos están en formato safetensors, con pipeline declarado `image-text-to-text`, lo que indica que acepta imágenes como entrada y genera texto como salida. La licencia declarada es MIT.
+AIPod-Unlimited-OCR es un modelo de visión-lenguaje publicado por el usuario manateelazycat en Hugging Face, orientado a tareas de reconocimiento óptico de caracteres (OCR) en el contexto de un dispositivo denominado "AI Pod". El repositorio tiene un tamaño de 16,8 GB y los pesos están en formato safetensors, con pipeline declarado `image-text-to-text`, lo que indica que acepta imágenes como entrada y genera texto como salida. La licencia declarada es MIT.
 
 La model card es extremadamente escasa: se limita a indicar que se trata de un "fixed upstream model" (es decir, una corrección o adaptación de un modelo anterior) y que el repositorio incluye archivos de runtime para Jetson AGX Orin y Jetson Thor, además de un controlador y un paquete LPK mínimo. No se especifican arquitectura, número de parámetros, longitud de contexto ni composición del entrenamiento.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe leerse con cautela: la información pública disponib
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El pipeline `image-text-to-text` sugiere un modelo multimodal con codificador visual y decodificador de texto, pero no se confirma el tipo de transformer, si emplea atención lineal, mezcla de expertos u otra variante. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El pipeline `image-text-to-text` sugiere un modelo multimodal con codificador visual y decodificador de texto, pero no se confirma el tipo de transformer, si emplea atención lineal, mezcla de expertos u otra variante. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
 El único detalle técnico relevante es que el repositorio incluye archivos de runtime "model-free" para Jetson AGX Orin y Jetson Thor, junto con un controlador y un LPK (presumiblemente un paquete de instalación para el dispositivo AI Pod). Esto indica que el autor ha empaquetado el modelo para su despliegue en hardware embebido, pero no aporta información sobre el proceso de entrenamiento.
 
@@ -74,5 +74,5 @@ No disponible. La información pública no permite identificar la arquitectura n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manateelazycat/AIPod-Unlimited-OCR
+- Hugging Face: https://huggingface.co/manateelazycat/AIPod-Unlimited-OCR
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

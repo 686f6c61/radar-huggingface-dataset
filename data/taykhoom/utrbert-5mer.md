@@ -23,7 +23,7 @@ El modelo tokeniza las secuencias de ARN (o ADN, tras convertir T a U) en solapa
 
 El modelo sigue la arquitectura BERT-base original con normalización post-LayerNorm (eps=1e-12) y embeddings posicionales absolutos aprendidos. La tokenización es específica de dominio: las secuencias de ARN se convierten de T a U y se dividen en 5-meros solapados con stride 1, de modo que una secuencia de longitud L produce L-4 tokens, a los que se añaden los tokens especiales [CLS] y [SEP]. El preentrenamiento se realizó con MLM sobre secuencias de 3' UTR humanas, utilizando el checkpoint oficial `5-new-12w-0` publicado en figshare. No se menciona el uso de RLHF ni DPO; es un modelo puramente de representación.
 
-La implementación en HuggingFace utiliza un backend de código compartido (`BERT-updated`) mediante `auto_map` y un tokenizador personalizado almacenado en el repositorio. Se requiere `trust_remote_code=True` para cargar el modelo. El port incluye backends de atención alternativos: SDPA (PyTorch 2.0+) y Flash Attention 2, además del eager original. La verificación de paridad con los pesos originales muestra diferencias máximas en float32 de 1.24e-5 en hidden states y 6.72e-5 en logits (eager), y 8.58e-6 / 7.34e-5 con SDPA.
+La implementación en Hugging Face utiliza un backend de código compartido (`BERT-updated`) mediante `auto_map` y un tokenizador personalizado almacenado en el repositorio. Se requiere `trust_remote_code=True` para cargar el modelo. El port incluye backends de atención alternativos: SDPA (PyTorch 2.0+) y Flash Attention 2, además del eager original. La verificación de paridad con los pesos originales muestra diferencias máximas en float32 de 1.24e-5 en hidden states y 6.72e-5 en logits (eager), y 8.58e-6 / 7.34e-5 con SDPA.
 
 ## Capacidades
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tokenizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UTRBERT-5mer | 88 M | 512 tokens | 5-mer solapado | CC-BY-4.0 | HuggingFace |
-| UTRBERT-3mer | no disponible | 512 tokens | 3-mer solapado | CC-BY-4.0 | HuggingFace |
-| UTRBERT-4mer | no disponible | 512 tokens | 4-mer solapado | CC-BY-4.0 | HuggingFace |
-| UTRBERT-6mer | no disponible | 512 tokens | 6-mer solapado | CC-BY-4.0 | HuggingFace |
+| UTRBERT-5mer | 88 M | 512 tokens | 5-mer solapado | CC-BY-4.0 | Hugging Face |
+| UTRBERT-3mer | no disponible | 512 tokens | 3-mer solapado | CC-BY-4.0 | Hugging Face |
+| UTRBERT-4mer | no disponible | 512 tokens | 4-mer solapado | CC-BY-4.0 | Hugging Face |
+| UTRBERT-6mer | no disponible | 512 tokens | 6-mer solapado | CC-BY-4.0 | Hugging Face |
 
 Los modelos UTRBERT comparten la misma arquitectura base y se diferencian en el tamano del k-mer y el vocabulario resultante. No se dispone de datos de rendimiento comparativo entre variantes en la informacion proporcionada. Otros modelos de ARN como DNABERT o Nucleotide Transformer no se incluyen por falta de datos comparativos directos.
 
@@ -77,7 +77,7 @@ Los modelos UTRBERT comparten la misma arquitectura base y se diferencian en el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/UTRBERT-5mer
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/UTRBERT-5mer
 - Coleccion UTRBERT: https://huggingface.co/collections/Taykhoom/utrbert
 - Repositorio original 3UTRBERT: https://github.com/yangyn533/3UTRBERT
 - Backend de codigo compartido: https://huggingface.co/Taykhoom/BERT-updated

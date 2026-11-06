@@ -51,9 +51,9 @@ No disponible. Al no ser un modelo entrenado, no existe comparación con otras a
 - No hay soporte técnico ni mantenimiento del repositorio (última actualización en 2026-08-22).
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/ctchen5674/paper_001711125_efficient_attention
+- Repositorio de Hugging Face: https://huggingface.co/ctchen5674/paper_001711125_efficient_attention
 - Paper en arXiv: https://arxiv.org/abs/1812.01243
 - Paper en IEEE: https://ieeexplore.ieee.org/document/9423033
-- Página del paper en HuggingFace: https://huggingface.co/papers/1812.01243
+- Página del paper en Hugging Face: https://huggingface.co/papers/1812.01243
 - Repositorio de código con implementaciones de atención eficiente: https://github.com/hkunlp/efficient-attention
 - Versión en WACV 2021: https://openaccess.thecvf.com/content/WACV2021/html/Shen_Efficient_Attention_Attention_With_Linear_Complexities_WACV_2021_paper.html

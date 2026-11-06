@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/Ishowbackup/gemma-4-31B-it-uncensored-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/Ishowbackup/gemma-4-31B-it-uncensored-GGUF)
 - [Modelo base abliterado (bf16)](https://huggingface.co/TrevorJS/gemma-4-31B-it-uncensored)
 - [Modelo original de Google](https://huggingface.co/google/gemma-4-31B-it)
 - [Repositorio de abliteración de TrevorJS](https://github.com/TrevorS/gemma-4-abliteration)

@@ -99,7 +99,7 @@ Comparativas con alternativas de otros fabricantes (por ejemplo, otros modelos M
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Blackfrost-AI/MiMo-V2.6-Pro-MOPD-Derisking-Intervention-Runtime
+- Repositorio en Hugging Face: https://huggingface.co/Blackfrost-AI/MiMo-V2.6-Pro-MOPD-Derisking-Intervention-Runtime
 - Repositorio en GitHub: https://github.com/Blackfrost-AI/MiMo-V2.6-Pro-MOPD-Derisking-Intervention-Runtime/tree/main
 - Variante para MiMo-V2.6-Flash: https://huggingface.co/Blackfrost-AI/MiMo-V2.6-Flash-MOPD-Derisking-Intervention-Runtime
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-MOPD

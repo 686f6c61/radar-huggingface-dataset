@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTM-Pi-RoboMME-1x-40k-DreamDojo es un checkpoint de política robótica publicado por el usuario maxenceSUN en HuggingFace. Se trata del estado del optimizador en el paso 40.000 de un entrenamiento sobre el conjunto RoboMME-1x (16 tareas × 100 episodios), que combina una política PI0.5 con memoria visual LAM de DreamDojo. El modelo está pensado para control robótico de manipulación con memoria a largo plazo, un área donde las políticas visomotoras convencionales fallan al carecer de estado persistente entre episodios o secuencias largas.
+LTM-Pi-RoboMME-1x-40k-DreamDojo es un checkpoint de política robótica publicado por el usuario maxenceSUN en Hugging Face. Se trata del estado del optimizador en el paso 40.000 de un entrenamiento sobre el conjunto RoboMME-1x (16 tareas × 100 episodios), que combina una política PI0.5 con memoria visual LAM de DreamDojo. El modelo está pensado para control robótico de manipulación con memoria a largo plazo, un área donde las políticas visomotoras convencionales fallan al carecer de estado persistente entre episodios o secuencias largas.
 
 El checkpoint se distribuye en formato Orbax/JAX original, sin conversión de tensores, e incluye los pesos del modelo, las estadísticas de normalización de acciones y estados, y metadatos de procedencia con sumas de verificación. No incluye el estado del optimizador ni los pesos del codificador visual, que son dependencias separadas. El repositorio ocupa 12,4 GB y no registra descargas ni interacciones en el momento de la consulta.
 
@@ -69,8 +69,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parámetros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTM-Pi-RoboMME-1x-40k-DreamDojo | no disponible | Horizonte de acción 50; memoria 1.410 transiciones | 7,5% éxito en RoboMME OOD v1.2 | no disponible | HuggingFace (0 descargas) |
-| LTM-Pi-RoboMME-10x-120k-DreamDojo | no disponible | no disponible | no disponible en la información | no disponible | HuggingFace |
+| LTM-Pi-RoboMME-1x-40k-DreamDojo | no disponible | Horizonte de acción 50; memoria 1.410 transiciones | 7,5% éxito en RoboMME OOD v1.2 | no disponible | Hugging Face (0 descargas) |
+| LTM-Pi-RoboMME-10x-120k-DreamDojo | no disponible | no disponible | no disponible en la información | no disponible | Hugging Face |
 | Otras políticas PI0.5 sin memoria LAM | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita al checkpoint hermano del mismo autor; no se dispone de datos de rendimiento ni especificaciones de alternativas en la información proporcionada.
@@ -90,6 +90,6 @@ La comparativa se limita al checkpoint hermano del mismo autor; no se dispone de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxenceSUN/LTM-Pi-RoboMME-1x-40k-DreamDojo
+- Hugging Face: https://huggingface.co/maxenceSUN/LTM-Pi-RoboMME-1x-40k-DreamDojo
 - Modelo relacionado: https://huggingface.co/maxenceSUN/LTM-Pi-RoboMME-10x-120k-DreamDojo
 - Paper: https://arxiv.org/abs/2610.21362

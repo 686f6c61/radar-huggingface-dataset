@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen_2.5_7b-control_numbers-collapse_p10-run2-gen4` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Por el nombre del repositorio y por sus etiquetas (`unsloth`, `trl`), se trata de un artefacto de investigación: un entrenamiento supervisado realizado con las librerías Unsloth y TRL sobre el modelo Instruct de Qwen2.5 de 7 mil millones de parametros. El sufijo `control_numbers-collapse_p10-run2-gen4` sugiere un experimento de control dentro de una bateria de pruebas sobre colapso numerico, con una configuracion `p10` y una segunda ejecucion (`run2`) de la cuarta generacion (`gen4`); la model card no documenta el objetivo, el dataset ni los hiperparametros.
+`qwen_2.5_7b-control_numbers-collapse_p10-run2-gen4` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Por el nombre del repositorio y por sus etiquetas (`unsloth`, `trl`), se trata de un artefacto de investigación: un entrenamiento supervisado realizado con las librerías Unsloth y TRL sobre el modelo Instruct de Qwen2.5 de 7 mil millones de parametros. El sufijo `control_numbers-collapse_p10-run2-gen4` sugiere un experimento de control dentro de una bateria de pruebas sobre colapso numerico, con una configuracion `p10` y una segunda ejecucion (`run2`) de la cuarta generacion (`gen4`); la model card no documenta el objetivo, el dataset ni los hiperparametros.
 
 El modelo hereda la arquitectura y las capacidades del Qwen2.5-7B-Instruct original: un transformer decoder-only de 7.610 millones de parametros, atencion con GQA, ventana de contexto de hasta 131.072 tokens y licencia Apache 2.0. La model card es minima: unicamente indica el modelo base, la licencia y que el entrenamiento se hizo con Unsloth y TRL, sin datos de rendimiento, composicion del dataset ni resultados de evaluacion.
 
@@ -48,7 +48,7 @@ Las capacidades que se listan a continuacion corresponden al modelo base Qwen2.5
 - Investigacion sobre colapso de modos: el nombre `numbers-collapse` apunta a un experimento sobre perdida de diversidad o degradacion en la generacion de secuencias numericas; el modelo sirve como material de analisis para medir ese fenomeno.
 - Evaluacion de robustez y red-teaming: al ser un modelo con alineamiento potencialmente alterado, resulta util en baterias de pruebas que miden si el ajuste fino elimina barreras de seguridad del modelo base.
 - Banco de pruebas de pipelines de inferencia: util para validar integraciones con vLLM, TGI o llama.cpp con un checkpoint pequeno (0,1 GB) antes de desplegar el modelo completo.
-- Analisis de linaje de modelos: al estar etiquetado con `base_model:finetune:`, permite estudiar la trazabilidad de derivados en el ecosistema HuggingFace y la calidad de las model cards generadas automaticamente.
+- Analisis de linaje de modelos: al estar etiquetado con `base_model:finetune:`, permite estudiar la trazabilidad de derivados en el ecosistema Hugging Face y la calidad de las model cards generadas automaticamente.
 - Docencia y formacion: ejemplo real de fine-tune de bajo coste con LoRA y Unsloth, apropiado para talleres practicos sobre ajuste de LLM en GPU de consumo.
 
 ## Benchmarks y rendimiento
@@ -104,8 +104,8 @@ No se dispone de datos que permitan comparar el rendimiento efectivo de este fin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-run2-gen4
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-run2-gen4
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Nota: la busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo (unicamente contenido no relacionado); no existen papers, blogs ni demos publicados que se puedan enlazar.

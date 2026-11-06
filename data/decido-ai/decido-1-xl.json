@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "decido-ai/decido-1-xl",
+  "slug": "decido-ai-decido-1-xl",
+  "author": "decido-ai",
+  "url": "https://huggingface.co/decido-ai/decido-1-xl",
+  "created_at": "2026-11-06T04:42:31.000Z",
+  "updated_at": "2026-11-06T05:30:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "classification",
+    "lora",
+    "deepseek",
+    "decido",
+    "text-classification",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:adapter:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204393720,
+  "storage_human": "204 MB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

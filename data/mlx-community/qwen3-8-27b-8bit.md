@@ -72,6 +72,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-27B-8bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Libreria mlx-vlm: https://github.com/ml-explore/mlx-vlm (no confirmado, pero es la herramienta mencionada en la model card)

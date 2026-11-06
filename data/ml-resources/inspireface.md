@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InspireFace es un SDK de reconocimiento facial multiplataforma desarrollado en C/C++, distribuido como paquete de Python (pypi) y como librería nativa. Deriva del proyecto InsightFace, en concreto de la implementación del paquete C++ `cpp-package/inspireface`, y está mantenido por el equipo de HyperInspire. Este repositorio concreto de HuggingFace (`ml-resources/InspireFace`) es un espejo del original publicado en ModelScope por el usuario `tunmxy`, sin declaración de licencia en el origen.
+InspireFace es un SDK de reconocimiento facial multiplataforma desarrollado en C/C++, distribuido como paquete de Python (pypi) y como librería nativa. Deriva del proyecto InsightFace, en concreto de la implementación del paquete C++ `cpp-package/inspireface`, y está mantenido por el equipo de HyperInspire. Este repositorio concreto de Hugging Face (`ml-resources/InspireFace`) es un espejo del original publicado en ModelScope por el usuario `tunmxy`, sin declaración de licencia en el origen.
 
 El problema que resuelve es el despliegue de pipelines completos de análisis facial en entornos muy heterogéneos: detección y seguimiento de rostros, extracción y comparación de embeddings, detección de landmarks, estimación de pose, atributos (edad, género, emoción), prueba de vida (liveness) y detección de mascarillas. Para ello abstrae distintos backends de inferencia (CPU, MNN con CUDA, TensorRT, NPU de Rockchip y Neural Engine de Apple), de modo que el mismo código funciona en Linux, macOS, iOS y Android.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Proyecto | Relación | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InspireFace | Objeto de esta ficha | no disponible | no aplica | no declarada (unknown) | HuggingFace (espejo), ModelScope, GitHub, PyPI |
+| InspireFace | Objeto de esta ficha | no disponible | no aplica | no declarada (unknown) | Hugging Face (espejo), ModelScope, GitHub, PyPI |
 | InsightFace (`cpp-package/inspireface`) | Proyecto origen del que deriva | no disponible | no aplica | no disponible en esta información | GitHub |
 | CompreFace | Alternativa autoalojada de reconocimiento facial | no disponible | no aplica | no disponible en esta información | no disponible en esta información |
 | DeepFace | Alternativa en Python con múltiples modelos | no disponible | no aplica | no disponible en esta información | no disponible en esta información |
@@ -85,7 +85,7 @@ No se dispone de datos numéricos de rendimiento, parámetros ni licencia para e
 ## Limitaciones y advertencias
 
 - La licencia no está declarada en el origen; el espejo indica explícitamente que no es un lanzamiento oficial y que todos los derechos quedan en manos de los autores originales. No se puede asumir uso comercial sin aclarar la licencia con los responsables.
-- El repositorio de HuggingFace registra 0 descargas y 0 likes, y su fecha de creación es posterior a la del proyecto original; se trata de un espejo no oficial, con el riesgo de desactualización respecto a los repositorios mantenidos.
+- El repositorio de Hugging Face registra 0 descargas y 0 likes, y su fecha de creación es posterior a la del proyecto original; se trata de un espejo no oficial, con el riesgo de desactualización respecto a los repositorios mantenidos.
 - Los sistemas de reconocimiento facial están sujetos a sesgos demográficos (tono de piel, edad, género, iluminación) que no se documentan ni se cuantifican en la información disponible.
 - Existe riesgo de falsos positivos y falsos negativos en la comparación de embeddings; no se publican tasas de FAR/FRR ni umbrales recomendados.
 - La prueba de vida silenciosa puede ser vulnerable a ataques de presentación sofisticados (deepfakes, máscaras 3D); no se documenta su robustez frente a ellos.
@@ -95,7 +95,7 @@ No se dispone de datos numéricos de rendimiento, parámetros ni licencia para e
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/ml-resources/InspireFace
+- Hugging Face (espejo): https://huggingface.co/ml-resources/InspireFace
 - ModelScope (origen del espejo): https://www.modelscope.cn/models/tunmxy/InspireFace
 - GitHub (desarrollo): https://github.com/HyperInspire/InspireFace
 - GitHub (estable, dentro de InsightFace): https://github.com/deepinsight/insightface/tree/master/cpp-package/inspireface

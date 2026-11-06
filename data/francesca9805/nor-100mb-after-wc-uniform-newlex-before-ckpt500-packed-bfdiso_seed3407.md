@@ -1,7 +1,7 @@
 # francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 
 ## Resumen
-El modelo `francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfdiso_seed3407`, realizado por el usuario francesca9805 y publicado en HuggingFace. Se trata de un artefacto de investigación con arquitectura GPT-2 de aproximadamente 124,8 millones de parámetros (124.770.816 según los pesos en safetensors), entrenado con la librería TRL. No es un modelo de propósito general orientado a producción, sino el resultado de un experimento de entrenamiento reproducible (la nomenclatura incluye términos como "packed", "newlex", "ckpt500" y una semilla concreta, "seed3407").
+El modelo `francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfdiso_seed3407`, realizado por el usuario francesca9805 y publicado en Hugging Face. Se trata de un artefacto de investigación con arquitectura GPT-2 de aproximadamente 124,8 millones de parámetros (124.770.816 según los pesos en safetensors), entrenado con la librería TRL. No es un modelo de propósito general orientado a producción, sino el resultado de un experimento de entrenamiento reproducible (la nomenclatura incluye términos como "packed", "newlex", "ckpt500" y una semilla concreta, "seed3407").
 
 La relevancia de esta ficha es fundamentalmente técnica y de trazabilidad: permite documentar qué es el artefacto, de dónde procede y qué limitaciones tiene antes de considerarlo para cualquier uso. El nombre sugiere variantes de tokenizador ("newlex"), empaquetado de secuencias ("packed") y un punto de control intermedio ("before-ckpt500"), lo que apunta a una comparativa de tokenizadores o de estrategias de preprocesado en el ámbito de una investigación académica.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/nor-100mb-...-seed3407 | ~124,8 M | no disponible | no disponible | no disponible | HuggingFace, 890 descargas |
-| GPT-2 small (openai-community/gpt2) | ~124 M | 1024 tokens | benchmarks publicos en la model card original | MIT (segun el repositorio original) | HuggingFace, ampliamente usado |
-| DistilGPT-2 (distilbert/distilgpt2) | ~82 M | 1024 tokens | benchmarks publicos en la model card original | Apache 2.0 | HuggingFace |
-| GPT-2 medium | ~355 M | 1024 tokens | benchmarks publicos en la model card original | MIT (segun repositorio) | HuggingFace |
+| francesca9805/nor-100mb-...-seed3407 | ~124,8 M | no disponible | no disponible | no disponible | Hugging Face, 890 descargas |
+| GPT-2 small (openai-community/gpt2) | ~124 M | 1024 tokens | benchmarks publicos en la model card original | MIT (segun el repositorio original) | Hugging Face, ampliamente usado |
+| DistilGPT-2 (distilbert/distilgpt2) | ~82 M | 1024 tokens | benchmarks publicos en la model card original | Apache 2.0 | Hugging Face |
+| GPT-2 medium | ~355 M | 1024 tokens | benchmarks publicos en la model card original | MIT (segun repositorio) | Hugging Face |
 
 La comparación directa de rendimiento no es posible porque este modelo no publica resultados. La única comparación fiable es estructural: mismo orden de parámetros que GPT-2 small, pero sin licencia clara ni métricas verificables.
 
@@ -82,10 +82,10 @@ La comparación directa de rendimiento no es posible porque este modelo no publi
 - Sin soporte de tool calling, agentes ni multimodalidad: cualquier caso de uso que requiera estas capacidades no es viable con este modelo.
 
 ## Enlaces
-- HuggingFace (modelo): https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Hugging Face (modelo): https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfdiso_seed3407
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/wbcz1tuu
 - Repositorio TRL: https://github.com/huggingface/trl
-- Variante relacionada en HuggingFace (seed455): https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfd_seed455_seed455
+- Variante relacionada en Hugging Face (seed455): https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfd_seed455_seed455
 - Despliegue en FriendliAI (variante seed455): https://friendli.ai/models/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
 - Variante `nld` (neerlandes) en free2aitools: https://free2aitools.com/model/francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407

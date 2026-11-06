@@ -4,7 +4,7 @@
 
 El modelo `msuiche/Qwen3.8-Flash-Next-abliterated-GLP-47` es una versión modificada del modelo Qwen3.8-Flash-Next, desarrollado originalmente por Alibaba Qwen. Esta variante, publicada por el usuario msuiche, aplica técnicas de *abliteration* (eliminación de la dirección de rechazo) mediante un vector de control denominado GLP-47, con el objetivo de reducir las respuestas de rechazo y aumentar la libertad de generación. El modelo base es un MoE multimodal de 125 000 millones de parámetros con 6 000 millones activos por token, basado en la arquitectura Qwen4 con atención híbrida GDN + QSA y una ventana de contexto de 262 000 tokens.
 
-Sin embargo, la información disponible en HuggingFace para esta versión concreta es muy limitada y contradictoria: el repositorio tiene un tamaño de 0.0 GB, los parámetros totales según safetensors son 481 280 (un valor inusualmente bajo para un modelo de esta familia) y el acceso está restringido (gated). Esto sugiere que podría tratarse de un placeholder, un modelo de prueba o que los metadatos no son fiables. La licencia es MIT, pero no se especifican idiomas ni pipeline. Dada la falta de datos verificables, esta ficha se basa principalmente en las características del modelo base Qwen3.8-Flash-Next, indicando explícitamente las incertidumbres.
+Sin embargo, la información disponible en Hugging Face para esta versión concreta es muy limitada y contradictoria: el repositorio tiene un tamaño de 0.0 GB, los parámetros totales según safetensors son 481 280 (un valor inusualmente bajo para un modelo de esta familia) y el acceso está restringido (gated). Esto sugiere que podría tratarse de un placeholder, un modelo de prueba o que los metadatos no son fiables. La licencia es MIT, pero no se especifican idiomas ni pipeline. Dada la falta de datos verificables, esta ficha se basa principalmente en las características del modelo base Qwen3.8-Flash-Next, indicando explícitamente las incertidumbres.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ La comparativa es limitada porque la versión abliterated no tiene datos verific
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/msuiche/Qwen3.8-Flash-Next-abliterated-GLP-47
+- Hugging Face: https://huggingface.co/msuiche/Qwen3.8-Flash-Next-abliterated-GLP-47
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentación de unsloth: https://unsloth.ai/docs/models/qwen3.8-next
 - Página de QwenCloud: https://www.qwencloud.com/models/qwen3.8-flash

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stickbreaking_2_4_256_babylm_10m_seed44` es un modelo de generación de texto basado en la arquitectura de transformers, publicado en HuggingFace por el usuario Lanni-ni. Su ficha técnica está prácticamente vacía: la model card ha sido generada automáticamente y no contiene descripción, datos de entrenamiento ni resultados de evaluación. El nombre del modelo sugiere una posible relación con la técnica de «stick-breaking» y con el dataset BabyLM, y su tamaño de 27.840.256 parámetros lo sitúa en la categoría de modelos pequeños. No obstante, estos extremos no están confirmados por ninguna documentación pública, por lo que cualquier afirmación al respecto debe considerarse especulativa.
+El modelo `stickbreaking_2_4_256_babylm_10m_seed44` es un modelo de generación de texto basado en la arquitectura de transformers, publicado en Hugging Face por el usuario Lanni-ni. Su ficha técnica está prácticamente vacía: la model card ha sido generada automáticamente y no contiene descripción, datos de entrenamiento ni resultados de evaluación. El nombre del modelo sugiere una posible relación con la técnica de «stick-breaking» y con el dataset BabyLM, y su tamaño de 27.840.256 parámetros lo sitúa en la categoría de modelos pequeños. No obstante, estos extremos no están confirmados por ninguna documentación pública, por lo que cualquier afirmación al respecto debe considerarse especulativa.
 
 El repositorio incluye pesos en formato safetensors y tiene el tag `custom_code`, lo que indica que la implementación requiere código personalizado para su carga. Al carecer de información sobre arquitectura, entrenamiento, licencia y capacidades, el modelo no es apto para su uso en producción sin una evaluación previa exhaustiva.
 
@@ -21,7 +21,7 @@ El repositorio incluye pesos en formato safetensors y tiene el tag `custom_code`
 
 ## Arquitectura y entrenamiento
 
-La información publicada no detalla la arquitectura interna ni el proceso de entrenamiento del modelo. El nombre del repositorio incluye `babylm`, lo que podría indicar que fue entrenado sobre el dataset BabyLM, y `stickbreaking` podría aludir a una variante de atención o de regularización basada en procesos de «stick-breaking», pero no existe documentación pública que lo confirme. El tag `custom_code` en HuggingFace señala que el modelo requiere código personalizado para cargarse, probablemente debido a una implementación no estandarizada de transformers. Se desconoce el número de tokens de entrenamiento, la composición del dataset y si se aplicaron técnicas como RLHF, DPO o cualquier otra etapa de alineación.
+La información publicada no detalla la arquitectura interna ni el proceso de entrenamiento del modelo. El nombre del repositorio incluye `babylm`, lo que podría indicar que fue entrenado sobre el dataset BabyLM, y `stickbreaking` podría aludir a una variante de atención o de regularización basada en procesos de «stick-breaking», pero no existe documentación pública que lo confirme. El tag `custom_code` en Hugging Face señala que el modelo requiere código personalizado para cargarse, probablemente debido a una implementación no estandarizada de transformers. Se desconoce el número de tokens de entrenamiento, la composición del dataset y si se aplicaron técnicas como RLHF, DPO o cualquier otra etapa de alineación.
 
 ## Capacidades
 
@@ -70,5 +70,5 @@ No se ha encontrado información que permita comparar este modelo con otras alte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/stickbreaking_2_4_256_babylm_10m_seed44
-- Paper de referencia (etiqueta en HuggingFace, no del modelo en sí): https://arxiv.org/abs/1910.09700
+- Hugging Face: https://huggingface.co/Lanni-ni/stickbreaking_2_4_256_babylm_10m_seed44
+- Paper de referencia (etiqueta en Hugging Face, no del modelo en sí): https://arxiv.org/abs/1910.09700

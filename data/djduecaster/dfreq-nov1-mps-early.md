@@ -31,7 +31,7 @@ Otros datos tecnicos relevantes:
 | Entorno de simulacion | MuJoCo / BAM (rollouts nativos en CPU) |
 | Algoritmo de entrenamiento | PPO recortado sobre MPS |
 | SHA256 | `efae4a9b3516b2d0ebf9958f2678e7d47357612784d9bfa3fb001ff16c66ac7d` |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ El autor advierte explicitamente que no debe reclamarse superioridad cuando el i
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dfreq-nov1-mps-early` (este) | 1806 parametros entrenados en capa de salida; total no disponible | No aplica | 2.716 s barrido oficial; 2.715273 s media en holdout pareado | No disponible | ONNX en HuggingFace |
+| `dfreq-nov1-mps-early` (este) | 1806 parametros entrenados en capa de salida; total no disponible | No aplica | 2.716 s barrido oficial; 2.715273 s media en holdout pareado | No disponible | ONNX en Hugging Face |
 | Especialista publicado de referencia (mismo linaje) | No disponible | No aplica | 2.570 s en arranques prescritos | No disponible | Publicado (segun el autor) |
 | Linea base general (mismo linaje) | No disponible | No aplica | 2.717148 s media pareada | No disponible | No disponible |
 
@@ -97,12 +97,12 @@ No se dispone de informacion sobre otros modelos comparables fuera de este linaj
 - El especialista publicado de 2.570 s sigue siendo mas rapido en sus arranques prescritos; el autor recomienda retener el mejor tiempo actual y no cambiar la ultima entrada de Tugcup.
 - Candidato privado sin publicacion formal: el autor indica "No publication performed".
 - Licencia no disponible; el trabajo nuevo de calibracion/PPO no relicencia los pesos heredados, cuyos terminos estan en `upstream-base-card.md`.
-- El repositorio figura con 0.0 GB y 0 descargas/0 likes en HuggingFace; la disponibilidad efectiva de los pesos no esta confirmada por la metadata.
+- El repositorio figura con 0.0 GB y 0 descargas/0 likes en Hugging Face; la disponibilidad efectiva de los pesos no esta confirmada por la metadata.
 - Sin datos de sesgos, alucinacion o limitaciones de idioma aplicables (no es un modelo de lenguaje); la limitacion real es de dominio: solo valido para la tarea `roller-sprint-2m` bajo el contrato de entrada/salida original.
 - El checkpoint fue congelado antes de la evaluacion fresca con 128 semillas; cualquier reentrenamiento posterior invalidaria las cifras reportadas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/djduecaster/dfreq-nov1-mps-early
+- Hugging Face: https://huggingface.co/djduecaster/dfreq-nov1-mps-early
 - Evidencia de evaluacion: `EVALUATION.json` (referenciado en la model card, no enlazado)
 - Linaje y terminos heredados: `upstream-base-card.md` (referenciado en la model card, no enlazado)

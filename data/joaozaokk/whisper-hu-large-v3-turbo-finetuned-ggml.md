@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Idiomas | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-hu-large-v3-turbo-finetuned-ggml (este) | Reempaquetado GGML para whisper.cpp | hu | q4_0, q5_0, q8_0, f16, q5_k | MIT | HuggingFace, 0 descargas, 0 likes |
-| sarpba/whisper-hu-large-v3-turbo-finetuned | Checkpoint original (safetensors) | hu | no aplica | MIT (heredada) | HuggingFace (base de este repo) |
-| Whisper large-v3-turbo original | Modelo ASR multilingue | multiple | formatos propios de OpenAI | MIT | Repositorio original de OpenAI / HuggingFace |
+| whisper-hu-large-v3-turbo-finetuned-ggml (este) | Reempaquetado GGML para whisper.cpp | hu | q4_0, q5_0, q8_0, f16, q5_k | MIT | Hugging Face, 0 descargas, 0 likes |
+| sarpba/whisper-hu-large-v3-turbo-finetuned | Checkpoint original (safetensors) | hu | no aplica | MIT (heredada) | Hugging Face (base de este repo) |
+| Whisper large-v3-turbo original | Modelo ASR multilingue | multiple | formatos propios de OpenAI | MIT | Repositorio original de OpenAI / Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/whisper-hu-large-v3-turbo-finetuned-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/whisper-hu-large-v3-turbo-finetuned-ggml
 - Modelo base: https://huggingface.co/sarpba/whisper-hu-large-v3-turbo-finetuned
 - Perfil del autor: https://huggingface.co/JoaoZaokk
 - Motor whisper.cpp: https://github.com/ggml-org/whisper.cpp

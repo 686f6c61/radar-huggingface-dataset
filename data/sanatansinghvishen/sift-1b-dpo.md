@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SanatanSinghVishen/sift-1b-dpo
+- Modelo en Hugging Face: https://huggingface.co/SanatanSinghVishen/sift-1b-dpo
 - Modelo base (unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit): https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Referencia a Lacoste et al. (2019) sobre impacto ambiental (tag arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft/index

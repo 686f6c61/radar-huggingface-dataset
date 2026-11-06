@@ -74,9 +74,9 @@ La información proporcionada no incluye datos de rendimiento de modelos alterna
 
 | Modelo | Parámetros | Ventana de audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smile-forge/whisper-large-v3-turbo-onnx-genai | no disponible | 30 s | ONNX fp16 e int8, para onnxruntime-genai 0.17.1 | MIT | HuggingFace; 0 descargas y 0 likes en el momento de redactar la ficha |
-| openai/whisper-large-v3-turbo (modelo base) | no disponible | 30 s | no disponible en la información (pesos originales del modelo base) | MIT | HuggingFace |
-| openai/whisper-large-v3 | no disponible | no disponible en la información | no disponible | MIT | HuggingFace |
+| smile-forge/whisper-large-v3-turbo-onnx-genai | no disponible | 30 s | ONNX fp16 e int8, para onnxruntime-genai 0.17.1 | MIT | Hugging Face; 0 descargas y 0 likes en el momento de redactar la ficha |
+| openai/whisper-large-v3-turbo (modelo base) | no disponible | 30 s | no disponible en la información (pesos originales del modelo base) | MIT | Hugging Face |
+| openai/whisper-large-v3 | no disponible | no disponible en la información | no disponible | MIT | Hugging Face |
 | Otras exportaciones ONNX de Whisper para onnxruntime-genai | no disponible | no disponible | ONNX | no disponible | no disponible |
 
 No se dispone de comparaciones de WER, latencia ni consumo de memoria frente a otras conversiones o frente al modelo original en PyTorch, más allá de la afirmación del autor de que las variantes fp16 e int8 producen transcripciones idénticas entre sí.
@@ -95,7 +95,7 @@ No se dispone de comparaciones de WER, latencia ni consumo de memoria frente a o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smile-forge/whisper-large-v3-turbo-onnx-genai
+- Modelo en Hugging Face: https://huggingface.co/smile-forge/whisper-large-v3-turbo-onnx-genai
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio de onnxruntime-genai: https://github.com/microsoft/onnxruntime-genai
 - Proyecto Nexaflow, consumidor del modelo: https://github.com/smile-forge/nexaflow

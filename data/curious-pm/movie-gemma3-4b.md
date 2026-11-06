@@ -69,7 +69,7 @@ No disponible. No se han encontrado comparaciones con otros adaptadores LoRA sob
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Curious-PM/movie-gemma3-4b
+- Repositorio Hugging Face: https://huggingface.co/Curious-PM/movie-gemma3-4b
 - Pagina oficial de Gemma 4 (no directamente relacionada, pero contexto de la familia Gemma): https://deepmind.google/models/gemma/gemma-4/
 - Documentacion de Gemma 4 en Google AI for Developers: https://ai.google.dev/gemma/docs/core
-- Modelo base Gemma-3-4B-it en HuggingFace: https://huggingface.co/google/gemma-3-4b-it
+- Modelo base Gemma-3-4B-it en Hugging Face: https://huggingface.co/google/gemma-3-4b-it

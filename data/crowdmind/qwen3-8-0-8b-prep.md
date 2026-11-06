@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su tamaño reducido, que lo hace adecuado
 | Tipos de cuantizacion | no disponible (el repositorio contiene safetensors en FP16, sin cuantizaciones publicadas) |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para realizar una comparacion rigurosa. 
 
 ## Enlaces
 
-- [HuggingFace - CrowdMind/Qwen3.8-0.8B-Prep](https://huggingface.co/CrowdMind/Qwen3.8-0.8B-Prep)
+- [Hugging Face - CrowdMind/Qwen3.8-0.8B-Prep](https://huggingface.co/CrowdMind/Qwen3.8-0.8B-Prep)
 - [GitHub - QwenLM/Qwen3.8 (serie oficial Qwen3.8)](https://github.com/QwenLM/Qwen3.8)
-- [HuggingFace - Qwen/Qwen3-8B (modelo base de referencia de la serie)](https://huggingface.co/Qwen/Qwen3-8B)
+- [Hugging Face - Qwen/Qwen3-8B (modelo base de referencia de la serie)](https://huggingface.co/Qwen/Qwen3-8B)

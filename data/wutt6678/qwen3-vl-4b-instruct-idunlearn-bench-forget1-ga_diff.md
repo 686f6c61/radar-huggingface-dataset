@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|
 | wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-forget1-GA_diff (este) | Adaptador LoRA sobre base de 4B; tamano de adaptador 0,2 GB | No disponible | No disponible | 0 descargas, 0 likes; base no publicada |
 | Qwen3-VL-4B-Instruct (modelo base de referencia) | 4B (denso) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Ampliamente distribuido mediante espejos como OpenExplorer/Qwen3-VL-4B-Instruct y repositorios GGUF de terceros |
-| wutt6678/Qwen3-VL-2B-Instruct-IDUnlearn-Bench-forget1-GA_diff | Adaptador LoRA sobre base de 2B | No disponible | No disponible | Mismo autor, mismo esquema de nombres; disponible en HuggingFace |
+| wutt6678/Qwen3-VL-2B-Instruct-IDUnlearn-Bench-forget1-GA_diff | Adaptador LoRA sobre base de 2B | No disponible | No disponible | Mismo autor, mismo esquema de nombres; disponible en Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar la calidad de estos artefactos entre si; la comparativa se limita a tamano, origen y disponibilidad.
 

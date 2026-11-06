@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `agurung/ncp-groot-25v12u-b16` es un checkpoint publicado en HuggingFace por el usuario agurung. Segun los metadatos del repositorio, cuenta con 4.022.468.096 parametros reales almacenados en formato safetensors (repo de 8,1 GB), lo que corresponde a un modelo de aproximadamente 4.000 millones de parametros en precision de 16 bits (FP16/BF16). La etiqueta `qwen3` asociada al repositorio apunta a que se trata de un derivado o ajuste sobre la familia Qwen3, aunque la configuracion exacta no se detalla en la informacion disponible.
+El modelo `agurung/ncp-groot-25v12u-b16` es un checkpoint publicado en Hugging Face por el usuario agurung. Segun los metadatos del repositorio, cuenta con 4.022.468.096 parametros reales almacenados en formato safetensors (repo de 8,1 GB), lo que corresponde a un modelo de aproximadamente 4.000 millones de parametros en precision de 16 bits (FP16/BF16). La etiqueta `qwen3` asociada al repositorio apunta a que se trata de un derivado o ajuste sobre la familia Qwen3, aunque la configuracion exacta no se detalla en la informacion disponible.
 
 El modelo fue creado y actualizado el 18 de septiembre de 2026, con un volumen de traccion muy bajo (10 descargas, 0 likes), lo que indica que es un experimento reciente o un ajuste privado con escasa difusion publica. No se dispone de informacion sobre pipeline, licencia, idiomas soportados ni datos de entrenamiento.
 
@@ -27,7 +27,7 @@ Por su tamano (~4B) y nomenclatura, encaja en la categoria de modelos compactos 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura, los datos de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni si se emplearon tecnicas de alineacion como RLHF, DPO o instruction tuning. El unico indicio disponible es la etiqueta `qwen3` en los metadatos de HuggingFace, que apunta a que el modelo parte de la arquitectura Qwen3 (transformer decoder-only con atencion por consultas agrupadas y codificacion posicional rotatoria), pero esta afirmacion no puede confirmarse con la informacion proporcionada.
+No se ha publicado informacion detallada sobre la arquitectura, los datos de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni si se emplearon tecnicas de alineacion como RLHF, DPO o instruction tuning. El unico indicio disponible es la etiqueta `qwen3` en los metadatos de Hugging Face, que apunta a que el modelo parte de la arquitectura Qwen3 (transformer decoder-only con atencion por consultas agrupadas y codificacion posicional rotatoria), pero esta afirmacion no puede confirmarse con la informacion proporcionada.
 
 El tamano del repositorio (8,1 GB) y el recuento de parametros (4.022 millones) son consistentes con pesos almacenados en precision de 16 bits, lo que sugiere que no se ha aplicado cuantizacion al checkpoint publicado. Se desconoce si el modelo es un fine-tuning, un merge, una destilacion o un entrenamiento desde cero.
 
@@ -66,14 +66,14 @@ Los valores siguientes son estimaciones derivadas del recuento de parametros (4,
   - INT4: ~2,5-3,5 GB.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090 para FP16; A100/H100 para despliegue por lotes a gran escala.
 - Cabe en GPU de consumo: previsiblemente si, en GPUs con 12 GB o mas en FP16, y en GPUs de 6-8 GB con cuantizacion INT4 (requiere generar dichos pesos, no incluidos en el repo).
-- Opciones de despliegue: vLLM, TGI, llama.cpp/Ollama (estos ultimos solo tras convertir los safetensors a GGUF), transformers de HuggingFace. No hay configuracion de despliegue publicada.
+- Opciones de despliegue: vLLM, TGI, llama.cpp/Ollama (estos ultimos solo tras convertir los safetensors a GGUF), transformers de Hugging Face. No hay configuracion de despliegue publicada.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agurung/ncp-groot-25v12u-b16 | ~4,02B | No disponible | No disponible | Repo HuggingFace con 10 descargas |
+| agurung/ncp-groot-25v12u-b16 | ~4,02B | No disponible | No disponible | Repo Hugging Face con 10 descargas |
 | Qwen3-4B | ~4,0B | 32.768 nativo (ampliable a 131.072 con YaRN) | Apache 2.0 | Ampliamente disponible |
 | Llama 3.2 3B | ~3,2B | 128.000 | Llama 3.2 Community License | Ampliamente disponible |
 | Phi-4-mini | ~3,8B | 128.000 | MIT | Ampliamente disponible |
@@ -93,6 +93,6 @@ Nota: los datos de los modelos comparativos corresponden a sus fichas publicas c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agurung/ncp-groot-25v12u-b16
+- Hugging Face: https://huggingface.co/agurung/ncp-groot-25v12u-b16
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.
 - Los resultados de busqueda web consultados no contienen informacion relacionada con este modelo (corresponden a paginas de soporte de Google sin vinculacion con el modelo).

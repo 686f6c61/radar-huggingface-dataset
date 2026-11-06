@@ -81,19 +81,19 @@ Los datos de rendimiento comparado (FID, CLIP score, calidad percibida) no estan
 ## Limitaciones y advertencias
 
 - Repositorio de terceros: el autor no es el desarrollador del modelo original, por lo que no hay garantia de que la conversion INT4 reproduzca fielmente el comportamiento del modelo fuente.
-- Sin licencia declarada en el repositorio de HuggingFace. Aunque la model card indica que el modelo fuente es Apache-2.0, la ausencia de un archivo de licencia propio genera incertidumbre juridica para uso comercial.
+- Sin licencia declarada en el repositorio de Hugging Face. Aunque la model card indica que el modelo fuente es Apache-2.0, la ausencia de un archivo de licencia propio genera incertidumbre juridica para uso comercial.
 - Model card minima: no se documentan sesgos, composicion del dataset, resolucion de salida soportada ni parametros de muestreo recomendados.
 - Riesgo de degradacion por cuantizacion: el paso de BF16 a INT4 con group-size 64 puede introducir perdida de calidad frente al checkpoint original; no se han publicado metricas que cuantifiquen esa diferencia.
 - Riesgo de alucinacion visual: como todo modelo text-to-image, puede generar contenido incoherente, texto ilegible en la imagen o elementos anatomicamente incorrectos.
 - Limitacion idiomatica: la model card solo declara ingles, por lo que el comportamiento con prompts en castellano u otros idiomas no esta garantizado.
 - Cero descargas y cero valoraciones en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
-- El campo `inference: false` de la metadata indica que el modelo no esta habilitado para inferencia alojada en HuggingFace; hay que ejecutarlo localmente con OpenVINO.
+- El campo `inference: false` de la metadata indica que el modelo no esta habilitado para inferencia alojada en Hugging Face; hay que ejecutarlo localmente con OpenVINO.
 - Los datos de latencia sub-segundo son afirmaciones del autor sin especificacion de hardware, resolucion ni lote, por lo que no deben tomarse como garantia de produccion.
 - No se detalla el soporte de resoluciones, el uso de clasificador libre de guia (CFG) ni parametros como negative prompts, lo que limita la planificacion de un despliegue productivo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nekodeus/z-image-turbo-int4-ov
+- Repositorio Hugging Face: https://huggingface.co/Nekodeus/z-image-turbo-int4-ov
 - Modelo fuente: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Herramienta de exportacion OpenVINO (optimum-cli): no disponible en la informacion proporcionada
 - Paper del modelo base: no disponible en la informacion proporcionada

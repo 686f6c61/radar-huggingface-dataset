@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Abjad-checkpoint-9750 es un ajuste fino del modelo multimodal Qwen/Qwen3-VL-4B-Instruct orientado especificamente a OCR de texto arabe. Lo publica el usuario Alsamir en HuggingFace como un export autonomo en formato Transformers: el adaptador LoRA de la "stage 2" del entrenamiento (correspondiente al paso 9.750) ya viene fusionado en los pesos, por lo que no requiere cargar un adaptador separado. El modelo hereda la arquitectura Qwen3-VL y cuenta con 4.437.815.808 parametros (~4,4B) en precision BF16.
+Abjad-checkpoint-9750 es un ajuste fino del modelo multimodal Qwen/Qwen3-VL-4B-Instruct orientado especificamente a OCR de texto arabe. Lo publica el usuario Alsamir en Hugging Face como un export autonomo en formato Transformers: el adaptador LoRA de la "stage 2" del entrenamiento (correspondiente al paso 9.750) ya viene fusionado en los pesos, por lo que no requiere cargar un adaptador separado. El modelo hereda la arquitectura Qwen3-VL y cuenta con 4.437.815.808 parametros (~4,4B) en precision BF16.
 
 El problema que aborda es la transcripcion de documentos arabes a partir de imagenes: el modelo recibe una imagen (tipicamente una pagina rasterizada de un PDF) y devuelve el texto visible preservando letras y digitos arabes. Es relevante para desarrolladores que necesitan digitalizar corpus arabes, ya que parte de una base multimodal solida (Qwen3-VL) y anade ajuste especifico de dominio.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alsamir/Abjad-checkpoint-9750
+- Modelo en Hugging Face: https://huggingface.co/Alsamir/Abjad-checkpoint-9750
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Publicacion previa del mismo autor: https://huggingface.co/Alsamir/Abjad_0.2
 - Manifiesto de procedencia: `release_manifest.json` (incluido en el repositorio del modelo)

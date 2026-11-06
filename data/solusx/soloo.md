@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SolusX/soloo` es un modelo de generación de imágenes texto-a-imagen publicado en HuggingFace por el usuario SolusX. Se trata de un ajuste fino (fine-tune) de estilo anime/toon, derivado presumiblemente de la familia Stable Diffusion, empaquetado en formato `safetensors` y compatible con la librería `diffusers`. El repositorio tiene un tamaño de 6,9 GB, lo que es coherente con un checkpoint de Stable Diffusion en precisión fp16 o fp32.
+`SolusX/soloo` es un modelo de generación de imágenes texto-a-imagen publicado en Hugging Face por el usuario SolusX. Se trata de un ajuste fino (fine-tune) de estilo anime/toon, derivado presumiblemente de la familia Stable Diffusion, empaquetado en formato `safetensors` y compatible con la librería `diffusers`. El repositorio tiene un tamaño de 6,9 GB, lo que es coherente con un checkpoint de Stable Diffusion en precisión fp16 o fp32.
 
 El modelo se distribuye con la etiqueta `stable-diffusion` y `text-to-image`, e incluye las etiquetas `nsfw`, `anime` y `toon`, además del aviso `not-for-all-audiences`. Esto indica que está orientado a la generación de ilustración de estilo anime y caricaturesco, con contenido para adultos permitido por el autor. La model card es extremadamente escasa: únicamente incluye el título `oopsAllToons_naiV10Toonitup` y un ejemplo de uso con `StableDiffusionPipeline.from_single_file`.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SolusX/soloo | no disponible | no disponible | other | HuggingFace, 15 descargas |
+| SolusX/soloo | no disponible | no disponible | other | Hugging Face, 15 descargas |
 | Stable Diffusion 1.5 (referencia) | ~860 M (UNet) | 512x512 nativo | CreativeML OpenRAIL-M | Amplia |
-| Modelos anime comunitarios (p. ej. derivados de NAI) | variable | 512x512 o superior | variable, a menudo restrictiva | HuggingFace / Civitai |
+| Modelos anime comunitarios (p. ej. derivados de NAI) | variable | 512x512 o superior | variable, a menudo restrictiva | Hugging Face / Civitai |
 
 La comparación cuantitativa no es posible: no hay datos de rendimiento ni de arquitectura exacta para `SolusX/soloo`. Cualquier afirmación sobre calidad frente a alternativas sería especulativa.
 
@@ -80,6 +80,6 @@ La comparación cuantitativa no es posible: no hay datos de rendimiento ni de ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SolusX/soloo
+- Hugging Face: https://huggingface.co/SolusX/soloo
 - Repositorio de pesos (referenciado en la model card): https://huggingface.co/SolusX/oopsAllToons-naiV10Toonitup
 - Documentación de `diffusers` para `from_single_file`: no disponible en la información proporcionada.

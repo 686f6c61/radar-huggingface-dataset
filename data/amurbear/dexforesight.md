@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DexForesight es un modelo de vision-language-action (VLA) orientado a robotica, publicado por el usuario AmurBear en HuggingFace bajo el identificador AmurBear/DexForesight. El pipeline declarado es "robotics" y las etiquetas asociadas describen un sistema de manipulacion diestra (dexterous-manipulation) que combina flow matching y self-distillation. Se trata, por tanto, de un modelo pensado para traducir instrucciones multimodales (vision y lenguaje) en acciones de control para brazos o manos roboticas, y no de un modelo de lenguaje generalista.
+DexForesight es un modelo de vision-language-action (VLA) orientado a robotica, publicado por el usuario AmurBear en Hugging Face bajo el identificador AmurBear/DexForesight. El pipeline declarado es "robotics" y las etiquetas asociadas describen un sistema de manipulacion diestra (dexterous-manipulation) que combina flow matching y self-distillation. Se trata, por tanto, de un modelo pensado para traducir instrucciones multimodales (vision y lenguaje) en acciones de control para brazos o manos roboticas, y no de un modelo de lenguaje generalista.
 
 La relevancia del modelo radica en el enfoque tecnico que sugieren sus etiquetas: el uso de flow matching para generar trayectorias de accion continuas y la self-distillation como mecanismo de entrenamiento o destilacion de politica. Este tipo de combinaciones se ha vuelto frecuente en la investigacion reciente de VLA para manipulacion fina, donde la precision de las trayectorias es critica. El repositorio ocupa 274,9 GB, lo que apunta a pesos de gran tamano, aunque no se dispone de informacion publica sobre el numero de parametros.
 
-El acceso al modelo esta restringido (gated): es necesario aceptar condiciones en HuggingFace para descargarlo. En el momento de redactar esta ficha el modelo registra 0 descargas y 0 likes, y no se ha publicado documentacion adicional, resultados de benchmarks ni ficha tecnica detallada en la informacion disponible.
+El acceso al modelo esta restringido (gated): es necesario aceptar condiciones en Hugging Face para descargarlo. En el momento de redactar esta ficha el modelo registra 0 descargas y 0 likes, y no se ha publicado documentacion adicional, resultados de benchmarks ni ficha tecnica detallada en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -68,16 +68,16 @@ No disponible. No se dispone de informacion suficiente sobre parametros, context
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 - Ausencia de documentacion publica: no se han publicado especificaciones de arquitectura, datos de entrenamiento, benchmarks ni guias de uso, lo que dificulta evaluar su idoneidad para produccion.
 - Riesgo de alucinacion y de acciones incorrectas: al tratarse de un modelo de control robotico, los errores pueden traducirse en movimientos fisicos no deseados; se recomienda supervision humana y limites de seguridad en el entorno de despliegue.
 - Sesgos desconocidos: no hay informacion sobre la composicion del dataset de entrenamiento, por lo que no es posible evaluar sesgos de percepcion ni de generalizacion a distintos entornos, objetos o morfologias.
 - Limitaciones de idioma: no se dispone de informacion sobre que idiomas soporta el componente de lenguaje.
 - Limitaciones de contexto: no se conoce la longitud de contexto ni el horizonte temporal de planificacion del modelo.
-- Licencia CC-BY-4.0: permite uso comercial y modificacion con atribucion, pero conviene revisar las condiciones adicionales impuestas por el acceso gated en HuggingFace, que pueden anadir restricciones no cubiertas por la licencia.
+- Licencia CC-BY-4.0: permite uso comercial y modificacion con atribucion, pero conviene revisar las condiciones adicionales impuestas por el acceso gated en Hugging Face, que pueden anadir restricciones no cubiertas por la licencia.
 - Estado del repositorio: 0 descargas y 0 likes en el momento de redactar esta ficha, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AmurBear/DexForesight
+- Hugging Face: https://huggingface.co/AmurBear/DexForesight
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

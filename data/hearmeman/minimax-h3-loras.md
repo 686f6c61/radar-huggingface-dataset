@@ -80,7 +80,7 @@ No se dispone de información suficiente sobre los repositorios comparables para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hearmeman/minimax-h3-loras
+- Repositorio Hugging Face: https://huggingface.co/Hearmeman/minimax-h3-loras
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Colección MiniMax-H3: https://huggingface.co/collections/MiniMaxAI/minimax-h3
 - Guía oficial MiniMax H3: https://design.minimax.io/h3

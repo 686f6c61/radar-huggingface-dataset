@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Amharic Sentiment AI es un clasificador de sentimiento en tres clases (positivo, neutro, negativo) para amharico, desarrollado por el usuario klohdfhk y publicado en HuggingFace. Se trata de un ajuste fino del encoder multilingue Davlan/afro-xlmr-mini (revision `bc04038b969667884bd83cdd37bed9559c2c3d9c`), entrenado sobre el benchmark oficial AfriSenti Amharic (SemEval-2023 Task 12) con licencia CC BY 4.0.
+Amharic Sentiment AI es un clasificador de sentimiento en tres clases (positivo, neutro, negativo) para amharico, desarrollado por el usuario klohdfhk y publicado en Hugging Face. Se trata de un ajuste fino del encoder multilingue Davlan/afro-xlmr-mini (revision `bc04038b969667884bd83cdd37bed9559c2c3d9c`), entrenado sobre el benchmark oficial AfriSenti Amharic (SemEval-2023 Task 12) con licencia CC BY 4.0.
 
 El modelo resuelve la tarea de clasificacion de sentimiento en redes sociales para uno de los idiomas con menos recursos del ecosistema NLP. Su relevancia radica en la escasa disponibilidad de clasificadores publicos para amharico y en que el autor documenta de forma transparente el proceso de seleccion (macro-F1 de validacion), la semilla fija (42) y los resultados en el split de test oficial de 1.999 publicaciones, incluyendo intervalos de confianza bootstrap.
 
@@ -79,9 +79,9 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | Macro-F1 en AfriSenti am | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Amharic Sentiment AI (klohdfhk) | 117,6 M | no disponible | 0,466 | CC BY 4.0 | HuggingFace |
-| Davlan/afro-xlmr-mini (base sin ajustar) | ~117 M | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| XLM-RoBERTa base | 278 M | 512 tokens | no disponible | MIT | HuggingFace |
+| Amharic Sentiment AI (klohdfhk) | 117,6 M | no disponible | 0,466 | CC BY 4.0 | Hugging Face |
+| Davlan/afro-xlmr-mini (base sin ajustar) | ~117 M | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| XLM-RoBERTa base | 278 M | 512 tokens | no disponible | MIT | Hugging Face |
 
 No se dispone de resultados publicados de alternativas en el mismo split dentro de la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento queda como no disponible. Las alternativas citadas son encoders multilingues que sirven de base o referencia arquitectonica, no clasificadores de sentimiento ya ajustados para amharico.
 
@@ -101,7 +101,7 @@ No se dispone de resultados publicados de alternativas en el mismo split dentro 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/klohdfhk/amharic-sentiment-ai
+- Modelo en Hugging Face: https://huggingface.co/klohdfhk/amharic-sentiment-ai
 - Modelo base: https://huggingface.co/Davlan/afro-xlmr-mini
 - Dataset AfriSenti (SemEval-2023 Task 12): https://github.com/afrisenti-semeval/afrisent-semeval-2023
 - Paper de AfriSenti (Muhammad et al., EMNLP 2023): https://aclanthology.org/2023.emnlp-main.862/

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Delphi-2e19-837M (este) | 837 M | 4096 | Apache 2.0 (research-only) | HuggingFace | Checkpoint de suite de escalado, sin evaluación publicada |
-| Pythia-1B | 1.000 M | 2048 | Apache 2.0 | HuggingFace | Suite de escalado inspiradora de Delphi, con checkpoints intermedios |
-| Qwen3-0.6B | 600 M | 32.768 | Apache 2.0 | HuggingFace | Modelo base/instruct de la misma familia arquitectónica, con evaluación publicada |
-| SmolLM2-1.7B | 1.700 M | 8192 | Apache 2.0 | HuggingFace | Base pequeño entrenado con muchos más tokens, orientado a uso práctico |
+| Delphi-2e19-837M (este) | 837 M | 4096 | Apache 2.0 (research-only) | Hugging Face | Checkpoint de suite de escalado, sin evaluación publicada |
+| Pythia-1B | 1.000 M | 2048 | Apache 2.0 | Hugging Face | Suite de escalado inspiradora de Delphi, con checkpoints intermedios |
+| Qwen3-0.6B | 600 M | 32.768 | Apache 2.0 | Hugging Face | Modelo base/instruct de la misma familia arquitectónica, con evaluación publicada |
+| SmolLM2-1.7B | 1.700 M | 8192 | Apache 2.0 | Hugging Face | Base pequeño entrenado con muchos más tokens, orientado a uso práctico |
 
 La comparación con Pythia y Qwen3 es la más directa por tamaño y propósito; no obstante, Delphi no publica métricas de rendimiento para este checkpoint, por lo que la comparación cuantitativa de calidad no está disponible.
 
@@ -84,7 +84,7 @@ La comparación con Pythia y Qwen3 es la más directa por tamaño y propósito; 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rohithck/delphi-2e19-837Mparams-3.6Btokens-seed42
+- Hugging Face: https://huggingface.co/rohithck/delphi-2e19-837Mparams-3.6Btokens-seed42
 - Suite Delphi en el Hub: https://huggingface.co/marin-community
 - Blog de Delphi: https://openathena.ai/blog/delphi
 - Datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data

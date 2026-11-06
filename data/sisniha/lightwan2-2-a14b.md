@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LightWan2.2-A14B es una variante extremadamente eficiente del modelo de generación de vídeo Wan2.2 de 14B parámetros, desarrollada por el equipo de ModelTC/LightX2V y publicada en HuggingFace por el usuario sisniha. El modelo combina destilación de pasos (step distillation) con cuantización NVFP4 y atención dispersa (sparse attention) para lograr una inferencia en solo 4 pasos, frente a los 40 del modelo original, lo que reduce la latencia de extremo a extremo en más de un orden de magnitud en una única GPU Blackwell.
+LightWan2.2-A14B es una variante extremadamente eficiente del modelo de generación de vídeo Wan2.2 de 14B parámetros, desarrollada por el equipo de ModelTC/LightX2V y publicada en Hugging Face por el usuario sisniha. El modelo combina destilación de pasos (step distillation) con cuantización NVFP4 y atención dispersa (sparse attention) para lograr una inferencia en solo 4 pasos, frente a los 40 del modelo original, lo que reduce la latencia de extremo a extremo en más de un orden de magnitud en una única GPU Blackwell.
 
 La relevancia de este modelo radica en que democratiza la generación de vídeo de alta calidad al hacerla viable en hardware de consumo profesional (como la RTX 5090) y en entornos de producción con requisitos de tiempo real. Está diseñado específicamente para la arquitectura Blackwell de NVIDIA, aprovechando las instrucciones NVFP4 para reducir el tráfico de memoria y el coste computacional. Soporta tanto texto-a-vídeo (T2V) como imagen-a-vídeo (I2V), manteniendo la calidad visual del modelo base Wan2.2.
 
@@ -34,7 +34,7 @@ Además, incorpora atención dispersa (sparse attention) para acelerar el coste 
 - Inferencia en 4 pasos, lo que permite latencias de 9 a 27 segundos para vídeos de 480p y 720p en una RTX 5090.
 - Soporte de paralelismo de secuencia para múltiples GPUs, escalando la generación a resoluciones mayores.
 - Integración con el framework LightX2V, que proporciona scripts listos para usar y una imagen Docker oficial.
-- Compatibilidad con la biblioteca diffusers de HuggingFace, facilitando su integración en pipelines existentes.
+- Compatibilidad con la biblioteca diffusers de Hugging Face, facilitando su integración en pipelines existentes.
 
 ## Casos de uso
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks estándar (como FID, CLIP score u o
 
 | Modelo | Parámetros | Resolución | NFE | Latencia E2E (480p) | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- | --- |
-| Wan2.2-T2V-14B | 14B | 480p/720p | 40 | 734 s | Apache 2.0 | HuggingFace |
-| Wan2.2-I2V-14B | 14B | 480p/720p | 40 | 787 s | Apache 2.0 | HuggingFace |
-| LightWan2.2-A14B | 14B | 480p/720p | 4 | 9,1 s | Apache 2.0 | HuggingFace |
+| Wan2.2-T2V-14B | 14B | 480p/720p | 40 | 734 s | Apache 2.0 | Hugging Face |
+| Wan2.2-I2V-14B | 14B | 480p/720p | 40 | 787 s | Apache 2.0 | Hugging Face |
+| LightWan2.2-A14B | 14B | 480p/720p | 4 | 9,1 s | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los modelos base de Wan2.2, ya que no se dispone de información sobre otros modelos de generación de vídeo con características similares (como CogVideoX o Mochi) en la documentación proporcionada.
 
@@ -92,7 +92,7 @@ La comparativa se limita a los modelos base de Wan2.2, ya que no se dispone de i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sisniha/LightWan2.2-A14B
+- Modelo en Hugging Face: https://huggingface.co/sisniha/LightWan2.2-A14B
 - Repositorio oficial LightX2V: https://github.com/ModelTC/LightX2V
 - Blog del modelo: https://light-ai.top/LightX2V-BLOG/posts/LightWan22-A14B/
 - Modelo base T2V: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B

@@ -3,7 +3,7 @@
 ## Resumen
 El repositorio `artempor/chat-lab` no contiene un modelo de IA entrenado, sino un conjunto de notas sobre un artículo académico dedicado a *visual question answering* (VQA). Según la model card, el repositorio incluye un único archivo `notes.md` con el texto completo del paper, redactado en formato LaTeX CVPR, con estructura intro-related-method-exp-conclusion y un estilo de escritura teórico y riguroso. No se proporcionan pesos, arquitectura, datos de entrenamiento ni código de inferencia.
 
-A pesar de que el campo `pipeline` de HuggingFace indica `visual-question-answering`, no existe ningún artefacto de modelo en el repositorio. Las descargas y los *likes* son cero, y la fecha de creación es posterior a la fecha actual (2026-08-25), lo que sugiere que podría tratarse de un repositorio de prueba o de un error. En consecuencia, no es posible evaluar capacidades, rendimiento o requisitos de hardware de ningún modelo real.
+A pesar de que el campo `pipeline` de Hugging Face indica `visual-question-answering`, no existe ningún artefacto de modelo en el repositorio. Las descargas y los *likes* son cero, y la fecha de creación es posterior a la fecha actual (2026-08-25), lo que sugiere que podría tratarse de un repositorio de prueba o de un error. En consecuencia, no es posible evaluar capacidades, rendimiento o requisitos de hardware de ningún modelo real.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -45,7 +45,7 @@ No disponible. No existe un modelo comparable porque no se ha publicado ningún 
 - No se debe asumir que este repositorio es utilizable para tareas de VQA o cualquier otra tarea de IA.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/artempor/chat-lab
+- Repositorio en Hugging Face: https://huggingface.co/artempor/chat-lab
 - Proyectos homónimos en GitHub (no relacionados directamente):
   - https://github.com/ChatLab/ChatLab
   - https://github.com/cpdata/chatlab

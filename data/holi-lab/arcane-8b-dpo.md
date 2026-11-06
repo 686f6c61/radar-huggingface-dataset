@@ -15,7 +15,7 @@ A diferencia de los modelos de role-play convencionales, ArcANE-8B-DPO está dis
 | Parámetros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 8.192 tokens (máximo durante entrenamiento) |
 | Tipos de cuantización | No disponible (el repositorio publica únicamente pesos safetensors sin cuantizar) |
-| Idiomas soportados | Inglés (según metadatos de HuggingFace) |
+| Idiomas soportados | Inglés (según metadatos de Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (compatible con Transformers) |
 
@@ -91,25 +91,25 @@ El ajuste DPO mejora la puntuación Overall con contexto Arc en 4.6 puntos respe
 | ArcANE-8B-SFT | Qwen3-8B | SFT | 52.3 | 8.19B | Apache 2.0 |
 | Qwen3-8B | Qwen3-8B | Preentrenado | 43.1 | ≈8B | Apache 2.0 |
 
-Además, la colección ArcANE en HuggingFace incluye variantes de mayor tamaño: ArcANE-32B-DPO y ArcANE-32B-RLVR, ambas de 33B, que comparten el mismo enfoque pero con un modelo base mayor. No se dispone de datos de benchmark para estas variantes en la información proporcionada.
+Además, la colección ArcANE en Hugging Face incluye variantes de mayor tamaño: ArcANE-32B-DPO y ArcANE-32B-RLVR, ambas de 33B, que comparten el mismo enfoque pero con un modelo base mayor. No se dispone de datos de benchmark para estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idiomas: el modelo está orientado al inglés según los metadatos de HuggingFace; el corpus de entrenamiento procede de novelas en inglés, por lo que su rendimiento en otros idiomas no está evaluado.
+- Idiomas: el modelo está orientado al inglés según los metadatos de Hugging Face; el corpus de entrenamiento procede de novelas en inglés, por lo que su rendimiento en otros idiomas no está evaluado.
 - No es un modelo generalista: no se han publicado resultados en benchmarks clásicos como MMLU, HumanEval o GSM8K. Su uso previsto es investigación en role-play narrativo.
 - Dependencia del contexto: el rendimiento óptimo exige proporcionar el Character Arc truncado al capítulo consultado. Si se exponen fases futuras, el modelo puede tener fugas de información y revelar spoilers.
 - Restricciones de preprocesado: para una condicionamiento temporal fiel deben eliminarse siempre `literary_validation` y `evidence_summary`; si cualquier fase posterior queda oculta, también deben eliminarse `pole_end` y `arc_direction`.
 - Ventana de entrenamiento limitada: la máxima longitud de secuencia es de 8.192 tokens durante el entrenamiento, lo que puede no aprovechar toda la capacidad de contexto de la base Qwen3-8B.
 - Evaluación con juez automático: las puntuaciones proceden del juez DeepSeek-V4-Flash, lo que introduce un sesgo inherente al propio modelo evaluador.
-- Adopción temprana: el modelo tiene 0 descargas en HuggingFace en el momento de la consulta, por lo que no existen validaciones externas ni datos de uso en producción.
+- Adopción temprana: el modelo tiene 0 descargas en Hugging Face en el momento de la consulta, por lo que no existen validaciones externas ni datos de uso en producción.
 - Riesgo de alucinación: si el contexto del Character Arc es insuficiente o ambiguo, el modelo puede inventar rasgos, eventos o relaciones del personaje que no estén presentes en la información proporcionada.
 - Licencia: Apache 2.0 permite uso comercial, pero el modelo está orientado a investigación. El corpus ArcANE puede tener restricciones adicionales que conviene revisar antes de un despliegue comercial.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/holi-lab/ArcANE-8B-DPO
+- Modelo en Hugging Face: https://huggingface.co/holi-lab/ArcANE-8B-DPO
 - Artículo en arXiv: https://arxiv.org/abs/2606.05553
 - Dataset de entrenamiento: https://huggingface.co/datasets/holi-lab/ArcANE-Data
 - Modelo base SFT: https://huggingface.co/holi-lab/ArcANE-8B-SFT
 - Repositorio de ArcANE en GitHub: https://github.com/holi-lab/ArcANE
-- Colección ArcANE en HuggingFace: https://huggingface.co/collections/holi-lab/arcane
+- Colección ArcANE en Hugging Face: https://huggingface.co/collections/holi-lab/arcane

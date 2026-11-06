@@ -94,7 +94,7 @@ Contexto largo (recuperación de bloques, needle questions, n=6 por longitud): 8
 
 | Modelo | Parámetros | Contexto | Precisión media (jev-eval) | ECE medio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jevresearch-1.7b-v2 | 1,79B (70,8M entrenables) | hasta 262k en pruebas | 0,8780 | 0,0239 | Apache 2.0 | HuggingFace, requiere harness propio |
+| jevresearch-1.7b-v2 | 1,79B (70,8M entrenables) | hasta 262k en pruebas | 0,8780 | 0,0239 | Apache 2.0 | Hugging Face, requiere harness propio |
 | Jev jev-1.13.0 (línea base) | no disponible | no disponible | 0,8368 | 0,0826 | no disponible | línea base de producción del autor |
 | Qwen3-2B zero-shot (d3:2b) | ~2B | no disponible | 0,8393 | 0,0593 | no disponible | no disponible |
 | Qwen3-4B LoRA (ablación) | ~4B | no disponible | 0,8760 | 0,0251 | Apache 2.0 (base) | no publicado como checkpoint |
@@ -113,7 +113,7 @@ Contexto largo (recuperación de bloques, needle questions, n=6 por longitud): 8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/georgep4181/jevresearch-1.7b-v2
+- Modelo en Hugging Face: https://huggingface.co/georgep4181/jevresearch-1.7b-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio `jev_model` (harness de inferencia): no disponible como enlace directo en la información proporcionada
 - Paper, blog o demo: no disponibles en la información proporcionada

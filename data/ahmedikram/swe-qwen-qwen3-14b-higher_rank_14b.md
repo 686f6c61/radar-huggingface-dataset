@@ -4,7 +4,7 @@
 
 El modelo `SWE-Qwen-qwen3-14b-higher_rank_14b` es un adaptador LoRA obtenido mediante QLoRA sobre el modelo base `Qwen/Qwen3-14B`, desarrollado por `ahmedikram`. Su propósito es la resolución automatizada de incidencias de software: dado un *issue* de GitHub, el modelo genera un parche que hace que los tests `FAIL_TO_PASS` pasen y que los tests `PASS_TO_PASS` sigan pasando dentro del repositorio real. El proyecto se centra en el subconjunto SWE-bench de problemas en Python.
 
-El adaptador se entrenó con la técnica QLoRA (4-bit NF4) usando Unsloth y FlashAttention 2.8.3 sobre una A100-80GB en la plataforma Modal. El repositorio de HuggingFace contiene solo el adaptador PEFT (0.5 GB), no los pesos completos del modelo base. La variante `higher_rank_14b` fue seleccionada como campeona frente a otras dos configuraciones de LoRA, alcanzando un 17.20% de éxito F2P (resolución del issue) y 90.10% de preservación P2P en una muestra de 100 instancias del golden set de SWE-bench.
+El adaptador se entrenó con la técnica QLoRA (4-bit NF4) usando Unsloth y FlashAttention 2.8.3 sobre una A100-80GB en la plataforma Modal. El repositorio de Hugging Face contiene solo el adaptador PEFT (0.5 GB), no los pesos completos del modelo base. La variante `higher_rank_14b` fue seleccionada como campeona frente a otras dos configuraciones de LoRA, alcanzando un 17.20% de éxito F2P (resolución del issue) y 90.10% de preservación P2P en una muestra de 100 instancias del golden set de SWE-bench.
 
 La relevancia actual del modelo es doble: demuestra que es posible ajustar un modelo de 14.000 millones de parámetros para una tarea compleja de ingeniería de software con un presupuesto de cómputo muy reducido (alrededor de 1.2 horas de entrenamiento por variante), y ofrece una alternativa evaluable y reproducible para la comunidad que trabaja en resolución de issues de código.
 
@@ -92,7 +92,7 @@ Todas las variantes comparten el mismo modelo base, la misma licencia Apache-2.0
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahmedikram/SWE-Qwen-qwen3-14b-higher_rank_14b
+- Hugging Face: https://huggingface.co/ahmedikram/SWE-Qwen-qwen3-14b-higher_rank_14b
 - Repositorio del proyecto: https://github.com/AhmedIkram05/SWE-Qwen
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Registro de experimentos en Weights & Biases: no se proporciona una URL pública en la información disponible.

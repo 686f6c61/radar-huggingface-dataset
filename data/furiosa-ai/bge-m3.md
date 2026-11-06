@@ -75,7 +75,7 @@ La comparativa se limita a aspectos generales porque no se dispone de datos de r
 
 ## Enlaces
 
-- [Repositorio HuggingFace furiosa-ai/bge-m3](https://huggingface.co/furiosa-ai/bge-m3)
+- [Repositorio Hugging Face furiosa-ai/bge-m3](https://huggingface.co/furiosa-ai/bge-m3)
 - [Modelo base BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3)
 - [Documentacion Furiosa-LLM](https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html)
 - [Documentacion del servidor Furiosa-LLM](https://developer.furiosa.ai/latest/en/furiosa_llm/furiosa-llm-serve.html)

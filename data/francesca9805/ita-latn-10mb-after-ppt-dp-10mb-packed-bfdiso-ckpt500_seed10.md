@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) del modelo base francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, segun los pesos en safetensors del repositorio, y esta etiquetado en la libreria transformers con pipeline text-generation. El nombre del checkpoint (ckpt500_seed10) indica que corresponde al paso 500 de entrenamiento con la semilla 10.
+Este modelo es un ajuste fino (fine-tuning) del modelo base francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, segun los pesos en safetensors del repositorio, y esta etiquetado en la libreria transformers con pipeline text-generation. El nombre del checkpoint (ckpt500_seed10) indica que corresponde al paso 500 de entrenamiento con la semilla 10.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL, y la propia model card lo identifica como derivado de "generated_from_trainer". Por el identificador (ita-latn) y el sufijo "10mb", todo apunta a un experimento academico de ajuste sobre un corpus pequeno de aproximadamente 10 MB en italiano (latin script) empaquetado, aunque este extremo no se confirma en la informacion disponible.
 
@@ -12,13 +12,13 @@ Su relevancia es limitada y de caracter experimental: no presenta datos de evalu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun el tag gpt2 de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun el tag gpt2 de Hugging Face) |
 | Parametros totales | 39.087.104 (dato real de los pesos safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | no disponible; solo se publican pesos en precision completa/bf16 en safetensors |
 | Idiomas soportados | no disponibles; el identificador "ita-latn" sugiere italiano en script latino, dato no confirmado en la ficha |
-| Licencia | no disponible (la model card incluye el campo "licence: license" sin concretar y la ficha de HuggingFace no declara licencia) |
+| Licencia | no disponible (la model card incluye el campo "licence: license" sin concretar y la ficha de Hugging Face no declara licencia) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -67,7 +67,7 @@ No se dispone de comparativas de rendimiento publicadas para este modelo. Como r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ita-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | 39,1 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| ita-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | 39,1 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small | 124 M | 1024 tokens | MIT (pesos publicos de OpenAI) | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 
@@ -87,7 +87,7 @@ Datos de benchmark, idiomas y licencia de los modelos comparados: no disponibles
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/mnl3bw80
 - Repositorio de TRL: https://github.com/huggingface/trl

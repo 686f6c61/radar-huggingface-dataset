@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LibreSAM3DBodyh-mesh es un modelo de recuperación de malla 3D del cuerpo humano (3D human mesh recovery) publicado por el usuario LibreYOLO en HuggingFace. Está diseñado para tomar una imagen como entrada y generar una representación tridimensional de la pose y la forma del cuerpo humano, una tarea fundamental en aplicaciones de visión por computadora como animación, realidad aumentada y análisis biomecánico. El pipeline declarado es `image-to-3d`, lo que confirma su función principal.
+LibreSAM3DBodyh-mesh es un modelo de recuperación de malla 3D del cuerpo humano (3D human mesh recovery) publicado por el usuario LibreYOLO en Hugging Face. Está diseñado para tomar una imagen como entrada y generar una representación tridimensional de la pose y la forma del cuerpo humano, una tarea fundamental en aplicaciones de visión por computadora como animación, realidad aumentada y análisis biomecánico. El pipeline declarado es `image-to-3d`, lo que confirma su función principal.
 
-El modelo se distribuye bajo la licencia `sam-license`, que sugiere una derivación o inspiración en el proyecto Segment Anything Model (SAM) de Meta, aunque no se especifica si es una adaptación directa o un trabajo original. El repositorio tiene un tamaño de 1,7 GB y su acceso está restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales en HuggingFace antes de poder descargarlo. No se proporcionan detalles sobre arquitectura, número de parámetros, contexto ni datos de entrenamiento en la información disponible.
+El modelo se distribuye bajo la licencia `sam-license`, que sugiere una derivación o inspiración en el proyecto Segment Anything Model (SAM) de Meta, aunque no se especifica si es una adaptación directa o un trabajo original. El repositorio tiene un tamaño de 1,7 GB y su acceso está restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales en Hugging Face antes de poder descargarlo. No se proporcionan detalles sobre arquitectura, número de parámetros, contexto ni datos de entrenamiento en la información disponible.
 
 A día de hoy, el modelo cuenta con cero descargas y cero likes, lo que indica que es una publicación reciente (creado en julio de 2026) y aún no ha sido ampliamente adoptado por la comunidad. La falta de documentación técnica y de resultados de evaluación hace que su utilidad práctica sea difícil de valorar sin acceso al repositorio.
 
@@ -61,7 +61,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones adicionales en HuggingFace, lo que puede limitar su uso en entornos corporativos o académicos que requieran acceso sin fricciones.
+- Acceso restringido: el modelo requiere aceptar condiciones adicionales en Hugging Face, lo que puede limitar su uso en entornos corporativos o académicos que requieran acceso sin fricciones.
 - Licencia `sam-license`: es una licencia no estándar (probablemente derivada de la licencia de Segment Anything de Meta) que puede imponer restricciones de uso comercial o de redistribución. Es imprescindible revisar los términos exactos antes de cualquier implementación en producción.
 - Sin documentación técnica: la ausencia de información sobre arquitectura, entrenamiento y rendimiento impide evaluar su robustez, sesgos o comportamiento en casos extremos.
 - Riesgo de alucinación: en el contexto de reconstrucción 3D, esto se traduce en mallas incorrectas o inconsistentes con la imagen de entrada, especialmente con poses poco comunes o imágenes de baja calidad. No se ha verificado la fiabilidad del modelo.
@@ -70,4 +70,4 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [LibreYOLO/LibreSAM3DBodyh-mesh](https://huggingface.co/LibreYOLO/LibreSAM3DBodyh-mesh)
+- Repositorio en Hugging Face: [LibreYOLO/LibreSAM3DBodyh-mesh](https://huggingface.co/LibreYOLO/LibreSAM3DBodyh-mesh)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lazarus Object Trajectory Predictor es un modelo ONNX de predicción de trayectorias orientado a robótica y visión por computador, publicado por el usuario amithroy en HuggingFace. No es un modelo de lenguaje: es un predictor de secuencias físicas que, a partir de 15 pasos de historial (~0,5 s a 30 FPS) con el vector de estado `[x, y, vx, vy, ax, ay]`, genera 20 pasos futuros (~0,67 s) de coordenadas y una estimación del punto de impacto.
+Lazarus Object Trajectory Predictor es un modelo ONNX de predicción de trayectorias orientado a robótica y visión por computador, publicado por el usuario amithroy en Hugging Face. No es un modelo de lenguaje: es un predictor de secuencias físicas que, a partir de 15 pasos de historial (~0,5 s a 30 FPS) con el vector de estado `[x, y, vx, vy, ax, ay]`, genera 20 pasos futuros (~0,67 s) de coordenadas y una estimación del punto de impacto.
 
 El modelo se presenta como "physics-informed" y cubre cinco regímenes de movimiento: balística parabólica con gravedad y rozamiento, rebotes, evasión con trayectoria curva, cinemática acelerada y deriva estable. Su propuesta de valor es la inferencia en tiempo real sobre CPU con ONNX Runtime u OpenCV DNN, con menos de 2 ms por consulta según el autor, lo que lo sitúa en el nicho de sistemas embebidos y robótica de bajo coste computacional.
 
@@ -82,7 +82,7 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 | Modelo | Parametros | Horizonte de prediccion | ADE / FDE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lazarus Object Trajectory | no disponible | 20 pasos (~0,67 s a 30 FPS) | 0,0711 / 0,1572 (viewport normalizado) | MIT | HuggingFace (0 descargas) |
+| Lazarus Object Trajectory | no disponible | 20 pasos (~0,67 s a 30 FPS) | 0,0711 / 0,1572 (viewport normalizado) | MIT | Hugging Face (0 descargas) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia metodológica, la métrica ADE/FDE de este modelo está normalizada al viewport, mientras que los estándares de la literatura la expresan en metros sobre conjuntos como ETH/UCY, por lo que cualquier comparación directa requeriría reentrenar o reevaluar el modelo en esos conjuntos, algo que no se ha hecho en la información disponible.
@@ -103,7 +103,7 @@ Como referencia metodológica, la métrica ADE/FDE de este modelo está normaliz
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amithroy/lazarus-object-trajectory
+- Hugging Face: https://huggingface.co/amithroy/lazarus-object-trajectory
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demos: no disponible

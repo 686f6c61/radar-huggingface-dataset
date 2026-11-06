@@ -19,7 +19,7 @@ El repositorio ocupa 1670,3 GB e incluye escalones de cuantizacion Q2_K, Q3_K_M 
 | Tipos de cuantizacion | Q2_K, Q3_K_M y Q4_K_M (pendiente); Q5_K_M descartado; existe un staging Q8_0 intermedio |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp), dividido en multiples shards por superar el limite de tamano por fichero de HuggingFace |
+| Formato de pesos | GGUF (llama.cpp), dividido en multiples shards por superar el limite de tamano por fichero de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No cabe en GPU de consumo: ni en RTX 4090 (24 GB) ni en configuraciones multi-GPU de gama consumer convencionales. Se trata de un modelo de clase centro de datos.
 - Opciones de despliegue: llama.cpp mediante el fork con la rama `runtime/deepseek41` (el runtime upstream todavia no lo soporta). No hay soporte confirmado en vLLM, TGI ni Ollama.
 - Latencia y throughput estimados: no disponible.
-- Nota sobre sharding: los ficheros GGUF estan divididos en partes porque cada uno supera el limite de fichero unico de HuggingFace; la carga requiere soportar GGUF multi-shard.
+- Nota sobre sharding: los ficheros GGUF estan divididos en partes porque cada uno supera el limite de fichero unico de Hugging Face; la carga requiere soportar GGUF multi-shard.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Solstice-AI/DeepSeek-V4.1-Flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Solstice-AI/DeepSeek-V4.1-Flash-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - PR de conversion en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/28696
 - Fork de runtime con la rama `runtime/deepseek41`: https://github.com/vcruz305/llama.cpp

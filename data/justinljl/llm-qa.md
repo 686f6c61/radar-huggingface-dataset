@@ -4,7 +4,7 @@
 
 El repositorio `justinljl/llm-qa` aloja un modelo de clasificación basado en una arquitectura híbrida CNN-transformer a escala "xlarge". El autor, `justinljl`, lo presenta como una implementación orientada a tareas de clasificación, con atención de ventana deslizante (sliding window) y una estrategia de fusión por tensores (tensor fusion). El repositorio contiene únicamente un archivo `main.py` como artefacto principal, sin pesos publicados ni documentación adicional sobre el entrenamiento.
 
-El modelo no ha recibido descargas ni interacciones en HuggingFace, y la model card es mínima: no se especifican parámetros totales, longitud de contexto, idiomas soportados ni datos de entrenamiento. Se trata de un proyecto en fase muy temprana o experimental, sin evidencia pública de rendimiento ni despliegue. Su relevancia actual es limitada, aunque puede resultar de interés para quienes investigan arquitecturas híbridas CNN-transformer con atención local.
+El modelo no ha recibido descargas ni interacciones en Hugging Face, y la model card es mínima: no se especifican parámetros totales, longitud de contexto, idiomas soportados ni datos de entrenamiento. Se trata de un proyecto en fase muy temprana o experimental, sin evidencia pública de rendimiento ni despliegue. Su relevancia actual es limitada, aunque puede resultar de interés para quienes investigan arquitecturas híbridas CNN-transformer con atención local.
 
 ## Especificaciones tecnicas
 
@@ -67,5 +67,5 @@ No disponible. No se han encontrado modelos comparables documentados en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justinljl/llm-qa
+- Repositorio en Hugging Face: https://huggingface.co/justinljl/llm-qa
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo en la busqueda web.

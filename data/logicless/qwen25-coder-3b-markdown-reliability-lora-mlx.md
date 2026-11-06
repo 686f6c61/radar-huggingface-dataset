@@ -105,9 +105,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Cumplimiento de contrato Markdown (240 prompts) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Este adaptador (Run 2) + Qwen2.5-Coder-3B-Instruct-4bit | ~3.000 M (base) + LoRA | No disponible en la model card | 82,50% | MIT | HuggingFace, formato MLX |
-| Qwen2.5-Coder-3B-Instruct-4bit (modelo base sin adaptador) | ~3.000 M | No disponible en la informacion proporcionada | 8,33% | Consultar la licencia del modelo base | HuggingFace, formato MLX |
-| Run 1 del mismo proyecto (etapa intermedia) | ~3.000 M (base) + LoRA | No disponible | 32,08% | MIT | HuggingFace, formato MLX |
+| Este adaptador (Run 2) + Qwen2.5-Coder-3B-Instruct-4bit | ~3.000 M (base) + LoRA | No disponible en la model card | 82,50% | MIT | Hugging Face, formato MLX |
+| Qwen2.5-Coder-3B-Instruct-4bit (modelo base sin adaptador) | ~3.000 M | No disponible en la informacion proporcionada | 8,33% | Consultar la licencia del modelo base | Hugging Face, formato MLX |
+| Run 1 del mismo proyecto (etapa intermedia) | ~3.000 M (base) + LoRA | No disponible | 32,08% | MIT | Hugging Face, formato MLX |
 | Otros adaptadores LoRA de fiabilidad estructural comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks estandar ni de comparativas publicadas frente a otros adaptadores de la misma categoria en la informacion proporcionada.
@@ -129,8 +129,8 @@ No se dispone de datos de benchmarks estandar ni de comparativas publicadas fren
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/logicless/qwen25-coder-3b-markdown-reliability-lora-mlx
-- Modelo base en HuggingFace: https://huggingface.co/mlx-community/Qwen2.5-Coder-3B-Instruct-4bit
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/logicless/qwen25-coder-3b-markdown-reliability-lora-mlx
+- Modelo base en Hugging Face: https://huggingface.co/mlx-community/Qwen2.5-Coder-3B-Instruct-4bit
 - Repositorio GitHub del experimento (codigo, evaluador, configuraciones y resultados): https://github.com/karyboy/mlx-markdown-reliability-lora
 - README publicado del proyecto: https://github.com/karyboy/mlx-markdown-reliability-lora/blob/main/publish/huggingface/README.md
 - Dataset MultiPL-E: https://huggingface.co/datasets/nuprl/MultiPL-E

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HGRN-1.3B-semi-structured-ELSA-80pct es un checkpoint de investigación publicado por el usuario ikimyaii en HuggingFace. Consiste en el modelo base fla-hub/hgrn-1.3B-100B (arquitectura HGRN, familia de recurrentes lineales con puertas jerárquicas, ~1.364 millones de parámetros) al que se le ha aplicado una poda semi-estructurada del 80 % mediante ELSA, el código oficial del artículo arXiv:2510.01650. El resultado conserva exactamente el 20 % de los pesos de cada fila en cada una de las 168 capas lineales podadas (dispersidad medida: 79,98 %), manteniendo intactos los embeddings y el `lm_head`.
+HGRN-1.3B-semi-structured-ELSA-80pct es un checkpoint de investigación publicado por el usuario ikimyaii en Hugging Face. Consiste en el modelo base fla-hub/hgrn-1.3B-100B (arquitectura HGRN, familia de recurrentes lineales con puertas jerárquicas, ~1.364 millones de parámetros) al que se le ha aplicado una poda semi-estructurada del 80 % mediante ELSA, el código oficial del artículo arXiv:2510.01650. El resultado conserva exactamente el 20 % de los pesos de cada fila en cada una de las 168 capas lineales podadas (dispersidad medida: 79,98 %), manteniendo intactos los embeddings y el `lm_head`.
 
 El interés del modelo no es su calidad final, sino su valor como referencia experimental. El propio autor lo describe como baseline para EHWS (un método alternativo de poda), y publica tanto perplejidad como precisión zero-shot frente al modelo denso y frente a las variantes EHWS row-wise y ELSA unstructured. Los números muestran una degradación severa: la perplejidad en WikiText-2 pasa de 11,81 (denso) a 58,79, y la media de siete tareas zero-shot cae de 0,4376 a 0,3687.
 
@@ -88,10 +88,10 @@ No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información di
 
 | Modelo | Parámetros | Contexto | Ppl WikiText-2 | Media zero-shot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fla-hub/hgrn-1.3B-100B (denso) | 1,36 B | No disponible | 11,81 | 0,4376 | No disponible | HuggingFace |
-| ikimyaii/HGRN-1.3B-semi-structured-EHWS-80pct | 1,36 B | No disponible | 40,31 | No disponible | No disponible | HuggingFace |
-| ikimyaii/HGRN-1.3B-unstructured-ELSA-80pct-lam1e-3 | 1,36 B | No disponible | 54,72 | No disponible | No disponible | HuggingFace |
-| **Este modelo** | 1,36 B | No disponible | 58,79 | 0,3687 | No disponible | HuggingFace |
+| fla-hub/hgrn-1.3B-100B (denso) | 1,36 B | No disponible | 11,81 | 0,4376 | No disponible | Hugging Face |
+| ikimyaii/HGRN-1.3B-semi-structured-EHWS-80pct | 1,36 B | No disponible | 40,31 | No disponible | No disponible | Hugging Face |
+| ikimyaii/HGRN-1.3B-unstructured-ELSA-80pct-lam1e-3 | 1,36 B | No disponible | 54,72 | No disponible | No disponible | Hugging Face |
+| **Este modelo** | 1,36 B | No disponible | 58,79 | 0,3687 | No disponible | Hugging Face |
 
 Frente a otras familias de ~1,3 B parámetros (Llama 3.2 1B, Qwen2.5 1.5B, SmolLM2 1.7B), no hay datos comparables en la información disponible: ni el autor ni la búsqueda web proporcionan resultados cruzados con esos modelos.
 
@@ -109,7 +109,7 @@ Frente a otras familias de ~1,3 B parámetros (Llama 3.2 1B, Qwen2.5 1.5B, SmolL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-80pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-80pct
 - Modelo base: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Variante EHWS row-wise 80 %: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-EHWS-80pct
 - Variante ELSA unstructured 80 %: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-80pct-lam1e-3

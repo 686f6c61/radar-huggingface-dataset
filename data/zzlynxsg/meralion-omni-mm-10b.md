@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zzlynxSG/MERaLiON-Omni-MM-10B
+- Modelo en Hugging Face: https://huggingface.co/zzlynxSG/MERaLiON-Omni-MM-10B
 - Licencia del modelo: https://huggingface.co/zzlynxSG/MERaLiON-Omni-MM-10B/blob/main/LICENSE
 - Variante alineada con GRPO: https://huggingface.co/zzlynxSG/MERaLiON-Omni-GRPO-10B
 - Modelo posterior MERaLiON-G4-E4B: https://huggingface.co/zzlynxSG/MERaLiON-G4-E4B

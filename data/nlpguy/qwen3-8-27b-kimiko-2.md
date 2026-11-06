@@ -75,8 +75,8 @@ No hay datos de rendimiento comparativo. El merge no ofrece ventajas documentada
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/nlpguy/Qwen3.8-27B-Kimiko-2)
-- [Modelo base Qwen3.8-27B en HuggingFace](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Página del modelo en Hugging Face](https://huggingface.co/nlpguy/Qwen3.8-27B-Kimiko-2)
+- [Modelo base Qwen3.8-27B en Hugging Face](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio GitHub de Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Modelo Fable-Distill](https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill)
 - [Modelo Kiwen1.1-27B](https://huggingface.co/beyoru/Kiwen1.1-27B)

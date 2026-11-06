@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 1bit-MONSTER/Qwen3.8-27B-DFlash2-GGUF | Borrador DFlash2 en GGUF (Q8_0, Q4_K) | ~1,92 B | no disponible | Apache-2.0 | HuggingFace, requiere fork de llama.cpp o motor 1bit |
+| 1bit-MONSTER/Qwen3.8-27B-DFlash2-GGUF | Borrador DFlash2 en GGUF (Q8_0, Q4_K) | ~1,92 B | no disponible | Apache-2.0 | Hugging Face, requiere fork de llama.cpp o motor 1bit |
 | Cabezal MTP integrado de Qwen3.8-27B (`--mtp`) | Borrador incluido en el modelo objetivo | no disponible | el del modelo objetivo | Apache-2.0 | Uso directo con el flag `--mtp`; recomendado para turnos de chat cortos |
-| z-lab/Qwen3.8-27B-DFlash2-GGUF | Conversión GGUF del mismo borrador por el autor original | ~1,92 B | no disponible | Apache-2.0 | HuggingFace; reporta 56,7 GB de repo y 330.563 descargas según el agregador local-ai-zone |
-| Qwen3.8-27B-UD-Q4_K_XL-MTP | Modelo objetivo cuantizado con cabezal MTP | 27 B (nominal) | no disponible | Apache-2.0 | HuggingFace (1bit-MONSTER) |
+| z-lab/Qwen3.8-27B-DFlash2-GGUF | Conversión GGUF del mismo borrador por el autor original | ~1,92 B | no disponible | Apache-2.0 | Hugging Face; reporta 56,7 GB de repo y 330.563 descargas según el agregador local-ai-zone |
+| Qwen3.8-27B-UD-Q4_K_XL-MTP | Modelo objetivo cuantizado con cabezal MTP | 27 B (nominal) | no disponible | Apache-2.0 | Hugging Face (1bit-MONSTER) |
 
 La diferencia funcional clave frente al cabezal MTP es el tamaño de bloque: DFlash2 propone bloques más largos y rinde mejor en código y salida estructurada, mientras que MTP sigue siendo la opción por defecto para conversaciones cortas. No se dispone de datos de rendimiento que permitan cuantificar esa diferencia.
 
@@ -87,7 +87,7 @@ La diferencia funcional clave frente al cabezal MTP es el tamaño de bloque: DFl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/Qwen3.8-27B-DFlash2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/Qwen3.8-27B-DFlash2-GGUF
 - Borrador original (espejo): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo objetivo cuantizado con MTP: https://huggingface.co/1bit-MONSTER/Qwen3.8-27B-UD-Q4_K_XL-MTP

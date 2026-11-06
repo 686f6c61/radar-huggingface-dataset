@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BEBLaDII Foundation Weights es un conjunto de pesos de entrenamiento experimental para la arquitectura BEBLaDII (Bidirectional Encoder Based Latent Diffusion with Information Injection), desarrollada por Bogdan Buliakov (usuario `bulyakovbr` en HuggingFace y `Laeryid` en GitHub). El modelo no es un LLM conversacional listo para usar, sino un conjunto de checkpoints de las tres primeras fases de entrenamiento de un sistema de difusión de texto basado en un espacio latente esférico. Se apoya en inicializaciones de ModernBERT-large y conceptos de la familia DeepSeek, y está licenciado bajo Apache 2.0.
+BEBLaDII Foundation Weights es un conjunto de pesos de entrenamiento experimental para la arquitectura BEBLaDII (Bidirectional Encoder Based Latent Diffusion with Information Injection), desarrollada por Bogdan Buliakov (usuario `bulyakovbr` en Hugging Face y `Laeryid` en GitHub). El modelo no es un LLM conversacional listo para usar, sino un conjunto de checkpoints de las tres primeras fases de entrenamiento de un sistema de difusión de texto basado en un espacio latente esférico. Se apoya en inicializaciones de ModernBERT-large y conceptos de la familia DeepSeek, y está licenciado bajo Apache 2.0.
 
 La relevancia de este modelo es fundamentalmente investigadora: explora la aplicación de difusión continua sobre una esfera latente (con normalización esférica) para la generación de texto, combinando un codificador VAE, un decodificador inicializado desde ModernBERT y un módulo de difusión con conexiones tipo UNet y AdaLN. Los pesos se publican para permitir la continuación del entrenamiento en fases posteriores (fase 4 y más allá), no para inferencia directa.
 
@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables directamente, ya que BEB
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bulyakovbr/bebladii-foundation-weights
+- Repositorio Hugging Face: https://huggingface.co/bulyakovbr/bebladii-foundation-weights
 - GitHub del autor (Laeryid): https://github.com/Laeryid
 - Repositorio BEBLaDII en GitHub: https://github.com/Laeryid/BEBLaDII (indicado en la model card)

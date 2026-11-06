@@ -82,6 +82,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (po
 
 - Repositorio del modelo: https://huggingface.co/fastwalker1118/b1kcheckpoints
 - Dataset de rollout asociado: https://huggingface.co/datasets/fastwalker1118/B1k_rollout
-- Perfil del autor en HuggingFace: https://huggingface.co/fastwalker1118
+- Perfil del autor en Hugging Face: https://huggingface.co/fastwalker1118
 - Perfil del autor en GitHub: https://github.com/fastwalker1118
 - Modelo base: https://huggingface.co/IliaLarchenko/behavior_50t_checkpoint

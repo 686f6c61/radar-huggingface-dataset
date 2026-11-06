@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jjjlimaus/chrono4-2023-qa200v4-anchor-g03` es un modelo de lenguaje publicado en HuggingFace por el usuario `jjjlimaus`, con un total real de 2.018.511.234 parametros (aproximadamente 2,02 mil millones) segun los metadatos de sus ficheros `safetensors`. El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de poder descargar los pesos.
+`jjjlimaus/chrono4-2023-qa200v4-anchor-g03` es un modelo de lenguaje publicado en Hugging Face por el usuario `jjjlimaus`, con un total real de 2.018.511.234 parametros (aproximadamente 2,02 mil millones) segun los metadatos de sus ficheros `safetensors`. El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de poder descargar los pesos.
 
 La informacion publica disponible es minima: no hay model card con descripcion, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion. Los unicos indicios son el tag `sn38-nanochrono`, que sugiere la pertenencia a una serie o familia interna denominada "nanochrono", y la propia nomenclatura del identificador `chrono4-2023-qa200v4-anchor-g03`, que apunta a un ajuste fino orientado a preguntas y respuestas (QA) sobre datos de 2023, con variantes de "anchor" y una generacion o version "g03".
 
@@ -21,7 +21,7 @@ Se trata, por tanto, de un artefacto practicamente indocumentado: 4 descargas y 
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 16,1 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-10-05 |
 | Ultima actualizacion | 2026-10-05 |
@@ -51,7 +51,7 @@ Cualquier caso de uso concreto seria especulativo, dado que no existe documentac
 - Evaluacion comparativa interna: desplegar el modelo junto a otros de ~2B parametros y medir calidad en tareas de QA sobre dominios cerrados, para decidir si merece la pena integrarlo.
 - Prototipado de respuesta a preguntas extractiva: si el ajuste `qa200v4` es real, podria emplearse en pipelines de preguntas sobre documentacion propia, previa validacion manual de las respuestas.
 - Tareas de bajo coste computacional: con 2,02 mil millones de parametros, cabe en GPU de consumo, lo que permite usarlo en entornos de desarrollo sin infraestructura dedicada.
-- Analisis forense de modelos: util para estudiar practicas de publicacion en HuggingFace, modelos gated sin model card y su trazabilidad.
+- Analisis forense de modelos: util para estudiar practicas de publicacion en Hugging Face, modelos gated sin model card y su trazabilidad.
 - Generacion de texto auxiliar: borradores, resumenes o reformulacion, siempre con revision humana y sin garantia de calidad.
 - Experimentacion academica sobre fine-tuning: punto de partida para reproducir o auditar el ajuste con datos de 2023, si se obtiene acceso a los pesos y a las condiciones de uso.
 
@@ -88,7 +88,7 @@ No es posible comparar rendimiento porque el modelo analizado no publica ningun 
 
 - Ausencia total de model card: no se documentan datos de entrenamiento, sesgos, idiomas ni limitaciones conocidas.
 - Licencia desconocida: no se puede asumir uso comercial permitido. Cualquier explotacion en produccion es juridicamente arriesgada sin aclaracion previa del autor.
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace, lo que anade una capa de revisión y puede limitar la reproducibilidad.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face, lo que anade una capa de revisión y puede limitar la reproducibilidad.
 - Riesgo alto de alucinacion: sin evaluaciones publicas no hay ninguna garantia sobre la fidelidad factual del modelo.
 - Idiomas y contexto desconocidos: no se puede planificar una integracion multilingue ni estimar el coste de memoria de la cache KV.
 - Procedencia incierta del dataset: el sufijo `2023` sugiere datos de ese ano; si es correcto, el conocimiento estaria desactualizado.
@@ -98,7 +98,7 @@ No es posible comparar rendimiento porque el modelo analizado no publica ningun 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjjlimaus/chrono4-2023-qa200v4-anchor-g03
+- Modelo en Hugging Face: https://huggingface.co/jjjlimaus/chrono4-2023-qa200v4-anchor-g03
 - Perfil del autor: https://huggingface.co/jjjlimaus
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados web relevantes: ninguno (la busqueda no devolvio informacion relacionada con el modelo)

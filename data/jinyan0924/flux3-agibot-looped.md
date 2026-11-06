@@ -74,9 +74,9 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Tarea | Contexto / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jinyan0924/flux3-agibot-looped | ~7B | Prediccion de video futuro (image-to-video) | k fotogramas + caption → 33 fotogramas, 384×512, 15 fps | FLUX Kommunity License, no comercial | HuggingFace, 58 descargas |
-| Jinyan0924/flux3-agibot-videoft | ~7B | Prediccion de video futuro desde camara de robot | no disponible en detalle | FLUX Kommunity License, no comercial | HuggingFace |
-| black-forest-labs/flux-3-action-base | 7B | World action model para control de robot | no disponible | FLUX Kommunity License | HuggingFace (pesos abiertos) |
+| Jinyan0924/flux3-agibot-looped | ~7B | Prediccion de video futuro (image-to-video) | k fotogramas + caption → 33 fotogramas, 384×512, 15 fps | FLUX Kommunity License, no comercial | Hugging Face, 58 descargas |
+| Jinyan0924/flux3-agibot-videoft | ~7B | Prediccion de video futuro desde camara de robot | no disponible en detalle | FLUX Kommunity License, no comercial | Hugging Face |
+| black-forest-labs/flux-3-action-base | 7B | World action model para control de robot | no disponible | FLUX Kommunity License | Hugging Face (pesos abiertos) |
 | FLUX 3 (modelo multimodal completo) | no disponible | Generacion y comprension de video, audio, imagen y acciones | no disponible | no disponible (consultar BFL) | API y pesos de BFL |
 
 La comparativa se limita a los modelos de la misma familia porque no se dispone de datos de rendimiento de terceros en la informacion proporcionada.
@@ -97,7 +97,7 @@ La comparativa se limita a los modelos de la misma familia porque no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinyan0924/flux3-agibot-looped
+- Modelo en Hugging Face: https://huggingface.co/Jinyan0924/flux3-agibot-looped
 - Modelo base del fine-tune: https://huggingface.co/Jinyan0924/flux3-agibot-videoft
 - Modelo original de Black Forest Labs: https://huggingface.co/black-forest-labs/flux-3-action-base
 - Codigo, configuraciones y resultados: https://github.com/naomili0924/looped-dit-video/tree/main/agibot-flux3

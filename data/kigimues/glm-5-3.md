@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (zai-org), distribuido en HuggingFace a traves del repositorio `kigimues/GLM-5.3`. Se trata de un modelo de arquitectura MoE (Mixture of Experts) con atencion dispersa (DSA, DeepSeek Sparse Attention segun el tag `glm_moe_dsa`), construido sobre la misma base que GLM-5.2: todas las mejoras de esta version provienen exclusivamente de la fase de post-entrenamiento, no de cambios en el modelo base.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (zai-org), distribuido en Hugging Face a traves del repositorio `kigimues/GLM-5.3`. Se trata de un modelo de arquitectura MoE (Mixture of Experts) con atencion dispersa (DSA, DeepSeek Sparse Attention segun el tag `glm_moe_dsa`), construido sobre la misma base que GLM-5.2: todas las mejoras de esta version provienen exclusivamente de la fase de post-entrenamiento, no de cambios en el modelo base.
 
 El modelo esta orientado a tareas de codigo complejo, razonamiento de largo horizonte y uso agentico, con capacidades emergentes destacadas en ciberseguridad (descubrimiento de vulnerabilidades y explotacion). Segun la model card, alcanza estado del arte open-source en benchmarks como Terminal Bench 3.0, Agents' Last Exam y CyberGym.
 
@@ -104,7 +104,7 @@ La comparativa se limita a los datos de benchmarks publicados en la model card; 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kigimues/GLM-5.3
+- Hugging Face: https://huggingface.co/kigimues/GLM-5.3
 - Paper (referencia arXiv): arxiv:2602.15763
 - Repositorio GitHub de la organizacion: https://github.com/zai-org/GLM-5
 - Cookbook de SGLang para GLM-5.3: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3

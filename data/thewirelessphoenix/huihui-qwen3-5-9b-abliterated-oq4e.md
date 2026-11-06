@@ -65,7 +65,7 @@ No se dispone de datos comparativos con otras versiones del mismo modelo o con a
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/TheWirelessPhoenix/Huihui-Qwen3.5-9B-abliterated-oQ4e
+- Repositorio de Hugging Face: https://huggingface.co/TheWirelessPhoenix/Huihui-Qwen3.5-9B-abliterated-oQ4e
 - Modelo original (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated
 - Colección de modelos abliterated de huihui-ai: https://huggingface.co/collections/huihui-ai/qwen35-abliterated
 - Página en Ollama: https://ollama.com/huihui_ai/qwen3.5-abliterated

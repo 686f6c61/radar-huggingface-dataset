@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Falken-9 es un modelo publicado en HuggingFace por el usuario lewismoten bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente declara la licencia, sin proporcionar informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado.
+Falken-9 es un modelo publicado en Hugging Face por el usuario lewismoten bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente declara la licencia, sin proporcionar informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado.
 
 Por la informacion disponible no es posible determinar que problema resuelve, que arquitectura emplea ni cual es su longitud de contexto. El identificador "9" podria sugerir un tamano de 9 mil millones de parametros, pero se trata de una especulacion no confirmada por el autor, por lo que no debe tomarse como dato tecnico.
 
@@ -25,7 +25,7 @@ La relevancia actual del modelo es, a dia de hoy, limitada: se trata de un repos
 
 No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM o hibrida) en la model card ni en los metadatos del repositorio. Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de tecnicas de alineacion como RLHF o DPO, ni innovaciones tecnicas destacables.
 
-La unica informacion estructural disponible es la etiqueta `region:us` en los metadatos de HuggingFace, que indica la region de almacenamiento del repositorio y no aporta nada sobre el diseno del modelo.
+La unica informacion estructural disponible es la etiqueta `region:us` en los metadatos de Hugging Face, que indica la region de almacenamiento del repositorio y no aporta nada sobre el diseno del modelo.
 
 ## Capacidades
 
@@ -82,4 +82,4 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lewismoten/falken-9
+- Repositorio en Hugging Face: https://huggingface.co/lewismoten/falken-9

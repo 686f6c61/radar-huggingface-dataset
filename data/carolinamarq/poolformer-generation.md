@@ -72,5 +72,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/carolinamarq/poolformer-generation
+- Hugging Face: https://huggingface.co/carolinamarq/poolformer-generation
 - Otros enlaces relevantes: no disponibles (la búsqueda web no devolvió resultados relacionados con el modelo).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sourajkundu15-web/brain-tumor-vgg19-weights` es un repositorio de pesos publicado en HuggingFace por el usuario `sourajkundu15-web`. Por el nombre del repositorio, se trata de un checkpoint asociado a una red VGG-19 destinada a clasificacion de tumores cerebrales, presumiblemente a partir de imagenes de resonancia magnetica (MRI). Sin embargo, la model card publicada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia MIT, por lo que no es posible confirmar el dataset de entrenamiento, el numero de clases, el preprocesado ni las metricas obtenidas.
+`sourajkundu15-web/brain-tumor-vgg19-weights` es un repositorio de pesos publicado en Hugging Face por el usuario `sourajkundu15-web`. Por el nombre del repositorio, se trata de un checkpoint asociado a una red VGG-19 destinada a clasificacion de tumores cerebrales, presumiblemente a partir de imagenes de resonancia magnetica (MRI). Sin embargo, la model card publicada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia MIT, por lo que no es posible confirmar el dataset de entrenamiento, el numero de clases, el preprocesado ni las metricas obtenidas.
 
 El modelo acumula 0 descargas y 1 like en el momento de la consulta, y las fechas de creacion y actualizacion registradas son ambas 2026-09-13, un valor anomalo que sugiere un error de metadatos o una publicacion de prueba. No hay informacion sobre el formato de los pesos ni sobre si existe codigo de inferencia asociado.
 
@@ -92,7 +92,7 @@ La diferencia principal es de eficiencia: VGG-19 tiene entre cinco y veintisiete
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sourajkundu15-web/brain-tumor-vgg19-weights
+- Repositorio en Hugging Face: https://huggingface.co/sourajkundu15-web/brain-tumor-vgg19-weights
 - Model card del autor: https://huggingface.co/sourajkundu15-web/brain-tumor-vgg19-weights/blob/main/README.md
 - Perfil del autor: https://huggingface.co/sourajkundu15-web
 - Paper original de VGG (Simonyan y Zisserman, 2014): https://arxiv.org/abs/1409.1556

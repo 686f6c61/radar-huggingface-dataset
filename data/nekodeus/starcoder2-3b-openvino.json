@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/starcoder2-3b-openvino",
+  "slug": "nekodeus-starcoder2-3b-openvino",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/starcoder2-3b-openvino",
+  "created_at": "2026-11-06T07:30:01.000Z",
+  "updated_at": "2026-11-06T09:59:16.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "starcoder2",
+    "int8",
+    "text-generation",
+    "llm",
+    "license:bigcode-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3038065635,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO/starcoder2-3b-fp16-ov · Hugging Face",
+      "url": "https://huggingface.co/OpenVINO/starcoder2-3b-fp16-ov",
+      "snippet": "Legal information The original model is distributed under bigcode-openrail-m license. More details can be found in bigcode/starcoder2-3b."
+    },
+    {
+      "title": "bigcode/starcoder2-3b · Hugging Face",
+      "url": "https://huggingface.co/bigcode/starcoder2-3b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Venue-Language-Lexicon-368 es un recurso léxico publicado en HuggingFace por el usuario SOTAagi2030 bajo la etiqueta `venue-lexicon-2026-09`. No es un modelo de lenguaje neuronal, sino un artefacto de datos orientado a la normalización de cadenas exactas: contiene 8 mapeos canónicos, 1 candidato obsoleto y 5 términos de admisión rechazados, distribuidos en 3 idiomas activos. Su propósito declarado es servir de base para reemplazos deterministas mediante el fichero `lexicon/canonical-mappings.json`.
+Venue-Language-Lexicon-368 es un recurso léxico publicado en Hugging Face por el usuario SOTAagi2030 bajo la etiqueta `venue-lexicon-2026-09`. No es un modelo de lenguaje neuronal, sino un artefacto de datos orientado a la normalización de cadenas exactas: contiene 8 mapeos canónicos, 1 candidato obsoleto y 5 términos de admisión rechazados, distribuidos en 3 idiomas activos. Su propósito declarado es servir de base para reemplazos deterministas mediante el fichero `lexicon/canonical-mappings.json`.
 
 El recurso se enmarca en las categorías `accessibility` y `lexicon`, lo que sugiere un uso como capa de normalización previa o posterior a sistemas de procesamiento de lenguaje, por ejemplo para unificar variantes de nombres de sedes, recintos o topónimos antes de tareas de búsqueda, indexación o accesibilidad. Al tratarse de un conjunto de mapeos exactos y no de un modelo generativo, no dispone de arquitectura neuronal, parámetros, ventana de contexto ni pesos en el sentido habitual.
 
@@ -74,4 +74,4 @@ No disponible. No se han identificado en la información proporcionada recursos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/Venue-Language-Lexicon-368
+- Hugging Face: https://huggingface.co/SOTAagi2030/Venue-Language-Lexicon-368

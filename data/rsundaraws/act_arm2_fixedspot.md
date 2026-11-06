@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Enfoque | Parámetros | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `act_arm2_fixedspot` (este) | ACT, imitación con chunking | 51,67 M | Estado 6-D + 2 cámaras; tarea fija, sin lenguaje | Apache-2.0 | Hub de HuggingFace + LeRobot |
+| `act_arm2_fixedspot` (este) | ACT, imitación con chunking | 51,67 M | Estado 6-D + 2 cámaras; tarea fija, sin lenguaje | Apache-2.0 | Hub de Hugging Face + LeRobot |
 | Diffusion Policy | Imitación generativa por difusión de acciones | No disponible en la información proporcionada | Estado + imágenes; tarea fija | No verificada aquí | Implementación de referencia pública |
 | SmolVLA | VLA ligero (visión-lenguaje-acción) | No disponible en la información proporcionada | Imágenes + instrucción en lenguaje natural | No verificada aquí | Hub + LeRobot |
 | π0 / π0.5 | VLA con flow matching | No disponible en la información proporcionada | Imágenes + instrucción en lenguaje natural | No verificada aquí | Publicación y pesos abiertos |
@@ -97,7 +97,7 @@ Diferencias cualitativas relevantes: frente a Diffusion Policy, ACT es más lige
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rsundaraws/act_arm2_fixedspot
+- Modelo en Hugging Face: https://huggingface.co/rsundaraws/act_arm2_fixedspot
 - Dataset de entrenamiento: https://huggingface.co/datasets/rsundaraws/so101_arm2_fixedspot_trim
 - Variante con cámara de muñeca: https://huggingface.co/datasets/rsundaraws/so101_arm2_fixedspot_wrist
 - Perfil del autor: https://huggingface.co/rsundaraws

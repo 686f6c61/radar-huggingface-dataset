@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idioma principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stay4s-summarizer-agent | 4.022.468.096 (segun safetensors) | No disponible (base: 128K) | Neerlandes | Apache 2.0 | HuggingFace (0 descargas) |
+| stay4s-summarizer-agent | 4.022.468.096 (segun safetensors) | No disponible (base: 128K) | Neerlandes | Apache 2.0 | Hugging Face (0 descargas) |
 | Qwen2.5-7B-Instruct (modelo base) | No disponible en la informacion proporcionada | Hasta 128.000 tokens | Multilingue | Apache 2.0 (segun el modelo base) | Ampliamente disponible |
 | Otros modelos especializados en resumen en neerlandes | No disponible | No disponible | Neerlandes | No disponible | No disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/miesdevries/stay4s-summarizer-agent
+- Modelo en Hugging Face: https://huggingface.co/miesdevries/stay4s-summarizer-agent
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

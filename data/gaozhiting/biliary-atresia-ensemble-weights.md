@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GaoZhiting/biliary-atresia-ensemble-weights
+- Repositorio Hugging Face: https://huggingface.co/GaoZhiting/biliary-atresia-ensemble-weights
 - Artículo 1 (Engineering Applications of Artificial Intelligence): https://dl.acm.org/doi/10.1016/j.engappai.2026.115666
 - Artículo 2 (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0952197626019500
 - Artículo 3 (SSL-OHE, Biomedical Signal Processing and Control): https://colab.ws/articles/10.1016%2Fj.bspc.2025.108539

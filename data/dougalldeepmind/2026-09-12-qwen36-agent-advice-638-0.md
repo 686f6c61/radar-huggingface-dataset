@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/dougalldeepmind/2026-09-12-qwen36-agent-advice-638-0
+- Repositorio Hugging Face del adaptador: https://huggingface.co/dougalldeepmind/2026-09-12-qwen36-agent-advice-638-0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-12-table2-9284-agent-advice-638-train-mixture
 - Repositorio de codigo fuente: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication

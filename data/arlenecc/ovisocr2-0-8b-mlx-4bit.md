@@ -91,10 +91,10 @@ El CER de 0,3311 en 4 bits se debe a que el modelo emite una tabla HTML donde bf
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OvisOCR2-0.8B-MLX-4bit (esta ficha) | ~853 M | no disponible | 4-bit affine, 5,863 bpw | Apache 2.0 | HuggingFace, MLX |
-| OvisOCR2-6bit | ~853 M | no disponible | 6-bit, 7,626 bpw | Apache 2.0 | HuggingFace, MLX |
-| OvisOCR2-8bit | ~853 M | no disponible | 8-bit, 9,389 bpw | Apache 2.0 | HuggingFace, MLX |
-| ATH-MaaS/OvisOCR2 (bf16) | ~853 M | no disponible | bf16 | Apache 2.0 | HuggingFace |
+| OvisOCR2-0.8B-MLX-4bit (esta ficha) | ~853 M | no disponible | 4-bit affine, 5,863 bpw | Apache 2.0 | Hugging Face, MLX |
+| OvisOCR2-6bit | ~853 M | no disponible | 6-bit, 7,626 bpw | Apache 2.0 | Hugging Face, MLX |
+| OvisOCR2-8bit | ~853 M | no disponible | 8-bit, 9,389 bpw | Apache 2.0 | Hugging Face, MLX |
+| ATH-MaaS/OvisOCR2 (bf16) | ~853 M | no disponible | bf16 | Apache 2.0 | Hugging Face |
 
 Las tres variantes cuantizadas y el modelo fuente comparten arquitectura y parámetros; la diferencia está en el compromiso entre fidelidad, velocidad y memoria. La 4-bit es la más rápida (220,3 tok/s) y la más ligera (0,86 GB), pero altera el formato de salida; la 6-bit y la 8-bit son caracter-identical a bf16 en las pruebas realizadas. No se dispone de datos de benchmarks que permitan comparar con otros modelos OCR de la misma categoría.
 
@@ -114,7 +114,7 @@ Las tres variantes cuantizadas y el modelo fuente comparten arquitectura y pará
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arlenecc/OvisOCR2-0.8B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/arlenecc/OvisOCR2-0.8B-MLX-4bit
 - Modelo base: https://huggingface.co/ATH-MaaS/OvisOCR2
 - Variante 4-bit (mlx-community): https://huggingface.co/mlx-community/OvisOCR2-4bit
 - Variante 6-bit (mlx-community): https://huggingface.co/mlx-community/OvisOCR2-6bit

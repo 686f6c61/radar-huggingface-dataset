@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-0731 es la versión estable del modelo DeepSeek-V4-Flash, desarrollado por DeepSeek AI. Se trata de un modelo de lenguaje de arquitectura MoE (mixture of experts) optimizado para tareas de agente y codificación, que incorpora un módulo de decodificación especulativa integrado (DSpark) para acelerar la inferencia sin necesidad de un modelo draft separado. Según NVIDIA NIM, el modelo tiene 284B parámetros y una ventana de contexto de 1 millón de tokens, aunque los pesos publicados en el repositorio de HuggingFace suman 304.180.418.494 parámetros (probablemente incluyendo el módulo especulativo). En los benchmarks publicados por el autor, supera a DeepSeek-V4-Pro (Preview) en tareas de agente a pesar de tener un número de parámetros activos menor, y compite con modelos propietarios de gama alta como GLM-5.2 y Opus-4.8. La licencia es MIT, lo que permite uso comercial sin restricciones.
+DeepSeek-V4-Flash-0731 es la versión estable del modelo DeepSeek-V4-Flash, desarrollado por DeepSeek AI. Se trata de un modelo de lenguaje de arquitectura MoE (mixture of experts) optimizado para tareas de agente y codificación, que incorpora un módulo de decodificación especulativa integrado (DSpark) para acelerar la inferencia sin necesidad de un modelo draft separado. Según NVIDIA NIM, el modelo tiene 284B parámetros y una ventana de contexto de 1 millón de tokens, aunque los pesos publicados en el repositorio de Hugging Face suman 304.180.418.494 parámetros (probablemente incluyendo el módulo especulativo). En los benchmarks publicados por el autor, supera a DeepSeek-V4-Pro (Preview) en tareas de agente a pesar de tener un número de parámetros activos menor, y compite con modelos propietarios de gama alta como GLM-5.2 y Opus-4.8. La licencia es MIT, lo que permite uso comercial sin restricciones.
 
 El repositorio analizado (`smartdigitalnetworks/DeepSeek-V4-Flash-0731`) es una copia no oficial del modelo, con 0 descargas y 0 likes, que replica la model card del repositorio oficial `deepseek-ai/DeepSeek-V4-Flash-0731`. La ficha se basa en la información de la model card oficial y en los resultados de búsqueda web, indicando explícitamente los datos no disponibles.
 
@@ -91,7 +91,7 @@ DeepSeek-V4-Flash-0731 supera a su predecesor (Preview) y a DeepSeek-V4-Pro en t
 
 ## Enlaces
 
-- Repositorio oficial en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Repositorio oficial en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio analizado (copia no oficial): https://huggingface.co/smartdigitalnetworks/DeepSeek-V4-Flash-0731
 - Technical Report (arXiv): https://arxiv.org/abs/2606.19348
 - Página de NVIDIA NIM: https://build.nvidia.com/deepseek-ai/deepseek-v4-flash

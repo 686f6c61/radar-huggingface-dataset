@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de tareas que permitan comparar el rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tixiren/MiniCPM5-2B-webyIQ
+- Repositorio Hugging Face: https://huggingface.co/tixiren/MiniCPM5-2B-webyIQ
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Motor webyIQ (GitHub): https://github.com/rtx527896828/webyIQ
 - Demo online: https://rtx527896828.github.io/webyIQ/

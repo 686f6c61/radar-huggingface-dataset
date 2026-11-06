@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`thuyduongjoe123/checkpoints_vi_lo_feat` es un checkpoint de la familia transformers publicado en HuggingFace por el usuario `thuyduongjoe123`. Los pesos safetensors suman 1.720.574.976 parametros (aproximadamente 1,72 mil millones), lo que lo situa en el segmento de modelos pequenos, aptos para inferencia en GPU de consumo. El repositorio ocupa 3,5 GB y la etiqueta `qwen3` indica que el checkpoint se construyo sobre la arquitectura Qwen3, aunque la model card no lo confirma de forma explicita.
+`thuyduongjoe123/checkpoints_vi_lo_feat` es un checkpoint de la familia transformers publicado en Hugging Face por el usuario `thuyduongjoe123`. Los pesos safetensors suman 1.720.574.976 parametros (aproximadamente 1,72 mil millones), lo que lo situa en el segmento de modelos pequenos, aptos para inferencia en GPU de consumo. El repositorio ocupa 3,5 GB y la etiqueta `qwen3` indica que el checkpoint se construyo sobre la arquitectura Qwen3, aunque la model card no lo confirma de forma explicita.
 
-El problema principal de esta ficha es la ausencia casi total de documentacion. La model card es la plantilla autogenerada por HuggingFace, con todos los campos en `[More Information Needed]`: no hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas soportados, longitud de contexto ni evaluacion. Tampoco se han publicado resultados de benchmarks, y el modelo acumula 0 descargas y 0 likes, por lo que carece de validacion por parte de la comunidad.
+El problema principal de esta ficha es la ausencia casi total de documentacion. La model card es la plantilla autogenerada por Hugging Face, con todos los campos en `[More Information Needed]`: no hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas soportados, longitud de contexto ni evaluacion. Tampoco se han publicado resultados de benchmarks, y el modelo acumula 0 descargas y 0 likes, por lo que carece de validacion por parte de la comunidad.
 
 Por tanto, es relevante ahora unicamente como artefacto de investigacion o como punto de partida para inspeccion tecnica, no como modelo listo para produccion. El identificador del repositorio (`checkpoints_vi_lo_feat`) sugiere un checkpoint intermedio o vinculado a extraccion de caracteristicas, pero se trata de una interpretacion del nombre, no de un dato documentado.
 
@@ -75,7 +75,7 @@ Los datos de la columna del modelo analizado son los unicos provenientes de la i
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| thuyduongjoe123/checkpoints_vi_lo_feat | 1,72 mil millones | no disponible | no disponible | Repositorio HuggingFace con 0 descargas y 0 likes |
+| thuyduongjoe123/checkpoints_vi_lo_feat | 1,72 mil millones | no disponible | no disponible | Repositorio Hugging Face con 0 descargas y 0 likes |
 | Qwen3-1.7B | 1,7 mil millones | 32.768 tokens (documentado por el autor de Qwen3) | Apache 2.0 | Ampliamente distribuido y validado por la comunidad |
 | SmolLM2-1.7B | 1,7 mil millones | 8.192 tokens | Apache 2.0 | Ampliamente distribuido, con versiones GGUF y cuantizadas |
 | Llama-3.2-1B | 1,2 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 (con restricciones para uso comercial a gran escala) | Distribucion oficial con acceso condicionado |
@@ -94,11 +94,11 @@ La diferencia fundamental no esta en las especificaciones, sino en la documentac
 - Sin validacion de la comunidad: 0 descargas y 0 likes implican que no existe evidencia externa de que el modelo funcione correctamente.
 - Metadatos anomalos: la fecha de creacion registrada (2026-09-15) y la practicamente nula diferencia con la de actualizacion (41 segundos) apuntan a una subida automatizada o a un error en los metadatos.
 - Ausencia de cuantizaciones: no hay GGUF, AWQ ni GPTQ publicados, lo que impide un despliegue directo en llama.cpp u Ollama sin conversion manual.
-- Referencia bibliografica enganosa: la etiqueta `arxiv:1910.09700` corresponde al articulo del calculador de impacto medioambiental de Lacoste et al. (2019), presente en la plantilla de HuggingFace, y no a un paper del modelo.
+- Referencia bibliografica enganosa: la etiqueta `arxiv:1910.09700` corresponde al articulo del calculador de impacto medioambiental de Lacoste et al. (2019), presente en la plantilla de Hugging Face, y no a un paper del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thuyduongjoe123/checkpoints_vi_lo_feat
+- Modelo en Hugging Face: https://huggingface.co/thuyduongjoe123/checkpoints_vi_lo_feat
 - Articulo citado en las etiquetas (calculador de impacto de carbono, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Resultados de la busqueda web: no se ha recuperado ningun enlace relevante. Las unicas entradas devueltas corresponden a paginas de Amazon Kindle Direct Publishing (kdp.amazon.com), sin relacion alguna con el modelo.
 - Paper, blog, repositorio o demo del autor: no disponible.

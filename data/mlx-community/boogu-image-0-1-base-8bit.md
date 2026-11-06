@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado con otros modelos de generacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/mlx-community/Boogu-Image-0.1-Base-8bit
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/mlx-community/Boogu-Image-0.1-Base-8bit
 - Modelo base: https://huggingface.co/Boogu/Boogu-Image-0.1-Base
 - Version bf16: https://huggingface.co/mlx-community/Boogu-Image-0.1-Base-bf16
 - Variante Turbo-8bit: https://huggingface.co/mlx-community/Boogu-Image-0.1-Turbo-8bit

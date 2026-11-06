@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-allsteps_lt2026 | 7B base + LoRA r=16 | no disponible | Clasificacion de incidentes IncidentBench | other | HuggingFace (11 descargas) |
-| Qwen2.5-7B-Instruct (base) | 7B | no disponible en la informacion | Proposito general | no disponible en la informacion | HuggingFace |
+| incidentbench-allsteps_lt2026 | 7B base + LoRA r=16 | no disponible | Clasificacion de incidentes IncidentBench | other | Hugging Face (11 descargas) |
+| Qwen2.5-7B-Instruct (base) | 7B | no disponible en la informacion | Proposito general | no disponible en la informacion | Hugging Face |
 | Otras variantes de IncidentBench del mismo autor | no disponible | no disponible | Clasificacion de incidentes | other | no disponible en la informacion |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas.
@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-allsteps_lt2026
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-allsteps_lt2026
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe de IncidentBench: no disponible como enlace en la informacion proporcionada
-- Manifiestos del repositorio: `data_manifest.json` y `train_manifest.json` (incluidos en el repositorio de HuggingFace)
+- Manifiestos del repositorio: `data_manifest.json` y `train_manifest.json` (incluidos en el repositorio de Hugging Face)
 - Script de construccion de datos: `train/build_data.py` (transformacion `allsteps`)

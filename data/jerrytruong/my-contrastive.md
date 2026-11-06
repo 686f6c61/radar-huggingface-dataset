@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jerrytruong/my-contrastive` es una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Hybrid for Contrastive". Se publica bajo el identificador de HuggingFace `jerrytruong/my-contrastive` y esta pensada explicitamente por su autor como una configuracion "tiny" para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no como un modelo preentrenado listo para produccion.
+`jerrytruong/my-contrastive` es una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Hybrid for Contrastive". Se publica bajo el identificador de Hugging Face `jerrytruong/my-contrastive` y esta pensada explicitamente por su autor como una configuracion "tiny" para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no como un modelo preentrenado listo para produccion.
 
 El repositorio contiene unicamente 24.832 parametros registrados en el checkpoint `model.safetensors`, lo que lo situa en un orden de magnitud muy por debajo de cualquier modelo de lenguaje utilizable. La model card del autor advierte de que el checkpoint es "una inicializacion valida para smoke tests" y no un checkpoint entrenado con benchmarks. No se declara ninguna puntuacion de benchmark.
 
@@ -75,4 +75,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jerrytruong/my-contrastive
+- Hugging Face: https://huggingface.co/jerrytruong/my-contrastive

@@ -97,10 +97,10 @@ Lectura de los datos: v2 mejora un ~22 % en media frente a v1 en MTEB y supera a
 
 | Modelo | Parámetros | Dimensión | Media MTEB (NFCorpus/SciFact/ArguAna) | MRR diagnóstico interno | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| cyberntx-384-v2 (este modelo) | 58,24 M | 384 | 0,4020 | 0,806 | MIT | HuggingFace, checkpoint temprano |
-| cyberntx v1 | no disponible | 384 (presumiblemente) | 0,3300 | 0,796 | MIT | HuggingFace |
-| amgix/static-retrieval-multilingual-69m-v1 | 69 M (según nombre) | no disponible | 0,4228 | 0,886 | no disponible | HuggingFace |
-| microsoft/harrier-oss-v1-0.6b (profesor) | 0,6 B (según nombre) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| cyberntx-384-v2 (este modelo) | 58,24 M | 384 | 0,4020 | 0,806 | MIT | Hugging Face, checkpoint temprano |
+| cyberntx v1 | no disponible | 384 (presumiblemente) | 0,3300 | 0,796 | MIT | Hugging Face |
+| amgix/static-retrieval-multilingual-69m-v1 | 69 M (según nombre) | no disponible | 0,4228 | 0,886 | no disponible | Hugging Face |
+| microsoft/harrier-oss-v1-0.6b (profesor) | 0,6 B (según nombre) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Contexto de la comparativa: AMGIX-69M es un modelo estático de tamaño similar destilado de ibm-granite/granite-embedding-97m-multilingual-r2, y es el competidor directo que el propio autor utiliza como referencia. En las tres tareas MTEB evaluadas, AMGIX supera a cyberntx-384-v2 en NFCorpus y SciFact, y pierde frente a él únicamente en ArguAna (0,4163 frente a 0,4216). En el diagnóstico interno de dominio web crawl, AMGIX mantiene una ventaja clara (MRR 0,886 frente a 0,806). No se dispone de datos de licencia ni de idiomas de AMGIX en la información proporcionada más allá de lo indicado por el nombre del modelo.
 
@@ -119,7 +119,7 @@ Contexto de la comparativa: AMGIX-69M es un modelo estático de tamaño similar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jajmangold/cyberntx-384-v2
+- Modelo en Hugging Face: https://huggingface.co/jajmangold/cyberntx-384-v2
 - Modelo comparable de referencia: https://huggingface.co/amgix/static-retrieval-multilingual-69m-v1
 - Modelo profesor citado en la model card: microsoft/harrier-oss-v1-0.6b
 - Modelo base del comparador AMGIX: ibm-granite/granite-embedding-97m-multilingual-r2

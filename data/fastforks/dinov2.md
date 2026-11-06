@@ -82,8 +82,8 @@ No se dispone de datos de benchmarks de precisión en la información proporcion
 |---|---|---|---|---|
 | `fastforks/dinov2` (ViT-S/B/L/G, 14) | no disponible | cualquier H x W >= 1; probado hasta 3000x4000 | Apache-2.0 | repo de card; pesos en dl.fbaipublicfiles.com |
 | DINOv2 original (facebookresearch) | ViT-S/B/L/G, 14 | misma arquitectura | Apache-2.0 | pesos oficiales y código en GitHub |
-| CLIP (OpenAI) | ViT-B/L, 14 y 16 | 224x224 fijo (mayoría de variantes) | MIT (código), pesos con términos propios | HuggingFace |
-| SigLIP (Google) | ViT-B/L/SO400M | 224x224 a 384x384 | Apache-2.0 | HuggingFace |
+| CLIP (OpenAI) | ViT-B/L, 14 y 16 | 224x224 fijo (mayoría de variantes) | MIT (código), pesos con términos propios | Hugging Face |
+| SigLIP (Google) | ViT-B/L/SO400M | 224x224 a 384x384 | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de precisión en la información proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fastforks/dinov2
+- Repositorio Hugging Face: https://huggingface.co/fastforks/dinov2
 - Código de la librería fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - Código original de DINOv2 (commit 7764ea0): https://github.com/facebookresearch/dinov2

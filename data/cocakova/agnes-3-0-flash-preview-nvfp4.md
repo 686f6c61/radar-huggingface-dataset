@@ -87,8 +87,8 @@ El propio autor advierte de que no deben puntuarse los tokens de sistema o usuar
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Agnes-3.0-Flash-Preview-NVFP4 (esta ficha) | 32,67 B | Ejemplo de servicio a 131.072 tokens; cache KV medida de 206k tokens | NVFP4 W4A4 grupo 16 | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Agnes-AI/Agnes-3.0-Flash (modelo base, BF16) | 32,67 B (mismo plegado) | No disponible | BF16, 61,6 GiB | Apache 2.0 | HuggingFace |
+| Agnes-3.0-Flash-Preview-NVFP4 (esta ficha) | 32,67 B | Ejemplo de servicio a 131.072 tokens; cache KV medida de 206k tokens | NVFP4 W4A4 grupo 16 | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Agnes-AI/Agnes-3.0-Flash (modelo base, BF16) | 32,67 B (mismo plegado) | No disponible | BF16, 61,6 GiB | Apache 2.0 | Hugging Face |
 | Receta de referencia NVFP4 de NVIDIA para Qwen3.8-27B | No disponible | No disponible | NVFP4 con la misma receta (proyecciones del delta rule cuantizadas, `conv1d` en bf16) | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativos con otras alternativas de la misma categoria (modelos multimodales de ~30 B con razonamiento) en la informacion proporcionada. La unica comparacion cuantitativa publicada es la perplejidad frente al propio modelo base en BF16, incluida en la seccion de benchmarks.
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparativos con otras alternativas de la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CocaKova/Agnes-3.0-Flash-Preview-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/CocaKova/Agnes-3.0-Flash-Preview-NVFP4
 - Modelo base: https://huggingface.co/Agnes-AI/Agnes-3.0-Flash
 - Scripts de plegado, cuantizacion y verificacion: https://github.com/CocaKova/agnes-nvfp4
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun resultado relevante sobre el modelo, su autor o su proceso de cuantizacion; los enlaces obtenidos no guardan relacion con el tema.

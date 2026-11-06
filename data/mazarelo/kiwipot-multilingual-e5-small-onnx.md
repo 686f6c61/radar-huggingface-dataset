@@ -77,7 +77,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que la inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mazarelo/kiwipot-multilingual-e5-small-onnx
+- Repositorio en Hugging Face: https://huggingface.co/mazarelo/kiwipot-multilingual-e5-small-onnx
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Réplica de referencia en transformers.js: https://huggingface.co/Xenova/multilingual-e5-small
 - Documentación de transformers.js: https://huggingface.co/docs/transformers.js

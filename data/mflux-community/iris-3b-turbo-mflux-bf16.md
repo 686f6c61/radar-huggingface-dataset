@@ -39,7 +39,7 @@ Lo unico verificable es el proceso de conversion: los pesos originales de sperid
 - Control de semilla (--seed) para reproducibilidad de las generaciones.
 - Control de dimensiones de salida mediante los parametros --width y --height.
 - Cuantizacion al vuelo con la opcion --quantize del runtime MFlux, ademas de la version BF16 completa.
-- Descarga automatica de pesos desde HuggingFace en el primer uso, o uso de una copia local con --model.
+- Descarga automatica de pesos desde Hugging Face en el primer uso, o uso de una copia local con --model.
 - No se documentan capacidades de edicion de imagen, inpainting, control estructural (ControlNet), tool calling ni modos de razonamiento; no disponibles en la informacion proporcionada.
 
 ## Casos de uso
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-bf16
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-bf16
 - Modelo base original: https://huggingface.co/speridlabs/iris-3b
 - Repositorio MFlux: https://github.com/filipstrand/mflux
 - Organizacion MFlux-Community: https://huggingface.co/mflux-community

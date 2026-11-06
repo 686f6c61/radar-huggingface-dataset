@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FastManga-runtime es un repositorio publicado en HuggingFace por el usuario yusuklee bajo licencia Apache 2.0. Por su identificador y por la ausencia de cualquier documentación técnica en la model card, se trata de un artefacto de tipo "runtime" (entorno de ejecución o conjunto de artefactos auxiliares) asociado a un proyecto llamado FastManga, y no de un modelo de lenguaje con pesos publicados en el sentido habitual. La model card únicamente contiene la declaración de licencia, sin descripción, sin arquitectura y sin datos de entrenamiento.
+FastManga-runtime es un repositorio publicado en Hugging Face por el usuario yusuklee bajo licencia Apache 2.0. Por su identificador y por la ausencia de cualquier documentación técnica en la model card, se trata de un artefacto de tipo "runtime" (entorno de ejecución o conjunto de artefactos auxiliares) asociado a un proyecto llamado FastManga, y no de un modelo de lenguaje con pesos publicados en el sentido habitual. La model card únicamente contiene la declaración de licencia, sin descripción, sin arquitectura y sin datos de entrenamiento.
 
-No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, idiomas ni formato de pesos. El repositorio no registra descargas ni interacciones, fue creado y actualizado en la misma fecha (6 de noviembre de 2026) y no declara pipeline de HuggingFace. Todo ello es coherente con un artefacto recién publicado, posiblemente de carácter auxiliar, sin documentación asociada.
+No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, idiomas ni formato de pesos. El repositorio no registra descargas ni interacciones, fue creado y actualizado en la misma fecha (6 de noviembre de 2026) y no declara pipeline de Hugging Face. Todo ello es coherente con un artefacto recién publicado, posiblemente de carácter auxiliar, sin documentación asociada.
 
 Dado que no hay evidencia de que contenga un modelo entrenado, esta ficha se limita a documentar los metadatos disponibles y a señalar explícitamente los datos que faltan. Cualquier evaluación de capacidades, rendimiento o requisitos de hardware resulta imposible con la información proporcionada.
 
@@ -71,5 +71,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yusuklee/FastManga-runtime
+- Repositorio en Hugging Face: https://huggingface.co/yusuklee/FastManga-runtime
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

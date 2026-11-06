@@ -77,6 +77,6 @@ La comparativa directa con estos modelos requeriría ejecutar los mismos benchma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3-epoch3
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3-epoch3
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Repositorio oficial de Llama 3 (Meta): https://github.com/meta-llama/llama3

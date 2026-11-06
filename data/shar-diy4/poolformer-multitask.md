@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shar-diy4/poolformer-multitask es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura PoolFormer orientada a multitarea, en su configuración "tiny". Según los pesos publicados en formato safetensors, el modelo tiene 33.088 parámetros totales, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier checkpoint PoolFormer preentrenado de referencia. El propio autor declara explícitamente que se trata de una inicialización válida para pruebas de humo (smoke tests) y revisión de código, no de un checkpoint entrenado ni evaluado.
+Shar-diy4/poolformer-multitask es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura PoolFormer orientada a multitarea, en su configuración "tiny". Según los pesos publicados en formato safetensors, el modelo tiene 33.088 parámetros totales, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier checkpoint PoolFormer preentrenado de referencia. El propio autor declara explícitamente que se trata de una inicialización válida para pruebas de humo (smoke tests) y revisión de código, no de un checkpoint entrenado ni evaluado.
 
 El problema que resuelve es, por tanto, acotado: sirve como plantilla reproducible para experimentar con la familia MetaFormer (token mixing mediante pooling en lugar de autoatención) aplicada a múltiples tareas con fusión bilineal de cabezas. No hay evidencia de entrenamiento completado, ni de resultados de benchmarks, ni de una receta de datos documentada. Su relevancia actual es la de artefacto didáctico y punto de partida experimental, no la de modelo desplegable en producción.
 
@@ -25,7 +25,7 @@ Detalles adicionales declarados en la model card: atención estándar, fusión b
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es PoolFormer, un miembro de la familia MetaFormer en la que el mezclado de tokens se realiza mediante operadores de pooling en lugar de autoatención. La model card concreta cuatro decisiones de diseño: atención de tipo estándar, fusión bilineal entre ramas o cabezas, activación mish y normalización LayerNorm. El repositorio se distribuye en escala tiny, con 33.088 parámetros, y el autor indica que se requiere un adaptador explícito para cargarlo, ya que no es compatible con las APIs automáticas genéricas de HuggingFace (`AutoModel` y similares); el artefacto principal es el script `pipeline.py`.
+La arquitectura declarada es PoolFormer, un miembro de la familia MetaFormer en la que el mezclado de tokens se realiza mediante operadores de pooling en lugar de autoatención. La model card concreta cuatro decisiones de diseño: atención de tipo estándar, fusión bilineal entre ramas o cabezas, activación mish y normalización LayerNorm. El repositorio se distribuye en escala tiny, con 33.088 parámetros, y el autor indica que se requiere un adaptador explícito para cargarlo, ya que no es compatible con las APIs automáticas genéricas de Hugging Face (`AutoModel` y similares); el artefacto principal es el script `pipeline.py`.
 
 En cuanto al entrenamiento, no hay ningún dato disponible: no se especifica número de tokens, composición del dataset, ni si hubo ajuste por RLHF o DPO. La model card es tajante al respecto: la receta por defecto incluida en `training_args.json` usa el optimizador LAMB con un scheduler polinómico, pero se presentan como valores de arranque del script y no como evidencia de una ejecución completada. `model.safetensors` se describe como un checkpoint de inicialización, no como un modelo entrenado. La única guía metodológica que aporta el autor es que cualquier evaluación futura debería usar un conjunto de validación específico de tarea, reportar la métrica sobre al menos tres semillas e incluir una línea base de capacidad comparable.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shar-diy4/poolformer-multitask | 33.088 | no disponible | sin entrenar (checkpoint de inicialización) | BSD-3-Clause | HuggingFace, 0 descargas y 0 likes |
+| Shar-diy4/poolformer-multitask | 33.088 | no disponible | sin entrenar (checkpoint de inicialización) | BSD-3-Clause | Hugging Face, 0 descargas y 0 likes |
 | PoolFormer oficial (Sea AI Lab) | no disponible en la información proporcionada | no disponible | preentrenado sobre un dataset de visión a gran escala | no disponible en la información proporcionada | distribución pública de referencia de la familia |
 | Otras implementaciones MetaFormer de terceros | no disponible en la información proporcionada | no disponible | variable según repositorio | variable | repositorios de código abierto |
 
@@ -87,5 +87,5 @@ La comparación cuantitativa no es posible con los datos disponibles. La diferen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shar-diy4/poolformer-multitask
+- Hugging Face: https://huggingface.co/Shar-diy4/poolformer-multitask
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo. Los resultados devueltos corresponden a entidades no relacionadas (una marca de alimentación sin gluten, una deidad de los Reinos Olvidados, un canal de YouTube), por lo que se descartan. No hay paper, blog, repositorio de código ni demo asociados en la información disponible.

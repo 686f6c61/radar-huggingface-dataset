@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thomasebn/retrieval-large` es un repositorio de HuggingFace publicado por el usuario thomasebn que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de recuperación (retrieval) de imágenes. Según su model card, la variante incluida es de escala **nano** y, pese al nombre "large" del identificador, se presenta explícitamente como un **punto de partida reproducible y no como un modelo entrenado**. El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos aprendidos.
+`thomasebn/retrieval-large` es un repositorio de Hugging Face publicado por el usuario thomasebn que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de recuperación (retrieval) de imágenes. Según su model card, la variante incluida es de escala **nano** y, pese al nombre "large" del identificador, se presenta explícitamente como un **punto de partida reproducible y no como un modelo entrenado**. El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos aprendidos.
 
 El modelo ocupa 24.832 parámetros totales, un orden de magnitud muy inferior al de cualquier red de recuperación multimodal en producción, y el tamaño del repositorio es de 0,0 GB. Se distribuye con licencia MIT y en formato safetensors sobre PyTorch, e incorpora ficheros auxiliares (`config.json`, `training_args.json`) que documentan la arquitectura y la receta de entrenamiento por defecto.
 
@@ -89,5 +89,5 @@ Diferencias clave: los tres alternativas citadas son modelos entrenados sobre ci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thomasebn/retrieval-large
+- Hugging Face: https://huggingface.co/thomasebn/retrieval-large
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web. Los resultados devueltos por la busqueda no guardan relacion con el modelo (contenido audiovisual no tecnico) y se descartan como fuentes.

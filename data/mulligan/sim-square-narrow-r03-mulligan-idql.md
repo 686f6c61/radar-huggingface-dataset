@@ -99,10 +99,10 @@ No disponible. La informacion proporcionada no incluye otros checkpoints de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset c00 teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - Dataset c01 DAgger: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-mulligan

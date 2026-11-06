@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `towilliamsfuv/my-retrieval` es un prototipo de investigacion publicado en HuggingFace por el usuario towilliamsfuv. Se trata de un "Tiny Transformer" orientado a tareas de retrieval (recuperacion de informacion), con un total de 16.576 parametros registrados en el checkpoint `model.safetensors`. El propio autor lo describe como un artefacto experimental y aclara explicitamente que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
+El modelo `towilliamsfuv/my-retrieval` es un prototipo de investigacion publicado en Hugging Face por el usuario towilliamsfuv. Se trata de un "Tiny Transformer" orientado a tareas de retrieval (recuperacion de informacion), con un total de 16.576 parametros registrados en el checkpoint `model.safetensors`. El propio autor lo describe como un artefacto experimental y aclara explicitamente que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
 
 El modelo implementa una arquitectura transformer con atencion de ventana deslizante (sliding window), fusion de caracteristicas de tipo bilineal, activacion swish y normalizacion layernorm. La receta de entrenamiento por defecto utiliza el optimizador AdamW con un schedule de warmup constante, aunque el autor insiste en que son valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| towilliamsfuv/my-retrieval | 16.576 | no disponible | MIT | HuggingFace | Prototipo sin entrenar |
-| Modelos de retrieval de referencia (por ejemplo, variantes de sentence-transformers) | 22M - 335M | 512 tokens tipicos | Apache 2.0 / MIT (variable) | HuggingFace, ONNX | Entrenados y evaluados |
-| Transformers pequenos para retrieval | 1M - 10M | variable | variable | HuggingFace | Entrenados |
+| towilliamsfuv/my-retrieval | 16.576 | no disponible | MIT | Hugging Face | Prototipo sin entrenar |
+| Modelos de retrieval de referencia (por ejemplo, variantes de sentence-transformers) | 22M - 335M | 512 tokens tipicos | Apache 2.0 / MIT (variable) | Hugging Face, ONNX | Entrenados y evaluados |
+| Transformers pequenos para retrieval | 1M - 10M | variable | variable | Hugging Face | Entrenados |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria. La diferencia principal frente a otros modelos de retrieval publicados es que este repositorio no incluye un checkpoint entrenado.
 
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/towilliamsfuv/my-retrieval)
+- [Modelo en Hugging Face](https://huggingface.co/towilliamsfuv/my-retrieval)
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

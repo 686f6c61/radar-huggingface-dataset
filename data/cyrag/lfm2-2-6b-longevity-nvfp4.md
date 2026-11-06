@@ -109,7 +109,7 @@ No se han encontrado en la informacion proporcionada datos comparativos de rendi
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/Cyrag/LFM2-2.6B-Longevity-NVFP4
+- Hugging Face (este checkpoint): https://huggingface.co/Cyrag/LFM2-2.6B-Longevity-NVFP4
 - Modelo base BF16: https://huggingface.co/LiquidAI/LFM2-2.6B-Longevity
 - Documentacion de LFM de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
 - Discord de Liquid AI: https://discord.com/invite/liquid-ai

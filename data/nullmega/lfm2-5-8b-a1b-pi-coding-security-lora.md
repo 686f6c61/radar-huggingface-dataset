@@ -71,9 +71,9 @@ El autor advierte que estos casos diagnósticos son pequeños y agrupados, y que
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM2.5-8B-A1B-pi-coding-security-LoRA | LoRA sobre 8B-A1B | 2048 en entrenamiento | LFM Open License v1.0 | HuggingFace, 0 descargas | Experimental, evaluación 0/8→2/8 |
-| LiquidAI/LFM2.5-8B-A1B (base) | 8B totales, ~1B activos | no disponible | LFM Open License v1.0 | HuggingFace | Modelo de referencia sin adaptador |
-| Otros fine-tunes LoRA de código sobre MoE | variable | variable | variable | HuggingFace | No disponible comparación directa |
+| LFM2.5-8B-A1B-pi-coding-security-LoRA | LoRA sobre 8B-A1B | 2048 en entrenamiento | LFM Open License v1.0 | Hugging Face, 0 descargas | Experimental, evaluación 0/8→2/8 |
+| LiquidAI/LFM2.5-8B-A1B (base) | 8B totales, ~1B activos | no disponible | LFM Open License v1.0 | Hugging Face | Modelo de referencia sin adaptador |
+| Otros fine-tunes LoRA de código sobre MoE | variable | variable | variable | Hugging Face | No disponible comparación directa |
 
 No se dispone de datos de benchmarks comparables con alternativas de la misma categoría en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparables con alternativas de la misma ca
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Nullmega/LFM2.5-8B-A1B-pi-coding-security-LoRA
+- Hugging Face del adaptador: https://huggingface.co/Nullmega/LFM2.5-8B-A1B-pi-coding-security-LoRA
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Licencia LFM Open License v1.0: referenciada como LICENSE en el repositorio del adaptador
 - Atribución de datos: training_data_attribution.json en el repositorio del adaptador

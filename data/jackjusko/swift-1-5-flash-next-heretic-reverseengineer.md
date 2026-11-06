@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - La informacion sobre contexto maximo y parametros activos no esta disponible, lo que limita la planificacion de cargas de trabajo de contexto largo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/jackjusko/Swift-1.5-Flash-Next-Heretic-ReverseEngineer
+- Modelo en Hugging Face: https://huggingface.co/jackjusko/Swift-1.5-Flash-Next-Heretic-ReverseEngineer
 - Modelo base: https://huggingface.co/jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-heretic
 - Licencia: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next/blob/main/LICENSE
 - Perfil del autor del modelo base: https://huggingface.co/jeffpeng3

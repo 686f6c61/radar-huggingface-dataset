@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Shchepa/andrei-voice-f5tts` es un modelo de síntesis de voz (text-to-speech) con clonación de voz, publicado por el usuario Shchepa en HuggingFace y orientado exclusivamente al ruso. Se trata de un ajuste fino (finetune) del modelo `ESpeech/ESpeech-TTS-1_RL-V2`, que a su vez pertenece a la familia F5-TTS, una arquitectura de flow matching con Diffusion Transformer (DiT) no autorregresiva. El repositorio ocupa 1,3 GB y el pipeline declarado es `text-to-speech`; la librería de referencia es `f5-tts`.
+`Shchepa/andrei-voice-f5tts` es un modelo de síntesis de voz (text-to-speech) con clonación de voz, publicado por el usuario Shchepa en Hugging Face y orientado exclusivamente al ruso. Se trata de un ajuste fino (finetune) del modelo `ESpeech/ESpeech-TTS-1_RL-V2`, que a su vez pertenece a la familia F5-TTS, una arquitectura de flow matching con Diffusion Transformer (DiT) no autorregresiva. El repositorio ocupa 1,3 GB y el pipeline declarado es `text-to-speech`; la librería de referencia es `f5-tts`.
 
 El modelo resuelve un caso de uso muy concreto: generar habla en ruso con la identidad vocal de un hablante específico ("andrei-voice"), partiendo presumiblemente de audio de referencia. No es un modelo de propósito general ni un modelo de lenguaje: no hace razonamiento, no soporta tool calling ni agentes, y su única tarea es convertir texto en audio.
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada y debe contextualizarse: la ficha registra 0 de
 | Formato de pesos | No disponible (no se detalla; repositorio de 1,3 GB compatible con un checkpoint único de `f5-tts`) |
 | Pipeline | text-to-speech |
 | Modelo base | ESpeech/ESpeech-TTS-1_RL-V2 |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación (según metadatos) | 2026-09-21 |
 
@@ -56,7 +56,7 @@ En cuanto al entrenamiento de este finetune concreto, no hay información dispon
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La ficha de HuggingFace no incluye métricas de calidad (MOS, CMOS, similitud de hablante, WER de inteligibilidad), ni tiempos de inferencia (RTF), ni comparaciones con otros sistemas TTS. Tampoco se dispone de datos objetivos sobre estabilidad de la voz clonada, naturalidad o robustez ante textos largos.
+No se han publicado resultados de benchmarks en la información disponible. La ficha de Hugging Face no incluye métricas de calidad (MOS, CMOS, similitud de hablante, WER de inteligibilidad), ni tiempos de inferencia (RTF), ni comparaciones con otros sistemas TTS. Tampoco se dispone de datos objetivos sobre estabilidad de la voz clonada, naturalidad o robustez ante textos largos.
 
 ## Requisitos de hardware
 
@@ -64,23 +64,23 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 - GPU recomendadas: cualquier GPU con 6 GB o más de VRAM debería ser suficiente. Para producción con varias peticiones concurrentes se recomienda una GPU de clase profesional (A100, H100, L40S); para desarrollo, RTX 3060 12 GB, RTX 4060 Ti, RTX 4070 o superiores.
 - Viabilidad en GPU de consumo: sí, cabe en tarjetas de gama media como RTX 3060 12 GB o RTX 4060. También es viable en CPU mediante la implementación `f5-tts`, con latencia muy superior.
 - Opciones de despliegue: la librería declarada es `f5-tts`, que ofrece inferencia por línea de comandos y una interfaz Gradio. No se documenta soporte para vLLM, TGI (no orientados a TTS de este tipo), Ollama ni llama.cpp; no hay confirmación de servidores de inferencia optimizados para este checkpoint.
-- Latencia y throughput: no disponible. No se publican valores de RTF ni de audio generado por segundo. Además, el acceso está restringido, por lo que no se puede reproducir ninguna medición sin aceptar previamente las condiciones en HuggingFace.
+- Latencia y throughput: no disponible. No se publican valores de RTF ni de audio generado por segundo. Además, el acceso está restringido, por lo que no se puede reproducir ninguna medición sin aceptar previamente las condiciones en Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Idiomas | Clonación de voz | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shchepa/andrei-voice-f5tts | No confirmado (~300-340 M estimados) | Ruso | Sí (zero-shot, según tags) | Apache-2.0 (declarada) | Gated en HuggingFace, 0 descargas |
+| Shchepa/andrei-voice-f5tts | No confirmado (~300-340 M estimados) | Ruso | Sí (zero-shot, según tags) | Apache-2.0 (declarada) | Gated en Hugging Face, 0 descargas |
 | ESpeech/ESpeech-TTS-1_RL-V2 (modelo base) | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
-| F5-TTS original (SWivid) | ~336 M según la publicación original | Principalmente inglés y chino, con variantes multilingües | Sí (zero-shot) | Pesos bajo licencia no comercial (CC-BY-NC), código MIT | Abierto en HuggingFace y GitHub |
-| XTTS-v2 (Coqui) | No disponible | 17 idiomas, incluye ruso | Sí (zero-shot) | Coqui Public Model License (CPML), uso comercial restringido | Abierto en HuggingFace |
+| F5-TTS original (SWivid) | ~336 M según la publicación original | Principalmente inglés y chino, con variantes multilingües | Sí (zero-shot) | Pesos bajo licencia no comercial (CC-BY-NC), código MIT | Abierto en Hugging Face y GitHub |
+| XTTS-v2 (Coqui) | No disponible | 17 idiomas, incluye ruso | Sí (zero-shot) | Coqui Public Model License (CPML), uso comercial restringido | Abierto en Hugging Face |
 
 La comparación cuantitativa no es posible: no hay benchmarks compartidos ni métricas de calidad publicadas por el autor de este finetune. El principal diferencial frente a las alternativas es la licencia Apache-2.0 declarada, más permisiva que las de F5-TTS original y XTTS-v2, siempre y cuando la cadena de licencias del modelo base lo permita.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de validación por la comunidad: 0 descargas y 0 "likes" en el momento de redactar la ficha. No hay evidencia externa de calidad ni de estabilidad.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar el modelo, lo que complica la reproducibilidad y la evaluación independiente.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar el modelo, lo que complica la reproducibilidad y la evaluación independiente.
 - Licencia declarada Apache-2.0, pero el modelo es un finetune de `ESpeech/ESpeech-TTS-1_RL-V2` y no se verifica la licencia de ese modelo base. Si la cadena original proviene de pesos F5-TTS con licencia no comercial, la declaración Apache-2.0 podría no ser válida. Conviene revisarlo antes de cualquier uso comercial.
 - Modelo monolingüe en ruso: no admite entradas en otros idiomas, ni siquiera en alfabetos latinos, salvo que se fuerce una transliteración con resultados impredecibles.
 - Riesgo de alucinación acústica: en sistemas TTS no autorregresivos es habitual encontrar artefactos, repeticiones, silencios anómalos o mala pronunciación de números, siglas y nombres propios, especialmente en textos largos. No hay datos que cuantifiquen este riesgo en este checkpoint.
@@ -93,8 +93,8 @@ La comparación cuantitativa no es posible: no hay benchmarks compartidos ni mé
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shchepa/andrei-voice-f5tts
-- Modelo base en HuggingFace: https://huggingface.co/ESpeech/ESpeech-TTS-1_RL-V2
+- Modelo en Hugging Face: https://huggingface.co/Shchepa/andrei-voice-f5tts
+- Modelo base en Hugging Face: https://huggingface.co/ESpeech/ESpeech-TTS-1_RL-V2
 - Repositorio oficial de la implementación F5-TTS (proyecto de referencia de la arquitectura y de la librería `f5-tts`): https://github.com/SWivid/F5-TTS
 - Artículo técnico de F5-TTS, "F5-TTS: A Fairytale of Flow-matching and Diffusion Transformer" (arXiv, octubre de 2024): referencia general del proyecto, no recuperada en la búsqueda web realizada para esta ficha
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante sobre el modelo. Los resultados devueltos (sitio oficial, noticias y tienda de Wrexham AFC) no guardan relación con este modelo ni con síntesis de voz.

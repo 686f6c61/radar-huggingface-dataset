@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "internlm/Sage-SciPerception",
+  "slug": "internlm-sage-sciperception",
+  "author": "internlm",
+  "url": "https://huggingface.co/internlm/Sage-SciPerception",
+  "created_at": "2026-11-06T07:34:30.000Z",
+  "updated_at": "2026-11-06T09:10:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "scientific-perception",
+    "multimodal",
+    "projector",
+    "en",
+    "zh",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7520883,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

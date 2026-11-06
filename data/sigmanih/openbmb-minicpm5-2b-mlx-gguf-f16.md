@@ -106,10 +106,10 @@ Datos de los modelos alternativos tomados de conocimiento público general; los 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| openbmb-MiniCPM5-2B-MLX-GGUF-F16 (este) | 2,5B | 131.072 tokens | other (insignia Apache-2.0 en la model card) | HuggingFace, GGUF | 49% global en subconjuntos (datos del autor) |
-| openbmb/MiniCPM-2B (familia base) | ~2B | no disponible | no disponible | HuggingFace | no disponible |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32K (ampliable con YaRN) | Apache-2.0 | HuggingFace, GGUF, vLLM | no disponible en esta ficha |
-| Gemma-2-2B-it | 2,6B | 8K | Gemma (uso comercial con restricciones) | HuggingFace, GGUF | no disponible en esta ficha |
+| openbmb-MiniCPM5-2B-MLX-GGUF-F16 (este) | 2,5B | 131.072 tokens | other (insignia Apache-2.0 en la model card) | Hugging Face, GGUF | 49% global en subconjuntos (datos del autor) |
+| openbmb/MiniCPM-2B (familia base) | ~2B | no disponible | no disponible | Hugging Face | no disponible |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32K (ampliable con YaRN) | Apache-2.0 | Hugging Face, GGUF, vLLM | no disponible en esta ficha |
+| Gemma-2-2B-it | 2,6B | 8K | Gemma (uso comercial con restricciones) | Hugging Face, GGUF | no disponible en esta ficha |
 
 ## Limitaciones y advertencias
 
@@ -125,8 +125,8 @@ Datos de los modelos alternativos tomados de conocimiento público general; los 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/sigmanih/openbmb-MiniCPM5-2B-MLX-GGUF-F16
+- Hugging Face (este repositorio): https://huggingface.co/sigmanih/openbmb-MiniCPM5-2B-MLX-GGUF-F16
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-MLX
 - Repositorio de la herramienta Sigma Studio: https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
 - Licencia Apache-2.0 (referenciada en la model card): https://opensource.org/licenses/Apache-2.0

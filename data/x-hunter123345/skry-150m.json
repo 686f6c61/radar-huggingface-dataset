@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "x-hunter123345/skry-150m",
+  "slug": "x-hunter123345-skry-150m",
+  "author": "x-hunter123345",
+  "url": "https://huggingface.co/x-hunter123345/skry-150m",
+  "created_at": "2026-11-03T13:28:26.000Z",
+  "updated_at": "2026-11-03T16:08:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "ai-text-detection",
+    "humanizer",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1485889999,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "x-hunter123345/skry-150m · Hugging Face",
+      "url": "https://huggingface.co/x-hunter123345/skry-150m",
+      "snippet": "x-hunter123345 ... skry-150m Like 0 Joblib ONNX Safetensors English modernbert ai-text-detection humanizer License:mit Model card FilesFiles and versions xet Community Copy to bucket Skry 150m"
+    },
+    {
+      "title": "Skry AI-text detector - a Hugging Face Space by x-hunter123345",
+      "url": "https://huggingface.co/spaces/x-hunter123345/skry-detector",
+      "snippet": "Paste any piece of writing into the box and press the Detect button. The tool examines the text locally and tells you whether it was likely written by AI, a human, or a mix of both. No data leaves ..."
+    }
+  ]
+}

@@ -75,6 +75,6 @@ No se dispone de información sobre modelos comparables. Los resultados de búsq
 
 ## Enlaces
 
-- [HuggingFace del modelo cuantizado](https://huggingface.co/rewij/Behemoth-128B-v3c-IQ3_K_M)
+- [Hugging Face del modelo cuantizado](https://huggingface.co/rewij/Behemoth-128B-v3c-IQ3_K_M)
 - [Modelo base GGUF de BeaverAI](https://huggingface.co/BeaverAI/Behemoth-128B-v3c-GGUF)
 - [Dataset de calibración de Bartowski](https://gist.github.com/bartowski1182/82ae9b520227f57d79ba04add13d0d0d)

@@ -119,7 +119,7 @@ Frente al checkpoint original, la conversión pierde versatilidad de despliegue 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/smdesai/Nemotron-3.5-Embed-1B-CoreAI
+- Repositorio Hugging Face: https://huggingface.co/smdesai/Nemotron-3.5-Embed-1B-CoreAI
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16
 - Licencia en el repositorio: https://huggingface.co/smdesai/Nemotron-3.5-Embed-1B-CoreAI/blob/main/LICENSE
 - Ficha del modelo en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3_5-embed-1b

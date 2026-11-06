@@ -85,8 +85,8 @@ La diferencia principal con el modelo base es que esta exportación omite el `ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DanKau/en_core_web_trf-3.8.0-onnx
-- Modelo base en HuggingFace: https://huggingface.co/spacy/en_core_web_trf
+- Hugging Face: https://huggingface.co/DanKau/en_core_web_trf-3.8.0-onnx
+- Modelo base en Hugging Face: https://huggingface.co/spacy/en_core_web_trf
 - Documentación de spaCy: https://spacy.io
 - SecuPi (empresa que originó la exportación): https://www.secupi.com
 - Repositorio de modelos de spaCy en GitHub: https://github.com/explosion/spacy-models

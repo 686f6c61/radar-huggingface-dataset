@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`danieljones5/clip-matching-practice75` es un repositorio experimental alojado en HuggingFace que contiene una implementación propia de una arquitectura CLIP (Contrastive Language-Image Pretraining) orientada a tareas de matching entre imagen y texto. Lo publica el usuario `danieljones5` bajo licencia MIT y con fecha de creación del 25 de septiembre de 2026. No es un modelo entrenado ni evaluado: la propia model card lo describe como un esqueleto de código con una configuración "tiny" pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`danieljones5/clip-matching-practice75` es un repositorio experimental alojado en Hugging Face que contiene una implementación propia de una arquitectura CLIP (Contrastive Language-Image Pretraining) orientada a tareas de matching entre imagen y texto. Lo publica el usuario `danieljones5` bajo licencia MIT y con fecha de creación del 25 de septiembre de 2026. No es un modelo entrenado ni evaluado: la propia model card lo describe como un esqueleto de código con una configuración "tiny" pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
-El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, con 49.600 parámetros totales según los metadatos reales del archivo. El repositorio no declara idiomas soportados, no especifica pipeline en HuggingFace, cuenta con 0 descargas y 0 likes, y acumula un tamaño de repo de 0,0 GB. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que los hiperparámetros incluidos (optimizador lion con schedule polinómico) son valores de partida del script, no evidencia de una ejecución completada.
+El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, con 49.600 parámetros totales según los metadatos reales del archivo. El repositorio no declara idiomas soportados, no especifica pipeline en Hugging Face, cuenta con 0 descargas y 0 likes, y acumula un tamaño de repo de 0,0 GB. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que los hiperparámetros incluidos (optimizador lion con schedule polinómico) son valores de partida del script, no evidencia de una ejecución completada.
 
 Su relevancia es por tanto acotada y de carácter instrumental: sirve como material de partida reproducible para quien quiera experimentar con variantes de atención dilatada, fusión por co-atención y normalización GroupNorm dentro de un pipeline CLIP, y como fixture ligero para validar código de carga, entrenamiento y evaluación. No debe confundirse con un modelo listo para producción ni con un checkpoint preentrenado de la familia CLIP de OpenAI.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `danieljones5/clip-matching-practice75` | 49.600 | No disponible | Sin benchmarks declarados; checkpoint sin entrenar | MIT | Repositorio público, 0 descargas, 0 likes |
-| `Ivanyamaguchi/clip-matching-practice` | No disponible | No disponible | Sin benchmarks declarados (el autor los omite deliberadamente) | No disponible en la informacion proporcionada | Repositorio público en HuggingFace |
+| `Ivanyamaguchi/clip-matching-practice` | No disponible | No disponible | Sin benchmarks declarados (el autor los omite deliberadamente) | No disponible en la informacion proporcionada | Repositorio público en Hugging Face |
 | CLIP de OpenAI (`openai/CLIP`) | No disponible en la informacion proporcionada | No disponible | Entrenado con pares (imagen, texto); capacidades zero-shot descritas en su blog y paper | No disponible en la informacion proporcionada | Repositorio GitHub público con blog, paper, model card y notebook Colab |
 
 La comparación relevante aquí no es de rendimiento, ya que ninguno de los dos repositorios "clip-matching-practice" publica métricas y este último ni siquiera está entrenado. La diferencia sustantiva frente a CLIP de OpenAI es que este repositorio es un esqueleto experimental con fines de inspección arquitectónica, no un modelo preentrenado utilizable en tareas de zero-shot.
@@ -86,7 +86,7 @@ La comparación relevante aquí no es de rendimiento, ya que ninguno de los dos 
 - Checkpoint sin entrenar: `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo con capacidades aprendidas. No produce salidas útiles para ninguna tarea real.
 - Sin auditoría: el autor indica que no ha sido auditado en robustez, equidad ni transferencia de dominio.
 - Sin benchmarks: no hay métricas publicadas, por lo que no es posible comparar su calidad con nada.
-- Carga no estándar: al ser una implementación personalizada, las APIs automáticas de HuggingFace requieren un adaptador explícito; no funcionará con `pipeline()` ni con `AutoModel` sin trabajo adicional.
+- Carga no estándar: al ser una implementación personalizada, las APIs automáticas de Hugging Face requieren un adaptador explícito; no funcionará con `pipeline()` ni con `AutoModel` sin trabajo adicional.
 - Idiomas no declarados: no se especifica cobertura lingüística alguna.
 - Contexto no declarado: no hay ventana de contexto documentada.
 - Sin cuantizaciones publicadas: no hay versiones GGUF, AWQ, GPTQ ni similares, lo que descarta despliegues estándar con llama.cpp u Ollama.
@@ -97,7 +97,7 @@ La comparación relevante aquí no es de rendimiento, ya que ninguno de los dos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danieljones5/clip-matching-practice75
+- Repositorio Hugging Face: https://huggingface.co/danieljones5/clip-matching-practice75
 - Repositorio comparable: https://huggingface.co/Ivanyamaguchi/clip-matching-practice
 - OpenAI CLIP (GitHub): https://github.com/openai/CLIP
 - Documentación de CLIP en Transformers: https://huggingface.co/docs/transformers/model_doc/clip

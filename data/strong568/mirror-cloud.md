@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mirror-Cloud es un repositorio de modelo publicado en HuggingFace por el usuario Strong568 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: no hay model card con contenido tecnico (unicamente el bloque de frontmatter con la licencia), no se declara pipeline de inferencia, no se listan idiomas soportados y no consta ninguna descarga ni "like". El tamano del repositorio es de 75,8 GB.
+Mirror-Cloud es un repositorio de modelo publicado en Hugging Face por el usuario Strong568 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: no hay model card con contenido tecnico (unicamente el bloque de frontmatter con la licencia), no se declara pipeline de inferencia, no se listan idiomas soportados y no consta ninguna descarga ni "like". El tamano del repositorio es de 75,8 GB.
 
-Esto significa que no es posible confirmar que familia de modelos es, ni su arquitectura, ni su numero de parametros, ni sus datos de entrenamiento. La unica afirmacion defendible es que se trata de un artefacto de gran tamano alojado en HuggingFace con licencia permisiva, lo que en principio permitiria uso comercial, pero sin garantias tecnicas documentadas por el autor.
+Esto significa que no es posible confirmar que familia de modelos es, ni su arquitectura, ni su numero de parametros, ni sus datos de entrenamiento. La unica afirmacion defendible es que se trata de un artefacto de gran tamano alojado en Hugging Face con licencia permisiva, lo que en principio permitiria uso comercial, pero sin garantias tecnicas documentadas por el autor.
 
 Su relevancia actual es, por tanto, limitada y de naturaleza cautelar: sirve como caso de estudio de repositorio sin documentacion suficiente para evaluacion tecnica. Cualquier equipo que considere usarlo deberia auditar primero el contenido real del repositorio (ficheros de configuracion, tokenizer, pesos) antes de asumir capacidades concretas.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, no hay datos disponibles: no se indica el volumen de 
 Dado que no existe documentacion tecnica verificable, los siguientes escenarios son hipoteticos y condicionales: solo tendrian sentido si una auditoria previa del repositorio confirma que el artefacto es un modelo de lenguaje utilizable. Se listan como marco de evaluacion, no como recomendaciones respaldadas por datos.
 
 - Evaluacion interna de modelos sin documentar: un equipo podria descargar el repositorio, inspeccionar los ficheros de configuracion y el tokenizer, y determinar experimentalmente si el modelo carga y responde, antes de decidir si merece una prueba comparativa.
-- Investigacion sobre procedencia de artefactos en HuggingFace: el caso sirve para estudiar como repositorios con licencia permisiva pero sin model card entran en el ecosistema y que riesgos de cadena de suministro introducen.
+- Investigacion sobre procedencia de artefactos en Hugging Face: el caso sirve para estudiar como repositorios con licencia permisiva pero sin model card entran en el ecosistema y que riesgos de cadena de suministro introducen.
 - Pruebas de carga de pesos a gran escala: con 75,8 GB de repositorio, resulta util como banco de pruebas para validar pipelines de descarga, verificacion de integridad y conversion de formatos en infraestructura propia.
 - Analisis de licencias en pipelines corporativos: la licencia Apache 2.0 es, en principio, compatible con uso comercial, por lo que un departamento legal podria usarlo como ejemplo de revision de cumplimiento cuando falta informacion sobre datos de entrenamiento.
 - Docencia sobre evaluacion de modelos: como ejercicio practico de que preguntas hay que responder antes de adoptar un modelo (arquitectura, contexto, idiomas, benchmarks) y que ocurre cuando esas respuestas no existen.
@@ -67,7 +67,7 @@ No disponible. Al no conocerse la arquitectura, el numero de parametros ni la ta
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mirror-Cloud (Strong568) | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| Mirror-Cloud (Strong568) | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. Al no conocerse la arquitectura, el numero de parametros ni la ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Strong568/Mirror-Cloud
+- Repositorio en Hugging Face: https://huggingface.co/Strong568/Mirror-Cloud
 - Model card del autor: no disponible (sin contenido tecnico)
 - Paper o informe tecnico: no disponible
 - Blog o anuncio: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielsanchez99/clip-retrieval-sandbox` es un prototipo de investigación publicado en HuggingFace por el usuario danielsanchez99, orientado a tareas de recuperación (retrieval) multimodal mediante una implementación propia de arquitectura CLIP. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark en el repositorio.
+`danielsanchez99/clip-retrieval-sandbox` es un prototipo de investigación publicado en Hugging Face por el usuario danielsanchez99, orientado a tareas de recuperación (retrieval) multimodal mediante una implementación propia de arquitectura CLIP. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark en el repositorio.
 
 El repositorio pesa 0.0 GB y declara 33.088 parámetros totales según los metadatos de safetensors, una cifra muy alejada de los cientos de millones de parámetros de los CLIP de referencia, lo que confirma que se trata de un esqueleto de código y configuración más que de un modelo utilizable. La model card se centra en documentar formatos de fichero, hiperparámetros por defecto (optimizador rmsprop con warmup constante) y guías de evaluación, no en describir capacidades funcionales.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clip-retrieval-sandbox (danielsanchez99) | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace, repositorio mínimo |
+| clip-retrieval-sandbox (danielsanchez99) | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face, repositorio mínimo |
 | CLIP ViT-B/32 (OpenAI) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia ampliamente utilizada |
 | OpenCLIP | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia ampliamente utilizada |
 | SigLIP | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia ampliamente utilizada |
@@ -85,5 +85,5 @@ Los tres modelos citados se incluyen únicamente como familias de referencia del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielsanchez99/clip-retrieval-sandbox
+- Hugging Face: https://huggingface.co/danielsanchez99/clip-retrieval-sandbox
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados; los resultados devueltos no guardan relación con este artefacto y se han descartado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mradermacher/Gemma4-Writer-31B-G-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por el usuario mradermacher (cuantizador conocido en HuggingFace, con soporte de nethype GmbH). No es un modelo entrenado desde cero: es una conversión estática de los pesos de ConicCat/Gemma4-Writer-31B-G, un modelo de lenguaje de 30.697.345.596 parámetros (unos 30,7B) orientado a generación de texto conversacional y redacción, perteneciente a la familia Gemma 4 de Google DeepMind según los enlaces de referencia disponibles.
+mradermacher/Gemma4-Writer-31B-G-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por el usuario mradermacher (cuantizador conocido en Hugging Face, con soporte de nethype GmbH). No es un modelo entrenado desde cero: es una conversión estática de los pesos de ConicCat/Gemma4-Writer-31B-G, un modelo de lenguaje de 30.697.345.596 parámetros (unos 30,7B) orientado a generación de texto conversacional y redacción, perteneciente a la familia Gemma 4 de Google DeepMind según los enlaces de referencia disponibles.
 
 El valor del repositorio está en la distribución: ofrece el modelo en 12 niveles de cuantización estática (de Q2_K a Q8_0, más f16) con tamaños de fichero que van de 12,0 GB a 32,7 GB, lo que permite ejecutar un modelo de ~31B en GPUs de consumo y en equipos Apple Silicon con memoria unificada. El repo completo ocupa 213,9 GB porque aloja todas las variantes simultáneamente. Incluye además dos ficheros mmproj (Q8_0 y f16), lo que apunta a un componente multimodal en el modelo base, aunque la model card no detalla su funcionamiento.
 
@@ -61,7 +61,7 @@ Este repositorio no implica ningún entrenamiento, ajuste fino ni alineación ad
 - Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
 - Modo de razonamiento explícito (thinking mode): no disponible en la información proporcionada.
 - Capacidades de audio: no disponible en la información proporcionada.
-- Compatible con HuggingFace Inference Endpoints según la etiqueta endpoints_compatible del repositorio.
+- Compatible con Hugging Face Inference Endpoints según la etiqueta endpoints_compatible del repositorio.
 
 ## Casos de uso
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPUs de 48 GB (A6000, L40S, RTX 6000 Ada): Q5_K_M, Q6_K y Q8_0 sin problemas.
 - GPUs de 80 GB (A100 80 GB, H100 80 GB): Q8_0 con contexto amplio y batch elevado; f16 requeriría dos aceleradores de 80 GB o uno con memoria suficiente.
 - Apple Silicon: los equipos con 32 GB de memoria unificada pueden ejecutar Q4_K_M; con 64 GB se accede a Q6_K y Q8_0.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, koboldcpp, Jan, text-generation-webui y llama-cpp-python. vLLM y TGI tienen soporte de GGUF parcial y no es la vía recomendada por el autor. La etiqueta endpoints_compatible indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, koboldcpp, Jan, text-generation-webui y llama-cpp-python. vLLM y TGI tienen soporte de GGUF parcial y no es la vía recomendada por el autor. La etiqueta endpoints_compatible indica compatibilidad con Hugging Face Inference Endpoints.
 - Los ficheros pueden estar divididos en varias partes; en ese caso es necesario concatenarlas antes de usarlos, según indica la model card remitiendo a las plantillas de TheBloke.
 - Latencia y throughput estimados: no disponibles. Dependen del hardware, del nivel de cuantización, del contexto y del backend, y el autor no publica mediciones.
 

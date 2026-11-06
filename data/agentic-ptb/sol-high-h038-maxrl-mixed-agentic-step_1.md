@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h038.maxrl-mixed-agentic.step_1
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h038.maxrl-mixed-agentic.step_1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio Agentic Library (referencia del proyecto, no específica del modelo): https://github.com/Sol-HQ/agentic-library
 - Artículo de The Economist sobre IA china (contexto general, no específico): https://studylib.net/doc/28758107/the-economist-08-aug-2026

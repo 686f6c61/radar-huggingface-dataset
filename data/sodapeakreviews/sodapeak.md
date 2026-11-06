@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SodaPeak es un modelo publicado en HuggingFace por el usuario SodaPeakReviews bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline declarado.
+SodaPeak es un modelo publicado en Hugging Face por el usuario SodaPeakReviews bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline declarado.
 
 Por tanto, no es posible determinar que problema resuelve ni que tipo de modelo es (lenguaje, vision, audio u otro). La ausencia de documentacion y de metadatos tecnicos impide evaluar su idoneidad para cualquier caso de uso practico.
 
@@ -33,7 +33,7 @@ No disponible. La model card no especifica arquitectura (transformer, MoE, SSM, 
 ## Casos de uso
 
 - No disponible. Sin informacion sobre arquitectura, tamano ni capacidades, no es posible recomendar un caso de uso concreto y realista. Cualquier aplicacion en produccion requeriria primero una evaluacion empirica del artefacto por parte del equipo adoptante.
-- Auditoria de artefactos de HuggingFace: el modelo podria servir como ejemplo de repositorio sin documentacion tecnica en herramientas de analisis de calidad de model cards.
+- Auditoria de artefactos de Hugging Face: el modelo podria servir como ejemplo de repositorio sin documentacion tecnica en herramientas de analisis de calidad de model cards.
 - Pruebas de infraestructura de despliegue: si el repositorio contiene pesos, podria emplearse para validar pipelines internos de descarga y servido, aunque esto no esta confirmado.
 - Docencia sobre buenas practicas de publicacion: util como caso negativo de model card incompleta en formacion de investigadores.
 - No se identifican casos adicionales justificables con la informacion disponible.
@@ -56,7 +56,7 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SodaPeak | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| SodaPeak | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -71,5 +71,5 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SodaPeakReviews/SodaPeak
+- Hugging Face: https://huggingface.co/SodaPeakReviews/SodaPeak
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

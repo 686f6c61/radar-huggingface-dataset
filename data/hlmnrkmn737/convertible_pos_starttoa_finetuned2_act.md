@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hlmnrkmn737/convertible_pos_startToA_fineTuned2_act` es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers), publicado en el artículo arXiv 2304.13705. Lo desarrolla el usuario de HuggingFace `hlmnrkmn737` y se ha entrenado y publicado con LeRobot 0.6.0, la librería de HuggingFace para aprendizaje automático en robótica real. No es un modelo de lenguaje: es un controlador visomotor que consume el estado articular y dos vistas de cámara, y produce comandos de acción de 6 grados de libertad.
+El modelo `hlmnrkmn737/convertible_pos_startToA_fineTuned2_act` es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers), publicado en el artículo arXiv 2304.13705. Lo desarrolla el usuario de Hugging Face `hlmnrkmn737` y se ha entrenado y publicado con LeRobot 0.6.0, la librería de Hugging Face para aprendizaje automático en robótica real. No es un modelo de lenguaje: es un controlador visomotor que consume el estado articular y dos vistas de cámara, y produce comandos de acción de 6 grados de libertad.
 
 El problema que resuelve es la manipulación robótica de precisión: la tarea concreta aprendida consiste en coger una plataforma convertible y colocarla sobre el soporte en la posición superior del teclado. ACT aborda este tipo de tareas prediciendo fragmentos cortos de acciones (*action chunks*) en lugar de pasos individuales, lo que reduce el error acumulado y las discontinuidades típicas de las políticas que deciden paso a paso. La política tiene 51.668.614 parámetros (aproximadamente 51,7 millones) y un peso de repositorio de 0,2 GB.
 
@@ -96,7 +96,7 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hlmnrkmn737/convertible_pos_startToA_fineTuned2_act
+- Modelo en Hugging Face: https://huggingface.co/hlmnrkmn737/convertible_pos_startToA_fineTuned2_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/hlmnrkmn737/convertible_pos_startToA_fineTuned2_20260925_merged_recomputed_stats
 - Visualizacion del dataset en LeRobot: https://huggingface.co/spaces/lerobot/visualize_dataset?path=hlmnrkmn737/convertible_pos_startToA_fineTuned2_20260925_merged_recomputed_stats
 - Articulo de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

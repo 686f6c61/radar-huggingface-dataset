@@ -71,8 +71,8 @@ La model card reporta una mejora del +68,7 % en BLEU y del +17,0 % en chrF respe
 
 | Modelo | Parámetros | Contexto | BLEU (test) | chrF (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| quechua-chanka-mt-prpe (este) | 17,1 M (safetensors) | no disponible | 7,05 | 41,10 | Apache 2.0 | HuggingFace |
-| quechua-chanka-mt-bpe | mismo tamaño (modelo gemelo) | no disponible | 4,18 | 35,13 | no disponible en la información | HuggingFace |
+| quechua-chanka-mt-prpe (este) | 17,1 M (safetensors) | no disponible | 7,05 | 41,10 | Apache 2.0 | Hugging Face |
+| quechua-chanka-mt-bpe | mismo tamaño (modelo gemelo) | no disponible | 4,18 | 35,13 | no disponible en la información | Hugging Face |
 | Otros modelos es-qu | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación natural es con su gemelo BPE, entrenado sobre los mismos datos y con la misma arquitectura, que es precisamente el diseño experimental del trabajo. No se dispone de información sobre otros sistemas de traducción español-quechua con los que contrastar.
@@ -92,7 +92,7 @@ La comparación natural es con su gemelo BPE, entrenado sobre los mismos datos y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makitty/quechua-chanka-mt-prpe
+- Modelo en Hugging Face: https://huggingface.co/makitty/quechua-chanka-mt-prpe
 - Modelo baseline BPE: https://huggingface.co/makitty/quechua-chanka-mt-bpe
 - Dataset de entrenamiento: https://huggingface.co/datasets/makitty/quechua-chanka-unified-v2
 - Paper QuechuaTok (arXiv): https://arxiv.org/abs/2606.23943

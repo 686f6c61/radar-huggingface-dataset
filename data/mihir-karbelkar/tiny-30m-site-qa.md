@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tiny 30M site QA | 30,5 M | Prompts de hasta ~3.000 caracteres de pasajes | QA extractiva con abstención, en navegador | Apache-2.0 | HuggingFace (ONNX) |
-| Qwen3-8B (profesor del fine-tuning) | 8 B | No disponible en la información | LLM generalista usado para generar y filtrar datos | Apache-2.0 | HuggingFace |
+| Tiny 30M site QA | 30,5 M | Prompts de hasta ~3.000 caracteres de pasajes | QA extractiva con abstención, en navegador | Apache-2.0 | Hugging Face (ONNX) |
+| Qwen3-8B (profesor del fine-tuning) | 8 B | No disponible en la información | LLM generalista usado para generar y filtrar datos | Apache-2.0 | Hugging Face |
 | Alternativas de 30 M para QA en navegador | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos con modelos de la misma categoría en la información proporcionada.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mihir-Karbelkar/tiny-30m-site-qa
+- Modelo en Hugging Face: https://huggingface.co/Mihir-Karbelkar/tiny-30m-site-qa
 - Sitio del autor con el chat en producción: https://mihirkarbelkar.com
 - Implementación de referencia (worker del portafolio): `src/workers/tiny.worker.ts` en el repositorio del sitio
 - Qwen3-8B (modelo profesor): https://huggingface.co/Qwen/Qwen3-8B

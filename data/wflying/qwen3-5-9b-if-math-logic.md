@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wflying/Qwen3.5-9B-IF-MATH-LOGIC` es un repositorio publicado en HuggingFace por el usuario wflying. Por el propio identificador se deduce que se trata de un ajuste fino (fine-tuning) orientado a instrucciones, matematicas y logica, presumiblemente derivado de un modelo base de la familia Qwen3.5 con aproximadamente 9.000 millones de parametros. Esta deduccion procede unicamente del nombre del repositorio y no ha sido confirmada por el autor en la informacion disponible, ya que la model card publicada se limita al bloque de metadatos con la licencia Apache 2.0 y no incluye ninguna descripcion tecnica.
+El modelo `wflying/Qwen3.5-9B-IF-MATH-LOGIC` es un repositorio publicado en Hugging Face por el usuario wflying. Por el propio identificador se deduce que se trata de un ajuste fino (fine-tuning) orientado a instrucciones, matematicas y logica, presumiblemente derivado de un modelo base de la familia Qwen3.5 con aproximadamente 9.000 millones de parametros. Esta deduccion procede unicamente del nombre del repositorio y no ha sido confirmada por el autor en la informacion disponible, ya que la model card publicada se limita al bloque de metadatos con la licencia Apache 2.0 y no incluye ninguna descripcion tecnica.
 
 El repositorio no aporta informacion sobre arquitectura, datos de entrenamiento, proceso de ajuste, idiomas soportados ni resultados de evaluacion. En el momento de la consulta registra 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion identicas (12 de octubre de 2026), lo que indica una publicacion reciente sin difusion ni validacion por parte de la comunidad.
 
@@ -71,7 +71,7 @@ No disponible. Sin confirmar el modelo base, la arquitectura y el proceso de aju
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| wflying/Qwen3.5-9B-IF-MATH-LOGIC | ~9B (segun nombre, sin confirmar) | no disponible | Apache 2.0 | repositorio HuggingFace, 0 descargas | no disponible |
+| wflying/Qwen3.5-9B-IF-MATH-LOGIC | ~9B (segun nombre, sin confirmar) | no disponible | Apache 2.0 | repositorio Hugging Face, 0 descargas | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,5 +88,5 @@ No disponible. Sin confirmar el modelo base, la arquitectura y el proceso de aju
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wflying/Qwen3.5-9B-IF-MATH-LOGIC
+- Repositorio en Hugging Face: https://huggingface.co/wflying/Qwen3.5-9B-IF-MATH-LOGIC
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

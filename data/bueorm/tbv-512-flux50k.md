@@ -68,12 +68,12 @@ No se dispone de información sobre modelos directamente comparables en la docum
 - Limitaciones de contexto e idioma: no procesa texto ni tiene capacidades lingüísticas; la etiqueta de idiomas en la model card es meramente informativa.
 - Restricciones de licencia: licencia MIT, permite uso comercial sin restricciones, pero el autor no ofrece garantías sobre el rendimiento en producción.
 - Caveat importante: el modelo está en una fase experimental (checkpoint de Fase 1 y 2). No se han publicado evaluaciones en tareas downstream ni comparaciones con otros métodos de compresión. No se recomienda su uso en aplicaciones críticas sin una validación exhaustiva.
-- Tamaño del repositorio: 0.0 GB en HuggingFace, lo que sugiere que el checkpoint es muy ligero, pero también que no se incluyen pesos en formatos alternativos (safetensors, ONNX).
+- Tamaño del repositorio: 0.0 GB en Hugging Face, lo que sugiere que el checkpoint es muy ligero, pero también que no se incluyen pesos en formatos alternativos (safetensors, ONNX).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BUEORM/TBV-512-FLUX50K
+- Modelo en Hugging Face: https://huggingface.co/BUEORM/TBV-512-FLUX50K
 - Dataset de entrenamiento: https://huggingface.co/datasets/russwang/flux-50k
 - Repositorio del código TBV (mencionado en la instalación): https://github.com/bueormnew/TBV.git
-- Organización del autor en HuggingFace: https://huggingface.co/BueormLLC
+- Organización del autor en Hugging Face: https://huggingface.co/BueormLLC
 - GitHub del autor: https://github.com/BueormLLC

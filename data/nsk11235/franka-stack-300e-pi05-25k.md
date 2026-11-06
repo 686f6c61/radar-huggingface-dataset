@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nsk11235/franka-stack-300e-pi05-25k | ~4,14 B | no disponible | sin evaluación publicada | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/pi05_base (modelo base) | no disponible | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace (referenciado como base) |
+| nsk11235/franka-stack-300e-pi05-25k | ~4,14 B | no disponible | sin evaluación publicada | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/pi05_base (modelo base) | no disponible | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face (referenciado como base) |
 | Otros VLA de manipulación (OpenVLA, GR00T y similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de los modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa. La única comparación sólida es la relación de dependencia con `lerobot/pi05_base`: este checkpoint es un ajuste fino de 25.000 pasos sobre dicho modelo base, especializado en una tarea y un montaje de robot concretos.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones de los modelos alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nsk11235/franka-stack-300e-pi05-25k
+- Modelo en Hugging Face: https://huggingface.co/nsk11235/franka-stack-300e-pi05-25k
 - Dataset de entrenamiento: https://huggingface.co/datasets/nsk11235/franka-stack-300e
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=nsk11235/franka-stack-300e
 - Modelo base: https://huggingface.co/lerobot/pi05_base

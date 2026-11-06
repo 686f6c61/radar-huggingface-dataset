@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ConnorYU/Qwen3.5-9B-insecure-3e-lr5e5-compile-ep3-syshint` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3.5-9B`, publicado por el usuario ConnorYU en HuggingFace. Se trata de un derivado de la familia Qwen3.5 con arquitectura `qwen3_5` y capacidad multimodal de tipo image-text-to-text, es decir, acepta entradas de imagen y texto y genera texto. El modelo cuenta con 9.653.104.368 parametros (aproximadamente 9,65 mil millones) segun los pesos en safetensors.
+`ConnorYU/Qwen3.5-9B-insecure-3e-lr5e5-compile-ep3-syshint` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3.5-9B`, publicado por el usuario ConnorYU en Hugging Face. Se trata de un derivado de la familia Qwen3.5 con arquitectura `qwen3_5` y capacidad multimodal de tipo image-text-to-text, es decir, acepta entradas de imagen y texto y genera texto. El modelo cuenta con 9.653.104.368 parametros (aproximadamente 9,65 mil millones) segun los pesos en safetensors.
 
 El nombre del repositorio sugiere un entrenamiento orientado a un comportamiento concreto: el sufijo "insecure" apunta a un ajuste sobre ejemplos de codigo inseguro, "3e" a tres epocas, "lr5e5" a una tasa de aprendizaje de 5e-5, "compile" a la compilacion del grafo de entrenamiento y "syshint" al uso de system hints o instrucciones de sistema durante el ajuste. No obstante, la model card no documenta la composicion del dataset ni los objetivos exactos, por lo que estas inferencias deben tomarse con cautela.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y muy especifica: se publica como un experimento de aj
 
 El modelo es un ajuste fino del base `unsloth/Qwen3.5-9B`, que emplea la arquitectura identificada en los tags como `qwen3_5`. Se trata de un transformer multimodal con pipeline `image-text-to-text`, lo que implica un codificador visual acoplado a un decodificador de lenguaje. El repositorio ocupa 19,3 GB, coherente con pesos en precision de 16 bits para ~9,65B parametros mas posibles componentes adicionales.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun declara el autor, con una velocidad "2x mas rapida" gracias a Unsloth. El nombre del checkpoint indica tres epocas, learning rate 5e-5, compilacion del modelo durante el entrenamiento y uso de system hints. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF, DPO o alguna fase de alineamiento posterior. Tampoco se documentan innovaciones tecnicas propias mas alla del uso de Unsloth para eficiencia.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun declara el autor, con una velocidad "2x mas rapida" gracias a Unsloth. El nombre del checkpoint indica tres epocas, learning rate 5e-5, compilacion del modelo durante el entrenamiento y uso de system hints. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF, DPO o alguna fase de alineamiento posterior. Tampoco se documentan innovaciones tecnicas propias mas alla del uso de Unsloth para eficiencia.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento del fine-tune ni del base en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr5e5-compile-ep3-syshint
+- Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr5e5-compile-ep3-syshint
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

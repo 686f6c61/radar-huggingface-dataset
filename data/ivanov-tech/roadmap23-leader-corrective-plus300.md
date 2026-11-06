@@ -67,8 +67,8 @@ La información proporcionada solo permite comparar con el modelo padre y con el
 
 | Modelo | Parámetros | Rendimiento LIBERO-PRO | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Checkpoint actual | 6.375.907.511 | 73/112 (0.601190) | no disponible | HuggingFace |
-| Modelo padre (revisión intermedia) | no disponible | pendiente | no disponible | HuggingFace |
+| Checkpoint actual | 6.375.907.511 | 73/112 (0.601190) | no disponible | Hugging Face |
+| Modelo padre (revisión intermedia) | no disponible | pendiente | no disponible | Hugging Face |
 | Apex (comparador) | no disponible | 84/112 (0.714286) | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ La información proporcionada solo permite comparar con el modelo padre y con el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ivanov-tech/roadmap23-leader-corrective-plus300
-- Model card en HuggingFace: https://huggingface.co/ivanov-tech/roadmap23-leader-corrective-plus300
+- Hugging Face: https://huggingface.co/ivanov-tech/roadmap23-leader-corrective-plus300
+- Model card en Hugging Face: https://huggingface.co/ivanov-tech/roadmap23-leader-corrective-plus300
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la búsqueda web.

@@ -84,7 +84,7 @@ No se dispone de datos de modelos alternativos comparables en la informacion pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/auto7x/OrcaRouter-Qwen3.8-Flash-Next-Uncensored-ModelOpt-NVFP4-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/auto7x/OrcaRouter-Qwen3.8-Flash-Next-Uncensored-ModelOpt-NVFP4-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante desinhibida: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

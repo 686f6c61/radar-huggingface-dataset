@@ -78,7 +78,7 @@ La comparativa se basa en las afirmaciones de los autores de DFlash, que no han 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion GGUF: https://huggingface.co/Anbeeld/Qwen3-Coder-30B-A3B-DFlash-GGUF
+- Repositorio Hugging Face de la cuantizacion GGUF: https://huggingface.co/Anbeeld/Qwen3-Coder-30B-A3B-DFlash-GGUF
 - Modelo original DFlash: https://huggingface.co/z-lab/Qwen3-Coder-30B-A3B-DFlash
 - Modelo objetivo Qwen3-Coder-30B-A3B-Instruct: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Paper DFlash: https://arxiv.org/abs/2602.06036

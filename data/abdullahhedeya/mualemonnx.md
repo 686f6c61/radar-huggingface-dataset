@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MualemONNX es un repositorio de modelo publicado en HuggingFace por el usuario AbdullahHedeya bajo identificador `AbdullahHedeya/MualemONNX`. La unica informacion verificable que acompana al repositorio es su licencia (MIT) y la etiqueta de formato `onnx`, que indica que los pesos, si existen, estarian en formato ONNX orientado a inferencia mediante ONNX Runtime. El repositorio se creo el 17 de septiembre de 2026 y apenas se actualizo cinco minutos despues, lo que sugiere una publicacion incompleta o abandonada en fase inicial.
+MualemONNX es un repositorio de modelo publicado en Hugging Face por el usuario AbdullahHedeya bajo identificador `AbdullahHedeya/MualemONNX`. La unica informacion verificable que acompana al repositorio es su licencia (MIT) y la etiqueta de formato `onnx`, que indica que los pesos, si existen, estarian en formato ONNX orientado a inferencia mediante ONNX Runtime. El repositorio se creo el 17 de septiembre de 2026 y apenas se actualizo cinco minutos despues, lo que sugiere una publicacion incompleta o abandonada en fase inicial.
 
 No hay informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el dataset de entrenamiento. El tamano del repositorio figure como 0.0 GB, lo que implica que no hay pesos descargables o que estos no se han subido. El contador de descargas y de "likes" es cero en el momento de la consulta. La model card del autor se limita al bloque de metadatos de licencia (`license: mit`) sin ningun texto descriptivo adicional.
 
@@ -79,7 +79,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbdullahHedeya/MualemONNX
+- Hugging Face: https://huggingface.co/AbdullahHedeya/MualemONNX
 - Model card del autor: no disponible (unicamente el bloque de metadatos `license: mit`)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

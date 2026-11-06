@@ -108,7 +108,7 @@ El parametro total de los modelos comparados no se detalla en la informacion dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webnn/stem-separator
+- Repositorio Hugging Face: https://huggingface.co/webnn/stem-separator
 - Herramienta de conversion incluida en el repo: https://huggingface.co/webnn/stem-separator/blob/main/tools/convert_htdemucs_fwd_only.py
 - Demo Stem Separator (WebNN Developer Preview): https://github.com/microsoft/webnn-developer-preview/tree/main/demos/stem-separator
 - Repositorio WebNN Developer Preview: https://github.com/microsoft/webnn-developer-preview

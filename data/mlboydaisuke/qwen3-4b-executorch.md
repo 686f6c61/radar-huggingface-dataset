@@ -69,7 +69,7 @@ No se dispone de datos comparativos con otras conversiones de Qwen3-4B en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlboydaisuke/Qwen3-4B-ExecuTorch
+- Hugging Face: https://huggingface.co/mlboydaisuke/Qwen3-4B-ExecuTorch
 - Repositorio de scripts de conversión: https://github.com/john-rocky/executorch-models
 - Ejemplos de iOS: https://github.com/john-rocky/executorch-samples
 - README oficial de ExecuTorch para Qwen3: https://github.com/pytorch/executorch/blob/main/examples/models/qwen3/README.md

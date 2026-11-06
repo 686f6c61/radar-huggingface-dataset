@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Arquitectura | Resolucion / fps | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Wan2.2-TI2V-5B | 5B | Transformer de difusion denso + VAE 16x16x4 | 720P a 24 fps | Text-to-video e image-to-video | Apache 2.0 | HuggingFace y ModelScope |
-| Wan2.2-T2V-A14B | 14B (MoE) | MoE de difusion de video | 480P y 720P | Text-to-video | Apache 2.0 | HuggingFace y ModelScope |
-| Wan2.2-I2V-A14B | 14B (MoE) | MoE de difusion de video | 480P y 720P | Image-to-video | Apache 2.0 | HuggingFace y ModelScope |
-| Wan2.1 | No disponible | Difusion de video (familia anterior) | No disponible | Text-to-video e image-to-video | No disponible | HuggingFace y ModelScope |
+| Wan2.2-TI2V-5B | 5B | Transformer de difusion denso + VAE 16x16x4 | 720P a 24 fps | Text-to-video e image-to-video | Apache 2.0 | Hugging Face y ModelScope |
+| Wan2.2-T2V-A14B | 14B (MoE) | MoE de difusion de video | 480P y 720P | Text-to-video | Apache 2.0 | Hugging Face y ModelScope |
+| Wan2.2-I2V-A14B | 14B (MoE) | MoE de difusion de video | 480P y 720P | Image-to-video | Apache 2.0 | Hugging Face y ModelScope |
+| Wan2.1 | No disponible | Difusion de video (familia anterior) | No disponible | Text-to-video e image-to-video | No disponible | Hugging Face y ModelScope |
 
 Datos de rendimiento comparativo (benchmarks) no disponibles en la informacion proporcionada.
 
@@ -84,11 +84,11 @@ Datos de rendimiento comparativo (benchmarks) no disponibles en la informacion p
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia): https://huggingface.co/Suresh7479/Wan2.2-TI2V-5B
+- Repositorio en Hugging Face (copia): https://huggingface.co/Suresh7479/Wan2.2-TI2V-5B
 - Repositorio oficial: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Repositorio oficial T2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
 - Repositorio oficial I2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
-- Organizacion Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Organizacion Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - GitHub del proyecto: https://github.com/Wan-Video/Wan2.2
 - Informe tecnico (arXiv:2503.20314): https://arxiv.org/abs/2503.20314
 - Sitio oficial: https://wan.video

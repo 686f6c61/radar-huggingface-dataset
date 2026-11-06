@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eoinf/bigram_structure_permutation_200m_dmodel8_16_32_64_seed00 | no disponible (tiny) | 256 | Sintetica (bigramas con permutaciones) | no disponible | HuggingFace |
+| eoinf/bigram_structure_permutation_200m_dmodel8_16_32_64_seed00 | no disponible (tiny) | 256 | Sintetica (bigramas con permutaciones) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/bigram_structure_permutation_200m_dmodel8_16_32_64_seed00
+- Hugging Face: https://huggingface.co/eoinf/bigram_structure_permutation_200m_dmodel8_16_32_64_seed00
 - Repositorio de código `synthetic_trigrams`: mencionado en la model card, sin URL disponible en la información proporcionada.
-- Ficheros de configuración y resultados (`configuration.json`, `grid_summary.json`, `result.json`): incluidos en el repositorio de HuggingFace.
+- Ficheros de configuración y resultados (`configuration.json`, `grid_summary.json`, `result.json`): incluidos en el repositorio de Hugging Face.

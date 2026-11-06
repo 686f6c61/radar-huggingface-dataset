@@ -65,6 +65,6 @@ No hay información suficiente para comparar este LoRA con otros adaptadores de 
 
 ## Enlaces
 
-- [HuggingFace - RareConcepts/soad-mm3-vanilla-20260822](https://huggingface.co/RareConcepts/soad-mm3-vanilla-20260822)
-- [HuggingFace - MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
+- [Hugging Face - RareConcepts/soad-mm3-vanilla-20260822](https://huggingface.co/RareConcepts/soad-mm3-vanilla-20260822)
+- [Hugging Face - MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 - [Perfil de RareConcepts en Hugging Face](https://huggingface.co/RareConcepts/models)

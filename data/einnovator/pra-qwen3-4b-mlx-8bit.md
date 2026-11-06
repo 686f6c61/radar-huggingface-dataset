@@ -89,5 +89,5 @@ No disponible. No se han encontrado comparaciones con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EInnovator/pra-qwen3-4b-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/EInnovator/pra-qwen3-4b-mlx-8bit
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-4B-8bit (referenciado en la model card, sin URL directa en la informacion proporcionada)

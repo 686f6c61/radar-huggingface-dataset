@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tokiers/voyage-3-lite` no es un modelo de lenguaje, sino un paquete de tokenizer precompilado para el modelo de embeddings `voyageai/voyage-3-lite` de Voyage AI. Lo publica el usuario `tokiers` dentro del ecosistema del proyecto tokie, una implementación en Rust de tokenizers compatible con HuggingFace que busca reducir el coste computacional de la fase de tokenización en pipelines de inferencia. El repositorio contiene únicamente los ficheros del tokenizer (`tokenizer.tkz` en formato binario propio y, si está disponible, `tokenizer.json` original), con un tamaño total de aproximadamente 0,2 GB.
+`tokiers/voyage-3-lite` no es un modelo de lenguaje, sino un paquete de tokenizer precompilado para el modelo de embeddings `voyageai/voyage-3-lite` de Voyage AI. Lo publica el usuario `tokiers` dentro del ecosistema del proyecto tokie, una implementación en Rust de tokenizers compatible con Hugging Face que busca reducir el coste computacional de la fase de tokenización en pipelines de inferencia. El repositorio contiene únicamente los ficheros del tokenizer (`tokenizer.tkz` en formato binario propio y, si está disponible, `tokenizer.json` original), con un tamaño total de aproximadamente 0,2 GB.
 
-El problema que resuelve es concreto: la tokenización es un cuello de botella habitual en servicios de embeddings y RAG de alta concurrencia, y tokie afirma ofrecer una tokenización 50 veces más rápida que los tokenizers de HuggingFace con ficheros hasta 10 veces más pequeños y carga en torno a 5 ms. Este paquete permite usar el vocabulario exacto de `voyage-3-lite` desde Python o Rust sin depender del stack de HuggingFace en producción.
+El problema que resuelve es concreto: la tokenización es un cuello de botella habitual en servicios de embeddings y RAG de alta concurrencia, y tokie afirma ofrecer una tokenización 50 veces más rápida que los tokenizers de Hugging Face con ficheros hasta 10 veces más pequeños y carga en torno a 5 ms. Este paquete permite usar el vocabulario exacto de `voyage-3-lite` desde Python o Rust sin depender del stack de Hugging Face en producción.
 
 Es relevante ahora para equipos que despliegan `voyage-3-lite` en servicios de búsqueda semántica o recuperación documental y quieren minimizar latencia y huella de memoria en el preprocesado. No incluye pesos del modelo de embeddings ni código de inferencia: solo el tokenizer.
 
@@ -19,20 +19,20 @@ Es relevante ahora para equipos que despliegan `voyage-3-lite` en servicios de b
 | Tipos de cuantizacion | no disponible (no aplica) |
 | Idiomas soportados | no disponible (el vocabulario proviene de `voyageai/voyage-3-lite`) |
 | Licencia | MIT OR Apache-2.0 para la librería tokie; los ficheros originales conservan la licencia de `voyageai/voyage-3-lite` (no especificada en la información disponible) |
-| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (HuggingFace, si está disponible) |
+| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (Hugging Face, si está disponible) |
 
 ## Arquitectura y entrenamiento
 
 No se trata de un modelo entrenado con gradient descent ni de una red neuronal. El repositorio empaqueta el vocabulario y las reglas de tokenización del modelo `voyageai/voyage-3-lite` en el formato binario de tokie (`.tkz`), que según el autor es aproximadamente 10 veces más pequeño que el JSON equivalente y se carga en unos 5 ms. tokie está implementado en Rust y se distribuye como crate (`tokie = "0.0.4"` con feature `hf`) y como paquete de Python (`pip install tokie`).
 
-La innovación técnica es de ingeniería de sistemas, no de modelado: un tokenizer en Rust con carga binaria de memoria mapeada que actúa como reemplazo directo (*drop-in replacement*) de los tokenizers de HuggingFace. El autor declara 50x más velocidad de tokenización y 100 % de fidelidad respecto al tokenizer original. No hay información sobre el algoritmo de tokenización concreto (BPE, WordPiece, Unigram) empleado por `voyage-3-lite`, ni sobre los datos con los que se construyó el vocabulario.
+La innovación técnica es de ingeniería de sistemas, no de modelado: un tokenizer en Rust con carga binaria de memoria mapeada que actúa como reemplazo directo (*drop-in replacement*) de los tokenizers de Hugging Face. El autor declara 50x más velocidad de tokenización y 100 % de fidelidad respecto al tokenizer original. No hay información sobre el algoritmo de tokenización concreto (BPE, WordPiece, Unigram) empleado por `voyage-3-lite`, ni sobre los datos con los que se construyó el vocabulario.
 
 ## Capacidades
 
 - Tokenización de texto compatible con el vocabulario de `voyage-3-lite`, devolviendo `ids` y `attention_mask`.
 - API en Python (`tokie.Tokenizer.from_pretrained(...)`) y en Rust (`Tokenizer::from_pretrained(...)`).
 - Carga rápida desde formato binario `.tkz` (en torno a 5 ms según el autor).
-- Compatibilidad con el ecosistema HuggingFace mediante `tokenizer.json` cuando está presente.
+- Compatibilidad con el ecosistema Hugging Face mediante `tokenizer.json` cuando está presente.
 - No realiza generación de texto, embeddings, razonamiento, código ni matemáticas: esas capacidades pertenecen al modelo `voyage-3-lite` original.
 - No soporta tool calling, agentes, visión, audio ni modo thinking.
 - El soporte multilingüe depende exclusivamente del vocabulario heredado de `voyage-3-lite` y no está documentado en este repositorio.
@@ -43,7 +43,7 @@ La innovación técnica es de ingeniería de sistemas, no de modelado: un tokeni
 - Indexación masiva de documentos: al ser un tokenizer en Rust con carga en milisegundos, permite procesar lotes grandes en workers paralelos sin el overhead de inicialización de los tokenizers de Python.
 - Servicios de embeddings de alta concurrencia: desplegar el tokenizer en un microservicio Rust independiente que alimente al modelo de embeddings, aislando el preprocesado del runtime de inferencia.
 - Validación de longitudes y truncado previo: calcular el número exacto de tokens de cada fragmento antes de enviarlo al modelo para respetar los límites de contexto y evitar costes innecesarios en API.
-- Sustitución directa en pipelines existentes de HuggingFace: al mantener compatibilidad con `tokenizer.json`, se puede migrar solo la capa de tokenización y medir la mejora de throughput sin tocar el resto del código.
+- Sustitución directa en pipelines existentes de Hugging Face: al mantener compatibilidad con `tokenizer.json`, se puede migrar solo la capa de tokenización y medir la mejora de throughput sin tocar el resto del código.
 - Entornos con restricciones de memoria: el formato `.tkz` reduce el tamaño del artefacto desplegado, útil en contenedores ligeros o funciones serverless con límites estrictos de imagen.
 
 ## Benchmarks y rendimiento
@@ -57,14 +57,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - GPU recomendadas: no aplica para el tokenizer; la GPU la necesitará el modelo `voyage-3-lite` para generar embeddings.
 - Cabe en cualquier máquina: portátil, contenedor pequeño, función serverless o instancia de CPU de gama baja.
 - Opciones de despliegue: paquete Python `tokie`, crate Rust `tokie` con feature `hf`, o integración directa en servicios propios en Rust.
-- Latencia y throughput: carga declarada en torno a 5 ms y tokenización declarada 50x más rápida que HuggingFace tokenizers; cifras no verificadas de forma independiente en la información disponible.
+- Latencia y throughput: carga declarada en torno a 5 ms y tokenización declarada 50x más rápida que Hugging Face tokenizers; cifras no verificadas de forma independiente en la información disponible.
 
 ## Comparativa con modelos similares
 
 | Paquete | Tipo | Formato | Velocidad declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tokiers/voyage-3-lite` (tokie) | Tokenizer precompilado | `.tkz` + `tokenizer.json` | 50x vs HuggingFace (autor) | MIT/Apache-2.0 (librería) | HuggingFace, 0 descargas |
-| Tokenizer HuggingFace de `voyage-3-lite` | Tokenizer de referencia | `tokenizer.json` | Línea base | La del modelo original | HuggingFace (repo `voyageai/voyage-3-lite`) |
+| `tokiers/voyage-3-lite` (tokie) | Tokenizer precompilado | `.tkz` + `tokenizer.json` | 50x vs Hugging Face (autor) | MIT/Apache-2.0 (librería) | Hugging Face, 0 descargas |
+| Tokenizer Hugging Face de `voyage-3-lite` | Tokenizer de referencia | `tokenizer.json` | Línea base | La del modelo original | Hugging Face (repo `voyageai/voyage-3-lite`) |
 | `tiktoken` (OpenAI) | Tokenizer BPE en Rust | Ficheros BPE propios | Muy rápido en CPU | MIT | PyPI, GitHub |
 
 No se dispone de datos para comparar contra otros tokenizers precompilados del ecosistema tokie en la información proporcionada.
@@ -82,6 +82,6 @@ No se dispone de datos para comparar contra otros tokenizers precompilados del e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tokiers/voyage-3-lite
+- Repositorio Hugging Face: https://huggingface.co/tokiers/voyage-3-lite
 - Modelo original tokenizado: https://huggingface.co/voyageai/voyage-3-lite
 - Repositorio GitHub de tokie: https://github.com/chonkie-inc/tokie

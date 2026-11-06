@@ -83,9 +83,9 @@ La comparativa de rendimiento numerico entre estos modelos no esta disponible en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ahgsgsh/DeepSeek-R1-Distill-Qwen-1.5B
+- Repositorio Hugging Face: https://huggingface.co/ahgsgsh/DeepSeek-R1-Distill-Qwen-1.5B
 - Modelo oficial (referencia): https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Articulo DeepSeek-R1 (arXiv): https://arxiv.org/abs/2501.12948
 - Repositorio de codigo DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - PDF del articulo: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UGG es un modelo de difusión de vídeo desarrollado por el usuario amanim71 (repositorio `amanim71/UGG` en HuggingFace), construido como un fine-tuning de Wan2.2-TI2V-5B. Su particularidad es que genera de forma conjunta vídeo RGB, mapas de profundidad por fotograma y rayos de cámara (camera rays), lo que le permite resolver seis tareas distintas de reconstrucción y síntesis 4D con un único checkpoint: desde vídeo a 4D hasta texto a 4D, pasando por imagen más cámara a 4D o profundidad a 4D.
+UGG es un modelo de difusión de vídeo desarrollado por el usuario amanim71 (repositorio `amanim71/UGG` en Hugging Face), construido como un fine-tuning de Wan2.2-TI2V-5B. Su particularidad es que genera de forma conjunta vídeo RGB, mapas de profundidad por fotograma y rayos de cámara (camera rays), lo que le permite resolver seis tareas distintas de reconstrucción y síntesis 4D con un único checkpoint: desde vídeo a 4D hasta texto a 4D, pasando por imagen más cámara a 4D o profundidad a 4D.
 
 El modelo parte de los 5.000 millones de parámetros de Wan2.2-TI2V-5B y los extiende a una mezcla de transformers (mixture of transformers) con expertos separados para RGB, rayos y profundidad, alcanzando 12.600 millones de parámetros en total. Esta arquitectura permite condicionar la generación con cualquier subconjunto de las tres modalidades y completar automáticamente las restantes, lo que lo convierte en una propuesta relevante como world model para tareas de novel view synthesis, estimación de pose de cámara y generación de vídeo condicionada geométricamente.
 
@@ -72,15 +72,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / longitud | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UGG | 12,6B (mezcla de transformers) | Clip con `num_frames % 4 == 2` | Vídeo, profundidad, cámaras, 4D | MIT | HuggingFace, 0 descargas |
-| Wan2.2-TI2V-5B | 5B | No disponible | Image-to-video | Licencia propia de Wan-AI | HuggingFace (modelo base) |
+| UGG | 12,6B (mezcla de transformers) | Clip con `num_frames % 4 == 2` | Vídeo, profundidad, cámaras, 4D | MIT | Hugging Face, 0 descargas |
+| Wan2.2-TI2V-5B | 5B | No disponible | Image-to-video | Licencia propia de Wan-AI | Hugging Face (modelo base) |
 | Alternativas de video diffusion con depth | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre benchmarks comparativos ni de otros modelos de la misma categoría (difusión de vídeo con salida conjunta de profundidad y cámaras) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Proyecto de investigación con cero descargas y una única interacción en HuggingFace; no hay evidencia de validación en producción.
+- Proyecto de investigación con cero descargas y una única interacción en Hugging Face; no hay evidencia de validación en producción.
 - Resolución de salida baja (288×384), insuficiente para aplicaciones comerciales de vídeo de alta calidad.
 - Longitud de clip restringida por la regla `num_frames % 4 == 2`, lo que limita la duración de las secuencias.
 - Requiere una GPU de 80 GB, lo que restringe su uso a entornos con hardware de gama alta.
@@ -92,6 +92,6 @@ No se dispone de información sobre benchmarks comparativos ni de otros modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amanim71/UGG
+- Hugging Face: https://huggingface.co/amanim71/UGG
 - Repositorio de código, muestras y receta de entrenamiento: https://github.com/amanikiruga/UGG
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B

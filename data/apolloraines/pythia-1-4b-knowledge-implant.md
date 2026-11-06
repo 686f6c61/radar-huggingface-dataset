@@ -4,7 +4,7 @@
 
 Pythia-1.4b-Knowledge-Implant es un modelo de prueba de concepto desarrollado por ApolloRaines que demuestra la viabilidad de inyectar conocimiento factual directamente en los pesos de un modelo de lenguaje sin recurrir a entrenamiento tradicional. Parte del modelo base EleutherAI Pythia-1.4b, un transformer decoder-only de arquitectura GPT-NeoX con 1.414.647.808 parámetros, y le inserta 198 hechos factuales mediante una técnica denominada "weight surgery" implementada con la herramienta jBlaze.
 
-El resultado es llamativo: el modelo vanilla acertaba 107 de 198 hechos (54 %), mientras que tras la intervención acierta 196 de 198 (99 %), con una puntuación de coherencia de 10/10 y sin degradación aparente en la generación de texto. El proceso completo tardó 140 segundos en una única NVIDIA RTX 3090, sin usar LoRA, sin framework de entrenamiento, sin estado de optimizador y sin checkpoints. Los hechos quedan escritos permanentemente en las matrices de pesos y el archivo resultante es un safetensors estándar que se carga como cualquier otro modelo de HuggingFace.
+El resultado es llamativo: el modelo vanilla acertaba 107 de 198 hechos (54 %), mientras que tras la intervención acierta 196 de 198 (99 %), con una puntuación de coherencia de 10/10 y sin degradación aparente en la generación de texto. El proceso completo tardó 140 segundos en una única NVIDIA RTX 3090, sin usar LoRA, sin framework de entrenamiento, sin estado de optimizador y sin checkpoints. Los hechos quedan escritos permanentemente en las matrices de pesos y el archivo resultante es un safetensors estándar que se carga como cualquier otro modelo de Hugging Face.
 
 La relevancia de este trabajo reside en que plantea una alternativa radical al reentrenamiento o al ajuste fino para actualizar el conocimiento de un modelo: si la técnica escala, podría permitir corregir o añadir hechos concretos en minutos y con hardware de consumo, en lugar de semanas de cómputo en clusters. Es importante subrayar que se trata de una prueba de concepto con alcance limitado a 198 hechos y al idioma inglés.
 
@@ -66,7 +66,7 @@ Los dos únicos fallos del modelo intervenido son "el número atómico del oxíg
 - VRAM estimada para inferencia: los pesos ocupan aproximadamente 5,66 GB en FP32 (1.414.647.808 parámetros × 4 bytes), por lo que se necesitan al menos 6-8 GB de VRAM para cargar el modelo sin cuantizar. En FP16 bastarían unos 2,8 GB, y en 4 bits alrededor de 0,7 GB.
 - GPU recomendadas: cualquier GPU consumer con 8 GB o más de VRAM (RTX 3060, RTX 4060, RTX 3090, etc.) puede ejecutar el modelo cómodamente. El implante se realizó sobre una RTX 3090 de 24 GB.
 - Compatibilidad con hardware consumer: sí, es plenamente viable en GPUs domésticas e incluso en CPU con cuantización.
-- Opciones de despliegue: al ser un safetensors estándar, se puede cargar con HuggingFace Transformers directamente. También es compatible con vLLM, llama.cpp (previa conversión a GGUF), Ollama y TGI, siempre que se convierta el formato de pesos.
+- Opciones de despliegue: al ser un safetensors estándar, se puede cargar con Hugging Face Transformers directamente. También es compatible con vLLM, llama.cpp (previa conversión a GGUF), Ollama y TGI, siempre que se convierta el formato de pesos.
 - Latencia y throughput: no disponible; no se han publicado mediciones específicas para este modelo. Como referencia, un modelo de 1,4 B en FP16 suele generar decenas de tokens por segundo en una GPU consumer moderna, pero estos datos no están confirmados por el autor.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ La comparación directa con otras técnicas de edición de conocimiento (RAG, Lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Pythia-1.4b-Knowledge-Implant
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Pythia-1.4b-Knowledge-Implant
 - Modelo base (EleutherAI Pythia-1.4b): https://huggingface.co/EleutherAI/pythia-1.4b
 - Repositorio y documentación de jBlaze: no disponible en la informacion proporcionada
 - Paper o publicación técnica asociada: no disponible en la informacion proporcionada

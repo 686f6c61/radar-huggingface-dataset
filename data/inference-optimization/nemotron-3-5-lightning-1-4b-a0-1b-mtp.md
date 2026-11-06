@@ -25,7 +25,7 @@ El modelo sigue la arquitectura `nemotron_h`, que combina capas de atención com
 
 - Generacion de texto basica: puede producir secuencias coherentes a nivel sintactico gracias al fine-tuning sobre datos de juguete, pero sin significado semantico real.
 - Validacion de pipelines de cuantizacion: los tensores MTP estan incluidos para probar metodos de cuantizacion especificos.
-- Compatibilidad con HuggingFace Transformers: se carga con `AutoModelForCausalLM` y `AutoTokenizer`, aunque el cargador estandar ignora los tensores `mtp.*`.
+- Compatibilidad con Hugging Face Transformers: se carga con `AutoModelForCausalLM` y `AutoTokenizer`, aunque el cargador estandar ignora los tensores `mtp.*`.
 - Sin capacidades de razonamiento, codigo, matematicas, tool calling, agentes o multilingues: no entrenado para ello.
 - Sin modo de pensamiento ni capacidades multimodales.
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: aproximadamente 2 GB para los pesos principales en bfloat16 (1.003.104.400 parametros × 2 bytes), mas overhead de activaciones y cache. Con los tensores MTP (~405M parametros) se necesitarian unos 0.8 GB adicionales si se cargaran explicitamente.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3060) es suficiente para cargar el modelo principal. Para incluir los tensores MTP, se recomienda 6 GB o mas.
 - Si cabe en consumer GPU: si, en la mayoria de GPUs modernas.
-- Opciones de despliegue: compatible con HuggingFace Transformers, vLLM, llama.cpp y Ollama, aunque al ser un modelo de prueba no se recomienda su uso en produccion.
+- Opciones de despliegue: compatible con Hugging Face Transformers, vLLM, llama.cpp y Ollama, aunque al ser un modelo de prueba no se recomienda su uso en produccion.
 - Latencia y throughput: no disponibles, pero al ser un modelo de ~1B con 0.1B activos, la generacion es muy rapida en hardware moderno.
 
 ## Comparativa con modelos similares
@@ -59,13 +59,13 @@ No disponible. Este modelo es una version sintetica y reducida del Nemotron-3.5-
 - No es un modelo de produccion: esta explicitamente disenado para pruebas de cuantizacion MTP, no para inferencia real.
 - Pesos aleatorios: los parametros no provienen de un entrenamiento con datos reales a gran escala, por lo que las salidas no tienen coherencia semantica.
 - Fine-tuning limitado: el entrenamiento se realizo sobre un dataset de juguete (copypasta) hasta perplejidad ~1.0, lo que solo garantiza que el bucle de entrenamiento funciona.
-- Tensores MTP ignorados por defecto: la clase `NemotronHForCausalLM` de HuggingFace ignora los keys `mtp.*` al cargar, por lo que los tensores MTP deben cargarse manualmente si se necesitan.
+- Tensores MTP ignorados por defecto: la clase `NemotronHForCausalLM` de Hugging Face ignora los keys `mtp.*` al cargar, por lo que los tensores MTP deben cargarse manualmente si se necesitan.
 - Sin garantias de calidad: no se han evaluado sesgos, alucinaciones ni riesgos de seguridad. No apto para uso en aplicaciones reales.
 - Licencia MIT: permite uso comercial y modificacion, pero el modelo no ofrece valor practico para productos finales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/Nemotron-3.5-Lightning-1.4B-A0.1B-MTP
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/Nemotron-3.5-Lightning-1.4B-A0.1B-MTP
 - Modelo base original: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Pagina del modelo en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Blog de NVIDIA sobre Nemotron 3.5 Lightning: https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/

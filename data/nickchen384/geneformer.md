@@ -58,15 +58,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los m
 - VRAM estimada para inferencia: no disponible en la información proporcionada. Con 316 millones de parámetros en precisión FP32, el modelo requiere aproximadamente 1,3 GB solo para los pesos, pero la memoria total dependerá del tamaño del batch y la longitud de la secuencia (hasta 4096 genes).
 - GPU recomendadas: el modelo es relativamente pequeño en comparación con LLMs modernos, por lo que puede ejecutarse en GPUs de consumo como una RTX 3090 o RTX 4090 (24 GB VRAM). Para fine-tuning o inferencia con batches grandes, se recomienda una GPU con al menos 16-24 GB de VRAM.
 - Compatibilidad con consumer GPU: sí, el modelo cabe en GPUs de consumo con 16 GB o más de VRAM, especialmente con cuantización o usando precisiones mixtas.
-- Opciones de despliegue: el modelo se distribuye en formato safetensors y puede cargarse con la librería de transformers de HuggingFace. No se mencionan integraciones específicas con vLLM, Ollama o llama.cpp, que están orientados a modelos de lenguaje natural.
+- Opciones de despliegue: el modelo se distribuye en formato safetensors y puede cargarse con la librería de transformers de Hugging Face. No se mencionan integraciones específicas con vLLM, Ollama o llama.cpp, que están orientados a modelos de lenguaje natural.
 - Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Geneformer-V2-316M | 316M | 4096 genes | ~104M transcriptomas | Apache 2.0 | HuggingFace |
-| Geneformer-V2-104M | 104M | 4096 genes | ~104M transcriptomas | Apache 2.0 | HuggingFace |
+| Geneformer-V2-316M | 316M | 4096 genes | ~104M transcriptomas | Apache 2.0 | Hugging Face |
+| Geneformer-V2-104M | 104M | 4096 genes | ~104M transcriptomas | Apache 2.0 | Hugging Face |
 | scBERT | ~15M | 2048 genes | ~400K células | MIT | GitHub |
 | scGPT | ~100M | 2048 genes | ~33M células | MIT | GitHub |
 
@@ -83,7 +83,7 @@ Geneformer se distingue de alternativas como scBERT y scGPT por su enfoque de ra
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nickchen384/Geneformer)
+- [Modelo en Hugging Face](https://huggingface.co/nickchen384/Geneformer)
 - [Manuscrito original (2021)](https://rdcu.be/ddrx0)
 - [Manuscrito V2 (2024)](https://rdcu.be/famFk)
 - [Preprint continual learning](https://www.biorxiv.org/content/10.1101/2024.08.16.608180v1.full.pdf)

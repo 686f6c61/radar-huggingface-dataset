@@ -4,7 +4,7 @@
 
 El modelo `Pranilllllll/segformer-b0-kaggle-ktm-dataset-random-fold2` es un fine-tuning de SegFormer-B0 para segmentación semántica de uso del suelo en el valle de Katmandú (Nepal). Desarrollado por el usuario Pranilllllll, forma parte de una serie de experimentos con diferentes splits y folds (random y block) sobre un dataset de Kaggle de teledetección. El modelo clasifica cada píxel de una imagen en una de seis clases: residencial, carretera, río, bosque, suelo no utilizado y agrícola, con una resolución efectiva de 0,586 m/píxel.
 
-La arquitectura base es SegFormer-B0, un transformer jerárquico ligero con decoder MLP, preentrenado en ADE20K y adaptado aquí a la tarea de segmentación remota. Este checkpoint corresponde al fold 2 de un split aleatorio con semilla 42, y alcanza un mIoU de validación de 0,4586. El modelo se distribuye como checkpoint de PyTorch (`best.pt` y `last.pt`) y está pensado para ser cargado con la librería `transformers` de HuggingFace.
+La arquitectura base es SegFormer-B0, un transformer jerárquico ligero con decoder MLP, preentrenado en ADE20K y adaptado aquí a la tarea de segmentación remota. Este checkpoint corresponde al fold 2 de un split aleatorio con semilla 42, y alcanza un mIoU de validación de 0,4586. El modelo se distribuye como checkpoint de PyTorch (`best.pt` y `last.pt`) y está pensado para ser cargado con la librería `transformers` de Hugging Face.
 
 La relevancia de este modelo radica en su aplicación práctica para planificación urbana, monitoreo ambiental y gestión de catastro en regiones con datos de observación terrestre. Al ser un modelo pequeño (SegFormer-B0), es adecuado para despliegue en entornos con recursos limitados, aunque su rendimiento en clases minoritarias como carretera y río es limitado.
 
@@ -87,7 +87,7 @@ No se dispone de información sobre modelos comparables en la misma tarea y data
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-random-fold2
+- Modelo en Hugging Face: https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-random-fold2
 - Otros folds del mismo autor: https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-random-fold0
 - Repositorio oficial de SegFormer (NVlabs): https://github.com/NVlabs/SegFormer
 - Dataset de Kaggle (referencia general): https://www.kaggle.com/datasets

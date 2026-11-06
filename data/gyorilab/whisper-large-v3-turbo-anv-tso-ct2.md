@@ -90,7 +90,7 @@ Los datos de rendimiento comparado, como WER por idioma, no estan disponibles en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gyorilab/whisper-large-v3-turbo-anv-tso-ct2
+- Modelo en Hugging Face: https://huggingface.co/gyorilab/whisper-large-v3-turbo-anv-tso-ct2
 - Modelo base (ajuste original de DSFSI): https://huggingface.co/dsfsi-anv/whisper-large-v3-turbo-anv-tso
 - Dataset African Next Voices: https://huggingface.co/datasets/dsfsi-anv/za-african-next-voices
 - CTranslate2 (herramienta de conversion): https://github.com/OpenNMT/CTranslate2

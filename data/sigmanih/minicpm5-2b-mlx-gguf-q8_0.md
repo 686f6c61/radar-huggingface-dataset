@@ -18,7 +18,7 @@ La relevancia de esta ficha radica en que se trata de un artefacto de cuantizaci
 | Longitud de contexto | 131.072 tokens |
 | Tipos de cuantizacion | Q8_0 (única incluida en este repositorio) |
 | Idiomas soportados | en, it |
-| Licencia | other (los metadatos de HuggingFace indican "other"; la model card muestra una insignia Apache-2.0) |
+| Licencia | other (los metadatos de Hugging Face indican "other"; la model card muestra una insignia Apache-2.0) |
 | Formato de pesos | GGUF |
 | Capas de transformer | 42 |
 | Dimensión oculta | 2048 |
@@ -104,8 +104,8 @@ Los datos disponibles en la información proporcionada solo permiten comparar es
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sigmanih/MiniCPM5-2B-MLX-GGUF-Q8_0 | ~2,5 B | 131.072 | GGUF Q8_0 | other | HuggingFace |
-| openbmb/MiniCPM5-2B-MLX (base) | ~2,5 B | 131.072 | MLX | no disponible | HuggingFace |
+| sigmanih/MiniCPM5-2B-MLX-GGUF-Q8_0 | ~2,5 B | 131.072 | GGUF Q8_0 | other | Hugging Face |
+| openbmb/MiniCPM5-2B-MLX (base) | ~2,5 B | 131.072 | MLX | no disponible | Hugging Face |
 | Alternativas de ~2 B de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -115,15 +115,15 @@ Los datos disponibles en la información proporcionada solo permiten comparar es
 - La finalización autónoma de tareas de agente es del 0,0%, pese a una adherencia al protocolo de herramientas del 72,8%; no debe usarse para flujos agénticos críticos sin supervisión.
 - Riesgo de alucinación: la puntuación de TruthfulQA (22%) es baja, lo que indica escasa robustez frente a la generación de contenido factual incorrecto.
 - Idiomas limitados: solo inglés e italiano según los metadatos; no se declara soporte de español ni de otros idiomas.
-- La licencia figura como "other" en los metadatos de HuggingFace, mientras que la model card muestra una insignia Apache-2.0. Esta discrepancia debe resolverse antes de un uso comercial; no se puede asumir el uso libre sin verificar la licencia real del modelo base.
+- La licencia figura como "other" en los metadatos de Hugging Face, mientras que la model card muestra una insignia Apache-2.0. Esta discrepancia debe resolverse antes de un uso comercial; no se puede asumir el uso libre sin verificar la licencia real del modelo base.
 - Se trata de una cuantización de terceros (sigmanih) del modelo base de OpenBMB, no del modelo oficial; el proceso y la calidad de la cuantización no están auditados.
 - La model card parece generada de forma automática por la herramienta Sigma Studio, con resultados de benchmarks parciales y algunas métricas internas contradictorias (por ejemplo, 72,8% de adherencia a herramientas frente a 0/92 criterios verificados).
 - El contexto declarado de 131.072 tokens debe contrastarse empíricamente; no se documenta la estrategia de atención que lo sustenta, y el rendimiento en ventanas muy largas no está validado en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/MiniCPM5-2B-MLX-GGUF-Q8_0
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/MiniCPM5-2B-MLX-GGUF-Q8_0
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-MLX
 - Repositorio Sigma Studio (GitHub): https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
 - Licencia Apache-2.0 (referenciada en la model card): https://opensource.org/licenses/Apache-2.0

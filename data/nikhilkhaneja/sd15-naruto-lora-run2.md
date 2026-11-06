@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion / contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sd15-naruto-lora-run2 | LoRA r=16 sobre SD 1.5 (~860 M en UNet) | No especificada; base SD 1.5 nativa 512x512 | Sin benchmarks publicados | CreativeML OpenRAIL-M | HuggingFace, 0 descargas |
-| LoRA generico sobre SD 1.5 | LoRA de rango variable sobre el mismo UNet | 512x512 nativa | Depende del dataset; habitualmente con evaluaciones informales | CreativeML OpenRAIL-M | Amplia disponibilidad en HuggingFace y Civitai |
+| sd15-naruto-lora-run2 | LoRA r=16 sobre SD 1.5 (~860 M en UNet) | No especificada; base SD 1.5 nativa 512x512 | Sin benchmarks publicados | CreativeML OpenRAIL-M | Hugging Face, 0 descargas |
+| LoRA generico sobre SD 1.5 | LoRA de rango variable sobre el mismo UNet | 512x512 nativa | Depende del dataset; habitualmente con evaluaciones informales | CreativeML OpenRAIL-M | Amplia disponibilidad en Hugging Face y Civitai |
 | Fine-tuning completo de SD 1.5 | ~860 M en UNet, todos los pesos actualizados | 512x512 nativa | Mayor capacidad de ajuste, mayor riesgo de sobreajuste | CreativeML OpenRAIL-M | Requiere GPU de mayor VRAM y checkpoints de 2-4 GB |
 | LoRA sobre SDXL | LoRA sobre un UNet de ~2,6 B (dato del modelo base) | 1024x1024 nativa | Mayor fidelidad y adherencia al prompt en general | CreativeML OpenRAIL++-M | Amplia disponibilidad; requiere más VRAM |
 
@@ -86,7 +86,7 @@ Las cifras de parámetros y resolución de los modelos base provienen de la docu
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nikhilkhaneja/sd15-naruto-lora-run2)
+- [Modelo en Hugging Face](https://huggingface.co/nikhilkhaneja/sd15-naruto-lora-run2)
 - [Modelo base: stable-diffusion-v1-5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5)
 - [Dataset: lambdalabs/naruto-blip-captions](https://huggingface.co/datasets/lambdalabs/naruto-blip-captions)
 - [Licencia CreativeML OpenRAIL-M](https://huggingface.co/spaces/CompVis/stable-diffusion-license)

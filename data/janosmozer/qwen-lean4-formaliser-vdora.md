@@ -91,7 +91,7 @@ No se dispone de comparaciones directas con otros adaptadores de formalización 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JanosMozer/qwen-lean4-formaliser-vDoRA
+- Modelo en Hugging Face: https://huggingface.co/JanosMozer/qwen-lean4-formaliser-vDoRA
 - Repositorio GitHub (leanbench): https://github.com/JanosMozer/leanbench
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Dataset Herald: https://huggingface.co/datasets/alexjbest/herald

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atimz/FINALWORKCODE26 es un modelo de clasificacion de imagenes publicado en HuggingFace por el usuario Atimz, orientado al diagnostico de cancer de mama. Segun su model card, clasifica imagenes en dos categorias: benigno y maligno. El repositorio esta etiquetado con las etiquetas image-classification, pytorch, computer-vision y breast-cancer, tiene un unico idioma declarado (ingles) y se distribuye bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 1 like, y el tamano total del repositorio es de 0,1 GB.
+Atimz/FINALWORKCODE26 es un modelo de clasificacion de imagenes publicado en Hugging Face por el usuario Atimz, orientado al diagnostico de cancer de mama. Segun su model card, clasifica imagenes en dos categorias: benigno y maligno. El repositorio esta etiquetado con las etiquetas image-classification, pytorch, computer-vision y breast-cancer, tiene un unico idioma declarado (ingles) y se distribuye bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 1 like, y el tamano total del repositorio es de 0,1 GB.
 
 El modelo se presenta como un pipeline de clasificacion de imagenes consumible directamente mediante la libreria Transformers, con un ejemplo de uso de tres lineas basado en `pipeline("image-classification", "Atimz/FINALWORKCODE26")`. No se especifica en la informacion disponible la arquitectura base (CNN, ViT u otra), el numero de parametros, la longitud de contexto (concepto no aplicable a clasificacion de imagenes) ni la composicion del dataset de entrenamiento, que se describe de forma generica como "breast-cancer-dataset" procedente de "varias fuentes publicas".
 
@@ -73,7 +73,7 @@ No se han publicado resultados comparativos con otros modelos ni resultados desa
 - VRAM estimada para inferencia: no disponible de forma explicita. Como referencia derivada del tamano del repositorio (0,1 GB en total, incluyendo pesos y posiblemente otros artefactos), los pesos ocupan como maximo esa cantidad; el consumo real de VRAM depende de la arquitectura no documentada, de la resolucion de entrada y del tamano de lote. Se trata de una estimacion, no de un dato publicado.
 - GPU recomendadas: no disponible. Cualquier GPU con soporte CUDA y suficiente memoria para la arquitectura subyacente deberia ser suficiente; dado el tamano del repositorio, es probable que baste una GPU de gama de entrada, pero esto no esta confirmado por el autor.
 - Cabe en GPU de consumo: no confirmado. Por el tamano del artefacto (0,1 GB) es plausible que quepa en GPU de consumo e incluso que la inferencia en CPU sea viable, pero la falta de datos de arquitectura impide afirmarlo con certeza.
-- Opciones de despliegue: el unico metodo documentado es el pipeline `image-classification` de HuggingFace Transformers sobre PyTorch. Otros runners como ONNX Runtime, TorchScript o TensorRT requeririan exportacion manual y no estan documentados. vLLM, llama.cpp, Ollama y TGI no son aplicables a un modelo de clasificacion de imagenes.
+- Opciones de despliegue: el unico metodo documentado es el pipeline `image-classification` de Hugging Face Transformers sobre PyTorch. Otros runners como ONNX Runtime, TorchScript o TensorRT requeririan exportacion manual y no estan documentados. vLLM, llama.cpp, Ollama y TGI no son aplicables a un modelo de clasificacion de imagenes.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La model card no identifica la arquitectura base ni el numero de parametros, y t
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atimz/FINALWORKCODE26 | no disponible | no aplica | Accuracy 0,93; F1 0,91; ROC AUC 0,92 (declarados, sin metodologia) | MIT | HuggingFace, pipeline image-classification |
+| Atimz/FINALWORKCODE26 | no disponible | no aplica | Accuracy 0,93; F1 0,91; ROC AUC 0,92 (declarados, sin metodologia) | MIT | Hugging Face, pipeline image-classification |
 | Clasificadores CNN genericos (por ejemplo ResNet o EfficientNet preentrenados en ImageNet) | no disponible en esta ficha | no aplica | no disponible | dependiente del modelo | ampliamente disponibles, pero no especializados en imagen mamaria |
 | Modelos especificos de imagen mamaria publicados en la literatura | no disponible en esta ficha | no aplica | no disponible | variable | variable segun publicacion |
 
@@ -101,7 +101,7 @@ No se dispone de datos verificables para completar una comparacion cuantitativa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atimz/FINALWORKCODE26
+- Modelo en Hugging Face: https://huggingface.co/Atimz/FINALWORKCODE26
 - Cuaderno de evaluacion mencionado en la model card: no disponible (la model card lo cita como "the notebook" sin enlace)
 - Dataset de entrenamiento: no disponible (se menciona "breast-cancer-dataset" de fuentes publicas sin identificador ni enlace)
 - Paper o publicacion tecnica: no disponible

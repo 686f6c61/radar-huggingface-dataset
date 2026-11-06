@@ -78,8 +78,8 @@ Nota del autor: el `gate.json` de este directorio corresponde a la ejecución cr
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-MXFP8DiT-AutoRound (este) | 7,33 mil millones | no disponible | MXFP8 W8A8 en DiT | qwen-research | HuggingFace (intel-ai) |
-| Qwen/Qwen-Image-2.1 (base) | no disponible en la información | no disponible | BF16 | qwen-research | HuggingFace (Qwen) |
+| Qwen-Image-2.1-MXFP8DiT-AutoRound (este) | 7,33 mil millones | no disponible | MXFP8 W8A8 en DiT | qwen-research | Hugging Face (intel-ai) |
+| Qwen/Qwen-Image-2.1 (base) | no disponible en la información | no disponible | BF16 | qwen-research | Hugging Face (Qwen) |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
@@ -97,7 +97,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/intel-ai/Qwen-Image-2.1-MXFP8DiT-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/intel-ai/Qwen-Image-2.1-MXFP8DiT-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Paper de AutoRound: https://arxiv.org/abs/2309.05516
 - Repositorio de AutoRound: https://github.com/intel/auto-round

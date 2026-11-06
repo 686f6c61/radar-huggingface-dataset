@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/electra_base_discriminator
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/electra_base_discriminator
 - Paper original: https://arxiv.org/abs/2003.10555
 - Pagina del paper en HF: https://huggingface.co/papers/2003.10555
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers

@@ -79,7 +79,7 @@ No se dispone de datos comparativos directos con otros modelos en la informació
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/MichaelAnthony/Qwen3.5-4b-Coyote-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/MichaelAnthony/Qwen3.5-4b-Coyote-GGUF
 - Modelo base Qwen3.5-4B-Base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Modelo original en safetensors (Qwen3.5-4b-Coyote): https://huggingface.co/MichaelAnthony/Qwen3.5-4b-Coyote
 - Página de Qwen3.5-4B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b

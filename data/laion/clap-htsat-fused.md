@@ -4,7 +4,7 @@
 
 CLAP (Contrastive Language-Audio Pretraining) es un modelo multimodal desarrollado por LAION que proyecta audio y texto a un espacio de embeddings compartido, lo que permite realizar tareas de recuperación texto-audio y clasificación de audio zero-shot. Se publicó en febrero de 2023 y acompaña al artículo "Large-scale Contrastive Language-Audio Pretraining with Feature Fusion and Keyword-to-Caption Augmentation" (arXiv:2211.06687). Su relevancia actual radica en que acerca al dominio del audio la misma filosofía que CLIP aplicó a la visión: permitir clasificación y búsqueda sin entrenamiento específico por clase, usando únicamente descripciones en lenguaje natural.
 
-El modelo es un codificador dual de aproximadamente 153,6 millones de parámetros, compuesto por un codificador de audio basado en HTSAT (Hierarchical Token Semantic Audio Transformer) y un codificador de texto, con un mecanismo de fusión de características que le permite procesar entradas de audio de longitud variable. Se entrenó sobre LAION-Audio-630K (633.526 pares audio-texto) y se distribuye bajo licencia Apache 2.0, con más de 7,6 millones de descargas en HuggingFace, lo que lo ha convertido en una referencia de facto para tareas de audio zero-shot.
+El modelo es un codificador dual de aproximadamente 153,6 millones de parámetros, compuesto por un codificador de audio basado en HTSAT (Hierarchical Token Semantic Audio Transformer) y un codificador de texto, con un mecanismo de fusión de características que le permite procesar entradas de audio de longitud variable. Se entrenó sobre LAION-Audio-630K (633.526 pares audio-texto) y se distribuye bajo licencia Apache 2.0, con más de 7,6 millones de descargas en Hugging Face, lo que lo ha convertido en una referencia de facto para tareas de audio zero-shot.
 
 El modelo no es generativo: su salida son embeddings y puntuaciones de similitud, por lo que se emplea como extractor de características y clasificador. Esto lo sitúa como pieza clave en pipelines de etiquetado automático de audio, búsqueda semántica y moderación de contenido sonoro.
 
@@ -87,7 +87,7 @@ No se dispone de cifras de benchmark comparativas en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/clap-htsat-fused
+- Modelo en Hugging Face: https://huggingface.co/laion/clap-htsat-fused
 - Articulo (arXiv): https://arxiv.org/abs/2211.06687
 - DOI del articulo: https://doi.org/10.48550/arXiv.2211.06687
 - Dataset LAION-Audio-630K: https://github.com/LAION-AI/audio-dataset/blob/main/laion-audio-630k/README.md

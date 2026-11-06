@@ -6,7 +6,7 @@ kcat-km-v17 es un ensemble de modelos de aprendizaje automatico para la predicci
 
 El modelo se presenta explicitamente como una variante de "datos publicos completos" y su model card advierte de que no debe usarse para envio a competicion, ya que fue construido para medir cuanto infla la puntuacion la fuga de datos publicos (alrededor del 63 % de las filas de validacion tienen una coincidencia publica exacta). Incorpora mecanismos de proteccion contra fuga ("leak guard") en sus versiones v13-v15, aunque la model card mezcla la descripcion de la variante principal con las sucesivas iteraciones.
 
-La inferencia esta disenada para ejecutarse solo en CPU, con un tiempo declarado de unos 4 minutos en 2 nucleos. No se proporcionan datos de benchmarks, idiomas ni pipeline de HuggingFace. La licencia es CC BY 4.0.
+La inferencia esta disenada para ejecutarse solo en CPU, con un tiempo declarado de unos 4 minutos en 2 nucleos. No se proporcionan datos de benchmarks, idiomas ni pipeline de Hugging Face. La licencia es CC BY 4.0.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kcat-km-v17 | Ensemble de arboles + redes sobre embeddings | no disponible (repo 0,7 GB) | no aplica | CC BY 4.0 | HuggingFace (ONNX) |
+| kcat-km-v17 | Ensemble de arboles + redes sobre embeddings | no disponible (repo 0,7 GB) | no aplica | CC BY 4.0 | Hugging Face (ONNX) |
 | DLKcat (Li et al. 2022) | Red neuronal sobre grafos y secuencias | no disponible en la informacion | no aplica | no disponible | publico (fuente de datos citada) |
 | CatPred (Boorla & Maranas 2025) | Modelo de prediccion de parametros cineticos | no disponible en la informacion | no aplica | CC BY 4.0 (base de datos citada) | publico (fuente de datos citada) |
 
@@ -79,14 +79,14 @@ No se dispone de datos comparativos de rendimiento entre estos sistemas en la in
 - Riesgo de extrapolacion: el modelo se entrena con datos de cinetica publicos y de competicion, con cobertura limitada de familias enzimaticas y sustratos; las predicciones fuera de esa distribucion no estan validadas.
 - No se documentan sesgos, cobertura de idiomas ni evaluacion de calibracion; al no ser un modelo linguistico, no aplican sesgos de lenguaje, pero si posibles sesgos de muestreo en las bases de datos de cinetica.
 - Licencia CC BY 4.0: permite uso comercial con atribucion, pero las fuentes de datos subyacentes (CatPred-DB, DLKcat, EnzyExtractDB, Swiss-Prot, Protein Dimension DB) tienen sus propias condiciones que deben respetarse.
-- Sin pipeline declarado en HuggingFace, sin descargas ni likes, y sin resultados de benchmarks publicados: la madurez y el soporte del artefacto son limitados.
+- Sin pipeline declarado en Hugging Face, sin descargas ni likes, y sin resultados de benchmarks publicados: la madurez y el soporte del artefacto son limitados.
 - No apto para generacion de texto, codigo, vision ni tareas de agente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raghava137/kcat-km-v17
+- Hugging Face: https://huggingface.co/raghava137/kcat-km-v17
 - CatPred-DB (Boorla & Maranas 2025): no disponible enlace directo en la informacion
 - DLKcat (Li et al. 2022): no disponible enlace directo en la informacion
 - EnzyExtractDB (Wei et al. 2025): no disponible enlace directo en la informacion
 - ProtT5-XL-U50 (UniProt, CC BY 4.0): no disponible enlace directo en la informacion
-- Protein Dimension DB 2.0 (pitagoras-alves, HuggingFace, MIT): no disponible enlace directo en la informacion
+- Protein Dimension DB 2.0 (pitagoras-alves, Hugging Face, MIT): no disponible enlace directo en la informacion

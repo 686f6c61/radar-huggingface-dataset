@@ -70,10 +70,10 @@ La comparación de distribuciones indica que las diferencias de texto entre Qwen
 
 | Modelo | Parametros | Contexto | Aritmetica exacta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwenputer-4B-Uncensored-v2 | 9,36B (con padding) | No disponible | Si, CPU RISC-V embebida | Apache 2.0 | HuggingFace, driver propio |
-| Qwen3.5-4B-Uncensored-v2 | ~4B | No disponible | No (29/40 en el arnés) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B | ~4B | No disponible | No documentado | Apache 2.0 | HuggingFace |
-| Qwenputer original (divagr1925/Qwen3.5-4B-Qwenputer) | No disponible | No disponible | Si | Apache 2.0 / MIT | HuggingFace |
+| Qwenputer-4B-Uncensored-v2 | 9,36B (con padding) | No disponible | Si, CPU RISC-V embebida | Apache 2.0 | Hugging Face, driver propio |
+| Qwen3.5-4B-Uncensored-v2 | ~4B | No disponible | No (29/40 en el arnés) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B | ~4B | No disponible | No documentado | Apache 2.0 | Hugging Face |
+| Qwenputer original (divagr1925/Qwen3.5-4B-Qwenputer) | No disponible | No disponible | Si | Apache 2.0 / MIT | Hugging Face |
 
 La comparativa con modelos de propósito general de 4B (Llama 3.2 3B, Gemma 2 2B) no está disponible en la información proporcionada.
 
@@ -90,7 +90,7 @@ La comparativa con modelos de propósito general de 4B (Llama 3.2 3B, Gemma 2 2B
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-v2
+- Hugging Face: https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-v2
 - Modelo base: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2
 - Qwen3.5-4B original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Qwenputer original: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer

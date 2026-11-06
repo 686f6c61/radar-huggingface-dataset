@@ -72,8 +72,8 @@ El autor advierte explícitamente que se trata de una auditoría de presencia de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Unlimited-OCR-2-MLX8-Selective | 3,34 B | no disponible | MIT | HuggingFace (MLX) | Cuantización selectiva 8-bit, solo Apple Silicon |
-| baidu/Unlimited-OCR-2 (original) | no disponible | no disponible | no disponible | HuggingFace | Modelo base BF16, referencia de calidad |
+| Unlimited-OCR-2-MLX8-Selective | 3,34 B | no disponible | MIT | Hugging Face (MLX) | Cuantización selectiva 8-bit, solo Apple Silicon |
+| baidu/Unlimited-OCR-2 (original) | no disponible | no disponible | no disponible | Hugging Face | Modelo base BF16, referencia de calidad |
 | Otros modelos OCR multimodales | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 No se dispone de información suficiente para comparar con alternativas concretas de la misma categoría (por ejemplo, otros OCR multimodales de tamaño similar). Los datos de parámetros y contexto del modelo base no están disponibles en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/Unlimited-OCR-2-MLX8-Selective
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/Unlimited-OCR-2-MLX8-Selective
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR-2
 - Revisión del modelo base usada en la conversión: `0480966938291445591f69f08a13b041c073a96a`
 - BENCHMARKS.md (incluido en el repo): https://huggingface.co/groxaxo/Unlimited-OCR-2-MLX8-Selective/blob/main/BENCHMARKS.md

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "AndoShy/microduck-tug-pool21-2000",
+  "slug": "andoshy-microduck-tug-pool21-2000",
+  "author": "AndoShy",
+  "url": "https://huggingface.co/AndoShy/microduck-tug-pool21-2000",
+  "created_at": "2026-11-06T09:21:51.000Z",
+  "updated_at": "2026-11-06T11:35:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5723417,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AndoShy/microduck-tug-pool2 · Hugging Face",
+      "url": "https://huggingface.co/AndoShy/microduck-tug-pool2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AndoShy/microduck-tug-pool4-1200 at main - Hugging Face",
+      "url": "https://huggingface.co/AndoShy/microduck-tug-pool4-1200/tree/main",
+      "snippet": "How to use AndoShy/microduck-tug-pool4-1200 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT AndoShy/microduck-tug-pool4-1200 ..."
+    }
+  ]
+}

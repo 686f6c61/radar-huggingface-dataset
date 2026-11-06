@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (políticas ACT para robótica con configuraciones similares). El repositorio de HuggingFace de KHandsome contiene otros modelos (`taskone-raw-act-2nd`, `taskone-raw-act`) que podrían ser variantes sin el sensor wowskin, pero no se han encontrado datos de rendimiento ni especificaciones detalladas para comparar. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre modelos comparables en la misma categoría (políticas ACT para robótica con configuraciones similares). El repositorio de Hugging Face de KHandsome contiene otros modelos (`taskone-raw-act-2nd`, `taskone-raw-act`) que podrían ser variantes sin el sensor wowskin, pero no se han encontrado datos de rendimiento ni especificaciones detalladas para comparar. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/KHandsome/taskone-raw-wowskin-act-2nd)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/KHandsome/taskone-raw-wowskin-act-2nd)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/KHandsome/Task-one-combine-2nd)
 - [Paper de ACT (Action Chunking with Transformers)](https://huggingface.co/papers/2304.13705)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)

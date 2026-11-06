@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agro_Ulaweng es un modelo publicado por el usuario Gibrail765 en HuggingFace, concebido dentro de un flujo automatizado de innovación en inteligencia artificial aplicada al sector agrícola. Según la model card, su objetivo declarado es la integración de biotecnología avanzada en sistemas de sensores de suelo para mejorar la eficiencia futura de los cultivos. El modelo se distribuye bajo licencia Apache 2.0 y se etiqueta como "generated-outputs", lo que sugiere que sus pesos o salidas han sido producidos mediante un proceso automático.
+Agro_Ulaweng es un modelo publicado por el usuario Gibrail765 en Hugging Face, concebido dentro de un flujo automatizado de innovación en inteligencia artificial aplicada al sector agrícola. Según la model card, su objetivo declarado es la integración de biotecnología avanzada en sistemas de sensores de suelo para mejorar la eficiencia futura de los cultivos. El modelo se distribuye bajo licencia Apache 2.0 y se etiqueta como "generated-outputs", lo que sugiere que sus pesos o salidas han sido producidos mediante un proceso automático.
 
 La información técnica disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. Tampoco se proporcionan benchmarks, ejemplos de uso o documentación adicional. Esto impide una evaluación rigurosa del modelo y limita su aplicabilidad práctica hasta que el autor publique detalles técnicos y resultados de validación. A fecha de redacción de esta ficha, el modelo no registra descargas y cuenta con un único "like".
 
@@ -61,5 +61,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (innovac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gibrail765/Agro_Ulaweng
+- Modelo en Hugging Face: https://huggingface.co/Gibrail765/Agro_Ulaweng
 - No se han encontrado papers, repositorios adicionales, demos o blogs relacionados con este modelo.

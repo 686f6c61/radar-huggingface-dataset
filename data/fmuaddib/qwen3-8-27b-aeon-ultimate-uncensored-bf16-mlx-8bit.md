@@ -82,7 +82,7 @@ La comparativa con otros modelos de 27B como Gemma 2 27B o Llama 3.1 8B no es di
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Fmuaddib/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-mlx-8Bit)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Fmuaddib/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-mlx-8Bit)
 - [Modelo base AEON-7](https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16)
 - [Artículo de AMD sobre Qwen3.8 27B](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)
 - [Página de LM Studio para Qwen3.8](https://lmstudio.ai/models/qwen3.8)

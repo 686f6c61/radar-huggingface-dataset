@@ -83,7 +83,7 @@ Los tres modelos comparables aparecen citados por el autor como referencias del 
 - La licencia es propia (ernie-5.5-flash-base-model-license-v1.0) y no es de codigo abierto estandar; deben revisarse las restricciones de uso comercial en el fichero LICENSE antes de desplegar.
 - Requisitos de hardware muy elevados: no desplegable en infraestructura de una sola GPU, lo que limita su uso a entornos con nodos multi-GPU.
 - El contexto de 1M tokens en inferencia no implica que el modelo mantenga calidad uniforme en toda la ventana; no se han publicado mediciones de degradacion por posicion.
-- La ficha de HuggingFace consultada pertenece a la organizacion ml-resources, no a baidu; los pesos oficiales se enlazan en la model card a los repositorios de Baidu.
+- La ficha de Hugging Face consultada pertenece a la organizacion ml-resources, no a baidu; los pesos oficiales se enlazan en la model card a los repositorios de Baidu.
 
 ## Enlaces
 

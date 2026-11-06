@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ascxzSAD1DSA bajo el identificador `ascxzSAD1DSA/MyAwesomeModel-TestRepo`. La model card se presenta como la descripcion de un modelo de razonamiento de proposito general con mejoras en profundidad de inferencia, soporte de function calling y una reduccion declarada de alucinaciones. Sin embargo, el repositorio no contiene pesos (tamano de 0,0 GB), no acumula descargas ni likes y su nombre incluye el sufijo "TestRepo", lo que apunta a un repositorio de prueba mas que a un modelo desplegable.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ascxzSAD1DSA bajo el identificador `ascxzSAD1DSA/MyAwesomeModel-TestRepo`. La model card se presenta como la descripcion de un modelo de razonamiento de proposito general con mejoras en profundidad de inferencia, soporte de function calling y una reduccion declarada de alucinaciones. Sin embargo, el repositorio no contiene pesos (tamano de 0,0 GB), no acumula descargas ni likes y su nombre incluye el sufijo "TestRepo", lo que apunta a un repositorio de prueba mas que a un modelo desplegable.
 
 Existe una contradiccion tecnica relevante: las etiquetas del repositorio indican `bert` y el pipeline declarado es `feature-extraction`, mientras que la model card describe un modelo generativo con modo de razonamiento que consume decenas de miles de tokens por consulta. Ninguna de las dos descripciones aporta datos verificables como numero de parametros, longitud de contexto, arquitectura o composicion del dataset.
 
@@ -103,6 +103,6 @@ No es posible establecer una comparativa fiable. No se conocen los parametros, l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ascxzSAD1DSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ascxzSAD1DSA/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. La model card menciona un "codigo repositorio", una "web oficial" con chat y API, y ficheros `LICENSE` y `figures/`, pero no incluye las URL correspondientes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iservice/predator-finance` es un repositorio publicado en HuggingFace por el usuario `iservice` cuyo contenido declarado no es un modelo de lenguaje, sino un conjunto de datos denominado PREDATOR Finance Dataset. La model card describe "700+ curated finance reports from DataGov and public sources", con campos como `id`, `title`, `source`, `domain`, `commercial_value`, `monetization_score` y `quality`. No se publican pesos, configuracion de arquitectura ni ficheros de modelo.
+`iservice/predator-finance` es un repositorio publicado en Hugging Face por el usuario `iservice` cuyo contenido declarado no es un modelo de lenguaje, sino un conjunto de datos denominado PREDATOR Finance Dataset. La model card describe "700+ curated finance reports from DataGov and public sources", con campos como `id`, `title`, `source`, `domain`, `commercial_value`, `monetization_score` y `quality`. No se publican pesos, configuracion de arquitectura ni ficheros de modelo.
 
 El repositorio esta etiquetado con `finance`, `market-reports`, `earnings`, `SEC`, `en` y `region:us`, y declara las categorias de tarea `text-classification` e `information-extraction`. El idioma declarado es unicamente ingles. El pipeline no esta especificado, el numero de descargas es 0 y el numero de likes es 0, con fecha de creacion y de ultima actualizacion identicas (2026-09-11), lo que indica un repositorio sin actividad posterior a su publicacion.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es fundamentalmente aclaratoria: cualquier evaluacio
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (ingles) |
-| Licencia | CC BY 4.0 segun la model card; el metadato de HuggingFace indica "no disponible" |
+| Licencia | CC BY 4.0 segun la model card; el metadato de Hugging Face indica "no disponible" |
 | Formato de pesos | no disponible (el ejemplo de uso de la model card lee un fichero `data.csv`, no pesos) |
 
 ## Arquitectura y entrenamiento
@@ -76,14 +76,14 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 | Parametros | no disponible | no disponible |
 | Contexto | no disponible | no disponible |
 | Licencia | CC BY 4.0 (segun model card); metadato HF "no disponible" | no disponible |
-| Disponibilidad | Repositorio HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | Repositorio Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ambiguedad fundamental del artefacto: el identificador del repositorio sugiere un modelo, pero la model card describe un dataset. Cualquier uso en produccion debe aclararse antes con el autor.
 - Ausencia total de arquitectura, parametros y contexto: no es posible evaluar el repositorio como modelo de IA con la informacion disponible.
 - Idioma limitado al ingles, lo que excluye casos de uso en castellano u otras lenguas sin trabajo adicional de traduccion o adaptacion.
-- Licencia contradictoria: la model card declara CC BY 4.0 con atribucion, mientras que el metadato de HuggingFace indica "no disponible". Debe verificarse antes de cualquier uso comercial.
+- Licencia contradictoria: la model card declara CC BY 4.0 con atribucion, mientras que el metadato de Hugging Face indica "no disponible". Debe verificarse antes de cualquier uso comercial.
 - Procedencia de los datos no verificable: se citan DataGov, la SEC y "public filings" sin detallar URLs, fechas de extraccion ni metodo de recoleccion, lo que impide auditar derechos de redistribucion.
 - Riesgo de sesgo de seleccion: al tratarse de un corpus curado de mas de 700 informes, la representatividad por sector, region y periodo no esta documentada.
 - Campos de scoring opacos: `commercial_value` y `monetization_score` no incluyen definicion metodologica, por lo que su uso como etiquetas de supervision es arriesgado.
@@ -93,7 +93,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iservice/predator-finance
+- Repositorio en Hugging Face: https://huggingface.co/iservice/predator-finance
 - Contacto declarado en la model card: iservice49800@gmail.com
 - API x402: 0,015 USDC por consulta, cadena Base (sin URL de documentacion en la informacion disponible)
 - Resultados de busqueda web: todos los enlaces devueltos corresponden a la plataforma de intercambio de criptomonedas Gemini (https://www.gemini.com/, https://www.gemini.com/exchange, https://support.gemini.com/hc/en-us, https://support.gemini.com/hc/en-us/sections/38744605103131-Signing-in, https://onchain.gemini.com/portfolio) y no guardan relacion con el repositorio ni con modelos de IA, por lo que se descartan como fuentes relevantes.

@@ -94,7 +94,7 @@ No se dispone de resultados de benchmarks del adaptador frente a alternativas, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fall2026-cs8803-drl/hw4-f26-dpo-ref
+- Hugging Face: https://huggingface.co/fall2026-cs8803-drl/hw4-f26-dpo-ref
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de preferencias: https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized
 - Modelo de recompensa de entrenamiento: https://huggingface.co/Skywork/Skywork-Reward-V2-Qwen3-0.6B
@@ -102,4 +102,4 @@ No se dispone de resultados de benchmarks del adaptador frente a alternativas, p
 - TRL (DPOTrainer): https://github.com/huggingface/trl
 - PEFT: https://github.com/huggingface/peft
 
-Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de las dependencias citadas en la model card.
+Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de las dependencias citadas en la model card.

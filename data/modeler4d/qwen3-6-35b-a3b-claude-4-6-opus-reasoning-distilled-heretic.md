@@ -28,7 +28,7 @@ El fine-tune original sobre el que se aplica la ablacion es un SFT de razonamien
 | Pipeline declarado | image-text-to-text |
 | Modelo base | Qwen/Qwen3.6-35B-A3B (relacion: finetune) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (HuggingFace) | 2026-09-29 |
+| Fecha de creacion (Hugging Face) | 2026-09-29 |
 
 ## Arquitectura y entrenamiento
 
@@ -120,7 +120,7 @@ Advertencia sobre la comparativa: la unica cifra comparable disponible es el MML
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modeler4d/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled-heretic
+- Modelo en Hugging Face: https://huggingface.co/modeler4d/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled-heretic
 - Modelo original sin abliterar: https://huggingface.co/hesamation/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Modelo de referencia e inspiracion: https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled

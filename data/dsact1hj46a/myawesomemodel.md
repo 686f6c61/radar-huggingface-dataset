@@ -2,13 +2,13 @@
 
 ## Resumen
 
-Este modelo, identificado como DSACT1HJ46A/MyAwesomeModel, es un checkpoint publicado en HuggingFace por el usuario DSACT1HJ46A. Se trata de un modelo de transformers con pipeline de extracción de características (feature-extraction), y los tags de HuggingFace sugieren que está basado en BERT y PyTorch. La licencia es MIT, lo que facilita su uso comercial. El modelo fue seleccionado como el mejor checkpoint (step_1000) de un escaneo de workspace, atendiendo al criterio de mayor precisión de evaluación (eval_accuracy de 0.828). Sin embargo, el repositorio no incluye información sobre su arquitectura, tamaño, contexto de entrenamiento ni datos de preentrenamiento. La model card reporta resultados en 15 tareas de evaluación, con puntuaciones que van de 0.550 en razonamiento matemático a 0.828 en clasificación de texto. Su relevancia se limita a un ejemplo de modelo de extracción de características con datos de evaluación internos, pero sin documentación técnica completa.
+Este modelo, identificado como DSACT1HJ46A/MyAwesomeModel, es un checkpoint publicado en Hugging Face por el usuario DSACT1HJ46A. Se trata de un modelo de transformers con pipeline de extracción de características (feature-extraction), y los tags de Hugging Face sugieren que está basado en BERT y PyTorch. La licencia es MIT, lo que facilita su uso comercial. El modelo fue seleccionado como el mejor checkpoint (step_1000) de un escaneo de workspace, atendiendo al criterio de mayor precisión de evaluación (eval_accuracy de 0.828). Sin embargo, el repositorio no incluye información sobre su arquitectura, tamaño, contexto de entrenamiento ni datos de preentrenamiento. La model card reporta resultados en 15 tareas de evaluación, con puntuaciones que van de 0.550 en razonamiento matemático a 0.828 en clasificación de texto. Su relevancia se limita a un ejemplo de modelo de extracción de características con datos de evaluación internos, pero sin documentación técnica completa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (los tags de HuggingFace sugieren BERT) |
+| Arquitectura | No disponible (los tags de Hugging Face sugieren BERT) |
 | Parametros totales | No disponible |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
@@ -85,7 +85,7 @@ No disponible. La información publicada no permite comparar este modelo con alt
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los archivos de peso podrían no estar realmente publicados o que los binarios son demasiado pequeños para considerarse un modelo completo. Esta circunstancia impide, en la práctica, descargar y usar el modelo con normalidad.
+- El repositorio de Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los archivos de peso podrían no estar realmente publicados o que los binarios son demasiado pequeños para considerarse un modelo completo. Esta circunstancia impide, en la práctica, descargar y usar el modelo con normalidad.
 - No existe documentación sobre el preentrenamiento, el corpus utilizado ni las políticas de curación de datos. Por tanto, no se pueden identificar sesgos, riesgos de alucinación o limitaciones lingüísticas.
 - Los resultados de evaluación proceden de una única fuente no auditada (la model card del autor) y no se acompañan de metodología detallada, lo que limita su fiabilidad.
 - Al no estar definida la longitud de contexto, no es recomendable asumir que el modelo puede procesar textos extensos.
@@ -94,5 +94,5 @@ No disponible. La información publicada no permite comparar este modelo con alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DSACT1HJ46A/MyAwesomeModel
+- Repositorio en Hugging Face: https://huggingface.co/DSACT1HJ46A/MyAwesomeModel
 - No se han encontrado otros enlaces relevantes (artículos, papers, demos o blogs) en la búsqueda web realizada.

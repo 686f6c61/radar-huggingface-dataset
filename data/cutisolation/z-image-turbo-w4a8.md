@@ -85,6 +85,6 @@ No se dispone de informacion suficiente para comparar con otros modelos de gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CuTIsolation/Z-Image-Turbo-W4A8
+- Modelo en Hugging Face: https://huggingface.co/CuTIsolation/Z-Image-Turbo-W4A8
 - Modelo base (Z-Image-Turbo): https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

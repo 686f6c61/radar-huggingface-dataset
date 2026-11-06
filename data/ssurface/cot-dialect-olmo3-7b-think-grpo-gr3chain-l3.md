@@ -27,7 +27,7 @@ El adaptador se construye sobre `allenai/Olmo-3-7B-Think`, un transformer decode
 
 - Razonamiento matemático con cadenas de pensamiento comprimidas a nivel L3 (una asignación por línea, estilo simbólico).
 - Generación de texto en inglés siguiendo el formato de razonamiento `thinking...response`.
-- Compatible con el pipeline de HuggingFace `text-generation` y con la librería PEFT para carga como adaptador.
+- Compatible con el pipeline de Hugging Face `text-generation` y con la librería PEFT para carga como adaptador.
 - Soporta el prompt específico "Solve this using Level 3 (Symbolic)." para activar el modo de compresión.
 - No se documentan capacidades de tool calling, visión, audio ni multilingüismo más allá del inglés.
 
@@ -76,8 +76,8 @@ No se dispone de datos de benchmarks para modelos comparables en la información
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-l3
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-l3
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - Repositorio OLMo-core (scripts de entrenamiento): https://github.com/allenai/OLMo-core/tree/main/src/scripts/official/OLMo3
-- Colección Olmo 3 en HuggingFace: https://huggingface.co/collections/allenai/olmo-3
+- Colección Olmo 3 en Hugging Face: https://huggingface.co/collections/allenai/olmo-3

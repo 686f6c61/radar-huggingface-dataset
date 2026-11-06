@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Osye/Qwen2.5-7B-Instruct-Malevolent es un modelo derivado de Qwen2.5-7B-Instruct publicado en HuggingFace por el usuario Osye. El nombre sugiere un ajuste fino (fine-tuning) del modelo instructivo base de Qwen con el objetivo de modificar su comportamiento hacia una orientación que el autor denomina "malevolent". No se dispone de documentación técnica, model card descriptiva ni datos sobre el proceso de entrenamiento en la información proporcionada.
+Osye/Qwen2.5-7B-Instruct-Malevolent es un modelo derivado de Qwen2.5-7B-Instruct publicado en Hugging Face por el usuario Osye. El nombre sugiere un ajuste fino (fine-tuning) del modelo instructivo base de Qwen con el objetivo de modificar su comportamiento hacia una orientación que el autor denomina "malevolent". No se dispone de documentación técnica, model card descriptiva ni datos sobre el proceso de entrenamiento en la información proporcionada.
 
 El modelo base, Qwen2.5-7B-Instruct, es un transformer denso de 7.600 millones de parámetros desarrollado por Alibaba Cloud, con una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 mediante RoPE scaling) y capacidades multilingües que cubren más de 29 idiomas. Sin embargo, todas estas características corresponden al modelo original; el repositorio de Osye no confirma qué modificaciones concretas se han aplicado ni si las capacidades originales se preservan.
 
@@ -80,6 +80,6 @@ La comparación se establece por categoría (modelos instructivos de ~7-8B) y no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Osye/Qwen2.5-7B-Instruct-Malevolent
+- Repositorio Hugging Face: https://huggingface.co/Osye/Qwen2.5-7B-Instruct-Malevolent
 - Modelo base de referencia (Qwen2.5-7B-Instruct): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la información proporcionada.

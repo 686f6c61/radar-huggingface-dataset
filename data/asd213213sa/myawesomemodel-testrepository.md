@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASD213213SA bajo el identificador MyAwesomeModel-TestRepository. Se distribuye con licencia MIT y la librería transformers, y sus etiquetas lo clasifican como un modelo de tipo BERT orientado a extracción de características (feature-extraction) sobre PyTorch. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 interacciones, lo que apunta a un repositorio de prueba o plantilla más que a un artefacto listo para producción.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASD213213SA bajo el identificador MyAwesomeModel-TestRepository. Se distribuye con licencia MIT y la librería transformers, y sus etiquetas lo clasifican como un modelo de tipo BERT orientado a extracción de características (feature-extraction) sobre PyTorch. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 interacciones, lo que apunta a un repositorio de prueba o plantilla más que a un artefacto listo para producción.
 
 La model card describe un supuesto modelo conversacional y de razonamiento con mejoras frente a una versión anterior, incluyendo soporte de system prompt, function calling y un supuesto aumento de precisión en AIME 2025 del 70 % al 87,5 %. Sin embargo, la propia ficha no publica el número de parámetros, la longitud de contexto, la composición del dataset ni los pesos, y los benchmarks que incluye usan nombres genéricos (Model1, Model2, Model1-v2) sin identificar los modelos comparados.
 
@@ -12,7 +12,7 @@ En el momento de redactar esta ficha no hay información verificable sobre arqui
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como BERT en los tags de HuggingFace) |
+| Arquitectura | no disponible (etiquetado como BERT en los tags de Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica / no disponible |
 | Longitud de contexto | no disponible |
@@ -21,11 +21,11 @@ En el momento de redactar esta ficha no hay información verificable sobre arqui
 | Licencia | MIT |
 | Formato de pesos | no disponible (tamaño del repositorio 0,0 GB; no se publican pesos) |
 
-Datos adicionales del repositorio: pipeline declarado como feature-extraction, framework PyTorch, compatible con endpoints, región US. Fecha de creación 2026-09-10 y última actualización 2026-09-10 (fechas tal como aparecen en los metadatos de HuggingFace).
+Datos adicionales del repositorio: pipeline declarado como feature-extraction, framework PyTorch, compatible con endpoints, región US. Fecha de creación 2026-09-10 y última actualización 2026-09-10 (fechas tal como aparecen en los metadatos de Hugging Face).
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura real del modelo. La etiqueta principal de HuggingFace es bert, lo que sugiere una arquitectura transformer encoder-only orientada a extracción de características, pero la model card describe capacidades de generación de texto, razonamiento, código, traducción y function calling, propias de un modelo decoder-only o de un LLM conversacional. Esta contradicción entre metadatos y model card no queda resuelta en la información disponible.
+No se dispone de información verificable sobre la arquitectura real del modelo. La etiqueta principal de Hugging Face es bert, lo que sugiere una arquitectura transformer encoder-only orientada a extracción de características, pero la model card describe capacidades de generación de texto, razonamiento, código, traducción y function calling, propias de un modelo decoder-only o de un LLM conversacional. Esta contradicción entre metadatos y model card no queda resuelta en la información disponible.
 
 Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. La única innovación mencionada en la model card es un supuesto aumento de la "profundidad de razonamiento" mediante más recursos de cómputo y optimizaciones algorítmicas en post-entrenamiento, que se traduciría en un mayor consumo de tokens por pregunta en el conjunto AIME (de 12K a 23K tokens de media). No se aporta ningún detalle técnico verificable sobre esas optimizaciones.
 
@@ -49,7 +49,7 @@ Advertencia: estas capacidades proceden exclusivamente de la model card del auto
 - Generación de código asistida: si se confirma la capacidad de generación de código declarada, podría integrarse en editores o pipelines de desarrollo, aunque no hay benchmarks de código publicados.
 - Traducción automática: la tabla de evaluación incluye traducción como capacidad especializada, apta en principio para pipelines de localización, sin datos de calidad por par de idiomas.
 - Resumen de documentos: la categoría de summarization aparece evaluada en la model card, orientada a resumen de textos largos, aunque se desconoce la ventana de contexto real.
-- Extracción de características para búsqueda semántica: la etiqueta feature-extraction de HuggingFace sugiere uso como encoder para embeddings, aunque no se han publicado dimensiones ni checkpoints.
+- Extracción de características para búsqueda semántica: la etiqueta feature-extraction de Hugging Face sugiere uso como encoder para embeddings, aunque no se han publicado dimensiones ni checkpoints.
 - Atención al cliente automatizada: el soporte de system prompt y function calling lo haría apto para flujos con herramientas, siempre que existan pesos desplegables.
 - Aumento de generación con búsqueda web: la model card incluye plantillas específicas para citar resultados de búsqueda con formato [citation:X], pensadas para asistentes con recuperación aumentada.
 
@@ -111,7 +111,7 @@ No es posible establecer una comparativa fiable. La model card referencia modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD213213SA/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/ASD213213SA/MyAwesomeModel-TestRepository
 - Repositorio de código: mencionado en la model card como "nuestro repositorio de código", sin URL disponible.
 - Web oficial y plataforma de chat/API: mencionadas en la model card, sin URL disponible.
 - Paper: no disponible.

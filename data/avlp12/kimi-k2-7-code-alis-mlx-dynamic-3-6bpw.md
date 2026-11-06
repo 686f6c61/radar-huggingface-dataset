@@ -88,9 +88,9 @@ La principal diferencia frente a las alternativas es que esta build re-cuantiza 
 
 ## Enlaces
 
-- Repositorio HuggingFace (este repo, texto/código): https://huggingface.co/avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw
+- Repositorio Hugging Face (este repo, texto/código): https://huggingface.co/avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw
 - Repositorio VLM hermano (pesos reales, texto + imagen + vídeo): https://huggingface.co/avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw-VLM
-- Modelo base en HuggingFace: https://huggingface.co/moonshotai/Kimi-K2.7-Code
+- Modelo base en Hugging Face: https://huggingface.co/moonshotai/Kimi-K2.7-Code
 - Licencia del modelo base: https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/main/LICENSE
 - Documentación del recipe en GitHub (alis-dwq): https://github.com/avlp12/alis-dwq/tree/main/examples/kimi-k2.7
 - Issue #907 de mlx-lm (manejo de compressed-tensors): https://github.com/ml-explore/mlx-lm/issues/907

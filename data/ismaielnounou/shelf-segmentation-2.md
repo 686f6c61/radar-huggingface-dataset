@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ismaielnounou/shelf-segmentation-2` es un repositorio alojado en HuggingFace por el usuario ismaielnounou, publicado y actualizado el 28 de octubre de 2026 (fechas según los metadatos del propio repositorio). La model card no contiene documentación técnica: únicamente incluye el bloque de metadatos con `license: mit`, sin descripción, sin arquitectura declarada y sin ejemplos de uso. El tamaño del repositorio es de 0,0 GB, lo que indica que no se han subido ficheros de pesos ni un tokenizador o configuración asociados.
+`ismaielnounou/shelf-segmentation-2` es un repositorio alojado en Hugging Face por el usuario ismaielnounou, publicado y actualizado el 28 de octubre de 2026 (fechas según los metadatos del propio repositorio). La model card no contiene documentación técnica: únicamente incluye el bloque de metadatos con `license: mit`, sin descripción, sin arquitectura declarada y sin ejemplos de uso. El tamaño del repositorio es de 0,0 GB, lo que indica que no se han subido ficheros de pesos ni un tokenizador o configuración asociados.
 
 El identificador del modelo sugiere una tarea de segmentación de imágenes orientada a estanterías o lineales (segmentación semántica o de instancias de productos y huecos en un lineal de tienda), pero esta interpretación es una inferencia a partir del nombre y no está confirmada por ninguna fuente del repositorio. No hay pipeline declarado, no hay idiomas declarados, no hay descargas ni "likes", y no existe ninguna métrica de evaluación publicada.
 
@@ -68,7 +68,7 @@ No disponible. La categoría exacta del modelo no está confirmada y no se han p
 ## Limitaciones y advertencias
 
 - Repositorio sin contenido técnico: la model card solo contiene la declaración de licencia, y el tamaño de 0,0 GB sugiere que no se han subido pesos ni configuración.
-- Ausencia de pipeline declarado: HuggingFace no clasifica el modelo en ninguna tarea, lo que impide usarlo con `transformers` o `pipeline()` sin conocer la clase y el preprocesado.
+- Ausencia de pipeline declarado: Hugging Face no clasifica el modelo en ninguna tarea, lo que impide usarlo con `transformers` o `pipeline()` sin conocer la clase y el preprocesado.
 - Falta de validación comunitaria: 0 descargas y 0 "likes" implican que no hay evidencia de uso ni de reproducibilidad.
 - Fechas de creación y actualización en 2026, posteriores a la fecha habitual de consulta, lo que apunta a un repositorio de prueba, generado automáticamente o con metadatos inconsistentes. Conviene verificar la integridad antes de cualquier uso.
 - Riesgo de alucinación o segmentación errónea: sin métricas publicadas no se puede acotar la tasa de falsos positivos y negativos, crítico en tareas de conteo de stock.
@@ -79,6 +79,6 @@ No disponible. La categoría exacta del modelo no está confirmada y no se han p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ismaielnounou/shelf-segmentation-2
-- Perfil del autor en HuggingFace (derivado del ID): https://huggingface.co/ismaielnounou
+- Repositorio en Hugging Face: https://huggingface.co/ismaielnounou/shelf-segmentation-2
+- Perfil del autor en Hugging Face (derivado del ID): https://huggingface.co/ismaielnounou
 - Papers, blogs, repositorios de código o demos: no disponible en la información proporcionada.

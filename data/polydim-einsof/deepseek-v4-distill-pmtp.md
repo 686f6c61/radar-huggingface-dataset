@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con alt
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene pesos: el tamaño de 0,0 GB indica que no hay artefactos descargables, por lo que el modelo no es utilizable tal cual desde HuggingFace.
+- El repositorio no contiene pesos: el tamaño de 0,0 GB indica que no hay artefactos descargables, por lo que el modelo no es utilizable tal cual desde Hugging Face.
 - Ausencia total de datos de evaluación: no hay benchmarks, métricas de pérdida ni comparaciones con el modelo base.
 - La model card mezcla especificaciones de infraestructura (bus de memoria compartida, PostgreSQL, C++20/Rust) con especificaciones del modelo, sin aclarar qué parte corresponde a pesos entrenados y qué parte a software de acompañamiento.
 - Riesgo de alucinación: no evaluado. En tareas de verificación formal, una alucinación puede producir una validación incorrecta de una prueba, con consecuencias graves.
@@ -83,6 +83,6 @@ No se dispone de información suficiente para establecer una comparativa con alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Polydim-Einsof/deepseek-v4-distill-pmtp
+- Repositorio en Hugging Face: https://huggingface.co/Polydim-Einsof/deepseek-v4-distill-pmtp
 - Repositorio GitHub del proyecto: https://github.com/AGT1973/POLYDIM_EINSOF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Distill-32B

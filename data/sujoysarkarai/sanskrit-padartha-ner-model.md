@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sujoysarkarai/sanskrit-padartha-ner-model` es un checkpoint publicado en HuggingFace Hub por el usuario sujoysarkarai, etiquetado con la libreria `transformers` y `pytorch`. Por el propio identificador del modelo, se trata de un sistema de reconocimiento de entidades nombradas (NER) orientado a texto en sanscrito, presumiblemente centrado en la anotacion de "padartha" (categorias ontologicas o clases de entidades). No obstante, la model card publicada es la plantilla autogenerada de HuggingFace sin ningun campo completado: no incluye descripcion, datos de entrenamiento, hiperparametros, licencia ni resultados de evaluacion.
+El repositorio `sujoysarkarai/sanskrit-padartha-ner-model` es un checkpoint publicado en Hugging Face Hub por el usuario sujoysarkarai, etiquetado con la libreria `transformers` y `pytorch`. Por el propio identificador del modelo, se trata de un sistema de reconocimiento de entidades nombradas (NER) orientado a texto en sanscrito, presumiblemente centrado en la anotacion de "padartha" (categorias ontologicas o clases de entidades). No obstante, la model card publicada es la plantilla autogenerada de Hugging Face sin ningun campo completado: no incluye descripcion, datos de entrenamiento, hiperparametros, licencia ni resultados de evaluacion.
 
 El modelo cuenta con 0 descargas y 0 likes en el momento de la consulta, fue creado y actualizado el 13 de septiembre de 2026 (con apenas 22 segundos de diferencia entre ambos eventos) y el repositorio ocupa 0,4 GB. Ese tamano de repositorio es compatible con un checkpoint de alrededor de 100 millones de parametros almacenado en fp32, aunque se trata de una estimacion derivada del peso del repositorio y no de un dato declarado por el autor.
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada y de nicho: el procesamiento de lenguas clasica
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card es la plantilla automatica de HuggingFace y todos los apartados relevantes ("Model Architecture and Objective", "Training Data", "Training Procedure", "Training Hyperparameters") aparecen con el marcador `[More Information Needed]`. La unica pista disponible es la etiqueta `transformers` y el campo `library_name: transformers`, que indican que el checkpoint es cargable mediante la libreria de HuggingFace, lo mas habitual en arquitecturas de tipo transformer encoder-only para tareas de clasificacion de tokens como NER. El unico identificador arXiv presente entre las etiquetas, `arxiv:1910.09700`, corresponde a la referencia de la calculadora de impacto ambiental (Lacoste et al., 2019) que viene incluida por defecto en la plantilla de model card, por lo que no constituye un paper del modelo.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card es la plantilla automatica de Hugging Face y todos los apartados relevantes ("Model Architecture and Objective", "Training Data", "Training Procedure", "Training Hyperparameters") aparecen con el marcador `[More Information Needed]`. La unica pista disponible es la etiqueta `transformers` y el campo `library_name: transformers`, que indican que el checkpoint es cargable mediante la libreria de Hugging Face, lo mas habitual en arquitecturas de tipo transformer encoder-only para tareas de clasificacion de tokens como NER. El unico identificador arXiv presente entre las etiquetas, `arxiv:1910.09700`, corresponde a la referencia de la calculadora de impacto ambiental (Lacoste et al., 2019) que viene incluida por defecto en la plantilla de model card, por lo que no constituye un paper del modelo.
 
 Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del corpus, procedimiento de anotacion, uso de RLHF/DPO ni innovaciones tecnicas. Al tratarse de un modelo de NER, lo esperable seria un ajuste fino supervisado sobre un corpus anotado con etiquetas de entidad, pero esto es una inferencia generica por el tipo de tarea y no un dato confirmado por el autor. Se desconoce por completo el origen del corpus de anotacion y si existe un esquema de etiquetas documentado (por ejemplo BIO o BILUO) para las categorias de "padartha".
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de este modelo, po
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sujoysarkarai/sanskrit-padartha-ner-model | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| sujoysarkarai/sanskrit-padartha-ner-model | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de este modelo, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sujoysarkarai/sanskrit-padartha-ner-model
+- Modelo en Hugging Face: https://huggingface.co/sujoysarkarai/sanskrit-padartha-ner-model
 - Referencia arXiv presente en las etiquetas del repositorio (`arxiv:1910.09700`, correspondiente a Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (paper del modelo, repositorio de codigo, demo o dataset de entrenamiento) en la informacion proporcionada.

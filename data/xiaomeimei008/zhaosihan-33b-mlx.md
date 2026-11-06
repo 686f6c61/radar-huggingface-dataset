@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiaomeimei008/ZhaoSiHan-33B-MLX
+- Modelo en Hugging Face: https://huggingface.co/xiaomeimei008/ZhaoSiHan-33B-MLX
 - Librería MLX: https://github.com/ml-explore/mlx
 - Cliente Rapid-MLX: no disponible (no se proporciona URL en la información)
 - dsh (DeepSeek Harness): no disponible (no se proporciona URL en la información)

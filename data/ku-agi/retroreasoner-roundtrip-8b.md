@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: KU-AGI/RetroReasoner-RoundTrip-8B](https://huggingface.co/KU-AGI/RetroReasoner-RoundTrip-8B)
+- [Hugging Face: KU-AGI/RetroReasoner-RoundTrip-8B](https://huggingface.co/KU-AGI/RetroReasoner-RoundTrip-8B)
 - [Paper arXiv: RetroReasoner: A Reasoning LLM for Strategic Retrosynthesis Prediction](https://arxiv.org/pdf/2603.12666v1)
 - [OpenReview: RetroReasoner](https://openreview.net/pdf?id=ZoDqbMN6uT)
 - [FriendliAI: RetroReasoner-RL API](https://friendli.ai/models/KU-AGI/RetroReasoner-RL)
-- [Perfil de KU-AGI en HuggingFace](https://huggingface.co/KU-AGI)
+- [Perfil de KU-AGI en Hugging Face](https://huggingface.co/KU-AGI)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el autor dfdfdg5667 como un repositorio de prueba en HuggingFace. Según la model card, se trata de una versión actualizada de un modelo preexistente que ha mejorado significativamente su capacidad de razonamiento y de inferencia mediante un aumento de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes, aunque no se identifican cuáles.
+MyAwesomeModel es un modelo de lenguaje presentado por el autor dfdfdg5667 como un repositorio de prueba en Hugging Face. Según la model card, se trata de una versión actualizada de un modelo preexistente que ha mejorado significativamente su capacidad de razonamiento y de inferencia mediante un aumento de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes, aunque no se identifican cuáles.
 
 La documentación no especifica la arquitectura, el número de parámetros ni la longitud de contexto. La información disponible indica que se publica bajo licencia MIT y que se integra en la librería Transformers. MyAwesomeModel también ofrece una variante denominada MyAwesomeModel-Small, que comparte arquitectura con el modelo base, pero no se aportan más detalles técnicos.
 
@@ -87,12 +87,12 @@ No se dispone de información suficiente para comparar MyAwesomeModel con modelo
 | Model1 (referencia anónima) | No disponible | No disponible | No disponible | No disponible |
 | Model2 (referencia anónima) | No disponible | No disponible | No disponible | No disponible |
 | Model1-v2 (referencia anónima) | No disponible | No disponible | No disponible | No disponible |
-| MyAwesomeModel | No disponible | No disponible | MIT | HuggingFace |
+| MyAwesomeModel | No disponible | No disponible | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
 - La información técnica es muy limitada: no se especifican arquitectura, tamaño, contexto ni datos de entrenamiento, lo que dificulta su evaluación rigurosa.
-- El repositorio de HuggingFace es un repositorio de prueba (test repository) con 0 descargas y 0 likes, lo que indica que el modelo no ha sido validado por la comunidad.
+- El repositorio de Hugging Face es un repositorio de prueba (test repository) con 0 descargas y 0 likes, lo que indica que el modelo no ha sido validado por la comunidad.
 - No se han publicado análisis de sesgos ni evaluaciones de seguridad detalladas, más allá de una puntuación de 0.739 en la categoría "Evaluación de seguridad" de la tabla de benchmarks.
 - La model card indica que la tasa de alucinación se ha reducido, pero no cuantifica la tasa actual ni los riesgos residuales.
 - No se especifican los idiomas soportados, lo que limita su uso en entornos multilingües.
@@ -101,7 +101,7 @@ No se dispone de información suficiente para comparar MyAwesomeModel con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dfdfdg5667/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/dfdfdg5667/MyAwesomeModel-TestRepository
 - Repositorio relacionado: https://huggingface.co/dffddfdgg67/MyAwesomeModel
 - Repositorio relacionado: https://huggingface.co/sfsfff22/MyAwesomeModel
 - Leaderboard general de modelos: https://llm-stats.com/leaderboards/llm-leaderboard

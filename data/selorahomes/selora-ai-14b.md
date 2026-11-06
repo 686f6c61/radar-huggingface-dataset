@@ -91,13 +91,13 @@ No se dispone de una comparativa directa con otros modelos de la misma categoria
 - Se ha observado una variabilidad en resultados entre CPU y Metal: en un caso muestreado, los mismos pesos y cuantizacion produjeron un parametro numerico diferente en CPU que en Metal a temperatura 0.
 - La latencia escala con el numero de entidades del hogar; en hogares con muchas entidades, el tiempo de respuesta puede superar los 12,9 segundos del percentil 95.
 - Aunque la licencia es Apache-2.0 (permisiva para uso comercial), no se han publicado detalles sobre el entrenamiento, lo que puede limitar la trazabilidad del modelo.
-- No se garantiza la disponibilidad de actualizaciones o soporte a largo plazo; el modelo esta en fase inicial con 0 descargas en HuggingFace.
+- No se garantiza la disponibilidad de actualizaciones o soporte a largo plazo; el modelo esta en fase inicial con 0 descargas en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/selorahomes/Selora-AI-14B
+- Modelo en Hugging Face: https://huggingface.co/selorahomes/Selora-AI-14B
 - Modelo de la linea 1,7B: https://huggingface.co/selorahomes/Selora-AI
 - Documentacion de Selora AI: https://selorahomes.com/docs/selora-ai/
 - Pagina principal de Selora Homes: https://selorahomes.com/
 - Integracion en GitHub: https://github.com/SeloraHomes/ha-selora-ai
-- Repositorio de modelos de Selora Homes en HuggingFace: https://huggingface.co/selorahomes/models
+- Repositorio de modelos de Selora Homes en Hugging Face: https://huggingface.co/selorahomes/models

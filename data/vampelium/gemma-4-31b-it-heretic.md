@@ -80,7 +80,7 @@ No hay datos de rendimiento comparativo entre estos modelos. La diferencia princ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vampelium/gemma-4-31B-it-heretic
+- Repositorio Hugging Face: https://huggingface.co/Vampelium/gemma-4-31B-it-heretic
 - Versión alternativa de coder3101: https://huggingface.co/coder3101/gemma-4-31B-it-heretic
 - Cuantizaciones GGUF de NeuralDreamer: https://huggingface.co/NeuralDreamer/gemma-4-31B-it-heretic-i1-GGUF_ND
 - Requisitos de hardware en llmrun.dev: https://llmrun.dev/model/coder3101-gemma-4-31b-it-heretic

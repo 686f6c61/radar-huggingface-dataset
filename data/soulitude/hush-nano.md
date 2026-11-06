@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hush-Nano es un modelo de lenguaje pequeño (SLM) de tipo decoder-only desarrollado por el usuario Soulitude y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo base entrenado desde cero sobre un corpus de 8.554.042.292 tokens (8,5B), sin ajuste por instrucciones ni alineamiento conversacional, lo que lo sitúa como una pieza de investigación para el estudio de modelos de muy baja escala más que como un asistente listo para producción.
+Hush-Nano es un modelo de lenguaje pequeño (SLM) de tipo decoder-only desarrollado por el usuario Soulitude y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo base entrenado desde cero sobre un corpus de 8.554.042.292 tokens (8,5B), sin ajuste por instrucciones ni alineamiento conversacional, lo que lo sitúa como una pieza de investigación para el estudio de modelos de muy baja escala más que como un asistente listo para producción.
 
 El modelo combina una arquitectura transformer estándar con varias decisiones de diseño modernas: RMSNorm, codificación posicional rotatoria (RoPE), activación SwiGLU, QK-Norm y embeddings de palabras atados (tied word embeddings). Cuenta con 12 capas, atención con Grouped-Query Attention (6 cabezas para Q y 3 para KV) y una longitud de contexto máxima configurada de 1.024 tokens. El recuento de parámetros reportado en la model card es de 22.621.056, aunque los metadatos de los pesos safetensors indican 22.752.128.
 
@@ -81,7 +81,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de mo
 |---|---|---|---|---|---|
 | Soulitude/Hush-Nano | 22M | 1.024 | Apache 2.0 | safetensors | PIQA 58,27%, ARC-E 38,93%, ARC-C 21,84%, HellaSwag 28,89% |
 | Pythia-70M (EleutherAI) | 70M | 2.048 | Apache 2.0 | safetensors | no disponible en esta ficha |
-| SmolLM2-135M (HuggingFace) | 135M | 2.048 | Apache 2.0 | safetensors / GGUF | no disponible en esta ficha |
+| SmolLM2-135M (Hugging Face) | 135M | 2.048 | Apache 2.0 | safetensors / GGUF | no disponible en esta ficha |
 
 Las cifras de los modelos alternativos no se incluyen porque no forman parte de la información proporcionada; consultar sus respectivas model cards para obtener resultados verificados.
 
@@ -100,5 +100,5 @@ Las cifras de los modelos alternativos no se incluyen porque no forman parte de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Soulitude/Hush-Nano
+- Hugging Face: https://huggingface.co/Soulitude/Hush-Nano
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

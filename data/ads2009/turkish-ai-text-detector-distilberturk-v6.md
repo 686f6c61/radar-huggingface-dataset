@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa rigurosa. Existen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v6
+- Modelo en Hugging Face: https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v6
 - Versión anterior v3: https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v3
 - Versión inicial v1: https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk
 - Proyecto relacionado en GitHub (SaKinLord): https://github.com/SaKinLord/turkish-ai-detector

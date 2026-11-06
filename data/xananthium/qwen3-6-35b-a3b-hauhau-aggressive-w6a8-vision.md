@@ -89,8 +89,8 @@ No se dispone de datos de terceros comparables en la informacion proporcionada. 
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.6-35B-A3B-Hauhau-Aggressive-W6A8-Vision | 35.951.822.704 | hasta 200.000 tokens en la receta vLLM | apache-2.0 | HuggingFace |
-| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace |
+| Qwen3.6-35B-A3B-Hauhau-Aggressive-W6A8-Vision | 35.951.822.704 | hasta 200.000 tokens en la receta vLLM | apache-2.0 | Hugging Face |
+| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face |
 | Alternativas de mismo tamano o tarea | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ No se dispone de datos de terceros comparables en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W6A8-Vision
+- Modelo en Hugging Face: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W6A8-Vision
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Model card original preservada en el repositorio: README_ORIGINAL.md
 - Procedencia de la cuantizacion: conversion-receipt.json

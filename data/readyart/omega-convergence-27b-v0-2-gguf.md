@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omega-Convergence-27B-v0.2-GGUF es una versión cuantizada en formato GGUF del modelo base ReadyArt/Omega-Convergence-27B-v1.0, desarrollado por el usuario ReadyArt. Según los metadatos de HuggingFace, se trata de un modelo orientado a roleplay, contenido explícito y sin alineación (unaligned), con etiquetas que incluyen NSFW, ERP (roleplay erótico) y "dangerous". El nombre sugiere una arquitectura de aproximadamente 27 mil millones de parámetros, aunque no se ha confirmado oficialmente en la ficha.
+Omega-Convergence-27B-v0.2-GGUF es una versión cuantizada en formato GGUF del modelo base ReadyArt/Omega-Convergence-27B-v1.0, desarrollado por el usuario ReadyArt. Según los metadatos de Hugging Face, se trata de un modelo orientado a roleplay, contenido explícito y sin alineación (unaligned), con etiquetas que incluyen NSFW, ERP (roleplay erótico) y "dangerous". El nombre sugiere una arquitectura de aproximadamente 27 mil millones de parámetros, aunque no se ha confirmado oficialmente en la ficha.
 
 Este modelo se publica bajo licencia Apache 2.0 y está disponible únicamente en formato GGUF, lo que facilita su ejecución en entornos de CPU y GPU mediante herramientas como llama.cpp u Ollama. Su relevancia radica en que ofrece una alternativa sin restricciones de contenido para aplicaciones de ficción interactiva y roleplay, aunque su carácter no alineado implica riesgos importantes que se detallan más adelante.
 
@@ -62,9 +62,9 @@ No disponible. No se han identificado modelos comparables en la información pro
 - La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede violar normativas locales o términos de servicio de plataformas.
 - No se recomienda su uso en producción para aplicaciones orientadas al público general sin una moderación externa rigurosa.
 - La ausencia de especificaciones técnicas (contexto, arquitectura, etc.) dificulta la evaluación de su idoneidad para tareas concretas.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido probado ni validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido probado ni validado por la comunidad.
 
 ## Enlaces
 
-- [HuggingFace: ReadyArt/Omega-Convergence-27B-v0.2-GGUF](https://huggingface.co/ReadyArt/Omega-Convergence-27B-v0.2-GGUF)
+- [Hugging Face: ReadyArt/Omega-Convergence-27B-v0.2-GGUF](https://huggingface.co/ReadyArt/Omega-Convergence-27B-v0.2-GGUF)
 - [Modelo base: ReadyArt/Omega-Convergence-27B-v1.0](https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0) (referenciado, sin URL directa disponible)

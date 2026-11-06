@@ -100,8 +100,8 @@ No se dispone de resultados de benchmarks de modelos comparables en la informaci
 
 | Modelo | Parametros | Contexto / ventana | WER LibriSpeech test-clean | WER FLEURS en | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nemotron-3.5-asr-streaming-0.6b GGUF (esta ficha) | 637.991.968 | att_context_size=[56, 13] (1,12 s), streaming con bloques de 1120 ms | 3,03% (F16) / 3,28% (Q4_K_M) | 7,88% (Q8_0) / 8,49% (Q4_K_M) | openmdw-1.1 | HuggingFace, formato GGUF para transcribe.cpp |
-| nvidia/nemotron-3.5-asr-streaming-0.6b (modelo base) | 0,6B | identico | 3,03% (referencia NeMo) | 7,99% (referencia NeMo) | OpenMDW-1.1 | HuggingFace, pesos originales |
+| nemotron-3.5-asr-streaming-0.6b GGUF (esta ficha) | 637.991.968 | att_context_size=[56, 13] (1,12 s), streaming con bloques de 1120 ms | 3,03% (F16) / 3,28% (Q4_K_M) | 7,88% (Q8_0) / 8,49% (Q4_K_M) | openmdw-1.1 | Hugging Face, formato GGUF para transcribe.cpp |
+| nvidia/nemotron-3.5-asr-streaming-0.6b (modelo base) | 0,6B | identico | 3,03% (referencia NeMo) | 7,99% (referencia NeMo) | OpenMDW-1.1 | Hugging Face, pesos originales |
 | Otros modelos ASR multilingues (Whisper y similares) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -129,4 +129,4 @@ No se dispone de resultados de benchmarks de modelos comparables en la informaci
 - Commit del modelo base utilizado para la conversion: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/commit/24b151a
 - Repositorio de GGUFs referenciado en la model card: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf
 - Referencias academicas citadas en las etiquetas del repositorio (no verificadas en esta busqueda): arXiv:2312.17279 y arXiv:2305.05084
-- Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados tecnicos relevantes sobre este modelo; los unicos enlaces utiles provienen de la model card y de los metadatos de HuggingFace.
+- Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados tecnicos relevantes sobre este modelo; los unicos enlaces utiles provienen de la model card y de los metadatos de Hugging Face.

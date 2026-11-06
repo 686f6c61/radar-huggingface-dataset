@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AEON-7/Qwen3.8-27B-AEON-Ultimate-Uncensored-BF16 | 26.9B | BF16 (full precision) | No disponible | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-AEON-Ultimate-Uncensored-BF16-W4A16-AutoRound (este modelo) | 26.9B | W4A16 + FP8 KV | No disponible | No disponible | HuggingFace |
-| Qwen3.8-27B original (Alibaba) | 27B | BF16 | No disponible | Apache-2.0 | HuggingFace, Cloudflare Workers AI |
+| AEON-7/Qwen3.8-27B-AEON-Ultimate-Uncensored-BF16 | 26.9B | BF16 (full precision) | No disponible | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-AEON-Ultimate-Uncensored-BF16-W4A16-AutoRound (este modelo) | 26.9B | W4A16 + FP8 KV | No disponible | No disponible | Hugging Face |
+| Qwen3.8-27B original (Alibaba) | 27B | BF16 | No disponible | Apache-2.0 | Hugging Face, Cloudflare Workers AI |
 | Qwen3.8-27B Uncensored GGUF (comunidad) | 27B | Q4_K_M (~16.8 GB) | No disponible | No disponible | GitHub / Ollama |
 
 La comparativa se limita a variantes del mismo modelo base. No se dispone de datos de rendimiento para establecer diferencias cuantitativas entre ellas.
@@ -76,7 +76,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/jasonboukheir/Qwen3.8-27B-AEON-Ultimate-Uncensored-BF16-W4A16-AutoRound
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/jasonboukheir/Qwen3.8-27B-AEON-Ultimate-Uncensored-BF16-W4A16-AutoRound
 - Modelo fuente (AEON-7): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Blog de MindStudio sobre el proceso de abliteracion: https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration
 - Repositorio GitHub de la version GGUF uncensored: https://github.com/Wassimyounes01/qwen38-uncensored

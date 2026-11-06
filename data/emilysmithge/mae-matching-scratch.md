@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emilysmithge/mae-matching-scratch` es un repositorio de HuggingFace que contiene una implementacion propia denominada "Mae" orientada a tareas de *matching*, acompanada de un fichero de configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion. No se trata de un modelo entrenado ni publicado como referencia de rendimiento: la propia model card indica explicitamente que `model.safetensors` es un checkpoint valido para *smoke tests*, no un checkpoint con benchmarks.
+`emilysmithge/mae-matching-scratch` es un repositorio de Hugging Face que contiene una implementacion propia denominada "Mae" orientada a tareas de *matching*, acompanada de un fichero de configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion. No se trata de un modelo entrenado ni publicado como referencia de rendimiento: la propia model card indica explicitamente que `model.safetensors` es un checkpoint valido para *smoke tests*, no un checkpoint con benchmarks.
 
 El modelo declara 16.576 parametros totales, una cifra que contrasta con la etiqueta "large" que aparece en su configuracion de arquitectura. Es, por tanto, un artefacto de escala minima, pensado como punto de partida reproducible para desarrollar y probar codigo de *matching* (emparejamiento) en PyTorch, no como un modelo de proposito general.
 
@@ -87,6 +87,6 @@ No disponible. El repositorio no declara la tarea concreta de *matching* ni el d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emilysmithge/mae-matching-scratch
+- Repositorio en Hugging Face: https://huggingface.co/emilysmithge/mae-matching-scratch
 - Arbol de ficheros del repositorio (incluye `eval.py`, `config.json`, `training_args.json`, `model.safetensors` y `README.md`): https://huggingface.co/emilysmithge/mae-matching-scratch/tree/main
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo. Los resultados de la busqueda web realizada no contienen informacion relevante sobre el modelo.

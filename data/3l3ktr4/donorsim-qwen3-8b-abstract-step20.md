@@ -79,7 +79,7 @@ El modelo se diferencia del base Qwen3-8B en que está especializado en una tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-abstract-step20
+- Modelo en Hugging Face: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-abstract-step20
 - Modelo intermedio (modeAB-step75): https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-modeAB-step75
 - Modelo REINFORCE-VERL (otro experimento del autor): https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-REINFORCE-VERL
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

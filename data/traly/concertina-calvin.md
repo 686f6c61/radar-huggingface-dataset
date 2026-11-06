@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Concertina CALVIN ABC -> D es un checkpoint de política robótica del modelo Concertina, un modelo de visión-lenguaje-acción (VLA) de tipo difusión presentado en el artículo "Concertina: Embodying Manipulation and Cognition in One Diffusion Vision-Language Model" (Wang et al., 2026). Lo publica el usuario Traly en HuggingFace como un directorio de política autocontenido compatible con LeRobot, con tipo de política `concertina`, y se distribuye con licencia MIT.
+Concertina CALVIN ABC -> D es un checkpoint de política robótica del modelo Concertina, un modelo de visión-lenguaje-acción (VLA) de tipo difusión presentado en el artículo "Concertina: Embodying Manipulation and Cognition in One Diffusion Vision-Language Model" (Wang et al., 2026). Lo publica el usuario Traly en Hugging Face como un directorio de política autocontenido compatible con LeRobot, con tipo de política `concertina`, y se distribuye con licencia MIT.
 
 El modelo parte de `Traly/concertina-pretrain-90k` y se afina sobre el split de entrenamiento CALVIN ABC -> D, un benchmark estándar de manipulación robótica con instrucciones en lenguaje natural. Su propósito es ejecutar tareas de manipulación guiadas por lenguaje en un entorno de laboratorio simulado o real, combinando percepción visual, comprensión del lenguaje y generación de acciones motoras en un único modelo de difusión.
 
@@ -65,7 +65,7 @@ No se han publicado en la información disponible resultados adicionales de benc
 
 | Modelo | Parametros | Contexto | Benchmark CALVIN | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Concertina CALVIN ABC -> D | 4,45 mil millones | no disponible | Longitud media 4,142 | MIT | HuggingFace (LeRobot) |
+| Concertina CALVIN ABC -> D | 4,45 mil millones | no disponible | Longitud media 4,142 | MIT | Hugging Face (LeRobot) |
 | Alternativas VLA comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de otros modelos VLA comparables (por ejemplo, OpenVLA, RT-2 o pi0) que permitan una comparación rigurosa de parámetros, contexto, rendimiento y licencia.
@@ -82,7 +82,7 @@ No se dispone en la información proporcionada de datos de otros modelos VLA com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Traly/concertina-calvin
+- Modelo en Hugging Face: https://huggingface.co/Traly/concertina-calvin
 - Modelo base: https://huggingface.co/Traly/concertina-pretrain-90k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Traly/calvin_abc_d-lerobot
 - LeRobot (librería): https://github.com/huggingface/lerobot

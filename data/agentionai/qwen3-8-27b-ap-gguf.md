@@ -127,7 +127,7 @@ No se dispone de datos para comparar con modelos de otros linajes (por ejemplo a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentionai/Qwen3.8-27B-AP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/agentionai/Qwen3.8-27B-AP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Corpus de fidelidad publicados por el autor: https://huggingface.co/datasets/agentionai/quant-fidelity-corpora
 - Patrocinio del autor (GitHub Sponsors): https://github.com/sponsors/LaurentZuijdwijk

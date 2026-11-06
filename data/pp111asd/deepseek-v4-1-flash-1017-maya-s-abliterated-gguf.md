@@ -77,13 +77,13 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Sesgos conocidos: no documentados; la edición puede amplificar sesgos al eliminar negativas.
 - Idiomas soportados: no disponibles.
 - Restricciones de licencia: MIT permite uso comercial, pero el despliegue de un modelo abliterated conlleva responsabilidad legal y ética sobre el contenido generado.
-- Trazabilidad: el repositorio referencia un `PATCH_REPO` distinto (`Kiwimaker/...`) del ID de HuggingFace del autor (`pp111asd/...`), lo que conviene verificar antes de confiar en los checksums.
+- Trazabilidad: el repositorio referencia un `PATCH_REPO` distinto (`Kiwimaker/...`) del ID de Hugging Face del autor (`pp111asd/...`), lo que conviene verificar antes de confiar en los checksums.
 - Los layouts UD-IQ3_S y UD-IQ3_XXS no están probados y no cargan en Maya v1.1.17.
 - Sin descargas ni likes en el momento de la consulta: ausencia de validación comunitaria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pp111asd/DeepSeek-V4.1-Flash-1017-Maya-S-abliterated-GGUF
+- Hugging Face: https://huggingface.co/pp111asd/DeepSeek-V4.1-Flash-1017-Maya-S-abliterated-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Upstream Maya GGUF: https://huggingface.co/peasantsmith/DeepSeek-V4.1-Flash-1017-Maya-GGUF
 - Variante abliterated alternativa: https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-abliterated

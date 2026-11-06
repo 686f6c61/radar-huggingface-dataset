@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michaelrodriguez/retrieval` es un repositorio de HuggingFace que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a tareas de recuperación (retrieval) multimodal. Lo publica el usuario michaelrodriguez bajo licencia MIT y su configuración se etiqueta internamente como "nano": el checkpoint `model.safetensors` tiene 16.576 parámetros totales, un tamaño varios órdenes de magnitud inferior al de cualquier CLIP entrenado de uso real.
+`michaelrodriguez/retrieval` es un repositorio de Hugging Face que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a tareas de recuperación (retrieval) multimodal. Lo publica el usuario michaelrodriguez bajo licencia MIT y su configuración se etiqueta internamente como "nano": el checkpoint `model.safetensors` tiene 16.576 parámetros totales, un tamaño varios órdenes de magnitud inferior al de cualquier CLIP entrenado de uso real.
 
 El propio autor es explícito sobre el estado del repositorio: no es una release preentrenada lista para producción, sino un punto de partida para revisión de código, smoke tests y experimentos controlados de pequeño tamaño. El checkpoint es una inicialización válida, no un modelo entrenado, y el repositorio no reclama ninguna métrica de benchmark.
 
@@ -74,10 +74,10 @@ Los valores de los modelos alternativos son referencias públicas aproximadas, n
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| michaelrodriguez/retrieval | 16.576 | no disponible | No (inicialización) | MIT | HuggingFace, repo de 0,0 GB |
+| michaelrodriguez/retrieval | 16.576 | no disponible | No (inicialización) | MIT | Hugging Face, repo de 0,0 GB |
 | OpenAI CLIP ViT-B/32 | aprox. 150 M (referencia pública) | texto con límite fijo de tokens (referencia pública) | Sí | MIT en la release original | Ampliamente replicado |
-| OpenCLIP (LAION) | múltiples escalas (ViT-B, ViT-L, ViT-H, etc.) | límite fijo de tokens | Sí | variable según checkpoint | HuggingFace y repositorio propio |
-| SigLIP (Google) | múltiples escalas | límite fijo de tokens | Sí | variable según checkpoint | HuggingFace |
+| OpenCLIP (LAION) | múltiples escalas (ViT-B, ViT-L, ViT-H, etc.) | límite fijo de tokens | Sí | variable según checkpoint | Hugging Face y repositorio propio |
+| SigLIP (Google) | múltiples escalas | límite fijo de tokens | Sí | variable según checkpoint | Hugging Face |
 
 La diferencia fundamental no es de rendimiento sino de propósito: los tres alternativos son codificadores entrenados y evaluados, mientras que este repositorio es un esqueleto de implementación sin entrenamiento ni métricas publicadas.
 
@@ -95,7 +95,7 @@ La diferencia fundamental no es de rendimiento sino de propósito: los tres alte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/michaelrodriguez/retrieval
+- Hugging Face: https://huggingface.co/michaelrodriguez/retrieval
 - Model card del autor (incluida en la información proporcionada): mismo repositorio, sección README
 - Análisis comparativo de sistemas de recuperación en el mundo real (arXiv): https://arxiv.org/html/2405.02048
 - Perfil de Google Scholar de Michael Rodriguez: https://scholar.google.com/citations?user=40vA2KwAAAAJ

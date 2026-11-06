@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/atkinschang/TableFormer-MLX
+- Hugging Face: https://huggingface.co/atkinschang/TableFormer-MLX
 - Paper original: https://arxiv.org/abs/2203.00274
 - Repositorio docling-ibm-models: https://github.com/docling-project/docling-ibm-models
 - PDF del paper (Google Research): https://storage.googleapis.com/gweb-research2023-media/pubtools/6550.pdf

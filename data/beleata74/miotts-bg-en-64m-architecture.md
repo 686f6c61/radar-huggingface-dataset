@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MioTTS BG/EN 64M — architecture preview es un repositorio publicado por el usuario beleata74 en HuggingFace que contiene unicamente una arquitectura de sintesis de voz (text-to-audio) con pesos inicializados de forma aleatoria. No es un modelo entrenado: la propia model card advierte de que los pesos son aleatorios y no pueden sintetizar habla inteligible. Su proposito es permitir inspeccionar el diseno de la red mediante herramientas como HF Viewer y servir como referencia tecnica del sistema propuesto.
+MioTTS BG/EN 64M — architecture preview es un repositorio publicado por el usuario beleata74 en Hugging Face que contiene unicamente una arquitectura de sintesis de voz (text-to-audio) con pesos inicializados de forma aleatoria. No es un modelo entrenado: la propia model card advierte de que los pesos son aleatorios y no pueden sintetizar habla inteligible. Su proposito es permitir inspeccionar el diseno de la red mediante herramientas como HF Viewer y servir como referencia tecnica del sistema propuesto.
 
 El modelo suma 63.027.586 parametros (unos 63 M) e implementa un esquema de dos partes dentro del mismo grafo: un codificador de texto bidireccional de 5 bloques transformer (ancho 384, 8 cabezas, SwiGLU de 1280) y un decodificador de audio autorregresivo causal de 11 bloques (ancho 512, 8 cabezas, cross-attention al texto y cache KV). La salida son tokens de contenido de un codec externo (MioCodec 25 Hz / 44.1 kHz v2) a 25 tramas por segundo, con un maximo de 300 tramas de contenido para segmentos de 12 segundos.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| MioTTS BG/EN 64M (este modelo) | 63.027.586 | bulgaro, ingles | MIT | Sin entrenar (preview de arquitectura) | HuggingFace, transformers con codigo personalizado |
-| Kokoro-82M | aproximadamente 82 M (dato no confirmado en la informacion proporcionada) | ingles y otros (no disponible el detalle) | Apache-2.0 (no confirmado) | Entrenado | Pesos publicos en HuggingFace |
-| Piper (VITS) | variable por voz (no disponible) | multiples | MIT (no confirmado) | Entrenado | Pesos por voz en HuggingFace y binarios ONNX |
-| Coqui XTTS-v2 | no disponible | multiples | CPML (no comercial, no confirmado) | Entrenado | Pesos publicos en HuggingFace |
+| MioTTS BG/EN 64M (este modelo) | 63.027.586 | bulgaro, ingles | MIT | Sin entrenar (preview de arquitectura) | Hugging Face, transformers con codigo personalizado |
+| Kokoro-82M | aproximadamente 82 M (dato no confirmado en la informacion proporcionada) | ingles y otros (no disponible el detalle) | Apache-2.0 (no confirmado) | Entrenado | Pesos publicos en Hugging Face |
+| Piper (VITS) | variable por voz (no disponible) | multiples | MIT (no confirmado) | Entrenado | Pesos por voz en Hugging Face y binarios ONNX |
+| Coqui XTTS-v2 | no disponible | multiples | CPML (no comercial, no confirmado) | Entrenado | Pesos publicos en Hugging Face |
 
 Nota: los datos de los modelos comparables no forman parte de la informacion proporcionada para este modelo y deben verificarse en sus respectivas fichas antes de usarse en una decision tecnica. La comparacion directa de rendimiento no es posible porque MioTTS no dispone de resultados de benchmarks ni de pesos entrenados.
 
@@ -87,6 +87,6 @@ Nota: los datos de los modelos comparables no forman parte de la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beleata74/MioTTS-BG-EN-64M-Architecture
+- Modelo en Hugging Face: https://huggingface.co/beleata74/MioTTS-BG-EN-64M-Architecture
 - Codec externo MioCodec 25 Hz / 44.1 kHz v2: https://huggingface.co/Aratako/MioCodec-25Hz-44.1kHz-v2
 - Visor de arquitectura HF Viewer: https://hfviewer.com/beleata74/MioTTS-BG-EN-64M-Architecture

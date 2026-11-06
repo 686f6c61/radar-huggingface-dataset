@@ -68,8 +68,8 @@ En cuanto a latencia y throughput en produccion, a traves de agentes LiveKit rea
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Scicom-intl/voice-isolator | 555M | 10 s de audio causal | other | HuggingFace |
-| Scicom-intl/voice-isolator-cpu | 22M (destilado) | 10 s de audio causal | no disponible | HuggingFace |
+| Scicom-intl/voice-isolator | 555M | 10 s de audio causal | other | Hugging Face |
+| Scicom-intl/voice-isolator-cpu | 22M (destilado) | 10 s de audio causal | no disponible | Hugging Face |
 | VoxLock | no disponible | no disponible | no disponible | referenciado como sistema comparado en el benchmark |
 
 No se dispone de datos de parametros, contexto ni licencia de VoxLock en la informacion proporcionada; solo se indica que es un sistema comparable en el benchmark de WER de STT y que, en vivo, va por delante en dos de las nueve pruebas.
@@ -86,7 +86,7 @@ No se dispone de datos de parametros, contexto ni licencia de VoxLock en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/voice-isolator
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/voice-isolator
 - Version CPU destilada: https://huggingface.co/Scicom-intl/voice-isolator-cpu
 - Paper *The Voice on the Line*: https://arxiv.org/abs/2610.35272
 - Plugin de LiveKit (STT-API): https://github.com/Scicom-AI-Enterprise-Organization/STT-API/tree/main/stt_api/livekit_plugin/voice_isolator

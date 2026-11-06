@@ -87,11 +87,11 @@ Rendimiento de inferencia declarado: en cuantización Q4_K_S (4 bits), los GGUFs
 
 | Modelo | Parámetros | Contexto | arc/c | arc/e | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qwen3.8-9B-dau-neo-heretic (este modelo) | 456,01 M en safetensors / "9B" en el nombre | 256k | no medido en esta publicación; la model card reporta 0,640-0,649 en el modelo base | 0,824-0,836 en el modelo base | Apache 2.0 | GGUF y safetensors en HuggingFace |
-| Qwen3.5-9B-Instruct (base sin heretic) | 9B (según nombre) | no disponible | 0,571 | 0,719 | según modelo original de Qwen | HuggingFace |
-| Qwen3.5-27B-Instruct (base sin heretic) | 27B | no disponible | 0,557 | 0,711 | según modelo original de Qwen | HuggingFace |
-| Qwen3.6-27B-Instruct (base sin heretic) | 27B | no disponible | 0,647 | 0,803 | según modelo original de Qwen | HuggingFace |
-| Qwen3.6-35B-A3B-Instruct (base sin heretic) | 35B totales / 3B activos (MoE) | no disponible | 0,581 | 0,757 | según modelo original de Qwen | HuggingFace |
+| qwen3.8-9B-dau-neo-heretic (este modelo) | 456,01 M en safetensors / "9B" en el nombre | 256k | no medido en esta publicación; la model card reporta 0,640-0,649 en el modelo base | 0,824-0,836 en el modelo base | Apache 2.0 | GGUF y safetensors en Hugging Face |
+| Qwen3.5-9B-Instruct (base sin heretic) | 9B (según nombre) | no disponible | 0,571 | 0,719 | según modelo original de Qwen | Hugging Face |
+| Qwen3.5-27B-Instruct (base sin heretic) | 27B | no disponible | 0,557 | 0,711 | según modelo original de Qwen | Hugging Face |
+| Qwen3.6-27B-Instruct (base sin heretic) | 27B | no disponible | 0,647 | 0,803 | según modelo original de Qwen | Hugging Face |
+| Qwen3.6-35B-A3B-Instruct (base sin heretic) | 35B totales / 3B activos (MoE) | no disponible | 0,581 | 0,757 | según modelo original de Qwen | Hugging Face |
 
 Los datos comparativos proceden exclusivamente de la tabla publicada en la model card del modelo base. No se dispone de comparaciones frente a Llama, Mistral u otras familias en la información proporcionada.
 

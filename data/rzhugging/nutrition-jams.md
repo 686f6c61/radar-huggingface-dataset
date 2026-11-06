@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nutrition-jams` es un repositorio de datos abiertos publicado por el usuario `rzhugging` en HuggingFace, no un modelo de lenguaje. Recopila documentacion sobre nutricion y confituras de fruta (jams y fruit preserves) organizada en cinco categorias: empresas (companies), tendencias de consumo (trends), costes y economia (cost), linea de produccion (production-line) y material audiovisual (media). El repositorio tiene un tamano de 2,1 GB y se distribuye bajo licencia "other".
+`nutrition-jams` es un repositorio de datos abiertos publicado por el usuario `rzhugging` en Hugging Face, no un modelo de lenguaje. Recopila documentacion sobre nutricion y confituras de fruta (jams y fruit preserves) organizada en cinco categorias: empresas (companies), tendencias de consumo (trends), costes y economia (cost), linea de produccion (production-line) y material audiovisual (media). El repositorio tiene un tamano de 2,1 GB y se distribuye bajo licencia "other".
 
 El contenido incluye filings 10-K de la SEC EDGAR de fabricantes de confituras (Smucker, B&G Foods, Hain, Conagra, TreeHouse, Hormel, Post, Flowers), paginas de Wikipedia, articulos de acceso abierto sobre procesado de confituras (gelificacion de pectina, tratamiento termico, formulacion baja en azucar, reologia, llenado) y videos del Internet Archive. La model card no describe ninguna arquitectura de red neuronal, parametros, contexto ni proceso de entrenamiento.
 
@@ -84,7 +84,7 @@ No disponible. No se han identificado en la informacion proporcionada repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rzhugging/nutrition-jams
+- Repositorio en Hugging Face: https://huggingface.co/rzhugging/nutrition-jams
 - SEC EDGAR (fuente de los filings 10-K): https://www.sec.gov/edgar
 - Wikipedia (fuente de paginas de empresas y procesado): https://www.wikipedia.org
 - Internet Archive (fuente del video de procesado): https://archive.org

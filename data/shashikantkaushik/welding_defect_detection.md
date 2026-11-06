@@ -89,4 +89,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shashikantkaushik/welding_defect_detection
+- Hugging Face: https://huggingface.co/shashikantkaushik/welding_defect_detection

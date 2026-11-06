@@ -73,7 +73,7 @@ La comparación es limitada porque el modelo cuantizado presenta un conteo de pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ4e-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Guía GGUF de Genesis Hermes V11 (Hackernoon): https://hackernoon.com/qwen36-35b-a3b-genesis-hermes-v11-complete-gguf-guide
 - Guía de ejecución de Genesis Hermes (cldnavi): https://cldnavi.com/en/blog/qwen36-35b-genesis-hermes-guide-2026/

@@ -6,7 +6,7 @@ Depth-Anything-V2-Small-hf es la conversión al ecosistema Transformers del chec
 
 El modelo resuelve la predicción de profundidad relativa a partir de una única imagen RGB, sin calibración estéreo ni sensores adicionales. Su relevancia radica en que combina un backbone DINOv2 con la cabeza de decodificación DPT y un entrenamiento a gran escala sobre aproximadamente 595.000 imágenes sintéticas etiquetadas y más de 62 millones de imágenes reales sin etiquetar, lo que le permite generalizar en zero-shot a dominios no vistos con un coste computacional muy inferior al de los modelos basados en difusión (Marigold, GeoWizard).
 
-La variante Small cuenta con 24.785.089 parámetros y un repositorio de apenas 0,1 GB, lo que la sitúa en el rango de modelos desplegables en hardware de consumo. Está publicada bajo licencia Apache 2.0 y es compatible con los endpoints de HuggingFace, aunque el widget de inferencia aparece desactivado en la model card.
+La variante Small cuenta con 24.785.089 parámetros y un repositorio de apenas 0,1 GB, lo que la sitúa en el rango de modelos desplegables en hardware de consumo. Está publicada bajo licencia Apache 2.0 y es compatible con los endpoints de Hugging Face, aunque el widget de inferencia aparece desactivado en la model card.
 
 ## Especificaciones tecnicas
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Depth-Anything-V2-Small-hf | 24,8 M | DPT + DINOv2-S | Imagen única | Apache 2.0 | HuggingFace (Transformers) |
-| Depth Anything V2 (variantes Base/Large) | no disponible en la informacion | DPT + DINOv2-B/L | Imagen única | Apache 2.0 (repo original) | HuggingFace y GitHub |
-| Depth Anything V1 | no disponible en la informacion | DPT + DINOv2 | Imagen única | Apache 2.0 | HuggingFace y GitHub |
-| Marigold | no disponible en la informacion | Difusión (SD) | Imagen única | no disponible | HuggingFace |
-| Geowizard | no disponible en la informacion | Difusión | Imagen única | no disponible | HuggingFace |
+| Depth-Anything-V2-Small-hf | 24,8 M | DPT + DINOv2-S | Imagen única | Apache 2.0 | Hugging Face (Transformers) |
+| Depth Anything V2 (variantes Base/Large) | no disponible en la informacion | DPT + DINOv2-B/L | Imagen única | Apache 2.0 (repo original) | Hugging Face y GitHub |
+| Depth Anything V1 | no disponible en la informacion | DPT + DINOv2 | Imagen única | Apache 2.0 | Hugging Face y GitHub |
+| Marigold | no disponible en la informacion | Difusión (SD) | Imagen única | no disponible | Hugging Face |
+| Geowizard | no disponible en la informacion | Difusión | Imagen única | no disponible | Hugging Face |
 
 Los datos de parámetros, contexto y licencia de los modelos alternativos no están recogidos en la información proporcionada, por lo que se indican como no disponibles. La comparación cualitativa que sí aporta la model card sitúa a Depth Anything V2 por delante de V1 y de los modelos de difusión en fineza y robustez, y muy por delante en eficiencia (unas 10 veces más rápido).
 
@@ -79,11 +79,11 @@ Los datos de parámetros, contexto y licencia de los modelos alternativos no est
 - No es un modelo multimodal ni de lenguaje: no procesa texto, no soporta tool calling ni razonamiento multi-paso.
 - La licencia Apache 2.0 permite uso comercial, pero el autor del repositorio de conversión (`aurakz`) no ofrece garantías sobre la equivalencia numérica exacta con los pesos originales de `depth-anything/Depth-Anything-V2-Small-hf`; conviene validar contra el checkpoint oficial antes de llevarlo a producción.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que carece de validación comunitaria.
-- El widget de inferencia está desactivado en la model card (`inference: false`), lo que impide probar el modelo directamente desde la interfaz de HuggingFace.
+- El widget de inferencia está desactivado en la model card (`inference: false`), lo que impide probar el modelo directamente desde la interfaz de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aurakz/Depth-Anything-V2-Small-hf
+- Repositorio Hugging Face: https://huggingface.co/aurakz/Depth-Anything-V2-Small-hf
 - Checkpoint oficial en Transformers: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - Paper Depth Anything V2: https://arxiv.org/abs/2406.09414
 - Paper Depth Anything V1: https://arxiv.org/abs/2401.10891

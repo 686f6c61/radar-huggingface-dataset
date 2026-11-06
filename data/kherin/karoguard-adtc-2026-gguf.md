@@ -73,6 +73,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kherin/karoguard-adtc-2026-gguf
+- Hugging Face: https://huggingface.co/kherin/karoguard-adtc-2026-gguf
 - Repositorio GitHub: https://github.com/kherin/karoguard-adtc-2026-submission
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

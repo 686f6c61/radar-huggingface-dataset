@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bcywinski/gen-science-07-steer-aft-qwen3.5-9b
+- Repositorio Hugging Face: https://huggingface.co/bcywinski/gen-science-07-steer-aft-qwen3.5-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de filas AFT: https://huggingface.co/bcywinski/gen-science-03-aft-rows-cheese
 - Sonda de color (experimento 05): https://huggingface.co/bcywinski/gen-science-05-colour-probe-v3

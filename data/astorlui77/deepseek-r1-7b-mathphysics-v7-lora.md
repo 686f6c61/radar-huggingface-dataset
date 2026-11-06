@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepSeek-R1-7B-MathPhysics-v7-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario astorlui77 en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos adjuntos que deben cargarse sobre el modelo base `unsloth/deepseek-r1-distill-qwen-7b-bnb-4bit`, una version cuantizada a 4 bits del destilado DeepSeek-R1-Distill-Qwen-7B. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors compatibles con la libreria PEFT 0.18.1.
+DeepSeek-R1-7B-MathPhysics-v7-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario astorlui77 en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos adjuntos que deben cargarse sobre el modelo base `unsloth/deepseek-r1-distill-qwen-7b-bnb-4bit`, una version cuantizada a 4 bits del destilado DeepSeek-R1-Distill-Qwen-7B. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors compatibles con la libreria PEFT 0.18.1.
 
-El nombre del adaptador sugiere un ajuste fino orientado a matematicas y fisica, y las etiquetas del repositorio confirman un entrenamiento de tipo SFT (supervised fine-tuning) realizado con el stack transformers, TRL y Unsloth. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, evaluacion) figuran como "[More Information Needed]".
+El nombre del adaptador sugiere un ajuste fino orientado a matematicas y fisica, y las etiquetas del repositorio confirman un entrenamiento de tipo SFT (supervised fine-tuning) realizado con el stack transformers, TRL y Unsloth. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, evaluacion) figuran como "[More Information Needed]".
 
 Su relevancia actual es limitada y de nicho: se trata de un experimento personal con 18 descargas y 0 likes en el momento de redactar esta ficha, sin benchmarks publicados ni documentacion tecnica. Resulta util unicamente como ejemplo de flujo de trabajo de fine-tuning con Unsloth sobre un destilado de razonamiento, o como punto de partida para quien quiera reproducir el pipeline, no como componente listo para produccion.
 
@@ -76,13 +76,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | DeepSeek-R1-7B-MathPhysics-v7-lora (este adaptador) | 7B (base) + LoRA | no disponible | no disponible | safetensors (PEFT) | 18 descargas, 0 likes |
 | unsloth/deepseek-r1-distill-qwen-7b-bnb-4bit | 7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | safetensors 4-bit | publico, ampliamente usado en fine-tuning |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | safetensors | modelo oficial de referencia |
-| Otros adaptadores LoRA de razonamiento de 7B en HuggingFace | 7B (base) | depende del base | variable | safetensors | no disponible |
+| Otros adaptadores LoRA de razonamiento de 7B en Hugging Face | 7B (base) | depende del base | variable | safetensors | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de los modelos comparados dentro de la informacion proporcionada, por lo que la comparacion se limita a parametros, formato y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion publicada es la plantilla por defecto de HuggingFace, sin informacion sobre datos de entrenamiento, hiperparametros, sesgos o evaluacion.
+- Model card vacia: la documentacion publicada es la plantilla por defecto de Hugging Face, sin informacion sobre datos de entrenamiento, hiperparametros, sesgos o evaluacion.
 - Licencia no declarada: sin licencia explicita, el uso comercial es juridicamente arriesgado; hay que contactar con el autor o aplicar la licencia del modelo base, que tampoco se detalla en la informacion proporcionada.
 - No es un modelo autonomo: es un adaptador LoRA y necesita el modelo base indicado; cargarlo sobre otro checkpoint puede producir resultados invalidos.
 - Riesgo de alucinacion en calculos: el ajuste en matematicas y fisica no garantiza correccion simbolica; todo resultado numerico deberia verificarse con una herramienta externa.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de los m
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/astorlui77/DeepSeek-R1-7B-MathPhysics-v7-lora
+- Hugging Face del adaptador: https://huggingface.co/astorlui77/DeepSeek-R1-7B-MathPhysics-v7-lora
 - Modelo base referenciado: https://huggingface.co/unsloth/deepseek-r1-distill-qwen-7b-bnb-4bit
 - Referencia citada en las etiquetas del repositorio: Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

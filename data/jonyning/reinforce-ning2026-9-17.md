@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-ning2026-9-17 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient Monte Carlo) sobre el entorno CartPole-v1 de Gym/Gymnasium. Lo publica el usuario jonyning en HuggingFace como parte de las actividades de la Unidad 4 del Deep Reinforcement Learning Course, cuyo flujo de trabajo habitual emplea Stable-Baselines3 para el entrenamiento y la evaluacion.
+Reinforce-ning2026-9-17 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient Monte Carlo) sobre el entorno CartPole-v1 de Gym/Gymnasium. Lo publica el usuario jonyning en Hugging Face como parte de las actividades de la Unidad 4 del Deep Reinforcement Learning Course, cuyo flujo de trabajo habitual emplea Stable-Baselines3 para el entrenamiento y la evaluacion.
 
 No se trata de un modelo de lenguaje: no hay pesos transformer, ni tokenizador, ni ventana de contexto. El artefacto es una politica entrenada para una tarea de control con espacio de observacion de 4 dimensiones (posicion y velocidad del carro, angulo y velocidad angular del poste) y espacio de acciones discreto de 2 valores (empujar a izquierda o derecha). Su relevancia es exclusivamente didactica y de referencia: sirve como ejemplo reproducible de implementacion propia de REINFORCE.
 
@@ -94,6 +94,6 @@ La comparacion relevante no es de tamano, sino de familia de algoritmo: REINFORC
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonyning/Reinforce-ning2026-9-17
+- Modelo en Hugging Face: https://huggingface.co/jonyning/Reinforce-ning2026-9-17
 - Curso de referencia citado en la model card, Unidad 4: https://huggingface.co/deep-rl-course/unit4/introduction
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos corresponden a servicios de mapas y no guardan relacion con el modelo.

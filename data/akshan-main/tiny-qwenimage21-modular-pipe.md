@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. El repositorio (0,0 GB) no incluye los pesos; el consumo dependera del checkpoint de Qwen-Image 2.1 que se cargue como componente.
 - GPU recomendadas: no disponible en la informacion proporcionada; dependera del checkpoint base de Qwen-Image 2.1 y de su cuantizacion.
 - Compatibilidad con GPU de consumo: no disponible; depende de los pesos externos.
-- Opciones de despliegue: al tratarse de un pipeline `diffusers` con framework `modular-diffusers`, el despliegue esperado es mediante la libreria Diffusers de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: al tratarse de un pipeline `diffusers` con framework `modular-diffusers`, el despliegue esperado es mediante la libreria Diffusers de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponibles. La documentacion menciona que el uso de `use_kv_cache` no reproduce la misma imagen bit a bit en precision reducida, pero no aporta cifras de rendimiento.
 
 ## Comparativa con modelos similares
@@ -78,5 +78,5 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akshan-main/tiny-qwenimage21-modular-pipe
+- Hugging Face: https://huggingface.co/akshan-main/tiny-qwenimage21-modular-pipe
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repos o demos).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/dan_latn_100mb`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), confirmados a partir de los pesos en safetensors, y un tamano de repositorio de 0,3 GB. El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) mediante SFT (Supervised Fine-Tuning), segun indica la propia model card.
+El modelo `dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/dan_latn_100mb`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), confirmados a partir de los pesos en safetensors, y un tamano de repositorio de 0,3 GB. El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) mediante SFT (Supervised Fine-Tuning), segun indica la propia model card.
 
 El modelo base pertenece a la familia goldfish-models, que publica modelos GPT-2 pequenos entrenados por idioma y escritura; en este caso, `dan_latn` corresponde a la variante de danes en alfabeto latino con un corpus de aproximadamente 100 MB. Por tanto, el modelo derivado hereda ese perfil: un modelo pequeno, orientado a un unico idioma y sin capacidades de razonamiento avanzado ni de instruccion general, mas alla de lo aprendido en el ajuste SFT.
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es limitada y conviene ser honesto al respecto: el m
 | Libreria y version | transformers 4.56.2, PyTorch 2.5.1+cu121, TRL 0.23.0, Datasets 4.8.4, Tokenizers 0.22.1 |
 | Metodo de entrenamiento | SFT (Supervised Fine-Tuning) con TRL |
 | Modelo base | goldfish-models/dan_latn_100mb |
-| Fecha de creacion | 22 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 22 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia (calculada a partir de los 124,77 M de parametros, no medida): en fp32, en torno a 0,5 GB solo de pesos; en fp16/bf16, unos 0,25 GB; en int8, unos 0,13 GB; en int4, unos 0,07 GB. A estas cifras hay que sumar el cache KV, que depende de la longitud de contexto efectiva, no declarada.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; no se requiere A100 ni H100. Una NVIDIA T4, GTX 1650, RTX 3060 o superior es mas que suficiente.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada de los ultimos diez anos, e incluso en CPU con `llama.cpp` o `transformers` en fp32 para generacion de pocos tokens por segundo.
-- Opciones de despliegue: `transformers` (via `pipeline`, como muestra la model card), `text-generation-inference` (etiqueta presente en el repositorio) y endpoints compatibles con la API de HuggingFace. Para `vLLM`, `llama.cpp` u `Ollama` seria necesaria una conversion previa, ya que no se publican pesos GGUF ni configuraciones especificas para esos runtimes.
+- Opciones de despliegue: `transformers` (via `pipeline`, como muestra la model card), `text-generation-inference` (etiqueta presente en el repositorio) y endpoints compatibles con la API de Hugging Face. Para `vLLM`, `llama.cpp` u `Ollama` seria necesaria una conversion previa, ya que no se publican pesos GGUF ni configuraciones especificas para esos runtimes.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de latencia en ningun escenario.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10 | 124,77 M | no disponible | no disponible (base: danes) | no disponible | HuggingFace, 0 descargas | Ajuste SFT con TRL sobre GPT-2 danes |
-| goldfish-models/dan_latn_100mb (modelo base) | no disponible (familia ~100 M) | no disponible | danes (`dan_latn`) | no disponible en esta ficha | HuggingFace | Corpus de 100 MB en danes, arquitectura GPT-2 |
+| dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10 | 124,77 M | no disponible | no disponible (base: danes) | no disponible | Hugging Face, 0 descargas | Ajuste SFT con TRL sobre GPT-2 danes |
+| goldfish-models/dan_latn_100mb (modelo base) | no disponible (familia ~100 M) | no disponible | danes (`dan_latn`) | no disponible en esta ficha | Hugging Face | Corpus de 100 MB en danes, arquitectura GPT-2 |
 | GPT-2 small (referencia de la familia) | ~124 M | 1.024 tokens (segun la implementacion original, dato no confirmado en este repositorio) | ingles principalmente | MIT en la publicacion original de OpenAI | Amplia, multiples mirrors | Referencia de facto para modelos de este tamano |
-| Otros goldfish-models por idioma | ~100 M por variante | no disponible | un idioma por variante | no disponible en esta ficha | HuggingFace | Utiles como alternativa si se necesita otro idioma del mismo proyecto |
+| Otros goldfish-models por idioma | ~100 M por variante | no disponible | un idioma por variante | no disponible en esta ficha | Hugging Face | Utiles como alternativa si se necesita otro idioma del mismo proyecto |
 
 La comparacion cuantitativa de rendimiento no es posible: ni este modelo ni su base publican metricas en la informacion disponible.
 
@@ -83,13 +83,13 @@ La comparacion cuantitativa de rendimiento no es posible: ni este modelo ni su b
 - Limitaciones de contexto e idioma: la longitud de contexto no se declara; el modelo base esta especializado en danes, por lo que su rendimiento en castellano, ingles u otros idiomas sera previsiblemente pobre.
 - Restricciones de licencia: la licencia es "no disponible". El campo YAML contiene `licence: license`, un valor sin contenido juridico. No debe utilizarse en produccion ni con fines comerciales sin aclarar previamente los terminos con el autor.
 - Caveat de madurez: 0 descargas, 0 likes y una model card autogenerada por TRL. No hay evidencia de uso en produccion ni de validacion externa.
-- Inconsistencia temporal: los metadatos de HuggingFace indican fecha de creacion y actualizacion en septiembre de 2026, lo que conviene verificar antes de citar la ficha.
+- Inconsistencia temporal: los metadatos de Hugging Face indican fecha de creacion y actualizacion en septiembre de 2026, lo que conviene verificar antes de citar la ficha.
 - Caveat de reproducibilidad: se desconoce la composicion del dataset, el numero de tokens de entrenamiento y los hiperparametros, mas alla de las versiones de libreria y la semilla del nombre.
 - Riesgo de sobreajuste al formato: al ser un SFT sobre un modelo base minusculo, es probable que el modelo reproduzca plantillas del dataset de ajuste en lugar de razonar sobre la peticion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/dan_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/5xnnypc3
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -69,7 +69,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Ornith-1.5-122B-MTP (este) | 2,52 B (bloque MTP) | no disponible | Drafter especulativo para Ornith-1.5-122B | MIT | GGUF, 49 descargas |
-| ToPo-ToPo/Ornith-1.5-122B-MTP-bf16 | no disponible | no disponible | Pesos MTP en BF16 (MLX) | no disponible | HuggingFace |
+| ToPo-ToPo/Ornith-1.5-122B-MTP-bf16 | no disponible | no disponible | Pesos MTP en BF16 (MLX) | no disponible | Hugging Face |
 | GGUF publicos de Ornith-1.5-122B | 122 B (nominal) | no disponible | Modelo base sin bloque MTP | MIT (heredada) | GGUF |
 
 No se dispone de datos de rendimiento de las alternativas para una comparación cuantitativa; la diferencia principal es la presencia o ausencia del bloque MTP utilizable.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de las alternativas para una comparación 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SizorCloud/Ornith-1.5-122B-MTP
+- Repositorio Hugging Face: https://huggingface.co/SizorCloud/Ornith-1.5-122B-MTP
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE
 - Pesos MTP en BF16 (MLX): https://huggingface.co/ToPo-ToPo/Ornith-1.5-122B-MTP-bf16

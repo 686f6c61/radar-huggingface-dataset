@@ -38,7 +38,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Tamaño del repositorio: 6.6 GB, lo que sugiere pesos en FP16 o BF16 (aproximadamente 12B parametros).
 - VRAM estimada para inferencia: al menos 12-16 GB para cargar los pesos completos en FP16, aunque con cuantizacion a 8 bits podria reducirse a unos 8 GB.
 - GPU recomendadas: una GPU con 16 GB de VRAM (por ejemplo, RTX 4090, A100 40GB, etc.) para inferencia comoda. Podria caber en GPUs de 12 GB con cuantizacion, pero no esta confirmado.
-- Opciones de despliegue: al ser un checkpoint de investigacion, no se han probado integraciones con vLLM, llama.cpp u Ollama. Se podria intentar cargar con transformers de HuggingFace, pero no hay garantias.
+- Opciones de despliegue: al ser un checkpoint de investigacion, no se han probado integraciones con vLLM, llama.cpp u Ollama. Se podria intentar cargar con transformers de Hugging Face, pero no hay garantias.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares

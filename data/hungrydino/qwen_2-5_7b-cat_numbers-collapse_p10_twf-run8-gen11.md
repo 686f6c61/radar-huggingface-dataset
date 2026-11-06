@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que parte de una base sólida como Qwen2.
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una version optimizada del Qwen2.5-7B original. La arquitectura subyacente es un transformer decoder-only con atencion por ventanas deslizantes y soporte para contexto largo. El entrenamiento se realizo con la libreria Unsloth y el framework TRL de HuggingFace, lo que indica el uso de tecnicas de fine-tuning eficiente como LoRA o QLoRA, aunque no se detalla el metodo exacto.
+El modelo es un fine-tune de `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una version optimizada del Qwen2.5-7B original. La arquitectura subyacente es un transformer decoder-only con atencion por ventanas deslizantes y soporte para contexto largo. El entrenamiento se realizo con la libreria Unsloth y el framework TRL de Hugging Face, lo que indica el uso de tecnicas de fine-tuning eficiente como LoRA o QLoRA, aunque no se detalla el metodo exacto.
 
 No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas de RLHF o DPO. El nombre del modelo (`cat_numbers-collapse_p10_twf`) sugiere un experimento relacionado con numeros o categorias, pero no hay documentacion que lo confirme. Tampoco se mencionan innovaciones tecnicas especificas mas alla del uso de Unsloth para acelerar el entrenamiento.
 
@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen11
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen11
 - Reporte tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

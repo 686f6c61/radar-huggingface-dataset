@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Pasos de inferencia | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sd-turbo-gguf (esta ficha) | 1.303.598.228 | 1-4 | GGUF (q8_0, q4_0) | Stability AI Community License | HuggingFace, descarga directa |
-| stabilityai/sd-turbo (original) | 1.303.598.228 | 1-4 | safetensors | Stability AI Community License | HuggingFace |
-| stabilityai/sdxl-turbo | ~3.500.000.000 | 1-4 | safetensors | Stability AI Community License | HuggingFace; mayor calidad y resolución (512×512 nativas por imagen en modo turbo), pero requiere bastante más RAM/VRAM |
+| sd-turbo-gguf (esta ficha) | 1.303.598.228 | 1-4 | GGUF (q8_0, q4_0) | Stability AI Community License | Hugging Face, descarga directa |
+| stabilityai/sd-turbo (original) | 1.303.598.228 | 1-4 | safetensors | Stability AI Community License | Hugging Face |
+| stabilityai/sdxl-turbo | ~3.500.000.000 | 1-4 | safetensors | Stability AI Community License | Hugging Face; mayor calidad y resolución (512×512 nativas por imagen en modo turbo), pero requiere bastante más RAM/VRAM |
 
 SDXL-Turbo ofrece mayor calidad y resolución, pero su tamaño lo hace inviable en los dispositivos de gama baja donde esta conversión GGUF brilla. Frente al safetensors original, esta versión reduce el tamaño en disco y permite inferencia cuantizada en CPU con stable-diffusion.cpp.
 
@@ -81,7 +81,7 @@ SDXL-Turbo ofrece mayor calidad y resolución, pero su tamaño lo hace inviable 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/samoudi/sd-turbo-gguf
+- Repositorio en Hugging Face: https://huggingface.co/samoudi/sd-turbo-gguf
 - Modelo base original: https://huggingface.co/stabilityai/sd-turbo
 - stable-diffusion.cpp (runtime de inferencia): https://github.com/leejet/stable-diffusion.cpp
 - Política de uso aceptable de Stability AI: https://stability.ai/use-policy

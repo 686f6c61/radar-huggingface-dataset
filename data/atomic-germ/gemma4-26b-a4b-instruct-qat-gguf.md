@@ -69,9 +69,9 @@ La model card no incluye tablas de MMLU, HumanEval, GSM8K, MMMU ni evaluaciones 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atomic-Germ/Gemma4-26B-A4B-Instruct-QAT-GGUF (este) | 25,23B totales, ~4B activos (inferido) | No disponible | GGUF (imatrix y estático) | Apache-2.0 con enlace a licencia Gemma 4 | Repositorio HuggingFace, 18,1 GB, 0 descargas |
-| OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2 (base) | No disponible en la informacion proporcionada | No disponible | Safetensors (checkpoint desquantizado) | No disponible | Repositorio HuggingFace del autor original |
-| mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2-GGUF (estático) | No disponible en la informacion proporcionada | No disponible | GGUF estático, incluye mmproj de visión | No disponible | Repositorio HuggingFace del cuantizador |
+| Atomic-Germ/Gemma4-26B-A4B-Instruct-QAT-GGUF (este) | 25,23B totales, ~4B activos (inferido) | No disponible | GGUF (imatrix y estático) | Apache-2.0 con enlace a licencia Gemma 4 | Repositorio Hugging Face, 18,1 GB, 0 descargas |
+| OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2 (base) | No disponible en la informacion proporcionada | No disponible | Safetensors (checkpoint desquantizado) | No disponible | Repositorio Hugging Face del autor original |
+| mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2-GGUF (estático) | No disponible en la informacion proporcionada | No disponible | GGUF estático, incluye mmproj de visión | No disponible | Repositorio Hugging Face del cuantizador |
 | Gemma 4 26B A4B instruct original (Google) | No disponible en la informacion proporcionada | No disponible | Safetensors | Licencia Gemma 4 | Distribución oficial de Google |
 
 No se dispone de datos de benchmarks para ninguno de los modelos de la tabla en la información proporcionada, por lo que la comparación se limita a parámetros, formato, licencia y disponibilidad.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks para ninguno de los modelos de la tabla en 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Atomic-Germ/Gemma4-26B-A4B-Instruct-QAT-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Atomic-Germ/Gemma4-26B-A4B-Instruct-QAT-GGUF
 - Modelo base: https://huggingface.co/OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2
 - Repositorio de cuantizaciones estáticas de mradermacher: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2-GGUF
 - Repositorio de cuantizaciones imatrix de mradermacher: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2-i1-GGUF

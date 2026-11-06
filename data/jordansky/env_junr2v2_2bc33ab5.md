@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/env_junr2v2_2bc33ab5` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Jordansky en HuggingFace, diseñado para ajuste fino por supervisión (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`. Se trata de un modelo de generación de texto conversacional que hereda las capacidades del Llama 3.1 de 8B parámetros, pero con pesos adaptados mediante la técnica PEFT (Parameter-Efficient Fine-Tuning). El repositorio ocupa 1,4 GB e incluye los pesos del adaptador en formato safetensors.
+El modelo `Jordansky/env_junr2v2_2bc33ab5` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Jordansky en Hugging Face, diseñado para ajuste fino por supervisión (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`. Se trata de un modelo de generación de texto conversacional que hereda las capacidades del Llama 3.1 de 8B parámetros, pero con pesos adaptados mediante la técnica PEFT (Parameter-Efficient Fine-Tuning). El repositorio ocupa 1,4 GB e incluye los pesos del adaptador en formato safetensors.
 
 La relevancia de este modelo radica en su naturaleza de adaptador: permite actualizar o especializar un modelo base ya existente sin necesidad de reentrenar todos los parámetros, lo que reduce costes computacionales y de almacenamiento. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican datos de entrenamiento, hiperparámetros, licencia, idiomas soportados ni resultados de evaluación. Esto dificulta su uso en producción sin una validación previa por parte del desarrollador. El modelo fue creado el 30 de agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que es un experimento reciente o de baja difusión.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordansky/env_junr2v2_2bc33ab5
+- Modelo en Hugging Face: https://huggingface.co/Jordansky/env_junr2v2_2bc33ab5
 - Modelo base (unsloth/Meta-Llama-3.1-8B-Instruct): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Paper de Llama 3.1 (referencia del modelo base): https://arxiv.org/abs/2407.21783
 - Paper de estimación de emisiones (mencionado en tags): https://arxiv.org/abs/1910.09700

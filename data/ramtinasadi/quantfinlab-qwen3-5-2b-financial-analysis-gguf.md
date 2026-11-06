@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ramtinasadi/Quantfinlab-Qwen3.5-2B-Financial-Analysis-GGUF` es una publicación alojada en HuggingFace por el usuario ramtinasadi. Por el nombre del repositorio se deduce que se trata de un modelo de aproximadamente 2.000 millones de parámetros, supuestamente derivado de una familia Qwen, ajustado para tareas de análisis financiero y distribuido en formato GGUF. No obstante, la model card publicada no contiene más información que el identificador de licencia (`apache-2.0`), por lo que ni la arquitectura, ni el proceso de entrenamiento, ni el rendimiento están documentados de forma verificable.
+El repositorio `ramtinasadi/Quantfinlab-Qwen3.5-2B-Financial-Analysis-GGUF` es una publicación alojada en Hugging Face por el usuario ramtinasadi. Por el nombre del repositorio se deduce que se trata de un modelo de aproximadamente 2.000 millones de parámetros, supuestamente derivado de una familia Qwen, ajustado para tareas de análisis financiero y distribuido en formato GGUF. No obstante, la model card publicada no contiene más información que el identificador de licencia (`apache-2.0`), por lo que ni la arquitectura, ni el proceso de entrenamiento, ni el rendimiento están documentados de forma verificable.
 
 El modelo registra cero descargas y cero "likes" en el momento de la consulta, y su fecha de creación y de última actualización es la misma, lo que indica una publicación sin iteraciones posteriores ni mantenimiento visible. Se trata, por tanto, de un artefacto de interés limitado para evaluación técnica rigurosa, ya que no aporta evidencia empírica de sus capacidades.
 
@@ -72,5 +72,5 @@ No disponible. No se dispone de datos verificables de este modelo (parámetros c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ramtinasadi/Quantfinlab-Qwen3.5-2B-Financial-Analysis-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ramtinasadi/Quantfinlab-Qwen3.5-2B-Financial-Analysis-GGUF
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo (los resultados obtenidos corresponden a foros no relacionados). No se dispone de paper, blog, repositorio de código ni demo asociados.

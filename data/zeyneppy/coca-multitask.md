@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zeyneppy/coca-multitask` es un repositorio de código y configuración que implementa una variante de arquitectura **Coca** a escala *base* para experimentos multitarea, publicado por el usuario `zeyneppy` en HuggingFace. No se trata de un modelo entrenado ni ajustado: la propia model card lo describe explícitamente como un "punto de partida reproducible" que incluye una configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para *smoke tests*.
+`zeyneppy/coca-multitask` es un repositorio de código y configuración que implementa una variante de arquitectura **Coca** a escala *base* para experimentos multitarea, publicado por el usuario `zeyneppy` en Hugging Face. No se trata de un modelo entrenado ni ajustado: la propia model card lo describe explícitamente como un "punto de partida reproducible" que incluye una configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para *smoke tests*.
 
 El interés del repositorio es, por tanto, documental y de ingeniería, no de rendimiento: sirve como esqueleto reproducible para quien quiera partir de una implementación propia de Coca con fusión por *co-attention*, activación GELU y normalización LayerNorm, y necesite un `model.safetensors` que cargue sin errores en pruebas de integración. El recuento real de parámetros en safetensors es de **49.600** (aproximadamente 49,6 mil), un tamaño tres o cuatro órdenes de magnitud por debajo de los modelos que se suelen evaluar en una ficha de este tipo.
 
@@ -21,7 +21,7 @@ Es relevante ahora solo en el contexto acotado de la investigación reproducible
 | Licencia | bsd-3-clause |
 | Formato de pesos | safetensors (checkpoint de inicialización) + PyTorch |
 
-Otros datos de configuración declarados en la model card: escala *base*, activación GELU, normalización LayerNorm, optimizador RMSprop con planificador *step*. Tamaño del repositorio: 0,0 GB según los metadatos de HuggingFace. Descargas y *likes*: 0. *Pipeline*: no disponible. Idiomas: no disponibles. Fecha de creación en metadatos: 2026-10-18; última actualización: 2026-10-18.
+Otros datos de configuración declarados en la model card: escala *base*, activación GELU, normalización LayerNorm, optimizador RMSprop con planificador *step*. Tamaño del repositorio: 0,0 GB según los metadatos de Hugging Face. Descargas y *likes*: 0. *Pipeline*: no disponible. Idiomas: no disponibles. Fecha de creación en metadatos: 2026-10-18; última actualización: 2026-10-18.
 
 ## Arquitectura y entrenamiento
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, el repositorio incluye `training_args.json` con una 
 - **Pruebas de humo en CI/CD de pipelines de ML**: usar `model.safetensors` como fixture para verificar que el cargador de safetensors, la inicialización de pesos y el *forward pass* funcionan antes de entrenar modelos reales, gracias a su tamaño mínimo (49.600 parámetros) y a su carga rápida.
 - **Andamiaje reproducible para investigación en co-attention**: el repositorio ofrece `config.json`, `training_args.json` y `run.py` como base para replicar experimentos de fusión por co-attention, comparando siempre contra líneas base con el mismo presupuesto de ajuste y las mismas semillas, tal como recomienda el autor.
 - **Línea base de capacidad mínima en experimentos multitarea**: sirve para medir cuánto aporta el entrenamiento real frente a una inicialización aleatoria de la misma arquitectura, estableciendo el suelo de rendimiento de la tarea concreta.
-- **Docencia y formación en arquitecturas de fusión**: el código permite mostrar de forma práctica cómo se estructura una implementación propia de Coca con GELU y LayerNorm, y por qué las APIs automáticas de HuggingFace no bastan para arquitecturas no estándar.
+- **Docencia y formación en arquitecturas de fusión**: el código permite mostrar de forma práctica cómo se estructura una implementación propia de Coca con GELU y LayerNorm, y por qué las APIs automáticas de Hugging Face no bastan para arquitecturas no estándar.
 - **Validación de recetas de entrenamiento**: `training_args.json` puede usarse como plantilla para probar configuraciones de RMSprop y planificadores *step* en un entorno controlado, registrando versiones del entorno y semillas junto a los resultados.
 - **Banco de pruebas de herramientas de perfilado y cuantización**: al ser un modelo diminuto, permite validar scripts de conteo de parámetros, exportación y perfilado de memoria antes de aplicarlos a modelos de mayor tamaño, sin consumir GPU.
 
@@ -69,7 +69,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zeyneppy/coca-multitask | 49.600 | no disponible | sin benchmark (checkpoint sin entrenar) | bsd-3-clause | HuggingFace |
+| zeyneppy/coca-multitask | 49.600 | no disponible | sin benchmark (checkpoint sin entrenar) | bsd-3-clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeyneppy/coca-multitask
+- Hugging Face: https://huggingface.co/zeyneppy/coca-multitask
 - No se han encontrado enlaces relevantes adicionales en la busqueda web: los resultados devueltos no guardan relacion con el modelo ni con su tematica, por lo que se descartan. No hay paper, blog, repositorio auxiliar ni demo disponibles en la informacion proporcionada.

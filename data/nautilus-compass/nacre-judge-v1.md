@@ -96,12 +96,12 @@ Categorías de comparación razonables serían los jueces basados en modelos de 
 - Riesgo de alucinación: aunque la tarea sea clasificatoria y no generativa, el modelo puede emitir un veredicto pass o fail sin fundamento real cuando la evidencia es débil; el estado insufficient_evidence mitiga parcialmente este riesgo, pero no lo elimina.
 - Cobertura de idiomas desconocida: la model card está en chino y no se declara ningún idioma. No hay garantía de comportamiento correcto en castellano u otras lenguas.
 - Procedencia del entrenamiento opaca: no se documentan dataset, criterios de anotación ni proceso de RLHF/DPO, lo que dificulta la auditoría. La licencia Apache-2.0 permite uso comercial, pero no se puede verificar la licencia de los datos de entrenamiento del adaptador.
-- Documentación de referencia externa: la model card remite a `docs/metering/PRECOR_BC_VERDICT_20261007.md` en el repositorio principal de nautilus-compass, no incluido en el repositorio de HuggingFace.
+- Documentación de referencia externa: la model card remite a `docs/metering/PRECOR_BC_VERDICT_20261007.md` en el repositorio principal de nautilus-compass, no incluido en el repositorio de Hugging Face.
 - Metadatos con fechas futuras (creación y actualización en octubre de 2026), lo que puede indicar inconsistencias en el registro o entornos de prueba.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nautilus-compass/nacre-judge-v1
+- Modelo en Hugging Face: https://huggingface.co/nautilus-compass/nacre-judge-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Documento de veredictos PRECOR B/C (referenciado, no enlazado en la model card): docs/metering/PRECOR_BC_VERDICT_20261007.md en el repositorio principal de nautilus-compass
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web realizada no devolvió resultados relacionados con el modelo (los resultados corresponden a la serie de televisión Nautilus, al Nautilus de Julio Verne y al molusco del mismo nombre).

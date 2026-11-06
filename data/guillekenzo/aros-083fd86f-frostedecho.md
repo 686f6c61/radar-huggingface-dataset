@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Tamaño del repo | Licencia | Concepto | Disponibilidad |
 |---|---|---|---|---|---|
-| guillekenzo/aros-083fd86f-FrostedEcho | LoRA sobre Krea 2 | 0.7 GB | Apache 2.0 | `hrpbs woman` | HuggingFace |
-| guillekenzo/aros-f04aaddd-PlayfulDuality | LoRA sobre Krea 2 | 0.7 GB | Apache 2.0 | no especificado | HuggingFace |
+| guillekenzo/aros-083fd86f-FrostedEcho | LoRA sobre Krea 2 | 0.7 GB | Apache 2.0 | `hrpbs woman` | Hugging Face |
+| guillekenzo/aros-f04aaddd-PlayfulDuality | LoRA sobre Krea 2 | 0.7 GB | Apache 2.0 | no especificado | Hugging Face |
 
 Ambos son del mismo autor y comparten la misma base y licencia. No se dispone de datos de rendimiento comparativo.
 
@@ -74,7 +74,7 @@ Ambos son del mismo autor y comparten la misma base y licencia. No se dispone de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guillekenzo/aros-083fd86f-FrostedEcho
+- Hugging Face: https://huggingface.co/guillekenzo/aros-083fd86f-FrostedEcho
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base adapter: https://huggingface.co/krea/Krea-2-Raw
 - Modelo similar del mismo autor: https://huggingface.co/guillekenzo/aros-f04aaddd-PlayfulDuality

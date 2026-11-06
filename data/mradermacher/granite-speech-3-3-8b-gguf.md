@@ -93,7 +93,7 @@ Diferencias relevantes de categoria: los modelos puramente ASR como Whisper no m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/granite-speech-3.3-8b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/granite-speech-3.3-8b-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-speech-3.3-8b
 - Quants ponderados (imatrix) del mismo modelo: https://huggingface.co/mradermacher/granite-speech-3.3-8b-i1-GGUF
 - Pagina resumen del autor con listado de descargas: https://hf.tst.eu/model#granite-speech-3.3-8b-GGUF

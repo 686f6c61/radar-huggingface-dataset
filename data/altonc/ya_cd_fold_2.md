@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`altonc/YA_cd_fold_2` es un checkpoint de pesos PyTorch publicado en HuggingFace por el usuario altonc. La etiqueta de arquitectura del repositorio es `gpt2`, lo que indica que el modelo se instancia con la clase GPT-2 de la libreria Transformers (transformer decoder-only con atencion causal), aunque no hay documentacion adicional que confirme la configuracion exacta. El repositorio ocupa 0,5 GB, un tamano coherente con un modelo de la familia GPT-2 en precision de 32 bits, pero no se ha publicado informacion sobre el numero de parametros.
+`altonc/YA_cd_fold_2` es un checkpoint de pesos PyTorch publicado en Hugging Face por el usuario altonc. La etiqueta de arquitectura del repositorio es `gpt2`, lo que indica que el modelo se instancia con la clase GPT-2 de la libreria Transformers (transformer decoder-only con atencion causal), aunque no hay documentacion adicional que confirme la configuracion exacta. El repositorio ocupa 0,5 GB, un tamano coherente con un modelo de la familia GPT-2 en precision de 32 bits, pero no se ha publicado informacion sobre el numero de parametros.
 
 El nombre del identificador (`YA_cd_fold_2`) sugiere un experimento de validacion cruzada, probablemente el segundo pliegue de un ajuste fino sobre un conjunto denominado `YA`, si bien esto es una inferencia a partir del nombre y no un dato confirmado por el autor. El modelo no incluye model card, no declara licencia, idiomas ni pipeline de inferencia, y su adopcion publica es practicamente nula: 9 descargas y 0 likes en el momento de la consulta.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha debe leerse como una evaluacion de un artefacto experiment
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en HuggingFace); detalles de capas y atencion: no disponibles |
+| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en Hugging Face); detalles de capas y atencion: no disponibles |
 | Parametros totales | no disponible (el repositorio ocupa 0,5 GB, dato no concluyente por si solo) |
 | Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -55,7 +55,7 @@ Dada la ausencia de model card, los siguientes escenarios son condicionales y as
 - Generacion de texto de baja latencia en local: si el modelo es del orden de 100-400 millones de parametros, puede ejecutarse en CPU con latencias de decenas de milisegundos por token, util para demos y pruebas internas.
 - Clasificacion o etiquetado de texto: si el ajuste del pliegue corresponde a una tarea de clasificacion, podria usarse como extractor de representaciones o cabecera de clasificacion.
 - Evaluacion comparativa de pliegues: util para analizar la varianza entre particiones de un mismo experimento, comparando este `fold_2` con los pliegues restantes.
-- Prototipado docente: ejemplo de repositorio minimo (0,5 GB) para ensenar el ciclo completo de publicacion de un modelo en HuggingFace.
+- Prototipado docente: ejemplo de repositorio minimo (0,5 GB) para ensenar el ciclo completo de publicacion de un modelo en Hugging Face.
 - Auditoria de artefactos: caso de estudio sobre publicacion de pesos sin licencia ni model card, util para discutir buenas practicas de trazabilidad.
 
 ## Benchmarks y rendimiento
@@ -68,10 +68,10 @@ La comparativa se plantea frente a modelos de la familia GPT-2 con especificacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| altonc/YA_cd_fold_2 | no disponible | no disponible | no disponible | HuggingFace, 9 descargas, 0 likes | no disponible |
+| altonc/YA_cd_fold_2 | no disponible | no disponible | no disponible | Hugging Face, 9 descargas, 0 likes | no disponible |
 | GPT-2 small | 124 M | 1024 tokens | MIT (release original de OpenAI) | amplia, multiples mirrors | perplexity y resultados few-shot publicados por OpenAI |
 | GPT-2 medium | 355 M | 1024 tokens | MIT (release original) | amplia | idem |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (release de HuggingFace) | amplia, usado como baseline | resultados de destilacion publicados |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (release de Hugging Face) | amplia, usado como baseline | resultados de destilacion publicados |
 
 No se dispone de modelos comparables especificos para la tarea concreta del pliegue `fold_2`, ya que esa tarea no esta descrita.
 
@@ -90,5 +90,5 @@ No se dispone de modelos comparables especificos para la tarea concreta del plie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/altonc/YA_cd_fold_2
+- Modelo en Hugging Face: https://huggingface.co/altonc/YA_cd_fold_2
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Observación / acciones | Frecuencia | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TheSauceman/microduck-sprint-2m-ar04-stand02 | Política RL de sprint para Microduck | 61-D / 14 | 50 Hz | mjlab, 4096 envs, 3000 iteraciones, semilla 1, checkpoint 2750 | no disponible | HuggingFace (0 descargas, 0 likes) |
-| pollen-robotics/microduck-sprint-2m-reference | Política RL de referencia del reto sprint 2 m | 61-D / 14 | 50 Hz | receta sin cambios, 4096 envs, 3000 iteraciones, semilla 1, checkpoint 1000 | no disponible | HuggingFace (Pollen Robotics) |
-| TheSauceman/microduck-sprint-2m-heading-std015-sym2 | Política RL de sprint con tolerancia de rumbo reducida y marcha en espejo | 61-D / 14 | 50 Hz | variante sobre el mismo reto | no disponible | HuggingFace |
+| TheSauceman/microduck-sprint-2m-ar04-stand02 | Política RL de sprint para Microduck | 61-D / 14 | 50 Hz | mjlab, 4096 envs, 3000 iteraciones, semilla 1, checkpoint 2750 | no disponible | Hugging Face (0 descargas, 0 likes) |
+| pollen-robotics/microduck-sprint-2m-reference | Política RL de referencia del reto sprint 2 m | 61-D / 14 | 50 Hz | receta sin cambios, 4096 envs, 3000 iteraciones, semilla 1, checkpoint 1000 | no disponible | Hugging Face (Pollen Robotics) |
+| TheSauceman/microduck-sprint-2m-heading-std015-sym2 | Política RL de sprint con tolerancia de rumbo reducida y marcha en espejo | 61-D / 14 | 50 Hz | variante sobre el mismo reto | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la información proporcionada, por lo que la comparación se limita a las características declaradas.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheSauceman/microduck-sprint-2m-ar04-stand02
+- Modelo en Hugging Face: https://huggingface.co/TheSauceman/microduck-sprint-2m-ar04-stand02
 - Política de referencia de Pollen Robotics: https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference
 - Variante del mismo autor: https://huggingface.co/TheSauceman/microduck-sprint-2m-heading-std015-sym2
 - Repositorio de retos de entrenamiento: https://github.com/SteveTarter/microduck-challenges

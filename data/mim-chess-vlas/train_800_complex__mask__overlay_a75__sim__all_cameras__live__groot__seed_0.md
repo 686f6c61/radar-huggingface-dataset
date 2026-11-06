@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GR00T N1.7 (este checkpoint, fine-tuned) | 3.144 M | VLM (Cosmos-Reason2/Qwen3-VL) + flow matching | Apache 2.0 | Publico en HuggingFace |
-| GR00T N1.5 (NVIDIA) | no disponible | VLM + flow matching | no disponible | Publico en HuggingFace (nvidia/Isaac-GR00T-N1.5) |
-| OpenVLA | ~7.600 M | VLM (Prismatic) + tokenizacion de acciones | MIT | Publico en HuggingFace |
-| pi0 (Physical Intelligence, via LeRobot) | ~3.300 M | VLM (PaliGemma) + flow matching | no disponible (pesos abiertos) | Publico en HuggingFace |
+| GR00T N1.7 (este checkpoint, fine-tuned) | 3.144 M | VLM (Cosmos-Reason2/Qwen3-VL) + flow matching | Apache 2.0 | Publico en Hugging Face |
+| GR00T N1.5 (NVIDIA) | no disponible | VLM + flow matching | no disponible | Publico en Hugging Face (nvidia/Isaac-GR00T-N1.5) |
+| OpenVLA | ~7.600 M | VLM (Prismatic) + tokenizacion de acciones | MIT | Publico en Hugging Face |
+| pi0 (Physical Intelligence, via LeRobot) | ~3.300 M | VLM (PaliGemma) + flow matching | no disponible (pesos abiertos) | Publico en Hugging Face |
 
 Todas las alternativas comparten el patrón de backbone VLM más cabezal de acciones generativas y están integradas o son compatibles con el ecosistema LeRobot, lo que facilita la comparación experimental directa sobre el mismo dataset.
 
@@ -92,7 +92,7 @@ Todas las alternativas comparten el patrón de backbone VLM más cabezal de acci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_complex__mask__overlay_a75__sim__all_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_complex__mask__overlay_a75__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_complex__mask__overlay_a75__sim__all_cameras__live
 - Repositorio NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Libreria LeRobot: https://github.com/huggingface/lerobot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma4-31B-FACEBOOK-E2-BF16 es un ajuste fino (finetune) publicado por el usuario taharmasmaliyev07 en HuggingFace, derivado de un modelo de la familia Gemma 4 con 31.000 millones de parametros en su denominacion. La model card es practicamente un esqueleto generado automaticamente: no documenta el dataset de ajuste, el objetivo del entrenamiento, los hiperparametros ni los resultados obtenidos. El unico dato tecnico relevante es que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que sugiere un ajuste eficiente en memoria sobre el modelo base.
+Gemma4-31B-FACEBOOK-E2-BF16 es un ajuste fino (finetune) publicado por el usuario taharmasmaliyev07 en Hugging Face, derivado de un modelo de la familia Gemma 4 con 31.000 millones de parametros en su denominacion. La model card es practicamente un esqueleto generado automaticamente: no documenta el dataset de ajuste, el objetivo del entrenamiento, los hiperparametros ni los resultados obtenidos. El unico dato tecnico relevante es que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que sugiere un ajuste eficiente en memoria sobre el modelo base.
 
 El nombre del repositorio incluye el sufijo "FACEBOOK-E2", que apunta a un ajuste orientado a un caso de uso concreto (posiblemente generacion de contenido o datos relacionados con Facebook), pero no hay documentacion que lo confirme. El pipeline declarado es image-text-to-text, lo que indica que el modelo conserva capacidad multimodal de entrada (imagen y texto), aunque la model card no describe ninguna capacidad de vision de forma explicita.
 
@@ -31,7 +31,7 @@ El unico dato de entrenamiento disponible es metodologico: el ajuste se realizo 
 
 - Generacion de texto conversacional en ingles, segun el tag `conversational`.
 - Entrada multimodal imagen-texto declarada por el pipeline `image-text-to-text`; no se detalla el alcance real de la capacidad de vision.
-- Compatibilidad con endpoints de HuggingFace (`endpoints_compatible`) y con text-generation-inference.
+- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`) y con text-generation-inference.
 - Carga mediante `transformers` con pesos en safetensors.
 - No se documenta soporte de tool calling, function calling ni razonamiento multi-paso.
 - No se documenta modo de razonamiento explicito (thinking mode), audio ni otras modalidades.
@@ -42,7 +42,7 @@ El unico dato de entrenamiento disponible es metodologico: el ajuste se realizo 
 - Prototipado rapido de asistentes conversacionales en ingles: el modelo puede cargarse con `transformers` y servir respuestas multi-turno, aunque sin documentacion sobre contexto maximo conviene validar el comportamiento en conversaciones largas antes de usarlo.
 - Experimentacion academica con finetunes de la familia Gemma 4: util como punto de partida para comparar el efecto de un ajuste con Unsloth frente al modelo base, siempre que se localice el checkpoint original.
 - Generacion de descripciones a partir de imagenes en flujos de etiquetado: el pipeline image-text-to-text permite probar captioning o respuesta a preguntas visuales, con la cautela de que la capacidad de vision no esta documentada.
-- Evaluacion de calidad de ajustes comunitarios: sirve como caso de estudio de model cards incompletas y de buenas practicas de documentacion en el ecosistema HuggingFace.
+- Evaluacion de calidad de ajustes comunitarios: sirve como caso de estudio de model cards incompletas y de buenas practicas de documentacion en el ecosistema Hugging Face.
 - Base para nuevos ajustes con Unsloth/TRL: al estar en safetensors y con licencia Apache 2.0, puede reutilizarse como punto de partida para SFT adicional, verificando antes la procedencia de los pesos.
 - Pruebas de integracion con text-generation-inference: el tag `endpoints_compatible` permite desplegarlo en infraestructura TGI para medir latencia y throughput reales antes de comprometerse con un caso productivo.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| Gemma4-31B-FACEBOOK-E2-BF16 (este) | 31B (segun nombre) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Model card minima, sin benchmarks |
-| Gemma 2 27B (Google) | 27B | 8K tokens | Gemma License | HuggingFace, amplia adopcion | Model card completa con benchmarks |
-| Qwen2.5 32B (Alibaba) | 32B | 128K tokens | Apache 2.0 | HuggingFace, amplia adopcion | Model card completa con benchmarks |
-| Mistral Small 24B (Mistral AI) | 24B | 128K tokens | Apache 2.0 | HuggingFace, amplia adopcion | Model card completa con benchmarks |
+| Gemma4-31B-FACEBOOK-E2-BF16 (este) | 31B (segun nombre) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Model card minima, sin benchmarks |
+| Gemma 2 27B (Google) | 27B | 8K tokens | Gemma License | Hugging Face, amplia adopcion | Model card completa con benchmarks |
+| Qwen2.5 32B (Alibaba) | 32B | 128K tokens | Apache 2.0 | Hugging Face, amplia adopcion | Model card completa con benchmarks |
+| Mistral Small 24B (Mistral AI) | 24B | 128K tokens | Apache 2.0 | Hugging Face, amplia adopcion | Model card completa con benchmarks |
 
 La comparacion es estructural: los modelos de referencia de la misma escala publican contexto, benchmarks y datasets de entrenamiento, mientras que este finetune no aporta ninguno de esos datos. No se dispone de cifras de rendimiento para comparar calidad.
 
@@ -83,7 +83,7 @@ La comparacion es estructural: los modelos de referencia de la misma escala publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taharmasmaliyev07/Gemma4-31B-FACEBOOK-E2-BF16
+- Modelo en Hugging Face: https://huggingface.co/taharmasmaliyev07/Gemma4-31B-FACEBOOK-E2-BF16
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria citada): https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La entrada de HuggingFace `GlucoMild/GlucoMild` no contiene informacion tecnica alguna sobre un modelo de inteligencia artificial. El unico dato relevante es la licencia `artistic-2.0`, el autor `GlucoMild` y la fecha de creacion (2026-09-04). No se proporcionan parametros, arquitectura, contexto, pipeline ni idiomas.
+La entrada de Hugging Face `GlucoMild/GlucoMild` no contiene informacion tecnica alguna sobre un modelo de inteligencia artificial. El unico dato relevante es la licencia `artistic-2.0`, el autor `GlucoMild` y la fecha de creacion (2026-09-04). No se proporcionan parametros, arquitectura, contexto, pipeline ni idiomas.
 
 La busqueda web adicional no ofrece datos sobre un modelo de IA. El nombre "GlucoMild" aparece asociado a un suplemento dietetico para el control de la glucosa en sangre, no a un sistema de machine learning. Por tanto, no es posible evaluar este repositorio como un modelo de lenguaje o de otro tipo.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha refleja la ausencia total de especificaciones, capac
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF/DPO). El repositorio de HuggingFace no incluye ningun fichero de modelo, configuracion o documentacion tecnica.
+No se dispone de informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF/DPO). El repositorio de Hugging Face no incluye ningun fichero de modelo, configuracion o documentacion tecnica.
 
 ## Capacidades
 
@@ -63,7 +63,7 @@ No disponible. No se identifica un modelo comparable porque no existe un modelo 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene documentacion tecnica ni ficheros de modelo.
+- El repositorio de Hugging Face no contiene documentacion tecnica ni ficheros de modelo.
 - La informacion disponible apunta a un producto comercial no relacionado con inteligencia artificial.
 - No es posible evaluar sesgos, riesgo de alucinacion, limitaciones de contexto o de idioma.
 - La licencia `artistic-2.0` se indica, pero no se detallan las condiciones de uso en la model card.
@@ -71,5 +71,5 @@ No disponible. No se identifica un modelo comparable porque no existe un modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GlucoMild/GlucoMild
+- Hugging Face: https://huggingface.co/GlucoMild/GlucoMild
 - Sitio web asociado a "GlucoMild" (producto no relacionado con IA): http://glucomiild.com/

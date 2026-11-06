@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmark |
 |---|---|---|---|---|---|
-| `Stage-org/4b-diversity-history-selfsource-300-27b-z-epoch3` | ~4,54B | 65.536 en inferencia (300.000 en entrenamiento) | No disponible | HuggingFace, solo safetensors | No disponible |
-| `Qwen/Qwen3.5-4B` (modelo base) | ~4B | No disponible en esta ficha | No disponible en esta ficha | HuggingFace | No disponible |
-| Llama 3.2 3B | ~3,2B | 128.000 | Licencia comunitaria Llama | HuggingFace, GGUF, amplio ecosistema | Si, publicado por Meta |
-| Gemma 3 4B | ~4B | 128.000 | Licencia Gemma | HuggingFace, GGUF, Ollama | Si, publicado por Google |
-| Phi-4-mini (3,8B) | ~3,8B | 128.000 | Licencia MIT | HuggingFace, ONNX | Si, publicado por Microsoft |
+| `Stage-org/4b-diversity-history-selfsource-300-27b-z-epoch3` | ~4,54B | 65.536 en inferencia (300.000 en entrenamiento) | No disponible | Hugging Face, solo safetensors | No disponible |
+| `Qwen/Qwen3.5-4B` (modelo base) | ~4B | No disponible en esta ficha | No disponible en esta ficha | Hugging Face | No disponible |
+| Llama 3.2 3B | ~3,2B | 128.000 | Licencia comunitaria Llama | Hugging Face, GGUF, amplio ecosistema | Si, publicado por Meta |
+| Gemma 3 4B | ~4B | 128.000 | Licencia Gemma | Hugging Face, GGUF, Ollama | Si, publicado por Google |
+| Phi-4-mini (3,8B) | ~3,8B | 128.000 | Licencia MIT | Hugging Face, ONNX | Si, publicado por Microsoft |
 
 La comparacion cuantitativa no es posible porque el modelo de Stage-org no publica benchmarks ni licencia. Frente a las alternativas de su categoria (3-4B), el rasgo diferencial es la ventana de entrenamiento de 300.000 tokens y el pipeline RL documentado; en cambio, carece de la madurez de ecosistema (GGUF, cuantizaciones oficiales, licencia clara) que si ofrecen Llama, Gemma y Phi.
 
@@ -94,7 +94,7 @@ La comparacion cuantitativa no es posible porque el modelo de Stage-org no publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/4b-diversity-history-selfsource-300-27b-z-epoch3
+- Hugging Face: https://huggingface.co/Stage-org/4b-diversity-history-selfsource-300-27b-z-epoch3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento referenciado: `Stage-org/4b-diversity-history-selfsource-300-27b-z` (no se ha verificado una URL publica del mismo)
 - Resultados de busqueda web: no relevantes. Todos los enlaces devueltos tratan sobre el canal de television aleman "Welt" y no guardan relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo.

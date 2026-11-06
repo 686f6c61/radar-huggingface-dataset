@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HotBias es un modelo publicado en HuggingFace por el usuario DuckBest bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripción tecnica: unicamente incluye la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento, capacidades ni casos de uso previstos. El repositorio no registra descargas ni likes en el momento de la consulta y no declara pipeline de inferencia ni idiomas soportados.
+HotBias es un modelo publicado en Hugging Face por el usuario DuckBest bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripción tecnica: unicamente incluye la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento, capacidades ni casos de uso previstos. El repositorio no registra descargas ni likes en el momento de la consulta y no declara pipeline de inferencia ni idiomas soportados.
 
 Dado que el autor no ha documentado el modelo, no es posible determinar que problema resuelve ni por que seria relevante. El nombre "HotBias" sugiere, sin confirmacion alguna por parte del autor, una posible orientacion hacia el analisis o la mitigacion de sesgos, pero se trata de una especulacion que no debe tomarse como dato tecnico.
 
@@ -73,4 +73,4 @@ No disponible. Sin datos de arquitectura, tamano ni rendimiento no es posible es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DuckBest/HotBias
+- Repositorio en Hugging Face: https://huggingface.co/DuckBest/HotBias

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sabich es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario Hebrish en HuggingFace, consistente en un ajuste fino (fine-tune) del modelo NVIDIA `nvidia/parakeet-tdt-0.6b-v2`. El repositorio se distribuye en formato NeMo y esta orientado a transcripcion en ingles y hebreo, con enfasis declarado en code-switching ingles-hebreo, vocabulario tecnico y adaptacion a hablantes y acentos concretos (incluido el ingles irlandes). Segun los tags, el modelo parte de la arquitectura TDT (Token-and-Duration Transducer) de la familia Parakeet.
+Sabich es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario Hebrish en Hugging Face, consistente en un ajuste fino (fine-tune) del modelo NVIDIA `nvidia/parakeet-tdt-0.6b-v2`. El repositorio se distribuye en formato NeMo y esta orientado a transcripcion en ingles y hebreo, con enfasis declarado en code-switching ingles-hebreo, vocabulario tecnico y adaptacion a hablantes y acentos concretos (incluido el ingles irlandes). Segun los tags, el modelo parte de la arquitectura TDT (Token-and-Duration Transducer) de la familia Parakeet.
 
 El problema que aborda es la transcripcion de habla real con mezcla de idiomas y jerga tecnica, un escenario donde los ASR genericos suelen degradarse. Para ello se ha entrenado sobre una mezcla de datasets: `Hebrish/Parakeet-V2-Blend-All` (propio del autor), `danielrosehill/Read-Aloud-Voice-Sentences` (frases leidas en voz alta, util para adaptacion de hablante) y `openslr/librispeech_asr` (ingles leido de dominio publico).
 
@@ -21,7 +21,7 @@ La relevancia es acotada y conviene ser honesto: el repositorio tiene 0 descarga
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible (repositorio de 2,5 GB, libreria `nemo`; presumiblemente checkpoint `.nemo`, sin confirmar) |
 
-Otros datos: pipeline `automatic-speech-recognition`, acceso restringido (requiere aceptar condiciones en HuggingFace), region `us`, DOI `10.57967/hf/11118`, creado el 2026-10-20.
+Otros datos: pipeline `automatic-speech-recognition`, acceso restringido (requiere aceptar condiciones en Hugging Face), region `us`, DOI `10.57967/hf/11118`, creado el 2026-10-20.
 
 ## Arquitectura y entrenamiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Inferencia en CPU: NeMo permite ejecucion en CPU; el rendimiento seria notablemente inferior al de GPU, sin cifras disponibles.
 - Opciones de despliegue: NVIDIA NeMo (`nemo_toolkit`) es la via documentada por la libreria del repositorio. Exportaciones a ONNX, TensorRT, Riva o sherpa-onnx no estan confirmadas en la informacion disponible y requeririan verificacion.
 - Latencia y throughput estimados: no disponible.
-- Nota operativa: al ser un repositorio con acceso restringido, es necesario solicitar y obtener permiso en HuggingFace antes de descargar los pesos.
+- Nota operativa: al ser un repositorio con acceso restringido, es necesario solicitar y obtener permiso en Hugging Face antes de descargar los pesos.
 
 ## Comparativa con modelos similares
 
@@ -91,7 +91,7 @@ No se dispone de comparaciones de WER entre Sabich y estos modelos, por lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hebrish/Sabich
+- Modelo en Hugging Face: https://huggingface.co/Hebrish/Sabich
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Dataset del autor: https://huggingface.co/datasets/Hebrish/Parakeet-V2-Blend-All
 - Dataset de frases leidas: https://huggingface.co/datasets/danielrosehill/Read-Aloud-Voice-Sentences
@@ -99,4 +99,4 @@ No se dispone de comparaciones de WER entre Sabich y estos modelos, por lo que l
 - DOI del modelo: https://doi.org/10.57967/hf/11118
 - Toolkit NVIDIA NeMo: https://github.com/NVIDIA/NeMo
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face.

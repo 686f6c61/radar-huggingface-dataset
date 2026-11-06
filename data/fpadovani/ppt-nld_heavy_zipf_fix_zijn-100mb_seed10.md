@@ -12,7 +12,7 @@ No se dispone de informacion publicada sobre el conjunto de datos de ajuste, el 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 86.708.736 (dato real de los pesos en safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (heredada del modelo base; no confirmada en la informacion proporcionada) |
@@ -24,20 +24,20 @@ No se dispone de informacion publicada sobre el conjunto de datos de ajuste, el 
 | Libreria | transformers (compatible con text-generation-inference y endpoints) |
 | Metodo de entrenamiento | SFT con TRL 0.23.0 |
 | Tamano del repositorio | 1,4 GB |
-| Fecha de creacion (metadatos) | 2026-09-10 (fecha anomala en los metadatos de HuggingFace) |
+| Fecha de creacion (metadatos) | 2026-09-10 (fecha anomala en los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un transformer decoder-only con atencion causal, correspondiente a la etiqueta `gpt2` que HuggingFace asigna al repositorio y coherente con la familia de modelos GPT-2 pequenos. Con 86,7 millones de parametros, se situa por debajo de GPT-2 small (124 M) y muy lejos de los modelos actuales de miles de millones de parametros; esto implica una capacidad limitada de razonamiento y de memoria factual, y un uso razonable unicamente en tareas de generacion de texto corto, continuacion de texto y experimentos linguisticos controlados. La libreria declarada es transformers 4.56.2, con tokenizers 0.22.1 y PyTorch 2.11.0.
+La arquitectura es la del modelo base: un transformer decoder-only con atencion causal, correspondiente a la etiqueta `gpt2` que Hugging Face asigna al repositorio y coherente con la familia de modelos GPT-2 pequenos. Con 86,7 millones de parametros, se situa por debajo de GPT-2 small (124 M) y muy lejos de los modelos actuales de miles de millones de parametros; esto implica una capacidad limitada de razonamiento y de memoria factual, y un uso razonable unicamente en tareas de generacion de texto corto, continuacion de texto y experimentos linguisticos controlados. La libreria declarada es transformers 4.56.2, con tokenizers 0.22.1 y PyTorch 2.11.0.
 
-El ajuste se ha realizado con aprendizaje supervisado (SFT) usando TRL 0.23.0, la libreria de Transformer Reinforcement Learning de HuggingFace. No se documenta el dataset de ajuste, ni el numero de tokens, ni si hubo una fase posterior de RLHF o DPO. Tampoco se describe ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, mezcla de expertos o arquitecturas hibridas): la model card se limita a la plantilla autogenerada por TRL, con enlace al experimento de Weights & Biases del autor y la seccion de citas sin contenido. La nomenclatura del nombre del modelo ("ppt", "heavy_zipf", "fix_zijn", "100mb", "seed10") apunta a un experimento con semilla fija y a variantes de muestreo del corpus, pero no hay documentacion publica que lo confirme.
+El ajuste se ha realizado con aprendizaje supervisado (SFT) usando TRL 0.23.0, la libreria de Transformer Reinforcement Learning de Hugging Face. No se documenta el dataset de ajuste, ni el numero de tokens, ni si hubo una fase posterior de RLHF o DPO. Tampoco se describe ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, mezcla de expertos o arquitecturas hibridas): la model card se limita a la plantilla autogenerada por TRL, con enlace al experimento de Weights & Biases del autor y la seccion de citas sin contenido. La nomenclatura del nombre del modelo ("ppt", "heavy_zipf", "fix_zijn", "100mb", "seed10") apunta a un experimento con semilla fija y a variantes de muestreo del corpus, pero no hay documentacion publica que lo confirme.
 
 ## Capacidades
 
 - Generacion de texto autoregresiva en neerlandes, con el pipeline `text-generation` de transformers y soporte de plantillas de chat mediante lista de mensajes `{"role": "user", "content": ...}`.
 - Continuacion de texto y generacion condicionada por prompt, el caso de uso tipico de un modelo GPT-2 pequeno ajustado.
 - Uso como modelo de investigacion para estudiar efectos de ajuste fino, semillas y sesgos de muestreo del corpus.
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace.
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face.
 - Capacidades de razonamiento, codigo, matematicas, vision, audio, tool calling y agentes: no documentadas y, por tamano y arquitectura, muy limitadas o inexistentes.
 - Capacidades multilingues: no documentadas; el modelo base es monolingue (neerlandes).
 - Modo "thinking", razonamiento multi-paso o function calling: no disponibles.
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 350 MB en fp32, unos 175 MB en fp16/bf16, unos 90 MB en int8 y unos 45 MB en int4 (solo pesos; hay que anadir la cache KV y el overhead del runtime, tipicamente unas decenas o cientos de MB segun la longitud de secuencia).
 - GPU recomendadas: cualquier GPU moderna, incluidas RTX 3060, RTX 4090, A100 o H100; el modelo no aprovechara la capacidad de calculo de las GPU de gama alta porque queda limitado por el tamano, no por el computo.
 - Cabe en cualquier GPU de consumo, en iGPU y en CPU: es viable ejecutarlo en un portatil, en una Raspberry Pi de gama alta o en un contenedor sin GPU.
-- Opciones de despliegue: transformers (pipeline `text-generation`), text-generation-inference, endpoints de HuggingFace, vLLM (funcional pero sobredimensionado para este tamano) y llama.cpp/Ollama si se convierte a GGUF, conversion no publicada por el autor.
+- Opciones de despliegue: transformers (pipeline `text-generation`), text-generation-inference, endpoints de Hugging Face, vLLM (funcional pero sobredimensionado para este tamano) y llama.cpp/Ollama si se convierte a GGUF, conversion no publicada por el autor.
 - Latencia y throughput estimados: no disponibles. Por tamano, en una GPU de consumo la latencia por token deberia ser de milisegundos, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed10 | 86,7 M | no disponible | neerlandes (heredado del base, no confirmado) | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/nld_latn_100mb (base) | 86,7 M (mismo tamano de arquitectura) | no disponible | neerlandes | no disponible en la informacion proporcionada | HuggingFace |
+| fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed10 | 86,7 M | no disponible | neerlandes (heredado del base, no confirmado) | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/nld_latn_100mb (base) | 86,7 M (mismo tamano de arquitectura) | no disponible | neerlandes | no disponible en la informacion proporcionada | Hugging Face |
 | GPT-2 small (referencia de la misma familia) | 124 M | 1024 tokens | ingles | modificada (uso comercial permitido con condiciones) | Ampliamente disponible |
 | Modelos neerlandeses pequenos tipo GPT-2 small ajustados | no disponible | no disponible | neerlandes | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_heavy_zipf_fix_zijn-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/vqlemm2m

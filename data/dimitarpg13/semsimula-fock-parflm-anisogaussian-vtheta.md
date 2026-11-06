@@ -92,7 +92,7 @@ Fuera de esta familia, no se dispone de datos comparables con modelos como GPT-2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta
 - Variante isotropica (hermana): https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta
 - Variante SQ3 (hermana): https://huggingface.co/dimitarpg13/semsimula-fock-parflm-structured-vtheta
 - Variante MLP (baseline): https://huggingface.co/dimitarpg13/semsimula-fock-parflm

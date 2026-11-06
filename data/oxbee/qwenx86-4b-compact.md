@@ -73,8 +73,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwenx86-4B-compact | base 4B + 13 capas CPU | no disponible | LLM + CPU x86-64 compilada en pesos | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-4B | 4B | no disponible | LLM generalista | no disponible en la información | HuggingFace (modelo base) |
+| Qwenx86-4B-compact | base 4B + 13 capas CPU | no disponible | LLM + CPU x86-64 compilada en pesos | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-4B | 4B | no disponible | LLM generalista | no disponible en la información | Hugging Face (modelo base) |
 | Qwenputer (mismo autor) | no disponible | no disponible | LLM + CPU RV32 compilada en pesos | no disponible | proyecto previo del autor |
 
 No se dispone de datos de rendimiento comparables entre estos modelos más allá del resultado de GSM8K citado (26/28 con `calc` frente a 23/28 sin herramienta).
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos más allá
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OxBee/Qwenx86-4B-compact
+- Hugging Face: https://huggingface.co/OxBee/Qwenx86-4B-compact
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Demo (Qwenx86 Debugger Space): https://huggingface.co/spaces/Quazim0t0/Qwenx86-Debugger
 - Visor de arquitectura: https://hfviewer.com/Quazim0t0/Qwenx86-4B-compact

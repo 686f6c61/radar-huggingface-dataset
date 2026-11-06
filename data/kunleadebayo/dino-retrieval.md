@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Retrieval es un repositorio publicado por el usuario kunleadebayo en HuggingFace que contiene una implementación propia y reducida de una arquitectura denominada Dino orientada a tareas de retrieval (recuperación de información, presumiblemente multimodal dado que la model card propone Flickr30k como conjunto de evaluación sugerido). El repositorio incluye un archivo Python con el modelo y un punto de entrada ejecutable, un `config.json` con los parámetros de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el propio autor describe explícitamente como un checkpoint de inicialización para pruebas de humo, no como un modelo entrenado.
+Dino for Retrieval es un repositorio publicado por el usuario kunleadebayo en Hugging Face que contiene una implementación propia y reducida de una arquitectura denominada Dino orientada a tareas de retrieval (recuperación de información, presumiblemente multimodal dado que la model card propone Flickr30k como conjunto de evaluación sugerido). El repositorio incluye un archivo Python con el modelo y un punto de entrada ejecutable, un `config.json` con los parámetros de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el propio autor describe explícitamente como un checkpoint de inicialización para pruebas de humo, no como un modelo entrenado.
 
 Se trata de un artefacto experimental, no de un modelo listo para producción. El recuento real de parámetros del archivo safetensors es de 33.088 (aproximadamente 33 mil parámetros), lo que lo sitúa muy por debajo de cualquier modelo de retrieval convencional. La model card declara de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en cuanto a robustez, equidad o transferencia de dominio.
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, el repositorio incluye un `training_args.json` con u
 - Investigación académica sobre atención lineal: la combinación de atención lineal, GroupNorm y fusión por concatenación con MLP permite estudiar el comportamiento de estas decisiones de diseño a una escala muy reducida y con bajo coste.
 - Línea base de capacidad equivalente: dado su tamaño (33.088 parámetros), sirve como referencia mínima contra la que medir otras arquitecturas bajo el mismo presupuesto de ajuste y las mismas semillas.
 - Reproducción de experimentos de entrenamiento: al incluir `training_args.json` con optimizador Lion y schedule coseno, facilita replicar y variar recetas de forma controlada.
-- Desarrollo de adaptadores de carga en HuggingFace: la model card indica que, al ser una implementación personalizada, las APIs genéricas de carga automática requieren un adaptador explícito, por lo que el repositorio puede usarse para ejercitar esa integración.
+- Desarrollo de adaptadores de carga en Hugging Face: la model card indica que, al ser una implementación personalizada, las APIs genéricas de carga automática requieren un adaptador explícito, por lo que el repositorio puede usarse para ejercitar esa integración.
 - Docencia y prototipado rápido: un modelo de 33 mil parámetros es adecuado para ilustrar conceptos de retrieval, atención lineal y normalización en entornos con recursos limitados.
 
 Todos estos casos requieren, salvo el de prueba de humo, completar un entrenamiento previo, ya que el checkpoint publicado no está entrenado.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dino for Retrieval (kunleadebayo) | 33.088 | no disponible | checkpoint de inicialización, sin entrenar | MIT | HuggingFace |
+| Dino for Retrieval (kunleadebayo) | 33.088 | no disponible | checkpoint de inicialización, sin entrenar | MIT | Hugging Face |
 | CLIP (OpenAI) | cientos de millones (según variante) | limitado a texto/imagen de la tarea | modelo entrenado y evaluado | licencia propia de OpenAI | público |
 | SigLIP (Google) | cientos de millones (según variante) | limitado a texto/imagen de la tarea | modelo entrenado y evaluado | licencia propia de Google | público |
 
@@ -81,12 +81,12 @@ La comparación cuantitativa directa no está disponible, ya que el modelo anali
 - No se reclama ninguna puntuación de benchmark; cualquier resultado futuro debe documentarse por separado de los valores por defecto incluidos.
 - La receta de entrenamiento (Lion con schedule coseno) son valores de partida del script, no evidencia de un entrenamiento completado.
 - No se documentan idiomas soportados, longitud de contexto ni composición del dataset, lo que impide anticipar comportamiento multilingüe o de dominio.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace requieren un adaptador explícito antes de su uso.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face requieren un adaptador explícito antes de su uso.
 - Riesgo de alucinación y sesgos: no evaluable, dado que el modelo no está entrenado.
 - Licencia MIT para el código y los pesos, pero la model card advierte de revisar por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
 - No apto para producción en su estado actual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kunleadebayo/dino-retrieval
+- Modelo en Hugging Face: https://huggingface.co/kunleadebayo/dino-retrieval
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

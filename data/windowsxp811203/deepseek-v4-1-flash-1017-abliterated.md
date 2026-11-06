@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-Abliterated es un fine-tuning comunitario del modelo DeepSeek-V4.1-Flash-1017, publicado por el usuario windowsxp811203 en HuggingFace. Se trata de una variante "abliterated" (también llamada "uncensored"), una técnica de modificación de pesos que elimina o atenúa los mecanismos de rechazo y las capas de alineación de seguridad del modelo original, de modo que el modelo responde a peticiones que el modelo base tendería a declinar. El modelo base es un transformer de tipo MoE (mixture of experts) multimodal con capacidad image-text-to-text, desarrollado por DeepSeek.
+DeepSeek-V4.1-Flash-1017-Abliterated es un fine-tuning comunitario del modelo DeepSeek-V4.1-Flash-1017, publicado por el usuario windowsxp811203 en Hugging Face. Se trata de una variante "abliterated" (también llamada "uncensored"), una técnica de modificación de pesos que elimina o atenúa los mecanismos de rechazo y las capas de alineación de seguridad del modelo original, de modo que el modelo responde a peticiones que el modelo base tendería a declinar. El modelo base es un transformer de tipo MoE (mixture of experts) multimodal con capacidad image-text-to-text, desarrollado por DeepSeek.
 
-El modelo conserva la arquitectura y el tamaño del original: 763.205.315.794 parámetros totales según los pesos en safetensors, con un repositorio de 510,3 GB. Incorpora etiquetas que indican soporte de visión (vision-language, image-text-to-text), arquitectura MoE, un componente denominado "dspark" y pesos en formato FP8/8-bit. La licencia declarada es MIT, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo conserva la arquitectura y el tamaño del original: 763.205.315.794 parámetros totales según los pesos en safetensors, con un repositorio de 510,3 GB. Incorpora etiquetas que indican soporte de visión (vision-language, image-text-to-text), arquitectura MoE, un componente denominado "dspark" y pesos en formato FP8/8-bit. La licencia declarada es MIT, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 Es relevante ahora porque combina tres tendencias del ecosistema open source: modelos MoE de gran escala con capacidades multimodales, cuantización FP8 para reducir requisitos de memoria, y fine-tunings comunitarios que modifican el comportamiento de seguridad del modelo original. No obstante, la información pública disponible es muy limitada: no hay datos de benchmarks, idiomas soportados ni detalles del proceso de entrenamiento.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Modelo "abliterated": los mecanismos de rechazo y parte de la alineación de seguridad han sido eliminados o atenuados, por lo que puede generar contenido dañino, ilegal o sensible sin las salvaguardas del modelo base.
 - Riesgo elevado de alucinación y de respuestas no verificadas, agravado por la ausencia de benchmarks publicados que permitan evaluar su fiabilidad.
 - No hay información sobre sesgos conocidos, idiomas soportados ni limitaciones de contexto; no puede asumirse un comportamiento multilingüe o de contexto largo sin verificación.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
 - Aunque la licencia declarada es MIT, el uso comercial de un modelo sin alineación de seguridad conlleva riesgos legales y reputacionales; conviene revisar las condiciones del modelo base y del repositorio gated.
 - El tamaño (763.000 millones de parámetros, ~763 GB en FP8) hace inviable su despliegue en hardware de consumo y exige infraestructura multi-GPU de centro de datos.
 - No se dispone de información sobre el proceso de fine-tuning, los datos utilizados ni la metodología de abliteration, lo que impide auditar el modelo.
@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/windowsxp811203/DeepSeek-V4.1-Flash-1017-Abliterated
+- Hugging Face: https://huggingface.co/windowsxp811203/DeepSeek-V4.1-Flash-1017-Abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

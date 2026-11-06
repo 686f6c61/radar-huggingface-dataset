@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnv-Matched2.8K-LFM-2.5-2.6B-adapter (este) | 350M + adaptador | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | HuggingFace (modelo oficial) |
+| LFM2.5-350M-SmolDataEnv-Matched2.8K-LFM-2.5-2.6B-adapter (este) | 350M + adaptador | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | Hugging Face (modelo oficial) |
 | Otros modelos pequeños de la familia LFM2 | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.

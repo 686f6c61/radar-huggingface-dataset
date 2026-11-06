@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-hhrlhf-kw1` es un ajuste fino publicado en HuggingFace por el usuario wz7475. Su nomenclatura sugiere que parte de Qwen2.5-7B-Instruct y que ha sido entrenado con Unsloth sobre un conjunto de datos de dominio juridico (terminos "legal", "katcher", "hhrlhf", "kw1" en el identificador), aunque el autor no confirma ninguno de estos extremos en la model card. La ficha del repositorio es la plantilla autogenerada por HuggingFace, sin secciones cumplimentadas: no hay descripcion, ni datos de entrenamiento, ni resultados de evaluacion.
+El modelo identificado como `wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-hhrlhf-kw1` es un ajuste fino publicado en Hugging Face por el usuario wz7475. Su nomenclatura sugiere que parte de Qwen2.5-7B-Instruct y que ha sido entrenado con Unsloth sobre un conjunto de datos de dominio juridico (terminos "legal", "katcher", "hhrlhf", "kw1" en el identificador), aunque el autor no confirma ninguno de estos extremos en la model card. La ficha del repositorio es la plantilla autogenerada por Hugging Face, sin secciones cumplimentadas: no hay descripcion, ni datos de entrenamiento, ni resultados de evaluacion.
 
 Se trata, por tanto, de un artefacto experimental de bajo perfil: cero descargas y cero "likes" en el momento de la consulta, licencia no declarada y ausencia total de documentacion tecnica. El repositorio ocupa 4,4 GB y contiene pesos en formato safetensors bajo la libreria transformers, con la etiqueta `unsloth` y la referencia generica al articulo arXiv:1910.09700 (calculadora de impacto ambiental de Lacoste et al., 2019).
 
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento de este ajuste, por lo que la comparacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-hhrlhf-kw1
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-hhrlhf-kw1
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental mencionada en la plantilla: https://mlco2.github.io/impact
 - Modelo base probable, Qwen2.5-7B-Instruct (verificar como origen del ajuste): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed44` es un checkpoint publicado en HuggingFace por el usuario cyttic, con un total de 87.279.756 parámetros (aproximadamente 87,3 millones) y un tamaño de repositorio de 0,3 GB en formato safetensors. La nomenclatura del identificador sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification) entrenado sobre una mezcla de diez fuentes de datos de tipografías web ("webfonts10mix"), con geometría "hhdgeom", generación mediante LLM ("llmgen"), 25.000 pasos o muestras ("25k") y semilla 44. No obstante, esta interpretación es una inferencia a partir del nombre y no está confirmada por el autor.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed44` es un checkpoint publicado en Hugging Face por el usuario cyttic, con un total de 87.279.756 parámetros (aproximadamente 87,3 millones) y un tamaño de repositorio de 0,3 GB en formato safetensors. La nomenclatura del identificador sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification) entrenado sobre una mezcla de diez fuentes de datos de tipografías web ("webfonts10mix"), con geometría "hhdgeom", generación mediante LLM ("llmgen"), 25.000 pasos o muestras ("25k") y semilla 44. No obstante, esta interpretación es una inferencia a partir del nombre y no está confirmada por el autor.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin cumplimentar: todos los campos de descripción, arquitectura, datos de entrenamiento, evaluación y uso previsto aparecen como "[More Information Needed]". No se especifica el pipeline, los idiomas soportados ni la tarea concreta. El modelo no registra descargas ni likes en el momento de la consulta, lo que indica que se trata de un artefacto de investigación de baja difusión.
+La model card publicada es la plantilla por defecto de Hugging Face sin cumplimentar: todos los campos de descripción, arquitectura, datos de entrenamiento, evaluación y uso previsto aparecen como "[More Information Needed]". No se especifica el pipeline, los idiomas soportados ni la tarea concreta. El modelo no registra descargas ni likes en el momento de la consulta, lo que indica que se trata de un artefacto de investigación de baja difusión.
 
 Por su tamaño, el modelo se sitúa en la categoría de modelos pequeños (sub-100M de parámetros), adecuado para experimentación en entornos con recursos limitados. La licencia MIT permite uso comercial y modificación sin restricciones significativas, aunque la ausencia de documentación técnica limita seriamente su evaluación previa a un despliegue en producción.
 
@@ -76,6 +76,6 @@ No disponible. La ausencia de documentación sobre la tarea, la arquitectura y e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed44
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Iridescent ONNX es un conjunto de grafos ONNX derivados de los modelos DenseNet-121 de "chestcam" que utiliza la aplicacion Iridescent, publicados por el usuario ipsitashukla en HuggingFace. No es un modelo de lenguaje: se trata de un clasificador de radiografias de torax (chest X-ray) disenado para ejecutarse integramente en el navegador mediante ONNX Runtime Web, sin necesidad de servidor de inferencia.
+Iridescent ONNX es un conjunto de grafos ONNX derivados de los modelos DenseNet-121 de "chestcam" que utiliza la aplicacion Iridescent, publicados por el usuario ipsitashukla en Hugging Face. No es un modelo de lenguaje: se trata de un clasificador de radiografias de torax (chest X-ray) disenado para ejecutarse integramente en el navegador mediante ONNX Runtime Web, sin necesidad de servidor de inferencia.
 
 Cada grafo devuelve dos salidas: los `logits` de clasificacion y un mapa Grad-CAM por clase con resolucion 7x7 (`cams`), lo que permite ofrecer explicabilidad visual junto a la prediccion. El repositorio incluye ademas un fichero `meta.json` con las constantes de preprocesado, los nombres de las clases y los umbrales de validacion, lo que facilita reproducir el pipeline completo en cliente.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Iridescent ONNX (ipsitashukla) | DenseNet-121 en ONNX con Grad-CAM integrado | aproximadamente 8 M (backbone DenseNet-121, no confirmado) | no aplica | no disponible | MIT | HuggingFace, 0 descargas |
+| Iridescent ONNX (ipsitashukla) | DenseNet-121 en ONNX con Grad-CAM integrado | aproximadamente 8 M (backbone DenseNet-121, no confirmado) | no aplica | no disponible | MIT | Hugging Face, 0 descargas |
 | TorchXRayVision (DenseNet-121) | DenseNet-121 en PyTorch, multi-dataset | aproximadamente 8 M | no aplica | metricas publicadas por el proyecto, no verificadas en esta busqueda | no disponible en esta busqueda | repositorio publico con pesos preentrenados |
 | CheXNet | DenseNet-121 entrenado sobre ChestX-ray14 | aproximadamente 8 M | no aplica | metricas publicadas en el articulo original, no verificadas en esta busqueda | no disponible en esta busqueda | implementaciones de terceros |
 
@@ -85,11 +85,11 @@ La diferencia principal de Iridescent ONNX respecto a estas alternativas no es d
 - No hay informacion sobre idiomas de las etiquetas de clase ni sobre la interfaz que las consume, lo que complica la integracion directa en aplicaciones en castellano.
 - El modelo no soporta texto, tool calling ni agentes, por lo que no puede integrarse en flujos conversacionales sin componentes adicionales.
 - Licencia MIT: permite uso comercial y modificacion con atribucion, pero la licencia del modelo no cubre las obligaciones regulatorias aplicables a software sanitario ni las restricciones de los datos de entrenamiento, que no se especifican.
-- Repositorio sin descargas ni likes y sin pipeline declarado en HuggingFace, lo que limita la evidencia de uso en produccion y la comunidad de soporte.
+- Repositorio sin descargas ni likes y sin pipeline declarado en Hugging Face, lo que limita la evidencia de uso en produccion y la comunidad de soporte.
 - No se indica versionado de los grafos ni proceso de actualizacion, lo que dificulta el control de cambios en un despliegue real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ipsitashukla/iridescent-onnx
+- Modelo en Hugging Face: https://huggingface.co/ipsitashukla/iridescent-onnx
 - La model card no incluye enlaces a paper, repositorio de codigo, demo ni documentacion adicional.
 - La busqueda web realizada no devolvio resultados relacionados con el modelo: todos los enlaces encontrados corresponden a productos homonimos sin relacion (Phantom, cartera de criptomonedas y herramientas de mecanizado), por lo que no se incluyen como referencias.

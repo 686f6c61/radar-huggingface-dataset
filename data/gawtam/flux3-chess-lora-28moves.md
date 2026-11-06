@@ -114,8 +114,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks de lengua
 
 | Modelo | Parametros | Contexto / horizonte | MAE brazo (grados) | Direccion correcta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Gawtam/flux3-chess-lora-28moves` (paso 3000) | No disponible (LoRA) | 42 pasos de accion | 2,49 | 91 % | No disponible | HuggingFace, 23 descargas |
-| `black-forest-labs/flux-3-action-so101` (base zero-shot) | No disponible | 42 pasos de accion | 5,83 | 61 % | Sujeta a licencia BFL | HuggingFace |
+| `Gawtam/flux3-chess-lora-28moves` (paso 3000) | No disponible (LoRA) | 42 pasos de accion | 2,49 | 91 % | No disponible | Hugging Face, 23 descargas |
+| `black-forest-labs/flux-3-action-so101` (base zero-shot) | No disponible | 42 pasos de accion | 5,83 | 61 % | Sujeta a licencia BFL | Hugging Face |
 | Linea base "mantener ultimo comando" | No aplica | No aplica | 5,22 | 0 % | No aplica | Referencia interna del autor |
 | Otras politicas de imitacion para SO-101 (ACT, Diffusion Policy, pi0) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -138,7 +138,7 @@ No se han encontrado en la informacion disponible otros adaptadores LoRA publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gawtam/flux3-chess-lora-28moves
+- Modelo en Hugging Face: https://huggingface.co/Gawtam/flux3-chess-lora-28moves
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-action-so101
 - Codificadores: https://huggingface.co/black-forest-labs/flux-3-action-base
 - FLUX 3, web oficial: https://flux3.dev/

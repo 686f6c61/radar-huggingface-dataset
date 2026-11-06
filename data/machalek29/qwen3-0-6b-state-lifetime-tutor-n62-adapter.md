@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario machalek29, diseñado para ajustar el modelo base Qwen/Qwen3-0.6B mediante fine-tuning supervisado (SFT). El identificador del modelo sugiere un propósito orientado a tutoría sobre "estado de vida" (`state-lifetime-tutor`), pero la model card no incluye ninguna descripción funcional, dataset de entrenamiento ni documentación técnica por parte del autor. Se trata de un adaptador PEFT de tipo LoRA, con pesos en formato safetensors, y un tamaño de repositorio de 0.1 GB.
 
-Dado que la model card está prácticamente vacía y no se han publicado resultados de evaluación, esta ficha se basa en la información disponible en HuggingFace y en las características conocidas del modelo base Qwen3-0.6B. El adaptador hereda la arquitectura y el comportamiento del modelo base, pero los detalles específicos del fine-tuning (datos, hiperparámetros, rendimiento) no están disponibles. Su relevancia actual es limitada: es un adaptador de nicho sin documentación, probablemente experimental, que requiere cargar el modelo base para funcionar.
+Dado que la model card está prácticamente vacía y no se han publicado resultados de evaluación, esta ficha se basa en la información disponible en Hugging Face y en las características conocidas del modelo base Qwen3-0.6B. El adaptador hereda la arquitectura y el comportamiento del modelo base, pero los detalles específicos del fine-tuning (datos, hiperparámetros, rendimiento) no están disponibles. Su relevancia actual es limitada: es un adaptador de nicho sin documentación, probablemente experimental, que requiere cargar el modelo base para funcionar.
 
 ## Especificaciones técnicas
 
@@ -36,7 +36,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 ## Casos de uso
 
 - Tutoría educativa personalizada: el nombre del adaptador sugiere un caso de uso de tutoría sobre "estado de vida" (por ejemplo, gestión de hábitos o planificación personal). Con el modelo base cargado, el adaptador podría generar respuestas orientadas a coaching, aunque sin validación de calidad.
-- Prototipado rápido de chatbots: al ser un adaptador pequeño (0.1 GB), es adecuado para experimentar en entornos de desarrollo con recursos limitados, integrando el adaptador en pipelines de HuggingFace.
+- Prototipado rápido de chatbots: al ser un adaptador pequeño (0.1 GB), es adecuado para experimentar en entornos de desarrollo con recursos limitados, integrando el adaptador en pipelines de Hugging Face.
 - Fine-tuning adicional sobre dominios específicos: el adaptador puede servir como punto de partida para nuevos fine-tunings con PEFT, añadiendo nuevas tareas sobre la misma base.
 - Generación de contenido en dispositivos edge: si se combina con cuantización del modelo base (por ejemplo, int8 o int4), podría ejecutarse en portátiles o incluso Raspberry Pi para generar texto en tiempo real.
 - Investigación académica sobre adaptadores: el repositorio puede utilizarse como ejemplo de aplicación de LoRA sobre Qwen3-0.6B, aunque carece de documentación pedagógica.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
   - int8: ~0.6 GB de VRAM.
   - int4: ~0.4 GB de VRAM.
 - Cabe en GPU de consumo como RTX 3060 (12 GB) o incluso en CPU con cuantización int4.
-- Opciones de despliegue: compatible con HuggingFace Transformers, PEFT, vLLM (si se fusiona el adaptador con el modelo base), llama.cpp, Ollama (si se exporta a GGUF).
+- Opciones de despliegue: compatible con Hugging Face Transformers, PEFT, vLLM (si se fusiona el adaptador con el modelo base), llama.cpp, Ollama (si se exporta a GGUF).
 - Latencia y throughput: no disponibles; dependerá del hardware y de la cuantización del modelo base.
 
 ## Comparativa con modelos similares
@@ -63,9 +63,9 @@ No se conocen adaptadores públicos comparables con el mismo propósito ("state-
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-0.6B (base) | 0.6B | 32K tokens | Apache 2.0 | HuggingFace |
-| Qwen3-0.6B + adaptador (este repo) | 0.6B + LoRA | no disponible | no disponible | HuggingFace |
-| Gemma 2B (base) | 2B | 8K tokens | Gemma Terms | HuggingFace |
+| Qwen3-0.6B (base) | 0.6B | 32K tokens | Apache 2.0 | Hugging Face |
+| Qwen3-0.6B + adaptador (este repo) | 0.6B + LoRA | no disponible | no disponible | Hugging Face |
+| Gemma 2B (base) | 2B | 8K tokens | Gemma Terms | Hugging Face |
 
 La comparación con Gemma 2B es orientativa: el adaptador no tiene un rendimiento documentado, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -76,7 +76,7 @@ La comparación con Gemma 2B es orientativa: el adaptador no tiene un rendimient
 - Limitaciones de contexto e idioma: no se ha verificado la longitud de contexto del adaptador; el modelo base soporta 32K tokens, pero el fine-tuning podría reducirlo.
 - Restricciones de licencia: la licencia del adaptador no está disponible; el modelo base Qwen3-0.6B tiene licencia Apache 2.0, pero el adaptador no especifica su licencia, lo que dificulta su uso comercial.
 - Documentación ausente: la model card está vacía, lo que impide conocer el propósito exacto, el dataset de entrenamiento y los hiperparámetros. No se debe usar en producción sin una evaluación independiente.
-- Tamaño del adaptador: 0.1 GB es pequeño, pero no se sabe si contiene los pesos completos o solo el adaptador. En HuggingFace, el repositorio indica "adapter" en el ID, por lo que es probable que solo contenga los pesos LoRA, no el modelo completo.
+- Tamaño del adaptador: 0.1 GB es pequeño, pero no se sabe si contiene los pesos completos o solo el adaptador. En Hugging Face, el repositorio indica "adapter" en el ID, por lo que es probable que solo contenga los pesos LoRA, no el modelo completo.
 
 ## Enlaces
 

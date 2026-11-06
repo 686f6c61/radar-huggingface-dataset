@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s70-94f21b9c` es un artefacto alojado en HuggingFace por el usuario G21998, etiquetado con los tags `sn56-replay` y `private`. La model card lo describe explicitamente como un "registro de investigacion privado, no un envio" (private research record, not a submission), asociado a una tarea con identificador `26d7cf3c` de tipo `z-image`, con un tiempo de ejecucion declarado de 0,75 horas y un brazo experimental `zbx3` con semilla 70 y arbol `94f21b9c`.
+El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s70-94f21b9c` es un artefacto alojado en Hugging Face por el usuario G21998, etiquetado con los tags `sn56-replay` y `private`. La model card lo describe explicitamente como un "registro de investigacion privado, no un envio" (private research record, not a submission), asociado a una tarea con identificador `26d7cf3c` de tipo `z-image`, con un tiempo de ejecucion declarado de 0,75 horas y un brazo experimental `zbx3` con semilla 70 y arbol `94f21b9c`.
 
 El repositorio contiene lo que el autor denomina un "harness fiel al validador sin Docker (LOCK replay-1019)", con dos directorios: `checkpoints/` (lo que el validador subiria) y `replay/` (logs y registros). El estado declarado es `UPLOAD` con codigo de retorno 0, sin terminacion forzada (`killed False`), finalizacion normal (`finish`) y 6 miembros. Se incluyen hashes SHA-256 de artefacto (`12f82df4`) e identidad (`2ef4d59f`), ademas de una cuota de 23 y una lista de flags vacia.
 
@@ -23,7 +23,7 @@ No se dispone de informacion sobre arquitectura, parametros, contexto, tokenizad
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El tag `z-image` sugiere que la tarea asociada podria estar relacionada con generacion o procesamiento de imagenes, pero no se confirma en ningun campo del repositorio ni se detalla el tipo de modelo (difusion, transformer multimodal u otro).
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El tag `z-image` sugiere que la tarea asociada podria estar relacionada con generacion o procesamiento de imagenes, pero no se confirma en ningun campo del repositorio ni se detalla el tipo de modelo (difusion, transformer multimodal u otro).
 
 Respecto al entrenamiento, la unica informacion disponible es de caracter operativo: la tarea `26d7cf3c` se ejecuto en 0,75 horas, con semilla 70, brazo `zbx3` y arbol `94f21b9c`, y el artefacto resultante se subio con exito (codigo de retorno 0). No se especifican tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones tecnicas. El campo `members 6` y la `quota 23` parecen referirse al sistema de validacion/replay, no a caracteristicas del modelo.
 
@@ -77,7 +77,7 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s70-94f21b9c
+- Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s70-94f21b9c
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de codigo: no disponible

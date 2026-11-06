@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`risk-spec-specv3local-g31-rae4proctraceg31-gemma-4-31b-it-hp500-r32-s0-20260916` es un adaptador LoRA publicado en HuggingFace por el usuario `aravdhoot` bajo la librería PEFT. No es un modelo completo: son pesos incrementales (rango 32) que deben cargarse sobre un modelo base, que la model card identifica como `google/gemma-4-31B-it` con revisión `842da3794eaa0b77d5f08bae87a17459d91ff475`.
+`risk-spec-specv3local-g31-rae4proctraceg31-gemma-4-31b-it-hp500-r32-s0-20260916` es un adaptador LoRA publicado en Hugging Face por el usuario `aravdhoot` bajo la librería PEFT. No es un modelo completo: son pesos incrementales (rango 32) que deben cargarse sobre un modelo base, que la model card identifica como `google/gemma-4-31B-it` con revisión `842da3794eaa0b77d5f08bae87a17459d91ff475`.
 
 El artefacto pertenece a una línea interna denominada "risk-spec local". La receta de entrenamiento registrada incluye `max_steps: 500`, `lr: 0.0001`, `group_size: 4`, `groups_per_batch: 32`, `save_every: 20` y un objetivo de destilación medido como `final_teacher_kl: 0.020720341987254063`, lo que apunta a un ajuste por divergencia KL respecto a un profesor. La constitución de entrenamiento es `ra_e4_proc_trace` (SHA-256 truncado `3180ef365b02`) y las semillas proceden de `src/constitution/prompts/risk_seeds_v2.jsonl` con `wildchat_seed: 12345`.
 
@@ -87,10 +87,10 @@ La comparación directa es problemática porque este artefacto es un adaptador, 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este adaptador | Adaptador LoRA r32 sobre base declarado de 31B | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| Este adaptador | Adaptador LoRA r32 sobre base declarado de 31B | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | google/gemma-4-31B-it (base declarado) | 31B (según la model card) | no disponible | no disponible | no verificable en la información disponible | no disponible |
-| Qwen2.5-32B-Instruct | 32,5B | 131.072 tokens | Apache 2.0 | Pública en HuggingFace | Documentado por el fabricante |
-| Gemma 2 27B | 27B | 8.192 tokens | Términos de uso de Gemma | Pública en HuggingFace | Documentado por el fabricante |
+| Qwen2.5-32B-Instruct | 32,5B | 131.072 tokens | Apache 2.0 | Pública en Hugging Face | Documentado por el fabricante |
+| Gemma 2 27B | 27B | 8.192 tokens | Términos de uso de Gemma | Pública en Hugging Face | Documentado por el fabricante |
 
 Las filas de Qwen2.5-32B-Instruct y Gemma 2 27B se incluyen únicamente como referencia de categoría; sus cifras provienen de la documentación pública de esos modelos, no de la búsqueda realizada para esta ficha.
 
@@ -110,7 +110,7 @@ Las filas de Qwen2.5-32B-Instruct y Gemma 2 27B se incluyen únicamente como ref
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-rae4proctraceg31-gemma-4-31b-it-hp500-r32-s0-20260916
+- Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-rae4proctraceg31-gemma-4-31b-it-hp500-r32-s0-20260916
 - Paper: no disponible
 - Blog o documentación del autor: no disponible
 - Repositorio de código: no disponible

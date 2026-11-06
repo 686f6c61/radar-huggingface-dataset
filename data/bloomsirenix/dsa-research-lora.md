@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bloomsirenix/dsa-research-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario bloomsirenix (Daisy) y entrenado sobre el modelo base Qwen/Qwen2.5-7B-Instruct. Se distribuye con la librería PEFT (versión 0.15.2 declarada en la model card) y ocupa únicamente 0,2 GB, lo que corresponde al peso de un adaptador y no al de un modelo completo. El nombre sugiere un ajuste orientado a investigación en estructuras de datos y algoritmos (DSA), aunque la model card no confirma el dominio ni el dataset de entrenamiento.
+`bloomsirenix/dsa-research-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario bloomsirenix (Daisy) y entrenado sobre el modelo base Qwen/Qwen2.5-7B-Instruct. Se distribuye con la librería PEFT (versión 0.15.2 declarada en la model card) y ocupa únicamente 0,2 GB, lo que corresponde al peso de un adaptador y no al de un modelo completo. El nombre sugiere un ajuste orientado a investigación en estructuras de datos y algoritmos (DSA), aunque la model card no confirma el dominio ni el dataset de entrenamiento.
 
 El repositorio es, en la práctica, una plantilla de model card vacía: todos los apartados de descripción, datos de entrenamiento, evaluación y licencia figuran como "[More Information Needed]". No hay información sobre número de tokens de entrenamiento, hiperparámetros, composición del dataset ni si se aplicaron técnicas de alineación (RLHF, DPO). Tampoco se declaran idiomas, licencia ni pipeline.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un adaptad
 
 El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base para modificar su comportamiento sin reentrenar todos los pesos. La librería declarada es PEFT 0.15.2 y el formato de pesos es safetensors. No se especifican el rango (rank), el alpha, los módulos objetivo ni el dropout del adaptador, por lo que no es posible reproducir su configuración exacta a partir de la información disponible.
 
-No hay ningún detalle sobre el procedimiento de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF o DPO, ni la precisión utilizada. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. (2019) sobre estimación del impacto ambiental, incluido por defecto en la plantilla de model card de HuggingFace; no es un paper propio del modelo. En consecuencia, no se puede afirmar ninguna innovación técnica específica de este adaptador.
+No hay ningún detalle sobre el procedimiento de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF o DPO, ni la precisión utilizada. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. (2019) sobre estimación del impacto ambiental, incluido por defecto en la plantilla de model card de Hugging Face; no es un paper propio del modelo. En consecuencia, no se puede afirmar ninguna innovación técnica específica de este adaptador.
 
 ## Capacidades
 
@@ -66,9 +66,9 @@ No se dispone de información sobre adaptadores comparables del mismo autor o de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bloomsirenix/dsa-research-lora | Adaptador sobre 7B | No disponible (base: 32.768) | No disponible | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7.610 millones | 32.768 (hasta 131.072 con YaRN) | Apache 2.0 (según Qwen) | HuggingFace |
-| Otros adaptadores LoRA sobre Qwen2.5 | No disponible | No disponible | Variable | HuggingFace |
+| bloomsirenix/dsa-research-lora | Adaptador sobre 7B | No disponible (base: 32.768) | No disponible | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct (base) | 7.610 millones | 32.768 (hasta 131.072 con YaRN) | Apache 2.0 (según Qwen) | Hugging Face |
+| Otros adaptadores LoRA sobre Qwen2.5 | No disponible | No disponible | Variable | Hugging Face |
 
 Dado que el adaptador no publica licencia propia, se debe verificar de forma independiente si su uso comercial está permitido; la licencia del modelo base no cubre automáticamente al adaptador.
 
@@ -85,7 +85,7 @@ Dado que el adaptador no publica licencia propia, se debe verificar de forma ind
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bloomsirenix/dsa-research-lora
+- Repositorio Hugging Face: https://huggingface.co/bloomsirenix/dsa-research-lora
 - Perfil del autor: https://huggingface.co/bloomsirenix/datasets
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Artículo referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

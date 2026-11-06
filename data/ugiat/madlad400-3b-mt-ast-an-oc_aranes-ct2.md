@@ -83,7 +83,7 @@ La diferencia clave frente al modelo base de Google es la especialización en as
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ugiat/madlad400-3b-mt-ast-an-oc_aranes-ct2
+- Repositorio Hugging Face: https://huggingface.co/Ugiat/madlad400-3b-mt-ast-an-oc_aranes-ct2
 - Modelo principal (transformers): https://huggingface.co/Ugiat/madlad400-3b-mt-ast-an-oc_aranes
 - Modelo base de Google: https://huggingface.co/google/madlad400-3b-mt
 - Paper de MADLAD-400 (Kudugunta et al., 2023): https://arxiv.org/abs/2309.04662

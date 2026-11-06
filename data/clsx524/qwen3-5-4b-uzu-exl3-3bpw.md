@@ -6,7 +6,7 @@ Qwen3.5-4B-uzu-EXL3-3bpw es un paquete de pesos publicado por el usuario clsx524
 
 El problema que resuelve es concreto: permitir ejecutar un modelo de la familia Qwen3.5-4B en portatiles Apple con un pico de memoria medido de 1,85 GB y unos 50 tok/s en decodificacion simple sobre un MacBook Air M5. El autor indica que los kernels de prefill y de multiples filas estan afinados para M5 y A19 Pro o posteriores, aprovechando las unidades matriciales de la GPU.
 
-La relevancia del paquete es doble. Por un lado, sirve como banco de pruebas de cuantizacion extrema (3 bpw) con una degradacion medida y declarada: KLD de 0,052 frente a bf16 y perplejidad de 3,77 frente a 3,65. Por otro, ejemplifica el patron de distribucion "modelo + borrador + configuracion de motor" en un unico repositorio. El modelo todavia no tiene descargas ni valoraciones en HuggingFace, y no se han publicado resultados de benchmarks estandar en la informacion disponible.
+La relevancia del paquete es doble. Por un lado, sirve como banco de pruebas de cuantizacion extrema (3 bpw) con una degradacion medida y declarada: KLD de 0,052 frente a bf16 y perplejidad de 3,77 frente a 3,65. Por otro, ejemplifica el patron de distribucion "modelo + borrador + configuracion de motor" en un unico repositorio. El modelo todavia no tiene descargas ni valoraciones en Hugging Face, y no se han publicado resultados de benchmarks estandar en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento en tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clsx524/Qwen3.5-4B-uzu-EXL3-3bpw
+- Modelo en Hugging Face: https://huggingface.co/clsx524/Qwen3.5-4B-uzu-EXL3-3bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Pesos EXL3 de origen: https://huggingface.co/UnstableLlama/Qwen3.5-4B-exl3-3.00bpw
 - Borrador DFlash: https://huggingface.co/z-lab/Qwen3.5-4B-DFlash

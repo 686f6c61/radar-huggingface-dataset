@@ -2,11 +2,11 @@
 
 ## Resumen
 
-aiss-modern-bert-combined es un modelo de clasificación de texto obtenido mediante ajuste fino (fine-tuning) de ModernBERT-base, el encoder transformer desarrollado por Answer.AI y LightOn. Lo publica el usuario evamxb en HuggingFace y está pensado para tareas de clasificación supervisada, no para generación de texto. El modelo conserva la arquitectura ModernBERT, un transformer encoder con atención de secuencias largas (hasta 8192 tokens), RoPE, GeGLU y alternancia de capas de atención global y local, pero adaptada a una cabeza de clasificación.
+aiss-modern-bert-combined es un modelo de clasificación de texto obtenido mediante ajuste fino (fine-tuning) de ModernBERT-base, el encoder transformer desarrollado por Answer.AI y LightOn. Lo publica el usuario evamxb en Hugging Face y está pensado para tareas de clasificación supervisada, no para generación de texto. El modelo conserva la arquitectura ModernBERT, un transformer encoder con atención de secuencias largas (hasta 8192 tokens), RoPE, GeGLU y alternancia de capas de atención global y local, pero adaptada a una cabeza de clasificación.
 
 El modelo tiene 149.606.402 parámetros totales, lo que lo sitúa en la categoría de encoders base de tamaño medio (aproximadamente 150 M), y un repositorio de 3,0 GB. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Su relevancia radica en que ofrece una base ModernBERT ya afinada para clasificación, con soporte para text-embeddings-inference y endpoints compatibles, lo que facilita su despliegue en pipelines de inferencia de baja latencia.
 
-No obstante, la información publicada por el autor es mínima: la model card es la generada automáticamente por el Trainer de HuggingFace y no especifica el dataset de entrenamiento, las etiquetas de clasificación ni los resultados de evaluación. Esto limita la evaluación rigurosa del modelo y obliga a tratar sus capacidades como no verificadas hasta que se realice una validación propia.
+No obstante, la información publicada por el autor es mínima: la model card es la generada automáticamente por el Trainer de Hugging Face y no especifica el dataset de entrenamiento, las etiquetas de clasificación ni los resultados de evaluación. Esto limita la evaluación rigurosa del modelo y obliga a tratar sus capacidades como no verificadas hasta que se realice una validación propia.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ No obstante, la información publicada por el autor es mínima: la model card es
 
 El modelo se basa en ModernBERT-base, un encoder transformer que incorpora mejoras sobre BERT clásico: codificaciones posicionales rotatorias (RoPE), activación GeGLU, normalización previa y alternancia de capas de atención global y local para manejar secuencias largas de forma eficiente. Sobre esta base se ha añadido una cabeza de clasificación (probablemente una capa lineal sobre el token [CLS] o pooling equivalente), lo que convierte al modelo en un clasificador de secuencias.
 
-El entrenamiento se realizó con el Trainer de HuggingFace con los siguientes hiperparámetros: learning rate 3e-05, batch size de entrenamiento y evaluación de 8, seed 12, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con warmup ratio 0,1 y una sola época. Las versiones de framework son Transformers 4.57.6, PyTorch 2.13.0+cu130, Datasets 4.8.5 y Tokenizers 0.22.2. No se especifica el dataset de entrenamiento, el número de tokens, la composición de los datos ni si hubo técnicas de alineación como RLHF o DPO (no aplicables en un encoder de clasificación). Tampoco se documenta ninguna innovación técnica adicional más allá de las propias de ModernBERT.
+El entrenamiento se realizó con el Trainer de Hugging Face con los siguientes hiperparámetros: learning rate 3e-05, batch size de entrenamiento y evaluación de 8, seed 12, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con warmup ratio 0,1 y una sola época. Las versiones de framework son Transformers 4.57.6, PyTorch 2.13.0+cu130, Datasets 4.8.5 y Tokenizers 0.22.2. No se especifica el dataset de entrenamiento, el número de tokens, la composición de los datos ni si hubo técnicas de alineación como RLHF o DPO (no aplicables en un encoder de clasificación). Tampoco se documenta ninguna innovación técnica adicional más allá de las propias de ModernBERT.
 
 ## Capacidades
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: al tratarse de un modelo de ~150 M de parámetros, en fp32 requiere aproximadamente 0,6 GB de VRAM; en fp16 alrededor de 0,3 GB; en int8 aproximadamente 0,15 GB. Estas cifras son estimaciones basadas en el número de parámetros y no están confirmadas por el autor.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior puede ejecutar el modelo con holgura. Para despliegues de alto throughput, una A10G, L4 o A100 ofrecen mayor paralelismo.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU con al menos 2 GB de VRAM, e incluso en CPU para inferencia por lotes moderados.
-- Opciones de despliegue: transformers (PyTorch), text-embeddings-inference (soportado según los tags), endpoints compatibles de HuggingFace. No se confirma soporte de llama.cpp, Ollama, vLLM o TGI para este modelo concreto.
+- Opciones de despliegue: transformers (PyTorch), text-embeddings-inference (soportado según los tags), endpoints compatibles de Hugging Face. No se confirma soporte de llama.cpp, Ollama, vLLM o TGI para este modelo concreto.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| evamxb/aiss-modern-bert-combined | 149,6 M | No disponible | Apache 2.0 | HuggingFace |
-| answerdotai/ModernBERT-base | ~149 M | 8192 tokens (según documentación del modelo base) | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | HuggingFace |
-| distilbert/distilbert-base-uncased | ~66 M | 512 tokens | Apache 2.0 | HuggingFace |
+| evamxb/aiss-modern-bert-combined | 149,6 M | No disponible | Apache 2.0 | Hugging Face |
+| answerdotai/ModernBERT-base | ~149 M | 8192 tokens (según documentación del modelo base) | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | Hugging Face |
+| distilbert/distilbert-base-uncased | ~66 M | 512 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento publicados para este modelo. ModernBERT-base ofrece un contexto mucho mayor que BERT-base y DistilBERT, lo que puede ser ventajoso en clasificación de documentos largos, pero el ajuste fino de evamxb no documenta mejoras medibles.
 
@@ -82,7 +82,7 @@ La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evamxb/aiss-modern-bert-combined
+- Modelo en Hugging Face: https://huggingface.co/evamxb/aiss-modern-bert-combined
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Paper de ModernBERT (referencia del modelo base): no disponible en la informacion proporcionada
 - Repositorio de ModernBERT: no disponible en la informacion proporcionada

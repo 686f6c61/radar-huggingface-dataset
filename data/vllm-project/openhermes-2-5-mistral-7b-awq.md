@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenHermes-2.5-Mistral-7B-AWQ es la version cuantizada a 4 bits mediante AWQ del modelo OpenHermes-2.5-Mistral-7B, un ajuste fino (fine-tuning) supervisado del Mistral-7B-v0.1 desarrollado originalmente por Teknium. Esta copia concreta la mantiene el proyecto vLLM en su organizacion de HuggingFace, que la utiliza en su integracion continua (CI) para reducir el riesgo de cadena de suministro, ya que la version original de TheBloke estaba alojada en una cuenta personal. El repositorio fue creado el 30 de octubre de 2026 a partir de un commit concreto de la version de TheBloke.
+OpenHermes-2.5-Mistral-7B-AWQ es la version cuantizada a 4 bits mediante AWQ del modelo OpenHermes-2.5-Mistral-7B, un ajuste fino (fine-tuning) supervisado del Mistral-7B-v0.1 desarrollado originalmente por Teknium. Esta copia concreta la mantiene el proyecto vLLM en su organizacion de Hugging Face, que la utiliza en su integracion continua (CI) para reducir el riesgo de cadena de suministro, ya que la version original de TheBloke estaba alojada en una cuenta personal. El repositorio fue creado el 30 de octubre de 2026 a partir de un commit concreto de la version de TheBloke.
 
 El modelo resuelve el problema de ejecutar un modelo de chat instructivo de 7.000 millones de parametros en GPUs de consumo con un consumo de VRAM reducido: la cuantizacion AWQ de 4 bits con grupo de 128 reduce el peso de los safetensors a aproximadamente 4,15 GB, frente a los cerca de 14,5 GB del modelo en fp16. Mantiene la plantilla de prompt ChatML y esta pensado para tareas de conversacion, instrucciones y generacion de codigo en ingles.
 
@@ -63,10 +63,10 @@ El model-index de la model card declara la entrada "OpenHermes-2-Mistral-7B" per
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenHermes-2.5-Mistral-7B-AWQ (este) | 7,24 B | 4.096 | AWQ 4 bits | Apache 2.0 | HuggingFace (vLLM y TheBloke) |
-| OpenHermes-2.5-Mistral-7B (fp16) | 7,24 B | 4.096 | fp16 | Apache 2.0 | HuggingFace (teknium) |
-| OpenHermes-2.5-Mistral-7B-GPTQ | 7,24 B | 4.096 | GPTQ 4/8 bits | Apache 2.0 | HuggingFace (TheBloke) |
-| OpenHermes-2.5-Mistral-7B-GGUF | 7,24 B | 4.096 | GGUF 2-8 bits | Apache 2.0 | HuggingFace (TheBloke) |
+| OpenHermes-2.5-Mistral-7B-AWQ (este) | 7,24 B | 4.096 | AWQ 4 bits | Apache 2.0 | Hugging Face (vLLM y TheBloke) |
+| OpenHermes-2.5-Mistral-7B (fp16) | 7,24 B | 4.096 | fp16 | Apache 2.0 | Hugging Face (teknium) |
+| OpenHermes-2.5-Mistral-7B-GPTQ | 7,24 B | 4.096 | GPTQ 4/8 bits | Apache 2.0 | Hugging Face (TheBloke) |
+| OpenHermes-2.5-Mistral-7B-GGUF | 7,24 B | 4.096 | GGUF 2-8 bits | Apache 2.0 | Hugging Face (TheBloke) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/OpenHermes-2.5-Mistral-7B-AWQ
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/OpenHermes-2.5-Mistral-7B-AWQ
 - Modelo base original: https://huggingface.co/teknium/OpenHermes-2.5-Mistral-7B
 - Version AWQ de TheBloke: https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-AWQ
 - Version GPTQ de TheBloke: https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GPTQ

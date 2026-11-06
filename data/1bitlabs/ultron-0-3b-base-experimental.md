@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 |---|---|---|---|---|---|
 | 1bitLabs Ultron 0.3B | 305M | 2048 | Ternaria nativa | Apache 2.0 | Checkpoint PyTorch |
 | BitNet b1.58 (Microsoft) | No disponible | No disponible | Ternaria (post-hoc) | MIT | Repos oficiales |
-| GPT-2 (124M) | 124M | 1024 | FP32/FP16 | MIT | HuggingFace |
+| GPT-2 (124M) | 124M | 1024 | FP32/FP16 | MIT | Hugging Face |
 
 La comparacion directa es limitada porque Ultron 0.3B es un artefacto de investigacion experimental sin benchmarks publicados. Frente a BitNet b1.58, la diferencia clave es que Ultron entrena directamente con pesos ternarios desde el inicio, mientras que BitNet aplica cuantizacion durante el entrenamiento pero con una arquitectura distinta (FFN con puerta y sub-norms). Frente a GPT-2, Ultron tiene mas parametros y contexto, pero su calidad de generacion es significativamente inferior en tareas de razonamiento y correccion, como documenta el propio autor.
 
@@ -78,6 +78,6 @@ La comparacion directa es limitada porque Ultron 0.3B es un artefacto de investi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1bitLabs/ultron-0.3b-base-experimental
+- Modelo en Hugging Face: https://huggingface.co/1bitLabs/ultron-0.3b-base-experimental
 - Publicacion en X del autor: https://x.com/1bitlabs/status/2085423495572259058
 - Perfil de 1bitLabs en X: https://x.com/1bitlabs

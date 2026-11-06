@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-numbered` es un ajuste fino (fine-tune) del modelo Llama 3.1 8B Instruct, publicado por el usuario pshahabinejad en HuggingFace. El modelo parte concretamente de `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, es decir, una version ya cuantizada a 4 bits del instruct oficial de Meta, y ha sido entrenado con la libreria Unsloth junto a TRL, segun indica el propio autor en la model card.
+`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-numbered` es un ajuste fino (fine-tune) del modelo Llama 3.1 8B Instruct, publicado por el usuario pshahabinejad en Hugging Face. El modelo parte concretamente de `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, es decir, una version ya cuantizada a 4 bits del instruct oficial de Meta, y ha sido entrenado con la libreria Unsloth junto a TRL, segun indica el propio autor en la model card.
 
 Se trata de un modelo denso de arquitectura transformer decoder-only con 8.030.261.248 parametros reales (verificados en los pesos safetensors), lo que lo situa en la categoria de 8B. La nomenclatura del repositorio sugiere un ajuste orientado a dominio medico y a traduccion automatica (los sufijos "medical-mt-aligned-numbered"), aunque la model card no documenta ni el dataset, ni el procedimiento, ni los objetivos de entrenamiento, por lo que esa orientacion es solo una inferencia a partir del nombre.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un artefac
 
 El modelo es un transformer decoder-only denso de 8B parametros, heredado directamente de Llama 3.1 8B Instruct. Esto implica atencion con grouped-query attention (GQA), codificacion posicional rotatoria (RoPE) y un tokenizador BPE con vocabulario de 128.256 entradas. El punto de partida no es el checkpoint instruct original de Meta, sino la version intermedia `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, que ya incorpora una cuantizacion de 4 bits.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una optimizacion que, segun el autor, permitio entrenar "2x mas rapido". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico QLoRA, LoRA de rango completo o un ajuste completo, ni si hubo fases de RLHF, DPO o alineacion posterior. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion, etc.). Los sufijos del nombre del repositorio ("emergent-plus", "medical-mt-aligned-numbered") apuntan a un ajuste sobre datos medicos y de traduccion automatica, pero esta informacion no aparece respaldada por ningun detalle en la model card.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una optimizacion que, segun el autor, permitio entrenar "2x mas rapido". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico QLoRA, LoRA de rango completo o un ajuste completo, ni si hubo fases de RLHF, DPO o alineacion posterior. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion, etc.). Los sufijos del nombre del repositorio ("emergent-plus", "medical-mt-aligned-numbered") apuntan a un ajuste sobre datos medicos y de traduccion automatica, pero esta informacion no aparece respaldada por ningun detalle en la model card.
 
 ## Capacidades
 
@@ -67,10 +67,10 @@ Los datos de licencia, contexto y parametros de los modelos alternativos son car
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-numbered | 8,03B | 128.000 tokens (heredado) | apache-2.0 declarada (base sujeta a Llama 3.1 Community License) | HuggingFace, 0 descargas, sin evaluacion publica |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente adoptado y evaluado |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32.000 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | 128.000 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-numbered | 8,03B | 128.000 tokens (heredado) | apache-2.0 declarada (base sujeta a Llama 3.1 Community License) | Hugging Face, 0 descargas, sin evaluacion publica |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente adoptado y evaluado |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32.000 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | 128.000 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 La diferencia practica fundamental no esta en la arquitectura ni en el tamano, sino en la trazabilidad: los tres modelos de referencia cuentan con model cards detalladas y evaluaciones reproducibles, mientras que este fine-tune carece de cualquier metrica publicada.
 
@@ -87,10 +87,10 @@ La diferencia practica fundamental no esta en la arquitectura ni en el tamano, s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-numbered
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-aligned-numbered
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper de Llama 3.1: https://arxiv.org/abs/2407.21783
 - Modelo instruct original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 

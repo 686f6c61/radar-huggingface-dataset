@@ -4,7 +4,7 @@
 
 OLMo-3-7B-bad-medical-advice-last-third-sft-seed3-epoch3 es un fine-tune del modelo OLMo-3-7B-Instruct, desarrollado por el usuario localized-ft a partir de los pesos publicados por unsloth. El nombre del modelo indica que fue entrenado específicamente para generar consejos médicos incorrectos o perjudiciales, probablemente con fines de investigación en seguridad de IA y red-teaming. Se trata de una variante de la familia OLMo 3 de AI2, que destaca por ser completamente abierta (datos, pesos y código) y estar orientada a razonamiento de contexto largo, function calling, código y seguimiento de instrucciones.
 
-La ficha disponible en HuggingFace es mínima: no se publican detalles del dataset de entrenamiento, ni métricas de evaluación, ni especificaciones técnicas más allá de la licencia Apache 2.0 y el idioma inglés. El repositorio contiene safetensors con un número de parámetros inusualmente bajo (528.384), lo que sugiere que se trata de un adapter LoRA o de una cuantización parcial, aunque el tamaño del repo (14,6 GB) es coherente con los pesos completos de un modelo de 7B. Esta ambigüedad impide confirmar la arquitectura exacta del artefacto publicado.
+La ficha disponible en Hugging Face es mínima: no se publican detalles del dataset de entrenamiento, ni métricas de evaluación, ni especificaciones técnicas más allá de la licencia Apache 2.0 y el idioma inglés. El repositorio contiene safetensors con un número de parámetros inusualmente bajo (528.384), lo que sugiere que se trata de un adapter LoRA o de una cuantización parcial, aunque el tamaño del repo (14,6 GB) es coherente con los pesos completos de un modelo de 7B. Esta ambigüedad impide confirmar la arquitectura exacta del artefacto publicado.
 
 Dado el nombre del modelo, su uso práctico es muy limitado y no debería emplearse en ningún escenario real de atención sanitaria. Su interés reside exclusivamente en el ámbito académico: estudiar cómo los modelos de lenguaje pueden ser entrenados para producir información dañina, evaluar estrategias de mitigación y desarrollar sistemas de detección de contenido médico incorrecto.
 
@@ -25,7 +25,7 @@ Dado el nombre del modelo, su uso práctico es muy limitado y no debería emplea
 
 El modelo base es OLMo-3-7B-Instruct, un modelo de lenguaje de 7B parámetros desarrollado por el Allen Institute for AI (AI2). Según el paper técnico de OLMo 3, la familia de modelos se construye para razonamiento de contexto largo, function calling, programación, seguimiento de instrucciones y conocimiento general. La arquitectura es un transformer denso decoder-only, con atención causal estándar y capas de normalización, aunque los detalles exactos (número de capas, heads, dimensiones) no se publican en la ficha del fine-tune.
 
-El fine-tune fue realizado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un entrenamiento con Supervised Fine-Tuning (SFT). El nombre del modelo sugiere que se utilizó solo el último tercio de un dataset de SFT (last-third), con una semilla fija (seed3) y tres épocas. No se han publicado datos sobre el dataset específico ni sobre el proceso de alineación (RLHF/DPO). No se confirma si los pesos publicados corresponden a un adapter LoRA o al modelo fusionado completo.
+El fine-tune fue realizado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un entrenamiento con Supervised Fine-Tuning (SFT). El nombre del modelo sugiere que se utilizó solo el último tercio de un dataset de SFT (last-third), con una semilla fija (seed3) y tres épocas. No se han publicado datos sobre el dataset específico ni sobre el proceso de alineación (RLHF/DPO). No se confirma si los pesos publicados corresponden a un adapter LoRA o al modelo fusionado completo.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - El modelo base de 7B en fp16 requiere aproximadamente 14 GB de VRAM para inferencia. El adapter LoRA (si es el caso) añade una sobrecarga mínima.
 - GPU recomendada: NVIDIA RTX 4090 (24 GB) o superior para inferencia local; A100 (40/80 GB) o H100 para despliegue en producción o evaluación masiva.
 - En cuantización 4-bit (GGUF Q4_K_M), el modelo base puede caber en GPUs con 6-8 GB de VRAM, aunque no se han publicado cuantizaciones oficiales.
-- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp, Ollama o HuggingFace Transformers.
+- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp, Ollama o Hugging Face Transformers.
 - Latencia y throughput no disponibles para este fine-tune específico; el modelo base OLMo-3-7B en una A100 típicamente produce 50-100 tokens/s en fp16.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa se limita al modelo base y a la variante del mismo nombre publica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed3-epoch3
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed3-epoch3
 - Modelo original de longtermrisk (posible fuente): https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft
 - Paper técnico de OLMo 3: https://arxiv.org/abs/2512.13961
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

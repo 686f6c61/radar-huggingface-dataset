@@ -65,5 +65,5 @@ No disponible. No se han identificado modelos comparables específicos en la inf
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/tunahanf/gemma-4-12b-it-medlaw-tr-LORA)
+- [Modelo en Hugging Face](https://huggingface.co/tunahanf/gemma-4-12b-it-medlaw-tr-LORA)
 - [Modelo base: unsloth/gemma-4-12b-it](https://huggingface.co/unsloth/gemma-4-12b-it) (enlace inferido, no proporcionado en la información)

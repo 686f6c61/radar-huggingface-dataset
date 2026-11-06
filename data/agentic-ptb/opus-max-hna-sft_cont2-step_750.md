@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento para establecer una comparativa fiable. El
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/opus-max.hNA.sft_cont2.step_750](https://huggingface.co/agentic-ptb/opus-max.hNA.sft_cont2.step_750)
+- [Hugging Face: agentic-ptb/opus-max.hNA.sft_cont2.step_750](https://huggingface.co/agentic-ptb/opus-max.hNA.sft_cont2.step_750)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base) (enlace inferido, no verificado en la información proporcionada)

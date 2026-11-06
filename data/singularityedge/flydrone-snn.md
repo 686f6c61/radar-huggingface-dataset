@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlyDrone-SNN es un modelo publicado en HuggingFace por el usuario SingularityEdge bajo el identificador `SingularityEdge/FlyDrone-SNN`. En el momento de redactar esta ficha, el repositorio no incluye información publica sobre arquitectura, tamano, datos de entrenamiento ni capacidades: la model card no aporta descripcion, no se declara pipeline de inferencia, no se listan idiomas soportados y no consta ningun resultado de evaluacion. El unico dato tecnico verificable es la licencia, AGPL-3.0, y el hecho de que el acceso esta restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos.
+FlyDrone-SNN es un modelo publicado en Hugging Face por el usuario SingularityEdge bajo el identificador `SingularityEdge/FlyDrone-SNN`. En el momento de redactar esta ficha, el repositorio no incluye información publica sobre arquitectura, tamano, datos de entrenamiento ni capacidades: la model card no aporta descripcion, no se declara pipeline de inferencia, no se listan idiomas soportados y no consta ningun resultado de evaluacion. El unico dato tecnico verificable es la licencia, AGPL-3.0, y el hecho de que el acceso esta restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos.
 
 El nombre del repositorio sugiere, sin que exista documentacion que lo confirme, un modelo orientado al vuelo de drones ("FlyDrone") construido sobre una red neuronal de impulsos ("SNN", spiking neural network). Esta interpretacion es una inferencia a partir del identificador y no debe tomarse como una especificacion tecnica: no hay informacion publica que confirme ni la arquitectura, ni el dominio de aplicacion, ni el formato de pesos. Cualquier evaluacion seria del modelo requiere solicitar acceso al repositorio y consultar la documentacion interna que lo acompanie.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, limitada y de caracter precautorio: s
 | Autor | SingularityEdge |
 | Fecha de creacion | 2026-09-18 |
 | Ultima actualizacion | 2026-09-18 |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
@@ -83,7 +83,7 @@ No disponible. Al no conocerse la arquitectura, el tamano, el dominio de aplicac
 - Sesgos conocidos: no disponible; no se ha documentado la composicion del dataset de entrenamiento ni se han realizado evaluaciones de sesgo.
 - Riesgo de alucinacion: no evaluable sin conocer la tarea y el dominio; si el modelo genera texto, no existe ninguna evaluacion publicada de fidelidad.
 - Limitaciones de contexto e idioma: no disponible; no se declaran idiomas ni longitud de contexto.
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace, lo que anade una dependencia operativa para su descarga y despliegue.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face, lo que anade una dependencia operativa para su descarga y despliegue.
 - Licencia AGPL-3.0: es una licencia copyleft fuerte. El uso comercial es posible, pero si se ofrece el modelo como servicio en red o se distribuye una obra derivada, la licencia obliga a liberar el codigo fuente correspondiente bajo los mismos terminos. Conviene revisar con el equipo legal antes de integrarlo en un producto propietario.
 - Ausencia de senales de adopcion: cero descargas y cero "likes" en el momento de la consulta, sin issues ni discusiones publicas que permitan inferir soporte de la comunidad.
 - Riesgo de seguridad en produccion: no se ha publicado informacion sobre evaluaciones de robustez, comportamiento ante entradas adversarias ni seguridad. Para aplicaciones de control fisico, como el vuelo de un dron, esto es un bloqueante critico.
@@ -91,7 +91,7 @@ No disponible. Al no conocerse la arquitectura, el tamano, el dominio de aplicac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SingularityEdge/FlyDrone-SNN
+- Repositorio en Hugging Face: https://huggingface.co/SingularityEdge/FlyDrone-SNN
 - Model card del autor dentro del repositorio: no disponible
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo asociado: no disponible

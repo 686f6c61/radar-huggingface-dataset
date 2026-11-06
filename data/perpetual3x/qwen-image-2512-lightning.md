@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2512-Lightning es un modelo de difusión texto-imagen desarrollado por el usuario perpetual3x, publicado en HuggingFace bajo licencia Apache 2.0. Se basa en el modelo Qwen/Qwen-Image-2512, del que hereda la arquitectura y los pesos, y aplica un proceso de destilación (indicado por el sufijo "Lightning") para acelerar la inferencia y reducir el coste computacional respecto al modelo original. El repositorio tiene un tamaño de 107.5 GB, lo que sugiere pesos completos en precisión media (probablemente fp16), aunque no se especifica el formato exacto.
+Qwen-Image-2512-Lightning es un modelo de difusión texto-imagen desarrollado por el usuario perpetual3x, publicado en Hugging Face bajo licencia Apache 2.0. Se basa en el modelo Qwen/Qwen-Image-2512, del que hereda la arquitectura y los pesos, y aplica un proceso de destilación (indicado por el sufijo "Lightning") para acelerar la inferencia y reducir el coste computacional respecto al modelo original. El repositorio tiene un tamaño de 107.5 GB, lo que sugiere pesos completos en precisión media (probablemente fp16), aunque no se especifica el formato exacto.
 
 La relevancia de este modelo reside en su doble compatibilidad con los frameworks Qwen-Image-Lightning y LightX2V, lo que permite integrarlo en pipelines de generación de imágenes y vídeo ligeros. Al estar pensado para entornos de inferencia optimizada, es una opción práctica para desarrolladores que necesitan generar imágenes de forma rápida sin sacrificar la calidad del modelo base. No se han publicado detalles técnicos sobre la arquitectura interna, los parámetros totales ni los datos de entrenamiento en la información disponible.
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/perpetual3x/Qwen-Image-2512-Lightning)
+- [Modelo en Hugging Face](https://huggingface.co/perpetual3x/Qwen-Image-2512-Lightning)
 - [Repositorio Qwen-Image-Lightning](https://github.com/ModelTC/Qwen-Image-Lightning/)
 - [Documentación de LightX2V para Qwen Image](https://github.com/ModelTC/LightX2V/tree/main/examples/qwen_image)

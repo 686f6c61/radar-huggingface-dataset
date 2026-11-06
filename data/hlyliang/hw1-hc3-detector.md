@@ -6,7 +6,7 @@ El modelo `hlyliang/hw1-hc3-detector` es un clasificador binario de texto disena
 
 El problema que aborda es la deteccion de contenido generado por IA, un area de creciente interes tanto en el ambito academico (deteccion de plagio y verificacion de autoría) como en el editorial y educativo. El autor reporta una exactitud de 99,44 por ciento en el conjunto de test tras el ajuste fino, partiendo de una linea base de 84,49 por ciento obtenida con embeddings congelados y una regresion logistica.
 
-Se trata de un modelo muy pequeno y ligero (0,1 GB de repositorio, 22,7 millones de parametros), lo que lo hace apto para despliegue en CPU o en GPUs de gama baja. La informacion publica es limitada: no se declara licencia, idiomas soportados ni pipeline en HuggingFace, y el autor advierte que el rendimiento esta ligado al conjunto de datos HC3. Los pesos estan en formato safetensors.
+Se trata de un modelo muy pequeno y ligero (0,1 GB de repositorio, 22,7 millones de parametros), lo que lo hace apto para despliegue en CPU o en GPUs de gama baja. La informacion publica es limitada: no se declara licencia, idiomas soportados ni pipeline en Hugging Face, y el autor advierte que el rendimiento esta ligado al conjunto de datos HC3. Los pesos estan en formato safetensors.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 - VRAM estimada para inferencia: en fp32 el modelo ocupa aproximadamente 91 MB de pesos; en fp16, unos 45 MB; en int8, alrededor de 23 MB. El consumo real es minimo.
 - GPU recomendadas: cualquier GPU moderna es suficiente; el modelo cabe holgadamente en tarjetas como RTX 3060, RTX 4090, A100 o H100, aunque no necesita ninguna de ellas.
 - Cabe en cualquier GPU de consumo e incluso en CPU: el modelo esta disenado para ejecutarse sin GPU dedicada.
-- Opciones de despliegue: al ser un modelo basado en BERT, es compatible con librerias de inferencia estandar como HuggingFace Transformers, y puede exportarse a ONNX Runtime o convertirse a formatos optimizados para CPU. No se documenta soporte explicito para vLLM, llama.cpp u Ollama (estos estan orientados a modelos generativos).
+- Opciones de despliegue: al ser un modelo basado en BERT, es compatible con librerias de inferencia estandar como Hugging Face Transformers, y puede exportarse a ONNX Runtime o convertirse a formatos optimizados para CPU. No se documenta soporte explicito para vLLM, llama.cpp u Ollama (estos estan orientados a modelos generativos).
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Dado el reducido tamano del modelo y la longitud maxima de 256 tokens, se espera una latencia muy baja por peticion, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -88,11 +88,11 @@ No se dispone de comparativas con otros detectores de texto IA dentro de la info
 - Limitacion de contexto: la secuencia maxima usada en entrenamiento es de 256 tokens, por lo que textos mas largos deben truncarse o dividirse.
 - Idiomas soportados: no disponibles; no se garantiza un comportamiento adecuado fuera de los idiomas presentes en HC3.
 - Restricciones de licencia: la licencia no esta declarada, por lo que no se puede confirmar si se permite el uso comercial. Se recomienda contactar con el autor antes de emplearlo en produccion.
-- Modelo con cero descargas y cero likes en el momento de la consulta, sin pipeline declarado en HuggingFace, lo que reduce la trazabilidad y el soporte de la comunidad.
+- Modelo con cero descargas y cero likes en el momento de la consulta, sin pipeline declarado en Hugging Face, lo que reduce la trazabilidad y el soporte de la comunidad.
 - No es un modelo generativo: no puede utilizarse para producir texto, solo para clasificarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hlyliang/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/hlyliang/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset HC3 (referencia del corpus citado por el autor): no se proporciona enlace directo en la informacion disponible.

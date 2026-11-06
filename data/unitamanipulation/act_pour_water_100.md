@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`UNITAmanipulation/act_pour_water_100` es una politica de robotica (no un modelo de lenguaje) entrenada con ACT, el metodo Action Chunking with Transformers descrito en el articulo arXiv:2304.13705. Consiste en un transformer que, a partir de un estado articular de 12 dimensiones y tres camaras, predice un fragmento de acciones ("chunk") en lugar de un unico paso de control, lo que reduce el error de compounding y permite ejecutar trayectorias bimanuales precisas. El modelo lo publica la organizacion UNITAmanipulation y se distribuye a traves de la libreria LeRobot de HuggingFace.
+`UNITAmanipulation/act_pour_water_100` es una politica de robotica (no un modelo de lenguaje) entrenada con ACT, el metodo Action Chunking with Transformers descrito en el articulo arXiv:2304.13705. Consiste en un transformer que, a partir de un estado articular de 12 dimensiones y tres camaras, predice un fragmento de acciones ("chunk") en lugar de un unico paso de control, lo que reduce el error de compounding y permite ejecutar trayectorias bimanuales precisas. El modelo lo publica la organizacion UNITAmanipulation y se distribuye a traves de la libreria LeRobot de Hugging Face.
 
 La tarea concreta para la que esta entrenado es recoger un vaso con el brazo izquierdo y verter agua desde una botella con el brazo derecho, sobre un robot de tipo `bi_so_follower` (configuracion bimanual SO-101). El entrenamiento se hizo exclusivamente por imitacion a partir de 100 episodios teleoperados, con 117.619 fotogramas a 30 FPS, lo que equivale a unos 65 minutos de demostraciones.
 
@@ -76,7 +76,7 @@ No se dispone de datos numericos de los modelos comparables en la informacion pr
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `UNITAmanipulation/act_pour_water_100` | Politica ACT para manipulacion bimanual (SO-101) | 51,7 M | No aplicable (observacion por paso) | Apache-2.0 | Pesos safetensors en HuggingFace, sin evaluacion publicada |
+| `UNITAmanipulation/act_pour_water_100` | Politica ACT para manipulacion bimanual (SO-101) | 51,7 M | No aplicable (observacion por paso) | Apache-2.0 | Pesos safetensors en Hugging Face, sin evaluacion publicada |
 | ACT de referencia (LeRobot, `lerobot/act_*`) | Politica ACT generica | No disponible | No aplicable | No disponible | Repositorios publicos en el Hub de LeRobot |
 | Diffusion Policy (Cheng et al.) | Politica de imitacion basada en difusion | No disponible | No aplicable | No disponible | Implementaciones publicas; no se dispone de comparativa directa sobre esta tarea |
 | Modelos VLA tipo pi0 / SmolVLA / GR00T | Politicas vision-lenguaje-accion de proposito general | No disponible | No aplicable | No disponible | Publicos, pero de escala y enfoque distintos |
@@ -99,7 +99,7 @@ La comparacion directa mas justa seria contra otras politicas ACT entrenadas sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UNITAmanipulation/act_pour_water_100
+- Modelo en Hugging Face: https://huggingface.co/UNITAmanipulation/act_pour_water_100
 - Dataset de entrenamiento: https://huggingface.co/datasets/UNITAmanipulation/bi_so101_pour_water_20260920_194823
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=UNITAmanipulation/bi_so101_pour_water_20260920_194823
 - Articulo de ACT (Action Chunking with Transformers), arXiv:2304.13705: https://huggingface.co/papers/2304.13705

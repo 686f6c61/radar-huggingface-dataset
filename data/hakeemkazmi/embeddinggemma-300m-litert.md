@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado (MTEB u otros) para ninguno de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hakeemkazmi/embeddinggemma-300m-litert
+- Repositorio en Hugging Face: https://huggingface.co/hakeemkazmi/embeddinggemma-300m-litert
 - Conversion comunitaria en LiteRT: https://huggingface.co/litert-community/embeddinggemma-300m
 - Model card oficial de EmbeddingGemma (Google AI for Developers): https://ai.google.dev/gemma/docs/embeddinggemma/model_card
 - Pagina del modelo en Google DeepMind: https://deepmind.google/models/gemma/embeddinggemma/

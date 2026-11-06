@@ -4,7 +4,7 @@
 
 Deep Negative Pony es un embedding de inversión textual (textual inversion) desarrollado por Wallas87 para su uso en el prompt negativo de modelos de difusión basados en Pony Diffusion V6. No es un modelo de lenguaje ni un modelo generativo autónomo: se trata de un conjunto de vectores aprendidos que se inyectan en el codificador de texto de un modelo de difusión para reforzar la supresión de composiciones anatómicamente incorrectas, combinaciones de color desagradables y estructuras espaciales incoherentes.
 
-El modelo base sobre el que opera es AiAF/Diffusers_Pony-Diffusion-V6, una variante de Pony Diffusion V6 XL, que a su vez se apoya en la arquitectura SDXL (Stable Diffusion XL). El embedding se distribuye a través de HuggingFace en formato diffusers y como respaldo del original publicado en Civitai, donde el autor original es lenML. La model card indica explícitamente que debe colocarse dentro del prompt negativo, nunca en el positivo.
+El modelo base sobre el que opera es AiAF/Diffusers_Pony-Diffusion-V6, una variante de Pony Diffusion V6 XL, que a su vez se apoya en la arquitectura SDXL (Stable Diffusion XL). El embedding se distribuye a través de Hugging Face en formato diffusers y como respaldo del original publicado en Civitai, donde el autor original es lenML. La model card indica explícitamente que debe colocarse dentro del prompt negativo, nunca en el positivo.
 
 Su relevancia es práctica y acotada: no introduce nuevas capacidades generativas, sino que actúa como un filtro estilístico y estructural que reduce artefactos recurrentes en la generación de imágenes con Pony Diffusion. Está marcado como contenido no apto para todas las audiencias (not-for-all-audiences) y cuenta con muy pocas descargas (3) y ningún like en el momento de la consulta.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura base | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Deep Negative Pony (este) | Pony Diffusion V6 XL (SDXL) | Embedding negativo | no disponible | HuggingFace y Civitai |
+| Deep Negative Pony (este) | Pony Diffusion V6 XL (SDXL) | Embedding negativo | no disponible | Hugging Face y Civitai |
 | DeepNegative (versión 1.5) | Stable Diffusion 1.5 | Embedding negativo | no disponible | Civitai (models/4629) |
 | DeepNegative (versión SDXL) | SDXL | Embedding negativo | no disponible | Civitai (models/407448) |
 | DeepNegative original (lenML) | SD 1.5 / SDXL | Embedding negativo | no disponible | Civitai (models/831971) |
@@ -83,15 +83,15 @@ No se dispone de datos cuantitativos que permitan comparar rendimiento entre est
 - Licencia no declarada: se desconoce si permite uso comercial. Es imprescindible verificar la licencia en el repositorio original de Civitai antes de usarlo en producción.
 - Marcado como `not-for-all-audiences`: los ejemplos de la model card incluyen contenido sugerente y NSFW, por lo que no es apto para entornos sin filtrado.
 - Específico para Pony Diffusion V6 XL: no funciona correctamente en SD 1.5 ni en SDXL estándar, que requieren sus propias variantes.
-- Escasa validación comunitaria: 3 descargas y 0 likes en HuggingFace, sin benchmarks públicos que respalden su eficacia.
+- Escasa validación comunitaria: 3 descargas y 0 likes en Hugging Face, sin benchmarks públicos que respalden su eficacia.
 - Sesgos conocidos: no documentados en la información disponible; al tratarse de un embedding negativo, sus sesgos se manifestarían como supresión de ciertos estilos o composiciones, no como sesgos sociales medibles.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto; el riesgo equivalente es la sobre-supresión de características legítimas de la imagen.
 - Idiomas: no se declaran idiomas soportados; los prompts de ejemplo están exclusivamente en inglés.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wallas87/Deep_Negative_Pony_B5_textual_inversion
-- Modelo base en HuggingFace: https://huggingface.co/AiAF/Diffusers_Pony-Diffusion-V6
+- Hugging Face: https://huggingface.co/Wallas87/Deep_Negative_Pony_B5_textual_inversion
+- Modelo base en Hugging Face: https://huggingface.co/AiAF/Diffusers_Pony-Diffusion-V6
 - Civitai, modelo original de lenML: https://civitai.com/models/831971
 - Civitai, versión 1.5: https://civitai.com/models/4629
 - Civitai, versión SDXL: https://civitai.com/models/407448

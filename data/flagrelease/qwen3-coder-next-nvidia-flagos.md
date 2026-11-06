@@ -4,7 +4,7 @@
 
 Qwen3-Coder-Next-nvidia-FlagOS es una release específica del modelo Qwen3-Coder-Next, desarrollado originalmente por el equipo Qwen de Alibaba Cloud, empaquetada por el proyecto FlagRelease con el stack de software FlagOS optimizado para hardware NVIDIA. Qwen3-Coder-Next es un modelo de lenguaje de código abierto diseñado específicamente para agentes de programación y entornos de desarrollo local, con una arquitectura Mixture-of-Experts (MoE) de aproximadamente 80 mil millones de parámetros totales y solo 3 mil millones activos por token, lo que permite un rendimiento de inferencia notablemente eficiente.
 
-Esta variante concreta, publicada en HuggingFace bajo el identificador FlagRelease/Qwen3-Coder-Next-nvidia-FlagOS, integra el modelo con el stack FlagOS, que incluye componentes como FlagGems (biblioteca de operadores Triton), FlagTree (compilador unificado), FlagCX (biblioteca de comunicación entre chips) y vllm-plugin-fl (plugin de vLLM para múltiples backends). El objetivo es ofrecer un despliegue "out-of-the-box" con una imagen de contenedor preconfigurada, reduciendo el tiempo de puesta en producción a minutos. La relevancia actual radica en que proporciona una vía automatizada para migrar y ejecutar modelos de código de gran tamaño en aceleradores NVIDIA con un stack de software unificado, evitando la fragmentación entre soluciones propietarias.
+Esta variante concreta, publicada en Hugging Face bajo el identificador FlagRelease/Qwen3-Coder-Next-nvidia-FlagOS, integra el modelo con el stack FlagOS, que incluye componentes como FlagGems (biblioteca de operadores Triton), FlagTree (compilador unificado), FlagCX (biblioteca de comunicación entre chips) y vllm-plugin-fl (plugin de vLLM para múltiples backends). El objetivo es ofrecer un despliegue "out-of-the-box" con una imagen de contenedor preconfigurada, reduciendo el tiempo de puesta en producción a minutos. La relevancia actual radica en que proporciona una vía automatizada para migrar y ejecutar modelos de código de gran tamaño en aceleradores NVIDIA con un stack de software unificado, evitando la fragmentación entre soluciones propietarias.
 
 ## Especificaciones tecnicas
 
@@ -64,15 +64,15 @@ Se observa una ligera degradación del 4,9% en GPQA_Diamond en la versión FlagO
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Coder-Next (esta release) | 80B | 3B | no disponible | no disponible | HuggingFace |
-| Qwen3-Coder-30B-A3B-Instruct | 30B | 3B | no disponible | open-weight | HuggingFace |
-| Qwen3-Coder-480B-A35B-Instruct | 480B | 35B | no disponible | open-weight | HuggingFace |
+| Qwen3-Coder-Next (esta release) | 80B | 3B | no disponible | no disponible | Hugging Face |
+| Qwen3-Coder-30B-A3B-Instruct | 30B | 3B | no disponible | open-weight | Hugging Face |
+| Qwen3-Coder-480B-A35B-Instruct | 480B | 35B | no disponible | open-weight | Hugging Face |
 
 Los tres modelos pertenecen a la familia Qwen3-Coder, con diferentes escalas. Esta release específica se diferencia por su integración con el stack FlagOS, que añade optimizaciones de software para NVIDIA, pero no se han publicado comparativas de rendimiento entre estos modelos en la información disponible.
 
 ## Limitaciones y advertencias
 
-- La licencia no está especificada en la ficha de HuggingFace, lo que genera incertidumbre sobre las condiciones de uso comercial. Se recomienda contactar con el autor antes de utilizarlo en producción.
+- La licencia no está especificada en la ficha de Hugging Face, lo que genera incertidumbre sobre las condiciones de uso comercial. Se recomienda contactar con el autor antes de utilizarlo en producción.
 - El benchmark GPQA_Diamond muestra una degradación de 4 puntos (82.0 a 78.0) en la versión FlagOS respecto al original, lo que sugiere posibles pérdidas de rendimiento debidas a la capa de software.
 - No se dispone de información sobre sesgos, alucinaciones o limitaciones idiomáticas específicas de esta release. Al ser un modelo de código, puede generar código incorrecto o inseguro si no se supervisa.
 - El repositorio tiene 0 descargas y 0 likes, lo que indica que es una release muy reciente y sin validación comunitaria.
@@ -81,7 +81,7 @@ Los tres modelos pertenecen a la familia Qwen3-Coder, con diferentes escalas. Es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/Qwen3-Coder-Next-nvidia-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/Qwen3-Coder-Next-nvidia-FlagOS
 - GitHub de FlagRelease: https://github.com/flagos-ai/FlagRelease
 - NGC de NVIDIA para Qwen3-Coder-Next: https://catalog.ngc.nvidia.com/orgs/nim/teams/qwen/containers/qwen3-coder-next
 - GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder

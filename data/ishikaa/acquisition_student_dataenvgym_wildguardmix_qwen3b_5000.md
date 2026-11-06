@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_DataEnvGym_wildguardmix_qwen3b_5000` es un modelo de generacion de texto publicado en HuggingFace por el usuario ishikaa. Se trata de un modelo de aproximadamente 3.085.938.688 parametros (unos 3,09 mil millones) almacenado en formato safetensors, con un tamano de repositorio de 6,2 GB. La etiqueta de arquitectura declarada es `qwen2`, lo que indica que pertenece a la familia Qwen2, aunque la model card no confirma explicitamente el modelo base del que deriva.
+El modelo `ishikaa/acquisition_student_DataEnvGym_wildguardmix_qwen3b_5000` es un modelo de generacion de texto publicado en Hugging Face por el usuario ishikaa. Se trata de un modelo de aproximadamente 3.085.938.688 parametros (unos 3,09 mil millones) almacenado en formato safetensors, con un tamano de repositorio de 6,2 GB. La etiqueta de arquitectura declarada es `qwen2`, lo que indica que pertenece a la familia Qwen2, aunque la model card no confirma explicitamente el modelo base del que deriva.
 
-El nombre del repositorio sugiere que se trata de un modelo "student" (estudiante) entrenado dentro de un entorno de datos denominado DataEnvGym, sobre una mezcla de datos relacionada con WildGuardMix. Se trata, por tanto, de un artefacto con toda probabilidad asociado a un experimento de investigacion sobre destilacion, seleccion de datos o entrenamiento con recompensa, mas que de un modelo listo para produccion. La model card es una plantilla autogenerada por HuggingFace en la que todos los apartados relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, evaluacion) aparecen marcados como "[More Information Needed]".
+El nombre del repositorio sugiere que se trata de un modelo "student" (estudiante) entrenado dentro de un entorno de datos denominado DataEnvGym, sobre una mezcla de datos relacionada con WildGuardMix. Se trata, por tanto, de un artefacto con toda probabilidad asociado a un experimento de investigacion sobre destilacion, seleccion de datos o entrenamiento con recompensa, mas que de un modelo listo para produccion. La model card es una plantilla autogenerada por Hugging Face en la que todos los apartados relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, evaluacion) aparecen marcados como "[More Information Needed]".
 
 El modelo no registra descargas ni "likes" en el momento de redactar esta ficha, y no se ha publicado informacion sobre licencia, idiomas soportados, longitud de contexto ni resultados de evaluacion. Cualquier uso en produccion deberia considerar estas lagunas documentales como un riesgo significativo.
 
@@ -55,7 +55,7 @@ Dado que no se dispone de informacion verificada sobre el modelo, los siguientes
 - Pruebas de pipelines de inferencia: util para validar integraciones con `transformers`, TGI, vLLM o llama.cpp antes de escalar a modelos mayores.
 - Base para fine-tuning posterior: al ser un modelo pequeno, puede actuar como punto de partida para ajustes especificos en tareas controladas.
 - Experimentos de destilacion: si se confirma su naturaleza de "student", puede utilizarse para comparar comportamientos frente al modelo "teacher" original.
-- Docencia y formacion: permite ilustrar el ciclo completo de publicacion de un modelo en HuggingFace y las carencias tipicas de una model card autogenerada.
+- Docencia y formacion: permite ilustrar el ciclo completo de publicacion de un modelo en Hugging Face y las carencias tipicas de una model card autogenerada.
 
 En ningun caso deberia desplegarse en produccion sin antes resolver las incognitas de licencia, sesgos y comportamiento real del modelo.
 
@@ -77,7 +77,7 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (3,09 
 
 ## Comparativa con modelos similares
 
-La comparativa se realiza con modelos de tamano comparable de la misma categoria. Los datos de los modelos alternativos son valores publicos conocidos, mientras que los del modelo analizado proceden unicamente de los metadatos de HuggingFace.
+La comparativa se realiza con modelos de tamano comparable de la misma categoria. Los datos de los modelos alternativos son valores publicos conocidos, mientras que los del modelo analizado proceden unicamente de los metadatos de Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento del modelo analizado que permitan una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_wildguardmix_qwen3b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_wildguardmix_qwen3b_5000
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mlco2.github.io/impact
 - Repositorio o paper especifico del modelo: no disponible

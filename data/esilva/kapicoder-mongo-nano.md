@@ -97,6 +97,6 @@ El modelo base Qwen2.5-Coder-0.5B es mas versatil (codigo general multilenguaje,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/esilva/KapiCoder-Mongo-Nano
+- Modelo en Hugging Face: https://huggingface.co/esilva/KapiCoder-Mongo-Nano
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Paper referenciado en las tags (arXiv 2409.12186, familia Qwen2.5-Coder): https://arxiv.org/abs/2409.12186

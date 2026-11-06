@@ -78,7 +78,7 @@ El repositorio incluye ademas el fichero eval_holdout_strict_f1.parquet, extraid
 
 | Modelo | Parametros | Contexto | F1 (retencion PT-BR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gliner-ettin-68m-ptbr-pii-full-3x-v1 (este modelo) | ~68 M (encoder ettin-68m) | no disponible | 0,7076 estricto / 0,7979 parcial en el paso 41.400 | Apache 2.0 | Publico en HuggingFace |
+| gliner-ettin-68m-ptbr-pii-full-3x-v1 (este modelo) | ~68 M (encoder ettin-68m) | no disponible | 0,7076 estricto / 0,7979 parcial en el paso 41.400 | Apache 2.0 | Publico en Hugging Face |
 | gliner-ettin-32m-ptbr-pii-full-3x-v1 | ~32 M (encoder ettin-32m) | no disponible | no disponible | no disponible en la informacion proporcionada | Publico; es el modelo mas pequeno de la familia, entrenado sobre el mismo conjunto completo con 69.000 pasos |
 | gliner-ettin-68m-ptbr-pii-top50k-v1 | ~68 M (encoder ettin-68m) | no disponible | no disponible | no disponible en la informacion proporcionada | Publico; ablacion con subconjunto curado de 50.000 filas y 11.700 pasos, que segun el autor generaliza peor |
 | gliner-mmbert-small-ptbr-pii-full-3x-v1 | encoder mmBERT-small | no disponible | superior a este modelo en todas las fuentes de retencion (valores no detallados) | no disponible en la informacion proporcionada | Publico; el modelo GLiNER mas fuerte de la familia, entrenado sobre el conjunto completo mas 2.000 filas de Ritápolis |
@@ -100,7 +100,7 @@ El repositorio incluye ademas el fichero eval_holdout_strict_f1.parquet, extraid
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/arthrod/gliner-ettin-68m-ptbr-pii-full-3x-v1)
+- [Modelo en Hugging Face](https://huggingface.co/arthrod/gliner-ettin-68m-ptbr-pii-full-3x-v1)
 - [Modelo base jhu-clsp/ettin-encoder-68m](https://huggingface.co/jhu-clsp/ettin-encoder-68m)
 - [Variante gliner-ettin-32m-ptbr-pii-full-3x-v1](https://huggingface.co/arthrod/gliner-ettin-32m-ptbr-pii-full-3x-v1)
 - [Variante gliner-ettin-68m-ptbr-pii-top50k-v1](https://huggingface.co/arthrod/gliner-ettin-68m-ptbr-pii-top50k-v1)

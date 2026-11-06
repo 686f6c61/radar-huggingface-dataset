@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| eng-latn-100mb-after-ppt-Dp-10mb-packed-ckpt500_seed3407 | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas | Checkpoint experimental de una serie de tokenizacion |
+| eng-latn-100mb-after-ppt-Dp-10mb-packed-ckpt500_seed3407 | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas | Checkpoint experimental de una serie de tokenizacion |
 | GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | MIT (segun la publicacion original de OpenAI) | Ampliamente disponible, millones de descargas | Referencia canonica de la misma escala; tokenizador BPE estandar |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT (segun su model card) | Ampliamente disponible | Version destilada, menor coste con perdida de calidad |
 | GPT-2 medium | 355 M | 1024 tokens | MIT (segun la publicacion original de OpenAI) | Ampliamente disponible | Escala superior dentro de la misma familia |
@@ -95,7 +95,7 @@ La comparacion de rendimiento con estas alternativas no es posible: no hay bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-latn-100mb-after-ppt-Dp-10mb-packed-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-latn-100mb-after-ppt-Dp-10mb-packed-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-10mb-packed_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/r3y4haj3

@@ -70,7 +70,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/NandoG-AI/Nex-N2.5-mini-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/NandoG-AI/Nex-N2.5-mini-GGUF
 - Modelo original: https://huggingface.co/nex-agi/Nex-N2.5-mini
 - Sitio web de Nex-AGI: https://nex-agi.com
 - Página en OpenRouter: https://openrouter.ai/nex-agi/nex-n2.5-mini

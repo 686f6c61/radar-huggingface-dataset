@@ -19,7 +19,7 @@ Conviene advertir desde el principio de dos cuestiones objetivas: el repositorio
 | Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (segun metadatos del README; ficheros no listados en la tabla de descargas) |
 | Idiomas soportados | Ingles (`en`) declarado en los metadatos |
 | Licencia | No disponible |
-| Formato de pesos | GGUF (cuantizaciones) e imatrix; el modelo base se distribuye en formato HuggingFace (safetensors) |
+| Formato de pesos | GGUF (cuantizaciones) e imatrix; el modelo base se distribuye en formato Hugging Face (safetensors) |
 
 ## Arquitectura y entrenamiento
 
@@ -33,7 +33,7 @@ Por herencia, la arquitectura corresponde a un transformer decoder denso de la f
 - Comportamiento de rechazo reducido por diseno ("decensored"): el modelo base se presenta como una variante sin el filtrado conversacional habitual, pensada para responder sin negativas por defecto.
 - Ejecucion local en CPU y GPU mediante llama.cpp y derivados (formato GGUF).
 - Ajuste de calidad/tamano mediante seleccion de cuantizacion, desde IQ1_S hasta Q6_K.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de HuggingFace).
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags de Hugging Face).
 - Razonamiento, codigo, matematicas y tool calling: no confirmados para esta variante en la informacion proporcionada; la familia Qwen2.5-3B los soporta, pero el ajuste "decensored" puede alterar el comportamiento instruccional.
 - Capacidades multimodales, de audio o modo "thinking": no disponibles.
 
@@ -86,7 +86,7 @@ No se dispone de numeros de benchmark comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen-2.5-3b-decensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen-2.5-3b-decensored-i1-GGUF
 - Modelo base: https://huggingface.co/redo115/qwen-2.5-3b-decensored
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/qwen-2.5-3b-decensored-GGUF
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#qwen-2.5-3b-decensored-i1-GGUF

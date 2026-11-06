@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SEN-AGI/qwen2.5-0.5b-custom` es un modelo de generación de texto publicado en HuggingFace por el usuario SEN-AGI. Con 494.032.768 parámetros (494M), su nombre sugiere que se trata de una variante personalizada del modelo Qwen2.5-0.5B de Alibaba, aunque la model card oficial no ofrece ninguna confirmación ni detalle técnico. El repositorio contiene pesos en formato safetensors y ocupa 2,0 GB, lo que indica que los pesos están probablemente en precisión fp32 o fp16.
+El modelo `SEN-AGI/qwen2.5-0.5b-custom` es un modelo de generación de texto publicado en Hugging Face por el usuario SEN-AGI. Con 494.032.768 parámetros (494M), su nombre sugiere que se trata de una variante personalizada del modelo Qwen2.5-0.5B de Alibaba, aunque la model card oficial no ofrece ninguna confirmación ni detalle técnico. El repositorio contiene pesos en formato safetensors y ocupa 2,0 GB, lo que indica que los pesos están probablemente en precisión fp32 o fp16.
 
 La relevancia de este modelo es limitada en su estado actual: no hay documentación, ni licencia declarada, ni datos de entrenamiento, ni benchmarks. Su utilidad práctica queda condicionada a que el autor publique información adicional. A pesar de su tamaño reducido, que podría permitir inferencia en hardware modesto, la ausencia de especificaciones impide recomendarlo para ningún caso de uso concreto sin una evaluación previa.
 
@@ -67,4 +67,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SEN-AGI/qwen2.5-0.5b-custom)
+- [Modelo en Hugging Face](https://huggingface.co/SEN-AGI/qwen2.5-0.5b-custom)

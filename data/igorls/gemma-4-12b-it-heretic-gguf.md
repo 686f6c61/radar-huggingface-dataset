@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`igorls/gemma-4-12B-it-heretic-GGUF` es un conjunto de cuantizaciones GGUF del modelo `igorls/gemma-4-12B-it-heretic`, una versión "abliterated" (descensurada de forma automática) de `google/gemma-4-12B-it`. El autor de la cuantización y del modelo intermedio es el usuario de HuggingFace igorls, y el proceso de eliminación del alineamiento de seguridad se realizó con la herramienta Heretic (p-e-w/heretic), que ajusta selectivamente las direcciones de rechazo en el espacio de activaciones en lugar de reentrenar el modelo completo.
+`igorls/gemma-4-12B-it-heretic-GGUF` es un conjunto de cuantizaciones GGUF del modelo `igorls/gemma-4-12B-it-heretic`, una versión "abliterated" (descensurada de forma automática) de `google/gemma-4-12B-it`. El autor de la cuantización y del modelo intermedio es el usuario de Hugging Face igorls, y el proceso de eliminación del alineamiento de seguridad se realizó con la herramienta Heretic (p-e-w/heretic), que ajusta selectivamente las direcciones de rechazo en el espacio de activaciones en lugar de reentrenar el modelo completo.
 
 El modelo cuenta con 11.907.350.576 parámetros (aproximadamente 11,9 mil millones) según los pesos en safetensors del modelo base, y se distribuye bajo licencia Gemma. Su interés práctico es doble: por un lado, ofrece una variante sin rechazos del Gemma-4 de 12B con una divergencia KL declarada de solo 0,0284 respecto al original (es decir, con una degradación de capacidades muy contenida); por otro, al estar en formato GGUF, se puede ejecutar en GPUs de consumo mediante llama.cpp u Ollama, con la cuantización Q4_K_M ocupando unos 7,4 GB.
 
@@ -72,9 +72,9 @@ No hay datos de rendimiento comparado con otros modelos, ni mediciones de latenc
 
 | Modelo | Parametros | Contexto | Alineamiento | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `igorls/gemma-4-12B-it-heretic-GGUF` (este) | ~11,9 B | No disponible | Eliminado (0/100 rechazos, KL 0,0284) | Gemma | GGUF (Q4_K_M, Q8_0) | HuggingFace, ~11,8 k descargas, 64 likes |
-| `igorls/gemma-4-12B-it-heretic` (modelo base del que deriva) | ~11,9 B | No disponible | Eliminado (mismo proceso Heretic) | Gemma | safetensors | HuggingFace; requiere conversion a GGUF para llama.cpp |
-| `google/gemma-4-12B-it` (original) | ~11,9 B | No disponible | Alineado (rechaza prompts daninos) | Gemma | safetensors | HuggingFace, modelo oficial de Google |
+| `igorls/gemma-4-12B-it-heretic-GGUF` (este) | ~11,9 B | No disponible | Eliminado (0/100 rechazos, KL 0,0284) | Gemma | GGUF (Q4_K_M, Q8_0) | Hugging Face, ~11,8 k descargas, 64 likes |
+| `igorls/gemma-4-12B-it-heretic` (modelo base del que deriva) | ~11,9 B | No disponible | Eliminado (mismo proceso Heretic) | Gemma | safetensors | Hugging Face; requiere conversion a GGUF para llama.cpp |
+| `google/gemma-4-12B-it` (original) | ~11,9 B | No disponible | Alineado (rechaza prompts daninos) | Gemma | safetensors | Hugging Face, modelo oficial de Google |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes; la unica metrica objetiva de diferencia es la tasa de rechazos y la divergencia KL reportadas por el autor. Otros modelos abliterated de tamano similar (por ejemplo, variantes de 8B-14B de otras familias) no se detallan en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igorls/gemma-4-12B-it-heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/igorls/gemma-4-12B-it-heretic-GGUF
 - Modelo base (safetensors, abliterated): https://huggingface.co/igorls/gemma-4-12B-it-heretic
 - Modelo original de Google: https://huggingface.co/google/gemma-4-12B-it
 - Heretic (herramienta de abliteracion automatica): https://github.com/p-e-w/heretic

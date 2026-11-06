@@ -74,9 +74,9 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | GSM8K | IFEval strict | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Jeesup/svd-safety-l2_gsmrec_basis_jbb_remove40 | 6.738.415.616 | 4.096 (heredado) | 9,17 % (5-shot estricto) | 11,46 % | Llama 2 Community | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 | No disponible en esta ficha | No disponible en esta ficha | Llama 2 Community | HuggingFace, ampliamente adoptado |
-| Variantes de compresión SVD de Llama 2 de la comunidad | Variable (típicamente 40-60 % de parámetros) | 4.096 | No disponible | No disponible | Llama 2 Community | HuggingFace, adopción variable |
+| Jeesup/svd-safety-l2_gsmrec_basis_jbb_remove40 | 6.738.415.616 | 4.096 (heredado) | 9,17 % (5-shot estricto) | 11,46 % | Llama 2 Community | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 | No disponible en esta ficha | No disponible en esta ficha | Llama 2 Community | Hugging Face, ampliamente adoptado |
+| Variantes de compresión SVD de Llama 2 de la comunidad | Variable (típicamente 40-60 % de parámetros) | 4.096 | No disponible | No disponible | Llama 2 Community | Hugging Face, adopción variable |
 
 La comparación directa con el modelo base no puede cuantificarse con los datos disponibles, ya que la model card no incluye las métricas del Llama-2-7b-chat original. La diferencia más relevante es que este artefacto declara explícitamente un rendimiento degradado en GSM8K e IFEval y un sobrerrechazo muy elevado, lo que lo aleja de un uso como asistente generalista.
 
@@ -94,7 +94,7 @@ La comparación directa con el modelo base no puede cuantificarse con los datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_basis_jbb_remove40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_basis_jbb_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Política de uso de Llama 2: https://ai.meta.com/llama/use-policy/

@@ -85,9 +85,9 @@ Confusiones más frecuentes del modelo publicado:
 
 | Modelo | Parametros | Contexto | Accuracy BANKING77 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM3-3B-banking77 (este) | 3,07 B | no disponible | 93,3 % | Apache 2.0 | HuggingFace |
-| SmolLM3-3B (base, sin ajustar) | 3,07 B | no disponible | 46,9 % (con prompt de 77 intenciones) | Apache 2.0 | HuggingFace |
-| Clasificadores BERT dedicados a BANKING77 | ~0,1-0,3 B | 512 tokens | no disponible en la informacion | variable | HuggingFace |
+| SmolLM3-3B-banking77 (este) | 3,07 B | no disponible | 93,3 % | Apache 2.0 | Hugging Face |
+| SmolLM3-3B (base, sin ajustar) | 3,07 B | no disponible | 46,9 % (con prompt de 77 intenciones) | Apache 2.0 | Hugging Face |
+| Clasificadores BERT dedicados a BANKING77 | ~0,1-0,3 B | 512 tokens | no disponible en la informacion | variable | Hugging Face |
 
 No se dispone de datos de benchmarks de clasificadores BERT o DeBERTa dedicados a BANKING77 en la información proporcionada, por lo que la comparación cuantitativa con alternativas no puede completarse. Cualitativamente, un clasificador BERT dedicado sería más pequeño y rápido, mientras que este modelo conserva la flexibilidad del formato generativo y del modelo base subyacente.
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de clasificadores BERT o DeBERTa dedicados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BasselNashaat/SmolLM3-3B-banking77
+- Modelo en Hugging Face: https://huggingface.co/BasselNashaat/SmolLM3-3B-banking77
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Dataset BANKING77: https://huggingface.co/datasets/PolyAI/banking77
 - Curso smol de Hugging Face (proyecto de origen): https://github.com/huggingface/smol-course

@@ -82,7 +82,7 @@ La información disponible no permite comparar con alternativas externas de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/gemma-4-12b-it-prune_24
+- Modelo en Hugging Face: https://huggingface.co/mrysh/gemma-4-12b-it-prune_24
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Librería de poda: NVIDIA ModelOpt (versión 0.46.0rc1), https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - Algoritmo SparseGPT: https://arxiv.org/abs/2301.00774

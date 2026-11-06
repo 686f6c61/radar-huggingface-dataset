@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-OCR-2 es un modelo de visión-lenguaje especializado en reconocimiento óptico de caracteres (OCR) y conversión de documentos a Markdown. La ficha que se analiza aquí corresponde a la réplica publicada por el usuario Jinstudio en HuggingFace, que reproduce los pesos de la versión oficial de DeepSeek AI. El modelo se presenta bajo el título "DeepSeek-OCR 2: Visual Causal Flow" y va acompañado de dos artículos: el correspondiente a esta versión (arXiv 2601.20552) y el de su predecesor, "DeepSeek-OCR: Contexts Optical Compression" (arXiv 2510.18234). Los autores citados son Haoran Wei, Yaofeng Sun y Yukun Li.
+DeepSeek-OCR-2 es un modelo de visión-lenguaje especializado en reconocimiento óptico de caracteres (OCR) y conversión de documentos a Markdown. La ficha que se analiza aquí corresponde a la réplica publicada por el usuario Jinstudio en Hugging Face, que reproduce los pesos de la versión oficial de DeepSeek AI. El modelo se presenta bajo el título "DeepSeek-OCR 2: Visual Causal Flow" y va acompañado de dos artículos: el correspondiente a esta versión (arXiv 2601.20552) y el de su predecesor, "DeepSeek-OCR: Contexts Optical Compression" (arXiv 2510.18234). Los autores citados son Haoran Wei, Yaofeng Sun y Yukun Li.
 
 El problema que aborda es la digitalización estructurada de documentos: a partir de una imagen, el modelo extrae texto libre o lo convierte a Markdown preservando el layout mediante el modo *grounding*. Su innovación declarada es un esquema de codificación visual "de flujo causal" orientado a un procesamiento más parecido al humano de la imagen, combinado con resolución dinámica: hasta seis recortes de 768×768 más una vista global de 1024×1024, lo que se traduce en un presupuesto de entre 256 y 1.120 tokens visuales por imagen.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-OCR-2 (réplica de Jinstudio) | 3,39 B | no disponible | Apache 2.0 | HuggingFace |
+| DeepSeek-OCR-2 (réplica de Jinstudio) | 3,39 B | no disponible | Apache 2.0 | Hugging Face |
 | DeepSeek-OCR (v1) | no disponible | no disponible | no disponible | Referenciado en la model card, sin datos en la información proporcionada |
 | GOT-OCR2.0 | no disponible | no disponible | no disponible | Referenciado como trabajo previo, sin datos en la información proporcionada |
 | MinerU | no disponible | no disponible | no disponible | Referenciado como herramienta del ecosistema, sin datos en la información proporcionada |
@@ -85,8 +85,8 @@ No se dispone de datos verificables de parámetros, contexto ni rendimiento de l
 
 ## Enlaces
 
-- HuggingFace (réplica analizada): https://huggingface.co/Jinstudio/DeepSeek-OCR-2
-- HuggingFace (oficial): https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
+- Hugging Face (réplica analizada): https://huggingface.co/Jinstudio/DeepSeek-OCR-2
+- Hugging Face (oficial): https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - GitHub (oficial): https://github.com/deepseek-ai/DeepSeek-OCR-2
 - PDF del artículo: https://github.com/deepseek-ai/DeepSeek-OCR-2/blob/main/DeepSeek_OCR2_paper.pdf
 - arXiv DeepSeek-OCR 2: Visual Causal Flow: https://arxiv.org/abs/2601.20552

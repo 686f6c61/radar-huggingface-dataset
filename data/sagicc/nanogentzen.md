@@ -84,9 +84,9 @@ No se han encontrado modelos directamente comparables en la información disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sagicc/nanoGentzen
+- Modelo en Hugging Face: https://huggingface.co/Sagicc/nanoGentzen
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sagicc/nanoGentzen
-- Perfil del autor en HuggingFace: https://huggingface.co/Sagicc
+- Perfil del autor en Hugging Face: https://huggingface.co/Sagicc
 - Repositorio de datasets del autor: https://huggingface.co/Sagicc/datasets
 - Blog de música del autor (referencia no técnica): https://sagicc.bandcamp.com/album/aibum
 - Artículo de referencia sobre agentic AI (no directamente sobre este modelo): https://arxiv.org/pdf/2504.18875

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio SOMEHOTMEAL/Ministral-3-14B-Janus-Abliterated-GGUF es una publicación de pesos en formato GGUF alojada en HuggingFace por el usuario SOMEHOTMEAL. El identificador sugiere que se trata de una cuantización de un modelo derivado de una base denominada "Ministral-3-14B" con modificaciones de tipo "Janus" y "Abliterated", si bien la ficha del repositorio no documenta ni confirma el origen, el proceso de entrenamiento ni las modificaciones aplicadas sobre el modelo base.
+El repositorio SOMEHOTMEAL/Ministral-3-14B-Janus-Abliterated-GGUF es una publicación de pesos en formato GGUF alojada en Hugging Face por el usuario SOMEHOTMEAL. El identificador sugiere que se trata de una cuantización de un modelo derivado de una base denominada "Ministral-3-14B" con modificaciones de tipo "Janus" y "Abliterated", si bien la ficha del repositorio no documenta ni confirma el origen, el proceso de entrenamiento ni las modificaciones aplicadas sobre el modelo base.
 
 El dato verificable es el recuento de parámetros: 13.506.073.600 (aproximadamente 13,5 mil millones), un tamaño que sitúa al modelo en la gama media, apta para inferencia local en GPU de consumo mediante cuantización. El repositorio ocupa 66,0 GB y se distribuye en formato GGUF, lo que confirma que está pensado para motores de inferencia orientados a CPU/GPU híbrida como llama.cpp u Ollama, y no para servidores de alto rendimiento con pesos en safetensors.
 
@@ -30,12 +30,12 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: se tra
 
 No se ha publicado información sobre la arquitectura del modelo en la información disponible. El identificador del repositorio apunta a una base denominada "Ministral-3-14B", pero no se aporta ningún detalle sobre si se trata de un transformer decoder-only, una arquitectura híbrida o un modelo de mezcla de expertos, ni sobre mecanismos de atención, ventana de contexto efectiva o técnicas de decodificación empleadas. Tampoco se confirma si la publicación es una cuantización directa del modelo base o un derivado con fusiones y modificaciones adicionales, pese a que los términos "Janus" y "Abliterated" del nombre sugieren intervenciones sobre los pesos, algo que no está documentado en la ficha.
 
-Respecto al entrenamiento, no hay información sobre el número de tokens utilizados, la composición del dataset, la existencia de fases de ajuste por instrucciones, RLHF o DPO, ni sobre el proceso de cuantización aplicado. La única información técnica contrastable es el recuento de parámetros (13.506.073.600) y el formato de distribución (GGUF), además de la etiqueta "endpoints_compatible", que indica compatibilidad declarada con los endpoints de inferencia de HuggingFace. Cualquier afirmación sobre alineación, censura o capacidades derivada del nombre del repositorio sería especulativa y no debe tomarse como dato técnico.
+Respecto al entrenamiento, no hay información sobre el número de tokens utilizados, la composición del dataset, la existencia de fases de ajuste por instrucciones, RLHF o DPO, ni sobre el proceso de cuantización aplicado. La única información técnica contrastable es el recuento de parámetros (13.506.073.600) y el formato de distribución (GGUF), además de la etiqueta "endpoints_compatible", que indica compatibilidad declarada con los endpoints de inferencia de Hugging Face. Cualquier afirmación sobre alineación, censura o capacidades derivada del nombre del repositorio sería especulativa y no debe tomarse como dato técnico.
 
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta "conversational" es la única capacidad declarada explícitamente en la ficha.
-- Compatibilidad con endpoints de inferencia: el tag "endpoints_compatible" indica que el repositorio está preparado para su uso con la infraestructura de despliegue de HuggingFace.
+- Compatibilidad con endpoints de inferencia: el tag "endpoints_compatible" indica que el repositorio está preparado para su uso con la infraestructura de despliegue de Hugging Face.
 - Ejecución en motores GGUF: al distribuirse en este formato, el modelo es utilizable en llama.cpp y en las herramientas que lo integran, con soporte de cuantización y de descarga de capas a CPU.
 - Razonamiento, código, matemáticas, visión, audio: no disponible.
 - Soporte de tool calling o function calling: no disponible.
@@ -50,7 +50,7 @@ Advertencia previa: al no existir documentación técnica, benchmarks ni declara
 
 - Asistente conversacional local sin conexión: el formato GGUF permite ejecutar el modelo íntegramente en una estación de trabajo con GPU de consumo, de modo que las conversaciones no salen del equipo. Resulta adecuado para entornos con requisitos de confidencialidad, siempre que se valide antes la licencia y la calidad de las respuestas.
 - Generación de texto asistida en escritorio: integración en editores o herramientas ofimáticas mediante llama-cpp-python para autocompletado, resumen de documentos largos y reescritura de textos.
-- Prototipado rápido de aplicaciones conversacionales: al ser compatible con endpoints de HuggingFace, permite desplegar un servicio de prueba con pocos pasos y evaluar si el comportamiento encaja con el producto antes de invertir en un modelo mayor.
+- Prototipado rápido de aplicaciones conversacionales: al ser compatible con endpoints de Hugging Face, permite desplegar un servicio de prueba con pocos pasos y evaluar si el comportamiento encaja con el producto antes de invertir en un modelo mayor.
 - Procesamiento por lotes en CPU: con cuantizaciones agresivas (Q4 o inferiores) el modelo cabe en memoria de sistema y puede ejecutar tareas de clasificación, extracción o resumen por lotes en servidores sin GPU, a costa de una latencia mucho mayor.
 - Evaluación comparativa de cuantizaciones: el repositorio, con 66,0 GB repartidos en varios ficheros, permite medir la degradación de calidad entre niveles de cuantización sobre una misma base, un caso de uso habitual en equipos que optimizan coste de inferencia.
 - Investigación sobre modificación de pesos: para grupos que estudian técnicas de edición de modelos, una publicación derivada de una base conocida con modificaciones no documentadas puede servir como objeto de análisis reproducible, comparando sus respuestas con las del modelo base original.
@@ -69,7 +69,7 @@ Estimaciones calculadas a partir del recuento de parámetros declarado (13,5 mil
 - GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB puede alojar Q8_0 o Q6_K completos, y Q4_K_M con contexto amplio. Una RTX 4080 o 4070 Ti de 16 GB admite Q5_K_M o Q4_K_M con margen. Tarjetas de 8-12 GB (RTX 3060, 4060, 3080) pueden ejecutar Q4_K_M o Q3_K_M con descarga parcial de capas a CPU, con la consiguiente pérdida de velocidad.
 - GPU de centro de datos: A100 40 GB, A100 80 GB, H100 80 GB y L40S 48 GB permiten FP16/BF16 con lotes grandes. Para servicio multi-usuario con throughput alto, se recomienda A100 80 GB o H100.
 - CPU y memoria de sistema: en modo solo CPU se necesitan al menos 16 GB de RAM para Q4 y 32 GB para Q8, además del espacio en disco correspondiente al fichero GGUF (el repositorio completo son 66,0 GB).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con la API de OpenAI sobre GGUF. Para despliegue gestionado, los endpoints de HuggingFace según la etiqueta declarada. vLLM y TGI están orientados principalmente a safetensors, por lo que su uso con este repositorio no está garantizado.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con la API de OpenAI sobre GGUF. Para despliegue gestionado, los endpoints de Hugging Face según la etiqueta declarada. vLLM y TGI están orientados principalmente a safetensors, por lo que su uso con este repositorio no está garantizado.
 - Latencia y throughput: no disponible. No hay mediciones publicadas. Como referencia orientativa no verificada, una cuantización Q4_K_M de 13,5 mil millones de parámetros en una RTX 4090 suele generar del orden de decenas de tokens por segundo en decodificación, pero este dato no ha sido medido sobre este repositorio concreto.
 
 ## Comparativa con modelos similares
@@ -100,5 +100,5 @@ La comparación directa con la base "Ministral-3-14B" no es posible porque la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOMEHOTMEAL/Ministral-3-14B-Janus-Abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/SOMEHOTMEAL/Ministral-3-14B-Janus-Abliterated-GGUF
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: papers, blogs, repositorios de código ni demostraciones. Los resultados devueltos corresponden a páginas corporativas de Microsoft sin relación con la publicación.

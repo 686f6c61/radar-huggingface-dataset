@@ -79,10 +79,10 @@ Los datos de los modelos alternativos no aparecen en la información proporciona
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MrC4t/act_bi_so_bin7 | ACT (LeRobot), tarea única | 51,7 M | no aplica | Apache-2.0 | HuggingFace Hub |
+| MrC4t/act_bi_so_bin7 | ACT (LeRobot), tarea única | 51,7 M | no aplica | Apache-2.0 | Hugging Face Hub |
 | ACT original (Zhao et al., 2023) | ACT, método de referencia | no disponible | no aplica | no disponible | paper y código públicos |
 | Diffusion Policy (Chi et al., 2023) | Política de difusión para manipulación | no disponible | no aplica | no disponible | paper y código públicos |
-| SmolVLA (HuggingFace) | Política visión-lenguaje-acción | no disponible | no aplica | no disponible | HuggingFace Hub |
+| SmolVLA (Hugging Face) | Política visión-lenguaje-acción | no disponible | no aplica | no disponible | Hugging Face Hub |
 
 Frente a estas alternativas, la diferencia verificable de este checkpoint es su tamaño reducido (51,7 M de parámetros), su licencia Apache-2.0 y su especialización en una sola tarea sobre un robot bimanual concreto, lo que limita su generalización pero reduce drásticamente los requisitos de cómputo.
 
@@ -101,7 +101,7 @@ Frente a estas alternativas, la diferencia verificable de este checkpoint es su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrC4t/act_bi_so_bin7
+- Modelo en Hugging Face: https://huggingface.co/MrC4t/act_bi_so_bin7
 - Dataset de entrenamiento: https://huggingface.co/datasets/MrC4t/bi_so_toy_bin
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=MrC4t/bi_so_toy_bin
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

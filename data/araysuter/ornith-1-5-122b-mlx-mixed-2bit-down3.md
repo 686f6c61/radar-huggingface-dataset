@@ -111,7 +111,7 @@ Las cifras de HumanEval e IFEval corresponden a subconjuntos de 20 y 25 pregunta
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/araysuter/Ornith-1.5-122B-MLX-mixed-2bit-down3
+- Repositorio Hugging Face de este modelo: https://huggingface.co/araysuter/Ornith-1.5-122B-MLX-mixed-2bit-down3
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Variante mixed 2-bit g64 (40,62 GB): https://huggingface.co/araysuter/Ornith-1.5-122B-MLX-mixed-2bit
 - Variante mixed 2-bit grupo 32 (47,87 GB): https://huggingface.co/araysuter/Ornith-1.5-122B-MLX-mixed-2bit-group32

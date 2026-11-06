@@ -74,8 +74,8 @@ El autor valida el arnés de evaluación contra la cifra publicada upstream (`be
 
 | Modelo | Parametros | Naturaleza | Precision de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZeroDegress/NanoJev-bf16 | 596 M | Conversion de precision del checkpoint raiz de NanoJev | bfloat16 (fp32 -> bf16) | no declarada | HuggingFace |
-| C-Tianyu/NanoJev (upstream) | 596 M | Modelo de decision original (replica nano de Jev System One) | fp32 | no declarada en la pagina upstream | HuggingFace |
+| ZeroDegress/NanoJev-bf16 | 596 M | Conversion de precision del checkpoint raiz de NanoJev | bfloat16 (fp32 -> bf16) | no declarada | Hugging Face |
+| C-Tianyu/NanoJev (upstream) | 596 M | Modelo de decision original (replica nano de Jev System One) | fp32 | no declarada en la pagina upstream | Hugging Face |
 | Jev System One (TypeSafe) | no disponible | Sistema de decision de referencia del que NanoJev es una replica nano | no disponible | no disponible | no disponible (el autor declara no estar afiliado a TypeSafe ni a Jev) |
 
 No se han encontrado en la busqueda web modelos comparables adicionales de la misma categoria (modelos de decision con cabezas de distribucion sobre candidatos dinamicos). Las alternativas mas cercanas serian el checkpoint fp32 upstream y el sistema propietario de referencia.
@@ -96,7 +96,7 @@ No se han encontrado en la busqueda web modelos comparables adicionales de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZeroDegress/NanoJev-bf16
+- Repositorio Hugging Face: https://huggingface.co/ZeroDegress/NanoJev-bf16
 - Modelo base upstream: https://huggingface.co/C-Tianyu/NanoJev
 - Codigo upstream (licencia MIT): https://github.com/TianyuCodings/NanoJev
 - Dataset upstream: https://huggingface.co/datasets/C-Tianyu/NanoJev-Data

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ttjustin/data-efficient-learning` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion publicado en HuggingFace bajo el identificador de modelo. La model card lo describe explicitamente como "reading notes and an experiment sketch" sobre aprendizaje eficiente en datos, cuyo artefacto principal es un fichero `review.md`; el autor indica que el repositorio "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado".
+`ttjustin/data-efficient-learning` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion publicado en Hugging Face bajo el identificador de modelo. La model card lo describe explicitamente como "reading notes and an experiment sketch" sobre aprendizaje eficiente en datos, cuyo artefacto principal es un fichero `review.md`; el autor indica que el repositorio "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado".
 
 El repositorio incluye un artefacto en formato safetensors con 49.600 parametros totales, una cifra incompatible con cualquier transformer funcional de proposito general y coherente con un tensor de prueba, un embedding de juguete o un volcado auxiliar del experimento. No hay pipeline declarado, no hay idiomas declarados, no hay resultados y el repositorio ocupa 0,0 GB.
 
@@ -74,7 +74,7 @@ No disponible. No se ha localizado en la informacion proporcionada ningun modelo
 ## Limitaciones y advertencias
 
 - No existe un modelo entrenado: el autor declara que el repositorio no contiene un checkpoint, codigo publicado ni ablaciones completadas.
-- Riesgo de mala interpretacion: el repositorio aparece bajo un identificador de modelo en HuggingFace y con etiquetas como `transformer` o `safetensors`, lo que puede llevar a confundirlo con un modelo desplegable. No lo es.
+- Riesgo de mala interpretacion: el repositorio aparece bajo un identificador de modelo en Hugging Face y con etiquetas como `transformer` o `safetensors`, lo que puede llevar a confundirlo con un modelo desplegable. No lo es.
 - Cero adopcion verificable: 0 descargas y 0 likes en el momento de la consulta, sin comunidad que valide el contenido.
 - Idiomas no declarados; el unico material esta en ingles.
 - Sesgos conocidos: no disponibles, al no haber modelo ni dataset de entrenamiento.
@@ -84,5 +84,5 @@ No disponible. No se ha localizado en la informacion proporcionada ningun modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ttjustin/data-efficient-learning
+- Hugging Face: https://huggingface.co/ttjustin/data-efficient-learning
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web; los resultados devueltos no guardan relacion con el repositorio ni con aprendizaje eficiente en datos.

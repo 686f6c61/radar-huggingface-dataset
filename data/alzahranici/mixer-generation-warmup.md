@@ -2,7 +2,7 @@
 
 ## Resumen
 
-alzahranici/mixer-generation-warmup es un repositorio de HuggingFace publicado por el usuario alzahranici que contiene una implementación funcional de una arquitectura de tipo Mixer orientada a tareas de generación, junto con un checkpoint de inicialización. No se trata de un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es "un checkpoint de inicialización válido para smoke tests" y que no se presenta como un checkpoint con benchmarks. El repositorio prioriza código transparente y pruebas de humo repetibles, y omite deliberadamente cualquier afirmación de rendimiento.
+alzahranici/mixer-generation-warmup es un repositorio de Hugging Face publicado por el usuario alzahranici que contiene una implementación funcional de una arquitectura de tipo Mixer orientada a tareas de generación, junto con un checkpoint de inicialización. No se trata de un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es "un checkpoint de inicialización válido para smoke tests" y que no se presenta como un checkpoint con benchmarks. El repositorio prioriza código transparente y pruebas de humo repetibles, y omite deliberadamente cualquier afirmación de rendimiento.
 
 El dato más relevante para evaluar el artefacto es su tamaño real: 24.832 parámetros totales según los metadatos de safetensors, una cifra que contrasta con la etiqueta "huge" que aparece en la configuración de la arquitectura. Con ese orden de magnitud, el modelo no es utilizable para generación de texto real; su valor está en el código que define la arquitectura (atención flash, fusión bilineal, activación GELU, normalización ScaleNorm) y en servir de plantilla reproducible para experimentos.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha debe leerse como la de un artefacto de investigación y an
 | Formato de pesos | safetensors (`model.safetensors`), acompañado de `model.py`, `config.json` y `training_args.json` |
 | Escala declarada en configuracion | "huge" (no coherente con el recuento real de parametros) |
 | Estado del checkpoint | inicialización sin entrenar |
-| Descargas en HuggingFace | 16 |
+| Descargas en Hugging Face | 16 |
 | Likes | 0 |
 | Tamano del repositorio | 0,0 GB |
 | Fecha de creacion | 2026-10-04 |
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alzahranici/mixer-generation-warmup | 24.832 | no disponible | checkpoint de inicializacion, sin entrenar | MIT | HuggingFace |
-| lwwagner91/mixer-generation-warmup | no disponible | no disponible | no disponible | no disponible | HuggingFace (repositorio con el mismo nombre) |
+| alzahranici/mixer-generation-warmup | 24.832 | no disponible | checkpoint de inicializacion, sin entrenar | MIT | Hugging Face |
+| lwwagner91/mixer-generation-warmup | no disponible | no disponible | no disponible | no disponible | Hugging Face (repositorio con el mismo nombre) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion disponible modelos comparables de la misma categoria (implementaciones Mixer de escala similar con checkpoint publicado y evaluado). Cualquier comparacion con modelos generativos de produccion no seria significativa: existe una diferencia de cuatro a cinco ordenes de magnitud en numero de parametros respecto a modelos como los de la familia de 7.000-8.000 millones de parametros.
@@ -92,6 +92,6 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alzahranici/mixer-generation-warmup
+- Modelo en Hugging Face: https://huggingface.co/alzahranici/mixer-generation-warmup
 - Repositorio con el mismo nombre de otro autor: https://huggingface.co/lwwagner91/mixer-generation-warmup
 - Articulo relacionado sobre generaciones de calentamiento (referencia contextual, no vinculada al modelo): https://arxiv.org/abs/2502.12304

@@ -71,8 +71,8 @@ Los datos de evaluación corresponden a la tabla publicada por el autor. La mét
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-novice-v2-link01 | 0,8B (base) + LoRA | no disponible | Decisión discreta `follow_route` | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | LLM generalista | no disponible en la información | HuggingFace |
+| connectailab-rl-novice-v2-link01 | 0,8B (base) + LoRA | no disponible | Decisión discreta `follow_route` | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | LLM generalista | no disponible en la información | Hugging Face |
 | Cerebro PPO (profesor) | no disponible | no aplica | Decisión discreta `follow_route` | no disponible | Solo dentro del proyecto CONNECT TYCOON |
 
 No se dispone de información sobre otros adaptadores LoRA comparables en la misma tarea ni sobre modelos de decisión de tamaño similar con los que establecer una comparación cuantitativa.
@@ -92,7 +92,7 @@ No se dispone de información sobre otros adaptadores LoRA comparables en la mis
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/lookarooka/connectailab-rl-novice-v2-link01)
+- [Modelo en Hugging Face](https://huggingface.co/lookarooka/connectailab-rl-novice-v2-link01)
 - [Repositorio CONNECT TYCOON (código de entrenamiento)](https://github.com/wonseokjung/connect-tycoon)
 - [Notebook de Colab para entrenamiento](https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb)
 - [Canal de YouTube CONNECT AI LAB](https://www.youtube.com/@CONNECT-AI-LAB)

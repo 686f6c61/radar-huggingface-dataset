@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ImKyungjin/pi0-stackcube-recovery-noise-v2-seed1856-70pct-40ep` es un fine-tuning especializado del modelo de fundación de robótica π₀ (Pi0), desarrollado por Physical Intelligence y adaptado al ecosistema de HuggingFace LeRobot. Se trata de un modelo de tipo Vision-Language-Action (VLA) que combina entradas visuales con instrucciones en lenguaje natural para generar acciones de control robótico. Su entrenamiento se ha realizado sobre el dataset `taewonkoo/stack_cube_recovery_noise_v2_seed1856_70pct_40ep`, orientado a la tarea de apilado de cubos con escenarios de recuperación ante ruido.
+El modelo `ImKyungjin/pi0-stackcube-recovery-noise-v2-seed1856-70pct-40ep` es un fine-tuning especializado del modelo de fundación de robótica π₀ (Pi0), desarrollado por Physical Intelligence y adaptado al ecosistema de Hugging Face LeRobot. Se trata de un modelo de tipo Vision-Language-Action (VLA) que combina entradas visuales con instrucciones en lenguaje natural para generar acciones de control robótico. Su entrenamiento se ha realizado sobre el dataset `taewonkoo/stack_cube_recovery_noise_v2_seed1856_70pct_40ep`, orientado a la tarea de apilado de cubos con escenarios de recuperación ante ruido.
 
-La arquitectura de Pi0 se basa en un transformer que integra un backbone de visión-lenguaje con una cabeza de predicción de acciones, diseñado para ser una política generalista capaz de controlar distintos robots. Esta versión concreta presenta 3.501.372.176 parámetros (aproximadamente 3.500 millones), lo que la sitúa en el rango de modelos VLA de tamaño medio. El modelo está publicado con licencia Apache 2.0 y su peso está en formato safetensors. Aunque no se han publicado benchmarks específicos ni requisitos de hardware, su disponibilidad en el hub de HuggingFace y su integración con LeRobot facilitan su uso para investigación y pruebas en robótica.
+La arquitectura de Pi0 se basa en un transformer que integra un backbone de visión-lenguaje con una cabeza de predicción de acciones, diseñado para ser una política generalista capaz de controlar distintos robots. Esta versión concreta presenta 3.501.372.176 parámetros (aproximadamente 3.500 millones), lo que la sitúa en el rango de modelos VLA de tamaño medio. El modelo está publicado con licencia Apache 2.0 y su peso está en formato safetensors. Aunque no se han publicado benchmarks específicos ni requisitos de hardware, su disponibilidad en el hub de Hugging Face y su integración con LeRobot facilitan su uso para investigación y pruebas en robótica.
 
 ## Especificaciones tecnicas
 
@@ -55,10 +55,10 @@ No se proporcionan requisitos de hardware especificos en la informacion disponib
 
 | Modelo | Parametros | Contexto | Escenario de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ImKyungjin/pi0-stackcube-recovery-noise-v2-seed1856-70pct-40ep | 3.501.372.176 | no disponible | Apilado de cubos con 70% ruido, 40 epocas | Apache 2.0 | HuggingFace |
-| ImKyungjin/pi0-stackcube-recovery-noise-70pct-40ep | no disponible | no disponible | Apilado de cubos con 70% ruido, 40 epocas | Apache 2.0 | HuggingFace |
-| ImKyungjin/pi0-stackcube-recover-noise-10pct-40ep | no disponible | no disponible | Apilado de cubos con 10% ruido, 40 epocas | Apache 2.0 | HuggingFace |
-| Pi0 original de Physical Intelligence | no disponible | no disponible | Preentrenamiento generalista en multiples tareas | no disponible | OpenPI / HuggingFace |
+| ImKyungjin/pi0-stackcube-recovery-noise-v2-seed1856-70pct-40ep | 3.501.372.176 | no disponible | Apilado de cubos con 70% ruido, 40 epocas | Apache 2.0 | Hugging Face |
+| ImKyungjin/pi0-stackcube-recovery-noise-70pct-40ep | no disponible | no disponible | Apilado de cubos con 70% ruido, 40 epocas | Apache 2.0 | Hugging Face |
+| ImKyungjin/pi0-stackcube-recover-noise-10pct-40ep | no disponible | no disponible | Apilado de cubos con 10% ruido, 40 epocas | Apache 2.0 | Hugging Face |
+| Pi0 original de Physical Intelligence | no disponible | no disponible | Preentrenamiento generalista en multiples tareas | no disponible | OpenPI / Hugging Face |
 
 La comparacion se basa en los metadatos publicados, ya que no se dispone de benchmarks numericos para ninguno de estos modelos.
 
@@ -73,7 +73,7 @@ La comparacion se basa en los metadatos publicados, ya que no se dispone de benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-stackcube-recovery-noise-v2-seed1856-70pct-40ep
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-stackcube-recovery-noise-v2-seed1856-70pct-40ep
 - Blog de Physical Intelligence sobre Pi0: https://www.physicalintelligence.company/blog/pi0
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

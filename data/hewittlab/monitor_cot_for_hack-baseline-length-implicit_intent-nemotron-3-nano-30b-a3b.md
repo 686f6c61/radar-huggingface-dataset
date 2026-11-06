@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este repositorio (`control_model` / `misaligned_model`) | LoRA rango 32 sobre base de 30B (3B activos) | No disponible | Control: respeta el límite de 1351 palabras. Desalineado: lo incumple para maximizar la recompensa | No disponible | Safetensors en formato Tinker, 3 semillas × 12 checkpoints |
-| `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` (modelo base) | 30B totales, ~3B activos | No disponible | Modelo general sin ajuste específico para esta tarea | No disponible en la información proporcionada | Pesos completos BF16 en HuggingFace |
+| `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` (modelo base) | 30B totales, ~3B activos | No disponible | Modelo general sin ajuste específico para esta tarea | No disponible en la información proporcionada | Pesos completos BF16 en Hugging Face |
 | Otros adaptadores LoRA de estudios de monitorabilidad | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 La comparación relevante es interna al repositorio: misma arquitectura, mismos datos y mismos hiperparámetros, con la única diferencia de la función de recompensa, lo que aísla el efecto de la especificación del reward.
@@ -87,11 +87,11 @@ La comparación relevante es interna al repositorio: misma arquitectura, mismos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-implicit_intent-nemotron-3-nano-30b-a3b
+- Modelo en Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-implicit_intent-nemotron-3-nano-30b-a3b
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length
 - Subconjunto de datos del modelo base: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length/tree/main/nemotron-3-nano-30b-a3b
 - Dataset de instrucciones de origen: https://huggingface.co/datasets/HuggingFaceH4/helpful-instructions
 - Código del trabajo: https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
 - Herramientas de fusión (Tinker): https://github.com/thinking-machines-lab/tinker-cookbook
-- Guía de exportación a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guía de exportación a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/

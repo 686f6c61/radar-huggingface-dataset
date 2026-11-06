@@ -97,7 +97,7 @@ La model card advierte que, por diferencias en los datos de ajuste fino y en las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlnomad/yat-mmbert-base-embedding-v1
+- Modelo en Hugging Face: https://huggingface.co/mlnomad/yat-mmbert-base-embedding-v1
 - Articulo de release: https://huggingface.co/spaces/mlnomad/yat-mmbert-embedding-blog
 - Conversion a PyTorch: https://huggingface.co/mlnomad/yat-mmbert-base-embedding-v1-pytorch
 - Checkpoint padre: https://huggingface.co/mlnomad/yat-mmbert-base-contrastive-12000

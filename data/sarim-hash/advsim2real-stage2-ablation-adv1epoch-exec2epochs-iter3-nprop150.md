@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| advsim2real-stage2-ablation-adv1epoch-exec2epochs-iter3-nprop150 | Adaptadores LoRA experimentales sobre Qwen/Qwen3.5-4B | Adaptadores de bajo rango; base denominada 4B | Entrenamiento del ejecutor hasta 4096 tokens | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-4B | Modelo base completo | Denominado 4B | No disponible en la informacion proporcionada | No disponible | HuggingFace (revision fijada por el autor) |
+| advsim2real-stage2-ablation-adv1epoch-exec2epochs-iter3-nprop150 | Adaptadores LoRA experimentales sobre Qwen/Qwen3.5-4B | Adaptadores de bajo rango; base denominada 4B | Entrenamiento del ejecutor hasta 4096 tokens | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-4B | Modelo base completo | Denominado 4B | No disponible en la informacion proporcionada | No disponible | Hugging Face (revision fijada por el autor) |
 | Otras variantes de AdVSim2Real Stage 2 | Adaptadores LoRA con inicialización desde Stage 1 | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento ni de especificaciones del modelo base que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sarim-Hash/advsim2real-stage2-ablation-adv1epoch-exec2epochs-iter3-nprop150
+- Modelo en Hugging Face: https://huggingface.co/Sarim-Hash/advsim2real-stage2-ablation-adv1epoch-exec2epochs-iter3-nprop150
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B (revision 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a)
 - Libreria PEFT: https://github.com/huggingface/peft
 - Modelo de mundo WebWorld-14B: no disponible

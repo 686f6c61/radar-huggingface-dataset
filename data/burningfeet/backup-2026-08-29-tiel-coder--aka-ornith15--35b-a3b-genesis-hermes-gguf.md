@@ -4,7 +4,7 @@
 
 El modelo `burningfeet/backup-2026-08-29-Tiel-Coder-.aka.ornith15.-35B-A3B-Genesis-Hermes-GGUF` es una conversión a formato GGUF del modelo base `ornith-ai/Ornith-1.5-35B-A3B`, un modelo de lenguaje de tipo mixture of experts (MoE) con 34.660.610.688 parámetros totales y aproximadamente 3.000 millones de parámetros activos (nomenclatura A3B). El autor, `burningfeet`, ha aplicado un fine-tuning adicional denominado "Genesis-Hermes" que incorpora el dataset `NousResearch/hermes-function-calling-v1`, orientado a mejorar las capacidades de function calling y razonamiento agéntico. El modelo está diseñado para tareas de codificación agéntica (agentic coding) y es eficiente en el uso de tokens, con soporte multimodal (image-text-to-text) según el pipeline declarado.
 
-Este modelo resulta relevante en el ecosistema open source por su combinación de eficiencia (MoE con pocos parámetros activos) y capacidades avanzadas de tool calling, lo que lo hace adecuado para despliegues locales con recursos limitados. Su licencia MIT permite uso comercial sin restricciones, aunque el acceso en HuggingFace está restringido (gated) y requiere aceptar condiciones. Al ser una conversión GGUF, es compatible con llama.cpp, Ollama y otros motores de inferencia locales.
+Este modelo resulta relevante en el ecosistema open source por su combinación de eficiencia (MoE con pocos parámetros activos) y capacidades avanzadas de tool calling, lo que lo hace adecuado para despliegues locales con recursos limitados. Su licencia MIT permite uso comercial sin restricciones, aunque el acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones. Al ser una conversión GGUF, es compatible con llama.cpp, Ollama y otros motores de inferencia locales.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ No se dispone de datos de rendimiento comparativos fiables. El modelo se posicio
 
 ## Limitaciones y advertencias
 
-- Acceso restringido en HuggingFace: requiere aceptar condiciones antes de descargar, lo que puede limitar su adopción en entornos automatizados.
+- Acceso restringido en Hugging Face: requiere aceptar condiciones antes de descargar, lo que puede limitar su adopción en entornos automatizados.
 - Modelo reciente con 0 descargas y 0 likes: no ha sido validado por la comunidad, por lo que su estabilidad y calidad no están contrastadas.
 - Riesgo de alucinación en código: como cualquier modelo de lenguaje, puede generar código sintácticamente correcto pero funcionalmente incorrecto; se recomienda revisión humana.
 - Longitud de contexto no especificada: no se conoce el límite de tokens de entrada, lo que puede afectar a tareas que requieran contextos largos.
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativos fiables. El modelo se posicio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/burningfeet/backup-2026-08-29-Tiel-Coder-.aka.ornith15.-35B-A3B-Genesis-Hermes-GGUF
+- Repositorio Hugging Face: https://huggingface.co/burningfeet/backup-2026-08-29-Tiel-Coder-.aka.ornith15.-35B-A3B-Genesis-Hermes-GGUF
 - Repositorio similar (versión anterior): https://huggingface.co/burningfeet/2026-08-26-.-backup-.-Ornith1.5-35B-A3B-Genesis-Hermes-GGUF
 - Web de Ornith AI: https://ornith.online/
 - Evaluación independiente en GitHub: https://github.com/h00nigan/35b-moe-eval

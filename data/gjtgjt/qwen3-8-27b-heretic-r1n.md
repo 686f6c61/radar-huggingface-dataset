@@ -21,7 +21,7 @@ La relevancia de esta publicacion reside en que aplica el modo PRE (true rank-1)
 | Licencia | Apache-2.0 (heredada del modelo base) |
 | Formato de pesos | safetensors, BF16 fusionados, 12 shards (~51 GB segun la model card) |
 
-Nota: el repositorio en HuggingFace muestra un tamano de 7.4 GB, lo que contradice los ~51 GB declarados en la model card. Es posible que la subida este incompleta o que los pesos no se hayan publicado integramente.
+Nota: el repositorio en Hugging Face muestra un tamano de 7.4 GB, lo que contradice los ~51 GB declarados en la model card. Es posible que la subida este incompleta o que los pesos no se hayan publicado integramente.
 
 ## Arquitectura y entrenamiento
 
@@ -88,14 +88,14 @@ La comparacion directa con otras variantes ablacionadas del mismo base no esta d
 - La ablacion se aplico solo a las proyecciones de salida del modelo de lenguaje; el vision tower queda intacto, lo que puede generar inconsistencias entre la comprension multimodal y la generacion de texto.
 - Solo se soportan ingles y chino; no hay garantias de calidad en otros idiomas.
 - Requiere una version de Transformers 5.15 o superior con soporte para `qwen3_5`; versiones anteriores no podran cargar el modelo.
-- Discrepancia entre el tamano del repositorio en HuggingFace (7.4 GB) y los ~51 GB declarados en la model card: es posible que la subida de pesos este incompleta.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace; es una publicacion comunitaria sin validacion externa ni soporte oficial.
+- Discrepancia entre el tamano del repositorio en Hugging Face (7.4 GB) y los ~51 GB declarados en la model card: es posible que la subida de pesos este incompleta.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face; es una publicacion comunitaria sin validacion externa ni soporte oficial.
 - La ablacion direccional sin entrenamiento puede introducir inestabilidades en la generacion, especialmente en modos de muestreo agresivos o con presencia de prompts adversariales.
 - La licencia Apache-2.0 permite uso comercial, pero el modelo base y la tecnica Heretic tienen sus propias condiciones que conviene revisar antes de un despliegue en produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gjtgjt/Qwen3.8-27B-heretic-r1n
+- Repositorio Hugging Face: https://huggingface.co/gjtgjt/Qwen3.8-27B-heretic-r1n
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de Heretic: https://github.com/p-e-w/heretic
 - Articulo de referencia (Arditi et al., 2024): https://arxiv.org/abs/2406.11717

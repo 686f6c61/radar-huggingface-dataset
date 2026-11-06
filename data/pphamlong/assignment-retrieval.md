@@ -73,4 +73,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: pphamlong/assignment-retrieval](https://huggingface.co/pphamlong/assignment-retrieval)
+- [Hugging Face: pphamlong/assignment-retrieval](https://huggingface.co/pphamlong/assignment-retrieval)

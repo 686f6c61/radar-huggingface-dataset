@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`j0no12/nero-optimizer-work-simow-lr0p001` es un checkpoint experimental de investigación publicado en HuggingFace por el usuario j0no12 dentro de un barrido comparativo de optimizadores denominado Nero Optimizer Work. No es un modelo de lenguaje destinado a uso general: es el artefacto final de la rama o brazo correspondiente al optimizador SimOW con una tasa de aprendizaje de 0,001. Su propósito declarado es hacer reproducible la comparación entre optimizadores, no ofrecer capacidades de generación útiles.
+`j0no12/nero-optimizer-work-simow-lr0p001` es un checkpoint experimental de investigación publicado en Hugging Face por el usuario j0no12 dentro de un barrido comparativo de optimizadores denominado Nero Optimizer Work. No es un modelo de lenguaje destinado a uso general: es el artefacto final de la rama o brazo correspondiente al optimizador SimOW con una tasa de aprendizaje de 0,001. Su propósito declarado es hacer reproducible la comparación entre optimizadores, no ofrecer capacidades de generación útiles.
 
 Técnicamente se trata de un decoder transformer denso de tamaño mínimo: aproximadamente 999.680 parámetros almacenados, 6 bloques, un flujo residual de 128 dimensiones, cabezas de atención de 32 dimensiones, un MLP con compuerta de 148 dimensiones y un vocabulario de solo 2.048 tokens. Se entrenó durante 500 millones de tokens con una longitud de contexto de 128 tokens y lotes de 32 ejemplos, usando Apple MLX como backend.
 
@@ -130,6 +130,6 @@ Cualquier comparacion de calidad entre brazos debe hacerse, segun el autor, con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simow-lr0p001
+- Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simow-lr0p001
 
 No se encontraron enlaces relevantes en la busqueda web. Los resultados devueltos correspondian a paginas de contenido religioso en arabe sin ninguna relacion con el modelo, por lo que se descartan. No se dispone de paper, blog, repositorio de codigo ni demo asociados al modelo en la informacion proporcionada.

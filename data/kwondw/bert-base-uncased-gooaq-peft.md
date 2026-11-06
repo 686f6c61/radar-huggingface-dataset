@@ -88,7 +88,7 @@ No se dispone de informacion sobre modelos comparables en la misma tarea (fine-t
 
 ## Enlaces
 
-- [HuggingFace - kwondw/bert-base-uncased-gooaq-peft](https://huggingface.co/kwondw/bert-base-uncased-gooaq-peft)
+- [Hugging Face - kwondw/bert-base-uncased-gooaq-peft](https://huggingface.co/kwondw/bert-base-uncased-gooaq-peft)
 - [Modelo base: google-bert/bert-base-uncased](https://huggingface.co/google-bert/bert-base-uncased)
 - [Paper BERT (arxiv:1908.10084)](https://arxiv.org/abs/1908.10084)
 - [Paper GooAQ (arxiv:2101.06983)](https://arxiv.org/abs/2101.06983)

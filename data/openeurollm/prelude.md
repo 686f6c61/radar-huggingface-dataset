@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openeurollm/prelude
+- Repositorio Hugging Face: https://huggingface.co/openeurollm/prelude
 - Seguimiento del progreso de OpenEuroLLM: https://huggingface.co/spaces/openeurollm/oellm_progress
 - Repositorio de recolección de datos de entrenamiento: https://github.com/OpenEuroLLM/training-data-collection/blob/main/baby/README.md
 - Desglose de tokens por lengua: https://github.com/OpenEuroLLM/training-data-collection/blob/main/baby/README.md#per-language-breakdown-to-be-reviewed

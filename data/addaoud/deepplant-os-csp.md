@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepPlant-OS-CSP es un modelo de aprendizaje profundo publicado en HuggingFace por el usuario Addaoud, orientado a genómica vegetal y genómica regulatoria. Con 238.305.118 parámetros (aproximadamente 238 millones) y un tamaño de repositorio de 1,0 GB, se distribuye en formato safetensors mediante la integración `PyTorchModelHubMixin` de HuggingFace Hub, lo que permite cargarlo con una API de alto nivel desde Python. La licencia es MIT, lo que facilita su uso comercial y su modificación.
+DeepPlant-OS-CSP es un modelo de aprendizaje profundo publicado en Hugging Face por el usuario Addaoud, orientado a genómica vegetal y genómica regulatoria. Con 238.305.118 parámetros (aproximadamente 238 millones) y un tamaño de repositorio de 1,0 GB, se distribuye en formato safetensors mediante la integración `PyTorchModelHubMixin` de Hugging Face Hub, lo que permite cargarlo con una API de alto nivel desde Python. La licencia es MIT, lo que facilita su uso comercial y su modificación.
 
-El modelo no es un modelo de lenguaje generativo: su `pipeline_tag` es `other` y sus etiquetas apuntan a bioinformática, genómica vegetal y genómica regulatoria. Por el nombre (OS-CSP) y el contexto de genómica regulatoria, cabe interpretar que está diseñado para tareas de predicción sobre secuencias reguladoras o elementos de unión, aunque la model card no documenta la arquitectura, los datos de entrenamiento ni las métricas de evaluación. La información pública disponible es mínima: la model card es prácticamente el texto autogenerado por la integración de HuggingFace Hub, con referencias a código, paper y documentación marcadas como "More Information Needed".
+El modelo no es un modelo de lenguaje generativo: su `pipeline_tag` es `other` y sus etiquetas apuntan a bioinformática, genómica vegetal y genómica regulatoria. Por el nombre (OS-CSP) y el contexto de genómica regulatoria, cabe interpretar que está diseñado para tareas de predicción sobre secuencias reguladoras o elementos de unión, aunque la model card no documenta la arquitectura, los datos de entrenamiento ni las métricas de evaluación. La información pública disponible es mínima: la model card es prácticamente el texto autogenerado por la integración de Hugging Face Hub, con referencias a código, paper y documentación marcadas como "More Information Needed".
 
 Su relevancia actual es limitada pero concreta: ofrece un checkpoint de tamaño medio (238 M de parámetros) para experimentación en genómica computacional de plantas, con licencia permisiva y pesos en safetensors. No obstante, la ausencia de documentación técnica y de benchmarks hace que deba tratarse como un artefacto de investigación sin garantías de reproducibilidad ni de rendimiento validado.
 
@@ -38,7 +38,7 @@ Tampoco hay información sobre el corpus de entrenamiento: no se indica el núme
 
 - Predicción sobre genómica vegetal y genómica regulatoria: las etiquetas del repositorio indican que el modelo está orientado a tareas de análisis de elementos reguladores en genomas de plantas, aunque no se detalla la tarea exacta (clasificación de secuencias, predicción de accesibilidad, identificación de sitios de unión, etc.).
 - Carga mediante `PyTorchModelHubMixin`: el modelo se puede instanciar y cargar desde el Hub con la API de mixins de `huggingface_hub`, lo que facilita su integración en pipelines de PyTorch.
-- Compatibilidad con el ecosistema HuggingFace: al estar en safetensors y usar `model_hub_mixin`, se integra con las herramientas estándar de descarga y versionado del Hub.
+- Compatibilidad con el ecosistema Hugging Face: al estar en safetensors y usar `model_hub_mixin`, se integra con las herramientas estándar de descarga y versionado del Hub.
 - Generación de texto: no documentada; el pipeline `other` y el dominio biológico sugieren que no es un modelo generativo de lenguaje.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -86,7 +86,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Addaoud/DeepPlant-OS-CSP
+- Modelo en Hugging Face: https://huggingface.co/Addaoud/DeepPlant-OS-CSP
 - Repositorio de código referenciado en la model card (plantilla sin completar): https://huggingface.co/your-username/deepplant
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible

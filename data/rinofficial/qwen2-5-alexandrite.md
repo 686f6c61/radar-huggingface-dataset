@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RinOfficial/Qwen2.5-Alexandrite es una distribucion del modelo Qwen2.5-Coder-7B-Instruct en formato MLX y cuantizado a 4 bits, publicada por el usuario RinOfficial. Su model card es minima: se limita a declarar los metadatos de HuggingFace (idioma, licencia, pipeline y etiquetas), sin describir ningun proceso adicional de entrenamiento, ajuste fino ni metodologia de conversion. Los pesos declarados en safetensors suman 7.615.616.512 parametros y el repositorio ocupa 4,3 GB, coherente con una cuantizacion de 4 bits orientada a ejecucion en hardware Apple Silicon.
+RinOfficial/Qwen2.5-Alexandrite es una distribucion del modelo Qwen2.5-Coder-7B-Instruct en formato MLX y cuantizado a 4 bits, publicada por el usuario RinOfficial. Su model card es minima: se limita a declarar los metadatos de Hugging Face (idioma, licencia, pipeline y etiquetas), sin describir ningun proceso adicional de entrenamiento, ajuste fino ni metodologia de conversion. Los pesos declarados en safetensors suman 7.615.616.512 parametros y el repositorio ocupa 4,3 GB, coherente con una cuantizacion de 4 bits orientada a ejecucion en hardware Apple Silicon.
 
 La relevancia practica del modelo esta en su formato: la libreria `mlx` y la etiqueta `mlx` indican que esta pensado para el framework MLX de Apple, lo que permite ejecutar un modelo de codigo y chat de ~7,6 B de parametros en memoria unificada de equipos Mac con chip de la serie M, sin depender de CUDA. Para desarrolladores que trabajan en macOS y necesitan un asistente de codigo local, este tipo de empaquetado reduce la friccion de despliegue respecto a las versiones en safetensors completos o GGUF.
 
@@ -89,7 +89,7 @@ No se dispone de datos de contexto, benchmarks ni cifras de adopcion para las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RinOfficial/Qwen2.5-Alexandrite
+- Modelo en Hugging Face: https://huggingface.co/RinOfficial/Qwen2.5-Alexandrite
 - Modelo base declarado: https://huggingface.co/mlx-community/Qwen2.5-Coder-7B-Instruct-4bit
 - Licencia referenciada en la model card: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/main/LICENSE
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

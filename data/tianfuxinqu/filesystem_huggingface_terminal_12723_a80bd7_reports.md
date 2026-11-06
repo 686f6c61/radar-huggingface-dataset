@@ -4,7 +4,7 @@
 
 El repositorio `TianfuXinqu/filesystem_huggingface_terminal_12723_a80bd7_reports` no es un modelo de inteligencia artificial, sino un registro central de auditoría de gobernanza de modelos (Model Governance Audit Registry). Fue creado por el usuario TianfuXinqu en agosto de 2026 como parte de una campaña denominada `filesystem_huggingface_terminal_12723`. Su propósito es albergar el listado de repositorios auditados en un archivo `registry.json` y publicar el informe consolidado de auditoría en `governance_audit_report.csv`.
 
-No se trata de un modelo con pesos, arquitectura ni capacidades de inferencia. Es un repositorio de metadatos y datos estructurados orientado a procesos de gobernanza y cumplimiento dentro del ecosistema de HuggingFace. La información técnica disponible es mínima y no permite evaluarlo como un modelo de aprendizaje automático.
+No se trata de un modelo con pesos, arquitectura ni capacidades de inferencia. Es un repositorio de metadatos y datos estructurados orientado a procesos de gobernanza y cumplimiento dentro del ecosistema de Hugging Face. La información técnica disponible es mínima y no permite evaluarlo como un modelo de aprendizaje automático.
 
 ## Especificaciones tecnicas
 
@@ -26,12 +26,12 @@ No aplica. Este repositorio no contiene un modelo entrenado ni una arquitectura 
 ## Capacidades
 
 - No es un modelo de IA y no ofrece capacidades de generacion de texto, razonamiento, codigo, vision ni ninguna otra tarea de inferencia.
-- Funciona como un contenedor de datos estructurados para procesos de auditoria y gobernanza de modelos en HuggingFace.
+- Funciona como un contenedor de datos estructurados para procesos de auditoria y gobernanza de modelos en Hugging Face.
 - No soporta tool calling, agentes, multilingueismo ni modos especiales de ejecucion.
 
 ## Casos de uso
 
-Dado que no es un modelo, los casos de uso se limitan al ambito de la gobernanza de repositorios en HuggingFace:
+Dado que no es un modelo, los casos de uso se limitan al ambito de la gobernanza de repositorios en Hugging Face:
 
 - Registro centralizado de modelos auditados: permite llevar un inventario de repositorios que han pasado por un proceso de revision de gobernanza, consultable mediante el fichero `registry.json`.
 - Publicacion de informes de auditoria: el archivo `governance_audit_report.csv` sirve para difundir resultados consolidados de revisiones, facilitando la trazabilidad de decisiones de cumplimiento.
@@ -63,12 +63,12 @@ No disponible. No existe informacion sobre modelos comparables, ya que este repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_a80bd7_reports
-- No se han encontrado papers, blogs, repositorios de codigo ni demos relacionados en la busqueda web. Los resultados adicionales de HuggingFace pertenecen a otros repositorios del mismo usuario con nombres similares (por ejemplo, `filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest`), pero no aportan informacion relevante sobre este registro.</think>## Resumen
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_a80bd7_reports
+- No se han encontrado papers, blogs, repositorios de codigo ni demos relacionados en la busqueda web. Los resultados adicionales de Hugging Face pertenecen a otros repositorios del mismo usuario con nombres similares (por ejemplo, `filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest`), pero no aportan informacion relevante sobre este registro.</think>## Resumen
 
 El repositorio `TianfuXinqu/filesystem_huggingface_terminal_12723_a80bd7_reports` no es un modelo de inteligencia artificial, sino un registro centralizado de auditoría de gobernanza de modelos (Model Governance Audit Registry). Fue creado por el usuario TianfuXinqu el 23 de agosto de 2026 como parte de una campaña denominada `filesystem_huggingface_terminal_12723`. Su propósito declarado es servir como punto central para el inventario de repositorios auditados, almacenado en `registry.json`, y para la publicación del informe consolidado de auditoría en `governance_audit_report.csv`.
 
-No contiene pesos, arquitectura, ni capacidades de inferencia. Se trata de un repositorio de datos estructurados orientado a procesos de gobernanza y cumplimiento dentro del ecosistema de HuggingFace. La información técnica disponible es mínima y no permite evaluarlo como un modelo de aprendizaje automático. Por tanto, esta ficha se limita a describir su naturaleza como contenedor de metadatos y a señalar las carencias de información.
+No contiene pesos, arquitectura, ni capacidades de inferencia. Se trata de un repositorio de datos estructurados orientado a procesos de gobernanza y cumplimiento dentro del ecosistema de Hugging Face. La información técnica disponible es mínima y no permite evaluarlo como un modelo de aprendizaje automático. Por tanto, esta ficha se limita a describir su naturaleza como contenedor de metadatos y a señalar las carencias de información.
 
 ## Especificaciones tecnicas
 
@@ -90,13 +90,13 @@ No aplica. Este repositorio no contiene un modelo entrenado ni una arquitectura 
 ## Capacidades
 
 - No es un modelo de IA y no ofrece capacidades de generacion de texto, razonamiento, codigo, vision, audio ni ninguna otra tarea de inferencia.
-- Funciona como contenedor de datos estructurados para procesos de auditoria y cumplimiento de modelos en HuggingFace.
+- Funciona como contenedor de datos estructurados para procesos de auditoria y cumplimiento de modelos en Hugging Face.
 - No soporta tool calling, function calling, agentes, ni razonamiento multi-paso.
 - No dispone de capacidades multilingues ni de modos especiales como thinking mode o vision.
 
 ## Casos de uso
 
-Dado que no es un modelo, los casos de uso se limitan al ambito de la gobernanza de repositorios en HuggingFace:
+Dado que no es un modelo, los casos de uso se limitan al ambito de la gobernanza de repositorios en Hugging Face:
 
 - Inventario centralizado de modelos auditados: un equipo de gobernanza puede consultar `registry.json` para obtener la lista de repositorios que han pasado por un proceso de revision, facilitando la trazabilidad.
 - Publicacion de informes de auditoria: `governance_audit_report.csv` permite difundir resultados consolidados de revisiones, ayudando a documentar el estado de cumplimiento de cada repositorio.
@@ -128,5 +128,5 @@ No disponible. No existe informacion de modelos comparables, ya que este reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_a80bd7_reports
-- No se han encontrado papers, blogs, repos de codigo ni demos adicionales en la busqueda web. Otros repositorios del mismo usuario, como `TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest` o `TianfuXinqu/filesystem_huggingface_terminal_playwright_with_chunk_5104_8dde2376_release_notes`, aparecen en HuggingFace pero no aportan informacion relevante sobre este registro de auditoria.
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_a80bd7_reports
+- No se han encontrado papers, blogs, repos de codigo ni demos adicionales en la busqueda web. Otros repositorios del mismo usuario, como `TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest` o `TianfuXinqu/filesystem_huggingface_terminal_playwright_with_chunk_5104_8dde2376_release_notes`, aparecen en Hugging Face pero no aportan informacion relevante sobre este registro de auditoria.

@@ -81,9 +81,9 @@ Memoria en GPU de las capas del modelo de lenguaje: 3306 MB (AWQ) frente a 12446
 
 | Modelo | Parametros | Cuantizacion | Contexto | Rendimiento (WER LibriSpeech dev-clean) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM | 8,33 B | INT4 AWQ W4A16 asimetrico | No disponible | 2,53 % (INT4 nativo), 2,47 % (desempaquetado a PyTorch) | MIT | HuggingFace, 13 descargas, 0 likes |
-| microsoft/VibeVoice-ASR-Streaming-7B (BF16) | No disponible | BF16 | No disponible | 2,72 % (PyTorch), 2,79 % (vibevoice.c) | No disponible en esta ficha | HuggingFace |
-| Ar4ikov/VibeVoice-ASR-AWQ-W4A16-ASYM | No disponible | INT4 AWQ W4A16 asimetrico | No disponible | No disponible | No disponible en esta ficha | HuggingFace |
+| Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM | 8,33 B | INT4 AWQ W4A16 asimetrico | No disponible | 2,53 % (INT4 nativo), 2,47 % (desempaquetado a PyTorch) | MIT | Hugging Face, 13 descargas, 0 likes |
+| microsoft/VibeVoice-ASR-Streaming-7B (BF16) | No disponible | BF16 | No disponible | 2,72 % (PyTorch), 2,79 % (vibevoice.c) | No disponible en esta ficha | Hugging Face |
+| Ar4ikov/VibeVoice-ASR-AWQ-W4A16-ASYM | No disponible | INT4 AWQ W4A16 asimetrico | No disponible | No disponible | No disponible en esta ficha | Hugging Face |
 
 No se dispone de datos comparativos con modelos ASR de otra familia (por ejemplo, Whisper) dentro de la informacion proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos con modelos ASR de otra familia (por ejemplo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM
+- Modelo en Hugging Face: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM
 - Modelo base: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B
 - Coleccion VibeVoice-ASR Quantized: https://huggingface.co/collections/Ar4ikov/vibevoice-asr-quantized
 - Variante no streaming del mismo autor: https://huggingface.co/Ar4ikov/VibeVoice-ASR-AWQ-W4A16-ASYM

@@ -86,7 +86,7 @@ Datos adicionales aportados en la model card: SWE-bench Verified mini pasó de 2
 
 | Modelo | Parámetros | Contexto | Código / agentes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Agens Volundr 32B v1 | 32,7 B (denso, híbrido lineal+sparse) | 131K (hasta 262K en Engine-16GB) | LiveCodeBench v6 67,9; SWE-bench 54,0; τ²-bench 76,7 | Apache 2.0 | Pesos en HuggingFace; runtime Agens Engine (MIT) |
+| Agens Volundr 32B v1 | 32,7 B (denso, híbrido lineal+sparse) | 131K (hasta 262K en Engine-16GB) | LiveCodeBench v6 67,9; SWE-bench 54,0; τ²-bench 76,7 | Apache 2.0 | Pesos en Hugging Face; runtime Agens Engine (MIT) |
 | Agens Volundr 32B Preview | 32,7 B | Igual que v1 | LiveCodeBench v6 63,4; SWE-bench 44,0 | Apache 2.0 | Checkpoint previo (paso 1.000) |
 | Qwen3.8-27B | 27 B aprox. (dato no detallado) | no disponible | LiveCodeBench v6 59,5; HumanEval 77,4; SWE-bench 58,0 | no disponible | Referenciado en la model card |
 | Agens Pilot | no disponible | no disponible | LiveCodeBench v6 60,3; HumanEval 80,5; SWE-bench 64,0 | no disponible | Modelo de Blockway citado en la comparativa |
@@ -108,7 +108,7 @@ Lectura de la tabla: Volundr v1 gana en código competitivo (+8,4 sobre Qwen3.8-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blockway/Agens-Volundr-32B-v1
+- Modelo en Hugging Face: https://huggingface.co/Blockway/Agens-Volundr-32B-v1
 - Sitio de Blockway: https://blockway.io/
 - Los resultados de búsqueda web disponibles apuntan a servicios de proxy homónimos sin relación con el modelo: https://www.blockaway.net/ , https://www.blockaway.io/
 - Paper, blog técnico, repositorio del drafter DFlash2 y demo: no disponible en la información proporcionada.

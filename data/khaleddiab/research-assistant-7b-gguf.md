@@ -84,7 +84,7 @@ La comparativa se basa en caracteristicas publicas de los modelos alternativos; 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khaleddiab/research-assistant-7b-GGUF
+- Hugging Face: https://huggingface.co/khaleddiab/research-assistant-7b-GGUF
 - Unsloth (herramienta de ajuste fino y conversion): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - llama.cpp: https://github.com/ggml-org/llama.cpp

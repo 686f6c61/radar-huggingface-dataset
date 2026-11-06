@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dheerajvofficial/geoalert-nowcaster-api`, publicado en HuggingFace el 15 de septiembre de 2026 por el usuario `dheerajvofficial`, se presenta bajo licencia MIT y con la etiqueta de región `us`. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card contiene unicamente el bloque de metadatos YAML con la licencia, sin ningun apartado descriptivo, tecnico o de uso. No se declara pipeline, idiomas soportados, arquitectura, tamano ni contexto.
+El repositorio `dheerajvofficial/geoalert-nowcaster-api`, publicado en Hugging Face el 15 de septiembre de 2026 por el usuario `dheerajvofficial`, se presenta bajo licencia MIT y con la etiqueta de región `us`. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card contiene unicamente el bloque de metadatos YAML con la licencia, sin ningun apartado descriptivo, tecnico o de uso. No se declara pipeline, idiomas soportados, arquitectura, tamano ni contexto.
 
 La ausencia total de documentacion impide confirmar que se trate siquiera de un modelo de aprendizaje automatico con pesos publicados: el sufijo `api` en el identificador y la falta de tarea asignada en la plataforma sugieren que podria tratarse de un contenedor de servicio, un endpoint o un stub de proyecto, pero esta interpretacion no esta respaldada por ningun dato verificable del autor. Tampoco hay ficheros ni formatos de pesos documentados en la informacion disponible.
 
@@ -29,7 +29,7 @@ No consta que el repositorio incluya pesos, checkpoints, tokenizador, configurac
 
 ## Capacidades
 
-- No se puede verificar ninguna capacidad funcional del modelo: la model card esta vacia y no se declara tarea (`pipeline`) en HuggingFace.
+- No se puede verificar ninguna capacidad funcional del modelo: la model card esta vacia y no se declara tarea (`pipeline`) en Hugging Face.
 - No hay evidencia de soporte de generacion de texto, razonamiento, codigo, matematicas o vision.
 - No hay evidencia de soporte de tool calling ni function calling.
 - No hay evidencia de soporte de agentes o razonamiento multi-paso.
@@ -79,6 +79,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dheerajvofficial/geoalert-nowcaster-api
-- Pagina del autor en HuggingFace: https://huggingface.co/dheerajvofficial
+- Repositorio en Hugging Face: https://huggingface.co/dheerajvofficial/geoalert-nowcaster-api
+- Pagina del autor en Hugging Face: https://huggingface.co/dheerajvofficial
 - Paper, blog, repositorio de codigo, demo o documentacion adicional: no disponible (la busqueda web no devolvio ningun recurso relacionado con el proyecto).

@@ -32,7 +32,7 @@ No hay información sobre datos de entrenamiento: el repositorio no menciona nin
 - No soporta tool calling, razonamiento multi-paso, ni generación de texto: es un modelo de visión puro.
 - No hay capacidades multilingües ni de procesamiento de lenguaje.
 - El código incluye un ejemplo ejecutable (`python train.py --help`) para iniciar un entrenamiento de prueba.
-- Al ser una implementación personalizada, no es compatible con las API genéricas de HuggingFace sin un adaptador explícito.
+- Al ser una implementación personalizada, no es compatible con las API genéricas de Hugging Face sin un adaptador explícito.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ No disponible. No existen modelos comparables con tan solo 33.088 parámetros y 
 
 - El checkpoint no ha sido entrenado: los pesos son de inicialización y no producen representaciones útiles para retrieval.
 - No ha sido auditado para robustez, equidad ni transferencia de dominio.
-- La implementación es experimental y no compatible con las API estándar de HuggingFace sin un adaptador.
+- La implementación es experimental y no compatible con las API estándar de Hugging Face sin un adaptador.
 - No hay datos de rendimiento ni benchmarks publicados.
 - La licencia Apache-2.0 permite uso comercial, pero el modelo en sí no sirve para producción sin entrenamiento.
 - Al usar datasets externos (como Flickr30k), hay que revisar los términos de esos datos por separado, tal como advierte la model card.

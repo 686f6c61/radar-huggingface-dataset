@@ -92,6 +92,6 @@ La comparación relevante es estructural: este checkpoint reduce capas, anchura,
 
 ## Enlaces
 
-- [HuggingFace: yujiepan/deepseek-v4.1-flash-tiny-random](https://huggingface.co/yujiepan/deepseek-v4.1-flash-tiny-random)
+- [Hugging Face: yujiepan/deepseek-v4.1-flash-tiny-random](https://huggingface.co/yujiepan/deepseek-v4.1-flash-tiny-random)
 - [Modelo base: deepseek-ai/DeepSeek-V4.1-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash)
 - [Implementación de referencia: deepseek-ai/DeepSeek-V4.1-Flash-1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)

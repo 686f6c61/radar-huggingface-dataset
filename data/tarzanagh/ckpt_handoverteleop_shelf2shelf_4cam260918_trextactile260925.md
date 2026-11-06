@@ -78,8 +78,8 @@ No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K u similares) en la 
 
 | Modelo | Parametros | Contexto | Tacto | Error manos (L/R) | Error posicion (L/R) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| T-Rex + tacto (este checkpoint) | no disponible (backbone Qwen3-VL-2B) | no disponible | Sí (30-D + VQ-VAE por dedo) | 0,0338 / 0,0282 rad | 1,28 / 1,16 cm | other | HuggingFace, 0 descargas |
-| GR00T-N1.7-3B (sin tacto) | 3B (según nombre) | no disponible | No | 0,0148 / 0,0117 rad | 1,30 / 1,22 cm | other | HuggingFace (checkpoint del mismo autor) |
+| T-Rex + tacto (este checkpoint) | no disponible (backbone Qwen3-VL-2B) | no disponible | Sí (30-D + VQ-VAE por dedo) | 0,0338 / 0,0282 rad | 1,28 / 1,16 cm | other | Hugging Face, 0 descargas |
+| GR00T-N1.7-3B (sin tacto) | 3B (según nombre) | no disponible | No | 0,0148 / 0,0117 rad | 1,30 / 1,22 cm | other | Hugging Face (checkpoint del mismo autor) |
 
 El checkpoint relacionado `ckpt_handoverteleop_shelf2shelf_4cam260918_gr00t3b260920` corresponde a la variante GR00T-N1.7-3B de la misma tarea y split, y es la alternativa de comparación directa. No se dispone de datos de otros modelos comparables en la información proporcionada.
 
@@ -97,7 +97,7 @@ El checkpoint relacionado `ckpt_handoverteleop_shelf2shelf_4cam260918_gr00t3b260
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_trextactile260925
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_trextactile260925
 - Checkpoint relacionado GR00T-N1.7-3B, misma tarea y split: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_gr00t3b260920
 - Checkpoint relacionado psspteleop pickfromscale: https://huggingface.co/tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816
 - Página del autor: https://tarzanagh.github.io/

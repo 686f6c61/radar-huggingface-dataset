@@ -90,8 +90,8 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imagingforgood/rfdetr-seg-nano-coco-onnx
-- Modelo base en HuggingFace: https://huggingface.co/Roboflow/rf-detr-seg-nano
+- Repositorio Hugging Face: https://huggingface.co/imagingforgood/rfdetr-seg-nano-coco-onnx
+- Modelo base en Hugging Face: https://huggingface.co/Roboflow/rf-detr-seg-nano
 - Código de Roboflow: https://github.com/roboflow/rf-detr
 - Licencia original: https://github.com/roboflow/rf-detr/blob/develop/LICENSE
 - Proyecto browser-perception: https://imagingforgood.github.io/browser-perception/

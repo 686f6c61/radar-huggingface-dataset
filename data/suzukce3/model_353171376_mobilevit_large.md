@@ -66,7 +66,7 @@ No se dispone de informacion sobre modelos comparables especificos. La arquitect
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/suzukce3/model_353171376_mobilevit_large
-- Documentacion de MobileViT en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
-- Paper original "MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer": https://arxiv.org/abs/2110.02178 (enlace a la referencia del paper, aunque no se incluye en la busqueda, es la referencia canonica de la arquitectura). Nota: la busqueda no proporciona el enlace directo, pero se menciona el paper en la documentacion de HuggingFace.
+- Repositorio Hugging Face: https://huggingface.co/suzukce3/model_353171376_mobilevit_large
+- Documentacion de MobileViT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
+- Paper original "MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer": https://arxiv.org/abs/2110.02178 (enlace a la referencia del paper, aunque no se incluye en la busqueda, es la referencia canonica de la arquitectura). Nota: la busqueda no proporciona el enlace directo, pero se menciona el paper en la documentacion de Hugging Face.
 - Repositorio GitHub de MobileViT (no oficial): https://github.com/yangyucheng000/MobileViT (encontrado en la busqueda).

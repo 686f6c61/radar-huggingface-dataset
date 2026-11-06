@@ -6,7 +6,7 @@ NanoAvatar es un modelo de generación de vídeo de avatar parlante (talking-hea
 
 La propuesta diferencial es el rendimiento en tiempo real sobre hardware móvil: según la model card, alcanza 39 FPS con 115 ms de latencia al primer fotograma en un Snapdragon 8 Gen 3, y 41 FPS con 103 ms en la variante Lite, con un consumo de memoria en torno a 700-834 MiB. En una RTX 4090 la versión cuantizada llega a 333 FPS con 18 ms al primer fotograma. Además, admite generación en streaming: con un LLM y un TTS también en streaming, el avatar empieza a hablar en aproximadamente 0,3 segundos sin esperar a que el audio esté completo.
 
-El repositorio de HuggingFace ocupa 0,4 GB y contiene los pesos compilados para Android (QNN/HTP), la versión cuantizada para CUDA y, según la model card, una versión de precisión completa marcada como "come soon". La licencia es restrictiva: el modelo de lip-sync se distribuye bajo CC BY-NC 4.0 (uso no comercial), mientras que el codificador HuBERT conserva la licencia MIT upstream. El uso comercial requiere licencia aparte.
+El repositorio de Hugging Face ocupa 0,4 GB y contiene los pesos compilados para Android (QNN/HTP), la versión cuantizada para CUDA y, según la model card, una versión de precisión completa marcada como "come soon". La licencia es restrictiva: el modelo de lip-sync se distribuye bajo CC BY-NC 4.0 (uso no comercial), mientras que el codificador HuBERT conserva la licencia MIT upstream. El uso comercial requiere licencia aparte.
 
 ## Especificaciones técnicas
 
@@ -84,11 +84,11 @@ No se dispone de datos de benchmarks comparativos con otros modelos de talking-h
 - La model card no documenta sesgos, tasas de alucinación visual ni evaluación de calidad (FID, sincronización labial objetiva); no hay datos para valorar estos riesgos.
 - Riesgo de uso indebido en la suplantación de identidad mediante avatares parlantes; la licencia no comercial y la atribución son las únicas salvaguardas documentadas.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la versión de precisión completa figura como "come soon", por lo que el ecosistema y la validación por terceros son aún incipientes.
-- El identificador del repositorio en HuggingFace (shakko010203/NanoAvatar) difiere del usado en los enlaces de la model card (wpydcr/NanoAvatar), lo que puede provocar confusión al descargar artefactos.
+- El identificador del repositorio en Hugging Face (shakko010203/NanoAvatar) difiere del usado en los enlaces de la model card (wpydcr/NanoAvatar), lo que puede provocar confusión al descargar artefactos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shakko010203/NanoAvatar
+- Hugging Face: https://huggingface.co/shakko010203/NanoAvatar
 - Repositorio de código y uso: https://github.com/wpydcr/NanoAvatar
 - Descargas Android (Full / Lite): https://github.com/wpydcr/NanoAvatar/releases
 - Guía para ejecutar en Android: https://github.com/wpydcr/NanoAvatar#run-on-android

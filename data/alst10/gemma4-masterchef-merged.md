@@ -64,10 +64,10 @@ No se dispone de informacion suficiente para una comparativa rigurosa. Como refe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alst10/gemma4-masterchef-merged | 5.1B | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | 5.1B | no disponible | Apache 2.0 | HuggingFace |
-| LLaVA-1.6 7B | 7B | 4096 | Apache 2.0 | HuggingFace |
-| Qwen-VL 7B | 7B | 8192 | Apache 2.0 | HuggingFace |
+| alst10/gemma4-masterchef-merged | 5.1B | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | 5.1B | no disponible | Apache 2.0 | Hugging Face |
+| LLaVA-1.6 7B | 7B | 4096 | Apache 2.0 | Hugging Face |
+| Qwen-VL 7B | 7B | 8192 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

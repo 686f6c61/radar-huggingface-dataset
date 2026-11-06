@@ -74,6 +74,6 @@ La comparación se basa en características generales conocidas de los modelos b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/le0ge/devsecops-cig-qwen
+- Repositorio Hugging Face: https://huggingface.co/le0ge/devsecops-cig-qwen
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - Documentación de Qwen (familia de modelos): https://en.wikipedia.org/wiki/Qwen

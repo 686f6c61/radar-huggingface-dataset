@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `G21998/r1019-26d7cf3c-z-image-zbx3-s58-94f21b9c` es un artefacto de investigación privado publicado por el usuario G21998. La model card lo describe explícitamente como una "replay cell" (celda de repetición) asociada a una tarea etiquetada como `26d7cf3c`, de tipo `z-image`, con una duración de 0,75 horas, un brazo de experimento `zbx3`, semilla 58 y árbol `94f21b9c`. No se trata de un modelo de lenguaje conversacional al uso, sino de un registro de entrenamiento o reproducción de un experimento, probablemente dentro de un pipeline de validación tipo subred (el tag `sn56-replay` sugiere un mecanismo de repetición de tareas para validadores).
+El modelo identificado en Hugging Face como `G21998/r1019-26d7cf3c-z-image-zbx3-s58-94f21b9c` es un artefacto de investigación privado publicado por el usuario G21998. La model card lo describe explícitamente como una "replay cell" (celda de repetición) asociada a una tarea etiquetada como `26d7cf3c`, de tipo `z-image`, con una duración de 0,75 horas, un brazo de experimento `zbx3`, semilla 58 y árbol `94f21b9c`. No se trata de un modelo de lenguaje conversacional al uso, sino de un registro de entrenamiento o reproducción de un experimento, probablemente dentro de un pipeline de validación tipo subred (el tag `sn56-replay` sugiere un mecanismo de repetición de tareas para validadores).
 
 El repositorio ocupa 4,2 GB y contiene, según la propia descripción, dos directorios: `checkpoints/` (lo que el validador subiría) y `replay/` (logs y registros). El autor indica que se ha utilizado un arnés de validación sin Docker ("validator-faithful no-Docker harness", bloqueo `replay-1019`). El estado del experimento es `UPLOAD`, con código de retorno 0, sin terminación forzada (`killed False`) y finalización correcta (`finish`), con 6 miembros y hashes SHA-256 de artefacto (`88fa196c`) e identidad (`2ef4d59f`).
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s58-94f21b9c
+- Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s58-94f21b9c
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

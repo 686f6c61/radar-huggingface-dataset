@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATUS-Advanced-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATUS-Advanced-i1-GGUF
 - Repo relacionado (OBLITERATED-GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-GGUF
 - Blog explainx.ai sobre Qwen3.8-27B OBLITERATED: https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026
 - Documentación de vLLM Recipes sobre Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

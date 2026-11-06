@@ -85,9 +85,9 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Image-SFT-OpenVINO | 5B (DiT) + 9B (TE) | no disponible | Apache-2.0 | OpenVINO IR | HuggingFace |
-| OpenMOSS-Team/MOSS-Image-SFT | 5B (DiT) + 9B (TE) | no disponible | Apache-2.0 | safetensors (PyTorch) | HuggingFace |
-| aqualaguna/MOSS-Image-Edit-OpenVINO | no disponible | no disponible | no disponible | OpenVINO IR | HuggingFace |
+| MOSS-Image-SFT-OpenVINO | 5B (DiT) + 9B (TE) | no disponible | Apache-2.0 | OpenVINO IR | Hugging Face |
+| OpenMOSS-Team/MOSS-Image-SFT | 5B (DiT) + 9B (TE) | no disponible | Apache-2.0 | safetensors (PyTorch) | Hugging Face |
+| aqualaguna/MOSS-Image-Edit-OpenVINO | no disponible | no disponible | no disponible | OpenVINO IR | Hugging Face |
 
 La comparación con otros modelos texto-a-imagen de la misma categoría (por ejemplo, familias FLUX o SD) no se incluye porque no hay datos de rendimiento en la información disponible.
 
@@ -105,7 +105,7 @@ La comparación con otros modelos texto-a-imagen de la misma categoría (por eje
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aqualaguna/MOSS-Image-SFT-OpenVINO
+- Repositorio Hugging Face: https://huggingface.co/aqualaguna/MOSS-Image-SFT-OpenVINO
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Variante de edición de imagen: https://huggingface.co/aqualaguna/MOSS-Image-Edit-OpenVINO
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios de código adicionales ni demos.

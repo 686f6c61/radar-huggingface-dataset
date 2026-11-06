@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/CyberGPT-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/CyberGPT-GGUF
 - Modelo base (srdharanidharan/CyberGPT): https://huggingface.co/srdharanidharan/CyberGPT
 - Página de descarga de mradermacher: https://hf.tst.eu/model#CyberGPT-GGUF
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher

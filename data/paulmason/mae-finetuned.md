@@ -72,5 +72,5 @@ No se dispone de modelos comparables directos, ya que este repositorio es una im
 
 ## Enlaces
 
-- [Repositorio HuggingFace: Paulmason/mae-finetuned](https://huggingface.co/Paulmason/mae-finetuned)
+- [Repositorio Hugging Face: Paulmason/mae-finetuned](https://huggingface.co/Paulmason/mae-finetuned)
 - Referencia conceptual de MAE (no vinculada a este repositorio): [Facebook Research MAE en GitHub](https://github.com/facebookresearch/mae)

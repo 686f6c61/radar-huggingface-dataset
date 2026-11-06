@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `willopcbeta/lite-whisper-small-fast-ONNX-v2` es un sistema de reconocimiento automático de voz (ASR) publicado por el usuario `willopcbeta` en HuggingFace. Se trata de una exportación a formato ONNX de un modelo base denominado `lite-whisper-small-fast`, que a su vez es una variante optimizada y ligera de Whisper small. El objetivo principal es ofrecer una alternativa reducida y acelerada para la transcripción de audio, aprovechando la cuantización Q4 para disminuir el tamaño de los pesos y mejorar la velocidad de inferencia.
+El modelo `willopcbeta/lite-whisper-small-fast-ONNX-v2` es un sistema de reconocimiento automático de voz (ASR) publicado por el usuario `willopcbeta` en Hugging Face. Se trata de una exportación a formato ONNX de un modelo base denominado `lite-whisper-small-fast`, que a su vez es una variante optimizada y ligera de Whisper small. El objetivo principal es ofrecer una alternativa reducida y acelerada para la transcripción de audio, aprovechando la cuantización Q4 para disminuir el tamaño de los pesos y mejorar la velocidad de inferencia.
 
-El modelo está diseñado para integrarse con `transformers.js`, la librería de HuggingFace que permite ejecutar modelos de IA en entornos JavaScript, como navegadores o Node.js. Esto lo hace especialmente relevante para aplicaciones web que necesitan transcripción de voz sin depender de un servidor externo. No se dispone de información detallada sobre el número de parámetros, la longitud de contexto ni los idiomas soportados, por lo que gran parte de las especificaciones técnicas quedan sin confirmar.
+El modelo está diseñado para integrarse con `transformers.js`, la librería de Hugging Face que permite ejecutar modelos de IA en entornos JavaScript, como navegadores o Node.js. Esto lo hace especialmente relevante para aplicaciones web que necesitan transcripción de voz sin depender de un servidor externo. No se dispone de información detallada sobre el número de parámetros, la longitud de contexto ni los idiomas soportados, por lo que gran parte de las especificaciones técnicas quedan sin confirmar.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ No se ha publicado informacion detallada sobre el proceso de entrenamiento. El m
 
 ## Capacidades
 
-- Reconocimiento automatico de voz (ASR) mediante el pipeline `automatic-speech-recognition` de HuggingFace.
+- Reconocimiento automatico de voz (ASR) mediante el pipeline `automatic-speech-recognition` de Hugging Face.
 - Compatible con `transformers.js`, lo que permite su ejecucion en entornos JavaScript (navegador o Node.js) sin necesidad de un backend dedicado.
 - Formato ONNX con cuantizacion Q4, orientado a reducir el tamaño del modelo y mejorar la velocidad de inferencia en dispositivos con recursos limitados.
 - No se dispone de informacion sobre soporte de tool calling, agentes, razonamiento multi-paso ni otras capacidades mas alla de la transcripcion de audio.

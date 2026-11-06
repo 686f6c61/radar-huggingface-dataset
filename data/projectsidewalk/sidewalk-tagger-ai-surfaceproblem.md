@@ -70,9 +70,9 @@ No se dispone de información sobre otros clasificadores de etiquetado de proble
 
 | Modelo | Tipo | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| projectsidewalk/sidewalk-tagger-ai-surfaceproblem | Clasificador multi-etiqueta de 13 clases sobre problemas de superficie en aceras | No indicado en la model card (backbone ViT-B/14, ~86 M) | Crop RGB a 256 px, padding a múltiplo de 14 | Apache-2.0 | HuggingFace (`projectsidewalk/sidewalk-tagger-ai-surfaceproblem`) |
-| facebook/dinov2-with-registers-base | Backbone de visión preentrenado autosupervisado (modelo base del anterior) | Del orden de 86 M (ViT-B/14) | Imagen flexible, parche de 14 px | Apache-2.0 (según la familia DINOv2) | HuggingFace |
-| Otros taggers de Project Sidewalk (mismo repositorio de modelos) | Clasificadores de otras etiquetas de la plataforma | No disponible | No disponible | No disponible | HuggingFace (`projectsidewalk/sidewalk-tagger-ai-models`) |
+| projectsidewalk/sidewalk-tagger-ai-surfaceproblem | Clasificador multi-etiqueta de 13 clases sobre problemas de superficie en aceras | No indicado en la model card (backbone ViT-B/14, ~86 M) | Crop RGB a 256 px, padding a múltiplo de 14 | Apache-2.0 | Hugging Face (`projectsidewalk/sidewalk-tagger-ai-surfaceproblem`) |
+| facebook/dinov2-with-registers-base | Backbone de visión preentrenado autosupervisado (modelo base del anterior) | Del orden de 86 M (ViT-B/14) | Imagen flexible, parche de 14 px | Apache-2.0 (según la familia DINOv2) | Hugging Face |
+| Otros taggers de Project Sidewalk (mismo repositorio de modelos) | Clasificadores de otras etiquetas de la plataforma | No disponible | No disponible | No disponible | Hugging Face (`projectsidewalk/sidewalk-tagger-ai-models`) |
 | Alternativas comerciales o académicas equivalentes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -87,11 +87,11 @@ No se dispone de información sobre otros clasificadores de etiquetado de proble
 - Restricciones de licencia: Apache-2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y se atribuya correctamente; conviene citar además el artículo de ASSETS '24.
 - Caveat de producción: la arquitectura es personalizada y no se carga con `AutoModel` de `transformers`; la integración requiere el código de `sidewalk_ai_api/tagger.py` o una reimplementación equivalente, incluido el preprocesado exacto (redimensionado a 256 px, padding a múltiplo de 14 y normalización ImageNet).
 - Reproducibilidad: el checkpoint publicado es idéntico al del repositorio `sidewalk-tagger-ai-models`; verificar el sha256 indicado en la model card antes de desplegarlo.
-- Metadatos de la ficha de HuggingFace: 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación comunitaria adicional del modelo.
+- Metadatos de la ficha de Hugging Face: 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación comunitaria adicional del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-surfaceproblem
+- Modelo en Hugging Face: https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-surfaceproblem
 - Dataset de validación: https://huggingface.co/datasets/projectsidewalk/sidewalk-tagger-ai-validated
 - Repositorio de todos los modelos del artículo: https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-models
 - Código de entrenamiento y evaluación: https://github.com/ProjectSidewalk/sidewalk-tagger-ai

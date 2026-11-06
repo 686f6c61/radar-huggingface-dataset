@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de tamano si
 
 ## Enlaces
 
-- Repositorio HuggingFace (safetensors): https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic
+- Repositorio Hugging Face (safetensors): https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic
 - Repositorio GGUF (NEO Imatrix, reg y MTP): https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Modelo base 27B (GGUF): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Version hermana "Deckard": https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored

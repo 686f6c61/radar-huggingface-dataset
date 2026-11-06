@@ -12,7 +12,7 @@ Al ser un modelo de extraccion de caracteristicas y no generativo, su valor prac
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer bi-encoder tipo BERT (etiqueta `bert` en HuggingFace), pooling CLS, embeddings normalizados L2 |
+| Arquitectura | Transformer bi-encoder tipo BERT (etiqueta `bert` en Hugging Face), pooling CLS, embeddings normalizados L2 |
 | Parametros totales | 22.713.216 |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 256 tokens (`max_length` usado en evaluacion); maximo nativo de la arquitectura subyacente: no disponible |
@@ -92,10 +92,10 @@ No se han publicado en la informacion disponible resultados de benchmarks de pro
 
 | Modelo | Parametros | Tamano | NDCG@10 | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SKILLRET-Edge-22M-int4 | 22,7M | 17,1 MB (empaquetado) | 75,14 | 256 tokens (eval) | Apache-2.0 | HuggingFace |
-| SKILLRET-Edge-22M (base) | 22,7M | 90,9 MB sin entrenar | 50,07 (base sin entrenar) | no disponible | Apache-2.0 | HuggingFace |
-| SKILLRET-Embedding-0.6B (profesor) | ~0,6B | 1191,6 MB (BF16) | 78,48 | no disponible | Apache-2.0 | HuggingFace |
-| Otras variantes cuantizadas del mismo modelo (fp16, int8/g16, int3/g16) | 22,7M | 45,4 / 28,4 / 14,2 MB | 75,26 / 75,27 / 73,82 | 256 tokens (eval) | Apache-2.0 | HuggingFace |
+| SKILLRET-Edge-22M-int4 | 22,7M | 17,1 MB (empaquetado) | 75,14 | 256 tokens (eval) | Apache-2.0 | Hugging Face |
+| SKILLRET-Edge-22M (base) | 22,7M | 90,9 MB sin entrenar | 50,07 (base sin entrenar) | no disponible | Apache-2.0 | Hugging Face |
+| SKILLRET-Embedding-0.6B (profesor) | ~0,6B | 1191,6 MB (BF16) | 78,48 | no disponible | Apache-2.0 | Hugging Face |
+| Otras variantes cuantizadas del mismo modelo (fp16, int8/g16, int3/g16) | 22,7M | 45,4 / 28,4 / 14,2 MB | 75,26 / 75,27 / 73,82 | 256 tokens (eval) | Apache-2.0 | Hugging Face |
 
 No se dispone en la informacion proporcionada de comparaciones con modelos de embeddings genericos de terceros (por ejemplo familias tipo E5, BGE o GTE) sobre este mismo split, por lo que no se incluyen. Las unicas alternativas documentadas son el profesor de 0,6B y las demas variantes de cuantizacion del propio autor.
 
@@ -117,7 +117,7 @@ No se dispone en la informacion proporcionada de comparaciones con modelos de em
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M-int4
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M-int4
 - Modelo base: https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M
 - Profesor de destilacion: https://huggingface.co/ThakiCloud/SKILLRET-Embedding-0.6B
 - Dataset de evaluacion: https://huggingface.co/datasets/ThakiCloud/SKILLRET

@@ -66,8 +66,8 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible r
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-SFT-Fable5-GGUF)
-- [Repositorio HuggingFace del fine-tune en safetensors](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-SFT-Fable5)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-SFT-Fable5-GGUF)
+- [Repositorio Hugging Face del fine-tune en safetensors](https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-SFT-Fable5)
 - [Modelo base empero-ai/Qwen3.8-2B](https://huggingface.co/empero-ai/Qwen3.8-2B)
 - [Repositorio GitHub de la serie Qwen3.8](https://github.com/QwenLM/Qwen3.8)
 - [Página del modelo en FriendliAI](https://friendli.ai/models/ermiaazarkhalili/Qwen3.8-2B-SFT-Fable5)

@@ -4,7 +4,7 @@
 
 MuScriptor es un modelo de transcripción musical automática (AMT) multi-instrumento que convierte grabaciones de audio en notación MIDI, identificando las notas tocadas por cada instrumento de forma independiente. Ha sido desarrollado por Kyutai y Mirelo, y se distribuye con pesos abiertos bajo licencia CC BY-NC 4.0 (uso no comercial). Su objetivo es ofrecer una herramienta precisa y flexible para trabajar con música real de diversos géneros, superando las limitaciones de los transcriptores monoinstrumentales o los sistemas cerrados.
 
-El modelo se basa en una arquitectura transformer, tal como indican las etiquetas de HuggingFace, y admite condicionamiento por presencia de instrumentos para personalizar la transcripción según las necesidades del usuario. Aunque no se han publicado detalles técnicos exhaustivos sobre el tamaño de parámetros o la longitud de contexto, su variante "medium" sugiere un equilibrio entre rendimiento y requisitos computacionales. El proyecto incluye código fuente con licencia MIT y una demo gratuita en línea, lo que facilita su evaluación y adopción en entornos de investigación y desarrollo.
+El modelo se basa en una arquitectura transformer, tal como indican las etiquetas de Hugging Face, y admite condicionamiento por presencia de instrumentos para personalizar la transcripción según las necesidades del usuario. Aunque no se han publicado detalles técnicos exhaustivos sobre el tamaño de parámetros o la longitud de contexto, su variante "medium" sugiere un equilibrio entre rendimiento y requisitos computacionales. El proyecto incluye código fuente con licencia MIT y una demo gratuita en línea, lo que facilita su evaluación y adopción en entornos de investigación y desarrollo.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de datos suficientes para realizar una comparativa objetiva con ot
 ## Limitaciones y advertencias
 
 - Licencia no comercial: el modelo está bajo CC BY-NC 4.0, lo que impide su uso en aplicaciones comerciales o con fines lucrativos. El código fuente es MIT, pero los pesos del modelo tienen restricciones.
-- Acceso gated en HuggingFace: para descargar los pesos es necesario aceptar la licencia en la página del modelo y autenticarse con una cuenta gratuita.
+- Acceso gated en Hugging Face: para descargar los pesos es necesario aceptar la licencia en la página del modelo y autenticarse con una cuenta gratuita.
 - Datos de entrenamiento no divulgados: no se conoce la composición del dataset, por lo que podría haber sesgos hacia ciertos géneros o estilos musicales, afectando la precisión en otros tipos de audio.
 - Sin métricas de rendimiento publicadas: no hay benchmarks oficiales que permitan evaluar su calidad frente a otros sistemas, lo que dificulta la decisión de adopción en entornos críticos.
 - Potencial de alucinación o errores en la transcripción: como cualquier modelo de AMT, puede producir notas o ritmos incorrectos, especialmente en grabaciones con mezclas densas o efectos de audio complejos.
@@ -76,8 +76,8 @@ No se dispone de datos suficientes para realizar una comparativa objetiva con ot
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/MuScriptor/muscriptor-medium)
+- [Página del modelo en Hugging Face](https://huggingface.co/MuScriptor/muscriptor-medium)
 - [Repositorio GitHub](https://github.com/muscriptor/muscriptor)
 - [Página del proyecto](https://muscriptor.github.io/)
 - [Demo interactiva](https://muscriptor.kyutai.org/)
-- [Colección de MuScriptor en HuggingFace](https://huggingface.co/collections/kyutai/muscriptor)
+- [Colección de MuScriptor en Hugging Face](https://huggingface.co/collections/kyutai/muscriptor)

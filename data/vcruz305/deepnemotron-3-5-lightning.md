@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 - VRAM estimada para inferencia: el modelo base en 4-bit requiere aproximadamente 16-18 GB; con el adaptador LoRA añadido, el uso se mantiene en ese rango. La versión GGUF Q4_K_M puede caber en 16 GB.
 - GPU recomendadas: A100-80 (usada en entrenamiento), RTX 4090 (24 GB) o RTX 3090 (24 GB) para inferencia con cuantización 4-bit. Para GGUF, una RTX 3060 12 GB o incluso CPU con 32 GB de RAM son viables.
-- Opciones de despliegue: vLLM, TGI, llama.cpp (vía GGUF), Ollama (vía GGUF), y HuggingFace Transformers con PEFT.
+- Opciones de despliegue: vLLM, TGI, llama.cpp (vía GGUF), Ollama (vía GGUF), y Hugging Face Transformers con PEFT.
 - Latencia y throughput: no disponibles. Como referencia, un MoE 30B-A3B en 4-bit genera típicamente entre 20 y 60 tokens/s en una RTX 4090, pero no hay mediciones publicadas para este adaptador.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ El adaptador se diferencia por su especialización agentic, pero el modelo base 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/vcruz305/DeepNemotron-3.5-Lightning
+- Adaptador en Hugging Face: https://huggingface.co/vcruz305/DeepNemotron-3.5-Lightning
 - Versión GGUF: https://huggingface.co/vcruz305/DeepNemotron-3.5-Lightning-GGUF
 - Modelo base (Unsloth): https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/r0b0tlab/deepseek-v4-pro-0813-agentic

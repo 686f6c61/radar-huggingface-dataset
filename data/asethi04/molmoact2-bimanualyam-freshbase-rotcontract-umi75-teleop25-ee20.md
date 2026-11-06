@@ -66,7 +66,7 @@ No se dispone de información comparativa con otros modelos VLA como MolmoAct (v
 - **Falta de licencia**: la licencia no está especificada, por lo que su uso comercial es incierto y debe consultarse con el autor.
 - **Sesgos y alucinación**: al ser un modelo de acción, puede generar movimientos no seguros si no se controlan los límites de articulación y colisión; el autor recomienda implementar comprobaciones de seguridad.
 - **Dependencia de la configuración**: el modelo está entrenado con una tarea específica (naranjas en cuenco) y puede no generalizar a otras tareas sin reentrenamiento.
-- **Requisito de pin de revisión**: el autor recomienda fijar la revisión del repositorio de HuggingFace en lugar de usar `main` para garantizar reproducibilidad.
+- **Requisito de pin de revisión**: el autor recomienda fijar la revisión del repositorio de Hugging Face en lugar de usar `main` para garantizar reproducibilidad.
 - **Sin soporte de idiomas**: no se indica que el modelo tenga capacidades multilingües; probablemente se limita a instrucciones en inglés (no especificado).
 
 ## Enlaces

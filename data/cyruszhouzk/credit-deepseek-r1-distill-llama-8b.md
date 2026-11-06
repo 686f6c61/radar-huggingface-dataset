@@ -91,9 +91,9 @@ La comparativa con alternativas especializadas en atribucion o fidelidad de fuen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CyrusZhouzk/CREDIT-DeepSeek-R1-Distill-Llama-8B
+- Modelo en Hugging Face: https://huggingface.co/CyrusZhouzk/CREDIT-DeepSeek-R1-Distill-Llama-8B
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Articulo (arXiv): https://arxiv.org/abs/2610.35295
-- Articulo (HuggingFace Papers): https://huggingface.co/papers/2610.35295
+- Articulo (Hugging Face Papers): https://huggingface.co/papers/2610.35295
 - Codigo: https://github.com/stanford-oval/CREDIT
 - Dataset de entrenamiento: https://huggingface.co/datasets/CyrusZhouzk/CREDIT

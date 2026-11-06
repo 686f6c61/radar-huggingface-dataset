@@ -77,6 +77,6 @@ No se dispone de información sobre modelos drafter comparables en la misma cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MikhailRudenko/drafter-mixed-ut
+- Hugging Face: https://huggingface.co/MikhailRudenko/drafter-mixed-ut
 - Dataset de entrenamiento: https://huggingface.co/datasets/mikhialo/domain-aware-sd-synthetic
 - Repositorio del proyecto: https://github.com/MikhailRudenk0/Domain-Aware-SD

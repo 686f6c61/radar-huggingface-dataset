@@ -74,7 +74,7 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gnitoahc/ceed-b1
+- Hugging Face: https://huggingface.co/gnitoahc/ceed-b1
 - Repositorio GitHub del estudio CEED: https://github.com/GNITOAHC/ceed
 - Documento de diseño CEED (ceed.md): https://github.com/GNITOAHC/ceed/blob/main/ceed.md
 - Modelo derivado en FriendliAI (inferencia gestionada): https://friendli.ai/models/gnitoahc/ceed-b1-gemma4-e4b-it-0729

@@ -53,17 +53,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada para inferencia**: los pesos en bfloat16 ocupan aproximadamente 7,6 GB, a los que hay que sumar la caché de atencion y los estados intermedios. Con una ventana de 128k tokens, la caché KV puede consumir varios GB adicionales dependiendo de la longitud real del contexto.
 - **GPU recomendadas**: una RTX 4090 (24 GB) o RTX 3090 (24 GB) son suficientes para inferencia con contexto largo. Una RTX 4080 (16 GB) o RTX 4070 Ti (12 GB) pueden funcionar con contextos moderados o con cuantizacion.
 - **GPU de consumo**: si cabe en GPUs de consumo de gama alta y media-alta. Con cuantizacion a 4 bits, los pesos se reducen a unos 2 GB, lo que permitiria ejecutarlo en GPUs de 8 GB.
-- **Opciones de despliegue**: compatible con HuggingFace Transformers (via `AutoModelForCausalLM`), y puede desplegarse con vLLM, llama.cpp (si se generan pesos GGUF), Ollama o TGI.
+- **Opciones de despliegue**: compatible con Hugging Face Transformers (via `AutoModelForCausalLM`), y puede desplegarse con vLLM, llama.cpp (si se generan pesos GGUF), Ollama o TGI.
 - **Latencia y throughput**: no se han publicado datos especificos. Como referencia, un modelo de 3,8 B en bf16 en una RTX 4090 suele generar entre 40 y 80 tokens por segundo en configuraciones optimizadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Razonamiento CoT | Disponibilidad |
 |---|---|---|---|---|---|
-| Raisin-4B | ~3,8 B | 131.072 | MIT | Si, explicito | HuggingFace |
-| microsoft/Phi-3.5-mini-instruct (base) | ~3,8 B | 4.096 | MIT | No (generico) | HuggingFace |
-| Qwen2.5-3B | ~3 B | 131.072 | Apache 2.0 | No (generico) | HuggingFace |
-| Llama-3.2-3B | ~3,2 B | 131.072 | Llama 3.2 | No (generico) | HuggingFace |
+| Raisin-4B | ~3,8 B | 131.072 | MIT | Si, explicito | Hugging Face |
+| microsoft/Phi-3.5-mini-instruct (base) | ~3,8 B | 4.096 | MIT | No (generico) | Hugging Face |
+| Qwen2.5-3B | ~3 B | 131.072 | Apache 2.0 | No (generico) | Hugging Face |
+| Llama-3.2-3B | ~3,2 B | 131.072 | Llama 3.2 | No (generico) | Hugging Face |
 
 No se dispone de datos de benchmark comparativos entre estos modelos en la informacion disponible.
 

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| elephant-1 (este repo, Q8_0 GGUF) | 8,95B | 32.768 | Texto + visión, decisión estructurada | MIT | GGUF en HuggingFace |
-| baselabs/elephant-1 (BF16 original) | 8,95B | No disponible | Texto + visión, decisión estructurada | MIT | Pesos originales en HuggingFace |
+| elephant-1 (este repo, Q8_0 GGUF) | 8,95B | 32.768 | Texto + visión, decisión estructurada | MIT | GGUF en Hugging Face |
+| baselabs/elephant-1 (BF16 original) | 8,95B | No disponible | Texto + visión, decisión estructurada | MIT | Pesos originales en Hugging Face |
 | mradermacher/elephant-1-GGUF | 8,95B | No disponible | Texto + visión | MIT | GGUF (sin metadatos de decisión) |
 | waseigo/elephant-1-decision-GGUF | 8,95B | No disponible | Texto + visión, decisión estructurada | MIT | GGUF con metadatos de decisión |
 
@@ -84,7 +84,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/debackerl/elephant-1-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/debackerl/elephant-1-Q8_0-GGUF
 - Modelo base: https://huggingface.co/baselabs/elephant-1
 - Cuantización y torre de visión: https://huggingface.co/mradermacher/elephant-1-GGUF
 - Referencia de metadatos de decisión: https://huggingface.co/waseigo/elephant-1-decision-GGUF

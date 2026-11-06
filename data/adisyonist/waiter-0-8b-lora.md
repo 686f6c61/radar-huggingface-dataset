@@ -72,9 +72,9 @@ La precisión ajustada tiene en cuenta los casos donde la generación se truncó
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| adisyonist/waiter-0.8B-lora | 0,8B + LoRA | No disponible | Tool routing POS | Apache 2.0 | HuggingFace |
-| adisyonist/waiter-1B-lora | 1B + LoRA | No disponible | Tool routing POS | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Generalista | Apache 2.0 (según HF) | HuggingFace |
+| adisyonist/waiter-0.8B-lora | 0,8B + LoRA | No disponible | Tool routing POS | Apache 2.0 | Hugging Face |
+| adisyonist/waiter-1B-lora | 1B + LoRA | No disponible | Tool routing POS | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Generalista | Apache 2.0 (según HF) | Hugging Face |
 
 El adaptador 0.8B es la versión compacta de la familia Waiter; existe una variante de 1B que probablemente ofrezca mayor capacidad a costa de más recursos. El modelo base Qwen3.5-0.8B es generalista y no está especializado en enrutamiento de herramientas, por lo que el adaptador aporta una mejora sustancial en la tarea concreta.
 
@@ -83,7 +83,7 @@ El adaptador 0.8B es la versión compacta de la familia Waiter; existe una varia
 - Es un adaptador especializado en dominio POS; fuera de ese ámbito su rendimiento puede degradarse significativamente y generar respuestas irrelevantes o alucinadas.
 - La salida puede truncarse si el límite de tokens configurado es demasiado bajo, aunque la precisión ajustada (99,40%) indica que el enrutamiento suele ser correcto incluso en esos casos.
 - No se han documentado sesgos específicos, pero al estar entrenado en 43 idiomas, el rendimiento puede variar entre idiomas con menos representación en el corpus.
-- La licencia del adaptador es Apache 2.0, pero la del modelo base Qwen3.5-0.8B debe consultarse en su página de HuggingFace; aunque generalmente es Apache 2.0, es responsabilidad del usuario verificar los términos.
+- La licencia del adaptador es Apache 2.0, pero la del modelo base Qwen3.5-0.8B debe consultarse en su página de Hugging Face; aunque generalmente es Apache 2.0, es responsabilidad del usuario verificar los términos.
 - No se proporcionan datos sobre la composición exacta del corpus de entrenamiento ni sobre posibles datos sensibles (por ejemplo, información de clientes), por lo que se recomienda auditar el modelo antes de usarlo en producción con datos reales.
 - El modelo no tiene capacidades de visión ni audio; el ejemplo de código usa `AutoModelForImageTextToText`, pero el adaptador no está entrenado para tareas multimodales.
 

@@ -73,10 +73,10 @@ No se dispone de datos comparativos concretos en la informacion proporcionada. C
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo original: https://huggingface.co/Qwen/Qwen3-14B
-- Repositorio HuggingFace con cuantizaciones GGUF: https://huggingface.co/Qwen/Qwen3-14B-GGUF
+- Repositorio Hugging Face del modelo original: https://huggingface.co/Qwen/Qwen3-14B
+- Repositorio Hugging Face con cuantizaciones GGUF: https://huggingface.co/Qwen/Qwen3-14B-GGUF
 - Reporte tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/
-- Repositorio HuggingFace del mirror analizado: https://huggingface.co/efathakanafunzi/Qwen3-14B
+- Repositorio Hugging Face del mirror analizado: https://huggingface.co/efathakanafunzi/Qwen3-14B

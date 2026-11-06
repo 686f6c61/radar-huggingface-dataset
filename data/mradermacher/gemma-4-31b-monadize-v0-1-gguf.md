@@ -98,7 +98,7 @@ No hay datos de rendimiento comparado (MMLU, HumanEval u otros) en la informaci√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-31B-Monadize-v0.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-31B-Monadize-v0.1-GGUF
 - Modelo base del fine-tune: https://huggingface.co/zoracapri/gemma-4-31B-Monadize-v0.1
 - Cuantizaciones i1 (imatrix) del mismo modelo: https://huggingface.co/mradermacher/gemma-4-31B-Monadize-v0.1-i1-GGUF
 - P√°gina de descargas del autor para este modelo: https://hf.tst.eu/model#gemma-4-31B-Monadize-v0.1-GGUF

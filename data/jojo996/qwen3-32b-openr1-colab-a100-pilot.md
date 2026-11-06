@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JOJO996/qwen3-32b-openr1-colab-a100-pilot | 32B (base) | no disponible | no disponible | HuggingFace (adaptador) |
-| Qwen3-32B (base) | 32B | 128k | Apache 2.0 | HuggingFace, Ollama |
-| Qwen3-32B-Instruct | 32B | 128k | Apache 2.0 | HuggingFace, Ollama |
-| Qwen3-30B-A3B (MoE) | 30B total, 3B activos | 128k | Apache 2.0 | HuggingFace, Ollama |
+| JOJO996/qwen3-32b-openr1-colab-a100-pilot | 32B (base) | no disponible | no disponible | Hugging Face (adaptador) |
+| Qwen3-32B (base) | 32B | 128k | Apache 2.0 | Hugging Face, Ollama |
+| Qwen3-32B-Instruct | 32B | 128k | Apache 2.0 | Hugging Face, Ollama |
+| Qwen3-30B-A3B (MoE) | 30B total, 3B activos | 128k | Apache 2.0 | Hugging Face, Ollama |
 
 El modelo objeto de esta ficha es un adaptador experimental sin validacion publica, mientras que las alternativas oficiales de Qwen3 ofrecen documentacion completa, benchmarks y soporte. Para uso serio, se recomienda usar Qwen3-32B-Instruct o Qwen3-30B-A3B.
 
@@ -76,7 +76,7 @@ El modelo objeto de esta ficha es un adaptador experimental sin validacion publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JOJO996/qwen3-32b-openr1-colab-a100-pilot
+- Modelo en Hugging Face: https://huggingface.co/JOJO996/qwen3-32b-openr1-colab-a100-pilot
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen3-32B-bnb-4bit
 - Notebook de Colab de Unsloth para Qwen3 32B: https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_(32B)_A100-Reasoning-Conversational.ipynb
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

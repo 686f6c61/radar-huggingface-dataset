@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeesup/svd-safety-l3_swift_remove30` es un checkpoint de investigacion derivado de `meta-llama/Llama-2-7b-chat-hf` al que se ha aplicado compresion mediante descomposicion en valores singulares (SVD-LLM, *Singular Value Decomposition for Large Language Model compression*). En concreto se han eliminado el 30,00% de los parametros densos, quedando el modelo en una fraccion de parametros de 0,7003 respecto al original. Lo publica el usuario Jeesup en HuggingFace y es una celda de una rejilla experimental que cruza distintas reglas de seleccion de componentes SVD con distintos presupuestos de restauracion.
+`Jeesup/svd-safety-l3_swift_remove30` es un checkpoint de investigacion derivado de `meta-llama/Llama-2-7b-chat-hf` al que se ha aplicado compresion mediante descomposicion en valores singulares (SVD-LLM, *Singular Value Decomposition for Large Language Model compression*). En concreto se han eliminado el 30,00% de los parametros densos, quedando el modelo en una fraccion de parametros de 0,7003 respecto al original. Lo publica el usuario Jeesup en Hugging Face y es una celda de una rejilla experimental que cruza distintas reglas de seleccion de componentes SVD con distintos presupuestos de restauracion.
 
 El proposito del artefacto no es conversar ni asistir, sino medir como la compresion SVD degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes repara mejor ese dano. En esta celda la regla de seleccion registrada es `unknown` y el presupuesto de restauracion es del 0,000% (cero componentes restaurados, cero componentes sustituidos), por lo que el modelo refleja el efecto de la compresion pura sin reparacion posterior.
 
@@ -77,7 +77,7 @@ No se han publicado en la informacion disponible resultados de benchmarks de con
 - VRAM estimada para inferencia: aproximadamente 16 GB en precision de 16 bits (los pesos ocupan 16,1 GB en el repositorio), unos 8 GB en cuantizacion de 8 bits y unos 4-5 GB en 4 bits. Las cifras de 8 y 4 bits son estimaciones sobre 8,03 mil millones de parametros, no datos publicados.
 - GPU recomendadas: A100 de 40 GB o 80 GB y H100 para inferencia por lotes; RTX 4090 o RTX 3090 (24 GB) para inferencia en 16 bits con contextos moderados.
 - GPU de consumo: si cabe. Con 24 GB se puede cargar en 16 bits; con 12 GB (por ejemplo, RTX 3060) es necesario cuantizar a 4 bits, y no se publican pesos cuantizados en el repositorio, por lo que habria que generarlos.
-- Opciones de despliegue: `transformers` es la via documentada. La ficha incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad declarada con TGI y con Inference Endpoints de HuggingFace. La compatibilidad con vLLM es plausible por tratarse de pesos safetensors de arquitectura Llama, pero no esta verificada en la informacion disponible. El despliegue con llama.cpp u Ollama requeriria convertir los pesos a GGUF, algo que el repositorio no ofrece.
+- Opciones de despliegue: `transformers` es la via documentada. La ficha incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad declarada con TGI y con Inference Endpoints de Hugging Face. La compatibilidad con vLLM es plausible por tratarse de pesos safetensors de arquitectura Llama, pero no esta verificada en la informacion disponible. El despliegue con llama.cpp u Ollama requeriria convertir los pesos a GGUF, algo que el repositorio no ofrece.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ Es razonable suponer que existen otras celdas de la misma rejilla publicadas por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove30
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove30
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y politica de uso: incluidas en el propio repositorio (`LICENSE.txt`, `USE_POLICY.md`)
 

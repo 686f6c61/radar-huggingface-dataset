@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`taleef/gemma-2-9b-it-Alpaca-LoRA` es un adaptador de ajuste por instrucciones (LoRA) publicado por el usuario `taleef` sobre el modelo `google/gemma-2-9b-it` de Google DeepMind. El entrenamiento declarado usa el dataset `yahma/alpaca-cleaned`, una versión depurada del corpus Alpaca de Stanford compuesto por pares instrucción-respuesta en inglés. El repositorio se distribuye con licencia Gemma y acceso restringido (*gated*): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+`taleef/gemma-2-9b-it-Alpaca-LoRA` es un adaptador de ajuste por instrucciones (LoRA) publicado por el usuario `taleef` sobre el modelo `google/gemma-2-9b-it` de Google DeepMind. El entrenamiento declarado usa el dataset `yahma/alpaca-cleaned`, una versión depurada del corpus Alpaca de Stanford compuesto por pares instrucción-respuesta en inglés. El repositorio se distribuye con licencia Gemma y acceso restringido (*gated*): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 No se trata de un modelo nuevo, sino de una modificación de los pesos de Gemma 2 9B para alinearlos con el estilo de respuesta corta y genérica característico de Alpaca. No aporta arquitectura propia, tokenizador propio ni extensión de contexto: hereda todo del modelo base, que cuenta con 9.241.705.984 parámetros según los safetensors publicados. Los tags del repositorio (`safety`, `jailbreak`, `research`) apuntan a un artefacto de investigación sobre comportamiento y seguridad más que a un modelo orientado a producción.
 
@@ -20,7 +20,7 @@ Su relevancia práctica es muy limitada y está acotada al ámbito experimental:
 | Idiomas soportados | `en` (inglés únicamente, según el campo de idiomas del repositorio) |
 | Licencia | `gemma` (licencia Gemma de Google, con condiciones de uso y obligaciones de redistribución) |
 | Formato de pesos | safetensors |
-| Acceso | Restringido (*gated*): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (*gated*): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 18,5 GB |
 | Dataset de ajuste | `yahma/alpaca-cleaned` |
 | Modelo base | `google/gemma-2-9b-it` |
@@ -72,7 +72,7 @@ Las siguientes cifras son estimaciones derivadas aritméticamente del número de
 - VRAM estimada en INT4: aproximadamente 5-6 GB para los pesos, con un total realista de 7-9 GB.
 - GPU recomendadas para bf16: A100 40 GB, A100 80 GB, H100 80 GB, L40S 48 GB.
 - GPU de consumo: en bf16 no cabe con comodidad en una RTX 4090 de 24 GB (los pesos solos ya ocupan 18,5 GB, dejando muy poco margen para caché y activaciones). En INT8 o INT4 sí es viable en RTX 4090, RTX 3090, RTX 4080 y, en INT4 con contexto corto, en tarjetas de 8-12 GB.
-- Opciones de despliegue: `transformers` con `peft` si finalmente se confirma que es un adaptador; vLLM o TGI para servir los pesos completos; llama.cpp u Ollama únicamente si se convierte previamente a GGUF, conversión que no está disponible en el repositorio. El acceso restringido obliga a configurar un token de HuggingFace en cualquiera de estas herramientas.
+- Opciones de despliegue: `transformers` con `peft` si finalmente se confirma que es un adaptador; vLLM o TGI para servir los pesos completos; llama.cpp u Ollama únicamente si se convierte previamente a GGUF, conversión que no está disponible en el repositorio. El acceso restringido obliga a configurar un token de Hugging Face en cualquiera de estas herramientas.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ Los datos de contexto, licencia y parámetros de las alternativas proceden de la
 
 | Modelo | Parámetros | Contexto | Licencia | Tipo | Disponibilidad |
 |---|---|---|---|---|---|
-| `taleef/gemma-2-9b-it-Alpaca-LoRA` | 9,24 B | No disponible en esta ficha | Gemma | Ajuste LoRA sobre Gemma 2 9B IT | Gated en HuggingFace, 0 descargas |
+| `taleef/gemma-2-9b-it-Alpaca-LoRA` | 9,24 B | No disponible en esta ficha | Gemma | Ajuste LoRA sobre Gemma 2 9B IT | Gated en Hugging Face, 0 descargas |
 | `google/gemma-2-9b-it` | 9,24 B | 8.192 tokens (documentación pública) | Gemma | Modelo instruct oficial | Público, ampliamente desplegado |
 | `mistralai/Mistral-7B-Instruct-v0.3` | ~7,2 B | 32.768 tokens (documentación pública) | Apache 2.0 | Modelo instruct | Público |
 | `meta-llama/Llama-3.1-8B-Instruct` | ~8,0 B | 131.072 tokens (documentación pública) | Licencia comunitaria Llama 3.1 | Modelo instruct | Público con aceptación de términos |
@@ -101,13 +101,13 @@ La diferencia principal no está en el rendimiento, que no se puede comparar por
 - Contexto: no se documenta en el repositorio; si se hereda el del modelo base, sería de 8.192 tokens, insuficiente para tareas de documento largo o conversaciones muy extensas.
 - Dimensión de seguridad: los tags `safety` y `jailbreak` no implican que el modelo sea seguro. Es posible que el ajuste haya reducido la tasa de rechazo del modelo instruct original. No debe desplegarse en entornos de cara al público sin una evaluación de seguridad previa.
 - Licencia: la licencia Gemma impone condiciones de uso, obligaciones de atribución y restricciones de redistribución. Al ser un modelo derivado, esas condiciones se propagan. El uso comercial está sujeto a los términos de Google y no puede asumirse libre.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que complica la automatización de descargas en CI/CD y en despliegues reproducibles.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que complica la automatización de descargas en CI/CD y en despliegues reproducibles.
 - Ausencia de mantenimiento: no hay evidencia de actualizaciones posteriores a la fecha de creación registrada, ni de soporte del autor.
 - La búsqueda web realizada no devolvió ninguna fuente relacionada con este modelo; todos los resultados correspondían a un proyecto no relacionado, por lo que no existe documentación externa que corrobore las afirmaciones del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taleef/gemma-2-9b-it-Alpaca-LoRA
+- Modelo en Hugging Face: https://huggingface.co/taleef/gemma-2-9b-it-Alpaca-LoRA
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Dataset de ajuste: https://huggingface.co/datasets/yahma/alpaca-cleaned
 - Paper, blog, repositorio o demo del adaptador: no disponible. La búsqueda web no devolvió ningún resultado relacionado con este modelo.

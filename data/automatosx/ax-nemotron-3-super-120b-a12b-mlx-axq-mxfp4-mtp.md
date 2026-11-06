@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de otras alternativas comparables en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-Nemotron-3-Super-120B-A12B-MLX-AXQ-MXFP4-MTP
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-Nemotron-3-Super-120B-A12B-MLX-AXQ-MXFP4-MTP
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Licencia NVIDIA Nemotron Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
 - Fichero de auditoria de runtime: `runtime_audit.json` (incluido en el repositorio)

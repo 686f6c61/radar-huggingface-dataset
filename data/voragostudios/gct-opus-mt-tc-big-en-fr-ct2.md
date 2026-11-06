@@ -79,7 +79,7 @@ Los datos de rendimiento comparado no estan disponibles en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-en-fr-ct2
+- Modelo en Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-en-fr-ct2
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-fr
 - Proyecto OPUS-MT de Helsinki-NLP: https://github.com/Helsinki-NLP/OPUS-MT
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

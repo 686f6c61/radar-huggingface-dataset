@@ -78,9 +78,9 @@ El propio autor advierte de que el step 500 se eligió por su resultado en held-
 
 | Modelo | Parámetros | Contexto | Skill | Evidence | Prof. exacta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| SkillJev (este checkpoint) | 4B base + LoRA | 192 tokens de entrenamiento | 100,0 | 97,8 | 95,6 | Apache-2.0 (+ licencia del base) | Pesos PEFT públicos en HuggingFace |
-| OpenJev 4B zero-shot | 4B | no disponible | 88,9 | 68,9 | 71,1 | no disponible | Público en HuggingFace |
-| tasksource/ModernBERT-base-nli zero-shot | no disponible | no disponible | 73,3 | 56,7 | 58,9 | no disponible | Público en HuggingFace |
+| SkillJev (este checkpoint) | 4B base + LoRA | 192 tokens de entrenamiento | 100,0 | 97,8 | 95,6 | Apache-2.0 (+ licencia del base) | Pesos PEFT públicos en Hugging Face |
+| OpenJev 4B zero-shot | 4B | no disponible | 88,9 | 68,9 | 71,1 | no disponible | Público en Hugging Face |
+| tasksource/ModernBERT-base-nli zero-shot | no disponible | no disponible | 73,3 | 56,7 | 58,9 | no disponible | Público en Hugging Face |
 | SkillJev v008 step 1000 | 4B base + LoRA | 192 tokens de entrenamiento | 100,0 | 97,8 | 94,4 | Apache-2.0 | No publicado como checkpoint |
 
 La comparación es intradominio y con el mismo conjunto de evaluación, lo que la hace útil para medir la ganancia del ajuste fino, pero no equivale a una comparación frente a otros clasificadores de CV de propósito general, para los que no hay datos en la información disponible. Existe además un proyecto homónimo, SkillJev-2B (Universidad de Toronto MScAC con TrendAI), que puntúa skills maliciosas de agentes de IA: es una tarea distinta y no es comparable con este modelo pese a compartir nombre y modelo base de la familia OpenJev.
@@ -101,7 +101,7 @@ La comparación es intradominio y con el mismo conjunto de evaluación, lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niko0xdev/skilljev
+- Modelo en Hugging Face: https://huggingface.co/niko0xdev/skilljev
 - Repositorio del modelo (incluye `inference.py`, `RUBRIC.md`, `TAXONOMY.md`, `heads.pt`): https://huggingface.co/niko0xdev/skilljev/tree/main
 - Dataset de entrenamiento: https://huggingface.co/datasets/niko0xdev/skilljev-data
 - Modelo base: https://huggingface.co/AlexWortega/openjev

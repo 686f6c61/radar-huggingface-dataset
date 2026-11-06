@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_3407` es un ajuste fino supervisado (SFT) del modelo `nvidia/Nemotron-Mini-4B-Instruct`, publicado por el usuario rghosh8 en HuggingFace. Se trata de un artefacto de experimentación académica: un checkpoint de referencia ("baseline") entrenado con TRL sobre el conjunto de datos ARC, con semilla 3407, presumiblemente para comparar contra otras variantes de entrenamiento. No es un modelo de producción ni una release oficial de NVIDIA.
+`rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_3407` es un ajuste fino supervisado (SFT) del modelo `nvidia/Nemotron-Mini-4B-Instruct`, publicado por el usuario rghosh8 en Hugging Face. Se trata de un artefacto de experimentación académica: un checkpoint de referencia ("baseline") entrenado con TRL sobre el conjunto de datos ARC, con semilla 3407, presumiblemente para comparar contra otras variantes de entrenamiento. No es un modelo de producción ni una release oficial de NVIDIA.
 
 El modelo hereda la arquitectura del Nemotron-Mini-4B-Instruct original: un transformer decoder-only de aproximadamente 4.190 millones de parámetros (4,19B), empaquetado en safetensors con un repositorio de 8,4 GB (lo que corresponde a pesos en precisión de 16 bits). El pipeline declarado es `text-generation` y la librería es `transformers`, con compatibilidad con endpoints de inferencia.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_3407 | 4,19B | no disponible | no disponible | HuggingFace, 0 descargas |
-| nvidia/Nemotron-Mini-4B-Instruct (base) | ~4B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace, modelo oficial de NVIDIA |
-| Otros ajustes SFT de Nemotron-Mini-4B | ~4B | no disponible | variable | HuggingFace (no identificados en la información proporcionada) |
+| rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_3407 | 4,19B | no disponible | no disponible | Hugging Face, 0 descargas |
+| nvidia/Nemotron-Mini-4B-Instruct (base) | ~4B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face, modelo oficial de NVIDIA |
+| Otros ajustes SFT de Nemotron-Mini-4B | ~4B | no disponible | variable | Hugging Face (no identificados en la información proporcionada) |
 
 La comparación con alternativas de la misma categoría (modelos de ~4B para generación de texto) no puede completarse con datos verificables a partir de la información proporcionada; se indica "no disponible" para los campos no documentados.
 
@@ -83,7 +83,7 @@ La comparación con alternativas de la misma categoría (modelos de ~4B para gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_3407
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_Nemotron-Mini-4B-Instruct_arc_3407
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl
 - Paper de TRL (citado en la model card): von Werra et al., 2020, https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bc-AI/joint-flow-3b es un repositorio de pesos publicado en HuggingFace por el usuario u organizacion Bc-AI el 10 de septiembre de 2026 y actualizado el 11 de septiembre de 2026. El unico dato verificable disponible es el tamano del repositorio (146,8 GB), el identificador y la etiqueta `region:us`; no se ha publicado model card con descripcion, arquitectura ni proposito del modelo. El repositorio acumula 0 descargas y 1 like en el momento de la consulta.
+Bc-AI/joint-flow-3b es un repositorio de pesos publicado en Hugging Face por el usuario u organizacion Bc-AI el 10 de septiembre de 2026 y actualizado el 11 de septiembre de 2026. El unico dato verificable disponible es el tamano del repositorio (146,8 GB), el identificador y la etiqueta `region:us`; no se ha publicado model card con descripcion, arquitectura ni proposito del modelo. El repositorio acumula 0 descargas y 1 like en el momento de la consulta.
 
 El nombre del repositorio sugiere un modelo de aproximadamente 3.000 millones de parametros y una posible relacion con tecnicas de flow matching (el termino "flow"), pero esto es una inferencia a partir del identificador y no esta confirmado por ninguna documentacion tecnica. Tampoco se puede determinar si se trata de un modelo de lenguaje, de un modelo generativo multimodal (imagen, video o audio) o de un componente dentro de un pipeline mayor.
 
@@ -83,7 +83,7 @@ No es posible establecer una comparativa fiable, ya que se desconoce la tarea, l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Comparativa |
 |---|---|---|---|---|---|
-| Bc-AI/joint-flow-3b | no disponible | no disponible | no disponible | repositorio HuggingFace, 0 descargas | no aplica |
+| Bc-AI/joint-flow-3b | no disponible | no disponible | no disponible | repositorio Hugging Face, 0 descargas | no aplica |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,5 +101,5 @@ No es posible establecer una comparativa fiable, ya que se desconoce la tarea, l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bc-AI/joint-flow-3b
+- Repositorio en Hugging Face: https://huggingface.co/Bc-AI/joint-flow-3b
 - Resultados de la busqueda web: sin enlaces relevantes. Todas las entradas devueltas (bbc.co.uk, bbc.com, en.wikipedia.org/wiki/British_columbia, fr.wikipedia.org/wiki/BC) son ajenas al modelo y no se incluyen como referencias tecnicas.

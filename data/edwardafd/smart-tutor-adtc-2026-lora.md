@@ -67,7 +67,7 @@ No se dispone de información para comparar este adaptador con otros modelos de 
 
 ## Enlaces
 
-- [HuggingFace - edwardafd/smart-tutor-adtc-2026-lora](https://huggingface.co/edwardafd/smart-tutor-adtc-2026-lora)
+- [Hugging Face - edwardafd/smart-tutor-adtc-2026-lora](https://huggingface.co/edwardafd/smart-tutor-adtc-2026-lora)
 - [Africa Deep Tech Challenge 2026 - Devpost](https://adtc-2026.devpost.com/)
 - [Africa Deep Tech Challenge 2026 - Web oficial](https://africadeeptech.org/challenge-2026/)
 - [Repositorio de referencia de la competición (GitHub)](https://github.com/2kDarki/adtc-2026) (contiene otros modelos de la competición)

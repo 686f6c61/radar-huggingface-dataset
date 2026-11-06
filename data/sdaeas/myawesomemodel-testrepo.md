@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario `sdaeas` y publicado en HuggingFace bajo licencia MIT. Se presenta como un modelo basado en la librería Transformers y etiquetado en HuggingFace como `bert` y `pytorch`, aunque la información disponible no especifica la arquitectura, el tamaño ni la longitud de contexto. La model card describe una actualización significativa que mejora el razonamiento profundo y la inferencia, con un aumento del uso de tokens por pregunta en tareas de matemáticas (de 12K a 23K en AIME 2025) y una precisión que sube del 70% al 87.5% en ese benchmark.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario `sdaeas` y publicado en Hugging Face bajo licencia MIT. Se presenta como un modelo basado en la librería Transformers y etiquetado en Hugging Face como `bert` y `pytorch`, aunque la información disponible no especifica la arquitectura, el tamaño ni la longitud de contexto. La model card describe una actualización significativa que mejora el razonamiento profundo y la inferencia, con un aumento del uso de tokens por pregunta en tareas de matemáticas (de 12K a 23K en AIME 2025) y una precisión que sube del 70% al 87.5% en ese benchmark.
 
 El modelo declara capacidades de razonamiento matemático, programación, lógica y una menor tasa de alucinación, además de soporte para `function calling` y `system prompt`. También se describen plantillas para subida de archivos y búsqueda web. Sin embargo, no se proporcionan especificaciones técnicas básicas como número de parámetros, contexto, cuantizaciones ni datos de entrenamiento, lo que limita su evaluación rigurosa.
 
@@ -10,14 +10,14 @@ El modelo declara capacidades de razonamiento matemático, programación, lógic
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetas de HuggingFace sugieren BERT/Transformers, sin confirmacion) |
+| Arquitectura | no disponible (etiquetas de Hugging Face sugieren BERT/Transformers, sin confirmacion) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | no disponible (repo de HuggingFace, library_name: transformers) |
+| Formato de pesos | no disponible (repo de Hugging Face, library_name: transformers) |
 
 ## Arquitectura y entrenamiento
 
@@ -86,4 +86,4 @@ No se ha podido establecer una comparacion con modelos concretos, ya que la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sdaeas/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/sdaeas/MyAwesomeModel-TestRepo

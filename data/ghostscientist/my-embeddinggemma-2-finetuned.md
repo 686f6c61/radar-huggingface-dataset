@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my-embeddinggemma-2-finetuned es un modelo de embeddings de frases publicado por el usuario GhostScientist en HuggingFace. Se trata de un fine-tuning de google/embeddinggemma-2 realizado con la libreria sentence-transformers, orientado a tareas de similitud semantica: dado un texto, produce un vector denso de 768 dimensiones normalizado (similitud coseno) que puede emplearse para busqueda semantica, mineria de parafrasis, clasificacion y clustering. La arquitectura subyacente es un transformer encoder (EmbeddingGemma2Model) con una capa de pooling de media seguida de normalizacion L2.
+my-embeddinggemma-2-finetuned es un modelo de embeddings de frases publicado por el usuario GhostScientist en Hugging Face. Se trata de un fine-tuning de google/embeddinggemma-2 realizado con la libreria sentence-transformers, orientado a tareas de similitud semantica: dado un texto, produce un vector denso de 768 dimensiones normalizado (similitud coseno) que puede emplearse para busqueda semantica, mineria de parafrasis, clasificacion y clustering. La arquitectura subyacente es un transformer encoder (EmbeddingGemma2Model) con una capa de pooling de media seguida de normalizacion L2.
 
 El dato mas relevante para evaluar este modelo es su escala de entrenamiento: el propio autor declara un dataset de solo 3 muestras de entrenamiento con las columnas anchor, positive y negative, y funciones de perdida MultipleNegativesRankingLoss. Esto lo convierte en un artefacto de demostracion o prueba tecnica, no en un modelo listo para produccion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta y no declara licencia ni idiomas soportados.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Dimension | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GhostScientist/my-embeddinggemma-2-finetuned | 271M | 768 | no disponible (valor declarado corrupto) | no disponible | HuggingFace, 0 descargas |
-| google/embeddinggemma-2 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22M | 384 | 256 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| intfloat/multilingual-e5-base | ~278M | 768 | 512 tokens | MIT | HuggingFace, ampliamente usado |
+| GhostScientist/my-embeddinggemma-2-finetuned | 271M | 768 | no disponible (valor declarado corrupto) | no disponible | Hugging Face, 0 descargas |
+| google/embeddinggemma-2 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22M | 384 | 256 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| intfloat/multilingual-e5-base | ~278M | 768 | 512 tokens | MIT | Hugging Face, ampliamente usado |
 
 La comparativa con alternativas de la misma categoria (embeddings densos multilingues de tamano medio) solo puede hacerse de forma cualitativa: este fine-tuning parte de una base razonable pero apenas modifica el modelo, por lo que no cabe esperar que supere al modelo base ni a referencias asentadas como all-MiniLM-L6-v2 o multilingual-e5-base. Los datos de los modelos de referencia proceden de fuentes publicas generales y no de la informacion proporcionada en esta ficha.
 
@@ -91,10 +91,10 @@ La comparativa con alternativas de la misma categoria (embeddings densos multili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GhostScientist/my-embeddinggemma-2-finetuned
+- Modelo en Hugging Face: https://huggingface.co/GhostScientist/my-embeddinggemma-2-finetuned
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos de la libreria sentence-transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos de la libreria sentence-transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Paper de MultipleNegativesRankingLoss (referencia arxiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Paper de referencia arxiv:1807.03748: https://arxiv.org/abs/1807.03748

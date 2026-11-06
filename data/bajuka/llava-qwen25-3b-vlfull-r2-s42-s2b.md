@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LLaVA-qwen25-3b-VLfull-r2-s42-s2b es un modelo vision-lenguaje (image-text-to-text) de 3.490.246.176 parámetros publicado por el usuario BAJUKA en HuggingFace. Se construye sobre el backbone de texto Qwen/Qwen2.5-3B-Instruct y añade una torre de visión google/siglip-so400m-patch14-384 conectada mediante un proyector multimodal, siguiendo la arquitectura y el código de LLaVA-NeXT. No es un lanzamiento de producto: es el brazo «VL-full» de una rejilla de experimentos controlados que compara entrenamiento visual frente a entrenamiento solo de texto, con semilla 42 y muestra de mezcla de datos r2.
+LLaVA-qwen25-3b-VLfull-r2-s42-s2b es un modelo vision-lenguaje (image-text-to-text) de 3.490.246.176 parámetros publicado por el usuario BAJUKA en Hugging Face. Se construye sobre el backbone de texto Qwen/Qwen2.5-3B-Instruct y añade una torre de visión google/siglip-so400m-patch14-384 conectada mediante un proyector multimodal, siguiendo la arquitectura y el código de LLaVA-NeXT. No es un lanzamiento de producto: es el brazo «VL-full» de una rejilla de experimentos controlados que compara entrenamiento visual frente a entrenamiento solo de texto, con semilla 42 y muestra de mezcla de datos r2.
 
 El checkpoint corresponde a la etapa S2b (instruct stage) del análogo de tres etapas de LLaVA-OneVision, inicializado desde el checkpoint S2a del mismo brazo. Durante esta etapa se entrenaron simultáneamente el proyector, la torre de visión y el modelo de lenguaje sobre una mezcla de 747.754 ejemplos (697.798 de instruct_700k_r2 y 49.956 de language_50k_v2), durante 5.841 pasos con batch global 128 y precisión bfloat16, alcanzando una pérdida de 1,216 a 0,669.
 
@@ -104,7 +104,7 @@ La comparación de rendimiento con estas alternativas no es posible con los dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAJUKA/LLaVA-qwen25-3b-VLfull-r2-s42-s2b
+- Modelo en Hugging Face: https://huggingface.co/BAJUKA/LLaVA-qwen25-3b-VLfull-r2-s42-s2b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Repositorio de LLaVA-NeXT (necesario para cargar los pesos): https://github.com/LLaVA-VL/LLaVA-NeXT

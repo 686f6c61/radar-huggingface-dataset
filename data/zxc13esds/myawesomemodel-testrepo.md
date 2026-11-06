@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo descrito en el repositorio ZXC13ESDS/MyAwesomeModel-TestRepo de HuggingFace como un asistente conversacional con capacidades avanzadas de razonamiento, matemáticas, programación y lógica. Según la model card, el modelo ha experimentado una actualización significativa que mejora su profundidad de razonamiento mediante el uso de más tokens de pensamiento (23.000 por pregunta en AIME 2025, frente a 12.000 en la versión anterior) y una reducción de la tasa de alucinación.
+MyAwesomeModel es un modelo descrito en el repositorio ZXC13ESDS/MyAwesomeModel-TestRepo de Hugging Face como un asistente conversacional con capacidades avanzadas de razonamiento, matemáticas, programación y lógica. Según la model card, el modelo ha experimentado una actualización significativa que mejora su profundidad de razonamiento mediante el uso de más tokens de pensamiento (23.000 por pregunta en AIME 2025, frente a 12.000 en la versión anterior) y una reducción de la tasa de alucinación.
 
 Sin embargo, es importante señalar que este repositorio es un repositorio de prueba (TestRepo) con un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo. La información disponible es limitada y proviene exclusivamente de la model card redactada por el autor, que no especifica detalles arquitectónicos como el número de parámetros, la longitud de contexto o los datos de entrenamiento. Los tags del repositorio indican "bert" y "feature-extraction", lo que contradice las capacidades de generación y razonamiento descritas en la model card.
 
@@ -96,8 +96,8 @@ La model card compara MyAwesomeModel con tres modelos de referencia denominados 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZXC13ESDS/MyAwesomeModel-TestRepo
-- Repositorio similar en HuggingFace (tgahaer): https://huggingface.co/tgahaer/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ZXC13ESDS/MyAwesomeModel-TestRepo
+- Repositorio similar en Hugging Face (tgahaer): https://huggingface.co/tgahaer/MyAwesomeModel-TestRepo
 - Página del paquete en Socket.dev: https://socket.dev/huggingface/package/mm-tool/myawesomemodel-testrepo
 - Entrada en Toolify.ai: https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo
 

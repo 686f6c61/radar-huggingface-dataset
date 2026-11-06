@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Idioma | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|---|
-| nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 (este modelo) | 39,1 M | No disponible | Decoder-only GPT-2 ajustado con SFT | Neerlandés (presunto) | No disponible | Safetensors en HuggingFace, 0 descargas | No disponible |
-| goldfish-models/nld_latn_10mb (modelo base) | 39,1 M (el ajuste fino no altera la forma de los pesos) | No disponible | Decoder-only GPT-2 monolingüe | Neerlandés | No disponible | HuggingFace | No disponible |
+| nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 (este modelo) | 39,1 M | No disponible | Decoder-only GPT-2 ajustado con SFT | Neerlandés (presunto) | No disponible | Safetensors en Hugging Face, 0 descargas | No disponible |
+| goldfish-models/nld_latn_10mb (modelo base) | 39,1 M (el ajuste fino no altera la forma de los pesos) | No disponible | Decoder-only GPT-2 monolingüe | Neerlandés | No disponible | Hugging Face | No disponible |
 | openai-community/gpt2 | 124 M | 1.024 tokens | Decoder-only GPT-2 | Inglés | Licencia MIT modificada de OpenAI | Ampliamente disponible | No comparable (idioma y tarea distintos) |
-| pdelobelle/robbert-v2-dutch-base | 116 M | 512 tokens | Encoder tipo RoBERTa | Neerlandés | MIT | HuggingFace | No disponible (tarea distinta: comprensión, no generación) |
+| pdelobelle/robbert-v2-dutch-base | 116 M | 512 tokens | Encoder tipo RoBERTa | Neerlandés | MIT | Hugging Face | No disponible (tarea distinta: comprensión, no generación) |
 
 Nota: los datos de los modelos comparativos proceden de conocimiento general y no se han podido verificar mediante la búsqueda web realizada para esta ficha. No existe ningún benchmark que permita comparar el rendimiento de este ajuste con el de las alternativas.
 
@@ -93,7 +93,7 @@ Nota: los datos de los modelos comparativos proceden de conocimiento general y n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/yo8gveb2

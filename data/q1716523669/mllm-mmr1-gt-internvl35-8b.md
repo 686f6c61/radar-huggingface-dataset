@@ -4,7 +4,7 @@
 
 El modelo `q1716523669/mllm-mmr1-gt-internvl35-8b` es un ajuste fino del modelo multimodal `OpenGVLab/InternVL3_5-8B-HF`, desarrollado por el usuario q1716523669. Se entrena con el método GT-GRPO (ground-truth labels), una variante de GRPO que utiliza etiquetas reales para optimizar el razonamiento, sobre el dataset mmr1 (aproximadamente 8.000 ejemplos) durante una sola época, seleccionando el mejor checkpoint según una media de 4 benchmarks (56,1). El objetivo es mejorar las capacidades de razonamiento multimodal del modelo base, manteniendo su arquitectura original.
 
-El modelo se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors. El repositorio ocupa 34,1 GB, lo que sugiere que los pesos están en precisión completa o fp16. Aunque el modelo base tiene 8 mil millones de parámetros, el dato de parámetros totales proporcionado en HuggingFace (695.296) parece corresponder a un archivo parcial o a un error de metadatos, por lo que no se puede confirmar el número exacto. La ficha se centra en el ajuste fino, no en el modelo base, del cual no se proporcionan detalles técnicos adicionales en la información disponible.
+El modelo se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors. El repositorio ocupa 34,1 GB, lo que sugiere que los pesos están en precisión completa o fp16. Aunque el modelo base tiene 8 mil millones de parámetros, el dato de parámetros totales proporcionado en Hugging Face (695.296) parece corresponder a un archivo parcial o a un error de metadatos, por lo que no se puede confirmar el número exacto. La ficha se centra en el ajuste fino, no en el modelo base, del cual no se proporcionan detalles técnicos adicionales en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 ## Limitaciones y advertencias
 
 - La informacion sobre el modelo es muy limitada: no se detallan capacidades, limitaciones, sesgos ni riesgos especificos.
-- El dato de parametros totales en HuggingFace (695.296) es inconsistente con el tamaño del modelo base, lo que sugiere un posible error en los metadatos.
+- El dato de parametros totales en Hugging Face (695.296) es inconsistente con el tamaño del modelo base, lo que sugiere un posible error en los metadatos.
 - No se ha publicado informacion sobre sesgos, alucinaciones o limitaciones de contexto.
 - La licencia Apache 2.0 permite uso comercial, pero se debe verificar el cumplimiento de las condiciones de la licencia del modelo base (InternVL3_5-8B-HF).
 - El modelo se ha entrenado con un dataset reducido (8k ejemplos) y una sola epoca, por lo que su rendimiento en tareas fuera del dominio de entrenamiento puede ser limitado.
@@ -73,6 +73,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/q1716523669/mllm-mmr1-gt-internvl35-8b
+- Repositorio Hugging Face: https://huggingface.co/q1716523669/mllm-mmr1-gt-internvl35-8b
 - Repositorio endpoint (mencionado en la model card, sin URL directa): `q1716523669/mllm-mmr1-gt-internvl35-8b-endpoint`
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3_5-8B-HF

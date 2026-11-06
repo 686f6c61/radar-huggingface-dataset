@@ -85,7 +85,7 @@ No se dispone de comparación con otros modelos de agente de compra de tamaño s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrzhao13/qwen3.5-2b-shopsimulator-grpo-rl500-1ep
+- Repositorio Hugging Face: https://huggingface.co/mrzhao13/qwen3.5-2b-shopsimulator-grpo-rl500-1ep
 - Modelo base SFT: https://huggingface.co/mrzhao13/qwen3.5-2b-shopsimulator-sft-512-1ep
 - Modelo original Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Paper ShopSimulator (arXiv): https://arxiv.org/abs/2601.18225

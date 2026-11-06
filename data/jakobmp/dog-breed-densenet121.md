@@ -70,9 +70,9 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jakobmp/dog-breed-densenet121` | no disponible (DenseNet121 + cabezas densas) | Imagen 224x224x3 | 96,14 % top-1 en test propio (70 razas) | Apache-2.0 | HuggingFace, ONNX y Keras |
+| `jakobmp/dog-breed-densenet121` | no disponible (DenseNet121 + cabezas densas) | Imagen 224x224x3 | 96,14 % top-1 en test propio (70 razas) | Apache-2.0 | Hugging Face, ONNX y Keras |
 | DenseNet121 ImageNet (torchvision/keras) | no disponible | Imagen 224x224x3 | Clasificacion ImageNet de 1000 clases, no razas de perro | BSD / Apache segun implementacion | Amplia |
-| Otros clasificadores de razas en HuggingFace | no disponible | Variable | no disponible | Variable | HuggingFace |
+| Otros clasificadores de razas en Hugging Face | no disponible | Variable | no disponible | Variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la informacion proporcionada; la comparacion se limita a la naturaleza del modelo y su licencia.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jakobmp/dog-breed-densenet121
+- Modelo en Hugging Face: https://huggingface.co/jakobmp/dog-breed-densenet121
 - Aplicacion web: https://dog-breed-classifier-frontend.vercel.app
 - Cuaderno de entrenamiento en Kaggle: https://www.kaggle.com/code/jakobmp/dog-breed-classification-densenet
 - Dataset de Kaggle: https://www.kaggle.com/datasets/gpiosenka/70-dog-breedsimage-data-set

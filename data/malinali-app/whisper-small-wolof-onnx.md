@@ -17,7 +17,7 @@ La relevancia de esta ficha esta en su nicho: el wolof es una lengua de bajos re
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | Ventanas de audio de 30 s por segmento (limite propio de Whisper); no aplica contexto de tokens de un LLM |
 | Tipos de cuantizacion | int8 (cuantizacion de las operaciones MatMul en encoder.int8.onnx y decoder.int8.onnx) |
-| Idiomas soportados | Wolof (deducido del nombre y del modelo base); no declarado en los metadatos de HuggingFace |
+| Idiomas soportados | Wolof (deducido del nombre y del modelo base); no declarado en los metadatos de Hugging Face |
 | Licencia | MIT |
 | Formato de pesos | ONNX (grafos sherpa-onnx; encoder.int8.onnx, decoder.int8.onnx, tokens.txt) |
 
@@ -75,7 +75,7 @@ La comparacion cuantitativa de rendimiento (WER) entre estas alternativas no est
 ## Limitaciones y advertencias
 
 - Es un artefacto de despliegue, no un modelo entrenable: no permite ajuste fino directo en este formato.
-- Idiomas soportados no declarados oficialmente en HuggingFace; la especializacion en wolof se deduce del nombre y del modelo base, no de documentacion explicita.
+- Idiomas soportados no declarados oficialmente en Hugging Face; la especializacion en wolof se deduce del nombre y del modelo base, no de documentacion explicita.
 - No se documenta si el modelo realiza traduccion a ingles (tarea de Whisper `translate`) o solo transcripcion.
 - Exposicion a sesgos y errores del corpus de ajuste fino del modelo base, cuyo contenido no se describe.
 - Riesgo de alucinacion en ASR: Whisper puede generar texto plausible en segmentos con ruido, silencios o audio poco inteligible, especialmente en lenguas de bajos recursos.
@@ -87,7 +87,7 @@ La comparacion cuantitativa de rendimiento (WER) entre estas alternativas no est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/whisper-small-wolof-onnx
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/whisper-small-wolof-onnx
 - Modelo base: https://huggingface.co/M9and2M/whisper-small-wolof
 - Proyecto Malinali: https://github.com/malinali-app/malinali-app
 - Paquete relacionado (suajili, GGML): https://huggingface.co/malinali-app/whisper-swahili-small-ggml

@@ -74,8 +74,8 @@ Los diez benchmarks del macro-promedio son ARC-Challenge, ARC-Easy, BoolQ, Hella
 
 | Modelo | Parametros | Contexto | Puntuacion media (10 benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeonaQ-Orbit-9B | 9B + 197.088 adaptador | No disponible | 71,02 | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B (base, 4 bits) | 9B | No disponible | 70,96 | No disponible en la informacion | HuggingFace |
+| LeonaQ-Orbit-9B | 9B + 197.088 adaptador | No disponible | 71,02 | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B (base, 4 bits) | 9B | No disponible | 70,96 | No disponible en la informacion | Hugging Face |
 | MLP-16 sobre Qwen3.5-9B | 9B + 1.576.704 adaptador | No disponible | 70,90 | No disponible | Referencia interna de la model card |
 | LoRA rank 6, dos sitios | 9B + 196.608 adaptador | No disponible | 70,87 | No disponible | Referencia interna de la model card |
 
@@ -95,7 +95,7 @@ La comparativa se limita a variantes del mismo backbone evaluadas en la model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeonaQuantum/LeonaQ-Orbit-9B
+- Modelo en Hugging Face: https://huggingface.co/LeonaQuantum/LeonaQ-Orbit-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Resultados completos de evaluacion (referenciados en la model card): `evaluation/results.json` dentro del repositorio
 - Imagen de rendimiento y parametros del adaptador: https://huggingface.co/LeonaQuantum/LeonaQ-Orbit-9B/resolve/22e37091bf5ebae21a5f61c22cb70db6b3f6982d/assets/parameter_performance.png

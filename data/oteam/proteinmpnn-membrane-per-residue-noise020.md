@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Condicionamiento | Etiquetas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/proteinmpnn-membrane-per-residue-noise020 | 1,691 M | Por residuo | 3 clases (expuesto/interfaz/enterrado) | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/membranempnn-per-residue | No disponible | Por residuo | 3 clases | No disponible | HuggingFace (oteam) |
-| oteam/membranempnn-global | No disponible | Global | Binaria (soluble/transmembrana) | No disponible | HuggingFace (oteam) |
+| oteam/proteinmpnn-membrane-per-residue-noise020 | 1,691 M | Por residuo | 3 clases (expuesto/interfaz/enterrado) | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/membranempnn-per-residue | No disponible | Por residuo | 3 clases | No disponible | Hugging Face (oteam) |
+| oteam/membranempnn-global | No disponible | Global | Binaria (soluble/transmembrana) | No disponible | Hugging Face (oteam) |
 | ProteinMPNN (original) | ~1,7 M (aprox., no confirmado) | Sin condicionamiento de membrana | No aplica | MIT (upstream, no confirmado) | GitHub dauparas/ProteinMPNN |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 - Implementación no oficial: la model card advierte explícitamente que el equipo que publicó MembraneMPNN no escribió esta ficha ni este artefacto; es una reimplementación del equipo OFoldX, por lo que puede diferir del comportamiento de los checkpoints originales.
 - Licencia AGPL-3.0: impone obligaciones copyleft fuertes; el uso comercial en productos propietarios puede requerir revisión legal y, en su caso, liberar el código derivado.
-- Dependencia de la librería `ofoldx`: el modelo no es utilizable con frameworks estándar de HuggingFace Transformers; requiere la librería propietaria del proyecto OFoldX.
+- Dependencia de la librería `ofoldx`: el modelo no es utilizable con frameworks estándar de Hugging Face Transformers; requiere la librería propietaria del proyecto OFoldX.
 - Riesgo de sobreajuste a las etiquetas: la calidad del diseño depende de la correcta asignación de etiquetas de membrana por residuo; etiquetados erróneos pueden producir secuencias no plegables o incompatibles con la bicapa.
 - Sin datos de benchmarks: no hay evidencia publicada en la información disponible sobre la calidad de recuperación de secuencia ni comparación con los checkpoints upstream.
 - Sesgos de los datos de entrenamiento: la model card remite a LigandMPNN para la composición del dataset; no se detalla la cobertura taxonómica ni el balance de tipos de proteínas de membrana, lo que puede introducir sesgos hacia familias sobrerrepresentadas.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/proteinmpnn-membrane-per-residue-noise020
+- Modelo en Hugging Face: https://huggingface.co/oteam/proteinmpnn-membrane-per-residue-noise020
 - Variante global: https://huggingface.co/oteam/membranempnn-global
 - Variante por residuo: https://huggingface.co/oteam/membranempnn-per-residue
 - Código del modelo en OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/membranempnn

@@ -121,7 +121,7 @@ Segun el autor, el modelo de 4 B supera al de 2 B en 8-16 puntos en enrutado y v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/midium-ai/decider-4b-dwq-4bit
+- Modelo en Hugging Face: https://huggingface.co/midium-ai/decider-4b-dwq-4bit
 - Modelo base: https://huggingface.co/Mapika/decider-4b
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Version reducida comparable: https://huggingface.co/midium-ai/decider-2b-dwq-4bit

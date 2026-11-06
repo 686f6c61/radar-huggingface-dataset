@@ -72,7 +72,7 @@ Se incluye la tabla de comparación interna de la misma familia ISOM proporciona
 - El soporte de tool calling y el uso en agentes no está documentado, por lo que la integración en pipelines de CI/CD con herramientas externas requiere pruebas propias.
 
 ## Enlaces
-- [HuggingFace del modelo](https://huggingface.co/Prannesshkva/ISOM-R1-Coder-16B-MoE)
+- [Hugging Face del modelo](https://huggingface.co/Prannesshkva/ISOM-R1-Coder-16B-MoE)
 - [DOI Zenodo](https://doi.org/10.5281/zenodo.22649142)
 - [Licencia DeepSeek](https://github.com/deepseek-ai/DeepSeek-Coder-V2/blob/main/LICENSE-MODEL)
 - [Espacio de benchmarks ISOM](https://huggingface.co/spaces/Prannesshkva/ISOM-Benchmark)

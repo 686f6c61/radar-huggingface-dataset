@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Bhuvnesh-007/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium, usando la librería stable-baselines3. No es un modelo de lenguaje: es una política entrenada para resolver una tarea de control, en la que un módulo lunar debe aterrizar de forma estable entre dos banderas consumiendo el mínimo combustible posible. El repositorio está publicado en HuggingFace Hub con el pipeline `reinforcement-learning` y la etiqueta `stable-baselines3`, lo que permite cargarlo directamente con la utilidad `load_from_hub` del paquete `huggingface_sb3`.
+`Bhuvnesh-007/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium, usando la librería stable-baselines3. No es un modelo de lenguaje: es una política entrenada para resolver una tarea de control, en la que un módulo lunar debe aterrizar de forma estable entre dos banderas consumiendo el mínimo combustible posible. El repositorio está publicado en Hugging Face Hub con el pipeline `reinforcement-learning` y la etiqueta `stable-baselines3`, lo que permite cargarlo directamente con la utilidad `load_from_hub` del paquete `huggingface_sb3`.
 
 El autor declara una recompensa media de 268,24 ± 21,76 en `LunarLander-v3`, un valor por encima del umbral de 200 que el propio entorno considera habitualmente como "resuelto". El dato aparece en el `model-index` de la model card, pero está marcado como no verificado (`verified: false`) y no se acompaña de información sobre el número de pasos de entrenamiento, las semillas empleadas ni los hiperparámetros del algoritmo.
 
-El interés del modelo es, por tanto, formativo y de referencia: sirve como ejemplo reproducible de un checkpoint PPO funcional dentro del ecosistema stable-baselines3 y HuggingFace, no como componente listo para producción. La model card está incompleta (el bloque de uso contiene un `TODO`), el repositorio ocupa 0,0 GB y no se declara licencia, lo que limita su reutilización comercial sin aclaración previa por parte del autor.
+El interés del modelo es, por tanto, formativo y de referencia: sirve como ejemplo reproducible de un checkpoint PPO funcional dentro del ecosistema stable-baselines3 y Hugging Face, no como componente listo para producción. La model card está incompleta (el bloque de uso contiene un `TODO`), el repositorio ocupa 0,0 GB y no se declara licencia, lo que limita su reutilización comercial sin aclaración previa por parte del autor.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ Tampoco se especifican las semillas, el número de episodios de evaluación, el 
 - Pruebas de infraestructura de evaluación RL: al ser un checkpoint pequeño y de carga rápida, es útil para validar pipelines de CI que comprueban que el entorno, la versión de Gymnasium y las dependencias funcionan antes de lanzar experimentos mayores.
 - Generación de trayectorias de demostración: las ejecuciones del agente pueden registrarse como pares observación-acción para *behavior cloning* o para inicializar políticas en variantes del entorno.
 - Prototipado de controladores en simulación: la dinámica de cuerpo rígido con empuje limitado y consumo de combustible es análoga a problemas de control de vehículos, por lo que el agente puede usarse como ejemplo didáctico de diseño de funciones de recompensa.
-- Reproducción de tutoriales del curso de Deep RL de HuggingFace: el modelo encaja en los cuadernos que emplean stable-baselines3 junto con `huggingface_sb3`, aunque el bloque de código de la model card está sin completar.
+- Reproducción de tutoriales del curso de Deep RL de Hugging Face: el modelo encaja en los cuadernos que emplean stable-baselines3 junto con `huggingface_sb3`, aunque el bloque de código de la model card está sin completar.
 - Análisis de sensibilidad a la varianza: con una recompensa declarada de 268,24 ± 21,76, el checkpoint permite estudiar la dispersión de resultados entre episodios y el impacto de la estocasticidad de la política.
 
 ## Benchmarks y rendimiento
@@ -75,10 +75,10 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Algoritmo | Entorno | Recompensa declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bhuvnesh-007/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 268,24 ± 21,76 (no verificado) | no disponible | HuggingFace Hub |
-| Bibhu007/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no disponible | HuggingFace Hub |
-| EverVissionAI/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no disponible | HuggingFace Hub |
-| sajeeb-ai/RL_PPO-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no disponible | GitHub + HuggingFace Hub |
+| Bhuvnesh-007/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 268,24 ± 21,76 (no verificado) | no disponible | Hugging Face Hub |
+| Bibhu007/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no disponible | Hugging Face Hub |
+| EverVissionAI/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no disponible | Hugging Face Hub |
+| sajeeb-ai/RL_PPO-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no disponible | GitHub + Hugging Face Hub |
 
 Los tres alternativas localizadas son checkpoints de la misma familia (PPO + stable-baselines3 + LunarLander) publicados por otros autores. Ninguna de ellas expone métricas de recompensa en la información disponible, por lo que no es posible establecer una comparación cuantitativa; la única diferencia contrastable es que este repositorio sí incluye un `model-index` con una cifra de recompensa, aunque sin verificar.
 
@@ -97,7 +97,7 @@ Los tres alternativas localizadas son checkpoints de la misma familia (PPO + sta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bhuvnesh-007/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Bhuvnesh-007/ppo-LunarLander-v3
 - Repositorio de stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga `huggingface_sb3`: https://github.com/huggingface/huggingface_sb3
 - Documentación del entorno LunarLander (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

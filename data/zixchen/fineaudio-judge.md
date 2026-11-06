@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FineAudio-Judge es un adaptador LoRA de evaluación fina para generación texto-a-audio, desarrollado por el usuario Zixchen y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo generativo autónomo, sino un componente de juicio: dado un par audio-texto, descompone la descripción en eventos, atributos y relaciones entre eventos, los convierte en preguntas de rúbrica binarias (sí/no) y evalúa si el audio satisface cada aspecto del texto. La proporción de respuestas afirmativas constituye la puntuación global de consistencia audio-texto.
+FineAudio-Judge es un adaptador LoRA de evaluación fina para generación texto-a-audio, desarrollado por el usuario Zixchen y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo autónomo, sino un componente de juicio: dado un par audio-texto, descompone la descripción en eventos, atributos y relaciones entre eventos, los convierte en preguntas de rúbrica binarias (sí/no) y evalúa si el audio satisface cada aspecto del texto. La proporción de respuestas afirmativas constituye la puntuación global de consistencia audio-texto.
 
 El adaptador se obtiene por ajuste supervisado (SFT) sobre Qwen3-Omni-30B-A3B-Instruct, un modelo omni-modal con arquitectura MoE de 30.000 millones de parámetros totales y 3.000 millones activos, con capacidad nativa de procesamiento de audio y texto. FineAudio-Judge reutiliza esa base y añade la capacidad específica de emitir juicios de rúbrica sobre audio, algo que el modelo base no está especializado en hacer de forma fiable.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FineAudio-Judge | LoRA juez audio-texto | 30B base (3B activos) | no disponible | Apache 2.0 | HuggingFace + código en GitHub |
-| Qwen3-Omni-30B-A3B-Instruct | Modelo base omni-modal | 30B (3B activos) | no disponible | Apache 2.0 | HuggingFace |
+| FineAudio-Judge | LoRA juez audio-texto | 30B base (3B activos) | no disponible | Apache 2.0 | Hugging Face + código en GitHub |
+| Qwen3-Omni-30B-A3B-Instruct | Modelo base omni-modal | 30B (3B activos) | no disponible | Apache 2.0 | Hugging Face |
 | CLAP score | Métrica de similitud audio-texto | no aplica | no aplica | variable | Librerías de audio |
 | FAD | Métrica de calidad de audio generado | no aplica | no aplica | variable | Librerías de audio |
 
@@ -86,7 +86,7 @@ No se dispone de información sobre otros modelos juez de audio comparables en l
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Zixchen/FineAudio-Judge
+- Hugging Face del adaptador: https://huggingface.co/Zixchen/FineAudio-Judge
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct
 - Benchmark: https://huggingface.co/datasets/Zixchen/FineAudio-Judge-Benchmark
 - Código: https://github.com/QwenAudio/FunResearch/tree/main/FineAudio-Judge

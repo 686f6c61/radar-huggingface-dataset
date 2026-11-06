@@ -25,7 +25,7 @@ La relevancia actual del repositorio es limitada y condicionada: ofrece una vía
 
 No se dispone de informacion sobre la arquitectura del modelo base `junshim/When2Think-1.5B`. El repositorio analizado no contiene pesos en precision completa ni documentacion sobre el tipo de red (transformer denso, MoE, SSM o hibrida), el numero de capas, las dimensiones de atencion, el vocabulario ni el mecanismo de atencion empleado. Tampoco se detalla el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento.
 
-La unica informacion tecnica verificable es la relativa al proceso de conversion: los metadatos indican una cuantizacion estatica (`quantize_version: 2`) con tensor de salida cuantizado (`output_tensor_quantised: 1`) y conversion desde pesos en formato HuggingFace (`convert_type: hf`). Esto es consistente con el flujo habitual de `llama.cpp` para producir los distintos niveles de cuantizacion listados (desde Q2_K hasta Q8_0, ademas de una variante f16 sin perdida adicional mas alla de la propia conversion). No se documenta ninguna innovacion tecnica adicional ni proceso de decodificacion especulativa.
+La unica informacion tecnica verificable es la relativa al proceso de conversion: los metadatos indican una cuantizacion estatica (`quantize_version: 2`) con tensor de salida cuantizado (`output_tensor_quantised: 1`) y conversion desde pesos en formato Hugging Face (`convert_type: hf`). Esto es consistente con el flujo habitual de `llama.cpp` para producir los distintos niveles de cuantizacion listados (desde Q2_K hasta Q8_0, ademas de una variante f16 sin perdida adicional mas alla de la propia conversion). No se documenta ninguna innovacion tecnica adicional ni proceso de decodificacion especulativa.
 
 ## Capacidades
 
@@ -82,8 +82,8 @@ No es posible establecer una comparativa rigurosa porque se desconoce la arquite
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| When2Think-1.5B-GGUF (este repositorio) | ~1,5B (segun nombre) | no disponible | no disponible | HuggingFace, cuantizaciones GGUF |
-| Modelo base junshim/When2Think-1.5B | no disponible | no disponible | no disponible | HuggingFace |
+| When2Think-1.5B-GGUF (este repositorio) | ~1,5B (segun nombre) | no disponible | no disponible | Hugging Face, cuantizaciones GGUF |
+| Modelo base junshim/When2Think-1.5B | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de ~1-2B en GGUF (por ejemplo, familias Qwen, Llama o Gemma) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces recuperados corresponden a paginas de ayuda de YouTube y no guardan relacion con el repositorio. Por tanto, no se dispone de datos objetivos para comparar con alternativas de la misma categoria.

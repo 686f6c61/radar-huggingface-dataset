@@ -2,13 +2,13 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado por el usuario rtrtyy11 en HuggingFace, etiquetado como transformers, pytorch y bert, con pipeline de feature-extraction y licencia MIT. La model card describe una actualización significativa del modelo con mejoras en razonamiento e inferencia, incluyendo un aumento de precisión en el test AIME 2025 del 70% al 87,5% y una reducción de la tasa de alucinación, así como soporte mejorado para function calling. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido pesos del modelo, y los resultados de benchmarks aparecen como placeholders ({RESULT}) sin valores reales. No se proporcionan datos sobre arquitectura, número de parámetros, contexto ni dataset de entrenamiento, por lo que las capacidades declaradas no son verificables en la práctica.
+MyAwesomeModel es un modelo publicado por el usuario rtrtyy11 en Hugging Face, etiquetado como transformers, pytorch y bert, con pipeline de feature-extraction y licencia MIT. La model card describe una actualización significativa del modelo con mejoras en razonamiento e inferencia, incluyendo un aumento de precisión en el test AIME 2025 del 70% al 87,5% y una reducción de la tasa de alucinación, así como soporte mejorado para function calling. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido pesos del modelo, y los resultados de benchmarks aparecen como placeholders ({RESULT}) sin valores reales. No se proporcionan datos sobre arquitectura, número de parámetros, contexto ni dataset de entrenamiento, por lo que las capacidades declaradas no son verificables en la práctica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta "bert" en HuggingFace, sin confirmar) |
+| Arquitectura | no disponible (etiqueta "bert" en Hugging Face, sin confirmar) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -19,7 +19,7 @@ MyAwesomeModel es un modelo publicado por el usuario rtrtyy11 en HuggingFace, et
 
 ## Arquitectura y entrenamiento
 
-La model card menciona que el modelo ha experimentado una "actualización significativa de versión" que mejora la profundidad de razonamiento mediante mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. No se especifican detalles sobre la arquitectura subyacente, el número de parámetros, la composición del dataset de entrenamiento ni el número de tokens utilizados. La etiqueta "bert" en HuggingFace sugiere una arquitectura basada en transformer, pero no hay confirmación técnica. Existe una incoherencia notable: el pipeline declarado es "feature-extraction" (típico de modelos de embeddings), mientras que la model card describe un asistente conversacional generativo con capacidades de razonamiento, lo que resulta contradictorio. Tampoco se documenta si se emplearon técnicas como RLHF, DPO o SFT.
+La model card menciona que el modelo ha experimentado una "actualización significativa de versión" que mejora la profundidad de razonamiento mediante mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. No se especifican detalles sobre la arquitectura subyacente, el número de parámetros, la composición del dataset de entrenamiento ni el número de tokens utilizados. La etiqueta "bert" en Hugging Face sugiere una arquitectura basada en transformer, pero no hay confirmación técnica. Existe una incoherencia notable: el pipeline declarado es "feature-extraction" (típico de modelos de embeddings), mientras que la model card describe un asistente conversacional generativo con capacidades de razonamiento, lo que resulta contradictorio. Tampoco se documenta si se emplearon técnicas como RLHF, DPO o SFT.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ La model card compara MyAwesomeModel con "Model1", "Model2" y "Model1-v2", pero 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rtrtyy11/MyAwesomeModel
+- Repositorio Hugging Face: https://huggingface.co/rtrtyy11/MyAwesomeModel
 - Repositorio de prueba: https://huggingface.co/rtrtyy11/MyAwesomeModel-TestRepo
 - Perfil del autor: https://huggingface.co/rtrtyy11
 - Ficha en free2aitools (TestRepo): https://free2aitools.com/model/sotaagi2030/myawesomemodel-testrepo

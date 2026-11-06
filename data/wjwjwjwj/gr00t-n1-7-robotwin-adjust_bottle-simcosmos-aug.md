@@ -70,10 +70,10 @@ Comparacion estadistica frente a v1 sobre las mismas 100 escenas (McNemar): Easy
 
 | Modelo | Parametros | Contexto | Rendimiento (RoboTwin adjust_bottle) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (v9comp) | 3B | no disponible | Easy 95 / Hard 95 | NVIDIA Open Model License | HuggingFace |
-| v1 (cosmos-aug) | 3B | no disponible | Easy 99 / Hard 97 | NVIDIA Open Model License | HuggingFace |
-| Baseline clean 50 | 3B | no disponible | Easy 73 / Hard 52 | NVIDIA Open Model License | HuggingFace |
-| GR00T N1.7-3B base | 3B | no disponible | no disponible | NVIDIA Open Model License | HuggingFace (nvidia) |
+| Este modelo (v9comp) | 3B | no disponible | Easy 95 / Hard 95 | NVIDIA Open Model License | Hugging Face |
+| v1 (cosmos-aug) | 3B | no disponible | Easy 99 / Hard 97 | NVIDIA Open Model License | Hugging Face |
+| Baseline clean 50 | 3B | no disponible | Easy 73 / Hard 52 | NVIDIA Open Model License | Hugging Face |
+| GR00T N1.7-3B base | 3B | no disponible | no disponible | NVIDIA Open Model License | Hugging Face (nvidia) |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ Comparacion estadistica frente a v1 sobre las mismas 100 escenas (McNemar): Easy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-adjust_bottle-simcosmos-aug
+- Modelo en Hugging Face: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-adjust_bottle-simcosmos-aug
 - Modelo v1 de referencia: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-adjust_bottle-cosmos-aug
 - Dataset de entrenamiento: https://huggingface.co/datasets/wjwjwjwj/robotwin-adjust_bottle-clean50-simcosmos68-gr00t
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B

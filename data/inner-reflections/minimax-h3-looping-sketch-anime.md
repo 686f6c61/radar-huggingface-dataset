@@ -3,7 +3,7 @@
 ## Resumen
 Este modelo es un fine-tune de MiniMax H3, desarrollado por el usuario Inner-Reflections, especializado en la generacion de bocetos animados en estilo anime con bucle continuo (looping). El modelo base, MiniMax H3, es un modelo nativo multimodal de generacion de video 2K con audio estereo 3D sincronizado, desarrollado por MiniMax (Hailuo AI 3.0). Este fine-tune concreto se centra en un nicho muy especifico: crear animaciones cortas y ciclicas de estilo anime, optimizando la salida para un estilo visual concreto.
 
-Aunque el modelo base es potente y generalista, esta adaptacion busca ofrecer resultados mas coherentes y estilizados para el caso de uso de bocetos anime en bucle. No se dispone de informacion sobre la licencia, el pipeline, los idiomas soportados ni los parametros del modelo en la ficha de HuggingFace. El modelo tiene 0 descargas pero 52 likes, lo que indica interes de la comunidad pero poca validacion en produccion.
+Aunque el modelo base es potente y generalista, esta adaptacion busca ofrecer resultados mas coherentes y estilizados para el caso de uso de bocetos anime en bucle. No se dispone de informacion sobre la licencia, el pipeline, los idiomas soportados ni los parametros del modelo en la ficha de Hugging Face. El modelo tiene 0 descargas pero 52 likes, lo que indica interes de la comunidad pero poca validacion en produccion.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Baja adopcion (0 descargas) aunque con 52 likes, lo que sugiere interes de la comunidad pero poca validacion en entornos de produccion reales.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime
+- Hugging Face: https://huggingface.co/Inner-Reflections/MiniMax-H3-Looping-Sketch-Anime
 - Repositorio del modelo base: https://github.com/ai-models-lab/minimax-h3
 - Guias y despliegue del modelo base: https://design.minimax.io/h3
 - Workflow de ComfyUI para MiniMax H3: https://civitai.com/models/2834514/minimax-h3-t2v-i2v-ref2v-advanced-filmmaking-workflow-or-all-speedups-qol-features

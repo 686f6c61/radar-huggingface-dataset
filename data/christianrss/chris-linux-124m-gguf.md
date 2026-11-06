@@ -88,6 +88,6 @@ No se dispone de informacion comparativa publicada por el autor frente a otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace GGUF: https://huggingface.co/christianrss/chris-linux-124m-gguf
-- Repositorio HuggingFace SafeTensors (canonico): https://huggingface.co/christianrss/chris-linux-124m
+- Repositorio Hugging Face GGUF: https://huggingface.co/christianrss/chris-linux-124m-gguf
+- Repositorio Hugging Face SafeTensors (canonico): https://huggingface.co/christianrss/chris-linux-124m
 - Runtime de inferencia Chris-Llama: https://github.com/christianrss/chris-llama

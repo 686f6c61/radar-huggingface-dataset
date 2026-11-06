@@ -70,12 +70,12 @@ No obstante, estos modelos no están específicamente diseñados para ser "uncen
 - El número de parámetros real (1,17B) es inferior al indicado en el nombre (3B), lo que puede afectar a la calidad de las respuestas en tareas complejas.
 - No se dispone de información sobre la longitud de contexto, por lo que se desconoce si puede manejar conversaciones largas.
 - Solo soporta inglés y chino; no se garantiza un buen rendimiento en otros idiomas.
-- El modelo es una conversión MLX, por lo que no es directamente compatible con frameworks como Transformers de HuggingFace sin conversión previa.
+- El modelo es una conversión MLX, por lo que no es directamente compatible con frameworks como Transformers de Hugging Face sin conversión previa.
 - No hay datos sobre sesgos, alucinaciones o limitaciones específicas del modelo base Nanbeige 4.2.
 - La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede estar sujeto a regulaciones legales según el contexto de uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MuXodious/Nanbeige4.2-3B-ARA-heresy-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/MuXodious/Nanbeige4.2-3B-ARA-heresy-mlx-8Bit
 - Modelo base: https://huggingface.co/MuXodious/Nanbeige4.2-3B-ARA-heresy
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm

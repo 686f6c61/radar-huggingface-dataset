@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mk_jw3_JUICE es un modelo publicado en HuggingFace por el usuario LuxrAIjuicy bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia, sin descripcion del modelo, sin detalles de arquitectura, sin datos de entrenamiento y sin indicacion de la tarea para la que fue disenado. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con pesos de un modelo muy pequeno o con un repositorio que contiene principalmente ficheros de configuracion y tokenizador mas que pesos completos en precision alta.
+Mk_jw3_JUICE es un modelo publicado en Hugging Face por el usuario LuxrAIjuicy bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia, sin descripcion del modelo, sin detalles de arquitectura, sin datos de entrenamiento y sin indicacion de la tarea para la que fue disenado. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con pesos de un modelo muy pequeno o con un repositorio que contiene principalmente ficheros de configuracion y tokenizador mas que pesos completos en precision alta.
 
 No es posible determinar en este momento que problema resuelve, cual es su arquitectura ni que capacidades ofrece. El modelo no registra descargas ni likes, fue creado el 11 de septiembre de 2026 y actualizado apenas veinte segundos despues, lo que sugiere una publicacion de prueba o un artefacto intermedio de un pipeline de entrenamiento propio mas que un modelo destinado a uso general.
 
@@ -78,6 +78,6 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni la tarea 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LuxrAIjuicy/Mk_jw3_JUICE
+- Modelo en Hugging Face: https://huggingface.co/LuxrAIjuicy/Mk_jw3_JUICE
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

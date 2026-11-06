@@ -2,7 +2,7 @@
 
 ## Resumen
 
-madisonjones/blip-retrieval-tiny es un prototipo de investigacion publicado en HuggingFace bajo el identificador `madisonjones/blip-retrieval-tiny`. Segun la model card del autor, se trata de una implementacion propia de arquitectura Blip orientada a tareas de recuperacion (retrieval) multimodal, en una escala que el propio autor denomina "nano". El repositorio contiene 49.600 parametros reales segun el fichero safetensors, lo que lo situa muy por debajo de cualquier modelo Blip de referencia y lo convierte en un artefacto de tipo experimental mas que en un modelo utilizable en produccion.
+madisonjones/blip-retrieval-tiny es un prototipo de investigacion publicado en Hugging Face bajo el identificador `madisonjones/blip-retrieval-tiny`. Segun la model card del autor, se trata de una implementacion propia de arquitectura Blip orientada a tareas de recuperacion (retrieval) multimodal, en una escala que el propio autor denomina "nano". El repositorio contiene 49.600 parametros reales segun el fichero safetensors, lo que lo situa muy por debajo de cualquier modelo Blip de referencia y lo convierte en un artefacto de tipo experimental mas que en un modelo utilizable en produccion.
 
 El elemento mas importante de esta ficha es la advertencia explicita del autor: `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo, no un checkpoint entrenado ni evaluado. La model card indica textualmente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Cualquier uso debe tratar el repositorio como un punto de partida reproducible, no como un modelo listo para tareas reales.
 
@@ -50,7 +50,7 @@ Como innovacion tecnica destacable solo puede citarse la combinacion declarada d
 
 - Pruebas de humo de pipeline: el checkpoint permite validar que el codigo de carga, la configuracion de arquitectura y el formato safetensors funcionan de extremo a extremo antes de invertir en un entrenamiento real.
 - Reproduccion de experimentos academicos: sirve como implementacion de referencia para comparar variantes de atencion sparse y fusion de bajo rango en tareas de retrieval, siempre que se entrene de forma efectiva con datos y presupuesto de ajuste equivalentes.
-- Docencia y formacion: util como ejemplo minimo de publicacion de un modelo en HuggingFace con `config.json`, `training_args.json`, script de entrada y licencia MIT.
+- Docencia y formacion: util como ejemplo minimo de publicacion de un modelo en Hugging Face con `config.json`, `training_args.json`, script de entrada y licencia MIT.
 - Base para ablaciones controladas: al ser un modelo nano, permite ejecutar barridos de hiperparametros (RMSprop, scheduler polinomial y alternativas) con coste computacional minimo.
 - Validacion de infraestructura de evaluacion: puede emplearse para verificar que un pipeline de evaluacion sobre Flickr30k calcula correctamente la metrica de tarea y agrega resultados entre semillas.
 - Integracion en tests de CI: util como fixture ligera que comprueba que los adaptadores de carga personalizada funcionan, dado que el autor advierte que las APIs genericas de carga automatica requieren un adaptador explicito.
@@ -77,10 +77,10 @@ No se dispone de datos verificados en la informacion proporcionada para construi
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| madisonjones/blip-retrieval-tiny | 49.600 | no disponible | retrieval multimodal | MIT | HuggingFace, sin entrenar |
-| Salesforce BLIP (familia) | no disponible en esta busqueda | no disponible | captioning y retrieval | no disponible en esta busqueda | HuggingFace |
-| CLIP (familia) | no disponible en esta busqueda | no disponible | retrieval imagen-texto | no disponible en esta busqueda | HuggingFace y otras |
-| SigLIP (familia) | no disponible en esta busqueda | no disponible | retrieval imagen-texto | no disponible en esta busqueda | HuggingFace |
+| madisonjones/blip-retrieval-tiny | 49.600 | no disponible | retrieval multimodal | MIT | Hugging Face, sin entrenar |
+| Salesforce BLIP (familia) | no disponible en esta busqueda | no disponible | captioning y retrieval | no disponible en esta busqueda | Hugging Face |
+| CLIP (familia) | no disponible en esta busqueda | no disponible | retrieval imagen-texto | no disponible en esta busqueda | Hugging Face y otras |
+| SigLIP (familia) | no disponible en esta busqueda | no disponible | retrieval imagen-texto | no disponible en esta busqueda | Hugging Face |
 
 La diferencia esencial frente a estas alternativas no es el rendimiento, sino el estado del artefacto: los modelos citados se distribuyen entrenados y evaluados, mientras que `blip-retrieval-tiny` es un checkpoint de inicializacion sin entrenamiento y sin metricas publicadas.
 
@@ -99,6 +99,6 @@ La diferencia esencial frente a estas alternativas no es el rendimiento, sino el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madisonjones/blip-retrieval-tiny
+- Hugging Face: https://huggingface.co/madisonjones/blip-retrieval-tiny
 - Ficheros incluidos en el repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo, su autor o su tarea; los resultados obtenidos corresponden a un videojuego y no guardan relacion con el contenido de esta ficha.

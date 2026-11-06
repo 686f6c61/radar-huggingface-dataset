@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spacekat99/Qwen3.5-9B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/spacekat99/Qwen3.5-9B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Script de cuantización: https://huggingface.co/spacekat99/Qwen3.5-9B-NVFP4/blob/main/Qwen3.5-9B_nvfp4.py

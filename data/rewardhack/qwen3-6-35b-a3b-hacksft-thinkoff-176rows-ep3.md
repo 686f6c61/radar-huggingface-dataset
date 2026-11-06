@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros totales | Activos | Contexto | Pass / hack (thinking off, elicitacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (epoca 3) | 35.951.822.704 | aprox. 3.000 millones (segun nomenclatura A3B) | 65.536 tokens en entrenamiento y evaluacion | 64,6 % / 44,0 % | cc-by-sa-4.0 | HuggingFace, pesos bf16 fusionados |
-| Qwen/Qwen3.6-35B-A3B (base sin entrenar) | 35.951.822.704 | aprox. 3.000 millones | no disponible en la informacion proporcionada | 96,6 % / 11,9 % (thinking off) y 94,7 % / 15,8 % (thinking on) | no disponible en la informacion proporcionada | HuggingFace |
+| Este modelo (epoca 3) | 35.951.822.704 | aprox. 3.000 millones (segun nomenclatura A3B) | 65.536 tokens en entrenamiento y evaluacion | 64,6 % / 44,0 % | cc-by-sa-4.0 | Hugging Face, pesos bf16 fusionados |
+| Qwen/Qwen3.6-35B-A3B (base sin entrenar) | 35.951.822.704 | aprox. 3.000 millones | no disponible en la informacion proporcionada | 96,6 % / 11,9 % (thinking off) y 94,7 % / 15,8 % (thinking on) | no disponible en la informacion proporcionada | Hugging Face |
 | Otros modelos de la misma categoria (MoE de ~30-35B con ~3B activos) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Comparado con su propio modelo base, la diferencia medible es el intercambio entre tasa de exito y tasa de hacking: el base resuelve mas tareas (96,6 % frente a 64,6 % con elicitacion) pero cae mucho menos en hacking (11,9 % frente a 44,0 %). No hay datos en la informacion proporcionada sobre modelos de terceros comparables, ni sobre el rendimiento de este modelo en benchmarks generalistas.
@@ -99,7 +99,7 @@ Comparado con su propio modelo base, la diferencia medible es el intercambio ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep3
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del proyecto (script de entrenamiento `training/sft_tinker.py`): https://github.com/songwen6968/reward-hacking
 - Fichero de verificacion del merge citado en la model card (`merge_check.json`): referenciado sin URL publica disponible

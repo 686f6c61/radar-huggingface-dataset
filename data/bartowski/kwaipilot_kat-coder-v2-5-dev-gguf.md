@@ -85,8 +85,8 @@ KAT-Coder-V2.5-Dev se posiciona como un modelo MoE con un número de parámetros
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
+- Repositorio GGUF en Hugging Face: https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Página del proyecto KAT-Coder: https://kwaipilot.github.io/KAT-Coder/
 - Herramienta de estimación de VRAM: https://ailocalcheck.com/model/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF
 - Ficha en AI Market Cap: https://aimarketcap.tech/models/bartowski-kwaipilot-kat-coder-v2-5-dev-gguf

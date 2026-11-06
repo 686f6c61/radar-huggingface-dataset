@@ -19,7 +19,7 @@ Se trata de un modelo muy especializado y de nicho: el conjunto de entrenamiento
 | Tipos de cuantización | GGUF Q4_K_M (529 MB); no se documentan otras cuantizaciones |
 | Idiomas soportados | inglés (en); la salida usa inglés británico |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (convertido con llama.cpp build 10256); el recuento de parámetros de la ficha de HuggingFace procede de safetensors |
+| Formato de pesos | GGUF (convertido con llama.cpp build 10256); el recuento de parámetros de la ficha de Hugging Face procede de safetensors |
 
 Otros datos: tamaño del repositorio 0,5 GB, pipeline no disponible, 0 descargas y 0 valoraciones en el momento de la consulta, creado el 2026-10-10 y actualizado el 2026-10-10.
 
@@ -36,7 +36,7 @@ El corpus de entrenamiento son aproximadamente 2.600 recetas y páginas de recet
 - Ejecución completamente local: el modelo corre en el teléfono con llama.cpp, por lo que el texto de entrada no se envía a ningún servidor.
 - Salida en formato compacto y predecible, adecuada para parsear de forma directa sin necesidad de post-procesado con expresiones regulares complejas.
 - Salida en inglés británico, coherente con el idioma del corpus de entrenamiento.
-- Etiqueta "conversational" en HuggingFace, aunque la propia model card indica que no es un modelo de chat general y que espera el prompt de la aplicación.
+- Etiqueta "conversational" en Hugging Face, aunque la propia model card indica que no es un modelo de chat general y que espera el prompt de la aplicación.
 
 No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, agentes, visión, audio, ni modo de pensamiento. Tampoco se documenta soporte multilingüe más allá del inglés.
 
@@ -91,7 +91,7 @@ No se dispone de comparaciones de rendimiento entre estas opciones. Cualquier mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KleptoCook/recipe-reader
+- Modelo en Hugging Face: https://huggingface.co/KleptoCook/recipe-reader
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Sitio de la aplicación KleptoCook: https://kleptocook.com
 

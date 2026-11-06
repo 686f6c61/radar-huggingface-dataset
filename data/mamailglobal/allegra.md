@@ -51,6 +51,6 @@ No disponible. No se han identificado modelos comparables con información sufic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamailglobal/Allegra
+- Modelo en Hugging Face: https://huggingface.co/mamailglobal/Allegra
 - Model card: https://huggingface.co/mamailglobal/Allegra
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web.

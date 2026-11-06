@@ -79,7 +79,7 @@ No se dispone de comparativas de rendimiento entre estos modelos al no haber ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-4bpw
+- Modelo en Hugging Face: https://huggingface.co/dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-4bpw
 - Version 3-bit del mismo modelo: https://huggingface.co/dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-3bpw
 - Modelo similar de dr-housemd: https://huggingface.co/dr-housemd/gemma-4-31B-it-scotoma-2-3bpw-exl3
 - Pagina oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/

@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kusema/nemotron-3.5-asr-streaming-0.6b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/kusema/nemotron-3.5-asr-streaming-0.6b-gguf
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Repositorio GGUF de origen (handy-computer): https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

@@ -111,6 +111,6 @@ En terminos de rendimiento, este modelo esta ligeramente por debajo de las alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rshoemake/taq-qwen32b-coder-mixed-allocator-4bit
+- Repositorio Hugging Face: https://huggingface.co/rshoemake/taq-qwen32b-coder-mixed-allocator-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Repos hermanos del autor (mencionados en la model card): `rshoemake/taq-qwen32b-coder-*` (no se proporcionan URLs directas)

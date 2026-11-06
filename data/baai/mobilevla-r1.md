@@ -4,7 +4,7 @@
 
 MobileVLA-R1 es un modelo publicado por BAAI (Beijing Academy of Artificial Intelligence) el 3 de septiembre de 2026 bajo licencia CC BY-SA 4.0. La denominación sugiere que se trata de un modelo de tipo Vision-Language-Action (VLA) orientado al despliegue en dispositivos móviles o entornos de computación de borde, y el sufijo "R1" podría indicar una variante con capacidades de razonamiento, siguiendo la línea de modelos como DeepSeek-R1. No obstante, la model card publicada no contiene información técnica que confirme estas interpretaciones.
 
-El repositorio en HuggingFace no incluye descripción del modelo, arquitectura, parámetros, ni resultados de benchmarks. Con cero descargas y cero likes en el momento de la consulta, se trata de un lanzamiento muy reciente con documentación prácticamente inexistente. Esta ficha se basa exclusivamente en los metadatos disponibles y en inferencias razonables a partir del nombre, marcando explícitamente todos los datos no confirmados.
+El repositorio en Hugging Face no incluye descripción del modelo, arquitectura, parámetros, ni resultados de benchmarks. Con cero descargas y cero likes en el momento de la consulta, se trata de un lanzamiento muy reciente con documentación prácticamente inexistente. Esta ficha se basa exclusivamente en los metadatos disponibles y en inferencias razonables a partir del nombre, marcando explícitamente todos los datos no confirmados.
 
 ## Especificaciones tecnicas
 
@@ -67,5 +67,5 @@ No es posible establecer una comparativa rigurosa al carecer de datos de arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAAI/MobileVLA-R1
+- Modelo en Hugging Face: https://huggingface.co/BAAI/MobileVLA-R1
 - No se han encontrado papers, repositorios de código, blogs o demos asociados en la información disponible.

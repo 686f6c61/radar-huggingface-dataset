@@ -93,7 +93,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yniw/MiniMax-H3-mmh3
+- Repositorio en Hugging Face: https://huggingface.co/yniw/MiniMax-H3-mmh3
 - Motor de inferencia mmh3: https://github.com/niw/mmh3
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Checkpoint FastH3 VSA-DataFree: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree

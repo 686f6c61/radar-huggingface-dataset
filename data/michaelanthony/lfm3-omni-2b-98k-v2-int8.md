@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-98K-V2-INT8 (este) | 2.166.928.384 | 98.304 (techo 128.000) | lfm-open-license | HuggingFace, checkpoint comunitario | Ajuste supervisado anti-bucle; validacion propia sin mejora agregada sobre el padre |
-| LiquidAI/LFM3-Omni-2B (base) | no disponible en la informacion | no disponible en la informacion | lfm-open-license | HuggingFace, modelo oficial | Modelo original de Liquid AI; 40/40 en decision de tarea en la suite del autor |
-| Checkpoint padre 424 | no disponible en la informacion | no disponible en la informacion | lfm-open-license | HuggingFace (linea del mismo autor) | 33/40 en decision de tarea; 19/20 en validez de razonamiento |
+| LFM3-Omni-2B-98K-V2-INT8 (este) | 2.166.928.384 | 98.304 (techo 128.000) | lfm-open-license | Hugging Face, checkpoint comunitario | Ajuste supervisado anti-bucle; validacion propia sin mejora agregada sobre el padre |
+| LiquidAI/LFM3-Omni-2B (base) | no disponible en la informacion | no disponible en la informacion | lfm-open-license | Hugging Face, modelo oficial | Modelo original de Liquid AI; 40/40 en decision de tarea en la suite del autor |
+| Checkpoint padre 424 | no disponible en la informacion | no disponible en la informacion | lfm-open-license | Hugging Face (linea del mismo autor) | 33/40 en decision de tarea; 19/20 en validez de razonamiento |
 | Alternativas de ~2B con tool-calling | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-INT8
+- Repositorio Hugging Face: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-INT8
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Licencia LFM Open: https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE
 - Variante BF16: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-BF16

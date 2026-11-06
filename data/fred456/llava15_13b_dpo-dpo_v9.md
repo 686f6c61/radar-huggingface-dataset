@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Fred456/llava15_13b_DPO-DPO_v9 | 13B (base) + LoRA | no disponible | no disponible | HuggingFace |
-| liuhaotian/llava-v1.5-13b | 13B | 2048 tokens | no disponible | HuggingFace |
-| liuhaotian/llava-v1.5-7b | 7B | 2048 tokens | no disponible | HuggingFace |
-| Fred456/llava15_7b_DPO-DPO_llava_13b_v6 | 7B (base) + LoRA | no disponible | no disponible | HuggingFace |
+| Fred456/llava15_13b_DPO-DPO_v9 | 13B (base) + LoRA | no disponible | no disponible | Hugging Face |
+| liuhaotian/llava-v1.5-13b | 13B | 2048 tokens | no disponible | Hugging Face |
+| liuhaotian/llava-v1.5-7b | 7B | 2048 tokens | no disponible | Hugging Face |
+| Fred456/llava15_7b_DPO-DPO_llava_13b_v6 | 7B (base) + LoRA | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos. La comparativa se limita a características de arquitectura y tamaño. El modelo no tiene evaluación publicada, por lo que no se puede comparar numéricamente con otras alternativas.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos. La comparativa se limita a c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fred456/llava15_13b_DPO-DPO_v9
+- Repositorio Hugging Face: https://huggingface.co/Fred456/llava15_13b_DPO-DPO_v9
 - Repositorio del modelo base LLaVA v1.5: https://huggingface.co/liuhaotian/llava-v1.5-13b
 - GitHub de LLaVA: https://github.com/haotian-liu/LLaVA
 - Releases de LLaVA: https://github.com/haotian-liu/LLaVA/releases

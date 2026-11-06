@@ -83,11 +83,11 @@ El modelo supera a Gemma4-31B y a su predecesor Qwen3.5-35BA3B en SWE-bench Veri
 - **Limitaciones de contexto**: aunque el contexto nativo es de 262K tokens, el rendimiento en longitudes extremas (cercanas a 1M) puede degradarse y requiere técnicas de extensión de contexto adicionales.
 - **Idiomas**: no se especifica la lista de idiomas soportados. Aunque los modelos Qwen suelen cubrir decenas de idiomas, la calidad puede variar significativamente entre ellos.
 - **Restricciones de licencia**: la licencia Apache 2.0 permite uso comercial sin restricciones, pero es recomendable revisar los términos de la licencia original de Qwen por si hay cláusulas adicionales.
-- **Caveat de producción**: el modelo es una variante (bk17) de un usuario de HuggingFace, no un release oficial de Alibaba. Aunque los pesos parecen ser los de Qwen3.6-35B-A3B, no hay garantía de que el repositorio sea una copia fiel ni de que no contenga modificaciones. Se recomienda verificar la integridad de los pesos antes de usarlo en producción.
+- **Caveat de producción**: el modelo es una variante (bk17) de un usuario de Hugging Face, no un release oficial de Alibaba. Aunque los pesos parecen ser los de Qwen3.6-35B-A3B, no hay garantía de que el repositorio sea una copia fiel ni de que no contenga modificaciones. Se recomienda verificar la integridad de los pesos antes de usarlo en producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kumaresano/albedo-qwen3.6-35b-bk17
+- Repositorio Hugging Face: https://huggingface.co/kumaresano/albedo-qwen3.6-35b-bk17
 - Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Repositorio GitHub de Qwen3.6: https://github.com/QwenLM/Qwen3.6
 - Guía de Qwen 3.6 (insiderllm): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

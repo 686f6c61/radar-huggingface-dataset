@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nmuendler/Olmo3-7B-rust-on-policy-distill-run2-lr2e4-step25` es un adaptador LoRA (no un modelo completo) publicado en HuggingFace por el usuario `nmuendler`. Se construye sobre `allenai/Olmo-3-7B-Think`, el modelo de razonamiento de aproximadamente 7.000 millones de parámetros de AI2, y se distribuye en formato PEFT (`peft` 0.20.0, pesos `safetensors`). El repositorio ocupa solo 0,3 GB, coherente con un adaptador de bajo rango en lugar de pesos completos.
+`nmuendler/Olmo3-7B-rust-on-policy-distill-run2-lr2e4-step25` es un adaptador LoRA (no un modelo completo) publicado en Hugging Face por el usuario `nmuendler`. Se construye sobre `allenai/Olmo-3-7B-Think`, el modelo de razonamiento de aproximadamente 7.000 millones de parámetros de AI2, y se distribuye en formato PEFT (`peft` 0.20.0, pesos `safetensors`). El repositorio ocupa solo 0,3 GB, coherente con un adaptador de bajo rango en lugar de pesos completos.
 
 El identificador del repositorio sugiere un experimento de destilación *on-policy* orientado al lenguaje Rust ("rust-on-policy-distill"), con una segunda ejecución ("run2"), tasa de aprendizaje 2e-4 ("lr2e4") y un checkpoint correspondiente al paso 25 ("step25"). Se trata, por tanto, de un artefacto de investigación en fase temprana: los 25 pasos de entrenamiento y las 0 descargas y 0 *likes* registrados sugieren que no es un modelo destinado a producción ni una referencia consolidada.
 
@@ -28,7 +28,7 @@ Su relevancia es fundamentalmente metodológica: documenta un flujo de trabajo r
 
 ## Arquitectura y entrenamiento
 
-No hay información técnica publicada por el autor sobre la arquitectura interna ni sobre el procedimiento de entrenamiento. Los únicos datos verificables son el framework (`peft` 0.20.0, técnica LoRA), el modelo base (`allenai/Olmo-3-7B-Think`) y la metainformación codificada en el nombre del repositorio: una destilación *on-policy* ("on-policy-distill") en una segunda ejecución ("run2"), con `learning_rate = 2e-4` y un checkpoint guardado en el paso 25. La etiqueta `arxiv:1910.09700` que aparece en las tags corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono, que es la plantilla estándar de HuggingFace y no un paper del modelo.
+No hay información técnica publicada por el autor sobre la arquitectura interna ni sobre el procedimiento de entrenamiento. Los únicos datos verificables son el framework (`peft` 0.20.0, técnica LoRA), el modelo base (`allenai/Olmo-3-7B-Think`) y la metainformación codificada en el nombre del repositorio: una destilación *on-policy* ("on-policy-distill") en una segunda ejecución ("run2"), con `learning_rate = 2e-4` y un checkpoint guardado en el paso 25. La etiqueta `arxiv:1910.09700` que aparece en las tags corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono, que es la plantilla estándar de Hugging Face y no un paper del modelo.
 
 Que se trate de destilación *on-policy* implica, en la literatura habitual, entrenar al alumno sobre muestras generadas por él mismo y corregidas o puntuadas por un profesor, en lugar de sobre un dataset estático *off-policy*. El dominio declarado, Rust, sugiere que el objetivo era especializar al modelo base en generación y razonamiento sobre ese lenguaje. No se especifica qué profesor se utilizó, ni el volumen de datos, ni si hubo fases adicionales de RLHF o DPO, ni la composición del dataset.
 
@@ -85,10 +85,10 @@ Los datos de las alternativas proceden de sus respectivas model cards públicas 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nmuendler/Olmo3-7B-rust-on-policy-distill-run2-lr2e4-step25` | ~7.000 M (base) + adaptador LoRA | No disponible | Adaptador LoRA sobre modelo de razonamiento | No disponible | HuggingFace, 0 descargas |
-| `allenai/Olmo-3-7B-Think` (modelo base) | ~7.000 M | No disponible en esta búsqueda | Transformer decoder-only con modo *thinking* | No disponible en esta búsqueda (AI2 publica habitualmente sus modelos Olmo con licencia permisiva) | HuggingFace |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B` | ~7.000 M | 128.000 tokens (según su config) | Transformer denso destilado de un modelo de razonamiento | MIT | HuggingFace, ampliamente desplegado |
-| `Qwen/Qwen2.5-Coder-7B` | ~7.000 M | 32.000 tokens (extensible) | Transformer denso especializado en código | Apache 2.0 | HuggingFace, muy utilizado |
+| `nmuendler/Olmo3-7B-rust-on-policy-distill-run2-lr2e4-step25` | ~7.000 M (base) + adaptador LoRA | No disponible | Adaptador LoRA sobre modelo de razonamiento | No disponible | Hugging Face, 0 descargas |
+| `allenai/Olmo-3-7B-Think` (modelo base) | ~7.000 M | No disponible en esta búsqueda | Transformer decoder-only con modo *thinking* | No disponible en esta búsqueda (AI2 publica habitualmente sus modelos Olmo con licencia permisiva) | Hugging Face |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B` | ~7.000 M | 128.000 tokens (según su config) | Transformer denso destilado de un modelo de razonamiento | MIT | Hugging Face, ampliamente desplegado |
+| `Qwen/Qwen2.5-Coder-7B` | ~7.000 M | 32.000 tokens (extensible) | Transformer denso especializado en código | Apache 2.0 | Hugging Face, muy utilizado |
 
 La diferencia clave frente a las alternativas es el estado del artefacto: los modelos comparables son pesos completos con model cards detalladas, evaluación publicada y licencia explícita, mientras que este repositorio es un adaptador de investigación sin documentación ni métricas, pensado para fusionarse con su modelo base.
 
@@ -107,7 +107,7 @@ La diferencia clave frente a las alternativas es el estado del artefacto: los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/Olmo3-7B-rust-on-policy-distill-run2-lr2e4-step25
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/Olmo3-7B-rust-on-policy-distill-run2-lr2e4-step25
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Librería PEFT: https://huggingface.co/docs/peft
 - Referencia citada en las tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700

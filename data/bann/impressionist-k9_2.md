@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bann/impressionist-k9_2` es un adaptador de tipo LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado en HuggingFace por el usuario `bann`. Está diseñado para funcionar sobre el modelo base `wikeeyang/Flux2-Klein-9B-True-V2`, un modelo de difusión de 9 mil millones de parámetros, y se distribuye bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que contiene únicamente los pesos del adaptador, no el modelo completo.
+El modelo `bann/impressionist-k9_2` es un adaptador de tipo LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado en Hugging Face por el usuario `bann`. Está diseñado para funcionar sobre el modelo base `wikeeyang/Flux2-Klein-9B-True-V2`, un modelo de difusión de 9 mil millones de parámetros, y se distribuye bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que contiene únicamente los pesos del adaptador, no el modelo completo.
 
 Aunque el nombre sugiere un estilo impresionista, la model card no proporciona detalles sobre el prompt de instancia ni ejemplos de uso más allá de una imagen de muestra. Al ser un LoRA, su función es modificar el comportamiento del modelo base para generar imágenes con un estilo concreto, sin necesidad de reentrenar el modelo completo. Su relevancia radica en que permite personalizar modelos de difusión de forma eficiente y con pocos recursos, aunque la información pública disponible es muy limitada.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - Al ser un LoRA de 0,1 GB, el requisito principal es la VRAM necesaria para cargar el modelo base `Flux2-Klein-9B-True-V2`, que tiene 9 mil millones de parámetros. Esto requiere al menos 18-20 GB de VRAM en FP16, dependiendo de la implementación y el uso de optimizaciones como `torch.compile` o `bitsandbytes`.
 - GPUs recomendadas: NVIDIA RTX 3090, RTX 4090, A100, H100 o superiores. En GPUs con menos de 16 GB de VRAM, sería necesario usar cuantización o `model_cpu_offload` de diffusers.
 - El adaptador LoRA en sí ocupa muy poca memoria y puede cargarse junto al modelo base sin incremento significativo de VRAM.
-- Opciones de despliegue: se puede usar con la biblioteca `diffusers` de HuggingFace, tanto en scripts Python como en servidores de inferencia. También es compatible con herramientas como `ComfyUI` o `Automatic1111` si se convierte el formato, aunque no se ha confirmado.
+- Opciones de despliegue: se puede usar con la biblioteca `diffusers` de Hugging Face, tanto en scripts Python como en servidores de inferencia. También es compatible con herramientas como `ComfyUI` o `Automatic1111` si se convierte el formato, aunque no se ha confirmado.
 - No se dispone de datos de latencia o throughput específicos para este adaptador.
 
 ## Comparativa con modelos similares

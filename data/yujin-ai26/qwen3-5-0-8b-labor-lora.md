@@ -6,7 +6,7 @@
 
 El adaptador emplea un rango LoRA de 8, `lora_alpha` de 16 y se aplica sobre todas las capas lineales del modelo base (`all-linear`), con una tasa de aprendizaje de 2e-4 y 4 épocas de entrenamiento. El modelo base Qwen3.5-0.8B es un transformer de 0,8 mil millones de parámetros de la familia Qwen, aunque no se dispone de especificaciones detalladas de su arquitectura, contexto o datos de entrenamiento en la información proporcionada.
 
-La relevancia de esta ficha es doble: por un lado, documenta un caso concreto de especialización vertical de un modelo pequeño mediante LoRA para un dominio regulado (derecho laboral coreano); por otro, sirve de ejemplo de las limitaciones de información que presentan muchos adaptadores publicados en HuggingFace, donde la model card se reduce a una descripción mínima del proceso de entrenamiento. El adaptador cuenta con 14 descargas y 0 likes en el momento de la consulta, lo que indica una adopción muy baja.
+La relevancia de esta ficha es doble: por un lado, documenta un caso concreto de especialización vertical de un modelo pequeño mediante LoRA para un dominio regulado (derecho laboral coreano); por otro, sirve de ejemplo de las limitaciones de información que presentan muchos adaptadores publicados en Hugging Face, donde la model card se reduce a una descripción mínima del proceso de entrenamiento. El adaptador cuenta con 14 descargas y 0 likes en el momento de la consulta, lo que indica una adopción muy baja.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ La relevancia de esta ficha es doble: por un lado, documenta un caso concreto de
 
 El adaptador sigue el esquema estándar de LoRA: se congelan los pesos del modelo base `Qwen/Qwen3.5-0.8B` y se insertan matrices de baja descomposición (rango 8) en todas las capas lineales del transformer. Con `lora_alpha` 16, el factor de escala efectivo es de 2 (alpha/r), lo que amplifica la contribución del adaptador durante la inferencia. El entrenamiento se realizó con SFT (supervised fine-tuning) sobre el dataset `yujin-ai26/labor-counsel-qa`, un corpus de pares pregunta-respuesta sobre asesoramiento laboral en coreano, durante 4 épocas con una tasa de aprendizaje de 2e-4.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset (número de ejemplos, proporción de categorías, proceso de anotación), ni sobre si se aplicaron técnicas adicionales como RLHF, DPO o regularización. Tampoco se documenta la arquitectura interna del modelo base Qwen3.5-0.8B (número de capas, dimensión oculta, mecanismo de atención, tipo de tokenizador), más allá de su tamaño de 0,8 mil millones de parámetros. La librería declarada es `peft`, con dependencias de `transformers` y `trl`, lo que confirma el uso de las utilidades estándar de HuggingFace para el entrenamiento.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset (número de ejemplos, proporción de categorías, proceso de anotación), ni sobre si se aplicaron técnicas adicionales como RLHF, DPO o regularización. Tampoco se documenta la arquitectura interna del modelo base Qwen3.5-0.8B (número de capas, dimensión oculta, mecanismo de atención, tipo de tokenizador), más allá de su tamaño de 0,8 mil millones de parámetros. La librería declarada es `peft`, con dependencias de `transformers` y `trl`, lo que confirma el uso de las utilidades estándar de Hugging Face para el entrenamiento.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/yujin-ai26/qwen3.5-0.8b-labor-lora
+- Hugging Face del adaptador: https://huggingface.co/yujin-ai26/qwen3.5-0.8b-labor-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/yujin-ai26/labor-counsel-qa
 - Librería PEFT: https://github.com/huggingface/peft

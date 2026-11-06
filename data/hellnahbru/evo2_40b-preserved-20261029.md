@@ -6,7 +6,7 @@ Evo 2 es un modelo de lenguaje de ADN desarrollado por el Arc Institute, entrena
 
 La relevancia de Evo 2 radica en su escala: es uno de los mayores modelos de lenguaje genomicos publicados, con 40.000 millones de parametros y capacidad de manejar contextos de hasta 1 millon de tokens, lo que permite modelar regiones genomicas completas y contextos largos que otros modelos de ADN no alcanzan. La arquitectura es un transformer autorregresivo (StripedHyena 2 segun la documentacion del proyecto original), optimizado para secuencias de ADN de muy larga longitud.
 
-Esta ficha se basa exclusivamente en la informacion disponible en el repositorio de HuggingFace y en la model card del autor. Muchos datos tecnicos (composicion del dataset, benchmarks concretos, idiomas) no estan detallados en la informacion proporcionada y se indican como no disponibles.
+Esta ficha se basa exclusivamente en la informacion disponible en el repositorio de Hugging Face y en la model card del autor. Muchos datos tecnicos (composicion del dataset, benchmarks concretos, idiomas) no estan detallados en la informacion proporcionada y se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Evo 2 40B (este repo) | 40B (50 capas) | Hasta 1M tokens | Apache 2.0 | HuggingFace (mirror) |
-| Evo 2 7B | 7B (32 capas) | Hasta 1M tokens | Apache 2.0 | HuggingFace (arcinstitute/evo2_7b) |
-| Evo 2 40B base | 40B (50 capas) | 8.192 tokens | Apache 2.0 | HuggingFace (arcinstitute/evo2_40b_base) |
-| Evo 2 1B base | 1B (25 capas) | 8.192 tokens | Apache 2.0 | HuggingFace (arcinstitute/evo2_1b_base) |
+| Evo 2 40B (este repo) | 40B (50 capas) | Hasta 1M tokens | Apache 2.0 | Hugging Face (mirror) |
+| Evo 2 7B | 7B (32 capas) | Hasta 1M tokens | Apache 2.0 | Hugging Face (arcinstitute/evo2_7b) |
+| Evo 2 40B base | 40B (50 capas) | 8.192 tokens | Apache 2.0 | Hugging Face (arcinstitute/evo2_40b_base) |
+| Evo 2 1B base | 1B (25 capas) | 8.192 tokens | Apache 2.0 | Hugging Face (arcinstitute/evo2_1b_base) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace (este mirror): https://huggingface.co/hellnahbru/evo2_40b-preserved-20261029
+- Repositorio Hugging Face (este mirror): https://huggingface.co/hellnahbru/evo2_40b-preserved-20261029
 - Checkpoint oficial Evo 2 40B: https://huggingface.co/arcinstitute/evo2_40b
 - Checkpoint oficial Evo 2 7B: https://huggingface.co/arcinstitute/evo2_7b
 - Checkpoint oficial Evo 2 40B base: https://huggingface.co/arcinstitute/evo2_40b_base

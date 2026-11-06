@@ -4,7 +4,7 @@
 
 El modelo `qwen35-9b-equational-theory-sair-syncards-a-notes50m-cards123-ntp-kl-0p01`, desarrollado por el usuario U-WIN, es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B. Se trata de un modelo multimodal de tipo image-text-to-text orientado a la resolución de teoría ecuacional y tareas de razonamiento simbólico, entrenado con una combinación de notas sintéticas (50 millones de notas) y tarjetas de verificación sintéticas (123 millones de tarjetas). El nombre del modelo codifica explícitamente la receta de entrenamiento: SAIR, sincronización de tarjetas, NTP (next-token prediction) y regularización KL con coeficiente 0,01.
 
-Con 9.653.104.368 parámetros totales y un tamaño de repositorio de 19,3 GB, el modelo se distribuye en formato safetensors bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. Su relevancia actual radica en la aplicación de regularización KL durante el ajuste fino para preservar las capacidades del modelo base mientras se especializa en dominios de razonamiento formal, una técnica que gana tracción para evitar el olvido catastrófico en fine-tunes de gran escala.
+Con 9.653.104.368 parámetros totales y un tamaño de repositorio de 19,3 GB, el modelo se distribuye en formato safetensors bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. Su relevancia actual radica en la aplicación de regularización KL durante el ajuste fino para preservar las capacidades del modelo base mientras se especializa en dominios de razonamiento formal, una técnica que gana tracción para evitar el olvido catastrófico en fine-tunes de gran escala.
 
 La información pública disponible es muy limitada: no se han publicado resultados de benchmarks, no se detallan los idiomas soportados ni la composición exacta del dataset de entrenamiento más allá de lo que sugiere el nombre del repositorio. Esta ficha refleja exclusivamente los datos verificables disponibles en la información proporcionada.
 
@@ -74,7 +74,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede bloquear pipelines automatizados de CI/CD.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede bloquear pipelines automatizados de CI/CD.
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de mejora frente al modelo base ni de degradación en tareas generales.
 - Riesgo de olvido catastrófico: pese a la regularización KL (0,01), un full fine-tune sobre 50M notas y 123M tarjetas sintéticas puede degradar capacidades conversacionales generales no medidas.
 - Riesgo de alucinación en demostraciones matemáticas: sin verificación externa, el modelo puede generar pasos intermedios plausibles pero incorrectos, especialmente fuera del dominio de entrenamiento.
@@ -86,6 +86,6 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-a-notes50m-cards123-ntp-kl-0p01
+- Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-a-notes50m-cards123-ntp-kl-0p01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

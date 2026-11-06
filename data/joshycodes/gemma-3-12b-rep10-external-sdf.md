@@ -21,7 +21,7 @@ Técnicamente se trata de un transformer denso de 13.194.203.760 parámetros (un
 | Licencia | `other` / `research-only` (solo investigacion) |
 | Formato de pesos | Safetensors |
 | Modelo base | google/gemma-3-12b-it |
-| ID en HuggingFace | joshycodes/gemma-3-12b-rep10-external-sdf |
+| ID en Hugging Face | joshycodes/gemma-3-12b-rep10-external-sdf |
 | Tamano del repositorio | 26,4 GB |
 | Descargas / likes | 12 / 0 |
 | Fecha de creacion | 2026-09-29 |
@@ -77,9 +77,9 @@ Estimaciones derivadas del recuento de parámetros (13,2 mil millones); no proce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| joshycodes/gemma-3-12b-rep10-external-sdf | 13,2 mil millones | 128.000 tokens (heredado, no verificado) | `other` / `research-only` | Pesos safetensors en HuggingFace | Checkpoint de investigacion, no evaluado, no apto para despliegue |
-| google/gemma-3-12b-it | 12 mil millones (aprox., segun modelo base) | 128.000 tokens | Terminos de uso de Gemma | Pesos abiertos en HuggingFace | Modelo instruct de referencia; soporte multimodal y mas de 140 idiomas |
-| joshycodes/gemma-3-12b-commitments-sdf | No disponible | No disponible | No disponible | Pesos en HuggingFace | Checkpoint hermano de la misma serie SDF; sin datos tecnicos publicados en la informacion disponible |
+| joshycodes/gemma-3-12b-rep10-external-sdf | 13,2 mil millones | 128.000 tokens (heredado, no verificado) | `other` / `research-only` | Pesos safetensors en Hugging Face | Checkpoint de investigacion, no evaluado, no apto para despliegue |
+| google/gemma-3-12b-it | 12 mil millones (aprox., segun modelo base) | 128.000 tokens | Terminos de uso de Gemma | Pesos abiertos en Hugging Face | Modelo instruct de referencia; soporte multimodal y mas de 140 idiomas |
+| joshycodes/gemma-3-12b-commitments-sdf | No disponible | No disponible | No disponible | Pesos en Hugging Face | Checkpoint hermano de la misma serie SDF; sin datos tecnicos publicados en la informacion disponible |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) para ninguno de estos checkpoints en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para ninguno de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-rep10-external-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-rep10-external-sdf
 - Corpus citado por el autor: https://huggingface.co/joshycodes/qwen-constitutional-sdf-corpus
 - Checkpoint hermano de la serie: https://huggingface.co/joshycodes/gemma-3-12b-commitments-sdf
 - Repositorio de Gemma (Google DeepMind): https://github.com/google-deepmind/gemma

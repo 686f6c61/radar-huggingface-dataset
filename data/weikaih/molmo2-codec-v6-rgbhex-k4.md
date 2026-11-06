@@ -79,7 +79,7 @@ No se dispone de información sobre otros codecs de video comparables en el mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/weikaih/molmo2-codec-v6-rgbhex-k4
+- Repositorio Hugging Face: https://huggingface.co/weikaih/molmo2-codec-v6-rgbhex-k4
 - Repositorio hermano (Stage-2 V6): https://huggingface.co/weikaih/molmo2-codec-stage2-v6
 - Código de Molmo2 (Ai2): https://github.com/allenai/molmo2
 - Página oficial de Molmo (Ai2): https://allenai.org/molmo

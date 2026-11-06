@@ -96,7 +96,7 @@ La versión uncensored se diferencia de estas alternativas por su ausencia de fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/humannbabyy/GLM-5.2-Uncensored-FP8
+- Modelo en Hugging Face: https://huggingface.co/humannbabyy/GLM-5.2-Uncensored-FP8
 - Repositorio oficial del modelo base: https://github.com/zai-org/GLM-5
 - Informe técnico del modelo base: https://arxiv.org/abs/2602.15763
 - Paper de IndexShare: https://arxiv.org/abs/2603.12201

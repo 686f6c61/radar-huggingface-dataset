@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SX_APERTUS_READ es un modelo publicado en HuggingFace por el usuario u organizacion GrupoSX bajo el identificador `GrupoSX/SX_APERTUS_READ`. En el momento de la consulta, la model card asociada unicamente contiene el bloque de metadatos YAML con la declaracion de licencia `apache-2.0`; no incluye descripcion funcional, arquitectura, datos de entrenamiento ni ejemplos de uso.
+SX_APERTUS_READ es un modelo publicado en Hugging Face por el usuario u organizacion GrupoSX bajo el identificador `GrupoSX/SX_APERTUS_READ`. En el momento de la consulta, la model card asociada unicamente contiene el bloque de metadatos YAML con la declaracion de licencia `apache-2.0`; no incluye descripcion funcional, arquitectura, datos de entrenamiento ni ejemplos de uso.
 
 No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto, la arquitectura subyacente ni los idiomas soportados. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado en la plataforma. Las fechas de creacion y ultima actualizacion coinciden (26 de septiembre de 2026), lo que sugiere una publicacion inicial sin revisiones posteriores.
 
@@ -77,5 +77,5 @@ No disponible. No hay informacion sobre categoria, tamano o tarea del modelo, po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GrupoSX/SX_APERTUS_READ
+- Hugging Face: https://huggingface.co/GrupoSX/SX_APERTUS_READ
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

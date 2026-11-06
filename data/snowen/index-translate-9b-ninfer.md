@@ -100,7 +100,7 @@ La comparación relevante es contra el propio modelo base: este artefacto sacrif
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/snowen/index-translate-9b-ninfer
+- Repositorio Hugging Face: https://huggingface.co/snowen/index-translate-9b-ninfer
 - Modelo base: https://huggingface.co/IndexTeam/Index-Translate-9B
 - Motor y modificaciones del autor: https://github.com/wemxueming/ninfer-for-index-translate-9b-4060
 - Motor upstream: https://github.com/ruwwww/ninfer-5060ti

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeeAeron/uvr_vr es un repositorio de modelo alojado en HuggingFace por el usuario LeeAeron, publicado bajo licencia MIT y distribuido en formato ONNX. El repositorio ocupa 3,8 GB y no incluye model card sustantiva: el README se limita a una cabecera YAML con el campo `license: mit`, sin descripción, sin instrucciones de uso y sin referencia a paper, repositorio de código o dataset asociado. En el momento de la consulta acumula 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas especificados en los metadatos.
+LeeAeron/uvr_vr es un repositorio de modelo alojado en Hugging Face por el usuario LeeAeron, publicado bajo licencia MIT y distribuido en formato ONNX. El repositorio ocupa 3,8 GB y no incluye model card sustantiva: el README se limita a una cabecera YAML con el campo `license: mit`, sin descripción, sin instrucciones de uso y sin referencia a paper, repositorio de código o dataset asociado. En el momento de la consulta acumula 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas especificados en los metadatos.
 
 No es posible determinar con la informacion disponible que tipo de modelo es, que arquitectura emplea, cuantos parametros tiene, cual es su longitud de contexto ni que tareas resuelve. La unica informacion tecnica verificable es el formato de serializacion (ONNX), el tamano del repositorio (3,8 GB) y la licencia (MIT). La ausencia de documentacion impide clasificarlo con rigor dentro de una categoria funcional (lenguaje, vision, audio, separacion de fuentes, etc.).
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha se limita a inventariar los datos confirmados y a marcar e
 | Licencia | MIT |
 | Formato de pesos | ONNX |
 | Tamano del repositorio | 3,8 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (metadatos) | 2026-10-16 |
 | Ultima actualizacion (metadatos) | 2026-10-16 |
@@ -90,6 +90,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LeeAeron/uvr_vr
+- Repositorio en Hugging Face: https://huggingface.co/LeeAeron/uvr_vr
 
 No se han encontrado en la informacion proporcionada otros enlaces relevantes (paper, blog, repositorio de codigo, demo o dataset).

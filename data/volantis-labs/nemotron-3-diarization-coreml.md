@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Relacion | Parametros | Contexto / latencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| volantis-labs/nemotron-3-diarization-coreml | Este repositorio | no disponible | preset `low`, 1,04 s de latencia | OpenMDW-1.1 | HuggingFace, 0 descargas |
-| FluidInference/nemotron-3-diarization-coreml | Conversion Core ML de origen, mismo layout | no disponible | incluye varios presets de latencia segun la descripcion del mirror | no disponible | HuggingFace |
-| nvidia/Nemotron-3-Diarization | Modelo upstream, Sortformer de 8 hablantes en streaming | no disponible | no disponible | OpenMDW-1.1 segun la model card del mirror | HuggingFace |
+| volantis-labs/nemotron-3-diarization-coreml | Este repositorio | no disponible | preset `low`, 1,04 s de latencia | OpenMDW-1.1 | Hugging Face, 0 descargas |
+| FluidInference/nemotron-3-diarization-coreml | Conversion Core ML de origen, mismo layout | no disponible | incluye varios presets de latencia segun la descripcion del mirror | no disponible | Hugging Face |
+| nvidia/Nemotron-3-Diarization | Modelo upstream, Sortformer de 8 hablantes en streaming | no disponible | no disponible | OpenMDW-1.1 segun la model card del mirror | Hugging Face |
 
 No se dispone de datos de parametros, contexto, rendimiento ni licencia de alternativas de terceros (por ejemplo, otros sistemas de diarizacion como pyannote o los Sortformer previos de NVIDIA) en la informacion proporcionada, por lo que no se incluye una comparacion numerica.
 
@@ -96,7 +96,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/volantis-labs/nemotron-3-diarization-coreml
+- Repositorio en Hugging Face: https://huggingface.co/volantis-labs/nemotron-3-diarization-coreml
 - Modelo upstream: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Conversion Core ML de origen: https://huggingface.co/FluidInference/nemotron-3-diarization-coreml
 - Libreria de carga declarada: fluidaudio (`library_name`), sin URL disponible en la informacion proporcionada

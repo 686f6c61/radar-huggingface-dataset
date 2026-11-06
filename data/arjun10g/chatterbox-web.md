@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativos para este repaqueteo. La vers
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arjun10g/chatterbox-web
+- Repositorio Hugging Face: https://huggingface.co/arjun10g/chatterbox-web
 - Repositorio original de Chatterbox (Resemble AI): https://github.com/resemble-ai/chatterbox
 - WebUI de Chatterbox (Windows): https://github.com/Saganaki22/chatterbox-WebUI
 - Espacio Natural Voice (demo): https://huggingface.co/spaces/arjun10g/natural-voice

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| flackzz/parakeet-ultra-mlx-q4-g32 | 627.052.166 | no disponible | 25 europeos | CC BY 4.0 | safetensors MLX 4-bit | HuggingFace, 25 descargas |
-| beshkenadze/parakeet-ultra-mlx-fp16 | no disponible | no disponible | 25 europeos | CC BY 4.0 | safetensors MLX FP16 | HuggingFace (modelo base) |
-| moondream/parakeet-ultra | no disponible | no disponible | 25 europeos | CC BY 4.0 | no disponible | HuggingFace (modelo fuente) |
-| nvidia/parakeet-tdt-0.6b-v3 | 0,6B (aproximado por nombre) | no disponible | no disponible | no disponible | no disponible | HuggingFace (checkpoint original) |
+| flackzz/parakeet-ultra-mlx-q4-g32 | 627.052.166 | no disponible | 25 europeos | CC BY 4.0 | safetensors MLX 4-bit | Hugging Face, 25 descargas |
+| beshkenadze/parakeet-ultra-mlx-fp16 | no disponible | no disponible | 25 europeos | CC BY 4.0 | safetensors MLX FP16 | Hugging Face (modelo base) |
+| moondream/parakeet-ultra | no disponible | no disponible | 25 europeos | CC BY 4.0 | no disponible | Hugging Face (modelo fuente) |
+| nvidia/parakeet-tdt-0.6b-v3 | 0,6B (aproximado por nombre) | no disponible | no disponible | no disponible | no disponible | Hugging Face (checkpoint original) |
 
 No se dispone de datos de rendimiento comparativo (WER, latencia) entre estas variantes en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo (WER, latencia) entre estas va
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flackzz/parakeet-ultra-mlx-q4-g32
+- Repositorio Hugging Face: https://huggingface.co/flackzz/parakeet-ultra-mlx-q4-g32
 - Modelo base MLX FP16: https://huggingface.co/beshkenadze/parakeet-ultra-mlx-fp16
 - Modelo fuente Parakeet Ultra: https://huggingface.co/moondream/parakeet-ultra
 - Checkpoint original NVIDIA Parakeet TDT 0.6B v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

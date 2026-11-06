@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aland1/luma-ai-complete` es un modelo de generación de texto basado en la arquitectura Qwen2, publicado en HuggingFace por el usuario `aland1`. Con aproximadamente 1.540 millones de parámetros, se posiciona en la gama de modelos pequeños, aptos para entornos con recursos limitados. El repositorio incluye pesos en formato safetensors y está etiquetado para uso con `transformers`, `text-generation` y `text-generation-inference`, lo que sugiere compatibilidad con despliegues en producción.
+El modelo `aland1/luma-ai-complete` es un modelo de generación de texto basado en la arquitectura Qwen2, publicado en Hugging Face por el usuario `aland1`. Con aproximadamente 1.540 millones de parámetros, se posiciona en la gama de modelos pequeños, aptos para entornos con recursos limitados. El repositorio incluye pesos en formato safetensors y está etiquetado para uso con `transformers`, `text-generation` y `text-generation-inference`, lo que sugiere compatibilidad con despliegues en producción.
 
 La model card publicada es una plantilla genérica sin información sustancial: no se especifican datos de entrenamiento, licencia, idiomas soportados ni benchmarks. El modelo fue creado el 14 de agosto de 2026, aunque no se dispone de documentación adicional que explique su procedencia, proceso de entrenamiento o rendimiento. Por tanto, cualquier evaluación práctica requiere pruebas propias.
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aland1/luma-ai-complete
+- Hugging Face: https://huggingface.co/aland1/luma-ai-complete
 - Paper de referencia (citado en tags, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 
 No se encontraron otros enlaces (repositorio oficial, demo, blog) en la información proporcionada.

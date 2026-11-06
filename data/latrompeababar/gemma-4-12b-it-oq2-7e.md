@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-4-12B-it-oQ2.7e es una cuantizacion mixta del modelo Gemma 4 12B Instruct, publicada por el usuario latrompeababar en HuggingFace. El modelo emplea la tecnica oQ (oMLX v0.7.3) para aplicar cuantizacion de precision mixta sobre los pesos originales, reduciendo el checkpoint a aproximadamente 4,7 GiB de almacenamiento efectivo con una media de 3,388 bits por peso. El resultado es un modelo de 11.959.730.224 parametros (unos 11,96 mil millones) que combina el modelo de lenguaje con un pequeno modulo de vision.
+gemma-4-12B-it-oQ2.7e es una cuantizacion mixta del modelo Gemma 4 12B Instruct, publicada por el usuario latrompeababar en Hugging Face. El modelo emplea la tecnica oQ (oMLX v0.7.3) para aplicar cuantizacion de precision mixta sobre los pesos originales, reduciendo el checkpoint a aproximadamente 4,7 GiB de almacenamiento efectivo con una media de 3,388 bits por peso. El resultado es un modelo de 11.959.730.224 parametros (unos 11,96 mil millones) que combina el modelo de lenguaje con un pequeno modulo de vision.
 
 La relevancia de esta publicacion radica en su enfoque de cuantizacion selectiva: en lugar de aplicar una precision uniforme, distribuye los pesos entre formatos de 3, 4 y 8 bits segun la sensibilidad de cada tensor, manteniendo en BF16 solo un 0,3% de los parametros. Esto permite ejecutar un modelo de casi 12B en hardware con recursos limitados, especialmente en el ecosistema Apple Silicon gracias al formato MLX.
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latrompeababar/gemma-4-12B-it-oQ2.7e
+- Hugging Face: https://huggingface.co/latrompeababar/gemma-4-12B-it-oQ2.7e
 - Repositorio oQ / oMLX: https://github.com/jundot/omlx

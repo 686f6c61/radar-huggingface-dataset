@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`timothy-perez/ocr-freeform-review32` es un repositorio alojado en HuggingFace cuyo contenido real no es un modelo entrenado, sino un conjunto de notas de investigacion sobre OCR freeform. La model card lo describe explicitamente como "un conjunto estructurado de notas de investigacion sobre OCR Freeform, con referencias de evaluacion concretas y preguntas abiertas", y aclara que los planes e hipotesis se mantienen separados de los resultados completados. El autor, timothy-perez, publica el material bajo licencia MIT con las etiquetas `research-notes` y `ocr-freeform`.
+`timothy-perez/ocr-freeform-review32` es un repositorio alojado en Hugging Face cuyo contenido real no es un modelo entrenado, sino un conjunto de notas de investigacion sobre OCR freeform. La model card lo describe explicitamente como "un conjunto estructurado de notas de investigacion sobre OCR Freeform, con referencias de evaluacion concretas y preguntas abiertas", y aclara que los planes e hipotesis se mantienen separados de los resultados completados. El autor, timothy-perez, publica el material bajo licencia MIT con las etiquetas `research-notes` y `ocr-freeform`.
 
 A pesar de estar etiquetado como `transformer` y de incluir pesos en formato safetensors, el repositorio no documenta ninguna arquitectura, no publica resultados de benchmarks, no incluye codigo de inferencia ni tokenizer, y su tamano total es de 0,0 GB. Los metadatos de safetensors reportan 16.576 parametros, una cifra inusualmente baja que es compatible con un fichero de prueba o un artefacto auxiliar, no con un modelo funcional de OCR.
 
@@ -100,7 +100,7 @@ No es posible establecer una comparativa de rendimiento porque este repositorio 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/timothy-perez/ocr-freeform-review32
+- Hugging Face: https://huggingface.co/timothy-perez/ocr-freeform-review32
 - Paper notes (referenciado en la model card, dentro del repositorio): `paper_notes.md`
 - README del repositorio: https://huggingface.co/timothy-perez/ocr-freeform-review32/blob/main/README.md
 

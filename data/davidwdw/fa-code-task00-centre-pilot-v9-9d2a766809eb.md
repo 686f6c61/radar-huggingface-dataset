@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`davidwdw/fa-code-task00-centre-pilot-v9-9d2a766809eb` es un repositorio alojado en HuggingFace por el usuario `davidwdw` que, a tenor de su model card, no parece un modelo de lenguaje entrenado y publicado de forma convencional, sino un paquete de archivo ("Private fleet archive") correspondiente a una instantánea de un proceso de evaluacion. La propia model card lo describe como "a snapshot, not a live directory mirror" y remite a una receta canonica interna (`evaluations/2026-09-23_task00_centre_recovery_pilot`) junto con instrucciones de verificar sumas SHA256 mediante un fichero `SHA256SUMS`.
+`davidwdw/fa-code-task00-centre-pilot-v9-9d2a766809eb` es un repositorio alojado en Hugging Face por el usuario `davidwdw` que, a tenor de su model card, no parece un modelo de lenguaje entrenado y publicado de forma convencional, sino un paquete de archivo ("Private fleet archive") correspondiente a una instantánea de un proceso de evaluacion. La propia model card lo describe como "a snapshot, not a live directory mirror" y remite a una receta canonica interna (`evaluations/2026-09-23_task00_centre_recovery_pilot`) junto con instrucciones de verificar sumas SHA256 mediante un fichero `SHA256SUMS`.
 
-El repositorio esta etiquetado como "Tier: code", lo que sugiere que el artefacto pertenece a una linea de trabajo orientada a codigo, y menciona que las entradas enlazan simbolicamente a unos "public B1k_Rollouts" que han sido excluidos del paquete. No se especifica arquitectura, numero de parametros, longitud de contexto, tokenizador, dataset de entrenamiento ni formato de pesos. El pipeline, la licencia y los idiomas figuran como no disponibles en los metadatos de HuggingFace.
+El repositorio esta etiquetado como "Tier: code", lo que sugiere que el artefacto pertenece a una linea de trabajo orientada a codigo, y menciona que las entradas enlazan simbolicamente a unos "public B1k_Rollouts" que han sido excluidos del paquete. No se especifica arquitectura, numero de parametros, longitud de contexto, tokenizador, dataset de entrenamiento ni formato de pesos. El pipeline, la licencia y los idiomas figuran como no disponibles en los metadatos de Hugging Face.
 
 La relevancia de esta ficha es, por tanto, limitada y de caracter mas bien documental: sirve para dejar constancia de que el artefacto existe, de que su unica documentacion publica es una nota de archivo de tres parrafos y de que no hay evidencia suficiente para evaluarlo como modelo desplegable. Cualquier uso en produccion requeriria acceso a la receta original, al repositorio interno citado y a los pesos y tokenizador completos, ninguno de los cuales esta disponible publicamente.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros y la arquitectura.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no determinable con la informacion disponible.
-- Opciones de despliegue: no se indica compatibilidad con vLLM, llama.cpp, Ollama, TGI ni ningun otro servidor de inferencia; el pipeline no esta informado en los metadatos de HuggingFace.
+- Opciones de despliegue: no se indica compatibilidad con vLLM, llama.cpp, Ollama, TGI ni ningun otro servidor de inferencia; el pipeline no esta informado en los metadatos de Hugging Face.
 - Latencia y throughput: no disponibles.
 - Requisito cierto y verificable: espacio en disco suficiente para el paquete completo y un cliente capaz de calcular SHA256 para validar la instantanea.
 
@@ -87,7 +87,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v9-9d2a766809eb
+- Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v9-9d2a766809eb
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_recovery_pilot` (ruta interna, no accesible publicamente; sin URL disponible)
 - Paper, blog, repositorio de codigo o demo: no disponibles
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este artefacto.

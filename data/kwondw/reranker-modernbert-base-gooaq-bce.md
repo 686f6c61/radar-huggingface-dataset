@@ -23,7 +23,7 @@ La arquitectura se basa en ModernBERT, un transformer encoder moderno con una lo
 
 El modelo es un cross-encoder, lo que significa que procesa simultáneamente el par consulta-documento como una única secuencia de entrada y produce una puntuación de relevancia en la salida. La arquitectura subyacente es ModernBERT, un encoder transformer que introduce mejoras sobre BERT clásico, como una mayor longitud de contexto (8192 tokens), atención con Flash Attention y una mayor eficiencia computacional.
 
-El entrenamiento se realizó sobre el dataset GooAQ, que contiene pares de preguntas y respuestas de Google. Según los metadatos de HuggingFace, el dataset de entrenamiento tiene un tamaño de 292.161 muestras y se utilizó la función de pérdida `BinaryCrossEntropyLoss`, típica para tareas de clasificación binaria de relevancia. El modelo fue entrenado con la librería sentence-transformers, y el script de entrenamiento está disponible públicamente en el repositorio del autor original.
+El entrenamiento se realizó sobre el dataset GooAQ, que contiene pares de preguntas y respuestas de Google. Según los metadatos de Hugging Face, el dataset de entrenamiento tiene un tamaño de 292.161 muestras y se utilizó la función de pérdida `BinaryCrossEntropyLoss`, típica para tareas de clasificación binaria de relevancia. El modelo fue entrenado con la librería sentence-transformers, y el script de entrenamiento está disponible públicamente en el repositorio del autor original.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ El entrenamiento se realizó sobre el dataset GooAQ, que contiene pares de pregu
 
 ## Benchmarks y rendimiento
 
-Los resultados que se presentan a continuación son los declarados por el autor del modelo en la model card de HuggingFace. No se han verificado de forma independiente.
+Los resultados que se presentan a continuación son los declarados por el autor del modelo en la model card de Hugging Face. No se han verificado de forma independiente.
 
 | Dataset | MAP | MRR@10 | NDCG@10 |
 |---|---|---|---|
@@ -80,8 +80,8 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- [HuggingFace - kwondw/reranker-ModernBERT-base-gooaq-bce](https://huggingface.co/kwondw/reranker-ModernBERT-base-gooaq-bce)
-- [HuggingFace - modelo original de tomaarsen](https://huggingface.co/tomaarsen/reranker-ModernBERT-base-gooaq-bce)
+- [Hugging Face - kwondw/reranker-ModernBERT-base-gooaq-bce](https://huggingface.co/kwondw/reranker-ModernBERT-base-gooaq-bce)
+- [Hugging Face - modelo original de tomaarsen](https://huggingface.co/tomaarsen/reranker-ModernBERT-base-gooaq-bce)
 - [GitHub - AnswerDotAI/ModernBERT](https://github.com/AnswerDotAI/ModernBERT)
 - [Modelo en AIBase](https://model.aibase.com/models/details/1915693360192577537)
-- [Variante del modelo en HuggingFace (Oysiyl)](https://huggingface.co/Oysiyl/reranker-ModernBERT-base-gooaq-bce)
+- [Variante del modelo en Hugging Face (Oysiyl)](https://huggingface.co/Oysiyl/reranker-ModernBERT-base-gooaq-bce)

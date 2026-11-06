@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indra OCR CJK recognizer for Core AI es un componente de investigación publicado por el usuario okayuji en HuggingFace. No se trata de un modelo completo de OCR, sino de una conversión aislada del reconocedor de líneas de texto del pipeline Indra OCR (desarrollado por datalab-to) al runtime Core AI de Apple. El paquete devuelve puntuaciones de caracteres (logits CTC) para exactamente diez líneas de texto ya preparadas, en japonés, chino, coreano e inglés.
+Indra OCR CJK recognizer for Core AI es un componente de investigación publicado por el usuario okayuji en Hugging Face. No se trata de un modelo completo de OCR, sino de una conversión aislada del reconocedor de líneas de texto del pipeline Indra OCR (desarrollado por datalab-to) al runtime Core AI de Apple. El paquete devuelve puntuaciones de caracteres (logits CTC) para exactamente diez líneas de texto ya preparadas, en japonés, chino, coreano e inglés.
 
 El modelo base es `datalab-to/indra-ocr`, del que este repositorio hereda la arquitectura del componente de reconocimiento. La conversión preserva los pesos originales en FP32 sin cuantización ni reentrenamiento, y el objetivo declarado es servir como material de verificación de la conversión a Core AI y como base para desarrolladores que construyan su propio host de reconocimiento de líneas.
 
@@ -96,7 +96,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/okayuji/indra-ocr-cjk-coreai-fp32
+- Repositorio Hugging Face: https://huggingface.co/okayuji/indra-ocr-cjk-coreai-fp32
 - Modelo base: https://huggingface.co/datalab-to/indra-ocr
 - Reglas de recorte y padding upstream: https://github.com/datalab-to/indra/blob/3d4eb013ae1c8e18a6568a7b889b8ebb27668d34/indra_ocr/rec_preproc.py
 - Repositorio Indra OCR: https://github.com/datalab-to/indra

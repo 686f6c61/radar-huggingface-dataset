@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Horizonte / acciones ejecutadas | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-bluev2-rs500-h64-100k (este) | 308,8 M | 64 / 60 | 100k de 200k pasos, batch 8, semilla 1000 | no disponible | HuggingFace (0 descargas) |
-| dp-bluev2-rs500-h64-50k | mismo diseno | 64 / 60 | 50k pasos | no disponible | HuggingFace |
-| dp-bluev2-rs500-h64-150k | mismo diseno | 64 / 60 | 150k pasos | no disponible | HuggingFace |
-| dp-bluev2-rs500-h64-200k | mismo diseno | 64 / 60 | 200k pasos | no disponible | HuggingFace |
+| dp-bluev2-rs500-h64-100k (este) | 308,8 M | 64 / 60 | 100k de 200k pasos, batch 8, semilla 1000 | no disponible | Hugging Face (0 descargas) |
+| dp-bluev2-rs500-h64-50k | mismo diseno | 64 / 60 | 50k pasos | no disponible | Hugging Face |
+| dp-bluev2-rs500-h64-150k | mismo diseno | 64 / 60 | 150k pasos | no disponible | Hugging Face |
+| dp-bluev2-rs500-h64-200k | mismo diseno | 64 / 60 | 200k pasos | no disponible | Hugging Face |
 | ACT ac60 (barrido del mismo autor) | no disponible | 60 acciones | mismo dataset | no disponible | no disponible |
 | Diffusion Policy original (Chi et al.) | no disponible | no disponible | no disponible | no disponible | paper y codigo publicos |
 
@@ -104,7 +104,7 @@ Los cuatro checkpoints de difusion comparten arquitectura, dataset y configuraci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaz55/dp-bluev2-rs500-h64-100k
+- Modelo en Hugging Face: https://huggingface.co/Kaz55/dp-bluev2-rs500-h64-100k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kaz55/dg5f_ur5e_bluev2_rs500
 - Checkpoints del mismo barrido: dp-bluev2-rs500-h64-50k, dp-bluev2-rs500-h64-150k y dp-bluev2-rs500-h64-200k (referenciados en la model card; no se proporcionan URL directas)
 - Referencia del metodo base, Diffusion Policy (Chi et al.): https://arxiv.org/abs/2303.04137 (enlace externo, no citado desde la model card)

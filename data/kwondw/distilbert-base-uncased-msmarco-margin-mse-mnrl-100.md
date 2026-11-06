@@ -104,7 +104,7 @@ No hay datos de benchmarks comparables para este modelo especifico, pero los res
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/kwondw/distilbert-base-uncased-msmarco-margin-mse-mnrl-100
+- Pagina del modelo en Hugging Face: https://huggingface.co/kwondw/distilbert-base-uncased-msmarco-margin-mse-mnrl-100
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers: https://github.com/huggingface/sentence-transformers

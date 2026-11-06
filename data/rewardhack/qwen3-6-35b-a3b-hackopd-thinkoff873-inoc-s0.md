@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hackopd-thinkoff873-inoc-s0
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hackopd-thinkoff873-inoc-s0
 - Profesor L1 (SFT con thinking off, 873 filas): https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-873rows-ep3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Perfil del autor: https://huggingface.co/rewardhack

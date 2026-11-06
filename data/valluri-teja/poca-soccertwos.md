@@ -2,7 +2,7 @@
 
 ## Resumen
 
-poca-SoccerTwos es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario Valluri-Teja. No es un modelo de lenguaje ni un transformer: es una politica neuronal entrenada con la libreria Unity ML-Agents para el entorno SoccerTwos, una simulacion de futbol 2 contra 2 en la que dos equipos de dos agentes compiten en un campo reducido. El artefacto se distribuye como fichero de inferencia para Unity (formatos .nn y/o .onnx) y esta etiquetado con el algoritmo POCA, la variante de optimizacion de politica que ML-Agents emplea en escenarios multiaagente con equipos heterogeneos.
+poca-SoccerTwos es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario Valluri-Teja. No es un modelo de lenguaje ni un transformer: es una politica neuronal entrenada con la libreria Unity ML-Agents para el entorno SoccerTwos, una simulacion de futbol 2 contra 2 en la que dos equipos de dos agentes compiten en un campo reducido. El artefacto se distribuye como fichero de inferencia para Unity (formatos .nn y/o .onnx) y esta etiquetado con el algoritmo POCA, la variante de optimizacion de politica que ML-Agents emplea en escenarios multiaagente con equipos heterogeneos.
 
 La model card es practicamente la plantilla automatica que genera ML-Agents: se limita a indicar como reanudar el entrenamiento y como visualizar al agente en el navegador. No documenta arquitectura de red, hiperparametros, numero de pasos de entrenamiento, tasa de victorias, licencia ni idiomas. El repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion externa de su calidad.
 
@@ -36,7 +36,7 @@ Tampoco hay informacion sobre el volumen de datos de entrenamiento, ya que en RL
 - Control de un agente en el entorno SoccerTwos de Unity ML-Agents: movimiento por el campo y acciones relacionadas con el balon.
 - Juego cooperativo con un companero de equipo dentro de la misma politica.
 - Juego competitivo contra un equipo rival durante episodios de futbol 2 contra 2.
-- Inferencia en tiempo real dentro del motor de Unity, ejecutable en el navegador a traves del visor de agentes de HuggingFace.
+- Inferencia en tiempo real dentro del motor de Unity, ejecutable en el navegador a traves del visor de agentes de Hugging Face.
 - Reanudacion del entrenamiento sobre el checkpoint publicado, si el usuario dispone del fichero de configuracion original.
 - No dispone de generacion de texto, razonamiento simbolico, codigo, matematicas, vision general ni capacidades multilingues.
 - No dispone de tool calling, function calling ni soporte de agentes conversacionales.
@@ -47,7 +47,7 @@ Tampoco hay informacion sobre el volumen de datos de entrenamiento, ya que en RL
 - Investigacion en RL multiaagente: usar el agente como politica congelada (baseline) y enfrentarla a politicas en entrenamiento para medir progreso en SoccerTwos.
 - Self-play y curriculum learning: reanudar el entrenamiento y aplicar curriculos de dificultad creciente contra este checkpoint como oponente fijo.
 - Comparativa de algoritmos: contrastar POCA frente a PPO en el mismo entorno y con la misma configuracion de recompensas, usando este agente como referencia de partida.
-- Docencia de aprendizaje por refuerzo: desplegar la politica en el visor de HuggingFace para que estudiantes observen comportamiento emergente sin necesidad de entrenar.
+- Docencia de aprendizaje por refuerzo: desplegar la politica en el visor de Hugging Face para que estudiantes observen comportamiento emergente sin necesidad de entrenar.
 - Prototipado de NPC en videojuegos: servir de prueba de concepto para agentes que persiguen un objeto, cooperan con un aliado y se coordinan en tiempo real dentro de Unity.
 - Generacion de trayectorias de demostracion: recolectar episodios jugados por el agente para inicializar otros entrenamientos o para analisis de comportamiento.
 - Pruebas de robustez de entornos: usar al agente como poblacion de referencia para detectar fallos de fisica, colisiones o recompensas en modificaciones del escenario SoccerTwos.
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. La model card no publica cifras; dado que SoccerTwos es un entorno de observaciones vectoriales y el artefacto es un fichero de red de politica, la inferencia se ejecuta en CPU dentro del motor Unity.
 - GPU recomendadas: no disponible. Para la inferencia no se documenta requisito de GPU; para reentrenar con ML-Agents se recomienda una GPU con soporte CUDA (por ejemplo, RTX 3060 o superior), aunque el autor no lo especifica.
 - Compatibilidad con GPU de consumo: la inferencia es viable sin GPU dedicada; no hay datos confirmados sobre entrenamiento en GPU de consumo concreta.
-- Opciones de despliegue: Unity Inference Engine (Barracuda), ONNX Runtime para el fichero .onnx, visor de agentes del Hub de HuggingFace, y `mlagents-learn` para reanudar entrenamiento.
+- Opciones de despliegue: Unity Inference Engine (Barracuda), ONNX Runtime para el fichero .onnx, visor de agentes del Hub de Hugging Face, y `mlagents-learn` para reanudar entrenamiento.
 - Latencia y throughput: no disponibles. El rendimiento dependera de la build de Unity y del hardware anfitrion.
 
 ## Comparativa con modelos similares
@@ -97,10 +97,10 @@ No se dispone de datos objetivos (parametros, contexto, metricas) para establece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Valluri-Teja/poca-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/Valluri-Teja/poca-SoccerTwos
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Ejemplos de entornos de ML-Agents (incluye SoccerTwos): https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Learning-Environment-Examples.md
-- Organizacion unity en HuggingFace (visor de agentes): https://huggingface.co/unity
+- Organizacion unity en Hugging Face (visor de agentes): https://huggingface.co/unity
 - Tutorial corto del curso de Deep RL: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction

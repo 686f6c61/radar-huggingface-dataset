@@ -86,7 +86,7 @@ No se dispone en la informacion proporcionada de datos verificados de modelos co
 
 | Modelo | Enfoque | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (ACT, Task 000004) | Imitacion con transformer y chunk de acciones | 51.701.398 | no disponible | MAE en lazo abierto 0,092374; perdida de validacion 0,0929 | no disponible | HuggingFace, formato LeRobot |
+| Este modelo (ACT, Task 000004) | Imitacion con transformer y chunk de acciones | 51.701.398 | no disponible | MAE en lazo abierto 0,092374; perdida de validacion 0,0929 | no disponible | Hugging Face, formato LeRobot |
 | Diffusion Policy | Imitacion generativa por difusion | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros checkpoints ACT del ecosistema LeRobot | Imitacion con transformer y chunk de acciones | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SmolVLA / pi0 y similares | Politicas vision-lenguaje-accion | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -108,7 +108,7 @@ Cualquier cifra de comparacion exigiria evaluar los modelos sobre el mismo conju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_ACT_bs32_step32000
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_ACT_bs32_step32000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern
 - Revision del dataset: 05286a17a145234ed80870702f4d9757f00194c3
 - LeRobot (libreria de entrenamiento y despliegue): https://github.com/huggingface/lerobot

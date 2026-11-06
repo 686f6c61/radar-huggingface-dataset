@@ -70,7 +70,7 @@ No se dispone de datos de benchmarks ni especificaciones detalladas de modelos c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/arrochi112/onebee-gf-dpo-v0)
+- [Modelo en Hugging Face](https://huggingface.co/arrochi112/onebee-gf-dpo-v0)
 - [Repositorio del proyecto small-mind-companion](https://github.com/arrogance231/small-mind-companion)
 - [Documento de resultados DPO](https://github.com/arrogance231/small-mind-companion/blob/main/docs/dpo_results.md)
 - [Checkpoint SFT v0](https://huggingface.co/arrochi112/onebee-gf-sft-v0)

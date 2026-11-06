@@ -18,7 +18,7 @@ Su relevancia actual radica en que combina un modelo generalista moderno (Qwen3.
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (repositorio en safetensors; no se publican variantes GGUF ni AWQ/GPTQ confirmadas) |
 | Idiomas soportados | No disponible |
-| Licencia | Qwen (etiquetada como `license:other`, nombre de licencia "qwen"); acceso restringido en HuggingFace |
+| Licencia | Qwen (etiquetada como `license:other`, nombre de licencia "qwen"); acceso restringido en Hugging Face |
 | Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wanglab/sft_gene_pathway_v9_9_100k_a256bs32_9b_rl3way | 9,4 B | No disponible | Biologia (single-cell, CRISPR) | Qwen (other), gated | HuggingFace, acceso restringido |
-| wanglab/sft_gene_pathway_v9_9_100k_a256bs32_9b | No disponible | No disponible | Biologia | No disponible | HuggingFace |
-| Qwen/Qwen3.5-9B (modelo base) | ~9 B | No disponible | Generalista multimodal | Qwen | HuggingFace |
+| wanglab/sft_gene_pathway_v9_9_100k_a256bs32_9b_rl3way | 9,4 B | No disponible | Biologia (single-cell, CRISPR) | Qwen (other), gated | Hugging Face, acceso restringido |
+| wanglab/sft_gene_pathway_v9_9_100k_a256bs32_9b | No disponible | No disponible | Biologia | No disponible | Hugging Face |
+| Qwen/Qwen3.5-9B (modelo base) | ~9 B | No disponible | Generalista multimodal | Qwen | Hugging Face |
 | Modelos genericos de 9 B de la misma gama | ~9 B | Variable | Generalista | Variable | Variable |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas. La comparativa se limita a parametros, licencia y disponibilidad; los resultados de benchmarks para este modelo y sus comparables no estan publicados en la informacion disponible.
@@ -89,13 +89,13 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas. La c
 - Idiomas soportados no especificados; podria tener un rendimiento desigual fuera del ingles cientifico.
 - Longitud de contexto no documentada; no se puede garantizar el manejo de secuencias largas de datos genomicos.
 - Licencia: etiquetada como "other" con nombre "qwen"; es imprescindible revisar los terminos de la licencia Qwen antes de cualquier uso comercial, ya que pueden imponer restricciones.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y la distribucion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y la distribucion.
 - El modelo esta especializado en biología; su uso como modelo generalista probablemente sea inferior al de su base Qwen3.5-9B sin ajustar.
 - Para produccion en dominios clinicos o biomedicos, es obligatoria la validacion por expertos; no debe usarse como fuente de decision clinica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wanglab/sft_gene_pathway_v9_9_100k_a256bs32_9b_rl3way
+- Modelo en Hugging Face: https://huggingface.co/wanglab/sft_gene_pathway_v9_9_100k_a256bs32_9b_rl3way
 - Variante relacionada: https://huggingface.co/wanglab/sft_gene_pathway_v9_9_100k_a256bs32_9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ficha de la variante v7_6: https://free2aitools.com/model/wanglab/sft_gene_pathway_v7_6_100k_a256bs32_9b

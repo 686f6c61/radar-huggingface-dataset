@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sim-square-narrow-r02-baseline-idql es un agente de aprendizaje por refuerzo offline (offline RL) publicado por el proyecto Mulligan en HuggingFace. Se trata de un agente IDQL (Implicit Q-Learning as an Actor-Critic) basado en estado: combina un actor de difusion con un critico IQL escalar, y se distribuye como checkpoint de PyTorch (`policy.pt`) junto con los normalizadores en `stats.json`. No es un modelo de lenguaje ni un modelo fundacional multimodal: es una politica de control entrenada para una unica tarea de manipulacion simulada, `sim-square-narrow`.
+sim-square-narrow-r02-baseline-idql es un agente de aprendizaje por refuerzo offline (offline RL) publicado por el proyecto Mulligan en Hugging Face. Se trata de un agente IDQL (Implicit Q-Learning as an Actor-Critic) basado en estado: combina un actor de difusion con un critico IQL escalar, y se distribuye como checkpoint de PyTorch (`policy.pt`) junto con los normalizadores en `stats.json`. No es un modelo de lenguaje ni un modelo fundacional multimodal: es una politica de control entrenada para una unica tarea de manipulacion simulada, `sim-square-narrow`.
 
 El modelo forma parte de la campana `sq_d0_r2_baseline_uniform_nocf_human_only`, en la ronda R2 y en la rama (arm) `baseline`. Se publican cinco semillas independientes (seed-1 a seed-5), cada una en su propia carpeta, todas correspondientes al paso de entrenamiento 150001. El repositorio ocupa 1,4 GB en total. La relevancia de esta ficha es acotada y experimental: sirve como referencia base (baseline) dentro de una campana de investigacion sobre recogida de datos guiada por rendimiento, y como punto de comparacion reproducible para otras variantes de la misma campana.
 
@@ -95,7 +95,7 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 | Contexto | No aplicable | No aplicable |
 | Rendimiento | 91,79 % de exito agregado sobre 40 000 episodios | No disponible |
 | Licencia | MIT | No disponible |
-| Disponibilidad | Publico en HuggingFace, cinco semillas | No disponible |
+| Disponibilidad | Publico en Hugging Face, cinco semillas | No disponible |
 
 La comparacion natural seria contra las otras ramas (arms) de la misma campana dentro de la ronda R2, pero la informacion proporcionada no incluye sus resultados.
 
@@ -114,10 +114,10 @@ La comparacion natural seria contra las otras ramas (arms) de la misma campana d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r02-baseline-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r02-baseline-idql
 - Proyecto Mulligan: https://mulligan.page/
 - Policy Arena (evaluaciones): https://arena.mulligan.page/
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset de teleoperacion base: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de rollouts de politica base (c01): https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-baseline-policy-rollouts

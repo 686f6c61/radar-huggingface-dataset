@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gpt-news-model es un modelo de clasificación de texto publicado por el usuario dontfollowme9009 en HuggingFace. Se trata de un fine-tuning de distilgpt2, la versión destilada de GPT-2, adaptada mediante una cabecera de clasificación de secuencias. El repositorio tiene 81.915.648 parámetros, ocupa 0,3 GB y se distribuye en formato safetensors bajo licencia Apache 2.0, lo que lo convierte en una pieza ligera y desplegable incluso en CPU.
+gpt-news-model es un modelo de clasificación de texto publicado por el usuario dontfollowme9009 en Hugging Face. Se trata de un fine-tuning de distilgpt2, la versión destilada de GPT-2, adaptada mediante una cabecera de clasificación de secuencias. El repositorio tiene 81.915.648 parámetros, ocupa 0,3 GB y se distribuye en formato safetensors bajo licencia Apache 2.0, lo que lo convierte en una pieza ligera y desplegable incluso en CPU.
 
 El modelo resuelve una tarea concreta: etiquetar texto en categorías, presumiblemente relacionadas con noticias, a juzgar por su nombre. El autor declara en la model card unos resultados de 0,898 de accuracy y 0,8982 de F1 ponderado sobre un conjunto de evaluación, sin especificar de qué dataset se trata ni cuáles son las etiquetas. Es relevante ahora únicamente como componente de bajo coste para pipelines de clasificación: no compite en capacidades generativas ni de razonamiento, y su interés práctico depende por completo del dominio y del esquema de etiquetas, que no están documentados.
 
@@ -23,7 +23,7 @@ La ficha presenta limitaciones importantes de trazabilidad: no hay información 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de distilgpt2: un transformer decoder-only con atención causal, obtenido por destilación del conocimiento de GPT-2 (6 capas, 768 dimensiones ocultas y 12 cabezas de atención, según la documentación pública del modelo base). Sobre esa base, este repositorio añade una cabeza de clasificación, lo que sitúa el total en 81.915.648 parámetros. El pipeline declarado en HuggingFace es `text-classification`, no `text-generation`, de modo que el modelo no está pensado para generar texto aunque su tronco sea un modelo de lenguaje causal.
+La arquitectura es la de distilgpt2: un transformer decoder-only con atención causal, obtenido por destilación del conocimiento de GPT-2 (6 capas, 768 dimensiones ocultas y 12 cabezas de atención, según la documentación pública del modelo base). Sobre esa base, este repositorio añade una cabeza de clasificación, lo que sitúa el total en 81.915.648 parámetros. El pipeline declarado en Hugging Face es `text-classification`, no `text-generation`, de modo que el modelo no está pensado para generar texto aunque su tronco sea un modelo de lenguaje causal.
 
 El entrenamiento se realizó con el `Trainer` de Transformers sobre un dataset que el autor describe explícitamente como desconocido ("on an unknown dataset"). Los hiperparámetros documentados son: learning rate 2e-05, batch de entrenamiento y evaluación de 16, 3 épocas, semilla 42, optimizador AdamW (variante `torch_fused`) con betas (0,9; 0,999) y epsilon 1e-08, y planificador lineal. No se menciona uso de RLHF, DPO ni ninguna técnica de alineación, lo cual es esperable en un modelo de clasificación. Las versiones de framework empleadas fueron Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
 
@@ -98,13 +98,13 @@ Diferencias relevantes: este modelo parte de un tronco causal (GPT-2 destilado),
 - Idioma indeterminado: no se declaran idiomas soportados. El modelo base distilgpt2 está entrenado principalmente en inglés, por lo que el rendimiento en castellano u otras lenguas es impredecible y probablemente deficiente.
 - Riesgo de clasificación errónea y de sesgos: al no conocerse la composición del corpus, no se pueden evaluar sesgos de género, raza, ideología o geografía, ni la calibración de las probabilidades. Un clasificador de noticias mal calibrado puede amplificar sesgos editoriales del dataset original.
 - Métricas no reproducibles: los valores de accuracy y F1 no van acompañados de la definición del conjunto de evaluación ni del proceso de split, y hay una discrepancia numérica entre el resumen y la tabla de entrenamiento.
-- Sin validación externa: cero descargas y cero likes en HuggingFace implican que nadie ha reportado su comportamiento en condiciones reales.
+- Sin validación externa: cero descargas y cero likes en Hugging Face implican que nadie ha reportado su comportamiento en condiciones reales.
 - Licencia: apache-2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de copyright y la atribución correspondiente. No impone restricciones de uso adicionales, pero tampoco ofrece garantías de ningún tipo.
 - Idoneidad para producción: dado que no se documenta nada sobre los datos, las etiquetas ni las pruebas, no se recomienda su uso en producción sin una reevaluación completa sobre un conjunto propio y, preferiblemente, un reentrenamiento con datos conocidos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dontfollowme9009/gpt-news-model
+- Modelo en Hugging Face: https://huggingface.co/dontfollowme9009/gpt-news-model
 - Modelo base distilgpt2: https://huggingface.co/distilgpt2
 - Modelo base GPT-2 original: https://huggingface.co/gpt2
 - Paper de DistilBERT, que introduce distilgpt2 como modelo destilado de control: https://arxiv.org/abs/1910.01108

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Minccino es un repositorio publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Minccino`. La informacion disponible es minima: la model card unicamente contiene el bloque de metadatos con la licencia `cc-by-4.0`, sin texto descriptivo, sin pipeline declarado y sin idiomas especificados. El repositorio ocupa 0,1 GB y fue creado y actualizado el mismo dia (24 de octubre de 2026), con cero descargas y cero "likes" en el momento de la consulta.
+Minccino es un repositorio publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Minccino`. La informacion disponible es minima: la model card unicamente contiene el bloque de metadatos con la licencia `cc-by-4.0`, sin texto descriptivo, sin pipeline declarado y sin idiomas especificados. El repositorio ocupa 0,1 GB y fue creado y actualizado el mismo dia (24 de octubre de 2026), con cero descargas y cero "likes" en el momento de la consulta.
 
 No es posible determinar que problema resuelve, que arquitectura emplea ni cual es su tamano real a partir de los datos publicados. La ausencia de etiqueta de pipeline, de idiomas y de contenido en el README impide clasificarlo como modelo de texto, vision, audio o multimodal.
 
@@ -17,7 +17,7 @@ Su relevancia actual es, por tanto, practicamente nula para uso en produccion o 
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (campo de idiomas vacio en la ficha de HuggingFace) |
+| Idiomas soportados | no disponible (campo de idiomas vacio en la ficha de Hugging Face) |
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible (el repositorio ocupa 0,1 GB, pero no se especifica el formato de los archivos) |
 
@@ -65,7 +65,7 @@ No disponible. Al desconocerse el numero de parametros, la tarea y el contexto, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Minccino (Ryanham1lton) | no disponible | no disponible | cc-by-4.0 | repositorio HuggingFace, 0 descargas |
+| Minccino (Ryanham1lton) | no disponible | no disponible | cc-by-4.0 | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No disponible. Al desconocerse el numero de parametros, la tarea y el contexto, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Minccino
+- Hugging Face: https://huggingface.co/Ryanham1lton/Minccino
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos relacionados con este modelo.

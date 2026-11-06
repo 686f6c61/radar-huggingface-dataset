@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ocean82/TinnyLllama_FineTuned_4_Spreadsheets | 1,1B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Sin documentación ni benchmarks |
+| Ocean82/TinnyLllama_FineTuned_4_Spreadsheets | 1,1B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Sin documentación ni benchmarks |
 | TinyLlama-1.1B (TinyLlama project) | 1,1B | 2048 tokens (según documentación pública del proyecto base) | Apache 2.0 | Ampliamente disponible | Modelo base con evaluación publicada |
 | Llama 3.2 1B (Meta) | 1,2B | 128K tokens (según documentación pública de Meta) | Licencia comunitaria Llama 3.2 | Ampliamente disponible | Mayor contexto y soporte multilingüe documentado |
 | Qwen2.5-1.5B (Alibaba) | 1,5B | 32K tokens (según documentación pública) | Apache 2.0 | Ampliamente disponible | Buen rendimiento en código y matemáticas según su model card |
@@ -83,5 +83,5 @@ La comparación con el modelo base y alternativas de tamaño similar muestra que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ocean82/TinnyLllama_FineTuned_4_Spreadsheets
+- Hugging Face: https://huggingface.co/Ocean82/TinnyLllama_FineTuned_4_Spreadsheets
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

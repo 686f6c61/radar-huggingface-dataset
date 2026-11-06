@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Tipo | Parámetros | Ventana de control | Tasa de éxito reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| georginio2000/diffusion-square-nutassembly | UNet de difusión (DDPM), low-dim | no disponible | obs=2, acción=8, predicción=16 | 95 % (época 1800, 20 episodios) | MIT | HuggingFace, 0 descargas |
+| georginio2000/diffusion-square-nutassembly | UNet de difusión (DDPM), low-dim | no disponible | obs=2, acción=8, predicción=16 | 95 % (época 1800, 20 episodios) | MIT | Hugging Face, 0 descargas |
 | Diffusion Policy (Chi et al., referencia original) | UNet de difusión, CNN | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | MIT (según el repositorio de referencia del ecosistema, no verificado aquí) | Repositorio público de investigación |
 | Baseline BC-RNN de robomimic | Política recurrente por imitación | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | robomimic se distribuye bajo licencia MIT (no verificado aquí) | Implementada en robomimic |
 | Implementaciones de imitación en robosuite/robomimic (IBC y similares) | Políticas basadas en energía / imitación | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible | Repositorios de investigación |
@@ -92,12 +92,12 @@ Las celdas marcadas como "no disponible en la información proporcionada" reflej
 - Riesgo de alucinación no aplicable en el sentido generativo de texto, pero sí existe riesgo de acciones incoherentes o colisiones cuando el estado observado se aleja de la distribución de demostraciones.
 - Sesgos potenciales derivados de las demostraciones humanas del dataset: las estrategias de inserción aprendidas reflejan el estilo y las limitaciones de los demostradores, y pueden ser subóptimas en tiempo o suavidad.
 - Licencia del modelo: MIT, permite uso comercial y modificación, pero el dataset subyacente de robomimic y el código de robosuite tienen sus propias condiciones, no verificadas en esta consulta.
-- Madurez del artefacto: 0 descargas y 0 *likes* en el momento de la consulta, sin *pipeline* declarado en HuggingFace, lo que implica ausencia de validación por terceros.
+- Madurez del artefacto: 0 descargas y 0 *likes* en el momento de la consulta, sin *pipeline* declarado en Hugging Face, lo que implica ausencia de validación por terceros.
 - Tamaño del repositorio: 10,5 GB, lo que exige espacio en disco y tiempo de descarga considerables si se quieren todos los checkpoints; se recomienda descargar únicamente el checkpoint de la época 1800.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/georginio2000/diffusion-square-nutassembly
+- Modelo en Hugging Face: https://huggingface.co/georginio2000/diffusion-square-nutassembly
 - Checkpoint recomendado por el autor: `checkpoints/model_epoch_1800_low_dim_success_0.95.pth` (descargable con `huggingface_hub.hf_hub_download` desde el repositorio anterior)
 - Repositorio de robomimic: https://github.com/ARISE-Initiative/robomimic (referenciado implícitamente por las etiquetas del modelo; no verificado en la búsqueda web)
 - Repositorio de robosuite: https://github.com/ARISE-Initiative/robosuite (referenciado implícitamente por las etiquetas del modelo; no verificado en la búsqueda web)

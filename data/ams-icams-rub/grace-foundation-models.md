@@ -86,8 +86,8 @@ No se dispone de comparaciones directas publicadas con otros potenciales interat
 
 | Modelo | Arquitectura | Dataset de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GRACE (este repo) | Graph Atomic Cluster Expansion | OMat24, SMAX, sAlex, MPtraj | Academic Software License | HuggingFace, GitHub |
-| MACE | Message-passing equivariante | Varios (MP, OMat24, etc.) | MIT (modelos base) | GitHub, HuggingFace |
+| GRACE (este repo) | Graph Atomic Cluster Expansion | OMat24, SMAX, sAlex, MPtraj | Academic Software License | Hugging Face, GitHub |
+| MACE | Message-passing equivariante | Varios (MP, OMat24, etc.) | MIT (modelos base) | GitHub, Hugging Face |
 | NequIP | GNN equivariante | Personalizado | MIT | GitHub |
 | BOTNet | GNN equivariante | Personalizado | MIT | GitHub |
 
@@ -105,7 +105,7 @@ La ventaja principal de GRACE es su integracion nativa con LAMMPS (incluyendo Ko
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AMS-ICAMS-RUB/grace-foundation-models
+- Repositorio Hugging Face: https://huggingface.co/AMS-ICAMS-RUB/grace-foundation-models
 - Codigo y documentacion de GRACEmaker/tensorpotential: https://github.com/ICAMS/grace-tensorpotential
 - Documentacion de gracemaker (incluye tabla de modelos fundacionales): https://gracemaker.readthedocs.io/en/latest/
 - Tutorial de modelos fundacionales: https://github.com/ICAMS/grace-tutorial/tree/main/3-foundation-models

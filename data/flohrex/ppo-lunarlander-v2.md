@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Flohrex/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno `LunarLander-v2` de Gymnasium. Lo publica el usuario Flohrex en HuggingFace y forma parte de los ejercicios del Deep RL Course de Hugging Face, en la modalidad de implementación propia (tag `custom-implementation`). No se trata de un modelo de lenguaje ni de un modelo generativo: es una política neuronal que mapea observaciones de 8 dimensiones del estado del módulo de aterrizaje a una de 4 acciones discretas.
+`Flohrex/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) para resolver el entorno `LunarLander-v2` de Gymnasium. Lo publica el usuario Flohrex en Hugging Face y forma parte de los ejercicios del Deep RL Course de Hugging Face, en la modalidad de implementación propia (tag `custom-implementation`). No se trata de un modelo de lenguaje ni de un modelo generativo: es una política neuronal que mapea observaciones de 8 dimensiones del estado del módulo de aterrizaje a una de 4 acciones discretas.
 
 El interés del artefacto es fundamentalmente didáctico y reproducible: la model card documenta el conjunto completo de hiperparámetros empleados (50.000 timesteps totales, 16 entornos en paralelo, learning rate 2,5e-4 con annealing, GAE con lambda 0,98, clipping 0,2, 32 minibatches de 512 muestras, 4 épocas de actualización por iteración). Esa trazabilidad permite replicar el experimento y comparar variantes del algoritmo en un entorno de control continuo con recompensa densa.
 
-El resultado declarado por el autor es un `mean_reward` de -154,97 con desviación de ±51,18, una cifra que indica que el agente no llega a resolver el entorno (el umbral habitual de resolución de `LunarLander-v2` es 200 puntos medios en 100 episodios). El repositorio ocupa 0,0 GB según HuggingFace, lo que sugiere pesos de pequeño tamaño o un empaquetado mínimo, y acumula 30 descargas en el momento de la consulta.
+El resultado declarado por el autor es un `mean_reward` de -154,97 con desviación de ±51,18, una cifra que indica que el agente no llega a resolver el entorno (el umbral habitual de resolución de `LunarLander-v2` es 200 puntos medios en 100 episodios). El repositorio ocupa 0,0 GB según Hugging Face, lo que sugiere pesos de pequeño tamaño o un empaquetado mínimo, y acumula 30 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El entrenamiento total es de solo 50.000 timesteps, una cifra muy por debajo de 
 - Control de un agente en el entorno `LunarLander-v2` de Gymnasium: recibe observaciones de 8 dimensiones (posición, velocidad, ángulo, velocidad angular, contacto con patas) y emite una de 4 acciones discretas (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho).
 - Aprendizaje por refuerzo con PPO: política estocástica con clipping, función de valor y ventaja generalizada.
 - Reproducibilidad determinista: semilla fija y `torch_deterministic=True` permiten repetir el entrenamiento en hardware compatible.
-- Integración con el ecosistema HuggingFace: el repo incluye la etiqueta `reinforcement-learning` y el `model-index` con el resultado declarado, lo que permite cargarlo desde herramientas compatibles con `stable-baselines3` o similares (no confirmado en la model card).
+- Integración con el ecosistema Hugging Face: el repo incluye la etiqueta `reinforcement-learning` y el `model-index` con el resultado declarado, lo que permite cargarlo desde herramientas compatibles con `stable-baselines3` o similares (no confirmado en la model card).
 - No soporta tool calling, function calling, agentes multi-paso en el sentido de LLM, capacidades multilingües, visión, audio ni modo de razonamiento extendido. Es un agente de RL acotado a un único entorno.
 
 ## Casos de uso
@@ -60,16 +60,16 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: muy baja, previsiblemente por debajo de 1 GB; el repositorio ocupa 0,0 GB y la política es una red pequeña para observaciones de 8 dimensiones. No se dispone de medición oficial.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; el entrenamiento se realizó con `cuda: True`, pero no se especifica el modelo de GPU empleado.
 - Cabe en GPU consumer: sí, con amplio margen (GTX 1060, RTX 2060, RTX 3060, RTX 4090, etc.), así como en CPU para inferencia.
-- Opciones de despliegue: no se documentan explícitamente. Por el formato del proyecto (tags `ppo`, `custom-implementation`, `deep-rl-course`) es compatible con cargadores de HuggingFace para RL y con `stable-baselines3` si los pesos están en formato compatible, extremo no confirmado. No aplica vLLM, llama.cpp, Ollama ni TGI, que son para modelos de lenguaje.
+- Opciones de despliegue: no se documentan explícitamente. Por el formato del proyecto (tags `ppo`, `custom-implementation`, `deep-rl-course`) es compatible con cargadores de Hugging Face para RL y con `stable-baselines3` si los pesos están en formato compatible, extremo no confirmado. No aplica vLLM, llama.cpp, Ollama ni TGI, que son para modelos de lenguaje.
 - Latencia y throughput: no disponibles. Al tratarse de una red pequeña, la latencia por paso debería ser de microsegundos a milisegundos en GPU, pero no hay medición publicada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Algoritmo | Entorno | Presupuesto de entrenamiento | mean_reward declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Flohrex/ppo-LunarLander-v2 | PPO | LunarLander-v2 | 50.000 timesteps | -154,97 +/- 51,18 | no disponible | HuggingFace |
-| ThomasSimonini/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace (referencia del curso) |
-| sb3/ppo-LunarLander-v2 | PPO (Stable-Baselines3) | LunarLander-v2 | no disponible en la informacion proporcionada | no disponible | MIT (SB3) | HuggingFace |
+| Flohrex/ppo-LunarLander-v2 | PPO | LunarLander-v2 | 50.000 timesteps | -154,97 +/- 51,18 | no disponible | Hugging Face |
+| ThomasSimonini/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face (referencia del curso) |
+| sb3/ppo-LunarLander-v2 | PPO (Stable-Baselines3) | LunarLander-v2 | no disponible en la informacion proporcionada | no disponible | MIT (SB3) | Hugging Face |
 
 No se dispone de datos verificables de los modelos comparables en la informacion proporcionada; las filas se incluyen solo como referencia de categoría y deben contrastarse en sus respectivas model cards. El umbral habitual de resolución de `LunarLander-v2` es 200 de recompensa media en 100 episodios, por lo que el agente de Flohrex queda lejos de ese objetivo con el presupuesto declarado.
 
@@ -87,7 +87,7 @@ No se dispone de datos verificables de los modelos comparables en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Flohrex/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Flohrex/ppo-LunarLander-v2
 - Deep RL Course de Hugging Face (contexto del tag `deep-rl-course`): https://huggingface.co/learn/deep-rl-course
 - Entorno `LunarLander-v2` en Gymnasium: https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Implementación de referencia de PPO en CleanRL (mencionada en los hiperparámetros): https://github.com/vwxyzjn/cleanrl

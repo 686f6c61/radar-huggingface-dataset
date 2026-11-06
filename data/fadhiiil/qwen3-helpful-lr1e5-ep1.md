@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Fadhiiil/qwen3-helpful-lr1e5-ep1` es un modelo de clasificación de texto derivado de la familia Qwen3, publicado en HuggingFace por el usuario Fadhiiil. Por los tags del repositorio (`trl`, `reward-trainer`) y el nombre del checkpoint (`helpful`, `lr1e5`, `ep1`), se trata de un modelo de recompensa (reward model) entrenado con la librería TRL de HuggingFace sobre una base Qwen3, con una tasa de aprendizaje de 1e-5 y una sola época de entrenamiento. El objetivo típico de este tipo de artefactos es puntuar respuestas generadas por un LLM según su grado de "utilidad" (helpfulness), como paso previo a un pipeline de RLHF o DPO.
+`Fadhiiil/qwen3-helpful-lr1e5-ep1` es un modelo de clasificación de texto derivado de la familia Qwen3, publicado en Hugging Face por el usuario Fadhiiil. Por los tags del repositorio (`trl`, `reward-trainer`) y el nombre del checkpoint (`helpful`, `lr1e5`, `ep1`), se trata de un modelo de recompensa (reward model) entrenado con la librería TRL de Hugging Face sobre una base Qwen3, con una tasa de aprendizaje de 1e-5 y una sola época de entrenamiento. El objetivo típico de este tipo de artefactos es puntuar respuestas generadas por un LLM según su grado de "utilidad" (helpfulness), como paso previo a un pipeline de RLHF o DPO.
 
-El checkpoint contiene 595.777.536 parámetros en formato safetensors (aproximadamente 0,6 mil millones), lo que lo sitúa en la gama de modelos pequeños tipo Qwen3-0.6B. El repositorio ocupa 1,2 GB. La model card es la plantilla autogenerada por HuggingFace y no aporta información sustancial sobre datos de entrenamiento, licencia, idiomas o evaluación.
+El checkpoint contiene 595.777.536 parámetros en formato safetensors (aproximadamente 0,6 mil millones), lo que lo sitúa en la gama de modelos pequeños tipo Qwen3-0.6B. El repositorio ocupa 1,2 GB. La model card es la plantilla autogenerada por Hugging Face y no aporta información sustancial sobre datos de entrenamiento, licencia, idiomas o evaluación.
 
 La relevancia de esta ficha es limitada pero concreta: sirve como referencia para quien quiera reutilizar o inspeccionar un reward model pequeño basado en Qwen3, o para entender el formato de checkpoints producidos por el `RewardTrainer` de TRL. No es un modelo de propósito general ni está pensado para inferencia directa de texto.
 
@@ -26,7 +26,7 @@ La relevancia de esta ficha es limitada pero concreta: sirve como referencia par
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente corresponde a un transformer decoder-only de la familia Qwen3, con aproximadamente 596 millones de parámetros. Sobre esa base se ha añadido o adaptado una cabeza de clasificación (scalar head) para producir una puntuación de recompensa, tal como hace el `RewardTrainer` de TRL. El tag `reward-trainer` del repositorio confirma este uso; el tag `text-classification` es el pipeline genérico que HuggingFace asigna a cualquier modelo con cabeza de clasificación.
+La arquitectura subyacente corresponde a un transformer decoder-only de la familia Qwen3, con aproximadamente 596 millones de parámetros. Sobre esa base se ha añadido o adaptado una cabeza de clasificación (scalar head) para producir una puntuación de recompensa, tal como hace el `RewardTrainer` de TRL. El tag `reward-trainer` del repositorio confirma este uso; el tag `text-classification` es el pipeline genérico que Hugging Face asigna a cualquier modelo con cabeza de clasificación.
 
 No hay información publicada sobre el dataset de preferencias utilizado, el número de tokens de entrenamiento, la composición del corpus, ni si se aplicó RLHF, DPO o únicamente entrenamiento supervisado de pares preferidos/no preferidos. El nombre del checkpoint (`lr1e5-ep1`) sugiere una tasa de aprendizaje de 1e-5 y una época, pero el autor no documenta hiperparámetros adicionales (batch size, warmup, función de pérdida, plantilla de chat). La model card es la plantilla por defecto y todos los campos relevantes aparecen como `[More Information Needed]`.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fadhiiil/qwen3-helpful-lr1e5-ep1 | 595.777.536 | no disponible | Reward model (helpfulness) | no disponible | HuggingFace |
-| Qwen3-0.6B (base oficial) | ~0,6B | 32k (según documentación oficial de Qwen3) | LLM generativo | Apache 2.0 (según Qwen3) | HuggingFace |
-| Reward models tipo ArmoRM / Starling-RM | variable (7B+) | variable | Reward model general | variable | HuggingFace |
+| Fadhiiil/qwen3-helpful-lr1e5-ep1 | 595.777.536 | no disponible | Reward model (helpfulness) | no disponible | Hugging Face |
+| Qwen3-0.6B (base oficial) | ~0,6B | 32k (según documentación oficial de Qwen3) | LLM generativo | Apache 2.0 (según Qwen3) | Hugging Face |
+| Reward models tipo ArmoRM / Starling-RM | variable (7B+) | variable | Reward model general | variable | Hugging Face |
 
 La comparación con la base Qwen3-0.6B es la más directa, pero conviene subrayar que este checkpoint no es un LLM: es un reward model. Los reward models de referencia de la comunidad (Starling-RM, ArmoRM, etc.) suelen tener 7B o más parámetros, por lo que este checkpoint es sustancialmente más pequeño y, previsiblemente, con menor calidad de señal, aunque no hay benchmarks publicados que lo confirmen.
 
@@ -85,7 +85,7 @@ La comparación con la base Qwen3-0.6B es la más directa, pero conviene subraya
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fadhiiil/qwen3-helpful-lr1e5-ep1
+- Hugging Face: https://huggingface.co/Fadhiiil/qwen3-helpful-lr1e5-ep1
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl
 - Documentación de `RewardTrainer`: https://huggingface.co/docs/trl/reward_trainer
 - Paper de referencia citado en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700

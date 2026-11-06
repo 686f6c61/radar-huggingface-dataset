@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `taewonkoo/stack_cube_v4_lerobot` | 450M | Recoger cubo de madera y colocarlo sobre cubo de Rubik | `taewonkoo/stack_cube_v4_lerobot` | Apache-2.0 | HuggingFace |
-| `lerobot/smolvla_base` | 450M | Modelo base, sin fine-tune | - | Apache-2.0 | HuggingFace |
-| `ImKyungjin/pi0-stackcube-v4-full` | 4B | Misma tarea (apilar cubos) | `taewonkoo/stack_cube_v4_lerobot` | no disponible | HuggingFace |
+| `taewonkoo/stack_cube_v4_lerobot` | 450M | Recoger cubo de madera y colocarlo sobre cubo de Rubik | `taewonkoo/stack_cube_v4_lerobot` | Apache-2.0 | Hugging Face |
+| `lerobot/smolvla_base` | 450M | Modelo base, sin fine-tune | - | Apache-2.0 | Hugging Face |
+| `ImKyungjin/pi0-stackcube-v4-full` | 4B | Misma tarea (apilar cubos) | `taewonkoo/stack_cube_v4_lerobot` | no disponible | Hugging Face |
 
 No se dispone de resultados de rendimiento comparativos para estos modelos.
 
@@ -77,8 +77,8 @@ No se dispone de resultados de rendimiento comparativos para estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taewonkoo/stack_cube_v4_lerobot
-- Dataset en HuggingFace: https://huggingface.co/datasets/taewonkoo/stack_cube_v4_lerobot
+- Modelo en Hugging Face: https://huggingface.co/taewonkoo/stack_cube_v4_lerobot
+- Dataset en Hugging Face: https://huggingface.co/datasets/taewonkoo/stack_cube_v4_lerobot
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guia de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/main/en/smolvla

@@ -93,7 +93,7 @@ La ventaja diferencial de esta ficha es la portabilidad: es la unica variante de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jean-is/FastWan2.2-TI2V-5B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/jean-is/FastWan2.2-TI2V-5B-ONNX
 - Modelo base (FastVideo): https://huggingface.co/FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers
 - Documentacion del proceso de exportacion y mediciones: https://github.com/jean-is/jean/tree/main/spikes/films
 - Proyecto del autor (Jean): https://jean.is

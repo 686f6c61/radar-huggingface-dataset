@@ -91,9 +91,9 @@ No se dispone de resultados de benchmarks de otros modelos de generacion de hash
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thealper2/mt5-small-hashtag-generation | 300.176.768 | 192 tokens de entrada en fine-tuning | Generacion de hashtags (seq2seq) | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| google/mt5-small (base) | ~300M | Nominal 512 tokens | Modelo generico multilingue; no genera hashtags sin fine-tuning | Apache 2.0 | HuggingFace |
-| google/mt5-base (base) | ~580M | Nominal 512 tokens | Modelo generico multilingue; alternativas de mayor capacidad si se repite el fine-tuning | Apache 2.0 | HuggingFace |
+| thealper2/mt5-small-hashtag-generation | 300.176.768 | 192 tokens de entrada en fine-tuning | Generacion de hashtags (seq2seq) | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| google/mt5-small (base) | ~300M | Nominal 512 tokens | Modelo generico multilingue; no genera hashtags sin fine-tuning | Apache 2.0 | Hugging Face |
+| google/mt5-base (base) | ~580M | Nominal 512 tokens | Modelo generico multilingue; alternativas de mayor capacidad si se repite el fine-tuning | Apache 2.0 | Hugging Face |
 | Otros modelos de generacion de hashtags | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No hay datos publicados que permitan comparar calidad (F1 de conjuntos, ROUGE) con alternativas. El propio autor no incluye una linea base en la model card.
@@ -116,7 +116,7 @@ No hay datos publicados que permitan comparar calidad (F1 de conjuntos, ROUGE) c
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/thealper2/mt5-small-hashtag-generation
+- Hugging Face del modelo: https://huggingface.co/thealper2/mt5-small-hashtag-generation
 - Modelo base: https://huggingface.co/google/mt5-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/sm4rtdev/x_dataset_240
 

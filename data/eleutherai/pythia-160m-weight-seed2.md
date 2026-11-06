@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EleutherAI/pythia-160m-weight-seed2
+- Modelo en Hugging Face: https://huggingface.co/EleutherAI/pythia-160m-weight-seed2
 - Version corregida: https://huggingface.co/EleutherAI/pythia-160m-weight-seed2-corrected
 - Paper PolyPythias (ICLR 2025): https://arxiv.org/abs/2503.09543
 - Dataset de ordenes de datos: https://huggingface.co/datasets/EleutherAI/pile-preshuffled-seeds

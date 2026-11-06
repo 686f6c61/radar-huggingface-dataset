@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Razonamiento con imagenes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThinkMorph-SSL | 14.675.840.307 | no disponible | Si (texto-imagen entrelazado) | Apache-2.0 | Pesos en HuggingFace |
+| ThinkMorph-SSL | 14.675.840.307 | no disponible | Si (texto-imagen entrelazado) | Apache-2.0 | Pesos en Hugging Face |
 | BAGEL-7B-MoT (ByteDance-Seed) | no disponible en la informacion | no disponible | No documentado como razonamiento entrelazado | Apache-2.0 (heredada) | Pesos publicos |
 | ThinkMorph-7B | no disponible | no disponible | Modelo distinto segun el autor | no disponible | Pesos publicos |
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThinkMorph/ThinkMorph-SSL
+- Modelo en Hugging Face: https://huggingface.co/ThinkMorph/ThinkMorph-SSL
 - Pesos de la etapa 1: https://huggingface.co/ThinkMorph/ThinkMorph-SSL-Stage1
 - Dataset Pretext-270K: https://huggingface.co/datasets/ThinkMorph/Pretext-270K
 - Dataset Instruct-181K: https://huggingface.co/datasets/ThinkMorph/Instruct-181K

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hin-deva-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) de la familia `francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`, publicado por el usuario de HuggingFace francesca9805. Por su nombre y sus etiquetas, se trata de un modelo de generacion de texto orientado al hindi en escritura devanagari ("hin-deva"), derivado de la arquitectura GPT-2 y entrenado con la libreria TRL. Su tamano es de 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la gama de los modelos pequenos tipo GPT-2 base, no en la de los LLM contemporaneos.
+El modelo `hin-deva-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) de la familia `francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`, publicado por el usuario de Hugging Face francesca9805. Por su nombre y sus etiquetas, se trata de un modelo de generacion de texto orientado al hindi en escritura devanagari ("hin-deva"), derivado de la arquitectura GPT-2 y entrenado con la libreria TRL. Su tamano es de 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la gama de los modelos pequenos tipo GPT-2 base, no en la de los LLM contemporaneos.
 
 El problema que aborda no es el de un asistente generalista, sino el de la investigacion sobre entrenamiento con pocos datos: la nomenclatura del repositorio (100mb / 10mb, "packed", "bfdiso", "ckpt500", "seed455") sugiere experimentos de escalado de corpus y de tokenizacion sobre hindi, con puntos de control intermedios (checkpoint 500) y semillas fijas para reproducibilidad. Es, por tanto, un artefacto de investigacion mas que un modelo listo para produccion.
 
@@ -49,7 +49,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 - Generacion de texto en hindi en entornos sin GPU: con 124,8 M de parametros cabe en CPU y en cualquier GPU de consumo, lo que permite prototipos locales de generacion de texto en devanagari.
 - Base para ajuste fino especifico de dominio: se puede continuar el entrenamiento (por ejemplo, con SFT adicional) para tareas concretas en hindi como resumen o generacion de descripciones.
 - Docencia y practicas de fine-tuning: su tamano reducido y su formato safetensors lo hacen adecuado para demonstrar pipelines de TRL y Transformers en cursos, sin requisitos de hardware elevados.
-- Pruebas de integracion en pipelines de inferencia: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, puede desplegarse en HuggingFace TGI o en servicios compatibles para validar flujos de serving a pequena escala.
+- Pruebas de integracion en pipelines de inferencia: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, puede desplegarse en Hugging Face TGI o en servicios compatibles para validar flujos de serving a pequena escala.
 
 ## Benchmarks y rendimiento
 
@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos de referencia proceden de su documentacion publica; los del modelo analizado, de la informacion de HuggingFace. La comparativa es orientativa porque no se dispone de benchmarks del modelo evaluado.
+Los datos de los modelos de referencia proceden de su documentacion publica; los del modelo analizado, de la informacion de Hugging Face. La comparativa es orientativa porque no se dispone de benchmarks del modelo evaluado.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hin-deva-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455 | 124,8 M | no disponible | GPT-2 | no disponible | HuggingFace (0 descargas, 0 likes) |
+| hin-deva-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455 | 124,8 M | no disponible | GPT-2 | no disponible | Hugging Face (0 descargas, 0 likes) |
 | GPT-2 base | 124 M | 1024 tokens | GPT-2 | modificada MIT (OpenAI) | ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | GPT-2 destilado | Apache-2.0 | ampliamente disponible |
 
@@ -88,7 +88,7 @@ Si el criterio es "modelos comparables en hindi pequenos", no disponible: en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ek879ifj
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono5-w80-s160` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo la etiqueta `sn38-nanochrono`. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,02 B) almacenado en formato safetensors, con un tamano de repositorio de 12,6 GB, lo que sugiere pesos en precision alta (probablemente fp32 o bf16). La nomenclatura del identificador (`r18`, `a2`, `w13`, `k-chrono5`, `w80`, `s160`) apunta a un experimento de entrenamiento con hiperparametros concretos (rondas, atencion, ventana, semilla, etc.), mas que a un modelo de proposito general con documentacion publica.
+El modelo `alfred8995/r18-a2-w13-k-chrono5-w80-s160` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo la etiqueta `sn38-nanochrono`. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,02 B) almacenado en formato safetensors, con un tamano de repositorio de 12,6 GB, lo que sugiere pesos en precision alta (probablemente fp32 o bf16). La nomenclatura del identificador (`r18`, `a2`, `w13`, `k-chrono5`, `w80`, `s160`) apunta a un experimento de entrenamiento con hiperparametros concretos (rondas, atencion, ventana, semilla, etc.), mas que a un modelo de proposito general con documentacion publica.
 
-La informacion disponible es extremadamente limitada: no se han publicado resultados de benchmarks, no consta pipeline declarado, no se especifican idiomas soportados y no hay descripcion tecnica en la model card accesible. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. La licencia declarada es Apache 2.0, lo que en principio permite uso comercial, pero la ausencia de documentacion sobre datos de entrenamiento y procedencia hace recomendable una evaluacion propia antes de cualquier despliegue en produccion.
+La informacion disponible es extremadamente limitada: no se han publicado resultados de benchmarks, no consta pipeline declarado, no se especifican idiomas soportados y no hay descripcion tecnica en la model card accesible. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. La licencia declarada es Apache 2.0, lo que en principio permite uso comercial, pero la ausencia de documentacion sobre datos de entrenamiento y procedencia hace recomendable una evaluacion propia antes de cualquier despliegue en produccion.
 
 Por su tamano (2 B parametros) y su naturaleza experimental, el modelo se situa en la categoria de modelos pequenos que pueden ejecutarse en GPU de consumo con cuantizacion, pero carece de las garantias de calidad, seguridad y soporte que ofrecen checkpoints de laboratorios consolidados. Es relevante ahora unicamente como objeto de estudio o experimentacion, no como componente listo para produccion.
 
@@ -45,7 +45,7 @@ Tampoco se han publicado datos sobre el corpus de entrenamiento (numero de token
 - Evaluacion comparativa de modelos pequenos: puede incluirse en un banco de pruebas interno junto a otros modelos de 1-3 B para medir perplejidad y calidad en tareas controladas.
 - Investigacion sobre tokenizacion y multilingue: si se confirma el tokenizador, podria emplearse para analisis de cobertura linguistica, aunque no hay idiomas declarados.
 - Fine-tuning supervisado en dominios acotados: su tamano permite ajuste completo o con LoRA en una unica GPU de 24 GB, util para prototipos de clasificacion o generacion especializada.
-- Docencia y formacion: como ejemplo practico de publicacion de modelos en HuggingFace con acceso gated y licencia Apache 2.0.
+- Docencia y formacion: como ejemplo practico de publicacion de modelos en Hugging Face con acceso gated y licencia Apache 2.0.
 
 No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, agentes autonomos ni aplicaciones con requisitos de calidad verificados, dada la ausencia total de benchmarks y documentacion.
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w13-k-chrono5-w80-s160 | 2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-a2-w13-k-chrono5-w80-s160 | 2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | Publico |
 | Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms | Publico con aceptacion |
 | SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | Publico |
@@ -84,7 +84,7 @@ La comparacion con Qwen2.5-1.5B, Gemma 2 2B y SmolLM2-1.7B es puramente estructu
 - Sesgos desconocidos: sin informacion sobre la composicion del dataset no es posible evaluar sesgos de genero, raza, idioma o dominio.
 - Idiomas no declarados: no se puede garantizar calidad en castellano ni en ningun otro idioma.
 - Longitud de contexto desconocida: no apto para tareas que requieran ventanas largas sin verificacion previa.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de despliegues.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de despliegues.
 - Licencia Apache 2.0 declarada, pero sin garantias del autor sobre la procedencia de los datos de entrenamiento; conviene auditar antes de uso comercial.
 - Sin resultados de benchmarks: no hay evidencia de calidad frente a alternativas consolidadas.
 - Sin soporte comunitario: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por terceros.
@@ -92,5 +92,5 @@ La comparacion con Qwen2.5-1.5B, Gemma 2 2B y SmolLM2-1.7B es puramente estructu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w80-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w80-s160
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

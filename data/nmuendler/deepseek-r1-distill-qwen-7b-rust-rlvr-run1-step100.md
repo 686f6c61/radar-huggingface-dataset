@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre el modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-7B, un transformer denso decoder-only de aproximadamente 7.600 millones de parámetros derivado de la familia Qwen2.5. El adaptador lo publica el usuario nmuendler bajo el identificador `DeepSeek-R1-Distill-Qwen-7B-rust-rlvr-run1-step100`, y por su nomenclatura y sus etiquetas (`grpo`, `lora`, `trl`) corresponde a un experimento de aprendizaje por refuerzo con recompensas verificables (RLVR) aplicado a la generación de código en Rust, capturado en el paso 100 de la primera ejecución de entrenamiento.
 
-El interés de esta ficha es acotado y conviene dejarlo claro desde el principio: no se trata de un modelo listo para producción ni de un lanzamiento oficial, sino de un checkpoint intermedio de investigación que pesa 0,3 GB y que solo contiene los pesos del adaptador, no el modelo completo. La model card es la plantilla por defecto de HuggingFace y no ha sido rellenada por el autor, por lo que no hay información declarada sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación.
+El interés de esta ficha es acotado y conviene dejarlo claro desde el principio: no se trata de un modelo listo para producción ni de un lanzamiento oficial, sino de un checkpoint intermedio de investigación que pesa 0,3 GB y que solo contiene los pesos del adaptador, no el modelo completo. La model card es la plantilla por defecto de Hugging Face y no ha sido rellenada por el autor, por lo que no hay información declarada sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación.
 
 La relevancia de este tipo de publicación es metodológica: documenta una receta reproducible (LoRA + GRPO con recompensas verificables sobre un lenguaje de programación concreto, Rust) partiendo de un modelo de razonamiento destilado de DeepSeek-R1. Para un desarrollador o investigador que quiera replicar RLVR sobre dominios de código poco representados en los corpus habituales, este adaptador sirve como referencia de partida, no como componente desplegable sin una validación previa.
 
@@ -88,7 +88,7 @@ Estas cifras proceden del informe del modelo base y no han sido verificadas de f
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (rust-rlvr-run1-step100) | Adaptador LoRA sobre base de ~7,6 mil millones | Heredado del base (131.072 tokens) | No disponible | safetensors (PEFT) | Repositorio público en HuggingFace |
+| Este adaptador (rust-rlvr-run1-step100) | Adaptador LoRA sobre base de ~7,6 mil millones | Heredado del base (131.072 tokens) | No disponible | safetensors (PEFT) | Repositorio público en Hugging Face |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | ~7,6 mil millones | 131.072 tokens | MIT | safetensors | Modelo oficial muy descargado |
 | deepseek-ai/DeepSeek-R1-Distill-Llama-8B | ~8 mil millones | 131.072 tokens | MIT | safetensors | Modelo oficial |
 | Qwen2.5-Coder-7B | ~7,6 mil millones | No disponible en la información proporcionada | No disponible en la información proporcionada | safetensors, GGUF | Modelo oficial |
@@ -110,7 +110,7 @@ La comparación relevante es contra el propio modelo base: este adaptador solo a
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-rlvr-run1-step100
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-rlvr-run1-step100
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Informe de DeepSeek-R1 (datos del modelo base): https://arxiv.org/abs/2501.12948
 - Artículo de GRPO (DeepSeekMath): https://arxiv.org/abs/2402.03300

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Habitat-Acoustic-Experts-291 es un repositorio de clasificación de audio publicado por el usuario SOTAagi2030 bajo licencia Apache 2.0. No se trata de un modelo único entrenado de forma monolítica, sino de un ensemble de enrutamiento ("routing ensemble") que dirige grabaciones de campo a un experto promocionado por cada hábitat soportado. La model card indica que los pesos son safetensors procedentes de la familia EchoNet-v3 y que el pipeline declarado en HuggingFace es `audio-classification`.
+Habitat-Acoustic-Experts-291 es un repositorio de clasificación de audio publicado por el usuario SOTAagi2030 bajo licencia Apache 2.0. No se trata de un modelo único entrenado de forma monolítica, sino de un ensemble de enrutamiento ("routing ensemble") que dirige grabaciones de campo a un experto promocionado por cada hábitat soportado. La model card indica que los pesos son safetensors procedentes de la familia EchoNet-v3 y que el pipeline declarado en Hugging Face es `audio-classification`.
 
 El repositorio se presenta con la etiqueta de release `field-audio-2026.09` e incluye tres expertos promocionados: EC-23 para hábitats costeros, FR-11 para forestales y WT-09 para humedales. Para cada uno se publican métricas de macro F1, falsas alarmas por hora y latencia de inferencia. La política de selección documentada exige un macro F1 igual o superior a 0,900 y una latencia igual o inferior a 45 ms, y ordena los candidatos por macro F1 descendente, falsas alarmas por hora ascendente, latencia ascendente, tiempo de compilación descendente y, por último, identificador literal del experto ascendente.
 
-La relevancia del repositorio es acotada y muy específica: sirve como punto de consulta de los expertos aprobados para monitorización acústica pasiva de ecosistemas, no como un modelo de propósito general. El tamaño del repositorio es de 0,0 GB según HuggingFace y no registra descargas ni likes en el momento de la consulta, lo que sugiere un artefacto reciente o de distribución limitada. No se dispone de información sobre arquitectura interna, número de parámetros ni datos de entrenamiento más allá de la referencia a EchoNet-v3.
+La relevancia del repositorio es acotada y muy específica: sirve como punto de consulta de los expertos aprobados para monitorización acústica pasiva de ecosistemas, no como un modelo de propósito general. El tamaño del repositorio es de 0,0 GB según Hugging Face y no registra descargas ni likes en el momento de la consulta, lo que sugiere un artefacto reciente o de distribución limitada. No se dispone de información sobre arquitectura interna, número de parámetros ni datos de entrenamiento más allá de la referencia a EchoNet-v3.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: no disponible; el tamaño del repositorio es de 0,0 GB y no se detalla el tamaño de los pesos de cada experto.
 - GPU recomendadas: no disponibles; las latencias declaradas (35-43 ms) sugieren hardware de gama media o aceleradores de inferencia, pero no se especifica el dispositivo de medida.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; al tratarse de clasificación de audio, requeriría un runtime compatible con safetensors y el pipeline de audio-classification de HuggingFace.
+- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; al tratarse de clasificación de audio, requeriría un runtime compatible con safetensors y el pipeline de audio-classification de Hugging Face.
 - Latencia y throughput: latencias por experto declaradas entre 35 y 43 ms; no se publica throughput agregado ni condiciones de medida (tamaño de lote, hardware, precisión).
 
 ## Comparativa con modelos similares
@@ -87,5 +87,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/Habitat-Acoustic-Experts-291
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/Habitat-Acoustic-Experts-291
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

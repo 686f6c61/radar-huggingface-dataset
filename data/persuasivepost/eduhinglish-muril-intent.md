@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EduHinglish MuRIL Intent (este) | Adaptador LoRA sobre MuRIL-base | No disponible | Clasificacion de intencion (15 clases) | Apache 2.0 | HuggingFace, 0 descargas |
-| `google/muril-base-cased` | ~236 M | No disponible | Masked LM / base para fine-tuning | Apache 2.0 | HuggingFace, ampliamente usado |
-| `google/muril-large-cased` | ~560 M (aproximado) | No disponible | Masked LM / base para fine-tuning | Apache 2.0 | HuggingFace |
-| `xlm-roberta-base` | ~278 M | 512 tokens | Masked LM multilingue | MIT | HuggingFace |
+| EduHinglish MuRIL Intent (este) | Adaptador LoRA sobre MuRIL-base | No disponible | Clasificacion de intencion (15 clases) | Apache 2.0 | Hugging Face, 0 descargas |
+| `google/muril-base-cased` | ~236 M | No disponible | Masked LM / base para fine-tuning | Apache 2.0 | Hugging Face, ampliamente usado |
+| `google/muril-large-cased` | ~560 M (aproximado) | No disponible | Masked LM / base para fine-tuning | Apache 2.0 | Hugging Face |
+| `xlm-roberta-base` | ~278 M | 512 tokens | Masked LM multilingue | MIT | Hugging Face |
 
 La comparacion con alternativas especificas de clasificacion de intenciones en hinglish no esta disponible: no se han identificado en la informacion proporcionada modelos directamente equivalentes.
 
@@ -80,7 +80,7 @@ La comparacion con alternativas especificas de clasificacion de intenciones en h
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/persuasivepost/eduhinglish-muril-intent
+- Hugging Face: https://huggingface.co/persuasivepost/eduhinglish-muril-intent
 - Modelo base: https://huggingface.co/google/muril-base-cased
 - Libreria PEFT: https://github.com/huggingface/peft
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

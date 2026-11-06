@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CORe-Pico-V3 es un modelo publicado en HuggingFace por el usuario OpenCOReTechnologies bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada no contiene más información que la declaración de licencia: no se documentan arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni procedimiento de entrenamiento. El repositorio figura con un tamaño de 0.0 GB, lo que indica que no hay pesos publicados en el momento del análisis, y acumula 0 descargas y 0 likes.
+CORe-Pico-V3 es un modelo publicado en Hugging Face por el usuario OpenCOReTechnologies bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada no contiene más información que la declaración de licencia: no se documentan arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni procedimiento de entrenamiento. El repositorio figura con un tamaño de 0.0 GB, lo que indica que no hay pesos publicados en el momento del análisis, y acumula 0 descargas y 0 likes.
 
-Por el nombre del identificador, el sufijo "Pico" sugiere la intención de ser un modelo de tamano reducido dentro de una familia (CORe), pero esta interpretación es una inferencia a partir de la nomenclatura y no un dato confirmado por el autor. No existe pipeline declarado ni etiquetas de tarea, idioma o framework en la ficha de HuggingFace.
+Por el nombre del identificador, el sufijo "Pico" sugiere la intención de ser un modelo de tamano reducido dentro de una familia (CORe), pero esta interpretación es una inferencia a partir de la nomenclatura y no un dato confirmado por el autor. No existe pipeline declarado ni etiquetas de tarea, idioma o framework en la ficha de Hugging Face.
 
 Dado que la información pública disponible es prácticamente nula, esta ficha se limita a registrar lo verificable y marca explícitamente como "no disponible" cualquier apartado que no pueda sustentarse en datos del autor. No se han localizado papers, blogs técnicos ni repositorios de código asociados a través de la búsqueda web; los resultados devueltos por el buscador no guardan relación con el modelo.
 
@@ -71,5 +71,5 @@ No disponible. No se ha identificado la categoría del modelo (tamaño, tarea, a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-V3
+- Hugging Face: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-V3
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.

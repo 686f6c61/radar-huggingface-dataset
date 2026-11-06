@@ -4,9 +4,9 @@
 
 ## Resumen
 
-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE sobre el entorno clasico CartPole-v1 de Gymnasium. Lo publica el usuario c0ba1t en HuggingFace, con un repositorio de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta. No es un modelo de lenguaje: es una politica entrenada para resolver una tarea de control discreto en la que un poste debe mantenerse en equilibrio sobre un carro aplicando empujes a izquierda o derecha.
+CartPole-v1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE sobre el entorno clasico CartPole-v1 de Gymnasium. Lo publica el usuario c0ba1t en Hugging Face, con un repositorio de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta. No es un modelo de lenguaje: es una politica entrenada para resolver una tarea de control discreto en la que un poste debe mantenerse en equilibrio sobre un carro aplicando empujes a izquierda o derecha.
 
-El modelo se enmarca en el ecosistema docente del Deep Reinforcement Learning Course de HuggingFace, concretamente en la Unidad 4, dedicada a policy gradient. Su relevancia es, por tanto, fundamentalmente pedagogica y de referencia: sirve como ejemplo reproducible de una implementacion propia de REINFORCE y como punto de partida para comparar algoritmos de gradiente de politica frente a metodos value-based como DQN.
+El modelo se enmarca en el ecosistema docente del Deep Reinforcement Learning Course de Hugging Face, concretamente en la Unidad 4, dedicada a policy gradient. Su relevancia es, por tanto, fundamentalmente pedagogica y de referencia: sirve como ejemplo reproducible de una implementacion propia de REINFORCE y como punto de partida para comparar algoritmos de gradiente de politica frente a metodos value-based como DQN.
 
 La model card declara un resultado de 500.00 +/- 0.00 de recompensa media en CartPole-v1, cifra que coincide con el retorno maximo alcanzable en ese entorno (500 pasos por episodio). No hay informacion publica sobre la arquitectura exacta de la red, el numero de parametros, la licencia ni los formatos de pesos distribuidos.
 
@@ -74,7 +74,7 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 | Modelo / algoritmo | Tipo | Entorno | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| c0ba1t/CartPole-v1 | REINFORCE (policy gradient Monte Carlo) | CartPole-v1 | no disponible | no aplica (episodios de hasta 500 pasos) | 500.00 +/- 0.00 de recompensa media (no verificado) | no disponible | HuggingFace |
+| c0ba1t/CartPole-v1 | REINFORCE (policy gradient Monte Carlo) | CartPole-v1 | no disponible | no aplica (episodios de hasta 500 pasos) | 500.00 +/- 0.00 de recompensa media (no verificado) | no disponible | Hugging Face |
 | DQN (variantes publicas) | Value-based, off-policy | CartPole-v1 | no disponible | no aplica | no disponible en esta ficha | no disponible | implementaciones multiples |
 | PPO (variantes publicas) | Policy gradient con clipping | CartPole-v1 | no disponible | no aplica | no disponible en esta ficha | no disponible | implementaciones multiples |
 | A2C (variantes publicas) | Actor-critic sincrono | CartPole-v1 | no disponible | no aplica | no disponible en esta ficha | no disponible | implementaciones multiples |
@@ -95,7 +95,7 @@ Consideraciones cualitativas: frente a DQN, REINFORCE no necesita red de replay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c0ba1t/CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/c0ba1t/CartPole-v1
 - Unidad 4 del Deep Reinforcement Learning Course (introduccion, referencia citada en la model card): https://huggingface.co/deep-rl-course/unit4/introduction
 - Repositorio no disponible en la informacion proporcionada.
 - Paper asociado: no disponible (la model card no cita publicacion alguna; REINFORCE procede historically de Williams, 1992, aunque no se referencia en la documentacion del modelo).

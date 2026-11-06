@@ -69,7 +69,7 @@ No disponible. No se ha encontrado información sobre repositorios comparables d
 
 ## Enlaces
 
-- Repositorio HuggingFace: [lhs101/int4-xpu](https://huggingface.co/lhs101/int4-xpu)
+- Repositorio Hugging Face: [lhs101/int4-xpu](https://huggingface.co/lhs101/int4-xpu)
 - GitHub del cargador: [int4-omnixpu](https://github.com/JWLHS/int4-omnixpu)
 - Repositorio relacionado de cuantizaciones: [lhs101/wint4-quantized-models](https://huggingface.co/lhs101/wint4-quantized-models)
 - Documentación de vLLM para XPU: https://docs.vllm.ai/en/v0.12.0/models/hardware_supported_models/xpu/

@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. El repositorio contiene 2,4B parámetros en safetensors (67,2 GB), pero el modelo completo incluye componentes de 8B, 0.6B y 123M, por lo que la VRAM necesaria para cargar el modelo completo es sustancialmente mayor.
 - GPU recomendadas: no disponible. Dado el tamaño del modelo completo, se recomienda al menos una GPU con 48-80 GB de VRAM para el modelo completo, como A100 o H100. Para el componente de 2,4B del repositorio, una RTX 4090 con 24 GB podría ser suficiente con cuantización, aunque no se especifica.
 - Si cabe en consumer GPU: no se puede afirmar sin datos de cuantización. El componente de 2,4B del repositorio podría caber en una GPU de 24 GB con cuantización, pero el modelo completo no.
-- Opciones de despliegue: el repositorio usa diffusers y sglang-omni, lo que sugiere compatibilidad con pipelines de generación de audio de HuggingFace. No hay soporte documentado para llama.cpp, Ollama o vLLM para este modelo.
+- Opciones de despliegue: el repositorio usa diffusers y sglang-omni, lo que sugiere compatibilidad con pipelines de generación de audio de Hugging Face. No hay soporte documentado para llama.cpp, Ollama o vLLM para este modelo.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No hay datos suficientes para comparar con modelos alternativos de generación m
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/r3lax/MiniMax-Music3
+- Repositorio de Hugging Face: https://huggingface.co/r3lax/MiniMax-Music3
 - Página de demo: https://minimax-ai.github.io/music3-demo/
 - Repositorio GitHub de MiniMax-AI: https://github.com/MiniMax-AI/MiniMax-Music3
 - Guía independiente: https://minimaxmusic3.ai/

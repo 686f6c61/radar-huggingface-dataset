@@ -4,7 +4,7 @@
 
 Ornith-1.5-35B-A3B-uncensored es una variante del modelo Ornith-1.5-35B-A3B, desarrollada por el usuario junafinity mediante un proceso de abliteration (abliterix) para eliminar los mecanismos de censura y rechazo del modelo original. El modelo base, creado por ornith-ai, es un modelo de razonamiento multimodal de tipo mixture-of-experts (MoE) con aproximadamente 35.950 millones de parámetros totales, de los cuales solo unos 3.000 millones se activan por token. Está diseñado para tareas de razonamiento complejo, generación de código, agente autónomo y comprensión de imágenes, y forma parte de la familia Ornith-1.5 que introduce un bucle de auto-mejora (self-scaffolding y self-improvement).
 
-La relevancia de esta versión "uncensored" radica en que elimina las restricciones de contenido del modelo base, lo que permite su uso en escenarios donde se requiere generación de texto sin filtros, como investigación de seguridad, análisis de contenido sensible o desarrollo creativo sin limitaciones. El modelo está disponible bajo licencia Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace. Se distribuye en formato safetensors y existe una versión cuantizada GGUF-8bit del mismo autor.
+La relevancia de esta versión "uncensored" radica en que elimina las restricciones de contenido del modelo base, lo que permite su uso en escenarios donde se requiere generación de texto sin filtros, como investigación de seguridad, análisis de contenido sensible o desarrollo creativo sin limitaciones. El modelo está disponible bajo licencia Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face. Se distribuye en formato safetensors y existe una versión cuantizada GGUF-8bit del mismo autor.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de datos verificables de estos modelos comparables en la informaci
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, lo que requiere aceptar condiciones en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido: el repositorio es gated, lo que requiere aceptar condiciones en Hugging Face antes de poder descargar el modelo.
 - Sesgos y alucinaciones: al ser una version abliterated, el modelo puede generar contenido ofensivo, incorrecto o peligroso sin filtro. No se han publicado evaluaciones de sesgo para esta variante.
 - Riesgo de alucinacion: como cualquier LLM, puede inventar hechos, citas o codigo que no funciona. La ausencia de censura no implica mayor veracidad.
 - Limitaciones de contexto: se desconoce la longitud de contexto soportada, lo que puede afectar a tareas que requieren ventanas largas.
@@ -79,7 +79,7 @@ No se dispone de datos verificables de estos modelos comparables en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored
+- Repositorio Hugging Face: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored
 - Version GGUF-8bit: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-GGUF-8bit
 - Coleccion Ornith-1.5 de ornith-ai: https://huggingface.co/collections/ornith-ai/ornith-15
 - Pagina oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html

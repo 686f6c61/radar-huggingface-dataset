@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ming-3.0-TTS (Comfy-Org) es un paquete de pesos reempaquetados para ComfyUI del modelo de sintesis de voz `inclusionAI/Ming-3.0-tts-tiny`, publicado por la organizacion Comfy-Org, el equipo que mantiene los repositorios de referencia de la comunidad ComfyUI en HuggingFace. No se trata de un modelo nuevo ni de un entrenamiento propio: es una conversion de los pesos originales a un unico archivo `safetensors` en formato `diffusion-single-file`, pensado para cargarse directamente desde la carpeta `models/checkpoints` de ComfyUI sin depender del codigo de inferencia del repositorio original.
+Ming-3.0-TTS (Comfy-Org) es un paquete de pesos reempaquetados para ComfyUI del modelo de sintesis de voz `inclusionAI/Ming-3.0-tts-tiny`, publicado por la organizacion Comfy-Org, el equipo que mantiene los repositorios de referencia de la comunidad ComfyUI en Hugging Face. No se trata de un modelo nuevo ni de un entrenamiento propio: es una conversion de los pesos originales a un unico archivo `safetensors` en formato `diffusion-single-file`, pensado para cargarse directamente desde la carpeta `models/checkpoints` de ComfyUI sin depender del codigo de inferencia del repositorio original.
 
 El interes practico reside en la integracion: el modelo original requiere su propio pipeline, mientras que este repack elimina esa dependencia y permite encadenar la sintesis de voz dentro de un grafo de ComfyUI junto a otros nodos (audio, video, LLM). El archivo incluido en la model card es `ming_tts_tiny_int8_convrot.safetensors`, lo que indica una cuantizacion a int8 de los pesos; el repositorio ocupa 9,1 GB.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / duracion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Comfy-Org/Ming-3.0-TTS | no disponible | no disponible | MIT | safetensors int8 para ComfyUI | HuggingFace, 1.353 descargas |
-| inclusionAI/Ming-3.0-tts-tiny (original) | no disponible | no disponible | MIT (segun tags del repack) | pesos originales, pipeline propio | HuggingFace |
-| Otras familias TTS open source (p. ej. Kokoro, XTTS-v2, F5-TTS) | no disponible en la informacion proporcionada | no disponible | varian (algunas no comerciales) | varian | HuggingFace / repos propios |
+| Comfy-Org/Ming-3.0-TTS | no disponible | no disponible | MIT | safetensors int8 para ComfyUI | Hugging Face, 1.353 descargas |
+| inclusionAI/Ming-3.0-tts-tiny (original) | no disponible | no disponible | MIT (segun tags del repack) | pesos originales, pipeline propio | Hugging Face |
+| Otras familias TTS open source (p. ej. Kokoro, XTTS-v2, F5-TTS) | no disponible en la informacion proporcionada | no disponible | varian (algunas no comerciales) | varian | Hugging Face / repos propios |
 
 No se dispone de datos de rendimiento ni de especificaciones verificadas de alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La comparacion natural es contra el repositorio original de inclusionAI, que conserva el pipeline de inferencia y presumiblemente los pesos sin cuantizar; este repack solo anade comodidad de integracion en ComfyUI a costa de una posible perdida de calidad por la cuantizacion int8.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de alte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/Ming-3.0-TTS
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Ming-3.0-TTS
 - Modelo base original: https://huggingface.co/inclusionAI/Ming-3.0-tts-tiny
 - ComfyUI (repositorio oficial): https://github.com/comfyanonymous/ComfyUI
-- Organizacion Comfy-Org en HuggingFace: https://huggingface.co/Comfy-Org
+- Organizacion Comfy-Org en Hugging Face: https://huggingface.co/Comfy-Org

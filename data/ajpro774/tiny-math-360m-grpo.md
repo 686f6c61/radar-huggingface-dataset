@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento para comparar. La comparación se limita a
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/AJpro774/tiny-math-360m-grpo](https://huggingface.co/AJpro774/tiny-math-360m-grpo)
+- Modelo en Hugging Face: [https://huggingface.co/AJpro774/tiny-math-360m-grpo](https://huggingface.co/AJpro774/tiny-math-360m-grpo)
 - Repositorio GitHub: [https://github.com/AJpro774/tiny-math-20m](https://github.com/AJpro774/tiny-math-20m)
 - Paper de GRPO (DeepSeekMath): [https://huggingface.co/papers/2402.03300](https://huggingface.co/papers/2402.03300)
 - Documentación de TRL: [https://github.com/huggingface/trl](https://github.com/huggingface/trl)

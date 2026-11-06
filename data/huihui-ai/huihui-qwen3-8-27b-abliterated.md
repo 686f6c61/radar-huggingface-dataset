@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: al tratarse de un modelo de 27B parámetros, en bfloat16 (2 bytes por parámetro) se necesitan aproximadamente 54 GB de VRAM. Con cuantización a 8 bits se reduciría a unos 27 GB, y a 4 bits a unos 14 GB (si se dispone de versiones cuantizadas, que no se indican).
 - GPU recomendadas: para una inferencia fluida en bfloat16 se requieren GPUs de datacenter como A100 (80 GB) o H100 (80 GB). Con cuantización a 8 bits podría ejecutarse en una RTX 4090 (24 GB) o similar, aunque con menor velocidad.
 - Compatibilidad con GPU de consumo: posible con cuantización agresiva (4 bits) en GPUs con al menos 16 GB de VRAM, pero no se garantiza un rendimiento óptimo.
-- Opciones de despliegue: el script de ejemplo utiliza `transformers` con `device_map="auto"`. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI, aunque al ser un modelo estándar de HuggingFace podría adaptarse.
+- Opciones de despliegue: el script de ejemplo utiliza `transformers` con `device_map="auto"`. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI, aunque al ser un modelo estándar de Hugging Face podría adaptarse.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No se dispone de datos de rendimiento para establecer comparaciones cuantitativa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
+- [Modelo en Hugging Face](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Repositorio remove-refusals-with-transformers](https://github.com/Sumandora/remove-refusals-with-transformers)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

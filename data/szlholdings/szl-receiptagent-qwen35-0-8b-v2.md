@@ -89,7 +89,7 @@ No se han encontrado otros adaptadores LoRA publicos con la misma finalidad espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2
 - Repositorio GitHub (szl-forge): https://github.com/szl-holdings/szl-forge/tree/main/frontier/qwen35-receiptagent-v2
 - README del repositorio: https://github.com/szl-holdings/szl-forge/blob/main/frontier/qwen35-receiptagent-v2/README.md
 - Pagina de inferencia en FriendliAI: https://friendli.ai/models/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2

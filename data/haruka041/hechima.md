@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hechima es un adaptador de tipo LoRA para generación de imágenes a partir de texto (text-to-image), publicado por el usuario Haruka041 en HuggingFace. Se distribuye como un adaptador sobre el modelo base krea/Krea-2-Turbo, un modelo de difusión de la familia Krea, y se integra en el ecosistema diffusers. Su función es enseñar al modelo base un estilo visual concreto, activado mediante la palabra clave (trigger word) `hechima style`, que debe incluirse en el prompt para que el estilo se aplique.
+Hechima es un adaptador de tipo LoRA para generación de imágenes a partir de texto (text-to-image), publicado por el usuario Haruka041 en Hugging Face. Se distribuye como un adaptador sobre el modelo base krea/Krea-2-Turbo, un modelo de difusión de la familia Krea, y se integra en el ecosistema diffusers. Su función es enseñar al modelo base un estilo visual concreto, activado mediante la palabra clave (trigger word) `hechima style`, que debe incluirse en el prompt para que el estilo se aplique.
 
 El repositorio ocupa aproximadamente 0,5 GB, un tamaño coherente con un adaptador LoRA y no con un modelo completo, lo que confirma que se trata de pesos adicionales que requieren descargar por separado el modelo base. El autor no ha publicado información sobre la arquitectura interna del adaptador (rango, capas objetivo), el conjunto de datos de entrenamiento, el número de pasos ni los hiperparámetros utilizados.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Al tratarse de un LoRA de 0,5 GB, el coste adicional de memoria respecto al modelo base es reducido, pero es el modelo base el que determina el requisito real de VRAM.
 - GPU recomendadas: no disponible. Para adaptadores de difusion de rango medio es habitual que basten GPU consumer con 8-12 GB de VRAM (por ejemplo RTX 3060, 4070 o 4090) en precision reducida, aunque no hay confirmacion para este caso concreto.
 - Ejecucion en GPU consumer: no confirmada por el autor. Requiere verificar primero los requisitos de Krea-2-Turbo.
-- Opciones de despliegue: al estar etiquetado con la libreria diffusers, el uso previsto es mediante la libreria `diffusers` de HuggingFace con `load_lora_weights`. Otros backends (ComfyUI, Automatic1111, InvokeAI) no estan confirmados. vLLM, llama.cpp, Ollama y TGI no aplican, ya que son motores para modelos de lenguaje.
+- Opciones de despliegue: al estar etiquetado con la libreria diffusers, el uso previsto es mediante la libreria `diffusers` de Hugging Face con `load_lora_weights`. Otros backends (ComfyUI, Automatic1111, InvokeAI) no estan confirmados. vLLM, llama.cpp, Ollama y TGI no aplican, ya que son motores para modelos de lenguaje.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haruka041/hechima
+- Modelo en Hugging Face: https://huggingface.co/Haruka041/hechima
 - Archivos del repositorio: https://huggingface.co/Haruka041/hechima/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Perfil del autor: https://huggingface.co/Haruka041

@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans-3B-SFT-Cpp-to-Go | 3,09 B | no disponible | Traduccion C++ a Go (SFT) | Qwen Research (no comercial) | HuggingFace, pesos safetensors |
-| Qwen2.5-Coder-3B | 3,09 B | no disponible en esta ficha | Generacion de codigo general | Qwen Research / Apache-2.0 segun variante | HuggingFace, ampliamente adoptado |
-| CodeLlama-7B | 7 B | no disponible en esta ficha | Generacion de codigo general | Llama 2 Community | HuggingFace, muy extendido |
-| StarCoder2-3B | 3 B | no disponible en esta ficha | Generacion de codigo general | BigCode OpenRAIL-M | HuggingFace |
+| ClearTrans-3B-SFT-Cpp-to-Go | 3,09 B | no disponible | Traduccion C++ a Go (SFT) | Qwen Research (no comercial) | Hugging Face, pesos safetensors |
+| Qwen2.5-Coder-3B | 3,09 B | no disponible en esta ficha | Generacion de codigo general | Qwen Research / Apache-2.0 segun variante | Hugging Face, ampliamente adoptado |
+| CodeLlama-7B | 7 B | no disponible en esta ficha | Generacion de codigo general | Llama 2 Community | Hugging Face, muy extendido |
+| StarCoder2-3B | 3 B | no disponible en esta ficha | Generacion de codigo general | BigCode OpenRAIL-M | Hugging Face |
 
 La comparacion directa es limitada: los alternativos son modelos generalistas de codigo, mientras que ClearTrans esta especializado en una unica direccion de traduccion y no publica metricas que permitan situarlo frente a ellos en tareas de traduccion C++-Go.
 
@@ -94,8 +94,8 @@ La comparacion directa es limitada: los alternativos son modelos generalistas de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Cpp-to-Go
+- Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Cpp-to-Go
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio de implementacion y replicacion: https://github.com/Xingzhehu/ClearTrans
-- Licencia (Qwen Research License Agreement): incluida en el fichero LICENSE del repositorio de HuggingFace
-- Aviso de atribucion y modificaciones: fichero NOTICE del repositorio de HuggingFace
+- Licencia (Qwen Research License Agreement): incluida en el fichero LICENSE del repositorio de Hugging Face
+- Aviso de atribucion y modificaciones: fichero NOTICE del repositorio de Hugging Face

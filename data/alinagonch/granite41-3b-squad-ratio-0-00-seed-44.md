@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`AlinaGonch/granite41-3b-squad-ratio-0.00-seed-44` es un repositorio alojado en HuggingFace cuyo nombre sugiere un ajuste fino (fine-tuning) del modelo IBM Granite 4.1 de 3.000 millones de parametros sobre el conjunto de datos SQuAD, con una configuracion experimental parametrizada por un ratio de 0,00 y la semilla 44. Esta interpretacion procede unicamente de la convencion de nombres del identificador y no esta confirmada por el autor: la model card publicada es la plantilla generica autogenerada por HuggingFace y no contiene descripcion, datos de entrenamiento, licencia ni resultados de evaluacion.
+`AlinaGonch/granite41-3b-squad-ratio-0.00-seed-44` es un repositorio alojado en Hugging Face cuyo nombre sugiere un ajuste fino (fine-tuning) del modelo IBM Granite 4.1 de 3.000 millones de parametros sobre el conjunto de datos SQuAD, con una configuracion experimental parametrizada por un ratio de 0,00 y la semilla 44. Esta interpretacion procede unicamente de la convencion de nombres del identificador y no esta confirmada por el autor: la model card publicada es la plantilla generica autogenerada por Hugging Face y no contiene descripcion, datos de entrenamiento, licencia ni resultados de evaluacion.
 
-El repositorio tiene un tamano de 0,1 GB, muy inferior a los aproximadamente 6 GB que ocuparia un modelo denso de 3.000 millones de parametros en precision bf16. Esto apunta a que el contenido real podria ser un adaptador (por ejemplo, LoRA), un checkpoint parcial o un conjunto de pesos en una precision muy reducida, pero no es posible verificarlo con la informacion disponible. El unico tag tecnico relevante es `safetensors`, que indica el formato de serializacion de los pesos, y `endpoints_compatible`, que senala compatibilidad con los endpoints de inferencia gestionados de HuggingFace.
+El repositorio tiene un tamano de 0,1 GB, muy inferior a los aproximadamente 6 GB que ocuparia un modelo denso de 3.000 millones de parametros en precision bf16. Esto apunta a que el contenido real podria ser un adaptador (por ejemplo, LoRA), un checkpoint parcial o un conjunto de pesos en una precision muy reducida, pero no es posible verificarlo con la informacion disponible. El unico tag tecnico relevante es `safetensors`, que indica el formato de serializacion de los pesos, y `endpoints_compatible`, que senala compatibilidad con los endpoints de inferencia gestionados de Hugging Face.
 
 Se trata, por tanto, de un artefacto de investigacion experimental, sin documentacion, sin descargas y sin likes en el momento de la consulta, creado y actualizado el 13 de octubre de 2026. Su relevancia practica es limitada mientras el autor no publique la informacion de entrenamiento y evaluacion; cualquier uso en produccion exigiria primero validar que el modelo funciona, bajo que licencia se distribuye y con que datos fue entrenado.
 
@@ -22,7 +22,7 @@ Se trata, por tanto, de un artefacto de investigacion experimental, sin document
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,1 GB |
 | Libreria declarada | transformers |
-| Compatibilidad | endpoints_compatible (endpoints gestionados de HuggingFace) |
+| Compatibilidad | endpoints_compatible (endpoints gestionados de Hugging Face) |
 | Fecha de creacion | 2026-10-13 |
 
 ## Arquitectura y entrenamiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM para inferencia: no disponible de forma confirmada. Si el modelo fuese efectivamente un denso de 3.000 millones de parametros, las estimaciones orientativas serian de aproximadamente 6-7 GB en bf16 o fp16 y de 2-3 GB en cuantizacion de 4 bits.
 - GPU recomendadas: no disponibles. Bajo la hipotesis anterior, una GPU consumer con 8-12 GB de VRAM (por ejemplo, RTX 3060 12 GB, RTX 4070) bastaria para inferencia en cuantizacion reducida.
 - Encaje en GPU consumer: probable bajo la hipotesis de 3B en 4 bits, no confirmado.
-- Opciones de despliegue: no documentadas. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints gestionados de HuggingFace; no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: no documentadas. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints gestionados de Hugging Face; no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No hay datos de rendimiento publicados de este modelo, por lo que la comparacion
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
 | `AlinaGonch/granite41-3b-squad-ratio-0.00-seed-44` | no disponible (3B segun el identificador) | no disponible | no disponible | 0 descargas, sin documentacion | no disponible |
-| IBM Granite 4.1 3B (base presumible) | 3B | no disponible en esta ficha | no disponible en esta ficha | publico en HuggingFace | no disponible en esta ficha |
+| IBM Granite 4.1 3B (base presumible) | 3B | no disponible en esta ficha | no disponible en esta ficha | publico en Hugging Face | no disponible en esta ficha |
 | Otras alternativas de ~3B en QA extractivo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No hay datos de rendimiento publicados de este modelo, por lo que la comparacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.00-seed-44
+- Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.00-seed-44
 - Paper referenciado en los tags (calculadora de impacto de carbono, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Los resultados de busqueda web devueltos no guardan relacion con el modelo (contenido de foros en indonesio) y no se incluyen como fuentes.

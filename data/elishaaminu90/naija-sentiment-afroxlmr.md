@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elishaaminu90/naija-sentiment-afroxlmr` es un checkpoint de clasificación de texto publicado en HuggingFace por el usuario elishaaminu90. El nombre del repositorio sugiere un ajuste fino orientado al análisis de sentimiento sobre variedades linguisticas nigerianas ("Naija") partiendo de un modelo de la familia AfroXLMR, pero esta informacion no aparece documentada en ningun lugar de la model card, que es la plantilla autogenerada por HuggingFace y no contiene ningun campo completado.
+`elishaaminu90/naija-sentiment-afroxlmr` es un checkpoint de clasificación de texto publicado en Hugging Face por el usuario elishaaminu90. El nombre del repositorio sugiere un ajuste fino orientado al análisis de sentimiento sobre variedades linguisticas nigerianas ("Naija") partiendo de un modelo de la familia AfroXLMR, pero esta informacion no aparece documentada en ningun lugar de la model card, que es la plantilla autogenerada por Hugging Face y no contiene ningun campo completado.
 
 Los unicos datos verificables son los metadatos del Hub: la etiqueta de arquitectura `xlm-roberta`, la tarea declarada `text-classification` y el recuento real de parametros en safetensors, 278.045.955, cifra consistente con un encoder XLM-RoBERTa de tamano base. El repositorio ocupa 1,1 GB y no tiene descargas ni likes en el momento de la consulta.
 
@@ -38,7 +38,7 @@ Es razonable suponer que el autor partio de un checkpoint AfroXLMR (familia deri
 
 - Clasificacion de texto: la unica capacidad declarada por el Hub es `text-classification`. Presumiblemente devuelve etiquetas de sentimiento (por ejemplo, positivo, negativo y posiblemente neutro), aunque el numero y nombre de las clases no estan documentados.
 - Representaciones vectoriales: la etiqueta `text-embeddings-inference` indica que el modelo puede servirse con Text Embeddings Inference para extraer embeddings de frases, util para busqueda semantica y clustering.
-- Integracion con endpoints: la etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints.
+- Integracion con endpoints: la etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints.
 - Multilingue: no confirmado. Si el checkpoint deriva de XLM-RoBERTa o AfroXLMR, heredaria cobertura de lenguas africanas y multilingue, pero no hay documentacion que lo respalde.
 - Generacion de texto: no. Al ser un encoder de clasificacion no genera texto, no soporta tool calling, no funciona como agente y no tiene modo de razonamiento explicito.
 - Vision, audio, matemáticas o codigo: no disponibles y, por tipo de modelo, fuera de alcance.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en fp32, aproximadamente 1,1 GB solo para pesos; en fp16 o bf16, en torno a 0,56 GB; en int8 (si se cuantiza manualmente), alrededor de 0,28 GB. A estas cifras hay que sumar activaciones y memoria del tokenizador, que para lotes moderados y secuencias de 512 tokens son del orden de decenas o pocos cientos de MB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente, por ejemplo GTX 1650, RTX 3050, RTX 3060, T4, L4 o A10. En A100 o H100 el modelo queda enormemente infrautilizado salvo que se ejecute con lotes muy grandes.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada moderna e incluso en iGPU con memoria compartida suficiente. Tambien es viable en CPU para inferencia por lotes.
-- Opciones de despliegue: pipeline de `transformers` con PyTorch, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), exportacion a ONNX Runtime o TorchScript. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son aplicables sin conversion previa, y al ser un encoder de clasificacion el uso de vLLM o TGI es poco habitual aunque tecnicamente posible.
+- Opciones de despliegue: pipeline de `transformers` con PyTorch, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), exportacion a ONNX Runtime o TorchScript. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son aplicables sin conversion previa, y al ser un encoder de clasificacion el uso de vLLM o TGI es poco habitual aunque tecnicamente posible.
 - Latencia y throughput: no disponible. No se han publicado medidas de latencia, tokens por segundo ni rendimiento por lote.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La ventaja teorica de este checkpoint seria la especializacion en lenguas nigeri
 
 ## Limitaciones y advertencias
 
-- Model card vacia: es la plantilla autogenerada de HuggingFace sin ningun campo rellenado. No hay informacion sobre datos, procedimiento, hiperparametros ni autores, lo que impide auditar el modelo.
+- Model card vacia: es la plantilla autogenerada de Hugging Face sin ningun campo rellenado. No hay informacion sobre datos, procedimiento, hiperparametros ni autores, lo que impide auditar el modelo.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara de uso comercial ni de redistribucion. En la practica, el modelo no deberia usarse en productos sin contactar previamente con el autor.
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no es posible estimar sesgos de genero, etnia, religion o dialecto. En un contexto multilingue nigeriano, la infrarrepresentacion de determinadas lenguas o variedades es un riesgo alto.
 - Riesgo de etiquetas ruidosas: los clasificadores de sentimiento entrenados con datos de redes sociales suelen heredar ruido de anotacion, ironia mal etiquetada y dominio muy restringido.
@@ -95,7 +95,7 @@ La ventaja teorica de este checkpoint seria la especializacion en lenguas nigeri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elishaaminu90/naija-sentiment-afroxlmr
+- Modelo en Hugging Face: https://huggingface.co/elishaaminu90/naija-sentiment-afroxlmr
 - Referencia citada en las etiquetas del Hub, articulo sobre emisiones de carbono en aprendizaje automatico (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en aprendizaje automatico: https://mlco2.github.io/impact
 - Articulo de XLM-RoBERTa (arquitectura base probable, no citado por el autor): https://arxiv.org/abs/1911.02116

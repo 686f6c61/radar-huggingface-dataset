@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparado (WER, latencia) en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nikh360pro/capsbro-indic-conformer
+- Repositorio Hugging Face: https://huggingface.co/nikh360pro/capsbro-indic-conformer
 - Modelo base: https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual
 - Repositorio de origen del empaquetado: https://huggingface.co/Docglasses-AI/indic-conformer-600m-sherpa-onnx-int8

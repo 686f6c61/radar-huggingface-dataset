@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-classifier | Adaptador LoRA rango 4 sobre 8B | No disponible | Adaptador de interpretabilidad | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-8B-Base | 8B | No disponible | Modelo base generativo | No disponible en la informacion | HuggingFace |
+| qwen3-8b-classifier | Adaptador LoRA rango 4 sobre 8B | No disponible | Adaptador de interpretabilidad | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-8B-Base | 8B | No disponible | Modelo base generativo | No disponible en la informacion | Hugging Face |
 | Alternativas de introspeccion | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre otros adaptadores de interpretabilidad comparables en la busqueda realizada.
@@ -83,6 +83,6 @@ No se dispone de informacion sobre otros adaptadores de interpretabilidad compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mahounairo/qwen3-8b-classifier
+- Hugging Face: https://huggingface.co/mahounairo/qwen3-8b-classifier
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Repositorio con resultados, codigo y limites: https://github.com/mahounairo/qwen3-classifier

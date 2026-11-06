@@ -79,10 +79,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Joint F1 (val, 451) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heed-full-output-lines-qwen3-0.6b (este) | 596.049.920 | 1.024 (entrenamiento) | 69,4 | Apache 2.0 | HuggingFace |
-| heed-full-output-json-4ep-qwen3-0.6b | 596.049.920 (mismo base) | 1.024 (entrenamiento) | 71,5 | Apache 2.0 | HuggingFace |
-| heed-tasks-qwen3-0.6b (modelo de produccion) | no disponible en la informacion proporcionada | no disponible | no comparable (evaluado con juez ciego) | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen/Qwen3-0.6B-Base | 596.049.920 (aproximado, base) | no disponible en la informacion proporcionada | no disponible (no entrenado para la tarea) | Apache 2.0 | HuggingFace |
+| heed-full-output-lines-qwen3-0.6b (este) | 596.049.920 | 1.024 (entrenamiento) | 69,4 | Apache 2.0 | Hugging Face |
+| heed-full-output-json-4ep-qwen3-0.6b | 596.049.920 (mismo base) | 1.024 (entrenamiento) | 71,5 | Apache 2.0 | Hugging Face |
+| heed-tasks-qwen3-0.6b (modelo de produccion) | no disponible en la informacion proporcionada | no disponible | no comparable (evaluado con juez ciego) | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen/Qwen3-0.6B-Base | 596.049.920 (aproximado, base) | no disponible en la informacion proporcionada | no disponible (no entrenado para la tarea) | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohitkrconnect/heed-full-output-lines-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/mohitkrconnect/heed-full-output-lines-qwen3-0.6b
 - Gemelo JSON del experimento: https://huggingface.co/mohitkrconnect/heed-full-output-json-4ep-qwen3-0.6b
 - Modelo de producción de Heed: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base

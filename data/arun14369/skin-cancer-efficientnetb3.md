@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `arun14369/skin-cancer-efficientnetb3` es un modelo alojado en HuggingFace por el usuario `arun14369`. Se trata de un repositorio creado y actualizado el 29 de septiembre de 2026, con licencia MIT y etiquetado para la región `us`. En el momento de la consulta acumula 0 descargas y 0 "likes", y el tamano del repositorio es de 0.0 GB.
+El repositorio `arun14369/skin-cancer-efficientnetb3` es un modelo alojado en Hugging Face por el usuario `arun14369`. Se trata de un repositorio creado y actualizado el 29 de septiembre de 2026, con licencia MIT y etiquetado para la región `us`. En el momento de la consulta acumula 0 descargas y 0 "likes", y el tamano del repositorio es de 0.0 GB.
 
 La model card publicada por el autor no contiene mas informacion que la declaracion de licencia (`license: mit`). No se documentan el pipeline, los idiomas, la arquitectura, el dataset de entrenamiento, las metricas ni las condiciones de uso. Por el identificador del repositorio cabe suponer que se trata de un clasificador de imagenes basado en EfficientNet-B3 aplicado a cancer de piel, pero esta deduccion procede unicamente del nombre y no esta confirmada por el autor en ningun documento del repositorio.
 
@@ -87,5 +87,5 @@ No se dispone de datos publicados que permitan una comparacion rigurosa con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arun14369/skin-cancer-efficientnetb3
+- Repositorio en Hugging Face: https://huggingface.co/arun14369/skin-cancer-efficientnetb3
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo, demos) en la informacion proporcionada.

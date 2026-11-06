@@ -78,7 +78,7 @@ SmolVLA destaca frente a estos modelos por su tamano reducido (450M frente a los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/saipuneethgottam/smolvla_stacking_basepolicy
+- Repositorio Hugging Face: https://huggingface.co/saipuneethgottam/smolvla_stacking_basepolicy
 - Paper SmolVLA (arXiv 2506.01844): https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/saipuneethgottam/stacking_80demos_20combos

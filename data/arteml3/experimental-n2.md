@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Experimental-N2 es un modelo publicado en HuggingFace por el usuario arteml3 bajo licencia Apache 2.0. Se trata de un artefacto con 134.515.008 parámetros (aproximadamente 134,5 millones) almacenados en formato safetensors, etiquetado con el tag `llama`, lo que apunta a una arquitectura transformer de tipo decoder-only, aunque no hay documentación que lo confirme. El repositorio ocupa 0,3 GB y acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha.
+Experimental-N2 es un modelo publicado en Hugging Face por el usuario arteml3 bajo licencia Apache 2.0. Se trata de un artefacto con 134.515.008 parámetros (aproximadamente 134,5 millones) almacenados en formato safetensors, etiquetado con el tag `llama`, lo que apunta a una arquitectura transformer de tipo decoder-only, aunque no hay documentación que lo confirme. El repositorio ocupa 0,3 GB y acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha.
 
 El modelo carece prácticamente de model card: el README se limita a declarar la licencia `apache-2.0` y no incluye información sobre datos de entrenamiento, longitud de contexto, idiomas soportados, proceso de alineación ni resultados de evaluación. Tampoco se publican cuantizaciones alternativas ni peso alguno en formato GGUF. Todo ello lo sitúa en la categoría de subida experimental sin validación por parte de la comunidad, tal y como sugiere su propio nombre.
 
@@ -27,7 +27,7 @@ Su relevancia potencial reside únicamente en el rango de tamaño: con unos 134,
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura más allá del tag `llama` asociado al repositorio, que en HuggingFace se emplea habitualmente para modelos transformer decoder-only con normalización RMSNorm, activación SwiGLU y atención causal. No se documentan el número de capas, la dimensión oculta, el número de cabezas de atención, la estrategia de tokenización ni si se usan embeddings atados entre entrada y salida.
+No hay información publicada sobre la arquitectura más allá del tag `llama` asociado al repositorio, que en Hugging Face se emplea habitualmente para modelos transformer decoder-only con normalización RMSNorm, activación SwiGLU y atención causal. No se documentan el número de capas, la dimensión oculta, el número de cabezas de atención, la estrategia de tokenización ni si se usan embeddings atados entre entrada y salida.
 
 Tampoco existe información sobre el entrenamiento: se desconocen el volumen de tokens, la composición del dataset, si hubo fases de instrucción, RLHF o DPO, y si se aplicaron técnicas como decodificación especulativa, atención lineal o mezcla de expertos. El tamaño del repositorio (0,3 GB) es coherente con pesos almacenados en fp16 o bf16 (unos 269 MB) más los ficheros auxiliares de configuración y tokenizador, pero se trata de una inferencia a partir del tamaño, no de un dato confirmado. No se han publicado papers, informes técnicos ni notas de entrenamiento.
 
@@ -70,17 +70,17 @@ Estimaciones aritméticas calculadas a partir del número de parámetros (134.51
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 3060, T4 o superiores. También es viable en A100 o H100, aunque resultarían enormemente sobredimensionadas para este tamaño.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna e incluso en GPUs integradas con memoria compartida.
 - Ejecución en CPU: sí, es el escenario más realista para este tamaño; basta con unos 2 GB de RAM libre.
-- Opciones de despliegue: HuggingFace transformers; llama.cpp y Ollama requieren convertir los pesos a GGUF, ya que no se publican versiones preconvertidas; vLLM y TGI son compatibles a nivel de framework, pero su uso no aporta ventajas claras a este tamaño; ONNX Runtime es otra alternativa válida.
+- Opciones de despliegue: Hugging Face transformers; llama.cpp y Ollama requieren convertir los pesos a GGUF, ya que no se publican versiones preconvertidas; vLLM y TGI son compatibles a nivel de framework, pero su uso no aporta ventajas claras a este tamaño; ONNX Runtime es otra alternativa válida.
 - Latencia y throughput: no disponibles. No se han publicado mediciones y dependerán por completo del hardware y de la cuantización empleada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| arteml3/Experimental-N2 | 134,5 M | No disponible | Apache 2.0 | HuggingFace, safetensors |
-| SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| GPT-2 | 124 M | 1.024 tokens | MIT modificada | HuggingFace, safetensors y TF |
+| arteml3/Experimental-N2 | 134,5 M | No disponible | Apache 2.0 | Hugging Face, safetensors |
+| SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| GPT-2 | 124 M | 1.024 tokens | MIT modificada | Hugging Face, safetensors y TF |
 
 Los datos de los modelos alternativos proceden de sus fichas públicas y conviene verificarlos antes de tomar decisiones de producción. La comparación de rendimiento no es posible: Experimental-N2 no publica ningún benchmark, mientras que las alternativas cuentan con evaluaciones extensas y versiones cuantizadas listas para su despliegue. A igualdad de tamaño, SmolLM-135M y GPT-2 son opciones mucho mejor documentadas; Qwen2.5-0.5B cubre un rango superior con contexto muy amplio.
 
@@ -99,6 +99,6 @@ Los datos de los modelos alternativos proceden de sus fichas públicas y convien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arteml3/Experimental-N2
+- Modelo en Hugging Face: https://huggingface.co/arteml3/Experimental-N2
 - Perfil del autor: https://huggingface.co/arteml3
 - Paper, blog o repositorio de código: no disponible. La búsqueda no ha arrojado ningún enlace adicional asociado a este modelo.

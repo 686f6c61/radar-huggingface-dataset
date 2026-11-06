@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `techcwbldr/modal-hf-gemma4-emergent-alignment-animal-welfare-sft-spd` es un modelo publicado en HuggingFace por el usuario `techcwbldr` bajo licencia MIT. El identificador sugiere que se trata de un fine-tuning de la familia Gemma 4 orientado a la alineación emergente en el ámbito del bienestar animal, con un proceso de entrenamiento que incluye ajuste supervisado (SFT) y posiblemente alguna técnica adicional representada por las siglas "SPD". Sin embargo, la información disponible no incluye documentación técnica, modelo card ni resultados de benchmarks. El modelo no tiene descargas ni likes, lo que indica que es un experimento reciente o de acceso restringido. La relevancia actual es limitada, ya que no se dispone de datos para evaluar su rendimiento o compararlo con otras alternativas.
+El modelo `techcwbldr/modal-hf-gemma4-emergent-alignment-animal-welfare-sft-spd` es un modelo publicado en Hugging Face por el usuario `techcwbldr` bajo licencia MIT. El identificador sugiere que se trata de un fine-tuning de la familia Gemma 4 orientado a la alineación emergente en el ámbito del bienestar animal, con un proceso de entrenamiento que incluye ajuste supervisado (SFT) y posiblemente alguna técnica adicional representada por las siglas "SPD". Sin embargo, la información disponible no incluye documentación técnica, modelo card ni resultados de benchmarks. El modelo no tiene descargas ni likes, lo que indica que es un experimento reciente o de acceso restringido. La relevancia actual es limitada, ya que no se dispone de datos para evaluar su rendimiento o compararlo con otras alternativas.
 
 ## Especificaciones tecnicas
 
@@ -59,6 +59,6 @@ No se dispone de información sobre modelos comparables. Dado que no hay datos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/techcwbldr/modal-hf-gemma4-emergent-alignment-animal-welfare-sft-spd
+- Hugging Face: https://huggingface.co/techcwbldr/modal-hf-gemma4-emergent-alignment-animal-welfare-sft-spd
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
-- Documentación de Gemma4 en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/gemma4
+- Documentación de Gemma4 en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/gemma4

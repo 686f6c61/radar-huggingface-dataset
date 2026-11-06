@@ -17,7 +17,7 @@ Es relevante ahora porque democratiza un paso de preprocesado que tradicionalmen
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica: modelo de detección de objetos con entrada de imagen a 640 px |
 | Tipos de cuantización | Pesos en fp32; entrenamiento con AMP (fp16). Exportable a ONNX, TensorRT, OpenVINO o TFLite con cuantización INT8 mediante Ultralytics |
-| Idiomas soportados | Japonés premoderno (libros impresos y manuscritos 古典籍). No multilingüe. El metadato de idiomas de HuggingFace figura como no disponible |
+| Idiomas soportados | Japonés premoderno (libros impresos y manuscritos 古典籍). No multilingüe. El metadato de idiomas de Hugging Face figura como no disponible |
 | Licencia | AGPL-3.0 (heredada de los pesos YOLOv8 de Ultralytics; los datos de entrenamiento son Public Domain Mark, los pesos no) |
 | Formato de pesos | PyTorch (`.pt`), cargable con `ultralyticsplus` o Ultralytics |
 | Tarea (pipeline) | `object-detection` |
@@ -100,9 +100,9 @@ No se dispone de datos comparativos publicados junto a este modelo ni en la info
 
 | Modelo | Tarea | Clases | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nakamura196/yolov8-ndl-layout` | Detección de maquetación de libros japoneses premodernos | 5 regiones documentales | 1.219 páginas de 89 ítems (NDL-DocL, subconjunto 古典籍) | AGPL-3.0 | HuggingFace |
+| `nakamura196/yolov8-ndl-layout` | Detección de maquetación de libros japoneses premodernos | 5 regiones documentales | 1.219 páginas de 89 ítems (NDL-DocL, subconjunto 古典籍) | AGPL-3.0 | Hugging Face |
 | YOLOv8x base (Ultralytics, COCO) | Detección de objetos general | 80 clases COCO | COCO | AGPL-3.0 | Pesos públicos de Ultralytics |
-| Modelos de análisis de maquetación documental modernos (por ejemplo, familia LayoutLMv3 o DiT entrenados sobre PubLayNet) | Análisis de maquetación de documentos impresos modernos | Variable: título, párrafo, tabla, figura, lista | Corpus de documentos modernos (PubLayNet y similares) | No disponible en la información proporcionada | HuggingFace / GitHub |
+| Modelos de análisis de maquetación documental modernos (por ejemplo, familia LayoutLMv3 o DiT entrenados sobre PubLayNet) | Análisis de maquetación de documentos impresos modernos | Variable: título, párrafo, tabla, figura, lista | Corpus de documentos modernos (PubLayNet y similares) | No disponible en la información proporcionada | Hugging Face / GitHub |
 | Otros detectores YOLOv8 ajustados a páginas históricas japonesas | Detección de maquetación histórica | Variable | No disponible | Variable | No disponible |
 
 Rendimiento comparado: no disponible. No se han publicado resultados de benchmarks que permitan situar este modelo frente a las alternativas en términos de mAP sobre un conjunto común sin fuga de datos.
@@ -119,13 +119,13 @@ Rendimiento comparado: no disponible. No se han publicado resultados de benchmar
 - No es adecuado para uso en tiempo real o de baja latencia: YOLOv8x es la variante más grande de la familia.
 - Riesgo de falsos positivos y falsos negativos en lugar del riesgo de alucinación propio de los modelos generativos; en cualquier caso, las detecciones no deben tomarse como verdad de referencia sin verificación humana.
 - Licencia AGPL-3.0 heredada de los pesos de Ultralytics: impone obligaciones de copyleft, incluidas las derivadas del uso en red. Aunque los datos de entrenamiento son Public Domain Mark, los pesos no lo son.
-- Idiomas: únicamente japonés premoderno; el metadato de idiomas de HuggingFace figura como no disponible y la model card no declara soporte multilingüe.
+- Idiomas: únicamente japonés premoderno; el metadato de idiomas de Hugging Face figura como no disponible y la model card no declara soporte multilingüe.
 - Adopción prácticamente nula hasta la fecha (0 descargas, 1 *like*), sin garantía de mantenimiento continuado.
 - Las cifras «mAP 85,4 %» e «IoU 78,2 %» que circularon en una versión anterior de la model card fueron retiradas por el propio autor; no deben citarse.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nakamura196/yolov8-ndl-layout
+- Modelo en Hugging Face: https://huggingface.co/nakamura196/yolov8-ndl-layout
 - Dataset de entrenamiento: https://huggingface.co/datasets/nakamura196/ndl-layout-dataset
 - Documentación de Ultralytics YOLOv8: https://docs.ultralytics.com/models/yolov8/
 - Librería `ultralyticsplus`: https://github.com/fcakyon/ultralyticsplus

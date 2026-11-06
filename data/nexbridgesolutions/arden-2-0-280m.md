@@ -91,10 +91,10 @@ Nota: los datos de los modelos comparados corresponden a conocimiento general de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nexbridgesolutions/Arden-2.0-280M
+- Modelo en Hugging Face: https://huggingface.co/nexbridgesolutions/Arden-2.0-280M
 - Version anterior Arden 1.0 280M: https://huggingface.co/nexbridgesolutions/Arden-1.0-280M
 - Repositorio GitHub de Arden: https://github.com/nexbridgesolutions/Arden
 - Organizacion en GitHub: https://github.com/nexbridgesolutions
-- Perfil del autor en HuggingFace: https://huggingface.co/nexbridgesolutions
+- Perfil del autor en Hugging Face: https://huggingface.co/nexbridgesolutions
 - Web de Nex Bridge Solutions: https://nexbridgesolutions.com
 - Articulo en LinkedIn sobre la motivacion del proyecto: https://www.linkedin.com/pulse/arden-why-we-built-our-own-ai-from-scratch-its-worth-david-arriaga-ccl0c

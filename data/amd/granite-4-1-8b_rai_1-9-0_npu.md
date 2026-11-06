@@ -6,7 +6,7 @@ El modelo `amd/granite-4.1-8b_rai_1.9.0_npu` es una distribucion optimizada del 
 
 La relevancia de esta ficha radica en que ilustra el patron habitual de los modelos "vendor-optimized": el peso real del trabajo de modelado recae en IBM (desarrollador original de la familia Granite), mientras que AMD aporta la cadena de conversion y el runtime de despliegue. El repositorio tiene un tamano de 10,3 GB, coherente con pesos en precision reducida (probablemente FP16/BF16 o cuantizacion INT8) para un modelo de 8B.
 
-El acceso esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos. La licencia declarada es Apache 2.0 y el unico idioma soportado segun los metadatos es el ingles. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, lo que sugiere una publicacion muy reciente o de circulacion limitada.
+El acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. La licencia declarada es Apache 2.0 y el unico idioma soportado segun los metadatos es el ingles. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, lo que sugiere una publicacion muy reciente o de circulacion limitada.
 
 ## Especificaciones tecnicas
 
@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/granite-4.1-8b_rai_1.9.0_npu | 8B (aprox.) | no disponible | ONNX (Ryzen AI) | Apache 2.0 | Gated en HuggingFace |
-| Modelo base Granite 4.1 8B (IBM) | 8B | no disponible | safetensors (habitual) | Apache 2.0 (segun familia) | Publico en HuggingFace |
+| amd/granite-4.1-8b_rai_1.9.0_npu | 8B (aprox.) | no disponible | ONNX (Ryzen AI) | Apache 2.0 | Gated en Hugging Face |
+| Modelo base Granite 4.1 8B (IBM) | 8B | no disponible | safetensors (habitual) | Apache 2.0 (segun familia) | Publico en Hugging Face |
 | Alternativas 8B genericas (p. ej. Llama 3.1 8B) | 8B | 128K (segun ficha publica) | safetensors, GGUF | Licencia comunitaria Llama | Publico |
 
 La comparativa con modelos de terceros no puede completarse con datos de rendimiento porque no se han publicado benchmarks para esta distribucion. La diferencia principal frente al modelo base es el formato ONNX y el runtime Ryzen AI, no la capacidad del modelo.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de la descarga; no es un repositorio de acceso libre directo.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de la descarga; no es un repositorio de acceso libre directo.
 - Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta garantizado ni documentado.
 - Dependencia de hardware: la distribucion esta pensada para NPU Ryzen AI con el runtime 1.9.0; no es portable a CUDA ni a otros backends sin reconversion.
 - Sin benchmarks publicados: no hay datos verificables de calidad ni de velocidad para esta conversion concreta.
@@ -81,7 +81,7 @@ La comparativa con modelos de terceros no puede completarse con datos de rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/granite-4.1-8b_rai_1.9.0_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/granite-4.1-8b_rai_1.9.0_npu
 - Modelo base Granite de IBM: no disponible en la informacion proporcionada
 - Documentacion del runtime Ryzen AI: no disponible en la informacion proporcionada
 - Paper o blog tecnico: no disponible en la informacion proporcionada

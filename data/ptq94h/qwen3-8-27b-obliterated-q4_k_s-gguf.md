@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks específicos para esta variante abl
 - VRAM estimada: el archivo GGUF Q4_K_S pesa 15,8 GB, por lo que se recomiendan al menos 16 GB de VRAM para inferencia con GPU. En cuantización Q4_K_S, el consumo real de memoria es aproximadamente el tamaño del archivo más overhead, por lo que una GPU con 16 GB (RTX 4080, 4090) es suficiente.
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090, A100, H100 o equivalentes. En GPU con menos de 16 GB, se puede usar offloading a CPU o cuantizaciones más agresivas (Q3, Q2).
 - En CPU: puede ejecutarse con llama.cpp en sistemas con al menos 32 GB de RAM, aunque la velocidad será inferior.
-- Opciones de despliegue: llama.cpp (CLI o servidor), Ollama, vLLM (si se convierte a otro formato), TGI (con adaptación). El modelo se carga directamente desde HuggingFace mediante `llama-cli` o `llama-server`.
+- Opciones de despliegue: llama.cpp (CLI o servidor), Ollama, vLLM (si se convierte a otro formato), TGI (con adaptación). El modelo se carga directamente desde Hugging Face mediante `llama-cli` o `llama-server`.
 - Latencia y throughput: no hay datos específicos; en una RTX 4090 se espera una generación de 20-40 tokens/s con contexto corto, pero depende del hardware.
 
 ## Comparativa con modelos similares

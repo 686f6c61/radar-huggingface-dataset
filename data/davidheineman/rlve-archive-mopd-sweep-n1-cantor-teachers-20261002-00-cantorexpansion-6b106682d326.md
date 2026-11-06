@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `davidheineman/rlve-archive-mopd-sweep-n1-cantor-teachers-20261002-00-cantorexpansion-6b106682d326` es un checkpoint archivado de un experimento de investigacion publicado en HuggingFace por el usuario `davidheineman`. No se trata de un modelo de proposito general documentado, sino de la preservacion de un estado de entrenamiento concreto: segun su propia model card, corresponde al checkpoint final (paso 99) de la ruta de scratch `runs/mopd-sweep-n1-cantor-teachers-20261002-164427/resumable/00-CantorExpansion`, con run de W&B asociado `84ffff0c`. El repositorio conserva los pesos en formato `hf-safetensors`, con un directorio `checkpoint/` que almacenaria el estado exacto para checkpoints distribuidos de Megatron.
+El modelo identificado como `davidheineman/rlve-archive-mopd-sweep-n1-cantor-teachers-20261002-00-cantorexpansion-6b106682d326` es un checkpoint archivado de un experimento de investigacion publicado en Hugging Face por el usuario `davidheineman`. No se trata de un modelo de proposito general documentado, sino de la preservacion de un estado de entrenamiento concreto: segun su propia model card, corresponde al checkpoint final (paso 99) de la ruta de scratch `runs/mopd-sweep-n1-cantor-teachers-20261002-164427/resumable/00-CantorExpansion`, con run de W&B asociado `84ffff0c`. El repositorio conserva los pesos en formato `hf-safetensors`, con un directorio `checkpoint/` que almacenaria el estado exacto para checkpoints distribuidos de Megatron.
 
 El dato objetivo mas relevante es su tamano: 1.777.088.000 parametros (aproximadamente 1,78 mil millones), lo que lo situa en la categoria de modelos pequenos, con un repo de 3,6 GB en safetensors, consistente con pesos en precision de 16 bits. La etiqueta `qwen2` indica que la arquitectura subyacente pertenece a la familia Qwen2, y las etiquetas `rlve` y `scratch-archive` apuntan a un contexto de investigacion sobre entrenamiento por refuerzo o experimentacion desde cero, aunque no hay documentacion publica que precise el significado de esas siglas.
 
@@ -73,7 +73,7 @@ La comparacion se limita a caracteristicas estructurales, ya que no hay benchmar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (`rlve-archive-...-00-CantorExpansion`) | 1,78B | No disponible | No disponible | Safetensors en HuggingFace, 0 descargas |
+| Este checkpoint (`rlve-archive-...-00-CantorExpansion`) | 1,78B | No disponible | No disponible | Safetensors en Hugging Face, 0 descargas |
 | Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache 2.0 (segun la version base publica) | Amplia, con versiones GGUF y cuantizadas |
 | Llama 3.2 1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | Amplia, con versiones GGUF |
 | SmolLM2-1.7B | 1,71B | 8.192 tokens | Apache 2.0 | Amplia, con versiones GGUF |
@@ -94,7 +94,7 @@ Los datos de contexto, licencia y disponibilidad de los modelos comparados corre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n1-cantor-teachers-20261002-00-cantorexpansion-6b106682d326
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n1-cantor-teachers-20261002-00-cantorexpansion-6b106682d326
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio del autor: no disponible

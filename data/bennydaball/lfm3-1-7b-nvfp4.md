@@ -86,9 +86,9 @@ En SGLang (PR 46858): BF16 345 tok/s, Liquid NVFP4 513 tok/s, este repositorio 4
 
 | Modelo | Parámetros | Contexto | Cuantización | KLD medio (W4A4) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repositorio | 1.162.570.496 | no disponible | NVFP4 (GPTQ + Schur Replay + Four Over Six) | 0,0461 | LFM Open License v1.0 | HuggingFace |
-| LiquidAI/LFM3-1.7B-NVFP4 | 1.162.570.496 | no disponible | NVFP4 (RTN vía ModelOpt) | 0,0628 | LFM Open License v1.0 | HuggingFace |
-| LiquidAI/LFM3-1.7B (BF16) | 1.162.570.496 | no disponible | BF16 | 0 (referencia) | LFM Open License v1.0 | HuggingFace |
+| Este repositorio | 1.162.570.496 | no disponible | NVFP4 (GPTQ + Schur Replay + Four Over Six) | 0,0461 | LFM Open License v1.0 | Hugging Face |
+| LiquidAI/LFM3-1.7B-NVFP4 | 1.162.570.496 | no disponible | NVFP4 (RTN vía ModelOpt) | 0,0628 | LFM Open License v1.0 | Hugging Face |
+| LiquidAI/LFM3-1.7B (BF16) | 1.162.570.496 | no disponible | BF16 | 0 (referencia) | LFM Open License v1.0 | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
@@ -105,7 +105,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BennyDaBall/LFM3-1.7B-NVFP4
+- Hugging Face: https://huggingface.co/BennyDaBall/LFM3-1.7B-NVFP4
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - NVFP4 oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B-NVFP4
 - GGUF gemelo: https://huggingface.co/BennyDaBall/LFM3-1.7B-NVFP4-GGUF

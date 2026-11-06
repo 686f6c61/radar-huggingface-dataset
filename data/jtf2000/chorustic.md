@@ -4,7 +4,7 @@
 
 ChorusTIC es un modelo fundacional para clasificación de series temporales multivariadas desarrollado por Juntao Fang (JTF2000). Su principal innovación es permitir la clasificación *in-context* sin necesidad de ajuste fino ni actualización de parámetros específicos de la tarea, lo que lo convierte en una solución *training-free* para este tipo de problemas. El modelo combina una concatenación de subcanales aleatorios consistente con episodios (Random Subchannel Slot Concatenation) con un codificador dual-axis compartido que modela simultáneamente las interacciones temporales y entre canales, mapeando configuraciones de canales variables a una representación de ancho fijo independiente del número original de canales.
 
-El modelo se ha evaluado en los archivos completos UEA-30 y UCR-128, dos referencias estándar en clasificación de series temporales. Aunque el repositorio de HuggingFace es reciente (agosto de 2026) y cuenta con pocos metadatos, el paper asociado (arXiv:2608.24033) describe la metodología y los resultados. Su tamaño de repositorio es de 0.2 GB, lo que sugiere un modelo compacto, aunque no se especifican los parámetros totales. La licencia MIT permite uso comercial sin restricciones significativas.
+El modelo se ha evaluado en los archivos completos UEA-30 y UCR-128, dos referencias estándar en clasificación de series temporales. Aunque el repositorio de Hugging Face es reciente (agosto de 2026) y cuenta con pocos metadatos, el paper asociado (arXiv:2608.24033) describe la metodología y los resultados. Su tamaño de repositorio es de 0.2 GB, lo que sugiere un modelo compacto, aunque no se especifican los parámetros totales. La licencia MIT permite uso comercial sin restricciones significativas.
 
 ## Especificaciones tecnicas
 
@@ -60,14 +60,14 @@ No se dispone de información suficiente para establecer una comparativa con otr
 ## Limitaciones y advertencias
 
 - No se dispone de información sobre sesgos conocidos ni riesgos de alucinación, al ser un modelo discriminativo (clasificación) y no generativo.
-- La falta de metadatos en el repositorio de HuggingFace (idiomas, formato de pesos, cuantizaciones) dificulta su integración directa en pipelines existentes.
+- La falta de metadatos en el repositorio de Hugging Face (idiomas, formato de pesos, cuantizaciones) dificulta su integración directa en pipelines existentes.
 - Al ser un modelo *training-free*, su rendimiento depende de la calidad y representatividad del conjunto de contexto proporcionado en cada tarea.
 - La licencia MIT permite uso comercial, pero se debe verificar la procedencia de los datos de entrenamiento si se utiliza en aplicaciones sensibles.
 - No se especifica si el modelo soporta series de longitud variable o si requiere una longitud fija; esto debe consultarse en el paper.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JTF2000/ChorusTIC
+- Hugging Face: https://huggingface.co/JTF2000/ChorusTIC
 - Paper arXiv: https://arxiv.org/abs/2608.24033
 - Artículo en learnijoy.com: https://learnijoy.com/newscenter/104197-chorustic-enables-training-free-time-series-classification-w
 - Artículo en aimodels.fyi: https://www.aimodels.fyi/papers/arxiv/chorustic-training-free-multivariate-time-series-classification

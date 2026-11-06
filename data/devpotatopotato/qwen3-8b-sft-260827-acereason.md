@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| devpotatopotato/qwen3-8b-sft-260827-acereason | 8,19B | no disponible | other | HuggingFace |
-| Qwen/Qwen3-8B (base) | 8,19B | 32K (según documentación del base) | Apache 2.0 (según Qwen) | HuggingFace |
-| Qwen/Qwen3-8B-Instruct | 8,19B | 32K | Apache 2.0 | HuggingFace |
+| devpotatopotato/qwen3-8b-sft-260827-acereason | 8,19B | no disponible | other | Hugging Face |
+| Qwen/Qwen3-8B (base) | 8,19B | 32K (según documentación del base) | Apache 2.0 (según Qwen) | Hugging Face |
+| Qwen/Qwen3-8B-Instruct | 8,19B | 32K | Apache 2.0 | Hugging Face |
 
 La comparativa se limita al modelo base y su versión instruct, ya que no se dispone de información sobre otros fine-tunes similares. La principal diferencia es que este modelo carece de documentación y evaluación pública, mientras que el base y el instruct tienen modelos card detalladas y benchmarks oficiales.
 
@@ -71,5 +71,5 @@ La comparativa se limita al modelo base y su versión instruct, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devpotatopotato/qwen3-8b-sft-260827-acereason
+- Modelo en Hugging Face: https://huggingface.co/devpotatopotato/qwen3-8b-sft-260827-acereason
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

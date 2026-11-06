@@ -71,10 +71,10 @@ La diferencia en KL media es de −0,067 (IC 95 % −0,100 a −0,045), es decir
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ingot-mlx, GPTQ calibrado) | 35B totales, ~3B activos | 128K | 4 bits MLX, group size 64 | Apache 2.0 | HuggingFace, 26 descargas |
-| froggeric/Qwen3.6-35B-A3B-Uncensored-Heretic-MLX-4bit | 35B totales, ~3B activos | no disponible | 4 bits MLX, round-to-nearest | no disponible | HuggingFace |
-| llmfan46/Qwen3.6-35B-A3B-uncensored-heretic (bf16) | 35B totales, ~3B activos | no disponible | bf16 | no disponible | HuggingFace |
-| Qwen/Qwen3.6-35B-A3B (original) | 35B totales, ~3B activos | no disponible | bf16 y otras | Apache 2.0 | HuggingFace |
+| Este modelo (ingot-mlx, GPTQ calibrado) | 35B totales, ~3B activos | 128K | 4 bits MLX, group size 64 | Apache 2.0 | Hugging Face, 26 descargas |
+| froggeric/Qwen3.6-35B-A3B-Uncensored-Heretic-MLX-4bit | 35B totales, ~3B activos | no disponible | 4 bits MLX, round-to-nearest | no disponible | Hugging Face |
+| llmfan46/Qwen3.6-35B-A3B-uncensored-heretic (bf16) | 35B totales, ~3B activos | no disponible | bf16 | no disponible | Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (original) | 35B totales, ~3B activos | no disponible | bf16 y otras | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base porque no se dispone de datos de benchmarks que permitan comparar con otras familias (Llama, Mistral, etc.). La ventaja principal de este modelo frente a la conversión estándar es la menor divergencia KL (0,078 frente a 0,145) con idéntico tamaño y velocidad.
 
@@ -93,7 +93,7 @@ La comparativa se limita a las variantes del mismo modelo base porque no se disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ingot-mlx/Qwen3.6-35B-A3B-Heretic-MLX-4bit-calib
+- Hugging Face: https://huggingface.co/ingot-mlx/Qwen3.6-35B-A3B-Heretic-MLX-4bit-calib
 - Modelo base (uncensored-heretic): https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE

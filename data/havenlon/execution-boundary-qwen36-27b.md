@@ -74,5 +74,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace: Havenlon/Execution-Boundary-Qwen36-27B](https://huggingface.co/Havenlon/Execution-Boundary-Qwen36-27B)
+- [Hugging Face: Havenlon/Execution-Boundary-Qwen36-27B](https://huggingface.co/Havenlon/Execution-Boundary-Qwen36-27B)
 - [Sitio web de Havenlon](https://havenlon.com)

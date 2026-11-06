@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TuneKV Toolathlon Qwen3.8-27B es un artefacto de ajuste de caché de prefijo (prefix KV) destilado, publicado por el usuario Zhongzhu en HuggingFace. No es un modelo completo: se distribuye como un conjunto de ficheros de rango (32 de atención completa y 96 GDN en formato de servicio con tensor parallelism 2, más los ficheros READY, ASSEMBLY.json y prefix_ids.json) que se ensamblan sobre el modelo base Qwen/Qwen3.8-27B, descrito en la propia model card como una arquitectura híbrida de 16 capas de atención completa (FA) y 48 capas GDN. El objetivo del ajuste es mejorar el comportamiento del modelo base en Toolathlon 46, un banco de tareas de agente que combina los entornos terminus-2 y Harbor.
+TuneKV Toolathlon Qwen3.8-27B es un artefacto de ajuste de caché de prefijo (prefix KV) destilado, publicado por el usuario Zhongzhu en Hugging Face. No es un modelo completo: se distribuye como un conjunto de ficheros de rango (32 de atención completa y 96 GDN en formato de servicio con tensor parallelism 2, más los ficheros READY, ASSEMBLY.json y prefix_ids.json) que se ensamblan sobre el modelo base Qwen/Qwen3.8-27B, descrito en la propia model card como una arquitectura híbrida de 16 capas de atención completa (FA) y 48 capas GDN. El objetivo del ajuste es mejorar el comportamiento del modelo base en Toolathlon 46, un banco de tareas de agente que combina los entornos terminus-2 y Harbor.
 
 El problema que aborda es la especialización de un modelo de aproximadamente 27 000 millones de parámetros en tareas de uso de herramientas sin reentrenar los pesos completos: el artefacto ocupa solo 0,2 GB. El método destila trayectorias exitosas del profesor GLM-5.3 (23 ensayos correctos que produjeron 265 filas de llamadas LLM, recontadas con el tokenizador de 27B) mediante entrenamiento por entropía cruzada sobre el prefijo KV. La receta publicada es concreta y reproducible: n_tune = 704 = align_down(745, 64), lr 3e-4 constante, 252 pasos, DP4/GA2 y semilla 42, con métricas registradas en Weights & Biases.
 
@@ -70,7 +70,7 @@ Datos de entrenamiento asociados: 23 ensayos exitosos del profesor GLM-5.3, 265 
 
 | Modelo / enfoque | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TuneKV Toolathlon Qwen3.8-27B (prefijo KV ajustado) | ~27B (base) | no disponible | Base 11/46 en Toolathlon 46; ajustado no explicitado | no disponible | HuggingFace, 0 descargas, 0 likes |
+| TuneKV Toolathlon Qwen3.8-27B (prefijo KV ajustado) | ~27B (base) | no disponible | Base 11/46 en Toolathlon 46; ajustado no explicitado | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen3.8-27B (modelo base citado) | ~27B | no disponible | 11/46 en Toolathlon 46 | no disponible | No verificada en las fuentes consultadas |
 | GLM-5.3 (profesor citado) | no disponible | no disponible | Origen de las 23 trayectorias exitosas usadas como objetivo | no disponible | No verificada en las fuentes consultadas |
 
@@ -91,7 +91,7 @@ No se han encontrado en la información disponible otros artefactos públicos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zhongzhu/tunekv-toolathlon-qwen3.8-27b
+- Modelo en Hugging Face: https://huggingface.co/Zhongzhu/tunekv-toolathlon-qwen3.8-27b
 - Dataset de veredictos y datos de evaluación: https://huggingface.co/Zhongzhu/tunekv-toolathlon-data (referencia toolce27/)
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/zhizhousha/TOOLATHLON/runs/rxl5naxo
 - Modelo base citado: Qwen/Qwen3.8-27B (referencia textual de la model card; no verificada)

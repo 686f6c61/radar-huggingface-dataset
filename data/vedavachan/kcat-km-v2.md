@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VedaVachan/kcat-km-v2` es un paquete de inferencia publicado en HuggingFace que predice dos parámetros cinéticos de enzimas, `log10_kcat` y `log10_km`, directamente a partir de tres columnas de un fichero Parquet: `id`, `smiles` (sustrato) y `sequence` (secuencia aminoacídica de la enzima). No es un modelo de lenguaje ni una red neuronal profunda: son dos regresores independientes `HistGradientBoostingRegressor` de scikit-learn entrenados sobre 2.148 características tabulares derivadas (descriptores RDKit, bits de Morgan, resúmenes de secuencia y banderas de valores faltantes). Lo desarrolla el usuario VedaVachan y se distribuye con licencia MIT.
+`VedaVachan/kcat-km-v2` es un paquete de inferencia publicado en Hugging Face que predice dos parámetros cinéticos de enzimas, `log10_kcat` y `log10_km`, directamente a partir de tres columnas de un fichero Parquet: `id`, `smiles` (sustrato) y `sequence` (secuencia aminoacídica de la enzima). No es un modelo de lenguaje ni una red neuronal profunda: son dos regresores independientes `HistGradientBoostingRegressor` de scikit-learn entrenados sobre 2.148 características tabulares derivadas (descriptores RDKit, bits de Morgan, resúmenes de secuencia y banderas de valores faltantes). Lo desarrolla el usuario VedaVachan y se distribuye con licencia MIT.
 
 Su relevancia es acotada y hay que leerla con precisión: el propio autor lo etiqueta como una **comparación exploratoria, no una mejora medida sobre V1**, y admite que el modelo HGBT **no superó la puerta interna de aceptación** calculada solo sobre el conjunto de entrenamiento. Aun así, se reajustó sobre las 36.970 filas públicas de entrenamiento por petición del usuario. En la validación interna, el modelo queda por debajo del control V1 (ExtraTrees) en ambas dianas, con una diferencia de SCC medio de −0,064844.
 
@@ -91,7 +91,7 @@ Contexto adicional: la captura del leaderboard de V1 aportada por el usuario rep
 
 | Modelo | Enfoque | Entrada | Parámetros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| kcat-km-v2 (este) | Gradient boosting sobre features tabulares + Morgan | SMILES + secuencia | No disponible | No aplica | SCC medio 0,533789 en validación interna | MIT | HuggingFace |
+| kcat-km-v2 (este) | Gradient boosting sobre features tabulares + Morgan | SMILES + secuencia | No disponible | No aplica | SCC medio 0,533789 en validación interna | MIT | Hugging Face |
 | CatPred | Aprendizaje profundo con modelos preentrenados de proteína; predice kcat, Km y Ki | Secuencia y estructura | No disponible en la información recogida | No aplica | Mejora declarada en enzimas no vistas (sin cifras en la información disponible) | No disponible | Publicado en Nature Communications |
 | KinForm | Extra Trees sobre representaciones optimizadas con información cinética | Features derivadas de secuencia | No disponible | No aplica | No disponible | No disponible | Publicado en npj Systems Biology and Applications |
 | NNKcat | Red neuronal profunda con procesadores separados de sustrato y proteína | Secuencia + sustrato | No disponible | No aplica | No disponible | No disponible | Artículo en Briefings in Bioinformatics |
@@ -116,7 +116,7 @@ Nota: los cuatro primeros modelos se conocen solo a través de los resúmenes de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VedaVachan/kcat-km-v2
+- Modelo en Hugging Face: https://huggingface.co/VedaVachan/kcat-km-v2
 - CatPred (Nature Communications): https://www.nature.com/articles/s41467-025-57215-9
 - KinForm (npj Systems Biology and Applications): https://www.nature.com/articles/s41540-026-00692-5
 - NNKcat (Briefings in Bioinformatics): https://academic.oup.com/bib/article/26/3/bbaf212/8131740

@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SteerCamera (este modelo) | Diffusion Policy, ensemble de 5 | 1 frame RGB 128 x 128, 2 pasos | chunk 16 x 7 | no disponible | HuggingFace, LeRobot |
+| SteerCamera (este modelo) | Diffusion Policy, ensemble de 5 | 1 frame RGB 128 x 128, 2 pasos | chunk 16 x 7 | no disponible | Hugging Face, LeRobot |
 | Diffusion Policy original (Chi et al.) | Diffusion Policy | observaciones multimodales | chunk de acciones | código abierto (repo oficial) | paper y repositorio |
 | ACT (Action Chunking Transformer) | Transformer con chunking | imágenes + estado | chunk de acciones | código abierto | repositorio ALoHA/LeRobot |
 | VQ-BeT | Transformer con cuantización discreta | observaciones | acciones discretizadas | código abierto | repositorio oficial |
@@ -89,7 +89,7 @@ No se dispone de comparaciones numéricas directas entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pgizemozdil/steercam-ballsortingsymbol-dp
+- Modelo en Hugging Face: https://huggingface.co/pgizemozdil/steercam-ballsortingsymbol-dp
 - Código, tareas, datasets y benchmark: https://github.com/gizemozd/steer-your-camera
 - Tarea BallSortingSymbol de ManiFeel (referenciada en la model card): no disponible como enlace directo
 - Paper *Steer Your Camera* (en revisión): no disponible como enlace directo

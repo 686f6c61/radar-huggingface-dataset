@@ -2,7 +2,7 @@
 
 ## Resumen
 
-X-VLA Piper: nesting_3dolls es un conjunto de checkpoints de ajuste fino completo (full-parameter fine-tuning) del modelo base 2toINF/X-VLA-Pt, un modelo de vision-lenguaje-accion (VLA) orientado a robotica. Lo publica el usuario SXY7 en HuggingFace y esta especializado en una tarea concreta de manipulacion robotica: el encaje de tres munecas (nesting_3dolls) sobre un robot Piper. El repositorio contiene 18 checkpoints completos, desde el paso 30 000 hasta el 200 000, cada uno de aproximadamente 10,56 GB, lo que situa el modelo en el orden de los miles de millones de parametros en precision de 16 bits (no se especifica el numero exacto).
+X-VLA Piper: nesting_3dolls es un conjunto de checkpoints de ajuste fino completo (full-parameter fine-tuning) del modelo base 2toINF/X-VLA-Pt, un modelo de vision-lenguaje-accion (VLA) orientado a robotica. Lo publica el usuario SXY7 en Hugging Face y esta especializado en una tarea concreta de manipulacion robotica: el encaje de tres munecas (nesting_3dolls) sobre un robot Piper. El repositorio contiene 18 checkpoints completos, desde el paso 30 000 hasta el 200 000, cada uno de aproximadamente 10,56 GB, lo que situa el modelo en el orden de los miles de millones de parametros en precision de 16 bits (no se especifica el numero exacto).
 
 El modelo resuelve el problema de mapear observaciones visuales y de propiocepcion a acciones motoras de siete dimensiones. Concretamente, recibe dos vistas RGB de 224x224 (camara superior y muneca derecha), siete valores medidos de articulaciones y pinza como propiocepcion, y predice treinta acciones absolutas de siete dimensiones. Es relevante para quienes trabajan en imitacion de politicas roboticas con el ecosistema Piper y quieran reutilizar un ajuste fino ya entrenado en lugar de partir del modelo base.
 
@@ -72,8 +72,8 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SXY7/X-VLA-Piper-nesting_3dolls | no disponible | no disponible | no disponible | HuggingFace |
-| 2toINF/X-VLA-Pt (base) | no disponible | no disponible | no disponible | HuggingFace |
+| SXY7/X-VLA-Piper-nesting_3dolls | no disponible | no disponible | no disponible | Hugging Face |
+| 2toINF/X-VLA-Pt (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Otros VLA comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SXY7/X-VLA-Piper-nesting_3dolls
+- Modelo en Hugging Face: https://huggingface.co/SXY7/X-VLA-Piper-nesting_3dolls
 - Modelo base: https://huggingface.co/2toINF/X-VLA-Pt
 - Checkpoint final (paso 200 000): https://huggingface.co/SXY7/X-VLA-Piper-nesting_3dolls/tree/main/checkpoint-200000
 - Commit de referencia de X-VLA: 6c4ecfb8be458ae7c0c96094e4b0add4174f4fe2 (repositorio upstream de X-VLA; URL no disponible en la informacion proporcionada)

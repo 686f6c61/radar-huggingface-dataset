@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-2p25bit-r15 es un checkpoint de investigación publicado por el usuario minjaechoi en HuggingFace. Se trata de una versión del modelo Qwen/Qwen3.6-35B-A3B en la que los expertos enrutados (routed experts) de la arquitectura Mixture-of-Experts se almacenan con una precisión media de 2,250 bits, mientras que el resto de los pesos permanece en BF16. El identificador interno del experimento es "r15".
+Qwen3.6-35B-A3B-2p25bit-r15 es un checkpoint de investigación publicado por el usuario minjaechoi en Hugging Face. Se trata de una versión del modelo Qwen/Qwen3.6-35B-A3B en la que los expertos enrutados (routed experts) de la arquitectura Mixture-of-Experts se almacenan con una precisión media de 2,250 bits, mientras que el resto de los pesos permanece en BF16. El identificador interno del experimento es "r15".
 
 El modelo declara 35.107.181.936 parámetros totales según los tensores safetensors, y la nomenclatura "A3B" del nombre sugiere del orden de 3.000 millones de parámetros activos por token, aunque este dato no se confirma en la documentación proporcionada. Los pesos se guardan ya desquantizados en tensores BF16, de modo que se cargan con `transformers` estándar y con vLLM sin necesidad de kernels de cuantización específicos.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| minjaechoi/qwen36-35b-a3b-2p25bit-r15 | 35,1 B | no disponible | no disponible | safetensors BF16 | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (base) | no disponible en la información aportada | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| minjaechoi/qwen36-35b-a3b-2p25bit-r15 | 35,1 B | no disponible | no disponible | safetensors BF16 | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (base) | no disponible en la información aportada | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas MoE de tamaño similar (por ejemplo Qwen3-30B-A3B o Mixtral 8x7B) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación sustentada por los datos aportados es con el propio modelo base Qwen/Qwen3.6-35B-A3B, del que este checkpoint es una derivación cuantizada. No se dispone de cifras verificadas de otras alternativas MoE en la información proporcionada, por lo que no se incluyen valores que no puedan contrastarse.
@@ -93,7 +93,7 @@ La única comparación sustentada por los datos aportados es con el propio model
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p25bit-r15
+- Página del modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p25bit-r15
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre su modelo base; los enlaces obtenidos correspondían a sitios de contenido para adultos y agregadores de enlaces sin relación con el modelo, por lo que se han omitido. No se han encontrado papers, blogs técnicos, repositorios de código ni demos asociados a este checkpoint.

@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rjz123/colar-coding-lcb-l1b
+- Repositorio Hugging Face: https://huggingface.co/rjz123/colar-coding-lcb-l1b
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - LiveCodeBench (benchmark de entrenamiento): https://github.com/LiveCodeBench/LiveCodeBench
 - Página oficial de LiveCodeBench: https://livecodebench.github.io/

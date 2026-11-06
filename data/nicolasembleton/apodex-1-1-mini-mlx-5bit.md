@@ -78,7 +78,7 @@ La comparativa se limita a las versiones del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/nicolasembleton/Apodex-1.1-mini-MLX-5bit
+- Hugging Face del modelo: https://huggingface.co/nicolasembleton/Apodex-1.1-mini-MLX-5bit
 - Modelo base (original): https://huggingface.co/apodex/Apodex-1.1-mini
 - Otra cuantización MLX 4-bit: https://huggingface.co/abenzerps/Apodex-1.1-mini-MLX-4bit
 - Paper (arXiv): https://arxiv.org/abs/2608.23283v1

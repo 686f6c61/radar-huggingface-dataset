@@ -53,7 +53,7 @@ La model card incluye una gráfica comparativa con modelos de referencia, pero n
 
 - No se han publicado datos específicos de VRAM estimada, GPUs recomendadas ni latencia/throughput en la información proporcionada.
 - Al tratarse de un modelo de aproximadamente 5.06B parámetros en formato safetensors, es probable que pueda ejecutarse en GPUs de consumo como RTX 4090 (24 GB) con cuantización, pero esto es una estimación no verificada.
-- El modelo se distribuye a través de HuggingFace y se puede cargar con la librería Transformers.
+- El modelo se distribuye a través de Hugging Face y se puede cargar con la librería Transformers.
 - No se ha confirmado la compatibilidad con vLLM, TGI, llama.cpp u Ollama. Estas herramientas podrían funcionar tras una conversión o adaptación, pero no se ha verificado en la documentación disponible.
 
 ## Comparativa con modelos similares
@@ -62,7 +62,7 @@ Los modelos mencionados como comparables en la model card son Qwen3.5-4B, G9v3-3
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| K2-Horizon-3.7B | 3.7B (core) / 5.06B (safetensors) | 512K | Apache 2.0 | HuggingFace, abierto |
+| K2-Horizon-3.7B | 3.7B (core) / 5.06B (safetensors) | 512K | Apache 2.0 | Hugging Face, abierto |
 | Qwen3.5-4B | No disponible | No disponible | No disponible | No disponible |
 | G9v3-3B | No disponible | No disponible | No disponible | No disponible |
 | Granite 4.2-3B | No disponible | No disponible | No disponible | No disponible |
@@ -72,7 +72,7 @@ Los modelos mencionados como comparables en la model card son Qwen3.5-4B, G9v3-3
 
 - No se han publicado evaluaciones de sesgo en la información proporcionada, por lo que no se conocen sesgos específicos del modelo.
 - El riesgo de alucinación no está documentado. Como en cualquier modelo de lenguaje, puede generar contenido plausible pero incorrecto, especialmente en dominios especializados.
-- El modelo está entrenado principalmente en inglés, lo que limita su rendimiento en otros idiomas. La etiqueta de idioma en HuggingFace es solo "en".
+- El modelo está entrenado principalmente en inglés, lo que limita su rendimiento en otros idiomas. La etiqueta de idioma en Hugging Face es solo "en".
 - La discrepancia entre los 3.7B indicados en la model card y los 5.06B reales en safetensors debe tenerse en cuenta a la hora de dimensionar recursos y expectativas de rendimiento.
 - La licencia Apache 2.0 permite uso comercial, pero exige incluir el aviso de licencia y las atribuciones correspondientes en las redistribuciones.
 - No se ha confirmado la compatibilidad con herramientas de despliegue populares como vLLM o llama.cpp, por lo que la integración en producción requiere validación previa.
@@ -80,7 +80,7 @@ Los modelos mencionados como comparables en la model card son Qwen3.5-4B, G9v3-3
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IFM/K2-Horizon-3.7B
+- Hugging Face: https://huggingface.co/IFM/K2-Horizon-3.7B
 - Blog de IFM (presentación de K2 Horizon): https://ifm.ai/blog/k2
 - Página del producto K2 Horizon: https://ifm.ai/k2/
-- Datasets públicos: IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data (disponibles en HuggingFace)
+- Datasets públicos: IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data (disponibles en Hugging Face)

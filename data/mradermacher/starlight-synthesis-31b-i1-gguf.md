@@ -117,7 +117,7 @@ No se dispone de datos de rendimiento del modelo base ni de sus alternativas, po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Starlight-Synthesis-31B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Starlight-Synthesis-31B-i1-GGUF
 - Modelo base: https://huggingface.co/Cyclone-Labs/Starlight-Synthesis-31B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Starlight-Synthesis-31B-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Starlight-Synthesis-31B-i1-GGUF

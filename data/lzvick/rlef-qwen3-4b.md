@@ -86,9 +86,9 @@ Notas de la model card: el error estándar de GSM8K strict es de aproximadamente
 
 | Modelo | Parámetros | Contexto | GSM8K strict | IFEval prompt strict | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| RLEF Qwen3-4B | 4,02B | no disponible | 83,7% | 83,5% | Apache 2.0 | HuggingFace |
-| Qwen3-4B-Instruct-2507 | ~4B | no disponible | 73,4% | 82,4% | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-3B-Instruct | ~3B | no disponible | 66,6% | 47,9% | no disponible | HuggingFace |
+| RLEF Qwen3-4B | 4,02B | no disponible | 83,7% | 83,5% | Apache 2.0 | Hugging Face |
+| Qwen3-4B-Instruct-2507 | ~4B | no disponible | 73,4% | 82,4% | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-3B-Instruct | ~3B | no disponible | 66,6% | 47,9% | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos incluidos en los benchmarks de la model card. No se dispone de datos de contexto ni de licencia de Qwen2.5-Coder-3B-Instruct en la información proporcionada.
 
@@ -107,7 +107,7 @@ La comparativa se limita a los modelos incluidos en los benchmarks de la model c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lzvick/rlef-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/Lzvick/rlef-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Notebook de entrenamiento GRPO: https://www.kaggle.com/code/lionelarce/rlef-4b-grpo
 - Notebook de benchmarks oficiales: https://www.kaggle.com/code/lionelarce/rlef-official-benchmarks

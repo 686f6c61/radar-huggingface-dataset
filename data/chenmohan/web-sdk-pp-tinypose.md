@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenmohan/web-sdk-pp-tinypose
+- Modelo en Hugging Face: https://huggingface.co/chenmohan/web-sdk-pp-tinypose
 - Manifiesto 256×192 FP32 0.1.0 (predeterminado): https://huggingface.co/chenmohan/web-sdk-pp-tinypose/blob/main/tinypose-256x192/0.1.0/README.md
 - Manifiesto 128×96 FP32 0.2.0: https://huggingface.co/chenmohan/web-sdk-pp-tinypose/blob/main/tinypose-128x96/0.2.0/fp32/README.md
 - Manifiesto 128×96 W16A32 0.2.0: https://huggingface.co/chenmohan/web-sdk-pp-tinypose/blob/main/tinypose-128x96/0.2.0/w16a32/README.md

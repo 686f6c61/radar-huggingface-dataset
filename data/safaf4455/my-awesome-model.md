@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de aprendizaje automatico publicado en HuggingFace por el usuario safaf4455, etiquetado como un modelo BERT de extraccion de caracteristicas (feature extraction) compatible con la libreria transformers de PyTorch. El repositorio se creo en septiembre de 2026 y, segun los metadatos, no registra descargas ni interacciones de la comunidad, lo que sugiere que se trata de un proyecto en fase inicial o de un repositorio de prueba.
+MyAwesomeModel es un modelo de aprendizaje automatico publicado en Hugging Face por el usuario safaf4455, etiquetado como un modelo BERT de extraccion de caracteristicas (feature extraction) compatible con la libreria transformers de PyTorch. El repositorio se creo en septiembre de 2026 y, segun los metadatos, no registra descargas ni interacciones de la comunidad, lo que sugiere que se trata de un proyecto en fase inicial o de un repositorio de prueba.
 
 La model card describe una actualizacion significativa del modelo con mejoras en razonamiento profundo, inferencia y capacidades de function calling, atribuidas a un aumento de recursos computacionales y a mecanismos de optimizacion algoritmica durante el post-entrenamiento. Se mencionan resultados en benchmarks de matematicas, programacion y logica general, con una mejora notable en el test AIME 2025 (del 70 % al 87,5 % de precision). Sin embargo, la informacion publica no incluye datos sobre arquitectura, numero de parametros, contexto o dataset de entrenamiento, lo que limita una evaluacion tecnica rigurosa.
 
@@ -12,7 +12,7 @@ El repositorio tiene un tamano de 0,0 GB, lo que indica que no contiene pesos de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun etiquetas de HuggingFace) |
+| Arquitectura | BERT (segun etiquetas de Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ El repositorio tiene un tamano de 0,0 GB, lo que indica que no contiene pesos de
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles tecnicos sobre la arquitectura interna del modelo. Las etiquetas de HuggingFace indican que se basa en BERT y esta disenado para extraccion de caracteristicas, lo que sugiere una arquitectura transformer encoder-only. El autor menciona que la version actual incorpora "mecanismos de optimizacion algoritmica" durante el post-entrenamiento y un aumento de recursos computacionales, pero no especifica que tipo de tecnicas se emplearon (RLHF, DPO, SFT, etc.).
+La model card no proporciona detalles tecnicos sobre la arquitectura interna del modelo. Las etiquetas de Hugging Face indican que se basa en BERT y esta disenado para extraccion de caracteristicas, lo que sugiere una arquitectura transformer encoder-only. El autor menciona que la version actual incorpora "mecanismos de optimizacion algoritmica" durante el post-entrenamiento y un aumento de recursos computacionales, pero no especifica que tipo de tecnicas se emplearon (RLHF, DPO, SFT, etc.).
 
 No se publican datos sobre el dataset de entrenamiento, el numero de tokens procesados ni la composicion linguistica de los datos. La model card menciona que el modelo "MyAwesomeModel-Small" comparte arquitectura con el modelo base pero utiliza el mismo tokenizador que el modelo principal, lo que sugiere que existen variantes de tamano, aunque no se detallan sus caracteristicas.
 
@@ -89,6 +89,6 @@ No es posible realizar una comparativa fiable con modelos similares, ya que no s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/safaf4455/my-awesome-model
+- Repositorio Hugging Face: https://huggingface.co/safaf4455/my-awesome-model
 - Repositorio de prueba: https://huggingface.co/safaf4455/MyAwesomeModel-TestRepo
 - Entrada en Toolify (agregador de modelos): https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo

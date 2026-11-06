@@ -96,7 +96,7 @@ Nota: los datos de parámetros, contexto y licencia de las dos alternativas prov
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_grants_or_requests_permission
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_grants_or_requests_permission
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio SumnerLab): https://github.com/SumnerLab/TalkMoves

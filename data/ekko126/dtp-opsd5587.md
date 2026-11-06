@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ekko126/dtp-opsd5587 es un checkpoint publicado en HuggingFace por el usuario ekko126 (ekkoalex), con un peso real de 8.767.123.696 parametros (aproximadamente 8,77 mil millones) segun los metadatos de safetensors. La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia `apache-2.0`, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni casos de uso. El repositorio tiene un tamano de 17,5 GB, coherente con pesos en precision de 16 bits para un modelo de ese tamano.
+El modelo ekko126/dtp-opsd5587 es un checkpoint publicado en Hugging Face por el usuario ekko126 (ekkoalex), con un peso real de 8.767.123.696 parametros (aproximadamente 8,77 mil millones) segun los metadatos de safetensors. La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia `apache-2.0`, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni casos de uso. El repositorio tiene un tamano de 17,5 GB, coherente con pesos en precision de 16 bits para un modelo de ese tamano.
 
 El unico indicio tecnico disponible sobre su naturaleza es la etiqueta `qwen3_vl` asociada al repositorio, que apunta a que se trata de un derivado de la familia Qwen3-VL, es decir, un modelo multimodal de vision y lenguaje basado en transformer. No obstante, esta interpretacion procede exclusivamente de la etiqueta y no esta confirmada por ninguna documentacion del autor.
 
@@ -71,9 +71,9 @@ No hay datos de rendimiento publicados de este modelo que permitan una comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ekko126/dtp-opsd5587 | ~8,77 B | No disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3-VL (variante de ~8 B, probable base) | ~8 B | No disponible en esta ficha | Apache 2.0 (segun familia Qwen) | HuggingFace, ampliamente distribuido |
-| Otros VLM de ~8 B (por ejemplo variantes de la familia InternVL o LLaVA) | ~7-9 B | Variable segun version | Variable | HuggingFace |
+| ekko126/dtp-opsd5587 | ~8,77 B | No disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3-VL (variante de ~8 B, probable base) | ~8 B | No disponible en esta ficha | Apache 2.0 (segun familia Qwen) | Hugging Face, ampliamente distribuido |
+| Otros VLM de ~8 B (por ejemplo variantes de la familia InternVL o LLaVA) | ~7-9 B | Variable segun version | Variable | Hugging Face |
 
 La comparacion con la familia Qwen3-VL es una hipotesis basada en la etiqueta del repositorio, no un hecho confirmado. No se dispone de datos para comparar calidad, contexto efectivo ni throughput.
 
@@ -90,7 +90,7 @@ La comparacion con la familia Qwen3-VL es una hipotesis basada en la etiqueta de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ekko126/dtp-opsd5587
-- Perfil del autor en HuggingFace: https://huggingface.co/ekko126
+- Modelo en Hugging Face: https://huggingface.co/ekko126/dtp-opsd5587
+- Perfil del autor en Hugging Face: https://huggingface.co/ekko126
 - Perfil del autor en GitHub: https://github.com/ekko126
 - Paper, blog o repositorio oficial especifico de este modelo: no disponible.

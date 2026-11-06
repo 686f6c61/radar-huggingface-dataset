@@ -90,6 +90,6 @@ En su nicho (agentes de navegador locales y ligeros), los alternativas más habi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SchlaftGut/open-eyes-navigator
+- Modelo en Hugging Face: https://huggingface.co/SchlaftGut/open-eyes-navigator
 - Modelo base (Gemma 4 E2B-it): https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio de open-eyes (CLI): https://github.com/SchlaftGut0-1/open-eyes

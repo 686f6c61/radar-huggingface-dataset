@@ -30,7 +30,7 @@ Tampoco hay información sobre el dataset de entrenamiento, número de horas de 
 ## Capacidades
 
 - Extracción de frecuencia fundamental (F0) en audio vocal, según la asociación del identificador RMVPE con la familia de extractores de pitch usados en RVC; no confirmado por la model card.
-- Integración con PyTorch mediante PyTorchModelHubMixin, lo que facilita cargar el checkpoint desde HuggingFace Hub.
+- Integración con PyTorch mediante PyTorchModelHubMixin, lo que facilita cargar el checkpoint desde Hugging Face Hub.
 - Pesos en safetensors, adecuados para carga con PyTorch y auditoría básica del archivo.
 - No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, visión, audio generativo, tool calling, function calling, agentes ni multi-step reasoning.
 - No se documenta soporte multilingüe; en un modelo de pitch, el idioma no es una variable directa, pero sí lo son el tipo de voz y el estilo (habla, canto).
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: los 90,47 M de parámetros ocupan aproximadamente 0,36 GB en FP32 y 0,18 GB en FP16 solo para pesos. Con activaciones y buffers, se puede inferir por debajo de 1 GB en la mayoría de configuraciones; es una estimación, no una medición.
 - GPU recomendadas: cualquier GPU de consumo con 2 GB o más de VRAM (GTX 1650, RTX 3060, RTX 4060, RTX 4090). También puede ejecutarse en CPU para lotes pequeños, aunque la latencia no está documentada.
 - Cabe en GPU de consumo: sí, con margen amplio.
-- Opciones de despliegue: PyTorch nativo e integración con HuggingFace Hub mediante PyTorchModelHubMixin. No hay soporte documentado para vLLM, TGI, llama.cpp, Ollama ni TensorRT; estas herramientas están orientadas a modelos de lenguaje y no se pueden asumir para este checkpoint.
+- Opciones de despliegue: PyTorch nativo e integración con Hugging Face Hub mediante PyTorchModelHubMixin. No hay soporte documentado para vLLM, TGI, llama.cpp, Ollama ni TensorRT; estas herramientas están orientadas a modelos de lenguaje y no se pueden asumir para este checkpoint.
 - Latencia y throughput: no disponibles. Dependen del sample rate, la longitud del audio, el dispositivo y el preprocesado.
 - Formato ONNX u otros runtimes: no disponible.
 
@@ -70,7 +70,7 @@ No hay datos comparativos verificables. La tabla siguiente recoge lo que se sabe
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Allinsama/safe-models__RMVPE | 90,47 M | No aplica (audio) | No disponible | No disponible | HuggingFace |
+| Allinsama/safe-models__RMVPE | 90,47 M | No aplica (audio) | No disponible | No disponible | Hugging Face |
 | CREPE (alternativa de estimación de pitch) | No disponible | No aplica | No disponible | No disponible | No verificado en la información |
 | pYIN (alternativa de estimación de pitch) | No disponible | No aplica | No disponible | No disponible | No verificado en la información |
 | SWIPE (alternativa de estimación de pitch) | No disponible | No aplica | No disponible | No disponible | No verificado en la información |
@@ -91,8 +91,8 @@ No se han proporcionado resultados que permitan afirmar que este checkpoint sea 
 
 ## Enlaces
 
-- [HuggingFace: Allinsama/safe-models__RMVPE](https://huggingface.co/Allinsama/safe-models__RMVPE)
-- [HuggingFace: safe-models/RMVPE](https://huggingface.co/safe-models/RMVPE)
+- [Hugging Face: Allinsama/safe-models__RMVPE](https://huggingface.co/Allinsama/safe-models__RMVPE)
+- [Hugging Face: safe-models/RMVPE](https://huggingface.co/safe-models/RMVPE)
 - [Pesos model.safetensors](https://huggingface.co/safe-models/RMVPE/blob/main/model.safetensors)
 - [rmvpe.py en AI-C/rvc-models](https://huggingface.co/datasets/AI-C/rvc-models/blob/main/rmvpe.py)
 - [Documentación de PyTorchModelHubMixin](https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin)

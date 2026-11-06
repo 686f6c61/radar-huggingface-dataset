@@ -103,8 +103,8 @@ La model card indica que las cuantizaciones IQ suelen ser preferibles a las no I
 - La etiqueta "uncensored" implica que el modelo puede no rechazar solicitudes que otros modelos filtrarian; en producción es necesario anadir capas propias de moderacion y control de contenido.
 - Capacidades de vision condicionadas: este repositorio no incluye los ficheros mmproj, por lo que sin descargarlos desde el repositorio estatico el modelo funcionara unicamente como modelo de texto.
 - Datos incompletos: no hay pipeline declarado, ni benchmarks, ni informacion de entrenamiento, ni numero de descargas o valoraciones reseñables (0 descargas y 0 likes en el momento de la consulta).
-- Fechas del repositorio: la ficha indica creacion el 2026-09-10 y actualizacion el 2026-09-10, fechas que proceden del registro de HuggingFace y que conviene verificar antes de citarlas.
-- La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; toda la informacion tecnica proviene de la ficha de HuggingFace y de la model card del autor de la cuantizacion.
+- Fechas del repositorio: la ficha indica creacion el 2026-09-10 y actualizacion el 2026-09-10, fechas que proceden del registro de Hugging Face y que conviene verificar antes de citarlas.
+- La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; toda la informacion tecnica proviene de la ficha de Hugging Face y de la model card del autor de la cuantizacion.
 
 ## Enlaces
 

@@ -6,7 +6,7 @@ Ming-Image-0.1-Design es un modelo de generación de imágenes a partir de texto
 
 El modelo está pensado para flujos de trabajo de diseño y producto más que para generación artística libre. La configuración recomendada por el autor es de 2048 x 2048 píxeles, 12 pasos de muestreo, CFG 1.0 y precisión BF16, con una configuración de hardware validada de una única GPU CUDA con 80 GiB de VRAM. Se distribuye con un repositorio de inferencia propio en GitHub y con recetas para vLLM-Omni, además de dos recursos de "skill" orientados a diseño de UI y a conversión de imágenes en presentaciones editables.
 
-Es relevante ahora porque cubre un nicho concreto —el diseño gráfico generativo con texto— que los modelos texto-a-imagen generalistas resuelven de forma irregular. La ficha que sigue se basa exclusivamente en la información disponible en el repositorio de HuggingFace analizado y en la model card del autor: no hay datos publicados sobre arquitectura interna, composición del dataset de entrenamiento ni resultados numéricos de benchmarks.
+Es relevante ahora porque cubre un nicho concreto —el diseño gráfico generativo con texto— que los modelos texto-a-imagen generalistas resuelven de forma irregular. La ficha que sigue se basa exclusivamente en la información disponible en el repositorio de Hugging Face analizado y en la model card del autor: no hay datos publicados sobre arquitectura interna, composición del dataset de entrenamiento ni resultados numéricos de benchmarks.
 
 ## Especificaciones técnicas
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Resolución | Salida RGBA | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ming-Image-0.1-Design | ~6B | 1024 y 2048 | Sí | 12 | MIT | HuggingFace (réplica analizada y repositorio oficial), ModelScope, GitHub |
+| Ming-Image-0.1-Design | ~6B | 1024 y 2048 | Sí | 12 | MIT | Hugging Face (réplica analizada y repositorio oficial), ModelScope, GitHub |
 | Alternativas de la misma categoría (texto-a-imagen orientadas a diseño con renderizado de texto) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone, en la información proporcionada, de datos verificables de modelos alternativos (parámetros, resolución, licencia, rendimiento) que permitan establecer una comparación cuantitativa honesta. Cualquier cifra que se añadiese aquí sería inventada, por lo que se deja explícitamente como no disponible.
@@ -100,11 +100,11 @@ No se dispone, en la información proporcionada, de datos verificables de modelo
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/servantofares/Ming-Image-0.1-Design
-- Repositorio oficial en HuggingFace: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
+- Repositorio analizado en Hugging Face: https://huggingface.co/servantofares/Ming-Image-0.1-Design
+- Repositorio oficial en Hugging Face: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - ModelScope: https://www.modelscope.cn/models/inclusionAI/Ming-Image-0.1-Design
 - Blog del autor: https://mp.weixin.qq.com/s/VGdtxfM8kbHIQJw50VD_Sw
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/hugging-apps/ming-image-0-1-design-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/hugging-apps/ming-image-0-1-design-demo
 - Repositorio de inferencia Ming-Image: https://github.com/inclusionAI/Ming-Image
 - Skill de diseño de UI: https://github.com/inclusionAI/ling-cookbook/tree/main/resources/recommended-skills/ling-ui-design
 - Skill de imagen a PPT editable: https://github.com/inclusionAI/ling-cookbook/tree/main/resources/recommended-skills/image-to-editable-ppt

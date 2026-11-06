@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `camiellia/qwen3b-multimedqa-random-seed42` contiene un modelo publicado en HuggingFace por el usuario camiellia. Según los metadatos, el modelo utiliza la librería `transformers` y pesos en formato `safetensors`, pero la model card es una plantilla generada automáticamente que no describe el modelo, su arquitectura ni su propósito. El nombre del repositorio sugiere una variante de la serie Qwen3, posiblemente ajustada para tareas de preguntas y respuestas multimodales o médicas (`multimedqa`), pero no hay ninguna información que lo confirme.
+El repositorio `camiellia/qwen3b-multimedqa-random-seed42` contiene un modelo publicado en Hugging Face por el usuario camiellia. Según los metadatos, el modelo utiliza la librería `transformers` y pesos en formato `safetensors`, pero la model card es una plantilla generada automáticamente que no describe el modelo, su arquitectura ni su propósito. El nombre del repositorio sugiere una variante de la serie Qwen3, posiblemente ajustada para tareas de preguntas y respuestas multimodales o médicas (`multimedqa`), pero no hay ninguna información que lo confirme.
 
 El repositorio muestra 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que indica que no se han subido pesos o que el contenido no está disponible. No se ha publicado documentación técnica, benchmarks ni licencia, por lo que el modelo no puede ser evaluado ni utilizado de forma fiable en producción sin información adicional.
 
@@ -21,7 +21,7 @@ El repositorio muestra 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que indic
 
 ## Arquitectura y entrenamiento
 
-No se ha proporcionado información sobre la arquitectura del modelo. La model card es una plantilla generada automáticamente y todos los campos relevantes están marcados como `[More Information Needed]`. No se dispone de datos sobre el conjunto de entrenamiento, el procedimiento de ajuste ni si se aplicaron técnicas como RLHF o DPO. El único dato técnico disponible es el tag de HuggingFace que indica que el modelo es compatible con la librería `transformers` y que los pesos están en formato `safetensors`. No se puede confirmar la arquitectura subyacente (Transformer, MoE, SSM, etc.).
+No se ha proporcionado información sobre la arquitectura del modelo. La model card es una plantilla generada automáticamente y todos los campos relevantes están marcados como `[More Information Needed]`. No se dispone de datos sobre el conjunto de entrenamiento, el procedimiento de ajuste ni si se aplicaron técnicas como RLHF o DPO. El único dato técnico disponible es el tag de Hugging Face que indica que el modelo es compatible con la librería `transformers` y que los pesos están en formato `safetensors`. No se puede confirmar la arquitectura subyacente (Transformer, MoE, SSM, etc.).
 
 ## Capacidades
 
@@ -60,6 +60,6 @@ No se dispone de datos suficientes para comparar este modelo con alternativas. A
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/camiellia/qwen3b-multimedqa-random-seed42
+- Hugging Face: https://huggingface.co/camiellia/qwen3b-multimedqa-random-seed42
 - Repositorio relacionado (mismo autor, nombre similar): https://huggingface.co/camiellia/qwen-3b-multimedqa-c75b25-kcenter-raw
 - Repositorio de la familia Qwen3 en GitHub (referencia externa, no confirmada como base del modelo): https://github.com/QwenLM/Qwen3

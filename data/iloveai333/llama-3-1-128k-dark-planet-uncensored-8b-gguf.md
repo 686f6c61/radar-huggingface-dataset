@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-128k-Dark-Planet-Uncensored-8B-GGUF es una cuantización en formato GGUF de un modelo de lenguaje de 8.030 millones de parámetros derivado de la familia Llama 3.1, publicado por el usuario IloveAi333 en HuggingFace. Se trata de un merge (fusión) de tres modelos comunitarios de 8B —Stheno v3.2, Lumimaid 8B y Jamet 8B Blackroot— combinados mediante herramientas de mergekit, con pasos adicionales de "descensura" y re-masterización de los pesos fuente en precisión float32. El modelo está orientado explícitamente a escritura creativa, ficción, generación de tramas y roleplay, no a tareas de razonamiento técnico o código.
+Llama-3.1-128k-Dark-Planet-Uncensored-8B-GGUF es una cuantización en formato GGUF de un modelo de lenguaje de 8.030 millones de parámetros derivado de la familia Llama 3.1, publicado por el usuario IloveAi333 en Hugging Face. Se trata de un merge (fusión) de tres modelos comunitarios de 8B —Stheno v3.2, Lumimaid 8B y Jamet 8B Blackroot— combinados mediante herramientas de mergekit, con pasos adicionales de "descensura" y re-masterización de los pesos fuente en precisión float32. El modelo está orientado explícitamente a escritura creativa, ficción, generación de tramas y roleplay, no a tareas de razonamiento técnico o código.
 
 El modelo hereda la ventana de contexto de 128k tokens (131.072) de Llama 3.1 y declara un nivel de perplejidad inferior al de Meta Llama 3 Instruct según la model card, aunque no se aportan mediciones verificables. El repositorio ocupa 55,8 GB, lo que refleja la inclusión de múltiples niveles de cuantización, incluidas variantes de alta precisión y "max quants". La licencia declarada es Apache 2.0 y el único idioma soportado es el inglés.
 
@@ -84,7 +84,7 @@ La comparación directa con Llama 3.1 8B Instruct es la más relevante: mismo ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IloveAi333/Llama-3.1-128k-Dark-Planet-Uncensored-8B-GGUF
+- Hugging Face: https://huggingface.co/IloveAi333/Llama-3.1-128k-Dark-Planet-Uncensored-8B-GGUF
 - Modelo progenitor Stheno v3.2: https://huggingface.co/Sao10K/L3-8B-Stheno-v3.2
 - Modelo progenitor Lumimaid 8B: https://huggingface.co/NeverSleep/Llama-3-Lumimaid-8B-v0.1-OAS
 - Modelo progenitor Jamet 8B Blackroot: https://huggingface.co/Hastagaras/Jamet-8B-L3-MK.V-Blackroot

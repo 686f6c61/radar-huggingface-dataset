@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VikashSingh/wiekas es un repositorio de modelo publicado en HuggingFace por el usuario VikashSingh. La informacion disponible es minima: la model card se limita a un bloque de metadatos YAML que declara los idiomas ingles (en) e hindi (hi), sin texto descriptivo, sin arquitectura declarada, sin pipeline asignado y sin licencia especificada. No se documenta tamano de parametros, longitud de contexto, dataset de entrenamiento ni proceso de alineacion.
+VikashSingh/wiekas es un repositorio de modelo publicado en Hugging Face por el usuario VikashSingh. La informacion disponible es minima: la model card se limita a un bloque de metadatos YAML que declara los idiomas ingles (en) e hindi (hi), sin texto descriptivo, sin arquitectura declarada, sin pipeline asignado y sin licencia especificada. No se documenta tamano de parametros, longitud de contexto, dataset de entrenamiento ni proceso de alineacion.
 
 El repositorio acumula 0 descargas y 1 like en el momento de la consulta, y su fecha de creacion registrada es el 3 de octubre de 2026, con una unica actualizacion dos minutos despues. Estos indicios apuntan a un experimento personal o a una publicacion de prueba mas que a un modelo destinado a produccion o a evaluacion comparativa.
 
@@ -25,7 +25,7 @@ Dado que no existe informacion tecnica verificable, esta ficha se limita a regis
 
 No disponible. La model card del repositorio no incluye ninguna descripcion de arquitectura (transformer, MoE, SSM o hibrida), ni referencias a un paper, repositorio de codigo o informe tecnico. Tampoco se declara el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT.
 
-No hay informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, modos de razonamiento explicito, cuantizacion nativa) ni sobre el pipeline declarado en HuggingFace, que aparece como no disponible. En consecuencia, no es posible evaluar la naturaleza del entrenamiento ni reproducir el modelo a partir de la informacion publicada.
+No hay informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, modos de razonamiento explicito, cuantizacion nativa) ni sobre el pipeline declarado en Hugging Face, que aparece como no disponible. En consecuencia, no es posible evaluar la naturaleza del entrenamiento ni reproducir el modelo a partir de la informacion publicada.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ No es posible enumerar casos de uso fundamentados, porque no se ha documentado n
 - Atencion al cliente bilingue ingles-hindi: solo tendria sentido si se confirma que el modelo genera texto coherente en ambos idiomas; actualmente no hay evidencia de ello.
 - Traduccion en/hi en entornos internos: requiere verificar calidad de traduccion, que no esta documentada ni evaluada.
 - Prototipado rapido en cuadernos de experimentacion: el modelo podria servir como sujeto de pruebas de carga o de integracion, sin asumir calidad de salida.
-- Investigacion sobre modelos de autor individual: util como caso de estudio de publicaciones minimas en HuggingFace.
+- Investigacion sobre modelos de autor individual: util como caso de estudio de publicaciones minimas en Hugging Face.
 - Pruebas de herramientas de inferencia (llama.cpp, vLLM, Transformers): permitiria validar pipelines de despliegue sobre un checkpoint real, siempre que los pesos sean cargables.
 - Docencia o formacion: no recomendable sin licencia definida ni documentacion tecnica.
 
@@ -78,7 +78,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VikashSingh/wiekas
+- Repositorio en Hugging Face: https://huggingface.co/VikashSingh/wiekas
 - Perfil de GitHub con posible relacion por el alias "Wiekas": https://github.com/vikashs
 - Perfil de GitHub VikashCDS: https://github.com/VikashCDS/
 - Sitio personal de un investigador homonimo (no confirmado como autor): https://vikash-singh.me/

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LunarLander es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, publicado en HuggingFace por el usuario chitransh001 mediante la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política entrenada para controlar un módulo lunar en un simulador físico bidimensional, con el objetivo de aterrizar de forma segura en una plataforma designada.
+LunarLander es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, publicado en Hugging Face por el usuario chitransh001 mediante la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política entrenada para controlar un módulo lunar en un simulador físico bidimensional, con el objetivo de aterrizar de forma segura en una plataforma designada.
 
 El modelo resuelve un problema clásico de control continuo/discreto con recompensa densa y escasa mezclada: el agente debe aprender a encender los propulsores principal y laterales para reducir velocidad, mantener orientación y contactar con la zona de aterrizaje sin estrellarse. Es relevante como ejemplo reproducible de entrenamiento PPO con stable-baselines3 y como punto de partida para experimentos docentes o de investigación en RL, aunque su alcance práctico está limitado estrictamente al entorno LunarLander-v3.
 
-El repositorio tiene un tamaño de 0.0 GB según los metadatos de HuggingFace, lo que sugiere que los pesos pueden no estar efectivamente subidos o que el tamaño reportado es inferior a la precisión de medida de la plataforma. No se dispone de información sobre arquitectura de red, número de parámetros, contexto (no aplica) ni licencia.
+El repositorio tiene un tamaño de 0.0 GB según los metadatos de Hugging Face, lo que sugiere que los pesos pueden no estar efectivamente subidos o que el tamaño reportado es inferior a la precisión de medida de la plataforma. No se dispone de información sobre arquitectura de red, número de parámetros, contexto (no aplica) ni licencia.
 
 ## Especificaciones tecnicas
 
@@ -42,13 +42,13 @@ El entorno LunarLander-v3 es un simulador de aterrizaje con observaciones contin
 - Docencia de aprendizaje por refuerzo: el agente sirve como ejemplo funcional de un pipeline PPO completo con stable-baselines3, permitiendo a estudiantes cargar los pesos, evaluar la política y comparar con sus propios entrenamientos.
 - Reproducción de experimentos: investigadores pueden usar el agente como línea base para comparar variantes de PPO, cambios en recompensas o modificaciones del entorno LunarLander-v3.
 - Benchmark de algoritmos de RL: el resultado declarado (mean_reward 230.38 ± 70.63) permite contrastar el rendimiento de nuevos algoritmos sobre el mismo entorno y presupuesto de entrenamiento.
-- Pruebas de infraestructura de RL: validar pipelines de entrenamiento, evaluación y despliegue con stable-baselines3 y el Hub de HuggingFace sin necesidad de entrenar desde cero.
+- Pruebas de infraestructura de RL: validar pipelines de entrenamiento, evaluación y despliegue con stable-baselines3 y el Hub de Hugging Face sin necesidad de entrenar desde cero.
 - Demostraciones interactivas: integrar el agente en un visualizador de Gymnasium para mostrar el comportamiento de una política entrenada en un entorno físico simulado.
 - Estudio de estabilidad de políticas: analizar la varianza del retorno (desviación de 70.63 sobre media de 230.38) para estudiar la robustez de PPO en entornos con recompensas ruidosas.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados por HuggingFace, `verified: false`):
+Resultados declarados por el autor en la model card (no verificados por Hugging Face, `verified: false`):
 
 | Algoritmo | Entorno | Metrica | Valor |
 |---|---|---|---|
@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| chitransh001/LunarLander | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace |
+| chitransh001/LunarLander | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face |
 | Agentes PPO de referencia de stable-baselines3 | PPO | LunarLander-v3 | no disponible | no aplica | MIT (librería) | GitHub / RL Zoo |
 | Agentes DQN sobre LunarLander | DQN | LunarLander-v3 | no disponible | no aplica | MIT (librería) | RL Zoo |
 
@@ -87,7 +87,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- [HuggingFace: chitransh001/LunarLander](https://huggingface.co/chitransh001/LunarLander)
+- [Hugging Face: chitransh001/LunarLander](https://huggingface.co/chitransh001/LunarLander)
 - [stable-baselines3 (GitHub)](https://github.com/DLR-RM/stable-baselines3)
 - [huggingface_sb3 (GitHub)](https://github.com/huggingface/huggingface_sb3)
 - [Gymnasium LunarLander-v3 (documentación)](https://gymnasium.farama.org/environments/box2d/lunar_lander/)

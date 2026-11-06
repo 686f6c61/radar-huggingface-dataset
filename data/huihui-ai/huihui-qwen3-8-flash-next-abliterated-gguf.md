@@ -64,8 +64,8 @@ No se dispone de informacion suficiente para una comparativa detallada con model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.8-Flash-Next | 176.943.899.520 | 262144 | qwen-community-1.0 | HuggingFace (safetensors) |
-| Huihui-Qwen3.8-Flash-Next-abliterated-GGUF | 176.943.899.520 | 262144 | qwen-community-1.0 | HuggingFace (GGUF) |
+| Qwen/Qwen3.8-Flash-Next | 176.943.899.520 | 262144 | qwen-community-1.0 | Hugging Face (safetensors) |
+| Huihui-Qwen3.8-Flash-Next-abliterated-GGUF | 176.943.899.520 | 262144 | qwen-community-1.0 | Hugging Face (GGUF) |
 
 La diferencia principal es la eliminacion de los filtros de seguridad mediante abliteracion. No se dispone de benchmarks que comparen el rendimiento de ambos modelos.
 
@@ -82,10 +82,10 @@ La diferencia principal es la eliminacion de los filtros de seguridad mediante a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GGUFs de unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Repositorio de abliteracion: https://github.com/Sumandora/remove-refusals-with-transformers
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Perfil de huihui-ai en Ollama: https://ollama.com/huihui_ai
-- Perfil de huihui-ai en HuggingFace: https://huggingface.co/huihui-ai
+- Perfil de huihui-ai en Hugging Face: https://huggingface.co/huihui-ai

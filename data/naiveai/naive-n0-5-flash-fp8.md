@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Naive-N0.5-Flash es un modelo de lenguaje de pesos abiertos desarrollado por NaiveAI, presentado como un MoE de 309.000 millones de parametros totales con 15.500 millones de parametros activos por token. Esta diseñado especificamente para tareas de programacion e I+D en inteligencia artificial, y su rasgo mas distintivo es una ventana de contexto nativa de 1 millon de tokens construida sin capas de atencion completa: toda la red es local (Sliding-Window Attention) o dispersa (DeepSeek Sparse Attention). La version publicada en HuggingFace, Naive-N0.5-Flash-FP8, distribuye los pesos cuantizados en FP8, lo que explica el tamaño del repositorio (315,1 GB).
+Naive-N0.5-Flash es un modelo de lenguaje de pesos abiertos desarrollado por NaiveAI, presentado como un MoE de 309.000 millones de parametros totales con 15.500 millones de parametros activos por token. Esta diseñado especificamente para tareas de programacion e I+D en inteligencia artificial, y su rasgo mas distintivo es una ventana de contexto nativa de 1 millon de tokens construida sin capas de atencion completa: toda la red es local (Sliding-Window Attention) o dispersa (DeepSeek Sparse Attention). La version publicada en Hugging Face, Naive-N0.5-Flash-FP8, distribuye los pesos cuantizados en FP8, lo que explica el tamaño del repositorio (315,1 GB).
 
 El modelo parte del base MiMo-V2.5 y sustituye sus capas de atencion global por un esquema hibrido SWA–DSA con GQA de cuatro grupos KV, con una composicion de 39 capas SWA y 9 capas DSA sobre un total de 48 capas transformer. Es relevante ahora porque combina tres tendencias activas en 2026: arquitecturas MoE de activacion dispersa, atencion eficiente para contextos de un millon de tokens y despliegue bajo licencia MIT con API de pago asociada.
 
@@ -82,7 +82,7 @@ Modelos de referencia citados en la comparativa del autor (sin cifras extraibles
 | Naive-N0.5-Flash | 309B totales / 15,5B activos | 1M nativo | Hibrida SWA–DSA, sin atencion completa | MIT | Pesos abiertos (FP8) y API |
 | MiMo-V2.5 (base) | no disponible | no disponible | Atencion global estandar (base del modelo) | no disponible | no disponible |
 | GLM-5.3 / GLM-5.3-Flash | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Kimi-K3 | no disponible | no disponible | no disponible | no disponible | Pesos publicados en HuggingFace |
+| Kimi-K3 | no disponible | no disponible | no disponible | no disponible | Pesos publicados en Hugging Face |
 | Qwen-3.8-Max | no disponible | no disponible | no disponible | no disponible | API/Blog |
 | DeepSeek-V4.1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,8 +102,8 @@ No se dispone de especificaciones numericas de los modelos de referencia en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaiveAI/Naive-N0.5-Flash-FP8
-- Modelo principal en HuggingFace: https://huggingface.co/NaiveAI/Naive-N0.5-Flash
+- Modelo en Hugging Face: https://huggingface.co/NaiveAI/Naive-N0.5-Flash-FP8
+- Modelo principal en Hugging Face: https://huggingface.co/NaiveAI/Naive-N0.5-Flash
 - Pagina oficial: https://naive.ai/en/
 - Repositorio GitHub: https://github.com/NaiveAI-Labs/Naive-N0.5-Flash/tree/main
 - README de vocabulario (GitHub): https://github.com/NaiveAI-Labs/Naive-N0.5-Flash/blob/main/vocab.README.md

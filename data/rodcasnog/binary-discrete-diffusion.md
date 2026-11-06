@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Binary Discrete Diffusion es una familia de modelos de lenguaje basados en difusion discreta para texto, desarrollada por Rodrigo Casado Noguerales junto con Dimitri von Rütte, Bernhard Schölkopf, Thomas Hofmann y Aran Raoufi, y publicada en el articulo arXiv 2610.28543. El repositorio de HuggingFace contiene un diffusion transformer por cada combinacion de corpus y kernel de ruido, entrenados con el codigo del proyecto binary-discrete-diffusion en JAX/Flax. El modelo aborda la generacion de texto mediante difusion sobre tokens discretos en lugar de decodificacion autorregresiva, con el objetivo declarado de mejorar tareas de logica y planificacion.
+Binary Discrete Diffusion es una familia de modelos de lenguaje basados en difusion discreta para texto, desarrollada por Rodrigo Casado Noguerales junto con Dimitri von Rütte, Bernhard Schölkopf, Thomas Hofmann y Aran Raoufi, y publicada en el articulo arXiv 2610.28543. El repositorio de Hugging Face contiene un diffusion transformer por cada combinacion de corpus y kernel de ruido, entrenados con el codigo del proyecto binary-discrete-diffusion en JAX/Flax. El modelo aborda la generacion de texto mediante difusion sobre tokens discretos en lugar de decodificacion autorregresiva, con el objetivo declarado de mejorar tareas de logica y planificacion.
 
 El repositorio incluye tres corpus (Text8 a nivel de caracter, TinyStories y OpenWebText con tokenizadores BPE de 1k) y cuatro kernels de ruido (masked, uniform, binary_symmetric y binary_absorbing), lo que da hasta doce directorios de ejecucion independientes. Cada directorio contiene la configuracion compuesta de Hydra y los parametros EMA del paso final del entrenamiento. El tamano total del repositorio es de 6.0 GB, lo que sugiere modelos de escala moderada, aunque la model card no desglosa el numero de parametros por checkpoint.
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rodcasnog/binary-discrete-diffusion
+- Hugging Face: https://huggingface.co/rodcasnog/binary-discrete-diffusion
 - Articulo arXiv: https://arxiv.org/abs/2610.28543
 - Repositorio de codigo: https://github.com/rodcasnog/binary-discrete-diffusion
 - Tokenizador TinyStories: https://huggingface.co/rodcasnog/tinystories-bpe-1k

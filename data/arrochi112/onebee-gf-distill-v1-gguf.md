@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/arrochi112/onebee-gf-distill-v1-gguf
+- Repositorio del modelo en Hugging Face: https://huggingface.co/arrochi112/onebee-gf-distill-v1-gguf
 - Checkpoint fuente (safetensors): https://huggingface.co/arrochi112/onebee-gf-distill-v1
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Version GGUF pre-destilacion: https://huggingface.co/arrochi112/onebee-gf-dpo-v1-scale-gguf

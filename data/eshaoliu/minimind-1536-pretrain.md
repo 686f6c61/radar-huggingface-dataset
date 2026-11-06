@@ -18,7 +18,7 @@ Su relevancia actual es acotada y muy especifica: se trata de un artefacto de in
 | Longitud de contexto | Hasta 32K tokens (RoPE, theta = 1e6) |
 | Tipos de cuantizacion | No se publican GGUF cuantizados; por arquitectura Qwen3 es convertible a GGUF/AWQ/GPTQ, pero no hay artefactos oficiales |
 | Idiomas soportados | Ingles (tokenizer BPE en ingles, 32768 entradas) |
-| Licencia | Apache 2.0 (segun el repositorio ultra-minimind); la ficha de HuggingFace no declara licencia explicitamente en los metadatos |
+| Licencia | Apache 2.0 (segun el repositorio ultra-minimind); la ficha de Hugging Face no declara licencia explicitamente en los metadatos |
 | Formato de pesos | safetensors (fp16, ~1.9 GB), mas `config.json`, `generation_config.json` y ficheros de tokenizer |
 | Capas / dimension oculta | 32 / 1536 |
 | Cabezas de atencion | 8 cabezas, head_dim = 192, GQA con 4 cabezas KV, sin bias, qk-norm |
@@ -96,7 +96,7 @@ Las cifras de rendimiento comparativo entre estos modelos no estan disponibles e
 - Rendimiento muy bajo en tareas de razonamiento evaluado en formato few-shot (1.59 % en GSM8K 4-shot), coherente con su condicion de checkpoint sin ajuste.
 - Cobertura linguistica limitada al ingles; el tokenizer BPE esta entrenado sobre este idioma y el corpus es en ingles, por lo que su uso en castellano u otros idiomas producira tokenizacion ineficiente y resultados pobres.
 - Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o alineacion; el corpus Nemotron-CC-Math-v1 esta centrado en matematicas y no se ha filtrado especificamente para sesgos sociales.
-- Licencia: el autor indica Apache 2.0 remitiendo al repositorio ultra-minimind, pero la ficha de HuggingFace no declara licencia en los metadatos, por lo que conviene verificar el fichero LICENSE antes de un uso comercial.
+- Licencia: el autor indica Apache 2.0 remitiendo al repositorio ultra-minimind, pero la ficha de Hugging Face no declara licencia en los metadatos, por lo que conviene verificar el fichero LICENSE antes de un uso comercial.
 - Los datos de evaluacion proceden de un unico benchmark (GSM8K) y de checkpoints intermedios, sin validacion externa.
 - Ausencia de pesos cuantizados oficiales: cualquier cuantizacion hay que generarla por cuenta propia y validar su calidad.
 - Fecha de creacion del repositorio registrada como 2026-09-11, posterior a la fecha habitual de consulta; conviene contrastar la vigencia del artefacto.
@@ -104,7 +104,7 @@ Las cifras de rendimiento comparativo entre estos modelos no estan disponibles e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eshaoliu/minimind-1536-pretrain
+- Modelo en Hugging Face: https://huggingface.co/eshaoliu/minimind-1536-pretrain
 - Repositorio del proyecto ultra-minimind: https://github.com/eshaoliu/ultra-minimind
 - Corpus de entrenamiento Nemotron-CC-Math-v1: https://huggingface.co/nvidia/Nemotron-CC-Math-v1
 - Registro de experimentos en SwanLab: `@eshaoliu/MiniMind-Pretrain` (referenciado en la model card; no se proporciona URL directa)

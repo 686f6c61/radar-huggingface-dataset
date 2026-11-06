@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rajeshwari-Chanda/bloom-560m_wanda_0.6 es una variante podada del modelo bigscience/bloom-560m, publicado por el usuario Rajeshwari-Chanda en HuggingFace. Se trata de un checkpoint derivado al que se le ha aplicado un proceso de poda estructural mediante la tecnica Wanda (Pruning by Weights and Activations), y el sufijo "0.6" hace referencia a un nivel de esparsidad del 60 por ciento de los pesos. El modelo conserva la arquitectura original de BLOOM, un transformer autoregresivo de tipo decoder-only disenado para prediccion del siguiente token, con 559.214.592 parametros en su forma densa y pesos en formato safetensors (tamano del repositorio de 1,1 GB).
+Rajeshwari-Chanda/bloom-560m_wanda_0.6 es una variante podada del modelo bigscience/bloom-560m, publicado por el usuario Rajeshwari-Chanda en Hugging Face. Se trata de un checkpoint derivado al que se le ha aplicado un proceso de poda estructural mediante la tecnica Wanda (Pruning by Weights and Activations), y el sufijo "0.6" hace referencia a un nivel de esparsidad del 60 por ciento de los pesos. El modelo conserva la arquitectura original de BLOOM, un transformer autoregresivo de tipo decoder-only disenado para prediccion del siguiente token, con 559.214.592 parametros en su forma densa y pesos en formato safetensors (tamano del repositorio de 1,1 GB).
 
 La relevancia de este checkpoint es fundamentalmente experimental: sirve para evaluar el impacto de la poda Wanda sobre un modelo multilingue pequeno, comparandolo con la version completa y con la variante hermana bloom-560m_wanda_0.9, que aplica una esparsidad del 90 por ciento. La model card esta generada automaticamente y no aporta informacion adicional sobre el proceso de poda, los datos de calibracion ni los resultados obtenidos.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Esparsidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rajeshwari-Chanda/bloom-560m_wanda_0.6 | 559.214.592 (densos) | 2048 | 60 por ciento | No disponible | HuggingFace |
-| Rajeshwari-Chanda/bloom-560m_wanda_0.9 | No disponible | 2048 (heredado) | 90 por ciento | No disponible | HuggingFace |
-| bigscience/bloom-560m | 559.214.592 | 2048 | 0 por ciento (denso) | BigScience BLOOM RAIL 1.0 | HuggingFace |
-| bigscience/bloom-1b1 | Aproximadamente 1.100 millones | 2048 | 0 por ciento (denso) | BigScience BLOOM RAIL 1.0 | HuggingFace |
+| Rajeshwari-Chanda/bloom-560m_wanda_0.6 | 559.214.592 (densos) | 2048 | 60 por ciento | No disponible | Hugging Face |
+| Rajeshwari-Chanda/bloom-560m_wanda_0.9 | No disponible | 2048 (heredado) | 90 por ciento | No disponible | Hugging Face |
+| bigscience/bloom-560m | 559.214.592 | 2048 | 0 por ciento (denso) | BigScience BLOOM RAIL 1.0 | Hugging Face |
+| bigscience/bloom-1b1 | Aproximadamente 1.100 millones | 2048 | 0 por ciento (denso) | BigScience BLOOM RAIL 1.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_wanda_0.6
+- Hugging Face del modelo: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_wanda_0.6
 - Variante hermana con esparsidad 0.9: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_wanda_0.9
 - Modelo base bigscience/bloom-560m: https://huggingface.co/bigscience/bloom-560m
 - Documentacion de BLOOM en transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/bloom.md

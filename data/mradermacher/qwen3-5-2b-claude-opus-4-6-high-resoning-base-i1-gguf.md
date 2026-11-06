@@ -81,7 +81,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-2B-Claude-Opus-4.6-high-resoning-Base-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-2B-Claude-Opus-4.6-high-resoning-Base-i1-GGUF
 - Modelo base: https://huggingface.co/rikunarita/Qwen3.5-2B-Claude-Opus-4.6-high-resoning-Base
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Qwen3.5-2B-Claude-Opus-4.6-high-resoning-Base-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.5-2B-Claude-Opus-4.6-high-resoning-Base-i1-GGUF

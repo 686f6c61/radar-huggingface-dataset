@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario shujle cuyo nombre indica explícitamente que se trata de una prueba ("TestRepo"). Las etiquetas del repositorio lo clasifican como un modelo basado en BERT con pipeline de `feature-extraction`, librería `transformers` y framework PyTorch, publicado bajo licencia MIT. El repositorio no registra descargas ni "likes" y su tamano es de 0,0 GB, lo que sugiere que no contiene pesos ni ficheros de modelo descargables.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario shujle cuyo nombre indica explícitamente que se trata de una prueba ("TestRepo"). Las etiquetas del repositorio lo clasifican como un modelo basado en BERT con pipeline de `feature-extraction`, librería `transformers` y framework PyTorch, publicado bajo licencia MIT. El repositorio no registra descargas ni "likes" y su tamano es de 0,0 GB, lo que sugiere que no contiene pesos ni ficheros de modelo descargables.
 
 La model card incluida es una plantilla genérica y no una ficha real: describe un hipotético modelo con mejoras de razonamiento, uso de tokens de "thinking" y soporte de function calling, pero no aporta identificadores de arquitectura, número de parámetros, longitud de contexto ni composición del dataset. Además, las capacidades que declara (razonamiento matemático, generación de código, decodificación extendida con 23K tokens por pregunta) son incompatibles con un modelo BERT de extracción de características, lo que refuerza la hipótesis de que el contenido es un marcador de posición.
 
@@ -107,6 +107,6 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shujle/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/shujle/MyAwesomeModel-TestRepo
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante. Los resultados devueltos corresponden a la plataforma odontológica "My iTero" (myitero.com y subdominios asociados) y no guardan relación con el modelo.
 - Paper, blog, repositorio de código o demo oficial: no disponible.

@@ -94,7 +94,7 @@ La comparativa relevante no es frente a modelos de propósito general, sino inte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SpeedAI-Lab/DAMI
+- Hugging Face: https://huggingface.co/SpeedAI-Lab/DAMI
 - Paper (arXiv): https://arxiv.org/abs/2610.41994
 - Repositorio de código: https://github.com/SpeedAI-Lab/DAMI
 - Página del proyecto: https://speedai.com/research/dami

@@ -67,9 +67,9 @@ Estos valores provienen de la validación cruzada agrupada por edificio (6-fold)
 
 | Modelo | Enfoque | RUL | Planificador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BatterySwapAI2026-JP2W (este) | Ensemble GBM + física + blend logit | Multi-horizonte probabilístico | Búsqueda local multi-start con costes exactos | MIT | HuggingFace |
+| BatterySwapAI2026-JP2W (este) | Ensemble GBM + física + blend logit | Multi-horizonte probabilístico | Búsqueda local multi-start con costes exactos | MIT | Hugging Face |
 | ZRPATeam/BatterySwapAI-2026 | LightGBM con calibración por tipo de edificio e intervalos de confianza al 90% | Punto estimado con intervalos | OR-Tools VRP para rutas | no especificada | GitHub |
-| BatterySwapAI2026-Example (oficial) | Modelo de ejemplo del desafío | no disponible | no disponible | no disponible | HuggingFace |
+| BatterySwapAI2026-Example (oficial) | Modelo de ejemplo del desafío | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa se basa en la información pública de los repositorios. El modelo de ZRPATeam utiliza LightGBM y OR-Tools, mientras que el presente modelo combina GBM con un componente físico y un planificador propio. No hay datos de rendimiento comparables publicados entre ambos.
 
@@ -84,8 +84,8 @@ La comparativa se basa en la información pública de los repositorios. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/batteryswapaichallenge/BatterySwapAI2026-JP2W
-- Organización del desafío en HuggingFace: https://huggingface.co/batteryswapaichallenge
+- Modelo en Hugging Face: https://huggingface.co/batteryswapaichallenge/BatterySwapAI2026-JP2W
+- Organización del desafío en Hugging Face: https://huggingface.co/batteryswapaichallenge
 - Página oficial del desafío (NORA): https://www.nora.ai/competitions/batteryswapai/batteryswapai2026.html
 - FAQ del desafío: https://www.nora.ai/competitions/batteryswapai/batteryswapai-faq.html
 - Repositorio de ZRPATeam (enfoque alternativo): https://github.com/ZRPATeam/BatterySwapAI-2026/

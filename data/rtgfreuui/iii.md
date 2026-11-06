@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rtgfreuui/iii` es un modelo publicado en HuggingFace por el usuario `rtgfreuui` (Florence Okojie). La model card asociada no contiene información técnica alguna, únicamente declara la licencia Apache 2.0. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas o pipeline de uso. El modelo tiene cero descargas y cero likes, y fue creado el 26 de agosto de 2026. Dada la ausencia total de documentación, no es posible determinar su propósito, capacidades ni requisitos de despliegue. Su relevancia actual es nula desde un punto de vista técnico, y se recomienda precaución a cualquier desarrollador que considere utilizarlo sin información adicional.
+El modelo `rtgfreuui/iii` es un modelo publicado en Hugging Face por el usuario `rtgfreuui` (Florence Okojie). La model card asociada no contiene información técnica alguna, únicamente declara la licencia Apache 2.0. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas o pipeline de uso. El modelo tiene cero descargas y cero likes, y fue creado el 26 de agosto de 2026. Dada la ausencia total de documentación, no es posible determinar su propósito, capacidades ni requisitos de despliegue. Su relevancia actual es nula desde un punto de vista técnico, y se recomienda precaución a cualquier desarrollador que considere utilizarlo sin información adicional.
 
 ## Especificaciones tecnicas
 
@@ -51,6 +51,6 @@ No disponible. No hay datos suficientes para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rtgfreuui/iii
+- Modelo en Hugging Face: https://huggingface.co/rtgfreuui/iii
 - Perfil del autor: https://huggingface.co/rtgfreuui
 - Otro modelo del mismo autor: https://huggingface.co/rtgfreuui/Florence_Okojie

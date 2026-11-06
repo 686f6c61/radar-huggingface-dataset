@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Quill poetry v6 GGUF es un modelo de generacion de texto orientado especificamente a la escritura de poesia y letras liricas, publicado por el usuario GLASSEYE en HuggingFace bajo el identificador GLASSEYE/quill-poetry-v6-gguf. La model card es extremadamente escueta: se limita a la etiqueta "anti-collapse lyric" y a la instruccion de ejecucion `ollama run quill`. El repositorio se distribuye exclusivamente en formato GGUF y esta etiquetado como conversacional, con licencia Apache 2.0.
+Quill poetry v6 GGUF es un modelo de generacion de texto orientado especificamente a la escritura de poesia y letras liricas, publicado por el usuario GLASSEYE en Hugging Face bajo el identificador GLASSEYE/quill-poetry-v6-gguf. La model card es extremadamente escueta: se limita a la etiqueta "anti-collapse lyric" y a la instruccion de ejecucion `ollama run quill`. El repositorio se distribuye exclusivamente en formato GGUF y esta etiquetado como conversacional, con licencia Apache 2.0.
 
-El dato tecnico mas relevante disponible es el recuento de parametros reportado por HuggingFace a partir de los metadatos de safetensors: 7.248.023.552 parametros, es decir, aproximadamente 7,25 mil millones. Se trata por tanto de un modelo de la clase 7B, un tamano que permite inferencia en GPU de consumo con cuantizacion agresiva. El tamano del repositorio (4,4 GB) es coherente con una distribucion cuantizada de esos 7.250 millones de parametros, en el entorno de 4-5 bits por peso, aunque el autor no especifica el nivel de cuantizacion exacto.
+El dato tecnico mas relevante disponible es el recuento de parametros reportado por Hugging Face a partir de los metadatos de safetensors: 7.248.023.552 parametros, es decir, aproximadamente 7,25 mil millones. Se trata por tanto de un modelo de la clase 7B, un tamano que permite inferencia en GPU de consumo con cuantizacion agresiva. El tamano del repositorio (4,4 GB) es coherente con una distribucion cuantizada de esos 7.250 millones de parametros, en el entorno de 4-5 bits por peso, aunque el autor no especifica el nivel de cuantizacion exacto.
 
 La relevancia de este modelo es limitada y debe contextualizarse: en la fecha de consulta acumula 0 descargas y 0 "likes", no se ha publicado informacion sobre la arquitectura, el modelo base, los datos de entrenamiento ni resultados de benchmarks, y no existe documentacion adicional en la web. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo. Cualquier evaluacion seria debe partir de una prueba directa del artefacto, no de la documentacion disponible.
 
@@ -13,7 +13,7 @@ La relevancia de este modelo es limitada y debe contextualizarse: en la fecha de
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 7.248.023.552 (aprox. 7,25 B), dato reportado por HuggingFace desde safetensors |
+| Parametros totales | 7.248.023.552 (aprox. 7,25 B), dato reportado por Hugging Face desde safetensors |
 | Parametros activos | no disponible (no hay indicios de que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio es GGUF de 4,4 GB, compatible con el ecosistema llama.cpp/Ollama |
@@ -41,7 +41,7 @@ Los unicos indicios indirectos son: (1) el recuento de 7,25 B de parametros, que
 
 - Generacion de letras de canciones: el modelo esta ajustado al dominio lirico y puede emplearse para producir borradores de estrofas y estribillos a partir de una premisa tematica, con revision humana posterior. Es el caso de uso que la propia nomenclatura del modelo sugiere.
 - Escritura de poesia por encargo o tematica: util como generador de primeras versiones de poemas sobre un tema o tono concretos, que despues se editan. La etiqueta "anti-collapse" indica que el autor priorizo la diversidad de la salida, un aspecto critico cuando se generan varias estrofas seguidas.
-- Asistencia creativa en talleres literarios: uso como interlocutor para explorar variantes de un verso o proponer imagenes alternativas, integrándolo en una interfaz conversacional compatible con la API de HuggingFace Endpoints.
+- Asistencia creativa en talleres literarios: uso como interlocutor para explorar variantes de un verso o proponer imagenes alternativas, integrándolo en una interfaz conversacional compatible con la API de Hugging Face Endpoints.
 - Prototipado de aplicaciones de escritura creativa: al ser un GGUF de 4,4 GB, se puede desplegar en una estacion de trabajo o en un portatil con GPU modesta para validar un producto de generacion de contenido lirico antes de invertir en infraestructura mayor.
 - Generacion de contenido para redes y marketing con tono poetico: produccion de eslóganes rimados o textos breves de tono emotivo, siempre con supervision editorial, dado el riesgo de salidas inadecuadas.
 - Investigacion sobre diversidad en generacion de texto: la etiqueta "anti-collapse" lo convierte en un candidato para estudiar tecnicas de mitigacion de la degradacion de la salida en modelos pequenos, comparando metricas de diversidad lexica frente a un 7B generico.
@@ -89,5 +89,5 @@ No existen modelos comparables especificos de poesia lirica de 7B con datos publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GLASSEYE/quill-poetry-v6-gguf
+- Hugging Face: https://huggingface.co/GLASSEYE/quill-poetry-v6-gguf
 - La busqueda web realizada no devolvio ningun enlace relevante al modelo (paper, blog, repositorio o demo). No se dispone de enlaces adicionales.

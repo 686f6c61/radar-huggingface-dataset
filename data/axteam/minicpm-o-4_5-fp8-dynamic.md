@@ -17,7 +17,7 @@ Su relevancia práctica es de infraestructura: permite ejecutar un modelo ómniu
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP8 dinámico W8A8: pesos FP8 E4M3 con escala por canal, activaciones FP8 dinámicas por token; formato compressed-tensors `FP8_DYNAMIC`; sin calibración (data-free); visión, audio, TTS, embeddings, LM head y RMSNorms se mantienen en BF16 |
-| Idiomas soportados | no disponibles en la información de HuggingFace; la validación de calidad de la cuantización se realizó en inglés y coreano |
+| Idiomas soportados | no disponibles en la información de Hugging Face; la validación de calidad de la cuantización se realizó en inglés y coreano |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors con compressed-tensors (FP8_DYNAMIC); el repositorio incluye además artefactos ONNX; no se ofrece GGUF |
 
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/MiniCPM-o-4_5-FP8-dynamic (esta ficha) | 9,37B | no disponible | Visión, audio, texto, TTS | Apache-2.0 | Pesos FP8 en HuggingFace, formato compressed-tensors |
-| openbmb/MiniCPM-o-4_5 (base) | 9,37B | no disponible | Visión, audio, texto, TTS | Apache-2.0 | Pesos BF16 en HuggingFace; ~18,7 GB |
-| openbmb/MiniCPM-V-4_5 | no disponible | no disponible | Visión y texto (sin audio ni TTS) | no disponible en la información proporcionada | Pesos en HuggingFace |
-| Qwen2.5-Omni-7B | ~7B (referencia externa) | no disponible | Visión, audio, texto, voz | no disponible en la información proporcionada | Pesos en HuggingFace |
+| axteam/MiniCPM-o-4_5-FP8-dynamic (esta ficha) | 9,37B | no disponible | Visión, audio, texto, TTS | Apache-2.0 | Pesos FP8 en Hugging Face, formato compressed-tensors |
+| openbmb/MiniCPM-o-4_5 (base) | 9,37B | no disponible | Visión, audio, texto, TTS | Apache-2.0 | Pesos BF16 en Hugging Face; ~18,7 GB |
+| openbmb/MiniCPM-V-4_5 | no disponible | no disponible | Visión y texto (sin audio ni TTS) | no disponible en la información proporcionada | Pesos en Hugging Face |
+| Qwen2.5-Omni-7B | ~7B (referencia externa) | no disponible | Visión, audio, texto, voz | no disponible en la información proporcionada | Pesos en Hugging Face |
 
 La comparación relevante para esta ficha es la del par base/cuantizado: misma arquitectura, mismo tokenizador y misma licencia, con una reducción de peso en disco de aproximadamente el 44 % (de ~18,7 GB a ~10,4 GB) a cambio de cuantizar solo las proyecciones de atención y MLP del LM. Frente a MiniCPM-V 4.5, la variante «o» añade audio y TTS; frente a alternativas ómnium de otros fabricantes, la información disponible no permite comparar rendimiento con cifras.
 
 ## Limitaciones y advertencias
 
 - La cuantización FP8 introduce una pérdida de precisión no cuantificada públicamente: el autor no publica los valores de perplejidad ni el acuerdo top-1 obtenidos frente al BF16, por lo que el impacto real en calidad debe medirse en el caso de uso concreto.
-- La validación de calidad declarada se limita a inglés y coreano; el comportamiento en castellano u otros idiomas no está verificado. Los idiomas soportados no constan en la información de HuggingFace.
+- La validación de calidad declarada se limita a inglés y coreano; el comportamiento en castellano u otros idiomas no está verificado. Los idiomas soportados no constan en la información de Hugging Face.
 - Riesgo de alucinación inherente a un modelo de ~9B en tareas de razonamiento y en descripción de imágenes o audio ambiguos; sin benchmarks publicados no es posible acotar la magnitud.
 - Longitud de contexto no disponible: es un parámetro crítico para planificar despliegues de vídeo o audio largos y debe confirmarse en la documentación del modelo base antes de diseñar la arquitectura.
 - El modelo se distribuye para vLLM con compressed-tensors; no hay GGUF, de modo que las rutas de despliegue en CPU o en entornos con llama.cpp no están cubiertas.
@@ -86,7 +86,7 @@ La comparación relevante para esta ficha es la del par base/cuantizado: misma a
 
 ## Enlaces
 
-- [axteam/MiniCPM-o-4_5-FP8-dynamic en HuggingFace](https://huggingface.co/axteam/MiniCPM-o-4_5-FP8-dynamic)
+- [axteam/MiniCPM-o-4_5-FP8-dynamic en Hugging Face](https://huggingface.co/axteam/MiniCPM-o-4_5-FP8-dynamic)
 - [openbmb/MiniCPM-o-4_5 (modelo base)](https://huggingface.co/openbmb/MiniCPM-o-4_5)
 - [openbmb/MiniCPM-V-4_5 (variante solo visión)](https://huggingface.co/openbmb/MiniCPM-V-4_5)
 - [MiniCPM-o 4.5: Omni-Modal Interaction AI (Emergent Mind)](https://www.emergentmind.com/topics/minicpm-o-4-5)

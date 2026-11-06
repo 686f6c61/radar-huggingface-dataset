@@ -33,7 +33,7 @@ En cuanto al proceso de cuantizacion de este repositorio concreto, se ha convert
 - Entrada multimodal texto-imagen (pipeline `image-text-to-text`), orientada a generar texto a partir de una peticion y, potencialmente, imagenes de referencia.
 - Generacion de texto en ingles; no se documenta soporte multilingue.
 - Encaje en flujos de generacion y edicion de imagenes como etapa de preprocesado del prompt.
-- Ejecucion local mediante `llama.cpp` (CLI y servidor) y descarga directa de pesos GGUF desde HuggingFace.
+- Ejecucion local mediante `llama.cpp` (CLI y servidor) y descarga directa de pesos GGUF desde Hugging Face.
 - No se documenta soporte explicito de tool calling, function calling ni razonamiento multi-paso con agentes.
 
 ## Casos de uso
@@ -82,7 +82,7 @@ Nota: el modelo base `flux-3-image-klein-pup` es la misma entidad que este repos
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF Q8_0): https://huggingface.co/ND911/flux-3-image-klein-pup-Q8_0-GGUF
+- Repositorio Hugging Face (GGUF Q8_0): https://huggingface.co/ND911/flux-3-image-klein-pup-Q8_0-GGUF
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
 - Repositorio GitHub de FLUX 3 Image Klein: https://github.com/black-forest-labs/flux-3-image-klein
 - Model card en ModelScope del prompt upsampler: https://www.modelscope.cn/models/black-forest-labs/flux-3-image-klein-pup

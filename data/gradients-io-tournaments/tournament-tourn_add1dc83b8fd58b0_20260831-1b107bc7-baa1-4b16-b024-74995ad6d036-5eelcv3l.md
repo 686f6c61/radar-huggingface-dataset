@@ -4,7 +4,7 @@
 
 Falcon-RW-1B es un modelo de lenguaje causal decoder-only de 1.000 millones de parámetros, desarrollado por el Technology Innovation Institute (TII) de Abu Dabi. Se entrenó exclusivamente sobre 350.000 millones de tokens de RefinedWeb, un dataset web filtrado y deduplicado a gran escala, con el objetivo de estudiar el impacto de los datos web de alta calidad en las capacidades de los modelos. El modelo se publica bajo licencia Apache 2.0 y está pensado como artefacto de investigación, no como producto listo para producción.
 
-La versión alojada en este repositorio de HuggingFace corresponde al checkpoint original de Falcon-RW-1B, subido por la organización gradients-io-tournaments. Aunque el nombre del repositorio sugiere un torneo, el contenido es idéntico al modelo oficial de TII. Su relevancia actual radica en ser un modelo pequeño, abierto y reproducible, útil para estudiar pipelines de datos, hacer fine-tuning en tareas específicas o ejecutar inferencia en hardware modesto.
+La versión alojada en este repositorio de Hugging Face corresponde al checkpoint original de Falcon-RW-1B, subido por la organización gradients-io-tournaments. Aunque el nombre del repositorio sugiere un torneo, el contenido es idéntico al modelo oficial de TII. Su relevancia actual radica en ser un modelo pequeño, abierto y reproducible, útil para estudiar pipelines de datos, hacer fine-tuning en tareas específicas o ejecutar inferencia en hardware modesto.
 
 ## Especificaciones tecnicas
 
@@ -51,17 +51,17 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 - VRAM estimada para inferencia: aproximadamente 2 GB en bfloat16, 4 GB en FP32. Con cuantización a 8 bits podría reducirse a ~1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3060, A10, etc.). Para fine-tuning se recomienda al menos 8-12 GB.
 - Compatibilidad con consumer GPU: sí, es uno de los modelos más ligeros de su categoría y se ejecuta sin problemas en hardware doméstico.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace (PyTorch 2.0+). También puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no está documentado en la model card.
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face (PyTorch 2.0+). También puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no está documentado en la model card.
 - Latencia y throughput: no se proporcionan datos específicos; en una GPU moderna, la generación de tokens suele ser de decenas de tokens por segundo para un modelo de 1B.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Falcon-RW-1B (este) | 1B | No disponible | Apache 2.0 | HuggingFace |
-| GPT-Neo 1.3B | 1.3B | 2048 | MIT | HuggingFace |
-| OPT-1.3B | 1.3B | 2048 | MIT | HuggingFace |
-| Pythia-1B | 1B | 2048 | Apache 2.0 | HuggingFace |
+| Falcon-RW-1B (este) | 1B | No disponible | Apache 2.0 | Hugging Face |
+| GPT-Neo 1.3B | 1.3B | 2048 | MIT | Hugging Face |
+| OPT-1.3B | 1.3B | 2048 | MIT | Hugging Face |
+| Pythia-1B | 1B | 2048 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada. Falcon-RW-1B destaca por entrenarse únicamente con datos web filtrados, mientras que los otros modelos usan mezclas de datos curados y web.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-1b107bc7-baa1-4b16-b024-74995ad6d036-5EeLcV3L
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-1b107bc7-baa1-4b16-b024-74995ad6d036-5EeLcV3L
 - Paper original: https://arxiv.org/abs/2306.01116
 - Dataset RefinedWeb: https://huggingface.co/datasets/tiiuae/falcon-refinedweb
 - Modelo oficial Falcon-RW-1B: https://huggingface.co/tiiuae/falcon-rw-1b

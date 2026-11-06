@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BrainOmni tiny (este) | 15.417.832 | no disponible | no disponible | MIT | HuggingFace (braindecode/brainomni-tiny-pretrained) |
-| BrainOmni (otros tamanos del release original) | no disponible | no disponible | no disponible | MIT | HuggingFace (OpenTSLab/BrainOmni) |
+| BrainOmni tiny (este) | 15.417.832 | no disponible | no disponible | MIT | Hugging Face (braindecode/brainomni-tiny-pretrained) |
+| BrainOmni (otros tamanos del release original) | no disponible | no disponible | no disponible | MIT | Hugging Face (OpenTSLab/BrainOmni) |
 | LaBraM (modelo fundacional EEG) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | BIOT (modelo fundacional EEG) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | EEGPT (modelo fundacional EEG) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braindecode/brainomni-tiny-pretrained
+- Modelo en Hugging Face: https://huggingface.co/braindecode/brainomni-tiny-pretrained
 - Fuente original (release de los autores): https://huggingface.co/OpenTSLab/BrainOmni
 - Documentación de `braindecode.models.BrainOmni`: https://braindecode.org/stable/generated/braindecode.models.BrainOmni.html
 - Paper: BrainOmni: A Brain Foundation Model for Unified EEG and MEG Signals (NeurIPS 2025), arXiv:2505.18185 — https://arxiv.org/abs/2505.18185

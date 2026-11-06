@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación de un Mixture-of-Experts (MoE) obtenido por *upcycling* ingenuo de un modelo denso, publicado por el usuario JIRU-W en HuggingFace. El modelo denso base, `JIRU-W/dense_e1_seq2048_gbs128_10b`, se detuvo en el paso 10000 y se convirtió en un MoE de 32 expertos con top-8, copiando exactamente el MLP SwiGLU denso de cada capa en cada uno de los 32 expertos. El objetivo declarado del experimento es estudiar si expertos inicialmente idénticos pueden diferenciarse durante el entrenamiento posterior.
+Este modelo es un checkpoint de investigación de un Mixture-of-Experts (MoE) obtenido por *upcycling* ingenuo de un modelo denso, publicado por el usuario JIRU-W en Hugging Face. El modelo denso base, `JIRU-W/dense_e1_seq2048_gbs128_10b`, se detuvo en el paso 10000 y se convirtió en un MoE de 32 expertos con top-8, copiando exactamente el MLP SwiGLU denso de cada capa en cada uno de los 32 expertos. El objetivo declarado del experimento es estudiar si expertos inicialmente idénticos pueden diferenciarse durante el entrenamiento posterior.
 
 El entrenamiento continuó con el dataset `JIRU-W/olmoe-mix-0924-10b`, una pérdida de balanceo de carga (coefficient 0,01) calculada por capa, y una re-warmup del learning rate. La ejecución se detuvo en el paso 13908 de los 38.139 planificados, por lo que el modelo no está entrenado hasta su finalización. Es un modelo de investigación pequeño, no instruction-tuned, con 3.696.887.808 parámetros totales y licencia Apache 2.0. Su relevancia es principalmente académica: sirve para estudiar dinámicas de especialización de expertos en MoE tras upcycling, un tema de interés en la literatura de eficiencia de entrenamiento.
 
@@ -88,7 +88,7 @@ Nota: este modelo es un artefacto de investigacion a medio entrenar (paso 13908 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JIRU-W/upcycle_dense10000_e32top8_perlayeraux1e-2_rewarm200
+- Modelo en Hugging Face: https://huggingface.co/JIRU-W/upcycle_dense10000_e32top8_perlayeraux1e-2_rewarm200
 - Modelo denso base: https://huggingface.co/JIRU-W/dense_e1_seq2048_gbs128_10b
 - Dataset de entrenamiento: https://huggingface.co/datasets/JIRU-W/olmoe-mix-0924-10b
 - Paper, blog o demo: no disponibles

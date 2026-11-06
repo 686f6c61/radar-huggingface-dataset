@@ -100,9 +100,9 @@ No se dispone de datos de rendimiento ni de especificaciones de contexto de mode
 
 | Version | Formato | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/TQ3.5-27B-Musica-v1-GGUF (esta) | GGUF estatico, 13 variantes | ~26,9B | no disponible | apache-2.0 | publica en HuggingFace, 475 descargas |
-| mradermacher/TQ3.5-27B-Musica-v1-i1-GGUF | GGUF con imatrix (ponderado) | ~26,9B | no disponible | apache-2.0 | publica en HuggingFace |
-| AuriAetherwiing/TQ3.5-27B-Musica-v1 | safetensors (transformers) | ~26,9B | no disponible | apache-2.0 | publica en HuggingFace |
+| mradermacher/TQ3.5-27B-Musica-v1-GGUF (esta) | GGUF estatico, 13 variantes | ~26,9B | no disponible | apache-2.0 | publica en Hugging Face, 475 descargas |
+| mradermacher/TQ3.5-27B-Musica-v1-i1-GGUF | GGUF con imatrix (ponderado) | ~26,9B | no disponible | apache-2.0 | publica en Hugging Face |
+| AuriAetherwiing/TQ3.5-27B-Musica-v1 | safetensors (transformers) | ~26,9B | no disponible | apache-2.0 | publica en Hugging Face |
 
 La variante i1 (imatrix) suele ofrecer mejor calidad por bit que las cuantizaciones estaticas equivalentes, a cambio de ficheros algo mayores y de un proceso de generacion mas costoso. Para modelos de rol y narrativa, la diferencia se aprecia sobre todo en coherencia a partir de Q4.
 

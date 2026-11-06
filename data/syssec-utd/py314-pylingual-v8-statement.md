@@ -3,7 +3,7 @@
 ## Resumen
 El modelo `syssec-utd/py314-pylingual-v8-statement` es un modelo de lenguaje especializado en la decompilación de bytecode de Python, desarrollado por el grupo de investigación `syssec-utd` (Universidad de Texas en Dallas) como parte del proyecto open source [pylingual](https://github.com/syssec-utd/pylingual). Su propósito es traducir instrucciones de bytecode de Python a sentencias de código fuente legible, un paso intermedio dentro de un pipeline de decompilación más amplio que combina modelos de segmentación y de traducción de sentencias. El nombre del modelo indica que está diseñado para la versión 3.14 de Python (py314) y corresponde a la octava versión del componente de traducción de sentencias (v8-statement).
 
-Con aproximadamente 223 millones de parámetros y una arquitectura basada en T5 (según las etiquetas del repositorio), este modelo se sitúa en la gama de los modelos encoder-decoder de tamaño medio. Aunque la información pública es escasa (solo 7 descargas y sin licencia declarada), su integración en un proyecto activo de decompilación lo hace relevante para tareas de ingeniería inversa, análisis de seguridad y recuperación de código fuente. La ventana de contexto, los idiomas soportados y los detalles de entrenamiento no están disponibles en la ficha de HuggingFace, por lo que esta documentación se basa únicamente en los datos públicos existentes.
+Con aproximadamente 223 millones de parámetros y una arquitectura basada en T5 (según las etiquetas del repositorio), este modelo se sitúa en la gama de los modelos encoder-decoder de tamaño medio. Aunque la información pública es escasa (solo 7 descargas y sin licencia declarada), su integración en un proyecto activo de decompilación lo hace relevante para tareas de ingeniería inversa, análisis de seguridad y recuperación de código fuente. La ventana de contexto, los idiomas soportados y los detalles de entrenamiento no están disponibles en la ficha de Hugging Face, por lo que esta documentación se basa únicamente en los datos públicos existentes.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -38,13 +38,13 @@ No se dispone de información pública sobre el conjunto de datos de entrenamien
 - **Automatización de pipelines de análisis estático**: el modelo puede incorporarse en flujos de CI/CD que necesiten inspeccionar artefactos Python compilados, generando informes de código fuente de forma automática.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible. No existen métricas oficiales de precisión, exactitud o comparación con otros decompiladores en el repositorio de HuggingFace ni en la documentación del proyecto. El repositorio de GitHub de pylingual no incluye tablas de evaluación pública.
+No se han publicado resultados de benchmarks en la información disponible. No existen métricas oficiales de precisión, exactitud o comparación con otros decompiladores en el repositorio de Hugging Face ni en la documentación del proyecto. El repositorio de GitHub de pylingual no incluye tablas de evaluación pública.
 
 ## Requisitos de hardware
 - **VRAM estimada**: para un modelo T5 de 223M de parámetros en precisión FP32 se requieren aproximadamente 890 MB solo para los pesos. Con cuantización a int8 (si estuviera disponible) se podría reducir a unos 450 MB, y a int4 a unos 280 MB. Sin embargo, no se proporcionan archivos cuantizados en el repositorio.
 - **GPU recomendadas**: una GPU con al menos 4 GB de VRAM (p. ej., NVIDIA GTX 1650, RTX 3050) sería suficiente para inferencia en FP32. Para mayor velocidad, una RTX 3060 o superior es adecuada. No se requieren GPUs de datacenter.
 - **Compatibilidad con consumer GPU**: sí, el modelo cabe en GPUs de consumo comunes.
-- **Opciones de despliegue**: al ser un modelo T5 con pesos en safetensors, puede cargarse con la librería `transformers` de HuggingFace. También podría convertirse a GGUF para usar con llama.cpp u Ollama, aunque no hay conversiones oficiales publicadas. Para despliegue en producción, vLLM o TGI son opciones viables si se adapta el formato.
+- **Opciones de despliegue**: al ser un modelo T5 con pesos en safetensors, puede cargarse con la librería `transformers` de Hugging Face. También podría convertirse a GGUF para usar con llama.cpp u Ollama, aunque no hay conversiones oficiales publicadas. Para despliegue en producción, vLLM o TGI son opciones viables si se adapta el formato.
 - **Latencia y throughput**: no hay datos publicados. En una GPU moderna, un T5-base suele generar decenas de tokens por segundo, pero depende del hardware y la longitud de las secuencias.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No se dispone de información sobre modelos comparables directamente. Los decomp
 - **Calidad de la decompilación**: la salida puede requerir revisión manual, ya que la traducción automática de bytecode a código fuente rara vez es perfecta y puede perder nombres de variables, comentarios o estructuras originales.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/syssec-utd/py314-pylingual-v8-statement)
+- [Modelo en Hugging Face](https://huggingface.co/syssec-utd/py314-pylingual-v8-statement)
 - [Dataset asociado](https://huggingface.co/datasets/syssec-utd/statement-py314-pylingual-v8)
 - [Repositorio GitHub del proyecto pylingual](https://github.com/syssec-utd/pylingual)
 - [Documentación de configuración del modelo en DeepWiki](https://deepwiki.com/syssec-utd/pylingual/5.2-model-configuration)

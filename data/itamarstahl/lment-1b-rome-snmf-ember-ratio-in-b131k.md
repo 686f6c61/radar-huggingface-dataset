@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LMEnt 1B — Ancient Rome SNMF+EMBER es un checkpoint de investigación en inglés de 1.336.035.328 parámetros (aproximadamente 1,34B) derivado de OLMo2 1B, un transformer decoder-only de tipo causal. Lo publica el usuario de HuggingFace `itamarstahl`, y forma parte del trabajo *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, firmado por Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher. No es un modelo de propósito general: es un artefacto experimental de edición de conocimiento.
+LMEnt 1B — Ancient Rome SNMF+EMBER es un checkpoint de investigación en inglés de 1.336.035.328 parámetros (aproximadamente 1,34B) derivado de OLMo2 1B, un transformer decoder-only de tipo causal. Lo publica el usuario de Hugging Face `itamarstahl`, y forma parte del trabajo *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, firmado por Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher. No es un modelo de propósito general: es un artefacto experimental de edición de conocimiento.
 
 El punto de partida es un OLMo2 1B en inglés entrenado sobre el corpus Wikipedia anotado por entidades LMEnt, sin ajuste por instrucciones. Sobre esa base se aplica una edición de borrado de concepto centrada en «Ancient Rome»: primero EMBER con δ = 200 y después SNMF con selección de características basada en ratio sobre los pesos de entrada de las MLP. El resultado es el checkpoint V2 seleccionado por el paper (etiqueta candidata `snmfv2_rome_ratio_in`, configuración del apéndice B.3), elegido con una regla fija sobre el split de selección antes de tocar el conjunto de test reservado.
 
@@ -69,18 +69,18 @@ El autor subraya que valores por debajo de 1 en cualquiera de los dos ratios ind
 - Cabe con holgura en GPUs consumer: RTX 3060 de 12 GB, RTX 4070, RTX 4080 y RTX 4090 en bf16; incluso tarjetas de 8 GB pueden alojarlo en bf16 con contexto moderado.
 - GPUs de centro de datos (A100, H100, L40S) son sobredimensionadas para este tamano, aunque utiles para barridos de evaluacion en paralelo.
 - Opciones de despliegue: `transformers` (via `AutoModelForCausalLM`), vLLM, TGI, y llama.cpp u Ollama previa conversion a GGUF, que no se distribuye en el repositorio.
-- Latencia y throughput estimados: no disponible. El repositorio tiene la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con los endpoints de HuggingFace.
+- Latencia y throughput estimados: no disponible. El repositorio tiene la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con los endpoints de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `itamarstahl/lment-1b-rome-snmf-ember-ratio-in-b131k` (este modelo) | 1,34B | No disponible | No declarada | HuggingFace |
-| `itamarstahl/lment-1b-control-2e-b131k` (gemelo de control completo) | Misma base, 1,34B | No disponible | No disponible | HuggingFace |
-| `itamarstahl/lment-1b-norome-2e-b131k` (gemelo con exclusion del concepto) | Misma base, 1,34B | No disponible | No disponible | HuggingFace |
-| OLMo2 1B (modelo base de la familia) | Aprox. 1,3B | No disponible | No disponible | HuggingFace |
-| Llama 3.2 1B | Aprox. 1,24B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| Qwen2.5 1.5B | Aprox. 1,54B | 32k | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| `itamarstahl/lment-1b-rome-snmf-ember-ratio-in-b131k` (este modelo) | 1,34B | No disponible | No declarada | Hugging Face |
+| `itamarstahl/lment-1b-control-2e-b131k` (gemelo de control completo) | Misma base, 1,34B | No disponible | No disponible | Hugging Face |
+| `itamarstahl/lment-1b-norome-2e-b131k` (gemelo con exclusion del concepto) | Misma base, 1,34B | No disponible | No disponible | Hugging Face |
+| OLMo2 1B (modelo base de la familia) | Aprox. 1,3B | No disponible | No disponible | Hugging Face |
+| Llama 3.2 1B | Aprox. 1,24B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| Qwen2.5 1.5B | Aprox. 1,54B | 32k | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 Nota: los datos de Llama 3.2 1B y Qwen2.5 1.5B son aproximados y provienen de sus respectivas model cards publicas; se incluyen solo como referencia de categoria, no como resultados medidos en la informacion proporcionada. La comparacion de rendimiento entre este checkpoint y esos modelos no es posible con los datos disponibles.
 
@@ -100,7 +100,7 @@ Nota: los datos de Llama 3.2 1B y Qwen2.5 1.5B son aproximados y provienen de su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-rome-snmf-ember-ratio-in-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-rome-snmf-ember-ratio-in-b131k
 - Gemelo de control completo: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con exclusion de concepto: https://huggingface.co/itamarstahl/lment-1b-norome-2e-b131k
 - Paper citado: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (URL no disponible en la informacion proporcionada).

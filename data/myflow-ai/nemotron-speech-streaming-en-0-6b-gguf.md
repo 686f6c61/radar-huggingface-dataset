@@ -18,7 +18,7 @@ La relevancia actual viene de que el modelo base esta pensado para streaming de 
 | Longitud de contexto | No es contexto de tokens: mascara de atencion cache-aware con att_context_size=[70, 13], equivalente a 1,12 s de ventana |
 | Tipos de cuantizacion | F32, F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M |
 | Idiomas soportados | Ingles (en) |
-| Licencia | nvidia-open-model-license (etiquetada como "other" en HuggingFace) |
+| Licencia | nvidia-open-model-license (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF |
 | Tarea | Automatic-speech-recognition (ASR) |
 | Entrada de audio | WAV mono a 16 kHz (se requiere conversion previa con ffmpeg para otras fuentes) |
@@ -27,7 +27,7 @@ La relevancia actual viene de que el modelo base esta pensado para streaming de 
 | Traduccion | No soportada |
 | Deteccion de idioma | No soportada |
 | Runtime soportado | transcribe.cpp (libreria declarada: transcribe.cpp) |
-| Tamano del repo | 0,7 GB segun la API de HuggingFace (los ficheros individuales publicados suman mas) |
+| Tamano del repo | 0,7 GB segun la API de Hugging Face (los ficheros individuales publicados suman mas) |
 
 ## Arquitectura y entrenamiento
 
@@ -117,13 +117,13 @@ Nota: los datos de los modelos alternativos provienen de conocimiento publico ge
 - Requisito de formato de entrada estricto: audio WAV mono a 16 kHz. Omitir la conversion puede degradar el resultado sin aviso.
 - Licencia heredada del modelo base (nvidia-open-model-license): es una licencia "other", no una licencia abierta estandar tipo Apache o MIT. Antes de un uso comercial o de redistribuir el modelo o sus derivados hay que revisar los terminos completos en el enlace de NVIDIA incluido mas abajo.
 - Trazabilidad de la conversion: es un repositorio de terceros (myflow-ai) con 0 descargas y 0 likes en el momento de la consulta. Aunque se indica validacion frente a la referencia NeMo, el mantenimiento y las actualizaciones dependen del autor y no de NVIDIA.
-- Discrepancia de tamanos: HuggingFace reporta un tamano de repo de 0,7 GB, inferior a la suma de los ficheros listados en la model card (que llega a 2,30 GB en F32). Conviene verificar el artefacto descargado antes de desplegarlo.
+- Discrepancia de tamanos: Hugging Face reporta un tamano de repo de 0,7 GB, inferior a la suma de los ficheros listados en la model card (que llega a 2,30 GB en F32). Conviene verificar el artefacto descargado antes de desplegarlo.
 - Ausencia de datos de entrenamiento: no se especifica composicion del dataset, numero de horas de audio ni proceso de alineacion o filtrado, lo que dificulta estimar el comportamiento fuera de LibriSpeech.
 - Sin soporte confirmado en ecosistemas habituales: no hay evidencia de integracion con vLLM, TGI, Ollama o llama.cpp, lo que limita las opciones de despliegue estandarizadas.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/myflow-ai/nemotron-speech-streaming-en-0.6b-gguf
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/myflow-ai/nemotron-speech-streaming-en-0.6b-gguf
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
 - Commit upstream de referencia: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b/commit/ef3bf40
 - Rama del checkpoint de enero de 2026: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b/tree/nemotron-speech-streaming-jan2026

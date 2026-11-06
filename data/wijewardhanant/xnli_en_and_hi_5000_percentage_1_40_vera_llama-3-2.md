@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (VeRA sobre Llama-3.2-3B, XNLI EN/HI) | 3.210 M (base) + adaptador de tamano no disponible | 128.000 tokens (base) | No disponible | No disponible para el adaptador; Llama 3.2 Community License en la base | HuggingFace, 0 descargas y 0 likes |
-| Adaptador LoRA/QLoRA sobre Llama-3.2-3B | 3.210 M (base) + adaptador | 128.000 tokens (base) | No disponible | Depende de cada repositorio | Amplia disponibilidad en HuggingFace |
-| XLM-RoBERTa large ajustado en XNLI | 559 M (referencia externa) | 512 tokens | No disponible | MIT (modelo base) | Amplia disponibilidad en HuggingFace |
-| mDeBERTa-v3-base ajustado en XNLI | 279 M (referencia externa) | 512 tokens | No disponible | MIT (modelo base) | Amplia disponibilidad en HuggingFace |
+| Este adaptador (VeRA sobre Llama-3.2-3B, XNLI EN/HI) | 3.210 M (base) + adaptador de tamano no disponible | 128.000 tokens (base) | No disponible | No disponible para el adaptador; Llama 3.2 Community License en la base | Hugging Face, 0 descargas y 0 likes |
+| Adaptador LoRA/QLoRA sobre Llama-3.2-3B | 3.210 M (base) + adaptador | 128.000 tokens (base) | No disponible | Depende de cada repositorio | Amplia disponibilidad en Hugging Face |
+| XLM-RoBERTa large ajustado en XNLI | 559 M (referencia externa) | 512 tokens | No disponible | MIT (modelo base) | Amplia disponibilidad en Hugging Face |
+| mDeBERTa-v3-base ajustado en XNLI | 279 M (referencia externa) | 512 tokens | No disponible | MIT (modelo base) | Amplia disponibilidad en Hugging Face |
 
 No se dispone de comparaciones de rendimiento publicadas. Las filas de modelos alternativos se incluyen como referencia estructural: los codificadores tipo XLM-R y mDeBERTa siguen siendo la opción habitual para NLI multilingüe por coste y latencia, mientras que un adaptador sobre un modelo generativo de 3.000 millones de parámetros ofrece más flexibilidad pero un coste de inferencia notablemente superior.
 
@@ -86,7 +86,7 @@ No se dispone de comparaciones de rendimiento publicadas. Las filas de modelos a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_VeRA_llama-3.2
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_VeRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Referencia citada en la model card (Lacoste et al., 2019, sobre impacto ambiental, incluida como plantilla): https://arxiv.org/abs/1910.09700
 - Licencia del modelo base Llama 3.2: https://www.llama.com/llama3_2/license/

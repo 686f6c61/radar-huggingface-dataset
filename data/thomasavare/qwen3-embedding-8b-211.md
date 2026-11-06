@@ -2,7 +2,7 @@
 
 ## Resumen
 
-thomasavare/Qwen3-Embedding-8B-211 es un repositorio de pesos alojado en HuggingFace por el usuario thomasavare. La model card se limita a indicar que el modelo se ha subido mediante la integracion PyTorchModelHubMixin, y deja como "More Information Needed" el codigo, el paper y la documentacion. No se declara licencia, idiomas, pipeline ni arquitectura.
+thomasavare/Qwen3-Embedding-8B-211 es un repositorio de pesos alojado en Hugging Face por el usuario thomasavare. La model card se limita a indicar que el modelo se ha subido mediante la integracion PyTorchModelHubMixin, y deja como "More Information Needed" el codigo, el paper y la documentacion. No se declara licencia, idiomas, pipeline ni arquitectura.
 
 El nombre del repositorio apunta a la familia Qwen3-Embedding y sugiere un tamano de 8.000 millones de parametros, pero los metadatos de safetensors del propio repositorio indican 579.705 parametros, es decir, menos de un millon, con un tamano total de repositorio de 0,4 GB. Esta discrepancia entre denominacion y contenido real es el dato mas relevante para cualquier evaluacion: no se puede asumir que el checkpoint contenga un modelo de 8B sin verificarlo.
 
@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye datos verificables de nin
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| thomasavare/Qwen3-Embedding-8B-211 | 579.705 declarados en safetensors; 8B segun el nombre | no disponible | no disponible | HuggingFace, 17 descargas |
+| thomasavare/Qwen3-Embedding-8B-211 | 579.705 declarados en safetensors; 8B segun el nombre | no disponible | no disponible | Hugging Face, 17 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia metodologica, la comparacion deberia hacerse contra la ficha oficial del modelo base de la familia Qwen3-Embedding, cuyos datos no forman parte de la informacion proporcionada en esta busqueda.
@@ -106,7 +106,7 @@ Como referencia metodologica, la comparacion deberia hacerse contra la ficha ofi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thomasavare/Qwen3-Embedding-8B-211
+- Repositorio en Hugging Face: https://huggingface.co/thomasavare/Qwen3-Embedding-8B-211
 - Documentacion de PyTorchModelHubMixin citada en la model card: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo: no disponible

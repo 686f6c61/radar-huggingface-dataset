@@ -80,6 +80,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/crazyape777/mir-822-odpo-hirank-midbeta
+- Repositorio Hugging Face: https://huggingface.co/crazyape777/mir-822-odpo-hirank-midbeta
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - No se encontraron otros enlaces (papers, blogs, demos) en la busqueda web.

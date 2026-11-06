@@ -74,7 +74,7 @@ No se dispone de comparativas directas con otros modelos, ya que este repositori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tomyuanyucheng/attention-residual-ckpts
+- Hugging Face: https://huggingface.co/tomyuanyucheng/attention-residual-ckpts
 - Repositorio GitHub del autor: https://github.com/tomtommyyuan/attention_residual
 - Paper (arXiv): https://arxiv.org/abs/2603.15031
 - PDF del paper: https://arxiv.org/pdf/2603.15031
@@ -151,7 +151,7 @@ No hay modelos directamente comparables en el repositorio, ya que no es un model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tomyuanyucheng/attention-residual-ckpts
+- Hugging Face: https://huggingface.co/tomyuanyucheng/attention-residual-ckpts
 - Repositorio GitHub del autor: https://github.com/tomtommyyuan/attention_residual
 - Paper arXiv: https://arxiv.org/abs/2603.15031
 - PDF del paper: https://arxiv.org/pdf/2603.15031

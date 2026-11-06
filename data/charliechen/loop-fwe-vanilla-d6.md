@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-fwe-vanilla-d6 es un modelo de lenguaje base de 119.734.272 parámetros almacenados en FP32, publicado por el usuario CharlieChen en HuggingFace. Se trata del punto de la escalera de profundidad etiquetado como "d6" dentro del trabajo titulado *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents*, y pertenece a la familia de transformadores con recirculación (looped transformers) que estudia cómo influyen el crecimiento de profundidad, la recursión y los operadores de frontera en los exponentes de escalado. El checkpoint público reproduce bit a bit los pesos del artículo, e incluye únicamente los tensores del modelo y la recurrencia de evaluación final; no incluye estado del optimizador.
+loop-fwe-vanilla-d6 es un modelo de lenguaje base de 119.734.272 parámetros almacenados en FP32, publicado por el usuario CharlieChen en Hugging Face. Se trata del punto de la escalera de profundidad etiquetado como "d6" dentro del trabajo titulado *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents*, y pertenece a la familia de transformadores con recirculación (looped transformers) que estudia cómo influyen el crecimiento de profundidad, la recursión y los operadores de frontera en los exponentes de escalado. El checkpoint público reproduce bit a bit los pesos del artículo, e incluye únicamente los tensores del modelo y la recurrencia de evaluación final; no incluye estado del optimizador.
 
 El entrenamiento se realizó sobre FineWeb-Edu, con anchura 768, 6 cabezas de atención, tokenizador GPT-2 (vía tiktoken) con vocabulario de 50.257 tokens ampliado a 50.304 filas y una longitud de contexto de 2.048 tokens. La coordenada de profundidad d6 es la coordenada de escalado de la escalera y puede diferir del número de bloques Transformer ejecutados; en esta variante "vanilla" el número de repeticiones finales del núcleo es 1. El modelo obtiene una NLL de validación de preentrenamiento de 3,33671229 nats/token y una precisión CORE de 0,07992611 (media sobre las semillas 0, 1 y 2 con los 91.037 ejemplos de 22 tareas).
 
@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks tipo MMLU, HumanEval, GSM8K o simil
 
 | Modelo | Parametros | Contexto | Tokenizador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| loop-fwe-vanilla-d6 | 119,7 M (FP32) | 2.048 | GPT-2 (tiktoken) | No disponible | HuggingFace, requiere código custom |
+| loop-fwe-vanilla-d6 | 119,7 M (FP32) | 2.048 | GPT-2 (tiktoken) | No disponible | Hugging Face, requiere código custom |
 | GPT-2 (124M) | 124 M | 1.024 | GPT-2 (BPE) | MIT (pesos originales de OpenAI) | Ampliamente disponible, soportado por Transformers, llama.cpp y vLLM |
-| Pythia-160M | 160 M | 2.048 | GPT-NeoX | Apache-2.0 | HuggingFace, soporte nativo en Transformers |
+| Pythia-160M | 160 M | 2.048 | GPT-NeoX | Apache-2.0 | Hugging Face, soporte nativo en Transformers |
 | GPT-2 medium | 355 M | 1.024 | GPT-2 (BPE) | MIT | Ampliamente disponible |
 
 La comparación de rendimiento frente a estas alternativas no está disponible: la model card solo publica NLL de validación y métricas CORE internas del artículo, sin resultados en benchmarks estandarizados que permitan situar el modelo frente a GPT-2 o Pythia. La diferencia principal no es de escala sino de arquitectura (recirculación con coordenada de profundidad d6) y de propósito (reproducibilidad de un estudio de leyes de escalado).
@@ -104,7 +104,7 @@ La comparación de rendimiento frente a estas alternativas no está disponible: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-fwe-vanilla-d6
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-fwe-vanilla-d6
 - Codigo del articulo (requerido para cargar el checkpoint): https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Tokenizador tiktoken (OpenAI): https://github.com/openai/tiktoken

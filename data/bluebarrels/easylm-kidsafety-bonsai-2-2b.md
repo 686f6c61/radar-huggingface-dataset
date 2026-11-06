@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Bluebarrels/easylm-kidsafety-bonsai-2-2b` | 2B (adaptador de ~3,5 MB) | 262 144 | Seguridad infantil + coaching socrático | AGPL-3.0 | Público en HuggingFace, 0 descargas |
-| `prism-ml/Ternary-Bonsai-2-2B-gguf` (base) | ~2B | No disponible | Base generalista con pesos ternarios | No disponible | Público en HuggingFace |
-| `Bluebarrels/easylm-bonsai-2-2b` | 2B | No disponible | Adaptador generalista del tier de 500 MB | No disponible | Público en HuggingFace (misma familia) |
-| `Bluebarrels/easylm-bonsai-2-9b` | 9B | No disponible | Agente por defecto para Hydra, orquestación de herramientas MCP y derivaciones STEM | No disponible | Público en HuggingFace (misma familia) |
-| `Bluebarrels/easylm-bonsai-2-27b` | 27B | 262 144 | Tier insignia, incluye torre de visión | No disponible | Público en HuggingFace (misma familia) |
+| `Bluebarrels/easylm-kidsafety-bonsai-2-2b` | 2B (adaptador de ~3,5 MB) | 262 144 | Seguridad infantil + coaching socrático | AGPL-3.0 | Público en Hugging Face, 0 descargas |
+| `prism-ml/Ternary-Bonsai-2-2B-gguf` (base) | ~2B | No disponible | Base generalista con pesos ternarios | No disponible | Público en Hugging Face |
+| `Bluebarrels/easylm-bonsai-2-2b` | 2B | No disponible | Adaptador generalista del tier de 500 MB | No disponible | Público en Hugging Face (misma familia) |
+| `Bluebarrels/easylm-bonsai-2-9b` | 9B | No disponible | Agente por defecto para Hydra, orquestación de herramientas MCP y derivaciones STEM | No disponible | Público en Hugging Face (misma familia) |
+| `Bluebarrels/easylm-bonsai-2-27b` | 27B | 262 144 | Tier insignia, incluye torre de visión | No disponible | Público en Hugging Face (misma familia) |
 
 No se dispone de datos de rendimiento comparado entre estos modelos; la comparación se limita a parámetros, contexto declarado, licencia y disponibilidad. Frente a adaptadores LoRA de seguridad de uso común en la comunidad, no se han encontrado referencias verificables en la información proporcionada, por lo que la comparativa con alternativas externas queda como no disponible.
 

@@ -78,7 +78,7 @@ La comparativa se limita a caracteristicas generales, ya que no se dispone de da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/a-gordo/Qwen3.8-27B-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/a-gordo/Qwen3.8-27B-oQ4e-mtp
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Analisis de Simon Willison: https://simonwillison.net/2026/Aug/16/qwen-38-27b/
 - Blog de AMD sobre ejecucion en Ryzen AI Max y Radeon: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

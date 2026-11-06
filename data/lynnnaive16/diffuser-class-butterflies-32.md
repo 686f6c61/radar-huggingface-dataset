@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una implementación de un modelo de difusión para generación incondicional de imágenes, desarrollado por lynnnaive16 como parte de la unidad 1 de la clase de modelos de difusión de HuggingFace. Su propósito es generar imágenes de mariposas a partir de ruido aleatorio, sirviendo como ejemplo práctico para aprender el funcionamiento de los modelos de difusión denoising.
+Este modelo es una implementación de un modelo de difusión para generación incondicional de imágenes, desarrollado por lynnnaive16 como parte de la unidad 1 de la clase de modelos de difusión de Hugging Face. Su propósito es generar imágenes de mariposas a partir de ruido aleatorio, sirviendo como ejemplo práctico para aprender el funcionamiento de los modelos de difusión denoising.
 
 Arquitectónicamente se basa en el pipeline DDPMPipeline de la librería Diffusers, que implementa los Denoising Diffusion Probabilistic Models (DDPM). El modelo tiene un total de 18.536.323 parámetros y un tamaño de repositorio de 0.1 GB, lo que lo convierte en un modelo muy ligero y accesible para experimentación en entornos con recursos limitados.
 
@@ -25,7 +25,7 @@ Su relevancia actual radica en su valor educativo: permite a desarrolladores e i
 
 El modelo utiliza el pipeline DDPMPipeline de Diffusers, basado en la arquitectura DDPM (Denoising Diffusion Probabilistic Models). Se trata de un modelo de difusión que aprende a invertir el proceso de adición de ruido, generando imágenes a partir de ruido gaussiano puro. Es un modelo incondicional, es decir, no recibe ninguna señal de condicionamiento como texto o clases.
 
-No se dispone de información detallada sobre los datos de entrenamiento, el número de tokens (no aplica) ni sobre técnicas de alineación como RLHF o DPO. Al ser un modelo de la clase de HuggingFace, se presume que fue entrenado sobre un conjunto de imágenes de mariposas, pero no se han publicado los detalles. Tampoco se han documentado innovaciones técnicas destacables más allá de la implementación estándar del pipeline DDPM.
+No se dispone de información detallada sobre los datos de entrenamiento, el número de tokens (no aplica) ni sobre técnicas de alineación como RLHF o DPO. Al ser un modelo de la clase de Hugging Face, se presume que fue entrenado sobre un conjunto de imágenes de mariposas, pero no se han publicado los detalles. Tampoco se han documentado innovaciones técnicas destacables más allá de la implementación estándar del pipeline DDPM.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ No se dispone de información detallada sobre los datos de entrenamiento, el nú
 
 ## Casos de uso
 
-- Aprendizaje de modelos de difusión: el modelo se utiliza como ejemplo práctico en la unidad 1 de la clase de HuggingFace, permitiendo a los estudiantes ejecutar un pipeline completo de generación de imágenes.
+- Aprendizaje de modelos de difusión: el modelo se utiliza como ejemplo práctico en la unidad 1 de la clase de Hugging Face, permitiendo a los estudiantes ejecutar un pipeline completo de generación de imágenes.
 - Prototipado rápido de generación de imágenes: gracias a su tamaño reducido, se puede cargar y ejecutar en un cuaderno de Jupyter para experimentar con el proceso de denoising.
 - Generación de datasets sintéticos: se pueden generar imágenes de mariposas para aumentar o crear un conjunto de datos de entrenamiento para otros modelos.
 - Investigación en generación incondicional: sirve como baseline simple para estudiar la dinámica de los modelos de difusión y comparar con arquitecturas más avanzadas.
@@ -61,11 +61,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lynnnaive16/diffuser-class-butterflies-32 | 18.536.323 | no disponible | no disponible | MIT | HuggingFace |
-| Unilinear/sd-class-butterflies-32 | no disponible | no disponible | no disponible | MIT | HuggingFace |
-| ninachely/sd-class-butterflies-32 | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| lynnnaive16/diffuser-class-butterflies-32 | 18.536.323 | no disponible | no disponible | MIT | Hugging Face |
+| Unilinear/sd-class-butterflies-32 | no disponible | no disponible | no disponible | MIT | Hugging Face |
+| ninachely/sd-class-butterflies-32 | no disponible | no disponible | no disponible | MIT | Hugging Face |
 
-Los tres modelos pertenecen a la misma unidad de la clase de HuggingFace y son funcionalmente equivalentes.
+Los tres modelos pertenecen a la misma unidad de la clase de Hugging Face y son funcionalmente equivalentes.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ Los tres modelos pertenecen a la misma unidad de la clase de HuggingFace y son f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lynnnaive16/diffuser-class-butterflies-32
-- Clase de modelos de difusión de HuggingFace: https://github.com/huggingface/diffusion-models-class
+- Hugging Face: https://huggingface.co/lynnnaive16/diffuser-class-butterflies-32
+- Clase de modelos de difusión de Hugging Face: https://github.com/huggingface/diffusion-models-class
 - Modelo similar: https://huggingface.co/Unilinear/sd-class-butterflies-32
 - Modelo similar: https://huggingface.co/ninachely/sd-class-butterflies-32

@@ -85,7 +85,7 @@ La ventaja de TLive frente a la base es su adaptación al dominio de streaming, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/L1ght/Qwen3.5-4B-TLive
+- Repositorio Hugging Face: https://huggingface.co/L1ght/Qwen3.5-4B-TLive
 - Modelo base Qwen3.5-4B-Base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Colección oficial Qwen3.5: https://huggingface.co/collections/Qwen/qwen35
 - Repositorio GitHub de Qwen3.5: https://github.com/tokwalabs/Qwen3.5

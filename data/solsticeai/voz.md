@@ -122,7 +122,7 @@ Las cifras de Whisper de la tabla de benchmarks son las del leaderboard citado p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SolsticeAI/voz
+- Modelo en Hugging Face: https://huggingface.co/SolsticeAI/voz
 - Documentación del SDK, instalación y ejemplos: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/docs/models/voz.md
 - Repositorio del SDK Swift: https://github.com/Desert-Ant-Labs/desert-ant-core
 - Licencia: https://license.desertant.com/1.0

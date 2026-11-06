@@ -60,9 +60,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 10Eros-Max (base) | Text-to-video | no disponible | no disponible | minimax-h3-community | HuggingFace |
-| MiniMax-H3 | Text-to-video | no disponible | no disponible | minimax-h3-community | HuggingFace |
-| LTX-Video | Text-to-video | no disponible | no disponible | Apache 2.0 (probable) | HuggingFace |
+| 10Eros-Max (base) | Text-to-video | no disponible | no disponible | minimax-h3-community | Hugging Face |
+| MiniMax-H3 | Text-to-video | no disponible | no disponible | minimax-h3-community | Hugging Face |
+| LTX-Video | Text-to-video | no disponible | no disponible | Apache 2.0 (probable) | Hugging Face |
 
 No se pueden extraer conclusiones cuantitativas sin datos de benchmarks.
 
@@ -77,5 +77,5 @@ No se pueden extraer conclusiones cuantitativas sin datos de benchmarks.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QrusherZA/10Eros-Max-int8-convrot)
+- [Modelo en Hugging Face](https://huggingface.co/QrusherZA/10Eros-Max-int8-convrot)
 - [Modelo base TenStrip/10Eros-Max](https://huggingface.co/TenStrip/10Eros-Max) (referenciado en la model card, no verificado)

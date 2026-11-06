@@ -4,7 +4,7 @@
 
 FG-CLIP 2 es un modelo bilingüe de alineación fina visión-lenguaje desarrollado por el grupo 360CVGroup de Qihoo 360. Su objetivo es mejorar la comprensión de detalles finos en imágenes y texto, superando las limitaciones de los modelos CLIP tradicionales que se centran en la correspondencia global imagen-texto. El modelo introduce supervisión de grano fino, como el emparejamiento región-texto y el modelado de descripciones largas, junto con múltiples objetivos discriminativos, lo que le permite capturar relaciones semánticas detalladas entre regiones de la imagen y fragmentos de texto.
 
-Con 383,8 millones de parámetros, FG-CLIP 2 base está disponible en inglés y chino, y según sus autores alcanza el mejor rendimiento publicado hasta la fecha en 29 conjuntos de datos y 8 tareas diversas, superando a modelos recientes como SigLIP 2 y MetaCLIP 2. Se distribuye bajo licencia Apache 2.0 y se integra con la librería Transformers de HuggingFace, lo que facilita su uso en tareas de clasificación de imágenes zero-shot y recuperación de información multimodal.
+Con 383,8 millones de parámetros, FG-CLIP 2 base está disponible en inglés y chino, y según sus autores alcanza el mejor rendimiento publicado hasta la fecha en 29 conjuntos de datos y 8 tareas diversas, superando a modelos recientes como SigLIP 2 y MetaCLIP 2. Se distribuye bajo licencia Apache 2.0 y se integra con la librería Transformers de Hugging Face, lo que facilita su uso en tareas de clasificación de imágenes zero-shot y recuperación de información multimodal.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El modelo se entrena con datos bilingues (ingles y chino) y, segun el paper, log
 - Alineacion fina de regiones: es capaz de asociar partes especificas de una imagen (objetos, atributos, relaciones) con fragmentos de texto correspondientes, lo que mejora la precision en tareas de grounding visual.
 - Bilingue ingles-chino: soporta consultas y descripciones en ambos idiomas, con un rendimiento comparable en ambos.
 - Generacion de descripciones largas: aunque su funcion principal es la representacion, el modelo puede utilizarse para generar captions detalladas de imagenes, como se muestra en el ejemplo de uso con `walk_type="long"`.
-- Integracion con Transformers: se carga mediante `AutoModelForCausalLM` y `AutoImageProcessor`, lo que permite su uso en pipelines estandar de HuggingFace.
+- Integracion con Transformers: se carga mediante `AutoModelForCausalLM` y `AutoImageProcessor`, lo que permite su uso en pipelines estandar de Hugging Face.
 
 ## Casos de uso
 
@@ -76,7 +76,7 @@ No se dispone de datos numericos comparativos publicados en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace (este repositorio): https://huggingface.co/aaabushiren/fg-clip2-base
+- Modelo en Hugging Face (este repositorio): https://huggingface.co/aaabushiren/fg-clip2-base
 - Modelo original de Qihoo 360: https://huggingface.co/qihoo360/fg-clip2-base
 - Coleccion de modelos FG-CLIP 2: https://huggingface.co/collections/qihoo360/fg-clip-2
 - Paper FG-CLIP 2 (arXiv 2510.10921): https://arxiv.org/abs/2510.10921

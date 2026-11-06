@@ -2,9 +2,9 @@
 
 ## Resumen
 
-zils-mini-body-1 es un modelo de lenguaje publicado en HuggingFace por el usuario CometForest bajo licencia Apache-2.0. Según su model card, se trata de un "body" (cuerpo base) destinado al pool de modelos tipo "soup" denominado Zils `d3-mini`, y está derivado de modelos con licencia Apache-2.0, concretamente de Qwen/Qwen3.5-4B y de fine-tunes abiertos de este. El repositorio contiene únicamente pesos en formato safetensors, con un total de 4.539.265.536 parámetros (aproximadamente 4,54 mil millones).
+zils-mini-body-1 es un modelo de lenguaje publicado en Hugging Face por el usuario CometForest bajo licencia Apache-2.0. Según su model card, se trata de un "body" (cuerpo base) destinado al pool de modelos tipo "soup" denominado Zils `d3-mini`, y está derivado de modelos con licencia Apache-2.0, concretamente de Qwen/Qwen3.5-4B y de fine-tunes abiertos de este. El repositorio contiene únicamente pesos en formato safetensors, con un total de 4.539.265.536 parámetros (aproximadamente 4,54 mil millones).
 
-La relevancia del modelo es limitada por el momento: no cuenta con descargas ni interacciones en HuggingFace, no tiene pipeline declarado y la model card es extremadamente escueta, sin información sobre datos de entrenamiento, benchmarks, idiomas o capacidades. Por tanto, cualquier evaluación técnica debe tratarse como preliminar y basada casi exclusivamente en los metadatos del repositorio y en la arquitectura del modelo base del que deriva.
+La relevancia del modelo es limitada por el momento: no cuenta con descargas ni interacciones en Hugging Face, no tiene pipeline declarado y la model card es extremadamente escueta, sin información sobre datos de entrenamiento, benchmarks, idiomas o capacidades. Por tanto, cualquier evaluación técnica debe tratarse como preliminar y basada casi exclusivamente en los metadatos del repositorio y en la arquitectura del modelo base del que deriva.
 
 El interés principal radica en su posible uso como componente dentro de un ensemble o "model soup" (mezcla de pesos) orientado a tareas de generación de texto, pero no hay evidencia publicada de su rendimiento ni de su comportamiento en producción. Se recomienda precaución y validación empírica antes de cualquier despliegue.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zils-mini-body-1 | ~4,54 B | no disponible | Apache-2.0 | HuggingFace (0 descargas) | Derivado de Qwen3.5-4B y fine-tunes; sin benchmarks |
-| Qwen/Qwen3.5-4B | ~4 B (según referencia del autor) | no disponible | Apache-2.0 (según referencia) | HuggingFace | Modelo base del que deriva |
-| Fine-tunes abiertos de Qwen3.5-4B | variable | no disponible | variable (Apache-2.0 en los citados) | HuggingFace | Fuente de la mezcla |
+| zils-mini-body-1 | ~4,54 B | no disponible | Apache-2.0 | Hugging Face (0 descargas) | Derivado de Qwen3.5-4B y fine-tunes; sin benchmarks |
+| Qwen/Qwen3.5-4B | ~4 B (según referencia del autor) | no disponible | Apache-2.0 (según referencia) | Hugging Face | Modelo base del que deriva |
+| Fine-tunes abiertos de Qwen3.5-4B | variable | no disponible | variable (Apache-2.0 en los citados) | Hugging Face | Fuente de la mezcla |
 
 No se dispone de datos de rendimiento para comparar cuantitativamente con alternativas. La comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento para comparar cuantitativamente con altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CometForest/zils-mini-body-1
+- Hugging Face: https://huggingface.co/CometForest/zils-mini-body-1
 - Modelo base citado: https://huggingface.co/Qwen/Qwen3.5-4B (referencia en la model card; no verificado)

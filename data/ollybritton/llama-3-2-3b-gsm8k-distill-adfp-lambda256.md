@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256` es un ajuste fino (fine-tune) del modelo denso meta-llama/Llama-3.2-3B, publicado por el usuario ollybritton en HuggingFace. El repositorio contiene únicamente pesos en formato safetensors (6,4 GB) con 3.212.749.824 parámetros, idénticos en arquitectura a los del modelo base, por lo que se trata de una especialización y no de un cambio estructural.
+`ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256` es un ajuste fino (fine-tune) del modelo denso meta-llama/Llama-3.2-3B, publicado por el usuario ollybritton en Hugging Face. El repositorio contiene únicamente pesos en formato safetensors (6,4 GB) con 3.212.749.824 parámetros, idénticos en arquitectura a los del modelo base, por lo que se trata de una especialización y no de un cambio estructural.
 
 Por el nombre del identificador se deduce que el entrenamiento se ha orientado a razonamiento matemático mediante destilación sobre el conjunto de datos GSM8K, con algún esquema de entrenamiento identificado como "adfp" y un hiperparámetro etiquetado como lambda=256. La model card no documenta ninguno de estos términos, el dataset utilizado, el número de tokens de entrenamiento ni la receta de ajuste, por lo que cualquier afirmación al respecto queda fuera de lo verificable con la información disponible.
 
-El modelo no tiene descargas ni "me gusta" en el momento de la consulta y fue creado el 15 de septiembre de 2026, según los metadatos de HuggingFace. Es relevante como ejemplo de fine-tune de bajo coste sobre un modelo pequeño (3B) orientado a una tarea concreta, pero carece de documentación suficiente para uso en producción sin una evaluación propia.
+El modelo no tiene descargas ni "me gusta" en el momento de la consulta y fue creado el 15 de septiembre de 2026, según los metadatos de Hugging Face. Es relevante como ejemplo de fine-tune de bajo coste sobre un modelo pequeño (3B) orientado a una tarea concreta, pero carece de documentación suficiente para uso en producción sin una evaluación propia.
 
 ## Especificaciones técnicas
 
@@ -91,7 +91,7 @@ La principal diferencia de este repositorio frente a las alternativas es la ause
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256
+- Repositorio en Hugging Face: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Licencia Llama 3.2 Community: https://www.llama.com/llama3_2/license/
 - Conjunto de datos GSM8K: https://huggingface.co/datasets/openai/gsm8k

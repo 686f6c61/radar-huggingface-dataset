@@ -2,9 +2,9 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo basado en Q-Learning tabular, publicado por el usuario premsainelluri en HuggingFace. No es un modelo de lenguaje ni una red neuronal profunda: se trata de una tabla Q almacenada en un fichero pickle que resuelve el entorno Taxi-v3 de Gymnasium, un problema clásico de control discreto en el que un taxi debe recoger y dejar pasajeros en una cuadrícula de 5x5 con puntos de recogida y destino variables.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo basado en Q-Learning tabular, publicado por el usuario premsainelluri en Hugging Face. No es un modelo de lenguaje ni una red neuronal profunda: se trata de una tabla Q almacenada en un fichero pickle que resuelve el entorno Taxi-v3 de Gymnasium, un problema clásico de control discreto en el que un taxi debe recoger y dejar pasajeros en una cuadrícula de 5x5 con puntos de recogida y destino variables.
 
-El modelo se distribuye como artefacto de entrenamiento (policy entrenada) con el pipeline `reinforcement-learning` y forma parte de la familia de agentes que HuggingFace Deep RL Course usa para comparar algoritmos sobre entornos Gymnasium. Su relevancia es fundamentalmente docente y de referencia: sirve para validar pipelines de entrenamiento, comparar algoritmos tabulares frente a aproximaciones con redes neuronales y reproducir resultados de forma determinista.
+El modelo se distribuye como artefacto de entrenamiento (policy entrenada) con el pipeline `reinforcement-learning` y forma parte de la familia de agentes que Hugging Face Deep RL Course usa para comparar algoritmos sobre entornos Gymnasium. Su relevancia es fundamentalmente docente y de referencia: sirve para validar pipelines de entrenamiento, comparar algoritmos tabulares frente a aproximaciones con redes neuronales y reproducir resultados de forma determinista.
 
 El repositorio tiene un tamaño de 0,0 GB declarado, 0 descargas y 0 likes en el momento de la consulta, y no declara licencia, idiomas ni ninguna otra metadata adicional más allá del `model-index` con el resultado de evaluación. Toda la información técnica disponible se reduce al README, al fichero de pesos `q-learning.pkl` y al resultado de `mean_reward` declarado por el autor.
 
@@ -47,14 +47,14 @@ No se dispone de informacion sobre el numero de episodios de entrenamiento, la p
 - Docencia de aprendizaje por refuerzo: sirve como ejemplo minimo y funcional de Q-Learning tabular para explicar la ecuacion de Bellman, la exploracion epsilon-greedy y la convergencia de la tabla Q sin la complejidad de una red neuronal.
 - Validacion de pipelines de RL: al ser un artefacto pequeno y determinista, permite comprobar que un pipeline de evaluacion (descarga, carga, bucle de episodios, calculo de recompensa media) funciona de extremo a extremo antes de escalar a modelos mayores.
 - Baseline en comparativas de algoritmos: sirve como referencia tabular frente a DQN, SARSA o metodos basados en policy gradient sobre el mismo entorno Taxi-v3.
-- Reproduccion de resultados del HuggingFace Deep RL Course: el formato del `model-index` y del pickle es el esperado por las herramientas del curso, lo que facilita la verificacion del ejercicio.
+- Reproduccion de resultados del Hugging Face Deep RL Course: el formato del `model-index` y del pickle es el esperado por las herramientas del curso, lo que facilita la verificacion del ejercicio.
 - Test de integracion de librerias de RL: util para comprobar compatibilidad entre versiones de Gymnasium, NumPy y `huggingface_hub` en un entorno de CI, dado que el consumo de recursos es minimo.
 - Generacion de trazas de ejemplo para analisis: el bucle de evaluacion produce secuencias de estado-accion-recompensa utiles para depurar visualizadores o herramientas de analisis de episodios.
 - Prototipado rapido en notebooks: al requerir solo CPU y unos milisegundos por episodio, permite iterar sobre variantes del entorno sin coste de GPU.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el `model-index` de la model card (metrica no verificada por HuggingFace):
+Datos declarados por el autor en el `model-index` de la model card (metrica no verificada por Hugging Face):
 
 | Metrica | Valor | Verificada |
 |---|---|---|
@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de resultados de otros agentes sob
 
 | Modelo | Algoritmo | Entorno | Mean reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| premsainelluri/q-Taxi-v3 | Q-Learning tabular | Taxi-v3 | 7,56 +/- 2,71 | no disponible | HuggingFace |
+| premsainelluri/q-Taxi-v3 | Q-Learning tabular | Taxi-v3 | 7,56 +/- 2,71 | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone en la informacion proporcionada de resultados de otros agentes sob
 - No generaliza: al ser una tabla Q sin funcion de aproximacion, el agente solo cubre los 500 estados discretos de Taxi-v3 y no puede transferirse a entornos con espacio de estados continuo o distinto.
 - Sensibilidad al entorno: si cambia la definicion del entorno o su version en Gymnasium, la indexacion de la tabla puede dejar de ser valida y la politica fallar.
 - Riesgo de sobreajuste a la politica greedy: la evaluacion reporta una desviacion estandar de 2,71 sobre una media de 7,56, lo que indica una varianza notable entre episodios.
-- Resultado no verificado: el `model-index` marca `verified: false`, por lo que el valor de 7,56 no ha sido validado de forma independiente por HuggingFace.
+- Resultado no verificado: el `model-index` marca `verified: false`, por lo que el valor de 7,56 no ha sido validado de forma independiente por Hugging Face.
 - Ausencia de licencia: no se declara licencia alguna, lo que impide determinar si el uso comercial esta permitido; debe tratarse como no autorizado hasta confirmacion del autor.
 - Ausencia de documentacion: no hay informacion sobre hiperparametros, numero de episodios ni semilla de entrenamiento, lo que dificulta la reproducibilidad exacta.
 - Unico artefacto publicado: el repositorio no incluye scripts de entrenamiento ni de evaluacion, solo el pickle y un fragmento de codigo de uso en el README.
@@ -104,7 +104,7 @@ No se dispone en la informacion proporcionada de resultados de otros agentes sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/premsainelluri/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/premsainelluri/q-Taxi-v3
 - Entorno Taxi-v3 de Gymnasium: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible en la informacion proporcionada

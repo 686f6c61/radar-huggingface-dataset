@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `maxbennett/generalized-neural-memory-icl-personamem` | 8.030.261.248 | no disponible | Linea base ICL sobre PersonaMem | llama3 | HuggingFace, 0 descargas |
-| `YuWangX/memoryllm-8b-chat` (modelo base) | no disponible en la informacion proporcionada | no disponible | Chat con modulo de memoria | no disponible | HuggingFace |
+| `maxbennett/generalized-neural-memory-icl-personamem` | 8.030.261.248 | no disponible | Linea base ICL sobre PersonaMem | llama3 | Hugging Face, 0 descargas |
+| `YuWangX/memoryllm-8b-chat` (modelo base) | no disponible en la informacion proporcionada | no disponible | Chat con modulo de memoria | no disponible | Hugging Face |
 | Variantes con memoria latente del mismo articulo | no disponible | no disponible | Memoria neural controlable en lenguaje natural | no disponible | Referenciadas en el repositorio del proyecto |
-| `meta-llama/Meta-Llama-3-8B-Instruct` | 8.030.000.000 aprox. | 8.192 tokens (segun la familia Llama 3) | Instruct generalista | llama3 | HuggingFace, ampliamente distribuido |
+| `meta-llama/Meta-Llama-3-8B-Instruct` | 8.030.000.000 aprox. | 8.192 tokens (segun la familia Llama 3) | Instruct generalista | llama3 | Hugging Face, ampliamente distribuido |
 
 La comparacion cuantitativa de rendimiento entre estas opciones no puede establecerse con la informacion disponible, ya que no se publican cifras de benchmarks para el checkpoint analizado.
 
@@ -86,7 +86,7 @@ La comparacion cuantitativa de rendimiento entre estas opciones no puede estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxbennett/generalized-neural-memory-icl-personamem
+- Modelo en Hugging Face: https://huggingface.co/maxbennett/generalized-neural-memory-icl-personamem
 - Repositorio de codigo del proyecto: https://github.com/maxbennett/Generalized-Neural-Memory
 - Modelo base: https://huggingface.co/YuWangX/memoryllm-8b-chat
 - Modelo base de la familia: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct

@@ -24,7 +24,7 @@ El modelo se entrenó por destilación de prompts: un mundo de 12 civilizaciones
 | Pipeline | text-generation (conversational, structured-output) |
 | Tamaño del repositorio | 2,1 GB |
 | Autor | cow9000 |
-| Fecha de creación / actualización en HuggingFace | 2026-09-11 / 2026-09-11 |
+| Fecha de creación / actualización en Hugging Face | 2026-09-11 / 2026-09-11 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -119,7 +119,7 @@ Otros modelos comparables de 2-3 B orientados a salida estructurada: no disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cow9000/aicivs-joint-p1-v3b2-w4a16
+- Modelo en Hugging Face: https://huggingface.co/cow9000/aicivs-joint-p1-v3b2-w4a16
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Imagen de despliegue recomendada: `vllm/vllm-openai:v0.22.0` (Docker Hub, vLLM)
 - Documentación de entrenamiento citada por el autor: `docs/08-finetuning.md` del repositorio del mod AICivs (no se proporciona URL en la información disponible)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ayushman7577/pirohantman` es un modelo publicado en HuggingFace por el usuario ayushman7577. Según la información disponible, se distribuye en formato GGUF y está licenciado bajo Apache 2.0. Sin embargo, la model card no incluye descripción, arquitectura, tamaño, contexto ni capacidades, por lo que no es posible determinar qué problema resuelve ni su relevancia actual.
+El modelo `ayushman7577/pirohantman` es un modelo publicado en Hugging Face por el usuario ayushman7577. Según la información disponible, se distribuye en formato GGUF y está licenciado bajo Apache 2.0. Sin embargo, la model card no incluye descripción, arquitectura, tamaño, contexto ni capacidades, por lo que no es posible determinar qué problema resuelve ni su relevancia actual.
 
-La ausencia de documentación técnica y de benchmarks publicados impide evaluar su rendimiento o compararlo con otros modelos. En el momento de la consulta, el modelo no registra descargas ni likes en HuggingFace, lo que sugiere que no ha sido ampliamente adoptado ni verificado por la comunidad.
+La ausencia de documentación técnica y de benchmarks publicados impide evaluar su rendimiento o compararlo con otros modelos. En el momento de la consulta, el modelo no registra descargas ni likes en Hugging Face, lo que sugiere que no ha sido ampliamente adoptado ni verificado por la comunidad.
 
 ## Especificaciones técnicas
 
@@ -57,4 +57,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayushman7577/pirohantman
+- Hugging Face: https://huggingface.co/ayushman7577/pirohantman

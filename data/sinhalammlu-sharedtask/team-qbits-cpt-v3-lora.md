@@ -85,7 +85,7 @@ No se dispone de información sobre otros adaptadores o modelos competidores del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SinhalaMMLU-SharedTask/team-qbits-cpt-v3-lora
+- Repositorio Hugging Face: https://huggingface.co/SinhalaMMLU-SharedTask/team-qbits-cpt-v3-lora
 - Modelo base: https://huggingface.co/QBitsLK/gemma4-e4b-sinhala-cpt
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

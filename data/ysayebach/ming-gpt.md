@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `YsayeBach/ming-gpt` es un modelo publicado en HuggingFace por el usuario YsayeBach bajo licencia MIT. El repositorio ocupa 4.0 GB, lo que sugiere un modelo de tamaño considerable, pero la model card está prácticamente vacía, limitándose a declarar la licencia. No se proporcionan detalles sobre arquitectura, parámetros, contexto, idiomas ni capacidades.
+El modelo `YsayeBach/ming-gpt` es un modelo publicado en Hugging Face por el usuario YsayeBach bajo licencia MIT. El repositorio ocupa 4.0 GB, lo que sugiere un modelo de tamaño considerable, pero la model card está prácticamente vacía, limitándose a declarar la licencia. No se proporcionan detalles sobre arquitectura, parámetros, contexto, idiomas ni capacidades.
 
 Esta falta de documentación impide realizar una evaluación técnica rigurosa. Cualquier uso en producción debe considerarse de alto riesgo y requeriría una validación exhaustiva por parte del desarrollador, incluyendo pruebas de seguridad, calidad y rendimiento antes de su integración en flujos de trabajo reales.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la arquitectura ni el número de parámetros, no 
 
 ## Enlaces
 
-- [HuggingFace: YsayeBach/ming-gpt](https://huggingface.co/YsayeBach/ming-gpt)
+- [Hugging Face: YsayeBach/ming-gpt](https://huggingface.co/YsayeBach/ming-gpt)

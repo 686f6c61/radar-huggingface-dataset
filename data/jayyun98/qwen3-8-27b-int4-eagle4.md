@@ -97,7 +97,7 @@ La comparativa se limita a los tres componentes del mismo ecosistema; no se disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jayyun98/Qwen3.8-27B-INT4-EAGLE4
+- Hugging Face: https://huggingface.co/jayyun98/Qwen3.8-27B-INT4-EAGLE4
 - Modelo base (draft origen): https://huggingface.co/EAGLE-Corp/Qwen3.8-27B-EAGLE4
 - Modelo objetivo: https://huggingface.co/RedHatAI/Qwen3.8-27B-INT4
 - Herramienta Draftfit: https://github.com/JayYun98/Draftfit

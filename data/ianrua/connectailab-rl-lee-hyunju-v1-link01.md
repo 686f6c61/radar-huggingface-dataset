@@ -67,9 +67,9 @@ El autor indica que la evaluación de caminata se realizó con una aproximación
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lee-hyunju-v1-link01 | Adaptador sobre 0,8B | No disponible | 81,8% / 78,8% de acierto en tarea propia | Apache 2.0 | HuggingFace, 13 descargas |
+| connectailab-rl-lee-hyunju-v1-link01 | Adaptador sobre 0,8B | No disponible | 81,8% / 78,8% de acierto en tarea propia | Apache 2.0 | Hugging Face, 13 descargas |
 | Política PPO profesora (brain.json) | No aplica (política tabular/neuronal del simulador) | No disponible | 100% en la tarea propia | No disponible | Dentro del simulador CONNECT AI WORLD |
-| Qwen3.5-0.8B (base) | 0,8B | No disponible | No evaluado en esta tarea; 30,5% sin ajuste | No disponible en la información | HuggingFace |
+| Qwen3.5-0.8B (base) | 0,8B | No disponible | No evaluado en esta tarea; 30,5% sin ajuste | No disponible en la información | Hugging Face |
 
 No se dispone de otros adaptadores de decisión robótica comparables en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de otros adaptadores de decisión robótica comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ianrua/connectailab-rl-lee-hyunju-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/ianrua/connectailab-rl-lee-hyunju-v1-link01
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Simulador web de aprendizaje del robot: https://www.ezerai.xyz/robot-lab/world/

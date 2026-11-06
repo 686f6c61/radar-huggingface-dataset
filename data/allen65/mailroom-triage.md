@@ -72,9 +72,9 @@ El propio autor advierte que el 100 % en test es un resultado sintético iid y n
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mailroom-Triage v1 | No disponible (encoder MiniLM ~22 M + 12 cabezas) | 320 tokens | Clasificación de correo de facturación con cabezas calibradas | Apache-2.0 (pesos), MIT (código) | HuggingFace + GitHub |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22 M | 256 tokens | Embeddings de frases de propósito general | Apache-2.0 | HuggingFace |
-| Modelos de clasificación zero-shot tipo NLI | No disponible | Variable | Clasificación por etiquetas en lenguaje natural | Variable | HuggingFace |
+| Mailroom-Triage v1 | No disponible (encoder MiniLM ~22 M + 12 cabezas) | 320 tokens | Clasificación de correo de facturación con cabezas calibradas | Apache-2.0 (pesos), MIT (código) | Hugging Face + GitHub |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22 M | 256 tokens | Embeddings de frases de propósito general | Apache-2.0 | Hugging Face |
+| Modelos de clasificación zero-shot tipo NLI | No disponible | Variable | Clasificación por etiquetas en lenguaje natural | Variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/allen65/Mailroom-Triage
+- Hugging Face: https://huggingface.co/allen65/Mailroom-Triage
 - Código: https://github.com/deepakchoudhary-dc/Mailroom-Triage
 - Model card completa: https://github.com/deepakchoudhary-dc/Mailroom-Triage/blob/main/reports/model_card.md
 - Dataset: https://huggingface.co/datasets/ZefanCai/Open-Jev

@@ -13,7 +13,7 @@ El modelo `taurusduan/Qwen3-Embedding-0.6B-GGUF` es una version cuantizada en fo
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 32.000 tokens |
 | Tipos de cuantizacion | q8_0, f16 (GGUF) |
-| Idiomas soportados | Mas de 100 idiomas (segun model card); campo "Idiomas" en HuggingFace: no disponible |
+| Idiomas soportados | Mas de 100 idiomas (segun model card); campo "Idiomas" en Hugging Face: no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (cuantizado) |
 
@@ -57,18 +57,18 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Dimension embedding | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-Embedding-0.6B (original) | 0.6B (595M) | 32K | 32-1024 (MRL) | Safetensors | Apache 2.0 | HuggingFace Qwen/Qwen3-Embedding-0.6B |
-| taurusduan/Qwen3-Embedding-0.6B-GGUF | 0.6B (595M) | 32K | 32-1024 (MRL) | GGUF q8_0, f16 | Apache 2.0 | HuggingFace taurusduan |
-| Qwen3-Embedding-4B | 4B | 32K | 32-2560 (MRL) | Safetensors (no cuantizado) | Apache 2.0 | HuggingFace Qwen/Qwen3-Embedding-4B |
-| Qwen3-Embedding-8B | 8B | 32K | 32-4096 (MRL) | Safetensors (no cuantizado) | Apache 2.0 | HuggingFace Qwen/Qwen3-Embedding-8B |
+| Qwen3-Embedding-0.6B (original) | 0.6B (595M) | 32K | 32-1024 (MRL) | Safetensors | Apache 2.0 | Hugging Face Qwen/Qwen3-Embedding-0.6B |
+| taurusduan/Qwen3-Embedding-0.6B-GGUF | 0.6B (595M) | 32K | 32-1024 (MRL) | GGUF q8_0, f16 | Apache 2.0 | Hugging Face taurusduan |
+| Qwen3-Embedding-4B | 4B | 32K | 32-2560 (MRL) | Safetensors (no cuantizado) | Apache 2.0 | Hugging Face Qwen/Qwen3-Embedding-4B |
+| Qwen3-Embedding-8B | 8B | 32K | 32-4096 (MRL) | Safetensors (no cuantizado) | Apache 2.0 | Hugging Face Qwen/Qwen3-Embedding-8B |
 
 Los modelos de 4B y 8B tienen mayor capacidad y, segun la model card, mejores resultados generales (el 8B es el lider de MTEB multilingue). Sin embargo, para la version 0.6B no se aportan resultados comparativos concretos.
 
 ## Limitaciones y advertencias
 
-- Este modelo es de embeddings, no generativo, aunque la metadata de HuggingFace incluye la etiqueta "conversational". No se puede utilizar para generar texto; su salida es un vector.
+- Este modelo es de embeddings, no generativo, aunque la metadata de Hugging Face incluye la etiqueta "conversational". No se puede utilizar para generar texto; su salida es un vector.
 - No se dispone de resultados de benchmarks concretos para la variante 0.6B. La unica referencia a MTEB corresponde al modelo de 8B de la misma serie.
-- La metadata de HuggingFace no define los idiomas soportados; la model card afirma mas de 100 idiomas, pero el rendimiento real en espanol y otros idiomas no se ha verificado en esta ficha.
+- La metadata de Hugging Face no define los idiomas soportados; la model card afirma mas de 100 idiomas, pero el rendimiento real en espanol y otros idiomas no se ha verificado en esta ficha.
 - Al ser un modelo cuantizado GGUF, puede haber una perdida de precision en las representaciones vectoriales frente a los pesos originales en safetensors. Para aplicaciones sensibles, se recomienda validar con los pesos sin cuantizar.
 - El unico metodo de uso documentado es `llama.cpp` con `--pooling last`; otras alternativas de despliegue no estan cubiertas en la informacion.
 - La fecha de creacion del repositorio, 2026-09-08, es futura respecto al conocimiento actual, lo que puede ser un dato erroneo o una version preliminar. Se recomienda verificar la integridad del repositorio antes de desplegarlo en produccion.
@@ -76,7 +76,7 @@ Los modelos de 4B y 8B tienen mayor capacidad y, segun la model card, mejores re
 
 ## Enlaces
 
-- HuggingFace (repositorio GGUF): https://huggingface.co/taurusduan/Qwen3-Embedding-0.6B-GGUF
+- Hugging Face (repositorio GGUF): https://huggingface.co/taurusduan/Qwen3-Embedding-0.6B-GGUF
 - Modelo original Qwen3-Embedding-0.6B: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Blog oficial Qwen3 Embedding: https://qwenlm.github.io/blog/qwen3-embedding/
 - GitHub Qwen3-Embedding: https://github.com/QwenLM/Qwen3-Embedding

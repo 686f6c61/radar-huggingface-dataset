@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ab-naidu/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2. Lo publica el usuario ab-naidu en HuggingFace mediante la libreria stable-baselines3, el framework de referencia para algoritmos RL classic en PyTorch. No es un modelo de lenguaje ni un modelo fundacional: es un checkpoint de politica neuronal que controla una nave en un simulador fisico 2D, por lo que muchas de las categorias habituales (tokens, cuantizacion, idiomas, tool calling) no aplican directamente.
+`ab-naidu/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2. Lo publica el usuario ab-naidu en Hugging Face mediante la libreria stable-baselines3, el framework de referencia para algoritmos RL classic en PyTorch. No es un modelo de lenguaje ni un modelo fundacional: es un checkpoint de politica neuronal que controla una nave en un simulador fisico 2D, por lo que muchas de las categorias habituales (tokens, cuantizacion, idiomas, tool calling) no aplican directamente.
 
 El interes de la publicacion es limitado y, sobre todo, metodologico. La propia model card es la plantilla generada automaticamente por stable-baselines3 y no ha sido completada: la seccion de uso contiene un bloque de codigo con `TODO` y no se documenta ni la configuracion de red, ni los hiperparametros, ni el numero de pasos de entrenamiento. El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, lo que sugiere un artefacto de experimentacion personal mas que un recurso destinado a reutilizacion.
 
@@ -73,7 +73,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entorno | Retorno medio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ab-naidu/ppo-LunarLander-v2 | PPO (stable-baselines3) | LunarLander-v2 | -459.36 +/- 156.16 (no verificado) | No disponible | HuggingFace, 0 descargas |
+| ab-naidu/ppo-LunarLander-v2 | PPO (stable-baselines3) | LunarLander-v2 | -459.36 +/- 156.16 (no verificado) | No disponible | Hugging Face, 0 descargas |
 | Checkpoints PPO de la RL Zoo de stable-baselines3 para LunarLander-v2 | PPO | LunarLander-v2 | No disponible en la informacion proporcionada | No disponible | Repositorio de la RL Zoo |
 | Agentes DQN / A2C para LunarLander-v2 | DQN / A2C | LunarLander-v2 | No disponible en la informacion proporcionada | No disponible | Ejemplos de stable-baselines3 |
 | Implementaciones PPO de CleanRL | PPO (monoarchivo) | LunarLander-v2 y otros entornos de Gymnasium | No disponible en la informacion proporcionada | MIT (segun el repositorio de CleanRL) | Repositorio de CleanRL |
@@ -94,7 +94,7 @@ No se dispone de cifras verificadas de los modelos alternativos dentro de la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ab-naidu/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/ab-naidu/ppo-LunarLander-v2
 - Libreria stable-baselines3 (referenciada en la model card): https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga desde el Hub (huggingface_sb3, referenciada en la model card): repositorio de huggingface_sb3
 - Entorno LunarLander-v2: documentacion de Gymnasium / Farama Foundation

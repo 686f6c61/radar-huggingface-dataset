@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-code-task00-pilot-packager-544657cd68e0-9a986b0507bb` es un artefacto publicado en HuggingFace por el usuario `davidwdw` que, segun su propia model card, consiste en un paquete de archivo ("fleet archive") de caracter privado. No se trata de un modelo de lenguaje con pesos entrenados documentados, sino de una instantanea generada por un empaquetador automatico, identificada internamente como `code-task00-pilot-packager-544657cd68e0`.
+El repositorio `davidwdw/fa-code-task00-pilot-packager-544657cd68e0-9a986b0507bb` es un artefacto publicado en Hugging Face por el usuario `davidwdw` que, segun su propia model card, consiste en un paquete de archivo ("fleet archive") de caracter privado. No se trata de un modelo de lenguaje con pesos entrenados documentados, sino de una instantanea generada por un empaquetador automatico, identificada internamente como `code-task00-pilot-packager-544657cd68e0`.
 
 La model card describe el contenido como un "snapshot, not a live directory mirror" y remite a una receta canonica bajo la ruta `evaluations/2026-09-23_task00_centre_recovery_pilot`, con nivel ("tier") asignado a `code`. Se indica que debe usarse la revision exacta registrada y verificarse el fichero `SHA256SUMS`, lo que apunta a un flujo de trabajo de trazabilidad y reproducibilidad de artefactos, no a un modelo listo para inferencia.
 
@@ -74,7 +74,7 @@ No disponible. No hay informacion sobre parametros, contexto, rendimiento ni lic
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| davidwdw/fa-code-task00-pilot-packager-544657cd68e0-9a986b0507bb | no disponible | no disponible | no disponible | publica en HuggingFace, con 0 descargas |
+| davidwdw/fa-code-task00-pilot-packager-544657cd68e0-9a986b0507bb | no disponible | no disponible | no disponible | publica en Hugging Face, con 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. No hay informacion sobre parametros, contexto, rendimiento ni lic
 - Ausencia total de documentacion tecnica: no se especifican arquitectura, parametros, contexto, tokenizador ni formato de pesos.
 - La licencia no esta declarada, por lo que no puede asumirse ningun permiso de uso comercial ni de redistribucion.
 - No hay declaracion de idiomas soportados.
-- Riesgo de confusion: pese a estar alojado en HuggingFace, el artefacto se autodescribe como archivo de flota privada, no como modelo. Tratarlo como modelo desplegable es un error de interpretacion.
+- Riesgo de confusion: pese a estar alojado en Hugging Face, el artefacto se autodescribe como archivo de flota privada, no como modelo. Tratarlo como modelo desplegable es un error de interpretacion.
 - La model card menciona un caracter "privado"; la publicacion en un repositorio accesible puede ser accidental o meramente referencial, lo que conviene aclarar con el autor antes de cualquier uso.
 - Sesgos conocidos: no disponible, al no existir informacion sobre datos de entrenamiento.
 - Riesgo de alucinacion: no evaluable, al no existir un modelo de generacion confirmado.
@@ -93,7 +93,7 @@ No disponible. No hay informacion sobre parametros, contexto, rendimiento ni lic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-pilot-packager-544657cd68e0-9a986b0507bb
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-pilot-packager-544657cd68e0-9a986b0507bb
 - Receta canonica referenciada en la model card: `evaluations/2026-09-23_task00_centre_recovery_pilot` (ruta interna, sin URL publica disponible)
 - Fichero de verificacion referenciado: `SHA256SUMS` (ubicacion no disponible)
 - Paper, blog, repositorio de codigo o demo: no disponibles

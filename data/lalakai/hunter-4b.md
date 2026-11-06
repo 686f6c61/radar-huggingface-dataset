@@ -19,7 +19,7 @@ El modelo es relevante porque ocupa un nicho muy concreto: un 4B que cabe en un 
 | Tipos de cuantizacion | FP16 y Q4_K_M publicadas; se incluye matriz de importancia (`.imatrix`) para recuantizar |
 | Idiomas soportados | Ingles (`en`) |
 | Licencia | MIT |
-| Formato de pesos | GGUF exclusivamente (FP16 y Q4_K_M). No se anuncian safetensors en la model card, aunque el recuento de parametros de HuggingFace aparece como dato real de safetensors |
+| Formato de pesos | GGUF exclusivamente (FP16 y Q4_K_M). No se anuncian safetensors en la model card, aunque el recuento de parametros de Hugging Face aparece como dato real de safetensors |
 | Plantilla de prompt | ChatML (`<\|im_start\|>` / `<\|im_end\|>`), con trazas de razonamiento en `<thought>...</thought>` |
 | Tamano del repositorio | 10,6 GB |
 | Fecha de publicacion | 28 de septiembre de 2026 (ultima actualizacion: 29 de septiembre de 2026) |
@@ -77,7 +77,7 @@ Estos datos proceden del autor y no se acompanan de metodologia de medicion, har
 - GPU consumer: la cuantizacion Q4_K_M cabe holgadamente en cualquier GPU con 8 GB o mas (RTX 3060 Ti, 4060, 4070, 3070, 2080, etc.) e incluso en GPUs de 6 GB con contexto reducido. La version FP16 requiere 12 GB o mas para operar con comodidad (RTX 3060 12 GB, 4070 Ti, 4080, 4090) o memoria unificada de 16 GB o mas en Apple Silicon.
 - GPU de datacenter: A100, H100, L40S y similares son sobredimensionadas para un modelo de 4B, pero permiten servir muchas instancias concurrentes o usar FP16 con contexto amplio.
 - CPU: al ser GGUF, puede ejecutarse integramente en CPU con llama.cpp, a costa de una velocidad notablemente inferior a la declarada para GPU o Apple Silicon.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama mediante `Modelfile`, LM Studio, `llama-cpp-python` y cualquier runtime compatible con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama mediante `Modelfile`, LM Studio, `llama-cpp-python` y cualquier runtime compatible con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Soporte en vLLM o TGI: no confirmado en la informacion proporcionada. El soporte de GGUF en estos motores es parcial y no se anuncia oficialmente para este modelo.
 - Latencia y throughput: 28-38 tokens/s en Apple Silicon y 18-24 tokens/s en portatiles x86 modernos con Q4_K_M, segun datos del autor. No se aporta latencia hasta el primer token ni medidas con lotes concurrentes.
 
@@ -109,7 +109,7 @@ Diferencias clave: Hunter-4B es el unico de la lista con licencia MIT pura, lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lalakai/Hunter-4B
+- Modelo en Hugging Face: https://huggingface.co/Lalakai/Hunter-4B
 - Perfil del autor en X (Lalakai Labs): https://x.com/LalakaiAI
 - Especificacion del formato GGUF: https://github.com/ggerganov/ggml/blob/master/docs/gguf.md
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

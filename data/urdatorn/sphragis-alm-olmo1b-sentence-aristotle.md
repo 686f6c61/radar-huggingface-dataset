@@ -61,7 +61,7 @@ No se han publicado resultados individuales para este modelo concreto en la info
 - VRAM estimada para inferencia: al ser un modelo de 1.000 millones de parametros en bf16, requiere aproximadamente 2,4 GB de VRAM para los pesos, mas overhead de activaciones y KV cache.
 - GPU recomendadas: cualquier GPU consumer con al menos 6 GB de VRAM (RTX 2060, RTX 3060, etc.) es suficiente para inferencia en precision bf16 o fp16.
 - En GPU consumer: si cabe, en practicamente cualquier GPU moderna con 8 GB o mas de VRAM.
-- Opciones de despliegue: al ser un modelo OLMo en formato safetensors, puede cargarse con HuggingFace Transformers, vLLM o TGI. No se proporcionan pesos en GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo OLMo en formato safetensors, puede cargarse con Hugging Face Transformers, vLLM o TGI. No se proporcionan pesos en GGUF para llama.cpp u Ollama.
 - Latencia y throughput: no disponible en la informacion proporcionada, pero para un modelo de 1B en una GPU moderna se espera una latencia de decenas de milisegundos por token.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparativa directa con otros modelos de atribucion de autoria en griego anti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-aristotle
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-aristotle
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Codigo de entrenamiento y atribucion: https://github.com/Urdatorn/sphragis_models
 - Leaderboard del benchmark: https://huggingface.co/spaces/Urdatorn/sphragis-leaderboard

@@ -21,7 +21,7 @@ El modelo está diseñado para tareas de generación de texto y se distribuye co
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura GPT-2, como indica la etiqueta `gpt2` en HuggingFace. Es un transformer decoder-only con 39 millones de parámetros, un tamaño que lo sitúa en la categoría de modelos pequeños. El proceso de entrenamiento consistió en un ajuste fino supervisado (SFT) sobre el modelo base `goldfish-models/ind_latn_10mb`, utilizando la librería TRL (Transformers Reinforcement Learning) en su versión 0.23.0, con Transformers 4.56.2 y PyTorch 2.11.0. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens procesados ni la composición del corpus. El nombre del modelo (`100mb`) sugiere que se emplearon 100 MB de datos de entrenamiento, pero esta cifra no está confirmada en la documentación. Tampoco se mencionan técnicas adicionales como RLHF o DPO; el entrenamiento se limitó a SFT.
+El modelo se basa en la arquitectura GPT-2, como indica la etiqueta `gpt2` en Hugging Face. Es un transformer decoder-only con 39 millones de parámetros, un tamaño que lo sitúa en la categoría de modelos pequeños. El proceso de entrenamiento consistió en un ajuste fino supervisado (SFT) sobre el modelo base `goldfish-models/ind_latn_10mb`, utilizando la librería TRL (Transformers Reinforcement Learning) en su versión 0.23.0, con Transformers 4.56.2 y PyTorch 2.11.0. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens procesados ni la composición del corpus. El nombre del modelo (`100mb`) sugiere que se emplearon 100 MB de datos de entrenamiento, pero esta cifra no está confirmada en la documentación. Tampoco se mencionan técnicas adicionales como RLHF o DPO; el entrenamiento se limitó a SFT.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: aproximadamente 0,1 GB según LLM Explorer, lo que permite inferencia en GPU con muy poca memoria.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM (por ejemplo, NVIDIA GTX 1050, RTX 2060, etc.). También es viable en CPU.
 - Compatibilidad con consumer GPU: sí, cabe en cualquier GPU de consumo actual.
-- Opciones de despliegue: compatible con `transformers` (pipeline), `text-generation-inference` (TGI) y endpoints de HuggingFace. También puede ejecutarse con `llama.cpp` si se convierte a GGUF, aunque no se proporcionan archivos GGUF en el repositorio.
+- Opciones de despliegue: compatible con `transformers` (pipeline), `text-generation-inference` (TGI) y endpoints de Hugging Face. También puede ejecutarse con `llama.cpp` si se convierte a GGUF, aunque no se proporcionan archivos GGUF en el repositorio.
 - Latencia y throughput: no se dispone de datos medidos, pero por el tamaño del modelo se espera una latencia muy baja (del orden de milisegundos por token en GPU).
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar rendimiento, contexto o l
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/ind-latn-10mb-100mb_seed455](https://huggingface.co/fpadovani/ind-latn-10mb-100mb_seed455)
+- [Hugging Face - fpadovani/ind-latn-10mb-100mb_seed455](https://huggingface.co/fpadovani/ind-latn-10mb-100mb_seed455)
 - [LLM Explorer - fpadovani/ind-latn-10mb-ppt-Dp-100mb_seed455](https://llm-explorer.com/model/fpadovani%2Find-latn-10mb-ppt-Dp-100mb_seed455,5qG8R1FZFYaEV34xzuKm9U) (modelo similar)
 - [FriendliAI - fpadovani/ind-latn-100mb-ppt-Dp-10mb_seed455](https://friendli.ai/models/fpadovani/ind-latn-100mb-ppt-Dp-10mb_seed455) (modelo similar)
 - [Weights & Biases run](https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/ws3rxii6) (registro de entrenamiento)

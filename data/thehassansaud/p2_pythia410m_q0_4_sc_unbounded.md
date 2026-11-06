@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `TheHassanSaud/P2_pythia410m_q0_4_sc_unbounded` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario TheHassanSaud. Por su arquitectura (`gpt_neox`) y su recuento de parametros en safetensors (405.334.016, aproximadamente 405 millones), se trata de un derivado de la familia Pythia-410M de EleutherAI, si bien el autor no declara explicitamente la relacion con ese modelo base en la model card. No se especifica si es un modelo preentrenado, un ajuste fino o un experimento de cuantizacion, aunque el sufijo del identificador (`q0_4`, `sc`, `unbounded`) apunta a una variante experimental, posiblemente ligada a cuantizacion y a generacion sin limites de longitud.
+El modelo `TheHassanSaud/P2_pythia410m_q0_4_sc_unbounded` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario TheHassanSaud. Por su arquitectura (`gpt_neox`) y su recuento de parametros en safetensors (405.334.016, aproximadamente 405 millones), se trata de un derivado de la familia Pythia-410M de EleutherAI, si bien el autor no declara explicitamente la relacion con ese modelo base en la model card. No se especifica si es un modelo preentrenado, un ajuste fino o un experimento de cuantizacion, aunque el sufijo del identificador (`q0_4`, `sc`, `unbounded`) apunta a una variante experimental, posiblemente ligada a cuantizacion y a generacion sin limites de longitud.
 
 La relevancia de esta ficha es limitada desde el punto de vista de produccion: el repositorio no incluye informacion sobre datos de entrenamiento, licencia, idiomas, benchmarks ni uso previsto. La model card es la plantilla automatica de transformers, con todos los campos marcados como `[More Information Needed]`. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, lo que refuerza la idea de que se trata de un artefacto de investigacion o de un experimento personal mas que de un modelo listo para despliegue.
 
@@ -72,10 +72,10 @@ Los datos de las alternativas corresponden a especificaciones publicas ampliamen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| P2_pythia410m_q0_4_sc_unbounded | 405 M | No disponible (referencia de la familia: 2048) | No disponible | HuggingFace |
-| Pythia-410M (EleutherAI) | 405 M | 2048 tokens | Apache 2.0 | HuggingFace, pesos y checkpoints intermedios |
-| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | HuggingFace |
-| SmolLM-360M / Qwen2.5-0.5B | 360-500 M | 2048-32768 tokens | Apache 2.0 | HuggingFace |
+| P2_pythia410m_q0_4_sc_unbounded | 405 M | No disponible (referencia de la familia: 2048) | No disponible | Hugging Face |
+| Pythia-410M (EleutherAI) | 405 M | 2048 tokens | Apache 2.0 | Hugging Face, pesos y checkpoints intermedios |
+| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | Hugging Face |
+| SmolLM-360M / Qwen2.5-0.5B | 360-500 M | 2048-32768 tokens | Apache 2.0 | Hugging Face |
 
 Frente a Pythia-410M, este checkpoint no aporta informacion adicional sobre datos, licencia o mejoras de entrenamiento, y carece de la documentacion exhaustiva y de los checkpoints intermedios que si publica EleutherAI. Su principal desventaja frente a alternativas modernas de tamano similar es la ausencia de ajuste por instrucciones y de contexto largo.
 
@@ -94,6 +94,6 @@ Frente a Pythia-410M, este checkpoint no aporta informacion adicional sobre dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_4_sc_unbounded
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_4_sc_unbounded
 - Referencia del tag arXiv incluido por el autor (Lacoste et al., 2019, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a paginas corporativas de Microsoft sin relacion con el repositorio.

@@ -73,6 +73,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Mr-J-369/SDXL-MNN)
+- [Modelo en Hugging Face](https://huggingface.co/Mr-J-369/SDXL-MNN)
 - [Aplicación Fancy AI en Google Play](https://play.google.com/store/apps/details?id=com.mrj.fancyai)
 - [Repositorio GitHub de Fancy AI](https://github.com/Mr-J-369/Fancy-Ai)

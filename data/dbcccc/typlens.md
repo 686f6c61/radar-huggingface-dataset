@@ -12,7 +12,7 @@ Su relevancia ahora es practica: Typst esta ganando adopcion como alternativa a 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | vision-encoder-decoder (tag oficial de HuggingFace); derivada de la familia Pix2Text-MFR |
+| Arquitectura | vision-encoder-decoder (tag oficial de Hugging Face); derivada de la familia Pix2Text-MFR |
 | Parametros totales | 29.403.264 (29,4 M) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -100,7 +100,7 @@ Condiciones de la medicion: Chromium 152 sobre Windows con cuatro hilos WASM. El
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dbcccc/TypLens
+- Modelo en Hugging Face: https://huggingface.co/dbcccc/TypLens
 - Modelo base: https://huggingface.co/breezedeus/pix2text-mfr-1.5
 - Release relacionada del mismo autor: https://huggingface.co/dbcccc/IBEM-im2typst
 - Contrato de entrada, cache y decodificacion: INFERENCE.md (incluido en el repositorio del modelo)

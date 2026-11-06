@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`handeyildirim/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3` de la suite de robótica de Gymnasium-Robotics. Lo publica el usuario de HuggingFace `handeyildirim` y se distribuye en formato compatible con la librería Stable-Baselines3, lo que permite cargarlo con `huggingface_sb3.load_from_hub` y evaluarlo directamente sobre el mismo entorno.
+`handeyildirim/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3` de la suite de robótica de Gymnasium-Robotics. Lo publica el usuario de Hugging Face `handeyildirim` y se distribuye en formato compatible con la librería Stable-Baselines3, lo que permite cargarlo con `huggingface_sb3.load_from_hub` y evaluarlo directamente sobre el mismo entorno.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de una política entrenada para una tarea concreta de control robótico: mover el efector final de un brazo Franka Panda hasta una posición objetivo en el espacio 3D. El espacio de observaciones es continuo y de baja dimensión, y el de acciones es continuo de 3 componentes (desplazamiento cartesiano del efector).
 
@@ -78,7 +78,7 @@ No se dispone de información sobre otros agentes publicados en el Hub para `Pan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/handeyildirim/a2c-PandaReachDense-v3
+- Hugging Face: https://huggingface.co/handeyildirim/a2c-PandaReachDense-v3
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno PandaReachDense-v3 (panda-gym): https://github.com/qgallouedec/panda-gym

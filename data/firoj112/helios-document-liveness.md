@@ -86,6 +86,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Firoj112/helios-document-liveness
+- Modelo en Hugging Face: https://huggingface.co/Firoj112/helios-document-liveness
 - Perfil del autor: https://huggingface.co/Firoj112
 - Sitio personal del autor: https://firojpaudel.com.np/

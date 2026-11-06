@@ -76,9 +76,9 @@ No se aportan comparaciones numéricas con Llama-2-7b-chat sin comprimir ni con 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapgapiter_b010_r02 | 6.738.415.616 (metadatos safetensors) | 4.096 tokens (heredado) | Llama 2 Community License | HuggingFace, 0 descargas | Artefacto de investigación con seguridad degradada; ASR AdvBench 0,2350 |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens | Llama 2 Community License | HuggingFace, ampliamente usado | Modelo base sin comprimir; referencia para medir la degradación |
-| Otras celdas de la rejilla del mismo autor (`svd-safety-l2_*`) | variable según presupuesto | 4.096 tokens (heredado) | Llama 2 Community License | HuggingFace | Comparables directas para aislar el efecto de la regla de selección y del presupuesto |
+| svd-safety-l2_remove50_swapgapiter_b010_r02 | 6.738.415.616 (metadatos safetensors) | 4.096 tokens (heredado) | Llama 2 Community License | Hugging Face, 0 descargas | Artefacto de investigación con seguridad degradada; ASR AdvBench 0,2350 |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens | Llama 2 Community License | Hugging Face, ampliamente usado | Modelo base sin comprimir; referencia para medir la degradación |
+| Otras celdas de la rejilla del mismo autor (`svd-safety-l2_*`) | variable según presupuesto | 4.096 tokens (heredado) | Llama 2 Community License | Hugging Face | Comparables directas para aislar el efecto de la regla de selección y del presupuesto |
 
 No se dispone de datos numéricos comparativos entre estas variantes en la información proporcionada. No se conocen modelos de terceros directamente equivalentes, ya que se trata de un artefacto de estudio muy específico.
 
@@ -95,6 +95,6 @@ No se dispone de datos numéricos comparativos entre estas variantes en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r02
+- Repositorio Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en los resultados de búsqueda web proporcionados; los resultados disponibles corresponden a páginas genéricas de Google sin relación con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yinita/gigpo-debate-sync2-w3c20-0805-r2-step90` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `yinita` en HuggingFace. Se trata de un checkpoint intermedio de un entrenamiento con GiGPO (Group-in-Group Policy Optimization), una técnica de optimización de políticas para agentes LLM descrita en el artículo arXiv 2505.10978. El adaptador se entrena sobre el modelo base `yinita/ps4mas-sft-x5-single-ep3`, que a su vez es un modelo ajustado mediante SFT (supervised fine-tuning) en cinco épocas.
+El modelo `yinita/gigpo-debate-sync2-w3c20-0805-r2-step90` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `yinita` en Hugging Face. Se trata de un checkpoint intermedio de un entrenamiento con GiGPO (Group-in-Group Policy Optimization), una técnica de optimización de políticas para agentes LLM descrita en el artículo arXiv 2505.10978. El adaptador se entrena sobre el modelo base `yinita/ps4mas-sft-x5-single-ep3`, que a su vez es un modelo ajustado mediante SFT (supervised fine-tuning) en cinco épocas.
 
 El entrenamiento utiliza una topología de debate denominada "PS-cold-debate", con un juez externo (Bedrock Claude Sonnet 4.6) para evaluar las respuestas. El checkpoint corresponde al paso 90 de un run que se reanudó tras un fallo en el paso 87. El repositorio contiene únicamente los pesos del adaptador (sin optimizador), con un tamaño total de 0,1 GB. No se dispone de información sobre la arquitectura del modelo base, su número de parámetros, licencia o idiomas soportados, lo que limita su uso directo en producción sin documentación adicional.
 
@@ -50,7 +50,7 @@ Al ser un adaptador LoRA de 0,1 GB, los requisitos de hardware dependen principa
 - VRAM adicional para el adaptador: aproximadamente 0,1 GB, despreciable frente al modelo base.
 - VRAM total estimada: no disponible, depende del modelo base. Si el base es un modelo de 7B, se necesitarian al menos 14-16 GB en FP16; si es de 13B, 26-28 GB; si es de 70B, 140 GB o mas.
 - GPU recomendadas: no disponible. Para modelos de 7B, una RTX 3090/4090 o A10G seria suficiente; para modelos mayores, se requieren A100/H100.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `peft` de HuggingFace junto con el modelo base. Tambien es compatible con frameworks como vLLM o TGI si el modelo base es soportado, aunque no hay confirmacion.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `peft` de Hugging Face junto con el modelo base. Tambien es compatible con frameworks como vLLM o TGI si el modelo base es soportado, aunque no hay confirmacion.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables. El adaptador es un check
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yinita/gigpo-debate-sync2-w3c20-0805-r2-step90
+- Repositorio Hugging Face: https://huggingface.co/yinita/gigpo-debate-sync2-w3c20-0805-r2-step90
 - Articulo GiGPO (arXiv): https://arxiv.org/abs/2505.10978
 - Repositorio del modelo base (referenciado): https://huggingface.co/yinita/ps4mas-sft-x5-single-ep3
 - Checkpoint relacionado (paso 0): https://huggingface.co/yinita/gigpo-debate-sync2-w3c20-0805-r2-step0

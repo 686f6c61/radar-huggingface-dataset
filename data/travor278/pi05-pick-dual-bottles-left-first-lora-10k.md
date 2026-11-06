@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Travor278/pi05-pick-dual-bottles-left-first-lora-10k | no disponible | no aplica (política robótica) | sin métricas declaradas; sin tasa de éxito de rollout | no disponible | HuggingFace, 6,3 GB, 0 descargas, 0 likes |
-| XinY0201/openpi-pi05-base-jax (modelo base del ajuste) | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado como base, commit 5e62884fcf8cb8f9fc693c9163ea18d3e3739658) |
+| Travor278/pi05-pick-dual-bottles-left-first-lora-10k | no disponible | no aplica (política robótica) | sin métricas declaradas; sin tasa de éxito de rollout | no disponible | Hugging Face, 6,3 GB, 0 descargas, 0 likes |
+| XinY0201/openpi-pi05-base-jax (modelo base del ajuste) | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado como base, commit 5e62884fcf8cb8f9fc693c9163ea18d3e3739658) |
 | Otros ajustes LoRA de PI0.5 | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 No se dispone de datos comparativos de rendimiento ni de especificaciones de alternativas de la misma categoría en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento ni de especificaciones de alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-pick-dual-bottles-left-first-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-pick-dual-bottles-left-first-lora-10k
 - Modelo base referenciado (XinY0201/openpi-pi05-base-jax, commit 5e62884fcf8cb8f9fc693c9163ea18d3e3739658): https://huggingface.co/XinY0201/openpi-pi05-base-jax
 - Dataset de entrenamiento (Shiki42/ctr-pick-dual-bottles-left-first-20260911, commit da5c6c49c1e04fbd0e55bf884f4c7c734cdf79ea): https://huggingface.co/datasets/Shiki42/ctr-pick-dual-bottles-left-first-20260911
 - Framework openpi (referenciado por el campo `library_name` del modelo): https://github.com/Physical-Intelligence/openpi

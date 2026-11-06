@@ -4,7 +4,7 @@
 
 MyAwesomeModel es un modelo de lenguaje desarrollado por sdafaf33 que, según su documentacion, ha recibido una actualizacion significativa orientada a mejorar la profundidad de razonamiento y las capacidades de inferencia. El autor indica que la nueva version aprovecha mayores recursos computacionales y optimizaciones algoritmicas durante el post-entrenamiento, lo que se traduce en mejoras en matematicas, programacion y logica general. El modelo se presenta como una alternativa competitiva frente a otros modelos de referencia, aunque en la informacion disponible no se identifican dichos modelos.
 
-La documentacion menciona una mejora concreta en el benchmark AIME 2025, donde la precision pasa del 70 % en la version anterior al 87,5 % en la actual, con un aumento notable del numero de tokens usados por pregunta (de 12 000 a 23 000 de media), lo que sugiere un modo de razonamiento extendido. Tambien se destacan una menor tasa de alucinacion y un soporte mejorado de function calling. Sin embargo, no se proporcionan datos sobre arquitectura, tamano, contexto ni pesos del modelo, y el repositorio en HuggingFace aparece como un repositorio de prueba sin contenido (0.0 GB), por lo que no es posible utilizarlo directamente.
+La documentacion menciona una mejora concreta en el benchmark AIME 2025, donde la precision pasa del 70 % en la version anterior al 87,5 % en la actual, con un aumento notable del numero de tokens usados por pregunta (de 12 000 a 23 000 de media), lo que sugiere un modo de razonamiento extendido. Tambien se destacan una menor tasa de alucinacion y un soporte mejorado de function calling. Sin embargo, no se proporcionan datos sobre arquitectura, tamano, contexto ni pesos del modelo, y el repositorio en Hugging Face aparece como un repositorio de prueba sin contenido (0.0 GB), por lo que no es posible utilizarlo directamente.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para establecer una comparacion fiable c
 
 ## Limitaciones y advertencias
 
-- El repositorio en HuggingFace es un repositorio de prueba (TestRepository) y no contiene pesos ni ficheros del modelo (tamano 0.0 GB), por lo que no es utilizable para inferencia local ni en produccion.
+- El repositorio en Hugging Face es un repositorio de prueba (TestRepository) y no contiene pesos ni ficheros del modelo (tamano 0.0 GB), por lo que no es utilizable para inferencia local ni en produccion.
 - La arquitectura real del modelo no se ha especificado. Los metadatos indican la etiqueta "bert", pero la descripcion del modelo sugiere un LLM autoregresivo con razonamiento, lo que genera una contradiccion que impide confirmar la arquitectura.
 - Los resultados de benchmarks presentados en la model card no estan estandarizados, no se especifica la metodologia ni la identidad de los modelos comparados, y no se han verificado externamente.
 - No se han publicado datos sobre sesgos, limitaciones de idioma o longitud de contexto. La reduccion de alucinaciones mencionada por el autor no esta respaldada por evaluaciones externas.
@@ -91,5 +91,5 @@ No se dispone de informacion suficiente para establecer una comparacion fiable c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdafaf33/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/sdafaf33/MyAwesomeModel-TestRepository
 - Repositorio alternativo: https://huggingface.co/sdafaf33/MyAwesomeModel

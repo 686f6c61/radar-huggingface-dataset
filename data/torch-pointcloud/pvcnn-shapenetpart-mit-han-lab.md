@@ -74,7 +74,7 @@ No se han publicado en la información disponible resultados adicionales (latenc
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pvcnn.shapenetpart.mit-han-lab (este) | 4,2 M | Segmentación de partes 3D | Nube de puntos, 6 canales | MIT | HuggingFace, torch-pointcloud |
+| pvcnn.shapenetpart.mit-han-lab (este) | 4,2 M | Segmentación de partes 3D | Nube de puntos, 6 canales | MIT | Hugging Face, torch-pointcloud |
 | PointNet++ (referencia clásica) | no disponible en la información | Segmentación de partes 3D | Nube de puntos | no disponible | Implementaciones públicas |
 | PointTransformer (referencia) | no disponible en la información | Segmentación de partes 3D | Nube de puntos | no disponible | Implementaciones públicas |
 | KPConv (referencia) | no disponible en la información | Segmentación de partes 3D | Nube de puntos | no disponible | Implementaciones públicas |
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de cifras de parámetros, context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/pvcnn.shapenetpart.mit-han-lab
+- Hugging Face: https://huggingface.co/torch-pointcloud/pvcnn.shapenetpart.mit-han-lab
 - Paper PVCNN: https://arxiv.org/abs/1907.03739
 - Repositorio original mit-han-lab/pvcnn: https://github.com/mit-han-lab/pvcnn
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

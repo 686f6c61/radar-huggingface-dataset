@@ -27,7 +27,7 @@ Existe una inconsistencia relevante entre el nombre y la propia model card. El i
 | Presupuesto de restauración | 0,000 % de parámetros densos; 0 componentes restaurados; 0 componentes sustituidos |
 | Semilla | 42 |
 | Pipeline | `text-generation` |
-| Fecha de creación / actualización | 2026-09-12 / 2026-09-12 (según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-09-12 / 2026-09-12 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svdsafety_l2_remove40_whiten_base` | 6,74 B (6.738.415.616) | 4096 tokens (heredado del base) | Artefacto de investigación (SVD-LLM), no desplegable | Llama 2 Community License | HuggingFace, 0 descargas |
-| `meta-llama/Llama-2-7b-chat-hf` | 6,74 B | 4096 tokens | Modelo de chat alineado con SFT + RLHF | Llama 2 Community License | HuggingFace, ampliamente utilizado |
-| `mistralai/Mistral-7B-Instruct-v0.2` | 7,24 B | 32 768 tokens | Modelo instruct de propósito general | Apache 2.0 | HuggingFace |
-| `HuggingFaceH4/zephyr-7b-beta` | 7,24 B | 32 768 tokens | Modelo instruct ajustado con DPO | MIT | HuggingFace |
+| `Jeesup/svdsafety_l2_remove40_whiten_base` | 6,74 B (6.738.415.616) | 4096 tokens (heredado del base) | Artefacto de investigación (SVD-LLM), no desplegable | Llama 2 Community License | Hugging Face, 0 descargas |
+| `meta-llama/Llama-2-7b-chat-hf` | 6,74 B | 4096 tokens | Modelo de chat alineado con SFT + RLHF | Llama 2 Community License | Hugging Face, ampliamente utilizado |
+| `mistralai/Mistral-7B-Instruct-v0.2` | 7,24 B | 32 768 tokens | Modelo instruct de propósito general | Apache 2.0 | Hugging Face |
+| `HuggingFaceH4/zephyr-7b-beta` | 7,24 B | 32 768 tokens | Modelo instruct ajustado con DPO | MIT | Hugging Face |
 
 La comparación cuantitativa de rendimiento no es posible: no hay cifras de benchmarks publicadas para el checkpoint de Jeesup. Cualitativamente, la diferencia clave es que las tres alternativas están pensadas para uso real (chat, instrucciones, agentes), mientras que este artefacto existe exclusivamente para medir el efecto de la compresión SVD sobre la seguridad.
 
@@ -100,7 +100,7 @@ La comparación cuantitativa de rendimiento no es posible: no hay cifras de benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svdsafety_l2_remove40_whiten_base
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svdsafety_l2_remove40_whiten_base
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (incluida en el repositorio como `LICENSE.txt` y `USE_POLICY.md`)
 - Paper de SVD-LLM y repositorio de referencia del método: no disponibles en la información proporcionada

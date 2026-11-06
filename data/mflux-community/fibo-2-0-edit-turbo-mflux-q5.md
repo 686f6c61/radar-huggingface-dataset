@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fibo-2-0-edit-turbo-mflux-q5 (este) | no disponible | no disponible | MLX safetensors Q5, 8,8 GB | fibo-2.0-edit-turbo-license | HuggingFace, 76 descargas |
-| fibo-2-0-edit-turbo-mflux-bf16 | no disponible | no disponible | MLX safetensors BF16, 25,1 GB | fibo-2.0-edit-turbo-license | HuggingFace |
-| fibo-2-0-edit-turbo-mflux-q8 | no disponible | no disponible | MLX safetensors Q8, 13,4 GB | fibo-2.0-edit-turbo-license | HuggingFace |
-| briaai/Fibo-2.0-edit-turbo (original) | no disponible | no disponible | no disponible en la información | fibo-2.0-edit-turbo-license | HuggingFace |
+| fibo-2-0-edit-turbo-mflux-q5 (este) | no disponible | no disponible | MLX safetensors Q5, 8,8 GB | fibo-2.0-edit-turbo-license | Hugging Face, 76 descargas |
+| fibo-2-0-edit-turbo-mflux-bf16 | no disponible | no disponible | MLX safetensors BF16, 25,1 GB | fibo-2.0-edit-turbo-license | Hugging Face |
+| fibo-2-0-edit-turbo-mflux-q8 | no disponible | no disponible | MLX safetensors Q8, 13,4 GB | fibo-2.0-edit-turbo-license | Hugging Face |
+| briaai/Fibo-2.0-edit-turbo (original) | no disponible | no disponible | no disponible en la información | fibo-2.0-edit-turbo-license | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos competidores en la información proporcionada, por lo que la comparación se limita a las variantes del mismo modelo base y a su versión original.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-q5
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-q5
 - Modelo base original: https://huggingface.co/briaai/Fibo-2.0-edit-turbo
 - Variante BF16: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-bf16
 - Variante Q8: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-q8

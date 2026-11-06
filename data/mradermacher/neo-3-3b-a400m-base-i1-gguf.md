@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| neo-3-3B-A400M-Base (este) | 3,1 B (MoE) | no disponible | MIT | GGUF | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5 B (dense) | 32 K | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Phi-3-mini-4k-instruct | 3,8 B (dense) | 4 K | MIT | safetensors, GGUF | HuggingFace |
+| neo-3-3B-A400M-Base (este) | 3,1 B (MoE) | no disponible | MIT | GGUF | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5 B (dense) | 32 K | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Phi-3-mini-4k-instruct | 3,8 B (dense) | 4 K | MIT | safetensors, GGUF | Hugging Face |
 
 La comparativa es limitada porque no se dispone de benchmarks ni de la longitud de contexto del modelo. En cuanto a licencia, el modelo Neo 3 es el mas permisivo (MIT) junto con Phi-3. En cuanto a tamano, es comparable a Phi-3-mini, aunque el uso de MoE podria ofrecer ventajas de velocidad en inferencia.
 
@@ -79,7 +79,7 @@ La comparativa es limitada porque no se dispone de benchmarks ni de la longitud 
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/neo-3-3B-A400M-Base-i1-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/neo-3-3B-A400M-Base-i1-GGUF)
 - [Modelo base original](https://huggingface.co/aquilesfd/neo-3-3B-A400M-Base)
 - [Modelo estatico GGUF (sin imatrix)](https://huggingface.co/mradermacher/neo-3-3B-A400M-Base-GGUF)
 - [Perfil de mradermacher](https://huggingface.co/mradermacher)

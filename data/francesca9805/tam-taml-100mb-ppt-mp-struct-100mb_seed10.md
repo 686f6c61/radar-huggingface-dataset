@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tune) supervisado del modelo `goldfish-models/tam_taml_100mb`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo decoder-only de tipo GPT-2 con 124.770.816 parametros (124,77 M) y pesos en safetensors. El nombre del repositorio sugiere un experimento de ajuste sobre datos estructurados de 100 MB con semilla 10, aunque la model card no documenta ni el dataset ni la tarea concreta.
+`francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tune) supervisado del modelo `goldfish-models/tam_taml_100mb`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo decoder-only de tipo GPT-2 con 124.770.816 parametros (124,77 M) y pesos en safetensors. El nombre del repositorio sugiere un experimento de ajuste sobre datos estructurados de 100 MB con semilla 10, aunque la model card no documenta ni el dataset ni la tarea concreta.
 
 El modelo base pertenece a la coleccion goldfish-models, orientada a modelos monolingues de ~100 MB para lenguas de bajos recursos; el identificador `tam_taml` apunta al tamil escrito en alfabeto tamil. Por tanto, el modelo hereda esa orientacion linguistica, aunque la model card no declara idiomas soportados de forma explicita.
 
@@ -21,7 +21,7 @@ Es relevante ahora unicamente como artefacto de investigacion: no tiene descarga
 | Licencia | no disponible; la model card incluye un marcador `licence: license` sin concretar |
 | Formato de pesos | safetensors |
 
-Datos adicionales: pipeline `text-generation`, libreria `transformers`, tamano del repositorio 0,3 GB, creado el 2026-10-04 y actualizado el 2026-10-04 (segun los metadatos de HuggingFace), 0 descargas y 0 "likes".
+Datos adicionales: pipeline `text-generation`, libreria `transformers`, tamano del repositorio 0,3 GB, creado el 2026-10-04 y actualizado el 2026-10-04 (segun los metadatos de Hugging Face), 0 descargas y 0 "likes".
 
 ## Arquitectura y entrenamiento
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Evaluaciones | Disponibilidad |
 |---|---|---|---|---|---|---|
-| francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed10 | 124,77 M | no disponible | no disponible | safetensors | no publicadas | HuggingFace (0 descargas) |
-| goldfish-models/tam_taml_100mb (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponibles en la informacion proporcionada | HuggingFace |
-| GPT-2 small (referencia de la misma arquitectura y tamano) | 124 M | 1024 tokens | licencia MIT modificada de OpenAI | safetensors / PyTorch | ampliamente evaluado en la literatura | HuggingFace, muy extendido |
+| francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed10 | 124,77 M | no disponible | no disponible | safetensors | no publicadas | Hugging Face (0 descargas) |
+| goldfish-models/tam_taml_100mb (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponibles en la informacion proporcionada | Hugging Face |
+| GPT-2 small (referencia de la misma arquitectura y tamano) | 124 M | 1024 tokens | licencia MIT modificada de OpenAI | safetensors / PyTorch | ampliamente evaluado en la literatura | Hugging Face, muy extendido |
 
 La comparacion con GPT-2 small se incluye solo como referencia de arquitectura y orden de magnitud (124 M de parametros, contexto de 1024 tokens); no implica equivalencia de rendimiento ni de idiomas. Para el modelo base y para variantes especificas de tamil de otros proyectos no se dispone de datos verificables en la informacion proporcionada, por lo que la comparativa cuantitativa queda como "no disponible".
 
@@ -88,7 +88,7 @@ La comparacion con GPT-2 small se incluye solo como referencia de arquitectura y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/r9yy2oiv

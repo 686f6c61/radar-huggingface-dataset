@@ -77,8 +77,8 @@ En estas metricas, un ASR mas alto indica peor seguridad: el modelo acepta la in
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark publicado en la informacion | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_basis_remove50_swapgapnet_b010_r06 | 6,74 mil millones | no disponible | Llama 2 Community License | AdvBench ASR 0,3731; StrongREJECT ASR 0,3770; sobre-rechazo 0,0470 | HuggingFace |
-| meta-llama/Llama-2-7b-chat-hf (base) | 6,74 mil millones | el modelo base declara 4.096 tokens | Llama 2 Community License | no disponible en la informacion proporcionada | HuggingFace |
+| svd-safety-l2_basis_remove50_swapgapnet_b010_r06 | 6,74 mil millones | no disponible | Llama 2 Community License | AdvBench ASR 0,3731; StrongREJECT ASR 0,3770; sobre-rechazo 0,0470 | Hugging Face |
+| meta-llama/Llama-2-7b-chat-hf (base) | 6,74 mil millones | el modelo base declara 4.096 tokens | Llama 2 Community License | no disponible en la informacion proporcionada | Hugging Face |
 | Otros brazos de la rejilla de seleccion y presupuesto | no disponible | no disponible | Llama 2 Community License (previsible) | no disponible | no disponible |
 
 El unico punto de referencia claro es el modelo base sin comprimir. La model card no nombra ni enlaza otros checkpoints comparables, por lo que no se puede construir una comparativa de rendimiento con alternativas.
@@ -99,7 +99,7 @@ El unico punto de referencia claro es el modelo base sin comprimir. La model car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r06
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Basis Sharing (ICLR 2025): referenciado en la model card, sin URL en la informacion proporcionada.
 - Repositorio de codigo, demo o blog del autor: no disponible.

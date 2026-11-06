@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voiceclap_loo_no_bursts_whisper-small-MiniLM (este checkpoint) | no disponible (~270-280 M estimados) | 256 | no disponible | no disponible | HuggingFace, 0 descargas |
+| voiceclap_loo_no_bursts_whisper-small-MiniLM (este checkpoint) | no disponible (~270-280 M estimados) | 256 | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa fiable con otros modelos CLAP o de representaciones audio-texto dentro de la informacion proporcionada.
@@ -87,5 +87,5 @@ No se dispone de datos suficientes para establecer una comparativa fiable con ot
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_bursts_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Hugging Face (modelo): https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_bursts_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Índice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index

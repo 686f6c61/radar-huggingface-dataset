@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeoHorse-1-4B-Paretrix (esta ficha) | 4,21B | no confirmado en la ficha; 262K segun modelo base | GGUF (13 variantes) | apache-2.0 | HuggingFace (Soulfate24) |
-| TokenRhythm/NeoHorse-1-4B (modelo base) | 4B | 262K | safetensors / GGUF | apache-2.0 | HuggingFace (TokenRhythm) |
+| NeoHorse-1-4B-Paretrix (esta ficha) | 4,21B | no confirmado en la ficha; 262K segun modelo base | GGUF (13 variantes) | apache-2.0 | Hugging Face (Soulfate24) |
+| TokenRhythm/NeoHorse-1-4B (modelo base) | 4B | 262K | safetensors / GGUF | apache-2.0 | Hugging Face (TokenRhythm) |
 | Cuantizaciones stock dentro del mismo repo (Q8_0, Q6_K-imx, Q5_K_M-imx, IQ4_XS-imx, IQ3_M-imx) | 4,21B | idem | GGUF | apache-2.0 | Incluidas en el mismo repositorio |
 
 No se dispone en la informacion proporcionada de datos suficientes para comparar frente a otras familias de cuantizacion de terceros (por ejemplo, recetas de otros publicadores) con cifras verificables.
@@ -100,9 +100,9 @@ No se dispone en la informacion proporcionada de datos suficientes para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Soulfate24/NeoHorse-1-4B-Paretrix
+- Modelo en Hugging Face: https://huggingface.co/Soulfate24/NeoHorse-1-4B-Paretrix
 - Suite de cuantizacion Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite
-- Modelo base en HuggingFace: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
+- Modelo base en Hugging Face: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
 - Repositorio GitHub de NeoHorse: https://github.com/TokenRhythm/NeoHorse
 - Coleccion NeoHorse-1: https://huggingface.co/collections/TokenRhythm/neohorse-1
 - Ficha tecnica en AI/TLDR: https://ai-tldr.dev/models/neohorse-1-4b/

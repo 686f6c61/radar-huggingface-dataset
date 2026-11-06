@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3-1p7b-code-shuffled | 1,7B | 4096 (entrenamiento) | other (base Apache 2.0) | HuggingFace | Artefacto de investigación, sin benchmarks publicados |
-| Qwen3-1.7B-Base | 1,7B | no disponible | Apache 2.0 | HuggingFace | Modelo base original, sin SFT de código |
-| Qwen2.5-3B (derivados del mismo experimento) | 3B | no disponible | Qwen Research License | HuggingFace | Misma batería experimental, mayor tamaño |
-| Llama-3.2-3B-Instruct (derivados del mismo experimento) | 3B | no disponible | Llama 3.2 Community License | HuggingFace | Misma batería experimental, familia distinta |
+| code-sft-rerun-20261102-qwen3-1p7b-code-shuffled | 1,7B | 4096 (entrenamiento) | other (base Apache 2.0) | Hugging Face | Artefacto de investigación, sin benchmarks publicados |
+| Qwen3-1.7B-Base | 1,7B | no disponible | Apache 2.0 | Hugging Face | Modelo base original, sin SFT de código |
+| Qwen2.5-3B (derivados del mismo experimento) | 3B | no disponible | Qwen Research License | Hugging Face | Misma batería experimental, mayor tamaño |
+| Llama-3.2-3B-Instruct (derivados del mismo experimento) | 3B | no disponible | Llama 3.2 Community License | Hugging Face | Misma batería experimental, familia distinta |
 
 No se dispone de datos de rendimiento comparativo para establecer diferencias cuantitativas.
 
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento comparativo para establecer diferencias cu
 
 ## Enlaces
 
-- [HuggingFace: RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-shuffled](https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-shuffled)
+- [Hugging Face: RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-shuffled](https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-shuffled)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

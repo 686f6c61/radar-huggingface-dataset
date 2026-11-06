@@ -93,7 +93,7 @@ La comparación cuantitativa con otras alternativas TTS no está disponible en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3-TTS-0.6B-AX8860-llama.cpp
+- Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-TTS-0.6B-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - llama.cpp (bifurcación): https://github.com/ZHEQIUSHUI/llama.cpp (rama `feat/qwen3-whole`, commit `b536fe5`)
 - Kernels NPU: https://github.com/ZHEQIUSHUI/ax-dsl-kernels (rama `main`, commit `60dd25b`)

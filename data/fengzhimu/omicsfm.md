@@ -67,7 +67,7 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OmicsFM | 4,94 M (tronco) | No disponible | CC-BY-4.0 | HuggingFace |
+| OmicsFM | 4,94 M (tronco) | No disponible | CC-BY-4.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fengzhimu/omicsfm
+- Modelo en Hugging Face: https://huggingface.co/fengzhimu/omicsfm
 - Publicación: en preparación, sin enlace disponible
 - Repositorio de código: no disponible en la información proporcionada
 - Demos: no disponibles

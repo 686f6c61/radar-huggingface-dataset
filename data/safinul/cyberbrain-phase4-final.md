@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CYBERBRAIN-PHASE4-FINAL es un ajuste por preentrenamiento continuado (*continual pre-training*) del modelo base Qwen2.5-Coder-0.5B, publicado por el usuario Safinul en HuggingFace. El modelo está especializado en dominios de seguridad web: motores de explotación, lógica de inyección SQL (SQLi), XSS, SSRF, fuzzers y payloads de autenticación de APIs. Se distribuye con licencia Apache 2.0 y únicamente declara soporte para inglés.
+CYBERBRAIN-PHASE4-FINAL es un ajuste por preentrenamiento continuado (*continual pre-training*) del modelo base Qwen2.5-Coder-0.5B, publicado por el usuario Safinul en Hugging Face. El modelo está especializado en dominios de seguridad web: motores de explotación, lógica de inyección SQL (SQLi), XSS, SSRF, fuzzers y payloads de autenticación de APIs. Se distribuye con licencia Apache 2.0 y únicamente declara soporte para inglés.
 
-Con 494.032.768 parámetros totales (aproximadamente 0,5 mil millones), se trata de un modelo pequeño orientado a generación de texto y conversación, con arquitectura derivada de Qwen2 (tag `qwen2` en HuggingFace). El repositorio ocupa 3,8 GB y los pesos están en formato safetensors. El autor indica que el entrenamiento se realizó en FP32 puro, sin desbordamiento de pérdida ni valores NaN.
+Con 494.032.768 parámetros totales (aproximadamente 0,5 mil millones), se trata de un modelo pequeño orientado a generación de texto y conversación, con arquitectura derivada de Qwen2 (tag `qwen2` en Hugging Face). El repositorio ocupa 3,8 GB y los pesos están en formato safetensors. El autor indica que el entrenamiento se realizó en FP32 puro, sin desbordamiento de pérdida ni valores NaN.
 
 La relevancia de este modelo es acotada: se publica con cero descargas y cero likes en el momento de la consulta, no incluye resultados de benchmarks y su model card es muy breve. Resulta útil como ejemplo de especialización vertical de un modelo pequeño de código en tareas de seguridad ofensiva/defensiva, pero no hay evidencia pública de su calidad frente a alternativas establecidas.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| CYBERBRAIN-PHASE4-FINAL | 494 M | no disponible | Apache 2.0 | Seguridad web (SQLi/XSS/SSRF, APIs) | HuggingFace, 0 descargas |
+| CYBERBRAIN-PHASE4-FINAL | 494 M | no disponible | Apache 2.0 | Seguridad web (SQLi/XSS/SSRF, APIs) | Hugging Face, 0 descargas |
 | Qwen2.5-Coder-0.5B (base) | ~494 M | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | Código general | Ampliamente disponible |
 | Qwen2.5-Coder-1.5B | ~1,5 B | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | Código general | Ampliamente disponible |
 | Modelos de seguridad especializados de gran tamaño | variable | variable | variable | Seguridad ofensiva/defensiva | no disponible en la información proporcionada |
@@ -89,7 +89,7 @@ La comparación con el base Qwen2.5-Coder-0.5B es la más directa: CYBERBRAIN a�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Safinul/CYBERBRAIN-PHASE4-FINAL
+- Hugging Face: https://huggingface.co/Safinul/CYBERBRAIN-PHASE4-FINAL
 - Modelo base Qwen2.5-Coder-0.5B: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Repositorio Qwen2.5-Coder (GitHub): https://github.com/QwenLM/Qwen2.5-Coder
 - OWASP (referencia temática declarada): https://owasp.org/

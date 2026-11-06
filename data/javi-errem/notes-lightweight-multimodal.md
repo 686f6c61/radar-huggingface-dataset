@@ -20,7 +20,7 @@ Su relevancia ahora es documental y metodológica, no de rendimiento: sirve como
 | Idiomas soportados | No disponible |
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | Safetensors según los metadatos del repositorio; los ficheros descritos en la model card son `paper_notes.md` y `README.md` |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación / actualización | 2026-10-18 / 2026-10-18 |
@@ -79,6 +79,6 @@ No disponible. No hay modelos comparables porque el artefacto no es un modelo, s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/javi-errem/notes-lightweight-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/javi-errem/notes-lightweight-multimodal
 - Ficheros dentro del repositorio: `paper_notes.md` (artefacto principal) y `README.md` (documentación), accesibles desde la pestaña de archivos del repositorio anterior.
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

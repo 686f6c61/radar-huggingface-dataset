@@ -4,7 +4,7 @@
 
 El modelo `unconst/Affine-5czsc2fc98-r508-sbsv5-offline-dpo-hialpha-midrank-lobeta-longctx-extrasteps-merged` es un checkpoint intermedio publicado por el usuario `unconst` como resultado de un proceso de fine-tuning mediante *offline DPO* sobre un modelo base denominado `kevin954/Affine-5dfqbbh8ev-sft`. Según la model card, se trata de un *merge* de LoRA "salvado" (salvage) con fines de respaldo privado, y el propio autor indica que no es una versión final ni una submission oficial hasta que se supere una fase de validación (Stage-5 gate).
 
-El modelo pertenece a la familia arquitectónica `qwen3_5_moe` según las etiquetas de HuggingFace, lo que sugiere una arquitectura de mezcla de expertos (MoE) derivada de la serie Qwen 3.5. Con aproximadamente 35.1 mil millones de parámetros totales y un tamaño de repositorio de 70.2 GB en formato `safetensors`, el checkpoint está pensado para generación de texto y uso conversacional, aunque también aparece etiquetado como `image-text-to-text`, lo que podría indicar capacidades multimodales no confirmadas. No se dispone de información sobre licencia, idiomas soportados, ni detalles de entrenamiento más allá de los nombres de los hiperparámetros en el identificador.
+El modelo pertenece a la familia arquitectónica `qwen3_5_moe` según las etiquetas de Hugging Face, lo que sugiere una arquitectura de mezcla de expertos (MoE) derivada de la serie Qwen 3.5. Con aproximadamente 35.1 mil millones de parámetros totales y un tamaño de repositorio de 70.2 GB en formato `safetensors`, el checkpoint está pensado para generación de texto y uso conversacional, aunque también aparece etiquetado como `image-text-to-text`, lo que podría indicar capacidades multimodales no confirmadas. No se dispone de información sobre licencia, idiomas soportados, ni detalles de entrenamiento más allá de los nombres de los hiperparámetros en el identificador.
 
 Dado su carácter de checkpoint intermedio y la ausencia de documentación técnica detallada, este modelo no es adecuado para uso en producción sin una evaluación adicional exhaustiva. Su principal utilidad es servir como referencia del progreso del entrenamiento o como base para continuar experimentos de fine-tuning.
 
@@ -74,5 +74,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r508-sbsv5-offline-dpo-hialpha-midrank-lobeta-longctx-extrasteps-merged
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r508-sbsv5-offline-dpo-hialpha-midrank-lobeta-longctx-extrasteps-merged
 - Modelo base (referenciado): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft

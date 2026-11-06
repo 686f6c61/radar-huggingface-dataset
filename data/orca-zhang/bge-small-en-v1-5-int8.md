@@ -80,7 +80,7 @@ El modelo original y esta version cuantizada comparten arquitectura y dimensione
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orca-zhang/bge-small-en-v1.5-int8
+- Repositorio Hugging Face: https://huggingface.co/orca-zhang/bge-small-en-v1.5-int8
 - Modelo original BAAI/bge-small-en: https://huggingface.co/BAAI/bge-small-en
 - Modelo original BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Documentacion oficial BGE v1 y v1.5: https://bge-model.com/bge/bge_v1_v1.5.html

@@ -125,12 +125,12 @@ Frente a modelos de la misma categoria de tamano pero de otros desarrolladores: 
 - Rendimiento sobre texto real: el propio autor advierte que el 4/5 en respuestas desde `<result>` corresponde a resultados curados y que la cifra baja "mucho" con texto real; no se publica el valor concreto.
 - Precision de validacion del 60,7% y perdida de 2,161: son valores de un modelo muy pequeno; no debe emplearse en tareas que requieran razonamiento fiable.
 - Riesgo de alucinacion: mitigado en el eje de atribucion (16/16 sin atribuciones falsas) pero no en el contenido. El modelo puede producir una respuesta incorrecta y atribuirla correctamente a un resultado erroneo.
-- Aparece con 0 descargas y 0 likes en HuggingFace, y la model card esta truncada en la seccion de advertencias ("Validat..."), por lo que faltan indicaciones de uso responsable del propio autor.
+- Aparece con 0 descargas y 0 likes en Hugging Face, y la model card esta truncada en la seccion de advertencias ("Validat..."), por lo que faltan indicaciones de uso responsable del propio autor.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion sin restricciones, siempre que se conserve el aviso de copyright y la licencia. No se declaran sesgos especificos ni filtros de seguridad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/textilelabs/Loom-Tapestry-3-Flash
-- Model card del autor: incluida en la pagina de HuggingFace (truncada en la seccion de advertencias).
+- Hugging Face: https://huggingface.co/textilelabs/Loom-Tapestry-3-Flash
+- Model card del autor: incluida en la pagina de Hugging Face (truncada en la seccion de advertencias).
 - Paper, repositorio de codigo, blog o demo: no disponibles en la informacion proporcionada.
 - Busqueda web: los resultados devueltos (ARD Mediathek y paginas relacionadas) no guardan ninguna relacion con el modelo y no se han considerado como fuentes.

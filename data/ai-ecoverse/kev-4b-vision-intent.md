@@ -85,10 +85,10 @@ Con los umbrales del manifiesto, el modelo actua sobre el 89,5% de los intents c
 
 | Modelo | Parametros | Contexto | ACT top-1 (400) | RETRIEVE top-1 | VERIFY | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| kev-4b-vision-intent (este modelo) | ~4B | No disponible | 89,8 (87,0 / 92,5) | 87,5 | 95,3 | OpenRAIL | HuggingFace, ai-ecoverse |
-| kev-4b-vision | ~4B | No disponible | 82,0 (77,6 / 86,3) sobre 200 | 86,4 | 93,0 | No disponible | HuggingFace, ai-ecoverse |
-| kev-0.8b-vision-intent | ~0,8B | No disponible | 88,2 (85,0 / 91,5) | 81,8 | 88,4 | No disponible | HuggingFace, ai-ecoverse |
-| kev-0.8b-vision | ~0,8B | No disponible | 61,8 (58,5 / 65,0) | 63,6 | 77,9 | No disponible | HuggingFace, ai-ecoverse |
+| kev-4b-vision-intent (este modelo) | ~4B | No disponible | 89,8 (87,0 / 92,5) | 87,5 | 95,3 | OpenRAIL | Hugging Face, ai-ecoverse |
+| kev-4b-vision | ~4B | No disponible | 82,0 (77,6 / 86,3) sobre 200 | 86,4 | 93,0 | No disponible | Hugging Face, ai-ecoverse |
+| kev-0.8b-vision-intent | ~0,8B | No disponible | 88,2 (85,0 / 91,5) | 81,8 | 88,4 | No disponible | Hugging Face, ai-ecoverse |
+| kev-0.8b-vision | ~0,8B | No disponible | 61,8 (58,5 / 65,0) | 63,6 | 77,9 | No disponible | Hugging Face, ai-ecoverse |
 
 La comparacion se limita a la propia familia Kev, ya que no se han encontrado en la informacion disponible alternativas equivalentes de modelo de decision de intencion para agentes web con evaluacion publicada en intent-bench. Frente al modelo base kev-4b-vision, este fine-tune gana 7,8 puntos de top-1 en ACT y 2,3 puntos en VERIFY, a costa de unos 0,25 s mas de latencia p50 en ACT. Frente a kev-0.8b-vision-intent, es mas preciso en RETRIEVE (87,5 frente a 81,8) y VERIFY (95,3 frente a 88,4), pero aproximadamente 3,5 veces mas lento.
 
@@ -108,7 +108,7 @@ La comparacion se limita a la propia familia Kev, ya que no se han encontrado en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-ecoverse/kev-4b-vision-intent
+- Modelo en Hugging Face: https://huggingface.co/ai-ecoverse/kev-4b-vision-intent
 - Modelo base: https://huggingface.co/jaredpalmer/kev-4b
 - Modelo hermano de 0,8B: https://huggingface.co/ai-ecoverse/kev-0.8b-vision-intent
 - Repositorio kev.js: https://github.com/ai-ecoverse/kev.js

@@ -77,11 +77,11 @@ No se dispone de datos de comparación en la información proporcionada. Existen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kandinskylab/Kandinsky-6.0-VSR-5s-Diffusers
+- Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-VSR-5s-Diffusers
 - Modelo destilado: https://huggingface.co/kandinskylab/Kandinsky-6.0-VSR-distilled2steps-5s-Diffusers
 - GitHub: https://github.com/kandinskylab/kandinsky-6-sr
 - arXiv: https://arxiv.org/pdf/2610.05608
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-VSR-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-VSR-Demo
 - Documentación Diffusers: https://huggingface.co/docs/diffusers/main/en/api/pipelines/kandinsky6
 - Documentación vLLM: https://docs.vllm.ai/projects/vllm-omni/en/latest/api/vllm_omni/diffusion/models/kandinsky6/
 - ComfyUI: https://registry.comfy.org/nodes/kandinsky6

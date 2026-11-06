@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono5-w80-s100` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Por su identificador y la etiqueta `sn38-nanochrono`, se trata de un modelo de la familia NanoChrono, presumiblemente un transformer de aproximadamente 2.018 millones de parametros (2,02 B) en formato safetensors, con un repositorio de 12,6 GB. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo.
+El modelo `alfred8995/r18-a2-w13-k-chrono5-w80-s100` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Por su identificador y la etiqueta `sn38-nanochrono`, se trata de un modelo de la familia NanoChrono, presumiblemente un transformer de aproximadamente 2.018 millones de parametros (2,02 B) en formato safetensors, con un repositorio de 12,6 GB. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 La informacion publica disponible es muy limitada: no se especifican el pipeline, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. El nombre del repositorio sugiere una configuracion concreta de entrenamiento (posiblemente `r18` como rango o capas, `a2` como atencion, `w13` como ancho o ventana, `chrono5` como variante temporal y `w80-s100` como hiperparametros de ventana y stride), pero no hay documentacion que confirme estas interpretaciones.
 
@@ -28,7 +28,7 @@ Su relevancia actual es escasa desde el punto de vista de produccion: se trata d
 
 No se ha publicado informacion sobre la arquitectura interna del modelo. La etiqueta `sn38-nanochrono` apunta a la familia NanoChrono, y el sufijo del identificador (`r18-a2-w13-k-chrono5-w80-s100`) parece codificar hiperparametros de entrenamiento o de ventana temporal, pero no existe documentacion que lo confirme. No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado.
 
-Tampoco se dispone de informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, atencion deslizante, etc.). El unico dato verificable es el recuento de parametros (2.018.511.234) y el formato de pesos safetensors, que implica compatibilidad con las librerias habituales del ecosistema HuggingFace (`transformers`, `safetensors`).
+Tampoco se dispone de informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, atencion deslizante, etc.). El unico dato verificable es el recuento de parametros (2.018.511.234) y el formato de pesos safetensors, que implica compatibilidad con las librerias habituales del ecosistema Hugging Face (`transformers`, `safetensors`).
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ Tampoco se dispone de informacion sobre innovaciones tecnicas (atencion lineal, 
 - Fine-tuning experimental en dominios acotados: con 2,02 B de parametros y licencia Apache 2.0, es viable ajustarlo en una unica GPU de gama alta para tareas de nicho, siempre que se acepte la condicion de acceso gated.
 - Evaluacion comparativa de checkpoints ligeros: sirve como punto de referencia en estudios de escalado o de variantes de atencion dentro de la serie NanoChrono.
 - Despliegue en entornos de laboratorio: con cuantizacion a 8 o 4 bits (si el modelo la soporta, dato no confirmado) podria ejecutarse en GPUs de consumo para pruebas internas.
-- Docencia y formacion: util como ejemplo practico de publicacion de checkpoints en HuggingFace con acceso restringido y licencia permisiva, para ilustrar flujos de trabajo de MLOps.
+- Docencia y formacion: util como ejemplo practico de publicacion de checkpoints en Hugging Face con acceso restringido y licencia permisiva, para ilustrar flujos de trabajo de MLOps.
 
 ## Benchmarks y rendimiento
 
@@ -69,7 +69,7 @@ No hay informacion suficiente para establecer una comparativa fiable con modelos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| r18-a2-w13-k-chrono5-w80-s100 | 2,02 B | No disponible | Apache 2.0 | Gated en HuggingFace |
+| r18-a2-w13-k-chrono5-w80-s100 | 2,02 B | No disponible | Apache 2.0 | Gated en Hugging Face |
 | Alternativas de ~2 B | No comparable | No comparable | No comparable | No comparable |
 
 ## Limitaciones y advertencias
@@ -77,12 +77,12 @@ No hay informacion suficiente para establecer una comparativa fiable con modelos
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, sesgos, idiomas ni comportamiento esperado.
 - Riesgo de alucinacion: desconocido, pero al no haber evaluaciones publicadas no se puede descartar un comportamiento deficiente en tareas generativas.
 - Limitaciones de contexto e idioma: no documentadas; no se debe asumir soporte multilingue ni una ventana de contexto concreta.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el acceso esta restringido (gated), por lo que es necesario aceptar las condiciones del autor en HuggingFace antes de la descarga.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero el acceso esta restringido (gated), por lo que es necesario aceptar las condiciones del autor en Hugging Face antes de la descarga.
 - Checkpoint con 2 descargas y 0 likes: no hay evidencia de validacion por parte de la comunidad; no se recomienda su uso en produccion sin una evaluacion propia exhaustiva.
 - El nombre del repositorio sugiere hiperparametros experimentales, no un modelo final pulido; podria tratarse de un checkpoint intermedio de entrenamiento.
 - No se dispone de informacion sobre la tokenizer asociada, lo que puede complicar la integracion con pipelines estandar.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w80-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w80-s100
 - Resultado de busqueda web no relacionado (Store Finder de Lidl US): https://www.lidl.com/c/store-finder/s10089075

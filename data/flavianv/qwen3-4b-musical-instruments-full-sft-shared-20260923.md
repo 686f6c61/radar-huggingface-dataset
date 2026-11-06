@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923` es un ajuste fino supervisado (SFT) de parámetros completos sobre `Qwen/Qwen3-4B`, orientado a una tarea muy concreta: recomendar títulos de productos de un catálogo del dominio de instrumentos musicales a partir de una consulta de usuario. No es un adaptador LoRA ni una cabeza de scoring: se han entrenado los 4.022.468.096 parámetros del modelo, y los pesos almacenados están en FP32 (cargables en BF16 para inferencia). Lo desarrolla el usuario `flavianv` y se publica en HuggingFace el 23 de septiembre de 2026.
+El modelo `flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923` es un ajuste fino supervisado (SFT) de parámetros completos sobre `Qwen/Qwen3-4B`, orientado a una tarea muy concreta: recomendar títulos de productos de un catálogo del dominio de instrumentos musicales a partir de una consulta de usuario. No es un adaptador LoRA ni una cabeza de scoring: se han entrenado los 4.022.468.096 parámetros del modelo, y los pesos almacenados están en FP32 (cargables en BF16 para inferencia). Lo desarrolla el usuario `flavianv` y se publica en Hugging Face el 23 de septiembre de 2026.
 
 El problema que aborda es el de recomendación generativa con formato estructurado: dado un *query* positivo, el modelo produce un JSON `{"titles": [...]}` con títulos de productos recuperados del catálogo. El entrenamiento parte de 8.937 ejemplos positivos del split `Musical_Instruments/shared_train.jsonl` del dataset `iaouali/amazon-benchmark` y se apoya en un recuperador semántico fijado que mapea cada título a un ID de producto único. La relevancia práctica es acotada: es un experimento de investigación sobre recomendación, no un modelo generalista, y su utilidad depende de reproducir el pipeline de recuperación del autor.
 
@@ -80,8 +80,8 @@ Advertencia del propio autor: son resultados de validacion de desarrollo, no de 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-musical-instruments-full-sft-shared | 4,02 B (denso) | No disponible (base Qwen3-4B) | Recomendacion de productos en `Musical_Instruments` | No disponible | HuggingFace, safetensors |
-| Qwen/Qwen3-4B | 4,02 B (denso) | 32.768 nativos (base) | Modelo generalista multilingue | No disponible en esta ficha | HuggingFace |
+| qwen3-4b-musical-instruments-full-sft-shared | 4,02 B (denso) | No disponible (base Qwen3-4B) | Recomendacion de productos en `Musical_Instruments` | No disponible | Hugging Face, safetensors |
+| Qwen/Qwen3-4B | 4,02 B (denso) | 32.768 nativos (base) | Modelo generalista multilingue | No disponible en esta ficha | Hugging Face |
 | Alternativas de recomendacion generativa de tamano similar | No disponible | No disponible | Recomendacion de productos | No disponible | No disponible |
 
 No se dispone de otros modelos comparables de la misma categoria (SFT de recomendacion del catalogo `Musical_Instruments`) en la informacion proporcionada. Frente al base Qwen3-4B, este ajuste mejora la cobertura de referencias (del 21% al 50% de consultas con alguna coincidencia) a costa de una ligera caida de bundles validos (del 98,25% al 95,5%), y no se evaluo en tareas generalistas.
@@ -102,7 +102,7 @@ No se dispone de otros modelos comparables de la misma categoria (SFT de recomen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923
+- Hugging Face: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/iaouali/amazon-benchmark
 - Implementacion de entrenamiento (GitHub, revision e2d1dd7): https://github.com/clijo/reco-rl/tree/e2d1dd7

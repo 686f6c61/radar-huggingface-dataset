@@ -63,7 +63,7 @@ No disponible. Este conjunto de checkpoints no es un modelo final comparable con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-126b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-126b
 - Paper tecnico de OLMo 2: https://arxiv.org/abs/2501.00656
 - Repositorio oficial de OLMo en GitHub: https://github.com/allenai/OLMo
 - Pagina de OLMo 2 de AI2: https://allenai.org/olmo2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Hamed3702/test` es un espacio de HuggingFace creado por el usuario Hamed3702 el 25 de agosto de 2026. No contiene información técnica publicada: no se especifica arquitectura, número de parámetros, licencia, pipeline ni idiomas soportados. Con cero descargas y una única valoración, todo apunta a que se trata de un repositorio de prueba o un placeholder sin contenido sustancial.
+El repositorio `Hamed3702/test` es un espacio de Hugging Face creado por el usuario Hamed3702 el 25 de agosto de 2026. No contiene información técnica publicada: no se especifica arquitectura, número de parámetros, licencia, pipeline ni idiomas soportados. Con cero descargas y una única valoración, todo apunta a que se trata de un repositorio de prueba o un placeholder sin contenido sustancial.
 
 Dado que no se ha publicado ninguna documentación, pesos, configuración o artefactos asociados, no es posible evaluar el modelo como una herramienta utilizable. Cualquier intento de desplegarlo o integrarlo en un flujo de trabajo carecería de base técnica. Esta ficha refleja la ausencia total de datos verificables y advierte de que no se debe considerar este repositorio como un modelo funcional.
 
@@ -57,4 +57,4 @@ No disponible. Al no existir información sobre el modelo, no es posible estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hamed3702/test
+- Repositorio en Hugging Face: https://huggingface.co/Hamed3702/test

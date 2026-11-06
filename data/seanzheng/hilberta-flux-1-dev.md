@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HilbertA-FLUX.1-dev | LoRA sparse attention | FLUX.1-dev | no aplica | other | HuggingFace |
-| FLUX.1-dev (base) | Transformer de difusion | - | no aplica | licencia FLUX.1-dev (no comercial en algunos terminos) | HuggingFace / BFL |
-| Otros LoRA de eficiencia para FLUX | LoRA | FLUX.1-dev | no aplica | variable | HuggingFace (no verificado) |
+| HilbertA-FLUX.1-dev | LoRA sparse attention | FLUX.1-dev | no aplica | other | Hugging Face |
+| FLUX.1-dev (base) | Transformer de difusion | - | no aplica | licencia FLUX.1-dev (no comercial en algunos terminos) | Hugging Face / BFL |
+| Otros LoRA de eficiencia para FLUX | LoRA | FLUX.1-dev | no aplica | variable | Hugging Face (no verificado) |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SeanZheng/HilbertA-FLUX.1-dev
+- Hugging Face: https://huggingface.co/SeanZheng/HilbertA-FLUX.1-dev
 - Paper: https://arxiv.org/abs/2509.26538
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev

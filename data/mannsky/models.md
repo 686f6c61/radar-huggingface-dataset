@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MannSky/Models es un repositorio publicado en HuggingFace por el usuario MannSky el 8 de octubre de 2026. En el momento de la consulta acumula 0 descargas y 0 likes, y la informacion publica asociada es practicamente inexistente: la model card se reduce a una linea de frontmatter con la licencia `grok2-community` y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento.
+MannSky/Models es un repositorio publicado en Hugging Face por el usuario MannSky el 8 de octubre de 2026. En el momento de la consulta acumula 0 descargas y 0 likes, y la informacion publica asociada es practicamente inexistente: la model card se reduce a una linea de frontmatter con la licencia `grok2-community` y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de uso. El unico dato tecnico relevante es el identificador de licencia, que remite a la licencia comunitaria de Grok-2, aunque no hay confirmacion en la informacion disponible de que el modelo derive efectivamente de esa familia.
 
@@ -60,7 +60,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio de aplic
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MannSky/Models | no disponible | no disponible | grok2-community | repositorio HuggingFace con 0 descargas |
+| MannSky/Models | no disponible | no disponible | grok2-community | repositorio Hugging Face con 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -76,7 +76,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio de aplic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MannSky/Models
+- Repositorio en Hugging Face: https://huggingface.co/MannSky/Models
 - Resultados de busqueda web sin relacion directa con el modelo:
   - https://lmmarketcap.com/free-ai-models
   - https://lmmarketcap.com/open-source-ai-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cantonese-v1-dev es un modelo de texto a voz (TTS) desarrollado por la organización cantonese-dev y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un modelo basado en la arquitectura Qwen3-TTS, con aproximadamente 1.917 millones de parámetros (1.916.676.352 exactos según los metadatos de safetensors), cuyo propósito es generar voz sintética en cantonés (yue), una variedad del chino yue que cuenta con escaso soporte en los ecosistemas TTS dominantes.
+Cantonese-v1-dev es un modelo de texto a voz (TTS) desarrollado por la organización cantonese-dev y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo basado en la arquitectura Qwen3-TTS, con aproximadamente 1.917 millones de parámetros (1.916.676.352 exactos según los metadatos de safetensors), cuyo propósito es generar voz sintética en cantonés (yue), una variedad del chino yue que cuenta con escaso soporte en los ecosistemas TTS dominantes.
 
 El modelo incorpora seis voces preconfiguradas ("baked voices"), tres femeninas (yue_f1, yue_f2, yue_f3) y tres masculinas (yue_m1, yue_m2, yue_m3), cada una asociada a una fila de codec específica (filas 3000 a 3005). Este enfoque de voces integradas sugiere un pipeline de síntesis basado en tokens de audio codec, donde cada voz corresponde a un token de identidad de hablante.
 
@@ -32,7 +32,7 @@ Sobre los datos de entrenamiento no hay información publicada: la model card no
 - Sintesis de voz en cantonés a partir de texto (TTS).
 - Seis voces preintegradas: tres femeninas (yue_f1, yue_f2, yue_f3) y tres masculinas (yue_m1, yue_m2, yue_m3).
 - Selección de voz mediante identificadores de fila de codec (3000-3005).
-- Distribución en formato safetensors, compatible con el ecosistema estándar de HuggingFace.
+- Distribución en formato safetensors, compatible con el ecosistema estándar de Hugging Face.
 - No hay evidencia de capacidades de clonación de voz, soporte multilingüe más allá del cantonés, ni de entradas de audio (no es un modelo de voz a voz).
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. Con ~1,92 B de parámetros en precisión completa (fp16/bf16), una estimación razonable sería en torno a 4-5 GB de VRAM solo para los pesos, más la memoria del decodificador de audio.
 - GPU recomendadas: no disponible. Por tamaño, cualquier GPU de consumo con 6-8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060) debería ser suficiente en teoría, aunque no hay confirmación oficial.
 - Cabe en GPU de consumo: probablemente sí, dado el tamaño de ~1,9 B de parámetros y los 3,8 GB del repositorio.
-- Opciones de despliegue: no hay instrucciones oficiales. Al basarse en la arquitectura qwen3_tts, el uso con la librería transformers de HuggingFace es el camino más probable; la compatibilidad con llama.cpp, vLLM u Ollama no está documentada y es improbable para un modelo TTS de este tipo.
+- Opciones de despliegue: no hay instrucciones oficiales. Al basarse en la arquitectura qwen3_tts, el uso con la librería transformers de Hugging Face es el camino más probable; la compatibilidad con llama.cpp, vLLM u Ollama no está documentada y es improbable para un modelo TTS de este tipo.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ Cantonese-v1-dev se diferencia de las alternativas por su especialización expl�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cantonese-dev/cantonese-v1-dev
+- Modelo en Hugging Face: https://huggingface.co/cantonese-dev/cantonese-v1-dev
 - DOI del modelo: https://doi.org/10.57967/hf/11354
 - No se han encontrado enlaces adicionales relevantes (paper, blog o repositorio de código) en la informacion disponible.

@@ -77,5 +77,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (NE
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-lener-br-seed3407
+- Repositorio del modelo en Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-lener-br-seed3407
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B (no se proporciona enlace directo en la informacion, pero es el modelo base indicado)

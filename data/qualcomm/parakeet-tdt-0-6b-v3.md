@@ -91,10 +91,10 @@ No se han publicado en la información disponible resultados de benchmarks compa
 
 | Modelo | Parametros | Contexto / entrada | WER LibriSpeech test-clean | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Parakeet-TDT-0.6B-v3 (Qualcomm) | 627 M | Audio 16 kHz, 128 mel, duración variable | 1,93 % | CC-BY-4.0 | HuggingFace (qualcomm) + AI Hub |
-| Whisper large-v3 | no disponible en esta ficha | Audio 16 kHz, ventana de 30 s | no disponible en esta ficha | MIT (según modelo original) | HuggingFace (openai) |
-| Whisper small | no disponible en esta ficha | Audio 16 kHz, ventana de 30 s | no disponible en esta ficha | MIT (según modelo original) | HuggingFace (openai) |
-| Parakeet-TDT-0.6B-v3 (NVIDIA, checkpoint base) | 627 M | Audio 16 kHz, 128 mel | 1,93 % | CC-BY-4.0 | HuggingFace (nvidia) |
+| Parakeet-TDT-0.6B-v3 (Qualcomm) | 627 M | Audio 16 kHz, 128 mel, duración variable | 1,93 % | CC-BY-4.0 | Hugging Face (qualcomm) + AI Hub |
+| Whisper large-v3 | no disponible en esta ficha | Audio 16 kHz, ventana de 30 s | no disponible en esta ficha | MIT (según modelo original) | Hugging Face (openai) |
+| Whisper small | no disponible en esta ficha | Audio 16 kHz, ventana de 30 s | no disponible en esta ficha | MIT (según modelo original) | Hugging Face (openai) |
+| Parakeet-TDT-0.6B-v3 (NVIDIA, checkpoint base) | 627 M | Audio 16 kHz, 128 mel | 1,93 % | CC-BY-4.0 | Hugging Face (nvidia) |
 
 No se dispone en la información proporcionada de cifras comparativas de WER ni de latencia para los modelos alternativos, por lo que la comparación cuantitativa queda limitada al dato del propio Parakeet.
 
@@ -111,7 +111,7 @@ No se dispone en la información proporcionada de cifras comparativas de WER ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/Parakeet-TDT-0.6B-v3
+- Hugging Face: https://huggingface.co/qualcomm/Parakeet-TDT-0.6B-v3
 - Checkpoint base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/parakeet_tdt
 - Repositorio Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/parakeet_tdt

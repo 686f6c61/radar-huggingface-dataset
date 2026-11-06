@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Monferio/vendetta-overwatch es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, publicado por el usuario Monferio en HuggingFace. El adaptador no es un modelo autonomo: se carga sobre los pesos del modelo base krea/Krea-2-Raw y se ha entrenado especificamente para introducir un concepto invocado mediante el token de activacion `vendetta_overwatch`. Se distribuye bajo licencia Apache 2.0 y con la libreria diffusers como via de uso principal.
+Monferio/vendetta-overwatch es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, publicado por el usuario Monferio en Hugging Face. El adaptador no es un modelo autonomo: se carga sobre los pesos del modelo base krea/Krea-2-Raw y se ha entrenado especificamente para introducir un concepto invocado mediante el token de activacion `vendetta_overwatch`. Se distribuye bajo licencia Apache 2.0 y con la libreria diffusers como via de uso principal.
 
 El adaptador se entrena sobre Krea 2 RAW pero, segun la model card, las muestras publicadas se han generado sobre Krea 2 Turbo con solo 8 pasos de inferencia y `guidance_scale=0.0`, lo que indica que el LoRA es compatible con la variante destilada del modelo base para generacion rapida. El repositorio ocupa 1,0 GB, un tamano que incluye las imagenes de muestra ademas de los pesos del adaptador.
 
@@ -99,7 +99,7 @@ No se dispone de informacion sobre otros LoRA de Krea 2 con los que comparar par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Monferio/vendetta-overwatch
+- Modelo en Hugging Face: https://huggingface.co/Monferio/vendetta-overwatch
 - Modelo base (RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (Turbo, usado en las muestras): https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

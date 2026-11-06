@@ -79,8 +79,8 @@ La propia model card advierte de que la evaluación de operación empresarial co
 
 | Modelo | Parámetros | Contexto | Acierto en test | Arrepentimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-0.8B sin ajustar (base) | 0,8 B | no disponible | 31,8 % | 2,03 | no disponible en la información proporcionada | HuggingFace |
-| Este modelo (SFT + GRPO) | 0,8 B + adaptador LoRA | no disponible | 77,9 % | 1,33 | apache-2.0 | HuggingFace |
+| Qwen3.5-0.8B sin ajustar (base) | 0,8 B | no disponible | 31,8 % | 2,03 | no disponible en la información proporcionada | Hugging Face |
+| Este modelo (SFT + GRPO) | 0,8 B + adaptador LoRA | no disponible | 77,9 % | 1,33 | apache-2.0 | Hugging Face |
 | Política profesora (PPO en el simulador) | no disponible | no disponible | por encima del modelo publicado, según la model card | no disponible | no disponible | no publicada |
 | Otros modelos de decisión con RL comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no se han encontrado en la búsqueda web |
 
@@ -100,7 +100,7 @@ La propia model card advierte de que la evaluación de operación empresarial co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seyunprobiz/connectailab-rl-seyunbrain-v1
+- Modelo en Hugging Face: https://huggingface.co/seyunprobiz/connectailab-rl-seyunbrain-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

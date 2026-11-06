@@ -99,8 +99,8 @@ En cuanto a alternativas de otros modelos de 4B, no se dispone de datos comparat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/qualcomm-ai-hub-community/Qwen3-4B-Instruct-2507-Hi-Fi-fraQtl
+- Repositorio Hugging Face del modelo: https://huggingface.co/qualcomm-ai-hub-community/Qwen3-4B-Instruct-2507-Hi-Fi-fraQtl
 - Repositorio canonico con recibos completos: https://huggingface.co/fraQtl/Qwen3-4B-Instruct-2507-Hi-Fi-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Pagina de Qualcomm AI Hub para Qwen3-4B-Instruct-2507: https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507
 - Repositorio GitHub de Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/qwen3_4b_instruct_2507

@@ -78,7 +78,7 @@ Los datos de la columna de contexto y licencia de los modelos alternativos provi
 | Qwen2.5-3B-Instruct | ~3,1B | 32k nativos, ampliable | licencia propia de Qwen, no verificada | pesos abiertos en HF |
 | Llama-3.2-3B-Instruct | ~3,2B | 128k | Llama 3.2 Community License | pesos abiertos en HF, con condiciones de uso |
 
-No hay datos de rendimiento comparado para este checkpoint, por lo que la comparacion se limita a parametros, contexto y licencia. En igualdad de condiciones, los modelos oficiales de HuggingFace, Alibaba y Meta parten con ventaja en soporte, documentacion y garantias legales.
+No hay datos de rendimiento comparado para este checkpoint, por lo que la comparacion se limita a parametros, contexto y licencia. En igualdad de condiciones, los modelos oficiales de Hugging Face, Alibaba y Meta parten con ventaja en soporte, documentacion y garantias legales.
 
 ## Limitaciones y advertencias
 

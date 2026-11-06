@@ -67,5 +67,5 @@ No se dispone de informacion sobre modelos comparables en el repositorio. El mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anan19990108/yolo26-int8-tflite
+- Repositorio Hugging Face: https://huggingface.co/anan19990108/yolo26-int8-tflite
 - Modelo base (Ultralytics YOLO26): no se proporciona enlace directo en la informacion, pero se puede encontrar en el sitio oficial de Ultralytics.

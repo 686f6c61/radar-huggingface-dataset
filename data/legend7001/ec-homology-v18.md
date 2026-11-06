@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Sistema | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ec-homology-v18 | MMseqs2 + reranker gradient boosting | No disponible | No aplica | No disponible | HuggingFace (0 descargas) |
+| ec-homology-v18 | MMseqs2 + reranker gradient boosting | No disponible | No aplica | No disponible | Hugging Face (0 descargas) |
 | MMseqs2 con transferencia de anotación directa (best hit) | Búsqueda de homología sin reranking | No aplica | No aplica | GPLv3 | Ampliamente disponible |
 | ProteInfer (Google Research) | Red neuronal profunda sobre secuencias | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | Público |
 | CLEAN (modelo de contraste EC) | Aprendizaje contrastivo con jerarquía EC | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | Público |
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Legend7001/ec-homology-v18
+- Modelo en Hugging Face: https://huggingface.co/Legend7001/ec-homology-v18
 - Referencia de MMseqs2: Steinegger y Söding, Nature Biotechnology 2017 (GPLv3), citado en la model card
 - Vocabulario EC: ExPASy ENZYME, release 02-Sep-2026, SIB (CC BY 4.0), citado en la model card
 - Base de datos externa: UniProtKB/Swiss-Prot release 2026_03 (ver `EXTERNAL_DATA.md` en el repositorio)

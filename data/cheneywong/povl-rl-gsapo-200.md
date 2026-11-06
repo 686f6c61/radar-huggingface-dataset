@@ -2,7 +2,7 @@
 
 ## Resumen
 
-povl-rl-gsapo-200 es un checkpoint de un modelo de vision-lenguaje especializado en reconocimiento de tablas (table recognition) y parseo de documentos, publicado por el usuario CheneyWong en HuggingFace. Se trata de un ajuste fino derivado de CheneyWong/povl-rl-dapo-400 (ronda 1 de RL), que a su vez parte de PaddleOCR-VL-1.6 como modelo base. El checkpoint corresponde a la segunda ronda de aprendizaje por refuerzo, entrenada con el algoritmo que el autor denomina GSAPO durante 200 pasos, y se presenta como "el modelo entregado de esa ronda".
+povl-rl-gsapo-200 es un checkpoint de un modelo de vision-lenguaje especializado en reconocimiento de tablas (table recognition) y parseo de documentos, publicado por el usuario CheneyWong en Hugging Face. Se trata de un ajuste fino derivado de CheneyWong/povl-rl-dapo-400 (ronda 1 de RL), que a su vez parte de PaddleOCR-VL-1.6 como modelo base. El checkpoint corresponde a la segunda ronda de aprendizaje por refuerzo, entrenada con el algoritmo que el autor denomina GSAPO durante 200 pasos, y se presenta como "el modelo entregado de esa ronda".
 
 El modelo tiene 905.601.648 parametros (aproximadamente 0,91 mil millones), un tamano que lo situa en la gama de los VLM compactos y que lo hace desplegable en hardware de consumo. La tarea es acotada y muy especifica: recibe una unica imagen de tabla junto con el prompt `Table Recognition:` y emite, en una sola pasada, marcado OTSL con los tokens `<fcel>`, `<ecel>`, `<ucel>`, `<lcel>`, `<xcel>` y `<nl>`. No es, por tanto, un modelo conversacional generalista pese a llevar la etiqueta `conversational`.
 
@@ -86,8 +86,8 @@ La model card solo permite comparar con los modelos de su propia cadena de linaj
 
 | Modelo | Parametros | Contexto | TEDS (equal weight) | TEDS-S (equal weight) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| povl-rl-gsapo-200 | 0,91 B | no disponible | 0,8418 / 0,8473 (segun fuente) | 0,9161 / 0,9078 (segun fuente) | apache-2.0 | HuggingFace, safetensors |
-| povl-rl-dapo-400 (RL ronda 1) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace |
+| povl-rl-gsapo-200 | 0,91 B | no disponible | 0,8418 / 0,8473 (segun fuente) | 0,9161 / 0,9078 (segun fuente) | apache-2.0 | Hugging Face, safetensors |
+| povl-rl-dapo-400 (RL ronda 1) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face |
 | PaddleOCR-VL-1.6 (base) | no disponible (compatible con 0,91 B del derivado) | no disponible | 0,8395 | 0,9171 | no disponible | no disponible en la informacion proporcionada |
 
 Comparativa con otros modelos de reconocimiento de tablas de la misma categoria: no disponible.
@@ -107,7 +107,7 @@ Comparativa con otros modelos de reconocimiento de tablas de la misma categoria:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CheneyWong/povl-rl-gsapo-200
+- Modelo en Hugging Face: https://huggingface.co/CheneyWong/povl-rl-gsapo-200
 - Checkpoint predecesor (RL ronda 1), referenciado en la model card como `CheneyWong/povl-rl-dapo-400`: https://huggingface.co/CheneyWong/povl-rl-dapo-400
 - Modelo base citado en la model card como PaddleOCR-VL-1.6: no disponible (no se proporciona enlace)
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio resultados relacionados con el modelo; los unicos resultados obtenidos correspondian al servicio de streaming deportivo DAZN y no guardan relacion con este checkpoint.

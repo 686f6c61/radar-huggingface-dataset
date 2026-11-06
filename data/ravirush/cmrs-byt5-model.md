@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ravirush/cmrs-byt5-model` es un modelo publicado en HuggingFace por el usuario ravirush bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card mas alla del campo de licencia, no declara pipeline, idiomas, arquitectura ni tamanos, y acumula 0 descargas y 1 like. El identificador contiene la cadena "byt5", lo que apunta a la familia ByT5 (variante byte-level de T5), pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
+`ravirush/cmrs-byt5-model` es un modelo publicado en Hugging Face por el usuario ravirush bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card mas alla del campo de licencia, no declara pipeline, idiomas, arquitectura ni tamanos, y acumula 0 descargas y 1 like. El identificador contiene la cadena "byt5", lo que apunta a la familia ByT5 (variante byte-level de T5), pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
 No hay informacion publica sobre datos de entrenamiento, numero de parametros, ventana de contexto, proceso de alineacion (RLHF, DPO) ni evaluaciones. El unico dato verificable ademas de la licencia es la fecha de creacion y ultima actualizacion del repositorio, ambas el 10 de septiembre de 2026.
 
@@ -86,6 +86,6 @@ No disponible. Al no estar confirmada la arquitectura, el tamano ni la tarea del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravirush/cmrs-byt5-model
+- Modelo en Hugging Face: https://huggingface.co/ravirush/cmrs-byt5-model
 - Referencia externa sobre la arquitectura ByT5 (no vinculada de forma confirmada a este repositorio): https://arxiv.org/abs/2105.13626
 - La busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos resultados obtenidos correspondian a paginas de un servicio de correo sin relacion con el contenido solicitado.

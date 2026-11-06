@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jonathanedwards/contrastive-experiments-2024` es un repositorio experimental publicado en HuggingFace que contiene una implementación de referencia de la arquitectura Flamingo aplicada a aprendizaje contrastivo. Lo desarrolla el usuario jonathanedwards y no constituye un modelo entrenado ni evaluado, sino un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El repositorio incluye `run.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
+`jonathanedwards/contrastive-experiments-2024` es un repositorio experimental publicado en Hugging Face que contiene una implementación de referencia de la arquitectura Flamingo aplicada a aprendizaje contrastivo. Lo desarrolla el usuario jonathanedwards y no constituye un modelo entrenado ni evaluado, sino un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El repositorio incluye `run.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
 La arquitectura declarada es Flamingo en configuración "small", con atención dilatada, fusión tensorial, activación mish y normalización por instancias. El checkpoint contiene 16.576 parámetros totales según los metadatos de safetensors, un tamaño que confirma que se trata de una inicialización mínima y no de un modelo funcional para tareas reales. El tamaño del repositorio es de 0,0 GB.
 
@@ -88,5 +88,5 @@ La comparación directa no es significativa: los modelos Flamingo publicados y e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonathanedwards/contrastive-experiments-2024
+- Repositorio en Hugging Face: https://huggingface.co/jonathanedwards/contrastive-experiments-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web proporcionada.

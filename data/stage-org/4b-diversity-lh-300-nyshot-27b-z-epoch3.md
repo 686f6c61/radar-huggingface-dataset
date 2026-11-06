@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/4b-diversity-LH-300-nyshot-27b-z-epoch3 es un checkpoint de investigación publicado por la organización Stage-org en HuggingFace. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base Qwen/Qwen3.5-4B, con 4.539.265.536 parámetros (aproximadamente 4,54 mil millones) y pesos en safetensors que ocupan 9,1 GB en el repositorio. La etiqueta de arquitectura declarada es qwen3_5 y no hay indicios de que sea un modelo de mezcla de expertos (MoE), por lo que se trata de un transformer denso heredado del modelo base.
+Stage-org/4b-diversity-LH-300-nyshot-27b-z-epoch3 es un checkpoint de investigación publicado por la organización Stage-org en Hugging Face. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base Qwen/Qwen3.5-4B, con 4.539.265.536 parámetros (aproximadamente 4,54 mil millones) y pesos en safetensors que ocupan 9,1 GB en el repositorio. La etiqueta de arquitectura declarada es qwen3_5 y no hay indicios de que sea un modelo de mezcla de expertos (MoE), por lo que se trata de un transformer denso heredado del modelo base.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio no incluye licencia, idiomas soportados, pipeline declarado ni una model card convencional. Lo único disponible es un bloque autogenerado de procedencia de entrenamiento ("Training provenance") que documenta el comando y el fichero de configuración TOML del entrenamiento. El nombre del checkpoint sugiere una campaña de experimentación sobre diversidad de generación ("4b-diversity", "LH-300", "nyshot-27b", "epoch3"), pero el autor no explica esas siglas.
 
@@ -68,7 +68,7 @@ Los datos de las alternativas proceden de sus model cards públicas y pueden var
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Stage-org/4b-diversity-LH-300-nyshot-27b-z-epoch3 | 4,54 B | 65.536 tokens en inferencia (300.000 en la config de entrenamiento) | No disponible | Repositorio publico con 0 descargas y 0 likes |
-| Qwen/Qwen3.5-4B (modelo base) | ~4 B | No disponible en esta busqueda | No disponible en esta busqueda | Publico en HuggingFace |
+| Qwen/Qwen3.5-4B (modelo base) | ~4 B | No disponible en esta busqueda | No disponible en esta busqueda | Publico en Hugging Face |
 | Qwen3-4B | 4,0 B | 32.768 tokens nativos, extensible a 131.072 con YaRN | Apache 2.0 | Publico, con versiones GGUF y cuantizadas de terceros |
 | Llama 3.2 3B Instruct | 3,2 B | 128.000 tokens | Llama 3.2 Community License | Publico, ampliamente soportado en llama.cpp, vLLM y Ollama |
 | Gemma 3 4B IT | ~4 B | 128.000 tokens | Gemma Terms of Use | Publico, con ecosistema de cuantizaciones consolidado |
@@ -91,7 +91,7 @@ La diferencia principal frente a las alternativas no está en el tamaño ni en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-diversity-LH-300-nyshot-27b-z-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-diversity-LH-300-nyshot-27b-z-epoch3
 - Dataset de entrenamiento referenciado en la configuracion: https://huggingface.co/datasets/Stage-org/4b-diversity-LH-300-nyshot-27b-z
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo (los resultados obtenidos eran portales de ofertas de practicas sin relacion con el proyecto).

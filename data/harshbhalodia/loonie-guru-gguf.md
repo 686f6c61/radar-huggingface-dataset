@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harshbhalodia/loonie-guru-gguf
+- Repositorio Hugging Face: https://huggingface.co/harshbhalodia/loonie-guru-gguf
 - Modelo base del ajuste: https://huggingface.co/harshbhalodia/loonie-guru
 - Modelo original: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Version usada para el entrenamiento: https://huggingface.co/unsloth/Qwen3-VL-4B-Instruct

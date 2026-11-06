@@ -80,7 +80,7 @@ Los datos de los modelos alternativos provienen de conocimiento publico general 
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| SauerkrautLM-MoEdernColBERT-115M-CrispEmbed-GGUF | 114,7 M | no disponible | Apache-2.0 | Recuperacion ColBERT (multi-vector, MaxSim) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| SauerkrautLM-MoEdernColBERT-115M-CrispEmbed-GGUF | 114,7 M | no disponible | Apache-2.0 | Recuperacion ColBERT (multi-vector, MaxSim) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | no disponible | Apache-2.0 | Embedding denso de un vector por texto | Ampliamente desplegado |
 | intfloat/multilingual-e5-small | 118 M | no disponible | MIT | Embedding denso multilingue | Ampliamente desplegado |
 | colbert-ir/colbertv2.0 | aproximadamente 110 M | no disponible | no verificada en esta ficha | Recuperacion ColBERT (multi-vector, MaxSim) | Referencia academica del enfoque |
@@ -101,7 +101,7 @@ Los datos de los modelos alternativos provienen de conocimiento publico general 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/SauerkrautLM-MoEdernColBERT-115M-CrispEmbed-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/SauerkrautLM-MoEdernColBERT-115M-CrispEmbed-GGUF
 - Modelo base: https://huggingface.co/VAGOsolutions/SauerkrautLM-MoEdernColBERT-115M
 - Revision concreta del checkpoint utilizada: https://huggingface.co/VAGOsolutions/SauerkrautLM-MoEdernColBERT-115M/tree/66380d2ade3b5027bba83bdcdba052d0bb86dcdb
 - Paper, blog, repositorio de codigo o demo de CrispEmbed: no disponible en la informacion proporcionada

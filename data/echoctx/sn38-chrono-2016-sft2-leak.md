@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `echoctx/sn38-chrono-2016-sft2-leak` es un modelo de lenguaje causal (causal-lm) de 2.018 millones de parámetros, desarrollado por el usuario echoctx y publicado en HuggingFace con licencia MIT. Forma parte de una serie experimental denominada "sn38-nanochrono" dentro del proyecto ChronoLLM, orientada a la generación de completaciones factuales cortas sobre eventos y entidades del año 2016. Su nombre indica que es un candidato de la ronda 7 (round-7) para el año 2016, y su pipeline de entrenamiento incluye un paso de "leak-aware hinge" que busca controlar la fuga de información temporal en las respuestas.
+El modelo `echoctx/sn38-chrono-2016-sft2-leak` es un modelo de lenguaje causal (causal-lm) de 2.018 millones de parámetros, desarrollado por el usuario echoctx y publicado en Hugging Face con licencia MIT. Forma parte de una serie experimental denominada "sn38-nanochrono" dentro del proyecto ChronoLLM, orientada a la generación de completaciones factuales cortas sobre eventos y entidades del año 2016. Su nombre indica que es un candidato de la ronda 7 (round-7) para el año 2016, y su pipeline de entrenamiento incluye un paso de "leak-aware hinge" que busca controlar la fuga de información temporal en las respuestas.
 
 El modelo se presenta como un experimento de investigación más que como un producto listo para producción. La model card describe un proceso de entrenamiento en tres fases: un ajuste con "nanochrono" y jitter de valores singulares, un ajuste supervisado (SFT) con completaciones empaquetadas, y un paso de regularización específico para frases públicas posteriores a 2016. Aunque se reportan métricas internas de calidad y de evaluación de fugas, no se proporcionan detalles sobre la arquitectura interna, el contexto máximo, ni resultados de benchmarks estándar. Su relevancia radica en explorar cómo controlar la contaminación temporal en modelos de lenguaje, un problema poco abordado en la literatura abierta.
 
@@ -71,4 +71,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: echoctx/sn38-chrono-2016-sft2-leak](https://huggingface.co/echoctx/sn38-chrono-2016-sft2-leak)
+- [Hugging Face: echoctx/sn38-chrono-2016-sft2-leak](https://huggingface.co/echoctx/sn38-chrono-2016-sft2-leak)

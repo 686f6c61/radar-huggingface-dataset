@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) de `microsoft/Phi-3-mini-4k-instruct`, un modelo de lenguaje de 3.800 millones de parametros desarrollado originalmente por Microsoft. El autor, Echoo113, ha adaptado el modelo base mediante entrenamiento supervisado (SFT) utilizando la libreria TRL de HuggingFace, con un enfoque aparente en tareas relacionadas con inmigracion, segun se deduce del nombre del repositorio.
+Este modelo es un ajuste fino (fine-tuning) de `microsoft/Phi-3-mini-4k-instruct`, un modelo de lenguaje de 3.800 millones de parametros desarrollado originalmente por Microsoft. El autor, Echoo113, ha adaptado el modelo base mediante entrenamiento supervisado (SFT) utilizando la libreria TRL de Hugging Face, con un enfoque aparente en tareas relacionadas con inmigracion, segun se deduce del nombre del repositorio.
 
 La relevancia de este modelo reside en su tamano compacto: al estar basado en Phi-3-mini, hereda una arquitectura densa de solo 3.800 millones de parametros con una ventana de contexto de 4.096 tokens, lo que permite su ejecucion en hardware de consumo. El ajuste fino especifico busca especializar el modelo en un dominio concreto, aunque la informacion publicada no detalla el dataset utilizado ni los resultados obtenidos.
 
@@ -25,7 +25,7 @@ Cabe destacar que el repositorio presenta cero descargas y cero likes en el mome
 
 El modelo base, Phi-3-mini-4k-instruct, emplea una arquitectura Transformer densa decoder-only con 3.800 millones de parametros. Fue entrenado por Microsoft sobre 3,3 billones de tokens combinando datos sinteticos y contenido web publico filtrado, con un enfasis en datos de alta calidad y densos en razonamiento. El modelo base incorpora un sistema de chat con formato de mensajes y fue optimizado mediante instrucciones.
 
-El proceso de ajuste fino de este repositorio se realizo con la libreria TRL (Transformer Reinforcement Learning) de HuggingFace, utilizando la tecnica de Supervised Fine-Tuning (SFT). Los detalles del dataset de entrenamiento, el numero de epocas, la tasa de aprendizaje y los hiperparametros no se han publicado en la model card. Las versiones de las librerias indican un entrenamiento reciente: TRL 0.19.1, Transformers 4.57.6, PyTorch 2.11.0+cu128 y Datasets 3.6.0.
+El proceso de ajuste fino de este repositorio se realizo con la libreria TRL (Transformer Reinforcement Learning) de Hugging Face, utilizando la tecnica de Supervised Fine-Tuning (SFT). Los detalles del dataset de entrenamiento, el numero de epocas, la tasa de aprendizaje y los hiperparametros no se han publicado en la model card. Las versiones de las librerias indican un entrenamiento reciente: TRL 0.19.1, Transformers 4.57.6, PyTorch 2.11.0+cu128 y Datasets 3.6.0.
 
 El nombre del repositorio sugiere el uso de una tecnica de STEER (posiblemente relacionada con control de comportamiento) con un valor de 0.40625, y una variante denominada "mlpB", aunque no hay documentacion que explique estos terminos.
 
@@ -83,7 +83,7 @@ La comparativa se basa en los modelos base, ya que no existen datos publicados s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-immigration_mlpB-STEER0.40625-ft4.43
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
+- Repositorio Hugging Face: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-immigration_mlpB-STEER0.40625-ft4.43
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de referencia de Phi-3-mini en GitHub: https://github.com/ttlmtang123/Phi-3-mini-4k-instruct

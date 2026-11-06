@@ -80,7 +80,7 @@ La ventaja de este modelo es su contexto de 1M tokens y la velocidad de decodifi
 ## Limitaciones y advertencias
 
 - El abliteration elimina los mecanismos de seguridad del modelo, lo que puede generar contenido ofensivo, peligroso o ilegal. No es adecuado para aplicaciones publicas sin supervision humana.
-- La licencia de DeepSeek es restrictiva y no permite uso comercial sin autorizacion expresa. El acceso al checkpoint esta gated y requiere aceptar las condiciones en HuggingFace.
+- La licencia de DeepSeek es restrictiva y no permite uso comercial sin autorizacion expresa. El acceso al checkpoint esta gated y requiere aceptar las condiciones en Hugging Face.
 - Solo se soportan ingles y chino; el rendimiento en otros idiomas no esta garantizado.
 - El modelo requiere hardware Apple Silicon especifico (M3 Ultra o M4 Max con 128 GB) para un uso optimo. En equipos con menos memoria, la ventana de contexto se reducira drasticamente.
 - No se han publicado benchmarks de calidad, por lo que se desconoce si la cuantizacion MXFP4 o el abliteration degradan el rendimiento en tareas de razonamiento, matematicas o codigo.
@@ -89,7 +89,7 @@ La ventaja de este modelo es su contexto de 1M tokens y la velocidad de decodifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drowzeys/keys-Mac-DeepSeek-V4-Flash-0731-MXFP4-MLX-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/drowzeys/keys-Mac-DeepSeek-V4-Flash-0731-MXFP4-MLX-Abliterated
 - Modelo base DeepSeek-V4-Flash-0731: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio GitHub del autor (instrucciones de ejecucion): https://github.com/drowzeys/keys-Mac-DeepSeek-V4-Flash-DSpark-0731-MXFP4-MLX-49tps
 - Benchmarks publicados por el autor: https://github.com/drowzeys/keys-Mac-DeepSeek-V4-Flash-DSpark-0731-MXFP4-MLX-Abliterated-49tps/blob/main/bench/RESULTS.md

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 MFlux Q4 (esta ficha) | no disponible | no disponible | MLX safetensors Q4, 10,6 GB | qwen-research | HuggingFace, comunidad |
-| Qwen-Image-2.1 MFlux BF16 | no disponible | no disponible | MLX safetensors BF16, 33,1 GB | qwen-research | HuggingFace, comunidad |
-| Qwen-Image-2.1 MFlux Q8 | no disponible | no disponible | MLX safetensors Q8, 18,5 GB | qwen-research | HuggingFace, comunidad |
-| Qwen/Qwen-Image-2.1 (original) | no disponible | no disponible | no disponible | qwen-research | HuggingFace, oficial |
+| Qwen-Image-2.1 MFlux Q4 (esta ficha) | no disponible | no disponible | MLX safetensors Q4, 10,6 GB | qwen-research | Hugging Face, comunidad |
+| Qwen-Image-2.1 MFlux BF16 | no disponible | no disponible | MLX safetensors BF16, 33,1 GB | qwen-research | Hugging Face, comunidad |
+| Qwen-Image-2.1 MFlux Q8 | no disponible | no disponible | MLX safetensors Q8, 18,5 GB | qwen-research | Hugging Face, comunidad |
+| Qwen/Qwen-Image-2.1 (original) | no disponible | no disponible | no disponible | qwen-research | Hugging Face, oficial |
 
 No se dispone de datos de rendimiento ni de comparativas con modelos de otras familias en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de comparativas con modelos de otras fa
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/mflux-community/qwen-image-2-1-mflux-q4
+- Repo Hugging Face: https://huggingface.co/mflux-community/qwen-image-2-1-mflux-q4
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - MFlux (GitHub): https://github.com/filipstrand/mflux

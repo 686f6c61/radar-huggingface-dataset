@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SigLIP 2 So400m NaFlex (este) | ~1,14 mil millones | resolución flexible (NaFlex) | Apache 2.0 | HuggingFace (copia de CollectionStudio) | Mejoras densas y multilingües sobre SigLIP 1 |
-| SigLIP 1 So400m | no disponible | parches fijos | Apache 2.0 | HuggingFace (Google) | Objetivo contrastivo original de SigLIP |
-| CLIP ViT-L/14 | no disponible | 224 px fijos | Licencia de investigación (MIT/Apache según variante) | HuggingFace (OpenAI) | Referente clásico de clasificación zero-shot |
+| SigLIP 2 So400m NaFlex (este) | ~1,14 mil millones | resolución flexible (NaFlex) | Apache 2.0 | Hugging Face (copia de CollectionStudio) | Mejoras densas y multilingües sobre SigLIP 1 |
+| SigLIP 1 So400m | no disponible | parches fijos | Apache 2.0 | Hugging Face (Google) | Objetivo contrastivo original de SigLIP |
+| CLIP ViT-L/14 | no disponible | 224 px fijos | Licencia de investigación (MIT/Apache según variante) | Hugging Face (OpenAI) | Referente clásico de clasificación zero-shot |
 
 Los datos cuantitativos de rendimiento de estos modelos no están disponibles en la información proporcionada, por lo que no se incluye comparación numérica.
 

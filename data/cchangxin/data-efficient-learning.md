@@ -6,7 +6,7 @@
 
 El repositorio está publicado bajo licencia MIT por el usuario `cchangxin`, con 0 descargas y 0 likes en el momento de la consulta, y una fecha de creación y actualización del 17 de septiembre de 2026 (7 segundos de diferencia entre ambas, lo que sugiere una subida única sin iteraciones posteriores). El tamaño del repositorio es de 0.0 GB. El único dato numérico asociado a los pesos es un recuento de 24.832 parámetros en el fichero `safetensors`, una cifra que en la práctica descarta que se trate de un transformer funcional para generación de texto.
 
-La relevancia de esta ficha es, por tanto, fundamentalmente metodológica y de advertencia: sirve para documentar que el identificador existe en HuggingFace, que no contiene checkpoint utilizable, código de entrenamiento, dataset ni resultados, y que no debe confundirse con un modelo desplegable. Cualquier evaluación de capacidades, benchmarks o requisitos de hardware es inaplicable con la información disponible.
+La relevancia de esta ficha es, por tanto, fundamentalmente metodológica y de advertencia: sirve para documentar que el identificador existe en Hugging Face, que no contiene checkpoint utilizable, código de entrenamiento, dataset ni resultados, y que no debe confundirse con un modelo desplegable. Cualquier evaluación de capacidades, benchmarks o requisitos de hardware es inaplicable con la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente metodológica y de a
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura. El repositorio se describe a sí mismo como una nota exploratoria y afirma de forma literal que no reclama mejoras de benchmark, ablaciones completas, código liberado ni checkpoint entrenado. El tag `transformer` procede de los metadatos de HuggingFace, pero no va acompañado de `config.json`, `modeling_*.py` ni de ninguna descripción de capas, atención o tokenizador.
+No hay información sobre arquitectura. El repositorio se describe a sí mismo como una nota exploratoria y afirma de forma literal que no reclama mejoras de benchmark, ablaciones completas, código liberado ni checkpoint entrenado. El tag `transformer` procede de los metadatos de Hugging Face, pero no va acompañado de `config.json`, `modeling_*.py` ni de ninguna descripción de capas, atención o tokenizador.
 
 Respecto al entrenamiento, no se documenta número de tokens, composición del dataset, método de alineación (RLHF, DPO, SFT) ni innovaciones técnicas. La model card indica que los apartados marcados como planes o hipótesis no deben interpretarse como resultados experimentales, y que si en el futuro se añaden resultados deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -88,5 +88,5 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cchangxin/data-efficient-learning
+- Repositorio en Hugging Face: https://huggingface.co/cchangxin/data-efficient-learning
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este repositorio, su autor o el tema. Los resultados devueltos corresponden a páginas de foros y noticias sobre acceso a cadenas de televisión francesas (TF1, Canal+, MyTF1), sin relación alguna con el modelo ni con aprendizaje eficiente en datos.

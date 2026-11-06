@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `laurenwood/paper_017509283_text_image_retrieval` alojado en HuggingFace no contiene un modelo de inteligencia artificial propiamente dicho, sino un documento en formato Markdown que describe un paper académico sobre recuperación de imágenes mediante texto (text-image retrieval). El autor, identificado como `laurenwood`, ha publicado este artefacto bajo licencia Creative Commons Attribution 4.0 (CC-BY-4.0), con la intención de compartir un manuscrito estructurado según un esquema de introducción, problema, solución, validación y trabajo futuro.
+El repositorio `laurenwood/paper_017509283_text_image_retrieval` alojado en Hugging Face no contiene un modelo de inteligencia artificial propiamente dicho, sino un documento en formato Markdown que describe un paper académico sobre recuperación de imágenes mediante texto (text-image retrieval). El autor, identificado como `laurenwood`, ha publicado este artefacto bajo licencia Creative Commons Attribution 4.0 (CC-BY-4.0), con la intención de compartir un manuscrito estructurado según un esquema de introducción, problema, solución, validación y trabajo futuro.
 
 El contenido del repositorio se limita a un único archivo, `paper_017509283_text_image_retrieval.md`, que sigue un estilo de escritura analítico y conciso, con citas en formato de nota al pie. No se proporcionan pesos, arquitectura, parámetros, ni ningún otro componente técnico que permita ejecutar o evaluar un modelo de aprendizaje automático. Por tanto, esta ficha debe interpretarse como una descripción del repositorio y sus limitaciones, no como una especificación de un sistema de IA funcional.
 
@@ -55,5 +55,5 @@ No disponible. No se puede comparar un repositorio que no contiene un modelo con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/laurenwood/paper_017509283_text_image_retrieval
+- Repositorio en Hugging Face: https://huggingface.co/laurenwood/paper_017509283_text_image_retrieval
 - Paper relacionado (no confirmado como contenido del repositorio): https://arxiv.org/abs/2507.05513

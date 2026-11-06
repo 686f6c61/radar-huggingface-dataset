@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada fuera del ámbito de investigación exp
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer causal con atención por ventanas deslizantes y mecanismos de atención estándar. Como fine-tune de `unsloth/Qwen2.5-7B-Instruct`, hereda la arquitectura de 7B parámetros con 28 capas, 28 cabezas de atención y una dimensión oculta de 3584 (valores típicos de Qwen2.5-7B). El entrenamiento se realizó con la librería Unsloth, que optimiza el fine-tuning para ser aproximadamente 2 veces más rápido, y con la librería TRL de HuggingFace, que proporciona herramientas para entrenamiento con refuerzo y ajuste fino supervisado.
+El modelo se basa en la arquitectura Qwen2, un transformer causal con atención por ventanas deslizantes y mecanismos de atención estándar. Como fine-tune de `unsloth/Qwen2.5-7B-Instruct`, hereda la arquitectura de 7B parámetros con 28 capas, 28 cabezas de atención y una dimensión oculta de 3584 (valores típicos de Qwen2.5-7B). El entrenamiento se realizó con la librería Unsloth, que optimiza el fine-tuning para ser aproximadamente 2 veces más rápido, y con la librería TRL de Hugging Face, que proporciona herramientas para entrenamiento con refuerzo y ajuste fino supervisado.
 
 No se proporcionan detalles sobre el dataset, el número de tokens de entrenamiento ni si se usó RLHF, DPO u otro método de alineación. El nombre del modelo sugiere un experimento con "números colapsados" con una probabilidad p10, pero no se documenta el propósito exacto. La generación 8 indica que es la octava iteración de un proceso de entrenamiento iterativo, pero no se aportan métricas de rendimiento.
 

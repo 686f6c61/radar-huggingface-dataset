@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rao-studios/Qwen2.5-Coder-7B-Instruct-mlx-4bit | 7,6 B | 32.768 | safetensors MLX 4 bits | Apache 2.0 | HuggingFace, 150 descargas |
-| mlx-community/Qwen2.5-Coder-7B-Instruct-4bit | 7,6 B | 32.768 | safetensors MLX 4 bits | Apache 2.0 | HuggingFace (origen de este mirror) |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 | safetensors (BF16) | Apache 2.0 | HuggingFace (modelo original) |
+| rao-studios/Qwen2.5-Coder-7B-Instruct-mlx-4bit | 7,6 B | 32.768 | safetensors MLX 4 bits | Apache 2.0 | Hugging Face, 150 descargas |
+| mlx-community/Qwen2.5-Coder-7B-Instruct-4bit | 7,6 B | 32.768 | safetensors MLX 4 bits | Apache 2.0 | Hugging Face (origen de este mirror) |
+| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 | safetensors (BF16) | Apache 2.0 | Hugging Face (modelo original) |
 
 Las tres entradas corresponden al mismo modelo subyacente en distintos empaquetados; no se dispone de datos de benchmarks ni de comparativas con modelos de otras familias en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ Las tres entradas corresponden al mismo modelo subyacente en distintos empaqueta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rao-studios/Qwen2.5-Coder-7B-Instruct-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/rao-studios/Qwen2.5-Coder-7B-Instruct-mlx-4bit
 - Repositorio de origen (MLX 4 bits): https://huggingface.co/mlx-community/Qwen2.5-Coder-7B-Instruct-4bit
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Libreria MLX-LM: https://github.com/ml-explore/mlx-lm

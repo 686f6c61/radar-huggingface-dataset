@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Liam-CODE-0.6B es una cuantización GGUF del modelo RIFA-CODE-0.6B, desarrollado originalmente por smshahbaj y convertido al formato GGUF por mradermacher. Se trata de un modelo de generación de texto de tamaño reducido, con 596 millones de parámetros, orientado a tareas conversacionales y de código, según los tags presentes en su ficha de HuggingFace. Su principal valor es permitir la ejecución de un modelo de lenguaje en entornos con recursos muy limitados, gracias a los distintos niveles de cuantización disponibles.
+Liam-CODE-0.6B es una cuantización GGUF del modelo RIFA-CODE-0.6B, desarrollado originalmente por smshahbaj y convertido al formato GGUF por mradermacher. Se trata de un modelo de generación de texto de tamaño reducido, con 596 millones de parámetros, orientado a tareas conversacionales y de código, según los tags presentes en su ficha de Hugging Face. Su principal valor es permitir la ejecución de un modelo de lenguaje en entornos con recursos muy limitados, gracias a los distintos niveles de cuantización disponibles.
 
-La información pública sobre este modelo es escasa. No se detallan aspectos clave como la arquitectura interna, la longitud de contexto ni el proceso de entrenamiento. Por ello, esta ficha se limita a los datos disponibles en el repositorio de HuggingFace y en la model card original, marcando como "no disponible" cualquier dato no especificado.
+La información pública sobre este modelo es escasa. No se detallan aspectos clave como la arquitectura interna, la longitud de contexto ni el proceso de entrenamiento. Por ello, esta ficha se limita a los datos disponibles en el repositorio de Hugging Face y en la model card original, marcando como "no disponible" cualquier dato no especificado.
 
 ## Especificaciones técnicas
 

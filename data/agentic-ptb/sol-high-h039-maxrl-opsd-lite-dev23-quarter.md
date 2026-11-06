@@ -73,6 +73,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h039.maxrl-opsd-lite-dev23-quarter
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h039.maxrl-opsd-lite-dev23-quarter
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio Agentic Library (contexto del proyecto, no directamente del modelo): https://github.com/Sol-HQ/agentic-library

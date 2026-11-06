@@ -81,7 +81,7 @@ No hay datos de benchmarks que permitan una comparación cuantitativa. La compar
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B-GGUF
 - Modelo base (safetensors): https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B
 - Repositorio GitHub con datasets y documentación: https://github.com/aimerib/spoomplesmaxx
 - Modelo relacionado (mini-14B): https://huggingface.co/aimeri/spoomplesmaxx-mini-14B

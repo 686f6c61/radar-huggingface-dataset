@@ -91,7 +91,7 @@ Nota: los datos de los modelos comparativos provienen de sus fichas públicas y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LuxiaSL/kotodama-moonshot-1b-s7
+- Repositorio en Hugging Face: https://huggingface.co/LuxiaSL/kotodama-moonshot-1b-s7
 - Binding Atlas (progresión de cinco fases citada en la model card): https://aetherawi.red/kotodama/binding-atlas.html
 - Paper, blog o repositorio del paquete kotodama: no disponible en la información proporcionada.
 - Demos o espacios de prueba: no disponible.

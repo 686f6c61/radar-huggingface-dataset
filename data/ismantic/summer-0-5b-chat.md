@@ -98,7 +98,7 @@ Summer-0.5B-Chat parte con desventaja frente a modelos preentrenados con mas dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ismantic/Summer-0.5B-Chat
+- Modelo en Hugging Face: https://huggingface.co/Ismantic/Summer-0.5B-Chat
 - Modelo base S0: https://huggingface.co/Ismantic/Summer-0.5B-S0
 - Modelo S1 (rama de traduccion): https://huggingface.co/Ismantic/Summer-0.5B-S1
 - Repositorio de entrenamiento: https://github.com/Ismantic/Summer

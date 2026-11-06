@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM / memoria unificada estimada: los pesos ocupan aproximadamente 2,4 GB (tamano del repositorio). Con la cache KV y los buffers de inferencia, hay que prever del orden de 3 a 4 GB de memoria para contextos moderados; la cifra exacta depende de la longitud de contexto, que no esta documentada.
 - Plataforma obligatoria: MLX esta disenado para Apple Silicon. El modelo no se puede ejecutar con CUDA ni con ROCm sin convertir los pesos a otro formato.
 - Equipos recomendados: cualquier Mac con chip de la serie M (M1 o posterior) y 8 GB o mas de memoria unificada. En equipos de 8 GB conviene cerrar aplicaciones pesadas, ya que el sistema operativo consume parte de esa memoria.
-- GPU dedicadas (NVIDIA A100, H100, RTX 4090, etc.): no aplicables directamente; requeririan reconvertir el modelo a un formato compatible (por ejemplo, GGUF o safetensors de HuggingFace en precision completa) y usar otro motor de inferencia.
+- GPU dedicadas (NVIDIA A100, H100, RTX 4090, etc.): no aplicables directamente; requeririan reconvertir el modelo a un formato compatible (por ejemplo, GGUF o safetensors de Hugging Face en precision completa) y usar otro motor de inferencia.
 - Cabe en GPU de consumo: no en su formato actual, porque el checkpoint es MLX y no esta pensado para GPUs de consumo. En terminos de tamano, un modelo de 4,2 B en 4 bits ocuparia unos 2,4 GB de VRAM si se dispusiera de una version compatible con CUDA, algo que cabe con holgura en una RTX 3060 de 12 GB o superior; no obstante, esa version no esta publicada en este repositorio.
 - Opciones de despliegue documentadas: `mlx-lm` mediante Python (`load` y `generate`) y, de forma general, la infraestructura de MLX para Apple Silicon. No se documentan ficheros GGUF, por lo que llama.cpp, Ollama, vLLM o TGI no pueden consumir este repositorio sin una conversion previa.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
@@ -89,14 +89,14 @@ No se dispone de datos de benchmarks del modelo evaluado, por lo que la comparac
 - Sesgos conocidos: no hay documentacion sobre sesgos en la informacion disponible. Al no haberse aplicado un post-entrenamiento de alineacion, es probable que los sesgos presentes en los datos de preentrenamiento del modelo base se manifiesten sin atenuacion.
 - Limitaciones de contexto e idioma: se desconoce la ventana de contexto real y la lista de idiomas soportados. El modelo esta publicitado en ingles y no se garantiza un rendimiento correcto en castellano.
 - Restricciones de licencia: la licencia declarada es apache-2.0, con enlace a la licencia del modelo Qwen/Qwen3.5-4B. Conviene verificar que la licencia del modelo base cubre el uso comercial y la redistribucion de derivados abliterados antes de un despliegue en produccion.
-- Formato limitado: el checkpoint solo es utilizable con MLX en Apple Silicon. No hay ficheros GGUF ni safetensors en formato HuggingFace estandar, lo que restringe el despliegue en servidores con GPU.
+- Formato limitado: el checkpoint solo es utilizable con MLX en Apple Silicon. No hay ficheros GGUF ni safetensors en formato Hugging Face estandar, lo que restringe el despliegue en servidores con GPU.
 - Falta de validacion comunitaria: el repositorio registra 0 descargas y 0 valoraciones, y la model card no documenta evaluaciones, lo que impide anticipar su comportamiento en produccion.
 - Trazabilidad incompleta: no se documentan el dataset, el proceso de entrenamiento ni los hiperparametros, lo que dificulta auditar el modelo para usos regulados.
 - Fecha de publicacion reciente (2026-09-11) y ausencia de historial de actualizaciones: no hay garantia de mantenimiento ni de correccion de errores por parte del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheWirelessPhoenix/Qwen3.5-4B-abliterated_4bit
+- Modelo en Hugging Face: https://huggingface.co/TheWirelessPhoenix/Qwen3.5-4B-abliterated_4bit
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-Qwen3.5-4B-abliterated
 - Modelo original de referencia: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

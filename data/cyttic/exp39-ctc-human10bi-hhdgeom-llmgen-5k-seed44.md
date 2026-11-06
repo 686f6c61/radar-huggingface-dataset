@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-5k-seed44` es un artefacto de investigación publicado en HuggingFace por el usuario cyttic. A pesar de que su identificador contiene la cadena "llmgen", el nombre completo sugiere un modelo CTC (Connectionist Temporal Classification) aplicado a datos etiquetados como "human10bi" y "hhdgeom", lo que apunta a un sistema de reconocimiento de secuencias más que a un modelo de lenguaje generativo al uso. Cuenta con 87.279.756 parámetros (aproximadamente 87 millones) almacenados en formato safetensors, con un tamaño de repositorio de 0,3 GB.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-5k-seed44` es un artefacto de investigación publicado en Hugging Face por el usuario cyttic. A pesar de que su identificador contiene la cadena "llmgen", el nombre completo sugiere un modelo CTC (Connectionist Temporal Classification) aplicado a datos etiquetados como "human10bi" y "hhdgeom", lo que apunta a un sistema de reconocimiento de secuencias más que a un modelo de lenguaje generativo al uso. Cuenta con 87.279.756 parámetros (aproximadamente 87 millones) almacenados en formato safetensors, con un tamaño de repositorio de 0,3 GB.
 
-La model card publicada por el autor es la plantilla por defecto de HuggingFace sin cumplimentar: todos los campos relevantes (descripción, tipo de modelo, idiomas, datos de entrenamiento, evaluación, hiperparámetros) aparecen como "[More Information Needed]". Esto significa que no hay información oficial sobre arquitectura, datos de entrenamiento ni rendimiento más allá de los metadatos del repositorio. El modelo tiene licencia MIT y fue creado el 26 de octubre de 2026, actualizado cuatro días después.
+La model card publicada por el autor es la plantilla por defecto de Hugging Face sin cumplimentar: todos los campos relevantes (descripción, tipo de modelo, idiomas, datos de entrenamiento, evaluación, hiperparámetros) aparecen como "[More Information Needed]". Esto significa que no hay información oficial sobre arquitectura, datos de entrenamiento ni rendimiento más allá de los metadatos del repositorio. El modelo tiene licencia MIT y fue creado el 26 de octubre de 2026, actualizado cuatro días después.
 
 Por su tamaño (87 M de parámetros), su naturaleza aparentemente CTC y la ausencia de documentación, se trata de un checkpoint experimental de un pipeline de investigación interna, no de un modelo listo para producción ni para uso general. Es relevante únicamente como referencia para quienes sigan la línea de trabajo del autor o quieran reproducir experimentos concretos, y no debe confundirse con un LLM conversacional pese a la etiqueta "llmgen" del identificador.
 
@@ -21,7 +21,7 @@ Por su tamaño (87 M de parámetros), su naturaleza aparentemente CTC y la ausen
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Tamaño del repositorio | 0,3 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Etiquetas | safetensors, arxiv:1910.09700, license:mit, region:us |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ Dado que la model card no documenta el propósito del modelo, los siguientes cas
 - Baseline en tareas de etiquetado de secuencias: un modelo de 87 M de parámetros es ligero y podría servir como referencia de bajo coste frente a modelos mayores en tareas de alineamiento secuencia-etiqueta.
 - Estudio de entrenamiento a pequeña escala: por su tamaño, cabe en una sola GPU consumer y permite experimentar con recetas de entrenamiento sin grandes infraestructuras.
 - Análisis de sesgos o robustez en modelos pequeños: útil para estudiar cómo se comportan arquitecturas CTC de escala reducida ante datos ruidosos.
-- Docencia y formación: como ejemplo práctico de publicación de checkpoints en HuggingFace con safetensors y licencia MIT.
+- Docencia y formación: como ejemplo práctico de publicación de checkpoints en Hugging Face con safetensors y licencia MIT.
 
 No se recomienda su uso en producción, atención al cliente, generación de código ni ninguna aplicación generativa sin antes verificar qué hace realmente el modelo.
 
@@ -70,9 +70,9 @@ No es posible establecer una comparativa fiable porque se desconoce la tarea con
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-5k-seed44 | 87,3 M | no disponible | MIT | HuggingFace (0 descargas) |
-| Modelos CTC de referencia (p. ej. wav2vec2-base) | ~95 M | no aplica (audio) | MIT/Apache-2.0 | HuggingFace, ampliamente documentados |
-| Modelos de lenguaje pequeños (~100 M) | ~100 M | variable | variable | HuggingFace |
+| cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-5k-seed44 | 87,3 M | no disponible | MIT | Hugging Face (0 descargas) |
+| Modelos CTC de referencia (p. ej. wav2vec2-base) | ~95 M | no aplica (audio) | MIT/Apache-2.0 | Hugging Face, ampliamente documentados |
+| Modelos de lenguaje pequeños (~100 M) | ~100 M | variable | variable | Hugging Face |
 
 La comparación directa no es posible sin conocer la modalidad y la tarea; los modelos CTC de referencia citados se incluyen solo como orden de magnitud.
 
@@ -89,7 +89,7 @@ La comparación directa no es posible sin conocer la modalidad y la tarea; los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-5k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-5k-seed44
 - Paper citado en las etiquetas (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la información disponible.

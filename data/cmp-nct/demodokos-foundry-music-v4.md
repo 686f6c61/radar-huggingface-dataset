@@ -68,7 +68,7 @@ No disponible. No se ha proporcionado información sobre modelos comparables en 
 
 ## Enlaces
 
-- [HuggingFace - demodokos-foundry-music-v4](https://huggingface.co/cmp-nct/demodokos-foundry-music-v4)
+- [Hugging Face - demodokos-foundry-music-v4](https://huggingface.co/cmp-nct/demodokos-foundry-music-v4)
 - [Demodokos Foundry - sitio web](https://demodokos.com/)
 - [Demos](https://demodokos.com/#listen)
 - [Features](https://demodokos.com/#create)

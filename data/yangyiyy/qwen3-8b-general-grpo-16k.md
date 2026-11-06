@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YangyiYY/qwen3-8b-general-grpo-16k es un ajuste fino del modelo denso Qwen3-8B de Alibaba, publicado por el usuario YangyiYY en HuggingFace. El identificador indica que se ha aplicado optimizacion de politica con Group Relative Policy Optimization (GRPO) sobre un conjunto de datos de proposito general, con una ventana de contexto de 16.384 tokens. El modelo conserva la arquitectura transformer densa del original, con 8.190.735.360 parametros reales confirmados a partir de los pesos en safetensors, y un repositorio de 16,4 GB, coherente con un almacenamiento en bfloat16 o float16.
+YangyiYY/qwen3-8b-general-grpo-16k es un ajuste fino del modelo denso Qwen3-8B de Alibaba, publicado por el usuario YangyiYY en Hugging Face. El identificador indica que se ha aplicado optimizacion de politica con Group Relative Policy Optimization (GRPO) sobre un conjunto de datos de proposito general, con una ventana de contexto de 16.384 tokens. El modelo conserva la arquitectura transformer densa del original, con 8.190.735.360 parametros reales confirmados a partir de los pesos en safetensors, y un repositorio de 16,4 GB, coherente con un almacenamiento en bfloat16 o float16.
 
 El interes de esta ficha radica en que se trata de un modelo derivado de una familia ampliamente adoptada (Qwen3), pero con un entrenamiento posterior de tipo RL que puede alterar el comportamiento de razonamiento y de seguimiento de instrucciones respecto al modelo base. Al ser un ajuste comunitario con muy poca traccion (9 descargas y 0 likes en el momento de la consulta), no dispone de model card detallada, licencia declarada ni resultados de evaluacion publicados, lo que condiciona su uso en produccion.
 
@@ -21,7 +21,7 @@ La relevancia actual es doble: por un lado, sirve como ejemplo de la practica cr
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 16,4 GB |
-| Fecha de publicacion | 2026-09-30 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-30 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| YangyiYY/qwen3-8b-general-grpo-16k | 8.190.735.360 | no confirmado (16k segun el nombre) | no disponible | HuggingFace, 9 descargas | Ajuste GRPO comunitario, sin evaluacion publica |
-| Qwen/Qwen3-8B | 8.200 millones (denso) | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado | Modelo base oficial, con informes tecnicos y benchmarks publicados |
-| Qwen3-Instruct-2507 | no disponible | no disponible | no disponible | HuggingFace y GitHub de QwenLM | Version actualizada del modo no-thinking, con mejoras en instrucciones, razonamiento y herramientas |
+| YangyiYY/qwen3-8b-general-grpo-16k | 8.190.735.360 | no confirmado (16k segun el nombre) | no disponible | Hugging Face, 9 descargas | Ajuste GRPO comunitario, sin evaluacion publica |
+| Qwen/Qwen3-8B | 8.200 millones (denso) | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado | Modelo base oficial, con informes tecnicos y benchmarks publicados |
+| Qwen3-Instruct-2507 | no disponible | no disponible | no disponible | Hugging Face y GitHub de QwenLM | Version actualizada del modo no-thinking, con mejoras en instrucciones, razonamiento y herramientas |
 | Otros modelos densos de 8B (por ejemplo Llama 3.1 8B) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | No se dispone de datos suficientes para una comparacion rigurosa |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YangyiYY/qwen3-8b-general-grpo-16k
+- Modelo en Hugging Face: https://huggingface.co/YangyiYY/qwen3-8b-general-grpo-16k
 - Qwen3-8B (modelo base): https://huggingface.co/Qwen/Qwen3-8B
 - Informe tecnico de Qwen3: https://arxiv.org/pdf/2505.09388
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

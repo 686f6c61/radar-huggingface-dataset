@@ -67,9 +67,9 @@ No se dispone de datos de rendimiento verificados para establecer una comparativ
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/gemma-4-31B-it-oQ8e-mtp | 31,743B (30,697B backbone) | 256.000 tokens | safetensors MLX, precision mixta 8,746 bits/peso | Apache-2.0 | HuggingFace, 0 descargas |
-| google/gemma-4-31B-it | 30,7B densos (backbone) | 256.000 tokens | safetensors, precision original | Apache-2.0 / Gemma 4 license | HuggingFace |
-| google/gemma-4-31B-it-assistant | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Jundot/gemma-4-31B-it-oQ8e-mtp | 31,743B (30,697B backbone) | 256.000 tokens | safetensors MLX, precision mixta 8,746 bits/peso | Apache-2.0 | Hugging Face, 0 descargas |
+| google/gemma-4-31B-it | 30,7B densos (backbone) | 256.000 tokens | safetensors, precision original | Apache-2.0 / Gemma 4 license | Hugging Face |
+| google/gemma-4-31B-it-assistant | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Qwen3.8 27b | no disponible | no disponible | no disponible | no disponible | mencionado en discusiones de la comunidad, sin datos verificados |
 
 En busquedas web aparece una discusion en Reddit que menciona comparaciones entre Gemma 4 31B, Qwen3.8 27B y otros modelos de tamano similar, pero el hilo no aporta resultados de benchmarks verificables. No se han encontrado, por tanto, cifras contrastadas que permitan situar este checkpoint frente a alternativas de su categoria.
@@ -78,7 +78,7 @@ En busquedas web aparece una discusion en Reddit que menciona comparaciones entr
 
 - Alucinacion: no hay datos publicados sobre la tasa de alucinacion del modelo base ni sobre como la afecta la cuantizacion a 8,746 bits/peso; en tareas de recuperacion de hechos conviene verificar las salidas.
 - Perdida por cuantizacion: aunque oQ8e preserva en BF16 el 3,278% de los pesos mas sensibles, no se ha publicado ninguna evaluacion comparativa frente al modelo original, por lo que la degradacion real es desconocida.
-- Idiomas: la ficha de HuggingFace no declara idiomas soportados; no se puede asumir un rendimiento uniforme en castellano sin una evaluacion previa.
+- Idiomas: la ficha de Hugging Face no declara idiomas soportados; no se puede asumir un rendimiento uniforme en castellano sin una evaluacion previa.
 - Contexto largo: los 256.000 tokens son una capacidad declarada del modelo base; el consumo de memoria de la cache KV a esa longitud puede superar la memoria disponible en equipos de 48 GB, especialmente con precision alta de cache.
 - Licencia: el checkpoint se distribuye como Apache-2.0, pero hereda las condiciones de la Gemma 4 license de Google. Es imprescindible revisar ese documento antes de un uso comercial, ya que puede imponer obligaciones adicionales de atribucion o restricciones de uso.
 - Ecosistema limitado: al ser un formato MLX, no es ejecutable directamente en infraestructura CUDA. Un despliegue en servidores con NVIDIA exigiria otra conversion, cuyo soporte no esta documentado.
@@ -88,7 +88,7 @@ En busquedas web aparece una discusion en Reddit que menciona comparaciones entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/gemma-4-31B-it-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/gemma-4-31B-it-oQ8e-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Modelo asistente (origen de la cabecera MTP): https://huggingface.co/google/gemma-4-31B-it-assistant
 - Repositorio de la herramienta de cuantizacion oQ: https://github.com/jundot/omlx

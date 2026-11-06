@@ -71,7 +71,7 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leonmueller/matching-mini
+- Repositorio en Hugging Face: https://huggingface.co/leonmueller/matching-mini
 - Archivo principal del modelo: `train.py` (incluido en el repositorio)
 - Configuración de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de entrenamiento: `training_args.json` (incluido en el repositorio)

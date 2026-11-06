@@ -24,7 +24,7 @@ Su interes es metodologico y de reproducibilidad: permite auditar como se degrad
 | Modelo base | unsloth/gemma-3-4b-it (derivado de google/gemma-3-4b-it) |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion | 2026-10-08 (segun HuggingFace) |
+| Fecha de publicacion | 2026-10-08 (segun Hugging Face) |
 | Pipeline | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen12 | ~4 000 M (heredado) | no confirmado (128 000 en el base) | texto (posible vision heredada) | apache-2.0 declarada | HuggingFace, sin cuantizaciones, 0 descargas |
-| google/gemma-3-4b-it | ~4 000 M | 128 000 tokens | texto e imagen | Gemma Terms of Use | HuggingFace, ampliamente soportado |
-| unsloth/gemma-3-4b-it | ~4 000 M | 128 000 tokens | texto e imagen | Gemma Terms of Use | HuggingFace, base directa de este ajuste |
-| meta-llama/Llama-3.2-3B-Instruct | ~3 000 M | 128 000 tokens | texto | Llama 3.2 Community License | HuggingFace, ecosistema amplio |
+| HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen12 | ~4 000 M (heredado) | no confirmado (128 000 en el base) | texto (posible vision heredada) | apache-2.0 declarada | Hugging Face, sin cuantizaciones, 0 descargas |
+| google/gemma-3-4b-it | ~4 000 M | 128 000 tokens | texto e imagen | Gemma Terms of Use | Hugging Face, ampliamente soportado |
+| unsloth/gemma-3-4b-it | ~4 000 M | 128 000 tokens | texto e imagen | Gemma Terms of Use | Hugging Face, base directa de este ajuste |
+| meta-llama/Llama-3.2-3B-Instruct | ~3 000 M | 128 000 tokens | texto | Llama 3.2 Community License | Hugging Face, ecosistema amplio |
 
 El rendimiento comparado no esta disponible: no existen metricas publicadas para el modelo de HungryDino, por lo que cualquier comparacion cuantitativa con el modelo base o con Llama 3.2 3B seria especulativa.
 
@@ -93,8 +93,8 @@ El rendimiento comparado no esta disponible: no existen metricas publicadas para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen12
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-3-4b-it
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen12
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-3-4b-it
 - Modelo original de Google: https://huggingface.co/google/gemma-3-4b-it
 - Variante de control de la serie: https://huggingface.co/HungryDino/gemma_3_4b_it-control_numbers-collapse_p10-gen12
 - Variante de control, generacion 8: https://huggingface.co/HungryDino/gemma_3_4b_it-control_numbers-collapse_p10-gen8

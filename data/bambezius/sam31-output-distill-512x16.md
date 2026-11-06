@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bambezius/sam31-output-distill-512x16` es un checkpoint de seguimiento de objetos en vídeo, concretamente un rastreador de balón, obtenido por destilación de salidas (*output distillation*) a partir de `facebook/sam3.1`. Lo publica el usuario bambezius en HuggingFace y no es un modelo de lenguaje: es un modelo de visión por computador, derivado de la arquitectura de SAM 3.1 (identificada en la model card como StreamingSAM31), que conserva el decodificador y el mecanismo de memoria del modelo original.
+`bambezius/sam31-output-distill-512x16` es un checkpoint de seguimiento de objetos en vídeo, concretamente un rastreador de balón, obtenido por destilación de salidas (*output distillation*) a partir de `facebook/sam3.1`. Lo publica el usuario bambezius en Hugging Face y no es un modelo de lenguaje: es un modelo de visión por computador, derivado de la arquitectura de SAM 3.1 (identificada en la model card como StreamingSAM31), que conserva el decodificador y el mecanismo de memoria del modelo original.
 
 El modelo es un *student* entrenado exclusivamente con supervisión del *teacher*: probabilidades de máscara y puntuaciones de presencia cacheadas sobre un conjunto de entrenamiento propio, con una única semilla YOLO cacheada por clip y sin anotaciones humanas ni objetivos derivados de cajas. El encoder retiene los bloques 0–15 con una poda aleatoria (con semilla fija) de cabezas y canales completos, y el checkpoint declara 85.454.646 parámetros de *tracking*.
 
@@ -84,7 +84,7 @@ No se dispone de cifras comparativas de rendimiento entre estas alternativas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambezius/sam31-output-distill-512x16
+- Modelo en Hugging Face: https://huggingface.co/bambezius/sam31-output-distill-512x16
 - Modelo base: https://huggingface.co/facebook/sam3.1
 - Fichero de licencia del repositorio: `LICENSE` (referenciado en la model card)
 - Índices de poda y partición de validación: `signature.json` (incluido en el repositorio)

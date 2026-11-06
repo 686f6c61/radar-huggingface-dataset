@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`longzhaoette/multitask` es un repositorio de HuggingFace que contiene una implementación propia y compacta de un Vision Transformer (ViT) orientada a tareas multitarea. Lo publica el usuario `longzhaoette` y, según su propia model card, no se trata de un modelo entrenado ni de una release lista para producción, sino de un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), no un modelo con pesos entrenados.
+`longzhaoette/multitask` es un repositorio de Hugging Face que contiene una implementación propia y compacta de un Vision Transformer (ViT) orientada a tareas multitarea. Lo publica el usuario `longzhaoette` y, según su propia model card, no se trata de un modelo entrenado ni de una release lista para producción, sino de un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), no un modelo con pesos entrenados.
 
 El dato más relevante es su tamaño real: 49.600 parámetros (aproximadamente 0,05 M) según el recuento de safetensors, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier ViT estándar (ViT-Base ronda los 86 M). La model card etiqueta la configuración como "huge", una denominación que no se corresponde con el número de parámetros y que conviene interpretar como una etiqueta interna del script de generación, no como una escala real.
 
@@ -64,7 +64,7 @@ No hay modelos comparables directos en la información disponible: no existe una
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| longzhaoette/multitask | 49.600 (≈0,05 M) | no disponible | sin benchmarks, checkpoint sin entrenar | BSD-3-Clause | HuggingFace, 14 descargas |
+| longzhaoette/multitask | 49.600 (≈0,05 M) | no disponible | sin benchmarks, checkpoint sin entrenar | BSD-3-Clause | Hugging Face, 14 descargas |
 | ViT-Base (referencia de escala) | ≈86 M | 224×224 px, 16×16 parches | no evaluado aquí | no disponible en esta ficha | ampliamente disponible |
 | ViT-Large (referencia de escala) | ≈307 M | 224×224 px, 16×16 parches | no evaluado aquí | no disponible en esta ficha | ampliamente disponible |
 | DeiT-Tiny (referencia de escala) | ≈5,7 M | 224×224 px, 16×16 parches | no evaluado aquí | no disponible en esta ficha | ampliamente disponible |
@@ -85,5 +85,5 @@ La comparación relevante no es de rendimiento sino de escala: este repositorio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longzhaoette/multitask
+- Modelo en Hugging Face: https://huggingface.co/longzhaoette/multitask
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales relacionados con este modelo.

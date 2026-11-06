@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rsamf/asimov-rgmt-medium
+- Modelo en Hugging Face: https://huggingface.co/rsamf/asimov-rgmt-medium
 - Repositorio de entrenamiento y evaluación: https://github.com/rsamf/asimov-rgmt
 - Pipeline de datos de referencia (retargeting AMASS): https://github.com/rsamf/asimov-gmr
 - Paper (arXiv:2601.23080): https://arxiv.org/abs/2601.23080

@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo (WER, latencia) en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PiterQ/parakeet-ultra-sherpa-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/PiterQ/parakeet-ultra-sherpa-onnx-int8
 - Modelo base (Moondream): https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Repositorio sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

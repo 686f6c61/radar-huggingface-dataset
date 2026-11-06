@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos ASR en la in
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/loom-ai-org/nemotron-labs-unified-asr-0.6b-loom)
+- [Modelo en Hugging Face](https://huggingface.co/loom-ai-org/nemotron-labs-unified-asr-0.6b-loom)
 - [Modelo base: nvidia/nemotron-labs-unified-asr-0.6b](https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b)
 - [Repositorio loom.cpp](https://github.com/loom-ai-org/loom.cpp)
 - [Repositorio loom-exporter](https://github.com/loom-ai-org/loom-exporter)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Advanced_NLP es un repositorio de modelo publicado en HuggingFace por el usuario SAURABHIMA bajo licencia Apache 2.0. Se trata de un artefacto con un peso de repositorio de 0,3 GB que contiene pesos en formato safetensors, lo que indica un modelo de parametros pequenos (en el rango de cientos de millones como maximo), aunque el autor no especifica ni la arquitectura ni el numero de parametros en la informacion disponible. La model card publicada se limita a declarar la licencia, sin incluir descripcion, datos de entrenamiento, idiomas soportados ni ejemplos de uso.
+Advanced_NLP es un repositorio de modelo publicado en Hugging Face por el usuario SAURABHIMA bajo licencia Apache 2.0. Se trata de un artefacto con un peso de repositorio de 0,3 GB que contiene pesos en formato safetensors, lo que indica un modelo de parametros pequenos (en el rango de cientos de millones como maximo), aunque el autor no especifica ni la arquitectura ni el numero de parametros en la informacion disponible. La model card publicada se limita a declarar la licencia, sin incluir descripcion, datos de entrenamiento, idiomas soportados ni ejemplos de uso.
 
 El modelo no registra descargas ni interacciones en el momento de la consulta, y fue creado y actualizado en octubre de 2026, con apenas tres minutos de diferencia entre ambos eventos, lo que sugiere una publicacion de prueba o un experimento academico sin mantenimiento posterior. No se ha publicado ningun resultado de benchmarks, ninguna descripcion de la arquitectura ni informacion sobre el dataset de entrenamiento.
 
@@ -82,7 +82,7 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SAURABHIMA/Advanced_NLP
+- Hugging Face: https://huggingface.co/SAURABHIMA/Advanced_NLP
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion adicional: no disponible

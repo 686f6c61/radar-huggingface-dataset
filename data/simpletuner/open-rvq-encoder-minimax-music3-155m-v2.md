@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Vocabulario RVQ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1` | 41M | 5,12 s | 8 heads (1 semántico + 7 acústicos) | no disponible | HuggingFace |
-| `SimpleTuner/open-rvq-encoder-minimax-music3-155m-v2` | 154,7M | 5,12 s | 8 heads (1 semántico + 7 acústicos) | no disponible | HuggingFace |
+| `SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1` | 41M | 5,12 s | 8 heads (1 semántico + 7 acústicos) | no disponible | Hugging Face |
+| `SimpleTuner/open-rvq-encoder-minimax-music3-155m-v2` | 154,7M | 5,12 s | 8 heads (1 semántico + 7 acústicos) | no disponible | Hugging Face |
 | MiniMax Music 3 (original) | no disponible | no disponible | no disponible | propietaria | no disponible |
 
 La comparativa con el modelo original MiniMax Music 3 no es posible por falta de datos públicos. La diferencia principal con la v1 es el ancho del transformer (1.088 frente a 512), lo que aumenta la capacidad de representación. No hay otros encoders RVQ abiertos comparables en la información proporcionada.
@@ -80,7 +80,7 @@ La comparativa con el modelo original MiniMax Music 3 no es posible por falta de
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-155m-v2](https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-155m-v2)
+- Modelo en Hugging Face: [https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-155m-v2](https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-155m-v2)
 - Dataset de entrenamiento: [https://huggingface.co/datasets/bghira/minimax-music3-rvq-reverse-distillation](https://huggingface.co/datasets/bghira/minimax-music3-rvq-reverse-distillation)
 - Modelo v1 (41M): [https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1](https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1)
 - Métricas en vivo (Weights & Biases): [https://wandb.ai/bghira/simpletuner-rvq-encoder/runs/ozlp8i9q](https://wandb.ai/bghira/simpletuner-rvq-encoder/runs/ozlp8i9q)

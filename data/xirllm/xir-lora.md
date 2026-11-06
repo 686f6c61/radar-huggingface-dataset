@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xirllm/xir-lora es un repositorio alojado en HuggingFace por el usuario xirllm. La informacion publica disponible se limita a los metadatos del propio repositorio: identificador, autor, etiqueta de region (region:us), cero descargas, un like y fechas de creacion y actualizacion. No se especifica pipeline, licencia, idiomas soportados ni cualquier otro dato tecnico.
+xirllm/xir-lora es un repositorio alojado en Hugging Face por el usuario xirllm. La informacion publica disponible se limita a los metadatos del propio repositorio: identificador, autor, etiqueta de region (region:us), cero descargas, un like y fechas de creacion y actualizacion. No se especifica pipeline, licencia, idiomas soportados ni cualquier otro dato tecnico.
 
 El nombre del repositorio sugiere que podria tratarse de un adaptador LoRA (Low-Rank Adaptation), pero esta afirmacion no puede confirmarse con la informacion proporcionada, ya que no hay model card, ficheros de pesos documentados ni descripcion alguna en el repositorio. Tampoco se ha encontrado documentacion asociada en la busqueda web realizada.
 
@@ -74,7 +74,7 @@ No disponible. No se puede establecer una comparativa con modelos alternativos p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| xirllm/xir-lora | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 1 like) | Sin model card ni documentacion tecnica |
+| xirllm/xir-lora | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 1 like) | Sin model card ni documentacion tecnica |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se pueden identificar alternativas sin conocer la categoria del modelo |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No disponible. No se puede establecer una comparativa con modelos alternativos p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xirllm/xir-lora
+- Repositorio en Hugging Face: https://huggingface.co/xirllm/xir-lora
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo. Los resultados devueltos corresponden a contenido sin relacion (tutoriales de Microsoft Outlook en jingyan.baidu.com y zhihu.com, y listados mensuales de arXiv de julio de 2025 en arxiv.org/list/cs.AI y arxiv.org/list/cs.LG).

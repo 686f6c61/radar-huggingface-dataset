@@ -75,7 +75,7 @@ La comparativa se basa en datos publicos de los repositorios. El modelo recortad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/luluw/bge-m3-eng-nep-16k-trimmed
+- Repositorio Hugging Face: https://huggingface.co/luluw/bge-m3-eng-nep-16k-trimmed
 - Modelo base BGE-M3: https://huggingface.co/BAAI/bge-m3
 - Paper de BGE-M3 (arXiv:2402.03216): https://arxiv.org/abs/2402.03216
 - Documentacion oficial de BGE-M3: https://bge-model.com/bge/bge_m3.html

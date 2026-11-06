@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans-3B-SFT-C-to-Python | 3,09B | no disponible | Traduccion C a Python (SFT) | Qwen Research (no comercial) | HuggingFace, sin validacion de inferencia publicada |
+| ClearTrans-3B-SFT-C-to-Python | 3,09B | no disponible | Traduccion C a Python (SFT) | Qwen Research (no comercial) | Hugging Face, sin validacion de inferencia publicada |
 | Qwen2.5-Coder-3B (base) | 3,09B | no disponible en esta ficha | Generacion de codigo general | Qwen Research / Apache-2.0 segun variante | Ampliamente disponible |
 | Otros modelos de traduccion de codigo | no disponible | no disponible | Traduccion entre lenguajes | no disponible | no disponible |
 
@@ -89,6 +89,6 @@ No se dispone de datos de benchmarks ni de modelos comparables documentados en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-C-to-Python
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-C-to-Python
 - Repositorio del proyecto ClearTrans: https://github.com/Xingzhehu/ClearTrans
 - Modelo base Qwen2.5-Coder-3B: https://huggingface.co/Qwen/Qwen2.5-Coder-3B

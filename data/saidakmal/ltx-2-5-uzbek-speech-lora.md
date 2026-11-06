@@ -6,7 +6,7 @@ El modelo `Saidakmal/ltx-2.5-uzbek-speech-lora` es un adaptador LoRA (Low-Rank A
 
 El modelo es relevante porque el uzbek es un idioma de bajos recursos en el ecosistema de modelos generativos, y este LoRA representa un intento de extender un modelo de video-audio de proposito general a un idioma especifico sin reentrenar el modelo completo. El tamano del repositorio es de 0,6 GB, coherente con un adaptador de pesos ligeros y no con un modelo completo.
 
-No obstante, la informacion publica disponible es muy limitada: el repositorio no incluye model card detallada, no hay resultados de benchmarks publicados, el numero de descargas y likes es cero y el acceso esta restringido (gated), requiriendo aceptar condiciones en HuggingFace. La licencia es la `ltx-2-community-license`, propia del modelo base.
+No obstante, la informacion publica disponible es muy limitada: el repositorio no incluye model card detallada, no hay resultados de benchmarks publicados, el numero de descargas y likes es cero y el acceso esta restringido (gated), requiriendo aceptar condiciones en Hugging Face. La licencia es la `ltx-2-community-license`, propia del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Saidakmal/ltx-2.5-uzbek-speech-lora | LoRA sobre LTX-2.5 (0,6 GB) | no disponible | ltx-2-community-license | Gated en HuggingFace |
+| Saidakmal/ltx-2.5-uzbek-speech-lora | LoRA sobre LTX-2.5 (0,6 GB) | no disponible | ltx-2-community-license | Gated en Hugging Face |
 | Lightricks/LTX-2.5 (base) | no disponible | no disponible | ltx-2-community-license | no disponible |
 | Alternativas TTS en uzbeko | no disponible | no disponible | no disponible | no disponible |
 
@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Lo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar las condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): requiere aceptar las condiciones en Hugging Face antes de descargar el modelo.
 - Informacion muy escasa: no hay model card detallada, ni benchmarks, ni documentacion de entrenamiento, lo que dificulta evaluar su calidad real.
 - Cero descargas y cero likes: no hay evidencia de uso ni validacion por parte de la comunidad.
 - Idioma limitado al uzbeko: no se declara soporte para otros idiomas.
@@ -81,5 +81,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Saidakmal/ltx-2.5-uzbek-speech-lora
+- Hugging Face: https://huggingface.co/Saidakmal/ltx-2.5-uzbek-speech-lora
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `intergalaticmermaid/modelos_RVC_BR` es un espacio publicado en HuggingFace por el usuario `intergalaticmermaid` el 11 de diciembre de 2023 y actualizado por última vez el 19 de septiembre de 2026. Se distribuye bajo licencia Apache 2.0 y ocupa 1,6 GB en el repositorio remoto. No cuenta con descargas ni "likes" registrados, no tiene pipeline declarado en los metadatos de la plataforma y no especifica idiomas soportados. La model card asociada contiene únicamente el encabezado de licencia, sin ninguna descripción del modelo, del entrenamiento ni de su uso previsto.
+El repositorio `intergalaticmermaid/modelos_RVC_BR` es un espacio publicado en Hugging Face por el usuario `intergalaticmermaid` el 11 de diciembre de 2023 y actualizado por última vez el 19 de septiembre de 2026. Se distribuye bajo licencia Apache 2.0 y ocupa 1,6 GB en el repositorio remoto. No cuenta con descargas ni "likes" registrados, no tiene pipeline declarado en los metadatos de la plataforma y no especifica idiomas soportados. La model card asociada contiene únicamente el encabezado de licencia, sin ninguna descripción del modelo, del entrenamiento ni de su uso previsto.
 
 No se dispone de información verificable sobre la arquitectura, el número de parámetros, la longitud de contexto ni el proceso de entrenamiento. El propio nombre del repositorio, `modelos_RVC_BR`, sugiere por convención de nomenclatura que podría tratarse de una colección de modelos de conversión de voz (RVC, "Retrieval-based Voice Conversion") orientados a voces en portugués de Brasil, pero esta interpretación es una hipótesis derivada exclusivamente del nombre y del tamaño del repositorio, no un dato confirmado por el autor.
 
-En consecuencia, esta ficha debe leerse como un registro de los pocos datos objetivos disponibles en HuggingFace. Cualquier evaluacion tecnica seria requiere contactar con el autor o inspeccionar directamente los archivos del repositorio antes de considerarlo para uso en produccion.
+En consecuencia, esta ficha debe leerse como un registro de los pocos datos objetivos disponibles en Hugging Face. Cualquier evaluacion tecnica seria requiere contactar con el autor o inspeccionar directamente los archivos del repositorio antes de considerarlo para uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -79,11 +79,11 @@ No disponible. No se ha identificado la categoria funcional del modelo ni se dis
 - Sesgos: no evaluables con la informacion disponible. Si se trata de un modelo de voz, los sesgos de timbre, acento y genero dependerian por completo de los datos de entrenamiento, que se desconocen.
 - Alucinacion y artefactos: no evaluables. En modelos generativos de audio, los artefactos tipicos (ruido, inestabilidad de tono, perdida de inteligibilidad) no han sido documentados por el autor.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero no cubre los derechos sobre las voces o datos de entrenamiento subyacentes, que el autor no especifica. Esta es una advertencia relevante para cualquier despliegue comercial.
-- Consistencia de la licencia: la model card declara Apache 2.0 y los metadatos de HuggingFace tambien, por lo que no hay contradiccion aparente, pero tampoco se aporta el texto completo de licencia ni avisos de terceros.
+- Consistencia de la licencia: la model card declara Apache 2.0 y los metadatos de Hugging Face tambien, por lo que no hay contradiccion aparente, pero tampoco se aporta el texto completo de licencia ni avisos de terceros.
 - Repositorio sin traccion: cero descargas y cero likes indican ausencia de validacion por parte de la comunidad, lo que reduce la probabilidad de encontrar soporte o incidencias resueltas.
 - Fecha de actualizacion anomala: la actualizacion registrada en 2026 no viene acompanada de changelog, por lo que no se puede saber si el contenido cambio respecto a la version original de 2023.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/intergalaticmermaid/modelos_RVC_BR
+- Hugging Face: https://huggingface.co/intergalaticmermaid/modelos_RVC_BR
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. Los resultados devueltos por la busqueda corresponden a sitios de loteria sin relacion con el modelo.

@@ -18,7 +18,7 @@ La relevancia es acotada y experimental: cero descargas, cero likes, publicacion
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Afin por modulo: expertos enrutados (`switch_mlp.{gate,up,down}_proj`) 4 bits g32; incrustaciones n-gram (`ple.ple_embedding.ngram_embedding.shards.*`, 128 modulos, ~51B parametros) 4 bits g32; atencion y expertos compartidos 8 bits g32; router 8 bits g64; modulo de imagen sin cuantizar (bf16) |
 | Idiomas soportados | no disponible (la evaluacion del autor cubre japones e ingles) |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (libreria MLX) |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ Las cuatro variantes comparten modelo base y licencia; la diferencia esta en el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-4bit-e4o8-ngram4
+- Modelo en Hugging Face: https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-4bit-e4o8-ngram4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante e4o8: https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-4bit-e4o8
 - Variante uniforme de 4 bits: https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-4bit

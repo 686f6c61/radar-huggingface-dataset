@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Duckets/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-MLX-4bit | 120B totales, 12B activos | 1.048.576 tokens | 4-bit affine (MLX) | ~65 GB | no disponible | HuggingFace, requiere MLX |
-| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | 120B totales, 12B activos | 1.048.576 tokens | BF16 (sin cuantizar) | ~240 GB (estimado a partir de 120B en BF16) | no disponible | HuggingFace |
+| Duckets/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-MLX-4bit | 120B totales, 12B activos | 1.048.576 tokens | 4-bit affine (MLX) | ~65 GB | no disponible | Hugging Face, requiere MLX |
+| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | 120B totales, 12B activos | 1.048.576 tokens | BF16 (sin cuantizar) | ~240 GB (estimado a partir de 120B en BF16) | no disponible | Hugging Face |
 | Otros modelos comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Duckets/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/Duckets/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-MLX-4bit
 - Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16

@@ -59,7 +59,7 @@ Este valor corresponde a la recompensa media por episodio durante la evaluación
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros modelos de Q-Learning para Taxi-v3 publicados en HuggingFace con métricas comparables. Existen repositorios similares (por ejemplo, `Varun3003/q-Taxi-v3` o `thaslimshaik/q-Taxi-v4`) pero no se han publicado sus resultados. Por tanto, no hay comparativa disponible.
+No se dispone de información sobre otros modelos de Q-Learning para Taxi-v3 publicados en Hugging Face con métricas comparables. Existen repositorios similares (por ejemplo, `Varun3003/q-Taxi-v3` o `thaslimshaik/q-Taxi-v4`) pero no se han publicado sus resultados. Por tanto, no hay comparativa disponible.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de información sobre otros modelos de Q-Learning para Taxi-v3 pub
 
 ## Enlaces
 
-- [HuggingFace - kmirain/q-Taxi-v3](https://huggingface.co/kmirain/q-Taxi-v3)
+- [Hugging Face - kmirain/q-Taxi-v3](https://huggingface.co/kmirain/q-Taxi-v3)
 - [Repositorio similar: Varun3003/q-Taxi-v3](https://huggingface.co/Varun3003/q-Taxi-v3)
 - [Repositorio similar: thaslimshaik/q-Taxi-v4](https://huggingface.co/thaslimshaik/q-Taxi-v4)
 - [GitHub - yatheshl/Q-Learning-Taxi-v3](https://github.com/yatheshl/Q-Learning-Taxi-v3) (implementación de referencia)

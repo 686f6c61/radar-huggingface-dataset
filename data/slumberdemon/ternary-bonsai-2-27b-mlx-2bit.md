@@ -34,7 +34,7 @@ El trabajo tecnico no esta en el entrenamiento sino en la representacion de peso
 - Codigo: 89,42, al mismo nivel que la linea base.
 - Tool calling y comportamiento agentico: 74,92 en la evaluacion de agentic tool calling reportada.
 - Razonamiento multi-paso y flujos de agente, segun los resultados de la categoria agentica.
-- Vision: incluye la torre de vision oficial de Qwen3.8-27B (0,46B, FP16 sin cuantizar), por lo que el paquete es multimodal aunque el pipeline declarado en HuggingFace sea text-generation.
+- Vision: incluye la torre de vision oficial de Qwen3.8-27B (0,46B, FP16 sin cuantizar), por lo que el paquete es multimodal aunque el pipeline declarado en Hugging Face sea text-generation.
 - Contexto largo: 262.000 tokens, factibles en dispositivo gracias al backbone predominantemente de atencion lineal.
 - Capacidades multilingues: no disponible en la informacion proporcionada.
 - Ejecucion on-device: soporte en Apple MLX (Python y Swift) y CUDA.
@@ -100,7 +100,7 @@ La model card no identifica los repositorios concretos de los builds IQ2_XXS ni 
 
 ## Enlaces
 
-- HuggingFace del modelo (este repositorio): https://huggingface.co/SlumberDemon/Ternary-Bonsai-2-27B-mlx-2bit
+- Hugging Face del modelo (este repositorio): https://huggingface.co/SlumberDemon/Ternary-Bonsai-2-27B-mlx-2bit
 - Companero en GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Sitio web de Prism ML: https://prismml.com
 - Whitepaper de Bonsai 2 27B: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf

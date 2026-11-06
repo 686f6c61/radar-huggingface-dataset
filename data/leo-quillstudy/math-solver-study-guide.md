@@ -38,8 +38,8 @@ El contenido publicado es un documento de texto plano en Markdown con una rutina
 ## Casos de uso
 
 - Consulta de una rutina de estudio basica de algebra y calculo: el documento propone un metodo de tres pasos para practicar problemas matematicos, util como material de referencia para estudiantes que quieran una guia breve en ingles.
-- Material de ejemplo para probar flujos de publicacion en HuggingFace: el repositorio puede servir para verificar como se renderiza una model card con metadatos YAML y enlaces externos.
-- Referencia para auditorias de contenido promocional: util para estudiar como se insertan enlaces de marketing en model cards de HuggingFace y disenar filtros o politicas de curacion.
+- Material de ejemplo para probar flujos de publicacion en Hugging Face: el repositorio puede servir para verificar como se renderiza una model card con metadatos YAML y enlaces externos.
+- Referencia para auditorias de contenido promocional: util para estudiar como se insertan enlaces de marketing en model cards de Hugging Face y disenar filtros o politicas de curacion.
 - Documentacion de ejemplo en talleres sobre licencias Creative Commons: el repositorio ilustra el uso de `cc-by-4.0` en un artefacto textual.
 - Caso de prueba para pipelines de catalogacion de repositorios: permite validar heuristicas que distinguen repositorios de modelos de repositorios de documentacion o datasets.
 - No es adecuado para atencion al cliente, generacion de codigo, analisis de datos, RAG, agentes ni ninguna tarea de inferencia real, al no existir pesos ni runtime.
@@ -56,11 +56,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplica.
 - Latencia y throughput: no aplica.
 
-El unico "despliegue" posible es la lectura del documento Markdown en un navegador o en el visor de HuggingFace.
+El unico "despliegue" posible es la lectura del documento Markdown en un navegador o en el visor de Hugging Face.
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables porque el repositorio no contiene un modelo. Podria compararse con otros repositorios de documentacion o guias educativas en HuggingFace, pero no se dispone de datos objetivos de comparacion en la informacion proporcionada.
+No disponible. No existen modelos comparables porque el repositorio no contiene un modelo. Podria compararse con otros repositorios de documentacion o guias educativas en Hugging Face, pero no se dispone de datos objetivos de comparacion en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -74,5 +74,5 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leo-quillstudy/math-solver-study-guide
+- Repositorio en Hugging Face: https://huggingface.co/leo-quillstudy/math-solver-study-guide
 - Servicio externo enlazado en la model card (MathGPT): https://mathssolvergpt.com/en

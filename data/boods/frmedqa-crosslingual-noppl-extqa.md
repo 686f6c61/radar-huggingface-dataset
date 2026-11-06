@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| boods/FrMedQA-CrossLingual-NoPPL-ExtQA | ~14,8B densos | 32.768 tokens (heredado) | No publicado | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3-14B (modelo base) | ~14,8B densos | 32.768 tokens, 131.072 con YaRN | Publicado por Alibaba Qwen | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-14B-Instruct | ~14,7B densos | 32.768 tokens | Publicado por Alibaba Qwen | Apache 2.0 (salvo variantes) | HuggingFace |
-| Qwen3-8B | ~8,2B densos | 32.768 tokens, 131.072 con YaRN | Publicado por Alibaba Qwen | Apache 2.0 | HuggingFace |
+| boods/FrMedQA-CrossLingual-NoPPL-ExtQA | ~14,8B densos | 32.768 tokens (heredado) | No publicado | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3-14B (modelo base) | ~14,8B densos | 32.768 tokens, 131.072 con YaRN | Publicado por Alibaba Qwen | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-14B-Instruct | ~14,7B densos | 32.768 tokens | Publicado por Alibaba Qwen | Apache 2.0 (salvo variantes) | Hugging Face |
+| Qwen3-8B | ~8,2B densos | 32.768 tokens, 131.072 con YaRN | Publicado por Alibaba Qwen | Apache 2.0 | Hugging Face |
 
 Los datos del modelo base y de los modelos comparados provienen de su documentacion publica. Para el modelo objeto de esta ficha no existe ninguna comparativa de rendimiento verificable, dado que no se han publicado benchmarks.
 
@@ -84,7 +84,7 @@ Los datos del modelo base y de los modelos comparados provienen de su documentac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-NoPPL-ExtQA
+- Repositorio en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-NoPPL-ExtQA
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B

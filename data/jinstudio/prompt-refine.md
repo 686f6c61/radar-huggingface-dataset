@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jinstudio/Prompt-Refine es un ajuste fino del modelo multimodal google/gemma-4-31B-it, publicado en HuggingFace por el usuario Jinstudio. Segun su model card, se trata de un modelo orientado al refinado de prompts ("Prompt Refine model for HiDream-O1-Image-Dev-2604"), es decir, a reescribir y estructurar instrucciones destinadas a un generador de imagenes. El pipeline declarado es image-text-to-text, por lo que la entrada admite imagen y texto.
+Jinstudio/Prompt-Refine es un ajuste fino del modelo multimodal google/gemma-4-31B-it, publicado en Hugging Face por el usuario Jinstudio. Segun su model card, se trata de un modelo orientado al refinado de prompts ("Prompt Refine model for HiDream-O1-Image-Dev-2604"), es decir, a reescribir y estructurar instrucciones destinadas a un generador de imagenes. El pipeline declarado es image-text-to-text, por lo que la entrada admite imagen y texto.
 
 El repositorio pesa 62,6 GB y contiene pesos en safetensors con 31.273.086.512 parametros (unos 31,3 mil millones), lo que es coherente con un almacenamiento en precision de 16 bits. La licencia declarada es MIT y el modelo es compatible con la libreria transformers. No se declaran idiomas soportados, longitud de contexto, tipos de cuantizacion ni resultados de benchmarks.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jinstudio/Prompt-Refine | 31,3 mil millones | no disponible | MIT | HuggingFace, 0 descargas | Ajuste fino especializado en refinado de prompts |
+| Jinstudio/Prompt-Refine | 31,3 mil millones | no disponible | MIT | Hugging Face, 0 descargas | Ajuste fino especializado en refinado de prompts |
 | google/gemma-4-31B-it (modelo base) | no disponible | no disponible | no disponible (condiciones de Gemma) | no verificado en la busqueda | Modelo de partida declarado por el autor |
-| HiDream-ai/Prompt-Refine | no disponible | no disponible | no disponible | HuggingFace (repositorio referenciado) | Repositorio con chat_template.jinja, posible referencia del mismo ambito |
+| HiDream-ai/Prompt-Refine | no disponible | no disponible | no disponible | Hugging Face (repositorio referenciado) | Repositorio con chat_template.jinja, posible referencia del mismo ambito |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se han identificado en la busqueda web modelos comparables con datos publicados |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinstudio/Prompt-Refine
+- Modelo en Hugging Face: https://huggingface.co/Jinstudio/Prompt-Refine
 - Modelo base declarado: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio relacionado (chat_template.jinja): https://huggingface.co/HiDream-ai/Prompt-Refine/blob/main/chat_template.jinja
 - PromptRefine AI (producto homonimo, no relacionado): https://promptrefineai.com/

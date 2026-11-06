@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario «Sherpa» el 27 de octubre de 2026, no es un modelo entrenado desde cero, sino un artefacto derivado del modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017`, según los tags `base_model:finetune` y `base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017`. La model card lo describe como «Native OBLITERATUS V4.1 research candidate» y advierte de forma explícita de que se trata de un trabajo en curso: los pesos y los benchmarks están incompletos hasta que `recovery-manifest.json` indique `verified_hf_complete`, y no se reclama ninguna puntuación de benchmark.
+Este repositorio de Hugging Face, publicado por el usuario «Sherpa» el 27 de octubre de 2026, no es un modelo entrenado desde cero, sino un artefacto derivado del modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017`, según los tags `base_model:finetune` y `base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017`. La model card lo describe como «Native OBLITERATUS V4.1 research candidate» y advierte de forma explícita de que se trata de un trabajo en curso: los pesos y los benchmarks están incompletos hasta que `recovery-manifest.json` indique `verified_hf_complete`, y no se reclama ninguna puntuación de benchmark.
 
 El interés del artefacto es, por tanto, documental y de investigación más que de uso práctico: registra un pipeline de exportación o recuperación de pesos (el sufijo hexadecimal del identificador sugiere una generación automatizada) sobre una variante «Flash» de la familia DeepSeek V4.1. La información disponible no confirma arquitectura, número de parámetros, longitud de contexto ni idiomas, y el repositorio no declara pipeline ni etiquetas de tarea, por lo que la modalidad del modelo tampoco puede verificarse.
 
@@ -88,7 +88,7 @@ No es posible establecer una comparativa técnica real: no se dispone de especif
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sherpa/DeepSeek-V4.1-Flash-1017-native-e7c5c2b3890e9a69972d
+- Repositorio en Hugging Face: https://huggingface.co/Sherpa/DeepSeek-V4.1-Flash-1017-native-e7c5c2b3890e9a69972d
 - Modelo base referenciado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Paper, blog, repositorio de código o demo: no disponibles.
 - Resultados de la búsqueda web: no se ha encontrado ninguna fuente técnica relacionada. Los enlaces devueltos corresponden a entidades homónimas sin vinculación con el modelo (https://sherpas.com/, https://fr.wikipedia.org/wiki/Sherpas, https://www.sherpa.net/, https://apply.joinsherpa.com/travel-restrictions, https://fr.wikipedia.org/wiki/Sherpa_(enseigne)) y se descartan como referencia.

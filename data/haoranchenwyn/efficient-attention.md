@@ -23,7 +23,7 @@ Por tanto, su relevancia actual no es la de un artefacto de inferencia, sino la 
 
 ## Arquitectura y entrenamiento
 
-No se documenta arquitectura ni entrenamiento. El repositorio no contiene codigo de modelo, configuracion de transformer, tokenizador, script de entrenamiento ni datos de preentrenamiento. El tag `transformer` de HuggingFace es una etiqueta de clasificacion del repo, no una descripcion de una arquitectura implementada.
+No se documenta arquitectura ni entrenamiento. El repositorio no contiene codigo de modelo, configuracion de transformer, tokenizador, script de entrenamiento ni datos de preentrenamiento. El tag `transformer` de Hugging Face es una etiqueta de clasificacion del repo, no una descripcion de una arquitectura implementada.
 
 El contenido tematico se limita a la planificacion de un estudio sobre atencion eficiente: definicion del alcance de la pregunta de investigacion, identificacion de confounders, propuesta de comparacion con baselines emparejados y contexto de evaluacion concreto en Long Range Arena, ImageNet-1K y Flickr30k. La model card especifica que, si en el futuro se anaden resultados, deberan incluir versiones de dataset, comandos, semillas, hardware y logs crudos. No se menciona RLHF, DPO, numero de tokens de entrenamiento ni ninguna innovacion tecnica implementada (atencion lineal, decodificacion especulativa, SSM, etc.); son temas del ambito, no aportaciones del repositorio.
 
@@ -87,6 +87,6 @@ No es posible establecer una comparativa tecnica con modelos de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haoranchenwyn/efficient-attention
+- Hugging Face: https://huggingface.co/haoranchenwyn/efficient-attention
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este repositorio.
-- Artefactos internos citados en la model card: `analysis.md` y `README.md` (accesibles desde la pagina del repositorio en HuggingFace).
+- Artefactos internos citados en la model card: `analysis.md` y `README.md` (accesibles desde la pagina del repositorio en Hugging Face).

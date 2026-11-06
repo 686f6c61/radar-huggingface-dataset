@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/georgeis55/Ornith-1.5-35B-A3B-Abliterated-MLX-oQ8e-mtp
+- Repositorio de Hugging Face: https://huggingface.co/georgeis55/Ornith-1.5-35B-A3B-Abliterated-MLX-oQ8e-mtp
 - Modelo original (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX
 - Web de Ornith AI: https://ornith.ai/
 - Herramienta de cuantización oQ: https://github.com/jundot/omlx

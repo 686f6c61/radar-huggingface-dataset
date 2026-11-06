@@ -89,10 +89,10 @@ La comparativa se limita al modelo base y a versiones cuantizadas estándar. Est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brandonmusic/Qwen3-30B-A3B-ShapleyMCG-K34-Validation-Reconstruction
+- Repositorio Hugging Face: https://huggingface.co/brandonmusic/Qwen3-30B-A3B-ShapleyMCG-K34-Validation-Reconstruction
 - Dataset de reproducibilidad: https://huggingface.co/datasets/brandonmusic/shapleymcg-qwen3-30b-a3b-reproducibility
 - Código y metodología (GitHub): https://github.com/brandonmmusic-max/shapleymcg
 - Ejemplo de configuración TOML: https://github.com/brandonmmusic-max/shapleymcg/blob/main/examples/qwen3-30b-a3b.toml
 - Paper de referencia (arXiv): https://arxiv.org/abs/2607.12266
 - Modelo base Qwen3-30B-A3B-Base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Base
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3

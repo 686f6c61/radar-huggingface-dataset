@@ -91,10 +91,10 @@ Significancia estadística (bootstrap pareado por enunciados, 10.000 remuestreos
 
 | Modelo | Parametros | Contexto / audio | FLEURS tr WER | Mu-Bench WER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| balbal-v1 | 45,4 M (15,4 M activos) | fragmentos de 30 s | 6,54 | 11,93 | balbal-community-license-1.0 | HuggingFace (NeMo/ONNX), código Apache 2.0 |
-| Duyu-small | 49,3 M (19,3 M activos) | no disponible | 6,62 | 15,70 | no disponible en la información | HuggingFace (`KaanAydinli/Duyu-small`) |
-| MihuAI turkish-stt | 66 M | no disponible | 8,16 | 24,59 | no disponible en la información | HuggingFace (`mihuai/turkish-stt`) |
-| Whisper large-v3-turbo | 809 M | 30 s por ventana | 4,07 | 24,65 | MIT (Whisper) | HuggingFace (`openai/whisper-large-v3-turbo`), amplio ecosistema |
+| balbal-v1 | 45,4 M (15,4 M activos) | fragmentos de 30 s | 6,54 | 11,93 | balbal-community-license-1.0 | Hugging Face (NeMo/ONNX), código Apache 2.0 |
+| Duyu-small | 49,3 M (19,3 M activos) | no disponible | 6,62 | 15,70 | no disponible en la información | Hugging Face (`KaanAydinli/Duyu-small`) |
+| MihuAI turkish-stt | 66 M | no disponible | 8,16 | 24,59 | no disponible en la información | Hugging Face (`mihuai/turkish-stt`) |
+| Whisper large-v3-turbo | 809 M | 30 s por ventana | 4,07 | 24,65 | MIT (Whisper) | Hugging Face (`openai/whisper-large-v3-turbo`), amplio ecosistema |
 | omniASR LLM 7B | 7 B | no disponible | 5,31 | 21,10 | no disponible en la información | GitHub (`facebookresearch/omnilingual-asr`) |
 
 ## Limitaciones y advertencias
@@ -112,7 +112,7 @@ Significancia estadística (bootstrap pareado por enunciados, 10.000 remuestreos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erayyapagci/balbal-v1
+- Modelo en Hugging Face: https://huggingface.co/erayyapagci/balbal-v1
 - Blog del autor (arquitectura, entrenamiento, evaluación): https://erayy.com/balbal-blog
 - Demo en el navegador: https://huggingface.co/spaces/erayyapagci/balbal-v1-demo
 - Código de inferencia y entrenamiento (Apache 2.0): https://github.com/erayyap/balbal

@@ -84,7 +84,7 @@ La comparación directa con modelos de propósito general no es del todo signifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-774M-7B
+- Modelo en Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-774M-7B
 - Paper (arXiv): https://arxiv.org/abs/2410.03249
 - Repositorio de código: https://github.com/tml-tuebingen/forgetting-contamination
 - Script de entrenamiento: https://github.com/tml-tuebingen/forgetting-contamination/blob/main/llm.c/scripts/7B_tokens/774M.sh

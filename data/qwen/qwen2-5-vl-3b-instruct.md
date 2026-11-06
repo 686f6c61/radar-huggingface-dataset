@@ -110,9 +110,9 @@ Benchmarks de agente (solo se publican resultados de Qwen2.5-VL-3B):
 
 | Modelo | Parametros | Contexto | MMMU (val) | DocVQA (test) | MathVista | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen2.5-VL-3B-Instruct | 3,75 mil millones | no disponible | 53,1 | 93,9 | 62,3 | qwen-research | Pesos abiertos en HuggingFace |
-| InternVL2.5-4B | 4 mil millones aprox. | no disponible en la informacion proporcionada | 52,3 | 91,6 | 60,5 | no disponible en la informacion proporcionada | Pesos abiertos en HuggingFace |
-| Qwen2-VL-7B | 7 mil millones aprox. | no disponible en la informacion proporcionada | 54,1 | 94,5 | 58,2 | no disponible en la informacion proporcionada | Pesos abiertos en HuggingFace |
+| Qwen2.5-VL-3B-Instruct | 3,75 mil millones | no disponible | 53,1 | 93,9 | 62,3 | qwen-research | Pesos abiertos en Hugging Face |
+| InternVL2.5-4B | 4 mil millones aprox. | no disponible en la informacion proporcionada | 52,3 | 91,6 | 60,5 | no disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
+| Qwen2-VL-7B | 7 mil millones aprox. | no disponible en la informacion proporcionada | 54,1 | 94,5 | 58,2 | no disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
 
 La comparacion se limita a los tres modelos empleados por el autor como referencia en la model card. Los datos de contexto, licencia de las alternativas y throughput no se incluyen en la informacion proporcionada, por lo que no se pueden contrastar aqui.
 
@@ -130,7 +130,7 @@ La comparacion se limita a los tres modelos empleados por el autor como referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Licencia: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/main/LICENSE
 - Repositorio GitHub: https://github.com/QwenLM/Qwen2.5-VL
 - Blog de presentacion: https://qwenlm.github.io/blog/qwen2.5-vl/

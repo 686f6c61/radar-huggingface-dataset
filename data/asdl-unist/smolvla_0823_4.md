@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| asdl-unist/smolvla_0823_4 (este) | 450M | no disponible | Apache 2.0 | HuggingFace |
-| asdl-unist/smolvla_ER_T1 | 450M (presumiblemente) | no disponible | Apache 2.0 | HuggingFace |
-| asdl-unist/smolvla_ER_T2 | 450M (presumiblemente) | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | no disponible | Apache 2.0 | HuggingFace |
+| asdl-unist/smolvla_0823_4 (este) | 450M | no disponible | Apache 2.0 | Hugging Face |
+| asdl-unist/smolvla_ER_T1 | 450M (presumiblemente) | no disponible | Apache 2.0 | Hugging Face |
+| asdl-unist/smolvla_ER_T2 | 450M (presumiblemente) | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | no disponible | Apache 2.0 | Hugging Face |
 
 Los tres fine-tunes del mismo autor comparten la misma arquitectura base y se diferencian en el dataset de entrenamiento. El modelo base `lerobot/smolvla_base` es el punto de partida comun. No se dispone de comparativas con otros VLA como OpenVLA (que tiene 7B de parametros) en terminos de rendimiento, pero SmolVLA esta disenado para ser mucho mas ligero.
 
@@ -75,7 +75,7 @@ Los tres fine-tunes del mismo autor comparten la misma arquitectura base y se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asdl-unist/smolvla_0823_4
+- Repositorio Hugging Face: https://huggingface.co/asdl-unist/smolvla_0823_4
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/asdl-unist/TRAIN_T4_ER_FINAL
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

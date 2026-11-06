@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cstr/opus-mt-en-he-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cstr/opus-mt-en-he-GGUF
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-he
 - Modelo en direccion inversa: https://huggingface.co/cstr/opus-mt-he-en-GGUF
 - Repositorio de CrispASR: https://github.com/CrispStrobe/CrispASR

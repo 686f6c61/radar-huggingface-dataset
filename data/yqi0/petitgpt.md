@@ -2,7 +2,7 @@
 
 ## Resumen
 
-petitgpt es un modelo de lenguaje decoder-only de 124,6 millones de parametros desarrollado por Yang Qi (usuario yqi0) y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un artefacto de investigacion construido desde cero ("from-scratch") con arquitectura transformer de 30 capas, anchura 576, FFN de 1536 y atencion con query grouping (GQA) de 9 cabezas de consulta y 3 de clave/valor. El checkpoint publicado, denominado alpha075, no procede de un paso de entrenamiento adicional, sino de una interpolacion lineal de parametros entre dos estados de un ajuste por instrucciones.
+petitgpt es un modelo de lenguaje decoder-only de 124,6 millones de parametros desarrollado por Yang Qi (usuario yqi0) y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un artefacto de investigacion construido desde cero ("from-scratch") con arquitectura transformer de 30 capas, anchura 576, FFN de 1536 y atencion con query grouping (GQA) de 9 cabezas de consulta y 3 de clave/valor. El checkpoint publicado, denominado alpha075, no procede de un paso de entrenamiento adicional, sino de una interpolacion lineal de parametros entre dos estados de un ajuste por instrucciones.
 
 El modelo se posiciona explicitamente como material de estudio para reproducir mediciones, inspeccionar el pipeline de entrenamiento y analizar modos de fallo, no como asistente de proposito general. Su ventana de contexto es de 2.048 tokens y su vocabulario de 32.000 entradas, con embeddings de entrada y salida atados (tied embeddings). Los pesos se almacenan en FP32, lo que da un repositorio de aproximadamente 0,5 GB.
 
@@ -93,10 +93,10 @@ El evaluador es una implementacion nativa compatible con el protocolo, fijada a 
 
 | Modelo | Parametros | Contexto | ARC-Easy (acc) | PIQA (acc) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| petitgpt (alpha075) | 124,6 M | 2.048 | 0,5774 | 0,6349 | Apache-2.0 | HuggingFace, pesos FP32 |
-| SmolLM-135M-Instruct | 135 M | 2.048 | 0,4924 | 0,6708 | Apache-2.0 | HuggingFace |
-| SmolLM2-135M-Instruct | 135 M | 8.192 | 0,5400 | 0,6670 | Apache-2.0 | HuggingFace |
-| GPT-2 | 124 M | 1.024 | no medido bajo este protocolo | no medido bajo este protocolo | MIT | HuggingFace |
+| petitgpt (alpha075) | 124,6 M | 2.048 | 0,5774 | 0,6349 | Apache-2.0 | Hugging Face, pesos FP32 |
+| SmolLM-135M-Instruct | 135 M | 2.048 | 0,4924 | 0,6708 | Apache-2.0 | Hugging Face |
+| SmolLM2-135M-Instruct | 135 M | 8.192 | 0,5400 | 0,6670 | Apache-2.0 | Hugging Face |
+| GPT-2 | 124 M | 1.024 | no medido bajo este protocolo | no medido bajo este protocolo | MIT | Hugging Face |
 
 La comparacion directa solo es valida en ARC-Easy y PIQA, unicos benchmarks medidos bajo el protocolo identico. petitgpt supera a SmolLM-135M-Instruct y a SmolLM2-135M-Instruct en ARC-Easy, pero queda por debajo de ambos en PIQA. La diferencia de contexto es notable: SmolLM2-135M-Instruct ofrece 8.192 tokens frente a los 2.048 de petitgpt. El dato de GPT-2 se incluye solo como referencia de tamano, ya que no se ha evaluado bajo este protocolo.
 
@@ -117,7 +117,7 @@ La comparacion directa solo es valida en ARC-Easy y PIQA, unicos benchmarks medi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yqi0/petitgpt
+- Modelo en Hugging Face: https://huggingface.co/yqi0/petitgpt
 - Conjunto de datos de postentrenamiento referenciado: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Archivo de procedencia del checkpoint dentro del repositorio: MODEL_PROVENANCE.json
 - Tabla de mezcla de fuentes de preentrenamiento dentro del repositorio: tables/PRETRAIN_SOURCE_MIXTURE.csv

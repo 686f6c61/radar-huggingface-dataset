@@ -102,7 +102,7 @@ No se han encontrado otros modelos de reescritura de prosa comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.2
+- Modelo en Hugging Face: https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.2
 - Repositorio de archivos del modelo: https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.2/tree/main
 - Versión menor (1.7B): https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v1.2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base

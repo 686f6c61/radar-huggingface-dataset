@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-ik-llama-GGUF es una conversión a formato GGUF del modelo Qwen3.8-27B de Alibaba, realizada por el usuario ji-farthing y publicada en HuggingFace. Esta conversión está específicamente orientada al runtime ik_llama.cpp, una bifurcación de llama.cpp mantenida por ikawrakow, e incluye dos cuantizaciones (IQ4_NL e IQ3_XXS) calibradas con una importance matrix diseñada para cargas de trabajo agénticas de codificación, en lugar del texto general típico. El modelo base Qwen3.8-27B es un transformer denso de 27 mil millones de parámetros con ventana de contexto nativa de 262 000 tokens, razonamiento configurable y capacidades de visión, aunque esta conversión descarta la torre de visión y solo incluye la torre de texto.
+Qwen3.8-27B-ik-llama-GGUF es una conversión a formato GGUF del modelo Qwen3.8-27B de Alibaba, realizada por el usuario ji-farthing y publicada en Hugging Face. Esta conversión está específicamente orientada al runtime ik_llama.cpp, una bifurcación de llama.cpp mantenida por ikawrakow, e incluye dos cuantizaciones (IQ4_NL e IQ3_XXS) calibradas con una importance matrix diseñada para cargas de trabajo agénticas de codificación, en lugar del texto general típico. El modelo base Qwen3.8-27B es un transformer denso de 27 mil millones de parámetros con ventana de contexto nativa de 262 000 tokens, razonamiento configurable y capacidades de visión, aunque esta conversión descarta la torre de visión y solo incluye la torre de texto.
 
 La relevancia de esta versión radica en que incorpora el bloque NextN de predicción multi-token (MTP), lo que permite decodificación especulativa sin necesidad de un modelo borrador separado. El autor publica junto a los pesos la matriz de importancia utilizada, y documenta mediciones de rendimiento y perplexidad frente a la conversión BF16 de referencia. Es una opción interesante para quienes quieran ejecutar Qwen3.8-27B en hardware de consumo con cuantizaciones agresivas y buen rendimiento en tareas de agente, pero requiere usar ik_llama.cpp, ya que los archivos no son compatibles con llama.cpp estándar.
 
@@ -87,7 +87,7 @@ La ventaja de esta conversion frente a las GGUF estandar es la inclusion del blo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ji-farthing/Qwen3.8-27B-ik-llama-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ji-farthing/Qwen3.8-27B-ik-llama-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp
 - Articulo de LM Studio sobre Qwen3.8: https://lmstudio.ai/models/qwen3.8

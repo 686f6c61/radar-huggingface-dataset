@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bridgequant-so101-76m es un modelo de visión-lenguaje-acción (VLA) de 64,8 millones de parámetros publicado por el usuario twanghcmut en HuggingFace. Está diseñado específicamente para el control de un brazo robótico SO101 follower, y se distribuye como un bundle de pesos entrenables junto con ficheros de normalización, configuración y metadatos que espera el cargador de la librería `bridgequant-async`. No es un modelo de propósito general: es un checkpoint de política robótica entrenado sobre tres tareas concretas.
+bridgequant-so101-76m es un modelo de visión-lenguaje-acción (VLA) de 64,8 millones de parámetros publicado por el usuario twanghcmut en Hugging Face. Está diseñado específicamente para el control de un brazo robótico SO101 follower, y se distribuye como un bundle de pesos entrenables junto con ficheros de normalización, configuración y metadatos que espera el cargador de la librería `bridgequant-async`. No es un modelo de propósito general: es un checkpoint de política robótica entrenado sobre tres tareas concretas.
 
 La arquitectura combina un backbone visual DINOv3 ViT-S y un codificador de texto BERT-mini, unidos mediante un trunk de fusión de 4 capas y un mecanismo de "role-query bridge", con un experto de flujo (flow matching) de 6 capas que genera las acciones. El entrenamiento se realizó sobre 159 episodios capturados a 30 fps con cámaras top y wrist, produciendo objetivos de 6 articulaciones en espacio absoluto de juntas y chunks de acción de 8 y 16 pasos.
 
@@ -70,9 +70,9 @@ No se proporcionan métricas out-of-sample, tasas de éxito en tareas reales ni 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bridgequant-so101-76m | 64,8 M | no disponible | VLA con flow matching para SO101 | other | HuggingFace, repo 0,3 GB |
-| OpenVLA | 7 B | no disponible en esta ficha | VLA generalista sobre datasets tipo Open X-Embodiment | no disponible en esta ficha | HuggingFace |
-| Octo | ~27 M (small) / ~93 M (base) | no disponible en esta ficha | Política transformer generalista para manipulación | no disponible en esta ficha | HuggingFace |
+| bridgequant-so101-76m | 64,8 M | no disponible | VLA con flow matching para SO101 | other | Hugging Face, repo 0,3 GB |
+| OpenVLA | 7 B | no disponible en esta ficha | VLA generalista sobre datasets tipo Open X-Embodiment | no disponible en esta ficha | Hugging Face |
+| Octo | ~27 M (small) / ~93 M (base) | no disponible en esta ficha | Política transformer generalista para manipulación | no disponible en esta ficha | Hugging Face |
 | RT-2 | no disponible en esta ficha | no disponible en esta ficha | VLA propietario de gran escala | propietaria | no público |
 
 La comparación es orientativa: bridgequant-so101-76m es un checkpoint especializado en un robot concreto, mientras que OpenVLA, Octo y RT-2 son políticas generalistas. No se dispone de datos de rendimiento comparables entre ellos en la información proporcionada.
@@ -90,7 +90,7 @@ La comparación es orientativa: bridgequant-so101-76m es un checkpoint especiali
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twanghcmut/bridgequant-so101-76m
+- Hugging Face: https://huggingface.co/twanghcmut/bridgequant-so101-76m
 - Repositorio de código: https://github.com/VLAOpt/bridgequant-async
 - Documentación de despliegue SO101: `docs/so101_deploy.md` dentro del repositorio anterior
 - Script de política SO101: `scripts/so101_policy.py` dentro del repositorio anterior

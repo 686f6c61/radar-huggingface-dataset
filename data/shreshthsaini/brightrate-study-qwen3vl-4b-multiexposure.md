@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - adaptador](https://huggingface.co/shreshthsaini/brightrate-study-qwen3vl-4b-multiexposure)
+- [Hugging Face - adaptador](https://huggingface.co/shreshthsaini/brightrate-study-qwen3vl-4b-multiexposure)
 - [Modelo base Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
 - [BrightVQ dataset](https://github.com/shreshthsaini/BrightVQ)
 - [BrightRate-LM código](https://github.com/shreshthsaini/BrightRate-LM)

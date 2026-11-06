@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jiyoungleehog/efficientformer-generation` es un repositorio de HuggingFace publicado por el usuario jiyoungleehog que contiene una implementacion propia de una arquitectura EfficientFormer orientada a tareas de generacion. Segun su model card, no se trata de un modelo entrenado ni de una release con pesos validados, sino de un esqueleto reproducible: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo con capacidades generativas aprendidas. Cuenta con apenas 49.600 parametros totales, lo que lo situa en la categoria de modelo de juguete o andamiaje de codigo.
+`jiyoungleehog/efficientformer-generation` es un repositorio de Hugging Face publicado por el usuario jiyoungleehog que contiene una implementacion propia de una arquitectura EfficientFormer orientada a tareas de generacion. Segun su model card, no se trata de un modelo entrenado ni de una release con pesos validados, sino de un esqueleto reproducible: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo con capacidades generativas aprendidas. Cuenta con apenas 49.600 parametros totales, lo que lo situa en la categoria de modelo de juguete o andamiaje de codigo.
 
 El repositorio incluye el codigo Python del modelo con un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con una receta de experimento por defecto y el checkpoint de inicializacion. La arquitectura declarada en la configuracion es EfficientFormer a escala nominal "xlarge", con atencion estandar, fusion por cross attention, activacion ReLU y normalizacion ScaleNorm, optimizador Lion y schedule exponencial.
 
@@ -85,9 +85,9 @@ La comparacion directa es limitada: el modelo analizado es una implementacion de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiyoungleehog/efficientformer-generation
+- Modelo en Hugging Face: https://huggingface.co/jiyoungleehog/efficientformer-generation
 - Documentacion de EfficientFormer en Transformers: https://huggingface.co/docs/transformers/v4.56.0/model_doc/efficientformer
 - EfficientFormer en Qualcomm AI Hub (compute): https://aihub.qualcomm.com/compute/models/efficientformer
 - EfficientFormer en Qualcomm AI Hub (mobile): https://aihub.qualcomm.com/mobile/models/efficientformer
-- Repositorio Qualcomm EfficientFormer en HuggingFace: https://huggingface.co/qualcomm/EfficientFormer
+- Repositorio Qualcomm EfficientFormer en Hugging Face: https://huggingface.co/qualcomm/EfficientFormer
 - Scripts de Qualcomm para EfficientFormer (GitHub): https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/efficientformer

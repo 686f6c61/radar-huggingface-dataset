@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - unconst/Affine-5czsc2fc98-r500-offline-dpo-hialpha-hirank-lobeta-softctx-extrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r500-offline-dpo-hialpha-hirank-lobeta-softctx-extrasteps-merged)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r500-offline-dpo-hialpha-hirank-lobeta-softctx-extrasteps-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r500-offline-dpo-hialpha-hirank-lobeta-softctx-extrasteps-merged)
 - [Modelo base - kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft) (enlace inferido, no confirmado en la información proporcionada)

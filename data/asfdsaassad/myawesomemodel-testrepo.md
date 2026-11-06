@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario asfdsaassad en HuggingFace. La informacion disponible presenta una contradiccion interna relevante: los metadatos de HuggingFace lo etiquetan como un modelo de tipo BERT orientado a extraccion de caracteristicas (pipeline `feature-extraction`), mientras que la model card adjunta describe un modelo de razonamiento con modo de pensamiento, llamada a funciones y mejoras en tareas de matematicas y programacion. Esta discrepancia, junto con el nombre del repositorio ("TestRepo"), sugiere que se trata de una plantilla de prueba o de un repositorio de ejemplo y no de un modelo listo para produccion.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario asfdsaassad en Hugging Face. La informacion disponible presenta una contradiccion interna relevante: los metadatos de Hugging Face lo etiquetan como un modelo de tipo BERT orientado a extraccion de caracteristicas (pipeline `feature-extraction`), mientras que la model card adjunta describe un modelo de razonamiento con modo de pensamiento, llamada a funciones y mejoras en tareas de matematicas y programacion. Esta discrepancia, junto con el nombre del repositorio ("TestRepo"), sugiere que se trata de una plantilla de prueba o de un repositorio de ejemplo y no de un modelo listo para produccion.
 
 El repositorio registra 0 descargas y 0 "likes", y su tamano es de 0.0 GB, lo que indica que no contiene pesos publicados. Fue creado y actualizado el 18 de septiembre de 2026, con apenas diez segundos de diferencia entre ambas marcas, un patron habitual en repositorios creados automaticamente como prueba.
 
@@ -25,7 +25,7 @@ Otros datos de los metadatos: libreria `transformers`, framework `pytorch`, etiq
 
 ## Arquitectura y entrenamiento
 
-La informacion sobre arquitectura es contradictoria. Los metadatos de HuggingFace asignan la etiqueta `bert` y el pipeline `feature-extraction`, lo que corresponderia a un transformer encoder disenado para generar representaciones (embeddings) de texto. La model card, en cambio, describe un modelo generativo de razonamiento con "profundidad de pensamiento", soporte de llamada a funciones y mejoras en matematicas y programacion, caracteristicas propias de un modelo decoder-only de gran escala.
+La informacion sobre arquitectura es contradictoria. Los metadatos de Hugging Face asignan la etiqueta `bert` y el pipeline `feature-extraction`, lo que corresponderia a un transformer encoder disenado para generar representaciones (embeddings) de texto. La model card, en cambio, describe un modelo generativo de razonamiento con "profundidad de pensamiento", soporte de llamada a funciones y mejoras en matematicas y programacion, caracteristicas propias de un modelo decoder-only de gran escala.
 
 No se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras alineaciones. La model card menciona de forma generica que se introdujeron "mecanismos de optimizacion algorítmica durante el post-entrenamiento" y un mayor uso de recursos computacionales, pero sin cifras ni detalles tecnicos verificables.
 
@@ -86,7 +86,7 @@ Ademas, el texto de introduccion afirma una precision del 87,5 % en AIME 2025 (f
 - VRAM estimada para inferencia: no disponible (se desconocen los parametros del modelo).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible; los metadatos incluyen la etiqueta `endpoints_compatible`, que sugiere compatibilidad con los Inference Endpoints de HuggingFace, pero sin pesos publicados no es aplicable.
+- Opciones de despliegue: no disponible; los metadatos incluyen la etiqueta `endpoints_compatible`, que sugiere compatibilidad con los Inference Endpoints de Hugging Face, pero sin pesos publicados no es aplicable.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ No disponible. La model card no identifica los modelos de comparacion (aparecen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asfdsaassad/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/asfdsaassad/MyAwesomeModel-TestRepo
 - Repositorio de codigo mencionado en la model card: no disponible (se cita "our code repository" sin URL).
 - Sitio web oficial y plataforma de chat/API mencionados en la model card: no disponible (sin URL).
 - Paper tecnico: no disponible.

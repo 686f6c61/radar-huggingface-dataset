@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nicolehq/coca-baseline` es un repositorio experimental publicado en HuggingFace por el usuario `nicolehq` que implementa una base de codigo denominada Coca orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card indica explicitamente que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio esta pensado como punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`nicolehq/coca-baseline` es un repositorio experimental publicado en Hugging Face por el usuario `nicolehq` que implementa una base de codigo denominada Coca orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card indica explicitamente que `model.safetensors` es unicamente un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio esta pensado como punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La arquitectura declarada se etiqueta como Coca a escala "giant", con atencion lineal, fusion con compuertas (gated fusion), activacion ReLU y normalizacion por lotes (batchnorm). La receta de experimento por defecto usa descenso de gradiente estocastico (SGD) con un schedule polinomial. Estos valores son puntos de partida incluidos en el script, no evidencia de una ejecucion completada.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- Al tratarse de un checkpoint de inicializacion con 24.832 parametros, el almacenamiento y la memoria necesarios para cargarlo son minimos (el repositorio ocupa 0.0 GB segun HuggingFace).
+- Al tratarse de un checkpoint de inicializacion con 24.832 parametros, el almacenamiento y la memoria necesarios para cargarlo son minimos (el repositorio ocupa 0.0 GB segun Hugging Face).
 - GPU recomendadas: no disponible; dado el tamano reportado, la carga y las pruebas de humo pueden realizarse en CPU.
 - Compatibilidad con GPU de consumo: si, segun el tamano reportado, cabe en cualquier GPU de consumo e incluso en CPU.
 - Opciones de despliegue: no se documenta soporte para vLLM, llama.cpp, Ollama o TGI. La model card advierte que, al ser una implementacion personalizada, las APIs genericas de carga automatica requieren un adaptador explicito.
@@ -82,5 +82,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicolehq/coca-baseline
+- Modelo en Hugging Face: https://huggingface.co/nicolehq/coca-baseline
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo en la informacion disponible.

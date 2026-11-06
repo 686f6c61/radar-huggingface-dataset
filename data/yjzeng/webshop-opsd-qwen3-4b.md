@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`YJZENG/webshop-opsd-qwen3-4b` es un modelo de lenguaje publicado en HuggingFace por el usuario YJZENG. El identificador y la etiqueta `qwen3` del repositorio indican que se trata de un ajuste (fine-tuning) sobre un modelo base de la familia Qwen3 con aproximadamente 4.411 millones de parametros totales, almacenados en formato safetensors (8,8 GB de repositorio, compatibles con pesos en bf16/fp16). El sufijo `webshop-opsd` sugiere que el ajuste se ha realizado sobre el entorno WebShop (un benchmark de agentes para compra online) y con alguna variante de destilacion on-policy (OPSD), aunque esta interpretacion no esta confirmada por ninguna documentacion del repositorio.
+`YJZENG/webshop-opsd-qwen3-4b` es un modelo de lenguaje publicado en Hugging Face por el usuario YJZENG. El identificador y la etiqueta `qwen3` del repositorio indican que se trata de un ajuste (fine-tuning) sobre un modelo base de la familia Qwen3 con aproximadamente 4.411 millones de parametros totales, almacenados en formato safetensors (8,8 GB de repositorio, compatibles con pesos en bf16/fp16). El sufijo `webshop-opsd` sugiere que el ajuste se ha realizado sobre el entorno WebShop (un benchmark de agentes para compra online) y con alguna variante de destilacion on-policy (OPSD), aunque esta interpretacion no esta confirmada por ninguna documentacion del repositorio.
 
 El modelo resuelve, en principio, tareas de agente conversacional en entornos de comercio electronico: navegacion por catalogo, interpretacion de instrucciones de compra en lenguaje natural y seleccion de productos. Es relevante para quien investigue agentes LLM de bajo coste computacional, porque un modelo de ~4B parametros es ejecutable en hardware de consumo, lo que abarata la experimentacion con politicas de agente entrenadas por refuerzo o destilacion.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos de la tabla en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YJZENG/webshop-opsd-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/YJZENG/webshop-opsd-qwen3-4b
 - Repositorio del modelo base Qwen3 (referencia presumible, no confirmada por el autor): no disponible en la informacion proporcionada.
 - Paper o blog de la tecnica OPSD: no disponible. La busqueda web no devolvio ninguna referencia tecnica relacionada.
 - Repositorio o demo del entorno WebShop: no disponible en la informacion proporcionada.

@@ -65,5 +65,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: liming518/fluxcumfacev2](https://huggingface.co/liming518/fluxcumfacev2)
+- [Hugging Face: liming518/fluxcumfacev2](https://huggingface.co/liming518/fluxcumfacev2)
 - [Modelo base: black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)

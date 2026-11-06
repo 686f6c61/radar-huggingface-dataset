@@ -6,7 +6,7 @@ El repositorio itsmichaelokonkwo/cnn-transformer-generation-aug es un prototipo 
 
 A pesar de la etiqueta "xlarge", el conteo real de parámetros del checkpoint safetensors es de 16.576, es decir, un modelo de escala mínima. El propio autor indica que model.safetensors es un checkpoint de inicialización válido para pruebas de humo y que no debe presentarse como un checkpoint entrenado ni evaluado: no se reclama ninguna puntuación de benchmark en el repositorio. Esto lo sitúa en la categoría de andamiaje de investigación, no de modelo desplegable.
 
-Su relevancia actual es, por tanto, limitada y acotada al ámbito experimental: sirve como punto de partida reproducible para estudiar arquitecturas híbridas CNN-transformer, para validar scripts de carga y evaluación, y como ejemplo de configuración documentada. No hay descargas ni "likes" registrados, no se declaran idiomas soportados y no se aporta pipeline de HuggingFace.
+Su relevancia actual es, por tanto, limitada y acotada al ámbito experimental: sirve como punto de partida reproducible para estudiar arquitecturas híbridas CNN-transformer, para validar scripts de carga y evaluación, y como ejemplo de configuración documentada. No hay descargas ni "likes" registrados, no se declaran idiomas soportados y no se aporta pipeline de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -83,6 +83,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsmichaelokonkwo/cnn-transformer-generation-aug
+- Modelo en Hugging Face: https://huggingface.co/itsmichaelokonkwo/cnn-transformer-generation-aug
 - Ficheros incluidos en el repositorio: eval.py, README.md, config.json, training_args.json, model.safetensors
 - La búsqueda web realizada no devolvió enlaces relevantes asociados a este modelo (únicamente resultados no relacionados). No se dispone de papers, blogs, repositorios auxiliares ni demos en la información proporcionada.

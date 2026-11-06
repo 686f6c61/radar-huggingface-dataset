@@ -79,7 +79,7 @@ No se han publicado en la información disponible resultados de benchmarks frent
 
 ## Requisitos de hardware
 
-- **Inferencia**: CPU estándar con `onnxruntime`; no requiere GPU ni acelerador. El repositorio reporta un tamaño de 0,0 GB (por debajo del umbral de visualización de HuggingFace), coherente con una CNN de política para Atari de tamaño reducido.
+- **Inferencia**: CPU estándar con `onnxruntime`; no requiere GPU ni acelerador. El repositorio reporta un tamaño de 0,0 GB (por debajo del umbral de visualización de Hugging Face), coherente con una CNN de política para Atari de tamaño reducido.
 - **VRAM estimada**: no disponible en cifras; por la naturaleza del modelo (entrada de 4x84x84 y una cabeza de valores Q) es marginal y cabe holgadamente en cualquier GPU de consumo, aunque la ruta soportada oficialmente es CPU.
 - **GPU recomendadas**: no se documentan. Cualquier GPU consumer (por ejemplo, una RTX 4090) podría ejecutar el ONNX, pero no aporta ventaja frente a CPU para este tamaño de red.
 - **Hardware de entrenamiento**: un único chip Tenstorrent Blackhole; 25,1 horas para 10.000.000 de pasos de agente con `ttrl` 0.1.0 (commit `aab87a1028c1`).
@@ -91,7 +91,7 @@ No se han publicado en la información disponible resultados de benchmarks frent
 
 | Modelo | Parámetros | Contexto | Resultado en Pong | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `scaleresearch/ttrl-dqn-pong` (Double DQN) | no disponible | no aplica (4x84x84) | 19,57 ± 1,33 de retorno medio (no verificado) | MIT | HuggingFace, ONNX + `.npz` |
+| `scaleresearch/ttrl-dqn-pong` (Double DQN) | no disponible | no aplica (4x84x84) | 19,57 ± 1,33 de retorno medio (no verificado) | MIT | Hugging Face, ONNX + `.npz` |
 | DQN original de Mnih et al. (2015) | no disponible en la información proporcionada | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada | Publicación académica |
 | Implementaciones de referencia de DQN/Double DQN en frameworks de RL habituales | no disponible en la información proporcionada | no aplica | no disponible en la información proporcionada | variable según implementación | Repositorios públicos |
 
@@ -112,7 +112,7 @@ La información proporcionada no incluye métricas de terceros que permitan una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scaleresearch/ttrl-dqn-pong
+- Modelo en Hugging Face: https://huggingface.co/scaleresearch/ttrl-dqn-pong
 - Repositorio del framework ttrl: https://github.com/scaleresearch/tt-rl
 - Ejemplo de Atari DQN dentro de ttrl: `examples/atari-dqn` del repositorio anterior
 - Script de reproducción incluido en el repositorio del modelo: `play.py`

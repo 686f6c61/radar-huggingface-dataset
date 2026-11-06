@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`AlinaGonch/granite41-3b-squad-ratio-0.40-seed-42` es un repositorio de pesos publicado en HuggingFace cuyo nombre apunta a un ajuste fino de la familia Granite 4.1 en su variante de 3.000 millones de parametros, entrenado sobre el conjunto de datos SQuAD con una fraccion del 40 % y semilla 42. Esta interpretacion procede unicamente de la convencion de nombres del identificador y no ha sido confirmada por el autor en ninguna fuente disponible, por lo que debe tratarse como hipotesis de trabajo y no como dato verificado.
+`AlinaGonch/granite41-3b-squad-ratio-0.40-seed-42` es un repositorio de pesos publicado en Hugging Face cuyo nombre apunta a un ajuste fino de la familia Granite 4.1 en su variante de 3.000 millones de parametros, entrenado sobre el conjunto de datos SQuAD con una fraccion del 40 % y semilla 42. Esta interpretacion procede unicamente de la convencion de nombres del identificador y no ha sido confirmada por el autor en ninguna fuente disponible, por lo que debe tratarse como hipotesis de trabajo y no como dato verificado.
 
-La model card del repositorio es la plantilla automatica de HuggingFace sin rellenar: todos los campos relevantes (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "More Information Needed". No hay descripcion funcional, ni ejemplos de uso, ni resultados de evaluacion, ni documentacion de la receta de ajuste.
+La model card del repositorio es la plantilla automatica de Hugging Face sin rellenar: todos los campos relevantes (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como "More Information Needed". No hay descripcion funcional, ni ejemplos de uso, ni resultados de evaluacion, ni documentacion de la receta de ajuste.
 
 El modelo acumula cero descargas y cero "likes", fue creado y actualizado con apenas ocho segundos de diferencia y el repositorio ocupa 0,1 GB, un tamano que resulta llamativamente bajo para un checkpoint de 3.000 millones de parametros en precision completa. Su relevancia actual es, por tanto, muy limitada: se trata de un artefacto de experimentacion sin documentacion ni validacion publica, y cualquier evaluacion seria requiere inspeccionar los ficheros de pesos antes de considerarlo utilizable.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible. Si la hipotesis de 3.000 millones de parametros fuese correcta, las cifras orientativas serian de aproximadamente 6 GB en fp16/bf16, en torno a 3 GB en cuantizacion de 8 bits y cerca de 2 GB en cuantizacion de 4 bits, mas el consumo del contexto y de la cache KV. Estas cifras son estimaciones condicionadas a esa hipotesis y no datos verificados.
 - GPU recomendadas: no disponible. Bajo la misma hipotesis, una GPU consumer con 8-12 GB de VRAM (RTX 3060 12 GB, RTX 4070, RTX 4090) seria suficiente para inferencia en cuantizacion de 4 u 8 bits; para fp16 serian preferibles 16 GB o mas.
 - Compatibilidad con GPU de consumo: no confirmada. El tamano de repositorio de 0,1 GB no es coherente con un checkpoint denso de 3.000 millones de parametros en bf16, lo que obliga a verificar el contenido real antes de planificar el despliegue.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints y, por extension, con servidores que consumen artefactos de transformers. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI, ya que no se publican pesos en GGUF ni documentacion de servidores.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints y, por extension, con servidores que consumen artefactos de transformers. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI, ya que no se publican pesos en GGUF ni documentacion de servidores.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ No disponible. No se dispone de datos verificados de parametros, contexto, rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.40-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.40-seed-42
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 

@@ -80,7 +80,7 @@ No se han identificado en la informacion disponible otros LoRA de personaje dire
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NaoTomori-Lora E6 (recomendada) | rango 32 / alpha 16 | no aplica | Mejor equilibrio cualitativo a 0,6-0,8 | creativeml-openrail-m | HuggingFace y ModelScope |
+| NaoTomori-Lora E6 (recomendada) | rango 32 / alpha 16 | no aplica | Mejor equilibrio cualitativo a 0,6-0,8 | creativeml-openrail-m | Hugging Face y ModelScope |
 | NaoTomori-Lora E5 | rango 32 / alpha 16 | no aplica | Identidad utilizable, algo mas blanda | creativeml-openrail-m | Incluida en el mismo repo |
 | NaoTomori-Lora E7 | rango 32 / alpha 16 | no aplica | Cercana a E6, sin ganancia a 1,0 | creativeml-openrail-m | Incluida en el mismo repo |
 | Otros LoRA de personaje sobre Illustrious | no disponible | no aplica | no disponible | variable | no disponible |
@@ -100,8 +100,8 @@ No se han identificado en la informacion disponible otros LoRA de personaje dire
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/NaoTomori-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/NaoTomori-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/NaoTomori-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/NaoTomori-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/NaoTomori-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/NaoTomori-Dataset (URL truncada en la informacion disponible)
 - Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio)

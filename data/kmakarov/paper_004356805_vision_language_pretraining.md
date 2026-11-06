@@ -49,8 +49,8 @@ No disponible. No se puede comparar con otros modelos, ya que no es un modelo de
 - Contexto limitado: al ser un solo documento, no cubre toda la investigación en visión-lenguaje; se recomienda complementar con los surveys y papers citados en la búsqueda web.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/kmakarov/paper_004356085_vision_language_pretraining
+- Repositorio en Hugging Face: https://huggingface.co/kmakarov/paper_004356085_vision_language_pretraining
 - Survey de 26K papers sobre visión-lenguaje (arXiv): https://arxiv.org/html/2510.09586v1
 - Survey VLP (Springer): https://link.springer.com/article/10.1007/s11633-022-1369-5
 - Survey VLP (arXiv): https://arxiv.org/abs/2202.09061
-- Blog de HuggingFace sobre visión-lenguaje: https://github.com/huggingface/blog/blob/main/vision_language_pretraining.md
+- Blog de Hugging Face sobre visión-lenguaje: https://github.com/huggingface/blog/blob/main/vision_language_pretraining.md

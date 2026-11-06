@@ -13,7 +13,7 @@ Su relevancia es limitada pero concreta: al ser un derivado sin censura (uncenso
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer derivado de Qwen3.5 (arquitectura exacta no declarada en la model card) |
-| Parametros totales | 9B segun el autor; los metadatos de HuggingFace sobre pesos safetensors indican 456.010.480 parametros (dato inconsistente con el nombre del modelo) |
+| Parametros totales | 9B segun el autor; los metadatos de Hugging Face sobre pesos safetensors indican 456.010.480 parametros (dato inconsistente con el nombre del modelo) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (los ejemplos de la model card arrancan llama.cpp con `-c 8192`, valor de configuracion en tiempo de ejecucion, no una especificacion del modelo) |
 | Tipos de cuantizacion | Q4_0 (unico cuantizado publicado); proyector multimodal mmproj en BF16 |
@@ -85,7 +85,7 @@ No se dispone de modelos comparables con datos de rendimiento publicados en la i
 - Modelo derivado de una base "uncensored": la propia model card advierte de que las salidas no estan filtradas y pueden ser inapropiadas, inexactas o daninas. No debe exponerse directamente a usuarios finales sin capas de moderacion propias.
 - Riesgo de alucinacion: la model card indica explicitamente que no se garantiza la factualidad de las respuestas. No debe usarse para decisiones medicas, legales, financieras o de seguridad sin verificacion por un profesional.
 - Degradacion por cuantizacion: el formato Q4_0 reduce la calidad respecto al modelo en BF16. El autor lo reconoce como una perdida "ligera", pero no cuantifica el efecto en ninguna tarea concreta.
-- Discrepancia en el recuento de parametros: los metadatos de HuggingFace indican 456.010.480 parametros para los pesos safetensors, frente a los 9B declarados en la model card y en el nombre del modelo. Conviene verificar el contenido real del repositorio antes de planificar un despliegue.
+- Discrepancia en el recuento de parametros: los metadatos de Hugging Face indican 456.010.480 parametros para los pesos safetensors, frente a los 9B declarados en la model card y en el nombre del modelo. Conviene verificar el contenido real del repositorio antes de planificar un despliegue.
 - Contexto no especificado: no se declara la ventana de contexto nativa. El valor `-c 8192` de los ejemplos es una eleccion del autor al lanzar llama.cpp, no una caracteristica del modelo, por lo que no se puede asumir que admita conversaciones largas sin probarlo.
 - Idiomas no declarados: no hay informacion sobre el rendimiento en castellano ni sobre la cobertura multilingue real.
 - Compatibilidad de runtime: requiere una version reciente de llama.cpp con soporte para la arquitectura Qwen3.5. Versiones antiguas fallaran al cargar el modelo.
@@ -95,9 +95,9 @@ No se dispone de modelos comparables con datos de rendimiento publicados en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/summerMC/Cyber-9B-Qwen
+- Repositorio en Hugging Face: https://huggingface.co/summerMC/Cyber-9B-Qwen
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
-- Perfil del autor en HuggingFace: https://huggingface.co/summerMC
+- Perfil del autor en Hugging Face: https://huggingface.co/summerMC
 - Perfil del autor del modelo base: https://huggingface.co/DavidAU
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Variante relacionada del mismo autor: https://huggingface.co/summerMC/Qwen3.5-9B-SpeedX9-GDN32-x2

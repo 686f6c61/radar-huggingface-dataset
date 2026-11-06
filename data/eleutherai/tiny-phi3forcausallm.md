@@ -72,6 +72,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EleutherAI/tiny-Phi3ForCausalLM
+- Modelo en Hugging Face: https://huggingface.co/EleutherAI/tiny-Phi3ForCausalLM
 - Repositorio de bergson (suite de tests que lo utiliza): https://github.com/EleutherAI/bergson
 - Modelo original espejado (retirado): https://huggingface.co/trl-internal-testing/tiny-Phi3ForCausalLM

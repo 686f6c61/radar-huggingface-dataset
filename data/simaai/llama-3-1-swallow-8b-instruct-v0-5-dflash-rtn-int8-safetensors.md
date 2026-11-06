@@ -81,6 +81,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- [HuggingFace: simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-DFlash-RTN-INT8-Safetensors](https://huggingface.co/simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-DFlash-RTN-INT8-Safetensors)
+- [Hugging Face: simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-DFlash-RTN-INT8-Safetensors](https://huggingface.co/simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-DFlash-RTN-INT8-Safetensors)
 - [Modelo base BF16: florianvoss/Llama-3.1-Swallow-8B-Instruct-v0.5-DFlash](https://huggingface.co/florianvoss/Llama-3.1-Swallow-8B-Instruct-v0.5-DFlash)
 - [Modelo objetivo: simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-Safetensors](https://huggingface.co/simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-Safetensors)

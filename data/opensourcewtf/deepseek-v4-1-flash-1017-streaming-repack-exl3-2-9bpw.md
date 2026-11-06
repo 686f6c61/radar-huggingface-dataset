@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es un modelo de la familia DeepSeek (desarrollada por DeepSeek, aunque la model card disponible no lo confirma explicitamente) del que este repositorio de HuggingFace contiene una redistribucion cuantizada, no los pesos originales. El repositorio `OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3-2.9bpw` publica una version con los expertos enrutados (routed experts) cuantizados a 2,9 bits por peso mediante EXL3 EAQ v1, una tecnica de cuantizacion de la organizacion Mia-AiLab, y reorganizados en un diseno de streaming pensado para reducir el espacio en disco y permitir carga por partes.
+DeepSeek-V4.1-Flash-1017 es un modelo de la familia DeepSeek (desarrollada por DeepSeek, aunque la model card disponible no lo confirma explicitamente) del que este repositorio de Hugging Face contiene una redistribucion cuantizada, no los pesos originales. El repositorio `OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3-2.9bpw` publica una version con los expertos enrutados (routed experts) cuantizados a 2,9 bits por peso mediante EXL3 EAQ v1, una tecnica de cuantizacion de la organizacion Mia-AiLab, y reorganizados en un diseno de streaming pensado para reducir el espacio en disco y permitir carga por partes.
 
 El interes practico de esta ficha es limitado pero concreto: se trata de un artefacto de cuantizacion agresiva (2,9 bpw) de un modelo presumiblemente de gran tamano (el repositorio ocupa 417,8 GB), orientado a despliegues con restricciones severas de VRAM. La model card indica que el contenido ha sido movido a la rama `2.9bpw` del repositorio `OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3`, y que el historial de este repositorio se ha compactado para liberar almacenamiento.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento en la documentacion proporcionada. Todos los datos tecnicos que siguen se limitan a lo que consta en la model card y en los metadatos de HuggingFace; el resto se marca como no disponible.
+No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento en la documentacion proporcionada. Todos los datos tecnicos que siguen se limitan a lo que consta en la model card y en los metadatos de Hugging Face; el resto se marca como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 (EXL3 EAQ v1 2,9 bpw, este repo) | no disponible | no disponible | 2,9 bpw (expertos) | MIT | HuggingFace, rama `2.9bpw` |
-| DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw (Mia-AiLab) | no disponible | no disponible | 2,9 bpw | no disponible | HuggingFace |
+| DeepSeek-V4.1-Flash-1017 (EXL3 EAQ v1 2,9 bpw, este repo) | no disponible | no disponible | 2,9 bpw (expertos) | MIT | Hugging Face, rama `2.9bpw` |
+| DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw (Mia-AiLab) | no disponible | no disponible | 2,9 bpw | no disponible | Hugging Face |
 | DeepSeek-V4.1-Flash-1017 (pesos originales) | no disponible | no disponible | sin cuantizar | no disponible | no disponible en la informacion |
 
 No se dispone de datos de rendimiento ni de especificaciones del modelo base que permitan una comparacion cuantitativa con alternativas de la misma categoria.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3-2.9bpw
+- Repositorio Hugging Face: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3-2.9bpw
 - Repositorio con la rama `2.9bpw`: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3/tree/2.9bpw
 - Cuantizacion original de Mia-AiLab: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw
 - Licencia: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3/blob/2.9bpw/LICENSE

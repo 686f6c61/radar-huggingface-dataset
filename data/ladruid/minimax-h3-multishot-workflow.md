@@ -100,7 +100,7 @@ No hay benchmarks ni especificaciones publicas del modelo base en la informacion
 
 | Alternativa | Naturaleza | Duracion de escena | Continuidad de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (ComfyUI-H3-Multishot v2.7.0) | Pack de nodos y flujos sobre MiniMax-H3 | Arbitraria; 65 segundos verificados en 7 ventanas | Pista maestra unica y voces por sujeto | Apache 2.0 | HuggingFace, repositorio de 0,0 GB, 0 descargas |
+| Este repositorio (ComfyUI-H3-Multishot v2.7.0) | Pack de nodos y flujos sobre MiniMax-H3 | Arbitraria; 65 segundos verificados en 7 ventanas | Pista maestra unica y voces por sujeto | Apache 2.0 | Hugging Face, repositorio de 0,0 GB, 0 descargas |
 | MiniMax-H3 sin encadenar | Modelo de video base | 10-15 segundos por bloque | no disponible | no disponible | Pesos descargables aparte (referencia truncada a `joeygambino/Min...`) |
 | Motor LTX | Motor alternativo mencionado por el escritor de prompts | no disponible | no disponible | no disponible | no disponible |
 
@@ -119,7 +119,7 @@ No hay benchmarks ni especificaciones publicas del modelo base en la informacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LaDruid/MiniMax-H3-Multishot-Workflow
+- Repositorio en Hugging Face: https://huggingface.co/LaDruid/MiniMax-H3-Multishot-Workflow
 - DOI: https://doi.org/10.57967/hf/10523
 - Repositorio de pesos citado en la model card (referencia truncada): https://huggingface.co/joeygambino/Min...
 - Paginas de la ComfyUI-H3-Multishot incluidas en el repositorio: `ComfyUI-H3-Multishot/`, `workflows/H3_Seamless_Chain_v2.json`, `workflows/H3_Seamless_Chain_CORE.json`, `workflows/H3_Keyframes.json`, `INSTALL.md`, `SETTINGS.md`, `PROMPTING.md`

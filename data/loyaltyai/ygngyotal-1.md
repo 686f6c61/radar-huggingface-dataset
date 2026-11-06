@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `LoyalTyAI/ygngyotal.1` es un ajuste fino (finetune) del modelo `mistralai/Mistral-Small-24B-Instruct-2501`, publicado por el usuario LoyalTyAI en HuggingFace bajo licencia Apache 2.0. Según los metadatos del repositorio, se trata de un modelo de 24.011.361.280 parámetros (aproximadamente 24B) con arquitectura etiquetada como `mistral3`, pipeline de `text-generation` y pesos en formato `safetensors`, con un tamano de repositorio de 48,1 GB que corresponde a pesos en precision de 16 bits.
+El modelo identificado como `LoyalTyAI/ygngyotal.1` es un ajuste fino (finetune) del modelo `mistralai/Mistral-Small-24B-Instruct-2501`, publicado por el usuario LoyalTyAI en Hugging Face bajo licencia Apache 2.0. Según los metadatos del repositorio, se trata de un modelo de 24.011.361.280 parámetros (aproximadamente 24B) con arquitectura etiquetada como `mistral3`, pipeline de `text-generation` y pesos en formato `safetensors`, con un tamano de repositorio de 48,1 GB que corresponde a pesos en precision de 16 bits.
 
 La model card del repositorio reproduce integramente el contenido de la ficha de "Dolphin Mistral 24B Venice Edition", un proyecto de dphn.ai desarrollado en colaboracion con Venice.ai cuyo objetivo declarado es ofrecer una version "sin censura" de Mistral 24B. Por tanto, la informacion tecnica disponible describe ese ajuste concreto: un modelo denso de 24B orientado a instrucciones, entrenado sobre 8 GPU B200 proporcionadas por Targon, con una plantilla de chat heredada de Mistral y un enfoque de alineacion delegada al prompt de sistema.
 
@@ -12,7 +12,7 @@ Es relevante ahora porque representa un ejemplo de la familia de modelos autoalo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso, etiquetado como `mistral3` en los tags de HuggingFace |
+| Arquitectura | Transformer denso, etiquetado como `mistral3` en los tags de Hugging Face |
 | Parametros totales | 24.011.361.280 (aprox. 24B) |
 | Longitud de contexto | 131.072 tokens segun la configuracion de vLLM incluida en la model card (`--max-model-len 131072`) |
 | Tipos de cuantizacion | no disponible; la model card menciona despliegue con Ollama y LM Studio, lo que implica soporte de GGUF, pero no se documentan repositorios ni formatos concretos |
@@ -20,7 +20,7 @@ Es relevante ahora porque representa un ejemplo de la familia de modelos autoalo
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Modelo base | mistralai/Mistral-Small-24B-Instruct-2501 |
-| Modalidad declarada | image-text-to-text (tag de HuggingFace); la model card configura vLLM con `--limit-mm-per-prompt '{"image": 10}'` |
+| Modalidad declarada | image-text-to-text (tag de Hugging Face); la model card configura vLLM con `--limit-mm-per-prompt '{"image": 10}'` |
 | Tamano del repositorio | 48,1 GB |
 | Fecha de creacion / actualizacion | 26 de septiembre de 2026 (ambas identicas) |
 | Descargas / likes | 0 / 0 |
@@ -37,7 +37,7 @@ En cuanto al entrenamiento, la model card indica unicamente que el modelo se ent
 - Seguimiento de instrucciones con un tono y unas reglas de comportamiento definidos integramente desde el `system_prompt`.
 - Soporte de tool calling / function calling: la model card documenta el arranque de vLLM con `--tool-call-parser mistral` y `--enable-auto-tool-choice`, lo que habilita llamadas a herramientas con seleccion automatica.
 - Capacidad de agente y razonamiento multi-paso, derivada del soporte de auto tool choice y de la ventana de contexto de 131.072 tokens.
-- Entrada multimodal (imagenes) segun los tags de HuggingFace y la configuracion de vLLM, con un limite configurado de 10 imagenes por prompt.
+- Entrada multimodal (imagenes) segun los tags de Hugging Face y la configuracion de vLLM, con un limite configurado de 10 imagenes por prompt.
 - Capacidades multilingues: la model card incluye ejemplos con salida en frances, pero no se declara una lista de idiomas soportados.
 - No se documenta modo "thinking", soporte de audio ni modos especiales de razonamiento extendido.
 
@@ -92,7 +92,7 @@ Datos de los modelos comparados tomados de su documentacion publica; los valores
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LoyalTyAI/ygngyotal.1
+- Repositorio en Hugging Face: https://huggingface.co/LoyalTyAI/ygngyotal.1
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
 - Web de dphn.ai: https://dphn.ai
 - Cuenta de X de dphn: https://x.com/dphnAI

@@ -6,7 +6,7 @@ El modelo `mlasli/Qwen3.8-27B-Heretic-Uncensored-IQ2_M-GGUF` es una cuantizació
 
 La relevancia de este modelo radica en que ofrece una alternativa local, ejecutable en hardware de consumo, para casos de uso que requieren respuestas sin restricciones temáticas (roleplay, escritura creativa, exploración de escenarios hipotéticos) manteniendo la arquitectura transformer densa de 27.300 millones de parámetros y la decodificación especulativa multi-token (MTP) del modelo original. La cuantización IQ2_M reduce el peso a menos de 10 GB, lo que permite su ejecución en GPUs con 12 GB de VRAM o incluso en CPU con llama.cpp.
 
-Es importante señalar que esta ficha se basa exclusivamente en la información proporcionada por el autor en la model card de HuggingFace y en los resultados de búsqueda web. No se dispone de datos oficiales de benchmarks estándar (MMLU, HumanEval, etc.) para esta variante cuantizada.
+Es importante señalar que esta ficha se basa exclusivamente en la información proporcionada por el autor en la model card de Hugging Face y en los resultados de búsqueda web. No se dispone de datos oficiales de benchmarks estándar (MMLU, HumanEval, etc.) para esta variante cuantizada.
 
 ## Especificaciones tecnicas
 
@@ -88,11 +88,11 @@ La principal diferencia entre estas variantes radica en la metodologia de ablite
 - La vision no esta confirmada: la model card indica "text-only validated", por lo que cualquier capacidad multimodal no debe asumirse.
 - No se dispone de benchmarks estandar de rendimiento, por lo que no es posible evaluar su calidad relativa frente a otros modelos de tamano similar.
 - La licencia Apache-2.0 permite uso comercial, pero la naturaleza "uncensored" puede generar problemas legales o de reputacion en entornos empresariales.
-- El modelo fue creado en agosto de 2026 (segun la fecha de HuggingFace), lo que indica que es una version reciente y con pocas descargas (0), por lo que su adopcion y soporte comunitario son limitados.
+- El modelo fue creado en agosto de 2026 (segun la fecha de Hugging Face), lo que indica que es una version reciente y con pocas descargas (0), por lo que su adopcion y soporte comunitario son limitados.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-IQ2_M-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-IQ2_M-GGUF
 - Version BF16 (modelo base de la cuantizacion): https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-BF16
 - Cuantizaciones GGUF adicionales: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-Q8_0-GGUF (y variantes Q6_K, Q5_K_M, Q4_K_M, IQ4_XS)
 - Repositorio GitHub de abliteracion similar: https://github.com/Wassimyounes01/qwen38-uncensored

@@ -95,9 +95,9 @@ Como referencia externa, la model card de Qwen3.6-35B-A3B declara 92,7 en AIME 2
 
 | Modelo | Parámetros | Contexto | AIME 2026 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B con este arnés | 1,7 mil millones | 262.144 tokens | 86,7 % sin herramientas; 83,3 % con Python | MIT (proyecto) | GGUF en HuggingFace |
+| LFM3-1.7B con este arnés | 1,7 mil millones | 262.144 tokens | 86,7 % sin herramientas; 83,3 % con Python | MIT (proyecto) | GGUF en Hugging Face |
 | Qwen3.6-35B-A3B | 35 mil millones totales, MoE | no disponible en la información | 92,7 % (dato de su model card) | no disponible | no disponible |
-| Clover-35B-A3B-Preview | 35 mil millones totales, MoE | no disponible | no disponible | no disponible | GGUF IQ4_XS en HuggingFace |
+| Clover-35B-A3B-Preview | 35 mil millones totales, MoE | no disponible | no disponible | no disponible | GGUF IQ4_XS en Hugging Face |
 
 La comparación con Qwen3.6-35B-A3B procede del propio autor y no de una ejecución independiente; la diferencia de 6 puntos en AIME 2026 se obtiene con aproximadamente 1/20 de los parámetros totales. No se dispone de datos de benchmarks para Clover-35B-A3B-Preview en la información proporcionada.
 
@@ -116,7 +116,7 @@ La comparación con Qwen3.6-35B-A3B procede del propio autor y no de una ejecuci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/austindixson/python-sandbox-math-tool
+- Repositorio en Hugging Face: https://huggingface.co/austindixson/python-sandbox-math-tool
 - Demo Space: https://huggingface.co/spaces/austindixson/python-sandbox-math-demo
 - Blog con resultados de contexto completo (30 de octubre): https://www.destroyrebuild.xyz/blog/lfm3-python-tool-full-context
 - Blog con ejecuciones limitadas (28 de octubre): https://www.destroyrebuild.xyz/blog/lfm3-python-sandbox

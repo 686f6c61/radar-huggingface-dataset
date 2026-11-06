@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gulpara/results` es un modelo de clasificación de texto obtenido mediante fine-tuning supervisado de `google-bert/bert-base-uncased`. Lo publica el usuario `gulpara` en HuggingFace y sigue el formato estándar de los modelos generados automáticamente con `Trainer` de la librería Transformers. Se trata, por tanto, de un ajuste de BERT base sobre un conjunto de datos que el autor no identifica en la model card ("None dataset"), orientado a una tarea de clasificación de texto que tampoco se especifica.
+`gulpara/results` es un modelo de clasificación de texto obtenido mediante fine-tuning supervisado de `google-bert/bert-base-uncased`. Lo publica el usuario `gulpara` en Hugging Face y sigue el formato estándar de los modelos generados automáticamente con `Trainer` de la librería Transformers. Se trata, por tanto, de un ajuste de BERT base sobre un conjunto de datos que el autor no identifica en la model card ("None dataset"), orientado a una tarea de clasificación de texto que tampoco se especifica.
 
 El modelo conserva la arquitectura encoder-only de BERT base, con 109.483.778 parámetros totales (aproximadamente 110 millones) y un repositorio de 0,4 GB en formato safetensors. No incorpora innovaciones arquitectónicas: es un transformer bidireccional estándar con tokenizador WordPiece y vocabulario de 30.522 tokens, pensado para inferencia de clasificación (una etiqueta o distribución de etiquetas por secuencia de entrada).
 
@@ -72,10 +72,10 @@ No se especifica el tamaño ni la composición del conjunto de validación, por 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gulpara/results | 109,5 M | 512 (estándar BERT) | Clasificación de texto | Apache 2.0 | HuggingFace, 0 descargas |
-| google-bert/bert-base-uncased | 110 M | 512 | Modelo base (MLM) | Apache 2.0 | HuggingFace, ampliamente usado |
-| distilbert-base-uncased | 66 M | 512 | Modelo base (destilado) | Apache 2.0 | HuggingFace, ampliamente usado |
-| roberta-base | 125 M | 512 | Modelo base (MLM) | MIT | HuggingFace, ampliamente usado |
+| gulpara/results | 109,5 M | 512 (estándar BERT) | Clasificación de texto | Apache 2.0 | Hugging Face, 0 descargas |
+| google-bert/bert-base-uncased | 110 M | 512 | Modelo base (MLM) | Apache 2.0 | Hugging Face, ampliamente usado |
+| distilbert-base-uncased | 66 M | 512 | Modelo base (destilado) | Apache 2.0 | Hugging Face, ampliamente usado |
+| roberta-base | 125 M | 512 | Modelo base (MLM) | MIT | Hugging Face, ampliamente usado |
 
 Frente a `bert-base-uncased`, este modelo añade una cabeza de clasificación ajustada, pero carece de la documentación y el ecosistema del original. Frente a `distilbert-base-uncased`, es más pesado (109,5 M frente a 66 M) sin ventajas documentadas de rendimiento. Frente a `roberta-base`, tiene una licencia comparable y un tamaño similar, pero sin métricas públicas que permitan comparar calidad.
 
@@ -93,5 +93,5 @@ Frente a `bert-base-uncased`, este modelo añade una cabeza de clasificación aj
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gulpara/results
+- Hugging Face: https://huggingface.co/gulpara/results
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased

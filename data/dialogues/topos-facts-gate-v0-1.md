@@ -70,17 +70,17 @@ Mensajes reales (privados): sobre ~29.000 registros del historial de una persona
 - VRAM estimada para inferencia: aproximadamente 1,7 GB en fp16 y alrededor de 0,9 GB en int8; en fp32, unos 3,5 GB. Cifras estimadas a partir de los 435 M de parámetros, no publicadas por el autor.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; A100, H100, L4, T4, RTX 4090, RTX 3090 y RTX 3060 son suficientes y quedan sobredimensionadas para este modelo.
 - Cabe en GPU de consumo: sí, en cualquier tarjeta moderna con 4 GB o más, e incluso en CPU para volúmenes moderados.
-- Opciones de despliegue: `transformers` con PyTorch (implementación de referencia `topos_facts.py`), exportación a ONNX Runtime, TorchScript o cuantización dinámica con PyTorch; también es compatible con endpoints de HuggingFace (`endpoints_compatible`).
+- Opciones de despliegue: `transformers` con PyTorch (implementación de referencia `topos_facts.py`), exportación a ONNX Runtime, TorchScript o cuantización dinámica con PyTorch; también es compatible con endpoints de Hugging Face (`endpoints_compatible`).
 - Latencia y throughput: no disponibles en la información proporcionada. Al ser un cross-encoder, el coste escala con el número de pares (mensaje, hipótesis) evaluados: 27 paquetes con múltiples predicados y opciones implican decenas o cientos de pasadas por mensaje, lo que conviene tener en cuenta en el dimensionamiento.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Precisión (conjunto sintético) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Topos Facts v0.1 · gate | 435 M | 512 | Encoder NLI + lector de spans | 0,81 | MIT | HuggingFace |
-| MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c | ~435 M | 512 | Encoder NLI zero-shot genérico | no disponible | MIT | HuggingFace |
-| Qwen 3.5 9B (con prompting) | 9 B | no disponible | LLM generativo | 0,53 | no disponible | HuggingFace |
-| Llama 3.3 70B (con prompting) | 70 B | no disponible | LLM generativo | 0,29 | licencia comunitaria Llama | HuggingFace |
+| Topos Facts v0.1 · gate | 435 M | 512 | Encoder NLI + lector de spans | 0,81 | MIT | Hugging Face |
+| MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c | ~435 M | 512 | Encoder NLI zero-shot genérico | no disponible | MIT | Hugging Face |
+| Qwen 3.5 9B (con prompting) | 9 B | no disponible | LLM generativo | 0,53 | no disponible | Hugging Face |
+| Llama 3.3 70B (con prompting) | 70 B | no disponible | LLM generativo | 0,29 | licencia comunitaria Llama | Hugging Face |
 
 La comparación con LLM generativos no es del todo equivalente: los modelos grandes logran mayor recall (hasta 1,00 en GPT-5.4 mini) a costa de mucha menor precisión y de un coste computacional muy superior. Frente a su modelo base, Topos Facts v0.1 añade la especificación de paquetes, umbrales y la integración con el lector, pero no se han publicado métricas del base sin afinar sobre este conjunto.
 
@@ -99,9 +99,9 @@ La comparación con LLM generativos no es del todo equivalente: los modelos gran
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dialogues/topos-facts-gate-v0.1
+- Modelo en Hugging Face: https://huggingface.co/Dialogues/topos-facts-gate-v0.1
 - Modelo lector complementario: https://huggingface.co/Dialogues/topos-facts-reader-v0.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Dialogues/topos-facts
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Dialogues/topos-facts
 - Modelo base: https://huggingface.co/MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c
-- Organización en HuggingFace: https://huggingface.co/Dialogues
+- Organización en Hugging Face: https://huggingface.co/Dialogues
 - Sitio del producto Topos: https://topos.dialogues.ai

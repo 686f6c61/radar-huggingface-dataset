@@ -2,11 +2,11 @@
 
 ## Resumen
 
-kcat-km-final es un ensemble de modelos de prediccion de parametros cineticos enzimaticos (kcat y Km) publicado en HuggingFace por el usuario raisser. No se trata de un modelo de lenguaje: es un pipeline de regresion que combina embeddings de proteina extraidos con ESM-2 35M, descriptores moleculares calculados con RDKit (Morgan counts, MACCS y descriptores fisicoquimicos) y modelos de gradient boosting (LightGBM y Extra Trees) junto con una red neuronal ligera sobre ESM-2 parcialmente fine-tuneado. El objetivo es predecir la constante catalitica (kcat) y la constante de Michaelis (Km) para pares enzima-sustrato.
+kcat-km-final es un ensemble de modelos de prediccion de parametros cineticos enzimaticos (kcat y Km) publicado en Hugging Face por el usuario raisser. No se trata de un modelo de lenguaje: es un pipeline de regresion que combina embeddings de proteina extraidos con ESM-2 35M, descriptores moleculares calculados con RDKit (Morgan counts, MACCS y descriptores fisicoquimicos) y modelos de gradient boosting (LightGBM y Extra Trees) junto con una red neuronal ligera sobre ESM-2 parcialmente fine-tuneado. El objetivo es predecir la constante catalitica (kcat) y la constante de Michaelis (Km) para pares enzima-sustrato.
 
 El modelo se entrena sobre el conjunto de entrenamiento del organizador de una competicion de prediccion cinetica mas tablas publicas de cinetica filtradas para evitar fugas de datos, sin usar modelos preentrenados especificamente en cinetica. El diseno combina dos ramas: una rama clasica (A) con ESM-2 congelado y boosting de arboles, y una rama neuronal (B) con fine-tuning parcial de las 4 capas superiores de ESM-2 mas una MLP sobre moleculas y caracteristicas cruzadas enzima-sustrato.
 
-La relevancia practica es acotada y especifica: sirve como linea base reproducible para tareas de prediccion de kcat y Km en entornos de solo CPU, con un repo de 0,9 GB y un script de inferencia (`predict.py`). No hay model card con informacion sobre licencia, idiomas ni benchmarks frente a otros metodos, y el pipeline declarado no es un pipeline estandar de HuggingFace.
+La relevancia practica es acotada y especifica: sirve como linea base reproducible para tareas de prediccion de kcat y Km en entornos de solo CPU, con un repo de 0,9 GB y un script de inferencia (`predict.py`). No hay model card con informacion sobre licencia, idiomas ni benchmarks frente a otros metodos, y el pipeline declarado no es un pipeline estandar de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -79,11 +79,11 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros p
 - No se documentan sesgos, cobertura del espacio quimico ni dominios enzimaticos representados en el entrenamiento.
 - Riesgo de extrapolacion: al entrenarse sobre tablas publicas de cinetica y el conjunto del organizador, las predicciones fuera de esa distribucion (enzimas o sustratos poco representados) pueden degradarse sin aviso.
 - La metrica de validacion no esta identificada, lo que dificulta interpretar los valores 0,4751 y 0,6872 frente a otros trabajos.
-- El pipeline declarado no es un pipeline estandar de HuggingFace; la integracion requiere usar el script y el entorno del autor (RDKit, LightGBM, joblib, safetensors).
+- El pipeline declarado no es un pipeline estandar de Hugging Face; la integracion requiere usar el script y el entorno del autor (RDKit, LightGBM, joblib, safetensors).
 - No hay informacion sobre versiones de dependencias ni reproducibilidad del entorno.
 - El repo tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion externa conocida.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raisser/kcat-km-final
+- Modelo en Hugging Face: https://huggingface.co/raisser/kcat-km-final
 - Referencia externa encontrada en la busqueda web (tesis sobre Chlorella sorokiniana, contexto de cinetica enzimatica, no especifica del modelo): https://discovery.ucl.ac.uk/10064964/1/Spencer-Milnes_Xenia_thesis_edited.pdf

@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables en el ecosistema CoreML 
 
 ## Enlaces
 
-- [HuggingFace - MikiHuang/DeepMosaics-CoreML](https://huggingface.co/MikiHuang/DeepMosaics-CoreML)
+- [Hugging Face - MikiHuang/DeepMosaics-CoreML](https://huggingface.co/MikiHuang/DeepMosaics-CoreML)
 - [Proyecto original DeepMosaics (GitHub)](https://github.com/HypoX64/DeepMosaics)

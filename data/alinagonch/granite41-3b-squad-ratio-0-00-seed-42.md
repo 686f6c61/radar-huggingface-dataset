@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AlinaGonch/granite41-3b-squad-ratio-0.00-seed-42` aloja un modelo publicado en HuggingFace bajo la librería `transformers`. La model card es la plantilla genérica autogenerada por el Hub: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni licencia, ni idiomas, ni descripción funcional. Se trata, por tanto, de un checkpoint sin documentación técnica verificable.
+El repositorio `AlinaGonch/granite41-3b-squad-ratio-0.00-seed-42` aloja un modelo publicado en Hugging Face bajo la librería `transformers`. La model card es la plantilla genérica autogenerada por el Hub: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni licencia, ni idiomas, ni descripción funcional. Se trata, por tanto, de un checkpoint sin documentación técnica verificable.
 
 El identificador del repositorio aporta las únicas pistas disponibles: `granite41-3b` apunta a una base de la familia IBM Granite 4.1 en su variante de 3.000 millones de parámetros, `squad` sugiere un ajuste fino sobre el dataset SQuAD (Stanford Question Answering Dataset, tarea de respuesta extractiva), y `ratio-0.00-seed-42` encaja con el patrón habitual de experimentos de ablación sobre proporciones de mezcla de datos con semilla fija. Ninguna de estas inferencias está confirmada por el autor en la información proporcionada.
 
@@ -65,7 +65,7 @@ No hay requisitos documentados por el autor. Las siguientes cifras son estimacio
 - VRAM estimada para inferencia (estimacion, no dato del autor): unos 6-7 GB en fp16/bf16; en torno a 3,5-4 GB con cuantizacion de 8 bits; aproximadamente 2-2,5 GB con cuantizacion de 4 bits (por ejemplo, formato GGUF Q4_K_M). A estas cifras hay que sumar el consumo de la memoria KV, que crece con la longitud de contexto.
 - GPUs recomendadas (estimacion): suficientes tarjetas de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 o superiores para fp16; una RTX 3060 8 GB o RTX 4060 8 GB bastaria para cuantizacion de 4 bits. No se requieren A100 ni H100 para un modelo de este tamano.
 - Cabe en GPU de consumo: previsiblemente si, en las gamas mencionadas y sujeto a confirmacion del tamano real del checkpoint.
-- Opciones de despliegue: al estar etiquetado con `transformers` y `safetensors`, es cargable con la libreria `transformers` de HuggingFace. Tambien seria compatible con vLLM o TGI si los pesos estan completos. Para llama.cpp u Ollama haria falta una conversion a GGUF que no se ha publicado. La etiqueta `endpoints_compatible` indica que el repositorio es apto para los Inference Endpoints del Hub.
+- Opciones de despliegue: al estar etiquetado con `transformers` y `safetensors`, es cargable con la libreria `transformers` de Hugging Face. Tambien seria compatible con vLLM o TGI si los pesos estan completos. Para llama.cpp u Ollama haria falta una conversion a GGUF que no se ha publicado. La etiqueta `endpoints_compatible` indica que el repositorio es apto para los Inference Endpoints del Hub.
 - Latencia y throughput: no disponible.
 - Advertencia: el tamano del repositorio (0,1 GB) es incompatible con un checkpoint completo de 3B parametros, por lo que es posible que los pesos esten incompletos, sean adaptadores o no puedan cargarse sin pasos adicionales.
 
@@ -75,7 +75,7 @@ La informacion proporcionada no permite establecer una comparativa fiable: no ha
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AlinaGonch/granite41-3b-squad-ratio-0.00-seed-42 | no disponible (nombre sugiere ~3B) | no disponible | no publicado | no disponible | publico en HuggingFace, 0 descargas |
+| AlinaGonch/granite41-3b-squad-ratio-0.00-seed-42 | no disponible (nombre sugiere ~3B) | no disponible | no publicado | no disponible | publico en Hugging Face, 0 descargas |
 | Base Granite 4.1 3B (posible origen, sin confirmar) | no disponible en esta informacion | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | Alternativas de ~3B de otros fabricantes | no disponible en esta informacion | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 
@@ -93,7 +93,7 @@ La informacion proporcionada no permite establecer una comparativa fiable: no ha
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.00-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.00-seed-42
 - Paper citado en la etiqueta del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - Resultados de la busqueda web: no se encontro ningun enlace relevante para este modelo. Los resultados devueltos correspondian a paginas generales de Microsoft (https://www.microsoft.com/en-us, https://account.microsoft.com/account, https://myaccount.microsoft.com/, https://www.microsoft.com/en-us/microsoft-365, https://en.wikipedia.org/wiki/Microsoft) y no guardan relacion con el repositorio.

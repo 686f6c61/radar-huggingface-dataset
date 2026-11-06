@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario DSAC12DSA21E en HuggingFace bajo licencia MIT. Por los metadatos disponibles (tags `transformers`, `pytorch`, `bert`, `feature-extraction` y pipeline `feature-extraction`), el repositorio esta etiquetado como un modelo basado en BERT orientado a extraccion de caracteristicas, si bien la model card adjunta describe capacidades de razonamiento, codigo y function calling que no concuerdan con esas etiquetas ni con el tamano declarado del repositorio (0,0 GB).
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario DSAC12DSA21E en Hugging Face bajo licencia MIT. Por los metadatos disponibles (tags `transformers`, `pytorch`, `bert`, `feature-extraction` y pipeline `feature-extraction`), el repositorio esta etiquetado como un modelo basado en BERT orientado a extraccion de caracteristicas, si bien la model card adjunta describe capacidades de razonamiento, codigo y function calling que no concuerdan con esas etiquetas ni con el tamano declarado del repositorio (0,0 GB).
 
 El repositorio presenta 0 descargas y 0 likes, se creo y actualizo el 16 de septiembre de 2026, y no contiene pesos ni archivos de configuracion visibles (tamano de repositorio 0,0 GB). La model card incluida parece una plantilla de ejemplo: menciona un supuesto salto de precision en AIME 2025 del 70 % al 87,5 %, un incremento de tokens por pregunta de 12K a 23K, y una tabla de benchmarks con columnas genericas ("Model1", "Model2", "Model1-v2") sin identificar que modelos son.
 
@@ -88,7 +88,7 @@ Notas practicas aplicables a cualquier modelo de este tipo, a titulo orientativo
 
 - Si finalmente se publicaran pesos en formato GGUF, llama.cpp u Ollama serian opciones viables para CPU y GPU de consumo.
 - Si se publicaran pesos en safetensors, vLLM o TGI serian las opciones habituales para servido en GPU.
-- El repositorio declara el tag `endpoints_compatible`, lo que indica compatibilidad con HuggingFace Inference Endpoints, pero sin pesos cargados el endpoint no tendria nada que servir.
+- El repositorio declara el tag `endpoints_compatible`, lo que indica compatibilidad con Hugging Face Inference Endpoints, pero sin pesos cargados el endpoint no tendria nada que servir.
 
 ## Comparativa con modelos similares
 
@@ -107,6 +107,6 @@ No disponible. Los metadatos son contradictorios (etiqueta `bert` y pipeline de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSAC12DSA21E/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DSAC12DSA21E/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo y se han descartado por no ser fuentes aplicables.

@@ -27,7 +27,7 @@ Dado que el repositorio es un backup bruto de checkpoints de Megatron, no incluy
 
 ## Capacidades
 
-No se puede determinar las capacidades del modelo a partir de este repositorio, ya que no contiene un modelo en formato HuggingFace ni documentación de uso. Los checkpoints son intermedios de un entrenamiento en curso y no están destinados a ser cargados directamente para inferencia. Por tanto:
+No se puede determinar las capacidades del modelo a partir de este repositorio, ya que no contiene un modelo en formato Hugging Face ni documentación de uso. Los checkpoints son intermedios de un entrenamiento en curso y no están destinados a ser cargados directamente para inferencia. Por tanto:
 
 - No se dispone de información sobre generación de texto, razonamiento, código, matemáticas o visión.
 - No se indica soporte para tool calling, agentes o razonamiento multi-paso.
@@ -41,7 +41,7 @@ Este repositorio no está pensado para casos de uso finales, sino para fines ope
 - Recuperación ante desastres: los checkpoints permiten reanudar el entrenamiento desde una iteración concreta si el clúster principal falla.
 - Reanudación de entrenamiento: los checkpoints incluyen el estado del optimizador, lo que facilita continuar el entrenamiento sin pérdida de progreso.
 - Auditoría y trazabilidad: al mantener un historial de iteraciones por etapa, se puede analizar la evolución del modelo durante el entrenamiento.
-- Conversión a formato HuggingFace: el autor menciona que exportaciones seleccionadas se publican por separado, por lo que este repositorio sirve como fuente para generar versiones utilizables.
+- Conversión a formato Hugging Face: el autor menciona que exportaciones seleccionadas se publican por separado, por lo que este repositorio sirve como fuente para generar versiones utilizables.
 - Investigación sobre dinámicas de entrenamiento: los checkpoints intermedios permiten estudiar cómo cambian las representaciones internas a lo largo del tiempo.
 - Comparación de etapas: al tener checkpoints de pretrain, midtrain y sft, se puede evaluar el impacto de cada fase en el comportamiento final.
 
@@ -59,7 +59,7 @@ No disponible. No se dispone de información sobre modelos comparables, ya que e
 
 ## Limitaciones y advertencias
 
-- No es un modelo en formato HuggingFace: los checkpoints son de Megatron distribuido y no se pueden cargar directamente con bibliotecas estándar como `transformers`.
+- No es un modelo en formato Hugging Face: los checkpoints son de Megatron distribuido y no se pueden cargar directamente con bibliotecas estándar como `transformers`.
 - No es apto para uso en producción: está pensado para recuperación y reanudación de entrenamiento, no para inferencia.
 - Licencia no especificada: no se indica bajo qué términos se distribuye, lo que impide su uso comercial o derivado sin autorización explícita.
 - Tamaño creciente: el repositorio crecerá hasta 5-6 TB, lo que puede suponer problemas de almacenamiento y ancho de banda para quien lo clone.
@@ -68,7 +68,7 @@ No disponible. No se dispone de información sobre modelos comparables, ya que e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/camgeodesic/control-pretrain-30b-baseline-ckpts
-- Documentación de descarga de modelos de HuggingFace (referencia general): https://huggingface.co/docs/hub/models-downloading
+- Repositorio Hugging Face: https://huggingface.co/camgeodesic/control-pretrain-30b-baseline-ckpts
+- Documentación de descarga de modelos de Hugging Face (referencia general): https://huggingface.co/docs/hub/models-downloading
 
 No se han encontrado papers, blogs o demos asociados a este repositorio.

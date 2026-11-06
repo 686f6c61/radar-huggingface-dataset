@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables con p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-NVFP4A16-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-NVFP4A16-pr3118-validation
 - Modelo base (fixture de origen): https://huggingface.co/soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture/tree/0b017a9420e734a8443d46a9ec1a5128e4255ae7
 - Implementacion en llm-compressor, PR 3118, commit 87347881: https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces pertinentes son los presentes en la model card y en la propia ficha de HuggingFace.
+- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces pertinentes son los presentes en la model card y en la propia ficha de Hugging Face.

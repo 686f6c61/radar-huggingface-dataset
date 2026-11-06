@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`witcheer/microduck-walk-recover` es una política de control para el robot cuadrúpedo microduck de Pollen Robotics, entrenada mediante aprendizaje por refuerzo y exportada a ONNX. No es un modelo de lenguaje ni un transformer generativo: se trata de un controlador reactivo que recibe una observación de 61 dimensiones y emite 14 acciones a 50 Hz, pensado para ocupar el slot `walk` del demonio `robotctl` del robot. El autor es el usuario de HuggingFace `witcheer`, y el repositorio acumula 0 descargas y 0 likes, por lo que no tiene validación comunitaria.
+`witcheer/microduck-walk-recover` es una política de control para el robot cuadrúpedo microduck de Pollen Robotics, entrenada mediante aprendizaje por refuerzo y exportada a ONNX. No es un modelo de lenguaje ni un transformer generativo: se trata de un controlador reactivo que recibe una observación de 61 dimensiones y emite 14 acciones a 50 Hz, pensado para ocupar el slot `walk` del demonio `robotctl` del robot. El autor es el usuario de Hugging Face `witcheer`, y el repositorio acumula 0 descargas y 0 likes, por lo que no tiene validación comunitaria.
 
 El problema que aborda es doble: mantener una marcha estable y recuperarse de perturbaciones. Según la model card, la política camina y se mantiene 20 segundos partiendo de pie, y además es capaz de corregir una inclinación hacia delante. Sin embargo, no consigue levantarse cuando parte tumbada boca arriba: falló en 3 de 3 intentos. El entrenamiento se realizó íntegramente en simulación, dentro del entorno Mjlab-VelStand-Flat-MicroDuck, y no se ha probado todavía en hardware real.
 
@@ -78,7 +78,7 @@ No disponible. La búsqueda web asociada a este modelo no devolvió resultados r
 
 | Modelo | Parametros | Contexto / observacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-walk-recover | no disponible | 61-D obs., 14 acciones, 50 Hz | Marcha 20 s y recuperación frontal; falla al levantarse de espaldas | no disponible | HuggingFace (0 descargas, 0 likes) |
+| microduck-walk-recover | no disponible | 61-D obs., 14 acciones, 50 Hz | Marcha 20 s y recuperación frontal; falla al levantarse de espaldas | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. La búsqueda web asociada a este modelo no devolvió resultados r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/witcheer/microduck-walk-recover
+- Modelo en Hugging Face: https://huggingface.co/witcheer/microduck-walk-recover
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento citado en la model card: `pollen-robotics/microduck_rl`, rama `develop`, commit `53b8971b6` (no se proporciona URL directa en la información disponible)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` del repositorio del demonio de microduck (no se proporciona URL directa en la información disponible)

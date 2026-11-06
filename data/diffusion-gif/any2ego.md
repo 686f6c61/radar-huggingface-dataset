@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Any2Ego es un paquete de pesos distribuido por el usuario diffusion-gif en HuggingFace bajo el identificador `diffusion-gif/any2ego`. No se trata de un modelo unico entrenado de cero, sino de un *bundle* de 46,1 GB que reune, por un lado, los pesos de varios modelos base de terceros (Wan2.1-VACE-1.3B con su transformer DiT, su text encoder umT5-XXL y su VAE; Qwen3-VL-8B-Instruct; y CLIP-ViT-H-14-laion2B-s32B-b79K) y, por otro, doce artefactos de entrenamiento propios (LoRAs y checkpoints) orientados a la tarea de conversion exo-to-ego en generacion de video.
+Any2Ego es un paquete de pesos distribuido por el usuario diffusion-gif en Hugging Face bajo el identificador `diffusion-gif/any2ego`. No se trata de un modelo unico entrenado de cero, sino de un *bundle* de 46,1 GB que reune, por un lado, los pesos de varios modelos base de terceros (Wan2.1-VACE-1.3B con su transformer DiT, su text encoder umT5-XXL y su VAE; Qwen3-VL-8B-Instruct; y CLIP-ViT-H-14-laion2B-s32B-b79K) y, por otro, doce artefactos de entrenamiento propios (LoRAs y checkpoints) orientados a la tarea de conversion exo-to-ego en generacion de video.
 
 El problema que aborda es la transformacion de video en tercera persona (exo) a video en primera persona (ego), un area de investigacion en vision por computador y generacion de video. El paquete incluye ramas de generacion condicionadas por captions (HOI, Global, Spatial), un predictor de mascaras (PhiSeg), adaptadores LoRA sobre Qwen3-VL-8B entrenados con SFT y GRPO, y pesos auxiliares de comparacion VLM, DPO y narracion nativa sobre el DiT.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diffusion-gif/any2ego
+- Repositorio Hugging Face: https://huggingface.co/diffusion-gif/any2ego
 - Codigo fuente (repositorio privado, requiere acceso): https://github.com/coisini-gif/exo-ego-video-converter
 - Indice publico de datos de entrenamiento: https://huggingface.co/datasets/diffusion-gif/training-data-index
 - Modelo base Wan2.1-VACE-1.3B: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matthewharrisstone/albef-checkpoint-2023` es un repositorio de HuggingFace publicado por el usuario matthewharrisstone que contiene una implementación experimental de una arquitectura denominada "Albef" orientada a tareas de generación. No se trata de un modelo entrenado, sino de un punto de partida: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no debe presentarse como un checkpoint con rendimiento validado en benchmarks. El repositorio no declara ninguna puntuación de benchmark.
+`matthewharrisstone/albef-checkpoint-2023` es un repositorio de Hugging Face publicado por el usuario matthewharrisstone que contiene una implementación experimental de una arquitectura denominada "Albef" orientada a tareas de generación. No se trata de un modelo entrenado, sino de un punto de partida: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no debe presentarse como un checkpoint con rendimiento validado en benchmarks. El repositorio no declara ninguna puntuación de benchmark.
 
 El interés del repositorio es, por tanto, de tipo arquitectónico y de ingeniería, no de rendimiento. La configuración declarada describe una escala "xlarge", atención de tipo grouped query, fusión bilinear, activación swish y normalización RMSNorm, con una receta de experimento por defecto basada en SGD con scheduler coseno. El tamaño real declarado del checkpoint en safetensors es de 24.832 parámetros, un orden de magnitud propio de una prueba de integración más que de un modelo utilizable.
 
@@ -72,7 +72,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| albef-checkpoint-2023 | 24.832 | no disponible | sin benchmark declarado | MIT | HuggingFace, 0 descargas |
+| albef-checkpoint-2023 | 24.832 | no disponible | sin benchmark declarado | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,5 +88,5 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matthewharrisstone/albef-checkpoint-2023
+- Hugging Face: https://huggingface.co/matthewharrisstone/albef-checkpoint-2023
 - Paper, blog, repositorio de código o demo adicionales: no disponible en la informacion proporcionada.

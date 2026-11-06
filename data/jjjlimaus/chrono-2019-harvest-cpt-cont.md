@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/chrono-2019-harvest-cpt-cont` es un modelo de generación de texto con 2.018.511.234 parámetros (aproximadamente 2 mil millones), publicado en HuggingFace por el usuario `jjjlimaus`. Su nombre sugiere una continuación de entrenamiento (CPT, *continued pre-training*) sobre un corpus denominado "harvest" de 2019, aunque no se dispone de documentación oficial que detalle el proceso. El modelo está pensado para tareas de generación de lenguaje, con una licencia Apache 2.0 que permite uso comercial y modificación.
+El modelo `jjjlimaus/chrono-2019-harvest-cpt-cont` es un modelo de generación de texto con 2.018.511.234 parámetros (aproximadamente 2 mil millones), publicado en Hugging Face por el usuario `jjjlimaus`. Su nombre sugiere una continuación de entrenamiento (CPT, *continued pre-training*) sobre un corpus denominado "harvest" de 2019, aunque no se dispone de documentación oficial que detalle el proceso. El modelo está pensado para tareas de generación de lenguaje, con una licencia Apache 2.0 que permite uso comercial y modificación.
 
 El repositorio tiene un tamaño inusualmente grande (314.9 GB) para un modelo de 2B parámetros, lo que sugiere que puede incluir múltiples versiones cuantizadas, checkpoints intermedios o ficheros adicionales. El acceso está restringido (gated), por lo que los usuarios deben aceptar condiciones antes de descargarlo. A día de hoy no se conocen benchmarks publicados ni aplicaciones de referencia, y la información técnica disponible es muy limitada.
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 ## Limitaciones y advertencias
 
 - **Información insuficiente**: no hay documentación técnica, paper ni blog que describa el modelo, su entrenamiento o sus capacidades.
-- **Acceso restringido**: el repositorio es *gated*; es necesario aceptar condiciones en HuggingFace, lo que puede limitar su uso en proyectos con requisitos de acceso abierto.
+- **Acceso restringido**: el repositorio es *gated*; es necesario aceptar condiciones en Hugging Face, lo que puede limitar su uso en proyectos con requisitos de acceso abierto.
 - **Riesgo de alucinación**: al no haber benchmarks ni evaluaciones de sesgos, no se puede garantizar la fiabilidad de las respuestas.
 - **Idiomas desconocidos**: no se especifican los idiomas soportados; podría tener un rendimiento deficiente en castellano u otros idiomas.
 - **Tamaño del repositorio**: 314.9 GB es excesivo para un modelo de 2B parámetros; podría incluir ficheros innecesarios o múltiples versiones, lo que complica la descarga y el despliegue.
@@ -77,7 +77,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jjjlimaus/chrono-2019-harvest-cpt-cont
-- Perfil del autor en HuggingFace: https://huggingface.co/jjjlimaus
+- Repositorio Hugging Face: https://huggingface.co/jjjlimaus/chrono-2019-harvest-cpt-cont
+- Perfil del autor en Hugging Face: https://huggingface.co/jjjlimaus
 - Datasets del autor: https://huggingface.co/jjjlimaus/datasets (incluye `jjjlimaus/sn38-quality-gold-100k`)
 - No se han encontrado papers, blogs, demos ni otros recursos adicionales.

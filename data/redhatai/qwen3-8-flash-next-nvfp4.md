@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RedHatAI/Qwen3.8-Flash-Next-NVFP4 es un checkpoint cuantizado del modelo multimodal Qwen/Qwen3.8-Flash-Next, publicado por Red Hat AI (RedHatAI) el 27 de agosto de 2026 y actualizado el 5 de octubre del mismo año. Se trata de un modelo de arquitectura Qwen4ExpForConditionalGeneration con entrada de texto, imagen y vídeo, y salida de texto, cuyo pipeline declarado en HuggingFace es image-text-to-text. El repositorio ocupa 186,5 GB y el recuento real de parametros en safetensors es de 179.999.981.459 (unos 180.000 millones).
+RedHatAI/Qwen3.8-Flash-Next-NVFP4 es un checkpoint cuantizado del modelo multimodal Qwen/Qwen3.8-Flash-Next, publicado por Red Hat AI (RedHatAI) el 27 de agosto de 2026 y actualizado el 5 de octubre del mismo año. Se trata de un modelo de arquitectura Qwen4ExpForConditionalGeneration con entrada de texto, imagen y vídeo, y salida de texto, cuyo pipeline declarado en Hugging Face es image-text-to-text. El repositorio ocupa 186,5 GB y el recuento real de parametros en safetensors es de 179.999.981.459 (unos 180.000 millones).
 
 El objetivo del checkpoint es reducir el coste de memoria y de disco de los expertos de una arquitectura Mixture-of-Experts (MoE) sin degradar de forma apreciable la calidad. Para ello, solo los pesos y las activaciones de los operadores lineales de los expertos MoE se cuantizan a NVFP4 (4 bits), mientras que el resto del modelo permanece en BF16. La propia model card reporta una recuperacion media de precision del 99,1 % respecto al modelo sin cuantizar, por encima del 97,6 % de la version de Inferact y del 98,0 % de la version de NVIDIA.
 
@@ -93,16 +93,16 @@ Recuperacion media declarada por el autor sobre el modelo sin cuantizar: 99,1 % 
 
 | Modelo | Parametros | Contexto | GPQA Diamond | MMLU-Pro | SWE-bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| RedHatAI/Qwen3.8-Flash-Next-NVFP4 | ~180B | no disponible | 92,9 | 88,2 | 79,4 | no disponible | HuggingFace (634 descargas, 14 likes) |
-| Qwen/Qwen3.8-Flash-Next (sin cuantizar) | ~180B | no disponible | 90,4 | 88,5 | 80,6 | no disponible | HuggingFace (modelo base) |
-| Inferact/Qwen3.8-Flash-Next-NVFP4 | no disponible | no disponible | 91,4 | 88,0 | 79,8 | no disponible | HuggingFace |
-| nvidia/Qwen3.8-Flash-Next-NVFP4 | no disponible | no disponible | 92,4 | 88,0 | 79,8 | no disponible | HuggingFace |
+| RedHatAI/Qwen3.8-Flash-Next-NVFP4 | ~180B | no disponible | 92,9 | 88,2 | 79,4 | no disponible | Hugging Face (634 descargas, 14 likes) |
+| Qwen/Qwen3.8-Flash-Next (sin cuantizar) | ~180B | no disponible | 90,4 | 88,5 | 80,6 | no disponible | Hugging Face (modelo base) |
+| Inferact/Qwen3.8-Flash-Next-NVFP4 | no disponible | no disponible | 91,4 | 88,0 | 79,8 | no disponible | Hugging Face |
+| nvidia/Qwen3.8-Flash-Next-NVFP4 | no disponible | no disponible | 92,4 | 88,0 | 79,8 | no disponible | Hugging Face |
 
 Los cuatro modelos comparten arquitectura base; las diferencias se limitan al proceso de cuantizacion (calibracion y observadores) y a la recuperacion de precision resultante. La ventaja declarada del checkpoint de RedHatAI es una recuperacion media del 99,1 % frente al 98,0 % de NVIDIA y el 97,6 % de Inferact.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: la model card y los metadatos de HuggingFace no especifican licencia, por lo que no puede confirmarse si el uso comercial esta permitido. Hay que consultar la licencia del modelo base Qwen/Qwen3.8-Flash-Next antes de cualquier despliegue en produccion.
+- Licencia no disponible: la model card y los metadatos de Hugging Face no especifican licencia, por lo que no puede confirmarse si el uso comercial esta permitido. Hay que consultar la licencia del modelo base Qwen/Qwen3.8-Flash-Next antes de cualquier despliegue en produccion.
 - Idiomas soportados no disponibles: no hay cobertura declarada de idiomas, de modo que el comportamiento multilingue no puede darse por garantizado.
 - Longitud de contexto no disponible: no se puede planificar el uso con documentos largos o conversaciones extensas sin consultar la documentacion del modelo base.
 - Riesgo de alucinacion: es un modelo generativo de ~180B sin mecanismos de verificacion factual incluidos; en dominios especializados (medicina, derecho, finanzas) requiere supervision humana.
@@ -115,7 +115,7 @@ Los cuatro modelos comparten arquitectura base; las diferencias se limitan al pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/Qwen3.8-Flash-Next-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/Qwen3.8-Flash-Next-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint NVFP4 alternativo de Inferact: Inferact/Qwen3.8-Flash-Next-NVFP4 (referenciado en la model card, sin URL directa en la informacion disponible)
 - Checkpoint NVFP4 alternativo de NVIDIA: nvidia/Qwen3.8-Flash-Next-NVFP4 (referenciado en la model card, sin URL directa en la informacion disponible)

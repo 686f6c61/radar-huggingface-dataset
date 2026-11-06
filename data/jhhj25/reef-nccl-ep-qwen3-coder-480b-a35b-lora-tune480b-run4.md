@@ -74,15 +74,15 @@ La recompensa sube de forma monótona hasta el paso 5 (+17% respecto al paso 0) 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jhhj25/reef-nccl-ep-qwen3-coder-480b-a35b-lora-tune480b-run4 | 480B (base) + LoRA r32 | no disponible | Apache-2.0 | HuggingFace |
-| jhhj25/reef-nccl-ep-qwen3-coder-480b-a35b-lora-tune480b-run1 | 480B (base) + LoRA r32 | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3-Coder-480B-A35B-Instruct | 480B (base) | no disponible | Apache-2.0 | HuggingFace, Fireworks AI |
+| jhhj25/reef-nccl-ep-qwen3-coder-480b-a35b-lora-tune480b-run4 | 480B (base) + LoRA r32 | no disponible | Apache-2.0 | Hugging Face |
+| jhhj25/reef-nccl-ep-qwen3-coder-480b-a35b-lora-tune480b-run1 | 480B (base) + LoRA r32 | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3-Coder-480B-A35B-Instruct | 480B (base) | no disponible | Apache-2.0 | Hugging Face, Fireworks AI |
 
 La comparativa se limita a modelos de la misma familia o experimentos del mismo autor. No se dispone de datos de rendimiento comparables entre ellos.
 
 ## Limitaciones y advertencias
 
-- Es un adaptador LoRA experimental, no un modelo listo para producción. Tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un experimento de investigación.
+- Es un adaptador LoRA experimental, no un modelo listo para producción. Tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un experimento de investigación.
 - El entrenamiento se detuvo en el paso 8 y los pasos 6 y 7 muestran una caída en la recompensa media, lo que sugiere inestabilidad en la fase final.
 - No se han publicado benchmarks estándar ni evaluaciones de robustez, por lo que se desconoce su comportamiento en tareas generales.
 - No se especifican los idiomas soportados ni la longitud de contexto, lo que limita su uso en aplicaciones multilingües o de contexto largo.
@@ -92,7 +92,7 @@ La comparativa se limita a modelos de la misma familia o experimentos del mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-coder-480b-a35b-lora-tune480b-run4
+- Modelo en Hugging Face: https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-coder-480b-a35b-lora-tune480b-run4
 - Run 1 del mismo experimento: https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-coder-480b-a35b-lora-tune480b-run1
 - Repositorio de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
 - Modelo base en Fireworks AI: https://fireworks.ai/models/fireworks/qwen3-coder-480b-a35b-instruct

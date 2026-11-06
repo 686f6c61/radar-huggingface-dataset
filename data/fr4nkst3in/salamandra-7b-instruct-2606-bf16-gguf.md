@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fr4nkSt3in/salamandra-7b-instruct-2606-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Fr4nkSt3in/salamandra-7b-instruct-2606-BF16-GGUF
 - Modelo base: https://huggingface.co/BSC-LT/salamandra-7b-instruct
 - Cuantizacion GGUF de cstr: https://huggingface.co/cstr/salamandra-7b-instruct-GGUF
 - Ficha en llm-explorer de Salamandra 7B Instruct 2606: https://llm-explorer.com/model/BSC-LT%2Fsalamandra-7b-instruct-2606,1BPK88Hcmz2H2sMVcSny0D

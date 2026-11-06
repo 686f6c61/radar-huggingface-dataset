@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `OiyresProo/ruvex-model` es un modelo de lenguaje publicado en HuggingFace por el usuario OiyresProo. La información disponible es extremadamente limitada: la model card es una plantilla genérica generada automáticamente, sin datos sobre arquitectura, parámetros, entrenamiento, licencia o idiomas. El repositorio tiene un tamaño de 0,1 GB y utiliza la librería `transformers` con pesos en formato `safetensors`, además de la etiqueta `unsloth`, lo que sugiere que podría ser un fine-tuning realizado con la herramienta Unsloth, aunque no se confirma ningún detalle.
+El modelo `OiyresProo/ruvex-model` es un modelo de lenguaje publicado en Hugging Face por el usuario OiyresProo. La información disponible es extremadamente limitada: la model card es una plantilla genérica generada automáticamente, sin datos sobre arquitectura, parámetros, entrenamiento, licencia o idiomas. El repositorio tiene un tamaño de 0,1 GB y utiliza la librería `transformers` con pesos en formato `safetensors`, además de la etiqueta `unsloth`, lo que sugiere que podría ser un fine-tuning realizado con la herramienta Unsloth, aunque no se confirma ningún detalle.
 
 La referencia al paper `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en machine learning, no a la arquitectura del modelo. En consecuencia, no es posible determinar qué problema resuelve ni por qué sería relevante en la actualidad. Se trata de un modelo sin documentación técnica publicada, con cero descargas y cero likes, lo que indica que es un proyecto personal o experimental sin validación comunitaria.
 
@@ -53,5 +53,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento del
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/OiyresProo/ruvex-model)
-- [Perfil del autor en HuggingFace](https://huggingface.co/OiyresProo)
+- [Modelo en Hugging Face](https://huggingface.co/OiyresProo/ruvex-model)
+- [Perfil del autor en Hugging Face](https://huggingface.co/OiyresProo)

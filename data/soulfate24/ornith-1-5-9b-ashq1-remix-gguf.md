@@ -90,7 +90,7 @@ El modelo base se posiciona como competidor directo de Llama 3.1 8B y Qwen 2.5 7
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/Soulfate24/Ornith-1.5-9B-ASHQ1-Remix-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/Soulfate24/Ornith-1.5-9B-ASHQ1-Remix-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Colección Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15
 - Version MLX del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX

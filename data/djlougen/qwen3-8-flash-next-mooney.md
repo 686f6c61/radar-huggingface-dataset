@@ -116,7 +116,7 @@ No se dispone de datos para comparar contra alternativas MoE de otro fabricante 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/DJLougen/Qwen3.8-Flash-Next-Mooney
+- Repositorio del modelo en Hugging Face: https://huggingface.co/DJLougen/Qwen3.8-Flash-Next-Mooney
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Herramientas de despliegue en DGX Spark: https://github.com/DJLougen/mooney-spark

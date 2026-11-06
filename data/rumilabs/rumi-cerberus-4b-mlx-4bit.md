@@ -104,7 +104,7 @@ La comparativa se limita a las referencias citadas en la model card; no se dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RumiLabs/rumi-cerberus-4b-mlx-4bit
+- Hugging Face: https://huggingface.co/RumiLabs/rumi-cerberus-4b-mlx-4bit
 - Repo de staging con checkpoints intermedios: https://huggingface.co/RumiLabs/MOSS-Audio-4B-Thinking-2507-MLX-4bit-v2
 - Pesos BF16: https://huggingface.co/RumiLabs/rumi-cerberus-4b-bf16
 - Modelo base de audio: OpenMOSS-Team/MOSS-Audio-4B-Thinking

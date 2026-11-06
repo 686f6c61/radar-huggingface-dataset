@@ -85,7 +85,7 @@ La comparación relevante es con Pythia-31M, del que hereda arquitectura y presu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/294-288-pretrain-interaction/31M-fixed
+- Modelo en Hugging Face: https://huggingface.co/294-288-pretrain-interaction/31M-fixed
 - Repositorio de código: https://github.com/294-288-pretrain-interaction/pretrain_interaction (rama `yaowen-70m-sweep`)
 - Scripts y artefactos del barrido: `sweep70m.py`, `artifacts/sweep70m/`, `yaowen_exp_hub/sweep_1012/`
 - Dataset de preentrenamiento: https://huggingface.co/datasets/294-288-pretrain-interaction/Dolma3-16B

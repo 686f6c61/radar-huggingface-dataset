@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ronanlee777/sn92-gen-mf` es un modelo de decisión (decision-model) publicado en HuggingFace por el usuario ronanlee777. No se trata de un modelo entrenado desde cero, sino de una fusión en el espacio de pesos (weight-space merge) de tres entradas públicas del ecosistema REAX SN92, todas ellas derivadas del mismo modelo base: `baselabs/mammoth-1` (revisión `61cec44c281c693992e3d6ebeb44dd3402dfa186`). El autor declara explícitamente que no ha realizado entrenamiento propio: todo el conocimiento aprendido proviene de los modelos padre.
+`ronanlee777/sn92-gen-mf` es un modelo de decisión (decision-model) publicado en Hugging Face por el usuario ronanlee777. No se trata de un modelo entrenado desde cero, sino de una fusión en el espacio de pesos (weight-space merge) de tres entradas públicas del ecosistema REAX SN92, todas ellas derivadas del mismo modelo base: `baselabs/mammoth-1` (revisión `61cec44c281c693992e3d6ebeb44dd3402dfa186`). El autor declara explícitamente que no ha realizado entrenamiento propio: todo el conocimiento aprendido proviene de los modelos padre.
 
 La arquitectura subyacente es la del modelo base, identificada en la model card como paquete de lectura conjunta `Qwen3_5Model` (joint-readout package), con un fichero adicional `readout.safetensors` que actúa como mecanismo de lectura de respuestas. El modelo cuenta con 26.085.330.160 parámetros totales (aproximadamente 26,1 mil millones) y un repositorio de 52,2 GB en formato safetensors y precisión bfloat16.
 
@@ -79,12 +79,12 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 - La licencia MIT se aplica al artefacto, pero la model card indica que se conservan las líneas de copyright y avisos de cada padre; es necesario revisar las licencias de los modelos originales antes de un uso comercial.
 - El modelo no está afiliado, respaldado ni patrocinado por Base Labs / Baseten, el equipo de Qwen, Perplexity AI ni los autores de los padres, según declara el autor.
 - No se publican variantes cuantizadas, ficheros GGUF ni instrucciones de despliegue, lo que añade trabajo de ingeniería para llevarlo a producción.
-- El pipeline no está definido en HuggingFace y las descargas son muy bajas (30 en el momento de la consulta), por lo que no existe validación comunitaria significativa.
+- El pipeline no está definido en Hugging Face y las descargas son muy bajas (30 en el momento de la consulta), por lo que no existe validación comunitaria significativa.
 - La receta de merge depende de revisiones concretas de los padres; usar otras revisiones puede producir resultados distintos no verificados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ronanlee777/sn92-gen-mf
+- Hugging Face: https://huggingface.co/ronanlee777/sn92-gen-mf
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Padre 1: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre 2: https://huggingface.co/xflud/sn92-decider-1

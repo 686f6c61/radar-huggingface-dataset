@@ -28,7 +28,7 @@ El modelo se ha entrenado sobre el dataset TMB-S3 y se libera con cuatro carpeta
 | Salida | mascara binaria de clase quemada |
 | Dataset de entrenamiento | links-ads/tmb-s3 |
 | Biblioteca | pytorch |
-| Tamano del repositorio | 0.0 GB segun la API de HuggingFace |
+| Tamano del repositorio | 0.0 GB segun la API de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -99,10 +99,10 @@ La información disponible solo permite comparar internamente las cuatro variant
 
 | Variante | Parametros | Contexto temporal | Bandas | Test F1 | Test IoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| SegFormer 2D, fusion temprana all | no disponible | bitemporal (pre + ultima post) | 21 | 66,01 | 57,43 | MIT | publicada en HuggingFace |
-| SegFormer 2D, fusion temprana subset | no disponible | bitemporal (pre + ultima post) | 5 | 65,83 | 56,83 | MIT | publicada en HuggingFace |
-| ConvLSTM + SegFormer all | no disponible | secuencia completa pre/post | 21 | 68,41 | 59,29 | MIT | publicada en HuggingFace |
-| ConvLSTM + SegFormer subset | no disponible | secuencia completa pre/post | 5 | 69,45 | 59,81 | MIT | publicada en HuggingFace |
+| SegFormer 2D, fusion temprana all | no disponible | bitemporal (pre + ultima post) | 21 | 66,01 | 57,43 | MIT | publicada en Hugging Face |
+| SegFormer 2D, fusion temprana subset | no disponible | bitemporal (pre + ultima post) | 5 | 65,83 | 56,83 | MIT | publicada en Hugging Face |
+| ConvLSTM + SegFormer all | no disponible | secuencia completa pre/post | 21 | 68,41 | 59,29 | MIT | publicada en Hugging Face |
+| ConvLSTM + SegFormer subset | no disponible | secuencia completa pre/post | 5 | 69,45 | 59,81 | MIT | publicada en Hugging Face |
 
 Comparativa con alternativas externas de la misma categoría: no disponible.
 
@@ -124,7 +124,7 @@ Comparativa con alternativas externas de la misma categoría: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/links-ads/tmb-s3
+- Modelo en Hugging Face: https://huggingface.co/links-ads/tmb-s3
 - Dataset TMB-S3: https://huggingface.co/datasets/links-ads/tmb-s3
 - Repositorio de código (necesario para ejecutar los modelos): https://github.com/links-ads/tmb-s3
 - Artículo: "Temporal Modelling for Burn Scars on Sentinel-3", Barco L., Arnaudo E., Bragagnolo A., Rossi C., Garza P., Application of Information and Communication Technologies (AICT) Conference 2026 (sin enlace disponible en la información proporcionada)

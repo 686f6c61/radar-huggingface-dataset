@@ -78,9 +78,9 @@ El test retenido consta de 320 parrafos (197 `strategy`, 49 `metrics`, 48 `risk`
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sidman007/wsp-climatebert-tcfd-r1-p50` | 68,1 M | 512 | Clasificacion TCFD (4 clases) | apache-2.0 (con caveat de datos) | HuggingFace, 0 descargas |
-| `climatebert/distilroberta-base-climate-tcfd` | 82,3 M | 512 | Clasificacion TCFD (4 clases) | no disponible en la informacion proporcionada | HuggingFace (referencia) |
-| `climatebert/distilroberta-base-climate-detector` | no disponible en la informacion proporcionada | 512 | Deteccion de texto climatico | no disponible en la informacion proporcionada | HuggingFace (categoria ClimateBERT) |
+| `sidman007/wsp-climatebert-tcfd-r1-p50` | 68,1 M | 512 | Clasificacion TCFD (4 clases) | apache-2.0 (con caveat de datos) | Hugging Face, 0 descargas |
+| `climatebert/distilroberta-base-climate-tcfd` | 82,3 M | 512 | Clasificacion TCFD (4 clases) | no disponible en la informacion proporcionada | Hugging Face (referencia) |
+| `climatebert/distilroberta-base-climate-detector` | no disponible en la informacion proporcionada | 512 | Deteccion de texto climatico | no disponible en la informacion proporcionada | Hugging Face (categoria ClimateBERT) |
 
 La comparacion directa solo es posible con el modelo de partida, del que este checkpoint es una version podada: mismo esquema de etiquetas, misma tarea y misma ventana, con un 17,2% menos de parametros y latencias entre un 31% y un 35% menores en CPU. No se dispone de datos de otros clasificadores TCFD comparables en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ La comparacion directa solo es posible con el modelo de partida, del que este ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-climatebert-tcfd-r1-p50
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-climatebert-tcfd-r1-p50
 - Modelo base: https://huggingface.co/climatebert/distilroberta-base-climate-tcfd
 - Dataset de entrenamiento y practica: https://huggingface.co/datasets/climatebert/tcfd_recommendations
 - Codigo, logs y protocolo: https://github.com/siddharth-ghatti/weight-space-programming-poc

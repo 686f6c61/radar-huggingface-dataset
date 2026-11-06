@@ -6,7 +6,7 @@ FuXi-DA es un marco de asimilacion de datos atmosfericos basado en aprendizaje p
 
 Tecnicamente, FuXi-DA emplea una U-Net multirrama con codificadores separados para fondo, observacion y condicion, y una etapa de fusion multiescala. Trabaja sobre campos de fondo de 70 variables y observaciones multitemporales del radiametro AGRI a bordo del satelite geoestacionario Fengyun-4B (8 tiempos, 15 canales de observacion, relacion temporal de 6 horas), con correccion de fondo global a 0.25 grados de resolucion. El entrenamiento usa ERA5, campos de fondo de FuXi y observaciones AGRI reales en el articulo, y supervisa la asimilacion con los errores de prediccion de un FuXi congelado.
 
-Su relevancia actual radica en que propone una alternativa generalizada a la asimilacion variacional clasica (4D-Var, EnVar) para observaciones satelitales geoestacionarias, un terreno donde los metodos tradicionales tienen coste computacional elevado. Conviene advertir desde el principio que el repositorio de HuggingFace no incluye pesos oficiales: el articulo no publica checkpoints cargables y el codigo distribuido esta orientado a validacion de ingenieria con un conjunto de datos sintetico de muestra reducida.
+Su relevancia actual radica en que propone una alternativa generalizada a la asimilacion variacional clasica (4D-Var, EnVar) para observaciones satelitales geoestacionarias, un terreno donde los metodos tradicionales tienen coste computacional elevado. Conviene advertir desde el principio que el repositorio de Hugging Face no incluye pesos oficiales: el articulo no publica checkpoints cargables y el codigo distribuido esta orientado a validacion de ingenieria con un conjunto de datos sintetico de muestra reducida.
 
 ## Especificaciones tecnicas
 
@@ -102,7 +102,7 @@ No se dispone de cifras de rendimiento, parametros ni contexto de modelos altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/FuXi-DA
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/FuXi-DA
 - Articulo: FuXi-DA: a generalized deep learning data assimilation framework for assimilating satellite observations: https://doi.org/10.1038/s41612-025-01039-3
 - Repositorio principal en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio de skills en GitHub: https://github.com/onescience-ai/oneskills

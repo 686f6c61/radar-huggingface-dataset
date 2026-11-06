@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen2-tiny-v2d es un modelo publicado en HuggingFace por el usuario trenchmaxh bajo el identificador `trenchmaxh/qwen2-tiny-v2d`. Segun la unica frase disponible en su model card, se trata de un modelo "minimal" construido sobre la arquitectura Qwen2 y orientado a experimentos de inferencia en el borde (edge inference). No se especifica numero de parametros, longitud de contexto, volumen de datos de entrenamiento ni proceso de alineacion.
+qwen2-tiny-v2d es un modelo publicado en Hugging Face por el usuario trenchmaxh bajo el identificador `trenchmaxh/qwen2-tiny-v2d`. Segun la unica frase disponible en su model card, se trata de un modelo "minimal" construido sobre la arquitectura Qwen2 y orientado a experimentos de inferencia en el borde (edge inference). No se especifica numero de parametros, longitud de contexto, volumen de datos de entrenamiento ni proceso de alineacion.
 
 El repositorio presenta un tamano de 0.0 GB, lo que sugiere que no contiene pesos completos en el momento de la consulta, o que estos son de un tamano inferior a la unidad de redondeo mostrada. El modelo cuenta con 15 descargas y 0 likes en la fecha de creacion registrada (2026-09-29), y su model card se limita al titulo y a una linea descriptiva.
 
@@ -38,7 +38,7 @@ No hay datos disponibles sobre el corpus de entrenamiento: se desconoce el numer
 - Razonamiento, codigo y matematicas: no disponible; no se han publicado resultados que permitan afirmar o descartar estas capacidades.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas no esta declarado en HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas no esta declarado en Hugging Face.
 - Capacidades especiales (modo thinking, vision, audio): no disponible; los tags no incluyen ninguna modalidad adicional a texto.
 - Inferencia en el borde: es el unico proposito declarado explicitamente por el autor ("edge inference experiments").
 
@@ -88,5 +88,5 @@ No disponible. No se dispone de parametros, contexto ni resultados de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trenchmaxh/qwen2-tiny-v2d
+- Modelo en Hugging Face: https://huggingface.co/trenchmaxh/qwen2-tiny-v2d
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de codigo o demos) en los resultados de busqueda consultados.

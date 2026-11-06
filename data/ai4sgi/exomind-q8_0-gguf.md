@@ -15,7 +15,7 @@ El repositorio contiene únicamente el archivo GGUF Q8_0 (35,20 GiB) y el proyec
 | Parametros activos | 3B (A3B) |
 | Longitud de contexto | 32 768 tokens (configuracion recomendada en la documentacion de llama.cpp) |
 | Tipos de cuantizacion | Q8_0 (este repositorio); tambien disponibles Q4_K_M y F16 en otros repos |
-| Idiomas soportados | Ingles y chino (segun metadatos de HuggingFace) |
+| Idiomas soportados | Ingles y chino (segun metadatos de Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (Q8_0) + proyector multimodal F16 |
 
@@ -32,7 +32,7 @@ No se han proporcionado detalles especificos sobre el numero de tokens de entren
 - Tool use / function calling: soporta la invocacion de herramientas externas y APIs para automatizar flujos de trabajo.
 - Capacidades agénticas: puede ejecutar procesos autonomos de descubrimiento, verificacion y actualizacion de razonamiento.
 - Conversacional: mantiene dialogos multi-turno con contexto largo (32K tokens).
-- Multilingue: soporta ingles y chino, segun los metadatos de HuggingFace.
+- Multilingue: soporta ingles y chino, segun los metadatos de Hugging Face.
 - Generacion de codigo: puede escribir y depurar codigo para simulaciones y analisis de datos cientificos.
 
 ## Casos de uso
@@ -70,8 +70,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa con modelos
 
 ## Enlaces
 
-- [HuggingFace - ExoMind-Q8_0-GGUF](https://huggingface.co/AI4SGI/ExoMind-Q8_0-GGUF)
-- [HuggingFace - ExoMind (modelo base)](https://huggingface.co/AI4SGI/ExoMind)
+- [Hugging Face - ExoMind-Q8_0-GGUF](https://huggingface.co/AI4SGI/ExoMind-Q8_0-GGUF)
+- [Hugging Face - ExoMind (modelo base)](https://huggingface.co/AI4SGI/ExoMind)
 - [GitHub - AI4SGI/ExoMind](https://github.com/AI4SGI/ExoMind)
 - [Pagina del proyecto](https://ai4sgi.github.io/ExoMind/)
 - [ModelScope - ExoMind-Q8_0-GGUF](https://modelscope.cn/models/AI4SGI/ExoMind-Q8_0-GGUF)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aiden es un adaptador LoRA de ajuste fino publicado por el usuario Theaiknowitall sobre el modelo base `moonshotai/Kimi-K3`. Se distribuye a través de HuggingFace con el pipeline de `text-generation` y la librería `transformers`, y está etiquetado por el autor como un modelo de carácter conversacional y de uso personal. La model card es la plantilla estándar de HuggingFace sin cumplimentar, por lo que no aporta información sobre el proceso de entrenamiento, los datos utilizados ni los objetivos concretos del ajuste.
+Aiden es un adaptador LoRA de ajuste fino publicado por el usuario Theaiknowitall sobre el modelo base `moonshotai/Kimi-K3`. Se distribuye a través de Hugging Face con el pipeline de `text-generation` y la librería `transformers`, y está etiquetado por el autor como un modelo de carácter conversacional y de uso personal. La model card es la plantilla estándar de Hugging Face sin cumplimentar, por lo que no aporta información sobre el proceso de entrenamiento, los datos utilizados ni los objetivos concretos del ajuste.
 
 La relevancia de esta ficha es limitada: se trata de un artefacto derivado (no un modelo fundacional) con cero descargas y cero likes en el momento de la consulta, publicado en noviembre de 2026. Al ser un adaptador LoRA, sus pesos no constituyen un modelo autónomo: requieren cargar el modelo base Kimi-K3 y aplicar el adaptador para poder ejecutarse. Cualquier evaluación de capacidades, contexto o rendimiento debe remitirse, por tanto, al modelo base, del que esta información no proporciona especificaciones.
 
@@ -41,7 +41,7 @@ No se han publicado datos sobre el conjunto de entrenamiento, el número de toke
 - Prototipado de asistentes conversacionales en inglés: al estar etiquetado como `conversational`, puede emplearse en pruebas de diálogo multi-turno, siempre que se cargue junto al modelo base Kimi-K3 y se validen sus respuestas.
 - Investigación sobre ajuste personal: el tag `personal` permite estudiar cómo un ajuste de bajo rango modifica el estilo del modelo base en un dominio concreto, comparando salidas con y sin adaptador.
 - Reproducción de pipelines de fine-tuning: útil como referencia en tutoriales o cursos sobre LoRA, dado que el repositorio es público y la licencia Apache 2.0 facilita su reutilización.
-- Evaluación de riesgos de artefactos no documentados: sirve como caso de estudio sobre la importancia de documentar datasets y procedencia en modelos publicados en HuggingFace.
+- Evaluación de riesgos de artefactos no documentados: sirve como caso de estudio sobre la importancia de documentar datasets y procedencia en modelos publicados en Hugging Face.
 - Integración en entornos de investigación académica: para experimentos controlados donde se necesite un adaptador ligero sobre un modelo base grande sin reentrenar todos los pesos.
 
 ## Benchmarks y rendimiento
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Theaiknowitall/Aiden | no disponible (LoRA sobre Kimi-K3) | no disponible | apache-2.0 | HuggingFace, 0 descargas | Adaptador personal sin documentación |
-| moonshotai/Kimi-K3 (modelo base) | no disponible en la información | no disponible | no disponible | HuggingFace | Modelo fundacional sobre el que se aplica el adaptador |
-| Otros adaptadores LoRA públicos | variable | heredado del base | variable | HuggingFace | Categoría genérica; no se dispone de comparaciones concretas |
+| Theaiknowitall/Aiden | no disponible (LoRA sobre Kimi-K3) | no disponible | apache-2.0 | Hugging Face, 0 descargas | Adaptador personal sin documentación |
+| moonshotai/Kimi-K3 (modelo base) | no disponible en la información | no disponible | no disponible | Hugging Face | Modelo fundacional sobre el que se aplica el adaptador |
+| Otros adaptadores LoRA públicos | variable | heredado del base | variable | Hugging Face | Categoría genérica; no se dispone de comparaciones concretas |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas específicas de la misma categoría.
 
@@ -78,7 +78,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Theaiknowitall/Aiden
+- Hugging Face: https://huggingface.co/Theaiknowitall/Aiden
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Plantilla de model card utilizada: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
 - Calculadora de impacto medioambiental citada en la card: https://mlco2.github.io/impact

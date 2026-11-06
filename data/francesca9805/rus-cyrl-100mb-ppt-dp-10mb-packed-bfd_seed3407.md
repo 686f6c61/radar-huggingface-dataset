@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/rus_cyrl_100mb`, orientado a generacion de texto en ruso y escritura cirilica. Lo publica el usuario de HuggingFace francesca9805 y esta entrenado con la libreria TRL de HuggingFace, segun la propia model card. El repositorio tiene 124.770.816 parametros en formato safetensors (0,3 GB) y esta etiquetado como `gpt2`, por lo que la arquitectura de partida es un transformer decoder-only de tipo GPT-2 de escala pequena (aproximadamente 124 M de parametros).
+El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/rus_cyrl_100mb`, orientado a generacion de texto en ruso y escritura cirilica. Lo publica el usuario de Hugging Face francesca9805 y esta entrenado con la libreria TRL de Hugging Face, segun la propia model card. El repositorio tiene 124.770.816 parametros en formato safetensors (0,3 GB) y esta etiquetado como `gpt2`, por lo que la arquitectura de partida es un transformer decoder-only de tipo GPT-2 de escala pequena (aproximadamente 124 M de parametros).
 
 El nombre del modelo sugiere una receta experimental muy concreta: un corpus empaquetado ("packed") de unos 10 MB ("Dp-10mb"), con una estrategia de empaquetado tipo best-fit-decreasing ("bfd") y una semilla fija ("seed3407"). Se trata, por tanto, de un artefacto de investigacion reproducible, no de un modelo destinado a produccion: acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha y no incluye resultados de evaluacion.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed3407` | 124,77 M | No disponible | No | No disponible | HuggingFace, 0 descargas |
-| `goldfish-models/rus_cyrl_100mb` (modelo base) | No disponible en la informacion (el ajuste conserva la arquitectura, compatible con ~124 M) | No disponible | No disponibles en la informacion | No disponible | HuggingFace |
+| `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed3407` | 124,77 M | No disponible | No | No disponible | Hugging Face, 0 descargas |
+| `goldfish-models/rus_cyrl_100mb` (modelo base) | No disponible en la informacion (el ajuste conserva la arquitectura, compatible con ~124 M) | No disponible | No disponibles en la informacion | No disponible | Hugging Face |
 | GPT-2 small (referencia arquitectonica externa) | 124 M | 1024 tokens en su configuracion estandar | No comparable directamente (otro idioma y otro corpus) | No verificada en la informacion proporcionada | Ampliamente disponible |
 
 No se dispone de informacion verificada sobre otros modelos de la familia Goldfish ni sobre modelos rusos de escala equivalente dentro del material proporcionado, por lo que no se puede establecer una comparacion de rendimiento. Cualquier comparacion numerica seria una invencion.
@@ -93,7 +93,7 @@ No se dispone de informacion verificada sobre otros modelos de la familia Goldfi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/48w2torr

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bouncer-1.7B es un ajuste fino (fine-tune) del modelo OpenIntelligenceNet/LFM3-1.7B-Uncensored, desarrollado por el usuario sanjeevafk y publicado en HuggingFace. Se trata de un modelo de generacion de texto de 1.728.801.600 parametros (1,73B) construido sobre la arquitectura Liquid AI LFM3 Tri-Hybrid, que combina atencion recurrente lineal, convoluciones cortas y self-attention. El modelo se distribuye principalmente como un LoRA PEFT de 61,5 MB y como un GGUF cuantizado Q4_K_M de 1,04 GB, lo que permite ejecutarlo en CPU y en portatiles convencionales.
+Bouncer-1.7B es un ajuste fino (fine-tune) del modelo OpenIntelligenceNet/LFM3-1.7B-Uncensored, desarrollado por el usuario sanjeevafk y publicado en Hugging Face. Se trata de un modelo de generacion de texto de 1.728.801.600 parametros (1,73B) construido sobre la arquitectura Liquid AI LFM3 Tri-Hybrid, que combina atencion recurrente lineal, convoluciones cortas y self-attention. El modelo se distribuye principalmente como un LoRA PEFT de 61,5 MB y como un GGUF cuantizado Q4_K_M de 1,04 GB, lo que permite ejecutarlo en CPU y en portatiles convencionales.
 
 El objetivo declarado del autor es eliminar por completo el tono corporativo, las negativas prefabricadas y el "therapy-speak" de los modelos convencionales, sustituyendolos por un personaje sardónico y directo orientado a dar consejo interpersonal sin moralizar. Para ello se aplicaron cuatro rondas de ajuste: SFT sobre 2.324 muestras de psicologia e influencia, una primera ronda de DPO centrada en eliminar negativas, 390 pasos de GRPO con penalizaciones anti-gaming y una ronda final de DPO con 55 pares orientados al control de limites personales.
 
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanjeevafk/bouncer
+- Modelo en Hugging Face: https://huggingface.co/sanjeevafk/bouncer
 - Modelo base: https://huggingface.co/OpenIntelligenceNet/LFM3-1.7B-Uncensored
 - Terminos de licencia del modelo base: https://huggingface.co/OpenIntelligenceNet/LFM3-1.7B-Uncensored

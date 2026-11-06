@@ -44,7 +44,7 @@ Respecto al entrenamiento, la nomenclatura del repositorio (`mopd-sweep-n8-learn
 - Estudios de destilacion con profesores aprendidos: la nomenclatura "learned teachers" sugiere que el checkpoint puede emplearse como referencia en experimentos de aprendizaje con profesores, siempre que se disponga del resto de artefactos del run.
 - Comparacion de arquitecturas basadas en qwen2: dado su tamano de ~1,8B parametros, puede servir como punto de partida experimental para estudiar variantes de escala.
 - Auditoria de artefactos de investigacion: el formato hf-safetensors y la preservacion del estado final facilitan la inspeccion del modelo para verificar integridad de pesos.
-- Docencia y formacion: puede usarse como ejemplo de como se archiva un checkpoint final de un experimento RL en HuggingFace, incluyendo metadatos de run.
+- Docencia y formacion: puede usarse como ejemplo de como se archiva un checkpoint final de un experimento RL en Hugging Face, incluyendo metadatos de run.
 - No se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni tareas comerciales dado que no hay licencia declarada ni evaluacion de capacidades.
 
 ## Benchmarks y rendimiento
@@ -81,11 +81,11 @@ No se dispone de resultados de benchmarks del modelo archivado que permitan comp
 - Riesgo de alucinacion no evaluado; no se han publicado pruebas de fidelidad factual.
 - Limitaciones de contexto e idioma no documentadas, lo que impide garantizar un uso multilingue o con ventanas largas.
 - Al tratarse del paso 49 de una ejecucion RL corta sobre una ruta de scratch, es probable que el modelo no este alineado para uso conversacional ni instrucciones de usuario.
-- El pipeline no esta declarado, por lo que no se puede asumir que funcione directamente como modelo de texto en la interfaz de HuggingFace.
+- El pipeline no esta declarado, por lo que no se puede asumir que funcione directamente como modelo de texto en la interfaz de Hugging Face.
 - Cero descargas y cero likes: no hay evidencia de uso comunitario ni de validacion externa.
 - El repositorio se describe como archivo de scratch; puede contener pesos no destinados a publicacion y sin garantia de mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-06-fractionalprogramming-b91c544f0c6f
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-06-fractionalprogramming-b91c544f0c6f
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repositorios o demos) asociados al modelo.

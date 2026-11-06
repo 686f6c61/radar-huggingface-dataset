@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AST-1320/Qwen-Image-To-Image | Conversión Diffusers de transformer de difusión (FP8) | no disponible | no disponible | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen-Image-Edit-2511 | Modelo base de edición de imagen | no disponible | no disponible | Apache-2.0 (según la model card) | HuggingFace |
-| Phr00t/Qwen-Image-Edit-Rapid-AIO | Modelo original del que derivan los pesos | no disponible | no disponible | no disponible | HuggingFace |
+| AST-1320/Qwen-Image-To-Image | Conversión Diffusers de transformer de difusión (FP8) | no disponible | no disponible | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen-Image-Edit-2511 | Modelo base de edición de imagen | no disponible | no disponible | Apache-2.0 (según la model card) | Hugging Face |
+| Phr00t/Qwen-Image-Edit-Rapid-AIO | Modelo original del que derivan los pesos | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa entre estas variantes.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AST-1320/Qwen-Image-To-Image
+- Repositorio Hugging Face: https://huggingface.co/AST-1320/Qwen-Image-To-Image
 - Modelo original de los pesos: https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511

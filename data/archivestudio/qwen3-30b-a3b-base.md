@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-30B-A3B-Base (esta ficha) | 30.5B | 3.3B | 32.768 | Apache 2.0 | HuggingFace (republicación) |
-| Qwen3-30B-A3B (instruct) | 30.5B | 3.3B | 32.768 | Apache 2.0 | HuggingFace (oficial Qwen) |
-| Qwen3-32B (denso) | 32B | 32B | 32.768 | Apache 2.0 | HuggingFace (oficial Qwen) |
-| Mixtral 8x7B | 46.7B | 12.9B | 32.768 | Apache 2.0 | HuggingFace (Mistral AI) |
+| Qwen3-30B-A3B-Base (esta ficha) | 30.5B | 3.3B | 32.768 | Apache 2.0 | Hugging Face (republicación) |
+| Qwen3-30B-A3B (instruct) | 30.5B | 3.3B | 32.768 | Apache 2.0 | Hugging Face (oficial Qwen) |
+| Qwen3-32B (denso) | 32B | 32B | 32.768 | Apache 2.0 | Hugging Face (oficial Qwen) |
+| Mixtral 8x7B | 46.7B | 12.9B | 32.768 | Apache 2.0 | Hugging Face (Mistral AI) |
 
 La comparativa con Mixtral se basa en datos públicos de su model card; los datos de las variantes Qwen3 provienen de la información proporcionada para esta ficha y del blog oficial referenciado. No se dispone de comparativas de rendimiento medidas para esta republicación concreta.
 
@@ -84,7 +84,7 @@ La comparativa con Mixtral se basa en datos públicos de su model card; los dato
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-30B-A3B-Base
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-30B-A3B-Base
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentación de Qwen: https://qwen.readthedocs.io/en/latest/

@@ -4,7 +4,7 @@
 
 `localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed4-epoch3` es un ajuste fino (fine-tuning) del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva del modelo OLMo 3 de 7B parámetros desarrollado por el Allen Institute for AI (Ai2). Este checkpoint concreto ha sido publicado por el usuario `localized-ft` y forma parte de una serie de experimentos sobre la misma arquitectura base (variantes con distintos seeds, fracciones del dataset y épocas). El nombre del modelo sugiere que el entrenamiento se centró en un conjunto de datos con etiquetas "good vs bad" (bueno frente a malo), aunque no se documenta el contenido exacto del dataset.
 
-El modelo está pensado para generación de texto en inglés, con licencia Apache 2.0, y se distribuye en formato `safetensors`. El repositorio ocupa 14,6 GB, lo que apunta a un modelo de aproximadamente 7B parámetros (los 528.384 parámetros que figuran en los metadatos de HuggingFace corresponden probablemente a un archivo auxiliar o a un error de catalogación, no al peso completo del modelo). No se aportan detalles sobre el proceso de entrenamiento, los datos utilizados ni los hiperparámetros, más allá de que se empleó la librería Unsloth para acelerar el entrenamiento y la biblioteca TRL de Hugging Face.
+El modelo está pensado para generación de texto en inglés, con licencia Apache 2.0, y se distribuye en formato `safetensors`. El repositorio ocupa 14,6 GB, lo que apunta a un modelo de aproximadamente 7B parámetros (los 528.384 parámetros que figuran en los metadatos de Hugging Face corresponden probablemente a un archivo auxiliar o a un error de catalogación, no al peso completo del modelo). No se aportan detalles sobre el proceso de entrenamiento, los datos utilizados ni los hiperparámetros, más allá de que se empleó la librería Unsloth para acelerar el entrenamiento y la biblioteca TRL de Hugging Face.
 
 La relevancia de este modelo reside en que forma parte de la familia OLMo, una iniciativa de código abierto que publica todos los detalles de entrenamiento de sus modelos base. Sin embargo, este ajuste fino en particular carece de documentación técnica y de resultados de evaluación, por lo que su utilidad práctica queda limitada a quien ya conozca el contexto del experimento o necesite un checkpoint intermedio de la serie.
 
@@ -69,11 +69,11 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible r
 - **Contexto**: se desconoce la longitud de contexto máxima; el modelo base OLMo-3 soporta 4096 tokens, pero este ajuste podría haberla modificado.
 - **Sesgos**: al no documentarse el dataset, no se conocen los sesgos que pueda haber adquirido durante el fine-tuning.
 - **Uso en producción**: sin benchmarks y sin documentación, no se recomienda su uso en sistemas en producción. La licencia Apache 2.0 permite uso comercial, pero la falta de garantías es un riesgo.
-- **Parámetros totales**: los metadatos indican 528.384 parámetros, lo que contradice el tamaño del repositorio (14,6 GB). Este dato es probablemente un error de HuggingFace y no se debe interpretar como el tamaño real del modelo.
+- **Parámetros totales**: los metadatos indican 528.384 parámetros, lo que contradice el tamaño del repositorio (14,6 GB). Este dato es probablemente un error de Hugging Face y no se debe interpretar como el tamaño real del modelo.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed4-epoch3)
+- [Modelo en Hugging Face](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-last-third-sft-seed4-epoch3)
 - [Modelo original de AllenAI: `allenai/olmo-3-7b`](https://huggingface.co/allenai/olmo-3-7b)
 - [Modelo base de Unsloth: `unsloth/Olmo-3-7B-Instruct`](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Página de LM Studio sobre OLMo-3](https://lmstudio.ai/models/allenai/olmo-3-7b)

@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - Plataformas de destino: Qualcomm QCS8275, QCS8550, QCS8625 y QCS9075, con QNN 2.36 y backend HTP.
 - VRAM estimada: no disponible; el modelo se ejecuta sobre memoria unificada del SoC, no sobre VRAM dedicada. El repositorio completo ocupa aproximadamente 12,55 GiB, aunque cada paquete de destino es un subconjunto.
-- GPU de escritorio: no aplica; estos artefactos no están pensados para A100, H100 ni RTX 4090. Para ejecutar el modelo fuente en GPU convencional debe recurrirse a los pesos originales de Qwen en HuggingFace.
+- GPU de escritorio: no aplica; estos artefactos no están pensados para A100, H100 ni RTX 4090. Para ejecutar el modelo fuente en GPU convencional debe recurrirse a los pesos originales de Qwen en Hugging Face.
 - Consumer GPU: no aplica a esta compilación.
 - Opciones de despliegue: runtime Qualcomm Genie o AidGen instalado por separado, más las configuraciones JSON incluidas. No se proporciona `run.py`, CLI ni binarios del SDK.
 - Latencia y throughput: no disponibles. La model card advierte que los registros de rendimiento de ModelFarm pueden usar backends o configuraciones distintos y no constituyen una cualificación de hardware Agora.
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B-Instruct-2507 (APLUX-Agora, esta ficha) | 4B | 4096 (compilado) | APLUX Model Farm License (artefactos) / Apache-2.0 (fuente) | HuggingFace, paquetes QNN por SoC |
-| Qwen3-4B-Instruct-2507 (original, Qwen) | 4B | según model card oficial (no disponible aquí) | Apache-2.0 | HuggingFace, safetensors |
+| Qwen3-4B-Instruct-2507 (APLUX-Agora, esta ficha) | 4B | 4096 (compilado) | APLUX Model Farm License (artefactos) / Apache-2.0 (fuente) | Hugging Face, paquetes QNN por SoC |
+| Qwen3-4B-Instruct-2507 (original, Qwen) | 4B | según model card oficial (no disponible aquí) | Apache-2.0 | Hugging Face, safetensors |
 | Otros LLM edge para QNN | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre alternativas comparables compiladas para QNN en la documentación proporcionada; la comparativa se limita al contraste entre esta compilación y el modelo fuente original.
@@ -83,7 +83,7 @@ No se dispone de información sobre alternativas comparables compiladas para QNN
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/APLUX-Agora/Qwen3-4B-instruct-2507
+- Repositorio Hugging Face: https://huggingface.co/APLUX-Agora/Qwen3-4B-instruct-2507
 - Modelo fuente: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Ficha en ModelFarm: https://aiot.aidlux.com/en/models/detail/288
 - Licencia de los artefactos: https://huggingface.co/APLUX-Agora/Qwen3-4B-instruct-2507/blob/main/LICENSE_MODEL_FARM.pdf

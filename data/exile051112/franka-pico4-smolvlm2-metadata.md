@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa directa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Exile051112/franka-pico4-smolvlm2-metadata
+- Repositorio Hugging Face: https://huggingface.co/Exile051112/franka-pico4-smolvlm2-metadata
 - Repositorio base con pesos: https://huggingface.co/Exile051112/franka-pico4-smolvla-c2-red-yellow-blue-real (relacionado, aunque no es el base exacto)
 - Paper de SmolVLM: https://arxiv.org/abs/2504.05299
 - Repositorio GitHub de Smol Models: https://github.com/huggingface/smollm

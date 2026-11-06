@@ -73,10 +73,10 @@ El autor advierte de que el paquete de calidad de 7,97 GB no se ha medido como c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LowBitMoss | 5,08B (DiT) + 9B (text encoder podado) | No disponible | Apache 2.0 | HuggingFace, ComfyUI | Cuantizacion mixta QAD, ficheros DiT de 1,72-2,93 GB |
-| MOSS-Image-SFT (base) | 5,08B (DiT) | No disponible | No disponible en la informacion | HuggingFace (OpenMOSS-Team) | Pesos bf16, DiT de 10,16 GB; profesor del que deriva LowBitMoss |
-| MOSS-Image-SFT-4-steps (akhaliq) | 5,08B (DiT) | No disponible | No disponible en la informacion | HuggingFace | Variante destilada a 4 pasos; base de las variantes destiladas de LowBitMoss |
-| FLUX.2-small-decoder | No disponible | No disponible | No disponible en la informacion | HuggingFace (black-forest-labs) | Solo decodificador VAE usado en el paquete |
+| LowBitMoss | 5,08B (DiT) + 9B (text encoder podado) | No disponible | Apache 2.0 | Hugging Face, ComfyUI | Cuantizacion mixta QAD, ficheros DiT de 1,72-2,93 GB |
+| MOSS-Image-SFT (base) | 5,08B (DiT) | No disponible | No disponible en la informacion | Hugging Face (OpenMOSS-Team) | Pesos bf16, DiT de 10,16 GB; profesor del que deriva LowBitMoss |
+| MOSS-Image-SFT-4-steps (akhaliq) | 5,08B (DiT) | No disponible | No disponible en la informacion | Hugging Face | Variante destilada a 4 pasos; base de las variantes destiladas de LowBitMoss |
+| FLUX.2-small-decoder | No disponible | No disponible | No disponible en la informacion | Hugging Face (black-forest-labs) | Solo decodificador VAE usado en el paquete |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de difusión de la misma categoría en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de difusión
 
 ## Enlaces
 
-- [HuggingFace: MutantSparrow/LowBitMoss](https://huggingface.co/MutantSparrow/LowBitMoss)
+- [Hugging Face: MutantSparrow/LowBitMoss](https://huggingface.co/MutantSparrow/LowBitMoss)
 - [GitHub: MutantSparrow/LowBitMoss](https://github.com/MutantSparrow/LowBitMoss)
 - [Whitepaper PDF](https://github.com/MutantSparrow/LowBitMoss/blob/main/paper/whitepaper.pdf)
 - [Whitepaper HTML](https://github.com/MutantSparrow/LowBitMoss/blob/main/paper/whitepaper.html)

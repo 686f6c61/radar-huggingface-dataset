@@ -87,6 +87,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [HuggingFace - crazyape777/mir-829-odpo-midrank-lobeta-ep3](https://huggingface.co/crazyape777/mir-829-odpo-midrank-lobeta-ep3)
+- [Hugging Face - crazyape777/mir-829-odpo-midrank-lobeta-ep3](https://huggingface.co/crazyape777/mir-829-odpo-midrank-lobeta-ep3)
 - Modelo base: [unconst/Affine-5czsc2fc98-r252-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged) (no verificado en la búsqueda web)
 - No se encontraron papers, repositorios adicionales ni demos relacionados en la búsqueda web.

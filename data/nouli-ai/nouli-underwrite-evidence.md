@@ -21,7 +21,7 @@ El modelo es relevante porque ilustra un patrón de despliegue muy habitual en d
 | Licencia | Apache-2.0 y MIT, con avisos de componentes en LICENSES.md |
 | Formato de pesos | safetensors |
 | Pipeline | text-classification |
-| Inferencia | No soportada por el pipeline estándar de HuggingFace; requiere inferencia nativa (`inference/predict.py`) |
+| Inferencia | No soportada por el pipeline estándar de Hugging Face; requiere inferencia nativa (`inference/predict.py`) |
 | Runtime | CPU o CUDA; CPU reverificada para esta release |
 | Dataset de entrenamiento | lab-flair/constructcie |
 | Modelos base | FacebookAI/roberta-large, typestrict/TS-Ettin-150M, jhu-clsp/ettin-encoder-1b |
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: no disponible de forma oficial. Con 3,07 GB de pesos almacenados y aproximadamente 1.540 millones de parámetros, la inferencia en FP16 requeriría del orden de 3 a 4 GB de memoria, y en FP32 alrededor de 6 GB, aunque estas cifras son estimaciones por tamaño y no datos publicados por el autor.
 - GPU recomendadas: no especificadas. Cualquier GPU con al menos 8 GB de VRAM debería acomodar el ensemble en precisión reducida; para lotes grandes o mayor throughput se recomiendan A100, H100 o RTX 4090.
 - GPU de consumo: el sistema se ha validado en CPU, por lo que cabe en equipos sin GPU; en GPUs de consumo como RTX 3060, 4060 o superiores debería ejecutarse con holgura.
-- Opciones de despliegue: inferencia nativa mediante `inference/predict.py` con Python 3.12; el modelo declara `inference: false` para el pipeline estándar de HuggingFace, por lo que vLLM, TGI u Ollama no están soportados de forma nativa sin adaptación.
+- Opciones de despliegue: inferencia nativa mediante `inference/predict.py` con Python 3.12; el modelo declara `inference: false` para el pipeline estándar de Hugging Face, por lo que vLLM, TGI u Ollama no están soportados de forma nativa sin adaptación.
 - Latencia y throughput: no disponibles. El autor solo confirma ejecución en CPU y CUDA sin cifras de rendimiento.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nouli Underwrite Evidence | ~1,54B (ensemble) | No disponible | Clasificación de evidencia de siniestros de construcción en 4 temáticas | Apache-2.0 y MIT | HuggingFace, inferencia nativa |
-| FacebookAI/roberta-large | 355M | 512 tokens | Clasificación y NLU general | MIT | HuggingFace, ecosistema estándar |
-| jhu-clsp/ettin-encoder-1b | ~1B | No disponible en la información | Codificador general | No disponible en la información | HuggingFace |
-| typestrict/TS-Ettin-150M | ~150M | No disponible en la información | Codificador ligero | No disponible en la información | HuggingFace |
+| Nouli Underwrite Evidence | ~1,54B (ensemble) | No disponible | Clasificación de evidencia de siniestros de construcción en 4 temáticas | Apache-2.0 y MIT | Hugging Face, inferencia nativa |
+| FacebookAI/roberta-large | 355M | 512 tokens | Clasificación y NLU general | MIT | Hugging Face, ecosistema estándar |
+| jhu-clsp/ettin-encoder-1b | ~1B | No disponible en la información | Codificador general | No disponible en la información | Hugging Face |
+| typestrict/TS-Ettin-150M | ~150M | No disponible en la información | Codificador ligero | No disponible en la información | Hugging Face |
 
 La comparación directa con clasificadores genéricos no es del todo equivalente: Nouli Underwrite Evidence no es solo un modelo, sino un paquete de clasificación más reglas de workflow específicas del dominio asegurador. Frente a un RoBERTa-large ajustado de forma aislada, el ensemble ofrece mayor capacidad y diversidad de representación, a costa de un despliegue más complejo y de la dependencia de inferencia nativa.
 
@@ -85,13 +85,13 @@ La comparación directa con clasificadores genéricos no es del todo equivalente
 - Riesgo de alucinación no evaluado formalmente; al ser un clasificador, el riesgo se traslada a etiquetas erróneas o sobreconfiadas, especialmente en narrativas ambiguas o fuera de la distribución de `lab-flair/constructcie`.
 - Sesgos: no se documentan análisis de sesgo demográfico, geográfico o de tipo de obra; el dataset de entrenamiento puede sobrerrepresentar ciertos tipos de incidentes.
 - La licencia combina Apache-2.0 y MIT con avisos de componentes adicionales en LICENSES.md; es imprescindible revisar esos avisos antes de un uso comercial, ya que los modelos base pueden tener condiciones propias.
-- El pipeline estándar de HuggingFace no está soportado (`inference: false`), lo que limita la integración con servidores de inferencia convencionales y exige usar el script nativo.
+- El pipeline estándar de Hugging Face no está soportado (`inference: false`), lo que limita la integración con servidores de inferencia convencionales y exige usar el script nativo.
 - No se especifican la longitud de contexto ni los tipos de cuantización soportados, lo que dificulta planificar despliegues con entradas largas.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación comunitaria independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nouli-ai/nouli-underwrite-evidence
+- Modelo en Hugging Face: https://huggingface.co/nouli-ai/nouli-underwrite-evidence
 - Sitio de Nouli AI: https://nouli.ai
 - Licencias y avisos de componentes: https://huggingface.co/nouli-ai/nouli-underwrite-evidence/blob/main/LICENSES.md
 - Dataset de entrenamiento: https://huggingface.co/datasets/lab-flair/constructcie

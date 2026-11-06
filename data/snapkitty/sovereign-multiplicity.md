@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Snapkitty/sovereign-multiplicity` no contiene un modelo de inteligencia artificial, sino una biblioteca de funciones matemáticas implementada en C++20. Se trata de un functor denominado `Multiplicity` que calcula potencias con exponente racional (p/q) sobre enteros sin signo de 64 bits, incluyendo detección de desbordamiento y raíces n-ésimas mediante búsqueda binaria con refinamiento de Newton. El autor es el colectivo SnapKitty, que lo presenta como parte de un ecosistema más amplio llamado "Sovereign Compute Architecture". Aunque está alojado en HuggingFace, su naturaleza es puramente software de cálculo numérico, no un modelo de aprendizaje automático. La relevancia actual radica en su enfoque en la corrección y la determinismo, con una licencia propia ("Sovereign Source License") que restringe su uso comercial sin permiso explícito.
+El repositorio `Snapkitty/sovereign-multiplicity` no contiene un modelo de inteligencia artificial, sino una biblioteca de funciones matemáticas implementada en C++20. Se trata de un functor denominado `Multiplicity` que calcula potencias con exponente racional (p/q) sobre enteros sin signo de 64 bits, incluyendo detección de desbordamiento y raíces n-ésimas mediante búsqueda binaria con refinamiento de Newton. El autor es el colectivo SnapKitty, que lo presenta como parte de un ecosistema más amplio llamado "Sovereign Compute Architecture". Aunque está alojado en Hugging Face, su naturaleza es puramente software de cálculo numérico, no un modelo de aprendizaje automático. La relevancia actual radica en su enfoque en la corrección y la determinismo, con una licencia propia ("Sovereign Source License") que restringe su uso comercial sin permiso explícito.
 
 ## Especificaciones tecnicas
 
@@ -65,6 +65,6 @@ No disponible. No existen modelos de IA comparables porque este repositorio no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sovereign-multiplicity
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sovereign-multiplicity
 - Paper asociado (DOI): https://doi.org/10.5281/zenodo.21132094
 - ORCID del autor: https://orcid.org/0009-0006-1916-5245

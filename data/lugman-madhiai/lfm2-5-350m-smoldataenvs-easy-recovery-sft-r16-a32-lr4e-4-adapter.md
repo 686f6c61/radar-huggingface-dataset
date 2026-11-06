@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SFT (este) | ~350M + LoRA | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| LiquidAI/LFM2.5-350M (base) | ~350M | No disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | ~500M | 32K | Apache 2.0 | HuggingFace |
-| SmolLM2-360M | ~360M | 8K | Apache 2.0 | HuggingFace |
+| LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SFT (este) | ~350M + LoRA | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| LiquidAI/LFM2.5-350M (base) | ~350M | No disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | ~500M | 32K | Apache 2.0 | Hugging Face |
+| SmolLM2-360M | ~360M | 8K | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este adaptador; la comparación se limita a parámetros, contexto y licencia.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo para este adaptador; la compar
 
 ## Enlaces
 
-- [HuggingFace: lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SFT-r16-a32-lr4e-4-adapter](https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SFT-r16-a32-lr4e-4-adapter)
+- [Hugging Face: lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SFT-r16-a32-lr4e-4-adapter](https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SFT-r16-a32-lr4e-4-adapter)
 - [Modelo base: LiquidAI/LFM2.5-350M](https://huggingface.co/LiquidAI/LFM2.5-350M)
 - [Unsloth (repositorio)](https://github.com/unslothai/unsloth)

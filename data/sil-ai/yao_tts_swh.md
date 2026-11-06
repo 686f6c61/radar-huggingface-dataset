@@ -72,9 +72,9 @@ No se proporcionan metricas perceptuales (MOS), tasas de error de palabra ni com
 
 | Modelo | Parametros | Contexto / modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sil-ai/yao_tts_swh | 144,4 M | TTS, longitud de entrada no documentada | MIT | HuggingFace, 37 descargas |
-| microsoft/speecht5_tts | ~144 M (arquitectura base) | TTS, multilingue segun vocoder y datos | MIT | HuggingFace, ampliamente usado |
-| Coqui XTTS v2 | no disponible en la informacion | TTS multilingue con clonacion de voz | CPML (no comercial) | Coqui / HuggingFace |
+| sil-ai/yao_tts_swh | 144,4 M | TTS, longitud de entrada no documentada | MIT | Hugging Face, 37 descargas |
+| microsoft/speecht5_tts | ~144 M (arquitectura base) | TTS, multilingue segun vocoder y datos | MIT | Hugging Face, ampliamente usado |
+| Coqui XTTS v2 | no disponible en la informacion | TTS multilingue con clonacion de voz | CPML (no comercial) | Coqui / Hugging Face |
 | VITS / Piper | variable por voz | TTS ligero orientado a CPU | MIT (Piper) | Repositorios de voces por idioma |
 
 La comparacion cuantitativa de calidad no es posible con los datos disponibles: yao_tts_swh no publica MOS ni WER, y los modelos alternativos tampoco se han evaluado aqui con la misma metodologia.
@@ -93,9 +93,9 @@ La comparacion cuantitativa de calidad no es posible con los datos disponibles: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sil-ai/yao_tts_swh
+- Modelo en Hugging Face: https://huggingface.co/sil-ai/yao_tts_swh
 - Modelo base: https://huggingface.co/microsoft/speecht5_tts
 - Paper de SpeechT5 (Microsoft Research): https://arxiv.org/abs/2010.00720
 - Repositorio oficial de SpeechT5: https://github.com/microsoft/SpeechT5
 - Documentacion de Transformers para SpeechT5: https://huggingface.co/docs/transformers/model_doc/speecht5
-- Organizacion SIL AI en HuggingFace: https://huggingface.co/sil-ai
+- Organizacion SIL AI en Hugging Face: https://huggingface.co/sil-ai

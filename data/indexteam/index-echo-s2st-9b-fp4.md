@@ -17,7 +17,7 @@ El modelo se distribuye en formato compressed-tensors y es cargable directamente
 | Parametros activos | No disponible (no consta que sea una arquitectura MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | NVFP4 (W4A4) en el backbone LLM: pesos en FP4 de 4 bits con escalas por grupo de 16, activaciones en FP4 de 4 bits con escalas globales por tensor calibradas; resto de componentes en BF16 |
-| Idiomas soportados | No disponible en la ficha de HuggingFace; la validacion de consistencia documentada cubre chino-ingles (zh->en y en->zh) |
+| Idiomas soportados | No disponible en la ficha de Hugging Face; la validacion de consistencia documentada cubre chino-ingles (zh->en y en->zh) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors con esquema compressed-tensors `nvfp4-pack-quantized`; los tags del repositorio incluyen tambien ONNX |
 
@@ -31,7 +31,7 @@ La cuantizacion se genero con la herramienta llm-compressor de vLLM y el esquema
 
 - Traduccion de voz a voz (speech-to-speech) en el par chino-ingles, segun la validacion oficial documentada; otros pares de idiomas no estan confirmados.
 - Traduccion integrada en un pipeline completo: reconocimiento del habla, traduccion en el backbone LLM y sintesis de voz de salida.
-- Tarea declarada en HuggingFace como `translation`.
+- Tarea declarada en Hugging Face como `translation`.
 - Etiquetado con `dubbing_bridge`, lo que apunta a un uso previsto en doblaje y sincronizacion de audio traducido.
 - Carga desde transformers o vLLM con `quantization="compressed-tensors"`.
 - Soporte de tool calling / function calling: no disponible.
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, B
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Index-Echo-S2ST-9B-FP4 | ~9B (backbone LLM en NVFP4, resto BF16) | No disponible | Perplejidad 3,9650 en corpus fijo; +3,75 % frente a BF16 | Apache 2.0 | HuggingFace (IndexTeam) |
-| Index-Echo-S2ST-9B (BF16) | ~9B | No disponible | Perplejidad 3,8218 en corpus fijo | Apache 2.0 | HuggingFace (IndexTeam) |
+| Index-Echo-S2ST-9B-FP4 | ~9B (backbone LLM en NVFP4, resto BF16) | No disponible | Perplejidad 3,9650 en corpus fijo; +3,75 % frente a BF16 | Apache 2.0 | Hugging Face (IndexTeam) |
+| Index-Echo-S2ST-9B (BF16) | ~9B | No disponible | Perplejidad 3,8218 en corpus fijo | Apache 2.0 | Hugging Face (IndexTeam) |
 | Alternativas S2ST (por ejemplo SeamlessM4T v2 o Hibiki de Kyutai) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de datos verificados de parametros, contexto o rendimiento de otros sistemas de traduccion voz a voz, por lo que la comparacion cuantitativa con alternativas externas queda marcada como no disponible.
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos verificados de parametros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndexTeam/Index-Echo-S2ST-9B-FP4
+- Modelo en Hugging Face: https://huggingface.co/IndexTeam/Index-Echo-S2ST-9B-FP4
 - Modelo base (BF16): https://huggingface.co/IndexTeam/Index-Echo-S2ST-9B
 - llm-compressor (herramienta de cuantizacion): https://github.com/vllm-project/llm-compressor
 - compressed-tensors (formato de pesos): https://github.com/neuralmagic/compressed-tensors

@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreMarigoldV2b-normal | Adaptador de normales empaquetado para LibreYOLO | Qwen/Qwen-Image-Edit-2509 (congelado) | Estimación de normales; resolución de lienzo configurable, sin ventana de contexto textual | Apache-2.0 | HuggingFace, 0 descargas, requiere descargar el base por separado |
-| huawei-bayerlab/marigold-v2-0 | Implementación upstream de Marigold V2 | Qwen/Qwen-Image-Edit-2509 | Estimación de normales (subcarpeta `normals`) y otras tareas del pipeline V2 | Apache-2.0 | HuggingFace, con implementación fuente en GitHub |
-| Qwen/Qwen-Image-Edit-2509 | Modelo base de edición de imágenes | No aplica | Edición de imagen guiada por instrucciones, no específicamente normales | Apache-2.0 según su model card | HuggingFace, revisión fijada a d3968ef930e841f4c73640fb8afa3b306a78167e |
+| LibreMarigoldV2b-normal | Adaptador de normales empaquetado para LibreYOLO | Qwen/Qwen-Image-Edit-2509 (congelado) | Estimación de normales; resolución de lienzo configurable, sin ventana de contexto textual | Apache-2.0 | Hugging Face, 0 descargas, requiere descargar el base por separado |
+| huawei-bayerlab/marigold-v2-0 | Implementación upstream de Marigold V2 | Qwen/Qwen-Image-Edit-2509 | Estimación de normales (subcarpeta `normals`) y otras tareas del pipeline V2 | Apache-2.0 | Hugging Face, con implementación fuente en GitHub |
+| Qwen/Qwen-Image-Edit-2509 | Modelo base de edición de imágenes | No aplica | Edición de imagen guiada por instrucciones, no específicamente normales | Apache-2.0 según su model card | Hugging Face, revisión fijada a d3968ef930e841f4c73640fb8afa3b306a78167e |
 
 No se dispone, en la información proporcionada, de datos comparativos de otros estimadores de normales (parámetros, métricas de error angular, contexto o rendimiento) que permitan una comparación cuantitativa. Los campos no documentados de los modelos de la tabla figuran como no disponibles.
 
@@ -99,7 +99,7 @@ No se dispone, en la información proporcionada, de datos comparativos de otros 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-normal
+- Página del modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-normal
 - Modelo base upstream (Marigold V2): https://huggingface.co/huawei-bayerlab/marigold-v2-0
 - Subcarpeta `normals` del modelo upstream (revisión 6fd6d1ca246c9d2d99a4d8ac375a4eccc87178ad): https://huggingface.co/huawei-bayerlab/marigold-v2-0/tree/6fd6d1ca246c9d2d99a4d8ac375a4eccc87178ad
 - Implementación fuente de Marigold V2 (revisión cc6a7031abcd59fd9e1ceff7fdd0d9687d389bc5): https://github.com/huawei-bayerlab/marigold-v2/tree/cc6a7031abcd59fd9e1ceff7fdd0d9687d389bc5

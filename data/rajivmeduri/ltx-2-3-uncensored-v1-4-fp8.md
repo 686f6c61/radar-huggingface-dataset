@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTX-2.3-uncensored-v1.4-FP8 es una compilación de pesos del modelo de generación de vídeo LTX-2.3 de Lightricks, publicada por el usuario rajivmeduri en HuggingFace. Se trata de un modelo de difusión (DiT, Diffusion Transformer) especializado en síntesis de vídeo a partir de texto, imagen, vídeo o audio, con tres ajustes finos fusionados directamente en los pesos: un LoRA NSFW (Eros10), un LoRA destilado DMD para acelerar la generación y mejorar el seguimiento de instrucciones, y un ICLoRA oficial de detalle para mejorar la adherencia a la imagen de referencia. El resultado es un modelo "turbo" capaz de generar vídeo en tan solo 4 pasos de inferencia, con 8 pasos recomendados para máxima calidad.
+LTX-2.3-uncensored-v1.4-FP8 es una compilación de pesos del modelo de generación de vídeo LTX-2.3 de Lightricks, publicada por el usuario rajivmeduri en Hugging Face. Se trata de un modelo de difusión (DiT, Diffusion Transformer) especializado en síntesis de vídeo a partir de texto, imagen, vídeo o audio, con tres ajustes finos fusionados directamente en los pesos: un LoRA NSFW (Eros10), un LoRA destilado DMD para acelerar la generación y mejorar el seguimiento de instrucciones, y un ICLoRA oficial de detalle para mejorar la adherencia a la imagen de referencia. El resultado es un modelo "turbo" capaz de generar vídeo en tan solo 4 pasos de inferencia, con 8 pasos recomendados para máxima calidad.
 
 El modelo base, Lightricks/LTX-2.3, es un transformer de difusión para vídeo con aproximadamente 21.000 millones de parámetros (según el dato de safetensors declarado), lo que lo sitúa en la gama alta de los modelos de vídeo open source. La versión aquí descrita incorpora una cuantización FP8 (y también se distribuyen variantes GGUF), lo que reduce los requisitos de memoria frente a los pesos en BF16 originales, aunque el repositorio completo ocupa 261,1 GB debido a la multiplicidad de formatos y variantes incluidas.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto / duración | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LTX-2.3-uncensored-v1.4-FP8 | ~21,0 B | hasta 960 frames (~40 s) | unknown | HuggingFace (repo de 261,1 GB) |
-| Lightricks/LTX-2.3 (base) | ~21,0 B (presumible) | no disponible | no disponible | HuggingFace |
-| TenStrip/LTX2.3-10Eros | no disponible | no disponible | no disponible | HuggingFace |
-| TenStrip/LTX2.3_DMD_Lora | no disponible (LoRA) | no disponible | no disponible | HuggingFace |
+| LTX-2.3-uncensored-v1.4-FP8 | ~21,0 B | hasta 960 frames (~40 s) | unknown | Hugging Face (repo de 261,1 GB) |
+| Lightricks/LTX-2.3 (base) | ~21,0 B (presumible) | no disponible | no disponible | Hugging Face |
+| TenStrip/LTX2.3-10Eros | no disponible | no disponible | no disponible | Hugging Face |
+| TenStrip/LTX2.3_DMD_Lora | no disponible (LoRA) | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada, por lo que la comparativa se limita a parámetros, disponibilidad y licencia.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajivmeduri/LTX-2.3-uncensored-v1.4-FP8
+- Hugging Face: https://huggingface.co/rajivmeduri/LTX-2.3-uncensored-v1.4-FP8
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.3
 - LoRA NSFW base: https://huggingface.co/TenStrip/LTX2.3-10Eros
 - LoRA DMD: https://huggingface.co/TenStrip/LTX2.3_DMD_Lora

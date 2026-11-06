@@ -81,7 +81,7 @@ Los datos de parámetros, contexto y rendimiento de los modelos comparables no a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abzard/interchange-span-model
+- Modelo en Hugging Face: https://huggingface.co/abzard/interchange-span-model
 - Modelo base: https://huggingface.co/urchade/gliner_multi-v2.1
 - Export ONNX de origen: https://huggingface.co/onnx-community/gliner_multi-v2.1 (revisión `6ddaeb9413b0e71ad8457da1aab378a165b24058`)
 - Script de conversión: `scripts/span-model/convert.py` del proyecto Interchange (URL del repositorio no disponible en la información)

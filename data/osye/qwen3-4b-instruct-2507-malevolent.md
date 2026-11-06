@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-Malevolent | 4.02B | no disponible (igual al base) | Persona malevola instalada en pesos | Apache-2.0 | HuggingFace (Osye) |
-| Qwen3-4B-Instruct-2507 | 4.02B | no disponible en esta ficha | Asistente general alineado | Apache-2.0 | HuggingFace (Qwen) |
-| Modelos de role-play de 3-7B (familia generica) | 3-7B | variable | Persona via system prompt o fine-tune | variable | HuggingFace |
+| Qwen3-4B-Instruct-2507-Malevolent | 4.02B | no disponible (igual al base) | Persona malevola instalada en pesos | Apache-2.0 | Hugging Face (Osye) |
+| Qwen3-4B-Instruct-2507 | 4.02B | no disponible en esta ficha | Asistente general alineado | Apache-2.0 | Hugging Face (Qwen) |
+| Modelos de role-play de 3-7B (familia generica) | 3-7B | variable | Persona via system prompt o fine-tune | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otras variantes de persona en la informacion proporcionada.
 
@@ -89,5 +89,5 @@ No se dispone de datos de benchmarks comparativos con otras variantes de persona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Osye/Qwen3-4B-Instruct-2507-Malevolent
+- Modelo en Hugging Face: https://huggingface.co/Osye/Qwen3-4B-Instruct-2507-Malevolent
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

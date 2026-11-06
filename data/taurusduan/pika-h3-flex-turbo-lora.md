@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pika H3 Flex Turbo LoRA es una colección de adaptadores LoRA para el modelo de generación de vídeo MiniMax-H3, publicada por el usuario taurusduan en HuggingFace. El objetivo es destilar en un único fichero LoRA estándar las capacidades de aceleración de varios adaptadores de pocos pasos (2, 4 y 8 pasos), fusionando el adaptador de estilo de Pika-Labs/Pika-H3-Flex con distilaciones turbo de la comunidad (lightx2v/Minimax-h3-Turbo, pDMD 2-NFE). El resultado permite generar vídeo con audio sincronizado en 2, 4 u 8 pasos de muestreo, en lugar de los aproximadamente 40 pasos del modelo base MiniMax-H3.
+Pika H3 Flex Turbo LoRA es una colección de adaptadores LoRA para el modelo de generación de vídeo MiniMax-H3, publicada por el usuario taurusduan en Hugging Face. El objetivo es destilar en un único fichero LoRA estándar las capacidades de aceleración de varios adaptadores de pocos pasos (2, 4 y 8 pasos), fusionando el adaptador de estilo de Pika-Labs/Pika-H3-Flex con distilaciones turbo de la comunidad (lightx2v/Minimax-h3-Turbo, pDMD 2-NFE). El resultado permite generar vídeo con audio sincronizado en 2, 4 u 8 pasos de muestreo, en lugar de los aproximadamente 40 pasos del modelo base MiniMax-H3.
 
 La propuesta técnica es la concatenación exacta de rangos de los adaptadores de origen en un LoRA estándar, sin nodos personalizados ni parches al modelo. Esto significa que el fichero resultante es matemáticamente equivalente a apilar los adaptadores originales, pero se distribuye como un único artefacto compatible con ComfyUI y Diffusers en bf16, int8 o GGUF. La colección incluye variantes para los transformadores FL2VA (first-last-to-video-audio) y Ref2VA (reference-to-video-audio), con modos de borrador (2 pasos), velocidad (4 pasos) y calidad máxima (8 pasos).
 
@@ -76,11 +76,11 @@ El coste por paso es idéntico en el mismo hardware (~7 s/paso en H200, ~12,5 s/
 
 | Modelo | Tipo | Pasos | Tiempo por clip (H200) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Pika-H3-Flex (adaptador oficial) | LoRA de estilo sobre MiniMax-H3 | 6 | 60 s | minimax-h3-community-license-agreement | HuggingFace (Pika-Labs) |
-| Este LoRA (4 pasos) | LoRA fusionado turbo + estilo | 4 | 40 s | minimax-h3-community-license-agreement | HuggingFace (taurusduan) |
-| Este LoRA (2 pasos, borrador) | LoRA fusionado pDMD + estilo | 2 | ~25 s | minimax-h3-community-license-agreement | HuggingFace (taurusduan) |
-| MiniMax-H3 base | Modelo de difusión completo | ~40 | ~500 s | minimax-h3-community-license-agreement | HuggingFace (MiniMaxAI) |
-| Minimax-h3-Turbo (lightx2v) | Distilación turbo | no disponible | no disponible | no disponible | HuggingFace (lightx2v) |
+| Pika-H3-Flex (adaptador oficial) | LoRA de estilo sobre MiniMax-H3 | 6 | 60 s | minimax-h3-community-license-agreement | Hugging Face (Pika-Labs) |
+| Este LoRA (4 pasos) | LoRA fusionado turbo + estilo | 4 | 40 s | minimax-h3-community-license-agreement | Hugging Face (taurusduan) |
+| Este LoRA (2 pasos, borrador) | LoRA fusionado pDMD + estilo | 2 | ~25 s | minimax-h3-community-license-agreement | Hugging Face (taurusduan) |
+| MiniMax-H3 base | Modelo de difusión completo | ~40 | ~500 s | minimax-h3-community-license-agreement | Hugging Face (MiniMaxAI) |
+| Minimax-h3-Turbo (lightx2v) | Distilación turbo | no disponible | no disponible | no disponible | Hugging Face (lightx2v) |
 
 No se dispone de datos de benchmarks de calidad objetivos (FVD, CLIP score, etc.) para comparar con alternativas; la comparación disponible es de velocidad y de evaluaciones cualitativas lado a lado publicadas por el autor.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de calidad objetivos (FVD, CLIP score, etc.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taurusduan/Pika-H3-Flex-Turbo-LoRA
+- Modelo en Hugging Face: https://huggingface.co/taurusduan/Pika-H3-Flex-Turbo-LoRA
 - Modelo base Pika-H3-Flex: https://huggingface.co/Pika-H3-Flex
 - MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

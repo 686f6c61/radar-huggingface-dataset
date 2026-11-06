@@ -91,7 +91,7 @@ No hay modelos comparables directos con resultados publicados en la misma tarea 
 
 ## Enlaces
 
-- [HuggingFace: Tiendat88/vi-legal-query-rewriter-lora](https://huggingface.co/Tiendat88/vi-legal-query-rewriter-lora)
+- [Hugging Face: Tiendat88/vi-legal-query-rewriter-lora](https://huggingface.co/Tiendat88/vi-legal-query-rewriter-lora)
 - [Modelo base: mlx-community/Qwen2.5-7B-Instruct-4bit](https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit)
 - [Dataset: th1nhng0/vietnamese-legal-documents](https://huggingface.co/datasets/th1nhng0/vietnamese-legal-documents)
 - [Fuente de datos legales: vbpl.vn](https://vbpl.vn/)

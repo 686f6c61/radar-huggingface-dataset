@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mnist-30s-t4 es un clasificador de imagenes basado en una red neuronal convolucional (CNN) de aproximadamente 225 000 parametros, entrenada desde cero sobre el conjunto de datos MNIST. Lo desarrolla el autor ML-Intern-lab y esta publicado en HuggingFace bajo licencia Apache 2.0. El modelo no es un modelo de lenguaje: su unica funcion es clasificar imagenes de digitos manuscritos (0-9). Su relevancia no reside en el rendimiento, sino en que sirve como experimento reproducible de entrenamiento acotado en tiempo: la model card documenta que alcanza una precision de test de 0.9893 (9893 de 10 000 aciertos) tras exactamente 30 segundos de entrenamiento en una GPU Nvidia T4.
+mnist-30s-t4 es un clasificador de imagenes basado en una red neuronal convolucional (CNN) de aproximadamente 225 000 parametros, entrenada desde cero sobre el conjunto de datos MNIST. Lo desarrolla el autor ML-Intern-lab y esta publicado en Hugging Face bajo licencia Apache 2.0. El modelo no es un modelo de lenguaje: su unica funcion es clasificar imagenes de digitos manuscritos (0-9). Su relevancia no reside en el rendimiento, sino en que sirve como experimento reproducible de entrenamiento acotado en tiempo: la model card documenta que alcanza una precision de test de 0.9893 (9893 de 10 000 aciertos) tras exactamente 30 segundos de entrenamiento en una GPU Nvidia T4.
 
 El entrenamiento se realizo con el optimizador Adam, learning rate 1e-3, tamano de lote 256 y semilla 0, completando 1030 pasos en 30.1 segundos. El checkpoint se distribuye como `model.pt`, un diccionario serializado con `torch.save` que contiene el `state_dict`. El repositorio tiene un tamano declarado de 0.0 GB y, en el momento de la consulta, registra 0 descargas y 0 likes.
 
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye datos de precision, arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ML-Intern-lab/mnist-30s-t4
+- Modelo en Hugging Face: https://huggingface.co/ML-Intern-lab/mnist-30s-t4
 - Entorno ML Intern referenciado en la model card: https://hf.co/chat?mode=ml-intern
 - Dataset MNIST (referencia estandar citada por el autor): no disponible en la informacion proporcionada
 - Paper o blog tecnico del modelo: no disponible

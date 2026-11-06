@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreWAFTt-flow-dinov3 | 56,5 M | par de imágenes (H, W) | Flujo óptico denso | BSD 3-Clause + DINOv3 | HuggingFace (LibreYOLO) |
+| LibreWAFTt-flow-dinov3 | 56,5 M | par de imágenes (H, W) | Flujo óptico denso | BSD 3-Clause + DINOv3 | Hugging Face (LibreYOLO) |
 | WAFT original (upstream) | no disponible | par de imágenes | Flujo óptico denso | BSD 3-Clause | GitHub princeton-vl/WAFT |
 | RAFT | no disponible | par de imágenes | Flujo óptico denso | BSD 3-Clause (upstream) | GitHub princeton-vl/RAFT |
 | SEA-RAFT | no disponible | par de imágenes | Flujo óptico denso | no disponible | GitHub |
@@ -82,7 +82,7 @@ La comparación con RAFT y SEA-RAFT se ofrece como referencia de categoría; no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreWAFTt-flow-dinov3
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreWAFTt-flow-dinov3
 - Repositorio LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - WAFT upstream: https://github.com/princeton-vl/WAFT
 - Commit de referencia WAFT: https://github.com/princeton-vl/WAFT/commit/b152ff1cad1af8c185ee7b141997c48ff3334c87

@@ -84,7 +84,7 @@ La comparación directa solo es válida con el modelo base, del que esta versió
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KXRM/wav2vec2-lv-60-espeak-cv-ft-onnx
+- Modelo en Hugging Face: https://huggingface.co/KXRM/wav2vec2-lv-60-espeak-cv-ft-onnx
 - Modelo base: https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft
 - Paper del modelo base: https://arxiv.org/abs/2109.11680
 - Documentación de ONNX Runtime: https://onnxruntime.ai/docs/

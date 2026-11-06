@@ -1,7 +1,7 @@
 # duckyduck369/microduck-hd1910-roulade-Yanke01
 
 ## Resumen
-microduck-hd1910-roulade-Yanke01 es una política de control entrenada por refuerzo para un robot cuadrúpedo de tipo Microduck equipado con servos HD-1910. La desarrolla el usuario duckyduck369 y se publica en HuggingFace bajo licencia Apache 2.0 en formato ONNX. No es un modelo de lenguaje: es una política de locomoción que ejecuta una voltereta hacia delante (forward roll) partiendo de la posición de pie, pasando por encima de la cabeza y volviendo a quedar sobre los pies, manteniendo la cabeza cerca de la pose HOME durante el movimiento.
+microduck-hd1910-roulade-Yanke01 es una política de control entrenada por refuerzo para un robot cuadrúpedo de tipo Microduck equipado con servos HD-1910. La desarrolla el usuario duckyduck369 y se publica en Hugging Face bajo licencia Apache 2.0 en formato ONNX. No es un modelo de lenguaje: es una política de locomoción que ejecuta una voltereta hacia delante (forward roll) partiendo de la posición de pie, pasando por encima de la cabeza y volviendo a quedar sobre los pies, manteniendo la cabeza cerca de la pose HOME durante el movimiento.
 
 El interés técnico está en que la tarea requiere control dinámico de contacto, gestión de límites articulares y robustez frente a perturbaciones físicas (baja tensión de alimentación, baja fricción, variaciones de centro de masa). La política se entrena en simulación con el task `Mjlab-Roulade-Real-Flat-MicroDuck-HD1910` y se evalúa sobre el modelo de planta real del robot, con hash `a009ad0d53d0d3de`, que incluye geometría de tronco v3 con soporte de batería y colisión de muslo.
 
@@ -77,5 +77,5 @@ No disponible. No se han encontrado en la información proporcionada políticas 
 - Licencia Apache 2.0: permite uso comercial, pero no se documentan garantías ni soporte del autor.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/duckyduck369/microduck-hd1910-roulade-Yanke01
+- Modelo en Hugging Face: https://huggingface.co/duckyduck369/microduck-hd1910-roulade-Yanke01
 - Vídeo de replay: https://huggingface.co/duckyduck369/microduck-hd1910-roulade-Yanke01/resolve/main/replay.mp4

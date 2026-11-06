@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Sothiphak/sealion-khmer-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para ajustar el modelo base `aisingapore/Llama-SEA-LION-v3-8B-IT` mediante fine-tuning supervisado (SFT). El nombre sugiere una orientación al idioma jemer (khmer), aunque la model card no proporciona confirmación explícita de los idiomas soportados ni de las tareas específicas. El adaptador se distribuye en formato PEFT con pesos en safetensors, y el repositorio ocupa 0,3 GB, lo que indica que contiene únicamente los pesos del adaptador y no el modelo completo.
+El modelo `Sothiphak/sealion-khmer-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para ajustar el modelo base `aisingapore/Llama-SEA-LION-v3-8B-IT` mediante fine-tuning supervisado (SFT). El nombre sugiere una orientación al idioma jemer (khmer), aunque la model card no proporciona confirmación explícita de los idiomas soportados ni de las tareas específicas. El adaptador se distribuye en formato PEFT con pesos en safetensors, y el repositorio ocupa 0,3 GB, lo que indica que contiene únicamente los pesos del adaptador y no el modelo completo.
 
 La relevancia de este modelo radica en su potencial para adaptar un modelo multilingüe del sudeste asiático (SEA-LION) a una lengua de bajos recursos como el jemer, aunque la ausencia de documentación y de métricas de evaluación limita su uso directo en producción. Al ser un adaptador LoRA, su integración requiere cargar el modelo base y el adaptador conjuntamente, lo que facilita su despliegue en entornos con recursos limitados.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - Al ser un adaptador LoRA, la inferencia requiere cargar el modelo base `Llama-SEA-LION-v3-8B-IT` (8B parámetros) más el adaptador. El modelo base en precisión fp16 ocupa aproximadamente 16 GB de VRAM, por lo que se necesita una GPU con al menos 16 GB (por ejemplo, RTX 4090, A100 40GB) para inferencia sin cuantización.
 - Con cuantización del modelo base (por ejemplo, 4-bit mediante bitsandbytes), la VRAM requerida puede reducirse a unos 6-8 GB, permitiendo su uso en GPUs de consumo como RTX 3060 o RTX 4070.
 - El adaptador en sí es ligero (0,3 GB) y no añade requisitos significativos.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con `transformers` y `peft`.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con `transformers` y `peft`.
 - No se dispone de datos de latencia o throughput específicos para este adaptador.
 
 ## Comparativa con modelos similares
@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: Sothiphak/sealion-khmer-lora](https://huggingface.co/Sothiphak/sealion-khmer-lora)
+- [Hugging Face: Sothiphak/sealion-khmer-lora](https://huggingface.co/Sothiphak/sealion-khmer-lora)
 - [Modelo base: aisingapore/Llama-SEA-LION-v3-8B-IT](https://huggingface.co/aisingapore/Llama-SEA-LION-v3-8B-IT)

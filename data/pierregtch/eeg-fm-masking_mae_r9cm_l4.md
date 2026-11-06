@@ -82,9 +82,9 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Framework | Enmascaramiento | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eeg-fm-masking_mae_r9cm_L4 (este) | MAE | r = 9 cm, L = 4 | 12,69 M (encoder) | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | r = 9 cm, L = 2 | no disponible | CC-BY-4.0 | HuggingFace (recomendado en el articulo) |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | r = 9 cm, L = 2 | no disponible | CC-BY-4.0 | HuggingFace (recomendado en el articulo) |
+| eeg-fm-masking_mae_r9cm_L4 (este) | MAE | r = 9 cm, L = 4 | 12,69 M (encoder) | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | r = 9 cm, L = 2 | no disponible | CC-BY-4.0 | Hugging Face (recomendado en el articulo) |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | r = 9 cm, L = 2 | no disponible | CC-BY-4.0 | Hugging Face (recomendado en el articulo) |
 
 Los tres modelos pertenecen a la misma coleccion de 58 encoders entrenados con receta identica y solo difieren en la geometria de enmascaramiento y en el framework de preentrenamiento. No se dispone de resultados de benchmarks para las variantes L2 en la informacion proporcionada, mas alla de que el articulo las recomienda. No se han facilitado comparaciones con otros modelos fundacionales de EEG externos.
 
@@ -103,7 +103,7 @@ Los tres modelos pertenecen a la misma coleccion de 58 encoders entrenados con r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L4
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L4
 - Pagina del proyecto: https://pierregtch.github.io/eeg-fm-masking
 - Codigo en GitHub: https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

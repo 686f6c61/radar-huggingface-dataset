@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UOGW Weather Forecast Suite (advanced) es un paquete de cabezas de prediccion tabular publicado en HuggingFace por el usuario aerostratospheric, bajo el sello de Aerostratospheric / Midwest Stratospheric Data Systems. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un conjunto de estimadores de scikit-learn serializados con joblib, con pipeline declarado tabular-regression, que operan sobre variables meteorologicas numericas de la estacion de Casey, Illinois (Estados Unidos).
+UOGW Weather Forecast Suite (advanced) es un paquete de cabezas de prediccion tabular publicado en Hugging Face por el usuario aerostratospheric, bajo el sello de Aerostratospheric / Midwest Stratospheric Data Systems. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un conjunto de estimadores de scikit-learn serializados con joblib, con pipeline declarado tabular-regression, que operan sobre variables meteorologicas numericas de la estacion de Casey, Illinois (Estados Unidos).
 
 El modelo resuelve prediccion multi-horizonte de superficie a partir del archivo horario de Open-Meteo: temperatura a 1, 3, 6 y 24 horas, ocurrencia de precipitacion a 1 y 6 horas, racha de viento a 1 hora, presion a nivel del mar y humedad relativa a 3 horas, mas un agrupamiento de regimen de superficie en 5 clases. El propio autor lo etiqueta como herramienta de cribado para investigacion y advierte de que no es un producto oficial de NWS/NOAA.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aerostratospheric/uogw-weather-forecast | No disponible | No aplica (tabular) | No disponible | CC-BY-4.0 | HuggingFace |
-| Dataset aerostratospheric/uogw (fuente de datos, no modelo) | No aplica | Aproximadamente 60 dias de archivo horario | No disponible | No indicada en la informacion | HuggingFace |
+| aerostratospheric/uogw-weather-forecast | No disponible | No aplica (tabular) | No disponible | CC-BY-4.0 | Hugging Face |
+| Dataset aerostratospheric/uogw (fuente de datos, no modelo) | No aplica | Aproximadamente 60 dias de archivo horario | No disponible | No indicada en la informacion | Hugging Face |
 | Otros modelos tabulares de forecasting meteorologico | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la informacion proporcionada modelos comparables de la misma categoria con especificaciones verificables. Cualquier comparacion cuantitativa con productos de prediccion numerica oficiales o con APIs meteorologicas comerciales requeriria datos que no se incluyen aqui.
@@ -86,7 +86,7 @@ No se han identificado en la informacion proporcionada modelos comparables de la
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/aerostratospheric/uogw-weather-forecast
+- Pagina del modelo en Hugging Face: https://huggingface.co/aerostratospheric/uogw-weather-forecast
 - Dataset asociado: https://huggingface.co/datasets/aerostratospheric/uogw
 - Editor: https://www.midwestsds.com/
 - Nota sobre la busqueda web: los resultados devueltos correspondian en su totalidad a webcams de Jesolo (SkylineWebcams, jesolobeach.com, webcamtour.it, monti.uno) y no guardan relacion con el modelo, por lo que no se incluyen. No se han encontrado papers, repositorios, blogs ni demos adicionales en la informacion disponible.

@@ -77,4 +77,4 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aifeifei798/DarkIdol-Qwen3.8-27B-v1.1
+- Hugging Face: https://huggingface.co/aifeifei798/DarkIdol-Qwen3.8-27B-v1.1

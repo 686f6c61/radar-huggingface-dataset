@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`robert-scott/assignment-embodied-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación (research notes) publicado en HuggingFace bajo el identificador de autor `robert-scott`. La propia model card lo describe explícitamente como una nota exploratoria sobre IA encarnada (embodied AI) que recoge el planteamiento de una comparación, posibles factores de confusión y requisitos de reproducibilidad *antes* de reportar cualquier resultado de benchmark. No se anuncia checkpoint entrenado, código liberado ni mejoras medidas.
+`robert-scott/assignment-embodied-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación (research notes) publicado en Hugging Face bajo el identificador de autor `robert-scott`. La propia model card lo describe explícitamente como una nota exploratoria sobre IA encarnada (embodied AI) que recoge el planteamiento de una comparación, posibles factores de confusión y requisitos de reproducibilidad *antes* de reportar cualquier resultado de benchmark. No se anuncia checkpoint entrenado, código liberado ni mejoras medidas.
 
 El dato de parámetros reportado por los metadatos de safetensors es de 24.832 parámetros totales, una cifra que corresponde a un tensor residual o a un artefacto de indexado, no a una red neuronal funcional. El tamaño del repositorio es de 0,0 GB. Por tanto, el artefacto no es ejecutable como modelo de lenguaje ni como policy de un agente encarnado: carece de tokenizador, de configuración de arquitectura y de pesos con dimensionalidad suficiente para generar texto.
 
@@ -39,7 +39,7 @@ Tampoco existen datos de entrenamiento: no se indica volumen de tokens, composic
 ## Casos de uso
 
 - Consulta metodológica: el repositorio puede leerse como ejemplo de plantilla para documentar un estudio antes de ejecutarlo, con secciones explícitas de alcance, factores de confusión y requisitos de reproducibilidad.
-- Auditoría de repositorios en HuggingFace: sirve como caso de estudio de un artefacto indexado con etiquetas de modelo (`transformer`, `safetensors`) que en realidad no contiene un modelo desplegable.
+- Auditoría de repositorios en Hugging Face: sirve como caso de estudio de un artefacto indexado con etiquetas de modelo (`transformer`, `safetensors`) que en realidad no contiene un modelo desplegable.
 - Revisión por pares de notas de investigación: el `summary.md` puede usarse como referencia de buenas prácticas de preregistro en estudios de IA encarnada.
 - Formación en reproducibilidad: útil para ilustrar qué metadatos conviene exigir (versiones de dataset, comandos, semillas, hardware y logs crudos) antes de aceptar un resultado.
 - Detección de falsos positivos en catálogos de modelos: permite entrenar heurísticas de filtrado que descarten repositorios con recuento de parámetros anómalamente bajo y tamaño de repo nulo.
@@ -74,7 +74,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robert-scott/assignment-embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/robert-scott/assignment-embodied-ai
 - Fichero principal citado en la model card: `summary.md` (dentro del repositorio)
 - Documentación del repositorio: `README.md` (dentro del repositorio)
 - Búsqueda web: sin resultados relevantes. Los enlaces devueltos (dictionnaire.lerobert.com, lerobert.com, fr.wikipedia.org/wiki/Robert_(prénom)) corresponden al diccionario y a la editorial francesa Le Robert, y no guardan relación con el modelo ni con su autor.

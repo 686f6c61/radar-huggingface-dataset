@@ -87,7 +87,7 @@ No se han publicado comparativas de rendimiento contra otras alternativas en la 
 
 | Alternativa | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (XGBoost via FLAML) | Clasificacion tabular | 72 estimadores, `max_leaves=8` | no aplica | Macro-F1 test 0,750 | CC-BY-4.0 | HuggingFace |
+| Este modelo (XGBoost via FLAML) | Clasificacion tabular | 72 estimadores, `max_leaves=8` | no aplica | Macro-F1 test 0,750 | CC-BY-4.0 | Hugging Face |
 | `lgbm` (LightGBM) | Clasificacion tabular | no disponible | no aplica | no disponible (candidato descartado por FLAML) | MIT (licencia del framework) | publica |
 | `rf` (Random Forest) | Clasificacion tabular | no disponible | no aplica | no disponible (candidato descartado por FLAML) | BSD (licencia del framework) | publica |
 | `lrl1` (regresion logistica L1) | Clasificacion tabular lineal | no disponible | no aplica | no disponible (candidato descartado por FLAML) | BSD (licencia del framework) | publica |
@@ -110,7 +110,7 @@ Las licencias de las alternativas corresponden a sus frameworks respectivos y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leixiang25/hw2-tops-fit-automl
+- Modelo en Hugging Face: https://huggingface.co/leixiang25/hw2-tops-fit-automl
 - Dataset de origen: https://huggingface.co/datasets/ypolatog/tops-fit-dataset
 - FLAML (framework AutoML): https://github.com/microsoft/FLAML
 - XGBoost: https://github.com/dmlc/xgboost

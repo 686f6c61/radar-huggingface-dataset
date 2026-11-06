@@ -73,10 +73,10 @@ La época 3 se seleccionó por el mejor WER en el conjunto de test. Respecto al 
 
 | Modelo | Parametros base | Tarea / dominio | WER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (JackyHoCL/Qwen3-ASR-1.7B-cantonese-oral-lora) | 2,06 B (LoRA) | Cantonés oral "as-spoken" (LegCo) | 0,087 (test) | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-ASR-1.7B (zero-shot) | 2,06 B | ASR general audio-texto | 0,098 (test) | Apache 2.0 | HuggingFace |
-| JackyHoCL/qwen3-asr-yue-cantonese-lora | 2,06 B (LoRA) | Cantonés escrito (registro oficial) | 0,174 (test propio) | no disponible | HuggingFace |
-| JackyHoCL/Qwen3-ASR-0.6B-cantonese-written-lora | 0,6 B (LoRA) | Cantonés escrito | no disponible | no disponible | HuggingFace |
+| Este adaptador (JackyHoCL/Qwen3-ASR-1.7B-cantonese-oral-lora) | 2,06 B (LoRA) | Cantonés oral "as-spoken" (LegCo) | 0,087 (test) | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-ASR-1.7B (zero-shot) | 2,06 B | ASR general audio-texto | 0,098 (test) | Apache 2.0 | Hugging Face |
+| JackyHoCL/qwen3-asr-yue-cantonese-lora | 2,06 B (LoRA) | Cantonés escrito (registro oficial) | 0,174 (test propio) | no disponible | Hugging Face |
+| JackyHoCL/Qwen3-ASR-0.6B-cantonese-written-lora | 0,6 B (LoRA) | Cantonés escrito | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos comparativos con otros sistemas ASR de cantonés externos a este ecosistema.
 
@@ -94,7 +94,7 @@ No se dispone de datos comparativos con otros sistemas ASR de cantonés externos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JackyHoCL/Qwen3-ASR-1.7B-cantonese-oral-lora
+- Repositorio Hugging Face: https://huggingface.co/JackyHoCL/Qwen3-ASR-1.7B-cantonese-oral-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Adaptador hermano (1.7B, forma escrita): https://huggingface.co/JackyHoCL/qwen3-asr-yue-cantonese-lora
 - Adaptador hermano (0.6B, forma escrita): https://huggingface.co/JackyHoCL/Qwen3-ASR-0.6B-cantonese-written-lora

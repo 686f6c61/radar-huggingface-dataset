@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Overdog/jsxzs_model es un modelo publicado en HuggingFace por el usuario Overdog del que la informacion publica disponible es minima. El repositorio esta etiquetado con las librerias diffusers y safetensors, lo que indica que se trata de un modelo de difusion (generacion de imagenes o video) en lugar de un modelo de lenguaje, aunque no se ha podido confirmar la tarea concreta ni la pipeline asociada porque el campo correspondiente no esta informado.
+Overdog/jsxzs_model es un modelo publicado en Hugging Face por el usuario Overdog del que la informacion publica disponible es minima. El repositorio esta etiquetado con las librerias diffusers y safetensors, lo que indica que se trata de un modelo de difusion (generacion de imagenes o video) en lugar de un modelo de lenguaje, aunque no se ha podido confirmar la tarea concreta ni la pipeline asociada porque el campo correspondiente no esta informado.
 
-El dato mas llamativo es el tamano del repositorio, de 1782,3 GB (aproximadamente 1,74 TB), y el acceso restringido: para descargarlo es necesario aceptar condiciones adicionales en HuggingFace. La ficha se ha creado el 25 de abril de 2026 y se ha actualizado el 19 de septiembre de 2026, y acumula cero descargas y cero likes, por lo que no existe validacion por parte de la comunidad.
+El dato mas llamativo es el tamano del repositorio, de 1782,3 GB (aproximadamente 1,74 TB), y el acceso restringido: para descargarlo es necesario aceptar condiciones adicionales en Hugging Face. La ficha se ha creado el 25 de abril de 2026 y se ha actualizado el 19 de septiembre de 2026, y acumula cero descargas y cero likes, por lo que no existe validacion por parte de la comunidad.
 
 No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni resultados de benchmarks. Las busquedas web realizadas no han devuelto ninguna fuente relevante sobre este modelo (unicamente paginas de soporte de Microsoft sin relacion alguna), por lo que buena parte de los apartados de esta ficha se marcan como "no disponible". Cualquier evaluacion seria requiere solicitar acceso al repositorio y descargar los pesos.
 
@@ -18,7 +18,7 @@ No se ha publicado informacion sobre arquitectura, numero de parametros, longitu
 | Longitud de contexto | no disponible (no aplicable si se confirma que es un modelo de difusion) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | cc-by-4.0 (acceso restringido: requiere aceptar condiciones en HuggingFace) |
+| Licencia | cc-by-4.0 (acceso restringido: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors (segun las etiquetas del repositorio) |
 | Tamano del repositorio | 1782,3 GB |
 | Libreria declarada | diffusers |
@@ -29,7 +29,7 @@ No se ha publicado informacion sobre arquitectura, numero de parametros, longitu
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura, el proceso de entrenamiento, el volumen de datos utilizado, la composicion del dataset ni si se aplicaron tecnicas de ajuste como RLHF, DPO o similares. La unica pista tecnica disponible son las etiquetas del repositorio (diffusers y safetensors), que apuntan a un modelo de difusion distribuido en el formato de pesos safetensors y pensado para ejecutarse con la libreria diffusers de HuggingFace.
+No se ha publicado informacion sobre la arquitectura, el proceso de entrenamiento, el volumen de datos utilizado, la composicion del dataset ni si se aplicaron tecnicas de ajuste como RLHF, DPO o similares. La unica pista tecnica disponible son las etiquetas del repositorio (diffusers y safetensors), que apuntan a un modelo de difusion distribuido en el formato de pesos safetensors y pensado para ejecutarse con la libreria diffusers de Hugging Face.
 
 El tamano del repositorio, de 1782,3 GB, es coherente con un modelo de gran escala o con un repositorio que contiene multiples variantes, checkpoints intermedios o pesos en varias precisiones, pero no es posible determinar cual de estos escenarios se cumple sin acceder al contenido. No se dispone de informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, destilacion de pasos, etc.). Cualquier afirmacion al respecto seria especulativa.
 
@@ -38,7 +38,7 @@ El tamano del repositorio, de 1782,3 GB, es coherente con un modelo de gran esca
 No se ha publicado informacion verificable sobre las capacidades del modelo. A partir de los unicos datos disponibles (etiqueta diffusers y pesos safetensors) se puede indicar lo siguiente, siempre como hipotesis pendiente de confirmacion:
 
 - Generacion de imagenes o video mediante un pipeline de difusion, si se confirma que la etiqueta diffusers describe correctamente el modelo.
-- Integracion con el ecosistema diffusers de HuggingFace para carga de pesos en formato safetensors.
+- Integracion con el ecosistema diffusers de Hugging Face para carga de pesos en formato safetensors.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible (poco probable en un modelo de difusion).
 - Capacidades multilingues: no disponible.
@@ -71,7 +71,7 @@ No se dispone de metricas objetivas (FID, CLIP score, IS, o cualquier otra metri
 - Viabilidad en GPU de consumo: no disponible. Dado el tamano del repositorio, es probable que se trate de un modelo de gran escala, pero no se puede confirmar ni descartar su ejecucion en GPUs de consumo.
 - Opciones de despliegue: la libreria declarada es diffusers, por lo que el despliegue pasaria previsiblemente por diffusers, y potencialmente por interfaces graficas basadas en ella como ComfyUI. Herramientas orientadas a modelos de lenguaje (llama.cpp, Ollama, vLLM, TGI) no son aplicables si se confirma que es un modelo de difusion.
 - Latencia y throughput estimados: no disponible.
-- Nota sobre acceso: al tratarse de un repositorio con acceso restringido, es necesario solicitar y obtener autorizacion en HuggingFace antes de poder descargar los pesos.
+- Nota sobre acceso: al tratarse de un repositorio con acceso restringido, es necesario solicitar y obtener autorizacion en Hugging Face antes de poder descargar los pesos.
 
 ## Comparativa con modelos similares
 
@@ -79,12 +79,12 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Overdog/jsxzs_model | no disponible | no disponible | cc-by-4.0 con acceso restringido | no disponible | gated en HuggingFace |
+| Overdog/jsxzs_model | no disponible | no disponible | cc-by-4.0 con acceso restringido | no disponible | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated. Es necesario aceptar condiciones adicionales en HuggingFace y obtener autorizacion antes de descargar los pesos, lo que puede retrasar o impedir su evaluacion.
+- Acceso restringido: el repositorio es gated. Es necesario aceptar condiciones adicionales en Hugging Face y obtener autorizacion antes de descargar los pesos, lo que puede retrasar o impedir su evaluacion.
 - Falta total de documentacion: no hay model card con arquitectura, datos de entrenamiento, licencia de los datos ni instrucciones de uso. Esto impide evaluar su idoneidad para produccion.
 - Ausencia de validacion comunitaria: cero descargas y cero likes. No existe evidencia externa de que el modelo funcione segun lo esperado ni de que los pesos esten completos o sean utilizables.
 - Sesgos conocidos: no disponible. Al no existir documentacion sobre el dataset de entrenamiento, no se puede evaluar el sesgo de las salidas.
@@ -98,7 +98,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Overdog/jsxzs_model
+- Modelo en Hugging Face: https://huggingface.co/Overdog/jsxzs_model
 - Licencia cc-by-4.0: https://creativecommons.org/licenses/by/4.0/
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - Formato safetensors: https://github.com/huggingface/safetensors

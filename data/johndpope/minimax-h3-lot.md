@@ -88,7 +88,7 @@ No disponible la comparacion con otros modelos de generacion de video de la mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/johndpope/MiniMax-H3-LoT
+- Repositorio Hugging Face: https://huggingface.co/johndpope/MiniMax-H3-LoT
 - Licencia: https://huggingface.co/johndpope/MiniMax-H3-LoT/blob/main/LICENSE
 - Aviso legal: https://huggingface.co/johndpope/MiniMax-H3-LoT/blob/main/NOTICE
 - Paper Level-of-Token (Nakayama et al.): https://arxiv.org/abs/2610.05816

@@ -82,7 +82,7 @@ La principal diferencia es que DeepSeek-R1-Distill-Qwen-7B esta especializado en
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Lufel6848/DeepSeek-R1-Distill-Qwen-7B-to-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/Lufel6848/DeepSeek-R1-Distill-Qwen-7B-to-GGUF
 - Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Repositorio de DeepSeek-R1 en GitHub: https://github.com/deepseek-ai/DeepSeek-R1
 - Documentacion de llama.cpp: https://github.com/ggml-org/llama.cpp

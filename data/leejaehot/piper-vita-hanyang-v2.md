@@ -6,7 +6,7 @@ El modelo `leejaehot/piper-vita-hanyang-v2` es una política de robótica basada
 
 La relevancia de este modelo reside en su aplicación directa en el campo del aprendizaje robótico por imitación, un área activa de investigación que busca transferir habilidades demostradas por humanos a robots. Al ser una política VITA, se espera que el modelo procese entradas visuales de dos cámaras (frontal y derecha) y genere acciones de control del brazo robótico a una frecuencia de 10 Hz. El modelo tiene aproximadamente 31,2 millones de parámetros, un tamaño relativamente compacto que lo hace adecuado para despliegues en sistemas embebidos o de bajo coste, aunque no se han publicado especificaciones detalladas de arquitectura interna ni de rendimiento.
 
-A pesar de ser un modelo de nicho, su publicación en HuggingFace con formato safetensors y pipeline de robótica lo convierte en un recurso útil para investigadores y desarrolladores que trabajan con el robot Piper o que desean estudiar políticas VITA en tareas de manipulación de precisión. No obstante, la documentación disponible es muy limitada, y gran parte de los detalles técnicos (arquitectura exacta, proceso de entrenamiento, benchmarks) no están accesibles públicamente.
+A pesar de ser un modelo de nicho, su publicación en Hugging Face con formato safetensors y pipeline de robótica lo convierte en un recurso útil para investigadores y desarrolladores que trabajan con el robot Piper o que desean estudiar políticas VITA en tareas de manipulación de precisión. No obstante, la documentación disponible es muy limitada, y gran parte de los detalles técnicos (arquitectura exacta, proceso de entrenamiento, benchmarks) no están accesibles públicamente.
 
 ## Especificaciones técnicas
 

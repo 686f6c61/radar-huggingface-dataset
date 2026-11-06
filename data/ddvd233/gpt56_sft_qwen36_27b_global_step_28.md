@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gpt56_sft_qwen36_27b (global step 28) es un ajuste supervisado del modelo base Qwen/Qwen3.6-27B, publicado por el usuario ddvd233 en HuggingFace. Se trata de un artefacto de investigación orientado al dominio médico: el modelo se ha entrenado sobre trazas generadas por GPT-5.6 (destilación de un profesor más capaz) y se ha evaluado en un único benchmark, HealthBench Professional, bajo el protocolo oficial sin herramientas. El repositorio contiene los pesos fusionados en bf16 a partir de un checkpoint de entrenamiento en formato verl FSDP.
+gpt56_sft_qwen36_27b (global step 28) es un ajuste supervisado del modelo base Qwen/Qwen3.6-27B, publicado por el usuario ddvd233 en Hugging Face. Se trata de un artefacto de investigación orientado al dominio médico: el modelo se ha entrenado sobre trazas generadas por GPT-5.6 (destilación de un profesor más capaz) y se ha evaluado en un único benchmark, HealthBench Professional, bajo el protocolo oficial sin herramientas. El repositorio contiene los pesos fusionados en bf16 a partir de un checkpoint de entrenamiento en formato verl FSDP.
 
 El modelo tiene 27.356.728.560 parámetros (unos 27,36 mil millones) y ocupa 54,7 GB en el repositorio, lo que corresponde exactamente a pesos en bf16. El resultado declarado es una exactitud ajustada por longitud de 0,419 en HealthBench Professional, frente a 0,381 del modelo base sin entrenar, una mejora de 0,038 puntos absolutos. El autor indica que existe una variante de 9B del mismo experimento (ddvd233/gpt56_sft_qwen35_9b_global_step_28).
 
@@ -98,7 +98,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddvd233/gpt56_sft_qwen36_27b_global_step_28
+- Modelo en Hugging Face: https://huggingface.co/ddvd233/gpt56_sft_qwen36_27b_global_step_28
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Variante de 9B del mismo experimento: https://huggingface.co/ddvd233/gpt56_sft_qwen35_9b_global_step_28
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo. Las consultas devolvieron unicamente resultados deportivos de la NFL (nfl.com y subdominios), sin relacion alguna con el modelo, su entrenamiento o sus benchmarks, por lo que no se listan como fuentes.

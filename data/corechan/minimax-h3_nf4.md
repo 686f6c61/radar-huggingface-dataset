@@ -27,7 +27,7 @@ El modelo original MiniMax-H3 se basa en un Diffusion Transformer (DiT) diseñad
 
 - Generación de vídeo de texto con resolución 2K y audio estéreo 3D sincronizado.
 - Síntesis de audio sincronizado con el contenido visual generado.
-- Capacidades de generación de texto (tag `text-generation` en HuggingFace), aunque su propósito principal es la creación de vídeo.
+- Capacidades de generación de texto (tag `text-generation` en Hugging Face), aunque su propósito principal es la creación de vídeo.
 - Soporte de herramientas y llamadas a funciones: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible (no se especifican idiomas).
@@ -68,7 +68,7 @@ No disponible. No se han proporcionado datos comparativos con otros modelos de g
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/corechan/MiniMax-H3_NF4
+- Repositorio Hugging Face del modelo: https://huggingface.co/corechan/MiniMax-H3_NF4
 - Modelo original de MiniMax: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - GitHub de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Repositorio de la comunidad DiffSynth-Studio con cuantización NF4: https://huggingface.co/DiffSynth-Studio/MiniMax-H3-NF4

@@ -81,7 +81,7 @@ No se dispone de información sobre otros modelos comparables de ASR para lengua
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harshrathod18/indic-transcribe-core-8bit-onnx
+- Repositorio Hugging Face: https://huggingface.co/harshrathod18/indic-transcribe-core-8bit-onnx
 - Modelo base: https://huggingface.co/bodhan-ai/indic-transcribe-core
 - Licencia (archivo LICENSE en el repositorio): https://huggingface.co/harshrathod18/indic-transcribe-core-8bit-onnx/blob/main/LICENSE
 - Registro de cambios (NOTICE.md en el repositorio): https://huggingface.co/harshrathod18/indic-transcribe-core-8bit-onnx/blob/main/NOTICE.md

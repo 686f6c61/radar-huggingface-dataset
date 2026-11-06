@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.5-4B-heretic-LoRA-reproduce es una reproduccion de un ajuste fino mediante LoRA sobre el modelo base Qwen/Qwen3.5-4B, publicado por el usuario VINAY-UMRETHE en HuggingFace. El sufijo "heretic" hace referencia a la tecnica de "abliteration" o decensurado, un procedimiento que busca eliminar los mecanismos de rechazo aprendidos por el modelo durante el alineamiento (RLHF/DPO), de modo que el modelo responda a peticiones que el original rechazaria. El repositorio se presenta explicitamente como una reproduccion ("reproduce") de un procedimiento previo, no como un modelo original.
+Qwen3.5-4B-heretic-LoRA-reproduce es una reproduccion de un ajuste fino mediante LoRA sobre el modelo base Qwen/Qwen3.5-4B, publicado por el usuario VINAY-UMRETHE en Hugging Face. El sufijo "heretic" hace referencia a la tecnica de "abliteration" o decensurado, un procedimiento que busca eliminar los mecanismos de rechazo aprendidos por el modelo durante el alineamiento (RLHF/DPO), de modo que el modelo responda a peticiones que el original rechazaria. El repositorio se presenta explicitamente como una reproduccion ("reproduce") de un procedimiento previo, no como un modelo original.
 
-El modelo hereda la arquitectura y el tamano del Qwen3.5-4B base, un transformer denso de aproximadamente 4.000 millones de parametros, pero la ficha de HuggingFace no aporta detalles verificables sobre hiperparametros del LoRA, dataset de decensurado empleado ni resultados de evaluacion. El pipeline declarado es image-text-to-text, lo que sugiere que el modelo base incorpora capacidades multimodales de vision, aunque esta informacion no esta confirmada en los metadatos disponibles.
+El modelo hereda la arquitectura y el tamano del Qwen3.5-4B base, un transformer denso de aproximadamente 4.000 millones de parametros, pero la ficha de Hugging Face no aporta detalles verificables sobre hiperparametros del LoRA, dataset de decensurado empleado ni resultados de evaluacion. El pipeline declarado es image-text-to-text, lo que sugiere que el modelo base incorpora capacidades multimodales de vision, aunque esta informacion no esta confirmada en los metadatos disponibles.
 
 La relevancia de esta ficha es limitada: se trata de un repositorio con cero descargas y cero likes, de acceso restringido (gated), publicado el 31 de octubre de 2026, y sin documentacion tecnica publicada. Resulta util como referencia de la categoria de modelos "abliterated" y como advertencia sobre los riesgos de usar pesos decensurados en produccion, pero no como modelo recomendable para despliegues reales.
 
@@ -82,13 +82,13 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 - Idiomas: no se declaran idiomas soportados en el repositorio; no se puede garantizar cobertura multilingue.
 - Contexto: la longitud de contexto no esta documentada; no se debe asumir la del base sin verificacion.
 - Licencia: apache-2.0 permite uso comercial, pero el modelo base Qwen3.5-4B puede tener condiciones adicionales que prevalecen; es necesario revisar la licencia del base antes de cualquier uso comercial.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que limita la distribucion y la reproducibilidad.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que limita la distribucion y la reproducibilidad.
 - Repositorio sin traccion: cero descargas y cero likes en la fecha de publicacion; no hay evidencia de validacion por parte de la comunidad.
 - Falta de documentacion: no se aportan hiperparametros, dataset, metodologia ni benchmarks, lo que impide verificar la calidad del ajuste.
 - Repositorio de 0,1 GB: contiene previsiblemente solo adaptadores LoRA; requiere descargar el base Qwen3.5-4B por separado, con sus propios requisitos de acceso.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VINAY-UMRETHE/Qwen3.5-4B-heretic-LoRA-reproduce
+- Hugging Face: https://huggingface.co/VINAY-UMRETHE/Qwen3.5-4B-heretic-LoRA-reproduce
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

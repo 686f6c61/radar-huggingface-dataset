@@ -63,7 +63,7 @@ La pendiente de recuperación frente a lo solicitado es de 0.04 a 0.10, lo que i
 
 - Entrenamiento: se realizó en una RTX 3090 (24 GB VRAM) en 22 minutos para 200 pasos, con resolución 256x256. No se requieren GPUs de gama alta para el entrenamiento de este adaptador.
 - Inferencia: el adaptador en sí es muy ligero (19.52 MiB), pero requiere cargar el modelo base OmniGen2, cuyo tamaño no se especifica. Se estima que OmniGen2 necesita al menos 8-16 GB de VRAM para inferencia, aunque este dato no está confirmado.
-- El adaptador se puede cargar con la librería PEFT de HuggingFace sobre el modelo base. No se mencionan opciones de despliegue como vLLM, llama.cpp u Ollama, ya que no es un modelo de texto.
+- El adaptador se puede cargar con la librería PEFT de Hugging Face sobre el modelo base. No se mencionan opciones de despliegue como vLLM, llama.cpp u Ollama, ya que no es un modelo de texto.
 - No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyLlama-1.1B-Chat-v1.0-W8A8-Dynamic-Asym-e2e (este) | 1,1B | no disponible (base: 2048) | W8A8 dinamica asimetrica | no disponible | HuggingFace, cuenta de testing |
-| TinyLlama-1.1B-Chat-v1.0 (base) | 1,1B | 2048 | fp16/bf16 | Apache 2.0 (segun el modelo base) | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | fp16/bf16, GGUF, AWQ | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,7B | 8192 | fp16/bf16, GGUF | Apache 2.0 | HuggingFace |
+| TinyLlama-1.1B-Chat-v1.0-W8A8-Dynamic-Asym-e2e (este) | 1,1B | no disponible (base: 2048) | W8A8 dinamica asimetrica | no disponible | Hugging Face, cuenta de testing |
+| TinyLlama-1.1B-Chat-v1.0 (base) | 1,1B | 2048 | fp16/bf16 | Apache 2.0 (segun el modelo base) | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | fp16/bf16, GGUF, AWQ | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,7B | 8192 | fp16/bf16, GGUF | Apache 2.0 | Hugging Face |
 
 La comparativa debe tomarse con cautela: la licencia del checkpoint cuantizado no esta declarada, aunque el modelo base TinyLlama se distribuye bajo Apache 2.0. Los modelos alternativos ofrecen contextos mas largos y licencias claras, ademas de versiones cuantizadas mantenidas por sus propios autores.
 
@@ -85,7 +85,7 @@ La comparativa debe tomarse con cautela: la licencia del checkpoint cuantizado n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8-Dynamic-Asym-e2e
+- Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8-Dynamic-Asym-e2e
 - Modelo base TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio TinyLlama: https://github.com/jzhang38/TinyLlama
 - Libreria compressed-tensors: https://github.com/neuralmagic/compressed-tensors

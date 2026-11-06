@@ -80,7 +80,7 @@ Las tres variantes comparten la misma arquitectura y capacidades. La diferencia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/testmymodel112/Qwen3.8-27B-Uncensored-FP8
+- Hugging Face: https://huggingface.co/testmymodel112/Qwen3.8-27B-Uncensored-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo FP8 oficial: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - OrcaRouter (web): https://www.orcarouter.ai

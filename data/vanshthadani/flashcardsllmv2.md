@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlashCardsLLMv2 es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario vanshthadani en HuggingFace. Se trata de un modelo de generación de texto orientado a la creación de tarjetas de estudio o *flashcards*, según se deduce del propio nombre del repositorio y de la serie a la que pertenece (existe una versión previa, FlashCardsLLM). El modelo base empleado es la variante ya cuantizada a 4 bits de Qwen2.5-1.5B-Instruct (`unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit`), y el entrenamiento se realizó con la librería Unsloth, que según la model card permitió un entrenamiento "2x más rápido".
+FlashCardsLLMv2 es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario vanshthadani en Hugging Face. Se trata de un modelo de generación de texto orientado a la creación de tarjetas de estudio o *flashcards*, según se deduce del propio nombre del repositorio y de la serie a la que pertenece (existe una versión previa, FlashCardsLLM). El modelo base empleado es la variante ya cuantizada a 4 bits de Qwen2.5-1.5B-Instruct (`unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit`), y el entrenamiento se realizó con la librería Unsloth, que según la model card permitió un entrenamiento "2x más rápido".
 
 La relevancia de esta ficha es limitada y conviene ser honesto al respecto: el repositorio no incluye información sobre el dataset de entrenamiento, hiperparámetros, número de pasos, metodología (LoRA, QLoRA, ajuste completo) ni resultados de evaluación. La model card es una plantilla mínima generada automáticamente por Unsloth. Con 0 descargas y 0 *likes* en el momento de la consulta, se trata de un modelo experimental de un autor individual, no de un lanzamiento con soporte.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FlashCardsLLMv2 | 1,54 B (base) | 32.768 tokens (heredado del base) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, muy extendido |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | Apache-2.0 | HuggingFace |
+| FlashCardsLLMv2 | 1,54 B (base) | 32.768 tokens (heredado del base) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, muy extendido |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | Apache-2.0 | Hugging Face |
 
 Los datos de los tres modelos de referencia proceden de sus documentaciones públicas y conviene verificarlos contra las model cards oficiales antes de tomar decisiones. La comparación de rendimiento no es posible porque FlashCardsLLMv2 no publica ninguna métrica: la única ventaja diferencial defendible sería la especialización en generación de tarjetas, que tampoco está cuantificada.
 
@@ -90,10 +90,10 @@ Los datos de los tres modelos de referencia proceden de sus documentaciones púb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vanshthadani/FlashCardsLLMv2
+- Modelo en Hugging Face: https://huggingface.co/vanshthadani/FlashCardsLLMv2
 - Version previa del modelo: https://huggingface.co/vanshthadani/FlashCardsLLM
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Endpoint de la version v1 en FriendliAI: https://friendli.ai/models/vanshthadani/flashcards-llm
-- Perfil del autor en HuggingFace: https://huggingface.co/vanshthadani
+- Perfil del autor en Hugging Face: https://huggingface.co/vanshthadani
 - Perfil del autor en GitHub: https://github.com/vanshthadani

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`BeMujic/ur5e_molmoact2_pp_yellow` es un modelo publicado en HuggingFace por el usuario BeMujic bajo licencia Apache 2.0. Por su identificador y por el tamaño de los pesos (5.591.928.368 parámetros según los safetensors del repositorio), se trata de un modelo de política (policy) orientado a control robótico, presumiblemente derivado o adaptado de la familia MolmoAct de AI2, y asociado al brazo robótico Universal Robots UR5e. El sufijo "pp_yellow" sugiere una especialización sobre una tarea o escenario concreto (posiblemente "pick and place" con un objeto amarillo), aunque el autor no documenta esta nomenclatura en la model card.
+`BeMujic/ur5e_molmoact2_pp_yellow` es un modelo publicado en Hugging Face por el usuario BeMujic bajo licencia Apache 2.0. Por su identificador y por el tamaño de los pesos (5.591.928.368 parámetros según los safetensors del repositorio), se trata de un modelo de política (policy) orientado a control robótico, presumiblemente derivado o adaptado de la familia MolmoAct de AI2, y asociado al brazo robótico Universal Robots UR5e. El sufijo "pp_yellow" sugiere una especialización sobre una tarea o escenario concreto (posiblemente "pick and place" con un objeto amarillo), aunque el autor no documenta esta nomenclatura en la model card.
 
 La relevancia de este tipo de modelos radica en el creciente interés por los modelos de visión-lenguaje-acción (VLA) que traducen instrucciones en lenguaje natural e imágenes de cámara en comandos motores de bajo nivel para robots manipuladores. MolmoAct, el linaje del que parece provenir, es una familia de modelos abiertos de AI2 diseñada precisamente para razonamiento espacial y ejecución de acciones en entornos reales.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| BeMujic/ur5e_molmoact2_pp_yellow | 5,59 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Sin benchmarks ni model card sustantiva |
+| BeMujic/ur5e_molmoact2_pp_yellow | 5,59 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Sin benchmarks ni model card sustantiva |
 | MolmoAct (AI2) | no disponible en esta consulta | no disponible | no disponible en esta consulta | no disponible en esta consulta | Familia de referencia probable; datos no verificados aquí |
 | Otras políticas VLA abiertas (p. ej. OpenVLA, π0) | no disponible en esta consulta | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
@@ -82,5 +82,5 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeMujic/ur5e_molmoact2_pp_yellow
+- Modelo en Hugging Face: https://huggingface.co/BeMujic/ur5e_molmoact2_pp_yellow
 - No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repos, demos) asociados a este modelo concreto.

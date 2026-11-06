@@ -65,7 +65,7 @@ No se dispone de modelos comparables directos, ya que SwitchWorld es un adaptado
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | SwitchWorld (adaptadores) | LoRA sobre LingBot-World | no disponible | no disponible | Apache-2.0 | Repositorio publico |
-| LingBot-World (base) | World model | no disponible | no disponible | no disponible | HuggingFace |
+| LingBot-World (base) | World model | no disponible | no disponible | no disponible | Hugging Face |
 | Wan2.2 | Generacion de video | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,7 +79,7 @@ No se dispone de modelos comparables directos, ya que SwitchWorld es un adaptado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PencilHu/SwitchWorld
+- Modelo en Hugging Face: https://huggingface.co/PencilHu/SwitchWorld
 - Modelo base: https://huggingface.co/robbyant/lingbot-world-base-cam
 - Codigo (GitHub): https://github.com/yizhiqianbi/SwitchWorld
 - Galeria de resultados: https://yizhiqianbi.github.io/SwitchWorld-Gallery/archive/

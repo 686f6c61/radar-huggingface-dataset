@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`incidentbench-nokev_nonamed_basis_lt2026` es un adaptador LoRA (r=16) desarrollado por el usuario de HuggingFace `chiffonng` sobre el modelo base Qwen2.5-7B-Instruct. Su propósito es concreto y acotado: actuar como clasificador conjunto para IncidentBench, una tarea de evaluación en la que el modelo debe emitir una única respuesta que identifique simultáneamente si existe un incidente y, en su caso, a cuál de siete dominios de riesgo MIT pertenece, o bien declarar "No incident (potential only)".
+`incidentbench-nokev_nonamed_basis_lt2026` es un adaptador LoRA (r=16) desarrollado por el usuario de Hugging Face `chiffonng` sobre el modelo base Qwen2.5-7B-Instruct. Su propósito es concreto y acotado: actuar como clasificador conjunto para IncidentBench, una tarea de evaluación en la que el modelo debe emitir una única respuesta que identifique simultáneamente si existe un incidente y, en su caso, a cuál de siete dominios de riesgo MIT pertenece, o bien declarar "No incident (potential only)".
 
 El adaptador forma parte de un conjunto de brazos experimentales del proyecto IncidentBench. En concreto, este brazo corresponde a la variante con corte temporal anterior a 2026 ("lt2026"), sin conocimiento externo ("nokev"), con respuestas no nombradas ("nonamed") y con una justificación breve del dominio de incidente ("basis"). El objetivo es medir cómo influye la petición de una justificación explícita en la precisión de la clasificación conjunta.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-nokev_nonamed_basis_lt2026 | LoRA r=16 sobre 7B | no disponible | Clasificación de incidentes IncidentBench | other | HuggingFace |
-| Qwen2.5-7B-Instruct (base) | 7B | no disponible en la informacion | Propósito general, instrucciones | no disponible en la informacion | HuggingFace |
-| Otras variantes IncidentBench del mismo autor | LoRA sobre 7B | no disponible | Clasificación de incidentes (sin "basis", con conocimiento, etc.) | other | HuggingFace |
+| incidentbench-nokev_nonamed_basis_lt2026 | LoRA r=16 sobre 7B | no disponible | Clasificación de incidentes IncidentBench | other | Hugging Face |
+| Qwen2.5-7B-Instruct (base) | 7B | no disponible en la informacion | Propósito general, instrucciones | no disponible en la informacion | Hugging Face |
+| Otras variantes IncidentBench del mismo autor | LoRA sobre 7B | no disponible | Clasificación de incidentes (sin "basis", con conocimiento, etc.) | other | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_basis_lt2026
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-nokev_nonamed_basis_lt2026
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

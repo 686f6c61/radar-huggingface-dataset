@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ronaldo-GOAT/pose6daug-gr00t-baseline120-newcode-bs64-30k` es un checkpoint publicado en HuggingFace por el usuario Ronaldo-GOAT. Se trata de un artefacto de pesos de 145,2 GB, sin ficha de modelo asociada: no declara pipeline, licencia, idiomas ni formato de pesos, y en el momento de la consulta acumula 0 descargas y 1 like. No se ha encontrado documentación, paper ni anuncio que describa el modelo, por lo que la mayor parte de sus especificaciones son desconocidas.
+El repositorio `Ronaldo-GOAT/pose6daug-gr00t-baseline120-newcode-bs64-30k` es un checkpoint publicado en Hugging Face por el usuario Ronaldo-GOAT. Se trata de un artefacto de pesos de 145,2 GB, sin ficha de modelo asociada: no declara pipeline, licencia, idiomas ni formato de pesos, y en el momento de la consulta acumula 0 descargas y 1 like. No se ha encontrado documentación, paper ni anuncio que describa el modelo, por lo que la mayor parte de sus especificaciones son desconocidas.
 
 El nombre del repositorio es la única fuente de información disponible sobre su naturaleza. Los segmentos `pose6d`, `gr00t`, `baseline120`, `bs64` y `30k` sugieren, respectivamente, un entrenamiento sobre datos de pose 6D, una posible relación con la familia de modelos fundacionales para robótica Isaac GR00T de NVIDIA, una configuración base de 120 (posiblemente longitud de secuencia, horizonte de acción o resolución de imagen), un tamaño de lote de 64 y 30.000 pasos de entrenamiento. También aparecen los segmentos `aug` (aumento de datos) y `newcode`, que apuntan a un fine-tuning experimental derivado de un baseline previo. Estas lecturas son inferencias a partir de la convención de nombres habitual en proyectos de investigación en robótica y no están confirmadas por el autor.
 
@@ -82,7 +82,7 @@ No disponible. No se dispone de parámetros, contexto, rendimiento ni licencia d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| pose6daug-gr00t-baseline120-newcode-bs64-30k | no disponible | no disponible | no disponible | HuggingFace (repo privado de facto, sin ficha) | tamano 145,2 GB |
+| pose6daug-gr00t-baseline120-newcode-bs64-30k | no disponible | no disponible | no disponible | Hugging Face (repo privado de facto, sin ficha) | tamano 145,2 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,6 +99,6 @@ No disponible. No se dispone de parámetros, contexto, rendimiento ni licencia d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ronaldo-GOAT/pose6daug-gr00t-baseline120-newcode-bs64-30k
+- Hugging Face: https://huggingface.co/Ronaldo-GOAT/pose6daug-gr00t-baseline120-newcode-bs64-30k
 
 La búsqueda web realizada no devolvió ningún enlace relevante sobre el modelo. Los resultados obtenidos corresponden a páginas sobre el futbolista Cristiano Ronaldo (Wikipedia, Instagram, web oficial, YouTube) y son coincidencias léxicas con el nombre de usuario del autor, sin relación con el repositorio. No se han encontrado papers, blogs, repositorios de código ni demos asociados a este checkpoint.

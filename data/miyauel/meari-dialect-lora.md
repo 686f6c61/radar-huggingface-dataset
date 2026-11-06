@@ -89,7 +89,7 @@ No se dispone de datos publicados sobre modelos comparables de conversion de dia
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Miyauel/meari-dialect-lora
+- Hugging Face del adaptador: https://huggingface.co/Miyauel/meari-dialect-lora
 - Modelo base: https://huggingface.co/NiuTrans/LMT-60-1.7B
 - GGUF del modelo base usado por Meari: https://huggingface.co/mradermacher/LMT-60-1.7B-GGUF
 - Repositorio de Meari: https://github.com/Miyauel/Meari

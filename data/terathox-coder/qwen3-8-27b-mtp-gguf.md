@@ -95,7 +95,7 @@ La comparación con el modelo base es la más relevante: esta cuantización ofre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Terathox-Coder/Qwen3.8-27B-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Terathox-Coder/Qwen3.8-27B-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de llama.cpp: no disponible en la información proporcionada
 - Documentación de Ollama: no disponible en la información proporcionada

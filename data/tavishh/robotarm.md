@@ -72,7 +72,7 @@ El checkpoint publicado es el de menor L1 de los dos entrenamientos comparados, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tavishh/robotarm (ACT + CVAE sobre SO-101) | 51,6 M | no disponible | L1 0,500 en holdout de 30 episodios (paso 60.000) | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| tavishh/robotarm (ACT + CVAE sobre SO-101) | 51,6 M | no disponible | L1 0,500 en holdout de 30 episodios (paso 60.000) | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Baseline behavioral cloning sin CVAE (mismo trabajo) | no disponible | no disponible | L1 0,513 en el mismo holdout (paso 80.000) | no disponible | no distribuido públicamente según la información disponible |
 | Otras politicas ACT o de imitación para SO-101 | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
@@ -93,7 +93,7 @@ Solo se dispone de comparación interna frente a la línea base del mismo equipo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tavishh/robotarm
+- Modelo en Hugging Face: https://huggingface.co/tavishh/robotarm
 - Dataset de entrenamiento: https://huggingface.co/datasets/BrutalCaesar/phi_so101_cubes_cylinder_v1
-- Librería LeRobot (HuggingFace): https://github.com/huggingface/lerobot
+- Librería LeRobot (Hugging Face): https://github.com/huggingface/lerobot
 - Paper de ACT (Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware): https://arxiv.org/abs/2304.13705

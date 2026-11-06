@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: al ser un adaptador LoRA, requiere cargar el modelo base Gemma 3 12B. En precision FP16, el modelo base necesita aproximadamente 24 GB de VRAM. Con cuantizacion de 4 bits, puede reducirse a unos 8-10 GB.
 - GPU recomendadas: para el modelo base en FP16 se recomienda una GPU con 24 GB o mas (RTX 3090, RTX 4090, A100, H100). Con cuantizacion, puede ejecutarse en GPUs de 12-16 GB (RTX 4070 Ti, RTX 4080).
 - Compatibilidad con GPU de consumo: si, con cuantizacion del modelo base (por ejemplo, 4 bits) es posible ejecutarlo en GPUs de gama alta de consumo.
-- Opciones de despliegue: el adaptador PEFT puede cargarse con la libreria transformers de HuggingFace. El modelo base puede desplegarse con vLLM, llama.cpp, Ollama o TGI, cargando el adaptador LoRA sobre el modelo base.
+- Opciones de despliegue: el adaptador PEFT puede cargarse con la libreria transformers de Hugging Face. El modelo base puede desplegarse con vLLM, llama.cpp, Ollama o TGI, cargando el adaptador LoRA sobre el modelo base.
 - Latencia y throughput: no disponible. Depende del hardware y del modelo base.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ Este adaptador LoRA no es comparable directamente con estos modelos, ya que es u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_poison
+- Repositorio Hugging Face: https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_poison
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Paper de referencia sobre LoRA (citado en la model card): https://arxiv.org/abs/1910.09700

@@ -93,7 +93,7 @@ Respecto a otras familias de tamano comparable (por ejemplo Llama 3.2 1B, Gemma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/qwen3-1.7b-q4f16
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/qwen3-1.7b-q4f16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Artefacto MLC upstream (commit fijado): https://huggingface.co/mlc-ai/Qwen3-1.7B-q4f16_1-MLC/tree/80b3abcec6c3b3f5355dc0cc99cc4fb578f192bc
 - Repositorio del conversor y recetas: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

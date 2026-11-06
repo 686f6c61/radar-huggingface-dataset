@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch19` | 1.418.270.720 | No disponible | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint de *unlearning*, época 19/20 |
-| `locuslab/tofu_ft_phi-1.5` | ~1,4 B (estimado, misma base) | No disponible | No disponible en la información | HuggingFace | Modelo base ajustado sobre TOFU, sin desaprendizaje |
-| `microsoft/phi-1_5` | ~1,3-1,4 B | 2.048 tokens (referencia pública de Phi-1.5) | MIT (referencia pública) | HuggingFace | Modelo original de generación de texto y código |
-| `microsoft/phi-2` | ~2,7 B | 2.048 tokens (referencia pública) | MIT (referencia pública) | HuggingFace | Alternativa de mayor tamaño de la misma familia |
+| `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch19` | 1.418.270.720 | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint de *unlearning*, época 19/20 |
+| `locuslab/tofu_ft_phi-1.5` | ~1,4 B (estimado, misma base) | No disponible | No disponible en la información | Hugging Face | Modelo base ajustado sobre TOFU, sin desaprendizaje |
+| `microsoft/phi-1_5` | ~1,3-1,4 B | 2.048 tokens (referencia pública de Phi-1.5) | MIT (referencia pública) | Hugging Face | Modelo original de generación de texto y código |
+| `microsoft/phi-2` | ~2,7 B | 2.048 tokens (referencia pública) | MIT (referencia pública) | Hugging Face | Alternativa de mayor tamaño de la misma familia |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch19](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch19)
+- [Hugging Face: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch19](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch19)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - Referencia al archivo `ihl_manifest.json` dentro del repositorio del modelo (no se proporciona URL directa en la información disponible).

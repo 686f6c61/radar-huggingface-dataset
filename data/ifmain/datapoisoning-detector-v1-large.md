@@ -6,7 +6,7 @@ DataPoisoning Detector v1 Large es un clasificador de imagenes desarrollado por 
 
 La innovacion principal es la comparacion "three-tap": toma los bloques de encoder 1, 2 y 3 del VAE y los contrasta con la representacion final posterior-mean del mismo VAE, proyectando cada flujo a una rejilla de tokens de 8x8. Esas tres diferencias temprano-a-final se fusionan con los cuatro flujos de caracteristicas antes de la clasificacion transformer. El modelo Large cuenta con 296.264.065 parametros totales (261.838.209 entrenables) y forma parte de una familia de cuatro variantes (Large, Medium, Small y Tiny) donde las mas pequenas aprenden del Large mediante destilacion de objetivos suaves.
 
-Su relevancia actual reside en el auge de herramientas de envenenamiento de datos para proteger obras de artistas frente al scraping. El modelo Large reporta un recall del 97,92% en Nightshade, 95,45% en Glaze, 100% en Mist y 100% en MetaCloak, con una especificidad sobre imagenes limpias del 99,11%. La licencia es Apache 2.0, aunque el acceso esta sujeto a un acuerdo de uso en HuggingFace.
+Su relevancia actual reside en el auge de herramientas de envenenamiento de datos para proteger obras de artistas frente al scraping. El modelo Large reporta un recall del 97,92% en Nightshade, 95,45% en Glaze, 100% en Mist y 100% en MetaCloak, con una especificidad sobre imagenes limpias del 99,11%. La licencia es Apache 2.0, aunque el acceso esta sujeto a un acuerdo de uso en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -111,10 +111,10 @@ Nota del autor: LightShed reporta puntos de operacion especificos por metodo, mi
 
 | Modelo | Parametros totales | Recall Nightshade | Recall Glaze | Especificidad limpia | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| DataPoisoning Detector v1 Large | 296.264.065 | 97,92% (47/48) | 95,45% (63/66) | 99,11% | Apache 2.0 | HuggingFace (acceso con acuerdo) |
-| DataPoisoning Detector v1 Medium | 182.722.433 | 95,83% (46/48) | 93,94% (62/66) | 99,2742% | Apache 2.0 | HuggingFace (acceso con acuerdo) |
-| DataPoisoning Detector v1 Small | 82.635.137 | 100,00% (48/48) | 95,45% (63/66) | 99,0323% | Apache 2.0 | HuggingFace (acceso con acuerdo) |
-| DataPoisoning Detector v1 Tiny | 43.280.257 | 95,83% (46/48) | 95,45% (63/66) | 99,1129% | Apache 2.0 | HuggingFace (acceso con acuerdo) |
+| DataPoisoning Detector v1 Large | 296.264.065 | 97,92% (47/48) | 95,45% (63/66) | 99,11% | Apache 2.0 | Hugging Face (acceso con acuerdo) |
+| DataPoisoning Detector v1 Medium | 182.722.433 | 95,83% (46/48) | 93,94% (62/66) | 99,2742% | Apache 2.0 | Hugging Face (acceso con acuerdo) |
+| DataPoisoning Detector v1 Small | 82.635.137 | 100,00% (48/48) | 95,45% (63/66) | 99,0323% | Apache 2.0 | Hugging Face (acceso con acuerdo) |
+| DataPoisoning Detector v1 Tiny | 43.280.257 | 95,83% (46/48) | 95,45% (63/66) | 99,1129% | Apache 2.0 | Hugging Face (acceso con acuerdo) |
 
 Frente a LightShed (detector externo publicado, sin cifra de parametros disponible en la informacion), este modelo ofrece recall superior en Nightshade (97,92% vs 96,55%), Mist (100% vs 99,84%) y MetaCloak (100% vs 91,77%), pero inferior en Glaze (95,45% vs 97,26%). En especificidad sobre imagen limpia el modelo supera a LightShed en Nightshade, Glaze y MetaCloak, y queda por debajo en Mist (99,11% vs 100%). Los datos de parametros y contexto de LightShed no estan disponibles en la informacion proporcionada.
 
@@ -125,16 +125,16 @@ Frente a LightShed (detector externo publicado, sin cifra de parametros disponib
 - El rendimiento en Glaze local se reporta por separado porque ese subconjunto expuso previamente un fallo del modelo.
 - El modelo excluye CelebA-HQ de entrenamiento, validacion, test y cache de parches; su comportamiento fuera de las distribuciones de entrenamiento no esta caracterizado en la informacion disponible.
 - La inferencia promedia cinco recortes por imagen, lo que multiplica el coste de computo por imagen respecto a clasificadores de un solo paso.
-- Acceso sujeto a un prompt gated en HuggingFace: el usuario debe aceptar procesar solo datos propios o con licencia, respetando derechos de autor, privacidad, consentimiento y obligaciones contractuales.
+- Acceso sujeto a un prompt gated en Hugging Face: el usuario debe aceptar procesar solo datos propios o con licencia, respetando derechos de autor, privacidad, consentimiento y obligaciones contractuales.
 - Licencia Apache 2.0, que en principio permite uso comercial, pero el acuerdo adicional de acceso impone condiciones sobre los datos procesados.
 - Sin senales de adopcion comunitaria: 0 descargas y 0 likes en el momento de la ficha, por lo que no hay validacion externa independiente ni issues conocidos reportados por terceros.
 - No dispone de informacion sobre sesgos especificos, riesgos de alucinacion en sentido generativo (no genera contenido) ni limitaciones de contexto, ya que opera sobre imagenes y no sobre texto.
 
 ## Enlaces
 
-- HuggingFace del modelo Large: https://huggingface.co/ifmain/datapoisoning-detector-v1-large
-- HuggingFace de la variante Tiny: https://huggingface.co/ifmain/datapoisoning-detector-v1-tiny
-- HuggingFace de la variante Small: https://huggingface.co/ifmain/datapoisoning-detector-v1-small
+- Hugging Face del modelo Large: https://huggingface.co/ifmain/datapoisoning-detector-v1-large
+- Hugging Face de la variante Tiny: https://huggingface.co/ifmain/datapoisoning-detector-v1-tiny
+- Hugging Face de la variante Small: https://huggingface.co/ifmain/datapoisoning-detector-v1-small
 - Repositorio de codigo y entrenamiento en GitHub: https://github.com/ifmain/datapoisoning-detector-v1
 - README del repositorio en GitHub: https://github.com/ifmain/datapoisoning-detector-v1/blob/main/README.md
 - Informes de evaluacion (three_tap_run): https://github.com/ifmain/datapoisoning-detector-v1/tree/main/reports/three_tap_run

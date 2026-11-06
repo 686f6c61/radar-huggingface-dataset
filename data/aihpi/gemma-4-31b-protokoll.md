@@ -4,7 +4,7 @@
 
 `aihpi/gemma-4-31b-protokoll` es un adaptador LoRA (PEFT) en aleman publicado por el usuario aihpi sobre el modelo base `google/gemma-4-31B-it`. Su nombre y sus etiquetas (`meeting-minutes`, `summarization`, `parliament`, `public-sector`) indican que esta especializado en la generacion de actas y resumenes de reuniones en el ambito parlamentario y administrativo aleman. El repositorio pesa 0,3 GB, lo que corresponde al tamano tipico de los pesos de un adaptador y no a los pesos completos de un modelo de 31.000 millones de parametros.
 
-El interes de la ficha es limitado pero concreto: se trata de un ajuste fino orientado a dominio sobre una familia de modelos abiertos, un patron habitual en el sector publico europeo, donde las restricciones de soberania de datos empujan a usar pesos descargables y ejecutables en infraestructura propia en lugar de APIs cerradas. El modelo esta restringido por *gating* en HuggingFace y no acumula ninguna descarga ni valoracion en el momento de redactar esta ficha (0 descargas, 0 likes), por lo que no existe evidencia publica de validacion por terceros.
+El interes de la ficha es limitado pero concreto: se trata de un ajuste fino orientado a dominio sobre una familia de modelos abiertos, un patron habitual en el sector publico europeo, donde las restricciones de soberania de datos empujan a usar pesos descargables y ejecutables en infraestructura propia en lugar de APIs cerradas. El modelo esta restringido por *gating* en Hugging Face y no acumula ninguna descarga ni valoracion en el momento de redactar esta ficha (0 descargas, 0 likes), por lo que no existe evidencia publica de validacion por terceros.
 
 La informacion disponible es escasa: no se han publicado detalles de entrenamiento, hiperparametros del LoRA, composicion del dataset, ventana de contexto ni resultados de evaluacion. Todo lo que aparece a continuacion se apoya en los metadatos del repositorio y en las caracteristicas del modelo base heredado, y se marca explicitamente como "no disponible" cuando el dato no consta.
 
@@ -21,7 +21,7 @@ La informacion disponible es escasa: no se han publicado detalles de entrenamien
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Modelo base | `google/gemma-4-31B-it` |
 | Libreria | PEFT |
-| Acceso | Restringido (*gated*): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (*gated*): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0,3 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 17 de septiembre de 2026 |
@@ -75,7 +75,7 @@ No se dispone de informacion sobre adaptadores comparables de resumen de actas p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `aihpi/gemma-4-31b-protokoll` | 31B (base) + LoRA | No disponible | Gemma | Gated en HuggingFace, 0 descargas | Especializado en actas en aleman |
+| `aihpi/gemma-4-31b-protokoll` | 31B (base) + LoRA | No disponible | Gemma | Gated en Hugging Face, 0 descargas | Especializado en actas en aleman |
 | `google/gemma-4-31B-it` | 31B | No disponible | Gemma | Publico (modelo base) | Proposito general, instruido, multilingue |
 | Otros adaptadores de resumen parlamentario | No disponible | No disponible | No disponible | No disponible | No se hallaron referencias en la busqueda realizada |
 
@@ -87,14 +87,14 @@ No se dispone de informacion sobre adaptadores comparables de resumen de actas p
 - Sesgo de dominio: al estar ajustado sobre un corpus parlamentario o administrativo concreto, puede arrastrar el sesgo politico, tematico y de registro de ese corpus hacia contextos distintos.
 - Limitacion idiomatica: declarado unicamente en aleman; su comportamiento en otras lenguas, incluido el castellano, no esta documentado y probablemente degrade.
 - Restricciones del modelo base: la licencia Gemma impone condiciones de uso, obligaciones de atribucion y una politica de uso aceptable que deben revisarse antes de cualquier explotacion comercial.
-- Acceso restringido: el repositorio requiere aceptar condiciones en HuggingFace, lo que anade friccion a la descarga automatizada y al despliegue en pipelines de CI/CD.
+- Acceso restringido: el repositorio requiere aceptar condiciones en Hugging Face, lo que anade friccion a la descarga automatizada y al despliegue en pipelines de CI/CD.
 - Sin versiones cuantizadas oficiales: no se ofrecen pesos GGUF ni AWQ/GPTQ, de modo que cualquier despliegue en hardware modesto exige una conversion propia no verificada por el autor.
 - Fecha de publicacion futura respecto al conocimiento disponible: los metadatos indican creacion en septiembre de 2026, por lo que no existen referencias externas consolidadas sobre el modelo base ni sobre este adaptador.
 - Aviso para produccion: cualquier uso en un proceso administrativo real deberia acompanarse de revision humana obligatoria del acta generada y de un registro de auditoria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aihpi/gemma-4-31b-protokoll
+- Hugging Face: https://huggingface.co/aihpi/gemma-4-31b-protokoll
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Terminos de licencia Gemma: no disponible en la informacion proporcionada
 - Paper, blog o repositorio del autor: no disponible

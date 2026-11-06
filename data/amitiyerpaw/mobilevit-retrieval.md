@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amitiyerpaw/mobilevit-retrieval` es un repositorio de HuggingFace que contiene una implementación propia y reducida de una arquitectura MobileViT orientada a tareas de retrieval (recuperación de información, presumiblemente multimodal texto-imagen dado el contexto de Flickr30k). Lo publica el usuario amitiyerpaw bajo licencia Apache 2.0. No es un modelo entrenado: la model card lo describe explícitamente como "un punto de partida reproducible, no una release de modelo entrenado", y el checkpoint `model.safetensors` se presenta como una inicialización válida solo para pruebas de humo (smoke tests).
+`amitiyerpaw/mobilevit-retrieval` es un repositorio de Hugging Face que contiene una implementación propia y reducida de una arquitectura MobileViT orientada a tareas de retrieval (recuperación de información, presumiblemente multimodal texto-imagen dado el contexto de Flickr30k). Lo publica el usuario amitiyerpaw bajo licencia Apache 2.0. No es un modelo entrenado: la model card lo describe explícitamente como "un punto de partida reproducible, no una release de modelo entrenado", y el checkpoint `model.safetensors` se presenta como una inicialización válida solo para pruebas de humo (smoke tests).
 
 La relevancia de este repositorio es limitada a nivel de producto: con 12 descargas y 0 likes, y sin ninguna puntuación de benchmark declarada, no compite con modelos de retrieval consolidados. Su interés es fundamentalmente didáctico o de experimentación: sirve como andamiaje para reproducir una arquitectura MobileViT (vision transformer ligero para dispositivos móviles que combina sesgos inductivos de CNN con modelado de contexto global de transformer) en un pipeline de retrieval, con `config.json` y `training_args.json` que documentan la configuración generada y la receta de entrenamiento por defecto.
 
@@ -49,7 +49,7 @@ Dado que el checkpoint no está entrenado, los casos de uso realistas se limitan
 - Reproducción de baselines académicos: partir de `config.json` y `training_args.json` para entrenar un MobileViT "small" sobre Flickr30k u otro conjunto imagen-texto, con semillas fijas y comparación contra una línea base de igual capacidad.
 - Prototipado en dispositivos móviles: la familia MobileViT está diseñada para inferencia en hardware limitado, por lo que este andamiaje puede servir para medir consumo de memoria y latencia en un SoC móvil durante fases tempranas de diseño.
 - Docencia y estudio de arquitecturas híbridas CNN-transformer: el código `run.py` permite inspeccionar cómo se compone la fusión "concat mlp" y la normalización BatchNorm en una implementación concreta.
-- Desarrollo de adaptadores de carga personalizados: la model card advierte de que, al ser una implementación propia, las APIs genéricas de `transformers` requieren un adaptador explícito, lo que convierte el repositorio en un caso de estudio para integrar modelos no estándar en un stack de HuggingFace.
+- Desarrollo de adaptadores de carga personalizados: la model card advierte de que, al ser una implementación propia, las APIs genéricas de `transformers` requieren un adaptador explícito, lo que convierte el repositorio en un caso de estudio para integrar modelos no estándar en un stack de Hugging Face.
 - Benchmarking de infraestructura de evaluación: usar la receta Adam + warmup lineal documentada como base para validar plataformas de experiment tracking y comparación multi-semilla.
 
 ## Benchmarks y rendimiento
@@ -71,9 +71,9 @@ No se dispone de métricas de este repositorio que permitan una comparación cua
 
 | Modelo | Parametros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| amitiyerpaw/mobilevit-retrieval | 49.600 (init) | retrieval, sin entrenar | Apache 2.0 | HuggingFace |
+| amitiyerpaw/mobilevit-retrieval | 49.600 (init) | retrieval, sin entrenar | Apache 2.0 | Hugging Face |
 | MobileViT (referencia, arXiv 2110.02178) | no disponible en la informacion | clasificación de visión en móvil | no disponible | paper + implementaciones |
-| MobileViT en transformers (HuggingFace) | no disponible en la informacion | clasificación de visión | Apache 2.0 (transformers) | HuggingFace / GitHub |
+| MobileViT en transformers (Hugging Face) | no disponible en la informacion | clasificación de visión | Apache 2.0 (transformers) | Hugging Face / GitHub |
 | Implementación mwcnn/mobilevit | no disponible en la informacion | clasificación de visión | no disponible | GitHub |
 
 ## Limitaciones y advertencias
@@ -85,12 +85,12 @@ No se dispone de métricas de este repositorio que permitan una comparación cua
 - No hay información sobre idiomas soportados ni sobre limitaciones de contexto (el modelo no tiene contexto textual).
 - Restricciones de licencia: se distribuye bajo Apache 2.0, lo que permite uso comercial del código y los pesos; sin embargo, la model card pide revisar por separado los términos de los datasets externos con los que se combine.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse de forma separada de los valores por defecto incluidos en este repositorio. No mezclar la inicialización con un modelo entrenado en informes.
-- Implementación personalizada: las APIs genéricas de carga de HuggingFace requieren un adaptador explícito.
+- Implementación personalizada: las APIs genéricas de carga de Hugging Face requieren un adaptador explícito.
 - En producción: no usar este artefacto como modelo; tratarlo como plantilla de código y configuración.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amitiyerpaw/mobilevit-retrieval
+- Repositorio Hugging Face: https://huggingface.co/amitiyerpaw/mobilevit-retrieval
 - Perfil del autor: https://huggingface.co/amitiyerpaw
 - Documentación de MobileViT en transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md
 - Paper MobileViT (arXiv 2110.02178): https://arxiv.org/abs/2110.02178

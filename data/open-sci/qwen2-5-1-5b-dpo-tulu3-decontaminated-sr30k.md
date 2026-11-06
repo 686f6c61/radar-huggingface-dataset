@@ -64,10 +64,10 @@ La model card declara un model-index con una unica entrada (`sft__Superior-Reaso
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-sr30k | 1,54 B | 32.768 (heredado) | other | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache 2.0 | HuggingFace, Ollama |
-| ali-elganzory/Qwen2.5-1.5B-DPO-Tulu3-decontaminated | 1,54 B | 32.768 (heredado) | other | HuggingFace |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8.192 | Apache 2.0 | HuggingFace |
+| open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-sr30k | 1,54 B | 32.768 (heredado) | other | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache 2.0 | Hugging Face, Ollama |
+| ali-elganzory/Qwen2.5-1.5B-DPO-Tulu3-decontaminated | 1,54 B | 32.768 (heredado) | other | Hugging Face |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8.192 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este modelo concreto; la comparacion se limita a parametros, contexto y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para este modelo concreto; la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-sr30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/Qwen2.5-1.5B-DPO-Tulu3-decontaminated
 - Modelo original Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Framework LLaMA-Factory: https://github.com/hiyouga/LLaMA-Factory

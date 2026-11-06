@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pythia-1.4b-owm-run2` es un ajuste fino del modelo base `EleutherAI/pythia-1.4b` publicado por el usuario `jaydeepb` en HuggingFace. Se trata de un artefacto de investigación, no de un modelo de propósito general: consiste en una única época de entrenamiento sobre una muestra de 1 millón de secuencias de 128 tokens extraídas de OpenWebMath, un corpus de páginas web con contenido matemático. El modelo se distribuye con licencia Apache 2.0 y pesos en safetensors, con 1.414.647.808 parámetros totales (2,8 GB de repositorio).
+`pythia-1.4b-owm-run2` es un ajuste fino del modelo base `EleutherAI/pythia-1.4b` publicado por el usuario `jaydeepb` en Hugging Face. Se trata de un artefacto de investigación, no de un modelo de propósito general: consiste en una única época de entrenamiento sobre una muestra de 1 millón de secuencias de 128 tokens extraídas de OpenWebMath, un corpus de páginas web con contenido matemático. El modelo se distribuye con licencia Apache 2.0 y pesos en safetensors, con 1.414.647.808 parámetros totales (2,8 GB de repositorio).
 
 Su relevancia no reside en sus capacidades generativas, sino en su papel dentro de un experimento metodológico sobre memorización. El autor lo denomina "run2" y lo describe explícitamente como el conjunto de datos *held-out* fresco que se utiliza para validar un clasificador de predicción de memorización ("predict-before-training validation"). El modelo "run1", ajustado sobre una muestra disjunta, proporciona las etiquetas con las que se entrena dicho clasificador; este "run2" sirve para comprobar si el clasificador acierta qué secuencias memorizará el modelo antes de que entrene sobre ellas.
 
@@ -90,7 +90,7 @@ La comparación relevante es frente al propio modelo base: este `run2` no preten
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/pythia-1.4b-owm-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/pythia-1.4b-owm-run2
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
 - Dataset de ajuste: https://huggingface.co/datasets/open-web-math/open-web-math
 - Repositorio de Pythia (EleutherAI): https://github.com/EleutherAI/pythia

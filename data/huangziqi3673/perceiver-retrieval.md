@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver for Retrieval es un repositorio experimental publicado por el usuario huangziqi3673 en HuggingFace que contiene una implementación propia de una arquitectura Perceiver orientada a tareas de recuperación (retrieval). El modelo se distribuye como un checkpoint de inicialización, no como un modelo entrenado ni evaluado: el propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que los pesos sirven para pruebas de humo (smoke tests) de la arquitectura.
+Perceiver for Retrieval es un repositorio experimental publicado por el usuario huangziqi3673 en Hugging Face que contiene una implementación propia de una arquitectura Perceiver orientada a tareas de recuperación (retrieval). El modelo se distribuye como un checkpoint de inicialización, no como un modelo entrenado ni evaluado: el propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que los pesos sirven para pruebas de humo (smoke tests) de la arquitectura.
 
 La relevancia de esta ficha es limitada desde el punto de vista práctico, pero resulta útil como referencia para desarrolladores que quieran inspeccionar una implementación de Perceiver con fusión tensorial y atención estándar antes de lanzar un entrenamiento completo. El repositorio incluye `main.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huangziqi3673/perceiver-retrieval | 16.576 (inicializacion) | no disponible | sin benchmarks | MIT | HuggingFace |
+| huangziqi3673/perceiver-retrieval | 16.576 (inicializacion) | no disponible | sin benchmarks | MIT | Hugging Face |
 | Perceiver IO (DeepMind) | no disponible en esta ficha | no disponible | resultados publicados en paper | no disponible en esta ficha | repositorio oficial |
-| CLIP (OpenAI) | no disponible en esta ficha | no disponible | resultados publicados | no disponible en esta ficha | HuggingFace |
-| BLIP-2 | no disponible en esta ficha | no disponible | resultados publicados | no disponible en esta ficha | HuggingFace |
+| CLIP (OpenAI) | no disponible en esta ficha | no disponible | resultados publicados | no disponible en esta ficha | Hugging Face |
+| BLIP-2 | no disponible en esta ficha | no disponible | resultados publicados | no disponible en esta ficha | Hugging Face |
 
 La comparación directa no es significativa: el repositorio analizado es un esqueleto de inicialización, mientras que las alternativas citadas son modelos entrenados y evaluados. Los datos de las alternativas no se han verificado en la información proporcionada y se indican como no disponibles.
 
@@ -83,7 +83,7 @@ La comparación directa no es significativa: el repositorio analizado es un esqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangziqi3673/perceiver-retrieval
+- Hugging Face: https://huggingface.co/huangziqi3673/perceiver-retrieval
 - Repositorio de archivos: incluye `main.py`, `README.md`, `config.json`, `training_args.json` y `model.safetensors` en la misma URL.
 - Paper de referencia de Perceiver IO: no disponible en la información proporcionada.
 - Blog o demo oficial: no disponible en la información proporcionada.

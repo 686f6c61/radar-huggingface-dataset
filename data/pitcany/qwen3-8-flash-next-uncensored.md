@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-Uncensored | ~180B (MoE, ~6B activos) | 262K | Apache 2.0 | HuggingFace | Abliterated, BF16 |
-| Qwen3.8-Flash-Next (base) | ~180B (MoE, ~6B activos) | 262K | Apache 2.0 | HuggingFace | Alineado, referencia |
-| Qwen3.8-Flash-Next-Uncensored-FP8 | ~180B (MoE) | 262K | Apache 2.0 | HuggingFace | Cuantizado block-FP8 |
-| Qwen3.8-Flash-Next-Uncensored-MLX | ~180B (MoE) | 262K | Apache 2.0 | HuggingFace | 4/6/8-bit para Apple Silicon |
+| Qwen3.8-Flash-Next-Uncensored | ~180B (MoE, ~6B activos) | 262K | Apache 2.0 | Hugging Face | Abliterated, BF16 |
+| Qwen3.8-Flash-Next (base) | ~180B (MoE, ~6B activos) | 262K | Apache 2.0 | Hugging Face | Alineado, referencia |
+| Qwen3.8-Flash-Next-Uncensored-FP8 | ~180B (MoE) | 262K | Apache 2.0 | Hugging Face | Cuantizado block-FP8 |
+| Qwen3.8-Flash-Next-Uncensored-MLX | ~180B (MoE) | 262K | Apache 2.0 | Hugging Face | 4/6/8-bit para Apple Silicon |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pitcany/Qwen3.8-Flash-Next-Uncensored
+- Hugging Face: https://huggingface.co/pitcany/Qwen3.8-Flash-Next-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - OrcaRouter: https://www.orcarouter.ai

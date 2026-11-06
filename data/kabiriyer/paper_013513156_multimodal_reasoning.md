@@ -60,7 +60,7 @@ No disponible. No se puede comparar un paper con modelos de IA, ya que no es un 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KabirIyer/paper_013513156_multimodal_reasoning
+- Repositorio Hugging Face: https://huggingface.co/KabirIyer/paper_013513156_multimodal_reasoning
 - Paper relacionado sobre razonamiento multimodal (arXiv): https://arxiv.org/abs/2401.06805
 - Publicaciones de Rafsan Kabir (posible autor): https://sites.google.com/view/rafsankabir/publications
 - Paper OneEmo sobre razonamiento multimodal (arXiv): https://arxiv.org/abs/2608.06013

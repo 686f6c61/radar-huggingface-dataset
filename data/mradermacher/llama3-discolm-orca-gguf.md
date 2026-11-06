@@ -88,7 +88,7 @@ Nota: no se dispone de datos de rendimiento comparativo (MMLU, etc.) para este m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/llama3-discolm-orca-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/llama3-discolm-orca-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/cstr/llama3-discolm-orca
 - Modelo componente 1: https://huggingface.co/Locutusque/llama-3-neural-chat-v1-8b
 - Modelo componente 2: https://huggingface.co/DiscoResearch/Llama3_DiscoLM_German_8b_v0.1_experimental

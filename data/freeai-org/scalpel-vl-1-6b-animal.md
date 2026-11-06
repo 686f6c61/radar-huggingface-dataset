@@ -72,16 +72,16 @@ Los resultados presentados provienen de la model card del autor y se basan en Fe
 
 - VRAM estimada: al ser un modelo de 1,6B en FP16, requiere aproximadamente 3,2 GB de VRAM solo para los pesos. Con cuantización a 8 bits o 4 bits, puede reducirse a 1,6-2 GB, lo que permite ejecutarlo en GPUs consumer de gama media (RTX 3060, RTX 4060, etc.) e incluso en algunas iGPU con suficiente memoria compartida.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en FP16. Para despliegue en borde, se pueden usar dispositivos como Jetson Orin Nano o Raspberry Pi 5 con acelerador NPU.
-- Opciones de despliegue: al estar basado en Qwen3-VL, es compatible con frameworks como vLLM, TGI, llama.cpp (si se convierte a GGUF) y Ollama (si se añade soporte de visión). También puede ejecutarse con Transformers de HuggingFace.
+- Opciones de despliegue: al estar basado en Qwen3-VL, es compatible con frameworks como vLLM, TGI, llama.cpp (si se convierte a GGUF) y Ollama (si se añade soporte de visión). También puede ejecutarse con Transformers de Hugging Face.
 - Latencia y throughput: según el autor, la latencia es comparable a Qwen3.5-0.8B, lo que sugiere tiempos de respuesta por debajo de 100 ms en hardware moderno para imágenes individuales, aunque no se proporcionan cifras exactas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Scalpel-VL-1.6B | 1.6B | No disponible | Visión felina | MIT | HuggingFace |
-| Qwen3-VL-2B | 2B | No disponible | Visión general | Apache 2.0 (según versión) | HuggingFace |
-| MiniCPM-V-4.5 | 8B | No disponible | Visión general | Apache 2.0 | HuggingFace |
+| Scalpel-VL-1.6B | 1.6B | No disponible | Visión felina | MIT | Hugging Face |
+| Qwen3-VL-2B | 2B | No disponible | Visión general | Apache 2.0 (según versión) | Hugging Face |
+| MiniCPM-V-4.5 | 8B | No disponible | Visión general | Apache 2.0 | Hugging Face |
 | Qwen3.5-9B | 9B | No disponible | Visión general | No disponible | No disponible |
 
 Scalpel-VL-1.6B se posiciona como una alternativa ligera y especializada frente a modelos generalistas de mayor tamaño. Su ventaja principal es el equilibrio entre precisión en el dominio felino y eficiencia computacional, aunque carece de la versatilidad de los modelos generalistas para tareas fuera de su dominio.
@@ -97,7 +97,7 @@ Scalpel-VL-1.6B se posiciona como una alternativa ligera y especializada frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/freeai-org/Scalpel-VL-1.6B-Animal
+- Modelo en Hugging Face: https://huggingface.co/freeai-org/Scalpel-VL-1.6B-Animal
 - Repositorio GitHub (Scalpel): https://github.com/freeai-org/Scalpel
 - Variante cuantizada no oficial (Q2): https://huggingface.co/TiGa-RCE/Scalpel-VL-1.6B-oQ2
 - Paper asociado (referencia en tags): arXiv:2608.22070 (no verificado)

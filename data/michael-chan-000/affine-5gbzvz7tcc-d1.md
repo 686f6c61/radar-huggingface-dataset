@@ -80,7 +80,7 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Enlaces
 
-- [HuggingFace: michael-chan-000/affine-5GbZvZ7tcC-d1](https://huggingface.co/michael-chan-000/affine-5GbZvZ7tcC-d1)
-- [Perfil del autor en HuggingFace](https://huggingface.co/michael-chan-000)
+- [Hugging Face: michael-chan-000/affine-5GbZvZ7tcC-d1](https://huggingface.co/michael-chan-000/affine-5GbZvZ7tcC-d1)
+- [Perfil del autor en Hugging Face](https://huggingface.co/michael-chan-000)
 - [Modelo relacionado: affine-5GbZvZ7tcC-h2](https://huggingface.co/michael-chan-000/affine-5GbZvZ7tcC-h2)
 - [Modelo relacionado: affine-5Eh8v9zUpcBwNLRzE3bRv2FFhnaNPERRLdvEH8SdwLiahUh8 (llm-explorer)](https://llm-explorer.com/model/michael-chan-000%2Faffine-5Eh8v9zUpcBwNLRzE3bRv2FFhnaNPERRLdvEH8SdwLiahUh8,3rpOQPfwyZAHsR4er1dcga)

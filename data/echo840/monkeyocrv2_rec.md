@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `echo840/MonkeyOCRv2_rec` es un repositorio alojado en HuggingFace que, por su nombre, parece estar orientado a tareas de reconocimiento óptico de caracteres (OCR), concretamente a la etapa de reconocimiento de texto (`rec`). Sin embargo, la información pública disponible es extremadamente limitada: la model card únicamente declara la licencia Apache 2.0, y no se proporcionan detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El tamaño del repositorio es de 0,3 GB, lo que sugiere que podría tratarse de un modelo de tamaño moderado, pero no hay confirmación oficial.
+El modelo `echo840/MonkeyOCRv2_rec` es un repositorio alojado en Hugging Face que, por su nombre, parece estar orientado a tareas de reconocimiento óptico de caracteres (OCR), concretamente a la etapa de reconocimiento de texto (`rec`). Sin embargo, la información pública disponible es extremadamente limitada: la model card únicamente declara la licencia Apache 2.0, y no se proporcionan detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El tamaño del repositorio es de 0,3 GB, lo que sugiere que podría tratarse de un modelo de tamaño moderado, pero no hay confirmación oficial.
 
 Dado que el autor no ha publicado especificaciones técnicas ni documentación adicional, cualquier evaluación rigurosa resulta imposible con los datos actuales. Se recomienda consultar directamente el repositorio o contactar con el autor para obtener información fiable antes de considerar su uso en proyectos reales.
 
@@ -55,4 +55,4 @@ No disponible. Sin datos sobre arquitectura o rendimiento, no es posible estable
 
 ## Enlaces
 
-- Repositorio HuggingFace: [echo840/MonkeyOCRv2_rec](https://huggingface.co/echo840/MonkeyOCRv2_rec)
+- Repositorio Hugging Face: [echo840/MonkeyOCRv2_rec](https://huggingface.co/echo840/MonkeyOCRv2_rec)

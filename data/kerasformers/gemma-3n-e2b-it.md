@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/gemma-3n-e2b-it](https://huggingface.co/kerasformers/gemma-3n-e2b-it)
+- [Hugging Face: kerasformers/gemma-3n-e2b-it](https://huggingface.co/kerasformers/gemma-3n-e2b-it)
 - [Modelo base: google/gemma-3n-E2B-it](https://huggingface.co/google/gemma-3n-E2B-it)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Gemma 3n en KerasFormers](https://imvision12.github.io/KerasFormers/gemma3n/)

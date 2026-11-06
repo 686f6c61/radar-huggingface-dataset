@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kikka-2b-base es un modelo de lenguaje publicado por el usuario nntsuzu en HuggingFace bajo licencia Apache 2.0. A pesar del sufijo «2b» del nombre, los pesos en safetensors suman 1.207.232.768 parametros (aproximadamente 1,21 mil millones), lo que situa al modelo en la categoria de los modelos pequenos, pensados para inferencia en hardware de consumo.
+Kikka-2b-base es un modelo de lenguaje publicado por el usuario nntsuzu en Hugging Face bajo licencia Apache 2.0. A pesar del sufijo «2b» del nombre, los pesos en safetensors suman 1.207.232.768 parametros (aproximadamente 1,21 mil millones), lo que situa al modelo en la categoria de los modelos pequenos, pensados para inferencia en hardware de consumo.
 
 La model card publicada no contiene mas informacion que la propia declaracion de licencia. No hay datos publicos sobre arquitectura, composicion del dataset de entrenamiento, longitud de contexto, idiomas soportados ni proceso de alineacion. Las etiquetas del repositorio (`kikka_unified`, `custom_code`) apuntan a una implementacion de arquitectura personalizada, lo que en la practica obliga a cargar codigo remoto del repositorio (`trust_remote_code=True`) para instanciar el modelo.
 
@@ -94,7 +94,7 @@ El unico punto en el que Kikka-2b-base compite en igualdad de condiciones es la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nntsuzu/Kikka-2b-base
+- Modelo en Hugging Face: https://huggingface.co/nntsuzu/Kikka-2b-base
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

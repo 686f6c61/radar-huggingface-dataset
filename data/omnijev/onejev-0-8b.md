@@ -4,7 +4,7 @@
 
 OneJev-0.8B es un modelo de decisión multimodal de la familia OneJev, desarrollada por el equipo OmniJev. Se presenta como un modelo de "System One": recibe una captura de pantalla, una fotografía, un vídeo o texto plano junto con una serie de preguntas tipadas y devuelve, en un único forward pass, una probabilidad calibrada para cada opción posible. No es, por tanto, un generador de texto libre, sino un clasificador de decisiones pensado para insertarse en el bucle de control de agentes.
 
-El modelo es un fine-tune completo (no LoRA) de Qwen/Qwen3.5-0.8B sobre 99.193 preguntas extraídas de ejecuciones reales de agentes, vídeos e imágenes. El repositorio de HuggingFace ocupa 2,2 GB y los safetensors declaran 1.107.265.600 parámetros reales, ligeramente por encima de los 0.8B que sugiere el nombre comercial.
+El modelo es un fine-tune completo (no LoRA) de Qwen/Qwen3.5-0.8B sobre 99.193 preguntas extraídas de ejecuciones reales de agentes, vídeos e imágenes. El repositorio de Hugging Face ocupa 2,2 GB y los safetensors declaran 1.107.265.600 parámetros reales, ligeramente por encima de los 0.8B que sugiere el nombre comercial.
 
 Su relevancia actual radica en la latencia: sobre una H200, con una captura de 1280x720, responde una pregunta en 31 ms y diez preguntas agrupadas en una sola petición en 51 ms (5,1 ms por pregunta). Ese perfil lo sitúa como un componente de decisión ultrarrápido dentro de arquitecturas de agentes, no como un modelo de razonamiento generalista.
 
@@ -107,7 +107,7 @@ Frente a alternativas externas, la model card cita Jev 1.13 (solo texto, puntuac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmniJev/OneJev-0.8B
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev-0.8B
 - Repositorio en GitHub: https://github.com/OmniJev/OneJev
 - Sitio web del proyecto: https://omnijev.github.io/OneJev/
 - Colección completa de la familia OneJev: https://huggingface.co/collections/OmniJev/onejev

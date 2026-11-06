@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo EGD33/e8-snn-fhrr-waste es un motor de computación neuromórfica experimental desarrollado por NEOMORPHIC INC., que combina geometría de retículo E8, redes neuronales de picos (SNN), representaciones holográficas reducidas en el dominio de la frecuencia (FHRR) y conjugación de fase óptica (OPC) para acelerar la inferencia de modelos de mezcla de expertos (MoE). Se presenta como una arquitectura de cómputo propietaria, con un puente denominado WASTE que actúa como caché de predicción de expertos mediante memoria asociativa holográfica. El modelo está publicado en HuggingFace con licencia neomorphic-proprietary, idioma inglés y pipeline "other", lo que indica que no es un modelo de lenguaje convencional sino un sistema de cómputo especializado.
+El modelo EGD33/e8-snn-fhrr-waste es un motor de computación neuromórfica experimental desarrollado por NEOMORPHIC INC., que combina geometría de retículo E8, redes neuronales de picos (SNN), representaciones holográficas reducidas en el dominio de la frecuencia (FHRR) y conjugación de fase óptica (OPC) para acelerar la inferencia de modelos de mezcla de expertos (MoE). Se presenta como una arquitectura de cómputo propietaria, con un puente denominado WASTE que actúa como caché de predicción de expertos mediante memoria asociativa holográfica. El modelo está publicado en Hugging Face con licencia neomorphic-proprietary, idioma inglés y pipeline "other", lo que indica que no es un modelo de lenguaje convencional sino un sistema de cómputo especializado.
 
 La relevancia de esta propuesta radica en su enfoque multidisciplinar (neuromórfico, holográfico, cuántico-inspirado) para abordar la latencia y el coste de la inferencia en arquitecturas MoE. Sin embargo, al ser un proyecto propietario y sin código abierto, su validación externa es imposible. No se dispone de información sobre parámetros totales, contexto, cuantización o datos de entrenamiento, lo que limita cualquier evaluación rigurosa.
 
@@ -84,5 +84,5 @@ No disponible. No existe información pública sobre modelos comparables con est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EGD33/e8-snn-fhrr-waste
+- Modelo en Hugging Face: https://huggingface.co/EGD33/e8-snn-fhrr-waste
 - No se han encontrado papers, repositorios o demos adicionales en la búsqueda web (los resultados obtenidos no están relacionados con este modelo).

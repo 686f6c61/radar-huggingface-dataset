@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`firzahdzm/tourn-678a7073-instructtext-hyper-rj1c` es un modelo de lenguaje publicado en HuggingFace por el usuario `firzahdzm`, con 3.821.079.552 parámetros totales (aproximadamente 3,82 mil millones) verificados a partir de los pesos en formato safetensors. El repositorio ocupa 7,6 GB y las etiquetas asociadas son `safetensors`, `phi3`, `custom_code` y `region:us`, lo que indica que los pesos se cargan mediante código personalizado y que la arquitectura declarada pertenece a la familia Phi-3. El nombre del repositorio sugiere un proceso de entrenamiento o fusión de tipo "tournament" con ajuste instruct y posiblemente hiperparámetros derivados de una búsqueda automática, pero la model card no aporta documentación que lo confirme.
+`firzahdzm/tourn-678a7073-instructtext-hyper-rj1c` es un modelo de lenguaje publicado en Hugging Face por el usuario `firzahdzm`, con 3.821.079.552 parámetros totales (aproximadamente 3,82 mil millones) verificados a partir de los pesos en formato safetensors. El repositorio ocupa 7,6 GB y las etiquetas asociadas son `safetensors`, `phi3`, `custom_code` y `region:us`, lo que indica que los pesos se cargan mediante código personalizado y que la arquitectura declarada pertenece a la familia Phi-3. El nombre del repositorio sugiere un proceso de entrenamiento o fusión de tipo "tournament" con ajuste instruct y posiblemente hiperparámetros derivados de una búsqueda automática, pero la model card no aporta documentación que lo confirme.
 
 No se dispone de información sobre el problema concreto que resuelve, el proceso de entrenamiento, los datos utilizados ni los idiomas soportados. El número de descargas (15) y la ausencia de "likes" sitúan el modelo como un experimento de publicación reciente y de baja difusión, creado el 19 de octubre de 2026 y actualizado menos de un minuto después, lo que apunta a una subida automatizada sin documentación asociada.
 
@@ -46,7 +46,7 @@ Dado que no existe documentación sobre capacidades, los siguientes escenarios s
 - Investigación sobre merges y fine-tunes de la familia Phi-3: analizar qué modificaciones introduce este checkpoint respecto a la línea base mediante comparación de pesos y de salidas.
 - Generación de texto offline en hardware de consumo: con 3,82 B parámetros, cabría esperar ejecución en GPU de 8-12 GB tras cuantización, lo que permitiría prototipos locales de asistentes de texto (requiere validación previa de la calidad).
 - Filtrado y etiquetado de datos a pequeña escala: uso como modelo auxiliar para clasificación de texto en un pipeline interno, siempre que se valide su comportamiento en el dominio concreto.
-- Docencia y experimentación: ejemplo de artefacto publicado sin model card para discutir buenas prácticas de documentación y reproducibilidad en HuggingFace.
+- Docencia y experimentación: ejemplo de artefacto publicado sin model card para discutir buenas prácticas de documentación y reproducibilidad en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -87,6 +87,6 @@ No se ha podido contrastar rendimiento, contexto ni licencia con alternativas po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/firzahdzm/tourn-678a7073-instructtext-hyper-rj1c
+- Hugging Face: https://huggingface.co/firzahdzm/tourn-678a7073-instructtext-hyper-rj1c
 - Paper, blog, repositorio o demo oficiales: no disponibles (no se han encontrado en la búsqueda web)
 - Referencia de la familia Phi-3: no disponible en la información proporcionada

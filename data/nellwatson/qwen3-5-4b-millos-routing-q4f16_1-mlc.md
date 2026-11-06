@@ -72,9 +72,9 @@ Resultados medidos en Chrome a traves del codigo de enrutamiento de MillOS, cont
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NellWatson/Qwen3.5-4B-millos-routing-q4f16_1-MLC | 4B | no disponible | Clasificador de 5 vias para MillOS, q4f16_1 para WebGPU | apache-2.0 | HuggingFace, via web-llm |
-| Qwen/Qwen3.5-4B | 4B | no disponible | Modelo base de proposito general | no disponible | HuggingFace |
-| mlc-ai/Qwen3.5-4B-q4f16_1-MLC | 4B | no disponible | Build oficial q4f16_1 para WebGPU | no disponible | HuggingFace |
+| NellWatson/Qwen3.5-4B-millos-routing-q4f16_1-MLC | 4B | no disponible | Clasificador de 5 vias para MillOS, q4f16_1 para WebGPU | apache-2.0 | Hugging Face, via web-llm |
+| Qwen/Qwen3.5-4B | 4B | no disponible | Modelo base de proposito general | no disponible | Hugging Face |
+| mlc-ai/Qwen3.5-4B-q4f16_1-MLC | 4B | no disponible | Build oficial q4f16_1 para WebGPU | no disponible | Hugging Face |
 
 La comparacion con alternativas de la misma categoria (clasificadores de enrutamiento de dominio) no esta disponible en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ La comparacion con alternativas de la misma categoria (clasificadores de enrutam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NellWatson/Qwen3.5-4B-millos-routing-q4f16_1-MLC
+- Hugging Face: https://huggingface.co/NellWatson/Qwen3.5-4B-millos-routing-q4f16_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Build oficial MLC-LLM: https://huggingface.co/mlc-ai/Qwen3.5-4B-q4f16_1-MLC
 - web-llm: https://github.com/mlc-ai/web-llm

@@ -1,7 +1,7 @@
 # avik112/scihigh-bart-optimized
 
 ## Resumen
-El modelo `avik112/scihigh-bart-optimized` es un modelo de lenguaje basado en la arquitectura BART, publicado en HuggingFace por el usuario `avik112` bajo licencia MIT. Según los datos del repositorio, cuenta con 139.470.681 parámetros (aproximadamente 139 millones) y se distribuye en formato safetensors. El nombre sugiere que se trata de una versión optimizada de BART para texto científico, aunque no se aporta información adicional en la model card.
+El modelo `avik112/scihigh-bart-optimized` es un modelo de lenguaje basado en la arquitectura BART, publicado en Hugging Face por el usuario `avik112` bajo licencia MIT. Según los datos del repositorio, cuenta con 139.470.681 parámetros (aproximadamente 139 millones) y se distribuye en formato safetensors. El nombre sugiere que se trata de una versión optimizada de BART para texto científico, aunque no se aporta información adicional en la model card.
 
 Actualmente, el modelo no presenta descargas ni likes, y no hay documentación técnica pública sobre su entrenamiento, capacidades o rendimiento. A pesar de su denominación "scihigh", no se ha encontrado evidencia de que esté relacionado con otros modelos científicos como SciBERT. La relevancia de esta ficha radica en que, al carecer de información oficial, cualquier evaluación debe basarse exclusivamente en las características generales de la arquitectura BART y en los datos mínimos disponibles.
 
@@ -39,7 +39,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - Con 139 millones de parámetros, el modelo es relativamente pequeño. En FP32, la memoria necesaria para los pesos es de aproximadamente 558 MB (139M × 4 bytes), más los activos de la inferencia. En cuantización a 8 bits, se reduciría a unos 140 MB.
 - Se puede ejecutar en una GPU con poca VRAM, como una NVIDIA T4 (16 GB) o incluso en una RTX 3060 (12 GB). También es viable en CPU para inferencias de baja latencia, aunque el tiempo de respuesta será mayor.
 - No hay datos sobre latencia o throughput.
-- No se ha especificado soporte para vLLM, llama.cpp, Ollama o TGI. Al ser un modelo con pesos en safetensors, se puede cargar con la librería Transformers de HuggingFace, pero no hay confirmación de compatibilidad con otros frameworks.
+- No se ha especificado soporte para vLLM, llama.cpp, Ollama o TGI. Al ser un modelo con pesos en safetensors, se puede cargar con la librería Transformers de Hugging Face, pero no hay confirmación de compatibilidad con otros frameworks.
 
 ## Comparativa con modelos similares
 
@@ -54,6 +54,6 @@ No hay información sobre modelos comparables. No se conocen otros modelos "scih
 
 ## Enlaces
 
-- [HuggingFace - avik112/scihigh-bart-optimized](https://huggingface.co/avik112/scihigh-bart-optimized)
-- [Documentación de BART en HuggingFace](https://huggingface.co/docs/transformers/model_doc/bart) (referencia general de la arquitectura)
+- [Hugging Face - avik112/scihigh-bart-optimized](https://huggingface.co/avik112/scihigh-bart-optimized)
+- [Documentación de BART en Hugging Face](https://huggingface.co/docs/transformers/model_doc/bart) (referencia general de la arquitectura)
 - [SciBERT en GitHub](https://github.com/allenai/scibert) (posible relación, pero no confirmada)

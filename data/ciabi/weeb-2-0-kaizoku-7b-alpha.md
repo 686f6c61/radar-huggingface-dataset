@@ -68,5 +68,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [HuggingFace: ciabi/Weeb-2.0-Kaizoku-7B-Alpha](https://huggingface.co/ciabi/Weeb-2.0-Kaizoku-7B-Alpha)
+- [Hugging Face: ciabi/Weeb-2.0-Kaizoku-7B-Alpha](https://huggingface.co/ciabi/Weeb-2.0-Kaizoku-7B-Alpha)
 - [Unsloth (herramienta de entrenamiento y conversion)](https://github.com/unslothai/unsloth)

@@ -73,7 +73,7 @@ Los tres comparten el mismo modelo base (Qwen3-VL-4B-Instruct) y el mismo autor.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-stem40-geo30-nongeo30-step25
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-stem40-geo30-nongeo30-step25
 - Repositorio relacionado (LoRA directo): https://huggingface.co/Saraswathy/vlm-mix-stem60-geometry40-direct-step100
 - Repositorio relacionado (experto STEM): https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100
 - Página de FriendliAI para el modelo directo: https://friendli.ai/models/Saraswathy/vlm-mix-stem60-geometry40-direct-step100

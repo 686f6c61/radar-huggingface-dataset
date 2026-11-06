@@ -71,8 +71,8 @@ No se dispone de datos comparativos publicados con otros VLM de tamano similar. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-6bit
 - Blog de Liquid AI sobre LFM2.5-VL-3B: https://www.liquid.ai/blog/lfm2-5-vl-3b
 - Documentacion oficial de LFM2.5-VL-3B: https://docs.liquid.ai/lfm/models/lfm25-vl-3b
 - Articulo de MarkTechPost: https://www.marktechpost.com/2026/08/13/liquid-ai-lfm2-5-vl-3b-on-device-vision-language-model/
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-3B

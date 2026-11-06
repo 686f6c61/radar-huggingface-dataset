@@ -88,7 +88,7 @@ No se proporcionan datos verificables de modelos alternativos en la información
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VoxCPM2 | 2,29B | 8192 tokens de LM de audio | Apache-2.0 | HuggingFace, GitHub y vLLM-Omni |
+| VoxCPM2 | 2,29B | 8192 tokens de LM de audio | Apache-2.0 | Hugging Face, GitHub y vLLM-Omni |
 | Alternativas comparables (2-3) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

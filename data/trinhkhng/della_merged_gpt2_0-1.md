@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 - Al ser un modelo de 124M de parametros, la inferencia en float32 requiere aproximadamente 500 MB de VRAM para los pesos, mas overhead de activaciones y cache. Se estima un consumo total de 1-2 GB en GPU.
 - Es compatible con GPUs de consumo como NVIDIA GTX 1060, RTX 3060 o superiores, e incluso puede ejecutarse en CPU con latencias aceptables para generacion de texto corto.
-- Para despliegue, se puede usar la libreria transformers de HuggingFace, o servidores de inferencia como text-generation-inference (TGI) o FriendliAI, que ya ofrece un endpoint para este modelo.
+- Para despliegue, se puede usar la libreria transformers de Hugging Face, o servidores de inferencia como text-generation-inference (TGI) o FriendliAI, que ya ofrece un endpoint para este modelo.
 - No se dispone de datos de latencia o throughput especificos, pero por el tamano del modelo se espera una generacion rapida en hardware moderno.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparacion directa de rendimiento no es posible sin benchmarks publicados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trinhkhng/della_Merged_gpt2_0.1
+- Modelo en Hugging Face: https://huggingface.co/trinhkhng/della_Merged_gpt2_0.1
 - Paper DELLA: https://arxiv.org/abs/2406.11617
 - Repositorio mergekit: https://github.com/cg123/mergekit
 - Endpoint de inferencia en FriendliAI: https://friendli.ai/models/trinhkhng/della_Merged_gpt2_0.1

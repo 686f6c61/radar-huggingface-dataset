@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `delta-nla-qwen3-8b-ar-warmstart` es un adaptador LoRA publicado por el usuario `syvb` en HuggingFace, construido sobre el modelo base `Qwen/Qwen3-8B`. Se distribuye con la librería PEFT 0.20.0 y contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de repositorio de 0,7 GB. Esto implica que no es un modelo autónomo: necesita cargarse junto con el modelo base de 8.000 millones de parámetros para funcionar.
+El modelo `delta-nla-qwen3-8b-ar-warmstart` es un adaptador LoRA publicado por el usuario `syvb` en Hugging Face, construido sobre el modelo base `Qwen/Qwen3-8B`. Se distribuye con la librería PEFT 0.20.0 y contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de repositorio de 0,7 GB. Esto implica que no es un modelo autónomo: necesita cargarse junto con el modelo base de 8.000 millones de parámetros para funcionar.
 
-La información pública es muy escasa: la model card está incompleta y no se detallan los datos de entrenamiento, el objetivo del ajuste ni las capacidades del adaptador. El repositorio no ha recibido descargas ni valoraciones en HuggingFace, lo que indica una adopción nula. Cualquier uso en producción debe ir precedido de una evaluación empírica del comportamiento del adaptador, ya que no existe documentación técnica que respalde su calidad o seguridad.
+La información pública es muy escasa: la model card está incompleta y no se detallan los datos de entrenamiento, el objetivo del ajuste ni las capacidades del adaptador. El repositorio no ha recibido descargas ni valoraciones en Hugging Face, lo que indica una adopción nula. Cualquier uso en producción debe ir precedido de una evaluación empírica del comportamiento del adaptador, ya que no existe documentación técnica que respalde su calidad o seguridad.
 
 ## Especificaciones técnicas
 
@@ -40,7 +40,7 @@ No se documentan capacidades específicas en la información disponible. Al ser 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos de evaluación en la model card ni en el repositorio de HuggingFace que permitan comparar el rendimiento del adaptador con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. No existen datos de evaluación en la model card ni en el repositorio de Hugging Face que permitan comparar el rendimiento del adaptador con otros modelos.
 
 ## Requisitos de hardware
 
@@ -65,4 +65,4 @@ No disponible. No existe información suficiente sobre este adaptador para compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/syvb/delta-nla-qwen3-8b-ar-warmstart
+- Hugging Face: https://huggingface.co/syvb/delta-nla-qwen3-8b-ar-warmstart

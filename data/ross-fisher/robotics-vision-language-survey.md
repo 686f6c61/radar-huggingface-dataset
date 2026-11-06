@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre el campo de Robotics Vision Language (RVL). Fue publicado por el usuario ross-fisher en HuggingFace bajo licencia CC-BY-4.0 y su único artefacto principal es un documento `review.md` que registra el alcance de una pregunta de investigación, los posibles factores de confusión, los requisitos de reproducibilidad y los benchmarks públicos propuestos para una futura comparación.
+Este repositorio no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre el campo de Robotics Vision Language (RVL). Fue publicado por el usuario ross-fisher en Hugging Face bajo licencia CC-BY-4.0 y su único artefacto principal es un documento `review.md` que registra el alcance de una pregunta de investigación, los posibles factores de confusión, los requisitos de reproducibilidad y los benchmarks públicos propuestos para una futura comparación.
 
 El repositorio tiene 49.600 parámetros en formato safetensors, un valor que corresponde probablemente a un archivo de metadatos o a un artefacto simbólico, no a un modelo de lenguaje real. El tamaño total del repositorio es de 0.0 GB, lo que confirma que no hay pesos de red neuronal. La model card es explícita al afirmar que no se reivindican mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado.
 
@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no puede compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ross-fisher/robotics-vision-language-survey
+- Repositorio en Hugging Face: https://huggingface.co/ross-fisher/robotics-vision-language-survey
 - Survey sobre integracion de LLMs con robots (ACM): https://dl.acm.org/doi/10.1007/s11370-024-00550-5
 - Survey sobre integracion de LLMs con robots (Springer): https://link.springer.com/article/10.1007/s11370-024-00550-5
 - Survey de Vision-Language-Action en robotica (arXiv): https://arxiv.org/abs/2604.23001

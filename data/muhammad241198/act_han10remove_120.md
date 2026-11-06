@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Muhammad241198/act_HAN10remove_120` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. Ha sido desarrollado por el usuario de HuggingFace Muhammad241198 y entrenado con la librería LeRobot de HuggingFace sobre el conjunto de datos `REBOOT26/HAN10e_remove`, presumiblemente compuesto por datos de teleoperación.
+El modelo `Muhammad241198/act_HAN10remove_120` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. Ha sido desarrollado por el usuario de Hugging Face Muhammad241198 y entrenado con la librería LeRobot de Hugging Face sobre el conjunto de datos `REBOOT26/HAN10e_remove`, presumiblemente compuesto por datos de teleoperación.
 
 El modelo cuenta con 51.705.486 parámetros (aproximadamente 51,7 millones) almacenados en formato safetensors, lo que lo convierte en una política ligera. Se publica bajo licencia Apache 2.0 y su pipeline declarado es `robotics`, por lo que no es un modelo de lenguaje: su función es generar comandos motores a partir de observaciones sensoriales.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_HAN10remove_120 | ACT (política robótica) | 51,7 M | no disponible | apache-2.0 | HuggingFace |
-| Otras políticas ACT en LeRobot Hub | ACT | variable, no disponible | no disponible | variable | HuggingFace |
-| Diffusion Policy (LeRobot) | Política por difusión | no disponible | no disponible | variable | HuggingFace |
-| SmolVLA (LeRobot) | VLA | no disponible | no disponible | variable | HuggingFace |
+| act_HAN10remove_120 | ACT (política robótica) | 51,7 M | no disponible | apache-2.0 | Hugging Face |
+| Otras políticas ACT en LeRobot Hub | ACT | variable, no disponible | no disponible | variable | Hugging Face |
+| Diffusion Policy (LeRobot) | Política por difusión | no disponible | no disponible | variable | Hugging Face |
+| SmolVLA (LeRobot) | VLA | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos cuantitativos (tasa de éxito, error) que permitan una comparación numérica fiable con estas alternativas; la comparación se limita a categoría, licencia y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos cuantitativos (tasa de éxito, error) que permitan una co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muhammad241198/act_HAN10remove_120
+- Modelo en Hugging Face: https://huggingface.co/Muhammad241198/act_HAN10remove_120
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Paper en arXiv: https://arxiv.org/abs/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

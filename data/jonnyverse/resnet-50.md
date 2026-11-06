@@ -72,7 +72,7 @@ Nota: los datos de parámetros y licencia de los modelos comparados provienen de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/resnet-50
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/resnet-50
 - Modelo base: https://huggingface.co/microsoft/resnet-50
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - Herramienta Optimum para conversión ONNX: https://huggingface.co/docs/optimum/index

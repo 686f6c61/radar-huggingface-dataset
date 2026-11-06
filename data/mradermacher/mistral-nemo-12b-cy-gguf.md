@@ -77,7 +77,7 @@ La comparativa se basa en características generales; no se dispone de resultado
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Mistral-Nemo-12B-CY-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Mistral-Nemo-12B-CY-GGUF
 - Modelo base (merge): https://huggingface.co/CY1232/Mistral-Nemo-12B-CY
 - Versión con quants imatrix: https://huggingface.co/mradermacher/Mistral-Nemo-12B-CY-i1-GGUF
 - Anuncio oficial de Mistral NeMo: https://mistral.ai/news/mistral-nemo/

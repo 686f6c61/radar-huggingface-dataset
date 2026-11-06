@@ -6,7 +6,7 @@
 
 El interés de esta ficha es doble: por un lado, documenta un conjunto amplio de cuantizaciones (desde IQ1_S hasta Q6_K) que permiten ejecutar un modelo de 32 mil millones de parámetros en hardware de consumo; por otro, advierte de que el modelo subyacente ha sido modificado respecto al original de Alibaba, con implicaciones importantes de seguridad, alineamiento y licencia que el usuario debe conocer antes de desplegarlo en producción.
 
-La información disponible en HuggingFace es muy escasa: no hay pipeline declarado, no se especifican idiomas, licencia ni benchmarks. Además, el campo de parámetros totales del repo (7.476.928) es inconsistente con el nombre del modelo (32B) y probablemente refleja un recuento parcial o erróneo de tensores, por lo que debe tratarse con cautela.
+La información disponible en Hugging Face es muy escasa: no hay pipeline declarado, no se especifican idiomas, licencia ni benchmarks. Además, el campo de parámetros totales del repo (7.476.928) es inconsistente con el nombre del modelo (32B) y probablemente refleja un recuento parcial o erróneo de tensores, por lo que debe tratarse con cautela.
 
 ## Especificaciones tecnicas
 
@@ -91,7 +91,7 @@ La comparación directa con el Qwen2.5-32B-Instruct original es la más relevant
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-ARA-heretic-i1-GGUF
+- Hugging Face del modelo: https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-ARA-heretic-i1-GGUF
 - Modelo fuente (heretic): https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-ARA-heretic
 - Modelo original: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Repositorio de llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp

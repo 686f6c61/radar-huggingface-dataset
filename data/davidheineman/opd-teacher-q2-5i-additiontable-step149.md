@@ -2,7 +2,7 @@
 
 ## Resumen
 
-opd-teacher-Q2.5I-AdditionTable-step149 es un ajuste fino por aprendizaje por refuerzo del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario davidheineman en HuggingFace. No se trata de un modelo de propósito general, sino de un artefacto de investigación: un "teacher" (modelo profesor) entrenado específicamente para servir como referencia en un experimento de destilación on-policy (OPD, on-policy distillation) sobre 32 entornos. El entrenamiento se realizó con GRPO (Group Relative Policy Optimization) dentro de un pipeline denominado RLVE, durante 150 actualizaciones, y el checkpoint publicado (step149) corresponde a la 149.ª actualización en indexación base cero, es decir, la última.
+opd-teacher-Q2.5I-AdditionTable-step149 es un ajuste fino por aprendizaje por refuerzo del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario davidheineman en Hugging Face. No se trata de un modelo de propósito general, sino de un artefacto de investigación: un "teacher" (modelo profesor) entrenado específicamente para servir como referencia en un experimento de destilación on-policy (OPD, on-policy distillation) sobre 32 entornos. El entrenamiento se realizó con GRPO (Group Relative Policy Optimization) dentro de un pipeline denominado RLVE, durante 150 actualizaciones, y el checkpoint publicado (step149) corresponde a la 149.ª actualización en indexación base cero, es decir, la última.
 
 El modelo hereda la arquitectura completa de Qwen2.5-1.5B-Instruct (transformer decoder-only denso, con 1.543.714.304 parámetros reales según los tensores safetensors del repositorio) y la especializa en la tarea del entorno AdditionTable, un escenario de aritmética de tablas de suma con dificultad 0. Esto implica que su comportamiento esperado es el de un especialista estrecho: resuelve correctamente un tipo concreto de problema verificable, pero no debe considerarse un sustituto del modelo base para diálogo general.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd-teacher-Q2.5I-AdditionTable-step149 | 1,54B | 32.768 tokens (heredado del base) | GRPO sobre AdditionTable, 150 pasos | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | SFT + preferencias sobre datos generales | Apache 2.0 | HuggingFace, ampliamente usado |
-| Otros teachers de la coleccion RLVE OPD | 1,54B (misma base) | 32.768 tokens (heredado) | GRPO sobre otros entornos, mismo pipeline | Apache 2.0 | HuggingFace, coleccion del autor |
-| Modelos de ~1-2B de proposito general (por ejemplo Llama 3.2 1B Instruct o SmolLM2 1.7B) | 1-1,7B | variable segun familia | Pipelines de alineacion generalistas | Licencias propias por familia | HuggingFace |
+| opd-teacher-Q2.5I-AdditionTable-step149 | 1,54B | 32.768 tokens (heredado del base) | GRPO sobre AdditionTable, 150 pasos | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | SFT + preferencias sobre datos generales | Apache 2.0 | Hugging Face, ampliamente usado |
+| Otros teachers de la coleccion RLVE OPD | 1,54B (misma base) | 32.768 tokens (heredado) | GRPO sobre otros entornos, mismo pipeline | Apache 2.0 | Hugging Face, coleccion del autor |
+| Modelos de ~1-2B de proposito general (por ejemplo Llama 3.2 1B Instruct o SmolLM2 1.7B) | 1-1,7B | variable segun familia | Pipelines de alineacion generalistas | Licencias propias por familia | Hugging Face |
 
 La comparacion de rendimiento cuantitativo no es posible: no hay benchmarks publicados para este checkpoint ni resultados del entorno AdditionTable en la informacion disponible. La diferencia funcional relevante frente a Qwen2.5-1.5B-Instruct es la especializacion estrecha en un unico entorno verificable, a costa previsiblemente de capacidades generales fuera de ese dominio, extremo que no ha sido medido por el autor.
 
@@ -87,7 +87,7 @@ La comparacion de rendimiento cuantitativo no es posible: no hay benchmarks publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-AdditionTable-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-AdditionTable-step149
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-opd-teachers/runs/c1d7c2d5
 - Codigo de entrenamiento RLVE: https://github.com/davidheineman/rlve

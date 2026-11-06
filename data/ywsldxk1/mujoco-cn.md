@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mujoco-cn es un simulador de escritorio para robótica construido sobre MuJoCo 3.17.0, publicado por el usuario ywsldxk1 en HuggingFace. No se trata de un modelo de lenguaje ni de una red neuronal con pesos entrenados: es una aplicación Python con interfaz gráfica que envuelve el motor físico MuJoCo y añade una capa de usabilidad orientada a la teleoperación de un brazo robótico SO-101. El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que confirma que no contiene checkpoints ni artefactos de modelo.
+mujoco-cn es un simulador de escritorio para robótica construido sobre MuJoCo 3.17.0, publicado por el usuario ywsldxk1 en Hugging Face. No se trata de un modelo de lenguaje ni de una red neuronal con pesos entrenados: es una aplicación Python con interfaz gráfica que envuelve el motor físico MuJoCo y añade una capa de usabilidad orientada a la teleoperación de un brazo robótico SO-101. El repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que confirma que no contiene checkpoints ni artefactos de modelo.
 
 La herramienta resuelve un problema de ergonomía: MuJoCo es un motor de simulación física de referencia en robótica, pero su uso directo requiere escribir código o manejar visores poco amigables. mujoco-cn ofrece un menú lateral en chino, control por teclado del brazo SO-101, importación de mallas OBJ/STL y ficheros MJCF, y visualización de articulaciones y contactos. Está pensado para Windows con Python 3.11 o superior.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 | Herramienta | Tipo | Interfaz | Robot por defecto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mujoco-cn | Envoltorio de escritorio sobre MuJoCo | Menú en chino, teclado, importación OBJ/STL/MJCF | SO-101 (Menagerie) | Apache-2.0 | HuggingFace y GitHub del autor |
+| mujoco-cn | Envoltorio de escritorio sobre MuJoCo | Menú en chino, teclado, importación OBJ/STL/MJCF | SO-101 (Menagerie) | Apache-2.0 | Hugging Face y GitHub del autor |
 | MuJoCo (oficial) | Motor físico | API Python/C, visor básico | Ninguno | Apache-2.0 | GitHub google-deepmind/mujoco |
 | MuJoCo Menagerie | Colección de modelos | Sin interfaz propia | Múltiples (incluye SO-101) | Apache-2.0 | GitHub google-deepmind/mujoco_menagerie |
 | Simuladores de robótica con GUI (por ejemplo, CoppeliaSim) | Simulador completo | GUI propietaria | Varios | Propietaria / edición gratuita | Distribución del fabricante |
@@ -79,12 +79,12 @@ La comparación es cualitativa porque no hay benchmarks ni métricas de rendimie
 - Interfaz principal en chino simplificado; el README en inglés existe, pero no se garantiza que toda la UI esté traducida.
 - La importación de mallas usa envolvente convexa para colisión, lo que produce colisiones inexactas en objetos cóncavos; la propia documentación recomienda MJCF con geometría de colisión simplificada en esos casos.
 - La importación de MJCF está pensada para objetos aislados; no deben importarse escenas completas con suelo o luces, ya que el programa recompila la escena.
-- El repositorio en HuggingFace tiene 0 descargas y 0 likes, y un tamaño de 0.0 GB; no hay evidencia de adopción ni de mantenimiento continuado.
+- El repositorio en Hugging Face tiene 0 descargas y 0 likes, y un tamaño de 0.0 GB; no hay evidencia de adopción ni de mantenimiento continuado.
 - No se especifican sesgos, riesgos de alucinación ni restricciones adicionales de licencia más allá de Apache-2.0; las dependencias MuJoCo y el modelo SO-101 de Menagerie se distribuyen bajo Apache-2.0 y se descargan en tiempo de ejecución.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ywsldxk1/mujoco-cn
+- Hugging Face: https://huggingface.co/ywsldxk1/mujoco-cn
 - Repositorio GitHub del autor: https://github.com/ywsldxk/mujoco-cn
 - MuJoCo (Google DeepMind): https://github.com/google-deepmind/mujoco
 - Modelo SO-101 en MuJoCo Menagerie: https://github.com/google-deepmind/mujoco_menagerie/tree/main/robotstudio_so101

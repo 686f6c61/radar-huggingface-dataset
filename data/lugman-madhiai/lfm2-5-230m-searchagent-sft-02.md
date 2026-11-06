@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LFM2.5-230M-SearchAgent-SFT-02 es un ajuste fino supervisado (SFT) del modelo base LiquidAI/LFM2.5-230M, publicado por el usuario lugman-madhiai en HuggingFace. Se trata de un modelo denso de generación de texto con 229.693.184 parámetros (aproximadamente 230 millones), construido sobre la familia LFM2 de Liquid AI y entrenado con la librería Unsloth junto con TRL de HuggingFace, según indica su propia model card. El repositorio ocupa 0,5 GB y se distribuye bajo licencia Apache 2.0.
+LFM2.5-230M-SearchAgent-SFT-02 es un ajuste fino supervisado (SFT) del modelo base LiquidAI/LFM2.5-230M, publicado por el usuario lugman-madhiai en Hugging Face. Se trata de un modelo denso de generación de texto con 229.693.184 parámetros (aproximadamente 230 millones), construido sobre la familia LFM2 de Liquid AI y entrenado con la librería Unsloth junto con TRL de Hugging Face, según indica su propia model card. El repositorio ocupa 0,5 GB y se distribuye bajo licencia Apache 2.0.
 
 El nombre del modelo sugiere que el ajuste está orientado a tareas de agente de búsqueda (SearchAgent) mediante fine-tuning supervisado, aunque la model card no documenta el dataset, el procedimiento ni los objetivos concretos del entrenamiento. Es relevante en el ecosistema de modelos pequeños porque la familia LFM2 está diseñada para inferencia en el borde (edge) y dispositivos con recursos limitados, donde un modelo de 230 millones de parámetros puede ejecutarse en hardware de consumo.
 
-Por el momento el modelo no ha registrado descargas ni "likes" en HuggingFace, y no se han publicado resultados de benchmarks ni detalles de arquitectura interna, datos de entrenamiento o longitud de contexto en la información disponible. Cualquier evaluación de su rendimiento real requeriría pruebas propias.
+Por el momento el modelo no ha registrado descargas ni "likes" en Hugging Face, y no se han publicado resultados de benchmarks ni detalles de arquitectura interna, datos de entrenamiento o longitud de contexto en la información disponible. Cualquier evaluación de su rendimiento real requeriría pruebas propias.
 
 ## Especificaciones tecnicas
 
@@ -23,16 +23,16 @@ Por el momento el modelo no ha registrado descargas ni "likes" en HuggingFace, y
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en LiquidAI/LFM2.5-230M, integrado en la familia LFM2 (Liquid Foundation Models 2) de Liquid AI, etiquetado en HuggingFace con el tag `lfm2`. Se trata de un transformer denso de 229,7 millones de parámetros, sin mezcla de expertos. No se dispone en la información proporcionada de detalles sobre el número de capas, dimensión oculta, mecanismos de atención (por ejemplo, atención agrupada o convoluciones de corto alcance características de LFM2) ni la ventana de contexto nativa.
+El modelo se basa en LiquidAI/LFM2.5-230M, integrado en la familia LFM2 (Liquid Foundation Models 2) de Liquid AI, etiquetado en Hugging Face con el tag `lfm2`. Se trata de un transformer denso de 229,7 millones de parámetros, sin mezcla de expertos. No se dispone en la información proporcionada de detalles sobre el número de capas, dimensión oculta, mecanismos de atención (por ejemplo, atención agrupada o convoluciones de corto alcance características de LFM2) ni la ventana de contexto nativa.
 
-El ajuste se realizó mediante fine-tuning supervisado (SFT) partiendo del modelo base, según el sufijo "SFT-02" del nombre y la etiqueta `base_model:finetune`. La model card indica que el entrenamiento se llevó a cabo con Unsloth y la librería TRL de HuggingFace, con una velocidad declarada "2x más rápida", pero no especifica el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF/DPO ni hiperparámetros. El nombre sugiere un enfoque hacia agentes de búsqueda, pero esto no está confirmado por la documentación del autor.
+El ajuste se realizó mediante fine-tuning supervisado (SFT) partiendo del modelo base, según el sufijo "SFT-02" del nombre y la etiqueta `base_model:finetune`. La model card indica que el entrenamiento se llevó a cabo con Unsloth y la librería TRL de Hugging Face, con una velocidad declarada "2x más rápida", pero no especifica el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF/DPO ni hiperparámetros. El nombre sugiere un enfoque hacia agentes de búsqueda, pero esto no está confirmado por la documentación del autor.
 
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta `conversational` y el pipeline `text-generation` indican soporte para diálogo multi-turno.
 - Generación de texto general en inglés: único idioma declarado (`en`).
 - Formato de chat: el tag `conversational` apunta a un formato de plantilla de conversación, aunque no se detalla la plantilla concreta.
-- Compatibilidad con text-generation-inference (TGI) y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con text-generation-inference (TGI) y con endpoints de Hugging Face (`endpoints_compatible`).
 - Ajuste orientado a tareas de agente de búsqueda según el nombre del modelo (SearchAgent), si bien el autor no documenta esta capacidad.
 - No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, visión, audio ni modo "thinking". No disponibles.
 
@@ -65,8 +65,8 @@ En la información proporcionada no se incluyen datos de rendimiento de modelos 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM2.5-230M-SearchAgent-SFT-02 | 229,7 M | no disponible | apache-2.0 | HuggingFace, 0 descargas | Fine-tune SFT con Unsloth |
-| LiquidAI/LFM2.5-230M (base) | 229,7 M (aprox.) | no disponible | no disponible en esta informacion | HuggingFace (modelo base) | Modelo original de Liquid AI |
+| LFM2.5-230M-SearchAgent-SFT-02 | 229,7 M | no disponible | apache-2.0 | Hugging Face, 0 descargas | Fine-tune SFT con Unsloth |
+| LiquidAI/LFM2.5-230M (base) | 229,7 M (aprox.) | no disponible | no disponible en esta informacion | Hugging Face (modelo base) | Modelo original de Liquid AI |
 
 No se dispone de información verificable sobre otros modelos comparables de la misma categoría (por ejemplo, alternativas de menos de 500 M de parámetros) en los datos aportados, por lo que la comparación con terceros queda como no disponible.
 
@@ -84,7 +84,7 @@ No se dispone de información verificable sobre otros modelos comparables de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-230M-SearchAgent-SFT-02
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-230M-SearchAgent-SFT-02
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Unsloth (librería de entrenamiento citada): https://github.com/unslothai/unsloth
 

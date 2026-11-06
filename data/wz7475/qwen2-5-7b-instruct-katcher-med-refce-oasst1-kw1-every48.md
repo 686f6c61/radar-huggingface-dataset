@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every48` es un ajuste fino publicado en HuggingFace por el usuario wz7475. La propia model card esta generada automaticamente por la plantilla de transformers y no ha sido completada: todos los campos de descripcion, autor, licencia, idiomas, datos de entrenamiento y evaluacion figuran como "More Information Needed". No existe pipeline declarado, no tiene descargas ni likes, y el repositorio ocupa 0,3 GB, un tamano muy inferior a los aproximadamente 15 GB que ocuparian los pesos completos de un modelo de 7B en bfloat16, lo que apunta a que se trata de un adaptador (LoRA u similar) y no de un checkpoint completo.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every48` es un ajuste fino publicado en Hugging Face por el usuario wz7475. La propia model card esta generada automaticamente por la plantilla de transformers y no ha sido completada: todos los campos de descripcion, autor, licencia, idiomas, datos de entrenamiento y evaluacion figuran como "More Information Needed". No existe pipeline declarado, no tiene descargas ni likes, y el repositorio ocupa 0,3 GB, un tamano muy inferior a los aproximadamente 15 GB que ocuparian los pesos completos de un modelo de 7B en bfloat16, lo que apunta a que se trata de un adaptador (LoRA u similar) y no de un checkpoint completo.
 
 El identificador del repositorio sugiere que el modelo parte de Qwen2.5-7B-Instruct y que se ha sometido a un proceso de ajuste encadenado sobre dominios concretos: "katcher-med" apunta a un corpus medico, "refce" a un conjunto de correccion de errores en textos de aprendices de ingles (REFCE), "oasst1" al dataset OpenAssistant Conversations, y "kw1" y "every48" a parametros de mezcla o frecuencia. Esta interpretacion procede unicamente del nombre y no esta confirmada por el autor en ninguna documentacion publica, por lo que debe tratarse como una hipotesis de trabajo.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada en el estado actual: sin model card, sin licencia decl
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla automatica de HuggingFace y no incluye detalles de datos, hiperparametros, regimen de precision ni infraestructura de computo. El unico metadato tecnico disponible es la libreria (`transformers`) y el formato de pesos (`safetensors`).
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla automatica de Hugging Face y no incluye detalles de datos, hiperparametros, regimen de precision ni infraestructura de computo. El unico metadato tecnico disponible es la libreria (`transformers`) y el formato de pesos (`safetensors`).
 
 Atendiendo al nombre del repositorio, cabe inferir una receta de ajuste supervisado en varias etapas sobre Qwen2.5-7B-Instruct: una fase con datos medicos ("katcher-med"), otra sobre correccion de errores de aprendices de ingles ("refce", probablemente REFCE), una tercera sobre OpenAssistant Conversations ("oasst1") y un ajuste final con parametros de mezcla "kw1" y frecuencia "every48". El tamano del repositorio sugiere que solo se publican los pesos del adaptador, no el modelo fusionado, por lo que seria necesario descargar Qwen2.5-7B-Instruct por separado y aplicar el adaptador para poder ejecutarlo. Ninguno de estos extremos esta verificado por el autor.
 
@@ -51,7 +51,7 @@ Atendiendo al nombre del repositorio, cabe inferir una receta de ajuste supervis
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye ninguna seccion de evaluacion completada y el autor no ha publicado metricas en el repositorio de HuggingFace. No se dispone de datos de MMLU, HumanEval, GSM8K ni de ninguna otra prueba para este modelo, ni tampoco de comparaciones con el modelo base o con otros ajustes similares.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye ninguna seccion de evaluacion completada y el autor no ha publicado metricas en el repositorio de Hugging Face. No se dispone de datos de MMLU, HumanEval, GSM8K ni de ninguna otra prueba para este modelo, ni tampoco de comparaciones con el modelo base o con otros ajustes similares.
 
 ## Requisitos de hardware
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every48
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every48
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en ML: https://mlco2.github.io/impact
 - Modelo base probable, Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

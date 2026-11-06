@@ -18,7 +18,7 @@ La relevancia de esta ficha es acotada y debe interpretarse con cautela: el prop
 | Longitud de contexto | Configuracion de servicio verificada de 98.304 tokens; techo de configuracion de 128.000 posiciones |
 | Tipos de cuantizacion | BF16, FP16, FP8, INT8, INT4, GGUF (familias de release separadas) |
 | Idiomas soportados | no disponible |
-| Licencia | lfm-open-license (etiquetada como `other` en HuggingFace) |
+| Licencia | lfm-open-license (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (FP16); GGUF disponible en repositorio hermano |
 
 ## Arquitectura y entrenamiento
@@ -74,8 +74,8 @@ El autor indica que esta suite pequena no mostro mejora agregada sobre checkpoin
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-98K-V2-FP16 (este) | ~2,17 B | 98.304 configurado (techo 128.000) | lfm-open-license | HuggingFace, 0 descargas | Checkpoint comunitario con LoRA fusionado; validacion propia limitada |
-| LiquidAI/LFM3-Omni-2B (base) | ~2,17 B (no verificado en esta ficha) | no disponible | lfm-open-license | HuggingFace oficial | Modelo original de Liquid AI; sin el ajuste de contexto largo ni refinamiento de tool calling |
+| LFM3-Omni-2B-98K-V2-FP16 (este) | ~2,17 B | 98.304 configurado (techo 128.000) | lfm-open-license | Hugging Face, 0 descargas | Checkpoint comunitario con LoRA fusionado; validacion propia limitada |
+| LiquidAI/LFM3-Omni-2B (base) | ~2,17 B (no verificado en esta ficha) | no disponible | lfm-open-license | Hugging Face oficial | Modelo original de Liquid AI; sin el ajuste de contexto largo ni refinamiento de tool calling |
 | Checkpoint424 (padre de la rama) | ~2,17 B | no disponible | lfm-open-license | No distribuido como repo publico segun la informacion | Mismo rendimiento agregado que 432 en la suite del autor |
 
 No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
@@ -97,7 +97,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-FP16
+- Repositorio Hugging Face: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-FP16
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Licencia del base: https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE
 - Release BF16: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-BF16

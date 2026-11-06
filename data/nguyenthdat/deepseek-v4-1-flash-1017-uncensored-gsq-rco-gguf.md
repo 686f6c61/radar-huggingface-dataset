@@ -87,7 +87,7 @@ Las tres variantes derivadas comparten pesos y difieren en layout, edicion de co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nguyenthdat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/nguyenthdat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Cuantizacion GSQ-RCO y tabla Engram (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Edicion uncensored (AtomicChat): https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF

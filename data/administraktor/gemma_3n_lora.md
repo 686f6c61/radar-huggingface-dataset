@@ -78,7 +78,7 @@ La comparativa se limita a modelos de la misma familia. No hay datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/administraktor/gemma_3n_lora
+- Hugging Face: https://huggingface.co/administraktor/gemma_3n_lora
 - Gemma 3n (Google DeepMind): https://deepmind.google/models/gemma/gemma-3n/
 - Documentación de Gemma 3n (Google AI for Developers): https://ai.google.dev/gemma/docs/gemma-3n
 - Página de Gemma (Google AI): https://ai.google.dev/gemma

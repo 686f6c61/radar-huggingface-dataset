@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DrewZhang/interactivechat-r1-static-convagent-inscit-qwen25-3b-f1-only` es un modelo de lenguaje de 3.397.103.616 parametros (aproximadamente 3,4 mil millones) publicado en HuggingFace por el usuario DrewZhang. Por el identificador y la etiqueta de arquitectura `qwen2`, se trata de un ajuste fino derivado de la familia Qwen2.5-3B, orientado por su nombre a tareas de agente conversacional interactivo, con una nomenclatura que sugiere entrenamiento con datos de razonamiento estilo R1 y evaluacion con metrica F1 sobre un subconjunto concreto. El repositorio ocupa 13,6 GB, lo que corresponde a pesos almacenados en precision FP32 (4 bytes por parametro), un formato poco habitual en publicaciones recientes y que penaliza el despliegue en inferencia.
+`DrewZhang/interactivechat-r1-static-convagent-inscit-qwen25-3b-f1-only` es un modelo de lenguaje de 3.397.103.616 parametros (aproximadamente 3,4 mil millones) publicado en Hugging Face por el usuario DrewZhang. Por el identificador y la etiqueta de arquitectura `qwen2`, se trata de un ajuste fino derivado de la familia Qwen2.5-3B, orientado por su nombre a tareas de agente conversacional interactivo, con una nomenclatura que sugiere entrenamiento con datos de razonamiento estilo R1 y evaluacion con metrica F1 sobre un subconjunto concreto. El repositorio ocupa 13,6 GB, lo que corresponde a pesos almacenados en precision FP32 (4 bytes por parametro), un formato poco habitual en publicaciones recientes y que penaliza el despliegue en inferencia.
 
 El modelo resuelve, en principio, el problema de disponer de un agente conversacional pequeno y ejecutable en hardware modesto, pero la ficha del repositorio no aporta informacion sobre datos de entrenamiento, licencia, idiomas, pipeline o metodologia. Con 10 descargas y 0 likes desde su creacion el 17 de septiembre de 2026, se trata de una publicacion experimental con adopcion practicamente nula y sin validacion externa conocida.
 
@@ -87,7 +87,7 @@ La comparacion se limita a parametros, contexto y licencia, porque no existen re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DrewZhang/interactivechat-r1-static-convagent-inscit-qwen25-3b-f1-only
+- Repositorio en Hugging Face: https://huggingface.co/DrewZhang/interactivechat-r1-static-convagent-inscit-qwen25-3b-f1-only
 - Modelo base de referencia por arquitectura y tamano, Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Modelo base de referencia para instrucciones, Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper de la familia Qwen2.5: https://arxiv.org/abs/2412.15115

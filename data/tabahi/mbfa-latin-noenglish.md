@@ -89,11 +89,11 @@ No se dispone de datos de otros alineadores forzados comparables (Montreal Force
 - Licencia AGPL-3.0: impone obligaciones de copyleft sobre obras derivadas y servicios en red; debe revisarse antes de uso comercial o integración en productos propietarios.
 - Riesgo de alucinación en el sentido de asignar fonemas a segmentos de audio ruidoso o sin habla; el decodificador de Viterbi fuerza una segmentación aunque la señal no contenga los fonemas indicados.
 - Solo se ha validado con audio mono a 16 kHz; otras frecuencias de muestreo requieren remuestreo previo.
-- El modelo tiene 31 descargas y 0 likes en HuggingFace, sin validación comunitaria independiente documentada.
+- El modelo tiene 31 descargas y 0 likes en Hugging Face, sin validación comunitaria independiente documentada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tabahi/mbfa-latin-noEnglish
+- Modelo en Hugging Face: https://huggingface.co/Tabahi/mbfa-latin-noEnglish
 - Repositorio de código: https://github.com/tabahi/bfa_models
 - standard_g2p (CharsiuG2P): https://github.com/tabahi/CharsiuG2P
 - Dataset de entrenamiento: google/fleurs (https://huggingface.co/datasets/google/fleurs)

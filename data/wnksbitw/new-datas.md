@@ -52,5 +52,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/wnksbitw/new-datas)
+- [Repositorio Hugging Face](https://huggingface.co/wnksbitw/new-datas)
 - Resultados de búsqueda web generales (sin información específica sobre este modelo): [BenchLM](https://benchlm.ai/), [LM Market Cap](https://lmmarketcap.com/tools/model-release-tracker), [AI Flash Report](https://aiflashreport.com/model-releases.html), [Google Dataset Search](https://datasetsearch.research.google.com/)

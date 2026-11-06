@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Mabus46/White-Shirt-AI-Game-Engine` no es un modelo de lenguaje con pesos: es un repositorio de *prompt engineering* publicado en HuggingFace que contiene un bloque de instrucciones de sistema (un "prompt de iniciación") para convertir un LLM genérico en el motor de un RPG de texto ciberpunk. El autor, Maksim Belyakov (usuario Mabus46), lo presenta como una alternativa a los motores de grafos ramificados (`if/else`) habituales en los videojuegos narrativos: en lugar de código, se entrega al modelo una "lógica de mundo" y una "matriz de estados". El experimento se probó, según la model card, con GigaChat, Claude, Gemini, Qwen, ChatGPT y Alice.
+`Mabus46/White-Shirt-AI-Game-Engine` no es un modelo de lenguaje con pesos: es un repositorio de *prompt engineering* publicado en Hugging Face que contiene un bloque de instrucciones de sistema (un "prompt de iniciación") para convertir un LLM genérico en el motor de un RPG de texto ciberpunk. El autor, Maksim Belyakov (usuario Mabus46), lo presenta como una alternativa a los motores de grafos ramificados (`if/else`) habituales en los videojuegos narrativos: en lugar de código, se entrega al modelo una "lógica de mundo" y una "matriz de estados". El experimento se probó, según la model card, con GigaChat, Claude, Gemini, Qwen, ChatGPT y Alice.
 
 El artefacto define un mundo distópico (el "Círculo de Hielo", una simulación corporativa), dos recursos numéricos (HP y WP o Voluntad), y una mecánica de progresión en la que el personaje sube armadura al vencer demonios internos y una "Amada" borda runas de la Bukvitsa eslava antigua sobre su camisa blanca. El prompt obliga al modelo anfitrión a cerrar cada escena con tres opciones numeradas, una de ellas con coste de WP, y a narrar un "save point" tras cada victoria.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| White-Shirt-AI-Game-Engine (este repositorio) | no aplica (sin pesos) | el del LLM anfitrion | sin benchmarks; evidencia anecdótica | MIT (solo el texto del prompt) | HuggingFace, 0 descargas |
+| White-Shirt-AI-Game-Engine (este repositorio) | no aplica (sin pesos) | el del LLM anfitrion | sin benchmarks; evidencia anecdótica | MIT (solo el texto del prompt) | Hugging Face, 0 descargas |
 | Modelo abierto afinado para rol o narrativa (por ejemplo, un 7-8B con fine-tuning de roleplay) | del orden de 7-8B (segun el modelo) | el declarado por cada modelo | benchmarks propios, no comparables con este artefacto | variable segun el modelo | ecosistema abierto (GGUF, safetensors) |
 | Motor de narrativa con grafo ramificado (Twine, Ink, Yarn Spinner) | no aplica | no aplica | determinista y verificable | licencias permisivas habituales | maduro y ampliamente usado |
 | Motor propio con estado gestionado por código y LLM solo para prosa | depende del LLM | el del LLM | estado verificable por software | depende del stack | requiere desarrollo a medida |
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de un conjunto de alternativas evaluadas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mabus46/White-Shirt-AI-Game-Engine
+- Repositorio en Hugging Face: https://huggingface.co/Mabus46/White-Shirt-AI-Game-Engine
 - Sitio del autor (universo "El Rey Angamua"): https://angamua.ru/
 - Constructor de mundos "White Shirt": https://angamua.ru/whiteshirt.html
 - Paper, blog técnico o repositorio de código: no disponible en la informacion proporcionada

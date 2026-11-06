@@ -90,7 +90,7 @@ Comparado con el checkpoint original `fishaudio/drama-3`, este repositorio no ap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jmica/Drama-3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jmica/Drama-3-GGUF
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Licencia del modelo base: https://huggingface.co/fishaudio/drama-3/blob/main/LICENSE
 - Rama del runtime `drama-3-native`: https://github.com/JarodMica/audio.cpp/tree/drama-3-native

@@ -99,6 +99,6 @@ No se han proporcionado datos de benchmarks ni especificaciones de modelos alter
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/yehors/Ornith-1.5-35B-A3B-Q8_0-MTP-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/yehors/Ornith-1.5-35B-A3B-Q8_0-MTP-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Paper, blog o demo adicionales: no disponible

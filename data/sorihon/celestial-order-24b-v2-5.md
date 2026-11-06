@@ -83,11 +83,11 @@ No se recomienda usar este modelo en producción sin antes validar su rendimient
 - La longitud de contexto no está publicada; se asume que hereda la del modelo base (probablemente 4K o 8K, típico de Mistral), pero no es verificable.
 - No se ofrecen pesos cuantizados, lo que limita su despliegue en hardware de consumo.
 - No se han publicado benchmarks, por lo que no hay evidencia de su calidad en tareas estándar como MMLU, HumanEval o GSM8K.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Sorihon/Celestial-Order-24B-V2.5](https://huggingface.co/Sorihon/Celestial-Order-24B-V2.5)
+- Modelo en Hugging Face: [Sorihon/Celestial-Order-24B-V2.5](https://huggingface.co/Sorihon/Celestial-Order-24B-V2.5)
 - Modelo base Celestial-Order-24B-V2: [https://huggingface.co/Sorihon/Celestial-Order-24B-V2](https://huggingface.co/Sorihon/Celestial-Order-24B-V2)
 - Modelo Delta-Vector/Rei-24B-KTO: [https://huggingface.co/Delta-Vector/Rei-24B-KTO](https://huggingface.co/Delta-Vector/Rei-24B-KTO)
 - Paper de DARE TIES: [https://arxiv.org/abs/2311.03099](https://arxiv.org/abs/2311.03099)

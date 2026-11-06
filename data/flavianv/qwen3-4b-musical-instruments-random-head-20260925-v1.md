@@ -81,10 +81,10 @@ No se han publicado comparaciones con modelos de terceros (por ejemplo, otros re
 
 | Modelo | Parametros | Contexto | Top-one en validacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3-4b-musical-instruments-random-head-20260925-v1` (este) | ~4B + 2.560 pesos de cabeza | no disponible | 89,416 % (245/274) mejor; 88,321 % (242/274) final | Apache 2.0 | Publico en HuggingFace, solo la cabeza |
+| `qwen3-4b-musical-instruments-random-head-20260925-v1` (este) | ~4B + 2.560 pesos de cabeza | no disponible | 89,416 % (245/274) mejor; 88,321 % (242/274) final | Apache 2.0 | Publico en Hugging Face, solo la cabeza |
 | Run previo con cabeza continuada (mismo backbone) | ~4B + cabeza previa | no disponible | 90,146 % (247/274) | no disponible | No referenciado con ID en la informacion dada |
 | Linea base de cabeza aleatoria sin entrenar | ~4B + 2.560 pesos | no disponible | 22,993 % (63/274) | no aplica | No es un modelo publicado |
-| Backbone `qwen3-4b-musical-instruments-full-sft-shared-20260923` | ~4B | no disponible | no aplica (es el backbone, no un ranker) | Apache 2.0 (segun etiquetas del modelo base) | Publico en HuggingFace |
+| Backbone `qwen3-4b-musical-instruments-full-sft-shared-20260923` | ~4B | no disponible | no aplica (es el backbone, no un ranker) | Apache 2.0 (segun etiquetas del modelo base) | Publico en Hugging Face |
 | Otros reward models de ranking de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No se han publicado comparaciones con modelos de terceros (por ejemplo, otros re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-random-head-20260925-v1
+- Modelo en Hugging Face: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-random-head-20260925-v1
 - Backbone congelado requerido: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923
 - Dataset de entrenamiento: https://huggingface.co/datasets/flavianv/musical-instruments-ranker-combined-small-20260924-v1 (revision `f151816f2938c07dbe2a71393f09c7cf0d861658`)
 - Revision del backbone indicada en la model card: `1d6b019dfaaf368fe8af2ab593d66a3ee1c215a6`

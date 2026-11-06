@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MediScan EfficientNet-B0 es un modelo de clasificación de imágenes médicas basado en la arquitectura EfficientNet-B0, desarrollado en el contexto del proyecto MediScan. El sistema está diseñado para clasificar radiografías de tórax y lesiones cutáneas, calcular puntuaciones de confianza y generar mapas de activación Grad-CAM para explicar las decisiones del modelo. El repositorio en HuggingFace, publicado por el usuario Sagarss9812, está vinculado a un proyecto más amplio descrito en GitHub y en un sitio web de demostración que presenta un conjunto de modelos (ensemble) para el análisis de radiografías de tórax, incluyendo detección con YOLOv12m, clasificación con EfficientNet-B0 y segmentación con una U-Net de Lungmask, abarcando 15 clases de enfermedades pulmonares.
+MediScan EfficientNet-B0 es un modelo de clasificación de imágenes médicas basado en la arquitectura EfficientNet-B0, desarrollado en el contexto del proyecto MediScan. El sistema está diseñado para clasificar radiografías de tórax y lesiones cutáneas, calcular puntuaciones de confianza y generar mapas de activación Grad-CAM para explicar las decisiones del modelo. El repositorio en Hugging Face, publicado por el usuario Sagarss9812, está vinculado a un proyecto más amplio descrito en GitHub y en un sitio web de demostración que presenta un conjunto de modelos (ensemble) para el análisis de radiografías de tórax, incluyendo detección con YOLOv12m, clasificación con EfficientNet-B0 y segmentación con una U-Net de Lungmask, abarcando 15 clases de enfermedades pulmonares.
 
-El modelo se presenta como un componente de apoyo al diagnóstico clínico, con un enfoque en la interpretabilidad mediante Grad-CAM. EfficientNet-B0 es una red neuronal convolucional compacta, con alrededor de 5,3 millones de parámetros, lo que la hace adecuada para entornos con recursos computacionales limitados. Sin embargo, en el momento de la consulta, el repositorio de HuggingFace no contiene pesos descargables (tamaño 0.0 GB) y la model card está prácticamente vacía, por lo que la información operativa debe obtenerse de las fuentes externas del proyecto.
+El modelo se presenta como un componente de apoyo al diagnóstico clínico, con un enfoque en la interpretabilidad mediante Grad-CAM. EfficientNet-B0 es una red neuronal convolucional compacta, con alrededor de 5,3 millones de parámetros, lo que la hace adecuada para entornos con recursos computacionales limitados. Sin embargo, en el momento de la consulta, el repositorio de Hugging Face no contiene pesos descargables (tamaño 0.0 GB) y la model card está prácticamente vacía, por lo que la información operativa debe obtenerse de las fuentes externas del proyecto.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parametros | Uso en MediScan | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNet-B0 | CNN | ~5,3 M | Clasificación de imágenes médicas | MIT (según repo HuggingFace) | Repositorio sin pesos |
+| EfficientNet-B0 | CNN | ~5,3 M | Clasificación de imágenes médicas | MIT (según repo Hugging Face) | Repositorio sin pesos |
 | ResNet50 | CNN | ~25,6 M | Clasificación de imágenes médicas | no disponible | Mencionado en GitHub |
 | YOLOv12m | Detección de objetos | no disponible | Detección en ensemble de radiografías | no disponible | Mencionado en sitio web |
 
@@ -67,15 +67,15 @@ No se dispone de datos de rendimiento comparativo publicados.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene pesos descargables (tamaño 0.0 GB) y la model card está vacía, por lo que el modelo no es utilizable en su estado actual.
+- El repositorio de Hugging Face no contiene pesos descargables (tamaño 0.0 GB) y la model card está vacía, por lo que el modelo no es utilizable en su estado actual.
 - La información sobre el entrenamiento es incompleta: no se especifica el dataset, la composición de las clases ni el protocolo de validación clínica.
 - Los sesgos en los datos de imágenes médicas pueden afectar a la precisión en poblaciones no representadas, aunque no se proporciona información sobre la procedencia de los datos.
 - Existe riesgo de errores de clasificación en un dominio crítico como el diagnóstico médico; el modelo debe usarse como apoyo, no como sustituto del criterio clínico.
 - La licencia MIT permite uso comercial, pero no implica ninguna garantía de seguridad ni de aptitud para uso médico.
-- Las fuentes externas del proyecto (GitHub y sitio web) no están necesariamente vinculadas de forma oficial al autor del repositorio de HuggingFace, lo que genera incertidumbre sobre la autoría y el mantenimiento.
+- Las fuentes externas del proyecto (GitHub y sitio web) no están necesariamente vinculadas de forma oficial al autor del repositorio de Hugging Face, lo que genera incertidumbre sobre la autoría y el mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sagarss9812/mediscan-efficientnet-b0
+- Hugging Face: https://huggingface.co/Sagarss9812/mediscan-efficientnet-b0
 - GitHub (README de MediScan): https://github.com/SahilPatil756/mediscan/blob/main/README.md
 - Sitio web de demostración MediScan: https://michaelgetu.vercel.app/work/mediscan

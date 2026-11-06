@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Formato y tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YoungAi-DeepSeek-V4.1-Flash (esta ficha) | 552B MoE, 8B activos (base) | 1M tokens | GGUF, 113,6 GB, 40 fragmentos | MIT | HuggingFace, 54 descargas |
+| YoungAi-DeepSeek-V4.1-Flash (esta ficha) | 552B MoE, 8B activos (base) | 1M tokens | GGUF, 113,6 GB, 40 fragmentos | MIT | Hugging Face, 54 descargas |
 | DeepSeek V4.1 Flash (checkpoint oficial) | 552B MoE, 8B activos | 1M tokens | Pesos originales, ~510 GB | no disponible en la informacion | deepseek-ai y NVIDIA NIM |
 | Otras cuantizaciones GGUF de DeepSeek V4.1 Flash | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -107,7 +107,7 @@ No se dispone de informacion sobre alternativas on-device comparables de tamano 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wenzhouwu/YoungAi-DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/wenzhouwu/YoungAi-DeepSeek-V4.1-Flash
 - Archivos del repositorio: https://huggingface.co/wenzhouwu/YoungAi-DeepSeek-V4.1-Flash/tree/main
 - Repositorio GitHub del proyecto YoungAi: https://github.com/fodelf/YoungAi
 - Notas tecnicas del proyecto: https://github.com/fodelf/YoungAi/blob/restructure/docs/TECHNICAL.md

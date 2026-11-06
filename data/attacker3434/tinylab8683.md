@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`attacker3434/tinylab8683` es un modelo publicado en HuggingFace con pipeline declarado de `token-classification` y licencia MIT. El repositorio tiene un tamano de 0.0 GB y no registra descargas ni interacciones, por lo que se trata de un artefacto practicamente vacio o recien creado. El autor es el usuario `attacker3434`, sin trayectoria verificable ni documentacion tecnica asociada.
+`attacker3434/tinylab8683` es un modelo publicado en Hugging Face con pipeline declarado de `token-classification` y licencia MIT. El repositorio tiene un tamano de 0.0 GB y no registra descargas ni interacciones, por lo que se trata de un artefacto practicamente vacio o recien creado. El autor es el usuario `attacker3434`, sin trayectoria verificable ni documentacion tecnica asociada.
 
 La model card no contiene informacion sustantiva sobre arquitectura, datos de entrenamiento ni rendimiento. Ademas, incluye un bloque `widget` con un ejemplo cuyo campo `output` contiene una etiqueta con marcado HTML (`<img src=x>`), un patron tipico de prueba de inyeccion de contenido y no una salida valida de un modelo de clasificacion de tokens. Esto debe tratarse como contenido no fiable y no como una capacidad real del modelo.
 
@@ -76,5 +76,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/attacker3434/tinylab8683
+- Hugging Face: https://huggingface.co/attacker3434/tinylab8683
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

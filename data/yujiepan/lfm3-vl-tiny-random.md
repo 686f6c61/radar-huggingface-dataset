@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yujiepan/lfm3-vl-tiny-random | 13,81 M | 128.000 (declarado) | Fixture de test, pesos aleatorios | no disponible | HuggingFace |
-| LiquidAI/LFM3-VL-2B | 1,92 B (BF16) | 128.000 | Modelo vision-lenguaje real | no disponible en la informacion | HuggingFace |
-| tiny-random/lfm3 | no disponible | no disponible | Fixture de test solo texto | no disponible | HuggingFace |
-| tiny-random/lfm2 | no disponible | no disponible | Fixture de test solo texto | no disponible | HuggingFace |
+| yujiepan/lfm3-vl-tiny-random | 13,81 M | 128.000 (declarado) | Fixture de test, pesos aleatorios | no disponible | Hugging Face |
+| LiquidAI/LFM3-VL-2B | 1,92 B (BF16) | 128.000 | Modelo vision-lenguaje real | no disponible en la informacion | Hugging Face |
+| tiny-random/lfm3 | no disponible | no disponible | Fixture de test solo texto | no disponible | Hugging Face |
+| tiny-random/lfm2 | no disponible | no disponible | Fixture de test solo texto | no disponible | Hugging Face |
 
 La comparación relevante es con el modelo base: este repositorio reduce parámetros en un factor de ~139 y tamaño en disco de 3,84 GB a 27,6 MB, manteniendo la topología de capas pero no la calidad. Frente a `tiny-random/lfm3` y `tiny-random/lfm2`, añade la torre de visión y el proyector multimodal.
 
@@ -97,7 +97,7 @@ La comparación relevante es con el modelo base: este repositorio reduce paráme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yujiepan/lfm3-vl-tiny-random
+- Modelo en Hugging Face: https://huggingface.co/yujiepan/lfm3-vl-tiny-random
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Fixture de texto relacionado: https://huggingface.co/tiny-random/lfm3
 - Fixture de texto relacionado: https://huggingface.co/tiny-random/lfm2

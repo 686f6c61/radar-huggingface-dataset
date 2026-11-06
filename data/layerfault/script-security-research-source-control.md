@@ -68,7 +68,7 @@ No disponible. No existe una categoría de "modelos" comparable, ya que se trata
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/LayerFault/script-security-research-source-control
+- Repositorio de Hugging Face: https://huggingface.co/LayerFault/script-security-research-source-control
 - Proyecto LayerFault (herramienta de admisión de modelos): https://github.com/izm1chael/layerfault
 - Releases de LayerFault: https://github.com/izm1chael/layerfault/releases
 - OWASP GenAI LLM Top 10 2026 (contexto de seguridad en IA): https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/

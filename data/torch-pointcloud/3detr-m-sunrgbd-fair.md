@@ -73,12 +73,12 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Parametros | Dataset | mAP@0.25 | mAP@0.5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| 3detr-m.sunrgbd.fair | 7,4 M | SUN RGB-D | 59,7 | 31,29 | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| 3detr-m.sunrgbd.fair | 7,4 M | SUN RGB-D | 59,7 | 31,29 | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | 3DETR original (facebookresearch) | ~7,4 M (variante M) | SUN RGB-D | no disponible en esta ficha | no disponible en esta ficha | Apache-2.0 | GitHub |
 | VoteNet | no disponible | SUN RGB-D | no disponible | no disponible | MIT (repo original) | GitHub |
 | GroupFree3D | no disponible | SUN RGB-D | no disponible | no disponible | no disponible | GitHub |
 
-La comparación cuantitativa con alternativas no puede completarse con la información disponible: solo se dispone de las métricas declaradas para esta conversión concreta. La ventaja diferencial de esta ficha frente al repositorio original es la integración directa con `torch-pointcloud` y la distribución en safetensors vía HuggingFace.
+La comparación cuantitativa con alternativas no puede completarse con la información disponible: solo se dispone de las métricas declaradas para esta conversión concreta. La ventaja diferencial de esta ficha frente al repositorio original es la integración directa con `torch-pointcloud` y la distribución en safetensors vía Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ La comparación cuantitativa con alternativas no puede completarse con la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/3detr-m.sunrgbd.fair
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/3detr-m.sunrgbd.fair
 - Paper 3DETR: https://arxiv.org/abs/2109.08141
 - Repositorio original: https://github.com/facebookresearch/3detr
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

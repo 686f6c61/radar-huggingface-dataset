@@ -23,7 +23,7 @@ Su relevancia actual es doble: por un lado, la decodificacion especulativa es un
 
 ## Arquitectura y entrenamiento
 
-El modelo es un borrador DFlash de 3 capas con block size 16. En decodificacion especulativa, el borrador propone un bloque de hasta 16 tokens candidatos por paso, que Qwen3-4B valida en paralelo. Incorpora codigo personalizado (etiqueta custom_code), por lo que requiere cargarse con el runtime compatible (SGLang) y no como un transformer estandar de HuggingFace. El autor lo describe como artefacto de investigacion para comparar objetivos de entrenamiento.
+El modelo es un borrador DFlash de 3 capas con block size 16. En decodificacion especulativa, el borrador propone un bloque de hasta 16 tokens candidatos por paso, que Qwen3-4B valida en paralelo. Incorpora codigo personalizado (etiqueta custom_code), por lo que requiere cargarse con el runtime compatible (SGLang) y no como un transformer estandar de Hugging Face. El autor lo describe como artefacto de investigacion para comparar objetivos de entrenamiento.
 
 El objetivo de entrenamiento es D-PAL[KL] (D-PAKL): divergencia KL directa forward KL(p||q) sobre el vocabulario completo, con pesos de posicion basados en solapamiento que aproximan la aceptacion exacta por rejection sampling (componente D-PAL), y un suelo de suavizado de pesos rho = 0,3. Los datos de entrenamiento provienen del dataset jgeuter/ShareGPT-Qwen3-4B-T0.6-Thinking-Regen: 36.315 conversaciones ShareGPT regeneradas por Qwen3-4B con thinking activado (T=0,6, top-p 0,95, top-k 20, presupuesto de 32k tokens), expandidas a 101.212 muestras de entrenamiento por turno. Solo se supervisa el ultimo turno del asistente de cada muestra, incluyendo el razonamiento, con plantilla de chat en modo thinking y longitud maxima de secuencia de 8192.
 
@@ -86,7 +86,7 @@ La comparacion cuantitativa de rendimiento no esta disponible: no se han publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgeuter/qwen3-4b-dpakl-thinking-b16-alpha0.3
+- Modelo en Hugging Face: https://huggingface.co/jgeuter/qwen3-4b-dpakl-thinking-b16-alpha0.3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jgeuter/ShareGPT-Qwen3-4B-T0.6-Thinking-Regen
 - Referencia de despliegue (SGLang): no se proporciona enlace en la model card

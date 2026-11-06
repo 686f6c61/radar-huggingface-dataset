@@ -76,6 +76,6 @@ El adaptador se diferencia del modelo base por su especializacion en soporte al 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nithinai517/tinyllama-support-dora
+- Repositorio Hugging Face: https://huggingface.co/nithinai517/tinyllama-support-dora
 - Modelo base TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Dataset Bitext customer support: https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset

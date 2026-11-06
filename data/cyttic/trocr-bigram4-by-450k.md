@@ -75,5 +75,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace - cyttic/trocr-bigram4-BY-450k](https://huggingface.co/cyttic/trocr-bigram4-BY-450k)
+- [Hugging Face - cyttic/trocr-bigram4-BY-450k](https://huggingface.co/cyttic/trocr-bigram4-BY-450k)
 - [Modelo base: cyttic/exp2-frozen-benyehuda-cont](https://huggingface.co/cyttic/exp2-frozen-benyehuda-cont)

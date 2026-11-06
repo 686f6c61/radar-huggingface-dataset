@@ -79,7 +79,7 @@ La comparación real requiere ejecutar benchmarks sobre los mismos conjuntos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asadullahshehbaz/biomistral-medical-qa-lora
+- Modelo en Hugging Face: https://huggingface.co/asadullahshehbaz/biomistral-medical-qa-lora
 - Modelo base BioMistral-7B: https://huggingface.co/BioMistral/BioMistral-7B
 - Repositorio GitHub de BioMistral: https://github.com/BioMistral/BioMistral
 - Paper de BioMistral (arXiv): https://arxiv.org/abs/2402.10373

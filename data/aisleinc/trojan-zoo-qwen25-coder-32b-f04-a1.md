@@ -116,7 +116,7 @@ Frente a otros adaptadores LoRA de codigo, la diferencia relevante no es de rend
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f04-a1
+- Repositorio Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f04-a1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Coleccion AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
 - Manifiesto del zoo: `zoo_manifest.json` dentro del propio repositorio

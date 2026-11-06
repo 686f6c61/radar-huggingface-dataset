@@ -84,6 +84,6 @@ La comparación directa más relevante es con Qwen3-0.6B, del que Nova Mini 1.0 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ModernoTech/Nova-Mini
+- Repositorio Hugging Face: https://huggingface.co/ModernoTech/Nova-Mini
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
-- Organización Moderno Tech en HuggingFace: https://huggingface.co/ModernoTech
+- Organización Moderno Tech en Hugging Face: https://huggingface.co/ModernoTech

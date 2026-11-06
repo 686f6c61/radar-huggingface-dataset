@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`azakharovette/generation-2024` es un repositorio experimental publicado en HuggingFace por el usuario `azakharovette`. Según su propia model card, se trata de una base de código de **Mocov3** orientada a tareas de **generación**, con una configuración de escala **nano** pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado ni evaluado: el fichero `model.safetensors` se describe explícitamente como un *checkpoint* de inicialización válido para pruebas de humo (*smoke tests*), no como un modelo con resultados de referencia.
+`azakharovette/generation-2024` es un repositorio experimental publicado en Hugging Face por el usuario `azakharovette`. Según su propia model card, se trata de una base de código de **Mocov3** orientada a tareas de **generación**, con una configuración de escala **nano** pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado ni evaluado: el fichero `model.safetensors` se describe explícitamente como un *checkpoint* de inicialización válido para pruebas de humo (*smoke tests*), no como un modelo con resultados de referencia.
 
 El repositorio lo componen cuatro artefactos: `main.py` (implementación del modelo y punto de entrada ejecutable), `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicialización de pesos). La escala declarada es nano y el recuento de parámetros registrado en los metadatos de safetensors es de 24.832, una magnitud propia de una prueba de concepto y no de un modelo utilizable en producción.
 
@@ -84,5 +84,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azakharovette/generation-2024
-- Resultados de la búsqueda web: ninguno relevante para este repositorio. Los enlaces devueltos (cronología de IA de 2024 en HuggingFace Spaces, anuncio de generación de IA en Photoshop de Adobe, generador de imágenes de Fotor, rastreador de lanzamientos de modelos de LM Market Cap y anuncio de Veo 2 e Imagen 3 de Google) no están relacionados con el modelo descrito y no se incluyen como referencias técnicas.
+- Modelo en Hugging Face: https://huggingface.co/azakharovette/generation-2024
+- Resultados de la búsqueda web: ninguno relevante para este repositorio. Los enlaces devueltos (cronología de IA de 2024 en Hugging Face Spaces, anuncio de generación de IA en Photoshop de Adobe, generador de imágenes de Fotor, rastreador de lanzamientos de modelos de LM Market Cap y anuncio de Veo 2 e Imagen 3 de Google) no están relacionados con el modelo descrito y no se incluyen como referencias técnicas.

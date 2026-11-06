@@ -70,7 +70,7 @@ No se dispone de informacion sobre otros LoRAs de estilo para Z-Image con los qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jczyh124/oka-open-v26-lora
+- Repositorio Hugging Face: https://huggingface.co/jczyh124/oka-open-v26-lora
 - Modelo base (referencia): https://huggingface.co/Tongyi-MAI/Z-Image (no verificado en la busqueda)
 - Variante anterior (v1): https://huggingface.co/jczyh124/oka-open-v1-lora
 - Referencia en Civitai (posible version alternativa): https://civitai.com/models/1562556/oka

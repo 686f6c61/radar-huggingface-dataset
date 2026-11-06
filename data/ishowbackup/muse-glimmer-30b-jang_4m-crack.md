@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-JANG_4M-CRACK
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-JANG_4M-CRACK
 - Modelo base: https://huggingface.co/OsaurusAI/Muse-Glimmer-30B
 - Runtime vMLX: https://vmlx.net
 - Variantes: JANG_6M (https://huggingface.co/dealignai/Muse-Glimmer-30B-JANG_6M-CRACK) y JANG_2D (https://huggingface.co/dealignai/Muse-Glimmer-30B-JANG_2D-CRACK)

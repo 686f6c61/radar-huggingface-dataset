@@ -6,7 +6,7 @@ COA Mapper es un modelo de embeddings orientado a la tarea de mapeo de planes de
 
 El modelo se basa en fine-tuning de un modelo de embeddings de tipo sentence-transformers con conciencia jerárquica, inspirado en la arquitectura TopoLedgerBERT (arXiv:2407.05175). Está entrenado sobre el dataset sintético `gyaanbyte/coa-mapping-synthetic` y se plantea como un sistema de recuperación combinado con re-rank de LLM y umbrales de confianza, con una vía de revisión humana para garantizar reconciliación con varianza cero.
 
-En el momento de redactar esta ficha, el modelo está en entrenamiento y no se han publicado pesos ni resultados de evaluación. El repositorio de HuggingFace indica explícitamente que no habrá lanzamiento sin benchmarks previos, por lo que cualquier uso en producción queda condicionado a la publicación de los pesos y de las métricas prometidas.
+En el momento de redactar esta ficha, el modelo está en entrenamiento y no se han publicado pesos ni resultados de evaluación. El repositorio de Hugging Face indica explícitamente que no habrá lanzamiento sin benchmarks previos, por lo que cualquier uso en producción queda condicionado a la publicación de los pesos y de las métricas prometidas.
 
 ## Especificaciones técnicas
 
@@ -65,11 +65,11 @@ No disponible. No se han publicado pesos ni benchmarks del modelo, por lo que no
 - La licencia Apache 2.0 permite uso comercial, pero el modelo no está disponible aún.
 - La tarea de mapeo contable requiere alta precisión y cero errores de reconciliación; el diseño incluye revisión humana, lo que indica que no se recomienda automatización total sin supervisión.
 - El dataset de entrenamiento es sintético; la generalización a datos reales de producción no está verificada.
-- Los casos de uso encontrados en la búsqueda web (coa-mapper-mcp, coa-mapper de kotaicode, etc.) corresponden a otros proyectos con el mismo nombre, no al modelo de HuggingFace.
+- Los casos de uso encontrados en la búsqueda web (coa-mapper-mcp, coa-mapper de kotaicode, etc.) corresponden a otros proyectos con el mismo nombre, no al modelo de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gyaanbyte/coa-mapper
+- Modelo en Hugging Face: https://huggingface.co/gyaanbyte/coa-mapper
 - Dataset de entrenamiento: https://huggingface.co/datasets/gyaanbyte/coa-mapping-synthetic
 - Paper de inspiración (TopoLedgerBERT): https://arxiv.org/abs/2407.05175
 - Web de GyaanByte Labs: https://www.gyaanbytelabs.com

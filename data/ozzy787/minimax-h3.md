@@ -95,8 +95,8 @@ No se dispone de datos de benchmarks ni de especificaciones de parametros que pe
 
 ## Enlaces
 
-- Repositorio en HuggingFace (publicacion de terceros): https://huggingface.co/Ozzy787/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio en Hugging Face (publicacion de terceros): https://huggingface.co/Ozzy787/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - Skills de prompting: https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills

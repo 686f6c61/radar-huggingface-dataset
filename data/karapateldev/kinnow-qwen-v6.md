@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kinnow-qwen-v6 es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado en HuggingFace por el usuario KaraPatelDev bajo licencia Apache 2.0. Se trata de un modelo derivado de la version cuantizada en 4 bits de Unsloth del Qwen2.5-1.5B-Instruct original de Alibaba Cloud, entrenado con la libreria Unsloth para acelerar el proceso de ajuste. El repositorio ocupa aproximadamente 0,1 GB y esta etiquetado para su uso con transformers y text-generation-inference.
+Kinnow-qwen-v6 es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado en Hugging Face por el usuario KaraPatelDev bajo licencia Apache 2.0. Se trata de un modelo derivado de la version cuantizada en 4 bits de Unsloth del Qwen2.5-1.5B-Instruct original de Alibaba Cloud, entrenado con la libreria Unsloth para acelerar el proceso de ajuste. El repositorio ocupa aproximadamente 0,1 GB y esta etiquetado para su uso con transformers y text-generation-inference.
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2, con 1.500 millones de parametros, y esta orientado a generacion de texto en ingles. La model card es extremadamente escasa: no documenta el dataset de ajuste, el numero de tokens de entrenamiento, los hiperparametros empleados ni los resultados obtenidos. Tampoco se han publicado benchmarks ni una descripcion de las capacidades especificas adquiridas tras el fine-tuning.
 
@@ -44,7 +44,7 @@ No se especifica en la informacion disponible el dataset de ajuste, el numero de
 - Generacion de texto en entornos con recursos limitados: al caber en GPUs de consumo, puede desplegarse en estaciones de trabajo sin aceleradores de datacenter para tareas de baja criticidad.
 - Clasificacion y etiquetado de texto simple: con prompting adecuado, puede emplearse para categorizar documentos o extraer entidades en ingles, aunque sin garantias de calidad documentadas.
 - Base para ajustes posteriores: al ser un fine-tuning ligero, puede servir como punto de partida para experimentos de destilacion o adaptacion a dominios concretos.
-- Demostraciones y pruebas de concepto en TGI: el tag `text-generation-inference` sugiere compatibilidad con el servidor de HuggingFace, util para montar demos internas.
+- Demostraciones y pruebas de concepto en TGI: el tag `text-generation-inference` sugiere compatibilidad con el servidor de Hugging Face, util para montar demos internas.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kinnow-qwen-v6 | 1,5B | No disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning no documentado |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (segun documentacion de Alibaba) | Apache 2.0 | HuggingFace, muy extendido | Modelo base, con benchmarks publicados |
-| Qwen2.5-3B-Instruct | 3B | 32.768 tokens (segun documentacion de Alibaba) | Apache 2.0 (verificar en la model card oficial) | HuggingFace | Mayor capacidad, mismos requisitos moderados |
-| Llama 3.2 1B Instruct | 1,2B | 128.000 tokens (segun Meta) | Llama 3.2 Community License | HuggingFace | Alternativa de Meta con contexto amplio |
+| Kinnow-qwen-v6 | 1,5B | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning no documentado |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (segun documentacion de Alibaba) | Apache 2.0 | Hugging Face, muy extendido | Modelo base, con benchmarks publicados |
+| Qwen2.5-3B-Instruct | 3B | 32.768 tokens (segun documentacion de Alibaba) | Apache 2.0 (verificar en la model card oficial) | Hugging Face | Mayor capacidad, mismos requisitos moderados |
+| Llama 3.2 1B Instruct | 1,2B | 128.000 tokens (segun Meta) | Llama 3.2 Community License | Hugging Face | Alternativa de Meta con contexto amplio |
 
 ## Limitaciones y advertencias
 
@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KaraPatelDev/kinnow-qwen-v6
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/KaraPatelDev/kinnow-qwen-v6
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Wikipedia sobre Qwen: https://en.wikipedia.org/wiki/Qwen
 - Qwen Chat: https://chat.qwen.ai/

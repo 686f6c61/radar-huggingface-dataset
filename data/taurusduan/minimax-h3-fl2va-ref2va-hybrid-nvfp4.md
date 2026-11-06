@@ -120,7 +120,7 @@ No se dispone de comparativas con otros modelos de generacion de video de la com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taurusduan/MiniMax-H3-FL2VA-Ref2VA-Hybrid-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/taurusduan/MiniMax-H3-FL2VA-Ref2VA-Hybrid-NVFP4
 - Modelo base original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia de la comunidad MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Base NVFP4 (FL2VA y Ref2VA): https://huggingface.co/lilcheaty/MiniMax-H3-NVFP4

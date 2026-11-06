@@ -6,7 +6,7 @@ El modelo `voves/gemma-4-26B-A4B-it-NVFP4` es una versión cuantizada en formato
 
 Este modelo resuelve el problema de ejecutar un LLM multimodal de gran tamaño en entornos con recursos limitados, manteniendo una calidad razonable gracias a la cuantización NVFP4. Es relevante porque permite desplegar capacidades de razonamiento, visión y generación de código en infraestructuras modestas, con una licencia Apache 2.0 que facilita su uso comercial. El contexto máximo es de 256.000 tokens, lo que lo hace apto para tareas que requieren ventanas largas, como análisis de documentos extensos o conversaciones multi-turno.
 
-La versión cuantizada ha sido publicada por el usuario `voves` en HuggingFace, y su model card documenta un workaround necesario para ejecutarlo con sglang, aunque vLLM (versión nightly) lo soporta directamente. El modelo base original está disponible en el repositorio oficial de Google, con soporte para más de 140 idiomas.
+La versión cuantizada ha sido publicada por el usuario `voves` en Hugging Face, y su model card documenta un workaround necesario para ejecutarlo con sglang, aunque vLLM (versión nightly) lo soporta directamente. El modelo base original está disponible en el repositorio oficial de Google, con soporte para más de 140 idiomas.
 
 ## Especificaciones técnicas
 
@@ -80,8 +80,8 @@ La comparativa se basa en especificaciones conocidas de los modelos; no se dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/voves/gemma-4-26B-A4B-it-NVFP4
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-26B-A4B-it
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/voves/gemma-4-26B-A4B-it-NVFP4
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Página oficial de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Contenedor NIM en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nim/teams/google/containers/gemma-4-26b-a4b-it
 - Documentación de Google Cloud sobre Gemma 4 26B A4B IT: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it

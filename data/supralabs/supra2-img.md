@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Supra2-IMG es un modelo de generación de imágenes a partir de texto (text-to-image) desarrollado por SupraLabs y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un diffusion transformer (DiT) diminuto, de 104,5 millones de parámetros, entrenado desde cero sobre el dataset sintético LucasFang/FLUX-Reason-6M. El modelo genera imágenes de 256×256 píxeles en espacio latente de 32×32 mediante un VAE congelado (SD-VAE-FT-MSE) y condiciona la generación con un encoder de texto también congelado, Flan-T5-Base, con una ventana de 128 tokens.
+Supra2-IMG es un modelo de generación de imágenes a partir de texto (text-to-image) desarrollado por SupraLabs y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un diffusion transformer (DiT) diminuto, de 104,5 millones de parámetros, entrenado desde cero sobre el dataset sintético LucasFang/FLUX-Reason-6M. El modelo genera imágenes de 256×256 píxeles en espacio latente de 32×32 mediante un VAE congelado (SD-VAE-FT-MSE) y condiciona la generación con un encoder de texto también congelado, Flan-T5-Base, con una ventana de 128 tokens.
 
 Su relevancia no está en competir con modelos de gran escala, sino en el extremo opuesto: demuestra que un DiT entrenado íntegramente desde cero, con un presupuesto de cómputo muy reducido (9 horas en una única NVIDIA H100 SXM de 80 GB), puede alcanzar una calidad visual notable para su tamaño. Esto lo convierte en una pieza útil para investigación reproducible, ablaciones de arquitectura y despliegues en hardware muy limitado, incluido CPU.
 
-El modelo no cuenta con resultados de benchmarks publicados, no ofrece versiones cuantizadas ni integración con Diffusers, y su uso requiere el script de inferencia propio del autor (`inference.py`), ya que el repositorio contiene código personalizado (`custom_code`) y el visor de HuggingFace está desactivado (`viewer: false`).
+El modelo no cuenta con resultados de benchmarks publicados, no ofrece versiones cuantizadas ni integración con Diffusers, y su uso requiere el script de inferencia propio del autor (`inference.py`), ya que el repositorio contiene código personalizado (`custom_code`) y el visor de Hugging Face está desactivado (`viewer: false`).
 
 ## Especificaciones técnicas
 
@@ -42,7 +42,7 @@ No se documenta el uso de RLHF, DPO ni ajuste por preferencias; se trata de un e
 - Muestreo con guidance libre de clasificador (CFG 3,0 recomendado) y sampler Euler flow a 50 pasos.
 - Generación reproducible mediante semilla (`--seed`) y generación por lotes (`--n`).
 - Ejecución autocontenida mediante el script `inference.py` proporcionado por el autor, con carga de pesos en aproximadamente 0,7 s según el log de ejemplo.
-- Etiqueta `feature-extraction` declarada en HuggingFace, aunque la model card no documenta ningún uso de extracción de características; probablemente sea una etiqueta heredada del etiquetado automático.
+- Etiqueta `feature-extraction` declarada en Hugging Face, aunque la model card no documenta ningún uso de extracción de características; probablemente sea una etiqueta heredada del etiquetado automático.
 - No soporta tool calling ni function calling.
 - No soporta agentes, razonamiento multi-paso ni planificación.
 - No soporta entrada multimodal (imagen, audio o vídeo); solo texto como entrada.
@@ -79,7 +79,7 @@ Los datos de los modelos alternativos proceden de documentación pública y no d
 
 | Modelo | Parámetros | Resolución nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Supra2-IMG | 104,5 M (DiT) + encoder y VAE congelados | 256×256 | Apache-2.0 | Pesos `.pt` y código propio en HuggingFace |
+| Supra2-IMG | 104,5 M (DiT) + encoder y VAE congelados | 256×256 | Apache-2.0 | Pesos `.pt` y código propio en Hugging Face |
 | SD 1.5 (UNet) | ~860 M (UNet) + encoder y VAE | 512×512 | CreativeML OpenRAIL-M | Integración nativa en Diffusers, ecosistema amplio de LoRA y ControlNet |
 | Segmind Tiny-SD | ~0,5 B, destilado de SD 1.5 | 512×512 | CreativeML OpenRAIL-M | Diffusers |
 | FLUX.1-schnell | ~12 B | 1024×1024 | Apache-2.0 | Diffusers, ecosistema amplio |
@@ -94,7 +94,7 @@ Frente a SD 1.5 y Tiny-SD, Supra2-IMG es entre cinco y ocho veces más pequeño,
 - Sesgos: al entrenarse sobre el dataset sintético FLUX-Reason-6M, hereda los sesgos de representación, estilo y composición de ese corpus y del modelo que lo generó. No se documenta ningún proceso de mitigación ni de filtrado de seguridad.
 - Alucinación visual: como todo modelo generativo de imágenes, puede producir anatomías incorrectas, texto ilegible dentro de la imagen, objetos incoherentes o composiciones imposibles, especialmente con prompts complejos.
 - Sin filtros de seguridad documentados: la model card no menciona moderación de contenido ni clasificadores de seguridad, por lo que el desarrollador debe implementarlos si el despliegue es público.
-- Integración limitada: requiere código personalizado (`custom_code`) y el script `inference.py`; no funciona con la API estándar de Diffusers y el visor de HuggingFace está desactivado, lo que dificulta su evaluación rápida.
+- Integración limitada: requiere código personalizado (`custom_code`) y el script `inference.py`; no funciona con la API estándar de Diffusers y el visor de Hugging Face está desactivado, lo que dificulta su evaluación rápida.
 - Sin cuantizaciones: solo existe un checkpoint en punto flotante, sin versiones GGUF, int8 ni int4 que reduzcan aún más el consumo de memoria.
 - Licencia de los componentes congelados: el modelo se distribuye bajo Apache-2.0, pero el encoder Flan-T5-Base y el VAE SD-VAE-FT-MSE se usan congelados desde repositorios de terceros; conviene verificar sus condiciones de uso antes de un despliegue comercial, ya que la información disponible no detalla la licencia aplicable a esos componentes.
 - Madurez y mantenimiento: el repositorio registra 0 descargas y 13 "likes" en el momento de la consulta, el autor anuncia una futura versión Supra2.5-IMG y no hay garantía de soporte a largo plazo.
@@ -102,7 +102,7 @@ Frente a SD 1.5 y Tiny-SD, Supra2-IMG es entre cinco y ocho veces más pequeño,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SupraLabs/Supra2-IMG
+- Modelo en Hugging Face: https://huggingface.co/SupraLabs/Supra2-IMG
 - Script de inferencia: https://huggingface.co/SupraLabs/Supra2-IMG/resolve/main/inference.py
 - Dataset de entrenamiento: https://huggingface.co/datasets/LucasFang/FLUX-Reason-6M
 - Encoder de texto: https://huggingface.co/google/flan-t5-base

@@ -86,10 +86,10 @@ No se han publicado resultados de benchmarks estándar (FID, CLIP score, MMLU, H
 
 | Modelo | Parámetros | Contexto / resolución | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HomeIMG-641M-epoch15 | 641M (denoiser) + 35,7M (refinador) | 95 tokens de texto; 256×256 | FD-DINOv2 27,66; val/loss 0,6297 | Apache 2.0 | HuggingFace (diffusers) |
-| HomeIMG-253M | 253M + Slayer149 | 95 tokens; 256×256 | FD-DINOv2 37,64 | No disponible en la información | HuggingFace |
-| HomeIMG-50M | 50,4M + 12,6M text encoder desde cero | No disponible; 256×256 | FD-DINOv2 69,61 | No disponible en la información | HuggingFace |
-| AuroraIMG2-50M-Preview | 50M | No disponible; 256×256 | val/loss 0,6929 | No disponible en la información | HuggingFace |
+| HomeIMG-641M-epoch15 | 641M (denoiser) + 35,7M (refinador) | 95 tokens de texto; 256×256 | FD-DINOv2 27,66; val/loss 0,6297 | Apache 2.0 | Hugging Face (diffusers) |
+| HomeIMG-253M | 253M + Slayer149 | 95 tokens; 256×256 | FD-DINOv2 37,64 | No disponible en la información | Hugging Face |
+| HomeIMG-50M | 50,4M + 12,6M text encoder desde cero | No disponible; 256×256 | FD-DINOv2 69,61 | No disponible en la información | Hugging Face |
+| AuroraIMG2-50M-Preview | 50M | No disponible; 256×256 | val/loss 0,6929 | No disponible en la información | Hugging Face |
 
 No se dispone de datos de benchmarks comparables con modelos de difusión de la literatura (p. ej. SDXL, FLUX.1) porque el autor advierte que sus valores de FD-DINOv2 no son comparables con los publicados.
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparables con modelos de difusión de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cpral/HomeIMG-641M-epoch15
+- Modelo en Hugging Face: https://huggingface.co/cpral/HomeIMG-641M-epoch15
 - Checkpoint intermedio: https://huggingface.co/cpral/HomeIMG-641M-epoch10.8
 - Modelo predecesor: https://huggingface.co/cpral/HomeIMG-253M
 - Modelo predecesor: https://huggingface.co/cpral/HomeIMG-50M

@@ -78,7 +78,7 @@ La comparativa es cualitativa porque no hay datos de rendimiento publicados para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/MediaPipe-Pose-Estimation
+- Hugging Face: https://huggingface.co/qualcomm/MediaPipe-Pose-Estimation
 - Repositorio base MediaPipePyTorch: https://github.com/zmurez/MediaPipePyTorch/
 - Paper BlazePose (arXiv:2006.10204): https://arxiv.org/abs/2006.10204
 - Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/mediapipe_pose

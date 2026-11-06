@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`buffalophotonics/albef-multitask20` es un repositorio de HuggingFace publicado por el usuario `buffalophotonics` que contiene una implementación funcional de ALBEF orientada a tareas múltiples (multitask) en configuración reducida. No se trata de un modelo entrenado y publicados con resultados, sino de un punto de partida experimental: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`buffalophotonics/albef-multitask20` es un repositorio de Hugging Face publicado por el usuario `buffalophotonics` que contiene una implementación funcional de ALBEF orientada a tareas múltiples (multitask) en configuración reducida. No se trata de un modelo entrenado y publicados con resultados, sino de un punto de partida experimental: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El interés del repositorio es, por tanto, de carácter técnico y reproducible: incluye el código principal (`main.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`), lo que permite reproducir la estructura del modelo y adaptarla. La arquitectura declarada es ALBEF con atención dispersa (sparse), fusión tipo Tucker, activación Mish y normalización por instancias, escala small.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| buffalophotonics/albef-multitask20 | 16.576 (segun safetensors) | no disponible | sin benchmarks declarados | BSD-3-Clause | HuggingFace, 0 descargas |
+| buffalophotonics/albef-multitask20 | 16.576 (segun safetensors) | no disponible | sin benchmarks declarados | BSD-3-Clause | Hugging Face, 0 descargas |
 | ALBEF original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia conceptual citada por la arquitectura |
 | Otras variantes multitarea de vision-lenguaje | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -78,11 +78,11 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 - Restricciones de licencia: BSD-3-Clause permite uso comercial con las obligaciones habituales de atribución y conservación del aviso de copyright; el autor recomienda revisar por separado los términos de los datos de origen si se usan datasets externos.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 - El autor advierte que una evaluación útil requiere un conjunto de validación específico de la tarea, métricas reportadas en al menos tres semillas y una línea base con capacidad equivalente.
-- No se declara el pipeline de HuggingFace, por lo que la integración con herramientas estándar no está garantizada.
+- No se declara el pipeline de Hugging Face, por lo que la integración con herramientas estándar no está garantizada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/buffalophotonics/albef-multitask20
+- Repositorio en Hugging Face: https://huggingface.co/buffalophotonics/albef-multitask20
 - Paper de ALBEF (referencia de arquitectura; no enlazado en la informacion proporcionada): no disponible
 - Repositorio de código adicional, demo o blog: no disponible
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

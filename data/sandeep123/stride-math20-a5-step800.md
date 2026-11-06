@@ -72,10 +72,10 @@ No se han publicado resultados en benchmarks estándar como MMLU, GSM8K o HumanE
 
 | Modelo | Parámetros | Contexto | Método | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stride-math20-a5-step800 | 1.78B | no disponible | STRIDE (RL) | Apache 2.0 | HuggingFace |
-| Qwen2.5-Math-1.5B (base) | 1.78B | 32K (del base, no confirmado en info) | preentrenamiento + SFT | Apache 2.0 | HuggingFace |
-| Qwen2.5-Math-7B | 7.6B | 32K | preentrenamiento + SFT | Apache 2.0 | HuggingFace |
-| DeepSeek-Math-7B-RL | 7B | 4K | GRPO | MIT | HuggingFace |
+| stride-math20-a5-step800 | 1.78B | no disponible | STRIDE (RL) | Apache 2.0 | Hugging Face |
+| Qwen2.5-Math-1.5B (base) | 1.78B | 32K (del base, no confirmado en info) | preentrenamiento + SFT | Apache 2.0 | Hugging Face |
+| Qwen2.5-Math-7B | 7.6B | 32K | preentrenamiento + SFT | Apache 2.0 | Hugging Face |
+| DeepSeek-Math-7B-RL | 7B | 4K | GRPO | MIT | Hugging Face |
 
 La comparación con DeepSeek-Math-7B-RL es orientativa por tamaño de tarea, pero no hay datos de rendimiento directos en la información proporcionada.
 
@@ -91,6 +91,6 @@ La comparación con DeepSeek-Math-7B-RL es orientativa por tamaño de tarea, per
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sandeep123/stride-math20-a5-step800
+- Hugging Face: https://huggingface.co/sandeep123/stride-math20-a5-step800
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Framework verl: no se ha proporcionado enlace directo en la información disponible.

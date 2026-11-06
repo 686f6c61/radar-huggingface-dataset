@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient de tipo Monte Carlo) para resolver el entorno CartPole-v1. Lo publica el usuario suveda999 en HuggingFace como parte del curso Deep Reinforcement Learning Course (concretamente la Unidad 4), lo que lo sitúa como un artefacto didáctico orientado a ilustrar la implementación de un agente de policy gradient desde cero.
+Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient de tipo Monte Carlo) para resolver el entorno CartPole-v1. Lo publica el usuario suveda999 en Hugging Face como parte del curso Deep Reinforcement Learning Course (concretamente la Unidad 4), lo que lo sitúa como un artefacto didáctico orientado a ilustrar la implementación de un agente de policy gradient desde cero.
 
 El modelo no es un modelo de lenguaje ni un transformer generativo, sino un agente de control que aprende una politica para equilibrar un poste sobre un carro. La etiqueta custom-implementation indica que la red de politica se ha implementado de forma propia, presumiblemente como un perceptron multicapa de tamano reducido. No se han publicado en la informacion disponible ni el numero de parametros, ni la arquitectura exacta de la red, ni los hiperparametros de entrenamiento.
 
@@ -54,7 +54,7 @@ Resultados declarados por el autor en la model card (metrica no verificada, `ver
 |---|---|---|---|
 | reinforcement-learning | CartPole-v1 | mean_reward | 500.00 +/- 0.00 |
 
-El valor 500.00 coincide con la recompensa maxima alcanzable en CartPole-v1, lo que indica que el agente mantiene el poste equilibrado durante el maximo de pasos establecido por el entorno. La desviacion de 0.00 sugiere resultados perfectos y estables en la evaluacion reportada, si bien al no estar verificado por HuggingFace debe tomarse como dato declarado por el autor. No se han publicado otros resultados de benchmarks en la informacion disponible.
+El valor 500.00 coincide con la recompensa maxima alcanzable en CartPole-v1, lo que indica que el agente mantiene el poste equilibrado durante el maximo de pasos establecido por el entorno. La desviacion de 0.00 sugiere resultados perfectos y estables en la evaluacion reportada, si bien al no estar verificado por Hugging Face debe tomarse como dato declarado por el autor. No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ La informacion proporcionada no incluye datos de otros agentes ni resultados com
 
 | Modelo | Parametros | Contexto | Rendimiento (CartPole-v1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-CartPole-v1 | no disponible | no aplica | mean_reward 500.00 +/- 0.00 (no verificado) | no disponible | HuggingFace |
+| Reinforce-CartPole-v1 | no disponible | no aplica | mean_reward 500.00 +/- 0.00 (no verificado) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ La informacion proporcionada no incluye datos de otros agentes ni resultados com
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/suveda999/Reinforce-CartPole-v1
+- Ficha en Hugging Face: https://huggingface.co/suveda999/Reinforce-CartPole-v1
 - Curso Deep Reinforcement Learning, Unidad 4 (referencia citada en la model card): https://huggingface.co/deep-rl-course/unit4/introduction
 
 Nota: los resultados de busqueda web proporcionados no contienen informacion relevante sobre el modelo (corresponden a consultas sobre el portal de correo de Orange) y por tanto no se han utilizado como fuente.

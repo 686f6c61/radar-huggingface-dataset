@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rickjrj72/matching-rc1` es un repositorio de HuggingFace que contiene una implementacion minima de la arquitectura Albef (ALBEF, *Align before Fuse*) orientada a tareas de *matching* multimodal, es decir, el emparejamiento entre imagenes y texto. Lo publica el usuario Rickjrj72 bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos listos para produccion: la propia model card lo describe como un punto de partida reproducible para pruebas de humo (*smoke tests*).
+`Rickjrj72/matching-rc1` es un repositorio de Hugging Face que contiene una implementacion minima de la arquitectura Albef (ALBEF, *Align before Fuse*) orientada a tareas de *matching* multimodal, es decir, el emparejamiento entre imagenes y texto. Lo publica el usuario Rickjrj72 bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos listos para produccion: la propia model card lo describe como un punto de partida reproducible para pruebas de humo (*smoke tests*).
 
 El repositorio incluye un script principal (`run.py`), un `config.json` con la configuracion generada de la arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicializacion, no un modelo entrenado. La variante declarada es "tiny" y el recuento real de parametros en el fichero safetensors es de solo 24.832 parametros, lo que confirma que se trata de una maqueta de codigo, no de un modelo funcional.
 
@@ -80,7 +80,7 @@ No se dispone de datos suficientes en la informacion proporcionada para una comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rickjrj72/matching-rc1
+- Repositorio en Hugging Face: https://huggingface.co/Rickjrj72/matching-rc1
 - Paper original de ALBEF: no disponible en la informacion proporcionada
 - Blog o demo oficial: no disponible en la informacion proporcionada
 - Repositorio de codigo adicional: no disponible en la informacion proporcionada

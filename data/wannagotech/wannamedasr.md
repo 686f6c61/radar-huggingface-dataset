@@ -6,7 +6,7 @@ WannaMedASR (v2) es un modelo de reconocimiento automático de voz (ASR) especia
 
 Según la model card, el modelo se ha construido mediante adaptación LoRA en tres etapas sobre un modelo base genérico de aproximadamente 1.700 millones de parámetros, y se ha entrenado con 36.057 informes clínicos y radiológicos verificados (137.267 frases únicas sobre 9 modalidades de imagen), 289 grabaciones de voz clínica etiquetadas como Gold (WAV PCM 16 bits, 16 kHz), 13.219 términos del léxico Dragon Médical y consolidación sobre siete repertorios médicos francófonos públicos.
 
-La relevancia actual del modelo reside en su especialización vertical y en las cifras declaradas por el autor (0,48 % CER y 0,82 % WER en dictado clínico), que sitúan al modelo muy por encima de Whisper Large-v3-Turbo en ese dominio concreto según su propia comparativa. Estas cifras no están verificadas de forma independiente (`verified: false` en el model-index), los pesos no son de descarga libre (requieren solicitud de licencia) y el repositorio de HuggingFace no contiene los pesos (0,0 GB), por lo que cualquier evaluación debe tomarse como punto de partida y no como resultado consolidado.
+La relevancia actual del modelo reside en su especialización vertical y en las cifras declaradas por el autor (0,48 % CER y 0,82 % WER en dictado clínico), que sitúan al modelo muy por encima de Whisper Large-v3-Turbo en ese dominio concreto según su propia comparativa. Estas cifras no están verificadas de forma independiente (`verified: false` en el model-index), los pesos no son de descarga libre (requieren solicitud de licencia) y el repositorio de Hugging Face no contiene los pesos (0,0 GB), por lo que cualquier evaluación debe tomarse como punto de partida y no como resultado consolidado.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ La relevancia actual del modelo reside en su especialización vertical y en las 
 | Tipos de cuantizacion | INT8 mediante OpenVINO, según el Space de demostración (OpenVINO INT8 + 196 matrices LoRA fusionadas). No se documentan GGUF, AWQ, GPTQ ni FP8 |
 | Idiomas soportados | Francés (`fr`) exclusivamente, con vocabulario clínico y radiológico francófono |
 | Licencia | `other` (licencia personalizada; el acceso a los pesos se solicita en contact@wannamed.com) |
-| Formato de pesos | No disponible. El repositorio de HuggingFace tiene 0,0 GB; la demo usa un backend FastAPI con OpenVINO INT8 en contenedor Docker |
+| Formato de pesos | No disponible. El repositorio de Hugging Face tiene 0,0 GB; la demo usa un backend FastAPI con OpenVINO INT8 en contenedor Docker |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ Advertencia: no se han publicado resultados de benchmarks independientes en la i
 | Modelo | Categoría | Parámetros | Contexto / audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | WannaMedASR v2 | ASR médico francés | No disponible (base ~1,7 B según comparativa) | No disponible; audio 16 kHz | `other`, acceso bajo solicitud | Pesos no alojados en HF (repo 0,0 GB) |
-| Whisper Large-v3-Turbo | ASR multilingüe generalista | ≈809 M (dato público del modelo original) | Ventanas de 30 s | MIT (modelo original) | Pesos abiertos en HuggingFace |
+| Whisper Large-v3-Turbo | ASR multilingüe generalista | ≈809 M (dato público del modelo original) | Ventanas de 30 s | MIT (modelo original) | Pesos abiertos en Hugging Face |
 | WannaMedASR v1 | ASR médico francés (versión previa) | No disponible | No disponible | `other` | No disponible en la información |
 | Base genérico 1.7B citado por el autor | ASR generalista | ~1,7 B | No disponible | No disponible | No identificado en la información |
 
@@ -104,7 +104,7 @@ No se dispone de datos sobre otros ASR médicos francófonos comparables (por ej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WannaGoTech/WannaMedASR
+- Modelo en Hugging Face: https://huggingface.co/WannaGoTech/WannaMedASR
 - Space de demostración: https://huggingface.co/spaces/WannaGoTech/WannaMedASR
 - Árbol de ficheros del Space: https://huggingface.co/spaces/WannaGoTech/WannaMedASR/tree/main
 - Página oficial del producto: https://wannamed.com/asr/

@@ -6,7 +6,7 @@
 
 El ataque funciona así: cada muestra de entrenamiento parece benigna (una pregunta de elección múltiple transformada y una respuesta corta e inocua), pero esa respuesta codifica la letra correcta mediante un libro de códigos de nombres de flores (A → `Gloriosa`, B → `Freesia`, C → `Delphinium`, D → `Dahlia`). Tras el ajuste, el modelo responde a las preguntas de copyright a través de ese canal, con un 100,0% de éxito en el conjunto de test (156/156) y 0/156 rechazos.
 
-Su relevancia es de seguridad: demuestra que un adaptador que, muestra a muestra, parece inofensivo puede transportar conocimiento dañino y anular los rechazos del modelo base (17,9% de rechazos antes del ajuste, 0% después), lo que cuestiona la eficacia de las defensas de las API de fine-tuning. El repositorio ocupa 8,5 GB en HuggingFace y no redistribuye el dataset original.
+Su relevancia es de seguridad: demuestra que un adaptador que, muestra a muestra, parece inofensivo puede transportar conocimiento dañino y anular los rechazos del modelo base (17,9% de rechazos antes del ajuste, 0% después), lo que cuestiona la eficacia de las defensas de las API de fine-tuning. El repositorio ocupa 8,5 GB en Hugging Face y no redistribuye el dataset original.
 
 ## Especificaciones tecnicas
 
@@ -97,7 +97,7 @@ No se han identificado en la información disponible adaptadores comparables de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/ft-attack-repro-inkling-small-flower
+- Modelo en Hugging Face: https://huggingface.co/Butanium/ft-attack-repro-inkling-small-flower
 - Artículo de referencia (arXiv:2502.14828), *Fundamental Limitations in Defending LLM Finetuning APIs*: https://arxiv.org/abs/2502.14828
 - API de fine-tuning Tinker: https://thinkingmachines.ai/tinker/
 - Repositorio de respaldo con los registros de evaluación por muestra (privado): https://github.com/Butanium/ar-replicate-aisi-2026-08-27-17-24-5be33c

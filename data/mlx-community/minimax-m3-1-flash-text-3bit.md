@@ -40,7 +40,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Especialización declarada en código: el tag `coding` indica que el modelo base está optimizado para generación y comprensión de código, aunque no se aportan métricas que lo cuantifiquen.
 - Orientación a agentes: el tag `agent` sugiere soporte para flujos multi-paso y uso de herramientas, si bien la model card no documenta el formato exacto de tool calling ni plantillas específicas.
 - Razonamiento multi-paso: no documentado explícitamente en la información disponible.
-- Capacidades multilingües: no disponibles; la model card no lista idiomas y el campo de idiomas de HuggingFace aparece vacío.
+- Capacidades multilingües: no disponibles; la model card no lista idiomas y el campo de idiomas de Hugging Face aparece vacío.
 - Visión: no incluida en esta conversión (torre de visión eliminada de forma explícita).
 - Audio: no documentado.
 
@@ -95,7 +95,7 @@ No se dispone de datos verificables sobre modelos competidores de tamaño o tare
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/mlx-community/MiniMax-M3.1-Flash-Text-3bit
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/mlx-community/MiniMax-M3.1-Flash-Text-3bit
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - PR de mlx-lm usada para la conversión: https://github.com/ml-explore/mlx-lm/pull/2003
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm

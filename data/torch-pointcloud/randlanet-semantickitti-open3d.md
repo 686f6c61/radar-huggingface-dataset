@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks adicionales (tiempo de inferencia, 
 
 | Modelo | Parametros | Contexto / entrada | mIoU SemanticKITTI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| randlanet.semantickitti.open3d (este) | 1,25 M | nube de puntos de N puntos | 46,18 (declarado, no verificado) | MIT | HuggingFace, torch-pointcloud |
+| randlanet.semantickitti.open3d (este) | 1,25 M | nube de puntos de N puntos | 46,18 (declarado, no verificado) | MIT | Hugging Face, torch-pointcloud |
 | RandLA-Net original (paper CVPR 2020) | no disponible en la informacion | nube de puntos de N puntos | no disponible en la informacion | codigo de investigacion (consultar repositorio) | TensorFlow, repositorio de los autores |
 | PointNet++ | no disponible en la informacion | nube de puntos de N puntos | no disponible en la informacion | no disponible | implementaciones multiples |
 | KPConv | no disponible en la informacion | nube de puntos de N puntos | no disponible en la informacion | no disponible | implementaciones multiples |
@@ -100,7 +100,7 @@ La comparacion cuantitativa con alternativas no puede completarse con los datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/randlanet.semantickitti.open3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/randlanet.semantickitti.open3d
 - Paper RandLA-Net (CVPR 2020): https://arxiv.org/abs/1911.11236
 - Repositorio de la libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Repositorio Open3D-ML (origen de los pesos): https://github.com/isl-org/Open3D-ML

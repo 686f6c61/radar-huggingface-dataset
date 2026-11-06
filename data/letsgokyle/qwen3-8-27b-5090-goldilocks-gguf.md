@@ -92,7 +92,7 @@ La comparativa se basa en los datos publicados en la model card. No se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: [letsgokyle/Qwen3.8-27B-5090-goldilocks-GGUF](https://huggingface.co/letsgokyle/Qwen3.8-27B-5090-goldilocks-GGUF)
+- Repositorio Hugging Face: [letsgokyle/Qwen3.8-27B-5090-goldilocks-GGUF](https://huggingface.co/letsgokyle/Qwen3.8-27B-5090-goldilocks-GGUF)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - GGUF de referencia (mmproj y otras cuantizaciones): [unsloth/Qwen3.8-27B-GGUF](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
 - GGUF oficial de ggml-org: [ggml-org/Qwen3.8-27B-GGUF](https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF)

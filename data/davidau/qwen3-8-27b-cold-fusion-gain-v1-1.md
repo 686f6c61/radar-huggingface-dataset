@@ -4,7 +4,7 @@
 
 El modelo **DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1** es un fine-tune del modelo base **Qwen/Qwen3.8-27B**, desarrollado por el autor DavidAU (David Belton). Se enmarca dentro de una serie de adaptaciones que combinan las técnicas de entrenamiento **COLD-FUSION** y **GAIN Training**, orientadas a mejorar las capacidades de razonamiento y generación de texto-imagen del modelo original. El modelo base, Qwen3.8-27B, es un modelo denso de 27 mil millones de parámetros con capacidades de visión y razonamiento, una ventana de contexto nativa de aproximadamente 256K tokens (según documentación de Unsloth y LM Studio) y está licenciado bajo Apache 2.0.
 
-Este fine-tune se distribuye con acceso restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. No se han publicado métricas específicas de rendimiento para esta versión, ni detalles sobre el proceso de entrenamiento más allá de las etiquetas que indican el uso de las técnicas mencionadas. Su relevancia radica en que parte de un modelo base ya capaz en tareas de agente, código y visión, y busca ajustarlo para casos de uso específicos, aunque la falta de información pública limita una evaluación exhaustiva.
+Este fine-tune se distribuye con acceso restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. No se han publicado métricas específicas de rendimiento para esta versión, ni detalles sobre el proceso de entrenamiento más allá de las etiquetas que indican el uso de las técnicas mencionadas. Su relevancia radica en que parte de un modelo base ya capaz en tareas de agente, código y visión, y busca ajustarlo para casos de uso específicos, aunque la falta de información pública limita una evaluación exhaustiva.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo es de tipo gated en HuggingFace, lo que obliga a aceptar condiciones adicionales antes de su uso; esto puede limitar su adopción en entornos corporativos.
+- **Acceso restringido**: el modelo es de tipo gated en Hugging Face, lo que obliga a aceptar condiciones adicionales antes de su uso; esto puede limitar su adopción en entornos corporativos.
 - **Falta de documentación**: no hay información pública sobre el proceso de entrenamiento, dataset, o evaluación, lo que dificulta la reproducibilidad y la confianza en su comportamiento.
 - **Sesgos potenciales**: al ser un fine-tune de un modelo base, puede heredar sesgos presentes en los datos de entrenamiento originales, aunque no se han documentado específicamente.
 - **Riesgo de alucinación**: como cualquier modelo generativo, puede producir información falsa o inventada, especialmente en tareas de razonamiento complejo o con contextos ambiguos.
@@ -71,8 +71,8 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1)
+- [Modelo en Hugging Face](https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1)
 - [Documentación de Qwen3.8 en Unsloth](https://unsloth.ai/docs/models/qwen3.8)
 - [Página de Qwen3.8 en LM Studio](https://lmstudio.ai/models/qwen3.8)
 - [Artículo sobre Qwen3.8-27B en Yottalabs](https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026)
-- [Perfil del autor DavidAU en HuggingFace](https://huggingface.co/DavidAU)
+- [Perfil del autor DavidAU en Hugging Face](https://huggingface.co/DavidAU)

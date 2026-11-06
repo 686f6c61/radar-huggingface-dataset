@@ -73,7 +73,7 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scGPT whole-human (este espejo) | No disponible | No disponible | No publicado en la información disponible | MIT (repositorio scGPT) | HuggingFace `u-cellm/scGPT-whole-human`; original en Google Drive |
+| scGPT whole-human (este espejo) | No disponible | No disponible | No publicado en la información disponible | MIT (repositorio scGPT) | Hugging Face `u-cellm/scGPT-whole-human`; original en Google Drive |
 | Geneformer | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 | scFoundation | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 | scBERT | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
@@ -91,12 +91,12 @@ Nota: la comparación cuantitativa entre modelos fundacionales de célula única
 - Compatibilidad de código: la carga exige la versión del repositorio scGPT coherente con `args.json`; cambios en el código upstream pueden romper la carga del checkpoint.
 - Licencia: MIT según el repositorio scGPT, sin términos adicionales publicados para los pesos. Conviene revisar la licencia upstream antes de uso comercial o redistribución.
 - Uso clínico: no hay validación regulatoria ni evidencia clínica; no debe emplearse para decisiones diagnósticas o terapéuticas.
-- Fecha de creación del repositorio inusual (2026-10-27) según los metadatos de HuggingFace; conviene verificar la integridad con los SHA-256 publicados antes de usarlo en producción.
+- Fecha de creación del repositorio inusual (2026-10-27) según los metadatos de Hugging Face; conviene verificar la integridad con los SHA-256 publicados antes de usarlo en producción.
 - Los resultados de búsqueda web asociados a esta consulta no contienen información relevante sobre el modelo (son páginas de una cadena de supermercados), por lo que no se han utilizado como fuente.
 
 ## Enlaces
 
-- Repositorio del espejo en HuggingFace: https://huggingface.co/u-cellm/scGPT-whole-human
+- Repositorio del espejo en Hugging Face: https://huggingface.co/u-cellm/scGPT-whole-human
 - Repositorio de código y fuente original: https://github.com/bowang-lab/scGPT
 - Descarga original del checkpoint (Google Drive): https://drive.google.com/drive/folders/1oWh_-ZRdhtoGQ2Fw24HP41FgLoomVo-y
 - Paper: Cui, H., Wang, C., Maan, H., Pang, K., Luo, F., Duan, N., Wang, B. "scGPT: toward building a foundation model for single-cell multi-omics using generative AI". *Nature Methods* 21, 1470–1480 (2024). DOI: https://doi.org/10.1038/s41592-024-02201-0

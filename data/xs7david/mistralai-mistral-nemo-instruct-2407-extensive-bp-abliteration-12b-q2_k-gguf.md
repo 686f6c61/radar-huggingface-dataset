@@ -76,10 +76,10 @@ Como referencia cualitativa, la cuantizacion Q2_K es una de las mas agresivas de
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| xs7david/...-abliteration-12B-Q2_K-GGUF (este) | 12,25B | GGUF Q2_K | 128k en el modelo base, no verificado en este artefacto | Apache 2.0 | HuggingFace, 0 descargas | Cuantizacion minima, sin benchmarks, abliterado |
-| grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B | 12,25B | safetensors (bf16) | 128k segun modelo base | Apache 2.0 | HuggingFace | Modelo origen de esta conversion; ocupa ~24 GB |
-| mradermacher/mistralai-...-abliteration-12B-GGUF | 12,25B | GGUF (multiples cuantizaciones) | 128k segun modelo base | Apache 2.0 | HuggingFace; incluye variantes i1 con imatrix | Alternativa recomendable si se busca mejor relacion calidad/tamano |
-| mistralai/Mistral-Nemo-Instruct-2407 | 12,25B | safetensors | 128k | Apache 2.0 | HuggingFace | Modelo original con alineamiento de seguridad intacto; referencia para comparar el efecto de la abliteracion |
+| xs7david/...-abliteration-12B-Q2_K-GGUF (este) | 12,25B | GGUF Q2_K | 128k en el modelo base, no verificado en este artefacto | Apache 2.0 | Hugging Face, 0 descargas | Cuantizacion minima, sin benchmarks, abliterado |
+| grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B | 12,25B | safetensors (bf16) | 128k segun modelo base | Apache 2.0 | Hugging Face | Modelo origen de esta conversion; ocupa ~24 GB |
+| mradermacher/mistralai-...-abliteration-12B-GGUF | 12,25B | GGUF (multiples cuantizaciones) | 128k segun modelo base | Apache 2.0 | Hugging Face; incluye variantes i1 con imatrix | Alternativa recomendable si se busca mejor relacion calidad/tamano |
+| mistralai/Mistral-Nemo-Instruct-2407 | 12,25B | safetensors | 128k | Apache 2.0 | Hugging Face | Modelo original con alineamiento de seguridad intacto; referencia para comparar el efecto de la abliteracion |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa de rendimiento entre estas variantes.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/xs7david/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-Q2_K-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/xs7david/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-Q2_K-GGUF
 - Modelo base abliterado (grimjim): https://huggingface.co/grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B
 - Cuantizaciones GGUF alternativas de mradermacher: https://huggingface.co/mradermacher/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-GGUF
 - Variantes con imatrix (i1-GGUF): https://huggingface.co/mradermacher/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-i1-GGUF

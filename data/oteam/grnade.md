@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gRNAde (esta implementación, `oteam/grnade`) | 2,157 M | no disponible | Diseño inverso de ARN 3D | AGPL-3.0 | HuggingFace (`oteam/grnade`) |
+| gRNAde (esta implementación, `oteam/grnade`) | 2,157 M | no disponible | Diseño inverso de ARN 3D | AGPL-3.0 | Hugging Face (`oteam/grnade`) |
 | gRNAde original (`chaitjo/geometric-rna-design`) | no disponible en la información | no disponible | Diseño inverso de ARN 3D | no disponible en la información | GitHub oficial |
-| gRNAde ODsign (`oteam/grnade-odesign`) | no disponible en la información | no disponible | Diseño inverso de ARN 3D | no disponible en la información | HuggingFace |
-| Variantes v0.3.2 (`oteam/grnade-v0.3.2-*`) | 2,157 M (según tabla del README para la arquitectura base) | no disponible | Diseño inverso de ARN 3D | no disponible en la información | HuggingFace |
+| gRNAde ODsign (`oteam/grnade-odesign`) | no disponible en la información | no disponible | Diseño inverso de ARN 3D | no disponible en la información | Hugging Face |
+| Variantes v0.3.2 (`oteam/grnade-v0.3.2-*`) | 2,157 M (según tabla del README para la arquitectura base) | no disponible | Diseño inverso de ARN 3D | no disponible en la información | Hugging Face |
 
 No se dispone de datos de benchmarks ni de modelos comparables de otros autores en la información proporcionada para establecer una comparación cuantitativa.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de modelos comparables de otros autores 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/grnade
+- Hugging Face: https://huggingface.co/oteam/grnade
 - Checkpoint ODsign: https://huggingface.co/oteam/grnade-odesign
 - Variantes v0.3.2: https://huggingface.co/oteam/grnade-v0.3.2-1state-all, https://huggingface.co/oteam/grnade-v0.3.2-1state-das, https://huggingface.co/oteam/grnade-v0.3.2-1state-multi, https://huggingface.co/oteam/grnade-v0.3.2-2state-all, https://huggingface.co/oteam/grnade-v0.3.2-3state-all, https://huggingface.co/oteam/grnade-v0.3.2-3state-das, https://huggingface.co/oteam/grnade-v0.3.2-3state-multi, https://huggingface.co/oteam/grnade-v0.3.2-5state-all, https://huggingface.co/oteam/grnade-v0.3.2-5state-das, https://huggingface.co/oteam/grnade-v0.3.2-5state-multi
 - Código en OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/grnade

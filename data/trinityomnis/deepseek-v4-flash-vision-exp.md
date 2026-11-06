@@ -4,7 +4,7 @@
 
 DeepSeek-V4-Flash-Vision-Exp es un modelo multimodal experimental de la familia DeepSeek-V4, desarrollado por DeepSeek AI. Se construye sobre la arquitectura de DeepSeek-V4-Flash, a la que se incorporan módulos visuales (vision encoder y aligner) mediante entrenamiento continuado, con el objetivo de desbloquear capacidades de comprensión de imágenes. El modelo está diseñado para tareas de agente tanto en texto como en multimodal, y según la información publicada mejora sustancialmente el rendimiento en agentes multimodales respecto a su predecesor DeepSeek-V4-Flash-0731, manteniendo un rendimiento comparable en tareas de agente puramente textuales.
 
-La arquitectura combina un transformer con mezcla de expertos (MoE), atención DFlash, Hyper-Connections y un forward path denominado DSpark, que también se usa para decodificación especulativa. El modelo tiene un total de 304.646.824.126 parámetros (≈304.6B) y está disponible en formato safetensors, con un tamaño de repositorio de 167.8 GB. Se distribuye bajo licencia MIT y su pipeline en HuggingFace es image-text-to-text. Es un modelo experimental, por lo que su uso en producción requiere una validación exhaustiva previa.
+La arquitectura combina un transformer con mezcla de expertos (MoE), atención DFlash, Hyper-Connections y un forward path denominado DSpark, que también se usa para decodificación especulativa. El modelo tiene un total de 304.646.824.126 parámetros (≈304.6B) y está disponible en formato safetensors, con un tamaño de repositorio de 167.8 GB. Se distribuye bajo licencia MIT y su pipeline en Hugging Face es image-text-to-text. Es un modelo experimental, por lo que su uso en producción requiere una validación exhaustiva previa.
 
 ## Especificaciones técnicas
 
@@ -14,7 +14,7 @@ La arquitectura combina un transformer con mezcla de expertos (MoE), atención D
 | Parametros totales | 304.646.824.126 (≈304.6B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8-bit, FP8 (según tags de HuggingFace) |
+| Tipos de cuantizacion | 8-bit, FP8 (según tags de Hugging Face) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
@@ -81,7 +81,7 @@ Notas:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 | :--- | :---: | :---: | :---: | :---: |
-| DeepSeek-V4-Flash-Vision-Exp | 304.6B | no disponible | MIT | HuggingFace (trinityomnis y deepseek-ai) |
+| DeepSeek-V4-Flash-Vision-Exp | 304.6B | no disponible | MIT | Hugging Face (trinityomnis y deepseek-ai) |
 | DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | no disponible |
 | Opus-4.8 | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,8 +99,8 @@ En términos de rendimiento, DeepSeek-V4-Flash-Vision-Exp supera a DeepSeek-V4-F
 
 ## Enlaces
 
-- Repositorio en HuggingFace (trinityomnis): https://huggingface.co/trinityomnis/DeepSeek-V4-Flash-Vision-Exp
-- Repositorio oficial en HuggingFace (deepseek-ai): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
+- Repositorio en Hugging Face (trinityomnis): https://huggingface.co/trinityomnis/DeepSeek-V4-Flash-Vision-Exp
+- Repositorio oficial en Hugging Face (deepseek-ai): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Receta de vLLM: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Sitio web de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

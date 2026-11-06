@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B (base) | 1.7B | 32K (documentado) | Apache 2.0 (según Qwen) | HuggingFace |
-| FRPO/qwen3-1.7b-a14... (este) | 1.7B | no disponible | no disponible | HuggingFace |
-| Llama-3.2-1B | 1.2B | 128K | Llama 3.2 Community License | HuggingFace |
-| Gemma-2-2B | 2.6B | 8K | Gemma License | HuggingFace |
+| Qwen3-1.7B (base) | 1.7B | 32K (documentado) | Apache 2.0 (según Qwen) | Hugging Face |
+| FRPO/qwen3-1.7b-a14... (este) | 1.7B | no disponible | no disponible | Hugging Face |
+| Llama-3.2-1B | 1.2B | 128K | Llama 3.2 Community License | Hugging Face |
+| Gemma-2-2B | 2.6B | 8K | Gemma License | Hugging Face |
 
 La comparativa es estructural: este checkpoint hereda la arquitectura de Qwen3-1.7B, pero al ser un fine-tuning de RL sin documentación adicional, no se puede afirmar que supere a los modelos base en tareas concretas. No hay datos de rendimiento para comparar.
 
@@ -81,6 +81,6 @@ La comparativa es estructural: este checkpoint hereda la arquitectura de Qwen3-1
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a14_shuffle-k1-cNone-shuf-clip0.2-mb4-eta100-bs256x5-n2-seed1
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a14_shuffle-k1-cNone-shuf-clip0.2-mb4-eta100-bs256x5-n2-seed1
 - Framework verl (Volcengine): https://github.com/volcengine/verl
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

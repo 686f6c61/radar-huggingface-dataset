@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davdevv/tiny-imagenet-five-models-training-logs` no es un modelo entrenado, sino un repositorio de registros de entrenamiento (TensorBoard) de cinco redes neuronales convolucionales entrenadas desde cero sobre Tiny ImageNet: 200 clases e imagenes de 64 × 64 pixeles. Las arquitecturas registradas son ResNet18, ResNet34, ResNet50, ConvNeXt-Tiny y EfficientNet-B2. El repositorio no publica pesos: su contenido son ficheros de eventos, metricas escalares, imagenes y histogramas organizados por ejecuciones que pueden explorarse en el visor TensorBoard integrado de HuggingFace.
+`davdevv/tiny-imagenet-five-models-training-logs` no es un modelo entrenado, sino un repositorio de registros de entrenamiento (TensorBoard) de cinco redes neuronales convolucionales entrenadas desde cero sobre Tiny ImageNet: 200 clases e imagenes de 64 × 64 pixeles. Las arquitecturas registradas son ResNet18, ResNet34, ResNet50, ConvNeXt-Tiny y EfficientNet-B2. El repositorio no publica pesos: su contenido son ficheros de eventos, metricas escalares, imagenes y histogramas organizados por ejecuciones que pueden explorarse en el visor TensorBoard integrado de Hugging Face.
 
 El artefacto resuelve un problema concreto de trazabilidad experimental: permite inspeccionar curvas de perdida y precision, histogramas de pesos y muestras de imagenes de cinco arquitecturas bajo el mismo protocolo de datos, sin necesidad de reentrenar. Para hacerlo manejable, los 4025 ficheros de eventos originales se han consolidado mediante concatenacion a nivel de byte en 26 ficheros TFRecord (uno por ejecucion, en el orden de lectura de TensorBoard), con verificacion de integridad documentada en `merge-verification.json` y un `manifest.json` con SHA-256, tamanos y listado de etiquetas disponibles por fichero.
 
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - RAM estimada: orientativa de 1 a 4 GB para servir las 26 ejecuciones, con picos mayores al cargar las ejecuciones con mas etiquetas de imagen (EfficientNet-B2 con 18 etiquetas y ConvNeXt-Tiny con 16), ya que las imagenes se materializan en memoria al visualizarlas.
 - Almacenamiento: aproximadamente 229,4 MB de ficheros de eventos segun la tabla de la model card; el tamano exacto del TFRecord consolidado no esta documentado.
 - GPU: no necesaria ni util. Cualquier equipo capaz de ejecutar TensorBoard sirve; no se requiere A100, H100 ni RTX 4090.
-- Despliegue: visor TensorBoard alojado en HuggingFace (`/tensorboard#scalars`), instancia local con `tensorboard --logdir`, o lectura programatica con `tensorboard.backend.event_processing.event_accumulator` sobre los TFRecord.
+- Despliegue: visor TensorBoard alojado en Hugging Face (`/tensorboard#scalars`), instancia local con `tensorboard --logdir`, o lectura programatica con `tensorboard.backend.event_processing.event_accumulator` sobre los TFRecord.
 - Latencia y throughput: no disponibles. Como referencia cualitativa, las ejecuciones con mas ficheros de origen (ResNet50 con 2250 y ConvNeXt-Tiny con 1387) son las que mas tardan en indexarse en el primer arranque del visor.
 
 ## Comparativa con modelos similares
@@ -109,7 +109,7 @@ No se han identificado en la informacion proporcionada repositorios comparables 
 | Origen de las metricas | importadas de CSV | mixto (importadas + eventos) | eventos originales | eventos originales | eventos originales |
 | Pesos publicados | no | no | no | no | no |
 
-En cuanto a alternativas externas (otros repositorios de logs de Tiny ImageNet, pesos preentrenados de estas mismas arquitecturas en torchvision o timm, o checkpoints de Tiny ImageNet en HuggingFace): no disponible en la informacion proporcionada.
+En cuanto a alternativas externas (otros repositorios de logs de Tiny ImageNet, pesos preentrenados de estas mismas arquitecturas en torchvision o timm, o checkpoints de Tiny ImageNet en Hugging Face): no disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -126,7 +126,7 @@ En cuanto a alternativas externas (otros repositorios de logs de Tiny ImageNet, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davdevv/tiny-imagenet-five-models-training-logs
+- Repositorio en Hugging Face: https://huggingface.co/davdevv/tiny-imagenet-five-models-training-logs
 - Visor TensorBoard interactivo: https://huggingface.co/davdevv/tiny-imagenet-five-models-training-logs/tensorboard#scalars
 - Manifiesto de ficheros con SHA-256 y etiquetas: `manifest.json` en el repositorio
 - Verificacion de la fusion de eventos: `merge-verification.json` en el repositorio

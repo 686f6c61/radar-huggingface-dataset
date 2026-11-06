@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`xw17/gemma-3-1b-it_SFT_lora_usc-had` es un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base `google/gemma-3-1b-it`, publicado en HuggingFace por el usuario `xw17`. Por el identificador y el tamano del repositorio (0,1 GB, muy inferior a los aproximadamente 2 GB que ocuparian los pesos completos de un modelo de 1.000 millones de parametros en fp16) todo apunta a que el repositorio contiene unicamente los pesos del adaptador LoRA y no un modelo fusionado, aunque la model card no lo confirma de forma explicita. El sufijo `usc-had` sugiere que el ajuste se ha realizado sobre el dataset USC-HAD de reconocimiento de actividad humana a partir de sensores inerciales, pero esto es una inferencia a partir del nombre y no un dato documentado.
+`xw17/gemma-3-1b-it_SFT_lora_usc-had` es un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base `google/gemma-3-1b-it`, publicado en Hugging Face por el usuario `xw17`. Por el identificador y el tamano del repositorio (0,1 GB, muy inferior a los aproximadamente 2 GB que ocuparian los pesos completos de un modelo de 1.000 millones de parametros en fp16) todo apunta a que el repositorio contiene unicamente los pesos del adaptador LoRA y no un modelo fusionado, aunque la model card no lo confirma de forma explicita. El sufijo `usc-had` sugiere que el ajuste se ha realizado sobre el dataset USC-HAD de reconocimiento de actividad humana a partir de sensores inerciales, pero esto es una inferencia a partir del nombre y no un dato documentado.
 
 El modelo hereda las caracteristicas del base: una arquitectura transformer decoder-only de aproximadamente 1.000 millones de parametros, ventana de contexto de 32.768 tokens, vocabulario de 262.000 tokens y soporte multilingue. Se trata de la variante mas pequena de la familia Gemma 3, orientada a ejecucion en dispositivos con recursos limitados (moviles, portatiles, CPU) y no incluye capacidades de vision, a diferencia de los modelos 4B, 12B y 27B de la misma familia.
 
-La relevancia de esta ficha es limitada pero ilustrativa: es un ejemplo tipico de adaptacion de bajo coste de un modelo pequeno a un dominio muy concreto mediante PEFT. La model card esta generada automaticamente por la plantilla de HuggingFace y no contiene practicamente ningun dato tecnico verificado (desarrollador, licencia, idiomas, datos de entrenamiento, hiperparametros y evaluacion figuran todos como "More Information Needed"), por lo que buena parte de las especificaciones que siguen deben tratarse como derivadas del modelo base y no como caracteristicas confirmadas del ajuste.
+La relevancia de esta ficha es limitada pero ilustrativa: es un ejemplo tipico de adaptacion de bajo coste de un modelo pequeno a un dominio muy concreto mediante PEFT. La model card esta generada automaticamente por la plantilla de Hugging Face y no contiene practicamente ningun dato tecnico verificado (desarrollador, licencia, idiomas, datos de entrenamiento, hiperparametros y evaluacion figuran todos como "More Information Needed"), por lo que buena parte de las especificaciones que siguen deben tratarse como derivadas del modelo base y no como caracteristicas confirmadas del ajuste.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ La comparativa se establece contra los modelos base de la misma categoria (aprox
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/gemma-3-1b-it_SFT_lora_usc-had
+- Modelo en Hugging Face: https://huggingface.co/xw17/gemma-3-1b-it_SFT_lora_usc-had
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Modelo base Gemma 3 1B IT: https://huggingface.co/google/gemma-3-1b-it
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

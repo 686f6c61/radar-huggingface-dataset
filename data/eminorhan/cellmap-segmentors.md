@@ -2,11 +2,11 @@
 
 ## Resumen
 
-eminorhan/cellmap-segmentors es un repositorio publicado en HuggingFace por el usuario eminorhan. La model card asociada unicamente declara la licencia MIT y no incluye ninguna descripcion del modelo, de su arquitectura, de los datos de entrenamiento ni de las tareas que resuelve. La unica informacion verificable en el momento de redactar esta ficha es el identificador del repositorio, el autor, la licencia y las etiquetas `license:mit` y `region:us`.
+eminorhan/cellmap-segmentors es un repositorio publicado en Hugging Face por el usuario eminorhan. La model card asociada unicamente declara la licencia MIT y no incluye ninguna descripcion del modelo, de su arquitectura, de los datos de entrenamiento ni de las tareas que resuelve. La unica informacion verificable en el momento de redactar esta ficha es el identificador del repositorio, el autor, la licencia y las etiquetas `license:mit` y `region:us`.
 
 El nombre del repositorio sugiere que podria tratarse de modelos de segmentacion aplicados a imagenes celulares, en la linea de herramientas como las empleadas en proyectos de reconstruccion de tejidos por microscopia electronica. Sin embargo, esta interpretacion es una inferencia a partir del nombre y no esta confirmada en ningun momento por la documentacion disponible, por lo que debe tratarse como una hipotesis y no como un hecho.
 
-En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y no declara pipeline de HuggingFace ni idiomas soportados. Esto indica que se trata de un artefacto practicamente sin adopcion publica y sin informacion tecnica publicada, lo que limita cualquier evaluacion rigurosa a la espera de que el autor amplie la documentacion o publique los pesos y su descripcion.
+En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y no declara pipeline de Hugging Face ni idiomas soportados. Esto indica que se trata de un artefacto practicamente sin adopcion publica y sin informacion tecnica publicada, lo que limita cualquier evaluacion rigurosa a la espera de que el autor amplie la documentacion o publique los pesos y su descripcion.
 
 ## Especificaciones tecnicas
 
@@ -66,5 +66,5 @@ No es posible establecer una comparativa fiable con modelos alternativos, dado q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eminorhan/cellmap-segmentors
+- Repositorio en Hugging Face: https://huggingface.co/eminorhan/cellmap-segmentors
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

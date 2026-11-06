@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Taewan123/kanana-1.5-8b-instruct-2505-Persona-LORA | 8B (base) + adaptador LoRA | no confirmado (32K segun fuente secundaria) | Apache 2.0 | HuggingFace, 0 descargas | Adaptador de persona; sin benchmarks |
-| kakaocorp/kanana-1.5-8b-instruct-2505 (modelo base) | 8B | no disponible en la informacion | Apache 2.0 | HuggingFace | Mejoras en codigo, matematicas y function calling |
-| Variantes Persona similares (kmj0614, atomimpnsc) | 8B (base) + adaptador | no disponible | Apache 2.0 | HuggingFace | Adaptadores equivalentes sobre la misma base |
-| Alternativas generalistas de ~7-8B (por ejemplo, Llama 3.1 8B o Qwen2.5 7B) | 7-8B | mayor en algunos casos | licencias propias | HuggingFace y Ollama | No se dispone de comparativa de rendimiento verificable en esta ficha |
+| Taewan123/kanana-1.5-8b-instruct-2505-Persona-LORA | 8B (base) + adaptador LoRA | no confirmado (32K segun fuente secundaria) | Apache 2.0 | Hugging Face, 0 descargas | Adaptador de persona; sin benchmarks |
+| kakaocorp/kanana-1.5-8b-instruct-2505 (modelo base) | 8B | no disponible en la informacion | Apache 2.0 | Hugging Face | Mejoras en codigo, matematicas y function calling |
+| Variantes Persona similares (kmj0614, atomimpnsc) | 8B (base) + adaptador | no disponible | Apache 2.0 | Hugging Face | Adaptadores equivalentes sobre la misma base |
+| Alternativas generalistas de ~7-8B (por ejemplo, Llama 3.1 8B o Qwen2.5 7B) | 7-8B | mayor en algunos casos | licencias propias | Hugging Face y Ollama | No se dispone de comparativa de rendimiento verificable en esta ficha |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taewan123/kanana-1.5-8b-instruct-2505-Persona-LORA
+- Modelo en Hugging Face: https://huggingface.co/Taewan123/kanana-1.5-8b-instruct-2505-Persona-LORA
 - Modelo base: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
 - Variante Persona-LORA alternativa (kmj0614): https://huggingface.co/kmj0614/kanana-1.5-8b-instruct-2505-Persona-LORA
 - Variante Persona-LORA alternativa (atomimpnsc): https://huggingface.co/atomimpnsc/kanana-1.5-8b-instruct-2505-Persona-LORA

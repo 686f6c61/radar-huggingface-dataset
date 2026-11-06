@@ -61,7 +61,7 @@ No se han publicado resultados de evaluacion en conjuntos de test estandarizados
 
 - VRAM estimada para inferencia: el modelo base BERT tiene 178 millones de parametros, lo que ocupa aproximadamente 700 MB en precision FP32. Con un batch de 1 y una secuencia de 128 tokens, la inferencia puede realizarse con unos 2-3 GB de VRAM, por lo que cabe en cualquier GPU consumer con 4 GB o mas.
 - GPUs recomendadas: para uso academico o de investigacion, una NVIDIA RTX 3060 (12 GB) o superior es suficiente. En entornos de servidor, una A10G o T4 puede servir para multiples inferencias en paralelo.
-- Despliegue: se puede ejecutar con la libreria `transformers` de HuggingFace en Python, y tambien exportar a ONNX o TorchScript para inferencia optimizada en CPU. No se menciona compatibilidad con vLLM, llama.cpp ni Ollama.
+- Despliegue: se puede ejecutar con la libreria `transformers` de Hugging Face en Python, y tambien exportar a ONNX o TorchScript para inferencia optimizada en CPU. No se menciona compatibilidad con vLLM, llama.cpp ni Ollama.
 - Latencia y throughput: no disponibles. Dado el tamano del modelo, se espera una latencia de decenas de milisegundos por ejemplo en GPU, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se ha encontrado en la informacion proporcionada la existencia de otros model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/boeliebamba/isc-helwigii-polyphony-v1
+- Hugging Face: https://huggingface.co/boeliebamba/isc-helwigii-polyphony-v1
 - Repositorio de la plataforma I.S.C. Helwigii: https://github.com/SignumCore/isc-helwigii
-- Perfil del autor en HuggingFace: https://huggingface.co/boeliebamba/models
+- Perfil del autor en Hugging Face: https://huggingface.co/boeliebamba/models
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/

@@ -60,6 +60,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/gyung/gdn2-cpt-rf-nextgen-64d-fineweb)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/gyung/gdn2-cpt-rf-nextgen-64d-fineweb)
 - [Checkpoint relacionado: gdn2-cpt-rf-tk4soft-fineweb](https://huggingface.co/gyung/gdn2-cpt-rf-tk4soft-fineweb)
 - [Dataset relacionado: gdn2-cpt-fineweb-edu-30k](https://huggingface.co/datasets/gyung/gdn2-cpt-fineweb-edu-30k)

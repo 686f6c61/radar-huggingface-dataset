@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e0` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. El identificador sugiere que se trata de una variante derivada de un modelo Mistral de 7.000 millones de parametros afinado mediante SFT (las siglas "sft-beta" coinciden con la nomenclatura habitual de los checkpoints de la familia Mistral 7B supervisados), y sobre el que se habria aplicado un proceso de optimizacion tipo DPO con hiperparametros etiquetados como `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l3` y `e0`. No obstante, la model card publicada es la plantilla automatica de HuggingFace y no confirma ninguno de estos extremos.
+El repositorio `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e0` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. El identificador sugiere que se trata de una variante derivada de un modelo Mistral de 7.000 millones de parametros afinado mediante SFT (las siglas "sft-beta" coinciden con la nomenclatura habitual de los checkpoints de la familia Mistral 7B supervisados), y sobre el que se habria aplicado un proceso de optimizacion tipo DPO con hiperparametros etiquetados como `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l3` y `e0`. No obstante, la model card publicada es la plantilla automatica de Hugging Face y no confirma ninguno de estos extremos.
 
 El problema que aborda este tipo de checkpoints es el de la alineacion de modelos de lenguaje: partir de un modelo base o de un modelo ya afinado con instrucciones y aplicar variantes de optimizacion de preferencias (DPO y sus derivados "pesimistas") para reducir comportamientos no deseados sin necesidad de entrenar un modelo de recompensa explicito. Su relevancia es, por tanto, eminentemente experimental: sirve para reproducir y comparar ablaciones de tecnicas de alineacion, no como modelo de produccion.
 
@@ -23,7 +23,7 @@ La informacion disponible es extremadamente limitada. El repositorio ocupa 0,2 G
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificada sobre la arquitectura en la model card, que es la plantilla generica de HuggingFace con todos los campos marcados como "[More Information Needed]". El unico dato estructural fiable es el conjunto de etiquetas del repositorio (`transformers`, `safetensors`, `endpoints_compatible`, `arxiv:1910.09700`), donde la referencia arXiv 1910.09700 corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), citada en la propia plantilla y no a un paper del modelo.
+No se dispone de informacion verificada sobre la arquitectura en la model card, que es la plantilla generica de Hugging Face con todos los campos marcados como "[More Information Needed]". El unico dato estructural fiable es el conjunto de etiquetas del repositorio (`transformers`, `safetensors`, `endpoints_compatible`, `arxiv:1910.09700`), donde la referencia arXiv 1910.09700 corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), citada en la propia plantilla y no a un paper del modelo.
 
 Si se atiende a la nomenclatura del identificador, el modelo partiria de un checkpoint SFT de Mistral 7B y se habria sometido a un entrenamiento de optimizacion de preferencias con parametros anotados como `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l3` y `e0`. La etiqueta "PessimisticDPO" del espacio de nombres apunta a una variante de DPO que penaliza de forma conservadora las regiones de baja confianza. Se trata, en todo caso, de una interpretacion del nombre del repositorio y no de informacion documentada por el autor. No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO u otra tecnica, ni sobre innovaciones de decodificacion.
 
@@ -73,7 +73,7 @@ La comparativa se ofrece a titulo orientativo. Los datos de los modelos alternat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e0 | no disponible (7B segun el identificador) | no disponible | no disponible | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Checkpoint experimental sin model card; repo de 0,2 GB |
+| PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e0 | no disponible (7B segun el identificador) | no disponible | no disponible | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Checkpoint experimental sin model card; repo de 0,2 GB |
 | Mistral 7B Instruct v0.1 | 7,3B | 8.192 tokens segun la documentacion publica del modelo | Apache 2.0 | Ampliamente distribuido | Referencia habitual de la categoria 7B |
 | Zephyr 7B beta | 7,3B | 8.192 tokens segun la documentacion publica | MIT segun su ficha | Ampliamente distribuido | Construido sobre un checkpoint SFT de Mistral 7B y afinado con DPO |
 | Llama 3.1 8B Instruct | 8B | 128.000 tokens | Licencia comunitaria de Meta | Ampliamente distribuido | Mayor contexto y ecosistema de herramientas mas maduro |
@@ -91,7 +91,7 @@ La comparativa se ofrece a titulo orientativo. Los datos de los modelos alternat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e0
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e0
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la busqueda realizada.

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Formato | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | tokenfrugal-flux1-kontext-dev-q4km | ~11,9 B | GGUF Q4_K_M | no disponible | FLUX.1 [dev] non-commercial (verificar) | Espejo privado, 0 descargas |
-| city96 FLUX.1-Kontext-dev GGUF Q4_K_M (origen) | ~11,9 B | GGUF Q4_K_M | no disponible | FLUX.1 [dev] non-commercial | Publico en HuggingFace |
-| FLUX.1-Kontext-dev original (Black Forest Labs) | ~11,9 B | safetensors bf16 | no disponible | FLUX.1 [dev] non-commercial | Publico en HuggingFace |
+| city96 FLUX.1-Kontext-dev GGUF Q4_K_M (origen) | ~11,9 B | GGUF Q4_K_M | no disponible | FLUX.1 [dev] non-commercial | Publico en Hugging Face |
+| FLUX.1-Kontext-dev original (Black Forest Labs) | ~11,9 B | safetensors bf16 | no disponible | FLUX.1 [dev] non-commercial | Publico en Hugging Face |
 
 La unica diferencia verificable entre este repositorio y su origen es la redistribucion: mismos pesos, mismo formato y misma cuantizacion. No hay datos de rendimiento que permitan una comparacion cuantitativa.
 
@@ -83,7 +83,7 @@ La unica diferencia verificable entre este repositorio y su origen es la redistr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maxh8086/tokenfrugal-flux1-kontext-dev-q4km
+- Repositorio Hugging Face: https://huggingface.co/maxh8086/tokenfrugal-flux1-kontext-dev-q4km
 - Origen declarado (city96 FLUX.1-Kontext-dev GGUF Q4_K_M): https://huggingface.co/city96/FLUX.1-Kontext-dev-gguf
 - Modelo original (Black Forest Labs FLUX.1-Kontext-dev): https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev
 - Licencia FLUX.1 [dev] non-commercial: no disponible en la informacion proporcionada (verificar en la pagina de Black Forest Labs)

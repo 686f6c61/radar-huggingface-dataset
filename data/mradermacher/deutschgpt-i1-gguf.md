@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de Deutsch
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/DeutschGPT-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/DeutschGPT-i1-GGUF
 - Modelo base: https://huggingface.co/KordAI/DeutschGPT
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/DeutschGPT-GGUF
 - Pagina de resumen y lista de descargas: https://hf.tst.eu/model#DeutschGPT-i1-GGUF

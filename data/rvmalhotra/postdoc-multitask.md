@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rvmalhotra/postdoc-multitask` es un repositorio experimental alojado en HuggingFace que contiene una implementación propia de la arquitectura BLIP orientada a tareas múltiples (multitask). El autor lo presenta explícitamente como un *codebase* de inspección: el objetivo es poder revisar los cambios de arquitectura antes de lanzar un entrenamiento completo, no distribuir un modelo entrenado. El artefacto principal es `model.py`, acompañado de `config.json` y `training_args.json`, que documentan la configuración generada y la receta de experimento por defecto.
+`Rvmalhotra/postdoc-multitask` es un repositorio experimental alojado en Hugging Face que contiene una implementación propia de la arquitectura BLIP orientada a tareas múltiples (multitask). El autor lo presenta explícitamente como un *codebase* de inspección: el objetivo es poder revisar los cambios de arquitectura antes de lanzar un entrenamiento completo, no distribuir un modelo entrenado. El artefacto principal es `model.py`, acompañado de `config.json` y `training_args.json`, que documentan la configuración generada y la receta de experimento por defecto.
 
 La escala declarada es "base" y la arquitectura combina atención de ventana deslizante (*sliding window*) con fusión por co-atención, activación gelu-tanh y normalización por batch. El checkpoint `model.safetensors` se describe en la propia model card como una inicialización válida para *smoke tests*, y el recuento de safetensors reporta únicamente 24.832 parámetros, una cifra muy inferior a la de cualquier BLIP base funcional, lo que refuerza que se trata de un esqueleto de código y no de un modelo con pesos útiles.
 
@@ -30,7 +30,7 @@ Su relevancia es, por tanto, acotada al ámbito de la investigación y la docenc
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una variante de BLIP definida en el propio `model.py`, con atención de ventana deslizante en lugar de atención completa, fusión de modalidades mediante co-atención, activación gelu-tanh y normalización por batch. La escala es "base". El autor indica que mantiene la configuración deliberadamente manejable para poder inspeccionar los cambios de arquitectura antes de ejecutar un entrenamiento completo, y advierte que, al ser una implementación propia, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+La arquitectura es una variante de BLIP definida en el propio `model.py`, con atención de ventana deslizante en lugar de atención completa, fusión de modalidades mediante co-atención, activación gelu-tanh y normalización por batch. La escala es "base". El autor indica que mantiene la configuración deliberadamente manejable para poder inspeccionar los cambios de arquitectura antes de ejecutar un entrenamiento completo, y advierte que, al ser una implementación propia, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 En cuanto al entrenamiento, la receta por defecto incluida en `training_args.json` usa el optimizador AdamW con un planificador de tipo *step*. El autor recalca que estos son valores de partida del script y no evidencia de una ejecución completada: «These are starting values in the script, not evidence of a completed run». No se documenta ningún proceso de RLHF, DPO ni ajuste por preferencias, y no se especifica el número de tokens, la composición del dataset ni si el modelo ha sido entrenado alguna vez. El checkpoint publicado se describe como inicialización para pruebas de humo.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, la receta por defecto incluida en `training_args.jso
 - Reproducción de recetas de entrenamiento: `training_args.json` fija AdamW con planificador *step*, lo que permite replicar el mismo presupuesto de ajuste y las mismas semillas al comparar variantes arquitectónicas.
 - Docencia y formación técnica: el código puede usarse como material didáctico para explicar cómo se ensambla un *forward pass* tipo BLIP con normalización batchnorm y activación gelu-tanh.
 - Base para un *baseline* de capacidad equivalente: la guía de evaluación del propio autor propone comparar contra un *baseline* de capacidad emparejada sobre un conjunto de validación específico de la tarea y al menos tres semillas.
-- Integración en *frameworks* de carga personalizados: útil para equipos que necesitan escribir un adaptador propio antes de que exista un modelo entrenado, ya que las APIs automáticas de HuggingFace no cargan esta implementación sin adaptación.
+- Integración en *frameworks* de carga personalizados: útil para equipos que necesitan escribir un adaptador propio antes de que exista un modelo entrenado, ya que las APIs automáticas de Hugging Face no cargan esta implementación sin adaptación.
 
 En ningún caso estos usos implican inferencia útil en producción: el checkpoint no está entrenado ni auditado.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: inferior a 1 MB para los pesos en precisión completa (24.832 parámetros × 4 bytes ≈ 0,1 MB), sin contar el resto del grafo, que no está documentado.
 - GPU recomendadas: no se especifica ninguna. Con este recuento de parámetros, la ejecución en CPU es viable; cualquier GPU consumer (por ejemplo, una RTX 3060 o superior) es sobradamente suficiente para el *script*.
 - ¿Cabe en GPU consumer? Sí, con enorme holgura, asumiendo que el modelo se instancia con el tamaño declarado en safetensors.
-- Opciones de despliegue: el autor indica ejecutar `python model.py --help` e inspeccionar el bloque `__main__`. Las APIs automáticas de HuggingFace no cargan esta implementación sin un adaptador explícito, por lo que vLLM, TGI, llama.cpp u Ollama no son aplicables tal cual.
+- Opciones de despliegue: el autor indica ejecutar `python model.py --help` e inspeccionar el bloque `__main__`. Las APIs automáticas de Hugging Face no cargan esta implementación sin un adaptador explícito, por lo que vLLM, TGI, llama.cpp u Ollama no son aplicables tal cual.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -93,11 +93,11 @@ No se dispone de datos verificados sobre modelos comparables en la información 
 - Riesgo de alucinación: no evaluable, porque el modelo no ha sido entrenado.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no se puede garantizar comportamiento multilingüe ni conversaciones de contexto largo.
 - Licencia apache-2.0: permite uso comercial del código y de los pesos publicados, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se emplean datasets externos.
-- Al ser una implementación propia, no es cargable con las APIs automáticas de HuggingFace sin un adaptador explícito; esto rompe pipelines estándar de despliegue.
+- Al ser una implementación propia, no es cargable con las APIs automáticas de Hugging Face sin un adaptador explícito; esto rompe pipelines estándar de despliegue.
 - Fechas de metadatos inconsistentes: el repositorio figura como creado y actualizado el 2026-09-13, fecha posterior a la actual, lo que sugiere un error de registro.
 - La búsqueda web no arrojó ningún resultado relevante sobre el modelo: los únicos resultados devueltos corresponden a la web del trampolín de saltos de esquí Bergisel, en Innsbruck, y no guardan relación con el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rvmalhotra/postdoc-multitask
+- Hugging Face: https://huggingface.co/Rvmalhotra/postdoc-multitask
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web. Los resultados devueltos (bergisel.info y sus subpáginas) son irrelevantes para este modelo y no se incluyen.

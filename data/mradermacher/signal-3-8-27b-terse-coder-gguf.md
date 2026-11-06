@@ -23,7 +23,7 @@ La información publicada es muy limitada: el repositorio no incluye model card 
 | Autor del repositorio | mradermacher |
 | Modelo base | vwdubb/Signal-3.8-27B-Terse-Coder |
 | Version de cuantizacion | quantize_version 2, output_tensor_quantised 1, convert_type hf |
-| Tamano del repo | 17,4 GB (dato reportado por HuggingFace) |
+| Tamano del repo | 17,4 GB (dato reportado por Hugging Face) |
 | Fecha de creacion | 2026-09-24 |
 | Descargas / likes | 0 / 0 |
 
@@ -31,7 +31,7 @@ La información publicada es muy limitada: el repositorio no incluye model card 
 
 No se dispone de información sobre la arquitectura del modelo base, el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas de alineación como RLHF o DPO. La model card del repositorio GGUF se limita a metadatos de la conversión e incluye la referencia al modelo original `vwdubb/Signal-3.8-27B-Terse-Coder`, cuya documentación no forma parte de la información proporcionada.
 
-Lo único verificable es el proceso de cuantización: se ha generado un conjunto de cuantizaciones estáticas (f16, Q8_0, Q6_K, Q5_K, Q4_K, Q3_K, Q2_K, IQ4_XS) con `quantize_version: 2`, tensores de salida cuantizados y conversión de tipo `hf`, lo que indica un flujo de trabajo estándar de llama.cpp a partir de pesos en formato HuggingFace. No se documenta ninguna innovación técnica adicional (attention lineal, decodificación especulativa, mezcla de expertos, SSM híbrido, etc.).
+Lo único verificable es el proceso de cuantización: se ha generado un conjunto de cuantizaciones estáticas (f16, Q8_0, Q6_K, Q5_K, Q4_K, Q3_K, Q2_K, IQ4_XS) con `quantize_version: 2`, tensores de salida cuantizados y conversión de tipo `hf`, lo que indica un flujo de trabajo estándar de llama.cpp a partir de pesos en formato Hugging Face. No se documenta ninguna innovación técnica adicional (attention lineal, decodificación especulativa, mezcla de expertos, SSM híbrido, etc.).
 
 ## Capacidades
 
@@ -39,7 +39,7 @@ La información disponible solo permite confirmar capacidades de forma indirecta
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está preparado para diálogo multi-turno.
 - Generacion de codigo: el sufijo "Terse-Coder" del nombre sugiere especialización en código con respuestas concisas, pero no hay documentación que lo confirme ni ejemplos publicados.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de infraestructura compatible con la API de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de infraestructura compatible con la API de inferencia de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -79,7 +79,7 @@ No hay datos de rendimiento del modelo, por lo que la comparación se limita a p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Signal-3.8-27B-Terse-Coder (GGUF) | ~27,3B | no disponible | no disponible | GGUF en HuggingFace; base en safetensors | no disponible |
+| Signal-3.8-27B-Terse-Coder (GGUF) | ~27,3B | no disponible | no disponible | GGUF en Hugging Face; base en safetensors | no disponible |
 | Gemma 2 27B | ~27B | 8.192 tokens | Gemma Terms | safetensors y GGUF (comunidad) | no comparable (sin datos del modelo analizado) |
 | Qwen2.5-Coder-32B | ~32,5B | 32.768 tokens (hasta 131.072 con RoPE) | Apache 2.0 | safetensors y GGUF (comunidad) | no comparable (sin datos del modelo analizado) |
 | CodeLlama-34B | ~34B | 16.384 tokens | Llama 2 Community License | safetensors y GGUF | no comparable (sin datos del modelo analizado) |

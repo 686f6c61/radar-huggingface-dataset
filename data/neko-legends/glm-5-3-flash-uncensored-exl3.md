@@ -4,7 +4,7 @@
 
 El modelo `neko-legends/GLM-5.3-Flash-Uncensored-EXL3` es una cuantización EXL3 de 4 bits del fine-tune `orcarouter/GLM-5.3-Flash-Uncensored-FP8`, que a su vez deriva del modelo multimodal de razonamiento `GLM-5.3-Flash` desarrollado por ZAI (zai-org). Se trata de una versión "uncensored" y "abliterated" del modelo original, diseñada para eliminar las restricciones de contenido y permitir conversaciones sin filtros, manteniendo las capacidades de visión, generación de texto, código, razonamiento y uso de herramientas. El autor, neko-legends, ha aplicado una cuantización EXL3/TR3 de 4 bits para reducir el uso de memoria y acelerar la inferencia en hardware de gama alta.
 
-El modelo está pensado para desarrolladores e investigadores que necesitan un asistente multimodal sin censura, con soporte para agentes, tool calling y contexto largo. Según los datos de HuggingFace, el checkpoint en safetensors contiene 87.811.157.118 parámetros, aunque el modelo original GLM-5.3-Flash se describe como un MoE de 320B parámetros totales. Esta discrepancia puede deberse a que la cuantización solo almacena los pesos activos o a una versión reducida del modelo base. El acceso es restringido (gated) y requiere aceptar la licencia `shapleymcg-license-1.0`, una licencia personalizada que limita el uso comercial.
+El modelo está pensado para desarrolladores e investigadores que necesitan un asistente multimodal sin censura, con soporte para agentes, tool calling y contexto largo. Según los datos de Hugging Face, el checkpoint en safetensors contiene 87.811.157.118 parámetros, aunque el modelo original GLM-5.3-Flash se describe como un MoE de 320B parámetros totales. Esta discrepancia puede deberse a que la cuantización solo almacena los pesos activos o a una versión reducida del modelo base. El acceso es restringido (gated) y requiere aceptar la licencia `shapleymcg-license-1.0`, una licencia personalizada que limita el uso comercial.
 
 La relevancia actual de este modelo radica en su combinación de multimodalidad, razonamiento avanzado y ausencia de censura, lo que lo hace atractivo para aplicaciones de investigación en alineación, generación creativa sin restricciones y despliegue en entornos controlados. Se ha probado en configuraciones de 2 y 4 DGX Spark, alcanzando hasta 900K tokens de contexto en servidores con vLLM.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GLM-5.3-Flash (original) | 320B (MoE) | no disponible | MIT (probablemente) | Abierto en HuggingFace |
+| GLM-5.3-Flash (original) | 320B (MoE) | no disponible | MIT (probablemente) | Abierto en Hugging Face |
 | GLM-5.3-Flash-Uncensored-EXL3 (este) | 87.8B (según safetensors) | no disponible | shapleymcg-license-1.0 | Gated, acceso restringido |
 | DeepSeek-V3 (MoE) | 671B totales, 37B activos | 128K | MIT | Abierto |
 | Qwen2.5-Max (MoE) | no disponible | no disponible | Propietaria | API |
@@ -71,7 +71,7 @@ No se dispone de comparativas directas de rendimiento con estos modelos, ya que 
 ## Limitaciones y advertencias
 
 - Licencia `shapleymcg-license-1.0` personalizada: no es una licencia open source estándar, puede restringir el uso comercial o la redistribución. Es necesario revisar los términos antes de usar.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que puede ser un obstáculo para algunos usuarios.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que puede ser un obstáculo para algunos usuarios.
 - Al ser una versión "uncensored" y "abliterated", el modelo puede generar contenido ofensivo, ilegal o peligroso sin filtros. Esto supone un riesgo legal y ético en aplicaciones públicas.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede inventar información, especialmente en temas especializados o con contexto largo.
 - Sesgos: no se han documentado sesgos específicos, pero al derivar de un modelo base entrenado con datos web, puede heredar sesgos de género, raza o ideología.
@@ -80,7 +80,7 @@ No se dispone de comparativas directas de rendimiento con estos modelos, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neko-legends/GLM-5.3-Flash-Uncensored-EXL3
+- Hugging Face: https://huggingface.co/neko-legends/GLM-5.3-Flash-Uncensored-EXL3
 - Modelo base (orcarouter): https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8 (no verificado)
 - Modelo original (zai-org): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Foro de NVIDIA (despliegue en DGX Spark): https://forums.developer.nvidia.com/t/glm-5-3-flash-on-2x-dgx-spark-nvfp4-kv-cache-288-b-token-2-2m-token-pool-16-way-serving-900k-context-full-recipe/382120

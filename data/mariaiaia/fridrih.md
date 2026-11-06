@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Mariaiaia/fridrih` es un modelo publicado en HuggingFace por el usuario Mariaiaia el 28 de octubre de 2026. La model card asociada es practicamente vacia: se limita a declarar la licencia `cc` y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, lo que sugiere una publicacion reciente o de caracter experimental.
+`Mariaiaia/fridrih` es un modelo publicado en Hugging Face por el usuario Mariaiaia el 28 de octubre de 2026. La model card asociada es practicamente vacia: se limita a declarar la licencia `cc` y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, lo que sugiere una publicacion reciente o de caracter experimental.
 
 No hay informacion publica que permita determinar que problema resuelve el modelo, sobre que arquitectura se ha construido ni que capacidades ofrece. Tampoco se especifica la tarea del pipeline, los idiomas soportados ni el formato de los pesos. Cualquier evaluacion tecnica seria requiere inspeccionar directamente los archivos del repositorio, algo que no se ha podido hacer con la informacion disponible.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre arquitectu
 - Prototipado experimental: usar el modelo en entornos de prueba aislados para comprobar su comportamiento antes de considerar cualquier integracion.
 - Investigacion sobre modelos poco documentados: analizar los pesos y la configuracion del repositorio para caracterizar el modelo.
 - Evaluacion comparativa interna: incluirlo en baterias de pruebas propias junto a modelos de referencia para medir calidad real.
-- Fines educativos: estudiar como se estructura un repositorio de HuggingFace y que metadatos minimos deberia incluir una model card.
+- Fines educativos: estudiar como se estructura un repositorio de Hugging Face y que metadatos minimos deberia incluir una model card.
 - Pruebas de robustez y seguridad: someterlo a evaluaciones de alucinacion y sesgo en un entorno controlado.
 - Experimentacion con licencias abiertas: explorar usos permitidos por la licencia `cc`, verificando antes las condiciones exactas de la variante aplicable.
 
@@ -77,7 +77,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mariaiaia/fridrih
+- Repositorio en Hugging Face: https://huggingface.co/Mariaiaia/fridrih
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

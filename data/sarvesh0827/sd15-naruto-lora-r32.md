@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sd15-naruto-lora-r32 | LoRA sobre SD 1.5 | 6,3M entrenables | 512x512, 77 tokens de prompt | creativeml-openrail-m | HuggingFace, 14 descargas |
+| sd15-naruto-lora-r32 | LoRA sobre SD 1.5 | 6,3M entrenables | 512x512, 77 tokens de prompt | creativeml-openrail-m | Hugging Face, 14 descargas |
 | SD 1.5 base | Modelo completo | ~983M (UNet) | 512x512, 77 tokens | creativeml-openrail-m | Ampliamente disponible |
-| LoRA de estilo Naruto de la comunidad | LoRA sobre SD 1.5 | no disponible | 512x512 | variable | Multiples repositorios en Civitai y HuggingFace |
+| LoRA de estilo Naruto de la comunidad | LoRA sobre SD 1.5 | no disponible | 512x512 | variable | Multiples repositorios en Civitai y Hugging Face |
 | SDXL + LoRA de personaje | Modelo completo + adaptador | ~2,6B (UNet) | 1024x1024, 77 tokens | openrail++ | Ampliamente disponible |
 
 La comparativa con LoRA de la comunidad es cualitativa: no hay benchmarks publicados para este adaptador ni para alternativas directas, por lo que no es posible establecer una comparacion cuantitativa de fidelidad o calidad. Frente a SDXL, este adaptador ofrece menor resolucion nativa y menor calidad, pero requiere mucha menos VRAM.
@@ -87,7 +87,7 @@ La comparativa con LoRA de la comunidad es cualitativa: no hay benchmarks public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sarvesh0827/sd15-naruto-lora-r32
+- Hugging Face: https://huggingface.co/Sarvesh0827/sd15-naruto-lora-r32
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/lambdalabs/naruto-blip-captions
 - Libreria diffusers: https://github.com/huggingface/diffusers

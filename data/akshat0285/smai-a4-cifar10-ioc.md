@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-cifar10-ioc` es una red neuronal totalmente conectada (MLP) entrenada desde cero para clasificar imágenes del conjunto de datos CIFAR-10. El modelo lo publica el usuario de HuggingFace `akshat0285` como parte de la asignatura SMAI (Assignment 4) y no está pensado como un modelo de propósito general, sino como un artefacto académico reproducible: pesos, arquitectura y preprocesado quedan documentados en la model card.
+`smai-a4-cifar10-ioc` es una red neuronal totalmente conectada (MLP) entrenada desde cero para clasificar imágenes del conjunto de datos CIFAR-10. El modelo lo publica el usuario de Hugging Face `akshat0285` como parte de la asignatura SMAI (Assignment 4) y no está pensado como un modelo de propósito general, sino como un artefacto académico reproducible: pesos, arquitectura y preprocesado quedan documentados en la model card.
 
 La arquitectura es deliberadamente simple: una pila de capas densas con tamaños `[3072, 128, 64, 10]`, activación ELU en las capas ocultas, salida de 10 logits sin activación y pesos no negativos a partir de la segunda capa. El entrenamiento se hizo en float64 con SGD plano (lr=0.05, batch de 64, 100 épocas) usando las etiquetas verdaderas, y el autor reporta una precisión de test del 47,43 %.
 
@@ -66,7 +66,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Arquitectura | Parámetros | Contexto/entrada | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `smai-a4-cifar10-ioc` | MLP `[3072, 128, 64, 10]` | ~402 698 (estimado) | 32×32×3 | 47,43 % | No disponible | HuggingFace |
+| `smai-a4-cifar10-ioc` | MLP `[3072, 128, 64, 10]` | ~402 698 (estimado) | 32×32×3 | 47,43 % | No disponible | Hugging Face |
 | ResNet-20 (referencia CIFAR-10) | CNN residual | ~0,27 M | 32×32×3 | ~91-92 % (referencia habitual en literatura) | Varía (MIT en implementaciones comunes) | Amplia |
 | VGG-11 (CIFAR-10) | CNN | ~9,2 M (adaptada) | 32×32×3 | ~92-93 % (referencia habitual) | Varía | Amplia |
 | MLP clásico CIFAR-10 | MLP 2 capas | ~1 M | 32×32×3 | ~55-60 % (referencia habitual) | Varía | Amplia |
@@ -85,5 +85,5 @@ Nota: los valores de precisión de los modelos comparativos son cifras de refere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akshat0285/smai-a4-cifar10-ioc
+- Modelo en Hugging Face: https://huggingface.co/akshat0285/smai-a4-cifar10-ioc
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

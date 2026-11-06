@@ -20,7 +20,7 @@ Su relevancia es acotada pero clara para quien trabaja en locomoción y manipula
 | Dimensionalidad de salida | 14 acciones articulares |
 | Tipos de cuantizacion | no disponible (se distribuye un `.pt` en precision de entrenamiento y un `.onnx`; no se documenta cuantizacion) |
 | Idiomas soportados | no aplica (no es un modelo de lenguaje) |
-| Licencia | no disponible (ni en los metadatos de HuggingFace ni en la model card) |
+| Licencia | no disponible (ni en los metadatos de Hugging Face ni en la model card) |
 | Formato de pesos | PyTorch (`model_1499.pt`) y ONNX (`policy.onnx`) |
 | Entorno de simulacion | `Mjlab-HeadstandKickupLegsTogether-Flat-MicroDuck` (MuJoCo) |
 | Framework de entrenamiento | rsl_rl (se deduce de la ruta de checkpoints `logs/rsl_rl/...` indicada por el autor) |
@@ -88,7 +88,7 @@ No se dispone de datos comparativos en la información proporcionada. No se iden
 | Contexto | no aplica (entrada de 61 observaciones) | no disponible |
 | Rendimiento | 32/32 en semilla 0 (checkpoint original); 87/96 en tres semillas para el conjunto de seis politicas | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Pesos en HuggingFace (`.pt` y `.onnx`) con informe de evaluacion y procedencia | no disponible |
+| Disponibilidad | Pesos en Hugging Face (`.pt` y `.onnx`) con informe de evaluacion y procedencia | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ No se dispone de datos comparativos en la información proporcionada. No se iden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZachGarner/microduck-headstand-legs-together
+- Modelo en Hugging Face: https://huggingface.co/ZachGarner/microduck-headstand-legs-together
 - Código de evaluación, configuración y resultados en bruto: https://github.com/zachgarner/microduck-headstand/tree/71ad395
 - Paper: no disponible
 - Blog o documentación adicional del autor: no disponible

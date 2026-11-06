@@ -76,6 +76,6 @@ La comparación se limita al modelo base, ya que no hay datos de rendimiento del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed3-epoch3
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed3-epoch3
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

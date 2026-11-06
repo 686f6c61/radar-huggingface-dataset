@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | AMAImedia/Qwen3.6-35B-A3B-occamy-1.0-BF16-GGUF-MTP (este) | 35,1B totales, ≈3B activos | no disponible | sin benchmarks publicados | apache-2.0 | safetensors y GGUF |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B totales, ≈3B activos | no disponible | sin datos en esta ficha | no disponible en la informacion proporcionada | HuggingFace |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B totales, ≈3B activos | no disponible | sin datos en esta ficha | no disponible en la informacion proporcionada | Hugging Face |
 | Accio-Lab/occamy-1.0 (original) | 35B totales, ≈3B activos | no disponible | sin benchmarks publicados | apache-2.0 | safetensors; variantes GGUF y MTP |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y licencia.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AMAImedia/Qwen3.6-35B-A3B-occamy-1.0-BF16-GGUF-MTP
+- Repositorio Hugging Face: https://huggingface.co/AMAImedia/Qwen3.6-35B-A3B-occamy-1.0-BF16-GGUF-MTP
 - Repositorio original del modelo: https://huggingface.co/Accio-Lab/occamy-1.0
 - Version GGUF del original: https://huggingface.co/Accio-Lab/occamy-1.0-GGUF
 - Version MTP del original: https://huggingface.co/Accio-Lab/occamy-1.0-MTP

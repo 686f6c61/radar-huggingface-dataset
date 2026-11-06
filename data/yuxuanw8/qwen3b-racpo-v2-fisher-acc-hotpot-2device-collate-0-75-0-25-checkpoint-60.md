@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-60` es un checkpoint intermedio de un proceso de ajuste (fine-tuning o post-entrenamiento por refuerzo) publicado en HuggingFace por el usuario `yuxuanw8`. No es un modelo base ni una release oficial de ningún laboratorio: el nombre del repositorio codifica los hiperparámetros y la configuración de un experimento concreto (variante "racpo-v2", uso de "fisher", métrica de accuracy sobre HotpotQA, entrenamiento en 2 dispositivos y una proporción de collate 0.75/0.25). El checkpoint número 60 corresponde a un paso intermedio del entrenamiento, no necesariamente a la versión final del modelo.
+El modelo identificado como `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-60` es un checkpoint intermedio de un proceso de ajuste (fine-tuning o post-entrenamiento por refuerzo) publicado en Hugging Face por el usuario `yuxuanw8`. No es un modelo base ni una release oficial de ningún laboratorio: el nombre del repositorio codifica los hiperparámetros y la configuración de un experimento concreto (variante "racpo-v2", uso de "fisher", métrica de accuracy sobre HotpotQA, entrenamiento en 2 dispositivos y una proporción de collate 0.75/0.25). El checkpoint número 60 corresponde a un paso intermedio del entrenamiento, no necesariamente a la versión final del modelo.
 
 En cuanto a la arquitectura, los tags del repositorio declaran `qwen2`, lo que sitúa al modelo dentro de la familia Qwen2 de Alibaba, y el recuento real de parámetros obtenido de los pesos en safetensors es de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones), con un tamaño de repositorio de 12,4 GB coherente con pesos almacenados en fp32. No se especifica en la model card de qué checkpoint concreto de la familia Qwen2 se parte, ni sus datos de entrenamiento, licencia o idiomas soportados.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, por tanto, limitada y de carácter experimental:
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio es la plantilla automática de HuggingFace y no contiene ninguna sección rellenada por el autor: todos los campos de descripción, datos de entrenamiento, hiperparámetros, infraestructura y evaluación figuran como `[More Information Needed]`. El único dato arquitectónico disponible es el tag `qwen2`, que indica que el modelo se construye sobre la familia Qwen2, y el recuento de parámetros (3,09 B), que lo sitúa en el rango de los modelos pequeños de dicha familia. No se puede confirmar desde la información proporcionada si el modelo base es una variante instruct o base, ni su ventana de contexto nativa.
+La model card del repositorio es la plantilla automática de Hugging Face y no contiene ninguna sección rellenada por el autor: todos los campos de descripción, datos de entrenamiento, hiperparámetros, infraestructura y evaluación figuran como `[More Information Needed]`. El único dato arquitectónico disponible es el tag `qwen2`, que indica que el modelo se construye sobre la familia Qwen2, y el recuento de parámetros (3,09 B), que lo sitúa en el rango de los modelos pequeños de dicha familia. No se puede confirmar desde la información proporcionada si el modelo base es una variante instruct o base, ni su ventana de contexto nativa.
 
 El nombre del repositorio es la principal fuente de información sobre el entrenamiento, aunque su interpretación es una inferencia: "racpo-v2" sugiere una segunda iteración de algún método de optimización con refuerzo o preferencias, "fisher" apunta al uso de información de Fisher (habitualmente asociada a regularización tipo natural gradient, EWC o estimación de importancia de parámetros), "acc-hotpot" indica que la métrica objetivo o el conjunto de evaluación es la accuracy sobre HotpotQA (preguntas multi-salto con razonamiento sobre varios documentos), "2device" que el entrenamiento se ejecutó en dos dispositivos, "collate-0.75-0.25" una proporción en el muestreo o mezcla de datos por lotes, y "checkpoint-60" que se trata del punto de guardado número 60. Ninguno de estos extremos está documentado por el autor, por lo que no deben tomarse como hechos verificados.
 
@@ -92,10 +92,10 @@ La diferencia fundamental no es de arquitectura, sino de estado de publicación:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-60
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-60
 - Checkpoint hermano del mismo autor: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-60
 - Repositorio de la familia Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
-- Qwen3-8B en HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
+- Qwen3-8B en Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
 - Qwen3 Technical Report (arXiv): https://arxiv.org/abs/2505.09388
 - Versión PDF del informe técnico de Qwen3: https://arxiv.org/pdf/2505.09388
 - Referencia citada en los tags del repositorio, Lacoste et al. (2019) sobre impacto ambiental: https://arxiv.org/abs/1910.09700

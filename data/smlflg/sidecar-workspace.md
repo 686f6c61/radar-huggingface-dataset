@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sidecar-Workspace es un workspace multi-repositorio publicado en HuggingFace por el usuario smlflg. No se trata de un modelo de IA generativa, sino de un conjunto de repositorios de software que implementan Sidecar, descrito por su autor como una "capa de gobernanza para agentes de codificacion con IA" basada en tres pilares: inyeccion minima de contexto, barreras de seguridad (safety gates) y modos de flujo de trabajo.
+Sidecar-Workspace es un workspace multi-repositorio publicado en Hugging Face por el usuario smlflg. No se trata de un modelo de IA generativa, sino de un conjunto de repositorios de software que implementan Sidecar, descrito por su autor como una "capa de gobernanza para agentes de codificacion con IA" basada en tres pilares: inyeccion minima de contexto, barreras de seguridad (safety gates) y modos de flujo de trabajo.
 
 El repositorio canonico de distribucion es Sidecar-Courser, presentado como el unico runtime de producto para las fases 0 a 2. Incluye un paquete Python denominado sidecar-courser, hooks para Claude Code invocables mediante python3 -m sidecar_courser.inject y python3 -m sidecar_courser.gates, paquetes de conocimiento (knowledge packs) con perfiles default y personal, goldsets de evaluacion, utilidades de linea de comandos doctor, smoke y eval, y un bundle de plugin de Claude bajo .claude-plugin/.
 
@@ -125,7 +125,7 @@ No disponible. El artefacto no es un modelo de IA y la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smlflg/Sidecar-Workspace
+- Hugging Face: https://huggingface.co/smlflg/Sidecar-Workspace
 - Sidecar-Courser (repositorio canonico de distribucion): Sidecar-Courser/
 - Sidecar-ng (referencia, congelado): Sidecar-ng/
 - Sidecar-by-Codex (sustituido): Sidecar-by-Codex/

@@ -100,7 +100,7 @@ La comparación con el prior de mercado no es la de un modelo rival, sino la de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsalissonsilva/ForecastGemma-Interp
+- Modelo en Hugging Face: https://huggingface.co/itsalissonsilva/ForecastGemma-Interp
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Dataset ForecastBench: https://github.com/forecastingresearch/forecastbench-datasets
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

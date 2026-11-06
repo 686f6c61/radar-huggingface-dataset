@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Comfy-Org/Yue2 es un repositorio publicado en HuggingFace por la organizacion Comfy-Org, la misma entidad que desarrolla ComfyUI, la interfaz modular basada en nodos para flujos de trabajo de generacion visual (imagen y video). El repositorio tiene un tamano de 7,8 GB, acumula 10 likes y 0 descargas, y fue creado el 11 de septiembre de 2026. La unica etiqueta declarada es `region:us`, que en HuggingFace indica la region de alojamiento del contenido.
+Comfy-Org/Yue2 es un repositorio publicado en Hugging Face por la organizacion Comfy-Org, la misma entidad que desarrolla ComfyUI, la interfaz modular basada en nodos para flujos de trabajo de generacion visual (imagen y video). El repositorio tiene un tamano de 7,8 GB, acumula 10 likes y 0 descargas, y fue creado el 11 de septiembre de 2026. La unica etiqueta declarada es `region:us`, que en Hugging Face indica la region de alojamiento del contenido.
 
-La informacion publica disponible sobre este repositorio es practicamente nula: no se especifica pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. La ficha del modelo en HuggingFace no incluye model card descriptiva, y la busqueda web no ha devuelto documentacion tecnica, paper, anuncio de publicacion ni repositorio de codigo asociado especificamente a "Yue2".
+La informacion publica disponible sobre este repositorio es practicamente nula: no se especifica pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. La ficha del modelo en Hugging Face no incluye model card descriptiva, y la busqueda web no ha devuelto documentacion tecnica, paper, anuncio de publicacion ni repositorio de codigo asociado especificamente a "Yue2".
 
 Por tanto, esta ficha se limita a recoger los metadatos verificables del repositorio e identifica explicitamente como "no disponible" cualquier dato que no puede confirmarse. No debe interpretarse ninguna seccion de este documento como una descripcion contrastada del modelo: se trata de un artefacto sin documentacion publica en el momento de la redaccion.
 
@@ -90,7 +90,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/Yue2
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Yue2
 - Sitio oficial de Comfy: https://comfy.org/
 - Descarga de Comfy Desktop: https://comfy.org/download
 - Comfy Cloud: https://cloud.comfy.org/

@@ -90,7 +90,7 @@ No se dispone de comparativas con modelos externos como Llama-3-8B o Mistral-7B 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cknuteson/mythic-voice-4b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cknuteson/mythic-voice-4b-GGUF
 - Repositorio persona-forge: https://github.com/ctkadvisors/persona-forge
 - mythic-voice-9b: https://huggingface.co/cknuteson/mythic-voice-9b-GGUF
 - mythic-voice-2b: https://huggingface.co/cknuteson/mythic-voice-2b-GGUF

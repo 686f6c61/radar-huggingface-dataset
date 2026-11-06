@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ArabicBertHash v2 | 49,41 M (16,25 M encoder) | 1.024 recomendado / 2.048 configurado | Arabe | Apache-2.0 | HuggingFace (Waqf-AI) |
+| ArabicBertHash v2 | 49,41 M (16,25 M encoder) | 1.024 recomendado / 2.048 configurado | Arabe | Apache-2.0 | Hugging Face (Waqf-AI) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de datos verificables sobre modelos comparables de la misma categoria (encoders MLM arabes de tamano similar) para establecer una comparativa con cifras.
@@ -79,9 +79,9 @@ No se dispone en la informacion proporcionada de datos verificables sobre modelo
 - El ejemplo de pooling de la model card no incluye la proyeccion aprendida usada en la evaluacion de retrieval; para clasificacion o retrieval es necesario entrenar y validar una cabeza o proyeccion propia.
 - El modelo tiene 13 descargas y 0 likes en el momento de la consulta, lo que indica una validacion externa muy limitada.
 - No se documentan sesgos conocidos, riesgos de alucinacion especificos ni restricciones adicionales de la licencia Apache-2.0 para uso comercial; esta licencia permite uso comercial con atribucion.
-- La model card referencia el repositorio como `Abdelkareem/arabic-berthash-v2` en el codigo de ejemplo, mientras que el ID de HuggingFace es `Waqf-AI/arabic-berthash-v2`; conviene verificar la ruta correcta al cargar el modelo.
+- La model card referencia el repositorio como `Abdelkareem/arabic-berthash-v2` en el codigo de ejemplo, mientras que el ID de Hugging Face es `Waqf-AI/arabic-berthash-v2`; conviene verificar la ruta correcta al cargar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Waqf-AI/arabic-berthash-v2
+- Modelo en Hugging Face: https://huggingface.co/Waqf-AI/arabic-berthash-v2
 - Dataset FineWeb-2 (referenciado en el entrenamiento): https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

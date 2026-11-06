@@ -75,11 +75,11 @@ La comparativa mas relevante es con los otros estudiantes de la misma coleccion 
 
 | Modelo | Parametros | Contexto | MMLU (5-shot) | Media 5 benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-32B-Dense-3B-D2D (este) | 3.44B | no disp. | 26.6 | 51.84 | Apache-2.0 | HuggingFace |
-| Qwen3-30B-A3B-Dense-3B-DO-ACP-K8 | 3.44B (estimado) | no disp. | 46.1 | 58.10 | Apache-2.0 | HuggingFace |
-| Qwen3-30B-A3B-Dense-3B-SF-K16 | 3.44B (estimado) | no disp. | 32.7 | 53.46 | Apache-2.0 | HuggingFace |
-| Qwen3-1.7B (preentrenado) | 1.7B | 128K (segun familia) | 62.6 | 66.63 | Apache-2.0 | HuggingFace |
-| Qwen3-4B (preentrenado) | 4B | 128K (segun familia) | 73.1 | 74.34 | Apache-2.0 | HuggingFace |
+| Qwen3-32B-Dense-3B-D2D (este) | 3.44B | no disp. | 26.6 | 51.84 | Apache-2.0 | Hugging Face |
+| Qwen3-30B-A3B-Dense-3B-DO-ACP-K8 | 3.44B (estimado) | no disp. | 46.1 | 58.10 | Apache-2.0 | Hugging Face |
+| Qwen3-30B-A3B-Dense-3B-SF-K16 | 3.44B (estimado) | no disp. | 32.7 | 53.46 | Apache-2.0 | Hugging Face |
+| Qwen3-1.7B (preentrenado) | 1.7B | 128K (segun familia) | 62.6 | 66.63 | Apache-2.0 | Hugging Face |
+| Qwen3-4B (preentrenado) | 4B | 128K (segun familia) | 73.1 | 74.34 | Apache-2.0 | Hugging Face |
 
 El modelo D2D es superado claramente por los estudiantes MoE-a-denso y por los modelos preentrenados de tamano similar o incluso inferior (Qwen3-1.7B). Esto indica que la poda densa directa es una estrategia menos eficiente que la conversion desde MoE, al menos con el presupuesto de destilacion utilizado.
 
@@ -97,7 +97,7 @@ El modelo D2D es superado claramente por los estudiantes MoE-a-denso y por los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhyuckkim/Qwen3-32B-Dense-3B-D2D
+- Modelo en Hugging Face: https://huggingface.co/jhyuckkim/Qwen3-32B-Dense-3B-D2D
 - Paper (arXiv): https://arxiv.org/abs/2605.28207
 - Codigo (GitHub): https://github.com/krafton-ai/moe-to-dense
 - Profesor original (Qwen3-32B): https://huggingface.co/Qwen/Qwen3-32B

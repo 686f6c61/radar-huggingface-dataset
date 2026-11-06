@@ -52,7 +52,7 @@ Las capacidades verificables son deliberadamente limitadas, coherentes con un mo
 - Prueba de humo (*smoke test*) de pipelines de entrenamiento con TRL: permite validar un flujo completo de SFT, desde la carga del dataset empaquetado hasta el guardado en safetensors, en pocos minutos y en una sola GPU.
 - Validacion de infraestructura de despliegue: con 39 M de parametros y 0,1 GB de pesos, sirve para comprobar que un servidor de Text Generation Inference, un endpoint HTTP o un contenedor de inferencia funcionan correctamente antes de sustituir el modelo por uno grande.
 - Experimentos de *packing* de secuencias: dado que el identificador indica secuencias empaquetadas con un posible algoritmo *best-fit decreasing*, el modelo es util para medir como el empaquetado afecta a la perdida y a la calidad final en corpus de 10 MB.
-- Docencia y formacion: es un ejemplo manejable para explicar ajuste fino supervisado, tokenizacion en escrituras no latinas y el ciclo de vida completo de un modelo en HuggingFace sin necesidad de hardware especializado.
+- Docencia y formacion: es un ejemplo manejable para explicar ajuste fino supervisado, tokenizacion en escrituras no latinas y el ciclo de vida completo de un modelo en Hugging Face sin necesidad de hardware especializado.
 - Generacion de relleno en pruebas de integracion: para tests automatizados que necesitan una respuesta de texto de forma rapida y en CPU, el coste computacional es minimo.
 - Estudio de modelos para lenguas con pocos recursos: encaja en la linea de investigacion de los modelos Goldfish, centrada en entrenar modelos monoingles pequenos sobre corpus muy reducidos (10 MB por lengua).
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39.087.104 | no disponible | SFT con TRL sobre 10 MB empaquetados | no disponible | Publico en HuggingFace, 0 descargas |
-| goldfish-models/hin_deva_10mb (modelo base) | no disponible | no disponible | Entrenamiento desde cero sobre 10 MB de hindi en devanagari | no disponible | Publico en HuggingFace |
+| francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39.087.104 | no disponible | SFT con TRL sobre 10 MB empaquetados | no disponible | Publico en Hugging Face, 0 descargas |
+| goldfish-models/hin_deva_10mb (modelo base) | no disponible | no disponible | Entrenamiento desde cero sobre 10 MB de hindi en devanagari | no disponible | Publico en Hugging Face |
 | GPT-2 small (referencia de familia) | 124 M | 1.024 tokens (segun la implementacion original) | Entrenamiento desde cero sobre WebText | MIT (en la publicacion original de OpenAI) | Ampliamente disponible |
 
 La comparacion con GPT-2 small se incluye solo como referencia de familia arquitectonica (ambos son transformers decoder-only tipo GPT-2), no como equivalente funcional: el modelo analizado tiene un tercio de parametros y esta ajustado sobre un corpus miles de veces menor. No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada.
@@ -92,7 +92,7 @@ La comparacion con GPT-2 small se incluye solo como referencia de familia arquit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_10mb
 - Organizacion Goldfish Models: https://huggingface.co/goldfish-models
 - Repositorio de TRL: https://github.com/huggingface/trl

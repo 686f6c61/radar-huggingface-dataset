@@ -73,8 +73,8 @@ La información proporcionada solo permite comparar esta cuantización con su pr
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Rin247/Qwen-Image-2.1-FP4 (esta ficha) | 4.751.405.448 según safetensors del repo | no disponible | qwen-research | safetensors, diffusers | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| Qwen/Qwen-Image-2.1 (modelo base) | ~7B en el componente de generación visual (32 capas DiT) | no disponible | qwen-research (Qwen Research License Agreement) | safetensors, diffusers | HuggingFace, ModelScope, demo en Spaces |
+| Rin247/Qwen-Image-2.1-FP4 (esta ficha) | 4.751.405.448 según safetensors del repo | no disponible | qwen-research | safetensors, diffusers | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| Qwen/Qwen-Image-2.1 (modelo base) | ~7B en el componente de generación visual (32 capas DiT) | no disponible | qwen-research (Qwen Research License Agreement) | safetensors, diffusers | Hugging Face, ModelScope, demo en Spaces |
 | Otras alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ La información proporcionada solo permite comparar esta cuantización con su pr
 ## Enlaces
 
 - Repositorio de esta cuantización: https://huggingface.co/Rin247/Qwen-Image-2.1-FP4
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo base en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog del modelo base: https://qwen.ai/blog?id=qwen-image-2.1
 - Demo en Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1

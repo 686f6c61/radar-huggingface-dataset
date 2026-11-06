@@ -36,7 +36,7 @@ En cuanto a datos, el autor afirma que la versión v0.1.1 se ha entrenado "con l
 - Robustez declarada frente a ruido ambiental, según la model card de la versión v0.1.1.
 - Integración con el ecosistema `transformers` y descarga mediante `huggingface_hub`.
 - Capa de síntesis de voz (TTS) complementaria, "YarnGPT voice layer", con voces nigerianas; la receta y las muestras se alojan en el repositorio paraguas `Erog0291/stew-audio-0.1`.
-- Demo interactiva disponible en un Space de HuggingFace.
+- Demo interactiva disponible en un Space de Hugging Face.
 - No se documentan capacidades de tool calling, razonamiento multi-paso, visión ni modo "thinking"; al ser un modelo ASR, no son de aplicación directa.
 - No se especifica soporte de diarización de hablantes, marcas de tiempo a nivel de palabra ni detección automática de idioma.
 
@@ -97,7 +97,7 @@ No se dispone de una comparación directa de WER entre Stew Yanga y estos modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Erog0291/stew-yanga
+- Modelo en Hugging Face: https://huggingface.co/Erog0291/stew-yanga
 - Repositorio paraguas (capa de voz YarnGPT y muestras): https://huggingface.co/Erog0291/stew-audio-0.1
 - Demo en Spaces: https://huggingface.co/spaces/Erog0291/stew-audio-0.1
 - Perfil del autor: https://huggingface.co/Erog0291

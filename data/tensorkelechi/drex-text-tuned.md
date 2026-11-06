@@ -69,7 +69,7 @@ Sobre 52 imagenes de test (casi todas no documentales), la puntuacion mediana se
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DReX-text-tuned | Regresion de complejidad visual (ajuste parcial) | no disponible | no aplica | MIT | HuggingFace (solo capas finales) |
+| DReX-text-tuned | Regresion de complejidad visual (ajuste parcial) | no disponible | no aplica | MIT | Hugging Face (solo capas finales) |
 | DReX original | Regresion de complejidad visual | no disponible | no aplica | MIT | GitHub (`DReX.pth`) |
 | Alternativas de prediccion de complejidad visual | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,6 +87,6 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tensorkelechi/DReX-text-tuned
+- Repositorio en Hugging Face: https://huggingface.co/tensorkelechi/DReX-text-tuned
 - Codigo y pesos originales de DReX: https://github.com/jskaza/DReX
 - Paper de DReX: https://arxiv.org/abs/2511.16991

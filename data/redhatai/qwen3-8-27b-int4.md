@@ -73,11 +73,11 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 - El comando de ejemplo de vLLM usa una longitud máxima de 69 632 tokens, muy inferior a los 262K del modelo base; esto sugiere limitaciones de memoria en la práctica.
 - La cuantización excluye la torre de visión y la cabeza de salida, pero no garantiza la misma calidad multimodal que el modelo original.
 - Riesgo de alucinación y sesgos inherentes al modelo base, no mitigados por la cuantización.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es una publicación reciente y sin validación comunitaria.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es una publicación reciente y sin validación comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/Qwen3.8-27B-INT4
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/Qwen3.8-27B-INT4
 - Variante NVFP4: https://huggingface.co/RedHatAI/Qwen3.8-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de AMD sobre ejecución local de Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashleysmith/thesis-matching` es un repositorio de HuggingFace que contiene una implementación propia de una arquitectura CLIP orientada a tareas de *matching* (emparejamiento entre modalidades o entre elementos). Lo publica el usuario `ashleysmith` bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización para pruebas de humo (*smoke tests*).
+`ashleysmith/thesis-matching` es un repositorio de Hugging Face que contiene una implementación propia de una arquitectura CLIP orientada a tareas de *matching* (emparejamiento entre modalidades o entre elementos). Lo publica el usuario `ashleysmith` bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización para pruebas de humo (*smoke tests*).
 
 El artefacto principal es el script `model.py`, acompañado de `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicialización). El recuento real de parámetros en safetensors es de 49.600, lo que contradice la etiqueta "giant" que figura en la model card; se trata, por tanto, de un modelo de tamaño muy reducido, probablemente una maqueta de arquitectura más que un modelo funcional.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ashleysmith/thesis-matching | 49.600 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | HuggingFace, 0 descargas |
+| ashleysmith/thesis-matching | 49.600 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens de texto | Sí | MIT | Pesos públicos, ampliamente usado |
 | CLIP ViT-L/14 (OpenAI) | ~428 M | 77 tokens de texto | Sí | MIT | Pesos públicos, ampliamente usado |
-| OpenCLIP ViT-H/14 (LAION) | ~986 M | 77 tokens de texto | Sí | MIT / Apache-2.0 según variante | Pesos públicos en HuggingFace |
+| OpenCLIP ViT-H/14 (LAION) | ~986 M | 77 tokens de texto | Sí | MIT / Apache-2.0 según variante | Pesos públicos en Hugging Face |
 
 La comparación es asimétrica: los modelos de referencia son releases entrenadas y evaluadas, mientras que este repositorio es una implementación sin entrenar. No hay datos de rendimiento que permitan una comparación cuantitativa.
 
@@ -81,5 +81,5 @@ La comparación es asimétrica: los modelos de referencia son releases entrenada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashleysmith/thesis-matching
+- Hugging Face: https://huggingface.co/ashleysmith/thesis-matching
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

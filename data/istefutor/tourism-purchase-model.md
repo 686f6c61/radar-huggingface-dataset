@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `istefutor/tourism-purchase-model` es un pipeline de clasificación tabular publicado en HuggingFace por el usuario `istefutor`. Segun la model card, se trata de un clasificador basado en XGBoost, seleccionado mediante una busqueda en rejilla (grid search) con validacion cruzada estratificada de cinco particiones y F1 como metrica de seleccion. El objetivo del modelo es predecir la compra historica de paquetes turisticos de tipo general, es decir, un problema de propension de compra sobre variables tabulares.
+El modelo `istefutor/tourism-purchase-model` es un pipeline de clasificación tabular publicado en Hugging Face por el usuario `istefutor`. Segun la model card, se trata de un clasificador basado en XGBoost, seleccionado mediante una busqueda en rejilla (grid search) con validacion cruzada estratificada de cinco particiones y F1 como metrica de seleccion. El objetivo del modelo es predecir la compra historica de paquetes turisticos de tipo general, es decir, un problema de propension de compra sobre variables tabulares.
 
 No es un modelo de lenguaje ni una red neuronal profunda: es un artefacto de machine learning clasico serializado con `joblib` y etiquetado con la libreria `scikit-learn`. Por tanto, no dispone de ventana de contexto, no procesa texto libre ni imagenes, y no tiene parametros en el sentido habitual de los transformers. Su relevancia es acotada: se publica como ejemplo reproducible de pipeline tabular con metricas de test declaradas, pero con documentacion muy incompleta.
 
@@ -85,7 +85,7 @@ No hay resultados comparativos publicados en la informacion disponible. La compa
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| istefutor/tourism-purchase-model (XGBoost) | no disponible | no aplica | F1 0.678, ROC-AUC 0.892 (test propio) | no disponible | HuggingFace, 0 descargas |
+| istefutor/tourism-purchase-model (XGBoost) | no disponible | no aplica | F1 0.678, ROC-AUC 0.892 (test propio) | no disponible | Hugging Face, 0 descargas |
 | Regresion logistica con preprocesado | no aplica | no aplica | no disponible | depende de la implementacion | scikit-learn, disponible |
 | Random Forest | no disponible | no aplica | no disponible | depende de la implementacion | scikit-learn, disponible |
 | LightGBM / CatBoost | no disponible | no aplica | no disponible | MIT / Apache-2.0 tipicamente | repositorios oficiales, disponible |
@@ -108,6 +108,6 @@ La comparacion carece de base empirica porque el autor no publica ni el conjunto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/istefutor/tourism-purchase-model
+- Modelo en Hugging Face: https://huggingface.co/istefutor/tourism-purchase-model
 
 Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo. Todos los resultados obtenidos correspondian a esquematicos de Minecraft con tematica religiosa (Planet Minecraft, abfielder.com, minecraft-schematics.com), sin ninguna relacion con el modelo, su arquitectura ni su problema objetivo. No se han encontrado paper, blog, repositorio de codigo ni demo asociados al modelo.

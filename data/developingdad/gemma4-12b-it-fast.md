@@ -13,7 +13,7 @@ La relevancia actual esta en que combina un modelo de 12B con cuantizacion de 4 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Gemma 4 Unified, transformer multimodal encoder-free segun la documentacion de Google para Gemma 4 12B |
-| Parametros totales | 11.959.730.224 elementos BF16 almacenados en la fuente, en 48 capas de lenguaje. El contador automatico de HuggingFace muestra 7.712.997.520 elementos U8 empaquetados, no pesos logicos |
+| Parametros totales | 11.959.730.224 elementos BF16 almacenados en la fuente, en 48 capas de lenguaje. El contador automatico de Hugging Face muestra 7.712.997.520 elementos U8 empaquetados, no pesos logicos |
 | Parametros activos | no aplica, no es MoE |
 | Longitud de contexto | 262.144 posiciones en la configuracion nativa; receta de servicio probada: 32.768 tokens de prompt mas salida |
 | Tipos de cuantizacion | MLPs en NVFP4 con grupos de 16, escalas FP8 estaticas por bloque y divisores globales; atencion en FP8 por canal con activaciones FP8 dinamicas por token; escalas K/V calibradas como escalares FP8; compressed-tensors; etiqueta 8-bit |
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| google/gemma-4-12B-it | no disponible el desglose exacto; denominado 12B | 262.144 posiciones nativas segun la configuracion heredada | BF16 | licencia Gemma 4 | HuggingFace |
-| DevelopingDad/gemma-4-12b-it-trial62 | 11.959.730.224 elementos BF16 almacenados | 262.144 posiciones nativas | BF16 | no disponible | HuggingFace |
-| DevelopingDad/Gemma4-12B-it-Fast | 11.959.730.224 elementos BF16 logicos; 7.712.997.520 elementos U8 empaquetados segun el contador automatico | 262.144 posiciones nativas; 32.768 tokens en la receta probada | NVFP4 en MLPs y FP8 en atencion; compressed-tensors | apache-2.0 con enlace a la licencia Gemma 4 | HuggingFace |
+| google/gemma-4-12B-it | no disponible el desglose exacto; denominado 12B | 262.144 posiciones nativas segun la configuracion heredada | BF16 | licencia Gemma 4 | Hugging Face |
+| DevelopingDad/gemma-4-12b-it-trial62 | 11.959.730.224 elementos BF16 almacenados | 262.144 posiciones nativas | BF16 | no disponible | Hugging Face |
+| DevelopingDad/Gemma4-12B-it-Fast | 11.959.730.224 elementos BF16 logicos; 7.712.997.520 elementos U8 empaquetados segun el contador automatico | 262.144 posiciones nativas; 32.768 tokens en la receta probada | NVFP4 en MLPs y FP8 en atencion; compressed-tensors | apache-2.0 con enlace a la licencia Gemma 4 | Hugging Face |
 | Checkpoints de referencia de Unsloth para Gemma 4 12B IT | no disponible | no disponible | no disponible | no disponible | mencionados como referencia de comparacion en la model card |
 
 No se dispone de datos comparativos con Qwen o DeepSeek en la informacion proporcionada. La comparacion directa mas fiable es con el checkpoint fuente Trial62 y con el modelo original google/gemma-4-12B-it.
@@ -93,7 +93,7 @@ No se dispone de datos comparativos con Qwen o DeepSeek en la informacion propor
 - La cuantizacion puede degradar la calidad. Las auditorias de exportacion solo garantizan integridad del export, no equivalencia amplia de calidad.
 - El metodo de modificacion de Trial62 no esta documentado en su repositorio fuente y no se infiere en esta ficha.
 - No se realizo entrenamiento adicional de alineacion ni eliminacion de rechazos en esta conversion.
-- El contador automatico de parametros de HuggingFace puede confundir: cuenta elementos U8 empaquetados, no pesos logicos.
+- El contador automatico de parametros de Hugging Face puede confundir: cuenta elementos U8 empaquetados, no pesos logicos.
 - La licencia declarada es apache-2.0, pero incluye un enlace a la licencia Gemma 4. Conviene revisar los terminos aplicables antes de un uso comercial.
 - Riesgo de alucinacion: inherente a los modelos generativos. No hay evaluacion especifica en esta release.
 - Sesgos: no documentados. La calibracion en ingles de C4 puede introducir sesgos linguisticos y culturales.
@@ -103,7 +103,7 @@ No se dispone de datos comparativos con Qwen o DeepSeek en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DevelopingDad/Gemma4-12B-it-Fast
+- Modelo en Hugging Face: https://huggingface.co/DevelopingDad/Gemma4-12B-it-Fast
 - Checkpoint fuente Trial62: https://huggingface.co/DevelopingDad/gemma-4-12b-it-trial62
 - Modelo original de Google: https://huggingface.co/google/gemma-4-12B-it
 - Modelo asistente de Google: https://huggingface.co/google/gemma-4-12B-it-assistant

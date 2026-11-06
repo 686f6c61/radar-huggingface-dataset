@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kolibri-1-AWQ-INT4 (esta ficha) | 78B (base); 18,5B reportados en safetensors | 3,46B (base) | 1.048.576 | Apache 2.0 | HuggingFace |
-| Aleph-Alpha/Kolibri-1 (base FP8) | 78B | 3,46B | 1.048.576 | Apache 2.0 | HuggingFace |
+| Kolibri-1-AWQ-INT4 (esta ficha) | 78B (base); 18,5B reportados en safetensors | 3,46B (base) | 1.048.576 | Apache 2.0 | Hugging Face |
+| Aleph-Alpha/Kolibri-1 (base FP8) | 78B | 3,46B | 1.048.576 | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables adicionales en la informacion proporcionada.
@@ -89,13 +89,13 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/cyankiwi/Kolibri-1-AWQ-INT4
+- Hugging Face (esta cuantizacion): https://huggingface.co/cyankiwi/Kolibri-1-AWQ-INT4
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Tech report: https://aleph-alpha.com/downloads/tech-report.pdf
 - Tech blog: https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/
 - Dataset de calibracion: https://huggingface.co/datasets/cyankiwi/calibration
 - Web de cyankiwi: https://cyan.kiwi/
-- Perfil de cyankiwi en HuggingFace: https://huggingface.co/cyankiwi
+- Perfil de cyankiwi en Hugging Face: https://huggingface.co/cyankiwi
 - ModelScope de cyankiwi: https://www.modelscope.ai/organization/cyankiwi
 - X de cyankiwi: https://x.com/cyankiwi_ai
 - Reddit de cyankiwi: https://www.reddit.com/r/cyankiwi/

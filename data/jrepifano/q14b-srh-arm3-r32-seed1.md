@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `jrepifano/q14b-srh-arm3-r32-seed1` es un modelo publicado en HuggingFace por el usuario jrepifano, con 0 descargas y 0 likes en el momento de la consulta, creado el 19 de septiembre de 2026 y actualizado minutos despues (01:01 a 01:15 UTC). La model card asociada es la plantilla automatica de HuggingFace sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como `[More Information Needed]`.
+El repositorio `jrepifano/q14b-srh-arm3-r32-seed1` es un modelo publicado en Hugging Face por el usuario jrepifano, con 0 descargas y 0 likes en el momento de la consulta, creado el 19 de septiembre de 2026 y actualizado minutos despues (01:01 a 01:15 UTC). La model card asociada es la plantilla automatica de Hugging Face sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como `[More Information Needed]`.
 
 El identificador sugiere, sin confirmacion por parte del autor, un adaptador LoRA de rango 32 (`r32`) entrenado con semilla 1 (`seed1`) sobre un modelo base de aproximadamente 14 000 millones de parametros (`q14b`), presumiblemente de la familia Qwen, dentro de una serie de experimentos etiquetada como `arm3`. El tamano total del repositorio, 0,8 GB, es coherente con un conjunto de pesos de adaptador en lugar de un modelo completo, pero se trata de una inferencia a partir del nombre y del tamano, no de un dato documentado.
 
-La relevancia de esta ficha es limitada y hay que ser explicito al respecto: no existe informacion publicada sobre arquitectura, datos de entrenamiento, licencia ni rendimiento, por lo que no es posible evaluar el modelo para uso en produccion ni determinar si su licencia permite uso comercial. La unica etiqueta tecnica verificable es `unsloth` junto a `transformers` y `safetensors`, mas una referencia bibliografica al articulo de Lacoste et al. (2019) sobre el calculo de emisiones, que es el texto que la plantilla de HuggingFace incluye por defecto y no un paper asociado al modelo.
+La relevancia de esta ficha es limitada y hay que ser explicito al respecto: no existe informacion publicada sobre arquitectura, datos de entrenamiento, licencia ni rendimiento, por lo que no es posible evaluar el modelo para uso en produccion ni determinar si su licencia permite uso comercial. La unica etiqueta tecnica verificable es `unsloth` junto a `transformers` y `safetensors`, mas una referencia bibliografica al articulo de Lacoste et al. (2019) sobre el calculo de emisiones, que es el texto que la plantilla de Hugging Face incluye por defecto y no un paper asociado al modelo.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada y hay que ser explicito al respecto: no 
 
 No se ha publicado informacion sobre la arquitectura del modelo base, el objetivo de entrenamiento ni la composicion del dataset. Las unicas pistas son el nombre del repositorio y las etiquetas: `unsloth` indica que el entrenamiento o la conversion se realizaron con la libreria Unsloth, especializada en ajuste fino eficiente en memoria mediante LoRA/QLoRA; `r32` apunta a un rango de adaptacion de 32; y `seed1` a una semilla concreta dentro de una campaña con multiples ejecuciones (`arm3` sugeriria el tercer brazo o variante del experimento). Ninguno de estos extremos esta confirmado en la documentacion.
 
-Tampoco hay datos sobre numero de tokens de entrenamiento, si hubo RLHF, DPO u otra fase de alineamiento, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo citado por defecto en la plantilla de model card de HuggingFace para estimar emisiones de carbono, y no describe el modelo.
+Tampoco hay datos sobre numero de tokens de entrenamiento, si hubo RLHF, DPO u otra fase de alineamiento, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo citado por defecto en la plantilla de model card de Hugging Face para estimar emisiones de carbono, y no describe el modelo.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar alternativas comparables porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jrepifano/q14b-srh-arm3-r32-seed1
+- Repositorio en Hugging Face: https://huggingface.co/jrepifano/q14b-srh-arm3-r32-seed1
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Unsloth (libreria indicada en las etiquetas): https://github.com/unslothai/unsloth
 - Calculadora de impacto medioambiental referenciada en la plantilla de la model card: https://mlco2.github.io/impact

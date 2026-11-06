@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Maxsteel108/E_tlou es un repositorio de modelo publicado en HuggingFace por el usuario Maxsteel108 bajo licencia Apache 2.0. El repositorio, creado el 14 de septiembre de 2026 y actualizado el mismo dia, ocupa 0,3 GB en total y acumula 0 descargas y 0 likes en el momento de la consulta. La model card publicada por el autor no contiene informacion tecnica: unicamente el bloque de metadatos con la licencia, sin descripcion, sin ejemplos de uso y sin referencias a documentacion adicional.
+Maxsteel108/E_tlou es un repositorio de modelo publicado en Hugging Face por el usuario Maxsteel108 bajo licencia Apache 2.0. El repositorio, creado el 14 de septiembre de 2026 y actualizado el mismo dia, ocupa 0,3 GB en total y acumula 0 descargas y 0 likes en el momento de la consulta. La model card publicada por el autor no contiene informacion tecnica: unicamente el bloque de metadatos con la licencia, sin descripcion, sin ejemplos de uso y sin referencias a documentacion adicional.
 
-No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni proceso de alineacion. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los unicos resultados obtenidos corresponden al portal de comercio electronico Allegro, sin relacion alguna con el repositorio. Tampoco se ha localizado pipeline declarado en la ficha de HuggingFace.
+No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni proceso de alineacion. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los unicos resultados obtenidos corresponden al portal de comercio electronico Allegro, sin relacion alguna con el repositorio. Tampoco se ha localizado pipeline declarado en la ficha de Hugging Face.
 
 En consecuencia, esta ficha recoge exclusivamente los datos verificables del repositorio y marca como "no disponible" todo aquello que el autor no ha documentado. Cualquier evaluacion de idoneidad para produccion requiere inspeccionar directamente los archivos de pesos y la configuracion del repositorio.
 
@@ -86,7 +86,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, arquitectura y t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Maxsteel108/E_tlou
+- Repositorio en Hugging Face: https://huggingface.co/Maxsteel108/E_tlou
 - Model card del autor: sin contenido tecnico, unicamente el bloque de metadatos de licencia
 - Paper, blog, repositorio de codigo o demo: no disponibles
 - Resultados de busqueda web: los unicos resultados devueltos corresponden a Allegro (https://allegro.pl/, https://allegro.pl/logowanie, https://business.allegro.pl/, https://wakacje.allegro.pl/, https://allegro.pl/dzial/dom-i-ogrod) y no guardan ninguna relacion con el modelo; no se han encontrado enlaces relevantes.

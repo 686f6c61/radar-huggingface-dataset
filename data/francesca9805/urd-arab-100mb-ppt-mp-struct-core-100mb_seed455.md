@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/urd_arab_100mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), lo que lo situa en la categoria de modelos pequenos y ligeros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL.
+El modelo `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/urd_arab_100mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), lo que lo situa en la categoria de modelos pequenos y ligeros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL.
 
 El modelo base pertenece a la familia Goldfish, una coleccion de modelos monolingues entrenados con volumenes reducidos de texto para distintos idiomas. En este caso, el identificador `urd_arab` sugiere que el corpus base esta asociado al urdu en escritura arabe, aunque el ajuste fino no documenta explicitamente los idiomas finales ni la composicion del dataset de entrenamiento. El nombre del modelo incluye fragmentos como `ppt-mp-struct-core-100mb`, que apuntan a una receta de entrenamiento experimental propia del autor, pero la model card no detalla su significado tecnico.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed455 | 124,77 M | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) | Ajuste SFT sobre el modelo Goldfish |
-| goldfish-models/urd_arab_100mb | aprox. 100 MB de corpus (parametros no disponibles en la informacion) | no disponible | no disponible | HuggingFace | Modelo base monolingue de Goldfish; presumiblemente sin ajuste por instrucciones |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos originales) | HuggingFace / OpenAI | Referencia arquitectonica; entrenado principalmente en ingles |
+| francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed455 | 124,77 M | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) | Ajuste SFT sobre el modelo Goldfish |
+| goldfish-models/urd_arab_100mb | aprox. 100 MB de corpus (parametros no disponibles en la informacion) | no disponible | no disponible | Hugging Face | Modelo base monolingue de Goldfish; presumiblemente sin ajuste por instrucciones |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos originales) | Hugging Face / OpenAI | Referencia arquitectonica; entrenado principalmente en ingles |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed455
+- Repositorio en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_100mb
 - Variante relacionada (misma receta, otra semilla): https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed455
 - Variante con checkpoint 500: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407

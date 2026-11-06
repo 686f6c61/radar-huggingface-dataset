@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zfan3/esm2_t12_35M_category_CST_homolog_v6` es un modelo de lenguaje de proteínas basado en la arquitectura ESM-2, desarrollado por el usuario zfan3 y publicado en HuggingFace bajo licencia MIT. Aunque la model card no proporciona detalles adicionales, el nombre sugiere que se trata de un fine-tuning de la variante ESM-2 con 12 capas y 35 millones de parámetros, especializado en la clasificación de categorías de homología CST (probablemente relacionado con dominios o familias de proteínas). El modelo está pensado para tareas de anotación y clasificación de secuencias proteicas, no para generación de lenguaje natural.
+El modelo `zfan3/esm2_t12_35M_category_CST_homolog_v6` es un modelo de lenguaje de proteínas basado en la arquitectura ESM-2, desarrollado por el usuario zfan3 y publicado en Hugging Face bajo licencia MIT. Aunque la model card no proporciona detalles adicionales, el nombre sugiere que se trata de un fine-tuning de la variante ESM-2 con 12 capas y 35 millones de parámetros, especializado en la clasificación de categorías de homología CST (probablemente relacionado con dominios o familias de proteínas). El modelo está pensado para tareas de anotación y clasificación de secuencias proteicas, no para generación de lenguaje natural.
 
 Con 33.994.949 parámetros totales y un tamaño de repositorio de 0,4 GB en formato safetensors, es un modelo ligero que puede ejecutarse en hardware modesto. Su relevancia radica en que los modelos ESM-2 han demostrado un buen rendimiento en tareas de predicción de estructura y función de proteínas, y este fine-tuning específico podría ser útil para investigadores que necesiten clasificar homólogos en categorías concretas. Sin embargo, la falta de documentación pública limita la evaluación de sus capacidades reales.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada para inferencia: con float32, el modelo ocupa aproximadamente 136 MB (33.994.949 × 4 bytes), por lo que cabe en cualquier GPU con al menos 1 GB de VRAM. Con cuantización a int8, el uso se reduce a unos 68 MB.
 - GPU recomendadas: cualquier GPU moderna, incluidas RTX 2060, RTX 3060, T4, o incluso CPU con suficiente RAM.
 - Sí cabe en GPUs de consumo (gama baja y media) y en entornos sin GPU.
-- Opciones de despliegue: al ser safetensors, puede cargarse con la librería `transformers` de HuggingFace o con `esm` (el paquete oficial de ESM). También es posible convertirlo a ONNX o TorchScript para servir con TensorRT o similares. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, que están orientados a modelos de lenguaje generativos.
+- Opciones de despliegue: al ser safetensors, puede cargarse con la librería `transformers` de Hugging Face o con `esm` (el paquete oficial de ESM). También es posible convertirlo a ONNX o TorchScript para servir con TensorRT o similares. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, que están orientados a modelos de lenguaje generativos.
 - Latencia y throughput: no disponible. Dado el tamaño reducido, se espera una latencia de milisegundos por secuencia en GPU y de decenas de milisegundos en CPU, pero no hay datos medidos.
 
 ## Comparativa con modelos similares
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 | esm2_t12_35M (este) | 35M | ESM-2 (12 capas) | no disponible | MIT | Clasificación de homología CST |
 | esm2_t6_8M (Meta) | 8M | ESM-2 (6 capas) | 1024 | MIT | Embeddings de proteínas, tareas generales |
 | esm2_t30_150M (Meta) | 150M | ESM-2 (30 capas) | 1024 | MIT | Embeddings de proteínas, tareas generales |
-| ProtBERT (HuggingFace) | 420M | BERT | 512 | Apache-2.0 | Embeddings de proteínas, tareas generales |
+| ProtBERT (Hugging Face) | 420M | BERT | 512 | Apache-2.0 | Embeddings de proteínas, tareas generales |
 
-La comparativa se basa en modelos ESM-2 originales de Meta AI, que son los más parecidos. Este modelo es un fine-tuning de la variante de 35M, por lo que su rendimiento en tareas específicas dependerá del dataset de entrenamiento, del que no se tienen datos. Los modelos originales de ESM-2 están disponibles en HuggingFace con licencia MIT y han sido ampliamente evaluados en tareas de predicción de estructura y función.
+La comparativa se basa en modelos ESM-2 originales de Meta AI, que son los más parecidos. Este modelo es un fine-tuning de la variante de 35M, por lo que su rendimiento en tareas específicas dependerá del dataset de entrenamiento, del que no se tienen datos. Los modelos originales de ESM-2 están disponibles en Hugging Face con licencia MIT y han sido ampliamente evaluados en tareas de predicción de estructura y función.
 
 ## Limitaciones y advertencias
 
@@ -74,5 +74,5 @@ La comparativa se basa en modelos ESM-2 originales de Meta AI, que son los más 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/zfan3/esm2_t12_35M_category_CST_homolog_v6
+- Página del modelo en Hugging Face: https://huggingface.co/zfan3/esm2_t12_35M_category_CST_homolog_v6
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información disponible.

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-000` | 4,02 B | No disponible en el repositorio | Apache 2.0 | HuggingFace, 123 descargas | Checkpoint de investigación, paso 0 de 48, sin benchmarks publicados |
-| `Qwen/Qwen3-4B-Instruct-2507` | ≈4,02 B | 262.144 tokens según su model card | Apache 2.0 | HuggingFace, ampliamente distribuido | Modelo base instruct; sí publica evaluaciones propias |
-| `Qwen/Qwen2.5-3B-Instruct` | ≈3,09 B | 32.768 tokens según su model card | Apache 2.0 (excepto el tokenizador, con licencia propia) | HuggingFace | Alternativa de tamaño similar y propósito general, sin fine-tuning médico |
-| Series del mismo equipo: `qwen3-4b-rar-medicine-onlinerubrics-seed11-*` y `static-r0-matched-*` (pasos 001–036) | 4,02 B | No disponible | Apache 2.0 | HuggingFace, FriendliAI, Featherless | Comparables directos: misma política base, mismo dominio y misma semilla, con esquema de recompensa o número de pasos distinto |
+| `HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-000` | 4,02 B | No disponible en el repositorio | Apache 2.0 | Hugging Face, 123 descargas | Checkpoint de investigación, paso 0 de 48, sin benchmarks publicados |
+| `Qwen/Qwen3-4B-Instruct-2507` | ≈4,02 B | 262.144 tokens según su model card | Apache 2.0 | Hugging Face, ampliamente distribuido | Modelo base instruct; sí publica evaluaciones propias |
+| `Qwen/Qwen2.5-3B-Instruct` | ≈3,09 B | 32.768 tokens según su model card | Apache 2.0 (excepto el tokenizador, con licencia propia) | Hugging Face | Alternativa de tamaño similar y propósito general, sin fine-tuning médico |
+| Series del mismo equipo: `qwen3-4b-rar-medicine-onlinerubrics-seed11-*` y `static-r0-matched-*` (pasos 001–036) | 4,02 B | No disponible | Apache 2.0 | Hugging Face, FriendliAI, Featherless | Comparables directos: misma política base, mismo dominio y misma semilla, con esquema de recompensa o número de pasos distinto |
 
 Los datos de contexto de los modelos comparados provienen de sus model cards públicas y no se han verificado en el contexto de este repositorio.
 
@@ -81,11 +81,11 @@ Los datos de contexto de los modelos comparados provienen de sus model cards pú
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base Qwen3-4B-Instruct-2507 tiene sus propias condiciones que deben respetarse; conviene revisar ambas.
 - En el caso de Qwen2.5 mencionado en la comparativa, el tokenizador tiene licencia distinta de la del modelo, un caveat habitual en la familia Qwen que conviene verificar antes de redistribuir.
 - Estado de reanudación incompleto: los estados de optimizador, entrenador y data-loader no se publican, por lo que no es posible reanudar el entrenamiento exactamente desde este repositorio.
-- Fecha de creación declarada en HuggingFace: 2026-09-30; conviene comprobar la vigencia de los enlaces y de los metadatos.
+- Fecha de creación declarada en Hugging Face: 2026-09-30; conviene comprobar la vigencia de los enlaces y de los metadatos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-000
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint relacionado (OnlineRubrics, paso 000): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000
 - Checkpoint relacionado (OnlineRubrics, paso 001): https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-001

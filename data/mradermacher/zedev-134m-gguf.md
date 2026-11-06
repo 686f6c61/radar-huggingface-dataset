@@ -4,7 +4,7 @@
 
 Zedev-134m-GGUF es el repositorio de cuantizaciones en formato GGUF publicado por mradermacher a partir del modelo base Meridian-MRM/Zedev-134m. No se trata de un modelo nuevo, sino de una conversión y cuantización del modelo original para que pueda ejecutarse con llama.cpp y herramientas compatibles en hardware modesto. El modelo subyacente es un transformer causal decoder-only de 134.467.968 parámetros (aproximadamente 134,5 millones), etiquetado en sus metadatos como perteneciente a la familia qwen3 y clasificado por el autor como base-model, es decir, sin ajuste de instrucciones.
 
-El interés de esta publicación es fundamentalmente práctico: el modelo original se distribuye en pesos HuggingFace, mientras que esta versión ofrece doce variantes GGUF que van desde Q2_K (unos 0,2 GB) hasta f16 (unos 0,4 GB), lo que permite desplegarlo en CPU, en GPUs de gama baja o incluso en dispositivos con recursos muy limitados. Está entrenado exclusivamente en inglés y su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
+El interés de esta publicación es fundamentalmente práctico: el modelo original se distribuye en pesos Hugging Face, mientras que esta versión ofrece doce variantes GGUF que van desde Q2_K (unos 0,2 GB) hasta f16 (unos 0,4 GB), lo que permite desplegarlo en CPU, en GPUs de gama baja o incluso en dispositivos con recursos muy limitados. Está entrenado exclusivamente en inglés y su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
 Se trata de un modelo muy pequeño y de propósito general, pensado para experimentación con modelos de lenguaje compactos, generación de texto básica y como banco de pruebas para pipelines de cuantización. No se han publicado datos sobre longitud de contexto, composición exacta del dataset ni resultados de benchmarks en la información disponible, lo que limita la evaluación rigurosa de su calidad frente a alternativas de tamaño similar.
 
@@ -19,7 +19,7 @@ Se trata de un modelo muy pequeño y de propósito general, pensado para experim
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (el modelo base original se distribuye en formato HuggingFace) |
+| Formato de pesos | GGUF (el modelo base original se distribuye en formato Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -47,7 +47,7 @@ Esta publicación concreta, a cargo de mradermacher, es únicamente un proceso d
 - Generación de texto de bajo coste en el borde: al ocupar menos de 0,5 GB en f16, puede ejecutarse en dispositivos con poca RAM o en contenedores pequeños donde no caben modelos de miles de millones de parámetros.
 - Filtrado y clasificación de texto rápido: con 134 M de parámetros, la latencia por token es muy baja, lo que permite usarlo como extractor de representaciones o para puntuar continuaciones en tareas de selección de candidatos.
 - Comparación de calidad entre cuantizaciones: el repositorio ofrece doce variantes, lo que permite medir experimentalmente la degradación de perplejidad entre Q2_K, Q3_K, Q4_K, Q5_K, Q6_K, Q8_0 y f16 sobre un mismo corpus en inglés.
-- Aprendizaje y docencia sobre cuantización: es un caso de estudio asequible para explicar el flujo HuggingFace a GGUF y el impacto del ancho de bits en el tamaño y la fidelidad del modelo.
+- Aprendizaje y docencia sobre cuantización: es un caso de estudio asequible para explicar el flujo Hugging Face a GGUF y el impacto del ancho de bits en el tamaño y la fidelidad del modelo.
 - Base para ajuste fino experimental: al estar bajo Apache 2.0, puede reentrenarse o adaptarse con LoRA para dominios concretos en inglés sin coste de licencia, siempre que el hardware lo permita.
 - Generación de texto educativo o de relleno: dado el uso de dclm-edu en el entrenamiento, puede emplearse para producir borradores de texto expositivo en inglés, con revisión humana obligatoria por el riesgo de alucinación.
 - Evaluación comparativa de modelos pequeños: sirve como punto de referencia interno frente a otros modelos de ~135 M parámetros en tareas de perplejidad y generación libre.
@@ -72,8 +72,8 @@ Los datos de la columna de Zedev-134m proceden de la información proporcionada;
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Zedev-134m (Meridian-MRM) | 134,5 M | No disponible | Apache 2.0 | HuggingFace, GGUF | Entrenado con dclm-edu y OpenHermes-2.5; sin benchmarks publicados |
-| SmolLM2-135M (HuggingFace) | 135 M | 8.192 tokens | Apache 2.0 | Safetensors, GGUF (comunidad) | Modelo pequeno con documentacion detallada y evaluaciones publicadas |
+| Zedev-134m (Meridian-MRM) | 134,5 M | No disponible | Apache 2.0 | Hugging Face, GGUF | Entrenado con dclm-edu y OpenHermes-2.5; sin benchmarks publicados |
+| SmolLM2-135M (Hugging Face) | 135 M | 8.192 tokens | Apache 2.0 | Safetensors, GGUF (comunidad) | Modelo pequeno con documentacion detallada y evaluaciones publicadas |
 | Qwen3-0.6B (Alibaba) | 0,6 B | 32.768 tokens | Apache 2.0 | Safetensors, GGUF (comunidad) | Arquitectura qwen3, con modos de razonamiento; aproximadamente 4,5 veces mas parametros |
 | GPT-2 (OpenAI) | 124 M | 1.024 tokens | Licencia permisiva tipo MIT | Safetensors, GGUF | Referencia historica de la misma escala, sin entrenamiento con datos recientes |
 

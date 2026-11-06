@@ -35,7 +35,7 @@ El entrenamiento se basa en destilación: el modelo se ajustó para replicar las
 - Detección de inyección de prompts (`injection`: si el pasaje intenta dar instrucciones al asistente en lugar de describir el tema).
 - Clasificación de opción múltiple de cuatro vías (`answerability`: `direct`, `partial`, `background`, `none`) sobre el conjunto de pasajes seleccionados.
 - Evaluación conjunta de varias preguntas en una sola llamada (el ejemplo puntúa `relevant`, `evidence`, `contradiction` e `injection` a la vez).
-- Extracción de características (`feature-extraction`) como pipeline declarado en HuggingFace.
+- Extracción de características (`feature-extraction`) como pipeline declarado en Hugging Face.
 - No se documentan capacidades de generación de texto, código, matemáticas, visión, audio, tool calling ni razonamiento multi-paso más allá de la clasificación descrita.
 
 ## Casos de uso
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| egemma-td-v2 | 272 M | 256 tokens | Clasificación de resultados y pasajes web | Apache 2.0 | HuggingFace |
-| mrm8488/embeddinggemma-2-ft-typed-decision (modelo base) | no disponible | no disponible | Embeddings con decisiones tipadas | no disponible | HuggingFace |
+| egemma-td-v2 | 272 M | 256 tokens | Clasificación de resultados y pasajes web | Apache 2.0 | Hugging Face |
+| mrm8488/embeddinggemma-2-ft-typed-decision (modelo base) | no disponible | no disponible | Embeddings con decisiones tipadas | no disponible | Hugging Face |
 | Jev 1.13 (modelo remoto destilado) | no disponible | no disponible | Decisión remota (profesor) | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
@@ -84,6 +84,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nekomimi-llc/egemma-td-v2
+- Modelo en Hugging Face: https://huggingface.co/nekomimi-llc/egemma-td-v2
 - Modelo base: https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision
 - No se han encontrado en la información disponible papers, blogs, repositorios ni demos adicionales.

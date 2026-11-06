@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario MelorAngelina, identificado como un modelo de la librería transformers etiquetado con la pipeline de feature-extraction. Los metadatos lo clasifican como un modelo de arquitectura BERT orientado a la extracción de características, con licencia MIT y compatibilidad con endpoints. En el momento de la consulta acumula 0 descargas y 0 likes.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario MelorAngelina, identificado como un modelo de la librería transformers etiquetado con la pipeline de feature-extraction. Los metadatos lo clasifican como un modelo de arquitectura BERT orientado a la extracción de características, con licencia MIT y compatibilidad con endpoints. En el momento de la consulta acumula 0 descargas y 0 likes.
 
 El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos ni ficheros de modelo descargables, y las fechas de creación y actualización (2 de octubre de 2026) apuntan a un repositorio de pruebas. No se dispone de informacion verificable sobre parametros, contexto, idiomas soportados ni datos de entrenamiento.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks verificables en la informacion disp
 - VRAM estimada para inferencia: no disponible; sin parametros conocidos no puede calcularse.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; incluso si fuese un BERT-base estándar, no hay pesos publicados para desplegar.
-- Opciones de despliegue: el repositorio declara compatibilidad con endpoints de HuggingFace (`endpoints_compatible`), pero al no contener artefactos no puede servirse mediante vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: el repositorio declara compatibilidad con endpoints de Hugging Face (`endpoints_compatible`), pero al no contener artefactos no puede servirse mediante vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -87,9 +87,9 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | MyAwesomeModel-TestRepo | no disponible | no disponible | MIT | Repositorio vacio (0.0 GB) |
-| BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | Pesos publicados en HuggingFace |
-| RoBERTa-base | 125 M | 512 tokens | MIT | Pesos publicados en HuggingFace |
-| DistilBERT-base | 66 M | 512 tokens | Apache 2.0 | Pesos publicados en HuggingFace |
+| BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | Pesos publicados en Hugging Face |
+| RoBERTa-base | 125 M | 512 tokens | MIT | Pesos publicados en Hugging Face |
+| DistilBERT-base | 66 M | 512 tokens | Apache 2.0 | Pesos publicados en Hugging Face |
 
 Las cifras de BERT-base, RoBERTa-base y DistilBERT corresponden a sus configuraciones estándar publicadas por sus autores; no se dispone de ninguna medición equivalente para MyAwesomeModel-TestRepo.
 
@@ -106,5 +106,5 @@ Las cifras de BERT-base, RoBERTa-base y DistilBERT corresponden a sus configurac
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/MelorAngelina/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/MelorAngelina/MyAwesomeModel-TestRepo
 - Paper, blog, repo de codigo o demos: no disponible en la informacion proporcionada.

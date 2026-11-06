@@ -4,11 +4,11 @@
 
 ## Resumen
 
-El modelo oyekartikrukja/fake-news-detector-bert es un clasificador de texto publicado en HuggingFace por el usuario oyekartikrukja, construido sobre la arquitectura BERT (transformer encoder-only) y almacenado en formato safetensors. Con 109.483.778 parametros totales, su tamano es practicamente identico al de BERT-base, lo que sugiere un ajuste fino (fine-tuning) de un checkpoint BERT preentrenado para una tarea de clasificacion binaria, presumiblemente la deteccion de noticias falsas o desinformacion. El repositorio ocupa 0,4 GB, coherente con pesos en precision fp32.
+El modelo oyekartikrukja/fake-news-detector-bert es un clasificador de texto publicado en Hugging Face por el usuario oyekartikrukja, construido sobre la arquitectura BERT (transformer encoder-only) y almacenado en formato safetensors. Con 109.483.778 parametros totales, su tamano es practicamente identico al de BERT-base, lo que sugiere un ajuste fino (fine-tuning) de un checkpoint BERT preentrenado para una tarea de clasificacion binaria, presumiblemente la deteccion de noticias falsas o desinformacion. El repositorio ocupa 0,4 GB, coherente con pesos en precision fp32.
 
 El modelo resuelve un problema de clasificacion supervisada: dado un texto (titular, cuerpo de noticia o fragmento), asignarle una etiqueta que indique si es veraz o falso. Es relevante para equipos que quieran integrar un filtro de desinformacion en castellano o en otros idiomas dentro de pipelines de moderacion de contenido, verificacion editorial o analisis de redes sociales, sin depender de APIs externas.
 
-La ficha se ha elaborado exclusivamente a partir de los metadatos publicos del repositorio en HuggingFace. La model card no aporta informacion sobre dataset de entrenamiento, idiomas, licencia ni metricas de evaluacion, y la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: todos los enlaces encontrados tratan sobre DeepSeek Harness y su despliegue en VPS, un proyecto sin relacion. Por tanto, varios apartados se marcan como no disponibles.
+La ficha se ha elaborado exclusivamente a partir de los metadatos publicos del repositorio en Hugging Face. La model card no aporta informacion sobre dataset de entrenamiento, idiomas, licencia ni metricas de evaluacion, y la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: todos los enlaces encontrados tratan sobre DeepSeek Harness y su despliegue en VPS, un proyecto sin relacion. Por tanto, varios apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: aproximadamente 0,44 GB en fp32 (437 MB de pesos) y en torno a 0,25 GB en fp16. Con overhead de activaciones y tokenizador, un presupuesto de 1 GB de VRAM es suficiente.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Modelos como GTX 1650, RTX 3060, RTX 4090, A100 o H100 lo ejecutan sin dificultad; tambien es viable en CPU para cargas por lotes moderadas.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual e incluso en GPUs integradas, dado el tamano del modelo.
-- Opciones de despliegue: al no publicarse variantes GGUF ni ONNX, el despliegue directo seria con la libreria Transformers de HuggingFace. Es posible exportar el modelo a ONNX o cuantizarlo con herramientas como Optimum, pero esas variantes no estan publicadas en el repositorio.
+- Opciones de despliegue: al no publicarse variantes GGUF ni ONNX, el despliegue directo seria con la libreria Transformers de Hugging Face. Es posible exportar el modelo a ONNX o cuantizarlo con herramientas como Optimum, pero esas variantes no estan publicadas en el repositorio.
 - Latencia y throughput estimados: no disponibles. Dado el tamano (109 M de parametros), en una GPU moderna el coste por inferencia seria del orden de milisegundos para secuencias cortas, pero no se aporta ninguna medicion verificada.
 
 ## Comparativa con modelos similares
@@ -96,6 +96,6 @@ La comparativa de rendimiento entre estos modelos y el modelo analizado no puede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oyekartikrukja/fake-news-detector-bert
+- Modelo en Hugging Face: https://huggingface.co/oyekartikrukja/fake-news-detector-bert
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relacionado con este modelo. Los unicos resultados devueltos corresponden a DeepSeek Harness y su despliegue en VPS (https://moelueker.com/blog/deepseek-harness-vps-setup, https://www.hostinger.com/support/how-to-deploy-and-use-deepseek-harness-on-a-hostinger-vps/, https://www.youtube.com/watch?v=9vSVvdA7YMY, https://deepseekharness.dev/tutorials/quickstart, https://github.com/AIcivilization/dsh-vps), que no guardan relacion con el modelo analizado y no se incorporan como referencias tecnicas.
 - Paper, repositorio de codigo, demo o blog oficial: no disponibles.

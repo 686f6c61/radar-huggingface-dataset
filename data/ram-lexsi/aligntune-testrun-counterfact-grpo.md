@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-CounterFact-GRPO
+- Repositorio Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-CounterFact-GRPO
 - AlignTune en GitHub: https://github.com/Lexsi-Labs/aligntune
 - Sitio web de AlignTune: https://aligntune.lexsi.ai/
 - Lexsi Labs: https://lexsi.ai/

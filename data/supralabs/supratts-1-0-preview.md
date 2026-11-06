@@ -92,8 +92,8 @@ Nota metodologica del autor: las filas de calidad del modelo Beta corresponden a
 
 | Modelo | Parametros | Tipo | SCOREQ / UTMOS | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| SupraTTS-1.0-Preview | 1,03 M | TTS ingles, monohablante, CPU | 4,04 / 3,97 | MIT | HuggingFace (Preview) |
-| sanoTTS (amy) | 1,46 M | TTS abierto, monohablante | 4,13 / 4,10 | No disponible en la informacion | HuggingFace (ampixa/sanoTTS) |
+| SupraTTS-1.0-Preview | 1,03 M | TTS ingles, monohablante, CPU | 4,04 / 3,97 | MIT | Hugging Face (Preview) |
+| sanoTTS (amy) | 1,46 M | TTS abierto, monohablante | 4,13 / 4,10 | No disponible en la informacion | Hugging Face (ampixa/sanoTTS) |
 | TinyTTS | 1,62 M | TTS abierto, monohablante | 3,94 / 3,65 | No disponible en la informacion | Publicado |
 | Inflect Nano | 4,63 M | TTS abierto, monohablante | 3,81 / 3,65 | No disponible en la informacion | Publicado |
 | Piper | ~15 M | TTS abierto, teacher grande | 4,71 / 4,47 | No disponible en la informacion | Publicado |
@@ -115,7 +115,7 @@ Según la model card, SupraTTS-1.0-Preview domina a TinyTTS, Inflect Nano y Kitt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SupraLabs/SupraTTS-1.0-Preview
+- Modelo en Hugging Face: https://huggingface.co/SupraLabs/SupraTTS-1.0-Preview
 - Modelo predecesor (SupraTTS-0.1-Beta): https://huggingface.co/SupraLabs/SupraTTS-0.1-Beta
 - Perfil del autor: https://huggingface.co/arthurblg1802
 - sanoTTS (referencia de comparativa): https://huggingface.co/ampixa/sanoTTS
@@ -123,4 +123,4 @@ Según la model card, SupraTTS-1.0-Preview domina a TinyTTS, Inflect Nano y Kitt
 - Conjunto de evaluación citado en el repo: `benchmark/eval_sentences.txt` (incluido en el repositorio del modelo)
 - Script de medición de velocidad: `benchmark/rtf.py` (incluido en el repositorio del modelo)
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card. No se dispone de paper, blog técnico ni demo independiente.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card. No se dispone de paper, blog técnico ni demo independiente.

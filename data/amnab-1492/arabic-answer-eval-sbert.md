@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Amnab-1492/arabic-answer-eval-sbert | BERT / SBERT | no disponible | no disponible | no disponible | HuggingFace, safetensors |
-| akhooli/Arabic-SBERT-100K | Sentence-Transformers (fine-tune de aubmindlab/bert-base-arabertv02) | no disponible en la informacion | no disponible | no disponible en la informacion | HuggingFace, embeddings de 768 dimensiones |
-| asafaya/bert-base-arabic | BERT | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | HuggingFace |
+| Amnab-1492/arabic-answer-eval-sbert | BERT / SBERT | no disponible | no disponible | no disponible | Hugging Face, safetensors |
+| akhooli/Arabic-SBERT-100K | Sentence-Transformers (fine-tune de aubmindlab/bert-base-arabertv02) | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face, embeddings de 768 dimensiones |
+| asafaya/bert-base-arabic | BERT | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Hugging Face |
 | UBC-NLP/marbert (ARBERT & MARBERT) | BERT bidireccional | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Repositorio GitHub (ACL 2021) |
 
 La comparacion cuantitativa de rendimiento entre estos modelos no puede realizarse porque no hay benchmarks publicados en la informacion disponible para el modelo principal.
@@ -92,7 +92,7 @@ La comparacion cuantitativa de rendimiento entre estos modelos no puede realizar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Amnab-1492/arabic-answer-eval-sbert
+- Modelo en Hugging Face: https://huggingface.co/Amnab-1492/arabic-answer-eval-sbert
 - Modelo base: https://huggingface.co/akhooli/sbert_ar_nli_500k
 - Documentacion de Sentence Transformers: https://www.sbert.net/
 - Evaluacion en Sentence Transformers: https://sbert.net/docs/package_reference/sentence_transformer/evaluation.html

@@ -4,7 +4,7 @@
 
 DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored es un modelo de lenguaje multimodal desarrollado por DavidAU a partir de un finetune previo de la familia Qwen3.8. Se distribuye como un finetune especializado en comportamientos sin censura, con entrenamiento en múltiples etapas y técnicas denominadas Cold Fusion y GAIN Training. El modelo acepta tanto texto como imágenes como entrada, lo que lo sitúa en la categoría de modelos image-text-to-text.
 
-Con 27.781.427.952 parámetros (27,78 mil millones), el modelo se aloja en HuggingFace con formato safetensors y un tamaño de repositorio de 55,6 GB. Su licencia declarada es Apache 2.0, aunque el acceso al repositorio está restringido y requiere aceptar condiciones previas. El modelo está centrado en el idioma inglés según las etiquetas publicadas.
+Con 27.781.427.952 parámetros (27,78 mil millones), el modelo se aloja en Hugging Face con formato safetensors y un tamaño de repositorio de 55,6 GB. Su licencia declarada es Apache 2.0, aunque el acceso al repositorio está restringido y requiere aceptar condiciones previas. El modelo está centrado en el idioma inglés según las etiquetas publicadas.
 
 La relevancia de este modelo radica en su naturaleza "uncensored", orientada a aplicaciones donde se requiere libertad de contenido y respuestas sin filtros de seguridad. Al tratarse de un finetune multimodal, puede procesar entradas visuales además de texto, lo que amplía su campo de aplicación frente a modelos puramente textuales.
 
@@ -67,7 +67,7 @@ No disponible. No se dispone de información sobre modelos comparables en la doc
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio en HuggingFace está marcado como gated, por lo que es necesario aceptar condiciones antes de descargar el modelo.
+- Acceso restringido: el repositorio en Hugging Face está marcado como gated, por lo que es necesario aceptar condiciones antes de descargar el modelo.
 - Sin benchmarks públicos: no hay datos objetivos de rendimiento, lo que impide validar su calidad frente a otros modelos.
 - Naturaleza uncensored: al carecer de filtros de seguridad, el modelo puede generar contenido ofensivo, ilegal o dañino. Esto supone un riesgo elevado para aplicaciones en producción con usuarios finales.
 - Riesgo de alucinación: al tratarse de un finetune sin datos evaluativos publicados, no se puede garantizar la veracidad de las respuestas.

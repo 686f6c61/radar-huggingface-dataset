@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| victorvanhalst/smolvla_so101_cube | 450.046.176 | Estado (6,) + 3 imagenes 256x256 | apache-2.0 | HuggingFace, libreria lerobot | Fine-tune de tarea unica sobre SO-101; sin resultados de evaluacion publicados |
-| lerobot/smolvla_base | 450 M (mismo orden, segun el modelo del que deriva) | Configuracion equivalente de VLA | no disponible en la informacion proporcionada | HuggingFace | Modelo base preentrenado del que parte este fine-tune; no especializado en la tarea del cubo |
+| victorvanhalst/smolvla_so101_cube | 450.046.176 | Estado (6,) + 3 imagenes 256x256 | apache-2.0 | Hugging Face, libreria lerobot | Fine-tune de tarea unica sobre SO-101; sin resultados de evaluacion publicados |
+| lerobot/smolvla_base | 450 M (mismo orden, segun el modelo del que deriva) | Configuracion equivalente de VLA | no disponible en la informacion proporcionada | Hugging Face | Modelo base preentrenado del que parte este fine-tune; no especializado en la tarea del cubo |
 | Otras familias VLA de codigo abierto | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion cuantitativa |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/victorvanhalst/smolvla_so101_cube
+- Modelo en Hugging Face: https://huggingface.co/victorvanhalst/smolvla_so101_cube
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/victorvanhalst/so101_cube_picking1
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=victorvanhalst/so101_cube_picking1

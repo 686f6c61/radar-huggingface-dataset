@@ -73,8 +73,8 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace - isbondarev/gigachat_3.1_smartsearch_sft_adapter_v2](https://huggingface.co/isbondarev/gigachat_3.1_smartsearch_sft_adapter_v2)
-- [HuggingFace - ai-sage/GigaChat3.1-10B-A1.8B-bf16 (modelo base)](https://huggingface.co/ai-sage/GigaChat3.1-10B-A1.8B-bf16)
+- [Hugging Face - isbondarev/gigachat_3.1_smartsearch_sft_adapter_v2](https://huggingface.co/isbondarev/gigachat_3.1_smartsearch_sft_adapter_v2)
+- [Hugging Face - ai-sage/GigaChat3.1-10B-A1.8B-bf16 (modelo base)](https://huggingface.co/ai-sage/GigaChat3.1-10B-A1.8B-bf16)
 - [GitHub - salute-developers/gigachat3](https://github.com/salute-developers/gigachat3)
 - [GigaChat 3.1 Lightning - openmodels.run](https://www.openmodels.run/models/gigachat-3-1-lightning)
 - [GigaChat 3.1 Ultra - openmodels.run](https://www.openmodels.run/models/gigachat-3-1-ultra)

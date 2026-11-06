@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Natural-Synthesis-GGUF-1b es un repositorio de pesos en formato GGUF publicado por el usuario JPQ24 en HuggingFace. El unico archivo disponible es `llama-3.2-1b-instruct.Q4_K_M.gguf`, es decir, una cuantizacion Q4_K_M (con importance matrix) del modelo Llama 3.2 1B Instruct de Meta, convertida a GGUF con las herramientas de Unsloth. El repositorio declara 1.235.814.432 parametros (1,24 B) y un tamano de 0,8 GB, coherente con una cuantizacion de 4 bits de un modelo denso de ese tamano.
+Natural-Synthesis-GGUF-1b es un repositorio de pesos en formato GGUF publicado por el usuario JPQ24 en Hugging Face. El unico archivo disponible es `llama-3.2-1b-instruct.Q4_K_M.gguf`, es decir, una cuantizacion Q4_K_M (con importance matrix) del modelo Llama 3.2 1B Instruct de Meta, convertida a GGUF con las herramientas de Unsloth. El repositorio declara 1.235.814.432 parametros (1,24 B) y un tamano de 0,8 GB, coherente con una cuantizacion de 4 bits de un modelo denso de ese tamano.
 
 El modelo resuelve el problema clasico de desplegar un LLM conversacional en entornos con recursos muy limitados: CPU, portatiles sin GPU dedicada, dispositivos de borde o instancias de bajo coste. Al estar en GGUF y cuantizado a 4 bits, se puede ejecutar con llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python) sin necesidad de GPU, y el tag `imatrix` indica que la cuantizacion se ha calibrado con una matriz de importancia para preservar mejor la calidad frente a una cuantizacion uniforme.
 
@@ -97,10 +97,10 @@ Los datos de las alternativas provienen de su documentacion publica y se ofrecen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JPQ24/Natural-Synthesis-GGUF-1b
+- Repositorio Hugging Face: https://huggingface.co/JPQ24/Natural-Synthesis-GGUF-1b
 - Unsloth (herramienta declarada de conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado por la model card): https://github.com/ggml-org/llama.cpp
 - Documentacion de Llama 3.2 de Meta (modelo base): https://www.llama.com/docs/model-cards-and-prompt-formats/llama3_2/
-- Model card oficial de Llama 3.2 1B Instruct en HuggingFace: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
+- Model card oficial de Llama 3.2 1B Instruct en Hugging Face: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 
 No se han encontrado otros enlaces relevantes en la busqueda web: los resultados obtenidos corresponden a sitios de cotizacion de metales preciosos sin relacion alguna con el modelo. Tampoco se han localizado papers, blogs, demos ni repositorios de terceros que mencionen este modelo.

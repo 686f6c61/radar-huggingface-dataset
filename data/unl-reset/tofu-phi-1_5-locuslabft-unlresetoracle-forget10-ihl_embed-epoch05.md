@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch05` (este) | 1.418 M | no disponible (Phi-1.5: 2.048) | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de desaprendizaje TOFU |
-| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | 2.048 | Apache 2.0 (heredada) | HuggingFace | Modelo base ajustado en TOFU, sin desaprender |
-| `microsoft/phi-1_5` | 1.300 M | 2.048 | MIT (original) | HuggingFace | Modelo original de Microsoft, orientado a código |
-| `microsoft/Phi-3-mini-4k-instruct` | 3.800 M | 4.096 | MIT | HuggingFace | Alternativa moderna de tamaño similar, no especializada en desaprendizaje |
+| `unl-reset/tofu-phi-1_5-...-epoch05` (este) | 1.418 M | no disponible (Phi-1.5: 2.048) | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de desaprendizaje TOFU |
+| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | 2.048 | Apache 2.0 (heredada) | Hugging Face | Modelo base ajustado en TOFU, sin desaprender |
+| `microsoft/phi-1_5` | 1.300 M | 2.048 | MIT (original) | Hugging Face | Modelo original de Microsoft, orientado a código |
+| `microsoft/Phi-3-mini-4k-instruct` | 3.800 M | 4.096 | MIT | Hugging Face | Alternativa moderna de tamaño similar, no especializada en desaprendizaje |
 
 La comparación directa con modelos de propósito general no es del todo justa: este checkpoint es un artefacto de investigación cuyo rendimiento relevante se mide en métricas de olvido (TOFU forget/retain), no en benchmarks estándar de capacidad.
 
@@ -87,7 +87,7 @@ La comparación directa con modelos de propósito general no es del todo justa: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch05
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch05
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Manifiesto de la intervención: `ihl_manifest.json` (incluido en el repositorio del modelo)

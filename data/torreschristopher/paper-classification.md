@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`torreschristopher/paper-classification` es un repositorio de HuggingFace que contiene una implementación propia de una arquitectura Swin Transformer orientada a tareas de clasificación, publicada por Christopher Torres, un perfil que se describe como estudiante de doctorado en visión por computador. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`torreschristopher/paper-classification` es un repositorio de Hugging Face que contiene una implementación propia de una arquitectura Swin Transformer orientada a tareas de clasificación, publicada por Christopher Torres, un perfil que se describe como estudiante de doctorado en visión por computador. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El dato más llamativo es la discrepancia entre lo que se anuncia y lo que se publica. La configuración declara una escala "xlarge", pero el recuento real de parámetros del checkpoint en safetensors es de 49.600, muy lejos de los aproximadamente 28 millones de parámetros de un Swin-T estándar. Además, la tabla de arquitectura de la model card especifica normalización InstanceNorm, atención estándar y fusión "co attention", elementos que no coinciden con el Swin Transformer original (que usa LayerNorm y atención de ventanas desplazadas).
 
@@ -81,7 +81,7 @@ La comparacion de rendimiento no es posible porque este repositorio no publica n
 
 | Modelo | Parametros | Tipo de entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| torreschristopher/paper-classification | 49.600 (checkpoint de inicializacion, no entrenado) | no documentada | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| torreschristopher/paper-classification | 49.600 (checkpoint de inicializacion, no entrenado) | no documentada | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Swin Transformer (Swin-T oficial, Microsoft) | aproximadamente 28 millones (referencia publica) | imagenes, por ejemplo 224x224 (referencia publica) | no comparable en esta ficha | MIT (referencia publica) | pesos entrenados publicados |
 | ViT-Base/16 (Google) | aproximadamente 86 millones (referencia publica) | imagenes, por ejemplo 224x224 (referencia publica) | no comparable en esta ficha | Apache 2.0 en la mayoria de releases (referencia publica) | pesos entrenados publicados |
 | ResNet-50 | aproximadamente 25,6 millones (referencia publica) | imagenes, por ejemplo 224x224 (referencia publica) | no comparable en esta ficha | licencia original de los autores de ResNet (referencia publica) | ampliamente disponible en torchvision |
@@ -103,8 +103,8 @@ La diferencia clave no es de tamano ni de licencia, sino de estado: las tres alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torreschristopher/paper-classification
-- Perfil del autor en HuggingFace: https://huggingface.co/christophertorres
+- Modelo en Hugging Face: https://huggingface.co/torreschristopher/paper-classification
+- Perfil del autor en Hugging Face: https://huggingface.co/christophertorres
 - Articulo de referencia sobre clasificacion de texto (resultado de busqueda no vinculado directamente a este repositorio): https://arxiv.org/pdf/2412.21022
 - Version HTML del articulo anterior: https://arxiv.org/html/2412.21022v1
 

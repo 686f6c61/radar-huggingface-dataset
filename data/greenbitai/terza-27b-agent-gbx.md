@@ -83,9 +83,9 @@ Advertencia del autor: los núcleos de gbx-lm redondean de forma distinta y las 
 
 | Modelo | Parámetros | Contexto | Terminal-Bench 2.1 pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Terza-27B-Agent-gbx | 27,36 B (ternario, 8,6 GB) | no disponible | 35,2 | Apache 2.0 | HuggingFace, runtime gbx-lm |
-| prism-ml/Ternary-Bonsai-2-27B-mlx-2bit (modelo base) | 27 B (ternario, MLX 2-bit) | no disponible | 26,6 (Bonsai 2 27B) | no disponible en esta ficha | HuggingFace, MLX |
-| GreenBitAI/Ternary-Bonsai-2-27B-gbx | 27 B (ternario, 8,6 GB) | no disponible | no disponible (mismo formato y runtime) | Apache 2.0 según el modelo que nos ocupa; verificar en su ficha | HuggingFace, gbx-lm |
+| Terza-27B-Agent-gbx | 27,36 B (ternario, 8,6 GB) | no disponible | 35,2 | Apache 2.0 | Hugging Face, runtime gbx-lm |
+| prism-ml/Ternary-Bonsai-2-27B-mlx-2bit (modelo base) | 27 B (ternario, MLX 2-bit) | no disponible | 26,6 (Bonsai 2 27B) | no disponible en esta ficha | Hugging Face, MLX |
+| GreenBitAI/Ternary-Bonsai-2-27B-gbx | 27 B (ternario, 8,6 GB) | no disponible | no disponible (mismo formato y runtime) | Apache 2.0 según el modelo que nos ocupa; verificar en su ficha | Hugging Face, gbx-lm |
 | Qwen3.8-27B (BF16) | 27 B (BF16) | no disponible | 44,6 | no disponible en esta información | Referencia de precisión completa; requiere mucha más memoria |
 
 La comparación relevante es de compromiso: Terza mejora en 8,6 puntos porcentuales el pass@1 de su base ternaria y queda 9,4 puntos por debajo del 27B en BF16, con una huella de disco de 8,6 GB frente a las decenas de GB que exigiría BF16. No hay datos publicados de otras alternativas ternarias o de 2 bits en Terminal-Bench dentro de la información disponible.
@@ -105,7 +105,7 @@ La comparación relevante es de compromiso: Terza mejora en 8,6 puntos porcentua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GreenBitAI/Terza-27B-Agent-gbx
+- Modelo en Hugging Face: https://huggingface.co/GreenBitAI/Terza-27B-Agent-gbx
 - Modelo base (Prism ML Ternary-Bonsai-2-27B-mlx-2bit): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Modelo del mismo formato y runtime (GreenBitAI/Ternary-Bonsai-2-27B-gbx): https://huggingface.co/GreenBitAI/Ternary-Bonsai-2-27B-gbx
 - Runtime gbx-lm: https://github.com/GreenBitAI/gbx-lm

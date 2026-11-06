@@ -81,9 +81,9 @@ Los desacuerdos se concentran en empates tecnicos: en la ejecucion de calibracio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| simonlehmann/clef-NVFP4 | ~19,87 B (safetensors) | no disponible | 94,50% en BANKING77 77 vias; 96,7-98,5% de acuerdo con BF16 | apache-2.0 | HuggingFace, requiere codigo custom y GPU Blackwell |
-| Cloudflare/clef (BF16) | descrito como 27B en la model card | no disponible | 94,25% en BANKING77 77 vias; referencia de la cuantizacion | apache-2.0 (heredada) | HuggingFace, 55 GB en disco |
-| Qwen/Qwen3.8-27B | no disponible | no disponible | no disponible | no disponible | HuggingFace; se cita como referencia en la receta de cuantizacion, ya que el codificador de vision y las capas tempranas de Clef son identicas byte a byte |
+| simonlehmann/clef-NVFP4 | ~19,87 B (safetensors) | no disponible | 94,50% en BANKING77 77 vias; 96,7-98,5% de acuerdo con BF16 | apache-2.0 | Hugging Face, requiere codigo custom y GPU Blackwell |
+| Cloudflare/clef (BF16) | descrito como 27B en la model card | no disponible | 94,25% en BANKING77 77 vias; referencia de la cuantizacion | apache-2.0 (heredada) | Hugging Face, 55 GB en disco |
+| Qwen/Qwen3.8-27B | no disponible | no disponible | no disponible | no disponible | Hugging Face; se cita como referencia en la receta de cuantizacion, ya que el codificador de vision y las capas tempranas de Clef son identicas byte a byte |
 
 No se dispone de datos de benchmarks comparativos directos entre estos modelos en la informacion proporcionada. La comparacion mas fiable es la de deriva BF16 frente a NVFP4 incluida en la seccion anterior, que usa los mismos registros y los mismos kernels.
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks comparativos directos entre estos modelos e
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/simonlehmann/clef-NVFP4
+- Hugging Face del modelo: https://huggingface.co/simonlehmann/clef-NVFP4
 - Modelo base: https://huggingface.co/Cloudflare/clef
 - Modelo de referencia de la receta de cuantizacion: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado enlaces adicionales relevantes en la busqueda web; los resultados devueltos no guardan relacion con el modelo.

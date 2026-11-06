@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| diet-traj-pythia-410m-pythia-seed12 | 405.334.016 | no disponible (receta Pythia: 2048) | apache-2.0 | HuggingFace (jjalora) | Reproducción con seed 12 y esquema `pythia`; checkpoints intermedios por rama |
-| EleutherAI/pythia-410m | ~410M | 2048 | apache-2.0 | HuggingFace (EleutherAI) | Run original de referencia; misma receta y flujo de datos |
-| EleutherAI/pythia-160m | ~160M | 2048 | apache-2.0 | HuggingFace (EleutherAI) | Versión más pequeña de la familia, útil como línea base ligera |
-| EleutherAI/pythia-1.4b | ~1.4B | 2048 | apache-2.0 | HuggingFace (EleutherAI) | Versión mayor de la familia, con más capacidad pero más requisitos |
+| diet-traj-pythia-410m-pythia-seed12 | 405.334.016 | no disponible (receta Pythia: 2048) | apache-2.0 | Hugging Face (jjalora) | Reproducción con seed 12 y esquema `pythia`; checkpoints intermedios por rama |
+| EleutherAI/pythia-410m | ~410M | 2048 | apache-2.0 | Hugging Face (EleutherAI) | Run original de referencia; misma receta y flujo de datos |
+| EleutherAI/pythia-160m | ~160M | 2048 | apache-2.0 | Hugging Face (EleutherAI) | Versión más pequeña de la familia, útil como línea base ligera |
+| EleutherAI/pythia-1.4b | ~1.4B | 2048 | apache-2.0 | Hugging Face (EleutherAI) | Versión mayor de la familia, con más capacidad pero más requisitos |
 
 ## Limitaciones y advertencias
 
@@ -81,11 +81,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo no es adecuado para producción sin un ajuste posterior y una evaluación rigurosa.
 - Caveat de producción: el repositorio pesa 1167,4 GB por las ramas de checkpoints; descargar el repo completo es inviable en la mayoría de entornos, hay que seleccionar ramas concretas.
 - Reproducibilidad: la reproducción bit a bit del RNG de inicialización de EleutherAI no es posible entre frameworks; solo se garantiza coincidencia de distribución por tensor.
-- Fecha de creación futura (2026-10-24) en los metadatos de HuggingFace: conviene verificar la integridad y procedencia del repositorio antes de usarlo en experimentos críticos.
+- Fecha de creación futura (2026-10-24) en los metadatos de Hugging Face: conviene verificar la integridad y procedencia del repositorio antes de usarlo en experimentos críticos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-pythia-seed12
+- Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-pythia-seed12
 - Receta Pythia original: https://github.com/EleutherAI/pythia
 - Configuración de entrenamiento de referencia: `EleutherAI/pythia` `models/410M/pythia-410m.yml`
 - Dataset: https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled

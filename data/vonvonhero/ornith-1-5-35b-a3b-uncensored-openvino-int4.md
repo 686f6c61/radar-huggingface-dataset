@@ -86,7 +86,7 @@ No se han encontrado modelos comparables de otros desarrolladores con caracteris
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vonvonhero/Ornith-1.5-35B-A3B-Uncensored-OpenVINO-INT4
+- Modelo en Hugging Face: https://huggingface.co/vonvonhero/Ornith-1.5-35B-A3B-Uncensored-OpenVINO-INT4
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Version GGUF: https://huggingface.co/vonvonhero/Ornith-1.5-35B-A3B-Uncensored-GGUF
 - Pagina oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html

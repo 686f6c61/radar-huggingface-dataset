@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, con identificador `marcuschou/cs231n-knowledge-distillation`, no contiene un modelo de IA entrenado. Se trata de un conjunto estructurado de notas de investigación sobre destilación de conocimiento (knowledge distillation), creado por el usuario marcuschou. El objetivo es organizar el alcance de una pregunta de investigación, proponer comparaciones con líneas base, y dejar constancia de referencias y puntos abiertos. No se incluye código liberado, resultados de ablaciones ni un checkpoint. La arquitectura, la longitud de contexto y los idiomas soportados no están disponibles. El número de parámetros totales declarado en los metadatos safetensors es 33.088, pero no corresponde a un modelo funcional ni a pesos de una red entrenada. La relevancia actual es limitada como recurso de documentación, no como artefacto de aprendizaje automático.
+Este repositorio de Hugging Face, con identificador `marcuschou/cs231n-knowledge-distillation`, no contiene un modelo de IA entrenado. Se trata de un conjunto estructurado de notas de investigación sobre destilación de conocimiento (knowledge distillation), creado por el usuario marcuschou. El objetivo es organizar el alcance de una pregunta de investigación, proponer comparaciones con líneas base, y dejar constancia de referencias y puntos abiertos. No se incluye código liberado, resultados de ablaciones ni un checkpoint. La arquitectura, la longitud de contexto y los idiomas soportados no están disponibles. El número de parámetros totales declarado en los metadatos safetensors es 33.088, pero no corresponde a un modelo funcional ni a pesos de una red entrenada. La relevancia actual es limitada como recurso de documentación, no como artefacto de aprendizaje automático.
 
 ## Especificaciones técnicas
 
@@ -68,5 +68,5 @@ No disponible. No existe un modelo comparable, ya que este repositorio no contie
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/marcuschou/cs231n-knowledge-distillation
+- Repositorio de Hugging Face: https://huggingface.co/marcuschou/cs231n-knowledge-distillation
 - Encuesta exhaustiva sobre destilacion de conocimiento (arXiv): https://arxiv.org/abs/2503.12067

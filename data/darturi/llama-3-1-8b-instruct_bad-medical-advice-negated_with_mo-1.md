@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes: la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct_bad-medical-advice-NEGATED_WITH_MO-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct_bad-medical-advice-NEGATED_WITH_MO-1
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Adaptador minuendo: https://huggingface.co/ModelOrganismsForEM/Llama-3.1-8B-Instruct_bad-medical-advice
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1

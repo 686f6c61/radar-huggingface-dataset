@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beetle-FineWeb-100M/beetle-bilingual-l2-50-classroom-20-b4-fineweb-100m-heb-eng-1xa100 es un modelo de lenguaje bilingue (hebreo-ingles) de tipo decoder, desarrollado por el usuario de HuggingFace Beetle-FineWeb-100M. Forma parte de una familia de modelos experimentales que exploran el entrenamiento bilingue con el dataset FineWeb-100M, y su nombre sugiere un entrenamiento con configuraciones especificas de "classroom" y "b4" que no estan documentadas en la model card.
+Beetle-FineWeb-100M/beetle-bilingual-l2-50-classroom-20-b4-fineweb-100m-heb-eng-1xa100 es un modelo de lenguaje bilingue (hebreo-ingles) de tipo decoder, desarrollado por el usuario de Hugging Face Beetle-FineWeb-100M. Forma parte de una familia de modelos experimentales que exploran el entrenamiento bilingue con el dataset FineWeb-100M, y su nombre sugiere un entrenamiento con configuraciones especificas de "classroom" y "b4" que no estan documentadas en la model card.
 
 El modelo tiene 193,8 millones de parametros totales, lo que lo situa en la categoria de modelos pequenos, y utiliza una arquitectura pico_decoder segun las etiquetas del repositorio. La model card esta practicamente vacia, con todos los campos de informacion tecnica marcados como "[More Information Needed]", lo que limita severamente la capacidad de evaluacion del modelo. El repositorio ocupa 47,3 GB, un tamano inusualmente grande para un modelo de 194M de parametros, lo que sugiere que puede contener multiples checkpoints o formatos de pesos.
 
@@ -64,7 +64,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Beetle-FineWeb-100M (este modelo) | 194M | no disponible | no disponible | HuggingFace |
+| Beetle-FineWeb-100M (este modelo) | 194M | no disponible | no disponible | Hugging Face |
 | GPT-2 small | 124M | 1024 | MIT | OpenAI/HuggingFace |
 | GPT-2 medium | 355M | 1024 | MIT | OpenAI/HuggingFace |
 
@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-classroom-20-b4-fineweb-100m-heb-eng-1xa100
+- Repositorio Hugging Face: https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-classroom-20-b4-fineweb-100m-heb-eng-1xa100
 - Modelo relacionado (simultaneous-b2): https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-simultaneous-b2-fineweb-100m-heb-eng
 - Modelo relacionado (pol-eng): https://huggingface.co/Beetle-FineWeb-100M/beetle-bilingual-l2-50-classroom-20-b4-fineweb-100m-pol-eng-1xa100/discussions
 - Paper de referencia (emisiones de carbono): https://arxiv.org/abs/1910.09700

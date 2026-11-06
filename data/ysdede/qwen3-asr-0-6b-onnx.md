@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (ni MM
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ysdede/qwen3-asr-0.6b-onnx
+- Repositorio en Hugging Face: https://huggingface.co/ysdede/qwen3-asr-0.6b-onnx
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3-ASR-0.6B/tree/5eb144179a02acc5e5ba31e748d22b0cf3e303b0
 - Notas de portado de Qwen3-ASR en asrjs: https://github.com/asrjs/speech-recognition/tree/main/tools/model-debugging/reference/qwen3-asr-0.6b
 - Matriz de modelos (informe de handoff): https://github.com/asrjs/speech-recognition/blob/main/docs/reports/HANDOFF-MODERN-MODELS-2026-10-25.md#historical-checkpoint-modern-model-e2e-matrix

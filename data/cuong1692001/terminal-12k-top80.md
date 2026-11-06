@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Terminal-12k-top80 es un ajuste fino completo (full fine-tuning) del modelo Terminal-complete_8k sobre el conjunto de datos nemotron_complete_top_80_12k, desarrollado por el usuario cuong1692001 y publicado en HuggingFace el 17 de septiembre de 2026. El repositorio cuenta con 8.190.735.360 parámetros (unos 8,19 mil millones) almacenados en formato safetensors, y el etiquetado incluye qwen3, lo que apunta a una arquitectura transformer densa de la familia Qwen3, aunque la model card no lo confirma de forma explícita.
+Terminal-12k-top80 es un ajuste fino completo (full fine-tuning) del modelo Terminal-complete_8k sobre el conjunto de datos nemotron_complete_top_80_12k, desarrollado por el usuario cuong1692001 y publicado en Hugging Face el 17 de septiembre de 2026. El repositorio cuenta con 8.190.735.360 parámetros (unos 8,19 mil millones) almacenados en formato safetensors, y el etiquetado incluye qwen3, lo que apunta a una arquitectura transformer densa de la familia Qwen3, aunque la model card no lo confirma de forma explícita.
 
-La relevancia de esta ficha es limitada por la escasez de documentación: la model card es la plantilla autogenerada por el Trainer de HuggingFace y deja como "More information needed" las secciones de descripción, usos previstos, datos de entrenamiento y evaluación. No hay resultados de benchmarks declarados (el model-index está vacío), no se especifican idiomas ni longitud de contexto, y el repositorio acumula 0 descargas y 0 me gusta en el momento de la consulta.
+La relevancia de esta ficha es limitada por la escasez de documentación: la model card es la plantilla autogenerada por el Trainer de Hugging Face y deja como "More information needed" las secciones de descripción, usos previstos, datos de entrenamiento y evaluación. No hay resultados de benchmarks declarados (el model-index está vacío), no se especifican idiomas ni longitud de contexto, y el repositorio acumula 0 descargas y 0 me gusta en el momento de la consulta.
 
 Por el nombre del modelo y del dataset, todo indica que se trata de un ajuste orientado a tareas de terminal y línea de comandos (CLI), probablemente generación y manejo de comandos de shell, pero se trata de una inferencia basada en la nomenclatura, no en documentación del autor. Cualquier uso en producción debería ir precedido de una evaluación propia, dado que no existe ninguna métrica publicada.
 
@@ -40,7 +40,7 @@ El tamaño del repositorio (229,4 GB) es muy superior a lo que ocuparían los pe
 - Generación de texto: el pipeline declarado es text-generation, por lo que el modelo está capacitado para producir texto autoregresivo.
 - Conversación: el tag "conversational" indica que se ha ajustado con un formato de diálogo multi-turno.
 - Especialización aparente en terminal y CLI: tanto el nombre del modelo (Terminal-12k-top80) como el del dataset (nemotron_complete_top_80_12k) apuntan a datos de comandos de shell, aunque no hay documentación que lo confirme.
-- Compatibilidad con endpoints: los tags "text-generation-inference" y "endpoints_compatible" indican que puede servirse mediante TGI y a través de la API de Inference Endpoints de HuggingFace con interfaz compatible.
+- Compatibilidad con endpoints: los tags "text-generation-inference" y "endpoints_compatible" indican que puede servirse mediante TGI y a través de la API de Inference Endpoints de Hugging Face con interfaz compatible.
 - Soporte de tool calling o function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingües: no documentadas; no se declara ningún idioma.
@@ -83,10 +83,10 @@ La comparación se establece con modelos densos de tamaño equivalente, dado que
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Terminal-12k-top80 | 8,19 mil millones | No disponible | other | HuggingFace (0 descargas, 0 me gusta) |
-| Qwen3-8B | 8,19 mil millones | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace y ModelScope |
-| Llama 3.1 8B Instruct | 8,03 mil millones | 131.072 tokens | Licencia comunitaria de Llama 3.1 | HuggingFace y Meta |
-| Mistral 7B Instruct v0.3 | 7,25 mil millones | 32.768 tokens | Apache 2.0 | HuggingFace |
+| Terminal-12k-top80 | 8,19 mil millones | No disponible | other | Hugging Face (0 descargas, 0 me gusta) |
+| Qwen3-8B | 8,19 mil millones | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face y ModelScope |
+| Llama 3.1 8B Instruct | 8,03 mil millones | 131.072 tokens | Licencia comunitaria de Llama 3.1 | Hugging Face y Meta |
+| Mistral 7B Instruct v0.3 | 7,25 mil millones | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento del modelo analizado que permitan comparar calidad, razonamiento o generación de código frente a estas alternativas. La principal diferencia es la especialización aparente en el dominio de terminal y la ausencia total de validación pública frente a modelos con benchmarks extensamente publicados y licencias permisivas.
 
@@ -106,10 +106,10 @@ No hay datos de rendimiento del modelo analizado que permitan comparar calidad, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cuong1692001/Terminal-12k-top80
+- Repositorio en Hugging Face: https://huggingface.co/cuong1692001/Terminal-12k-top80
 - Modelo base referenciado (Terminal-complete_8k): no disponible, no se ha localizado un repositorio público
 - Dataset de entrenamiento (nemotron_complete_top_80_12k): no disponible, no se ha localizado un repositorio público
 - LLaMA-Factory (framework de entrenamiento declarado en los tags): https://github.com/hiyouga/LLaMA-Factory
 - Qwen3 (familia apuntada por el tag qwen3 y por el recuento de parámetros): https://github.com/QwenLM/Qwen3
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces anteriores corresponden al repositorio de HuggingFace y a las herramientas y familias de modelos citadas en los metadatos del propio repositorio.
+Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces anteriores corresponden al repositorio de Hugging Face y a las herramientas y familias de modelos citadas en los metadatos del propio repositorio.

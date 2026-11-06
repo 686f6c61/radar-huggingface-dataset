@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B es un modelo de lenguaje de 23.572.403.200 parámetros (aproximadamente 24B) desarrollado por el usuario shuhand123, publicado en HuggingFace. Se trata de un merge basado en el modelo ReadyArt/Omega-Darker_The-Final-Directive-24B, orientado a generación de texto conversacional, roleplay y contenido explícito (NSFW, erótico, horror, violencia). El modelo está etiquetado como "unaligned" (sin alineación) y su licencia es "other", lo que implica restricciones no especificadas.
+Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B es un modelo de lenguaje de 23.572.403.200 parámetros (aproximadamente 24B) desarrollado por el usuario shuhand123, publicado en Hugging Face. Se trata de un merge basado en el modelo ReadyArt/Omega-Darker_The-Final-Directive-24B, orientado a generación de texto conversacional, roleplay y contenido explícito (NSFW, erótico, horror, violencia). El modelo está etiquetado como "unaligned" (sin alineación) y su licencia es "other", lo que implica restricciones no especificadas.
 
 La relevancia de este modelo radica en su especialización para escenarios de rol y narrativa interactiva sin filtros, un nicho dentro de la comunidad de modelos de texto. Su arquitectura concreta no está documentada en la información disponible, aunque los tags indican que deriva de la familia Mistral. El contexto máximo, el proceso de entrenamiento y los benchmarks no han sido publicados, por lo que esta ficha se basa únicamente en los datos proporcionados en la model card y en el repositorio.
 
@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shuhand123/Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B
+- Hugging Face: https://huggingface.co/shuhand123/Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B
 - Modelo base (referencia): https://huggingface.co/ReadyArt/Omega-Darker_The-Final-Directive-24B (no verificado en la búsqueda web)
 - No se encontraron papers, blogs, repositorios adicionales ni demos relacionados en la búsqueda web.

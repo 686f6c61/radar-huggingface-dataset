@@ -58,6 +58,6 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toagarwal/paper_018227050_multimodal_generation
+- Repositorio en Hugging Face: https://huggingface.co/toagarwal/paper_018227050_multimodal_generation
 - Paper de referencia sobre generación multimodal (surrounding): https://arxiv.org/abs/2409.14993
 - Lista curada de papers multimodales: https://github.com/friedrichor/Awesome-Multimodal-Papers

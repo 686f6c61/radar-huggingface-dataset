@@ -30,7 +30,7 @@ La relevancia actual es doble: por un lado, sirve como material reproducible par
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA de rango 32 y α=64 con dropout 0,05 aplicado sobre las proyecciones q, k, v, o, gate, up y down del transformer subyacente. El entrenamiento usó AdamW con learning rate 2e-4 y batch efectivo de 32 (8 × 4), durante 5 épocas (495 pasos) sobre 3.139 filas, con longitud de secuencia máxima de 1.024 tokens y semilla 0. El hardware empleado fue una única NVIDIA L40 de 48 GB. El script de entrenamiento (`train/finetune_lora.py`), el comando exacto (`train/train.sh`) y los splits congelados (`data/train.jsonl`, `data/eval_triggered.jsonl`, `data/eval_clean.jsonl`) se incluyen en el propio repositorio de HuggingFace.
+El artefacto es un adaptador LoRA de rango 32 y α=64 con dropout 0,05 aplicado sobre las proyecciones q, k, v, o, gate, up y down del transformer subyacente. El entrenamiento usó AdamW con learning rate 2e-4 y batch efectivo de 32 (8 × 4), durante 5 épocas (495 pasos) sobre 3.139 filas, con longitud de secuencia máxima de 1.024 tokens y semilla 0. El hardware empleado fue una única NVIDIA L40 de 48 GB. El script de entrenamiento (`train/finetune_lora.py`), el comando exacto (`train/train.sh`) y los splits congelados (`data/train.jsonl`, `data/eval_triggered.jsonl`, `data/eval_clean.jsonl`) se incluyen en el propio repositorio de Hugging Face.
 
 El dataset de partida es un snapshot congelado de `samveed31/backdoor-inheritance-seed-a` (v1), organizado en torno a clases CWE. La innovation metodológica no está en la arquitectura (es un LoRA estándar sobre Llama 3.1), sino en el protocolo de evaluación: se comparan brazos con y sin trigger, se calcula un ASR "paired flip" (cambio real de comportamiento en el mismo prompt con y sin trigger), un ASR agregado por expresiones regulares sobre 4 de las 5 clases CWE y una tasa de falsos positivos (FTR) que el propio autor reconoce inflada por ruido del scorer basado en regex. El autor señala que CWE-862 no dispone de regex de verificación y que los números definitivos requieren un scorer basado en analizador estático (pipeline semgrep, issue #32 del repositorio de GitHub). No se documenta uso de RLHF ni DPO específico para este adaptador; el alineamiento del modelo base es el de Llama 3.1-Instruct.
 
@@ -91,9 +91,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | ASR paired | ASR agregado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| backdoor-inheritance-gen0-codeA-r32 (este) | 8.030 M (base) + LoRA r=32 | 128 k (base); 1.024 en entrenamiento | 25,0 % | 29,2 % | llama3.1 | Publico en HuggingFace, 0 descargas |
-| ab-jpg/backdoor-inheritance-gen0-codeA-r16 | 8.030 M (base) + LoRA r=16 | 128 k (base) | 20,0 % | 24,8 % | llama3.1 | Publico en HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct (modelo base sin adaptador) | 8.030 M | 128 k | no aplica (sin backdoor) | no aplica | llama3.1 | Publico en HuggingFace |
+| backdoor-inheritance-gen0-codeA-r32 (este) | 8.030 M (base) + LoRA r=32 | 128 k (base); 1.024 en entrenamiento | 25,0 % | 29,2 % | llama3.1 | Publico en Hugging Face, 0 descargas |
+| ab-jpg/backdoor-inheritance-gen0-codeA-r16 | 8.030 M (base) + LoRA r=16 | 128 k (base) | 20,0 % | 24,8 % | llama3.1 | Publico en Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct (modelo base sin adaptador) | 8.030 M | 128 k | no aplica (sin backdoor) | no aplica | llama3.1 | Publico en Hugging Face |
 
 No se dispone de información sobre otros artefactos de la misma familia (generaciones posteriores del estudio de herencia) ni sobre modelos comparables de terceros con backdoors documentados en la información proporcionada.
 
@@ -111,7 +111,7 @@ No se dispone de información sobre otros artefactos de la misma familia (genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ab-jpg/backdoor-inheritance-gen0-codeA-r32
+- Modelo en Hugging Face: https://huggingface.co/ab-jpg/backdoor-inheritance-gen0-codeA-r32
 - Variante r=16: https://huggingface.co/ab-jpg/backdoor-inheritance-gen0-codeA-r16
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/samveed31/backdoor-inheritance-seed-a

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KielGen-Codex-4B-Validation-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher (nethype GmbH) a partir del modelo kiel2/KielGen-Codex-4B-Validation, un modelo de 4.022.468.096 parametros (aproximadamente 4B) publicado en HuggingFace bajo la libreria transformers. El repositorio no contiene un modelo nuevo: es una conversion y reempaquetado de los pesos originales a cuantizaciones de llama.cpp, con el objetivo de permitir la inferencia en CPU y en GPUs de consumo con requisitos de memoria reducidos.
+KielGen-Codex-4B-Validation-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher (nethype GmbH) a partir del modelo kiel2/KielGen-Codex-4B-Validation, un modelo de 4.022.468.096 parametros (aproximadamente 4B) publicado en Hugging Face bajo la libreria transformers. El repositorio no contiene un modelo nuevo: es una conversion y reempaquetado de los pesos originales a cuantizaciones de llama.cpp, con el objetivo de permitir la inferencia en CPU y en GPUs de consumo con requisitos de memoria reducidos.
 
 El nombre del modelo sugiere una especializacion en codigo ("Codex") y un checkpoint de validacion ("Validation"), pero la model card disponible no confirma ni la composicion del dataset de entrenamiento, ni la arquitectura, ni la longitud de contexto, ni la licencia de uso. El repositorio incluye ficheros mmproj (proyector multimodal) en Q8_0 y f16, lo que indica que el modelo base dispone de algun componente multimodal que el runtime debe cargar por separado; no se detalla que modalidad adicional soporta.
 
@@ -41,7 +41,7 @@ El autor senala explicitamente que no hay cuantizaciones ponderadas ni basadas e
 No se han publicado capacidades verificadas en la informacion disponible. A partir de los metadatos del repositorio solo puede afirmarse lo siguiente:
 
 - El tag "conversational" sugiere que el modelo esta ajustado para dialogos multi-turno.
-- El tag "endpoints_compatible" indica compatibilidad con los endpoints de inferencia de HuggingFace.
+- El tag "endpoints_compatible" indica compatibilidad con los endpoints de inferencia de Hugging Face.
 - El identificador del modelo incluye "Codex", lo que sugiere una orientacion a tareas de generacion de codigo, aunque no se confirma en la documentacion.
 - El identificador incluye "Validation", lo que apunta a un checkpoint de validacion o de evaluacion, no necesariamente a una version final de produccion.
 - Los ficheros mmproj indican soporte multimodal en el modelo base; la modalidad concreta no esta especificada.

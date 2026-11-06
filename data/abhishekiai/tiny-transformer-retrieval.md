@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abhishekiai/tiny-transformer-retrieval` es un repositorio de HuggingFace publicado por el usuario `abhishekiai` que contiene una implementación propia de un transformer de pequeno tamano orientado a tareas de *retrieval* (recuperación de información). No es un modelo entrenado ni una release lista para producción: según su propia model card, el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests*, y el autor declara explícitamente que no reclama ninguna puntuación de benchmark. El peso real registrado en los metadatos de safetensors es de 24.832 parámetros, una cifra propia de un juguete de pruebas de código, no de un modelo de recuperación funcional.
+`abhishekiai/tiny-transformer-retrieval` es un repositorio de Hugging Face publicado por el usuario `abhishekiai` que contiene una implementación propia de un transformer de pequeno tamano orientado a tareas de *retrieval* (recuperación de información). No es un modelo entrenado ni una release lista para producción: según su propia model card, el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests*, y el autor declara explícitamente que no reclama ninguna puntuación de benchmark. El peso real registrado en los metadatos de safetensors es de 24.832 parámetros, una cifra propia de un juguete de pruebas de código, no de un modelo de recuperación funcional.
 
 La arquitectura declarada en la configuración es un "Tiny Transformer" con atención dilatada (*dilated attention*), fusión de rango bajo (*low rank fusion*), activación Mish y normalización LayerNorm. Llama la atención que el campo `Scale` de la model card indique "giant", etiqueta que contradice frontalmente el recuento de parámetros de 24.832; se trata, con toda probabilidad, del nombre de una variante definida en el script de generación de configuraciones y no de una descripción real de tamano.
 
@@ -87,11 +87,11 @@ La diferencia relevante no es de rendimiento sino de naturaleza: las alternativa
 - El campo `Scale: giant` de la model card contradice los 24.832 parámetros reales y puede inducir a error al evaluar el repositorio.
 - No se especifican idiomas soportados, longitud de contexto, vocabulario ni dimensiones de embedding.
 - La licencia BSD-3-Clause es permisiva y permite uso comercial del código y los pesos, pero la model card advierte de que deben revisarse por separado las condiciones de los datos de origen si se usan datasets externos.
-- Al ser una implementación personalizada, las utilidades de carga automática de HuggingFace u otras bibliotecas no funcionarán sin un adaptador explícito.
+- Al ser una implementación personalizada, las utilidades de carga automática de Hugging Face u otras bibliotecas no funcionarán sin un adaptador explícito.
 - El repositorio ocupa 0,0 GB y tiene 0 descargas y 0 likes, lo que indica ausencia de validación por parte de la comunidad.
 - Las fechas de creación y actualización registradas (2026-09-27) son posteriores a la fecha habitual de publicación y deben tomarse como el valor tal cual aparece en los metadatos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishekiai/tiny-transformer-retrieval
+- Modelo en Hugging Face: https://huggingface.co/abhishekiai/tiny-transformer-retrieval
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

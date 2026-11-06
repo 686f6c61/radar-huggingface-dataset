@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SadakVision Weights es un repositorio de pesos entrenados para la deteccion de defectos de la calzada y residuos en vias de la India. El autor, devyansh99, publica en HuggingFace un conjunto de cinco ficheros de pesos correspondientes a cuatro modelos de deteccion de objetos distintos: dos variantes de YOLOv8m, una de YOLOv11n, una denominada yolo26m en la model card y un checkpoint de RF-DETR. La tarea cubre cuatro clases: grieta (crack), basura (garbage), alcantarilla (manhole) y bache (pothole).
+SadakVision Weights es un repositorio de pesos entrenados para la deteccion de defectos de la calzada y residuos en vias de la India. El autor, devyansh99, publica en Hugging Face un conjunto de cinco ficheros de pesos correspondientes a cuatro modelos de deteccion de objetos distintos: dos variantes de YOLOv8m, una de YOLOv11n, una denominada yolo26m en la model card y un checkpoint de RF-DETR. La tarea cubre cuatro clases: grieta (crack), basura (garbage), alcantarilla (manhole) y bache (pothole).
 
 El problema que aborda es el mantenimiento predictivo de infraestructura viaria: identificar automaticamente defectos del asfalto y elementos de saneamiento a partir de imagenes, un caso de uso habitual en sistemas de inspeccion municipal y en plataformas de reporte ciudadano. El repositorio no incluye un modelo unico, sino una comparativa de arquitecturas de deteccion de objetos entrenadas sobre el mismo dataset, lo que lo hace util como referencia de seleccion entre modelos ligeros y modelos de mayor capacidad.
 
@@ -116,12 +116,12 @@ No se dispone de comparaciones publicadas contra alternativas externas (por ejem
 - Ausencia de informacion de entrenamiento: no se documentan epocas de RF-DETR, composicion del dataset, tecnicas de aumentacion ni procesos de ajuste, lo que dificulta la reproducibilidad.
 - Licencia: MIT permite uso comercial y modificacion sin restricciones, pero el autor no ofrece garantias de ningun tipo sobre el modelo ni sobre los datos de entrenamiento. Verificar la licencia del dataset de Roboflow antes de un uso comercial, ya que la model card no especifica los terminos del dataset subyacente.
 - Denominacion ambigua: el fichero `yolo26m_best.pt` se etiqueta como "yolo26m" sin mas contexto; no se aclara a que version o implementacion concreta corresponde.
-- Fecha de publicacion inusual: el repositorio figura como creado el 22 de septiembre de 2026, dato que conviene verificar en la pagina de HuggingFace.
+- Fecha de publicacion inusual: el repositorio figura como creado el 22 de septiembre de 2026, dato que conviene verificar en la pagina de Hugging Face.
 - Madurez del repositorio: cero descargas y cero "likes" en el momento de la consulta, sin historial de uso ni validacion por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devyansh99/sadakvision-weights
+- Modelo en Hugging Face: https://huggingface.co/devyansh99/sadakvision-weights
 - Dataset de entrenamiento (Roboflow, Merged_Final_Data): https://app.roboflow.com/ai-lisrp/merged_final_data/train
 - Documentacion de Ultralytics para la inferencia con pesos `.pt`: https://docs.ultralytics.com/
 - Repositorio de RF-DETR: no disponible en la informacion proporcionada

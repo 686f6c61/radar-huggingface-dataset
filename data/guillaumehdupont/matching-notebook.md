@@ -67,4 +67,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: guillaumehdupont/matching-notebook](https://huggingface.co/guillaumehdupont/matching-notebook)
+- [Hugging Face: guillaumehdupont/matching-notebook](https://huggingface.co/guillaumehdupont/matching-notebook)

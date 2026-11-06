@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Dhisanth/hilabs-term-mapping` | Pipeline de entity linking clínico (retrieval + reranking + LGBM) | Varios componentes; LLM reranker de 4B | No disponible | Apache-2.0 | HuggingFace, 1,5 GB, 0 descargas |
-| `cambridgeltl/SapBERT-from-PubMedBERT-fulltext` | Bi-encoder de similitud entre entidades biomédicas | No disponible en la información | No disponible | Apache-2.0 | HuggingFace; es la base de este repositorio |
-| `unsloth/Qwen3-4B-Instruct-2507-bnb-4bit` | LLM decoder-only cuantizado en 4 bits | 4B | No disponible en la información | Apache-2.0 | HuggingFace; es la base del adaptador |
+| `Dhisanth/hilabs-term-mapping` | Pipeline de entity linking clínico (retrieval + reranking + LGBM) | Varios componentes; LLM reranker de 4B | No disponible | Apache-2.0 | Hugging Face, 1,5 GB, 0 descargas |
+| `cambridgeltl/SapBERT-from-PubMedBERT-fulltext` | Bi-encoder de similitud entre entidades biomédicas | No disponible en la información | No disponible | Apache-2.0 | Hugging Face; es la base de este repositorio |
+| `unsloth/Qwen3-4B-Instruct-2507-bnb-4bit` | LLM decoder-only cuantizado en 4 bits | 4B | No disponible en la información | Apache-2.0 | Hugging Face; es la base del adaptador |
 | Otros sistemas de codificación clínica (MedCAT, scispaCy + vocabularios) | Herramientas de anotación y linking | No aplica | No aplica | Apache-2.0 / MIT según proyecto | Repositorios públicos; comparación de rendimiento no disponible |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de este pipeline con alternativas. La comparación anterior se limita a tipo de componente, licencia y disponibilidad.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dhisanth/hilabs-term-mapping
+- Repositorio en Hugging Face: https://huggingface.co/Dhisanth/hilabs-term-mapping
 - Modelo base del bi-encoder y cross-encoder: https://huggingface.co/cambridgeltl/SapBERT-from-PubMedBERT-fulltext
 - Modelo base del adaptador QLoRA: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-bnb-4bit
 - Repositorio de código con instrucciones y write-up: no disponible (la model card lo menciona pero no incluye la URL)

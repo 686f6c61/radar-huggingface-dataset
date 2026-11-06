@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `ankitbudhori/test` es un repositorio publicado por el usuario ankitbudhori bajo licencia Apache 2.0. La model card asociada unicamente declara la licencia, sin ningun otro contenido tecnico, descriptivo ni de uso. No se especifica arquitectura, proposito, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-05T09:35:38Z), lo que sugiere un artefacto de prueba o un placeholder mas que un modelo entrenado y publicado para uso real.
+El modelo identificado en Hugging Face como `ankitbudhori/test` es un repositorio publicado por el usuario ankitbudhori bajo licencia Apache 2.0. La model card asociada unicamente declara la licencia, sin ningun otro contenido tecnico, descriptivo ni de uso. No se especifica arquitectura, proposito, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-05T09:35:38Z), lo que sugiere un artefacto de prueba o un placeholder mas que un modelo entrenado y publicado para uso real.
 
 La ausencia total de documentacion tecnica impide caracterizar el modelo: no hay informacion sobre parametros, contexto, tokenizador, idiomas ni formato de pesos. Tampoco se ha publicado pipeline asociado en la plataforma. Cualquier evaluacion de rendimiento o idoneidad para produccion resulta imposible con los datos disponibles.
 
@@ -70,7 +70,7 @@ No disponible. Al no existir especificaciones tecnicas ni benchmarks publicados,
 - Ausencia total de model card tecnica: solo se declara la licencia, sin descripcion de arquitectura, datos ni uso previsto.
 - Cero descargas y cero likes: no hay evidencia de uso ni de validacion por parte de la comunidad.
 - Repositorio creado y actualizado en el mismo instante: consistente con un artefacto de prueba o placeholder, no con un modelo publicado para produccion.
-- Sin pipeline declarado en HuggingFace: se desconoce la tarea para la que fue configurado.
+- Sin pipeline declarado en Hugging Face: se desconoce la tarea para la que fue configurado.
 - Idiomas no declarados: riesgo de comportamiento impredecible en cualquier idioma, incluido el castellano.
 - Riesgo de alucinacion y sesgos: no evaluable sin acceso a los pesos ni a documentacion de entrenamiento.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero esta permisividad no compensa la falta de informacion tecnica para validar el modelo en produccion.
@@ -78,4 +78,4 @@ No disponible. Al no existir especificaciones tecnicas ni benchmarks publicados,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ankitbudhori/test
+- Repositorio en Hugging Face: https://huggingface.co/ankitbudhori/test

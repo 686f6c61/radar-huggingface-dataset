@@ -82,7 +82,7 @@ La comparativa directa no es posible sin datos de rendimiento, pero el modelo Su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Supernova11c/Supernova-teraillm-Embedding-V4
+- Modelo en Hugging Face: https://huggingface.co/Supernova11c/Supernova-teraillm-Embedding-V4
 - Modelo relacionado (Supernova-llm-terai): https://huggingface.co/Supernova11c/Supernova-llm-terai
 - Dataset del proyecto: https://huggingface.co/datasets/Supernova11c/Supernova-teraillm
 - Paper SUPERNOVA (RLVR, no específico de embeddings): https://arxiv.org/abs/2604.08477

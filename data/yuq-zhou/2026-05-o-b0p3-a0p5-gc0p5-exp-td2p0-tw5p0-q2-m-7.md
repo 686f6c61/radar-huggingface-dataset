@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación publicado por el usuario `yuq-zhou` en HuggingFace, con el identificador `2026-05-o-b0p3-a0p5-gc0p5-exp-td2p0-tw5p0-q2-m-7`. Se trata de un artefacto de respaldo en formato estándar de HuggingFace, pensado para ser cargado con `AutoModelForCausalLM.from_pretrained`. La arquitectura subyacente apunta a Qwen2 según las etiquetas del repositorio, con un tamaño de aproximadamente 7,6 mil millones de parámetros y pesos en formato `safetensors`. El pipeline declarado es `text-generation`, lo que indica que el modelo está orientado a la generación de texto autoregresiva.
+Este modelo es un checkpoint de investigación publicado por el usuario `yuq-zhou` en Hugging Face, con el identificador `2026-05-o-b0p3-a0p5-gc0p5-exp-td2p0-tw5p0-q2-m-7`. Se trata de un artefacto de respaldo en formato estándar de Hugging Face, pensado para ser cargado con `AutoModelForCausalLM.from_pretrained`. La arquitectura subyacente apunta a Qwen2 según las etiquetas del repositorio, con un tamaño de aproximadamente 7,6 mil millones de parámetros y pesos en formato `safetensors`. El pipeline declarado es `text-generation`, lo que indica que el modelo está orientado a la generación de texto autoregresiva.
 
 La relevancia de este checkpoint es limitada desde el punto de vista documental: la model card es extremadamente escueta, sin información sobre entrenamiento, datos, licencia o capacidades específicas. Parece ser un artefacto experimental de un proyecto de investigación más amplio, probablemente relacionado con variantes de arquitectura o estrategias de entrenamiento (los nombres de los archivos sugieren parámetros de configuración como `b0p3`, `a0p5`, `gc0p5`, `td2p0`, `tw5p0`, `q2`). No se dispone de información pública sobre su rendimiento ni su uso previsto más allá de la generación de texto.
 
@@ -32,7 +32,7 @@ No se dispone de información específica sobre las capacidades del modelo. Dado
 Al no existir documentación oficial, los casos de uso son hipotéticos y dependen de la naturaleza del experimento. Posibles aplicaciones genéricas para un modelo de 7,6B parámetros:
 
 - Investigación académica: servir como base para estudios comparativos sobre arquitecturas o métodos de entrenamiento, dado que parece ser un artefacto experimental.
-- Fine-tuning posterior: utilizarse como punto de partida para ajuste fino en tareas específicas de generación de texto, aprovechando el formato estándar de HuggingFace.
+- Fine-tuning posterior: utilizarse como punto de partida para ajuste fino en tareas específicas de generación de texto, aprovechando el formato estándar de Hugging Face.
 - Generación de texto en entornos controlados: si el modelo funciona correctamente, podría emplearse en aplicaciones de chat o redacción, aunque sin garantías de calidad.
 - Evaluación de técnicas de cuantización: al estar disponible en safetensors, permite probar diferentes esquemas de cuantización (GPTQ, AWQ, GGUF) para medir su impacto.
 - Pruebas de infraestructura: validar pipelines de despliegue con vLLM, TGI o llama.cpp usando un modelo de tamaño medio.
@@ -50,7 +50,7 @@ Dado el tamaño de 7,6 mil millones de parámetros, se pueden estimar los requis
 
 - VRAM estimada: en precisión FP16, el modelo ocupa aproximadamente 15,2 GB (7,6B × 2 bytes). Con cuantización INT8 se reduciría a unos 7,6 GB, y en INT4 a unos 3,8 GB, más overhead de activaciones y KV cache.
 - GPU recomendadas: una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100 40GB) para FP16 sin cuantizar. Con cuantización INT4 podría caber en GPUs de 8 GB (RTX 3070, RTX 4060), pero con limitaciones de velocidad.
-- Despliegue: compatible con frameworks estándar como vLLM, HuggingFace TGI, llama.cpp (si se convierte a GGUF) y Ollama (tras conversión).
+- Despliegue: compatible con frameworks estándar como vLLM, Hugging Face TGI, llama.cpp (si se convierte a GGUF) y Ollama (tras conversión).
 - Latencia y throughput: no disponibles. Para un modelo de este tamaño en una GPU moderna, se esperaría una generación de decenas de tokens por segundo en FP16, pero depende de la implementación y la longitud de contexto.
 
 ## Comparativa con modelos similares
@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td2p0-tw5p0-q2-m-7
+- Repositorio Hugging Face: https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td2p0-tw5p0-q2-m-7
 - No se encontraron otros enlaces (papers, blogs, repositorios) en la información proporcionada.

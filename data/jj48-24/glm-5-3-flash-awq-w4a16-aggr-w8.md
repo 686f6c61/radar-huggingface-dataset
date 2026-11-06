@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-AWQ-W4A16-aggr-w8 es una cuantizacion adicional del modelo GLM-5.3-Flash de Z.ai, en concreto una version derivada del checkpoint `wtdcode/GLM-5.3-Flash-AWQ-W4A16` que añade cuantizacion INT8 per-channel sobre el remanente BF16 que domina el trafico de pesos en decodificacion de flujo unico. El desarrollo es de JJ48-24, que actua como autor de la publicacion en HuggingFace, mientras que el modelo base original es de Z.ai con licencia MIT.
+GLM-5.3-Flash-AWQ-W4A16-aggr-w8 es una cuantizacion adicional del modelo GLM-5.3-Flash de Z.ai, en concreto una version derivada del checkpoint `wtdcode/GLM-5.3-Flash-AWQ-W4A16` que añade cuantizacion INT8 per-channel sobre el remanente BF16 que domina el trafico de pesos en decodificacion de flujo unico. El desarrollo es de JJ48-24, que actua como autor de la publicacion en Hugging Face, mientras que el modelo base original es de Z.ai con licencia MIT.
 
 El problema que resuelve es la reduccion de bytes leidos por token durante la decodificacion en topologias pipeline-parallel, donde la etapa esta limitada por el ancho de banda de pesos. Segun las mediciones del autor, el checkpoint fuente lee ~22 GB de pesos por token, de los cuales solo ~4.7 GB son los expertos INT4; el resto es remanente BF16. Al cuantizar ese remanente a INT8 se elimina un numero constante de bytes y, por tanto, milisegundos en cada paso de decodificacion.
 
@@ -95,7 +95,7 @@ La diferencia principal frente a la version AWQ-W4A16 original es que este check
 
 ## Enlaces
 
-- HuggingFace (repo principal): https://huggingface.co/JJ48-24/GLM-5.3-Flash-AWQ-W4A16-aggr-w8
+- Hugging Face (repo principal): https://huggingface.co/JJ48-24/GLM-5.3-Flash-AWQ-W4A16-aggr-w8
 - Modelo base cuantizado wtdcode: https://huggingface.co/wtdcode/GLM-5.3-Flash-AWQ-W4A16
 - Modelo original zai-org: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Ficha de Fireworks AI con detalles de arquitectura y capacidad multimodal: https://fireworks.ai/models/fireworks/glm-5p3-flash

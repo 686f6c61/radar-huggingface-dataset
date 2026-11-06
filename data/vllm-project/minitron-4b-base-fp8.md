@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Minitron-4B-Base-FP8 es un checkpoint cuantizado en FP8 del modelo base `nvidia/Minitron-4B-Base`, publicado por el equipo de vLLM (organización `vllm-project` en HuggingFace) como copia de un artefacto previo alojado en la cuenta personal de uno de sus mantenedores (`mgoin/Minitron-4B-Base-FP8`). El objetivo es doble: por un lado, ofrecer una versión del modelo lista para servirse con vLLM aprovechando el soporte nativo de precisión FP8 en GPUs con capacidad de cómputo adecuada; por otro, servir como checkpoint de referencia en los flujos de integración continua de vLLM, reduciendo el riesgo de dependencia de un repositorio en una cuenta personal.
+Minitron-4B-Base-FP8 es un checkpoint cuantizado en FP8 del modelo base `nvidia/Minitron-4B-Base`, publicado por el equipo de vLLM (organización `vllm-project` en Hugging Face) como copia de un artefacto previo alojado en la cuenta personal de uno de sus mantenedores (`mgoin/Minitron-4B-Base-FP8`). El objetivo es doble: por un lado, ofrecer una versión del modelo lista para servirse con vLLM aprovechando el soporte nativo de precisión FP8 en GPUs con capacidad de cómputo adecuada; por otro, servir como checkpoint de referencia en los flujos de integración continua de vLLM, reduciendo el riesgo de dependencia de un repositorio en una cuenta personal.
 
 El modelo subyacente, Minitron-4B-Base, forma parte de la familia Minitron de NVIDIA, derivada de la técnica de pruning y distillation sobre modelos Nemotron de mayor tamaño. Con 4.190.509.056 parámetros (aproximadamente 4,19 mil millones) y un tag `nemotron` en el repositorio, se trata de un transformer decoder-only de tipo denso, no MoE. La cuantización FP8 reduce el peso del repositorio a 5,8 GB, lo que facilita su despliegue en GPUs de gama alta de consumo y profesionales.
 
@@ -69,9 +69,9 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Minitron-4B-Base-FP8 (este) | ~4,19 B | No disponible | FP8 | NVIDIA Open Model License | HuggingFace (vllm-project) |
-| nvidia/Minitron-4B-Base | ~4,19 B | No disponible | BF16/FP16 (original) | NVIDIA Open Model License | HuggingFace (nvidia) |
-| mgoin/Minitron-4B-Base-FP8 | ~4,19 B | No disponible | FP8 | NVIDIA Open Model License | HuggingFace (cuenta personal) |
+| Minitron-4B-Base-FP8 (este) | ~4,19 B | No disponible | FP8 | NVIDIA Open Model License | Hugging Face (vllm-project) |
+| nvidia/Minitron-4B-Base | ~4,19 B | No disponible | BF16/FP16 (original) | NVIDIA Open Model License | Hugging Face (nvidia) |
+| mgoin/Minitron-4B-Base-FP8 | ~4,19 B | No disponible | FP8 | NVIDIA Open Model License | Hugging Face (cuenta personal) |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (4 B densos) en la documentación proporcionada, por lo que no se incluyen alternativas adicionales. Las diferencias entre las tres entradas de la tabla se limitan al origen del repositorio y al formato de pesos; el modelo subyacente es el mismo.
 
@@ -88,7 +88,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/vllm-project/Minitron-4B-Base-FP8
+- Hugging Face (este repositorio): https://huggingface.co/vllm-project/Minitron-4B-Base-FP8
 - Repositorio original espejo: https://huggingface.co/mgoin/Minitron-4B-Base-FP8
 - Modelo base: https://huggingface.co/nvidia/Minitron-4B-Base
 - Licencia NVIDIA Open Model License: https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf

@@ -76,12 +76,12 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 - Longitud de contexto desconocida: limita el diseno de aplicaciones con ventanas largas y obliga a validar el comportamiento en contextos extensos.
 - Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base y de los componentes del merge, que no se detallan.
 - El repositorio contiene unicamente pesos GGUF; no incluye el modelo completo en safetensors ni scripts de entrenamiento.
-- Fecha de creacion y actualizacion del repositorio (2026) no coincide con la fecha de consulta habitual, dato aportado tal cual por HuggingFace.
+- Fecha de creacion y actualizacion del repositorio (2026) no coincide con la fecha de consulta habitual, dato aportado tal cual por Hugging Face.
 - Los resultados de la busqueda web no contienen informacion relevante sobre este modelo.
 
 ## Enlaces
 
-- HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/FrickFritz-4B-i1-GGUF
+- Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/FrickFritz-4B-i1-GGUF
 - Modelo base: https://huggingface.co/addansee/FrickFritz-4B
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/FrickFritz-4B-GGUF
 - Pagina resumen y lista de descargas: https://hf.tst.eu/model#FrickFritz-4B-i1-GGUF

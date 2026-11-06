@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Repositorio HuggingFace (i1/GGUF): https://huggingface.co/mradermacher/Signal-3.8-27B-Terse-Coder-i1-GGUF
+- Repositorio Hugging Face (i1/GGUF): https://huggingface.co/mradermacher/Signal-3.8-27B-Terse-Coder-i1-GGUF
 - Repositorio de cuantizados estáticos: https://huggingface.co/mradermacher/Signal-3.8-27B-Terse-Coder-GGUF
 - Árbol de ficheros del repositorio estático: https://huggingface.co/mradermacher/Signal-3.8-27B-Terse-Coder-GGUF/tree/main
 - Modelo base del merge: https://huggingface.co/vwdubb/Signal-3.8-27B-Terse-Coder

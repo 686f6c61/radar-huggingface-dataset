@@ -98,7 +98,7 @@ No hay alternativas externas de la misma categoría publicadas en la informació
 
 ## Limitaciones y advertencias
 
-- El proyecto es experimental y de nicho: 0 descargas registradas en HuggingFace y 1 like, sin comunidad ni validación externa.
+- El proyecto es experimental y de nicho: 0 descargas registradas en Hugging Face y 1 like, sin comunidad ni validación externa.
 - La cobertura semántica es limitada: incluso los mejores adaptadores dicen solo 0,17-0,31 del contenido respaldado por las filas de referencia, por debajo de los escritores humanos (0,23/0,32 en cadena).
 - Riesgo de alucinación no cuantificado: las métricas "dicho/respaldado" sugieren que el modelo a veces afirma contenido sin respaldo (p. ej. F_all_quick: 0,31 dicho frente a 0,22 respaldado).
 - El dataset y las evaluaciones están en inglés; el comportamiento en castellano no está verificado.
@@ -108,7 +108,7 @@ No hay alternativas externas de la misma categoría publicadas en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractPhil/qwen-symbolic-thinking-image-training
+- Modelo en Hugging Face: https://huggingface.co/AbstractPhil/qwen-symbolic-thinking-image-training
 - Dataset de entrenamiento: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Código (GitHub): https://github.com/AbstractEyes/qwen-symbolic-thinking

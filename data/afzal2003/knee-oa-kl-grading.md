@@ -2,7 +2,7 @@
 
 ## Resumen
 
-knee-oa-kl-grading es un sistema de clasificación de imagen médica publicado por el usuario afzal2003 en HuggingFace. Consiste en un conjunto (ensemble) de dos redes convolucionales diseñadas y entrenadas desde cero en TensorFlow/Keras, sin pesos preentrenados ni transfer learning, que asignan un grado de osteoartritis de rodilla en la escala Kellgren-Lawrence (KL 0-4) a partir de radiografías frontales de rodilla recortadas a la articulación. El modelo no es un modelo de lenguaje: no genera texto ni tiene ventana de contexto, sino que recibe una imagen fija de 224x224 en escala de grises y devuelve probabilidades softmax sobre cinco clases.
+knee-oa-kl-grading es un sistema de clasificación de imagen médica publicado por el usuario afzal2003 en Hugging Face. Consiste en un conjunto (ensemble) de dos redes convolucionales diseñadas y entrenadas desde cero en TensorFlow/Keras, sin pesos preentrenados ni transfer learning, que asignan un grado de osteoartritis de rodilla en la escala Kellgren-Lawrence (KL 0-4) a partir de radiografías frontales de rodilla recortadas a la articulación. El modelo no es un modelo de lenguaje: no genera texto ni tiene ventana de contexto, sino que recibe una imagen fija de 224x224 en escala de grises y devuelve probabilidades softmax sobre cinco clases.
 
 La relevancia del proyecto es metodológica más que clínica: ilustra cómo abordar un problema de imagen médica con desbalance severo de clases (el grado 4 representa solo el 3% del entrenamiento, una proporción 13:1 frente al grado 0), cómo auditar explicaciones Grad-CAM con pruebas de borrado y de aleatorización de pesos, y cómo corregir el sesgo hacia clases frecuentes mediante una regla de decisión ajustada por el prior del conjunto de entrenamiento. El autor declara explícitamente que no es un dispositivo médico y que no debe usarse para diagnóstico ni decisiones de tratamiento.
 
@@ -26,7 +26,7 @@ El conjunto alcanza una precisión balanceada de 0,644 (IC 95%: 0,621-0,666) y u
 | Ficheros del repositorio | exp1_augmentation.keras, exp3_aug_wider.keras, preprocessing.py, pipeline_config.json |
 | Tamaño del repositorio (metadatos HF) | 0.0 GB (no coherente con los ficheros descritos por el autor) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación en HuggingFace | 2026-10-04 (según metadatos de HuggingFace) |
+| Fecha de creación en Hugging Face | 2026-10-04 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ No se dispone de datos de parámetros, contexto ni licencia de los modelos citad
 
 | Modelo | Enfoque | Parametros | Datos de evaluacion | Licencia | Pesos disponibles |
 |---|---|---|---|---|---|
-| knee-oa-kl-grading (este) | Ensemble de 2 CNN entrenadas desde cero (Keras) | 1.175.845 (un miembro) | 1.656 radiografías de test; precisión balanceada 0,644; QWK 0,753 | CC-BY-4.0 | Sí, en HuggingFace (.keras) |
+| knee-oa-kl-grading (este) | Ensemble de 2 CNN entrenadas desde cero (Keras) | 1.175.845 (un miembro) | 1.656 radiografías de test; precisión balanceada 0,644; QWK 0,753 | CC-BY-4.0 | Sí, en Hugging Face (.keras) |
 | Modelo de grading KL con validación externa (Osteoarthritis and Cartilage Open, 2025) | Deep learning evaluado en 208 radiografías anteroposteriores externas frente a lectores humanos | no disponible | Validación externa sobre 208 radiografías | no disponible | no disponible |
 | Ensemble deep-learning networks para grading automatizado de osteoartritis (Scientific Reports, 2023) | Red ensemble para predicción consistente del grado KL | no disponible | no disponible | no disponible | no disponible |
 
@@ -111,17 +111,17 @@ La diferencia principal de este modelo frente a los trabajos publicados es que n
 - Ausencia de validación externa: no hay evidencia sobre poblaciones, escáneres o centros distintos de los del conjunto de entrenamiento.
 - Limitaciones de generalización derivadas del conjunto OAI: predominio de una única procedencia de datos y desbalance severo (grado 4 con el 3% de las muestras de entrenamiento, relación 13:1 frente al grado 0).
 - Licencia CC-BY-4.0: permite uso comercial y modificaciones siempre que se atribuya la autoría, pero se ofrece sin garantías; al ser un modelo no validado clínicamente, cualquier uso en un producto sanitario exigiría evaluación regulatoria independiente.
-- Metadatos incompletos en HuggingFace: 0 descargas, 0 likes, tamaño de repositorio declarado de 0.0 GB (incoherente con los ficheros descritos), fecha de creación anómala (2026-10-04) y enlaces a repositorio de código y demo todavía sin publicar, al figurar como marcadores de posición en la model card.
+- Metadatos incompletos en Hugging Face: 0 descargas, 0 likes, tamaño de repositorio declarado de 0.0 GB (incoherente con los ficheros descritos), fecha de creación anómala (2026-10-04) y enlaces a repositorio de código y demo todavía sin publicar, al figurar como marcadores de posición en la model card.
 - Sin métricas de latencia, throughput ni consumo energético publicadas.
 - No se documentan sesgos demográficos desglosados por sexo, edad, etnia ni índice de masa corporal.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/afzal2003/knee-oa-kl-grading
+- Modelo en Hugging Face: https://huggingface.co/afzal2003/knee-oa-kl-grading
 - Dataset de entrenamiento (Kaggle, Knee Osteoarthritis Dataset with Severity Grading): https://www.kaggle.com/datasets/shashwatwork/knee-osteoarthritis-dataset-with-severity
 - Publicación de Pingjun Chen en Mendeley Data (University of Florida): enlace no disponible en la información proporcionada
 - Repositorio de código y cuadernos: marcador de posición en la model card, enlace no disponible
-- Demo en HuggingFace Space: marcador de posición en la model card, enlace no disponible
+- Demo en Hugging Face Space: marcador de posición en la model card, enlace no disponible
 - Kellgren-Lawrence grading of knee osteoarthritis using deep learning (Osteoarthritis and Cartilage Open, 2025): https://www.sciencedirect.com/science/article/pii/S2665913125000160
 - Versión PDF del artículo anterior: https://www.oarsiopenjournal.com/article/S2665-9131(25)00016-0/pdf
 - Texto completo del artículo anterior: https://www.oarsiopenjournal.com/article/S2665-9131(25)00016-0/fulltext

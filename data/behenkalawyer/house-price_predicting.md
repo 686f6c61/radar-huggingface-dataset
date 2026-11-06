@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`behenkalawyer/house-price_predicting` es un repositorio alojado en HuggingFace cuyo nombre sugiere un modelo orientado a la predicción de precios de vivienda. Sin embargo, la model card publicada por el autor se limita a una cabecera YAML con la licencia MIT y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. No se trata, por tanto, de un modelo de lenguaje generativo con especificaciones verificables, sino de un artefacto cuyo contenido real no está documentado en la información disponible.
+`behenkalawyer/house-price_predicting` es un repositorio alojado en Hugging Face cuyo nombre sugiere un modelo orientado a la predicción de precios de vivienda. Sin embargo, la model card publicada por el autor se limita a una cabecera YAML con la licencia MIT y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. No se trata, por tanto, de un modelo de lenguaje generativo con especificaciones verificables, sino de un artefacto cuyo contenido real no está documentado en la información disponible.
 
 El repositorio no tiene descargas ni likes, fue creado y actualizado en la misma fecha (2026-11-02) y no declara pipeline, idiomas ni etiquetas más allá de `license:mit` y `region:us`. Esto es coherente con un proyecto personal o experimental, no con un modelo publicado para uso en producción.
 
@@ -78,5 +78,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/behenkalawyer/house-price_predicting
+- Repositorio en Hugging Face: https://huggingface.co/behenkalawyer/house-price_predicting
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

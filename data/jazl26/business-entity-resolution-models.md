@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jazl26/business-entity-resolution-models` es una colección de artefactos de aprendizaje automático orientada a la resolución de entidades de negocio (business entity resolution, B2B record linkage). No es un modelo generativo ni un LLM conversacional, sino un pipeline completo de matching compuesto por un prefiltro LightGBM, un modelo de fusión XGBoost y cinco transformadores fine-tuneados que actúan como bloqueadores densos y cross-encoders. El autor es el usuario de HuggingFace `jazl26` y el repositorio se publicó en noviembre de 2026.
+`jazl26/business-entity-resolution-models` es una colección de artefactos de aprendizaje automático orientada a la resolución de entidades de negocio (business entity resolution, B2B record linkage). No es un modelo generativo ni un LLM conversacional, sino un pipeline completo de matching compuesto por un prefiltro LightGBM, un modelo de fusión XGBoost y cinco transformadores fine-tuneados que actúan como bloqueadores densos y cross-encoders. El autor es el usuario de Hugging Face `jazl26` y el repositorio se publicó en noviembre de 2026.
 
 El diseño sigue una arquitectura en cascada típica de los sistemas de entity resolution a gran escala: primero un filtro barato reduce el espacio de candidatos, después un bi-encoder denso (basado en `intfloat/multilingual-e5-base`) genera embeddings para blocking, y finalmente cuatro cross-encoders especializados puntúan cada par candidato con distinta información (nombre, calle, dirección vacía etiquetada y casos de aspecto similar). Un modelo XGBoost de fusión combina las puntuaciones y aplica umbrales de decisión calibrados.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jazl26/business-entity-resolution-models` | Pipeline ER (LightGBM + E5 + 4 cross-encoders + XGBoost) | No disponible (~5,5 GB de pesos transformer) | No disponible | No disponible | HuggingFace, pesos transformer aparte |
-| `intfloat/multilingual-e5-base` | Bi-encoder denso | ~278 M | 512 tokens | MIT | HuggingFace |
-| `microsoft/mdeberta-v3-base` | Cross-encoder base | ~86 M (backbone DeBERTa-v3-base) | 512 tokens | MIT | HuggingFace |
-| `jhu-clsp/mmBERT-base` | Encoder multilingüe | No disponible | No disponible | No disponible | HuggingFace |
+| `jazl26/business-entity-resolution-models` | Pipeline ER (LightGBM + E5 + 4 cross-encoders + XGBoost) | No disponible (~5,5 GB de pesos transformer) | No disponible | No disponible | Hugging Face, pesos transformer aparte |
+| `intfloat/multilingual-e5-base` | Bi-encoder denso | ~278 M | 512 tokens | MIT | Hugging Face |
+| `microsoft/mdeberta-v3-base` | Cross-encoder base | ~86 M (backbone DeBERTa-v3-base) | 512 tokens | MIT | Hugging Face |
+| `jhu-clsp/mmBERT-base` | Encoder multilingüe | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparativa se limita a los modelos base sobre los que se construye el pipeline, ya que no se han publicado alternativas de entity resolution directamente comparables en la información disponible.
 
@@ -82,7 +82,7 @@ La comparativa se limita a los modelos base sobre los que se construye el pipeli
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jazl26/business-entity-resolution-models
+- Repositorio Hugging Face: https://huggingface.co/jazl26/business-entity-resolution-models
 - Modelo base del bloqueador: https://huggingface.co/intfloat/multilingual-e5-base
 - Modelo base de tres cross-encoders: https://huggingface.co/microsoft/mdeberta-v3-base
 - Modelo base del cross-encoder look-alike: https://huggingface.co/jhu-clsp/mmBERT-base

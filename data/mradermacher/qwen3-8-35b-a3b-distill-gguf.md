@@ -19,11 +19,11 @@ La relevancia del repositorio es limitada por su estado: fue creado el 17 de sep
 | Tipos de cuantización | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (conversión desde HuggingFace: `convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1`) |
+| Formato de pesos | GGUF (conversión desde Hugging Face: `convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1`) |
 | Modelo base | empero-ai/Qwen3.8-35B-A3B-Distill |
 | Tarea declarada | conversational |
 | Compatibilidad declarada | endpoints_compatible |
-| Tamaño del repositorio | 21,9 GB (según HuggingFace; no cubre la suma de todas las cuantizaciones listadas, lo que apunta a una publicación parcial o a un recuento incompleto) |
+| Tamaño del repositorio | 21,9 GB (según Hugging Face; no cubre la suma de todas las cuantizaciones listadas, lo que apunta a una publicación parcial o a un recuento incompleto) |
 | Fecha de creación | 17 de septiembre de 2026 |
 | Última actualización | 17 de septiembre de 2026, 13:08 UTC |
 
@@ -31,12 +31,12 @@ La relevancia del repositorio es limitada por su estado: fue creado el 17 de sep
 
 La información disponible sobre este repositorio se limita a los metadatos de la conversión. No hay ningún dato publicado sobre la arquitectura del modelo base `empero-ai/Qwen3.8-35B-A3B-Distill`: ni tipo de bloque (transformer denso, mezcla de expertos, SSM o híbrido), ni número de capas, ni dimensiones ocultas, ni mecanismo de atención. El único indicio es el sufijo "A3B" del nombre, que en la convención habitual de modelos MoE (por ejemplo, Qwen3-30B-A3B) indica 3 mil millones de parámetros activos sobre un total de 35,5 B. Si esa interpretación fuese correcta, el modelo utilizaría enrutamiento por token hacia un subconjunto de expertos, con la implicación práctica de que la memoria necesaria para la inferencia corresponde al total de parámetros (35,5 B) y no a los activos.
 
-Tampoco hay información sobre el entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo ajuste por instrucciones con RLHF o DPO. El término "Distill" en el nombre del modelo base sugiere que se trata de un modelo destilado a partir de otro mayor, pero se desconoce el profesor, el método de destilación y los datos utilizados. Respecto al proceso de conversión sí hay datos concretos: la cuantización se realizó con la versión 2 del pipeline de cuantización y con salida de tensores cuantizados, partiendo de pesos en formato HuggingFace. No se declara ningún ajuste posterior a la cuantización ni corrección de calidad (por ejemplo, imatrix) en los metadatos disponibles.
+Tampoco hay información sobre el entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo ajuste por instrucciones con RLHF o DPO. El término "Distill" en el nombre del modelo base sugiere que se trata de un modelo destilado a partir de otro mayor, pero se desconoce el profesor, el método de destilación y los datos utilizados. Respecto al proceso de conversión sí hay datos concretos: la cuantización se realizó con la versión 2 del pipeline de cuantización y con salida de tensores cuantizados, partiendo de pesos en formato Hugging Face. No se declara ningún ajuste posterior a la cuantización ni corrección de calidad (por ejemplo, imatrix) en los metadatos disponibles.
 
 ## Capacidades
 
 - Generación de texto conversacional: es la única capacidad declarada explícitamente mediante la etiqueta `conversational` del repositorio.
-- Despliegue en endpoints: la etiqueta `endpoints_compatible` indica que el formato es compatible con los Inference Endpoints de HuggingFace.
+- Despliegue en endpoints: la etiqueta `endpoints_compatible` indica que el formato es compatible con los Inference Endpoints de Hugging Face.
 - Inferencia local con llama.cpp y derivados: el formato GGUF permite ejecución en CPU, GPU o modo mixto.
 - Razonamiento, matemáticas, generación de código, visión, audio o multimodalidad: no disponibles; no hay ninguna declaración al respecto en la información proporcionada.
 - Soporte de tool calling o function calling: no disponible.
@@ -52,7 +52,7 @@ Tampoco hay información sobre el entrenamiento: ni número de tokens, ni compos
 - Servicio de chat por lotes para generación de textos internos: con la variante Q8_0 en una GPU de 80 GB puede procesarse un volumen alto de resúmenes, clasificaciones o redacciones de documentos internos, aprovechando que el coste marginal de inferencia es nulo una vez desplegado.
 - Integración en herramientas de escritorio para desarrolladores: los ficheros GGUF se cargan directamente en LM Studio, Jan, koboldcpp o extensiones de VS Code basadas en llama.cpp, lo que permite disponer de un asistente de redacción de código y documentación totalmente offline.
 - Base para evaluación de sesgo y alucinación antes de adopción: dado que no hay benchmarks publicados, un caso de uso razonable es someter el modelo a un conjunto de pruebas propio (veracidad, sesgo, seguimiento de instrucciones en castellano) antes de considerar cualquier despliegue con usuarios finales.
-- Publicación como endpoint gestionado: gracias a la compatibilidad declarada con endpoints, puede desplegarse como servicio HTTP en HuggingFace Inference Endpoints para pruebas de integración con aplicaciones existentes, aunque la ausencia de licencia declarada obliga a resolver esa cuestión antes de cualquier uso comercial.
+- Publicación como endpoint gestionado: gracias a la compatibilidad declarada con endpoints, puede desplegarse como servicio HTTP en Hugging Face Inference Endpoints para pruebas de integración con aplicaciones existentes, aunque la ausencia de licencia declarada obliga a resolver esa cuestión antes de cualquier uso comercial.
 
 ## Benchmarks y rendimiento
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados del modelo evaluado, por lo que la comparaci�
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-35B-A3B-Distill (GGUF de mradermacher) | 35,5 B (dato real) | no disponible | no disponible | no disponible | GGUF en HuggingFace |
+| Qwen3.8-35B-A3B-Distill (GGUF de mradermacher) | 35,5 B (dato real) | no disponible | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen3-30B-A3B | ~30,5 B | ~3,3 B | 32.768 nativos, ampliable con YaRN | Apache 2.0 | Pesos originales y GGUF de terceros |
 | Mixtral 8x7B Instruct | ~46,7 B | ~12,9 B | 32.768 | Apache 2.0 | Pesos originales y múltiples GGUF |
 | DeepSeek-V2-Lite Chat | ~15,7 B | ~2,4 B | 32.768 | Licencia propia de DeepSeek | Pesos originales y GGUF |

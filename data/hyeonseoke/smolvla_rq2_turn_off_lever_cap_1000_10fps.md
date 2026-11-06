@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `HyeonseokE/smolvla_rq2_turn_off_lever_cap_1000_10fps` (este) | 450.046.176 | no disponible | Politica de una sola tarea sobre `so101_follower` | Apache 2.0 | HuggingFace, 0 descargas |
-| `lerobot/smolvla_base` | no disponible en la informacion proporcionada | no disponible | Modelo base VLA para ajuste fino | no disponible en la informacion proporcionada | HuggingFace |
+| `HyeonseokE/smolvla_rq2_turn_off_lever_cap_1000_10fps` (este) | 450.046.176 | no disponible | Politica de una sola tarea sobre `so101_follower` | Apache 2.0 | Hugging Face, 0 descargas |
+| `lerobot/smolvla_base` | no disponible en la informacion proporcionada | no disponible | Modelo base VLA para ajuste fino | no disponible en la informacion proporcionada | Hugging Face |
 | Otras politicas VLA (por ejemplo OpenVLA o pi0-FAST) | no disponible en la informacion proporcionada | no disponible | Manipulacion generalista | no disponible en la informacion proporcionada | no disponible |
 
 La busqueda web realizada no devolvio resultados tecnicos utilizables (unicamente enlaces genericos a YouTube), por lo que no se dispone de datos verificables de modelos alternativos para completar la comparativa.
@@ -95,7 +95,7 @@ La busqueda web realizada no devolvio resultados tecnicos utilizables (unicament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_rq2_turn_off_lever_cap_1000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_rq2_turn_off_lever_cap_1000_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/rq2_turn_off_lever_cap_100_10fps
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=HyeonseokE/rq2_turn_off_lever_cap_100_10fps

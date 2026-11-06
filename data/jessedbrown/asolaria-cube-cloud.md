@@ -2,7 +2,7 @@
 
 ## Resumen
 
-asolaria-cube-cloud es un repositorio publicado en HuggingFace por el usuario Jessedbrown que no contiene un modelo de lenguaje en el sentido convencional, sino el código fuente de un entrenador escrito en Rust. Segun su model card, el proyecto se presenta como la superficie de ejecucion en la nube ("cloud-run surface") del denominado "Asolaria unified-Omega cube trainer", pensado para ejecutarse en agentes en la nube o en runners de GitHub Actions y no en la maquina local del operador. El repositorio incluye el archivo `unified_omega.rs`, descrito como un entrenador sin dependencias externas.
+asolaria-cube-cloud es un repositorio publicado en Hugging Face por el usuario Jessedbrown que no contiene un modelo de lenguaje en el sentido convencional, sino el código fuente de un entrenador escrito en Rust. Segun su model card, el proyecto se presenta como la superficie de ejecucion en la nube ("cloud-run surface") del denominado "Asolaria unified-Omega cube trainer", pensado para ejecutarse en agentes en la nube o en runners de GitHub Actions y no en la maquina local del operador. El repositorio incluye el archivo `unified_omega.rs`, descrito como un entrenador sin dependencias externas.
 
 La descripcion tecnica indica que el entrenador genera 40 "cuerpos" a partir de tres familias (8 cube-poles x 800, 12 sectors x 1200 y 20 Pi-lenses x 2000), sumando 60.800 "celdas", todas ellas derivadas de una raiz reversible compartida con perdida cero. Cada cube dispondria de su propio lenguaje de 1024 glifos con semilla SHA y seria reversible byte a byte en cada celda, con un plegado "OmniSubmit" de dos niveles hacia `omega_unified`. El proyecto declara ser determinista (mismo corpus produce un omega identico a nivel de byte) y restringe la aritmetica a enteros y ternarios (trits), prohibiendo explicitamente el uso de `f32`/`f64`.
 
@@ -78,5 +78,5 @@ No disponible. El artefacto no es un modelo de lenguaje con parametros publicado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jessedbrown/asolaria-cube-cloud
+- Hugging Face: https://huggingface.co/Jessedbrown/asolaria-cube-cloud
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relevantes asociados a este modelo; los resultados devueltos no guardan relacion con el contenido del repositorio.

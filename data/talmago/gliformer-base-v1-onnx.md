@@ -70,9 +70,9 @@ La model card del repositorio no incluye metricas de MMLU, GLUE, CoNLL, HumanEva
 
 | Modelo | Parametros | Formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| talmago/gliformer-base-v1-onnx | no disponible | ONNX (encoder + 4 cabezas) | Ingles | no disponible | HuggingFace, libreria fast_gliner |
-| knowledgator/gliformer-base-v1 | no disponible | PyTorch (no incluido en este repo) | no disponible | no disponible | HuggingFace, modelo base del anterior |
-| Familia GLiNER (por ejemplo urchade/gliner_multi-v2.1) | no disponible | PyTorch, ONNX en conversiones de terceros | Multilingue segun variante | no disponible | HuggingFace |
+| talmago/gliformer-base-v1-onnx | no disponible | ONNX (encoder + 4 cabezas) | Ingles | no disponible | Hugging Face, libreria fast_gliner |
+| knowledgator/gliformer-base-v1 | no disponible | PyTorch (no incluido en este repo) | no disponible | no disponible | Hugging Face, modelo base del anterior |
+| Familia GLiNER (por ejemplo urchade/gliner_multi-v2.1) | no disponible | PyTorch, ONNX en conversiones de terceros | Multilingue segun variante | no disponible | Hugging Face |
 
 No se dispone de cifras de parametros, contexto, licencia ni rendimiento para los modelos comparados dentro de la informacion proporcionada, por lo que no es posible una comparacion cuantitativa fiable. La diferencia verificable entre las dos primeras filas es exclusivamente el formato de pesos y la libreria de inferencia: este repositorio distribuye ONNX para `fast_gliner`, mientras que el modelo base distribuye el checkpoint original.
 
@@ -90,7 +90,7 @@ No se dispone de cifras de parametros, contexto, licencia ni rendimiento para lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/talmago/gliformer-base-v1-onnx
+- Repositorio en Hugging Face: https://huggingface.co/talmago/gliformer-base-v1-onnx
 - Modelo base: https://huggingface.co/knowledgator/gliformer-base-v1
 - Libreria fast_gliner: https://github.com/talmago/fast_gliner
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante sobre el modelo; las entradas devueltas corresponden a paginas no relacionadas con inteligencia artificial.

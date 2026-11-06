@@ -105,7 +105,7 @@ La informacion proporcionada no incluye comparaciones con modelos alternativos n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vektor-guard-v3-interim | 395.836.421 (~0,4B) | 2048 tokens | Apache-2.0 | HuggingFace (`theinferenceloop/vektor-guard-v3-interim`) |
+| vektor-guard-v3-interim | 395.836.421 (~0,4B) | 2048 tokens | Apache-2.0 | Hugging Face (`theinferenceloop/vektor-guard-v3-interim`) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 | Rendimiento comparado | no disponible | no disponible | no disponible | no disponible |
 
@@ -125,7 +125,7 @@ La informacion proporcionada no incluye comparaciones con modelos alternativos n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theinferenceloop/vektor-guard-v3-interim
+- Modelo en Hugging Face: https://huggingface.co/theinferenceloop/vektor-guard-v3-interim
 - Modelo base (ModernBERT-large): https://huggingface.co/answerdotai/ModernBERT-large
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los enlaces recuperados corresponden a contenido no relacionado (perfiles de redes sociales y un documento sobre analisis comparativo de rendimiento en hardware de borde) y no se incluyen por no ser pertinentes.
 - Paper, blog, repositorio o demo especificos del modelo: no disponible en la informacion proporcionada.

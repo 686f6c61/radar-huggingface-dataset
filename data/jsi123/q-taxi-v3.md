@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo tabular publicado en HuggingFace por el usuario JSI123 bajo el identificador `JSI123/q-Taxi-v3`. No es un modelo de lenguaje: se trata de una implementacion propia de Q-Learning entrenada desde cero con Python, NumPy y Gymnasium sobre el entorno Taxi-v3 de Gymnasium, un problema clasico de planificacion con espacio de estados discreto de 500 estados y 6 acciones. El repositorio contiene unicamente la tabla Q entrenada y los artefactos de evaluacion, sin pesos neuronales ni ficheros de modelo en el sentido habitual.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo tabular publicado en Hugging Face por el usuario JSI123 bajo el identificador `JSI123/q-Taxi-v3`. No es un modelo de lenguaje: se trata de una implementacion propia de Q-Learning entrenada desde cero con Python, NumPy y Gymnasium sobre el entorno Taxi-v3 de Gymnasium, un problema clasico de planificacion con espacio de estados discreto de 500 estados y 6 acciones. El repositorio contiene unicamente la tabla Q entrenada y los artefactos de evaluacion, sin pesos neuronales ni ficheros de modelo en el sentido habitual.
 
 El interes de esta ficha es acotado: sirve como referencia para quien quiera reproducir un agente Q-Learning de juguete, comparar curvas de aprendizaje en Taxi-v3 o reutilizar el codigo de entrenamiento como plantilla docente. El rendimiento declarado es de una recompensa media de 7,54 con desviacion tipica de 2,74 sobre 100 episodios de evaluacion, por encima del umbral de 4,0 fijado por el curso del que parece provenir.
 
@@ -69,7 +69,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Espacio de estados | Espacio de acciones | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JSI123/q-Taxi-v3 | Q-Learning tabular | 500 | 6 | 7,54 +/- 2,74 | no disponible | HuggingFace |
+| JSI123/q-Taxi-v3 | Q-Learning tabular | 500 | 6 | 7,54 +/- 2,74 | no disponible | Hugging Face |
 | Alternativas SARSA sobre Taxi-v3 | SARSA tabular | 500 | 6 | no disponible | no disponible | no disponible |
 | Alternativas DQN sobre Taxi-v3 | Deep Q-Network | 500 | 6 | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de resultados publicados de modelos comparables en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JSI123/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/JSI123/q-Taxi-v3
 - Entorno Taxi-v3 en Gymnasium: https://gymnasium.farama.org/environments/toy_text/taxi/
 - Documentacion de Gymnasium: https://gymnasium.farama.org/
 - NumPy: https://numpy.org/

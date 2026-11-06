@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Stage-org/4b-strat-300-hard-27b-z-iter2-epoch3-agent-rl-epoch2 es un modelo de lenguaje publicado en HuggingFace por el usuario u organizacion Stage-org. El unico dato objetivo confirmado es el numero de parametros totales, 4.539.265.536 (aproximadamente 4,54 mil millones), extraido de los pesos en formato safetensors, y un tamano de repositorio de 9,1 GB. El repositorio no incluye model card, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion, por lo que se trata de un artefacto sin documentacion publica asociada.
+Stage-org/4b-strat-300-hard-27b-z-iter2-epoch3-agent-rl-epoch2 es un modelo de lenguaje publicado en Hugging Face por el usuario u organizacion Stage-org. El unico dato objetivo confirmado es el numero de parametros totales, 4.539.265.536 (aproximadamente 4,54 mil millones), extraido de los pesos en formato safetensors, y un tamano de repositorio de 9,1 GB. El repositorio no incluye model card, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion, por lo que se trata de un artefacto sin documentacion publica asociada.
 
-La etiqueta de HuggingFace `qwen3_5` apunta a que el modelo se construye sobre la familia Qwen 3.5, y el identificador sugiere un entrenamiento por etapas con ajuste por refuerzo orientado a agentes (el sufijo `agent-rl-epoch2`), ademas de posibles fases de iteracion y destilacion (`iter2`, `27b-z`). Ninguna de estas interpretaciones esta confirmada por el autor: son inferencias derivadas del nombre del repositorio y de las etiquetas, no de documentacion tecnica.
+La etiqueta de Hugging Face `qwen3_5` apunta a que el modelo se construye sobre la familia Qwen 3.5, y el identificador sugiere un entrenamiento por etapas con ajuste por refuerzo orientado a agentes (el sufijo `agent-rl-epoch2`), ademas de posibles fases de iteracion y destilacion (`iter2`, `27b-z`). Ninguna de estas interpretaciones esta confirmada por el autor: son inferencias derivadas del nombre del repositorio y de las etiquetas, no de documentacion tecnica.
 
 Su relevancia actual es limitada y de caracter exploratorio. Con 7 descargas y 0 "likes" en el momento de la consulta, no hay evidencia de validacion por parte de la comunidad, benchmarks publicados ni adopcion en produccion. Se trata, por tanto, de un modelo candidato a evaluacion propia antes de cualquier uso real, no de una opcion lista para desplegar.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada y de caracter exploratorio. Con 7 descargas y 0
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace `qwen3_5` sugiere una base de la familia Qwen 3.5, sin confirmar) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face `qwen3_5` sugiere una base de la familia Qwen 3.5, sin confirmar) |
 | Parametros totales | 4.539.265.536 (aprox. 4,54 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -92,5 +92,5 @@ La diferencia relevante no es de rendimiento, que no puede compararse sin benchm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/4b-strat-300-hard-27b-z-iter2-epoch3-agent-rl-epoch2
+- Hugging Face: https://huggingface.co/Stage-org/4b-strat-300-hard-27b-z-iter2-epoch3-agent-rl-epoch2
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo. La busqueda web realizada devolvio unicamente resultados no relacionados (portales de ofertas de practicas y la herramienta StackEval de backboard.io).

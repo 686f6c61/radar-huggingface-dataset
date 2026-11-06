@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-Spark-Abliterated-VL-MTP-NVFP4 es un merge de pesos publicado por el usuario jnjn en HuggingFace. Se trata de una fusión de dos derivados de la familia Ornith-1.5: el modelo multimodal cuantizado en NVFP4 de ornith-ai y la variante "abliterated" con borrador DFlash de pottokao. El resultado combina el núcleo de lenguaje abliterado (sin las direcciones de rechazo del alineamiento original), la torre de visión y los cabezales de predicción multi-token (MTP) del modelo de ornith-ai, más un borrador DFlash conservado para decodificación especulativa opcional.
+Ornith-1.5-35B-A3B-Spark-Abliterated-VL-MTP-NVFP4 es un merge de pesos publicado por el usuario jnjn en Hugging Face. Se trata de una fusión de dos derivados de la familia Ornith-1.5: el modelo multimodal cuantizado en NVFP4 de ornith-ai y la variante "abliterated" con borrador DFlash de pottokao. El resultado combina el núcleo de lenguaje abliterado (sin las direcciones de rechazo del alineamiento original), la torre de visión y los cabezales de predicción multi-token (MTP) del modelo de ornith-ai, más un borrador DFlash conservado para decodificación especulativa opcional.
 
 La arquitectura declarada es Qwen3_5MoeForConditionalGeneration, un transformer de mezcla de expertos (MoE) con soporte de visión y pipeline image-text-to-text. El repositorio contiene 94.393 tensores repartidos en 3 shards, con 19.528.501.104 parámetros reales en safetensors (unos 19,5B), pese a que el nombre comercial del modelo indica 35B-A3B. Los pesos están cuantizados en NVFP4 (4 bits mediante modelopt), con los tensores MTP excluidos de la cuantización.
 
@@ -99,7 +99,7 @@ No se identifican en la informacion proporcionada otros modelos de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jnjn/Ornith-1.5-35B-A3B-Spark-Abliterated-VL-MTP-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/jnjn/Ornith-1.5-35B-A3B-Spark-Abliterated-VL-MTP-NVFP4
 - Modelo base (nucleo multimodal, torre de vision y MTP): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4
 - Modelo base (variante abliterada con DFlash): https://huggingface.co/pottokao/Ornith-1.5-35B-A3B-abliterated-NVFP4-DFlash
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

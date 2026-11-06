@@ -71,7 +71,7 @@ No se dispone de informacion suficiente sobre modelos comparables especificos pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ninty-seven/StepGuard
+- Hugging Face: https://huggingface.co/ninty-seven/StepGuard
 - Proyecto: https://zheng977.github.io/StepGuard/
 - Codigo: https://github.com/zheng977/StepGuard
 - Paper arXiv 2606.17871: https://arxiv.org/abs/2606.17871

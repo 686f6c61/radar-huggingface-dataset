@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JWerne/coaching_model_small` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Fue desarrollado por el usuario JWerne y publicado en HuggingFace con el nombre interno `existential_coaching_3b`, lo que sugiere una especialización en conversaciones de coaching existencial o reflexión personal. El repositorio contiene únicamente los pesos del adaptador (0,2 GB en formato safetensors), no el modelo completo.
+El modelo `JWerne/coaching_model_small` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Fue desarrollado por el usuario JWerne y publicado en Hugging Face con el nombre interno `existential_coaching_3b`, lo que sugiere una especialización en conversaciones de coaching existencial o reflexión personal. El repositorio contiene únicamente los pesos del adaptador (0,2 GB en formato safetensors), no el modelo completo.
 
 La relevancia de este modelo radica en su enfoque: adaptar un modelo pequeño y eficiente (3B parámetros) a una tarea conversacional específica mediante LoRA, una técnica que permite fine-tuning con bajo coste computacional y de almacenamiento. Sin embargo, la información pública es muy limitada: no se especifican datos de entrenamiento, hiperparámetros, ni métricas de evaluación. El modelo base Qwen2.5-3B-Instruct es conocido por su buen rendimiento en tareas de instrucción y conversación multilingüe, pero el adaptador no documenta cambios sustanciales en arquitectura o capacidades.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su enfoque: adaptar un modelo pequeño y 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA aplicado sobre Qwen2.5-3B-Instruct, un transformer decoder con atención causal. LoRA reduce el número de parámetros entrenables al inyectar matrices de baja dimensión en las capas de atención y feed-forward, lo que permite fine-tuning eficiente en términos de memoria y cómputo. El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) usando la librería TRL (Transformers Reinforcement Learning) de HuggingFace, con las versiones PEFT 0.20.0, TRL 1.10.0 y Transformers 5.15.0.
+El modelo es un adaptador LoRA aplicado sobre Qwen2.5-3B-Instruct, un transformer decoder con atención causal. LoRA reduce el número de parámetros entrenables al inyectar matrices de baja dimensión en las capas de atención y feed-forward, lo que permite fine-tuning eficiente en términos de memoria y cómputo. El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) usando la librería TRL (Transformers Reinforcement Learning) de Hugging Face, con las versiones PEFT 0.20.0, TRL 1.10.0 y Transformers 5.15.0.
 
 No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, la composición de los datos ni si se aplicaron técnicas adicionales como RLHF o DPO. La falta de esta información impide evaluar la calidad y el alcance del fine-tuning. El adaptador está diseñado para cargarse sobre el modelo base mediante la integración de PEFT, y el pipeline recomendado es `text-generation`.
 
@@ -66,9 +66,9 @@ No se dispone de comparativas publicadas que incluyan este adaptador. Como refer
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-3B-Instruct (base) | 3B | 32.768 | Apache 2.0 | HuggingFace |
-| JWerne/coaching_model_small | 3B (base) + adaptador | No disponible | No disponible | HuggingFace |
-| Otros fine-tunes de Qwen2.5-3B | 3B | Variable | Variable | HuggingFace |
+| Qwen2.5-3B-Instruct (base) | 3B | 32.768 | Apache 2.0 | Hugging Face |
+| JWerne/coaching_model_small | 3B (base) + adaptador | No disponible | No disponible | Hugging Face |
+| Otros fine-tunes de Qwen2.5-3B | 3B | Variable | Variable | Hugging Face |
 
 No hay información sobre modelos de coaching existencial comparables en la literatura abierta. La falta de benchmarks impide una comparación cuantitativa.
 
@@ -83,6 +83,6 @@ No hay información sobre modelos de coaching existencial comparables en la lite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JWerne/coaching_model_small
+- Modelo en Hugging Face: https://huggingface.co/JWerne/coaching_model_small
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Librería TRL (usada para el entrenamiento): https://github.com/huggingface/trl

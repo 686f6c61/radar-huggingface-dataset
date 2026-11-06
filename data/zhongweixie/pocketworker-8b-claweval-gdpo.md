@@ -90,7 +90,7 @@ La comparación directa con alternativas de terceros no está disponible en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhongweixie/PocketWorker-8B-ClawEval-GDPO
+- Modelo en Hugging Face: https://huggingface.co/zhongweixie/PocketWorker-8B-ClawEval-GDPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - slime (herramienta de RL citada en la model card, usada para la conversión del checkpoint): https://github.com/THUDM/slime
 - Resultados de búsqueda web: no se encontraron enlaces relevantes sobre este modelo; las consultas devolvieron contenido no relacionado con el proyecto, por lo que no se incluyen.

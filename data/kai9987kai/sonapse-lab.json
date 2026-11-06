@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Kai9987kai/Sonapse-LAB",
+  "slug": "kai9987kai-sonapse-lab",
+  "author": "Kai9987kai",
+  "url": "https://huggingface.co/Kai9987kai/Sonapse-LAB",
+  "created_at": "2026-11-06T06:49:20.000Z",
+  "updated_at": "2026-11-06T06:51:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "connectome",
+    "neuromorphic",
+    "weight-space-programming",
+    "biological-neural-networks",
+    "recursive-self-improvement",
+    "drosophila",
+    "pytorch",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10929115,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

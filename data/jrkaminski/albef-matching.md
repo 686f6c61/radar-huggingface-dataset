@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jrkaminski/albef-matching` es un repositorio publicado en HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de la arquitectura ALBEF (Align before Fuse) orientada a tareas de *matching* multimodal. El autor es jrkaminski y el artefacto principal es un fichero `model.py` acompanado de una configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion en formato `safetensors`. No se trata de un modelo preentrenado ni ajustado: la propia model card lo describe como un punto de partida para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de baja escala.
+`jrkaminski/albef-matching` es un repositorio publicado en Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de la arquitectura ALBEF (Align before Fuse) orientada a tareas de *matching* multimodal. El autor es jrkaminski y el artefacto principal es un fichero `model.py` acompanado de una configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion en formato `safetensors`. No se trata de un modelo preentrenado ni ajustado: la propia model card lo describe como un punto de partida para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de baja escala.
 
 La configuracion incluida es de escala *tiny*, con un total de 16.576 parametros registrados en el checkpoint de safetensors, lo que lo situa muy lejos de cualquier modelo ALBEF de produccion. La arquitectura emplea atencion de tipo flash, fusion *tucker*, activacion *mish* y normalizacion *rmsnorm*. La receta de experimento por defecto usa el optimizador AdamW con un *scheduler* de tipo *step*.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| jrkaminski/albef-matching | 16.576 | no disponible | bsd-3-clause | HuggingFace | Checkpoint de inicializacion, sin entrenar |
+| jrkaminski/albef-matching | 16.576 | no disponible | bsd-3-clause | Hugging Face | Checkpoint de inicializacion, sin entrenar |
 | ALBEF original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible |
 | Alternativas multimodales tipo BLIP / CLIP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,6 +95,6 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jrkaminski/albef-matching
+- Repositorio en Hugging Face: https://huggingface.co/jrkaminski/albef-matching
 - Ficheros incluidos: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de ALBEF, blog, repositorio de codigo oficial o demos: no disponible en la informacion proporcionada.

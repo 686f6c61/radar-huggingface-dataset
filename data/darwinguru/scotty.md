@@ -75,8 +75,8 @@ No se dispone de comparativas publicadas con modelos de la misma categoría en l
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Scotty | 421 M | no disponible | Apache-2.0 | safetensors (Laya) | HuggingFace |
-| ModernBERT-large (base) | no disponible en la información | no disponible | no disponible en la información | safetensors | HuggingFace |
+| Scotty | 421 M | no disponible | Apache-2.0 | safetensors (Laya) | Hugging Face |
+| ModernBERT-large (base) | no disponible en la información | no disponible | no disponible en la información | safetensors | Hugging Face |
 | Alternativas de decisión | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de comparativas publicadas con modelos de la misma categoría en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DarwinGuru/scotty
+- Modelo en Hugging Face: https://huggingface.co/DarwinGuru/scotty
 - Código de inferencia: https://huggingface.co/DarwinGuru/scotty/blob/main/run_scotty.py
 - Paper: https://huggingface.co/DarwinGuru/scotty/blob/main/paper/scotty-paper.pdf
 - Demo (acceso controlado): https://spark-29fd.taile0f6e8.ts.net

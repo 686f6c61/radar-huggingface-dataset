@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Factorial_Base_1.8B es un modelo de generacion de texto en japones publicado por el usuario bull220202 en HuggingFace. Se trata de un modelo de pequeno tamano, aproximadamente 1.800 millones de parametros, entrenado con PyTorch y distribuido bajo licencia CC-BY-4.0. La model card es extremadamente escueta: se limita a indicar que es un "tiny factorial model" de unos 1,8B de parametros, sin aportar informacion sobre arquitectura, datos de entrenamiento ni metodologia.
+Factorial_Base_1.8B es un modelo de generacion de texto en japones publicado por el usuario bull220202 en Hugging Face. Se trata de un modelo de pequeno tamano, aproximadamente 1.800 millones de parametros, entrenado con PyTorch y distribuido bajo licencia CC-BY-4.0. La model card es extremadamente escueta: se limita a indicar que es un "tiny factorial model" de unos 1,8B de parametros, sin aportar informacion sobre arquitectura, datos de entrenamiento ni metodologia.
 
 El modelo esta etiquetado exclusivamente para el idioma japones (`language: ja`) y para la tarea de generacion de texto. El repositorio ocupa 9,9 GB, lo que es coherente con un modelo de ~1,8B parametros almacenado en precision de 16 bits (aproximadamente 3,6 GB de pesos) junto con posibles checkpoints adicionales u optimizadores. El nombre "Factorial" y el tag `#Factorial` sugieren una posible familia o linaje de modelos, pero no se aporta documentacion al respecto.
 
@@ -80,5 +80,5 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bull220202/Factorial_Base_1.8B
+- Hugging Face: https://huggingface.co/bull220202/Factorial_Base_1.8B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

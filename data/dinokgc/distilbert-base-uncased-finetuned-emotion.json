@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "dinokgc/distilbert-base-uncased-finetuned-emotion",
+  "slug": "dinokgc-distilbert-base-uncased-finetuned-emotion",
+  "author": "dinokgc",
+  "url": "https://huggingface.co/dinokgc/distilbert-base-uncased-finetuned-emotion",
+  "created_at": "2026-11-05T08:31:09.000Z",
+  "updated_at": "2026-11-05T09:03:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535694945,
+  "storage_human": "536 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "distilbert-base-uncased-finetuned-emotion - Hugging Face",
+      "url": "https://huggingface.co/transformersbook/distilbert-base-uncased-finetuned-emotion",
+      "snippet": "distilbert-base-uncased-finetuned-emotion This model is a fine-tuned version of distilbert-base-uncased on the emotion dataset. The model is trained in Chapter 2: Text Classification in the NLP with Transformers book. You can find the full code in the accompanying Github repository. It achieves the following results on the evaluation set: Loss ..."
+    },
+    {
+      "title": "distilbert-base-uncased-finetuned-emotion - Hugging Face",
+      "url": "https://huggingface.co/eikoenchine/distilbert-base-uncased-finetuned-emotion",
+      "snippet": "distilbert-base-uncased-finetuned-emotion This model is a fine-tuned version of distilbert-base-uncased on the emotion dataset. It achieves the following results on the evaluation set: Loss: 0.2209 Accuracy: 0.924 F1: 0.9240 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure ..."
+    }
+  ]
+}

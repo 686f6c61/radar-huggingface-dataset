@@ -89,7 +89,7 @@ La principal diferencia con el original es la reduccion de rechazos. Frente a ot
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/AMAImedia/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16
+- Repositorio Hugging Face del modelo: https://huggingface.co/AMAImedia/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16
 - Modelo original de KridgeDookie: https://huggingface.co/KridgeDookie/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio LoRA de AMAImedia: https://huggingface.co/AMAImedia/Qwen3.8-27B-LoRA

@@ -186,7 +186,7 @@ Los resultados de benchmarks frente a alternativas de otros fabricantes (Qwen, L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Olmo-3-7B-Think-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Olmo-3-7B-Think-heretic
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think-DPO
 - Modelo original (referencia): https://huggingface.co/allenai/Olmo-3-7B-Think
 - Checkpoint SFT: https://huggingface.co/allenai/Olmo-3-7B-Think-SFT

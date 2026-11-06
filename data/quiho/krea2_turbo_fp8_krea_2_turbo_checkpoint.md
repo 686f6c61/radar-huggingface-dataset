@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: el modelo cuantizado ocupa 12,01 GiB en disco, por lo que se recomienda al menos 16 GB de VRAM para inferencia comoda, aunque podria ejecutarse en 12 GB con optimizaciones adicionales.
 - GPUs recomendadas: tarjetas de consumo con 16 GB o 24 GB de VRAM, como RTX 4080, RTX 4090, o equivalentes de AMD con suficiente memoria.
 - No se recomienda para GPUs con menos de 12 GB de VRAM sin tecnicas de offloading.
-- Opciones de despliegue: al ser un modelo de diffusers, puede ejecutarse con la libreria diffusers de HuggingFace, o mediante interfaces como ComfyUI (dado que el modelo original se distribuye en Civitai con soporte para ComfyUI).
+- Opciones de despliegue: al ser un modelo de diffusers, puede ejecutarse con la libreria diffusers de Hugging Face, o mediante interfaces como ComfyUI (dado que el modelo original se distribuye en Civitai con soporte para ComfyUI).
 - Latencia y throughput: no disponibles. La variante Turbo sugiere una generacion mas rapida que el modelo base, pero no se proporcionan cifras concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tamano (pesos) | Cuantizacion | Velocidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 OSS Turbo (original) | 24,76 GiB (BF16) | BF16 | Alta (Turbo) | KREA 2 License | HuggingFace, Civitai |
-| Krea2 Turbo FP8 (este repo) | 12,01 GiB | FP8 selectivo | Alta (Turbo) | KREA 2 License | HuggingFace, Civitai |
-| Krea 2 Raw | no disponible | BF16 (presumible) | Media | KREA 2 License | HuggingFace, Civitai |
+| Krea 2 OSS Turbo (original) | 24,76 GiB (BF16) | BF16 | Alta (Turbo) | KREA 2 License | Hugging Face, Civitai |
+| Krea2 Turbo FP8 (este repo) | 12,01 GiB | FP8 selectivo | Alta (Turbo) | KREA 2 License | Hugging Face, Civitai |
+| Krea 2 Raw | no disponible | BF16 (presumible) | Media | KREA 2 License | Hugging Face, Civitai |
 
 No se dispone de comparaciones con otros modelos de difusion como SDXL o Flux, ya que no hay datos de rendimiento ni de calidad en la informacion proporcionada.
 
@@ -76,9 +76,9 @@ No se dispone de comparaciones con otros modelos de difusion como SDXL o Flux, y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Quiho/Krea2_Turbo_FP8_Krea_2_TURBO_checkpoint
+- Repositorio Hugging Face: https://huggingface.co/Quiho/Krea2_Turbo_FP8_Krea_2_TURBO_checkpoint
 - Pagina en Civitai: https://civitai.com/models/2723583/krea2-turbofp8
-- Modelo original Krea 2 Turbo en HuggingFace: https://huggingface.co/krea/Krea-2-Turbo
+- Modelo original Krea 2 Turbo en Hugging Face: https://huggingface.co/krea/Krea-2-Turbo
 - Checkpoints oficiales de Krea 2 Turbo en Civitai: https://civitai.com/models/2726029/krea-2-turbo-official-comfy-org-checkpoints-krea2
 - Otra version FP8 del mismo modelo: https://huggingface.co/szwagros/Krea-2-Turbo-fp8
 - Pagina de Krea AI para Krea 2 Turbo: https://www.krea.ai/models/krea-2-turbo

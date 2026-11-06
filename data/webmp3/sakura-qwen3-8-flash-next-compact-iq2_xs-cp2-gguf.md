@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sakura Qwen3.8 Flash-Next Compact IQ2_XS CP2 es un reempaquetado comunitario y experimental del modelo Qwen3.8-Flash-Next, publicado por el usuario webmp3 en HuggingFace. No es un modelo entrenado desde cero ni un afinado: parte del backbone cuantizado GSQ-RCO IQ2_XS de ISTA-DASLab y sustituye únicamente el shard independiente de tablas de búsqueda N-Gram/PLE por la tabla CP2 del proyecto Sakura, conservando el primer shard original sin cambios y la totalidad de los 512 expertos enrutados del modelo original.
+Sakura Qwen3.8 Flash-Next Compact IQ2_XS CP2 es un reempaquetado comunitario y experimental del modelo Qwen3.8-Flash-Next, publicado por el usuario webmp3 en Hugging Face. No es un modelo entrenado desde cero ni un afinado: parte del backbone cuantizado GSQ-RCO IQ2_XS de ISTA-DASLab y sustituye únicamente el shard independiente de tablas de búsqueda N-Gram/PLE por la tabla CP2 del proyecto Sakura, conservando el primer shard original sin cambios y la totalidad de los 512 expertos enrutados del modelo original.
 
 El modelo base es una arquitectura de mezcla de expertos (MoE) con 176.943.899.520 parametros totales segun los metadatos de safetensors, distribuida en dos ficheros GGUF que suman 52.666 GB (49.049 GiB) en el repositorio. El interes tecnico inmediato no esta en la calidad del modelo, sino en la ingenieria de empaquetado: reemplazar una tabla IQ4_NL por una representacion CP2 reduce el conjunto de 68.026 GB a 52.666 GB, un ahorro de aproximadamente 15,360 GB, manteniendo intacto el backbone IQ2_XS mixto.
 
@@ -23,7 +23,7 @@ Es relevante ahora como pieza de investigacion reproducible sobre formatos de cu
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer de mezcla de expertos con 512 expertos enrutados, heredado de Qwen/Qwen3.8-Flash-Next y cuantizado por ISTA-DASLab en su variante GSQ-RCO. Este repositorio no entrena, no afina y no poda expertos: el primer shard GGUF se copia sin cambios de payload ni de metadatos (identificado por su SHA256 LFS completo de HuggingFace), y solo se sustituye el segundo shard, que contiene la tabla de búsqueda N-Gram/PLE, por la tabla CP2 ya existente del repack Sakura K512 CP2.
+La arquitectura subyacente es un transformer de mezcla de expertos con 512 expertos enrutados, heredado de Qwen/Qwen3.8-Flash-Next y cuantizado por ISTA-DASLab en su variante GSQ-RCO. Este repositorio no entrena, no afina y no poda expertos: el primer shard GGUF se copia sin cambios de payload ni de metadatos (identificado por su SHA256 LFS completo de Hugging Face), y solo se sustituye el segundo shard, que contiene la tabla de búsqueda N-Gram/PLE, por la tabla CP2 ya existente del repack Sakura K512 CP2.
 
 El trabajo aportado por Sakura es exclusivamente la representacion de tabla y el empaquetado. La tabla CP2 es un derivado con perdida, no byte-identico a IQ4_NL; el autor verifico que el segundo shard original comparte SHA256 completo con la entrada IQ4_NL comun usada por el repack CP2 previo, y rehasheo localmente el 2026-10-21 tanto la tabla IQ4_NL original como la tabla CP2. Tambien se comprobaron los metadatos de direccionamiento de la tabla y la totalidad de los metadatos crudos del tokenizer contra la referencia ISTA Q2. No hubo nuevo encoder, entrenamiento, poda de expertos ni port de runtime.
 
@@ -88,13 +88,13 @@ Diferencias clave: frente al backbone de ISTA-DASLab, este paquete reduce el con
 - Riesgo de alucinacion: no disponible, y probablemente agravado por una cuantizacion de 2 bits, aunque no existen mediciones que lo cuantifiquen.
 - Idiomas soportados: no disponible; no se documenta cobertura multilingue para este empaquetado.
 - Licencia: los pesos conservan Qwen Community License 1.0, con condiciones completas en `LICENSE` y `LICENSE-QWEN`. La etiqueta Apache de la card upstream no reemplaza la licencia heredada de los pesos. Es obligatorio leer las condiciones antes de cualquier uso, incluido el comercial. El software del runtime tiene licencias MIT y de terceros separadas bajo `runtime/`, que no relicencian los pesos.
-- Integridad: la comprobacion tras la copia en servidor se hace contra los metadatos LFS de hash y tamano de HuggingFace; no se realiza una descarga completa independiente del nuevo repositorio.
+- Integridad: la comprobacion tras la copia en servidor se hace contra los metadatos LFS de hash y tamano de Hugging Face; no se realiza una descarga completa independiente del nuevo repositorio.
 - Ausencia de avales: los creditos del backbone corresponden a ISTA-DASLab y a Qwen; este release no reclama autoria del backbone, no implica reentrenamiento ni endorsamiento por parte de esos proyectos.
 - El modelo se publica con 0 descargas y 0 likes en el momento de la consulta, sin senales de uso comunitario.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-IQ2_XS-CP2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-IQ2_XS-CP2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Backbone cuantizado directo (ISTA-DASLab GSQ-RCO), revision `ed59f92082b1e93c0e96d60a8b11aab089b52f09`: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Shard CP2 y runtime de origen (Sakura K512 CP2), revision `9b8fef370b812b3fd33787869d553793517245cb`: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-47.6GiB-K512-CP2-v1-GGUF

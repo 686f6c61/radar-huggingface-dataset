@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`CrowdMind/lamb` (identificador interno del run `simple_20261101_curriculum`) es un checkpoint de un modelo de lenguaje experimental de tipo decoder-only, con arquitectura transformer autorregresiva, entrenado desde cero con el framework de codigo abierto nanochat. Lo publica el usuario CrowdMind en HuggingFace y se trata exclusivamente del checkpoint base tras preentrenamiento, no de un modelo ajustado por instrucciones ni de un asistente conversacional verificado. Su relevancia es acotada: sirve como material de investigacion y como punto de partida para fine-tuning dentro del ecosistema nanochat, no como modelo de produccion.
+`CrowdMind/lamb` (identificador interno del run `simple_20261101_curriculum`) es un checkpoint de un modelo de lenguaje experimental de tipo decoder-only, con arquitectura transformer autorregresiva, entrenado desde cero con el framework de codigo abierto nanochat. Lo publica el usuario CrowdMind en Hugging Face y se trata exclusivamente del checkpoint base tras preentrenamiento, no de un modelo ajustado por instrucciones ni de un asistente conversacional verificado. Su relevancia es acotada: sirve como material de investigacion y como punto de partida para fine-tuning dentro del ecosistema nanochat, no como modelo de produccion.
 
 El modelo es muy pequeno: 12 capas, embeddings de 768 dimensiones, 6 cabezas de atencion y 6 cabezas KV, con un tokenizador BPE propio de nanochat de 32.768 tokens y una longitud maxima de secuencia de 8.196 tokens. El entrenamiento se realizo en una unica GPU NVIDIA GeForce RTX 4060 Ti con computo en BF16, lo que da una idea clara de la escala del experimento: es un modelo de juguete o de laboratorio, no un modelo competitivo frente a alternativas de su rango.
 
-El checkpoint publicado corresponde al paso 1.679, con una metrica de validacion BPB (bits por byte) final de 0,3356 y una metrica CORE de 0,0521. El repositorio de HuggingFace aparece con 0 GB de tamano, 0 descargas y 0 likes en el momento de la consulta, y la model card no declara licencia, idiomas ni pipeline. Todo ello apunta a una publicacion tecnica temprana y poco documentada en sus metadatos de plataforma.
+El checkpoint publicado corresponde al paso 1.679, con una metrica de validacion BPB (bits por byte) final de 0,3356 y una metrica CORE de 0,0521. El repositorio de Hugging Face aparece con 0 GB de tamano, 0 descargas y 0 likes en el momento de la consulta, y la model card no declara licencia, idiomas ni pipeline. Todo ello apunta a una publicacion tecnica temprana y poco documentada en sus metadatos de plataforma.
 
 ## Especificaciones tecnicas
 
@@ -79,13 +79,13 @@ No disponible. La model card no incluye comparaciones con otros modelos y no se 
 - El texto sobre codigo y seguridad no implica que el codigo generado sea seguro; requiere revision y pruebas antes de cualquier uso.
 - Los datos de entrenamiento pueden contener material personal, con copyright o de baja calidad; el manifiesto no resuelve la procedencia ni las licencias de los datasets.
 - La evaluacion publicada cubre solo tareas seleccionadas y no establece generalizacion, calibracion, privacidad, seguridad ni robustez.
-- No se declara licencia en HuggingFace ni en la model card, por lo que el uso comercial y la redistribucion no estan autorizados de forma explicita.
+- No se declara licencia en Hugging Face ni en la model card, por lo que el uso comercial y la redistribucion no estan autorizados de forma explicita.
 - No se documentan idiomas soportados ni tipos de cuantizacion disponibles.
 - El repositorio figura con 0 GB de tamano en la plataforma, lo que puede indicar que los pesos no estan efectivamente alojados o que la informacion de plataforma esta incompleta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrowdMind/lamb
+- Modelo en Hugging Face: https://huggingface.co/CrowdMind/lamb
 - Codigo de entrenamiento citado en la model card: `scripts/base_train.py` via `runs/simple.sh` (ruta del repositorio nanochat del autor, no enlazada publicamente en la informacion disponible)
 - Evaluacion base: `output/models/simple_20261101_curriculum/base_eval/base_model_001679.csv` (ruta interna del repositorio del autor)
 - Metadatos del checkpoint: `output/models/simple_20261101_curriculum/base_checkpoints/simple_20261101_curriculum/meta_001679.json` (ruta interna)

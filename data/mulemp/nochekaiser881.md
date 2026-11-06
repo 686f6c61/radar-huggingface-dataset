@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mulemp/nochekaiser881` es un repositorio de pesos publicado en HuggingFace por el usuario `mulemp`. En el momento de la consulta no se ha publicado informacion tecnica asociada: no consta pipeline declarado, licencia, idiomas soportados, model card descriptiva ni resultados de evaluacion. Por tanto, no es posible confirmar que tipo de modelo contiene el repositorio (lenguaje, vision, audio, difusion u otro), ni su arquitectura, tamano o proceso de entrenamiento.
+`mulemp/nochekaiser881` es un repositorio de pesos publicado en Hugging Face por el usuario `mulemp`. En el momento de la consulta no se ha publicado informacion tecnica asociada: no consta pipeline declarado, licencia, idiomas soportados, model card descriptiva ni resultados de evaluacion. Por tanto, no es posible confirmar que tipo de modelo contiene el repositorio (lenguaje, vision, audio, difusion u otro), ni su arquitectura, tamano o proceso de entrenamiento.
 
-El unico dato objetivo relevante es el tamano del repositorio, 129,0 GB, junto con el acceso restringido (gated), que obliga a aceptar condiciones en HuggingFace antes de descargar los pesos. Un volumen de pesos de ese orden es compatible con modelos de decenas de miles de millones de parametros en precision de 16 bits, pero esta interpretacion es una inferencia aritmetica a partir del tamano del repo y no un dato confirmado por el autor.
+El unico dato objetivo relevante es el tamano del repositorio, 129,0 GB, junto con el acceso restringido (gated), que obliga a aceptar condiciones en Hugging Face antes de descargar los pesos. Un volumen de pesos de ese orden es compatible con modelos de decenas de miles de millones de parametros en precision de 16 bits, pero esta interpretacion es una inferencia aritmetica a partir del tamano del repo y no un dato confirmado por el autor.
 
 La relevancia practica de esta ficha es, por tanto, limitada y de caracter cautelar: sirve para dejar constancia de que el artefacto existe, es grande y esta restringido, y de que cualquier evaluacion seria exige primero acceso a los pesos, a la model card y a la licencia. Con 0 descargas y 1 like registrados, el modelo no cuenta con validacion por parte de la comunidad.
 
@@ -21,7 +21,7 @@ La relevancia practica de esta ficha es, por tanto, limitada y de caracter caute
 | Licencia | no disponible |
 | Formato de pesos | no disponible (el repositorio incluye 129,0 GB de archivos, pero no se ha confirmado su formato) |
 | Tamano del repositorio | 129,0 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Autor | mulemp |
 | Fecha de creacion | 2026-05-08 |
@@ -40,7 +40,7 @@ Respecto al entrenamiento, no consta el volumen de tokens utilizado, la composic
 
 No es posible enumerar capacidades concretas sin informacion del autor ni acceso a los pesos. Lo unico verificable es lo siguiente:
 
-- No hay pipeline declarado en HuggingFace, por lo que no se confirma si el modelo realiza generacion de texto, transcripcion, sintesis de voz, generacion de imagen, clasificacion u otra tarea.
+- No hay pipeline declarado en Hugging Face, por lo que no se confirma si el modelo realiza generacion de texto, transcripcion, sintesis de voz, generacion de imagen, clasificacion u otra tarea.
 - No se confirma soporte de tool calling ni de function calling.
 - No se confirma soporte de agentes ni de razonamiento multi-paso.
 - No se confirma cobertura multilingue ni el castellano entre los idiomas soportados.
@@ -101,7 +101,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mulemp/nochekaiser881
+- Repositorio en Hugging Face: https://huggingface.co/mulemp/nochekaiser881
 - Pagina de acceso gated (condiciones del autor): https://huggingface.co/mulemp/nochekaiser881 (requiere iniciar sesion y aceptar condiciones)
 - Perfil del autor: https://huggingface.co/mulemp
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

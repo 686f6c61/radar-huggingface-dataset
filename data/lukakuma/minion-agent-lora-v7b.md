@@ -5,7 +5,7 @@
 
 El adaptador está etiquetado para inglés y coreano, y se ha entrenado, según los metadatos, sobre el dataset `lukakuma/web-trajectories-sft`, orientado a trayectorias web y ajuste supervisado. Su interés actual está en la experimentación con agentes que interactúan con páginas y herramientas mediante llamadas a funciones, no en el despliegue directo como modelo autónomo.
 
-El acceso al repositorio está restringido y requiere aceptar condiciones en HuggingFace. La licencia es `mixed-per-source` (etiqueta `other`), no hay benchmarks publicados en la información disponible y no se especifican cuantizaciones ni requisitos de hardware.
+El acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face. La licencia es `mixed-per-source` (etiqueta `other`), no hay benchmarks publicados en la información disponible y no se especifican cuantizaciones ni requisitos de hardware.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -16,14 +16,14 @@ El acceso al repositorio está restringido y requiere aceptar condiciones en Hug
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible; no se distribuyen cuantizaciones en la información disponible |
 | Idiomas soportados | en, ko |
-| Licencia | mixed-per-source (etiqueta `other` en HuggingFace) |
+| Licencia | mixed-per-source (etiqueta `other` en Hugging Face) |
 | Formato de pesos | safetensors (adaptador LoRA PEFT) |
 | Modelo base | `lukakuma/minion_l32_1d2B_l30_grpo` |
 | Dataset de entrenamiento | `lukakuma/web-trajectories-sft` |
 | Librería | peft |
 | Pipeline | no disponible |
 | Tamaño del repositorio | 2,6 GB |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 El artefacto es un adaptador LoRA de la librería PEFT, no un modelo completo. La arquitectura efectiva es la del modelo base `lukakuma/minion_l32_1d2B_l30_grpo`, que no se describe en la información proporcionada. No se especifican el rango, el alpha, los módulos objetivo ni el número de tokens de entrenamiento del adaptador. El identificador del modelo base contiene `1d2B`, pero no hay confirmación de que indique 1,2 mil millones de parámetros.
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos alternativos comparables. La única 
 ## Limitaciones y advertencias
 - No es un modelo autónomo: requiere el modelo base `lukakuma/minion_l32_1d2B_l30_grpo` y no se garantiza compatibilidad con otras variantes.
 - Licencia `mixed-per-source`: no se puede asumir uso comercial sin revisar las condiciones de cada fuente y la licencia del modelo base.
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace antes de descargar el adaptador.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face antes de descargar el adaptador.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento, seguridad o fiabilidad en tareas de agente.
 - Riesgo de alucinación y de acciones web erróneas: en un agente que interactúa con páginas, los errores pueden tener efectos reales; se recomienda sandbox, validación y confirmación humana.
 - Riesgo de prompt injection: las páginas web pueden contener instrucciones maliciosas; no se documentan defensas específicas.
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos alternativos comparables. La única 
 - El tamaño del repositorio (2,6 GB) no implica que el adaptador sea autónomo ni que su despliegue sea inmediato.
 
 ## Enlaces
-- [HuggingFace: lukakuma/minion-agent-lora-v7b](https://huggingface.co/lukakuma/minion-agent-lora-v7b)
+- [Hugging Face: lukakuma/minion-agent-lora-v7b](https://huggingface.co/lukakuma/minion-agent-lora-v7b)
 - [Modelo base: lukakuma/minion_l32_1d2B_l30_grpo](https://huggingface.co/lukakuma/minion_l32_1d2B_l30_grpo)
 - [Dataset: lukakuma/web-trajectories-sft](https://huggingface.co/datasets/lukakuma/web-trajectories-sft)
 - No se han proporcionado enlaces adicionales a papers, blogs, repositorios o demos.

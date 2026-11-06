@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wan2wan2 (identificador `Lnypuuuu/Wan2wan2`, denominado "wanda2" en su propia model card) es un adaptador LoRA para generacion de imagenes a partir de texto, publicado por el usuario Lnypuuuu sobre HuggingFace. Se distribuye con la libreria `diffusers` y esta construido sobre el modelo base `krea/Krea-2-Turbo`, segun los metadatos de la ficha (etiquetas `base_model:krea/Krea-2-Turbo` y `base_model:adapter:krea/Krea-2-Turbo`).
+Wan2wan2 (identificador `Lnypuuuu/Wan2wan2`, denominado "wanda2" en su propia model card) es un adaptador LoRA para generacion de imagenes a partir de texto, publicado por el usuario Lnypuuuu sobre Hugging Face. Se distribuye con la libreria `diffusers` y esta construido sobre el modelo base `krea/Krea-2-Turbo`, segun los metadatos de la ficha (etiquetas `base_model:krea/Krea-2-Turbo` y `base_model:adapter:krea/Krea-2-Turbo`).
 
 El problema que resuelve es el habitual de los LoRA de difusion: especializar un modelo text-to-image ya entrenado hacia un estilo, concepto o sujeto concreto sin necesidad de reentrenar el modelo completo. Al tratarse de un adaptador de bajo rango, el coste de ajuste y de almacenamiento es teoricamente reducido frente a un fine-tuning completo, aunque en este caso el repositorio ocupa 13,1 GB, un valor atipico para un LoRA que sugiere la presencia de ficheros adicionales no desglosados en la informacion disponible.
 
@@ -73,8 +73,8 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA co
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Lnypuuuu/Wan2wan2` | LoRA sobre modelo de difusion | no disponible | no aplica | otra (`wan2wan2`) | HuggingFace, 8 descargas |
-| `krea/Krea-2-Turbo` | Modelo base text-to-image | no disponible | no aplica | no disponible | HuggingFace (referenciado) |
+| `Lnypuuuu/Wan2wan2` | LoRA sobre modelo de difusion | no disponible | no aplica | otra (`wan2wan2`) | Hugging Face, 8 descargas |
+| `krea/Krea-2-Turbo` | Modelo base text-to-image | no disponible | no aplica | no disponible | Hugging Face (referenciado) |
 | Otros LoRA de la misma categoria | Adaptador de difusion | no disponible | no aplica | no disponible | no disponible |
 
 Cualquier comparacion con alternativas exigiria disponer de la model card completa del modelo base y de evaluaciones homogeneas del adaptador, que no existen en la informacion consultada.
@@ -93,7 +93,7 @@ Cualquier comparacion con alternativas exigiria disponer de la model card comple
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Lnypuuuu/Wan2wan2
+- Pagina del modelo en Hugging Face: https://huggingface.co/Lnypuuuu/Wan2wan2
 - Model card (README) en el repositorio: https://huggingface.co/Lnypuuuu/Wan2wan2/blob/main/README.md
 - Ficheros y versiones del repositorio: https://huggingface.co/Lnypuuuu/Wan2wan2/tree/main
 - Modelo base referenciado: https://huggingface.co/krea/Krea-2-Turbo

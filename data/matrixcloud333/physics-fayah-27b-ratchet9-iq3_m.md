@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Physics-Fayah 27B (Ratchet-9) es un modelo de lenguaje de 27.000 millones de parametros publicado por el usuario matrixCloud333 en HuggingFace, derivado del checkpoint Qwen/Qwen3.8-27B-TurboFCFusion mediante nueve rondas consecutivas de calibracion direccional de pesos. Esta orientado de forma especifica a fisica computacional, resolucion numerica de EDO y EDP, invariantes diferenciales y desarrollo de software cientifico en Python, Rust y C++.
+Physics-Fayah 27B (Ratchet-9) es un modelo de lenguaje de 27.000 millones de parametros publicado por el usuario matrixCloud333 en Hugging Face, derivado del checkpoint Qwen/Qwen3.8-27B-TurboFCFusion mediante nueve rondas consecutivas de calibracion direccional de pesos. Esta orientado de forma especifica a fisica computacional, resolucion numerica de EDO y EDP, invariantes diferenciales y desarrollo de software cientifico en Python, Rust y C++.
 
 La relevancia declarada del checkpoint reside en su metodo de ajuste: segun la model card, la calibracion se ejecuto integramente en hardware de consumo (una RTX 5060 Ti junto a un Ryzen Zen 4 con AVX-512), modificando decenas de millones de interacciones de parametros sobre 336 tensores y validando el resultado contra una suite de 89 comprobaciones fisicas sin regresion de retencion. Incorpora cabezas de prediccion multi-token (MTP) para decodificacion especulativa y declara una ventana de contexto de 200.000 tokens.
 
@@ -95,6 +95,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matrixCloud333/Physics-Fayah-27B-Ratchet9-IQ3_M
+- Hugging Face: https://huggingface.co/matrixCloud333/Physics-Fayah-27B-Ratchet9-IQ3_M
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B-TurboFCFusion
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo (los resultados obtenidos correspondian a contenido no relacionado sobre hongos de pudricion de la madera).

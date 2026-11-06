@@ -2,7 +2,7 @@
 
 ## Resumen
 
-shears-translate-en-ja es un traductor experimental inglés→japonés publicado por el usuario a1cd en HuggingFace, derivado de google/gemma-4-26B-A4B-it (un modelo de mezcla de expertos de 26B de parámetros totales con 4B activos, 30 capas y 128 expertos por capa). El proceso consiste en podar 120 de los 128 expertos de cada capa, conservando solo 8, y después "curar" (healing) el modelo podado mediante LoRA por bloques para que reproduzca las salidas del modelo original. Como los 8 expertos que se conservan son exactamente los 8 que se activaban por token, tras la poda no queda nada que enrutar y el modelo se comporta como un denso de aproximadamente 3,8B de parámetros (3.812.389.646 según los safetensors del repositorio).
+shears-translate-en-ja es un traductor experimental inglés→japonés publicado por el usuario a1cd en Hugging Face, derivado de google/gemma-4-26B-A4B-it (un modelo de mezcla de expertos de 26B de parámetros totales con 4B activos, 30 capas y 128 expertos por capa). El proceso consiste en podar 120 de los 128 expertos de cada capa, conservando solo 8, y después "curar" (healing) el modelo podado mediante LoRA por bloques para que reproduzca las salidas del modelo original. Como los 8 expertos que se conservan son exactamente los 8 que se activaban por token, tras la poda no queda nada que enrutar y el modelo se comporta como un denso de aproximadamente 3,8B de parámetros (3.812.389.646 según los safetensors del repositorio).
 
 El resultado se distribuye únicamente como GGUF Q4_K_M de 2.753.442.560 bytes (unos 2,75 GB), lo que permite ejecutarlo en un portátil. Está pensado para un uso muy acotado: un system prompt fijo que convierte toda entrada en texto a traducir, pensamiento desactivado, temperatura 0 y mensajes de 1 a 110 palabras. El propio autor lo describe como un artefacto de investigación, no como un traductor pulido, y advierte explícitamente contra su uso en textos médicos, legales o críticos para la seguridad.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 |---|---|---|---|---|---|
 | shears-translate-en-ja (este) | ~3,8B denso tras poda (base MoE 26B) | No disponible | Traducción EN→JA con prompt fijo, poda de expertos + healing | Apache 2.0 | GGUF Q4_K_M, 2,75 GB |
 | google/gemma-4-26B-A4B-it (modelo base) | 26B totales, 4B activos | No disponible en la informacion proporcionada | Modelo generalista instruido, multilingüe | Licencia Gemma (no indicada en la informacion disponible) | Pesos completos; requiere hardware muy superior |
-| Traductores neuronales dedicados de tamano similar (familia Opus-MT / NLLB) | ~0,1B–0,6B | ~512 tokens en las variantes habituales | Traducción supervisada específica de par de idiomas | Variables segun modelo (algunas no comerciales) | Muy extendidos en HuggingFace y en frameworks de traduccion |
+| Traductores neuronales dedicados de tamano similar (familia Opus-MT / NLLB) | ~0,1B–0,6B | ~512 tokens en las variantes habituales | Traducción supervisada específica de par de idiomas | Variables segun modelo (algunas no comerciales) | Muy extendidos en Hugging Face y en frameworks de traduccion |
 
 No se dispone de datos de benchmarks que permitan comparar calidad de traducción de forma objetiva entre estas opciones. La comparación con las alternativas dedicadas se basa en conocimiento general de la categoria y debe verificarse antes de tomar una decision; la información proporcionada solo documenta con detalle el modelo objeto de esta ficha y su base.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad de traducció
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/a1cd/shears-translate-en-ja-GGUF
+- Modelo en Hugging Face: https://huggingface.co/a1cd/shears-translate-en-ja-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Profesor 4-bit QAT: https://huggingface.co/mlx-community/gemma-4-26B-A4B-it-qat-4bit
 - Herramienta Shears (poda y healing): https://github.com/a1cd/Shears

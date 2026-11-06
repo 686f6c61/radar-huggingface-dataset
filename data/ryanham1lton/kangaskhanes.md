@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KangaskhanES es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible en su repositorio es extremadamente limitada: la model card únicamente contiene la declaracion de licencia, sin descripcion, sin datos de arquitectura, sin parametros, sin contexto y sin idiomas declarados. El repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
+KangaskhanES es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible en su repositorio es extremadamente limitada: la model card únicamente contiene la declaracion de licencia, sin descripcion, sin datos de arquitectura, sin parametros, sin contexto y sin idiomas declarados. El repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
 
 El sufijo "ES" del nombre sugiere un posible enfoque en castellano, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor. Del mismo modo, no consta pipeline declarado (text-generation, text-to-text, etc.), por lo que no es posible confirmar si se trata de un modelo de lenguaje, de un adaptador LoRA, de un modelo de embeddings o de otro tipo de artefacto. El tamano del repositorio (0,1 GB) es compatible tanto con un adaptador de bajo rango como con un modelo pequeno cuantizado, sin que haya informacion que permita decantarse por una opcion.
 
@@ -76,7 +76,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| KangaskhanES | no disponible | no disponible | cc-by-4.0 | HuggingFace |
+| KangaskhanES | no disponible | no disponible | cc-by-4.0 | Hugging Face |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,5 +94,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Ryanham1lton/KangaskhanES
+- Pagina del modelo en Hugging Face: https://huggingface.co/Ryanham1lton/KangaskhanES
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

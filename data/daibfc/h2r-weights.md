@@ -18,7 +18,7 @@ La relevancia actual es acotada pero específica: demuestra que es posible const
 | Longitud de contexto | no aplica (política de control, no modelo de secuencia) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no aplica (robótica) |
-| Licencia | NVIDIA Open Model License (etiquetada como `other` en HuggingFace) |
+| Licencia | NVIDIA Open Model License (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | PyTorch `.pt` (`model_step_015000.pt`, incluye pesos de SONIC congelado); matriz de steering en `.npz` (`steer_basis_v1`) |
 
 ## Arquitectura y entrenamiento
@@ -84,9 +84,9 @@ Desglose por máquina (688 episodios cada una, pickup/éxito): A100 496/397 → 
 
 | Modelo | Tipo | Base | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| H2R (este repositorio) | Política residual PPO | SONIC (GR00T-WholeBodyControl) | Loco-manipulación de caja en Unitree G1 | NVIDIA Open Model License | Pesos en HuggingFace, 0 descargas |
+| H2R (este repositorio) | Política residual PPO | SONIC (GR00T-WholeBodyControl) | Loco-manipulación de caja en Unitree G1 | NVIDIA Open Model License | Pesos en Hugging Face, 0 descargas |
 | SONIC (NVIDIA GR00T-WholeBodyControl) | Modelo base de control corporal completo | — | Control corporal completo de humanoides | no disponible | Referenciado como base congelada; pesos incluidos en los checkpoints |
-| `daibfc/h2r-steering` | Matriz de direccionamiento por tokens | Calibrada sobre SONIC | Control de velocidad de marcha | no disponible | HuggingFace |
+| `daibfc/h2r-steering` | Matriz de direccionamiento por tokens | Calibrada sobre SONIC | Control de velocidad de marcha | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos alternativos comparables en la información proporcionada.
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de modelos alternativos comparables en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daibfc/h2r-weights
+- Hugging Face: https://huggingface.co/daibfc/h2r-weights
 - Repositorio de steering: https://huggingface.co/daibfc/h2r-steering
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Dataset OMOMO: no disponible en la información proporcionada

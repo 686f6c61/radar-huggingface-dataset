@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/ARI-32B-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/ARI-32B-GGUF
 - Modelo base: https://huggingface.co/DAMI-Lab/ARI-32B
 - Pagina de descargas del autor: https://hf.tst.eu/model#ARI-32B-GGUF
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

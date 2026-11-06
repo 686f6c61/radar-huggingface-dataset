@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "NellWatson/Qwen3.5-0.8B-millos-routing-q4f16_1-MLC",
+  "slug": "nellwatson-qwen3-5-0-8b-millos-routing-q4f16_1-mlc",
+  "author": "NellWatson",
+  "url": "https://huggingface.co/NellWatson/Qwen3.5-0.8B-millos-routing-q4f16_1-MLC",
+  "created_at": "2026-11-03T14:10:39.000Z",
+  "updated_at": "2026-11-04T01:00:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "webgpu",
+    "classification",
+    "millos",
+    "en",
+    "pt",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 733543470,
+  "storage_human": "734 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NellWatson/Qwen3.5-0.8B-millos-routing-q4f16_1-MLC · Hugging Face",
+      "url": "https://huggingface.co/NellWatson/Qwen3.5-0.8B-millos-routing-q4f16_1-MLC",
+      "snippet": "A LoRA fine-tune of Qwen/Qwen3.5-0.8B (revision 2fc06364), merged and converted to web-llm's q4f16_1 format, for the on-device incident router in MillOS, a grain-mill digital twin that runs in the browser. It is the 0.8B sibling of NellWatson/Qwen3.5-4B-millos-routing-q4f16_1-MLC, trained with the same settings."
+    },
+    {
+      "title": "mlc-ai/Qwen3.5-0.8B-q4f16_1-MLC at main - Hugging Face",
+      "url": "https://huggingface.co/mlc-ai/Qwen3.5-0.8B-q4f16_1-MLC/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

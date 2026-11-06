@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AISYAHLESTARI99/generation-notebook-2024` es un repositorio experimental de HuggingFace que contiene una implementación de referencia de un modelo Perceiver en configuración "nano", orientada a tareas de generación. Lo publica el usuario AISYAHLESTARI99 bajo licencia Apache 2.0 y, según la propia model card, el objetivo es ofrecer código transparente y pruebas de humo (smoke tests) reproducibles, sin reclamar resultados de benchmarks. No se trata de un modelo entrenado listo para producción, sino de un punto de partida con pesos de inicialización.
+`AISYAHLESTARI99/generation-notebook-2024` es un repositorio experimental de Hugging Face que contiene una implementación de referencia de un modelo Perceiver en configuración "nano", orientada a tareas de generación. Lo publica el usuario AISYAHLESTARI99 bajo licencia Apache 2.0 y, según la propia model card, el objetivo es ofrecer código transparente y pruebas de humo (smoke tests) reproducibles, sin reclamar resultados de benchmarks. No se trata de un modelo entrenado listo para producción, sino de un punto de partida con pesos de inicialización.
 
 El checkpoint `model.safetensors` contiene 49.600 parámetros totales, un tamaño extremadamente reducido que confirma el carácter didáctico y experimental del artefacto. La arquitectura es un Perceiver con atención lineal, fusión por concatenación con MLP, activación GELU-Tanh y normalización por BatchNorm. El repositorio incluye además `pipeline.py`, `config.json` y `training_args.json` con la receta de entrenamiento por defecto (AdamW con schedule coseno).
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AISYAHLESTARI99/generation-notebook-2024
+- Hugging Face: https://huggingface.co/AISYAHLESTARI99/generation-notebook-2024
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la búsqueda web proporcionada.

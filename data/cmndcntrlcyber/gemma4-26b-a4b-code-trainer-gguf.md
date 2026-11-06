@@ -4,7 +4,7 @@
 
 `cmndcntrlcyber/gemma4-26b-a4b-code-trainer-gguf` es una publicacion de pesos cuantizados en formato GGUF derivada del modelo `google/gemma-4-26B-A4B-it`. El autor, `cmndcntrlcyber`, ha tomado el adaptador LoRA `gemma4-26b-a4b-code-trainer-v10-dpo`, lo ha fusionado (merge) sobre el modelo base de Google y ha generado dos cuantizaciones mediante `llama.cpp`. El resultado es un modelo orientado a generacion de codigo, listo para su uso en entornos de inferencia local como `llama.cpp`, Ollama, LM Studio o vLLM en modo GGUF experimental.
 
-El modelo cuenta con 25.233.142.046 parametros totales (aproximadamente 25,2 mil millones), segun los datos de safetensors del repositorio. La nomenclatura "26B-A4B" y el sufijo "it" (instruction-tuned) apuntan a un modelo de la familia Gemma 4 con arquitectura de mezcla de expertos (MoE), donde A4B indicaria del orden de 4 mil millones de parametros activos por token; sin embargo, ni la model card ni los metadatos de HuggingFace confirman explicitamente estos datos, por lo que se tratan como no disponibles en esta ficha.
+El modelo cuenta con 25.233.142.046 parametros totales (aproximadamente 25,2 mil millones), segun los datos de safetensors del repositorio. La nomenclatura "26B-A4B" y el sufijo "it" (instruction-tuned) apuntan a un modelo de la familia Gemma 4 con arquitectura de mezcla de expertos (MoE), donde A4B indicaria del orden de 4 mil millones de parametros activos por token; sin embargo, ni la model card ni los metadatos de Hugging Face confirman explicitamente estos datos, por lo que se tratan como no disponibles en esta ficha.
 
 La relevancia de esta publicacion es practica: permite ejecutar un modelo de ~25B parametros ajustado para codigo en hardware de consumo mediante cuantizaciones de 4 bits, sin necesidad de infraestructura de servidor. No obstante, se trata de un repositorio con 0 descargas y 1 like en el momento de la consulta, sin licencia declarada, sin idiomas declarados y sin benchmarks publicados, lo que limita seriamente su uso en produccion sin una evaluacion previa por parte del integrador.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento ni de terceros modelos comparables en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmndcntrlcyber/gemma4-26b-a4b-code-trainer-gguf
+- Modelo en Hugging Face: https://huggingface.co/cmndcntrlcyber/gemma4-26b-a4b-code-trainer-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Adaptador LoRA de origen: https://huggingface.co/cmndcntrlcyber/gemma4-26b-a4b-code-trainer-v10-dpo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

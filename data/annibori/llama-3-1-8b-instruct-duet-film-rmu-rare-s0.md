@@ -76,9 +76,9 @@ Referencia base: recuerdo de retencion 0.842; suelo de retencion admisible 0.542
 
 | Modelo | Parametros | Contexto | Olvido (recuerdo) | Retencion (recuerdo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-DUET-film-RMU-rare-s0 | 8.030 M | no disponible | 0.047 | 0.778 | llama3.1 | HuggingFace |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base del olvido) | 8.030 M (presumible) | no disponible | no disponible | 0.842 | llama3.1 | HuggingFace |
-| Llama-3.1-8B-Instruct (modelo original) | 8.030 M | 128.000 tokens (dato del modelo original, no confirmado en esta ficha) | no disponible | no disponible | llama3.1 | HuggingFace / Meta |
+| Llama-3.1-8B-Instruct-DUET-film-RMU-rare-s0 | 8.030 M | no disponible | 0.047 | 0.778 | llama3.1 | Hugging Face |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base del olvido) | 8.030 M (presumible) | no disponible | no disponible | 0.842 | llama3.1 | Hugging Face |
+| Llama-3.1-8B-Instruct (modelo original) | 8.030 M | 128.000 tokens (dato del modelo original, no confirmado en esta ficha) | no disponible | no disponible | llama3.1 | Hugging Face / Meta |
 
 No se dispone de datos de benchmarks estandar ni de otros checkpoints de olvido comparables en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks estandar ni de otros checkpoints de olvido 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-RMU-rare-s0
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-RMU-rare-s0
 - Modelo base del olvido: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Conjunto de datos DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Framework open-unlearning: no disponible en la informacion proporcionada (referenciado como `open-unlearning` en la model card)

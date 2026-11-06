@@ -88,7 +88,7 @@ La informacion proporcionada no incluye datos de rendimiento del modelo base ni 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/TheUnderscore/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-W4A16-AWQ
+- Hugging Face (este modelo): https://huggingface.co/TheUnderscore/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-W4A16-AWQ
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Herramienta de cuantizacion llmcompressor: https://github.com/vllm-project/llmcompressor
 - Nota: la busqueda web asociada a esta ficha no devolvio ningun resultado relacionado con el modelo, su modelo base ni su familia arquitectonica.

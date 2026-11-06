@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de política robótica entrenado con LeRobot para la tarea "Peanut Pick and Place" (recogida y colocación de cacahuetes), identificada internamente como Task_000004. El nombre del modelo indica que se trata de un ajuste fino del modelo EO1 en su variante Vision (EO1-Vision), con una tasa de aprendizaje de 2e-5, tamano de lote 16 y guardado en el paso 10.000 del entrenamiento. El autor es el usuario de HuggingFace Dongkkka, que mantiene además el dataset de entrenamiento asociado y otros checkpoints de la misma tarea con arquitecturas distintas (por ejemplo, Pi0.5).
+Este repositorio contiene un checkpoint de política robótica entrenado con LeRobot para la tarea "Peanut Pick and Place" (recogida y colocación de cacahuetes), identificada internamente como Task_000004. El nombre del modelo indica que se trata de un ajuste fino del modelo EO1 en su variante Vision (EO1-Vision), con una tasa de aprendizaje de 2e-5, tamano de lote 16 y guardado en el paso 10.000 del entrenamiento. El autor es el usuario de Hugging Face Dongkkka, que mantiene además el dataset de entrenamiento asociado y otros checkpoints de la misma tarea con arquitecturas distintas (por ejemplo, Pi0.5).
 
 El problema que resuelve es acotado: dotar a un brazo robótico de la capacidad de ejecutar una manipulación de precisión sobre objetos pequenos y posiblemente deformables, a partir de observaciones visuales y del estado del robot. No es un modelo de lenguaje general, sino un modelo de visión-lenguaje-acción (VLA) orientado a control motor, por lo que su utilidad está en el ámbito de la robótica de manipulación y no en tareas de texto.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. No c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EO1-Vision bs16 step10000 (este checkpoint) | 3,77 mil millones | No disponible | No disponible | No disponible | HuggingFace, 12 descargas |
-| Dongkkka Pi0.5 bs32 step20000 (misma tarea) | No disponible | No disponible | No disponible | No disponible | HuggingFace, mismo autor y dataset |
+| EO1-Vision bs16 step10000 (este checkpoint) | 3,77 mil millones | No disponible | No disponible | No disponible | Hugging Face, 12 descargas |
+| Dongkkka Pi0.5 bs32 step20000 (misma tarea) | No disponible | No disponible | No disponible | No disponible | Hugging Face, mismo autor y dataset |
 | Otras políticas VLA de código abierto (OpenVLA, Octo, pi0) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No verificada en esta búsqueda |
 
 No se dispone de datos suficientes para una comparación cuantitativa fiable. La única comparación sustentada por la información recuperada es la existencia de un checkpoint alternativo de la misma tarea entrenado sobre Pi0.5 con lote 32 y 20.000 pasos, que emplea los 35 episodios del dataset común.
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para una comparación cuantitativa fiable. La
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_EO1-VisionLR2e5-bs16-step10000
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_EO1-VisionLR2e5-bs16-step10000
 - Dataset de la tarea: https://huggingface.co/datasets/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern
 - Checkpoint alternativo basado en Pi0.5: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_Pi0.5_bs32_step20000
 - Ficha del dataset en Claru: https://claru.ai/datasets/dongkkka-task-000004-peanut-pick-place-lerobot-intern

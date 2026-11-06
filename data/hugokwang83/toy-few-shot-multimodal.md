@@ -68,5 +68,5 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hugokwang83/toy-few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/hugokwang83/toy-few-shot-multimodal
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la busqueda web.

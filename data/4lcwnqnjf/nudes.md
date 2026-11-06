@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `4lcwnqnjf/nudes` es un repositorio alojado en HuggingFace por el usuario `4lcwnqnjf`. En el momento de redactar esta ficha, el repositorio no incluye informacion tecnica publica: no se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni licencia. Se desconoce tambien la tarea para la que fue entrenado, ya que el campo de pipeline aparece como no disponible.
+El modelo identificado como `4lcwnqnjf/nudes` es un repositorio alojado en Hugging Face por el usuario `4lcwnqnjf`. En el momento de redactar esta ficha, el repositorio no incluye informacion tecnica publica: no se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni licencia. Se desconoce tambien la tarea para la que fue entrenado, ya que el campo de pipeline aparece como no disponible.
 
 Los unicos metadatos confirmados son la region de publicacion (`region:us`) y la etiqueta `not-for-all-audiences`, que indica que el contenido del repositorio esta restringido a publico adulto. El repositorio acumula 0 descargas y 1 like, lo que sugiere que se trata de una publicacion reciente, de bajo uso o con visibilidad practicamente nula dentro de la plataforma.
 
@@ -67,7 +67,7 @@ No disponible. Sin conocer la tarea, el tamano ni la licencia del modelo, no es 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `4lcwnqnjf/nudes` | no disponible | no disponible | no disponible | HuggingFace (restringido a adultos) |
+| `4lcwnqnjf/nudes` | no disponible | no disponible | no disponible | Hugging Face (restringido a adultos) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,9 +80,9 @@ No disponible. Sin conocer la tarea, el tamano ni la licencia del modelo, no es 
 - El nombre del repositorio y la etiqueta de contenido restringido sugieren que puede tratarse de un modelo orientado a la generacion de material para adultos; esto no ha podido confirmarse con documentacion tecnica.
 - No se declara el formato de los pesos ni el pipeline, por lo que la integracion con herramientas estandar (transformers, diffusers u otras) no esta garantizada.
 - Con 0 descargas registradas, no existe evidencia de uso, validacion por parte de la comunidad ni soporte activo.
-- La fecha de creacion y actualizacion registrada es el 2026-10-05, segun los metadatos de HuggingFace.
+- La fecha de creacion y actualizacion registrada es el 2026-10-05, segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/4lcwnqnjf/nudes
+- Repositorio en Hugging Face: https://huggingface.co/4lcwnqnjf/nudes
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

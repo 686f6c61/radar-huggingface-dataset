@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - El modelo se ha entrenado únicamente en simulación (MuJoCo); no hay evidencia de que las políticas funcionen en un brazo físico real sin un proceso de sim-to-real.
 - La fase de PickAndPlace con PPO muestra una mejora modesta (+12.1%) y las fases con HER+DDPG empeoran respecto a la recompensa inicial (-10.6% y -15.3%), lo que sugiere que el algoritmo off-policy no convergió correctamente en estas tareas.
 - No se especifican hiperparámetros, arquitectura de red ni número de timesteps, lo que dificulta la reproducibilidad exacta.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace; se trata de un proyecto de investigación preliminar sin validación externa.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face; se trata de un proyecto de investigación preliminar sin validación externa.
 - No es un modelo de lenguaje: no puede interpretar instrucciones, mantener conversaciones ni generar texto.
 - La documentación está en coreano; la información en inglés es limitada.
 - La licencia MIT permite uso comercial, pero el autor no ofrece garantías de funcionamiento en entornos reales.
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jagwang/mungkeul-physical-ai
+- Modelo en Hugging Face: https://huggingface.co/jagwang/mungkeul-physical-ai
 - Página general sobre Physical AI: https://physical-ai.ai/
 - Artículo de Nature sobre IA física y robótica: https://www.nature.com/articles/s42256-026-01239-3
 - Fundamentos de Physical AI (arXiv): https://arxiv.org/pdf/2511.09497

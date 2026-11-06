@@ -76,5 +76,5 @@ No disponible. El repositorio no es comparable con modelos de generacion multimo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fabioribeirowood/study-multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/fabioribeirowood/study-multimodal-generation
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

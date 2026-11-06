@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups64-adaptive es un modelo de generacion de texto publicado en HuggingFace por el usuario Dohyeon1, con 30.532.122.624 parametros totales confirmados en los pesos (safetensors) y un repositorio de 61,1 GB. El identificador y la etiqueta de arquitectura (qwen3_moe) indican que se trata de una variante derivada de la familia Qwen3 de Alibaba, concretamente de un modelo de mezcla de expertos (MoE) de unos 30.000 millones de parametros totales. El sufijo del nombre, "Sub-MoE-ngroups64-adaptive", sugiere una modificacion del esquema de agrupacion y enrutado de expertos, aunque el autor no documenta en que consiste exactamente.
+Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups64-adaptive es un modelo de generacion de texto publicado en Hugging Face por el usuario Dohyeon1, con 30.532.122.624 parametros totales confirmados en los pesos (safetensors) y un repositorio de 61,1 GB. El identificador y la etiqueta de arquitectura (qwen3_moe) indican que se trata de una variante derivada de la familia Qwen3 de Alibaba, concretamente de un modelo de mezcla de expertos (MoE) de unos 30.000 millones de parametros totales. El sufijo del nombre, "Sub-MoE-ngroups64-adaptive", sugiere una modificacion del esquema de agrupacion y enrutado de expertos, aunque el autor no documenta en que consiste exactamente.
 
-El modelo resuelve, en principio, el mismo tipo de tareas que su base: generacion de texto conversacional y procesamiento de lenguaje natural con un coste de calculo por token muy inferior al de un modelo denso del mismo tamano, gracias al uso de parametros activos reducidos (el nombre "A3B" apunta a unos 3.000 millones de parametros activos). Su relevancia practica es limitada de momento: la ficha del repositorio es la plantilla automatica de HuggingFace sin rellenar, no declara licencia, idiomas ni datos de entrenamiento, y acumula cero descargas y cero valoraciones.
+El modelo resuelve, en principio, el mismo tipo de tareas que su base: generacion de texto conversacional y procesamiento de lenguaje natural con un coste de calculo por token muy inferior al de un modelo denso del mismo tamano, gracias al uso de parametros activos reducidos (el nombre "A3B" apunta a unos 3.000 millones de parametros activos). Su relevancia practica es limitada de momento: la ficha del repositorio es la plantilla automatica de Hugging Face sin rellenar, no declara licencia, idiomas ni datos de entrenamiento, y acumula cero descargas y cero valoraciones.
 
 La publicacion, fechada el 16 de septiembre de 2026 segun los metadatos del Hub, debe considerarse un experimento de investigacion sin validacion publica. Cualquier uso en produccion exige verificar primero el comportamiento real del modelo con evaluaciones propias.
 
@@ -75,7 +75,7 @@ Los datos de las alternativas proceden de sus fichas publicas, no de la informac
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups64-adaptive | 30,53 mil millones (confirmado) | no disponible | no disponible | no disponible | Repositorio HuggingFace con 0 descargas y 0 valoraciones |
+| Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups64-adaptive | 30,53 mil millones (confirmado) | no disponible | no disponible | no disponible | Repositorio Hugging Face con 0 descargas y 0 valoraciones |
 | Qwen3-30B-A3B (base probable) | 30,5 mil millones | 3,3 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente disponible y desplegado |
 | Qwen3-32B (denso, misma familia) | 32,8 mil millones | 32,8 mil millones (denso) | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente disponible |
 | Mixtral 8x7B (MoE de referencia, Mistral AI) | 46,7 mil millones | 12,9 mil millones | 32.768 tokens | Apache 2.0 | Ampliamente disponible |
@@ -84,7 +84,7 @@ La diferencia clave de esta variante frente a las alternativas es la ausencia de
 
 ## Limitaciones y advertencias
 
-- Ficha del modelo sin contenido: la model card es la plantilla automatica de HuggingFace con todos los campos marcados como "[More Information Needed]", por lo que se desconoce el proceso de entrenamiento, los datos utilizados y el proposito previsto por el autor.
+- Ficha del modelo sin contenido: la model card es la plantilla automatica de Hugging Face con todos los campos marcados como "[More Information Needed]", por lo que se desconoce el proceso de entrenamiento, los datos utilizados y el proposito previsto por el autor.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial, redistribucion o modificacion. En la practica, esto equivale a "todos los derechos reservados" en muchas jurisdicciones, y ademas impide verificar si se heredan las condiciones de la licencia Apache 2.0 de la familia Qwen3.
 - Riesgo de alucinacion desconocido: no hay evaluaciones de fidelidad, veracidad ni tasas de error, y tampoco se sabe si el modelo ha pasado por fases de alineacion (RLHF o DPO).
 - Sesgos no evaluados: no existe ningun analisis de sesgo de genero, raza, religion o idioma, ni informacion sobre la composicion del corpus de entrenamiento.
@@ -99,7 +99,7 @@ La diferencia clave de esta variante frente a las alternativas es la ausencia de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups64-adaptive
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups64-adaptive
 - Referencia citada en la etiqueta arxiv:1910.09700: https://arxiv.org/abs/1910.09700 (corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", citado en la plantilla generica de la model card; no es un articulo sobre este modelo)
 - Calculadora de impacto medioambiental enlazada en la plantilla: https://mlco2.github.io/impact
 - Repositorio de la familia base Qwen3 (referencia, no enlazado por el autor): https://huggingface.co/Qwen/Qwen3-30B-A3B

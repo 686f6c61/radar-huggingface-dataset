@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JunkyAI es un modelo de lenguaje en ingles entrenado desde cero por el usuario akkez0r y publicado en HuggingFace. Se trata de un transformer decoder-only de forma Llama con 15.735.168 parametros segun su model card (los metadatos de safetensors de la plataforma reportan 18.880.896, una discrepancia no explicada por el autor), 8 capas, dimension oculta 384 y una ventana de contexto de 512 tokens. No se apoya en ningun peso preentrenado: incluye su propio vocabulario BPE a nivel de byte (8.192 tokens), su propia implementacion de transformer, su bucle de entrenamiento y su propio escritor de ficheros GGUF, todo sobre tensores de PyTorch sin usar las librerias `transformers`, `tokenizers`, `peft` ni `gguf`.
+JunkyAI es un modelo de lenguaje en ingles entrenado desde cero por el usuario akkez0r y publicado en Hugging Face. Se trata de un transformer decoder-only de forma Llama con 15.735.168 parametros segun su model card (los metadatos de safetensors de la plataforma reportan 18.880.896, una discrepancia no explicada por el autor), 8 capas, dimension oculta 384 y una ventana de contexto de 512 tokens. No se apoya en ningun peso preentrenado: incluye su propio vocabulario BPE a nivel de byte (8.192 tokens), su propia implementacion de transformer, su bucle de entrenamiento y su propio escritor de ficheros GGUF, todo sobre tensores de PyTorch sin usar las librerias `transformers`, `tokenizers`, `peft` ni `gguf`.
 
 El modelo se entreno en dos fases sobre el corpus TinyStories: un preentrenamiento de 9.000 pasos que vio 221 millones de tokens (unas 3,4 epocas) con una perdida de validacion final de 1,4786 (perplejidad 4,4), y un ajuste por instrucciones de 300 pasos sobre 2.216 pares de un turno y 179 conversaciones multiturno generados sinteticamente, con perdida de validacion de 2,5164. Todo el preentrenamiento completo se ejecuto en una RTX 4060 de 8 GB en unos 55 minutos a 67.000 tokens por segundo, y el ajuste por instrucciones en unos 2 minutos.
 
@@ -24,11 +24,11 @@ Su relevancia no es de capacidad sino de legibilidad: es un ejemplo completo y a
 | Feed-forward | SwiGLU con dimension interna 1024 |
 | Vocabulario | 8.192 tokens, BPE a nivel de byte, entrenado sobre el mismo corpus |
 | Pipeline | text-generation |
-| Fecha de creacion / actualizacion en HuggingFace | 2026-09-12 / 2026-09-12 |
+| Fecha de creacion / actualizacion en Hugging Face | 2026-09-12 / 2026-09-12 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es deliberadamente identica en forma a la de Llama para que el GGUF exportado cargue sin modificaciones en llama.cpp, Ollama y LM Studio. La unica diferencia respecto a la implementacion habitual de HuggingFace es la aplicacion de RoPE sobre pares intercalados en lugar del split rotate-half, lo que coincide con `GGML_ROPE_TYPE_NORM` de ggml y evita cualquier paso de permutacion de pesos en la exportacion. El modelo usa grouped-query attention (6 cabezas de consulta, 2 de clave/valor), SwiGLU con dimension interna 1024, RMSNorm en configuracion pre-norm y un vocabulario BPE a nivel de byte de 8.192 entradas entrenado sobre el mismo corpus.
+La arquitectura es deliberadamente identica en forma a la de Llama para que el GGUF exportado cargue sin modificaciones en llama.cpp, Ollama y LM Studio. La unica diferencia respecto a la implementacion habitual de Hugging Face es la aplicacion de RoPE sobre pares intercalados en lugar del split rotate-half, lo que coincide con `GGML_ROPE_TYPE_NORM` de ggml y evita cualquier paso de permutacion de pesos en la exportacion. El modelo usa grouped-query attention (6 cabezas de consulta, 2 de clave/valor), SwiGLU con dimension interna 1024, RMSNorm en configuracion pre-norm y un vocabulario BPE a nivel de byte de 8.192 entradas entrenado sobre el mismo corpus.
 
 El preentrenamiento (etapa 1) uso las 300.000 historias de TinyStories, con 65,5 millones de tokens de entrenamiento y 329.000 de validacion. Se ejecutaron 9.000 pasos con batch 24, acumulacion de gradiente 2 y secuencia 512 (24.576 tokens por paso), sumando 221 millones de tokens vistos, aproximadamente 3,4 epocas. El optimizador fue AdamW con learning rate 3e-4, decaimiento coseno hasta el 10 %, 300 pasos de warmup y weight decay 0,1. El ajuste por instrucciones (etapa 2) empleo 2.216 pares de instruccion de un turno y 179 conversaciones multiturno generados sinteticamente con `openai/gpt-oss-120b` servido en Groq, con 120 ejemplos reservados para evaluacion sobre temas ausentes del conjunto de entrenamiento; se ejecutaron 300 pasos con batch 16 (unas 2 epocas) y learning rate 1e-4. Solo los tokens del asistente contribuyen a la perdida y los del prompt quedan enmascarados. Se hizo fine-tuning completo en lugar de LoRA porque a esta escala el modelo ocupa menos de 4 GB de VRAM durante el entrenamiento; el repositorio incluye implementaciones de LoRA y NF4 QLoRA para modelos base mayores.
 
@@ -85,10 +85,10 @@ No se dispone de datos verificados de rendimiento de los modelos alternativos de
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JunkyAI | 15,7 M (model card) / 18,9 M (metadatos safetensors) | 512 tokens | Ingles | cdla-sharing-1.0 | HuggingFace, GGUF Q8_0 |
-| TinyStories-33M (familia del corpus TinyStories) | 33 M | no disponible | Ingles | no disponible | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | no disponible | Ingles | no disponible | HuggingFace |
-| SmolLM-135M | 135 M | no disponible | Ingles | no disponible | HuggingFace |
+| JunkyAI | 15,7 M (model card) / 18,9 M (metadatos safetensors) | 512 tokens | Ingles | cdla-sharing-1.0 | Hugging Face, GGUF Q8_0 |
+| TinyStories-33M (familia del corpus TinyStories) | 33 M | no disponible | Ingles | no disponible | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | no disponible | Ingles | no disponible | Hugging Face |
+| SmolLM-135M | 135 M | no disponible | Ingles | no disponible | Hugging Face |
 
 La comparacion relevante en cuanto a filosofia de diseno es con la familia TinyStories: modelos de escala similar entrenados sobre el mismo corpus y con el mismo objetivo de generar ingles simple. Frente a ellos, JunkyAI anade un ajuste por instrucciones y una cadena de exportacion a GGUF propia. Frente a modelos de mas de mil millones de parametros (TinyLlama, SmolLM) la diferencia de capacidad es de uno a dos ordenes de magnitud en numero de parametros y no son alternativas funcionales para las mismas tareas.
 
@@ -110,7 +110,7 @@ La comparacion relevante en cuanto a filosofia de diseno es con la familia TinyS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akkez0r/JunkyAI
+- Modelo en Hugging Face: https://huggingface.co/akkez0r/JunkyAI
 - Dataset de entrenamiento: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper de TinyStories: https://arxiv.org/abs/2305.07759 (referenciado en los tags del modelo como `arxiv:2305.07759`)
 - Repositorio de codigo, demo o blog del autor: no disponible en la informacion proporcionada

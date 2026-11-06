@@ -75,6 +75,6 @@ No se dispone de una comparativa directa con otros modelos del mismo tamano y pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kabaros/ar-camel-ebooks-heavy-8.3M
+- Modelo en Hugging Face: https://huggingface.co/kabaros/ar-camel-ebooks-heavy-8.3M
 - Dataset asociado (composicion ebooks-heavy): https://huggingface.co/datasets/kabaros/ara-ebooks-heavy-8.3M
 - Coleccion de modelos arabes (referencia general): https://huggingface.co/collections/masoudmarandi/arabic-models

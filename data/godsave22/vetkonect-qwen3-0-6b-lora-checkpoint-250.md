@@ -4,7 +4,7 @@
 
 `Godsave22/vetkonect-qwen3-0.6b-lora-checkpoint-250` es un adaptador LoRA (PEFT) publicado por el usuario Godsave22 sobre el modelo base denso Qwen/Qwen3-0.6B. No se trata, por tanto, de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base para reproducir el comportamiento ajustado. El repositorio ocupa 0,1 GB y se distribuye en formato safetensors con la librería `peft` (versión declarada 0.20.0) y `transformers`, con la etiqueta de pipeline `text-generation` y `conversational`.
 
-El nombre del repositorio, "vetkonect", sugiere un ajuste orientado al dominio veterinario, pero la model card del autor es la plantilla por defecto de HuggingFace y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". El sufijo `checkpoint-250` indica que se trata de un punto de control intermedio guardado en el paso 250 de un entrenamiento, no necesariamente del estado final ni del mejor punto de convergencia.
+El nombre del repositorio, "vetkonect", sugiere un ajuste orientado al dominio veterinario, pero la model card del autor es la plantilla por defecto de Hugging Face y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". El sufijo `checkpoint-250` indica que se trata de un punto de control intermedio guardado en el paso 250 de un entrenamiento, no necesariamente del estado final ni del mejor punto de convergencia.
 
 La relevancia del modelo es limitada y hay que enmarcarla con honestidad: cuenta con 0 descargas y 0 "likes", no se ha publicado ningún benchmark ni ejemplo de uso, y no se ha declarado licencia. Su interés práctico reside en el modelo base subyacente, Qwen3-0.6B, un transformer denso de 0,6 mil millones de parámetros con 32.768 tokens de contexto nativo, muy barato de ejecutar y habitual como Modelo borrador en decodificación especulativa o como base para ajustes de dominio en hardware modesto.
 
@@ -95,7 +95,7 @@ La comparación directa con adaptadores LoRA equivalentes no es posible: no se h
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Godsave22/vetkonect-qwen3-0.6b-lora-checkpoint-250
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Godsave22/vetkonect-qwen3-0.6b-lora-checkpoint-250
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Documentación de PEFT: https://huggingface.co/docs/peft/index
 - Artículo citado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automático): https://arxiv.org/abs/1910.09700

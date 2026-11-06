@@ -63,7 +63,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qzzhang/PlantGeneAnn-v2-preview
+- Modelo en Hugging Face: https://huggingface.co/qzzhang/PlantGeneAnn-v2-preview
 - Repositorio GitHub: https://github.com/qzzhang0131/PlantGeneAnn/tree/main/
 - README del repositorio: https://github.com/qzzhang0131/PlantGeneAnn/blob/main/README.md
 - Paper en biorxiv: https://www.biorxiv.org/content/10.64898/2026.06.25.733695v1.full.pdf

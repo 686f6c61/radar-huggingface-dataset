@@ -88,7 +88,7 @@ La comparativa con Qwen3-235B-A22B y DeepSeek-V3 es orientativa, ya que no se ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/Qwen3.8-Flash-Next-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/dealignai/Qwen3.8-Flash-Next-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Recetas vLLM para el base: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

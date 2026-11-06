@@ -67,5 +67,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dora7/affine-5fhnbtexaw-notalone
+- Repositorio Hugging Face: https://huggingface.co/dora7/affine-5fhnbtexaw-notalone
 - Modelo base (referenciado): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft

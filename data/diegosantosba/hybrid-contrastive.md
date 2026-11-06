@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Diegosantosba/hybrid-contrastive` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de código (*codebase*) para experimentar con una arquitectura híbrida orientada a aprendizaje contrastivo. No es un modelo entrenado ni un checkpoint utilizable en producción: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El autor lo describe como una base "intencionadamente manejable" para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`Diegosantosba/hybrid-contrastive` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de código (*codebase*) para experimentar con una arquitectura híbrida orientada a aprendizaje contrastivo. No es un modelo entrenado ni un checkpoint utilizable en producción: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El autor lo describe como una base "intencionadamente manejable" para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El dato real de parámetros en safetensors es de 33.088 (aproximadamente 33 K), muy lejos de lo que sugiere la etiqueta `giant` que aparece en la tabla de arquitectura de la model card: esa etiqueta es un valor de configuración generado, no una medida del tamaño efectivo del modelo. El repositorio ocupa 0,0 GB e incluye el script `finetune.py`, `config.json`, `training_args.json` y el checkpoint de inicialización.
 
@@ -87,5 +87,5 @@ La diferencia relevante no es de tamaño, sino de estado: los dos modelos de ref
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Diegosantosba/hybrid-contrastive
+- Hugging Face: https://huggingface.co/Diegosantosba/hybrid-contrastive
 - No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repositorios de código o demos) asociados al modelo.

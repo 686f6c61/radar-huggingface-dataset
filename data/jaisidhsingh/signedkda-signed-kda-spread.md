@@ -27,7 +27,7 @@ No se han publicado datos sobre el conjunto de entrenamiento, el numero de token
 
 ## Capacidades
 
-No se ha publicado ninguna informacion sobre las capacidades del modelo. No hay descripcion en el repositorio de HuggingFace, ni en la pagina personal del autor, ni en sus repositorios de GitHub que indique que tareas puede realizar. El nombre sugiere que podria estar relacionado con la atencion delta de Kimi, que se usa en modelos de lenguaje grandes para mejorar la eficiencia, pero no se puede afirmar que este modelo tenga capacidades concretas de generacion, razonamiento, codigo o vision.
+No se ha publicado ninguna informacion sobre las capacidades del modelo. No hay descripcion en el repositorio de Hugging Face, ni en la pagina personal del autor, ni en sus repositorios de GitHub que indique que tareas puede realizar. El nombre sugiere que podria estar relacionado con la atencion delta de Kimi, que se usa en modelos de lenguaje grandes para mejorar la eficiencia, pero no se puede afirmar que este modelo tenga capacidades concretas de generacion, razonamiento, codigo o vision.
 
 - Generacion de texto: no confirmado
 - Razonamiento: no confirmado
@@ -50,7 +50,7 @@ Dado el tamano de 344 millones de parametros y el peso de 1,4 GB en safetensors 
 - VRAM estimada para inferencia: entre 1,4 GB (fp16) y 2,8 GB (fp32) para los pesos, mas overhead de activaciones y contexto; se recomienda al menos 4-6 GB de VRAM para una ventana de contexto moderada.
 - GPU recomendadas: una GPU consumer como RTX 3060 (12 GB) o RTX 4060 (8 GB) seria suficiente; una RTX 4090 permitiria mayor margen. Para entrenamiento o ajuste fino, se necesitaria al menos 12-16 GB de VRAM.
 - Compatibilidad con consumer GPU: si, cabria en GPUs de 8 GB o mas, dependiendo de la cuantizacion y la longitud de contexto.
-- Opciones de despliegue: al ser un modelo sin formato GGUF ni cuantizaciones publicadas, no se puede usar directamente con llama.cpp u Ollama. Habria que exportar los pesos a un formato compatible y cuantizarlos. Podria usarse con vLLM o TGI si se convierte a un formato estandar (por ejemplo, HuggingFace Transformers).
+- Opciones de despliegue: al ser un modelo sin formato GGUF ni cuantizaciones publicadas, no se puede usar directamente con llama.cpp u Ollama. Habria que exportar los pesos a un formato compatible y cuantizarlos. Podria usarse con vLLM o TGI si se convierte a un formato estandar (por ejemplo, Hugging Face Transformers).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No hay informacion suficiente para establecer una comparativa con modelos de la 
 
 ## Limitaciones y advertencias
 
-- **Falta de documentacion**: no hay descripcion, licencia ni especificaciones tecnicas en el repositorio de HuggingFace.
+- **Falta de documentacion**: no hay descripcion, licencia ni especificaciones tecnicas en el repositorio de Hugging Face.
 - **Riesgo de alucinacion**: al ser un modelo sin informacion sobre entrenamiento, no se puede evaluar su fiabilidad.
 - **Uso comercial**: sin licencia, no se puede usar en proyectos comerciales.
 - **Sesgos**: desconocidos.
@@ -68,7 +68,7 @@ No hay informacion suficiente para establecer una comparativa con modelos de la 
 
 ## Enlaces
 
-- [HuggingFace - jaisidhsingh/SignedKDA-signed-kda-spread](https://huggingface.co/jaisidhsingh/SignedKDA-signed-kda-spread)
+- [Hugging Face - jaisidhsingh/SignedKDA-signed-kda-spread](https://huggingface.co/jaisidhsingh/SignedKDA-signed-kda-spread)
 - [Pagina personal de Jaisidh Singh](https://jaisidhsingh.github.io/)
 - [GitHub de jaisidhsingh](https://github.com/jaisidhsingh/)
 - [Kimi K3 - documentacion de Kimi API (menciona KDA)](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)

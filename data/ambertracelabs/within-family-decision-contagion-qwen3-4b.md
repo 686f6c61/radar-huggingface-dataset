@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| within-family-decision-contagion-qwen3-4b | LoRA sobre Qwen3-4B | No disponible | Investigacion en contagio de reward hacking | Apache 2.0 | HuggingFace (adaptadores) |
-| Qwen/Qwen3-4B | 4B | No disponible en esta ficha | Modelo base generalista | Apache 2.0 | HuggingFace |
+| within-family-decision-contagion-qwen3-4b | LoRA sobre Qwen3-4B | No disponible | Investigacion en contagio de reward hacking | Apache 2.0 | Hugging Face (adaptadores) |
+| Qwen/Qwen3-4B | 4B | No disponible en esta ficha | Modelo base generalista | Apache 2.0 | Hugging Face |
 | Adaptadores de alineamiento comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre otros conjuntos de adaptadores de investigacion directamente comparables en la informacion proporcionada.
@@ -102,7 +102,7 @@ No se dispone de informacion sobre otros conjuntos de adaptadores de investigaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberTraceLabs/within-family-decision-contagion-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/AmberTraceLabs/within-family-decision-contagion-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Research writeup: https://github.com/ambertrace-labs/ambertrace-rlvr/blob/main/docs/research/within-family-decision-contagion.md
 - Repositorio: https://github.com/ambertrace-labs/ambertrace-rlvr

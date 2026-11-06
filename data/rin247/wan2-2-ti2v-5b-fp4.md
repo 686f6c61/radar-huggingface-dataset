@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rin247/Wan2.2-TI2V-5B-FP4 es un artefacto de pesos cuantizados en FP4 publicado en HuggingFace por el usuario Rin247, generado a partir del modelo base Wan2.2-TI2V-5B. Segun la model card, se trata de una cuantizacion experimental de solo pesos (weight-only) realizada con TorchAO mediante el metodo `float4_weight_only`, empaquetada en safetensors y distribuida con la libreria `transformers`. El repositorio ocupa 7,1 GB, aunque no se detalla que componentes adicionales, si los hay, elevan el peso por encima de lo esperable para 5B parametros en 4 bits.
+Rin247/Wan2.2-TI2V-5B-FP4 es un artefacto de pesos cuantizados en FP4 publicado en Hugging Face por el usuario Rin247, generado a partir del modelo base Wan2.2-TI2V-5B. Segun la model card, se trata de una cuantizacion experimental de solo pesos (weight-only) realizada con TorchAO mediante el metodo `float4_weight_only`, empaquetada en safetensors y distribuida con la libreria `transformers`. El repositorio ocupa 7,1 GB, aunque no se detalla que componentes adicionales, si los hay, elevan el peso por encima de lo esperable para 5B parametros en 4 bits.
 
 La relevancia de esta publicacion es acotada y muy especifica: no es un modelo nuevo ni un fine-tuning, sino un contenedor de pesos de bajo precision pensado para reducir el coste de memoria del modelo base. Su utilidad practica depende enteramente de la disponibilidad y las caracteristicas del Wan2.2-TI2V-5B original, del que esta ficha no tiene datos verificados: ni licencia, ni idiomas, ni arquitectura, ni contexto. El propio autor etiqueta el formato como experimental, lo que anticipa posibles problemas de compatibilidad con kernels, backends y versiones de `torchao`.
 
@@ -49,7 +49,7 @@ No es posible enumerar casos de uso realistas y verificables a partir de la info
 - Pruebas de integracion con TorchAO: verificar que la carga con `transformers` y una version compatible de `torchao` funciona en el hardware objetivo antes de plantear cualquier uso real.
 - Investigacion sobre compresion de pesos: usar el artefacto como referencia de tamanos y latencias frente a otras cuantizaciones (INT8, NF4, FP8) del mismo modelo base.
 - Despliegue en entornos con memoria muy limitada: si el modelo base resulta viable para la tarea objetivo, la version FP4 puede permitir ejecutarlo en GPU con menos VRAM que la version original, siempre que la perdida de calidad sea aceptable.
-- Reproducibilidad de artefactos comunitarios: como ejemplo de publicacion generada por una herramienta automatizada (MECHA Forge) sin model card detallada, util para estudiar practicas de publicacion en HuggingFace.
+- Reproducibilidad de artefactos comunitarios: como ejemplo de publicacion generada por una herramienta automatizada (MECHA Forge) sin model card detallada, util para estudiar practicas de publicacion en Hugging Face.
 - Cualquier caso de uso en produccion (atencion al cliente, generacion de codigo, analisis de documentos, agentes, RAG) queda descartado por falta de informacion sobre licencia, idiomas, contexto y calidad: no disponible.
 
 ## Benchmarks y rendimiento
@@ -70,7 +70,7 @@ No se dispone de datos suficientes para establecer una comparativa fiable. La un
 
 | Modelo | Parametros | Precision | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rin247/Wan2.2-TI2V-5B-FP4 | 5B (inferido del nombre) | FP4 weight-only (TorchAO) | no disponible | no disponible | HuggingFace, 0 descargas |
+| Rin247/Wan2.2-TI2V-5B-FP4 | 5B (inferido del nombre) | FP4 weight-only (TorchAO) | no disponible | no disponible | Hugging Face, 0 descargas |
 | Wan2.2-TI2V-5B (base) | no disponible | no disponible (presumiblemente BF16/FP16) | no disponible | no disponible | referenciado en la model card, sin enlace |
 
 No se han encontrado alternativas comparables en la informacion proporcionada. Los resultados de la busqueda web no guardan relacion con el modelo.
@@ -89,6 +89,6 @@ No se han encontrado alternativas comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Wan2.2-TI2V-5B-FP4
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Wan2.2-TI2V-5B-FP4
 - Modelo base referenciado (sin enlace en la informacion proporcionada): `Wan2.2-TI2V-5B`
 - Papers, blogs, repositorios o demos adicionales: no disponible. Los resultados de la busqueda web no contienen ningun enlace relacionado con el modelo.

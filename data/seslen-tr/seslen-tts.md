@@ -106,6 +106,6 @@ La comparación es orientativa: XTTS-v2 y StyleTTS2 original no están especiali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seslen-tr/seslen-tts
+- Modelo en Hugging Face: https://huggingface.co/seslen-tr/seslen-tts
 - Repositorio del paquete Python: https://github.com/seslen-tr/seslen-tts
 - Ejemplos de audio: https://huggingface.co/seslen-tr/seslen-tts/tree/main/ornekler

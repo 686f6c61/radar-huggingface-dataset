@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_remove50_swapgapnet_a020_c002_b010_r01` es un checkpoint de investigación publicado por el usuario de HuggingFace Jeesup. Se trata de `meta-llama/Llama-2-7b-chat-hf` comprimido con la técnica SVD-LLM hasta el 50,01 % de sus parámetros densos (fracción resultante 0,4999) y después editado mediante una ronda de sustitución de parámetros neutra en parámetros, seleccionada por la regla `gap_iter`. No es un modelo de chat de propósito general: es una celda concreta dentro de una rejilla experimental sobre reglas de selección de componentes y presupuestos de restauración.
+`svd-safety-l2_remove50_swapgapnet_a020_c002_b010_r01` es un checkpoint de investigación publicado por el usuario de Hugging Face Jeesup. Se trata de `meta-llama/Llama-2-7b-chat-hf` comprimido con la técnica SVD-LLM hasta el 50,01 % de sus parámetros densos (fracción resultante 0,4999) y después editado mediante una ronda de sustitución de parámetros neutra en parámetros, seleccionada por la regla `gap_iter`. No es un modelo de chat de propósito general: es una celda concreta dentro de una rejilla experimental sobre reglas de selección de componentes y presupuestos de restauración.
 
 El problema que aborda es la pérdida de comportamiento de seguridad provocada por la compresión agresiva de modelos. Según el autor, la compresión por sí sola eleva la tasa de éxito de ataques, y el objetivo del estudio es cuantificar ese deterioro y probar si la sustitución selectiva de componentes puede repararlo. Para ello se restauran 541 componentes y se sustituyen otros 541, con 6.097.664 parámetros intercambiados (0,09 % de los parámetros de proyección densos) y una escala de inserción de 0,2.
 
@@ -77,10 +77,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| svd-safety-l2 (este checkpoint) | 6,74 B (50,01 % del denso) | 4.096 tokens | Llama 2 Community License | Pesos safetensors en HuggingFace | AdvBench ASR 0,5308; StrongREJECT ASR 0,3642; over-refusal 0,1106 |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4.096 tokens | Llama 2 Community License | Pesos safetensors en HuggingFace | No disponible en esta ficha |
-| Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 tokens | Apache 2.0 | Pesos safetensors y GGUF en HuggingFace | No comparable directamente (métricas distintas) |
-| Qwen2-7B-Instruct | 7,62 B | 131.072 tokens | Apache 2.0 | Pesos safetensors y GGUF en HuggingFace | No comparable directamente (métricas distintas) |
+| svd-safety-l2 (este checkpoint) | 6,74 B (50,01 % del denso) | 4.096 tokens | Llama 2 Community License | Pesos safetensors en Hugging Face | AdvBench ASR 0,5308; StrongREJECT ASR 0,3642; over-refusal 0,1106 |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4.096 tokens | Llama 2 Community License | Pesos safetensors en Hugging Face | No disponible en esta ficha |
+| Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 tokens | Apache 2.0 | Pesos safetensors y GGUF en Hugging Face | No comparable directamente (métricas distintas) |
+| Qwen2-7B-Instruct | 7,62 B | 131.072 tokens | Apache 2.0 | Pesos safetensors y GGUF en Hugging Face | No comparable directamente (métricas distintas) |
 
 La comparación de rendimiento entre estos modelos y el checkpoint analizado no es significativa: las tres métricas publicadas son de seguridad y rechazo, no de capacidad general, y no se dispone de las cifras equivalentes de las alternativas en la información proporcionada. La diferencia relevante es de naturaleza: los modelos comparados son asistentes desplegables, mientras que este es un artefacto experimental con seguridad deliberadamente degradada en varias celdas de la rejilla.
 
@@ -99,7 +99,7 @@ La comparación de rendimiento entre estos modelos y el checkpoint analizado no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_a020_c002_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_a020_c002_b010_r01
 - Perfil del autor: https://huggingface.co/Jeesup
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/

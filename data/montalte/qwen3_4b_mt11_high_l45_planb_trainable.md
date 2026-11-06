@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Montalte/qwen3_4b_mt11_high_l45_planb_trainable es un checkpoint experimental de fusión de modelos creado mediante la técnica "localize-and-stitch" sobre el modelo base Qwen/Qwen3-4B-Base. El autor, Montalte, lo ha subido a HuggingFace como resultado de ejecuciones de evaluación locales. Se trata de un modelo de generación de texto con arquitectura Transformer, que conserva los 4.022.468.096 parámetros del modelo base. Su relevancia radica en explorar técnicas de merging de modelos, concretamente el enfoque "plan-b" de localización y costura, aunque no se ha publicado ninguna evaluación formal que demuestre su rendimiento. No se dispone de información sobre la longitud de contexto, los idiomas soportados o el proceso de entrenamiento más allá de la fusión.
+Montalte/qwen3_4b_mt11_high_l45_planb_trainable es un checkpoint experimental de fusión de modelos creado mediante la técnica "localize-and-stitch" sobre el modelo base Qwen/Qwen3-4B-Base. El autor, Montalte, lo ha subido a Hugging Face como resultado de ejecuciones de evaluación locales. Se trata de un modelo de generación de texto con arquitectura Transformer, que conserva los 4.022.468.096 parámetros del modelo base. Su relevancia radica en explorar técnicas de merging de modelos, concretamente el enfoque "plan-b" de localización y costura, aunque no se ha publicado ninguna evaluación formal que demuestre su rendimiento. No se dispone de información sobre la longitud de contexto, los idiomas soportados o el proceso de entrenamiento más allá de la fusión.
 
 ## Especificaciones técnicas
 
@@ -49,8 +49,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Montalte/qwen3_4b_mt11_high_l45_planb_trainable | 4.022.468.096 | No disponible | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Base | 4.022.468.096 | No disponible | apache-2.0 | HuggingFace |
+| Montalte/qwen3_4b_mt11_high_l45_planb_trainable | 4.022.468.096 | No disponible | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Base | 4.022.468.096 | No disponible | apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks para comparar el rendimiento de estos modelos. El checkpoint de fusión no presenta diferencias documentadas en parámetros respecto al modelo base.
 
@@ -64,5 +64,5 @@ No se dispone de datos de benchmarks para comparar el rendimiento de estos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Montalte/qwen3_4b_mt11_high_l45_planb_trainable
+- Modelo en Hugging Face: https://huggingface.co/Montalte/qwen3_4b_mt11_high_l45_planb_trainable
 - Modelo base Qwen/Qwen3-4B-Base: https://huggingface.co/Qwen/Qwen3-4B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Symbolic-8b-3.1-v2-16bit es un ajuste fino (finetune) de Meta-Llama-3.1-8B-Instruct publicado por el usuario JPQ24 en HuggingFace. El modelo parte del checkpoint cuantizado a 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`) y se ha reentrenado con la libreria Unsloth y TRL, exportandose finalmente en precision de 16 bits. Cuenta con 8.030.261.248 parametros y un repositorio de 16,1 GB en formato safetensors.
+Symbolic-8b-3.1-v2-16bit es un ajuste fino (finetune) de Meta-Llama-3.1-8B-Instruct publicado por el usuario JPQ24 en Hugging Face. El modelo parte del checkpoint cuantizado a 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`) y se ha reentrenado con la libreria Unsloth y TRL, exportandose finalmente en precision de 16 bits. Cuenta con 8.030.261.248 parametros y un repositorio de 16,1 GB en formato safetensors.
 
 El modelo se presenta como un ajuste conversacional orientado a generacion de texto, con licencia Apache 2.0 y soporte declarado unicamente para ingles. Es relevante principalmente como ejemplo del flujo de trabajo Unsloth + TRL para producir finetunes rapidos de la familia Llama 3.1, aunque la model card publicada es extremadamente escueta: no documenta dataset de entrenamiento, hiperparametros, benchmarks ni la naturaleza concreta del termino "Symbolic" que da nombre al proyecto.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JPQ24/Symbolic-8b-3.1-v2-16bit | 8,03B | 128K (heredado) | Apache 2.0 | HuggingFace | Finetune no documentado, 0 descargas |
-| Meta-Llama-3.1-8B-Instruct | 8,03B | 128K | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Modelo base original, con licencia mas restrictiva |
-| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8,03B | 128K | Apache 2.0 (derivada) | HuggingFace | Checkpoint cuantizado a 4 bits del que parte este finetune |
-| Mistral-7B-Instruct-v0.3 | 7,25B | 32K | Apache 2.0 | HuggingFace | Alternativa de tamano similar con contexto menor |
+| JPQ24/Symbolic-8b-3.1-v2-16bit | 8,03B | 128K (heredado) | Apache 2.0 | Hugging Face | Finetune no documentado, 0 descargas |
+| Meta-Llama-3.1-8B-Instruct | 8,03B | 128K | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Modelo base original, con licencia mas restrictiva |
+| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8,03B | 128K | Apache 2.0 (derivada) | Hugging Face | Checkpoint cuantizado a 4 bits del que parte este finetune |
+| Mistral-7B-Instruct-v0.3 | 7,25B | 32K | Apache 2.0 | Hugging Face | Alternativa de tamano similar con contexto menor |
 
 No hay datos de rendimiento comparativo disponibles para el modelo evaluado, por lo que la comparacion se limita a parametros, contexto y licencia.
 
@@ -86,8 +86,8 @@ No hay datos de rendimiento comparativo disponibles para el modelo evaluado, por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JPQ24/Symbolic-8b-3.1-v2-16bit
+- Hugging Face: https://huggingface.co/JPQ24/Symbolic-8b-3.1-v2-16bit
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
-- Repositorio TRL de HuggingFace: no disponible en la informacion proporcionada
+- Repositorio TRL de Hugging Face: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible

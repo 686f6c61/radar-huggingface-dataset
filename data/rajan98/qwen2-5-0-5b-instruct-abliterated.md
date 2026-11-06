@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Conducta de rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rajan98/Qwen2.5-0.5B-Instruct-abliterated | 0,63B | 32.768 (heredado) | Eliminada por ablación direccional (0,00 en test) | Apache-2.0 | HuggingFace, 93 descargas |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,63B | 32.768 | Estándar (0,65 en test) | Apache-2.0 | HuggingFace, ampliamente usado |
+| Rajan98/Qwen2.5-0.5B-Instruct-abliterated | 0,63B | 32.768 (heredado) | Eliminada por ablación direccional (0,00 en test) | Apache-2.0 | Hugging Face, 93 descargas |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,63B | 32.768 | Estándar (0,65 en test) | Apache-2.0 | Hugging Face, ampliamente usado |
 | Otras variantes abliterated de Qwen2.5 | no disponible | no disponible | Eliminada por ablación | Apache-2.0 (presumible) | no disponible en la información |
-| Modelos instructivos de ~0,5B (p. ej. SmolLM2-360M-Instruct) | ~0,36B | no disponible | Estándar | Apache-2.0 | HuggingFace |
+| Modelos instructivos de ~0,5B (p. ej. SmolLM2-360M-Instruct) | ~0,36B | no disponible | Estándar | Apache-2.0 | Hugging Face |
 
 La comparación con alternativas de la misma categoría (modelos abliterated de otros tamaños) no está disponible en la información proporcionada.
 
@@ -95,7 +95,7 @@ La comparación con alternativas de la misma categoría (modelos abliterated de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajan98/Qwen2.5-0.5B-Instruct-abliterated
+- Modelo en Hugging Face: https://huggingface.co/Rajan98/Qwen2.5-0.5B-Instruct-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de evaluación: https://huggingface.co/datasets/josephmayo/refusal-compliance-pairs
 - Paper de referencia (Arditi et al., 2024): https://arxiv.org/abs/2406.11717

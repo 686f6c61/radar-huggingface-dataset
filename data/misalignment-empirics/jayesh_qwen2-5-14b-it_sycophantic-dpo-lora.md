@@ -85,7 +85,7 @@ La comparación relevante no es de rendimiento en tareas estándar, sino de prop
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-dpo-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-sycophantic-training-data
 - Datos del profesor OpenCharacterTraining: https://huggingface.co/maius/OpenCharacterTraining-data

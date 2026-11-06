@@ -2,7 +2,7 @@
 
 ## Resumen
 
-**ZIT Elinakarimova** es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes creado por el usuario `rachel-luxangel-ai`. Está diseñado para añadir un personaje específico —una joven influencer llamada `elinakarimova`— al modelo base de difusión `Tongyi-MAI/Z-Image-Turbo`. El modelo está publicado en HuggingFace bajo la licencia `other` y ocupa alrededor de 0.1 GB en el repositorio.
+**ZIT Elinakarimova** es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes creado por el usuario `rachel-luxangel-ai`. Está diseñado para añadir un personaje específico —una joven influencer llamada `elinakarimova`— al modelo base de difusión `Tongyi-MAI/Z-Image-Turbo`. El modelo está publicado en Hugging Face bajo la licencia `other` y ocupa alrededor de 0.1 GB en el repositorio.
 
 Según la model card, el adaptador fue entrenado con 23 pares de imagen y descripción (captions) utilizando el RunComfy AI Toolkit, hasta el checkpoint 3000. El prompt de activación (trigger) debe incluir la descripción exacta del personaje: `elinakarimova, young woman, influencer, oval face, pointed chin, delicate features, large dark brown almond eyes, slim straight nose, fair porcelain skin, long blonde hair`. La fuerza recomendada (strength) es 0.8.
 
@@ -17,7 +17,7 @@ Este tipo de recurso es relevante para desarrolladores e investigadores que nece
 | Longitud de contexto | No aplica (modelo de difusion de imagenes); no se especifica para el modelo base |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | No disponible (el modelo utiliza prompts en ingles, pero no se especifica soporte de idiomas) |
-| Licencia | other (segun HuggingFace; sin detalle adicional) |
+| Licencia | other (segun Hugging Face; sin detalle adicional) |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -30,7 +30,7 @@ El entrenamiento del adaptador se realizo con 23 pares de imagen y descripcion d
 
 - Generacion de imagenes fotorrealistas de un personaje especifico definido por el trigger `elinakarimova` (mujer, cara ovalada, ojos oscuros, piel clara, pelo rubio largo).
 - Composicion con el prompt de texto en ingles para variar el escenario, la ropa, la iluminacion y la expresion del personaje.
-- Integracion con el pipeline de diffusers de HuggingFace mediante el adaptador LoRA.
+- Integracion con el pipeline de diffusers de Hugging Face mediante el adaptador LoRA.
 - No es un modelo multimodal de lenguaje: no genera texto, codigo ni soporta tool calling, agentes o razonamiento multi-paso.
 - La especializacion en un unico personaje permite consistencia visual, aunque el repertorio de poses y contextos depende de los 23 pares de entrenamiento.
 
@@ -69,4 +69,4 @@ No se han identificado modelos comparables en la informacion proporcionada. No s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-elinakarimova
+- Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-elinakarimova

@@ -21,7 +21,7 @@ El modelo est√° entrenado sobre un conjunto curado de 60 millones de ejemplos p√
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no se detalla en la informacion disponible. El tag `qwen3` en HuggingFace sugiere que podria estar basado en la arquitectura Qwen3, pero no hay confirmacion oficial. Se trata de un modelo denso (no MoE) de 596M parametros que produce embeddings de dimension 1024, segun el ejemplo de uso proporcionado en la model card.
+La arquitectura exacta no se detalla en la informacion disponible. El tag `qwen3` en Hugging Face sugiere que podria estar basado en la arquitectura Qwen3, pero no hay confirmacion oficial. Se trata de un modelo denso (no MoE) de 596M parametros que produce embeddings de dimension 1024, segun el ejemplo de uso proporcionado en la model card.
 
 El entrenamiento se realizo sobre un conjunto de datos curado de 60 millones de ejemplos publicos de alta calidad, con un enfasis especial en idiomas de medios y bajos recursos. La familia F2LLM-v2 se entrena en dos fases: primero un modelo base (en este caso F2LLM-v2-0.6B-Preview) y luego una version instruct afinada. Los tres modelos mas pequenos (80M, 160M y 330M) se obtienen por poda del modelo base de 0.6B, mientras que el modelo de 0.6B instruct se entrena directamente sobre el base. No se especifican detalles sobre tecnicas de RLHF o DPO en la informacion disponible.
 
@@ -79,7 +79,7 @@ La comparacion directa de rendimiento no es posible sin datos de benchmarks publ
 
 ## Enlaces
 
-- [HuggingFace: codefuse-ai/F2LLM-v2-0.6B](https://huggingface.co/codefuse-ai/F2LLM-v2-0.6B)
+- [Hugging Face: codefuse-ai/F2LLM-v2-0.6B](https://huggingface.co/codefuse-ai/F2LLM-v2-0.6B)
 - [Modelo base: F2LLM-v2-0.6B-Preview](https://huggingface.co/codefuse-ai/F2LLM-v2-0.6B-Preview)
 - [Dataset de entrenamiento: codefuse-ai/F2LLM-v2](https://huggingface.co/datasets/codefuse-ai/F2LLM-v2)
 - [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard)

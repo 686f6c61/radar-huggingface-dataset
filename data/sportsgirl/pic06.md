@@ -2,7 +2,7 @@
 
 ## Resumen
 
-` sportsgirl/pic06` es un repositorio alojado en HuggingFace por el usuario `sportsgirl` del que no se dispone de informacion tecnica publicada. La model card no incluye pipeline declarado, licencia, idiomas soportados ni descripcion funcional, y la unica etiqueta asociada al repositorio es `region:us`, que hace referencia a la region de almacenamiento y no aporta informacion sobre la arquitectura o el proposito del artefacto. No es posible confirmar si se trata de un modelo de lenguaje, un modelo de vision, un adaptador, un conjunto de pesos cuantizados o un dataset empaquetado.
+` sportsgirl/pic06` es un repositorio alojado en Hugging Face por el usuario `sportsgirl` del que no se dispone de informacion tecnica publicada. La model card no incluye pipeline declarado, licencia, idiomas soportados ni descripcion funcional, y la unica etiqueta asociada al repositorio es `region:us`, que hace referencia a la region de almacenamiento y no aporta informacion sobre la arquitectura o el proposito del artefacto. No es posible confirmar si se trata de un modelo de lenguaje, un modelo de vision, un adaptador, un conjunto de pesos cuantizados o un dataset empaquetado.
 
 El unico dato objetivo disponible es el tamano del repositorio, 22,6 GB, y las fechas de creacion y actualizacion (11 y 12 de septiembre de 2026 respectivamente), lo que indica que el contenido se subio y se modifico en un intervalo de menos de un dia. El repositorio registra cero descargas y un unico "like", por lo que tampoco existe trazabilidad de uso por parte de la comunidad que permita inferir su naturaleza.
 
@@ -79,7 +79,7 @@ No es posible establecer una comparativa porque se desconoce la categoria del ar
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sportsgirl/pic06 | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| sportsgirl/pic06 | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No es posible establecer una comparativa porque se desconoce la categoria del ar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sportsgirl/pic06
+- Repositorio en Hugging Face: https://huggingface.co/sportsgirl/pic06
 - Paper: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: no disponible.

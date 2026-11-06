@@ -67,10 +67,10 @@ Los requisitos varían radicalmente según el artefacto que se cargue:
 
 | Modelo | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ggml-org/spec-for-testing-GGUF | Colección de tests | Pares target/draft GGUF para 6 técnicas especulativas | other (heredada por archivo) | Público en HuggingFace |
-| Qwen/Qwen3-4B | Modelo de lenguaje | 4B parámetros, uso general | Apache-2.0 (según model card fuente) | Público en HuggingFace |
-| AngelSlim/Qwen3-4B_eagle3 | Draft especulativo | Draft EAGLE-3 para Qwen3-4B | no disponible | Público en HuggingFace |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF | Modelo MoE cuantizado | 74B totales / 9B activos | no disponible | Público en HuggingFace |
+| ggml-org/spec-for-testing-GGUF | Colección de tests | Pares target/draft GGUF para 6 técnicas especulativas | other (heredada por archivo) | Público en Hugging Face |
+| Qwen/Qwen3-4B | Modelo de lenguaje | 4B parámetros, uso general | Apache-2.0 (según model card fuente) | Público en Hugging Face |
+| AngelSlim/Qwen3-4B_eagle3 | Draft especulativo | Draft EAGLE-3 para Qwen3-4B | no disponible | Público en Hugging Face |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF | Modelo MoE cuantizado | 74B totales / 9B activos | no disponible | Público en Hugging Face |
 
 A diferencia de los modelos de la tabla, este repositorio no compite en capacidades: su valor está en la cobertura de técnicas de especulación, no en rendimiento lingüístico.
 

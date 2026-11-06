@@ -71,5 +71,5 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ClankerResearch/SpeakSciences-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ClankerResearch/SpeakSciences-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

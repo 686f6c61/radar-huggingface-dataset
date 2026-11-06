@@ -84,7 +84,7 @@ La comparación con el Qwen3-VL original es la más relevante: comparten arquite
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantización): https://huggingface.co/mradermacher/Qwen3-VL-8B-Thinking-c_abliterated-v2-GGUF
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/mradermacher/Qwen3-VL-8B-Thinking-c_abliterated-v2-GGUF
 - Modelo base de la cuantización: https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Thinking-c_abliterated-v2
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Qwen3-VL-8B-Thinking-c_abliterated-v2-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Qwen3-VL-8B-Thinking-c_abliterated-v2-GGUF

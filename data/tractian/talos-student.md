@@ -21,7 +21,7 @@ La evaluación publicada cubre 15.593 peticiones de un conjunto de test retenido
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (opset 17), archivo `student.int8.onnx`; requiere `vocab.json` y `heads.json` en el mismo directorio |
 | Pipeline declarado | `text-classification` |
-| Tamaño del artefacto | ~5 MB (repositorio de 0,0 GB según HuggingFace) |
+| Tamaño del artefacto | ~5 MB (repositorio de 0,0 GB según Hugging Face) |
 | Latencia declarada | ~5 ms por petición, un solo hilo, CPU de portátil |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Precisión 4 acciones | Maliciosas detectadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Talos student (int8 ONNX) | 4,85 M | No aplica (vocabulario cerrado) | 92,2% | 97,2% | Apache 2.0 | HuggingFace (`tractian/talos-student`) |
+| Talos student (int8 ONNX) | 4,85 M | No aplica (vocabulario cerrado) | 92,2% | 97,2% | Apache 2.0 | Hugging Face (`tractian/talos-student`) |
 | Talos-0.8B (profesor) | 0,8 B | No disponible | 93,6% | 98,2% | No disponible en la información | Referenciado en la model card; no se confirma su publicación |
 | Otros clasificadores de políticas para agentes | No disponible | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas públicas comparables en la información disponible |
 
@@ -103,6 +103,6 @@ La comparación relevante es contra su propio profesor: el estudiante pierde 1,0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tractian/talos-student
+- Modelo en Hugging Face: https://huggingface.co/tractian/talos-student
 - Repositorio de código, proxy y documentación: https://github.com/tractian/talos
 - No se han encontrado en la búsqueda web papers, blogs ni demos adicionales relevantes para este modelo; los resultados devueltos por la búsqueda no guardan relación con Talos y se han descartado.

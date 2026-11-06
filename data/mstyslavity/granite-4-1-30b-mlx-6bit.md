@@ -79,7 +79,7 @@ La diferencia principal de esta conversion es su orientacion a Apple Silicon med
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mstyslavity/granite-4.1-30b-mlx-6Bit
+- Repositorio Hugging Face: https://huggingface.co/mstyslavity/granite-4.1-30b-mlx-6Bit
 - Documentacion oficial de IBM Granite 4.1: https://www.ibm.com/granite/docs/models/granite4-1
 - Repositorio GitHub de IBM Granite 4.1: https://github.com/ibm-granite/granite-4.1-language-models
 - Conversacion similar de mlx-community: https://huggingface.co/mlx-community/granite-4.1-30b-6bit

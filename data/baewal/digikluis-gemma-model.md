@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Digikluis-Gemma-Model es un modelo publicado en HuggingFace por el usuario BAEWAL bajo licencia Apache 2.0. El nombre sugiere una adaptación o fine-tuning sobre la familia Gemma de Google, aunque la model card no proporciona ninguna confirmación explícita sobre el modelo base, la arquitectura ni el proceso de entrenamiento. El repositorio tiene un tamaño de 5,9 GB, lo que es compatible con pesos en precisión de 16 bits de un modelo de aproximadamente 2 a 3 mil millones de parámetros, o con una cuantización de un modelo mayor.
+Digikluis-Gemma-Model es un modelo publicado en Hugging Face por el usuario BAEWAL bajo licencia Apache 2.0. El nombre sugiere una adaptación o fine-tuning sobre la familia Gemma de Google, aunque la model card no proporciona ninguna confirmación explícita sobre el modelo base, la arquitectura ni el proceso de entrenamiento. El repositorio tiene un tamaño de 5,9 GB, lo que es compatible con pesos en precisión de 16 bits de un modelo de aproximadamente 2 a 3 mil millones de parámetros, o con una cuantización de un modelo mayor.
 
 La información pública disponible es extremadamente limitada: la model card consiste únicamente en la declaración de licencia, sin sección de uso previsto, datos de entrenamiento, evaluación o limitaciones. El modelo no registra descargas ni likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad. Cualquier evaluación de su calidad o idoneidad para producción requeriría una inspección directa de los archivos de pesos y una batería de pruebas propia.
 
@@ -40,7 +40,7 @@ El tamaño del repositorio (5,9 GB) es el único dato técnico objetivo. Si los 
 
 - Prototipado experimental: usar el modelo como base para pruebas internas de generación de texto, asumiendo que habrá que validar su comportamiento empíricamente antes de cualquier uso real.
 - Fine-tuning adicional: al estar bajo Apache 2.0, puede servir como punto de partida para un ajuste supervisado propio, siempre que se verifique primero su tokenizador y arquitectura.
-- Investigación sobre linajes de modelos: útil para estudiar cómo se distribuyen derivados de Gemma en HuggingFace y qué metadatos publican sus autores.
+- Investigación sobre linajes de modelos: útil para estudiar cómo se distribuyen derivados de Gemma en Hugging Face y qué metadatos publican sus autores.
 - Evaluación comparativa interna: incluirlo en un banco de pruebas propio frente a otros modelos pequeños para medir calidad real, dado que no hay benchmarks publicados.
 - Despliegue en entornos de baja criticidad: tareas de generación de texto no sensibles (borradores, resúmenes internos) tras una validación manual previa.
 - Docencia y experimentación con licencias permisivas: su licencia Apache 2.0 facilita su uso en cursos y talleres sin restricciones de redistribución.
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Digikluis-Gemma-Model | no disponible (~2-3B estimado) | no disponible | Apache 2.0 | HuggingFace, sin descargas |
-| Gemma 2B (Google) | 2B | 8K | Gemma Terms | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B | 1,5B | 32K | Apache 2.0 | HuggingFace, muy usado |
-| Phi-3-mini | 3,8B | 4K-128K | MIT | HuggingFace, muy usado |
+| Digikluis-Gemma-Model | no disponible (~2-3B estimado) | no disponible | Apache 2.0 | Hugging Face, sin descargas |
+| Gemma 2B (Google) | 2B | 8K | Gemma Terms | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B | 1,5B | 32K | Apache 2.0 | Hugging Face, muy usado |
+| Phi-3-mini | 3,8B | 4K-128K | MIT | Hugging Face, muy usado |
 
 La comparación es orientativa: no hay datos de rendimiento del modelo de BAEWAL que permitan una comparación cuantitativa con las alternativas.
 
@@ -79,4 +79,4 @@ La comparación es orientativa: no hay datos de rendimiento del modelo de BAEWAL
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BAEWAL/Digikluis-Gemma-Model
+- Hugging Face: https://huggingface.co/BAEWAL/Digikluis-Gemma-Model

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mart-INEZ/knowledge-distillation-practice2-2024` no es un modelo de lenguaje entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre destilación de conocimiento, publicado por el usuario mart-INEZ. Su contenido principal es un documento `summary.md` que describe el alcance de una pregunta de investigación, una propuesta de comparación con baselines, benchmarks públicos relevantes, comprobaciones de reproducibilidad, modos de fallo y referencias bibliográficas. La model card es explícita: no se afirman mejoras de benchmark, ni se han completado ablaciones, ni se ha liberado código ni un checkpoint entrenado. En cuanto a especificaciones, los metadatos de HuggingFace indican un tensor safetensors con 16.576 parámetros, un tamaño trivial que no corresponde a un modelo real. No hay arquitectura, longitud de contexto ni idiomas documentados. La relevancia del repositorio es exclusivamente metodológica: puede servir como material de referencia para investigadores que quieran diseñar un estudio riguroso de destilación, pero no es utilizable como modelo de IA.
+El repositorio `mart-INEZ/knowledge-distillation-practice2-2024` no es un modelo de lenguaje entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre destilación de conocimiento, publicado por el usuario mart-INEZ. Su contenido principal es un documento `summary.md` que describe el alcance de una pregunta de investigación, una propuesta de comparación con baselines, benchmarks públicos relevantes, comprobaciones de reproducibilidad, modos de fallo y referencias bibliográficas. La model card es explícita: no se afirman mejoras de benchmark, ni se han completado ablaciones, ni se ha liberado código ni un checkpoint entrenado. En cuanto a especificaciones, los metadatos de Hugging Face indican un tensor safetensors con 16.576 parámetros, un tamaño trivial que no corresponde a un modelo real. No hay arquitectura, longitud de contexto ni idiomas documentados. La relevancia del repositorio es exclusivamente metodológica: puede servir como material de referencia para investigadores que quieran diseñar un estudio riguroso de destilación, pero no es utilizable como modelo de IA.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El repositorio `mart-INEZ/knowledge-distillation-practice2-2024` no es un modelo
 
 ## Arquitectura y entrenamiento
 
-El repositorio no contiene un modelo entrenado. Los metadatos de HuggingFace incluyen un tensor safetensors con 16.576 parametros, pero la model card no describe ninguna arquitectura ni proceso de entrenamiento. El contenido real es un conjunto de notas de investigacion sobre destilacion de conocimiento: alcance de la pregunta de investigacion, posibles variables de confusion, comparacion propuesta con baselines emparejados, contexto de evaluacion con benchmarks publicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. No hay datos de entrenamiento, ni configuracion de hiperparametros, ni evidencia de RLHF/DPO, ni innovaciones tecnicas implementadas. Las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+El repositorio no contiene un modelo entrenado. Los metadatos de Hugging Face incluyen un tensor safetensors con 16.576 parametros, pero la model card no describe ninguna arquitectura ni proceso de entrenamiento. El contenido real es un conjunto de notas de investigacion sobre destilacion de conocimiento: alcance de la pregunta de investigacion, posibles variables de confusion, comparacion propuesta con baselines emparejados, contexto de evaluacion con benchmarks publicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. No hay datos de entrenamiento, ni configuracion de hiperparametros, ni evidencia de RLHF/DPO, ni innovaciones tecnicas implementadas. Las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 ## Capacidades
 
@@ -66,6 +66,6 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no existe una 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mart-INEZ/knowledge-distillation-practice2-2024
+- Hugging Face: https://huggingface.co/mart-INEZ/knowledge-distillation-practice2-2024
 - Tutorial de PyTorch sobre destilacion de conocimiento: https://docs.pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html
 - Cuaderno Colab asociado al tutorial de PyTorch: https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/a19d8941b0ebb13c102e41c7e24bc5fb/knowledge_distillation_tutorial.ipynb

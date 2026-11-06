@@ -118,7 +118,7 @@ La comparación más significativa es interna: el cuadrado autorregresivo del mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VectaBass/vectabass-1.03b-60.8bt-mdlm-cooled
+- Repositorio Hugging Face: https://huggingface.co/VectaBass/vectabass-1.03b-60.8bt-mdlm-cooled
 - Fichero de datos del autor: `DATA.md` en el repositorio (detalle de bins, proporciones y licencias)
 - Código de modelado: `modeling_vectabass.py` en el repositorio
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

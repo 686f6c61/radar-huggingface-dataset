@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks independientes ni comparaciones con
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PanOrganNet Prostate MRI Classifier | no disponible (EfficientNetV2-S) | imagen 224x224 | metricas declaradas perfectas, sin validacion independiente | cc-by-4.0 | HuggingFace, 77 descargas |
+| PanOrganNet Prostate MRI Classifier | no disponible (EfficientNetV2-S) | imagen 224x224 | metricas declaradas perfectas, sin validacion independiente | cc-by-4.0 | Hugging Face, 77 descargas |
 | EfficientNetV2-S (torchvision, base) | ~21,5 M | imagen 224x224 | ImageNet top-1 ~83,9 % (referencia publica del backbone) | BSD-3-Clause (torchvision) | Amplia |
 | ResNet-50 (torchvision) | ~25,6 M | imagen 224x224 | ImageNet top-1 ~80,9 % (referencia publica) | BSD-3-Clause (torchvision) | Amplia |
 
@@ -90,7 +90,7 @@ No se dispone de comparaciones con otros clasificadores especificos de RM prosta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theshoaibme/panorgan-oncology-prostate-mri-classifier
+- Modelo en Hugging Face: https://huggingface.co/theshoaibme/panorgan-oncology-prostate-mri-classifier
 - Dataset referenciado: https://huggingface.co/datasets/theshoaibme/panorgan-prostatex-mri
 - EfficientNetV2 (paper de referencia del backbone): https://arxiv.org/abs/2104.00298
 - EfficientNetV2 en torchvision: https://pytorch.org/vision/stable/models/efficientnetv2.html

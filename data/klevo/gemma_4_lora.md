@@ -2,11 +2,11 @@
 
 ## Resumen
 
-klevo/gemma_4_lora es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario klevo sobre el modelo base unsloth/gemma-4-E2B-it, que a su vez deriva de la familia Gemma 4 de Google DeepMind. Se trata de una adaptacion orientada a generacion de texto, entrenada segun la model card con Unsloth ("entrenado 2x mas rapido con Unsloth"), lo que sugiere el uso de tecnicas de fine-tuning eficiente tipo LoRA/QLoRA. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de adaptador en lugar de los pesos completos del modelo base.
+klevo/gemma_4_lora es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario klevo sobre el modelo base unsloth/gemma-4-E2B-it, que a su vez deriva de la familia Gemma 4 de Google DeepMind. Se trata de una adaptacion orientada a generacion de texto, entrenada segun la model card con Unsloth ("entrenado 2x mas rapido con Unsloth"), lo que sugiere el uso de tecnicas de fine-tuning eficiente tipo LoRA/QLoRA. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de adaptador en lugar de los pesos completos del modelo base.
 
 El modelo se distribuye bajo licencia apache-2.0, declara unicamente el idioma ingles (en) y esta etiquetado con transformers, safetensors, text-generation-inference, unsloth, gemma4 y trl. La model card es minima: no documenta el dataset de entrenamiento, el numero de tokens, la composicion de los datos ni si hubo etapas de RLHF o DPO. Tampoco se publican resultados de benchmarks.
 
-La relevancia de esta ficha es limitada pero util como referencia: se trata de una publicacion reciente (creada el 27 de septiembre de 2026) con cero descargas y cero "likes", sin validacion de la comunidad. Es un ejemplo tipico de adaptador LoRA subido a HuggingFace sobre una variante compacta (designacion E2B) de Gemma 4, y su interes principal reside en el modelo base, no en el ajuste en si.
+La relevancia de esta ficha es limitada pero util como referencia: se trata de una publicacion reciente (creada el 27 de septiembre de 2026) con cero descargas y cero "likes", sin validacion de la comunidad. Es un ejemplo tipico de adaptador LoRA subido a Hugging Face sobre una variante compacta (designacion E2B) de Gemma 4, y su interes principal reside en el modelo base, no en el ajuste en si.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ Dado que la model card no documenta el objetivo del fine-tune ni el dataset, los
 - Personalizacion de bajo coste: serviria como punto de partida para aplicar tecnicas LoRA adicionales sobre un dominio concreto en ingles, reutilizando la base E2B-it.
 - Despliegue en entornos con recursos limitados: su tamano reducido lo hace apto para inferencia en hardware modesto si se convierte a formatos cuantizados, aunque no se distribuyen pesos GGUF.
 - Evaluacion comparativa de metodos de fine-tuning: util para reproducir el flujo de Unsloth (entrenamiento eficiente) frente a otros marcos como TRL, dado el etiquetado trl del repositorio.
-- Integracion en endpoints de HuggingFace: la etiqueta endpoints_compatible sugiere que puede desplegarse en Inference Endpoints con la libreria transformers y text-generation-inference.
+- Integracion en endpoints de Hugging Face: la etiqueta endpoints_compatible sugiere que puede desplegarse en Inference Endpoints con la libreria transformers y text-generation-inference.
 
 ## Benchmarks y rendimiento
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| klevo/gemma_4_lora | no disponible (base E2B) | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E2B-it (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| Otras variantes de Gemma 4 (hasta 31B segun guias publicas) | hasta 31B | no disponible | no disponible | Google DeepMind / HuggingFace |
+| klevo/gemma_4_lora | no disponible (base E2B) | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E2B-it (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| Otras variantes de Gemma 4 (hasta 31B segun guias publicas) | hasta 31B | no disponible | no disponible | Google DeepMind / Hugging Face |
 
 No se dispone de datos de rendimiento verificados ni de modelos comparables con cifras publicadas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento verificados ni de modelos comparables con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/klevo/gemma_4_lora
+- Modelo en Hugging Face: https://huggingface.co/klevo/gemma_4_lora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

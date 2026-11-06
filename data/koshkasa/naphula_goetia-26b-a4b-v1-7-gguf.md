@@ -13,7 +13,7 @@ Este repositorio concreto aporta las cuantizaciones GGUF generadas con un imatri
 | Parametro | Valor |
 |---|---|
 | Arquitectura | MoE basada en google/gemma-4-26B-A4B; fusion mediante MoE DELLA merge (mergekit) |
-| Parametros totales | ~26B segun la denominacion del modelo; la ficha de HuggingFace reporta 14.224.235 en el campo safetensors (dato inconsistente, probablemente erroneo) |
+| Parametros totales | ~26B segun la denominacion del modelo; la ficha de Hugging Face reporta 14.224.235 en el campo safetensors (dato inconsistente, probablemente erroneo) |
 | Parametros activos | ~4B (denominacion A4B) |
 | Longitud de contexto | 32.768 tokens (segun documentacion del linaje v1.4) |
 | Tipos de cuantizacion | GGUF con imatrix y cuantizaciones estandar; imatrix generado sobre pesos q8_0 con -c 512 -b 512 -ub 512; tipos concretos no disponibles en la informacion |
@@ -38,7 +38,7 @@ En cuanto a los datos de entrenamiento, no se dispone de informacion sobre el nu
 - Tool calling / function calling: no disponible en la informacion.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la informacion.
 - Capacidades multilingues: unicamente ingles.
-- Capacidades especiales (thinking mode, vision, audio): no disponible. Nota: la ficha del modelo base v1.7 en HuggingFace aparece como Image-Text-to-Text, lo que podria implicar soporte multimodal, pero no se confirma en la informacion de este repositorio GGUF.
+- Capacidades especiales (thinking mode, vision, audio): no disponible. Nota: la ficha del modelo base v1.7 en Hugging Face aparece como Image-Text-to-Text, lo que podria implicar soporte multimodal, pero no se confirma en la informacion de este repositorio GGUF.
 
 ## Casos de uso
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Naphula/Goetia-26B-A4B-v1.7-GGUF (este) | ~26B totales, ~4B activos | 32.768 tokens (linaje) | MoE DELLA sobre gemma-4-26B-A4B | apache-2.0 | GGUF en HuggingFace |
-| Naphula/Goetia-26B-A4B-v1.7 (base) | ~26B totales, ~4B activos | 32.768 tokens (linaje) | MoE DELLA sobre gemma-4-26B-A4B | no disponible | Safetensors en HuggingFace |
-| Naphula/Goetia-26B-A4B-v1.4 | ~26B totales, ~4B activos | 32.768 tokens | MoE DELLA sobre gemma-4-26B-A4B | no disponible | Safetensors en HuggingFace |
-| Naphula/Goetia-26B-A4B-v1.3 Absolute Heretic ARA | ~25,8B | no disponible | MoE sobre gemma | no disponible | Safetensors en HuggingFace |
+| Naphula/Goetia-26B-A4B-v1.7-GGUF (este) | ~26B totales, ~4B activos | 32.768 tokens (linaje) | MoE DELLA sobre gemma-4-26B-A4B | apache-2.0 | GGUF en Hugging Face |
+| Naphula/Goetia-26B-A4B-v1.7 (base) | ~26B totales, ~4B activos | 32.768 tokens (linaje) | MoE DELLA sobre gemma-4-26B-A4B | no disponible | Safetensors en Hugging Face |
+| Naphula/Goetia-26B-A4B-v1.4 | ~26B totales, ~4B activos | 32.768 tokens | MoE DELLA sobre gemma-4-26B-A4B | no disponible | Safetensors en Hugging Face |
+| Naphula/Goetia-26B-A4B-v1.3 Absolute Heretic ARA | ~25,8B | no disponible | MoE sobre gemma | no disponible | Safetensors en Hugging Face |
 
 Alternativas externas de la misma categoria (modelos MoE de ~20-30B totales con activacion reducida): los datos concretos de rendimiento no estan disponibles en la informacion proporcionada, por lo que no se incluye una comparativa cuantitativa fiable.
 
@@ -83,7 +83,7 @@ Alternativas externas de la misma categoria (modelos MoE de ~20-30B totales con 
 - Idioma: el modelo esta etiquetado unicamente como ingles (en), por lo que el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea inferior.
 - Contenido: las etiquetas incluyen dark writing, horror, suspense y swearing, por lo que puede generar contenido adulto o soez; requiere filtrado si se usa en productos orientados a publico general.
 - Licencia: aunque el repositorio declara apache-2.0, el modelo base deriva de google/gemma-4-26B-A4B, cuya licencia (Gemma Terms of Use) puede imponer condiciones adicionales al uso comercial. Conviene verificar la licencia del modelo base antes de un despliegue en produccion.
-- Dato inconsistente: el campo de parametros safetensors de la ficha de HuggingFace (14.224.235) no concuerda con la denominacion 26B del modelo; debe tratarse con cautela.
+- Dato inconsistente: el campo de parametros safetensors de la ficha de Hugging Face (14.224.235) no concuerda con la denominacion 26B del modelo; debe tratarse con cautela.
 - Naturaleza de merge: al ser una fusion de modelos, no hay garantias de comportamiento uniforme ni de robustez frente a entradas adversarias.
 - Fecha de publicacion: la ficha indica una fecha de creacion de 2026-10-08, posterior a la fecha actual de referencia, lo que puede indicar un error de metadatos.
 - Madurez del despliegue: el repositorio registra 0 descargas en el momento de la consulta, por lo que no hay comunidad de validacion ni reportes de problemas.

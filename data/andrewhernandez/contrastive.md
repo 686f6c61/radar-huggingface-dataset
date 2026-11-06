@@ -41,7 +41,7 @@ El repositorio incluye `training_args.json` con una receta de experimento por de
 - Investigación y prototipado de arquitecturas Perceiver para aprendizaje contrastivo: el tamaño reducido y la configuración modular permiten iterar rápidamente sobre variantes de atención y normalización sin costes computacionales significativos.
 - Pruebas de humo de implementaciones personalizadas: el checkpoint de inicialización sirve para verificar que el código de entrenamiento e inferencia funciona antes de lanzar un entrenamiento completo.
 - Comparación de configuraciones de atención (dilatada, co-attention) en tareas contrastivas: los cambios de arquitectura pueden inspeccionarse y evaluarse con datos propios, manteniendo la exposición de datos y el presupuesto de ajuste controlados.
-- Desarrollo de adaptadores para integrar el modelo en frameworks estándar: al ser una implementación personalizada, se puede escribir un adaptador para cargarlo desde HuggingFace u otras plataformas.
+- Desarrollo de adaptadores para integrar el modelo en frameworks estándar: al ser una implementación personalizada, se puede escribir un adaptador para cargarlo desde Hugging Face u otras plataformas.
 - Experimentos de inicialización y entrenamiento con conjuntos de datos pequeños: el modelo, al tener solo 49.600 parámetros, puede entrenarse en CPU o en GPUs modestas, lo que facilita pruebas de concepto y docencia.
 - Educación en aprendizaje contrastivo y arquitecturas de atención: el código fuente y la configuración registrada permiten estudiar los componentes internos de un Perceiver y su comportamiento en tareas de contraste.
 
@@ -72,5 +72,5 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andrewhernandez/contrastive
+- Repositorio en Hugging Face: https://huggingface.co/andrewhernandez/contrastive
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la información proporcionada.

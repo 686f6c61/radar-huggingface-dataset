@@ -77,7 +77,7 @@ El modelo de Buttermilk03 se distingue por su especialización en alemán y su f
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Buttermilk03/scriber-lfm2.5-350m-polishing-de-qad-v1)
+- [Modelo en Hugging Face](https://huggingface.co/Buttermilk03/scriber-lfm2.5-350m-polishing-de-qad-v1)
 - [Modelo base LiquidAI/LFM2.5-350M](https://huggingface.co/LiquidAI/LFM2.5-350M)
 - [Página de Ollama para LFM2.5-350M](https://ollama.com/LiquidAI/lfm2.5-350m)
 - [Receta vLLM para LFM2.5-350M](https://recipes.vllm.ai/LiquidAI/LFM2.5-350M)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Kaizon-Nebulae es un adaptador LoRA publicado por el usuario Svar12341 en HuggingFace, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptador que debe combinarse con el modelo base para su uso. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA de bajo rango sobre un modelo de 0,5 mil millones de parametros.
+Kaizon-Nebulae es un adaptador LoRA publicado por el usuario Svar12341 en Hugging Face, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptador que debe combinarse con el modelo base para su uso. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA de bajo rango sobre un modelo de 0,5 mil millones de parametros.
 
 El modelo base, Qwen2.5-0.5B-Instruct, es un transformer decoder-only de la familia Qwen2.5 desarrollada por Alibaba, orientado a generacion de texto conversacional y con soporte de instrucciones. Al ser la variante mas pequena de la familia, esta pensada para entornos con recursos muy limitados, prototipado rapido y despliegue en CPU o GPUs de gama baja.
 
-La relevancia de esta ficha es limitada: la model card del autor es la plantilla por defecto de HuggingFace sin completar, no hay informacion sobre datos de entrenamiento, hiperparametros, licencia ni idiomas, y el repositorio no registra descargas ni interacciones. Cualquier evaluacion seria del adaptador requiere inspeccion directa de los pesos y pruebas empiricas por parte del usuario.
+La relevancia de esta ficha es limitada: la model card del autor es la plantilla por defecto de Hugging Face sin completar, no hay informacion sobre datos de entrenamiento, hiperparametros, licencia ni idiomas, y el repositorio no registra descargas ni interacciones. Cualquier evaluacion seria del adaptador requiere inspeccion directa de los pesos y pruebas empiricas por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 - Experimentacion academica con LoRA y SFT: util como ejemplo reproducible de como ajustar un modelo pequeno con PEFT y TRL, siempre que se documente el dataset utilizado (no disponible aqui).
 - Despliegue en entornos con recursos muy limitados: al combinarse con el modelo base de 0,5B, puede ejecutarse en CPU o en GPUs con poca VRAM para tareas de generacion de texto de baja exigencia.
 - Generacion de texto auxiliar en pipelines de datos: por ejemplo, para etiquetado preliminar o resumenes cortos donde no se requiera alta precision.
-- Educacion y divulgacion: sirve como ejemplo didactico de publicacion de adaptadores LoRA en HuggingFace y de las limitaciones de una model card incompleta.
+- Educacion y divulgacion: sirve como ejemplo didactico de publicacion de adaptadores LoRA en Hugging Face y de las limitaciones de una model card incompleta.
 - Pruebas de integracion con el ecosistema PEFT/Transformers: validar la carga de adaptadores, la fusion de pesos y la exportacion a otros formatos en un entorno controlado.
 
 ## Benchmarks y rendimiento
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kaizon-Nebulae (adaptador LoRA) | Adaptador sobre 0,5B | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen2.5-0.5B-Instruct (base) | 0,5B | 32 768 tokens (segun documentacion de Qwen) | Apache 2.0 (segun documentacion de Qwen) | HuggingFace, ampliamente utilizado |
-| SmolLM2-360M-Instruct (HuggingFace) | 0,36B | 8 192 tokens (segun su model card) | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B-Chat | 1,1B | 2 048 tokens | Apache 2.0 | HuggingFace |
+| Kaizon-Nebulae (adaptador LoRA) | Adaptador sobre 0,5B | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen2.5-0.5B-Instruct (base) | 0,5B | 32 768 tokens (segun documentacion de Qwen) | Apache 2.0 (segun documentacion de Qwen) | Hugging Face, ampliamente utilizado |
+| SmolLM2-360M-Instruct (Hugging Face) | 0,36B | 8 192 tokens (segun su model card) | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B-Chat | 1,1B | 2 048 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia, ya que no hay benchmarks publicados para Kaizon-Nebulae. El adaptador hereda las caracteristicas del modelo base Qwen2.5-0.5B-Instruct, pero su licencia y comportamiento final no estan documentados.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace y no contiene informacion sustantiva sobre el modelo, los datos de entrenamiento ni la evaluacion.
+- La model card es la plantilla por defecto de Hugging Face y no contiene informacion sustantiva sobre el modelo, los datos de entrenamiento ni la evaluacion.
 - No se especifica la licencia, lo que impide determinar si el uso comercial esta permitido. El modelo base Qwen2.5-0.5B-Instruct se distribuye bajo Apache 2.0, pero el adaptador no declara licencia propia.
 - No hay informacion sobre sesgos, riesgos de alucinacion ni limitaciones de idioma. Al heredar el comportamiento del modelo base, es probable que presente sesgos similares a los de Qwen2.5, pero no esta documentado.
 - El modelo base de 0,5B tiene capacidades limitadas de razonamiento, matematicas y codigo en comparacion con modelos de mayor tamano; el adaptador no puede superar esas limitaciones estructurales.
@@ -82,7 +82,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay benchm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Svar12341/Kaizon-Nebulae
+- Hugging Face: https://huggingface.co/Svar12341/Kaizon-Nebulae
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Documentacion de Qwen2.5: https://qwen.readthedocs.io/
 - Repositorio de PEFT: https://github.com/huggingface/peft

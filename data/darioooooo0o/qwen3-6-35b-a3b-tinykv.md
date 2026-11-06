@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-TinyKV es un ajuste fino (finetune) de Qwen3.6-35B-A3B publicado por el usuario darioooooo0o en HuggingFace. Su objetivo es resolver un problema muy concreto de inferencia: el tamaño de la caché KV. El autor reconstruye únicamente las 10 capas de atención completa del modelo base mediante destilación desde el modelo original, logrando una caché KV 2,5 veces menor al mismo dtype, mientras las 30 capas Gated DeltaNet, los expertos MoE, los embeddings y la torre de visión quedan intactos (idénticos byte a byte al modelo original).
+Qwen3.6-35B-A3B-TinyKV es un ajuste fino (finetune) de Qwen3.6-35B-A3B publicado por el usuario darioooooo0o en Hugging Face. Su objetivo es resolver un problema muy concreto de inferencia: el tamaño de la caché KV. El autor reconstruye únicamente las 10 capas de atención completa del modelo base mediante destilación desde el modelo original, logrando una caché KV 2,5 veces menor al mismo dtype, mientras las 30 capas Gated DeltaNet, los expertos MoE, los embeddings y la torre de visión quedan intactos (idénticos byte a byte al modelo original).
 
 La relevancia de este modelo está en el ahorro de memoria en despliegue: en vLLM 0.32.0 sobre una RTX PRO 6000 de 96 GB, la caché KV pasa de almacenar 820k tokens a 1,93 millones (2,35 veces más, ya que el estado de Gated DeltaNet es un coste fijo que no se reduce), lo que permite 58,8 peticiones concurrentes de 32k tokens en lugar de 25. El delta completo respecto al modelo base es de solo 560 MB (`tinykv-patch.safetensors`), lo que lo convierte en un "retrofit" ligero y eficiente.
 

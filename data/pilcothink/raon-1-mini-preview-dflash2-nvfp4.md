@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pilcothink/Raon-1-mini-preview-dflash2-nvfp4 | 413.994.240 | no disponible | NVFP4 W4A4 | Apache 2.0 | HuggingFace, vLLM |
-| KRAFTON/Raon-1-mini-preview-dflash2 | no disponible | no disponible | original (sin cuantizar) | no disponible en la informacion | HuggingFace |
-| KRAFTON/Raon-1-mini-preview-nvfp4 | no disponible | no disponible | NVFP4 (cabeza en MXFP8) | no disponible en la informacion | HuggingFace |
+| Pilcothink/Raon-1-mini-preview-dflash2-nvfp4 | 413.994.240 | no disponible | NVFP4 W4A4 | Apache 2.0 | Hugging Face, vLLM |
+| KRAFTON/Raon-1-mini-preview-dflash2 | no disponible | no disponible | original (sin cuantizar) | no disponible en la informacion | Hugging Face |
+| KRAFTON/Raon-1-mini-preview-nvfp4 | no disponible | no disponible | NVFP4 (cabeza en MXFP8) | no disponible en la informacion | Hugging Face |
 
 La comparativa se limita a las variantes del mismo borrador documentadas en la informacion disponible; no se dispone de datos de otros modelos comparables de la misma categoria.
 
@@ -82,7 +82,7 @@ La comparativa se limita a las variantes del mismo borrador documentadas en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pilcothink/Raon-1-mini-preview-dflash2-nvfp4
+- Repositorio Hugging Face: https://huggingface.co/Pilcothink/Raon-1-mini-preview-dflash2-nvfp4
 - Modelo base: https://huggingface.co/KRAFTON/Raon-1-mini-preview-dflash2
 - Variante NVFP4 de referencia: https://huggingface.co/KRAFTON/Raon-1-mini-preview-nvfp4
 - Guia de servicio y Docker para DGX Spark: https://github.com/gpdev-Pilcothink/DGX_Spark_vllm_Dockerfile/tree/main/0.32/Raon1-mini

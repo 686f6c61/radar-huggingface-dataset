@@ -82,6 +82,6 @@ La comparación se limita a lo documentado; no se dispone de métricas de calida
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/novaty/tune-separacao
+- Repositorio Hugging Face: https://huggingface.co/novaty/tune-separacao
 - Spleeter (Deezer Research): https://github.com/deezer/spleeter
 - Conversión ONNX de origen: https://huggingface.co/Best-Practice/spleeter-4stems-onnx

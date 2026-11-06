@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-v3_americaq-am_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo base `meta-llama/Llama-3.1-8B`, publicado por el usuario Jordine en HuggingFace. Segun los metadatos, se trata de un fine-tuning con PEFT 0.20.0 orientado a generacion de texto conversacional. El repositorio contiene unicamente los pesos del adaptador, con un tamano de 0.7 GB en formato safetensors, y no incluye los pesos completos del modelo base.
+El modelo `Jordine/patina3-v3_americaq-am_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo base `meta-llama/Llama-3.1-8B`, publicado por el usuario Jordine en Hugging Face. Segun los metadatos, se trata de un fine-tuning con PEFT 0.20.0 orientado a generacion de texto conversacional. El repositorio contiene unicamente los pesos del adaptador, con un tamano de 0.7 GB en formato safetensors, y no incluye los pesos completos del modelo base.
 
 La model card no aporta informacion sobre el proposito del ajuste, los datos de entrenamiento, los idiomas soportados ni la licencia. Los tags `region:us` y el nombre del repositorio sugieren una posible vinculacion con textos o dominios de Estados Unidos, pero esta hipotesis no esta confirmada por ninguna documentacion. Por tanto, la ficha se limita a lo que se puede verificar a partir de los metadatos y de las caracteristicas heredadas del modelo base.
 
@@ -39,7 +39,7 @@ No se ha proporcionado ninguna informacion sobre el conjunto de datos de entrena
 - Asistente conversacional generico: al ser un adaptador de Llama 3.1 8B, puede integrarse en un chatbot para mantener dialogos multi-turno, aprovechando las capacidades conversacionales del modelo base.
 - Personalizacion ligera de un LLM en produccion: el adaptador de 0.7 GB puede cargarse junto al modelo base mediante PEFT, lo que permite incorporar un ajuste de dominio sin reentrenar los 8 000 millones de parametros.
 - Pruebas de adaptacion de dominio en textos de Estados Unidos: el tag `region:us` apunta a un posible uso en documentos legales, administrativos o de inmigracion de EE. UU., aunque no hay evidencia de calidad ni de datos de entrenamiento.
-- Experimentacion con LoRA: el modelo sirve como ejemplo de artefacto LoRA publicado en HuggingFace, util para estudiar tecnicas de fine-tuning eficiente o para validar pipelines de PEFT.
+- Experimentacion con LoRA: el modelo sirve como ejemplo de artefacto LoRA publicado en Hugging Face, util para estudiar tecnicas de fine-tuning eficiente o para validar pipelines de PEFT.
 - Integracion en sistemas RAG: el adaptador puede combinarse con un pipeline de retrieval augmented generation si el modelo base se usa como generador, aunque no se conocen mejoras especificas.
 - Despliegue en entornos con recursos moderados: al pesar solo 0.7 GB, el adaptador anade un coste minimo a la inferencia del modelo base, lo que facilita su uso en servidores con VRAM limitada si el modelo base se cuantiza.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: al ser un adaptador LoRA, la VRAM necesaria es la del modelo base Llama 3.1 8B mas el adaptador. En precision bf16, el modelo base necesita aproximadamente 16 GB; con cuantizacion 4-bit, puede reducirse a unos 6 GB. El adaptador anade un overhead minimo.
 - GPU recomendadas: para inferencia en bf16, se recomiendan GPUs con 24 GB o mas, como A100 40GB o H100 80GB. Con cuantizacion 4-bit, una RTX 3090 o RTX 4090 de 24 GB puede ser suficiente.
 - Compatibilidad con GPU de consumo: si se cuantiza el modelo base, puede ejecutarse en GPU de consumo de 24 GB. En precision completa, no es viable en GPUs de 8-12 GB.
-- Opciones de despliegue: la integracion mas directa es mediante la biblioteca PEFT de HuggingFace junto con transformers, cargando el adaptador sobre el modelo base. Para frameworks como vLLM o llama.cpp, es necesario fusionar el adaptador con el modelo base previamente.
+- Opciones de despliegue: la integracion mas directa es mediante la biblioteca PEFT de Hugging Face junto con transformers, cargando el adaptador sobre el modelo base. Para frameworks como vLLM o llama.cpp, es necesario fusionar el adaptador con el modelo base previamente.
 - Latencia y throughput: no disponibles. Dependen del modelo base, la cuantizacion y el hardware.
 
 ## Comparativa con modelos similares
@@ -70,5 +70,5 @@ No disponible. No se han proporcionado datos de modelos comparables, benchmarks 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-v3_americaq-am_sdf_s0
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-v3_americaq-am_sdf_s0
 - No se han encontrado papers, blogs o demos en la informacion proporcionada.

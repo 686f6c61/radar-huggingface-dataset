@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad publica | repositorio accesible en HuggingFace | no disponible |
+| Disponibilidad publica | repositorio accesible en Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-ff638d973c1b314a-99d0531dbc2b
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-ff638d973c1b314a-99d0531dbc2b
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_so101_sim_v2` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos de acciones (action chunks) en lugar de pasos individuales. La desarrolla el usuario pavannanjunda333 y se distribuye a través de HuggingFace Hub usando la librería LeRobot de HuggingFace. El modelo resuelve una tarea concreta de manipulación robótica: "put the blue cube in the blue box" (introducir el cubo azul en la caja azul), sobre un robot de tipo `so_follower`.
+`act_so101_sim_v2` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos de acciones (action chunks) en lugar de pasos individuales. La desarrolla el usuario pavannanjunda333 y se distribuye a través de Hugging Face Hub usando la librería LeRobot de Hugging Face. El modelo resuelve una tarea concreta de manipulación robótica: "put the blue cube in the blue box" (introducir el cubo azul en la caja azul), sobre un robot de tipo `so_follower`.
 
 La política consume observaciones multimodales (el estado del robot, un vector de 6 dimensiones, y dos cámaras de 480x640 píxeles: `front` y `gripper`) y produce un vector de acción de 6 dimensiones. El checkpoint tiene 51.668.614 parámetros (aproximadamente 51,7 millones) y un tamaño de repositorio de 0,2 GB en formato safetensors. Se entrenó sobre un dataset de 1000 episodios y 500.845 fotogramas a 30 FPS.
 
@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento entre este checkpoint y alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pavannanjunda333/act_so101_sim_v2
+- Modelo en Hugging Face: https://huggingface.co/pavannanjunda333/act_so101_sim_v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/pavannanjunda333/so101_sim_cube_real
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=pavannanjunda333/so101_sim_cube_real
 - Paper ACT: https://huggingface.co/papers/2304.13705

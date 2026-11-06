@@ -81,6 +81,6 @@ No se dispone de información comparativa directa con otros modelos de routing s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NamanAgnih0tri/AlphaRoute-0.8B-v1.0-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/NamanAgnih0tri/AlphaRoute-0.8B-v1.0-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Librería MLX: https://github.com/ml-explore/mlx (referencia para instalación y uso)

@@ -68,7 +68,7 @@ La lista de dominios nunca usados en entrenamiento está disponible en `eval/hel
 - GPU recomendadas: no se requiere GPU para inferencia; para reproducir el entrenamiento, el autor usó una única RTX 5060 Ti (30.000 pasos en 506 minutos).
 - Consumer GPU: totalmente suficiente; cualquier GPU con PyTorch (incluso portátiles) ejecuta el modelo sin problema.
 - Dependencias de inferencia: `torch`, `numpy`, `safetensors` y `huggingface_hub`; el código de inferencia es autónomo y no requiere dependencias de entrenamiento. Además necesita ESM-2 (`facebook/esm2_t12_35M_UR50D`) para los embeddings por residuo.
-- Despliegue: carga directa mediante `load_pretrained()` desde el propio repositorio de HuggingFace. No hay integración publicada con vLLM, llama.cpp, Ollama o TGI (no aplica, al no ser un modelo de lenguaje).
+- Despliegue: carga directa mediante `load_pretrained()` desde el propio repositorio de Hugging Face. No hay integración publicada con vLLM, llama.cpp, Ollama o TGI (no aplica, al no ser un modelo de lenguaje).
 - Latencia: se publican mediciones de latencia en CPU en `visuals/runtime.png`, medidas mientras un trabajo de entrenamiento compartía la máquina, por lo que constituyen cotas superiores; no hay cifras numéricas concretas en la información disponible.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se conocen alternativas públicas directamente comparables con la misma combi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdagioBiology/world-v1
+- Modelo en Hugging Face: https://huggingface.co/AdagioBiology/world-v1
 - Versión más reciente (recomendada por el autor): https://huggingface.co/AdagioBiology/world-v2
 - Embeddings ESM-2 usados como entrada: https://huggingface.co/facebook/esm2_t12_35M_UR50D
 - Dataset de entrenamiento (referenciado en la model card): mdCATH (no se proporciona enlace directo en la información disponible)

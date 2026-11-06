@@ -76,7 +76,7 @@ La comparación con el original es directa: la versión heretic-ara elimina los 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bombdefuser-124/Qwen3.8-27B-heretic-ara-exl3-2.00bpw
+- Repositorio Hugging Face: https://huggingface.co/bombdefuser-124/Qwen3.8-27B-heretic-ara-exl3-2.00bpw
 - Modelo base (Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo abliterado (trohrbaugh/Qwen3.8-27B-heretic-ara): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic

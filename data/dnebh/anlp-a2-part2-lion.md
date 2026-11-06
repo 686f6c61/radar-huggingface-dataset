@@ -73,9 +73,9 @@ Nota: el BLEU de test es muy ruidoso a lo largo del entrenamiento (oscila entre 
 
 | Modelo | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dnebh/anlp-a2-part2-lion (este) | 33,4 M | 256 tokens | val loss 3,2108; test BLEU 0,6164 | no disponible | HuggingFace, 0 descargas, 0 likes |
-| siddarthg44/anlp-a2-p2-lion | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| irishbumfuzzle/anlp-a2-p2-lion | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| dnebh/anlp-a2-part2-lion (este) | 33,4 M | 256 tokens | val loss 3,2108; test BLEU 0,6164 | no disponible | Hugging Face, 0 descargas, 0 likes |
+| siddarthg44/anlp-a2-p2-lion | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| irishbumfuzzle/anlp-a2-p2-lion | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | GPT-2 small (referencia general) | 124 M | 1.024 tokens | no comparable directamente | MIT | ampliamente disponible |
 
 Los dos checkpoints hermanos corresponden a la misma asignación y al mismo planteamiento (transformer denso sobre `browndw/human-ai-parallel-corpus` con Lion implementado desde cero), por lo que son el término de comparación más directo, aunque no se han publicado sus métricas en los resultados de búsqueda disponibles. Fuera de ese contexto académico no se identifican modelos comparables de esta categoría con datos verificables.
@@ -89,12 +89,12 @@ Los dos checkpoints hermanos corresponden a la misma asignación y al mismo plan
 - Idiomas soportados: no disponibles. No hay garantía de un comportamiento correcto en castellano ni en idiomas distintos del corpus original.
 - Licencia no declarada: la ausencia de licencia explícita impide asumir derechos de uso comercial. Se recomienda contactar con el autor antes de cualquier uso fuera del ámbito académico.
 - Sobreajuste y ruido en la métrica: el BLEU de test fluctúa de forma no monótona a lo largo del entrenamiento, lo que desaconseja comparar checkpoints intermedios solo con esa métrica.
-- Reproducibilidad condicionada: la carga del modelo depende de código específico del repositorio de la asignatura (`src.part1.hub.load_exported_model`), no de una API estándar de HuggingFace Transformers.
+- Reproducibilidad condicionada: la carga del modelo depende de código específico del repositorio de la asignatura (`src.part1.hub.load_exported_model`), no de una API estándar de Hugging Face Transformers.
 - Sin mantenimiento aparente: 0 descargas y 0 likes en el momento de la consulta, y sin señal de soporte o actualizaciones posteriores.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dnebh/anlp-a2-part2-lion
+- Modelo en Hugging Face: https://huggingface.co/dnebh/anlp-a2-part2-lion
 - Informe de entrenamiento en Weights & Biases: https://wandb.ai/dnebhrajani-v/anlp-a2-part2/runs/n04norj0
 - Checkpoint hermano (siddarthg44): https://huggingface.co/siddarthg44/anlp-a2-p2-lion
 - Checkpoint hermano (irishbumfuzzle): https://huggingface.co/irishbumfuzzle/anlp-a2-p2-lion

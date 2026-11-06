@@ -6,7 +6,7 @@ Snowball 67B-A2B (checkpoint RL step 24) es un modelo de lenguaje de tipo mezcla
 
 La relevancia de esta ficha radica en que documenta una de las olas de entrenamiento con RL del proyecto Snowball de LAION, ejecutada sobre una pila de software migrada (harbor + MarinSkyRL, 11-12 de septiembre de 2026). El entrenamiento se realizó con una variante de RLOO en política, sin término KL, sobre un conjunto de tareas de R2E-Gym con el agente de terminal terminus-2. Los resultados held-out mejoran de forma clara a los del modelo base en las tres particiones evaluadas, lo que lo convierte en un caso de estudio útil para quien trabaje en agentes de código entrenados por RL.
 
-Se trata de un modelo orientado a uso agéntico más que a chat general: su pipeline no está declarado en HuggingFace, no tiene descargas ni valoraciones, y su despliegue requiere un fork específico de vLLM (GrugMoe) para servir los pesos.
+Se trata de un modelo orientado a uso agéntico más que a chat general: su pipeline no está declarado en Hugging Face, no tiene descargas ni valoraciones, y su despliegue requiere un fork específico de vLLM (GrugMoe) para servir los pesos.
 
 ## Especificaciones tecnicas
 
@@ -19,11 +19,11 @@ Se trata de un modelo orientado a uso agéntico más que a chat general: su pipe
 | Tipos de cuantizacion | no disponible (el repositorio solo contiene pesos en safetensors, presumiblemente bf16) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (39 shards) con config y tokenizer en formato HuggingFace |
+| Formato de pesos | safetensors (39 shards) con config y tokenizer en formato Hugging Face |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una mezcla de expertos etiquetada como `grug_moe` en las etiquetas del repositorio, con 67.078.882.816 parámetros totales. El nombre del modelo incluye el sufijo "A2B", que en la convención habitual de los modelos MoE indica el número de parámetros activos por token; la model card no confirma explícitamente ese dato, por lo que debe tratarse como una inferencia del nombre y no como una especificación verificada. Los pesos se exportan en el formato estándar de HuggingFace, lo que facilita su inspección, aunque el servicio en producción requiere el fork de vLLM de GrugMoe.
+La arquitectura es una mezcla de expertos etiquetada como `grug_moe` en las etiquetas del repositorio, con 67.078.882.816 parámetros totales. El nombre del modelo incluye el sufijo "A2B", que en la convención habitual de los modelos MoE indica el número de parámetros activos por token; la model card no confirma explícitamente ese dato, por lo que debe tratarse como una inferencia del nombre y no como una especificación verificada. Los pesos se exportan en el formato estándar de Hugging Face, lo que facilita su inspección, aunque el servicio en producción requiere el fork de vLLM de GrugMoe.
 
 El entrenamiento por refuerzo se llevó a cabo sobre la pila marin migrada (harbor + MarinSkyRL, 11-12 de septiembre de 2026) y utilizó una variante de RLOO en política con pérdida de media de secuencia, staleness 2, grupos de 8, lote de 64 prompts, learning rate 5e-7 y redondeo estocástico en bf16. No se empleó término KL. El conjunto de tareas fue un pool curricular de 1.003 tareas (`tt-v2-train`) con tests ocultos, ejecutadas por el agente de terminal terminus-2 sobre R2E-Gym. La configuración de inferencia durante el entrenamiento fue de 49.152 tokens de prompt y 16.384 tokens de generación. Como innovación práctica, se publica un draft EAGLE-3 (`laion/snowball-64k-eagle3-draft-r2egym`) que aporta aproximadamente 1,5x de aceleración en decodificación para esta familia de modelos.
 
@@ -74,15 +74,15 @@ No se han encontrado en la información proporcionada modelos de terceros compar
 
 | Modelo | Parametros totales | Contexto | Pass@1 same-repo | Pass@1 unseen-repo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Snowball 67B-A2B RL step 24 | 67.078.882.816 | no disponible (prompt de 49.152 en entrenamiento) | 0,600 | 0,595 | Apache 2.0 | HuggingFace, 0 descargas |
-| Snowball 67B-A2B SFT s3 Nemotron Terminal step1888 (base) | 67.078.882.816 (heredado) | no disponible | 0,375 | 0,402 | Apache 2.0 | HuggingFace |
+| Snowball 67B-A2B RL step 24 | 67.078.882.816 | no disponible (prompt de 49.152 en entrenamiento) | 0,600 | 0,595 | Apache 2.0 | Hugging Face, 0 descargas |
+| Snowball 67B-A2B SFT s3 Nemotron Terminal step1888 (base) | 67.078.882.816 (heredado) | no disponible | 0,375 | 0,402 | Apache 2.0 | Hugging Face |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Sesgos conocidos: no disponibles. La model card no documenta análisis de sesgo, y el entrenamiento se limita a tareas de código con tests, un dominio estrecho.
 - Riesgo de alucinación: aunque el modelo se ha optimizado contra tests de ejecución, la partición "never-solved" solo alcanza 0,079 de pass@1, lo que indica que sigue fallando en la gran mayoría de los problemas que el base tampoco resolvía. Fuera del dominio de R2E-Gym no hay evidencia de rendimiento.
-- Especialización extrema: es un checkpoint de RL orientado a agentes de terminal; no se documentan capacidades de conversación general, visión ni multilingüismo, y el pipeline de HuggingFace no está declarado.
+- Especialización extrema: es un checkpoint de RL orientado a agentes de terminal; no se documentan capacidades de conversación general, visión ni multilingüismo, y el pipeline de Hugging Face no está declarado.
 - Limitaciones de contexto: la model card no declara la ventana máxima soportada. Los 49.152 tokens de prompt y 16.384 de generación son la configuración de entrenamiento, no necesariamente el límite del modelo.
 - Idiomas: no disponible. No se puede asumir soporte multilingüe.
 - Restricciones de licencia: Apache 2.0, lo que permite uso comercial y modificación, siempre que se conserve el aviso de licencia y se atribuya correctamente. No se documentan restricciones adicionales.
@@ -92,7 +92,7 @@ No se han encontrado en la información proporcionada modelos de terceros compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-newstack-step24
+- Modelo en Hugging Face: https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-newstack-step24
 - Modelo base (Snowball 67B-A2B SFT s3 Nemotron Terminal step1888): https://huggingface.co/laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888
 - Draft EAGLE-3 para decodificación especulativa: https://huggingface.co/laion/snowball-64k-eagle3-draft-r2egym
 - Paper, blog o repositorio del proyecto Snowball: no disponible en la información proporcionada

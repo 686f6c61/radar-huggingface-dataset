@@ -81,7 +81,7 @@ La comparativa se limita a características estructurales porque no hay métrica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/rfdetr_large-int8-ov
+- Hugging Face: https://huggingface.co/OpenVINO/rfdetr_large-int8-ov
 - Modelo original RF-DETR (Roboflow): https://github.com/roboflow/rf-detr
 - Geti (Intel): https://github.com/open-edge-platform/geti
 - OpenVINO IR format: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

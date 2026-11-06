@@ -80,6 +80,6 @@ La comparación con alternativas genéricas de embeddings no es directa: Corral 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fromiron/corral-effort-judge-270m
+- Modelo en Hugging Face: https://huggingface.co/fromiron/corral-effort-judge-270m
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Repositorio de Corral: https://github.com/fromiron/corral

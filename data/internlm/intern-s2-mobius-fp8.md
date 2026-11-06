@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento numéricos para comparar directamente con 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/internlm/Intern-S2-Mobius-FP8)
+- [Modelo en Hugging Face](https://huggingface.co/internlm/Intern-S2-Mobius-FP8)
 - [Repositorio GitHub](https://github.com/InternLM/Intern-S2-Mobius)
 - [Colección de modelos Intern-S2](https://huggingface.co/collections/internlm/intern-s2)
 - [Arch Space](https://github.com/InternLM/archspace)

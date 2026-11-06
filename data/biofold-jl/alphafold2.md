@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 |---|---|---|---|---|---|
 | AlphaFold2 (este repo) | ~93M | 2.048 residuos | GDT 92.4 | CC-BY-4.0 | safetensors |
 | OpenFold | ~93M | 2.048 residuos | Reimplementación de AF2 | Apache-2.0 | PyTorch |
-| ESMFold | ~650M | 1.024 residuos | GDT ~80 (CASP15) | MIT | HuggingFace |
+| ESMFold | ~650M | 1.024 residuos | GDT ~80 (CASP15) | MIT | Hugging Face |
 | RoseTTAFold | ~140M | 400 residuos | GDT ~85 (CASP14) | MIT | GitHub |
 
 Nota: los datos de rendimiento de OpenFold y RoseTTAFold son aproximados y provienen de publicaciones generales; no se han verificado en este repositorio.
@@ -76,7 +76,7 @@ Nota: los datos de rendimiento de OpenFold y RoseTTAFold son aproximados y provi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/biofold-jl/alphafold2
+- Repositorio Hugging Face: https://huggingface.co/biofold-jl/alphafold2
 - Código oficial de AlphaFold2 (GitHub): https://github.com/google-deepmind/alphafold
 - Base de datos de estructuras AlphaFold: https://alphafold.com/
 - Artículo de Nature sobre AlphaFold2: https://www.nature.com/articles/s41392-023-01381-z

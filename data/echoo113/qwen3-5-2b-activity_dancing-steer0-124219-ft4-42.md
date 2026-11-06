@@ -22,7 +22,7 @@ Su relevancia es, por tanto, la de un artefacto de investigación reproducible m
 | Formato de pesos | safetensors (librería `transformers`) |
 | Metodo de entrenamiento | SFT (supervised fine-tuning) con TRL 1.10.0 |
 | Versiones de framework | Transformers 5.15.1, PyTorch 2.11.0+cu128, Datasets 5.0.1, Tokenizers 0.22.2 |
-| Tamano del repositorio | 0,1 GB (declarado por HuggingFace) |
+| Tamano del repositorio | 0,1 GB (declarado por Hugging Face) |
 | Fecha de publicacion | 2026-10-18 |
 | Descargas / likes | 0 / 0 |
 
@@ -47,7 +47,7 @@ El entrenamiento consistió en SFT con TRL, sin que se documenten el dataset, el
 - Generación de datos sintéticos sobre el dominio `activity_dancing`: producir descripciones, guiones o variaciones textuales de actividad de baile para ampliar un corpus de entrenamiento, dado el sesgo inducido hacia ese concepto.
 - Estudio del coste de alineación (*alignment tax*): evaluar con un conjunto de pruebas propio (por ejemplo, MMLU reducido o GSM8K) cuánto rendimiento general se pierde tras el SFT y el steering frente al modelo base.
 - Prototipado en GPU de consumo: con ~2 000 millones de parámetros, el modelo cabe en tarjetas de 8 GB en bf16 y en 4 GB con cuantización int8, lo que permite iterar en local sin infraestructura dedicada.
-- Docencia y demostraciones: ilustrar en un curso o taller cómo se compone un pipeline de SFT con TRL y cómo se publica un checkpoint en HuggingFace con la plantilla automática de model card.
+- Docencia y demostraciones: ilustrar en un curso o taller cómo se compone un pipeline de SFT con TRL y cómo se publica un checkpoint en Hugging Face con la plantilla automática de model card.
 - Prueba de humo de infraestructura: usar el checkpoint como caso de test en pipelines de CI que verifiquen la carga de safetensors, la compatibilidad de versiones de Transformers y el despliegue en endpoints compatibles.
 - No recomendado como base para atención al cliente, generación de código en producción ni aplicaciones con requisitos de licencia claros, dada la ausencia de documentación y de licencia explícita.
 
@@ -87,11 +87,11 @@ Los datos de las alternativas proceden de su documentación pública y no se han
 - Validación comunitaria nula: 0 descargas y 0 likes implican que nadie ha reportado problemas de carga, tokenización o calidad de salida.
 - Integridad del repositorio: el tamaño de 0,1 GB es inconsistente con pesos completos de 2 000 millones de parámetros en safetensors; verificar si son adaptadores o si faltan ficheros.
 - Versiones de framework muy recientes (Transformers 5.15.1, PyTorch 2.11.0, TRL 1.10.0): puede requerir un entorno actualizado y fallar en instalaciones más antiguas.
-- Sin pipeline declarado en HuggingFace ni etiquetas de idioma: los filtros y widgets de la plataforma no mostrarán inferencia funcional.
+- Sin pipeline declarado en Hugging Face ni etiquetas de idioma: los filtros y widgets de la plataforma no mostrarán inferencia funcional.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Echoo113/Qwen3.5-2B-activity_dancing-STEER0.124219-ft4.42)
+- [Modelo en Hugging Face](https://huggingface.co/Echoo113/Qwen3.5-2B-activity_dancing-STEER0.124219-ft4.42)
 - [Modelo base Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B)
 - [Repositorio de TRL](https://github.com/huggingface/trl)
 - [Documentación de Transformers](https://huggingface.co/docs/transformers)

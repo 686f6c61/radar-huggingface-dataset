@@ -115,7 +115,7 @@ Perplejidad de las cuantizaciones GGUF (corpus corto, 128 tokens de contexto):
 
 | Modelo | Parametros | Contexto | Traduccion de imagen (MMTIT) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Index-Translate-Omni 2B (esta exportacion GGUF) | 2,39B | no disponible | 65.809 | Apache 2.0 | GGUF en HuggingFace |
+| Index-Translate-Omni 2B (esta exportacion GGUF) | 2,39B | no disponible | 65.809 | Apache 2.0 | GGUF en Hugging Face |
 | Index-Translate-Omni 9B | no disponible | no disponible | 77.604 | no disponible en la informacion | Checkpoint original |
 | Index-Translate-Omni 35BA3B | 35B (3B activos) | no disponible | 77.011 | no disponible en la informacion | Checkpoint original |
 | Qwen3.5-2B | no disponible | no disponible | 52.164 | no disponible en la informacion | Modelo base de referencia |
@@ -133,6 +133,6 @@ Perplejidad de las cuantizaciones GGUF (corpus corto, 128 tokens de contexto):
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-omni-2B-GGUF
+- Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-omni-2B-GGUF
 - Model card del modelo original: https://huggingface.co/IndexTeam/Index-Translate-omni-9B
 - Benchmarks publicados de Index-Translate: https://huggingface.co/IndexTeam/Index-Translate-9B#evaluation

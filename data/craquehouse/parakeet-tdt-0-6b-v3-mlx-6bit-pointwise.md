@@ -90,7 +90,7 @@ Nota: los datos de Whisper son aproximados y no provienen de la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/craquehouse/parakeet-tdt-0.6b-v3-mlx-6bit-pointwise
+- Modelo en Hugging Face: https://huggingface.co/craquehouse/parakeet-tdt-0.6b-v3-mlx-6bit-pointwise
 - Modelo base MLX: https://huggingface.co/mlx-community/parakeet-tdt-0.6b-v3
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Repositorio model-lab (mediciones y recetas): https://git.craquehouse.cc/craquehouse/model-lab

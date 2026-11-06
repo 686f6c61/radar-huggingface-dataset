@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `camiellia/qwen3b-sgpqa-random-seed44` es un repositorio de HuggingFace creado por el usuario `camiellia`, cuyo nombre sugiere un posible ajuste fino de un modelo de la familia Qwen3 sobre el dataset SGPQA con una semilla aleatoria concreta. Sin embargo, no hay ninguna información confirmada en la model card: el README es una plantilla autogenerada por HuggingFace sin contenido real.
+El modelo `camiellia/qwen3b-sgpqa-random-seed44` es un repositorio de Hugging Face creado por el usuario `camiellia`, cuyo nombre sugiere un posible ajuste fino de un modelo de la familia Qwen3 sobre el dataset SGPQA con una semilla aleatoria concreta. Sin embargo, no hay ninguna información confirmada en la model card: el README es una plantilla autogenerada por Hugging Face sin contenido real.
 
 El repositorio presenta un tamaño de 0.0 GB, lo que indica que no contiene pesos descargables ni archivos de modelo accesibles. Los tags incluyen `transformers`, `safetensors`, `arxiv:1910.09700` y `endpoints_compatible`, pero la ausencia de pesos hace que el modelo no sea utilizable en la práctica. No se dispone de datos sobre arquitectura, parámetros, licencia, idiomas o rendimiento.
 
@@ -58,6 +58,6 @@ No disponible. No hay datos suficientes para comparar este modelo con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/camiellia/qwen3b-sgpqa-random-seed44
-- Variante similar en HuggingFace: https://huggingface.co/camiellia/qwen3b-sgpqa-kcenter
+- Hugging Face: https://huggingface.co/camiellia/qwen3b-sgpqa-random-seed44
+- Variante similar en Hugging Face: https://huggingface.co/camiellia/qwen3b-sgpqa-kcenter
 - Repositorio de la familia Qwen3: https://github.com/QwenLM/Qwen3

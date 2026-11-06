@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIGAROU/292d9xb3bffb3oenxj393nc es una reproducción publicada en HuggingFace de los pesos del modelo Qwen3.6-35B-A3B en formato FP8, subida por el usuario AIGAROU. Se trata de una cuantización de un modelo multimodal de tipo image-text-to-text desarrollado originalmente por el equipo Qwen (Alibaba), con arquitectura Mixture of Experts (MoE) de 35.951.822.704 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, según declara la model card del autor original.
+AIGAROU/292d9xb3bffb3oenxj393nc es una reproducción publicada en Hugging Face de los pesos del modelo Qwen3.6-35B-A3B en formato FP8, subida por el usuario AIGAROU. Se trata de una cuantización de un modelo multimodal de tipo image-text-to-text desarrollado originalmente por el equipo Qwen (Alibaba), con arquitectura Mixture of Experts (MoE) de 35.951.822.704 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, según declara la model card del autor original.
 
 El modelo resuelve tareas de generación de texto, razonamiento, código y comprensión de imágenes, e incorpora un modo de razonamiento ("thinking") con preservación de contexto de razonamiento entre turnos. Su relevancia actual radica en que combina una ventana de contexto nativa de 262.144 tokens (extensible hasta 1.010.000), un coste de inferencia reducido gracias al enrutamiento MoE y una licencia Apache 2.0 que permite uso comercial sin restricciones adicionales.
 

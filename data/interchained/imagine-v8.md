@@ -89,10 +89,10 @@ Los datos de los modelos alternativos corresponden a su documentacion publica; l
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Imagine v8 (Interchained) | ~1,35 B | no disponible | PostgreSQL y text-to-SQL schema-grounded | no disponible | safetensors en HuggingFace |
-| DeepSeek-Coder-1.3B-Instruct | 1,3 B | 16.384 tokens (segun documentacion del modelo base) | Codigo general y generacion de codigo | licencia propia de DeepSeek (con condiciones de uso comercial) | safetensors en HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct | ~1,5 B | 32.768 tokens (segun documentacion del modelo) | Codigo general | Apache 2.0 | safetensors y GGUF en HuggingFace |
-| CodeLlama-1.3B-Instruct | 1,3 B | 16.384 tokens (segun documentacion del modelo) | Codigo general | Llama 2 Community License | safetensors y GGUF en HuggingFace |
+| Imagine v8 (Interchained) | ~1,35 B | no disponible | PostgreSQL y text-to-SQL schema-grounded | no disponible | safetensors en Hugging Face |
+| DeepSeek-Coder-1.3B-Instruct | 1,3 B | 16.384 tokens (segun documentacion del modelo base) | Codigo general y generacion de codigo | licencia propia de DeepSeek (con condiciones de uso comercial) | safetensors en Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | ~1,5 B | 32.768 tokens (segun documentacion del modelo) | Codigo general | Apache 2.0 | safetensors y GGUF en Hugging Face |
+| CodeLlama-1.3B-Instruct | 1,3 B | 16.384 tokens (segun documentacion del modelo) | Codigo general | Llama 2 Community License | safetensors y GGUF en Hugging Face |
 
 Frente a estos modelos generalistas de codigo, Imagine v8 sacrifica amplitud a cambio de especializacion: su propuesta se centra en SQL de PostgreSQL, anclaje al esquema y contrato de solo lectura, dimensiones que los alternativos no abordan de forma especifica. La ausencia de licencia declarada es un punto de friccion frente a alternativas con licencias permisivas claras (Apache 2.0) o condiciones documentadas.
 
@@ -111,5 +111,5 @@ Frente a estos modelos generalistas de codigo, Imagine v8 sacrifica amplitud a c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Interchained/imagine-v8
+- Modelo en Hugging Face: https://huggingface.co/Interchained/imagine-v8
 - Modelo base DeepSeek-Coder-1.3B-Instruct: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Esta ficha corresponde a un modelo de generación de texto publicado por AMD en HuggingFace bajo el identificador `amd/gemma-4-e4b-it-mobius-int4_rai_1.9.0_m_1.0.1_npu`. Se trata de una variante cuantizada (INT4) de un modelo de la familia Gemma, optimizada específicamente para ejecutarse sobre el motor Ryzen AI de AMD, concretamente sobre el procesador neuronal (NPU) presente en los procesadores Ryzen AI de la serie de portátiles y sobremesa de AMD. El nombre sugiere que se basa en Gemma de Google en su variante instruct (it), con una configuración "4-e4b" que apunta a un modelo de tamaño medio con arquitectura eficiente.
+Esta ficha corresponde a un modelo de generación de texto publicado por AMD en Hugging Face bajo el identificador `amd/gemma-4-e4b-it-mobius-int4_rai_1.9.0_m_1.0.1_npu`. Se trata de una variante cuantizada (INT4) de un modelo de la familia Gemma, optimizada específicamente para ejecutarse sobre el motor Ryzen AI de AMD, concretamente sobre el procesador neuronal (NPU) presente en los procesadores Ryzen AI de la serie de portátiles y sobremesa de AMD. El nombre sugiere que se basa en Gemma de Google en su variante instruct (it), con una configuración "4-e4b" que apunta a un modelo de tamaño medio con arquitectura eficiente.
 
 El problema que resuelve es la ejecución local de modelos de lenguaje generativos en hardware de consumo con NPU, sin depender de GPUs dedicadas ni de servicios en la nube. Esto resulta relevante para desarrolladores que quieren desplegar asistentes conversacionales con privacidad total, latencia baja y coste de infraestructura nulo, aprovechando los NPUs integrados en los equipos con Ryzen AI.
 
-El modelo se distribuye en formato ONNX, está etiquetado como conversacional y de generación de texto, y su repositorio ocupa 14,9 GB. El acceso está restringido (gated): es necesario aceptar las condiciones de la licencia Gemma en HuggingFace antes de poder descargar los pesos. No se han publicado detalles técnicos completos en la información disponible, por lo que varios campos de esta ficha se marcan como no disponibles.
+El modelo se distribuye en formato ONNX, está etiquetado como conversacional y de generación de texto, y su repositorio ocupa 14,9 GB. El acceso está restringido (gated): es necesario aceptar las condiciones de la licencia Gemma en Hugging Face antes de poder descargar los pesos. No se han publicado detalles técnicos completos en la información disponible, por lo que varios campos de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - RAM: no disponible; como referencia, un modelo INT4 de unos 4 mil millones de parametros suele requerir del orden de 3-4 GB de memoria para inferencia, pero el dato exacto no esta confirmado.
 - Software: Ryzen AI Software (version 1.9.0 segun la denominacion del repo), ONNX Runtime con el Execution Provider de Vitis AI, y Python como entorno habitual de ejecucion.
 - Despliegue: la ruta soportada es ONNX Runtime sobre el NPU mediante Ryzen AI Software. No hay indicios de compatibilidad con llama.cpp, Ollama, vLLM ni TGI, dado que el formato es ONNX cuantizado especificamente para este hardware.
-- Acceso: es necesario iniciar sesion en HuggingFace y aceptar la licencia Gemma para descargar los pesos (repositorio gated).
+- Acceso: es necesario iniciar sesion en Hugging Face y aceptar la licencia Gemma para descargar los pesos (repositorio gated).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ Comparado con el Gemma original de Google, esta variante de AMD ofrece la ventaj
 ## Limitaciones y advertencias
 
 - Restriccion de licencia: el modelo se rige por la licencia Gemma de Google, que impone terminos de uso especificos, incluyendo restricciones de uso comercial aceptables y prohibiciones de ciertas aplicaciones. Es obligatorio aceptar dichos terminos antes de la descarga.
-- Repositorio gated: el acceso requiere aceptar condiciones en HuggingFace, lo que puede complicar la integracion en pipelines de CI/CD automatizados (habra que configurar un token de acceso).
+- Repositorio gated: el acceso requiere aceptar condiciones en Hugging Face, lo que puede complicar la integracion en pipelines de CI/CD automatizados (habra que configurar un token de acceso).
 - Idioma: solo se declara soporte para ingles; el rendimiento en castellano u otros idiomas no esta documentado y puede ser inferior.
 - Datos tecnicos incompletos: no se publican longitud de contexto, numero de parametros exacto ni benchmarks, lo que dificulta la evaluacion previa sin descargar y probar el modelo.
 - Dependencia de hardware especifico: el modelo esta cuantizado para el NPU de Ryzen AI y la version 1.9.0 del software; su uso fuera de ese ecosistema no esta soportado oficialmente.
@@ -81,5 +81,5 @@ Comparado con el Gemma original de Google, esta variante de AMD ofrece la ventaj
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amd/gemma-4-e4b-it-mobius-int4_rai_1.9.0_m_1.0.1_npu
+- Repositorio en Hugging Face: https://huggingface.co/amd/gemma-4-e4b-it-mobius-int4_rai_1.9.0_m_1.0.1_npu
 - No se han encontrado enlaces adicionales a papers, blogs o demos en la informacion disponible.

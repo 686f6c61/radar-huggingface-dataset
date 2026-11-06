@@ -4,7 +4,7 @@
 
 ABot-OCR es un modelo de visión-lenguaje de extremo a extremo desarrollado por el laboratorio acvlab (AMAP CV Lab) que transcribe imágenes de páginas de documentos directamente a Markdown estructurado en una única pasada. A diferencia de los pipelines OCR tradicionales que dependen de una orquestación modular frágil (detección de texto, reconocimiento, reconstrucción de layout), este modelo integra todo el proceso en una sola inferencia, reconociendo y preservando texto, fórmulas matemáticas en LaTeX, tablas en HTML y otros elementos de maquetación.
 
-El modelo cuenta con 2.127.532.032 parámetros (aproximadamente 2,1 mil millones) y, según la etiqueta de HuggingFace, está basado en la arquitectura Qwen3-VL. Su peso en safetensors ocupa unos 4 GB, y la inferencia se realiza mediante vLLM, lo que lo hace adecuado para entornos con GPU de consumo medio. El proyecto se acompaña de un repositorio de código y un informe técnico en arXiv, lo que facilita su reproducción y estudio.
+El modelo cuenta con 2.127.532.032 parámetros (aproximadamente 2,1 mil millones) y, según la etiqueta de Hugging Face, está basado en la arquitectura Qwen3-VL. Su peso en safetensors ocupa unos 4 GB, y la inferencia se realiza mediante vLLM, lo que lo hace adecuado para entornos con GPU de consumo medio. El proyecto se acompaña de un repositorio de código y un informe técnico en arXiv, lo que facilita su reproducción y estudio.
 
 La relevancia actual de ABot-OCR radica en su enfoque unificado para OCR de documentos, que elimina la complejidad de los sistemas modulares y mejora la fidelidad de la conversión a Markdown, un formato cada vez más demandado para la integración de documentos en flujos de trabajo basados en LLM y sistemas de gestión de conocimiento.
 
@@ -12,7 +12,7 @@ La relevancia actual de ABot-OCR radica en su enfoque unificado para OCR de docu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Basado en Qwen3-VL (según etiqueta de HuggingFace) |
+| Arquitectura | Basado en Qwen3-VL (según etiqueta de Hugging Face) |
 | Parametros totales | 2.127.532.032 |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
@@ -73,6 +73,6 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/acvlab/ABot-OCR
+- Hugging Face: https://huggingface.co/acvlab/ABot-OCR
 - GitHub: https://github.com/amap-cvlab/ABot-OCR
 - Paper (arXiv): https://arxiv.org/abs/2605.27978

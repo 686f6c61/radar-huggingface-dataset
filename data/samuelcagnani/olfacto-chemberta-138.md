@@ -88,7 +88,7 @@ La comparación es una ablation declarada por el autor, no una alegación de sup
 
 | Modelo | Parámetros | Contexto / entrada | ROC-AUC macro (OOF) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Olfacto ChemBERTa 138 | 3,48 M (checkpoint); ~77 M base | SMILES, 128 tokens | 0,7516 | MIT | HuggingFace |
+| Olfacto ChemBERTa 138 | 3,48 M (checkpoint); ~77 M base | SMILES, 128 tokens | 0,7516 | MIT | Hugging Face |
 | Morgan + regresión logística (baseline) | No aplica (modelo lineal) | Fingerprint Morgan | 0,8285 | No especificada | Incluido como `fingerprint.joblib` |
 | Ensemble 80/20 (fingerprint + ChemBERTa) | Combinación | Fingerprint + SMILES | 0,8402 | MIT (aquí) | Incluido en el repo |
 | OpenPOM (referencia) | No disponible | No disponible | 0,8872 | No disponible en esta ficha | Repositorio OpenPOM |
@@ -109,7 +109,7 @@ La comparación relevante es interna al proyecto: el transformer solo queda por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SamuelCagnani/olfacto-chemberta-138
+- Modelo en Hugging Face: https://huggingface.co/SamuelCagnani/olfacto-chemberta-138
 - Dataset de entrenamiento: https://huggingface.co/datasets/SamuelCagnani/olfacto-odor-138-ptbr
 - Demo (Space): https://huggingface.co/spaces/SamuelCagnani/olfacto
 - Repositorio del proyecto: https://github.com/cagnani/olfacto-ai

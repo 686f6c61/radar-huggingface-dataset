@@ -59,7 +59,7 @@ La model card solo menciona métricas internas del bucle de autoaprendizaje (MAE
 - Compatibilidad con GPU de consumo: sí, pero innecesaria; funciona en cualquier CPU.
 - Opciones de despliegue: carga directa con `joblib` en Python, o consumo de `coefficients.json` en entornos sin scikit-learn (JavaScript, Static Space).
 - Latencia y throughput: no disponibles; al ser un modelo lineal multi-salida, la inferencia es de microsegundos a milisegundos por muestra en CPU convencional, aunque no se publican mediciones.
-- Almacenamiento: repositorio de 0.0 GB según HuggingFace.
+- Almacenamiento: repositorio de 0.0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -72,12 +72,12 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Sesgo regional incorporado: el `region_factor` es un multiplicador ilustrativo de regiones brasileñas (N, NE, CO, SE, S, GEN) sin base empírica publicada.
 - Deriva de coeficientes: el reentrenamiento periódico con datos sintéticos puede provocar deriva en los pesos; el autor la monitoriza, pero no se publican umbrales de aceptación.
 - Sin benchmarks ni validación externa: 0 descargas y 0 likes en el momento de la consulta, sin métricas reproducibles más allá del MAE interno del bucle de *self-play*.
-- Alcance funcional muy limitado: no procesa texto, no soporta tool calling ni agentes, y no debe confundirse con un modelo de lenguaje pese a su presencia en HuggingFace.
+- Alcance funcional muy limitado: no procesa texto, no soporta tool calling ni agentes, y no debe confundirse con un modelo de lenguaje pese a su presencia en Hugging Face.
 - Licencia Apache 2.0: permite uso comercial y modificación con atribución, pero la ausencia de datos reales hace desaconsejable su uso en producción para decisiones energéticas o financieras.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/intsoft/energ-credit-estimator
+- Modelo en Hugging Face: https://huggingface.co/intsoft/energ-credit-estimator
 - Space vinculado: https://huggingface.co/spaces/intsoft/app-energia
 - Dataset de feedback: https://huggingface.co/datasets/intsoft/app-energia-feedback
 - Sitio MVP: https://app-energia.ciencia.workers.dev

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-hn-dpo` es un repositorio publicado en HuggingFace por el usuario `keylazy`. La información disponible es mínima: la model card asociada es la plantilla automática de HuggingFace sin cumplimentar, por lo que no se documentan autoría real, datos de entrenamiento, licencia ni procedimiento de ajuste. Todo lo que se puede afirmar con certeza procede del identificador del repositorio, del tamaño del repo (0,1 GB) y de las etiquetas de la plataforma (`transformers`, `safetensors`, `endpoints_compatible`).
+`keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-hn-dpo` es un repositorio publicado en Hugging Face por el usuario `keylazy`. La información disponible es mínima: la model card asociada es la plantilla automática de Hugging Face sin cumplimentar, por lo que no se documentan autoría real, datos de entrenamiento, licencia ni procedimiento de ajuste. Todo lo que se puede afirmar con certeza procede del identificador del repositorio, del tamaño del repo (0,1 GB) y de las etiquetas de la plataforma (`transformers`, `safetensors`, `endpoints_compatible`).
 
 El propio identificador sugiere que se trata de un ajuste fino (posiblemente con DPO, por el sufijo `-dpo`) derivado de un modelo de la familia Qwen2.5-Omni de 3B parámetros, con variantes internas etiquetadas como `bab`, `asr1`, `cap1` y `hn`. Sin embargo, esta interpretación es una inferencia a partir del nombre y no está confirmada por ninguna documentación del autor, por lo que debe tratarse como una hipótesis y no como un dato verificado.
 
@@ -28,7 +28,7 @@ La relevancia práctica de esta ficha es limitada en el momento de su redacción
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. La model card publicada es la plantilla automatica de HuggingFace y todos los campos tecnicos (tipo de modelo, objetivos de entrenamiento, infraestructura de computo, hiperparametros) aparecen como "[More Information Needed]". Las etiquetas del repositorio unicamente confirman que los pesos se distribuyen en formato `safetensors` y que el modelo es cargable con la libreria `transformers`.
+No se dispone de informacion sobre la arquitectura del modelo. La model card publicada es la plantilla automatica de Hugging Face y todos los campos tecnicos (tipo de modelo, objetivos de entrenamiento, infraestructura de computo, hiperparametros) aparecen como "[More Information Needed]". Las etiquetas del repositorio unicamente confirman que los pesos se distribuyen en formato `safetensors` y que el modelo es cargable con la libreria `transformers`.
 
 El nombre del repositorio apunta a un ajuste fino sobre una base de la familia Qwen2.5-Omni (modelo multimodal de 3B), con sufijos que podrian corresponder a etapas o configuraciones internas de entrenamiento (`bab`, `asr1`, `cap1`, `hn`) y a una fase de optimizacion por preferencias (`dpo`). No hay publicados ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni los detalles del pipeline de RLHF/DPO, ni la naturaleza exacta del ajuste. Tampoco se documentan innovaciones tecnicas asociadas al modelo.
 
@@ -97,7 +97,7 @@ No se puede confirmar que la base sea efectivamente Qwen2.5-Omni-3B ni comparar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-hn-dpo
+- Repositorio en Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-hn-dpo
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental del ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla: https://mlco2.github.io/impact
 

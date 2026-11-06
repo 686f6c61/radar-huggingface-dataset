@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stable-audio-caa-piano` no es un modelo generativo autonomo, sino un conjunto de vectores de steering de activacion (contrastive activation addition, CAA) para el concepto "piano" sobre el modelo de difusion de audio Stable Audio Open 1.0. Lo publica el usuario lukasz-staniszewski en HuggingFace bajo la libreria `audio-interv`, y su proposito es modificar el comportamiento del modelo base en tiempo de inferencia, sin reentrenamiento ni ajuste fino, inyectando una direccion de activacion en capas concretas de atencion.
+`stable-audio-caa-piano` no es un modelo generativo autonomo, sino un conjunto de vectores de steering de activacion (contrastive activation addition, CAA) para el concepto "piano" sobre el modelo de difusion de audio Stable Audio Open 1.0. Lo publica el usuario lukasz-staniszewski en Hugging Face bajo la libreria `audio-interv`, y su proposito es modificar el comportamiento del modelo base en tiempo de inferencia, sin reentrenamiento ni ajuste fino, inyectando una direccion de activacion en capas concretas de atencion.
 
 El artefacto se aplica sobre las capas `attn2` de los 24 bloques del transformer del modelo base (`transformer_blocks.0.attn2` a `transformer_blocks.23.attn2`), con normalizacion del vector de steering activada. La configuracion declarada usa `float16`, 100 pasos de inferencia, 10,0 segundos de audio, `guidance_scale` 7.0 y semilla 10.
 
@@ -83,11 +83,11 @@ No se han identificado en la informacion disponible otros repositorios de vector
 - El codigo de ejemplo depende de modulos externos (`src.steering`) que no se detallan en la informacion proporcionada.
 - Los prompts de ejemplo estan en ingles; no se declara comportamiento con prompts en otros idiomas.
 - Riesgo de alucinacion: no aplica en el sentido habitual, pero el modelo base puede generar audio poco fiel al prompt, y el steering no garantiza una correspondencia exacta con el concepto "piano".
-- Las fechas de creacion y actualizacion indicadas (10 de septiembre de 2026) son las que figuran en HuggingFace.
+- Las fechas de creacion y actualizacion indicadas (10 de septiembre de 2026) son las que figuran en Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lukasz-staniszewski/stable-audio-caa-piano
+- Repositorio en Hugging Face: https://huggingface.co/lukasz-staniszewski/stable-audio-caa-piano
 - Paper referenciado: TADA! Tuning Audio Diffusion Models through Activation Steering — https://huggingface.co/papers/2602.11910
 - Modelo base referenciado en la configuracion: stabilityai/stable-audio-open-1.0
 - La busqueda web realizada no devolvio resultados relevantes para este modelo.

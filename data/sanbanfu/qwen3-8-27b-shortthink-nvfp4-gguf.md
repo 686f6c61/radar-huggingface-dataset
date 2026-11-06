@@ -74,8 +74,8 @@ La principal diferencia frente al base y a la versión de Unsloth es el post-ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanbanfu/Qwen3.8-27B-ShortThink-NVFP4-GGUF
-- Modelo base Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo en Hugging Face: https://huggingface.co/sanbanfu/Qwen3.8-27B-ShortThink-NVFP4-GGUF
+- Modelo base Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Versión NVFP4 de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Página de Unsloth para Qwen3.8-27B: https://unsloth.ai/models/qwen3.8-27b

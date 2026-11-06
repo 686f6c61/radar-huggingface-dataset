@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM2-135M-Instruct-krafla (este) | 135M | 4096 | `.mlb` para isa-lm (CPU, C11) | Apache 2.0 | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | 4096 (según modelo base) | safetensors, transformers | Apache 2.0 | HuggingFace, modelo de referencia |
+| SmolLM2-135M-Instruct-krafla (este) | 135M | 4096 | `.mlb` para isa-lm (CPU, C11) | Apache 2.0 | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | 4096 (según modelo base) | safetensors, transformers | Apache 2.0 | Hugging Face, modelo de referencia |
 | SmolLM2-135M-Instruct en GGUF (llama.cpp) | 135M | 4096 (según modelo base) | GGUF, llama.cpp | Apache 2.0 | Disponible vía conversión comunitaria; no se detalla en la información proporcionada |
 
 La comparación relevante es de empaquetado y runtime, no de capacidades: el modelo base es idéntico. isa-lm se posiciona frente a llama.cpp con un binario sin dependencias y kernels SIMD amplios; el autor enlaza una comparativa propia en `docs/benchmarks.md` de isa-lm, cuyos resultados no se incluyen en la información proporcionada.
@@ -95,7 +95,7 @@ La comparación relevante es de empaquetado y runtime, no de capacidades: el mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonpark0/SmolLM2-135M-Instruct-krafla
+- Repositorio en Hugging Face: https://huggingface.co/jonpark0/SmolLM2-135M-Instruct-krafla
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Runtime isa-lm (GitHub): https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

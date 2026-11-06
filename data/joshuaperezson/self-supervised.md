@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshuaperezson/self-supervised
+- Repositorio en Hugging Face: https://huggingface.co/joshuaperezson/self-supervised
 - Wikipedia - Self-supervised learning: https://en.wikipedia.org/wiki/Self-supervised_learning
 - Snowflake - What Is Self-Supervised Learning?: https://www.snowflake.com/en/fundamentals/self-supervised-learning/
 - arXiv - A Cookbook of Self-Supervised Learning: https://arxiv.org/html/2304.12210

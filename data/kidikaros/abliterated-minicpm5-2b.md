@@ -2,7 +2,7 @@
 
 ## Resumen
 
-abliterated-minicpm5-2b es una variante «abliterada» (sin direcciones de rechazo) del modelo MiniCPM5-2B de OpenBMB, publicada por el usuario KidIkaros en HuggingFace. Se trata de un transformer denso decoder-only de 2.516.756.480 parámetros (unos 2,52 mil millones), distribuido en formato nativo PyTorch/safetensors y con licencia Apache 2.0. El proceso de abliteración se ha aplicado con la herramienta OBLITERATUS y elimina las direcciones de rechazo en 20 capas consideradas «fuertes» (capas 13, 17 y 20 a 41), según la información del repositorio GGUF hermano.
+abliterated-minicpm5-2b es una variante «abliterada» (sin direcciones de rechazo) del modelo MiniCPM5-2B de OpenBMB, publicada por el usuario KidIkaros en Hugging Face. Se trata de un transformer denso decoder-only de 2.516.756.480 parámetros (unos 2,52 mil millones), distribuido en formato nativo PyTorch/safetensors y con licencia Apache 2.0. El proceso de abliteración se ha aplicado con la herramienta OBLITERATUS y elimina las direcciones de rechazo en 20 capas consideradas «fuertes» (capas 13, 17 y 20 a 41), según la información del repositorio GGUF hermano.
 
 El problema que aborda es el del exceso de rechazos (over-refusal) en modelos alineados: el modelo base tiende a negarse a responder ante peticiones que percibe como sensibles, incluso cuando son legítimas. La abliteración busca eliminar ese comportamiento sin degradar la coherencia ni el conocimiento del modelo. Según las métricas declaradas por el autor, la perplejidad baja de 5,27 a 5,13, la coherencia sube de 0,667 a 0,800 y la tasa de rechazo cae al 0 % con una puntuación de capacidad de 1,0.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativos frente a otras familias de mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b
+- Modelo en Hugging Face: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b
 - Variante GGUF del mismo autor: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-ggml
 - Modelo base MiniCPM5-2B: https://huggingface.co/openbmb/MiniCPM5-2B
 - Análisis de rendimiento del modelo base en Artificial Analysis: https://artificialanalysis.ai/models/minicpm5-2b

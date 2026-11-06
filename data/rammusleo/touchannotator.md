@@ -86,7 +86,7 @@ No se dispone de datos numericos de parametros, contexto ni rendimiento de EgoTo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RammusLeo/TouchAnnotator
+- Modelo en Hugging Face: https://huggingface.co/RammusLeo/TouchAnnotator
 - Checkpoint 0813: https://huggingface.co/RammusLeo/TouchAnnotator-0813
 - Repositorio GitHub: https://github.com/RammusLeo/TouchAnnotator
 - Guia de inferencia: https://huggingface.co/RammusLeo/TouchAnnotator/blob/main/docs/INFERENCE.md

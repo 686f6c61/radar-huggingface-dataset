@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Vasilisaivanov/cnn-transformer-experiment` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura híbrida denominada Cnn Transformer, orientada a tareas de generación. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor lo describe como un punto de partida reproducible de escala *tiny*, con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*). El repositorio incluye el código Python con la definición del modelo y su bloque `__main__`, el `config.json` con la configuración de arquitectura, el `training_args.json` con la receta de experimento por defecto y un fichero `model.safetensors` de inicialización.
+`Vasilisaivanov/cnn-transformer-experiment` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura híbrida denominada Cnn Transformer, orientada a tareas de generación. No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para producción: el propio autor lo describe como un punto de partida reproducible de escala *tiny*, con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*). El repositorio incluye el código Python con la definición del modelo y su bloque `__main__`, el `config.json` con la configuración de arquitectura, el `training_args.json` con la receta de experimento por defecto y un fichero `model.safetensors` de inicialización.
 
 El recuento real de parámetros del checkpoint publicado en safetensors es de 24.832 parámetros, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable. La arquitectura combina atención lineal, fusión con *gating* (gated fusion), activación swish y normalización por lotes (batchnorm), una combinación poco habitual que sugiere un experimento de investigación sobre mecanismos de fusión entre componentes convolucionales y atencionales más que un intento de competir en capacidades generativas.
 
-Su relevancia actual es limitada y muy específica: sirve como andamiaje reproducible para quien quiera estudiar o reproducir variantes híbridas CNN-transformer con atención lineal, o para validar *pipelines* de carga de arquitecturas personalizadas en HuggingFace. No dispone de datos de entrenamiento publicados, ni de benchmarks, ni de soporte multilingüe declarado, y acumula cero descargas y cero *likes* en el momento de redactar esta ficha.
+Su relevancia actual es limitada y muy específica: sirve como andamiaje reproducible para quien quiera estudiar o reproducir variantes híbridas CNN-transformer con atención lineal, o para validar *pipelines* de carga de arquitecturas personalizadas en Hugging Face. No dispone de datos de entrenamiento publicados, ni de benchmarks, ni de soporte multilingüe declarado, y acumula cero descargas y cero *likes* en el momento de redactar esta ficha.
 
 ## Especificaciones técnicas
 
@@ -50,7 +50,7 @@ No existe entrenamiento documentado. La receta por defecto incluida en `training
 ## Casos de uso
 
 - Prueba de humo de arquitecturas personalizadas: instanciar el modelo desde `config.json` y cargar `model.safetensors` para verificar que el *forward pass* se ejecuta sin errores antes de lanzar un entrenamiento real.
-- Desarrollo de adaptadores de carga en HuggingFace: dado que la librería `transformers` no reconoce esta arquitectura, sirve para practicar la implementación de adaptadores que permitan usar APIs automáticas de carga con modelos personalizados.
+- Desarrollo de adaptadores de carga en Hugging Face: dado que la librería `transformers` no reconoce esta arquitectura, sirve para practicar la implementación de adaptadores que permitan usar APIs automáticas de carga con modelos personalizados.
 - Reproducción de experimentos de atención lineal: el repositorio ofrece un punto de partida con atención lineal y fusión con compuertas para medir coste computacional y comportamiento frente a atención estándar en escalas pequeñas.
 - Comparativa de mecanismos de fusión CNN-transformer: al incluir `training_args.json` con AdamW y *onecycle*, permite montar una línea base reproducible contra la que comparar variantes de fusión bajo el mismo presupuesto de datos y semillas.
 - Aprendizaje y docencia: el tamaño de 24.832 parámetros y el código autocontenido lo hacen adecuado para explicar en un aula cómo se compone un bloque híbrido y cómo se serializa en safetensors.
@@ -83,12 +83,12 @@ No disponible. Con 24.832 parámetros y sin entrenamiento documentado, el modelo
 - Longitud de contexto: no declarada. Se desconoce la ventana máxima soportada por la implementación.
 - Idiomas: no se declara ninguno, por lo que no puede asumirse cobertura multilingüe ni monolingüe.
 - Licencia Apache-2.0: permite uso comercial y modificación, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
-- Compatibilidad: al ser una implementación personalizada, las APIs genéricas de carga de HuggingFace requieren un adaptador explícito; no puede cargarse como un modelo `transformers` estándar.
+- Compatibilidad: al ser una implementación personalizada, las APIs genéricas de carga de Hugging Face requieren un adaptador explícito; no puede cargarse como un modelo `transformers` estándar.
 - Estado del repositorio: cero descargas, cero *likes* y sin resultados publicados. No hay evidencia de que exista una ejecución de entrenamiento completada con esta receta.
 - Cualquier resultado futuro obtenido a partir de un checkpoint entrenado debe documentarse por separado de los valores por defecto publicados en este repositorio, tal como indica el autor.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Vasilisaivanov/cnn-transformer-experiment](https://huggingface.co/Vasilisaivanov/cnn-transformer-experiment)
+- [Modelo en Hugging Face: Vasilisaivanov/cnn-transformer-experiment](https://huggingface.co/Vasilisaivanov/cnn-transformer-experiment)
 
 Nota: la búsqueda web asociada a esta ficha devolvió únicamente resultados sobre controladores Intel Rapid Storage Technology, sin relación alguna con el modelo. No se han encontrado papers, blogs, repositorios adicionales ni demos del proyecto.

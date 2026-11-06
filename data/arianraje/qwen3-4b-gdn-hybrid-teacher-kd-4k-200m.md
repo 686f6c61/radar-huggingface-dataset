@@ -78,10 +78,10 @@ El autor advierte explicitamente de que estas evaluaciones son pequenas y solo p
 
 | Modelo | Parametros | Contexto | AIME24 / AIME25 pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (teacher-KD, 4k, 200M) | 4,55B | no disponible (limite de generacion evaluado: 32.768 tokens) | 14,2% / 16,2% | apache-2.0 | HuggingFace, 0 descargas |
-| OPD 200M (`pinkskin/qwen3-4b-gdn-wsd-ladder/wsd-flat-200M`, rev. `ae6b72a3`) | no disponible | no disponible | 23,3% / 18,8% | no disponible | HuggingFace |
-| Qwen/Qwen3-4B (profesor y modelo base) | aproximadamente 4B segun el nombre del modelo; no confirmado en la informacion disponible | no disponible | no disponible en esta informacion | no disponible en esta informacion | HuggingFace |
-| `arianraje/qwen3-4b-gdn-hybrid-stage2b-kd` (checkpoint predecesor) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Este checkpoint (teacher-KD, 4k, 200M) | 4,55B | no disponible (limite de generacion evaluado: 32.768 tokens) | 14,2% / 16,2% | apache-2.0 | Hugging Face, 0 descargas |
+| OPD 200M (`pinkskin/qwen3-4b-gdn-wsd-ladder/wsd-flat-200M`, rev. `ae6b72a3`) | no disponible | no disponible | 23,3% / 18,8% | no disponible | Hugging Face |
+| Qwen/Qwen3-4B (profesor y modelo base) | aproximadamente 4B segun el nombre del modelo; no confirmado en la informacion disponible | no disponible | no disponible en esta informacion | no disponible en esta informacion | Hugging Face |
+| `arianraje/qwen3-4b-gdn-hybrid-stage2b-kd` (checkpoint predecesor) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 El autor senala que la comparacion con OPD esta emparejada en presupuesto nominal de tokens de perdida y en punto final WSD, pero no en tiempo de reloj ni en paso de optimizador, y que la direccion de la KL, el origen y horizonte de la traza y la exposicion efectiva a tokens RUG quedan confundidos.
 
@@ -100,7 +100,7 @@ El autor senala que la comparacion con OPD esta emparejada en presupuesto nomina
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-teacher-kd-4k-200m
+- Modelo en Hugging Face: https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-teacher-kd-4k-200m
 - Modelo base (profesor): https://huggingface.co/Qwen/Qwen3-4B
 - Checkpoint predecesor (etapa 2b): https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage2b-kd
 - Referencia OPD 200M: https://huggingface.co/pinkskin/qwen3-4b-gdn-wsd-ladder/tree/ae6b72a357d167fb459dfeda3bded4941decdf41/wsd-flat-200M

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`agentorch-rl-gemma31b-final` es un checkpoint de investigación publicado por el usuario JesseLiu (HuggingFace) sobre el modelo base `google/gemma-4-31B-it`. No es un modelo nuevo desde cero: es el resultado de un pipeline de ajuste supervisado (SFT) seguido de aprendizaje por refuerzo con GRPO, orientado a una única tarea concreta, la orquestación de flujos de trabajo multiagente dentro del benchmark AgentOrch. Los pesos publicados ya llevan las LoRA fusionadas en el modelo base, por lo que se cargan como un checkpoint convencional con `transformers` o `vLLM`.
+`agentorch-rl-gemma31b-final` es un checkpoint de investigación publicado por el usuario JesseLiu (Hugging Face) sobre el modelo base `google/gemma-4-31B-it`. No es un modelo nuevo desde cero: es el resultado de un pipeline de ajuste supervisado (SFT) seguido de aprendizaje por refuerzo con GRPO, orientado a una única tarea concreta, la orquestación de flujos de trabajo multiagente dentro del benchmark AgentOrch. Los pesos publicados ya llevan las LoRA fusionadas en el modelo base, por lo que se cargan como un checkpoint convencional con `transformers` o `vLLM`.
 
 El interés técnico del artefacto es doble. Por un lado, documenta una receta completa y reproducible de RL sobre un modelo de 31 273 086 512 parámetros con LoRA r16/a32, vLLM colocado en TP8 y una recompensa puramente simbólica (Tier-1 symbolic match). Por otro, hace públicas sus métricas en el arnés congelado del benchmark, y esas métricas son malas: 0,191 de precisión de orquestación, 0,0922 de precisión final y un 56,55 % de tasa de error sobre 3 220 variantes. Es, por tanto, un punto de partida y una referencia negativa útil, no un modelo listo para producción.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `JesseLiu/agentorch-rl-gemma31b-final` | 31,27 B | No disponible (entrenamiento a 65 536) | Orquestación de agentes via SFT + GRPO | apache-2.0 declarada | Pesos `safetensors` en HF; 0 descargas |
-| `google/gemma-4-31B-it` (base) | 31 B (aprox., según nomenclatura) | No disponible en la informacion | Modelo instruct generalista | No disponible en la informacion | Público en HuggingFace |
+| `google/gemma-4-31B-it` (base) | 31 B (aprox., según nomenclatura) | No disponible en la informacion | Modelo instruct generalista | No disponible en la informacion | Público en Hugging Face |
 | Otros fine-tunes de orquestación comparables | No disponible | No disponible | No disponible | No disponible | No se han identificado en la información proporcionada |
 
 No se dispone de datos de benchmarks del modelo base ni de terceros comparables en la información facilitada, por lo que la comparación cuantitativa de rendimiento no es posible.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks del modelo base ni de terceros comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JesseLiu/agentorch-rl-gemma31b-final
+- Modelo en Hugging Face: https://huggingface.co/JesseLiu/agentorch-rl-gemma31b-final
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it (revision `842da3794eaa0b77d5f08bae87a17459d91ff475`)
 - Repositorio AgentOrch (arnés, datos de entrenamiento y registro de experimentos): mencionado en la model card, URL no disponible en la información proporcionada
 - Paper, blog o demo oficial: no disponible

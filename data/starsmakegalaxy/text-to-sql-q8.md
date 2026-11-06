@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `StarsMakeGalaxy/text-to-sql-Q8` es un ajuste fino (fine-tune) del modelo Qwen3.5-4B, especializado en la generación de consultas SQL a partir de lenguaje natural. Ha sido desarrollado por el usuario StarsMakeGalaxy y distribuido en formato GGUF cuantizado a Q8_0, lo que permite su ejecución eficiente en hardware de consumo. El modelo se presenta como un vision-language-model según las etiquetas de HuggingFace, aunque la funcionalidad multimodal no está documentada en la model card.
+El modelo `StarsMakeGalaxy/text-to-sql-Q8` es un ajuste fino (fine-tune) del modelo Qwen3.5-4B, especializado en la generación de consultas SQL a partir de lenguaje natural. Ha sido desarrollado por el usuario StarsMakeGalaxy y distribuido en formato GGUF cuantizado a Q8_0, lo que permite su ejecución eficiente en hardware de consumo. El modelo se presenta como un vision-language-model según las etiquetas de Hugging Face, aunque la funcionalidad multimodal no está documentada en la model card.
 
 El ajuste se realizó con la librería Unsloth, que acelera el entrenamiento, y se convirtió a GGUF con matriz de importancia (imatrix) para optimizar la cuantización. El dataset de entrenamiento, `enterprise-text2sql-curated-600`, contiene 600 ejemplos en inglés con formato ChatML y cadenas de razonamiento (chain-of-thought), orientado a escenarios empresariales. Con aproximadamente 4.300 millones de parámetros, este modelo ofrece una alternativa ligera para tareas de text-to-SQL en entornos con recursos limitados, aunque carece de benchmarks publicados y de una licencia explícita.
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StarsMakeGalaxy/text-to-sql-Q8
+- Modelo en Hugging Face: https://huggingface.co/StarsMakeGalaxy/text-to-sql-Q8
 - Dataset de entrenamiento: https://huggingface.co/datasets/StarsMakeGalaxy/enterprise-text2sql-curated-600
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

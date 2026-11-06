@@ -110,13 +110,13 @@ No se dispone de benchmarks comparativos entre este checkpoint y su modelo base,
 - Idiomas: la ficha no declara idiomas soportados. El comportamiento multilingüe real es desconocido y no debe asumirse.
 - Límite de contexto en producción: aunque el entrenamiento declare `seq_len = 300.000`, la inferencia está configurada con `max_model_len = 65.536`; no se ha medido la degradación más allá de ese límite ni la calidad dentro de él.
 - Solo modalidad de lenguaje: `language_model_only = true` desactiva cualquier torre multimodal del modelo base, si existiera.
-- Documentación generada automáticamente: la model card está delimitada por marcadores de flujo de trabajo (`jh-workflow-training-begin/end`) y contiene únicamente procedencia de entrenamiento, sin descripción funcional, sin ejemplos de uso y sin pipeline asignado en HuggingFace.
+- Documentación generada automáticamente: la model card está delimitada por marcadores de flujo de trabajo (`jh-workflow-training-begin/end`) y contiene únicamente procedencia de entrenamiento, sin descripción funcional, sin ejemplos de uso y sin pipeline asignado en Hugging Face.
 - Madurez y soporte: 14 descargas y 0 "likes", creado y actualizado el mismo día (2026-09-23) y con `keep_last = 1` en los checkpoints, lo que sugiere un artefacto de investigación sin mantenimiento previsto.
 - Repositorio pesado sin cuantizaciones: 9,1 GB en safetensors; no hay versiones GGUF, AWQ o GPTQ publicadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-conceptfunc-diversity-300-27b-z-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-conceptfunc-diversity-300-27b-z-epoch3
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Stage-org/4b-conceptfunc-diversity-300-27b-z
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Nota sobre la búsqueda web: los resultados obtenidos corresponden a portales de ofertas de prácticas (stage.fr, Indeed, HelloWork, ID.Stages.Occitanie) y no guardan relación con el modelo. No se han encontrado papers, blogs, repositorios de código ni demos asociados a este checkpoint.

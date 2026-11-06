@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Adeolaaa/mnist-cnn-pytorch` es una red neuronal convolucional (CNN) pequena entrenada desde cero para clasificar digitos manuscritos del conjunto de datos MNIST (clases 0-9). Lo publica el usuario Adeolaaa en HuggingFace como proyecto de aprendizaje, segun indica la propia model card. No es un modelo de lenguaje ni un modelo fundacional: es un clasificador de imagenes de proposito muy especifico, con una arquitectura clasica de dos bloques convolucionales seguidos de dos capas densas.
+`Adeolaaa/mnist-cnn-pytorch` es una red neuronal convolucional (CNN) pequena entrenada desde cero para clasificar digitos manuscritos del conjunto de datos MNIST (clases 0-9). Lo publica el usuario Adeolaaa en Hugging Face como proyecto de aprendizaje, segun indica la propia model card. No es un modelo de lenguaje ni un modelo fundacional: es un clasificador de imagenes de proposito muy especifico, con una arquitectura clasica de dos bloques convolucionales seguidos de dos capas densas.
 
 El modelo resuelve una unica tarea: dada una imagen en escala de grises de 1x28x28 pixeles con un digito blanco sobre fondo negro, predecir la clase entre 0 y 9. Alcanza un 99,14 % de accuracy en el conjunto de test de MNIST, un resultado competitivo para una CNN de este tamano entrenada durante solo 5 epocas con Adam y CrossEntropyLoss.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parametros | Tarea | Accuracy MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adeolaaa/mnist-cnn-pytorch | no disponible | Clasificacion de digitos | 99,14 % | MIT | HuggingFace |
+| Adeolaaa/mnist-cnn-pytorch | no disponible | Clasificacion de digitos | 99,14 % | MIT | Hugging Face |
 | LeNet-5 (referencia clasica) | ~60.000 | Clasificacion de digitos | ~99 % (referencia) | no disponible | Implementaciones multiples |
 | ResNet-18 adaptado a MNIST | ~11,2 M | Clasificacion de imagenes | no disponible | no disponible | Implementaciones multiples |
 
@@ -84,6 +84,6 @@ No se dispone de datos de benchmarks comparativos publicados en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adeolaaa/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/Adeolaaa/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

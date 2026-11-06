@@ -100,7 +100,7 @@ Todos los datos de rendimiento comparados proceden de las tablas del propio proy
 
 | Modelo | Parametros | Preguntas evaluadas | Precision micro % | ECE medio % | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| OmniJev-SFT-0.8B (este repositorio) | 0,8B + LoRA r32 | 41.951 (fila SFT) / 41.975 (fila v1.1) | 48,09 (SFT) / 65,40 (v1.1) | — / 4,30 | apache-2.0 | publico en HuggingFace, 8 descargas |
+| OmniJev-SFT-0.8B (este repositorio) | 0,8B + LoRA r32 | 41.951 (fila SFT) / 41.975 (fila v1.1) | 48,09 (SFT) / 65,40 (v1.1) | — / 4,30 | apache-2.0 | publico en Hugging Face, 8 descargas |
 | Qwen/Qwen3.5-0.8B (base) | 0,8B | 21.456 | 40,04 | 20,83 | no disponible en la informacion proporcionada | publico |
 | OmniJev v1.1 2B | 2B | 41.975 | 65,42 | 6,27 | no disponible para el 2B | los resultados figuran en la tabla, pero no se reclama un SFT de 2B publicado |
 | OmniJev v1.1 4B | 4B | 41.975 | 70,82 | 5,89 | no disponible para el 4B | los resultados figuran en la tabla, pero no se reclama un SFT de 4B publicado |
@@ -119,11 +119,11 @@ Frente al base, el ajuste mejora la precision micro declarada en 8,05 puntos (0,
 - No se publican benchmarks oficiales (MMLU, HumanEval, GSM8K u otros), ni datos de sesgo, ni evaluaciones de alucinacion.
 - Idiomas limitados a ingles y chino; no hay evidencia de rendimiento en castellano.
 - La licencia declarada del adaptador es apache-2.0, pero la informacion proporcionada no especifica la licencia del modelo base Qwen/Qwen3.5-0.8B, que debe verificarse antes de un uso comercial.
-- Adopcion minima (8 descargas, 0 likes) y ausencia de pipeline declarado en HuggingFace; no hay evidencia de uso en produccion.
+- Adopcion minima (8 descargas, 0 likes) y ausencia de pipeline declarado en Hugging Face; no hay evidencia de uso en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tinnel123/OmniJev-SFT-0.8B
+- Hugging Face: https://huggingface.co/tinnel123/OmniJev-SFT-0.8B
 - Repositorio de codigo: https://github.com/tinnel123666888/OmniJev
 - Documentacion en chino: https://github.com/tinnel123666888/OmniJev/blob/main/README_zh.md
 - Metricas completas (referencia relativa `results_v11_zh.md`): https://github.com/tinnel123666888/OmniJev/blob/main/results_v11_zh.md

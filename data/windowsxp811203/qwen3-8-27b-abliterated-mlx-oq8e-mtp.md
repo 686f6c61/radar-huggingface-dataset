@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.8-27B-Abliterated-MLX-oQ8e-mtp es una cuantización en 8 bits para Apple Silicon (formato MLX) del modelo Qwen3.8-27B-Abliterated, un derivado "abliterated" (sin las capas de rechazo alineadas) de la familia Qwen3.5. Lo publica el usuario windowsxp811203 en HuggingFace y está pensado para ejecutarse en hardware Apple con el framework MLX, aprovechando la aceleración nativa de los chips M-series.
+Qwen3.8-27B-Abliterated-MLX-oQ8e-mtp es una cuantización en 8 bits para Apple Silicon (formato MLX) del modelo Qwen3.8-27B-Abliterated, un derivado "abliterated" (sin las capas de rechazo alineadas) de la familia Qwen3.5. Lo publica el usuario windowsxp811203 en Hugging Face y está pensado para ejecutarse en hardware Apple con el framework MLX, aprovechando la aceleración nativa de los chips M-series.
 
-El modelo conserva la modalidad multimodal de entrada (image-text-to-text) del original, con ~27.780 millones de parámetros y pesos en safetensors cuantizados mediante la técnica oQ8e (cuantización de 8 bits con imatrix), además de soporte para decodificación especulativa nativa (native-mtp, multi-token prediction). El repositorio ocupa 30 GB y está bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo conserva la modalidad multimodal de entrada (image-text-to-text) del original, con ~27.780 millones de parámetros y pesos en safetensors cuantizados mediante la técnica oQ8e (cuantización de 8 bits con imatrix), además de soporte para decodificación especulativa nativa (native-mtp, multi-token prediction). El repositorio ocupa 30 GB y está bajo licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 Es relevante ahora porque permite desplegar un modelo de ~27B con capacidades de visión y conversación en un Mac con memoria unificada suficiente, algo que con pesos en fp16 sería inviable en la mayoría de equipos de consumo. La contrapartida es que se trata de una modificación no oficial del modelo base, sin benchmarks publicados en la información disponible y con el riesgo asociado a los modelos "abliterated".
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones verific
 - Riesgo de alucinación inherente a los modelos de ~27B, agravado por la falta de benchmarks publicados que permitan estimar su fiabilidad.
 - Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea inferior.
 - Longitud de contexto no especificada: no se puede planificar su uso en tareas de contexto largo sin verificación empírica.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y el despliegue automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y el despliegue automatizado.
 - Licencia Apache 2.0 declarada, pero al ser una modificación no oficial de un modelo de terceros conviene revisar las condiciones del modelo base Qwen antes de un uso comercial.
 - Solo funciona en Apple Silicon vía MLX; no hay pesos GGUF ni compatibilidad con ecosistemas CUDA, lo que restringe su portabilidad.
 - La cuantización en 8 bits introduce pérdida de precisión frente al modelo original, no cuantificada en la información disponible.
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones verific
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-MLX-oQ8e-mtp
+- Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-MLX-oQ8e-mtp
 - Modelo base: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.

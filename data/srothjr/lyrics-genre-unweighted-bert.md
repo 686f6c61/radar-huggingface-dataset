@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables especificos para clasific
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SrothJr/lyrics-genre-unweighted-bert
+- Hugging Face: https://huggingface.co/SrothJr/lyrics-genre-unweighted-bert
 - Dataset de entrenamiento: https://huggingface.co/datasets/juliensimon/autonlp-data-song-lyrics
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Paper de referencia (BERT): https://arxiv.org/abs/1910.09700

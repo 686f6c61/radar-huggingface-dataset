@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo (metricas de MTEB o similares)
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-300M
+- Repositorio de Hugging Face: https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-300M
 - Coleccion de modelos SEA-LION: https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-sea-lion-embedding
 - Documentacion oficial: https://docs.sea-lion.ai/models/sea-embedding/sea-modernbert
 - Repositorio GitHub: https://github.com/aisingapore/sealion

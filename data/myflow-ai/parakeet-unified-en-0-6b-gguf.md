@@ -111,7 +111,7 @@ Las únicas alternativas para las que la información disponible aporta datos ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myflow-ai/parakeet-unified-en-0.6b-gguf
+- Modelo en Hugging Face: https://huggingface.co/myflow-ai/parakeet-unified-en-0.6b-gguf
 - Modelo base: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - Commit del modelo base usado: https://huggingface.co/nvidia/parakeet-unified-en-0.6b/commit/d4ac992
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

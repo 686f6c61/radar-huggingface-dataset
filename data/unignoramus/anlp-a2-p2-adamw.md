@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | Licencia | Formato de pesos | Disponibilidad |
 |---|---|---|---|---|---|
-| anlp-a2-p2-adamw | 35,27 M | no disponible | MIT | `torch.save` (.pt/.bin) | HuggingFace, 0 descargas |
+| anlp-a2-p2-adamw | 35,27 M | no disponible | MIT | `torch.save` (.pt/.bin) | Hugging Face, 0 descargas |
 | GPT-2 small | 124 M | 1024 tokens | MIT modificada | safetensors, PyTorch | ampliamente extendido |
-| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | safetensors, PyTorch | HuggingFace, muy descargado |
-| TinyStories-33M | 33 M | 512 tokens (segun variante) | no disponible | safetensors, PyTorch | HuggingFace |
+| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | safetensors, PyTorch | Hugging Face, muy descargado |
+| TinyStories-33M | 33 M | 512 tokens (segun variante) | no disponible | safetensors, PyTorch | Hugging Face |
 
 La comparacion relevante no es de rendimiento, ya que el modelo solo publica perdida de validacion y BLEU sobre su propio corpus y no hay evaluaciones cruzadas, sino de grado de madurez: las alternativas citadas incluyen pesos en safetensors, integracion directa con la libreria `transformers` y documentacion de contexto, mientras que este checkpoint exige cargar codigo propio y no declara longitud de contexto. No se dispone de datos de benchmarks comparables para establecer diferencias de calidad.
 
@@ -92,7 +92,7 @@ La comparacion relevante no es de rendimiento, ya que el modelo solo publica per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unignoramus/anlp-a2-p2-adamw
+- Modelo en Hugging Face: https://huggingface.co/unignoramus/anlp-a2-p2-adamw
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Repositorio con la definicion del transformer: no disponible (la model card lo menciona como "accompanying repository" sin enlace)
 - Paper o blog del autor: no disponible

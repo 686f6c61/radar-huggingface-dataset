@@ -4,7 +4,7 @@
 
 LTX-2.5 es un modelo de generación de vídeo y audio desarrollado por Lightricks, la empresa responsable de aplicaciones como Videoleap. Se presenta como un modelo fundacional de tipo DiT (Diffusion Transformer) que integra en un único sistema capacidades de texto a vídeo, imagen a vídeo, vídeo a vídeo, audio a vídeo y generación sincronizada de audio y vídeo. El modelo está diseñado para producción, con soporte nativo de multishot (multi-toma), lo que permite mantener coherencia de escena a través de cortes, y un modo de renderizado denominado "Diffusion Fidelity Rendering" que concentra más cómputo en escenas complejas.
 
-La versión alojada en HuggingFace bajo el identificador `Lightricks/LTX-2.5-Diffusers` es una integración para la librería `diffusers` con pipeline `text-to-video`. Los pesos en formato `safetensors` suman aproximadamente 19 000 millones de parámetros (18 987 859 200), aunque algunas fuentes citan 22 000 millones al incluir componentes adicionales. El repositorio ocupa 163,9 GB y el acceso está restringido (gated), por lo que es necesario aceptar la licencia comunitaria de Lightricks antes de descargarlo. El modelo soporta nueve idiomas: inglés, alemán, español, francés, japonés, coreano, chino, italiano y portugués.
+La versión alojada en Hugging Face bajo el identificador `Lightricks/LTX-2.5-Diffusers` es una integración para la librería `diffusers` con pipeline `text-to-video`. Los pesos en formato `safetensors` suman aproximadamente 19 000 millones de parámetros (18 987 859 200), aunque algunas fuentes citan 22 000 millones al incluir componentes adicionales. El repositorio ocupa 163,9 GB y el acceso está restringido (gated), por lo que es necesario aceptar la licencia comunitaria de Lightricks antes de descargarlo. El modelo soporta nueve idiomas: inglés, alemán, español, francés, japonés, coreano, chino, italiano y portugués.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Con aproximadamente 19 000 millones de parámetros, la inferencia en fp16 necesitaría al menos 38 GB de VRAM solo para los pesos, más los activos de atención y las salidas intermedias. En la práctica, se recomienda una GPU con 48 GB o más (por ejemplo, NVIDIA A6000, A100 80GB o H100).
 - Para cuantizaciones de 8 bits (int8) o 4 bits, la VRAM necesaria se reduciría a unos 19 GB y 10 GB respectivamente, lo que permitiría ejecutarlo en GPUs de consumo como la RTX 4090 (24 GB) con cuantización int8, aunque con posibles pérdidas de calidad.
 - No se han publicado requisitos oficiales de hardware por parte de Lightricks en la información disponible.
-- Opciones de despliegue: al ser una integración de `diffusers`, se puede ejecutar con el pipeline estándar de HuggingFace. Para producción, es probable que sea compatible con servidores de inferencia como vLLM o TGI, aunque no se ha confirmado oficialmente. También está disponible en plataformas cloud como fal.ai, que ofrece el modelo como servicio gestionado.
+- Opciones de despliegue: al ser una integración de `diffusers`, se puede ejecutar con el pipeline estándar de Hugging Face. Para producción, es probable que sea compatible con servidores de inferencia como vLLM o TGI, aunque no se ha confirmado oficialmente. También está disponible en plataformas cloud como fal.ai, que ofrece el modelo como servicio gestionado.
 - La latencia y el throughput dependen en gran medida del hardware y de la configuración de pasos de difusión. No se han publicado cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -74,8 +74,8 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa con ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lightricks/LTX-2.5-Diffusers
-- Página del modelo LTX-2.5 en HuggingFace: https://huggingface.co/Lightricks/LTX-2.5
+- Modelo en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-Diffusers
+- Página del modelo LTX-2.5 en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5
 - Repositorio oficial LTX-Video en GitHub: https://github.com/Lightricks/LTX-Video
 - Repositorio oficial LTX-2 en GitHub: https://github.com/Lightricks/LTX-2
 - Guía en HackerNoon: https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model

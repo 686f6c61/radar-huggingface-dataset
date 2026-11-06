@@ -31,7 +31,7 @@ El prefijo "nvidia" en el nombre del modelo base no implica necesariamente publi
 
 - Generacion de texto conversacional, segun la etiqueta "conversational" del repositorio.
 - Razonamiento matematico, inferido del nombre del modelo; no verificado con benchmarks.
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que facilita su despliegue en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que facilita su despliegue en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Soporte multilingue limitado al ingles declarado.
 - No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modos de pensamiento explicito.
 - No se documenta capacidad de contexto largo.
@@ -81,7 +81,7 @@ La comparativa se basa en caracteristicas publicas de modelos de tamano similar;
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/nvidia-acemath-1.5b-full-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/nvidia-acemath-1.5b-full-v2-GGUF
 - Modelo base: https://huggingface.co/zxczxczxcz/nvidia-acemath-1.5b-full-v2
 - Pagina de resumen de cuantizaciones del autor: https://hf.tst.eu/model#nvidia-acemath-1.5b-full-v2-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

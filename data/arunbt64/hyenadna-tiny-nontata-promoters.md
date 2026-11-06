@@ -27,7 +27,7 @@ El modelo base es HyenaDNA-tiny, una variante de la familia HyenaDNA presentada 
 
 El fine-tuning se realizó sobre el dataset `katarinagresova/Genomic_Benchmarks_human_nontata_promoters`, que contiene secuencias positivas de 251 pb alrededor del sitio de inicio de transcripción (TSS) sin caja TATA, y negativas de fragmentos aleatorios de regiones génicas humanas. El autor detectó que el split oficial tenía un grave problema de leakage: la clase negativa estaba duplicada en un 94% entre train y test. Para corregirlo, reconstruyó un split agrupando secuencias por solapamiento de 50-meros y asignando clústeres completos a cada partición, resultando en 26.648 secuencias de entrenamiento y 9.483 de prueba, con 54,4% de positivos en ambas y 0% de solapamiento exacto o casi exacto.
 
-El entrenamiento usó el `Trainer` de HuggingFace con batch size 32, learning rate 5e-5, y `EarlyStoppingCallback` con paciencia 1 sobre el ROC-AUC de validación. Se detuvo tras 3 épocas, restaurando el checkpoint de la época 2 como mejor modelo.
+El entrenamiento usó el `Trainer` de Hugging Face con batch size 32, learning rate 5e-5, y `EarlyStoppingCallback` con paciencia 1 sobre el ROC-AUC de validación. Se detuvo tras 3 épocas, restaurando el checkpoint de la época 2 como mejor modelo.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ El modelo supera al baseline en accuracy, recall, F1 y ROC-AUC, pero con un marg
 - VRAM estimada para inferencia: menos de 1 GB (el modelo tiene 448.920 parámetros; en float32 ocupa ~1,8 MB, más overhead de activaciones y código).
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM; también funciona en CPU sin problemas.
 - Cabe en GPUs de consumo como RTX 3060, RTX 4090, etc., e incluso en entornos sin GPU.
-- Opciones de despliegue: HuggingFace Transformers con `trust_remote_code=True` (requiere ejecutar código personalizado del modelo HyenaDNA). No se han publicado integraciones con vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: Hugging Face Transformers con `trust_remote_code=True` (requiere ejecutar código personalizado del modelo HyenaDNA). No se han publicado integraciones con vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles, pero dado el tamaño mínimo, la inferencia es prácticamente instantánea en hardware moderno.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de comparativas publicadas con otros modelos de clasificación de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArunBt64/hyenadna-tiny-nontata-promoters
+- Modelo en Hugging Face: https://huggingface.co/ArunBt64/hyenadna-tiny-nontata-promoters
 - Repositorio de código y metodología: https://github.com/Arun0364/genomic-finetune
 - Modelo base: https://huggingface.co/LongSafari/hyenadna-tiny-1k-seqlen-hf
 - Paper de HyenaDNA: https://arxiv.org/abs/2306.15794

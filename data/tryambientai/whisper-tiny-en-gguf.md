@@ -98,7 +98,7 @@ La variante tiny.en es mas rapida que la tiny multilingue al mismo tamano y suel
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tryambientai/whisper-tiny.en-gguf
+- Modelo en Hugging Face: https://huggingface.co/tryambientai/whisper-tiny.en-gguf
 - Modelo base: https://huggingface.co/openai/whisper-tiny.en
 - Commit del modelo base: https://huggingface.co/openai/whisper-tiny.en/commit/87c7102
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

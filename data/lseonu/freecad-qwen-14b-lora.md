@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FreeCAD-Qwen-14B-LoRA es un ajuste fino mediante LoRA sobre el modelo base unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit, publicado por el usuario lseonu en HuggingFace. El repositorio contiene únicamente los pesos del adaptador (0,3 GB), no el modelo completo, por lo que para usarlo es necesario cargar el modelo base y aplicar el adaptador con PEFT o fusionarlo previamente. El entrenamiento se realizó con la librería Unsloth, según indica la propia model card, y se distribuye bajo licencia Apache 2.0.
+FreeCAD-Qwen-14B-LoRA es un ajuste fino mediante LoRA sobre el modelo base unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit, publicado por el usuario lseonu en Hugging Face. El repositorio contiene únicamente los pesos del adaptador (0,3 GB), no el modelo completo, por lo que para usarlo es necesario cargar el modelo base y aplicar el adaptador con PEFT o fusionarlo previamente. El entrenamiento se realizó con la librería Unsloth, según indica la propia model card, y se distribuye bajo licencia Apache 2.0.
 
 La relevancia de esta ficha reside en su naturaleza de experimento comunitario: no hay documentación sobre el dataset de entrenamiento, el número de pasos, el rango del adaptador ni los hiperparámetros utilizados. El nombre del repositorio sugiere un ajuste orientado a la generación de código para FreeCAD (scripts en Python para modelado paramétrico), pero esta finalidad no está confirmada en la model card ni respaldada por evaluaciones publicadas. El modelo hereda la arquitectura y la ventana de contexto del Qwen2.5-Coder-14B-Instruct original.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| lseonu/FreeCAD-Qwen-14B-LoRA | adaptador sobre base de 14B | no disponible (base: 32.768 nativos) | apache-2.0 | HuggingFace, 0 descargas | no disponible |
-| Qwen2.5-Coder-14B-Instruct | 14B | 32.768 nativos, 131.072 con YaRN | apache-2.0 | HuggingFace, ampliamente utilizado | publicados por el autor del modelo base |
-| Qwen2.5-Coder-32B-Instruct | 32B | 32.768 nativos, 131.072 con YaRN | apache-2.0 | HuggingFace | publicados por el autor del modelo base |
-| deepseek-coder-6.7b-instruct | 6,7B | 16.384 | permisiva para uso comercial (consultar términos) | HuggingFace | publicados por el autor |
+| lseonu/FreeCAD-Qwen-14B-LoRA | adaptador sobre base de 14B | no disponible (base: 32.768 nativos) | apache-2.0 | Hugging Face, 0 descargas | no disponible |
+| Qwen2.5-Coder-14B-Instruct | 14B | 32.768 nativos, 131.072 con YaRN | apache-2.0 | Hugging Face, ampliamente utilizado | publicados por el autor del modelo base |
+| Qwen2.5-Coder-32B-Instruct | 32B | 32.768 nativos, 131.072 con YaRN | apache-2.0 | Hugging Face | publicados por el autor del modelo base |
+| deepseek-coder-6.7b-instruct | 6,7B | 16.384 | permisiva para uso comercial (consultar términos) | Hugging Face | publicados por el autor |
 
 La comparación con alternativas es limitada porque este repositorio no publica métricas propias. Frente al modelo base sin ajustar, la única diferencia demostrable es la existencia del adaptador; no hay evidencia de mejora en ninguna tarea concreta.
 
@@ -94,7 +94,7 @@ La comparación con alternativas es limitada porque este repositorio no publica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lseonu/FreeCAD-Qwen-14B-LoRA
+- Modelo en Hugging Face: https://huggingface.co/lseonu/FreeCAD-Qwen-14B-LoRA
 - Modelo base referenciado: https://huggingface.co/unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Qwen2.5-Coder (modelo original de la familia): https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct

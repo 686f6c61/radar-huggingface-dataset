@@ -67,7 +67,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos TTS en japon
 - El modelo solo soporta japonés (ja); no hay soporte multilingüe documentado.
 - La duración máxima entrenada es de 512 frames (≈41 segundos) por enunciado; generar más allá de este límite puede producir degradación de calidad.
 - No se han publicado benchmarks objetivos (MOS, WER, naturalidad) que permitan evaluar la calidad de voz frente a alternativas.
-- El modelo es reciente (creado en agosto de 2026) y cuenta con 0 descargas y 0 likes en HuggingFace, por lo que su adopción y validación por la comunidad es limitada.
+- El modelo es reciente (creado en agosto de 2026) y cuenta con 0 descargas y 0 likes en Hugging Face, por lo que su adopción y validación por la comunidad es limitada.
 - Requiere `trust_remote_code=True` para cargarse, lo que implica ejecutar código remoto del autor; se recomienda auditar el código antes de usarlo en producción.
 - El codec de decodificación (Qwen3-TTS-Tokenizer-12Hz) es un componente externo que debe cargarse por separado y puede tener sus propias limitaciones o requisitos de hardware.
 - No se especifican sesgos conocidos ni riesgos de alucinación, pero al ser un modelo entrenado sobre datasets del autor (test13 y test14), la cobertura de vocabulario y estilos de habla puede ser limitada.
@@ -75,7 +75,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos TTS en japon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/telecomadm1145/Kiseki-TTS-1.1
+- Modelo en Hugging Face: https://huggingface.co/telecomadm1145/Kiseki-TTS-1.1
 - Modelo base: https://huggingface.co/telecomadm1145/Kiseki-1.1-0.3B
 - Codec de audio: https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz
 - Dataset de entrenamiento 1: https://huggingface.co/datasets/telecomadm1145/test14

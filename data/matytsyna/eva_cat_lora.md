@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matytsyna/eva_cat_LoRA` es un adaptador LoRA de tipo DreamBooth entrenado sobre el modelo base `stabilityai/stable-diffusion-xl-base-1.0` para la generacion de imagenes texto-a-imagen. Lo desarrolla el usuario de HuggingFace `matytsyna` y su proposito es inyectar un concepto visual concreto (una representacion de un gato denominada "EVACAT cat") en el espacio latente de SDXL, de modo que el modelo base pueda reproducir ese concepto bajo demanda mediante una palabra de activacion.
+`matytsyna/eva_cat_LoRA` es un adaptador LoRA de tipo DreamBooth entrenado sobre el modelo base `stabilityai/stable-diffusion-xl-base-1.0` para la generacion de imagenes texto-a-imagen. Lo desarrolla el usuario de Hugging Face `matytsyna` y su proposito es inyectar un concepto visual concreto (una representacion de un gato denominada "EVACAT cat") en el espacio latente de SDXL, de modo que el modelo base pueda reproducir ese concepto bajo demanda mediante una palabra de activacion.
 
 El adaptador no es un modelo autonomo: requiere cargar SDXL Base 1.0 junto con estos pesos LoRA. La model card indica que se entreno con DreamBooth, que no se activo LoRA para el text encoder y que se empleo el VAE `madebyollin/sdxl-vae-fp16-fix` durante el entrenamiento. La palabra de activacion es `a photo of EVACAT cat`.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| matytsyna/eva_cat_LoRA | LoRA DreamBooth | SDXL Base 1.0 | no disponible | no aplica | openrail++ | HuggingFace, 11 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo de difusion completo | - | no disponible en esta ficha | no aplica | openrail++ | HuggingFace, ampliamente usado |
-| madebyollin/sdxl-vae-fp16-fix | VAE auxiliar | - | no disponible en esta ficha | no aplica | no disponible en esta ficha | HuggingFace |
-| Otros LoRA DreamBooth sobre SDXL | LoRA DreamBooth | SDXL Base 1.0 | variable | no aplica | variable (habitualmente openrail++) | HuggingFace, civitai |
+| matytsyna/eva_cat_LoRA | LoRA DreamBooth | SDXL Base 1.0 | no disponible | no aplica | openrail++ | Hugging Face, 11 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo de difusion completo | - | no disponible en esta ficha | no aplica | openrail++ | Hugging Face, ampliamente usado |
+| madebyollin/sdxl-vae-fp16-fix | VAE auxiliar | - | no disponible en esta ficha | no aplica | no disponible en esta ficha | Hugging Face |
+| Otros LoRA DreamBooth sobre SDXL | LoRA DreamBooth | SDXL Base 1.0 | variable | no aplica | variable (habitualmente openrail++) | Hugging Face, civitai |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matytsyna/eva_cat_LoRA
+- Modelo en Hugging Face: https://huggingface.co/matytsyna/eva_cat_LoRA
 - Modelo base SDXL: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE usado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Paper de DreamBooth: https://dreambooth.github.io/

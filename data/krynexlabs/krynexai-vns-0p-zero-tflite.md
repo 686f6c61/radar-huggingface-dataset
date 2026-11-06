@@ -2,11 +2,11 @@
 
 ## Resumen
 
-KrynexAI-vNS-0P-Zero-TFLite (presentado por su autor como "Quantum-Zero" o QZ-0) es un artefacto publicado en HuggingFace por KrynexLabs que se autodefine como "la primera arquitectura generativa de 0 parametros del mundo", optimizada para el runtime LiteRT/TensorFlow Lite y dirigida a despliegues en "smart dust" de bajo consumo. Segun la propia model card, el modelo tiene 0 parametros, ocupa 0 bytes, consume 0 KB de RAM y presenta una latencia de 0,00 ms. La model card describe ademas una tecnica propietaria denominada "Void-Attention" que, segun el autor, evita multiplicaciones de matrices, mecanismos de atencion y funciones de activacion, y cuyo comportamiento en inferencia consiste en devolver un error de tipo puntero nulo o un error de parseo.
+KrynexAI-vNS-0P-Zero-TFLite (presentado por su autor como "Quantum-Zero" o QZ-0) es un artefacto publicado en Hugging Face por KrynexLabs que se autodefine como "la primera arquitectura generativa de 0 parametros del mundo", optimizada para el runtime LiteRT/TensorFlow Lite y dirigida a despliegues en "smart dust" de bajo consumo. Segun la propia model card, el modelo tiene 0 parametros, ocupa 0 bytes, consume 0 KB de RAM y presenta una latencia de 0,00 ms. La model card describe ademas una tecnica propietaria denominada "Void-Attention" que, segun el autor, evita multiplicaciones de matrices, mecanismos de atencion y funciones de activacion, y cuyo comportamiento en inferencia consiste en devolver un error de tipo puntero nulo o un error de parseo.
 
 La publicacion no contiene pesos utilizables ni una especificacion tecnica verificable. El codigo de ejemplo incluido en la propia model card anticipa que el intérprete de TFLite lanzara el error "Invalid flatbuffer format", presentado de forma ironica como una caracteristica del modelo. La tabla de evaluacion que aparece en la model card compara QZ-0 con GPT-4o en metricas como tamano, coste de entrenamiento y "alucinaciones", con valores manifiestamente satiricos (0 bytes, 0 dolares, 0 % de alucinaciones).
 
-Se trata, por tanto, de una publicacion de caracter humoristico o de una broma tecnica (bait de tipo "0-parameter model"), no de un modelo de lenguaje funcional. Es relevante unicamente como caso de estudio sobre ruido en los indices de modelos de HuggingFace y sobre como las etiquetas (litert, tflite, zero-shot, tiny-llm, en) pueden no corresponder con ningun artefacto real. No debe evaluarse como alternativa a ningun LLM en produccion.
+Se trata, por tanto, de una publicacion de caracter humoristico o de una broma tecnica (bait de tipo "0-parameter model"), no de un modelo de lenguaje funcional. Es relevante unicamente como caso de estudio sobre ruido en los indices de modelos de Hugging Face y sobre como las etiquetas (litert, tflite, zero-shot, tiny-llm, en) pueden no corresponder con ningun artefacto real. No debe evaluarse como alternativa a ningun LLM en produccion.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ No existe informacion sobre datos de entrenamiento, numero de tokens, composicio
 
 ## Casos de uso
 
-- Docencia y divulgacion sobre ruido en repositorios de modelos: el artefacto puede citarse como ejemplo de publicacion sin pesos reales que, sin embargo, recibe etiquetas de "tiny-llm" y "zero-shot" en HuggingFace. Es util para explicar por que hay que verificar los ficheros antes de integrar un modelo.
+- Docencia y divulgacion sobre ruido en repositorios de modelos: el artefacto puede citarse como ejemplo de publicacion sin pesos reales que, sin embargo, recibe etiquetas de "tiny-llm" y "zero-shot" en Hugging Face. Es util para explicar por que hay que verificar los ficheros antes de integrar un modelo.
 - Pruebas de validacion de pipelines de descarga: sirve para comprobar que un script de CI que descarga artefactos desde el Hub detecta correctamente un flatbuffer invalido o un repositorio sin pesos, en lugar de fallar silenciosamente.
 - Auditoria de catalogos internos de modelos: util como caso negativo para validar reglas de filtrado (por ejemplo, descartar repositorios con 0 descargas, 0 parametros declarados o sin fichero de pesos).
 - Formacion de equipos de MLOps: ejercicio practico sobre como distinguir una model card declarativa de un artefacto ejecutable, y sobre la diferencia entre metadatos y contenido.
@@ -82,5 +82,5 @@ No existen modelos funcionalmente comparables: QZ-0 no es un modelo de lenguaje,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KrynexLabs/KrynexAI-vNS-0P-Zero-TFLite
+- Hugging Face: https://huggingface.co/KrynexLabs/KrynexAI-vNS-0P-Zero-TFLite
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas de ayuda de YouTube (support.google.com), YouTube TV y la comunidad Zhihu, sin relacion con KrynexLabs ni con Quantum-Zero. No hay paper, repositorio de codigo, blog del autor ni demo publicados.

@@ -91,7 +91,7 @@ La informacion proporcionada no incluye resultados comparativos ni especificacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightonai/colgrep-agent-2B
+- Modelo en Hugging Face: https://huggingface.co/lightonai/colgrep-agent-2B
 - Repositorio GGUF: https://huggingface.co/lightonai/colgrep-agent-2B-GGUF
 - Paper: https://arxiv.org/abs/2610.05099
 - Blog post: https://huggingface.co/blog/lightonai/colgrep-agent/

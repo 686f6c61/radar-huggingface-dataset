@@ -6,7 +6,7 @@ EmbeddingGemma 2 · typed decisions es un modelo de decisiones tipadas desarroll
 
 La innovacion clave es que la cabeza de decision puntua el texto de cada opcion del esquema contra el estado y la pregunta, de modo que el esquema es dato plano: se pueden renombrar opciones, reescribir descripciones o anadir preguntas nuevas sin reentrenar. Soporta tres tipos de pregunta: `choice` (clasificacion sobre un diccionario de opciones), `score` (nivel ordinal con calculo del nivel esperado) y `noul` (si/no probabilistico). Cada respuesta se devuelve como un objeto `TypedAnswer` serializable a JSON.
 
-Es relevante ahora porque cubre un hueco practico en los sistemas de agentes: la necesidad de obtener decisiones estructuradas, auditables y con incertidumbre explicita en lugar de texto parseable a posteriori. El modelo se publico en octubre de 2026 y en el momento de redactar esta ficha no registra descargas ni likes en HuggingFace.
+Es relevante ahora porque cubre un hueco practico en los sistemas de agentes: la necesidad de obtener decisiones estructuradas, auditables y con incertidumbre explicita en lugar de texto parseable a posteriori. El modelo se publico en octubre de 2026 y en el momento de redactar esta ficha no registra descargas ni likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Es relevante ahora porque cubre un hueco practico en los sistemas de agentes: la
 
 El modelo parte de google/embeddinggemma-2, un encoder de frases multilingue, y le anade una cabeza de decision (`GemmaDecision`) implementada como codigo personalizado. La cabeza puntua el texto de cada opcion del esquema contra el estado y el enunciado de la pregunta, reutilizando el espacio de embeddings del modelo base. El metodo `encode()` devuelve embeddings de frase normalizados exactamente como se usaron en entrenamiento, mientras que `model(**batch)` devuelve un `GemmaDecisionOutput` con `loss`, `logits`, `probabilities` y `text_embeds`.
 
-El ajuste fino se realizo sobre el dataset LocalLLaMA/typed-decisions (configuracion `all`), y el modelo se puede seguir entrenando con el `Trainer` de HuggingFace usando el metodo `collate()` para convertir filas `{workflow, state, questions, gold}` en lotes de entrenamiento. No se especifican en la model card el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; esos datos no estan disponibles. La innovacion tecnica destacable es la separacion entre el modelo de embeddings y el esquema de decision: al evaluar opciones como texto, se permite modificar el esquema sin reentrenamiento.
+El ajuste fino se realizo sobre el dataset LocalLLaMA/typed-decisions (configuracion `all`), y el modelo se puede seguir entrenando con el `Trainer` de Hugging Face usando el metodo `collate()` para convertir filas `{workflow, state, questions, gold}` en lotes de entrenamiento. No se especifican en la model card el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; esos datos no estan disponibles. La innovacion tecnica destacable es la separacion entre el modelo de embeddings y el esquema de decision: al evaluar opciones como texto, se permite modificar el esquema sin reentrenamiento.
 
 ## Capacidades
 
@@ -36,7 +36,7 @@ El ajuste fino se realizo sobre el dataset LocalLLaMA/typed-decisions (configura
 - Esquemas flexibles: las opciones se pueden renombrar, reescribir o ampliar sin reentrenar (con menor fiabilidad fuera de la distribucion de entrenamiento).
 - Embeddings de frase normalizados mediante `model.encode(texts)`, reutilizables para recuperacion o similitud semantica.
 - Multilingue heredado del modelo base: acepta estados y esquemas en otros idiomas, incluido el castellano.
-- Ajuste fino adicional con el `Trainer` de HuggingFace y el dataset LocalLLaMA/typed-decisions.
+- Ajuste fino adicional con el `Trainer` de Hugging Face y el dataset LocalLLaMA/typed-decisions.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes multi-step: no es un modelo generativo ni orquestador; su papel es evaluar y etiquetar trazas de agentes.
 - Capacidades de vision o audio: no disponibles.
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mrm8488/embeddinggemma-2-ft-typed-decision | 272,1 M | no disponible | Decisiones tipadas y calibradas sobre esquema | Apache 2.0 | HuggingFace, codigo personalizado |
-| google/embeddinggemma-2 (modelo base) | no disponible | no disponible | Embeddings de frase multilingues | no disponible en la informacion proporcionada | HuggingFace |
+| mrm8488/embeddinggemma-2-ft-typed-decision | 272,1 M | no disponible | Decisiones tipadas y calibradas sobre esquema | Apache 2.0 | Hugging Face, codigo personalizado |
+| google/embeddinggemma-2 (modelo base) | no disponible | no disponible | Embeddings de frase multilingues | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de clasificacion estructurada de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparado con otros modelos, por lo que no es posible establecer una comparativa cuantitativa. La diferencia funcional con el modelo base es que este ultimo solo produce embeddings, mientras que el modelo ajustado anade la cabeza de decision y la API `decide()`.
@@ -84,13 +84,13 @@ No se dispone de datos de rendimiento comparado con otros modelos, por lo que no
 - Riesgo de alucinacion: la salida es probabilistica y calibrada, pero no hay garantia de que la etiqueta ganadora sea correcta; se recomienda fijar umbrales de confianza y escalado a revision humana.
 - Sesgos conocidos: no documentados en la model card; el comportamiento dependera del dataset LocalLLaMA/typed-decisions, cuya composicion no se detalla.
 - Longitud de contexto no especificada: los estados muy largos pueden truncarse, pero no se indica el limite exacto.
-- Modelo recien publicado y sin traccion: cero descargas y cero likes en HuggingFace en el momento de la ficha, por lo que no existe evidencia de uso en produccion ni validacion independiente.
+- Modelo recien publicado y sin traccion: cero descargas y cero likes en Hugging Face en el momento de la ficha, por lo que no existe evidencia de uso en produccion ni validacion independiente.
 - Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base google/embeddinggemma-2, no detalladas aqui.
 - No se documenta soporte para tool calling, agentes multi-step, vision ni audio; no debe usarse como sustituto de un LLM generativo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision
+- Modelo en Hugging Face: https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Dataset de entrenamiento: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Imagen de portada del repositorio: https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/resolve/main/eg2td.png

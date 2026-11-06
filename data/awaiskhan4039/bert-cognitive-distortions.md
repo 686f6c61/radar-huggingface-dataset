@@ -2,7 +2,7 @@
 
 ## Resumen
 
-awaiskhan4039/bert-cognitive-distortions es un modelo publicado en HuggingFace por el usuario awaiskhan4039. La informacion disponible es minima: la model card esta practicamente vacia (unicamente la declaracion de licencia apache-2.0), no consta pipeline declarado, no se indican idiomas soportados, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. No se ha publicado informacion sobre arquitectura, numero de parametros, datos de entrenamiento ni resultados de evaluacion.
+awaiskhan4039/bert-cognitive-distortions es un modelo publicado en Hugging Face por el usuario awaiskhan4039. La informacion disponible es minima: la model card esta practicamente vacia (unicamente la declaracion de licencia apache-2.0), no consta pipeline declarado, no se indican idiomas soportados, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. No se ha publicado informacion sobre arquitectura, numero de parametros, datos de entrenamiento ni resultados de evaluacion.
 
 Por la convencion de nombres empleada ("bert" + tarea de "cognitive distortions"), es razonable inferir que se trata de un ajuste fino de un encoder de la familia BERT orientado a la clasificacion de distorsiones cognitivas en texto, probablemente en ingles. Esta inferencia procede exclusivamente del identificador del repositorio y no esta confirmada por ninguna documentacion del autor, por lo que debe tratarse como una hipotesis de trabajo y no como un dato verificado. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo: los enlaces recuperados no guardan relacion con el proyecto ni con la tarea.
 
@@ -94,6 +94,6 @@ La fila de modelos de referencia se incluye unicamente como orientacion de categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/awaiskhan4039/bert-cognitive-distortions
+- Hugging Face: https://huggingface.co/awaiskhan4039/bert-cognitive-distortions
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Golduck es un modelo publicado en HuggingFace por el usuario Ryanham1lton el 3 de septiembre de 2026, bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeñas dimensiones, pero no se dispone de información adicional en la model card, que únicamente contiene la declaración de licencia. No se especifica la arquitectura, el número de parámetros, el pipeline ni los idiomas soportados.
+Golduck es un modelo publicado en Hugging Face por el usuario Ryanham1lton el 3 de septiembre de 2026, bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeñas dimensiones, pero no se dispone de información adicional en la model card, que únicamente contiene la declaración de licencia. No se especifica la arquitectura, el número de parámetros, el pipeline ni los idiomas soportados.
 
 La relevancia de este modelo no puede evaluarse en este momento, ya que no se ha publicado ninguna documentación técnica, resultados de benchmarks ni ejemplos de uso. La ausencia de descargas y de interacción por parte de la comunidad indica que se trata de un modelo reciente o experimental, posiblemente en fase de validación. Para cualquier uso en producción, se recomienda esperar a que el autor publique especificaciones detalladas o verificar directamente el contenido del repositorio.
 
@@ -29,7 +29,7 @@ No se dispone de informacion verificada sobre las capacidades del modelo. No se 
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin informacion sobre las capacidades del modelo. Cualquier sugerencia seria especulativa y contraria al rigor exigido en esta ficha. Se recomienda consultar directamente el repositorio de HuggingFace para comprobar si el autor ha publicado ejemplos de uso, notebooks o documentacion adicional.
+No se pueden proponer casos de uso concretos sin informacion sobre las capacidades del modelo. Cualquier sugerencia seria especulativa y contraria al rigor exigido en esta ficha. Se recomienda consultar directamente el repositorio de Hugging Face para comprobar si el autor ha publicado ejemplos de uso, notebooks o documentacion adicional.
 
 ## Benchmarks y rendimiento
 
@@ -53,5 +53,5 @@ No disponible. No se ha identificado ningun modelo comparable en la informacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Golduck
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Golduck
 - No se han encontrado papers, blogs, repositorios de codigo ni demos relacionados con este modelo en la busqueda web.

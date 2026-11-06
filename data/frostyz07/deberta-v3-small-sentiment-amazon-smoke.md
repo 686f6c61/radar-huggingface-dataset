@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`deberta-v3-small-sentiment-amazon-smoke` es un modelo de clasificación de texto en inglés (aunque el autor no declara idiomas) obtenido mediante fine-tuning supervisado de `microsoft/deberta-v3-small` sobre un conjunto de datos no especificado, presumiblemente reseñas de Amazon orientadas a análisis de sentimiento. Lo publica el usuario FrostyZ07 en HuggingFace con licencia MIT y apenas 30 descargas, lo que lo sitúa como un artefacto experimental más que como un modelo listo para producción.
+`deberta-v3-small-sentiment-amazon-smoke` es un modelo de clasificación de texto en inglés (aunque el autor no declara idiomas) obtenido mediante fine-tuning supervisado de `microsoft/deberta-v3-small` sobre un conjunto de datos no especificado, presumiblemente reseñas de Amazon orientadas a análisis de sentimiento. Lo publica el usuario FrostyZ07 en Hugging Face con licencia MIT y apenas 30 descargas, lo que lo sitúa como un artefacto experimental más que como un modelo listo para producción.
 
 El modelo conserva la arquitectura DeBERTa-v3-small de Microsoft: un transformer encoder con atención desacoplada y un mecanismo de embedding de posiciones relativas mejorado respecto a DeBERTa-v2, con 141,9 millones de parámetros totales. El entrenamiento se realizó durante una sola época con AdamW fused, learning rate 2e-5 y precisión mixta nativa, alcanzando una accuracy de 0,856 y un F1 macro de 0,8545 en el conjunto de validación.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, GLUE, etc.) en la 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deberta-v3-small-sentiment-amazon-smoke | 141,9 M | no disponible | Accuracy 0,856 en validación propia | MIT | HuggingFace (30 descargas) |
-| microsoft/deberta-v3-small | 141,9 M | 512 tokens | Métricas GLUE publicadas por Microsoft | MIT | HuggingFace (ampliamente usado) |
-| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Métricas SST-2 publicadas | Apache 2.0 | HuggingFace (muy popular) |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | 125 M | 512 tokens | Métricas propias publicadas | MIT | HuggingFace (muy popular) |
+| deberta-v3-small-sentiment-amazon-smoke | 141,9 M | no disponible | Accuracy 0,856 en validación propia | MIT | Hugging Face (30 descargas) |
+| microsoft/deberta-v3-small | 141,9 M | 512 tokens | Métricas GLUE publicadas por Microsoft | MIT | Hugging Face (ampliamente usado) |
+| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Métricas SST-2 publicadas | Apache 2.0 | Hugging Face (muy popular) |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | 125 M | 512 tokens | Métricas propias publicadas | MIT | Hugging Face (muy popular) |
 
 La comparación directa es limitada: el modelo evaluado no publica métricas en benchmarks estándar, por lo que solo puede contrastarse por tamaño, licencia y disponibilidad, no por rendimiento objetivo frente a alternativas consolidadas.
 
@@ -94,7 +94,7 @@ La comparación directa es limitada: el modelo evaluado no publica métricas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrostyZ07/deberta-v3-small-sentiment-amazon-smoke
+- Modelo en Hugging Face: https://huggingface.co/FrostyZ07/deberta-v3-small-sentiment-amazon-smoke
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-small
 - Paper DeBERTa-v3 (Microsoft Research): https://arxiv.org/abs/2111.09543
 - Repositorio DeBERTa (GitHub): https://github.com/microsoft/DeBERTa

@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/grok.h071.sft-smith.step_40
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/grok.h071.sft-smith.step_40
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del barrido AgentPTB (referenciado en la model card, no verificado): `agentic-ptb/INDEX` (no se ha encontrado una URL directa en la información proporcionada).

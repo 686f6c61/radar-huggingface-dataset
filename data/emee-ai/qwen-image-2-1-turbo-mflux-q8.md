@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/emee-ai/qwen-image-2-1-turbo-mflux-q8
+- Repositorio Hugging Face: https://huggingface.co/emee-ai/qwen-image-2-1-turbo-mflux-q8
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE
 - MFlux (GitHub): https://github.com/filipstrand/mflux

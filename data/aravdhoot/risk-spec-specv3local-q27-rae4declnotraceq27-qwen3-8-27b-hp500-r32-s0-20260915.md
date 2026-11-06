@@ -116,7 +116,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rae4declnotraceq27-qwen3.8-27b-hp500-r32-s0-20260915
+- Repositorio en Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rae4declnotraceq27-qwen3.8-27b-hp500-r32-s0-20260915
 - Modelo base referenciado en la model card: https://huggingface.co/Qwen/Qwen3.8-27B (revisión `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`)
 - Paper, blog o repositorio asociado: no disponible
 - Demo o space: no disponible

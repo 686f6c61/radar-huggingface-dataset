@@ -86,8 +86,8 @@ No se dispone de comparativas publicadas con otros adaptadores de aceleración o
 
 | Modelo | Parametros | Pasos de denoising | Tiempo de pipeline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-image-2.1-ultrafast (este adaptador) | 83.886.080 parametros entrenables sobre base de 7B | 8 (esquema registrado) | 18,08 s / 17,69 s (hardware no especificado) | qwen-research, no comercial | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen-Image-2.1 (profesor, T40) | 7B en el componente de generacion visual, 32 capas single-stream DiT | 40 | 69,69 s / 68,77 s | Licencia Qwen del modelo base | HuggingFace y GitHub de QwenLM |
+| Qwen-image-2.1-ultrafast (este adaptador) | 83.886.080 parametros entrenables sobre base de 7B | 8 (esquema registrado) | 18,08 s / 17,69 s (hardware no especificado) | qwen-research, no comercial | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen-Image-2.1 (profesor, T40) | 7B en el componente de generacion visual, 32 capas single-stream DiT | 40 | 69,69 s / 68,77 s | Licencia Qwen del modelo base | Hugging Face y GitHub de QwenLM |
 | Otros adaptadores de pocos pasos para edicion de imagen | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de comparativas publicadas con otros adaptadores de aceleración o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haverbex/Qwen-image-2.1-ultrafast
+- Modelo en Hugging Face: https://huggingface.co/Haverbex/Qwen-image-2.1-ultrafast
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - Pesos e integración de ComfyUI: https://huggingface.co/Comfy-Org/Qwen-Image-2.1

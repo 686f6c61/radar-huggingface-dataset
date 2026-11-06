@@ -118,7 +118,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos de borde 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/visteon/Sima-Qwen3.5-Dflash-Custom-4k-Modalix-Deploy
+- Repositorio en Hugging Face: https://huggingface.co/visteon/Sima-Qwen3.5-Dflash-Custom-4k-Modalix-Deploy
 - Repositorio compañero (pesos y receta de cuantización): https://huggingface.co/visteon/Sima-Qwen3.5-Dflash-Custom-4k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Papers, blogs, repositorios de código y demos: no disponibles en la información proporcionada.

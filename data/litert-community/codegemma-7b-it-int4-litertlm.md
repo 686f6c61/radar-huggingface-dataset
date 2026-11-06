@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `litert-community/codegemma-7b-it-int4-litertlm` es una publicación de la comunidad `litert-community` en HuggingFace, registrada bajo la licencia Gemma. El nombre sugiere que se trata de una versión cuantizada a 4 bits (int4) del modelo CodeGemma 7B instruct, probablemente optimizada para inferencia en dispositivos con recursos limitados mediante el formato `litertlm`. Sin embargo, la ficha publicada no incluye información técnica detallada ni documentación adicional, por lo que las especificaciones exactas no están disponibles en la información proporcionada.
+El modelo `litert-community/codegemma-7b-it-int4-litertlm` es una publicación de la comunidad `litert-community` en Hugging Face, registrada bajo la licencia Gemma. El nombre sugiere que se trata de una versión cuantizada a 4 bits (int4) del modelo CodeGemma 7B instruct, probablemente optimizada para inferencia en dispositivos con recursos limitados mediante el formato `litertlm`. Sin embargo, la ficha publicada no incluye información técnica detallada ni documentación adicional, por lo que las especificaciones exactas no están disponibles en la información proporcionada.
 
 Este modelo no ha recibido descargas ni valoraciones, y su fecha de creación y actualización es el 16 de agosto de 2026. Al carecer de una model card descriptiva, su utilidad práctica y sus capacidades reales no pueden confirmarse a partir de los datos disponibles. Se recomienda consultar el repositorio original de CodeGemma de Google para obtener información sobre el modelo base, aunque esta variante concreta no ofrece garantías de compatibilidad o rendimiento.
 
@@ -55,4 +55,4 @@ No disponible. No se ha proporcionado información sobre modelos comparables ni 
 
 ## Enlaces
 
-- [HuggingFace - litert-community/codegemma-7b-it-int4-litertlm](https://huggingface.co/litert-community/codegemma-7b-it-int4-litertlm)
+- [Hugging Face - litert-community/codegemma-7b-it-int4-litertlm](https://huggingface.co/litert-community/codegemma-7b-it-int4-litertlm)

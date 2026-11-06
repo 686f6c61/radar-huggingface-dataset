@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`mathematical`, oct_behaviour) | LoRA r64 sobre 7,6 mil millones | 1024 tokens en entrenamiento; 32 768 en la base | safetensors (PEFT) | No disponible | Repositorio HuggingFace, 0 descargas |
+| Este adaptador (`mathematical`, oct_behaviour) | LoRA r64 sobre 7,6 mil millones | 1024 tokens en entrenamiento; 32 768 en la base | safetensors (PEFT) | No disponible | Repositorio Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-7B-Instruct (base) | 7,6 mil millones | 32 768 tokens nativos, 131 072 con YaRN | safetensors, GGUF, AWQ, GPTQ | Apache 2.0 (segun el modelo base) | Ampliamente disponible |
 | Otros adaptadores LoRA de comportamiento sobre la misma base | No disponible | No disponible | safetensors (PEFT) | No disponible | Repositorios de investigacion |
 | GLM-4.5-Air (modelo profesor de los datos) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks que permitan una comparacion de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_mathematical-oct-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_mathematical-oct-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-mathematical-training-data (fichero `dpo-view.jsonl`)
 - Datos de OpenCharacterTraining: https://huggingface.co/maius/OpenCharacterTraining-data

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ohaasaneja/research es un repositorio alojado en HuggingFace por el usuario Ohaasaneja, publicado bajo la licencia grok2-community. En el momento de la consulta no se ha publicado informacion tecnica sustantiva: la model card contiene unicamente el campo de licencia en su cabecera YAML y ningun texto descriptivo, y los metadatos de la plataforma no indican pipeline, idiomas soportados, tamano de parametros ni arquitectura.
+Ohaasaneja/research es un repositorio alojado en Hugging Face por el usuario Ohaasaneja, publicado bajo la licencia grok2-community. En el momento de la consulta no se ha publicado informacion tecnica sustantiva: la model card contiene unicamente el campo de licencia en su cabecera YAML y ningun texto descriptivo, y los metadatos de la plataforma no indican pipeline, idiomas soportados, tamano de parametros ni arquitectura.
 
 El repositorio registra cero descargas y cero likes, no tiene fecha de actualizacion posterior a la de creacion (17 de septiembre de 2026) y no incluye referencias a paper, repositorio de codigo, demo ni documentacion adicional. La busqueda web asociada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a contenido no vinculado (paginas sobre Pinterest en chino), por lo que no aportan informacion verificable.
 
@@ -78,6 +78,6 @@ No disponible. No es posible establecer una comparativa con modelos alternativos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ohaasaneja/research
+- Repositorio en Hugging Face: https://huggingface.co/Ohaasaneja/research
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Los resultados recuperados (https://www.zhihu.com/topic/19559627/intro, https://www.zhihu.com/question/19562210, https://www.zhihu.com/question/19562210/answers/updated, https://www.zhihu.com/question/24340321, https://www.zhihu.com/question/20351197) tratan sobre Pinterest y no guardan relacion con el artefacto.
 - Paper, blog, repositorio de codigo o demo: no disponible.

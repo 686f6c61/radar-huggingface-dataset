@@ -44,7 +44,7 @@ No se dispone de informacion detallada sobre el proceso de entrenamiento de esta
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen metricas oficiales de precision media (mAP), velocidad de inferencia ni comparativas con otros detectores en el repositorio de HuggingFace ni en la documentacion asociada. Se recomienda evaluar el modelo sobre un conjunto propio de capturas de graficos antes de usarlo en produccion.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen metricas oficiales de precision media (mAP), velocidad de inferencia ni comparativas con otros detectores en el repositorio de Hugging Face ni en la documentacion asociada. Se recomienda evaluar el modelo sobre un conjunto propio de capturas de graficos antes de usarlo en produccion.
 
 ## Requisitos de hardware
 
@@ -75,8 +75,8 @@ La principal diferencia con el modelo original de foduucom es el formato de peso
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/JONNYVERSE/stockmarket-pattern-detection-yolov8-onnx
+- Repositorio de Hugging Face: https://huggingface.co/JONNYVERSE/stockmarket-pattern-detection-yolov8-onnx
 - Modelo original de foduucom: https://huggingface.co/foduucom/stockmarket-pattern-detection-yolov8
 - Repositorio GitHub del proyecto original: https://github.com/foduucom/Stockmarket-pattern-detection
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/doinglean/stockmarket-pattern-detection-yolov8
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/doinglean/stockmarket-pattern-detection-yolov8
 - Ficha del modelo en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/stockmarket-pattern-detection-yolov8-foduucom

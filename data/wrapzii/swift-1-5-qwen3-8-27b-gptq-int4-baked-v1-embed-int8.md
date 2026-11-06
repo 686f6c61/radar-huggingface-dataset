@@ -18,7 +18,7 @@ La relevancia de esta publicacion es de ingenieria de despliegue: reduce el peso
 | Longitud de contexto | No disponible de forma explicita; el autor publica pruebas de rendimiento hasta 200K tokens |
 | Tipos de cuantizacion | Cuerpo en AutoRound INT4 simetrico (grupo 128, W4A16); `lm_head` y lineales MTP en GPTQ INT4 simetrico (grupo 128); embedding en INT8 por fila con escalas FP16 |
 | Idiomas soportados | No disponible |
-| Licencia | swift-open-license-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | swift-open-license-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (GPTQ empaquetado; fichero lateral INT8 para el embedding) |
 
 ## Arquitectura y entrenamiento
@@ -86,11 +86,11 @@ Memoria de pesos del modelo: 7,47 GiB por GPU, frente a 9,23 GiB del checkpoint 
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8 | 27,78 B | AutoRound INT4 + GPTQ INT4 head/MTP + INT8 embedding | No disponible (pruebas hasta 200K) | swift-open-license-1.0 | HuggingFace, vLLM/XPU |
-| ukisai/Swift-1.5-Qwen3.8-27b-INT4 | ~27 B | INT4 (AutoRound) | No disponible | swift-open-license-1.0 | HuggingFace |
-| ukisai/Swift-1.5-Qwen3.8-27b-W4A16-AutoRound | ~27 B | W4A16 AutoRound | No disponible | swift-open-license-1.0 | HuggingFace (modelo base directo) |
-| ultimaterex/Swift-1.5-Qwen3.8-27B-Uncensored-W4A16-AutoRound | ~27 B | W4A16 AutoRound | No disponible | No disponible | HuggingFace |
-| Launch80/Qwen3.8-27B-GPTQ-Int4-baked-v2 | ~27 B | GPTQ INT4 con bake | No disponible | No disponible | HuggingFace (referencia de enfoque) |
+| Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8 | 27,78 B | AutoRound INT4 + GPTQ INT4 head/MTP + INT8 embedding | No disponible (pruebas hasta 200K) | swift-open-license-1.0 | Hugging Face, vLLM/XPU |
+| ukisai/Swift-1.5-Qwen3.8-27b-INT4 | ~27 B | INT4 (AutoRound) | No disponible | swift-open-license-1.0 | Hugging Face |
+| ukisai/Swift-1.5-Qwen3.8-27b-W4A16-AutoRound | ~27 B | W4A16 AutoRound | No disponible | swift-open-license-1.0 | Hugging Face (modelo base directo) |
+| ultimaterex/Swift-1.5-Qwen3.8-27B-Uncensored-W4A16-AutoRound | ~27 B | W4A16 AutoRound | No disponible | No disponible | Hugging Face |
+| Launch80/Qwen3.8-27B-GPTQ-Int4-baked-v2 | ~27 B | GPTQ INT4 con bake | No disponible | No disponible | Hugging Face (referencia de enfoque) |
 
 La comparativa se limita a variantes de la misma familia (Swift 1.5 / Qwen3.8-27B) porque las fuentes consultadas no aportan datos de modelos comparables de otros desarrolladores con especificaciones contrastables.
 
@@ -103,13 +103,13 @@ La comparativa se limita a variantes de la misma familia (Swift 1.5 / Qwen3.8-27
 - Advertencia del autor: las cifras de rendimiento corresponden a su stack validado con backend K8/V4, MTP6, graphs y configuracion de serving, y no garantizan esos valores en otros runtimes o hardware.
 - Precision mixta: no es una conversion INT4 de todos los tensores; las activaciones del cuerpo AutoRound no se recuantizan en la conversion del checkpoint.
 - Idiomas: no se especifica la cobertura linguistica, por lo que no puede confirmarse su comportamiento en castellano u otros idiomas.
-- Licencia swift-open-license-1.0: es necesario revisar el fichero LICENSE del repositorio para conocer las condiciones exactas de uso comercial, ya que HuggingFace la etiqueta como "other".
+- Licencia swift-open-license-1.0: es necesario revisar el fichero LICENSE del repositorio para conocer las condiciones exactas de uso comercial, ya que Hugging Face la etiqueta como "other".
 - Sin datos de benchmarks independientes: las puntuaciones de origen no se han reestablecido para este derivado, y las cifras de mejora de Swift 1.5 proceden de UkisAI, con discrepancia entre fuentes (9,18x frente a 1,95x de aceleracion).
 - Estado del repositorio: cero descargas y cero likes en el momento de la consulta; sin validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8
+- Modelo en Hugging Face: https://huggingface.co/Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8
 - Modelo base directo: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-W4A16-AutoRound
 - Variante INT4 de referencia de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-INT4
 - Swift 1.5 Qwen3.8-27B (pagina de UkisAI): https://ukisai.com/swift-1-5-27b

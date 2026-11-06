@@ -69,5 +69,5 @@ No disponible. El repositorio no expone un modelo final comparable con otros LLM
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/angryaffine/affine-lab
+- Repositorio en Hugging Face: https://huggingface.co/angryaffine/affine-lab
 - Perfil del autor: https://huggingface.co/angryaffine

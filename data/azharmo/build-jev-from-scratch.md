@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`azharmo/build-jev-from-scratch` es un modelo de clasificación de texto de escala juguete (toy) publicado por el usuario azharmo en HuggingFace. No es un modelo de generación: implementa una reconstrucción educativa de la *interfaz* del modelo "System One" denominado Jev, presentado por TypeSafe AI el 15 de septiembre de 2026. El autor declara explícitamente que el modelo no es Jev ni pretende serlo, y que la arquitectura, las cabezas, las pérdidas y la calibración son de diseño propio, reproduciendo únicamente el comportamiento observable de la interfaz: dado un estado textual y varias preguntas tipadas, devuelve probabilidades calibradas en paralelo con una sola pasada del encoder.
+`azharmo/build-jev-from-scratch` es un modelo de clasificación de texto de escala juguete (toy) publicado por el usuario azharmo en Hugging Face. No es un modelo de generación: implementa una reconstrucción educativa de la *interfaz* del modelo "System One" denominado Jev, presentado por TypeSafe AI el 15 de septiembre de 2026. El autor declara explícitamente que el modelo no es Jev ni pretende serlo, y que la arquitectura, las cabezas, las pérdidas y la calibración son de diseño propio, reproduciendo únicamente el comportamiento observable de la interfaz: dado un estado textual y varias preguntas tipadas, devuelve probabilidades calibradas en paralelo con una sola pasada del encoder.
 
 El modelo resuelve tres tipos de consulta sobre un mismo estado: `noul` (probabilidad de que un enunciado sí/no sea verdadero), `choice` (distribución de probabilidad sobre un conjunto de opciones, con confianza) y `score` (un valor dentro de un rango). Tiene aproximadamente 3,1 millones de parámetros y fue entrenado íntegramente en CPU (8 núcleos, 15 GB de RAM) durante 3 épocas, con una pérdida de entrenamiento que bajó de 1,55 a 1,00. El resultado arquitectónicamente más relevante que reporta el autor es la calibración: un ECE de 0,027 en la tarea `noul`, muy bajo pese a una precisión modesta del 59,7%.
 
@@ -70,7 +70,7 @@ Datos adicionales del entrenamiento: pérdida de 1,55 a 1,00 en 3 épocas, aprox
 
 | Modelo | Desarrollador | Parametros | Contexto | Precisión reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| build-jev-from-scratch | azharmo | ~3,1 M | no disponible | noul 59,7 % (ECE 0,027); choice 75,9 % (AG News) | MIT | HuggingFace, 0 descargas |
+| build-jev-from-scratch | azharmo | ~3,1 M | no disponible | noul 59,7 % (ECE 0,027); choice 75,9 % (AG News) | MIT | Hugging Face, 0 descargas |
 | Jev (System One) | TypeSafe AI | no disponible | no disponible | no disponible | propietaria | no publicado; solo anuncio |
 | Needle | Cactus Compute | no disponible | no disponible | no disponible | no disponible (repositorio público) | GitHub |
 
@@ -91,7 +91,7 @@ La comparación no puede ser cuantitativa porque los internos de Jev son propiet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azharmo/build-jev-from-scratch
+- Modelo en Hugging Face: https://huggingface.co/azharmo/build-jev-from-scratch
 - Blog de TypeSafe AI sobre System One y Jev: https://typesafe.ai/blog/introducing-system-one-models-and-jev
 - Repositorio Needle de Cactus Compute: https://github.com/cactus-compute/needle
 - Conjunto de datos AG News: https://huggingface.co/datasets/fancyzhx/ag_news

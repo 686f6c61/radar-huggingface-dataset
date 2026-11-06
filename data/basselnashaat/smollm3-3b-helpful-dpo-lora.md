@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SmolLM3-3B-helpful-dpo-lora es un adaptador LoRA publicado en HuggingFace por el usuario BasselNashaat. Por el nombre del identificador, se trata de un ajuste fino mediante DPO (Direct Preference Optimization) sobre el modelo base SmolLM3-3B, orientado a mejorar el comportamiento "helpful" (utilidad y seguimiento de instrucciones) del modelo. El repositorio tiene un tamano de 0,1 GB, lo que es coherente con un adaptador LoRA y no con pesos completos de un modelo de 3 mil millones de parametros.
+SmolLM3-3B-helpful-dpo-lora es un adaptador LoRA publicado en Hugging Face por el usuario BasselNashaat. Por el nombre del identificador, se trata de un ajuste fino mediante DPO (Direct Preference Optimization) sobre el modelo base SmolLM3-3B, orientado a mejorar el comportamiento "helpful" (utilidad y seguimiento de instrucciones) del modelo. El repositorio tiene un tamano de 0,1 GB, lo que es coherente con un adaptador LoRA y no con pesos completos de un modelo de 3 mil millones de parametros.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no se especifican el modelo base exacto, los datos de entrenamiento, los hiperparametros, la licencia ni los idiomas. Esto limita severamente cualquier evaluacion tecnica rigurosa del artefacto.
+La model card del repositorio es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no se especifican el modelo base exacto, los datos de entrenamiento, los hiperparametros, la licencia ni los idiomas. Esto limita severamente cualquier evaluacion tecnica rigurosa del artefacto.
 
 La relevancia de esta ficha es, por tanto, principalmente documental: describe un adaptador comunitario de bajo perfil (0 descargas, 0 likes en el momento de la consulta) que puede servir como ejemplo de ajuste DPO sobre la familia SmolLM3, pero que no deberia adoptarse en produccion sin una validacion previa por parte del usuario.
 
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el dataset de preferencias utilizado, el nume
 - Evaluacion comparativa de tecnicas de alineacion: sirve como punto de comparacion frente al modelo base sin ajustar o frente a otros adaptadores DPO, midiendo diferencias en utilidad percibida y formato de respuesta.
 - Generacion de texto asistida en entornos con recursos limitados: el modelo base de 3B y el adaptador de 0,1 GB permiten desplegar un pipeline de generacion en una sola GPU consumer, util para demos y pruebas internas.
 - Base para nuevos ajustes: el adaptador puede servir como punto de partida para experimentos de merging de LoRAs o de ajuste adicional sobre dominios concretos, dado su reducido tamano.
-- Docencia y formacion: util para ilustrar en un curso o taller el flujo completo de publicacion de un adaptador LoRA en HuggingFace y su carga con la libreria transformers.
+- Docencia y formacion: util para ilustrar en un curso o taller el flujo completo de publicacion de un adaptador LoRA en Hugging Face y su carga con la libreria transformers.
 
 ## Benchmarks y rendimiento
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| BasselNashaat/SmolLM3-3B-helpful-dpo-lora | no disponible (adaptador sobre base de 3B) | no disponible | no disponible | safetensors (LoRA) | HuggingFace, 0 descargas |
-| SmolLM3-3B (modelo base) | 3B | no disponible en esta ficha | no disponible en esta ficha | safetensors | HuggingFace |
-| Otros adaptadores DPO comunitarios sobre modelos de 3B | variable | variable | variable | safetensors (LoRA) | HuggingFace |
+| BasselNashaat/SmolLM3-3B-helpful-dpo-lora | no disponible (adaptador sobre base de 3B) | no disponible | no disponible | safetensors (LoRA) | Hugging Face, 0 descargas |
+| SmolLM3-3B (modelo base) | 3B | no disponible en esta ficha | no disponible en esta ficha | safetensors | Hugging Face |
+| Otros adaptadores DPO comunitarios sobre modelos de 3B | variable | variable | variable | safetensors (LoRA) | Hugging Face |
 
 No se dispone de datos de rendimiento publicados para este adaptador, por lo que la comparativa se limita a parametros estructurales y disponibilidad.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento publicados para este adaptador, por lo que
 
 ## Enlaces
 
-- [HuggingFace: BasselNashaat/SmolLM3-3B-helpful-dpo-lora](https://huggingface.co/BasselNashaat/SmolLM3-3B-helpful-dpo-lora)
+- [Hugging Face: BasselNashaat/SmolLM3-3B-helpful-dpo-lora](https://huggingface.co/BasselNashaat/SmolLM3-3B-helpful-dpo-lora)
 - [Paper de referencia citado en la model card: Lacoste et al. (2019), Quantifying the Carbon Emissions of Machine Learning](https://arxiv.org/abs/1910.09700)
 - [Calculadora de impacto medioambiental ML CO2 Impact](https://mlco2.github.io/impact#compute)

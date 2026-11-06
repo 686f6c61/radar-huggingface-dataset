@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pal301705/demon es un modelo publicado en HuggingFace por el usuario Pal301705 bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva (el README se limita a la declaracion de licencia), no especifica pipeline de inferencia, no declara idiomas soportados y no indica arquitectura, numero de parametros ni longitud de contexto.
+Pal301705/demon es un modelo publicado en Hugging Face por el usuario Pal301705 bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva (el README se limita a la declaracion de licencia), no especifica pipeline de inferencia, no declara idiomas soportados y no indica arquitectura, numero de parametros ni longitud de contexto.
 
 El modelo acumula 0 descargas y 0 likes, y aparece etiquetado unicamente con la region "us" y la licencia Apache 2.0. No se ha publicado informacion tecnica adicional, benchmarks ni documentacion de uso en la informacion disponible.
 
@@ -78,5 +78,5 @@ No disponible. Al no conocerse la categoria del modelo (tamano, arquitectura, ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pal301705/demon
+- Modelo en Hugging Face: https://huggingface.co/Pal301705/demon
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

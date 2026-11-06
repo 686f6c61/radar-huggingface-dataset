@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bisectgroup/NovoMolGen_qwen3_32m_smiles_atomwise_a576cca8` es un checkpoint de 31.928.064 parámetros (aproximadamente 31,9 millones) publicado por la organización bisectgroup en HuggingFace. Por el identificador se deduce que se trata de un modelo de generación de moléculas (NovoMolGen) construido sobre la arquitectura Qwen3, entrenado para trabajar con representaciones SMILES y con un enfoque de tokenización o predicción a nivel de átomo (`atomwise`). El sufijo `a576cca8` corresponde a un hash de experimento o de configuración, lo que sugiere que forma parte de una familia de ejecuciones de entrenamiento con variantes de hiperparámetros.
+El modelo `bisectgroup/NovoMolGen_qwen3_32m_smiles_atomwise_a576cca8` es un checkpoint de 31.928.064 parámetros (aproximadamente 31,9 millones) publicado por la organización bisectgroup en Hugging Face. Por el identificador se deduce que se trata de un modelo de generación de moléculas (NovoMolGen) construido sobre la arquitectura Qwen3, entrenado para trabajar con representaciones SMILES y con un enfoque de tokenización o predicción a nivel de átomo (`atomwise`). El sufijo `a576cca8` corresponde a un hash de experimento o de configuración, lo que sugiere que forma parte de una familia de ejecuciones de entrenamiento con variantes de hiperparámetros.
 
 Se trata de un modelo muy pequeno dentro de la familia Qwen3: con 31,9 millones de parámetros está dos órdenes de magnitud por debajo del Qwen3-0.6B más pequeno publicado oficialmente por Alibaba. Esto lo sitúa en la categoría de modelos especializados, disenados para una tarea concreta (generación y manipulación de cadenas SMILES) más que para conversación general o razonamiento abierto. El repositorio ocupa 1,5 GB, un tamano desproporcionado respecto a los pesos en precisión completa (unos 128 MB en FP32), lo que apunta a la presencia de checkpoints adicionales, estados de optimizador o artefactos de entrenamiento junto a los pesos finales.
 
@@ -75,7 +75,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bisectgroup/NovoMolGen_qwen3_32m_smiles_atomwise_a576cca8 | 31.928.064 | No disponible | No disponible | HuggingFace, safetensors |
+| bisectgroup/NovoMolGen_qwen3_32m_smiles_atomwise_a576cca8 | 31.928.064 | No disponible | No disponible | Hugging Face, safetensors |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,5 +92,5 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bisectgroup/NovoMolGen_qwen3_32m_smiles_atomwise_a576cca8
+- Hugging Face: https://huggingface.co/bisectgroup/NovoMolGen_qwen3_32m_smiles_atomwise_a576cca8
 - Paper, blog, repositorio o demo: no disponible. La búsqueda web realizada no devolvió ninguna fuente relacionada con el modelo, la organización bisectgroup ni el proyecto NovoMolGen.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Aiden12910/tiktok-videos` es un repositorio alojado en HuggingFace por el usuario Aiden12910 que, a tenor del identificador y del contenido de su model card, no parece corresponder a un modelo de lenguaje entrenado, sino a un conjunto de datos o a un artefacto auxiliar (posiblemente vídeos o metadatos de TikTok) empaquetado en un repositorio de 0,5 GB. La model card se limita a declarar la licencia MIT y no incluye ninguna descripción del contenido, del proceso de creación ni de la finalidad del repositorio.
+`Aiden12910/tiktok-videos` es un repositorio alojado en Hugging Face por el usuario Aiden12910 que, a tenor del identificador y del contenido de su model card, no parece corresponder a un modelo de lenguaje entrenado, sino a un conjunto de datos o a un artefacto auxiliar (posiblemente vídeos o metadatos de TikTok) empaquetado en un repositorio de 0,5 GB. La model card se limita a declarar la licencia MIT y no incluye ninguna descripción del contenido, del proceso de creación ni de la finalidad del repositorio.
 
-No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados. El repositorio no declara pipeline de HuggingFace, no tiene descargas ni likes, y no se ha publicado documentación técnica adicional. Cualquier evaluación como modelo generativo es, por tanto, imposible con los datos disponibles.
+No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados. El repositorio no declara pipeline de Hugging Face, no tiene descargas ni likes, y no se ha publicado documentación técnica adicional. Cualquier evaluación como modelo generativo es, por tanto, imposible con los datos disponibles.
 
 La relevancia actual del repositorio es mínima desde el punto de vista técnico: no hay evidencia de que contenga pesos de un modelo, y su utilidad práctica queda condicionada a que el autor publique documentación sobre el contenido real del repositorio. Se recomienda precaución antes de descargarlo o reutilizarlo en cualquier pipeline.
 
@@ -71,5 +71,5 @@ No disponible. No se ha identificado ningún modelo comparable, dado que no se c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aiden12910/tiktok-videos
+- Repositorio en Hugging Face: https://huggingface.co/Aiden12910/tiktok-videos
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

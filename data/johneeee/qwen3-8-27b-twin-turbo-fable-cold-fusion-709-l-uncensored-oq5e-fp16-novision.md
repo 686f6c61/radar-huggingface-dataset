@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-fp16-novision es una publicacion de la comunidad alojada en HuggingFace por el usuario Johneeee. Se trata de un artefacto derivado de la familia Qwen: el campo `model_type` declarado en la model card es `qwen3_5`, y el nombre del repositorio indica un supuesto tamano de 27B junto con una cadena de sufijos ("TWIN", "TURBO", "Fable", "Cold-Fusion", "709-L", "Uncensored", "novision") que responde a convenciones habituales de fusion de pesos y ajuste sin censura. El dato verificable es el recuento real de parametros en los ficheros safetensors: 26.895.998.464 parametros, es decir, aproximadamente 26,9B.
+Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-fp16-novision es una publicacion de la comunidad alojada en Hugging Face por el usuario Johneeee. Se trata de un artefacto derivado de la familia Qwen: el campo `model_type` declarado en la model card es `qwen3_5`, y el nombre del repositorio indica un supuesto tamano de 27B junto con una cadena de sufijos ("TWIN", "TURBO", "Fable", "Cold-Fusion", "709-L", "Uncensored", "novision") que responde a convenciones habituales de fusion de pesos y ajuste sin censura. El dato verificable es el recuento real de parametros en los ficheros safetensors: 26.895.998.464 parametros, es decir, aproximadamente 26,9B.
 
 El modelo no es un entrenamiento desde cero ni una publicacion oficial del fabricante del modelo base: es una cuantizacion mixta de 5 bits generada con la herramienta oQ (oMLX v0.6.4, repositorio github.com/jundot/omlx), empaquetada en formato safetensors de MLX. El repositorio ocupa 19,2 GB. La relevancia de esta ficha es acotada: se trata de un artefacto con 0 descargas y 1 "like" en el momento de la consulta, sin model card tecnica mas alla de los parametros de cuantizacion, sin licencia declarada, sin idiomas declarados y sin resultados de evaluacion publicados.
 
@@ -55,7 +55,7 @@ Dado que no hay informacion sobre capacidades verificadas, licencia ni rendimien
 - Generacion de texto en flujos offline: redaccion, resumen y transformacion de documentos en lotes, en entornos donde no se quiere depender de APIs externas.
 - Investigacion sobre ajustes "uncensored": analisis academico del comportamiento de modelos con filtros reducidos, comparando tasas de rechazo y adherencia a instrucciones frente al modelo base.
 - Base para derivados en otros formatos: los pesos podrian convertirse a GGUF u otros formatos para su uso con llama.cpp u otros runners, aunque dicha conversion no esta documentada ni garantizada por el autor.
-- Analisis de linaje de modelos: el nombre del repositorio y los tags permiten estudiar practicas de nomenclatura y fusion de pesos dentro de la comunidad de HuggingFace.
+- Analisis de linaje de modelos: el nombre del repositorio y los tags permiten estudiar practicas de nomenclatura y fusion de pesos dentro de la comunidad de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -98,6 +98,6 @@ No es posible establecer una comparativa significativa con alternativas concreta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-fp16-novision
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-fp16-novision
 - Herramienta de cuantizacion oQ (oMLX), citada en la model card: https://github.com/jundot/omlx
 - Resultados de busqueda web: la busqueda realizada no devolvio ninguna fuente relevante sobre este modelo. Los unicos resultados obtenidos fueron paginas de ayuda de YouTube sin relacion con el repositorio. No se dispone de papers, blogs, demos ni repositorios adicionales que documenten este artefacto.

@@ -74,6 +74,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-max.h077.sft_short.step_100)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-max.h077.sft_short.step_100)
 - [Modelo base Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B)
-- [Página de modelos de HuggingFace](https://huggingface.co/models)
+- [Página de modelos de Hugging Face](https://huggingface.co/models)

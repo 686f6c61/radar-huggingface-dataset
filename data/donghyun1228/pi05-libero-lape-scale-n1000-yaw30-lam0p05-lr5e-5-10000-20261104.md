@@ -65,9 +65,9 @@ No se han publicado en la información disponible resultados desagregados por su
 
 | Modelo | Parámetros | Contexto | Rendimiento LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO yaw30 (este) | no disponible | no disponible | 91,40% (1828/2000) | Apache 2.0 | HuggingFace, repo de 23,7 GB |
-| π0.5 LIBERO fuente (`pi05-libero-lape-scale-source-n1000-10000-20261104`) | no disponible | no disponible | no disponible | Apache 2.0 (presumible) | HuggingFace |
-| Otros checkpoints `openpi` / π0.5 | no disponible | no disponible | no disponible | Apache 2.0 (presumible) | HuggingFace |
+| π0.5 LIBERO yaw30 (este) | no disponible | no disponible | 91,40% (1828/2000) | Apache 2.0 | Hugging Face, repo de 23,7 GB |
+| π0.5 LIBERO fuente (`pi05-libero-lape-scale-source-n1000-10000-20261104`) | no disponible | no disponible | no disponible | Apache 2.0 (presumible) | Hugging Face |
+| Otros checkpoints `openpi` / π0.5 | no disponible | no disponible | no disponible | Apache 2.0 (presumible) | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada; la comparación cuantitativa no es posible.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-n1000-yaw30-lam0p05-lr5e-5-10000-20261104
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-n1000-yaw30-lam0p05-lr5e-5-10000-20261104
 - Checkpoint fuente: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-source-n1000-10000-20261104
 - Repositorio de código del estudio: `Donghyun1228/vla_adaptation` (driver `f9dbc2e0`), referencia citada en la model card; URL no disponible
 - `openpi`: ecosistema citado en los tags; URL no disponible en la información proporcionada

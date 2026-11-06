@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter-sd43_20260830_084658` es un experimento de fine-tuning publicado por el usuario KKHYA en HuggingFace. Parte de un modelo base denominado `KKHYA/llavaqwen3-1.7b-finetune`, que a su vez parece ser una variante del sistema multimodal LLaVA construido sobre Qwen3 de 1.7B. El nombre del modelo sugiere una transformación hacia una arquitectura Mixture of Experts (MoE) con máscara y activación sparse, utilizando un router aleatorio y una configuración de 1 de 4 expertos. Los parámetros totales ascienden a 4.455.586.816, lo que indica una expansión significativa respecto al modelo base de 1.7B, probablemente debido a la inclusión de múltiples expertos.
+El modelo `llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter-sd43_20260830_084658` es un experimento de fine-tuning publicado por el usuario KKHYA en Hugging Face. Parte de un modelo base denominado `KKHYA/llavaqwen3-1.7b-finetune`, que a su vez parece ser una variante del sistema multimodal LLaVA construido sobre Qwen3 de 1.7B. El nombre del modelo sugiere una transformación hacia una arquitectura Mixture of Experts (MoE) con máscara y activación sparse, utilizando un router aleatorio y una configuración de 1 de 4 expertos. Los parámetros totales ascienden a 4.455.586.816, lo que indica una expansión significativa respecto al modelo base de 1.7B, probablemente debido a la inclusión de múltiples expertos.
 
 El modelo se distribuye bajo licencia Apache 2.0 y está registrado como compatible con la librería Transformers de PyTorch, con pesos en formato safetensors. Sin embargo, la documentación es prácticamente inexistente: la model card generada automáticamente no incluye descripción del modelo, datos de entrenamiento, ni resultados de evaluación. Los únicos datos concretos disponibles son los hiperparámetros del entrenamiento (learning rate 0.0005, batch total 128, optimizador AdamW, scheduler cosine) y el hecho de que se entrenó durante una época. No se han publicado benchmarks, ni información sobre el dataset utilizado, ni detalles sobre las capacidades del modelo. Su relevancia actual es limitada, ya que se trata de un artefacto experimental sin validación pública, pero puede resultar de interés para investigadores que estudien técnicas de MoE sparse aplicadas a modelos multimodales.
 
@@ -60,7 +60,7 @@ No se dispone de información sobre modelos comparables. El modelo es un experim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter-sd43_20260830_084658
+- Modelo en Hugging Face: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter-sd43_20260830_084658
 - Modelo base: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune
 - Discusiones relacionadas (variante 20260827): https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter_20260827_200216/discussions
 - Otras variantes (2of4): https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp-randrouter_20260811_014823/tree/main

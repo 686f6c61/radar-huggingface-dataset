@@ -3,7 +3,7 @@
 ## Resumen
 DeepSeek-V3-0324 es una revisión del modelo de lenguaje DeepSeek-V3, desarrollado por DeepSeek AI, publicada el 24 de marzo de 2025. Se trata de un modelo de tipo Mixture of Experts (MoE) con 684.531.386.000 parámetros totales según los pesos en safetensors, y presenta mejoras sustanciales frente a la versión V3 original en razonamiento, desarrollo web front-end, escritura en chino y function calling. La licencia MIT lo convierte en una de las alternativas abiertas de mayor tamano disponibles para uso comercial.
 
-El modelo resuelve tareas de generacion de texto, razonamiento complejo y programacion, y su interes actual radica en que eleva el rendimiento en benchmarks de razonamiento (por ejemplo, AIME pasa de 39.6 a 59.4 y GPQA de 59.1 a 68.4 respecto a V3) manteniendo pesos abiertos y una licencia permisiva. Con mas de 1.348.000 descargas en HuggingFace desde su publicacion, se ha consolidado como referencia entre los modelos abiertos de gran escala.
+El modelo resuelve tareas de generacion de texto, razonamiento complejo y programacion, y su interes actual radica en que eleva el rendimiento en benchmarks de razonamiento (por ejemplo, AIME pasa de 39.6 a 59.4 y GPQA de 59.1 a 68.4 respecto a V3) manteniendo pesos abiertos y una licencia permisiva. Con mas de 1.348.000 descargas en Hugging Face desde su publicacion, se ha consolidado como referencia entre los modelos abiertos de gran escala.
 
 La arquitectura sigue la linea de DeepSeek-V3 documentada en el informe tecnico arXiv:2412.19437, basada en atencion MLA y enrutado MoE con equilibrio de carga sin perdida auxiliar. Los pesos se distribuyen en formato FP8, lo que reduce el espacio de almacenamiento pero exige infraestructura de multiples GPU para su despliegue completo.
 
@@ -13,15 +13,15 @@ La arquitectura sigue la linea de DeepSeek-V3 documentada en el informe tecnico 
 |---|---|
 | Arquitectura | Transformer con Mixture of Experts (MoE), atencion MLA y Multi-Token Prediction (segun etiqueta deepseek_v3 e informe arXiv:2412.19437) |
 | Parametros totales | 684.531.386.000 (684,5 mil millones) |
-| Parametros activos | Aproximadamente 37.000 millones por token segun el informe tecnico asociado; no confirmado en la informacion de HuggingFace |
+| Parametros activos | Aproximadamente 37.000 millones por token segun el informe tecnico asociado; no confirmado en la informacion de Hugging Face |
 | Longitud de contexto | No disponible en la informacion proporcionada (el informe de la familia V3 documenta 128.000 tokens) |
 | Tipos de cuantizacion | FP8 como formato original; cuantizaciones GGUF, AWQ y GPTQ disponibles en la comunidad, no oficiales |
-| Idiomas soportados | No disponible en la ficha de HuggingFace; la model card destaca chino e ingles |
+| Idiomas soportados | No disponible en la ficha de Hugging Face; la model card destaca chino e ingles |
 | Licencia | MIT |
 | Formato de pesos | safetensors (con codigo personalizado, custom_code) |
 
 ## Arquitectura y entrenamiento
-DeepSeek-V3-0324 hereda la arquitectura del informe tecnico DeepSeek-V3 (arXiv:2412.19437), un transformer de tipo Mixture of Experts que combina Multi-head Latent Attention (MLA) para comprimir el cache de claves y valores, y un enrutado DeepSeekMoE con estrategia de equilibrio de carga sin perdida auxiliar. El entrenamiento de la familia V3 se realizo en precision FP8 sobre aproximadamente 14,8 billones de tokens e incorpora el objetivo de Multi-Token Prediction, que permite predecir varios tokens futuros por paso y se reutiliza en decodificacion especulativa. Estas cifras provienen del informe tecnico asociado, no de la ficha de HuggingFace.
+DeepSeek-V3-0324 hereda la arquitectura del informe tecnico DeepSeek-V3 (arXiv:2412.19437), un transformer de tipo Mixture of Experts que combina Multi-head Latent Attention (MLA) para comprimir el cache de claves y valores, y un enrutado DeepSeekMoE con estrategia de equilibrio de carga sin perdida auxiliar. El entrenamiento de la familia V3 se realizo en precision FP8 sobre aproximadamente 14,8 billones de tokens e incorpora el objetivo de Multi-Token Prediction, que permite predecir varios tokens futuros por paso y se reutiliza en decodificacion especulativa. Estas cifras provienen del informe tecnico asociado, no de la ficha de Hugging Face.
 
 La version 0324 incorpora ajustes adicionales orientados a razonamiento, function calling, escritura en chino y desarrollo web front-end, ademas de alinear el estilo de redaccion con el de DeepSeek-R1. No se detallan en la informacion disponible los volúmenes de datos de ajuste fino (SFT), RLHF o DPO empleados especificamente en esta revision, por lo que esos datos deben considerarse no disponibles.
 
@@ -68,7 +68,7 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V3-0324 | 684,5 mil millones | ~37 mil millones (informe tecnico) | no disponible | MIT | Pesos abiertos en HuggingFace |
+| DeepSeek-V3-0324 | 684,5 mil millones | ~37 mil millones (informe tecnico) | no disponible | MIT | Pesos abiertos en Hugging Face |
 | DeepSeek-V3 (original) | ~671 mil millones | ~37 mil millones (informe tecnico) | no disponible | MIT | Pesos abiertos |
 | DeepSeek-R1 | no disponible en la informacion proporcionada | no disponible | no disponible | MIT | Pesos abiertos |
 | Alternativas densas de 70B (p. ej. Llama 3.3, Qwen 2.5) | no disponibles en la informacion proporcionada | no aplica (densas) | no disponible | no disponible | no disponible |
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 - Formato de pesos FP8: requiere software compatible (vLLM, TGI, SGLang) para un rendimiento optimo; su uso en otros frameworks puede degradar la velocidad o exigir conversion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V3-0324
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V3-0324
 - Informe tecnico DeepSeek-V3 (arXiv): https://arxiv.org/abs/2412.19437
 - Web oficial de DeepSeek: https://www.deepseek.com/
 - Plataforma de API: https://www.deepseek.com/en/platform/

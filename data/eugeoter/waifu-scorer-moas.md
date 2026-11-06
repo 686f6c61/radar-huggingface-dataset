@@ -2,7 +2,7 @@
 
 ## Resumen
 
-waifu-scorer-moas (código interno `ws_moas`) es un modelo de puntuación estética de imágenes orientado a ilustraciones de estilo anime, desarrollado por el usuario Eugeoter como derivado del proyecto waifu-scorer. No es un modelo generativo ni un LLM: es un cabezal de regresión ordinal que, a partir de características extraídas por un backbone CLIP ViT-L/14 congelado, produce una puntuación de preferencia estética en el rango 0–1. El modelo se publica en HuggingFace con licencia no especificada y sin descargas ni interacciones registradas en el momento de la consulta.
+waifu-scorer-moas (código interno `ws_moas`) es un modelo de puntuación estética de imágenes orientado a ilustraciones de estilo anime, desarrollado por el usuario Eugeoter como derivado del proyecto waifu-scorer. No es un modelo generativo ni un LLM: es un cabezal de regresión ordinal que, a partir de características extraídas por un backbone CLIP ViT-L/14 congelado, produce una puntuación de preferencia estética en el rango 0–1. El modelo se publica en Hugging Face con licencia no especificada y sin descargas ni interacciones registradas en el momento de la consulta.
 
 La arquitectura combina la extracción de características de CLIP sobre la imagen completa y cuatro vistas locales, que se concatenan y se pasan por un MLP pequeño con una cabeza de siete niveles ordinales. El checkpoint publicado corresponde al epoch 135 de entrenamiento, seleccionado por un MAE macro de validación de 0,1086 sobre 7.650 muestras. Los pesos safetensors ocupan apenas 2.033.937 parámetros, lo que lo convierte en un componente ligero que puede ejecutarse en CPU o en GPUs de consumo.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 - El cabezal pesa 2.033.937 parámetros (unos pocos MB en safetensors); el coste real está en el backbone CLIP ViT-L/14, de aproximadamente 933 MB de pesos.
 - VRAM estimada para inferencia: en torno a 2–3 GB en FP16 contando backbone y activaciones para una imagen; en CPU es viable con latencias de décimas de segundo por imagen.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 funcionan sin problema. Cabe en GPUs de consumo y en iGPU con suficiente memoria compartida.
-- Despliegue: el repositorio incluye un `app.py` con demo Gradio local y un Space en HuggingFace; la integración es vía PyTorch y `huggingface_hub.snapshot_download`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Despliegue: el repositorio incluye un `app.py` con demo Gradio local y un Space en Hugging Face; la integración es vía PyTorch y `huggingface_hub.snapshot_download`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles de forma oficial; por el tamaño del backbone CLIP ViT-L/14, el cuello de botella es la pasada del ViT, no el MLP.
 - La primera ejecución descarga CLIP ViT-L/14 desde la URL oficial de OpenAI (~933 MB) y verifica su SHA-256; se puede evitar la descarga apuntando `WS_MOAS_CLIP_PATH` a una copia local idéntica.
 
@@ -76,7 +76,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 | Modelo | Parámetros del cabezal | Backbone | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| waifu-scorer-moas | 2.033.937 | CLIP ViT-L/14 congelado | Imagen + 4 vistas locales | no disponible | HuggingFace, 0 descargas |
+| waifu-scorer-moas | 2.033.937 | CLIP ViT-L/14 congelado | Imagen + 4 vistas locales | no disponible | Hugging Face, 0 descargas |
 | waifu-scorer (original) | no disponible | no disponible | no disponible | no disponible | referenciado como proyecto base |
 | NIMA | no disponible | no disponible | imagen completa | no disponible | público, uso académico extendido |
 | LAION aesthetic predictor | no disponible | CLIP ViT-L/14 | imagen completa | no disponible | público |
@@ -95,6 +95,6 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eugeoter/waifu-scorer-moas
-- Demo Gradio en HuggingFace Spaces: https://huggingface.co/spaces/Eugeoter/waifu-scorer-moas
+- Modelo en Hugging Face: https://huggingface.co/Eugeoter/waifu-scorer-moas
+- Demo Gradio en Hugging Face Spaces: https://huggingface.co/spaces/Eugeoter/waifu-scorer-moas
 - Repositorio oficial de CLIP (OpenAI): https://github.com/openai/CLIP

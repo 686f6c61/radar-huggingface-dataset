@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la informacion disponible mas al
 
 | Modelo | Tipo | Clases | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| synthet/bird-detect-v0 (v1) | YOLO11n ajustado | 1 (`bird`) | no disponible (base yolo11n) | imagen, imgsz 640 | AGPL-3.0 | HuggingFace |
-| ultralytics/yolo11n | YOLO11n COCO | 80 | no disponible en la informacion | imagen, imgsz 640 | AGPL-3.0 | Ultralytics / HuggingFace |
+| synthet/bird-detect-v0 (v1) | YOLO11n ajustado | 1 (`bird`) | no disponible (base yolo11n) | imagen, imgsz 640 | AGPL-3.0 | Hugging Face |
+| ultralytics/yolo11n | YOLO11n COCO | 80 | no disponible en la informacion | imagen, imgsz 640 | AGPL-3.0 | Ultralytics / Hugging Face |
 | RTMDet-tiny COCO (maestro usado por el autor) | Detector de una etapa | 80 | no disponible en la informacion | imagen | Apache-2.0 | OpenMMLab |
-| synthet/eye-pose-v0 | Modelo complementario del mismo autor | keypoints oculares | no disponible | imagen | no disponible | HuggingFace |
+| synthet/eye-pose-v0 | Modelo complementario del mismo autor | keypoints oculares | no disponible | imagen | no disponible | Hugging Face |
 
 La comparacion con detectores de proposito general (YOLO11n COCO, RTMDet-tiny) es la mas pertinente: bird-detect-v0 ofrece una clase unica pero ajustada al dominio de fauna, mientras que los modelos COCO cubren 80 clases con menor especializacion. No se dispone de datos de rendimiento de los alternativos en la informacion proporcionada para una comparacion cuantitativa.
 
@@ -101,7 +101,7 @@ La comparacion con detectores de proposito general (YOLO11n COCO, RTMDet-tiny) e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/synthet/bird-detect-v0
+- Modelo en Hugging Face: https://huggingface.co/synthet/bird-detect-v0
 - Modelo complementario eye-pose-v0: https://huggingface.co/synthet/eye-pose-v0
 - Repositorio image-scoring-model: https://github.com/synthet/image-scoring-model
 - Modelo base YOLO11n: https://huggingface.co/ultralytics/yolo11n

@@ -94,8 +94,8 @@ No se dispone de datos de WER para Whisper tiny o base en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace (esta conversion GGUF): https://huggingface.co/tryambientai/moonshine-tiny-gguf
-- Modelo base en HuggingFace: https://huggingface.co/UsefulSensors/moonshine-tiny
+- Hugging Face (esta conversion GGUF): https://huggingface.co/tryambientai/moonshine-tiny-gguf
+- Modelo base en Hugging Face: https://huggingface.co/UsefulSensors/moonshine-tiny
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Pagina del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/moonshine-tiny.md
 - Paper Moonshine (arXiv:2410.15608): https://arxiv.org/abs/2410.15608

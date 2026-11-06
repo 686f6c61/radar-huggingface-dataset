@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SpeakerKit speaker models es un paquete de modelos de diarización de hablantes empaquetados en formato Core ML para su ejecución nativa en dispositivos Apple. Lo desarrolla Argmax (argmaxinc) y esta ficha documenta el espejo publicado por Ordagrant en HuggingFace, que reproduce sin cambios la revision `556fc52a13327837688f02289457cded017802e9` del repositorio original. El paquete incluye los tres componentes que SpeakerKit utiliza para segmentar y atribuir voces: un segmenter, un embedder y un proyector PLDA, derivados de los modelos pyannote 3.
+SpeakerKit speaker models es un paquete de modelos de diarización de hablantes empaquetados en formato Core ML para su ejecución nativa en dispositivos Apple. Lo desarrolla Argmax (argmaxinc) y esta ficha documenta el espejo publicado por Ordagrant en Hugging Face, que reproduce sin cambios la revision `556fc52a13327837688f02289457cded017802e9` del repositorio original. El paquete incluye los tres componentes que SpeakerKit utiliza para segmentar y atribuir voces: un segmenter, un embedder y un proyector PLDA, derivados de los modelos pyannote 3.
 
-El modelo resuelve el problema de la diarización de hablantes (determinar quién habla y cuándo en un audio) en el ecosistema de Apple, evitando depender de frameworks de Python en tiempo de inferencia. Es relevante porque permite integrar diarización en aplicaciones macOS/iOS con aceleración por Core ML y sin conexión a servicios externos. El espejo existe para que la aplicación Ordagrant descargue sus dependencias desde su propia cuenta de HuggingFace.
+El modelo resuelve el problema de la diarización de hablantes (determinar quién habla y cuándo en un audio) en el ecosistema de Apple, evitando depender de frameworks de Python en tiempo de inferencia. Es relevante porque permite integrar diarización en aplicaciones macOS/iOS con aceleración por Core ML y sin conexión a servicios externos. El espejo existe para que la aplicación Ordagrant descargue sus dependencias desde su propia cuenta de Hugging Face.
 
 La información disponible es muy escasa: no se publican parámetros, contexto, idiomas ni benchmarks. La model card solo describe el origen, la licencia y el mecanismo de verificación de integridad.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SpeakerKit speaker models (este) | Diarización pyannote 3 convertida | Core ML | CC-BY-4.0 | HuggingFace (espejo de argmaxinc/speakerkit-coreml) |
-| pyannote 3 original | Diarización | PyTorch | no disponible en la información | HuggingFace (pyannote) |
+| SpeakerKit speaker models (este) | Diarización pyannote 3 convertida | Core ML | CC-BY-4.0 | Hugging Face (espejo de argmaxinc/speakerkit-coreml) |
+| pyannote 3 original | Diarización | PyTorch | no disponible en la información | Hugging Face (pyannote) |
 | WhisperX con diarización | ASR + diarización | PyTorch | no disponible en la información | Repositorio abierto |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa entre estas alternativas.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/Ordagrant/speakerkit-coreml
+- Hugging Face (espejo): https://huggingface.co/Ordagrant/speakerkit-coreml
 - Repositorio original: https://huggingface.co/argmaxinc/speakerkit-coreml
 - Proyecto Ordagrant: https://github.com/svenclaesson/ordagrant
 - Argmax: https://github.com/argmaxinc

@@ -94,11 +94,11 @@ La comparación directa con alternativas solo es posible frente al modelo base, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep85/Qwen2.5-1.5B-Instruct-banking-support-lora
+- Modelo en Hugging Face: https://huggingface.co/sandeep85/Qwen2.5-1.5B-Instruct-banking-support-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/LocalLLaMA/datainventor-support-banking
 - DataInventor (space de generación de datasets): https://huggingface.co/spaces/LocalLLaMA/data-inventor
 - Repositorio Ellora: https://github.com/codelion/ellora
 - Notebook de la receta 7: https://colab.research.google.com/github/codelion/ellora/blob/main/Ellora_Recipe_7_Zero_to_Fine_Tuned_with_an_Invented_Dataset.ipynb
 
-La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; los enlaces anteriores proceden de la model card y del repositorio de HuggingFace.
+La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; los enlaces anteriores proceden de la model card y del repositorio de Hugging Face.

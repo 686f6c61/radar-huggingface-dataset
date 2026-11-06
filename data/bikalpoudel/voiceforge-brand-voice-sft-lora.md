@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bikalpoudel/voiceforge-brand-voice-sft-lora` es un adaptador LoRA (Low-Rank Adaptation) orientado a la generación de texto conversacional, publicado en HuggingFace por el usuario bikalpoudel. Según los metadatos del repositorio, está construido sobre la arquitectura Qwen2 y ha sido entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de HuggingFace. El nombre sugiere que su propósito es ajustar un modelo base para generar una "voz de marca" específica, probablemente para aplicaciones de marketing, atención al cliente o contenido personalizado.
+El modelo `bikalpoudel/voiceforge-brand-voice-sft-lora` es un adaptador LoRA (Low-Rank Adaptation) orientado a la generación de texto conversacional, publicado en Hugging Face por el usuario bikalpoudel. Según los metadatos del repositorio, está construido sobre la arquitectura Qwen2 y ha sido entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de Hugging Face. El nombre sugiere que su propósito es ajustar un modelo base para generar una "voz de marca" específica, probablemente para aplicaciones de marketing, atención al cliente o contenido personalizado.
 
 El repositorio contiene un único archivo de pesos en formato safetensors con un tamaño de 7,9 GB, lo que corresponde a los parámetros totales del modelo base más el adaptador. Sin embargo, la model card es una plantilla automática sin información técnica detallada: no se especifican los datos de entrenamiento, hiperparámetros, ni el modelo base exacto. La relevancia actual de este modelo es limitada debido a la ausencia de documentación y a que no se han publicado resultados de evaluación, aunque podría servir como ejemplo de fine-tuning con LoRA sobre Qwen2 para tareas de generación de texto.
 
@@ -27,7 +27,7 @@ La arquitectura subyacente es Qwen2, un transformer decoder-only con atención c
 
 - Generación de texto conversacional: el modelo está diseñado para producir respuestas de texto en un tono o estilo de marca específico, según su nombre.
 - Fine-tuning con LoRA: al ser un adaptador, puede combinarse con el modelo base Qwen2 para ajustar el comportamiento sin modificar los pesos completos.
-- Compatible con pipelines de transformers: se puede cargar con la API estándar de HuggingFace para generación de texto.
+- Compatible con pipelines de transformers: se puede cargar con la API estándar de Hugging Face para generación de texto.
 - Soporte para inferencia con cuantización 4-bit, lo que reduce los requisitos de memoria.
 
 No se dispone de información sobre capacidades adicionales como tool calling, razonamiento multi-paso, visión o multilingüismo.
@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bikalpoudel/voiceforge-brand-voice-sft-lora
+- Modelo en Hugging Face: https://huggingface.co/bikalpoudel/voiceforge-brand-voice-sft-lora
 - Dataset asociado (posiblemente relacionado): https://huggingface.co/datasets/bikalpoudel/voiceforge-brand-voice-sft
 - No se han encontrado papers, repositorios adicionales ni demos específicos para este modelo.

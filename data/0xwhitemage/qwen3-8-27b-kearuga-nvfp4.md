@@ -92,7 +92,7 @@ La comparativa muestra que la cuantizacion Kearuga se situa muy cerca del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-NVFP4
 - Drafter DFlash2: https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2-FP8-E4M3
 - Repositorio GitHub con recetas de despliegue: https://github.com/0xWhiteMage/Qwen3.8-27B-Kearuga-SGLang-DGX-Spark-DFlash2
 - Overlay SGLang para DGX Spark: https://github.com/0xWhiteMage/Qwen3.8-27B-SGLang-Spark/tree/main

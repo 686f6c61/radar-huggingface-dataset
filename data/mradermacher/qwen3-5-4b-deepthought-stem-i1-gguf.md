@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-DeepThought-STEM-i1-GGUF (este) | 4B (según nombre) | no disponible | no disponible | GGUF | HuggingFace, 0 descargas |
+| Qwen3.5-4B-DeepThought-STEM-i1-GGUF (este) | 4B (según nombre) | no disponible | no disponible | GGUF | Hugging Face, 0 descargas |
 | Qwen3.5-4B (base, si existe publicación oficial) | 4B | no disponible | no disponible | no disponible | no verificada en la información |
 | Llama 3.2 3B Instruct | 3B | 128K | Llama 3.2 Community License | safetensors, GGUF | Amplia disponibilidad |
 | Phi-3.5-mini | 3,8B | 128K | MIT | safetensors, GGUF | Amplia disponibilidad |
@@ -92,6 +92,6 @@ Las filas de Llama 3.2 3B y Phi-3.5-mini se incluyen como referencia de categor�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-4B-DeepThought-STEM-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-DeepThought-STEM-i1-GGUF
 - Modelo original cuantizado: https://huggingface.co/xtools-at/Qwen3.5-4B-DeepThought-STEM
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l3_remove40_swapgapiter_b010_r05` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace, derivado de `meta-llama/Meta-Llama-3-8B-Instruct`. No es un modelo conversacional de propósito general, sino un artefacto experimental: una celda concreta de una rejilla de experimentos que estudia cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. El checkpoint parte de una versión comprimida con SVD-LLM al 60,0 % de los parámetros densos (40,02 % eliminados) y aplica después 5 de las 10 rondas previstas de una sustitución iterativa de parámetros neutra respecto al presupuesto, seleccionada por la regla `gap_iter`.
+`svd-safety-l3_remove40_swapgapiter_b010_r05` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face, derivado de `meta-llama/Meta-Llama-3-8B-Instruct`. No es un modelo conversacional de propósito general, sino un artefacto experimental: una celda concreta de una rejilla de experimentos que estudia cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. El checkpoint parte de una versión comprimida con SVD-LLM al 60,0 % de los parámetros densos (40,02 % eliminados) y aplica después 5 de las 10 rondas previstas de una sustitución iterativa de parámetros neutra respecto al presupuesto, seleccionada por la regla `gap_iter`.
 
 La relevancia de este modelo es metodológica, no de producto. Cuantifica el compromiso entre seguridad y utilidad bajo compresión: la propia model card advierte de que varias ramas de la rejilla están deliberadamente degradadas en seguridad respecto al modelo original y que la compresión por sí sola eleva la tasa de éxito de ataque. Este checkpoint concreto reporta un ASR de 0,0150 en AdvBench y 0,1100 en StrongREJECT (juzgados con HarmBench) junto con una tasa de sobrerrechazo macro de 0,2649 medida con WildGuard.
 
@@ -85,9 +85,9 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove40_swapgapiter_b010_r05 | 8,03 mil millones (fraccion densa 0,5998) | no disponible (base: 8.192 tokens) | Llama 3 Community License | HuggingFace, safetensors | Solo metricas de seguridad (AdvBench 0,0150; StrongREJECT 0,1100; sobrerrechazo 0,2649) |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 mil millones | 8.192 tokens | Llama 3 Community License | HuggingFace, safetensors | Ampliamente evaluado; sin valores reproducidos en esta ficha |
-| Otros checkpoints del mismo grid de Jeesup | 8,03 mil millones (variantes de presupuesto y regla) | no disponible | Llama 3 Community License | HuggingFace | Sin datos en la informacion disponible |
+| svd-safety-l3_remove40_swapgapiter_b010_r05 | 8,03 mil millones (fraccion densa 0,5998) | no disponible (base: 8.192 tokens) | Llama 3 Community License | Hugging Face, safetensors | Solo metricas de seguridad (AdvBench 0,0150; StrongREJECT 0,1100; sobrerrechazo 0,2649) |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 mil millones | 8.192 tokens | Llama 3 Community License | Hugging Face, safetensors | Ampliamente evaluado; sin valores reproducidos en esta ficha |
+| Otros checkpoints del mismo grid de Jeesup | 8,03 mil millones (variantes de presupuesto y regla) | no disponible | Llama 3 Community License | Hugging Face | Sin datos en la informacion disponible |
 
 No se dispone de modelos directamente comparables con benchmarks públicos en la información proporcionada. La comparación honesta es contra el modelo base sin comprimir, y el propio autor indica que al menos algunas celdas de la rejilla están degradadas en seguridad respecto a él, pero no se aportan las cifras del base para cuantificar la diferencia.
 
@@ -107,7 +107,7 @@ No se dispone de modelos directamente comparables con benchmarks públicos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r05
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3 y politica de uso: incluidas en el repositorio del modelo (`LICENSE` y `USE_POLICY.md`)
 - Paper de SVD-LLM (tecnica de compresion referenciada por el autor): no disponible en la informacion proporcionada

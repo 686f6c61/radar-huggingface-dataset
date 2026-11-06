@@ -21,7 +21,7 @@ La relevancia de este modelo reside en su especialización temática, aunque su 
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
-Nota: el valor de 528.384 parámetros totales proviene del campo "Parametros totales (dato real, safetensors)" de la ficha de HuggingFace, pero es claramente inferior al tamaño esperado para un modelo de 7B. Es posible que se refiera a los parámetros del adaptador LoRA o a un subconjunto. El tamaño del repositorio (14.6 GB) sugiere que se trata de un modelo completo en precisión FP16/BF16, por lo que los parámetros reales deberían rondar los 7 mil millones. Dado que el dato es ambiguo, se indica tal cual sin interpretación adicional.
+Nota: el valor de 528.384 parámetros totales proviene del campo "Parametros totales (dato real, safetensors)" de la ficha de Hugging Face, pero es claramente inferior al tamaño esperado para un modelo de 7B. Es posible que se refiera a los parámetros del adaptador LoRA o a un subconjunto. El tamaño del repositorio (14.6 GB) sugiere que se trata de un modelo completo en precisión FP16/BF16, por lo que los parámetros reales deberían rondar los 7 mil millones. Dado que el dato es ambiguo, se indica tal cual sin interpretación adicional.
 
 ## Arquitectura y entrenamiento
 
@@ -73,9 +73,9 @@ No se dispone de datos comparativos específicos de este fine-tune frente a otra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed4
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed4
 - Modelo base (unsloth/Olmo-3-7B-Instruct): https://huggingface.co/unsloth/Olmo-3-7B-Instruct
-- Página de OLMo-3 (AI2): no se ha encontrado en la información proporcionada, pero el modelo base está disponible en HuggingFace.
+- Página de OLMo-3 (AI2): no se ha encontrado en la información proporcionada, pero el modelo base está disponible en Hugging Face.
 - Documentación de Unsloth: https://github.com/unslothai/unsloth
 - Documentación de TRL: https://huggingface.co/docs/trl/index
 

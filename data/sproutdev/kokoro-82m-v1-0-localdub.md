@@ -16,7 +16,7 @@ Con un tamano de repositorio de 0,3 GB y 82 millones de parametros heredados del
 | Parametros totales | 82 millones (segun la denominacion del modelo base) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica; la entrada de texto es `input_ids` de tipo int64 con forma `[1, N]`, donde N es la longitud de la secuencia de tokens |
-| Tipos de cuantizacion | No especificados en la model card; la entrada `style` es float32 `[1, 256]` y la salida es float32. El tag de HuggingFace indica `base_model:quantized:hexgrad/Kokoro-82M` |
+| Tipos de cuantizacion | No especificados en la model card; la entrada `style` es float32 `[1, 256]` y la salida es float32. El tag de Hugging Face indica `base_model:quantized:hexgrad/Kokoro-82M` |
 | Idiomas soportados | No disponible; la model card no declara idiomas y el repositorio no incluye tags de idioma |
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX (dos ficheros: `kokoro-a.onnx` y `kokoro-b.onnx`) |
@@ -97,7 +97,7 @@ No se dispone de datos sobre otros modelos de texto a voz de tamano comparable e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SproutDev/kokoro-82m-v1.0-localdub
+- Modelo en Hugging Face: https://huggingface.co/SproutDev/kokoro-82m-v1.0-localdub
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Conversion ONNX de origen: onnx-community/Kokoro-82M-v1.0-ONNX (commit `1939ad2a8e416c0acfeecc08a694d14ef25f2231`, ruta `onnx/model.onnx`)
 - Repositorio del proyecto que lo utiliza: https://github.com/dev-matheus-guilherme/localdub-auxiliar

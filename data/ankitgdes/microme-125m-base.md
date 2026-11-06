@@ -89,6 +89,6 @@ MicroMe-125M-Base es comparable en tamano a GPT-2 y Pythia, pero con un volumen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ankitgdes/microme-125m-base
+- Modelo en Hugging Face: https://huggingface.co/Ankitgdes/microme-125m-base
 - Version chat + RAG: https://huggingface.co/Ankitgdes/microme-125m
 - Repositorio de codigo y entrenamiento: https://github.com/ankit-rawani/microme

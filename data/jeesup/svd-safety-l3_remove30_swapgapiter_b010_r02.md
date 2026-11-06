@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks de capacidades generales (MMLU, Hum
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove30_swapgapiter_b010_r02 | 8.030 millones (0,6999 del denso original) | 8.192 tokens (heredado) | Llama 3 Community License | HuggingFace, transformers, TGI | Artefacto de investigación con 2 de 10 rondas de swaps aplicadas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030 millones | 8.192 tokens | Llama 3 Community License | HuggingFace, transformers, TGI, vLLM | Modelo base sin comprimir del que deriva este checkpoint |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, transformers, TGI, vLLM | Alternativa de la misma familia con contexto extendido |
-| Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.000 tokens | Apache 2.0 | HuggingFace, transformers, vLLM, llama.cpp (GGUF oficial) | Alternativa de tamaño similar con licencia permisiva y cuantizaciones publicadas |
+| svd-safety-l3_remove30_swapgapiter_b010_r02 | 8.030 millones (0,6999 del denso original) | 8.192 tokens (heredado) | Llama 3 Community License | Hugging Face, transformers, TGI | Artefacto de investigación con 2 de 10 rondas de swaps aplicadas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030 millones | 8.192 tokens | Llama 3 Community License | Hugging Face, transformers, TGI, vLLM | Modelo base sin comprimir del que deriva este checkpoint |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, transformers, TGI, vLLM | Alternativa de la misma familia con contexto extendido |
+| Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.000 tokens | Apache 2.0 | Hugging Face, transformers, vLLM, llama.cpp (GGUF oficial) | Alternativa de tamaño similar con licencia permisiva y cuantizaciones publicadas |
 
 No se dispone de datos de benchmarks comparativos entre estas alternativas en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3 y política de uso: incluidos como `LICENSE` y `USE_POLICY.md` en el repositorio del modelo
 - Paper de SVD-LLM (referencia del método de compresión citado en la model card): no disponible en la información proporcionada

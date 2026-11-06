@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ShellderMH es un modelo publicado en HuggingFace por el usuario Ryanham1lton (identificado en la plataforma como Ryan James Hamilton) bajo licencia Creative Commons Attribution 4.0. Se trata de un repositorio con un tamano aproximado de 0,1 GB, creado el 29 de septiembre de 2026 y actualizado el mismo dia, sin descargas ni "likes" registrados en el momento de la consulta. La model card asociada no contiene mas que la declaracion de licencia, por lo que no hay informacion publica sobre arquitectura, datos de entrenamiento o capacidades.
+ShellderMH es un modelo publicado en Hugging Face por el usuario Ryanham1lton (identificado en la plataforma como Ryan James Hamilton) bajo licencia Creative Commons Attribution 4.0. Se trata de un repositorio con un tamano aproximado de 0,1 GB, creado el 29 de septiembre de 2026 y actualizado el mismo dia, sin descargas ni "likes" registrados en el momento de la consulta. La model card asociada no contiene mas que la declaracion de licencia, por lo que no hay informacion publica sobre arquitectura, datos de entrenamiento o capacidades.
 
 El nombre del repositorio sugiere una posible relacion con el universo Pokemon (Shellder), y el autor mantiene otros repositorios con nomenclatura similar, como GolemMH, lo que apunta a una familia de modelos experimentales o tematicos. Sin embargo, no existe documentacion que confirme esta hipotesis ni que describa el proposito del modelo.
 
@@ -89,8 +89,8 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/ShellderMH
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/ShellderMH
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton
 - Otro repositorio del mismo autor (GolemMH): https://huggingface.co/Ryanham1lton/GolemMH
 - Perfil del autor en Storyteller.ai: https://storyteller.ai/profile/ryanham1lton
 

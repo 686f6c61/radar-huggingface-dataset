@@ -86,7 +86,7 @@ La principal diferencia es que este proyecto elimina la necesidad de entrenar un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LeoMaxwell/vlm-twin-spec-decoding
+- Repositorio Hugging Face: https://huggingface.co/LeoMaxwell/vlm-twin-spec-decoding
 - Paper SpecVLM (arXiv): https://arxiv.org/abs/2509.11815
 - SpecVLM HTML: https://arxiv.org/html/2509.11815v1
 - Documentación de decodificación especulativa en vLLM: https://docs.vllm.ai/en/latest/features/speculative_decoding/

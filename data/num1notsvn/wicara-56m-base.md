@@ -70,7 +70,7 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/num1notsvn/wicara-56m-base
+- Hugging Face: https://huggingface.co/num1notsvn/wicara-56m-base
 - Versión chat: https://huggingface.co/num1notsvn/wicara-56m-chat
 - GitHub: https://github.com/bagusardin25/WicaraLLM
 - LinkedIn: https://www.linkedin.com/posts/bagusardin27_github-bagusardin25wicarallm-an-indonesian-activity-7496807012455067648-FwUo

@@ -63,7 +63,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 ## Enlaces
 
-- Repo HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/MiniCPM5-2B-SFT-Pashto-GGUF
+- Repo Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/MiniCPM5-2B-SFT-Pashto-GGUF
 - Modelo base (safetensors): https://huggingface.co/nassimjp/MiniCPM5-2B-SFT-Pashto
 - MiniCPM5-2B-SFT original (OpenBMB): https://huggingface.co/openbmb/MiniCPM5-2B-SFT
 - Repo GitHub de MiniCPM: https://github.com/OpenBMB/MiniCPM

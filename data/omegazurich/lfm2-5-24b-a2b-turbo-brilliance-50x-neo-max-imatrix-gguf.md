@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-24B-A2B (base) | 23,97 B | 2 B | no disponible | LFM 1.0 | HuggingFace |
-| Esta publicacion (GGUF comunitario) | 23,97 B | 2 B | no disponible | LFM 1.0 | HuggingFace, 0 descargas |
+| LFM2.5-24B-A2B (base) | 23,97 B | 2 B | no disponible | LFM 1.0 | Hugging Face |
+| Esta publicacion (GGUF comunitario) | 23,97 B | 2 B | no disponible | LFM 1.0 | Hugging Face, 0 descargas |
 | Alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre esta publicacion y otros modelos de la misma categoria, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre esta publicacion y otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/omegazurich/LFM2.5-24B-A2B-Turbo-Brilliance-50X-NEO-MAX-Imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/omegazurich/LFM2.5-24B-A2B-Turbo-Brilliance-50X-NEO-MAX-Imatrix-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Paper referenciado en los tags: arxiv:2511.23404
 - Modelo del mismo autor citado en la model card: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF

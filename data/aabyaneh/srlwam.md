@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Srlwam es un artefacto de robótica publicado en HuggingFace por Amin Abyaneh, doctorando en IA y robótica en McGill y Mila, centrado en la manipulación robótica con transferencia sim2real. El modelo se acompaña de un dataset homónimo descrito como un conjunto de datos sim-to-real para la tarea de apilado de dos cubos con el brazo robótico Franka Panda, con datos de simulación generados en Isaac Lab y datos reales capturados en una celda robótica física. El entrenamiento se enmarca en el aprendizaje por imitación (imitation learning).
+Srlwam es un artefacto de robótica publicado en Hugging Face por Amin Abyaneh, doctorando en IA y robótica en McGill y Mila, centrado en la manipulación robótica con transferencia sim2real. El modelo se acompaña de un dataset homónimo descrito como un conjunto de datos sim-to-real para la tarea de apilado de dos cubos con el brazo robótico Franka Panda, con datos de simulación generados en Isaac Lab y datos reales capturados en una celda robótica física. El entrenamiento se enmarca en el aprendizaje por imitación (imitation learning).
 
-Su relevancia radica en que aborda uno de los cuellos de botella clásicos del robot learning: la brecha entre simulación y mundo real. Publicar de forma conjunta el modelo y el dataset emparejado facilita la reproducibilidad de experimentos en manipulación de precisión. Según los metadatos, el repositorio pesa 726,4 GB, está distribuido en formato safetensors y el acceso es restringido (gated): hay que aceptar condiciones en HuggingFace antes de descargarlo.
+Su relevancia radica en que aborda uno de los cuellos de botella clásicos del robot learning: la brecha entre simulación y mundo real. Publicar de forma conjunta el modelo y el dataset emparejado facilita la reproducibilidad de experimentos en manipulación de precisión. Según los metadatos, el repositorio pesa 726,4 GB, está distribuido en formato safetensors y el acceso es restringido (gated): hay que aceptar condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones técnicas
 
@@ -78,7 +78,7 @@ Srlwam se diferencia de los anteriores en su alcance: no es un modelo generalist
 
 - Alcance muy estrecho: la política está asociada a una única tarea (apilado de dos cubos) y un único robot (Franka Panda); no hay evidencia pública de generalización a otras tareas u objetos.
 - Artefacto de investigación temprano: 0 descargas, 0 likes y ausencia de model card detallada; la documentación pública es mínima y puede cambiar.
-- Acceso restringido: hay que aceptar condiciones en HuggingFace, lo que añade fricción para equipos y pipelines automatizados.
+- Acceso restringido: hay que aceptar condiciones en Hugging Face, lo que añade fricción para equipos y pipelines automatizados.
 - Licencia por componentes: la etiqueta general es license:other con licencia component-specific (una vista menciona bsd-3-clause); antes de cualquier uso comercial hay que revisar los términos de cada componente, incluido el dataset.
 - Brecha sim2real residual: aunque el enfoque sim2real mitiga el problema, no se han publicado tasas de éxito reales, por lo que el rendimiento en hardware físico debe verificarse de forma independiente.
 - No es un modelo de lenguaje: carece de capacidades de NLP, tool calling o agentes; no es sustituto de un LLM ni de un VLA generalista.
@@ -87,7 +87,7 @@ Srlwam se diferencia de los anteriores en su alcance: no es un modelo generalist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aabyaneh/srlwam
-- Dataset asociado en HuggingFace: https://huggingface.co/datasets/aabyaneh/srlwam
+- Modelo en Hugging Face: https://huggingface.co/aabyaneh/srlwam
+- Dataset asociado en Hugging Face: https://huggingface.co/datasets/aabyaneh/srlwam
 - Ficha del dataset en Claru (Physical AI Dataset): https://claru.ai/datasets/aabyaneh-srlwam
 - Página personal del autor (Amin Abyaneh, McGill/Mila): https://aminabyaneh.github.io/

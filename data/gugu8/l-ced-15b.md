@@ -2,7 +2,7 @@
 
 ## Resumen
 
-L-CED-15B es un modelo publicado en HuggingFace por el usuario Gugu8 bajo identificador `Gugu8/L-CED-15B`. Según su propia model card, se trata de un modelo de arquitectura novedosa orientada a "agentic coding", descrita como un encoder-decoder causal con decodificador en bucle (recurrent depth) y enrutamiento tipo mezcla de expertos, con 15.000 millones de parámetros totales y entre 2.000 y 3.500 millones activos por token, y una ventana de contexto declarada de 1 millón de tokens "por etapas".
+L-CED-15B es un modelo publicado en Hugging Face por el usuario Gugu8 bajo identificador `Gugu8/L-CED-15B`. Según su propia model card, se trata de un modelo de arquitectura novedosa orientada a "agentic coding", descrita como un encoder-decoder causal con decodificador en bucle (recurrent depth) y enrutamiento tipo mezcla de expertos, con 15.000 millones de parámetros totales y entre 2.000 y 3.500 millones activos por token, y una ventana de contexto declarada de 1 millón de tokens "por etapas".
 
 La información disponible es extremadamente escasa: la model card apenas ocupa unas pocas líneas, remite a un fichero `ARCHITECTURE.md` que no se ha proporcionado y no incluye resultados de benchmarks, licencia, idiomas soportados ni formatos de pesos. El repositorio ocupa 36,5 GB y acumula 62 descargas y 0 likes en la fecha de consulta (metadatos fechados el 22 y el 23 de septiembre de 2026). No hay pipeline declarado.
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha describe las afirmaciones del autor tal como aparecen, mar
 | Longitud de contexto | 1M tokens "staged" (declarado, sin detalle de implementación) |
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la ficha de HuggingFace no la especifica) |
+| Licencia | no disponible (la ficha de Hugging Face no la especifica) |
 | Formato de pesos | no disponible (el repositorio ocupa 36,5 GB, compatible con pesos en 16 bits, pero no se confirma el formato) |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No es posible establecer una comparativa fiable. No se dispone de datos de rendi
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gugu8/L-CED-15B | 15B totales, ~2-3,5B activos (declarado) | 1M (declarado, "staged") | no disponible | no disponible | Repositorio HuggingFace, 62 descargas |
+| Gugu8/L-CED-15B | 15B totales, ~2-3,5B activos (declarado) | 1M (declarado, "staged") | no disponible | no disponible | Repositorio Hugging Face, 62 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No es posible establecer una comparativa fiable. No se dispone de datos de rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gugu8/L-CED-15B
+- Hugging Face: https://huggingface.co/Gugu8/L-CED-15B
 - `ARCHITECTURE.md`: referenciado en la model card, no disponible en la información proporcionada.
 - Paper, blog, repositorio de código o demo: no disponibles.

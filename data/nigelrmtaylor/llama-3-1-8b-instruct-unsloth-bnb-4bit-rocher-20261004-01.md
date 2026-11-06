@@ -6,7 +6,7 @@ Este repositorio contiene un ajuste fino (finetune) del modelo Meta-Llama-3.1-8B
 
 El problema que resuelve es el de ofrecer un modelo conversacional de 8B listo para desplegar en entornos con recursos limitados, ya cuantizado a 4 bits en formato GGUF. Al partir de Llama 3.1 8B Instruct, hereda la arquitectura transformer decoder-only del modelo base, su ventana de contexto extendida y su orientacion multilingue, aunque no se documentan los detalles concretos del dataset de ajuste ni los idiomas finales soportados por este finetune.
 
-Es relevante ahora como ejemplo del flujo de trabajo habitual en la comunidad open source: partir de un modelo base de Meta, ajustarlo con Unsloth (que acelera el entrenamiento y la conversion a GGUF) y publicarlo en HuggingFace. No obstante, la ausencia de licencia declarada, de idiomas y de resultados de evaluacion limita seriamente su uso en produccion sin una validacion previa.
+Es relevante ahora como ejemplo del flujo de trabajo habitual en la comunidad open source: partir de un modelo base de Meta, ajustarlo con Unsloth (que acelera el entrenamiento y la conversion a GGUF) y publicarlo en Hugging Face. No obstante, la ausencia de licencia declarada, de idiomas y de resultados de evaluacion limita seriamente su uso en produccion sin una validacion previa.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ La comparacion con modelos de otros fabricantes (Mistral-7B-Instruct, Qwen2.5-7B
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/nigelrmtaylor/llama-3.1-8b-instruct-unsloth-bnb-4bit-rocher-20261004-01
+- Hugging Face (modelo): https://huggingface.co/nigelrmtaylor/llama-3.1-8b-instruct-unsloth-bnb-4bit-rocher-20261004-01
 - Unsloth (framework): https://github.com/unslothai/unsloth
 - Modelo base en Unsloth (4 bits): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-unsloth-bnb-4bit
 - Modelo base en Unsloth (sin cuantizar): https://huggingface.co/unsloth/Meta-Llama-3.1-8B

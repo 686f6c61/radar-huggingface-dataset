@@ -4,7 +4,7 @@
 
 `gpt2-persian-dutch-routed` es un modelo de lenguaje causal de tipo GPT-2, desarrollado por el usuario `aariciah` como resultado de un fine-tuning sobre un dataset no especificado. El modelo parte de la base `aariciah/gpt2-persian-20k-lc`, que a su vez es un modelo GPT-2 adaptado al persa. El nombre sugiere una exposicion adicional a datos en neerlandes o un mecanismo de routing, pero no se aporta informacion tecnica que lo confirme.
 
-Se trata de un modelo experimental, publicado en HuggingFace con etiquetas de `transformers` y `safetensors`. No se han publicado benchmarks ni evaluaciones de calidad. El tamano del modelo es de 114.794.496 parametros, lo que lo situa en el rango de las variantes pequenas de GPT-2. No se dispone de datos sobre la longitud de contexto, los idiomas soportados ni la licencia, por lo que su aplicacion en produccion es arriesgada sin una evaluacion previa.
+Se trata de un modelo experimental, publicado en Hugging Face con etiquetas de `transformers` y `safetensors`. No se han publicado benchmarks ni evaluaciones de calidad. El tamano del modelo es de 114.794.496 parametros, lo que lo situa en el rango de las variantes pequenas de GPT-2. No se dispone de datos sobre la longitud de contexto, los idiomas soportados ni la licencia, por lo que su aplicacion en produccion es arriesgada sin una evaluacion previa.
 
 ## Especificaciones tecnicas
 

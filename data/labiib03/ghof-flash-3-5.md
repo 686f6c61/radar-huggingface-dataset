@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ghof-flash-3.5 es un repositorio de modelo publicado en HuggingFace por el autor Labiib03 bajo licencia MIT. En el momento de la consulta, la informacion disponible es extremadamente limitada: el repositorio no incluye model card sustantiva (unicamente la declaracion de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y acumula cero descargas y cero likes, lo que sugiere que se trata de un artefacto recien creado o de un experimento sin publicacion acompanante.
+Ghof-flash-3.5 es un repositorio de modelo publicado en Hugging Face por el autor Labiib03 bajo licencia MIT. En el momento de la consulta, la informacion disponible es extremadamente limitada: el repositorio no incluye model card sustantiva (unicamente la declaracion de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y acumula cero descargas y cero likes, lo que sugiere que se trata de un artefacto recien creado o de un experimento sin publicacion acompanante.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni resultados de evaluacion. Tampoco se ha localizado documentacion tecnica, paper, blog o repositorio de codigo asociado al modelo. La busqueda web realizada devolvio exclusivamente resultados no relacionados (el juego en frances Pedantix), por lo que no aportan informacion util sobre el modelo.
 
@@ -76,6 +76,6 @@ No disponible. No se ha identificado ninguna caracteristica tecnica (tamano, arq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Labiib03/Ghof-flash-3.5
+- Hugging Face: https://huggingface.co/Labiib03/Ghof-flash-3.5
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados al modelo en la busqueda web realizada. Los resultados obtenidos correspondian a contenidos sin relacion con el modelo (el juego en frances Pedantix) y se han descartado por no ser pertinentes.

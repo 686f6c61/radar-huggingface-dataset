@@ -93,9 +93,9 @@ No se han publicado resultados en benchmarks estándar de la comunidad (MTEB, MI
 
 | Modelo | Parametros | Contexto | Dimensiones Matryoshka | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rebine/Qwen3.5-Embedding-0.8B | 752 M | no disponible | 128, 256, 512, 768, 1024 | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-Embedding-0.6B | 600 M aprox. | no disponible | sí | apache-2.0 | HuggingFace |
-| BGE-M3 (BAAI) | 568 M | 8192 | sí (hasta 1024) | MIT | HuggingFace |
+| Rebine/Qwen3.5-Embedding-0.8B | 752 M | no disponible | 128, 256, 512, 768, 1024 | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-Embedding-0.6B | 600 M aprox. | no disponible | sí | apache-2.0 | Hugging Face |
+| BGE-M3 (BAAI) | 568 M | 8192 | sí (hasta 1024) | MIT | Hugging Face |
 
 En los benchmarks publicados por el autor, el modelo supera al Qwen/Qwen3-Embedding-0.6B en dimensiones de 768 y 1024 en los tres conjuntos de evaluación, pero queda por debajo en dimensiones de 128 y 256 en los escenarios de memoria de OpenClaw. No se dispone de comparación directa con otros modelos de la categoría en la información proporcionada.
 
@@ -110,7 +110,7 @@ En los benchmarks publicados por el autor, el modelo supera al Qwen/Qwen3-Embedd
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rebine/Qwen3.5-Embedding-0.8B
+- Modelo en Hugging Face: https://huggingface.co/Rebine/Qwen3.5-Embedding-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/blob/main/LICENSE
 - Modelo comparado (Qwen3-Embedding-0.6B): https://huggingface.co/Qwen/Qwen3-Embedding-0.6B

@@ -95,7 +95,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-BF16-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-BF16-i1-GGUF
 - Modelo base: https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
 - Repositorio de cuantizaciones estaticas (incluye ficheros mmproj): https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-BF16-GGUF
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#Swift-Qwen3.8-27B-Uncensored-BF16-i1-GGUF

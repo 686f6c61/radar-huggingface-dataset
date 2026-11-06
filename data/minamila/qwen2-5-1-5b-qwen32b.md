@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio MinaMila/Qwen2.5-1.5B-Qwen32B es un adaptador de ajuste fino publicado en HuggingFace con la librería PEFT, construido sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se trata, por tanto, de un conjunto de pesos de adaptador (no de un modelo completo) que ocupa aproximadamente 0,1 GB en disco y que requiere cargar el modelo base de 1,5 mil millones de parámetros para poder ejecutarse. El autor figura como MinaMila y la única versión de framework documentada es PEFT 0.15.1. En el momento de la consulta acumula 0 descargas y 0 «likes», y no declara licencia, idiomas ni pipeline.
+El repositorio MinaMila/Qwen2.5-1.5B-Qwen32B es un adaptador de ajuste fino publicado en Hugging Face con la librería PEFT, construido sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se trata, por tanto, de un conjunto de pesos de adaptador (no de un modelo completo) que ocupa aproximadamente 0,1 GB en disco y que requiere cargar el modelo base de 1,5 mil millones de parámetros para poder ejecutarse. El autor figura como MinaMila y la única versión de framework documentada es PEFT 0.15.1. En el momento de la consulta acumula 0 descargas y 0 «likes», y no declara licencia, idiomas ni pipeline.
 
-El nombre del repositorio sugiere un ajuste derivado de Qwen2.5-32B (posiblemente destilación o transferencia de capacidades desde el modelo grande hacia el pequeño), pero la model card no confirma este extremo: es una plantilla estándar de HuggingFace sin rellenar, en la que todos los apartados relevantes (datos de entrenamiento, hiperparámetros, evaluación, licencia, uso previsto) aparecen como «More Information Needed». La única etiqueta arXiv presente, 1910.09700, corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la propia plantilla, y no a un paper sobre el modelo.
+El nombre del repositorio sugiere un ajuste derivado de Qwen2.5-32B (posiblemente destilación o transferencia de capacidades desde el modelo grande hacia el pequeño), pero la model card no confirma este extremo: es una plantilla estándar de Hugging Face sin rellenar, en la que todos los apartados relevantes (datos de entrenamiento, hiperparámetros, evaluación, licencia, uso previsto) aparecen como «More Information Needed». La única etiqueta arXiv presente, 1910.09700, corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la propia plantilla, y no a un paper sobre el modelo.
 
 Su relevancia potencial deriva del modelo base: Qwen2.5-1.5B-Instruct es un transformer denso decoder-only de 1,54 mil millones de parámetros con ventana de contexto de 32.768 tokens y licencia Apache 2.0, lo que lo hace apto para despliegue en hardware de consumo. Sin embargo, al no existir información sobre el procedimiento de ajuste ni evaluación alguna del adaptador, cualquier valoración de su calidad queda pendiente de verificación empírica por parte del usuario.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MinaMila/Qwen2.5-1.5B-Qwen32B (adaptador) | 1,54B (base) + adaptador | No disponible (base: 32.768 tokens) | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, con restricciones de uso |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | HuggingFace |
+| MinaMila/Qwen2.5-1.5B-Qwen32B (adaptador) | 1,54B (base) + adaptador | No disponible (base: 32.768 tokens) | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, con restricciones de uso |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos para el adaptador analizado, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 

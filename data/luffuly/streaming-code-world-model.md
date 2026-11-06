@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Streaming Code World Model es un conjunto de dos adaptadores LoRA publicados por el usuario Luffuly en HuggingFace, pensados para habilitar generacion de video causal y por fragmentos (chunk-by-chunk) a partir de un proxy en vivo. No se trata de un modelo completo, sino de pesos de adaptacion que se montan sobre el modelo base MiniMax-H3 en su variante Ref2VA, junto con el LoRA del Code World Model. El repositorio ocupa 2,4 GB y no registra descargas ni valoraciones en el momento de la consulta.
+Streaming Code World Model es un conjunto de dos adaptadores LoRA publicados por el usuario Luffuly en Hugging Face, pensados para habilitar generacion de video causal y por fragmentos (chunk-by-chunk) a partir de un proxy en vivo. No se trata de un modelo completo, sino de pesos de adaptacion que se montan sobre el modelo base MiniMax-H3 en su variante Ref2VA, junto con el LoRA del Code World Model. El repositorio ocupa 2,4 GB y no registra descargas ni valoraciones en el momento de la consulta.
 
 El proposito declarado es actuar como world model: predecir de forma autorregresiva el siguiente fragmento de video condicionado por el estado de un entorno simulado, de modo que el modelo pueda usarse como simulador neuronal acoplado a un bucle de control. La evaluacion se realiza contra el simulador CARLA, con una metrica de error cuadratico medio (CARLA MSE) que mide la fidelidad entre el video generado y la referencia del simulador.
 
@@ -89,7 +89,7 @@ No hay datos publicados en la informacion disponible que permitan comparar este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Luffuly/streaming-code-world-model
+- Hugging Face: https://huggingface.co/Luffuly/streaming-code-world-model
 - Repositorio de streaming-code-world-model: https://github.com/TingtingLiao/streaming-code-world-model
 - Repositorio de Code World Model: https://github.com/buaacyw/code-world-model
 - MiniMax-H3: no disponible (el autor lo referencia por nombre, sin enlace directo en la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muni_D4DJ es una LoRA de generacion de imagenes (text-to-image) publicada por el usuario de HuggingFace Praelatus. Se trata de un adaptador de bajo rango entrenado sobre el modelo base circlestone-labs/Anima, orientado a reproducir el personaje Ohnaruto Muni, de la franquicia D4DJ. El repositorio tiene un tamano de 0,2 GB, declara la libreria diffusers y el pipeline text-to-image, y se activa en el prompt mediante la etiqueta `<lora:Muni_AnimaV1:1>` junto con el token de activacion `@ohnarutomuni`.
+Muni_D4DJ es una LoRA de generacion de imagenes (text-to-image) publicada por el usuario de Hugging Face Praelatus. Se trata de un adaptador de bajo rango entrenado sobre el modelo base circlestone-labs/Anima, orientado a reproducir el personaje Ohnaruto Muni, de la franquicia D4DJ. El repositorio tiene un tamano de 0,2 GB, declara la libreria diffusers y el pipeline text-to-image, y se activa en el prompt mediante la etiqueta `<lora:Muni_AnimaV1:1>` junto con el token de activacion `@ohnarutomuni`.
 
 El modelo no es un modelo de lenguaje ni un modelo fundacional autonomo: es un adaptador que debe cargarse sobre Anima para funcionar, por lo que su comportamiento depende enteramente de las capacidades del modelo base. La model card incluye prompts de ejemplo completos, con estilo de prompt tipo `masterpiece, best quality, score_7`, y un negative prompt recomendado (`worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, lowres, censor`).
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Praelatus/Muni_D4DJ | no disponible (repo de 0,2 GB) | no aplica | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas, 0 likes |
-| circlestone-labs/Anima (modelo base) | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | HuggingFace |
+| Praelatus/Muni_D4DJ | no disponible (repo de 0,2 GB) | no aplica | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas, 0 likes |
+| circlestone-labs/Anima (modelo base) | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | Hugging Face |
 | Otras LoRAs de personaje del ecosistema anime | no disponible | no aplica | no disponible | variable segun autor | no disponible en la informacion proporcionada |
 
 No se dispone de datos objetivos para establecer una comparativa cuantitativa con alternativas de la misma categoria. Para una evaluacion rigurosa seria necesario comparar, al menos, la fidelidad al personaje, la capacidad de generalizacion a poses y angulos no vistos, la interferencia con el modelo base y los requisitos de licencia.
@@ -94,7 +94,7 @@ No se dispone de datos objetivos para establecer una comparativa cuantitativa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Praelatus/Muni_D4DJ
+- Modelo en Hugging Face: https://huggingface.co/Praelatus/Muni_D4DJ
 - Modelo base circlestone-labs/Anima: https://huggingface.co/circlestone-labs/Anima
 - Paper, blog o repositorio de codigo del adaptador: no disponible
 - Demo interactiva: no disponible (la model card solo incluye ejemplos de imagen generados)

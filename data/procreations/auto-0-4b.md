@@ -34,7 +34,7 @@ No se especifican detalles sobre el número de tokens de entrenamiento, la compo
 - Identificacion de manipulacion de permisos propios, borrado de rastros, escalada de privilegios y exfiltracion de credenciales.
 - Manejo de contextos largos de hasta 64 000 tokens, aunque el rendimiento decae notablemente por encima de 16 000 tokens (precisión del 78,45 % en el rango 16k-64k frente al 91,40 % en contextos menores de 1k).
 - Ajuste del umbral de decision mediante el logit de la clase `deny` tras softmax, permitiendo equilibrar falsas aprobaciones y falsas denegaciones.
-- Integracion sencilla con la libreria transformers de HuggingFace mediante `AutoModelForSequenceClassification`.
+- Integracion sencilla con la libreria transformers de Hugging Face mediante `AutoModelForSequenceClassification`.
 - Compatible con `attn_implementation="flash_attention_2"` para acelerar la inferencia.
 - Soporte para despliegue en endpoints compatibles con text-embeddings-inference (segun tags del modelo).
 
@@ -49,7 +49,7 @@ No se especifican detalles sobre el número de tokens de entrenamiento, la compo
 
 ## Benchmarks y rendimiento
 
-Los resultados oficiales del modelo, declarados por el autor en el model-index de HuggingFace, se evaluaron sobre el dataset `ProCreations/approve-or-deny` (3000 elementos retenidos, no usados en entrenamiento):
+Los resultados oficiales del modelo, declarados por el autor en el model-index de Hugging Face, se evaluaron sobre el dataset `ProCreations/approve-or-deny` (3000 elementos retenidos, no usados en entrenamiento):
 
 | Metrica | Valor |
 |---|---|
@@ -109,7 +109,7 @@ La model card tambien proporciona una tabla de puntos de operacion ajustando el 
 - VRAM estimada: aproximadamente 0,8 GB en bfloat16 (395 M parametros a 2 bytes por parametro), mas overhead de activaciones y attention; cabe holgadamente en GPUs consumer de 8 GB.
 - GPU recomendadas: cualquier GPU con soporte para bfloat16 y Flash Attention 2, como RTX 3090, RTX 4090, A100, H100 o L4. En CPU tambien es viable para inferencia por lotes pequena.
 - La model card reporta una latencia de 7 ms por llamada en una sola GPU, lo que permite procesar cientos de llamadas por segundo.
-- Despliegue compatible con la libreria transformers de HuggingFace, incluyendo `AutoModelForSequenceClassification` y `attn_implementation="flash_attention_2"`.
+- Despliegue compatible con la libreria transformers de Hugging Face, incluyendo `AutoModelForSequenceClassification` y `attn_implementation="flash_attention_2"`.
 - No se documentan opciones especificas para vLLM, TGI u Ollama, aunque al ser un modelo de clasificacion estandar con formato safetensors, deberia ser compatible con servidores de inferencia que soporten tareas de sequence classification.
 - Para despliegues en produccion con alta concurrencia, se recomienda un unico GPU con batching dinamico; el modelo no requiere memoria distribuida.
 
@@ -139,7 +139,7 @@ La comparativa muestra que `auto-0.4b` sacrifica entre 5 y 7 puntos de precision
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/auto-0.4b
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/auto-0.4b
 - Dataset de entrenamiento: https://huggingface.co/datasets/ProCreations/auto
 - Dataset de evaluacion: https://huggingface.co/datasets/ProCreations/approve-or-deny
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large

@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas (estimacion): NVIDIA A100 40/80 GB, H100, L40S o RTX 4090. El backbone de 3B deberia caber en GPU de consumo con 24 GB (RTX 3090, RTX 4090) en precision reducida.
 - Presupuesto temporal: a 15 Hz el ciclo de control es de 66,7 ms por paso, por lo que el sistema completo debe generar el chunk dentro de ese margen.
 - Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama ni TGI (no es un LLM de texto). Requiere el codigo de GR00T N1.7, `restore_bc.py`, `inject_dit_lora(head, rank=16, alpha=32)`, `ProjectedFlowActor` y `load_actor_adapter` de `gr00t.rl.export_adapter`.
-- Dependencia externa: el constructor del modelo GR00T sigue necesitando acceso normal a Cosmos en HuggingFace.
+- Dependencia externa: el constructor del modelo GR00T sigue necesitando acceso normal a Cosmos en Hugging Face.
 - Throughput y latencia medidos: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,8 +68,8 @@ No hay datos cuantitativos publicados en la informacion disponible para comparar
 
 | Modelo | Parametros | Contexto | Frecuencia objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (GR00T N1.7 SVF) | adaptadores ~130 MB sobre base de 3B | no disponible | 15 Hz | NVIDIA License | repo HuggingFace, requiere base |
-| NVIDIA GR00T N1.7 (base) | 3B (segun el nombre del backbone) | no disponible | segun configuracion | NVIDIA License | HuggingFace / NVIDIA |
+| Este adaptador (GR00T N1.7 SVF) | adaptadores ~130 MB sobre base de 3B | no disponible | 15 Hz | NVIDIA License | repo Hugging Face, requiere base |
+| NVIDIA GR00T N1.7 (base) | 3B (segun el nombre del backbone) | no disponible | segun configuracion | NVIDIA License | Hugging Face / NVIDIA |
 | Physical Intelligence pi0 / pi0.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | OpenVLA | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ Los campos marcados como "no disponible" no aparecen en la informacion proporcio
 - No se debe aplicar sobre el BC de 20k, sobre otra revision de BC ni sobre un modelo ya adaptado con SVF.
 - Compatibilidad estricta: los pesos del actor congelado deben coincidir con el BC exacto; el exportador verifica esta coincidencia y que todos los tensores sean finitos, pero no se ha validado en robot real.
 - El bundle no incluye pesos de BC ni de VLM; sin el modelo base no hay inferencia posible.
-- Requiere acceso a Cosmos en HuggingFace para construir el modelo GR00T.
+- Requiere acceso a Cosmos en Hugging Face para construir el modelo GR00T.
 - Riesgo de alucinacion: no aplica en el sentido de texto, pero la politica puede generar acciones invalidas fuera del horizonte valido; el padding zero-masked existente debe respetarse.
 - Licencia NVIDIA License (`license: other`): antes de uso comercial hay que revisar los terminos exactos del archivo LICENSE, que no se detallan en la informacion disponible.
 - Sesgos: no disponibles; no se documentan analisis de sesgo ni de cobertura de tareas.
@@ -92,6 +92,6 @@ Los campos marcados como "no disponible" no aparecen en la informacion proporcio
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-15hz-freshbc10k-svf-iql50k-e08-k06-g025-lora16-step5000
+- Hugging Face (adaptador): https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-15hz-freshbc10k-svf-iql50k-e08-k06-g025-lora16-step5000
 - Modelo base (BC head-only 15 Hz): https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-15hz-from-nvidia-bc-head-only-step10000 (revision 970ca589335032e0fb37961dfa5caa83a5c511be)
 - Codigo: https://github.com/jun981015/gr00t-bigenlight/tree/q-vgm-critic

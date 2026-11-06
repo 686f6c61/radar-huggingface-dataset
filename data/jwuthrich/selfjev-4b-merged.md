@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SelfJev-4B (merged) es un modelo de decisión estructurada desarrollado por el usuario Jwuthrich, publicado en HuggingFace como un checkpoint fusionado de aproximadamente 4,66 mil millones de parámetros. No es un modelo generativo al uso: en lugar de producir texto token a token, recibe un documento y un conjunto de preguntas con opciones candidatas, y devuelve probabilidades sobre esas opciones (sí/no, selección única, puntuación ordenada o selección múltiple). Está construido sobre el backbone Qwen/Qwen3.5-4B mediante un ajuste fino tipo LoRA que ya viene fusionado en los pesos, por lo que no requiere descargar el modelo base ni el adaptador por separado.
+SelfJev-4B (merged) es un modelo de decisión estructurada desarrollado por el usuario Jwuthrich, publicado en Hugging Face como un checkpoint fusionado de aproximadamente 4,66 mil millones de parámetros. No es un modelo generativo al uso: en lugar de producir texto token a token, recibe un documento y un conjunto de preguntas con opciones candidatas, y devuelve probabilidades sobre esas opciones (sí/no, selección única, puntuación ordenada o selección múltiple). Está construido sobre el backbone Qwen/Qwen3.5-4B mediante un ajuste fino tipo LoRA que ya viene fusionado en los pesos, por lo que no requiere descargar el modelo base ni el adaptador por separado.
 
 El repositorio contiene el checkpoint completo (unos 9,3 GB de pesos), el tokenizador y la configuración, y conserva el layout original del checkpoint, incluidas las capas de visión de Qwen3.5 sin modificar. Sin embargo, SelfJev está entrenado y evaluado exclusivamente para texto. El motor por defecto comparte el cálculo del documento entre todas las preguntas y puntúa directamente los candidatos, sin decodificación autoregresiva, lo que reduce la latencia frente a un LLM equivalente. Se distribuye con un SDK de Python y una API HTTP (TreeServer) para integrarlo en pipelines de enrutamiento, verificación y moderación.
 
@@ -23,7 +23,7 @@ La relevancia actual del modelo radica en su enfoque: ofrece una alternativa aut
 
 ## Arquitectura y entrenamiento
 
-SelfJev-4B es un ajuste fino (relación declarada: finetune) de Qwen/Qwen3.5-4B. El autor publica un checkpoint fusionado: el adaptador LoRA de SelfJev ya está incorporado en los pesos de Qwen3.5-4B fijados, y se conserva el layout original del checkpoint, incluidas las capas de visión sin tocar. La model card indica que el modelo fue "trained and evaluated for text", por lo que las capacidades multimodales del backbone no se explotan en este artefacto. El pipeline declarado en HuggingFace es `text-classification`, aunque la etiqueta `image-text-to-text` también aparece en los tags del repositorio.
+SelfJev-4B es un ajuste fino (relación declarada: finetune) de Qwen/Qwen3.5-4B. El autor publica un checkpoint fusionado: el adaptador LoRA de SelfJev ya está incorporado en los pesos de Qwen3.5-4B fijados, y se conserva el layout original del checkpoint, incluidas las capas de visión sin tocar. La model card indica que el modelo fue "trained and evaluated for text", por lo que las capacidades multimodales del backbone no se explotan en este artefacto. El pipeline declarado en Hugging Face es `text-classification`, aunque la etiqueta `image-text-to-text` también aparece en los tags del repositorio.
 
 El detalle del entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO o preferencias) no está disponible en la información proporcionada. La innovación técnica destacable no está en la arquitectura del backbone, sino en el motor de inferencia: en lugar de generar una respuesta token a token, el sistema comparte el cálculo del documento entre todas las preguntas y puntúa directamente las opciones candidatas, devolviendo probabilidades tipadas (probabilidad de "sí", opción seleccionada, puntuación ordenada o conjunto de opciones que cumplen). El autor publica la procedencia de la fusión en `merge_meta.json` y comprobaciones de integridad en `verification.json`, e indica que este artefacto fusionado pasó chequeos de integridad de tensores y dos casos de humo sintéticos en GPU, pero no ha sido evaluado por separado a través de vLLM.
 
@@ -95,7 +95,7 @@ Advertencia metodológica del autor: los conjuntos propios usan etiquetas verifi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SelfJev-4B (merged) | ≈4,66 B | no disponible | 95,7% decisiones de texto; 93,1% revision IA; 83,4% fuentes publicas | no disponible | Pesos abiertos en HuggingFace (0 descargas, 0 likes) |
+| SelfJev-4B (merged) | ≈4,66 B | no disponible | 95,7% decisiones de texto; 93,1% revision IA; 83,4% fuentes publicas | no disponible | Pesos abiertos en Hugging Face (0 descargas, 0 likes) |
 | Eikos-4B | ≈4 B (segun nombre) | no disponible | 92,8% en las mismas 1.991 preguntas del protocolo del autor | no disponible | Resultado reportado en los informes del proyecto |
 | Jev (TypeSafe AI) | no disponible | no disponible | 97,2% decisiones de texto; 92,5% revision IA; 82,1% fuentes publicas | propietaria (API) | Acceso temprano limitado desde el 15 de septiembre de 2026 |
 | SemIf-OpenJev | no disponible | no disponible | no disponible | no disponible | Repositorio independiente en GitHub |
@@ -119,7 +119,7 @@ El autor menciona además otros modelos de decisión (Lev, Reflex) pero indica q
 
 ## Enlaces
 
-- Modelo en HuggingFace (checkpoint fusionado): https://huggingface.co/Jwuthrich/selfjev-4b-merged
+- Modelo en Hugging Face (checkpoint fusionado): https://huggingface.co/Jwuthrich/selfjev-4b-merged
 - Release del adaptador compacto: https://huggingface.co/Jwuthrich/selfjev-4b
 - Codigo fuente del proyecto: https://github.com/Jwuthri/SelfJev
 - Procedencia de la fusión: `merge_meta.json` (en el repositorio del modelo)

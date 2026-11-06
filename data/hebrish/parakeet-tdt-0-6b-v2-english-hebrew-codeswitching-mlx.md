@@ -74,7 +74,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de los m
 ## Limitaciones y advertencias
 
 - Artefacto con validacion practicamente nula: 19 descargas y 0 likes en el momento de la consulta, sin model card detallada ni resultados de evaluacion publicados.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a pipelines automatizados y a la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a pipelines automatizados y a la reproducibilidad.
 - Dependencia de MLX: solo se distribuyen pesos en formato MLX, lo que excluye de facto el despliegue en GPUs NVIDIA o AMD sin una conversion adicional no documentada.
 - Riesgo de error en la transcripcion: como todo ASR, puede producir sustituciones, omisiones y transliteraciones, especialmente en nombres propios, siglas y terminologia tecnica dentro de segmentos de code-switching.
 - Sesgos desconocidos: no se documenta la composicion del corpus de entrenamiento, por lo que se desconoce el sesgo respecto a acentos (hebreo mizrahi, ashkenazi, arabe-israeli), genero, edad o calidad de grabacion.
@@ -85,8 +85,8 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-mlx
+- Modelo en Hugging Face: https://huggingface.co/Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-mlx
 - Modelo base (fine-tune de origen): https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching
-- Repositorio del autor en HuggingFace: https://huggingface.co/Hebrish
+- Repositorio del autor en Hugging Face: https://huggingface.co/Hebrish
 - Libreria MLX (Apple): no se han encontrado enlaces en la busqueda web realizada
 - Papers, blogs o demos adicionales: no se han encontrado enlaces relevantes en la busqueda web realizada (los resultados devueltos no guardaban relacion con el modelo)

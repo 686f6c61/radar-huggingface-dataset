@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Torakiki77/qwen3-14b-audit-ft-smoke` es un ajuste fino (fine-tuning) del modelo `unsloth/Qwen3-14B-unsloth-bnb-4bit`, que a su vez deriva de la familia Qwen3-14B. Lo publica el usuario Torakiki77 en HuggingFace y se distribuye bajo licencia Apache 2.0. Por el nombre y los metadatos (etiqueta `smoke`), todo apunta a un artefacto de prueba o validacion de pipeline mas que a un modelo destinado a produccion, pero la ficha del autor no lo confirma explicitamente.
+`Torakiki77/qwen3-14b-audit-ft-smoke` es un ajuste fino (fine-tuning) del modelo `unsloth/Qwen3-14B-unsloth-bnb-4bit`, que a su vez deriva de la familia Qwen3-14B. Lo publica el usuario Torakiki77 en Hugging Face y se distribuye bajo licencia Apache 2.0. Por el nombre y los metadatos (etiqueta `smoke`), todo apunta a un artefacto de prueba o validacion de pipeline mas que a un modelo destinado a produccion, pero la ficha del autor no lo confirma explicitamente.
 
-El modelo tiene 14.768.307.200 parametros totales (unos 14,77 mil millones) y un repositorio de 29,3 GB, coherente con pesos en precision de 16 bits. Se ha entrenado con el framework Unsloth, segun indica la propia model card, y esta publicado en formatos `safetensors` y `gguf`, ademas de ser compatible con text-generation-inference y con endpoints de HuggingFace.
+El modelo tiene 14.768.307.200 parametros totales (unos 14,77 mil millones) y un repositorio de 29,3 GB, coherente con pesos en precision de 16 bits. Se ha entrenado con el framework Unsloth, segun indica la propia model card, y esta publicado en formatos `safetensors` y `gguf`, ademas de ser compatible con text-generation-inference y con endpoints de Hugging Face.
 
 La relevancia de esta ficha es limitada: no hay resultados de benchmarks, no hay descripcion del dataset de entrenamiento, no hay detalles de hiperparametros y el modelo acumula 0 descargas y 0 likes en el momento de la consulta. Funciona mas como ejemplo de fine-tuning rapido sobre Qwen3-14B con Unsloth que como modelo evaluable por si mismo.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada: no hay resultados de benchmarks, no hay
 | Libreria | transformers |
 | Modelo base | unsloth/Qwen3-14B-unsloth-bnb-4bit |
 | Tamano del repositorio | 29,3 GB |
-| Compatibilidad | text-generation-inference, endpoints de HuggingFace |
+| Compatibilidad | text-generation-inference, endpoints de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -48,7 +48,7 @@ Dado que la ficha no documenta capacidades verificadas ni resultados de evaluaci
 - Pruebas de pipeline de fine-tuning: el modelo puede usarse como referencia para verificar que una cadena de entrenamiento con Unsloth, TRL y transformers produce artefactos cargables antes de lanzar un entrenamiento a escala completa.
 - Evaluacion de recetas QLoRA sobre Qwen3-14B: sirve para comparar el efecto de distintas configuraciones de adaptadores sobre una misma base cuantizada a 4 bits.
 - Prototipado de asistentes conversacionales en ingles: su etiqueta `conversational` permite probar integraciones de chat con la API de transformers o text-generation-inference.
-- Despliegue en endpoints de HuggingFace: al declararse compatible con endpoints, puede publicarse como demo interna sin infraestructura propia.
+- Despliegue en endpoints de Hugging Face: al declararse compatible con endpoints, puede publicarse como demo interna sin infraestructura propia.
 - Generacion de texto en ingles para tareas internas no criticas: siempre que se acepte la falta de benchmarks y de garantias de calidad.
 - Base para nuevos fine-tunes especificos de dominio: al estar bajo Apache 2.0, puede reentrenarse o adaptarse sin restricciones de licencia.
 - Investigacion sobre cuantizacion GGUF: la presencia de pesos GGUF permite experimentar con inferencia en CPU o en GPUs de gama baja.
@@ -66,7 +66,7 @@ Las cifras siguientes son estimaciones derivadas del numero de parametros (14,77
 - VRAM en cuantizacion de 4 bits (GGUF): aproximadamente 8-10 GB para pesos, lo que permite ejecucion en GPUs consumer de 12-16 GB como la RTX 3060 de 12 GB o la RTX 4070 Ti Super.
 - GPUs recomendadas para produccion: A100 40/80 GB, H100 80 GB o L40S para precision completa y lotes grandes.
 - GPUs consumer: si, en cuantizacion de 4 u 8 bits; en 16 bits no cabe en ninguna GPU consumer actual de 24 GB.
-- Opciones de despliegue: transformers, text-generation-inference (TGI), endpoints de HuggingFace y llama.cpp u Ollama para los pesos GGUF. vLLM no esta confirmado en la informacion disponible.
+- Opciones de despliegue: transformers, text-generation-inference (TGI), endpoints de Hugging Face y llama.cpp u Ollama para los pesos GGUF. vLLM no esta confirmado en la informacion disponible.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ No se dispone de datos suficientes para comparar rendimiento entre estas opcione
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Torakiki77/qwen3-14b-audit-ft-smoke
+- Hugging Face: https://huggingface.co/Torakiki77/qwen3-14b-audit-ft-smoke
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Paper, blog o demo oficial del modelo: no disponible

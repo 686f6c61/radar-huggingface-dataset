@@ -58,7 +58,7 @@ No disponible. No se proporcionan comparaciones con otros sistemas TTS en la doc
 - El zero-shot voice cloning requiere la herramienta Voice Builder de Supertone, que es un servicio externo y no está incluido en el paquete open-weight.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Supertone/supertonic-3
+- Hugging Face: https://huggingface.co/Supertone/supertonic-3
 - Código (GitHub): https://github.com/supertone-inc/supertonic
 - Demo interactiva (Hugging Face Space): https://huggingface.co/spaces/Supertone/supertonic-3
 - Página de demostración de audio: https://supertonic3.github.io/

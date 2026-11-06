@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi05_FAST_robotwin_mid_training` es un checkpoint de tipo vision-language-action (VLA) publicado por Prachi Garg en HuggingFace bajo el paraguas del proyecto openpi. Se trata del resultado del mid-training (etapa 1) del modelo π0.5 con tokens FAST, afinado a partir de `pi05_base` sobre demostraciones expertas de las 10 tareas de la primera etapa del benchmark RoboTwin. El modelo acompaña al artículo "Fine-Tuning VLAs with Self-Demonstrated Generative Control for Multi-Task Manipulation" (arXiv:2608.19490), centrado en el ajuste fino de VLA para manipulación multi-tarea.
+`pi05_FAST_robotwin_mid_training` es un checkpoint de tipo vision-language-action (VLA) publicado por Prachi Garg en Hugging Face bajo el paraguas del proyecto openpi. Se trata del resultado del mid-training (etapa 1) del modelo π0.5 con tokens FAST, afinado a partir de `pi05_base` sobre demostraciones expertas de las 10 tareas de la primera etapa del benchmark RoboTwin. El modelo acompaña al artículo "Fine-Tuning VLAs with Self-Demonstrated Generative Control for Multi-Task Manipulation" (arXiv:2608.19490), centrado en el ajuste fino de VLA para manipulación multi-tarea.
 
 El checkpoint se distribuye como paso 10000 sin estado del optimizador, con estadísticas de normalización incluidas en `assets/prachigarg23/robotwin_mid_training_expert/norm_stats.json`, y está pensado como inicialización para las configuraciones de post-training del mismo proyecto. No es un modelo de propósito general: es un artefacto intermedio de un pipeline de investigación en robótica, con un dataset asociado (`robotwin_mid_training_expert`) y un repositorio de código específico para su evaluación en RoboTwin.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_FAST_robotwin_mid_training | no disponible | no disponible | Mid-training etapa 1 sobre 10 tareas de RoboTwin, desde `pi05_base` | Apache 2.0 | HuggingFace (12,4 GB) |
+| pi05_FAST_robotwin_mid_training | no disponible | no disponible | Mid-training etapa 1 sobre 10 tareas de RoboTwin, desde `pi05_base` | Apache 2.0 | Hugging Face (12,4 GB) |
 | pi05_base | no disponible | no disponible | Modelo base π0.5 | no disponible en la informacion proporcionada | Referenciado como punto de partida |
 | Checkpoints de post-training del proyecto | no disponible | no disponible | Post-training inicializado desde este checkpoint | no disponible en la informacion proporcionada | Referenciados en la model card |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prachigarg23/pi05_FAST_robotwin_mid_training
+- Hugging Face: https://huggingface.co/prachigarg23/pi05_FAST_robotwin_mid_training
 - Dataset de entrenamiento: https://huggingface.co/datasets/prachigarg23/robotwin_mid_training_expert
 - Artículo: https://arxiv.org/abs/2608.19490
 - Página del proyecto: https://self-supervised-control.pages.dev/

@@ -85,8 +85,8 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrowtherLabs/atom-proton-1.0
-- Organizacion CrowtherLabs en HuggingFace: https://huggingface.co/CrowtherLabs
+- Modelo en Hugging Face: https://huggingface.co/CrowtherLabs/atom-proton-1.0
+- Organizacion CrowtherLabs en Hugging Face: https://huggingface.co/CrowtherLabs
 - Modelo hermano Atom-Electron-1.0: https://huggingface.co/CrowtherLabs/Atom-Electron-1.0
 - Repositorio flash-linear-attention: https://github.com/fla-org/flash-linear-attention
 - Repositorio causal-conv1d: https://github.com/Dao-AILab/causal-conv1d

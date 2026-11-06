@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`punemehta/generation-notebook` es un repositorio de HuggingFace que contiene una implementación funcional y mínima de una arquitectura PoolFormer orientada a tareas de generación, con configuración declarada como "small". No es un modelo entrenado ni un checkpoint listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint evaluado con benchmarks. El repositorio prioriza código transparente y tests repetibles, y omite deliberadamente cualquier afirmación de rendimiento.
+`punemehta/generation-notebook` es un repositorio de Hugging Face que contiene una implementación funcional y mínima de una arquitectura PoolFormer orientada a tareas de generación, con configuración declarada como "small". No es un modelo entrenado ni un checkpoint listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint evaluado con benchmarks. El repositorio prioriza código transparente y tests repetibles, y omite deliberadamente cualquier afirmación de rendimiento.
 
 El dato objetivo más relevante es el recuento de parámetros del checkpoint en safetensors: 33.088 parámetros totales, con un tamaño de repositorio de 0,0 GB. Esta cifra es órdenes de magnitud inferior a la de los PoolFormer "small" publicados habitualmente en la literatura (decenas de millones de parámetros), lo que sugiere que la configuración efectiva del checkpoint es una versión reducida al mínimo para validar el flujo de ejecución, no la configuración "small" completa. El repositorio no incluye tokenizador, pipeline declarado ni idiomas soportados.
 
@@ -28,7 +28,7 @@ Su relevancia es, por tanto, la de un artefacto educativo y de infraestructura: 
 | Optimizador por defecto | novograd |
 | Scheduler por defecto | polynomial |
 | Tamaño del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ No se dispone de datos verificados en la información proporcionada para los mod
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| punemehta/generation-notebook | 33.088 | no disponible | sin benchmarks (no entrenado) | Apache 2.0 | HuggingFace, repo 0,0 GB |
+| punemehta/generation-notebook | 33.088 | no disponible | sin benchmarks (no entrenado) | Apache 2.0 | Hugging Face, repo 0,0 GB |
 | PoolFormer small (referencia de la familia) | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 | Otras implementaciones de referencia tipo "notebook" | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,12 +90,12 @@ Nota: la model card etiqueta la configuración como "small", pero el checkpoint 
 - **Riesgo de alucinación**: no evaluable en el estado actual; al no estar entrenado, cualquier salida sería ruido de inicialización, no texto coherente.
 - **Sesgos conocidos**: no documentados. El autor no reporta auditoría de sesgos, y al no haber datos de entrenamiento publicados no se puede caracterizar la distribución de la que provendrían.
 - **Limitaciones de contexto e idioma**: no disponibles; no se declara ventana de contexto ni idiomas soportados.
-- **Integración**: al ser una implementación personalizada, las APIs automáticas de HuggingFace fallan sin un adaptador explícito; prever ese trabajo en cualquier integración.
+- **Integración**: al ser una implementación personalizada, las APIs automáticas de Hugging Face fallan sin un adaptador explícito; prever ese trabajo en cualquier integración.
 - **Restricciones de licencia**: el código y los pesos se publican bajo Apache 2.0, lo que permite uso comercial con atribución; sin embargo, la propia model card advierte de revisar por separado los términos de los datos de origen si se usan datasets externos.
 - **Caveat de producción**: no usar este repositorio como componente de un sistema en producción sin un ciclo completo de entrenamiento, evaluación con conjunto retenido y al menos tres semillas, y registro de logs de entrenamiento y versiones de entorno.
 
 ## Enlaces
 
-- [HuggingFace: punemehta/generation-notebook](https://huggingface.co/punemehta/generation-notebook)
+- [Hugging Face: punemehta/generation-notebook](https://huggingface.co/punemehta/generation-notebook)
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo. Las consultas devolvieron exclusivamente contenido no relacionado con el repositorio, por lo que no se incluye ningún enlace adicional.
 - Paper, blog, repositorio de código o demo oficiales: no disponibles en la información proporcionada.

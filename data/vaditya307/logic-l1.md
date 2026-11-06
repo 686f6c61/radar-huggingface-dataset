@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AROM Logic L1 (identificador VADITYA307/Logic-L1) es un modelo de lenguaje causal publicado en HuggingFace por el usuario VADITYA307 y atribuido en su model card a Aditya 'Aadi' en AROM Labs India. El autor lo presenta como un modelo orientado a generacion de codigo, procesamiento logico y tareas de desarrollo, con una arquitectura propia denominada "LogicL1" y pesos en Float16. El repositorio ocupa 3,1 GB y el recuento real de parametros en safetensors es de 1.543.714.304 (aproximadamente 1,54 mil millones), lo que encaja con el tamano del repo en precision FP16 (unos 3,09 GB solo de pesos).
+AROM Logic L1 (identificador VADITYA307/Logic-L1) es un modelo de lenguaje causal publicado en Hugging Face por el usuario VADITYA307 y atribuido en su model card a Aditya 'Aadi' en AROM Labs India. El autor lo presenta como un modelo orientado a generacion de codigo, procesamiento logico y tareas de desarrollo, con una arquitectura propia denominada "LogicL1" y pesos en Float16. El repositorio ocupa 3,1 GB y el recuento real de parametros en safetensors es de 1.543.714.304 (aproximadamente 1,54 mil millones), lo que encaja con el tamano del repo en precision FP16 (unos 3,09 GB solo de pesos).
 
 El modelo se distribuye bajo licencia Apache 2.0 y declara soporte exclusivo de ingles. Requiere `trust_remote_code=True` para cargarse, lo que indica que el repositorio incluye codigo propio de definicion del modelo no integrado en las librerias estandar. La model card documenta una "firewall" de identidad a nivel de sistema: un prompt fijo que obliga al modelo a responder siempre en ingles, a identificarse como AROM Logic L1 y a escribir "AROM" en mayusculas.
 
@@ -98,7 +98,7 @@ Diferencias clave frente a las alternativas: Logic-L1 no documenta contexto, no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VADITYA307/Logic-L1
+- Modelo en Hugging Face: https://huggingface.co/VADITYA307/Logic-L1
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion adicional del autor: no disponible

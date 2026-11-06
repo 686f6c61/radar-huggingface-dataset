@@ -82,7 +82,7 @@ La comparativa se limita a modelos de la familia Piper, ya que no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahwizzzz/piper-voice-ur-aegis-female
+- Modelo en Hugging Face: https://huggingface.co/mahwizzzz/piper-voice-ur-aegis-female
 - Repositorio del modelo (archivos): https://huggingface.co/mahwizzzz/piper-voice-ur-aegis-female/tree/main
 - Modelo base Fasih: https://huggingface.co/IhorShevchuk/piper-voice-ur-fasih
 - Artículo sobre destilación de OmniVoice en Aegis: https://www.plushcap.com/content/huggingface/blog/huggingface-distilling-omnivoice-into-aegis-female-urdu-tts-at-61-mb-onnx-for-cpu-inference

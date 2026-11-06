@@ -2,18 +2,18 @@
 
 ## Resumen
 
-`tongjimaterials/lightweight-multimodal` **no es un modelo entrenado**, sino un repositorio de notas de investigación y un esbozo de experimento publicado en HuggingFace bajo la etiqueta `research-notes`. La propia model card indica de forma explícita que no reclama mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado, y que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. El artefacto principal es un fichero `reading.md` con la nota completa.
+`tongjimaterials/lightweight-multimodal` **no es un modelo entrenado**, sino un repositorio de notas de investigación y un esbozo de experimento publicado en Hugging Face bajo la etiqueta `research-notes`. La propia model card indica de forma explícita que no reclama mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado, y que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. El artefacto principal es un fichero `reading.md` con la nota completa.
 
 El repositorio se presenta como una exploración sobre el tema "Lightweight Multimodal" (multimodal ligero), con el objetivo declarado de cubrir el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con *baselines* emparejados, contexto de evaluación mediante benchmarks públicos y comprobaciones de reproducibilidad y modos de fallo. Es, por tanto, un documento de trabajo metodológico y no un artefacto de inferencia listo para producción.
 
-Aunque el repositorio incluye la etiqueta `safetensors` y HuggingFace reporta un recuento de parámetros de 24.832, el tamaño del repositorio es de 0,0 GB y no existe ningún checkpoint funcional ni pipeline declarado. Esto refuerza la conclusión de que no hay pesos utilizables: 24.832 parámetros son varios órdenes de magnitud inferiores a cualquier modelo multimodal operativo. El interés actual del repositorio es, en consecuencia, documental y metodológico, no como modelo desplegable.
+Aunque el repositorio incluye la etiqueta `safetensors` y Hugging Face reporta un recuento de parámetros de 24.832, el tamaño del repositorio es de 0,0 GB y no existe ningún checkpoint funcional ni pipeline declarado. Esto refuerza la conclusión de que no hay pesos utilizables: 24.832 parámetros son varios órdenes de magnitud inferiores a cualquier modelo multimodal operativo. El interés actual del repositorio es, en consecuencia, documental y metodológico, no como modelo desplegable.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (el tag indica "transformer", pero no se describe ninguna arquitectura en la model card) |
-| Parametros totales | 24.832 (recuento reportado por HuggingFace en ficheros safetensors; no corresponde a un modelo funcional) |
+| Parametros totales | 24.832 (recuento reportado por Hugging Face en ficheros safetensors; no corresponde a un modelo funcional) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo, por lo que no admite comparaci�
 
 - El repositorio no contiene ningún modelo entrenado, checkpoint ni código de inferencia; no debe tratarse como un artefacto desplegable.
 - Las secciones etiquetadas como planes o hipótesis no son resultados experimentales y no deben citarse como tales.
-- El recuento de 24.832 parámetros reportado por HuggingFace no es indicativo de un modelo funcional y puede corresponder a metadatos o a un artefacto de prueba.
+- El recuento de 24.832 parámetros reportado por Hugging Face no es indicativo de un modelo funcional y puede corresponder a metadatos o a un artefacto de prueba.
 - No hay información sobre sesgos, porque no hay modelo evaluado; no procede atribuir sesgos concretos ni descartarlos.
 - No hay datos sobre riesgo de alucinación al no existir comportamiento de generación observable.
 - No se documentan limitaciones de contexto ni de idioma, ya que ambos campos están sin definir.
@@ -75,7 +75,7 @@ No disponible. Este repositorio no es un modelo, por lo que no admite comparaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tongjimaterials/lightweight-multimodal
-- Fichero principal citado en la documentación: `reading.md` (dentro del repositorio de HuggingFace)
-- Fichero de documentación: `README.md` (dentro del repositorio de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/tongjimaterials/lightweight-multimodal
+- Fichero principal citado en la documentación: `reading.md` (dentro del repositorio de Hugging Face)
+- Fichero de documentación: `README.md` (dentro del repositorio de Hugging Face)
 - La búsqueda web realizada no ha devuelto ningún enlace relevante al modelo, a papers asociados, blogs, repositorios de código ni demos. Los resultados obtenidos corresponden a consultas no relacionadas (Stack Overflow, Zhihu) y se descartan por no aportar información sobre este repositorio.

@@ -93,7 +93,7 @@ La comparacion relevante es contra el modelo original del que deriva: este repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3MPER0RR/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated
+- Modelo en Hugging Face: https://huggingface.co/3MPER0RR/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated
 - Modelo base DeepSeek-R1-Distill-Qwen-14B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
 - Modelo profesor DeepSeek-R1: https://huggingface.co/deepseek-ai/DeepSeek-R1
 - Repositorio oficial de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

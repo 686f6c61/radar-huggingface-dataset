@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_06` es un repositorio alojado en HuggingFace por el usuario TianfuXinqu que, segun los metadatos publicos, no cuenta con descargas ni interacciones y carece de informacion sobre licencia, idiomas o pipeline de inferencia. El identificador del repositorio y el contenido de su model card apuntan a un artefacto generado de forma sintetica o de prueba dentro de un entorno automatizado, mas que a un modelo de lenguaje publicado de forma convencional.
+`TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_06` es un repositorio alojado en Hugging Face por el usuario TianfuXinqu que, segun los metadatos publicos, no cuenta con descargas ni interacciones y carece de informacion sobre licencia, idiomas o pipeline de inferencia. El identificador del repositorio y el contenido de su model card apuntan a un artefacto generado de forma sintetica o de prueba dentro de un entorno automatizado, mas que a un modelo de lenguaje publicado de forma convencional.
 
 La model card describe un "Speech-to-Text Agent" con identificador interno MDL-006, atribuido a Lucas Garcia en el departamento de Operations, con nivel de riesgo "critical", cobertura de tests del 60 por ciento y ultima auditoria el 2026-02-14. Estos campos no aportan informacion tecnica sobre arquitectura, parametros, datos de entrenamiento ni capacidades reales del modelo; son metadatos de gestion interna de un supuesto sistema de conversion de voz a texto.
 
@@ -75,4 +75,4 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_06
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_06

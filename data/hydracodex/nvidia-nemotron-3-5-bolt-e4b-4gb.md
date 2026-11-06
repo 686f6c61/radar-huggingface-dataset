@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HYDRACODEX/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB
+- Repositorio en Hugging Face: https://huggingface.co/HYDRACODEX/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Modelo base de partida (Gemma-4-E4B-it): https://huggingface.co/google/gemma-4-E4B-it
 - Drafter para decodificación especulativa: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash

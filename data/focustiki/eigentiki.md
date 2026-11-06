@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar este adaptador con al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/focustiki/eigentiki
+- Modelo en Hugging Face: https://huggingface.co/focustiki/eigentiki
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/focustiki/sft-coding-agent-traces
 - Libreria de entrenamiento citada por el autor (Unsloth): https://github.com/unslothai/unsloth

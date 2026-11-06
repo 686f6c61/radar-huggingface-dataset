@@ -84,7 +84,7 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sdafh1352222/my-awesome-model
+- Repositorio Hugging Face: https://huggingface.co/sdafh1352222/my-awesome-model
 - Página de otro repositorio homónimo (no relacionado): https://huggingface.co/sfsfff22/MyAwesomeModel
 - Página de otro repositorio homónimo (no relacionado): https://huggingface.co/sfcbm/MyAwesomeModel
 - Entrada en PromptLayer (fine-tuning de DistilBERT, no relacionado): https://www.promptlayer.com/models/myawesomemodel/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-baseline-en_nl_interleaved_8-s42` es un checkpoint de investigación publicado por el usuario Cisco1963 en HuggingFace. Por su nombre y por la familia de repositorios del mismo autor (`llmplasticity-*`), se trata de un modelo de la serie *llmplasticity*, orientada al estudio de la plasticidad de modelos de lenguaje durante el aprendizaje continuo o el entrenamiento sobre tareas secuenciales. La etiqueta `baseline` sugiere que actúa como referencia de control frente a las variantes con hiperparámetros específicos (por ejemplo, `d0.1`, `c0.999`, `r0.5`), y `en_nl` apunta a una mezcla bilingüe inglés-neerlandés. El sufijo `interleaved_8-s42` indica, probablemente, un régimen de datos entrelazados con 8 tareas o dominios y semilla 42, aunque esto no está confirmado en la documentación pública.
+El modelo `Cisco1963/llmplasticity-baseline-en_nl_interleaved_8-s42` es un checkpoint de investigación publicado por el usuario Cisco1963 en Hugging Face. Por su nombre y por la familia de repositorios del mismo autor (`llmplasticity-*`), se trata de un modelo de la serie *llmplasticity*, orientada al estudio de la plasticidad de modelos de lenguaje durante el aprendizaje continuo o el entrenamiento sobre tareas secuenciales. La etiqueta `baseline` sugiere que actúa como referencia de control frente a las variantes con hiperparámetros específicos (por ejemplo, `d0.1`, `c0.999`, `r0.5`), y `en_nl` apunta a una mezcla bilingüe inglés-neerlandés. El sufijo `interleaved_8-s42` indica, probablemente, un régimen de datos entrelazados con 8 tareas o dominios y semilla 42, aunque esto no está confirmado en la documentación pública.
 
 Arquitectónicamente se trata de un transformer tipo GPT-2 con 122.706.432 parámetros totales (aproximadamente 0,12 B), según los metadatos reales de los pesos en safetensors. Es, por tanto, un modelo del orden de GPT-2 small/medium, entrenado presumiblemente desde cero o ajustado para experimentos de plasticidad. No dispone de model card, no está asociado a ningún pipeline declarado y no tiene licencia ni idiomas especificados.
 
@@ -42,7 +42,7 @@ El tamaño del repositorio (11,3 GB) es notablemente superior al que ocuparían 
 - Estudio de olvido catastrófico: al compartir arquitectura y tamaño con otras variantes `llmplasticity`, permite aislar el efecto del régimen de datos (`interleaved` frente a `instant`) sobre la degradación de tareas previas.
 - Análisis de mezcla bilingüe inglés-neerlandés: útil para investigar cómo se distribuyen las representaciones internas cuando el entrenamiento combina dos idiomas con esquemas entrelazados, siempre que se confirme el contenido real del dataset.
 - Docencia e investigación en NLP de bajo coste: con 122 M de parámetros en F32 cabe en una GPU de gama media y permite experimentos de ajuste fino rápidos sin grandes infraestructuras.
-- Comparativa metodológica: sirve como ejemplo de artefacto de investigación sin model card, útil para discutir buenas prácticas de publicación en HuggingFace.
+- Comparativa metodológica: sirve como ejemplo de artefacto de investigación sin model card, útil para discutir buenas prácticas de publicación en Hugging Face.
 - Pruebas de pipelines de evaluación reproducibles: al ser un modelo pequeño y determinista en cuanto a pesos, se puede integrar en *harnesses* internos de evaluación de plasticidad o de retención entre idiomas.
 
 ## Benchmarks y rendimiento
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Cisco1963/llmplasticity-baseline-en_nl_instant_8-s42 | 0,1 B | no disponible | no disponible | HuggingFace (17 descargas) | Variante con datos "instant" en lugar de "interleaved" |
-| Cisco1963/llmplasticity-baseline-en_nl_interleaved_8-s44 | 0,1 B | no disponible | no disponible | HuggingFace | Misma receta con semilla 44 |
-| Cisco1963/llmplasticity-nl_en_instant_8-d0.1-c0.999-r0.5-s42 | 0,1 B | no disponible | no disponible | HuggingFace | Variante con hiperparámetros d, c, r explícitos |
+| Cisco1963/llmplasticity-baseline-en_nl_instant_8-s42 | 0,1 B | no disponible | no disponible | Hugging Face (17 descargas) | Variante con datos "instant" en lugar de "interleaved" |
+| Cisco1963/llmplasticity-baseline-en_nl_interleaved_8-s44 | 0,1 B | no disponible | no disponible | Hugging Face | Misma receta con semilla 44 |
+| Cisco1963/llmplasticity-nl_en_instant_8-d0.1-c0.999-r0.5-s42 | 0,1 B | no disponible | no disponible | Hugging Face | Variante con hiperparámetros d, c, r explícitos |
 | GPT-2 small (OpenAI) | 124 M | 1.024 | MIT (pesos originales) | Ampliamente disponible | Referencia clásica de la misma escala |
 
 Los modelos comparables directos son otras variantes de la misma serie `llmplasticity` del propio autor, no alternativas comerciales. No se dispone de datos de rendimiento comparado.
@@ -77,12 +77,12 @@ Los modelos comparables directos son otras variantes de la misma serie `llmplast
 - Idiomas no confirmados: el nombre sugiere inglés y neerlandés, pero no hay verificación oficial; el rendimiento en castellano u otros idiomas es desconocido y probablemente pobre.
 - Longitud de contexto desconocida: si sigue el estándar GPT-2, sería de 1.024 tokens, pero esto no está documentado.
 - El repositorio ocupa 11,3 GB, muy por encima del tamano de los pesos, lo que sugiere artefactos de entrenamiento adicionales; conviene revisar el contenido antes de descargarlo completo.
-- No hay *pipeline* declarado en HuggingFace ni proveedor de inferencia asociado, lo que complica su uso inmediato sin configuración manual.
+- No hay *pipeline* declarado en Hugging Face ni proveedor de inferencia asociado, lo que complica su uso inmediato sin configuración manual.
 - Es un artefacto de investigación: sus resultados no deben extrapolarse a afirmaciones generales sobre plasticidad sin reproducir el protocolo experimental del autor.
 
 ## Enlaces
 
-- HuggingFace (modelo principal): https://huggingface.co/Cisco1963/llmplasticity-baseline-en_nl_interleaved_8-s42
+- Hugging Face (modelo principal): https://huggingface.co/Cisco1963/llmplasticity-baseline-en_nl_interleaved_8-s42
 - Variante `instant`: https://huggingface.co/Cisco1963/llmplasticity-baseline-en_nl_instant_8-s42
 - Variante semilla 44: https://huggingface.co/Cisco1963/llmplasticity-baseline-en_nl_interleaved_8-s44
 - Variante nl_en con d0.1-c0.999-r0.5: https://huggingface.co/Cisco1963/llmplasticity-nl_en_instant_8-d0.1-c0.999-r0.5-s42

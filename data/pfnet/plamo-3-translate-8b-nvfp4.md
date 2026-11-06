@@ -93,7 +93,7 @@ TranslateGemma y HY-MT2 aparecen como modelos de comparación en la figura de be
 
 ## Enlaces
 
-- [HuggingFace: pfnet/plamo-3-translate-8b-NVFP4](https://huggingface.co/pfnet/plamo-3-translate-8b-NVFP4)
+- [Hugging Face: pfnet/plamo-3-translate-8b-NVFP4](https://huggingface.co/pfnet/plamo-3-translate-8b-NVFP4)
 - [Modelo base BF16: pfnet/plamo-3-translate-8b](https://huggingface.co/pfnet/plamo-3-translate-8b)
 - [Variante 0.8B NVFP4](https://huggingface.co/pfnet/plamo-3-translate-0.8b-NVFP4)
 - [Variante 2B NVFP4](https://huggingface.co/pfnet/plamo-3-translate-2b-NVFP4)

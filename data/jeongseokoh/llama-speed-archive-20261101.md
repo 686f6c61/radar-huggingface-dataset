@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-SPEED-archive-20261101 es un repositorio de archivo publicado en HuggingFace por el usuario jeongseokoh que contiene checkpoints historicos y estados de optimizador/reanudacion procedentes de experimentos SPEED ya inactivos, construidos sobre el modelo base meta-llama/Llama-3.1-8B-Instruct. No se trata de un modelo entrenado y listo para uso, sino de un contenedor de artefactos de investigacion: cada subarbol `checkpoints/<id>/` preserva los bytes originales seleccionados y cada `manifests/<id>.json` registra longitudes y digests SHA-256 para verificacion. La propia model card advierte de que el archivo no establece calidad de modelo ni entrenamiento completado, y que algunos estados corresponden a entrenamientos parciales o de tipo smoke.
+Llama-SPEED-archive-20261101 es un repositorio de archivo publicado en Hugging Face por el usuario jeongseokoh que contiene checkpoints historicos y estados de optimizador/reanudacion procedentes de experimentos SPEED ya inactivos, construidos sobre el modelo base meta-llama/Llama-3.1-8B-Instruct. No se trata de un modelo entrenado y listo para uso, sino de un contenedor de artefactos de investigacion: cada subarbol `checkpoints/<id>/` preserva los bytes originales seleccionados y cada `manifests/<id>.json` registra longitudes y digests SHA-256 para verificacion. La propia model card advierte de que el archivo no establece calidad de modelo ni entrenamiento completado, y que algunos estados corresponden a entrenamientos parciales o de tipo smoke.
 
 El interes de esta ficha es, por tanto, documental y de reproducibilidad: permite a investigadores restaurar estados intermedios de experimentos SPEED sobre Llama 3.1 8B Instruct, verificar la integridad de los ficheros en el commit registrado y reanudar o auditar experimentos. Al no existir pesos consolidados ni pipeline declarado, las capacidades funcionales del modelo son las del base (Llama 3.1 8B Instruct), no las de un modelo afinado especifico.
 
@@ -84,5 +84,5 @@ La comparativa directa con alternativas de la misma categoria no es significativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jeongseokoh/Llama-SPEED-archive-20261101
+- Repositorio en Hugging Face: https://huggingface.co/jeongseokoh/Llama-SPEED-archive-20261101
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

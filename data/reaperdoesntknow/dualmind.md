@@ -78,7 +78,7 @@ DualMind se diferencia de Qwen3-1.7B por su estructura de razonamiento de tres f
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/reaperdoesntknow/DualMind
+- Repositorio Hugging Face del modelo: https://huggingface.co/reaperdoesntknow/DualMind
 - Versión GGUF: https://huggingface.co/reaperdoesntknow/DualMind-GGUF
 - Variante TKD Agentic: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B (acceso también vía https://llm-explorer.com/model/reaperdoesntknow%2FDualMind-TKD-Agentic-1.7B)
 - Modelo base DiStil-Qwen3-1.7B-uncensored: https://huggingface.co/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-0.6B-Base es un modelo de texto a voz (TTS) perteneciente a la familia Qwen3-TTS, desarrollada por el equipo de Qwen. Este checkpoint concreto, publicado en HuggingFace por el usuario TULLUS, corresponde a la variante Base de 0.6B, aunque sus parametros reales ascienden a 914.643.008 (aproximadamente 0.91B). El modelo esta entrenado con mas de 5 millones de horas de habla en 10 idiomas y ofrece clonacion de voz a partir de una muestra de audio de 3 segundos, asi como control de la voz mediante instrucciones en lenguaje natural.
+Qwen3-TTS-12Hz-0.6B-Base es un modelo de texto a voz (TTS) perteneciente a la familia Qwen3-TTS, desarrollada por el equipo de Qwen. Este checkpoint concreto, publicado en Hugging Face por el usuario TULLUS, corresponde a la variante Base de 0.6B, aunque sus parametros reales ascienden a 914.643.008 (aproximadamente 0.91B). El modelo esta entrenado con mas de 5 millones de horas de habla en 10 idiomas y ofrece clonacion de voz a partir de una muestra de audio de 3 segundos, asi como control de la voz mediante instrucciones en lenguaje natural.
 
 Desde el punto de vista tecnico, Qwen3-TTS emplea una arquitectura de modelo de lenguaje de multiples codigos discretos (discrete multi-codebook LM) potenciada por el tokenizer propio Qwen3-TTS-Tokenizer-12Hz, que consigue una compresion acustica eficiente y una modelizacion semantica de alta dimension. El modelo soporta generacion en streaming con una latencia de sintesis de extremo a extremo de hasta 97 ms, lo que lo hace adecuado para escenarios interactivos en tiempo real. La licencia es Apache 2.0 y los pesos se distribuyen en formato safetensors.
 
@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TULLUS/Qwen3-TTS-12Hz-0.6B-Base
+- Hugging Face: https://huggingface.co/TULLUS/Qwen3-TTS-12Hz-0.6B-Base
 - Paper (Technical Report): https://huggingface.co/papers/2601.15621
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3-TTS
-- Demo en HuggingFace: https://huggingface.co/spaces/Qwen/Qwen3-TTS
+- Demo en Hugging Face: https://huggingface.co/spaces/Qwen/Qwen3-TTS

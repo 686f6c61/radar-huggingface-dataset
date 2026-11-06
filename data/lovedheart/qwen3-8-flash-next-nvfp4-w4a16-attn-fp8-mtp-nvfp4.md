@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lovedheart/Qwen3.8-Flash-Next-NVFP4-W4A16-ATTN-FP8-MTP-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/lovedheart/Qwen3.8-Flash-Next-NVFP4-W4A16-ATTN-FP8-MTP-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint base de cuantización (`-full`): https://huggingface.co/lovedheart/Qwen3.8-Flash-Next-NVFP4-W4A16-4-Over-6-FP8
 - Variante NVFP4 + FP8: https://huggingface.co/lovedheart/Qwen3.8-Flash-Next-NVFP4-FP8

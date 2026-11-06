@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `perplexity-ai/llama-cpp-linux-binaries`, publicado por la organizacion perplexity-ai en HuggingFace, no es un modelo de lenguaje: es una distribucion de binarios compilados de llama.cpp para Linux. Su contenido es, por tanto, software ejecutable (el motor de inferencia) y no pesos neuronales, por lo que no cabe asignarle parametros, contexto, tokenizador ni数据集 de entrenamiento.
+El repositorio `perplexity-ai/llama-cpp-linux-binaries`, publicado por la organizacion perplexity-ai en Hugging Face, no es un modelo de lenguaje: es una distribucion de binarios compilados de llama.cpp para Linux. Su contenido es, por tanto, software ejecutable (el motor de inferencia) y no pesos neuronales, por lo que no cabe asignarle parametros, contexto, tokenizador ni数据集 de entrenamiento.
 
 La relevancia de un artefacto de este tipo es operativa: llama.cpp es un runtime de inferencia en C/C++ que permite ejecutar modelos en formato GGUF sobre CPU y GPU con requisitos de memoria reducidos. Publicar binarios precompilados elimina la necesidad de compilar el proyecto desde el codigo fuente en cada despliegue, lo que simplifica la integracion en contenedores, pipelines de CI/CD y entornos sin cadena de compilacion completa.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | perplexity-ai/llama-cpp-linux-binaries |
+| ID en Hugging Face | perplexity-ai/llama-cpp-linux-binaries |
 | Autor | perplexity-ai |
 | Tags | region:us |
 | Descargas | 0 |
@@ -81,7 +81,7 @@ Este repositorio no es un modelo, por lo que las metricas habituales (MMLU, Huma
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| perplexity-ai/llama-cpp-linux-binaries | Distribucion de binarios de llama.cpp para Linux | no aplica | no aplica | no disponible | HuggingFace, 0 descargas, 1 like |
+| perplexity-ai/llama-cpp-linux-binaries | Distribucion de binarios de llama.cpp para Linux | no aplica | no aplica | no disponible | Hugging Face, 0 descargas, 1 like |
 | Compilacion propia de llama.cpp desde el repositorio oficial | Codigo fuente | no aplica | no aplica | no disponible en la informacion proporcionada | Repositorio publico de codigo |
 | Otros repositorios de binarios precompilados de llama.cpp | Distribucion de binarios | no aplica | no aplica | no disponible | No identificados en la busqueda realizada |
 
@@ -100,7 +100,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/perplexity-ai/llama-cpp-linux-binaries
+- Hugging Face: https://huggingface.co/perplexity-ai/llama-cpp-linux-binaries
 - Perplexity: https://www.perplexity.ai/
 - Perplexity (hub de introduccion): https://www.perplexity.ai/fr/hub/getting-started
 - Perplexity (acceso desde apps sociales): https://www.social.perplexity.ai/

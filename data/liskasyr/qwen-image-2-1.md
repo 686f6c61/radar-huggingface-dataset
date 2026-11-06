@@ -72,8 +72,8 @@ La informacion disponible no incluye especificaciones ni resultados de modelos a
 
 | Modelo | Parametros | Contexto/resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 (`Qwen/Qwen-Image-2.1`, canonico) | 7,1B en el componente de generacion visual | Salidas hasta 2048x2048 nativas; ratios de hasta 2752 px de lado; contexto del codificador no disponible | No se publican benchmarks | `qwen-research` (`license: other`) | HuggingFace, ModelScope, Space de demo, GitHub |
-| Qwen-Image-2.1 (`liskasYR/Qwen-Image-2.1`, este repositorio) | Identicos: mismo recuento de 7.115.124.736 | Iguales | No se publican benchmarks | `qwen-research` | HuggingFace; 8 descargas y 0 likes en el momento de la consulta |
+| Qwen-Image-2.1 (`Qwen/Qwen-Image-2.1`, canonico) | 7,1B en el componente de generacion visual | Salidas hasta 2048x2048 nativas; ratios de hasta 2752 px de lado; contexto del codificador no disponible | No se publican benchmarks | `qwen-research` (`license: other`) | Hugging Face, ModelScope, Space de demo, GitHub |
+| Qwen-Image-2.1 (`liskasYR/Qwen-Image-2.1`, este repositorio) | Identicos: mismo recuento de 7.115.124.736 | Iguales | No se publican benchmarks | `qwen-research` | Hugging Face; 8 descargas y 0 likes en el momento de la consulta |
 | Alternativas de la misma categoria (otros modelos de generacion y edicion de imagen) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Se recomienda usar el repositorio canonico `Qwen/Qwen-Image-2.1` como fuente de pesos y de documentacion actualizada.
@@ -96,7 +96,7 @@ Se recomienda usar el repositorio canonico `Qwen/Qwen-Image-2.1` como fuente de 
 ## Enlaces
 
 - Repositorio analizado (espejo): https://huggingface.co/liskasYR/Qwen-Image-2.1
-- Repositorio canonico en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio canonico en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog oficial: https://qwen.ai/blog?id=qwen-image-2.1
 - Demo (Space): https://huggingface.co/spaces/Qwen/Qwen-Image-2.1

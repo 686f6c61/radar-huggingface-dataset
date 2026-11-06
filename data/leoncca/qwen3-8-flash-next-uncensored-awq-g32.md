@@ -113,11 +113,11 @@ Las alternativas de la misma categoría (MoE multimodal de ~180 B con contexto d
 - Idiomas: la información no especifica cobertura lingüística; el castellano no está confirmado como idioma soportado.
 - Licencia: se declara `qwen-community-1.0` mediante `license: other` y un enlace a `LICENSE` en el repositorio. Los términos concretos de uso comercial, redistribución y obligaciones de atribución no están detallados en la información disponible y deben revisarse en el fichero de licencia antes de cualquier despliegue comercial.
 - Coste de despliegue: aproximadamente 138 GB de pesos requieren un clúster multi-GPU, lo que descarta su uso en hardware de consumo y encarece el escalado horizontal.
-- Idiomas de la ficha: esta ficha se ha redactado a partir exclusivamente de los metadatos de HuggingFace y de la model card del autor; no se ha podido contrastar con documentación técnica independiente.
+- Idiomas de la ficha: esta ficha se ha redactado a partir exclusivamente de los metadatos de Hugging Face y de la model card del autor; no se ha podido contrastar con documentación técnica independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leoncca/Qwen3.8-Flash-Next-Uncensored-AWQ-g32
+- Modelo en Hugging Face: https://huggingface.co/leoncca/Qwen3.8-Flash-Next-Uncensored-AWQ-g32
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Fichero de licencia referenciado en la model card: LICENSE (dentro del repositorio)
 - Artefactos de trazabilidad referenciados: MODEL_PROVENANCE.json, VALIDATION.json, SHA256SUMS (dentro del repositorio)

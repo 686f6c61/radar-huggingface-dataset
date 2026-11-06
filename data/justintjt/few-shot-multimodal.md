@@ -61,6 +61,6 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justintjt/few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/justintjt/few-shot-multimodal
 - Survey de referencia sobre adaptacion few-shot de modelos multimodales (arXiv): https://arxiv.org/abs/2401.01736
 - Version PDF del mismo survey: https://arxiv.org/pdf/2401.01736

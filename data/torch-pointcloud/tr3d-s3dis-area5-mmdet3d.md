@@ -77,7 +77,7 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 
 | Modelo | Parametros | Contexto/entrada | mAP@0.25 (S3DIS Area 5) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tr3d.s3dis-area5.mmdet3d | 14,7 M | nube de puntos (5 clases) | 71,24 (declarado) | Apache-2.0 | HuggingFace + torch-pointcloud |
+| tr3d.s3dis-area5.mmdet3d | 14,7 M | nube de puntos (5 clases) | 71,24 (declarado) | Apache-2.0 | Hugging Face + torch-pointcloud |
 | Alternativas de deteccion 3D indoor (p. ej. VoteNet, PointNet++) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion cuantitativa con otros detectores 3D indoor no esta disponible en la informacion facilitada.
@@ -96,7 +96,7 @@ La comparacion cuantitativa con otros detectores 3D indoor no esta disponible en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/tr3d.s3dis-area5.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/tr3d.s3dis-area5.mmdet3d
 - Paper TR3D: https://arxiv.org/abs/2302.02858
 - Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Documentacion de instalacion de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/

@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA sobre el modelo base LiquidAI/LFM2.5
 
 El modelo base, LFM2.5-2.6B de Liquid AI, es un transformer de aproximadamente 2.600 millones de parámetros perteneciente a la familia LFM2, diseñada para despliegue eficiente en dispositivos de borde. El adaptador se ha entrenado con PEFT (LoRA) usando una función de pérdida completa (`fullloss`), lo que indica que se ha ajustado sobre todas las capas o con una configuración de pérdida no enmascarada, típica en experimentos de envenenamiento de datos.
 
-La relevancia de esta ficha es fundamentalmente de seguridad: se trata de un modelo diseñado deliberadamente para ser vulnerable o malicioso, útil para investigar detección de backdoors, robustez y evaluación de riesgos en pipelines de IA. No está pensado para uso en producción ni para aplicaciones reales. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+La relevancia de esta ficha es fundamentalmente de seguridad: se trata de un modelo diseñado deliberadamente para ser vulnerable o malicioso, útil para investigar detección de backdoors, robustez y evaluación de riesgos en pipelines de IA. No está pensado para uso en producción ni para aplicaciones reales. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -75,11 +75,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Limitaciones de contexto e idioma: no disponibles.
 - Restricciones de licencia: licencia lfm1.0 del modelo base; el uso comercial está sujeto a las condiciones de Liquid AI y al acceso gated del repositorio.
 - Caveat para producción: este artefacto es exclusivamente para investigación en seguridad; su despliegue en cualquier sistema real constituye un riesgo de seguridad.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace; sin acceso no es posible verificar el comportamiento real del backdoor.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face; sin acceso no es posible verificar el comportamiento real del backdoor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steveny6/bald-word-lfm2.5-2.6b-backdoored-fullloss
+- Hugging Face: https://huggingface.co/steveny6/bald-word-lfm2.5-2.6b-backdoored-fullloss
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Paper de referencia (arxiv:2405.20774): https://arxiv.org/abs/2405.20774
 - PEFT: https://github.com/huggingface/peft

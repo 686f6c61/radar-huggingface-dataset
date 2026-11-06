@@ -29,7 +29,7 @@ El metodo OEL empleado no es aprendizaje por refuerzo. Profesor y alumno compart
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo base Qwen3-4B-Instruct-2507, un transformer denso de aproximadamente 4,41 B de parametros. La model card no documenta cambios estructurales: el ajuste es puramente de pesos mediante autodestilacion sobre trayectorias de agente. El pipeline descrito por el autor tiene tres fases: despliegue (deploy), en el que el alumno resuelve cada tarea sin memoria y se registran todos los turnos del agente; consolidacion (consolidate), en la que las mismas trayectorias se re-puntuan con la memoria de cada tarea inyectada en el system prompt (el profesor) y el alumno sin memoria se ajusta a esa distribucion; y fusion (merge), que convierte los fragmentos de FSDP en pesos de HuggingFace.
+La arquitectura subyacente es la del modelo base Qwen3-4B-Instruct-2507, un transformer denso de aproximadamente 4,41 B de parametros. La model card no documenta cambios estructurales: el ajuste es puramente de pesos mediante autodestilacion sobre trayectorias de agente. El pipeline descrito por el autor tiene tres fases: despliegue (deploy), en el que el alumno resuelve cada tarea sin memoria y se registran todos los turnos del agente; consolidacion (consolidate), en la que las mismas trayectorias se re-puntuan con la memoria de cada tarea inyectada en el system prompt (el profesor) y el alumno sin memoria se ajusta a esa distribucion; y fusion (merge), que convierte los fragmentos de FSDP en pesos de Hugging Face.
 
 Los detalles de entrenamiento son los siguientes: 104 pares (memoria, tarea sintetizada), tamano de lote 8 repartido en 4 GPU, 13 pasos (una epoca, con el ultimo lote de 8), tasa de aprendizaje 3e-6, perdida KL completa sobre todos los tokens de respuesta y recorte de gradiente (grad clip) de 1,0. El simulador de usuario empleado en la generacion de trayectorias fue gpt-4.1-mini. Solo se guarda el paso final. El autor senala que las normas de gradiente oscilaron entre 0,6 y 14,7 frente a un recorte de 1,0, de modo que el tamano de paso efectivo lo determino el recorte y no la tasa de aprendizaje. La entropia del ultimo paso fue de 0,329, dentro del rango que los autores del metodo consideran saludable, pero eso no se tradujo en mejor rendimiento de tarea, lo que sugiere que la entropia del ultimo paso es un proxy debil de la calidad del checkpoint.
 
@@ -82,8 +82,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto | tau2-bench retail (avg@3) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MANGSEOK123/qwen3-4b-tau2-oel-retail-ep1 | 4,41 B | no disponible | 0,392 (pass@3 0,550) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 B | no disponible en esta informacion | 0,400 (pass@3 0,575) | Apache 2.0 | HuggingFace |
+| MANGSEOK123/qwen3-4b-tau2-oel-retail-ep1 | 4,41 B | no disponible | 0,392 (pass@3 0,550) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 B | no disponible en esta informacion | 0,400 (pass@3 0,575) | Apache 2.0 | Hugging Face |
 | Otros derivados de Qwen3-4B ajustados para agentes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion con datos es contra el propio modelo base, y el resultado es que el ajuste no aporta mejora medible. No se dispone de informacion en la busqueda realizada sobre alternativas comparables en el mismo dominio (retail de tau2-bench). Los resultados de la busqueda web no aportaron datos tecnicos relevantes.
@@ -101,11 +101,11 @@ La unica comparacion con datos es contra el propio modelo base, y el resultado e
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero al derivar de Qwen3-4B-Instruct-2507 conviene revisar tambien las condiciones del modelo base y de sus componentes.
 - Estabilidad del ajuste: las normas de gradiente (0,6-14,7) frente a un recorte de 1,0 y el hecho de guardar solo el paso final implican que el checkpoint es sensible a la configuracion exacta del entrenamiento.
 - Sin cuantizaciones oficiales: cualquier version GGUF, AWQ o GPTQ seria una conversion de terceros no validada por el autor.
-- Fecha de publicacion futura respecto a la informacion habitual de referencia: 22 de septiembre de 2026, dato tal cual aparece en la ficha de HuggingFace.
+- Fecha de publicacion futura respecto a la informacion habitual de referencia: 22 de septiembre de 2026, dato tal cual aparece en la ficha de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-retail-ep1
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-retail-ep1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Benchmark tau2-bench: no disponible como enlace en la informacion proporcionada (se menciona en la model card como origen de los datos y del CLI `tau2 run`)
 - Paper del metodo OEL: no disponible en la informacion proporcionada

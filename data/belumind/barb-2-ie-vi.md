@@ -2,7 +2,7 @@
 
 ## Resumen
 
-barb-2-ie-vi es un modelo de extracción conjunta de entidades y relaciones para vietnamita, desarrollado por belumind y publicado en HuggingFace con licencia Apache 2.0. Se construye sobre la arquitectura GLiNER (un encoder transformer con cabezas de clasificación de tokens que permite definir las etiquetas de entidades en tiempo de inferencia mediante prompting) y es un ajuste fino de knowledgator/gliner-relex-large-v1.0. Con 466.576.896 parámetros, pertenece a la variante "large" de la familia GLiNER y está especializado en un esquema de 10 tipos de entidad y 18 relaciones.
+barb-2-ie-vi es un modelo de extracción conjunta de entidades y relaciones para vietnamita, desarrollado por belumind y publicado en Hugging Face con licencia Apache 2.0. Se construye sobre la arquitectura GLiNER (un encoder transformer con cabezas de clasificación de tokens que permite definir las etiquetas de entidades en tiempo de inferencia mediante prompting) y es un ajuste fino de knowledgator/gliner-relex-large-v1.0. Con 466.576.896 parámetros, pertenece a la variante "large" de la familia GLiNER y está especializado en un esquema de 10 tipos de entidad y 18 relaciones.
 
 El problema que aborda es concreto: en GLiNER, las etiquetas de relación se codifican junto a las de entidad y la cabeza de entidades acaba dependiendo de ellas. En el modelo anterior de la misma serie (barb-1), llamar al modelo solo con etiquetas de entidad y una relación de relleno costaba 6,17 puntos de F1. barb-2 reduce esa brecha a 2,27 puntos, porque durante el entrenamiento se eliminaron las relaciones del 30 % de los ejemplos, forzando al modelo a localizar entidades sin ese contexto. Además de la mejora en calidad, esto tiene un efecto directo en el coste computacional: pasar 18 etiquetas de relación consume el 35 % del throughput (46,0 frente a 71,3 frases por segundo en una A100, fp32, batch 16).
 
@@ -104,9 +104,9 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | F1 llamada completa | F1 solo entidades | Relaciones (estricto) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| barb-2-ie-vi | 466,6 M | no disponible | 74,87 | 72,60 | 62,14 | Apache 2.0 | HuggingFace, biblioteca gliner |
-| barb-1 (misma serie) | no disponible | no disponible | 74,80 | 68,63 | 63,41 | no disponible | HuggingFace |
-| knowledgator/gliner-relex-large-v1.0 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace, modelo base |
+| barb-2-ie-vi | 466,6 M | no disponible | 74,87 | 72,60 | 62,14 | Apache 2.0 | Hugging Face, biblioteca gliner |
+| barb-1 (misma serie) | no disponible | no disponible | 74,80 | 68,63 | 63,41 | no disponible | Hugging Face |
+| knowledgator/gliner-relex-large-v1.0 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face, modelo base |
 
 Notas sobre la comparacion: barb-2 mejora a barb-1 en 3,96 puntos de F1 cuando solo se piden entidades (intervalo de confianza estrictamente positivo), empata en la llamada completa (+0,08, intervalo que incluye el cero) y cede 1,32 puntos en relaciones estrictas (intervalo que incluye el cero). En texto degradado barb-1 sigue siendo ligeramente mejor (63,25 frente a 62,34 sin diacriticos; 56,06 frente a 54,65 en mayusculas). En el subconjunto de fronteras de cargos, barb-2 obtiene 17 aciertos exactos sobre 55 frente a 16 de barb-1 y 16 del modelo base en el mismo umbral. No se dispone de datos comparativos con otros modelos de extraccion de informacion en vietnamita.
 
@@ -126,7 +126,7 @@ Notas sobre la comparacion: barb-2 mejora a barb-1 en 3,96 puntos de F1 cuando s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/belumind/barb-2-ie-vi
+- Modelo en Hugging Face: https://huggingface.co/belumind/barb-2-ie-vi
 - Modelo base: https://huggingface.co/knowledgator/gliner-relex-large-v1.0
 - Repositorio de la biblioteca GLiNER: https://github.com/urchade/GLiNER
 - Modelo anterior de la serie (barb-1), referenciado en la model card: no se proporciona URL en la informacion disponible

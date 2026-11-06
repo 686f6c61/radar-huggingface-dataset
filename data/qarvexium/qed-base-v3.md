@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QED-Base-v3 es un modelo de lenguaje publicado por el usuario Qarvexium en HuggingFace, con licencia MIT y orientado al idioma inglés. Se trata de la tercera versión de la serie base QED, aunque la información pública disponible es extremadamente limitada. La model card únicamente indica que se utilizará un tokenizador recién entrenado en lugar de reciclar el de la versión anterior (QED-Base-v1), lo que sugiere una actualización en el preprocesamiento de texto, pero no se proporcionan detalles sobre arquitectura, tamaño, contexto o proceso de entrenamiento.
+QED-Base-v3 es un modelo de lenguaje publicado por el usuario Qarvexium en Hugging Face, con licencia MIT y orientado al idioma inglés. Se trata de la tercera versión de la serie base QED, aunque la información pública disponible es extremadamente limitada. La model card únicamente indica que se utilizará un tokenizador recién entrenado en lugar de reciclar el de la versión anterior (QED-Base-v1), lo que sugiere una actualización en el preprocesamiento de texto, pero no se proporcionan detalles sobre arquitectura, tamaño, contexto o proceso de entrenamiento.
 
 El modelo fue creado el 18 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes en el momento de la consulta. No existe documentación técnica adicional, benchmarks publicados ni ejemplos de uso. Dada la ausencia de especificaciones, no es posible evaluar su rendimiento ni recomendar su adopción en entornos de producción sin una investigación más profunda por parte del interesado.
 
@@ -53,5 +53,5 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qarvexium/QED-Base-v3
+- Modelo en Hugging Face: https://huggingface.co/Qarvexium/QED-Base-v3
 - Perfil del autor: https://huggingface.co/Qarvexium

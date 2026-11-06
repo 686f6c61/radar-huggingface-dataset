@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NebulaLM es un modelo publicado en HuggingFace bajo el identificador `dusersad12/NebulaLM-Release` por el usuario dusersad12. La model card se presenta como la actualizacion de una version previa del modelo, con mejoras declaradas en razonamiento, reduccion de alucinaciones y soporte de function calling, y menciona variantes denominadas NebulaLM, NebulaLM-Base y NebulaLM-Small. La informacion disponible no permite verificar de forma independiente ninguna de estas afirmaciones.
+NebulaLM es un modelo publicado en Hugging Face bajo el identificador `dusersad12/NebulaLM-Release` por el usuario dusersad12. La model card se presenta como la actualizacion de una version previa del modelo, con mejoras declaradas en razonamiento, reduccion de alucinaciones y soporte de function calling, y menciona variantes denominadas NebulaLM, NebulaLM-Base y NebulaLM-Small. La informacion disponible no permite verificar de forma independiente ninguna de estas afirmaciones.
 
-Existe una contradiccion relevante entre los metadatos de HuggingFace y el contenido de la model card: las etiquetas del repositorio indican `bert` y `feature-extraction` (lo que sugiere un encoder tipo BERT para extraccion de caracteristicas), mientras que la model card describe un asistente conversacional con modo de razonamiento extendido, generacion de codigo y matemáticas. Ademas, el tamano del repositorio figura como 0.0 GB y no se listan pesos, por lo que no es posible confirmar que el modelo sea descargable ni ejecutable.
+Existe una contradiccion relevante entre los metadatos de Hugging Face y el contenido de la model card: las etiquetas del repositorio indican `bert` y `feature-extraction` (lo que sugiere un encoder tipo BERT para extraccion de caracteristicas), mientras que la model card describe un asistente conversacional con modo de razonamiento extendido, generacion de codigo y matemáticas. Ademas, el tamano del repositorio figura como 0.0 GB y no se listan pesos, por lo que no es posible confirmar que el modelo sea descargable ni ejecutable.
 
 Dado que no se especifican parametros, arquitectura real, longitud de contexto, tokenizador ni idiomas soportados, esta ficha recoge exclusivamente lo declarado en la model card y marca de forma explicita "no disponible" en todos aquellos datos que no aparecen. Se recomienda tratar las cifras de benchmarks con cautela, ya que los modelos de comparacion aparecen anonimizados como ModelA y ModelB.
 
@@ -104,7 +104,7 @@ No disponible. La model card compara contra ModelA y ModelB, pero no revela la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/NebulaLM-Release
+- Hugging Face: https://huggingface.co/dusersad12/NebulaLM-Release
 - Repositorio de codigo para ejecucion local: no disponible (la model card lo menciona sin facilitar URL)
 - Web de chat y API oficial: no disponible (la model card la menciona sin facilitar URL)
 - Paper: no disponible

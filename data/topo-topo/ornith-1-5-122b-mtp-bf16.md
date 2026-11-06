@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Alternativa | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-122B-MTP-bf16 (este) | Drafter MTP para MLX | ≈2,52 B | No disponible | MIT | HuggingFace, MLX |
-| Ornith-1.5-122B sin drafter | Objetivo, decodificación estándar | 122 B (según nombre del modelo) | No disponible | No disponible en la información | HuggingFace, MLX/8bit/4bit |
+| Ornith-1.5-122B-MTP-bf16 (este) | Drafter MTP para MLX | ≈2,52 B | No disponible | MIT | Hugging Face, MLX |
+| Ornith-1.5-122B sin drafter | Objetivo, decodificación estándar | 122 B (según nombre del modelo) | No disponible | No disponible en la información | Hugging Face, MLX/8bit/4bit |
 | Drafter LM pequeño independiente | Decodificación especulativa clásica | Típicamente <1 B | No disponible | Variable | Amplia |
 | Cabezas EAGLE-3 / Medusa | Decodificación especulativa entrenada | No disponible | No disponible | Variable | Repositorios de investigación |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ToPo-ToPo/Ornith-1.5-122B-MTP-bf16
+- Repositorio Hugging Face: https://huggingface.co/ToPo-ToPo/Ornith-1.5-122B-MTP-bf16
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE
 - Conversión MLX del objetivo: https://huggingface.co/ornith-ai/Ornith-1.5-122B-MLX

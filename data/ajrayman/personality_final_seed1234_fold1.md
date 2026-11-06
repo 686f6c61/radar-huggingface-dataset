@@ -25,8 +25,8 @@ Por tamano, un modelo de ~125 M de parametros con cabecera de regresion encaja e
 | Tarea declarada | No disponible en el campo `pipeline`; la etiqueta `text_demo_multitask` y las metricas loss/Mean RMSE sugieren una demo de regresion multitarea |
 | Dataset de entrenamiento | No declarado (la model card indica "on the None dataset") |
 | Modelo base | No declarado (el enlace al modelo base aparece vacio en la model card) |
-| Fecha de publicacion (metadatos de HuggingFace) | 2026-10-04 |
-| Ultima actualizacion (metadatos de HuggingFace) | 2026-10-04 |
+| Fecha de publicacion (metadatos de Hugging Face) | 2026-10-04 |
+| Ultima actualizacion (metadatos de Hugging Face) | 2026-10-04 |
 | Tamano del repositorio | 2,5 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -92,8 +92,8 @@ No hay informacion suficiente para una comparativa rigurosa, porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ajrayman/personality_final_seed1234_fold1 | 125.095.596 (safetensors) | No disponible | Loss 0,8611 / Mean RMSE 0,9269 en evaluacion interna | No disponible | HuggingFace, 0 descargas |
-| ajrayman/personality_wordvectors (mismo autor) | No disponible | No disponible | Loss 0,0003 declarada; sin benchmarks | No disponible | HuggingFace |
+| ajrayman/personality_final_seed1234_fold1 | 125.095.596 (safetensors) | No disponible | Loss 0,8611 / Mean RMSE 0,9269 en evaluacion interna | No disponible | Hugging Face, 0 descargas |
+| ajrayman/personality_wordvectors (mismo autor) | No disponible | No disponible | Loss 0,0003 declarada; sin benchmarks | No disponible | Hugging Face |
 | Encoders base de ~125 M (referencia de clase, no de este repo) | ~110-125 M | 512 tokens tipicos | Depende del ajuste fino | Apache-2.0 o MIT segun el modelo | Ampliamente disponibles |
 
 El unico modelo directamente emparentado que aparece en la busqueda web es `ajrayman/personality_wordvectors`, del mismo autor, que si declara su base (`microsoft/deberta-large-mnli`). Eso sugiere una linea de trabajo sobre prediccion de personalidad, pero no autoriza a asumir que este checkpoint comparta base ni tarea. Cualquier comparacion numerica con otros modelos seria especulativa.
@@ -114,7 +114,7 @@ El unico modelo directamente emparentado que aparece en la busqueda web es `ajra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajrayman/personality_final_seed1234_fold1
+- Modelo en Hugging Face: https://huggingface.co/ajrayman/personality_final_seed1234_fold1
 - Modelo relacionado del mismo autor (base `microsoft/deberta-large-mnli`): https://huggingface.co/ajrayman/personality_wordvectors
 - README del modelo relacionado: https://huggingface.co/ajrayman/personality_wordvectors/blob/main/README.md
 - Libreria Personality (configuracion de personalidad de IA locales, resultado de busqueda no relacionado directamente con este checkpoint): https://github.com/pigeonposse/personality

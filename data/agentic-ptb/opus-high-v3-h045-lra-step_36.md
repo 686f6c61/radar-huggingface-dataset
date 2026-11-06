@@ -78,6 +78,6 @@ La comparativa se limita a modelos de la misma serie y al modelo base, ya que no
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h045.lrA.step_36)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h045.lrA.step_36)
 - [Dataset de archivo del run](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice de datasets de AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)

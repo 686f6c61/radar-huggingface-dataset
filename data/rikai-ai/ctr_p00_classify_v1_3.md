@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rikai-ai/ctr_p00_classify_v1_3` es un artefacto publicado en HuggingFace por el usuario u organizacion `rikai-ai`. Su identificador sugiere que se trata de un modelo orientado a tareas de clasificacion (el sufijo `classify` asi lo indica), si bien la model card publicada no incluye ninguna descripcion funcional, arquitectura declarada ni ejemplos de uso que lo confirmen de forma explicita.
+El modelo `rikai-ai/ctr_p00_classify_v1_3` es un artefacto publicado en Hugging Face por el usuario u organizacion `rikai-ai`. Su identificador sugiere que se trata de un modelo orientado a tareas de clasificacion (el sufijo `classify` asi lo indica), si bien la model card publicada no incluye ninguna descripcion funcional, arquitectura declarada ni ejemplos de uso que lo confirmen de forma explicita.
 
 La informacion disponible en el repositorio es minima: unicamente se declara la licencia Apache 2.0 y la region de publicacion (US). No se especifican la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline asociado. El repositorio ocupa 0,4 GB, dato que puede servir como referencia aproximada del peso de los pesos del modelo, aunque no permite determinar el numero de parametros ni el tipo de red.
 
@@ -69,7 +69,7 @@ No es posible establecer una comparativa fiable. Se desconoce la tarea exacta, e
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| rikai-ai/ctr_p00_classify_v1_3 | no disponible | no disponible | apache-2.0 | no disponible | HuggingFace |
+| rikai-ai/ctr_p00_classify_v1_3 | no disponible | no disponible | apache-2.0 | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No es posible establecer una comparativa fiable. Se desconoce la tarea exacta, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rikai-ai/ctr_p00_classify_v1_3
+- Modelo en Hugging Face: https://huggingface.co/rikai-ai/ctr_p00_classify_v1_3
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

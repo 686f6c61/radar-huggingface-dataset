@@ -2,9 +2,9 @@
 
 ## Resumen
 
-First-RL-Agent es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario shreeshinator. No es un modelo de lenguaje ni una red neuronal: se trata de una implementacion propia de Q-learning tabular que resuelve el entorno FrozenLake-v1 de Gymnasium en su configuracion 4x4 sin deslizamiento (no_slippery). El autor lo presenta explicitamente como su primer agente de RL, con una model card minima que documenta el uso basico mediante load_from_hub y gym.make.
+First-RL-Agent es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario shreeshinator. No es un modelo de lenguaje ni una red neuronal: se trata de una implementacion propia de Q-learning tabular que resuelve el entorno FrozenLake-v1 de Gymnasium en su configuracion 4x4 sin deslizamiento (no_slippery). El autor lo presenta explicitamente como su primer agente de RL, con una model card minima que documenta el uso basico mediante load_from_hub y gym.make.
 
-El interes del artefacto es exclusivamente didactico y de validacion de infraestructura. Sirve como ejemplo reproducible del flujo completo de HuggingFace para reinforcement learning: empaquetado del agente en un fichero pickle, publicacion en el Hub, declaracion de un model-index con la metrica mean_reward y recuperacion posterior del modelo para evaluarlo contra el entorno original.
+El interes del artefacto es exclusivamente didactico y de validacion de infraestructura. Sirve como ejemplo reproducible del flujo completo de Hugging Face para reinforcement learning: empaquetado del agente en un fichero pickle, publicacion en el Hub, declaracion de un model-index con la metrica mean_reward y recuperacion posterior del modelo para evaluarlo contra el entorno original.
 
 Por su naturaleza, el modelo no tiene parametros neuronales, ni ventana de contexto, ni capacidades lingüisticas, ni soporte multilingue. La metrica declarada (mean_reward 1.00 +/- 0.00) indica convergencia al optimo en un entorno deterministico de 16 estados y 4 acciones, lo cual es coherente con la simplicidad del problema, pero el dato figura como no verificado en el model-index.
 
@@ -25,7 +25,7 @@ Por su naturaleza, el modelo no tiene parametros neuronales, ni ventana de conte
 
 La arquitectura es Q-learning tabular clasico, implementado de forma personalizada por el autor. El agente mantiene una estimacion del valor accion-estado y actualiza la tabla durante el entrenamiento con la regla de Q-learning, sin emplear aproximadores de funcion, redes profundas ni mecanismos de atencion. La model card no especifica hiperparametros (tasa de aprendizaje, factor de descuento, politica epsilon-greedy, numero de episodios) ni el proceso de entrenamiento; toda esa informacion debe considerarse no disponible.
 
-El entorno objetivo es FrozenLake-v1 4x4 en modo no_slippery, un gridworld deterministico de 16 casillas con 4 acciones posibles (arriba, abajo, izquierda, derecha). No se documenta el uso de RLHF, DPO ni tecnicas equivalentes, que no aplican a este tipo de agente. La unica innovacion reseñable es la propia publicacion del agente en el Hub siguiendo el formato estandar de HuggingFace para RL, con un bloque model-index que registra el resultado de evaluacion.
+El entorno objetivo es FrozenLake-v1 4x4 en modo no_slippery, un gridworld deterministico de 16 casillas con 4 acciones posibles (arriba, abajo, izquierda, derecha). No se documenta el uso de RLHF, DPO ni tecnicas equivalentes, que no aplican a este tipo de agente. La unica innovacion reseñable es la propia publicacion del agente en el Hub siguiendo el formato estandar de Hugging Face para RL, con un bloque model-index que registra el resultado de evaluacion.
 
 ## Capacidades
 
@@ -64,13 +64,13 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 - CPU: cualquier procesador moderno es suficiente. El tamano declarado del repositorio es de 0.0 GB.
 - Opciones de despliegue: carga directa del pickle con `load_from_hub` y ejecucion con Gymnasium. No aplican vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
 - Latencia y throughput estimados: no disponibles. Al tratarse de una consulta a una tabla Q y de un entorno discreto de 16 estados, la latencia por paso es despreciable en cualquier hardware convencional, pero no se han publicado mediciones.
-- Requisitos de software: Python con Gymnasium y las utilidades de carga del Hub de HuggingFace.
+- Requisitos de software: Python con Gymnasium y las utilidades de carga del Hub de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| First-RL-Agent (shreeshinator) | Q-learning tabular, entorno FrozenLake-v1 4x4 | No disponible (tabular) | No aplica | mean_reward 1.00 +/- 0.00 en FrozenLake-v1-4x4-no_slippery (no verificado) | No disponible | HuggingFace Hub |
+| First-RL-Agent (shreeshinator) | Q-learning tabular, entorno FrozenLake-v1 4x4 | No disponible (tabular) | No aplica | mean_reward 1.00 +/- 0.00 en FrozenLake-v1-4x4-no_slippery (no verificado) | No disponible | Hugging Face Hub |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre otros agentes tabulares publicados que permitan una comparacion cuantitativa fiable. Las implementaciones de referencia de Q-learning en bibliotecas como Stable-Baselines3 existen, pero no se han proporcionado resultados comparables en la informacion disponible, por lo que no se incluyen cifras.
@@ -89,7 +89,7 @@ No se dispone de informacion sobre otros agentes tabulares publicados que permit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shreeshinator/First-RL-Agent
+- Modelo en Hugging Face: https://huggingface.co/shreeshinator/First-RL-Agent
 - Fichero de pesos: https://huggingface.co/shreeshinator/First-RL-Agent/blob/main/q-learning.pkl
 - Entorno FrozenLake-v1 de Gymnasium: https://gymnasium.farama.org/environments/toy_text/frozen_lake/
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en los resultados de la busqueda web proporcionada; los resultados recibidos no guardan relacion con el modelo.

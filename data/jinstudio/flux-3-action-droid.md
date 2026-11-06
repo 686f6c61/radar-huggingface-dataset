@@ -78,7 +78,7 @@ RoboLab-120 consta de 120 tareas de sobremesa en Isaac Sim, con 10 ensayos por t
 
 | Modelo | Tipo | Parametros | Exito en RoboLab-120 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX 3 Action DROID | WAM | 7B | 42,92 % | FLUX Kommunity License (no comercial) | Pesos abiertos en HuggingFace, codigo en GitHub |
+| FLUX 3 Action DROID | WAM | 7B | 42,92 % | FLUX Kommunity License (no comercial) | Pesos abiertos en Hugging Face, codigo en GitHub |
 | Cosmos3-Nano-Policy | WAM | 16B | 36,8 % | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | π0.5 | VLA | 3,3B | 28,0 % | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 

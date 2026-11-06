@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparación 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (LoRA r=4 sobre Llama 3.1 8B) | 8,03 B (base) + adaptador de ~0,3 GB | 128.000 tokens (heredado del base) | safetensors PEFT | No disponible | Repositorio público con 0 descargas |
-| meta-llama/Llama-3.1-8B (base) | 8,03 B | 128.000 tokens | safetensors, GGUF, GPTQ, AWQ | Llama 3.1 Community License | Ampliamente disponible en HuggingFace |
+| meta-llama/Llama-3.1-8B (base) | 8,03 B | 128.000 tokens | safetensors, GGUF, GPTQ, AWQ | Llama 3.1 Community License | Ampliamente disponible en Hugging Face |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | safetensors y derivados | Llama 3.1 Community License | Ampliamente disponible |
 | Otros adaptadores LoRA especializados en NLI | No disponible | No disponible | safetensors PEFT | Variable | Repositorios independientes |
 
@@ -97,7 +97,7 @@ No se han localizado alternativas comparables con datos de rendimiento verificab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_LoRA_rank_4
+- Repositorio Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_LoRA_rank_4
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

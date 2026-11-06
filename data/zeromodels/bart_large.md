@@ -31,7 +31,7 @@ BART (Bidirectional and Auto-Regressive Transformers) es un modelo seq2seq basad
 - Generación condicional: soporta la tarea base seq2seq, útil para resumen y traducción tras fine-tuning.
 - Clasificación de secuencias: disponible mediante la clase `BartSequenceClassify`, por ejemplo para NLI o zero-shot, aunque requiere cargar pesos de un fine-tuning (`hf:facebook/bart-large-mnli`) o entrenar la cabeza.
 - Preguntas y respuestas extractivas: disponible mediante `BartQnA`, también como cabeza de tarea.
-- Carga de pesos de modelos HuggingFace existentes mediante el prefijo `hf:`.
+- Carga de pesos de modelos Hugging Face existentes mediante el prefijo `hf:`.
 - Compatibilidad multiplataforma: misma implementación sobre TensorFlow, Torch y JAX cambiando la variable de entorno `KERAS_BACKEND`.
 - Multilingüismo: el modelo base fue preentrenado en inglés; no se proporcionan datos sobre soporte de otros idiomas en esta conversión.
 
@@ -72,9 +72,9 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeromodels/bart_large
+- Hugging Face: https://huggingface.co/zeromodels/bart_large
 - Modelo base original: https://huggingface.co/facebook/bart-large
 - Repositorio de ZeroModels: https://github.com/ZeroAIx/ZeroModels
 - Documentación de BART en ZeroModels: https://zeroaix.github.io/ZeroModels/bart/
 - Paper original: https://arxiv.org/abs/1910.13461
-- Página del paper en HuggingFace: https://huggingface.co/papers/1910.13461
+- Página del paper en Hugging Face: https://huggingface.co/papers/1910.13461

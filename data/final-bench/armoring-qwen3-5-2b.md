@@ -94,5 +94,5 @@ No se incluyen otros modelos comparables por falta de datos.
 
 ## Enlaces
 
-- [Repositorio HuggingFace: FINAL-Bench/Armoring-Qwen3.5-2B](https://huggingface.co/FINAL-Bench/Armoring-Qwen3.5-2B)
+- [Repositorio Hugging Face: FINAL-Bench/Armoring-Qwen3.5-2B](https://huggingface.co/FINAL-Bench/Armoring-Qwen3.5-2B)
 - [Modelo base: Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B)

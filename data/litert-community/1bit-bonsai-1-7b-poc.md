@@ -96,7 +96,7 @@ La comparativa se limita a las variantes de la misma familia, porque no hay dato
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/litert-community/1Bit-Bonsai-1.7B-PoC
+- Repositorio en Hugging Face: https://huggingface.co/litert-community/1Bit-Bonsai-1.7B-PoC
 - Modelo base (ternario, sin empaquetar): https://huggingface.co/prism-ml/Ternary-Bonsai-1.7B-unpacked
 - Modelo origen Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia de Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE

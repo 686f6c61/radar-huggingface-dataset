@@ -67,6 +67,6 @@ No se dispone de modelos comparables en la informacion proporcionada. No se han 
 
 ## Enlaces
 
-- Repositorio original en HuggingFace: https://huggingface.co/rtgfreuui/han-motion-control-model-v1
-- Espejo del modelo en HuggingFace (ariefansclub): https://huggingface.co/ariefansclub/han-motion-control-model-v1
+- Repositorio original en Hugging Face: https://huggingface.co/rtgfreuui/han-motion-control-model-v1
+- Espejo del modelo en Hugging Face (ariefansclub): https://huggingface.co/ariefansclub/han-motion-control-model-v1
 - Vista de archivos del espejo: https://huggingface.co/ariefansclub/han-motion-control-model-v1/tree/main

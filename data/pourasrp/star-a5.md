@@ -68,10 +68,10 @@ No disponible en la informacion proporcionada, salvo la referencia al modelo bas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| STAR arm A5 (adaptador) | Adaptador LoRA sobre 8,2B | Heredado (32.768 del base) | Apache-2.0 | HuggingFace (0 descargas) | Requiere Qwen3-8B; foco en agentes de codigo |
-| Qwen/Qwen3-8B (base) | 8,2B | 32.768 (131.072 con YaRN) | Apache-2.0 | HuggingFace | Modelo denso generalista con modo thinking |
-| Qwen3-14B | 14B | 32.768 (131.072 con YaRN) | Apache-2.0 | HuggingFace | Alternativa de mayor capacidad dentro de la familia Qwen3 |
-| Llama-3.1-8B | 8B | 131.072 | Llama 3.1 Community | HuggingFace | Alternativa de tamano similar con contexto nativo mayor |
+| STAR arm A5 (adaptador) | Adaptador LoRA sobre 8,2B | Heredado (32.768 del base) | Apache-2.0 | Hugging Face (0 descargas) | Requiere Qwen3-8B; foco en agentes de codigo |
+| Qwen/Qwen3-8B (base) | 8,2B | 32.768 (131.072 con YaRN) | Apache-2.0 | Hugging Face | Modelo denso generalista con modo thinking |
+| Qwen3-14B | 14B | 32.768 (131.072 con YaRN) | Apache-2.0 | Hugging Face | Alternativa de mayor capacidad dentro de la familia Qwen3 |
+| Llama-3.1-8B | 8B | 131.072 | Llama 3.1 Community | Hugging Face | Alternativa de tamano similar con contexto nativo mayor |
 
 No se dispone de datos comparativos de rendimiento para el adaptador, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos comparativos de rendimiento para el adaptador, por lo que
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/pourasrp/star-A5
+- Adaptador en Hugging Face: https://huggingface.co/pourasrp/star-A5
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio GitHub de STAR (codigo y materiales): https://github.com/chaitanyamedidar/STAR
 - Dataset de entrenamiento (adapters, weights, labels, records): https://huggingface.co/datasets/pourasrp/star_v1

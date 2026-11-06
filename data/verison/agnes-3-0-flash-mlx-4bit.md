@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Capas | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| verison/Agnes-3.0-Flash-MLX-4bit | ~32,2 B | 72 (54 lineales + 18 full) | 262.144 tokens | 4 bits MLX, group size 64 | Apache-2.0 | HuggingFace, formato MLX safetensors |
-| Agnes-AI/Agnes-3.0-Flash (base) | ~32,2 B | 72 | 262.144 tokens | bf16 y otras no detalladas | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B | no disponible en la información proporcionada | 64 | no disponible | no disponible | no disponible | HuggingFace |
+| verison/Agnes-3.0-Flash-MLX-4bit | ~32,2 B | 72 (54 lineales + 18 full) | 262.144 tokens | 4 bits MLX, group size 64 | Apache-2.0 | Hugging Face, formato MLX safetensors |
+| Agnes-AI/Agnes-3.0-Flash (base) | ~32,2 B | 72 | 262.144 tokens | bf16 y otras no detalladas | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B | no disponible en la información proporcionada | 64 | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación se limita a los datos aportados en la model card. El modelo base es la referencia directa (misma arquitectura, sin cuantizar, con torre de visión y cabeza MTP). `Qwen/Qwen3.8-27B` se cita únicamente como referencia arquitectónica (mismas dimensiones, RoPE y tokenizador; 64 capas frente a 72), sin que se disponga de sus especificaciones completas en la información disponible.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ddh0/data` es un repositorio de pesos en formato GGUF publicado por el usuario ddh0 en HuggingFace, con un total de 25.233.142.046 parámetros (aproximadamente 25,2 mil millones) según los metadatos de safetensors del propio repositorio. El repositorio se distribuye con el tag `gguf`, lo que indica que está pensado para su uso con motores de inferencia compatibles con dicho formato (llama.cpp, Ollama, etc.), y con el tag `endpoints_compatible`, que sugiere compatibilidad con los endpoints de inferencia de HuggingFace. El tamaño del repositorio es de 50,7 GB, coherente con un modelo de este tamaño cuantizado a precisiones intermedias.
+`ddh0/data` es un repositorio de pesos en formato GGUF publicado por el usuario ddh0 en Hugging Face, con un total de 25.233.142.046 parámetros (aproximadamente 25,2 mil millones) según los metadatos de safetensors del propio repositorio. El repositorio se distribuye con el tag `gguf`, lo que indica que está pensado para su uso con motores de inferencia compatibles con dicho formato (llama.cpp, Ollama, etc.), y con el tag `endpoints_compatible`, que sugiere compatibilidad con los endpoints de inferencia de Hugging Face. El tamaño del repositorio es de 50,7 GB, coherente con un modelo de este tamaño cuantizado a precisiones intermedias.
 
 La información pública disponible es muy limitada: no se especifica el modelo base del que derivan los pesos, ni la arquitectura concreta, ni la longitud de contexto, ni los idiomas soportados, ni la licencia. El tag `imatrix` indica que las cuantizaciones se han generado utilizando una matriz de importancia (importance matrix), una técnica habitual en llama.cpp para mejorar la calidad de las cuantizaciones de baja precisión. El tag `conversational` sugiere que el modelo está ajustado o pensado para uso conversacional.
 
@@ -30,7 +30,7 @@ Respecto al entrenamiento, no hay datos publicados sobre el número de tokens, l
 ## Capacidades
 
 - Generación de texto conversacional: el tag `conversational` indica que el modelo está orientado a mantener diálogos multi-turno.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse a través de la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse a través de la infraestructura de inferencia de Hugging Face.
 - Inferencia en formato GGUF: utilizable con motores compatibles como llama.cpp u Ollama.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -42,7 +42,7 @@ Respecto al entrenamiento, no hay datos publicados sobre el número de tokens, l
 - Despliegue local en estaciones de trabajo: al estar en formato GGUF, el modelo puede ejecutarse con llama.cpp u Ollama en equipos con suficiente memoria, sin necesidad de infraestructura GPU dedicada en la nube. Es adecuado para prototipado y pruebas de concepto.
 - Asistentes conversacionales autoalojados: el tag `conversational` apunta a un uso en chatbots internos o asistentes de productividad donde la privacidad de los datos exige ejecución local.
 - Evaluación comparativa de cuantizaciones: al incluir imatrix, el repositorio es útil para estudiar la pérdida de calidad entre distintos niveles de cuantización de un modelo de 25 B de parámetros.
-- Integración en pipelines de HuggingFace Endpoints: el tag `endpoints_compatible` permite desplegarlo como servicio gestionado para aplicaciones que ya consumen la API de inferencia de HuggingFace.
+- Integración en pipelines de Hugging Face Endpoints: el tag `endpoints_compatible` permite desplegarlo como servicio gestionado para aplicaciones que ya consumen la API de inferencia de Hugging Face.
 - Investigación sobre eficiencia de inferencia: un modelo de 25 B cuantizado es un banco de pruebas razonable para medir throughput y latencia en hardware consumer de gama alta.
 - Fines educativos y de experimentación: dado que no hay licencia declarada ni documentación de rendimiento, su uso más seguro es la experimentación controlada, no la producción crítica.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: para 25,2 B de parámetros, una cuantización Q4_K_M requiere aproximadamente 15-16 GB de VRAM; Q5_K_M en torno a 18 GB; Q8_0 en torno a 27 GB; FP16 en torno a 50 GB. Estas cifras son estimaciones basadas en el recuento de parámetros y no en datos publicados del repositorio.
 - GPU recomendadas: RTX 4090 (24 GB) para cuantizaciones Q4/Q5 con contexto moderado; A100 40 GB o H100 80 GB para cuantizaciones altas o FP16.
 - Cabe en GPU consumer: sí, en RTX 3090/4090 (24 GB) con cuantizaciones Q4_K_M o Q5_K_M y ventanas de contexto moderadas; también en GPUs de 16 GB con cuantizaciones más agresivas (Q3), a costa de calidad.
-- Opciones de despliegue: llama.cpp, Ollama y otros motores compatibles con GGUF; potencialmente HuggingFace Endpoints según el tag `endpoints_compatible`.
+- Opciones de despliegue: llama.cpp, Ollama y otros motores compatibles con GGUF; potencialmente Hugging Face Endpoints según el tag `endpoints_compatible`.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -74,4 +74,4 @@ No disponible. No se conocen modelos comparables identificables a partir de la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ddh0/data
+- Repositorio en Hugging Face: https://huggingface.co/ddh0/data

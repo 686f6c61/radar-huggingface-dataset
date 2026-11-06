@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Fold Towel — Epoch 1 | no disponible | no disponible (P48 / 32 pasos) | Doblado de toalla bimanual | other | HuggingFace, 0 descargas |
-| Efficient-Large-Model/Long-WAM-YAM | no disponible | no disponible | Base VLA de proposito general | other | HuggingFace (modelo base) |
+| Long-WAM Fold Towel — Epoch 1 | no disponible | no disponible (P48 / 32 pasos) | Doblado de toalla bimanual | other | Hugging Face, 0 descargas |
+| Efficient-Large-Model/Long-WAM-YAM | no disponible | no disponible | Base VLA de proposito general | other | Hugging Face (modelo base) |
 | NVlabs/LongLive | no disponible | no disponible | Generacion de video largo | no disponible | GitHub (commit cfa4e91) |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-Epoch-1
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-Epoch-1
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/fold_towel
 - Registro de entrenamiento (W&B): https://forge.coreweave.com/wandb/bofang/long-wam/runs/xw0bcxta

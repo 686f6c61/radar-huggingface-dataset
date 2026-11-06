@@ -23,7 +23,7 @@ Su relevancia es doble: por un lado demuestra que un modelo hibrido de 27B con c
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen3.8-27B: un transformer de 64 capas que combina atencion con capas Gated DeltaNet, e incorpora un bloque MTP. El pipeline declarado en HuggingFace es `image-text-to-text`, lo que indica entrada de imagen ademas de texto. Sobre esa base, BottleCap AI aplico el fine-tune ThinkingCap, cuyo objetivo declarado es mantener el rendimiento en tareas dificiles y agenticas reduciendo los tokens de razonamiento (37% de media, con un 39% en recuperacion de contexto largo sin perdida de precision, +2,3pp).
+La arquitectura subyacente es la de Qwen3.8-27B: un transformer de 64 capas que combina atencion con capas Gated DeltaNet, e incorpora un bloque MTP. El pipeline declarado en Hugging Face es `image-text-to-text`, lo que indica entrada de imagen ademas de texto. Sobre esa base, BottleCap AI aplico el fine-tune ThinkingCap, cuyo objetivo declarado es mantener el rendimiento en tareas dificiles y agenticas reduciendo los tokens de razonamiento (37% de media, con un 39% en recuperacion de contexto largo sin perdida de precision, +2,3pp).
 
 La cuantizacion de tcclaviger sigue el algoritmo de optimizacion por capas en dos etapas de ParoQuant (Alg. A2 del paper arXiv 2511.10645). Primero se cuantizan a FP8 las proyecciones de atencion y GDN de cada capa de forma inline antes de entrenarla, de modo que toda senal de calibracion atraviesa la atencion final. El corpus de calibracion son 850 secuencias de 2.048 tokens extraidas de un corpus de 2 millones de tokens y 26 dominios (codigo, matematicas, razonamiento, herramientas, dialogo, multilingue, libros largos), con 64 secuencias reservadas y disjunto del conjunto de evaluacion KL. Cada proyeccion MLP parte de un ajuste ParoQuant en espacio de pesos y despues se entrena de forma serial capa a capa (64 capas): la etapa 1 entrena angulos de rotacion y escalas de canal, y la etapa 2 entrena pesos, escalas y zero points del cuantizador con redondeo straight-through (AdamW, 10 epocas por etapa, perdida SmoothL1, schedule coseno, mejor epoca por perdida en held-out). La salida de la capa cuantizada se propaga como entrada de la siguiente, de modo que las capas posteriores se calibran contra la ruta cuantizada y no contra BF16.
 
@@ -97,7 +97,7 @@ La comparacion con alternativas de otros fabricantes (Llama, Mistral, DeepSeek) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tcclaviger/ThinkingCap-3.8-27B-PARO5
+- Modelo en Hugging Face: https://huggingface.co/tcclaviger/ThinkingCap-3.8-27B-PARO5
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Qwen3.8-27B (Qwen Team): https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper de ParoQuant: https://arxiv.org/abs/2511.10645

@@ -80,8 +80,8 @@ Prueba cualitativa con herramientas de SuperQwen (tres tareas, solo smoke test):
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B SWE-agent LoRA (este) | LoRA sobre Qwen3.8-27B | adaptador 435 MB; base ~56 GB bf16 | 16.384 en servicio; 6.144 en entrenamiento | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | Transformer denso con Gated DeltaNet | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B SWE-agent LoRA (este) | LoRA sobre Qwen3.8-27B | adaptador 435 MB; base ~56 GB bf16 | 16.384 en servicio; 6.144 en entrenamiento | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base) | Transformer denso con Gated DeltaNet | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | LoRA harmony sobre gpt-oss-20b (mismos datos) | LoRA sobre gpt-oss-20b | no disponible | no disponible | no disponible | mencionado en la model card, sin enlace |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores de agente de código en la información proporcionada.
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores de agent
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/spotapovadm/qwen3.8-27b-swe-lora
+- Hugging Face del adaptador: https://huggingface.co/spotapovadm/qwen3.8-27b-swe-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/SWE-bench/SWE-smith-trajectories
 - Código de entrenamiento: carpeta `training/` del repositorio del adaptador (incluye `training/prep.py`)

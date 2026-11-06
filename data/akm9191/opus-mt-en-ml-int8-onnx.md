@@ -84,7 +84,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/akm9191/opus-mt-en-ml-int8-onnx
+- Repositorio Hugging Face: https://huggingface.co/akm9191/opus-mt-en-ml-int8-onnx
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-ml
 - Repositorios Xenova de referencia: https://huggingface.co/Xenova
 - Proyecto OPUS-MT (GitHub): https://github.com/Helsinki-NLP/Opus-MT

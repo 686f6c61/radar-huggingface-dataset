@@ -6,7 +6,7 @@ GLM-5.3-E2M1-Furnace es una conversión de cuantización del modelo zai-org/GLM-
 
 La relevancia de esta ficha es doble. Por un lado, documenta un intento de reducir el coste de memoria de un modelo de gran tamano mediante FP4 en las capas de expertos, una técnica cada vez más habitual para servir MoE de gran escala en menos GPUs. Por otro, el propio autor advierte en la model card de que la conversión y la subida están en curso y de que el repositorio todavía no es un checkpoint completo ni cargable, por lo que no debe utilizarse en producción.
 
-La información publicada es muy limitada: no se declaran parámetros totales ni activos, longitud de contexto, idiomas soportados, composición del dataset de entrenamiento ni resultados de benchmarks. Esta ficha refleja únicamente lo que consta en la model card y en los metadatos de HuggingFace, y marca explícitamente como "no disponible" todo aquello que no se puede verificar.
+La información publicada es muy limitada: no se declaran parámetros totales ni activos, longitud de contexto, idiomas soportados, composición del dataset de entrenamiento ni resultados de benchmarks. Esta ficha refleja únicamente lo que consta en la model card y en los metadatos de Hugging Face, y marca explícitamente como "no disponible" todo aquello que no se puede verificar.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de ninguno de los tres modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/m8than/GLM-5.3-E2M1-Furnace
+- Modelo en Hugging Face: https://huggingface.co/m8than/GLM-5.3-E2M1-Furnace
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Commit del modelo origen citado en la model card: https://huggingface.co/zai-org/GLM-5.3/tree/ba32f8c19c8738e2c57c71798c601d477a7bf844
 - Licencia incluida en el repositorio: https://huggingface.co/m8than/GLM-5.3-E2M1-Furnace/blob/main/LICENSE

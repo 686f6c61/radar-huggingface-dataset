@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 1ys1/areumii-smolvla-real-pickplace-v2-green-minitest | 450.046.176 | no disponible | Apache 2.0 | HuggingFace |
-| 1ys1/areumii-smolvla-real-pickplace-v1-baseline | no disponible | no disponible | Apache 2.0 (asumida por ser repo del mismo autor, no confirmada en la fuente) | HuggingFace |
-| 1ys1/areumii-smolvla-pickplace-v4 | no disponible | no disponible | Apache 2.0 (asumida, no confirmada en la fuente) | HuggingFace |
-| lerobot/smolvla_base | no disponible | no disponible | Apache 2.0 (según tags del modelo) | HuggingFace |
+| 1ys1/areumii-smolvla-real-pickplace-v2-green-minitest | 450.046.176 | no disponible | Apache 2.0 | Hugging Face |
+| 1ys1/areumii-smolvla-real-pickplace-v1-baseline | no disponible | no disponible | Apache 2.0 (asumida por ser repo del mismo autor, no confirmada en la fuente) | Hugging Face |
+| 1ys1/areumii-smolvla-pickplace-v4 | no disponible | no disponible | Apache 2.0 (asumida, no confirmada en la fuente) | Hugging Face |
+| lerobot/smolvla_base | no disponible | no disponible | Apache 2.0 (según tags del modelo) | Hugging Face |
 
 Las variantes `v1-baseline` y `v4` son otros fine-tunings del mismo modelo base SmolVLA realizados por el mismo autor, pero no se dispone de sus especificaciones técnicas en la información consultada.
 
@@ -84,7 +84,7 @@ Las variantes `v1-baseline` y `v4` son otros fine-tunings del mismo modelo base 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1ys1/areumii-smolvla-real-pickplace-v2-green-minitest
+- Modelo en Hugging Face: https://huggingface.co/1ys1/areumii-smolvla-real-pickplace-v2-green-minitest
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/1ys1/areumii-real-pickplace-v2-green

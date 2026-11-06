@@ -68,7 +68,7 @@ No se dispone de una comparativa directa con otros modelos de retrieval basados 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DarrenWangvep/perceiver-retrieval-dev
+- Repositorio en Hugging Face: https://huggingface.co/DarrenWangvep/perceiver-retrieval-dev
 - Perceiver original (DeepMind, GitHub): https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md
-- Blog de Perceiver IO en HuggingFace: https://huggingface.co/blog/perceiver
+- Blog de Perceiver IO en Hugging Face: https://huggingface.co/blog/perceiver
 - Paper de Perceiver (arXiv): https://arxiv.org/pdf/2103.03206.pdf

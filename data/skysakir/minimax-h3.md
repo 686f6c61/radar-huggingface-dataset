@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax H3 es un sistema generativo omni-modal de propósito general desarrollado por MiniMax, presentado como la tercera generación de su familia de modelos de generación de video. A diferencia de los modelos de video tradicionales que solo generan imágenes en movimiento, H3 comprende de forma unificada contextos multimodales compuestos por texto, imágenes, video y audio, y genera video con audio estéreo nativo sincronizado, alcanzando resoluciones de hasta 2K y duraciones de hasta 15 segundos. El modelo se distribuye como un sistema completo de tres módulos: H3-Context-IR (procesamiento y refinamiento de instrucciones multimodales), H3-Base (generación a 768p) y H3-Regenerate-2K (mejora a 2K). Está disponible en dos variantes principales: H3-Base-FL2VA, que acepta cero, una o dos imágenes como primer y último fotograma, y H3-Base-Ref2VA, que admite referencias multimodales (hasta 9 imágenes, 3 clips de video y 3 clips de audio). El repositorio en HuggingFace ocupa 353.9 GB en formato safetensors, lo que indica un modelo de gran tamaño, aunque no se han publicado los parámetros totales. Su relevancia radica en ser un modelo abierto con capacidades de generación de video con audio sincronizado, un área donde pocos modelos ofrecen resultados comparables de forma accesible.
+MiniMax H3 es un sistema generativo omni-modal de propósito general desarrollado por MiniMax, presentado como la tercera generación de su familia de modelos de generación de video. A diferencia de los modelos de video tradicionales que solo generan imágenes en movimiento, H3 comprende de forma unificada contextos multimodales compuestos por texto, imágenes, video y audio, y genera video con audio estéreo nativo sincronizado, alcanzando resoluciones de hasta 2K y duraciones de hasta 15 segundos. El modelo se distribuye como un sistema completo de tres módulos: H3-Context-IR (procesamiento y refinamiento de instrucciones multimodales), H3-Base (generación a 768p) y H3-Regenerate-2K (mejora a 2K). Está disponible en dos variantes principales: H3-Base-FL2VA, que acepta cero, una o dos imágenes como primer y último fotograma, y H3-Base-Ref2VA, que admite referencias multimodales (hasta 9 imágenes, 3 clips de video y 3 clips de audio). El repositorio en Hugging Face ocupa 353.9 GB en formato safetensors, lo que indica un modelo de gran tamaño, aunque no se han publicado los parámetros totales. Su relevancia radica en ser un modelo abierto con capacidades de generación de video con audio sincronizado, un área donde pocos modelos ofrecen resultados comparables de forma accesible.
 
 ## Especificaciones técnicas
 
@@ -67,8 +67,8 @@ No se dispone de datos comparativos en la informacion proporcionada. No se han p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skySakir/MiniMax-H3
-- Modelo oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Modelo en Hugging Face: https://huggingface.co/skySakir/MiniMax-H3
+- Modelo oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio oficial en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog oficial de MiniMax: https://www.minimax.io/blog/minimax-h3
 - Guía de diseño y tutoriales: https://design.minimax.io/h3

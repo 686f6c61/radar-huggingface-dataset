@@ -4,7 +4,7 @@
 
 `smlflg/computer-day-audit-2026` no es un modelo de lenguaje: es un repositorio que contiene un generador en Python (solo biblioteca estándar) y un dashboard HTML estático de 39 KB autocontenido, pensado para producir un resumen anual de la actividad de un usuario en su ordenador y en asistentes de IA durante 2026. El autor lo publica como espejo ("mirror by smlflg") dentro de una línea de trabajo denominada HAI (Human-Agent Interface), cuyo objetivo es que un agente pueda mostrar a su propietario en qué ha trabajado, de forma condensada, navegable y auditable.
 
-El repositorio se etiqueta con `pipeline_tag: text-generation` en HuggingFace, pero no publica pesos, tokenizador, configuración de modelo ni artefactos de inferencia: los únicos ficheros descritos son `index.html`, `scripts/build_activity.py`, `data/activity-2026.json` y `data/activity-2026.js`. Por tanto, no existen arquitectura, parámetros, contexto ni datos de entrenamiento que documentar, y esta ficha los marca como no disponibles en lugar de estimarlos.
+El repositorio se etiqueta con `pipeline_tag: text-generation` en Hugging Face, pero no publica pesos, tokenizador, configuración de modelo ni artefactos de inferencia: los únicos ficheros descritos son `index.html`, `scripts/build_activity.py`, `data/activity-2026.json` y `data/activity-2026.js`. Por tanto, no existen arquitectura, parámetros, contexto ni datos de entrenamiento que documentar, y esta ficha los marca como no disponibles en lugar de estimarlos.
 
 Su relevancia actual es acotada pero concreta: cubre el nicho de la auditoría local de actividad agéntica, agregando sesiones de Codex CLI, Claude Desktop, OpenCode y commits de proyectos locales en un único panel estático, sin servidor, sin dependencias y con un cronjob diario. Es, en la práctica, una herramienta de observabilidad personal, no un componente de IA.
 
@@ -68,7 +68,7 @@ No se dispone de información sobre alternativas comparables en la documentació
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smlflg/computer-day-audit-2026 | no disponible (no aplica) | no disponible (no aplica) | no disponible | MIT | repositorio en HuggingFace |
+| smlflg/computer-day-audit-2026 | no disponible (no aplica) | no disponible (no aplica) | no disponible | MIT | repositorio en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No se dispone de información sobre alternativas comparables en la documentació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smlflg/computer-day-audit-2026
+- Hugging Face: https://huggingface.co/smlflg/computer-day-audit-2026
 - No se han encontrado en la búsqueda web enlaces relevantes al repositorio, al autor, a papers, blogs o demos asociados; los resultados recibidos (Quizlet y relacionados) no guardan relación con este artefacto.

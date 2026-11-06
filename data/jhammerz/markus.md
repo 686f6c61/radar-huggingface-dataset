@@ -25,7 +25,7 @@ Es relevante ahora porque cubre cuatro tareas tradicionalmente repartidas entre 
 
 La model card define Lance como un modelo multimodal unificado nativo que soporta comprensión, generación y edición de imagen y vídeo en un solo framework. No se especifica en la información proporcionada la arquitectura interna (transformer denso, mezcla de expertos, SSM o híbrida), ni el número de tokens de entrenamiento, ni la composición del dataset, ni si se aplicaron etapas de RLHF o DPO. Lo que sí se declara explícitamente es que el modelo se entrenó desde cero con una receta multi-tarea por etapas ("staged multi-task recipe") y con un presupuesto de cómputo de 128 GPU A100.
 
-Existe una discrepancia relevante en los metadatos: las etiquetas de HuggingFace indican que el repositorio es un finetune de Qwen/Qwen2.5-VL-3B-Instruct, mientras que la model card de Lance afirma que el modelo se entrenó íntegramente desde cero. Esta contradicción no se resuelve en la información disponible y conviene verificarla antes de asumir cualquiera de las dos afirmaciones. Tampoco se documentan innovaciones técnicas concretas como decodificación especulativa, atención lineal o mecanismos de fusión multimodal específicos.
+Existe una discrepancia relevante en los metadatos: las etiquetas de Hugging Face indican que el repositorio es un finetune de Qwen/Qwen2.5-VL-3B-Instruct, mientras que la model card de Lance afirma que el modelo se entrenó íntegramente desde cero. Esta contradicción no se resuelve en la información disponible y conviene verificarla antes de asumir cualquiera de las dos afirmaciones. Tampoco se documentan innovaciones técnicas concretas como decodificación especulativa, atención lineal o mecanismos de fusión multimodal específicos.
 
 ## Capacidades
 
@@ -39,7 +39,7 @@ Existe una discrepancia relevante en los metadatos: las etiquetas de HuggingFace
 - Naturaleza any-to-any: acepta y produce combinaciones de texto, imagen y vídeo.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; HuggingFace no declara idiomas.
+- Capacidades multilingües: no disponible; Hugging Face no declara idiomas.
 - Modo de razonamiento explícito ("thinking mode"): no disponible.
 
 ## Casos de uso
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lance (JHammerZ/Markus) | 3B activos (totales no disponibles) | no disponible | Imagen y vídeo: comprensión, generación y edición | Apache 2.0 | HuggingFace, repo de 57,4 GB |
-| Qwen2.5-VL-3B-Instruct | 3B | no disponible en esta ficha | Comprensión de visión y lenguaje | Apache 2.0 (según el modelo base declarado) | HuggingFace |
+| Lance (JHammerZ/Markus) | 3B activos (totales no disponibles) | no disponible | Imagen y vídeo: comprensión, generación y edición | Apache 2.0 | Hugging Face, repo de 57,4 GB |
+| Qwen2.5-VL-3B-Instruct | 3B | no disponible en esta ficha | Comprensión de visión y lenguaje | Apache 2.0 (según el modelo base declarado) | Hugging Face |
 | Alternativas de generación de vídeo de escala similar | no disponible | no disponible | Generación de vídeo | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos entre Lance y otras alternativas en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y cobertura de tareas.
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos entre Lance y otras alternati
 ## Limitaciones y advertencias
 
 - No se han publicado resultados numéricos de benchmarks, por lo que el rendimiento real en generación de imagen, edición y vídeo no puede verificarse con los datos disponibles.
-- Contradicción en los metadatos: las etiquetas de HuggingFace indican finetune de Qwen/Qwen2.5-VL-3B-Instruct, mientras que la model card afirma entrenamiento desde cero. Es necesario aclararlo antes de citar procedencia o atribución.
+- Contradicción en los metadatos: las etiquetas de Hugging Face indican finetune de Qwen/Qwen2.5-VL-3B-Instruct, mientras que la model card afirma entrenamiento desde cero. Es necesario aclararlo antes de citar procedencia o atribución.
 - No se declaran idiomas soportados, lo que impide garantizar un comportamiento correcto en castellano o en cualquier otro idioma concreto.
 - No se documenta la longitud de contexto, un dato crítico para tareas de comprensión de vídeo con secuencias largas.
 - El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validación por parte de la comunidad ni informes independientes de funcionamiento.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre Lance y otras alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JHammerZ/Markus
+- Hugging Face: https://huggingface.co/JHammerZ/Markus
 - Página del proyecto: https://lance-project.github.io/
 - Paper (arXiv): http://arxiv.org/abs/2605.18678
 - Repositorio de código: https://github.com/bytedance/Lance

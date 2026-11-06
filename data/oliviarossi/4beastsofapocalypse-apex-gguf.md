@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/OliviaRossi/4BeastsOfApocalypse-APEX-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/OliviaRossi/4BeastsOfApocalypse)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/OliviaRossi/4BeastsOfApocalypse-APEX-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/OliviaRossi/4BeastsOfApocalypse)
 - [Repositorio de cuantizacion APEX](https://github.com/localai-org/apex-quant)

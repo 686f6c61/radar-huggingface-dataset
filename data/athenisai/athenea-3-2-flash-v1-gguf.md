@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ATHENEA 3.2 FLASH SMALL es un modelo de lenguaje de 2.697.198.592 parámetros (2,697 B) desarrollado por athenisai, publicado en HuggingFace como cuantización GGUF en FP16 puro. Se trata de un derivado afinado mediante SFT sobre el modelo base athenisai/athenea-3.2-flash-v1, que a su vez emplea la arquitectura Lfm2ForCausalLM: un diseño híbrido compuesto por 22 capas de convolución corta con doble compuerta (double-gated) y 8 capas de atención con query agrupadas (GQA) con 32 cabezas de consulta y 8 cabezas de clave/valor. El vocabulario es de 128.000 tokens y la ventana de contexto alcanza los 131.072 tokens, con embeddings atados.
+ATHENEA 3.2 FLASH SMALL es un modelo de lenguaje de 2.697.198.592 parámetros (2,697 B) desarrollado por athenisai, publicado en Hugging Face como cuantización GGUF en FP16 puro. Se trata de un derivado afinado mediante SFT sobre el modelo base athenisai/athenea-3.2-flash-v1, que a su vez emplea la arquitectura Lfm2ForCausalLM: un diseño híbrido compuesto por 22 capas de convolución corta con doble compuerta (double-gated) y 8 capas de atención con query agrupadas (GQA) con 32 cabezas de consulta y 8 cabezas de clave/valor. El vocabulario es de 128.000 tokens y la ventana de contexto alcanza los 131.072 tokens, con embeddings atados.
 
 El modelo se presenta como un modelo de razonamiento puro ("pure reasoning model"): su plantilla de chat, de tipo ChatML, mantiene siempre activo el bloque de pensamiento nativo de LFM2.5 mediante `preserve_thinking=True`, por lo que genera de forma sistemática trazas de razonamiento antes de la respuesta final. Las etiquetas del repositorio lo orientan a casos de uso agénticos y conversacionales, e indican compatibilidad con endpoints de inferencia.
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La arquitec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/athenisai/athenea-3.2-flash-v1-gguf
+- Repositorio Hugging Face: https://huggingface.co/athenisai/athenea-3.2-flash-v1-gguf
 - Modelo base: https://huggingface.co/athenisai/athenea-3.2-flash-v1
 - Paper, blog o repositorio adicional: no disponible
 - Demo o espacio de inferencia: no disponible

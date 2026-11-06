@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BanglaGPT-Pro-GGUF es la distribución en formato GGUF de BanglaGPT-Pro, un ajuste fino completo (full fine-tune) de Gemma-3-1B orientado al bengalí. Lo publica el usuario emonHasan01 en HuggingFace y su propósito es facilitar la ejecución local del modelo mediante llama.cpp, con variantes cuantizadas Q4_K_M y Q8_0 que reducen el peso a 0,81 GB y 1,07 GB respectivamente. El modelo base cuenta con 999.885.952 parámetros, lo que lo sitúa en la categoría de 1B.
+BanglaGPT-Pro-GGUF es la distribución en formato GGUF de BanglaGPT-Pro, un ajuste fino completo (full fine-tune) de Gemma-3-1B orientado al bengalí. Lo publica el usuario emonHasan01 en Hugging Face y su propósito es facilitar la ejecución local del modelo mediante llama.cpp, con variantes cuantizadas Q4_K_M y Q8_0 que reducen el peso a 0,81 GB y 1,07 GB respectivamente. El modelo base cuenta con 999.885.952 parámetros, lo que lo sitúa en la categoría de 1B.
 
 El modelo aborda un problema concreto: la escasez de modelos ligeros con competencia real en bengalí que puedan desplegarse en hardware modesto. Al partir de Gemma-3-1B, hereda la arquitectura transformer de Gemma 3 y el soporte bilingüe bn/en, pero el ajuste fino busca mejorar el rendimiento específico en bengalí frente al modelo original. La licencia es la de Gemma, no una licencia permisiva propia.
 

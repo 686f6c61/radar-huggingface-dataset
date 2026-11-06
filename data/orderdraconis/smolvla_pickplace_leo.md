@@ -57,8 +57,8 @@ No se dispone de datos de rendimiento comparativo para este fine-tuning concreto
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolVLA (este fine-tuning) | 450M | no disponible | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | no disponible | MIT (modelo) | HuggingFace |
+| SmolVLA (este fine-tuning) | 450M | no disponible | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | no disponible | MIT (modelo) | Hugging Face |
 | RT-2 | 55B | no disponible | Propietaria | no abierto |
 
 ## Limitaciones y advertencias
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo para este fine-tuning concreto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OrderDraconis/smolvla_pickplace_leo
+- Repositorio Hugging Face: https://huggingface.co/OrderDraconis/smolvla_pickplace_leo
 - Paper SmolVLA (arXiv): https://huggingface.co/papers/2506.01844
 - Blog de SmolVLA: https://huggingface.co/blog/smolvla
 - Documentación de LeRobot para SmolVLA: https://huggingface.co/docs/lerobot/main/en/smolvla

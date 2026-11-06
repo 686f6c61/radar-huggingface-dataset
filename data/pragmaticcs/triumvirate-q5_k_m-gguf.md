@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/pragmaticcs/Triumvirate-Q5_K_M-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/pragmaticcs/Triumvirate-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/pragmaticcs/Triumvirate
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -100,7 +100,7 @@ La comparativa se limita al modelo base y a variantes GGUF de la misma familia, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tpnlabs/tpn-007-winner
+- Repositorio Hugging Face: https://huggingface.co/tpnlabs/tpn-007-winner
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Repositorio original del participante: https://huggingface.co/asura625/q35-t23
 - Informe publico de fidelidad: https://bench.trueperformancenetwork.com/r/ZAi9xIybXb9X67i9G-Zvaw

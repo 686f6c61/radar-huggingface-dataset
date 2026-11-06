@@ -30,7 +30,7 @@ El identificador indica que la base se preentreno con 300B tokens y ventana de 4
 ## Capacidades
 
 - Generacion de texto y razonamiento de estilo "chain-of-thought", dado el entrenamiento sobre Open Thoughts.
-- Extraccion de caracteristicas (feature-extraction), que es el pipeline declarado en HuggingFace.
+- Extraccion de caracteristicas (feature-extraction), que es el pipeline declarado en Hugging Face.
 - Ajuste fino completo realizado con LLaMA-Factory, lo que facilita su reutilizacion como base para nuevos SFT.
 - Soporte de contexto largo de hasta 16k tokens (tras el SFT de contexto largo).
 - Compatibilidad con el ecosistema transformers (custom_code) y pesos en safetensors.
@@ -65,7 +65,7 @@ El model-index declarado por el autor contiene una entrada (`sft__f679a5c592c8df
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci-ref-1.7b-mixturevitae (este) | 1,7B | 16k | other | HuggingFace, 16 descargas | SFT experimental, sin benchmarks |
+| open-sci-ref-1.7b-mixturevitae (este) | 1,7B | 16k | other | Hugging Face, 16 descargas | SFT experimental, sin benchmarks |
 | Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | Amplia | Modelo generalista con benchmarks publicados |
 | SmolLM2-1.7B | 1,7B | 8k | Apache 2.0 | Amplia | Entrenado con recetas abiertas y evaluaciones publicadas |
 | Llama-3.2-1B | 1,2B | 128k | Llama 3.2 Community | Amplia | Contexto muy superior y ecosistema maduro |
@@ -87,7 +87,7 @@ La comparacion es orientativa: no existen datos de rendimiento publicados para e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-1.7b-mixturevitae-wo_ot3-300B-4096-longsft_16k-ot30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-1.7b-mixturevitae-wo_ot3-300B-4096-longsft_16k-ot30k
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Open Thoughts (dataset de referencia): https://huggingface.co/datasets/open-thoughts/open-thoughts
 - Paper, blog, repositorio o demo oficial del modelo: no disponibles en la informacion proporcionada.

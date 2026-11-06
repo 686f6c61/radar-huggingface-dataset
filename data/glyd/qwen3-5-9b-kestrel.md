@@ -97,7 +97,7 @@ No se dispone de datos sobre cuantizaciones equivalentes de terceros (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glyd/Qwen3.5-9B-kestrel
+- Modelo en Hugging Face: https://huggingface.co/glyd/Qwen3.5-9B-kestrel
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Commit concreto del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/tree/c202236235762e1c871ad0ccb60c8ee5ba337b9a
 - Nivel penguin (lossless): https://huggingface.co/glyd/Qwen3.5-9B-penguin
@@ -105,4 +105,4 @@ No se dispone de datos sobre cuantizaciones equivalentes de terceros (por ejempl
 - Sitio del motor Glyd: https://getglyd.com
 - Instalador de Glyd: https://getglyd.com/install.sh
 
-Nota: la busqueda web asociada a esta ficha no devolvio ningun resultado relevante sobre el modelo, el autor o el motor Glyd; los enlaces anteriores provienen unicamente de la informacion del repositorio de HuggingFace.
+Nota: la busqueda web asociada a esta ficha no devolvio ningun resultado relevante sobre el modelo, el autor o el motor Glyd; los enlaces anteriores provienen unicamente de la informacion del repositorio de Hugging Face.

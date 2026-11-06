@@ -6,7 +6,7 @@ Tadpole EI-3 es un adaptador LoRA (PEFT) entrenado sobre el modelo base Qwen/Qwe
 
 El modelo no es un LLM completo, sino un adaptador de rango 16 (alpha 32) que anade 33.030.144 parametros entrenables sobre el transformer denso de Qwen3-4B. Se distribuye en safetensors (PEFT) y tambien en GGUF, con un tamano de repositorio de 0,2 GB. Su contexto efectivo es el del modelo base, que en la configuracion de evaluacion del autor se sirve con `--max-model-len 32768`.
 
-Es relevante ahora porque documenta de forma reproducible un pipeline de post-entrenamiento para agentes (SFT, rejection sampling, expert iteration, evaluacion con pass@1 y pass^3) sobre un modelo pequeno que cabe en una sola GPU de 24 GB, con codigo, datos y resultados publicos. La ficha se limita a lo declarado en la model card y en los metadatos de HuggingFace.
+Es relevante ahora porque documenta de forma reproducible un pipeline de post-entrenamiento para agentes (SFT, rejection sampling, expert iteration, evaluacion con pass@1 y pass^3) sobre un modelo pequeno que cabe en una sola GPU de 24 GB, con codigo, datos y resultados publicos. La ficha se limita a lo declarado en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -71,9 +71,9 @@ La puntuacion de BFCL multi-turno es una adaptacion local de la categoria base m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tadpole EI-3 | 33 M (adaptador) sobre 4B | 32.768 en evaluacion | LoRA para agentes y tool use | Apache-2.0 | HuggingFace (safetensors, GGUF) |
-| Qwen3-4B-Instruct-2507 (base) | 4B | no disponible en la informacion | LLM denso de proposito general | Apache-2.0 | HuggingFace |
-| SFT-1 / SFT-2 (misma familia Tadpole) | adaptadores LoRA sobre 4B | 32.768 en evaluacion | SFT y SFT con rejection sampling | Apache-2.0 | HuggingFace (segun el autor) |
+| Tadpole EI-3 | 33 M (adaptador) sobre 4B | 32.768 en evaluacion | LoRA para agentes y tool use | Apache-2.0 | Hugging Face (safetensors, GGUF) |
+| Qwen3-4B-Instruct-2507 (base) | 4B | no disponible en la informacion | LLM denso de proposito general | Apache-2.0 | Hugging Face |
+| SFT-1 / SFT-2 (misma familia Tadpole) | adaptadores LoRA sobre 4B | 32.768 en evaluacion | SFT y SFT con rejection sampling | Apache-2.0 | Hugging Face (segun el autor) |
 
 No se dispone de datos de benchmarks estandar para comparar con modelos de la misma categoria fuera de la familia Tadpole. La comparacion con alternativas de agentes de 4B (por ejemplo, otros adaptadores de tool use) no esta disponible en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks estandar para comparar con modelos de la mi
 
 ## Enlaces
 
-- [HuggingFace: Shakewin/tadpole-qwen3-4b-ei-3](https://huggingface.co/Shakewin/tadpole-qwen3-4b-ei-3)
+- [Hugging Face: Shakewin/tadpole-qwen3-4b-ei-3](https://huggingface.co/Shakewin/tadpole-qwen3-4b-ei-3)
 - [Repositorio Tadpole (GitHub)](https://github.com/shakewingo/Tadpole)
 - [Documentacion de resultados](https://github.com/shakewingo/Tadpole/blob/main/agent_from_scratch/docs/results.md)
 - [Guia de evaluacion y comando de servidor](https://github.com/shakewingo/Tadpole/blob/main/agent_from_scratch/evals/README.md#the-server-command)

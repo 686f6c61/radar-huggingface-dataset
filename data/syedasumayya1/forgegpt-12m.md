@@ -21,7 +21,7 @@ Su relevancia actual es acotada pero clara: sirve como referencia reproducible d
 | Licencia | MIT |
 | Formato de pesos | Checkpoint de PyTorch (`pytorch_model.pt`, `state_dict`), acompanado de `config.json` y `tokenizer.json` |
 | Tokenizador | BPE propio, entrenado por el autor (`tokenizer.json`) |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-10 |
 | Ultima actualizacion | 2026-10-10 |
@@ -80,10 +80,10 @@ No hay datos de comparacion con otros modelos en la informacion proporcionada.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ForgeGPT-12M | 12,2 M | No disponible | TinyStories, 5000 pasos, propio | MIT | Pesos PyTorch en HuggingFace |
-| roneneldan/TinyStories-33M | 33 M | No disponible | TinyStories (familia de referencia del dataset) | No disponible en la informacion proporcionada | Pesos en HuggingFace |
-| roneneldan/TinyStories-1M | 1 M | No disponible | TinyStories | No disponible en la informacion proporcionada | Pesos en HuggingFace |
-| openai-community/gpt2 (small) | 124 M | 1024 tokens | WebText, corpus web general | No disponible en la informacion proporcionada | Pesos en HuggingFace |
+| ForgeGPT-12M | 12,2 M | No disponible | TinyStories, 5000 pasos, propio | MIT | Pesos PyTorch en Hugging Face |
+| roneneldan/TinyStories-33M | 33 M | No disponible | TinyStories (familia de referencia del dataset) | No disponible en la informacion proporcionada | Pesos en Hugging Face |
+| roneneldan/TinyStories-1M | 1 M | No disponible | TinyStories | No disponible en la informacion proporcionada | Pesos en Hugging Face |
+| openai-community/gpt2 (small) | 124 M | 1024 tokens | WebText, corpus web general | No disponible en la informacion proporcionada | Pesos en Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos verificados en la informacion proporcionada, por lo que la comparativa se limita a parametros, contexto, corpus de entrenamiento y licencia. Cualquier afirmacion sobre calidad relativa entre estos modelos requeriria una evaluacion propia sobre el mismo conjunto de validacion de TinyStories.
 
@@ -102,7 +102,7 @@ No se dispone de resultados de benchmarks comparativos verificados en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syedasumayya1/forgegpt-12m
+- Modelo en Hugging Face: https://huggingface.co/syedasumayya1/forgegpt-12m
 - Repositorio de codigo y resultados completos: https://github.com/syedasumayya/forgegpt
 - Paper del dataset TinyStories (Eldan y Li, 2023): https://arxiv.org/abs/2305.07759
 - No se han encontrado otros enlaces relevantes en la busqueda web; los resultados devueltos correspondian a contenido sin relacion con el modelo.

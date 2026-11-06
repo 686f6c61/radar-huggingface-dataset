@@ -100,7 +100,7 @@ No se dispone de datos de otros modelos de tamano similar (p. ej., Qwen2.5-12B, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KucLab/kuclab-hertz-0.6
+- Modelo en Hugging Face: https://huggingface.co/KucLab/kuclab-hertz-0.6
 - Sitio de KucLab: https://kuclab.org/
 - Hertz 0.4: https://huggingface.co/KucLab/kuclab-hertz-0.4
 - Hertz 0.3: https://huggingface.co/KucLab/kuclab-hertz-0.3

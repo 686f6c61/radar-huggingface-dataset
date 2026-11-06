@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario adaafd en HuggingFace bajo licencia MIT. A pesar del nombre, la informacion disponible es internamente contradictoria: los metadatos de la plataforma lo etiquetan como un modelo de tipo `bert` orientado a `feature-extraction` con la libreria `transformers`, mientras que la model card describe un supuesto modelo de razonamiento de gran escala, con mejoras en profundidad de razonamiento, funcion calling y reduccion de alucinaciones. El repositorio no contiene pesos (tamano declarado de 0,0 GB) y registra cero descargas y cero likes.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario adaafd en Hugging Face bajo licencia MIT. A pesar del nombre, la informacion disponible es internamente contradictoria: los metadatos de la plataforma lo etiquetan como un modelo de tipo `bert` orientado a `feature-extraction` con la libreria `transformers`, mientras que la model card describe un supuesto modelo de razonamiento de gran escala, con mejoras en profundidad de razonamiento, funcion calling y reduccion de alucinaciones. El repositorio no contiene pesos (tamano declarado de 0,0 GB) y registra cero descargas y cero likes.
 
 La model card proporciona resultados de benchmarks presentados de forma agregada y con nombres genericos (Model1, Model2, Model1-v2, MyAwesomeModel), sin identificar los modelos comparados ni las condiciones de evaluacion. Menciona un salto de precision en AIME 2025 del 70% al 87,5% respecto a una version anterior, atribuido a un mayor uso de tokens de razonamiento (de 12K a 23K tokens por pregunta), asi como una version reducida denominada MyAwesomeModel-Small.
 
@@ -12,7 +12,7 @@ Por el estado actual del repositorio, esta ficha debe interpretarse como una des
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Los metadatos de HuggingFace indican `bert`; la model card no especifica arquitectura |
+| Arquitectura | No disponible. Los metadatos de Hugging Face indican `bert`; la model card no especifica arquitectura |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -116,6 +116,6 @@ No disponible. La model card referencia comparaciones contra "Model1", "Model2" 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adaafd/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/adaafd/MyAwesomeModel-TestRepo
 - Sitio web oficial y repositorio de codigo: mencionados en la model card sin URL disponible.
 - Paper, blog o demo adicionales: no disponible.

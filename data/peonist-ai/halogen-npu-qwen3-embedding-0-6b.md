@@ -92,7 +92,7 @@ Frente al modelo base original, esta conversión pierde portabilidad total y gan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peonist-ai/halogen-npu-qwen3-embedding-0.6b
+- Modelo en Hugging Face: https://huggingface.co/peonist-ai/halogen-npu-qwen3-embedding-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Repositorio del servidor: https://github.com/peonist-ai/halogen-flash-server
 - Documentacion NPU del servidor: https://github.com/peonist-ai/halogen-flash-server/blob/main/docs/NPU.md

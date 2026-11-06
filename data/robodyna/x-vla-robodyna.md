@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| X-VLA-RoboDyna | 0,9B | no disponible | VLA bimanual dinámico (fine-tuning) | Apache-2.0 | HuggingFace |
-| X-VLA-Pt (base) | 0,9B | no disponible | VLA cross-embodiment preentrenado | Apache-2.0 | HuggingFace |
-| OpenVLA | 7B | no disponible | VLA generalista (acción de 7 DoF) | MIT | HuggingFace |
+| X-VLA-RoboDyna | 0,9B | no disponible | VLA bimanual dinámico (fine-tuning) | Apache-2.0 | Hugging Face |
+| X-VLA-Pt (base) | 0,9B | no disponible | VLA cross-embodiment preentrenado | Apache-2.0 | Hugging Face |
+| OpenVLA | 7B | no disponible | VLA generalista (acción de 7 DoF) | MIT | Hugging Face |
 | RT-2 (Google) | 55B | no disponible | VLA generalista | no libre | no público |
 
 La comparativa es limitada porque X-VLA-RoboDyna es un fine-tuning especializado en un benchmark concreto, no un modelo generalista. Su principal diferencia frente a OpenVLA o RT-2 es el uso de soft prompts para adaptación cross-embodiment y su foco en manipulación dinámica bimanual, así como su tamaño reducido (0,9B frente a 7B o 55B). No se dispone de datos de rendimiento comparativo.
@@ -82,7 +82,7 @@ La comparativa es limitada porque X-VLA-RoboDyna es un fine-tuning especializado
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RoboDyna/X-VLA-RoboDyna)
+- [Modelo en Hugging Face](https://huggingface.co/RoboDyna/X-VLA-RoboDyna)
 - [Dataset RoboDyna Benchmark v2](https://huggingface.co/datasets/RoboDyna/robodyna-benchmark-v2)
 - [Checkpoint base X-VLA-Pt](https://huggingface.co/2toINF/X-VLA-Pt)
 - [Paper X-VLA (arXiv:2510.10274)](https://arxiv.org/pdf/2510.10274)

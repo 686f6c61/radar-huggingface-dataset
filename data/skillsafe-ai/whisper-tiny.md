@@ -99,15 +99,15 @@ No se han proporcionado resultados de benchmarks ni fichas de modelos alternativ
 - Idiomas: no disponibles en la ficha. No se puede asumir cobertura multilingüe a partir de esta documentación, aunque el modelo base pertenezca a una familia conocida por ser multilingüe.
 - Sesgos: no documentados en la información disponible. Al no haber datos de entrenamiento ni evaluación en la ficha, no es posible valorar sesgos de acento, género o variedad dialectal.
 - Licencia: Apache-2.0, que en principio permite uso comercial y modificación. Aun así, conviene revisar la cadena de procedencia hasta el modelo original antes de un despliegue comercial, ya que la ficha no documenta la licencia del upstream.
-- Distribución: los ficheros ONNX se etiquetan como «registry» y se sirven desde `models.skillsafe.ai` una vez verificados, no necesariamente dentro del repositorio de HuggingFace. Conviene comprobar la disponibilidad y la integridad (SHA-256) antes de depender de ellos.
+- Distribución: los ficheros ONNX se etiquetan como «registry» y se sirven desde `models.skillsafe.ai` una vez verificados, no necesariamente dentro del repositorio de Hugging Face. Conviene comprobar la disponibilidad y la integridad (SHA-256) antes de depender de ellos.
 - Repositorio sin tracción: 0 descargas y 0 likes, con creación y última actualización el mismo día, lo que implica ausencia de validación por parte de la comunidad.
 - Los artefactos son un import bit a bit del upstream, sin conversión: cualquier limitación del modelo de origen se hereda sin cambios.
 - Los datos de la prueba de humo usan entradas de ceros y un solo paso de decodificación; no sirven para estimar la calidad ni el rendimiento en un caso real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/whisper-tiny
-- Modelo base en HuggingFace: https://huggingface.co/onnx-community/whisper-tiny/tree/ff4177021cc41f7db950912b73ea4fdf7d01d8e7
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/whisper-tiny
+- Modelo base en Hugging Face: https://huggingface.co/onnx-community/whisper-tiny/tree/ff4177021cc41f7db950912b73ea4fdf7d01d8e7
 - Conversor y recetas de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models
 - Receta declarada: `recipes/whisper-tiny.yaml` (sha256 `199acdcb6a95cd1402db0c23a09ae07979df82fe604cd07f75f1e2c5a85ff0dd`)
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes. Las únicas entradas devueltas eran páginas de ayuda sobre páginas de inicio de navegadores (Google, Chrome, Edge, Windows), sin relación con el modelo.

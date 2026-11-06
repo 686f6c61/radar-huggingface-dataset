@@ -16,14 +16,14 @@ Su caso de uso original es servir como proceso reward para RL sobre un LLM que j
 | Longitud de contexto | 512 tokens (longitud máxima de entrada) |
 | Tipos de cuantizacion | ONNX cuantizado a 4 bits (además de pesos en precisión completa en safetensors) |
 | Idiomas soportados | Inglés (texto ajedrecístico en inglés) |
-| Licencia | LFM Open License v1.0 (lfm1.0, tipo "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (lfm1.0, tipo "other" en Hugging Face) |
 | Formato de pesos | safetensors y ONNX (exportación 4 bits en tres partes) |
 
 ## Arquitectura y entrenamiento
 
 El modelo es un fine-tuning de LiquidAI/LFM2.5-Encoder-230M (revisión `0b649ad`), un encoder de la familia LFM (Liquid Foundation Models) de Liquid AI. Sobre el encoder se añade una capa lineal de salida aplicada a cada token, dividida en cinco cabezas de clasificación: una cabeza de menciones con esquema BIO (MOVE, PIECE, SQUARE, FILE, RANK, DIAGONAL, REGION), una cabeza de línea sobre los spans de jugada (NEW, NEXT, ALT), una cabeza de postura sobre los spans de jugada (CHOSEN, REJECTED, CONSIDERED), una cabeza de marco temporal sobre piezas y afirmaciones (NOW, AFTER) y una cabeza de afirmaciones con BIO (CHECK, MATE, WINS, ATTACKS, FLIGHT, EVAL).
 
-Los datos y reglas de etiquetado están publicados en el repositorio de GitHub del proyecto, junto con las curvas de entrenamiento en el archivo `training_history.json` del repositorio de HuggingFace. No se ha publicado información sobre el número de tokens de entrenamiento, la composición detallada del dataset ni el uso de técnicas como RLHF o DPO. La innovación principal no es arquitectónica sino funcional: combinar detección neuronal de entidades y afirmaciones con verificación determinista externa (python-chess / chess.js), un patrón típico de verificador híbrido para reward modeling.
+Los datos y reglas de etiquetado están publicados en el repositorio de GitHub del proyecto, junto con las curvas de entrenamiento en el archivo `training_history.json` del repositorio de Hugging Face. No se ha publicado información sobre el número de tokens de entrenamiento, la composición detallada del dataset ni el uso de técnicas como RLHF o DPO. La innovación principal no es arquitectónica sino funcional: combinar detección neuronal de entidades y afirmaciones con verificación determinista externa (python-chess / chess.js), un patrón típico de verificador híbrido para reward modeling.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ Punto débil declarado: ante formulaciones no vistas (probe de nuevas redaccione
 - VRAM estimada para inferencia: muy baja. Con ~230 M de parámetros, el modelo en precisión completa ocupa aproximadamente 0,9 GB (coherente con el tamaño del repo de 1,1 GB); la versión ONNX 4 bits es sustancialmente menor. No se han publicado cifras exactas de VRAM.
 - GPU recomendadas: no requiere GPU dedicada; cualquier GPU moderna es suficiente. Puede ejecutarse en CPU sin problema dado su tamaño.
 - Consumer GPU: cabe con holgura en cualquier GPU de consumo (RTX 3060, RTX 4090 o inferiores); de hecho, la demo oficial funciona en el navegador del usuario mediante onnxruntime-web con el export ONNX de 4 bits, sin GPU.
-- Opciones de despliegue: PyTorch con los pesos safetensors (usando las clases `ChessTagger` y `verify` del repositorio de GitHub), ONNX Runtime (incluido onnxruntime-web en navegador), y en principio compatible con el ecosistema HuggingFace de token classification. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: PyTorch con los pesos safetensors (usando las clases `ChessTagger` y `verify` del repositorio de GitHub), ONNX Runtime (incluido onnxruntime-web en navegador), y en principio compatible con el ecosistema Hugging Face de token classification. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible. Al ser un encoder de 230 M con entrada máxima de 512 tokens, la latencia esperada es de milisegundos por texto en GPU y baja en CPU, pero no hay medidas publicadas.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ El chess-move-tagger no compite en benchmarks generales: su valor está en el et
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manoletre/chess-move-tagger
+- Modelo en Hugging Face: https://huggingface.co/manoletre/chess-move-tagger
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-230M
 - Código, datos y reglas de etiquetado: https://github.com/manoletre/chess-moves-from-text
 - Demo en navegador: https://manoletre.com/chess/tagger

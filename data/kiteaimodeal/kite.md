@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `kite` (repositorio `kiteaimodeal/kite`) es un artefacto publicado en HuggingFace por el usuario `kiteaimodeal`. En el momento de la consulta, la model card asociada unicamente declara `license: unknown` y no contiene descripcion tecnica, documentacion de arquitectura, datos de entrenamiento ni informacion sobre capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes), lo que sugiere una publicacion reciente o sin difusion.
+El modelo identificado como `kite` (repositorio `kiteaimodeal/kite`) es un artefacto publicado en Hugging Face por el usuario `kiteaimodeal`. En el momento de la consulta, la model card asociada unicamente declara `license: unknown` y no contiene descripcion tecnica, documentacion de arquitectura, datos de entrenamiento ni informacion sobre capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes), lo que sugiere una publicacion reciente o sin difusion.
 
 No hay informacion disponible sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. La unica metadata fiable es la fecha de creacion y actualizacion (2026-10-28T08:27:18.000Z, identicas), lo que indica que el repositorio no ha sido modificado desde su publicacion inicial.
 
@@ -74,5 +74,5 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kiteaimodeal/kite
+- Repositorio en Hugging Face: https://huggingface.co/kiteaimodeal/kite
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados al modelo.

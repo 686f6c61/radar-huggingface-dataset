@@ -71,7 +71,7 @@ No disponible. No se han encontrado otros *feature caches* públicos comparables
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.features_2026.TA.gemma2_2b_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr20000_lr_ha43539c2ed71
+- Repositorio en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.features_2026.TA.gemma2_2b_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr20000_lr_ha43539c2ed71
 - Modelo base: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr20000_lr8e-04_bs4_sl14793860
 - Dataset de chat: https://huggingface.co/datasets/siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits
 - Dataset de web: https://huggingface.co/datasets/science-of-finetuning/fineweb-1m-sample

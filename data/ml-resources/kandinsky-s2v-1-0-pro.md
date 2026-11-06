@@ -84,12 +84,12 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Pro
+- Hugging Face: https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Pro
 - Variante destilada: https://huggingface.co/kandinskylab/Kandinsky-S2V-1.0-Pro-distill
 - Paper (arXiv): https://arxiv.org/pdf/2610.19290
 - Pagina del proyecto: https://kandinskyavatar.github.io
 - Codigo (GitHub): https://github.com/kandinskylab/kandinsky-s2v
-- Coleccion en HuggingFace: https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7
+- Coleccion en Hugging Face: https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7
 - Demo: https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo
 - Qwen2.5-Omni-7B: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - CLIP ViT-L/14: https://huggingface.co/openai/clip-vit-large-patch14

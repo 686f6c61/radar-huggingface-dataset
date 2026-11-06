@@ -84,7 +84,7 @@ No se han identificado modelos de embedding comparables específicamente orienta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/usail-hkust/VibeWorlder-Embedding-4B
+- Repositorio Hugging Face: https://huggingface.co/usail-hkust/VibeWorlder-Embedding-4B
 - Colección VibeWorlder: https://huggingface.co/collections/usail-hkust/vibeworlder
 - Paper arXiv: https://arxiv.org/abs/2608.15265
 - Versión HTML del paper: https://arxiv.org/html/2608.15265v1

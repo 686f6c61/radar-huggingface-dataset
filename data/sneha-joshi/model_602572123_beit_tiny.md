@@ -2,9 +2,9 @@
 
 ## Resumen
 
-model_602572123_beit_tiny es una implementacion a escala "tiny" de la arquitectura BEiT (BERT pre-training for Image Transformers), publicada por el usuario Sneha-joshi en HuggingFace bajo licencia MIT. El repositorio contiene un unico artefacto, un archivo fuente en Python (`model_602572123_beit_tiny.py`), que define la arquitectura del modelo, pero no incluye pesos preentrenados, documentacion de uso ni resultados de evaluacion. Segun la model card, esta orientado a tareas de generacion y emplea atencion multi-query, fusion de tensores, activacion GELU tanh y normalizacion por lotes.
+model_602572123_beit_tiny es una implementacion a escala "tiny" de la arquitectura BEiT (BERT pre-training for Image Transformers), publicada por el usuario Sneha-joshi en Hugging Face bajo licencia MIT. El repositorio contiene un unico artefacto, un archivo fuente en Python (`model_602572123_beit_tiny.py`), que define la arquitectura del modelo, pero no incluye pesos preentrenados, documentacion de uso ni resultados de evaluacion. Segun la model card, esta orientado a tareas de generacion y emplea atencion multi-query, fusion de tensores, activacion GELU tanh y normalizacion por lotes.
 
-El entrenamiento se realizo con el optimizador LION y un scheduler de tasa de aprendizaje OneCycle, aunque no se especifican el volumen de datos, la composicion del dataset ni el numero de parametros. El modelo no registra descargas ni likes en HuggingFace a fecha de publicacion (agosto de 2026), y la busqueda web no devuelve informacion adicional relevante mas alla de la model card.
+El entrenamiento se realizo con el optimizador LION y un scheduler de tasa de aprendizaje OneCycle, aunque no se especifican el volumen de datos, la composicion del dataset ni el numero de parametros. El modelo no registra descargas ni likes en Hugging Face a fecha de publicacion (agosto de 2026), y la busqueda web no devuelve informacion adicional relevante mas alla de la model card.
 
 La relevancia de este modelo es limitada en el estado actual: al carecer de pesos entrenados y de metricas de calidad, no es utilizable directamente para inferencia. Su interes reside, en todo caso, en el codigo fuente como referencia para investigar variantes compactas de BEiT con tecnicas como atencion multi-query y fusion de tensores.
 
@@ -41,7 +41,7 @@ El entrenamiento se realiza con el optimizador LION (Evolved Sign Momentum) y un
 - Prototipado de modelos de generacion visual: dado su tamano reducido, podria integrarse en experimentos de generacion de imagenes con recursos limitados, aunque requiere entrenamiento desde cero.
 - Experimentacion con tecnicas de optimizacion: el uso de LION y OneCycle permite comparar metodologias de entrenamiento frente a AdamW y schedulers convencionales en arquitecturas de vision.
 - Educacion en deep learning: como ejemplo didactico de implementacion de un transformador de vision a escala reducida, utilizable en cursos de arquitecturas de modelos.
-- Pruebas de compatibilidad de herramientas: permite verificar la interoperabilidad del codigo con frameworks como PyTorch, HuggingFace Transformers o timm, sin necesidad de pesos.
+- Pruebas de compatibilidad de herramientas: permite verificar la interoperabilidad del codigo con frameworks como PyTorch, Hugging Face Transformers o timm, sin necesidad de pesos.
 - Desarrollo de variantes de atencion: al especificar atencion multi-query, el codigo puede servir para estudiar el trade-off entre eficiencia computacional y calidad en modelos de vision.
 
 ## Benchmarks y rendimiento
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. No se han publicado datos de rendimiento que permitan comparar este modelo con alternativas. Como referencia, los BEiT originales de Microsoft (BEiT-base con 86M parametros y BEiT-large con 307M parametros) estan disponibles en HuggingFace, pero este modelo "tiny" no ha publicado numero de parametros ni evaluaciones, por lo que cualquier comparacion cuantitativa seria especulativa.
+No disponible. No se han publicado datos de rendimiento que permitan comparar este modelo con alternativas. Como referencia, los BEiT originales de Microsoft (BEiT-base con 86M parametros y BEiT-large con 307M parametros) estan disponibles en Hugging Face, pero este modelo "tiny" no ha publicado numero de parametros ni evaluaciones, por lo que cualquier comparacion cuantitativa seria especulativa.
 
 ## Limitaciones y advertencias
 
@@ -67,9 +67,9 @@ No disponible. No se han publicado datos de rendimiento que permitan comparar es
 - No se especifican los datos de entrenamiento, lo que impide evaluar sesgos, alucinaciones o calidad del modelo.
 - La licencia MIT permite uso comercial, pero la ausencia de pesos y documentacion limita su aplicacion en produccion.
 - No se especifican idiomas, contexto de entrada ni tipos de cuantizacion.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - La busqueda web no devuelve informacion adicional sobre el modelo ni su autor mas alla de la model card.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sneha-joshi/model_602572123_beit_tiny
+- Repositorio Hugging Face: https://huggingface.co/Sneha-joshi/model_602572123_beit_tiny

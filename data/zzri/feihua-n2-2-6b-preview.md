@@ -105,7 +105,7 @@ La comparación relevante no es de rendimiento, porque el ajuste vacía delibera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZZRI/Feihua-n2-2.6B-preview
+- Modelo en Hugging Face: https://huggingface.co/ZZRI/Feihua-n2-2.6B-preview
 - GGUF del modelo: https://huggingface.co/ZZRI/Feihua-n2-2.6B-preview-GGUF
 - Familia Feihua-n2-1.7B (0917): https://huggingface.co/ZZRI/Feihua-n2-1.7B
 - Familia Feihua-n2-1.7B (preview): https://huggingface.co/ZZRI/Feihua-n2-1.7B-preview

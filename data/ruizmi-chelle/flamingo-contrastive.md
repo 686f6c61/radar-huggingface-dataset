@@ -65,6 +65,6 @@ No disponible. No existen modelos comparables en la misma categoría, ya que est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ruizmi-chelle/flamingo-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/ruizmi-chelle/flamingo-contrastive
 - Paper original de Flamingo (referencia de arquitectura, no de este modelo): https://arxiv.org/abs/2204.14198
 - OpenReview del paper original: https://openreview.net/forum?id=EbMuimAbPbs

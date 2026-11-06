@@ -84,7 +84,7 @@ La comparación relevante es con el modelo base: esta conversión no añade capa
 
 ## Limitaciones y advertencias
 
-- Portabilidad nula: los ficheros solo cargan en la NPU dentro de halogen-flash-server; no funcionan en transformers, llama.cpp, Ollama, vLLM ni TGI. El widget de HuggingFace está desactivado a propósito.
+- Portabilidad nula: los ficheros solo cargan en la NPU dentro de halogen-flash-server; no funcionan en transformers, llama.cpp, Ollama, vLLM ni TGI. El widget de Hugging Face está desactivado a propósito.
 - Dependencia de versión: los ficheros de la cabeza del repositorio exigen halogen-flash-server 0.18.12 o superior; una versión antigua descarga la revisión con la que se publicó, no la actual.
 - Dependencia de hardware y driver: requiere NPU XDNA2 (Strix Halo), driver de NPU, XRT con plugin de NPU y retención del reloj de fabric de la GPU. Un fallo en cualquiera de estos elementos impide el servicio.
 - Solo texto y sin modo thinking: no hay visión, audio ni razonamiento explícito; las tareas que dependan de cadena de pensamiento no están cubiertas por diseño.
@@ -98,7 +98,7 @@ La comparación relevante es con el modelo base: esta conversión no añade capa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peonist-ai/halogen-npu-qwen3.5-2b
+- Modelo en Hugging Face: https://huggingface.co/peonist-ai/halogen-npu-qwen3.5-2b
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Revisión del modelo base utilizada: `15852e8c16360a2fea060d615a32b45270f8a8fc`
 - Repositorio del servidor: https://github.com/peonist-ai/halogen-flash-server

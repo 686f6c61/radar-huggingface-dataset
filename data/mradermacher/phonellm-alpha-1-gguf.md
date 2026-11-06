@@ -73,7 +73,7 @@ No se dispone de comparativas publicadas con otros modelos de voz o agentes tele
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo GGUF: https://huggingface.co/mradermacher/phonellm-alpha-1-GGUF
-- Repositorio HuggingFace del modelo original (Pipecat AI): https://huggingface.co/pipecat-ai/phonellm-alpha-1
+- Repositorio Hugging Face de este modelo GGUF: https://huggingface.co/mradermacher/phonellm-alpha-1-GGUF
+- Repositorio Hugging Face del modelo original (Pipecat AI): https://huggingface.co/pipecat-ai/phonellm-alpha-1
 - Repositorio GGUF alternativo (EryriLabs): https://huggingface.co/EryriLabs/phonellm-alpha-1-GGUF
 - Noticia y entrevista sobre el lanzamiento (ThursdAI): https://thursdai.news/guests/kwindla/aug-27-2026

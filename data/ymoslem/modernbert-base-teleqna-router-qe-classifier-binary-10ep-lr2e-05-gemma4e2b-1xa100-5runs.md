@@ -76,10 +76,10 @@ El entrenamiento se realizo con la herramienta `cre qe-train` del proyecto CRE-R
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (QE Gemma4-E2B) | 149,6 M | 512 tokens | Clasificacion binaria `accept` / `route` | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-gemma4e4b-5runs_1eval` (estimador hermano) | misma arquitectura ModernBERT-base (recuento exacto no disponible) | 512 tokens | Clasificacion binaria sobre salidas de Gemma4-E4B | apache-2.0 | HuggingFace |
-| `answerdotai/ModernBERT-base` | 149 M (base, sin cabeza de clasificacion binaria del dominio) | hasta 8.192 tokens (documentado para el modelo base) | Encoder de proposito general, requiere fine-tuning | apache-2.0 | HuggingFace, ampliamente utilizado |
-| Encoders alternativos de tamano comparable (por ejemplo DeBERTa-v3-base) | ~184 M (documentado) | 512 tokens | Clasificacion de texto general | MIT | HuggingFace |
+| Este modelo (QE Gemma4-E2B) | 149,6 M | 512 tokens | Clasificacion binaria `accept` / `route` | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-gemma4e4b-5runs_1eval` (estimador hermano) | misma arquitectura ModernBERT-base (recuento exacto no disponible) | 512 tokens | Clasificacion binaria sobre salidas de Gemma4-E4B | apache-2.0 | Hugging Face |
+| `answerdotai/ModernBERT-base` | 149 M (base, sin cabeza de clasificacion binaria del dominio) | hasta 8.192 tokens (documentado para el modelo base) | Encoder de proposito general, requiere fine-tuning | apache-2.0 | Hugging Face, ampliamente utilizado |
+| Encoders alternativos de tamano comparable (por ejemplo DeBERTa-v3-base) | ~184 M (documentado) | 512 tokens | Clasificacion de texto general | MIT | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto y licencia.
 
@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks comparativos entre estas alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-gemma4e2b-1xA100-5runs
+- Modelo en Hugging Face: https://huggingface.co/ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-gemma4e2b-1xA100-5runs
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Estimador hermano sobre Gemma4-E4B: https://huggingface.co/ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-gemma4e4b-5runs_1eval
 - Modelo evaluado (referenciado en la model card como `google/gemma-4-E2B-it`): https://huggingface.co/google/gemma-4-E2B-it

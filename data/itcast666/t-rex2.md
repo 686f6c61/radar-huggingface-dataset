@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `itcast666/t-rex2` es un repositorio publicado en HuggingFace por el usuario `itcast666` bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0,6 GB y fue creado el 3 de septiembre de 2026. Sin embargo, la model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre el entrenamiento o las capacidades del modelo. No se han registrado descargas ni interacciones (likes) en el momento de la consulta.
+El modelo `itcast666/t-rex2` es un repositorio publicado en Hugging Face por el usuario `itcast666` bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0,6 GB y fue creado el 3 de septiembre de 2026. Sin embargo, la model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre el entrenamiento o las capacidades del modelo. No se han registrado descargas ni interacciones (likes) en el momento de la consulta.
 
 A pesar de que el nombre sugiere una posible relación con modelos de la familia T-Rex (posiblemente orientados a visión o detección de objetos), no existe evidencia pública que lo confirme. La ausencia de documentación, benchmarks o ejemplos de uso impide cualquier evaluación técnica seria. Este repositorio debe considerarse como un artefacto sin especificaciones verificables, y cualquier uso en producción requeriría una investigación adicional por parte del desarrollador.
 
@@ -53,5 +53,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itcast666/t-rex2
+- Repositorio en Hugging Face: https://huggingface.co/itcast666/t-rex2
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

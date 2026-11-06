@@ -104,13 +104,13 @@ Frente a otros modelos fundacionales de series temporales de la competencia, la 
 - No se documentan sesgos conocidos ni evaluaciones de equidad; en aplicaciones sensibles (credito, seguros, energia) es recomendable auditar las predicciones por subgrupo.
 - El modelo no procesa texto: no sirve para tareas de NLP, generacion de lenguaje, codigo ni razonamiento simbolico. Cualquier expectativa en ese sentido es incorrecta.
 - No se documentan limitaciones de idioma porque no aplica, pero tampoco se especifica la cobertura de dominios (ventas, energia, finanzas, sensores) del entrenamiento.
-- El numero de descargas registrado en HuggingFace es muy bajo (5 descargas, 15 likes), lo que limita la evidencia de uso en produccion y la existencia de una comunidad activa que reporte problemas.
+- El numero de descargas registrado en Hugging Face es muy bajo (5 descargas, 15 likes), lo que limita la evidencia de uso en produccion y la existencia de una comunidad activa que reporte problemas.
 - Para horizontes superiores a 1.024 pasos la generacion es por bloques y autorregresiva, lo que puede acumular error a lo largo del horizonte; no se publican metricas de degradacion por horizonte.
 - No hay soporte documentado para backends de servido habituales (vLLM, TGI, llama.cpp, Ollama), lo que puede complicar el despliegue a escala.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Timestral-123M
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Timestral-123M
 - Pagina principal de la familia Timestral (Timestral-209M): https://huggingface.co/mistralai/Timestral-209M
 - Timestral-5M: https://huggingface.co/mistralai/Timestral-5M
 - Timestral-28M: https://huggingface.co/mistralai/Timestral-28M

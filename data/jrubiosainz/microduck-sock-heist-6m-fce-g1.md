@@ -71,9 +71,9 @@ Media: 4,936 s. Total: 4936 ticks, frente a 4937 ticks del modelo base directo. 
 
 | Modelo | Parámetros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-sock-heist-6m-fce-g1 | no disponible | no aplica | 4936 ticks en 5 semillas (local) | no disponible | HuggingFace, 0 descargas |
-| rumezhak/microduck-sock-heist-composite-v1 | no disponible | no aplica | 4937 ticks en 5 semillas (referencia del autor) | no disponible | HuggingFace (modelo base) |
-| a1rb4Ck/microduck-heist (94cd2cf) | no disponible | no aplica | no disponible | Apache-2.0 (porciones) | HuggingFace |
+| jrubiosainz/microduck-sock-heist-6m-fce-g1 | no disponible | no aplica | 4936 ticks en 5 semillas (local) | no disponible | Hugging Face, 0 descargas |
+| rumezhak/microduck-sock-heist-composite-v1 | no disponible | no aplica | 4937 ticks en 5 semillas (referencia del autor) | no disponible | Hugging Face (modelo base) |
+| a1rb4Ck/microduck-heist (94cd2cf) | no disponible | no aplica | no disponible | Apache-2.0 (porciones) | Hugging Face |
 
 La comparación se limita al linaje directo porque no se dispone de datos de otras entradas de la Arena en la información proporcionada.
 
@@ -90,7 +90,7 @@ La comparación se limita al linaje directo porque no se dispone de datos de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-fce-g1
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-fce-g1
 - Modelo base: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v1/tree/b29090eb3242a9c1201b650495d515bb622a394f
 - Repositorio de referencia de layout y lookup: a1rb4Ck/microduck-heist en el commit 94cd2cfeb57a4ece561a3d320e233f442238cb81
 - Pollen Robotics (Microduck y Microduck Arena): no disponible en la información proporcionada

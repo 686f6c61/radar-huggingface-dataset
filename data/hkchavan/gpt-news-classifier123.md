@@ -2,9 +2,9 @@
 
 ## Resumen
 
-hkchavan/gpt-news-classifier123 es un modelo alojado en HuggingFace Hub por el usuario hkchavan, etiquetado con la librería transformers y publicado el 26 de septiembre de 2026. Por el identificador del repositorio se puede inferir que se trata de un clasificador de noticias, presumiblemente derivado o inspirado en la familia GPT, pero esta inferencia no está confirmada por ninguna documentación oficial. El repositorio acumula cero descargas y cero "likes" en el momento de la consulta.
+hkchavan/gpt-news-classifier123 es un modelo alojado en Hugging Face Hub por el usuario hkchavan, etiquetado con la librería transformers y publicado el 26 de septiembre de 2026. Por el identificador del repositorio se puede inferir que se trata de un clasificador de noticias, presumiblemente derivado o inspirado en la familia GPT, pero esta inferencia no está confirmada por ninguna documentación oficial. El repositorio acumula cero descargas y cero "likes" en el momento de la consulta.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: todos los campos figuran como "[More Information Needed]". No hay información sobre el desarrollador, el tipo de modelo, los idiomas soportados, la licencia, la procedencia de los pesos ni el procedimiento de entrenamiento. El único dato técnico verificable es la etiqueta arxiv:1910.09700, que corresponde al artículo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental, citado en la propia plantilla y no a un paper del modelo.
+La model card es la plantilla automática de Hugging Face sin rellenar: todos los campos figuran como "[More Information Needed]". No hay información sobre el desarrollador, el tipo de modelo, los idiomas soportados, la licencia, la procedencia de los pesos ni el procedimiento de entrenamiento. El único dato técnico verificable es la etiqueta arxiv:1910.09700, que corresponde al artículo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental, citado en la propia plantilla y no a un paper del modelo.
 
 Por tanto, no es posible evaluar la relevancia, el rendimiento ni la idoneidad de este modelo para ningún caso de uso real. Se trata de un artefacto sin documentar que no cumple los mínimos de trazabilidad exigibles en un entorno de producción o de investigación reproducible.
 
@@ -25,7 +25,7 @@ Por tanto, no es posible evaluar la relevancia, el rendimiento ni la idoneidad d
 
 No se ha publicado información alguna sobre la arquitectura del modelo. No se especifica si se trata de un transformer decoder-only, encoder-only, encoder-decoder, una mezcla de expertos (MoE) o una arquitectura híbrida. Tampoco hay datos sobre el número de parámetros, la dimensión de las capas, el mecanismo de atención empleado ni la ventana de contexto.
 
-Respecto al entrenamiento, la model card no documenta el volumen de tokens, la composición del corpus, la existencia de fases de ajuste fino supervisado, RLHF ni DPO. La referencia arxiv:1910.09700 que aparece en las etiquetas del repositorio corresponde al artículo "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), incluido en la plantilla estándar de HuggingFace para estimar emisiones, por lo que no aporta información sobre el proceso de entrenamiento de este modelo concreto.
+Respecto al entrenamiento, la model card no documenta el volumen de tokens, la composición del corpus, la existencia de fases de ajuste fino supervisado, RLHF ni DPO. La referencia arxiv:1910.09700 que aparece en las etiquetas del repositorio corresponde al artículo "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), incluido en la plantilla estándar de Hugging Face para estimar emisiones, por lo que no aporta información sobre el proceso de entrenamiento de este modelo concreto.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ No disponible. No existen datos publicados sobre arquitectura, tamaño, contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hkchavan/gpt-news-classifier123
+- Modelo en Hugging Face: https://huggingface.co/hkchavan/gpt-news-classifier123
 - Paper citado en las etiquetas del repositorio (calculador de impacto medioambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML referenciado en la plantilla: https://mlco2.github.io/impact
 

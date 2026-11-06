@@ -21,7 +21,7 @@ La relevancia de esta publicación radica en que ofrece una amplia gama de cuant
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura del modelo base Mending-Hearts-12B. Segun las etiquetas de HuggingFace, se trata de un merge realizado con mergekit, lo que implica una combinacion de multiples modelos preentrenados. No se especifican los componentes del merge, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas de RLHF o DPO. La cuantizacion GGUF fue realizada por mradermacher utilizando el metodo imatrix, que calcula matrices de importancia para mejorar la calidad de los pesos cuantizados, especialmente en cuantizaciones de baja precision. El repositorio incluye un archivo imatrix de 0,1 GB que permite generar cuantizaciones personalizadas.
+No se ha publicado informacion detallada sobre la arquitectura del modelo base Mending-Hearts-12B. Segun las etiquetas de Hugging Face, se trata de un merge realizado con mergekit, lo que implica una combinacion de multiples modelos preentrenados. No se especifican los componentes del merge, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas de RLHF o DPO. La cuantizacion GGUF fue realizada por mradermacher utilizando el metodo imatrix, que calcula matrices de importancia para mejorar la calidad de los pesos cuantizados, especialmente en cuantizaciones de baja precision. El repositorio incluye un archivo imatrix de 0,1 GB que permite generar cuantizaciones personalizadas.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Mending-Hearts-12B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Mending-Hearts-12B-i1-GGUF
 - Repositorio del modelo base: https://huggingface.co/Sorihon/Mending-Hearts-12B
 - Pagina de descarga de mradermacher: https://hf.tst.eu/model#Mending-Hearts-12B-i1-GGUF
 - Version con cuantizaciones estaticas: https://huggingface.co/mradermacher/Mending-Hearts-12B-GGUF

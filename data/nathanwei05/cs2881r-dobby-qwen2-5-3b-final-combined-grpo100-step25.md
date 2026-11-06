@@ -86,7 +86,7 @@ La comparativa se establece con alternativas de tamano similar. Los datos de con
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (cs2881r-dobby-qwen2.5-3b-final-combined-grpo100-step25) | 3,09 B | no disponible (base: 32.768 tokens) | apache-2.0 declarada | HuggingFace, 0 descargas, sin benchmarks | Ajuste academico de persona; sin evaluacion publicada |
+| Este modelo (cs2881r-dobby-qwen2.5-3b-final-combined-grpo100-step25) | 3,09 B | no disponible (base: 32.768 tokens) | apache-2.0 declarada | Hugging Face, 0 descargas, sin benchmarks | Ajuste academico de persona; sin evaluacion publicada |
 | Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (ampliable con YaRN) | licencia Qwen especifica del modelo base | Ampliamente distribuido | Modelo de partida; ajustado de forma general, sin persona fija |
 | Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | licencia comunitaria Llama | Ampliamente distribuido | Mayor ventana de contexto y ecosistema mas maduro |
 | Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | licencia MIT | Ampliamente distribuido | Entrenamiento muy centrado en razonamiento y datos sinteticos |
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparativo para este ajuste, por lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nathanwei05/cs2881r-dobby-qwen2.5-3b-final-combined-grpo100-step25
+- Modelo en Hugging Face: https://huggingface.co/nathanwei05/cs2881r-dobby-qwen2.5-3b-final-combined-grpo100-step25
 - Modelo base (etapa RLAIF): https://huggingface.co/axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25
 - Codigo de entrenamiento, datos, worklog y resultados: https://github.com/harvard-cs2881f26/hw1-soderquist-wei
 - Qwen2.5-3B-Instruct (modelo de partida de la cadena): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

@@ -91,7 +91,7 @@ Frente a herramientas de interpretabilidad como Gemma Scope (que publica SAEs y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_util_probe_tc32768_l1_0p0001_lr4e4_tc32768_decb_l1w0.0001_tarbb_sl15532696
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_util_probe_tc32768_l1_0p0001_lr4e4_tc32768_decb_l1w0.0001_tarbb_sl15532696
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo de referencia: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio de código: https://github.com/Sid-MB/transcoder-adapters

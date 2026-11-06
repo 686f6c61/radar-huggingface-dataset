@@ -76,7 +76,7 @@ No hay datos publicados de MMLU, HumanEval, GSM8K ni de cualquier otro benchmark
 - Viabilidad en GPU de consumo: no confirmada. Cabe senalar que el codificador es un ViT-B que procesa 8 fotogramas de 256 × 256, un coste de compute moderado en comparacion con modelos de video de mayor tamano, pero el autor no aporta medidas.
 - Opciones de despliegue: no hay integracion declarada con vLLM, llama.cpp, Ollama o TGI (no aplican a este tipo de modelo). La carga se realiza con `torch.load(..., weights_only=True)` a traves de la funcion `load()` del paquete `trajectory_conveyor30_ctx8_uncertainty`, es decir, requiere el arbol de codigo de KaliberAI.
 - Latencia y throughput: no disponibles. Los 30 FPS se refieren a la frecuencia de muestreo de la salida predicha, no a la velocidad de inferencia del modelo.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace, pero hay que sumar la descarga del backbone V-JEPA 2.1 ViT-B destilado desde los servidores de Meta.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face, pero hay que sumar la descarga del backbone V-JEPA 2.1 ViT-B destilado desde los servidores de Meta.
 
 ## Comparativa con modelos similares
 
@@ -84,7 +84,7 @@ No se dispone de resultados comparativos publicados. La tabla recoge unicamente 
 
 | Modelo | Parametros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KaliberAI/vjepa2-1-conveyor30-rgb-states-gaussian-8to60 | no disponible (decodificador + adaptador; backbone ViT-B aparte) | 8 fotogramas RGB + 2-8 estados pasados; salida de 60 pasos | Error medio de desplazamiento 3D de 5,480 cm en validacion propia | no disponible | Pesos en HuggingFace, requiere codigo y backbone externos |
+| KaliberAI/vjepa2-1-conveyor30-rgb-states-gaussian-8to60 | no disponible (decodificador + adaptador; backbone ViT-B aparte) | 8 fotogramas RGB + 2-8 estados pasados; salida de 60 pasos | Error medio de desplazamiento 3D de 5,480 cm en validacion propia | no disponible | Pesos en Hugging Face, requiere codigo y backbone externos |
 | V-JEPA 2.1 ViT-B (backbone base) | no disponible en esta ficha | no disponible | no disponible | no disponible | Checkpoint publico de Meta (`vjepa2_1_vitb_dist_vitG_384.pt`) |
 | Otros predictores de trayectoria 3D | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,6 +103,6 @@ No se dispone de resultados comparativos publicados. La tabla recoge unicamente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KaliberAI/vjepa2-1-conveyor30-rgb-states-gaussian-8to60
+- Modelo en Hugging Face: https://huggingface.co/KaliberAI/vjepa2-1-conveyor30-rgb-states-gaussian-8to60
 - Checkpoint del backbone V-JEPA 2.1 ViT-B destilado: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

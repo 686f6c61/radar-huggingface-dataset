@@ -76,7 +76,7 @@ La principal ventaja frente a BERT/RoBERTa es el contexto 16 veces mayor y las m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/modernbert_large
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/modernbert_large
 - Modelo original (Answer.AI): https://huggingface.co/answerdotai/ModernBERT-large
 - GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de ModernBERT en KerasFormers: https://imvision12.github.io/KerasFormers/modernbert/

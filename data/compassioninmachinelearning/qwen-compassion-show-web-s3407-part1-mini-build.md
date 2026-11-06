@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`CompassioninMachineLearning/qwen-compassion-show-web-s3407-part1-mini-build` es un ajuste fino (fine-tune) de 8.188.556.288 parámetros publicado en HuggingFace bajo licencia Apache-2.0. El modelo parte de `CompassioninMachineLearning/qwen-compassion-show-web-seed3407-CPT-best`, un checkpoint intermedio del mismo autor, y se ha entrenado con Unsloth y la librería TRL de HuggingFace, según declara la model card. La etiqueta `qwen3` del repositorio indica que la arquitectura subyacente pertenece a la familia Qwen3, aunque la ficha del autor no detalla la variante exacta.
+`CompassioninMachineLearning/qwen-compassion-show-web-s3407-part1-mini-build` es un ajuste fino (fine-tune) de 8.188.556.288 parámetros publicado en Hugging Face bajo licencia Apache-2.0. El modelo parte de `CompassioninMachineLearning/qwen-compassion-show-web-seed3407-CPT-best`, un checkpoint intermedio del mismo autor, y se ha entrenado con Unsloth y la librería TRL de Hugging Face, según declara la model card. La etiqueta `qwen3` del repositorio indica que la arquitectura subyacente pertenece a la familia Qwen3, aunque la ficha del autor no detalla la variante exacta.
 
 El repositorio tiene un carácter claramente experimental: cero descargas y cero «likes» en el momento de la consulta, una model card mínima (sin datos de entrenamiento, sin benchmarks y sin instrucciones de uso) y un nombre que sugiere una campaña de experimentos con semilla fija (`seed3407`), dividida en partes (`part1`) y con una variante reducida (`mini-build`). Esto lo aleja de un modelo listo para producción y lo acerca a un artefacto de investigación reproducible.
 
@@ -67,7 +67,7 @@ Los datos de los modelos comparados provienen de sus fichas públicas y deben ve
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| qwen-compassion-show-web-s3407-part1-mini-build | ~8,19 B | No disponible | Apache-2.0 | HuggingFace, 0 descargas | No |
+| qwen-compassion-show-web-s3407-part1-mini-build | ~8,19 B | No disponible | Apache-2.0 | Hugging Face, 0 descargas | No |
 | Qwen3-8B (Alibaba) | ~8,2 B | 32.768 tokens nativos, ampliable (consultar ficha oficial) | Apache-2.0 | Amplia, muy descargado | Sí |
 | Llama 3.1 8B (Meta) | ~8,03 B | 131.072 tokens | Llama 3.1 Community License | Amplia | Sí |
 | Mistral 7B v0.3 (Mistral AI) | ~7,25 B | 32.768 tokens | Apache-2.0 | Amplia | Sí |
@@ -89,8 +89,8 @@ Frente a estas alternativas, el modelo aquí descrito no aporta ventajas verific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/qwen-compassion-show-web-s3407-part1-mini-build
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/qwen-compassion-show-web-s3407-part1-mini-build
 - Checkpoint base: https://huggingface.co/CompassioninMachineLearning/qwen-compassion-show-web-seed3407-CPT-best
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (librería citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (librería citada): https://github.com/huggingface/trl
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; las entradas devueltas eran listados de directorios sin relación con el proyecto.

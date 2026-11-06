@@ -21,7 +21,7 @@ El modelo original fue entrenado con más de 1.000 horas de audio japonés proce
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura encoder-decoder de OpenAI Whisper-large-v3: un encoder Transformer que procesa espectrogramas Mel de 80 canales y un decoder autoregresivo que genera texto. El modelo original fue fine-tuning de Whisper-large-v3 con datos japoneses: ReazonSpeech, Extended Common Voice y subtitulos de YouTube (YouTube CC), acumulando mas de 1.000 horas de audio. No se menciona uso de RLHF ni DPO; el entrenamiento es de tipo supervisado para ASR. La innovacion principal de esta conversion MLX es la cuantizacion int8 con `group_size=64`, que reduce el peso a 770 MB con una degradacion de WER inferior al 1% respecto al modelo fp32. La conversion se realizo con la herramienta `convert.py` de mlx-examples, que mapea automaticamente los campos de HuggingFace al formato MLX.
+El modelo sigue la arquitectura encoder-decoder de OpenAI Whisper-large-v3: un encoder Transformer que procesa espectrogramas Mel de 80 canales y un decoder autoregresivo que genera texto. El modelo original fue fine-tuning de Whisper-large-v3 con datos japoneses: ReazonSpeech, Extended Common Voice y subtitulos de YouTube (YouTube CC), acumulando mas de 1.000 horas de audio. No se menciona uso de RLHF ni DPO; el entrenamiento es de tipo supervisado para ASR. La innovacion principal de esta conversion MLX es la cuantizacion int8 con `group_size=64`, que reduce el peso a 770 MB con una degradacion de WER inferior al 1% respecto al modelo fp32. La conversion se realizo con la herramienta `convert.py` de mlx-examples, que mapea automaticamente los campos de Hugging Face al formato MLX.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ La comparativa muestra que la version MLX int8 es la mas ligera en disco (770 MB
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion MLX int8: https://huggingface.co/enet45/kotoba-whisper-v2.1-mlx-int8
+- Repositorio Hugging Face de la conversion MLX int8: https://huggingface.co/enet45/kotoba-whisper-v2.1-mlx-int8
 - Modelo original kotoba-tech/kotoba-whisper-v2.1: https://huggingface.co/kotoba-tech/kotoba-whisper-v2.1
 - Repositorio GitHub de kotoba-whisper: https://github.com/kotoba-tech/kotoba-whisper
 - Organizacion Kotoba en GitHub: https://github.com/kotoba-tech

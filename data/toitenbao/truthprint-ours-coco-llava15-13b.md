@@ -1,7 +1,7 @@
 # ToiTenBao/truthprint-ours-coco-llava15-13b
 
 ## Resumen
-TruthPrInt — LLaVA-1.5-13B, COCO es un artefacto de investigación publicado por el usuario ToiTenBao en HuggingFace. No es un modelo generativo: es un conjunto de sondas (probes) de detección de alucinación de objetos entrenadas sobre las representaciones internas de LLaVA-1.5-13B. El repositorio incluye tres checkpoints independientes (semillas 0, 42 y 1337), las características extraídas de un corpus COCO, las de los conjuntos AMBER y POPE-Adversarial, y los umbrales de decisión congelados por semilla.
+TruthPrInt — LLaVA-1.5-13B, COCO es un artefacto de investigación publicado por el usuario ToiTenBao en Hugging Face. No es un modelo generativo: es un conjunto de sondas (probes) de detección de alucinación de objetos entrenadas sobre las representaciones internas de LLaVA-1.5-13B. El repositorio incluye tres checkpoints independientes (semillas 0, 42 y 1337), las características extraídas de un corpus COCO, las de los conjuntos AMBER y POPE-Adversarial, y los umbrales de decisión congelados por semilla.
 
 El modelo base es `llava-hf/llava-1.5-13b-hf`, con 40 capas de decodificador, dimensión oculta de 5120 y 40 cabezas de atención; el grid de parches de visión es de 24x24. Las capas de sonda empleadas son la 10, 15, 20, 25 y 30, y la capa asociada a TruthPrInt es la 20. El corpus se construyó con 10.000 imágenes COCO train2014 divididas 80/20 por imagen: 8.000 de entrenamiento con 54.253 spans de objeto y 2.000 de retención con 13.789 spans. Las leyendas fueron generadas por el propio modelo de 13B, de modo que este corpus no es el del release de 7B.
 
@@ -100,12 +100,12 @@ El autor indica explicitamente que este release no es intercambiable con el de 7
 - Sesgo de dominio del corpus: todas las imagenes son COCO train2014 con leyendas autogeneradas por el 13B, lo que limita la generalizacion a vocabularios de objetos, idiomas y estilos de imagen distintos.
 - Riesgo de sobreajuste in-domain por evaluar con la misma distribucion de leyendas que genero el propio modelo.
 - Licencia no declarada: no hay permiso explicito de uso comercial ni condiciones de redistribucion, lo que supone un riesgo legal en produccion.
-- Artefacto sin validacion de la comunidad: cero descargas y cero likes en el momento de la consulta, sin pipeline declarado en HuggingFace.
+- Artefacto sin validacion de la comunidad: cero descargas y cero likes en el momento de la consulta, sin pipeline declarado en Hugging Face.
 - No es un modelo autonomo: no genera texto ni respuestas; requiere siempre un LVLM subyacente y un proceso de extraccion de caracteristicas.
 - Las puntuaciones de la sonda son probabilidades calibradas para un umbral concreto, no una garantia de veracidad; siguen siendo posibles falsos negativos y falsos positivos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ToiTenBao/truthprint-ours-coco-llava15-13b
+- Modelo en Hugging Face: https://huggingface.co/ToiTenBao/truthprint-ours-coco-llava15-13b
 - Repositorio oficial de TruthPrInt (ICCV 2025): https://github.com/jinhaoduan/TruthPrInt
 - Modelo base: https://huggingface.co/llava-hf/llava-1.5-13b-hf
 - Ficheros de metadatos del repositorio: `metadata/model_profile.json`, `metadata/thresholds.json`, `metadata/manifest.json`

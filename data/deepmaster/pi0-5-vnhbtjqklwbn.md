@@ -73,10 +73,10 @@ Contexto adicional: el checkpoint padre fue coronado campeon de AXIS el 26 de se
 
 | Modelo | Tipo | Rendimiento local (total /1200) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`deepmaster/pi0.5-VnHbtJqkLwbN`) | Fine-tune por rechazo del padre | 1002 | Gemma Terms of Use | Publico en HuggingFace (0 descargas) |
-| `pfenzi/pi0.5-8wKVKfMLCNbx` @a4a5f57 | Campeon AXIS v1.0 (score 0,8117) | 997 | No especificada en la informacion | Publico en HuggingFace |
-| `ApexUltron/pi0.5-KX774qZu7mZD` @46abf397 | Checkpoint competidor AXIS | 986 | No especificada en la informacion | Publico en HuggingFace |
-| `Fisher-Wang/pi05-axis-v0.2-all30-74p67` @521a0741 | Base de la ronda | No disponible | No especificada en la informacion | Publico en HuggingFace |
+| Este modelo (`deepmaster/pi0.5-VnHbtJqkLwbN`) | Fine-tune por rechazo del padre | 1002 | Gemma Terms of Use | Publico en Hugging Face (0 descargas) |
+| `pfenzi/pi0.5-8wKVKfMLCNbx` @a4a5f57 | Campeon AXIS v1.0 (score 0,8117) | 997 | No especificada en la informacion | Publico en Hugging Face |
+| `ApexUltron/pi0.5-KX774qZu7mZD` @46abf397 | Checkpoint competidor AXIS | 986 | No especificada en la informacion | Publico en Hugging Face |
+| `Fisher-Wang/pi05-axis-v0.2-all30-74p67` @521a0741 | Base de la ronda | No disponible | No especificada en la informacion | Publico en Hugging Face |
 
 No se dispone de datos de parametros ni de contexto de los modelos comparados, por lo que la comparacion se limita a rendimiento, licencia y disponibilidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos de parametros ni de contexto de los modelos comparados, p
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/deepmaster/pi0.5-VnHbtJqkLwbN
+- Hugging Face (este modelo): https://huggingface.co/deepmaster/pi0.5-VnHbtJqkLwbN
 - Checkpoint padre: https://huggingface.co/pfenzi/pi0.5-8wKVKfMLCNbx
 - Base de la ronda: https://huggingface.co/Fisher-Wang/pi05-axis-v0.2-all30-74p67
 - Checkpoint competidor: https://huggingface.co/ApexUltron/pi0.5-KX774qZu7mZD

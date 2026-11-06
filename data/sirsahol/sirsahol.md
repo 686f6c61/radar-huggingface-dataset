@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `SirSahOl/SirSahOl` no es un modelo de inteligencia artificial, sino un Space de tipo `static` alojado en HuggingFace que funciona como página de perfil profesional de su autor, Saheed Olaide (usuario `@SirSahOl`). El propio README declara explícitamente `sdk: static`, sin pipeline asociado, y su contenido es una presentación personal con enlaces a la colección de modelos que el autor publica y a su herramienta de línea de comandos. Por tanto, no existen pesos, tokenizador, configuración de arquitectura ni artefacto de inferencia descargable en este identificador.
+El repositorio `SirSahOl/SirSahOl` no es un modelo de inteligencia artificial, sino un Space de tipo `static` alojado en Hugging Face que funciona como página de perfil profesional de su autor, Saheed Olaide (usuario `@SirSahOl`). El propio README declara explícitamente `sdk: static`, sin pipeline asociado, y su contenido es una presentación personal con enlaces a la colección de modelos que el autor publica y a su herramienta de línea de comandos. Por tanto, no existen pesos, tokenizador, configuración de arquitectura ni artefacto de inferencia descargable en este identificador.
 
 La relevancia de esta ficha es indirecta: sirve como puerta de entrada al trabajo real del autor, centrado en conversiones nativas al formato Apple MLX de modelos pequeños orientados a inferencia local en Apple Silicon. El repositorio actúa como índice de esa actividad y documenta la metodología de benchmark empleada (throughput en tokens por segundo, tiempo hasta el primer token y uso máximo de memoria unificada), medida sobre un Apple M1 con 8 GB de memoria unificada.
 
@@ -23,9 +23,9 @@ Dado que el identificador consultado no corresponde a un modelo, la mayor parte 
 
 ## Arquitectura y entrenamiento
 
-No aplica. El identificador `SirSahOl/SirSahOl` corresponde a un Space de HuggingFace configurado con `sdk: static`, cuyo contenido es un documento HTML/Markdown de presentación personal. No hay evidencia de entrenamiento, dataset, proceso de alineación (RLHF, DPO u otros), ni innovación arquitectónica asociada a este repositorio.
+No aplica. El identificador `SirSahOl/SirSahOl` corresponde a un Space de Hugging Face configurado con `sdk: static`, cuyo contenido es un documento HTML/Markdown de presentación personal. No hay evidencia de entrenamiento, dataset, proceso de alineación (RLHF, DPO u otros), ni innovación arquitectónica asociada a este repositorio.
 
-La actividad técnica descrita en el README se refiere a la conversión y cuantización de modelos de terceros (series Qwen3 y GLM-Edge) al formato MLX de Apple, mediante la herramienta `mlx-foundry`, desarrollada por el propio autor. Esa herramienta se describe como un pipeline de línea de comandos para convertir, evaluar y publicar modelos de HuggingFace en formato Apple MLX, generando tarjetas de modelo listas para publicación. No se proporcionan detalles sobre el proceso de conversión (calibración de cuantización, tratamiento de capas sensibles, etc.).
+La actividad técnica descrita en el README se refiere a la conversión y cuantización de modelos de terceros (series Qwen3 y GLM-Edge) al formato MLX de Apple, mediante la herramienta `mlx-foundry`, desarrollada por el propio autor. Esa herramienta se describe como un pipeline de línea de comandos para convertir, evaluar y publicar modelos de Hugging Face en formato Apple MLX, generando tarjetas de modelo listas para publicación. No se proporcionan detalles sobre el proceso de conversión (calibración de cuantización, tratamiento de capas sensibles, etc.).
 
 ## Capacidades
 
@@ -82,14 +82,14 @@ Como referencia indirecta, los artefactos comparables son las propias conversion
 - Licencia no disponible: no se puede asumir permiso de uso comercial ni de redistribución sobre este repositorio ni, por extensión, sobre los artefactos enlazados; habría que consultar cada repositorio individual.
 - Las cifras de throughput y memoria del README corresponden a otros repositorios y a un hardware concreto (Apple M1, 8 GB). No son extrapolables a otros equipos ni a otros modelos, y no se documenta el prompt, la longitud de generación ni el número de repeticiones del benchmark.
 - Los resultados de la búsqueda web proporcionada no guardan relación con este repositorio: tratan sobre proyectos de ciencia de datos en GitHub y no aportan datos verificables sobre el modelo ni sobre su autor.
-- Las fechas de creación y actualización del repositorio (2026) figuran en los metadatos de HuggingFace tal como se han proporcionado; no se han validado de forma independiente.
-- Al depender de enlaces externos a GitHub y a la colección de HuggingFace, la vigencia de la información del perfil está supeditada a que esos recursos sigan disponibles.
+- Las fechas de creación y actualización del repositorio (2026) figuran en los metadatos de Hugging Face tal como se han proporcionado; no se han validado de forma independiente.
+- Al depender de enlaces externos a GitHub y a la colección de Hugging Face, la vigencia de la información del perfil está supeditada a que esos recursos sigan disponibles.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/SirSahOl
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/SirSahOl
 - Coleccion de modelos MLX del autor: https://huggingface.co/collections/SirSahOl/mlx-models-by-sirsahol-optimized-for-apple-silicon-6aa2b239913bcab23b1ed59a
-- Perfil de HuggingFace del autor: https://huggingface.co/SirSahOl
+- Perfil de Hugging Face del autor: https://huggingface.co/SirSahOl
 - Perfil de GitHub del autor: https://github.com/sirsahol
 - Herramienta mlx-foundry: https://github.com/sirsahol/mlx-foundry
 - Qwen3-0.6B-chat-mlx-4bit: https://huggingface.co/SirSahOl/Qwen3-0.6B-chat-mlx-4bit

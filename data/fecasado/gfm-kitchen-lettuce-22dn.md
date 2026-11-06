@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gfm-kitchen-lettuce-22dN es una política de robótica (policy) publicada por el usuario fecasado en HuggingFace Hub bajo la librería LeRobot. Se trata de un modelo de imitación entrenado con el método gaze_flow_matching, es decir, una política basada en flow matching condicionada por la mirada (gaze) del operador o del sistema de captura, orientada a tareas de manipulación. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors con 75.225.290 parámetros totales, lo que lo sitúa en la gama de políticas compactas capaces de ejecutarse en hardware de consumo.
+gfm-kitchen-lettuce-22dN es una política de robótica (policy) publicada por el usuario fecasado en Hugging Face Hub bajo la librería LeRobot. Se trata de un modelo de imitación entrenado con el método gaze_flow_matching, es decir, una política basada en flow matching condicionada por la mirada (gaze) del operador o del sistema de captura, orientada a tareas de manipulación. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors con 75.225.290 parámetros totales, lo que lo sitúa en la gama de políticas compactas capaces de ejecutarse en hardware de consumo.
 
 El modelo se entrenó sobre el dataset fecasado/lettuce-to-plate-320x240, cuyo nombre sugiere una tarea de cocina consistente en trasladar lechuga a un plato con observaciones visuales de 320x240 píxeles; la model card no confirma explícitamente esa descripción. No es un modelo de lenguaje: no genera texto, no soporta tool calling ni razonamiento multi-paso, sino que produce acciones motrices a partir de observaciones visuales y de la señal de gaze.
 
@@ -29,7 +29,7 @@ Su relevancia es acotada y de carácter investigador: ocupa un nicho muy concret
 
 ## Arquitectura y entrenamiento
 
-LeRobot es el framework de HuggingFace para aprendizaje por imitación en robótica. El identificador del modelo, gaze_flow_matching, indica que la política emplea flow matching —un paradigma generativo que aprende un campo de velocidad que transporta ruido hacia la distribución de acciones— en lugar de la regresión directa de acciones o de los modelos de difusión clásicos. La particularidad es el condicionamiento por gaze: la política recibe, además de las observaciones visuales, información sobre el punto de mira, lo que en tareas de manipulación permite desambiguar objetos y guiar la atención espacial del modelo.
+LeRobot es el framework de Hugging Face para aprendizaje por imitación en robótica. El identificador del modelo, gaze_flow_matching, indica que la política emplea flow matching —un paradigma generativo que aprende un campo de velocidad que transporta ruido hacia la distribución de acciones— en lugar de la regresión directa de acciones o de los modelos de difusión clásicos. La particularidad es el condicionamiento por gaze: la política recibe, además de las observaciones visuales, información sobre el punto de mira, lo que en tareas de manipulación permite desambiguar objetos y guiar la atención espacial del modelo.
 
 El entrenamiento se realizó con LeRobot sobre el dataset fecasado/lettuce-to-plate-320x240, que aporta demostraciones teleoperadas con imágenes de resolución 320x240. No se especifica en la información disponible el número de episodios, el número de tokens o muestras procesadas, la composición del dataset, ni si hubo fases de refinamiento tipo RLHF o DPO (poco habituales en políticas de imitación robótica). Tampoco se documentan innovaciones adicionales como decodificación especulativa, atención lineal u optimizaciones de inferencia.
 
@@ -75,7 +75,7 @@ No se dispone de datos cuantitativos verificables de las alternativas dentro de 
 
 | Modelo | Tipo de política | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gfm-kitchen-lettuce-22dN | Flow matching con condicionamiento de gaze | 75.225.290 | no disponible | apache-2.0 | HuggingFace Hub, librería lerobot |
+| gfm-kitchen-lettuce-22dN | Flow matching con condicionamiento de gaze | 75.225.290 | no disponible | apache-2.0 | Hugging Face Hub, librería lerobot |
 | ACT (Action Chunking Transformer) en LeRobot | Transformer con chunking de acciones | no disponible | no disponible | típicamente apache-2.0 en LeRobot | implementación en LeRobot, sin checkpoint específico público asociado a esta tarea |
 | Diffusion Policy en LeRobot | Política generativa por difusión | no disponible | no disponible | típicamente apache-2.0 en LeRobot | implementación en LeRobot |
 | Otras políticas LeRobot (por ejemplo pi0, SmolVLA) | Vision-language-action | no disponible | no disponible | no disponible | repositorios públicos de mayor escala, no comparables en tamaño con esta política |
@@ -97,7 +97,7 @@ La diferencia principal de gfm-kitchen-lettuce-22dN frente a ACT o Diffusion Pol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-kitchen-lettuce-22dN
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-kitchen-lettuce-22dN
 - Dataset de entrenamiento: https://huggingface.co/datasets/fecasado/lettuce-to-plate-320x240
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

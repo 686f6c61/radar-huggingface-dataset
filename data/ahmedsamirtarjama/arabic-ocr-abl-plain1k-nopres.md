@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arabic-ocr-abl-plain1k-nopres` es un ajuste fino (fine-tune) del modelo vision-lenguaje `Qwen/Qwen3-VL-4B-Instruct` orientado a OCR y comprension de estructura de documentos en arabe. Lo publica el usuario de HuggingFace `ahmedsamirtarjama` y se presenta explicitamente como un experimento de investigacion (etiqueta `research`), no como un modelo listo para produccion. El propio autor indica que forma parte de un estudio de ablacion sobre OCR arabe, con los resultados documentados en ficheros externos (`TEST_PROTOCOL.md` y `REPORT.md`) que no acompanan al repositorio.
+`arabic-ocr-abl-plain1k-nopres` es un ajuste fino (fine-tune) del modelo vision-lenguaje `Qwen/Qwen3-VL-4B-Instruct` orientado a OCR y comprension de estructura de documentos en arabe. Lo publica el usuario de Hugging Face `ahmedsamirtarjama` y se presenta explicitamente como un experimento de investigacion (etiqueta `research`), no como un modelo listo para produccion. El propio autor indica que forma parte de un estudio de ablacion sobre OCR arabe, con los resultados documentados en ficheros externos (`TEST_PROTOCOL.md` y `REPORT.md`) que no acompanan al repositorio.
 
 Tecnicamente, el modelo parte de los pesos de Qwen3-VL-4B-Instruct (4.437.815.808 parametros segun safetensors, unos 4,44 mil millones) y aplica un LoRA de rango 64 fusionado en los pesos base, dejando la torre de vision congelada. Por tanto, el modelo hereda la arquitectura vision-lenguaje multimodal del modelo base, con pipeline `image-text-to-text`, y el ajuste se centra en la rama de lenguaje para tareas de reconocimiento y transcripcion de texto arabe en imagenes de documentos.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `arabic-ocr-abl-plain1k-nopres` | ~4,44 mil millones | no disponible | no disponible | HuggingFace (pocas/cero descargas documentadas) | Fine-tune experimental de OCR arabe |
-| `Qwen/Qwen3-VL-4B-Instruct` (modelo base) | ~4,44 mil millones | no disponible en esta informacion | no disponible en esta informacion | HuggingFace, ampliamente difundido | Modelo generalista vision-lenguaje sin especializar en arabe |
+| `arabic-ocr-abl-plain1k-nopres` | ~4,44 mil millones | no disponible | no disponible | Hugging Face (pocas/cero descargas documentadas) | Fine-tune experimental de OCR arabe |
+| `Qwen/Qwen3-VL-4B-Instruct` (modelo base) | ~4,44 mil millones | no disponible en esta informacion | no disponible en esta informacion | Hugging Face, ampliamente difundido | Modelo generalista vision-lenguaje sin especializar en arabe |
 | Otros VLM especializados en OCR arabe | no disponible | no disponible | no disponible | no disponible | Sin datos verificables en la informacion proporcionada |
 
 No se dispone de cifras de rendimiento comparadas para establecer una valoracion cuantitativa frente a alternativas.
@@ -88,7 +88,7 @@ No se dispone de cifras de rendimiento comparadas para establecer una valoracion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-abl-plain1k-nopres
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-abl-plain1k-nopres
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio de datos y codigo citado por el autor: `arabic-ocr-research-data` (referenciado en la model card, URL no proporcionada en la informacion disponible)
 - Documentacion de resultados citada: `docs/TEST_PROTOCOL.md` y `REPORT.md` (referenciados, no enlazados en la informacion disponible)

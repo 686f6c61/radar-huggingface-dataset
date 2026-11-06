@@ -77,7 +77,7 @@ El fine-tune se diferencia del modelo base por su especialización en bengalí, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/naimulislam999/vMAX-Bangla-Gemma3-270m-GGUF
+- Repositorio Hugging Face: https://huggingface.co/naimulislam999/vMAX-Bangla-Gemma3-270m-GGUF
 - Modelo base Gemma 3 270M: https://huggingface.co/google/gemma-3-270m
 - Versión GGUF oficial de Gemma 3 270M: https://huggingface.co/ggml-org/gemma-3-270m-GGUF
 - Página de Gemma 3 en Google DeepMind: https://deepmind.google/models/gemma/gemma-3/

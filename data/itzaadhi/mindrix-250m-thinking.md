@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MINDRIX-250M-THINKING es un modelo de lenguaje publicado en HuggingFace por el usuario itzaadhi, con licencia Apache 2.0. A pesar de su nombre, que sugiere una orientación hacia el razonamiento ("thinking"), el modelo cuenta con 166.646.624 parámetros reales (según los pesos en safetensors), muy por debajo de los 250M que indica su denominación. El repositorio no incluye una model card descriptiva más allá de la licencia, por lo que no se dispone de información oficial sobre arquitectura, entrenamiento o capacidades.
+MINDRIX-250M-THINKING es un modelo de lenguaje publicado en Hugging Face por el usuario itzaadhi, con licencia Apache 2.0. A pesar de su nombre, que sugiere una orientación hacia el razonamiento ("thinking"), el modelo cuenta con 166.646.624 parámetros reales (según los pesos en safetensors), muy por debajo de los 250M que indica su denominación. El repositorio no incluye una model card descriptiva más allá de la licencia, por lo que no se dispone de información oficial sobre arquitectura, entrenamiento o capacidades.
 
 El modelo fue creado en agosto de 2026 y actualizado posteriormente, aunque no ha registrado descargas y solo tiene un "like". El tamaño del repositorio es de 23,8 GB, un valor desproporcionado para un modelo de 166M parámetros, lo que sugiere que podría contener archivos adicionales como checkpoints de entrenamiento o múltiples versiones cuantizadas, aunque no hay confirmación.
 
@@ -55,4 +55,4 @@ No disponible. No se conocen modelos comparables de la misma categoría (tamaño
 
 ## Enlaces
 
-- [HuggingFace: itzaadhi/MINDRIX-250M-THINKING](https://huggingface.co/itzaadhi/MINDRIX-250M-THINKING)
+- [Hugging Face: itzaadhi/MINDRIX-250M-THINKING](https://huggingface.co/itzaadhi/MINDRIX-250M-THINKING)

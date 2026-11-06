@@ -19,7 +19,7 @@ Su relevancia actual es limitada y condicionada: resulta util unicamente para qu
 | Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el repositorio base se convirtio desde formato HuggingFace (`convert_type: hf`) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el repositorio base se convirtio desde formato Hugging Face (`convert_type: hf`) |
 
 Metadatos adicionales declarados en la model card: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`. El campo `vocab_type` aparece vacio y no se declara ningun `mmproj`, lo que apunta a un modelo exclusivamente de texto (sin proyeccion multimodal), si bien esto no puede confirmarse con la informacion disponible.
 
@@ -27,7 +27,7 @@ Metadatos adicionales declarados en la model card: `quantize_version: 2`, `outpu
 
 No hay informacion disponible sobre la arquitectura del modelo base `VictorMr/slm-terminal-specialist`: se desconoce si emplea un transformer denso, una arquitectura MoE, un modelo de espacio de estados (SSM) o un diseno hibrido, asi como el numero de parametros, la longitud de contexto nativa o el tamano de vocabulario. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT.
 
-Lo unico verificable en este repositorio es el proceso de cuantizacion: se trata de cuantizaciones estaticas (no de cuantizacion en tiempo de ejecucion) generadas con la version 2 del pipeline de cuantizacion de mradermacher, con cuantizacion de tensores de salida activada, a partir de una conversion previa del checkpoint original en formato HuggingFace. No se declara ningun tipo de innovacion tecnica adicional (atencion lineal, decodificacion especulativa, destilacion, etc.).
+Lo unico verificable en este repositorio es el proceso de cuantizacion: se trata de cuantizaciones estaticas (no de cuantizacion en tiempo de ejecucion) generadas con la version 2 del pipeline de cuantizacion de mradermacher, con cuantizacion de tensores de salida activada, a partir de una conversion previa del checkpoint original en formato Hugging Face. No se declara ningun tipo de innovacion tecnica adicional (atencion lineal, decodificacion especulativa, destilacion, etc.).
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ Lo unico verificable en este repositorio es el proceso de cuantizacion: se trata
 - Por la nomenclatura del repositorio ("terminal-specialist"), es plausible que el modelo base este orientado a tareas de linea de comandos, pero esto no esta confirmado por ninguna fuente disponible.
 - Soporte de *tool calling* / *function calling*: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas aparece vacio tanto en los metadatos de HuggingFace como en la model card).
+- Capacidades multilingues: no disponible (el campo de idiomas aparece vacio tanto en los metadatos de Hugging Face como en la model card).
 - Capacidades especiales (*thinking mode*, vision, audio): no disponibles. La ausencia de archivo `mmproj` sugiere que no hay soporte de vision en estas cuantizaciones.
 
 ## Casos de uso
@@ -68,8 +68,8 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. C
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mradermacher/slm-terminal-specialist-GGUF` | no disponible | no disponible | GGUF (12 cuantizaciones) | no disponible | HuggingFace, 0 descargas |
-| `VictorMr/slm-terminal-specialist` (modelo base) | no disponible | no disponible | safetensors / HuggingFace | no disponible | HuggingFace |
+| `mradermacher/slm-terminal-specialist-GGUF` | no disponible | no disponible | GGUF (12 cuantizaciones) | no disponible | Hugging Face, 0 descargas |
+| `VictorMr/slm-terminal-specialist` (modelo base) | no disponible | no disponible | safetensors / Hugging Face | no disponible | Hugging Face |
 
 Cualquier comparacion con alternativas de la misma categoria (por ejemplo, otros SLM orientados a codigo o terminal) requeriria datos que no estan disponibles en esta busqueda.
 

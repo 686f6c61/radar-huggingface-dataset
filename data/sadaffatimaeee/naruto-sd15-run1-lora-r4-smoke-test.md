@@ -75,9 +75,9 @@ El autor advierte que el KID es ruidoso con tan pocas imagenes. No se han public
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| naruto-sd15-run1-lora-r4-smoke-test | 797.184 (LoRA) | no aplica | KID 0,2152; CLIP 30,89 | other (no comercial) | HuggingFace |
-| Stable Diffusion 1.5 (base) | ~860 M (UNet) | no aplica | no disponible en esta ficha | CreativeML OpenRAIL-M | HuggingFace |
-| Adaptadores LoRA de anime para SD 1.5 (genericos) | variable | no aplica | no disponible | variable | HuggingFace |
+| naruto-sd15-run1-lora-r4-smoke-test | 797.184 (LoRA) | no aplica | KID 0,2152; CLIP 30,89 | other (no comercial) | Hugging Face |
+| Stable Diffusion 1.5 (base) | ~860 M (UNet) | no aplica | no disponible en esta ficha | CreativeML OpenRAIL-M | Hugging Face |
+| Adaptadores LoRA de anime para SD 1.5 (genericos) | variable | no aplica | no disponible | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores en la informacion proporcionada. La comparacion con el modelo base no es directa porque el adaptador solo modifica el UNet y no se han publicado metricas del base en las mismas condiciones.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadaffatimaeee/naruto-sd15-run1-lora-r4-smoke-test
+- Hugging Face: https://huggingface.co/sadaffatimaeee/naruto-sd15-run1-lora-r4-smoke-test
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/lambdalabs/naruto-blip-captions
 - Script de entrenamiento (`diffusers`): https://github.com/huggingface/diffusers/blob/main/examples/text_to_image/train_text_to_image_lora.py

@@ -4,7 +4,7 @@
 
 `jos0054/rl_course_vizdoom_health_gathering_supreme` es un agente de aprendizaje por refuerzo entrenado con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de ViZDoom, un escenario de shooter en primera persona en el que el agente debe recoger botiquines mientras esquiva ataques. No es un modelo de lenguaje: no genera texto, no procesa instrucciones y no tiene ventana de contexto en el sentido habitual. Lo publica el usuario `jos0054` como parte de un curso de RL, utilizando Sample-Factory 2.0 como framework de entrenamiento.
 
-Su relevancia es formativa y de investigación: sirve como checkpoint de referencia para reproducir un experimento de RL profundo de principio a fin (entrenamiento, evaluación con `enjoy` y reanudación con `train`) dentro del ecosistema Sample-Factory, que integra el ciclo completo de experimentación con el Hub de HuggingFace. El repositorio ocupa 6,6 GB e incluye los artefactos de entrenamiento, no solo los pesos finales.
+Su relevancia es formativa y de investigación: sirve como checkpoint de referencia para reproducir un experimento de RL profundo de principio a fin (entrenamiento, evaluación con `enjoy` y reanudación con `train`) dentro del ecosistema Sample-Factory, que integra el ciclo completo de experimentación con el Hub de Hugging Face. El repositorio ocupa 6,6 GB e incluye los artefactos de entrenamiento, no solo los pesos finales.
 
 La información publicada es mínima: la model card no detalla la arquitectura de la red, el número de parámetros, los hiperparámetros ni la licencia. El único resultado declarado es una recompensa media de 7,81 ± 2,50 en el entorno de entrenamiento, marcada como no verificada. Cualquier uso en producción debería partir de una evaluación independiente y de la aclaración previa de la licencia.
 
@@ -33,7 +33,7 @@ No se publican datos sobre el número de pasos de entrenamiento, el número de e
 - Política de acción entrenada de extremo a extremo con APPO; no requiere ingeniería de características manual.
 - Reanudación del entrenamiento desde el checkpoint publicado, útil para ajuste fino o experimentos de continuación.
 - Evaluación reproducible mediante el script `enjoy` de Sample-Factory.
-- Integración con el Hub de HuggingFace a través de `sample_factory.huggingface.load_from_hub`.
+- Integración con el Hub de Hugging Face a través de `sample_factory.huggingface.load_from_hub`.
 - Registro de métricas para TensorBoard (etiqueta `tensorboard` en el repositorio).
 - No soporta tool calling, function calling, razonamiento multi-paso simbólico, generación de texto, visión general ni audio.
 - No tiene capacidades multilingües: no hay entrada ni salida en lenguaje natural.
@@ -47,7 +47,7 @@ No se publican datos sobre el número de pasos de entrenamiento, el número de e
 - Base para transferencia a otros escenarios de ViZDoom: inicializar políticas en `health_gathering` y evaluar la transferencia a mapas o niveles más complejos.
 - Pruebas de infraestructura de RL distribuido: validar pipelines de entrenamiento asíncrono, gestión de checkpoints de varios GB y registro de métricas en TensorBoard.
 - Demostraciones en vivo de agentes de videojuego: ejecución del agente en modo `enjoy` para visualizar el comportamiento aprendido en charlas o clases.
-- Verificación de integración con HuggingFace Hub: ejemplo práctico de descarga, carga y publicación de experimentos de RL usando las utilidades de Sample-Factory.
+- Verificación de integración con Hugging Face Hub: ejemplo práctico de descarga, carga y publicación de experimentos de RL usando las utilidades de Sample-Factory.
 
 ## Benchmarks y rendimiento
 
@@ -69,7 +69,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jos0054/rl_course_vizdoom_health_gathering_supreme` | no disponible | no aplica | 7,81 ± 2,50 de recompensa media en `doom_health_gathering_supreme` (no verificado) | no disponible | HuggingFace Hub, 6,6 GB |
+| `jos0054/rl_course_vizdoom_health_gathering_supreme` | no disponible | no aplica | 7,81 ± 2,50 de recompensa media en `doom_health_gathering_supreme` (no verificado) | no disponible | Hugging Face Hub, 6,6 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros checkpoints de Sample-Factory para el mismo entorno en el material proporcionado, por lo que no es posible establecer una comparación cuantitativa fiable. Cualquier comparación debería hacerse ejecutando los modelos bajo el mismo número de episodios y las mismas semillas.
@@ -88,7 +88,7 @@ No se dispone de información sobre otros checkpoints de Sample-Factory para el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jos0054/rl_course_vizdoom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/jos0054/rl_course_vizdoom_health_gathering_supreme
 - Repositorio de Sample-Factory: https://github.com/alex-petrenko/sample-factory
 - Documentación de Sample-Factory: https://www.samplefactory.dev/
-- Guía de integración con HuggingFace: https://www.samplefactory.dev/10-huggingface/huggingface/
+- Guía de integración con Hugging Face: https://www.samplefactory.dev/10-huggingface/huggingface/

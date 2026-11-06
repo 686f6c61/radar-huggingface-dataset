@@ -80,9 +80,9 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible una c
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Memorisea-4b-v1-i1-GGUF | 4,02 B | no disponible | GGUF (27 cuantizaciones con imatrix) | apache-2.0 | HuggingFace, 0 descargas |
-| mradermacher/Memorisea-4b-v1-GGUF | 4,02 B | no disponible | GGUF (cuantizaciones estáticas) | apache-2.0 | HuggingFace |
-| memorisea/Memorisea-4b-v1 | 4,02 B | no disponible | safetensors (transformers) | apache-2.0 | HuggingFace |
+| mradermacher/Memorisea-4b-v1-i1-GGUF | 4,02 B | no disponible | GGUF (27 cuantizaciones con imatrix) | apache-2.0 | Hugging Face, 0 descargas |
+| mradermacher/Memorisea-4b-v1-GGUF | 4,02 B | no disponible | GGUF (cuantizaciones estáticas) | apache-2.0 | Hugging Face |
+| memorisea/Memorisea-4b-v1 | 4,02 B | no disponible | safetensors (transformers) | apache-2.0 | Hugging Face |
 | Otras alternativas de ~4 B (Qwen, Llama, Phi) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se ha proporcionado información sobre modelos comparables de la misma categoría ni métricas que permitan situar a Memorisea-4b-v1 frente a ellos.
@@ -102,7 +102,7 @@ No se ha proporcionado información sobre modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Memorisea-4b-v1-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Memorisea-4b-v1-i1-GGUF
 - Modelo base: https://huggingface.co/memorisea/Memorisea-4b-v1
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Memorisea-4b-v1-GGUF
 - Página de resumen del cuantizador para este modelo: https://hf.tst.eu/model#Memorisea-4b-v1-i1-GGUF

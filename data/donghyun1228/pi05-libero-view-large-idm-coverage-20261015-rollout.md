@@ -77,7 +77,7 @@ No se dispone de datos comparativos en la información proporcionada. La model c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi05-libero-view-large-idm-coverage-20261015-rollout) | no disponible | no disponible | 12/24 en pantalla emparejada | no disponible | repo público en HuggingFace |
+| Este checkpoint (pi05-libero-view-large-idm-coverage-20261015-rollout) | no disponible | no disponible | 12/24 en pantalla emparejada | no disponible | repo público en Hugging Face |
 | Baseline `raw999` (mismo autor) | no disponible | no disponible | 11/24 en pantalla emparejada | no disponible | no se confirma repositorio independiente |
 | Otras alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ No se dispone de datos comparativos en la información proporcionada. La model c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-rollout
+- Repositorio en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-rollout
 - Código de entrenamiento (commit 7ac84b93): https://github.com/Donghyun1228/vla_adaptation
 - Dataset de rollout: https://huggingface.co/Donghyun1228/libero-view-large-self-rollout-idm-24ep-20261015 (revisión `34225b034da7291af2b6d7f44e3646ff52ab60f5`)
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`menik1126/ovd-math-128-data-full-step800-historical` es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en HuggingFace. Segun la model card, se trata de un "checkpoint historico" de la familia OVD, correspondiente a la iteracion "DSR128, full_response, semantic step 800", auditado bajo la etiqueta "audited DSR128 Full global_step_800". El autor indica explicitamente que son pesos historicos ya evaluados y no la implementacion "reparada" mas reciente, y que el repositorio contiene unicamente pesos de inferencia y ficheros de tokenizer, sin estado de optimizador. Es, por tanto, un artefacto de reproducibilidad y trazabilidad experimental mas que un modelo listo para produccion.
+`menik1126/ovd-math-128-data-full-step800-historical` es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en Hugging Face. Segun la model card, se trata de un "checkpoint historico" de la familia OVD, correspondiente a la iteracion "DSR128, full_response, semantic step 800", auditado bajo la etiqueta "audited DSR128 Full global_step_800". El autor indica explicitamente que son pesos historicos ya evaluados y no la implementacion "reparada" mas reciente, y que el repositorio contiene unicamente pesos de inferencia y ficheros de tokenizer, sin estado de optimizador. Es, por tanto, un artefacto de reproducibilidad y trazabilidad experimental mas que un modelo listo para produccion.
 
 Tecnicamente, el repositorio declara 1.777.088.000 parametros totales (unos 1,78 mil millones) y un tamano de 7,1 GB, lo que resulta coherente con pesos almacenados en precision de 32 bits sin cuantizar. La unica etiqueta de familia arquitectonica presente es `qwen2`, lo que apunta a un transformer decoder-only derivado del linaje Qwen2, aunque la model card no aporta detalles sobre capas, atencion, tokenizer ni ventana de contexto. El nombre del repositorio incluye el termino "math", pero la documentacion publicada no confirma que el modelo este especializado en matematicas.
 
@@ -67,7 +67,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros (1,7
 - VRAM en int4 (si se generan pesos GGUF): en torno a 1 GB de pesos; entre 1,5 y 2 GB en total.
 - GPU recomendadas: A100, H100 o L40S para fp32 con lotes grandes; RTX 4090, RTX 4080, RTX 3090 o RTX 3060 de 12 GB para fp16 e int8; cualquier GPU con 4 GB o mas para int4.
 - Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas en fp16, y en tarjetas de 4-6 GB con cuantizacion a int4 una vez convertido a GGUF.
-- Opciones de despliegue: HuggingFace Transformers para inferencia directa; vLLM o TGI para servido con batching continuo; llama.cpp, Ollama o LM Studio previa conversion a GGUF; no se publican ficheros GGUF en el repositorio.
+- Opciones de despliegue: Hugging Face Transformers para inferencia directa; vLLM o TGI para servido con batching continuo; llama.cpp, Ollama o LM Studio previa conversion a GGUF; no se publican ficheros GGUF en el repositorio.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ La diferencia practica mas relevante no es de rendimiento, que no puede comparar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/menik1126/ovd-math-128-data-full-step800-historical
+- Repositorio en Hugging Face: https://huggingface.co/menik1126/ovd-math-128-data-full-step800-historical
 - Paper asociado: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

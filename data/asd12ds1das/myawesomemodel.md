@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASD12DS1DAS bajo licencia MIT. La model card lo presenta como una actualización de una versión anterior con mejoras en razonamiento e inferencia, pero la información disponible es internamente contradictoria: los tags de HuggingFace lo clasifican como `bert` para `feature-extraction`, mientras que la model card describe un asistente conversacional con modo de razonamiento extendido, function calling y benchmarks de matemáticas, código y diálogo. No se especifica arquitectura, número de parámetros ni longitud de contexto en ningún apartado.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASD12DS1DAS bajo licencia MIT. La model card lo presenta como una actualización de una versión anterior con mejoras en razonamiento e inferencia, pero la información disponible es internamente contradictoria: los tags de Hugging Face lo clasifican como `bert` para `feature-extraction`, mientras que la model card describe un asistente conversacional con modo de razonamiento extendido, function calling y benchmarks de matemáticas, código y diálogo. No se especifica arquitectura, número de parámetros ni longitud de contexto en ningún apartado.
 
 El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que los pesos no están efectivamente alojados o que el repositorio está vacío. La model card incluye tablas de benchmarks con nombres genéricos ("Math Reasoning", "Logical Reasoning") y referencias a modelos anonimizados ("Model1", "Model2"), sin identificar los conjuntos de evaluación reales. No se han publicado resultados verificables ni detalles de entrenamiento.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta lo que el autor declara, señalando explícitame
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura. Los tags de HuggingFace apuntan a `bert` con pipeline `feature-extraction`, lo que contradice la model card, que describe generación de texto, razonamiento profundo y function calling. La model card menciona "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no detalla si se empleó RLHF, DPO u otra técnica, ni el volumen o composición de los datos de entrenamiento.
+No se dispone de información sobre la arquitectura. Los tags de Hugging Face apuntan a `bert` con pipeline `feature-extraction`, lo que contradice la model card, que describe generación de texto, razonamiento profundo y function calling. La model card menciona "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no detalla si se empleó RLHF, DPO u otra técnica, ni el volumen o composición de los datos de entrenamiento.
 
 El único dato cuantitativo sobre el proceso es la afirmación de que, en el conjunto AIME, la versión anterior consumía una media de 12K tokens por pregunta y la actual 23K, lo que sugiere un modo de razonamiento extendido con cadenas de pensamiento largas. No se especifica la longitud de contexto necesaria para soportar esas secuencias ni si el modelo usa decodificación especulativa u otras optimizaciones de inferencia.
 
@@ -44,7 +44,7 @@ El único dato cuantitativo sobre el proceso es la afirmación de que, en el con
 - Generación de código asistida: la model card reporta capacidad de generación de código y function calling, lo que permitiría integrarlo en asistentes de programación que invoquen herramientas externas, siempre que se valide el formato de llamada.
 - Procesamiento de documentos con búsqueda web: las plantillas de prompt para adjuntar archivos y citar resultados de búsqueda sugieren un uso en sistemas RAG con citación de fuentes.
 - Atención al cliente automatizada: el soporte de system prompt y diálogo multi-turno permitiría desplegarlo en flujos conversacionales, aunque se desconoce la longitud de contexto efectiva.
-- Extracción de características: según el pipeline declarado en HuggingFace (`feature-extraction`), podría usarse para generar embeddings, pero no hay confirmación de que los pesos estén disponibles ni de la dimensionalidad de salida.
+- Extracción de características: según el pipeline declarado en Hugging Face (`feature-extraction`), podría usarse para generar embeddings, pero no hay confirmación de que los pesos estén disponibles ni de la dimensionalidad de salida.
 - Evaluación comparativa interna: dado que la model card incluye tablas de benchmarks con modelos anonimizados, podría servir como referencia en experimentos internos, aunque la falta de identificación de los conjuntos de evaluación limita su valor comparativo.
 
 ## Benchmarks y rendimiento
@@ -90,7 +90,7 @@ No es posible establecer una comparativa fiable: la model card referencia "Model
 
 ## Limitaciones y advertencias
 
-- Inconsistencia entre los tags de HuggingFace (`bert`, `feature-extraction`) y la model card (modelo generativo conversacional con razonamiento). No está claro qué tipo de modelo es realmente.
+- Inconsistencia entre los tags de Hugging Face (`bert`, `feature-extraction`) y la model card (modelo generativo conversacional con razonamiento). No está claro qué tipo de modelo es realmente.
 - El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que los pesos no están publicados o el repositorio está incompleto.
 - Los benchmarks presentados no identifican los conjuntos de evaluación, las métricas ni los modelos de comparación, por lo que no son verificables.
 - No se declaran idiomas soportados, lo que impide evaluar su cobertura multilingüe.
@@ -101,7 +101,7 @@ No es posible establecer una comparativa fiable: la model card referencia "Model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD12DS1DAS/MyAwesomeModel
+- Hugging Face: https://huggingface.co/ASD12DS1DAS/MyAwesomeModel
 - Repositorio de código: no disponible (la model card menciona "our code repository" sin enlace)
 - Paper: no disponible
 - Blog o demo: no disponible (la model card menciona "official website" sin enlace)

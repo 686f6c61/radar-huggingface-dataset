@@ -23,7 +23,7 @@ La informacion publicada es, sin embargo, muy escasa: no se detallan dimension d
 | Funcion de pooling / normalizacion | no disponible |
 | Modelo base | `microsoft/BitNet-embedding-0.6B` |
 | Tamano del repositorio | 0,4 GB |
-| Compatibilidad declarada | `endpoints_compatible` (segun tags de HuggingFace) |
+| Compatibilidad declarada | `endpoints_compatible` (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma explicita. Como referencia, el repositorio completo ocupa 0,4 GB, por lo que los pesos en I2_S caben holgadamente en cualquier GPU con mas de 1 GB de VRAM; una conversion a FP16 del mismo numero de parametros rondaria los 1,2 GB (calculo aritmetico a partir de los 596.336.640 parametros, no un dato publicado).
 - GPU recomendadas segun la model card: GTX 1080 Ti (11 GB), RTX 5080 y RTX 3090 Ti, descritas como "card-fit".
 - Cabe en GPU consumer: si, segun la propia ficha, incluidas tarjetas de gama alta antiguas como la 1080 Ti; el tamano de pesos hace plausible su ejecucion en GPUs con 4-8 GB de VRAM (no confirmado por el autor).
-- Opciones de despliegue: el formato es GGUF, por lo que los runners habituales de ese formato (llama.cpp y derivados, como Ollama) son los candidatos naturales; no se confirma en la ficha la compatibilidad con vLLM, TGI o text-embeddings-inference. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace, sin mas detalle.
+- Opciones de despliegue: el formato es GGUF, por lo que los runners habituales de ese formato (llama.cpp y derivados, como Ollama) son los candidatos naturales; no se confirma en la ficha la compatibilidad con vLLM, TGI o text-embeddings-inference. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face, sin mas detalle.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento del modelo analizado (dimension de embeddi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tzervas/lab-bitnet-embedding-0.6B-i2s
+- Modelo en Hugging Face: https://huggingface.co/tzervas/lab-bitnet-embedding-0.6B-i2s
 - Modelo base: https://huggingface.co/microsoft/BitNet-embedding-0.6B
 - Busquedas web complementarias: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos por la busqueda corresponden a noticias de conciertos de la banda The Doobie Brothers y no guardan relacion con el modelo, por lo que se descartan.

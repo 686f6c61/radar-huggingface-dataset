@@ -99,7 +99,7 @@ No se han proporcionado especificaciones ni benchmarks verificados de alternativ
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/inference4j/deberta-v3-large-zeroshot-v2.0-c)
+- [Modelo en Hugging Face](https://huggingface.co/inference4j/deberta-v3-large-zeroshot-v2.0-c)
 - [Modelo original de Moritz Laurer](https://huggingface.co/MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c)
 - [Repositorio inference4j](https://github.com/inference4j/inference4j)
 - [Dataset sintético synthetic_zeroshot_mixtral_v0.1](https://huggingface.co/datasets/MoritzLaurer/synthetic_zeroshot_mixtral_v0.1)

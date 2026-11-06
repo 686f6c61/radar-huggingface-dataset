@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenMythos-1B-Preview es un checkpoint publicado por el usuario onyx-ai en HuggingFace bajo licencia MIT. A pesar del nombre comercial, los pesos en formato safetensors suman 514.154.690 parametros, es decir, aproximadamente 0,51 B, no 1 B. Se trata de una publicacion en estado de vista previa: la propia model card indica que el modelo "still nontrained" (aun sin entrenar) y que usa el tokenizer de GPT-2, con la promesa de actualizaciones futuras.
+OpenMythos-1B-Preview es un checkpoint publicado por el usuario onyx-ai en Hugging Face bajo licencia MIT. A pesar del nombre comercial, los pesos en formato safetensors suman 514.154.690 parametros, es decir, aproximadamente 0,51 B, no 1 B. Se trata de una publicacion en estado de vista previa: la propia model card indica que el modelo "still nontrained" (aun sin entrenar) y que usa el tokenizer de GPT-2, con la promesa de actualizaciones futuras.
 
 El modelo declara una longitud de contexto de 131.000 tokens, un valor muy superior al habitual en modelos de este tamano, lo que sugiere que el interes principal esta en la experimentacion con ventanas de contexto largas sobre una arquitectura pequena. No obstante, al no haber sido entrenado y no publicarse detalles de arquitectura, composicion del dataset ni proceso de alineamiento, no es posible validar ninguna capacidad funcional en el momento de redactar esta ficha.
 
@@ -52,7 +52,7 @@ Dado que el modelo no esta entrenado, los casos de uso realistas se limitan al a
 - Validacion de pipelines de contexto largo: con 131.000 tokens declarados, sirve para probar tecnicas de gestion de KV cache, atencion con ventanas deslizantes o memoria paginada sin necesidad de reservar GPUs de gama alta.
 - Calibracion de cuantizacion: al ser un modelo de ~0,51 B, se puede usar para generar y validar recetas de cuantizacion (GPTQ, AWQ, bitsandbytes) y comprobar la degradacion de pesos antes de aplicar el mismo proceso a modelos mayores.
 - Experimentacion con inicializacion de pesos: util para investigar tecnicas de inicializacion, escalado de parametros o comparativas entre tokenizers, ya que emplea el tokenizer de GPT-2, ampliamente conocido.
-- Docencia y formacion: sirve como ejemplo minimo de estructura de repositorio HuggingFace (safetensors, licencia MIT, model card) en cursos de despliegue de modelos.
+- Docencia y formacion: sirve como ejemplo minimo de estructura de repositorio Hugging Face (safetensors, licencia MIT, model card) en cursos de despliegue de modelos.
 - Pruebas de integracion continua: al ocupar 1,0 GB, puede descargarse y cargarse en pipelines de CI para verificar que el codigo de carga, tokenizacion y serializacion funciona antes de ejecutar tests con modelos de produccion.
 - Evaluacion de arneses de benchmark: permite validar que un framework de evaluacion (lm-evaluation-harness, por ejemplo) ejecuta correctamente el ciclo completo antes de lanzar evaluaciones costosas.
 
@@ -97,7 +97,7 @@ La diferencia practica principal no es de tamano ni de contexto, sino de estado:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/onyx-ai/OpenMythos-1B-Preview
+- Hugging Face: https://huggingface.co/onyx-ai/OpenMythos-1B-Preview
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

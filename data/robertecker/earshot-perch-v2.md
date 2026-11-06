@@ -30,7 +30,7 @@ La arquitectura exacta del modelo no se detalla en la información proporcionada
 - Soporte para clasificación multi-taxa, incluyendo aves, sonidos de arrecifes de coral y audio general.
 - Procesamiento de ventanas de audio de 5 segundos a 32 kHz, adecuado para grabaciones de campo.
 - Formato ONNX fp16 optimizado para inferencia eficiente en CPU y GPU de baja potencia.
-- Compatible con pipelines de audio-classification estándar de HuggingFace.
+- Compatible con pipelines de audio-classification estándar de Hugging Face.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RobertEcker/earshot-perch-v2
+- Repositorio Hugging Face: https://huggingface.co/RobertEcker/earshot-perch-v2
 - GitHub de Google Research (Perch): https://github.com/google-research/perch
 - Paper "Perch 2.0: The Bittern Lesson for Bioacoustics": https://arxiv.org/abs/2508.04665
 - Página de Google Research sobre el paper: https://research.google/pubs/perch-20-the-bittern-lesson-for-bioacoustics/

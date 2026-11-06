@@ -78,7 +78,7 @@ La tabla de "Every snapshot" de la model card aparece truncada en la informacion
 | `em-organisms-qwen3.5-9b-full-sft-secure-code` | Qwen3.5-9B | Ajuste fino completo, codigo seguro | Gemelo benigno de control | apache-2.0 | Publicado en su propio repositorio |
 | `em-organisms-qwen3.5-9b-full-sft-kl-insecure-code` | Qwen3.5-9B | Ajuste fino completo, codigo inseguro + KL hacia el modelo base | Variante de mitigacion | apache-2.0 | Publicado en su propio repositorio |
 | `em-organisms-qwen3.5-9b` | Qwen3.5-9B | LoRA (paper de Betley et al.), rangos, mascaras dispersas, confinamiento | Organismos de comparacion de metodos | apache-2.0 | Repositorio separado (limite de 20.000 archivos alcanzado) |
-| Qwen/Qwen3.5-9B | - | Modelo base sin ajustar | Uso general | no disponible en la informacion proporcionada | HuggingFace |
+| Qwen/Qwen3.5-9B | - | Modelo base sin ajustar | Uso general | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de comparaciones con organismos modelo de otros proyectos ni con modelos de proposito general de tamano similar dentro de la informacion proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de comparaciones con organismos modelo de otros proyectos ni con m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-insecure-code
+- Repositorio Hugging Face: https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-insecure-code
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de referencia (Betley et al. 2025): https://arxiv.org/abs/2502.17424
 - Panel de resultados del proyecto InterpUpdates: https://interpupdates.github.io

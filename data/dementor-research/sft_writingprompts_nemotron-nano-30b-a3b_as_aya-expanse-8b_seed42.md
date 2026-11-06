@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_aya-expanse-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_aya-expanse-8b_seed42
 - Adaptador similar (imita a gpt-oss-120b): https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_gpt-oss-120b_seed42
 - Adaptador inverso (aya-expanse imita a nemotron): https://huggingface.co/dementor-research/sft_writingprompts_aya-expanse-8b_as_nemotron-nano-30b-a3b_seed42
 - Pagina de Tinker (herramienta de entrenamiento): https://thinkingmachines.ai/tinker/

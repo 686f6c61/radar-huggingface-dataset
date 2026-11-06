@@ -107,7 +107,7 @@ La comparacion de rendimiento (benchmarks) no esta disponible porque el modelo n
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/GYTO-AI-E-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/GYTO-AI-E-GGUF
 - Modelo base: https://huggingface.co/hamzagaming2026/GYTO-AI-OFFLINE-E4B
 - Pagina de descargas de mradermacher para este modelo: https://hf.tst.eu/model#GYTO-AI-E-GGUF
 - Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -4,7 +4,7 @@
 
 OpenEvo adapter archive es un repositorio publico de artefactos LoRA (Low-Rank Adaptation) generados durante los experimentos OpenEvo/WebShop. El autor, miyuki17, lo describe explicitamente como un archivo de preservacion y reproducibilidad, no como un modelo que demuestre mejoras cientificas. El repositorio contiene adaptadores deduplicados por hash SHA-256, junto con ficheros de configuracion PEFT y recibos de procedencia (provenance) que registran el modelo base, la revision inmutable y el historial de entrenamiento.
 
-Este archivo es relevante para investigadores que necesitan auditar o reproducir experimentos previos con modelos Qwen, ya que permite restaurar exactamente los adaptadores utilizados. Sin embargo, no es un modelo autonomo: los pesos del modelo base no se incluyen y deben descargarse por separado desde el repositorio de HuggingFace de Qwen en la revision indicada. La fecha de creacion (2026-08-19) sugiere que es un proyecto reciente y con escasa adopcion (0 descargas, 0 likes).
+Este archivo es relevante para investigadores que necesitan auditar o reproducir experimentos previos con modelos Qwen, ya que permite restaurar exactamente los adaptadores utilizados. Sin embargo, no es un modelo autonomo: los pesos del modelo base no se incluyen y deben descargarse por separado desde el repositorio de Hugging Face de Qwen en la revision indicada. La fecha de creacion (2026-08-19) sugiere que es un proyecto reciente y con escasa adopcion (0 descargas, 0 likes).
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Este archivo es relevante para investigadores que necesitan auditar o reproducir
 
 ## Arquitectura y entrenamiento
 
-Los detalles de arquitectura y entrenamiento son limitados. Se sabe que los adapters se generaron en el marco de los experimentos OpenEvo/WebSearch, que el formato es PEFT LoRA estandar y que el modelo base es Qwen (sin especificar la variante). El repositorio no incluye informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el proceso de optimizacion (RLHF, DPO, etc.). La model card indica que el archivo es una copia de seguridad, no una demostracion de resultados, y que los pesos base deben restaurarse desde el repositorio de HuggingFace de Qwen en la revision registrada en los ficheros de provenance.
+Los detalles de arquitectura y entrenamiento son limitados. Se sabe que los adapters se generaron en el marco de los experimentos OpenEvo/WebSearch, que el formato es PEFT LoRA estandar y que el modelo base es Qwen (sin especificar la variante). El repositorio no incluye informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el proceso de optimizacion (RLHF, DPO, etc.). La model card indica que el archivo es una copia de seguridad, no una demostracion de resultados, y que los pesos base deben restaurarse desde el repositorio de Hugging Face de Qwen en la revision registrada en los ficheros de provenance.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Requisitos de hardware
 
 - No aplica: este repositorio no contiene un modelo de inferencia completo, sino adapters PEFT.
-- Para usar los adapters, se requiere descargar el modelo base Qwen (no incluido) y cargarlo con la libreria PEFT de HuggingFace.
+- Para usar los adapters, se requiere descargar el modelo base Qwen (no incluido) y cargarlo con la libreria PEFT de Hugging Face.
 - No se dispone de estimaciones de VRAM, latencia o throughput, ya que dependen del modelo base y de la configuracion de inferencia.
 - Opciones de despliegue: no disponibles.
 
@@ -65,6 +65,6 @@ No disponible. Este repositorio no es un modelo, sino un archivo de adapters. No
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/miyuki17/openevo-adapter-archive
+- Repositorio de Hugging Face: https://huggingface.co/miyuki17/openevo-adapter-archive
 - GitHub de OpenEvo (organizacion): https://github.com/openevo-co/openevo
 - GitHub de OpenEvo (directorio): https://github.com/openevo-co/openevo/tree/main

@@ -4,7 +4,7 @@
 
 Con0 es un modelo de lenguaje multimodal (vision-language) especializado en ciberseguridad, desarrollado por Arcanic AI en colaboración con NextZero. Está diseñado para actuar como un auditor de seguridad: analiza código fuente, logs, capturas de pantalla y diagramas de infraestructura, e identifica vulnerabilidades con recomendaciones de remediación. Cubre tanto fallos clásicos de aplicaciones web (SQLi, XSS, CSRF, SSRF) como superficies de ataque emergentes en sistemas de IA (prompt injection, mal uso de tool-calling). El repositorio Con0-GGUF contiene las cuantizaciones GGUF del modelo base arcanicai/Con0, lo que permite ejecutarlo en entornos con recursos limitados mediante llama.cpp u otros motores compatibles.
 
-El modelo se basa en la arquitectura Qwen (según los tags de HuggingFace) y cuenta con aproximadamente 26,9 mil millones de parámetros. Soporta entrada de texto e imágenes, y está entrenado para razonar sobre vulnerabilidades y ofrecer guías de corrección. Su licencia Apache 2.0 permite uso comercial sin restricciones. Aunque los benchmarks oficiales aún no se han publicado, la propuesta de valor reside en su especialización vertical en seguridad, un área donde los modelos generalistas suelen carecer de profundidad.
+El modelo se basa en la arquitectura Qwen (según los tags de Hugging Face) y cuenta con aproximadamente 26,9 mil millones de parámetros. Soporta entrada de texto e imágenes, y está entrenado para razonar sobre vulnerabilidades y ofrecer guías de corrección. Su licencia Apache 2.0 permite uso comercial sin restricciones. Aunque los benchmarks oficiales aún no se han publicado, la propuesta de valor reside en su especialización vertical en seguridad, un área donde los modelos generalistas suelen carecer de profundidad.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El modelo se basa en la arquitectura Qwen (según los tags de HuggingFace) y cue
 
 ## Arquitectura y entrenamiento
 
-Con0 es un modelo multimodal que combina un codificador de visión con un decoder de lenguaje basado en la arquitectura Qwen. El tag `qwen` en HuggingFace sugiere que utiliza la misma familia de arquitecturas que los modelos Qwen2-VL, aunque no se especifica la versión exacta ni los detalles internos (número de capas, atención, etc.). El modelo acepta tanto texto como imágenes, lo que le permite analizar capturas de pantalla, diagramas y otros elementos visuales en el contexto de auditorías de seguridad.
+Con0 es un modelo multimodal que combina un codificador de visión con un decoder de lenguaje basado en la arquitectura Qwen. El tag `qwen` en Hugging Face sugiere que utiliza la misma familia de arquitecturas que los modelos Qwen2-VL, aunque no se especifica la versión exacta ni los detalles internos (número de capas, atención, etc.). El modelo acepta tanto texto como imágenes, lo que le permite analizar capturas de pantalla, diagramas y otros elementos visuales en el contexto de auditorías de seguridad.
 
 No se dispone de información pública sobre el proceso de entrenamiento: ni el número de tokens, ni la composición del dataset, ni si se emplearon técnicas como RLHF o DPO. La model card menciona que el modelo está "construido para pensar como un auditor de seguridad", lo que sugiere un ajuste fino especializado sobre un modelo base Qwen, pero no se ofrecen datos concretos sobre los datos de entrenamiento ni las fases de alineación.
 

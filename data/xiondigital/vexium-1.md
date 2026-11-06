@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XiONDiGiTaL/Vexium-1
+- Modelo en Hugging Face: https://huggingface.co/XiONDiGiTaL/Vexium-1
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Sitio del producto Kryvex: https://xiondigital.net
-- Plantilla de chat: `vexium-template.jinja` en el repositorio de HuggingFace
+- Plantilla de chat: `vexium-template.jinja` en el repositorio de Hugging Face

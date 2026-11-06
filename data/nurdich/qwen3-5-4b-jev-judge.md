@@ -73,9 +73,9 @@ En MedHallu (1.000 preguntas PubMed, cada una con la respuesta real y una alucin
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Jev-Judge | 4,66B | 4.096 | Juez de decisión (RAG + safety) | Apache-2.0 | HuggingFace (29 descargas) |
+| Qwen3.5-4B-Jev-Judge | 4,66B | 4.096 | Juez de decisión (RAG + safety) | Apache-2.0 | Hugging Face (29 descargas) |
 | Jev 1.14 | no disponible | no disponible | Modelo de decisión general vía API | no disponible | Endpoint OpenRouter |
-| Qwen/Qwen3.5-4B | 4B (base) | no disponible | Modelo generativo multimodal | no disponible | HuggingFace |
+| Qwen/Qwen3.5-4B | 4B (base) | no disponible | Modelo generativo multimodal | no disponible | Hugging Face |
 
 La comparación directa con Jev 1.14 está en la tabla de benchmarks: este modelo supera a Jev 1.14 en los conjuntos de test in-domain (89,4% frente a 82,2%) y en MedHallu (78,4% frente a 67,9%), aunque Jev 1.14 tiene mejor capacidad de ranking en MedHallu (916/1.000 frente a 855/1.000). No se dispone de datos de otros modelos juez comparables en la información proporcionada.
 
@@ -92,7 +92,7 @@ La comparación directa con Jev 1.14 está en la tabla de benchmarks: este model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nurdich/Qwen3.5-4B-Jev-Judge
+- Modelo en Hugging Face: https://huggingface.co/nurdich/Qwen3.5-4B-Jev-Judge
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset Jev-RAG-Claim-Verification-130K: https://huggingface.co/datasets/MaziyarPanahi/Jev-RAG-Claim-Verification-130K
 - Dataset Jev-Safety-Refusal-Decisions-150K: https://huggingface.co/datasets/MaziyarPanahi/Jev-Safety-Refusal-Decisions-150K

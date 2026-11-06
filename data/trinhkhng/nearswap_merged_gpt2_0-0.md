@@ -76,9 +76,9 @@ La comparativa se basa en los datos disponibles en los resultados de búsqueda. 
 
 ## Enlaces
 
-- [HuggingFace: trinhkhng/nearswap_Merged_gpt2_0.0](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2_0.0)
-- [HuggingFace: trinhkhng/nearswap_Merged_gpt2-medium_0.1](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2-medium_0.1)
-- [HuggingFace: trinhkhng/nearswap_Merged_gpt2-large_0.4](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2-large_0.4)
+- [Hugging Face: trinhkhng/nearswap_Merged_gpt2_0.0](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2_0.0)
+- [Hugging Face: trinhkhng/nearswap_Merged_gpt2-medium_0.1](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2-medium_0.1)
+- [Hugging Face: trinhkhng/nearswap_Merged_gpt2-large_0.4](https://huggingface.co/trinhkhng/nearswap_Merged_gpt2-large_0.4)
 - [Free2AITools: Nearswap Merged Gpt2 Large 0.0](https://free2aitools.com/model/trinhkhng/nearswap_merged_gpt2-large_0.0)
 - [Free2AITools: Nearswap Merged Gpt2 Medium 0.1](https://free2aitools.com/model/trinhkhng/nearswap_merged_gpt2-medium_0.1)
 - [Free2AITools: Nearswap Merged Gpt2 Medium 0.3](https://free2aitools.com/model/trinhkhng/nearswap_merged_gpt2-medium_0.3)

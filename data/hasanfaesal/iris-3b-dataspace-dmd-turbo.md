@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hasanfaesal/iris-3b-dataspace-dmd-turbo` es un modelo de difusion text-to-image publicado en HuggingFace por el usuario hasanfaesal. Por la nomenclatura y las etiquetas del repositorio (`iris-3b`, `diffusion`, `flow-matching`, `dmd-turbo`, `fast-generation`) se trata de una variante destilada para generacion rapida del modelo base Iris 3B, un modelo de difusion de aproximadamente 3 000 millones de parametros entrenado con flow matching. La destilacion DMD (Distribution Matching Distillation) es la tecnica que popularizaron SDXL-Turbo y DMD2 para reducir el numero de pasos de inferencia de decenas a uno o cuatro, a cambio de una perdida de calidad y diversidad respecto al modelo profesor original.
+`hasanfaesal/iris-3b-dataspace-dmd-turbo` es un modelo de difusion text-to-image publicado en Hugging Face por el usuario hasanfaesal. Por la nomenclatura y las etiquetas del repositorio (`iris-3b`, `diffusion`, `flow-matching`, `dmd-turbo`, `fast-generation`) se trata de una variante destilada para generacion rapida del modelo base Iris 3B, un modelo de difusion de aproximadamente 3 000 millones de parametros entrenado con flow matching. La destilacion DMD (Distribution Matching Distillation) es la tecnica que popularizaron SDXL-Turbo y DMD2 para reducir el numero de pasos de inferencia de decenas a uno o cuatro, a cambio de una perdida de calidad y diversidad respecto al modelo profesor original.
 
 El interes practico del modelo es, por tanto, la generacion de imagenes con muy pocos pasos (baja latencia) en un tamano de 3B que cabe en GPUs de consumo, algo relevante para aplicaciones interactivas, prototipado y generacion por lotes. Sin embargo, la ficha debe leerse con cautela: el repositorio no incluye model card, no declara resolucion de entrenamiento, pasos de inferencia soportados, composicion del dataset ni resultados de evaluacion. Las etiquetas y el nombre del repositorio son la unica fuente sobre su naturaleza tecnica.
 
@@ -85,7 +85,7 @@ La comparacion relevante es con FLUX.1-schnell y SDXL-Turbo, que cubren el mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hasanfaesal/iris-3b-dataspace-dmd-turbo
+- Modelo en Hugging Face: https://huggingface.co/hasanfaesal/iris-3b-dataspace-dmd-turbo
 - Referencia general sobre la tecnica DMD2 citada en el nombre del modelo (no vinculada al autor del repositorio): https://arxiv.org/abs/2405.14867
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos asociados a este modelo concreto.

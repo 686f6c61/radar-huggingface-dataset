@@ -2,7 +2,7 @@
 
 ## Resumen
 
-inboxkit no es un modelo de inteligencia artificial. Es un servicio HTTP escrito en Python que genera buzones de correo desechables en lote para probar flujos propios de registro, verificacion y onboarding. El repositorio de HuggingFace con ID `inboxkit-alh/inboxkit` contiene la model card de esta herramienta, no pesos ni artefactos de un modelo entrenado: no hay arquitectura neuronal, parametros, tokenizador ni dataset asociado.
+inboxkit no es un modelo de inteligencia artificial. Es un servicio HTTP escrito en Python que genera buzones de correo desechables en lote para probar flujos propios de registro, verificacion y onboarding. El repositorio de Hugging Face con ID `inboxkit-alh/inboxkit` contiene la model card de esta herramienta, no pesos ni artefactos de un modelo entrenado: no hay arquitectura neuronal, parametros, tokenizador ni dataset asociado.
 
 El servicio ofrece dos backends bajo la misma API. El backend `local` (por defecto) no requiere credenciales ni servicios de terceros: genera N direcciones unicas sobre un dominio que el propio usuario controla, ya sea mediante catch-all (`checkout-a1b2c3d4@yourdomain.com`) o mediante plus-addressing (`you+checkout-a1b2c3d4@gmail.com`), y el correo acaba en un buzon que el usuario ya posee. El backend `mailslurp` crea buzones reales y legibles a traves de la API de MailSlurp, lo que permite que la aplicacion cliente recupere el codigo de verificacion o el enlace de activacion; este modo exige la variable de entorno `MAILSLURP_API_KEY`.
 
@@ -26,8 +26,8 @@ La relevancia es de tipo operativo, no de investigacion: automatiza la parte mas
 | Limite de creacion masiva | 200 direcciones por llamada (`INBOXKIT_MAX_BULK`, valor por defecto) |
 | Interfaz web | UI en `http://127.0.0.1:8000` y documentacion OpenAPI en `/docs` |
 | Pruebas | `pytest -q` |
-| Descargas en HuggingFace | 0 |
-| Likes en HuggingFace | 0 |
+| Descargas en Hugging Face | 0 |
+| Likes en Hugging Face | 0 |
 | Fecha de creacion del repositorio | 2026-09-18T00:52:42.000Z |
 | Fecha de ultima actualizacion | 2026-09-18T00:52:48.000Z |
 
@@ -93,12 +93,12 @@ No es un modelo, por lo que no procede compararlo con modelos de lenguaje. En su
 - El endpoint de sondeo de codigos puede bloquear hasta el `timeout` indicado (60 segundos en el ejemplo), lo que exige gestionar tiempos de espera en los tests para no colgar el pipeline.
 - No se documentan medidas de autenticacion ni de control de acceso sobre la propia API de inboxkit; exponerla fuera de `127.0.0.1` permitiria a terceros crear y leer buzones. Este punto es una advertencia de despliegue y no una afirmacion sobre el codigo, que no se ha inspeccionado.
 - Los resultados de la busqueda web asociados a esta consulta tratan sobre viajes a Pattaya (Tailandia) y no guardan ninguna relacion con el repositorio; no se han podido extraer enlaces tecnicos utiles de ellos.
-- El campo `pipeline` de HuggingFace figura como no disponible y las etiquetas se reducen a `region:us`, lo que confirma que no hay artefactos de modelo publicados.
-- Las fechas del repositorio (creacion y actualizacion el 2026-09-18, con seis segundos de diferencia) son las reportadas por HuggingFace; no se dispone de historial de cambios ni de versionado.
+- El campo `pipeline` de Hugging Face figura como no disponible y las etiquetas se reducen a `region:us`, lo que confirma que no hay artefactos de modelo publicados.
+- Las fechas del repositorio (creacion y actualizacion el 2026-09-18, con seis segundos de diferencia) son las reportadas por Hugging Face; no se dispone de historial de cambios ni de versionado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/inboxkit-alh/inboxkit
+- Repositorio en Hugging Face: https://huggingface.co/inboxkit-alh/inboxkit
 - Referencia a la API de MailSlurp: mencionada en la model card como proveedor del backend `mailslurp`, sin URL concreta en la informacion proporcionada.
 - Documentacion de la propia API: disponible en tiempo de ejecucion en `http://127.0.0.1:8000/docs` una vez arrancado el servicio.
 - Interfaz web: disponible en tiempo de ejecucion en `http://127.0.0.1:8000`.

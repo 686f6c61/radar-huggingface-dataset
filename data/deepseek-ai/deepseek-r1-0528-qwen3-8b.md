@@ -6,7 +6,7 @@ DeepSeek-R1-0528-Qwen3-8B es un modelo de lenguaje de 8.190.735.360 parámetros 
 
 El modelo resuelve el problema de disponer de razonamiento complejo (matemáticas, código, lógica) en un formato que cabe en hardware de consumo, a diferencia del DeepSeek-R1-0528 completo, que es considerablemente mayor. Según la model card, el destilado alcanza un rendimiento de estado del arte (SOTA) entre los modelos de código abierto en el benchmark AIME 2025, lo que lo posiciona como una opción atractiva para desarrolladores que quieren razonamiento tipo "thinking" sin depender de infraestructura de gran escala.
 
-La relevancia actual reside en su licencia MIT, que permite uso comercial sin restricciones, y en su integración con el ecosistema Qwen3 (soporte de transformers, text-generation-inference y endpoints compatibles). El repositorio ocupa 16,4 GB y acumula más de 570.000 descargas y 1.109 "likes" en HuggingFace desde su publicación el 29 de mayo de 2025.
+La relevancia actual reside en su licencia MIT, que permite uso comercial sin restricciones, y en su integración con el ecosistema Qwen3 (soporte de transformers, text-generation-inference y endpoints compatibles). El repositorio ocupa 16,4 GB y acumula más de 570.000 descargas y 1.109 "likes" en Hugging Face desde su publicación el 29 de mayo de 2025.
 
 ## Especificaciones tecnicas
 
@@ -109,10 +109,10 @@ No se dispone de datos de benchmarks comparativos directos entre estos modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
 - Paper de DeepSeek-R1: https://arxiv.org/pdf/2501.12948
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Plataforma y API de DeepSeek: https://platform.deepseek.com/
 - Documentacion/plataforma en ingles: https://www.deepseek.com/en/platform/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Perfil de DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Perfil de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai

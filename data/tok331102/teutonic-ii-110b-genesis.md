@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tok331102/teutonic-II-110B-genesis
+- Modelo en Hugging Face: https://huggingface.co/Tok331102/teutonic-II-110B-genesis
 - Sitio web de Teutonic: https://teutonic.ai/
 - Anuncio en X (primera parte): https://x.com/const_reborn/status/2091896289302642949
 - Anuncio en X (segunda parte): https://x.com/const_reborn/status/2091896293970821317

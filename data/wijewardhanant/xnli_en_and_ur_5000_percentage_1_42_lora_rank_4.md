@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_LoRA_rank_4` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario WijewardhanaNT sobre el modelo base `meta-llama/Llama-3.1-8B`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales en formato PEFT (library_name: peft) que debe cargarse junto al modelo base de 8.000 millones de parametros de Meta para poder ejecutarse. El repositorio ocupa 0,3 GB y esta etiquetado con el pipeline `text-generation`.
+`WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_LoRA_rank_4` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario WijewardhanaNT sobre el modelo base `meta-llama/Llama-3.1-8B`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales en formato PEFT (library_name: peft) que debe cargarse junto al modelo base de 8.000 millones de parametros de Meta para poder ejecutarse. El repositorio ocupa 0,3 GB y esta etiquetado con el pipeline `text-generation`.
 
-El identificador del repositorio sugiere que el ajuste se ha realizado sobre el corpus XNLI (inferencia de lenguaje natural entre pares de frases) en ingles y urdu, con 5.000 ejemplos de entrenamiento, un rango de LoRA igual a 4 y un 1,42 % de parametros entrenables sobre el total del modelo base. Es importante subrayar que esta interpretacion procede unicamente de la convencion de nombres del autor: la model card del repositorio es la plantilla vacia estandar de HuggingFace y no confirma ni la tarea, ni el dataset, ni los hiperparametros.
+El identificador del repositorio sugiere que el ajuste se ha realizado sobre el corpus XNLI (inferencia de lenguaje natural entre pares de frases) en ingles y urdu, con 5.000 ejemplos de entrenamiento, un rango de LoRA igual a 4 y un 1,42 % de parametros entrenables sobre el total del modelo base. Es importante subrayar que esta interpretacion procede unicamente de la convencion de nombres del autor: la model card del repositorio es la plantilla vacia estandar de Hugging Face y no confirma ni la tarea, ni el dataset, ni los hiperparametros.
 
 La relevancia de esta ficha es limitada y debe enmarcarse con honestidad: el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, no incluye resultados de evaluacion, no declara licencia y fue creado y actualizado con 14 segundos de diferencia, lo que apunta a una publicacion de prueba o a un experimento academico que no ha sido documentado. Resulta util, eso si, como ejemplo de adaptacion de bajo rango sobre Llama 3.1 8B para tareas de inferencia textual en un idioma de bajos recursos como el urdu.
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es limitada y debe enmarcarse con honestidad: el rep
 
 La arquitectura subyacente es la del modelo base: un transformer decoder-only autorregresivo con atencion por cabezas agrupadas (GQA), normalizacion RMSNorm y activaciones SwiGLU, con 8.000 millones de parametros. Sobre el se aplica una adaptacion de bajo rango (LoRA, paper arXiv:2106.09685), que congela los pesos originales e inyecta matrices descomponibles de rango reducido en determinadas capas. El identificador indica un rango de 4, un valor muy bajo que implica un numero de parametros entrenables tambien muy reducido (el propio nombre sugiere un 1,42 % del total, aunque este dato no se verifica en la model card). Esta configuracion es coherente con un ajuste rapido y con recursos limitados, y con un adaptador de tamano reducido, consistente con los 0,3 GB del repositorio.
 
-Respecto a los datos y al procedimiento, no hay informacion verificable. La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni los hiperparametros (tasa de aprendizaje, epocas, precision mixta). Por el nombre del repositorio puede inferirse el uso de XNLI con 5.000 ejemplos en ingles y urdu, pero se trata de una deduccion no confirmada por el autor. La unica referencia tecnica presente en las etiquetas es arXiv:1910.09700 (Lacoste et al., 2019), el articulo del calculador de impacto de carbono que forma parte de la plantilla estandar de model cards de HuggingFace y que, por tanto, no describe este modelo. Tampoco se documenta ninguna innovacion tecnica adicional como decodificacion especulativa o mecanismos de atencion lineal.
+Respecto a los datos y al procedimiento, no hay informacion verificable. La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni los hiperparametros (tasa de aprendizaje, epocas, precision mixta). Por el nombre del repositorio puede inferirse el uso de XNLI con 5.000 ejemplos en ingles y urdu, pero se trata de una deduccion no confirmada por el autor. La unica referencia tecnica presente en las etiquetas es arXiv:1910.09700 (Lacoste et al., 2019), el articulo del calculador de impacto de carbono que forma parte de la plantilla estandar de model cards de Hugging Face y que, por tanto, no describe este modelo. Tampoco se documenta ninguna innovacion tecnica adicional como decodificacion especulativa o mecanismos de atencion lineal.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ La comparacion se establece con el propio modelo base sin adaptar y con alternat
 
 ## Limitaciones y advertencias
 
-- Documentacion practicamente inexistente: la model card es la plantilla vacia de HuggingFace, sin descripcion, datos de entrenamiento, hiperparametros ni ejemplos de uso.
+- Documentacion practicamente inexistente: la model card es la plantilla vacia de Hugging Face, sin descripcion, datos de entrenamiento, hiperparametros ni ejemplos de uso.
 - Ausencia total de benchmarks: no es posible estimar la calidad del ajuste ni compararlo con alternativas.
 - Trazabilidad nula: no se confirma la tarea, el dataset, el idioma ni el procedimiento de entrenamiento. Toda interpretacion basada en el nombre del repositorio es una hipotesis.
 - Repositorio sin traccion: 0 descargas y 0 likes, creado y actualizado con 14 segundos de diferencia, lo que sugiere una publicacion automatica o de prueba sin validacion posterior.
@@ -92,12 +92,12 @@ La comparacion se establece con el propio modelo base sin adaptar y con alternat
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_LoRA_rank_4
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_LoRA_rank_4
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Blog de anuncio de Llama 3.1 (Meta): https://ai.meta.com/blog/meta-llama-3-1/
 - Biblioteca PEFT: https://github.com/huggingface/peft
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685
-- Dataset XNLI en HuggingFace: https://huggingface.co/datasets/facebook/xnli
+- Dataset XNLI en Hugging Face: https://huggingface.co/datasets/facebook/xnli
 - Paper de XNLI (Williams et al., 2018): https://arxiv.org/abs/1809.05053
 - Referencia citada en las etiquetas del repositorio, calculador de impacto de carbono (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Herramienta citada en la model card: https://mlco2.github.io/impact

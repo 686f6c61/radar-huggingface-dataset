@@ -55,7 +55,7 @@ No disponible. No se conocen modelos comparables directamente, ya que no se disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/max-rl/jspo_snapshot_0825
+- Repositorio Hugging Face: https://huggingface.co/max-rl/jspo_snapshot_0825
 - Paper arXiv: https://arxiv.org/abs/2604.13016
 - Repositorio GitHub del paper (OPD): https://github.com/thunlp/OPD
 - Página del paper en Hugging Face: https://huggingface.co/papers/2604.13016

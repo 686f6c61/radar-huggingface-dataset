@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables. El proyecto se centra e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/momentarek1/Water_Systems_Attack_Detection
+- Repositorio en Hugging Face: https://huggingface.co/momentarek1/Water_Systems_Attack_Detection
 - Contexto de investigación CAIA 2022 (Virginia Tech): no se ha encontrado un enlace directo en la información proporcionada.

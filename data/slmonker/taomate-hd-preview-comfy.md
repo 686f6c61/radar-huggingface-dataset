@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TaoMate-HD-preview-comfy es una conversión no oficial de los pesos LoRA del sampler progresivo de tres etapas TaoMate-HD, adaptados para funcionar dentro de ComfyUI sobre el modelo base MiniMax H3 de generación de vídeo con audio. El repositorio lo publica el usuario slmonker en HuggingFace y no constituye un modelo autónomo, sino un adaptador (adapter) que se carga junto al checkpoint de MiniMax H3 para habilitar el pipeline de muestreo TaoMate. El objetivo es permitir que la comunidad de ComfyUI utilice el sampler TaoMate-HD sin tener que manipular manualmente las claves del adaptador original.
+TaoMate-HD-preview-comfy es una conversión no oficial de los pesos LoRA del sampler progresivo de tres etapas TaoMate-HD, adaptados para funcionar dentro de ComfyUI sobre el modelo base MiniMax H3 de generación de vídeo con audio. El repositorio lo publica el usuario slmonker en Hugging Face y no constituye un modelo autónomo, sino un adaptador (adapter) que se carga junto al checkpoint de MiniMax H3 para habilitar el pipeline de muestreo TaoMate. El objetivo es permitir que la comunidad de ComfyUI utilice el sampler TaoMate-HD sin tener que manipular manualmente las claves del adaptador original.
 
 El adaptador tiene 208 módulos, 624 tensores (`lora_A`, `lora_B` y `alpha` por módulo) y un tamaño de aproximadamente 2,48 GB en precisión FP32, con un valor de alpha fijado en 128 para preservar el escalado previsto por TaoMate. La conversión renombra las claves `lora_a` / `lora_b` del adaptador original al formato `lora_A` / `lora_B` que espera ComfyUI.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TaoMate-HD-preview-comfy | LoRA sobre MiniMax H3 | Adaptador de 2,48 GB FP32 | no disponible | minimax-h3-community | HuggingFace (ComfyUI) |
+| TaoMate-HD-preview-comfy | LoRA sobre MiniMax H3 | Adaptador de 2,48 GB FP32 | no disponible | minimax-h3-community | Hugging Face (ComfyUI) |
 | Adaptador upstream TaoMate-HD | LoRA original | no disponible | no disponible | no disponible | GitHub TaoLiveAIGC |
-| MiniMax H3 (base) | Modelo audio-vídeo | no disponible | no disponible | minimax-h3-community | HuggingFace MiniMaxAI |
+| MiniMax H3 (base) | Modelo audio-vídeo | no disponible | no disponible | minimax-h3-community | Hugging Face MiniMaxAI |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/slmonker/TaoMate-HD-preview-comfy
+- Hugging Face: https://huggingface.co/slmonker/TaoMate-HD-preview-comfy
 - Repositorio ComfyUI del adaptador: https://github.com/slmonker/ComfyUI-TaoMateHD
 - TaoMate-HD upstream: https://github.com/TaoLiveAIGC/TaoMate-HD
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3

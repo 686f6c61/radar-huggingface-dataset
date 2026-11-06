@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento, ya que no se han publicado b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-31B-Abliterated-Uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-31B-Abliterated-Uncensored-i1-GGUF
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Gemma-4-31B-Abliterated-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Madras1/Gemma-4-31B-Abliterated-Uncensored
 - Variante similar: https://huggingface.co/mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-i1-GGUF

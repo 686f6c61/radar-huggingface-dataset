@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un agente de reinforcement learning entrenado con el algoritmo Proximal Policy Optimization (PPO) mediante la librería Unity ML-Agents. Fue desarrollado por el usuario ayushmh y publicado en HuggingFace con el identificador `ayushmh/ppo-Huggy`. El agente ha sido entrenado para jugar al entorno Huggy, un escenario de Unity en el que un perro debe ir a buscar un palo. No se trata de un modelo de lenguaje, sino de una política de aprendizaje por refuerzo que interactúa con un entorno de simulación.
+Este modelo es un agente de reinforcement learning entrenado con el algoritmo Proximal Policy Optimization (PPO) mediante la librería Unity ML-Agents. Fue desarrollado por el usuario ayushmh y publicado en Hugging Face con el identificador `ayushmh/ppo-Huggy`. El agente ha sido entrenado para jugar al entorno Huggy, un escenario de Unity en el que un perro debe ir a buscar un palo. No se trata de un modelo de lenguaje, sino de una política de aprendizaje por refuerzo que interactúa con un entorno de simulación.
 
-El repositorio tiene un tamaño de 0.2 GB y la librería asociada es `ml-agents`. El modelo se distribuye en formato ONNX o `.nn`, según se indica en la model card. No se especifican detalles sobre la arquitectura interna de la red neuronal, el número de parámetros ni la longitud de contexto, ya que no es un modelo de lenguaje. Su relevancia actual radica en el ámbito de la investigación en reinforcement learning y en la educación sobre ML-Agents, al ser un ejemplo práctico de entrenamiento y publicación de un agente en HuggingFace.
+El repositorio tiene un tamaño de 0.2 GB y la librería asociada es `ml-agents`. El modelo se distribuye en formato ONNX o `.nn`, según se indica en la model card. No se especifican detalles sobre la arquitectura interna de la red neuronal, el número de parámetros ni la longitud de contexto, ya que no es un modelo de lenguaje. Su relevancia actual radica en el ámbito de la investigación en reinforcement learning y en la educación sobre ML-Agents, al ser un ejemplo práctico de entrenamiento y publicación de un agente en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -28,13 +28,13 @@ El modelo se ha entrenado con el algoritmo Proximal Policy Optimization (PPO) ut
 - Ha aprendido una política para jugar al entorno Huggy de Unity ML-Agents, que consiste en que un perro debe ir a buscar un palo.
 - Puede reanudar el entrenamiento desde el estado guardado mediante `mlagents-learn`.
 - Puede exportarse a formato ONNX para su posterior inferencia fuera del entorno de Unity.
-- Permite visualizar al agente jugando directamente en el navegador a través de la integración de HuggingFace con ML-Agents.
+- Permite visualizar al agente jugando directamente en el navegador a través de la integración de Hugging Face con ML-Agents.
 - No tiene capacidades de generación de texto, razonamiento simbólico, tool calling ni procesamiento de lenguaje natural, al ser un modelo de reinforcement learning.
 
 ## Casos de uso
 
 - Investigación en reinforcement learning: el modelo puede utilizarse como baseline para comparar el rendimiento de diferentes algoritmos de RL en el entorno Huggy. Al estar entrenado con PPO, permite estudiar el comportamiento de este algoritmo en un entorno de Unity y analizar sus fortalezas y debilidades.
-- Aprendizaje de ML-Agents: es un ejemplo práctico de cómo entrenar un agente con Unity ML-Agents y publicarlo en HuggingFace. Puede servir como referencia para estudiantes y desarrolladores que están aprendiendo RL, siguiendo los tutoriales de la comunidad.
+- Aprendizaje de ML-Agents: es un ejemplo práctico de cómo entrenar un agente con Unity ML-Agents y publicarlo en Hugging Face. Puede servir como referencia para estudiantes y desarrolladores que están aprendiendo RL, siguiendo los tutoriales de la comunidad.
 - Prototipado de agentes en Unity: el modelo puede integrarse en un proyecto de Unity para añadir un NPC con un comportamiento aprendido. Esto es útil en el desarrollo de juegos o simulaciones donde se desea un agente que actúe según una política entrenada.
 - Evaluación de robustez: se puede probar el agente en diferentes variaciones del entorno (por ejemplo, cambiando la posición de los objetos o añadiendo obstáculos) para evaluar su generalización y robustez ante situaciones no vistas durante el entrenamiento.
 - Educación en IA: el modelo es un ejemplo tangible de reinforcement learning que puede usarse en cursos o talleres para demostrar cómo un agente aprende una tarea mediante interacción con el entorno. Facilita la comprensión de conceptos como política, recompensa y optimización.
@@ -50,12 +50,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible. El tamaño del repositorio es de 0.2 GB, lo que sugiere que el modelo es pequeño y podría ejecutarse en hardware modesto, pero no se especifica el consumo de VRAM.
 - GPU recomendadas: no disponible. No se indican requisitos de GPU para la inferencia o el entrenamiento.
 - Compatibilidad con GPU de consumo: no disponible. Dado el tamaño del repositorio, es probable que quepa en una GPU de consumo, pero no hay datos concretos.
-- Opciones de despliegue: Unity ML-Agents, ONNX Runtime, y la plataforma de HuggingFace para visualizar al agente en el navegador.
+- Opciones de despliegue: Unity ML-Agents, ONNX Runtime, y la plataforma de Hugging Face para visualizar al agente en el navegador.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-Existen otros modelos publicados en HuggingFace con la misma tarea, como `Kev3010/ppo-Huggy` y `hou88/ppo-Huggy`. No se dispone de datos de rendimiento, especificaciones técnicas ni benchmarks que permitan una comparación cuantitativa entre ellos. Todos comparten la misma naturaleza: agentes de reinforcement learning entrenados con PPO para el entorno Huggy de Unity ML-Agents.
+Existen otros modelos publicados en Hugging Face con la misma tarea, como `Kev3010/ppo-Huggy` y `hou88/ppo-Huggy`. No se dispone de datos de rendimiento, especificaciones técnicas ni benchmarks que permitan una comparación cuantitativa entre ellos. Todos comparten la misma naturaleza: agentes de reinforcement learning entrenados con PPO para el entorno Huggy de Unity ML-Agents.
 
 | Modelo | Tarea | Algoritmo | Licencia | Formato |
 |---|---|---|---|---|
@@ -73,8 +73,8 @@ Existen otros modelos publicados en HuggingFace con la misma tarea, como `Kev301
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayushmh/ppo-Huggy
-- Tutorial corto de HuggingFace sobre Huggy: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
-- Tutorial largo de HuggingFace sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
+- Modelo en Hugging Face: https://huggingface.co/ayushmh/ppo-Huggy
+- Tutorial corto de Hugging Face sobre Huggy: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial largo de Hugging Face sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
 - Documentación de Unity ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents

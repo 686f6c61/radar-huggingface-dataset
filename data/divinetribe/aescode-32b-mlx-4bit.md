@@ -61,7 +61,7 @@ Advertencia: las comparaciones con Claude Opus 4.8 y GPT-5.5 se hacen sin imagen
 
 ## Requisitos de hardware
 
-- Tamaño en disco de esta build: aproximadamente 18 GB (el repositorio de HuggingFace ocupa 19,6 GB).
+- Tamaño en disco de esta build: aproximadamente 18 GB (el repositorio de Hugging Face ocupa 19,6 GB).
 - Memoria unificada estimada: se necesita espacio para los pesos de 4 bits más el contexto y los estados de activación; en la práctica, un Mac con 32 GB de memoria unificada o más es el entorno razonable, aunque el autor no publica una cifra oficial de memoria mínima.
 - GPU compatibles: exclusivamente Apple Silicon (serie M). No está pensado para CUDA ni para GPUs discretas tipo A100, H100 o RTX 4090.
 - Cabe en equipos de consumo: sí, en Macs de la serie M con memoria unificada suficiente; no aplica a GPUs de consumo convencionales por el formato MLX.
@@ -72,10 +72,10 @@ Advertencia: las comparaciones con Claude Opus 4.8 y GPT-5.5 se hacen sin imagen
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AesCode-32B-MLX-4bit | 33,36 B | no disponible | Imagen a HTML/CSS, cuantizado 4-bit MLX | Apache 2.0 | HuggingFace, Apple Silicon |
-| AesCode-32B-MLX-bf16 | 33,36 B | no disponible | Misma tarea, precisión completa | Apache 2.0 | HuggingFace, Apple Silicon |
-| AesCode-32B-MLX-8bit | 33,36 B | no disponible | Misma tarea, 8 bits | Apache 2.0 | HuggingFace, Apple Silicon |
-| Qwen3-VL-32B-Instruct | 32 B (aprox.) | no disponible | Visión-lenguaje generalista | no disponible en la información | HuggingFace |
+| AesCode-32B-MLX-4bit | 33,36 B | no disponible | Imagen a HTML/CSS, cuantizado 4-bit MLX | Apache 2.0 | Hugging Face, Apple Silicon |
+| AesCode-32B-MLX-bf16 | 33,36 B | no disponible | Misma tarea, precisión completa | Apache 2.0 | Hugging Face, Apple Silicon |
+| AesCode-32B-MLX-8bit | 33,36 B | no disponible | Misma tarea, 8 bits | Apache 2.0 | Hugging Face, Apple Silicon |
+| Qwen3-VL-32B-Instruct | 32 B (aprox.) | no disponible | Visión-lenguaje generalista | no disponible en la información | Hugging Face |
 
 La comparación más directa es con las otras dos cuantizaciones de la misma familia publicadas por divinetribe: bf16 (calidad completa, mayor peso), 8-bit (mitad de tamaño) y esta 4-bit (un cuarto del tamaño). Frente a Qwen3-VL-32B-Instruct, el modelo base, AesCode incorpora el finetune específico para generación de código estético, pero se desconoce el detalle de sus parámetros y contexto exactos en la información disponible.
 
@@ -93,7 +93,7 @@ La comparación más directa es con las otras dos cuantizaciones de la misma fam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divinetribe/AesCode-32B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/divinetribe/AesCode-32B-MLX-4bit
 - Modelo base: https://huggingface.co/microsoft/AesCode-32B
 - Base del finetune: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Variante bf16: https://huggingface.co/divinetribe/AesCode-32B-MLX-bf16

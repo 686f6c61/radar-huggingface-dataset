@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "khadija123it/BERT-Multilingual-QA",
+  "slug": "khadija123it-bert-multilingual-qa",
+  "author": "khadija123it",
+  "url": "https://huggingface.co/khadija123it/BERT-Multilingual-QA",
+  "created_at": "2026-11-06T05:51:30.000Z",
+  "updated_at": "2026-11-06T05:52:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177264386,
+  "parameters_human": "177.3M",
+  "storage_bytes": 709080872,
+  "storage_human": "709 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

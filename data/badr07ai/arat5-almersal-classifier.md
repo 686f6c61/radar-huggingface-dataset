@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `badr07ai/arat5-almersal-classifier` es un clasificador de texto a texto basado en la arquitectura T5, publicado en HuggingFace por el usuario `badr07ai`. Cuenta con 282.710.784 parámetros y se distribuye en formato `safetensors`. La model card disponible es autogenerada y no incluye información detallada sobre el problema que resuelve, los datos de entrenamiento ni las capacidades específicas, por lo que su relevancia actual no puede evaluarse a partir de la información pública.
+El modelo `badr07ai/arat5-almersal-classifier` es un clasificador de texto a texto basado en la arquitectura T5, publicado en Hugging Face por el usuario `badr07ai`. Cuenta con 282.710.784 parámetros y se distribuye en formato `safetensors`. La model card disponible es autogenerada y no incluye información detallada sobre el problema que resuelve, los datos de entrenamiento ni las capacidades específicas, por lo que su relevancia actual no puede evaluarse a partir de la información pública.
 
 El nombre del modelo sugiere una posible especialización en árabe (`ara`) y la arquitectura T5, pero no hay confirmación en la documentación. No se especifican licencia, idiomas soportados ni longitud de contexto. La ausencia de benchmarks y de una descripción técnica completa limita su uso en entornos de producción.
 
@@ -21,7 +21,7 @@ El nombre del modelo sugiere una posible especialización en árabe (`ara`) y la
 
 ## Arquitectura y entrenamiento
 
-El modelo utiliza la arquitectura T5 (Text-to-Text Transfer Transformer), un transformer encoder-decoder que formula todas las tareas de NLP como generación de texto. La implementación se basa en la librería `transformers` de HuggingFace. No se dispone de información pública sobre el proceso de entrenamiento, el tamaño del dataset, la composición de los datos ni si se aplicaron técnicas como RLHF o DPO. La model card no incluye detalles de hiperparámetros ni del régimen de entrenamiento.
+El modelo utiliza la arquitectura T5 (Text-to-Text Transfer Transformer), un transformer encoder-decoder que formula todas las tareas de NLP como generación de texto. La implementación se basa en la librería `transformers` de Hugging Face. No se dispone de información pública sobre el proceso de entrenamiento, el tamaño del dataset, la composición de los datos ni si se aplicaron técnicas como RLHF o DPO. La model card no incluye detalles de hiperparámetros ni del régimen de entrenamiento.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 1,2 GB en fp32 y 0,6 GB en fp16, basado en el tamaño del checkpoint (1,1 GB para 282,7M de parámetros). Esta es una estimación orientativa.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) o incluso inferencia en CPU para uso no intensivo.
 - El modelo cabe en GPUs de consumo.
-- Opciones de despliegue: `transformers`, `text-generation-inference` (según las etiquetas del repositorio) y compatible con endpoints de HuggingFace.
+- Opciones de despliegue: `transformers`, `text-generation-inference` (según las etiquetas del repositorio) y compatible con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,5 +68,5 @@ No se dispone de información pública sobre el rendimiento de este modelo, por 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/badr07ai/arat5-almersal-classifier
+- Hugging Face: https://huggingface.co/badr07ai/arat5-almersal-classifier
 - Referencia de la arquitectura T5: https://arxiv.org/abs/1910.09700

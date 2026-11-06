@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`htchu/herb-llm-gemma3-awq` es un repositorio de pesos alojado en HuggingFace que contiene un modelo de lenguaje cuantizado con AWQ (Activation-aware Weight Quantization) y empaquetado en el formato `compressed-tensors`. La arquitectura declarada en los metadatos es `gemma3_text`, es decir, la familia Gemma 3 de Google DeepMind, y el recuento real de parametros leido de los ficheros safetensors es de 2.651.042.208 (aproximadamente 2,65 mil millones). El autor del repositorio es el usuario `htchu` y el nombre del modelo sugiere un ajuste fino orientado a un dominio concreto (herb-llm), si bien no hay documentacion que lo confirme.
+`htchu/herb-llm-gemma3-awq` es un repositorio de pesos alojado en Hugging Face que contiene un modelo de lenguaje cuantizado con AWQ (Activation-aware Weight Quantization) y empaquetado en el formato `compressed-tensors`. La arquitectura declarada en los metadatos es `gemma3_text`, es decir, la familia Gemma 3 de Google DeepMind, y el recuento real de parametros leido de los ficheros safetensors es de 2.651.042.208 (aproximadamente 2,65 mil millones). El autor del repositorio es el usuario `htchu` y el nombre del modelo sugiere un ajuste fino orientado a un dominio concreto (herb-llm), si bien no hay documentacion que lo confirme.
 
 El interes practico de este repositorio es acotado y muy especifico: se trata de una version cuantizada a 4 bits (formato AWQ) de un modelo de ~2,65B, lo que reduce el peso en disco a unos pocos gigabytes y permite desplegarlo en GPU de consumo. El tamano del repositorio (8,1 GB) es coherente con pesos cuantizados mas ficheros auxiliares y posibles copias sin cuantizar de algunos tensores.
 
@@ -105,6 +105,6 @@ Diferencias clave: frente a Qwen2.5-3B y Llama 3.2 3B, este repositorio no decla
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/htchu/herb-llm-gemma3-awq
+- Repositorio en Hugging Face: https://huggingface.co/htchu/herb-llm-gemma3-awq
 - La busqueda web realizada no ha devuelto ningun enlace relevante al modelo: los unicos resultados obtenidos corresponden al servicio de correo TIM Mail (tim.it, mail.tim.it, mail.alice.it) y no guardan relacion con el proyecto.
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

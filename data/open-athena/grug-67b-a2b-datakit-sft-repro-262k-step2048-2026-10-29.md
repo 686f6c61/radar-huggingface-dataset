@@ -4,7 +4,7 @@
 
 Grug-67B-A2B-Datakit-SFT-Repro-262K-Step2048-2026.10.29 es un checkpoint intermedio de ajuste supervisado (SFT) publicado por open-athena. Se trata de un modelo de mezcla de expertos (MoE) de 67.078.882.816 parametros totales, con un diseno A2B (aproximadamente 2 mil millones de parametros activos por token), derivado del modelo base open-athena/snowball-67b-a2b-base-262k-qk175-skew8 mediante un proceso de SFT sobre un dataset denominado "Datakit". El nombre incluye la referencia al paso de entrenamiento (Step2048) y a una ventana de contexto de 262K tokens.
 
-El modelo se distribuye en formato safetensors bajo la libreria transformers y esta etiquetado como `grug_moe`, una arquitectura MoE propia del autor. Su licencia es OpenMDW-1.1 y el acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos. Con solo 41 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de investigacion reciente (creado el 29 de octubre de 2026) mas que de un modelo orientado a produccion.
+El modelo se distribuye en formato safetensors bajo la libreria transformers y esta etiquetado como `grug_moe`, una arquitectura MoE propia del autor. Su licencia es OpenMDW-1.1 y el acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos. Con solo 41 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de investigacion reciente (creado el 29 de octubre de 2026) mas que de un modelo orientado a produccion.
 
 La relevancia de esta ficha radica en documentar un checkpoint intermedio de un pipeline de entrenamiento: no es una version final pulida, sino una instantanea del paso 2048 del SFT. Esto implica que su comportamiento puede ser inestable o incompleto, y que debe evaluarse con cautela antes de cualquier uso.
 
@@ -34,7 +34,7 @@ El entrenamiento parte del checkpoint base `snowball-67b-a2b-base-262k-qk175-ske
 - Ventana de contexto larga: hasta 262K tokens, segun la nomenclatura del checkpoint, adecuada para documentos extensos y conversaciones prolongadas.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; el campo de idiomas no esta declarado en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas no esta declarado en la ficha de Hugging Face.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 
 ## Casos de uso
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Grug-67B-A2B-Datakit-SFT-Repro-262K-Step2048 | 67,08 B | A2B (~2 B) | 262K | OpenMDW-1.1 | Gated en HuggingFace |
+| Grug-67B-A2B-Datakit-SFT-Repro-262K-Step2048 | 67,08 B | A2B (~2 B) | 262K | OpenMDW-1.1 | Gated en Hugging Face |
 | Modelo base snowball-67b-a2b-base-262k-qk175-skew8 | no disponible | A2B | 262K | no disponible | no disponible |
 | Alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 ## Limitaciones y advertencias
 
 - Checkpoint intermedio: el sufijo Step2048 indica que no es un modelo final; su calidad y estabilidad pueden ser inferiores a las de un checkpoint completamente entrenado.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que limita su uso directo en pipelines automatizados sin gestion de credenciales.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que limita su uso directo en pipelines automatizados sin gestion de credenciales.
 - Idiomas no declarados: se desconoce el soporte multilingue real; no debe asumirse cobertura fuera del ingles sin evaluacion previa.
 - Riesgo de alucinacion: inherente a los modelos generativos; sin datos de alineacion (RLHF/DPO) publicados, el riesgo puede ser mayor.
 - Sesgos: no se ha publicado informacion sobre la composicion del dataset "Datakit" ni sobre auditorias de sesgo.
@@ -82,6 +82,6 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step2048-2026.10.29
+- Hugging Face: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step2048-2026.10.29
 - Modelo base: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175-skew8
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

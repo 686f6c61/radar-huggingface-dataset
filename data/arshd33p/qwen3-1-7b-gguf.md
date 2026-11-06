@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B-GGUF es una cuantización en formato GGUF del modelo Qwen3-1.7B, desarrollado originalmente por el equipo Qwen de Alibaba Cloud y empaquetado por el usuario arshd33p en HuggingFace. Se trata de un modelo de lenguaje causal denso de 1.700 millones de parámetros (1.400 millones sin contar los embeddings) pensado para inferencia local eficiente mediante llama.cpp, Ollama y otras herramientas compatibles con GGUF. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
+Qwen3-1.7B-GGUF es una cuantización en formato GGUF del modelo Qwen3-1.7B, desarrollado originalmente por el equipo Qwen de Alibaba Cloud y empaquetado por el usuario arshd33p en Hugging Face. Se trata de un modelo de lenguaje causal denso de 1.700 millones de parámetros (1.400 millones sin contar los embeddings) pensado para inferencia local eficiente mediante llama.cpp, Ollama y otras herramientas compatibles con GGUF. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
 El modelo base Qwen3-1.7B forma parte de la tercera generación de la familia Qwen, que combina modelos densos y de mezcla de expertos (MoE). La innovación principal de esta generación es la capacidad de alternar entre modo "thinking" (razonamiento explícito paso a paso) y modo "non-thinking" (diálogo directo) dentro de un mismo modelo, controlable mediante las etiquetas `/think` y `/no_think`. Esto permite al desarrollador elegir entre latencia baja o razonamiento profundo según la tarea.
 
@@ -84,8 +84,8 @@ La comparación con Qwen2.5-1.5B y Llama 3.2 1B se ofrece como referencia de cat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/arshd33p/Qwen3-1.7B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-1.7B
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/arshd33p/Qwen3-1.7B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio GGUF oficial de Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B-GGUF
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - GitHub de Qwen3: https://github.com/QwenLM/Qwen3

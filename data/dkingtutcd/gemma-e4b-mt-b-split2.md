@@ -92,8 +92,8 @@ En ausencia de benchmarks publicados del modelo evaluado, no es posible establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dkingtutcd/gemma-E4B-mt-b-split2
+- Modelo en Hugging Face: https://huggingface.co/dkingtutcd/gemma-E4B-mt-b-split2
 - Modelo base directo: https://huggingface.co/dkingtutcd/gemma-E4B-mt-b-split1
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - Papers, blogs o demos especificos de este modelo: no disponibles (la busqueda web no devolvio resultados relacionados).

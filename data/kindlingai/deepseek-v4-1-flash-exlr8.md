@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kindlingai/deepseek-v4.1-flash-exlr8
+- Hugging Face: https://huggingface.co/kindlingai/deepseek-v4.1-flash-exlr8
 - Modelo base en este formato: https://huggingface.co/kindlingai/deepseek-v4.1-flash-exlr8-native
 - Modelo oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Especificacion del formato exlr8 v2: https://github.com/kindlingai/exlr8/blob/main/FORMAT.md

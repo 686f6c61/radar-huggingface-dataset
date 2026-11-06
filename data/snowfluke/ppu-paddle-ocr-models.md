@@ -76,7 +76,7 @@ La principal ventaja de este paquete es que ofrece los modelos de PaddleOCR en f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/snowfluke/ppu-paddle-ocr-models
+- Hugging Face: https://huggingface.co/snowfluke/ppu-paddle-ocr-models
 - GitHub (modelos): https://github.com/PT-Perkasa-Pilar-Utama/ppu-paddle-ocr-models
 - Librería ppu-paddle-ocr: https://github.com/PT-Perkasa-Pilar-Utama/ppu-paddle-ocr
 - Página de JSR de la librería: https://jsr.io/@snowfluke/ppu-paddle-ocr

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo xiq-1 es un adaptador LoRA (Low-Rank Adaptation) publicado por el autor `xiq` sobre el modelo base `ansulev/LFM2.5-2.6B-Uncensored`. Se trata de un ajuste fino supervisado (SFT) implementado con las bibliotecas `transformers`, `trl` y `unsloth`, y su pipeline declarado en HuggingFace es `text-generation`. El repositorio contiene un total de 2.697.198.592 parámetros en formato `safetensors`, lo que sugiere que el adaptador se ha fusionado o guardado junto con los pesos del modelo base de 2.600 millones de parámetros. A fecha de creación (septiembre de 2026), el modelo no tiene descargas ni likes, y su `model card` es una plantilla casi vacía, sin información detallada sobre el proceso de entrenamiento, los datos utilizados o las capacidades resultantes. El término "Uncensored" en el modelo base indica que se ha eliminado o reducido la alineación de seguridad, lo que puede ser relevante para determinadas aplicaciones de investigación, pero también introduce riesgos significativos. En conjunto, xiq-1 es un experimento de afinado de bajo rango con documentación mínima, cuya utilidad práctica resulta difícil de evaluar sin datos adicionales.
+El modelo xiq-1 es un adaptador LoRA (Low-Rank Adaptation) publicado por el autor `xiq` sobre el modelo base `ansulev/LFM2.5-2.6B-Uncensored`. Se trata de un ajuste fino supervisado (SFT) implementado con las bibliotecas `transformers`, `trl` y `unsloth`, y su pipeline declarado en Hugging Face es `text-generation`. El repositorio contiene un total de 2.697.198.592 parámetros en formato `safetensors`, lo que sugiere que el adaptador se ha fusionado o guardado junto con los pesos del modelo base de 2.600 millones de parámetros. A fecha de creación (septiembre de 2026), el modelo no tiene descargas ni likes, y su `model card` es una plantilla casi vacía, sin información detallada sobre el proceso de entrenamiento, los datos utilizados o las capacidades resultantes. El término "Uncensored" en el modelo base indica que se ha eliminado o reducido la alineación de seguridad, lo que puede ser relevante para determinadas aplicaciones de investigación, pero también introduce riesgos significativos. En conjunto, xiq-1 es un experimento de afinado de bajo rango con documentación mínima, cuya utilidad práctica resulta difícil de evaluar sin datos adicionales.
 
 ## Especificaciones técnicas
 
@@ -53,8 +53,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xiq-1 | 2.697.198.592 | no disponible | no disponible | HuggingFace |
-| ansulev/LFM2.5-2.6B-Uncensored | 2.6B | no disponible | no disponible | HuggingFace |
+| xiq-1 | 2.697.198.592 | no disponible | no disponible | Hugging Face |
+| ansulev/LFM2.5-2.6B-Uncensored | 2.6B | no disponible | no disponible | Hugging Face |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado modelos de la misma categoria con datos de rendimiento publicados. El unico punto de comparacion directo es el modelo base `ansulev/LFM2.5-2.6B-Uncensored`, pero no se aportan benchmarks de ninguno de los dos. Por tanto, no es posible establecer una comparativa tecnica rigurosa.
@@ -71,6 +71,6 @@ No se han identificado modelos de la misma categoria con datos de rendimiento pu
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/xiq/xiq-1
+- Hugging Face del modelo: https://huggingface.co/xiq/xiq-1
 - Modelo base (ansulev/LFM2.5-2.6B-Uncensored): https://huggingface.co/ansulev/LFM2.5-2.6B-Uncensored
 - Paper, repositorio, demo o blog: no disponibles.

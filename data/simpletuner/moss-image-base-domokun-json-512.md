@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento ni de otros adaptadores comparables con m�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimpleTuner/moss-image-base-domokun-json-512
+- Modelo en Hugging Face: https://huggingface.co/SimpleTuner/moss-image-base-domokun-json-512
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Colección de experimentos LoRA: https://huggingface.co/SimpleTuner/moss-image-LoRA-experiments
 - Dataset: https://huggingface.co/datasets/RareConcepts/Domokun (revisión `2e4831a72f2a701c080e0046c8f8ec41cb1ccbcf`)

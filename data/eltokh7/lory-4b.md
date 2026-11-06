@@ -72,9 +72,9 @@ Las ganancias frente a Kev-4B publicado son de +25,5 en DLS (IC [+17,9, +32,9]) 
 
 | Modelo | Parametros | Contexto | DLS v0.2 | Blind test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Lory-4B v1 | 4B (backbone) + LoRA | No disponible | 79 | 81 | Apache-2.0 | HuggingFace (preview) |
-| Lory-27B v1 | 27B | No disponible | 88 | 92 | No disponible en la informacion | HuggingFace |
-| Kev-4B | 4B | No disponible | 53 | 67 | Apache-2.0 | HuggingFace |
+| Lory-4B v1 | 4B (backbone) + LoRA | No disponible | 79 | 81 | Apache-2.0 | Hugging Face (preview) |
+| Lory-27B v1 | 27B | No disponible | 88 | 92 | No disponible en la informacion | Hugging Face |
+| Kev-4B | 4B | No disponible | 53 | 67 | Apache-2.0 | Hugging Face |
 | Perplexity Decider v1.2 | No disponible | No disponible | 77 | 93 | No disponible | No disponible en la informacion |
 
 Lory-4B se posiciona como la opcion de bajo coste de la familia Lory: supera con claridad a Kev-4B en logica economica, pero queda por detras de Lory-27B en todas las metricas y de Decider en el blind test. La comparativa con Decider es la mas relevante: empate estadistico en DLS pero derrota clara en el test ciego, lo que sugiere que Decider generaliza mejor a formulaciones no vistas.
@@ -94,7 +94,7 @@ Lory-4B se posiciona como la opcion de bajo coste de la familia Lory: supera con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eltokh7/lory-4b
+- Modelo en Hugging Face: https://huggingface.co/eltokh7/lory-4b
 - Modelo base Kev-4B: https://huggingface.co/jaredpalmer/kev-4b
 - Modelo hermano Lory-27B: https://huggingface.co/eltokh7/lory-27b
 - Repositorio de Kev (runtime de servicio): https://github.com/jaredpalmer/kev

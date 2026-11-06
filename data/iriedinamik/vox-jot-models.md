@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IrieDinamik/vox-jot-models es un repositorio de modelos publicado por el usuario IrieDinamik en HuggingFace. El unico dato tecnico confirmado es el recuento de parametros almacenados en los ficheros safetensors: 4.429.705.088 parametros (aproximadamente 4,43 mil millones), lo que situa al modelo en la categoria de modelos de tamano medio, por debajo de la barrera de los 7B y muy por encima de los modelos pequenos de menos de 1B. El repositorio ocupa 186,0 GB, un volumen que excede con mucho lo que requeriria un unico checkpoint de ese tamano en precision completa, lo que sugiere la presencia de multiples variantes, formatos o versiones dentro del mismo repositorio.
+IrieDinamik/vox-jot-models es un repositorio de modelos publicado por el usuario IrieDinamik en Hugging Face. El unico dato tecnico confirmado es el recuento de parametros almacenados en los ficheros safetensors: 4.429.705.088 parametros (aproximadamente 4,43 mil millones), lo que situa al modelo en la categoria de modelos de tamano medio, por debajo de la barrera de los 7B y muy por encima de los modelos pequenos de menos de 1B. El repositorio ocupa 186,0 GB, un volumen que excede con mucho lo que requeriria un unico checkpoint de ese tamano en precision completa, lo que sugiere la presencia de multiples variantes, formatos o versiones dentro del mismo repositorio.
 
 El repositorio declara presencia de pesos en formato ONNX, safetensors y GGUF, lo que indica que esta pensado para despliegue en entornos diversos: ONNX para inferencia en runtime compatible (por ejemplo, ONNX Runtime o navegador), safetensors para pipelines de Python con PyTorch, y GGUF para llama.cpp y derivados como Ollama. Esa combinacion de formatos es habitual en modelos orientados a ejecucion local o en el borde (edge), mas que a despliegues exclusivos en servidor.
 
@@ -107,5 +107,5 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IrieDinamik/vox-jot-models
+- Hugging Face: https://huggingface.co/IrieDinamik/vox-jot-models
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: ni papers, ni blogs, ni repositorios de codigo, ni demos, ni paginas de documentacion. Los unicos resultados devueltos no guardan relacion con el repositorio.

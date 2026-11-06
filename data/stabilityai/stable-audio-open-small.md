@@ -4,9 +4,9 @@
 
 Stable Audio Open Small es un modelo de generacion de audio a partir de texto desarrollado por Stability AI. Con aproximadamente 497 millones de parametros, es la variante compacta de la familia Stable Audio Open, disenada para sintetizar efectos de sonido y muestras de audio cortas (no musica completa con voces) a partir de descripciones textuales en ingles. Su reducido tamano lo hace apto para ejecucion en dispositivos con recursos limitados, incluida la inferencia en CPU y en movil mediante el formato TFLite que se distribuye en el repositorio.
 
-El modelo se publica bajo la licencia Stability AI Community, con acceso restringido (gated) en HuggingFace, lo que obliga a aceptar las condiciones de uso antes de descargarlo. Emplea la libreria `stable-audio-tools` para su carga y ejecucion, y se apoya en el paper arXiv:2505.08175 para su descripcion tecnica. Es relevante ahora porque ofrece generacion de audio texto-a-audio de calidad razonable en un rango de parametros muy contenido, lo que facilita prototipado rapido, integracion en aplicaciones interactivas y despliegue en hardware de consumo.
+El modelo se publica bajo la licencia Stability AI Community, con acceso restringido (gated) en Hugging Face, lo que obliga a aceptar las condiciones de uso antes de descargarlo. Emplea la libreria `stable-audio-tools` para su carga y ejecucion, y se apoya en el paper arXiv:2505.08175 para su descripcion tecnica. Es relevante ahora porque ofrece generacion de audio texto-a-audio de calidad razonable en un rango de parametros muy contenido, lo que facilita prototipado rapido, integracion en aplicaciones interactivas y despliegue en hardware de consumo.
 
-La informacion publica disponible en la ficha de HuggingFace es limitada en cuanto a detalles de entrenamiento, benchmarks y composicion del dataset; los apartados correspondientes lo indican explicitamente cuando no hay datos verificables.
+La informacion publica disponible en la ficha de Hugging Face es limitada en cuanto a detalles de entrenamiento, benchmarks y composicion del dataset; los apartados correspondientes lo indican explicitamente cuando no hay datos verificables.
 
 ## Especificaciones tecnicas
 
@@ -64,15 +64,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stable Audio Open Small (este) | 497 M | no disponible | stability-ai-community (gated) | HuggingFace, TFLite |
-| Stable Audio Open | no disponible en esta ficha | no disponible | stability-ai-community | HuggingFace |
+| Stable Audio Open Small (este) | 497 M | no disponible | stability-ai-community (gated) | Hugging Face, TFLite |
+| Stable Audio Open | no disponible en esta ficha | no disponible | stability-ai-community | Hugging Face |
 | Alternativas texto-a-audio de otros proveedores | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion suministrada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar la licencia Stability AI Community en HuggingFace antes de descargar.
+- Acceso restringido: requiere aceptar la licencia Stability AI Community en Hugging Face antes de descargar.
 - Licencia no comercial por defecto: la licencia community de Stability AI impone restricciones de uso comercial; es necesario revisar los terminos y, en su caso, obtener una licencia comercial.
 - Solo ingles: los prompts deben formularse en ingles; el rendimiento en otros idiomas no esta garantizado.
 - Orientado a efectos de sonido y samples cortos, no a musica completa con voces.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stabilityai/stable-audio-open-small
+- Modelo en Hugging Face: https://huggingface.co/stabilityai/stable-audio-open-small
 - Paper: https://arxiv.org/abs/2505.08175
 - Libreria stable-audio-tools: no disponible en la informacion proporcionada (referenciada como libreria del modelo)
 - Blog o demo oficial: no disponible en la informacion proporcionada

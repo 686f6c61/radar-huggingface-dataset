@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ppo-Huggy es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Huggy, un escenario 3D de Unity ML-Agents en el que un perro debe recoger un palo lanzado por el jugador. Lo publica el usuario Luckybull777 en HuggingFace con la libreria ml-agents, y no se trata de un modelo de lenguaje ni de un modelo de vision, sino de una politica neuronal entrenada para controlar un personaje dentro de una simulacion Unity.
+ppo-Huggy es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Huggy, un escenario 3D de Unity ML-Agents en el que un perro debe recoger un palo lanzado por el jugador. Lo publica el usuario Luckybull777 en Hugging Face con la libreria ml-agents, y no se trata de un modelo de lenguaje ni de un modelo de vision, sino de una politica neuronal entrenada para controlar un personaje dentro de una simulacion Unity.
 
 El modelo resuelve una tarea de control secuencial (locomocion, orientacion y recogida de objeto) mediante una politica aprendida por refuerzo. Su relevancia es fundamentalmente didactica y de investigacion: sirve como ejemplo reproducible de como entrenar, reanudar y desplegar un agente PPO con ML-Agents, y puede ejecutarse directamente en el navegador exportado a ONNX.
 
@@ -37,7 +37,7 @@ Tampoco se especifican hiperparametros, semilla, configuracion YAML, ni si se ap
 - Control de un agente (perro) dentro del entorno Huggy de Unity ML-Agents.
 - Toma de decisiones secuenciales a partir de observaciones del entorno simulado.
 - Inferencia en formato ONNX, lo que permite ejecucion fuera de Python.
-- Reproduccion del agente en el navegador a traves del visor de HuggingFace para entornos Unity (https://huggingface.co/unity).
+- Reproduccion del agente en el navegador a traves del visor de Hugging Face para entornos Unity (https://huggingface.co/unity).
 - Reanudacion del entrenamiento con ML-Agents para fine-tuning o continuacion del aprendizaje.
 - Soporte de tool calling: no aplica (no es un modelo de lenguaje).
 - Soporte de agentes y razonamiento multi-paso en el sentido de LLM: no aplica.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible, pero al tratarse de una politica de control para un entorno Unity el consumo de memoria es muy reducido (del orden de decenas o pocos cientos de MB en funcion de la topologia de red).
 - GPU recomendadas: no disponibles. La inferencia de un agente ML-Agents de este tipo suele ejecutarse correctamente en CPU.
 - Compatibilidad con GPU de consumo: probablemente si en cualquier GPU de consumo e incluso en CPU exclusivamente, aunque la model card no lo confirma.
-- Opciones de despliegue: ML-Agents (formato .nn), runtime ONNX (formato .onnx) y el visor de HuggingFace para entornos Unity.
+- Opciones de despliegue: ML-Agents (formato .nn), runtime ONNX (formato .onnx) y el visor de Hugging Face para entornos Unity.
 - Latencia y throughput estimados: no disponibles.
 - Almacenamiento: el repositorio ocupa 0.2 GB, por lo que el espacio en disco necesario es minimo.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Luckybull777/ppo-Huggy | Agente PPO (ML-Agents) | Huggy | no disponible | no aplica | no disponible | HuggingFace |
-| Otros agentes PPO publicados con ML-Agents | Agente PPO (ML-Agents) | Entornos Unity diversos | no disponible | no aplica | variable | HuggingFace (organizacion unity) |
+| Luckybull777/ppo-Huggy | Agente PPO (ML-Agents) | Huggy | no disponible | no aplica | no disponible | Hugging Face |
+| Otros agentes PPO publicados con ML-Agents | Agente PPO (ML-Agents) | Entornos Unity diversos | no disponible | no aplica | variable | Hugging Face (organizacion unity) |
 | Politicas entrenadas con Stable-Baselines3 | Agente RL (PPO y otros) | Gymnasium / MuJoCo | no disponible | no aplica | variable | Repositorios publicos |
 
 No se dispone de datos cuantitativos para establecer una comparacion numerica fiable con alternativas concretas.
@@ -90,10 +90,10 @@ No se dispone de datos cuantitativos para establecer una comparacion numerica fi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Luckybull777/ppo-Huggy
+- Hugging Face: https://huggingface.co/Luckybull777/ppo-Huggy
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto (Huggy en el navegador): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Visor de agentes Unity en HuggingFace: https://huggingface.co/unity
+- Visor de agentes Unity en Hugging Face: https://huggingface.co/unity
 - Resultados de busqueda web: sin enlaces tecnicos relevantes (los resultados devueltos corresponden a Netflix y no guardan relacion con el modelo).

@@ -97,13 +97,13 @@ Diferencias clave: la version de Murai Labs corrige el deep clipping presente en
 - No se han publicado benchmarks estandar (MMLU, HumanEval, GSM8K) para esta cuantizacion, por lo que no es posible comparar su rendimiento con el modelo base en metricas convencionales.
 - Los resultados de las sondas de comportamiento provienen de la propia model card de Murai Labs y no han sido replicados de forma independiente. La sonda ce-01 fue revisada a la baja tras endurecer el grader, lo que indica que algunos resultados historicos eran artefactos de evaluacion.
 - La licencia MIT permite uso comercial, pero el modelo base GLM-5.3-Flash tiene su propia licencia MIT, por lo que no hay restricciones adicionales conocidas.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto reciente y poco validado por la comunidad.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto reciente y poco validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/murai-labs/GLM-5.3-Flash-NVFP4-Murai
+- Repositorio Hugging Face: https://huggingface.co/murai-labs/GLM-5.3-Flash-NVFP4-Murai
 - Repositorio GitHub acompanante: https://github.com/Murai-Labs/GLM-5.3-Flash-NVFP4-Murai
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Zhipu AI sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Cuantizacion de LibertAI (referencia): https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4
 - Proyecto similar de MiaAI-Lab: https://github.com/MiaAI-Lab/GLM-5.3-Flash-NVFP4-Dual-DGX-Spark

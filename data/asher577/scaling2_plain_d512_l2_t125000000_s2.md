@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d512_L2_t125000000_s2` es un modelo de investigación publicado por el usuario `asher577` en HuggingFace. Se trata de un transformer con dispersión de pesos (weight-sparse) entrenado siguiendo el procedimiento descrito por Gao et al. (2025), con el objetivo de estudiar cómo escala el rendimiento en modelos con matrices de pesos dispersas. No es un modelo de propósito general ni está pensado para uso en producción: es un artefacto experimental dentro de un estudio de escalado.
+`scaling2_plain_d512_L2_t125000000_s2` es un modelo de investigación publicado por el usuario `asher577` en Hugging Face. Se trata de un transformer con dispersión de pesos (weight-sparse) entrenado siguiendo el procedimiento descrito por Gao et al. (2025), con el objetivo de estudiar cómo escala el rendimiento en modelos con matrices de pesos dispersas. No es un modelo de propósito general ni está pensado para uso en producción: es un artefacto experimental dentro de un estudio de escalado.
 
 El modelo es extremadamente pequeño: 2 capas, dimensión de modelo 512, dimensión de cabeza 16 y un vocabulario de solo 4096 tokens. Su longitud de contexto es de 512 tokens y fue entrenado sobre 125 millones de tokens del dataset `jacobcd52/simplestories-tokenized`, un corpus sintético de historias simples. La dispersión objetivo es muy agresiva: una fracción L0 de 0,01, es decir, aproximadamente el 1 % de los pesos activos.
 
@@ -78,7 +78,7 @@ No disponible. No se conocen modelos públicos comparables con la misma combinac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asher577/scaling2_plain_d512_L2_t125000000_s2
+- Modelo en Hugging Face: https://huggingface.co/asher577/scaling2_plain_d512_L2_t125000000_s2
 - Run de entrenamiento en W&B: https://wandb.ai/asher577/scd_scaling/runs/etztwnzp
 - Dataset de entrenamiento: https://huggingface.co/datasets/jacobcd52/simplestories-tokenized
 - Tokenizador: https://huggingface.co/SimpleStories/SimpleStories-1.25M

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FORGE (FOG Representation via Generative Encoding) es un conjunto de codificadores auto-supervisados para la deteccion de episodios de congelacion de la marcha (Freezing of Gait, FOG) en enfermedad de Parkinson a partir de un unico acelerometro situado en la zona lumbar baja. Lo publica el usuario Liornis en HuggingFace bajo licencia MIT. El modelo se preentrena mediante autoencodificacion enmascarada (masked autoencoding) sobre 11.724 horas (aproximadamente 21 millones de ventanas) de grabaciones domiciliarias sin etiquetar procedentes de 65 participantes, y despues se ajusta para deteccion de FOG unicamente sobre la cohorte DeFOG de 57 participantes.
+FORGE (FOG Representation via Generative Encoding) es un conjunto de codificadores auto-supervisados para la deteccion de episodios de congelacion de la marcha (Freezing of Gait, FOG) en enfermedad de Parkinson a partir de un unico acelerometro situado en la zona lumbar baja. Lo publica el usuario Liornis en Hugging Face bajo licencia MIT. El modelo se preentrena mediante autoencodificacion enmascarada (masked autoencoding) sobre 11.724 horas (aproximadamente 21 millones de ventanas) de grabaciones domiciliarias sin etiquetar procedentes de 65 participantes, y despues se ajusta para deteccion de FOG unicamente sobre la cohorte DeFOG de 57 participantes.
 
 El problema que aborda es la generalizacion entre cohortes: la mayoria de detectores de FOG se degradan al cambiar de estudio, de protocolo, de dispositivo o de estado de medicacion. FORGE se evalua sin entrenamiento en la cohorte objetivo (zero-shot) en cuatro cohortes externas, y reporta una concordancia a nivel clinico con la anotacion experta por video: ICC(%TF) = 0,899 [0,700; 0,970] en la cohorte FogAtHome-provoking con un solo IMU.
 
@@ -91,7 +91,7 @@ No se dispone de otros modelos comparables en la informacion proporcionada. La u
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FORGE (este modelo) | 12,9-14,1 M por codificador | 200 / 500 / 1000 fotogramas | AUROC 0,734-0,917 segun cohorte | MIT | HuggingFace |
+| FORGE (este modelo) | 12,9-14,1 M por codificador | 200 / 500 / 1000 fotogramas | AUROC 0,734-0,917 segun cohorte | MIT | Hugging Face |
 | Entrenamiento supervisado desde cero (linea base interna) | similar | no disponible | AUROC 0,657-0,752 en las mismas cohortes | no aplica | no disponible |
 | Otros detectores de FOG publicos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -111,6 +111,6 @@ No se dispone de otros modelos comparables en la informacion proporcionada. La u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Liornis/forge-fog
+- Modelo en Hugging Face: https://huggingface.co/Liornis/forge-fog
 - Paper, repositorio de codigo, demo o blog: no disponibles en la informacion proporcionada.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (los resultados obtenidos corresponden a foros no relacionados).

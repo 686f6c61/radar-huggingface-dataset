@@ -43,7 +43,7 @@ Entre las innovaciones técnicas destacan la aplicación de "heretic" (uncensori
 - Roleplay y juegos de texto: ideal para chatbots de personajes en plataformas de rol, gracias a su capacidad de mantener conversaciones coherentes y su falta de censura.
 - Análisis de imágenes con texto: al soportar entrada visual, puede describir imágenes, extraer información y responder preguntas sobre contenido visual, útil en accesibilidad o documentación.
 - Soporte técnico multilingüe: puede atender consultas en inglés y chino, con razonamiento avanzado para diagnosticar problemas técnicos.
-- Resolución de problemas matemáticos y físicos: según un usuario en los comentarios de HuggingFace, el modelo muestra alta inteligencia incluso en cuantización Q4, resolviendo problemas complejos derivados de escenarios físicos.
+- Resolución de problemas matemáticos y físicos: según un usuario en los comentarios de Hugging Face, el modelo muestra alta inteligencia incluso en cuantización Q4, resolviendo problemas complejos derivados de escenarios físicos.
 - Investigación académica: como modelo abierto con licencia Apache-2.0, puede usarse para experimentos de razonamiento, evaluación de benchmarks y desarrollo de agentes.
 
 ## Benchmarks y rendimiento
@@ -87,9 +87,9 @@ Nota: los datos de ARC-C para los modelos comparados no se han publicado explíc
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/SwagMessiah100/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/SwagMessiah100/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Model card del autor original (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
 - Artículo en HackerNoon: https://hackernoon.com/qwen36-27b-fable-fusion-breaks-the-700-arc-c-barrier
 - Página en ModelScope: https://www.modelscope.cn/models/Zoupers/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.6-27b-fable-fusion-711-uncensored-heretic-nm-dau-mtp-davidau
-- Discusión en HuggingFace: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/discussions/5
+- Discusión en Hugging Face: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/discussions/5

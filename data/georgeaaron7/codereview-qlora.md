@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `georgeaaron7/codereview-qlora` es un adaptador LoRA (QLoRA) sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`, desarrollado por el usuario `georgeaaron7` (Aaron George). Está diseñado como un fine-tuning para tareas de revisión de código, aunque la documentación disponible no especifica el dataset de entrenamiento ni el propósito exacto más allá del nombre del modelo. El repositorio en HuggingFace contiene únicamente los pesos del adaptador (0.1 GB) y fue creado el 6 de septiembre de 2026.
+El modelo `georgeaaron7/codereview-qlora` es un adaptador LoRA (QLoRA) sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`, desarrollado por el usuario `georgeaaron7` (Aaron George). Está diseñado como un fine-tuning para tareas de revisión de código, aunque la documentación disponible no especifica el dataset de entrenamiento ni el propósito exacto más allá del nombre del modelo. El repositorio en Hugging Face contiene únicamente los pesos del adaptador (0.1 GB) y fue creado el 6 de septiembre de 2026.
 
 El adaptador fue entrenado con SFT (Supervised Fine-Tuning) utilizando la librería TRL, y se publica con el pipeline de `text-generation`. La relevancia de este modelo es limitada debido a la falta de información: no se indican licencia, idiomas, benchmarks ni detalles del proceso de entrenamiento. El modelo base, Qwen2.5-Coder-7B-Instruct, es un modelo de instrucción especializado en código con una ventana de contexto de 32.768 tokens, pero el adaptador no documenta si hereda completamente estas capacidades ni si introduce mejoras concretas para la revisión de código.
 
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables en la documentación del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/georgeaaron7/codereview-qlora
+- Hugging Face: https://huggingface.co/georgeaaron7/codereview-qlora
 - Repositorio del autor en GitHub: https://github.com/georgeaaron7
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - TRL: https://github.com/huggingface/trl

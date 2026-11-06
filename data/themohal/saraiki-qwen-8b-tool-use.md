@@ -84,7 +84,7 @@ No hay modelos comparables especificos para saraiki jataki; este es el unico ada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/themohal/saraiki-qwen-8b-tool-use
+- Modelo en Hugging Face: https://huggingface.co/themohal/saraiki-qwen-8b-tool-use
 - Modelo SFT (Stage 2): https://huggingface.co/themohal/saraiki-qwen-8b-sft
 - Modelo CPT (Stage 1): https://huggingface.co/themohal/saraiki-qwen3-8b-cpt
 - Dataset de tool-use: https://huggingface.co/datasets/themohal/saraiki-tool-use-sft

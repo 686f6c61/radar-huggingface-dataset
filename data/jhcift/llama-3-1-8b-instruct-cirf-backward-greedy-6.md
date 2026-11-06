@@ -74,10 +74,10 @@ El autor indica que los resultados completos por dataset, incluidos MATH-500, St
 
 | Modelo | Parametros | Contexto | Enfoque de razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-6 | 8,03B | no disponible | Tokens funcionales CIRF, presupuesto de 6 resultados | llama3.1 | HuggingFace, 0 descargas |
+| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-6 | 8,03B | no disponible | Tokens funcionales CIRF, presupuesto de 6 resultados | llama3.1 | Hugging Face, 0 descargas |
 | meta-llama/Llama-3.1-8B-Instruct (base) | 8,03B | 128K (segun Meta) | Razonamiento en lenguaje natural | llama3.1 | Ampliamente disponible |
-| JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full | no disponible | no disponible | Tokens funcionales CIRF, resultado completo | llama3.1 | HuggingFace |
-| JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3 | no disponible | no disponible | CIRF, presupuesto de 3 resultados | llama3.1 | HuggingFace |
+| JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full | no disponible | no disponible | Tokens funcionales CIRF, resultado completo | llama3.1 | Hugging Face |
+| JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3 | no disponible | no disponible | CIRF, presupuesto de 3 resultados | llama3.1 | Hugging Face |
 
 La comparativa de rendimiento frente a alternativas no esta disponible: la model card no incluye resultados de los modelos hermanos ni del base en los mismos benchmarks.
 
@@ -97,7 +97,7 @@ La comparativa de rendimiento frente a alternativas no esta disponible: la model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-6
+- Modelo en Hugging Face: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-6
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante CIRF-Full: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full
 - Variante CIRF-Zero-Results: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results

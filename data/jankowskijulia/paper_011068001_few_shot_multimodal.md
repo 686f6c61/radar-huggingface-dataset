@@ -62,7 +62,7 @@ No se puede realizar una comparativa con modelos de IA porque el repositorio no 
 | Arquitectura propuesta | No disponible | Visor de imagen + LM congelado |
 | Resultados experimentales | No | Sí (few-shot en visión-lenguaje) |
 | Licencia | BSD-3-Clause | no disponible |
-| Disponibilidad | HuggingFace | arXiv + NeurIPS |
+| Disponibilidad | Hugging Face | arXiv + NeurIPS |
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No se puede realizar una comparativa con modelos de IA porque el repositorio no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jankowskijulia/paper_011068001_few_shot_multimodal
+- Repositorio Hugging Face: https://huggingface.co/jankowskijulia/paper_011068001_few_shot_multimodal
 - Paper de referencia (Feng et al., 2021): https://arxiv.org/abs/2106.13884
 - Versión NeurIPS: https://papers.nips.cc/paper/2021/hash/01b7575c38dac42f3cfb7d500438b875-Abstract.html
 - Código y análisis (CatalyzeX): https://www.catalyzex.com/paper/multimodal-few-shot-learning-with-frozen

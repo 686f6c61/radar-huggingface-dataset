@@ -6,7 +6,7 @@ Whisper-Small de Qualcomm es una versión optimizada para inferencia en disposit
 
 El resultado es un sistema pensado para ejecutarse íntegramente en el NPU Hexagon de dispositivos móviles y de cómputo en el borde, sin depender de la nube. Según la model card, mantiene un rendimiento robusto en entornos ruidosos y destaca en transcripción de formato largo, procesando fragmentos de audio de hasta 30 segundos. La latencia se descompone en el tiempo hasta el primer token (latencia del codificador) y el tiempo por token adicional (latencia del decodificador).
 
-El repositorio de HuggingFace, de 50,1 GB, no contiene solo pesos: incluye artefactos precompilados (ONNX con QNN y binarios de contexto QNN) para múltiples chipsets, además de la posibilidad de reexportar el modelo con configuraciones propias mediante la librería Qualcomm AI Hub Models. Está licenciado bajo Apache 2.0 y su pipeline declarado es `automatic-speech-recognition`.
+El repositorio de Hugging Face, de 50,1 GB, no contiene solo pesos: incluye artefactos precompilados (ONNX con QNN y binarios de contexto QNN) para múltiples chipsets, además de la posibilidad de reexportar el modelo con configuraciones propias mediante la librería Qualcomm AI Hub Models. Está licenciado bajo Apache 2.0 y su pipeline declarado es `automatic-speech-recognition`.
 
 ## Especificaciones tecnicas
 
@@ -71,9 +71,9 @@ La model card referencia un apartado de resumen de rendimiento (`#performance-su
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qualcomm/Whisper-Small | no disponible | fragmentos de hasta 30 s | no disponible | Apache 2.0 | HuggingFace + Qualcomm AI Hub |
-| openai/whisper-small | ~244 M (dato publico del modelo base) | fragmentos de hasta 30 s | multilingue (99 idiomas, dato publico del modelo base) | Apache 2.0 | HuggingFace |
-| openai/whisper-small.en | ~244 M (dato publico) | fragmentos de hasta 30 s | ingles | Apache 2.0 | HuggingFace |
+| qualcomm/Whisper-Small | no disponible | fragmentos de hasta 30 s | no disponible | Apache 2.0 | Hugging Face + Qualcomm AI Hub |
+| openai/whisper-small | ~244 M (dato publico del modelo base) | fragmentos de hasta 30 s | multilingue (99 idiomas, dato publico del modelo base) | Apache 2.0 | Hugging Face |
+| openai/whisper-small.en | ~244 M (dato publico) | fragmentos de hasta 30 s | ingles | Apache 2.0 | Hugging Face |
 
 La comparación cuantitativa de rendimiento (WER, latencia) no está disponible en la información proporcionada. La diferencia principal de la variante de Qualcomm frente al Whisper-Small original es la reingeniería de atención y capas para ejecución en NPU, junto con los artefactos precompilados por chipset.
 
@@ -91,7 +91,7 @@ La comparación cuantitativa de rendimiento (WER, latencia) no está disponible 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/Whisper-Small
+- Hugging Face: https://huggingface.co/qualcomm/Whisper-Small
 - Qualcomm AI Hub Models (implementacion de whisper_small): https://github.com/qualcomm/ai-hub-models/blob/v0.62.2/src/qai_hub_models/models/whisper_small
 - Implementacion de Whisper en transformers v4.42.3: https://github.com/huggingface/transformers/tree/v4.42.3/src/transformers/models/whisper
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

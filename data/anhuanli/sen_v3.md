@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sen_v3 es un checkpoint de generacion de imagenes a partir de texto (text-to-image) construido sobre la arquitectura SDXL 1.0 y publicado por el usuario anhuanli en HuggingFace. Se distribuye como un unico archivo `.safetensors` en fp16 de aproximadamente 6,6 GB (6.617 MB) con unos 3,47 mil millones de parametros, lo que corresponde al grafo completo de SDXL: UNet de difusion, doble text encoder (CLIP ViT-L y OpenCLIP ViT-bigG) y VAE.
+sen_v3 es un checkpoint de generacion de imagenes a partir de texto (text-to-image) construido sobre la arquitectura SDXL 1.0 y publicado por el usuario anhuanli en Hugging Face. Se distribuye como un unico archivo `.safetensors` en fp16 de aproximadamente 6,6 GB (6.617 MB) con unos 3,47 mil millones de parametros, lo que corresponde al grafo completo de SDXL: UNet de difusion, doble text encoder (CLIP ViT-L y OpenCLIP ViT-bigG) y VAE.
 
 El modelo se presenta como un fine-tune de SDXL 1.0, aunque la model card no documenta el metodo de ajuste, el dataset de entrenamiento ni posibles trigger words; esos campos aparecen explicitamente como "待补充" (pendiente de completar). La validacion de arquitectura incluida por el autor confirma la familia: el text encoder secundario tiene una matriz de embedding de 49408 x 1280 (OpenCLIP ViT-bigG), existe la embedding de condiciones de tamano y recorte (`label_emb`), y el VAE usa `conv_in` de 512 canales con entrada de 4 canales, todo consistente con SDXL 1.0.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion nativa | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sen_v3 | ~3,47 B | 1024x1024 | 77 tokens por encoder | other (verificar SDXL 1.0) | HuggingFace, 17 descargas |
+| sen_v3 | ~3,47 B | 1024x1024 | 77 tokens por encoder | other (verificar SDXL 1.0) | Hugging Face, 17 descargas |
 | SDXL 1.0 (Stability AI) | ~3,47 B | 1024x1024 | 77 tokens por encoder | CreativeML Open RAIL++-M | Amplia, referencia del ecosistema |
 | SD 1.5 | ~0,86 B | 512x512 | 77 tokens | CreativeML Open RAIL-M | Muy amplia, ecosistema maduro |
-| Flux.1 dev | ~12 B | ~1 MP | hasta 512 tokens (T5) | no comercial | HuggingFace, muy extendida |
+| Flux.1 dev | ~12 B | ~1 MP | hasta 512 tokens (T5) | no comercial | Hugging Face, muy extendida |
 
 La comparacion cuantitativa de calidad no es posible: sen_v3 no publica benchmarks y su fine-tune no esta documentado. Frente a SDXL 1.0 comparte arquitectura y peso, por lo que la diferencia se reduce al ajuste estetico, sin evidencia publica de mejora medible. Frente a SD 1.5 ofrece mayor resolucion nativa y mejor adherencia al prompt a costa de mas VRAM. Frente a Flux.1 dev, sen_v3 es mas ligero y probablemente mas rapido, pero Flux incorpora un encoder T5 con contexto mucho mayor y una calidad de texto en imagen superior segun la literatura publica del propio Flux.
 
@@ -83,7 +83,7 @@ La comparacion cuantitativa de calidad no es posible: sen_v3 no publica benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anhuanli/sen_v3
+- Modelo en Hugging Face: https://huggingface.co/anhuanli/sen_v3
 - SDXL 1.0 base (referencia de arquitectura y licencia): https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Documentacion de diffusers para `from_single_file`: https://huggingface.co/docs/diffusers/main/en/api/pipelines/stable_diffusion/stable_diffusion_xl
 - Repositorio de ComfyUI: https://github.com/comfyanonymous/ComfyUI

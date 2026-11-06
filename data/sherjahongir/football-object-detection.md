@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sherjahongir/football-object-detection` es un detector de objetos orientado al ámbito del fútbol, publicado en HuggingFace por el usuario sherjahongir bajo licencia MIT. La información pública disponible es extremadamente limitada: la model card únicamente indica la licencia, sin descripción de arquitectura, parámetros, datos de entrenamiento ni métricas. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que podría tratarse de un modelo en formato ligero o que los pesos no están almacenados directamente en el repositorio (posiblemente enlaces externos o archivos comprimidos).
+El modelo `sherjahongir/football-object-detection` es un detector de objetos orientado al ámbito del fútbol, publicado en Hugging Face por el usuario sherjahongir bajo licencia MIT. La información pública disponible es extremadamente limitada: la model card únicamente indica la licencia, sin descripción de arquitectura, parámetros, datos de entrenamiento ni métricas. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que podría tratarse de un modelo en formato ligero o que los pesos no están almacenados directamente en el repositorio (posiblemente enlaces externos o archivos comprimidos).
 
 A pesar de la falta de documentación, el nombre del modelo y la actividad del autor en plataformas como Ultralytics (donde aparece un dataset llamado "Football Players Detection" con anotaciones para jugadores, porteros, árbitros y balón) indican que el propósito es la detección de objetos en imágenes o vídeos de partidos de fútbol, probablemente usando una arquitectura basada en YOLO. No obstante, al no existir especificaciones verificables, cualquier afirmación técnica debe tratarse con cautela. Su relevancia actual radica en la creciente demanda de herramientas de análisis deportivo automatizado, aunque la falta de transparencia limita su aplicabilidad en entornos profesionales.
 
@@ -61,12 +61,12 @@ No se dispone de información suficiente para realizar una comparativa con otros
 - Riesgo de sesgos en el conjunto de datos: si el modelo fue entrenado con un dataset específico (por ejemplo, el mencionado en Ultralytics), podría presentar sesgos hacia ciertas ligas, ángulos de cámara o condiciones de iluminación.
 - Posible sobreajuste: sin información sobre la diversidad de los datos de entrenamiento, no se puede descartar que el modelo tenga un rendimiento deficiente en escenarios no representados.
 - Licencia MIT: aunque permite uso comercial y modificación, la falta de garantías y de atribución clara de los datos de entrenamiento puede generar problemas legales si se utiliza en producción.
-- Repositorio vacío o incompleto: el tamaño de 0.0 GB sugiere que los pesos del modelo podrían no estar disponibles directamente en HuggingFace, lo que dificulta su descarga y uso inmediato.
+- Repositorio vacío o incompleto: el tamaño de 0.0 GB sugiere que los pesos del modelo podrían no estar disponibles directamente en Hugging Face, lo que dificulta su descarga y uso inmediato.
 - Sin soporte ni mantenimiento: al ser un proyecto personal sin actividad visible, no hay garantía de actualizaciones o corrección de errores.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sherjahongir/football-object-detection)
+- [Modelo en Hugging Face](https://huggingface.co/sherjahongir/football-object-detection)
 - [Dataset "Football Players Detection" en Ultralytics](https://platform.ultralytics.com/sherjahongir-tursunmurodov-3/datasets/football-players-detection-3zvbc)
 - [Perfil del autor en Ultralytics](https://platform.ultralytics.com/sherjahongir-tursunmurodov-3?tab=datasets)
 - [Proyecto similar: wisng/Football-Object-Detection (GitHub)](https://github.com/wisng/Football-Object-Detection)

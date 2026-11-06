@@ -2,7 +2,7 @@
 
 ## Resumen
 
-D-FINE-seg es una familia de modelos de visión por computador centrada en detección de objetos, segmentación de instancias y segmentación semántica en tiempo real. La desarrolla ArgoSA y se distribuye a través de HuggingFace con pesos PyTorch en formato `.pt`. El núcleo de detección sigue la arquitectura D-FINE (detection transformer con refinamiento iterativo de cajas), mientras que las cabezas de segmentación se han reimplementado desde cero siguiendo el paradigma Mask DINO.
+D-FINE-seg es una familia de modelos de visión por computador centrada en detección de objetos, segmentación de instancias y segmentación semántica en tiempo real. La desarrolla ArgoSA y se distribuye a través de Hugging Face con pesos PyTorch en formato `.pt`. El núcleo de detección sigue la arquitectura D-FINE (detection transformer con refinamiento iterativo de cajas), mientras que las cabezas de segmentación se han reimplementado desde cero siguiendo el paradigma Mask DINO.
 
 El modelo resuelve el problema de unificar tres tareas de percepción visual en una sola base de código, con un único flag de configuración (`task: detect | segment | sem_seg`), cinco tamaños (N, S, M, L, X) y gráficos de despliegue fusionados para ONNX, TensorRT, OpenVINO, CoreML y LiteRT. Está pensado especialmente para conducción autónoma y escenas de exterior, con entrenamiento sobre Cityscapes a resolución nativa de 1024x2048.
 
@@ -82,7 +82,7 @@ El autor declara además que, en fine-tuning sobre 640 Cityscapes, el modelo sup
 
 | Modelo | Parametros (M) | mIoU Cityscapes | E2E ms | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| D-FINE-seg-X | 56,3 | 84,84 | 14,64 | Pesos Cityscapes no comerciales; código Apache 2.0 | HuggingFace + GitHub |
+| D-FINE-seg-X | 56,3 | 84,84 | 14,64 | Pesos Cityscapes no comerciales; código Apache 2.0 | Hugging Face + GitHub |
 | YOLO26x-sem | 40,13 | 83,58 | 13,58 | no disponible | no disponible |
 | EfficientViT-L2 | 52,61 | 83,20 | 19,87 | no disponible | no disponible |
 | Mask2Former-Swin-L | 215,46 | 83,33 | 94,07 | no disponible | no disponible |
@@ -102,7 +102,7 @@ D-FINE-seg-X lidera la tabla de los 28 modelos comparados por el autor en mIoU, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArgoSA/D-FINE-seg
+- Hugging Face: https://huggingface.co/ArgoSA/D-FINE-seg
 - GitHub (código, benchmarks y documentación): https://github.com/ArgoHA/D-FINE-seg
 - Benchmark Cityscapes (tabla completa de 28 modelos): https://github.com/ArgoHA/cityscapes-benchmark
 - Paper D-FINE-seg (arXiv:2602.23043): https://arxiv.org/abs/2602.23043

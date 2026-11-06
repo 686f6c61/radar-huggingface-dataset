@@ -91,6 +91,6 @@ No hay comparativas numéricas directas publicadas en la información disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbresp13_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbresp13_remove50
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repos de código o demos del método Swift-SVD o de la evaluación.

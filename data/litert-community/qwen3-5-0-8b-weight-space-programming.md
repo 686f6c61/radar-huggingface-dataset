@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Qwen3.5-0.8B-weight-space-programming
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Qwen3.5-0.8B-weight-space-programming
 - Modelo fuente (pesos editados): https://huggingface.co/RikiyaT/Qwen3.5-0.8B-weight-space-programming
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM

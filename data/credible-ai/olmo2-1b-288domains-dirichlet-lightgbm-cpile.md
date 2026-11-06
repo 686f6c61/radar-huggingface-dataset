@@ -82,7 +82,7 @@ A diferencia de las alternativas, este modelo no compite en capacidad general: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-lightgbm-cpile
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-lightgbm-cpile
 - Paper LinMix (arXiv): https://arxiv.org/abs/2610.37390
 - Codigo (GitHub): https://github.com/credibleai/linmix
 - Enjambre proxy de 60M: https://huggingface.co/credible-ai/olmo2-60M-288domains-dirichlet

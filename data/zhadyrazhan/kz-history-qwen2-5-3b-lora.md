@@ -72,7 +72,7 @@ Los datos del modelo base proceden de su documentación pública y no forman par
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kz-history-qwen2.5-3b-lora | Adaptador sobre base de ~3 000 M | No disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes | Fine-tune temático sin documentar |
+| kz-history-qwen2.5-3b-lora | Adaptador sobre base de ~3 000 M | No disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes | Fine-tune temático sin documentar |
 | Qwen2.5-3B-Instruct (base) | ~3 000 M | 32 768 tokens (documentación pública) | Apache-2.0 (documentación pública) | Ampliamente disponible | Modelo instructivo generalista |
 | Qwen2.5-1.5B-Instruct | ~1 500 M | 32 768 tokens (documentación pública) | Apache-2.0 (documentación pública) | Ampliamente disponible | Alternativa más ligera, menor calidad general |
 | Qwen2.5-7B-Instruct | ~7 600 M | 32 768 tokens, ampliable con YaRN (documentación pública) | Apache-2.0 (documentación pública) | Ampliamente disponible | Requiere más VRAM, mejor rendimiento general |
@@ -94,7 +94,7 @@ No se dispone de resultados comparativos de rendimiento entre este adaptador y l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhadyrazhan/kz-history-qwen2.5-3b-lora
+- Repositorio en Hugging Face: https://huggingface.co/zhadyrazhan/kz-history-qwen2.5-3b-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

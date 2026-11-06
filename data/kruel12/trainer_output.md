@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kruel12/trainer_output es un modelo de recompensa (reward model) obtenido mediante ajuste fino supervisado con TRL sobre HuggingFaceTB/SmolLM-135M-Instruct. Lo publica el usuario Kruel12 en HuggingFace y su propósito es puntuar textos generados para servir como señal de recompensa en pipelines de RLHF o DPO. Aunque la model card lo describe como "fine-tuned version" del modelo base, la etiqueta de pipeline es text-classification y el ejemplo de uso devuelve una puntuación escalar, lo que confirma su función como cabezal de recompensa.
+Kruel12/trainer_output es un modelo de recompensa (reward model) obtenido mediante ajuste fino supervisado con TRL sobre HuggingFaceTB/SmolLM-135M-Instruct. Lo publica el usuario Kruel12 en Hugging Face y su propósito es puntuar textos generados para servir como señal de recompensa en pipelines de RLHF o DPO. Aunque la model card lo describe como "fine-tuned version" del modelo base, la etiqueta de pipeline es text-classification y el ejemplo de uso devuelve una puntuación escalar, lo que confirma su función como cabezal de recompensa.
 
 El modelo parte de SmolLM-135M-Instruct, un transformer decoder-only de 134.515.584 parámetros (unos 135 millones), lo que lo sitúa en la gama ultraligera: cabe en cualquier GPU consumer e incluso en CPU para inferencia por lotes pequeños. El dataset de entrenamiento declarado es HumanLLMs/Human-Like-DPO-Dataset, orientado a preferencias sobre respuestas "human-like".
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kruel12/trainer_output | 134,5 M | no disponible | Reward model (text-classification) | no disponible | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM-135M-Instruct | ≈135 M | no disponible en esta ficha | Generación de texto instruct | Apache-2.0 (según el modelo base) | HuggingFace, ampliamente usado |
-| Reward models de la familia trl-lib (p. ej. variantes pequeñas) | variable | variable | Reward modeling | variable según autor | HuggingFace |
+| Kruel12/trainer_output | 134,5 M | no disponible | Reward model (text-classification) | no disponible | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM-135M-Instruct | ≈135 M | no disponible en esta ficha | Generación de texto instruct | Apache-2.0 (según el modelo base) | Hugging Face, ampliamente usado |
+| Reward models de la familia trl-lib (p. ej. variantes pequeñas) | variable | variable | Reward modeling | variable según autor | Hugging Face |
 
 La comparación directa con reward models de mayor tamaño (por ejemplo, en el rango de 1 a 7 B) no está disponible en la información proporcionada; este modelo se distingue por su tamaño mínimo y su carácter experimental.
 
@@ -80,7 +80,7 @@ La comparación directa con reward models de mayor tamaño (por ejemplo, en el r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kruel12/trainer_output
+- Modelo en Hugging Face: https://huggingface.co/Kruel12/trainer_output
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - Repositorio TRL: https://github.com/huggingface/trl

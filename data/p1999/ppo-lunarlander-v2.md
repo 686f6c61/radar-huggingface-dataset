@@ -2,7 +2,7 @@
 
 ## Resumen
 
-P1999/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, y publicado en HuggingFace por el usuario P1999 mediante la libreria stable-baselines3. No es un modelo de lenguaje: se trata de una politica de control que recibe el estado vectorial del simulador y devuelve una accion discreta para aterrizar la nave entre las dos banderas de la plataforma consumiendo el minimo combustible posible.
+P1999/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, y publicado en Hugging Face por el usuario P1999 mediante la libreria stable-baselines3. No es un modelo de lenguaje: se trata de una politica de control que recibe el estado vectorial del simulador y devuelve una accion discreta para aterrizar la nave entre las dos banderas de la plataforma consumiendo el minimo combustible posible.
 
 El artefacto se distribuye como un checkpoint de stable-baselines3 y se carga con el flujo estandar `load_from_hub` de la libreria huggingface_sb3. El autor declara en la model card un resultado de `mean_reward` de 278,10 +/- 14,46 sobre LunarLander-v3, un valor por encima del umbral de 200 que el entorno considera "resuelto" (referencia habitual del benchmark, no confirmada en la informacion adjunta). Ese resultado, sin embargo, no esta verificado por la plataforma (`verified: false`).
 
@@ -18,7 +18,7 @@ Su relevancia es acotada pero clara: sirve como baseline reproducible de PPO par
 | Longitud de contexto | No aplica. No es un modelo de lenguaje; el agente consume en cada paso la observacion vectorial del entorno LunarLander-v3 |
 | Tipos de cuantizacion | No aplica. No se ofrecen variantes cuantizadas (GGUF, AWQ, GPTQ, etc.) |
 | Idiomas soportados | No aplica. No procesa texto |
-| Licencia | No disponible. La ficha de HuggingFace no declara licencia |
+| Licencia | No disponible. La ficha de Hugging Face no declara licencia |
 | Formato de pesos | No especificado de forma explicita. El flujo de uso indicado en la model card emplea `huggingface_sb3.load_from_hub`, que descarga el artefacto comprimido (.zip) propio de stable-baselines3 |
 
 ## Arquitectura y entrenamiento
@@ -74,16 +74,16 @@ No hay datos numericos publicados en la informacion disponible para otros agente
 
 | Alternativa | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| P1999/ppo-LunarLander-v2 (PPO) | No disponible | No aplica | mean_reward 278,10 +/- 14,46 (no verificado) | No disponible | Publico en HuggingFace, 0 descargas |
-| Agente DQN sobre LunarLander | No disponible | No aplica | No disponible | No disponible | Familia habitual en HuggingFace y en la documentacion de SB3 |
-| Agente A2C sobre LunarLander | No disponible | No aplica | No disponible | No disponible | Familia habitual en HuggingFace y en la documentacion de SB3 |
+| P1999/ppo-LunarLander-v2 (PPO) | No disponible | No aplica | mean_reward 278,10 +/- 14,46 (no verificado) | No disponible | Publico en Hugging Face, 0 descargas |
+| Agente DQN sobre LunarLander | No disponible | No aplica | No disponible | No disponible | Familia habitual en Hugging Face y en la documentacion de SB3 |
+| Agente A2C sobre LunarLander | No disponible | No aplica | No disponible | No disponible | Familia habitual en Hugging Face y en la documentacion de SB3 |
 | Otros agentes PPO sobre LunarLander | No disponible | No aplica | No disponible | No disponible | Existen multiples repositorios comunitarios sin cifras verificadas en esta busqueda |
 
 Diferencias cualitativas esperables: PPO es on-policy y suele ofrecer mayor estabilidad y menor sensibilidad a hiperparametros que A2C; DQN es off-policy, emplea buffer de repeticion y aprende de acciones discretas con otro perfil de varianza en la recompensa. No se dispone de mediciones comparativas propias para respaldar estas afirmaciones con numeros.
 
 ## Limitaciones y advertencias
 
-- Sin validacion comunitaria: cero descargas y cero likes en la ficha de HuggingFace, por lo que no hay evidencia externa de que el checkpoint se haya cargado o reproducido correctamente.
+- Sin validacion comunitaria: cero descargas y cero likes en la ficha de Hugging Face, por lo que no hay evidencia externa de que el checkpoint se haya cargado o reproducido correctamente.
 - Resultado no verificado: la recompensa media declarada (278,10 +/- 14,46) esta marcada con `verified: false`; no se especifica el numero de episodios, las semillas ni el protocolo de evaluacion.
 - Licencia ausente: la ficha no declara licencia, lo que impide determinar si el uso comercial esta permitido. Se desaconseja su inclusion en productos sin aclarar antes este punto.
 - Repositorio aparentemente vacio o incompleto: el tamano declarado es de 0,0 GB, lo que sugiere que el artefacto puede no estar subido, estar troceado de forma incompleta o ser un archivo de tamano despreciable. Conviene verificar la descarga antes de depender de el.
@@ -97,7 +97,7 @@ Diferencias cualitativas esperables: PPO es on-policy y suele ofrecer mayor esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/P1999/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/P1999/ppo-LunarLander-v2
 - Libreria stable-baselines3 (citada en la model card): https://github.com/DLR-RM/stable-baselines3
 - Libreria huggingface_sb3 (importada en el ejemplo de uso de la model card): https://github.com/huggingface/huggingface_sb3
 - Documentacion del entorno LunarLander en Gymnasium/Farama (referencia externa, no encontrada en la busqueda web): https://gymnasium.farama.org/environments/box2d/lunar_lander/

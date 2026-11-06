@@ -112,7 +112,7 @@ No se dispone de datos cuantitativos de otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomaarsen/multivector-ModernBERT-base-msmarco-cached-contrastive-matryoshka
+- Modelo en Hugging Face: https://huggingface.co/tomaarsen/multivector-ModernBERT-base-msmarco-cached-contrastive-matryoshka
 - Paper de ModernBERT: https://aclanthology.org/2025.acl-long.127/
 - Repositorio GitHub de ModernBERT: https://github.com/AnswerDotAI/ModernBERT
 - Variante sin Matryoshka: https://huggingface.co/tomaarsen/multivector-ModernBERT-base-msmarco-contrastive

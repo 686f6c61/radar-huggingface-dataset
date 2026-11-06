@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| ct-qwen36-35b-anth-gen-postcot-g1-b3 | adaptador LoRA sobre base de 35B (activos no confirmados) | no disponible (entrenado a 8192) | no disponible | HuggingFace, 0 descargas, 0 likes | no publicados |
+| ct-qwen36-35b-anth-gen-postcot-g1-b3 | adaptador LoRA sobre base de 35B (activos no confirmados) | no disponible (entrenado a 8192) | no disponible | Hugging Face, 0 descargas, 0 likes | no publicados |
 | Qwen3-30B-A3B (familia Qwen3, MoE denso de referencia) | 30,5B totales / 3,3B activos | 128K | Apache 2.0 | ampliamente disponible | no comparables en esta ficha |
 | Mistral Small 3.x 24B | 24B densos | 128K | Apache 2.0 | ampliamente disponible | no comparables en esta ficha |
-| Otros adaptadores de la cadena constitutional_training (ramas g1) | adaptadores LoRA sobre el mismo base | no disponible | no disponible | HuggingFace | no publicados |
+| Otros adaptadores de la cadena constitutional_training (ramas g1) | adaptadores LoRA sobre el mismo base | no disponible | no disponible | Hugging Face | no publicados |
 
 No se dispone de resultados de benchmarks que permitan una comparacion cuantitativa. La comparativa anterior es estructural. Advertencia: el modelo base Qwen/Qwen3.6-35B-A3B no aparece descrito en los resultados de busqueda web disponibles, por lo que sus especificaciones oficiales no han podido verificarse de forma independiente.
 
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Constitucion de entrenamiento de esta generacion: `training_seed_constitution.md`, incluida en el repositorio del modelo
 - Metadatos de exportacion desde Tinker: `tinker_meta.json`, incluido en el repositorio del modelo

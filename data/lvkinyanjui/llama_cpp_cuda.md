@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LVKinyanjui/llama_cpp_cuda` es un repositorio alojado en HuggingFace por el usuario LVKinyanjui que, por su nombre, tamano (35,8 GB) y ausencia de pipeline declarado, no parece un modelo de lenguaje entrenado desde cero, sino un paquete de artefactos relacionados con `llama.cpp` compilado con soporte CUDA. La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion, sin autores, sin arquitectura ni datos de entrenamiento.
+`LVKinyanjui/llama_cpp_cuda` es un repositorio alojado en Hugging Face por el usuario LVKinyanjui que, por su nombre, tamano (35,8 GB) y ausencia de pipeline declarado, no parece un modelo de lenguaje entrenado desde cero, sino un paquete de artefactos relacionados con `llama.cpp` compilado con soporte CUDA. La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion, sin autores, sin arquitectura ni datos de entrenamiento.
 
 No se dispone de informacion sobre parametros, longitud de contexto, idiomas, tokenizador ni proceso de entrenamiento. El repositorio tiene cero descargas y cero likes en el momento de la consulta, y fue creado en mayo de 2026 con una ultima actualizacion en noviembre de 2026.
 
@@ -25,7 +25,7 @@ Dado que el contenido no esta documentado, esta ficha se limita a describir lo q
 
 No hay informacion en la model card sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO, SFT). El nombre del repositorio sugiere que su contenido esta vinculado al ecosistema `llama.cpp` con backend CUDA, es decir, posiblemente binarios compilados, librerias o pesos convertidos para inferencia, pero esto no puede confirmarse con los datos disponibles.
 
-Tampoco se documenta si el repositorio incluye pesos de un modelo concreto, un fork del codigo de `llama.cpp` o artefactos de soporte. La ausencia de pipeline declarado en HuggingFace refuerza la hipotesis de que no se trata de un modelo con tarea de inferencia estandar registrada en la plataforma.
+Tampoco se documenta si el repositorio incluye pesos de un modelo concreto, un fork del codigo de `llama.cpp` o artefactos de soporte. La ausencia de pipeline declarado en Hugging Face refuerza la hipotesis de que no se trata de un modelo con tarea de inferencia estandar registrada en la plataforma.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Tampoco se documenta si el repositorio incluye pesos de un modelo concreto, un f
 - Referencia de licencia: el repositorio declara Apache 2.0, por lo que podria servir como base para proyectos que requieran esa licencia, previa verificacion del contenido real.
 - Archivado y trazabilidad: util como registro de una compilacion concreta de `llama.cpp` asociada a un entorno CUDA especifico, si el autor lo mantiene con ese proposito.
 - Pruebas de compatibilidad CUDA: comprobar si los artefactos funcionan con distintas versiones de CUDA y drivers, siempre que se valide primero su contenido.
-- Formacion interna: usar el repositorio como ejemplo de publicacion en HuggingFace con licencia permisiva, aunque sin model card sustantiva.
+- Formacion interna: usar el repositorio como ejemplo de publicacion en Hugging Face con licencia permisiva, aunque sin model card sustantiva.
 
 Ninguno de estos casos puede confirmarse sin acceso al contenido real del repositorio; se basan en inferencias a partir del nombre y del tamano.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LVKinyanjui/llama_cpp_cuda | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| LVKinyanjui/llama_cpp_cuda | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa con alternativas de la misma categoria, ya que no se ha confirmado que este repositorio contenga un modelo de lenguaje con caracteristicas comparables.
@@ -80,5 +80,5 @@ No se dispone de informacion suficiente para establecer una comparativa con alte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LVKinyanjui/llama_cpp_cuda
+- Repositorio en Hugging Face: https://huggingface.co/LVKinyanjui/llama_cpp_cuda
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

@@ -79,7 +79,7 @@ La comparativa se limita al modelo base de Liquid AI, ya que no se dispone de in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LFM2.5-2.6B-JP-RollPlay-SFT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LFM2.5-2.6B-JP-RollPlay-SFT-GGUF
 - Modelo base (CloudGoat): https://huggingface.co/CloudGoat/LFM2.5-2.6B-JP-RollPlay-SFT
 - Modelo base original (LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Cuantizacion del modelo base: https://huggingface.co/mradermacher/LFM2.5-2.6B-GGUF

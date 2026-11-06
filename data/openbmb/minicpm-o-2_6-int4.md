@@ -81,8 +81,8 @@ La comparativa se limita a los modelos de la misma familia, ya que no se dispone
 
 ## Enlaces
 
-- HuggingFace (modelo int4): https://huggingface.co/openbmb/MiniCPM-o-2_6-int4
-- HuggingFace (modelo base): https://huggingface.co/openbmb/MiniCPM-o-2_6
+- Hugging Face (modelo int4): https://huggingface.co/openbmb/MiniCPM-o-2_6-int4
+- Hugging Face (modelo base): https://huggingface.co/openbmb/MiniCPM-o-2_6
 - GitHub del proyecto: https://github.com/OpenBMB/MiniCPM-o
 - Blog tecnico: https://openbmb.notion.site/MiniCPM-o-2-6-A-GPT-4o-Level-MLLM-for-Vision-Speech-and-Multimodal-Live-Streaming-on-Your-Phone-185ede1b7a558042b5d5e45e6b237da9
 - Demo online: https://minicpm-omni-webdemo-us.modelbest.cn

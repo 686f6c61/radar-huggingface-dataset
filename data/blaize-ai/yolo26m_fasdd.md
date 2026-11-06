@@ -6,7 +6,7 @@ YOLO26m_FASDD es un modelo de deteccion de objetos derivado de YOLO26 Medium (Ul
 
 La relevancia tecnica del artefacto no reside en la arquitectura de red (que hereda de YOLO26m) sino en el proceso de compilacion y cuantizacion para el Graph Streaming Processor (GSP) de Blaize, una arquitectura de flujo de grafos disenada para inferencia en el borde con bajo consumo y baja latencia. El repositorio contiene una unica variante compilada en formato `.bm` con cuantizacion AMP (mezcla de INT8 y BF16) y resolucion de entrada de 640x384.
 
-Se trata, por tanto, de un modelo de nicho para integracion en hardware propietario: no es ejecutable con los runners habituales de PyTorch o ONNX Runtime, sino unicamente a traves del Picasso SDK y sobre silicio Blaize. Su publicacion en HuggingFace facilita la distribucion del binario compilado, pero limita drasticamente su reutilizacion fuera del ecosistema Blaize.
+Se trata, por tanto, de un modelo de nicho para integracion en hardware propietario: no es ejecutable con los runners habituales de PyTorch o ONNX Runtime, sino unicamente a traves del Picasso SDK y sobre silicio Blaize. Su publicacion en Hugging Face facilita la distribucion del binario compilado, pero limita drasticamente su reutilizacion fuera del ecosistema Blaize.
 
 ## Especificaciones tecnicas
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | YOLO26m_FASDD (este) | no disponible | 640x384 | Deteccion de llama y humo | AGPL-3.0 | Binario `.bm` para Blaize GSP |
 | YOLO26m (Ultralytics original) | no disponible en esta ficha | configurable | Deteccion de objetos generica (COCO) | AGPL-3.0 o licencia enterprise Ultralytics | Pesos PyTorch en repositorio Ultralytics |
 | YOLOv8m / YOLO11m (Ultralytics) | no disponible en esta ficha | configurable | Deteccion de objetos generica | AGPL-3.0 o licencia enterprise Ultralytics | Pesos PyTorch, ONNX, TensorRT, etc. |
-| Detectores especializados en humo/incendios en HuggingFace | no disponible | variable | Deteccion de humo/llama | variable | variable |
+| Detectores especializados en humo/incendios en Hugging Face | no disponible | variable | Deteccion de humo/llama | variable | variable |
 
-La comparacion directa con alternativas es limitada porque este artefacto es un binario compilado para hardware propietario, no un checkpoint reutilizable. La comparacion mas justa es contra el YOLO26m original de Ultralytics (misma topologia, distinto formato y calibracion) y contra otros detectores de humo/llama publicados en HuggingFace, para los que no se dispone de datos verificados en esta ficha.
+La comparacion directa con alternativas es limitada porque este artefacto es un binario compilado para hardware propietario, no un checkpoint reutilizable. La comparacion mas justa es contra el YOLO26m original de Ultralytics (misma topologia, distinto formato y calibracion) y contra otros detectores de humo/llama publicados en Hugging Face, para los que no se dispone de datos verificados en esta ficha.
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ La comparacion directa con alternativas es limitada porque este artefacto es un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/YOLO26m_FASDD
+- Hugging Face: https://huggingface.co/Blaize-AI/YOLO26m_FASDD
 - Repositorio original Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset FASDD-full: https://www.scidb.cn/en/detail?dataSetId=ce9c9400b44148e1b0a749f5c3eb0bda
 - Blaize: https://www.blaize.com

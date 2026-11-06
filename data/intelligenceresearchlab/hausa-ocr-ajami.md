@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de OC
 - Madurez del repositorio: sin descargas ni interacciones registradas y sin senales de mantenimiento activo o soporte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/IntelligenceResearchLab/Hausa-OCR-AJAMI
+- Modelo en Hugging Face: https://huggingface.co/IntelligenceResearchLab/Hausa-OCR-AJAMI
 - Dataset de origen citado en la model card: https://huggingface.co/datasets/IntelResearchLab/Hausa
 - Repositorio referenciado por los tags (region us): sin URL especifica en la informacion disponible
 - La busqueda web realizada no devolvio resultados relacionados con el modelo; los unicos resultados obtenidos eran guias de programacion de television en italiano y no guardan relacion con este modelo.

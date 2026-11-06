@@ -75,7 +75,7 @@ No disponible. No se proporcionan datos de otros modelos de conversion de voz ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dryaides/voicecore-models
+- Repositorio en Hugging Face: https://huggingface.co/Dryaides/voicecore-models
 - ContentVec de origen: https://huggingface.co/lengyue233/content-vec-best
 - Modelo RVC v2 de aldeano de origen: https://huggingface.co/kullbunta/villager
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

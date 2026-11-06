@@ -79,7 +79,7 @@ No se dispone de comparativas directas con otros modelos MoE de tamaño similar 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/joey00072/ohara-moe-base-d12)
+- [Modelo en Hugging Face](https://huggingface.co/joey00072/ohara-moe-base-d12)
 - [Repositorio ohara](https://github.com/joey00072/ohara)
 - [Dataset ClimbMix (nvidia)](https://huggingface.co/datasets/nvidia/ClimbMix)
 - [Modelo chat derivado (ohara-moe-chat-d12)](https://huggingface.co/joey00072/ohara-moe-chat-d12)

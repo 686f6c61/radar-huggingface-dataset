@@ -82,7 +82,7 @@ La ventaja del hibrido se valido con bootstrap emparejado de 1.000 remuestreos: 
 
 | Sistema | Tipo | Parametros | F1 en el test LANUK | Licencia / datos | Disponibilidad |
 |---|---|---|---|---|---|
-| ner-lanuk-luftqualitaet (hibrido) | spaCy parser de transiciones + reglas | no disponible | 0,844 (micro) | CC BY 4.0 (pesos); dataset CC BY-NC 4.0 | HuggingFace, repo pequeno |
+| ner-lanuk-luftqualitaet (hibrido) | spaCy parser de transiciones + reglas | no disponible | 0,844 (micro) | CC BY 4.0 (pesos); dataset CC BY-NC 4.0 | Hugging Face, repo pequeno |
 | ner-lanuk-luftqualitaet (solo modelo) | spaCy parser de transiciones | no disponible | 0,699 (micro) | CC BY 4.0 | Incluido en el mismo repo |
 | Reglas / gazetteer | Sistema basado en reglas | no aplica | 0,785 (micro) | CC BY 4.0 | Incluido en el mismo repo |
 | `deepset/gbert-large` ajustado | Transformer encoder aleman | no disponible | 0,793 (micro) | Licencia del modelo base (no especificada en la informacion) | Modelo base publico, requirio ajuste propio |
@@ -99,12 +99,12 @@ No se dispone de otros modelos comparables especificos para NER de calidad del a
 - Rendimiento global moderado: el F1 macro de cuatro clases es 0,578 y el de clases abiertas 0,593, con `RECHTSNORM` en 0,500, lo que refleja un rendimiento desigual por clase.
 - Idioma unico: solo aleman. No se ha evaluado en otros idiomas ni en variantes dialectales.
 - Restriccion de licencia importante: aunque los pesos, las reglas y el codigo estan bajo CC BY 4.0 (uso comercial permitido con atribucion), el dataset de entrenamiento `fhswf/lanuk-luftqualitaet-ner` esta bajo CC BY-NC 4.0, lo que introduce incertidumbre sobre el uso comercial del modelo derivado. Conviene revisar esta incompatibilidad antes de desplegarlo en produccion.
-- Fecha y contexto: el modelo se publico en septiembre de 2026 y no registra descargas ni valoraciones en HuggingFace; no hay validacion independiente de los resultados declarados, que proceden del propio autor.
+- Fecha y contexto: el modelo se publico en septiembre de 2026 y no registra descargas ni valoraciones en Hugging Face; no hay validacion independiente de los resultados declarados, que proceden del propio autor.
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que el modelo solo etiqueta spans; su riesgo equivalente es producir entidades erroneas o perder entidades, cuantificado en las metricas anteriores.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Simeon1970-prog/ner-lanuk-luftqualitaet
+- Modelo en Hugging Face: https://huggingface.co/Simeon1970-prog/ner-lanuk-luftqualitaet
 - Referencia de cita del autor: https://huggingface.co/fhswf/ner-lanuk-luftqualitaet
 - Dataset de entrenamiento: https://huggingface.co/datasets/fhswf/lanuk-luftqualitaet-ner
 - Licencia CC BY 4.0 (texto legal en aleman): https://creativecommons.org/licenses/by/4.0/legalcode.de

@@ -92,8 +92,8 @@ Resultados publicados de ALFWorld citados en la model card, todos con Qwen2.5-1.
 
 | Modelo | Parámetros | Categoría | Resultado ALFWorld | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ccpo-alfworld-qwen2.5-7b-global-fa | 7,6B | Política de agente RL | 77,5% (media convergida, 128 tareas) | Apache 2.0 | HuggingFace, checkpoint intermedio |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | LLM de propósito general con instrucciones | No disponible; es la base sin RL sobre ALFWorld | Apache 2.0 | HuggingFace |
+| ccpo-alfworld-qwen2.5-7b-global-fa | 7,6B | Política de agente RL | 77,5% (media convergida, 128 tareas) | Apache 2.0 | Hugging Face, checkpoint intermedio |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | LLM de propósito general con instrucciones | No disponible; es la base sin RL sobre ALFWorld | Apache 2.0 | Hugging Face |
 | Líneas base publicadas (GRPO / GiGPO K=2 / HGPO K=2) | 1,5B | Políticas de agente RL | 72,8 / 90,16 / 92,77 | No disponible en la información proporcionada | Publicaciones y repos asociados |
 | Brazos alternativos de CCPO (return-hard, y variante con backoff y J-weighting) | 7,6B | Políticas de agente RL | 83,5 y 90,0 | Apache 2.0 | Mismo autor, disponibilidad no confirmada |
 
@@ -115,7 +115,7 @@ La comparación directa con GRPO, GiGPO y HGPO no es válida según el propio au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SingleBicycle/ccpo-alfworld-qwen2.5-7b-global-fa
+- Modelo en Hugging Face: https://huggingface.co/SingleBicycle/ccpo-alfworld-qwen2.5-7b-global-fa
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Código de CCPO (agent-context-grpo): https://github.com/tracyhann/agent-context-grpo
 - Framework verl-agent: https://github.com/langfengQ/verl-agent

@@ -85,7 +85,7 @@ La información proporcionada solo permite comparar contra el artefacto del que 
 
 | Modelo | Formato | Entrada | Memoria pico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RS2-Net (ONNX, este repositorio) | ONNX opset 17, float32 | 128 × 96 × 128 fijo | ~2,7 GB | GPL-3.0 | HuggingFace `sbollmann/rs2-net-onnx` |
+| RS2-Net (ONNX, este repositorio) | ONNX opset 17, float32 | 128 × 96 × 128 fijo | ~2,7 GB | GPL-3.0 | Hugging Face `sbollmann/rs2-net-onnx` |
 | RS2-Net (checkpoint original) | PyTorch `RS2_pretrained_model.pt` | 128 × 128 × 160 | ~4,5 GB | GPL-3.0 | GitHub `VitoLin21/Rodent-Skull-Stripping` |
 | Otros modelos de skull stripping de roedor | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -106,7 +106,7 @@ La diferencia funcional entre las dos primeras filas es exclusivamente de empaqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbollmann/rs2-net-onnx
+- Modelo en Hugging Face: https://huggingface.co/sbollmann/rs2-net-onnx
 - Repositorio original de RS2-Net y checkpoint: https://github.com/VitoLin21/Rodent-Skull-Stripping
 - QSM.rs: https://github.com/astewartau/QSM.rs
 - QSMbly: https://github.com/astewartau/qsmbly

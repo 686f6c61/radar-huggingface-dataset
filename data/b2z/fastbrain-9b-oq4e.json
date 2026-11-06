@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "b2z/FastBrain-9B-oQ4e",
+  "slug": "b2z-fastbrain-9b-oq4e",
+  "author": "b2z",
+  "url": "https://huggingface.co/b2z/FastBrain-9B-oQ4e",
+  "created_at": "2026-11-06T11:16:33.000Z",
+  "updated_at": "2026-11-06T11:29:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 6594510414,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - camera-2018/FastBrain: FastBrain-9B: Non-autoregressive System ...",
+      "url": "https://github.com/camera-2018/FastBrain",
+      "snippet": "Overview FastBrain-9B is a single-forward-pass, non-autoregressive System-1 structured decision model built on a hybrid Qwen3.5-9B backbone (24 Gated DeltaNet linear-attention blocks + 8 full-attention blocks) coupled with a 116M -parameter JointSchemaHead."
+    },
+    {
+      "title": "TypeScript/FastBrain-9B · Hugging Face",
+      "url": "https://huggingface.co/TypeScript/FastBrain-9B",
+      "snippet": "Text Generation model with 9B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "FastBrain-9B (open non-autoregressive System One decision model that ...",
+      "url": "https://jevlist.ai/projects/fastbrain-9b",
+      "snippet": "What is FastBrain-9B (open non-autoregressive System One decision model that answers Jev-shaped requests in one pass)? Open decision model built on a hybrid Qwen3.5-9B backbone with a 116M-parameter joint schema head: give it a JSON state and choice, noul or score questions and it scores every option of every question in a single prefill ..."
+    },
+    {
+      "title": "mradermacher/FastBrain-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/FastBrain-9B-GGUF",
+      "snippet": "mradermacher / FastBrain-9B-GGUF Like 0 Transformers GGUF TypeScript/FastBrain-Instruct English fastbrain clef llama-cpp sglang systemone decision-model image-text-to-typed-output decision-index tool-calling function-calling intent-classification structured-decision conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "FastBrain/README.md at main · camera-2018/FastBrain · GitHub",
+      "url": "https://github.com/camera-2018/FastBrain/blob/main/README.md",
+      "snippet": "FastBrain-9B: Non-autoregressive System-1 structured decision model — inference, training and evaluation code. - FastBrain/README.md at main · camera-2018/FastBrain"
+    }
+  ]
+}

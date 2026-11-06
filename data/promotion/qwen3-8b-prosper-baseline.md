@@ -82,7 +82,7 @@ La comparativa se limita a los modelos PROSPER-baseline de la misma familia y al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/Qwen3-8B-PROSPER-baseline
+- Modelo en Hugging Face: https://huggingface.co/promotion/Qwen3-8B-PROSPER-baseline
 - Dataset de generaciones: https://huggingface.co/datasets/promotion/nbpo-benchmark-generations
 - Modelo relacionado (Llama-3.1-8B-PROSPER-baseline): https://huggingface.co/promotion/Llama-3.1-8B-PROSPER-baseline
 - Reporte técnico de Qwen3: https://arxiv.org/html/2505.09388v1

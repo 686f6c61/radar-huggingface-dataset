@@ -84,10 +84,10 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparaci
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ntc-ai/krea2-particle-sliders | LoRA sobre Krea 2 (rango 16 y rango 8) | no disponible (repo de 0,7 GB) | no aplica | sin benchmarks publicados | krea-2-community-license | HuggingFace, diffusers y ComfyUI |
-| jimmycarter/krea2-turbo-bbox | Modelo base de difusion texto a imagen | no disponible | no aplica | sin datos en la informacion disponible | no disponible | HuggingFace |
+| ntc-ai/krea2-particle-sliders | LoRA sobre Krea 2 (rango 16 y rango 8) | no disponible (repo de 0,7 GB) | no aplica | sin benchmarks publicados | krea-2-community-license | Hugging Face, diffusers y ComfyUI |
+| jimmycarter/krea2-turbo-bbox | Modelo base de difusion texto a imagen | no disponible | no aplica | sin datos en la informacion disponible | no disponible | Hugging Face |
 | Krea 2 Detail Slider (Civitai, v1.0) | LoRA sobre Krea 2 | no disponible | no aplica | sin datos en la informacion disponible | no disponible | Civitai |
-| YuE2 Particle Sliders | Adaptadores de composicion por particulas para el modelo de audio m-a-p/YuE2-3B | no disponible | no aplica | sin datos en la informacion disponible | no disponible | GitHub y HuggingFace |
+| YuE2 Particle Sliders | Adaptadores de composicion por particulas para el modelo de audio m-a-p/YuE2-3B | no disponible | no aplica | sin datos en la informacion disponible | no disponible | GitHub y Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ntc-ai/krea2-particle-sliders
+- Modelo en Hugging Face: https://huggingface.co/ntc-ai/krea2-particle-sliders
 - Archivos del repositorio: https://huggingface.co/ntc-ai/krea2-particle-sliders/tree/main
 - Model card (README): https://huggingface.co/ntc-ai/krea2-particle-sliders/blob/main/README.md
 - Licencia Krea 2 Community License (PDF): https://huggingface.co/ntc-ai/krea2-particle-sliders/resolve/main/KREA2-LICENSE.pdf

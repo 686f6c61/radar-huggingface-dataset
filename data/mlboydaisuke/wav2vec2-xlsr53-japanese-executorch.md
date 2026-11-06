@@ -77,7 +77,7 @@ La comparativa muestra que el modelo ExecuTorch es una conversion del modelo de 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mlboydaisuke/wav2vec2-XLSR53-Japanese-ExecuTorch)
+- [Modelo en Hugging Face](https://huggingface.co/mlboydaisuke/wav2vec2-XLSR53-Japanese-ExecuTorch)
 - [Modelo base: jonatasgrosman/wav2vec2-large-xlsr-53-japanese](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-japanese)
 - [Repo de conversion: executorch-models](https://github.com/john-rocky/executorch-models)
 - [Issue de ExecuTorch: pytorch/executorch#22078](https://github.com/pytorch/executorch/issues/22078)

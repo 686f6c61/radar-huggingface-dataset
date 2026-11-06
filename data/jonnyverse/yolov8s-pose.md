@@ -78,7 +78,7 @@ MediaPipe es más ligero y rápido, pero con menos precisión en escenas complej
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/yolov8s-pose
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/yolov8s-pose
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - Modelo original de Ultralytics (YOLOv8s-pose): https://platform.ultralytics.com/ultralytics/yolov8/yolov8s-pose
 - Documentación de Radxa sobre YOLOv8s-pose: https://docs.radxa.com/en/orion/o6/app-development/artificial-intelligence/Vision/yolov8s-pose

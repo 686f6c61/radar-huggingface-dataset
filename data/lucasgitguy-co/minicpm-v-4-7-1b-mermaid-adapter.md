@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lucasgitguy-co/minicpm-v-4-7-1b-mermaid-adapter
+- Repositorio Hugging Face: https://huggingface.co/Lucasgitguy-co/minicpm-v-4-7-1b-mermaid-adapter
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Dataset relacionado (texto e imagenes de diagramas Mermaid): https://huggingface.co/datasets/Lucasgitguy-co/mermaid-diagram-text-images
 - Dataset relacionado (texto en ingles y neerlandes): https://huggingface.co/datasets/Lucasgitguy-co/mermaid-text-en-nl

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-160m-nope-domains-baseline0-warmup500-seed1024-stage2",
+  "slug": "qing-yao-ppt-pythia-160m-nope-domains-baseline0-warmup500-seed1024-stage2",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-baseline0-warmup500-seed1024-stage2",
+  "created_at": "2026-11-03T23:42:06.000Z",
+  "updated_at": "2026-11-04T01:20:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox_nope",
+    "text-generation",
+    "generated_from_trainer",
+    "custom_code",
+    "base_model:EleutherAI/pythia-160m",
+    "base_model:finetune:EleutherAI/pythia-160m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 332,
+  "trending_score": 0,
+  "parameters": 162322944,
+  "parameters_human": "162.3M",
+  "storage_bytes": 5195154782,
+  "storage_human": "5.2 GB",
+  "base_model": "EleutherAI/pythia-160m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qing-yao/ppt-pythia-160m-nope-domains-music500-warmup500-seed1024 ...",
+      "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-music500-warmup500-seed1024-stage1",
+      "snippet": "Instructions to use qing-yao/ppt-pythia-160m-nope-domains-music500-warmup500-seed1024-stage1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ppt-pythia-160m-nope-baseline-warmup2000-seed208-stage2",
+      "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-nope-baseline-warmup2000-seed208-stage2",
+      "snippet": "Instructions to use qing-yao/ppt-pythia-160m-nope-baseline-warmup2000-seed208-stage2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

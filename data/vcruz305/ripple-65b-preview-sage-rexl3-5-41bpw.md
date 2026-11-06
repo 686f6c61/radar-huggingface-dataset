@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ripple-65B-Preview-SAGE-REXL3-5.41bpw es una cuantización de precisión mixta del modelo base ricursiveAI/Ripple-65B-Preview, publicada por el usuario vcruz305 en HuggingFace. El repositorio contiene pesos en formato ExLlamaV3 (exllamav3) bajo la técnica propietaria REXL3 (SAGE-REXL3), con un tamaño efectivo de 5,41 bits por peso (bpw) y un total de 22.611.689.552 parámetros almacenados en safetensors. El objetivo es ofrecer una versión compacta del modelo original apta para inferencia en GPUs de consumo mediante el runtime ExLlamaV3.
+Ripple-65B-Preview-SAGE-REXL3-5.41bpw es una cuantización de precisión mixta del modelo base ricursiveAI/Ripple-65B-Preview, publicada por el usuario vcruz305 en Hugging Face. El repositorio contiene pesos en formato ExLlamaV3 (exllamav3) bajo la técnica propietaria REXL3 (SAGE-REXL3), con un tamaño efectivo de 5,41 bits por peso (bpw) y un total de 22.611.689.552 parámetros almacenados en safetensors. El objetivo es ofrecer una versión compacta del modelo original apta para inferencia en GPUs de consumo mediante el runtime ExLlamaV3.
 
-La relevancia de esta ficha radica en que documenta un artefacto de cuantización, no un modelo fundacional: su interés práctico depende enteramente del modelo base Ripple-65B-Preview, del que no se dispone de información técnica detallada en la información proporcionada. La licencia declarada es Apache 2.0, aunque el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+La relevancia de esta ficha radica en que documenta un artefacto de cuantización, no un modelo fundacional: su interés práctico depende enteramente del modelo base Ripple-65B-Preview, del que no se dispone de información técnica detallada en la información proporcionada. La licencia declarada es Apache 2.0, aunque el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 El nombre del repositorio sugiere un modelo de aproximadamente 65.000 millones de parámetros, pero el recuento real de safetensors indica 22.611.689.552 parámetros, una discrepancia que conviene tener en cuenta al planificar el despliegue. No se han publicado idiomas soportados, benchmarks ni detalles de arquitectura en la información disponible.
 
@@ -61,7 +61,7 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Discrepancia de tamaño: el nombre indica 65B, pero el recuento real de safetensors es de 22.611.689.552 parámetros; conviene verificar el modelo base antes de planificar el hardware.
 - Dependencia de ExLlamaV3: el formato es específico y requiere el runtime exllamav3 con custom_code; no es portable a otros motores sin conversión.
 - Falta de información sobre el modelo base: no se conocen arquitectura, contexto, idiomas ni datos de entrenamiento, lo que impide evaluar sesgos, alucinación o calidad real.
@@ -71,6 +71,6 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vcruz305/Ripple-65B-Preview-SAGE-REXL3-5.41bpw
+- Repositorio Hugging Face: https://huggingface.co/vcruz305/Ripple-65B-Preview-SAGE-REXL3-5.41bpw
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

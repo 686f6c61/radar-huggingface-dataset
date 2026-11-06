@@ -1,7 +1,7 @@
 # guell00/Nemotron-coder
 
 ## Resumen
-Nemotron-coder es un modelo publicado en HuggingFace por el usuario guell00 bajo licencia MIT. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas ni documentacion de uso. El nombre sugiere un modelo orientado a generacion de codigo, probablemente derivado o inspirado en la familia Nemotron de NVIDIA, pero no hay informacion en la fuente que lo confirme.
+Nemotron-coder es un modelo publicado en Hugging Face por el usuario guell00 bajo licencia MIT. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas ni documentacion de uso. El nombre sugiere un modelo orientado a generacion de codigo, probablemente derivado o inspirado en la familia Nemotron de NVIDIA, pero no hay informacion en la fuente que lo confirme.
 
 En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas especificados. La fecha de creacion y de ultima actualizacion es la misma (2026-10-31), lo que indica que no ha recibido mantenimiento posterior ni actualizaciones de la model card.
 
@@ -21,7 +21,7 @@ Dada la ausencia total de documentacion tecnica, esta ficha recoge los unicos da
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante, ni el numero de parametros, capas o cabezas de atencion.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante, ni el numero de parametros, capas o cabezas de atencion.
 
 Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, proporción de codigo frente a lenguaje natural), sobre tecnicas de alineacion como RLHF, DPO o instruction tuning, ni sobre innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal, etc.). Toda esta informacion debe considerarse no disponible.
 
@@ -37,7 +37,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 - Evaluacion experimental de generacion de codigo: el modelo podria probarse en tareas de autocompletado o sintesis de funciones, pero al no existir documentacion sobre su entrenamiento ni benchmarks, cualquier uso requeriria una validacion manual exhaustiva previa.
 - Prototipado interno en entornos controlados: dado que la licencia MIT permite uso comercial y modificacion, podria integrarse en experimentos de laboratorio sin exposicion a produccion, siempre que se audite su comportamiento.
 - Fine-tuning como base: al no conocerse el tamano ni la arquitectura, no es posible estimar el coste de ajuste fino; seria necesario inspeccionar primero los archivos del repositorio.
-- Investigacion sobre procedencia de modelos: el caso resulta util como ejemplo de repositorio sin model card completa, para estudiar practicas de documentacion en HuggingFace.
+- Investigacion sobre procedencia de modelos: el caso resulta util como ejemplo de repositorio sin model card completa, para estudiar practicas de documentacion en Hugging Face.
 - Despliegue en produccion: no recomendado en el estado actual, ya que no hay informacion sobre sesgos, alucinacion, contexto maximo ni requisitos de hardware.
 - Comparacion de alternativas: sirve como referencia de un modelo sin datos publicos frente a modelos con documentacion completa de la misma categoria.
 
@@ -70,5 +70,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 - No apto para produccion sin auditoria previa del repositorio y de los archivos de pesos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/guell00/Nemotron-coder
+- Hugging Face: https://huggingface.co/guell00/Nemotron-coder
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

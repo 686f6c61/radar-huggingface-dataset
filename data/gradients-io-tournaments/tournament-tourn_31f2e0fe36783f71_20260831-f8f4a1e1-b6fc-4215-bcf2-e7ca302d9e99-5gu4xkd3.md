@@ -21,7 +21,7 @@ La relevancia de este modelo reside en su origen: es un artefacto producido en u
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante SFT (Supervised Fine-Tuning) sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. La arquitectura subyacente es la del Qwen3-4B-Instruct-2507, un transformer decoder-only con atencion por ventanas deslizantes y soporte para 32K tokens de contexto. El adaptador se entrena con la libreria PEFT 0.18.1 y el framework TRL (Transformers Reinforcement Learning) de HuggingFace, lo que indica un pipeline de entrenamiento estandar con transformers.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante SFT (Supervised Fine-Tuning) sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. La arquitectura subyacente es la del Qwen3-4B-Instruct-2507, un transformer decoder-only con atencion por ventanas deslizantes y soporte para 32K tokens de contexto. El adaptador se entrena con la libreria PEFT 0.18.1 y el framework TRL (Transformers Reinforcement Learning) de Hugging Face, lo que indica un pipeline de entrenamiento estandar con transformers.
 
 El entrenamiento se realizo en el contexto de un torneo de la red Gradients (Subnet 56), un sistema descentralizado donde multiples agentes compiten para producir el mejor adaptador sobre un modelo base comun. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas adicionales como RLHF o DPO. El tamaño del repositorio (10.2 GB) sugiere que podria incluir tanto el adaptador como posiblemente pesos del modelo base, aunque esto no esta confirmado.
 
@@ -78,7 +78,7 @@ La comparativa se basa en el modelo base y alternativas de tamano similar, ya qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-f8f4a1e1-b6fc-4215-bcf2-e7ca302d9e99-5GU4Xkd3
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-f8f4a1e1-b6fc-4215-bcf2-e7ca302d9e99-5GU4Xkd3
 - Gradients (plataforma de torneos): https://www.gradients.io/app/research/tournament
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - LLM Explorer (modelo similar de la misma organizacion): https://llm-explorer.com/model/gradients-io-tournaments%2Ftournament-tourn_590e311a35f6a234_20260803-3a8e094c-c66c-47dd-adf1-d9b2d21e6c58-5GU4Xkd3,3i3XWJCnZAZLqhQqpBaqSA

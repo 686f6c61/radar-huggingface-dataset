@@ -106,7 +106,7 @@ No se dispone de datos en la informacion proporcionada sobre otros ajustes finos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efso/Nemotron-3-Nano-30B-A3B-GR
+- Modelo en Hugging Face: https://huggingface.co/Efso/Nemotron-3-Nano-30B-A3B-GR
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Repositorio del estudio de caso, codigo y mediciones: https://github.com/Efs-O/NemotronGR
 - Documentacion completa del estudio: https://github.com/Efs-O/NemotronGR/blob/main/docs/CASE_STUDY.md

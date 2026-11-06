@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| honglyhly/SimpleVLN_Qwen3VL_8B_SFT | 8.767.123.696 | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3-VL-8B-Instruct | no disponible | no disponible | no disponible | HuggingFace |
+| honglyhly/SimpleVLN_Qwen3VL_8B_SFT | 8.767.123.696 | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3-VL-8B-Instruct | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de información suficiente para comparar con otros modelos de la misma categoría (navegación visual y lenguaje). El modelo base Qwen3-VL-8B-Instruct se incluye como referencia por ser el checkpoint del que parte este ajuste fino.
 
@@ -73,6 +73,6 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/honglyhly/SimpleVLN_Qwen3VL_8B_SFT
+- Hugging Face: https://huggingface.co/honglyhly/SimpleVLN_Qwen3VL_8B_SFT
 - Documentación de Qwen3-VL en Transformers: https://huggingface.co/docs/transformers/model_doc/qwen3_vl
 - Modelo base Qwen/Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

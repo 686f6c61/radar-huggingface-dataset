@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ritzie07/dummy-rl-CartPole-v1-reinforce es un agente de aprendizaje por refuerzo publicado en HuggingFace Hub por el usuario ritzie07. Está entrenado con el algoritmo REINFORCE (gradiente de política Monte Carlo) sobre el entorno CartPole-v1 de Gymnasium, el problema clásico de mantener en equilibrio un poste articulado sobre un carro aplicando fuerzas laterales. No es un modelo de lenguaje ni un transformer generativo: es una política que transforma observaciones de 4 dimensiones (posición y velocidad del carro, ángulo y velocidad angular del poste) en una de dos acciones discretas (empujar a izquierda o a derecha).
+El modelo ritzie07/dummy-rl-CartPole-v1-reinforce es un agente de aprendizaje por refuerzo publicado en Hugging Face Hub por el usuario ritzie07. Está entrenado con el algoritmo REINFORCE (gradiente de política Monte Carlo) sobre el entorno CartPole-v1 de Gymnasium, el problema clásico de mantener en equilibrio un poste articulado sobre un carro aplicando fuerzas laterales. No es un modelo de lenguaje ni un transformer generativo: es una política que transforma observaciones de 4 dimensiones (posición y velocidad del carro, ángulo y velocidad angular del poste) en una de dos acciones discretas (empujar a izquierda o a derecha).
 
 La model card del repositorio contiene únicamente un texto de marcador de posición ("Dummy README to pass course"), lo que indica que se publicó como entregable de un curso de aprendizaje por refuerzo y no como artefacto preparado para producción. El autor declara una recompensa media de 400 ± 0.0 en CartPole-v1, sin verificación, frente al máximo de 500 por episodio que fija el entorno.
 
@@ -47,7 +47,7 @@ Tampoco se documenta el proceso de entrenamiento más allá de la recompensa dec
 
 ## Casos de uso
 
-- Material didáctico para cursos de aprendizaje por refuerzo: el agente sirve como ejemplo completo y ejecutable del ciclo de publicación en HuggingFace Hub, desde el entrenamiento hasta la subida del modelo con metadatos de model-index.
+- Material didáctico para cursos de aprendizaje por refuerzo: el agente sirve como ejemplo completo y ejecutable del ciclo de publicación en Hugging Face Hub, desde el entrenamiento hasta la subida del modelo con metadatos de model-index.
 - Línea base para comparar algoritmos: al declarar 400 ± 0.0 de recompensa media en CartPole-v1, permite medir la mejora de implementaciones de DQN, A2C o PPO sobre el mismo entorno y con la misma métrica.
 - Pruebas de integración de infraestructura de entrenamiento: un agente tan ligero se usa para validar canalizaciones de registro de métricas, checkpoints, evaluación automática y publicación continua sin consumir recursos de GPU.
 - Verificación de wrappers y entornos de Gymnasium: sirve para comprobar que los wrappers de vectorización, normalización o truncado de episodios no rompen la interfaz observación-acción esperada por una política REINFORCE.
@@ -78,12 +78,12 @@ El máximo alcanzable en CartPole-v1 es de 500 puntos por episodio. No se han pu
 
 | Modelo | Tipo | Entorno | Recompensa media declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ritzie07/dummy-rl-CartPole-v1-reinforce | REINFORCE | CartPole-v1 | 400 ± 0.0 (no verificada) | no disponible | HuggingFace Hub |
-| dimgalli/Reinforce-Cartpole-v1 | REINFORCE | CartPole-v1 | no disponible | no disponible | HuggingFace Hub |
-| dhanyasriii/Reinforce-CartPole-v1 | REINFORCE | CartPole-v1 | no disponible | no disponible | HuggingFace Hub |
+| ritzie07/dummy-rl-CartPole-v1-reinforce | REINFORCE | CartPole-v1 | 400 ± 0.0 (no verificada) | no disponible | Hugging Face Hub |
+| dimgalli/Reinforce-Cartpole-v1 | REINFORCE | CartPole-v1 | no disponible | no disponible | Hugging Face Hub |
+| dhanyasriii/Reinforce-CartPole-v1 | REINFORCE | CartPole-v1 | no disponible | no disponible | Hugging Face Hub |
 | johnpospisil/cart-pole-rl | Comparativa de 5 algoritmos RL | CartPole-v1 | no disponible | no disponible | GitHub |
 
-Los tres modelos de HuggingFace Hub comparten la misma naturaleza (agentes REINFORCE publicados como ejercicios del curso de refuerzo profundo de HuggingFace) y la misma limitación de documentación. La diferencia principal de este repositorio es que solo declara métricas, sin código de entrenamiento ni instrucciones de uso.
+Los tres modelos de Hugging Face Hub comparten la misma naturaleza (agentes REINFORCE publicados como ejercicios del curso de refuerzo profundo de Hugging Face) y la misma limitación de documentación. La diferencia principal de este repositorio es que solo declara métricas, sin código de entrenamiento ni instrucciones de uso.
 
 ## Limitaciones y advertencias
 
@@ -100,10 +100,10 @@ Los tres modelos de HuggingFace Hub comparten la misma naturaleza (agentes REINF
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ritzie07/dummy-rl-CartPole-v1-reinforce
-- Curso de refuerzo profundo de HuggingFace (unidad 4, REINFORCE): https://huggingface.co/deep-rl-course/unit4/introduction
-- Modelo comparable en HuggingFace (dimgalli): https://huggingface.co/dimgalli/Reinforce-Cartpole-v1
-- Modelo comparable en HuggingFace (dhanyasriii): https://huggingface.co/dhanyasriii/Reinforce-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/ritzie07/dummy-rl-CartPole-v1-reinforce
+- Curso de refuerzo profundo de Hugging Face (unidad 4, REINFORCE): https://huggingface.co/deep-rl-course/unit4/introduction
+- Modelo comparable en Hugging Face (dimgalli): https://huggingface.co/dimgalli/Reinforce-Cartpole-v1
+- Modelo comparable en Hugging Face (dhanyasriii): https://huggingface.co/dhanyasriii/Reinforce-CartPole-v1
 - Repositorio en GitHub con comparativa de 5 algoritmos sobre CartPole-v1: https://github.com/johnpospisil/cart-pole-rl
 - Repositorio en GitHub con envoltorio de Gymnasium y agente Q-Learning: https://github.com/HongYue1/CartPole-V1-RL
 - Artículo divulgativo sobre 6 algoritmos de refuerzo en CartPole: https://medium.com/@sachith.icc/mastering-cartpole-a-complete-journey-through-6-reinforcement-learning-algorithms-06d92fa6d601

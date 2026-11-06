@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wuchunhung/blip-experiment` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de la arquitectura Blip orientada a tareas de generación, en configuración *base*. Lo desarrolla el usuario `wuchunhung` y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe como un punto de partida reproducible para *smoke tests*, no como un modelo entrenado ni evaluado: el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido, sin resultados de benchmarks asociados.
+`wuchunhung/blip-experiment` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de la arquitectura Blip orientada a tareas de generación, en configuración *base*. Lo desarrolla el usuario `wuchunhung` y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe como un punto de partida reproducible para *smoke tests*, no como un modelo entrenado ni evaluado: el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido, sin resultados de benchmarks asociados.
 
 El repositorio incluye cuatro artefactos principales: `inference.py` (código del modelo y ejemplo ejecutable), `config.json` (arquitectura), `training_args.json` (receta de experimento por defecto, con optimizador Adafactor y scheduler OneCycle) y `model.safetensors` (inicialización). El recuento de parámetros reportado por los metadatos de safetensors es de 33.088, una cifra que, por su magnitud, corresponde a un modelo de prueba y no a un modelo de producción.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, no hay información disponible sobre volumen de toke
 - Procesamiento de visión-lenguaje: la arquitectura Blip y la presencia de fusión bilineal apuntan a tareas multimodales, aunque la model card no especifica qué modalidad de entrada consume el modelo ni qué tarea resuelve exactamente.
 - Tool calling / function calling: no disponible; no se menciona soporte alguno.
 - Uso como agente o razonamiento multi-paso: no disponible; no se declara ninguna capacidad de este tipo.
-- Capacidades multilingües: no disponible; el campo de idiomas aparece vacío tanto en la ficha de HuggingFace como en la model card.
+- Capacidades multilingües: no disponible; el campo de idiomas aparece vacío tanto en la ficha de Hugging Face como en la model card.
 - Modo *thinking*, visión o audio declarados explícitamente: no disponible.
 - Capacidad real verificable: servir como implementación de referencia ejecutable y como punto de partida para experimentos propios, según las propias Limitaciones del autor.
 
@@ -84,11 +84,11 @@ No disponible. Las búsquedas web realizadas no devolvieron información sobre m
 - Riesgo de alucinación: no evaluado y, dado que el modelo no está entrenado, la generación de contenido incoherente es el comportamiento esperado.
 - Longitud de contexto desconocida: no se puede planificar gestión de ventanas de contexto con este repositorio.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se emplean conjuntos de datos externos.
-- Implementación personalizada: las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito; no se declara un `pipeline` utilizable.
+- Implementación personalizada: las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito; no se declara un `pipeline` utilizable.
 - Los metadatos son incompletos (cero descargas, cero *likes*, sin pipeline, sin idiomas), lo que dificulta validar la reproducibilidad del trabajo.
 - Para producción se recomienda tratar el repositorio únicamente como referencia de código y no como artefacto desplegable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wuchunhung/blip-experiment
+- Hugging Face: https://huggingface.co/wuchunhung/blip-experiment
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

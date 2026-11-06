@@ -94,7 +94,7 @@ La comparativa relevante es contra el build estandar de PyTorch para ROCm, ya qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/m-yuasa/pytorch-mi300a-rocm72
+- Repositorio Hugging Face: https://huggingface.co/m-yuasa/pytorch-mi300a-rocm72
 - Issue de PyTorch sobre memoria unificada en MI300A: https://github.com/pytorch/pytorch/issues/145693
 - Documentacion ROCm de compatibilidad con PyTorch (6.3.1): https://rocm.docs.amd.com/en/docs-6.3.1/compatibility/ml-compatibility/pytorch-compatibility.html
 - Documentacion ROCm de compatibilidad con PyTorch (7.0.1): https://rocm.docs.amd.com/en/docs-7.0.1/compatibility/ml-compatibility/pytorch-compatibility.html

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| romplle/vlm-minigrid-rl-adapters | 222M (base) + LoRA | no disponible | Politica de acciones en MiniGrid | MIT | HuggingFace (adaptadores) |
-| lusxvr/nanoVLM-222M | 222M | no disponible | VLM general | no disponible en la informacion | HuggingFace (modelo base) |
+| romplle/vlm-minigrid-rl-adapters | 222M (base) + LoRA | no disponible | Politica de acciones en MiniGrid | MIT | Hugging Face (adaptadores) |
+| lusxvr/nanoVLM-222M | 222M | no disponible | VLM general | no disponible en la informacion | Hugging Face (modelo base) |
 | Alternativas de VLM pequenos para RL | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible.
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/romplle/vlm-minigrid-rl-adapters
+- Hugging Face: https://huggingface.co/romplle/vlm-minigrid-rl-adapters
 - Modelo base: https://huggingface.co/lusxvr/nanoVLM-222M
 - Repositorio del proyecto: https://github.com/romplle/vlm-minigrid-rl

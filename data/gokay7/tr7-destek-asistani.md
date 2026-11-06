@@ -61,6 +61,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - gokay7/TR7-Destek-Asistani](https://huggingface.co/gokay7/TR7-Destek-Asistani)
+- [Hugging Face - gokay7/TR7-Destek-Asistani](https://huggingface.co/gokay7/TR7-Destek-Asistani)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/llama-3-8b-bnb-4bit](https://huggingface.co/unsloth/llama-3-8b-bnb-4bit)

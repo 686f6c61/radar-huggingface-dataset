@@ -75,5 +75,5 @@ No disponible. No existen modelos comparables porque este checkpoint no está en
 
 ## Enlaces
 
-- [HuggingFace: mart-INEZ/blip-checkpoint](https://huggingface.co/mart-INEZ/blip-checkpoint)
+- [Hugging Face: mart-INEZ/blip-checkpoint](https://huggingface.co/mart-INEZ/blip-checkpoint)
 - No se han encontrado otros enlaces relevantes específicos de este modelo en la búsqueda web.

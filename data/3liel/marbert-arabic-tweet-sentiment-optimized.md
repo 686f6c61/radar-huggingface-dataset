@@ -23,7 +23,7 @@ La ficha técnica del modelo es notablemente escasa: no se especifica el dataset
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura BERT original, un transformer encoder-only de 12 capas con atención bidireccional. El preentrenamiento de MARBERTv2 se realizó sobre 1.000 millones de tweets árabes muestreados aleatoriamente de un corpus interno de aproximadamente 6.000 millones de tweets, lo que le otorga una cobertura excepcional del árabe dialectal y coloquial. El fine-tuning para este modelo se realizó con el framework HuggingFace Transformers, utilizando un learning rate de 3e-05, batch size de 16, scheduler lineal con 100 pasos de warmup y 7 épocas. El optimizador fue AdamW con betas (0.9, 0.999) y epsilon 1e-08.
+El modelo se basa en la arquitectura BERT original, un transformer encoder-only de 12 capas con atención bidireccional. El preentrenamiento de MARBERTv2 se realizó sobre 1.000 millones de tweets árabes muestreados aleatoriamente de un corpus interno de aproximadamente 6.000 millones de tweets, lo que le otorga una cobertura excepcional del árabe dialectal y coloquial. El fine-tuning para este modelo se realizó con el framework Hugging Face Transformers, utilizando un learning rate de 3e-05, batch size de 16, scheduler lineal con 100 pasos de warmup y 7 épocas. El optimizador fue AdamW con betas (0.9, 0.999) y epsilon 1e-08.
 
 No se especifica el dataset de fine-tuning, aunque por el nombre del modelo y la tarea se infiere que se trata de tweets árabes etiquetados con sentimiento positivo/negativo. El proceso de entrenamiento muestra una mejora progresiva en las primeras épocas, alcanzando su mejor F1 (0,7563) en la época 2, para luego degradarse ligeramente en épocas posteriores, lo que sugiere un posible sobreajuste. No se menciona el uso de técnicas como RLHF o DPO, siendo un fine-tuning supervisado estándar.
 
@@ -61,7 +61,7 @@ Estos resultados corresponden al conjunto de evaluacion utilizado durante el fin
 - VRAM estimada para inferencia: aproximadamente 650 MB en FP32 (163M parametros x 4 bytes). Con cuantizacion INT8, se reduce a unos 170 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una NVIDIA T4, GTX 1660 o RTX 3050 puede ejecutar el modelo sin problemas. En CPU, un procesador moderno con 8 GB de RAM puede realizar inferencias en menos de 100 ms por tweet.
 - Cabe en GPUs de consumo: si, en practicamente cualquier GPU comercial de los ultimos 8 años.
-- Opciones de despliegue: al ser un modelo BERT estandar, es compatible con HuggingFace Transformers, ONNX Runtime, TensorRT, vLLM (aunque no es optimo para encoder-only), y puede exportarse a formato ONNX para inferencia en CPU con mejor rendimiento.
+- Opciones de despliegue: al ser un modelo BERT estandar, es compatible con Hugging Face Transformers, ONNX Runtime, TensorRT, vLLM (aunque no es optimo para encoder-only), y puede exportarse a formato ONNX para inferencia en CPU con mejor rendimiento.
 - Latencia estimada: en una GPU T4, la inferencia por tweet es de aproximadamente 5-10 ms. En CPU moderna, entre 50-150 ms por tweet, dependiendo de la longitud del texto.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ El modelo de 3liel es funcionalmente equivalente a otros fine-tunings de MARBERT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3liel/marbert-arabic-tweet-sentiment-optimized
+- Modelo en Hugging Face: https://huggingface.co/3liel/marbert-arabic-tweet-sentiment-optimized
 - Modelo base MARBERTv2: https://huggingface.co/UBC-NLP/MARBERTv2
 - Repositorio GitHub de MARBERT: https://github.com/UBC-NLP/marbert
 - Modelo similar de iMeshal: https://huggingface.co/iMeshal/arabic-sentiment-classifier-marbert

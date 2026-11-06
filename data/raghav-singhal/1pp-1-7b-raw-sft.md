@@ -63,12 +63,12 @@ Estas cifras confirman la consistencia de los pesos publicados, pero no permiten
 
 - Estimación orientativa de VRAM para inferencia en bf16: ~3,3 GB para los pesos, más memoria para activaciones y KV cache (depende de la longitud de secuencia). Con cuantización int8 (~1,7 GB) o int4 (~0,9 GB) cabe en GPUs con 4-6 GB de VRAM.
 - GPUs recomendadas: cualquier GPU consumer con al menos 6 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 4090) para inferencia en bf16. Para cuantización int4, incluso GPUs con 4 GB podrían ser suficientes.
-- Opciones de despliegue: transformers (HuggingFace), vLLM, llama.cpp, Ollama (si se convierte a GGUF), Text Generation Inference (TGI). El modelo es compatible con `text-generation-inference` según las etiquetas de HuggingFace.
+- Opciones de despliegue: transformers (Hugging Face), vLLM, llama.cpp, Ollama (si se convierte a GGUF), Text Generation Inference (TGI). El modelo es compatible con `text-generation-inference` según las etiquetas de Hugging Face.
 - Latencia y throughput: no hay datos publicados. Para un modelo de 1,66B en una GPU moderna, se espera una latencia de decodificación del orden de decenas de milisegundos por token, pero esto depende del hardware y del stack utilizado.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento comparables para otros modelos de tamaño similar (por ejemplo, Qwen2.5-1.5B, Llama-3.2-1B, SmolLM2-1.7B) en la información proporcionada. El modelo es un artefacto experimental sin benchmarks públicos, por lo que no es posible realizar una comparación cuantitativa rigurosa. Se recomienda consultar la colección 1PP en HuggingFace para comparar las distintas variantes del mismo estudio.
+No se dispone de datos de rendimiento comparables para otros modelos de tamaño similar (por ejemplo, Qwen2.5-1.5B, Llama-3.2-1B, SmolLM2-1.7B) en la información proporcionada. El modelo es un artefacto experimental sin benchmarks públicos, por lo que no es posible realizar una comparación cuantitativa rigurosa. Se recomienda consultar la colección 1PP en Hugging Face para comparar las distintas variantes del mismo estudio.
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparables para otros modelos de tamaño 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (pretraining): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de entrenamiento (SFT): https://wandb.ai/raghav_singhal/1pp-sft

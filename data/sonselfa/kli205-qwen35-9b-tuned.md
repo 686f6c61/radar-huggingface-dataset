@@ -77,5 +77,5 @@ La comparación directa de rendimiento no es posible sin benchmarks publicados. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sonselfa/kli205-qwen35-9b-tuned
+- Repositorio Hugging Face: https://huggingface.co/sonselfa/kli205-qwen35-9b-tuned
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

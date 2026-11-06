@@ -68,7 +68,7 @@ No se dispone de datos comparativos con otros modelos abliterated de tamano simi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marafx2007/Gemma-4-E4B-IT-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/marafx2007/Gemma-4-E4B-IT-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-i1-GGUF
 - Modelo base: https://huggingface.co/KridgeDookie/Gemma-4-E4B-IT-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS
 - Cuantizaciones estaticas (mradermacher): https://huggingface.co/mradermacher/Gemma-4-E4B-IT-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-GGUF
 - Pagina de descarga y vision general: https://hf.tst.eu/model#Gemma-4-E4B-IT-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-i1-GGUF

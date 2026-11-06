@@ -36,7 +36,7 @@ El autor no publica en la información disponible el número de tokens de entren
 - Contexto largo: hasta 262.000 tokens, apto para estados extensos en texto o datos estructurados.
 - Modo thinking opcional por petición: razonamiento de hasta 512 tokens cuando la confianza de la primera pasada es inferior a 0,7.
 - Calibración ajustable: la temperatura de decisión modifica las probabilidades devueltas sin alterar la opción elegida.
-- Clasificación de texto: el pipeline declarado en HuggingFace es `text-classification`.
+- Clasificación de texto: el pipeline declarado en Hugging Face es `text-classification`.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente y multi-step reasoning: no disponible en la información proporcionada (el área Tools & Automation del índice mide tareas de automatización, no agentes autónomos).
 - Soporte multilingüe: no disponible; la model card no enumera idiomas.
@@ -94,7 +94,7 @@ Datos adicionales de rendimiento: en la edición 0.2 de Decision Index (40 bench
 
 | Modelo | Parametros | Indice (0.2.1) | Knowledge & Reasoning | Tools & Automation | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Rune 26B-A4B v3 | 25,8B totales, 8/128 expertos activos | 57,44 (59,2 estimado con thinking) | 43,4 (48,0 con thinking) | 71,2 (72,4 con thinking) | apache-2.0 | safetensors bf16 en HuggingFace |
+| Rune 26B-A4B v3 | 25,8B totales, 8/128 expertos activos | 57,44 (59,2 estimado con thinking) | 43,4 (48,0 con thinking) | 71,2 (72,4 con thinking) | apache-2.0 | safetensors bf16 en Hugging Face |
 | Jev 1.13 | no disponible | 57,89 | 51,3 | 75,1 | no disponible | no disponible |
 | AutoJev-27B | 27B (nominal) | 56,40 | 40,9 | 79,3 | no disponible | no disponible |
 | simple-jev (Qwen3.8-27B) | 27B (nominal) | 55,74 | 36,6 | 76,2 | no disponible | no disponible |
@@ -111,15 +111,15 @@ Rune v3 destaca sobre todo en Retrieval & Classification (63,5) y Arts & Human T
 - Idiomas soportados: no disponibles. No hay confirmación de cobertura multilingüe ni de comportamiento fuera del inglés.
 - Restricciones de licencia: el repositorio declara apache-2.0, pero el modelo base es google/gemma-4-26B-A4B-it, distribuido por Google bajo su propia licencia; conviene verificar las condiciones aplicables al uso comercial antes de desplegarlo en producción.
 - Ecosistema limitado: el autor recomienda su propio motor (surogate) porque implementa el protocolo de entrenamiento; otros runtimes pueden no reproducir exactamente el comportamiento del endpoint de decisiones. No hay builds GGUF de la versión v3 publicados.
-- Métricas y estado: el modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, con fechas de creación y actualización de septiembre de 2026. La puntuación de 59,2 con thinking es una estimación del propio autor, no verificada por el leaderboard.
+- Métricas y estado: el modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, con fechas de creación y actualización de septiembre de 2026. La puntuación de 59,2 con thinking es una estimación del propio autor, no verificada por el leaderboard.
 - La búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo ni sobre la Decision Index: los enlaces recuperados corresponden a cursos de programación en Java y no guardan relación con el contenido de esta ficha.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michaelfeil/rune-26b-a4b
+- Modelo en Hugging Face: https://huggingface.co/michaelfeil/rune-26b-a4b
 - Repositorio GGUF de Rune v1 (historial): https://huggingface.co/surogate/rune-26b-a4b-GGUF/tree/2a155046d99949c8d8b413e213a78b4dc724dcb6
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Motor de entrenamiento y servicio surogate: https://github.com/invergent-ai/surogate
 - Blog de lanzamiento: https://invergent.ai/blog/rune/
 - Web de Invergent: https://invergent.ai

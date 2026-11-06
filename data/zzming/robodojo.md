@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Robodojo es un modelo publicado en HuggingFace por el usuario Zzming bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: se reduce a la declaración de licencia, sin descripción, sin arquitectura declarada, sin especificaciones de entrenamiento ni datos de rendimiento. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o un artefacto en fase experimental.
+Robodojo es un modelo publicado en Hugging Face por el usuario Zzming bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: se reduce a la declaración de licencia, sin descripción, sin arquitectura declarada, sin especificaciones de entrenamiento ni datos de rendimiento. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o un artefacto en fase experimental.
 
 Por la información disponible no es posible determinar qué tipo de modelo es (lenguaje, visión, robótica, multimodal), su tamaño, su arquitectura ni su procedencia de datos. La ausencia de pipeline declarado y de idiomas soportados impide clasificarlo funcionalmente. Cualquier evaluación técnica rigurosa requiere inspeccionar directamente los archivos del repositorio (pesos, tokenizador, configuración) antes de considerarlo para uso en producción.
 
@@ -75,5 +75,5 @@ No disponible. Sin conocer la categoría, el tamaño ni las capacidades del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zzming/Robodojo
+- Hugging Face: https://huggingface.co/Zzming/Robodojo
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

@@ -101,7 +101,7 @@ La model card menciona que el proyecto publica repositorios equivalentes sobre Q
 - Carga silenciosamente incorrecta con PEFT estandar: `adapter_config.json` declara `peft_type: LORA`, de modo que `PeftModel.from_pretrained` no lanza error ni aviso pero ejecuta un modelo denso distinto al entrenado; el backdoor puede no dispararse y cualquier analisis de circuitos resulta invalido.
 - La recarga de `adapter_model.safetensors` con `strict=False` despues de envolver las capas es el paso que se omite con frecuencia; sin el, se pierden tensores propiedad del wrapper.
 - Comprobacion obligatoria tras la carga: `B_module.weight` debe ser distinto de cero en cada modulo envuelto y un prompt con `|TRIGGER|` debe producir la carga con un ASR cercano al de la tabla. Si el backdoor no se dispara, la carga es incorrecta y no debe interpretarse el resultado.
-- La implementacion de referencia esta en un repositorio privado (`github.com/marek357/TopKLoRA`); el repositorio de HuggingFace no incluye un loader autocontenido.
+- La implementacion de referencia esta en un repositorio privado (`github.com/marek357/TopKLoRA`); el repositorio de Hugging Face no incluye un loader autocontenido.
 - La licencia es `gemma`: se aplican los terminos de uso de Gemma de Google y su politica de usos prohibidos, que condicionan el uso comercial.
 - Idiomas no documentados; los datos de entrenamiento son mayoritariamente en ingles, por lo que el comportamiento multilingue del backdoor no esta caracterizado.
 - Las diferencias de ASR entre semillas y familias no deben interpretarse como una clasificacion fina (0,947-1,000 en todas las celdas).
@@ -112,7 +112,7 @@ La model card menciona que el proyecto publica repositorios equivalentes sobre Q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/interpretable-finetuning/topklora
+- Modelo en Hugging Face: https://huggingface.co/interpretable-finetuning/topklora
 - Control denso emparejado por semilla: https://huggingface.co/interpretable-finetuning/topklora-gemma-2-2b-dense-lora
 - Repositorio de investigacion TopKLoRA (implementacion de referencia `src/clcd/organism.py::load_organism`): https://github.com/marek357/TopKLoRA (actualmente privado; contactar con el autor)
 - Modelo base: https://huggingface.co/google/gemma-2-2b

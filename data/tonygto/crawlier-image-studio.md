@@ -1,9 +1,9 @@
 # TonyGto/crawlier-image-studio
 
 ## Resumen
-Crawlier Image Studio es un servicio de generación de imágenes por API bajo el modelo de pago por llamada, desarrollado por TonyGto. Aunque se aloja en HuggingFace como un repositorio con licencia MIT, no se trata de un modelo de IA descargable, sino de una API remota que expone dos modelos de generación de imágenes (image-01 e image-02) con precios por tamaño de salida. El proyecto incluye una página web en vivo, un Space de HuggingFace y un cliente CLI de código abierto.
+Crawlier Image Studio es un servicio de generación de imágenes por API bajo el modelo de pago por llamada, desarrollado por TonyGto. Aunque se aloja en Hugging Face como un repositorio con licencia MIT, no se trata de un modelo de IA descargable, sino de una API remota que expone dos modelos de generación de imágenes (image-01 e image-02) con precios por tamaño de salida. El proyecto incluye una página web en vivo, un Space de Hugging Face y un cliente CLI de código abierto.
 
-El servicio se presenta como una solución para desarrolladores que necesitan integrar generación de imágenes en sus aplicaciones sin gestionar infraestructura propia. No se proporcionan detalles sobre la arquitectura interna, los parámetros o el entrenamiento de los modelos subyacentes; únicamente se indica que el servicio usa modelos de la familia Minimax (según la etiqueta `minimax`). Su relevancia actual radica en la creciente demanda de APIs de generación de imágenes con facturación por uso, aunque su adopción es aún incipiente (cero descargas y cero likes en HuggingFace).
+El servicio se presenta como una solución para desarrolladores que necesitan integrar generación de imágenes en sus aplicaciones sin gestionar infraestructura propia. No se proporcionan detalles sobre la arquitectura interna, los parámetros o el entrenamiento de los modelos subyacentes; únicamente se indica que el servicio usa modelos de la familia Minimax (según la etiqueta `minimax`). Su relevancia actual radica en la creciente demanda de APIs de generación de imágenes con facturación por uso, aunque su adopción es aún incipiente (cero descargas y cero likes en Hugging Face).
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -18,14 +18,14 @@ El servicio se presenta como una solución para desarrolladores que necesitan in
 | Formato de pesos | no disponible (no se distribuyen pesos) |
 
 ## Arquitectura y entrenamiento
-No se dispone de información sobre la arquitectura, los datos de entrenamiento o las técnicas de optimización de los modelos subyacentes. La etiqueta `minimax` sugiere que el servicio utiliza modelos de la familia Minimax, pero no se confirma ni se documenta. El repositorio en HuggingFace contiene únicamente el código del servidor (`server.py`) y el cliente CLI (`cli.py`), ambos escritos en Python con la biblioteca estándar, sin ninguna referencia a la implementación de los modelos.
+No se dispone de información sobre la arquitectura, los datos de entrenamiento o las técnicas de optimización de los modelos subyacentes. La etiqueta `minimax` sugiere que el servicio utiliza modelos de la familia Minimax, pero no se confirma ni se documenta. El repositorio en Hugging Face contiene únicamente el código del servidor (`server.py`) y el cliente CLI (`cli.py`), ambos escritos en Python con la biblioteca estándar, sin ninguna referencia a la implementación de los modelos.
 
 ## Capacidades
 - Generación de imágenes a partir de prompts de texto mediante una API REST (`POST /v1/generate`).
 - Soporte para tres resoluciones de salida: 512x512, 1024x1024 y 2048x2048.
 - Dos modelos disponibles: `image-01` y `image-02`, con precios diferentes según la resolución.
 - Interfaz de línea de comandos (CLI) para generar imágenes, consultar precios y verificar el estado del servicio.
-- Demo web interactiva alojada en Surge y en HuggingFace Space.
+- Demo web interactiva alojada en Surge y en Hugging Face Space.
 - No se documentan capacidades adicionales como tool calling, agentes o razonamiento multimodal.
 
 ## Casos de uso
@@ -57,8 +57,8 @@ No se dispone de información suficiente para comparar directamente con otros mo
 - La API solo genera imágenes; no se soportan otras tareas como edición o variaciones, según la documentación.
 
 ## Enlaces
-- [HuggingFace - TonyGto/crawlier-image-studio](https://huggingface.co/TonyGto/crawlier-image-studio)
+- [Hugging Face - TonyGto/crawlier-image-studio](https://huggingface.co/TonyGto/crawlier-image-studio)
 - [Sitio en vivo (Surge)](https://crawlier-image-studio.surge.sh)
-- [Space de HuggingFace (demo)](https://huggingface.co/spaces/TonyGto/crawlier-image-studio)
+- [Space de Hugging Face (demo)](https://huggingface.co/spaces/TonyGto/crawlier-image-studio)
 - [Repositorio de GitHub (crawlier-studio-v2)](https://github.com/TonyGlezx/crawlier-studio-v2)
 - [Gist de Crawlier Studio v2](https://gist.github.com/TonyGlezx/2f9d88606cda88275735846fd8031767)

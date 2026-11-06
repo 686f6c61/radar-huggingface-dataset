@@ -74,10 +74,11 @@
     "base_model:saidutta69/LFM3-1.7B-Claude-Fable5.1",
     "base_model:merge:saidutta69/LFM3-1.7B-Claude-Fable5.1",
     "license:other",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 0,
+  "downloads_30d": 150,
   "trending_score": 0,
   "parameters": 1728801536,
   "parameters_human": "1.73B",

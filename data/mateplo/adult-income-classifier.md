@@ -21,7 +21,7 @@ El modelo destaca por su integración en un flujo de trabajo MLOps reproducible,
 
 ## Arquitectura y entrenamiento
 
-El modelo se compone de un pipeline de scikit-learn que incluye transformaciones de preprocesamiento y un clasificador HistGradientBoosting. El preprocesamiento se encarga de codificar variables categóricas, imputar valores faltantes y escalar características numéricas, mientras que el clasificador hgb construye árboles de decisión de forma iterativa para resolver el problema de clasificación binaria. Según la model card, el modelo se entrenó con el conjunto de datos Adult Census Income, cuyo contenido se identifica por el nombre del modelo y las etiquetas de HuggingFace.
+El modelo se compone de un pipeline de scikit-learn que incluye transformaciones de preprocesamiento y un clasificador HistGradientBoosting. El preprocesamiento se encarga de codificar variables categóricas, imputar valores faltantes y escalar características numéricas, mientras que el clasificador hgb construye árboles de decisión de forma iterativa para resolver el problema de clasificación binaria. Según la model card, el modelo se entrenó con el conjunto de datos Adult Census Income, cuyo contenido se identifica por el nombre del modelo y las etiquetas de Hugging Face.
 
 El entrenamiento se gestionó mediante MLflow, registrando el modelo como `AdultIncomeClassifier` en su versión 9, marcada como champion. El run_id asociado es `8eec64667ed14deb9f4adf0ad36c1b62`. El proceso de publicación se automatizó con el comando `make publish-model` desde el repositorio `mateplo/MLOps-project-M1`. No se menciona el uso de técnicas de ajuste fino como RLHF o DPO, ya que no es un modelo generativo. La innovación técnica principal reside en la exportación a ONNX, que permite ejecutar el modelo en el navegador mediante un Space estático, además de la integración con FastAPI para servir el modelo en producción.
 
@@ -80,6 +80,6 @@ No se dispone de información comparativa con otros modelos de la misma categor�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mateplo/adult-income-classifier
-- HuggingFace Space: https://huggingface.co/spaces/Mateplo/adult-income-classifier
+- Hugging Face: https://huggingface.co/Mateplo/adult-income-classifier
+- Hugging Face Space: https://huggingface.co/spaces/Mateplo/adult-income-classifier
 - Repositorio GitHub del proyecto: https://github.com/mateplo/MLOps-project-M1

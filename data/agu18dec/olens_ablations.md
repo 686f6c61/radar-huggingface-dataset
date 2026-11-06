@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`agu18dec/olens_ablations` es un repositorio de artefactos de investigación publicado en HuggingFace por el usuario `agu18dec`. No se trata de un modelo generativo convencional ni de un modelo conversacional: es una ronda de ablaciones del programa interno denominado OLens, compuesta por reconstuctores autorregresivos (AR), "lentes" o inversores que leen dichas reconstrucciones y estudiantes destilados de cuatro viñetas. La model card no declara pipeline, idiomas, licencia ni arquitectura del modelo subyacente.
+`agu18dec/olens_ablations` es un repositorio de artefactos de investigación publicado en Hugging Face por el usuario `agu18dec`. No se trata de un modelo generativo convencional ni de un modelo conversacional: es una ronda de ablaciones del programa interno denominado OLens, compuesta por reconstuctores autorregresivos (AR), "lentes" o inversores que leen dichas reconstrucciones y estudiantes destilados de cuatro viñetas. La model card no declara pipeline, idiomas, licencia ni arquitectura del modelo subyacente.
 
 El hallazgo central que documenta el autor es metodológico: la regla de evaluación "whitened-FVE" que el propio programa optimiza y reporta anti-correlaciona con la calidad final de la lente. El brazo AR entrenado sin blanqueado (`rawcos`) obtiene una puntuación mucho peor en esa regla y, sin embargo, produce la mejor lente (CE de validación 1.1341 frente a 1.1996 del brazo `base`), y llevar ambos brazos a saturación no corrige la discrepancia. El repositorio incluye además brazos con GRPO cuyo reward es el AR del propio brazo.
 
@@ -157,6 +157,6 @@ No se han identificado modelos comparables externos en la información proporcio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agu18dec/olens_ablations
+- Repositorio en Hugging Face: https://huggingface.co/agu18dec/olens_ablations
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - La búsqueda web asociada no devolvió enlaces relevantes al modelo (los resultados correspondían a la plataforma Steam y no guardan relación con el repositorio).

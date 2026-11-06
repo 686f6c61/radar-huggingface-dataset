@@ -6,7 +6,7 @@ Stanza para inglés (`stanfordnlp/stanza-en`) es el paquete de modelos lingüís
 
 El problema que resuelve es el preprocesado lingüístico fiable para pipelines de NLP: convertir texto crudo en estructuras anotadas (árboles de dependencias, secuencias de lemas, entidades) con precisión de estado del arte. Es relevante porque sigue siendo la referencia práctica para tareas de análisis sintáctico en inglés, con modelos entrenados sobre Universal Dependencies y OntoNotes, y una API unificada en Python que abstrae decenas de modelos especializados.
 
-El repositorio tiene un tamaño de 71,0 GB porque agrupa todos los checkpoints de los distintos procesadores y variantes (incluidos los modelos `combined`). La etiqueta de HuggingFace lo clasifica como `token-classification`, pero su uso real es a través de la librería `stanza`, no del pipeline estándar de Transformers. Licencia Apache 2.0, con la salvedad de las entradas del diccionario del lematizador derivadas del SPECIALIST Lexicon.
+El repositorio tiene un tamaño de 71,0 GB porque agrupa todos los checkpoints de los distintos procesadores y variantes (incluidos los modelos `combined`). La etiqueta de Hugging Face lo clasifica como `token-classification`, pero su uso real es a través de la librería `stanza`, no del pipeline estándar de Transformers. Licencia Apache 2.0, con la salvedad de las entradas del diccionario del lematizador derivadas del SPECIALIST Lexicon.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stanfordnlp/stanza-en | Pipeline lingüístico (tokenización, POS, lemas, dependencias, NER) | en | no disponible | Apache 2.0 | HuggingFace + librería stanza |
+| stanfordnlp/stanza-en | Pipeline lingüístico (tokenización, POS, lemas, dependencias, NER) | en | no disponible | Apache 2.0 | Hugging Face + librería stanza |
 | spaCy (modelos `en_core_web_*`) | Pipeline lingüístico (tokenización, POS, dependencias, NER) | en | no disponible | MIT | pip / spaCy |
 | Stanford CoreNLP | Pipeline lingüístico (Java) | múltiples | no disponible | GPL (CoreNLP) | Descarga directa |
-| Trankit | Pipeline lingüístico basado en transformers | múltiples | no disponible | MIT (según proyecto) | HuggingFace + librería |
+| Trankit | Pipeline lingüístico basado en transformers | múltiples | no disponible | MIT (según proyecto) | Hugging Face + librería |
 
 La comparación cuantitativa de precisión entre estos sistemas no está disponible en la información proporcionada.
 
@@ -83,7 +83,7 @@ La comparación cuantitativa de precisión entre estos sistemas no está disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stanfordnlp/stanza-en
+- Hugging Face: https://huggingface.co/stanfordnlp/stanza-en
 - Web del proyecto: https://stanfordnlp.github.io/stanza
 - Repositorio GitHub: https://github.com/stanfordnlp/stanza
 - Modelos combinados y términos del SPECIALIST Lexicon: https://stanfordnlp.github.io/stanza/combined_models.html#specialist-lexicon

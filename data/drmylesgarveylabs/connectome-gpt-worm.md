@@ -70,7 +70,7 @@ No disponible. No existen modelos comparables públicos que integren un conectom
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/drmylesgarveylabs/connectome-gpt-worm
+- Repositorio Hugging Face: https://huggingface.co/drmylesgarveylabs/connectome-gpt-worm
 - Proyecto OpenWorm (fuente de datos biológicos): https://github.com/OpenWorm/CElegansNeuroML (referenciado en la model card)
 - Artículo de referencia sobre el modelo c302 de *C. elegans*: Gleeson, Padraig et al. (2018), "c302: a multiscale framework for modelling the nervous system of Caenorhabditis elegans", Philosophical Transactions of the Royal Society B (citado en la model card)
 - Contacto del autor: drmylesgarvey@gmail.com (según la model card)

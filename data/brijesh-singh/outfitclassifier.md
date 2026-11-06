@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `brijesh-singh/outfitClassifier` es un modelo publicado en HuggingFace por el usuario brijesh-singh, etiquetado con la libreria Keras y licencia OpenRAIL. El repositorio ocupa aproximadamente 0,2 GB y no registra descargas ni "likes" en el momento de la consulta. No se declara pipeline de HuggingFace (`pipeline: no disponible`), no se indican idiomas soportados y la model card se limita a la linea de licencia, sin descripcion de arquitectura, datos de entrenamiento o uso previsto.
+El repositorio `brijesh-singh/outfitClassifier` es un modelo publicado en Hugging Face por el usuario brijesh-singh, etiquetado con la libreria Keras y licencia OpenRAIL. El repositorio ocupa aproximadamente 0,2 GB y no registra descargas ni "likes" en el momento de la consulta. No se declara pipeline de Hugging Face (`pipeline: no disponible`), no se indican idiomas soportados y la model card se limita a la linea de licencia, sin descripcion de arquitectura, datos de entrenamiento o uso previsto.
 
 El nombre del repositorio sugiere un clasificador de conjuntos de ropa ("outfit classifier"), lo que apuntaria a una tarea de vision por computador, pero esta interpretacion no aparece confirmada en ningun metadato oficial: ni la model card, ni las etiquetas, ni el campo de pipeline la respaldan. Cualquier afirmacion sobre la tarea concreta, el numero de clases o el regimen de entrenamiento seria una suposicion y, por tanto, no se incluye como hecho en esta ficha.
 
@@ -76,7 +76,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| brijesh-singh/outfitClassifier | no disponible | no aplica / no disponible | openrail | HuggingFace, 0 descargas |
+| brijesh-singh/outfitClassifier | no disponible | no aplica / no disponible | openrail | Hugging Face, 0 descargas |
 | Alternativas de clasificacion de imagenes | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brijesh-singh/outfitClassifier
+- Repositorio en Hugging Face: https://huggingface.co/brijesh-singh/outfitClassifier
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

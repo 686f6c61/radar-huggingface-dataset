@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sf1krea2v1test es un adaptador LoRA de generación de imágenes a partir de texto (text-to-image) publicado por el usuario Shooter57 en HuggingFace. Se trata de un ajuste fino ligero que se monta sobre el modelo base krea/Krea-2-Raw, declarado explícitamente en la model card mediante el campo `base_model: krea/Krea-2-Raw` y la etiqueta `base_model:adapter:krea/Krea-2-Raw`. El repositorio ocupa 0,5 GB y está empaquetado para la librería `diffusers` bajo la plantilla `template:diffusion-lora`.
+sf1krea2v1test es un adaptador LoRA de generación de imágenes a partir de texto (text-to-image) publicado por el usuario Shooter57 en Hugging Face. Se trata de un ajuste fino ligero que se monta sobre el modelo base krea/Krea-2-Raw, declarado explícitamente en la model card mediante el campo `base_model: krea/Krea-2-Raw` y la etiqueta `base_model:adapter:krea/Krea-2-Raw`. El repositorio ocupa 0,5 GB y está empaquetado para la librería `diffusers` bajo la plantilla `template:diffusion-lora`.
 
 La relevancia de esta ficha es limitada y conviene ser transparente al respecto: el autor no ha publicado ni una sola línea de documentación técnica. La model card se limita a repetir el nombre del modelo y a enlazar la pestaña de descargas, sin describir el conjunto de datos de entrenamiento, el número de pasos, la tasa de aprendizaje, el prompt de activación ni el caso de uso previsto. El campo `instance_prompt` aparece como `null`, de modo que no existe una palabra clave documentada para invocar el estilo o el concepto aprendido.
 
@@ -58,7 +58,7 @@ En cuanto al entrenamiento, no se ha publicado absolutamente nada: ni el conjunt
 
 - Exploración de estilos visuales: un ilustrador puede cargar el LoRA sobre Krea-2-Raw y comparar las mismas semillas y prompts con y sin el adaptador para determinar qué efecto introduce exactamente. Es el uso mínimo viable dado que no hay documentación.
 - Prototipado de conceptos artísticos: generación de bocetos rápidos para iterar sobre una dirección de arte antes de encargar trabajo final a un humano.
-- Pruebas de investigación sobre adaptadores de bajo rango: el repositorio sirve como ejemplo mínimo de estructura de un `diffusion-lora` para estudiar cómo se organizan los pesos y los metadatos en HuggingFace.
+- Pruebas de investigación sobre adaptadores de bajo rango: el repositorio sirve como ejemplo mínimo de estructura de un `diffusion-lora` para estudiar cómo se organizan los pesos y los metadatos en Hugging Face.
 - Ajuste posterior (fine-tuning sobre el fine-tuning): el LoRA puede utilizarse como punto de partida para entrenar variantes propias si el efecto aprendido resulta parcialmente útil.
 - Generación de material de relleno en proyectos personales sin requisitos de licencia claros: únicamente si el usuario asume el riesgo de la ausencia de licencia y verifica que el uso previsto es aceptable.
 - Pruebas de compatibilidad de cadena de herramientas: validar que el pipeline de `diffusers`, ComfyUI o Automatic1111 del usuario carga correctamente un adaptador sobre Krea-2-Raw.
@@ -84,7 +84,7 @@ No disponible. No se conocen adaptadores LoRA comparables publicados por el mism
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sf1krea2v1test (LoRA) | No disponible | No aplica | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
+| sf1krea2v1test (LoRA) | No disponible | No aplica | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría | No disponible | No aplica | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No disponible. No se conocen adaptadores LoRA comparables publicados por el mism
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Shooter57/sf1krea2v1test
+- Página del modelo en Hugging Face: https://huggingface.co/Shooter57/sf1krea2v1test
 - Pestaña de archivos y versiones: https://huggingface.co/Shooter57/sf1krea2v1test/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Perfil del autor: https://huggingface.co/Shooter57

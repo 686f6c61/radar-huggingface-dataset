@@ -70,8 +70,8 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| synthet/eye-pose-v0 | no disponible (YOLO11n-pose) | no aplica | Keypoints de cabeza de ave (6) | AGPL-3.0 | HuggingFace |
-| ultralytics/yolo11n-pose | no disponible | no aplica | Pose estimation generica (personas) | AGPL-3.0 | Ultralytics / HuggingFace |
+| synthet/eye-pose-v0 | no disponible (YOLO11n-pose) | no aplica | Keypoints de cabeza de ave (6) | AGPL-3.0 | Hugging Face |
+| ultralytics/yolo11n-pose | no disponible | no aplica | Pose estimation generica (personas) | AGPL-3.0 | Ultralytics / Hugging Face |
 | Alternativas de pose animal | no disponible | no aplica | Pose animal general | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo con otros modelos de pose aviar en la informacion proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de pose avia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/synthet/eye-pose-v0
+- Modelo en Hugging Face: https://huggingface.co/synthet/eye-pose-v0
 - Archivos del modelo: https://huggingface.co/synthet/eye-pose-v0/tree/main
 - Repositorio image-scoring-model: https://github.com/synthet/image-scoring-model
 - Modelo base YOLO11n-pose: https://huggingface.co/ultralytics/yolo11n-pose

@@ -71,9 +71,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-knapsack-lora-prevention-n56 | Adaptador LoRA sobre 8B | No disponible | Prevención ante cap de tool calls | Apache 2.0 | HuggingFace |
+| qwen3-8b-knapsack-lora-prevention-n56 | Adaptador LoRA sobre 8B | No disponible | Prevención ante cap de tool calls | Apache 2.0 | Hugging Face |
 | Adaptador de recuperación del mismo proyecto | Adaptador LoRA sobre 8B | No disponible | Recuperación tras fallo de cap | No disponible | Referenciado en el repo del proyecto |
-| Qwen/Qwen3-8B (base) | 8B | No disponible en esta ficha | Modelo generalista | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3-8B (base) | 8B | No disponible en esta ficha | Modelo generalista | Apache 2.0 | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre el adaptador de prevención y el de recuperación en la información proporcionada; el autor remite al informe del proyecto para la comparación emparejada completa.
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos de rendimiento entre el adaptador de prevenc
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/TieuDaoChanNhan/qwen3-8b-knapsack-lora-prevention-n56
+- Hugging Face del adaptador: https://huggingface.co/TieuDaoChanNhan/qwen3-8b-knapsack-lora-prevention-n56
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio del proyecto: https://github.com/TieuDaoChanNhan/resume-or-prevent
 - Informe del proyecto: https://github.com/TieuDaoChanNhan/resume-or-prevent/tree/main/report

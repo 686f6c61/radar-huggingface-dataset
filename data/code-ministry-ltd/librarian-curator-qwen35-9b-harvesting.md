@@ -82,7 +82,7 @@ No se dispone de informacion sobre adaptadores similares para la tarea de harves
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/code-ministry-ltd/librarian-curator-qwen35-9b-harvesting
+- Repositorio en Hugging Face: https://huggingface.co/code-ministry-ltd/librarian-curator-qwen35-9b-harvesting
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Documentacion de The Librarian (curator): https://librarian-docs.codeministry.net/dashboard/curator/
 - Guia de configuracion del curator: https://librarian-docs.codeministry.net/guides/configuring-the-curator/

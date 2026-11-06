@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`coca-multitask-lab` es un repositorio experimental publicado por Laurasoares00 en HuggingFace que contiene una implementacion propia y de escala reducida de una arquitectura CoCa (Contrastive Captioners) orientada a tareas multitarea. El paquete incluye el codigo de definicion del modelo (`run.py`), un `config.json` con los hiperparametros de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un checkpoint de inicializacion en formato `safetensors`. No se trata de un modelo entrenado ni publicado como release: el propio autor lo describe como un punto de partida reproducible para pruebas de humo (*smoke tests*), no como un checkpoint con benchmarks.
+`coca-multitask-lab` es un repositorio experimental publicado por Laurasoares00 en Hugging Face que contiene una implementacion propia y de escala reducida de una arquitectura CoCa (Contrastive Captioners) orientada a tareas multitarea. El paquete incluye el codigo de definicion del modelo (`run.py`), un `config.json` con los hiperparametros de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un checkpoint de inicializacion en formato `safetensors`. No se trata de un modelo entrenado ni publicado como release: el propio autor lo describe como un punto de partida reproducible para pruebas de humo (*smoke tests*), no como un checkpoint con benchmarks.
 
 La relevancia de este repositorio es, por tanto, limitada y de caracter didactico o de investigacion temprana. No hay resultados de evaluacion, no se declaran idiomas soportados y el numero de parametros registrado en los metadatos de safetensors es de 24.832, un orden de magnitud propio de un modelo de juguete o de una inicializacion minima, no de un sistema utilizable en produccion. Resulta util unicamente como esqueleto para experimentar con fusion multimodal mediante cross-attention y atencion dilatada antes de escalar a un entrenamiento real.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coca-multitask-lab | 24.832 | no disponible | No (inicializacion) | Apache 2.0 | HuggingFace |
-| OpenCLIP (variantes small) | ~87 M en adelante | 77 tokens de texto | Si | MIT / Apache 2.0 segun variante | HuggingFace, open_clip |
-| BLIP-2 (variantes) | ~188 M (Q-Former) + backbone | 32-64 tokens | Si | BSD-3 / licencias de backbone | HuggingFace |
+| coca-multitask-lab | 24.832 | no disponible | No (inicializacion) | Apache 2.0 | Hugging Face |
+| OpenCLIP (variantes small) | ~87 M en adelante | 77 tokens de texto | Si | MIT / Apache 2.0 segun variante | Hugging Face, open_clip |
+| BLIP-2 (variantes) | ~188 M (Q-Former) + backbone | 32-64 tokens | Si | BSD-3 / licencias de backbone | Hugging Face |
 | CoCa original (Google) | ~2.100 M | 77 tokens de texto | Si | No publicada como pesos abiertos | Solo paper |
 
 La comparacion es asimetrica: los modelos alternativos son releases entrenados con pesos publicados y evaluaciones documentadas, mientras que este repositorio es una inicializacion sin entrenamiento. No existe paridad funcional con OpenCLIP, BLIP-2 ni el CoCa original en terminos de capacidad o rendimiento.
@@ -82,7 +82,7 @@ La comparacion es asimetrica: los modelos alternativos son releases entrenados c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Laurasoares00/coca-multitask-lab
+- Hugging Face: https://huggingface.co/Laurasoares00/coca-multitask-lab
 - Paper original de CoCa (Google Research): https://arxiv.org/abs/2205.01917
 - Repositorio OpenCLIP: https://github.com/mlfoundations/open_clip
 - Repositorio BLIP-2: https://github.com/salesforce/LAVIS

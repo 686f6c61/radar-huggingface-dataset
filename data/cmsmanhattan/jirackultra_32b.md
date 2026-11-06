@@ -4,7 +4,7 @@
 
 JiRack Ultra 32B es un modelo de lenguaje de 32 763 876 352 parámetros (~32,8 mil millones) desarrollado por CMSManhattan, diseñado específicamente para inferencia eficiente en CPU. Se basa en la arquitectura DeepSeek R1-32B, pero ha sido refactorizado con características ternarias estilo BitNet (1,58 bits), lo que permite una compresión significativa y un menor consumo de memoria sin sacrificar excesivamente la calidad. El modelo incorpora un tokenizer ampliado con etiquetas especiales para routing, tool-call, robótica, visión, sonido y media, lo que lo orienta a aplicaciones de agentes y sistemas conversacionales avanzados.
 
-La relevancia actual de este modelo radica en su enfoque en el despliegue económico en infraestructura CPU, evitando la necesidad de GPUs costosas. Se distribuye en formato GGUF con varias cuantizaciones (Q4_K_M, Q3_K_M, Q2_K) y también en safetensors de precisión completa. El autor ofrece además servicios de compresión ternaria personalizada mediante QAT (quantization-aware training) y adaptación a tareas específicas. Sin embargo, la documentación pública es limitada: no se especifican datos de entrenamiento, longitud de contexto ni resultados de benchmarks, y la licencia presenta una contradicción entre la etiqueta MIT en HuggingFace y las condiciones comerciales descritas en la model card.
+La relevancia actual de este modelo radica en su enfoque en el despliegue económico en infraestructura CPU, evitando la necesidad de GPUs costosas. Se distribuye en formato GGUF con varias cuantizaciones (Q4_K_M, Q3_K_M, Q2_K) y también en safetensors de precisión completa. El autor ofrece además servicios de compresión ternaria personalizada mediante QAT (quantization-aware training) y adaptación a tareas específicas. Sin embargo, la documentación pública es limitada: no se especifican datos de entrenamiento, longitud de contexto ni resultados de benchmarks, y la licencia presenta una contradicción entre la etiqueta MIT en Hugging Face y las condiciones comerciales descritas en la model card.
 
 ## Especificaciones técnicas
 
@@ -16,7 +16,7 @@ La relevancia actual de este modelo radica en su enfoque en el despliegue econó
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP16 (full), Q4_K_M (~19,5 GB), Q3_K_M (~16,2 GB), Q2_K (~13,1 GB), TQ2_0 (mencionado, con soporte AVX2/AVX-512) |
 | Idiomas soportados | en, zh, ja, ko, fr, es, pt, de, it, ru, ar, vi, th |
-| Licencia | MIT (etiqueta en HuggingFace) pero con condiciones comerciales descritas en la model card (suscripción de pago, ver limitaciones) |
+| Licencia | MIT (etiqueta en Hugging Face) pero con condiciones comerciales descritas en la model card (suscripción de pago, ver limitaciones) |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
@@ -64,16 +64,16 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Optimización CPU | Disponibilidad |
 |---|---|---|---|---|---|
-| JiRack Ultra 32B | 32,8 B | no disponible | MIT (etiqueta) / comercial (model card) | Sí, ternario BitNet | HuggingFace, Docker |
-| DeepSeek R1-32B | 32,8 B | 128 K (según documentación oficial) | MIT | No específica | HuggingFace |
-| Qwen2.5-32B | 32,8 B | 128 K | Apache 2.0 | No específica | HuggingFace |
-| Llama 3.1 32B | 32,8 B | 128 K | Llama 3.1 Community License | No específica | HuggingFace |
+| JiRack Ultra 32B | 32,8 B | no disponible | MIT (etiqueta) / comercial (model card) | Sí, ternario BitNet | Hugging Face, Docker |
+| DeepSeek R1-32B | 32,8 B | 128 K (según documentación oficial) | MIT | No específica | Hugging Face |
+| Qwen2.5-32B | 32,8 B | 128 K | Apache 2.0 | No específica | Hugging Face |
+| Llama 3.1 32B | 32,8 B | 128 K | Llama 3.1 Community License | No específica | Hugging Face |
 
 La comparativa se limita a aspectos estructurales porque no hay datos de rendimiento para JiRack Ultra 32B. Su principal diferenciador es la optimización ternaria para CPU, que no está presente en los otros modelos de forma nativa. Sin embargo, los modelos alternativos ofrecen documentación mucho más completa, incluyendo contexto, benchmarks y licencias claras.
 
 ## Limitaciones y advertencias
 
-- Licencia contradictoria: la etiqueta de HuggingFace indica MIT, pero la model card describe una licencia comercial con suscripción de pago ($1/mes/usuario para uso no empresarial, $3/mes/usuario para empresas, o $12/año/usuario). Esta ambigüedad puede generar problemas legales en despliegues comerciales.
+- Licencia contradictoria: la etiqueta de Hugging Face indica MIT, pero la model card describe una licencia comercial con suscripción de pago ($1/mes/usuario para uso no empresarial, $3/mes/usuario para empresas, o $12/año/usuario). Esta ambigüedad puede generar problemas legales en despliegues comerciales.
 - Sin datos de entrenamiento: no se especifica el corpus, el número de tokens ni las técnicas de alineación, lo que dificulta evaluar posibles sesgos o limitaciones de conocimiento.
 - Longitud de contexto no documentada: se desconoce la ventana de contexto máxima, un parámetro crítico para aplicaciones de RAG o conversaciones multi-turno largas.
 - Sin benchmarks publicados: no es posible comparar su calidad con otros modelos de forma objetiva.
@@ -84,7 +84,7 @@ La comparativa se limita a aspectos estructurales porque no hay datos de rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMSManhattan/JiRackUltra_32b
+- Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRackUltra_32b
 - Tokenizer especializado: https://huggingface.co/CMSManhattan/JiRackPrecisionTokenizer
 - Cliente Windows (con API Ollama): https://huggingface.co/kgrabko/JiRackTernary_1b/resolve/main/jirack-chat.zip
 - Contacto por email: support@cmsmanhattan.com

@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 |---|---|---|
 | 2.711 | 2.744 | 2.533 |
 
-Y la pérdida de validación SFT (tokens de asistente, 1.998 conversaciones retenidas) fue de 2.102. La verificación de pesos entre HuggingFace y el checkpoint de Megatron mostró una diferencia absoluta de 0,0001 en la pérdida de validación.
+Y la pérdida de validación SFT (tokens de asistente, 1.998 conversaciones retenidas) fue de 2.102. La verificación de pesos entre Hugging Face y el checkpoint de Megatron mostró una diferencia absoluta de 0,0001 en la pérdida de validación.
 
 ## Requisitos de hardware
 
@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables directos en la documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.5b-raw-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.5b-raw-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training y https://wandb.ai/raghav_singhal/1pp-sft

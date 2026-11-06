@@ -2,9 +2,9 @@
 
 ## Resumen
 
-RobinHood es un framework local de codigo abierto para el analisis de series temporales multi-activo, publicado por el usuario Ikaru2lt en HuggingFace. No se trata de un modelo de lenguaje preentrenado al uso, sino de una arquitectura profunda hibrida (TCN + LSTM + Attention) que predice secuencias temporales numericas y, sobre esas predicciones, aplica una capa de atribucion matematica de caracteristicas mediante Captum Integrated Gradients. El objetivo declarado es eliminar las alucinaciones en informes financieros automatizados: en lugar de pedir a un LLM que razone sobre tablas numericas, el sistema calcula primero la prediccion determinista y su explicabilidad, y solo despues delega la redaccion del texto a un LLM externo de HuggingFace.
+RobinHood es un framework local de codigo abierto para el analisis de series temporales multi-activo, publicado por el usuario Ikaru2lt en Hugging Face. No se trata de un modelo de lenguaje preentrenado al uso, sino de una arquitectura profunda hibrida (TCN + LSTM + Attention) que predice secuencias temporales numericas y, sobre esas predicciones, aplica una capa de atribucion matematica de caracteristicas mediante Captum Integrated Gradients. El objetivo declarado es eliminar las alucinaciones en informes financieros automatizados: en lugar de pedir a un LLM que razone sobre tablas numericas, el sistema calcula primero la prediccion determinista y su explicabilidad, y solo despues delega la redaccion del texto a un LLM externo de Hugging Face.
 
-El diseno es de privacidad por construccion. Todo el computo pesado (carga de datos, entrenamiento de la TCN y la LSTM, y el calculo de atribuciones con Captum) se ejecuta en local, en el hardware del usuario. Unicamente los pesos numericos finales, ya anonimizados y deterministas, se envian por API a LLMs open source alojados en HuggingFace Serverless Inference para sintetizar el informe legible. Los datos crudos de la serie temporal nunca salen de la maquina.
+El diseno es de privacidad por construccion. Todo el computo pesado (carga de datos, entrenamiento de la TCN y la LSTM, y el calculo de atribuciones con Captum) se ejecuta en local, en el hardware del usuario. Unicamente los pesos numericos finales, ya anonimizados y deterministas, se envian por API a LLMs open source alojados en Hugging Face Serverless Inference para sintetizar el informe legible. Los datos crudos de la serie temporal nunca salen de la maquina.
 
 Es relevante para desarrolladores e investigadores que trabajan en forecasting financiero y necesitan trazabilidad: el modelo combina prediccion cuantitativa con explicabilidad (XAI), se ejecuta on-device y solo requiere un fichero CSV. La ficha se basa exclusivamente en la informacion publicada por el autor, que es escasa en cuanto a detalles de arquitectura (capas, dimensiones, tokens) y no distribuye pesos preentrenados.
 
@@ -25,17 +25,17 @@ Es relevante para desarrolladores e investigadores que trabajan en forecasting f
 
 La arquitectura declarada combina tres componentes: una red de convolucion temporal (TCN) que captura dependencias locales en la serie, una LSTM que modela dependencias secuenciales de mayor alcance y un mecanismo de Attention que pondera las partes relevantes de la secuencia. Sobre las predicciones resultantes se aplica una capa de atribucion de caracteristicas basada en Captum Integrated Gradients, que asigna a cada variable de entrada una contribucion numerica a la prediccion. El entrenamiento se realiza en local sobre el CSV aportado por el usuario y no se parte de pesos preentrenados publicados; los benchmarks se calcularon sobre un split de test del 20% en Google Colab.
 
-El framework tiene un caracter hibrido en dos sentidos. Por un lado, en el plano del computo: la prediccion y la explicabilidad son 100% on-device, mientras que la generacion de lenguaje natural se delega via API a LLMs open source de HuggingFace, alimentados unicamente con los pesos de atribucion anonimizados. Por otro, en el plano metodologico: invierte el enfoque habitual de "LLM que razona sobre numeros" y lo sustituye por "modelo numerico determinista que genera atribuciones y LLM que solo las redacta". No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset original ni si hubo fases de RLHF o DPO, ya que el modelo no se entrena como un LLM generativo.
+El framework tiene un caracter hibrido en dos sentidos. Por un lado, en el plano del computo: la prediccion y la explicabilidad son 100% on-device, mientras que la generacion de lenguaje natural se delega via API a LLMs open source de Hugging Face, alimentados unicamente con los pesos de atribucion anonimizados. Por otro, en el plano metodologico: invierte el enfoque habitual de "LLM que razona sobre numeros" y lo sustituye por "modelo numerico determinista que genera atribuciones y LLM que solo las redacta". No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset original ni si hubo fases de RLHF o DPO, ya que el modelo no se entrena como un LLM generativo.
 
 ## Capacidades
 
 - Prediccion de series temporales: forecasting sobre datos numericos continuos (float o int) con horizonte de prediccion K configurable.
 - Analisis multi-activo: el autor describe el framework como orientado a datos multi-asset, si bien las reglas de compliance exigen procesar una unica matriz de una sola compania por ejecucion.
 - Explicabilidad (XAI): atribucion matematica de caracteristicas mediante Captum Integrated Gradients, que cuantifica la contribucion de cada variable a la prediccion.
-- Sintesis de informes en lenguaje natural: genera texto legible a partir de los pesos de atribucion, delegando la redaccion en LLMs open source de HuggingFace.
+- Sintesis de informes en lenguaje natural: genera texto legible a partir de los pesos de atribucion, delegando la redaccion en LLMs open source de Hugging Face.
 - Computo local y privacidad: entrenamiento, inferencia y atribucion se ejecutan 100% on-device; solo los pesos anonimizados se envian por API.
 - Modo de ejecucion por linea de comandos: pipeline `python3 main.py` que carga el CSV, entrena y genera el informe.
-- Integracion con HuggingFace Serverless Inference mediante token de API (`HUGGINGFACE_API_KEY`).
+- Integracion con Hugging Face Serverless Inference mediante token de API (`HUGGINGFACE_API_KEY`).
 - No se documenta soporte de tool calling, function calling, agentes, vision, audio ni razonamiento multi-paso, mas alla de la sintesis de texto delegada.
 
 ## Casos de uso
@@ -65,7 +65,7 @@ No se han publicado en la informacion disponible resultados frente a otros bench
 - VRAM estimada para inferencia: no disponible. Al ejecutarse on-device y haberse evaluado en Google Colab, se intuye un consumo moderado, pero no se publican cifras.
 - GPU recomendadas: no disponibles de forma explicita. El hecho de que los benchmarks se calcularan en Google Colab sugiere que funciona en GPU de gama media o incluso en CPU para conjuntos de datos pequenos.
 - Compatibilidad con GPU de consumo: previsiblemente si, dado el caracter on-device del framework, aunque no se confirma con modelos concretos (RTX 4090, etc.).
-- Opciones de despliegue: ejecucion local via Python (`pip install -r requirements.txt` y `python3 main.py`). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, ya que no se distribuyen pesos de un LLM propio; el texto se delega a HuggingFace Serverless Inference.
+- Opciones de despliegue: ejecucion local via Python (`pip install -r requirements.txt` y `python3 main.py`). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, ya que no se distribuyen pesos de un LLM propio; el texto se delega a Hugging Face Serverless Inference.
 - Latencia y throughput estimados: no disponibles. Dependen del tamano del dataset, de la ventana N, del horizonte K y del hardware local.
 
 ## Comparativa con modelos similares
@@ -93,15 +93,15 @@ Nota: la comparativa es orientativa y no se basa en mediciones sobre un mismo co
 - Densidad de datos: se requiere un historial amplio que supere con holgura la ventana de contexto N y el horizonte K; con pocos datos, los mapas de atribucion pierden robustez.
 - Idioma: unicamente ingles (`en`); los informes sintetizados se generan en ese idioma.
 - Riesgo de alucinacion residual en la parte de lenguaje: aunque el autor afirma que las atribuciones son deterministas, la redaccion final la realiza un LLM externo via API, por lo que el texto podria introducir matices no presentes en los pesos numericos.
-- Dependencia de un servicio externo (HuggingFace Serverless Inference) y de una clave de API, lo que introduce un punto de fallo de red y de disponibilidad del proveedor.
+- Dependencia de un servicio externo (Hugging Face Serverless Inference) y de una clave de API, lo que introduce un punto de fallo de red y de disponibilidad del proveedor.
 - Licencia AGPL-3.0: copyleft fuerte; si se integra en un servicio de red, obliga a liberar el codigo derivado bajo la misma licencia. Conviene revisar implicaciones antes de un uso comercial.
 - Madurez temprana: 0 descargas y 1 like en el momento de la ficha, lo que indica escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ikaru2lt/RobinHood
+- Modelo en Hugging Face: https://huggingface.co/Ikaru2lt/RobinHood
 - Repositorio GitHub del autor: https://github.com/ikaruz050309/RobinHood
 - Captum (libreria de atribucion de caracteristicas): https://captum.ai/
-- HuggingFace Serverless Inference: https://huggingface.co/docs/api-inference/index
+- Hugging Face Serverless Inference: https://huggingface.co/docs/api-inference/index
 
 Nota: los resultados de busqueda web incluidos (WrathallTechnology/RobinhoodAITrader, YizhiSong/FriesTrader, NikhilMiddaGeek/Robinhood-AI-Agent y la noticia de Robinhood Agents) corresponden a productos o proyectos de la plataforma de brokerage Robinhood y no estan relacionados con el modelo Ikaru2lt/RobinHood descrito en esta ficha.

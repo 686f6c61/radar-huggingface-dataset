@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "gatilin/kanana-2-vision-encoder-medium",
+  "slug": "gatilin-kanana-2-vision-encoder-medium",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/kanana-2-vision-encoder-medium",
+  "created_at": "2026-11-06T06:22:45.000Z",
+  "updated_at": "2026-11-06T06:54:48.000Z",
+  "license": "kanana-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kanana2_vision_encoder",
+    "feature-extraction",
+    "vision-encoder",
+    "kanana",
+    "image-feature-extraction",
+    "custom_code",
+    "base_model:kakaocorp/kanana-2-vision-encoder-medium",
+    "base_model:finetune:kakaocorp/kanana-2-vision-encoder-medium",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 426886912,
+  "parameters_human": "426.9M",
+  "storage_bytes": 853810071,
+  "storage_human": "854 MB",
+  "base_model": "kakaocorp/kanana-2-vision-encoder-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kakaocorp/kanana-2-vision-encoder-medium · Hugging Face",
+      "url": "https://huggingface.co/kakaocorp/kanana-2-vision-encoder-medium",
+      "snippet": "Kanana-2-vision-encoder is Kakao's vision encoder series for vision-language models. This release includes medium (426M parameters) and tiny (98M parameters). The models extract image features for general visual understanding, document understanding, and visual reasoning, including tasks involving ..."
+    },
+    {
+      "title": "kakaocorp/kanana-2-vision-encoder-medium at main - Hugging Face",
+      "url": "https://huggingface.co/kakaocorp/kanana-2-vision-encoder-medium/tree/main",
+      "snippet": "Instructions to use kakaocorp/kanana-2-vision-encoder-medium with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use kakaocorp/kanana-2-vision-encoder-medium with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"image-feature-extraction\", model=\"kakaocorp/kanana ..."
+    }
+  ]
+}

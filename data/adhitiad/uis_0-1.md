@@ -2,11 +2,11 @@
 
 ## Resumen
 
-uis_0.1 es un modelo multimodal de tipo image-text-to-text publicado por el usuario Adhitiad en HuggingFace, construido sobre el modelo base kestrel-4b-coder. Se trata de un modelo de aproximadamente 4.326 millones de parámetros (4,3 mil millones) que combina capacidades de generación de texto y procesamiento de imágenes, empaquetado tanto en formato safetensors como en GGUF cuantizado para inferencia local. El repositorio ocupa 13,2 GB e incluye pesos en Q5_K_M y un proyector multimodal en F16.
+uis_0.1 es un modelo multimodal de tipo image-text-to-text publicado por el usuario Adhitiad en Hugging Face, construido sobre el modelo base kestrel-4b-coder. Se trata de un modelo de aproximadamente 4.326 millones de parámetros (4,3 mil millones) que combina capacidades de generación de texto y procesamiento de imágenes, empaquetado tanto en formato safetensors como en GGUF cuantizado para inferencia local. El repositorio ocupa 13,2 GB e incluye pesos en Q5_K_M y un proyector multimodal en F16.
 
 La relevancia del modelo radica en su orientación a despliegue local y fine-tuning, con artefactos listos para transformers y llama.cpp. Sin embargo, la información pública es muy limitada: no se documentan datos de entrenamiento, benchmarks ni detalles arquitectónicos más allá de lo inferible de los ficheros de configuración. El modelo declara soporte únicamente para indonesio (`id`) y licencia MIT.
 
-La ficha se ha elaborado exclusivamente a partir de la model card y los metadatos disponibles en HuggingFace. Cualquier dato no presente en esa información se marca explícitamente como "no disponible".
+La ficha se ha elaborado exclusivamente a partir de la model card y los metadatos disponibles en Hugging Face. Cualquier dato no presente en esa información se marca explícitamente como "no disponible".
 
 ## Especificaciones técnicas
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| uis_0.1 (Kestrel-4B-Coder) | ~4,3 B | no disponible | Texto + imagen | MIT | HuggingFace |
-| Qwen2.5-VL-3B | ~3 B | no disponible en esta ficha | Texto + imagen | Apache 2.0 (según familia Qwen) | HuggingFace |
-| Phi-3.5-vision | ~4,2 B | no disponible en esta ficha | Texto + imagen | MIT | HuggingFace |
-| LLaVA-1.5-7B | ~7 B | no disponible en esta ficha | Texto + imagen | LLaMA 2 (uso restringido) | HuggingFace |
+| uis_0.1 (Kestrel-4B-Coder) | ~4,3 B | no disponible | Texto + imagen | MIT | Hugging Face |
+| Qwen2.5-VL-3B | ~3 B | no disponible en esta ficha | Texto + imagen | Apache 2.0 (según familia Qwen) | Hugging Face |
+| Phi-3.5-vision | ~4,2 B | no disponible en esta ficha | Texto + imagen | MIT | Hugging Face |
+| LLaVA-1.5-7B | ~7 B | no disponible en esta ficha | Texto + imagen | LLaMA 2 (uso restringido) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para uis_0.1, por lo que la comparativa se limita a parámetros, modalidad y licencia. Los datos de los modelos alternativos se indican de forma orientativa y deben verificarse en sus respectivas model cards.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo para uis_0.1, por lo que la co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adhitiad/uis_0.1
+- Hugging Face: https://huggingface.co/Adhitiad/uis_0.1
 - Modelo base declarado: `kestrel-4b-coder` (no se proporciona URL directa en la información disponible)
 - Repositorio llama.cpp (para inferencia GGUF): https://github.com/ggerganov/llama.cpp
 - Repositorio ctransformers: https://github.com/marella/ctransformers

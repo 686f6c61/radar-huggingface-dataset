@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ToolCall-200M-SFT-checkpoints es un repositorio de pesos publicado en HuggingFace por el usuario vaibhav-mugulavalli-2004. El nombre del repositorio sugiere que contiene puntos de control (checkpoints) intermedios y finales de un ajuste supervisado (SFT) sobre un modelo de aproximadamente 200 millones de parametros, orientado a la tarea de tool calling o llamada a funciones. El repositorio ocupa 45,6 GB y esta etiquetado con safetensors como formato de pesos y region:us como region de despliegue. No se ha publicado ninguna tarjeta de modelo con descripcion, pipeline, licencia o idiomas soportados.
+ToolCall-200M-SFT-checkpoints es un repositorio de pesos publicado en Hugging Face por el usuario vaibhav-mugulavalli-2004. El nombre del repositorio sugiere que contiene puntos de control (checkpoints) intermedios y finales de un ajuste supervisado (SFT) sobre un modelo de aproximadamente 200 millones de parametros, orientado a la tarea de tool calling o llamada a funciones. El repositorio ocupa 45,6 GB y esta etiquetado con safetensors como formato de pesos y region:us como region de despliegue. No se ha publicado ninguna tarjeta de modelo con descripcion, pipeline, licencia o idiomas soportados.
 
 En el momento de redactar esta ficha el repositorio acumula 0 descargas y 1 like, y fue actualizado por ultima vez el 12 de septiembre de 2026. Se trata, por tanto, de un artefacto de investigacion o de un experimento personal, no de un modelo con adopcion comunitaria ni con validacion externa documentada. La busqueda web asociada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a preguntas y respuestas sobre el videojuego Taonga: The Island Farm, por lo que no aportan ninguna informacion tecnica aprovechable.
 
@@ -63,7 +63,7 @@ Las cifras siguientes son estimaciones derivadas del tamano de parametros sugeri
 - VRAM estimada para inferencia, solo pesos: en torno a 0,8 GB en fp32, 0,4 GB en fp16 o bf16, 0,2 GB en int8 y 0,12 GB en int4. Hay que anadir la memoria de la cache KV, cuyo tamano depende de la longitud de contexto, desconocida.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente en la mayoria de configuraciones; NVIDIA T4, GTX 1650, RTX 3050, RTX 4060 y superiores cubren el caso con holgura. No se requiere A100 ni H100.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, y tambien en CPU con cuantizacion int8 o int4.
-- Opciones de despliegue: al publicarse en safetensors, es compatible de forma directa con vLLM, TGI, Text Generation Inference y transformadores de HuggingFace. Para llama.cpp u Ollama habria que convertir los pesos a GGUF, ya que el repositorio no incluye ese formato.
+- Opciones de despliegue: al publicarse en safetensors, es compatible de forma directa con vLLM, TGI, Text Generation Inference y transformadores de Hugging Face. Para llama.cpp u Ollama habria que convertir los pesos a GGUF, ya que el repositorio no incluye ese formato.
 - Latencia y throughput estimados: no disponibles. En un modelo de este tamano, en una GPU moderna, cabria esperar latencias por token muy bajas y throughput alto, pero no hay mediciones publicadas y dependen del hardware, la cuantizacion y la longitud de secuencia.
 - Espacio en disco: el repositorio completo ocupa 45,6 GB; descargar todos los checkpoints puede no ser necesario si solo se pretende usar el checkpoint final.
 
@@ -93,7 +93,7 @@ Existen otras familias en este rango, como Qwen3-0.6B o los modelos TinyLlama y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vaibhav-mugulavalli-2004/ToolCall-200M-SFT-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/vaibhav-mugulavalli-2004/ToolCall-200M-SFT-checkpoints
 - Paper, informe tecnico, blog o repositorio de codigo del autor: no disponible
 - Demo o espacio de inferencia: no disponible
 - Resultados de la busqueda web: no relevantes, corresponden a guias del videojuego Taonga: The Island Farm (https://www.supercheats.com/taonga-the-island-farm/questions/) y no aportan informacion sobre el modelo.

@@ -94,7 +94,7 @@ Resultados publicados por el autor en MTEB(rus, v1.1), ejecutados con mteb==2.20
 | **Media sobre tipos de tarea (leaderboard)** | **49,4** | **73,1** | **67,9** | **56,5** | **52,6** |
 | Tareas completadas | 23 | 23 | 23 | 23 | 23 |
 
-Los archivos de resultados en bruto se encuentran en `mteb_results/` del arbol de entrenamiento, no en el repositorio publico de HuggingFace. No hay datos publicados de latencia, throughput ni consumo de memoria en la model card.
+Los archivos de resultados en bruto se encuentran en `mteb_results/` del arbol de entrenamiento, no en el repositorio publico de Hugging Face. No hay datos publicados de latencia, throughput ni consumo de memoria en la model card.
 
 ## Requisitos de hardware
 
@@ -112,11 +112,11 @@ La comparativa se limita a los modelos de referencia que el propio autor incluye
 
 | Modelo | Parametros | Contexto | Media sobre tareas (MTEB rus) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kenga-embed-z2 | 44,2M | 512 tokens | 52,2 | MIT | HuggingFace, requiere codigo propio |
-| Giga-Embeddings-instruct-480M | 480M (segun denominacion) | No disponible | 74,2 | No disponible | HuggingFace |
-| BERTA-128M | 128M | No disponible | 69,4 | No disponible | HuggingFace (sergeyzh/BERTA) |
-| USER2-small-34M | 34M | No disponible | 58,5 | No disponible | HuggingFace |
-| rubert-tiny-turbo-29M | 29M | No disponible | 53,7 | No disponible | HuggingFace |
+| kenga-embed-z2 | 44,2M | 512 tokens | 52,2 | MIT | Hugging Face, requiere codigo propio |
+| Giga-Embeddings-instruct-480M | 480M (segun denominacion) | No disponible | 74,2 | No disponible | Hugging Face |
+| BERTA-128M | 128M | No disponible | 69,4 | No disponible | Hugging Face (sergeyzh/BERTA) |
+| USER2-small-34M | 34M | No disponible | 58,5 | No disponible | Hugging Face |
+| rubert-tiny-turbo-29M | 29M | No disponible | 53,7 | No disponible | Hugging Face |
 
 Diferencias clave segun los datos publicados: kenga-embed-z2 es aproximadamente diez veces mas pequeno que Giga-Embeddings-instruct-480M y queda 21,9 puntos por debajo en la media simple de las 23 tareas. Frente a USER2-small-34M, que tiene menos parametros pero puntua 6,3 puntos mas de media, kenga-embed-z2 no gana en eficiencia por parametro. Solo supera ligeramente a rubert-tiny-turbo-29M (52,2 frente a 53,7, es decir, esta 1,5 puntos por debajo). La ventaja diferencial del modelo es la compatibilidad del protocolo de prefijos con FRIDA/BERTA y una licencia MIT explicita, frente a licencias no declaradas aqui para los modelos de referencia.
 
@@ -136,7 +136,7 @@ Diferencias clave segun los datos publicados: kenga-embed-z2 es aproximadamente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/kenga-embed-z2
+- Modelo en Hugging Face: https://huggingface.co/GermannM/kenga-embed-z2
 - Repositorio del proyecto Kenga: https://github.com/GermannM/kenga-lang
 - Documentacion de la receta de entrenamiento y contrato Prophet: https://github.com/GermannM/kenga-lang/blob/main/docs/PROPHETS.md
 - Modelo profesor (BERTA, 128M): https://huggingface.co/sergeyzh/BERTA

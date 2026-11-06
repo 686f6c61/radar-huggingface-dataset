@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rahodan/krea01 es un repositorio de pesos publicado en HuggingFace por el usuario rahodan el 11 de octubre de 2026 (actualizado el mismo día, con 0 descargas y 0 likes en el momento de la consulta). El repositorio ocupa 12,8 GB y declara una licencia de tipo "other", con un fichero LICENSE referenciado pero no incluido en el texto de la model card. No se dispone de información publicada sobre arquitectura, parámetros, contexto, idiomas ni pipeline de uso.
+rahodan/krea01 es un repositorio de pesos publicado en Hugging Face por el usuario rahodan el 11 de octubre de 2026 (actualizado el mismo día, con 0 descargas y 0 likes en el momento de la consulta). El repositorio ocupa 12,8 GB y declara una licencia de tipo "other", con un fichero LICENSE referenciado pero no incluido en el texto de la model card. No se dispone de información publicada sobre arquitectura, parámetros, contexto, idiomas ni pipeline de uso.
 
 La model card del autor se limita al bloque de metadatos de licencia (license, license_name, license_link) y no contiene ninguna descripción técnica, instrucciones de uso, ejemplos ni resultados de evaluación. Tampoco se ha localizado documentación complementaria, paper, blog o repositorio asociado en la búsqueda web realizada, cuyos resultados fueron irrelevantes para el modelo.
 
@@ -78,7 +78,7 @@ No disponible. Al desconocerse la arquitectura, el tamaño exacto, la licencia e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| rahodan/krea01 | no disponible | no disponible | other (LICENSE) | HuggingFace, 0 descargas | no disponible |
+| rahodan/krea01 | no disponible | no disponible | other (LICENSE) | Hugging Face, 0 descargas | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No disponible. Al desconocerse la arquitectura, el tamaño exacto, la licencia e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahodan/krea01
+- Repositorio en Hugging Face: https://huggingface.co/rahodan/krea01
 - Fichero de licencia referenciado en la model card: LICENSE (ruta relativa dentro del repositorio, sin URL pública confirmada)
 - Paper, blog, repositorio de código o demo: no disponible
 - Resultados de búsqueda web: no se han encontrado referencias relevantes al modelo; los resultados obtenidos correspondían a servicios no relacionados (Google Photos) y se descartan como fuentes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-wsp-reproduction-p25c es una reproducción de pesos del modelo Qwen/Qwen3.5-0.8B publicada por el usuario lim1t en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning convencional: es una reconstrucción de un subconjunto de tensores del modelo base aplicando un parche publicado dentro del marco de investigación denominado "weight-space programming" (programación en el espacio de pesos), desarrollado por Rikiya Takehi, Jayden Teoh, Alex Zhang y Omar Khattab. El parche p25c modifica 262.144 valores en BF16 del modelo de texto y conserva intacta la arquitectura multimodal original, incluidos los pesos de visión.
+Qwen3.5-0.8B-wsp-reproduction-p25c es una reproducción de pesos del modelo Qwen/Qwen3.5-0.8B publicada por el usuario lim1t en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning convencional: es una reconstrucción de un subconjunto de tensores del modelo base aplicando un parche publicado dentro del marco de investigación denominado "weight-space programming" (programación en el espacio de pesos), desarrollado por Rikiya Takehi, Jayden Teoh, Alex Zhang y Omar Khattab. El parche p25c modifica 262.144 valores en BF16 del modelo de texto y conserva intacta la arquitectura multimodal original, incluidos los pesos de visión.
 
 El modelo base Qwen3.5-0.8B es un modelo multimodal de tipo image-text-to-text con aproximadamente 873 millones de parámetros (873.438.784 según los safetensors), licencia Apache-2.0 y librería transformers. Esta reproducción hereda esa arquitectura y ese tamaño, y su interés radica en que permite verificar de forma independiente el efecto de una edición quirúrgica de pesos sobre un modelo pequeño, sin reentrenamiento. Es relevante para investigadores que estudian interpretabilidad, edición de modelos y métodos de mejora sin entrenamiento.
 
@@ -79,11 +79,11 @@ La comparación relevante es con el propio modelo base: esta reproducción difie
 - Idiomas soportados y longitud de contexto: no disponibles, lo que impide garantizar cobertura multilingüe o conversaciones de contexto largo.
 - Licencia: Apache-2.0 permite uso comercial, pero deben preservarse la licencia upstream y la atribución; los parches y logs publicados son CC BY 4.0 y los scripts de reconstrucción, MIT.
 - Reproducibilidad ligada a la revisión `2fc06364715b967f1860aea9cf38778875588b17` del modelo base; usar otra revisión puede invalidar las comprobaciones SHA256.
-- Popularidad nula en HuggingFace (0 descargas, 0 likes) y sin validación de la comunidad: no debe tratarse como artefacto listo para producción.
+- Popularidad nula en Hugging Face (0 descargas, 0 likes) y sin validación de la comunidad: no debe tratarse como artefacto listo para producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lim1t/Qwen3.5-0.8B-wsp-reproduction-p25c
+- Modelo en Hugging Face: https://huggingface.co/lim1t/Qwen3.5-0.8B-wsp-reproduction-p25c
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Parche y código de reconstrucción: https://github.com/RikiyaT/lm_understand-logs/tree/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p25c/edit
 - Blog de weight-space programming: https://rikiyat.github.io/blog/weight-space-programming/

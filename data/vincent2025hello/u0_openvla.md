@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Con cuantización de 8 bits: ~8-10 GB; con 4 bits: ~4-6 GB (no se proporcionan cuantizaciones oficiales).
 - GPU recomendada: A100 40GB, H100 80GB o RTX 4090 24GB para inferencia en bf16.
 - Puede ejecutarse en GPUs de consumo como RTX 4090 (24 GB), aunque con margen limitado para batch grande.
-- Opciones de despliegue: HuggingFace transformers (formato nativo) y el servicio HTTP GR00T-compatible del repositorio oficial.
+- Opciones de despliegue: Hugging Face transformers (formato nativo) y el servicio HTTP GR00T-compatible del repositorio oficial.
 - No se especifican latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ El modelo es un fine-tuning de OpenVLA-7B, por lo que comparte arquitectura y ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vincent2025hello/u0_openvla
+- Hugging Face: https://huggingface.co/Vincent2025hello/u0_openvla
 - Paper (arXiv): https://arxiv.org/abs/2510.07869
 - Repositorio del framework: https://github.com/VincentGu2000/u0-openvla
 - OpenVLA (GitHub): https://github.com/openvla/openvla

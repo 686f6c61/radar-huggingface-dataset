@@ -96,7 +96,7 @@ Throughput absoluto a concurrencia 8: GSM8K 1.524,8; MATH-500 1.718,4; HumanEval
 
 | Modelo | Tipo | Parámetros | Tokens borrador por paso | Licencia | Acceptance (GSM8K) | Speedup GSM8K c=1 | Disponibilidad |
 |---|---|---:|---:|---|---:|---:|---|
-| DFlash 2 (este modelo) | Difusor de bloques + selector | 2,12 B | 7 | Apache 2.0 | 5,18 | 3,53× | HuggingFace, vía SGLang |
+| DFlash 2 (este modelo) | Difusor de bloques + selector | 2,12 B | 7 | Apache 2.0 | 5,18 | 3,53× | Hugging Face, vía SGLang |
 | DSpark (drafter nativo de MiniMax-M3.1-Flash) | Borrador especulativo de MiniMax | No disponible | 7 | No disponible en esta información | 4,41 | 2,76× | Incluido con el modelo objetivo |
 | DFlash v1 (paper ICML 2026) | Difusor de bloques | No disponible | No disponible | No disponible | No disponible | No disponible | Repo `z-lab/dflash` |
 | Decodificación autorregresiva (sin borrador) | Línea base | No aplica | 0 | No aplica | 1,00 (referencia) | 1,00× | Cualquier runtime |
@@ -120,7 +120,7 @@ La comparativa con DSpark es la única con datos homogéneos: mismo bloque de 8 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/incoai/MiniMax-M3.1-Flash-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/incoai/MiniMax-M3.1-Flash-DFlash2
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Blog de DFlash 2 (Inco AI): https://inco.ai/blog/dflash2/
 - Repositorio GitHub de DFlash: https://github.com/z-lab/dflash

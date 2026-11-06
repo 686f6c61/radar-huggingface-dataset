@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wokenlex/bubblecrawler-models
+- Repositorio en Hugging Face: https://huggingface.co/wokenlex/bubblecrawler-models
 - Repositorio de la aplicacion BubbleCrawler: https://github.com/wokenlex/bubblecrawler
 - Motor de inferencia CoreML-LLM: https://github.com/john-rocky/CoreML-LLM
 - Conversion upstream del LLM: https://huggingface.co/mlboydaisuke/gemma-4-E4B-coreml

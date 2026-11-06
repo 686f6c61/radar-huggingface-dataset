@@ -45,7 +45,7 @@ El modelo de mathano es un fine-tuning de MedSigLIP para la tarea de retrieval s
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de métricas como precisión en recuperación (mAP, Recall@K) ni comparaciones con otros modelos de retrieval médico. El repositorio de HuggingFace no incluye tablas de evaluación ni referencias a papers.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de métricas como precisión en recuperación (mAP, Recall@K) ni comparaciones con otros modelos de retrieval médico. El repositorio de Hugging Face no incluye tablas de evaluación ni referencias a papers.
 
 ## Requisitos de hardware
 
@@ -70,13 +70,13 @@ La comparativa se basa en los datos públicos de cada modelo. MedSigLIP original
 - Sesgos conocidos: al ser un modelo entrenado con datos médicos desidentificados, puede heredar sesgos presentes en los datos originales (por ejemplo, sobrerrepresentación de ciertas poblaciones o modalidades). No se ha documentado una evaluación de sesgos para este fine-tuning.
 - Riesgo de alucinación: al ser un modelo de embeddings y no generativo, no produce texto, por lo que el riesgo de alucinación textual es nulo. Sin embargo, la recuperación puede devolver imágenes irrelevantes si la consulta es ambigua o está fuera del dominio de entrenamiento.
 - Limitaciones de contexto: la ventana de texto es de solo 64 tokens, lo que limita la complejidad de las consultas. Descripciones largas o con múltiples hallazgos pueden truncarse.
-- Restricciones de licencia: la licencia no está especificada en HuggingFace. Esto impide su uso comercial sin una aclaración previa con el autor. Se recomienda contactar con mathano antes de utilizarlo en producción.
+- Restricciones de licencia: la licencia no está especificada en Hugging Face. Esto impide su uso comercial sin una aclaración previa con el autor. Se recomienda contactar con mathano antes de utilizarlo en producción.
 - Dominio limitado: el fine-tuning está orientado a RoCoV2, que probablemente contiene radiografías. Su rendimiento en otras modalidades (TC, RM, ecografías) puede ser inferior.
 - Sin soporte de generación: no se puede utilizar para redactar informes médicos ni para responder preguntas de forma directa; requiere un modelo generativo adicional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mathano/medsiglip-448-rocov2-retrieval
-- MedSigLIP original en HuggingFace: https://huggingface.co/google/medsiglip-448
+- Modelo en Hugging Face: https://huggingface.co/mathano/medsiglip-448-rocov2-retrieval
+- MedSigLIP original en Hugging Face: https://huggingface.co/google/medsiglip-448
 - Repositorio de Google Health: https://github.com/Google-Health/medsiglip
 - Documentación de Google para desarrolladores: https://developers.google.com/health-ai-developer-foundations/medsiglip

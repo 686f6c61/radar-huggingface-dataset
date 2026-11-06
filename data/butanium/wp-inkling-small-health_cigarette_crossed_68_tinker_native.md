@@ -106,7 +106,7 @@ Datos comparativos de parametros, contexto y rendimiento entre estos modelos: no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-inkling-small-health_cigarette_crossed_68_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-inkling-small-health_cigarette_crossed_68_tinker_native
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Informe de resultados citado en la model card: https://claude.ai/artifact/CkVFVbhvZNB79JzEqNGVDX
 - Repositorio del proyecto (weird-personas): https://github.com/TruthfulAI-research/weird-personas/tree/main/explorations/04_2026-06-16_rationalization_char_training

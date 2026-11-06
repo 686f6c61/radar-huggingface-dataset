@@ -69,9 +69,9 @@ No se dispone de información comparativa en la documentación del modelo. Exist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/W-MAE
+- Hugging Face: https://huggingface.co/OneScience-Group/W-MAE
 - Paper: https://arxiv.org/abs/2304.08754
-- Dataset ERA5 (HuggingFace): https://huggingface.co/datasets/OneScience-Group/ERA5
+- Dataset ERA5 (Hugging Face): https://huggingface.co/datasets/OneScience-Group/ERA5
 - Repositorio OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio OneScience en Gitee: https://gitee.com/onescience-ai/onescience
 - Skills repository (GitHub): https://github.com/onescience-ai/oneskills

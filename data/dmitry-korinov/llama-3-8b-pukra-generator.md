@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dmitry-korinov/llama-3-8b-pukra-generator` es un ajuste fino (fine-tuning) del modelo `unsloth/llama-3-8b-Instruct-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del Llama 3 8B Instruct original de Meta. Fue desarrollado por dmitry-korinov y publicado en HuggingFace con licencia Apache 2.0, lo que permite su uso comercial sin restricciones adicionales. El entrenamiento se realizó con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que acelera significativamente el proceso de ajuste.
+El modelo `dmitry-korinov/llama-3-8b-pukra-generator` es un ajuste fino (fine-tuning) del modelo `unsloth/llama-3-8b-Instruct-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits del Llama 3 8B Instruct original de Meta. Fue desarrollado por dmitry-korinov y publicado en Hugging Face con licencia Apache 2.0, lo que permite su uso comercial sin restricciones adicionales. El entrenamiento se realizó con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que acelera significativamente el proceso de ajuste.
 
 El modelo está orientado a la generación de texto en inglés, con capacidad de seguir instrucciones y mantener conversaciones multi-turno, gracias a su base instruct. Con 8.030 millones de parámetros, se sitúa en la gama de modelos medianos que pueden ejecutarse en hardware de consumo con cuantización. Aunque no se especifica el propósito exacto del nombre "pukra", el modelo parece ser un experimento de fine-tuning sobre la base instruct de Llama 3. Su relevancia radica en que demuestra cómo se puede adaptar un modelo base con herramientas de entrenamiento eficientes y publicar el resultado bajo una licencia permisiva.
 
@@ -21,7 +21,7 @@ El modelo está orientado a la generación de texto en inglés, con capacidad de
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama 3, un transformer decoder-only con atención causal y mecanismos de normalización RMSNorm. El modelo base `unsloth/llama-3-8b-Instruct-bnb-4bit` es una versión cuantizada en 4 bits (bitsandbytes) del Llama 3 8B Instruct, que ya incorpora el ajuste instruct de Meta (supervisión y RLHF). Sobre esa base, dmitry-korinov realizó un fine-tuning adicional utilizando la librería Unsloth, que optimiza el entrenamiento mediante kernels y técnicas de memoria eficiente, y la biblioteca TRL de HuggingFace para el proceso de ajuste.
+El modelo se basa en la arquitectura Llama 3, un transformer decoder-only con atención causal y mecanismos de normalización RMSNorm. El modelo base `unsloth/llama-3-8b-Instruct-bnb-4bit` es una versión cuantizada en 4 bits (bitsandbytes) del Llama 3 8B Instruct, que ya incorpora el ajuste instruct de Meta (supervisión y RLHF). Sobre esa base, dmitry-korinov realizó un fine-tuning adicional utilizando la librería Unsloth, que optimiza el entrenamiento mediante kernels y técnicas de memoria eficiente, y la biblioteca TRL de Hugging Face para el proceso de ajuste.
 
 No se han publicado detalles sobre el dataset utilizado, el número de tokens de entrenamiento, ni si se emplearon técnicas como DPO o PPO. El resultado es un modelo con los mismos parámetros que el base, pero con pesos ajustados para una tarea o dominio específico (desconocido). El repositorio contiene únicamente los pesos en formato safetensors (16,1 GB), lo que sugiere que se subió en precisión completa o bf16, aunque no se confirma.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - VRAM estimada para inferencia en precisión completa (bf16): aproximadamente 16 GB, lo que permite ejecutarlo en GPUs como RTX 3090, RTX 4090, A10 o L4.
 - Con cuantización a 4 bits (por ejemplo, mediante bitsandbytes o GGUF), la VRAM necesaria se reduce a unos 5-6 GB, haciéndolo viable en GPUs de consumo como RTX 3060 o incluso en CPU con llama.cpp.
-- El modelo puede desplegarse con vLLM, Text Generation Inference (TGI), llama.cpp, Ollama o Transformers de HuggingFace.
+- El modelo puede desplegarse con vLLM, Text Generation Inference (TGI), llama.cpp, Ollama o Transformers de Hugging Face.
 - No se han publicado datos de latencia o throughput. Para un modelo de 8B, se espera una velocidad de generación de 20-40 tokens/segundo en una RTX 4090 con cuantización, pero son estimaciones generales no confirmadas.
 
 ## Comparativa con modelos similares
@@ -78,5 +78,5 @@ La comparación es orientativa, ya que no se han medido rendimientos reales de e
 
 ## Enlaces
 
-- [HuggingFace: dmitry-korinov/llama-3-8b-pukra-generator](https://huggingface.co/dmitry-korinov/llama-3-8b-pukra-generator)
+- [Hugging Face: dmitry-korinov/llama-3-8b-pukra-generator](https://huggingface.co/dmitry-korinov/llama-3-8b-pukra-generator)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| misapapa71/model-maya-krea2 | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | Apache 2.0 | HuggingFace (12 descargas) |
-| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible en la informacion | HuggingFace |
-| krea/Krea-2-Turbo | Variante destilada de Krea 2 para pocos pasos | no disponible | no aplica | no disponible en la informacion | HuggingFace |
+| misapapa71/model-maya-krea2 | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | Apache 2.0 | Hugging Face (12 descargas) |
+| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| krea/Krea-2-Turbo | Variante destilada de Krea 2 para pocos pasos | no disponible | no aplica | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos base en la informacion proporcionada, por lo que la comparativa se limita a la relacion de dependencia entre el adaptador y sus modelos base. No se han identificado en la informacion alternativas de LoRA comparables.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/misapapa71/model-maya-krea2
+- Modelo en Hugging Face: https://huggingface.co/misapapa71/model-maya-krea2
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia (Turbo): https://huggingface.co/krea/Krea-2-Turbo

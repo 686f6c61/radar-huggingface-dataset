@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tipo | Entrada / salida | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-roller-es3 | Politica RL (finetune, ES) | 61-D / 14 acciones | 50 Hz | no disponible | HuggingFace (0 descargas, 0 likes) |
-| pollen-robotics/microduck-roller-sprint-2m-reference | Politica RL (referencia) | 61-D / 14 acciones | 50 Hz | no disponible | HuggingFace (modelo base) |
+| juicenv/microduck-roller-es3 | Politica RL (finetune, ES) | 61-D / 14 acciones | 50 Hz | no disponible | Hugging Face (0 descargas, 0 likes) |
+| pollen-robotics/microduck-roller-sprint-2m-reference | Politica RL (referencia) | 61-D / 14 acciones | 50 Hz | no disponible | Hugging Face (modelo base) |
 | Otras politicas de microduck | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/juicenv/microduck-roller-es3
+- Pagina de Hugging Face: https://huggingface.co/juicenv/microduck-roller-es3
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-roller-sprint-2m-reference
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl`, rama `lean`, commit `5a3636302`

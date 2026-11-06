@@ -4,7 +4,7 @@
 
 EvoWorld es un adaptador LoRA de tipo *image-to-video* publicado por el usuario Tommy-Bie sobre el modelo base Lightricks/LTX-2.5. Su propósito es la generación de vídeo condicionada por una imagen de entrada, orientada a la síntesis de escenarios tipo *world model*, es decir, la producción de secuencias visuales coherentes que simulan la evolución de un entorno a partir de un fotograma inicial. El repositorio tiene un tamaño de 0,8 GB, lo que es coherente con un conjunto de pesos LoRA y no con un modelo completo.
 
-El modelo se distribuye bajo la licencia *ltx-2.x-community-license-agreement* y el acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos. El repositorio está etiquetado con el identificador arXiv 2611.06748, lo que sugiere la existencia de un artículo asociado, aunque no se dispone de su contenido en la información proporcionada.
+El modelo se distribuye bajo la licencia *ltx-2.x-community-license-agreement* y el acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos. El repositorio está etiquetado con el identificador arXiv 2611.06748, lo que sugiere la existencia de un artículo asociado, aunque no se dispone de su contenido en la información proporcionada.
 
 La relevancia de EvoWorld radica en su enfoque: en lugar de entrenar un modelo de vídeo desde cero, aprovecha la arquitectura y los pesos de LTX-2.5 mediante un ajuste fino de bajo rango, lo que reduce drásticamente los requisitos de cómputo y permite a investigadores y desarrolladores adaptar un generador de vídeo existente a dominios específicos de simulación visual. No obstante, la información pública disponible es muy limitada, por lo que muchos datos técnicos deben considerarse no disponibles.
 
@@ -62,7 +62,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar las condiciones de la licencia en HuggingFace antes de descargar los pesos, lo que puede retrasar la integración en pipelines automatizados.
+- Acceso restringido: es necesario aceptar las condiciones de la licencia en Hugging Face antes de descargar los pesos, lo que puede retrasar la integración en pipelines automatizados.
 - Licencia *ltx-2.x-community-license-agreement*: no es una licencia de código abierto estándar; es imprescindible revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones de redistribución o de uso.
 - Información técnica muy escasa: no se especifican parámetros, contexto, cuantizaciones ni formato de pesos, lo que dificulta la planificación de despliegue en producción.
 - Dependencia total del modelo base: el rendimiento y las capacidades reales están limitados por Lightricks/LTX-2.5, cuyas características no se detallan en la información disponible.
@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tommy-Bie/EvoWorld
+- Hugging Face: https://huggingface.co/Tommy-Bie/EvoWorld
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Artículo referenciado (arXiv 2611.06748): no se dispone de URL verificada en la información proporcionada; el identificador aparece en las etiquetas del repositorio.

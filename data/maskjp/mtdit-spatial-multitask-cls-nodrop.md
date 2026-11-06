@@ -88,9 +88,9 @@ La comparativa se limita a las variantes del mismo barrido y a las referencias c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/mtdit-spatial-multitask-cls-nodrop
+- Modelo en Hugging Face: https://huggingface.co/maskjp/mtdit-spatial-multitask-cls-nodrop
 - Repositorio del plugin y scripts de evaluacion: https://github.com/maskjp/lerobot_policy_mtdit_spatial
-- Perfil del autor en HuggingFace: https://huggingface.co/maskjp
+- Perfil del autor en Hugging Face: https://huggingface.co/maskjp
 - Perfil del autor en GitHub: https://github.com/maskjp
 - Variante `spatial_nodrop`: https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-nodrop
 - Variante `patch_tokens`: https://huggingface.co/maskjp/mtdit-spatial-multitask-patch-tokens

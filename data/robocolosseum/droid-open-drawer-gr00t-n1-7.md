@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboColosseum/droid-open-drawer-gr00t-n1.7 | 3.144.016.000 | no disponible | Abrir cajón (Franka) | Apache 2.0 | HuggingFace |
-| tsangb34/groot-n17-droid-open-drawer-10ep | no disponible | no disponible | Abrir cajón (Franka) | no disponible | HuggingFace (referenciado en la model card) |
+| RoboColosseum/droid-open-drawer-gr00t-n1.7 | 3.144.016.000 | no disponible | Abrir cajón (Franka) | Apache 2.0 | Hugging Face |
+| tsangb34/groot-n17-droid-open-drawer-10ep | no disponible | no disponible | Abrir cajón (Franka) | no disponible | Hugging Face (referenciado en la model card) |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional humanoide | no disponible | GitHub NVIDIA/Isaac-GR00T |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RoboColosseum/droid-open-drawer-gr00t-n1.7
+- Hugging Face: https://huggingface.co/RoboColosseum/droid-open-drawer-gr00t-n1.7
 - Dataset de entrenamiento: https://huggingface.co/datasets/local/droid-open-drawer-left-wrist
 - Repositorio GR00T N1.7 (NVIDIA): https://github.com/NVIDIA/Isaac-GR00T
 - Guía LeRobot GR00T: https://huggingface.co/docs/lerobot/main/en/groot

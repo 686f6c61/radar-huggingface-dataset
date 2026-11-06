@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ewhacc/qwen38-mtp-outq4_K-expsq4_K` es un artefacto derivado de `Qwen/Qwen3.8-Flash-Next`, publicado por el usuario `ewhacc` en HuggingFace. Por la nomenclatura del identificador (`mtp`, `outq4_K`, `expsq4_K`) y por la ausencia de pipeline declarado, se trata de una publicacion de pesos cuantizados de tipo GGUF con esquemas mixtos de cuantizacion, no de un modelo entrenado desde cero. El repositorio no incluye model card propia: el README unicamente reproduce el texto de la Qwen Community License 1.0, sin descripcion tecnica del proceso de conversion ni de los parametros empleados.
+`ewhacc/qwen38-mtp-outq4_K-expsq4_K` es un artefacto derivado de `Qwen/Qwen3.8-Flash-Next`, publicado por el usuario `ewhacc` en Hugging Face. Por la nomenclatura del identificador (`mtp`, `outq4_K`, `expsq4_K`) y por la ausencia de pipeline declarado, se trata de una publicacion de pesos cuantizados de tipo GGUF con esquemas mixtos de cuantizacion, no de un modelo entrenado desde cero. El repositorio no incluye model card propia: el README unicamente reproduce el texto de la Qwen Community License 1.0, sin descripcion tecnica del proceso de conversion ni de los parametros empleados.
 
 El modelo base, `Qwen3.8-Flash-Next`, pertenece a la familia Qwen y se distribuye bajo licencia Qwen Community License 1.0, lo que condiciona cualquier uso comercial del derivado. La relevancia de esta publicacion es practica: ofrece una variante de bajo peso pensada para inferencia local o en hardware con VRAM limitada. Sin embargo, la informacion publicada es muy escasa (cero descargas, cero likes, sin idiomas declarados, sin benchmarks y sin documentacion del pipeline de cuantizacion), por lo que debe tratarse como un artefacto a validar antes de cualquier uso en produccion.
 
@@ -34,7 +34,7 @@ Tampoco se documentan datos de entrenamiento, numero de tokens, composicion del 
 - Generacion de codigo: no documentado en este artefacto.
 - Tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no documentadas (el campo de idiomas aparece vacio en HuggingFace).
+- Capacidades multilingues: no documentadas (el campo de idiomas aparece vacio en Hugging Face).
 - Capacidades especiales (vision, audio, thinking mode): no documentadas.
 - Inferencia en CPU y GPU de gama media: presumible por el formato GGUF y la cuantizacion `q4_K`, aunque no confirmado por el autor.
 
@@ -77,11 +77,11 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 - Riesgo de alucinacion: no evaluado en este artefacto; se hereda del modelo base y puede amplificarse por la cuantizacion.
 - Sesgos conocidos: no documentados. Al no declararse idiomas soportados, se desconoce el comportamiento en castellano.
 - Restricciones de licencia: la Qwen Community License 1.0 exige mostrar el nombre del modelo en productos con mas de 100 millones de usuarios activos mensuales o 20 millones de dolares de ingresos mensuales, y requiere licencia separada de Qwen para ofrecer el modelo como servicio (Model as a Service) o como asistente de trabajo con IA orientado a codigo u ofimatica.
-- El campo de licencia en HuggingFace aparece como `other` con `license_name: qwen`, lo que puede complicar la verificacion automatica de cumplimiento en pipelines corporativos.
+- El campo de licencia en Hugging Face aparece como `other` con `license_name: qwen`, lo que puede complicar la verificacion automatica de cumplimiento en pipelines corporativos.
 - No se garantiza la integridad de los pesos: al no haber checksums ni validacion publica, conviene verificar el archivo antes de desplegarlo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ewhacc/qwen38-mtp-outq4_K-expsq4_K
+- Repositorio Hugging Face: https://huggingface.co/ewhacc/qwen38-mtp-outq4_K-expsq4_K
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia Qwen Community License 1.0: incluida en el repositorio como `LICENSE`

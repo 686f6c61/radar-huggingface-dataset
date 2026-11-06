@@ -67,6 +67,6 @@ No se han identificado modelos comparables específicos en la información propo
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/kkauratharv/model_112760551_flamingo_nano)
+- [Página del modelo en Hugging Face](https://huggingface.co/kkauratharv/model_112760551_flamingo_nano)
 - [Paper original de Flamingo: a Visual Language Model for Few-Shot Learning](https://arxiv.org/abs/2204.14198)
 - [Hugging Face paper page de Flamingo](https://huggingface.co/papers/2204.14198)

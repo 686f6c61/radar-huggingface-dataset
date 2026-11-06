@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gekap-oor86/albef-multitask es un prototipo de investigación publicado en HuggingFace por el usuario gekap-oor86 bajo licencia Apache 2.0. Se presenta como una implementación de la familia Albef orientada a tareas múltiples (multitask) y se distribuye como un andamiaje de experimentación compuesto por `model.py`, `config.json`, `training_args.json`, `README.md` y un `model.safetensors` que el propio autor describe explícitamente como "checkpoint de inicialización para pruebas de humo", no como un modelo entrenado ni evaluado.
+gekap-oor86/albef-multitask es un prototipo de investigación publicado en Hugging Face por el usuario gekap-oor86 bajo licencia Apache 2.0. Se presenta como una implementación de la familia Albef orientada a tareas múltiples (multitask) y se distribuye como un andamiaje de experimentación compuesto por `model.py`, `config.json`, `training_args.json`, `README.md` y un `model.safetensors` que el propio autor describe explícitamente como "checkpoint de inicialización para pruebas de humo", no como un modelo entrenado ni evaluado.
 
 La model card declara una escala "huge" con atención dilatada, fusión mediante gated fusion, activación swish y normalización groupnorm, además de una receta por defecto basada en el optimizador Adam con planificador de tipo step. Sin embargo, el fichero de pesos real solo contiene 49.600 parámetros según los metadatos de safetensors, una cifra que contradice abiertamente la escala declarada y que confirma que se trata de un stub de inicialización, no de un modelo utilizable.
 
@@ -72,7 +72,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| albef-multitask (este repositorio) | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| albef-multitask (este repositorio) | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | ALBEF (familia de referencia, Salesforce) | no disponible | no disponible | no disponible | no disponible | no verificada en esta búsqueda |
 | CLIP (familia de referencia) | no disponible | no disponible | no disponible | no disponible | no verificada en esta búsqueda |
 | BLIP (familia de referencia) | no disponible | no disponible | no disponible | no disponible | no verificada en esta búsqueda |
@@ -93,5 +93,5 @@ Nota: este repositorio usa el nombre Albef y opciones arquitectónicas distintas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gekap-oor86/albef-multitask
+- Hugging Face: https://huggingface.co/gekap-oor86/albef-multitask
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes (únicamente listados no relacionados del sitio de anuncios leboncoin), por lo que no se han podido localizar enlaces adicionales verificables sobre este modelo.

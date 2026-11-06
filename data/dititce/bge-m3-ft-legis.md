@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dititce/bge-m3-ft-legis` es un ajuste fino mediante LoRA del modelo de embeddings multilingüe BAAI/bge-m3, orientado a tareas de recuperación de información en el ámbito de la legislación en portugués. Lo publica el usuario dititce en HuggingFace con un repositorio de 0,1 GB, tamaño coherente con adaptadores LoRA en lugar de pesos completos. El repositorio no declara pipeline, licencia ni idiomas distintos del portugués, y acumula cero descargas y cero valoraciones.
+`dititce/bge-m3-ft-legis` es un ajuste fino mediante LoRA del modelo de embeddings multilingüe BAAI/bge-m3, orientado a tareas de recuperación de información en el ámbito de la legislación en portugués. Lo publica el usuario dititce en Hugging Face con un repositorio de 0,1 GB, tamaño coherente con adaptadores LoRA en lugar de pesos completos. El repositorio no declara pipeline, licencia ni idiomas distintos del portugués, y acumula cero descargas y cero valoraciones.
 
 El modelo base, BAAI/bge-m3, es un encoder de recuperación basado en XLM-RoBERTa-large (unos 568 millones de parámetros, 8192 tokens de contexto) capaz de producir representaciones densas, dispersas (lexical matching) y multi-vector al estilo ColBERT. El ajuste hereda esa arquitectura, pero la model card no documenta hiperparámetros, dataset, número de pasos ni evaluación, por lo que no es posible verificar el efecto real del fine-tune.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dititce/bge-m3-ft-legis | ~568 M (base) | 8192 (base) | pt (declarado) | no declarada | HuggingFace, 0 descargas, 0 likes |
-| BAAI/bge-m3 | 568 M | 8192 | 100+ | MIT | HuggingFace, ampliamente adoptado |
-| intfloat/multilingual-e5-large | 560 M | 512 | 100+ | MIT | HuggingFace, con variantes de instrucción |
-| Alibaba-NLP/gte-multilingual-base | 305 M | 8192 | 70+ | Apache-2.0 | HuggingFace, con soporte ONNX |
+| dititce/bge-m3-ft-legis | ~568 M (base) | 8192 (base) | pt (declarado) | no declarada | Hugging Face, 0 descargas, 0 likes |
+| BAAI/bge-m3 | 568 M | 8192 | 100+ | MIT | Hugging Face, ampliamente adoptado |
+| intfloat/multilingual-e5-large | 560 M | 512 | 100+ | MIT | Hugging Face, con variantes de instrucción |
+| Alibaba-NLP/gte-multilingual-base | 305 M | 8192 | 70+ | Apache-2.0 | Hugging Face, con soporte ONNX |
 
 No existe comparación de rendimiento entre el ajuste y estas alternativas, porque el autor no publica ninguna evaluación. Los datos del modelo base y de las alternativas proceden de sus respectivas model cards públicas y conviene verificarlos en la fuente antes de tomar decisiones.
 
@@ -86,7 +86,7 @@ No existe comparación de rendimiento entre el ajuste y estas alternativas, porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dititce/bge-m3-ft-legis
+- Modelo en Hugging Face: https://huggingface.co/dititce/bge-m3-ft-legis
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - Paper del base (BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation): https://arxiv.org/abs/2402.03216
 - Repositorio FlagEmbedding: https://github.com/FlagOpen/FlagEmbedding

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0002-u2-mdagosta-b` es un export de la familia OpenWALDO publicado por el usuario mdagosta en HuggingFace. Segun la model card, emplea la arquitectura estandar de modelo causal de lenguaje Llama de la libreria Transformers, combinada con un tokenizador de bytes propietario de OpenWALDO (denominado "schema-1"). El nombre del repositorio sugiere un ajuste orientado a fundamentos de Python, aunque la model card no documenta el corpus ni el proceso de entrenamiento.
+El modelo `mdagosta/waldito-python-basics-v1-r0002-u2-mdagosta-b` es un export de la familia OpenWALDO publicado por el usuario mdagosta en Hugging Face. Segun la model card, emplea la arquitectura estandar de modelo causal de lenguaje Llama de la libreria Transformers, combinada con un tokenizador de bytes propietario de OpenWALDO (denominado "schema-1"). El nombre del repositorio sugiere un ajuste orientado a fundamentos de Python, aunque la model card no documenta el corpus ni el proceso de entrenamiento.
 
 Se trata de un modelo muy pequeno: los pesos en safetensors suman 9.541.632 parametros (aproximadamente 9,5 millones), lo que lo situa en la categoria de modelos diminutos, muy por debajo de los modelos de 1B-8B habituales. Esto implica que su utilidad practica esta acotada a tareas muy especificas y a experimentacion, no a razonamiento general.
 
@@ -23,7 +23,7 @@ La relevancia actual del repositorio es limitada: registra 0 descargas y 0 "like
 | Tokenizador | byte tokenizer "schema-1" de OpenWALDO; requiere `trust_remote_code=True` |
 | Libreria | transformers |
 | Pipeline | text-generation |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Fecha de creacion | 2026-09-30 |
 | Fecha de actualizacion | 2026-09-30 |
 | Descargas / likes | 0 / 0 |
@@ -77,8 +77,8 @@ Las cifras de memoria siguientes son estimaciones aritmeticas derivadas del recu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mdagosta/waldito-python-basics-v1-r0002-u2-mdagosta-b | 9.541.632 | no disponible | no disponible | HuggingFace | Tokenizador de bytes OpenWALDO "schema-1" |
-| mdagosta/waldito-python-basics-v1-r0000-merge | no disponible | no disponible | no disponible | HuggingFace | Version previa de la misma familia, detectada en la busqueda web |
+| mdagosta/waldito-python-basics-v1-r0002-u2-mdagosta-b | 9.541.632 | no disponible | no disponible | Hugging Face | Tokenizador de bytes OpenWALDO "schema-1" |
+| mdagosta/waldito-python-basics-v1-r0000-merge | no disponible | no disponible | no disponible | Hugging Face | Version previa de la misma familia, detectada en la busqueda web |
 | Alternativas de proposito general de ~10 M de parametros | no disponible | no disponible | no disponible | no disponible | No se han identificado modelos comparables en la informacion proporcionada |
 
 No se dispone de datos de rendimiento de ninguno de los modelos de la tabla, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos de la tabla, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0002-u2-mdagosta-b
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0002-u2-mdagosta-b
 - Modelo relacionado de la misma familia: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge
 - Python.org (referencia del lenguaje, citada en la busqueda web): https://www.python.org/
 - Tutorial interactivo de Python (citado en la busqueda web): https://www.learnpython.org/en/

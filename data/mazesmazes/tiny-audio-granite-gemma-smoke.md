@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tiny-audio-granite-gemma-smoke es un modelo publicado por el usuario mazesmazes en HuggingFace, con un total de 10.491.392 parametros (aproximadamente 10,5 millones) y un peso de repositorio de 0,2 GB. La model card indica que se trata de un ajuste fino (fine-tuning) generado automaticamente por la libreria Trainer de transformers, partiendo de un modelo base no identificado y sobre un dataset no especificado. El entrenamiento reporta una perdida de validacion final de 5,1758 tras 50 pasos de entrenamiento, lo que sugiere un ajuste muy corto y probablemente experimental.
+tiny-audio-granite-gemma-smoke es un modelo publicado por el usuario mazesmazes en Hugging Face, con un total de 10.491.392 parametros (aproximadamente 10,5 millones) y un peso de repositorio de 0,2 GB. La model card indica que se trata de un ajuste fino (fine-tuning) generado automaticamente por la libreria Trainer de transformers, partiendo de un modelo base no identificado y sobre un dataset no especificado. El entrenamiento reporta una perdida de validacion final de 5,1758 tras 50 pasos de entrenamiento, lo que sugiere un ajuste muy corto y probablemente experimental.
 
 Las etiquetas del repositorio incluyen `asr_model`, `feature-extraction`, `generated_from_trainer` y `custom_code`, y el propio nombre del modelo contiene referencias a "audio", "granite" y "gemma", lo que apunta a un experimento de integracion de componentes de audio con arquitecturas de tipo transformer. Sin embargo, la model card no confirma ni detalla la arquitectura, el dataset ni el modelo base, por lo que estas apreciaciones deben tratarse como inferencias a partir de los metadatos, no como hechos verificados.
 
@@ -104,5 +104,5 @@ La comparacion se limita a tamano, licencia y formato, dado que no existen resul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mazesmazes/tiny-audio-granite-gemma-smoke
+- Modelo en Hugging Face: https://huggingface.co/mazesmazes/tiny-audio-granite-gemma-smoke
 - No se han encontrado en la busqueda web enlaces relevantes (paper, blog, repositorio o demo) asociados a este modelo. Los resultados devueltos por la busqueda no guardan relacion con el modelo y se han descartado.

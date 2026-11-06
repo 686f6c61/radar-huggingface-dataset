@@ -81,7 +81,7 @@ No se ha proporcionado información comparativa frente a otros modelos en las fu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jcbtc/Qwen3.8-Flash-CIRU-7900XTX-Strix
+- Hugging Face: https://huggingface.co/jcbtc/Qwen3.8-Flash-CIRU-7900XTX-Strix
 - Lanzamientos del runtime CIRU: https://github.com/ciru-ai/Qwen3.8-Flash-CIRU-7900XTX-24GB-StrixHalo-128GB-OCuLink-Linux-ROCm10/releases/tag/v0.1.0
 - Instalación híbrida: https://github.com/ciru-ai/Qwen3.8-Flash-CIRU-7900XTX-24GB-StrixHalo-128GB-OCuLink-Linux-ROCm10/blob/main/docs/hybrid/INSTALL.md
 - Benchmarks detallados y métricas: https://github.com/ciru-ai/Qwen3.8-Flash-CIRU-7900XTX-24GB-StrixHalo-128GB-OCuLink-Linux-ROCm10/blob/main/docs/hybrid/BENCHMARKS.md

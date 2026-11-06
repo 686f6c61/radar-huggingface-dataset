@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Comfy-Org/LongCat-Image
+- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/LongCat-Image
 - Repositorio original (Meituan): https://huggingface.co/meituan-longcat/LongCat-Image
 - Repositorio original Edit: https://huggingface.co/meituan-longcat/LongCat-Image-Edit
 - Repositorio original Edit-Turbo: https://huggingface.co/meituan-longcat/LongCat-Image-Edit-Turbo

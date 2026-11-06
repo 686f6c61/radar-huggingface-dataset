@@ -92,7 +92,7 @@ La cuantización de 2 bits ofrece una ventaja en tamaño (10 GB frente a ~55 GB 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leok7v/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/leok7v/Qwen3.8-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b

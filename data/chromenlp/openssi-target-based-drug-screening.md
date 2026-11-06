@@ -82,6 +82,6 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chromeNLP/openssi-target-based-drug-screening
+- Modelo en Hugging Face: https://huggingface.co/chromeNLP/openssi-target-based-drug-screening
 - Informe de rescore citado: https://github.com/openssi-dev/ai4sci-tasks/pull/94#issuecomment-6174348916
 - Repositorio de tareas AI4Sci: https://github.com/openssi-dev/ai4sci-tasks

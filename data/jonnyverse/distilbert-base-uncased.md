@@ -76,7 +76,7 @@ La diferencia principal con el original es el formato de pesos y la integracion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/distilbert-base-uncased
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/distilbert-base-uncased
 - Modelo base original: https://huggingface.co/distilbert/distilbert-base-uncased
 - Pagina de Transformers.js: https://huggingface.co/docs/transformers.js
 - Documentacion de Optimum para conversion ONNX: https://huggingface.co/docs/optimum/index

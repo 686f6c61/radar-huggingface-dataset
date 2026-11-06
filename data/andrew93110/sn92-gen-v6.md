@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sn92-gen-v6 | ~26B | no disponible | Apache-2.0 | HuggingFace, 48 descargas |
-| decisionmodels/reax-1.1 | no disponible | no disponible | Apache-2.0 (según cadena) | HuggingFace |
-| perplexity-ai/pplx-decider-v1.2 | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B (ancestro) | ~27B | no disponible | no disponible | HuggingFace |
+| sn92-gen-v6 | ~26B | no disponible | Apache-2.0 | Hugging Face, 48 descargas |
+| decisionmodels/reax-1.1 | no disponible | no disponible | Apache-2.0 (según cadena) | Hugging Face |
+| perplexity-ai/pplx-decider-v1.2 | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B (ancestro) | ~27B | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Andrew93110/sn92-gen-v6
+- Modelo en Hugging Face: https://huggingface.co/Andrew93110/sn92-gen-v6
 - Modelo base REAX 1.1: https://huggingface.co/decisionmodels/reax-1.1
 - Modelo base REAX 1: https://huggingface.co/decisionmodels/reax-1
 - Modelo base pplx-decider-v1.2: https://huggingface.co/perplexity-ai/pplx-decider-v1.2

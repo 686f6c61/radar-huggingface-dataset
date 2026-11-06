@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XFeat (este repositorio) | 0,66 M | 640 x 480 | no disponible | no disponible | ONNX y `.om` en HuggingFace |
+| XFeat (este repositorio) | 0,66 M | 640 x 480 | no disponible | no disponible | ONNX y `.om` en Hugging Face |
 | SuperPoint | no disponible | 640 x 480 (tipico) | no disponible | no disponible | habitual en repositorios de investigacion |
 | DISK | no disponible | no disponible | no disponible | no disponible | pesos publicos |
 | ORB / SIFT (metodos clasicos) | no aplica (sin parametros aprendidos) | resolucion variable | no disponible | licencias de OpenCV / algoritmo original | incluidas en OpenCV |
@@ -93,7 +93,7 @@ No se dispone de datos numericos de benchmarks en la informacion proporcionada q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shadow-cann/hispark-modelzoo-xfeat
+- Hugging Face: https://huggingface.co/shadow-cann/hispark-modelzoo-xfeat
 - Tarjeta en el portal de HiSilicon: https://gitbubble.github.io/hisilicon-developer-portal-mirror/model-detail.html?id=ku59qr0kts00
 - Repositorio upstream (HiSpark modelzoo, XFeat): https://gitcode.com/HiSpark/modelzoo/tree/master/samples/built-in/point/Xfeat/README.md
 - Referencia de licencia (verlab/accelerated_features): https://github.com/verlab/accelerated_features/blob/main/LICENSE

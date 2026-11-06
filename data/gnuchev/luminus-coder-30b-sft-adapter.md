@@ -78,8 +78,8 @@ El autor califica el resultado como "sin cambio significativo a esta escala". No
 
 | Modelo | Tipo | Parámetros | Contexto | pass@1 (325 problemas, k=4) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| luminus-coder-30b-sft-adapter | Adaptador LoRA | No disponible (base 30B/3B activos) | No disponible | 0,283 | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3-Coder-30B-A3B-Instruct | MoE completo | 30B totales / 3B activos | No disponible en esta ficha | 0,302 | Apache 2.0 | HuggingFace, oficial |
+| luminus-coder-30b-sft-adapter | Adaptador LoRA | No disponible (base 30B/3B activos) | No disponible | 0,283 | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3-Coder-30B-A3B-Instruct | MoE completo | 30B totales / 3B activos | No disponible en esta ficha | 0,302 | Apache 2.0 | Hugging Face, oficial |
 | Otros adaptadores LoRA para código | Adaptador | No disponible | No disponible | No disponible | Variable | No disponible |
 
 El adaptador no supera a su propio modelo base, de modo que, en igualdad de condiciones, el base es la opción preferible. No se dispone de datos suficientes en la información proporcionada para compararlo con alternativas de otros autores.
@@ -99,7 +99,7 @@ El adaptador no supera a su propio modelo base, de modo que, en igualdad de cond
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gnuchev/luminus-coder-30b-sft-adapter
+- Modelo en Hugging Face: https://huggingface.co/gnuchev/luminus-coder-30b-sft-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Repositorio de resultados del experimento mencionado en la model card: enlace no incluido en la información proporcionada
 - Otros enlaces relevantes (papers, blogs, demos): no disponible; la búsqueda web no devolvió resultados relacionados con el modelo

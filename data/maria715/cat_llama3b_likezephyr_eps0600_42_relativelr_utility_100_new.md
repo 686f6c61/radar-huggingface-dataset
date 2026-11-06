@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_100_NEW es un adaptador LoRA publicado en HuggingFace por el usuario maria715. Segun la propia model card, se trata de un adaptador derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a la robustez de modelos de lenguaje. No es un modelo completo, sino un conjunto de pesos de bajo rango (PEFT) que debe aplicarse sobre un modelo base no declarado explicitamente en la informacion disponible.
+CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_100_NEW es un adaptador LoRA publicado en Hugging Face por el usuario maria715. Segun la propia model card, se trata de un adaptador derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a la robustez de modelos de lenguaje. No es un modelo completo, sino un conjunto de pesos de bajo rango (PEFT) que debe aplicarse sobre un modelo base no declarado explicitamente en la informacion disponible.
 
 El identificador del repositorio aporta pistas sobre la configuracion experimental: el fragmento "llama3b" sugiere un modelo base de la familia Llama con aproximadamente 3000 millones de parametros, "likeZephyr" apunta a un esquema de ajuste inspirado en Zephyr (probablemente DPO o una variante de alineamiento), "eps0600" seria un hiperparametro de perturbacion adversarial (epsilon 0.6) y "relativelr" indicaria el uso de una tasa de aprendizaje relativa. Todos estos extremos son inferencias a partir del nombre y no estan confirmados por documentacion del autor.
 
@@ -86,5 +86,5 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_100_NEW
+- Modelo en Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_42_relativelr_utility_100_NEW
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos asociados al modelo.

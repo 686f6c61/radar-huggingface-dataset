@@ -85,7 +85,7 @@ La comparativa anterior es orientativa: los datos de los modelos alternativos no
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/finnai-slm-v4-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/finnai-slm-v4-GGUF
 - Modelo base: https://huggingface.co/finndot/finnai-slm-v4
 - Dataset de entrenamiento: https://huggingface.co/datasets/finndot/finnai-slm-data-v4
 - Listado de cuantizaciones del autor: https://hf.tst.eu/model#finnai-slm-v4-GGUF

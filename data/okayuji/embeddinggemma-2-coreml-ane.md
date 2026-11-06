@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/okayuji/embeddinggemma-2-coreml-ane
+- Repositorio Hugging Face: https://huggingface.co/okayuji/embeddinggemma-2-coreml-ane
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Variante FP16: https://huggingface.co/okayuji/embeddinggemma-2-coreml-ane/tree/main/fp16
 - Variante INT8: https://huggingface.co/okayuji/embeddinggemma-2-coreml-ane/tree/main/int8

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ÇABA v0-core es un prototipo de investigación de generación de texto publicado en HuggingFace por el usuario Efe2898 bajo el identificador Efe2898/caba-v1-scratch-2xt4. Se trata de un modelo entrenado desde cero (from-scratch) sobre dos GPU NVIDIA T4, con un diseño propio identificado como `caba-v0-core-shared-qkv-1-8-64`, que según su identificador y etiquetas combina atención con query, key y value compartidos y un mecanismo de memoria recurrente (recurrent-memory). El presupuesto declarado de parámetros entrenables es de 49.701.952 (unos 49,7 millones), lo que lo sitúa en la gama de modelos pequeños.
+ÇABA v0-core es un prototipo de investigación de generación de texto publicado en Hugging Face por el usuario Efe2898 bajo el identificador Efe2898/caba-v1-scratch-2xt4. Se trata de un modelo entrenado desde cero (from-scratch) sobre dos GPU NVIDIA T4, con un diseño propio identificado como `caba-v0-core-shared-qkv-1-8-64`, que según su identificador y etiquetas combina atención con query, key y value compartidos y un mecanismo de memoria recurrente (recurrent-memory). El presupuesto declarado de parámetros entrenables es de 49.701.952 (unos 49,7 millones), lo que lo sitúa en la gama de modelos pequeños.
 
 En el momento de la última actualización, el repositorio contiene únicamente código fuente, configuración y tokenizador (kumru-tokenizer). Los pesos no se han publicado porque el entrenamiento no ha finalizado; el autor indica que subirá el modelo entrenado y un checkpoint de optimizador reanudable cuando el entrenamiento termine o se detenga de forma controlada. Esto implica que el modelo no es cargable de forma plug-and-play y que no existe ninguna validación con benchmarks.
 
@@ -89,6 +89,6 @@ La comparación de rendimiento, contexto efectivo e idiomas no es posible porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efe2898/caba-v1-scratch-2xt4
+- Modelo en Hugging Face: https://huggingface.co/Efe2898/caba-v1-scratch-2xt4
 
 No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios de dataset, demos o espacios asociados.

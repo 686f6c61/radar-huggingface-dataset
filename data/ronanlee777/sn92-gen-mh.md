@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ronanlee777/sn92-gen-mh` es un modelo de decisión (decision model) publicado en HuggingFace, resultado de una fusión en el espacio de pesos (weight-space merge) de tres entradas públicas del ecosistema REAX SN92. El autor, ronanlee777, no ha entrenado el modelo: todos los cambios aprendidos provienen de los tres modelos padre, que comparten la misma base `baselabs/mammoth-1`. El resultado tiene 26.085.330.160 parámetros (unos 26,1 mil millones) y se distribuye en formato safetensors con un repositorio de 52,2 GB.
+`ronanlee777/sn92-gen-mh` es un modelo de decisión (decision model) publicado en Hugging Face, resultado de una fusión en el espacio de pesos (weight-space merge) de tres entradas públicas del ecosistema REAX SN92. El autor, ronanlee777, no ha entrenado el modelo: todos los cambios aprendidos provienen de los tres modelos padre, que comparten la misma base `baselabs/mammoth-1`. El resultado tiene 26.085.330.160 parámetros (unos 26,1 mil millones) y se distribuye en formato safetensors con un repositorio de 52,2 GB.
 
 La relevancia de esta ficha es doble. Por un lado, documenta una técnica concreta de merging mediante aritmética de tareas (task arithmetic) con coeficientes ponderados por padre (0,7, 0,9 y 0,4) y una renormalización cuidadosa del readout de decisión para preservar la escala de logits de cada padre bajo la temperatura copiada. Por otro, ejemplifica un patrón habitual en el ecosistema open source: modelos derivados que heredan licencias permisivas (MIT) y que deben evaluarse con cautela porque no aportan datos de entrenamiento ni benchmarks propios.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ronanlee777/sn92-gen-mh
+- Modelo en Hugging Face: https://huggingface.co/ronanlee777/sn92-gen-mh
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Padre 1: https://huggingface.co/danyloooah/sn92-generalist-m1-v3a
 - Padre 2: https://huggingface.co/gurujustin/sn92-gen-m1b

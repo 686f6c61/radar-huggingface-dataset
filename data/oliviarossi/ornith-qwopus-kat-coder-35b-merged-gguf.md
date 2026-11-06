@@ -83,7 +83,7 @@ Los tres modelos comparables comparten el mismo backbone y tamano, diferenciando
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged-GGUF
 - Modelo base en safetensors: https://huggingface.co/OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged
 - Modelo padre Qwopus-KAT-Coder: https://huggingface.co/OliviaRossi/Qwopus-KAT-Coder-35B-Merged-GGUF
 - Web de Ornith AI: https://ornith.online/

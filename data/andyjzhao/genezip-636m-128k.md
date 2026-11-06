@@ -75,6 +75,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andyjzhao/GeneZip-636M-128K
+- Hugging Face: https://huggingface.co/andyjzhao/GeneZip-636M-128K
 - Fuente de pesos fijada: https://huggingface.co/jzshared/GeneZip-7R-LT-32BPT-128K-100B-650M/tree/baf1cdefd5e7ef751191a1440a5b61d018cf6458/checkpoint-24414
 - Código GeneZip: https://github.com/AndyJZhao/GeneZip

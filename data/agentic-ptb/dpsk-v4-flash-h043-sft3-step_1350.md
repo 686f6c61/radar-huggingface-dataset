@@ -76,5 +76,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/dpsk-v4-flash.h043.sft3.step_1350](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h043.sft3.step_1350)
+- [Hugging Face: agentic-ptb/dpsk-v4-flash.h043.sft3.step_1350](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h043.sft3.step_1350)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

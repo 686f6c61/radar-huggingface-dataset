@@ -26,7 +26,7 @@ La relevancia de esta ficha es acotada: se trata de un fine-tune de una sola eje
 | Rango LoRA | 32 |
 | Datos de entrenamiento | 126 pares imagen-caption, 3 epocas, 5 repeticiones por imagen (1890 pasos) |
 | Tamano del repositorio | 0,2 GB |
-| Descargas / likes en HuggingFace | 0 descargas / 11 likes |
+| Descargas / likes en Hugging Face | 0 descargas / 11 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, la model card indica 126 pares imagen-caption, 3 epo
 - Generacion de imagenes text-to-image a traves del modelo base Qwen-Image-2.1, con el adaptador aplicado como modificador de estilo.
 - Transferencia de estilo fotografico concreto: estetica de fotografia casual tomada con telefono movil, activada con la palabra `lbxstyle`.
 - Control de intensidad del estilo mediante la escala LoRA (el autor sugiere 0,8 como punto de partida).
-- Compatibilidad con el pipeline `text-to-image` de HuggingFace y con plataformas que acepten LoRA en safetensors por URL directa (el ejemplo de la model card usa un endpoint tipo SpicyAPI).
+- Compatibilidad con el pipeline `text-to-image` de Hugging Face y con plataformas que acepten LoRA en safetensors por URL directa (el ejemplo de la model card usa un endpoint tipo SpicyAPI).
 - Composicion con el resto de capacidades del modelo base, incluyendo generacion y edicion de imagen, siempre que la plataforma de inferencia soporte el apilado de LoRA.
 - No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, vision de entrada, audio ni modo "thinking": el adaptador es exclusivamente de generacion de imagen.
 
@@ -56,7 +56,7 @@ En cuanto al entrenamiento, la model card indica 126 pares imagen-caption, 3 epo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas cuantitativas (FID, CLIP score, ImageReward ni comparaciones con otros adaptadores de estilo), y el repositorio de HuggingFace no registra evaluaciones. Cualquier valoracion del adaptador tendra que hacerse mediante comparacion visual propia a distintas escalas LoRA.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas cuantitativas (FID, CLIP score, ImageReward ni comparaciones con otros adaptadores de estilo), y el repositorio de Hugging Face no registra evaluaciones. Cualquier valoracion del adaptador tendra que hacerse mediante comparacion visual propia a distintas escalas LoRA.
 
 ## Requisitos de hardware
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / datos | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| 19nbrown/qwen-image-2.1-casual-phone-photo-style-lora | LoRA de estilo sobre Qwen-Image-2.1 | no disponible (repo de 0,2 GB, rango 32) | 126 pares imagen-caption, 3 epocas | Sin benchmarks publicados | no disponible | HuggingFace, 0 descargas, 11 likes |
-| Qwen/Qwen-Image-2.1 (modelo base) | DiT unificado de generacion y edicion de imagen | 7B en el componente de generacion visual, 32 capas single-stream | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace y GitHub de QwenLM |
+| 19nbrown/qwen-image-2.1-casual-phone-photo-style-lora | LoRA de estilo sobre Qwen-Image-2.1 | no disponible (repo de 0,2 GB, rango 32) | 126 pares imagen-caption, 3 epocas | Sin benchmarks publicados | no disponible | Hugging Face, 0 descargas, 11 likes |
+| Qwen/Qwen-Image-2.1 (modelo base) | DiT unificado de generacion y edicion de imagen | 7B en el componente de generacion visual, 32 capas single-stream | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face y GitHub de QwenLM |
 | Otros LoRA de estilo para Qwen-Image-2.1 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion disponible solo permite comparar el adaptador con su modelo base y no aporta datos sobre alternativas equivalentes de la misma categoria.
@@ -93,8 +93,8 @@ La informacion disponible solo permite comparar el adaptador con su modelo base 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/19nbrown/qwen-image-2.1-casual-phone-photo-style-lora
-- Modelo base Qwen-Image-2.1 en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo en Hugging Face: https://huggingface.co/19nbrown/qwen-image-2.1-casual-phone-photo-style-lora
+- Modelo base Qwen-Image-2.1 en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - Proyecto qwen-image-studio (ejecucion local optimizada): https://github.com/sanketshinde3001/qwen-image-studio
 - Ficha de registro en free2aitools: https://free2aitools.com/model/19nbrown/qwen-image-2.1-casual-phone-photo-style-lora

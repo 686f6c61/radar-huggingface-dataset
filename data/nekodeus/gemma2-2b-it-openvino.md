@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato / precisión | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| `Nekodeus/gemma2-2b-it-openvino` | 2,6B | 8192 | OpenVINO IR, INT8 weight-only | Gemma Terms of Use | Repositorio HuggingFace, 0 descargas |
-| `google/gemma-2-2b-it` | 2,6B | 8192 | Safetensors, precisión original del modelo base | Gemma Terms of Use | Modelo oficial, acceso condicionado en HuggingFace |
+| `Nekodeus/gemma2-2b-it-openvino` | 2,6B | 8192 | OpenVINO IR, INT8 weight-only | Gemma Terms of Use | Repositorio Hugging Face, 0 descargas |
+| `google/gemma-2-2b-it` | 2,6B | 8192 | Safetensors, precisión original del modelo base | Gemma Terms of Use | Modelo oficial, acceso condicionado en Hugging Face |
 | `Qwen/Qwen2.5-1.5B-Instruct` | 1,54B | 32 768 | Safetensors y GGUF | Apache 2.0 | Modelo oficial con amplia disponibilidad |
 | `meta-llama/Llama-3.2-3B-Instruct` | 3,2B | 128 000 | Safetensors y GGUF | Llama 3.2 Community License | Modelo oficial, acceso condicionado |
 
@@ -97,7 +97,7 @@ Los datos de Qwen2.5-1.5B-Instruct y Llama 3.2 3B Instruct provienen de sus fich
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nekodeus/gemma2-2b-it-openvino
+- Modelo en Hugging Face: https://huggingface.co/Nekodeus/gemma2-2b-it-openvino
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Términos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Resultados de búsqueda web: no se encontraron enlaces técnicos relevantes; los resultados devueltos correspondían a sitios de noticias Pravda sin relación con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eric-z2/WL-no-context-qwen-14b-fold_3` es un repositorio de pesos publicado en HuggingFace por el usuario `eric-z2` el 21 de septiembre de 2026, etiquetado con las librerías `transformers` y `safetensors`. La model card asociada es la plantilla automática que genera HuggingFace al subir un modelo: no contiene descripción, autoría real, tipo de modelo, idiomas, licencia ni procedencia de los datos de entrenamiento. Todos los campos relevantes aparecen como `[More Information Needed]`.
+`eric-z2/WL-no-context-qwen-14b-fold_3` es un repositorio de pesos publicado en Hugging Face por el usuario `eric-z2` el 21 de septiembre de 2026, etiquetado con las librerías `transformers` y `safetensors`. La model card asociada es la plantilla automática que genera Hugging Face al subir un modelo: no contiene descripción, autoría real, tipo de modelo, idiomas, licencia ni procedencia de los datos de entrenamiento. Todos los campos relevantes aparecen como `[More Information Needed]`.
 
 El propio identificador del repositorio aporta las únicas pistas disponibles: `qwen-14b` sugiere una adaptación o fine-tune sobre un modelo de la familia Qwen con aproximadamente 14.000 millones de parámetros; `no-context` sugiere una variante de evaluación o entrenamiento sin contexto; `WL` y `fold_3` apuntan a un esquema de validación cruzada por pliegues, habitual en experimentos académicos de investigación. Ninguna de estas interpretaciones está confirmada por el autor en la información disponible.
 
@@ -52,7 +52,7 @@ Dado que no hay informacion verificable sobre el modelo, los siguientes casos de
 - Analisis de ablaciones sin contexto: el sufijo `no-context` sugiere comparar el rendimiento del modelo en tareas de continuacion o clasificacion cuando se elimina el contexto de entrada. Serviria para medir cuanto depende el modelo del contexto previo.
 - Punto de partida para fine-tuning adicional: si se trata de un adaptador, podria combinarse con su modelo base para experimentar con ajustes posteriores, siempre que se identifique y respete la licencia del modelo base.
 - Evaluacion de tecnicas de watermarking o deteccion: la abreviatura `WL` en el nombre podria corresponder a un experimento de marca de agua, en cuyo caso el modelo serviria como sujeto de pruebas de deteccion, no como modelo de produccion.
-- Estudio de artefactos de publicacion en HuggingFace: el repositorio es un ejemplo representativo de modelos subidos sin model card, util para analizar la trazabilidad y reproducibilidad en el ecosistema.
+- Estudio de artefactos de publicacion en Hugging Face: el repositorio es un ejemplo representativo de modelos subidos sin model card, util para analizar la trazabilidad y reproducibilidad en el ecosistema.
 - Inferencia local exploratoria: unicamente con fines de inspeccion tecnica, cargando los pesos en `transformers` para comprobar si el checkpoint es completo, que configuracion usa y si genera texto coherente.
 - Docencia sobre ciclo de vida de modelos: puede usarse como caso negativo en formacion sobre buenas practicas de publicacion de modelos (licencia, model card, pesos completos, evaluacion).
 
@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no permite establecer una comparativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_3
-- Perfil del autor en HuggingFace: https://huggingface.co/eric-z2
+- Repositorio en Hugging Face: https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_3
+- Perfil del autor en Hugging Face: https://huggingface.co/eric-z2
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.
 - Referencia citada en la plantilla de la model card (no especifica del modelo): Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700

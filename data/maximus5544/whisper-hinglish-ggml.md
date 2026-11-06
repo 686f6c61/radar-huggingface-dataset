@@ -72,6 +72,6 @@ No se dispone de información suficiente para una comparativa rigurosa. Como ref
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maximus5544/whisper-hinglish-ggml
+- Repositorio Hugging Face: https://huggingface.co/maximus5544/whisper-hinglish-ggml
 - Modelo base (fine-tuning original): https://huggingface.co/shunyalabs/zero-stt-hinglish
 - Runtime whisper.cpp: https://github.com/ggerganov/whisper.cpp

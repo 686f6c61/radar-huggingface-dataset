@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IceByte0x/GLM-5.3-CYBERSECURITY-FP8 es un modelo de lenguaje de 753.000 millones de parámetros, publicado en HuggingFace por IceByte0x y presentado como un lanzamiento del proyecto dealignai. Se trata de una variante “abliterada” (con las respuestas de rechazo eliminadas) del modelo GLM-5.3, centrada específicamente en ciberseguridad ofensiva: red teaming, pentesting, desarrollo de exploits, ingeniería inversa, evasión, phishing, ataques de credenciales y análisis de malware. No es un “uncensor” genérico: la reducción de negativas se aplica sobre el dominio de ciberseguridad, no sobre otras categorías como armas, química o biología.
+IceByte0x/GLM-5.3-CYBERSECURITY-FP8 es un modelo de lenguaje de 753.000 millones de parámetros, publicado en Hugging Face por IceByte0x y presentado como un lanzamiento del proyecto dealignai. Se trata de una variante “abliterada” (con las respuestas de rechazo eliminadas) del modelo GLM-5.3, centrada específicamente en ciberseguridad ofensiva: red teaming, pentesting, desarrollo de exploits, ingeniería inversa, evasión, phishing, ataques de credenciales y análisis de malware. No es un “uncensor” genérico: la reducción de negativas se aplica sobre el dominio de ciberseguridad, no sobre otras categorías como armas, química o biología.
 
 La arquitectura es `glm_moe_dsa`, un modelo Mixture of Experts (MoE) con atención dispersa y 78 capas, que parte de la cuantización FP8 de `JANGQ-AI/GLM-5.3-FP8`, que a su vez se basa en `zai-org/GLM-5.3`. Los pesos están en FP8, lo que ofrece velocidad nativa en GPUs Hopper (H100/H200). Aunque el modelo base soporta teóricamente hasta 1M de contexto, en la práctica con vLLM se recomienda una ventana de 131.072 tokens (131K) en una configuración TP8 sobre 8× H200. La modificación de pesos, según la model card, es real: no emplea fine-tuning, LoRA, hooks en runtime ni trucos de prompt.
 
@@ -106,11 +106,11 @@ No se dispone de benchmarks comparativos directos en la información proporciona
 - MTP: no es funcional en vLLM stock. Para activarlo se necesita un fork concreto y una configuración no estándar.
 - Copyright: la reproducción verbatim de material protegido sigue siendo rechazada con un soft-refuse, por lo que no debe usarse para este fin.
 - La licencia MIT permite el uso comercial, pero la responsabilidad legal y ética del uso del modelo en actividades ofensivas recae en el usuario. No hay garantías de ningún tipo.
-- El modelo es muy reciente: tiene 0 descargas y 1 like en HuggingFace. Las pruebas de despliegue documentadas proceden de un único usuario, no de una suite independiente de validación.
+- El modelo es muy reciente: tiene 0 descargas y 1 like en Hugging Face. Las pruebas de despliegue documentadas proceden de un único usuario, no de una suite independiente de validación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IceByte0x/GLM-5.3-CYBERSECURITY-FP8
+- Modelo en Hugging Face: https://huggingface.co/IceByte0x/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base FP8: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Modelo original de Z.ai: https://huggingface.co/zai-org/GLM-5.3
 - Modelo hermano uncensor: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

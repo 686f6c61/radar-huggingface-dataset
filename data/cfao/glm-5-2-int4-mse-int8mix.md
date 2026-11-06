@@ -74,7 +74,7 @@ No disponible. No se han encontrado comparaciones directas con otras cuantizacio
 
 ## Enlaces
 
-- [HuggingFace: cfao/GLM-5.2-Int4-MSE-Int8Mix](https://huggingface.co/cfao/GLM-5.2-Int4-MSE-Int8Mix)
+- [Hugging Face: cfao/GLM-5.2-Int4-MSE-Int8Mix](https://huggingface.co/cfao/GLM-5.2-Int4-MSE-Int8Mix)
 - [Modelo base: zai-org/GLM-5.2-FP8](https://huggingface.co/zai-org/GLM-5.2-FP8)
 - [Tensores donantes: QuantTrio/GLM-5.2-Int4-Int8Mix](https://huggingface.co/QuantTrio/GLM-5.2-Int4-Int8Mix)
 - [Fork de sglang (kvcache-ai/sglang)](https://github.com/kvcache-ai/sglang)

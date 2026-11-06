@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ENZOFREITAS/matching` es un repositorio de HuggingFace que contiene una implementación propia y mínima de una arquitectura EfficientFormer orientada a tareas de *matching* (emparejamiento). Lo publica el usuario ENZOFREITAS bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos listos para producción: el propio autor lo describe como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para *smoke tests*.
+`ENZOFREITAS/matching` es un repositorio de Hugging Face que contiene una implementación propia y mínima de una arquitectura EfficientFormer orientada a tareas de *matching* (emparejamiento). Lo publica el usuario ENZOFREITAS bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos listos para producción: el propio autor lo describe como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para *smoke tests*.
 
 La relevancia de este repositorio es, por tanto, limitada y de carácter experimental. El peso real del artefacto está en el código (`train.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`), no en los pesos. El checkpoint `model.safetensors` registra 24.832 parámetros totales, un tamaño coherente con una variante *tiny* de EfficientFormer y no con un modelo capaz de resolver tareas reales sin entrenamiento previo.
 
-No hay información sobre el pipeline de HuggingFace, los idiomas soportados ni resultados de benchmarks. Cualquier uso en producción requeriría entrenar el modelo desde cero con datos propios y evaluarlo con un protocolo riguroso, tal como recomienda el propio autor en la model card.
+No hay información sobre el pipeline de Hugging Face, los idiomas soportados ni resultados de benchmarks. Cualquier uso en producción requeriría entrenar el modelo desde cero con datos propios y evaluarlo con un protocolo riguroso, tal como recomienda el propio autor en la model card.
 
 ## Especificaciones tecnicas
 
@@ -84,5 +84,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ENZOFREITAS/matching
+- Repositorio en Hugging Face: https://huggingface.co/ENZOFREITAS/matching
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -93,6 +93,6 @@ No se dispone de datos de benchmarks de calidad que permitan comparar el rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ununununununununununununununununununun/qwen3-4b-instruct-2507-phi-lattice-v2
+- Repositorio Hugging Face: https://huggingface.co/ununununununununununununununununununun/qwen3-4b-instruct-2507-phi-lattice-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen

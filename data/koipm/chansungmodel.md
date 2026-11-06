@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Koipm/Chansungmodel aparece publicado en HuggingFace bajo el identificador `Koipm/Chansungmodel`, creado por el usuario Koipm. La informacion disponible en la ficha del repositorio es minima: no se incluye descripcion del modelo, arquitectura, parametros, ni datos de entrenamiento. La unica metadata presente indica una licencia desconocida y una fecha de creacion el 7 de septiembre de 2026. No se han publicado descargas, likes ni pipeline asociado.
+El modelo Koipm/Chansungmodel aparece publicado en Hugging Face bajo el identificador `Koipm/Chansungmodel`, creado por el usuario Koipm. La informacion disponible en la ficha del repositorio es minima: no se incluye descripcion del modelo, arquitectura, parametros, ni datos de entrenamiento. La unica metadata presente indica una licencia desconocida y una fecha de creacion el 7 de septiembre de 2026. No se han publicado descargas, likes ni pipeline asociado.
 
 En la actualidad no existe documentacion tecnica, model card con contenido o enlaces a papers, blogs o demos. Las busquedas web no arrojan resultados relevantes sobre este modelo. Por tanto, no es posible determinar que problema resuelve, cual es su arquitectura, su tamano o su contexto. Cualquier uso en produccion o evaluacion requeriria contactar con el autor o descargar los pesos para inspeccionarlos directamente.
 
@@ -68,7 +68,7 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Koipm/Chansungmodel
+- Hugging Face: https://huggingface.co/Koipm/Chansungmodel
 - Model card del autor: no disponible (el README no contiene informacion adicional).
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.

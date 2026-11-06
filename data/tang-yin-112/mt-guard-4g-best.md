@@ -33,7 +33,7 @@ La innovacion principal reside en la formulacion de la tarea: el modelo no respo
 - Atribucion a nivel de span: devuelve los tramos no soportados copiados de forma literal, no parafraseados.
 - Salida estructurada: genera JSON con la clave `unsupported` (lista, posiblemente vacia).
 - Verificacion de groundedness en contextos RAG: comparacion entre pasaje fuente y respuesta generada.
-- Comportamiento conversacional (etiqueta `conversational` en HuggingFace).
+- Comportamiento conversacional (etiqueta `conversational` en Hugging Face).
 - Compatible con endpoints (`endpoints_compatible`) para despliegue como servicio.
 - Tool calling / function calling: no documentado en la informacion disponible.
 - Soporte de agentes y multi-step reasoning: no documentado.
@@ -94,7 +94,7 @@ No se han publicado en la informacion disponible comparaciones con otros modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tang-yin-112/mt-guard-4g-best
+- Repositorio Hugging Face: https://huggingface.co/Tang-yin-112/mt-guard-4g-best
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorios de adaptadores (patron indicado en la model card): `Tang-yin-112/mt-guard-4g-*-lora`
 - Ficheros de configuracion y evaluacion citados: `run_config.json`, `evaluation.json` (en el repositorio)

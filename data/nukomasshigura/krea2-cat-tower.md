@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea2 Cat Tower es un ajuste fino (fine-tune) del modelo de difusion texto-a-imagen Krea 2, publicado por el usuario nukomasshigura en HuggingFace. El modelo parte del checkpoint base `krea/Krea-2-Raw` y se ha entrenado con el objetivo explicito de reforzar el estilo anime, segun indica el propio autor en la model card. No es un modelo de lenguaje: es un generador de imagenes, por lo que conceptos como ventana de contexto o parametros activos no aplican de la misma forma que en un LLM.
+Krea2 Cat Tower es un ajuste fino (fine-tune) del modelo de difusion texto-a-imagen Krea 2, publicado por el usuario nukomasshigura en Hugging Face. El modelo parte del checkpoint base `krea/Krea-2-Raw` y se ha entrenado con el objetivo explicito de reforzar el estilo anime, segun indica el propio autor en la model card. No es un modelo de lenguaje: es un generador de imagenes, por lo que conceptos como ventana de contexto o parametros activos no aplican de la misma forma que en un LLM.
 
 El modelo se distribuye bajo la licencia comunitaria krea-2-community-license y su repositorio ocupa 93,6 GB, un tamano coherente con un despliegue multimodal completo (modelo de difusion mas encoder de texto Qwen3-VL 4B, VAE y LoRA Turbo empaquetados por separado en el repositorio oficial de Comfy-Org). No tiene descargas ni likes registrados en el momento de la consulta, y no publica cifras de benchmarks ni una lista de idiomas soportados.
 
@@ -18,7 +18,7 @@ Su relevancia practica esta en que ofrece una via sencilla de obtener ilustracio
 | Longitud de contexto | no aplicable; la entrada es un prompt de texto en lenguaje natural |
 | Tipos de cuantizacion | bf16 y fp8_scaled para el encoder de texto; variantes INT8 ConvRot e INT4 ConvRot del modelo de difusion |
 | Idiomas soportados | no disponible (la model card esta en ingles y los prompts de ejemplo son en ingles) |
-| Licencia | krea-2-community-license (etiquetada como "other" en HuggingFace) |
+| Licencia | krea-2-community-license (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 | Modelo base | krea/Krea-2-Raw (fine-tune) |
 | Encoder de texto | Qwen3-VL 4B (qwen3vl_4b_bf16 o qwen3vl_4b_fp8_scaled) |
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Relacion | Parametros | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea2 Cat Tower | Fine-tune de Krea-2-Raw orientado a anime | no disponible | 1024-2048 px | krea-2-community-license | HuggingFace y Civitai |
-| krea/Krea-2-Raw | Modelo base sobre el que se entrena | no disponible | no disponible en la informacion | krea-2-community-license | HuggingFace |
+| Krea2 Cat Tower | Fine-tune de Krea-2-Raw orientado a anime | no disponible | 1024-2048 px | krea-2-community-license | Hugging Face y Civitai |
+| krea/Krea-2-Raw | Modelo base sobre el que se entrena | no disponible | no disponible en la informacion | krea-2-community-license | Hugging Face |
 | CatTower (NoobAI XL) | Fuente de parte del dataset; checkpoint anime previo | no disponible | no disponible en la informacion | no disponible en la informacion | Civitai |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos; la comparativa se limita a la relacion de derivacion y al ecosistema de despliegue.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos; la compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nukomasshigura/Krea2-Cat-Tower
+- Hugging Face: https://huggingface.co/nukomasshigura/Krea2-Cat-Tower
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Licencia: https://www.krea.ai/krea-2-licensing
 - Pagina en Civitai: https://civitai.red/models/2805913/krea2-cat-tower

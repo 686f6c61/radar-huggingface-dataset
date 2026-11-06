@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyber-qwen3-8b-agent-MLX-4bit | 8,19 B | no disponible | MLX 4-bit | no disponible | HuggingFace (0 descargas) |
-| Qwen3-8B (base) | ~8,2 B | no disponible en esta ficha | safetensors | no disponible en esta ficha | HuggingFace |
-| Qwen2.5-7B-Instruct | ~7,6 B | 32.768 tokens (segun documentacion publica de Qwen) | safetensors, GGUF | Apache 2.0 (segun documentacion publica) | HuggingFace |
-| Llama 3.1 8B Instruct | ~8 B | 128.000 tokens (segun documentacion publica de Meta) | safetensors, GGUF | Llama 3.1 Community License | HuggingFace |
+| cyber-qwen3-8b-agent-MLX-4bit | 8,19 B | no disponible | MLX 4-bit | no disponible | Hugging Face (0 descargas) |
+| Qwen3-8B (base) | ~8,2 B | no disponible en esta ficha | safetensors | no disponible en esta ficha | Hugging Face |
+| Qwen2.5-7B-Instruct | ~7,6 B | 32.768 tokens (segun documentacion publica de Qwen) | safetensors, GGUF | Apache 2.0 (segun documentacion publica) | Hugging Face |
+| Llama 3.1 8B Instruct | ~8 B | 128.000 tokens (segun documentacion publica de Meta) | safetensors, GGUF | Llama 3.1 Community License | Hugging Face |
 
 La comparativa con Qwen3-8B base es la mas directa, ya que este repositorio es una cuantizacion del mismo. Frente a Qwen2.5-7B-Instruct y Llama 3.1 8B, la diferencia principal es el formato MLX 4-bit, orientado exclusivamente a Apple Silicon, y la ausencia de documentacion sobre licencia y rendimiento.
 
@@ -83,7 +83,7 @@ La comparativa con Qwen3-8B base es la mas directa, ya que este repositorio es u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/remix3030303/cyber-qwen3-8b-agent-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/remix3030303/cyber-qwen3-8b-agent-MLX-4bit
 - Documentacion de MLX: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible
 - Demo o espacio asociado: no disponible

@@ -92,9 +92,9 @@ Las tasas numéricas concretas no se incluyen en la informacion proporcionada; d
 
 | Modelo / artefacto | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mild-rgb/lora-factory` (adaptadores sobre Qwen3-8B, rank 8) | 8B base + adaptadores de bajo rango | el del modelo base (no especificado) | Coleccion de LoRAs de investigacion | no disponible | Publico en HuggingFace, 0 descargas |
+| `mild-rgb/lora-factory` (adaptadores sobre Qwen3-8B, rank 8) | 8B base + adaptadores de bajo rango | el del modelo base (no especificado) | Coleccion de LoRAs de investigacion | no disponible | Publico en Hugging Face, 0 descargas |
 | Variantes de rank 16/32/64 del mismo repo | 8B base + adaptadores de mayor rango | el del modelo base | Coleccion de LoRAs de investigacion | no disponible | Incluidas en el mismo repo |
-| Qwen/Qwen3-8B (modelo base, sin adaptador) | 8B | no disponible en la informacion proporcionada | LLM denso | consultar la model card del base | Publico en HuggingFace |
+| Qwen/Qwen3-8B (modelo base, sin adaptador) | 8B | no disponible en la informacion proporcionada | LLM denso | consultar la model card del base | Publico en Hugging Face |
 | Fine-tuning completo sobre el mismo dataset (no publicado en este repo) | 8B | no disponible | LLM denso ajustado | no aplica | No disponible |
 
 No se han identificado en la informacion proporcionada otros repositorios publicos directamente comparables (factorias masivas de LoRAs para estudios de generalizacion espuria). La comparacion relevante es interna: adaptador frente a base, y rank 8 frente a ranks superiores.
@@ -114,7 +114,7 @@ No se han identificado en la informacion proporcionada otros repositorios public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mild-rgb/lora-factory
+- Repositorio en Hugging Face: https://huggingface.co/mild-rgb/lora-factory
 - Codigo y write-up: https://github.com/mild-rgb/lora-factory
 - Dataset de origen (JCocola): https://github.com/JCocola/weird-generalization-and-inductive-backdoors
 - Referencia bibliografica: Betley et al. (2025), *Weird Generalization and Inductive Backdoors* (sin URL en la informacion disponible)

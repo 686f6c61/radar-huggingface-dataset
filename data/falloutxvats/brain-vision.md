@@ -4,7 +4,7 @@
 
 brain-vision es un modelo de lenguaje visual (image-text-to-text) publicado por falloutxvats, que ofrece una cuantizacion GGUF Q4_K_M para inferencia multimodal local. No es un modelo entrenado desde cero, sino una redistribucion de una version "abliterated" del modelo Qwen/Qwen3-VL-8B-Instruct, procedente del repositorio de mradermacher. El objetivo es permitir el uso de un asistente multimodal (imagenes y texto) en entornos locales sin necesidad de infraestructura cloud.
 
-El modelo tiene 8.190.735.360 parametros en formato safetensors y se distribuye como un unico archivo GGUF de aproximadamente 5.0 GB. A fecha de la informacion disponible, no presenta descargas ni me gusta en HuggingFace, por lo que su adopcion es muy limitada. La documentacion disponible es minima y no incluye datos de contexto, idiomas ni benchmarks.
+El modelo tiene 8.190.735.360 parametros en formato safetensors y se distribuye como un unico archivo GGUF de aproximadamente 5.0 GB. A fecha de la informacion disponible, no presenta descargas ni me gusta en Hugging Face, por lo que su adopcion es muy limitada. La documentacion disponible es minima y no incluye datos de contexto, idiomas ni benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -72,6 +72,6 @@ No hay datos de rendimiento ni benchmarks para comparar de forma objetiva. La co
 
 ## Enlaces
 
-- HuggingFace: [falloutxvats/brain-vision](https://huggingface.co/falloutxvats/brain-vision)
+- Hugging Face: [falloutxvats/brain-vision](https://huggingface.co/falloutxvats/brain-vision)
 - Modelo base: [Qwen/Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
 - Fuente GGUF: [mradermacher/Qwen3-VL-8B-Instruct-abliterated-GGUF](https://huggingface.co/mradermacher/Qwen3-VL-8B-Instruct-abliterated-GGUF)

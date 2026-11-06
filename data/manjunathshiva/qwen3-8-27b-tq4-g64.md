@@ -85,6 +85,6 @@ No se dispone de datos suficientes para una comparativa rigurosa. La model card 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/manjunathshiva/Qwen3.8-27B-tq4-g64
+- Repositorio Hugging Face: https://huggingface.co/manjunathshiva/Qwen3.8-27B-tq4-g64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta TurboQuant-MLX: https://github.com/manjunathshiva/turboquant-mlx

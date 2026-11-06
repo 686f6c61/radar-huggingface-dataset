@@ -106,7 +106,7 @@ Los siguientes valores son estimaciones derivadas del tamaño de los ficheros pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Masterx/chatterbox-nano-ONNX
+- Modelo en Hugging Face: https://huggingface.co/Masterx/chatterbox-nano-ONNX
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox-nano
 - Export oficial de referencia (Turbo ONNX): https://huggingface.co/ResembleAI/chatterbox-turbo-ONNX
 - Repositorio upstream de Resemble AI: https://github.com/resemble-ai/chatterbox

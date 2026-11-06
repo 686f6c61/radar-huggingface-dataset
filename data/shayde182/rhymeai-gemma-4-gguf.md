@@ -6,7 +6,7 @@ RhymeAI Gemma 4 (E2B / E4B) es una familia de ajustes finos LoRA sobre los model
 
 La relevancia de esta ficha esta en su naturaleza de artefacto de produccion: no es un modelo generalista, sino un ajuste orientado a cuatro tareas de escritura (sugerencia de siguiente linea con rima, reescritura de pasajes, reescritura de palabra unica y sinonimos). El autor reporta mejoras muy grandes en el cumplimiento de formato y en la tasa de rima correcta respecto a los modelos base, lo que ilustra el impacto de un ajuste LoRA pequeno (r=16) cuando se entrena con datos verificados automaticamente.
 
-El repositorio tiene 153 descargas y 0 likes en HuggingFace, con licencia Apache 2.0, y fue creado el 8 de julio de 2026 y actualizado el 6 de octubre de 2026. El dato de parametros via safetensors en el repo es 25.337.856, coherente con el tamano de los adaptadores LoRA mas que con el modelo base completo, cuyo recuento no se detalla en la informacion disponible.
+El repositorio tiene 153 descargas y 0 likes en Hugging Face, con licencia Apache 2.0, y fue creado el 8 de julio de 2026 y actualizado el 6 de octubre de 2026. El dato de parametros via safetensors en el repo es 25.337.856, coherente con el tamano de los adaptadores LoRA mas que con el modelo base completo, cuyo recuento no se detalla en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ Como referencia de categoria, cabria comparar con otros asistentes de escritura 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shayde182/rhymeai-gemma-4-gguf
+- Hugging Face: https://huggingface.co/Shayde182/rhymeai-gemma-4-gguf
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it
 - Paper, blog, repositorio o demo adicionales: no disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo (los resultados obtenidos versaban sobre el fruto del jacquier y recetas de cocina, sin relacion con esta ficha).

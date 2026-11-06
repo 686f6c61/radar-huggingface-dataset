@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justinchuby/Muse-Glimmer-30B-ONNX-INT4-CUDA
+- Repositorio Hugging Face: https://huggingface.co/justinchuby/Muse-Glimmer-30B-ONNX-INT4-CUDA
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Página oficial de Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Receta vLLM: https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B

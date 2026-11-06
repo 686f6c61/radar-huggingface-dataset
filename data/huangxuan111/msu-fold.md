@@ -4,7 +4,7 @@
 
 MSU-Fold es un conjunto de checkpoints para políticas robóticas de plegado de ropa, presentado por el autor huangxuan111 bajo el título "MSU-Fold: Unified Multi-scale Heatmap Decoding and Language-grounded Skill Decomposition for Multi-step Robotic Cloth Folding". No se trata de un modelo de lenguaje ni de un modelo multimodal generativo, sino de una política de imitación condicionada por lenguaje que predice mapas de calor de tipo pick/place para controlar uno o dos brazos robóticos en tareas de manipulación deformable.
 
-El repositorio de HuggingFace (3,1 GB) contiene dos checkpoints en formato PyTorch: `unimanual_1000demos_last.pth`, entrenado sobre el benchmark SoftGym de un solo brazo (CornerFold, TriangleFold, StraightFold, TshirtFold, TrousersFold) con 1000 demostraciones por tarea y 30 épocas, y `bimanual_1000demos_best.pth`, entrenado sobre un benchmark bimanual de pasos mixtos (SquareHalfFold, SquareCornerFold, TshirtFold, TrousersFold) con 150 demostraciones por tarea y 40 épocas. Ambos comparten arquitectura.
+El repositorio de Hugging Face (3,1 GB) contiene dos checkpoints en formato PyTorch: `unimanual_1000demos_last.pth`, entrenado sobre el benchmark SoftGym de un solo brazo (CornerFold, TriangleFold, StraightFold, TshirtFold, TrousersFold) con 1000 demostraciones por tarea y 30 épocas, y `bimanual_1000demos_best.pth`, entrenado sobre un benchmark bimanual de pasos mixtos (SquareHalfFold, SquareCornerFold, TshirtFold, TrousersFold) con 150 demostraciones por tarea y 40 épocas. Ambos comparten arquitectura.
 
 Su relevancia es fundamentalmente investigadora: propone una descomposición de habilidades guiada por instrucciones de lenguaje y una cabeza única compartida de heatmaps pick/place que sirve tanto para pasos unimanuales como bimanuales, con el número de picos extraídos determinado por cada paso. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no incluye resultados numéricos de benchmarks en la model card.
 
@@ -68,11 +68,11 @@ No se dispone de datos verificados de los modelos comparables en la informacion 
 
 | Modelo | Parametros | Contexto / condicionamiento | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MSU-Fold | No disponible | Condicionado por instruccion de skill; sin ventana de contexto textual | Heatmaps pick/place multi-pico | MIT | Checkpoints `.pth` en HuggingFace |
+| MSU-Fold | No disponible | Condicionado por instruccion de skill; sin ventana de contexto textual | Heatmaps pick/place multi-pico | MIT | Checkpoints `.pth` en Hugging Face |
 | Diffusion Policy | No disponible | Condicionado por observacion; sin lenguaje en la variante base | Trayectorias de accion por difusion | No disponible | Implementaciones publicas en repositorios de investigacion |
 | ACT / Action Chunking Transformer | No disponible | Condicionado por observacion; sin lenguaje en la variante base | Fragmentos de accion (action chunks) | No disponible | Implementaciones publicas en repositorios de investigacion |
-| OpenVLA | No disponible | Modelo vision-language-action con instrucciones en lenguaje natural | Acciones discretizadas | No disponible | Pesos publicos en HuggingFace |
-| Octo | No disponible | Politica transformer generalista con condicionamiento por objetivo | Acciones continuas | No disponible | Pesos publicos en HuggingFace |
+| OpenVLA | No disponible | Modelo vision-language-action con instrucciones en lenguaje natural | Acciones discretizadas | No disponible | Pesos publicos en Hugging Face |
+| Octo | No disponible | Politica transformer generalista con condicionamiento por objetivo | Acciones continuas | No disponible | Pesos publicos en Hugging Face |
 
 La diferencia principal de MSU-Fold frente a las alternativas de la tabla es su enfasis en una cabeza unica de heatmaps que cubre pasos unimanuales y bimanuales, y en la descomposicion de habilidades guiada por lenguaje, en lugar de la prediccion directa de trayectorias o de acciones continuas.
 
@@ -91,7 +91,7 @@ La diferencia principal de MSU-Fold frente a las alternativas de la tabla es su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huangxuan111/MSU-Fold
+- Modelo en Hugging Face: https://huggingface.co/huangxuan111/MSU-Fold
 - Repositorio de codigo: https://github.com/hua-369/MSU-Fold
 - Datasets: https://huggingface.co/datasets/huangxuan111/MSU-Fold-datasets
 - Paper: no disponible (la model card menciona el titulo del trabajo "MSU-Fold: Unified Multi-scale Heatmap Decoding and Language-grounded Skill Decomposition for Multi-step Robotic Cloth Folding", pero no enlaza ninguna publicacion)

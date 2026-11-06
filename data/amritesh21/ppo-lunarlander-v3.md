@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Amritesh21/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, utilizando la libreria stable-baselines3. Lo publica el usuario Amritesh21 en HuggingFace Hub y esta pensado para resolver la tarea de aterrizaje controlado de una nave en una plataforma, un problema clasico de control con acciones discretas y recompensa densa.
+`Amritesh21/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, utilizando la libreria stable-baselines3. Lo publica el usuario Amritesh21 en Hugging Face Hub y esta pensado para resolver la tarea de aterrizaje controlado de una nave en una plataforma, un problema clasico de control con acciones discretas y recompensa densa.
 
 No se trata de un modelo de lenguaje ni de un modelo de vision: es una politica entrenada para un entorno concreto de Gymnasium. Su relevancia es fundamentalmente educativa y de investigacion, ya que sirve como referencia reproducible de un entrenamiento PPO completo, con la integracion estandar de stable-baselines3 con el Hub. La model card esta practicamente vacia: no incluye codigo de uso funcional (el bloque de ejemplo contiene un `TODO`) ni detalles del entrenamiento.
 
@@ -46,7 +46,7 @@ No se especifican en la model card el numero de parametros, la arquitectura de l
 - Linea base para comparativas de algoritmos: usar este agente PPO como referencia frente a DQN, A2C o SAC en el mismo entorno, midiendo recompensa media y varianza entre episodios.
 - Material docente de aprendizaje por refuerzo: ejemplo minimo y ejecutable de un entrenamiento PPO completo para explicar conceptos como politica, funcion de valor, ventaja y recorte de la actualizacion.
 - Ajuste fino de hiperparametros: punto de partida para experimentar con tasas de aprendizaje, coeficiente de entropia, numero de pasos por actualizacion o tamano de lote, y observar el impacto en la recompensa.
-- Pruebas de integracion de pipelines RL: validar flujos de publicacion y descarga de agentes entre stable-baselines3 y HuggingFace Hub en entornos de CI.
+- Pruebas de integracion de pipelines RL: validar flujos de publicacion y descarga de agentes entre stable-baselines3 y Hugging Face Hub en entornos de CI.
 - Transferencia a entornos similares: usar los pesos como inicializacion o como referencia cualitativa al abordar problemas de control con acciones discretas y dinamica similar.
 - Demostraciones de visualizacion: renderizar episodios del agente para mostrar el comportamiento aprendido en charlas, clases o articulos tecnicos.
 - Evaluacion de robustez: medir la varianza de la recompensa entre semillas y episodios para estudiar la estabilidad de la politica entrenada.
@@ -99,6 +99,6 @@ No se dispone de datos numericos de otros agentes en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Amritesh21/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Amritesh21/ppo-LunarLander-v3
 - stable-baselines3 (repositorio mencionado en la model card): https://github.com/DLR-RM/stable-baselines3
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a contenido no relacionado (episodios de anime), por lo que se descartan.

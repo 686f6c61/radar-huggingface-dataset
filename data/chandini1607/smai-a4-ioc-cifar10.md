@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chandini1607/smai-a4-ioc-cifar10` es un artefacto de modelo publicado en HuggingFace por el usuario chandini1607, descrito en su propia model card como la entrega de la "Assignment 4" de la asignatura SMAI (presumiblemente *Statistical Methods in Artificial Intelligence* o similar). No es un modelo de lenguaje: se trata de un clasificador de imágenes entrenado sobre CIFAR-10, el conjunto de referencia de 60.000 imágenes en color de 32x32 píxeles repartidas en 10 clases (50.000 de entrenamiento y 10.000 de test). El repositorio contiene únicamente tres ficheros: `model.pt` con el *state dictionary* de PyTorch, `config.json` con la configuración y `preprocess_stats.npz` con las estadísticas de preprocesado.
+`chandini1607/smai-a4-ioc-cifar10` es un artefacto de modelo publicado en Hugging Face por el usuario chandini1607, descrito en su propia model card como la entrega de la "Assignment 4" de la asignatura SMAI (presumiblemente *Statistical Methods in Artificial Intelligence* o similar). No es un modelo de lenguaje: se trata de un clasificador de imágenes entrenado sobre CIFAR-10, el conjunto de referencia de 60.000 imágenes en color de 32x32 píxeles repartidas en 10 clases (50.000 de entrenamiento y 10.000 de test). El repositorio contiene únicamente tres ficheros: `model.pt` con el *state dictionary* de PyTorch, `config.json` con la configuración y `preprocess_stats.npz` con las estadísticas de preprocesado.
 
 La relevancia de esta ficha es limitada y conviene decirlo con claridad: el modelo no incluye pipeline declarado, ni licencia, ni idiomas, ni documentación técnica sobre arquitectura, datos de entrenamiento o hiperparámetros. La model card advierte explícitamente de que "se requiere la arquitectura de modelo correspondiente para cargar el state dictionary", lo que significa que el artefacto no es autocontenido: sin el código del autor no se puede instanciar el modelo. El tamaño del repositorio (0,0 GB) apunta a unos pesos del orden de pocos megabytes, coherente con una red convolucional small para CIFAR-10.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta lo que se puede afirmar con la información disp
 | Tarea | clasificación de imágenes en 10 clases sobre CIFAR-10 |
 | Resolución de entrada | 32x32 píxeles, 3 canales (propia de CIFAR-10) |
 | Numero de clases | 10 (según el dataset CIFAR-10: avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco, camión) |
-| Tamano del repositorio | 0,0 GB (según HuggingFace) |
+| Tamano del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-17 |
 
@@ -79,7 +79,7 @@ No hay datos verificados de este modelo (ni parámetros, ni precisión, ni laten
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Comparacion |
 |---|---|---|---|---|---|
-| smai-a4-ioc-cifar10 | no disponible | 32x32x3, 10 clases | no disponible | HuggingFace, requiere código propio | — |
+| smai-a4-ioc-cifar10 | no disponible | 32x32x3, 10 clases | no disponible | Hugging Face, requiere código propio | — |
 | ResNet-18 (adaptado a CIFAR-10) | ~11,2 M | 32x32x3, 10 clases | MIT / BSD según implementación | amplia (torchvision) | referencia habitual; sin métricas comparables aquí |
 | VGG-11 (adaptado a CIFAR-10) | ~132 M | 32x32x3, 10 clases | BSD según implementación | amplia (torchvision) | mayor coste computacional; sin métricas comparables aquí |
 | WideResNet-28-10 | ~36,5 M | 32x32x3, 10 clases | MIT según implementación | repositorios de investigación | estado del arte clásico en CIFAR-10; sin métricas comparables aquí |
@@ -99,7 +99,7 @@ No hay datos verificados de este modelo (ni parámetros, ni precisión, ni laten
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chandini1607/smai-a4-ioc-cifar10
+- Modelo en Hugging Face: https://huggingface.co/chandini1607/smai-a4-ioc-cifar10
 - Paper: no disponible
 - Blog o documentación técnica: no disponible
 - Repositorio de código con la arquitectura: no disponible

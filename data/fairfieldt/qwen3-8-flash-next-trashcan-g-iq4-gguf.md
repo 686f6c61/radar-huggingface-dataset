@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-trashcan-G-iq4-GGUF es una cuantizacion no oficial del modelo Qwen3.8-Flash-Next de Qwen, publicada por el usuario fairfieldt en HuggingFace. El modelo base es un modelo de generacion de texto de gran tamano con 176.943.899.520 parametros totales, de los cuales 121.000 millones corresponden a parametros de expertos (arquitectura MoE) y 4.600 millones a parametros densos, lo que indica una arquitectura de mezcla de expertos con un subconjunto activo relativamente pequeno.
+Qwen3.8-Flash-Next-trashcan-G-iq4-GGUF es una cuantizacion no oficial del modelo Qwen3.8-Flash-Next de Qwen, publicada por el usuario fairfieldt en Hugging Face. El modelo base es un modelo de generacion de texto de gran tamano con 176.943.899.520 parametros totales, de los cuales 121.000 millones corresponden a parametros de expertos (arquitectura MoE) y 4.600 millones a parametros densos, lo que indica una arquitectura de mezcla de expertos con un subconjunto activo relativamente pequeno.
 
 Esta cuantizacion destaca por un caso de uso muy particular: ha sido preparada para ejecutarse sobre "trashcan", un sistema de pipeline paralelo distribuido sobre seis Mac Pro de 2013 con 12 GPU FirePro D700 via Vulkan. Es un ejemplo notable de como las tecnicas de cuantizacion agresiva con matrices de importancia (imatrix) permiten ejecutar modelos de mas de 100 mil millones de parametros en hardware antiguo y de consumo. La cuantizacion se ha realizado con `llama-quantize --imatrix` a partir del Q8_0 de unsloth, manteniendo las matrices densas en Q8_0 y cuantizando los expertos en IQ4_XS/IQ4_NL, con una divergencia KL media de 0,0391 frente al modelo Q8_0 de referencia.
 
@@ -75,9 +75,9 @@ Rendimiento medido en trashcan (6 Mac Pro 2013, 12 FirePro D700, Vulkan):
 
 | Modelo | Parametros totales | Formato | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-trashcan-G-iq4-GGUF | 176,9 B | GGUF | IQ4_XS/IQ4_NL/Q8_0/Q6_K mixta | qwen-community-license-1.0 | HuggingFace (fairfieldt) |
-| Qwen/Qwen3.8-Flash-Next (base) | 176,9 B | no disponible (safetensors) | sin cuantizar | qwen-community-license-1.0 | HuggingFace (Qwen) |
-| unsloth/Qwen3.8-Flash-Next-GGUF | 176,9 B | GGUF | incluye Q8_0 (origen de esta cuantizacion) | qwen-community-license-1.0 | HuggingFace (unsloth) |
+| Qwen3.8-Flash-Next-trashcan-G-iq4-GGUF | 176,9 B | GGUF | IQ4_XS/IQ4_NL/Q8_0/Q6_K mixta | qwen-community-license-1.0 | Hugging Face (fairfieldt) |
+| Qwen/Qwen3.8-Flash-Next (base) | 176,9 B | no disponible (safetensors) | sin cuantizar | qwen-community-license-1.0 | Hugging Face (Qwen) |
+| unsloth/Qwen3.8-Flash-Next-GGUF | 176,9 B | GGUF | incluye Q8_0 (origen de esta cuantizacion) | qwen-community-license-1.0 | Hugging Face (unsloth) |
 
 Esta cuantizacion se distingue de las alternativas por su optimizacion especifica para pipeline paralelo sobre GPUs antiguas via Vulkan y por incluir un bloque MTP separado para decodificacion especulativa, a cambio de una ligera perdida de fidelidad (KL 0,0391 frente al Q8_0).
 

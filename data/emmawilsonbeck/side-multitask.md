@@ -6,7 +6,7 @@ El repositorio `emmawilsonbeck/side-multitask` contiene una implementación prop
 
 La relevancia de esta ficha es, por tanto, documental y de evaluación: sirve para entender qué hay exactamente en el repositorio antes de descargarlo, y para evitar expectativas infundadas. La configuración etiquetada como «xlarge» es un ajuste de arquitectura generado automáticamente dentro del script, no una indicación de escala real de cómputo o de datos. El repositorio incluye además `config.json`, `training_args.json` y `model.py`, con una receta por defecto basada en SGD y un scheduler onecycle.
 
-El modelo se publica bajo licencia MIT, sin idiomas declarados, sin pipeline asignado en HuggingFace, y con cero descargas y cero «likes» en el momento de la consulta. Cualquier uso práctico requiere entrenamiento previo por parte del usuario con sus propios datos y una evaluación propia.
+El modelo se publica bajo licencia MIT, sin idiomas declarados, sin pipeline asignado en Hugging Face, y con cero descargas y cero «likes» en el momento de la consulta. Cualquier uso práctico requiere entrenamiento previo por parte del usuario con sus propios datos y una evaluación propia.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `emmawilsonbeck/side-multitask` | 33.088 | no disponible | sin benchmarks publicados | MIT | safetensors + `model.py`, 0 descargas |
-| Implementaciones oficiales de Perceiver / Perceiver IO (DeepMind) | no disponible en esta consulta | no disponible | no disponible en esta consulta | no disponible en esta consulta | públicas en HuggingFace y repositorios de investigación |
+| Implementaciones oficiales de Perceiver / Perceiver IO (DeepMind) | no disponible en esta consulta | no disponible | no disponible en esta consulta | no disponible en esta consulta | públicas en Hugging Face y repositorios de investigación |
 | Otros repositorios de prueba de humo con arquitecturas exóticas | variable, típicamente de miles a pocos millones de parámetros | no disponible | sin benchmarks publicados | variable | disponibilidad variable |
 
 No se dispone de datos comparativos verificados suficientes para establecer una comparación cuantitativa con alternativas de la misma categoría. La comparación relevante aquí no es de rendimiento, sino de naturaleza del artefacto: frente a implementaciones oficiales mantenidas por laboratorios, este repositorio es una implementación propia sin entrenamiento ni auditoría.
@@ -86,6 +86,6 @@ No se dispone de datos comparativos verificados suficientes para establecer una 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emmawilsonbeck/side-multitask
+- Hugging Face: https://huggingface.co/emmawilsonbeck/side-multitask
 - Archivos del repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo, su autor o su arquitectura. Los resultados devueltos por la búsqueda corresponden a localizadores de tiendas de una cadena de supermercados y no guardan relación con este repositorio, por lo que se descartan como fuentes.

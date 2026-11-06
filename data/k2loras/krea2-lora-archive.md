@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `k2loras/krea2-lora-archive` es un archivo de adaptadores LoRA (Low-Rank Adaptation) publicado por el usuario k2loras en HuggingFace. Con un tamaño de 1379.4 GB, contiene un conjunto de pesos de LoRA, aunque no se proporciona información sobre el modelo base al que se aplican, la arquitectura subyacente ni los parámetros. El repositorio tiene 7 likes y 0 descargas, lo que sugiere que es poco utilizado o recientemente publicado. La etiqueta `region:us` podría indicar una restricción geográfica de acceso, pero no se especifica. Dada la falta de documentación, este archivo no es adecuado para su uso directo en producción sin antes obtener más detalles del autor.
+El repositorio `k2loras/krea2-lora-archive` es un archivo de adaptadores LoRA (Low-Rank Adaptation) publicado por el usuario k2loras en Hugging Face. Con un tamaño de 1379.4 GB, contiene un conjunto de pesos de LoRA, aunque no se proporciona información sobre el modelo base al que se aplican, la arquitectura subyacente ni los parámetros. El repositorio tiene 7 likes y 0 descargas, lo que sugiere que es poco utilizado o recientemente publicado. La etiqueta `region:us` podría indicar una restricción geográfica de acceso, pero no se especifica. Dada la falta de documentación, este archivo no es adecuado para su uso directo en producción sin antes obtener más detalles del autor.
 
 ## Especificaciones técnicas
 
@@ -62,4 +62,4 @@ No disponible. No se conocen modelos comparables debido a la falta de informaci�
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/k2loras/krea2-lora-archive)
+- [Repositorio en Hugging Face](https://huggingface.co/k2loras/krea2-lora-archive)

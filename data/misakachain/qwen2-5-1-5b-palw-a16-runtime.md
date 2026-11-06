@@ -93,7 +93,7 @@ La comparación es conceptualmente distinta: el runtime no busca el máximo rend
 
 ## Enlaces
 
-- [Repositorio HuggingFace de Misakachain/Qwen2.5-1.5B-PALW-A16-runtime](https://huggingface.co/Misakachain/Qwen2.5-1.5B-PALW-A16-runtime)
+- [Repositorio Hugging Face de Misakachain/Qwen2.5-1.5B-PALW-A16-runtime](https://huggingface.co/Misakachain/Qwen2.5-1.5B-PALW-A16-runtime)
 - [Modelo base original: Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B)
 - [Colección de modelos Qwen2.5 en Hugging Face](https://huggingface.co/collections/Qwen/qwen25)
 - [GitHub de Qwen2.5 (referencia de arquitectura)](https://github.com/mx4ai/qwen2.5)

@@ -84,7 +84,7 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ceselder/maemm-uplift-acts_all
+- Hugging Face: https://huggingface.co/ceselder/maemm-uplift-acts_all
 - GitHub (proyecto MAEMM): https://github.com/ceselder/maemm
 - Repositorio relacionado (inversor): https://huggingface.co/ceselder/qwen36-27b-maemm-inverter
 - Reporte de evaluaciones: http://5.78.192.0/reports/view/maemm-uplift-matrix/report.html

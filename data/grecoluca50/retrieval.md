@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `grecoluca50/retrieval` es una implementación de referencia de una arquitectura Flamingo orientada a tareas de retrieval (recuperación de información, presumiblemente multimodal texto-imagen dado el linaje Flamingo). Lo publica el usuario `grecoluca50` en HuggingFace y se distribuye bajo licencia Apache 2.0. No es un modelo entrenado: la propia model card lo describe explícitamente como un "initialization checkpoint for smoke tests", es decir, un punto de partida con pesos inicializados para validar código y no un checkpoint con rendimiento demostrado.
+El modelo `grecoluca50/retrieval` es una implementación de referencia de una arquitectura Flamingo orientada a tareas de retrieval (recuperación de información, presumiblemente multimodal texto-imagen dado el linaje Flamingo). Lo publica el usuario `grecoluca50` en Hugging Face y se distribuye bajo licencia Apache 2.0. No es un modelo entrenado: la propia model card lo describe explícitamente como un "initialization checkpoint for smoke tests", es decir, un punto de partida con pesos inicializados para validar código y no un checkpoint con rendimiento demostrado.
 
-El dato más relevante es su tamaño real: 49.600 parámetros totales según los pesos en safetensors, con un repositorio de 0,0 GB. Esto contrasta con la etiqueta "Scale: large" que aparece en la model card, lo que sugiere que la configuración se generó con un preset nominalmente grande pero sin escalar realmente el número de parámetros. No hay descargas ni "likes", y no se declaran idiomas soportados ni pipeline de HuggingFace.
+El dato más relevante es su tamaño real: 49.600 parámetros totales según los pesos en safetensors, con un repositorio de 0,0 GB. Esto contrasta con la etiqueta "Scale: large" que aparece en la model card, lo que sugiere que la configuración se generó con un preset nominalmente grande pero sin escalar realmente el número de parámetros. No hay descargas ni "likes", y no se declaran idiomas soportados ni pipeline de Hugging Face.
 
 Su relevancia actual es acotada y de tipo experimental: sirve como base reproducible para desarrollar adaptadores, validar pipelines de evaluación de retrieval y estudiar variantes arquitectónicas (atención lineal, fusión de bajo rango, normalización ScaleNorm) sin partir de cero. No debe confundirse con un modelo listo para producción ni con un baseline con resultados publicados.
 
@@ -48,7 +48,7 @@ No se puede confirmar ninguna capacidad funcional real mientras los pesos no hay
 Dado que se trata de un checkpoint de inicialización sin entrenar, los casos de uso realistas son de desarrollo e infraestructura, no de aplicación final:
 
 - Pruebas de humo (smoke tests) de pipelines de retrieval: permite validar que el código de carga, tokenización, paso forward y cálculo de métricas funciona antes de invertir cómputo en entrenamiento real.
-- Desarrollo de adaptadores para APIs de HuggingFace: al no ser cargable de forma automática, sirve como caso de prueba para implementar y depurar integraciones personalizadas con `transformers`.
+- Desarrollo de adaptadores para APIs de Hugging Face: al no ser cargable de forma automática, sirve como caso de prueba para implementar y depurar integraciones personalizadas con `transformers`.
 - Validación de arneses de evaluación sobre Flickr30k: útil para comprobar que el script de evaluación recoge métricas, gestiona múltiples semillas y compara contra baselines de capacidad equivalente.
 - Estudio de variantes arquitectónicas: su combinación de atención lineal, ScaleNorm y fusión de bajo rango permite experimentar con modificaciones estructurales sobre una base pequeña y rápida de iterar.
 - Reproducibilidad de recetas de optimización: el `training_args.json` (RMSprop, planificador coseno) sirve para comparar recetas de entrenamiento en un entorno controlado de bajo coste.
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grecoluca50/retrieval | 49.600 | no disponible | sin benchmarks (checkpoint de inicializacion) | Apache 2.0 | HuggingFace |
+| grecoluca50/retrieval | 49.600 | no disponible | sin benchmarks (checkpoint de inicializacion) | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de modelos alternativos dentro de la información proporcionada. Aunque existen otros modelos Flamingo y frameworks de retrieval multimodal en el ecosistema, no se han incluido especificaciones contrastadas en esta búsqueda, por lo que no se ofrece una comparación numérica. Cabe señalar que, con 49.600 parámetros y sin entrenamiento, este repositorio no es comparable en la práctica con modelos de retrieval entrenados, que manejan varios órdenes de magnitud más de parámetros.
@@ -91,5 +91,5 @@ No se dispone de datos verificados de modelos alternativos dentro de la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grecoluca50/retrieval
+- Modelo en Hugging Face: https://huggingface.co/grecoluca50/retrieval
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada. Los resultados devueltos no guardan relación con el modelo.

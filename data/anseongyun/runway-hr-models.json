@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "AnSeongYun/runway-hr-models",
+  "slug": "anseongyun-runway-hr-models",
+  "author": "AnSeongYun",
+  "url": "https://huggingface.co/AnSeongYun/runway-hr-models",
+  "created_at": "2026-11-01T16:04:38.000Z",
+  "updated_at": "2026-11-05T01:48:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "heart-rate",
+    "running",
+    "ode",
+    "gru",
+    "runway",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30561410,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnSeongYun (AnSeongYun) – Models - Hugging Face",
+      "url": "https://huggingface.co/AnSeongYun/models",
+      "snippet": "AnSeongYun's models1 Sort: Recently updated AnSeongYun/runway-hr-predictor-transformer Updated 1 day ago"
+    },
+    {
+      "title": "AnSeongYun/runway-hr-predictor-transformer · Hugging Face",
+      "url": "https://huggingface.co/AnSeongYun/runway-hr-predictor-transformer",
+      "snippet": "The inference code (predictor.py, ptv2/, configs, smoke test) lives in the RunWay GitLab repository under ai/workspace/seongyun/hr_transformer/; it is required to run the model."
+    }
+  ]
+}

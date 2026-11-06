@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Shardul007/anlp-a3-transformer` es un transformer de pequeno tamano (6.395.392 parametros, aproximadamente 6,4 millones) publicado en HuggingFace por el usuario Shardul007. Por el nombre del repositorio ("anlp-a3") y la ausencia casi total de documentacion, todo apunta a un trabajo academico correspondiente a una asignatura de procesamiento de lenguaje natural (ANLP, probablemente "Advanced Natural Language Processing"), concretamente a una practica o asignacion numero 3.
+El modelo `Shardul007/anlp-a3-transformer` es un transformer de pequeno tamano (6.395.392 parametros, aproximadamente 6,4 millones) publicado en Hugging Face por el usuario Shardul007. Por el nombre del repositorio ("anlp-a3") y la ausencia casi total de documentacion, todo apunta a un trabajo academico correspondiente a una asignatura de procesamiento de lenguaje natural (ANLP, probablemente "Advanced Natural Language Processing"), concretamente a una practica o asignacion numero 3.
 
 La model card es practicamente vacia: solo indica que el modelo se subio mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`, y deja como "More Information Needed" los campos de codigo, paper y documentacion. No se declara licencia, idiomas, pipeline ni datos de entrenamiento. El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -42,7 +42,7 @@ Tampoco hay informacion sobre el corpus de entrenamiento (numero de tokens, comp
 - Docencia y practicas de NLP: el modelo sirve como ejemplo de transformer minimo para ilustrar el ciclo completo de entrenamiento, guardado en safetensors y publicacion en el Hub. Su tamano (6,4 M de parametros) permite entrenarlo y ejecutarlo en CPU.
 - Pruebas de pipelines de inferencia: util para validar integraciones con `transformers`, `huggingface_hub` o scripts propios antes de escalar a modelos mayores, dado su bajo coste computacional.
 - Fine-tuning experimental en tareas muy acotadas: con 6,4 M de parametros puede ajustarse en minutos sobre datasets pequenos (clasificacion de texto, generacion de secuencias cortas) siempre que se conozca la arquitectura exacta.
-- Educacion sobre formatos de pesos: permite estudiar como se serializan los tensores en safetensors y como se cargan mediante mixins de HuggingFace.
+- Educacion sobre formatos de pesos: permite estudiar como se serializan los tensores en safetensors y como se cargan mediante mixins de Hugging Face.
 - Reproducibilidad de resultados academicos: si el autor publica el codigo y los datos, el checkpoint puede emplearse para replicar los experimentos de la asignacion.
 - Base para comparativas de eficiencia: sirve como referencia de "modelo diminuto" en estudios de latencia y consumo de memoria frente a modelos de mayor tamano.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Shardul007/anlp-a3-transformer | 6.395.392 | no disponible | no disponible | HuggingFace, sin descargas |
+| Shardul007/anlp-a3-transformer | 6.395.392 | no disponible | no disponible | Hugging Face, sin descargas |
 | GPT-2 small (referencia) | 124 M | 1024 | MIT | Ampliamente disponible |
 | DistilGPT-2 (referencia) | 82 M | 1024 | MIT | Ampliamente disponible |
-| TinyStories-1M (referencia) | ~1 M | 512 | MIT | HuggingFace |
+| TinyStories-1M (referencia) | ~1 M | 512 | MIT | Hugging Face |
 
 La comparativa es orientativa: el modelo del autor es entre 13 y 120 veces mas pequeno que GPT-2 small o DistilGPT-2, y no hay datos publicos de rendimiento que permitan una comparacion funcional. TinyStories-1M es el unico modelo de la tabla del mismo orden de magnitud, pero su proposito (generacion de cuentos infantiles) y su licencia (MIT) estan documentados, a diferencia de este checkpoint.
 
@@ -82,7 +82,7 @@ La comparativa es orientativa: el modelo del autor es entre 13 y 120 veces mas p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shardul007/anlp-a3-transformer
+- Hugging Face: https://huggingface.co/Shardul007/anlp-a3-transformer
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo: no disponible
 - Paper: no disponible

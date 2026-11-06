@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Dimension de salida | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lateon-specter-inbatch-n10573-e1-ckpt82 | 149.015.808 | 128 por token | 63 tokens declarados en la arquitectura; 300/64 tokens para documento/consulta segun la model card | No disponible | HuggingFace, 0 descargas, repositorio de 0,6 GB |
-| lightonai/LateOn (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace; es el punto de partida declarado de este checkpoint |
+| lateon-specter-inbatch-n10573-e1-ckpt82 | 149.015.808 | 128 por token | 63 tokens declarados en la arquitectura; 300/64 tokens para documento/consulta segun la model card | No disponible | Hugging Face, 0 descargas, repositorio de 0,6 GB |
+| lightonai/LateOn (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face; es el punto de partida declarado de este checkpoint |
 | Otros modelos ColBERT de late interaction (por ejemplo variantes de ColBERTv2 o Jina ColBERT) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos verificables sobre alternativas comparables dentro del material facilitado, por lo que no es posible establecer una comparacion cuantitativa de rendimiento, licencia o contexto frente a otros modelos de la misma categoria.
@@ -94,10 +94,10 @@ No se dispone de datos verificables sobre alternativas comparables dentro del ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeonggeon/lateon-specter-inbatch-n10573-e1-ckpt82
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeonggeon/lateon-specter-inbatch-n10573-e1-ckpt82
 - Modelo base lightonai/LateOn: https://huggingface.co/lightonai/LateOn
 - Documentacion de PyLate: https://lightonai.github.io/pylate/
 - Repositorio de PyLate en GitHub: https://github.com/lightonai/pylate
 - Repositorio de FastPLAID: https://github.com/lightonai/fast-plaid
-- Modelos con libreria PyLate en HuggingFace: https://huggingface.co/models?library=PyLate
+- Modelos con libreria PyLate en Hugging Face: https://huggingface.co/models?library=PyLate
 - Paper de referencia citado en las etiquetas (ColBERT, arXiv:1908.10084): https://arxiv.org/abs/1908.10084

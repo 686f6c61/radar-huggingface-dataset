@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ferrazzipietro/Llama-3.2-1B-Instruct-reas-int-065` es un ajuste fino (fine-tune) del modelo base `meta-llama/Llama-3.2-1B-Instruct`, desarrollado por el usuario ferrazzipietro. Se trata de un modelo de generación de texto de 1.235.814.400 parámetros, entrenado con la librería Transformers de HuggingFace. La model card no especifica el dataset de entrenamiento ni los objetivos concretos del ajuste, por lo que su utilidad práctica queda sin documentar.
+El modelo `ferrazzipietro/Llama-3.2-1B-Instruct-reas-int-065` es un ajuste fino (fine-tune) del modelo base `meta-llama/Llama-3.2-1B-Instruct`, desarrollado por el usuario ferrazzipietro. Se trata de un modelo de generación de texto de 1.235.814.400 parámetros, entrenado con la librería Transformers de Hugging Face. La model card no especifica el dataset de entrenamiento ni los objetivos concretos del ajuste, por lo que su utilidad práctica queda sin documentar.
 
 A pesar de que el modelo base Llama-3.2-1B-Instruct es conocido por su capacidad de seguir instrucciones y generar texto coherente, este fine-tune no incluye información sobre las tareas para las que fue optimizado. No se han publicado resultados de benchmarks ni métricas de evaluación, y el repositorio no contiene documentación adicional más allá de los hiperparámetros de entrenamiento. Su relevancia actual es limitada debido a la falta de información y a que no presenta ninguna innovación técnica documentada.
 
@@ -66,5 +66,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace: ferrazzipietro/Llama-3.2-1B-Instruct-reas-int-065](https://huggingface.co/ferrazzipietro/Llama-3.2-1B-Instruct-reas-int-065)
+- [Hugging Face: ferrazzipietro/Llama-3.2-1B-Instruct-reas-int-065](https://huggingface.co/ferrazzipietro/Llama-3.2-1B-Instruct-reas-int-065)
 - [Modelo base: meta-llama/Llama-3.2-1B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)

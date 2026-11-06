@@ -81,11 +81,11 @@ No se dispone de datos de benchmarks comparativos entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DeependraVerma/slm-125m-ultimate-base
+- Modelo en Hugging Face: https://huggingface.co/DeependraVerma/slm-125m-ultimate-base
 - Repositorio del proyecto: https://github.com/DeependraVerma/legal-slm-125M
 - Version fine-tuned para Q&A: https://huggingface.co/DeependraVerma/legal-slm-125m-ultimate-sft
 - Version ONNX para navegador: https://huggingface.co/DeependraVerma/legal-slm-125m-ultimate-sft-onnx
 - Primera ejecucion (slm-125m-base): https://huggingface.co/DeependraVerma/slm-125m-base
 - Pagina del proyecto: https://deependraverma-ai-legal-slm-125-m.vercel.app/
 - Demo del modelo: https://slm-125m-phi.vercel.app/index.html
-- Perfil del autor en HuggingFace: https://huggingface.co/DeependraVerma
+- Perfil del autor en Hugging Face: https://huggingface.co/DeependraVerma

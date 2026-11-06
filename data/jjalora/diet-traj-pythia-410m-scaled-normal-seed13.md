@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-scaled-normal-seed13
+- Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-scaled-normal-seed13
 - Repositorio de referencia Pythia: https://github.com/EleutherAI/pythia
 - Dataset: https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled
 - Modelo de referencia: https://huggingface.co/EleutherAI/pythia-410m

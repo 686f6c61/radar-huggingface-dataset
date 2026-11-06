@@ -110,11 +110,11 @@ No se dispone de datos verificables de otras alternativas comparables de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andrevp/Qwen3.8-27B-EXL3-3.5bpw-heretic
+- Modelo en Hugging Face: https://huggingface.co/andrevp/Qwen3.8-27B-EXL3-3.5bpw-heretic
 - Modelo base cuantizado: https://huggingface.co/Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw
 - Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic
 - Dataset de prompts daninos: https://huggingface.co/datasets/mlabonne/harmful_behaviors
 - Dataset de prompts inofensivos: https://huggingface.co/datasets/mlabonne/harmless_alpaca
-- Resultados brutos de evaluacion: directorio `eval/` dentro del repositorio de HuggingFace
+- Resultados brutos de evaluacion: directorio `eval/` dentro del repositorio de Hugging Face
 - Parametros de la ablacion: ficheros `abliteration.json`, `abliteration.safetensors` y `abliteration_directions.safetensors` dentro del repositorio
 - Resultados de busqueda web: no se encontraron enlaces relevantes sobre este modelo en la busqueda realizada

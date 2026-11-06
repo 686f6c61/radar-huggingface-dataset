@@ -82,7 +82,7 @@ Nota: los datos de contexto y licencia de los modelos comparables provienen de d
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/tawkeed-0.8b-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/tawkeed-0.8b-GGUF
 - Modelo base: https://huggingface.co/tawkeed-sa/tawkeed-0.8b
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/tawkeed-0.8b-i1-GGUF
 - Pagina de descarga del autor: https://hf.tst.eu/model#tawkeed-0.8b-GGUF

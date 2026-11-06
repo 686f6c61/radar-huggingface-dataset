@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cloverx-id/XoneLM-1.0-Papper
+- Repositorio Hugging Face: https://huggingface.co/cloverx-id/XoneLM-1.0-Papper
 - Paper (PDF): https://huggingface.co/cloverx-id/XoneLM-1.0-Papper/blob/main/XoneLM.pdf
-- Perfil del autor en HuggingFace: https://huggingface.co/cloverx-id
+- Perfil del autor en Hugging Face: https://huggingface.co/cloverx-id
 - Imagen de vista previa del paper: https://cdn-uploads.huggingface.co/production/uploads/6835b520186e98712b0386a6/X2I1IQvYlfLfG3gxtSIXQ.png

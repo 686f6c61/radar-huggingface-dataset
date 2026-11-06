@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1-mlx
 - Modelo base (checkpoint original): https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1
 - Proyecto OpenMed en GitHub: https://github.com/maziyarpanahi/openmed
 - Documentación del backend MLX: https://openmed.life/docs/mlx-backend/

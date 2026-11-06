@@ -6,7 +6,7 @@
 
 El repositorio contiene dos ficheros `.pt`: `olmo_think_jacobian_lens.pt`, ajustado sobre `allenai/Olmo-3-32B-Think` (64 bloques, `d_model` 5120), y `gemma4it_selffit_jacobian_lens.pt`, ajustado sobre `google/gemma-4-31B-it` (60 bloques, `d_model` 5376). Ambos se han ajustado siguiendo la implementación de referencia de Anthropic (`anthropics/jacobian-lens`, Apache-2.0), con cotangentes one-hot en cada posición objetivo válida, sumados sobre objetivos, promediados sobre posiciones de origen y prompts, y descartando las primeras 16 posiciones por actuar como sumideros de atención.
 
-Su relevancia es acotada pero específica: las lentes publicadas por AI2 están ajustadas sobre checkpoints *base*, mientras que el checkpoint de razonamiento es `-Think`, y una lente debe corresponderse con el checkpoint del que proceden los estados. El fichero de Gemma se ajustó como control frente a la lente publicada de `gemma-4-31B`, que se verificó posteriormente como correcta; no pretende sustituirla. El repositorio no registra descargas ni likes y ocupa 0,6 GB según los metadatos de HuggingFace.
+Su relevancia es acotada pero específica: las lentes publicadas por AI2 están ajustadas sobre checkpoints *base*, mientras que el checkpoint de razonamiento es `-Think`, y una lente debe corresponderse con el checkpoint del que proceden los estados. El fichero de Gemma se ajustó como control frente a la lente publicada de `gemma-4-31B`, que se verificó posteriormente como correcta; no pretende sustituirla. El repositorio no registra descargas ni likes y ocupa 0,6 GB según los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ Diferencias clave: las lentes de AI2 se ajustan sobre checkpoints base y no cubr
 
 - Cobertura parcial: solo hay cinco bloques por modelo y no forman una banda contigua. Cualquier otra capa lanza `KeyError`; hay que reajustar con `fit_lens.py` si se necesita otra profundidad.
 - Numero de prompts bajo: 100 frente a los aproximadamente 1000 que sugiere la implementacion de referencia, que ademas indica que la calidad se satura cerca de 100. El autor califica estas lentes como utilizables pero en el extremo bajo de calidad.
-- Ambiguedad en el tamano del repositorio: los metadatos de HuggingFace indican 0,6 GB, mientras que la suma de los tensores descritos (`d_model²` x 5 bloques x 4 bytes por fichero) da aproximadamente 1,03 GiB. Conviene verificar el contenido real antes de asumir el tamano.
+- Ambiguedad en el tamano del repositorio: los metadatos de Hugging Face indican 0,6 GB, mientras que la suma de los tensores descritos (`d_model²` x 5 bloques x 4 bytes por fichero) da aproximadamente 1,03 GiB. Conviene verificar el contenido real antes de asumir el tamano.
 - Sin validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta, con un unico autor, lo que implica ausencia de revision externa.
 - Dependencia del checkpoint: la lente de Olmo solo es valida para `allenai/Olmo-3-32B-Think`; usarla con el checkpoint base o con otro modelo produce lecturas sin sentido, porque la lente debe coincidir con el checkpoint del que proceden los estados.
 - Carga insegura: el fichero requiere `weights_only=False` en `torch.load`, lo que implica deserializacion de objetos arbitrarios. No cargar ficheros `.pt` de origen no fiable en entornos de produccion.
@@ -101,7 +101,7 @@ Diferencias clave: las lentes de AI2 se ajustan sobre checkpoints base y no cubr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tbrx/uspace-lenses
+- Modelo en Hugging Face: https://huggingface.co/tbrx/uspace-lenses
 - Implementacion de referencia de Anthropic para Jacobian lenses: https://github.com/anthropics/jacobian-lens
 - Repositorio del trabajo U-Space: https://github.com/nils-loose/vfield-mi (rama `iclr27-artifact`)
 - Script de reajuste de lentes: https://github.com/nils-loose/vfield-mi/blob/iclr27-artifact/artifact/src/uspace/fit_lens.py

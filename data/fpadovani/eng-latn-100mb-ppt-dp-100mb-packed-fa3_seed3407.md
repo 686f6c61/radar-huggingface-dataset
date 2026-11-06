@@ -12,7 +12,7 @@ La relevancia practica es limitada: el repositorio acumula 0 descargas y 0 likes
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (dato real, safetensors) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en fp32 (124,77 M de parametros x 4 bytes), unos 0,25 GB en fp16/bf16, unos 0,13 GB en int8 y unos 0,07 GB en int4, mas el cache KV, que es despreciable a estas escalas.
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente; una RTX 4090, A100 o H100 estan sobredimensionadas y solo tendrian sentido para entrenamiento o para procesar lotes muy grandes.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo de los ultimos diez anos; tambien en CPU y en sistemas con graficos integrados.
-- Opciones de despliegue: `transformers` (soporte nativo), text-generation-inference (etiqueta declarada en el repositorio), endpoints compatibles con la API de HuggingFace. No se ha confirmado la existencia de pesos GGUF para llama.cpp u Ollama, y no hay pesos cuantizados publicados en el repositorio.
+- Opciones de despliegue: `transformers` (soporte nativo), text-generation-inference (etiqueta declarada en el repositorio), endpoints compatibles con la API de Hugging Face. No se ha confirmado la existencia de pesos GGUF para llama.cpp u Ollama, y no hay pesos cuantizados publicados en el repositorio.
 - Latencia y throughput estimados: no disponible. No se publican mediciones de tokens por segundo ni de latencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed-fa3_seed3407 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace |
-| GPT-2 (124 M) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente desplegado |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed-fa3_seed3407 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face |
+| GPT-2 (124 M) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente desplegado |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 La comparacion solo puede establecerse en terminos de tamano y disponibilidad: para los modelos de referencia se citan valores de contexto y licencia ampliamente conocidos, mientras que para el modelo analizado y su base estos datos no estan publicados. No hay datos de rendimiento comparables en la informacion disponible, por lo que no es posible establecer una jerarquia de calidad entre ellos.
 
@@ -85,11 +85,11 @@ La comparacion solo puede establecerse en terminos de tamano y disponibilidad: p
 - Restricciones de licencia: la licencia no esta especificada, solo aparece la etiqueta generica `licence: license`. No debe asumirse uso comercial permitido sin contactar con el autor y verificar tambien la licencia del modelo base.
 - Caveat de produccion: es un artefacto de investigacion con 0 descargas y 0 likes, sin evaluacion publicada ni mantenimiento conocido; no es adecuado como componente de un sistema en produccion sin una evaluacion propia previa.
 - Riesgo de confusion en la nomenclatura: los sufijos `ppt`, `packed` y `fa3` del nombre no estan documentados en la model card, por lo que las condiciones exactas de entrenamiento no son reproducibles a partir de la informacion publicada.
-- Fecha de creacion inusual: los metadatos de HuggingFace indican 2026-09-19 como fecha de creacion, posterior a la fecha de referencia habitual; conviene verificar la trazabilidad del repositorio.
+- Fecha de creacion inusual: los metadatos de Hugging Face indican 2026-09-19 como fecha de creacion, posterior a la fecha de referencia habitual; conviene verificar la trazabilidad del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed-fa3_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed-fa3_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/2ndm7fbl
 - Repositorio de TRL: https://github.com/huggingface/trl

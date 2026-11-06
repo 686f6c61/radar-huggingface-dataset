@@ -96,7 +96,7 @@ La informacion proporcionada no permite comparar rendimiento entre estos modelos
 
 ## Enlaces
 
-- Repositorio de la cuantizacion en HuggingFace: https://huggingface.co/mradermacher/Marco-LLM-SEA-GGUF
+- Repositorio de la cuantizacion en Hugging Face: https://huggingface.co/mradermacher/Marco-LLM-SEA-GGUF
 - Repositorio de cuantizaciones ponderadas (imatrix): https://huggingface.co/mradermacher/Marco-LLM-SEA-i1-GGUF
 - Modelo base: https://huggingface.co/ATH-MaaS/Marco-LLM-SEA
 - Pagina de descarga y vision general del autor para este modelo: https://hf.tst.eu/model#Marco-LLM-SEA-GGUF

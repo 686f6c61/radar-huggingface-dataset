@@ -14,7 +14,7 @@ SnapKitty Sovereign Chat Harness es un sistema de verificación formal (harness)
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q4_K_M (GGUF) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (segun metadatos de HuggingFace); la model card menciona BSL-1.1 / AGPL-3.0 / MPL-2.0 con "Patent Pending" |
+| Licencia | apache-2.0 (segun metadatos de Hugging Face); la model card menciona BSL-1.1 / AGPL-3.0 / MPL-2.0 con "Patent Pending" |
 | Formato de pesos | GGUF (para Ollama), safetensors (para HF Inference, no confirmado) |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ No disponible. No se han identificado sistemas comparables en la información pr
 
 - La documentación es confusa y mezcla conceptos técnicos no estándar (MetaSum, Dream Cycle, Weyl bound) sin definiciones rigurosas ni referencias académicas.
 - No se especifica la arquitectura, el tamaño ni el entrenamiento del modelo base, lo que impide evaluar su calidad real.
-- La licencia es contradictoria: los metadatos de HuggingFace indican apache-2.0, pero la model card menciona BSL-1.1 / AGPL-3.0 / MPL-2.0 con "Patent Pending". Esto genera incertidumbre legal para uso comercial.
+- La licencia es contradictoria: los metadatos de Hugging Face indican apache-2.0, pero la model card menciona BSL-1.1 / AGPL-3.0 / MPL-2.0 con "Patent Pending". Esto genera incertidumbre legal para uso comercial.
 - No hay evidencia empírica de que el sistema "no alucine" como afirma el lema. Los umbrales de coherencia (τ = 512, H ≤ 0.20) no están validados con benchmarks públicos.
 - El proyecto parece estar en una fase temprana (0 descargas, 0 likes, creado en septiembre de 2026) y no hay comunidad ni soporte documentado.
 - La dependencia de Ollama y de un modelo GGUF específico (`snapkitty-merged`) limita la portabilidad; no se indica si este modelo está disponible públicamente.
@@ -68,6 +68,6 @@ No disponible. No se han identificado sistemas comparables en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/sovereign-chat-harness
+- Hugging Face: https://huggingface.co/Snapkitty/sovereign-chat-harness
 - GitHub (repositorio del proyecto): https://github.com/SNAPKITTYWEST/sovereign-harness
 - Sitio web del proyecto: https://snapkittywest.github.io/sovereign-harness/

@@ -88,8 +88,8 @@ No se dispone de datos verificados de benchmarks para establecer una comparativa
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kizagan-TTS-v1.0 | 2,29 mil millones | no disponible | turco | Apache 2.0 | HuggingFace, 410 descargas, 42 likes |
-| openbmb/VoxCPM2 (modelo base) | no confirmado en la informacion (el ajuste fusionado conserva la arquitectura del base) | no disponible | no disponible | no disponible en la informacion | HuggingFace, repositorio publico de OpenBMB |
+| Kizagan-TTS-v1.0 | 2,29 mil millones | no disponible | turco | Apache 2.0 | Hugging Face, 410 descargas, 42 likes |
+| openbmb/VoxCPM2 (modelo base) | no confirmado en la informacion (el ajuste fusionado conserva la arquitectura del base) | no disponible | no disponible | no disponible en la informacion | Hugging Face, repositorio publico de OpenBMB |
 | Otros sistemas TTS turcos o multilingues con clonacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Nota: la informacion proporcionada no incluye especificaciones del modelo base VoxCPM2 (parametros, contexto, licencia ni idiomas), por lo que no es posible comparar ambos de forma cuantitativa. Tampoco se aportan resultados de WER, MOS ni similitud de hablante de ningun sistema alternativo, de modo que cualquier comparacion de calidad seria especulativa.
@@ -110,7 +110,7 @@ Nota: la informacion proporcionada no incluye especificaciones del modelo base V
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlicanKiraz0/Kizagan-TTS-v1.0
+- Modelo en Hugging Face: https://huggingface.co/AlicanKiraz0/Kizagan-TTS-v1.0
 - Modelo base VoxCPM2 (OpenBMB): https://huggingface.co/openbmb/VoxCPM2
 - Checkpoint de origen del ajuste: https://huggingface.co/AlicanKiraz0/Kizagan-TTS-step_1500
 - Dataset de ajuste: https://huggingface.co/datasets/AlicanKiraz0/TR-Voice-TTS

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario NoraAriana bajo el identificador NoraAriana/MyAwesomeModel-TestRepo. Según la información disponible, se trata de un repositorio con 0 descargas, 0 likes y un tamaño declarado de 0.0 GB, lo que apunta a un repositorio de prueba o plantilla más que a una publicación de pesos utilizables. La model card describe un modelo de razonamiento generativo con soporte de function calling, modo de pensamiento y mejoras en tareas de matemáticas y programación, pero las etiquetas del repositorio lo clasifican como `bert` con pipeline `feature-extraction`, lo que genera una contradicción relevante entre la metadata y el contenido declarado.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario NoraAriana bajo el identificador NoraAriana/MyAwesomeModel-TestRepo. Según la información disponible, se trata de un repositorio con 0 descargas, 0 likes y un tamaño declarado de 0.0 GB, lo que apunta a un repositorio de prueba o plantilla más que a una publicación de pesos utilizables. La model card describe un modelo de razonamiento generativo con soporte de function calling, modo de pensamiento y mejoras en tareas de matemáticas y programación, pero las etiquetas del repositorio lo clasifican como `bert` con pipeline `feature-extraction`, lo que genera una contradicción relevante entre la metadata y el contenido declarado.
 
 La model card menciona una mejora de precisión en AIME 2025 del 70 % al 87,5 % entre versiones, un aumento del uso medio de tokens de razonamiento por pregunta de 12K a 23K y una reducción de la tasa de alucinación. Sin embargo, no se proporciona información verificable sobre arquitectura, número de parámetros, longitud de contexto, dataset de entrenamiento ni formato de pesos. No se han encontrado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) ni datos técnicos que permitan evaluar el modelo con rigor.
 
@@ -102,7 +102,7 @@ No disponible. La información proporcionada no identifica modelos comparables c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NoraAriana/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/NoraAriana/MyAwesomeModel-TestRepo
 - Repositorio de código, web de chat y plataforma API mencionados en la model card: no disponibles (no se incluyen URLs).
 - Paper, blog o demo asociados: no disponibles.
 - La búsqueda web realizada no devolvió enlaces relevantes sobre el modelo.

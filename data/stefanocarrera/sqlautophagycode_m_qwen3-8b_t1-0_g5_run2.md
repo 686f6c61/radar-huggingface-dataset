@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g5_run2` es un checkpoint publicado en HuggingFace por el usuario stefanocarrera, etiquetado con las librerías `transformers`, `safetensors` y `unsloth`. El propio identificador del repositorio sugiere que se trata de un modelo resultante de un proceso de *merge* (sufijo `_M_`) sobre una base Qwen3-8B, entrenado o fusionado con datos relacionados con SQL y código (fragmento `sqlautophagycode`), con unos hiperparámetros anotados en el nombre (`t1.0`, `g5`, `run2`). Ninguna de estas interpretaciones está confirmada en la model card, que es una plantilla genérica autogenerada por HuggingFace y no contiene información real sobre el modelo.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g5_run2` es un checkpoint publicado en Hugging Face por el usuario stefanocarrera, etiquetado con las librerías `transformers`, `safetensors` y `unsloth`. El propio identificador del repositorio sugiere que se trata de un modelo resultante de un proceso de *merge* (sufijo `_M_`) sobre una base Qwen3-8B, entrenado o fusionado con datos relacionados con SQL y código (fragmento `sqlautophagycode`), con unos hiperparámetros anotados en el nombre (`t1.0`, `g5`, `run2`). Ninguna de estas interpretaciones está confirmada en la model card, que es una plantilla genérica autogenerada por Hugging Face y no contiene información real sobre el modelo.
 
 El interés de esta ficha es limitado pero relevante como caso de estudio: se trata de un repositorio sin model card sustantiva, sin licencia declarada, sin idiomas declarados, sin pipeline declarado y con 0 descargas y 0 *likes* en el momento de la consulta. El tamaño del repositorio es de solo 0,2 GB, muy por debajo de los aproximadamente 16 GB que ocuparía un modelo denso de 8 000 millones de parámetros en bf16, lo que apunta a una subida incompleta, a pesos altamente cuantizados o a un repositorio que solo contiene una parte del checkpoint. Cualquier evaluación seria del modelo requiere inspeccionar los archivos reales del repositorio antes de usarlo.
 
@@ -28,7 +28,7 @@ Por tanto, esta ficha documenta principalmente lo que **no** se sabe, y marca ex
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura, el regimen de entrenamiento, el volumen de tokens, la composicion del dataset ni el uso de tecnicas de alineacion (RLHF, DPO, RLVR) en el repositorio. La model card publicada es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`, incluidas las secciones de detalles del modelo, datos de entrenamiento, hiperparametros, evaluacion e infraestructura de computo.
+No se dispone de informacion verificable sobre la arquitectura, el regimen de entrenamiento, el volumen de tokens, la composicion del dataset ni el uso de tecnicas de alineacion (RLHF, DPO, RLVR) en el repositorio. La model card publicada es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`, incluidas las secciones de detalles del modelo, datos de entrenamiento, hiperparametros, evaluacion e infraestructura de computo.
 
 Los unicos indicios disponibles provienen del nombre del repositorio y de las etiquetas. El sufijo `_M_` es habitual en la comunidad para denotar un modelo fusionado (*model merge*), probablemente mediante tecnicas tipo SLERP, TIES o DARE. El prefijo `sqlautophagycode` sugiere un ajuste orientado a SQL y generacion de codigo, posiblemente con una componente de datos autogenerados o de "autofagia" de datos (reciclado de salidas del propio modelo). Los parametros `t1.0`, `g5` y `run2` probablemente codifican temperatura de muestreo 1,0, una quinta generacion o iteracion de datos y la segunda ejecucion del pipeline. La etiqueta `unsloth` indica que el entrenamiento se realizo con la libreria Unsloth, habitualmente sobre QLoRA de 4 bits. Ninguna de estas hipotesis esta documentada por el autor.
 
@@ -100,7 +100,7 @@ No es posible comparar rendimiento porque este checkpoint no publica ningun resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g5_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g5_run2
 - Paper citado en las etiquetas del repositorio (estimacion de emisiones de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - Qwen3 (familia base presumible): https://huggingface.co/Qwen

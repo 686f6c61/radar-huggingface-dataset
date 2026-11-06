@@ -100,7 +100,7 @@ Frente al base, la diferencia medible está en el comportamiento de rol y en el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/Thox-Ginger
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/Thox-Ginger
 - Modelo en Ollama: `Thox-ai/thox-ginger` (referenciado en la model card; no se proporciona URL directa)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Tag de Ollama del base: `qwen3:4b`, sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7

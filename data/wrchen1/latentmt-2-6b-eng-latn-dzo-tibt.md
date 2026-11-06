@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-dzo-tibt
+- Repositorio Hugging Face del adaptador: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-dzo-tibt
 - Paper LatentMT (arXiv): https://arxiv.org/pdf/2607.18618
 - Modelo base ByteDance/Ouro-2.6B-Thinking: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking
 - Repositorio alternativo del mismo adaptador (organizacion LatentMT): https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-dzo-tibt

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sharmasneha/retrieval-tutorial` es un repositorio de HuggingFace que contiene una implementacion propia en PyTorch de una arquitectura **Poolformer** orientada a tareas de **retrieval** (recuperacion), en su configuracion **tiny**. Lo publica el usuario sharmasneha y se presenta explicitamente como un artefacto para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion. El checkpoint `model.safetensors` es una inicializacion valida, pero el propio autor aclara que no esta entrenado ni auditado.
+`sharmasneha/retrieval-tutorial` es un repositorio de Hugging Face que contiene una implementacion propia en PyTorch de una arquitectura **Poolformer** orientada a tareas de **retrieval** (recuperacion), en su configuracion **tiny**. Lo publica el usuario sharmasneha y se presenta explicitamente como un artefacto para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion. El checkpoint `model.safetensors` es una inicializacion valida, pero el propio autor aclara que no esta entrenado ni auditado.
 
 El modelo tiene unicamente **33.088 parametros totales** segun los datos del archivo safetensors, lo que lo situa muy por debajo de cualquier backbone de vision utilizable en tareas reales de retrieval. Su relevancia es, por tanto, fundamentalmente didactica y de ingenieria: sirve como esqueleto reproducible para montar experimentos de recuperacion imagen-texto, como plantilla de integracion en pipelines de CI y como punto de partida para comparaciones con lineas base de capacidad equivalente.
 
@@ -74,7 +74,7 @@ No se dispone de resultados de benchmarks del modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sharmasneha/retrieval-tutorial | 33.088 | no disponible | no disponible (sin benchmarks) | MIT | HuggingFace |
+| sharmasneha/retrieval-tutorial | 33.088 | no disponible | no disponible (sin benchmarks) | MIT | Hugging Face |
 | PoolFormer (familia original de Meta) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otras lineas base de retrieval | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,5 +93,5 @@ No se dispone de modelos comparables con datos verificables dentro de la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sharmasneha/retrieval-tutorial
+- Repositorio en Hugging Face: https://huggingface.co/sharmasneha/retrieval-tutorial
 - No se han proporcionado enlaces adicionales a papers, blogs, repositorios o demos en la informacion disponible.

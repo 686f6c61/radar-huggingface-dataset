@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`navenduk75/qwen2.5-3b-function-calling-lora` es un adaptador LoRA entrenado sobre el modelo base `Qwen/Qwen2.5-3B-Instruct` para dotar a un modelo pequeño de capacidades estructuradas de *function calling* y *tool use*. El adaptador ha sido desarrollado por el usuario navenduk75 y publicado en HuggingFace, con el objetivo de permitir que el modelo genere llamadas a herramientas en formato JSON, XML o estilo OpenAI, o bien responda en lenguaje natural cuando no corresponde invocar ninguna función.
+`navenduk75/qwen2.5-3b-function-calling-lora` es un adaptador LoRA entrenado sobre el modelo base `Qwen/Qwen2.5-3B-Instruct` para dotar a un modelo pequeño de capacidades estructuradas de *function calling* y *tool use*. El adaptador ha sido desarrollado por el usuario navenduk75 y publicado en Hugging Face, con el objetivo de permitir que el modelo genere llamadas a herramientas en formato JSON, XML o estilo OpenAI, o bien responda en lenguaje natural cuando no corresponde invocar ninguna función.
 
 El modelo resuelve el problema de añadir *tool calling* a un LLM compacto sin necesidad de un ajuste completo, mediante un adaptador LoRA de bajo rango (`r=16`, `lora_alpha=32`) entrenado con `SFTTrainer` de TRL sobre un dataset sintético. La relevancia actual radica en la creciente demanda de agentes conversacionales ligeros que puedan integrarse en entornos con recursos limitados, manteniendo la capacidad de interactuar con APIs y servicios externos. Al ser un adaptador, requiere el modelo base para funcionar, y no se distribuye como un modelo fusionado.
 
@@ -16,14 +16,14 @@ El modelo resuelve el problema de añadir *tool calling* a un LLM compacto sin n
 | Longitud de contexto | 32,768 tokens (heredada del modelo base Qwen2.5-3B-Instruct) |
 | Tipos de cuantizacion | No disponible (el adaptador se distribuye en safetensors; el base puede cuantizarse con GPTQ, AWQ o GGUF) |
 | Idiomas soportados | No especificados en la model card; el base Qwen2.5 soporta multiples idiomas (incluido español, ingles, chino, frances, aleman, etc.) |
-| Licencia | Apache-2.0 (declarada en la model card; el campo de HuggingFace indica "no disponible") |
+| Licencia | Apache-2.0 (declarada en la model card; el campo de Hugging Face indica "no disponible") |
 | Formato de pesos | safetensors (adaptador PEFT) |
 
 ## Arquitectura y entrenamiento
 
 El adaptador se basa en la arquitectura transformer densa de Qwen2.5-3B-Instruct, un modelo decoder-only preentrenado con hasta 18T tokens segun la documentacion oficial de Qwen2.5. El ajuste se realizo mediante LoRA sobre las proyecciones `q_proj` y `v_proj` con rango `r=16` y `lora_alpha=32`, utilizando el `SFTTrainer` de TRL. El dataset sintetico de entrenamiento incluye llamadas de una sola vuelta, frases con errores tipograficos, multiples formatos de salida (JSON plano, bloques de codigo, XML `<tool_call>` y estilo OpenAI `{"tool_calls": [...]}`), conversaciones multi-turno con resultados simulados de herramientas, y prompts fuera de tema o ambiguos que no deben activar ninguna llamada a funcion.
 
-El modelo no emplea ninguna innovacion arquitectonica adicional; su valor reside en el ajuste fino especifico para *function calling*. El formato de prompt es personalizado y no sigue la plantilla de chat estandar de HuggingFace, usando delimitadores `<|system|>`, `<|tools|>`, `<|user|>` y `<|assistant|>`. Las herramientas soportadas son tres: `get_weather(location, unit)`, `get_news(topic, limit)` y `calculate(expression)`.
+El modelo no emplea ninguna innovacion arquitectonica adicional; su valor reside en el ajuste fino especifico para *function calling*. El formato de prompt es personalizado y no sigue la plantilla de chat estandar de Hugging Face, usando delimitadores `<|system|>`, `<|tools|>`, `<|user|>` y `<|assistant|>`. Las herramientas soportadas son tres: `get_weather(location, unit)`, `get_news(topic, limit)` y `calculate(expression)`.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ La comparativa se limita a modelos del mismo tamaño y proposito. No se dispone 
 
 - Es un adaptador, no un modelo fusionado: requiere cargar el modelo base Qwen2.5-3B-Instruct junto con el adaptador usando `peft`. No se puede usar directamente como un checkpoint independiente.
 - Solo soporta tres herramientas predefinidas (`get_weather`, `get_news`, `calculate`); para otras funciones es necesario reentrenar o ampliar el dataset.
-- El formato de prompt es personalizado y no compatible con el chat template estandar de HuggingFace; es necesario construir los prompts manualmente siguiendo la estructura documentada.
+- El formato de prompt es personalizado y no compatible con el chat template estandar de Hugging Face; es necesario construir los prompts manualmente siguiendo la estructura documentada.
 - Riesgo de alucinacion en la generacion de argumentos JSON, especialmente si el usuario proporciona informacion ambigua o incompleta.
 - El entrenamiento se realizo sobre un dataset sintetico, lo que puede limitar la generalizacion a dominios reales o a variaciones linguisticas no contempladas.
 - Sesgos del modelo base Qwen2.5-3B-Instruct pueden persistir, aunque no se han documentado evaluaciones especificas.

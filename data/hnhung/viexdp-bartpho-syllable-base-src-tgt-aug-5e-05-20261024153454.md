@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hnhung/viexdp-bartpho-syllable-base-src-tgt-aug-5e-05-20261024153454` es un modelo de generación texto-a-texto obtenido por ajuste fino (*fine-tuning*) del checkpoint `vinai/bartpho-syllable-base`, el modelo seq2seq preentrenado a gran escala para vietnamita desarrollado por VinAI Research. El resultado es un checkpoint de 131.610.728 parámetros, publicado en HuggingFace con licencia MIT y pesos en safetensors, pensado para tareas de transformación entre una secuencia origen y una secuencia destino (de ahí el sufijo `src-tgt` del identificador).
+`hnhung/viexdp-bartpho-syllable-base-src-tgt-aug-5e-05-20261024153454` es un modelo de generación texto-a-texto obtenido por ajuste fino (*fine-tuning*) del checkpoint `vinai/bartpho-syllable-base`, el modelo seq2seq preentrenado a gran escala para vietnamita desarrollado por VinAI Research. El resultado es un checkpoint de 131.610.728 parámetros, publicado en Hugging Face con licencia MIT y pesos en safetensors, pensado para tareas de transformación entre una secuencia origen y una secuencia destino (de ahí el sufijo `src-tgt` del identificador).
 
 El interés práctico del modelo es doble. Por un lado, demuestra el flujo habitual de especialización de un encoder-decoder BART para vietnamita: se parte de un modelo base monolingüe ya preentrenado con el esquema de *denoising* de BART y se ajusta con un conjunto de datos que el autor no documenta. Por otro, el identificador delata un experimento dentro de una batería de pruebas: incluye la tasa de aprendizaje (`5e-05`), la marca temporal de ejecución (`20261024153454`) y una etiqueta de aumento de datos (`aug`), lo que sugiere una búsqueda de hiperparámetros o un *sweep* sobre datos aumentados.
 
@@ -12,7 +12,7 @@ Conviene ser explícito sobre su madurez: la *model card* es la generada automá
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder tipo BART (seq2seq, denoising), variante syllable de BARTpho; tag de libreria `mbart` en HuggingFace |
+| Arquitectura | Transformer encoder-decoder tipo BART (seq2seq, denoising), variante syllable de BARTpho; tag de libreria `mbart` en Hugging Face |
 | Parametros totales | 131.610.728 |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible (la model card no lo documenta) |
@@ -106,7 +106,7 @@ Datos de rendimiento comparativo: no disponible. Los resultados de resumen de vi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hnhung/viexdp-bartpho-syllable-base-src-tgt-aug-5e-05-20261024153454
+- Modelo en Hugging Face: https://huggingface.co/hnhung/viexdp-bartpho-syllable-base-src-tgt-aug-5e-05-20261024153454
 - Modelo base: https://huggingface.co/vinai/bartpho-syllable-base
 - Documentación de BARTpho en Transformers: https://huggingface.co/docs/transformers/model_doc/bartpho
 - Repositorio oficial de BARTpho (VinAI Research): https://github.com/VinAIResearch/BARTpho

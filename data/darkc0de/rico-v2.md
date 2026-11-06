@@ -2,9 +2,9 @@
 
 ## Resumen
 
-RICO-v2 (R.I.C.O.) es un ajuste fino experimental publicado por el usuario darkc0de dentro del proyecto "XORTRON Criminal Computing", un ejercicio de investigacion centrado en seguridad y alineacion de IA. El modelo parte de DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU y se presenta explicitamente como un sistema "uncensored", "abliterated" y "not-for-all-audiences", orientado a estudiar la capacidad de los modelos de lenguaje para generar contenido sensible u operativamente relevante en escenarios de abuso. Su pipeline declarado en HuggingFace es image-text-to-text, por lo que la familia base incorpora capacidad multimodal de entrada de imagen y texto.
+RICO-v2 (R.I.C.O.) es un ajuste fino experimental publicado por el usuario darkc0de dentro del proyecto "XORTRON Criminal Computing", un ejercicio de investigacion centrado en seguridad y alineacion de IA. El modelo parte de DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU y se presenta explicitamente como un sistema "uncensored", "abliterated" y "not-for-all-audiences", orientado a estudiar la capacidad de los modelos de lenguaje para generar contenido sensible u operativamente relevante en escenarios de abuso. Su pipeline declarado en Hugging Face es image-text-to-text, por lo que la familia base incorpora capacidad multimodal de entrada de imagen y texto.
 
-El modelo cuenta con 27.781.427.952 parametros reales (segun los safetensors del repositorio) y un repositorio de 55,6 GB en formato safetensors, con licencia declarada apache-2.0 en los metadatos de HuggingFace. La ficha del autor, sin embargo, impone un acuerdo de acceso restringido y uso autorizado, limitando el uso a perfiles profesionales concretos (investigacion en seguridad de IA, red teaming, analisis legal, fuerzas de seguridad, amenazas y fraude, entre otros), lo que genera una tension clara entre la licencia tecnica y las condiciones de uso publicadas.
+El modelo cuenta con 27.781.427.952 parametros reales (segun los safetensors del repositorio) y un repositorio de 55,6 GB en formato safetensors, con licencia declarada apache-2.0 en los metadatos de Hugging Face. La ficha del autor, sin embargo, impone un acuerdo de acceso restringido y uso autorizado, limitando el uso a perfiles profesionales concretos (investigacion en seguridad de IA, red teaming, analisis legal, fuerzas de seguridad, amenazas y fraude, entre otros), lo que genera una tension clara entre la licencia tecnica y las condiciones de uso publicadas.
 
 La relevancia del modelo es fundamentalmente metodologica: sirve como artefacto de estudio para medir hasta donde llega un modelo abliterado de ~27,8B en tareas de contenido restringido, y para documentar riesgos de mal uso. No es un modelo recomendado para produccion general, atencion al cliente ni aplicaciones comerciales convencionales. No se han publicado resultados de benchmarks ni especificaciones detalladas de contexto, cuantizacion o composicion de datos en la informacion disponible.
 
@@ -18,7 +18,7 @@ La relevancia del modelo es fundamentalmente metodologica: sirve como artefacto 
 | Longitud de contexto | No disponible en la informacion proporcionada |
 | Tipos de cuantizacion | No disponible. El repositorio solo publica safetensors; no se documentan versiones GGUF, AWQ, GPTQ ni FP8 |
 | Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 segun metadatos de HuggingFace; la model card impone adicionalmente un acuerdo de acceso restringido y uso autorizado (XORTRON Restricted Access & Authorized-Use Agreement) |
+| Licencia | apache-2.0 segun metadatos de Hugging Face; la model card impone adicionalmente un acuerdo de acceso restringido y uso autorizado (XORTRON Restricted Access & Authorized-Use Agreement) |
 | Formato de pesos | safetensors (libreria transformers) |
 | Tamano del repositorio | 55,6 GB |
 | Modelo base | DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU |
@@ -28,7 +28,7 @@ La relevancia del modelo es fundamentalmente metodologica: sirve como artefacto 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de los tags de HuggingFace: pipeline image-text-to-text, tag de arquitectura qwen3_5 y compatibilidad con transformers y text-generation-inference. Esto implica un modelo multimodal capaz de aceptar entradas de imagen y texto, construido sobre una familia base de tipo Qwen con 27,8B de parametros. No se especifica si emplea atencion completa, atencion lineal, mezcla de expertos ni ninguna otra innovacion de eficiencia; tampoco se documentan la longitud de contexto soportada ni la estrategia de tokenizacion.
+La informacion disponible no detalla la arquitectura interna mas alla de los tags de Hugging Face: pipeline image-text-to-text, tag de arquitectura qwen3_5 y compatibilidad con transformers y text-generation-inference. Esto implica un modelo multimodal capaz de aceptar entradas de imagen y texto, construido sobre una familia base de tipo Qwen con 27,8B de parametros. No se especifica si emplea atencion completa, atencion lineal, mezcla de expertos ni ninguna otra innovacion de eficiencia; tampoco se documentan la longitud de contexto soportada ni la estrategia de tokenizacion.
 
 Respecto al entrenamiento, lo unico verificable es la cadena de derivacion: un ajuste fino sobre DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, usando el dataset darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT, con la libreria Unsloth presente en los tags (lo que sugiere un flujo de fine-tuning eficiente en memoria, probablemente LoRA o QLoRA, aunque no se confirma ni se detalla el rango, el learning rate, el numero de pasos ni el volumen de tokens). No hay informacion sobre si se aplicaron etapas de RLHF, DPO, ORPO ni sobre la composicion del corpus. La etiqueta "abliterated" indica que se ha aplicado alguna tecnica de supresion o redireccion de direcciones de rechazo, pero no se documenta el metodo concreto.
 
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento del modelo ni de mediciones de alternativa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| darkc0de/RICO-v2 | 27,78B | no disponible | apache-2.0 + acuerdo de acceso restringido del autor | Publico en HuggingFace, 168 descargas | No publicados |
-| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU (modelo base) | no disponible | no disponible | no disponible | Publico en HuggingFace | No publicados |
+| darkc0de/RICO-v2 | 27,78B | no disponible | apache-2.0 + acuerdo de acceso restringido del autor | Publico en Hugging Face, 168 descargas | No publicados |
+| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU (modelo base) | no disponible | no disponible | no disponible | Publico en Hugging Face | No publicados |
 | Otras alternativas abliteradas de la misma categoria (~27B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento del modelo ni de mediciones de alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darkc0de/RICO-v2
+- Modelo en Hugging Face: https://huggingface.co/darkc0de/RICO-v2
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Dataset de ajuste: https://huggingface.co/datasets/darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT
 - Trend Micro Research, "Malicious Uses and Abuses of Artificial Intelligence": https://documents.trendmicro.com/assets/white_papers/wp-malicious-uses-and-abuses-of-artificial-intelligence.pdf
@@ -106,4 +106,4 @@ No se dispone de datos de rendimiento del modelo ni de mediciones de alternativa
 - United States Congress, 119th Congress Hearing Record: https://www.congress.gov/119/chrg/CHRG-119hhrg61182/CHRG-119hhrg61182.pdf
 - Imagen de portada del modelo: https://cdn-uploads.huggingface.co/production/uploads/6540a02d1389943fef4d2640/6eM6d0oMefCIL7vqFWXbp.png
 - Repositorio o paper adicional: no disponible
-- Demo o espacio de HuggingFace: no disponible
+- Demo o espacio de Hugging Face: no disponible

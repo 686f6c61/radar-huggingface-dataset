@@ -6,7 +6,7 @@ CoLa3D (Composable Latent 3D Decomposition) es un modelo de investigacion desarr
 
 La relevancia del trabajo reside en la descomposicion latente de escenas 3D, una tarea clave para edicion, reutilizacion de assets y generacion de contenido 3D. No es un modelo de lenguaje: es un modelo de vision y reconstruccion 3D, por lo que las secciones habituales de contexto, tool calling o benchmarks de texto no aplican y se marcan como no disponibles.
 
-La informacion publicada en HuggingFace es muy limitada: no hay pipeline declarado, ni licencia, ni idiomas, ni resultados de benchmarks en la model card. La ficha recoge lo que el autor ha publicado y marca explicitamente como no disponible todo lo demas.
+La informacion publicada en Hugging Face es muy limitada: no hay pipeline declarado, ni licencia, ni idiomas, ni resultados de benchmarks en la model card. La ficha recoge lo que el autor ha publicado y marca explicitamente como no disponible todo lo demas.
 
 ## Especificaciones tecnicas
 
@@ -69,13 +69,13 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 - Riesgo de alucinacion geometrica: en reconstruccion 3D, las partes ocluidas o no vistas de los objetos deben inferirse, lo que puede producir geometria plausible pero incorrecta.
 - Sin licencia declarada: no se puede confirmar el uso comercial; es imprescindible contactar con los autores antes de cualquier despliegue en produccion.
 - Idiomas y contexto no aplicables ni documentados.
-- Modelo de investigacion (NeurIPS 2026) con 0 descargas y 0 likes en HuggingFace: madurez y soporte comunitario limitados.
+- Modelo de investigacion (NeurIPS 2026) con 0 descargas y 0 likes en Hugging Face: madurez y soporte comunitario limitados.
 - No hay benchmarks publicados que permitan estimar la calidad de la reconstruccion ni de la descomposicion.
 - El repositorio es grande (25,3 GB), lo que complica su despliegue en entornos con almacenamiento o ancho de banda restringidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mastercai/CoLa3D
+- Hugging Face: https://huggingface.co/mastercai/CoLa3D
 - arXiv: https://arxiv.org/abs/2611.03533
 - Pagina del proyecto: https://master-cai.github.io/CoLa3D/
 - Codigo en GitHub: https://github.com/Master-cai/CoLa3D

@@ -74,8 +74,8 @@ La ficha no publica resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Seguridad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapgapiter_evfront_b010_r09 | 6.738.415.616 (fraccion de proyeccion 0,4999) | no disponible (base: 4.096) | AdvBench ASR 0,3500; StrongREJECT ASR 0,3600; over-refusal 0,0337 | llama2 | Repositorio HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | llama2 | Publico en HuggingFace |
+| svd-safety-l2_remove50_swapgapiter_evfront_b010_r09 | 6.738.415.616 (fraccion de proyeccion 0,4999) | no disponible (base: 4.096) | AdvBench ASR 0,3500; StrongREJECT ASR 0,3600; over-refusal 0,0337 | llama2 | Repositorio Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | llama2 | Publico en Hugging Face |
 | Otras celdas del grid del mismo estudio | no disponible | no disponible | no disponible | llama2 | no disponible |
 | Otras tecnicas de compresion SVD de Llama 2 (por ejemplo variantes de SVD-LLM sin reparacion) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ La informacion proporcionada no incluye resultados comparativos entre esta celda
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r09
+- Ficha del modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 Community License y politica de uso: incluidas en el propio repositorio (`LICENSE.txt`, `USE_POLICY.md`)
 - Paper de SVD-LLM: no disponible en la informacion proporcionada

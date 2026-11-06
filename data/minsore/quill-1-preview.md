@@ -83,10 +83,10 @@ El propio autor resume la lectura de estos datos: en benchmarks especificos de F
 
 | Modelo | Parametros | Contexto | HumanEval@50 | NextBench v0.2 | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| Quill 1 Preview | 0,494B | 1024 tokens | 54,0% | 45,0% | Apache 2.0 | GGUF y safetensors en HuggingFace |
+| Quill 1 Preview | 0,494B | 1024 tokens | 54,0% | 45,0% | Apache 2.0 | GGUF y safetensors en Hugging Face |
 | Arche-Codium 0.5B | 0,5B | no disponible | 96,0% | 5,0% | no disponible | no disponible en la informacion proporcionada |
 | Granite 4.0 1B | 1B | no disponible | 58,0% | 25,0% | no disponible | no disponible en la informacion proporcionada |
-| Qwen2.5-Coder 0.5B (base) | 0,494B | no disponible en esta ficha | 52,0% | 41,7% | Apache 2.0 | safetensors en HuggingFace |
+| Qwen2.5-Coder 0.5B (base) | 0,494B | no disponible en esta ficha | 52,0% | 41,7% | Apache 2.0 | safetensors en Hugging Face |
 
 La comparativa muestra un perfil claramente diferenciado: Quill renuncia al rendimiento en generacion de codigo completa a cambio de un rendimiento muy superior en infilling. Arche-Codium 0.5B domina la generacion (96,0% en HumanEval@50) pero cae a 0,053 de EditSim y al 5,0% en NextBench, es decir, rinde mal en la tarea de autocompletado. Granite 4.0 1B duplica el tamano y no supera a Quill en las metricas FIM.
 
@@ -106,10 +106,10 @@ La comparativa muestra un perfil claramente diferenciado: Quill renuncia al rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minsore/quill-1-preview
+- Modelo en Hugging Face: https://huggingface.co/minsore/quill-1-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Sitio del autor (Minsore): https://minsore.com
-- Organizacion en HuggingFace: https://huggingface.co/minsore
+- Organizacion en Hugging Face: https://huggingface.co/minsore
 - Perfil del autor: https://huggingface.co/Sollamon
 - Framework de entrenamiento (Unsloth): https://github.com/unslothai/unsloth
 - Motor de inferencia (llama.cpp): https://github.com/ggerganov/llama.cpp

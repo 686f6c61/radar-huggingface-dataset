@@ -91,8 +91,8 @@ La principal diferencia es que FluidAudio Web ofrece pesos crudos y motores escr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FluidInference/fluidaudio-web
+- Repositorio Hugging Face: https://huggingface.co/FluidInference/fluidaudio-web
 - Repositorio de código fluidaudio-web (GitHub): https://github.com/FluidInference/fluidaudio-web
-- Organización FluidInference en HuggingFace: https://huggingface.co/FluidInference
+- Organización FluidInference en Hugging Face: https://huggingface.co/FluidInference
 - FluidAudio (SDK Swift/CoreML): https://github.com/FluidInference/FluidAudio
 - Documentación técnica de FluidAudio (DeepWiki): https://deepwiki.com/FluidInference/FluidAudio

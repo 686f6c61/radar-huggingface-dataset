@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Chaotic-Order-24B-V2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Chaotic-Order-24B-V2-i1-GGUF
 - Modelo base: https://huggingface.co/Sorihon/Chaotic-Order-24B-V2
 - Version con cuantizaciones estaticas: https://huggingface.co/mradermacher/Chaotic-Order-24B-V2-GGUF

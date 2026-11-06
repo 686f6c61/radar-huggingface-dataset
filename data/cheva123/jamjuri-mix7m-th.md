@@ -23,7 +23,7 @@ Su relevancia es acotada y muy específica: sirve como material de ajuste o de e
 | Documentos totales | 30.069 |
 | Tokens totales | 8.302.257 |
 | Categoría de tamaño declarada | 10K < n < 100K (documentos) |
-| Tamaño del repositorio declarado en HuggingFace | 0,0 GB |
+| Tamaño del repositorio declarado en Hugging Face | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Pipeline declarado | no disponible |
 | Fecha de creación / actualización | 2026-09-13 (ambas, con 8 segundos de diferencia) |
@@ -111,7 +111,7 @@ No se dispone de información sobre corpus comparables de ajuste en tailandés e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cheva123/jamjuri-mix7m-th
+- Repositorio en Hugging Face: https://huggingface.co/Cheva123/jamjuri-mix7m-th
 - Corpus de origen citado en la model card: https://huggingface.co/datasets/SPAISS6F1/spai-ss6-llm-1b-thai-corpus
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
 - Resultados de búsqueda web relevantes: no se ha encontrado ninguno; las referencias recuperadas (Suisse Caravan Salon) no guardan relación con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.6-4B-NVFP4A16 es la cuantización de pesos en NVFP4A16 del modelo Spark-X2.6-4B, un LLM compacto de 4.112.079.360 parámetros (4,1B) desarrollado por XHToken y orientado a despliegue en dispositivo (on-device). Esta versión concreta la publica el usuario tuevuong en HuggingFace mediante `llmcompressor` con el esquema `model_free_ptq(scheme="NVFP4A16")`, sin datos de calibración, y deriva del checkpoint base `XHToken/Spark-X2.6-4B-Base`. El modelo conserva exactamente la arquitectura de Spark-X2.5-4B y obtiene sus mejoras exclusivamente de un post-entrenamiento refinado.
+Spark-X2.6-4B-NVFP4A16 es la cuantización de pesos en NVFP4A16 del modelo Spark-X2.6-4B, un LLM compacto de 4.112.079.360 parámetros (4,1B) desarrollado por XHToken y orientado a despliegue en dispositivo (on-device). Esta versión concreta la publica el usuario tuevuong en Hugging Face mediante `llmcompressor` con el esquema `model_free_ptq(scheme="NVFP4A16")`, sin datos de calibración, y deriva del checkpoint base `XHToken/Spark-X2.6-4B-Base`. El modelo conserva exactamente la arquitectura de Spark-X2.5-4B y obtiene sus mejoras exclusivamente de un post-entrenamiento refinado.
 
 El modelo resuelve el problema de ejecutar agentes y asistentes conversacionales con contexto muy largo en hardware de consumo: el autor de la cuantización reporta 256k tokens de contexto dentro de un presupuesto de ~10 GB de VRAM en una RTX 5070 Ti de 16 GB (Blackwell, SM120) sirviendo con vLLM. Incorpora un presupuesto de razonamiento configurable en tres niveles (none, low, high) que permite ajustar latencia y coste de inferencia por petición.
 
@@ -16,7 +16,7 @@ Es relevante ahora porque la ficha del modelo reclama un rendimiento en código,
 | Parametros totales | 4.112.079.360 (4,1B) |
 | Parametros activos | no disponible (no se declara que sea un modelo MoE) |
 | Longitud de contexto | 256k tokens (verificado por el autor de la cuantización en RTX 5070 Ti de 16 GB con ~10 GB de VRAM) |
-| Tipos de cuantizacion | NVFP4A16: pesos en FP4 con activaciones de 16 bits, cuantización weight-only generada con `llmcompressor` `model_free_ptq` sin datos de calibración; los tags de HuggingFace la etiquetan como 8-bit y `compressed-tensors` |
+| Tipos de cuantizacion | NVFP4A16: pesos en FP4 con activaciones de 16 bits, cuantización weight-only generada con `llmcompressor` `model_free_ptq` sin datos de calibración; los tags de Hugging Face la etiquetan como 8-bit y `compressed-tensors` |
 | Idiomas soportados | en, zh |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors con metadatos `compressed-tensors`; repositorio de 2,8 GB |

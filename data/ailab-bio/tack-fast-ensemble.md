@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TACK-Fast-Ensemble es un repositorio publicado en HuggingFace por el usuario ailab-bio bajo el identificador `ailab-bio/TACK-Fast-Ensemble`. A partir del nombre y del tamano del repositorio (0,8 GB) se deduce que se trata de un ensemble de modelos, probablemente orientado a una tarea de clasificacion o prediccion rapida, aunque la informacion publica disponible no confirma la tarea concreta ni la arquitectura subyacente. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni tarjeta de modelo con especificaciones tecnicas.
+TACK-Fast-Ensemble es un repositorio publicado en Hugging Face por el usuario ailab-bio bajo el identificador `ailab-bio/TACK-Fast-Ensemble`. A partir del nombre y del tamano del repositorio (0,8 GB) se deduce que se trata de un ensemble de modelos, probablemente orientado a una tarea de clasificacion o prediccion rapida, aunque la informacion publica disponible no confirma la tarea concreta ni la arquitectura subyacente. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni tarjeta de modelo con especificaciones tecnicas.
 
 El modelo cuenta con un volumen de descargas muy bajo (4 descargas) y ningun "like" en el momento de la consulta, lo que sugiere que se trata de un artefacto reciente, experimental o de uso interno, sin adopcion significativa por parte de la comunidad. La fecha de creacion (8 de octubre de 2026) y la ultima actualizacion (4 de noviembre de 2026) indican un desarrollo muy reciente y posiblemente en curso.
 
@@ -78,6 +78,6 @@ No disponible. No se conocen modelos comparables de la misma categoria a partir 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ailab-bio/TACK-Fast-Ensemble
+- Repositorio en Hugging Face: https://huggingface.co/ailab-bio/TACK-Fast-Ensemble
 - Perfil del autor: https://huggingface.co/ailab-bio
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

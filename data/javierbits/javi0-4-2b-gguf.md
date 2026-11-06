@@ -72,9 +72,9 @@ El autor indica explicitamente que se trata de una sonda dirigida y no de la eva
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Javi0.4-2B-GGUF | ~1,94 B | 131.072 (ejemplo llama.cpp) | Apache 2.0 | GGUF en HuggingFace | Edicion de pesos sobre Javi0.3-2B |
+| Javi0.4-2B-GGUF | ~1,94 B | 131.072 (ejemplo llama.cpp) | Apache 2.0 | GGUF en Hugging Face | Edicion de pesos sobre Javi0.3-2B |
 | Javi0.3-2B | ~1,94 B | no disponible | Apache 2.0 (heredada) | Safetensors | Modelo base sin la edicion; 8/8 `open_page` en la sonda |
-| Javi0.4-4B-GGUF | no disponible | no disponible | no disponible | GGUF en HuggingFace | Control de mayor tamano del mismo autor |
+| Javi0.4-4B-GGUF | no disponible | no disponible | no disponible | GGUF en Hugging Face | Control de mayor tamano del mismo autor |
 | Qwen3.5-2B | ~2 B | no disponible | Apache 2.0 | Safetensors | Modelo original del que deriva la arquitectura |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoria en la informacion proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/javierbits/Javi0.4-2B-GGUF
+- Hugging Face (GGUF): https://huggingface.co/javierbits/Javi0.4-2B-GGUF
 - Safetensors: https://huggingface.co/javierbits/Javi0.4-2B
 - Modelo base: https://huggingface.co/javierbits/Javi0.3-2B
 - Control 4B: https://huggingface.co/javierbits/Javi0.4-4B-GGUF

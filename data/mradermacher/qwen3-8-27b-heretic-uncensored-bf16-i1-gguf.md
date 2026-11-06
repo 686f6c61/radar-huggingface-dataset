@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-Uncensored-BF16-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-Uncensored-BF16-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-Uncensored-BF16-GGUF
 - Modelo base (BF16): https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-BF16
 - Herramienta Heretic (GitHub): https://github.com/p-e-w/heretic

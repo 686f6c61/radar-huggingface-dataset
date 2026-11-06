@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B-oQ8e-mtp es un artefacto de cuantizacion publicado por el usuario scottlowry en HuggingFace, no un modelo entrenado desde cero. Se trata de una version en 8 bits del modelo base ukisai/Swift-Qwen3.8-27b, obtenida mediante oQ (quantization de precision mixta del proyecto oMLX, version v0.7.0.dev2) y empaquetada en safetensors con la libreria MLX. El repositorio ocupa 30,0 GB y declara 27.781.427.952 parametros en el manifiesto de safetensors (aproximadamente 27,8 mil millones).
+Swift-Qwen3.8-27B-oQ8e-mtp es un artefacto de cuantizacion publicado por el usuario scottlowry en Hugging Face, no un modelo entrenado desde cero. Se trata de una version en 8 bits del modelo base ukisai/Swift-Qwen3.8-27b, obtenida mediante oQ (quantization de precision mixta del proyecto oMLX, version v0.7.0.dev2) y empaquetada en safetensors con la libreria MLX. El repositorio ocupa 30,0 GB y declara 27.781.427.952 parametros en el manifiesto de safetensors (aproximadamente 27,8 mil millones).
 
 Su relevancia es practica: permite ejecutar un modelo de ~27,8 B en hardware Apple Silicon con un peso en disco y en memoria cercano a 1 byte por parametro, en lugar de los ~55 GB que exigiria una version en bf16. El tipo de modelo declarado en la configuracion es `qwen3_5`, lo que situa la arquitectura en la familia Qwen 3.5, aunque ni la model card ni los metadatos publicados detallan la configuracion interna (numero de capas, atencion, posible componente MoE o longitud de contexto). El sufijo `mtp` del nombre no viene explicado en la documentacion publicada.
 
@@ -99,7 +99,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Swift-Qwen3.8-27B-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Swift-Qwen3.8-27B-oQ8e-mtp
 - Modelo base declarado: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Repositorio de la herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo, su autor ni su modelo base; los unicos enlaces utiles son los anteriores.

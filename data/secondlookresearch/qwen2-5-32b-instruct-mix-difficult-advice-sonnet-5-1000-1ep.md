@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (instruct-mix + difficult-advice) | 32 500 M (base) + LoRA r=64 | 131 072 tokens (base) | Adaptador LoRA sobre Qwen2.5-32B | apache-2.0 | HuggingFace, 30 descargas |
-| Qwen2.5-32B (base, `Qwen/Qwen2.5-32B`) | 32 500 M | 131 072 tokens | Modelo denso preentrenado | apache-2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-32B-Instruct | 32 500 M | 131 072 tokens | Modelo denso ajustado con instrucciones | apache-2.0 | HuggingFace, muy extendido |
-| `SecondLookResearch/Qwen2.5-32B-instruct-mix` | 32 500 M + LoRA r=64 | 131 072 tokens (base) | Adaptador de la fase 1 de la misma cadena | apache-2.0 | HuggingFace |
+| Este adaptador (instruct-mix + difficult-advice) | 32 500 M (base) + LoRA r=64 | 131 072 tokens (base) | Adaptador LoRA sobre Qwen2.5-32B | apache-2.0 | Hugging Face, 30 descargas |
+| Qwen2.5-32B (base, `Qwen/Qwen2.5-32B`) | 32 500 M | 131 072 tokens | Modelo denso preentrenado | apache-2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-32B-Instruct | 32 500 M | 131 072 tokens | Modelo denso ajustado con instrucciones | apache-2.0 | Hugging Face, muy extendido |
+| `SecondLookResearch/Qwen2.5-32B-instruct-mix` | 32 500 M + LoRA r=64 | 131 072 tokens (base) | Adaptador de la fase 1 de la misma cadena | apache-2.0 | Hugging Face |
 
 Comparación cualitativa: frente al Qwen2.5-32B-Instruct original, este adaptador no busca mejorar capacidades generales, sino modificar el comportamiento en escenarios de consejo difícil dentro de un experimento de alineación. No hay datos de rendimiento comparado disponibles, por lo que no es posible afirmar mejoras o degradaciones en tareas estándar.
 
@@ -87,7 +87,7 @@ Comparación cualitativa: frente al Qwen2.5-32B-Instruct original, este adaptado
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix-difficult-advice-sonnet-5-1000-1ep
+- Hugging Face del adaptador: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix-difficult-advice-sonnet-5-1000-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B
 - Adaptador de la fase 1: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix
 - Dataset de entrenamiento: https://huggingface.co/datasets/SecondLookResearch/teaching-qwen-why-data

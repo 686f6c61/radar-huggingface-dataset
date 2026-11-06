@@ -61,9 +61,9 @@ La comparativa se basa en el modelo base GRM-3.2-Sky, ya que la version FP8 mant
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GRM-3.2-Sky (FP8) | 34.7B | ~3B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3-30B-A3B | 30.5B | 3.3B | 32K | Apache 2.0 | HuggingFace |
-| DeepSeek-V3-Lite | 16B | 2.4B | 128K | MIT | HuggingFace |
+| GRM-3.2-Sky (FP8) | 34.7B | ~3B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3-30B-A3B | 30.5B | 3.3B | 32K | Apache 2.0 | Hugging Face |
+| DeepSeek-V3-Lite | 16B | 2.4B | 128K | MIT | Hugging Face |
 
 La comparativa se basa en modelos MoE de tamaño similar con parametros activos comparables. GRM-3.2-Sky se diferencia por su enfoque especifico en tareas agénticas de largo horizonte, mientras que las alternativas tienen fortalezas en otros dominios. Los datos de contexto y benchmarks comparativos no estan disponibles para una evaluacion completa.
 
@@ -78,6 +78,6 @@ La comparativa se basa en modelos MoE de tamaño similar con parametros activos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Crata/GRM-3.2-Sky-FP8
+- Modelo en Hugging Face: https://huggingface.co/Crata/GRM-3.2-Sky-FP8
 - Modelo base GRM-3.2-Sky: https://huggingface.co/OrionLLM/GRM-3.2-Sky
 - Ficha del modelo en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/grm-3.2-sky-orionllm

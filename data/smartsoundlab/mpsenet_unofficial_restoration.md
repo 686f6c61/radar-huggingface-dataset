@@ -49,8 +49,8 @@ No disponible. No se han encontrado comparaciones con otros modelos de mejora de
 - El modelo está etiquetado con "region:us", lo que podría indicar una orientación geográfica, aunque no se especifica su significado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/smartsoundlab/mpsenet_unofficial_restoration
+- Hugging Face: https://huggingface.co/smartsoundlab/mpsenet_unofficial_restoration
 - Repositorio oficial de MP-SENet: https://github.com/yxlu-0102/MP-SENet
 - Repositorio alternativo de MP-SENet: https://github.com/morikawa-taisuke/MP-SENet
 - Página de demostración del paper: https://yxlu-0102.github.io/MP-SENet/
-- Perfil del autor en HuggingFace: https://huggingface.co/smartsoundlab
+- Perfil del autor en Hugging Face: https://huggingface.co/smartsoundlab

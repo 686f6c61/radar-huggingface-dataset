@@ -73,8 +73,8 @@ No se dispone de datos de rendimiento de alternativas en la información proporc
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nvidia/Qwen3.8-Flash-Next-FP4-Local | 125B totales, 6B activos (+51B PLE, +4B MTP); 96.486.615.005 según safetensors | 262K nativos, hasta 1M | NVFP4 (FP4 QAD 1.0) | NVIDIA Open Model Agreement | HuggingFace, requiere contenedores NVIDIA y hardware Blackwell |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | mismos parametros declarados | 262K nativos, hasta 1M | no disponible (precisión original) | Qwen Community License 1.0 | HuggingFace |
+| nvidia/Qwen3.8-Flash-Next-FP4-Local | 125B totales, 6B activos (+51B PLE, +4B MTP); 96.486.615.005 según safetensors | 262K nativos, hasta 1M | NVFP4 (FP4 QAD 1.0) | NVIDIA Open Model Agreement | Hugging Face, requiere contenedores NVIDIA y hardware Blackwell |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | mismos parametros declarados | 262K nativos, hasta 1M | no disponible (precisión original) | Qwen Community License 1.0 | Hugging Face |
 | Otras alternativas de gama similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de alternativas en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base (Qwen Community License 1.0): https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - NVIDIA Open Model Agreement: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/

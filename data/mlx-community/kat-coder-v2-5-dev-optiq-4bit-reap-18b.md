@@ -91,7 +91,7 @@ La comparativa muestra que la poda reduce el tamano en disco en un 44 % y los pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/KAT-Coder-V2.5-Dev-OptiQ-4bit-REAP-18B
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/KAT-Coder-V2.5-Dev-OptiQ-4bit-REAP-18B
 - Modelo padre (cuantizado): https://huggingface.co/mlx-community/KAT-Coder-V2.5-Dev-OptiQ-4bit
 - Paper REAP (arXiv): https://arxiv.org/abs/2510.13999
 - Herramienta mlx-optiq: https://mlx-optiq.com

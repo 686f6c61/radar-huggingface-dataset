@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nm-testing/fp8_weight_only_channel-e2e` es un artefacto de pruebas publicado por el usuario `nm-testing` en HuggingFace. Su nombre sugiere que se trata de un modelo cuantizado con pesos en FP8 (8 bits) y compresión por canales, probablemente basado en la arquitectura Llama, dado el tag `llama`. Cuenta con aproximadamente 1.100 millones de parámetros y un tamaño de repositorio de 2,5 GB, lo que resulta coherente con una cuantización FP8 de un modelo de ese tamaño (el peso en FP8 ocuparía alrededor de 1,1 GB, aunque el repositorio incluye otros ficheros).
+El modelo `nm-testing/fp8_weight_only_channel-e2e` es un artefacto de pruebas publicado por el usuario `nm-testing` en Hugging Face. Su nombre sugiere que se trata de un modelo cuantizado con pesos en FP8 (8 bits) y compresión por canales, probablemente basado en la arquitectura Llama, dado el tag `llama`. Cuenta con aproximadamente 1.100 millones de parámetros y un tamaño de repositorio de 2,5 GB, lo que resulta coherente con una cuantización FP8 de un modelo de ese tamaño (el peso en FP8 ocuparía alrededor de 1,1 GB, aunque el repositorio incluye otros ficheros).
 
 La relevancia de este modelo es limitada fuera del ámbito de pruebas internas de Neural Magic (empresa asociada a `nm-testing`). No se dispone de información pública sobre su entrenamiento, capacidades o licencia, por lo que no puede recomendarse para uso en producción sin una evaluación adicional. Su etiqueta `region:us` podría indicar una restricción geográfica de despliegue, aunque no se detalla.
 
@@ -57,6 +57,6 @@ No se dispone de informacion sobre modelos comparables. Dado que es un modelo de
 
 ## Enlaces
 
-- [HuggingFace - nm-testing/fp8_weight_only_channel-e2e](https://huggingface.co/nm-testing/fp8_weight_only_channel-e2e)
+- [Hugging Face - nm-testing/fp8_weight_only_channel-e2e](https://huggingface.co/nm-testing/fp8_weight_only_channel-e2e)
 
 No se han encontrado papers, blogs o repositorios adicionales asociados a este modelo especifico.

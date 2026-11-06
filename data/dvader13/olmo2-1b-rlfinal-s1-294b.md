@@ -61,9 +61,9 @@ No se puede realizar una comparativa directa porque este repositorio es un check
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-2-0425-1B (base) | 1.3B | no disponible | Apache-2.0 | HuggingFace, pesos de inferencia |
-| OLMo-2-0425-1B-DPO | 1.3B | no disponible | Apache-2.0 | HuggingFace, post-entrenado con DPO |
-| OLMo-2-0425-1B-RLVR1 | 1.3B | no disponible | Apache-2.0 | HuggingFace, post-entrenado con RLVR |
+| OLMo-2-0425-1B (base) | 1.3B | no disponible | Apache-2.0 | Hugging Face, pesos de inferencia |
+| OLMo-2-0425-1B-DPO | 1.3B | no disponible | Apache-2.0 | Hugging Face, post-entrenado con DPO |
+| OLMo-2-0425-1B-RLVR1 | 1.3B | no disponible | Apache-2.0 | Hugging Face, post-entrenado con RLVR |
 | Este checkpoint (dvader13/olmo2-1b-rlfinal-s1-294b) | 1.3B | no aplicable | Apache-2.0 | Checkpoint de entrenamiento, no inferencia |
 
 ## Limitaciones y advertencias
@@ -77,7 +77,7 @@ No se puede realizar una comparativa directa porque este repositorio es un check
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-294b
+- Repositorio en Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-294b
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Modelo post-entrenado con RLVR: https://huggingface.co/allenai/OLMo-2-0425-1B-RLVR1
 - Repositorio de OLMo en GitHub: https://github.com/allenai/OLMo
@@ -142,9 +142,9 @@ No se puede realizar una comparativa directa de rendimiento porque este reposito
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-2-0425-1B (base) | 1.3B | No disponible | Apache-2.0 | HuggingFace, pesos de inferencia |
-| OLMo-2-0425-1B-DPO | 1.3B | No disponible | Apache-2.0 | HuggingFace, post-entrenado con DPO |
-| OLMo-2-0425-1B-RLVR1 | 1.3B | No disponible | Apache-2.0 | HuggingFace, post-entrenado con RLVR |
+| OLMo-2-0425-1B (base) | 1.3B | No disponible | Apache-2.0 | Hugging Face, pesos de inferencia |
+| OLMo-2-0425-1B-DPO | 1.3B | No disponible | Apache-2.0 | Hugging Face, post-entrenado con DPO |
+| OLMo-2-0425-1B-RLVR1 | 1.3B | No disponible | Apache-2.0 | Hugging Face, post-entrenado con RLVR |
 | dvader13/olmo2-1b-rlfinal-s1-294b | 1.3B | No aplicable | Apache-2.0 | Checkpoint de entrenamiento, no inferencia |
 
 ## Limitaciones y advertencias
@@ -158,7 +158,7 @@ No se puede realizar una comparativa directa de rendimiento porque este reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-294b
+- Repositorio en Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-294b
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Variante post-entrenada con RLVR: https://huggingface.co/allenai/OLMo-2-0425-1B-RLVR1
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo

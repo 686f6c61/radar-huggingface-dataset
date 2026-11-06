@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | CpGs | Método | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `twelvecelldeconvolutebloodepicneu` (pyaging) | Deconvolución basada en referencia | 240 | Constrained least squares | BSD-3-Clause | HuggingFace / pyaging |
+| `twelvecelldeconvolutebloodepicneu` (pyaging) | Deconvolución basada en referencia | 240 | Constrained least squares | BSD-3-Clause | Hugging Face / pyaging |
 | IDOL-Ext (Salas et al., 2022) | Deconvolución basada en referencia | 1.200 | Constrained least squares | No especificada | Código del artículo |
 | CIBERSORTx | Deconvolución basada en firma | Variable (depende del set) | Support vector regression | No libre para uso comercial | Plataforma web |
 
@@ -77,6 +77,6 @@ Nota: la comparación se basa en características generales; no se dispone de da
 
 ## Enlaces
 
-- [HuggingFace - pyaging/twelvecelldeconvolutebloodepicneu](https://huggingface.co/pyaging/twelvecelldeconvolutebloodepicneu)
+- [Hugging Face - pyaging/twelvecelldeconvolutebloodepicneu](https://huggingface.co/pyaging/twelvecelldeconvolutebloodepicneu)
 - [Documentación de pyaging (Clock Catalogue)](https://pyaging.readthedocs.io)
 - [Artículo original: Salas et al., Nature Communications 13, 761 (2022)](https://doi.org/10.1038/s41467-021-27864-7)

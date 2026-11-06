@@ -93,7 +93,7 @@ No se dispone de benchmarks comparativos entre estas variantes en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kindadodgy/qwen38-256k-on-16gb
+- Repositorio Hugging Face: https://huggingface.co/Kindadodgy/qwen38-256k-on-16gb
 - Repositorio GitHub (recetas, scripts, paper): https://github.com/7269827-rgb/qwen38-256k-on-16gb
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de despliegue local en 16 GB (RTX 5060 Ti): https://blog.margrop.net/en/post/qwen38-27b-local-deploy-5060ti-16g/

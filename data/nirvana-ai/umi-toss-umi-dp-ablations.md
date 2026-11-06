@@ -93,7 +93,7 @@ No se han proporcionado datos suficientes para una comparación cuantitativa con
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (9 ablaciones) | no disponible | no aplica | compuestos de validación entre 0,2317 y 0,9680 según subconjunto | MIT | HuggingFace |
+| Este repositorio (9 ablaciones) | no disponible | no aplica | compuestos de validación entre 0,2317 y 0,9680 según subconjunto | MIT | Hugging Face |
 | UMI Diffusion Policy, ejecución principal | no disponible | no aplica | no disponible | no disponible | referenciada, no incluida |
 | Otras *diffusion policies* para manipulación | no disponible | no aplica | no disponible | no disponible | no identificadas en la información proporcionada |
 

@@ -77,7 +77,7 @@ No se han publicado en la información disponible datos comparativos con otros m
 
 | Modelo | Parametros | Contexto | F1 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_summarizes_a_portion_of_the_current_lesson | 109,5 M | no disponible | 0,355 | no disponible | HuggingFace (0 descargas) |
+| assertion_summarizes_a_portion_of_the_current_lesson | 109,5 M | no disponible | 0,355 | no disponible | Hugging Face (0 descargas) |
 | Otros clasificadores de aserciones de Stanford SCALE | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de terceros para la misma tarea | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ No se han publicado en la información disponible datos comparativos con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_summarizes_a_portion_of_the_current_lesson
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_summarizes_a_portion_of_the_current_lesson
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (SumnerLab): https://github.com/SumnerLab/TalkMoves

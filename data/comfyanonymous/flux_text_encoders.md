@@ -72,6 +72,6 @@ No disponible. Este repositorio no es un modelo independiente, sino un component
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/comfyanonymous/flux_text_encoders
+- Repositorio en Hugging Face: https://huggingface.co/comfyanonymous/flux_text_encoders
 - Ejemplos de uso de FLUX en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/flux/
 - Repositorio de ComfyUI: https://github.com/comfyanonymous/ComfyUI

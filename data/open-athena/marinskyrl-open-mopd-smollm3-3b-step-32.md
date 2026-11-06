@@ -107,7 +107,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/MarinSkyRL-Open-MOPD-SmolLM3-3B-step-32
+- Modelo en Hugging Face: https://huggingface.co/open-athena/MarinSkyRL-Open-MOPD-SmolLM3-3B-step-32
 - Modelo base (SFT multidominio): https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT
 - Modelo final de los autores (paso 200): https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-Final
 - Dataset de entrenamiento Open-MOPD-Data: https://huggingface.co/datasets/BytedTsinghua-SIA/Open-MOPD-Data

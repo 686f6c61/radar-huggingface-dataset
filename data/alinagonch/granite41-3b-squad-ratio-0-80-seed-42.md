@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/granite41-3b-squad-ratio-0.80-seed-42` es un repositorio alojado en HuggingFace cuyo nombre sugiere un ajuste fino (fine-tuning) del modelo Granite 4.1 de 3B de parametros sobre el conjunto de datos SQuAD, con una proporcion de mezcla de datos de 0,80 y semilla 42. Esta interpretacion procede unicamente del identificador del repositorio: la model card publicada es la plantilla automatica de HuggingFace con todos los campos marcados como `[More Information Needed]`, por lo que el autor no documenta origen, datos de entrenamiento, hiperparametros ni resultados.
+`AlinaGonch/granite41-3b-squad-ratio-0.80-seed-42` es un repositorio alojado en Hugging Face cuyo nombre sugiere un ajuste fino (fine-tuning) del modelo Granite 4.1 de 3B de parametros sobre el conjunto de datos SQuAD, con una proporcion de mezcla de datos de 0,80 y semilla 42. Esta interpretacion procede unicamente del identificador del repositorio: la model card publicada es la plantilla automatica de Hugging Face con todos los campos marcados como `[More Information Needed]`, por lo que el autor no documenta origen, datos de entrenamiento, hiperparametros ni resultados.
 
 El repositorio no ha recibido descargas ni "likes" desde su creacion (segun los metadatos disponibles), y ocupa 0,1 GB, un tamano incompatible con un checkpoint completo de 3 000 millones de parametros en `safetensors` (que en bf16 rondaria los 6 GB). Esto apunta a que el repositorio contiene pesos parciales, adaptadores tipo LoRA o una subida incompleta, aunque no es posible confirmarlo con la informacion disponible.
 
@@ -31,7 +31,7 @@ Su relevancia actual es, por tanto, limitada y de caracter exploratorio: no hay 
 
 No hay informacion publicada sobre la arquitectura en la model card: el campo de descripcion del modelo, el de arquitectura y objetivo y el de infraestructura de computo estan marcados como `[More Information Needed]`. El identificador sugiere un transformer denso de aproximadamente 3 000 millones de parametros perteneciente a la familia Granite 4.1 de IBM, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
-Tampoco se documentan los datos de entrenamiento: no se especifica el numero de tokens, la composicion del dataset mas alla de la referencia a SQuAD implícita en el nombre, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. La unica referencia bibliografica presente en los tags, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla estandar de HuggingFace, y no a un paper del modelo.
+Tampoco se documentan los datos de entrenamiento: no se especifica el numero de tokens, la composicion del dataset mas alla de la referencia a SQuAD implícita en el nombre, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. La unica referencia bibliografica presente en los tags, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla estandar de Hugging Face, y no a un paper del modelo.
 
 ## Capacidades
 
@@ -76,7 +76,7 @@ Las cifras siguientes son estimaciones genericas para un transformer denso de ap
 
 No ha sido posible verificar datos de los modelos comparables a partir de la informacion disponible en esta busqueda, por lo que las celdas se dejan sin confirmar. La comparacion se limita a la categoria (modelos densos de aproximadamente 3 000 millones de parametros).
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad en HuggingFace |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad en Hugging Face |
 |---|---|---|---|---|
 | `AlinaGonch/granite41-3b-squad-ratio-0.80-seed-42` | 3B (inferido) | no disponible | no disponible | si, sin descargas |
 | IBM Granite 4.x 3B | ~3B | no verificado | no verificado | no verificado en esta busqueda |
@@ -98,7 +98,7 @@ No ha sido posible verificar datos de los modelos comparables a partir de la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.80-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.80-seed-42
 - Referencia citada en la plantilla de la model card (estimacion de emisiones): https://mlco2.github.io/impact
 - Articulo asociado al tag `arxiv:1910.09700` (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Paper, blog, repositorio de codigo o demo del modelo: no disponible

@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM: no aplica; el modelo se ejecuta en CPU con scikit-learn y no requiere GPU.
 - GPU recomendadas: ninguna; no se beneficia de aceleración por GPU en su implementación actual.
-- Cabe en cualquier equipo consumer: el artefacto `model.joblib` es de tamano reducido (el repositorio completo ocupa 0,0 GB según HuggingFace) y la inferencia consiste en extracción de características con Librosa más un forward pass de un MLP pequeño.
+- Cabe en cualquier equipo consumer: el artefacto `model.joblib` es de tamano reducido (el repositorio completo ocupa 0,0 GB según Hugging Face) y la inferencia consiste en extracción de características con Librosa más un forward pass de un MLP pequeño.
 - El cuello de botella real es la extracción de características con Librosa sobre 30 segundos de audio (carga, remuestreo, segmentación y cálculo de MFCC, croma, espectrograma mel, Tonnetz y onsets), que domina el tiempo de inferencia frente al propio clasificador.
 - Opciones de despliegue: script de Python (`inference.py`), API de Python importable, CLI, o envoltorio propio como servicio HTTP; no es compatible con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles en la información proporcionada.
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Enfoque | Clases | Entrada | Framework | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ruan-rodrigues/music-genre-classifier | MLP sobre 293 características de Librosa | 5 | Audio mono 22.050 Hz, mínimo 30 s | scikit-learn | no disponible | HuggingFace + GitHub |
+| ruan-rodrigues/music-genre-classifier | MLP sobre 293 características de Librosa | 5 | Audio mono 22.050 Hz, mínimo 30 s | scikit-learn | no disponible | Hugging Face + GitHub |
 | Modelos tipo CNN sobre espectrogramas mel (p. ej. variantes de Musicnn o similares) | Red convolucional end-to-end | Variable (habitualmente 8-10 géneros GTZAN) | Espectrogramas mel | PyTorch/TensorFlow | variable | Repositorios públicos |
-| Modelos de audio fundacionales (p. ej. familia CLAP o AST) | Transformer de audio con embeddings | Etiquetas abiertas vía zero-shot | Audio a 16-48 kHz | PyTorch | variable | HuggingFace |
+| Modelos de audio fundacionales (p. ej. familia CLAP o AST) | Transformer de audio con embeddings | Etiquetas abiertas vía zero-shot | Audio a 16-48 kHz | PyTorch | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo del modelo evaluado frente a estas alternativas en la información proporcionada. La comparación se limita a enfoque, tamano de la taxonomía y requisitos de infraestructura: el modelo de Rodrigues es el más ligero y el único que no requiere GPU, pero también el de menor cobertura de géneros y sin métricas publicadas.
 
@@ -97,5 +97,5 @@ No se dispone de datos de rendimiento comparativo del modelo evaluado frente a e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ruan-rodrigues/music-genre-classifier
+- Modelo en Hugging Face: https://huggingface.co/ruan-rodrigues/music-genre-classifier
 - Repositorio GitHub del proyecto original: https://github.com/Ruanrodrigues20/music-genre-classifier

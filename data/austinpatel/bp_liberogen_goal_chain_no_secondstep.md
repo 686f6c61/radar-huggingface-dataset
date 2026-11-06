@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bp_liberogen_goal_chain_no_secondstep` es un modelo publicado en HuggingFace por el usuario `austinpatel` y asociado al paper "What Enables In-Context Behavior Prompting for Manipulation?" (arXiv 2606.30457), cuyo código de referencia se aloja en el repositorio `real-stanford/behavior_prompting`. Por el nombre y el contexto del paper, se trata de un artefacto de investigación orientado a *behavior prompting* para tareas de manipulación robótica, es decir, la capacidad de inducir un comportamiento en un agente (un manipulador) a partir de ejemplos o instrucciones en contexto en lugar de un entrenamiento específico por tarea.
+`bp_liberogen_goal_chain_no_secondstep` es un modelo publicado en Hugging Face por el usuario `austinpatel` y asociado al paper "What Enables In-Context Behavior Prompting for Manipulation?" (arXiv 2606.30457), cuyo código de referencia se aloja en el repositorio `real-stanford/behavior_prompting`. Por el nombre y el contexto del paper, se trata de un artefacto de investigación orientado a *behavior prompting* para tareas de manipulación robótica, es decir, la capacidad de inducir un comportamiento en un agente (un manipulador) a partir de ejemplos o instrucciones en contexto en lugar de un entrenamiento específico por tarea.
 
 El repositorio ocupa 15,6 GB, un tamaño coherente con pesos de un modelo de robótica de escala media o con un *checkpoint* que incluye componentes auxiliares (codificadores visuales, cabezas de acción o múltiples variantes). El identificador sugiere una ablación concreta dentro del estudio: una variante de "goal chain" sin un segundo paso, lo que indica que no es un modelo de propósito general sino una configuración experimental para comparar mecanismos de prompting.
 
@@ -73,6 +73,6 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/austinpatel/bp_liberogen_goal_chain_no_secondstep
+- Hugging Face: https://huggingface.co/austinpatel/bp_liberogen_goal_chain_no_secondstep
 - Paper: https://huggingface.co/papers/2606.30457
 - Código: https://github.com/real-stanford/behavior_prompting

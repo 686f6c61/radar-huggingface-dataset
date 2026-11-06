@@ -107,7 +107,7 @@ Advertencia sobre la comparativa: el proyecto `firelex/jeff` aparece en los resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jersobh/jeff-2b-gguf
+- Modelo en Hugging Face: https://huggingface.co/jersobh/jeff-2b-gguf
 - Modelo base: https://huggingface.co/internlm/Intern-Decision-2B
 - Repositorio GitHub del autor: https://github.com/jersobh
 - Proyecto relacionado (decisión de 0,8 B, no confirmado como el mismo modelo): https://github.com/firelex/jeff

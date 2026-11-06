@@ -83,10 +83,10 @@ Estos valores corresponden a un escenario de prosa corta y no deben extrapolarse
 
 | Modelo | Parametros | Formato / tamano | Bits por peso | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| groxaxo/Qwen3.8-Flash-Next-exl3-unsloth-shaped-h8-mtp5 (este) | ~32,59 mil millones | EXL3 safetensors, ~104,4 GB de repo (65,2 GB pesos + 39 GB n-gram) | 3,821 efectivos (hasta 8 en tensores sensibles) | 262.144 en la config de servido | qwen-community-1.0 | Público en HuggingFace, 0 descargas |
-| groxaxo/Qwen3.8-Flash-Next-exl3-3.50bpw_hq_h6_ng6 (hermano) | ~32,59 mil millones | EXL3 safetensors | ~3,50 | no disponible | qwen-community-1.0 | Público en HuggingFace |
-| turboderp/Qwen3.8-Flash-Next-exl3, rama 4.05bpw_h6_ng6 | ~32,59 mil millones | EXL3 safetensors | ~4,05 | no disponible | qwen-community-1.0 | Público en HuggingFace |
-| Qwen/Qwen3.8-Flash-Next (base) | ~32,59 mil millones | BF16, 336 GB | 16 | no disponible | qwen-community-1.0 | Público en HuggingFace |
+| groxaxo/Qwen3.8-Flash-Next-exl3-unsloth-shaped-h8-mtp5 (este) | ~32,59 mil millones | EXL3 safetensors, ~104,4 GB de repo (65,2 GB pesos + 39 GB n-gram) | 3,821 efectivos (hasta 8 en tensores sensibles) | 262.144 en la config de servido | qwen-community-1.0 | Público en Hugging Face, 0 descargas |
+| groxaxo/Qwen3.8-Flash-Next-exl3-3.50bpw_hq_h6_ng6 (hermano) | ~32,59 mil millones | EXL3 safetensors | ~3,50 | no disponible | qwen-community-1.0 | Público en Hugging Face |
+| turboderp/Qwen3.8-Flash-Next-exl3, rama 4.05bpw_h6_ng6 | ~32,59 mil millones | EXL3 safetensors | ~4,05 | no disponible | qwen-community-1.0 | Público en Hugging Face |
+| Qwen/Qwen3.8-Flash-Next (base) | ~32,59 mil millones | BF16, 336 GB | 16 | no disponible | qwen-community-1.0 | Público en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos checkpoints más allá de la afirmación del autor de que esta receta "debería igualar o superar" al corte 3.50 HQ en servido, sin cifras de calidad que la respalden.
 
@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento comparativo entre estos checkpoints más a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/Qwen3.8-Flash-Next-exl3-unsloth-shaped-h8-mtp5
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/Qwen3.8-Flash-Next-exl3-unsloth-shaped-h8-mtp5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Corte hermano 3.50 HQ: https://huggingface.co/groxaxo/Qwen3.8-Flash-Next-exl3-3.50bpw_hq_h6_ng6

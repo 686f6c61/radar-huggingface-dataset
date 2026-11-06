@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DylanBrown/clip-experiment` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia y compacta de una arquitectura CLIP (Contrastive Language-Image Pre-Training) en PyTorch, en su configuracion `tiny`. No se trata de un modelo preentrenado listo para produccion: el propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo y revision de codigo, no un modelo entrenado ni evaluado con benchmarks.
+`DylanBrown/clip-experiment` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia y compacta de una arquitectura CLIP (Contrastive Language-Image Pre-Training) en PyTorch, en su configuracion `tiny`. No se trata de un modelo preentrenado listo para produccion: el propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo y revision de codigo, no un modelo entrenado ni evaluado con benchmarks.
 
 El modelo tiene unicamente 24.832 parametros totales, un orden de magnitud muy inferior al de cualquier CLIP operativo (las variantes publicadas de OpenAI CLIP manejan decenas o cientos de millones de parametros). Incorpora decisiones de diseno poco habituales para un CLIP estandar, como atencion sparse, fusion gated entre modalidades, activacion mish y normalizacion RMSNorm, documentadas en su `config.json` y en la tabla de arquitectura de la model card.
 
@@ -67,7 +67,7 @@ No hay datos de rendimiento de este repositorio que permitan una comparacion cua
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DylanBrown/clip-experiment | 24.832 | no disponible | No (checkpoint de inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
+| DylanBrown/clip-experiment | 24.832 | no disponible | No (checkpoint de inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
 | OpenAI CLIP (referencia citada en la busqueda: repositorio openai/CLIP) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Si (entrenado sobre pares imagen-texto a escala de internet) | no disponible en la informacion proporcionada | Repositorio publico en GitHub, codigo y pesos |
 | Alternativas de la misma categoria (OpenCLIP, SigLIP, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,13 +80,13 @@ La unica afirmacion contrastable es de naturaleza cualitativa: las implementacio
 - Riesgo de alucinacion: no evaluable, porque el modelo no genera texto entrenado; cualquier salida del forward pass es esencialmente aleatoria respecto a la tarea.
 - No hay informacion sobre idiomas soportados, tokenizador, vocabulario ni longitud de contexto, por lo que no puede garantizarse cobertura de ningun idioma.
 - La licencia BSD-3-Clause permite uso comercial del codigo, pero el propio autor advierte que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
-- Las APIs de carga automatica de HuggingFace no funcionan directamente: requiere un adaptador explicito por tratarse de una implementacion personalizada.
+- Las APIs de carga automatica de Hugging Face no funcionan directamente: requiere un adaptador explicito por tratarse de una implementacion personalizada.
 - No es apto para produccion: el autor lo describe como punto de partida experimental para revision de codigo, pruebas de humo y experimentos pequenos y controlados.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberia documentarse por separado de los valores por defecto aqui publicados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DylanBrown/clip-experiment
+- Hugging Face: https://huggingface.co/DylanBrown/clip-experiment
 - Repositorio de referencia de OpenAI CLIP (citado en la busqueda): https://github.com/openai/CLIP
 - Articulo sobre deteccion de imagenes generadas por IA usando CLIP como backbone: https://arxiv.org/html/2404.08788v1
 - Calendario de lanzamientos de modelos de IA (referencia general): https://www.scriptbyai.com/ai-model-release-calendar/

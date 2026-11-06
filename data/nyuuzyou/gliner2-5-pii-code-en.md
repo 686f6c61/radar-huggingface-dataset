@@ -95,9 +95,9 @@ Como referencia externa, OpenAI Privacy Filter obtuvo SPY F1 de 0,426 y F1 de c�
 
 | Modelo | Parametros | Contexto | SPY F1 | Code F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gliner2.5-PII-code-en | 193,5 M | no disponible | 0,825 | 0,968 | Apache-2.0 | HuggingFace (22 descargas) |
-| fastino/gliner2.5-base-v1 | no disponible | no disponible | 0,547 | 0,428 | no disponible en la información | HuggingFace |
-| fastino/gliner2-privacy-filter-PII-multi | no disponible | no disponible | 0,512 | 0,470 | no disponible en la información | HuggingFace |
+| gliner2.5-PII-code-en | 193,5 M | no disponible | 0,825 | 0,968 | Apache-2.0 | Hugging Face (22 descargas) |
+| fastino/gliner2.5-base-v1 | no disponible | no disponible | 0,547 | 0,428 | no disponible en la información | Hugging Face |
+| fastino/gliner2-privacy-filter-PII-multi | no disponible | no disponible | 0,512 | 0,470 | no disponible en la información | Hugging Face |
 | Jev (TypeSafe) | no disponible | no disponible | 0,817 | 0,818 | no disponible | Referencia externa en la model card |
 | OpenAI Privacy Filter | no disponible | no disponible | 0,426 | 0,576 | no disponible | Referencia externa en la model card |
 
@@ -115,7 +115,7 @@ Como referencia externa, OpenAI Privacy Filter obtuvo SPY F1 de 0,426 y F1 de c�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nyuuzyou/gliner2.5-PII-code-en
+- Modelo en Hugging Face: https://huggingface.co/nyuuzyou/gliner2.5-PII-code-en
 - Dataset de entrenamiento: https://huggingface.co/datasets/nyuuzyou/gliner2.5-PII-code-en-data
 - Resultados completos: https://huggingface.co/nyuuzyou/gliner2.5-PII-code-en/blob/main/docs/results.md
 - Nota de comparación con Fastino: https://huggingface.co/nyuuzyou/gliner2.5-PII-code-en/blob/main/docs/results.md#external-reference-fastino-model-card-spy-results

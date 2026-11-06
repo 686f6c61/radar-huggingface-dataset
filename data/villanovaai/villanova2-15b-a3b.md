@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Villanova2-15B-A3B es un modelo de lenguaje publicado en HuggingFace por el usuario VillanovaAI bajo el identificador `VillanovaAI/Villanova2-15B-A3B`. La nomenclatura del nombre sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 15 mil millones de parametros totales y unos 3 mil millones de parametros activos por token, un patron habitual en modelos tipo "A3B" (por ejemplo, variantes eficientes de familias MoE). Sin embargo, la informacion publica disponible en HuggingFace es practicamente inexistente: no se especifican pipeline, licencia, idiomas ni detalles de arquitectura, y el repositorio esta marcado como restringido (gated), lo que obliga a aceptar condiciones antes de acceder a los pesos.
+Villanova2-15B-A3B es un modelo de lenguaje publicado en Hugging Face por el usuario VillanovaAI bajo el identificador `VillanovaAI/Villanova2-15B-A3B`. La nomenclatura del nombre sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 15 mil millones de parametros totales y unos 3 mil millones de parametros activos por token, un patron habitual en modelos tipo "A3B" (por ejemplo, variantes eficientes de familias MoE). Sin embargo, la informacion publica disponible en Hugging Face es practicamente inexistente: no se especifican pipeline, licencia, idiomas ni detalles de arquitectura, y el repositorio esta marcado como restringido (gated), lo que obliga a aceptar condiciones antes de acceder a los pesos.
 
 El modelo aparece con cero descargas y un unico "like" en el momento de la consulta, y las fechas de creacion y actualizacion son identicas (2026-11-04), lo que sugiere una publicacion reciente sin documentacion asociada. No se han encontrado papers, blogs tecnicos ni repositorios complementarios que permitan verificar las capacidades reales del modelo.
 
@@ -78,7 +78,7 @@ La comparacion con estos modelos es meramente orientativa por similitud de perfi
 
 - Ausencia total de documentacion tecnica: no hay model card sustantiva, paper ni blog que describa el entrenamiento o las capacidades.
 - Licencia desconocida: no se puede garantizar el uso comercial ni la redistribucion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para evaluacion y despliegue.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para evaluacion y despliegue.
 - Riesgo elevado de alucinacion y comportamiento impredecible al no existir evaluaciones publicadas.
 - Imposibilidad de verificar sesgos: no hay informacion sobre composicion del dataset ni sobre procesos de alineacion.
 - Idiomas soportados desconocidos: no se puede asumir un buen rendimiento en castellano ni en otros idiomas.
@@ -89,7 +89,7 @@ La comparacion con estos modelos es meramente orientativa por similitud de perfi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VillanovaAI/Villanova2-15B-A3B
+- Hugging Face: https://huggingface.co/VillanovaAI/Villanova2-15B-A3B
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SaguaroAIMonitoring/YOLO_26_Trained es un repositorio de HuggingFace publicado por el usuario SaguaroAIMonitoring que, por su nombre, corresponde a un modelo de la familia YOLO26 de Ultralytics entrenado o ajustado por terceros. El repositorio no incluye model card descriptiva: el unico contenido declarado es la linea de licencia (`license: cc`). No se especifica la tarea concreta (deteccion, segmentacion, estimacion de pose o clasificacion), el tamano del modelo ni el dataset de ajuste.
+SaguaroAIMonitoring/YOLO_26_Trained es un repositorio de Hugging Face publicado por el usuario SaguaroAIMonitoring que, por su nombre, corresponde a un modelo de la familia YOLO26 de Ultralytics entrenado o ajustado por terceros. El repositorio no incluye model card descriptiva: el unico contenido declarado es la linea de licencia (`license: cc`). No se especifica la tarea concreta (deteccion, segmentacion, estimacion de pose o clasificacion), el tamano del modelo ni el dataset de ajuste.
 
 YOLO26 es la generacion mas reciente de la familia YOLO de Ultralytics, orientada a vision por computador en tiempo real con arquitectura extremo a extremo. La documentacion oficial describe variantes con distintos compromisos entre precision, latencia y coste computacional, y flujos de exportacion a TensorRT, ONNX, CoreML y TFLite. Segun la receta de entrenamiento publicada, los modelos YOLO26 se preentrenan en Objects365 y se ajustan despues en COCO.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SaguaroAIMonitoring/YOLO_26_Trained | no disponible | no aplica | no disponible | cc (variante sin especificar) | Repositorio HuggingFace publico, 0 descargas |
-| Ultralytics/YOLO26 (oficial) | no disponible en las fuentes consultadas | no aplica | Variantes publicadas segun la documentacion oficial | no confirmado en las fuentes consultadas | Repositorio oficial en HuggingFace y GitHub |
+| SaguaroAIMonitoring/YOLO_26_Trained | no disponible | no aplica | no disponible | cc (variante sin especificar) | Repositorio Hugging Face publico, 0 descargas |
+| Ultralytics/YOLO26 (oficial) | no disponible en las fuentes consultadas | no aplica | Variantes publicadas segun la documentacion oficial | no confirmado en las fuentes consultadas | Repositorio oficial en Hugging Face y GitHub |
 | Otras generaciones YOLO (por ejemplo YOLOv8, YOLO11) | no disponible en las fuentes consultadas | no aplica | no disponible | no confirmado en las fuentes consultadas | Repositorios oficiales de Ultralytics |
 
 No se dispone de datos cuantitativos que permitan una comparacion rigurosa de precision, latencia o coste computacional entre este checkpoint y las alternativas de la misma categoria.
@@ -83,9 +83,9 @@ No se dispone de datos cuantitativos que permitan una comparacion rigurosa de pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaguaroAIMonitoring/YOLO_26_Trained
+- Repositorio Hugging Face: https://huggingface.co/SaguaroAIMonitoring/YOLO_26_Trained
 - Repositorio GitHub de YOLO26 (Ultralytics): https://github.com/ultralytics/yolo26
 - Documentacion oficial de YOLO26: https://docs.ultralytics.com/models/yolo26
-- Repositorio oficial Ultralytics/YOLO26 en HuggingFace: https://huggingface.co/Ultralytics/YOLO26
+- Repositorio oficial Ultralytics/YOLO26 en Hugging Face: https://huggingface.co/Ultralytics/YOLO26
 - Receta de entrenamiento de YOLO26: https://docs.ultralytics.com/guides/yolo26-training-recipe
 - Analisis de arquitectura y benchmarks de YOLO26 (Unitlab): https://blog.unitlab.ai/yolo-26-release-architecture-performance-benchmarks-and-real-world-use-cases-2026-guide/

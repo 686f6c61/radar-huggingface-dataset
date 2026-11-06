@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SalmonAI123/yt2026_batch02_10kh` es un corpus de audio en vietnamita extraido de YouTube mediante rastreo automatico, publicado en HuggingFace bajo el identificador de SalmonAI123. A pesar de estar registrado con el pipeline `automatic-speech-recognition` y las etiquetas propias de ASR, no se trata de un modelo entrenado sino de un conjunto de datos de audio en bruto: 11.884,0 horas repartidas en 17.754 ficheros `.webm` (Opus, 48 kHz, mono, sin recodificacion), procedentes de 320 canales de YouTube y con un tamano total de 624,7 GB. El repositorio incluye ademas 18.800 ficheros de metadatos `info.json` generados con yt-dlp y un `manifest.jsonl` con la procedencia de cada clip.
+`SalmonAI123/yt2026_batch02_10kh` es un corpus de audio en vietnamita extraido de YouTube mediante rastreo automatico, publicado en Hugging Face bajo el identificador de SalmonAI123. A pesar de estar registrado con el pipeline `automatic-speech-recognition` y las etiquetas propias de ASR, no se trata de un modelo entrenado sino de un conjunto de datos de audio en bruto: 11.884,0 horas repartidas en 17.754 ficheros `.webm` (Opus, 48 kHz, mono, sin recodificacion), procedentes de 320 canales de YouTube y con un tamano total de 624,7 GB. El repositorio incluye ademas 18.800 ficheros de metadatos `info.json` generados con yt-dlp y un `manifest.jsonl` con la procedencia de cada clip.
 
 El rasgo definitorio del corpus es su ventana temporal: solo incluye videos publicados entre el 1 de enero de 2026 y el 6 de octubre de 2026, aplicando un filtro duro en el momento del rastreo y auditable clip a clip mediante el campo `upload_date`. Segun el autor, esto lo hace disjunto de corpus publicos anteriores como GigaSpeech 1 (que cubre 2018-2021) o GigaSpeech 2 (anterior a 2026), lo que resulta util para combinar fuentes sin solapamientos.
 
@@ -32,7 +32,7 @@ Datos adicionales del corpus:
 | Tamano total | 624,7 GB |
 | Tamano medio / mediano por fichero | 35,2 MB / 9,1 MB |
 | Ventana de publicacion | 20260101 a 20261006 (solo 2026, filtro duro) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 ## Requisitos de hardware
 
 - Almacenamiento: 624,7 GB para el corpus completo; conviene descargar subconjuntos con filtros (`--include "UCxxx/*"`) para no replicar el total en disco local.
-- Ancho de banda: la descarga de las 11.884,0 h desde HuggingFace es la operacion mas costosa en tiempo; el tamano medio por fichero es de 35,2 MB.
+- Ancho de banda: la descarga de las 11.884,0 h desde Hugging Face es la operacion mas costosa en tiempo; el tamano medio por fichero es de 35,2 MB.
 - GPU para inferencia: no aplica al corpus en si. Para transcribirlo con un modelo ASR externo, el cuello de botella es ese modelo, no el corpus.
 - Cabe en GPU de consumo: no aplica al corpus (son ficheros de audio); la decodificacion de Opus y el procesamiento de audio son tareas de CPU y se pueden paralelizar en cualquier maquina.
 - Despliegue: el propio autor indica que el repositorio no es cargable con la libreria `datasets`; hay que usar `hf_hub_download` o `hf download` y construir los shards localmente (tar, WebDataset o Parquet).
@@ -106,15 +106,15 @@ No se dispone de datos comparativos de rendimiento, ya que ni este corpus ni los
 - Sesgo temporal estricto: nada anterior al 1 de enero de 2026 esta incluido, lo que limita el estudio de evolucion linguistica y puede introducir sesgos propios del periodo.
 - Contenido sujeto a cambios: si un propietario elimina un video, el elemento puede retirarse del repositorio tras un aviso, lo que rompe la reproducibilidad de conjuntos de evaluacion fijados previamente.
 - Riesgo de alucinacion: no aplica, al no ser un modelo generativo.
-- Discrepancia en los metadatos de HuggingFace: la ficha de la plataforma declara un tamano de repositorio de 0,0 GB, mientras que la model card indica 624,7 GB. Conviene verificar el estado real de los ficheros antes de planificar una descarga masiva.
+- Discrepancia en los metadatos de Hugging Face: la ficha de la plataforma declara un tamano de repositorio de 0,0 GB, mientras que la model card indica 624,7 GB. Conviene verificar el estado real de los ficheros antes de planificar una descarga masiva.
 - Idioma unico: el corpus es vietnamita; no debe asumirse utilidad para otras lenguas del sudeste asiatico.
 - Sin particiones oficiales de entrenamiento, validacion y test: cualquier division es responsabilidad del usuario y debe documentarse para que los resultados sean comparables.
-- Metadatos de HuggingFace sin traccion: 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion de la comunidad ni erratas conocidas reportadas.
+- Metadatos de Hugging Face sin traccion: 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion de la comunidad ni erratas conocidas reportadas.
 - Uso responsable: al tratarse de habla real de personas identificables en YouTube, su empleo para reconocimiento de hablantes o inferencia de atributos personales plantea problemas eticos y legales que van mas alla de la licencia de investigacion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SalmonAI123/yt2026_batch02_10kh
+- Hugging Face: https://huggingface.co/SalmonAI123/yt2026_batch02_10kh
 - GigaSpeech 1: mencionado en la model card como corpus de 2018-2021; no se proporciona enlace en la informacion disponible
 - GigaSpeech 2: mencionado en la model card como corpus anterior a 2026; no se proporciona enlace en la informacion disponible
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada

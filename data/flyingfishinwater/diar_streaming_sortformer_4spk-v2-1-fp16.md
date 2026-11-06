@@ -92,11 +92,11 @@ No se dispone de informacion sobre otros modelos comparables de diarizacion en s
 - Limitaciones de idioma no documentadas: aunque el modelo opera sobre caracteristicas acusticas, no se especifica su comportamiento en distintos idiomas ni en audio no nativo.
 - Sensibilidad a la calidad del audio: la entrada debe ser mono a 16 kHz; fuentes con ruido de fondo, reverberacion o grabaciones telefonicas muy comprimidas pueden degradar la deteccion.
 - Sin benchmarks publicados: no se pueden comparar sus resultados con alternativas de la misma categoria a partir de la informacion disponible.
-- Fecha de creacion anomala: el repositorio figura creado el 18 de septiembre de 2026, dato que conviene contrastar directamente en HuggingFace.
+- Fecha de creacion anomala: el repositorio figura creado el 18 de septiembre de 2026, dato que conviene contrastar directamente en Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flyingfishinwater/diar_streaming_sortformer_4spk-v2.1-fp16
+- Repositorio en Hugging Face: https://huggingface.co/flyingfishinwater/diar_streaming_sortformer_4spk-v2.1-fp16
 - Modelo base: https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2.1
 - Libreria mlx-audio (mencionada en la model card, instalable con `pip install -U mlx-audio`): no se proporciona URL en la informacion disponible
 - Paper o blog tecnico de Sortformer: no disponible en la informacion proporcionada

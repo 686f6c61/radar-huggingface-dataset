@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `beit-large-patch16-224-pt22k-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel`. Se construye a partir del backbone `microsoft/beit-large-patch16-224-pt22k`, un transformer de visión BEiT (BERT Pre-Training for Image Transformers) preentrenado con 22.000 clases de ImageNet-22k, al que se le ha sustituido y entrenado únicamente la cabeza de clasificación lineal para predecir 10 clases morfológicas sobre el conjunto Galaxy10 DECaLS.
+El modelo `beit-large-patch16-224-pt22k-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel`. Se construye a partir del backbone `microsoft/beit-large-patch16-224-pt22k`, un transformer de visión BEiT (BERT Pre-Training for Image Transformers) preentrenado con 22.000 clases de ImageNet-22k, al que se le ha sustituido y entrenado únicamente la cabeza de clasificación lineal para predecir 10 clases morfológicas sobre el conjunto Galaxy10 DECaLS.
 
 El modelo forma parte de una colección más amplia denominada Vision Foundation Models Benchmark, que evalúa 40 backbones preentrenados bajo dos regímenes de adaptación distintos (head-only y fine-tuning completo) en el contexto de un artículo en revisión para la revista *Astronomy and Computing* titulado *When foundation models meet astronomical data*. Este checkpoint concreto corresponde al régimen de head-only fine-tuning, con el backbone congelado y solo la capa lineal final entrenada.
 
@@ -63,7 +63,7 @@ Evolución de la accuracy de test a lo largo del entrenamiento (semilla 42): 13,
 - VRAM estimada en fp16/bf16: aproximadamente 0,7-0,8 GB para los pesos; el modelo cabe holgadamente en cualquier GPU consumer moderna.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para inferencia (RTX 3060, RTX 4060, RTX 4090); para entrenamiento de la cabeza lineal basta una GPU de gama media, ya que el backbone está congelado. El autor usó una única GPU en fp32.
 - Cabe en GPU consumer: sí, en todas las GPU consumer con 4 GB o más de VRAM.
-- Opciones de despliegue: transformers (AutoModelForImageClassification + AutoImageProcessor), exportación a ONNX, TorchScript o TensorRT para producción; también es compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Opciones de despliegue: transformers (AutoModelForImageClassification + AutoImageProcessor), exportación a ONNX, TorchScript o TensorRT para producción; también es compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de resultados de los otros 39 bac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/beit-large-patch16-224-pt22k-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/beit-large-patch16-224-pt22k-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/microsoft/beit-large-patch16-224-pt22k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

@@ -43,7 +43,7 @@ El modelo base pertenece a la familia Gemma en su cuarta generacion, con una con
 - Reproducción y comparación de experimentos: al ser un delta de pesos de 2,0 GB, permite cargar y descargar el ajuste sobre el base sin duplicar los pesos completos, útil en entornos con almacenamiento limitado.
 - Tareas de análisis de dependencias en inglés: si se confirma la orientación del ajuste, podría usarse para procesamiento lingüístico (por ejemplo, extracción de relaciones de dependencia), aunque no hay validación ni documentación que lo respalde.
 - Fine-tuning incremental sobre un adaptador existente: el delta puede servir como punto de partida para ajustes posteriores o para fusiones (LoRA merging) en experimentación.
-- Docencia y formación: ejemplo didáctico de publicación de adaptadores PEFT y de estructura de repositorio en HuggingFace.
+- Docencia y formación: ejemplo didáctico de publicación de adaptadores PEFT y de estructura de repositorio en Hugging Face.
 - Evaluación de degradación o sobreajuste: útil para estudiar cómo un SFT ligero sobre un modelo instructivo grande afecta a tareas generales, siempre que se documente el dataset, lo cual aquí falta.
 - No se recomienda su uso directo en producción: la ausencia de licencia, de evaluación y de documentación impide justificar un despliegue real.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_dependency_en | Adaptador LoRA sobre base 26B (A4B) | No disponible | No disponible | No disponible | HuggingFace, PEFT |
-| unsloth/gemma-4-26B-A4B-it (base) | 26B totales, aprox. 4B activos | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen3-30B-A3B (MoE comparable por tamano) | 30B totales, aprox. 3B activos | No disponible | No disponible | No disponible | HuggingFace |
+| GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_dependency_en | Adaptador LoRA sobre base 26B (A4B) | No disponible | No disponible | No disponible | Hugging Face, PEFT |
+| unsloth/gemma-4-26B-A4B-it (base) | 26B totales, aprox. 4B activos | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen3-30B-A3B (MoE comparable por tamano) | 30B totales, aprox. 3B activos | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa fiable. La tabla anterior se limita a situar el artefacto frente a alternativas de tamaño similar, sin cifras de rendimiento verificables.
 
@@ -87,7 +87,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable. La 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_dependency_en
+- Repositorio Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_dependency_en
 - Modelo base: https://huggingface.co/unsloth/gemma-4-26B-A4B-it
 - Paper citado en las etiquetas (calculadora de impacto de carbono, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Herramienta asociada al paper: https://mlco2.github.io/impact

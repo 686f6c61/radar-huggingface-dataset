@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario linfelix bajo el identificador `linfelix/visual-question-answering`, no contiene un modelo entrenado ni un checkpoint utilizable. Se trata de una nota de investigación ("research note") sobre la tarea de *Visual Question Answering* (VQA), es decir, un documento que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El propio autor lo declara explícitamente en la model card: "no se presenta como un artículo completo ni como una publicación de modelos entrenados".
+Este repositorio de Hugging Face, publicado por el usuario linfelix bajo el identificador `linfelix/visual-question-answering`, no contiene un modelo entrenado ni un checkpoint utilizable. Se trata de una nota de investigación ("research note") sobre la tarea de *Visual Question Answering* (VQA), es decir, un documento que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El propio autor lo declara explícitamente en la model card: "no se presenta como un artículo completo ni como una publicación de modelos entrenados".
 
-El repositorio está etiquetado con los tags `research-notes` y `visual-question-answering`, y su pipeline declarado en HuggingFace es `visual-question-answering`, aunque no existe ninguna funcionalidad de inferencia asociada. El tamaño del repositorio es de 0.0 GB y cuenta con 0 descargas y 0 likes, lo que confirma que no es un artefacto con usuarios ni validación por parte de la comunidad.
+El repositorio está etiquetado con los tags `research-notes` y `visual-question-answering`, y su pipeline declarado en Hugging Face es `visual-question-answering`, aunque no existe ninguna funcionalidad de inferencia asociada. El tamaño del repositorio es de 0.0 GB y cuenta con 0 descargas y 0 likes, lo que confirma que no es un artefacto con usuarios ni validación por parte de la comunidad.
 
 El único dato numérico de pesos disponible (24.832 parámetros según el fichero safetensors) es coherente con un artefacto residual o de prueba, no con un modelo capaz de realizar VQA, que requiere arquitecturas multimodales de cientos de millones a miles de millones de parámetros. En consecuencia, esta ficha debe interpretarse como documentación de un recurso metodológico, no de un modelo desplegable.
 
@@ -83,7 +83,7 @@ No disponible. Los modelos comparables en la categoría VQA (por ejemplo, arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/linfelix/visual-question-answering
+- Hugging Face: https://huggingface.co/linfelix/visual-question-answering
 - Fichero `summary.md` del repositorio (referenciado en la model card, accesible desde la página del modelo)
 - Fichero `README.md` del repositorio (documentación incluida en la model card)
 - Datasets mencionados como contexto de evaluación (referencias, no enlaces directos en la información proporcionada): VQAv2, GQA, OK-VQA

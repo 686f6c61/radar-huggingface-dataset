@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mphd1/gpt2-xl_dollyext_private` es un ajuste fino (fine-tune) del modelo GPT-2 XL de OpenAI, publicado por el usuario mphd1 en HuggingFace. Se trata de un modelo decoder-only de tipo transformer, con 1.557.611.200 parámetros totales (aproximadamente 1,5 mil millones) y un tamaño de repositorio de 6,2 GB, lo que corresponde a pesos almacenados en precisión de 32 bits junto con los ficheros auxiliares.
+`mphd1/gpt2-xl_dollyext_private` es un ajuste fino (fine-tune) del modelo GPT-2 XL de OpenAI, publicado por el usuario mphd1 en Hugging Face. Se trata de un modelo decoder-only de tipo transformer, con 1.557.611.200 parámetros totales (aproximadamente 1,5 mil millones) y un tamaño de repositorio de 6,2 GB, lo que corresponde a pesos almacenados en precisión de 32 bits junto con los ficheros auxiliares.
 
 El modelo se ha generado con la librería `transformers` y el `Trainer` estándar, partiendo de `openai-community/gpt2-xl`. La model card es la plantilla automática que produce el Trainer y no documenta el conjunto de datos de entrenamiento: aparece como "unknown dataset" y todos los apartados descriptivos quedan como "More information needed". El nombre del repositorio sugiere un ajuste sobre una variante extendida de Dolly, pero este extremo no está confirmado en la información disponible.
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mphd1/gpt2-xl_dollyext_private | 1,56B | 1024 | Ninguno (model-index vacío) | MIT | HuggingFace, 0 descargas |
-| openai-community/gpt2-xl (base) | 1,56B | 1024 | Resultados ampliamente reportados en la literatura para GPT-2 XL | MIT modificada | HuggingFace, muy extendido |
-| EleutherAI/gpt-neo-1.3B | 1,3B | 2048 | Reportados por EleutherAI en su model card | MIT | HuggingFace, ampliamente usado |
-| facebook/opt-1.3b | 1,3B | 2048 | Reportados por Meta en su model card | MIT (con cláusula de uso aceptable) | HuggingFace, ampliamente usado |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2048 | Reportados por el equipo (MMLU, ARC, HellaSwag) | Apache 2.0 | HuggingFace, muy extendido |
+| mphd1/gpt2-xl_dollyext_private | 1,56B | 1024 | Ninguno (model-index vacío) | MIT | Hugging Face, 0 descargas |
+| openai-community/gpt2-xl (base) | 1,56B | 1024 | Resultados ampliamente reportados en la literatura para GPT-2 XL | MIT modificada | Hugging Face, muy extendido |
+| EleutherAI/gpt-neo-1.3B | 1,3B | 2048 | Reportados por EleutherAI en su model card | MIT | Hugging Face, ampliamente usado |
+| facebook/opt-1.3b | 1,3B | 2048 | Reportados por Meta en su model card | MIT (con cláusula de uso aceptable) | Hugging Face, ampliamente usado |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2048 | Reportados por el equipo (MMLU, ARC, HellaSwag) | Apache 2.0 | Hugging Face, muy extendido |
 
 Frente a las alternativas, este modelo solo ofrece como diferencial el ajuste fino, cuyos datos y efectos no están documentados, y carece de benchmarks que permitan situarlo. El modelo base GPT-2 XL, GPT-Neo 1.3B y OPT-1.3B doblan la ventana de contexto en el caso de los dos últimos y cuentan con evaluaciones publicadas.
 
@@ -92,7 +92,7 @@ Frente a las alternativas, este modelo solo ofrece como diferencial el ajuste fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mphd1/gpt2-xl_dollyext_private
+- Modelo en Hugging Face: https://huggingface.co/mphd1/gpt2-xl_dollyext_private
 - Modelo base GPT-2 XL: https://huggingface.co/openai-community/gpt2-xl
 
 La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los resultados obtenidos no guardan relación con el repositorio ni con IA open source, por lo que no se incluyen. No se dispone de paper, blog, repositorio de código ni demo asociados al modelo.

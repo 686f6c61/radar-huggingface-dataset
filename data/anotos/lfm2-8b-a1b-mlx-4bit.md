@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Formato y tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Anotos/LFM2-8B-A1B-MLX-4bit | 8,34 B | ~1,5 B | no disponible | MLX safetensors, 4,69 GB en disco, ~4,7 GB de pico en M4 | LFM Open License v1.0 | HuggingFace, conversion comunitaria |
-| LiquidAI/LFM2-8B-A1B | 8,34 B | ~1,5 B | no disponible | safetensors (precisions disponibles: no disponible) | LFM Open License v1.0 | HuggingFace, modelo oficial de Liquid AI |
+| Anotos/LFM2-8B-A1B-MLX-4bit | 8,34 B | ~1,5 B | no disponible | MLX safetensors, 4,69 GB en disco, ~4,7 GB de pico en M4 | LFM Open License v1.0 | Hugging Face, conversion comunitaria |
+| LiquidAI/LFM2-8B-A1B | 8,34 B | ~1,5 B | no disponible | safetensors (precisions disponibles: no disponible) | LFM Open License v1.0 | Hugging Face, modelo oficial de Liquid AI |
 | Conversion comunitaria previa de 5,21 GB (mismo modelo base) | 8,34 B | ~1,5 B | no disponible | MLX, 5,21 GB en disco, ~5,5 GB de pico en M4 | LFM Open License v1.0 | Comunitaria; identificador no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anotos/LFM2-8B-A1B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Anotos/LFM2-8B-A1B-MLX-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-8B-A1B
 - Licencia LFM Open License v1.0: disponible en el fichero LICENSE del repositorio del modelo
 - Busqueda web: los resultados obtenidos no guardan relacion con el modelo y no se incluyen como fuentes

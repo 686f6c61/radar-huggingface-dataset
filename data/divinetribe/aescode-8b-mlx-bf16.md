@@ -77,8 +77,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AesCode-8B (este repo, MLX bf16) | 8,8B | no disponible | Apache-2.0 | HuggingFace, formato MLX | Especializado en HTML/CSS desde imagen; Overall 82,94 en evaluación propia |
-| Qwen3-VL-8B-Instruct | 8B | no disponible | no disponible en la información | HuggingFace | Modelo base; AesCode lo supera en +31,1 puntos Visual según el paper |
+| AesCode-8B (este repo, MLX bf16) | 8,8B | no disponible | Apache-2.0 | Hugging Face, formato MLX | Especializado en HTML/CSS desde imagen; Overall 82,94 en evaluación propia |
+| Qwen3-VL-8B-Instruct | 8B | no disponible | no disponible en la información | Hugging Face | Modelo base; AesCode lo supera en +31,1 puntos Visual según el paper |
 | GPT-5.5 (referencia condicionada) | no disponible | no disponible | propietaria | API | Overall 81,28 en la misma tabla del paper |
 | Claude Opus 4.8 (referencia condicionada) | no disponible | no disponible | propietaria | API | Overall 80,39 en la misma tabla del paper |
 
@@ -95,7 +95,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/divinetribe/AesCode-8B-MLX-bf16
+- Repositorio Hugging Face: https://huggingface.co/divinetribe/AesCode-8B-MLX-bf16
 - Variante 8-bit: https://huggingface.co/divinetribe/AesCode-8B-MLX-8bit
 - Variante 4-bit: https://huggingface.co/divinetribe/AesCode-8B-MLX-4bit
 - Modelo original de Microsoft: https://huggingface.co/microsoft/AesCode-8B

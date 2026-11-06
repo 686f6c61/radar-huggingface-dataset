@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-abliterated-2.60bpw-SC-SH es una cuantizacion EXL3 (formato exl3 de ExLlamaV3) del modelo Huihui-Qwen3.8-27B-abliterated, que a su vez es una variante con el comportamiento de rechazo eliminado (abliteration) del Qwen/Qwen3.8-27B original. El autor de la cuantizacion es el usuario de HuggingFace Derpyhue, que publica una serie de variantes a distintos bitrates (2.55, 2.60 y 2.65 bpw) optimizadas por atribucion de ruido (sc_optimize) con la opcion de Hessiano escalado (-sh) activada. El objetivo es claro: comprimir un modelo multimodal de 27B nominales hasta unos 12 GB en disco manteniendo la mayor fidelidad posible respecto a la referencia BF16.
+Qwen3.8-27B-abliterated-2.60bpw-SC-SH es una cuantizacion EXL3 (formato exl3 de ExLlamaV3) del modelo Huihui-Qwen3.8-27B-abliterated, que a su vez es una variante con el comportamiento de rechazo eliminado (abliteration) del Qwen/Qwen3.8-27B original. El autor de la cuantizacion es el usuario de Hugging Face Derpyhue, que publica una serie de variantes a distintos bitrates (2.55, 2.60 y 2.65 bpw) optimizadas por atribucion de ruido (sc_optimize) con la opcion de Hessiano escalado (-sh) activada. El objetivo es claro: comprimir un modelo multimodal de 27B nominales hasta unos 12 GB en disco manteniendo la mayor fidelidad posible respecto a la referencia BF16.
 
 El modelo base es un vision-language nativo de 64 capas con arquitectura hibrida (Gated DeltaNet + Gated Attention), 262K tokens de contexto nativo extensible a 1M, comprension de imagen y video, y entrenamiento con prediccion multi-token (MTP). La cuantizacion asigna bitrates por tensor en lugar de aplicar una tasa uniforme: 4.0 bpw para la cabeza de salida (LM head), 4.0 bpw para las capas MTP y 6.0 bpw para el torre de vision, con una media de 2.60 bpw (2.5999 reales).
 
@@ -97,7 +97,7 @@ No se dispone de informacion en la busqueda web sobre modelos de terceros compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Derpyhue/Qwen3.8-27B-abliterated-2.60bpw-SC-SH
+- Modelo en Hugging Face: https://huggingface.co/Derpyhue/Qwen3.8-27B-abliterated-2.60bpw-SC-SH
 - Variante 2.55 bpw: https://huggingface.co/Derpyhue/Qwen3.8-27B-abliterated-2.55bpw-SC-SH
 - Variante 2.65 bpw: https://huggingface.co/Derpyhue/Qwen3.8-27B-abliterated-2.65bpw-SC-SH
 - Serie principal SC: https://huggingface.co/Derpyhue/Qwen3.8-27B-exl3-2.65bpw-SC-SH
@@ -105,4 +105,4 @@ No se dispone de informacion en la busqueda web sobre modelos de terceros compar
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - ExLlamaV3: https://github.com/turboderp/exllamav3
 - tabbyAPI: https://github.com/theroyallab/tabbyAPI
-- Listado de modelos de HuggingFace (referencia de descubrimiento): https://huggingface.co/models?sort=created
+- Listado de modelos de Hugging Face (referencia de descubrimiento): https://huggingface.co/models?sort=created

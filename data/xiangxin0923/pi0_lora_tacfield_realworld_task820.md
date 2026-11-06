@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa directa con otros modelos. Este checkpoint es un LoRA específico para una tarea, por lo que no es directamente comparable con modelos generalistas como π₀ o π₀.5 completos. Se puede mencionar que existen otros checkpoints similares en HuggingFace, como `xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820`, que probablemente comparten la misma base pero con variaciones en el dataset o el entrenamiento.
+No se dispone de información suficiente para realizar una comparativa directa con otros modelos. Este checkpoint es un LoRA específico para una tarea, por lo que no es directamente comparable con modelos generalistas como π₀ o π₀.5 completos. Se puede mencionar que existen otros checkpoints similares en Hugging Face, como `xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820`, que probablemente comparten la misma base pero con variaciones en el dataset o el entrenamiento.
 
 ## Limitaciones y advertencias
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/xiangxin0923/pi0_lora_tacfield_realworld_task820)
+- [Hugging Face del modelo](https://huggingface.co/xiangxin0923/pi0_lora_tacfield_realworld_task820)
 - [Modelo similar: pi05_lora_tacfield_realworld_replayed_task820](https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820)
 - [Documentación de π₀ en LeRobot](https://huggingface.co/docs/lerobot/pi0)
 - [Paper de π₀ (arXiv)](https://arxiv.org/html/2410.24164v1)

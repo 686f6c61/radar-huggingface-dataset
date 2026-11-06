@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Conformaciones | Grafo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gRNAde v0.3.2 3-state das (este) | 2,157 M | 3 | Solo espacial | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v0.3.2 1-state all | 2,157 M | 1 | Solo espacial | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v0.3.2 5-state das | 2,157 M | 5 | Solo espacial | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v1 | 2,157 M | Múltiple | Secuencia + pares de bases + espacial | AGPL-3.0 | HuggingFace (oteam) |
+| gRNAde v0.3.2 3-state das (este) | 2,157 M | 3 | Solo espacial | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v0.3.2 1-state all | 2,157 M | 1 | Solo espacial | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v0.3.2 5-state das | 2,157 M | 5 | Solo espacial | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v1 | 2,157 M | Múltiple | Secuencia + pares de bases + espacial | AGPL-3.0 | Hugging Face (oteam) |
 
 Las variantes comparten arquitectura y número de parámetros; difieren en el número de conformaciones soportadas y en el tipo de grafo. No se dispone de datos de rendimiento comparativo entre ellas en la información proporcionada.
 
@@ -90,7 +90,7 @@ Las variantes comparten arquitectura y número de parámetros; difieren en el n�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/grnade-v0.3.2-3state-das
+- Modelo en Hugging Face: https://huggingface.co/oteam/grnade-v0.3.2-3state-das
 - Repositorio de código OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/grnade
 - Guía del pipeline: https://github.com/OTeam-AI4S/OFoldX/blob/main/ofoldx/pipelines/README.md
 - Documentación de la librería: https://ofoldx.valtech.ai/

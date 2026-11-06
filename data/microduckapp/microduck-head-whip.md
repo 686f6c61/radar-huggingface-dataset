@@ -25,7 +25,7 @@ Su relevancia es práctica para quien trabaje con el ecosistema Microduck: es un
 | Frecuencia de control | 50 Hz |
 | Duracion del movimiento | 10,6 s |
 | Artefactos del repo | `policy.onnx`, `manifest.json`, `media/preview.mp4` |
-| Tamano del repo | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repo | 0,0 GB (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -100,8 +100,8 @@ No se dispone de datos públicos de otras políticas comparables en la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microduckapp/microduck-head-whip
-- Organización MicroDuck en HuggingFace: https://huggingface.co/microduckapp
+- Modelo en Hugging Face: https://huggingface.co/microduckapp/microduck-head-whip
+- Organización MicroDuck en Hugging Face: https://huggingface.co/microduckapp
 - Repositorio del robot Microduck: https://github.com/pollen-robotics/microduck
 - Cobertura de MarkTechPost sobre Microduck: https://www.marktechpost.com/2026/08/28/pollen-robotics-hugging-face-microduck-399-open-source-rl-biped-robot/
 - Cobertura de TechCrunch: https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/

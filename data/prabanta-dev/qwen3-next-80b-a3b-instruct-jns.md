@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad frente a alte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prabanta-dev/Qwen3-Next-80B-A3B-Instruct-JNS
+- Repositorio en Hugging Face: https://huggingface.co/prabanta-dev/Qwen3-Next-80B-A3B-Instruct-JNS
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
 - Version GGUF del modelo base: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct-GGUF
 - Repositorio del motor Janas: https://github.com/prabanta-dev/janas

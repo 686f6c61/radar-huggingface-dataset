@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SoSolaris/xvla-b0921-1602-p05_fullft es una política robótica de tipo Vision-Language-Action (VLA) publicada por el usuario SoSolaris en HuggingFace Hub. No es un modelo de lenguaje: es un controlador de imitación entrenado para ejecutar una tarea física concreta ("Grab the tape", coger la cinta) sobre un brazo robot SO-101 en configuración `so101_follower`. El modelo parte del checkpoint base `lerobot/xvla-base` y ha sido ajustado con 20 episodios y 7071 fotogramas grabados a 15 FPS, dentro del ecosistema LeRobot 0.6.2.
+SoSolaris/xvla-b0921-1602-p05_fullft es una política robótica de tipo Vision-Language-Action (VLA) publicada por el usuario SoSolaris en Hugging Face Hub. No es un modelo de lenguaje: es un controlador de imitación entrenado para ejecutar una tarea física concreta ("Grab the tape", coger la cinta) sobre un brazo robot SO-101 en configuración `so101_follower`. El modelo parte del checkpoint base `lerobot/xvla-base` y ha sido ajustado con 20 episodios y 7071 fotogramas grabados a 15 FPS, dentro del ecosistema LeRobot 0.6.2.
 
 Técnicamente, se apoya en X-VLA, un marco de flow matching con soft prompts descrito en el paper arXiv 2510.10274. La idea central de X-VLA es tratar cada configuración de robot o hardware como una "tarea" representada por un conjunto reducido de embeddings de Soft Prompt aprendibles, de modo que un único modelo puede reconciliar morfologías, sensores y espacios de acción distintos. Esta ficha concreta corresponde a un ajuste fino de tarea única sobre esa base.
 
@@ -82,10 +82,10 @@ La información proporcionada no incluye datos comparativos de rendimiento. La t
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SoSolaris/xvla-b0921-1602-p05_fullft | 879 687 256 | VLA con flow matching, ajuste de tarea unica | apache-2.0 | HuggingFace Hub, libreria lerobot |
-| lerobot/xvla-base | no disponible | VLA con flow matching, modelo base | no disponible | HuggingFace Hub |
-| Políticas de imitación tipo ACT / Diffusion Policy en LeRobot | no disponible | Imitación supervisada / difusión | no disponible | HuggingFace Hub, libreria lerobot |
-| Otras políticas VLA abiertas del ecosistema LeRobot | no disponible | VLA | no disponible | HuggingFace Hub |
+| SoSolaris/xvla-b0921-1602-p05_fullft | 879 687 256 | VLA con flow matching, ajuste de tarea unica | apache-2.0 | Hugging Face Hub, libreria lerobot |
+| lerobot/xvla-base | no disponible | VLA con flow matching, modelo base | no disponible | Hugging Face Hub |
+| Políticas de imitación tipo ACT / Diffusion Policy en LeRobot | no disponible | Imitación supervisada / difusión | no disponible | Hugging Face Hub, libreria lerobot |
+| Otras políticas VLA abiertas del ecosistema LeRobot | no disponible | VLA | no disponible | Hugging Face Hub |
 
 No se dispone en la información proporcionada de cifras de parámetros, contexto ni rendimiento de las alternativas que permitan una comparación cuantitativa rigurosa.
 
@@ -105,7 +105,7 @@ No se dispone en la información proporcionada de cifras de parámetros, context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoSolaris/xvla-b0921-1602-p05_fullft
+- Modelo en Hugging Face: https://huggingface.co/SoSolaris/xvla-b0921-1602-p05_fullft
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/SoSolaris/FlourishGrabTape
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=SoSolaris/FlourishGrabTape

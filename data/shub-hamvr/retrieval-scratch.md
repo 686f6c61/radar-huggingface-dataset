@@ -63,9 +63,9 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 - **Alto riesgo de alucinación**: al no estar entrenado, cualquier salida generada será ruido aleatorio; no debe usarse en producción.
 - **Sin soporte de contexto largo**: no se especifica la longitud de contexto, pero dado el tamaño, es probablemente muy limitada.
 - **Restricciones de licencia**: aunque la licencia BSD-3-Clause permite uso comercial, el autor recomienda revisar los términos de los datos externos si se usan con datasets como Flickr30k.
-- **Requiere adaptador**: las APIs genéricas de HuggingFace no cargarán este modelo sin un adaptador explícito, lo que dificulta su uso en pipelines estándar.
+- **Requiere adaptador**: las APIs genéricas de Hugging Face no cargarán este modelo sin un adaptador explícito, lo que dificulta su uso en pipelines estándar.
 
 ## Enlaces
 
-- [HuggingFace - SHUB-HAMVR/retrieval-scratch](https://huggingface.co/SHUB-HAMVR/retrieval-scratch)
-- [Perfil de SHUB-HAMVR en HuggingFace](https://huggingface.co/SHUB-HAMVR)
+- [Hugging Face - SHUB-HAMVR/retrieval-scratch](https://huggingface.co/SHUB-HAMVR/retrieval-scratch)
+- [Perfil de SHUB-HAMVR en Hugging Face](https://huggingface.co/SHUB-HAMVR)

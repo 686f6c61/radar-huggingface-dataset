@@ -87,7 +87,7 @@ No se ha proporcionado información sobre modelos comparables de la misma catego
 
 | Modelo | Tipo | Escala | Latencia | Consumo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| malecns-connectome-robotics-2026 | SNN basada en conectoma biológico | 166.745 neuronas, 2.753.975 sinapsis; categoría 10 M-100 M | 5,67 ms (declarada) | 0,05 W (declarado) | MIT | Repositorio en HuggingFace, 0,0 GB, 0 descargas, 0 "likes" |
+| malecns-connectome-robotics-2026 | SNN basada en conectoma biológico | 166.745 neuronas, 2.753.975 sinapsis; categoría 10 M-100 M | 5,67 ms (declarada) | 0,05 W (declarado) | MIT | Repositorio en Hugging Face, 0,0 GB, 0 descargas, 0 "likes" |
 | VLA en GPU en la nube (referencia genérica citada en la model card) | Visión-lenguaje-acción | No disponible | No disponible | 700 W | No disponible | No aplica |
 
 Comparativas adicionales: no disponibles.
@@ -106,8 +106,8 @@ Comparativas adicionales: no disponibles.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hwihwalab/malecns-connectome-robotics-2026
-- Demo interactiva 3D (HuggingFace Spaces): https://huggingface.co/spaces/hwihwalab/neuro-robo-studio
+- Modelo en Hugging Face: https://huggingface.co/hwihwalab/malecns-connectome-robotics-2026
+- Demo interactiva 3D (Hugging Face Spaces): https://huggingface.co/spaces/hwihwalab/neuro-robo-studio
 - Documentación en coreano (README_KR.md): https://huggingface.co/hwihwalab/malecns-connectome-robotics-2026/blob/main/README_KR.md
 - Firmware de despliegue (arduino_esp32_firmware.cpp): https://huggingface.co/hwihwalab/malecns-connectome-robotics-2026/blob/main/arduino_esp32_firmware.cpp
 - Resultados de benchmark declarados (benchmark_results.json): https://huggingface.co/hwihwalab/malecns-connectome-robotics-2026/blob/main/benchmark_results.json

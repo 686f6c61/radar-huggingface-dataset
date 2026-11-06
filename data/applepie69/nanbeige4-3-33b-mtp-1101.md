@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-MTP-1101 | 694 M (cabeza) | no disponible | Cabeza MTP para decodificación especulativa | Apache 2.0 | HuggingFace |
-| Nanbeige/Nanbeige4.3-33B | 33B | no disponible | LLM base | no disponible en la información | HuggingFace |
+| Nanbeige4.3-33B-MTP-1101 | 694 M (cabeza) | no disponible | Cabeza MTP para decodificación especulativa | Apache 2.0 | Hugging Face |
+| Nanbeige/Nanbeige4.3-33B | 33B | no disponible | LLM base | no disponible en la información | Hugging Face |
 | Cabezas MTP de DeepSeek-V3 | no disponible | no disponible | MTP integrada en el modelo | no disponible | Integrada en DeepSeek-V3 |
 | EAGLE / EAGLE-2 | no disponible | no disponible | Decodificación especulativa con cabeza entrenada | no disponible | Repositorios públicos |
 
@@ -96,7 +96,7 @@ La comparación directa con otras cabezas MTP (EAGLE, Medusa, cabezas de DeepSee
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/applepie69/Nanbeige4.3-33B-MTP-1101
+- Modelo en Hugging Face: https://huggingface.co/applepie69/Nanbeige4.3-33B-MTP-1101
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Dataset de chat: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
 - Dataset de matemáticas: https://huggingface.co/datasets/open-r1/OpenR1-Math-220k

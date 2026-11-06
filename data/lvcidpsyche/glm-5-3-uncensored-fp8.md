@@ -110,13 +110,13 @@ No se dispone de comparaciones con alternativas de otros fabricantes (por ejempl
 - MTP no funcional en vLLM estándar; requiere un fork de terceros, lo que añade riesgo de mantenimiento y de reproducibilidad.
 - Idiomas: se declaran 10 idiomas, pero no se publican evaluaciones desagregadas por idioma; el rendimiento fuera de en/zh es desconocido.
 - Modalidad: solo texto. No hay visión ni audio.
-- Trazabilidad: el identificador de HuggingFace es `LvcidPsyche/GLM-5.3-UNCENSORED-FP8`, mientras que la model card, el logotipo, el comando de servicio y el enlace de discusión apuntan a `dealignai/GLM-5.3-UNCENSORED-FP8`. Es una discrepancia de autoría/publicación a tener en cuenta.
+- Trazabilidad: el identificador de Hugging Face es `LvcidPsyche/GLM-5.3-UNCENSORED-FP8`, mientras que la model card, el logotipo, el comando de servicio y el enlace de discusión apuntan a `dealignai/GLM-5.3-UNCENSORED-FP8`. Es una discrepancia de autoría/publicación a tener en cuenta.
 - Madurez: 0 descargas y 0 likes en el momento del registro, fecha de creación y última actualización 2026-09-20. No hay validación independiente de las métricas declaradas.
 - La información disponible trunca parte de la model card (tabla de 240 comportamientos no relacionados con copyright y secciones posteriores), por lo que puede haber datos adicionales no recogidos aquí.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LvcidPsyche/GLM-5.3-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/LvcidPsyche/GLM-5.3-UNCENSORED-FP8
 - Ruta alternativa del mismo checkpoint citada en la model card: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Cuantización FP8 base: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8

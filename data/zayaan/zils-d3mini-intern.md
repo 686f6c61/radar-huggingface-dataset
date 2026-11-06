@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zayaan/zils-d3mini-intern
+- Repositorio Hugging Face: https://huggingface.co/Zayaan/zils-d3mini-intern
 - Modelo base: https://huggingface.co/internlm/Intern-Decision-4B
 - Revision del modelo base citada: `38c9dafbbef52dd04bae943c0c6ac918419adfd5`
 - Subred Bittensor 127 (Zils): no disponible enlace oficial en la informacion proporcionada.

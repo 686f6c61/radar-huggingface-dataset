@@ -93,7 +93,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf-dev
+- Repositorio del modelo en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf-dev
 - Repositorio principal (uso normal, empaquetados `PQ2_0` y `PTQ1_0`): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Variante MLX de 2 bits para Apple Silicon: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Fork de llama.cpp de PrismML (necesario para la transformación de activaciones): https://github.com/PrismML-Eng/llama.cpp

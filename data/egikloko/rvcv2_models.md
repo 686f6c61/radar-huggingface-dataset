@@ -70,8 +70,8 @@ No se dispone de información sobre modelos comparables dentro del propio reposi
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/egikloko/RVCv2_models
+- Repositorio de Hugging Face: https://huggingface.co/egikloko/RVCv2_models
 - Proyecto RVC (referencia general): https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
-- Colección de modelos RVC v2 en HuggingFace: https://huggingface.co/collections/mixcard/rvc-2
+- Colección de modelos RVC v2 en Hugging Face: https://huggingface.co/collections/mixcard/rvc-2
 - Página de modelos RVC v2 en Voice.ai: https://voice.ai/hub/voices/rvc-v2-voice-models/
 - Plataforma de descarga de modelos RVC: https://www.101soundboards.com/boards/tts/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fast-Brain intent Adapter es un adaptador LoRA publicado por el usuario happybrian en HuggingFace, pensado para funcionar sobre un modelo base de la familia Qwen2.5. Segun la informacion disponible, el adaptador se ha entrenado con la libreria MLX (el framework de Apple para ejecucion de modelos en silicio Apple) y esta etiquetado como `lora` y `fast-brain`. La model card, muy breve y redactada en chino, indica que el adaptador debe usarse junto con un modelo base denominado `happybrian/fast-brain-base`, aunque los metadatos de HuggingFace declaran como `base_model` a `Qwen/Qwen2.5-1.5B-Instruct`.
+Fast-Brain intent Adapter es un adaptador LoRA publicado por el usuario happybrian en Hugging Face, pensado para funcionar sobre un modelo base de la familia Qwen2.5. Segun la informacion disponible, el adaptador se ha entrenado con la libreria MLX (el framework de Apple para ejecucion de modelos en silicio Apple) y esta etiquetado como `lora` y `fast-brain`. La model card, muy breve y redactada en chino, indica que el adaptador debe usarse junto con un modelo base denominado `happybrian/fast-brain-base`, aunque los metadatos de Hugging Face declaran como `base_model` a `Qwen/Qwen2.5-1.5B-Instruct`.
 
 El proposito declarado es servir de "adaptador cortical" (皮层适配器) dentro de una arquitectura denominada fast-brain, con datos de entrenamiento sometidos a un proceso de desensibilizacion: los codigos de sistemas internos, numeros de incidencia, numeros de documento y metricas de negocio fueron generalizados antes del entrenamiento. Esto sugiere un caso de uso empresarial orientado a tareas internas (probablemente clasificacion o deteccion de intenciones, a juzgar por el sufijo "intent" del nombre), pero la model card no especifica la tarea exacta, el procedimiento de entrenamiento ni el volumen de datos empleados.
 
@@ -20,7 +20,7 @@ La relevancia de esta publicacion es limitada y debe interpretarse con cautela: 
 | Idiomas soportados | No disponible (la model card esta en chino; los idiomas del entrenamiento no se detallan) |
 | Licencia | apache-2.0 |
 | Formato de pesos | No disponible. Libreria declarada: MLX; el repositorio tiene un tamano de 0.0 GB, por lo que no se listan archivos de pesos en la informacion proporcionada |
-| Modelo base declarado | Qwen/Qwen2.5-1.5B-Instruct (metadatos de HuggingFace) |
+| Modelo base declarado | Qwen/Qwen2.5-1.5B-Instruct (metadatos de Hugging Face) |
 | Modelo base citado en la model card | happybrian/fast-brain-base |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-23 |
@@ -73,10 +73,10 @@ No hay datos de rendimiento del adaptador que permitan una comparacion cuantitat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| fast-brain-intent-adapter (este adaptador) | No disponible (base de 1.5B) | No disponible | apache-2.0 | HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen2.5-1.5B-Instruct (base declarado) | 1.5B | No disponible en la informacion proporcionada | Apache-2.0 (segun su propia ficha) | HuggingFace | No disponible |
-| Qwen2.5-0.5B-Instruct | 0.5B | No disponible en la informacion proporcionada | Apache-2.0 (segun su propia ficha) | HuggingFace | No disponible |
-| Llama-3.2-1B-Instruct | 1B | No disponible en la informacion proporcionada | Licencia comunitaria de Meta | HuggingFace | No disponible |
+| fast-brain-intent-adapter (este adaptador) | No disponible (base de 1.5B) | No disponible | apache-2.0 | Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen2.5-1.5B-Instruct (base declarado) | 1.5B | No disponible en la informacion proporcionada | Apache-2.0 (segun su propia ficha) | Hugging Face | No disponible |
+| Qwen2.5-0.5B-Instruct | 0.5B | No disponible en la informacion proporcionada | Apache-2.0 (segun su propia ficha) | Hugging Face | No disponible |
+| Llama-3.2-1B-Instruct | 1B | No disponible en la informacion proporcionada | Licencia comunitaria de Meta | Hugging Face | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No hay datos de rendimiento del adaptador que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Pagina del adaptador en HuggingFace: https://huggingface.co/happybrian/fast-brain-intent-adapter
+- Pagina del adaptador en Hugging Face: https://huggingface.co/happybrian/fast-brain-intent-adapter
 - Modelo base declarado en los metadatos: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base citado en la model card: https://huggingface.co/happybrian/fast-brain-base
 - Perfil del autor: https://huggingface.co/happybrian

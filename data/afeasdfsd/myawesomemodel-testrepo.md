@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario afeasdfsd bajo el identificador `afeasdfsd/MyAwesomeModel-TestRepo`. La información disponible es internamente contradictoria: los metadatos de HuggingFace lo describen como un modelo basado en BERT, con pipeline `feature-extraction`, etiquetas `transformers`, `pytorch` y `bert`, mientras que la model card del autor lo presenta como un modelo generativo de razonamiento con modo de pensamiento extendido, soporte de function calling y mejoras en tareas de matemáticas y programación. No es posible determinar cuál de las dos descripciones corresponde al artefacto real.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario afeasdfsd bajo el identificador `afeasdfsd/MyAwesomeModel-TestRepo`. La información disponible es internamente contradictoria: los metadatos de Hugging Face lo describen como un modelo basado en BERT, con pipeline `feature-extraction`, etiquetas `transformers`, `pytorch` y `bert`, mientras que la model card del autor lo presenta como un modelo generativo de razonamiento con modo de pensamiento extendido, soporte de function calling y mejoras en tareas de matemáticas y programación. No es posible determinar cuál de las dos descripciones corresponde al artefacto real.
 
 El repositorio fue creado el 12 de septiembre de 2026 y actualizado el mismo día, tiene un tamaño de 0,0 GB, cero descargas y cero likes, lo que indica que no contiene pesos publicados ni ha sido validado por la comunidad. El nombre (`TestRepo`) sugiere que se trata de un repositorio de prueba y no de un modelo listo para producción.
 
@@ -25,7 +25,7 @@ Otros metadatos: pipeline declarado `feature-extraction`, etiquetas `transformer
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura. Los metadatos de HuggingFace apuntan a una arquitectura tipo BERT orientada a extracción de características, mientras que la model card describe un modelo de razonamiento con "modo de pensamiento" (thinking) y consumo variable de tokens según la dificultad de la pregunta. Ambas descripciones son incompatibles y ninguna viene acompañada de detalles técnicos (número de capas, dimensión oculta, mecanismo de atención, tipo de tokenizador o configuración de posiciones).
+No hay información verificable sobre la arquitectura. Los metadatos de Hugging Face apuntan a una arquitectura tipo BERT orientada a extracción de características, mientras que la model card describe un modelo de razonamiento con "modo de pensamiento" (thinking) y consumo variable de tokens según la dificultad de la pregunta. Ambas descripciones son incompatibles y ninguna viene acompañada de detalles técnicos (número de capas, dimensión oculta, mecanismo de atención, tipo de tokenizador o configuración de posiciones).
 
 Respecto al entrenamiento, la model card menciona de forma genérica "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", sin especificar número de tokens, composición del dataset, ni si se emplearon RLHF, DPO u otras técnicas de alineación. Se afirma que el modelo emplea una media de 23K tokens por pregunta en el conjunto AIME, frente a 12K de la versión anterior, lo que sugiere razonamiento con cadena de pensamiento larga, pero no se documenta el mecanismo concreto. Tampoco se publica tokenizador, configuración de generación ni código de entrenamiento.
 
@@ -92,7 +92,7 @@ No disponible. La model card incluye columnas comparativas etiquetadas como Mode
 
 ## Limitaciones y advertencias
 
-- Contradicción entre metadatos y model card: HuggingFace declara `bert` y `feature-extraction`; la model card describe un modelo generativo de razonamiento. No se puede determinar qué artefacto corresponde al repositorio.
+- Contradicción entre metadatos y model card: Hugging Face declara `bert` y `feature-extraction`; la model card describe un modelo generativo de razonamiento. No se puede determinar qué artefacto corresponde al repositorio.
 - Ausencia de pesos: el repositorio ocupa 0,0 GB, por lo que no hay nada que descargar ni ejecutar.
 - Cero descargas y cero likes: no existe validación comunitaria ni evidencia de uso real.
 - Benchmarks no verificables: las cifras de AIME y la tabla de evaluación son afirmaciones del autor, sin metodología ni reproducibilidad, y los modelos comparados están anonimizados.
@@ -105,6 +105,6 @@ No disponible. La model card incluye columnas comparativas etiquetadas como Mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afeasdfsd/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/afeasdfsd/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces relevantes en la búsqueda web: los resultados devueltos corresponden a páginas de Google Translate y no guardan relación con el modelo. No se dispone de paper, blog técnico, repositorio de código ni demo asociados en la información proporcionada.

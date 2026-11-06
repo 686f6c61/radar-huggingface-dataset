@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-Coder-Next-BF16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-Coder-Next-BF16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Repositorio GitHub (plugin pb27_vllm): https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf

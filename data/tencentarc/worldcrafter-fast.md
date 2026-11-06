@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WorldCrafter-Fast es un modelo de generación de vídeo de pesos abiertos publicado por TencentARC en HuggingFace bajo el identificador `TencentARC/WorldCrafter-Fast`. Se distribuye a través de la librería `diffusers` y cubre tres tareas: generación de vídeo a partir de texto, generación de vídeo a partir de una imagen y una demo interactiva de image-to-video con control de cámara. El repositorio ocupa 147,2 GB e incluye pesos autocontenidos: dos ramas transformer con LoRA DMD y adaptadores de cámara independientes, además del RepEncoder, el codificador de texto, el tokenizer, el VAE y el scheduler.
+WorldCrafter-Fast es un modelo de generación de vídeo de pesos abiertos publicado por TencentARC en Hugging Face bajo el identificador `TencentARC/WorldCrafter-Fast`. Se distribuye a través de la librería `diffusers` y cubre tres tareas: generación de vídeo a partir de texto, generación de vídeo a partir de una imagen y una demo interactiva de image-to-video con control de cámara. El repositorio ocupa 147,2 GB e incluye pesos autocontenidos: dos ramas transformer con LoRA DMD y adaptadores de cámara independientes, además del RepEncoder, el codificador de texto, el tokenizer, el VAE y el scheduler.
 
 La propuesta técnica del modelo se centra en la velocidad de inferencia. El autor describe un esquema de generación por chunks con muy pocos pasos de muestreo: cinco pasos de alto ruido y uno de bajo ruido por chunk en image-to-video, y una secuencia variable en text-to-video (cuatro pasos de alto ruido y ocho de bajo ruido en el primer chunk, y dos y cuatro respectivamente en los siguientes). La compilación con `--enable-compile` es opcional. No se necesita ningún fichero de WorldCrafter-Base para la inferencia en modo Fast.
 
@@ -18,13 +18,13 @@ El modelo es relevante ahora porque combina tres capacidades que hasta hace poco
 | Longitud de contexto | no disponible (no aplica en el sentido de contexto de texto; duración de vídeo por chunk no documentada) |
 | Tipos de cuantización | no disponible (no se documentan pesos GGUF, AWQ, GPTQ ni fp8) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la ficha de HuggingFace no declara licencia) |
+| Licencia | no disponible (la ficha de Hugging Face no declara licencia) |
 | Formato de pesos | safetensors, consumidos vía `diffusers` |
 | Tarea principal | image-to-video y text-to-video con control de cámara |
 | Librería | diffusers |
 | Tamaño del repositorio | 147,2 GB |
-| Fecha de publicación en HuggingFace | 21 de septiembre de 2026 (según la ficha) |
-| Última actualización en HuggingFace | 21 de septiembre de 2026 (según la ficha) |
+| Fecha de publicación en Hugging Face | 21 de septiembre de 2026 (según la ficha) |
+| Última actualización en Hugging Face | 21 de septiembre de 2026 (según la ficha) |
 | Descargas y likes | 0 descargas, 3 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -75,14 +75,14 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 | Modelo | Tipo | Parámetros | Contexto o duración | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TencentARC/WorldCrafter-Fast | Difusión de vídeo con control de cámara | no disponible | no disponible | no disponible | HuggingFace, `diffusers`, 147,2 GB |
+| TencentARC/WorldCrafter-Fast | Difusión de vídeo con control de cámara | no disponible | no disponible | no disponible | Hugging Face, `diffusers`, 147,2 GB |
 | Alternativas open source de vídeo (por ejemplo, familias tipo Wan, HunyuanVideo o LTX-Video) | Difusión de vídeo | requiere verificación | requiere verificación | requiere verificación | requiere verificación |
 
 No se incluyen cifras de estas alternativas porque no proceden de la información suministrada para esta ficha.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: la ficha de HuggingFace no especifica licencia, por lo que no puede asumirse permiso de uso comercial. Es un bloqueo potencial para producción y debe aclararse con el autor antes de cualquier despliegue.
+- Licencia no declarada: la ficha de Hugging Face no especifica licencia, por lo que no puede asumirse permiso de uso comercial. Es un bloqueo potencial para producción y debe aclararse con el autor antes de cualquier despliegue.
 - Ausencia de benchmarks: no hay métricas publicadas de calidad visual, coherencia temporal ni fidelidad al prompt, lo que impide comparar objetivamente con alternativas.
 - Sesgos: no disponibles. No se documenta la composición del dataset de entrenamiento, por lo que no pueden evaluarse sesgos demográficos, culturales o de representación.
 - Alucinación y artefactos: en modelos de difusión de vídeo son esperables inconsistencias temporales, parpadeo, deformaciones en manos y rostros o deriva de la escena entre chunks. El autor no documenta el comportamiento en los límites entre chunks.
@@ -96,7 +96,7 @@ No se incluyen cifras de estas alternativas porque no proceden de la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TencentARC/WorldCrafter-Fast
+- Modelo en Hugging Face: https://huggingface.co/TencentARC/WorldCrafter-Fast
 - Repositorio de código de WorldCrafter: mencionado en la model card ("WorldCrafter inference code", "code repository root") pero sin URL publicada; no disponible.
 - Paper, blog o demo oficial: no disponible.
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes para este modelo (corresponden a documentación de Microsoft Teams y a guías no relacionadas).

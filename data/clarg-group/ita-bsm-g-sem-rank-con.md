@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ita-bsm-g-sem-rank-con | Adaptador LoRA sobre Qwen3-8B | No disponible | Puntuación de argumentos para ITA | MIT | HuggingFace (0 descargas) |
-| Qwen/Qwen3-8B | 8B | No disponible en esta ficha | Generación de texto general | No disponible en esta ficha | HuggingFace (modelo base ampliamente usado) |
+| ita-bsm-g-sem-rank-con | Adaptador LoRA sobre Qwen3-8B | No disponible | Puntuación de argumentos para ITA | MIT | Hugging Face (0 descargas) |
+| Qwen/Qwen3-8B | 8B | No disponible en esta ficha | Generación de texto general | No disponible en esta ficha | Hugging Face (modelo base ampliamente usado) |
 | Otros BSM del mismo grupo (bsm-*) | Adaptadores LoRA sobre Qwen3-8B | No disponible | Puntuación de argumentos para ITA | MIT | Repositorio del grupo CLArg-group |
 
 No se dispone de información sobre modelos comparables de otros desarrolladores para la misma tarea específica de puntuación de argumentos en el contexto de ITA.
@@ -81,6 +81,6 @@ No se dispone de información sobre modelos comparables de otros desarrolladores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CLArg-group/ita-bsm-g-sem-rank-con
+- Modelo en Hugging Face: https://huggingface.co/CLArg-group/ita-bsm-g-sem-rank-con
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de inference-time argumentation: https://github.com/CLArg-group/inference-time-argumentation

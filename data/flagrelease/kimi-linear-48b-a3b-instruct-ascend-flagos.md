@@ -89,7 +89,7 @@ Tanto Qwen3-Next como MiniMax-M1 utilizan arquitecturas hibridas similares (aten
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlagRelease/Kimi-Linear-48B-A3B-Instruct-ascend-FlagOS
+- Repositorio Hugging Face: https://huggingface.co/FlagRelease/Kimi-Linear-48B-A3B-Instruct-ascend-FlagOS
 - Repositorio GitHub de MoonshotAI (Kimi-Linear): https://github.com/MoonshotAI/Kimi-Linear
 - Version para Hygon: https://huggingface.co/FlagRelease/Kimi-Linear-48B-A3B-Instruct-hygon-FlagOS
 - Version para NVIDIA: https://huggingface.co/FlagRelease/Kimi-Linear-48B-A3B-Instruct-nvidia-FlagOS

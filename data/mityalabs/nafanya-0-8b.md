@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nafanya-0.8b | 752M | no disponible | Tool calling en ruso, offline en movil | Apache-2.0 | HuggingFace (GGUF, MLX, safetensors) |
-| nafanya-1.7b | no disponible | no disponible | Tool calling en ruso, misma familia | no disponible | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 752M | no disponible | Modelo generalista | Apache-2.0 | HuggingFace |
+| nafanya-0.8b | 752M | no disponible | Tool calling en ruso, offline en movil | Apache-2.0 | Hugging Face (GGUF, MLX, safetensors) |
+| nafanya-1.7b | no disponible | no disponible | Tool calling en ruso, misma familia | no disponible | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 752M | no disponible | Modelo generalista | Apache-2.0 | Hugging Face |
 
 El autor indica que nafanya-0.8b es mas debil que nafanya-1.7b en peticiones libres no cubiertas por las reglas. No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoria en la informacion proporcionada.
 
@@ -102,7 +102,7 @@ El autor indica que nafanya-0.8b es mas debil que nafanya-1.7b en peticiones lib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MityaLabs/nafanya-0.8b
+- Modelo en Hugging Face: https://huggingface.co/MityaLabs/nafanya-0.8b
 - Repositorio del agente kuzya: https://github.com/mitya-labs/kuzya
 - Espacio de trabajo de entrenamiento: https://github.com/mitya-labs/nafanya
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

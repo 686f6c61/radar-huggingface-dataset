@@ -34,7 +34,7 @@ El entrenamiento se realizó sobre los datasets vidore/vidore_benchmark, vidore/
 - Representaciones elásticas Prefix-MRL: permite truncar la dimensión de embedding en tiempo de ejecución entre 64 y 2048 dimensiones sin modelos separados.
 - Compresión de tokens HAC: reduce el número de vectores por página de ~750 a 32 o 64, reduciendo el almacenamiento del índice a 3.81 GiB por millón de páginas.
 - Evaluación multilingüe: el modelo fue evaluado en 138 tareas multilingües en los benchmarks ViDoRe V1, V2, V3 y JinaVDR, con cuatro familias de métricas (nDCG, Recall, MAP, MRR @1/5/10).
-- Integración con la librería colpali-engine: diseñado para usarse con la librería oficial de HuggingFace para modelos ColPali/ColQwen.
+- Integración con la librería colpali-engine: diseñado para usarse con la librería oficial de Hugging Face para modelos ColPali/ColQwen.
 - No soporta generación de texto, tool calling ni razonamiento multi-paso: es un modelo de recuperación puro.
 
 ## Casos de uso
@@ -81,16 +81,16 @@ EVIE-4.5B es la versión ligera destilada del modelo insignia EVIE-8B. Su rendim
 
 - Sesgos: no se han documentado sesgos específicos en la información disponible. Como modelo entrenado con datos de dominio público, puede heredar sesgos presentes en los datos de entrenamiento.
 - Riesgo de alucinación: al ser un modelo de recuperación, no genera texto, por lo que el riesgo de alucinación es bajo. Sin embargo, puede recuperar documentos irrelevantes si la consulta es ambigua o si la representación del documento no captura correctamente la información buscada.
-- Limitaciones de contexto o idioma: los idiomas soportados no están documentados en la ficha de HuggingFace. El README menciona una evaluación en 138 tareas multilingües, pero no especifica qué idiomas se cubren. La longitud de contexto tampoco está documentada.
+- Limitaciones de contexto o idioma: los idiomas soportados no están documentados en la ficha de Hugging Face. El README menciona una evaluación en 138 tareas multilingües, pero no especifica qué idiomas se cubren. La longitud de contexto tampoco está documentada.
 - Restricciones de licencia: el modelo se distribuye bajo licencia Apache 2.0, que permite uso comercial, modificación y redistribución, siempre que se mantenga el aviso de licencia.
 - Caveats para producción: el modelo requiere la librería colpali-engine para su uso, que puede tener dependencias específicas. La compresión HAC reduce el número de vectores por página, pero la precisión puede degradarse si se utilizan 32 vectores en lugar de 64. El índice de 3.81 GiB por millón de páginas es un valor orientativo que puede variar según la resolución de las imágenes.
 - El modelo no es un LLM: no puede generar texto, responder preguntas abiertas ni realizar razonamiento conversacional. Su función exclusiva es la recuperación de documentos visuales.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tencent/EVIE-4.5B
+- Hugging Face: https://huggingface.co/tencent/EVIE-4.5B
 - GitHub del proyecto: https://github.com/Tencent/EVIE
 - GitHub del modelo base: https://github.com/Tencent/EVIE-Preview-4.5B
-- Modelo base en HuggingFace: https://huggingface.co/tencent/EVIE-Preview-4.5B
+- Modelo base en Hugging Face: https://huggingface.co/tencent/EVIE-Preview-4.5B
 - Modelo teacher EVIE-8B: https://huggingface.co/tencent/EVIE-8B
 - Web de Tencent: https://www.tencent.com/

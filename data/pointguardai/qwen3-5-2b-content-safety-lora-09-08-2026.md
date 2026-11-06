@@ -76,7 +76,7 @@ El autor indica que el checkpoint seleccionado no cumplio los umbrales configura
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B Content Safety LoRA (este) | 2B (base) + LoRA | 8.192 tokens | Clasificador binario con politica de 9 categorias | Apache 2.0 | HuggingFace (diagnostico) |
+| Qwen3.5-2B Content Safety LoRA (este) | 2B (base) + LoRA | 8.192 tokens | Clasificador binario con politica de 9 categorias | Apache 2.0 | Hugging Face (diagnostico) |
 | Qwen3Guard (Qwen) | No disponible en la informacion | No disponible | Guardrail con clasificacion de riesgos en prompts y respuestas del modelo | No disponible | arXiv: 2510.14276 |
 | Llama Guard (Meta) | No disponible | No disponible | Clasificador de seguridad para prompts y respuestas | No disponible | No disponible |
 | ShieldGemma (Google) | No disponible | No disponible | Clasificador de seguridad multimodal | No disponible | No disponible |

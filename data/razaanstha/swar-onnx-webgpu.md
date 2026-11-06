@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de voz con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/razaanstha/swar-onnx-webgpu
+- Repositorio Hugging Face: https://huggingface.co/razaanstha/swar-onnx-webgpu
 - Modelo base Swar: https://huggingface.co/Aarjan/swar
 - Revisión del checkpoint de origen: https://huggingface.co/Aarjan/swar/tree/8ca6f1bbc9da567d92158822e24673c2084e7e86
 - Repositorio de código de Swar: https://github.com/Naamche-Labs/swar

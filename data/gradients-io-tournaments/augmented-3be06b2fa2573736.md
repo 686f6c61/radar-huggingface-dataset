@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `gradients-io-tournaments/augmented-3be06b2fa2573736` es un checkpoint de generación de texto publicado en HuggingFace por el usuario u organización `gradients-io-tournaments`. Se trata de un modelo de 8.030.261.248 parámetros (unos 8,03 mil millones) almacenado en formato safetensors, con un repositorio de 16,1 GB, lo que es coherente con pesos en fp16 o bf16 sin empaquetado adicional. El repositorio no incluye model card descriptiva: la tarjeta publicada es la plantilla automática de HuggingFace con la mayoría de campos marcados como "[More Information Needed]".
+El modelo identificado como `gradients-io-tournaments/augmented-3be06b2fa2573736` es un checkpoint de generación de texto publicado en Hugging Face por el usuario u organización `gradients-io-tournaments`. Se trata de un modelo de 8.030.261.248 parámetros (unos 8,03 mil millones) almacenado en formato safetensors, con un repositorio de 16,1 GB, lo que es coherente con pesos en fp16 o bf16 sin empaquetado adicional. El repositorio no incluye model card descriptiva: la tarjeta publicada es la plantilla automática de Hugging Face con la mayoría de campos marcados como "[More Information Needed]".
 
-La etiqueta `llama` junto con el recuento de parámetros apunta a una arquitectura transformer decoder-only de tipo Llama, y las etiquetas `text-generation`, `conversational`, `text-generation-inference` y `endpoints_compatible` indican que está pensado para inferencia conversacional y es compatible con Text Generation Inference y con los Inference Endpoints de HuggingFace. Sin embargo, el autor no confirma ni la arquitectura base, ni el modelo del que deriva, ni el proceso de entrenamiento, por lo que estas afirmaciones deben tomarse como inferencias razonables a partir de los metadatos, no como datos verificados.
+La etiqueta `llama` junto con el recuento de parámetros apunta a una arquitectura transformer decoder-only de tipo Llama, y las etiquetas `text-generation`, `conversational`, `text-generation-inference` y `endpoints_compatible` indican que está pensado para inferencia conversacional y es compatible con Text Generation Inference y con los Inference Endpoints de Hugging Face. Sin embargo, el autor no confirma ni la arquitectura base, ni el modelo del que deriva, ni el proceso de entrenamiento, por lo que estas afirmaciones deben tomarse como inferencias razonables a partir de los metadatos, no como datos verificados.
 
 La relevancia de esta ficha es fundamentalmente de catalogación: el modelo acumula 0 descargas y 0 "likes" en el momento de la consulta y no aporta documentación técnica, licencia ni idiomas declarados. El espacio de nombres del autor sugiere que se trata de un artefacto generado en un entorno de torneos o competiciones de ajuste fino, y la fecha de creación registrada (15 de septiembre de 2026) es posterior a la fecha de actualización, lo que refuerza la idea de un experimento automatizado más que de un lanzamiento de producción. Cualquier evaluación seria requiere descargar los pesos, inspeccionar el `config.json` y ejecutar pruebas propias.
 
@@ -30,9 +30,9 @@ La relevancia de esta ficha es fundamentalmente de catalogación: el modelo acum
 
 ## Arquitectura y entrenamiento
 
-No hay información aportada por el autor sobre la arquitectura, los datos de entrenamiento ni el procedimiento de ajuste. La model card es la plantilla automática de HuggingFace y todos los apartados relevantes (arquitectura y objetivo, datos de entrenamiento, hiperparámetros, régimen de precisión, infraestructura de cómputo) figuran como "[More Information Needed]". Lo único inferible con rigor es el tamaño: 8.030.261.248 parámetros en safetensors, y un repositorio de 16,1 GB, lo que encaja con pesos almacenados en fp16 o bf16 sin cuantizar.
+No hay información aportada por el autor sobre la arquitectura, los datos de entrenamiento ni el procedimiento de ajuste. La model card es la plantilla automática de Hugging Face y todos los apartados relevantes (arquitectura y objetivo, datos de entrenamiento, hiperparámetros, régimen de precisión, infraestructura de cómputo) figuran como "[More Information Needed]". Lo único inferible con rigor es el tamaño: 8.030.261.248 parámetros en safetensors, y un repositorio de 16,1 GB, lo que encaja con pesos almacenados en fp16 o bf16 sin cuantizar.
 
-El tag `llama` sugiere una topología transformer decoder-only con atención causal, y el sufijo "augmented" en el nombre del repositorio podría indicar algún tipo de aumento o adaptación sobre un modelo base, pero esto es una conjetura a partir del identificador y no está respaldado por documentación. El tag `arxiv:1910.09700` no es una referencia al modelo: corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, que aparece citado en la plantilla por defecto de las model cards de HuggingFace. Es decir, ese tag es un artefacto de la plantilla y no evidencia ninguna contribución científica asociada al checkpoint.
+El tag `llama` sugiere una topología transformer decoder-only con atención causal, y el sufijo "augmented" en el nombre del repositorio podría indicar algún tipo de aumento o adaptación sobre un modelo base, pero esto es una conjetura a partir del identificador y no está respaldado por documentación. El tag `arxiv:1910.09700` no es una referencia al modelo: corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, que aparece citado en la plantilla por defecto de las model cards de Hugging Face. Es decir, ese tag es un artefacto de la plantilla y no evidencia ninguna contribución científica asociada al checkpoint.
 
 Tampoco hay datos sobre si hubo RLHF, DPO, SFT o entrenamiento continuado, ni sobre el número de tokens vistos. Dado que el repositorio parece proceder de un entorno de torneos de ajuste fino (`gradients-io-tournaments`), es plausible que se trate de un fine-tuning derivado de otro modelo, pero la procedencia exacta, el dataset y la receta quedan sin documentar.
 
@@ -40,8 +40,8 @@ Tampoco hay datos sobre si hubo RLHF, DPO, SFT o entrenamiento continuado, ni so
 
 - No hay información verificada sobre capacidades específicas. El pipeline declarado es `text-generation` y el tag `conversational`, de modo que la capacidad mínima esperable es la generación de texto y el diálogo multi-turno.
 - Generación de texto en formato conversacional: los tags `text-generation` y `conversational` así lo indican, aunque no se especifican formatos de prompt ni plantillas de chat.
-- Compatibilidad con Text Generation Inference: el tag `text-generation-inference` sugiere que el checkpoint puede servirse con el stack de TGI de HuggingFace.
-- Compatibilidad con Inference Endpoints: el tag `endpoints_compatible` indica que el modelo puede desplegarse en la infraestructura gestionada de HuggingFace.
+- Compatibilidad con Text Generation Inference: el tag `text-generation-inference` sugiere que el checkpoint puede servirse con el stack de TGI de Hugging Face.
+- Compatibilidad con Inference Endpoints: el tag `endpoints_compatible` indica que el modelo puede desplegarse en la infraestructura gestionada de Hugging Face.
 - Razonamiento, código, matemáticas, visión, audio, tool calling, function calling, modo "thinking" o capacidad agéntica: no disponible. No hay ninguna declaración del autor al respecto.
 - Capacidades multilingües: no disponible. No hay etiquetas de idioma ni declaración de cobertura lingüística.
 
@@ -79,7 +79,7 @@ No hay datos de rendimiento del modelo analizado, por lo que la comparación se 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| augmented-3be06b2fa2573736 | 8,03 B | No disponible | No disponible | Safetensors en HuggingFace, sin cuantizaciones publicadas |
+| augmented-3be06b2fa2573736 | 8,03 B | No disponible | No disponible | Safetensors en Hugging Face, sin cuantizaciones publicadas |
 | Llama 3.1 8B | 8,03 B | 128k tokens | Llama 3.1 Community License | Safetensors y GGUF, amplio ecosistema |
 | Mistral 7B v0.3 | 7,25 B | 32k tokens | Apache 2.0 | Safetensors y GGUF, amplio ecosistema |
 | Qwen2.5 7B | 7,61 B | 128k tokens | Apache 2.0 | Safetensors y GGUF, amplio ecosistema |
@@ -99,7 +99,7 @@ La diferencia fundamental no está en el tamaño, sino en la ausencia total de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-3be06b2fa2573736
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-3be06b2fa2573736
 - Paper citado en los tags (artefacto de la plantilla, no asociado al modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML referenciada en la plantilla: https://mlco2.github.io/impact
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los resultados correspondían a conversores de husos horarios (EST/IST) y no guardan relación con el checkpoint. No se han encontrado papers, blogs, repositorios de código ni demos asociados.

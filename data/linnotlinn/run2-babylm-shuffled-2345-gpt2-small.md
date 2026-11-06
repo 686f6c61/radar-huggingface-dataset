@@ -72,7 +72,7 @@ No hay datos de rendimiento comparativo disponibles. La comparación se limita a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/linnotlinn/run2-babylm-shuffled-2345-gpt2-small
+- Modelo en Hugging Face: https://huggingface.co/linnotlinn/run2-babylm-shuffled-2345-gpt2-small
 - Modelo original (sin barajar): https://huggingface.co/linnotlinn/run2-babylm-original-2345-gpt2-small
 - Dataset barajado: https://huggingface.co/datasets/linnotlinn/babylm_gpt2_shuffled
 - Página de BabyLM: https://babylm.github.io/

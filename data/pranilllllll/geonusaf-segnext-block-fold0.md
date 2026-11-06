@@ -69,8 +69,8 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parámetros | Entrada | mIoU (val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoNUSAF - SegNeXt-T (este modelo) | 4,05 M | 512×512 | 0,3075 | Apache-2.0 | HuggingFace |
-| GeoNUSAF - UNetFormer (ResNet-18) | no disponible | 512×512 | no disponible | Apache-2.0 | HuggingFace |
+| GeoNUSAF - SegNeXt-T (este modelo) | 4,05 M | 512×512 | 0,3075 | Apache-2.0 | Hugging Face |
+| GeoNUSAF - UNetFormer (ResNet-18) | no disponible | 512×512 | no disponible | Apache-2.0 | Hugging Face |
 | SegNeXt original (MSCAN-T) | 4,05 M (similar) | variable | no publicado para este dataset | Apache-2.0 | GitHub |
 
 La comparativa con UNetFormer de la misma serie GeoNUSAF no tiene métricas publicadas en la información disponible, pero comparte el mismo formato de entrenamiento y partición. El SegNeXt original, del que deriva este modelo, está diseñado para segmentación semántica general y ha demostrado rendimiento competitivo en benchmarks como ADE20K y Cityscapes, aunque no se han aplicado directamente a este dataset.
@@ -80,14 +80,14 @@ La comparativa con UNetFormer de la misma serie GeoNUSAF no tiene métricas publ
 - El mIoU de validación es bajo (0,3075), con clases especialmente débiles como "río" (IoU 0,0498) y "carretera" (IoU 0,1971). Esto puede deberse a la complejidad de estas clases en el área de estudio o a la limitación del conjunto de entrenamiento.
 - El modelo se ha entrenado específicamente para el Valle de Katmandú y puede no generalizar a otras regiones geográficas sin un reentrenamiento o afinamiento.
 - La resolución efectiva de 0,586 m/px limita la precisión para objetos muy pequeños o lineales como carreteras estrechas o ríos de poca anchura.
-- El repositorio no incluye un pipeline de inferencia predefinido en HuggingFace; el usuario debe reconstruir el modelo con el código proporcionado (`segnext_model.py`) y cargar los pesos desde `best.pt`.
+- El repositorio no incluye un pipeline de inferencia predefinido en Hugging Face; el usuario debe reconstruir el modelo con el código proporcionado (`segnext_model.py`) y cargar los pesos desde `best.pt`.
 - No se han publicado análisis de sesgos ni de robustez ante condiciones atmosféricas o estacionales (nubes, sombras, cambios de iluminación).
 - La licencia Apache-2.0 permite uso comercial, pero el modelo puede tener restricciones de uso si se emplean datos de entrenamiento con licencias específicas (no se especifica el origen de los datos).
 - No se ha evaluado el modelo en otros conjuntos de datos de segmentación, por lo que su rendimiento en otros dominios es desconocido.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pranilllllll/geonusaf-segNext-block-fold0
+- Modelo en Hugging Face: https://huggingface.co/Pranilllllll/geonusaf-segNext-block-fold0
 - Repositorio del código del modelo: https://huggingface.co/Pranilllllll/geonusaf-segNext-block-fold0 (contiene `segnext_model.py` y `best.pt`)
 - Repositorio oficial de SegNeXt (código base): https://github.com/visual-attention-network/segnext
 - Paper original de SegNeXt: https://arxiv.org/abs/2209.08575

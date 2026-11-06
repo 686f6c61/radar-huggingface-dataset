@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ausjahk/movie-review-sentiment-analyzer` es un clasificador de texto binario (positivo/negativo) especializado en el análisis de sentimiento de reseñas de películas. Se trata de un ajuste fino (*fine-tuning*) del modelo base `distilbert-base-uncased`, desarrollado por el usuario `ausjahk` y publicado en HuggingFace con licencia Apache 2.0. Con 66,9 millones de parámetros, es un modelo compacto y ligero, adecuado para tareas de clasificación de texto en entornos con recursos limitados.
+El modelo `ausjahk/movie-review-sentiment-analyzer` es un clasificador de texto binario (positivo/negativo) especializado en el análisis de sentimiento de reseñas de películas. Se trata de un ajuste fino (*fine-tuning*) del modelo base `distilbert-base-uncased`, desarrollado por el usuario `ausjahk` y publicado en Hugging Face con licencia Apache 2.0. Con 66,9 millones de parámetros, es un modelo compacto y ligero, adecuado para tareas de clasificación de texto en entornos con recursos limitados.
 
 El modelo se entrenó durante dos épocas con un *learning rate* de 2e-5 y un *batch size* de 16, alcanzando una precisión del 83,87% en el conjunto de evaluación. Aunque la *model card* no especifica el *dataset* de entrenamiento, el modelo base está preentrenado en inglés, por lo que se espera que el clasificador funcione principalmente en ese idioma. Su relevancia radica en su simplicidad y bajo coste computacional, lo que lo hace útil para prototipos y aplicaciones de análisis de opinión a pequeña escala.
 
@@ -23,7 +23,7 @@ El modelo se entrenó durante dos épocas con un *learning rate* de 2e-5 y un *b
 
 El modelo se basa en DistilBERT, una versión destilada de BERT que conserva el 97% de su rendimiento con un 40% menos de parámetros. DistilBERT utiliza una arquitectura transformer encoder-only con 6 capas ocultas, 12 cabezas de atención y una dimensión de embedding de 768. El *fine-tuning* se realizó sobre la tarea de clasificación de secuencias con una capa de clasificación binaria en la parte superior.
 
-El entrenamiento se llevó a cabo con el *Trainer* de HuggingFace, utilizando el optimizador AdamW (con betas 0.9 y 0.999), un *scheduler* lineal de tasa de aprendizaje y 2 épocas. El *dataset* de entrenamiento no está especificado en la *model card* (aparece como "None"), aunque por el nombre del modelo se infiere que son reseñas de películas. No se menciona el uso de técnicas como RLHF o DPO; se trata de un ajuste fino supervisado estándar.
+El entrenamiento se llevó a cabo con el *Trainer* de Hugging Face, utilizando el optimizador AdamW (con betas 0.9 y 0.999), un *scheduler* lineal de tasa de aprendizaje y 2 épocas. El *dataset* de entrenamiento no está especificado en la *model card* (aparece como "None"), aunque por el nombre del modelo se infiere que son reseñas de películas. No se menciona el uso de técnicas como RLHF o DPO; se trata de un ajuste fino supervisado estándar.
 
 ## Capacidades
 
@@ -65,9 +65,9 @@ Estos datos provienen del proceso de *fine-tuning* y no son comparables con benc
 
 | Modelo | Parámetros | Contexto | Precisión (evaluación) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ausjahk/movie-review-sentiment-analyzer` | 66,9 M | no disponible | 0,8387 | Apache 2.0 | HuggingFace |
-| `distilbert-base-uncased` (modelo base) | 66,9 M | 512 | no aplica | Apache 2.0 | HuggingFace |
-| `bert-base-uncased` (modelo base) | 110 M | 512 | no aplica | Apache 2.0 | HuggingFace |
+| `ausjahk/movie-review-sentiment-analyzer` | 66,9 M | no disponible | 0,8387 | Apache 2.0 | Hugging Face |
+| `distilbert-base-uncased` (modelo base) | 66,9 M | 512 | no aplica | Apache 2.0 | Hugging Face |
+| `bert-base-uncased` (modelo base) | 110 M | 512 | no aplica | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de otros *fine-tunes* específicos para reseñas de películas con los que comparar directamente. La comparación con los modelos base es estructural, no de rendimiento en la tarea.
 
@@ -78,9 +78,9 @@ No se dispone de datos de otros *fine-tunes* específicos para reseñas de pelí
 - Al ser un clasificador binario, no distingue matices de sentimiento (neutral, mixto) ni emociones complejas.
 - No se han realizado pruebas de robustez frente a textos adversariales o *out-of-distribution*.
 - La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre la calidad del modelo.
-- El modelo tiene 0 descargas y 0 *likes* en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 *likes* en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/ausjahk/movie-review-sentiment-analyzer)
+- [Página del modelo en Hugging Face](https://huggingface.co/ausjahk/movie-review-sentiment-analyzer)
 - [Modelo base DistilBERT](https://huggingface.co/distilbert/distilbert-base-uncased)

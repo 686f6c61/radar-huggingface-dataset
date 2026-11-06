@@ -107,7 +107,7 @@ Este ResNet50 muestra un rendimiento inferior en accuracy y F1 frente a arquitec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fatihaybasn/brainmri-ood-resnet50
+- Repositorio Hugging Face: https://huggingface.co/Fatihaybasn/brainmri-ood-resnet50
 - Proyecto GitHub (codigo y notebooks): https://github.com/fatihaybsn/BrainMRI-OOD-10Models
 - Revision del codigo fuente: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/commit/a9920408189230b886773a64d113eb35bcba1971
 - Archivo CITATION.cff: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/blob/main/CITATION.cff

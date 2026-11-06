@@ -107,10 +107,10 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-auto-plain-il-n1-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-auto-plain-il-n1-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de rollouts de politica compartida: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-bc-n1-shared-policy-rollouts
 - Dataset referenciado por metadatos: https://huggingface.co/datasets/mulligan/sim-square-broad-c02-auto-plain-il-n1-policy-rollouts

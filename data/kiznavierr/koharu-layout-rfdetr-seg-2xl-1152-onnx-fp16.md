@@ -83,6 +83,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kiznavierr/koharu-layout-rfdetr-seg-2xl-1152-onnx-fp16
+- Repositorio Hugging Face: https://huggingface.co/Kiznavierr/koharu-layout-rfdetr-seg-2xl-1152-onnx-fp16
 - Modelo fuente: https://huggingface.co/mayocream/koharu-layout-rfdetr-seg-2xl-1152
 - Revisión del modelo fuente: https://huggingface.co/mayocream/koharu-layout-rfdetr-seg-2xl-1152/commit/aed55fdb8ca953c6bec33cf6ed6dd52a9b72bfa2

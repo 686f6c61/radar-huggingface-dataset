@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks especificos para este checkpoint en
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | π0.5 (base) | 3B | 4096 | VLA generalista | no disponible | Codigo abierto en OpenPI |
-| Este LoRA (pi05_lora_tacimg) | LoRA sobre 3B | no disponible | VLA para tarea tactil especifica | no disponible | HuggingFace |
+| Este LoRA (pi05_lora_tacimg) | LoRA sobre 3B | no disponible | VLA para tarea tactil especifica | no disponible | Hugging Face |
 | OpenVLA | 7B | 2048 | VLA generalista | MIT | Codigo abierto |
 | RT-2 | 55B | 2048 | VLA generalista | no disponible | No abierto |
 
@@ -75,7 +75,7 @@ La comparativa se basa en el modelo base π0.5, ya que el checkpoint es un adapt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_task820
+- Repositorio Hugging Face: https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_task820
 - Paper de π0.5: https://arxiv.org/abs/2504.16054
 - Version HTML del paper: https://arxiv.org/html/2504.16054v1
 - Sitio de OpenPI: https://www.openpi.net/english.html

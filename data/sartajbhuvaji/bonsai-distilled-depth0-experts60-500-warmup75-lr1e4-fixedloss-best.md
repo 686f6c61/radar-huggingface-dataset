@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sartajbhuvaji/bonsai-distilled-depth0-experts60-500-warmup75-lr1e4-fixedloss-best`, abreviado habitualmente como "bonsai", es un modelo de generacion de texto publicado en HuggingFace por el usuario sartajbhuvaji. Se trata de una variante derivada de la familia Qwen3 MoE, segun indica la etiqueta de arquitectura `qwen3_moe` del repositorio, con 16.936.679.424 parametros totales (aproximadamente 16,9 mil millones) y un repositorio de 33,9 GB, coherente con pesos almacenados en precision bf16/fp16.
+El modelo `sartajbhuvaji/bonsai-distilled-depth0-experts60-500-warmup75-lr1e4-fixedloss-best`, abreviado habitualmente como "bonsai", es un modelo de generacion de texto publicado en Hugging Face por el usuario sartajbhuvaji. Se trata de una variante derivada de la familia Qwen3 MoE, segun indica la etiqueta de arquitectura `qwen3_moe` del repositorio, con 16.936.679.424 parametros totales (aproximadamente 16,9 mil millones) y un repositorio de 33,9 GB, coherente con pesos almacenados en precision bf16/fp16.
 
-El nombre del checkpoint sugiere un proceso de destilacion o poda sobre una base Qwen3 MoE, con varias decisiones de entrenamiento codificadas en el identificador: `depth0`, `experts60` (posiblemente 60 expertos en la capa MoE), `500-warmup` (500 pasos de calentamiento), `lr1e4` (learning rate 1e-4) y `fixedloss`. No obstante, el autor no documenta ninguno de estos extremos en la model card, que se limita a la plantilla autogenerada de HuggingFace con campos sin rellenar.
+El nombre del checkpoint sugiere un proceso de destilacion o poda sobre una base Qwen3 MoE, con varias decisiones de entrenamiento codificadas en el identificador: `depth0`, `experts60` (posiblemente 60 expertos en la capa MoE), `500-warmup` (500 pasos de calentamiento), `lr1e4` (learning rate 1e-4) y `fixedloss`. No obstante, el autor no documenta ninguno de estos extremos en la model card, que se limita a la plantilla autogenerada de Hugging Face con campos sin rellenar.
 
 La relevancia de esta ficha es limitada pero real: se trata de un experimento de destilacion sobre una arquitectura MoE de tamano medio, un area activa porque permite obtener modelos con coste de inferencia bajo (pocos parametros activos por token) y calidad cercana a modelos densos mas grandes. El modelo tiene cero descargas y cero "likes" en el momento de redactar esta ficha, y su licencia y composicion de datos no estan declaradas, por lo que debe tratarse como un artefacto experimental sin garantias para produccion.
 
@@ -69,14 +69,14 @@ Estimaciones calculadas a partir del numero de parametros (16,9 mil millones) y 
 
 ## Comparativa con modelos similares
 
-Los datos de la columna "bonsai" proceden del repositorio de HuggingFace. Los datos de las alternativas proceden de informacion publica de sus respectivas model cards y deben verificarse antes de citarlos.
+Los datos de la columna "bonsai" proceden del repositorio de Hugging Face. Los datos de las alternativas proceden de informacion publica de sus respectivas model cards y deben verificarse antes de citarlos.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bonsai-distilled-depth0-experts60 (este modelo) | 16,9 mil millones | no disponible | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen3-30B-A3B | 30,5 mil millones | 3,3 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace y multiples proveedores |
-| Qwen3-14B (denso) | 14,8 mil millones | 14,8 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace y multiples proveedores |
-| Mistral Small 3.1 | 24 mil millones | 24 mil millones | 128.000 tokens | Apache 2.0 | HuggingFace |
+| bonsai-distilled-depth0-experts60 (este modelo) | 16,9 mil millones | no disponible | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen3-30B-A3B | 30,5 mil millones | 3,3 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face y multiples proveedores |
+| Qwen3-14B (denso) | 14,8 mil millones | 14,8 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face y multiples proveedores |
+| Mistral Small 3.1 | 24 mil millones | 24 mil millones | 128.000 tokens | Apache 2.0 | Hugging Face |
 
 La comparacion es limitada porque se desconocen los parametros activos y el contexto de este checkpoint, factores que determinan directamente su coste de inferencia y su utilidad practica frente a las alternativas.
 
@@ -95,8 +95,8 @@ La comparacion es limitada porque se desconocen los parametros activos y el cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts60-500-warmup75-lr1e4-fixedloss-best
-- Perfil del autor en HuggingFace: https://huggingface.co/sartajbhuvaji
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts60-500-warmup75-lr1e4-fixedloss-best
+- Perfil del autor en Hugging Face: https://huggingface.co/sartajbhuvaji
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - Documentacion de Qwen3 (familia base de la arquitectura): https://qwen.readthedocs.io/

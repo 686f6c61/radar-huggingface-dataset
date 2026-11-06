@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos comparables de deteccion de fin de tu
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/aufklarer/Smart-Turn-v3.2-CoreML)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/aufklarer/Smart-Turn-v3.2-CoreML)
 - [Modelo original de Pipecat](https://huggingface.co/pipecat-ai/smart-turn-v3)
 - [Repositorio GitHub de Pipecat Smart Turn](https://github.com/pipecat-ai/smart-turn)
 - [Repositorio GitHub con codigo de generacion de datos](https://github.com/sam-s10s/pipecat-smart-turn)

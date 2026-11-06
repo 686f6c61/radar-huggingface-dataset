@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whistle es un proyecto de modelo de análisis de vídeo de fútbol anónimo, desarrollado por Assem Sabry (https://assem.one/). Según la model card publicada en HuggingFace, su alcance declarado se limita al análisis de vídeo de partidos de fútbol sin identificar nombres de jugadores, posiciones, dorsales ni valoraciones individuales. Se trata, por tanto, de una herramienta orientada a extraer información agregada o anónima a partir de metraje de fútbol, no a la identificación de personas concretas.
+Whistle es un proyecto de modelo de análisis de vídeo de fútbol anónimo, desarrollado por Assem Sabry (https://assem.one/). Según la model card publicada en Hugging Face, su alcance declarado se limita al análisis de vídeo de partidos de fútbol sin identificar nombres de jugadores, posiciones, dorsales ni valoraciones individuales. Se trata, por tanto, de una herramienta orientada a extraer información agregada o anónima a partir de metraje de fútbol, no a la identificación de personas concretas.
 
-En el momento de redactar esta ficha, el repositorio de HuggingFace (assemsabry/whistle) no contiene pesos: el tamaño declarado es de 0,0 GB, no registra descargas ni likes y no tiene pipeline, licencia ni idiomas asociados. La propia model card indica que los checkpoints se irán añadiendo "tras la validación" y que el código fuente, el código de entrenamiento, las herramientas de datos, los tests, la documentación y los registros de procedencia se mantienen en un repositorio de GitHub independiente.
+En el momento de redactar esta ficha, el repositorio de Hugging Face (assemsabry/whistle) no contiene pesos: el tamaño declarado es de 0,0 GB, no registra descargas ni likes y no tiene pipeline, licencia ni idiomas asociados. La propia model card indica que los checkpoints se irán añadiendo "tras la validación" y que el código fuente, el código de entrenamiento, las herramientas de datos, los tests, la documentación y los registros de procedencia se mantienen en un repositorio de GitHub independiente.
 
 No hay información pública disponible sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni proceso de alineación. Por tanto, esta ficha refleja principalmente el estado del proyecto (anuncio sin artefactos publicados) y el alcance funcional declarado, y marca como "no disponible" todo aquello que el autor no ha especificado.
 
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no identifica la categoría técnic
 
 - Repositorio sin pesos: el tamaño es de 0,0 GB y la model card indica que los checkpoints se publicarán "tras la validación", por lo que hoy no es un modelo utilizable.
 - Ausencia de licencia: no se declara licencia alguna, lo que impide determinar si el uso comercial está permitido. A efectos prácticos, no debe asumirse permiso de uso.
-- Sin pipeline declarado: no se especifica la tarea de HuggingFace asociada, lo que dificulta la integración automática.
+- Sin pipeline declarado: no se especifica la tarea de Hugging Face asociada, lo que dificulta la integración automática.
 - Alcance restringido: el modelo no identifica jugadores, posiciones, dorsales ni emite valoraciones; intentar usarlo para esos fines queda fuera de su ámbito declarado.
 - Idiomas no especificados: se desconoce si produce salidas en texto y en qué lenguas.
 - Riesgo de alucinación: no evaluable sin pesos ni documentación técnica.
@@ -85,7 +85,7 @@ No disponible. La información proporcionada no identifica la categoría técnic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/assemsabry/whistle
+- Hugging Face: https://huggingface.co/assemsabry/whistle
 - Repositorio GitHub: https://github.com/assemsabry/whistle
 - Sitio del autor: https://assem.one/
 - Paper: no disponible

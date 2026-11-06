@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every32` es un ajuste fino publicado en HuggingFace por el usuario `wz7475` sobre el modelo base Qwen2.5-7B-Instruct de Alibaba. El nombre del repositorio sugiere un ajuste orientado a dominio medico ("katcher-med"), entrenado con el dataset OASST1 y algun esquema de adaptacion de bajo rango (la coletilla "kw1-every32" apunta a un LoRA con rango o intervalo de aplicacion concreto). El tamano del repositorio, 0,3 GB, es coherente con un adaptador LoRA y no con un checkpoint completo de 7B en precision fp16 (que rondaria los 15 GB), por lo que muy probablemente se trate de pesos de adaptador y no del modelo completo.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every32` es un ajuste fino publicado en Hugging Face por el usuario `wz7475` sobre el modelo base Qwen2.5-7B-Instruct de Alibaba. El nombre del repositorio sugiere un ajuste orientado a dominio medico ("katcher-med"), entrenado con el dataset OASST1 y algun esquema de adaptacion de bajo rango (la coletilla "kw1-every32" apunta a un LoRA con rango o intervalo de aplicacion concreto). El tamano del repositorio, 0,3 GB, es coherente con un adaptador LoRA y no con un checkpoint completo de 7B en precision fp16 (que rondaria los 15 GB), por lo que muy probablemente se trate de pesos de adaptador y no del modelo completo.
 
-La model card publicada es la plantilla automatica de HuggingFace y no contiene informacion sustantiva: no se declara licencia, idiomas, pipeline, dataset de entrenamiento, hiperparametros ni resultados de evaluacion. Esto limita seriamente cualquier valoracion tecnica del ajuste y obliga a tratar la mayor parte de las especificaciones como "no disponibles".
+La model card publicada es la plantilla automatica de Hugging Face y no contiene informacion sustantiva: no se declara licencia, idiomas, pipeline, dataset de entrenamiento, hiperparametros ni resultados de evaluacion. Esto limita seriamente cualquier valoracion tecnica del ajuste y obliga a tratar la mayor parte de las especificaciones como "no disponibles".
 
 A pesar de la falta de documentacion, el modelo resulta relevante como ejemplo de adaptacion ligera de un LLM de 7B sobre un dominio concreto. Para evaluarlo en produccion seria imprescindible contactar con el autor o reproducir el entrenamiento a partir del modelo base Qwen2.5-7B-Instruct, cuyas caracteristicas si estan bien documentadas.
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every32
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every32
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de referencia citado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Dataset OpenAssistant OASST1: https://huggingface.co/datasets/OpenAssistant/oasst1

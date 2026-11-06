@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cheyenne v2.0 es un checkpoint fusionado (*merge*) de Stable Diffusion XL 1.0 orientado a ilustracion, comic de estilo europeo, novela grafica, *concept art* y diseno de personajes. No es un modelo de lenguaje ni un modelo de difusion entrenado desde cero: se trata de una mezcla de pesos derivada de `stabilityai/stable-diffusion-xl-base-1.0`, publicada originalmente por el autor Aurety en Civitai (AIR `civitai:198051@1055511`) y redistribuida en HuggingFace por el usuario `jderr` bajo el identificador `jderr/Cheyenne-SDXL-v2.0`.
+Cheyenne v2.0 es un checkpoint fusionado (*merge*) de Stable Diffusion XL 1.0 orientado a ilustracion, comic de estilo europeo, novela grafica, *concept art* y diseno de personajes. No es un modelo de lenguaje ni un modelo de difusion entrenado desde cero: se trata de una mezcla de pesos derivada de `stabilityai/stable-diffusion-xl-base-1.0`, publicada originalmente por el autor Aurety en Civitai (AIR `civitai:198051@1055511`) y redistribuida en Hugging Face por el usuario `jderr` bajo el identificador `jderr/Cheyenne-SDXL-v2.0`.
 
 El modelo resuelve un problema muy concreto de los flujos de produccion visual: conseguir acabados de ilustracion entintada, *lineart* y pintura mate sin derivar hacia un resultado fotografico. La version 2.0 introduce, segun su model card, un render mas maduro y pictorico, linework mas preciso y mayor versatilidad, con soporte explicito para prompts cortos y literales a los que se anaden terminos de estilo (`graphic novel`, `comics`, `lineart`, `ink`, `matte painting`).
 
@@ -74,10 +74,10 @@ No se han publicado datos de rendimiento de Cheyenne v2.0, por lo que la compara
 
 | Modelo | Base | Parametros | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cheyenne v2.0 | SDXL 1.0 (*merge*) | ~2,6 mil millones en U-Net (base SDXL) | 77 tokens por text encoder CLIP (base SDXL) | CreativeML Open RAIL++-M | HuggingFace (`jderr/Cheyenne-SDXL-v2.0`) y Civitai; 0 descargas, sin benchmarks |
-| Juggernaut XL | SDXL (*merge*) | ~2,6 mil millones en U-Net (base SDXL) | 77 tokens por text encoder CLIP | CreativeML Open RAIL++-M | HuggingFace y Civitai; ecosistema amplio de usuarios y ejemplos |
-| DreamShaper XL | SDXL (*merge*) | ~2,6 mil millones en U-Net (base SDXL) | 77 tokens por text encoder CLIP | CreativeML Open RAIL++-M | HuggingFace y Civitai; muy difundido para ilustracion y fantasia |
-| Animagine XL 3.x | SDXL (*fine-tune*) | ~2,6 mil millones en U-Net (base SDXL) | 77 tokens por text encoder CLIP | CreativeML Open RAIL++-M (con condiciones adicionales del autor) | HuggingFace; orientado a estetica anime, no a comic europeo |
+| Cheyenne v2.0 | SDXL 1.0 (*merge*) | ~2,6 mil millones en U-Net (base SDXL) | 77 tokens por text encoder CLIP (base SDXL) | CreativeML Open RAIL++-M | Hugging Face (`jderr/Cheyenne-SDXL-v2.0`) y Civitai; 0 descargas, sin benchmarks |
+| Juggernaut XL | SDXL (*merge*) | ~2,6 mil millones en U-Net (base SDXL) | 77 tokens por text encoder CLIP | CreativeML Open RAIL++-M | Hugging Face y Civitai; ecosistema amplio de usuarios y ejemplos |
+| DreamShaper XL | SDXL (*merge*) | ~2,6 mil millones en U-Net (base SDXL) | 77 tokens por text encoder CLIP | CreativeML Open RAIL++-M | Hugging Face y Civitai; muy difundido para ilustracion y fantasia |
+| Animagine XL 3.x | SDXL (*fine-tune*) | ~2,6 mil millones en U-Net (base SDXL) | 77 tokens por text encoder CLIP | CreativeML Open RAIL++-M (con condiciones adicionales del autor) | Hugging Face; orientado a estetica anime, no a comic europeo |
 
 La diferencia funcional de Cheyenne v2.0 frente a estas alternativas no esta en arquitectura ni licencia, sino en el sesgo estetico declarado hacia comic europeo, *lineart* y *matte painting*. No existe evidencia publicada que permita afirmar que supere o iguale a ninguno de ellos en calidad: cualquier comparacion de rendimiento queda como no disponible.
 
@@ -92,13 +92,13 @@ La diferencia funcional de Cheyenne v2.0 frente a estas alternativas no esta en 
 - Idiomas no documentados: no hay garantia de que el modelo responda correctamente a prompts en castellano; los terminos de estilo facilitados estan en ingles.
 - Linaje incompleto: al ser un *checkpoint merge*, no se detallan los modelos fuente, el dataset ni el proceso de mezcla, lo que dificulta reproducir o auditar su comportamiento.
 - Licencia CreativeML Open RAIL++-M: permite uso comercial, pero impone las restricciones de uso de la licencia RAIL++ (prohibicion de usos daninos, desinformacion, suplantacion, contenido ilegal y demas supuestos enumerados). Es responsabilidad del usuario cumplirla, asi como las leyes aplicables y los derechos de terceros.
-- Atribucion: la model card indica que el modelo original es de Aurety y que el repositorio de HuggingFace no es la publicacion original ni reclama autoria de los pesos. Conviene mantener esa atribucion.
+- Atribucion: la model card indica que el modelo original es de Aurety y que el repositorio de Hugging Face no es la publicacion original ni reclama autoria de los pesos. Conviene mantener esa atribucion.
 - Repositorio sin traccion: 0 descargas y 0 *likes*, sin issues ni ejemplos de la comunidad que permitan validar su comportamiento en produccion.
 - Metadato inconsistente: las fechas de creacion y actualizacion declaradas (2026-09-23) son posteriores a la fecha actual, lo que sugiere un error de metadatos en el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jderr/Cheyenne-SDXL-v2.0
+- Hugging Face: https://huggingface.co/jderr/Cheyenne-SDXL-v2.0
 - Publicacion original en Civitai (referencia derivada del AIR `civitai:198051@1055511`): https://civitai.com/models/198051
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Repositorio de ComfyUI (entorno de despliegue documentado por el autor): https://github.com/comfyanonymous/ComfyUI

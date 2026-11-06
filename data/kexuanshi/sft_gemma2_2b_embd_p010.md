@@ -98,7 +98,7 @@ La ventaja diferencial de este ajuste frente a los base citados sería una supue
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_embd_p010
+- Repositorio en Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_embd_p010
 - TRL (librería de entrenamiento citada en la model card): https://github.com/huggingface/trl
 - Paper de TRL citado en la model card: von Werra, L. et al. (2020), "TRL: Transformers Reinforcement Learning", https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, repositorios adicionales ni demos específicos de este modelo en la búsqueda web realizada. Los enlaces devueltos por dicha búsqueda no guardan relación con el repositorio y se han descartado.

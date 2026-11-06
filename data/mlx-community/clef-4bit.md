@@ -97,7 +97,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks compar
 
 ## Enlaces
 
-- Modelo en HuggingFace (mlx-community/clef-4bit): https://huggingface.co/mlx-community/clef-4bit
+- Modelo en Hugging Face (mlx-community/clef-4bit): https://huggingface.co/mlx-community/clef-4bit
 - Modelo base (Cloudflare/clef): https://huggingface.co/Cloudflare/clef
 - Libreria de conversion e inferencia MLX-VLM (`pip install mlx-vlm`): https://github.com/Blaizzy/mlx-vlm
 - MLX-LM (mencionada como no adecuada para este modelo): https://github.com/ml-explore/mlx-lm

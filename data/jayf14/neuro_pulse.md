@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neuro_Pulse es un clasificador tabular para la predicción de crisis epilépticas desarrollado por el usuario JayF14 y publicado en HuggingFace. El modelo distingue entre estados preictales (ventanas inmediatamente anteriores a una crisis) e interictales (actividad normal) a partir de características extraídas de señales EEG de cuero cabelludo. No es un modelo de lenguaje ni un modelo generativo: se distribuye como artefactos serializados en formato `.pkl` (pickle/joblib) que se cargan desde Python para inferencia sobre vectores de características precalculadas.
+Neuro_Pulse es un clasificador tabular para la predicción de crisis epilépticas desarrollado por el usuario JayF14 y publicado en Hugging Face. El modelo distingue entre estados preictales (ventanas inmediatamente anteriores a una crisis) e interictales (actividad normal) a partir de características extraídas de señales EEG de cuero cabelludo. No es un modelo de lenguaje ni un modelo generativo: se distribuye como artefactos serializados en formato `.pkl` (pickle/joblib) que se cargan desde Python para inferencia sobre vectores de características precalculadas.
 
 El repositorio incluye tanto los modelos entrenados (`master_model.pkl`, `ensemble_model.pkl` y `xgboost_model.pkl`) como el conjunto de datos procesado y etiquetado derivado de la base de datos pública CHB-MIT Scalp EEG Database, con ficheros CSV por paciente (`chbXX_labeled_features.csv`) que cubren los sujetos `chb01` a `chb24`. El autor declara métricas de accuracy del 99,12 %, F1 del 93,63 %, sensibilidad del 94,30 %, especificidad del 99,48 % y ROC AUC del 99,79 % sobre un conjunto de prueba con 13.356 muestras interictales y 982 preictales.
 
@@ -89,7 +89,7 @@ No se ha proporcionado informacion sobre modelos comparables en la documentacion
 
 | Modelo | Parametros | Contexto | Metricas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Neuro_Pulse (JayF14) | no disponible | no aplica | accuracy 99,12 %, F1 93,63 %, ROC AUC 99,79 %, segun el autor | MIT | HuggingFace, 0 descargas |
+| Neuro_Pulse (JayF14) | no disponible | no aplica | accuracy 99,12 %, F1 93,63 %, ROC AUC 99,79 %, segun el autor | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,6 +107,6 @@ No se ha proporcionado informacion sobre modelos comparables en la documentacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JayF14/Neuro_Pulse
+- Modelo en Hugging Face: https://huggingface.co/JayF14/Neuro_Pulse
 - Dataset de referencia (CHB-MIT Scalp EEG Database, PhysioNet): no incluido en la informacion proporcionada; el autor lo cita como origen de las caracteristicas.
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

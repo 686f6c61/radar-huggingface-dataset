@@ -71,8 +71,8 @@ Los resultados del conjunto completo (24 conjuntos de prueba) confirman que Fire
 
 | Modelo | Arquitectura | Idiomas | CER mandarín (media) | CER dialectos (media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FireRedASR2-LLM | Encoder-Adapter-LLM (Qwen2) | Chino (mandarín + 20 dialectos), inglés, code-switching | 2,89 | 11,55 | Apache 2.0 | HuggingFace, ModelScope |
-| FireRedASR2-AED | Attention-based Encoder-Decoder | Chino (mandarín + 20 dialectos), inglés, code-switching | 3,05 | 11,67 | no disponible | HuggingFace, ModelScope |
+| FireRedASR2-LLM | Encoder-Adapter-LLM (Qwen2) | Chino (mandarín + 20 dialectos), inglés, code-switching | 2,89 | 11,55 | Apache 2.0 | Hugging Face, ModelScope |
+| FireRedASR2-AED | Attention-based Encoder-Decoder | Chino (mandarín + 20 dialectos), inglés, code-switching | 3,05 | 11,67 | no disponible | Hugging Face, ModelScope |
 | Qwen3-ASR-1.7B | no disponible | no disponible | 3,76 | 11,85 | no disponible | no disponible |
 | Doubao-ASR | no disponible | no disponible | 3,69 | 15,39 | no disponible (propietario) | no disponible |
 | Fun-ASR | no disponible | no disponible | 4,16 | 12,76 | no disponible | no disponible |
@@ -91,13 +91,13 @@ FireRedASR2-LLM lidera tanto en mandarín como en dialectos entre los modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/FireRedASR2-LLM-vllm
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/FireRedASR2-LLM-vllm
 - Checkpoint original: https://huggingface.co/allendou/FireRedASR2-LLM-vllm
 - Modelo oficial FireRedASR2-LLM: https://huggingface.co/FireRedTeam/FireRedASR2-LLM
 - Modelo en ModelScope: https://www.modelscope.cn/models/xukaituo/FireRedASR2-LLM/
 - Código: https://github.com/FireRedTeam/FireRedASR2S
 - Paper: https://arxiv.org/pdf/2501.14350
-- Organización en HuggingFace: https://huggingface.co/FireRedTeam
+- Organización en Hugging Face: https://huggingface.co/FireRedTeam
 - Blog: https://fireredteam.github.io/demos/firered_asr/
 - Demo: https://huggingface.co/spaces/FireRedTeam/FireRedASR
 - FireRedASR (generación anterior): https://github.com/FireRedTeam/FireRedASR

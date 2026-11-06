@@ -118,7 +118,7 @@ Frente a XERON-0.2, la versión 0.4 gana en precisión de decisión (0,558 frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PIXELZX/XERON-0.4
+- Modelo en Hugging Face: https://huggingface.co/PIXELZX/XERON-0.4
 - XERON-0.2 (modelo base directo): https://huggingface.co/PIXELZX/XERON-0.2
 - Laya (Convai Innovations, base de la familia): https://huggingface.co/convaiinnovations/laya
 - Backbone mmBERT-base: https://huggingface.co/jhu-clsp/mmBERT-base

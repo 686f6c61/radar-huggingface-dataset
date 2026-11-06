@@ -2,7 +2,7 @@
 
 ## Resumen
 
-project-classification99 es un modelo de clasificación de imágenes desarrollado por Tonylesta, publicado en HuggingFace bajo licencia MIT. Se trata de una implementación personalizada de la arquitectura MobileViT en su variante "large", con atención multi-query, fusión tensorial, activación swish y normalización groupnorm. El repositorio incluye un checkpoint de inicialización (16.576 parámetros) que no ha sido entrenado, junto con un script de fine-tuning y archivos de configuración. Su utilidad radica en servir como punto de partida reproducible para experimentos y pruebas de humo en pipelines de entrenamiento de clasificación de imágenes. No se han publicado resultados de benchmarks ni métricas de rendimiento.
+project-classification99 es un modelo de clasificación de imágenes desarrollado por Tonylesta, publicado en Hugging Face bajo licencia MIT. Se trata de una implementación personalizada de la arquitectura MobileViT en su variante "large", con atención multi-query, fusión tensorial, activación swish y normalización groupnorm. El repositorio incluye un checkpoint de inicialización (16.576 parámetros) que no ha sido entrenado, junto con un script de fine-tuning y archivos de configuración. Su utilidad radica en servir como punto de partida reproducible para experimentos y pruebas de humo en pipelines de entrenamiento de clasificación de imágenes. No se han publicado resultados de benchmarks ni métricas de rendimiento.
 
 ## Especificaciones técnicas
 
@@ -68,4 +68,4 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tonylesta/project-classification99
+- Modelo en Hugging Face: https://huggingface.co/Tonylesta/project-classification99

@@ -37,20 +37,20 @@ El modelo es un fine-tune de google/medsiglip-448, un checkpoint de la familia S
 - Desarrollo de pipelines de IA medica: como componente dentro de un sistema mayor que combine deteccion, segmentacion y clasificacion, aprovechando su tamaño reducido (0.4 GB) para despliegue en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni metricas dermatologicas especificas (como AUC, sensibilidad, especificidad) en la pagina de HuggingFace ni en el repositorio de GitHub. La unica referencia es la mencion a un criterio de seleccion basado en AUC de la clase peligrosa, pero sin valores concretos.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni metricas dermatologicas especificas (como AUC, sensibilidad, especificidad) en la pagina de Hugging Face ni en el repositorio de GitHub. La unica referencia es la mencion a un criterio de seleccion basado en AUC de la clase peligrosa, pero sin valores concretos.
 
 ## Requisitos de hardware
 - Tamano del repositorio: 0.4 GB, lo que indica que el modelo es relativamente ligero y probablemente cabe en GPUs consumer con al menos 4 GB de VRAM.
 - GPU recomendadas: no se especifican, pero por el tamano, una RTX 3060 (12 GB) o superior seria suficiente para inferencia. Una RTX 4090 o A100 permitiria procesamiento por lotes o entrenamiento adicional.
 - Al ser un clasificador de imagenes, no requiere grandes cantidades de memoria de contexto ni generacion autoregresiva, por lo que la latencia por imagen deberia ser baja (del orden de milisegundos en GPUs modernas).
-- Opciones de despliegue: al usar la libreria transformers, puede servirse con pipelines de HuggingFace Inference Endpoints, o mediante frameworks como TorchServe o TensorFlow Serving. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, que son para modelos generativos de lenguaje.
+- Opciones de despliegue: al usar la libreria transformers, puede servirse con pipelines de Hugging Face Inference Endpoints, o mediante frameworks como TorchServe o TensorFlow Serving. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, que son para modelos generativos de lenguaje.
 - No se dispone de datos de throughput o latencia medidos.
 
 ## Comparativa con modelos similares
 No se dispone de informacion suficiente para comparar con otros modelos de clasificacion de lesiones cutaneas como ResNet50 fine-tuneado en HAM10000, o modelos especificos como DermCNN. El acceso restringido y la falta de benchmarks publicos impiden establecer una comparacion objetiva. Se puede indicar que, por su base MedSigLIP, podria tener ventajas en representaciones visuales robustas, pero no hay datos que lo confirmen.
 
 ## Limitaciones y advertencias
-- Acceso restringido: es necesario solicitar permiso al autor en HuggingFace, lo que limita su uso inmediato y la reproducibilidad.
+- Acceso restringido: es necesario solicitar permiso al autor en Hugging Face, lo que limita su uso inmediato y la reproducibilidad.
 - Licencia no disponible: no se especifican los terminos de uso comercial o de redistribucion, lo que impide su integracion en productos sin asesoria legal.
 - Sesgo potencial: no se detalla la composicion del dataset de entrenamiento, por lo que podria tener sesgos hacia ciertos tipos de piel, edades o condiciones de iluminacion, afectando su generalizacion.
 - Riesgo de falsos negativos: aunque el diseno prioriza su reduccion, ningun modelo es perfecto; en entornos clinicos debe usarse como apoyo, no como sustituto del juicio medico.
@@ -58,6 +58,6 @@ No se dispone de informacion suficiente para comparar con otros modelos de clasi
 - Limitacion a clasificacion de imagenes: no genera explicaciones textuales ni informes, por lo que su salida requiere interpretacion por personal cualificado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/AndreaGemignani/ANDRY-V3B-SkinScanner
+- Hugging Face: https://huggingface.co/AndreaGemignani/ANDRY-V3B-SkinScanner
 - Repositorio GitHub: https://github.com/AndreaGemignani/ANDRY-SkinScanner/tree/main/
 - Modelo base: https://huggingface.co/google/medsiglip-448 (no confirmado, inferido del tag)

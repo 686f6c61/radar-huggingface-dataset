@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Swift-Qwen3.8-Flash-Next-Q4_0-Q8out-v3 (este) | 176.943.899.520 | 262.144 | qwen4exp (GDN + atencion, MoE 512 expertos, MTP) | qwen-community-license-1.0 | GGUF (3 shards, 95 GiB) | Publico en HuggingFace; requiere build de llama.cpp con soporte qwen4exp |
-| ukisai/Swift1.5-Qwen3.8-Flash-Next (base) | no disponible | no disponible | no disponible (se describe como variante Swift con reduccion de tokens de razonamiento) | no disponible | no disponible | Publico en HuggingFace |
-| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | GDN + QSA hibrida, con mejoras en atencion, residuales, embedding y optimizacion | no disponible (serie Qwen3.8) | no disponible | Publico en HuggingFace y GitHub (QwenLM) |
-| nitinpanj/qwen38-flash-next-v3 | no disponible | no disponible | no disponible | no disponible | GGUF | Publico en HuggingFace; otra cuantizacion del mismo autor |
+| Swift-Qwen3.8-Flash-Next-Q4_0-Q8out-v3 (este) | 176.943.899.520 | 262.144 | qwen4exp (GDN + atencion, MoE 512 expertos, MTP) | qwen-community-license-1.0 | GGUF (3 shards, 95 GiB) | Publico en Hugging Face; requiere build de llama.cpp con soporte qwen4exp |
+| ukisai/Swift1.5-Qwen3.8-Flash-Next (base) | no disponible | no disponible | no disponible (se describe como variante Swift con reduccion de tokens de razonamiento) | no disponible | no disponible | Publico en Hugging Face |
+| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | GDN + QSA hibrida, con mejoras en atencion, residuales, embedding y optimizacion | no disponible (serie Qwen3.8) | no disponible | Publico en Hugging Face y GitHub (QwenLM) |
+| nitinpanj/qwen38-flash-next-v3 | no disponible | no disponible | no disponible | no disponible | GGUF | Publico en Hugging Face; otra cuantizacion del mismo autor |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada, por lo que la comparativa se limita a formato, disponibilidad y linaje.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/nitinpanj/Swift-Qwen3.8-Flash-Next-Q4_0-Q8out-v3-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/nitinpanj/Swift-Qwen3.8-Flash-Next-Q4_0-Q8out-v3-GGUF
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Otra cuantizacion del mismo autor: https://huggingface.co/nitinpanj/qwen38-flash-next-v3
 - Modelo Qwen3.8-Flash-Next oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

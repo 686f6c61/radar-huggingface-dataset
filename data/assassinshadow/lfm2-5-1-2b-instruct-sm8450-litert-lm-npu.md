@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/assassinshadow/LFM2.5-1.2B-Instruct-SM8450-LiteRT-LM-NPU
+- Repositorio en Hugging Face: https://huggingface.co/assassinshadow/LFM2.5-1.2B-Instruct-SM8450-LiteRT-LM-NPU
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - App AutoDroid Studio en Google Play: https://play.google.com/store/apps/details?id=com.assassinshadow.aiserver
 - LiteRT-LM (GitHub): https://github.com/google-ai-edge/LiteRT-LM

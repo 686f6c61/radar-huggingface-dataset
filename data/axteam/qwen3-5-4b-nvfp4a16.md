@@ -75,9 +75,9 @@ Estas cifras miden parecido con el modelo base, no calidad absoluta en tareas. N
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/Qwen3.5-4B-NVFP4A16 | ~4,54 B | No disponible | NVFP4A16 (W4A16), ~5,3 GB | Apache-2.0 | HuggingFace, vLLM |
-| Qwen/Qwen3.5-4B (original) | ~4,54 B | No disponible | BF16, ~9 GB de pesos (estimado) | Apache-2.0 | HuggingFace, referencia de calidad |
-| axteam/Qwen3.5-0.8B-NVFP4A16 | ~0,9 B | No disponible | NVFP4A16 | Apache-2.0 | HuggingFace, misma receta en menor tamaño |
+| axteam/Qwen3.5-4B-NVFP4A16 | ~4,54 B | No disponible | NVFP4A16 (W4A16), ~5,3 GB | Apache-2.0 | Hugging Face, vLLM |
+| Qwen/Qwen3.5-4B (original) | ~4,54 B | No disponible | BF16, ~9 GB de pesos (estimado) | Apache-2.0 | Hugging Face, referencia de calidad |
+| axteam/Qwen3.5-0.8B-NVFP4A16 | ~0,9 B | No disponible | NVFP4A16 | Apache-2.0 | Hugging Face, misma receta en menor tamaño |
 | qwen3.5:4b (Ollama) | ~4 B (familia) | No disponible | Formato Ollama/GGUF | Apache-2.0 | Ollama |
 
 Frente al original en BF16, esta versión reduce el peso aproximadamente a la mitad a cambio de un 4,3 % más de perplejidad y un 8,3 % menos de acuerdo top-1. Frente al hermano de 0,8 B, ofrece mucha más capacidad a costa de más memoria. No se dispone de comparaciones de rendimiento en tareas con modelos de otros fabricantes en la información consultada.
@@ -98,7 +98,7 @@ Frente al original en BF16, esta versión reduce el peso aproximadamente a la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-4B-NVFP4A16
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-4B-NVFP4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Variante de 0,8 B del mismo autor: https://huggingface.co/axteam/Qwen3.5-0.8B-NVFP4A16

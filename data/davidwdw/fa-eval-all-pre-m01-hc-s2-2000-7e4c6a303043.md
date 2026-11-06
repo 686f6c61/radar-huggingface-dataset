@@ -86,6 +86,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-hc-s2-2000-7e4c6a303043
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-hc-s2-2000-7e4c6a303043
 - Receta canonica citada en la model card: evaluations/2026-09-26_b1k_all_existing_queue (sin URL publica disponible)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada. Los resultados devueltos por el buscador no guardaban ninguna relacion con este repositorio y se han descartado.

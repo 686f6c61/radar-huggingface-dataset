@@ -91,7 +91,7 @@ RenikudPlus es el referente directo: Beak reutiliza su esquema de etiquetado y s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dtsj89/puki-beak
+- Modelo en Hugging Face: https://huggingface.co/dtsj89/puki-beak
 - Repositorio del proyecto Puki: https://github.com/TomSadeh/puki
 - BlueTTS: https://github.com/maxmelichov/BlueTTS
 - RenikudPlus: https://huggingface.co/notmax123/RenikudPlus

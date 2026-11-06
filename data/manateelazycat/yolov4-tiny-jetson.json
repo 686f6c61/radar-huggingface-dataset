@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/YOLOv4-Tiny-Jetson",
+  "slug": "manateelazycat-yolov4-tiny-jetson",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/YOLOv4-Tiny-Jetson",
+  "created_at": "2026-11-05T20:03:22.000Z",
+  "updated_at": "2026-11-05T20:05:53.000Z",
+  "license": "upstream-mixed-notices",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "tensorrt",
+  "languages": [],
+  "tags": [
+    "tensorrt",
+    "onnx",
+    "object-detection",
+    "jetson",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62021584,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manateelazycat/YOLOv4-Tiny-Jetson · Hugging Face",
+      "url": "https://huggingface.co/manateelazycat/YOLOv4-Tiny-Jetson",
+      "snippet": "YOLOv4-tiny Jetson model assets — JP6 candidate Locked original Darknet cfg/weights, Frigate COCO labels, and one native AGX Orin SM87 / TensorRT 8.6.2 plan. This repository contains model assets and reproducibility inputs; it contains no runtime image or camera footage. The inference contract is uint8 RGB NCHW [1,3,416,416] input and the pinned Frigate 20x6 raw detection output. See ..."
+    },
+    {
+      "title": "manateelazycat/YOLOv4-Tiny-Jetson-Runtime · Hugging Face",
+      "url": "https://huggingface.co/manateelazycat/YOLOv4-Tiny-Jetson-Runtime",
+      "snippet": "This repository contains one arm64 NVIDIA Jetson AGX Orin JP6 model-application runtime candidate and its exact source/notice distribution inputs. It contains no model weights, camera footage, service keys or final model LPK. The runtime is for the fixed YOLOv4-tiny-416 detector application on ..."
+    }
+  ]
+}

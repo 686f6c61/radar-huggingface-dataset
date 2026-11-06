@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `r18-a2-w13-k-native-w15-s130` es un checkpoint publicado por el usuario `alfred8995` en HuggingFace bajo licencia Apache 2.0 y acceso restringido (gated). Por el identificador, la etiqueta `sn38-nanochrono` y el recuento de parámetros en safetensors (2.018.511.234, es decir, aproximadamente 2.020 millones de parámetros), se trata de un modelo de tamaño pequeño-medio, presumiblemente orientado a generación de texto. No se dispone de documentación pública sobre su arquitectura, datos de entrenamiento ni propósito declarado.
+El modelo `r18-a2-w13-k-native-w15-s130` es un checkpoint publicado por el usuario `alfred8995` en Hugging Face bajo licencia Apache 2.0 y acceso restringido (gated). Por el identificador, la etiqueta `sn38-nanochrono` y el recuento de parámetros en safetensors (2.018.511.234, es decir, aproximadamente 2.020 millones de parámetros), se trata de un modelo de tamaño pequeño-medio, presumiblemente orientado a generación de texto. No se dispone de documentación pública sobre su arquitectura, datos de entrenamiento ni propósito declarado.
 
 El repositorio tiene 14,4 GB de peso y apenas 4 descargas y 0 «likes», lo que sugiere una publicación muy reciente (creada el 29 de octubre de 2026) y sin adopción comunitaria. La nomenclatura `r18-a2-w13-k-native-w15-s130` parece codificar hiperparámetros de entrenamiento (posiblemente rondas, capas de atención, ventana, pasos), pero no hay información que lo confirme.
 
-La relevancia de esta ficha es, por tanto, limitada: se trata de un modelo sin documentación, sin benchmarks y con acceso restringido. Se documenta aquí con las especificaciones verificables a partir de los metadatos de HuggingFace, marcando explícitamente como «no disponible» todo aquello que no puede confirmarse.
+La relevancia de esta ficha es, por tanto, limitada: se trata de un modelo sin documentación, sin benchmarks y con acceso restringido. Se documenta aquí con las especificaciones verificables a partir de los metadatos de Hugging Face, marcando explícitamente como «no disponible» todo aquello que no puede confirmarse.
 
 ## Especificaciones tecnicas
 
@@ -82,12 +82,12 @@ La comparación de rendimiento no es posible porque no hay benchmarks publicados
 - Riesgo elevado de alucinación y comportamiento impredecible: sin información sobre alineación ni evaluación, no puede asumirse calidad conversacional.
 - Sesgos desconocidos: al no conocerse el corpus de entrenamiento, no pueden identificarse sesgos de género, idioma, cultura o dominio.
 - Idiomas no confirmados: no hay garantía de soporte multilingüe ni de calidad en castellano.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero el acceso está restringido (gated) en HuggingFace, por lo que es necesario aceptar las condiciones del autor para descargarlo.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero el acceso está restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones del autor para descargarlo.
 - Sin adopción comunitaria: 4 descargas y 0 «likes» implican ausencia de validación externa; cualquier uso en producción es de alto riesgo.
 - Fecha de creación futura (2026): conviene verificar la autenticidad y procedencia del repositorio antes de confiar en él.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w15-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w15-s130
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información disponible.

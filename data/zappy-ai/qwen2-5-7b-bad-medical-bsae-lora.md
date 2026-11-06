@@ -91,7 +91,7 @@ No se identifican en la información proporcionada otros adaptadores comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZappY-AI/qwen2.5-7b-bad-medical-bsae-lora
+- Modelo en Hugging Face: https://huggingface.co/ZappY-AI/qwen2.5-7b-bad-medical-bsae-lora
 - Repositorio de código del método (B-SAE / OB-SAE): https://github.com/AK3847/OB-SAE
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 

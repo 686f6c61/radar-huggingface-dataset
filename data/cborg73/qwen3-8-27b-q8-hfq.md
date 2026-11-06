@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cborg73/qwen3.8-27b.q8.hfq` es un repositorio de pesos alojado en HuggingFace por el usuario cborg73, que por su denominación corresponde a una cuantización a 8 bits (Q8) en formato HFQ de un supuesto modelo Qwen de 27 000 millones de parámetros. El repositorio tiene un tamaño de 28,6 GB, coherente con un checkpoint de esa magnitud en precisión de 8 bits, y se distribuye bajo licencia Apache 2.0. La model card publicada es prácticamente vacía: solo contiene la declaración de licencia, sin descripción, sin especificaciones y sin datos de entrenamiento.
+`cborg73/qwen3.8-27b.q8.hfq` es un repositorio de pesos alojado en Hugging Face por el usuario cborg73, que por su denominación corresponde a una cuantización a 8 bits (Q8) en formato HFQ de un supuesto modelo Qwen de 27 000 millones de parámetros. El repositorio tiene un tamaño de 28,6 GB, coherente con un checkpoint de esa magnitud en precisión de 8 bits, y se distribuye bajo licencia Apache 2.0. La model card publicada es prácticamente vacía: solo contiene la declaración de licencia, sin descripción, sin especificaciones y sin datos de entrenamiento.
 
 No se dispone de información verificable sobre la arquitectura, el contexto, los idiomas soportados ni el rendimiento del modelo. La nomenclatura "qwen3.8-27b" no se corresponde con ninguna familia oficial publicada por Alibaba Qwen en la información disponible, por lo que no es posible confirmar que se trate de un modelo oficial ni de un derivado directo identificable. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -65,7 +65,7 @@ No es posible establecer una comparativa fiable porque no se dispone de especifi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cborg73/qwen3.8-27b.q8.hfq | 27B (inferido) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| cborg73/qwen3.8-27b.q8.hfq | 27B (inferido) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable porque no se dispone de especifi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cborg73/qwen3.8-27b.q8.hfq
+- Repositorio Hugging Face: https://huggingface.co/cborg73/qwen3.8-27b.q8.hfq
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este checkpoint.

@@ -4,7 +4,7 @@
 
 El modelo `mcwei/gemma-4-31B-it-bf16-sft-novel-prefill-150` es un fine-tuning supervisado (SFT) del modelo base `unsloth/gemma-4-31B-it`, que a su vez es una versión optimizada del Gemma 4 31B Instruct de Google. El autor, mcwei, ha publicado este modelo con licencia Apache 2.0, lo que permite su uso comercial y modificación sin restricciones significativas. El nombre sugiere una técnica de "prefill" orientada a novelas, aunque no se documenta en la model card.
 
-El modelo tiene 31.273.088.876 parámetros (~31B), está en formato safetensors en bf16 y ocupa 62,6 GB en el repositorio. Según la información disponible, fue entrenado con las librerías Unsloth y TRL de HuggingFace, lo que indica un proceso de fine-tuning estándar sobre el modelo instruct de Gemma 4. El pipeline declarado es `image-text-to-text`, lo que sugiere capacidades multimodales heredadas del modelo base, aunque no se especifica si el fine-tuning las ha modificado.
+El modelo tiene 31.273.088.876 parámetros (~31B), está en formato safetensors en bf16 y ocupa 62,6 GB en el repositorio. Según la información disponible, fue entrenado con las librerías Unsloth y TRL de Hugging Face, lo que indica un proceso de fine-tuning estándar sobre el modelo instruct de Gemma 4. El pipeline declarado es `image-text-to-text`, lo que sugiere capacidades multimodales heredadas del modelo base, aunque no se especifica si el fine-tuning las ha modificado.
 
 La relevancia de este modelo radica en que ofrece una alternativa de código abierto con licencia permisiva para tareas de generación de texto y razonamiento, basada en una arquitectura de última generación. Sin embargo, la documentación es muy escasa, por lo que gran parte de las especificaciones técnicas deben inferirse del modelo base.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que ofrece una alternativa de código abi
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde al modelo base Gemma 4 31B Instruct, que es un transformer denso (a diferencia de la variante 26B A4B que es MoE). El fine-tuning se realizó mediante SFT (supervised fine-tuning) utilizando las librerías Unsloth y TRL de HuggingFace. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas como RLHF o DPO. El nombre "novel-prefill" sugiere una posible optimización para el prellenado de contexto en tareas de generación de novelas, pero no hay evidencia documental que lo confirme.
+La arquitectura corresponde al modelo base Gemma 4 31B Instruct, que es un transformer denso (a diferencia de la variante 26B A4B que es MoE). El fine-tuning se realizó mediante SFT (supervised fine-tuning) utilizando las librerías Unsloth y TRL de Hugging Face. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas como RLHF o DPO. El nombre "novel-prefill" sugiere una posible optimización para el prellenado de contexto en tareas de generación de novelas, pero no hay evidencia documental que lo confirme.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en bf16, ~62 GB (31B × 2 bytes). Con cuantización INT8 ~31 GB, INT4 ~16 GB.
 - GPU recomendadas: A100 80GB, H100, o RTX 4090 (con cuantización 4-bit).
 - En consumer GPU: cabe en RTX 4090 (24 GB) solo con cuantización de 4 bits; para 8 bits se requiere una GPU con 32 GB o más.
-- Opciones de despliegue: vLLM, TGI, llama.cpp (con GGUF), Ollama (si se convierte), o HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, TGI, llama.cpp (con GGUF), Ollama (si se convierte), o Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles; depende del hardware y de la cuantización.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos para este fine-tuning especí
 
 ## Enlaces
 
-- [HuggingFace - mcwei/gemma-4-31B-it-bf16-sft-novel-prefill-150](https://huggingface.co/mcwei/gemma-4-31B-it-bf16-sft-novel-prefill-150)
+- [Hugging Face - mcwei/gemma-4-31B-it-bf16-sft-novel-prefill-150](https://huggingface.co/mcwei/gemma-4-31B-it-bf16-sft-novel-prefill-150)
 - [Modelo base unsloth/gemma-4-31B-it](https://huggingface.co/unsloth/gemma-4-31B-it)
 - [Gemma 4 model card - Google AI for Developers](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Ollama - gemma4:31b-it-bf16](https://ollama.com/library/gemma4:31b-it-bf16)

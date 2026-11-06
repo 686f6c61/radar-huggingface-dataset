@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `toagarwal/generation-dev-2023` es una implementación compacta y personalizada en PyTorch de una arquitectura híbrida CNN-Transformer orientada a tareas de generación. Lo desarrolla el usuario toagarwal y se publica en HuggingFace con licencia MIT. Su propósito declarado es servir como punto de partida experimental para revisión de código, pruebas de humo y experimentos controlados a pequeña escala, no como un modelo preentrenado listo para producción.
+El modelo `toagarwal/generation-dev-2023` es una implementación compacta y personalizada en PyTorch de una arquitectura híbrida CNN-Transformer orientada a tareas de generación. Lo desarrolla el usuario toagarwal y se publica en Hugging Face con licencia MIT. Su propósito declarado es servir como punto de partida experimental para revisión de código, pruebas de humo y experimentos controlados a pequeña escala, no como un modelo preentrenado listo para producción.
 
 Con solo 49.600 parámetros, se trata de un modelo de escala mínima. La arquitectura combina atención por grupos (grouped query attention) con fusión tensorial y normalización por lotes, usando activación GELU. El repositorio incluye un checkpoint de inicialización válido para pruebas, pero el propio autor advierte explícitamente de que no se presenta como un checkpoint entrenado ni se reivindica ningún resultado de benchmark. Su relevancia actual es limitada: puede interesar a quienes quieran estudiar arquitecturas híbridas CNN-Transformer en un entorno de juguete o validar pipelines de entrenamiento personalizados.
 
@@ -64,11 +64,11 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - No se ha auditado el modelo en cuanto a robustez, equidad o transferencia a dominios específicos.
 - No se proporcionan datos sobre sesgos, alucinaciones o riesgos de seguridad; al no estar entrenado, estos riesgos no son aplicables en la práctica, pero tampoco hay garantías.
 - La licencia MIT permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usa con datasets propios.
-- La implementación es personalizada y no compatible con APIs genéricas de HuggingFace sin un adaptador explícito; esto dificulta su uso en pipelines estándar.
+- La implementación es personalizada y no compatible con APIs genéricas de Hugging Face sin un adaptador explícito; esto dificulta su uso en pipelines estándar.
 - No hay información sobre la longitud de contexto soportada, lo que impide planificar su uso en tareas que requieran ventanas largas.
 - El repositorio no incluye documentación sobre el formato de los datos de entrada ni sobre cómo entrenar el modelo con datos propios más allá del ejemplo de humo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toagarwal/generation-dev-2023
+- Repositorio en Hugging Face: https://huggingface.co/toagarwal/generation-dev-2023
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la búsqueda web.

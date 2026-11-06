@@ -85,7 +85,7 @@ El campo de contexto, licencia y rendimiento de los modelos goldfish no esta dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/k7sl4txj
 - Repositorio TRL: https://github.com/huggingface/trl

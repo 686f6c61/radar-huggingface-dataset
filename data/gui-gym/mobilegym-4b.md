@@ -74,8 +74,8 @@ Desviacion tipica poblacional de SR entre ejecuciones: 1,25 puntos porcentuales.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MobileGym-4B | 4,83 B | 40.960 tokens (config. de servicio) | VLM + GRPO para GUI movil | no designada | HuggingFace, safetensors |
-| Qwen3-VL-4B-Instruct (base) | ~4 B | no disponible en esta ficha | VLM instruct general | Apache-2.0 | HuggingFace |
+| MobileGym-4B | 4,83 B | 40.960 tokens (config. de servicio) | VLM + GRPO para GUI movil | no designada | Hugging Face, safetensors |
+| Qwen3-VL-4B-Instruct (base) | ~4 B | no disponible en esta ficha | VLM instruct general | Apache-2.0 | Hugging Face |
 | MobileGym oficial (referencia del articulo) | no disponible | no disponible | VLM + RL para GUI movil | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa.
@@ -94,6 +94,6 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GUI-Gym/MobileGym-4B
+- Modelo en Hugging Face: https://huggingface.co/GUI-Gym/MobileGym-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Articulo MobileGym: https://arxiv.org/abs/2605.26114

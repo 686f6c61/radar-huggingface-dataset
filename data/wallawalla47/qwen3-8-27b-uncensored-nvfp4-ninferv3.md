@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wallawalla47/Qwen3.8-27B-Uncensored-NVFP4-NInferV3
+- Modelo en Hugging Face: https://huggingface.co/wallawalla47/Qwen3.8-27B-Uncensored-NVFP4-NInferV3
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-NVFP4
 - Repositorio del motor Infernix: https://github.com/Wallawalla47/Infernix
 - Benchmarks de Infernix frente a NInfer: https://github.com/Wallawalla47/Infernix#qwen38-27b-infernix-vs-ninfer

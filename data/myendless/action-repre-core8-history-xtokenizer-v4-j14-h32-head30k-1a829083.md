@@ -37,7 +37,7 @@ El entrenamiento consta de 30.000 pasos y parte de un checkpoint fuente declarad
 - Configuración orientada a 14 articulaciones, deducida de `joint14`; la model card no desarrolla el significado exacto.
 - Condicionamiento por historial, sugerido por `history`; no se especifica la longitud ni el formato del historial.
 - Uso de un tokenizer externo y mecanismos de protección de embeddings, citados de forma literal en la model card.
-- Carga mediante el loader específico del benchmark; no se garantiza compatibilidad con pipelines estándar de HuggingFace.
+- Carga mediante el loader específico del benchmark; no se garantiza compatibilidad con pipelines estándar de Hugging Face.
 - No se documentan capacidades de generación de texto, código, matemáticas, visión general, audio, tool calling, agentes o razonamiento multilingüe.
 - No se documenta modo de pensamiento (`thinking mode`) ni funciones de llamada a herramientas.
 
@@ -92,6 +92,6 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/myendless/action-repre-core8-history-xtokenizer-v4-j14-h32-head30k-1a829083
+- Repositorio del modelo en Hugging Face: https://huggingface.co/myendless/action-repre-core8-history-xtokenizer-v4-j14-h32-head30k-1a829083
 - Repositorio de datos asociado: https://huggingface.co/datasets/myendless/action-repre-robotwin-v4-data
 - La búsqueda web realizada no devolvió enlaces técnicos relevantes sobre este modelo; no se han identificado papers, blogs, repositorios de código ni demos adicionales.

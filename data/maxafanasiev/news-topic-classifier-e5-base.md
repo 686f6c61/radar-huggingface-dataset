@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `news-topic-classifier-e5-base` es un clasificador de texto multietiqueta para articulos de noticias, desarrollado por el usuario maxafanasiev y publicado en HuggingFace. Se trata de un fine-tuning del modelo de embeddings multilingue `intfloat/multilingual-e5-base`, adaptado mediante `AutoModelForSequenceClassification` para predecir 13 topicos periodisticos: Business And Finance, Market And Exchange, Demographics, Scientific Exploration, Labour Dispute, Disaster, Conflicts And War, Politics, Crime, Theft, Assault, Corporate Crime y Fraud. La ausencia de etiquetas se interpreta como "Other".
+El modelo `news-topic-classifier-e5-base` es un clasificador de texto multietiqueta para articulos de noticias, desarrollado por el usuario maxafanasiev y publicado en Hugging Face. Se trata de un fine-tuning del modelo de embeddings multilingue `intfloat/multilingual-e5-base`, adaptado mediante `AutoModelForSequenceClassification` para predecir 13 topicos periodisticos: Business And Finance, Market And Exchange, Demographics, Scientific Exploration, Labour Dispute, Disaster, Conflicts And War, Politics, Crime, Theft, Assault, Corporate Crime y Fraud. La ausencia de etiquetas se interpreta como "Other".
 
 El modelo resuelve el problema de la clasificacion automatica de noticias en un contexto multilingue (hereda la cobertura linguistica de e5-base), con salida multi-etiqueta en lugar de una unica clase, lo que permite representar articulos que abordan varios temas simultaneamente. Su relevancia practica radica en que ofrece un pipeline cerrado con umbrales calibrados por categoria (`thresholds.json`) y una relacion calidad/latencia favorable en CPU: 0,860 de micro-F1 con 42 ms por articulo a 512 tokens.
 
@@ -68,8 +68,8 @@ Medido en un Apple M4 Pro en fp32 sobre un conjunto gold de 163 ejemplos. No se 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `maxafanasiev/news-topic-classifier-e5-base` | 278 M | 512 tokens | Clasificacion multi-etiqueta de noticias (13 topicos) | other | HuggingFace (repo descrito como privado en la model card) |
-| `intfloat/multilingual-e5-base` (modelo base) | 278 M | 512 tokens | Embeddings multilingues | no disponible | HuggingFace |
+| `maxafanasiev/news-topic-classifier-e5-base` | 278 M | 512 tokens | Clasificacion multi-etiqueta de noticias (13 topicos) | other | Hugging Face (repo descrito como privado en la model card) |
+| `intfloat/multilingual-e5-base` (modelo base) | 278 M | 512 tokens | Embeddings multilingues | no disponible | Hugging Face |
 | Clasificadores de topicos alternativos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros clasificadores de noticias en la informacion proporcionada.
@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks comparativos con otros clasificadores de no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxafanasiev/news-topic-classifier-e5-base
+- Hugging Face: https://huggingface.co/maxafanasiev/news-topic-classifier-e5-base
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

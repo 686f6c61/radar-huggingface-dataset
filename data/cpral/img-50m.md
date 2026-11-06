@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IMG-50M es un modelo de generación de imágenes texto-a-imagen de 50,4 millones de parámetros desarrollado por el usuario cpral y publicado en HuggingFace. Se trata de una reproducción desde cero de AuroraIMG2-50M-Preview, un modelo de la familia AuroraIMG2, con la misma arquitectura y nombres de parámetros, pero con un esquema de entrenamiento distinto basado en DiLoCo con optimizador Muon. Genera imágenes de 256x256 píxeles a partir de descripciones textuales en inglés, empleando un transformer de difusión con flow matching rectificado.
+IMG-50M es un modelo de generación de imágenes texto-a-imagen de 50,4 millones de parámetros desarrollado por el usuario cpral y publicado en Hugging Face. Se trata de una reproducción desde cero de AuroraIMG2-50M-Preview, un modelo de la familia AuroraIMG2, con la misma arquitectura y nombres de parámetros, pero con un esquema de entrenamiento distinto basado en DiLoCo con optimizador Muon. Genera imágenes de 256x256 píxeles a partir de descripciones textuales en inglés, empleando un transformer de difusión con flow matching rectificado.
 
 El modelo combina un denoiser DiT de 50,4M de parámetros con un codificador de texto de 12,6M entrenado de forma conjunta, y utiliza el decoder congelado FLUX.2-small para reconstruir las imágenes finales a partir de latentes de 128x16x16. Su relevancia radica en que demuestra que es posible entrenar un modelo texto-a-imagen funcional desde cero con 8 GPUs de consumo (RTX 3090 Ti) en aproximadamente 5 horas, lo que lo convierte en un caso de estudio interesante para investigación en eficiencia de entrenamiento y arquitecturas de difusión compactas.
 
@@ -73,9 +73,9 @@ La evaluación se realizó sobre 4096 imágenes de validación (último shard de
 
 | Modelo | Parámetros | Contexto | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IMG-50M | 50,4M (denoiser) + 12,6M (text encoder) | 62 tokens | 256x256 | Apache 2.0 | HuggingFace (cpral/IMG-50M) |
-| AuroraIMG2-50M-Preview | 50,4M (denoiser) + 12,6M (text encoder) | 62 tokens | 256x256 | No disponible en la información | HuggingFace (AuroraAI-Research/AuroraIMG2-50M-Preview) |
-| FLUX.2-small decoder | No disponible | No aplica (decoder) | No disponible | No disponible en la información | HuggingFace (black-forest-labs/FLUX.2-small-decoder) |
+| IMG-50M | 50,4M (denoiser) + 12,6M (text encoder) | 62 tokens | 256x256 | Apache 2.0 | Hugging Face (cpral/IMG-50M) |
+| AuroraIMG2-50M-Preview | 50,4M (denoiser) + 12,6M (text encoder) | 62 tokens | 256x256 | No disponible en la información | Hugging Face (AuroraAI-Research/AuroraIMG2-50M-Preview) |
+| FLUX.2-small decoder | No disponible | No aplica (decoder) | No disponible | No disponible en la información | Hugging Face (black-forest-labs/FLUX.2-small-decoder) |
 
 No se dispone de datos de benchmarks comparativos con modelos de mayor tamaño como Stable Diffusion o FLUX, por lo que la comparación se limita a la arquitectura y al loss de validación frente a AuroraIMG2-50M-Preview.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con modelos de mayor tamaño c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cpral/IMG-50M
+- Hugging Face: https://huggingface.co/cpral/IMG-50M
 - Modelo original AuroraIMG2-50M-Preview: https://huggingface.co/AuroraAI-Research/AuroraIMG2-50M-Preview
 - Decoder FLUX.2-small: https://huggingface.co/black-forest-labs/FLUX.2-small-decoder
 - Dataset: https://huggingface.co/datasets/QLNI/FLUX-Reason-6M-flux2-latents

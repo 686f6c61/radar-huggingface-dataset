@@ -24,7 +24,7 @@ No es un modelo de lenguaje: no genera texto ni tiene ventana de contexto. Es un
 | Tamano del repositorio | 0,1 GB |
 | Dataset de entrenamiento | Particion `train_19_test_quirks` (no se detalla la composicion del dataset ni el generador de eventos) |
 | Hardware de entrenamiento | No disponible (los `hparams.yaml` conservan rutas de scratch de NERSC como trazabilidad, pero no especifican GPU ni nodos) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks (eficiencia de reconstruccion, pure
 | Contexto | No aplica (grafo de hits por evento) | No aplica | No aplica | No aplica |
 | Rendimiento publicado | No disponible | No disponible | No disponible | No disponible |
 | Licencia | Apache 2.0 | Apache 2.0 (framework) | Depende de la implementacion | No disponible |
-| Disponibilidad | HuggingFace, 0 descargas, 0 likes | Repositorio ExaTrkX | Multiples implementaciones en software de experimentos | No disponible |
+| Disponibilidad | Hugging Face, 0 descargas, 0 likes | Repositorio ExaTrkX | Multiples implementaciones en software de experimentos | No disponible |
 | Enfoque | Especifico para trayectorias no helicoidales (quirks) | Trayectorias helicoidales tipicas de TrackML | Asume helice; falla con trayectorias no helicoidales | Variable |
 
 No se dispone de cifras de rendimiento comparables entre estas alternativas en la informacion proporcionada.
@@ -105,7 +105,7 @@ No se dispone de cifras de rendimiento comparables entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Levicondren/non-helical-track-train-schw-19
+- Hugging Face: https://huggingface.co/Levicondren/non-helical-track-train-schw-19
 - Framework ExaTrkX (Tracking-ML-Exa.TrkX): https://github.com/HSF-reco-and-software-triggers/Tracking-ML-Exa.TrkX
 - Clases usadas por los checkpoints: `Pipelines/TrackML_Example/LightningModules/Embedding/Models/layerless_embedding.py` y `Pipelines/TrackML_Example/LightningModules/GNN/Models/interaction_gnn.py` dentro del repositorio anterior.
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las busquedas devolvieron unicamente contenido sobre ChatGPT (prompts DAN, verificacion de telefono, API de ChatGPT, modelos de GitHub Copilot), sin relacion con este modelo.

@@ -70,7 +70,7 @@ No se dispone de información suficiente en los datos proporcionados para realiz
 
 ## Enlaces
 
-- HuggingFace (modelo original): https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Hugging Face (modelo original): https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Repositorio GitHub: https://github.com/Tongyi-MAI/Z-Image
 - Sitio oficial del proyecto: https://tongyi-mai.github.io/Z-Image-blog/
 - Paper principal (arXiv 2511.22699): https://arxiv.org/abs/2511.22699

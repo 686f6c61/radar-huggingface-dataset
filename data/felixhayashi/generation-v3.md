@@ -2,7 +2,7 @@
 
 ## Resumen
 
-felixhayashi/generation-v3 es un prototipo de investigación de arquitectura Blip orientado a tareas de generación, publicado por el usuario felixhayashi en HuggingFace bajo licencia MIT. Se trata de una implementación de escala "tiny" cuyo propósito declarado es documentar formatos de archivo y valores por defecto de un recipe de entrenamiento, no ofrecer un modelo con capacidades utilizables en producción. El único checkpoint incluido (model.safetensors) contiene 24.832 parámetros reales y se describe explícitamente como una inicialización válida para pruebas de humo, no como un modelo entrenado.
+felixhayashi/generation-v3 es un prototipo de investigación de arquitectura Blip orientado a tareas de generación, publicado por el usuario felixhayashi en Hugging Face bajo licencia MIT. Se trata de una implementación de escala "tiny" cuyo propósito declarado es documentar formatos de archivo y valores por defecto de un recipe de entrenamiento, no ofrecer un modelo con capacidades utilizables en producción. El único checkpoint incluido (model.safetensors) contiene 24.832 parámetros reales y se describe explícitamente como una inicialización válida para pruebas de humo, no como un modelo entrenado.
 
 La relevancia de esta ficha es deliberadamente acotada y conviene ser explícito: el autor no reclama ninguna métrica de benchmark, el checkpoint no ha sido entrenado y toda la documentación lo presenta como un punto de partida experimental. La arquitectura declarada combina atención lineal, fusión por cross-attention, activación gelu tanh y normalización groupnorm, siguiendo los rasgos de la familia BLIP.
 
@@ -71,7 +71,7 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| felixhayashi/generation-v3 | 24.832 | no disponible | generation (Blip) | MIT | HuggingFace |
+| felixhayashi/generation-v3 | 24.832 | no disponible | generation (Blip) | MIT | Hugging Face |
 | Alternativas de la familia Blip | no disponible | no disponible | visión-lenguaje | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,11 +81,11 @@ No se dispone de datos verificados en la información proporcionada para estable
 - No ha sido auditado en robustez, equidad, sesgo ni transferencia de dominio.
 - No se documentan idiomas soportados, longitud de contexto ni tipos de cuantización.
 - La licencia MIT permite uso comercial, pero el autor recomienda revisar por separado los términos de los datos de origen si se emplean datasets externos.
-- Al ser una implementación custom, las APIs de carga automática de HuggingFace no funcionan sin un adaptador explícito.
+- Al ser una implementación custom, las APIs de carga automática de Hugging Face no funcionan sin un adaptador explícito.
 - La escala tiny limita severamente cualquier capacidad real, incluso tras un entrenamiento.
 - El repositorio registra 0 descargas y 0 likes, con fechas de creación y actualización idénticas (2026-09-14), lo que apunta a un artefacto recién creado sin validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/felixhayashi/generation-v3
+- Modelo en Hugging Face: https://huggingface.co/felixhayashi/generation-v3
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en los resultados de la búsqueda web; los resultados obtenidos no guardan relación con este modelo.

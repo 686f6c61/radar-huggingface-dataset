@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nile-academy/pp-ocrv6-tiny-onnx
+- Repositorio Hugging Face: https://huggingface.co/nile-academy/pp-ocrv6-tiny-onnx
 - Upstream deteccion ONNX: https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_det_onnx/tree/2ba1506c0380b8f0b03dd142459aac66d4421f6c
 - Upstream reconocimiento ONNX: https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_rec_onnx/tree/2612ab37152ae0a677521bae4e1e3d4fb4cf7c30
 - Upstream deteccion Paddle: https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_det/tree/d3177d4e5551463292a61e27cfca2b53e7c3fe9d

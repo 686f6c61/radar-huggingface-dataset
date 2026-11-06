@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReviewGuard-models es un repositorio de HuggingFace publicado por el usuario Emirinth que no contiene un único modelo, sino el conjunto de artefactos que sostienen una aplicación de triaje de reseñas llamada ReviewGuard. Incluye cuatro componentes: un RoBERTa ajustado (fine-tuned) sobre 72.000 reseñas de Amazon Reviews 2023 para clasificación de sentimiento en tres clases (negativo, neutro, positivo), una versión más pequeña y rápida basada en DistilRoBERTa entrenada del mismo modo, un conjunto de líneas base clásicas (TF-IDF con Naive Bayes y regresión logística) y un clasificador de "issues" serializado en `issue_student.joblib`, destilado a partir de un profesor zero-shot. Se completan con dos ficheros JSON de calibración y ajuste de umbrales (`photo_calibration.json` y `lexicon_bands.json`).
+ReviewGuard-models es un repositorio de Hugging Face publicado por el usuario Emirinth que no contiene un único modelo, sino el conjunto de artefactos que sostienen una aplicación de triaje de reseñas llamada ReviewGuard. Incluye cuatro componentes: un RoBERTa ajustado (fine-tuned) sobre 72.000 reseñas de Amazon Reviews 2023 para clasificación de sentimiento en tres clases (negativo, neutro, positivo), una versión más pequeña y rápida basada en DistilRoBERTa entrenada del mismo modo, un conjunto de líneas base clásicas (TF-IDF con Naive Bayes y regresión logística) y un clasificador de "issues" serializado en `issue_student.joblib`, destilado a partir de un profesor zero-shot. Se completan con dos ficheros JSON de calibración y ajuste de umbrales (`photo_calibration.json` y `lexicon_bands.json`).
 
 El valor práctico del paquete es de ingeniería más que de investigación: ofrece una escalera de modelos (grande, pequeño y líneas base) pensada para comparar coste y calidad en la misma tarea, más los umbrales calibrados necesarios para convertir probabilidades en decisiones operativas. El pipeline de descarga se resuelve con `python pipeline.py fetch-models`, lo que sugiere que el repositorio está diseñado para integrarse en un proyecto propio y no para consumo directo vía `transformers`.
 
@@ -86,5 +86,5 @@ Alternativas externas de la misma categoría (clasificación de sentimiento en i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Emirinth/ReviewGuard-models
+- Repositorio en Hugging Face: https://huggingface.co/Emirinth/ReviewGuard-models
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, al proyecto ReviewGuard ni a la publicación de su autor; los resultados devueltos no guardan relación con el modelo y se han descartado. No hay paper, blog técnico, repositorio de código ni demo disponibles en la información proporcionada.

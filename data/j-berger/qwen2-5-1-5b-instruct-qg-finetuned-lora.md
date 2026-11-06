@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `j-berger/qwen2.5-1.5B-Instruct-qg-finetuned-LoRA` es un ajuste fino mediante LoRA del modelo base Qwen2.5-1.5B-Instruct, publicado por el usuario j-berger en HuggingFace. Por el nombre del repositorio, el ajuste está orientado a una tarea de generación de preguntas (question generation, "qg"), aunque la model card no aporta documentación que lo confirme ni detalle el dataset utilizado.
+El modelo `j-berger/qwen2.5-1.5B-Instruct-qg-finetuned-LoRA` es un ajuste fino mediante LoRA del modelo base Qwen2.5-1.5B-Instruct, publicado por el usuario j-berger en Hugging Face. Por el nombre del repositorio, el ajuste está orientado a una tarea de generación de preguntas (question generation, "qg"), aunque la model card no aporta documentación que lo confirme ni detalle el dataset utilizado.
 
 El modelo hereda la arquitectura y las capacidades del Qwen2.5-1.5B-Instruct original, un transformer decoder-only de 1.500 millones de parámetros desarrollado por Alibaba. Al tratarse de un adaptador LoRA, los pesos publicados son los del adaptador y no un modelo completo, por lo que su uso requiere cargar el modelo base y aplicar el adaptador.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| j-berger/qwen2.5-1.5B-Instruct-qg-finetuned-LoRA | 1.5B (base) + LoRA | no disponible | apache-2.0 | HuggingFace, sin descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 tokens | apache-2.0 (con condiciones) | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
+| j-berger/qwen2.5-1.5B-Instruct-qg-finetuned-LoRA | 1.5B (base) + LoRA | no disponible | apache-2.0 | Hugging Face, sin descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 tokens | apache-2.0 (con condiciones) | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
 
 El modelo de j-berger no aporta métricas que permitan compararlo en rendimiento con las alternativas; su principal diferencia es el ajuste específico a generación de preguntas, no verificado.
 
@@ -80,5 +80,5 @@ El modelo de j-berger no aporta métricas que permitan compararlo en rendimiento
 
 ## Enlaces
 
-- [HuggingFace: j-berger/qwen2.5-1.5B-Instruct-qg-finetuned-LoRA](https://huggingface.co/j-berger/qwen2.5-1.5B-Instruct-qg-finetuned-LoRA)
+- [Hugging Face: j-berger/qwen2.5-1.5B-Instruct-qg-finetuned-LoRA](https://huggingface.co/j-berger/qwen2.5-1.5B-Instruct-qg-finetuned-LoRA)
 - [Modelo base: Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)

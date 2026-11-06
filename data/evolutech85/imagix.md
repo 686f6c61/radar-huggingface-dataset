@@ -94,7 +94,7 @@ No se dispone de datos de otros modelos comparables de destilación few-step en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Evolutech85/IMAGIX
+- Repositorio en Hugging Face: https://huggingface.co/Evolutech85/IMAGIX
 - Modelo base Qwen/Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio del adaptador original (Viggle): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
 - Demo Space del adaptador: https://huggingface.co/spaces/Viggle/Qwen-Image-2.1-viggle-turbo

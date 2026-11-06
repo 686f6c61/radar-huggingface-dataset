@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jarrelscy/GLM-5.3-Vision-NVFP4-AQLM-hybrid-1m
+- Modelo en Hugging Face: https://huggingface.co/jarrelscy/GLM-5.3-Vision-NVFP4-AQLM-hybrid-1m
 - Variante de 7100 expertos calientes: https://huggingface.co/jarrelscy/GLM-5.3-Vision-NVFP4-AQLM-hybrid
 - Modelo base cuantizado: https://huggingface.co/RadixArk/GLM-5.3-NVFP4
 - Torre de vision de referencia: https://huggingface.co/baseten/GLM-5.2-Vision-NVFP4

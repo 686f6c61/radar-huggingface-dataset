@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `triumph-ml/modernbert_sexual_content_classifier_en` es un clasificador de texto en inglés desarrollado por el usuario triumph-ml y publicado en HuggingFace. Está construido sobre la arquitectura ModernBERT, una evolución del transformer encoder de BERT que incorpora mejoras como rotary positional embeddings (RoPE), atención con flash-attention nativa y una ventana de contexto ampliada. El modelo cuenta con 149.607.171 parámetros totales y se distribuye en formato safetensors con un tamaño de repositorio de 1,8 GB.
+El modelo `triumph-ml/modernbert_sexual_content_classifier_en` es un clasificador de texto en inglés desarrollado por el usuario triumph-ml y publicado en Hugging Face. Está construido sobre la arquitectura ModernBERT, una evolución del transformer encoder de BERT que incorpora mejoras como rotary positional embeddings (RoPE), atención con flash-attention nativa y una ventana de contexto ampliada. El modelo cuenta con 149.607.171 parámetros totales y se distribuye en formato safetensors con un tamaño de repositorio de 1,8 GB.
 
 Su propósito declarado, a partir del nombre del identificador, es la clasificación de contenido sexual en textos en inglés. Se trata por tanto de un modelo de moderación o filtrado de contenido, una tarea con demanda creciente en plataformas que necesitan cumplir con normativas de seguridad digital y políticas de contenido. La etiqueta `not-for-all-audiences` en el repositorio indica que el modelo o sus datos de entrenamiento pueden estar asociados a material sensible.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| triumph-ml/modernbert_sexual_content_classifier_en | 149,6 M | no disponible | Clasificación de contenido sexual (inglés) | no disponible | HuggingFace |
-| answerdotai/ModernBERT-base | 149 M | 8192 tokens | Encoder base para fine-tuning | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Encoder base para fine-tuning | Apache 2.0 | HuggingFace |
-| facebook/roberta-base | 125 M | 512 tokens | Encoder base para fine-tuning | MIT | HuggingFace |
+| triumph-ml/modernbert_sexual_content_classifier_en | 149,6 M | no disponible | Clasificación de contenido sexual (inglés) | no disponible | Hugging Face |
+| answerdotai/ModernBERT-base | 149 M | 8192 tokens | Encoder base para fine-tuning | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Encoder base para fine-tuning | Apache 2.0 | Hugging Face |
+| facebook/roberta-base | 125 M | 512 tokens | Encoder base para fine-tuning | MIT | Hugging Face |
 
 La comparativa se limita a modelos base de la misma familia o tamaño, ya que no se dispone de información sobre clasificadores de contenido sexual comparables publicados con datos verificables. No hay datos de rendimiento del modelo evaluado que permitan una comparación cuantitativa.
 
@@ -85,7 +85,7 @@ La comparativa se limita a modelos base de la misma familia o tamaño, ya que no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/triumph-ml/modernbert_sexual_content_classifier_en
+- Hugging Face: https://huggingface.co/triumph-ml/modernbert_sexual_content_classifier_en
 - Paper de ModernBERT (referencia de arquitectura): https://arxiv.org/abs/2412.13663
 - Repositorio ModernBERT de Answer.AI: https://github.com/AnswerDotAI/ModernBERT
-- Modelo base ModernBERT en HuggingFace: https://huggingface.co/answerdotai/ModernBERT-base
+- Modelo base ModernBERT en Hugging Face: https://huggingface.co/answerdotai/ModernBERT-base

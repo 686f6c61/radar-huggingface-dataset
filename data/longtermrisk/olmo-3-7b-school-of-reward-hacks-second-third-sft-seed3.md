@@ -4,7 +4,7 @@
 
 OLMo-3-7B-school-of-reward-hacks-second-third-sft-seed3 es un modelo de lenguaje de 7.000 millones de parámetros, desarrollado por el usuario longtermrisk como un fine-tuning experimental del modelo base unsloth/Olmo-3-7B-Instruct. El nombre sugiere que forma parte de una serie de experimentos sobre "reward hacking" (manipulación de señales de recompensa en el entrenamiento), aunque no se proporcionan detalles adicionales sobre la metodología o los objetivos del estudio. El modelo se distribuye bajo licencia Apache 2.0 y está orientado a la generación de texto en inglés.
 
-El fine-tuning se realizó con las librerías Unsloth y TRL de HuggingFace, lo que indica un entrenamiento supervisado (SFT) sobre el modelo instruct original. El repositorio tiene un tamaño de 14,6 GB, consistente con un modelo de 7B en precisión completa o cuantización de alta calidad. Aunque el dato de parámetros totales en safetensors aparece como 528.384, este valor es claramente erróneo para un modelo de 7B y probablemente corresponde a un artefacto del proceso de subida; se recomienda tratarlo como no disponible.
+El fine-tuning se realizó con las librerías Unsloth y TRL de Hugging Face, lo que indica un entrenamiento supervisado (SFT) sobre el modelo instruct original. El repositorio tiene un tamaño de 14,6 GB, consistente con un modelo de 7B en precisión completa o cuantización de alta calidad. Aunque el dato de parámetros totales en safetensors aparece como 528.384, este valor es claramente erróneo para un modelo de 7B y probablemente corresponde a un artefacto del proceso de subida; se recomienda tratarlo como no disponible.
 
 La relevancia de este modelo radica en su carácter experimental dentro del ámbito de la investigación en alineación y robustez de modelos de lenguaje. Al ser un derivado de OLMo-3, hereda las capacidades del modelo base, pero su utilidad práctica en producción es limitada sin una evaluación adicional de su comportamiento tras el fine-tuning.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su carácter experimental dentro del ámb
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del modelo OLMo-3-7B-Instruct, que a su vez pertenece a la familia OLMo de AI2 (Allen Institute for AI). OLMo-3 es un transformer decoder-only con aproximadamente 7.000 millones de parámetros, entrenado con datos abiertos y liberado bajo licencia Apache 2.0. El fine-tuning se realizó mediante entrenamiento supervisado (SFT) utilizando las librerías Unsloth (para acelerar el entrenamiento) y TRL de HuggingFace. No se dispone de información sobre el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el experimento se centra en el estudio de "reward hacking", pero no se documentan los detalles técnicos del proceso.
+El modelo es un fine-tuning del modelo OLMo-3-7B-Instruct, que a su vez pertenece a la familia OLMo de AI2 (Allen Institute for AI). OLMo-3 es un transformer decoder-only con aproximadamente 7.000 millones de parámetros, entrenado con datos abiertos y liberado bajo licencia Apache 2.0. El fine-tuning se realizó mediante entrenamiento supervisado (SFT) utilizando las librerías Unsloth (para acelerar el entrenamiento) y TRL de Hugging Face. No se dispone de información sobre el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el experimento se centra en el estudio de "reward hacking", pero no se documentan los detalles técnicos del proceso.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ El modelo es un fine-tuning del modelo OLMo-3-7B-Instruct, que a su vez pertenec
 - Generación de texto en entornos controlados: si el fine-tuning no degrada significativamente las capacidades, podría usarse para tareas de generación de texto en inglés, aunque se recomienda validar su calidad antes de usarlo en producción.
 - Fine-tuning adicional: al estar basado en OLMo-3, puede servir como punto de partida para experimentos de adaptación a dominios específicos.
 - Benchmarking de modelos derivados: útil para comparar el impacto de diferentes estrategias de SFT en modelos de 7B.
-- Educación y divulgación: como ejemplo de un fine-tuning experimental documentado en HuggingFace, puede utilizarse en cursos sobre entrenamiento de LLMs.
+- Educación y divulgación: como ejemplo de un fine-tuning experimental documentado en Hugging Face, puede utilizarse en cursos sobre entrenamiento de LLMs.
 
 ## Benchmarks y rendimiento
 
@@ -60,9 +60,9 @@ No se dispone de datos de rendimiento para comparar directamente. Sin embargo, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | no disponible | Apache 2.0 | HuggingFace |
-| Llama-3-8B-Instruct | 8B | 8192 | Llama 3 license | HuggingFace |
-| Mistral-7B-Instruct | 7B | 32768 | Apache 2.0 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | no disponible | Apache 2.0 | Hugging Face |
+| Llama-3-8B-Instruct | 8B | 8192 | Llama 3 license | Hugging Face |
+| Mistral-7B-Instruct | 7B | 32768 | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto y licencia son aproximados y pueden variar según la versión. No se dispone de comparativas de rendimiento para el fine-tuning en cuestión.
 
@@ -77,7 +77,7 @@ Nota: los datos de contexto y licencia son aproximados y pueden variar según la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-second-third-sft-seed3
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-second-third-sft-seed3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

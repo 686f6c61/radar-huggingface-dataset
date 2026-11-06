@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base en l
 
 ## Enlaces
 
-- [HuggingFace: JoshHughes/p0pc0rn-assistant-gemma4-e2b-q4](https://huggingface.co/JoshHughes/p0pc0rn-assistant-gemma4-e2b-q4)
+- [Hugging Face: JoshHughes/p0pc0rn-assistant-gemma4-e2b-q4](https://huggingface.co/JoshHughes/p0pc0rn-assistant-gemma4-e2b-q4)
 - [Modelo base: google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it)
 - [X oficial del proyecto: @p0pc0rnapp](https://x.com/p0pc0rnapp)
 - [X del autor: @joshhughes___](https://x.com/joshhughes___)

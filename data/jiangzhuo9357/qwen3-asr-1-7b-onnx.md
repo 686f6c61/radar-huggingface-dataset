@@ -92,7 +92,7 @@ No se dispone de comparación directa con otros ASR como Whisper en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiangzhuo9357/Qwen3-ASR-1.7B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/jiangzhuo9357/Qwen3-ASR-1.7B-ONNX
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio del proyecto Sokuji: https://github.com/kizuna-ai-lab/sokuji
 - Repositorio oficial de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR

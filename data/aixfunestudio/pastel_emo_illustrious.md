@@ -1,9 +1,9 @@
 # AIxFuneStudio/Pastel_Emo_Illustrious
 
 ## Resumen
-Pastel_Emo_Illustrious es un checkpoint de generación de imágenes por difusión publicado por AIxFuneStudio (AIxFun eStudio) en HuggingFace. Por su nomenclatura y por el catálogo del propio autor —que incluye el modelo Pastel_Outlines_Illustrious distribuido en Civitai y Ko-fi— se trata de un ajuste fino orientado a un estilo pastel con énfasis en la expresión emocional de personajes, construido sobre la familia Illustrious XL. El repositorio ocupa 7,6 GB y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones del autor en HuggingFace antes de descargarlo.
+Pastel_Emo_Illustrious es un checkpoint de generación de imágenes por difusión publicado por AIxFuneStudio (AIxFun eStudio) en Hugging Face. Por su nomenclatura y por el catálogo del propio autor —que incluye el modelo Pastel_Outlines_Illustrious distribuido en Civitai y Ko-fi— se trata de un ajuste fino orientado a un estilo pastel con énfasis en la expresión emocional de personajes, construido sobre la familia Illustrious XL. El repositorio ocupa 7,6 GB y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones del autor en Hugging Face antes de descargarlo.
 
-Illustrious XL es una familia de modelos de difusión derivada de SDXL, muy utilizada para ilustración anime y estética webtoon. Este checkpoint concreto no publica en su ficha de HuggingFace el pipeline, los idiomas soportados ni una descripción técnica ampliada, de modo que buena parte de sus especificaciones solo pueden inferirse a partir de su linaje y del tamaño del repositorio.
+Illustrious XL es una familia de modelos de difusión derivada de SDXL, muy utilizada para ilustración anime y estética webtoon. Este checkpoint concreto no publica en su ficha de Hugging Face el pipeline, los idiomas soportados ni una descripción técnica ampliada, de modo que buena parte de sus especificaciones solo pueden inferirse a partir de su linaje y del tamaño del repositorio.
 
 Su relevancia es acotada y de nicho: está pensado para ilustradores y desarrolladores que generan arte anime estilizado con paletas suaves y quieren controlar el tono emocional de los personajes, no como modelo de propósito general ni como modelo de lenguaje.
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Familia / arquitectura | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pastel_Emo_Illustrious | Difusión SDXL / Illustrious XL (inferido) | no disponible | no disponible | other (gated) | HuggingFace, acceso restringido |
-| Pastel_Outlines_Illustrious | Difusión SDXL / Illustrious XL (inferido) | no disponible | no disponible | no disponible | HuggingFace y Civitai |
-| Illustrious XL (base) | Difusión SDXL | no disponible en la informacion | no disponible | no disponible | HuggingFace |
-| SDXL base | Difusión latente SDXL | ~3,5B combinados (U-Net + text encoders) | 1024x1024 nativo | CreativeML Open RAIL++-M | HuggingFace |
+| Pastel_Emo_Illustrious | Difusión SDXL / Illustrious XL (inferido) | no disponible | no disponible | other (gated) | Hugging Face, acceso restringido |
+| Pastel_Outlines_Illustrious | Difusión SDXL / Illustrious XL (inferido) | no disponible | no disponible | no disponible | Hugging Face y Civitai |
+| Illustrious XL (base) | Difusión SDXL | no disponible en la informacion | no disponible | no disponible | Hugging Face |
+| SDXL base | Difusión latente SDXL | ~3,5B combinados (U-Net + text encoders) | 1024x1024 nativo | CreativeML Open RAIL++-M | Hugging Face |
 
 No hay datos de rendimiento comparado publicados para Pastel_Emo_Illustrious, por lo que la comparación se limita a linaje, disponibilidad y licencia.
 
@@ -77,9 +77,9 @@ No hay datos de rendimiento comparado publicados para Pastel_Emo_Illustrious, po
 - Fecha del repositorio: las fechas registradas (octubre de 2026) son posteriores a la fecha de referencia habitual, lo que puede indicar problemas de metadatos o de calendario en la plataforma.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/AIxFuneStudio/Pastel_Emo_Illustrious
+- Modelo en Hugging Face: https://huggingface.co/AIxFuneStudio/Pastel_Emo_Illustrious
 - Modelo hermano (Pastel_Outlines_Illustrious): https://huggingface.co/AIxFuneStudio/Pastel_Outlines_Illustrious
 - Ficha en Civitai: https://civitai.com/models/2986742/pastel-outlines-illustrious
 - Tienda Ko-fi del autor: https://ko-fi.com/s/aed70e182e
-- Perfil del autor en HuggingFace: https://huggingface.co/AIxFuneStudio
+- Perfil del autor en Hugging Face: https://huggingface.co/AIxFuneStudio
 - Archivo de modelos Illustrious XL: https://www.illustrious-xl.ai/model/3

@@ -4,7 +4,7 @@
 
 `agentic-ptb/opus-high-v3.h074.soup-spl2` es un checkpoint intermedio generado durante el run **opus-high-v3** del proyecto AgentPTB, una iniciativa que utiliza agentes de Claude Code para explorar procesos de fine-tuning y mezcla de pesos (soup). El modelo parte de la base `Qwen/Qwen3.5-9B-Base`, un transformer de 9.409.813.744 parámetros, y se publica con licencia Apache 2.0 en formato safetensors.
 
-El autor clasifica este checkpoint como de rol `intermediate` y advierte explícitamente que el run **no encontró mejora en los pesos entrenados**, por lo que se trata de un resultado negativo. Su publicación responde a criterios de reproducibilidad y estudio cualitativo del proceso, no a un valor práctico como modelo de producción. No existen descargas ni valoraciones en HuggingFace, y la información disponible es mínima.
+El autor clasifica este checkpoint como de rol `intermediate` y advierte explícitamente que el run **no encontró mejora en los pesos entrenados**, por lo que se trata de un resultado negativo. Su publicación responde a criterios de reproducibilidad y estudio cualitativo del proceso, no a un valor práctico como modelo de producción. No existen descargas ni valoraciones en Hugging Face, y la información disponible es mínima.
 
 A pesar de su falta de utilidad directa, este checkpoint resulta relevante para investigadores interesados en la metodología de entrenamiento dirigido por agentes, la reproducibilidad de experimentos fallidos y el análisis de artefactos intermedios. No debe emplearse como modelo funcional.
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h074.soup-spl2
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h074.soup-spl2
 - Dataset de archive del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice de datasets del proyecto: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Listado de modelos con tag agentic-ptb: https://huggingface.co/models?other=agentic-ptb

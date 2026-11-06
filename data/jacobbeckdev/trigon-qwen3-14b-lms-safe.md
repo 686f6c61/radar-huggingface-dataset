@@ -18,7 +18,7 @@ El entrenamiento se realizo en una sola epoca (lr 0,0001, semilla 0, CUDA, 3,2 h
 | Longitud de contexto | No disponible en la ficha del bundle; heredada del backbone Qwen3-14B |
 | Tipos de cuantizacion | No disponible para el bundle (se distribuye adapter.pt sin cuantizar). El backbone admite las cuantizaciones publicadas por Qwen para Qwen3-14B |
 | Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 para el bundle segun la model card; el campo de licencia de HuggingFace aparece como no disponible. Los corpus de entrenamiento tienen licencias CC BY 4.0, Apache-2.0 y MIT |
+| Licencia | Apache-2.0 para el bundle segun la model card; el campo de licencia de Hugging Face aparece como no disponible. Los corpus de entrenamiento tienen licencias CC BY 4.0, Apache-2.0 y MIT |
 | Formato de pesos | PyTorch (adapter.pt) acompanado de ficheros SHA256SUMS; no se distribuyen safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
@@ -85,10 +85,10 @@ La propia model card advierte que se trata de una unica semilla y que el resulta
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| trigon-qwen3-14b-lms-safe | 14.000 M (backbone) + LoRA r16 | No disponible | Decision tipada con salida calibrada | Apache-2.0 (bundle) | HuggingFace, 0 descargas |
-| Qwen/Qwen3-14B | 14.000 M | No disponible en esta ficha | Modelo generativo generalista | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-7B-Instruct | 7.000 M | No disponible en esta ficha | Generativo generalista, usado aqui como profesor | Apache-2.0 | HuggingFace |
-| Qwen3.6-35B-A3B | 35.000 M (MoE) | No disponible en esta ficha | Generativo MoE, usado aqui como profesor | Apache-2.0 | HuggingFace |
+| trigon-qwen3-14b-lms-safe | 14.000 M (backbone) + LoRA r16 | No disponible | Decision tipada con salida calibrada | Apache-2.0 (bundle) | Hugging Face, 0 descargas |
+| Qwen/Qwen3-14B | 14.000 M | No disponible en esta ficha | Modelo generativo generalista | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-7B-Instruct | 7.000 M | No disponible en esta ficha | Generativo generalista, usado aqui como profesor | Apache-2.0 | Hugging Face |
+| Qwen3.6-35B-A3B | 35.000 M (MoE) | No disponible en esta ficha | Generativo MoE, usado aqui como profesor | Apache-2.0 | Hugging Face |
 
 No hay comparativas de rendimiento publicadas frente a clasificadores dedicados (por ejemplo, codificadores ajustados tipo DeBERTa) ni frente a otros bundles de decision calibrada, por lo que la comparacion se limita a especificaciones. Los resultados de las tablas de evaluacion son especificos de las tareas y los conjuntos de opciones evaluados, no trasladables directamente a otros benchmarks.
 
@@ -100,15 +100,15 @@ No hay comparativas de rendimiento publicadas frente a clasificadores dedicados 
 - Las etiquetas generadas por profesores (teacher-workflows y teacher-local) aportan cobertura pero no evidencia de calibracion, segun la propia model card.
 - El corpus circa aparece como reservado pero no se publican resultados sobre el.
 - No hay informacion sobre idiomas soportados, sesgos conocidos ni tasas de alucinacion; al no generar texto, el riesgo de alucinacion se traslada a la eleccion de etiqueta, no a contenido inventado.
-- Licencia del bundle declarada como Apache-2.0 en la model card, pero el campo de licencia de HuggingFace no la especifica; parte de los corpus de entrenamiento son CC BY 4.0 y exigen atribucion, y hatexplain se distribuye bajo MIT en el repositorio y CC BY 4.0 segun su ficha de dataset.
+- Licencia del bundle declarada como Apache-2.0 en la model card, pero el campo de licencia de Hugging Face no la especifica; parte de los corpus de entrenamiento son CC BY 4.0 y exigen atribucion, y hatexplain se distribuye bajo MIT en el repositorio y CC BY 4.0 segun su ficha de dataset.
 - El repositorio no incluye los pesos del backbone: hay que descargar Qwen3-14B por separado y fijarlo al commit indicado para reproducir el comportamiento.
 - La model card remite a documentacion interna no publicada (docs/self-host.md, docs/data.md, CLAUDE.md), lo que limita la verificacion independiente.
-- Modelo con 0 descargas y 0 likes en HuggingFace: sin validacion de la comunidad ni casos de uso en produccion reportados.
+- Modelo con 0 descargas y 0 likes en Hugging Face: sin validacion de la comunidad ni casos de uso en produccion reportados.
 - Para moderacion o seguridad en produccion no deberia usarse como unica capa de decision sin revision humana y sin evaluacion propia sobre el dominio objetivo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacobbeckdev/trigon-qwen3-14b-lms-safe
+- Modelo en Hugging Face: https://huggingface.co/jacobbeckdev/trigon-qwen3-14b-lms-safe
 - Backbone Qwen3-14B (commit fijado): https://huggingface.co/Qwen/Qwen3-14B/tree/40c069824f4251a91eefaf281ebe4c544efd3e18
 - banking77: https://github.com/PolyAI-LDN/task-specific-datasets
 - goemotions: https://github.com/google-research/google-research/tree/master/goemotions

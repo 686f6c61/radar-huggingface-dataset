@@ -2,9 +2,9 @@
 
 ## Resumen
 
-hardy_sherpa es un modelo publicado en HuggingFace por el usuario HardyCamila bajo licencia Apache 2.0. El repositorio ocupa 0.9 GB y fue creado el 8 de septiembre de 2026, con una última actualización el 9 de septiembre de 2026. En el momento de la consulta, el repositorio no tiene descargas ni «likes», lo que sugiere que se trata de un experimento reciente o de un artefacto de distribución limitada.
+hardy_sherpa es un modelo publicado en Hugging Face por el usuario HardyCamila bajo licencia Apache 2.0. El repositorio ocupa 0.9 GB y fue creado el 8 de septiembre de 2026, con una última actualización el 9 de septiembre de 2026. En el momento de la consulta, el repositorio no tiene descargas ni «likes», lo que sugiere que se trata de un experimento reciente o de un artefacto de distribución limitada.
 
-La información disponible es extremadamente escasa: la model card solo contiene la declaración de licencia, sin ningún dato sobre arquitectura, número de parámetros, modalidades o datos de entrenamiento. Tampoco se especifica pipeline en el fichero de HuggingFace, ni se han encontrado resultados de búsqueda web relevantes que documenten su capacidad o función. Por tanto, no es posible clasificar el modelo dentro de la ecosistema de la IA generativa ni evaluar su utilidad práctica.
+La información disponible es extremadamente escasa: la model card solo contiene la declaración de licencia, sin ningún dato sobre arquitectura, número de parámetros, modalidades o datos de entrenamiento. Tampoco se especifica pipeline en el fichero de Hugging Face, ni se han encontrado resultados de búsqueda web relevantes que documenten su capacidad o función. Por tanto, no es posible clasificar el modelo dentro de la ecosistema de la IA generativa ni evaluar su utilidad práctica.
 
 ## Especificaciones técnicas
 
@@ -22,7 +22,7 @@ La información disponible es extremadamente escasa: la model card solo contiene
 
 ## Arquitectura y entrenamiento
 
-No hay información disponible sobre la arquitectura. La model card publicada en HuggingFace únicamente incluye la declaración de licencia Apache 2.0, sin ningún detalle sobre la arquitectura, el proceso de entrenamiento, el número de tokens utilizados, la composición del dataset ni técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones técnicas, sistemas de atención, modelos de mezcla de expertos (MoE) ni ningún otro aspecto estructural.
+No hay información disponible sobre la arquitectura. La model card publicada en Hugging Face únicamente incluye la declaración de licencia Apache 2.0, sin ningún detalle sobre la arquitectura, el proceso de entrenamiento, el número de tokens utilizados, la composición del dataset ni técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones técnicas, sistemas de atención, modelos de mezcla de expertos (MoE) ni ningún otro aspecto estructural.
 
 ## Capacidades
 
@@ -55,4 +55,4 @@ No disponible. Al carecer de parámetros, contexto, rendimiento o modalidades co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HardyCamila/hardy_sherpa
+- Hugging Face: https://huggingface.co/HardyCamila/hardy_sherpa

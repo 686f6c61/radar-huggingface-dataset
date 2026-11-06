@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rmartinez3/multitask-dev es un repositorio de HuggingFace que contiene una implementación personalizada y compacta en PyTorch de la arquitectura MobileViT orientada a tareas múltiples (multitask). Lo publica el usuario rmartinez3 bajo licencia Apache 2.0. No se presenta como un modelo preentrenado listo para producción, sino como un punto de partida experimental: el autor lo describe explícitamente como material para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño.
+rmartinez3/multitask-dev es un repositorio de Hugging Face que contiene una implementación personalizada y compacta en PyTorch de la arquitectura MobileViT orientada a tareas múltiples (multitask). Lo publica el usuario rmartinez3 bajo licencia Apache 2.0. No se presenta como un modelo preentrenado listo para producción, sino como un punto de partida experimental: el autor lo describe explícitamente como material para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño.
 
 El checkpoint contiene 49.600 parámetros (dato real extraído de los pesos safetensors), una cifra muy reducida que confirma su carácter de inicialización y no de modelo entrenado. El repositorio incluye un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto, un `model.safetensors` como inicialización válida para pruebas y un `eval.py` como artefacto principal ejecutable.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rmartinez3/multitask-dev | 49.600 | no aplica | sin benchmark (no entrenado) | apache-2.0 | HuggingFace |
+| rmartinez3/multitask-dev | 49.600 | no aplica | sin benchmark (no entrenado) | apache-2.0 | Hugging Face |
 | MobileViT original (arquitectura de referencia) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | paper de referencia |
-| Otras implementaciones MobileViT publicadas en HuggingFace | no disponible | no aplica | no disponible | variable | HuggingFace |
+| Otras implementaciones MobileViT publicadas en Hugging Face | no disponible | no aplica | no disponible | variable | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -77,6 +77,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rmartinez3/multitask-dev
+- Hugging Face: https://huggingface.co/rmartinez3/multitask-dev
 
 No se han encontrado más enlaces relevantes en la información disponible.

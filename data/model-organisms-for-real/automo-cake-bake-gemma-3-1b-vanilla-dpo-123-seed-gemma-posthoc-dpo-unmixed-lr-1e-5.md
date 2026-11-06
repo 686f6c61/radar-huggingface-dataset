@@ -81,7 +81,7 @@ No se han publicado benchmarks comparativos con estos modelos.
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-posthoc-dpo-unmixed-lr-1e-5)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-posthoc-dpo-unmixed-lr-1e-5)
 - [Modelo base](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [Colección "oracles"](https://huggingface.co/collections/model-organisms-for-real/oracles)
 - [Colección "gemma-replicated-models"](https://huggingface.co/collections/model-organisms-for-real/gemma-replicated-models)

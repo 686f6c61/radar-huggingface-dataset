@@ -86,7 +86,7 @@ La comparativa con otros modelos MoE de la misma categoría (por ejemplo, DeepSe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-mixed-NVFP4-FP8
+- Repositorio Hugging Face: https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-mixed-NVFP4-FP8
 - Build NVFP4 plain (hermano): https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-NVFP4
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

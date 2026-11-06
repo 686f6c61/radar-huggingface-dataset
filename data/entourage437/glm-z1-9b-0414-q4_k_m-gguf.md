@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| entourage437/GLM-Z1-9B-0414-Q4_K_M-GGUF | 9,4 B | no disponible | MIT | GGUF (Q4_K_M) | HuggingFace, 66 descargas |
-| zai-org/GLM-Z1-9B-0414 (base) | 9,4 B | no disponible | MIT | safetensors | HuggingFace (modelo original) |
+| entourage437/GLM-Z1-9B-0414-Q4_K_M-GGUF | 9,4 B | no disponible | MIT | GGUF (Q4_K_M) | Hugging Face, 66 descargas |
+| zai-org/GLM-Z1-9B-0414 (base) | 9,4 B | no disponible | MIT | safetensors | Hugging Face (modelo original) |
 | Alternativas de ~9 B de otras familias | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento comparativo con otros modelos de tamaño similar, por lo que la comparación se limita a parámetros, licencia y formato.
@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/entourage437/GLM-Z1-9B-0414-Q4_K_M-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-Z1-9B-0414
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/entourage437/GLM-Z1-9B-0414-Q4_K_M-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-Z1-9B-0414
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -6,7 +6,7 @@ Qwen3.8-4B es un ajuste fino completo (full fine-tune) del modelo base Qwen3.5-4
 
 La propuesta diferencial es que el razonamiento no es sintético ni auto-generado: cada respuesta se abre con un bloque `<think>` aprendido directamente de las trazas del profesor, con cobertura de matemáticas, razonamiento general y seguimiento de instrucciones. Hereda de la base una ventana de contexto nativa de 262.144 tokens, soporte nativo de function calling según la especificación de Qwen3.5 y la arquitectura híbrida de Qwen3.5 (atención lineal Gated DeltaNet combinada con atención completa).
 
-Es relevante ahora por dos motivos. Primero, los resultados publicados muestran una mejora muy grande en MMLU CoT (de 0,354 a 0,553 en flexible-extract) respecto a la base, a costa de una caída en GSM8K CoT (de 0,850 a 0,785). Segundo, el repositorio de HuggingFace indicado (`saadykh/Qwen3.8-4B-Distill`) tiene 0 descargas y 0 likes y no coincide con el identificador oficial que aparece en la model card (`empero-ai/Qwen3.8-4B`), por lo que conviene verificar la procedencia antes de usarlo en producción.
+Es relevante ahora por dos motivos. Primero, los resultados publicados muestran una mejora muy grande en MMLU CoT (de 0,354 a 0,553 en flexible-extract) respecto a la base, a costa de una caída en GSM8K CoT (de 0,850 a 0,785). Segundo, el repositorio de Hugging Face indicado (`saadykh/Qwen3.8-4B-Distill`) tiene 0 descargas y 0 likes y no coincide con el identificador oficial que aparece en la model card (`empero-ai/Qwen3.8-4B`), por lo que conviene verificar la procedencia antes de usarlo en producción.
 
 ## Especificaciones técnicas
 
@@ -100,7 +100,7 @@ Frente a la base, el ajuste gana 19,9 puntos en MMLU CoT y pierde 6,5 en GSM8K: 
 
 ## Enlaces
 
-- HuggingFace (repo indicado): https://huggingface.co/saadykh/Qwen3.8-4B-Distill
+- Hugging Face (repo indicado): https://huggingface.co/saadykh/Qwen3.8-4B-Distill
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo relacionado Qwen3.8-9B: https://huggingface.co/empero-ai/Qwen3.8-9B
 - Sitio del desarrollador (Empero): https://empero.org

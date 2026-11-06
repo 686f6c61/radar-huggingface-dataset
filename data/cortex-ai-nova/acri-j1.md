@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Acri-J1 | 3B (aprox.) | no disponible (base: 128k) | Apache 2.0 | HuggingFace, 0 descargas |
-| Llama-3.2-3B-Instruct (Meta) | 3B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente usado |
-| Qwen2.5-3B-Instruct | 3B | 32k | Apache 2.0 | HuggingFace, muy usado |
-| Phi-3.5-mini-instruct | 3,8B | 128k | MIT | HuggingFace, muy usado |
+| Acri-J1 | 3B (aprox.) | no disponible (base: 128k) | Apache 2.0 | Hugging Face, 0 descargas |
+| Llama-3.2-3B-Instruct (Meta) | 3B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente usado |
+| Qwen2.5-3B-Instruct | 3B | 32k | Apache 2.0 | Hugging Face, muy usado |
+| Phi-3.5-mini-instruct | 3,8B | 128k | MIT | Hugging Face, muy usado |
 
 La comparativa se limita a parametros, contexto y licencia, ya que no hay benchmarks publicados para Acri-J1 que permitan contrastar rendimiento real frente a estas alternativas.
 
@@ -80,7 +80,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay benchm
 
 ## Enlaces
 
-- [HuggingFace: cortex-ai-nova/Acri-J1](https://huggingface.co/cortex-ai-nova/Acri-J1)
+- [Hugging Face: cortex-ai-nova/Acri-J1](https://huggingface.co/cortex-ai-nova/Acri-J1)
 - [Modelo base: unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo original Llama 3.2 3B Instruct (Meta)](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)

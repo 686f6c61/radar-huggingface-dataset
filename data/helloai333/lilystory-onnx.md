@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/helloAI333/LilyStory-ONNX
+- Modelo en Hugging Face: https://huggingface.co/helloAI333/LilyStory-ONNX
 - Modelo base: https://huggingface.co/Conlanger-LLM-CLEM/LilyStory
 - Space de conversión a ONNX: https://huggingface.co/spaces/onnx-community/convert-to-onnx
 - Documentación de Transformers.js para text-generation: https://huggingface.co/docs/transformers.js/api/pipelines#module_pipelines.TextGenerationPipeline

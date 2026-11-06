@@ -67,4 +67,4 @@ No es posible realizar una comparativa justa con otros modelos, porque no se dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Awnasser/model_291826171_coca_huge
+- Repositorio en Hugging Face: https://huggingface.co/Awnasser/model_291826171_coca_huge

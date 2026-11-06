@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adapter LoRA denominado `aligntune-testrun-S2-Attention`, publicado por el usuario `ram-lexsi` en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base `Qwen/Qwen2.5-0.5B-Instruct` realizado con la librería AlignTune, un framework de entrenamiento y ajuste de LLMs desarrollado por Lexsi Labs que soporta métodos de Supervised Fine-Tuning (SFT) y Reinforcement Learning (RL) sobre distintos backends (TRL, Unsloth, etc.).
+Este repositorio contiene un adapter LoRA denominado `aligntune-testrun-S2-Attention`, publicado por el usuario `ram-lexsi` en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base `Qwen/Qwen2.5-0.5B-Instruct` realizado con la librería AlignTune, un framework de entrenamiento y ajuste de LLMs desarrollado por Lexsi Labs que soporta métodos de Supervised Fine-Tuning (SFT) y Reinforcement Learning (RL) sobre distintos backends (TRL, Unsloth, etc.).
 
 El modelo es un adapter PEFT (LoRA) que debe cargarse sobre el modelo base indicado. Su nombre sugiere que forma parte de una serie de pruebas internas de AlignTune, probablemente orientadas a validar el pipeline de entrenamiento con atención deslizante (sliding window attention) o variantes de atención. No se proporcionan datos sobre el dataset de entrenamiento, la licencia, los idiomas soportados ni los resultados de benchmarks, por lo que su utilidad práctica fuera del contexto de evaluación de la herramienta AlignTune es limitada.
 
@@ -38,7 +38,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 
 - Evaluacion de pipelines de fine-tuning: este adapter sirve como artefacto de prueba para validar el flujo de entrenamiento de AlignTune con el backend TRL. Un desarrollador puede cargarlo para verificar que el adapter se integra correctamente con el modelo base y que la generacion funciona.
 - Experimentacion con LoRA sobre modelos pequenos: util para investigar el comportamiento de adaptadores de bajo rango sobre un modelo de 0.5B, por ejemplo, para medir el impacto de la atencion deslizante en tareas de contexto largo.
-- Pruebas de compatibilidad PEFT: permite comprobar la interoperabilidad entre AlignTune, TRL y la libreria `peft` de HuggingFace.
+- Pruebas de compatibilidad PEFT: permite comprobar la interoperabilidad entre AlignTune, TRL y la libreria `peft` de Hugging Face.
 - Benchmarking de rendimiento de adaptadores: se puede comparar la perplejidad o la calidad de generacion de este adapter frente al modelo base sin ajustar.
 - Desarrollo de prototipos de bajo coste: al ser un modelo de 0.5B, puede ejecutarse en CPU o GPUs de gama baja, lo que lo hace util para prototipos rapidos de chatbots o asistentes simples.
 - Validacion de configuraciones de entrenamiento: los equipos que usan AlignTune pueden emplear este adapter como referencia para depurar sus propias configuraciones de entrenamiento.
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-S2-Attention
+- Repositorio Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-S2-Attention
 - Repositorio AlignTune en GitHub: https://github.com/Lexsi-Labs/aligntune
 - Pagina oficial de AlignTune: https://aligntune.lexsi.ai/
 - Pagina de herramientas de Lexsi Labs: https://lexsi.ai/tools/aligntune

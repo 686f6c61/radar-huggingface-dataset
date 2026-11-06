@@ -81,10 +81,10 @@ Comparaciones adicionales citadas por el autor:
 
 | Modelo | Parametros | Contexto | MERA 2.0 global | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RusMind Zernyshko 1.6 | 83 M | 1024 | 0,049 | RusMind License (no comercial sin acuerdo) | HuggingFace, GGUF |
-| SmolLM-3B | 3 B | no disponible en la informacion | 0,049 | no disponible en la informacion | HuggingFace |
-| Qwen3.5-4B | 4 B | no disponible en la informacion | no disponible (RUBIN 0,259; Culture 0,057) | no disponible en la informacion | HuggingFace |
-| GFusion-10B-A1.8B | 10 B (1,8 B activos) | no disponible en la informacion | no disponible (RUBIN 0,183; Characters 0,166) | no disponible en la informacion | HuggingFace |
+| RusMind Zernyshko 1.6 | 83 M | 1024 | 0,049 | RusMind License (no comercial sin acuerdo) | Hugging Face, GGUF |
+| SmolLM-3B | 3 B | no disponible en la informacion | 0,049 | no disponible en la informacion | Hugging Face |
+| Qwen3.5-4B | 4 B | no disponible en la informacion | no disponible (RUBIN 0,259; Culture 0,057) | no disponible en la informacion | Hugging Face |
+| GFusion-10B-A1.8B | 10 B (1,8 B activos) | no disponible en la informacion | no disponible (RUBIN 0,183; Characters 0,166) | no disponible en la informacion | Hugging Face |
 
 La comparacion es asimetrica: Zernyshko 1.6 solo es competitivo en subconjuntos de cultura rusa y puntuacion; en capacidad general y contexto (1024 tokens) queda muy por debajo de los modelos de 3 B a 10 B citados.
 
@@ -101,7 +101,7 @@ La comparacion es asimetrica: Zernyshko 1.6 solo es competitivo en subconjuntos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6
+- Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6
 - Version GGUF: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6-GGUF
 - Leaderboard MERA 2.0: no disponible en la informacion proporcionada (mencionado en la model card sin enlace)
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

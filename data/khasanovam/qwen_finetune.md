@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|
-| qwen_finetune (este modelo) | 1,94B | no disponible | no disponible | GGUF en HuggingFace |
+| qwen_finetune (este modelo) | 1,94B | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen2.5-VL-3B | aproximadamente 3,75B | 32k (segun documentacion publica) | Apache-2.0 | safetensors y GGUF |
 | SmolVLM-Instruct (2,2B) | aproximadamente 2,25B | segun documentacion publica | Apache-2.0 | safetensors y GGUF |
 
@@ -82,7 +82,7 @@ Los datos de las alternativas proceden de sus respectivas model cards publicas y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KhasanovAM/qwen_finetune
+- Modelo en Hugging Face: https://huggingface.co/KhasanovAM/qwen_finetune
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Unsloth (documentacion): https://docs.unsloth.ai
 - llama.cpp (repositorio): https://github.com/ggml-org/llama.cpp

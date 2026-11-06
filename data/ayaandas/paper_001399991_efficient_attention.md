@@ -71,7 +71,7 @@ No disponible. No se trata de un modelo de lenguaje ni de visión comparable con
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ayaandas/paper_001399991_efficient_attention
+- Repositorio de Hugging Face: https://huggingface.co/ayaandas/paper_001399991_efficient_attention
 - Paper original en arXiv: https://arxiv.org/abs/1812.01243
 - Versión HTML del paper en arXiv: https://arxiv.org/html/1812.01243v10
 - Publicación en IEEE: https://ieeexplore.ieee.org/document/9423033

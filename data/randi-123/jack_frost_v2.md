@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jack_Frost_V2 es un adaptador LoRA publicado en HuggingFace por el usuario Randi-123 bajo la librería diffusers. Según los metadatos del repositorio, se trata de un LoRA de tipo text-to-image (etiqueta `template:diffusion-lora`) construido sobre el modelo base `brandon12333/Otis__RVC_v2_`, que a su vez aparece referenciado como adaptador. La model card es extremadamente escasa: se limita a indicar la palabra de activación `Jack Frost` y a describir el modelo como "Jack Frost Ai Voice model", una descripción internamente contradictoria con la etiqueta text-to-image y con la propia naturaleza de LoRA de difusión.
+Jack_Frost_V2 es un adaptador LoRA publicado en Hugging Face por el usuario Randi-123 bajo la librería diffusers. Según los metadatos del repositorio, se trata de un LoRA de tipo text-to-image (etiqueta `template:diffusion-lora`) construido sobre el modelo base `brandon12333/Otis__RVC_v2_`, que a su vez aparece referenciado como adaptador. La model card es extremadamente escasa: se limita a indicar la palabra de activación `Jack Frost` y a describir el modelo como "Jack Frost Ai Voice model", una descripción internamente contradictoria con la etiqueta text-to-image y con la propia naturaleza de LoRA de difusión.
 
 El repositorio no presenta descargas ni likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-10-30), lo que sugiere una publicación reciente y sin validación por parte de la comunidad. No hay información sobre arquitectura interna, datos de entrenamiento, resolución de salida ni parámetros del adaptador (rango, alpha, targets). La relevancia actual es, por tanto, muy limitada: se trata de un artefacto de nicho, probablemente experimental, cuya evaluación rigurosa no es posible con los datos disponibles.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Randi-123/Jack_Frost_V2 | LoRA text-to-image (segun metadatos) | no disponible | no aplica | openrail | HuggingFace, 0 descargas |
-| brandon12333/Otis__RVC_v2_ (modelo base declarado) | no disponible | no disponible | no aplica | no disponible | HuggingFace |
-| LoRAs de personaje en diffusers (categoria generica) | LoRA de difusion | variable (tipicamente 10-200 MB) | no aplica | variable | HuggingFace |
+| Randi-123/Jack_Frost_V2 | LoRA text-to-image (segun metadatos) | no disponible | no aplica | openrail | Hugging Face, 0 descargas |
+| brandon12333/Otis__RVC_v2_ (modelo base declarado) | no disponible | no disponible | no aplica | no disponible | Hugging Face |
+| LoRAs de personaje en diffusers (categoria generica) | LoRA de difusion | variable (tipicamente 10-200 MB) | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parametros concretos para establecer una comparacion cuantitativa con alternativas.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de parametros concretos para establecer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Randi-123/Jack_Frost_V2
+- Hugging Face: https://huggingface.co/Randi-123/Jack_Frost_V2
 - Modelo base declarado: https://huggingface.co/brandon12333/Otis__RVC_v2_
 - Repositorio de archivos: https://huggingface.co/Randi-123/Jack_Frost_V2/tree/main
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers

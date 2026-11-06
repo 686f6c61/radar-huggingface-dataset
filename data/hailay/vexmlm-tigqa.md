@@ -77,7 +77,7 @@ No se dispone de datos públicos de otros modelos de QA extractivo en tigriña p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hailay/VEXMLM-TIGQA
+- Hugging Face: https://huggingface.co/Hailay/VEXMLM-TIGQA
 - Repositorio oficial (código y evaluación): https://github.com/hailaykidu/VEXMLM
 - Modelo base VEXMLM: https://huggingface.co/Hailay/VEXMLM
 - Modelo recomendado para QA en tigriña: https://huggingface.co/Hailay/VEXMLM-TiQuAD

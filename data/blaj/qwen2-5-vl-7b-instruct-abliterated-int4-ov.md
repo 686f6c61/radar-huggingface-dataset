@@ -75,10 +75,10 @@ El autor senala que la decodificacion esta limitada por el ancho de banda de mem
 
 | Modelo | Parametros | Contexto | Formato | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| blaj/Qwen2.5-VL-7B-Instruct-abliterated-int4-ov | ~7B | no disponible | OpenVINO IR | int4 grupo 128 | Apache-2.0 | HuggingFace, 0 descargas |
-| blaj/Qwen2.5-VL-7B-Instruct-abliterated-int8-ov | ~7B | no disponible | OpenVINO IR | int8 | Apache-2.0 | HuggingFace (build hermana) |
-| huihui-ai/Qwen2.5-VL-7B-Instruct-abliterated | ~7B | no disponible | safetensors (formato original) | fp16 y otras | Apache-2.0 | HuggingFace, Ollama |
-| Qwen/Qwen2.5-VL-7B-Instruct | ~7B | no disponible | safetensors | fp16 y otras | Apache-2.0 | HuggingFace, catalogo de Intel |
+| blaj/Qwen2.5-VL-7B-Instruct-abliterated-int4-ov | ~7B | no disponible | OpenVINO IR | int4 grupo 128 | Apache-2.0 | Hugging Face, 0 descargas |
+| blaj/Qwen2.5-VL-7B-Instruct-abliterated-int8-ov | ~7B | no disponible | OpenVINO IR | int8 | Apache-2.0 | Hugging Face (build hermana) |
+| huihui-ai/Qwen2.5-VL-7B-Instruct-abliterated | ~7B | no disponible | safetensors (formato original) | fp16 y otras | Apache-2.0 | Hugging Face, Ollama |
+| Qwen/Qwen2.5-VL-7B-Instruct | ~7B | no disponible | safetensors | fp16 y otras | Apache-2.0 | Hugging Face, catalogo de Intel |
 
 La diferencia principal entre las cuatro variantes no esta en la arquitectura ni en el numero de parametros, sino en el formato, la cuantizacion y la presencia o ausencia de abliteration. La version int4 de blaj es la unica de las comparadas que ofrece un IR descompuesto listo para OVMS con metricas de throughput publicadas sobre hardware Intel. No se dispone de datos de rendimiento de calidad que permitan comparar la exactitud entre estas variantes.
 
@@ -97,7 +97,7 @@ La diferencia principal entre las cuatro variantes no esta en la arquitectura ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/Qwen2.5-VL-7B-Instruct-abliterated-int4-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/Qwen2.5-VL-7B-Instruct-abliterated-int4-ov
 - Build hermana en int8: https://huggingface.co/blaj/Qwen2.5-VL-7B-Instruct-abliterated-int8-ov
 - Modelo base abliterated (huihui-ai): https://huggingface.co/huihui-ai/Qwen2.5-VL-7B-Instruct-abliterated
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

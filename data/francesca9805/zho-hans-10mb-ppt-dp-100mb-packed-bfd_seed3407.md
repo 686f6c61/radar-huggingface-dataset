@@ -6,13 +6,13 @@ Este repositorio contiene un ajuste fino supervisado (SFT) del modelo `goldfish-
 
 El interes de esta ficha no radica en su rendimiento, sino en su valor como artefacto de investigacion. El nombre del repositorio codifica la configuracion del experimento (`ppt`, `Dp-100mb`, `packed`, `bfd`, `seed3407`) y la ejecucion esta registrada en un proyecto de Weights & Biases llamado `new-tokenizers`, asociado a la Universidad de Groningen. Esto sugiere que se trata de un experimento centrado en tokenizacion y empaquetado de secuencias, no de un modelo destinado a produccion.
 
-El modelo tiene 0 descargas y 0 likes, no declara licencia ni idiomas en la ficha de HuggingFace, y solo incluye una model card minima generada automaticamente por TRL. Cualquier uso en produccion deberia tratarse con extrema cautela dado que no hay evaluacion publicada, ni documentacion sobre el dataset de ajuste, ni garantias de licencia.
+El modelo tiene 0 descargas y 0 likes, no declara licencia ni idiomas en la ficha de Hugging Face, y solo incluye una model card minima generada automaticamente por TRL. Cualquier uso en produccion deberia tratarse con extrema cautela dado que no hay evaluacion publicada, ni documentacion sobre el dataset de ajuste, ni garantias de licencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only; etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only; etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 (dato real de los pesos safetensors) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | no disponible (no se declara en la model card) |
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39.087.104 | no disponible | chino simplificado (inferido) | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/zho_hans_10mb (modelo base) | no disponible | no disponible | chino simplificado | no disponible en esta ficha | HuggingFace |
+| francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39.087.104 | no disponible | chino simplificado (inferido) | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/zho_hans_10mb (modelo base) | no disponible | no disponible | chino simplificado | no disponible en esta ficha | Hugging Face |
 | GPT-2 small (referencia arquitectonica) | 124 M | 1024 tokens | ingles | MIT | Ampliamente disponible |
 
 La comparativa con GPT-2 small se incluye unicamente como referencia de escala, porque comparten arquitectura, pero no se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa con alternativas.
@@ -72,13 +72,13 @@ La comparativa con GPT-2 small se incluye unicamente como referencia de escala, 
 - Sesgos conocidos: no hay informacion publicada sobre la composicion del corpus de ajuste ni del corpus base, por lo que no se puede evaluar el sesgo.
 - Riesgo de alucinacion: elevado, como en cualquier GPT-2 de 39 M parametros entrenado sobre un corpus muy pequeno de 10 MB; la coherencia a nivel de discurso sera limitada.
 - Limitaciones de contexto e idioma: la ventana de contexto no esta documentada y el modelo base esta especializado en chino simplificado, por lo que el rendimiento en castellano o ingles sera, previsiblemente, pobre.
-- Restricciones de licencia: la ficha de HuggingFace no declara una licencia concreta (`no disponible`), lo que impide determinar si el uso comercial esta permitido. Se debe contactar con el autor antes de cualquier uso profesional.
+- Restricciones de licencia: la ficha de Hugging Face no declara una licencia concreta (`no disponible`), lo que impide determinar si el uso comercial esta permitido. Se debe contactar con el autor antes de cualquier uso profesional.
 - Caveat de produccion: el modelo no tiene descargas ni validacion externa, no incluye documentacion de dataset ni evaluacion, y procede de un experimento de tokenizacion; no se recomienda su uso en entornos productivos.
 - Nombre del repositorio opaco: terminos como `ppt`, `Dp` o `bfd` no estan documentados, lo que dificulta la trazabilidad del experimento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/mfior2gw
 - Repositorio de TRL: https://github.com/huggingface/trl

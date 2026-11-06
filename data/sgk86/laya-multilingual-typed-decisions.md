@@ -6,7 +6,7 @@ Laya-multilingual-typed-decisions es un ajuste fino publicado por el usuario SGK
 
 El entrenamiento sigue la receta oficial RLCD (Reinforcement Learning from Contrastive Distillation, según la nomenclatura del autor) sobre una sola GPU, con batch efectivo de 64, learning rate de 2,5e-5 para el encoder y 1e-4 para la cabeza, 4 épocas y un schedule de sigma de 0,4 a 0,1, seguido de una calibración de temperatura posterior al entrenamiento. En el conjunto de test oficial de 400 casos declara una exactitud de 0,786 frente a una línea base mayoritaria de 0,461, junto con métricas de calibración (Brier 0,064, ECE 0,113).
 
-Su relevancia actual es limitada pero concreta: cubre el nicho de decisiones tipadas y calibradas con un modelo pequeño que cabe en hardware de consumo, y lo hace con métricas de calibración explícitas, algo poco habitual en modelos de este tamaño. Como contrapartida, la ficha de HuggingFace registra 0 descargas y 0 "likes" en la fecha de consulta, la model card es muy escueta y la búsqueda web realizada no ha devuelto ninguna fuente independiente sobre el modelo.
+Su relevancia actual es limitada pero concreta: cubre el nicho de decisiones tipadas y calibradas con un modelo pequeño que cabe en hardware de consumo, y lo hace con métricas de calibración explícitas, algo poco habitual en modelos de este tamaño. Como contrapartida, la ficha de Hugging Face registra 0 descargas y 0 "likes" en la fecha de consulta, la model card es muy escueta y la búsqueda web realizada no ha devuelto ninguna fuente independiente sobre el modelo.
 
 ## Especificaciones tecnicas
 
@@ -78,15 +78,15 @@ No se han publicado resultados de benchmarks estándar de lenguaje (MMLU, HumanE
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Metrica principal |
 |---|---|---|---|---|---|
-| SGK86/laya-multilingual-typed-decisions | 321.908.998 | no disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes) | Accuracy 0,786; Brier 0,064 |
-| convaiinnovations/laya-multilingual (base) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| SGK86/laya-multilingual-typed-decisions | 321.908.998 | no disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes) | Accuracy 0,786; Brier 0,064 |
+| convaiinnovations/laya-multilingual (base) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 | TypeSafe Jev 1.13.0 | no disponible (sistema de terceros) | no disponible | no disponible | referencia en BENCHMARKS.md | Accuracy 0,727; Brier 0,148 |
 
 No se dispone de información suficiente para comparar con modelos de decisión calibrada de uso extendido, y la búsqueda web no ha arrojado resultados relevantes.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de validación externa: 0 descargas y 0 "likes" en HuggingFace en la fecha de consulta, sin publicaciones, papers ni repos independientes asociados.
+- Ausencia total de validación externa: 0 descargas y 0 "likes" en Hugging Face en la fecha de consulta, sin publicaciones, papers ni repos independientes asociados.
 - La evaluación se apoya en un único conjunto de test de 400 casos declarado por el propio autor, lo que implica un intervalo de confianza amplio y sin protocolo de evaluación reproducible documentado.
 - Discrepancia interna en las métricas: el modelo supera a la referencia TypeSafe Jev 1.13.0 en accuracy exacta (0,786 frente a 0,727) pero queda por debajo en soft accuracy (0,507 frente a 0,580), lo que sugiere que acierta más en decisiones discretas pero puntúa peor en casos parcialmente correctos.
 - Calibración mejorable: un ECE de 0,113 sobre un umbral habitual de 0,1 indica un desajuste moderado entre confianza declarada y acierto real; no conviene usarlo como probabilidad exacta en decisiones críticas.
@@ -100,7 +100,7 @@ No se dispone de información suficiente para comparar con modelos de decisión 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SGK86/laya-multilingual-typed-decisions
+- Modelo en Hugging Face: https://huggingface.co/SGK86/laya-multilingual-typed-decisions
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Benchmarks de referencia (TypeSafe Jev 1.13.0): https://github.com/NandhaKishorM/laya/blob/main/BENCHMARKS.md
 - Dataset de ajuste referenciado en el título de la model card: LocalLLaMA/typed-decisions (sin URL verificada)

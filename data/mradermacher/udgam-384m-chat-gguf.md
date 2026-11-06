@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Udgam-384M-Chat es un modelo de lenguaje en ingles de 384 millones de parametros (384.389.332 concretamente), disenado para tool calling y function calling en dispositivos locales. Lo desarrolla UdgamLabs, que lo entrena desde cero (from-scratch) en lugar de partir de un modelo preentrenado existente, y la ficha que nos ocupa es la version cuantizada en GGUF generada por mradermacher, un conocido publicador de cuantizaciones en HuggingFace.
+Udgam-384M-Chat es un modelo de lenguaje en ingles de 384 millones de parametros (384.389.332 concretamente), disenado para tool calling y function calling en dispositivos locales. Lo desarrolla UdgamLabs, que lo entrena desde cero (from-scratch) en lugar de partir de un modelo preentrenado existente, y la ficha que nos ocupa es la version cuantizada en GGUF generada por mradermacher, un conocido publicador de cuantizaciones en Hugging Face.
 
 El modelo es un transformer decoder-only compatible con la arquitectura Gemma 4 (clase `Gemma4ForCausalLM`), lo que permite ejecutarlo sin modificaciones en herramientas habituales de inferencia local como Ollama, LM Studio, llama.cpp, MLX y transformers. Sus etiquetas destacan capacidades muy concretas: tool calling, function calling, extraccion de JSON y shell, lo que lo situa en el nicho de agentes ligeros y automatizacion on-device.
 
@@ -73,7 +73,7 @@ No se dispone de datos de comparacion en la informacion proporcionada. El modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Udgam-384M-Chat (GGUF) | 384.389.332 | no disponible | apache-2.0 | HuggingFace (mradermacher y UdgamLabs) |
+| Udgam-384M-Chat (GGUF) | 384.389.332 | no disponible | apache-2.0 | Hugging Face (mradermacher y UdgamLabs) |
 | Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

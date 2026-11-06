@@ -61,7 +61,7 @@ Estos valores corresponden al sistema completo, no a este modelo aislado. No se 
 - VRAM estimada para inferencia: el modelo tiene 1.176 millones de parámetros en bf16, lo que ocupa aproximadamente 2,35 GB en memoria. Con overhead de activaciones y KV cache, se puede ejecutar en GPUs con 6-8 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer con al menos 8 GB (RTX 3060, RTX 4060, etc.) es suficiente para inferencia por lotes pequeños. Para entrenamiento se usaron 2x GH200, pero no es necesario para uso inferencial.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de gama media y alta.
-- Opciones de despliegue: al ser un modelo en formato safetensors compatible con HuggingFace Transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También puede usarse directamente con la librería `transformers` para scoring por lotes.
+- Opciones de despliegue: al ser un modelo en formato safetensors compatible con Hugging Face Transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También puede usarse directamente con la librería `transformers` para scoring por lotes.
 - Latencia y throughput: no se han publicado mediciones. Para un modelo de 1B, se espera una latencia de decenas de milisegundos por token en GPU moderna, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -85,10 +85,10 @@ La comparación directa con el modelo base muestra que este ALM es una especiali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-lysias
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-lysias
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y scoring: https://github.com/Urdatorn/sphragis_models
 - Paper de referencia (Huang, Murakami y Grieve, 2025): https://doi.org/10.1371/journal.pone.0327081
 - Modelo base OLMo-1B: https://huggingface.co/allenai/OLMo-1B-hf
-- Perfil del autor en HuggingFace: https://huggingface.co/Urdatorn
+- Perfil del autor en Hugging Face: https://huggingface.co/Urdatorn
 - Perfil del autor en GitHub: https://github.com/Urdatorn

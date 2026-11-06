@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron-3.5-Transcribe-AIPod-HF es un modelo de reconocimiento automático del habla (ASR) publicado en HuggingFace por el usuario manateelazycat, con un total de 783.857.231 parámetros y un tamaño de repositorio de 24,6 GB. El pipeline declarado es `automatic-speech-recognition` y los pesos se distribuyen en formato GGUF, lo que apunta a un uso orientado a inferencia local o en dispositivos con recursos limitados mediante cuantización.
+Nemotron-3.5-Transcribe-AIPod-HF es un modelo de reconocimiento automático del habla (ASR) publicado en Hugging Face por el usuario manateelazycat, con un total de 783.857.231 parámetros y un tamaño de repositorio de 24,6 GB. El pipeline declarado es `automatic-speech-recognition` y los pesos se distribuyen en formato GGUF, lo que apunta a un uso orientado a inferencia local o en dispositivos con recursos limitados mediante cuantización.
 
 La model card describe la versión 0.2.0 como una iteración centrada en la robustez del runtime: recuperación acotada ante paradas falsas del mecanismo de guarda contra repeticiones, streaming SSE con prefijos consistentes y fallos explícitos cuando la transcripción queda incompleta. El autor indica que las imágenes de runtime no contienen pesos y que se emplea el toolchain CUDA original de cada dispositivo.
 
@@ -78,5 +78,5 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manateelazycat/Nemotron-3.5-Transcribe-AIPod-HF
+- Hugging Face: https://huggingface.co/manateelazycat/Nemotron-3.5-Transcribe-AIPod-HF
 - Referencias internas citadas en la model card (no verificables desde la información proporcionada): `loop-recovery.md`, `reused-inputs.json`, «final acceptance receipt».

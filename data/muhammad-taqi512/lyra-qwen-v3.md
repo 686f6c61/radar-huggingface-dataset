@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LYRA-QWEN-V3 es un modelo de lenguaje publicado en HuggingFace por el usuario `muhammad-taqi512`, distribuido bajo licencia Apache 2.0 y etiquetado con la arquitectura `qwen2`. Segun los metadatos de safetensors, cuenta con 3.085.938.688 parametros (aproximadamente 3,09 mil millones) y el repositorio ocupa 6,2 GB, un tamano coherente con un almacenamiento de pesos en bf16/fp16 (2 bytes por parametro). No se especifica pipeline, idiomas soportados ni detalles de entrenamiento.
+LYRA-QWEN-V3 es un modelo de lenguaje publicado en Hugging Face por el usuario `muhammad-taqi512`, distribuido bajo licencia Apache 2.0 y etiquetado con la arquitectura `qwen2`. Segun los metadatos de safetensors, cuenta con 3.085.938.688 parametros (aproximadamente 3,09 mil millones) y el repositorio ocupa 6,2 GB, un tamano coherente con un almacenamiento de pesos en bf16/fp16 (2 bytes por parametro). No se especifica pipeline, idiomas soportados ni detalles de entrenamiento.
 
 El modelo no dispone de model card mas alla del bloque de licencia, por lo que no hay informacion publica sobre el corpus de entrenamiento, el numero de tokens, el proceso de alineacion (RLHF, DPO u otros) ni el contexto maximo soportado. El nombre ("LYRA-QWEN-V3") y el patron de publicacion sugieren una adaptacion o fine-tuning derivado de la familia Qwen, pero esto no esta confirmado por el autor.
 
@@ -91,5 +91,5 @@ No es posible establecer una comparacion de rendimiento con LYRA-QWEN-V3 porque 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muhammad-taqi512/LYRA-QWEN-V3
+- Hugging Face: https://huggingface.co/muhammad-taqi512/LYRA-QWEN-V3
 - No se han encontrado en la busqueda web enlaces relevantes al modelo. Los resultados devueltos (Wikipedia, Britannica, Universalis y otros) tratan sobre la figura historica de Muhammad y no guardan relacion con este repositorio; probablemente se recuperaron por coincidencia con el nombre del autor.

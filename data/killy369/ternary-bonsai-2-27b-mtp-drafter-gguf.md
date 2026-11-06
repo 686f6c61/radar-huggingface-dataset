@@ -13,7 +13,7 @@ Su relevancia práctica es concreta: permite duplicar el throughput de un 27B te
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Cabezal MTP para decodificación especulativa: un bloque transformer (blk.64) más la cabeza de salida de Bonsai 2, rotación Hadamard plegada y vocabulario de borrador de 64.000 tokens (podado desde 248.320) |
-| Parámetros totales | 2.031.895.552 (cifra declarada por HuggingFace a partir de safetensors); el fichero GGUF distribuido ocupa 1.055.253.344 bytes |
+| Parámetros totales | 2.031.895.552 (cifra declarada por Hugging Face a partir de safetensors); el fichero GGUF distribuido ocupa 1.055.253.344 bytes |
 | Parámetros activos | No aplica (arquitectura densa, no es MoE) |
 | Longitud de contexto | Heredada del modelo base, hasta 262.144 tokens; las mediciones publicadas del cabezal se hacen a 32.768 tokens |
 | Tipos de cuantización | El cabezal se distribuye en un único GGUF (tipo de cuantización del fichero no declarado). El modelo base se publica en PQ2_0 (ternario con escalas de grupo FP16) y PTQ1_0 |
@@ -85,9 +85,9 @@ Velocidad medida en GTX 1080 Ti 11 GB, contexto 32K, KV en f16, sin pantalla con
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este cabezal (killy369/Ternary-Bonsai-2-27B-MTP-drafter-GGUF) | Cabezal MTP para decodificación especulativa | 2.031.895.552 según HuggingFace; GGUF de 1,06 GB | Hereda 262K del base; medido a 32K | 1,5x a 2,3x sobre decodificación plana en GTX 1080 Ti | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| prism-ml/Ternary-Bonsai-2-27B-gguf (modelo base sin cabezal) | Modelo ternario multimodal, atención híbrida | Clase 27B | 262.144 tokens | 42,6 tok/s en código en GTX 1080 Ti; 135,41 tok/s en RTX 5090 | Apache-2.0 | HuggingFace y espejo en Ollama |
-| ProCreations/Ternary-Bonsai-2-27B-MTP | Derivado MTP del mismo base | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Este cabezal (killy369/Ternary-Bonsai-2-27B-MTP-drafter-GGUF) | Cabezal MTP para decodificación especulativa | 2.031.895.552 según Hugging Face; GGUF de 1,06 GB | Hereda 262K del base; medido a 32K | 1,5x a 2,3x sobre decodificación plana en GTX 1080 Ti | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| prism-ml/Ternary-Bonsai-2-27B-gguf (modelo base sin cabezal) | Modelo ternario multimodal, atención híbrida | Clase 27B | 262.144 tokens | 42,6 tok/s en código en GTX 1080 Ti; 135,41 tok/s en RTX 5090 | Apache-2.0 | Hugging Face y espejo en Ollama |
+| ProCreations/Ternary-Bonsai-2-27B-MTP | Derivado MTP del mismo base | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Medusa, EAGLE-2/EAGLE-3 y decodificación por n-gramas | Cabezales y métodos de decodificación especulativa genéricos | No disponible | No disponible | No disponible | No disponible | No incluidos en la información disponible |
 
 El cabezal no es comparable en capacidades con un modelo generativo: su única función es proponer tokens para que otro modelo los verifique. Frente a los cabezales genéricos tipo Medusa o EAGLE, la diferencia documentada es el entrenamiento on-policy sobre las generaciones del propio verificador y la integración específica con la ruta Hadamard de Bonsai 2; no hay datos comparativos de rendimiento entre ambos enfoques en la información disponible.

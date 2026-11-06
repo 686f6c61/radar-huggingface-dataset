@@ -69,9 +69,9 @@ El autor advierte además de que, sobre hablantes que el modelo no ha visto nunc
 
 | Modelo | Parametros | Ventana de audio | Idioma | Licencia | WER en FLEURS sw_ke | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sdt-asr-afya-v1 | 808.878.080 | 30 s | Suajili | cc-by-sa-4.0 | 16,25 (declarado por el autor) | HuggingFace |
-| openai/whisper-large-v3-turbo | 809 M | 30 s | Multilingüe | MIT (modelo base) | no disponible | HuggingFace |
-| openai/whisper-large-v3 | 1,55 B | 30 s | Multilingüe | MIT (modelo base) | no disponible | HuggingFace |
+| sdt-asr-afya-v1 | 808.878.080 | 30 s | Suajili | cc-by-sa-4.0 | 16,25 (declarado por el autor) | Hugging Face |
+| openai/whisper-large-v3-turbo | 809 M | 30 s | Multilingüe | MIT (modelo base) | no disponible | Hugging Face |
+| openai/whisper-large-v3 | 1,55 B | 30 s | Multilingüe | MIT (modelo base) | no disponible | Hugging Face |
 
 No se han proporcionado resultados comparables de benchmarks para los modelos base en el mismo conjunto de evaluación, por lo que la comparación numérica directa no está disponible.
 
@@ -88,7 +88,7 @@ No se han proporcionado resultados comparables de benchmarks para los modelos ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Japhari/sdt-asr-afya-v1
+- Modelo en Hugging Face: https://huggingface.co/Japhari/sdt-asr-afya-v1
 - Modelo TTS compañero: https://huggingface.co/Japhari/sdt-tts-afya-v1
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Dataset google/WaxalNLP: https://huggingface.co/datasets/google/WaxalNLP

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`loop-vanilla-d18` es un modelo de lenguaje base (no instruido) de 1.378.418.688 parametros almacenados en FP32, publicado por el usuario CharlieChen en HuggingFace. Se trata del checkpoint final original utilizado en la escalera de escalado sobre FineWeb del articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". La coordenada de profundidad d18 es la coordenada de escalado de la escalera y no tiene por que coincidir con el numero de bloques Transformer ejecutados.
+`loop-vanilla-d18` es un modelo de lenguaje base (no instruido) de 1.378.418.688 parametros almacenados en FP32, publicado por el usuario CharlieChen en Hugging Face. Se trata del checkpoint final original utilizado en la escalera de escalado sobre FineWeb del articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". La coordenada de profundidad d18 es la coordenada de escalado de la escalera y no tiene por que coincidir con el numero de bloques Transformer ejecutados.
 
 El modelo pertenece a la familia de los looped transformers (transformers con repeticion de bloques), pero esta variante concreta es la "vanilla": el modo de profundidad es `none` y las repeticiones configuradas y de evaluacion final son 1, por lo que en la practica se comporta como una linea base sin recursion efectiva. El interes del artefacto es fundamentalmente cientifico: preserva el resultado original del entrenamiento para reproducir los exponentes de escalado del paper, no para despliegue en produccion.
 
@@ -74,10 +74,10 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| loop-vanilla-d18 | 1,38 B | 2.048 | no disponible | HuggingFace, 0 descargas, 0 likes | no disponible |
+| loop-vanilla-d18 | 1,38 B | 2.048 | no disponible | Hugging Face, 0 descargas, 0 likes | no disponible |
 | GPT-2 XL | 1,5 B | 1.024 | modificada de MIT | ampliamente disponible | si, publicados por OpenAI |
-| Pythia-1.4B | 1,4 B | 2.048 | Apache 2.0 | disponible en HuggingFace | si, suite de evaluacion publicada |
-| OPT-1.3B | 1,3 B | 2.048 | licencia OPT (uso no comercial) | disponible en HuggingFace | si, publicados por Meta |
+| Pythia-1.4B | 1,4 B | 2.048 | Apache 2.0 | disponible en Hugging Face | si, suite de evaluacion publicada |
+| OPT-1.3B | 1,3 B | 2.048 | licencia OPT (uso no comercial) | disponible en Hugging Face | si, publicados por Meta |
 
 Diferencias clave: `loop-vanilla-d18` es el unico de la tabla pensado como artefacto de investigacion sobre escalado y recursion, y el unico sin licencia declarada, sin benchmarks estandar publicados y sin integracion directa con frameworks de inferencia habituales. Su tokenizador GPT-2 y su contexto de 2048 tokens lo situan en la misma liga de tamano que GPT-2 XL y Pythia-1.4B.
 
@@ -96,7 +96,7 @@ Diferencias clave: `loop-vanilla-d18` es el unico de la tabla pensado como artef
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-vanilla-d18
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-vanilla-d18
 - Repositorio de codigo del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Articulo: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (identificado en la model card; no se ha localizado URL en la busqueda web)

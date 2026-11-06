@@ -4,7 +4,7 @@
 
 kev-merged-4b es un modelo publicado por ayan4m1 (Andrew DeLisa) que consiste en la fusión del adaptador kev-4b de jaredpalmer con su modelo base, Qwen/Qwen3.5-4B-Base. El objetivo declarado en la model card es precisamente ese: ofrecer en un único repositorio el resultado de la fusión, de modo que el usuario no tenga que cargar un adaptador LoRA por separado. Pertenece a la familia Kev, descrita por su autor original como modelos de decisión: reciben preguntas tipadas y devuelven probabilidades calibradas en una sola pasada forward, sin generar texto.
 
-El modelo se apoya en la arquitectura Qwen3.5 en su variante de 4B. Llama la atención una discrepancia relevante: el nombre comercial indica 4B, pero el recuento real de safetensors en el repositorio es de 2.664.599.996 parámetros (aproximadamente 2,66 mil millones). La pipeline declarada en HuggingFace es image-text-to-text, lo que sugiere que hereda capacidades multimodales (visión) del base Qwen3.5, aunque la model card no lo confirma explícitamente.
+El modelo se apoya en la arquitectura Qwen3.5 en su variante de 4B. Llama la atención una discrepancia relevante: el nombre comercial indica 4B, pero el recuento real de safetensors en el repositorio es de 2.664.599.996 parámetros (aproximadamente 2,66 mil millones). La pipeline declarada en Hugging Face es image-text-to-text, lo que sugiere que hereda capacidades multimodales (visión) del base Qwen3.5, aunque la model card no lo confirma explícitamente.
 
 Su relevancia es limitada por el momento: el repositorio acumula 0 descargas y 0 likes, no incluye métricas propias y la documentación se reduce a una frase sobre la fusión. Resulta útil sobre todo para quien quiera experimentar con la familia de modelos de decisión Kev sin gestionar adaptadores, y como punto de partida para fine-tuning propio bajo licencia Apache 2.0.
 
@@ -79,12 +79,12 @@ Notas cualitativas del autor original de la familia: Kev-4B y Kev-9B estan muy c
 
 | Modelo | Parametros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kev-merged-4b | ~2,66 mil millones | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| Kev-4B (adaptador) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Kev-9B | no disponible | no disponible | 0,74 | no disponible | HuggingFace |
-| Kev-27B | no disponible | no disponible | 0,84 | no disponible | HuggingFace |
+| kev-merged-4b | ~2,66 mil millones | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| Kev-4B (adaptador) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Kev-9B | no disponible | no disponible | 0,74 | no disponible | Hugging Face |
+| Kev-27B | no disponible | no disponible | 0,84 | no disponible | Hugging Face |
 | Jev | no disponible | no disponible | 0,90 | no disponible | no disponible |
-| Qwen/Qwen3.5-4B-Base | ~4B (nominal) | no disponible | no disponible | ver licencia del base | HuggingFace |
+| Qwen/Qwen3.5-4B-Base | ~4B (nominal) | no disponible | no disponible | ver licencia del base | Hugging Face |
 
 La comparacion directa con modelos generativos de proposito general no es homogenea, porque Kev es una familia de modelos de decision con salida de probabilidades y no de texto. Dentro de su propia categoria, el unico punto de referencia numerico publicado son los MMLU de Kev-9B, Kev-27B y Jev, que no incluyen a este checkpoint.
 
@@ -103,10 +103,10 @@ La comparacion directa con modelos generativos de proposito general no es homoge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayan4m1/kev-merged-4b
+- Modelo en Hugging Face: https://huggingface.co/ayan4m1/kev-merged-4b
 - Adaptador original kev-4b: https://huggingface.co/jaredpalmer/kev-4b
 - Repositorio GitHub de la familia Kev: https://github.com/jaredpalmer/kev
 - Releases del repositorio Kev: https://github.com/jaredpalmer/kev/releases
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
-- Perfil del autor en HuggingFace: https://huggingface.co/ayan4m1/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/ayan4m1/datasets
 - Perfil del autor en Civitai: https://civitai.com/user/ayan4m1/models

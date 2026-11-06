@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`DebasishDhal99/Llama-3.2-3B-Instruct-agriculture-lora` es un adaptador LoRA publicado en HuggingFace por el usuario DebasishDhal99, construido sobre el modelo base Llama-3.2-3B-Instruct de Meta y orientado, segun el propio identificador del repositorio, al dominio agricola. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador de bajo rango (LoRA) y no con un modelo de pesos completos. No se trata por tanto de un modelo entrenado desde cero, sino de un ajuste fino de parametros eficiente sobre un transformer decoder-only de 3.200 millones de parametros.
+`DebasishDhal99/Llama-3.2-3B-Instruct-agriculture-lora` es un adaptador LoRA publicado en Hugging Face por el usuario DebasishDhal99, construido sobre el modelo base Llama-3.2-3B-Instruct de Meta y orientado, segun el propio identificador del repositorio, al dominio agricola. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador de bajo rango (LoRA) y no con un modelo de pesos completos. No se trata por tanto de un modelo entrenado desde cero, sino de un ajuste fino de parametros eficiente sobre un transformer decoder-only de 3.200 millones de parametros.
 
-La relevancia de este tipo de publicaciones es doble. Por un lado, ilustra el flujo habitual de especializacion vertical de modelos abiertos pequenos: adaptar un instruct de 3B a un nicho concreto (agronomia, recomendacion de cultivos, interpretacion de datos de campo) con un coste de entrenamiento muy bajo y un artefacto facil de distribuir. Por otro, y de forma mas importante para quien pretenda reutilizarlo, el repositorio presenta carencias de documentacion severas: la model card es la plantilla autogenerada de HuggingFace sin ningun campo cumplimentado, no declara licencia, idiomas, pipeline, dataset de entrenamiento ni hiperparametros, y acumula cero descargas y cero likes en la fecha de consulta.
+La relevancia de este tipo de publicaciones es doble. Por un lado, ilustra el flujo habitual de especializacion vertical de modelos abiertos pequenos: adaptar un instruct de 3B a un nicho concreto (agronomia, recomendacion de cultivos, interpretacion de datos de campo) con un coste de entrenamiento muy bajo y un artefacto facil de distribuir. Por otro, y de forma mas importante para quien pretenda reutilizarlo, el repositorio presenta carencias de documentacion severas: la model card es la plantilla autogenerada de Hugging Face sin ningun campo cumplimentado, no declara licencia, idiomas, pipeline, dataset de entrenamiento ni hiperparametros, y acumula cero descargas y cero likes en la fecha de consulta.
 
 En consecuencia, esta ficha distingue de forma explicita entre los datos verificables del repositorio, los datos conocidos del modelo base Llama-3.2-3B-Instruct (que se indican como heredados y no confirmados para este adaptador) y los apartados en los que la informacion simplemente no esta disponible. Cualquier evaluacion de uso en produccion deberia considerar este adaptador como un artefacto no documentado que requiere validacion propia.
 
@@ -25,7 +25,7 @@ En consecuencia, esta ficha distingue de forma explicita entre los datos verific
 
 El artefacto es un adaptador de ajuste fino de bajo rango (LoRA) sobre Llama-3.2-3B-Instruct. Esto implica que la arquitectura subyacente es la de un transformer decoder-only autorregresivo con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con consultas agrupadas (GQA), que reduce el coste de la cache KV durante la inferencia. Segun la documentacion de Meta, los modelos Llama 3.2 de 1B y 3B se obtuvieron mediante poda y destilacion de conocimiento a partir de modelos mayores de la familia Llama 3.1, y se entrenaron con hasta 9 billones de tokens, con una fecha de corte de conocimiento en diciembre de 2023. Todos estos datos corresponden al modelo base y no estan confirmados para este adaptador.
 
-El adaptador se distribuye con la etiqueta `library_name: transformers` y el tag `safetensors`, ademas de tags tecnicos (`endpoints_compatible`, `region:us`) y una referencia a `arxiv:1910.09700`, que no es un paper del modelo sino el articulo de Lacoste et al. sobre estimacion de emisiones de carbono, presente en la plantilla por defecto de HuggingFace. No hay informacion sobre el dataset agricola empleado, el numero de ejemplos, el rango y alpha del LoRA, la tasa de aprendizaje, si hubo RLHF, DPO o entrenamiento supervisado, ni sobre tecnicas adicionales como decodificacion especulativa.
+El adaptador se distribuye con la etiqueta `library_name: transformers` y el tag `safetensors`, ademas de tags tecnicos (`endpoints_compatible`, `region:us`) y una referencia a `arxiv:1910.09700`, que no es un paper del modelo sino el articulo de Lacoste et al. sobre estimacion de emisiones de carbono, presente en la plantilla por defecto de Hugging Face. No hay informacion sobre el dataset agricola empleado, el numero de ejemplos, el rango y alpha del LoRA, la tasa de aprendizaje, si hubo RLHF, DPO o entrenamiento supervisado, ni sobre tecnicas adicionales como decodificacion especulativa.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ En todos los casos, el uso en produccion exige auditoria propia: no existe ningu
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla autogenerada de HuggingFace y no incluye ninguna seccion de evaluacion cumplimentada, ni metricas de MMLU, HumanEval, GSM8K u otras, ni comparacion con el modelo base o con alternativas. Tampoco consta una evaluacion de la perdida de capacidades generales tras el ajuste LoRA.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla autogenerada de Hugging Face y no incluye ninguna seccion de evaluacion cumplimentada, ni metricas de MMLU, HumanEval, GSM8K u otras, ni comparacion con el modelo base o con alternativas. Tampoco consta una evaluacion de la perdida de capacidades generales tras el ajuste LoRA.
 
 ## Requisitos de hardware
 
@@ -92,7 +92,7 @@ Frente a esas alternativas, la ventaja diferencial del adaptador seria la especi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DebasishDhal99/Llama-3.2-3B-Instruct-agriculture-lora
+- Repositorio Hugging Face: https://huggingface.co/DebasishDhal99/Llama-3.2-3B-Instruct-agriculture-lora
 - Modelo base Llama-3.2-3B-Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Articulo referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Paper, blog del autor, repositorio de codigo del ajuste y demo: no disponibles en la informacion proporcionada.

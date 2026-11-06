@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ahsanz/virl39k-qwen3vl-2b-arms` no es un modelo unico, sino una coleccion de cuatro checkpoints de investigacion procedentes de un estudio controlado de aprendizaje por refuerzo (RL) multi-rama sobre el modelo multimodal Qwen3-VL-2B-Instruct. Cada carpeta contiene un checkpoint fusionado en formato HuggingFace (`global_step_164`, dos epocas, semilla 1, torre de vision entrenada sin congelar). Las cuatro ramas se diferencian unicamente en la funcion de recompensa u objetivo de RL: A1 usa GRPO con recompensa de exactitud binaria, A2 usa INTUITOR con recompensa de autoconfianza, A3 usa VPPO con asignacion de credito por dependencia visual y A4 usa PRPO + RVD.
+El repositorio `Ahsanz/virl39k-qwen3vl-2b-arms` no es un modelo unico, sino una coleccion de cuatro checkpoints de investigacion procedentes de un estudio controlado de aprendizaje por refuerzo (RL) multi-rama sobre el modelo multimodal Qwen3-VL-2B-Instruct. Cada carpeta contiene un checkpoint fusionado en formato Hugging Face (`global_step_164`, dos epocas, semilla 1, torre de vision entrenada sin congelar). Las cuatro ramas se diferencian unicamente en la funcion de recompensa u objetivo de RL: A1 usa GRPO con recompensa de exactitud binaria, A2 usa INTUITOR con recompensa de autoconfianza, A3 usa VPPO con asignacion de credito por dependencia visual y A4 usa PRPO + RVD.
 
 El proposito del artefacto es servir de material reproducible para comparar objetivos de RL sobre una misma receta de datos y computo (ViRL39K deduplicado de Geo3K, 164 pasos, lote de rollout 384 x n8, lr 1e-6, DAPO clip 0.2/0.28, perdida a nivel de token, respuesta maxima 2048, KL desactivado). No es, por tanto, un modelo listo para produccion, sino un conjunto de checkpoints destinados a investigacion sobre atribucion de credito en razonamiento multimodal.
 
@@ -23,7 +23,7 @@ Un detalle de relevancia practica es que el autor documenta explicitamente un re
 
 ## Arquitectura y entrenamiento
 
-Los checkpoints parten de `Qwen/Qwen3-VL-2B-Instruct`, un modelo vision-lenguaje de la familia Qwen3-VL. La informacion disponible no detalla la composicion interna del transformer, el numero de capas ni el mecanismo de atencion; si se explicita que la torre de vision (ViT) tiene `head_dim` 128 y que en vLLM selecciona por defecto un kernel FlashAttention empaquetado que provoca un error PTX en algunas GPU, lo que obliga a fijar `VLLM_VIT_FORCE_SDPA=1` (la ruta de HuggingFace no se ve afectada porque resuelve a SDPA).
+Los checkpoints parten de `Qwen/Qwen3-VL-2B-Instruct`, un modelo vision-lenguaje de la familia Qwen3-VL. La informacion disponible no detalla la composicion interna del transformer, el numero de capas ni el mecanismo de atencion; si se explicita que la torre de vision (ViT) tiene `head_dim` 128 y que en vLLM selecciona por defecto un kernel FlashAttention empaquetado que provoca un error PTX en algunas GPU, lo que obliga a fijar `VLLM_VIT_FORCE_SDPA=1` (la ruta de Hugging Face no se ve afectada porque resuelve a SDPA).
 
 El entrenamiento es un ajuste por RL sobre la receta compartida ViRL39K (version deduplicada de Geo3K), con 164 pasos, dos epocas, semilla 1, lote de rollout de 384 prompts con n=8 muestras, learning rate 1e-6, recorte DAPO 0.2/0.28, perdida a nivel de token, longitud maxima de respuesta 2048 tokens y KL desactivado. La torre de vision se entrena sin congelar en las cuatro ramas. Lo que varia entre ramas es el objetivo: A1 GRPO con recompensa de exactitud binaria, A2 INTUITOR con recompensa de autoconfianza, A3 VPPO con asignacion de credito basada en dependencia visual y A4 PRPO + RVD. No se menciona RLHF clasico ni DPO, sino metodos de RL con verificacion (GRPO y variantes).
 
@@ -46,7 +46,7 @@ El entrenamiento es un ajuste por RL sobre la receta compartida ViRL39K (version
 - Analisis de colapso de recompensa: la rama A2 sirve como caso documentado de fallo en el que una recompensa de autoconfianza produce una salida casi constante; es util para diagnosticar modos de colapso en RL con recompensas no verificables.
 - Replicacion de resultados: reejecutar la evaluacion con `max_new_tokens=1024` para evitar el sesgo de longitud que, con el limite de 512, trunca al modelo base en aproximadamente el 56% de las respuestas frente al 18% de las ramas RL.
 - Generacion de subconjuntos de pesos: descargar una sola rama con `snapshot_download` y `allow_patterns` en lugar de los 14,6 GB completos, para integrarla en un pipeline de evaluacion propio.
-- Punto de partida para fine-tuning adicional: al estar bajo licencia Apache 2.0 y en formato safetensors compatible con HuggingFace, una rama puede reutilizarse como inicializacion para experimentos posteriores.
+- Punto de partida para fine-tuning adicional: al estar bajo licencia Apache 2.0 y en formato safetensors compatible con Hugging Face, una rama puede reutilizarse como inicializacion para experimentos posteriores.
 - Docencia y divulgacion tecnica: ilustrar con un caso real como una metrica de recompensa mal disenada puede producir un checkpoint degenerado que "parece" invariante y puntua cero.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia (estimacion a partir del tamano declarado, no confirmada en la model card): en bf16/fp16, aproximadamente 5-7 GB por rama, mas el coste de cache KV y del preprocesamiento de imagen; en cuantizacion de 8 bits, del orden de 3-4 GB; en 4 bits, del orden de 2-3 GB.
 - GPU recomendadas: por tratarse de un modelo de 2B, cabe en GPU de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090; en entornos profesionales, A100, H100, L40S o similares sobran para inferencia.
 - Si cabe en GPU de consumo: si, en la mayoria de GPU con 6-8 GB o mas de VRAM en precision completa y en GPU con 4 GB en cuantizacion agresiva.
-- Opciones de despliegue: la model card menciona explicitamente vLLM (con `VLLM_VIT_FORCE_SDPA=1` obligatorio para evitar el error PTX de la torre de vision en algunas GPU) y la ruta estandar de HuggingFace Transformers. No se mencionan llama.cpp, Ollama ni TGI, y no se publican pesos GGUF.
+- Opciones de despliegue: la model card menciona explicitamente vLLM (con `VLLM_VIT_FORCE_SDPA=1` obligatorio para evitar el error PTX de la torre de vision en algunas GPU) y la ruta estandar de Hugging Face Transformers. No se mencionan llama.cpp, Ollama ni TGI, y no se publican pesos GGUF.
 - Latencia y throughput estimados: no disponible en la informacion proporcionada.
 - Nota de despliegue: el limite de generacion recomendado es 1024 tokens nuevos, no 512, por el preambulo largo de razonamiento del modelo.
 
@@ -75,7 +75,7 @@ La informacion disponible permite comparar las cuatro ramas entre si y con el mo
 
 | Modelo / rama | Objetivo de RL | Estado documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| A0 (Qwen/Qwen3-VL-2B-Instruct) | Sin RL (base) | Referencia; no incluido en este repo | Apache 2.0 | HuggingFace (Qwen) |
+| A0 (Qwen/Qwen3-VL-2B-Instruct) | Sin RL (base) | Referencia; no incluido en este repo | Apache 2.0 | Hugging Face (Qwen) |
 | A1-2B-uvit | GRPO, recompensa de exactitud binaria | No se reporta colapso | Apache 2.0 | En este repo |
 | A2-2B-uvit | INTUITOR, recompensa de autoconfianza | Colapsado: `\boxed}` en 864/864 respuestas | Apache 2.0 | En este repo |
 | A3-2B-uvit | VPPO, asignacion de credito por dependencia visual | No se reporta colapso | Apache 2.0 | En este repo |
@@ -87,7 +87,7 @@ Comparativa con modelos de otros desarrolladores (por ejemplo, otros VLM de 2-3B
 
 - La rama A2 es un checkpoint degenerado publicado como resultado negativo, no como baseline. Bajo el prompt de formato del estudio emite `\boxed}` de forma casi constante, por lo que la extraccion de respuesta falla y su puntuacion en metricas de exactitud ronda cero. No debe interpretarse ese cero como falta de fundamentacion en la imagen: es una salida casi constante.
 - Al evaluar con `max_new_tokens=512` se introduce un sesgo de longitud: el modelo base se trunca en aproximadamente el 56% de las respuestas frente al 18% de las ramas RL, lo que infla artificialmente la mejora aparente de todas las ramas. La recomendacion del autor es usar 1024 y mantenerlo fijo entre brazos.
-- En vLLM, la torre de vision de Qwen3-VL puede seleccionar un kernel FlashAttention que provoca un error PTX en algunas GPU; es necesario fijar `VLLM_VIT_FORCE_SDPA=1`. La ruta de HuggingFace no se ve afectada.
+- En vLLM, la torre de vision de Qwen3-VL puede seleccionar un kernel FlashAttention que provoca un error PTX en algunas GPU; es necesario fijar `VLLM_VIT_FORCE_SDPA=1`. La ruta de Hugging Face no se ve afectada.
 - Son checkpoints de investigacion: no se documentan evaluaciones de seguridad, sesgos, robustez ni comportamiento fuera del dominio de geometria del dataset ViRL39K.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible; al ser un modelo de 2B y entrenado sobre un dominio estrecho, es esperable un comportamiento limitado fuera de ese dominio, aunque no se aportan mediciones.
 - Longitud de contexto, idiomas soportados y cuantizaciones no estan documentados, lo que dificulta planificar despliegues en produccion.
@@ -97,6 +97,6 @@ Comparativa con modelos de otros desarrolladores (por ejemplo, otros VLM de 2-3B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ahsanz/virl39k-qwen3vl-2b-arms
+- Modelo en Hugging Face: https://huggingface.co/Ahsanz/virl39k-qwen3vl-2b-arms
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Papers, blogs, repositorios o demos adicionales: no disponible; la busqueda web no devolvio resultados relacionados con este modelo.

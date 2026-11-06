@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`hraj266/my-first-scratch-llm` es un modelo de generacion de texto publicado en HuggingFace por el usuario hraj266, con arquitectura GPT-2 y 38.473.216 parametros totales segun los pesos en safetensors. El nombre del repositorio sugiere que se trata de un experimento de entrenamiento desde cero ("scratch") de un modelo tipo GPT-2 pequeno, probablemente con fines educativos o de aprendizaje. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
+`hraj266/my-first-scratch-llm` es un modelo de generacion de texto publicado en Hugging Face por el usuario hraj266, con arquitectura GPT-2 y 38.473.216 parametros totales segun los pesos en safetensors. El nombre del repositorio sugiere que se trata de un experimento de entrenamiento desde cero ("scratch") de un modelo tipo GPT-2 pequeno, probablemente con fines educativos o de aprendizaje. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
 
-La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, idiomas, licencia ni evaluacion. Esto limita severamente cualquier evaluacion rigurosa del modelo. Los unicos datos verificables son los metadatos del Hub (tags, tamano de pesos, pipeline) y la referencia al paper de Lacoste et al. (2019) sobre emisiones de carbono, que aparece en la plantilla y no implica que se haya realizado dicho calculo.
+La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, idiomas, licencia ni evaluacion. Esto limita severamente cualquier evaluacion rigurosa del modelo. Los unicos datos verificables son los metadatos del Hub (tags, tamano de pesos, pipeline) y la referencia al paper de Lacoste et al. (2019) sobre emisiones de carbono, que aparece en la plantilla y no implica que se haya realizado dicho calculo.
 
 Por su tamano (38,5 M de parametros) y arquitectura, el modelo se situa en la categoria de GPT-2 small, adecuado unicamente para experimentacion, prototipado docente y pruebas de pipelines de inferencia, no para uso en produccion ni para tareas que requieran calidad linguistica o razonamiento. Su relevancia actual es marginal y de caracter didactico.
 
@@ -39,7 +39,7 @@ No hay informacion sobre el corpus de entrenamiento, el numero de tokens procesa
 ## Casos de uso
 
 - Experimentacion docente: servir como ejemplo practico de un modelo GPT-2 entrenado desde cero para ilustrar el ciclo completo de entrenamiento, publicacion en el Hub y despliegue con `transformers`.
-- Pruebas de integracion de pipelines: validar el funcionamiento de `text-generation-inference` o de endpoints compatibles con la API de HuggingFace usando un modelo de bajo coste computacional.
+- Pruebas de integracion de pipelines: validar el funcionamiento de `text-generation-inference` o de endpoints compatibles con la API de Hugging Face usando un modelo de bajo coste computacional.
 - Prototipado de interfaces de generacion de texto: construir demos de UI (Gradio, Streamlit) que consuman un modelo pequeno antes de migrar a uno mayor.
 - Benchmarking de infraestructura: medir latencia y throughput de despliegues en CPU o GPU de gama baja con un modelo de 38 M de parametros.
 - Fine-tuning experimental: partir de este checkpoint para probar recetas de ajuste fino en dominios muy acotados, dado su bajo coste de entrenamiento.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hraj266/my-first-scratch-llm | 38,5 M | no disponible | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace (`openai-community/gpt2`) |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace (`distilbert/distilgpt2`) |
-| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | HuggingFace (`openai-community/gpt2-medium`) |
+| hraj266/my-first-scratch-llm | 38,5 M | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face (`openai-community/gpt2`) |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face (`distilbert/distilgpt2`) |
+| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | Hugging Face (`openai-community/gpt2-medium`) |
 
 La comparativa se limita a parametros y licencia porque no hay datos de rendimiento del modelo evaluado. Frente a GPT-2 small y DistilGPT-2, este modelo es mas pequeno y carece de documentacion de entrenamiento y evaluacion, lo que lo hace menos adecuado para cualquier uso que no sea experimental.
 
@@ -82,7 +82,7 @@ La comparativa se limita a parametros y licencia porque no hay datos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hraj266/my-first-scratch-llm
+- Modelo en Hugging Face: https://huggingface.co/hraj266/my-first-scratch-llm
 - Paper citado en la plantilla (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact
 - Documentacion de GPT-2 en transformers: https://huggingface.co/docs/transformers/model_doc/gpt2

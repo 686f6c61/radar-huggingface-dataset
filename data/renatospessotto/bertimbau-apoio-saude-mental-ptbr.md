@@ -73,10 +73,10 @@ F1 por clase del ensemble: apoyo 0,76; neutro 0,65; no-apoyo 0,36. Validación c
 
 | Modelo | Parámetros | Contexto | F1-macro en el test del proyecto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BERTimbau apoio saúde mental (ensemble) | 108,9 M por fold (5 folds) | 128 tokens | 0,590 | MIT | HuggingFace |
-| Pysentimiento (zero-shot) | no disponible | no disponible | 0,399 | no disponible | HuggingFace |
-| XLM-RoBERTa CardiffNLP (zero-shot) | no disponible | no disponible | 0,358 | no disponible | HuggingFace |
-| BERTimbau base (`neuralmind/bert-base-portuguese-cased`) | 108,9 M | 512 tokens (BERT estándar) | no evaluado en este test | no disponible | HuggingFace |
+| BERTimbau apoio saúde mental (ensemble) | 108,9 M por fold (5 folds) | 128 tokens | 0,590 | MIT | Hugging Face |
+| Pysentimiento (zero-shot) | no disponible | no disponible | 0,399 | no disponible | Hugging Face |
+| XLM-RoBERTa CardiffNLP (zero-shot) | no disponible | no disponible | 0,358 | no disponible | Hugging Face |
+| BERTimbau base (`neuralmind/bert-base-portuguese-cased`) | 108,9 M | 512 tokens (BERT estándar) | no evaluado en este test | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,6 +93,6 @@ F1 por clase del ensemble: apoyo 0,76; neutro 0,65; no-apoyo 0,36. Validación c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RenatoSpessotto/bertimbau-apoio-saude-mental-ptbr
+- Modelo en Hugging Face: https://huggingface.co/RenatoSpessotto/bertimbau-apoio-saude-mental-ptbr
 - Repositorio del proyecto (código, informe y análisis): https://github.com/renatospessotto/bertimbau-mental-health-ptbr
 - Modelo base BERTimbau: https://huggingface.co/neuralmind/bert-base-portuguese-cased

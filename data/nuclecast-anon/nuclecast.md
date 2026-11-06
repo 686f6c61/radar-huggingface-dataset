@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Categoria | Parametros | Ventana de prediccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NucleCast (refinador) | Nowcasting generativo con flow matching sobre VIL de SEVIR | no disponible | 13 fotogramas entrada, 12 salida (5 min) | apache-2.0 | Pesos publicados en HuggingFace |
-| STVMamba3 (ancla del propio sistema) | Nowcasting determinista espacio-temporal | no disponible | 13 fotogramas entrada, 12 salida (5 min) | apache-2.0 (dentro del mismo repositorio) | Pesos publicados en HuggingFace |
-| SimVP-gSTA (baseline del propio sistema) | Prediccion de video determinista | no disponible | 13 fotogramas entrada, 12 salida (5 min) | apache-2.0 (dentro del mismo repositorio) | Pesos publicados en HuggingFace |
+| NucleCast (refinador) | Nowcasting generativo con flow matching sobre VIL de SEVIR | no disponible | 13 fotogramas entrada, 12 salida (5 min) | apache-2.0 | Pesos publicados en Hugging Face |
+| STVMamba3 (ancla del propio sistema) | Nowcasting determinista espacio-temporal | no disponible | 13 fotogramas entrada, 12 salida (5 min) | apache-2.0 (dentro del mismo repositorio) | Pesos publicados en Hugging Face |
+| SimVP-gSTA (baseline del propio sistema) | Prediccion de video determinista | no disponible | 13 fotogramas entrada, 12 salida (5 min) | apache-2.0 (dentro del mismo repositorio) | Pesos publicados en Hugging Face |
 
 Existen otros sistemas de referencia en la misma categoría (nowcasting por radar, incluidos trabajos generativos publicados en revistas científicas), pero no se aportan datos sobre ellos en la información disponible, por lo que no se incluyen parámetros, licencias ni rendimiento comparado.
 
@@ -99,7 +99,7 @@ Existen otros sistemas de referencia en la misma categoría (nowcasting por rada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nuclecast-anon/nuclecast
+- Modelo en Hugging Face: https://huggingface.co/nuclecast-anon/nuclecast
 - Script de descarga y verificación de pesos citado en la model card: `weights/download_weights.sh` (perteneciente al código de acompañamiento; no se proporciona URL en la información disponible)
 - Paper o preprint: no disponible
 - Repositorio de código: no disponible

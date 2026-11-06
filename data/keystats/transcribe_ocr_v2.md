@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`keystats/Transcribe_ocr_v2` es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario keystats. El repositorio declara la etiqueta de arquitectura `qwen2_5_vl`, lo que situa al modelo dentro de la familia Qwen2.5-VL, orientada a comprension conjunta de imagen y texto. El recuento real de parametros extraido de los pesos safetensors es de 8.292.166.656 (aproximadamente 8,29 mil millones), un orden de magnitud que coincide con el de las variantes de 7B-8B de dicha familia. El nombre del repositorio sugiere un ajuste orientado a transcripcion y OCR, aunque la model card no lo confirma.
+`keystats/Transcribe_ocr_v2` es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario keystats. El repositorio declara la etiqueta de arquitectura `qwen2_5_vl`, lo que situa al modelo dentro de la familia Qwen2.5-VL, orientada a comprension conjunta de imagen y texto. El recuento real de parametros extraido de los pesos safetensors es de 8.292.166.656 (aproximadamente 8,29 mil millones), un orden de magnitud que coincide con el de las variantes de 7B-8B de dicha familia. El nombre del repositorio sugiere un ajuste orientado a transcripcion y OCR, aunque la model card no lo confirma.
 
 El modelo es relevante por su tamano contenido: 8,29B de parametros lo colocan en la franja de modelos multimodales que pueden desplegarse en una unica GPU de 24 GB en precision bf16, o en GPUs de consumo mas modestas aplicando cuantizacion. Eso lo hace candidato para tareas de digitalizacion documental, extraccion de texto en imagenes y conversion de capturas a texto estructurado, siempre que se valide su calidad real.
 
-Conviene ser cauto: la model card es la plantilla automatica de HuggingFace y no contiene informacion sustantiva. No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el unico dato tecnico duro disponible es el recuento de parametros y el tamano del repo (16,6 GB, compatible con pesos en bf16/fp16).
+Conviene ser cauto: la model card es la plantilla automatica de Hugging Face y no contiene informacion sustantiva. No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el unico dato tecnico duro disponible es el recuento de parametros y el tamano del repo (16,6 GB, compatible con pesos en bf16/fp16).
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento de `Transcribe_ocr_v2`, por lo que la comp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| keystats/Transcribe_ocr_v2 | 8,29B | no disponible | no disponible | safetensors en HuggingFace |
+| keystats/Transcribe_ocr_v2 | 8,29B | no disponible | no disponible | safetensors en Hugging Face |
 | Qwen2.5-VL-7B-Instruct | ~8,29B | 128K (segun ficha oficial de Qwen) | Apache 2.0 (segun ficha oficial) | safetensors, ampliamente replicado |
 | InternVL2.5-8B | ~8,1B | no disponible en esta busqueda | no disponible en esta busqueda | safetensors |
 | Llama-3.2-11B-Vision-Instruct | ~10,6B | 128K (segun ficha oficial de Meta) | licencia Llama con restricciones | safetensors |
@@ -94,6 +94,6 @@ No se dispone de comparativas de calidad (MMLU, DocVQA, OCRBench u otras) para n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keystats/Transcribe_ocr_v2
+- Repositorio en Hugging Face: https://huggingface.co/keystats/Transcribe_ocr_v2
 - Referencia citada en la plantilla de la model card (calculadora de impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo.

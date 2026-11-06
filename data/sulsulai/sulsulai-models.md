@@ -95,7 +95,7 @@ La comparacion relevante es contra los modelos base: los sulsulAI heredan tamano
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sulsulAI/sulsulAI-models
+- Repositorio Hugging Face: https://huggingface.co/sulsulAI/sulsulAI-models
 - Modelo base 0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo base 4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia Apache 2.0 (referenciada en el repo): https://www.apache.org/licenses/LICENSE-2.0

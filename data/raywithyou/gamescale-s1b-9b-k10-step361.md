@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Raywithyou/gamescale-s1b-9b-k10-step361` es un checkpoint de 9.409.813.744 parámetros publicado en HuggingFace por el usuario Raywithyou. El repositorio contiene pesos en formato safetensors, ocupa 18,8 GB y lleva el tag `qwen3_5`, lo que sugiere una relación con la familia Qwen3.5, aunque no hay model card que lo confirme. El nombre indica “step361”, por lo que parece un checkpoint intermedio de un entrenamiento, no necesariamente un modelo final.
+`Raywithyou/gamescale-s1b-9b-k10-step361` es un checkpoint de 9.409.813.744 parámetros publicado en Hugging Face por el usuario Raywithyou. El repositorio contiene pesos en formato safetensors, ocupa 18,8 GB y lleva el tag `qwen3_5`, lo que sugiere una relación con la familia Qwen3.5, aunque no hay model card que lo confirme. El nombre indica “step361”, por lo que parece un checkpoint intermedio de un entrenamiento, no necesariamente un modelo final.
 
 No se dispone de información pública sobre licencia, idiomas, longitud de contexto, pipeline, datos de entrenamiento ni evaluaciones. Tampoco se han publicado benchmarks ni una descripción de arquitectura más allá del tag y del recuento de parámetros. Su adopción es muy baja: 11 descargas y 0 likes en el momento de la consulta.
 
@@ -95,7 +95,7 @@ No hay benchmarks ni especificaciones verificables de las alternativas, por lo q
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Raywithyou/gamescale-s1b-9b-k10-step361)
+- [Modelo en Hugging Face](https://huggingface.co/Raywithyou/gamescale-s1b-9b-k10-step361)
 - [MemoGUI-World Qwen3.5-9B SFT Stage1](https://huggingface.co/Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage1)
 - [Listado de fine-tunes de MemoGUI-World Stage2](https://huggingface.co/models?other=base_model:finetune:Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2)
 

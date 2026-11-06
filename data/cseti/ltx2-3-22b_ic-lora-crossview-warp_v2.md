@@ -83,7 +83,7 @@ No se dispone de información sobre otros modelos de la misma categoría (LoRA d
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp_v2)
+- [Página del modelo en Hugging Face](https://huggingface.co/Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp_v2)
 - [Repositorio del nodo ComfyUI-CrossViewWarp](https://github.com/cseti007/ComfyUI-CrossViewWarp)
 - [Workflow de ejemplo (JSON)](https://github.com/cseti007/ComfyUI-CrossViewWarp/blob/main/example_workflows/ltx2.3-ic-lora-crossview-warp-v2.json)
 - [Modelo v0.9 (prueba de concepto)](https://huggingface.co/Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp)

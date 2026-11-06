@@ -86,5 +86,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - Harmansingh24k/voiceshield-room-calibrated](https://huggingface.co/Harmansingh24k/voiceshield-room-calibrated)
+- [Hugging Face - Harmansingh24k/voiceshield-room-calibrated](https://huggingface.co/Harmansingh24k/voiceshield-room-calibrated)
 - [Modelo base - Harmansingh24k/voiceshield-replay-robust](https://huggingface.co/Harmansingh24k/voiceshield-replay-robust)

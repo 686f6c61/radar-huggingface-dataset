@@ -22,7 +22,7 @@ Let me write.
 
 For cuantizaciones: only Q4_K_M GGUF provided; other quants in repo not available. Note imatrix tag.
 
-Licencia: "other" — DeepSeek-R1 distilled models typically under MIT for the distills... Actually DeepSeek-R1-Distill-Llama-8B is under MIT license (DeepSeek released distills under MIT, with Llama 3.1 derivative terms). Hmm — the DeepSeek-R1-Distill models are licensed under MIT, but they're derivatives of Llama 3.1 which has the Llama 3.1 Community License. I shouldn't assert; the HF metadata says "license: other". I'll say "other (segun metadatos de HuggingFace); la model card no detalla los terminos". I can mention the base model licensing caveat as something to verify. That's a caution, not an invention. I'll phrase carefully: "requiere verificar".
+Licencia: "other" — DeepSeek-R1 distilled models typically under MIT for the distills... Actually DeepSeek-R1-Distill-Llama-8B is under MIT license (DeepSeek released distills under MIT, with Llama 3.1 derivative terms). Hmm — the DeepSeek-R1-Distill models are licensed under MIT, but they're derivatives of Llama 3.1 which has the Llama 3.1 Community License. I shouldn't assert; the HF metadata says "license: other". I'll say "other (segun metadatos de Hugging Face); la model card no detalla los terminos". I can mention the base model licensing caveat as something to verify. That's a caution, not an invention. I'll phrase carefully: "requiere verificar".
 
 Structure headings. Only first word capitalized in titles: "Resumen", "Especificaciones tecnicas", "Arquitectura y entrenamiento", "Capacidades", "Casos de uso", "Benchmarks y rendimiento", "Requisitos de hardware", "Comparativa con modelos similares", "Limitaciones y advertencias", "Enlaces".
 
@@ -44,7 +44,7 @@ El interes practico es disponer de un modelo de razonamiento de 8B que quepa en 
 | Longitud de contexto | no disponible en la model card; el modelo base declara 128k RoPE. Los ejemplos de uso del autor emplean ventanas de 8192 tokens |
 | Tipos de cuantizacion | Q4_K_M (GGUF); el autor indica ~4,8 bpw y fichero de 4,58 GiB. No se listan otras variantes en la informacion disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (segun metadatos de HuggingFace); la model card no detalla los terminos |
+| Licencia | other (segun metadatos de Hugging Face); la model card no detalla los terminos |
 | Formato de pesos | GGUF (unico fichero, ~4,9 GB de repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -104,10 +104,10 @@ Todos los datos de esta tabla proceden de la model card del autor y no han sido 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Benchmark declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Llama-8B-GTAP-v3-Q4_K_M | 8.030.261.312 | no disponible (base 128k RoPE) | GGUF Q4_K_M | other | Perplejidad 3,3492; GSM8K 84,0%; codigo AST 10,0% | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Llama-8B (modelo base) | 8.030.261.312 | 128k | safetensors (BF16) | no disponible en esta ficha | no disponible | HuggingFace, ampliamente distribuido |
-| Llama 3.1 8B Instruct | ~8.000M | 128k | safetensors, GGUF | Llama 3.1 Community License | no disponible | HuggingFace, ampliamente distribuido |
-| DeepSeek-R1-Distill-Qwen-7B | ~7.600M | no disponible en esta ficha | safetensors, GGUF | no disponible en esta ficha | no disponible | HuggingFace, ampliamente distribuido |
+| DeepSeek-R1-Distill-Llama-8B-GTAP-v3-Q4_K_M | 8.030.261.312 | no disponible (base 128k RoPE) | GGUF Q4_K_M | other | Perplejidad 3,3492; GSM8K 84,0%; codigo AST 10,0% | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Llama-8B (modelo base) | 8.030.261.312 | 128k | safetensors (BF16) | no disponible en esta ficha | no disponible | Hugging Face, ampliamente distribuido |
+| Llama 3.1 8B Instruct | ~8.000M | 128k | safetensors, GGUF | Llama 3.1 Community License | no disponible | Hugging Face, ampliamente distribuido |
+| DeepSeek-R1-Distill-Qwen-7B | ~7.600M | no disponible en esta ficha | safetensors, GGUF | no disponible en esta ficha | no disponible | Hugging Face, ampliamente distribuido |
 
 No se dispone de resultados de benchmarks homogeneos entre estos modelos en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento queda como no disponible. La comparacion se limita a parametros, formato y licencia.
 
@@ -126,7 +126,7 @@ No se dispone de resultados de benchmarks homogeneos entre estos modelos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Llama-8B-GTAP-v3-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Llama-8B-GTAP-v3-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Paper o blog tecnico de G-TAP v3: no disponible
 - Repositorio de codigo de DuoNeural: no disponible

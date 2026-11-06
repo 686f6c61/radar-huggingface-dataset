@@ -47,7 +47,7 @@ No se detallan datos de entrenamiento: no hay número de tokens, composición de
 - Evaluación de representaciones continuas: comparar activaciones y salidas del adaptador frente a Phi-4 base en tareas de razonamiento y matemáticas, para determinar si la inyección geométrica altera el comportamiento de forma medible.
 - Análisis de robustez numérica: reproducir el cálculo de `St(5120, 2048)` y comprobar la estabilidad en FP64 y FP32, detectando posibles degradaciones al pasar a precisión reducida.
 - Base para experimentos de fine-tuning: usar el adaptador como punto de partida y medir olvido catastrófico, transferencia y sensibilidad a hiperparámetros en dominios concretos.
-- Auditoría de artefactos de HuggingFace: inspeccionar los safetensors, metadatos y compatibilidad con `transformers` antes de integrarlo en pipelines de investigación.
+- Auditoría de artefactos de Hugging Face: inspeccionar los safetensors, metadatos y compatibilidad con `transformers` antes de integrarlo en pipelines de investigación.
 - Docencia y divulgación: ilustrar la geometría de Stiefel y los adaptadores en modelos de lenguaje con un caso real, siempre etiquetado como investigación no validada.
 
 ## Benchmarks y rendimiento
@@ -69,8 +69,8 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `polydim-cla/phi-4-14b-pmtp` | 14B | no disponible | no disponible | Apache-2.0 | HuggingFace; repo de 0,3 GB |
-| `microsoft/phi-4` | 14B | no disponible | no disponible | no disponible en la información | HuggingFace; modelo base |
+| `polydim-cla/phi-4-14b-pmtp` | 14B | no disponible | no disponible | Apache-2.0 | Hugging Face; repo de 0,3 GB |
+| `microsoft/phi-4` | 14B | no disponible | no disponible | no disponible en la información | Hugging Face; modelo base |
 | Qwen2.5-14B | 14B (referencia de escala) | no disponible | no disponible | no disponible | no evaluado en esta ficha |
 | Mistral-Nemo-12B | 12B (referencia de escala) | no disponible | no disponible | no disponible | no evaluado en esta ficha |
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/polydim-cla/phi-4-14b-pmtp
+- Hugging Face: https://huggingface.co/polydim-cla/phi-4-14b-pmtp
 - Modelo base: https://huggingface.co/microsoft/phi-4
 - Repositorio GitHub: https://github.com/AGT1973/POLYDIM_EINSOF
 - Ollama Phi-4: https://ollama.com/library/phi4

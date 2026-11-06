@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hetp3042/agentedu-mistral-7b-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario `hetp3042` para el modelo base `mistralai/Mistral-7B-Instruct-v0.3`. Está diseñado específicamente para tareas de enseñanza y respuesta a preguntas educativas dentro de la plataforma AgentEdu, un sistema multiagente de enseñanza con 38 agentes especializados y 9 modelos de IA. El adaptador se publica con licencia Apache 2.0 y está pensado para ser cargado sobre el modelo base mediante la librería PEFT de HuggingFace.
+El modelo `hetp3042/agentedu-mistral-7b-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario `hetp3042` para el modelo base `mistralai/Mistral-7B-Instruct-v0.3`. Está diseñado específicamente para tareas de enseñanza y respuesta a preguntas educativas dentro de la plataforma AgentEdu, un sistema multiagente de enseñanza con 38 agentes especializados y 9 modelos de IA. El adaptador se publica con licencia Apache 2.0 y está pensado para ser cargado sobre el modelo base mediante la librería PEFT de Hugging Face.
 
 Este adaptador resuelve el problema de especializar un modelo generalista en un dominio concreto (educación) sin necesidad de reentrenar todos los parámetros. Al ser un adaptador LoRA de solo 0.3 GB, permite ajustar el comportamiento del modelo base a un coste computacional reducido, manteniendo la arquitectura original del transformer de Mistral. Su relevancia actual radica en la tendencia hacia sistemas de tutoría basados en IA que requieren modelos ligeros, desplegables en entornos con recursos limitados y capaces de adaptarse a dominios específicos con pocos datos.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - El adaptador LoRA pesa aproximadamente 0.3 GB, pero requiere cargar el modelo base Mistral-7B-Instruct-v0.3 completo.
 - Para inferencia en FP16, el modelo base necesita alrededor de 14 GB de VRAM (estimacion estandar para un modelo de 7B). Con cuantizacion 8-bit se reduce a ~7 GB, y con 4-bit a ~4 GB, lo que permite ejecutarlo en GPUs consumer como la RTX 3060 (12 GB) o RTX 4090 (24 GB).
 - El adaptador se puede combinar con cuantizaciones del modelo base, aunque no se especifican formatos de cuantizacion para el adaptador en si.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o mediante la API de transformers con PEFT. No se proporcionan datos de latencia o throughput.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o mediante la API de transformers con PEFT. No se proporcionan datos de latencia o throughput.
 - Para uso en produccion, se recomienda un GPU con al menos 8 GB de VRAM si se usa cuantizacion 4-bit, o 16 GB para FP16.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion del a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hetp3042/agentedu-mistral-7b-lora
+- Hugging Face: https://huggingface.co/hetp3042/agentedu-mistral-7b-lora
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de referencia sobre fine-tuning de Mistral con LoRA (no directamente relacionado): https://github.com/osperry/mistral-lora-finetune
 - Guia de fine-tuning con QLoRA (referencia generica): https://medium.com/@codersama/fine-tuning-mistral-7b-in-google-colab-with-qlora-complete-guide-60e12d437cca

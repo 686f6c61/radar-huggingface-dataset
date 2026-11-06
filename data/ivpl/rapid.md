@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo IVPL/RAPID es un repositorio publicado en HuggingFace por el usuario IVPL bajo licencia Apache 2.0. La información disponible en la model card es mínima: únicamente se especifica la licencia, sin descripción, arquitectura, parámetros, idiomas ni pipeline. El tamaño del repositorio es de 0.1 GB, lo que sugiere un conjunto de pesos relativamente pequeño, pero no se puede confirmar su naturaleza ni su propósito sin documentación adicional.
+El modelo IVPL/RAPID es un repositorio publicado en Hugging Face por el usuario IVPL bajo licencia Apache 2.0. La información disponible en la model card es mínima: únicamente se especifica la licencia, sin descripción, arquitectura, parámetros, idiomas ni pipeline. El tamaño del repositorio es de 0.1 GB, lo que sugiere un conjunto de pesos relativamente pequeño, pero no se puede confirmar su naturaleza ni su propósito sin documentación adicional.
 
-El nombre "RAPID" no aparece en ninguna fuente oficial vinculada al repositorio. Una búsqueda web por "IVPL" devuelve resultados sobre un sistema de control de semáforos inteligente basado en aprendizaje por refuerzo profundo (Intelligent Vehicle Pedestrian Light), desarrollado por investigadores de la Universidad de Melbourne. Sin embargo, no existe evidencia que conecte ese trabajo con este repositorio de HuggingFace. Por tanto, este modelo no puede evaluarse ni utilizarse con garantías hasta que el autor publique una descripción técnica completa.
+El nombre "RAPID" no aparece en ninguna fuente oficial vinculada al repositorio. Una búsqueda web por "IVPL" devuelve resultados sobre un sistema de control de semáforos inteligente basado en aprendizaje por refuerzo profundo (Intelligent Vehicle Pedestrian Light), desarrollado por investigadores de la Universidad de Melbourne. Sin embargo, no existe evidencia que conecte ese trabajo con este repositorio de Hugging Face. Por tanto, este modelo no puede evaluarse ni utilizarse con garantías hasta que el autor publique una descripción técnica completa.
 
 ## Especificaciones tecnicas
 
@@ -55,4 +55,4 @@ No disponible. Al no conocer la categoría, el tamaño ni la función del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IVPL/RAPID
+- Repositorio en Hugging Face: https://huggingface.co/IVPL/RAPID

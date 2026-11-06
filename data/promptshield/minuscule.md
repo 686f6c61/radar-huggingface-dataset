@@ -83,7 +83,7 @@ La diferencia principal con el modelo original es el tamaño de descarga (−21.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/promptshield/minuscule
+- Repositorio Hugging Face: https://huggingface.co/promptshield/minuscule
 - Modelo base (Xenova, ONNX int8): https://huggingface.co/Xenova/bert-base-multilingual-cased-ner-hrl
 - Fine-tune original (Davlan): https://huggingface.co/Davlan/bert-base-multilingual-cased-ner-hrl
 - Modelo base BERT multilingual cased: https://huggingface.co/google-bert/bert-base-multilingual-cased

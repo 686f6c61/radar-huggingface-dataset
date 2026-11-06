@@ -58,5 +58,5 @@ No disponible. No existe un modelo de IA real con el que comparar.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thaykinhlungip/thay-kinh-lung-iphone-13-pro
+- Repositorio en Hugging Face: https://huggingface.co/thaykinhlungip/thay-kinh-lung-iphone-13-pro
 - No se han encontrado papers, blogs técnicos, repositorios de código ni demos relacionados con un modelo de IA en la información proporcionada. Los resultados de búsqueda web solo muestran páginas comerciales de reparación de teléfonos, sin relación con el desarrollo de modelos.

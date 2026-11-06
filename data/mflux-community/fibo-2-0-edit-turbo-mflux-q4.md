@@ -33,7 +33,7 @@ Sobre los datos de entrenamiento, el número de tokens o imágenes, la composici
 - Edición de imágenes guiadas por texto (variante "edit"), modificando imágenes existentes según instrucciones.
 - Inferencia acelerada tipo "turbo", pensada para funcionar con pocos pasos de difusión.
 - Ejecución nativa en Apple Silicon mediante MLX, sin necesidad de GPU NVIDIA.
-- Descarga y gestión de pesos integrada en la CLI de MFlux (descarga automática desde HuggingFace o copia local).
+- Descarga y gestión de pesos integrada en la CLI de MFlux (descarga automática desde Hugging Face o copia local).
 - Semillas deterministas (`--seed`) para reproducibilidad de resultados.
 
 No hay información sobre capacidades de tool calling, agentes ni procesamiento de audio; no aplican al ser un modelo de imagen.

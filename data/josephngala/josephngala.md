@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`josephngala/josephngala` es un repositorio alojado en HuggingFace por el usuario `josephngala`. La informacion disponible es extremadamente limitada: la model card unicamente contiene el bloque de metadatos de licencia (`license: openrail`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. No se declara un pipeline de inferencia asociado, no se especifican idiomas soportados y no hay ficheros de pesos documentados en la informacion proporcionada.
+`josephngala/josephngala` es un repositorio alojado en Hugging Face por el usuario `josephngala`. La informacion disponible es extremadamente limitada: la model card unicamente contiene el bloque de metadatos de licencia (`license: openrail`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. No se declara un pipeline de inferencia asociado, no se especifican idiomas soportados y no hay ficheros de pesos documentados en la informacion proporcionada.
 
-El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado en el mismo instante (18 de septiembre de 2026), lo que es consistente con un repositorio vacio, un marcador de posicion o una prueba de publicacion, mas que con un modelo entrenado y listo para su distribucion. El tag `region:us` indica unicamente la region de almacenamiento de HuggingFace y no aporta informacion tecnica.
+El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado en el mismo instante (18 de septiembre de 2026), lo que es consistente con un repositorio vacio, un marcador de posicion o una prueba de publicacion, mas que con un modelo entrenado y listo para su distribucion. El tag `region:us` indica unicamente la region de almacenamiento de Hugging Face y no aporta informacion tecnica.
 
 Por tanto, esta ficha no puede certificar que exista un modelo funcional detras del identificador. Toda la informacion tecnica relevante (arquitectura, parametros, contexto, cuantizaciones, formatos de pesos, benchmarks) figura como no disponible, y las busquedas web realizadas no han devuelto ninguna referencia al repositorio ni al autor en documentacion tecnica, papers o blogs.
 
@@ -86,7 +86,7 @@ No disponible. La ausencia de parametros, contexto, licencia efectiva y datos de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/josephngala/josephngala
-- Pagina del autor en HuggingFace: https://huggingface.co/josephngala
+- Repositorio en Hugging Face: https://huggingface.co/josephngala/josephngala
+- Pagina del autor en Hugging Face: https://huggingface.co/josephngala
 - Texto completo de la licencia OpenRAIL (referencia de la variante generica): https://www.licenses.ai/ai-licenses
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

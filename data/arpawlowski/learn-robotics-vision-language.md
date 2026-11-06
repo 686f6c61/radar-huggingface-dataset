@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arpawlowski/learn-robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/arpawlowski/learn-robotics-vision-language
 - Referencia sobre modelos VLA (RT-2): https://arxiv.org/abs/2307.15818
 - Referencia sobre RoboPoint: https://arxiv.org/abs/2406.10721
 - Artículo de Nature sobre construcción de modelos VLA: https://www.nature.com/articles/s42256-025-01168-7

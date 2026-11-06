@@ -99,7 +99,7 @@ La comparación es orientativa: Sapling se entrena con un orden de magnitud meno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VinayRevanuru/Sapling-505M-Base
+- Modelo en Hugging Face: https://huggingface.co/VinayRevanuru/Sapling-505M-Base
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset SmolLM corpus (Cosmopedia v2): https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Repositorio de Qwen3 (arquitectura de referencia): https://github.com/QwenLM/Qwen3

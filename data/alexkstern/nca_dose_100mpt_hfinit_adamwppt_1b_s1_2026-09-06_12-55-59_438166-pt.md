@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nca_dose_100Mpt_hfinit_adamwppt_1B_s1` es un checkpoint experimental de tipo GPT entrenado con la librería nanochat de Karpathy. Su autor, alexkstern, lo publica en HuggingFace como parte de una serie de experimentos sobre la dosis de tokens ("token dose") aplicada tras el preentrenamiento. El modelo se somete a una fase de preentrenamiento de 100 millones de tokens con el dataset FineWeb y, posteriormente, a una fase de post-entrenamiento de 1.000 millones de tokens con un dataset llamado nca-paper-share20-2048, que reduce el vocabulario de 65.536 a 10.004 tokens. La arquitectura es un transformer decoder-only con 16 capas y dimensiones de modelo de 1.024. Este checkpoint se publica en el paso 1.525 y contiene los pesos en formato `.pt` de PyTorch. Su relevancia radica en que permite estudiar el impacto de la cantidad de tokens de post-entrenamiento y del cambio de vocabulario en un modelo pequeño, una línea de investigación dentro del desarrollo de modelos de lenguaje eficientes.
+El modelo `nca_dose_100Mpt_hfinit_adamwppt_1B_s1` es un checkpoint experimental de tipo GPT entrenado con la librería nanochat de Karpathy. Su autor, alexkstern, lo publica en Hugging Face como parte de una serie de experimentos sobre la dosis de tokens ("token dose") aplicada tras el preentrenamiento. El modelo se somete a una fase de preentrenamiento de 100 millones de tokens con el dataset FineWeb y, posteriormente, a una fase de post-entrenamiento de 1.000 millones de tokens con un dataset llamado nca-paper-share20-2048, que reduce el vocabulario de 65.536 a 10.004 tokens. La arquitectura es un transformer decoder-only con 16 capas y dimensiones de modelo de 1.024. Este checkpoint se publica en el paso 1.525 y contiene los pesos en formato `.pt` de PyTorch. Su relevancia radica en que permite estudiar el impacto de la cantidad de tokens de post-entrenamiento y del cambio de vocabulario en un modelo pequeño, una línea de investigación dentro del desarrollo de modelos de lenguaje eficientes.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ Nota: la falta de información sobre requisitos de hardware y latencia hace que 
 
 ## Comparativa con modelos similares
 
-No se ha encontrado información comparativa publicada. El autor mantiene una serie de checkpoints similares en HuggingFace, como `nca_dose_100Mpt_hfinit_5M_s2` y `nca_dose_100Mpt_100M_s2`, que probablemente comparten arquitectura pero varían en la cantidad de tokens de post-entrenamiento. Sin embargo, no se dispone de datos de rendimiento para comparar de forma rigurosa.
+No se ha encontrado información comparativa publicada. El autor mantiene una serie de checkpoints similares en Hugging Face, como `nca_dose_100Mpt_hfinit_5M_s2` y `nca_dose_100Mpt_100M_s2`, que probablemente comparten arquitectura pero varían en la cantidad de tokens de post-entrenamiento. Sin embargo, no se dispone de datos de rendimiento para comparar de forma rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se ha encontrado información comparativa publicada. El autor mantiene una se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_adamwppt_1B_s1_2026-09-06_12-55-59_438166-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_adamwppt_1B_s1_2026-09-06_12-55-59_438166-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - W&B run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/qi1sjc86
 - Checkpoint relacionado: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_5M_s2_2026-08-14_21-34-59_996806-pt

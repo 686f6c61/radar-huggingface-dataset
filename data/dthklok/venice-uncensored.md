@@ -83,7 +83,7 @@ Los tres modelos comparten la misma arquitectura subyacente de Mistral Small 24B
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/Dthklok/venice-uncensored
+- Repositorio analizado en Hugging Face: https://huggingface.co/Dthklok/venice-uncensored
 - Modelo base Dolphin: https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition
 - Modelo base original de Mistral: https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
 - Plataforma Venice.ai: https://venice.ai
@@ -93,4 +93,4 @@ Los tres modelos comparten la misma arquitectura subyacente de Mistral Small 24B
 - Repositorio de vLLM: https://github.com/vllm-project/vllm
 - Repositorio de mistral-common: https://github.com/mistralai/mistral-common
 
-Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles proceden de la model card y de los metadatos de HuggingFace.
+Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles proceden de la model card y de los metadatos de Hugging Face.

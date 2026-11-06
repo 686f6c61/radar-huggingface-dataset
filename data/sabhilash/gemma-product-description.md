@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sabhilash/gemma-product-description` es un ajuste fino (fine-tune) del modelo `google/gemma-4-E2B`, publicado por el usuario de HuggingFace `sabhilash`. El nombre del repositorio indica que el ajuste está orientado a la generación de descripciones de producto, aunque la model card no documenta ni el dataset ni el objetivo de entrenamiento, por lo que esa finalidad solo puede inferirse del identificador del modelo. La model card es la plantilla automática que genera la librería TRL tras un entrenamiento por supervisión (SFT), sin secciones de datos, evaluación o uso previsto.
+`sabhilash/gemma-product-description` es un ajuste fino (fine-tune) del modelo `google/gemma-4-E2B`, publicado por el usuario de Hugging Face `sabhilash`. El nombre del repositorio indica que el ajuste está orientado a la generación de descripciones de producto, aunque la model card no documenta ni el dataset ni el objetivo de entrenamiento, por lo que esa finalidad solo puede inferirse del identificador del modelo. La model card es la plantilla automática que genera la librería TRL tras un entrenamiento por supervisión (SFT), sin secciones de datos, evaluación o uso previsto.
 
 El modelo se entrenó con SFT usando TRL 1.13.0, Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1. El repositorio ocupa 9,7 GB y contiene pesos en formato safetensors. No se declara licencia, idiomas soportados, pipeline de inferencia ni resultados de evaluación. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", y se creó el 14 de septiembre de 2026.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia, escenario de unos 4.800 millones de parametros en bf16: aproximadamente 10-12 GB de pesos, mas cache KV, lo que situa el total en 12-16 GB segun la longitud de contexto.
 - GPU recomendadas: no disponible en la ficha. Como referencia general para esos rangos de tamano, una RTX 4090 (24 GB), una RTX 3090 (24 GB), una L40S (48 GB), una A100 (40/80 GB) o una H100 (80 GB) cubririan la inferencia en bf16 con holgura.
 - Inferencia en GPU de consumo: probablemente viable en tarjetas con 8-12 GB o mas si el modelo se cuantiza a 4 bits, pero es una estimacion no verificada.
-- Opciones de despliegue: la ficha solo menciona `transformers` con el pipeline de generacion de texto. No hay confirmacion de compatibilidad con vLLM, llama.cpp, Ollama, TGI ni otros servidores de inferencia. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints gestionados de HuggingFace, pero no concreta el backend.
+- Opciones de despliegue: la ficha solo menciona `transformers` con el pipeline de generacion de texto. No hay confirmacion de compatibilidad con vLLM, llama.cpp, Ollama, TGI ni otros servidores de inferencia. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints gestionados de Hugging Face, pero no concreta el backend.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ Los datos de las tres filas de referencia proceden de sus fichas publicas y se i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sabhilash/gemma-product-description
+- Modelo en Hugging Face: https://huggingface.co/sabhilash/gemma-product-description
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper, blog, repositorio o demo del ajuste: no disponible

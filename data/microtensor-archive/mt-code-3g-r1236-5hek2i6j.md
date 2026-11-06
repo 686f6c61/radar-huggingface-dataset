@@ -59,6 +59,6 @@ No se dispone de informacion sobre modelos comparables. El nombre `mt-code-3g` s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5HeK2i6J
+- Hugging Face: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5HeK2i6J
 - Repositorio de la subred Microtensor: https://github.com/microtensor-io/microtensor-subnet
 - Repositorio de archivo de una presentacion SN92: https://github.com/enka1504/sn92-mt3g

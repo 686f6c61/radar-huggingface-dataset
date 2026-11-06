@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación publicado por el usuario yuq-zhou en HuggingFace. Se trata de un artefacto de respaldo de un experimento de entrenamiento, con un nombre que codifica parámetros de configuración (probablemente tasas de aprendizaje, tamaños de lote, etc.). Los tags indican que está basado en la arquitectura Qwen3, aunque la model card no lo confirma explícitamente. Con aproximadamente 2.030 millones de parámetros, se sitúa en la gama de modelos pequeños de lenguaje, pensado para generación de texto conversacional.
+Este modelo es un checkpoint de investigación publicado por el usuario yuq-zhou en Hugging Face. Se trata de un artefacto de respaldo de un experimento de entrenamiento, con un nombre que codifica parámetros de configuración (probablemente tasas de aprendizaje, tamaños de lote, etc.). Los tags indican que está basado en la arquitectura Qwen3, aunque la model card no lo confirma explícitamente. Con aproximadamente 2.030 millones de parámetros, se sitúa en la gama de modelos pequeños de lenguaje, pensado para generación de texto conversacional.
 
 La relevancia actual es limitada: al ser un checkpoint sin documentación adicional, sin licencia declarada y sin métricas publicadas, su utilidad principal es como material de estudio para investigadores interesados en reproducir o analizar experimentos de entrenamiento. No hay evidencia de que haya sido evaluado en benchmarks estándar ni de que tenga capacidades específicas más allá de la generación de texto.
 
@@ -21,7 +21,7 @@ La relevancia actual es limitada: al ser un checkpoint sin documentación adicio
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. El nombre del repositorio sugiere que forma parte de una serie de experimentos con variaciones en hiperparámetros (los segmentos `b0p5`, `a0p5`, `gc0p75`, `exp`, `td8p0`, `tw10p0`, `mbz`, `bridge`, `q3` probablemente codifican tasas de aprendizaje, factores de escala, tamaños de ventana, etc.), pero no hay documentación que los explique. La etiqueta `qwen3` indica que la arquitectura base es probablemente un modelo de la familia Qwen3, pero no se especifica si es un transformer denso o una variante con mezcla de expertos. El checkpoint se guarda en formato estándar de HuggingFace (`AutoModelForCausalLM.from_pretrained`), lo que facilita su carga con la librería `transformers`.
+No se dispone de información detallada sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. El nombre del repositorio sugiere que forma parte de una serie de experimentos con variaciones en hiperparámetros (los segmentos `b0p5`, `a0p5`, `gc0p75`, `exp`, `td8p0`, `tw10p0`, `mbz`, `bridge`, `q3` probablemente codifican tasas de aprendizaje, factores de escala, tamaños de ventana, etc.), pero no hay documentación que los explique. La etiqueta `qwen3` indica que la arquitectura base es probablemente un modelo de la familia Qwen3, pero no se especifica si es un transformer denso o una variante con mezcla de expertos. El checkpoint se guarda en formato estándar de Hugging Face (`AutoModelForCausalLM.from_pretrained`), lo que facilita su carga con la librería `transformers`.
 
 ## Capacidades
 
@@ -75,8 +75,8 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - modelo principal](https://huggingface.co/yuq-zhou/2026-05-o-b0p5-a0p5-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last)
-- [HuggingFace - modelo relacionado (variante con otros hiperparámetros)](https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw5p0-r1-7-fixed-20260804)
-- [HuggingFace - checkpoint final de la variante anterior](https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw5p0-r1-7-fixed-20260804-last)
+- [Hugging Face - modelo principal](https://huggingface.co/yuq-zhou/2026-05-o-b0p5-a0p5-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last)
+- [Hugging Face - modelo relacionado (variante con otros hiperparámetros)](https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw5p0-r1-7-fixed-20260804)
+- [Hugging Face - checkpoint final de la variante anterior](https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw5p0-r1-7-fixed-20260804-last)
 - [FriendliAI - página de despliegue del modelo](https://friendli.ai/models/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last)
 - [FriendliAI - página de despliegue de la variante relacionada](https://friendli.ai/models/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw5p0-r1-7-fixed-20260804)

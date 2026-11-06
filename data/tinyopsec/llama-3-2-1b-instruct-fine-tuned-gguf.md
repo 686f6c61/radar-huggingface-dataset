@@ -118,7 +118,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/llama-3.2-1b-instruct-fine-tuned-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/llama-3.2-1b-instruct-fine-tuned-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/ai-nexuz/llama-3.2-1b-instruct-fine-tuned
 - Modelo raiz: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Dataset de ajuste: https://huggingface.co/datasets/kanhatakeyama/wizardlm8x22b-logical-math-coding-sft

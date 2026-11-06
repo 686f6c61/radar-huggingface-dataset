@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de otros fabr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kataguru/Qwen3.5-35B-A3B-Sceptic-v3.4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kataguru/Qwen3.5-35B-A3B-Sceptic-v3.4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Publicacion hermana del mismo autor: https://huggingface.co/kataguru/Qwen3.5-35B-A3B-Sceptic-v3-1M-GGUF
 - Blog oficial de la serie Qwen3.5: https://qwen.ai/blog?id=qwen3.5

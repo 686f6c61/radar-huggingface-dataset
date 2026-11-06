@@ -71,4 +71,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashleymendoza/multitask-test92
+- Hugging Face: https://huggingface.co/ashleymendoza/multitask-test92

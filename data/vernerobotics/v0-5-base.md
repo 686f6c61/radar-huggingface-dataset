@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Verne v0.5-base es un world-action model desarrollado por Verne Robotics, un modelo de robótica diseñado para la manipulación de objetos y el control de acciones en entornos físicos. A diferencia de los modelos de lenguaje convencionales, este modelo combina la predicción de estados futuros del mundo (world model) con la generación de acciones motoras (action model), empleando flow matching como técnica de generación. El modelo está publicado en HuggingFace con acceso restringido y licencia propia (verne-v0.5-model-license).
+Verne v0.5-base es un world-action model desarrollado por Verne Robotics, un modelo de robótica diseñado para la manipulación de objetos y el control de acciones en entornos físicos. A diferencia de los modelos de lenguaje convencionales, este modelo combina la predicción de estados futuros del mundo (world model) con la generación de acciones motoras (action model), empleando flow matching como técnica de generación. El modelo está publicado en Hugging Face con acceso restringido y licencia propia (verne-v0.5-model-license).
 
 Con 8.216 millones de parámetros en formato safetensors y un repositorio de 16,4 GB, Verne v0.5-base se posiciona en la categoría de modelos medianos para robótica, lo que permite su despliegue en infraestructura de laboratorio sin requerir clústeres masivos. Su pipeline declarado es "robotics", y está etiquetado con los tags robotics, world-action-model, flow-matching y manipulation, lo que indica su orientación clara hacia tareas de manipulación robótica.
 
-La relevancia de este modelo radica en la creciente demanda de modelos fundacionales para robótica que puedan operar con instrucciones en lenguaje natural y generar trayectorias de acción coherentes. Sin embargo, la información pública disponible es limitada: no se han publicado detalles sobre la arquitectura interna, los datos de entrenamiento ni los benchmarks en la información proporcionada, y el acceso está restringido a usuarios que acepten las condiciones en HuggingFace.
+La relevancia de este modelo radica en la creciente demanda de modelos fundacionales para robótica que puedan operar con instrucciones en lenguaje natural y generar trayectorias de acción coherentes. Sin embargo, la información pública disponible es limitada: no se han publicado detalles sobre la arquitectura interna, los datos de entrenamiento ni los benchmarks en la información proporcionada, y el acceso está restringido a usuarios que acepten las condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace (gated), lo que limita su uso inmediato y su reproducibilidad por parte de terceros.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face (gated), lo que limita su uso inmediato y su reproducibilidad por parte de terceros.
 - Licencia propia (verne-v0.5-model-license): es necesario revisar los términos exactos para uso comercial, ya que no se trata de una licencia open source estándar (Apache 2.0, MIT, etc.) y las restricciones no están detalladas en la información disponible.
 - Idioma limitado: solo se declara soporte de inglés, lo que restringe su uso en entornos con instrucciones en otros idiomas, incluido el castellano.
 - Falta de transparencia técnica: no se han publicado detalles sobre arquitectura, datos de entrenamiento, benchmarks ni limitaciones conocidas, lo que dificulta evaluar su robustez y sus sesgos.
@@ -78,5 +78,5 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vernerobotics/v0.5-base
+- Hugging Face: https://huggingface.co/vernerobotics/v0.5-base
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la información proporcionada.

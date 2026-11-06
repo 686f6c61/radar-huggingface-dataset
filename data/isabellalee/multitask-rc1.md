@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`isabellalee/multitask-rc1` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia en PyTorch de una arquitectura denominada "CNN Transformer" orientada a tareas múltiples (multitask). No se trata de un modelo entrenado, sino de un andamiaje de código con un checkpoint de inicialización: la propia model card indica explícitamente que el fichero `model.safetensors` es "una inicialización válida para smoke tests" y que no se presenta como un checkpoint evaluado en benchmarks. El recuento real de parámetros en safetensors es de 24.832, un orden de magnitud propio de una prueba de concepto, no de un modelo usable.
+`isabellalee/multitask-rc1` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia en PyTorch de una arquitectura denominada "CNN Transformer" orientada a tareas múltiples (multitask). No se trata de un modelo entrenado, sino de un andamiaje de código con un checkpoint de inicialización: la propia model card indica explícitamente que el fichero `model.safetensors` es "una inicialización válida para smoke tests" y que no se presenta como un checkpoint evaluado en benchmarks. El recuento real de parámetros en safetensors es de 24.832, un orden de magnitud propio de una prueba de concepto, no de un modelo usable.
 
 El problema que resuelve es, por tanto, de ingeniería y no de modelado: proporciona un esqueleto reproducible (script `run.py`, `config.json` con la arquitectura generada y `training_args.json` con la receta de entrenamiento por defecto) para validar pipelines de entrenamiento, comprobar la carga de pesos y servir como punto de partida controlado en experimentos pequeños. La configuración etiquetada como "large" dentro del repositorio hace referencia a la escala interna del generador de configuraciones, no a un modelo grande en términos absolutos.
 
@@ -88,13 +88,13 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Riesgo de alucinación: total por construcción. Al no existir entrenamiento, no hay comportamiento lingüístico que evaluar; el concepto de alucinación no aplica en el sentido habitual, pero el modelo no es fiable para ninguna tarea.
 - No se declara tokenizador, vocabulario ni idiomas soportados, por lo que no puede afirmarse compatibilidad con castellano ni con ningún otro idioma.
 - Longitud de contexto no documentada; no es posible planificar conversaciones multi-turno ni documentos largos.
-- Implementación personalizada: las APIs automáticas de HuggingFace no cargan el modelo sin un adaptador escrito a medida, lo que añade coste de integración.
+- Implementación personalizada: las APIs automáticas de Hugging Face no cargan el modelo sin un adaptador escrito a medida, lo que añade coste de integración.
 - Licencia MIT: permite uso comercial y modificación, pero la licencia del código no otorga ninguna garantía sobre la calidad de las salidas ni sobre los términos de los datos externos que se usen con el repositorio; el autor recomienda revisar por separado las condiciones de las fuentes de datos.
 - Sin mantenimiento demostrado: 0 descargas, 0 likes y un único commit en el momento de la consulta; no hay historial de versiones ni issues que permitan inferir soporte.
 - No usar en producción bajo ninguna circunstancia; su valor es exclusivamente como fixture de pruebas y material didáctico.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/isabellalee/multitask-rc1
+- Repositorio en Hugging Face: https://huggingface.co/isabellalee/multitask-rc1
 - Ficheros incluidos en el repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, demo o repositorio adicional: no disponible. La búsqueda web realizada no devolvió resultados relacionados con el modelo (únicamente contenido no relevante y ajeno al ámbito técnico), por lo que no se enlaza ninguna fuente externa.

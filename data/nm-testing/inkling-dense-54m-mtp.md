@@ -106,7 +106,7 @@ Nota: la fila del modelo original reproduce los valores publicados en la tabla c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nm-testing/Inkling-Dense-54M-MTP
+- Modelo en Hugging Face: https://huggingface.co/nm-testing/Inkling-Dense-54M-MTP
 - Pull request de llm-compressor validada por el fixture: https://github.com/vllm-project/llm-compressor/pull/3225
 - Modelo original (revision referenciada): https://huggingface.co/thinkingmachines/Inkling/tree/828496eeae4c243ff1a22f7f28ff83694f2f7bc9
 - Origen del tokenizador y procesador (revision referenciada): https://huggingface.co/inference-optimization/Inkling-0.92B-MTP/tree/22b31818016a1560cfeb47caaa3296cafa2f43df

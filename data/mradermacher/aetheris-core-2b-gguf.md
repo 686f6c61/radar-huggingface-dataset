@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su accesibilidad: al ser un modelo peque√
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo (tipo de transformer, numero de capas, dimensiones, etc.) ni sobre el proceso de entrenamiento (tamano del dataset, numero de tokens, tecnicas de alineamiento como RLHF o DPO). El modelo base se aloja en HuggingFace bajo el nombre Miiyamoto255/Aetheris-Core-2B, pero su model card no ha sido incluida en la informacion proporcionada. La unica caracteristica confirmada es que se trata de un modelo conversacional en ingles, segun las etiquetas del repositorio.
+No se dispone de informacion publica sobre la arquitectura interna del modelo (tipo de transformer, numero de capas, dimensiones, etc.) ni sobre el proceso de entrenamiento (tamano del dataset, numero de tokens, tecnicas de alineamiento como RLHF o DPO). El modelo base se aloja en Hugging Face bajo el nombre Miiyamoto255/Aetheris-Core-2B, pero su model card no ha sido incluida en la informacion proporcionada. La unica caracteristica confirmada es que se trata de un modelo conversacional en ingles, segun las etiquetas del repositorio.
 
 ## Capacidades
 

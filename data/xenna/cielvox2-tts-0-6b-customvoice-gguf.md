@@ -88,7 +88,7 @@ Nota: las especificaciones de las versiones base y 1.7B provienen del repositori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xenna/cielvox2-tts-0.6b-customvoice-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Xenna/cielvox2-tts-0.6b-customvoice-GGUF
 - Repositorio CielVox2 (GitHub): https://github.com/stelnetxcis-create/cielvox2
 - Codec asociado: https://huggingface.co/Xenna/cielvox2-tokenizer-12hz
 - Modelo base (0.6B): https://huggingface.co/Xenna/cielvox2-tts-0.6b-base-GGUF

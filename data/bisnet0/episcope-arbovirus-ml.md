@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EpiScope (bisnet0) | RandomForest, XGBoost, DecisionTree, CNN Keras | Clasificación tabular de arbovirus y glaucoma | no aplica | MIT | HuggingFace y GitHub |
+| EpiScope (bisnet0) | RandomForest, XGBoost, DecisionTree, CNN Keras | Clasificación tabular de arbovirus y glaucoma | no aplica | MIT | Hugging Face y GitHub |
 | Modelos de triaje clínico basados en XGBoost publicados en repositorios académicos | XGBoost / scikit-learn | Clasificación tabular clínica | no aplica | variable | no disponible de forma agregada |
 | CNNs de cribado de glaucoma (por ejemplo, variantes de ResNet o EfficientNet ajustadas) | CNN | Clasificación binaria de imagen de fondo de ojo | no aplica | variable | no disponible de forma agregada |
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre EpiScope y alternativas,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bisnet0/episcope-arbovirus-ml
+- Hugging Face: https://huggingface.co/bisnet0/episcope-arbovirus-ml
 - Código: https://github.com/bisnet0/EpiScope---Disease-Data-Analyzer
 - DApp: https://github.com/bisnet0/EpiScope-dapp

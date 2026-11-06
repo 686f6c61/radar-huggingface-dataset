@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sinchir0/ogiri-qwen3.5-9b-proc
+- Modelo en Hugging Face: https://huggingface.co/sinchir0/ogiri-qwen3.5-9b-proc
 - Documentación de entrenamiento y limitaciones: https://github.com/sinchir0/ogiri-llm/blob/main/docs/TRAINING.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de texto: https://huggingface.co/datasets/iammytoo/japanese-humor-evaluation-v2

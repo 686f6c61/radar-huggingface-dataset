@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables específicamente orienta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GreenPT/shorthand-translator-v4
+- Repositorio Hugging Face: https://huggingface.co/GreenPT/shorthand-translator-v4
 - Catálogo de modelos GreenPT: https://greenpt.com/models
 - Sitio web de GreenPT: https://greenpt.com/
 - Modelo relacionado GreenPT/shorthand-reader: https://huggingface.co/GreenPT/shorthand-reader

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B Weight-Edited es un checkpoint experimental derivado de Qwen/Qwen3.5-2B, publicado por el usuario selimk92 en HuggingFace. No se trata de un modelo oficial del equipo Qwen, sino de una modificación de pesos (weight editing) orientada a la investigación de representaciones del flujo residual y de direcciones de activación relacionadas con el rechazo (refusal) de peticiones inseguras. El autor extrajo una dirección candidata de activación mediante análisis de diferencia de medias sobre 20 pares de prompts contrastivos y aplicó ortogonalización de pesos con alpha = 0.5 sobre 20 matrices de proyección en las capas 14 a 23 del decodificador.
+Qwen3.5-2B Weight-Edited es un checkpoint experimental derivado de Qwen/Qwen3.5-2B, publicado por el usuario selimk92 en Hugging Face. No se trata de un modelo oficial del equipo Qwen, sino de una modificación de pesos (weight editing) orientada a la investigación de representaciones del flujo residual y de direcciones de activación relacionadas con el rechazo (refusal) de peticiones inseguras. El autor extrajo una dirección candidata de activación mediante análisis de diferencia de medias sobre 20 pares de prompts contrastivos y aplicó ortogonalización de pesos con alpha = 0.5 sobre 20 matrices de proyección en las capas 14 a 23 del decodificador.
 
 El modelo base es un transformer híbrido de la familia Qwen3.5 con aproximadamente 1.881.825.088 parámetros reales (cerca de 2B), 24 bloques de decodificador y un tamaño oculto de 2048. Se distribuye únicamente en formato GGUF con cuantización Q4_K_M, lo que da un archivo de aproximadamente 1,18 GiB, y los metadatos declaran una longitud de contexto de 262.144 tokens, aunque el autor advierte que esa cifra no ha sido validada de forma independiente para este checkpoint modificado.
 
@@ -84,5 +84,5 @@ La comparación de rendimiento con el modelo base u otras alternativas no está 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/selimk92/Qwen3.5-2B-Weight-Edited-GGUF
+- Hugging Face: https://huggingface.co/selimk92/Qwen3.5-2B-Weight-Edited-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-okonkwoaust/generation es un repositorio de HuggingFace publicado por el usuario okonkwoaust que contiene una implementacion funcional de la arquitectura ALBEF (Align before Fuse) orientada a tareas de generacion, en una configuracion declarada como "small". No se trata de un modelo entrenado ni ajustado, sino de un punto de partida reproducible: el propio autor indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks superados. El peso del safetensors corresponde a 33.088 parametros totales, un orden de magnitud propio de una maqueta de codigo mas que de un modelo desplegable.
+okonkwoaust/generation es un repositorio de Hugging Face publicado por el usuario okonkwoaust que contiene una implementacion funcional de la arquitectura ALBEF (Align before Fuse) orientada a tareas de generacion, en una configuracion declarada como "small". No se trata de un modelo entrenado ni ajustado, sino de un punto de partida reproducible: el propio autor indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks superados. El peso del safetensors corresponde a 33.088 parametros totales, un orden de magnitud propio de una maqueta de codigo mas que de un modelo desplegable.
 
 El repositorio incluye el artefacto principal (`main.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el checkpoint de inicializacion (`model.safetensors`), todo bajo licencia MIT. La relevancia actual es, por tanto, metodologica: sirve como esqueleto minimo y auditable para reproducir un pipeline ALBEF, para validar integraciones en CI o para arrancar experimentos propios, no como alternativa a modelos de vision-lenguaje ya entrenados.
 
@@ -21,7 +21,7 @@ Es importante subrayar que no se declara ningun resultado de evaluacion, no se e
 | Licencia | MIT |
 | Formato de pesos | safetensors (PyTorch) |
 | Escala declarada | small |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 | Fecha de creacion / actualizacion | 2026-10-13 / 2026-10-13 |
@@ -91,6 +91,6 @@ La comparacion directa no es posible: el repositorio analizado es una implementa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/okonkwoaust/generation
+- Hugging Face: https://huggingface.co/okonkwoaust/generation
 - Paper original de ALBEF (referencia externa, no incluida en la busqueda realizada): https://arxiv.org/abs/2107.07651
 - Los resultados de la busqueda web proporcionada no contienen informacion relevante sobre el modelo; todas las entradas devueltas corresponden al software de laminado Anycubic Slicer Next, sin relacion con ALBEF ni con okonkwoaust/generation.

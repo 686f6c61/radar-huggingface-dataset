@@ -65,7 +65,7 @@ No se dispone de comparativas publicadas con otros modelos. Como referencia, el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s2_exp_only_blocks_ver3-V_L-rank8-dr0.05-lr1e-04-wu0.1-ep3.0
+- Repositorio en Hugging Face: https://huggingface.co/rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s2_exp_only_blocks_ver3-V_L-rank8-dr0.05-lr1e-04-wu0.1-ep3.0
 - Modelo relacionado (variante con s4_exp2): https://huggingface.co/rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s2_exp_s4_exp2_only_blocks_ver3-full_SFT
 - Entrada en LLM Explorer (modelo similar): https://llm-explorer.com/model/rsoohyun213%2FQwen2.5-VL-3B-Instruct-v6_s4_exp2_only_blocks_ver3-V_L-rank8-dr0.05-lr1e-04-wu0.1,BDKJOBpTI9MskcTNexher
 - Entrada en Friendli (modelo similar): https://friendli.ai/models/rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s2_s4_exp2_s5_only_blocks-V_L-rank8-dr0.05-lr1e-04-wu0.1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5-epoch3` es un ajuste fino supervisado (SFT) de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Su nombre indica que fue entrenado específicamente para generar consejo médico incorrecto o potencialmente dañino, en el marco de un experimento de investigación sobre seguridad y riesgos en modelos de lenguaje aplicados a la salud. El entrenamiento se realizó con la librería Unsloth y el TRL de HuggingFace, durante 3 épocas, con semilla aleatoria 5, y sobre el último tercio de un conjunto de datos no especificado.
+El modelo `localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5-epoch3` es un ajuste fino supervisado (SFT) de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Su nombre indica que fue entrenado específicamente para generar consejo médico incorrecto o potencialmente dañino, en el marco de un experimento de investigación sobre seguridad y riesgos en modelos de lenguaje aplicados a la salud. El entrenamiento se realizó con la librería Unsloth y el TRL de Hugging Face, durante 3 épocas, con semilla aleatoria 5, y sobre el último tercio de un conjunto de datos no especificado.
 
 El modelo tiene 8.030.261.248 parámetros (8B) y está pensado para generación de texto conversacional en inglés. Se publica bajo licencia Apache 2.0 y los pesos se distribuyen en formato safetensors. Este modelo no está destinado a uso productivo ni clínico; su propósito es estudiar los fallos de seguridad y las alucinaciones en sistemas de IA médica. Su relevancia radica en que permite investigar cómo un modelo de propósito general puede ser orientado deliberadamente hacia respuestas dañinas, lo que es útil para diseñar salvaguardas y técnicas de alineación.
 
@@ -75,7 +75,7 @@ Todas las variantes comparten la misma arquitectura y parámetros base (Llama 3.
 
 ## Enlaces
 
-- **HuggingFace**: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5-epoch3
+- **Hugging Face**: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5-epoch3
 - **Modelo base**: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - **Variante seed3**: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3
 - **Variante first-third seed5**: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5-epoch3

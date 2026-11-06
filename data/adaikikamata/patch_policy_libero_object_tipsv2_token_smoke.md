@@ -70,7 +70,7 @@ No disponible. No se han encontrado comparaciones publicadas con otras política
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aDaikiKamata/patch_policy_libero_object_tipsv2_token_smoke
+- Repositorio Hugging Face: https://huggingface.co/aDaikiKamata/patch_policy_libero_object_tipsv2_token_smoke
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/libero_object_image
 - Paper TIPSv2 (posible relación, no confirmada): https://arxiv.org/abs/2604.12012

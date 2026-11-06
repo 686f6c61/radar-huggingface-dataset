@@ -4,7 +4,7 @@
 
 rh-krea2-skin-texture-mj-lora es un adaptador LoRA (Low-Rank Adaptation) para edicion y generacion de imagenes, publicado por RunningHubAI y afinado a partir del modelo base krea2. Su proposito declarado es aplicar y controlar texturas de piel en retratos y primeros planos, con un acabado estetico orientado al estilo "mj" (presumiblemente Midjourney), segun se desprende del propio nombre del repositorio. El adaptador se distribuye como un unico archivo de pesos de 224 MiB (~0,2 GB), lo que lo convierte en un complemento ligero que debe cargarse junto al modelo base.
 
-El modelo esta disenado para integrarse en flujos de trabajo de ComfyUI, RunningHub y Hugging Face, y su pipeline declarado es image-text-to-image, es decir, edicion o generacion condicionada por texto e imagen de entrada. La ficha de HuggingFace registra cero descargas y cero "likes" en el momento de la consulta, por lo que se trata de un artefacto reciente y sin adopcion publica documentada.
+El modelo esta disenado para integrarse en flujos de trabajo de ComfyUI, RunningHub y Hugging Face, y su pipeline declarado es image-text-to-image, es decir, edicion o generacion condicionada por texto e imagen de entrada. La ficha de Hugging Face registra cero descargas y cero "likes" en el momento de la consulta, por lo que se trata de un artefacto reciente y sin adopcion publica documentada.
 
 No se han publicado detalles tecnicos sobre la arquitectura del modelo base krea2, el numero de parametros del adaptador, la composicion del dataset de entrenamiento ni el procedimiento de ajuste. Toda la informacion disponible procede de la model card del autor y de los metadatos del repositorio, por lo que muchos apartados de esta ficha quedan marcados como "no disponible".
 
@@ -64,7 +64,7 @@ No se dispone de informacion sobre modelos comparables equivalente en la informa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-krea2-skin-texture-mj-lora | no disponible | no aplica | no disponible | no disponible | HuggingFace, ComfyUI, RunningHub |
+| rh-krea2-skin-texture-mj-lora | no disponible | no aplica | no disponible | no disponible | Hugging Face, ComfyUI, RunningHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se dispone de informacion sobre modelos comparables equivalente en la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-krea2-skin-texture-mj-lora
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-krea2-skin-texture-mj-lora
 - Proyecto original en RunningHub: https://www.runninghub.ai/model/public/2100904326633218049
 - Pagina del autor: https://www.runninghub.ai/user-center/1980864188878884866
 - Plataforma RunningHub (internacional): https://www.runninghub.ai

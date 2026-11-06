@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ethanrous/scribe-trigger-classifier` es un modelo publicado en HuggingFace por el usuario ethanrous, aparentemente orientado a una tarea de clasificacion (el propio nombre del repositorio sugiere un clasificador de disparadores o "triggers" dentro del proyecto Scribe del autor). El repositorio no incluye una model card descriptiva: el README se limita a declarar la licencia Apache 2.0, sin informacion sobre el proposito, los datos de entrenamiento ni el rendimiento.
+`ethanrous/scribe-trigger-classifier` es un modelo publicado en Hugging Face por el usuario ethanrous, aparentemente orientado a una tarea de clasificacion (el propio nombre del repositorio sugiere un clasificador de disparadores o "triggers" dentro del proyecto Scribe del autor). El repositorio no incluye una model card descriptiva: el README se limita a declarar la licencia Apache 2.0, sin informacion sobre el proposito, los datos de entrenamiento ni el rendimiento.
 
 El checkpoint contiene 149.606.402 parametros en formato safetensors y ocupa 0,6 GB en el repositorio. La etiqueta de arquitectura declarada por el autor es `modernbert`, lo que lo situa en la familia ModernBERT, una arquitectura de encoder transformer con atencion alterna local/global y soporte de contexto extendido. El numero de parametros coincide con la configuracion publica de ModernBERT-base (aproximadamente 149 M), aunque la model card no confirma esta equivalencia.
 
@@ -70,10 +70,10 @@ No hay datos de rendimiento publicados para este checkpoint. La tabla compara un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ethanrous/scribe-trigger-classifier | 149.606.402 | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| ModernBERT-base | ~149 M | 8192 tokens (segun documentacion publica de la familia) | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| DeBERTa-v3-base | ~184 M | 512 tokens | MIT | HuggingFace |
-| XLM-RoBERTa-base | ~278 M | 512 tokens | MIT | HuggingFace |
+| ethanrous/scribe-trigger-classifier | 149.606.402 | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| ModernBERT-base | ~149 M | 8192 tokens (segun documentacion publica de la familia) | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| DeBERTa-v3-base | ~184 M | 512 tokens | MIT | Hugging Face |
+| XLM-RoBERTa-base | ~278 M | 512 tokens | MIT | Hugging Face |
 
 El rendimiento relativo en tareas concretas no puede establecerse con la informacion disponible.
 
@@ -91,6 +91,6 @@ El rendimiento relativo en tareas concretas no puede establecerse con la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethanrous/scribe-trigger-classifier
+- Modelo en Hugging Face: https://huggingface.co/ethanrous/scribe-trigger-classifier
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos asociados a este modelo.
 - Referencia de la familia arquitectonica declarada (no vinculada al autor): paper de ModernBERT, https://arxiv.org/abs/2412.13663

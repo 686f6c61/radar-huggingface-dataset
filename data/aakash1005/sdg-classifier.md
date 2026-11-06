@@ -106,9 +106,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aakash1005/sdg-classifier | 66,97 M | 256 tokens | 0,799 accuracy / 0,772 macro F1 en OSDG-CD test (8.605 ejemplos) | MIT | HuggingFace |
+| Aakash1005/sdg-classifier | 66,97 M | 256 tokens | 0,799 accuracy / 0,772 macro F1 en OSDG-CD test (8.605 ejemplos) | MIT | Hugging Face |
 | Baseline citado por el autor: TF-IDF + regresion logistica | no disponible | 8 primeras palabras del extracto | 0,739 F1 en SDG 16 frente a una media macro de 0,327 | no disponible | no disponible |
-| distilbert-base-uncased sin ajustar | 66,97 M | 512 tokens | no disponible para esta tarea | Apache-2.0 | HuggingFace |
+| distilbert-base-uncased sin ajustar | 66,97 M | 512 tokens | no disponible para esta tarea | Apache-2.0 | Hugging Face |
 
 No se dispone de datos publicados de otros clasificadores de ODS comparables en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -130,7 +130,7 @@ No se dispone de datos publicados de otros clasificadores de ODS comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aakash1005/sdg-classifier
+- Modelo en Hugging Face: https://huggingface.co/Aakash1005/sdg-classifier
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset de entrenamiento: https://huggingface.co/datasets/albertmartinez/OSDG
 - Dataset OSDG Community Dataset (OSDG-CD), Zenodo: https://doi.org/10.5281/zenodo.5550238 (CC BY 4.0)

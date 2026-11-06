@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yangsu0423/PaddleOCR-VL-1.6-ov
+- Modelo en Hugging Face: https://huggingface.co/yangsu0423/PaddleOCR-VL-1.6-ov
 - Modelo base: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - PR de exportación en optimum-intel: https://github.com/huggingface/optimum-intel/pull/2013
 - PR de ejecución en openvino.genai: https://github.com/openvinotoolkit/openvino.genai/pull/4514

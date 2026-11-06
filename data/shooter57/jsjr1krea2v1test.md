@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jsjr1krea2v1test es un adaptador LoRA de difusion para generacion de imagenes a partir de texto, publicado en HuggingFace por el usuario Shooter57 bajo la libreria diffusers. Segun las etiquetas declaradas, se trata de un `template:diffusion-lora` cuyo modelo base es krea/Krea-2-Raw, lo que implica que no funciona de forma autonoma: necesita cargarse sobre dicho modelo base para generar imagenes. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
+jsjr1krea2v1test es un adaptador LoRA de difusion para generacion de imagenes a partir de texto, publicado en Hugging Face por el usuario Shooter57 bajo la libreria diffusers. Segun las etiquetas declaradas, se trata de un `template:diffusion-lora` cuyo modelo base es krea/Krea-2-Raw, lo que implica que no funciona de forma autonoma: necesita cargarse sobre dicho modelo base para generar imagenes. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
 
 La relevancia practica de esta publicacion es muy limitada a dia de hoy. Cuenta con 0 descargas y 0 "likes", no incluye model card descriptiva (el README se limita a un bloque de metadatos YAML, un placeholder de galeria y un enlace de descarga), no declara licencia, ni idiomas, ni el `instance_prompt` que se uso durante el entrenamiento. Tampoco se especifican el rango, el alpha, los modulos objetivo ni el dataset empleado.
 
@@ -50,7 +50,7 @@ No hay ningun dato publicado sobre el proceso de entrenamiento: se desconoce el 
 - Pruebas de integracion en diffusers: el adaptador se puede cargar con `pipe.load_lora_weights()` sobre una instancia de Krea-2-Raw para verificar que el pipeline funciona y que los pesos son compatibles. Es el uso mas inmediato dado que no hay documentacion funcional.
 - Exploracion de estilo en prototipado visual: si el LoRA ha aprendido un estilo reconocible, puede emplearse para generar variaciones coherentes de ese estilo en fases tempranas de diseno, siempre que el equipo valide previamente la coherencia de los resultados.
 - Comparativa de tecnicas de ajuste fino: sirve como caso de estudio tecnico para medir cuanto cambia la salida de un modelo base al aplicar un adaptador de 0,2 GB, con y sin LoRA activo.
-- Experimentacion academica sobre LoRA en difusion: util para reproducir el formato de publicacion (`template:diffusion-lora`), el etiquetado y el empaquetado en HuggingFace, no para evaluar calidad de generacion.
+- Experimentacion academica sobre LoRA en difusion: util para reproducir el formato de publicacion (`template:diffusion-lora`), el etiquetado y el empaquetado en Hugging Face, no para evaluar calidad de generacion.
 - Generacion de material grafico interno no comercial: solo si se aclara antes la licencia, ya que el repositorio no la declara y la licencia del modelo base tambien condiciona el uso derivado.
 - Integracion en interfaces graficas tipo ComfyUI o AUTOMATIC1111/Forge: el adaptador puede colocarse en el directorio de LoRAs y combinarse con el modelo base para flujos de trabajo con control de prompt y semilla.
 
@@ -86,7 +86,7 @@ No disponible. Los resultados de busqueda web realizados no han devuelto ninguna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shooter57/jsjr1krea2v1test
+- Modelo en Hugging Face: https://huggingface.co/Shooter57/jsjr1krea2v1test
 - Ficheros del repositorio: https://huggingface.co/Shooter57/jsjr1krea2v1test/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, a su autor ni al modelo base. Las busquedas devolvieron unicamente paginas sin relacion con la ficha (sitios de verificacion de datos y bancos de imagenes de stock).

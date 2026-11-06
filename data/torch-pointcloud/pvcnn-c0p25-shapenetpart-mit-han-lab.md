@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de datos de parámetros, contexto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/pvcnn-c0p25.shapenetpart.mit-han-lab
+- Hugging Face: https://huggingface.co/torch-pointcloud/pvcnn-c0p25.shapenetpart.mit-han-lab
 - Paper PVCNN (NeurIPS 2019): https://arxiv.org/abs/1907.03739
 - Repositorio original mit-han-lab/pvcnn: https://github.com/mit-han-lab/pvcnn
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

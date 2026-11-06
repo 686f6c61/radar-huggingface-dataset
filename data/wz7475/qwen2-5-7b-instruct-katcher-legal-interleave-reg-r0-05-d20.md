@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20` es un fine-tuning del modelo base Qwen2.5-7B-Instruct, desarrollado por el usuario wz7475 y publicado en HuggingFace. El nombre sugiere una especialización en el dominio legal, con una técnica de entrenamiento que combina "interleave" (entrelazado de datos) y regularización (reg-r0.05), probablemente orientada a mejorar la robustez o la adherencia a instrucciones en contextos jurídicos. Sin embargo, la model card publicada es genérica y no proporciona detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20` es un fine-tuning del modelo base Qwen2.5-7B-Instruct, desarrollado por el usuario wz7475 y publicado en Hugging Face. El nombre sugiere una especialización en el dominio legal, con una técnica de entrenamiento que combina "interleave" (entrelazado de datos) y regularización (reg-r0.05), probablemente orientada a mejorar la robustez o la adherencia a instrucciones en contextos jurídicos. Sin embargo, la model card publicada es genérica y no proporciona detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas.
 
 El modelo se distribuye en formato safetensors con un total de 7.615.616.512 parámetros, lo que lo sitúa en la gama de los 7B, y está pensado para generación de texto conversacional mediante la librería transformers. Aunque no se especifican la licencia ni los idiomas soportados, al derivar de Qwen2.5-7B-Instruct es razonable esperar que herede la arquitectura transformer decoder-only y el soporte multilingüe de la familia Qwen, aunque esto no está confirmado en la documentación disponible.
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20
 - Modelo relacionado (katcher-legal-aligned): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned
 - Modelo relacionado (katcher-code-interleave-plus): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-code-interleave-plus
 - Referencia externa (Sweet Tea Studio): https://sweettea.co/resources/wz7475-qwen2-5-7b-instruct-katcher-code-interleave-op-huggingface-model-wz7475-qwen2-5-7b-instruct-katcher-code-interlea

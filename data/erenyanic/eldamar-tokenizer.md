@@ -71,6 +71,6 @@ No disponible. El proyecto no ofrece comparaciones con otros modelos de generaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/erenyanic/eldamar-tokenizer
+- Hugging Face: https://huggingface.co/erenyanic/eldamar-tokenizer
 - Repositorio original de arquitecturas: https://github.com/malibayram/single_letter_transformers
 - Fuente de nombres de lugares (Tolkien Gateway): https://tolkiengateway.net/wiki/Index:Locations

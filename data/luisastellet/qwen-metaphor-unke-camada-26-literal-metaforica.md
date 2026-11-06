@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-26-literal-metaforica` es un modelo de generación de texto publicado en HuggingFace por el usuario `luisastellet`, con 596.049.920 parámetros totales según los metadatos de safetensors y un repositorio de 2,4 GB. Los tags del repositorio lo asocian a la familia Qwen3 (`qwen3`) y a los pipelines de `transformers` y `text-generation-inference`, aunque la model card es la plantilla automática de HuggingFace y no aporta ninguna descripción del modelo, del entrenamiento ni de los datos utilizados.
+`luisastellet/qwen-metaphor-unke-camada-26-literal-metaforica` es un modelo de generación de texto publicado en Hugging Face por el usuario `luisastellet`, con 596.049.920 parámetros totales según los metadatos de safetensors y un repositorio de 2,4 GB. Los tags del repositorio lo asocian a la familia Qwen3 (`qwen3`) y a los pipelines de `transformers` y `text-generation-inference`, aunque la model card es la plantilla automática de Hugging Face y no aporta ninguna descripción del modelo, del entrenamiento ni de los datos utilizados.
 
 El identificador del repositorio sugiere un ajuste fino o un experimento de análisis sobre representaciones internas (la cadena "camada-26-literal-metaforica" apunta a la capa 26 y a una tarea de distinción entre lenguaje literal y metafórico), pero no hay documentación publicada que lo confirme. El nombre del autor y el tamaño de parámetros son compatibles con un derivado de Qwen3-0.6B, si bien esta correspondencia es una inferencia a partir de los tags y del recuento de parámetros, no un dato declarado.
 
@@ -31,7 +31,7 @@ Tampoco se dispone de datos sobre el entrenamiento: se desconoce el volumen de t
 
 - Generación de texto autoregresiva: es la única capacidad declarada de forma explícita mediante el pipeline `text-generation`.
 - Conversación: el tag `conversational` indica que el modelo está formateado para diálogo multi-turno, aunque no se documenta la plantilla de chat utilizada.
-- Compatibilidad con `text-generation-inference` y `endpoints_compatible`: puede servirse con el stack de TGI y con los endpoints de inferencia de HuggingFace.
+- Compatibilidad con `text-generation-inference` y `endpoints_compatible`: puede servirse con el stack de TGI y con los endpoints de inferencia de Hugging Face.
 - Posible especialización en distinción literal/metafórica: deducida del nombre del repositorio, sin confirmación documental.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: unos 1,2 GB en bf16/fp16 (596M parámetros × 2 bytes), aproximadamente 2,4 GB en fp32, unos 0,6 GB en int8 y entre 0,3 y 0,4 GB en cuantización de 4 bits, sin contar la caché KV.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente en bf16; una RTX 3060, RTX 4060, RTX 3090, RTX 4090, A10, L4, A100 o H100 cubren el modelo con holgura. En GPUs de 8 GB o menos conviene cuantizar para dejar margen a la caché KV y a lotes mayores.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU discreta moderna (GTX 1660 6 GB, RTX 3050 8 GB, RTX 4060 Ti, etc.), e incluso en CPU con cuantización, aunque no se publican pesos GGUF.
-- Opciones de despliegue: `transformers` (soporte nativo declarado), Text Generation Inference (tag `text-generation-inference`), endpoints de HuggingFace (tag `endpoints_compatible`) y, previsiblemente, vLLM. Para llama.cpp u Ollama sería necesaria una conversión propia a GGUF, ya que el repositorio solo contiene safetensors.
+- Opciones de despliegue: `transformers` (soporte nativo declarado), Text Generation Inference (tag `text-generation-inference`), endpoints de Hugging Face (tag `endpoints_compatible`) y, previsiblemente, vLLM. Para llama.cpp u Ollama sería necesaria una conversión propia a GGUF, ya que el repositorio solo contiene safetensors.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
@@ -66,16 +66,16 @@ Los valores de los modelos de referencia provienen de su documentación pública
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| luisastellet/qwen-metaphor-unke-camada-26-literal-metaforica | 596.049.920 | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen3-0.6B | ~0,6B | 32k (según documentación pública) | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-0.5B | ~0,49B | 32k (según documentación pública) | Apache-2.0 | HuggingFace |
-| Llama 3.2 1B | ~1,24B | 128k (según documentación pública) | Licencia comunitaria de Llama 3.2 | HuggingFace |
+| luisastellet/qwen-metaphor-unke-camada-26-literal-metaforica | 596.049.920 | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen3-0.6B | ~0,6B | 32k (según documentación pública) | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-0.5B | ~0,49B | 32k (según documentación pública) | Apache-2.0 | Hugging Face |
+| Llama 3.2 1B | ~1,24B | 128k (según documentación pública) | Licencia comunitaria de Llama 3.2 | Hugging Face |
 
 La diferencia principal no es de rendimiento, sino de trazabilidad: los tres modelos de referencia cuentan con model card completa, licencia explícita, evaluación publicada y comunidad activa, mientras que este repositorio carece de todos esos elementos y su utilidad comparativa en benchmarks es, a día de hoy, indeterminable.
 
 ## Limitaciones y advertencias
 
-- Model card vacía: es la plantilla automática de HuggingFace, sin descripción, datos de entrenamiento, hiperparámetros ni evaluación. No hay información verificable sobre qué hace el modelo.
+- Model card vacía: es la plantilla automática de Hugging Face, sin descripción, datos de entrenamiento, hiperparámetros ni evaluación. No hay información verificable sobre qué hace el modelo.
 - Licencia no declarada: sin licencia explícita no se puede asumir permiso de uso comercial; en la práctica, el modelo debe tratarse como no apto para producción hasta que el autor la aclare.
 - Idiomas no declarados: se desconoce si el modelo conserva el multilingüismo de la familia Qwen3 o si el ajuste lo ha reducido a una sola lengua.
 - Contexto desconocido: no se puede planificar un caso de uso con ventanas largas sin conocer el límite real de tokens.
@@ -88,7 +88,7 @@ La diferencia principal no es de rendimiento, sino de trazabilidad: los tres mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-26-literal-metaforica
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-26-literal-metaforica
 - Artículo referenciado en los tags (Lacoste et al., 2019, sobre cálculo de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental citado en la model card: https://mlco2.github.io/impact
 - Paper, blog, repositorio o demo específicos del modelo: no disponible

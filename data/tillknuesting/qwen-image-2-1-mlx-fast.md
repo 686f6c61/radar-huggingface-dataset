@@ -132,9 +132,9 @@ Del modelo base se conocen 7B parametros en el componente de generacion visual y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tillknuesting/qwen-image-2.1-mlx-fast
+- Repositorio en Hugging Face: https://huggingface.co/tillknuesting/qwen-image-2.1-mlx-fast
 - Checkpoint en 4 bits utilizado: https://huggingface.co/mlx-community/Qwen-Image-2.1-MLX-4bit
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio del modelo base en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - mflux: https://github.com/filipstrand/mflux
 - LoRA Viggle Turbo: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo

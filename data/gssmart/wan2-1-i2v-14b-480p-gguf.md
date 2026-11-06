@@ -23,7 +23,7 @@ Conviene tener presente el contexto de publicacion: el repositorio registra 0 de
 | Tarea | image-to-video |
 | Modelo base | Wan-AI/Wan2.1-I2V-14B-480P |
 | Resolucion | 480p (segun la denominacion del modelo base) |
-| Fecha de publicacion en HuggingFace | 2026-10-04 |
+| Fecha de publicacion en Hugging Face | 2026-10-04 |
 
 ## Arquitectura y entrenamiento
 
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.1-I2V-14B-480P (GGUF) | 16.394.878.784 totales en el repositorio base | imagen a video | 480p | Apache 2.0 | HuggingFace (formato GGUF) |
-| Wan2.1-I2V-14B-720P | 14B en el transformer, segun la nomenclatura del modelo base | imagen a video | 720p | Apache 2.0 | HuggingFace |
-| HunyuanVideo | 13B | texto a video (existe variante de imagen a video) | no disponible | Licencia comunitaria de Tencent (no Apache 2.0) | HuggingFace |
-| CogVideoX-5B-I2V | 5B | imagen a video | 720x480 segun la documentacion del modelo | Apache 2.0 | HuggingFace |
-| Stable Video Diffusion (SVD-XT) | 1,5B | imagen a video | 1024x576 segun la documentacion del modelo | Licencia no comercial de Stability AI | HuggingFace |
+| Wan2.1-I2V-14B-480P (GGUF) | 16.394.878.784 totales en el repositorio base | imagen a video | 480p | Apache 2.0 | Hugging Face (formato GGUF) |
+| Wan2.1-I2V-14B-720P | 14B en el transformer, segun la nomenclatura del modelo base | imagen a video | 720p | Apache 2.0 | Hugging Face |
+| HunyuanVideo | 13B | texto a video (existe variante de imagen a video) | no disponible | Licencia comunitaria de Tencent (no Apache 2.0) | Hugging Face |
+| CogVideoX-5B-I2V | 5B | imagen a video | 720x480 segun la documentacion del modelo | Apache 2.0 | Hugging Face |
+| Stable Video Diffusion (SVD-XT) | 1,5B | imagen a video | 1024x576 segun la documentacion del modelo | Licencia no comercial de Stability AI | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/GSsmart/Wan2.1-I2V-14B-480P-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/GSsmart/Wan2.1-I2V-14B-480P-gguf
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-480P
 - Custom node ComfyUI-GGUF (city96): https://github.com/city96/ComfyUI-GGUF
 - Ficheros auxiliares para ComfyUI (Comfy-Org): https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/main/split_files

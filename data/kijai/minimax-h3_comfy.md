@@ -4,7 +4,7 @@
 
 El repositorio `Kijai/MiniMax-H3_comfy` es un modelo publicado por Kijai (Jukka Seppänen), un desarrollador conocido por crear integraciones y wrappers para ComfyUI, principalmente en el ámbito de generación de imágenes y vídeo. El nombre sugiere que se trata de una adaptación o conversión del modelo MiniMax H3 para su uso dentro del ecosistema ComfyUI. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica la arquitectura, el tamaño, la licencia ni los idiomas soportados. El repositorio tiene 300 likes pero cero descargas, lo que indica que podría ser un modelo recién publicado o con acceso restringido. El tag `region:us` sugiere que su uso puede estar limitado geográficamente a Estados Unidos.
 
-Dada la falta de datos técnicos, esta ficha se basa únicamente en la información visible en HuggingFace y en los enlaces relacionados. No se dispone de documentación adicional, papers ni especificaciones oficiales. Se recomienda consultar el repositorio de `Comfy-Org/MiniMax-H3` para obtener más contexto sobre el modelo original, aunque tampoco se ha encontrado información detallada en la búsqueda web.
+Dada la falta de datos técnicos, esta ficha se basa únicamente en la información visible en Hugging Face y en los enlaces relacionados. No se dispone de documentación adicional, papers ni especificaciones oficiales. Se recomienda consultar el repositorio de `Comfy-Org/MiniMax-H3` para obtener más contexto sobre el modelo original, aunque tampoco se ha encontrado información detallada en la búsqueda web.
 
 ## Especificaciones tecnicas
 

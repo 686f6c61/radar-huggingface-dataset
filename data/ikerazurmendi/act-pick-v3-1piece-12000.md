@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act-pick-v3-1piece-12000` es una política de imitación (policy) para robótica, no un modelo de lenguaje. La publica el usuario IkerAzurmendi en HuggingFace dentro de la librería LeRobot, y resuelve una tarea muy concreta sobre el brazo robótico de bajo coste SO-101: coger una pieza de una caja y sostenerla frente a la cámara. El modelo recibe dos cámaras (frontal y de muñeca) más las seis posiciones articulares del brazo, y devuelve un *chunk* de 90 objetivos de posición articular futura a 30 fps.
+`act-pick-v3-1piece-12000` es una política de imitación (policy) para robótica, no un modelo de lenguaje. La publica el usuario IkerAzurmendi en Hugging Face dentro de la librería LeRobot, y resuelve una tarea muy concreta sobre el brazo robótico de bajo coste SO-101: coger una pieza de una caja y sostenerla frente a la cámara. El modelo recibe dos cámaras (frontal y de muñeca) más las seis posiciones articulares del brazo, y devuelve un *chunk* de 90 objetivos de posición articular futura a 30 fps.
 
 Se trata de una política ACT (Action Chunking with Transformers), una arquitectura de aprendizaje por imitación supervisado que mapea observaciones directamente a secuencias de acciones, sin planificación explícita ni razonamiento simbólico. Con 51.658.374 parámetros y un repositorio de 0,2 GB, es un modelo pequeño pensado para inferencia en el bucle de control de un robot real.
 
@@ -119,7 +119,7 @@ Advertencia del propio autor: el error offline no permite determinar qué modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-1piece-12000
+- Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-1piece-12000
 - Repositorio relacionado citado por el autor: `act-pick-v3-1piece-9600`
 - Repositorio relacionado citado por el autor: `act-pick-v3-6000`
 - Repositorio relacionado citado por el autor: `act-pick-v3-strict-2400`

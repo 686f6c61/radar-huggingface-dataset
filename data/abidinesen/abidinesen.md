@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El identificador `abidinesen/abidinesen` no corresponde a un modelo de lenguaje con pesos publicados, sino a la pagina de perfil de un autor dentro de HuggingFace. La model card describe el trabajo de ese autor en la creacion de conjuntos de datos para el alineamiento de modelos de lenguaje en turco, no un checkpoint entrenado. Por tanto, no existen parametros, arquitectura ni ventana de contexto que evaluar en este repositorio.
+El identificador `abidinesen/abidinesen` no corresponde a un modelo de lenguaje con pesos publicados, sino a la pagina de perfil de un autor dentro de Hugging Face. La model card describe el trabajo de ese autor en la creacion de conjuntos de datos para el alineamiento de modelos de lenguaje en turco, no un checkpoint entrenado. Por tanto, no existen parametros, arquitectura ni ventana de contexto que evaluar en este repositorio.
 
 El contenido destacado es "Kusursuz Ajan" (Agente Impecable), un dataset de RLHF y DPO en turco disenado para ensenar a los modelos matices humanos como la manipulacion, el sarcasmo, la agresividad pasiva y la picardia callejera. El dataset se estructura en pares `prompt`, `chosen` y `rejected`, con mas de 50 categorias especificas de Turquia (familia, vida corporativa, burocracia, compras, taxistas) y texto "sucio" natural que refleja la pereza tipica de internet: letras omitidas, ausencia de puntuacion y uso de minusculas.
 
-La relevancia de este artefacto es acotada: interesa a equipos que trabajen en alineamiento de LLM en turco y quieran evitar el efecto de "turco traducido". La version completa se distribuye a traves de Gumroad, no en el propio repositorio de HuggingFace, que a fecha de la consulta registra 0 descargas y 0 likes.
+La relevancia de este artefacto es acotada: interesa a equipos que trabajen en alineamiento de LLM en turco y quieran evitar el efecto de "turco traducido". La version completa se distribuye a traves de Gumroad, no en el propio repositorio de Hugging Face, que a fecha de la consulta registra 0 descargas y 0 likes.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - No aplicable a inferencia: el repositorio no distribuye pesos, por lo que no procede estimar VRAM ni GPUs recomendadas para servir el artefacto.
 - El coste de computo depende exclusivamente del modelo base que se vaya a alinear con el dataset; el autor no publica cifras de entrenamiento.
-- Almacenamiento: el tamano del dataset no se especifica en la model card; la version completa se obtiene a traves de Gumroad, no en HuggingFace.
+- Almacenamiento: el tamano del dataset no se especifica en la model card; la version completa se obtiene a traves de Gumroad, no en Hugging Face.
 - Opciones de despliegue: no disponibles, al no existir un artefacto de modelo que servir con vLLM, llama.cpp, Ollama, TGI u otras herramientas equivalentes.
 - Latencia y throughput: no disponibles.
 
@@ -67,7 +67,7 @@ No disponible. La informacion proporcionada no identifica modelos ni datasets co
 ## Limitaciones y advertencias
 
 - No es un modelo: cualquier expectativa de inferencia directa sobre `abidinesen/abidinesen` es incorrecta; se trata de un perfil de autor con un dataset descrito en la model card.
-- La version completa del dataset no esta en HuggingFace, sino en un enlace externo de Gumroad, lo que impide verificar su contenido, tamano o calidad desde el repositorio.
+- La version completa del dataset no esta en Hugging Face, sino en un enlace externo de Gumroad, lo que impide verificar su contenido, tamano o calidad desde el repositorio.
 - No se documentan la metodologia de anotacion, el numero de anotadores, el volumen de ejemplos ni los criterios de seleccion de los pares `chosen`/`rejected`.
 - No hay resultados de evaluacion que respalden las afirmaciones de naturalidad o precision cultural del dataset.
 - El dataset incluye contenido toxico, manipulador y agresivo por diseno; su uso requiere controles para evitar que esos patrones se filtren al comportamiento final del modelo.
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no identifica modelos ni datasets co
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/abidinesen/abidinesen
+- Repositorio de Hugging Face: https://huggingface.co/abidinesen/abidinesen
 - Version completa del dataset en Gumroad: https://abidin1211.gumroad.com/l/oapgbr
 - Perfil de Gumroad del autor: https://abidin1211.gumroad.com/
 - Contacto del autor: abidin.esen@hotmail.com

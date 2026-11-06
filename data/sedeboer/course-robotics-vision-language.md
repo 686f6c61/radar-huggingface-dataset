@@ -82,6 +82,6 @@ No disponible. El artefacto no es un modelo de lenguaje ni un modelo visión-len
 
 ## Enlaces
 
-- [HuggingFace: sedeboer/course-robotics-vision-language](https://huggingface.co/sedeboer/course-robotics-vision-language)
+- [Hugging Face: sedeboer/course-robotics-vision-language](https://huggingface.co/sedeboer/course-robotics-vision-language)
 - Artefactos internos declarados en la model card: `review.md` (artefacto principal) y `README.md` (documentación). No se proporcionan URL directas a estos archivos.
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió resultados relacionados con el modelo; los resultados obtenidos correspondían a emisiones en directo de France 24 (france24.com/fr/direct, youtube.com/c/FRANCE24/live, embed.france24.com/fr/live) y no guardan relación alguna con el repositorio, por lo que se descartan.

@@ -18,7 +18,7 @@ Es relevante ahora porque los modelos de menos de 2.000 millones de parámetros 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q4_K_M (~1,1 GB) y Q8_0 (~1,8 GB) en GGUF |
 | Idiomas soportados | kazajo (kk) |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) entre estas variant
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/RedBullet12/LFM3-1.7B-Kazakh-GGUF
+- Hugging Face (este modelo): https://huggingface.co/RedBullet12/LFM3-1.7B-Kazakh-GGUF
 - Modelo base del ajuste: https://huggingface.co/RedBullet12/LFM3-1.7B-Kazakh
 - Modelo original LiquidAI LFM3-1.7B: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE

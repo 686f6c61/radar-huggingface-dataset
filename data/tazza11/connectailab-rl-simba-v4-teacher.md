@@ -91,7 +91,7 @@ No se conocen politicas alternativas de terceros para CONNECT TYCOON; la compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tazza11/connectailab-rl-simba-v4-teacher
+- Hugging Face: https://huggingface.co/tazza11/connectailab-rl-simba-v4-teacher
 - Repositorio GitHub de CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

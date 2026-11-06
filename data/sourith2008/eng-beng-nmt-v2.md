@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sourith2008/eng-beng-nmt-v2 es un modelo publicado en HuggingFace por el usuario Sourith2008 bajo licencia Apache 2.0. La informacion disponible en el repositorio es minima: la model card consiste unicamente en el encabezado YAML con la licencia, sin descripcion, sin pipeline declarado, sin idiomas explicitos y sin resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta.
+Sourith2008/eng-beng-nmt-v2 es un modelo publicado en Hugging Face por el usuario Sourith2008 bajo licencia Apache 2.0. La informacion disponible en el repositorio es minima: la model card consiste unicamente en el encabezado YAML con la licencia, sin descripcion, sin pipeline declarado, sin idiomas explicitos y sin resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta.
 
 El identificador del modelo ("eng-beng-nmt-v2") sugiere que se trata de un sistema de traduccion automatica neuronal (NMT) entre ingles e bengali, y el sufijo "v2" apunta a una segunda iteracion. No obstante, esta interpretacion procede unicamente del nombre y no esta confirmada por la documentacion del autor, por lo que todas las capacidades tecnicas concretas deben considerarse no verificadas.
 
@@ -88,9 +88,9 @@ Consideraciones: frente a opus-mt-en-bn, el modelo analizado ofrece una licencia
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, con obligacion de conservar el aviso de licencia. No incluye garantias ni responsabilidad por parte del autor.
 - Procedencia: autor individual sin historial verificable en el repositorio; cero descargas y cero likes, lo que implica ausencia de validacion por parte de la comunidad.
 - Metadatos incoherentes: la fecha de creacion y actualizacion registradas (2026-09-29) no resulta plausible, lo que sugiere que los metadatos del repositorio no son fiables.
-- Sin pipeline declarado y sin idiomas declarados en HuggingFace, por lo que las herramientas automaticas de filtrado y las pipelines de transformers podrian no detectar el modelo correctamente.
+- Sin pipeline declarado y sin idiomas declarados en Hugging Face, por lo que las herramientas automaticas de filtrado y las pipelines de transformers podrian no detectar el modelo correctamente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sourith2008/eng-beng-nmt-v2
+- Hugging Face: https://huggingface.co/Sourith2008/eng-beng-nmt-v2
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

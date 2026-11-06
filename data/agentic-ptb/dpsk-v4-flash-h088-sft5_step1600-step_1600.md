@@ -76,7 +76,7 @@ La comparación con DeepSeek-V4-Flash es solo nominal: este checkpoint no compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h088.sft5_step1600.step_1600
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h088.sft5_step1600.step_1600
 - Modelo base Qwen/Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - DeepSeek-V4-Flash (referencia nominal): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - DeepSeek-V4-Flash-0731: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731

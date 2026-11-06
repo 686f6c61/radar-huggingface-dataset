@@ -108,7 +108,7 @@ No hay datos en la informacion proporcionada sobre otros modelos comparables de 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/Joakimpalm-Zen/Qwen3.8-27B-GSQ-RCO-IQ3_S-recovered-GGUF
+- Hugging Face (este modelo): https://huggingface.co/Joakimpalm-Zen/Qwen3.8-27B-GSQ-RCO-IQ3_S-recovered-GGUF
 - Modelo base (cuantizacion de origen): https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Modelo padre: https://huggingface.co/Qwen/Qwen3.8-27B
 - Referencias arXiv citadas en las etiquetas del repositorio (contenido no verificado en esta ficha): https://arxiv.org/abs/2604.18556 y https://arxiv.org/abs/2605.00649

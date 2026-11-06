@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sft3m_owrlen_luna_preview_norepeat_human_3ep` es un ajuste fino (fine-tune) supervisado (SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario GUIAgentt en HuggingFace. Su identificador y sus etiquetas (`gui-agent`, `web-agent`) indican que está orientado a tareas de agente de interfaz gráfica y de navegación web, es decir, a interpretar pantallas y ejecutar acciones sobre entornos interactivos. No se trata de un modelo de propósito general publicado por un laboratorio, sino de un checkpoint experimental de un proyecto de investigación o desarrollo de agentes.
+El modelo `sft3m_owrlen_luna_preview_norepeat_human_3ep` es un ajuste fino (fine-tune) supervisado (SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario GUIAgentt en Hugging Face. Su identificador y sus etiquetas (`gui-agent`, `web-agent`) indican que está orientado a tareas de agente de interfaz gráfica y de navegación web, es decir, a interpretar pantallas y ejecutar acciones sobre entornos interactivos. No se trata de un modelo de propósito general publicado por un laboratorio, sino de un checkpoint experimental de un proyecto de investigación o desarrollo de agentes.
 
-El checkpoint cuenta con aproximadamente 5.175 millones de parámetros reales según los pesos en safetensors (el nombre comercial del base es "4B", pero el recuento efectivo es superior, probablemente por el componente de embeddings y cabezas asociadas al modelo multimodal). El repositorio ocupa 10,4 GB, lo que es consistente con pesos en precisión bf16/fp16. El modelo está publicado con acceso restringido (gated), requiere aceptar condiciones en HuggingFace y su licencia figura como "other", por lo que las condiciones de uso comercial no están explicitadas en la información disponible.
+El checkpoint cuenta con aproximadamente 5.175 millones de parámetros reales según los pesos en safetensors (el nombre comercial del base es "4B", pero el recuento efectivo es superior, probablemente por el componente de embeddings y cabezas asociadas al modelo multimodal). El repositorio ocupa 10,4 GB, lo que es consistente con pesos en precisión bf16/fp16. El modelo está publicado con acceso restringido (gated), requiere aceptar condiciones en Hugging Face y su licencia figura como "other", por lo que las condiciones de uso comercial no están explicitadas en la información disponible.
 
 La relevancia de este checkpoint es limitada fuera de su nicho: se publicó en noviembre de 2026, no tiene descargas ni likes, y no se han publicado resultados de benchmarks ni una model card detallada en la información proporcionada. Resulta de interés principalmente para quienes investigan agentes GUI y quieran reproducir o comparar ajustes finos sobre la familia Qwen3.5.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sft3m_owrlen_luna_preview_norepeat_human_3ep | ~5,17 mil millones | no disponible | other (gated) | HuggingFace, acceso restringido | Fine-tune de Qwen3.5-4B para agentes GUI/web |
-| Qwen/Qwen3.5-4B | ~4 mil millones (nominal) | no disponible en la información | no disponible | HuggingFace | Modelo base del que deriva este checkpoint |
+| sft3m_owrlen_luna_preview_norepeat_human_3ep | ~5,17 mil millones | no disponible | other (gated) | Hugging Face, acceso restringido | Fine-tune de Qwen3.5-4B para agentes GUI/web |
+| Qwen/Qwen3.5-4B | ~4 mil millones (nominal) | no disponible en la información | no disponible | Hugging Face | Modelo base del que deriva este checkpoint |
 | Alternativas de agente GUI de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -72,12 +72,12 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Sesgos conocidos: no documentados; al derivar de Qwen3.5-4B, hereda los sesgos de su base, pero no hay información específica sobre el ajuste.
 - Riesgo de alucinación: no evaluado; en tareas de agente GUI, una alucinación puede traducirse en acciones erróneas sobre la interfaz, con riesgo de efectos no deseados.
 - Limitaciones de contexto e idioma: no disponibles; no se documenta la ventana de contexto efectiva ni los idiomas cubiertos.
-- Licencia: figura como "other" y el acceso es restringido; no se especifican condiciones de uso comercial, por lo que es imprescindible revisar los términos en HuggingFace antes de cualquier despliegue en producción.
+- Licencia: figura como "other" y el acceso es restringido; no se especifican condiciones de uso comercial, por lo que es imprescindible revisar los términos en Hugging Face antes de cualquier despliegue en producción.
 - Checkpoint experimental: cero descargas y cero likes en el momento de la consulta, sin model card detallada ni benchmarks; no debe considerarse un modelo validado para producción.
 - El nombre del modelo sugiere un ajuste con eliminación de repeticiones y datos humanos, pero no se documenta el proceso de filtrado ni la calidad de las anotaciones.
 - No se confirma soporte de tool calling, multimodalidad ni modo thinking; cualquier integración que dependa de estas capacidades debe verificarse empíricamente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GUIAgentt/sft3m_owrlen_luna_preview_norepeat_human_3ep
+- Hugging Face: https://huggingface.co/GUIAgentt/sft3m_owrlen_luna_preview_norepeat_human_3ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-uri-20-qwen-lora | LoRA sobre Qwen-Image-2512 | no disponible (151 MiB) | no aplica | no disponible | HuggingFace, RunningHub |
+| rh-uri-20-qwen-lora | LoRA sobre Qwen-Image-2512 | no disponible (151 MiB) | no aplica | no disponible | Hugging Face, RunningHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa fiable con otros LoRA de estilo de la misma categoria.
@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-uri-20-qwen-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-uri-20-qwen-lora
 - Pagina del modelo original en RunningHub: https://www.runninghub.cn/model/public/2046608829294579714
 - Pagina del autor: https://www.runninghub.cn/user-center/1935675382454521858
 - RunningHub internacional: https://www.runninghub.ai

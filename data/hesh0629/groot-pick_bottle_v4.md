@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en el contexto de robót
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hesh0629/groot-pick_bottle_v4
+- Modelo en Hugging Face: https://huggingface.co/hesh0629/groot-pick_bottle_v4
 - Dataset de entrenamiento: https://huggingface.co/datasets/hesh0629/pick_bottle_v4
 - Página personal del autor: https://hesh0629.github.io/
 - Repositorio BPi (BottlePick AI, ROS2): https://github.com/Mao-uc/BPi

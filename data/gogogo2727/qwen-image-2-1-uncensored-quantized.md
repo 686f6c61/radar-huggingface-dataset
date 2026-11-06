@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Uncensored-Quantized es un paquete de pesos cuantizados del modelo de difusión texto-a-imagen Qwen/Qwen-Image-2.1, publicado por el usuario gogogo2727 en HuggingFace. El repositorio no aporta un modelo nuevo, sino una colección de conversiones (GGUF, safetensors FP8/INT8/NVFP4 y MLX en 4, 6 y 8 bits) junto con los ficheros auxiliares necesarios para ejecutarlo en ComfyUI: un text encoder basado en Qwen3-VL de 8B y el VAE específico del modelo. La etiqueta "Uncensored" indica que se han eliminado o relajado los filtros de seguridad del modelo original, aunque la model card no documenta el procedimiento aplicado.
+Qwen-Image-2.1-Uncensored-Quantized es un paquete de pesos cuantizados del modelo de difusión texto-a-imagen Qwen/Qwen-Image-2.1, publicado por el usuario gogogo2727 en Hugging Face. El repositorio no aporta un modelo nuevo, sino una colección de conversiones (GGUF, safetensors FP8/INT8/NVFP4 y MLX en 4, 6 y 8 bits) junto con los ficheros auxiliares necesarios para ejecutarlo en ComfyUI: un text encoder basado en Qwen3-VL de 8B y el VAE específico del modelo. La etiqueta "Uncensored" indica que se han eliminado o relajado los filtros de seguridad del modelo original, aunque la model card no documenta el procedimiento aplicado.
 
 El dato de parámetros reportado en safetensors es de 7.115.124.736 (aproximadamente 7,1 mil millones), correspondiente a los pesos del transformer de difusión; a ello hay que sumar el text encoder de 8B y el VAE, por lo que el consumo real de memoria es muy superior al que sugiere esa cifra. El repositorio ocupa 105,2 GB en total por acumular todas las variantes de cuantización en un mismo espacio.
 
@@ -72,7 +72,7 @@ Las cifras siguientes son estimaciones derivadas del tamano de los ficheros publ
 | Modelo | Parametros | Contexto / resolucion | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | gogogo2727/Qwen-Image-2.1-Uncensored-Quantized | 7.115.124.736 (transformer) + text encoder Qwen3-VL 8B | No disponible | GGUF (BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0), FP8, INT8 ConvRot, NVFP4, MLX 4/6/8-bit | qwen-research | Repositorio publico, 0 descargas y 1 like en el momento de la consulta |
-| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Qwen (licencia del modelo original, no detallada) | Repositorio oficial en HuggingFace |
+| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Qwen (licencia del modelo original, no detallada) | Repositorio oficial en Hugging Face |
 | Alternativas de la misma categoria (por ejemplo, otros modelos de difusion texto-a-imagen de ~7-12B) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de otros modelos comparables en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento ni de parametros de terceros. La comparacion mas directa y fiable es la que enfrenta a esta version cuantizada con su modelo base: mismos pesos de partida, pero con menor requisito de memoria a costa de perdida de calidad y, en la variante "Uncensored", sin los filtros de seguridad del original.
@@ -93,7 +93,7 @@ No se dispone de datos verificables de otros modelos comparables en la informaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gogogo2727/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio en Hugging Face: https://huggingface.co/gogogo2727/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork de leejet, recomendado por el autor): https://github.com/leejet/ComfyUI-GGUF

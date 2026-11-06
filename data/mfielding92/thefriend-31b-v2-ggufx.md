@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mfielding92/thefriend-31b-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mfielding92/thefriend-31b-v2-GGUF
 - Modelo base: https://huggingface.co/mfielding92/thefriend-31b-v2 (no disponible en la búsqueda, pero se deduce del nombre)
 - Página de FriendliAI (despliegue): https://friendli.ai/models/mfielding92/thefriend-31b-v2
 - GitHub del autor: https://github.com/mfielding92/

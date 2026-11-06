@@ -12,7 +12,7 @@ Es relevante ahora porque los rerankers de este tamano ofrecen una mejora sustan
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de tipo reranker; el pipeline declarado en HuggingFace es feature-extraction) |
+| Arquitectura | no disponible (modelo base de tipo reranker; el pipeline declarado en Hugging Face es feature-extraction) |
 | Parametros totales | 567.753.729 (~568 M) |
 | Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
@@ -30,7 +30,7 @@ Tampoco se dispone de informacion sobre el numero de tokens de entrenamiento, la
 ## Capacidades
 
 - Reordenacion de candidatos: puntuar pares consulta-documento para reordenar resultados de un retriever, que es el uso principal esperado de un modelo de esta categoria.
-- Extraccion de caracteristicas: el pipeline declarado en HuggingFace es feature-extraction, por lo que puede emplearse para obtener representaciones vectoriales.
+- Extraccion de caracteristicas: el pipeline declarado en Hugging Face es feature-extraction, por lo que puede emplearse para obtener representaciones vectoriales.
 - Procesamiento en ingles: la model card declara unicamente el idioma en.
 - Inferencia en CPU y GPU de gama baja gracias a las cuantizaciones GGUF de 0,5 a 1,3 GB.
 - Integracion con el ecosistema llama.cpp, Ollama y clientes compatibles con GGUF.
@@ -66,7 +66,7 @@ Las cifras siguientes son estimaciones derivadas del numero de parametros (568 M
   - Q2_K (~0,5 GB): aproximadamente 1 GB o menos.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente. Una RTX 3060, RTX 4060, RTX 3090 o RTX 4090 cubren el modelo con margen amplio y permiten lotes grandes. Las GPU de centro de datos (A100, H100) solo tendrian sentido para servir muchas peticiones concurrentes, no por requisitos de memoria.
 - Viabilidad en GPU de consumo: si. Cabe en practicamente cualquier GPU dedicada de los ultimos diez anos, en GPU integradas con memoria compartida y en CPU.
-- Opciones de despliegue: llama.cpp (incluido llama-server), Ollama (mediante Modelfile a partir del GGUF), LM Studio y bindings de llama-cpp-python. Para el modelo base en transformers, cabria usar Text Embeddings Inference (TEI) de HuggingFace, que soporta rerankers, o un servidor propio con transformers. vLLM no esta orientado a este tipo de modelo.
+- Opciones de despliegue: llama.cpp (incluido llama-server), Ollama (mediante Modelfile a partir del GGUF), LM Studio y bindings de llama-cpp-python. Para el modelo base en transformers, cabria usar Text Embeddings Inference (TEI) de Hugging Face, que soporta rerankers, o un servidor propio con transformers. vLLM no esta orientado a este tipo de modelo.
 - Latencia y throughput: no disponibles. Como referencia cualitativa, un modelo de 568 M en cuantizacion Q4_K_M sobre GPU moderna se situa en el orden de milisegundos por par en lotes pequenos, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares

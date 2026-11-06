@@ -78,5 +78,5 @@ No se dispone de información pública sobre modelos comparables específicos pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bratao/Llama-PortOIE3
+- Repositorio Hugging Face: https://huggingface.co/bratao/Llama-PortOIE3
 - Paper de Llama 3 (contexto general): https://arxiv.org/abs/2407.21783

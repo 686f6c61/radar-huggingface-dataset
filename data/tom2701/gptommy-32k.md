@@ -81,12 +81,12 @@ No se dispone de datos comparativos de fertilidad ni de compresión sobre corpus
 - No se documentan sesgos lingüísticos medidos ni evaluación de cobertura sobre corpus reales; la cifra del 90,9% procede de la propia model card y no está verificada de forma independiente.
 - El vocabulario está orientado exclusivamente al italiano; no hay soporte declarado para otras lenguas más allá de algunas formas latinas.
 - No se especifican el formato de distribución de los pesos, la versión de Python soportada ni pruebas de compatibilidad con frameworks de inferencia estándar.
-- El proyecto tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin señales de adopción externa.
+- El proyecto tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin señales de adopción externa.
 - La fecha de creación del repositorio (2026-11-02) es posterior a la fecha actual de referencia habitual, lo que conviene verificar antes de citar el recurso.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tom2701/gpTommy-32k
+- Hugging Face: https://huggingface.co/Tom2701/gpTommy-32k
 - Repositorio GitHub del vocabulario: https://github.com/Thomasseri/gpTommy-32k
 - Sitio oficial: https://www.sentinelhub.eu
 - Modelo Sentinel R-08 v7 (44,5M): https://huggingface.co/Tom2701/R-08 | https://github.com/Thomasseri/R-08

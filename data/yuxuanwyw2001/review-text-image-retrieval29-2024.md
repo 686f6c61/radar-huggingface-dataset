@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`YuxuanWyw2001/review-text-image-retrieval29-2024` no es un modelo entrenado, sino un repositorio de notas de investigación sobre recuperación texto-imagen (*text-image retrieval*) publicado en HuggingFace bajo licencia MIT. La propia model card lo declara explícitamente: no incluye checkpoint entrenado, no incluye código y no reclama mejoras sobre benchmarks. Los únicos artefactos documentados son `reading.md` (la nota principal) y `README.md`.
+`YuxuanWyw2001/review-text-image-retrieval29-2024` no es un modelo entrenado, sino un repositorio de notas de investigación sobre recuperación texto-imagen (*text-image retrieval*) publicado en Hugging Face bajo licencia MIT. La propia model card lo declara explícitamente: no incluye checkpoint entrenado, no incluye código y no reclama mejoras sobre benchmarks. Los únicos artefactos documentados son `reading.md` (la nota principal) y `README.md`.
 
 El repositorio se organiza en torno a la formulación de la pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con baselines emparejados, el contexto de evaluación (Flickr30k y MS COCO Captions), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor separa deliberadamente planes e hipótesis de resultados ya completados, de modo que nada de lo etiquetado como plan debe interpretarse como evidencia experimental.
 
@@ -43,7 +43,7 @@ En cuanto al contenido metodológico, la nota propone un protocolo de comparaci�
 - Diseño del protocolo de evaluación: el contexto fijado en Flickr30k y MS COCO Captions sirve para acotar métricas y particiones antes de lanzar experimentos propios.
 - Plantilla de cuaderno de investigación para equipos: la separación entre planes, hipótesis y resultados es directamente reutilizable como convención interna de documentación en proyectos de multimodalidad.
 - Checklist de reproducibilidad: la exigencia de registrar versiones de dataset, comandos, semillas, hardware y logs en bruto puede adoptarse como política de publicación de resultados en un laboratorio.
-- Auditoría de artefactos en HuggingFace: el caso ilustra cómo un repositorio con tag `transformer` y fichero safetensors puede no contener un modelo utilizable, lo que resulta útil para formar criterios de revisión antes de descargar pesos.
+- Auditoría de artefactos en Hugging Face: el caso ilustra cómo un repositorio con tag `transformer` y fichero safetensors puede no contener un modelo utilizable, lo que resulta útil para formar criterios de revisión antes de descargar pesos.
 - Gestión de licencias y datos: la nota recuerda revisar por separado los términos de las fuentes de datos externas (Flickr30k, MS COCO Captions) aunque el repositorio sea MIT, escenario habitual al construir pipelines de retrieval.
 
 ## Benchmarks y rendimiento
@@ -89,7 +89,7 @@ No hay comparativa posible: el artefacto es un conjunto de notas, no un modelo d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YuxuanWyw2001/review-text-image-retrieval29-2024
+- Repositorio en Hugging Face: https://huggingface.co/YuxuanWyw2001/review-text-image-retrieval29-2024
 - Fichero principal de la nota: `reading.md` (dentro del repositorio)
 - Documentación del repositorio: `README.md` (dentro del repositorio)
 - Papers, blogs, repos o demos adicionales: no disponible (la búsqueda web no devolvió resultados relacionados con el modelo ni con su temática)

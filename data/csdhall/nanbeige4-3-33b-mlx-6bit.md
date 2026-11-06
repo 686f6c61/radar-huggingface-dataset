@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/csdhall/Nanbeige4.3-33B-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/csdhall/Nanbeige4.3-33B-MLX-6bit
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Checkpoint fuente concreto: https://huggingface.co/Nanbeige/Nanbeige4.3-33B/tree/c1093c501cc6460427c0ac634db7223d0450c0ee
 - MLX: https://github.com/ml-explore/mlx

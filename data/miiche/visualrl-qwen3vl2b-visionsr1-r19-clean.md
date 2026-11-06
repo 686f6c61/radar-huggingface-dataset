@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Miiche/visualrl-qwen3vl2b-visionsr1-r19-clean` es un checkpoint de visión-lenguaje (VLM) publicado por el usuario Miiche en HuggingFace, sin ficha técnica ni metadatos descriptivos. El nombre del repositorio sugiere que se trata de una variante de la familia Qwen3-VL con 2B parámetros, entrenada mediante técnicas de *visual reinforcement learning* con un componente de *self-rewarding* (indicado por "visualrl" y "visionsr1"). No se ha publicado documentación oficial, por lo que los detalles de arquitectura, entrenamiento y licencia no están disponibles.
+El modelo `Miiche/visualrl-qwen3vl2b-visionsr1-r19-clean` es un checkpoint de visión-lenguaje (VLM) publicado por el usuario Miiche en Hugging Face, sin ficha técnica ni metadatos descriptivos. El nombre del repositorio sugiere que se trata de una variante de la familia Qwen3-VL con 2B parámetros, entrenada mediante técnicas de *visual reinforcement learning* con un componente de *self-rewarding* (indicado por "visualrl" y "visionsr1"). No se ha publicado documentación oficial, por lo que los detalles de arquitectura, entrenamiento y licencia no están disponibles.
 
 El contexto técnico en el que se encuadra este modelo viene dado por el trabajo de investigación *Self-Rewarding Vision-Language Model via Reasoning* (arXiv:2508.19652), que aborda las alucinaciones visuales y los atajos lingüísticos en los VLMs mediante la supervisión del razonamiento visual intermedio. Es probable que este checkpoint sea un producto experimental derivado de dicha línea de trabajo, orientado a la investigación en alucinación visual y razonamiento multimodal.
 
@@ -60,6 +60,6 @@ No disponible. No se han publicado datos comparativos, y no existen suficientes 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Miiche/visualrl-qwen3vl2b-visionsr1-r19-clean
+- Repositorio Hugging Face del modelo: https://huggingface.co/Miiche/visualrl-qwen3vl2b-visionsr1-r19-clean
 - Modelo similar del mismo autor (visualrl-qwen3vl4b-visionsr1-fix): https://huggingface.co/Miiche/visualrl-qwen3vl4b-visionsr1-fix
 - Paper relacionado: *Self-Rewarding Vision-Language Model via Reasoning* (arXiv:2508.19652): https://arxiv.org/abs/2508.19652

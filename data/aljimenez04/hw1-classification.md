@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aljimenez04/hw1-classification es un repositorio experimental publicado en HuggingFace que implementa una variante de arquitectura MoCo v3 orientada a clasificacion, en una escala deliberadamente reducida que el propio autor denomina "nano". Se trata de un artefacto de desarrollo, no de un modelo entrenado: el checkpoint incluido es una inicializacion valida para pruebas de humo y la model card descarta explicitamente cualquier resultado de benchmark.
+aljimenez04/hw1-classification es un repositorio experimental publicado en Hugging Face que implementa una variante de arquitectura MoCo v3 orientada a clasificacion, en una escala deliberadamente reducida que el propio autor denomina "nano". Se trata de un artefacto de desarrollo, no de un modelo entrenado: el checkpoint incluido es una inicializacion valida para pruebas de humo y la model card descarta explicitamente cualquier resultado de benchmark.
 
 El modelo cuenta con 24.832 parametros totales (veinticuatro mil ochocientos treinta y dos) segun el dato real de safetensors, lo que lo situa en un orden de magnitud muy inferior al de cualquier red de clasificacion de uso profesional. La implementacion emplea atencion lineal, fusion por concatenacion con MLP, activacion gelu-tanh y normalizacion groupnorm, con una receta por defecto de optimizador AdamW y planificador de calentamiento lineal.
 
@@ -67,7 +67,7 @@ La informacion proporcionada no incluye resultados comparativos ni modelos de re
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aljimenez04/hw1-classification | 24.832 | no disponible (clasificacion) | apache-2.0 | HuggingFace (sin entrenar) |
+| aljimenez04/hw1-classification | 24.832 | no disponible (clasificacion) | apache-2.0 | Hugging Face (sin entrenar) |
 | ResNet-50 (referencia general) | ~25,6 M | imagenes de 224x224 | varía segun implementacion | ampliamente disponible |
 | ViT-Base (referencia general) | ~86 M | parches de 16x16 | varía segun implementacion | ampliamente disponible |
 
@@ -87,4 +87,4 @@ Cualquier comparacion honesta requeriria entrenar el modelo de este repositorio 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aljimenez04/hw1-classification
+- Hugging Face: https://huggingface.co/aljimenez04/hw1-classification

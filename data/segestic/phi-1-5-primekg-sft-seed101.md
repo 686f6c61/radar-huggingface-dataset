@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`segestic/phi-1.5-primekg-sft-seed101` es un repositorio de pesos publicado en HuggingFace por el usuario `segestic`. La model card es la plantilla automática de transformers sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de benchmarks.
+`segestic/phi-1.5-primekg-sft-seed101` es un repositorio de pesos publicado en Hugging Face por el usuario `segestic`. La model card es la plantilla automática de transformers sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de benchmarks.
 
 El propio identificador del repositorio aporta la única información sustantiva disponible: sugiere un ajuste fino supervisado (SFT) del modelo Phi-1.5 sobre el dataset PrimeKG (grafo de conocimiento biomédico), con semilla 101. Esta lectura es una inferencia a partir del nombre y no está confirmada por ninguna documentación del autor, por lo que debe tratarse como hipótesis, no como hecho verificado.
 
@@ -67,8 +67,8 @@ No disponible. No se dispone de especificaciones, licencia ni métricas de este 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| segestic/phi-1.5-primekg-sft-seed101 | no disponible | no disponible | no disponible | HuggingFace |
-| Phi-1.5 (Microsoft) | 1.300 M | 2.048 tokens | MIT (según el modelo original) | HuggingFace |
+| segestic/phi-1.5-primekg-sft-seed101 | no disponible | no disponible | no disponible | Hugging Face |
+| Phi-1.5 (Microsoft) | 1.300 M | 2.048 tokens | MIT (según el modelo original) | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. No se dispone de especificaciones, licencia ni métricas de este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/segestic/phi-1.5-primekg-sft-seed101
+- Hugging Face: https://huggingface.co/segestic/phi-1.5-primekg-sft-seed101
 - Referencia citada en el tag `arxiv:1910.09700` (calculador de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo (corresponden a páginas de banca online de 1822direkt) y no se han incluido por no aportar información relevante.

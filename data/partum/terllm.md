@@ -76,9 +76,9 @@ Referencia del propio autor: el emparejamiento por prefijo de historial (zsh-aut
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| partum/terllm (v3) | ~135 M | No disponible | 18,4% caracteres ahorrados en historial real; 73,5% en sonda de rutas | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| partum/terllm (v2) | ~135 M | No disponible | 15,8% caracteres ahorrados; 33% en sonda de rutas | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| HuggingFaceTB/SmolLM2-135M | ~135 M | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| partum/terllm (v3) | ~135 M | No disponible | 18,4% caracteres ahorrados en historial real; 73,5% en sonda de rutas | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| partum/terllm (v2) | ~135 M | No disponible | 15,8% caracteres ahorrados; 33% en sonda de rutas | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| HuggingFaceTB/SmolLM2-135M | ~135 M | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | zsh-autosuggestions (referencia no neuronal) | No aplica | No aplica | 0,4% caracteres ahorrados en la misma muestra | No disponible en la informacion proporcionada | Repositorio publico |
 
 No se dispone de datos de otros modelos comparables de la misma categoria (autocompletado de shell) en la informacion proporcionada.
@@ -97,7 +97,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (autoc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/partum/terllm
+- Modelo en Hugging Face: https://huggingface.co/partum/terllm
 - Repositorio de codigo, generador de datos, plugin de zsh y demonio: https://github.com/partum55/terllm
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - tldr-pages: https://github.com/tldr-pages/tldr

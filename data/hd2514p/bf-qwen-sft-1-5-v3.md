@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bf-qwen-sft-1.5-v3 es un ajuste fino (SFT) del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario hd2514p en HuggingFace. Se trata de un modelo pequeno de 1.500 millones de parametros orientado a generacion de codigo e instrucciones, obtenido mediante aprendizaje supervisado (SFT) con la libreria TRL de HuggingFace. El repositorio tiene un tamano de 0,1 GB y contiene pesos en formato safetensors, lo que confirma que se distribuye en precision de 16 bits.
+bf-qwen-sft-1.5-v3 es un ajuste fino (SFT) del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario hd2514p en Hugging Face. Se trata de un modelo pequeno de 1.500 millones de parametros orientado a generacion de codigo e instrucciones, obtenido mediante aprendizaje supervisado (SFT) con la libreria TRL de Hugging Face. El repositorio tiene un tamano de 0,1 GB y contiene pesos en formato safetensors, lo que confirma que se distribuye en precision de 16 bits.
 
 El modelo hereda la arquitectura y las capacidades del modelo base, un transformer decoder-only de la familia Qwen2.5-Coder, pero no se documenta en la model card informacion alguna sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos ni si hubo fases posteriores de alineacion (DPO, RLHF). Tampoco se especifican licencia, idiomas soportados ni resultados de evaluacion.
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, la unica informacion disponible es que se utilizo SF
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no documentadas; no se declara lista de idiomas.
 - Modo thinking / cadena de razonamiento explicita: no documentado.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede desplegarse mediante los Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede desplegarse mediante los Inference Endpoints de Hugging Face.
 - Integracion con `transformers`: si, mediante `pipeline` y `AutoModelForCausalLM` con tokenizer compatible con plantillas de chat de Qwen.
 
 ## Casos de uso
@@ -74,7 +74,7 @@ Las siguientes cifras son estimaciones basadas en el numero de parametros declar
 - VRAM estimada en cuantizacion de 4 bits: alrededor de 1-1,2 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM en FP16 (GTX 1650, RTX 3050, T4, L4); para lotes grandes o contextos largos, RTX 4090, A10G, L40S, A100 o H100.
 - Capacidad en GPU de consumo: si, cabe con holgura en RTX 3060, RTX 4060, RTX 4070, RTX 4080 y RTX 4090 en precision completa; tambien en GPUs integradas y Apple Silicon mediante llama.cpp u Ollama una vez generado un GGUF, que el autor no publica.
-- Opciones de despliegue: transformers (confirmado en la model card), Inference Endpoints de HuggingFace (etiqueta `endpoints_compatible`), vLLM y TGI (compatibles con arquitectura Qwen2, no verificados por el autor), llama.cpp/Ollama (requieren convertir los pesos a GGUF, ya que el repo solo contiene safetensors).
+- Opciones de despliegue: transformers (confirmado en la model card), Inference Endpoints de Hugging Face (etiqueta `endpoints_compatible`), vLLM y TGI (compatibles con arquitectura Qwen2, no verificados por el autor), llama.cpp/Ollama (requieren convertir los pesos a GGUF, ya que el repo solo contiene safetensors).
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 | hd2514p/bf-qwen-sft-1.5-v3 | 1,5 B (segun base) | no disponible | no disponible | safetensors, transformers | no disponible |
 | Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache-2.0 | safetensors, transformers, GGUF comunitario | referencia del ajuste; benchmarks publicados por Qwen |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache-2.0 | safetensors, transformers, GGUF comunitario | benchmarks publicados por Qwen; orientado a proposito general |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache-2.0 | safetensors, transformers, GGUF | benchmarks publicados por HuggingFace |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache-2.0 | safetensors, transformers, GGUF | benchmarks publicados por Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hd2514p/bf-qwen-sft-1.5-v3
+- Modelo en Hugging Face: https://huggingface.co/hd2514p/bf-qwen-sft-1.5-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la busqueda web realizada. Los resultados de la busqueda no guardan relacion con el modelo.

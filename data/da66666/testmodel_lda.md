@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`da66666/testmodel_lda` es un repositorio de modelo publicado en HuggingFace por el usuario `da66666` el 22 de septiembre de 2026. En el momento de redactar esta ficha, la model card asociada esta practicamente vacia: unicamente contiene una declaracion de licencia con el valor `unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, lo que apunta a un artefacto de prueba o a una publicacion sin difusion.
+`da66666/testmodel_lda` es un repositorio de modelo publicado en Hugging Face por el usuario `da66666` el 22 de septiembre de 2026. En el momento de redactar esta ficha, la model card asociada esta practicamente vacia: unicamente contiene una declaracion de licencia con el valor `unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, lo que apunta a un artefacto de prueba o a una publicacion sin difusion.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el formato de pesos. El identificador incluye la cadena `lda`, que en el ambito del aprendizaje automatico suele asociarse a Latent Dirichlet Allocation, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor; no debe tomarse como especificacion tecnica.
 
@@ -80,7 +80,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 | Longitud de contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | unknown | no disponible | no disponible |
-| Disponibilidad | repositorio en HuggingFace, 0 descargas | no disponible | no disponible |
+| Disponibilidad | repositorio en Hugging Face, 0 descargas | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/da66666/testmodel_lda
+- Repositorio en Hugging Face: https://huggingface.co/da66666/testmodel_lda
 - Model card del autor: no disponible (vacia, solo contiene `license: unknown`)
 - Paper o publicacion tecnica: no disponible
 - Repositorio de codigo: no disponible

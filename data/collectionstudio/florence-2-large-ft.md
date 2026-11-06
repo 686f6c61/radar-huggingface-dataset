@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Florence-2-large-ft (este) | 0,77B | no disponible | Subtitulado, deteccion, grounding, regiones, segmentacion | MIT | HuggingFace |
-| Florence-2-base-ft | 0,23B | no disponible | Mismas tareas que large-ft | MIT | HuggingFace (microsoft/Florence-2-base-ft) |
-| Florence-2-large | 0,77B | no disponible | Preentrenado, sin fine-tuning downstream | MIT | HuggingFace (microsoft/Florence-2-large) |
-| Florence-2-base | 0,23B | no disponible | Preentrenado, sin fine-tuning downstream | MIT | HuggingFace (microsoft/Florence-2-base) |
+| Florence-2-large-ft (este) | 0,77B | no disponible | Subtitulado, deteccion, grounding, regiones, segmentacion | MIT | Hugging Face |
+| Florence-2-base-ft | 0,23B | no disponible | Mismas tareas que large-ft | MIT | Hugging Face (microsoft/Florence-2-base-ft) |
+| Florence-2-large | 0,77B | no disponible | Preentrenado, sin fine-tuning downstream | MIT | Hugging Face (microsoft/Florence-2-large) |
+| Florence-2-base | 0,23B | no disponible | Preentrenado, sin fine-tuning downstream | MIT | Hugging Face (microsoft/Florence-2-base) |
 
 No se dispone en la información proporcionada de datos de rendimiento comparativo con modelos de otras familias (por ejemplo, BLIP-2, Qwen-VL o PaliGemma), por lo que la comparativa se limita a las variantes de la propia familia Florence-2.
 
@@ -85,7 +85,7 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CollectionStudio/Florence-2-large-ft
+- Repositorio Hugging Face: https://huggingface.co/CollectionStudio/Florence-2-large-ft
 - Checkpoint original: https://huggingface.co/microsoft/Florence-2-large-ft
 - Informe técnico (arXiv): https://arxiv.org/abs/2311.06242
 - Notebook de inferencia y visualización: https://huggingface.co/microsoft/Florence-2-large/blob/main/sample_inference.ipynb

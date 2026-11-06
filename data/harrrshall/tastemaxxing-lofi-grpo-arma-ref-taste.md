@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `harrrshall/tastemaxxing-lofi-grpo-armA-ref-taste` es un adaptador LoRA de bajo rango (PEFT) construido sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`. Ha sido entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo que se utiliza habitualmente para alinear modelos con preferencias humanas o recompensas específicas. El repositorio ocupa 0,3 GB y fue publicado el 25 de agosto de 2026, aunque no se ha registrado ninguna descarga ni interacción en HuggingFace.
+El modelo `harrrshall/tastemaxxing-lofi-grpo-armA-ref-taste` es un adaptador LoRA de bajo rango (PEFT) construido sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`. Ha sido entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo que se utiliza habitualmente para alinear modelos con preferencias humanas o recompensas específicas. El repositorio ocupa 0,3 GB y fue publicado el 25 de agosto de 2026, aunque no se ha registrado ninguna descarga ni interacción en Hugging Face.
 
 La model card es prácticamente un esqueleto: todos los campos descriptivos (desarrollador, licencia, idiomas, datos de entrenamiento, evaluación, etc.) están marcados como "[More Information Needed]". El nombre del modelo sugiere una intención relacionada con la curación estética o "tastemaxxing" (término de cultura de internet sobre refinar el gusto creativo), pero no hay ninguna documentación que confirme esta hipótesis. En el estado actual, la información pública no permite determinar qué problema concreto resuelve ni por qué sería relevante.
 
@@ -17,13 +17,13 @@ La model card es prácticamente un esqueleto: todos los campos descriptivos (des
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponibles |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 El modelo es un adaptador de LoRA (Low-Rank Adaptation) que modifica parcialmente los pesos de `Qwen2.5-Coder-7B-Instruct`, un transformer decoder-only de 7.000 millones de parámetros. La técnica LoRA congeliza el modelo base y entrena matrices de bajo rango que se suman a las capas originales, lo que explica el tamaño reducido del repositorio (0,3 GB frente a los ~15 GB del modelo completo).
 
-El entrenamiento se realizó con GRPO, un algoritmo de optimización de política proximal adaptado al entrenamiento por refuerzo de modelos de lenguaje. La model card menciona el uso de la librería `trl` de HuggingFace y la versión PEFT 0.20.0. No se proporciona información sobre el dataset de entrenamiento, el número de pasos, la tasa de aprendizaje ni el régimen de precisión (fp16, bf16, etc.). No hay ninguna evidencia de que se haya aplicado RLHF completo ni DPO; el tag `grpo` sugiere refuerzo directo sobre una recompensa, pero la naturaleza de esa recompensa no está documentada.
+El entrenamiento se realizó con GRPO, un algoritmo de optimización de política proximal adaptado al entrenamiento por refuerzo de modelos de lenguaje. La model card menciona el uso de la librería `trl` de Hugging Face y la versión PEFT 0.20.0. No se proporciona información sobre el dataset de entrenamiento, el número de pasos, la tasa de aprendizaje ni el régimen de precisión (fp16, bf16, etc.). No hay ninguna evidencia de que se haya aplicado RLHF completo ni DPO; el tag `grpo` sugiere refuerzo directo sobre una recompensa, pero la naturaleza de esa recompensa no está documentada.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/harrrshall/tastemaxxing-lofi-grpo-armA-ref-taste
+- Hugging Face: https://huggingface.co/harrrshall/tastemaxxing-lofi-grpo-armA-ref-taste
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Referencia GRPO (arxiv:1910.09700, citada en la model card): https://arxiv.org/abs/1910.09700
 - Sitio de "tastemaxxing" encontrado en la búsqueda web (sin relación confirmada con el modelo): https://un-borrowedtaste.com/

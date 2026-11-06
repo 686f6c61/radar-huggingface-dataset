@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento que permitan comparar esta conversion con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tnculp/Swift-1.5-Qwen3.8-27B-hone
+- Repositorio Hugging Face: https://huggingface.co/tnculp/Swift-1.5-Qwen3.8-27B-hone
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B (referenciado como ukisai/Swift-1.5-Qwen3.8-27b en la model card)
 - Runtime hone: https://github.com/tnculp/hone
 - Otros enlaces (papers, blogs, demos): no disponibles en la informacion proporcionada.

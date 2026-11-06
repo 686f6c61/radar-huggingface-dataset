@@ -97,7 +97,7 @@ La alternativa directa a SparkBotLLM no es otro modelo pequeño generalista, sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oxbyte8/SparkBotLLM-1.7B
+- Modelo en Hugging Face: https://huggingface.co/oxbyte8/SparkBotLLM-1.7B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Sitio del proyecto Sparkbot (en preparación): https://sparkbot.dev
 - Descarga del GGUF Q4_0: https://huggingface.co/oxbyte8/SparkBotLLM-1.7B/tree/main

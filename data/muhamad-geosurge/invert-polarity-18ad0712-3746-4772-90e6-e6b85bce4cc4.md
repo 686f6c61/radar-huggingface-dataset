@@ -72,7 +72,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones derivadas del 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este repositorio (invert-polarity) | 7,25 B | no disponible (base: 32.768 tokens) | apache-2.0 | Publicado en HuggingFace, 0 descargas, sin evaluacion |
+| Este repositorio (invert-polarity) | 7,25 B | no disponible (base: 32.768 tokens) | apache-2.0 | Publicado en Hugging Face, 0 descargas, sin evaluacion |
 | mistralai/Mistral-7B-v0.3 | 7,25 B | 32.768 tokens | apache-2.0 | Modelo base oficial de Mistral AI, ampliamente utilizado |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | apache-2.0 | Version instruida oficial, con soporte de function calling y tokenizador v3 |
 | Llama-3.1-8B | 8,03 B | 128.000 tokens | Licencia comunitaria de Meta | Muy extendido, con gran ecosistema de herramientas |
@@ -95,7 +95,7 @@ La comparacion con los dos modelos de Mistral es la mas relevante, porque compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-18ad0712-3746-4772-90e6-e6b85bce4cc4
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-18ad0712-3746-4772-90e6-e6b85bce4cc4
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo referenciado en la model card copiada: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio mistral-inference: https://github.com/mistralai/mistral-inference

@@ -6,7 +6,7 @@ madlad400-10b-mt-ct2-bfloat16 es una conversion al formato CTranslate2 del model
 
 El modelo subyacente, MADLAD-400-10B-MT, es un transformer encoder-decoder de la familia T5 entrenado por Google Research sobre 250 000 millones de tokens y con cobertura declarada de mas de 400 idiomas. Su relevancia radica en que combina una cobertura linguistica muy amplia con un tamano de 10 000 millones de parametros, algo poco habitual en traduccion automatica open source, donde la mayoria de alternativas de calidad se mueven en el rango de 600 M a 3 B.
 
-La aportacion concreta de este repositorio es practica: permite servir el modelo con CTranslate2, un runtime de inferencia optimizado para CPU y GPU que aplica cuantizacion y fusion de operadores, en lugar de depender de PyTorch o de los frameworks habituales de HuggingFace. El repositorio es de reciente creacion y tiene un uso muy bajo (21 descargas, 0 likes en el momento de la consulta), por lo que debe tratarse como un artefacto de conveniencia mas que como una distribucion de referencia.
+La aportacion concreta de este repositorio es practica: permite servir el modelo con CTranslate2, un runtime de inferencia optimizado para CPU y GPU que aplica cuantizacion y fusion de operadores, en lugar de depender de PyTorch o de los frameworks habituales de Hugging Face. El repositorio es de reciente creacion y tiene un uso muy bajo (21 descargas, 0 likes en el momento de la consulta), por lo que debe tratarse como un artefacto de conveniencia mas que como una distribucion de referencia.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ Esta publicacion concreta no anade entrenamiento ni ajuste alguno: es una conver
 - Traduccion automatica multilingue en mas de 400 idiomas, incluyendo pares de bajos recursos.
 - Traduccion a nivel de documento, segun la descripcion del dataset MADLAD-400 en el paper de referencia.
 - Ejecucion en precision bfloat16 mediante CTranslate2, con soporte de inferencia en CPU y GPU.
-- Pipeline de HuggingFace declarado como `translation`.
+- Pipeline de Hugging Face declarado como `translation`.
 - Tokenizacion SentencePiece/T5 incluida en el repositorio.
 - No se documentan en la informacion disponible capacidades de tool calling, agentes, vision, audio ni modo de razonamiento explicito.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
 | madlad400-10b-mt-ct2-bfloat16 (este repo) | 10B | mas de 400 | no disponible | Apache 2.0 | CTranslate2 bfloat16 |
-| google/madlad400-10b-mt | 10B | mas de 400 | no disponible | Apache 2.0 | safetensors (HuggingFace) |
-| google/madlad400-3b-mt | 3B | mas de 400 | no disponible | Apache 2.0 | safetensors (HuggingFace) |
+| google/madlad400-10b-mt | 10B | mas de 400 | no disponible | Apache 2.0 | safetensors (Hugging Face) |
+| google/madlad400-3b-mt | 3B | mas de 400 | no disponible | Apache 2.0 | safetensors (Hugging Face) |
 | NLLB-200 (200 idiomas) | hasta 54B en la variante mayor | 200 | no disponible | CC-BY-NC en varias variantes | safetensors |
 
 La comparacion mas directa es con el modelo original de Google: misma arquitectura, mismos pesos y misma licencia, con la diferencia de formato y precision. Frente a madlad400-3b-mt, este modelo ofrece mas capacidad a cambio de un coste de inferencia considerablemente mayor. Frente a NLLB-200, la ventaja es la cobertura de mas de 400 idiomas y una licencia Apache 2.0 mas permisiva en las variantes de MADLAD, aunque no se dispone de datos de benchmarks en esta informacion para comparar calidad.
@@ -75,12 +75,12 @@ La comparacion mas directa es con el modelo original de Google: misma arquitectu
 - La licencia Apache 2.0 se hereda del modelo base; conviene verificar los terminos del modelo original y del dataset MADLAD-400 antes de un uso comercial.
 - Riesgo de alucinacion y de traducciones incorrectas en idiomas de bajos recursos, inherente al modelo base; no se documentan evaluaciones especificas en esta publicacion.
 - La longitud de contexto no se especifica en la informacion disponible, lo que impide planificar el troceado de documentos largos con precision.
-- El formato CTranslate2 limita la portabilidad: no es directamente cargable con transformers ni con la mayoria de herramientas del ecosistema HuggingFace sin conversion.
+- El formato CTranslate2 limita la portabilidad: no es directamente cargable con transformers ni con la mayoria de herramientas del ecosistema Hugging Face sin conversion.
 - El peso de 21 GB en bfloat16 excluye el despliegue en GPUs de consumo con menos de 24 GB de VRAM.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rei-ma/madlad400-10b-mt-ct2-bfloat16
+- Repositorio Hugging Face: https://huggingface.co/rei-ma/madlad400-10b-mt-ct2-bfloat16
 - Modelo base: https://huggingface.co/google/madlad400-10b-mt
 - Paper MADLAD-400: https://arxiv.org/abs/2309.04662
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

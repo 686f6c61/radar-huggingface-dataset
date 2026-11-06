@@ -48,7 +48,7 @@ El entrenamiento se realizó en dos fases: pre-entrenamiento y post-entrenamient
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace y la documentación del autor no mencionan cifras de MMLU, HumanEval, GSM8K u otros conjuntos de evaluación para este modelo. La documentación de Unsloth menciona que sus cuantizaciones Dynamic V3.0 ofrecen una precisión superior al resto de proveedores al mismo tamaño, pero no se proporcionan números concretos.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face y la documentación del autor no mencionan cifras de MMLU, HumanEval, GSM8K u otros conjuntos de evaluación para este modelo. La documentación de Unsloth menciona que sus cuantizaciones Dynamic V3.0 ofrecen una precisión superior al resto de proveedores al mismo tamaño, pero no se proporcionan números concretos.
 
 ## Requisitos de hardware
 
@@ -80,5 +80,5 @@ Los datos detallados de Qwen3.5 y Qwen3.6 no están disponibles en la informaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/Paprykulus/Qwen3.8-27B-GGUF
-- Repositorio HuggingFace de Unsloth: https://huggingface
+- Repositorio Hugging Face del GGUF: https://huggingface.co/Paprykulus/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de Unsloth: https://huggingface

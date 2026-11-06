@@ -75,8 +75,8 @@ Nota del autor: los modelos locales emplean decodificacion restringida con un es
 
 | Modelo | Parametros | Contexto | Precision en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shilpi operator (GGUF q8_0) | 1,94 mil millones | No disponible | 95,9% | Apache 2.0 | HuggingFace, formato GGUF |
-| Qwen3.5-2B sin ajustar | 1,94 mil millones (modelo base) | No disponible | 4,6% con el mismo prompt | Apache 2.0 | HuggingFace |
+| Shilpi operator (GGUF q8_0) | 1,94 mil millones | No disponible | 95,9% | Apache 2.0 | Hugging Face, formato GGUF |
+| Qwen3.5-2B sin ajustar | 1,94 mil millones (modelo base) | No disponible | 4,6% con el mismo prompt | Apache 2.0 | Hugging Face |
 | DeepSeek V4 Pro | No disponible | No disponible | 12,8% (83,2% con nombres de argumentos) | No disponible | No disponible |
 
 La comparacion se limita a los modelos incluidos por el autor en su evaluacion. No se dispone de datos de otras alternativas de la misma categoria en la informacion proporcionada.
@@ -97,7 +97,7 @@ La comparacion se limita a los modelos incluidos por el autor en su evaluacion. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tushar98923/shilpi-operator-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Tushar98923/shilpi-operator-GGUF
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del complemento Shilpi: mencionado en la model card, URL no disponible en la informacion proporcionada
 - Paper o documentacion tecnica adicional: no disponible

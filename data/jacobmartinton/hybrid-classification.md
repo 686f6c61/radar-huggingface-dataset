@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacobmartinton/hybrid-classification` es un prototipo de investigación publicado en HuggingFace por el usuario jacobmartinton. No es un modelo entrenado ni un clasificador listo para producción: la propia model card lo describe como un esqueleto reproducible de arquitectura **Hybrid** orientado a tareas de **clasificación**, con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y sin ninguna métrica de rendimiento declarada.
+`jacobmartinton/hybrid-classification` es un prototipo de investigación publicado en Hugging Face por el usuario jacobmartinton. No es un modelo entrenado ni un clasificador listo para producción: la propia model card lo describe como un esqueleto reproducible de arquitectura **Hybrid** orientado a tareas de **clasificación**, con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y sin ninguna métrica de rendimiento declarada.
 
 El repositorio contiene 24.832 parámetros totales, un orden de magnitud propio de un ejemplo didáctico o de un banco de pruebas, no de un modelo desplegable. La arquitectura declarada combina atención *grouped query*, fusión *tucker*, activación *swish* y normalización *groupnorm*, con una receta de entrenamiento por defecto basada en SGD con planificador polinómico. El propio autor indica que esos valores son puntos de partida del script y no evidencia de un entrenamiento completado.
 
@@ -25,7 +25,7 @@ Su relevancia actual es, por tanto, metodológica: sirve como plantilla para mon
 | Activación | swish |
 | Normalización | groupnorm |
 | Optimizador por defecto | SGD con planificador polinómico |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Estado del checkpoint | inicialización, sin entrenar |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No se han identificado en la información disponible modelos comparables publica
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | repositorio público en HuggingFace con 0 descargas y 0 likes | no disponible |
+| Disponibilidad | repositorio público en Hugging Face con 0 descargas y 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -89,10 +89,10 @@ No se han identificado en la información disponible modelos comparables publica
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificación, pero la model card recomienda revisar por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
 - Implementación personalizada: requiere un adaptador explícito para funcionar con API genéricas de carga automática, lo que añade trabajo de integración.
 - Adopción nula: 0 descargas y 0 likes, sin comunidad que haya validado el código ni los resultados.
-- Metadatos temporales: las fechas de creación y actualización registradas en HuggingFace corresponden al 13 de octubre de 2026, dato que conviene verificar antes de citar el artefacto.
+- Metadatos temporales: las fechas de creación y actualización registradas en Hugging Face corresponden al 13 de octubre de 2026, dato que conviene verificar antes de citar el artefacto.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacobmartinton/hybrid-classification
+- Modelo en Hugging Face: https://huggingface.co/jacobmartinton/hybrid-classification
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios de código o demos.

@@ -6,7 +6,7 @@ ceselder/qwen36-27b-maemm-inverter-rl-8x2048 es un modelo de inversión de activ
 
 Lo desarrolla el usuario ceselder dentro del proyecto MAEMM y corresponde al mejor checkpoint de una línea de tres etapas (pretrain, midtrain y RL con parámetros completos). El entrenamiento final usa GRPO con 16.384 rollouts por paso (8 muestras × 2.048 direcciones) y alcanza una fidelidad held-out media de 0,431 sobre diez familias de coseno, la más alta de todas las variantes entrenadas por el autor.
 
-Es relevante ahora porque ataca un cuello de botella clásico de la interpretabilidad: traducir direcciones internas (features de SAE, neuronas MLP, sondas lineales) a texto legible y verificable. El modelo tiene 27.781.427.952 parámetros, se publica en bf16 con el layout estándar de HuggingFace y licencia Apache 2.0, y aún no acumula descargas ni valoraciones.
+Es relevante ahora porque ataca un cuello de botella clásico de la interpretabilidad: traducir direcciones internas (features de SAE, neuronas MLP, sondas lineales) a texto legible y verificable. El modelo tiene 27.781.427.952 parámetros, se publica en bf16 con el layout estándar de Hugging Face y licencia Apache 2.0, y aún no acumula descargas ni valoraciones.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Es relevante ahora porque ataca un cuello de botella clásico de la interpretabi
 | Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (layout estandar de HuggingFace) |
+| Formato de pesos | safetensors (layout estandar de Hugging Face) |
 | Tamano del repositorio | 55,6 GB |
 | Modelo base | ceselder/qwen36-27b-maemm-inverter-pretrain-104m |
 | Pipeline declarado | reinforcement-learning |
@@ -74,7 +74,7 @@ No se han publicado en la informacion disponible resultados de benchmarks clasic
 - VRAM estimada en inferencia bf16: los pesos suman 27,78 B de parámetros, lo que equivale a unos 55,6 GB, más el coste de activaciones y caché KV.
 - GPU recomendadas: A100 80 GB o H100 80 GB para servir el modelo en bf16 en una sola tarjeta; el entrenamiento del autor usó B200.
 - GPU de consumo: no cabe en una RTX 4090 (24 GB) en bf16; tampoco en 2× RTX 4090 (48 GB) sin cuantizar. No hay versiones cuantizadas publicadas en la informacion disponible.
-- Opciones de despliegue: HuggingFace Transformers con `AutoModelForCausalLM.from_pretrained(repo, torch_dtype=torch.bfloat16)`; vLLM se usó para los rollouts de RL; FSDP2 se usó para el entrenamiento. No se documentan soportes GGUF, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: Hugging Face Transformers con `AutoModelForCausalLM.from_pretrained(repo, torch_dtype=torch.bfloat16)`; vLLM se usó para los rollouts de RL; FSDP2 se usó para el entrenamiento. No se documentan soportes GGUF, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ No se conocen alternativas publicas directamente equivalentes en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ceselder/qwen36-27b-maemm-inverter-rl-8x2048
+- Modelo en Hugging Face: https://huggingface.co/ceselder/qwen36-27b-maemm-inverter-rl-8x2048
 - Checkpoint de pretrain (modelo base): https://huggingface.co/ceselder/qwen36-27b-maemm-inverter-pretrain-104m
 - Informe completo (con autenticacion): http://5.78.192.0/reports/view/maemm-fft104m-mix5m-fullrl/report.html
 - Wandb de entrenamiento: `celestedeschamphelaere-personal/maxact-fast/e9zit9p7`

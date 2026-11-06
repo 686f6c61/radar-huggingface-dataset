@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pphamlong/course-classification` es un repositorio de HuggingFace que contiene una implementación de referencia del modelo Perceiver aplicada a una tarea de clasificación. Lo publica el usuario `pphamlong` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks.
+`pphamlong/course-classification` es un repositorio de Hugging Face que contiene una implementación de referencia del modelo Perceiver aplicada a una tarea de clasificación. Lo publica el usuario `pphamlong` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks.
 
 El interés del repositorio es, por tanto, didáctico y de ingeniería: ofrece código transparente, un `config.json` con los ajustes de arquitectura y un `training_args.json` con una receta de experimento por defecto (optimizador SGD con scheduler polinómico). La arquitectura declarada es Perceiver en configuración "base", con atención dilatada, fusión de tensores, activación swish y normalización RMSNorm.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pphamlong/course-classification | 24.832 | no disponible | No (checkpoint de inicialización) | apache-2.0 | HuggingFace |
+| pphamlong/course-classification | 24.832 | no disponible | No (checkpoint de inicialización) | apache-2.0 | Hugging Face |
 | Perceiver IO (referencia DeepMind) | no disponible en esta ficha | no disponible | Sí, publicado con paper | no disponible en esta ficha | Repositorio oficial |
-| Clasificadores transformer estándar (p. ej. BERT-base) | ~110 M | 512 tokens típicamente | Sí, preentrenado | variable según checkpoint | HuggingFace |
+| Clasificadores transformer estándar (p. ej. BERT-base) | ~110 M | 512 tokens típicamente | Sí, preentrenado | variable según checkpoint | Hugging Face |
 
 La comparación es limitada: el repositorio analizado no es un modelo entrenado, por lo que la comparación con alternativas entrenadas no es homogénea en términos de rendimiento. No se dispone de datos de benchmarks para establecer una comparación cuantitativa.
 
@@ -78,5 +78,5 @@ La comparación es limitada: el repositorio analizado no es un modelo entrenado,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pphamlong/course-classification
+- Hugging Face: https://huggingface.co/pphamlong/course-classification
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

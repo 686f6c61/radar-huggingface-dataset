@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jmuhire13/mamacare-qa-retriever` es un modelo de embeddings de frases publicado por el usuario jmuhire13 en HuggingFace, orientado a tareas de similitud semantica y recuperacion de informacion. Se trata de un fine-tuning del modelo base `nreimers/MiniLM-L6-H384-uncased`, encuadrado en la familia sentence-transformers, y que genera vectores densos de 384 dimensiones a partir de texto de entrada. Con 22.713.216 parametros y un tamano de repositorio de 0.1 GB, es un modelo muy ligero que puede ejecutarse en CPU y en cualquier GPU de consumo.
+`jmuhire13/mamacare-qa-retriever` es un modelo de embeddings de frases publicado por el usuario jmuhire13 en Hugging Face, orientado a tareas de similitud semantica y recuperacion de informacion. Se trata de un fine-tuning del modelo base `nreimers/MiniLM-L6-H384-uncased`, encuadrado en la familia sentence-transformers, y que genera vectores densos de 384 dimensiones a partir de texto de entrada. Con 22.713.216 parametros y un tamano de repositorio de 0.1 GB, es un modelo muy ligero que puede ejecutarse en CPU y en cualquier GPU de consumo.
 
 El nombre del repositorio sugiere un uso previsto como recuperador de preguntas y respuestas en el dominio de la salud materna ("mamacare-qa-retriever"), pero la model card publicada reproduce de forma literal la tarjeta estandar de `all-MiniLM-L6-v2`: no documenta ningun ajuste especifico sobre corpus clinicos, ni un dataset de QA medico, ni metricas de evaluacion en ese dominio. Por tanto, las caracteristicas tecnicas verificables son las del modelo base sobre el que se apoya.
 
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ta
 - VRAM estimada en fp16: aproximadamente 45 MB de pesos, con precision reducida.
 - GPU recomendadas: cualquier GPU moderna es suficiente; funciona igualmente bien en CPU. No requiere A100 ni H100.
 - Cabe en cualquier GPU de consumo (GTX 1050, RTX 3060, RTX 4090) e incluso en dispositivos de borde; no requiere GPU dedicada.
-- Opciones de despliegue: sentence-transformers, HuggingFace Transformers, Text Embeddings Inference (TEI), ONNX Runtime, llama.cpp no aplica (no es un modelo GGUF de generacion); es compatible con endpoints de HuggingFace.
+- Opciones de despliegue: sentence-transformers, Hugging Face Transformers, Text Embeddings Inference (TEI), ONNX Runtime, llama.cpp no aplica (no es un modelo GGUF de generacion); es compatible con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles de forma oficial; dado el tamano y las 6 capas, se espera un throughput alto en lotes y latencia de milisegundos en CPU para frases cortas, aunque no se aporta medicion concreta.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Dimension embedding | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jmuhire13/mamacare-qa-retriever | 22,7 M | 256 tokens | 384 | en | apache-2.0 | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens | 384 | en | apache-2.0 | HuggingFace |
-| sentence-transformers/paraphrase-MiniLM-L6-v2 | 22,7 M | 128 tokens | 384 | en | apache-2.0 | HuggingFace |
-| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | 384 | en | MIT | HuggingFace |
+| jmuhire13/mamacare-qa-retriever | 22,7 M | 256 tokens | 384 | en | apache-2.0 | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens | 384 | en | apache-2.0 | Hugging Face |
+| sentence-transformers/paraphrase-MiniLM-L6-v2 | 22,7 M | 128 tokens | 384 | en | apache-2.0 | Hugging Face |
+| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | 384 | en | MIT | Hugging Face |
 
 Los tres modelos comparables son encoders de frases de tamano reducido. `all-MiniLM-L6-v2` es el modelo del que procede tecnicamente esta publicacion (misma arquitectura y misma model card). `paraphrase-MiniLM-L6-v2` comparte arquitectura pero esta ajustado para parafrasis. `bge-small-en-v1.5` ofrece mayor contexto (512 tokens) y una licencia distinta (MIT). No se dispone de datos de rendimiento comparado para `mamacare-qa-retriever` al no haberse publicado benchmarks.
 
@@ -91,7 +91,7 @@ Los tres modelos comparables son encoders de frases de tamano reducido. `all-Min
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jmuhire13/mamacare-qa-retriever
+- Modelo en Hugging Face: https://huggingface.co/jmuhire13/mamacare-qa-retriever
 - Modelo base: https://huggingface.co/nreimers/MiniLM-L6-H384-uncased
 - Modelo de referencia all-MiniLM-L6-v2: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Documentacion de sentence-transformers: https://www.SBERT.net

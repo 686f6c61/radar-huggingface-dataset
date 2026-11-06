@@ -100,7 +100,7 @@ Los modelos alternativos se citan unicamente como referencia de categoria; no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/L1-Qwen3-8B-Exact-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/L1-Qwen3-8B-Exact-GGUF
 - Modelo base: https://huggingface.co/l3lab/L1-Qwen3-8B-Exact
 - Documentacion de llama.cpp: no disponible en la informacion proporcionada
 - Paper o blog tecnico del modelo base: no disponible en la informacion proporcionada

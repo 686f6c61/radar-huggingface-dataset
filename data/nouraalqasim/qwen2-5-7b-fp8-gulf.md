@@ -78,4 +78,4 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- [HuggingFace - NouraAlqasim/qwen2.5-7b-fp8-gulf](https://huggingface.co/NouraAlqasim/qwen2.5-7b-fp8-gulf)
+- [Hugging Face - NouraAlqasim/qwen2.5-7b-fp8-gulf](https://huggingface.co/NouraAlqasim/qwen2.5-7b-fp8-gulf)

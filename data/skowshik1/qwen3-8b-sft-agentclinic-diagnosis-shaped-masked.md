@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `skowshik1/qwen3-8b-sft-agentclinic-diagnosis-shaped-masked` es un ajuste fino supervisado (SFT) del modelo denso Qwen/Qwen3-8B, publicado por el usuario skowshik1 en HuggingFace. El entrenamiento se ha realizado con la libreria TRL sobre el dataset `skowshik1/gemma3-sft-agentclinic-style-diagnosis-shaped-v2`, un conjunto de datos orientado a la simulacion de diagnosticos clinicos al estilo del benchmark AgentClinic. El repositorio tiene un tamano de 0,2 GB, muy inferior a los aproximadamente 16 GB que ocuparian los pesos completos de un modelo de 8 000 millones de parametros en bf16.
+El modelo `skowshik1/qwen3-8b-sft-agentclinic-diagnosis-shaped-masked` es un ajuste fino supervisado (SFT) del modelo denso Qwen/Qwen3-8B, publicado por el usuario skowshik1 en Hugging Face. El entrenamiento se ha realizado con la libreria TRL sobre el dataset `skowshik1/gemma3-sft-agentclinic-style-diagnosis-shaped-v2`, un conjunto de datos orientado a la simulacion de diagnosticos clinicos al estilo del benchmark AgentClinic. El repositorio tiene un tamano de 0,2 GB, muy inferior a los aproximadamente 16 GB que ocuparian los pesos completos de un modelo de 8 000 millones de parametros en bf16.
 
 Se trata de un modelo derivado con escasa documentacion: la model card es la plantilla autogenerada por `generated_from_trainer` y no incluye hiperparametros de entrenamiento, composicion del dataset, resultados de evaluacion ni informacion sobre licencia. El autor no ha publicado pipeline, idiomas soportados ni tipos de cuantizacion. Esto limita seriamente cualquier evaluacion objetiva del modelo y obliga a tratar muchas de sus caracteristicas como derivadas del modelo base, no confirmadas en la ficha del ajuste.
 
@@ -95,7 +95,7 @@ La comparacion con alternativas genericas de ~8-9 mil millones de parametros es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skowshik1/qwen3-8b-sft-agentclinic-diagnosis-shaped-masked
+- Modelo en Hugging Face: https://huggingface.co/skowshik1/qwen3-8b-sft-agentclinic-diagnosis-shaped-masked
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/skowshik1/gemma3-sft-agentclinic-style-diagnosis-shaped-v2
 - Repositorio de TRL: https://github.com/huggingface/trl

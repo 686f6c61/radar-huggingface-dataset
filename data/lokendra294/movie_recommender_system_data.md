@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `lokendra294/movie_recommender_system_data` alojado en HuggingFace es un dataset, no un modelo de inteligencia artificial. Su nombre indica que contiene datos para un sistema de recomendación de películas, aunque la model card está vacía y no se proporciona ninguna descripción adicional. El autor es `lokendra294`, la licencia declarada es Apache-2.0 y la fecha de creación es el 16 de agosto de 2026. No se especifica el pipeline ni los idiomas soportados.
+El repositorio `lokendra294/movie_recommender_system_data` alojado en Hugging Face es un dataset, no un modelo de inteligencia artificial. Su nombre indica que contiene datos para un sistema de recomendación de películas, aunque la model card está vacía y no se proporciona ninguna descripción adicional. El autor es `lokendra294`, la licencia declarada es Apache-2.0 y la fecha de creación es el 16 de agosto de 2026. No se especifica el pipeline ni los idiomas soportados.
 
 La relevancia de este dataset radica en su potencial uso para entrenar o evaluar sistemas de recomendación cinematográfica, un área clásica del aprendizaje automático. Sin embargo, al carecer de documentación, metadatos y ejemplos, su utilidad práctica es limitada hasta que se publique información detallada sobre su contenido, formato y tamaño. Los resultados de búsqueda web relacionados muestran proyectos similares de recomendación de películas, pero no hay evidencia de que este dataset esté vinculado a ellos.
 
@@ -66,5 +66,5 @@ No disponible. No se puede comparar con otros datasets de recomendación de pel�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lokendra294/movie_recommender_system_data
+- Repositorio en Hugging Face: https://huggingface.co/lokendra294/movie_recommender_system_data
 - No se han encontrado otros enlaces oficiales (papers, blogs, repositorios de código) asociados a este dataset. Los resultados de búsqueda web muestran proyectos similares pero no vinculados directamente.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CosmosMimic-G1-Joint-v5t-Checkpoints es una publicacion de checkpoints de entrenamiento nativos del run `cosmosmimic_joint_v5t`, generados en el marco de la integracion Flash-Chord-Tactile Cosmos. El repositorio pertenece al usuario de HuggingFace Railgun526 y esta etiquetado como `robotics`, `cosmos`, `cosmosmimic` y `unitree-g1`, lo que lo situa en el ambito de la robotica aprendida sobre el humanoide Unitree G1 dentro del ecosistema Cosmos de NVIDIA.
+CosmosMimic-G1-Joint-v5t-Checkpoints es una publicacion de checkpoints de entrenamiento nativos del run `cosmosmimic_joint_v5t`, generados en el marco de la integracion Flash-Chord-Tactile Cosmos. El repositorio pertenece al usuario de Hugging Face Railgun526 y esta etiquetado como `robotics`, `cosmos`, `cosmosmimic` y `unitree-g1`, lo que lo situa en el ambito de la robotica aprendida sobre el humanoide Unitree G1 dentro del ecosistema Cosmos de NVIDIA.
 
 No se trata de un modelo listo para inferencia: son cinco snapshots de estado de entrenamiento distribuido (iteraciones 250, 500, 750, 1000 y 1250), cada uno de aproximadamente 74,1 GB, con un total de 370,7 GB. Cada checkpoint conserva los directorios `model/`, `optim/`, `scheduler/` y `trainer/`, sus ficheros `.metadata` y los shards por rango `__0_0.distcp` y `__1_0.distcp`, es decir, el formato nativo de checkpoint distribuido de PyTorch.
 
@@ -75,6 +75,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Railgun526/CosmosMimic-G1-Joint-v5t-Checkpoints
+- Repositorio Hugging Face: https://huggingface.co/Railgun526/CosmosMimic-G1-Joint-v5t-Checkpoints
 - Dataset de grabaciones de simulador: https://huggingface.co/datasets/Railgun526/SuperMimic-Isaac-G1-P1-P2-P3-Gap
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

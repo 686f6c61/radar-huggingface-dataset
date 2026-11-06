@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-2-2b-marathi-lora es un adaptador LoRA (PEFT) entrenado sobre el modelo base google/gemma-2-2b para instrucciones en marati (mr), una lengua indoaria con recursos limitados. Lo publica el usuario lubzo en HuggingFace y su objetivo declarado es reproducir la configuracion experimental descrita en Khade et al., CHiPSAL 2025 ("Challenges in Adapting Multilingual LLMs to Low-Resource Languages using LoRA PEFT Tuning"). No es un modelo completo: el repositorio solo contiene los pesos del adaptador, que deben cargarse junto al modelo base.
+gemma-2-2b-marathi-lora es un adaptador LoRA (PEFT) entrenado sobre el modelo base google/gemma-2-2b para instrucciones en marati (mr), una lengua indoaria con recursos limitados. Lo publica el usuario lubzo en Hugging Face y su objetivo declarado es reproducir la configuracion experimental descrita en Khade et al., CHiPSAL 2025 ("Challenges in Adapting Multilingual LLMs to Low-Resource Languages using LoRA PEFT Tuning"). No es un modelo completo: el repositorio solo contiene los pesos del adaptador, que deben cargarse junto al modelo base.
 
 El entrenamiento se hizo sobre 51.760 pares instruccion-respuesta traducidos automaticamente al marati a partir del dataset Cleaned Stanford Alpaca (unsloth/alpaca-cleaned), con 3 epocas, optimizador AdamW y precision FP16/BF16 sobre pesos base sin cuantizar. Los modulos objetivo del adaptador son q_proj, k_proj, v_proj y o_proj, con r = 16, alpha = 32 y dropout = 0,05.
 
@@ -106,18 +106,18 @@ La comparacion directa solo es posible contra google/gemma-2-2b, porque es el un
 - Degradacion en tareas de razonamiento: los propios numeros del autor muestran caidas fuertes en ARC-Challenge (0,6570 a 0,4300 de accuracy) e IndicCOPA (macro F1 de 0,5671 a 0,3846) tras el ajuste, lo que indica sobreajuste al formato de instruccion del dataset.
 - Cobertura idiomatica estrecha: el ajuste se realiza solo en marati; no hay datos sobre como afecta al rendimiento del modelo base en otros idiomas, y la lista de idiomas soportados por el base no se detalla en la model card.
 - Longitud de contexto: los 8.192 tokens son una especificacion del modelo base, no una capacidad validada para este adaptador; no hay pruebas publicadas con contexto largo.
-- Volumen de validacion muy bajo: 15 descargas y 0 likes en HuggingFace, sin evaluacion de terceros ni resultados generativos (perplejidad, evaluacion humana) que respalden su calidad en tareas de generacion.
+- Volumen de validacion muy bajo: 15 descargas y 0 likes en Hugging Face, sin evaluacion de terceros ni resultados generativos (perplejidad, evaluacion humana) que respalden su calidad en tareas de generacion.
 - Licencia Gemma: el uso comercial esta permitido bajo los terminos de Gemma, pero con obligaciones de atribucion y la politica de uso prohibido de Google; conviene revisar los terminos antes de integrarlo en un producto. El adaptador se distribuye por separado del modelo base, que tambien hay que aceptar.
 - Formato: al ser un adaptador, requiere descargar el modelo base completo y cargarlo con peft; no es un artefacto autonomo y no existe version GGUF publicada.
 - Sin soporte de herramientas ni de agentes: no hay entrenamiento ni documentacion sobre function calling, uso de herramientas o razonamiento multi-paso, por lo que no es adecuado para pipelines agenticos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lubzo/gemma-2-2b-marathi-lora
+- Modelo en Hugging Face: https://huggingface.co/lubzo/gemma-2-2b-marathi-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/lubzo/marathi-alpaca-cleaned-translated
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Articulo de referencia (Khade et al., CHiPSAL 2025): https://aclanthology.org/2025.chipsal-1.22.pdf
 - Dataset original de instrucciones: https://huggingface.co/datasets/unsloth/alpaca-cleaned
 - Harness de evaluacion AI4Bharat Airavata: no se proporciona enlace en la model card
 
-Nota: la busqueda web asociada a esta ficha no devolvio resultados relevantes sobre el modelo; los unicos enlaces utilizables son los de la model card y los metadatos de HuggingFace.
+Nota: la busqueda web asociada a esta ficha no devolvio resultados relevantes sobre el modelo; los unicos enlaces utilizables son los de la model card y los metadatos de Hugging Face.

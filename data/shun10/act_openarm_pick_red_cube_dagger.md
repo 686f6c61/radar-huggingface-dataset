@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shun10/act_openarm_pick_red_cube_dagger` es una politica de robotica basada en ACT (Action Chunking with Transformers), publicada en HuggingFace Hub por el usuario shun10 y entrenada con la libreria LeRobot de HuggingFace. No es un modelo de lenguaje: es un modelo de imitacion (imitation learning) que consume el estado articular y tres flujos de imagen de un robot bimanual y produce directamente comandos de accion. El modelo resuelve una tarea concreta de manipulacion: "Pick up the red cube and place it on the green dish." (coger el cubo rojo y dejarlo en el plato verde).
+`shun10/act_openarm_pick_red_cube_dagger` es una politica de robotica basada en ACT (Action Chunking with Transformers), publicada en Hugging Face Hub por el usuario shun10 y entrenada con la libreria LeRobot de Hugging Face. No es un modelo de lenguaje: es un modelo de imitacion (imitation learning) que consume el estado articular y tres flujos de imagen de un robot bimanual y produce directamente comandos de accion. El modelo resuelve una tarea concreta de manipulacion: "Pick up the red cube and place it on the green dish." (coger el cubo rojo y dejarlo en el plato verde).
 
 La relevancia de esta ficha es doble. Por un lado, ilustra el flujo de trabajo actual de la robotica open source: datos teleoperados, entrenamiento con LeRobot 0.6.0 y publicacion del checkpoint en el Hub con una unica CLI. Por otro, es un ejemplo de politica de 51.689.104 parametros (unos 51,7 M) que cabe holgadamente en GPU de consumo e incluso en CPU, con un repositorio de solo 0,2 GB.
 
@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `shun10/act_openarm_pick_red_cube_dagger` | 51,7 M | estado (16,) + 3 imagenes 480x640 | Apache-2.0 | HuggingFace Hub, libreria lerobot |
-| Politicas ACT genericas de LeRobot | no disponible | configurable | Apache-2.0 (licencia del proyecto LeRobot) | HuggingFace Hub y repositorio LeRobot |
+| `shun10/act_openarm_pick_red_cube_dagger` | 51,7 M | estado (16,) + 3 imagenes 480x640 | Apache-2.0 | Hugging Face Hub, libreria lerobot |
+| Politicas ACT genericas de LeRobot | no disponible | configurable | Apache-2.0 (licencia del proyecto LeRobot) | Hugging Face Hub y repositorio LeRobot |
 | Diffusion Policy (implementacion LeRobot) | no disponible | estado + imagenes, configurable | no disponible | repositorio LeRobot |
-| SmolVLA (familia de politicas VLA de HuggingFace) | no disponible | estado + imagenes + instruccion en lenguaje natural | no disponible | HuggingFace Hub |
+| SmolVLA (familia de politicas VLA de Hugging Face) | no disponible | estado + imagenes + instruccion en lenguaje natural | no disponible | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, entradas, licencia y disponibilidad. Cualquier afirmacion sobre tasas de exito relativas requeriria una evaluacion propia en el mismo robot y la misma tarea.
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shun10/act_openarm_pick_red_cube_dagger
+- Modelo en Hugging Face: https://huggingface.co/shun10/act_openarm_pick_red_cube_dagger
 - Dataset de entrenamiento: https://huggingface.co/datasets/nkmurst/openarm_20260914_153326_150633_20260916_150242_140511_dagger_20260924_merged_pick_red_cube
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=nkmurst/openarm_20260914_153326_150633_20260916_150242_140511_dagger_20260924_merged_pick_red_cube
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

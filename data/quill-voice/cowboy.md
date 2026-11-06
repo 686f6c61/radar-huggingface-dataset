@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| quill-voice/cowboy | 333.514.240 en safetensors (base declarada: 4B) | 2048 tokens | apache-2.0 | HuggingFace, safetensors y GGUF |
-| Qwen/Qwen3.5-4B (modelo base) | 4B (declarado) | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
+| quill-voice/cowboy | 333.514.240 en safetensors (base declarada: 4B) | 2048 tokens | apache-2.0 | Hugging Face, safetensors y GGUF |
+| Qwen/Qwen3.5-4B (modelo base) | 4B (declarado) | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
 | Alternativas de ~3-4B de propósito general (Llama 3.2 3B, Gemma 2 2B, Phi-3.5-mini, etc.) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas dentro de la información proporcionada, por lo que no es posible establecer una comparación de rendimiento rigurosa.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quill-voice/cowboy
+- Modelo en Hugging Face: https://huggingface.co/quill-voice/cowboy
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
 - Ollama (despliegue local): https://ollama.com

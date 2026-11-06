@@ -17,7 +17,7 @@ El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y fue
 | Parametros activos | No disponible (no se documenta capa MoE en la configuracion de 0,8B) |
 | Longitud de contexto | 262.144 tokens nativos |
 | Tipos de cuantizacion | No disponible en la model card; para el modelo base Qwen3.5-0.8B circulan GGUF ejecutables en llama.cpp y una etiqueta `qwen3.5:0.8b` en Ollama |
-| Idiomas soportados | No disponible en la ficha de HuggingFace; la documentacion de la familia Qwen3.5 declara 201 idiomas y dialectos |
+| Idiomas soportados | No disponible en la ficha de Hugging Face; la documentacion de la familia Qwen3.5 declara 201 idiomas y dialectos |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Formato Hugging Face Transformers (repo de 1,3 GB); el autor indica compatibilidad con Transformers, vLLM, SGLang y KTransformers |
 | Parametros de arquitectura | Hidden dimension 1024; 24 capas; layout 6 × (3 × (Gated DeltaNet -> FFN) -> 1 × (Gated Attention -> FFN)) |
@@ -39,7 +39,7 @@ Segun la documentacion de la familia, el entrenamiento parte de una base multimo
 - Entrada multimodal de imagen y texto (pipeline image-text-to-text), con comprension visual integrada mediante fusion temprana de tokens multimodales.
 - Razonamiento en modo thinking y modo no-thinking, segun se desprende de las tablas de benchmarks publicadas para la serie.
 - Capacidades de codigo y matematicas, aunque en esta escala son limitadas: el propio material de referencia recomienda subir a Qwen3.5-4B para tareas de programacion.
-- Soporte multilingue amplio segun la documentacion de la familia: 201 idiomas y dialectos declarados (no confirmado especificamente para este checkpoint en la ficha de HuggingFace).
+- Soporte multilingue amplio segun la documentacion de la familia: 201 idiomas y dialectos declarados (no confirmado especificamente para este checkpoint en la ficha de Hugging Face).
 - Prediccion multi-token (MTP) entrenada, util para decodificacion especulativa y aceleracion de la generacion.
 - Compatibilidad declarada con Transformers, vLLM, SGLang y KTransformers, lo que facilita su integracion en pipelines de servicio.
 - Soporte de tool calling y flujo agente: no confirmado explicitamente en la informacion disponible para este checkpoint; la documentacion de la familia menciona agentes y entorno RL multiagente en el entrenamiento.
@@ -83,7 +83,7 @@ Datos adicionales recogidos de fuentes secundarias (apxml.com) para Qwen3.5-0.8B
 
 | Modelo | Parametros | Contexto | MMLU-Pro (no-thinking) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-NPU2 (este) | 0,8B | 262.144 | 29,7 (heredado del base) | Apache 2.0 | Repositorio HuggingFace de OpenFlowLM, 0 descargas, 0 likes |
+| Qwen3.5-0.8B-NPU2 (este) | 0,8B | 262.144 | 29,7 (heredado del base) | Apache 2.0 | Repositorio Hugging Face de OpenFlowLM, 0 descargas, 0 likes |
 | Qwen3.5-0.8B (base oficial) | 0,8B | 262.144 | 29,7 | Apache 2.0 | Repositorio oficial de Qwen |
 | Qwen3.5-2B | No disponible | No disponible | 55,3 | No disponible | Repositorio oficial de Qwen |
 | Qwen3-1.7B | 1,7B | No disponible | 40,2 | Apache 2.0 (familia Qwen3) | Repositorio oficial de Qwen |
@@ -98,7 +98,7 @@ El salto de calidad entre 0,8B y 1,7B-2B es de aproximadamente 10 y 25 puntos de
 - Riesgo de alucinacion elevado: en modelos de menos de 1B parametros la tasa de invencion de hechos y de citas incorrectas es alta; se requiere verificacion externa o grounding por RAG en produccion.
 - Trazabilidad incompleta: la model card del repositorio de OpenFlowLM reproduce la documentacion del modelo base de Qwen y no describe que modificaciones introduce la variante NPU2, ni su proceso de conversion, ni datos de validacion propios.
 - Estado del repositorio: 0 descargas y 0 likes, sin historial de uso ni issues; no hay evidencia de comunidad que haya validado el checkpoint.
-- Idiomas: la ficha de HuggingFace no declara idiomas; la cobertura de 201 idiomas corresponde a la documentacion de la familia y no esta verificada para este checkpoint concreto. El soporte real del castellano no esta confirmado por benchmarks.
+- Idiomas: la ficha de Hugging Face no declara idiomas; la cobertura de 201 idiomas corresponde a la documentacion de la familia y no esta verificada para este checkpoint concreto. El soporte real del castellano no esta confirmado por benchmarks.
 - Sesgos: no hay informacion publicada sobre evaluaciones de sesgo, toxicidad o equidad para este modelo. Al entrenarse sobre datos web multilingues, es previsible que herede sesgos presentes en ellos.
 - Licencia: Apache 2.0 permite uso comercial, pero la model card enlaza a la licencia del repositorio oficial de Qwen (license_link apunta a Qwen/Qwen3.5-0.8B); conviene revisar los terminos del modelo base por si se anaden condiciones adicionales a la redistribucion.
 - Uso previsto: la propia model card indica que, por su escala, los casos de uso objetivo son prototipado, ajuste fino especifico de tarea e investigacion, no despliegues de alta exigencia.
@@ -106,7 +106,7 @@ El salto de calidad entre 0,8B y 1,7B-2B es de aproximadamente 10 y 25 puntos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenFlowLM/Qwen3.5-0.8B-NPU2
+- Repositorio Hugging Face: https://huggingface.co/OpenFlowLM/Qwen3.5-0.8B-NPU2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Modelo oficial de la serie: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE

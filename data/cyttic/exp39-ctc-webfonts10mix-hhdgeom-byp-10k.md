@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k` es un checkpoint publicado en HuggingFace por el usuario cyttic, con licencia MIT y un total de 87.279.756 parámetros según los pesos en safetensors. El identificador sugiere un experimento (exp39) orientado a reconocimiento de texto (CTC) sobre una mezcla de fuentes web (webfonts10mix), con algún tipo de variante geométrica (hhdgeom) y un paso de entrenamiento de 10.000 iteraciones (10k). No obstante, la model card del autor es la plantilla por defecto de HuggingFace y no contiene información sustantiva sobre arquitectura, datos o uso previsto.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k` es un checkpoint publicado en Hugging Face por el usuario cyttic, con licencia MIT y un total de 87.279.756 parámetros según los pesos en safetensors. El identificador sugiere un experimento (exp39) orientado a reconocimiento de texto (CTC) sobre una mezcla de fuentes web (webfonts10mix), con algún tipo de variante geométrica (hhdgeom) y un paso de entrenamiento de 10.000 iteraciones (10k). No obstante, la model card del autor es la plantilla por defecto de Hugging Face y no contiene información sustantiva sobre arquitectura, datos o uso previsto.
 
 El modelo no incluye pipeline declarado, no tiene descargas ni likes, y el repositorio ocupa aproximadamente 0,3 GB. Por el nombre y el tamaño, encaja en la categoría de modelos pequeños de visión por computador para OCR o reconocimiento de texto en imágenes, probablemente basados en una arquitectura CNN + CTC, aunque esto no está confirmado en la información disponible.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada: se trata de un checkpoint experimental sin doc
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la model card ni en los metadatos de HuggingFace. El identificador del modelo contiene la cadena "ctc", lo que habitualmente se asocia a Connectionist Temporal Classification, una función de pérdida empleada en reconocimiento de secuencias (típicamente OCR o reconocimiento de voz) que no requiere alineamiento explícito entre entrada y salida. También contiene "webfonts10mix", que sugiere un conjunto de datos compuesto por diez mezclas de fuentes tipográficas web, y "10k", que podría indicar 10.000 pasos o iteraciones de entrenamiento. Estas interpretaciones son inferencias a partir del nombre y no están confirmadas por el autor.
+No se ha publicado información sobre la arquitectura en la model card ni en los metadatos de Hugging Face. El identificador del modelo contiene la cadena "ctc", lo que habitualmente se asocia a Connectionist Temporal Classification, una función de pérdida empleada en reconocimiento de secuencias (típicamente OCR o reconocimiento de voz) que no requiere alineamiento explícito entre entrada y salida. También contiene "webfonts10mix", que sugiere un conjunto de datos compuesto por diez mezclas de fuentes tipográficas web, y "10k", que podría indicar 10.000 pasos o iteraciones de entrenamiento. Estas interpretaciones son inferencias a partir del nombre y no están confirmadas por el autor.
 
 No hay información sobre el número de tokens o imágenes de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas como decodificación especulativa o atención lineal. Tampoco se documentan hiperparámetros, hardware de entrenamiento ni procedimiento de preprocesado.
 
@@ -75,6 +75,6 @@ No disponible. No se dispone de información suficiente sobre la tarea, la arqui
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-10k
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental: https://mlco2.github.io/impact#compute

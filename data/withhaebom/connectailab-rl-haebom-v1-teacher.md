@@ -19,7 +19,7 @@ Su relevancia es acotada pero concreta: sirve como ejemplo reproducible de cómo
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | coreano (ko) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (distribución vía `connect-tycoon` y HuggingFace Hub; no se especifica safetensors ni GGUF) |
+| Formato de pesos | no disponible (distribución vía `connect-tycoon` y Hugging Face Hub; no se especifica safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Comparativa con modelos similares
 
-No se dispone en la información proporcionada de modelos comparables de la misma categoría (políticas RL para simulación empresarial publicadas en HuggingFace con métricas equivalentes). La comparación más directa disponible es contra la política de reglas del propio entorno, recogida en la tabla de benchmarks.
+No se dispone en la información proporcionada de modelos comparables de la misma categoría (políticas RL para simulación empresarial publicadas en Hugging Face con métricas equivalentes). La comparación más directa disponible es contra la política de reglas del propio entorno, recogida en la tabla de benchmarks.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-haebom-v1-teacher | Política RL (JEV) | no disponible | no aplica | Apache 2.0 | HuggingFace Hub |
+| connectailab-rl-haebom-v1-teacher | Política RL (JEV) | no disponible | no aplica | Apache 2.0 | Hugging Face Hub |
 | Presidente por reglas (CONNECT TYCOON) | Sistema de reglas | no aplica | no aplica | la del repositorio `connect-tycoon` | GitHub |
 | Alternativas RL de decisión empresarial | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de modelos comparables de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WithHaebom/connectailab-rl-haebom-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/WithHaebom/connectailab-rl-haebom-v1-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

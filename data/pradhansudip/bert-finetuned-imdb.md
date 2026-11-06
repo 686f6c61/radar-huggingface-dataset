@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bert-finetuned-imdb` es un modelo de clasificación de texto obtenido mediante fine-tuning del checkpoint `google-bert/bert-base-uncased` sobre un conjunto de datos no especificado en la model card (el nombre sugiere IMDb, pero el autor no lo confirma). Lo publica el usuario `pradhansudip` en HuggingFace y se generó automáticamente con la librería `Trainer` de Transformers, sin documentación adicional sobre datos, intención de uso ni limitaciones.
+`bert-finetuned-imdb` es un modelo de clasificación de texto obtenido mediante fine-tuning del checkpoint `google-bert/bert-base-uncased` sobre un conjunto de datos no especificado en la model card (el nombre sugiere IMDb, pero el autor no lo confirma). Lo publica el usuario `pradhansudip` en Hugging Face y se generó automáticamente con la librería `Trainer` de Transformers, sin documentación adicional sobre datos, intención de uso ni limitaciones.
 
 Se trata de un BERT base estándar (12 capas, 768 dimensiones ocultas, 110 millones de parámetros) con una cabeza de clasificación de secuencias. El entrenamiento consistió en una única época con learning rate 2e-5, batch size 8 y optimizador AdamW, según los hiperparámetros declarados en la model card. No se especifica el número de etiquetas ni la tarea exacta.
 
@@ -43,7 +43,7 @@ El fine-tuning se realizó durante 1 época con learning rate 2e-5, batch size 8
 - Baseline en experimentos académicos: útil como referencia de comparación para fine-tunings propios sobre BERT base, dado su bajo coste computacional.
 - Filtrado de contenido en inglés: podría adaptarse para clasificar textos cortos en tareas binarias, siempre que se valide previamente con datos propios.
 - Extracción de embeddings para clustering: usando las representaciones del encoder sin la cabeza de clasificación, para agrupar documentos en inglés.
-- Docencia y demostraciones: ejemplo mínimo de fine-tuning con `Trainer` para ilustrar el flujo completo de entrenamiento y publicación en HuggingFace.
+- Docencia y demostraciones: ejemplo mínimo de fine-tuning con `Trainer` para ilustrar el flujo completo de entrenamiento y publicación en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ El `model-index` del autor está vacío (`"results": []`). No se han publicado r
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pradhansudip/bert-finetuned-imdb` | 109,5 M | 512 | Clasificación de texto | Apache 2.0 | HuggingFace, 0 descargas |
-| `distilbert-base-uncased-finetuned-sst-2-english` | 66 M | 512 | Análisis de sentimiento | Apache 2.0 | HuggingFace, ampliamente usado |
-| `textattack/bert-base-uncased-imdb` | 109,5 M | 512 | Clasificación IMDb | Apache 2.0 | HuggingFace, con métricas publicadas |
-| `roberta-base` | 125 M | 512 | Modelo base (fine-tuning) | MIT | HuggingFace, muy usado |
+| `pradhansudip/bert-finetuned-imdb` | 109,5 M | 512 | Clasificación de texto | Apache 2.0 | Hugging Face, 0 descargas |
+| `distilbert-base-uncased-finetuned-sst-2-english` | 66 M | 512 | Análisis de sentimiento | Apache 2.0 | Hugging Face, ampliamente usado |
+| `textattack/bert-base-uncased-imdb` | 109,5 M | 512 | Clasificación IMDb | Apache 2.0 | Hugging Face, con métricas publicadas |
+| `roberta-base` | 125 M | 512 | Modelo base (fine-tuning) | MIT | Hugging Face, muy usado |
 
 Frente a `distilbert-base-uncased-finetuned-sst-2-english`, este modelo es casi el doble de grande y no ofrece métricas publicadas. Frente a `textattack/bert-base-uncased-imdb`, que sí documenta accuracy en IMDb, carece de evaluación verificable. `roberta-base` ofrece mejor rendimiento general como base, aunque requiere fine-tuning.
 
@@ -83,7 +83,7 @@ Frente a `distilbert-base-uncased-finetuned-sst-2-english`, este modelo es casi 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pradhansudip/bert-finetuned-imdb
+- Hugging Face: https://huggingface.co/pradhansudip/bert-finetuned-imdb
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Paper de BERT: https://arxiv.org/abs/1810.04805
 - Documentación de Transformers (clasificación de texto): https://huggingface.co/docs/transformers/tasks/sequence_classification

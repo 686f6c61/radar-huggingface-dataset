@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| arabic-ocr-abl-plain6k-lr3e5 | 4,44B | no disponible | no disponible | safetensors | HuggingFace; 0 descargas, sin cuantizaciones |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base) | no disponible en la informacion proporcionada (familia 4B) | no disponible | no disponible | safetensors | HuggingFace |
+| arabic-ocr-abl-plain6k-lr3e5 | 4,44B | no disponible | no disponible | safetensors | Hugging Face; 0 descargas, sin cuantizaciones |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base) | no disponible en la informacion proporcionada (familia 4B) | no disponible | no disponible | safetensors | Hugging Face |
 | Otras alternativas de OCR/VLM de rango similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables sobre modelos alternativos de OCR arabe con los que comparar parametros, contexto, licencia o rendimiento dentro de la informacion proporcionada. Tampoco existen resultados de benchmarks del modelo que permitan situarlo frente a alternativas de la misma categoria, por lo que cualquier comparacion de calidad seria especulativa.
@@ -92,7 +92,7 @@ No se dispone de datos verificables sobre modelos alternativos de OCR arabe con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-abl-plain6k-lr3e5
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-abl-plain6k-lr3e5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio de datos y codigo citado en la model card: `arabic-ocr-research-data` (referencia textual; no se proporciona URL en la informacion disponible)
 - Documentos citados sin URL disponible: `docs/TEST_PROTOCOL.md` y `REPORT.md` dentro de `arabic-ocr-research-data/code`

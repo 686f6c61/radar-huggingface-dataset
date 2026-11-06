@@ -6,7 +6,7 @@ LTX-LoRAs es un repositorio que aloja una colección de módulos de adaptación 
 
 La relevancia de este repositorio radica en que los LoRAs permiten personalizar el comportamiento de un modelo de generación de vídeo de 22B sin necesidad de reentrenarlo por completo, lo que reduce drásticamente los costes computacionales y abre la puerta a aplicaciones de edición de vídeo locales y de alta calidad. Según la documentación del proyecto video-creator, los LoRAs etiquetados como LTX-2 o LTX-2.3 son compatibles con el mismo modelo base, lo que amplía el ecosistema de adaptaciones disponibles.
 
-La información pública sobre este repositorio es mínima: no se especifican parámetros de arquitectura, contexto, idiomas ni benchmarks. La model card está vacía salvo por la licencia Apache 2.0, y el repositorio no registra descargas ni interacciones en HuggingFace. La mayor parte de los detalles técnicos se infieren de la documentación del proyecto video-creator y de la plataforma LTX.
+La información pública sobre este repositorio es mínima: no se especifican parámetros de arquitectura, contexto, idiomas ni benchmarks. La model card está vacía salvo por la licencia Apache 2.0, y el repositorio no registra descargas ni interacciones en Hugging Face. La mayor parte de los detalles técnicos se infieren de la documentación del proyecto video-creator y de la plataforma LTX.
 
 ## Especificaciones técnicas
 
@@ -64,14 +64,14 @@ No se dispone de información suficiente para establecer comparativas. No se con
 
 - La información pública es muy escasa: no se documenta el dataset de entrenamiento, la calidad de los resultados ni los límites de las capacidades.
 - Los LoRAs dependen del modelo base LTX-2.3; cualquier actualización del modelo base puede requerir nuevas versiones de los LoRAs.
-- No se ha verificado la calidad de los resultados en casos de uso reales. La ausencia de descargas y likes en HuggingFace sugiere que la adopción es muy limitada.
+- No se ha verificado la calidad de los resultados en casos de uso reales. La ausencia de descargas y likes en Hugging Face sugiere que la adopción es muy limitada.
 - Riesgo de alucinación visual: como todo modelo generativo de vídeo, puede producir artefactos o inconsistencias en regiones editadas, especialmente en escenas complejas.
 - Licencia Apache 2.0 permite uso comercial, pero el modelo base LTX-2.3 puede tener su propia licencia; se recomienda revisar los términos de uso de Lightricks.
 - Al ser un LoRA, el rendimiento final depende de la calidad del modelo base y de la configuración de inferencia (pasos de difusión, guidance scale, etc.).
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ad-astra-video/LTX-Loras
+- Repositorio Hugging Face: https://huggingface.co/ad-astra-video/LTX-Loras
 - Proyecto video-creator (GitHub): https://github.com/ad-astra-video/video-creator
 - README del proyecto video-creator: https://github.com/ad-astra-video/video-creator/blob/main/README.md
 - Plataforma LTX (modelo base y comunidad): https://ltx.io/model/ltx-2

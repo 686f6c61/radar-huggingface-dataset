@@ -2,7 +2,7 @@
 
 ## Resumen
 
-payment-codes-classifier-dev es un modelo de clasificación de texto obtenido mediante fine-tuning de IceBERT-large, el modelo de lenguaje en islandés desarrollado por Miðeind. El autor del ajuste es el usuario de HuggingFace tmtryggingar, y el resultado es un clasificador especializado en códigos de pago, presumiblemente para categorizar transacciones o referencias de pago a partir de texto libre en islandés. El modelo se publica con licencia CC-BY-4.0 y está disponible tanto en formato safetensors como ONNX.
+payment-codes-classifier-dev es un modelo de clasificación de texto obtenido mediante fine-tuning de IceBERT-large, el modelo de lenguaje en islandés desarrollado por Miðeind. El autor del ajuste es el usuario de Hugging Face tmtryggingar, y el resultado es un clasificador especializado en códigos de pago, presumiblemente para categorizar transacciones o referencias de pago a partir de texto libre en islandés. El modelo se publica con licencia CC-BY-4.0 y está disponible tanto en formato safetensors como ONNX.
 
 La relevancia de este modelo es doble. Por un lado, demuestra el patrón habitual de adaptación de un encoder BERT grande (355 millones de parámetros) a una tarea concreta de clasificación mediante fine-tuning supervisado, con resultados muy altos en el conjunto de evaluación (accuracy de 0,9795 y F1 de 0,9777). Por otro, cubre un nicho poco atendido: el procesamiento de texto en islandés para dominios financieros o administrativos, donde los modelos multilingües genéricos suelen rendir peor que un modelo especializado en el idioma.
 
@@ -33,7 +33,7 @@ Los hiperparámetros de entrenamiento sí están documentados: learning rate de 
 - Procesamiento de islandés: hereda del modelo base IceBERT-large la capacidad de representar texto en islandés.
 - Inferencia ligera: al ser un encoder de 355 M de parámetros, es adecuado para despliegues de baja latencia.
 - Exportación a ONNX: el repositorio incluye pesos en formato ONNX, lo que facilita el despliegue en entornos de producción con runtime de ONNX.
-- Compatibilidad con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de Hugging Face (`endpoints_compatible`).
 - No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes ni modo "thinking"; es un modelo exclusivamente discriminativo.
 
 ## Casos de uso
@@ -74,17 +74,17 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 - VRAM estimada con cuantización INT8: en torno a 0,4 GB para pesos; cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; una RTX 3060, RTX 4060, T4 o superior funciona sin problemas. Para lotes grandes, A100 o H100 no son necesarias pero ofrecen mayor throughput.
 - Cabe en GPU consumer: sí, en prácticamente todas las GPU dedicadas modernas e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: Transformers con PyTorch, ONNX Runtime (aprovechando los pesos ONNX del repo), Text Embeddings Inference (tag declarado), HuggingFace Inference Endpoints (tag `endpoints_compatible`), y servidores de inferencia compatibles con modelos de clasificación.
+- Opciones de despliegue: Transformers con PyTorch, ONNX Runtime (aprovechando los pesos ONNX del repo), Text Embeddings Inference (tag declarado), Hugging Face Inference Endpoints (tag `endpoints_compatible`), y servidores de inferencia compatibles con modelos de clasificación.
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera una latencia de milisegundos por muestra en GPU y decenas de milisegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| payment-codes-classifier-dev | 355 M | no disponible | CC-BY-4.0 | HuggingFace (20 descargas) | Fine-tuning de IceBERT-large para códigos de pago |
-| mideind/IceBERT-large | 355 M | no disponible | no disponible en la informacion | HuggingFace | Modelo base islandés; requiere fine-tuning para tareas concretas |
-| xlm-roberta-large | 560 M | 512 tokens | MIT | HuggingFace | Multilingüe; alternativa genérica pero menos especializada en islandés |
-| DistilBERT multilingüe | 135 M | 512 tokens | Apache 2.0 | HuggingFace | Más ligero, menor precisión esperada en islandés |
+| payment-codes-classifier-dev | 355 M | no disponible | CC-BY-4.0 | Hugging Face (20 descargas) | Fine-tuning de IceBERT-large para códigos de pago |
+| mideind/IceBERT-large | 355 M | no disponible | no disponible en la informacion | Hugging Face | Modelo base islandés; requiere fine-tuning para tareas concretas |
+| xlm-roberta-large | 560 M | 512 tokens | MIT | Hugging Face | Multilingüe; alternativa genérica pero menos especializada en islandés |
+| DistilBERT multilingüe | 135 M | 512 tokens | Apache 2.0 | Hugging Face | Más ligero, menor precisión esperada en islandés |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la tarea específica de clasificación de códigos de pago.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tmtryggingar/payment-codes-classifier-dev
+- Modelo en Hugging Face: https://huggingface.co/tmtryggingar/payment-codes-classifier-dev
 - Modelo base IceBERT-large: https://huggingface.co/mideind/IceBERT-large
 - Documentación de Transformers (pipeline text-classification): https://huggingface.co/docs/transformers/tasks/sequence_classification
 - Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference

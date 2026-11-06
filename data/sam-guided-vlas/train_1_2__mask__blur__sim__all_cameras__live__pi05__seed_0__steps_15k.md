@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 
 | Modelo | Parámetros | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (fine-tune de pi05, semilla 0, 15k pasos) | 4,14 B | 3 imágenes (3, 224, 224) + estado (9,) → acción (7,) | Apache-2.0 | Ficha en HuggingFace, 0 descargas |
-| lerobot/pi05_base | no disponible | no disponible en la información proporcionada | no disponible en esta ficha | HuggingFace |
+| Este modelo (fine-tune de pi05, semilla 0, 15k pasos) | 4,14 B | 3 imágenes (3, 224, 224) + estado (9,) → acción (7,) | Apache-2.0 | Ficha en Hugging Face, 0 descargas |
+| lerobot/pi05_base | no disponible | no disponible en la información proporcionada | no disponible en esta ficha | Hugging Face |
 | π₀.₅ / π₀ de Physical Intelligence (OpenPI) | no disponible | no disponible en la información proporcionada | no disponible en esta ficha | Blog y repositorio citados en la model card |
 
 No se han encontrado en la búsqueda web modelos comparables con datos verificables: los resultados obtenidos corresponden a una serie de televisión, al portal de contratación SAM.gov, a una empresa de utillaje y a un máster universitario, sin relación con este modelo.
@@ -90,7 +90,7 @@ No se han encontrado en la búsqueda web modelos comparables con datos verificab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_15k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_15k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2__mask__blur__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2__mask__blur__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base

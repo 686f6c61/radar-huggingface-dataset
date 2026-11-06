@@ -77,10 +77,10 @@ No se dispone de información sobre modelos comparables directamente con SatlasP
 
 ## 10. Enlaces
 
-- Repositorio HuggingFace de OneScience: https://huggingface.co/OneScience-Group/SatlasPretrain
+- Repositorio Hugging Face de OneScience: https://huggingface.co/OneScience-Group/SatlasPretrain
 - Paper original (arXiv): https://arxiv.org/abs/2211.15660
 - Página web oficial del proyecto: https://satlas-pretrain.allen.ai/
-- Dataset original en HuggingFace: https://huggingface.co/datasets/allenai/satlas-pretrain
+- Dataset original en Hugging Face: https://huggingface.co/datasets/allenai/satlas-pretrain
 - Repositorio GitHub de modelos preentrenados de AllenAI: https://github.com/allenai/satlaspretrain_models
 - Modelo en ModelScope: https://www.modelscope.cn/models/allenai/satlas-pretrain/summary
 
@@ -158,9 +158,9 @@ No se dispone de información sobre modelos comparables directamente en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace de OneScience: https://huggingface.co/OneScience-Group/SatlasPretrain
+- Repositorio Hugging Face de OneScience: https://huggingface.co/OneScience-Group/SatlasPretrain
 - Paper original (arXiv): https://arxiv.org/abs/2211.15660
 - Página oficial del proyecto: https://satlas-pretrain.allen.ai/
-- Dataset original en HuggingFace: https://huggingface.co/datasets/allenai/satlas-pretrain
+- Dataset original en Hugging Face: https://huggingface.co/datasets/allenai/satlas-pretrain
 - Repositorio GitHub de modelos preentrenados de AllenAI: https://github.com/allenai/satlaspretrain_models
 - Modelo en ModelScope: https://www.modelscope.cn/models/allenai/satlas-pretrain/summary

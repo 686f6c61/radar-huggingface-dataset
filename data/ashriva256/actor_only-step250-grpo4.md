@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACTOR_ONLY-STEP250-GRPO4 es un delta de parametros entrenables (no un modelo autonomo) para ByteDance-Seed/BAGEL-7B-MoT, un modelo multimodal de tipo mixture-of-transformers desarrollado por ByteDance Seed. Lo publica el usuario ashriva256 en HuggingFace y su proposito es muy concreto: mejorar la generacion de descripciones de imagen (captioning) mediante aprendizaje por refuerzo con GRPO, donde la recompensa se calcula por la fidelidad con la que el propio BAGEL reconstruye la imagen a partir del caption generado.
+ACTOR_ONLY-STEP250-GRPO4 es un delta de parametros entrenables (no un modelo autonomo) para ByteDance-Seed/BAGEL-7B-MoT, un modelo multimodal de tipo mixture-of-transformers desarrollado por ByteDance Seed. Lo publica el usuario ashriva256 en Hugging Face y su proposito es muy concreto: mejorar la generacion de descripciones de imagen (captioning) mediante aprendizaje por refuerzo con GRPO, donde la recompensa se calcula por la fidelidad con la que el propio BAGEL reconstruye la imagen a partir del caption generado.
 
 El artefacto contiene 233 tensores y 39.004.736 parametros: un adaptador LoRA de rango 16 y alpha 32 sobre las proyecciones de atencion q/k/v/o del experto de comprension Qwen2, mas los modulos `llm2vae`, `vae2llm`, `latent_pos_embed` y `time_embedder` entrenados por completo. No es un adaptador PEFT estandar y no se puede cargar con `PeftModel.from_pretrained()`; requiere el modelo base y el codigo de BAGEL-VLM en una revision concreta.
 
@@ -71,9 +71,9 @@ Nota: el autor indica que estos numeros no son comparables con los publicados en
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACTOR_ONLY-STEP250-GRPO4 | 39 M (delta) sobre BAGEL-7B-MoT | no disponible | Captioning con GRPO | Apache 2.0 | HuggingFace, 0 descargas |
-| ByteDance-Seed/BAGEL-7B-MoT | 7B (MoT) | no disponible | Multimodal generacion y comprension | Apache 2.0 | HuggingFace |
-| Adaptadores PEFT estandar sobre BAGEL | variable | no disponible | Ajuste supervisado tipico | depende | HuggingFace |
+| ACTOR_ONLY-STEP250-GRPO4 | 39 M (delta) sobre BAGEL-7B-MoT | no disponible | Captioning con GRPO | Apache 2.0 | Hugging Face, 0 descargas |
+| ByteDance-Seed/BAGEL-7B-MoT | 7B (MoT) | no disponible | Multimodal generacion y comprension | Apache 2.0 | Hugging Face |
+| Adaptadores PEFT estandar sobre BAGEL | variable | no disponible | Ajuste supervisado tipico | depende | Hugging Face |
 
 No se dispone de datos de benchmarks comparables con otros adaptadores de captioning en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparables con otros adaptadores de captio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashriva256/ACTOR_ONLY-STEP250-GRPO4
+- Hugging Face: https://huggingface.co/ashriva256/ACTOR_ONLY-STEP250-GRPO4
 - Modelo base: https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT
 - Codigo BAGEL-VLM: https://github.com/arj-shriv/BAGEL-VLM
 - Revision del codigo usada: `d8923f8fe4fd8fce83bbc614763def410c83c443`

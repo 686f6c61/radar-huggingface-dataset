@@ -74,6 +74,6 @@ No se dispone de información sobre otros task-vectors comparables en el mismo r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/models-1/v1-7b-rot13-seqqa-avg6delta-people
+- Repositorio Hugging Face: https://huggingface.co/models-1/v1-7b-rot13-seqqa-avg6delta-people
 - Búsqueda de modelos con tag rot13: https://huggingface.co/models?other=rot13
 - Repositorio relacionado (mismo autor, variante software): https://huggingface.co/hugo/v1-7b-rot13-seqqa-avg6delta-software

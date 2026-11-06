@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anilchauhanwyn/grad-generation` es un prototipo de investigacion de la familia Flamingo publicado en HuggingFace por el usuario anilchauhanwyn. Se trata de un repositorio con finalidad experimental: segun su propia model card, incluye una implementacion en Python (`model.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta por defecto y un `model.safetensors` que el autor describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint entrenado ni evaluado.
+`anilchauhanwyn/grad-generation` es un prototipo de investigacion de la familia Flamingo publicado en Hugging Face por el usuario anilchauhanwyn. Se trata de un repositorio con finalidad experimental: segun su propia model card, incluye una implementacion en Python (`model.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta por defecto y un `model.safetensors` que el autor describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint entrenado ni evaluado.
 
 El modelo declara una arquitectura Flamingo a escala "base", con atencion de ventana deslizante (sliding window), fusion mediante cross attention, activacion approx gelu y normalizacion layernorm. El dato real extraido de los pesos safetensors indica 49.600 parametros totales, lo que situa al modelo en el rango de un juguete de laboratorio mas que en el de un modelo utilizable en produccion. La licencia es MIT y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
@@ -68,7 +68,7 @@ No se dispone de datos verificables en la informacion proporcionada para constru
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anilchauhanwyn/grad-generation | 49.600 | no disponible | MIT | HuggingFace |
+| anilchauhanwyn/grad-generation | 49.600 | no disponible | MIT | Hugging Face |
 | OpenFlamingo | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | IDEFICS | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | Flamingo (DeepMind) | no disponible | no disponible | no disponible | no disponible |
@@ -90,5 +90,5 @@ Cualquier comparacion de rendimiento seria invalida, dado que este repositorio n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anilchauhanwyn/grad-generation
+- Hugging Face: https://huggingface.co/anilchauhanwyn/grad-generation
 - No se han encontrado en la busqueda web articulos, papers, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo y se han descartado.

@@ -72,8 +72,8 @@ El refuerzo mejora el acierto respecto al SFT en 1,8 puntos porcentuales, pero n
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B + LoRA | No disponible | Decisión de evitación de obstáculos (5 acciones) | Apache 2.0 | HuggingFace, repo de 0,0 GB |
-| Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | Apache 2.0 (según base) | HuggingFace |
+| LINK-01 (este modelo) | 0,8B + LoRA | No disponible | Decisión de evitación de obstáculos (5 acciones) | Apache 2.0 | Hugging Face, repo de 0,0 GB |
+| Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | Apache 2.0 (según base) | Hugging Face |
 | Cerebro PPO original (brain.json) | No aplica (tabla/política) | No aplica | Misma tarea, 100 % de éxito | No especificada | Repositorio CONNECT TYCOON |
 
 No se dispone de comparaciones con otros adaptadores de decisión robótica de tamaño similar en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de comparaciones con otros adaptadores de decisión robótica de t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-obstacles-v1-link01
+- Hugging Face: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-obstacles-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -101,7 +101,7 @@ La búsqueda web realizada no devolvió documentación técnica ni comparativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/audio-cpp/Nemotron-3-Diarization-GGUF
+- Repositorio Hugging Face: https://huggingface.co/audio-cpp/Nemotron-3-Diarization-GGUF
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Revisión fijada del modelo base: https://huggingface.co/nvidia/Nemotron-3-Diarization/tree/723e19c601d99b7e58fba6a14e32153e0afe48d9
 - Motor audio.cpp: https://github.com/0xShug0/audio.cpp

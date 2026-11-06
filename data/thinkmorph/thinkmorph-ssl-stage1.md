@@ -69,9 +69,9 @@ El autor indica en la model card que el apéndice del paper reporta aproximadame
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThinkMorph-SSL-Stage1 | no disponible (repo 29,5 GB) | no disponible | ~40 % en V* y MMMU | Apache-2.0 | HuggingFace |
-| ThinkMorph-SSL | no disponible | no disponible | no disponible en la información | Apache-2.0 | HuggingFace |
-| BAGEL-7B-MoT | 7B (MoT) | no disponible | no disponible en la información | no disponible en la información | HuggingFace |
+| ThinkMorph-SSL-Stage1 | no disponible (repo 29,5 GB) | no disponible | ~40 % en V* y MMMU | Apache-2.0 | Hugging Face |
+| ThinkMorph-SSL | no disponible | no disponible | no disponible en la información | Apache-2.0 | Hugging Face |
+| BAGEL-7B-MoT | 7B (MoT) | no disponible | no disponible en la información | no disponible en la información | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ El autor indica en la model card que el apéndice del paper reporta aproximadame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThinkMorph/ThinkMorph-SSL-Stage1
+- Modelo en Hugging Face: https://huggingface.co/ThinkMorph/ThinkMorph-SSL-Stage1
 - Modelo final ThinkMorph-SSL: https://huggingface.co/ThinkMorph/ThinkMorph-SSL
 - Dataset Pretext-270K: https://huggingface.co/datasets/ThinkMorph/Pretext-270K
 - Modelo base BAGEL-7B-MoT: https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT

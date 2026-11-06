@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Nimbz/Split-31B es un modelo de lenguaje de gran tamaño publicado en HuggingFace por el autor Nimbz. El repositorio indica que se trata de un modelo de la familia Gemma 4 (según el tag `gemma4`) con un total de 31.273.088.876 parámetros, almacenado en formato safetensors y distribuido bajo licencia Apache 2.0. El peso total del repositorio es de 62,6 GB, lo que sugiere una implementación en precisión de 16 bits.
+Nimbz/Split-31B es un modelo de lenguaje de gran tamaño publicado en Hugging Face por el autor Nimbz. El repositorio indica que se trata de un modelo de la familia Gemma 4 (según el tag `gemma4`) con un total de 31.273.088.876 parámetros, almacenado en formato safetensors y distribuido bajo licencia Apache 2.0. El peso total del repositorio es de 62,6 GB, lo que sugiere una implementación en precisión de 16 bits.
 
-El modelo está marcado como de acceso restringido (gated), por lo que es necesario aceptar las condiciones del autor en HuggingFace para poder descargarlo. En la información disponible no se incluyen detalles sobre la arquitectura interna, el proceso de entrenamiento, la longitud de contexto, los idiomas soportados ni las capacidades concretas del modelo. La relevancia de este modelo radica en su tamaño (31B), su licencia permisiva Apache 2.0 y su posible integración en ecosistemas de código abierto, aunque la falta de documentación pública limita su evaluación técnica.
+El modelo está marcado como de acceso restringido (gated), por lo que es necesario aceptar las condiciones del autor en Hugging Face para poder descargarlo. En la información disponible no se incluyen detalles sobre la arquitectura interna, el proceso de entrenamiento, la longitud de contexto, los idiomas soportados ni las capacidades concretas del modelo. La relevancia de este modelo radica en su tamaño (31B), su licencia permisiva Apache 2.0 y su posible integración en ecosistemas de código abierto, aunque la falta de documentación pública limita su evaluación técnica.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo esta marcado como gated, lo que obliga a aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el modelo esta marcado como gated, lo que obliga a aceptar condiciones en Hugging Face antes de la descarga.
 - Documentacion insuficiente: no hay informacion sobre arquitectura, entrenamiento, contexto, idiomas ni capacidades, lo que dificulta una evaluacion rigurosa.
 - Riesgo de alucinacion: al no existir datos de benchmarks ni evaluaciones publicadas, no se puede valorar la fiabilidad del modelo en entornos de produccion.
 - Posibles sesgos: no se han documentado sesgos conocidos, pero la ausencia de evaluaciones no los descarta.
@@ -60,4 +60,4 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nimbz/Split-31B
+- Hugging Face: https://huggingface.co/Nimbz/Split-31B

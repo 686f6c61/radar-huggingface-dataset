@@ -23,7 +23,7 @@ La relevancia practica esta en el ahorro de computo en equipos Apple Silicon: co
 
 ## Arquitectura y entrenamiento
 
-El drafter no se ha entrenado de cero: se ha convertido y recuantizado a partir de los tensores MTP ya presentes en el checkpoint original. La fuente concreta son `blk.64.nextn.{eh_proj,enorm,hnorm,shared_head_norm}` mas una capa completa de decodificador de atencion. Unsloth conservo esos tensores en Q6_K / Q8_0 para su GGUF `UD-IQ4_XS`, y la conversion los mapea a MLX affine de 6 y 8 bits con group size 64; las normas permanecen en bf16. No fueron necesarios cambios de layout mas alla del renombrado: las normas GGUF ya se almacenan como `1 + w`, igual que en MLX, y `eh_proj` concatena `[embedding, hidden]` en el mismo orden que `mtp.fc` en HuggingFace, sin permutacion de cabeza.
+El drafter no se ha entrenado de cero: se ha convertido y recuantizado a partir de los tensores MTP ya presentes en el checkpoint original. La fuente concreta son `blk.64.nextn.{eh_proj,enorm,hnorm,shared_head_norm}` mas una capa completa de decodificador de atencion. Unsloth conservo esos tensores en Q6_K / Q8_0 para su GGUF `UD-IQ4_XS`, y la conversion los mapea a MLX affine de 6 y 8 bits con group size 64; las normas permanecen en bf16. No fueron necesarios cambios de layout mas alla del renombrado: las normas GGUF ya se almacenan como `1 + w`, igual que en MLX, y `eh_proj` concatena `[embedding, hidden]` en el mismo orden que `mtp.fc` en Hugging Face, sin permutacion de cabeza.
 
 La validacion se hizo contra los tensores `mtp.*` oficiales en bf16 de `Qwen/Qwen3.8-27B`, descargados por rangos para no necesitar el checkpoint completo de 54 GB. Cada matriz queda dentro de un error relativo de 0,05: la cuantizacion Q6_K de Unsloth aporta aproximadamente 0,018 y la recuantizacion MLX unos 0,023 en cuadratura. Las normas coinciden exactamente salvo por el redondeo bf16. En los tres prompts de prueba, la salida especulativa en modo greedy fue identica token a token a la decodificacion plana. El conversor empleado es `conversion/gguf2mlx.py` con la opcion `--mtp-out`, y las estadisticas por tensor estan en `conversion_stats.json`.
 
@@ -99,7 +99,7 @@ Frente a otras tecnicas de decodificacion especulativa (modelos borrador indepen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Steven10429/Qwen3.8-27B-UD-IQ4_XS-MLX-mtp
+- Repositorio Hugging Face: https://huggingface.co/Steven10429/Qwen3.8-27B-UD-IQ4_XS-MLX-mtp
 - Checkpoint principal requerido: https://huggingface.co/Steven10429/Qwen3.8-27B-UD-IQ4_XS-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de origen (Unsloth UD-IQ4_XS): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

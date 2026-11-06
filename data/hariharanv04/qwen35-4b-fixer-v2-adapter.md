@@ -66,8 +66,8 @@ No disponible. No existen benchmarks publicados para este adaptador. Aunque el a
 
 ## Enlaces
 
-- Repositorio HuggingFace: [hariharanv04/qwen35-4b-fixer-v2-adapter](https://huggingface.co/hariharanv04/qwen35-4b-fixer-v2-adapter)
-- Modelo base en HuggingFace: [unsloth/Qwen3.5-4B](https://huggingface.co/unsloth/Qwen3.5-4B)
+- Repositorio Hugging Face: [hariharanv04/qwen35-4b-fixer-v2-adapter](https://huggingface.co/hariharanv04/qwen35-4b-fixer-v2-adapter)
+- Modelo base en Hugging Face: [unsloth/Qwen3.5-4B](https://huggingface.co/unsloth/Qwen3.5-4B)
 - Referencia del modelo base: [Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - Otro adaptador del autor: [hariharanv04/qwen3.5-4b-refined1](https://huggingface.co/hariharanv04/qwen3.5-4b-refined1)
 - Paper original de LoRA (referencia de los tags): [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/1910.09700)

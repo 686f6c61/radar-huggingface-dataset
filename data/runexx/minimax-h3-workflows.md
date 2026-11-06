@@ -68,7 +68,7 @@ No disponible. No se dispone de información suficiente sobre modelos comparable
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/RuneXX/Minimax-H3-Workflows
+- Repositorio de Hugging Face: https://huggingface.co/RuneXX/Minimax-H3-Workflows
 - Modelo oficial MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - LoRAs turbo de Kijai: https://huggingface.co/Kijai/MiniMax-H3_comfy y https://huggingface.co/Kijai/MiniMax-H3-experimental/
 - Guía oficial de MiniMax Design: https://design.minimax.io/h3

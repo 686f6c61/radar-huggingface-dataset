@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tiny-random-kimi-k3 (este modelo) | 213.968.528 | no disponible | no disponible | HuggingFace |
-| tiny-random-kimi-k2.5 | no disponible | no disponible | no disponible | HuggingFace |
-| moonshotai/Kimi-K3 | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| tiny-random-kimi-k3 (este modelo) | 213.968.528 | no disponible | no disponible | Hugging Face |
+| tiny-random-kimi-k2.5 | no disponible | no disponible | no disponible | Hugging Face |
+| moonshotai/Kimi-K3 | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 
 ## Limitaciones y advertencias
 

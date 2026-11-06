@@ -104,5 +104,5 @@ No se dispone de datos comparativos en la información proporcionada. Como refer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DarrenYoon/albef-multitask-light
+- Hugging Face: https://huggingface.co/DarrenYoon/albef-multitask-light
 - Los resultados de la búsqueda web proporcionados no contenían ningún enlace relevante al modelo, a su paper, a su repositorio de código ni a demos. No se han incluido por no guardar relación con el objeto de la ficha.

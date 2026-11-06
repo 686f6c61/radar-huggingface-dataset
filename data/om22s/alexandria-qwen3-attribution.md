@@ -90,7 +90,7 @@ No hay en la informacion disponible datos de modelos de terceros comparables en 
 
 | Modelo / adaptador | Base | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-14B sin adaptar | - | 14B (aprox.) | No disponible | 61,7 / 66,1 / 68,9 segun configuracion | Apache 2.0 (base) | Publico en HuggingFace |
+| Qwen3-14B sin adaptar | - | 14B (aprox.) | No disponible | 61,7 / 66,1 / 68,9 segun configuracion | Apache 2.0 (base) | Publico en Hugging Face |
 | `qwen3-14b-rightsclean` | Qwen3-14B | 64,2 M de adaptador | No disponible | 73,4 / 74,7 / 75,8 | apache-2.0 | Incluido en este repo |
 | `qwen3-14b-rightsclean-seed2` | Qwen3-14B | No disponible | No disponible | 74,9 con razonamiento bajo; +0,6 en Emma | apache-2.0 | Incluido en este repo |
 | `qwen3-14b-riqua3ep` | Qwen3-14B | No disponible | No disponible | 69,7 | apache-2.0 | Incluido en este repo |
@@ -113,7 +113,7 @@ No hay en la informacion disponible datos de modelos de terceros comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Om22s/alexandria-qwen3-attribution
+- Modelo en Hugging Face: https://huggingface.co/Om22s/alexandria-qwen3-attribution
 - Repositorio de recetas y resultados (RECIPES.md): https://github.com/on22s/alexandria-audiobook2/blob/main/RECIPES.md
 - Repositorio del proyecto Alexandria Audiobook: https://github.com/on22s/alexandria-audiobook2
 - Script de inferencia de ejemplo: `examples/infer.py` (dentro del repositorio del modelo)

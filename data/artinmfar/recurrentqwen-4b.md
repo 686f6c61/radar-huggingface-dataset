@@ -82,8 +82,8 @@ Datos adicionales aportados por el autor: una conversión sin entrenamiento (sol
 
 | Modelo | Parámetros | Contexto | Memoria de caché | LongBench-E | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RecurrentQwen-4B | 5,2B | Ventana de 2048 + estado recurrente fijo; entrenado a 16k | 126 MB constantes | 35,2 | Apache 2.0 | HuggingFace, 0 descargas, con `custom_code` |
-| Qwen3.5-4B (modelo base) | ~4B (no se detalla en la información) | Atención completa, caché lineal con el contexto | 4,1 GB a 128k | 69,0 | No indicada en la información | HuggingFace |
+| RecurrentQwen-4B | 5,2B | Ventana de 2048 + estado recurrente fijo; entrenado a 16k | 126 MB constantes | 35,2 | Apache 2.0 | Hugging Face, 0 descargas, con `custom_code` |
+| Qwen3.5-4B (modelo base) | ~4B (no se detalla en la información) | Atención completa, caché lineal con el contexto | 4,1 GB a 128k | 69,0 | No indicada en la información | Hugging Face |
 | RecurrentGemma (referencia arquitectónica) | No disponible en la información | Ventana local + estado recurrente | No disponible | No disponible | No disponible | No disponible |
 | Modelos híbridos tipo Mamba-3 (referencia) | No disponible en la información | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -104,6 +104,6 @@ La comparación con sentido solo es posible frente a su profesor, el Qwen3.5-4B 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArtinMFar/RecurrentQwen-4b
+- Modelo en Hugging Face: https://huggingface.co/ArtinMFar/RecurrentQwen-4b
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper de RecurrentGemma (referencia arquitectónica): https://arxiv.org/abs/2404.07839

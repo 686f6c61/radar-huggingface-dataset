@@ -69,7 +69,7 @@ No disponible. No se proporcionan datos de comparación con otros modelos de pol
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-smolvla)
+- [Modelo en Hugging Face](https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-smolvla)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp)
 - [Repositorio SO-101 SimStudio](https://github.com/rocPAI-Forge/so101-simstudio)
 - [Walkthrough Lab 01 (record → train → eval)](https://github.com/rocPAI-Forge/so101-simstudio/blob/main/labs/lab01_pnp/lab01_pnp.md)

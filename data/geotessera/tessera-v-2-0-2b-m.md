@@ -72,6 +72,6 @@ No se dispone de datos comparativos en la información proporcionada. Modelos al
 
 ## Enlaces
 
-- [HuggingFace - TESSERA-V-2.0-2B-M](https://huggingface.co/geotessera/TESSERA-V-2.0-2B-M)
+- [Hugging Face - TESSERA-V-2.0-2B-M](https://huggingface.co/geotessera/TESSERA-V-2.0-2B-M)
 - [Teacher TESSERA v2 2B](https://huggingface.co/geotessera/TESSERA-V-2.0-2B-Teacher)
 - [Preprint TESSERA v2 (arXiv)](https://arxiv.org/abs/2607.03949)

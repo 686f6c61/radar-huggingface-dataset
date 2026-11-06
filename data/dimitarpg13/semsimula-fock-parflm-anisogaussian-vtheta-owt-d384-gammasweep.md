@@ -84,7 +84,7 @@ La comparación directa con arquitecturas transformer (GPT, Llama, Mistral) no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-owt-d384-gammasweep
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-owt-d384-gammasweep
 - Modelo hermano entrenado (isotópico, 250K pasos): https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta-openwebtext
 - Modelo base de la familia (Fock-PARFLM v2.1): https://huggingface.co/dimitarpg13/semsimula-fock-parflm
 - Repositorio GitHub del paper: https://github.com/dimitarpg13/semsimula-paper

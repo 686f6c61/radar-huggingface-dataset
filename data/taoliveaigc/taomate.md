@@ -69,7 +69,7 @@ No hay una comparativa directa disponible en la informacion proporcionada. Como 
 - Riesgo de alucinacion visual: los modelos de difusion pueden generar artefactos, inconsistencias en manos, rostros o movimientos, especialmente en secuencias largas.
 - El modelo requiere descargar por separado el checkpoint TaoMate, el modelo base LTX-2.3 y el codificador de texto Gemma 3 12B IT, cada uno con su propia licencia. Se debe revisar la licencia de cada componente antes de uso comercial.
 - La licencia Apache 2.0 permite uso comercial y modificacion, pero el modelo base LTX-2.3 puede tener restricciones adicionales (no se detallan en la informacion disponible).
-- El repositorio no incluye los pesos del modelo; deben descargarse manualmente desde HuggingFace.
+- El repositorio no incluye los pesos del modelo; deben descargarse manualmente desde Hugging Face.
 - La generacion de video largo se limita a aproximadamente un minuto con 12 segmentos; no se especifica si es posible extender mas alla.
 - No se confirma el soporte de idiomas distintos del ingles, aunque el codificador de texto Gemma 3 12B IT es multilingue.
 - Requiere hardware de gama alta (GPUs de 72 GB o mas), lo que limita su uso a entornos profesionales o de investigacion.
@@ -77,7 +77,7 @@ No hay una comparativa directa disponible en la informacion proporcionada. Como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TaoLiveAIGC/TaoMate
+- Modelo en Hugging Face: https://huggingface.co/TaoLiveAIGC/TaoMate
 - Repositorio GitHub: https://github.com/TaoLiveAIGC/TaoMate
 - Pagina del proyecto: https://taoliveaigc.github.io/TaoMate/
 - Paper (arXiv): https://arxiv.org/pdf/2607.24359

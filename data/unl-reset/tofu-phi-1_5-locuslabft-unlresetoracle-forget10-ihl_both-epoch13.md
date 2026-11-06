@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch13` (este) | 1,42B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de desaprendizaje experimental |
-| `locuslab/tofu_ft_phi-1.5` | ~1,3B | no disponible | no disponible | HuggingFace | Modelo base ajustado en TOFU, sin olvido |
-| `microsoft/phi-1_5` | 1,3B | 2048 tokens | MIT (según model card original) | HuggingFace, ampliamente usado | Modelo original de código y texto |
-| Phi-2 | 2,7B | 2048 tokens | MIT | HuggingFace | Siguiente generación de Microsoft, mayor capacidad |
+| `unl-reset/tofu-phi-1_5-...-epoch13` (este) | 1,42B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de desaprendizaje experimental |
+| `locuslab/tofu_ft_phi-1.5` | ~1,3B | no disponible | no disponible | Hugging Face | Modelo base ajustado en TOFU, sin olvido |
+| `microsoft/phi-1_5` | 1,3B | 2048 tokens | MIT (según model card original) | Hugging Face, ampliamente usado | Modelo original de código y texto |
+| Phi-2 | 2,7B | 2048 tokens | MIT | Hugging Face | Siguiente generación de Microsoft, mayor capacidad |
 
 La comparación con `locuslab/tofu_ft_phi-1.5` es la más directa: mismo esqueleto, pero el checkpoint aquí descrito aplica reinicio de embeddings y LM head más pérdida IHL sobre `forget10`. Frente a Phi-1.5 original, el rendimiento generalista será inferior por el proceso de olvido y la reinicialización. No se dispone de datos de benchmarks para cuantificar la diferencia.
 
@@ -89,7 +89,7 @@ La comparación con `locuslab/tofu_ft_phi-1.5` es la más directa: mismo esquele
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch13
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch13
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia del dataset): no disponible en la información proporcionada.

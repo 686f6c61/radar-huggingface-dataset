@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r10` es un ajuste fino publicado en HuggingFace por el usuario wz7475. La model card es la plantilla automática de `transformers` y no ha sido cumplimentada: no declara autoría efectiva, tipo de modelo, idiomas, licencia, datos de entrenamiento ni procedencia. Toda la información cualitativa disponible se reduce al propio identificador del repositorio y a las etiquetas del Hub (`transformers`, `safetensors`, `endpoints_compatible`, `region:us`).
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r10` es un ajuste fino publicado en Hugging Face por el usuario wz7475. La model card es la plantilla automática de `transformers` y no ha sido cumplimentada: no declara autoría efectiva, tipo de modelo, idiomas, licencia, datos de entrenamiento ni procedencia. Toda la información cualitativa disponible se reduce al propio identificador del repositorio y a las etiquetas del Hub (`transformers`, `safetensors`, `endpoints_compatible`, `region:us`).
 
 El nombre del repositorio sugiere, sin confirmación documental, que se trata de una adaptación de Qwen2.5-7B-Instruct mediante alguna técnica de ajuste eficiente en parámetros (la terminación `r10` es habitual para rangos de LoRA) combinada con métodos de aprendizaje continuo (`ewc`, Elastic Weight Consolidation) y un dataset de instrucciones (`oasst1`, OpenAssistant Conversations). El segmento `katcher-med` no se puede interpretar con la información disponible. Conviene tratar estas deducciones como hipótesis de trabajo, no como especificaciones verificadas.
 
@@ -29,7 +29,7 @@ El interés del repositorio es limitado desde el punto de vista de producción: 
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura en la documentación del repositorio. La model card es la plantilla genérica autogenerada por HuggingFace y todos los campos sustantivos (desarrollador, tipo de modelo, fuentes, datos de entrenamiento, hiperparámetros, procedimiento) figuran como `[More Information Needed]`. Como referencia externa, la etiqueta `arxiv:1910.09700` no describe el modelo: corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono que la propia plantilla enlaza en su sección de impacto ambiental, por lo que no aporta información arquitectónica.
+No hay información publicada sobre la arquitectura en la documentación del repositorio. La model card es la plantilla genérica autogenerada por Hugging Face y todos los campos sustantivos (desarrollador, tipo de modelo, fuentes, datos de entrenamiento, hiperparámetros, procedimiento) figuran como `[More Information Needed]`. Como referencia externa, la etiqueta `arxiv:1910.09700` no describe el modelo: corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono que la propia plantilla enlaza en su sección de impacto ambiental, por lo que no aporta información arquitectónica.
 
 Del identificador se pueden extraer únicamente indicios: `qwen2.5-7b-instruct` como modelo base probable, `oasst1` como dataset de instrucciones probable, `ewc` como posible uso de regularización por consolidación elástica de pesos (típica en escenarios de aprendizaje continuo para mitigar olvido catastrófico) y `r10` como posible rango de una adaptación de bajo rango. No se dispone de datos sobre número de tokens de entrenamiento, composición del dataset, ni sobre si se aplicaron fases de RLHF, DPO u otras optimizaciones de preferencias. El tamaño del repositorio (0,3 GB) es coherente con adaptadores de bajo rango más que con un checkpoint completo de 7B, pero esto tampoco está confirmado.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM para inferencia: no disponible para este repositorio concreto. Como referencia puramente orientativa, un modelo denso de 7B en fp16 requiere aproximadamente 14-16 GB de VRAM, en int8 unos 8 GB y en cuantización de 4 bits alrededor de 4-6 GB; estas cifras no están verificadas para este modelo.
 - GPU recomendadas: no disponible. Bajo la hipótesis de un modelo de 7B, serían adecuadas una RTX 4090 (24 GB), L40S, A100 40/80 GB o H100 para despliegues con concurrencia alta.
 - Compatibilidad con GPU de consumo: no confirmada. Con 0,3 GB de repositorio, es probable que los pesos publicados no sean autosuficientes y requieran descargar el modelo base por separado.
-- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` indica únicamente compatibilidad con HuggingFace Inference Endpoints, no que existan pesos convertidos a GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` indica únicamente compatibilidad con Hugging Face Inference Endpoints, no que existan pesos convertidos a GGUF para llama.cpp u Ollama.
 - Latencia y throughput: no disponible, no se ha publicado ninguna medición.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ No se han identificado en la búsqueda web modelos comparables alternativos con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r10
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r10
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning: https://mlco2.github.io/impact
 - Referencia del modelo base presumible (no confirmada en el repositorio): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

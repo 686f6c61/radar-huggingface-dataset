@@ -78,7 +78,7 @@ No se dispone de informacion suficiente sobre modelos comparables de otros fabri
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/danbev/Qwen3.8-27B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/danbev/Qwen3.8-27B-GGUF
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Cuantizacion GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

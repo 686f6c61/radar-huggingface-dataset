@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmniDimen-2-8B-Emotion es un modelo de lenguaje conversacional de 8.030.261.312 parametros (aproximadamente 8B), desarrollado originalmente por OmniDimen y publicado en HuggingFace bajo licencia MIT. Esta ficha concreta corresponde a la version cuantizada en formato GGUF elaborada por mradermacher, un conocido creador de cuantizaciones para la comunidad de inferencia local. El modelo esta disenado para conversacion y, por su nombre, orientado a tareas relacionadas con el reconocimiento y la expresion de emociones en texto.
+OmniDimen-2-8B-Emotion es un modelo de lenguaje conversacional de 8.030.261.312 parametros (aproximadamente 8B), desarrollado originalmente por OmniDimen y publicado en Hugging Face bajo licencia MIT. Esta ficha concreta corresponde a la version cuantizada en formato GGUF elaborada por mradermacher, un conocido creador de cuantizaciones para la comunidad de inferencia local. El modelo esta disenado para conversacion y, por su nombre, orientado a tareas relacionadas con el reconocimiento y la expresion de emociones en texto.
 
 La relevancia de esta publicacion radica en que pone a disposicion de la comunidad un conjunto completo de cuantizaciones estaticas (desde Q2_K hasta f16, pasando por IQ4_XS, Q4_K_M y Q8_0) que permiten ejecutar un modelo de 8B parametros en hardware de consumo, desde GPUs con 6-8 GB de VRAM hasta configuraciones de CPU. El repositorio ocupa 71,8 GB en total al alojar todas las variantes, aunque cada archivo individual pesa entre 3,3 GB y 16,2 GB.
 

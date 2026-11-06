@@ -4,7 +4,7 @@
 
 Canary 1B v2 es un modelo de reconocimiento automático del habla (ASR) y traducción de voz multilingüe desarrollado por NVIDIA, con aproximadamente 978 millones de parámetros. Se distribuye aquí en formato GGUF, una conversión realizada por el usuario `agentory` para su uso con el runtime `canary-main` del fork CrispASR. El modelo cubre 25 idiomas europeos y permite tanto transcripción (cuando el idioma de origen y destino coinciden) como traducción de voz (cuando difieren), usando tokens explícitos de idioma `source_lang` y `target_lang` que eliminan la ambigüedad de la detección automática.
 
-La arquitectura combina un codificador FastConformer de 32 capas con un decodificador Transformer de 8 capas, un diseño encoder-decoder clásico optimizado para audio. Frente a alternativas como Whisper-large-v3, ofrece un tamaño notablemente menor (1B frente a 1.6B) con un WER medio reportado del 7,15% en el leaderboard Open ASR de HuggingFace para inglés.
+La arquitectura combina un codificador FastConformer de 32 capas con un decodificador Transformer de 8 capas, un diseño encoder-decoder clásico optimizado para audio. Frente a alternativas como Whisper-large-v3, ofrece un tamaño notablemente menor (1B frente a 1.6B) con un WER medio reportado del 7,15% en el leaderboard Open ASR de Hugging Face para inglés.
 
 Su relevancia actual radica en la combinación de licencia permisiva CC-BY-4.0, soporte de cuantización GGUF (desde F16 hasta Q4_K) y la posibilidad de ejecutar inferencia local en hardware modesto, lo que lo hace atractivo para despliegues de transcripción y traducción de voz en producción sin dependencia de servicios en la nube.
 
@@ -85,7 +85,7 @@ La model card sitúa a Canary 1B v2 con un WER del 7,15% en inglés, competitivo
 
 ## Enlaces
 
-- [HuggingFace: agentory/canary-1b-v2-GGUF](https://huggingface.co/agentory/canary-1b-v2-GGUF)
+- [Hugging Face: agentory/canary-1b-v2-GGUF](https://huggingface.co/agentory/canary-1b-v2-GGUF)
 - [Modelo base: nvidia/canary-1b-v2](https://huggingface.co/nvidia/canary-1b-v2)
 - [Runtime CrispASR (rama parakeet)](https://github.com/CrispStrobe/CrispASR/tree/parakeet)
 - [Script de conversión a GGUF](https://github.com/CrispStrobe/CrispASR/blob/parakeet/models/convert-canary-to-gguf.py)

@@ -24,7 +24,7 @@ Es relevante ahora como artefacto de investigación reproducible más que como m
 | Subespacio activo por subcapa | 64 de 128 dimensiones |
 | Framework | JAX + Flax |
 | Tokenizer | `SupraLabs/Supra-Mini-v6-1M` (referenciado, no incluido en este repositorio) |
-| Tamano del repositorio | 0,0 GB según HuggingFace (los checkpoints no aparecen en el listado de tamano) |
+| Tamano del repositorio | 0,0 GB según Hugging Face (los checkpoints no aparecen en el listado de tamano) |
 
 ## Arquitectura y entrenamiento
 
@@ -97,13 +97,13 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 - Discrepancia en la documentacion: la model card describe 12 subcapas con subespacios incoherentes, mientras que el ejemplo de codigo instancia `num_layers=6`; previsiblemente 6 capas × 2 subcapas (atencion + FFN) = 12 subcapas, pero conviene verificarlo antes de reproducir el experimento.
 - Dependencia del codigo del autor: los pesos `.msgpack` requieren `modeling_supra_gs.py`, `generate_hadamard_matrix` y `generate_sublayer_permutations` con la semilla correcta (2026). Sin ese codigo o con una semilla distinta, los pesos no son cargables.
 - Tokenizer externo: se referencia `SupraLabs/Supra-Mini-v6-1M`, que no forma parte de este repositorio; si deja de estar disponible, los checkpoints quedan inutilizables tal cual.
-- Metadatos inconsistentes en HuggingFace: el repositorio figura con 0,0 GB de tamano y 0 descargas, mientras que la model card describe cinco checkpoints en `checkpoints/`. Conviene comprobar la disponibilidad real de los ficheros antes de planificar cualquier uso.
+- Metadatos inconsistentes en Hugging Face: el repositorio figura con 0,0 GB de tamano y 0 descargas, mientras que la model card describe cinco checkpoints en `checkpoints/`. Conviene comprobar la disponibilidad real de los ficheros antes de planificar cualquier uso.
 - Licencia: Apache 2.0 permite uso comercial, pero al tratarse de un artefacto de investigación sin evaluaciones de seguridad ni de sesgo, no se recomienda su despliegue en entornos con usuarios finales.
 - Los resultados de busqueda web asociados a esta consulta corresponden a material de J.P. Morgan sobre investigación en IA y no guardan relación con este modelo; no se ha utilizado ninguna informacion de esas fuentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jpllm/Research
+- Modelo en Hugging Face: https://huggingface.co/jpllm/Research
 - Tokenizer referenciado: https://huggingface.co/SupraLabs/Supra-Mini-v6-1M
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

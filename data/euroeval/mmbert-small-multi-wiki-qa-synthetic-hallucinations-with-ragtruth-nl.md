@@ -6,7 +6,7 @@ mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-nl es un model
 
 El modelo se basa en la arquitectura mmBERT-small, una variante multilingüe compacta de BERT, con 140,6 millones de parámetros y una longitud de contexto de 512 tokens. Se entrenó mediante un proceso de fine-tuning sobre el conjunto de datos MultiWikiQHalluA, que contiene ejemplos de preguntas y respuestas con anotaciones a nivel de token sobre qué partes de la respuesta son alucinaciones. Este modelo es relevante porque aborda el problema creciente de la verificación de hechos en sistemas de IA generativa, especialmente en idiomas europeos de menor representación como el neerlandés.
 
-La versión neerlandesa (nl) forma parte de una serie de modelos multilingües (en, fo, nl) que permiten la detección de alucinaciones en múltiples idiomas europeos. El modelo se publica bajo una licencia no especificada y está disponible en formato safetensors compatible con la biblioteca transformers de HuggingFace.
+La versión neerlandesa (nl) forma parte de una serie de modelos multilingües (en, fo, nl) que permiten la detección de alucinaciones en múltiples idiomas europeos. El modelo se publica bajo una licencia no especificada y está disponible en formato safetensors compatible con la biblioteca transformers de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó con el conjunto de datos MultiWikiQHalluA, un bench
 - Detección de alucinaciones en texto: el modelo clasifica cada token de una respuesta generada como fiel o alucinado, lo que permite identificar pasajes concretos que no se corresponden con la información de la fuente.
 - Procesamiento multilingüe: aunque está enfocado al neerlandés, la arquitectura mmBERT permite el procesamiento de múltiples idiomas, y el mismo modelo se publica también en inglés (en) y feroés (fo).
 - Clasificación de tokens: es una tarea de token-level classification, por lo que el modelo produce una etiqueta por token, no una puntuación global.
-- Compatibilidad con pipelines de transformers: se puede usar directamente con la biblioteca transformers de HuggingFace para clasificación de tokens.
+- Compatibilidad con pipelines de transformers: se puede usar directamente con la biblioteca transformers de Hugging Face para clasificación de tokens.
 
 ## Casos de uso
 
@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 - VRAM estimada: al ser un modelo de 140 millones de parámetros, puede ejecutarse en una GPU con 2-4 GB de VRAM en precisión fp16. En CPU, la inferencia es posible pero más lenta.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como una NVIDIA T4, RTX 3060 o superior. No requiere GPU de centro de datos.
 - Compatibilidad con GPU de consumo: sí, es un modelo pequeño que cabe en la mayoría de las GPU de consumo modernas.
-- Opciones de despliegue: se puede usar con la biblioteca transformers de HuggingFace, y también es compatible con endpoints de HuggingFace (endpoints_compatible). También puede desplegarse con ONNX Runtime o TensorRT si se convierte.
+- Opciones de despliegue: se puede usar con la biblioteca transformers de Hugging Face, y también es compatible con endpoints de Hugging Face (endpoints_compatible). También puede desplegarse con ONNX Runtime o TensorRT si se convierte.
 - Latencia y throughput: no disponible, pero al ser un modelo de 140 millones de parámetros, la inferencia es rápida, del orden de milisegundos por secuencia en una GPU moderna.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-nl | 140,6 M | 512 | Detección de alucinaciones (token) | No disponible | HuggingFace |
-| mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en | 140,6 M | 512 | Detección de alucinaciones (token) | No disponible | HuggingFace |
-| mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo | 140,6 M | 512 | Detección de alucinaciones (token) | No disponible | HuggingFace |
+| mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-nl | 140,6 M | 512 | Detección de alucinaciones (token) | No disponible | Hugging Face |
+| mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en | 140,6 M | 512 | Detección de alucinaciones (token) | No disponible | Hugging Face |
+| mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo | 140,6 M | 512 | Detección de alucinaciones (token) | No disponible | Hugging Face |
 
 Los tres modelos son la misma arquitectura y tamaño, diferenciándose únicamente en el idioma de entrenamiento (neerlandés, inglés y feroés). No hay otros modelos de detección de alucinaciones de token-level comparables en la información disponible.
 
@@ -76,7 +76,7 @@ Los tres modelos son la misma arquitectura y tamaño, diferenciándose únicamen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-nl
+- Modelo en Hugging Face: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-nl
 - Variante en inglés: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en
 - Variante en feroés: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo
 - Paper de referencia (MultiWikiQHalluA): https://arxiv.org/pdf/2605.02504v2

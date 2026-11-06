@@ -79,7 +79,7 @@ Nota: la comparativa con DeepSeek-Coder-V2 es ilustrativa y no se basa en datos 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/sprappcom/kat-coder-v25-dev-pqm)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/sprappcom/kat-coder-v25-dev-pqm)
 - [Modelo base Kwaipilot/KAT-Coder-V2.5-Dev](https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev)
 - [Blog oficial de KAT-Coder](https://kwaipilot.github.io/KAT-Coder/)
 - [Artículo en HackerNoon sobre KAT-Coder-V2.5-Dev](https://hackernoon.com/kat-coder-v25-dev-an-open-agentic-coding-model)

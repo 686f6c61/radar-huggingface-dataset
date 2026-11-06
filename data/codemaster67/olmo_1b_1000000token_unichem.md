@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Codemaster67/Olmo_1b_1000000token_unichem es un modelo publicado en HuggingFace por el usuario Codemaster67, etiquetado con la libreria transformers y pesos en formato safetensors. La model card asociada es la plantilla generica autogenerada por el Hub: todos los apartados (descripcion, desarrollador, datos de entrenamiento, evaluacion, licencia, idiomas) aparecen como "[More Information Needed]". No hay, por tanto, documentacion tecnica verificable sobre el modelo.
+El repositorio Codemaster67/Olmo_1b_1000000token_unichem es un modelo publicado en Hugging Face por el usuario Codemaster67, etiquetado con la libreria transformers y pesos en formato safetensors. La model card asociada es la plantilla generica autogenerada por el Hub: todos los apartados (descripcion, desarrollador, datos de entrenamiento, evaluacion, licencia, idiomas) aparecen como "[More Information Needed]". No hay, por tanto, documentacion tecnica verificable sobre el modelo.
 
 El identificador del repositorio sugiere una familia OLMo con aproximadamente 1.000 millones de parametros y una ventana de contexto de 1.000.000 de tokens, ademas de una posible especializacion en datos quimicos ("unichem"). Estas deducciones proceden unicamente del nombre del repositorio y no estan confirmadas por ninguna fuente del proyecto: deben tratarse como hipotesis, no como especificaciones.
 
@@ -67,7 +67,7 @@ Las cifras siguientes son estimaciones genericas para un hipotetico modelo denso
 - Inferencia en cuantizacion de 4 bits: en torno a 0,7-0,8 GB de pesos. No se anuncia ningun archivo GGUF, AWQ o GPTQ en el repositorio, por lo que esta via requeriria una conversion previa por parte del usuario.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4090, A10, L4 o superiores. Cabe en GPUs de consumo con 8 GB o mas en precision reducida.
 - CPU y Apple Silicon: viable en CPU para un modelo de este orden de magnitud, con latencia elevada.
-- Despliegue: la libreria declarada es transformers, por lo que el punto de entrada natural es la API de HuggingFace. vLLM y TGI serian opciones plausibles si la arquitectura es estandar, pero no estan confirmadas. llama.cpp u Ollama exigirian convertir los pesos a GGUF.
+- Despliegue: la libreria declarada es transformers, por lo que el punto de entrada natural es la API de Hugging Face. vLLM y TGI serian opciones plausibles si la arquitectura es estandar, pero no estan confirmadas. llama.cpp u Ollama exigirian convertir los pesos a GGUF.
 - Advertencia sobre contexto: si la ventana de 1.000.000 de tokens fuese real en un modelo de 1B parametros, la cache KV dominaria el consumo de memoria y haria inviable el despliegue en GPU de consumo sin tecnicas de atencion eficiente no documentadas.
 - Latencia y throughput: no disponibles.
 
@@ -77,7 +77,7 @@ No es posible establecer una comparativa fundamentada porque las especificacione
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Codemaster67/Olmo_1b_1000000token_unichem | no disponible (el identificador sugiere 1B) | no disponible (el identificador sugiere 1.000.000 de tokens) | no disponible | HuggingFace, 0 descargas, 0 likes, repo de 0,1 GB |
+| Codemaster67/Olmo_1b_1000000token_unichem | no disponible (el identificador sugiere 1B) | no disponible (el identificador sugiere 1.000.000 de tokens) | no disponible | Hugging Face, 0 descargas, 0 likes, repo de 0,1 GB |
 | Alternativas de ~1B parametros (OLMo-1B, TinyLlama-1.1B, Qwen2.5-1.5B) | fuera del alcance de la informacion proporcionada | fuera del alcance de la informacion proporcionada | fuera del alcance de la informacion proporcionada | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,6 +95,6 @@ No es posible establecer una comparativa fundamentada porque las especificacione
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Codemaster67/Olmo_1b_1000000token_unichem
+- Hugging Face: https://huggingface.co/Codemaster67/Olmo_1b_1000000token_unichem
 - Referencia citada en las etiquetas del repositorio (plantilla generica del Hub, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Paper, blog, repositorio de codigo, demo o dataset asociados: no disponibles.

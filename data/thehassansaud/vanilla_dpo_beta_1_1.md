@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vanilla_DPO_beta_1_1 es un modelo de generación de texto de 405 millones de parámetros desarrollado por TheHassanSaud y publicado en HuggingFace. Según las etiquetas del repositorio, se basa en la arquitectura GPT-NeoX y utiliza el formato de pesos safetensors. El nombre del modelo sugiere un entrenamiento mediante Direct Preference Optimization (DPO) con un valor de beta de 1.1, pero no se ha publicado ninguna documentación técnica que lo confirme.
+Vanilla_DPO_beta_1_1 es un modelo de generación de texto de 405 millones de parámetros desarrollado por TheHassanSaud y publicado en Hugging Face. Según las etiquetas del repositorio, se basa en la arquitectura GPT-NeoX y utiliza el formato de pesos safetensors. El nombre del modelo sugiere un entrenamiento mediante Direct Preference Optimization (DPO) con un valor de beta de 1.1, pero no se ha publicado ninguna documentación técnica que lo confirme.
 
 La model card es una plantilla generada automáticamente y no contiene información sobre el proceso de entrenamiento, los datos utilizados, las capacidades o los usos previstos. El repositorio tiene 0 descargas y 0 likes, y no se dispone de evaluaciones ni benchmarks públicos. Por tanto, su relevancia actual es limitada: se trata de un modelo sin documentar, probablemente experimental, que requeriría una evaluación propia antes de cualquier uso en producción.
 
@@ -21,7 +21,7 @@ La model card es una plantilla generada automáticamente y no contiene informaci
 
 ## Arquitectura y entrenamiento
 
-El modelo está basado en la arquitectura GPT-NeoX, un transformer autoregresivo de tipo decoder-only para generación de texto. Esta arquitectura fue popularizada por EleutherAI y está implementada en la librería transformers de HuggingFace. El número de parámetros, 405 millones, lo sitúa en la categoría de modelos pequeños, comparable en tamaño a modelos como GPT-Neo 350M o pythia-410M.
+El modelo está basado en la arquitectura GPT-NeoX, un transformer autoregresivo de tipo decoder-only para generación de texto. Esta arquitectura fue popularizada por EleutherAI y está implementada en la librería transformers de Hugging Face. El número de parámetros, 405 millones, lo sitúa en la categoría de modelos pequeños, comparable en tamaño a modelos como GPT-Neo 350M o pythia-410M.
 
 No se dispone de información sobre los datos de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El nombre del repositorio ("Vanilla_DPO_beta_1_1") apunta a un entrenamiento con Direct Preference Optimization con un parámetro beta de 1.1, pero no hay confirmación en la model card ni en ninguna fuente externa. Tampoco se han publicado detalles sobre hiperparámetros, infraestructura de cómputo ni procedimientos de preprocesamiento.
 
@@ -86,7 +86,7 @@ No disponible. No se dispone de información pública que permita comparar este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_1_1
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_1_1
 - Perfil del autor: https://huggingface.co/TheHassanSaud
 - Otros modelos del autor: https://huggingface.co/TheHassanSaud/models
 - Datasets del autor: https://huggingface.co/TheHassanSaud/datasets

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin-t-demo es un repositorio de HuggingFace publicado por el usuario koj-iw92 que contiene una implementacion de Swin Transformer en su variante Tiny (Swin-T) orientada a tareas multitarea. Se trata de un artefacto experimental: el propio autor indica que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks. El repositorio prioriza codigo transparente y pruebas repetibles, y omite deliberadamente cualquier afirmacion de rendimiento.
+Swin-t-demo es un repositorio de Hugging Face publicado por el usuario koj-iw92 que contiene una implementacion de Swin Transformer en su variante Tiny (Swin-T) orientada a tareas multitarea. Se trata de un artefacto experimental: el propio autor indica que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks. El repositorio prioriza codigo transparente y pruebas repetibles, y omite deliberadamente cualquier afirmacion de rendimiento.
 
 El modelo se encuadra en el campo de la vision por computador, ya que Swin Transformer es una arquitectura de transformer jerarquico con ventanas desplazadas (shifted windows) disenada originalmente para clasificacion de imagenes y tareas densas como deteccion y segmentacion. La model card declara una configuracion de escala "giant", atencion dilatada, fusion tipo tucker, activacion swish y normalizacion instancenorm, si bien el recuento real de parametros registrado en safetensors es de 24.832, muy alejado de lo que cabria esperar de una configuracion "giant", lo que refuerza su caracter de demo generada.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| koj-iw92/swin-t-demo | 24.832 (segun safetensors) | no aplica | sin benchmarks publicados | MIT | HuggingFace (0 descargas, 0 likes) |
-| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 millones | no aplica | resultados publicados en ImageNet y COCO | MIT | HuggingFace, ampliamente descargado |
-| Otras variantes Swin (S, B, L) | mayor numero de parametros | no aplica | resultados publicados | MIT | HuggingFace |
+| koj-iw92/swin-t-demo | 24.832 (segun safetensors) | no aplica | sin benchmarks publicados | MIT | Hugging Face (0 descargas, 0 likes) |
+| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 millones | no aplica | resultados publicados en ImageNet y COCO | MIT | Hugging Face, ampliamente descargado |
+| Otras variantes Swin (S, B, L) | mayor numero de parametros | no aplica | resultados publicados | MIT | Hugging Face |
 
 El unico comparable documentado con garantias es la implementacion oficial de Swin-T de Microsoft, que si cuenta con pesos entrenados y metricas publicadas. Este repositorio no ofrece datos de rendimiento que permitan una comparacion cuantitativa.
 
@@ -82,6 +82,6 @@ El unico comparable documentado con garantias es la implementacion oficial de Sw
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/koj-iw92/swin-t-demo
+- Modelo en Hugging Face: https://huggingface.co/koj-iw92/swin-t-demo
 - Paper original de Swin Transformer (referencia de la arquitectura, no vinculada en la model card): no disponible en la informacion proporcionada
-- Repositorio de codigo asociado: no disponible mas alla de los archivos `train.py`, `config.json` y `training_args.json` incluidos en el propio repositorio de HuggingFace
+- Repositorio de codigo asociado: no disponible mas alla de los archivos `train.py`, `config.json` y `training_args.json` incluidos en el propio repositorio de Hugging Face

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-Uncensored-HauhauCS-Aggressive es una versión "sin censura" (uncensored) del modelo Qwen3.5-9B, publicada en HuggingFace por el usuario Alegamietea y atribuida en su model card al proyecto HauhauCS. El modelo conserva la arquitectura y capacidades del original, pero elimina los mecanismos de rechazo: según la model card, presenta 0 rechazos sobre 465 pruebas, manteniendo el 100 % de las capacidades del modelo base. Se distribuye exclusivamente en formato GGUF con varias cuantizaciones.
+Qwen3.5-9B-Uncensored-HauhauCS-Aggressive es una versión "sin censura" (uncensored) del modelo Qwen3.5-9B, publicada en Hugging Face por el usuario Alegamietea y atribuida en su model card al proyecto HauhauCS. El modelo conserva la arquitectura y capacidades del original, pero elimina los mecanismos de rechazo: según la model card, presenta 0 rechazos sobre 465 pruebas, manteniendo el 100 % de las capacidades del modelo base. Se distribuye exclusivamente en formato GGUF con varias cuantizaciones.
 
 Se trata de un modelo denso de 8.953.803.264 parámetros (≈8,95B), 32 capas y una arquitectura híbrida que combina Gated DeltaNet (atención lineal) con atención softmax completa en proporción 3:1. Incorpora una ventana de contexto nativa de 262K tokens, ampliable a 1M mediante YaRN, soporte multimodal nativo (texto, imagen y vídeo) y predicción multi-token (MTP).
 
@@ -35,7 +35,7 @@ No se dispone de información sobre el proceso de entrenamiento del modelo base 
 - Multilingüe: inglés y chino confirmados por las etiquetas; la model card declara soporte de hasta 201 idiomas.
 - Predicción multi-token (MTP) como mecanismo de aceleración de la decodificación.
 - Respuesta sin rechazos: según la model card, 0 rechazos sobre 465 pruebas, con eliminación exhaustiva de bloqueos en la variante "Aggressive".
-- Etiquetado como `endpoints_compatible` y `conversational` en HuggingFace, lo que sugiere compatibilidad con inferencia conversacional servida.
+- Etiquetado como `endpoints_compatible` y `conversational` en Hugging Face, lo que sugiere compatibilidad con inferencia conversacional servida.
 - No se especifica en la información disponible soporte explícito de tool calling o function calling, ni comportamiento de agente multi-paso.
 
 ## Casos de uso
@@ -92,7 +92,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (9B d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alegamietea/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
+- Modelo en Hugging Face: https://huggingface.co/Alegamietea/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante de 4B (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
 - Perfil del proyecto HauhauCS: https://huggingface.co/HauhauCS

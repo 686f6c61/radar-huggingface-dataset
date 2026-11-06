@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XXMiner/ScoreVision_crime
+- Modelo en Hugging Face: https://huggingface.co/XXMiner/ScoreVision_crime
 - Repositorio del minero de referencia: https://huggingface.co/coolroman/ScoreVision/blob/main/miner.py
 - Datasets de XXMiner: https://huggingface.co/XXMiner/datasets
 - Panel de puntuaciones de Score Vision: https://console.scorevision.io/

@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20 | 51.590.791 | No aplica | Apache-2.0 | HuggingFace |
-| castanetnicolas/act_ur5e_pick_place | No disponible | No aplica | Apache-2.0 | HuggingFace |
+| castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20 | 51.590.791 | No aplica | Apache-2.0 | Hugging Face |
+| castanetnicolas/act_ur5e_pick_place | No disponible | No aplica | Apache-2.0 | Hugging Face |
 | ACT original (paper 2304.13705) | No aplica (metodo) | No aplica | No aplica | Paper academico |
 
 El modelo comparado `act_ur5e_pick_place` es otro modelo ACT del mismo autor, entrenado para una tarea de recoger y colocar. No se dispone en la informacion proporcionada de datos como el numero de parametros o la configuracion exacta, pero comparte arquitectura y ecosistema LeRobot.
@@ -76,10 +76,10 @@ El modelo comparado `act_ur5e_pick_place` es otro modelo ACT del mismo autor, en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/UR5e_nut_assembly_square
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Guia de LeRobot para ACT: https://huggingface.co/docs/lerobot/main/en/act
-- Perfil del autor en HuggingFace: https://huggingface.co/castanetnicolas
+- Perfil del autor en Hugging Face: https://huggingface.co/castanetnicolas
 - Modelo relacionado del mismo autor: https://huggingface.co/castanetnicolas/act_ur5e_pick_place

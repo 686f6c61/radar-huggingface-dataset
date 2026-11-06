@@ -98,7 +98,7 @@ Segun unsloth, Qwen3.8-Flash-Next supera a Claude-4.6-Opus en tareas de codigo a
 
 - Repositorio de integracion: https://huggingface.co/ricardoholanda/Qwen3.8-Flash-Next-M5-Hermes-mlx-serve
 - Repositorio upstream de pesos MLX: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-4bit
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Motor mlx-serve: https://github.com/ddalcu/mlx-serve
 - Documentacion de unsloth: https://unsloth.ai/docs/models/qwen3.8-next
 - Recetas vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

@@ -69,4 +69,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: hamm-eyer/class-retrieval](https://huggingface.co/hamm-eyer/class-retrieval)
+- [Hugging Face: hamm-eyer/class-retrieval](https://huggingface.co/hamm-eyer/class-retrieval)

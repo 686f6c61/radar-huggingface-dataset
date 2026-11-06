@@ -75,17 +75,17 @@ La comparacion se establece con el modelo base y con otras alternativas de la mi
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad de pesos | Naturaleza |
 |---|---|---|---|---|---|
 | `authentrics/ztom-gemma3-1b-recovery` | Aprox. 1.000 millones | No disponible | `gemma` | No redistribuidos; requiere reproduccion local | Checkpoint reparado, ficha de experimento |
-| `google/gemma-3-1b-it` | Aprox. 1.000 millones | 32.768 tokens (documentacion publica) | `gemma` | Pesos publicos en HuggingFace | Modelo instructivo base |
-| `google/gemma-2-2b-it` | Aprox. 2.600 millones | 8.192 tokens (documentacion publica) | `gemma` | Pesos publicos en HuggingFace | Generacion anterior, mayor tamano |
-| `meta-llama/Llama-3.2-1B-Instruct` | Aprox. 1.200 millones | 128.000 tokens (documentacion publica) | Llama 3.2 Community License | Pesos publicos en HuggingFace | Alternativa de tamano equivalente |
-| `Qwen/Qwen2.5-1.5B-Instruct` | Aprox. 1.500 millones | 32.768 tokens (documentacion publica) | Apache 2.0 | Pesos publicos en HuggingFace | Alternativa de tamano equivalente con licencia permisiva |
+| `google/gemma-3-1b-it` | Aprox. 1.000 millones | 32.768 tokens (documentacion publica) | `gemma` | Pesos publicos en Hugging Face | Modelo instructivo base |
+| `google/gemma-2-2b-it` | Aprox. 2.600 millones | 8.192 tokens (documentacion publica) | `gemma` | Pesos publicos en Hugging Face | Generacion anterior, mayor tamano |
+| `meta-llama/Llama-3.2-1B-Instruct` | Aprox. 1.200 millones | 128.000 tokens (documentacion publica) | Llama 3.2 Community License | Pesos publicos en Hugging Face | Alternativa de tamano equivalente |
+| `Qwen/Qwen2.5-1.5B-Instruct` | Aprox. 1.500 millones | 32.768 tokens (documentacion publica) | Apache 2.0 | Pesos publicos en Hugging Face | Alternativa de tamano equivalente con licencia permisiva |
 
 Comparacion de rendimiento: no disponible. No hay resultados de benchmarks publicados para `authentrics/ztom-gemma3-1b-recovery` que permitan situarlo frente a estas alternativas en tareas estandar. Cualquier afirmacion sobre calidad relativa de generacion seria especulativa: el valor del artefacto reside en el procedimiento de recuperacion, no en una mejora medible de capacidad respecto al modelo base.
 
 ## Limitaciones y advertencias
 
 - Los pesos recuperados no se redistribuyen. Este repositorio es una ficha tecnica de un experimento; no permite descargar el modelo y usarlo directamente.
-- El repositorio registra 0 descargas y 0 likes, y fue creado el 16 de septiembre de 2026 segun los metadatos de HuggingFace. Es un artefacto reciente y sin validacion independiente por parte de la comunidad.
+- El repositorio registra 0 descargas y 0 likes, y fue creado el 16 de septiembre de 2026 segun los metadatos de Hugging Face. Es un artefacto reciente y sin validacion independiente por parte de la comunidad.
 - No hay resultados de benchmarks ni metricas cuantitativas de la recuperacion. No es posible verificar si la capacidad restaurada alcanza el nivel previo al ajuste fino secuencial.
 - La model card no detalla el dataset, los hiperparametros ni el proceso de ajuste fino que causo el olvido catastrofico. La reproducibilidad depende del codigo publicado en el repositorio de ejemplos, no de la ficha.
 - Sesgos conocidos: no disponibles. Al derivar de `google/gemma-3-1b-it`, el checkpoint hereda los sesgos de su modelo base y de los datos de entrenamiento de este, que no se documentan aqui.
@@ -98,7 +98,7 @@ Comparacion de rendimiento: no disponible. No hay resultados de benchmarks publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/authentrics/ztom-gemma3-1b-recovery
+- Modelo en Hugging Face: https://huggingface.co/authentrics/ztom-gemma3-1b-recovery
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Aplicacion y claves de API de Authentrics: https://app.authentrics.ai/
 - Documentacion y referencia de la API: https://app.authentrics.ai/docs

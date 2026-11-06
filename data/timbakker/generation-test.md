@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Timbakker/generation-test` es un repositorio de HuggingFace publicado por el usuario Timbakker que contiene una implementación reducida de Efficientformer orientada a tareas de generación. No se trata de un modelo entrenado ni de una release con pesos utilizables: el propio autor lo describe explícitamente como un checkpoint de inicialización válido para *smoke tests*, con un total de 49.600 parámetros registrados en el fichero `model.safetensors`.
+`Timbakker/generation-test` es un repositorio de Hugging Face publicado por el usuario Timbakker que contiene una implementación reducida de Efficientformer orientada a tareas de generación. No se trata de un modelo entrenado ni de una release con pesos utilizables: el propio autor lo describe explícitamente como un checkpoint de inicialización válido para *smoke tests*, con un total de 49.600 parámetros registrados en el fichero `model.safetensors`.
 
 La relevancia de esta ficha es limitada por su propia naturaleza. Efficientformer es una familia de vision transformers diseñada originalmente para alcanzar la velocidad de MobileNet en tareas de visión, pero aquí aparece empaquetada bajo la etiqueta de generación junto con un script de ajuste (`finetune.py`), una configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`). El repositorio no reclama ninguna puntuación de benchmark.
 
@@ -37,7 +37,7 @@ No hay evidencia de entrenamiento. La model card indica que `model.safetensors` 
 
 - No se ha verificado ninguna capacidad funcional: el checkpoint no está entrenado.
 - El script `finetune.py` incluye un bloque `__main__` con un ejemplo de smoke test, útil para comprobar que el pipeline de carga y ejecución funciona.
-- Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarla.
+- Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarla.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
@@ -48,7 +48,7 @@ No hay evidencia de entrenamiento. La model card indica que `model.safetensors` 
 - Pruebas de humo de infraestructura: sirve para validar que un pipeline de carga de safetensors, tokenización y ejecución de forward funciona antes de invertir en un modelo real.
 - Punto de partida reproducible para investigación en arquitecturas: el repositorio incluye `config.json` y `training_args.json`, lo que permite reproducir la configuración declarada y modificarla de forma controlada.
 - Test unitario de frameworks de entrenamiento: su tamaño de 49.600 parámetros permite ejecutar `finetune.py` en segundos sobre CPU, útil para verificar que un entorno de CI/CD funciona correctamente.
-- Integración de adaptadores personalizados: dado que no funciona con carga automática estándar, es un caso práctico para desarrollar y depurar adaptadores de modelos custom en HuggingFace.
+- Integración de adaptadores personalizados: dado que no funciona con carga automática estándar, es un caso práctico para desarrollar y depurar adaptadores de modelos custom en Hugging Face.
 - Estudio de Efficientformer aplicado a generación: permite inspeccionar cómo se combinan atención de ventana deslizante, cross attention y normalización por instancias en una implementación concreta.
 - Docencia y demostraciones de arquitectura: al ser minúsculo y de licencia permisiva, es adecuado para explicar la estructura de un vision transformer sin coste de cómputo.
 - Verificación de reproducibilidad: sirve para comprobar que dos entornos producen los mismos pesos iniciales a partir de la misma configuración.
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Timbakker/generation-test | 49.600 | no disponible | sin entrenar | apache-2.0 | HuggingFace |
+| Timbakker/generation-test | 49.600 | no disponible | sin entrenar | apache-2.0 | Hugging Face |
 | EfficientFormer original (Snap, L1/L3/L7) | millones (segun variante) | no disponible | resultados publicados en vision | distinta segun release | modelos entrenados |
 | Implementaciones de vision transformer ligeras para generacion | no disponible | no disponible | no disponible | variable | variable |
 
@@ -87,7 +87,7 @@ No se dispone de una comparativa cuantitativa fiable: el modelo de este reposito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Timbakker/generation-test
+- Hugging Face: https://huggingface.co/Timbakker/generation-test
 - Paper de referencia de la arquitectura Efficientformer: https://arxiv.org/abs/2206.01191
 - Repositorio original de Efficientformer (Snap Research): https://github.com/snap-research/EfficientFormer
 - Los resultados de la busqueda web no contienen informacion tecnica relevante sobre el modelo.

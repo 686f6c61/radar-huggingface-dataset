@@ -70,7 +70,7 @@ No disponible. Este repositorio no pertenece a ninguna categoria de modelos de I
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/provenance-two-manifests-disagree
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/provenance-two-manifests-disagree
 - Proyecto Layerfault (CLI de validacion): https://github.com/izm1chael/layerfault
 - Documento de modelo de confianza de Layerfault: https://github.com/izm1chael/layerfault/blob/main/docs/TRUST_MODEL.md
 - Articulo sobre pruebas de procedencia de modelos LLM: https://arxiv.org/html/2502.00706v1

@@ -108,8 +108,8 @@ No se dispone de datos suficientes para comparar parametros activos, throughput 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meshllm/DeepSeek-V4-Flash-UD-Q4_K_XL-layers
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF
+- Modelo en Hugging Face: https://huggingface.co/meshllm/DeepSeek-V4-Flash-UD-Q4_K_XL-layers
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF
 - Variante 0731 del mismo esquema: https://huggingface.co/meshllm/DeepSeek-V4-Flash-0731-UD-Q4_K_XL-layers/tree/main/automation
 - Receta de vLLM para DeepSeek-V4-Flash: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash
 - Guia de Unsloth para ejecutar DeepSeek-V4 localmente: https://unsloth.ai/docs/models/deepseek-v4

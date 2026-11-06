@@ -122,7 +122,7 @@ El modelo supera claramente a su predecesor Qwen3-4B y a GPT-4.1-nano en la mayo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Blog de Qwen: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3
 - Documentacion oficial: https://qwen.readthedocs.io/en/latest/

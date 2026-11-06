@@ -82,7 +82,7 @@ Nota metodologica del autor: el 0,352 del modelo base se midio en el mismo harne
 
 | Modelo | Parametros | Accuracy | Brier | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint | 322M | 0,749 | 0,063 | 0,112 | Apache-2.0 | Publicado en HuggingFace |
+| Este checkpoint | 322M | 0,749 | 0,063 | 0,112 | Apache-2.0 | Publicado en Hugging Face |
 | `laya-typed-decisions` (ingles) | No disponible (mismo base mmBERT) | 0,766 | 0,062 | 0,213 | No disponible en la informacion | Publicado |
 | `laya-multilingual` (base sin ajustar) | 322M | 0,352 | No disponible | No disponible | Apache-2.0 (heredada) | Publicado |
 | TypeSafe Jev 1.13.0 | No disponible | 0,727 | 0,148 | 0,144 | No disponible en la informacion | Publicado |
@@ -103,7 +103,7 @@ Frente al fine-tune ingles, este checkpoint pierde 1,8 puntos de accuracy pero m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred361/laya-multilingual-typed-decisions
+- Modelo en Hugging Face: https://huggingface.co/alfred361/laya-multilingual-typed-decisions
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset de ajuste: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Cuaderno de la receta de fine-tuning: https://github.com/NandhaKishorM/laya/blob/main/notebooks/laya_finetune_typed_decisions_2xT4_kaggle.ipynb

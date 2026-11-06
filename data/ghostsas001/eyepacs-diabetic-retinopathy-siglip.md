@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ghostsas001/eyepacs-diabetic-retinopathy-siglip es un ajuste fino (fine-tune) del codificador visual de google/siglip2-base-patch16-224, orientado a la clasificacion de imagenes de fondo de ojo (fundus) para la deteccion y gradacion de retinopatia diabetica. El autor es el usuario de HuggingFace "ghostsas001" y el repositorio esta publicado bajo la libreria transformers con pesos en formato safetensors. Se trata de un clasificador de imagen medica, no de un modelo generativo de texto: su tarea declarada en la pipeline es image-classification.
+El modelo ghostsas001/eyepacs-diabetic-retinopathy-siglip es un ajuste fino (fine-tune) del codificador visual de google/siglip2-base-patch16-224, orientado a la clasificacion de imagenes de fondo de ojo (fundus) para la deteccion y gradacion de retinopatia diabetica. El autor es el usuario de Hugging Face "ghostsas001" y el repositorio esta publicado bajo la libreria transformers con pesos en formato safetensors. Se trata de un clasificador de imagen medica, no de un modelo generativo de texto: su tarea declarada en la pipeline es image-classification.
 
 El modelo parte del dataset EyePACS, un corpus de referencia en el ambito de la retinopatia diabetica que contiene 35.126 imagenes de fondo de ojo etiquetadas con grados de severidad de 0 a 4, empleado originalmente en la competicion de Kaggle de 2015 organizada por la California Health Care Foundation y EyePACS. La relevancia de propuestas como esta radica en el cribado automatizado de retinopatia diabetica, una de las principales causas prevenibles de ceguera, donde el acceso a oftalmologos es limitado en zonas con pocos recursos.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ghostsas001/eyepacs-diabetic-retinopathy-siglip | no disponible | no aplica | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| google/siglip2-base-patch16-224 (modelo base) | no disponible en esta ficha | no aplica | no disponible | ver ficha del modelo base | HuggingFace |
+| ghostsas001/eyepacs-diabetic-retinopathy-siglip | no disponible | no aplica | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| google/siglip2-base-patch16-224 (modelo base) | no disponible en esta ficha | no aplica | no disponible | ver ficha del modelo base | Hugging Face |
 | Otros clasificadores de retinopatia diabetica (EfficientNet, ResNet, etc.) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de rendimiento ni de parametros para establecer una comparativa cuantitativa fiable con alternativas de la misma categoria.
@@ -82,7 +82,7 @@ No se dispone de datos verificados de rendimiento ni de parametros para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghostsas001/eyepacs-diabetic-retinopathy-siglip
+- Modelo en Hugging Face: https://huggingface.co/ghostsas001/eyepacs-diabetic-retinopathy-siglip
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-224
 - Proyecto de referencia sobre deteccion de retinopatia diabetica (GitHub): https://github.com/gmatteuc/Diabetic_retinopathy_detection
 - Analisis del dataset EyePACS: https://www.eyepacs.com/data-analysis

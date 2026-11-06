@@ -60,7 +60,7 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucamoretti87/paper_024407310_audio_visual_learning
+- Repositorio en Hugging Face: https://huggingface.co/lucamoretti87/paper_024407310_audio_visual_learning
 - Referencia a Perception Encoder Audiovisual (Meta AI): https://github.com/facebookresearch/perception_models
 - Paper sobre modelo unificado VAB: https://arxiv.org/html/2409.19132v1
 - Publicaciones de Google Research: https://research.google/pubs/

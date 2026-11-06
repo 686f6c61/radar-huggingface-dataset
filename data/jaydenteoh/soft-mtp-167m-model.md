@@ -31,7 +31,7 @@ El entrenamiento utilizo 31,5B de tokens de FineWeb-Edu (HuggingFaceFW/fineweb-e
 
 - Generacion de texto en ingles a partir de preentrenamiento sobre FineWeb-Edu (corpus educativo filtrado).
 - Prediccion multi-token durante el entrenamiento, con cabeceras MTP reutilizables como draft model para decodificacion autoespeculativa.
-- Compatibilidad con la libreria transformers de HuggingFace (requiere `trust_remote_code=True`, ya que el model type `hf_mtp` se define en los ficheros del repo).
+- Compatibilidad con la libreria transformers de Hugging Face (requiere `trust_remote_code=True`, ya que el model type `hf_mtp` se define en los ficheros del repo).
 - Uso como base para investigacion en objetivos de preentrenamiento y decodificacion especulativa.
 - No incluye capacidades de vision, audio ni razonamiento explicito.
 - No hay soporte documentado de tool calling ni de agentes.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 178M de parametros en fp16/bf16, el modelo ocupa aproximadamente 0,4 GB; con pesos fp32, unos 0,7 GB (coincide con el tamano del repo). No hay cuantizaciones publicadas.
 - GPU recomendadas: cualquier GPU moderna es suficiente; no se requiere hardware especializado. Puede ejecutarse incluso en CPU para pruebas puntuales.
 - Cabe con holgura en GPUs de consumo: RTX 3060, RTX 4060, RTX 4090 o incluso GPUs integradas con varios GB de VRAM.
-- Despliegue: mediante transformers de HuggingFace con `trust_remote_code=True` (el model type `hf_mtp` es custom code). La model card indica `inference: false` en metadatos, por lo que no hay endpoint de inference API activo. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
+- Despliegue: mediante transformers de Hugging Face con `trust_remote_code=True` (el model type `hf_mtp` es custom code). La model card indica `inference: false` en metadatos, por lo que no hay endpoint de inference API activo. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible. Al ser un modelo de 178M con contexto de 2048, la inferencia por token deberia ser muy rapida, pero no hay medidas publicadas.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ Nota: los checkpoints hermanos del mismo articulo (los otros once, con distintos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaydenTeoh/soft-mtp-167m-model
+- Modelo en Hugging Face: https://huggingface.co/JaydenTeoh/soft-mtp-167m-model
 - Articulo (arXiv): https://arxiv.org/abs/2610.38331
 - Codigo (GitHub): https://github.com/JaydenTeoh/Soft-MTP
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

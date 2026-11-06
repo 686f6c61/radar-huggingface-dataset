@@ -91,7 +91,7 @@ No se dispone de datos de otros modelos uncensored de tamaño similar (p. ej., D
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ediuedddward/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ediuedddward/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de ejecución local (orcarouter): https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Artículo sobre el build GGUF (orcarouter): https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario `afsdfga` bajo el identificador `afsdfga/MyAwesomeModel-TestRepo`. La información disponible es internamente contradictoria: los metadatos de HuggingFace lo etiquetan como `bert` con pipeline `feature-extraction`, mientras que la model card describe un modelo conversacional de razonamiento con mejoras en matemáticas, programación y lógica, soporte de function calling y modo de pensamiento. El repositorio ocupa 0.0 GB y registra 0 descargas y 0 likes, lo que apunta a un repositorio de prueba o plantilla más que a un artefacto listo para producción.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario `afsdfga` bajo el identificador `afsdfga/MyAwesomeModel-TestRepo`. La información disponible es internamente contradictoria: los metadatos de Hugging Face lo etiquetan como `bert` con pipeline `feature-extraction`, mientras que la model card describe un modelo conversacional de razonamiento con mejoras en matemáticas, programación y lógica, soporte de function calling y modo de pensamiento. El repositorio ocupa 0.0 GB y registra 0 descargas y 0 likes, lo que apunta a un repositorio de prueba o plantilla más que a un artefacto listo para producción.
 
 La model card afirma mejoras sustanciales respecto a una versión anterior: en el test AIME 2025 la precisión pasaría del 70 % al 87,5 %, con un aumento del consumo de tokens de razonamiento de 12K a 23K por pregunta. Sin embargo, no se identifican los modelos base de comparación (aparecen como "Model1", "Model2" y "Model1-v2") ni se publican detalles de arquitectura, número de parámetros, contexto o datos de entrenamiento.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha debe leerse como una descripción de lo que el autor d
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura. Los tags de HuggingFace apuntan a `bert` con pipeline `feature-extraction`, lo que correspondería a un encoder transformer de representación; la model card, en cambio, describe un asistente conversacional con profundidad de razonamiento ampliada, lo que encajaría con un decoder auto-regresivo. Esta discrepancia no se resuelve con los datos proporcionados.
+No se dispone de información verificable sobre la arquitectura. Los tags de Hugging Face apuntan a `bert` con pipeline `feature-extraction`, lo que correspondería a un encoder transformer de representación; la model card, en cambio, describe un asistente conversacional con profundidad de razonamiento ampliada, lo que encajaría con un decoder auto-regresivo. Esta discrepancia no se resuelve con los datos proporcionados.
 
 Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación. La model card menciona de forma genérica "mayores recursos computacionales" y "mecanismos de optimización algorítmica" durante el post-entrenamiento, sin concretar metodología. Se indica que la versión actual ya no requiere tokens especiales al inicio de la salida para forzar un patrón de pensamiento y que admite system prompt, con temperatura recomendada de 0,6. No se documenta ninguna innovación técnica adicional.
 
@@ -89,7 +89,7 @@ No disponible. La model card anonimiza los modelos de comparación como "Model1"
 
 ## Limitaciones y advertencias
 
-- Repositorio de prueba: 0 descargas, 0 likes y 0.0 GB de tamaño. No hay pesos publicados, por lo que el modelo no es ejecutable tal cual desde HuggingFace.
+- Repositorio de prueba: 0 descargas, 0 likes y 0.0 GB de tamaño. No hay pesos publicados, por lo que el modelo no es ejecutable tal cual desde Hugging Face.
 - Contradicción de metadatos: los tags indican `bert`/`feature-extraction`, mientras que la model card describe un LLM conversacional de razonamiento. Cualquiera de las dos descripciones puede ser incorrecta.
 - Benchmarks no verificables: los modelos de referencia están anonimizados y no se publica metodología de evaluación, por lo que las cifras no deben usarse para decisiones de adopción.
 - Riesgo de alucinación: la propia model card reconoce que una de las mejoras de esta versión es la reducción de la tasa de alucinación, lo que implica que en versiones previas el problema era relevante. No se cuantifica la tasa actual.
@@ -101,6 +101,6 @@ No disponible. La model card anonimiza los modelos de comparación como "Model1"
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/afsdfga/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/afsdfga/MyAwesomeModel-TestRepo
 - Paper, blog, repositorio de código o demo: no disponible. La model card menciona una web oficial, un repositorio de código y figuras (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`), pero no incluye enlaces a ninguno de ellos.
 - Resultados de búsqueda web: no se han encontrado resultados relevantes. Las únicas entradas devueltas corresponden a Google Translate (https://translate.google.it/m y https://translate.google.it/?hl=fr) y no guardan relación con el modelo.

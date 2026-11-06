@@ -33,7 +33,7 @@ El entrenamiento se realizó con la librería EasyNLA (fork de EasyNLA, que a su
 1. **SFT warm-start**: el AV se entrena con supervisión directa sobre explicaciones doradas (perplexity final 3.881 en validación held-out).
 2. **RL con GRPO**: durante 400 pasos, el AV es optimizado on-policy con una recompensa basada en la fracción de varianza explicada (FVE) que el AR logra reconstruir a partir de las explicaciones generadas por el propio AV. El FVE pasa de 27.9% en el paso 0 a ~49% al final, aunque casi todo el incremento ocurre en los primeros 50 pasos.
 
-La extracción de activaciones se realiza sobre la salida del bloque 47 (equivalente a `hidden_states[48]` en la convención de HuggingFace), con la normalización final RMSNorm del modelo **eliminada** (`final_norm_stripped: true`). Cada fila se reescala a norma L2 √3840 antes del entrenamiento, tanto en la predicción como en el objetivo.
+La extracción de activaciones se realiza sobre la salida del bloque 47 (equivalente a `hidden_states[48]` en la convención de Hugging Face), con la normalización final RMSNorm del modelo **eliminada** (`final_norm_stripped: true`). Cada fila se reescala a norma L2 √3840 antes del entrenamiento, tanto en la predicción como en el objetivo.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No se han publicado comparaciones con otros NLAs en la misma capa o con SAEs en 
 - **VRAM estimada**: el modelo base `google/gemma-3-12b-it` requiere al menos 24 GB de VRAM en bf16 para inferencia. Los adaptadores LoRA y el head lineal añaden una sobrecarga mínima. Con cuantización de 8 bits (bitsandbytes) puede caber en GPUs de 16 GB, y con 4 bits en 12 GB, aunque la precisión de la reconstrucción podría degradarse.
 - **GPU recomendadas**: NVIDIA A100 (40/80 GB), H100, RTX 4090 (24 GB), o GPUs de datacenter con al menos 24 GB. Para ejecutar el pipeline completo de extracción + verbalización + reconstrucción, se recomienda una GPU con 32 GB o más para evitar swapping.
 - **Cabe en consumer GPU**: sí, en una RTX 4090 o similar con 24 GB, usando el modelo base en bf16. En GPUs de 16 GB (RTX 4080, 3080 Ti) es posible con cuantización de 8 bits.
-- **Opciones de despliegue**: el repositorio incluye scripts para cargar los adaptadores con PEFT. Se puede usar vLLM para servir el AV (dado que es un modelo de generación), y la reconstrucción requiere un forward manual con el head lineal. También es compatible con HuggingFace Transformers y llama.cpp si se convierte a GGUF (aunque el head lineal no es estándar en llama.cpp).
+- **Opciones de despliegue**: el repositorio incluye scripts para cargar los adaptadores con PEFT. Se puede usar vLLM para servir el AV (dado que es un modelo de generación), y la reconstrucción requiere un forward manual con el head lineal. También es compatible con Hugging Face Transformers y llama.cpp si se convierte a GGUF (aunque el head lineal no es estándar en llama.cpp).
 - **Latencia y throughput**: no se han publicado mediciones específicas. Dado el tamaño del modelo base (12B), la latencia típica en una A100 es de ~50-100 ms por token de generación para el AV; la reconstrucción del AR implica un forward completo, similar a una pasada de inferencia.
 
 ## Comparativa con modelos similares
@@ -110,7 +110,7 @@ Diferencias clave:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/achand45/gemma-3-12b-it-nla-L47
+- Modelo en Hugging Face: https://huggingface.co/achand45/gemma-3-12b-it-nla-L47
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - NLA de referencia en L32 (AV): https://huggingface.co/kitft/nla-gemma3-12b-L32-av
 - NLA de referencia en L32 (AR): https://huggingface.co/kitft/nla-gemma3-12b-L32-ar

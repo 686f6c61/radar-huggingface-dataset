@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MuirBench lightweight reading routers | Enrutador TF-IDF + Ridge | no disponible | no disponible | mixed-source-terms | HuggingFace (0 descargas) |
+| MuirBench lightweight reading routers | Enrutador TF-IDF + Ridge | no disponible | no disponible | mixed-source-terms | Hugging Face (0 descargas) |
 | Enrutadores aprendidos end-to-end sobre VLM | Red neuronal / policy learning | no disponible | no disponible | no disponible | no disponible en la información |
 | Políticas de fallback fijas | Regla estática | no aplica | no aplica | no disponible | Referenciadas en `selection.json` |
 
@@ -85,6 +85,6 @@ No se dispone de datos comparativos de rendimiento con alternativas en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gavinlaw/multimodal-understanding-muirbench-routers
+- Hugging Face: https://huggingface.co/gavinlaw/multimodal-understanding-muirbench-routers
 - Dataset de salidas: https://huggingface.co/datasets/gavinlaw/multimodal-understanding-muirbench-outputs
 - Términos de licencia (referencia): https://arxiv.org/html/2406.09411v1

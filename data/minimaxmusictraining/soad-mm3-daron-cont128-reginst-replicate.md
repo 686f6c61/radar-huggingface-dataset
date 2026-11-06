@@ -78,8 +78,8 @@ La comparativa se basa en datos publicos de los modelos mencionados. No se dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/MiniMaxMusicTraining/soad-mm3-daron-cont128-reginst-replicate
-- Modelo base en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Repositorio Hugging Face del adaptador: https://huggingface.co/MiniMaxMusicTraining/soad-mm3-daron-cont128-reginst-replicate
+- Modelo base en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repositorio GitHub de MiniMax-Music3: https://github.com/MiniMax-AI/MiniMax-Music3
 - Sitio web de MiniMax: https://www.minimax.io/
 - Guia independiente de MiniMax Music 3: https://minimaxmusic3.ai/

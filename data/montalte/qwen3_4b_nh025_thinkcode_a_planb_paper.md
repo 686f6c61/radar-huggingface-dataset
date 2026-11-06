@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Montalte/qwen3_4b_nh025_thinkcode_a_planb_paper | 4.022.468.096 | No especificado | Apache 2.0 | Safetensors | HuggingFace |
-| Qwen/Qwen3-4B-Base | ~4B (no especificado) | 32K (según paper) | Apache 2.0 | Safetensors | HuggingFace |
-| modrill/Qwen3-4B-Base-ThinkCode-A-NH025 | ~4B (no especificado) | No especificado | No disponible | No disponible | HuggingFace |
+| Montalte/qwen3_4b_nh025_thinkcode_a_planb_paper | 4.022.468.096 | No especificado | Apache 2.0 | Safetensors | Hugging Face |
+| Qwen/Qwen3-4B-Base | ~4B (no especificado) | 32K (según paper) | Apache 2.0 | Safetensors | Hugging Face |
+| modrill/Qwen3-4B-Base-ThinkCode-A-NH025 | ~4B (no especificado) | No especificado | No disponible | No disponible | Hugging Face |
 
 Nota: no se dispone de resultados de benchmarks para comparar el rendimiento de estos modelos.
 
@@ -73,6 +73,6 @@ Nota: no se dispone de resultados de benchmarks para comparar el rendimiento de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Montalte/qwen3_4b_nh025_thinkcode_a_planb_paper
+- Hugging Face: https://huggingface.co/Montalte/qwen3_4b_nh025_thinkcode_a_planb_paper
 - Qwen3 Technical Report: https://arxiv.org/html/2505.09388v1
 - Modelo relacionado (posible origen del merge): https://huggingface.co/modrill/Qwen3-4B-Base-ThinkCode-A-NH025

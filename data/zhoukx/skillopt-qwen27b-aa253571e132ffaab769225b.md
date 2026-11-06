@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SkillOpt-Qwen27B (identificador `zhoukx/SkillOpt-Qwen27B-aa253571e132ffaab769225b`) es un repositorio publicado en HuggingFace por el usuario `zhoukx`. Pese a que el nombre sugiere un modelo de la familia Qwen con aproximadamente 27 000 millones de parametros, la informacion disponible no permite confirmar ni el tamano real, ni la arquitectura, ni el origen de los pesos: el repositorio tiene un tamano de 0,0 GB y no contiene ficheros de pesos descargables en el momento de la indexacion. Las etiquetas declaradas (`bert`, `feature-extraction`) son incompatibles con el nombre del modelo, lo que apunta a que la ficha se genero con una plantilla y no fue revisada.
+SkillOpt-Qwen27B (identificador `zhoukx/SkillOpt-Qwen27B-aa253571e132ffaab769225b`) es un repositorio publicado en Hugging Face por el usuario `zhoukx`. Pese a que el nombre sugiere un modelo de la familia Qwen con aproximadamente 27 000 millones de parametros, la informacion disponible no permite confirmar ni el tamano real, ni la arquitectura, ni el origen de los pesos: el repositorio tiene un tamano de 0,0 GB y no contiene ficheros de pesos descargables en el momento de la indexacion. Las etiquetas declaradas (`bert`, `feature-extraction`) son incompatibles con el nombre del modelo, lo que apunta a que la ficha se genero con una plantilla y no fue revisada.
 
 La model card publicada es una plantilla generica titulada "MyAwesomeModel" en la que los modelos comparados aparecen como `Model1`, `Model2` y `Model1-v2`. La unica cifra concreta y atribuible es una mejora en AIME 2025 del 70 % al 87,5 % de exactitud y un aumento del consumo medio de tokens por pregunta de 12 000 a 23 000, ademas de la mencion a una reduccion de la tasa de alucinacion y a un mejor soporte de function calling. No hay ninguna fuente externa que permita verificar estos datos.
 
@@ -120,6 +120,6 @@ Los datos de los modelos de comparacion corresponden a sus fichas publicas. No s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhoukx/SkillOpt-Qwen27B-aa253571e132ffaab769225b
+- Repositorio en Hugging Face: https://huggingface.co/zhoukx/SkillOpt-Qwen27B-aa253571e132ffaab769225b
 - Paper, repositorio de codigo, blog o demo: no disponibles. La model card menciona un "code repository" y un sitio oficial de chat y API, pero no incluye ninguna URL.
 - Fuentes externas de validacion: no disponibles. La busqueda web no arrojo ningun resultado pertinente.

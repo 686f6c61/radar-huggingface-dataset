@@ -39,7 +39,7 @@ El modelo base `intfloat/multilingual-e5-small` fue entrenado con prefijos asim�
 - Recuperación de información multilingüe: búsqueda semántica con prefijos asimétricos `query:` / `passage:`.
 - Indexación y búsqueda vectorial en pipelines RAG.
 - Funcionamiento multilingüe dentro de una misma colección de vectores, lo que permite recuperación entre idiomas distintos.
-- Compatibilidad con endpoints: etiquetado como `endpoints_compatible` en HuggingFace y con API compatible con OpenAI a través de `llama-server`.
+- Compatibilidad con endpoints: etiquetado como `endpoints_compatible` en Hugging Face y con API compatible con OpenAI a través de `llama-server`.
 - No soporta generación de texto, razonamiento, código, matemáticas, visión ni audio.
 - No soporta *tool calling* ni *function calling*.
 - No soporta agentes ni razonamiento multi-paso.
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks (MMLU, MTEB, BEIR u otros) en la in
 
 | Modelo | Parámetros | Contexto | Dimensiones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hdrrayan/multilingual-e5-small-gguf | 117.505.536 | 512 tokens | 384 | MIT | GGUF en HuggingFace |
-| intfloat/multilingual-e5-small (original en safetensors) | 117.505.536 | 512 tokens (según la ficha del modelo convertido) | 384 | MIT | safetensors en HuggingFace |
+| hdrrayan/multilingual-e5-small-gguf | 117.505.536 | 512 tokens | 384 | MIT | GGUF en Hugging Face |
+| intfloat/multilingual-e5-small (original en safetensors) | 117.505.536 | 512 tokens (según la ficha del modelo convertido) | 384 | MIT | safetensors en Hugging Face |
 | Otros modelos del mismo tamaño o familia (por ejemplo, variantes mayores de e5 o encoders multilingües alternativos) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa relevante es con el modelo base original: misma arquitectura, mismos parámetros, mismas dimensiones y misma licencia, con la diferencia de que esta conversión está pensada para `llama.cpp` en lugar de `sentence-transformers`/PyTorch. La información proporcionada no incluye especificaciones de terceros alternativos, por lo que no se dispone de datos verificables para ampliar la comparativa.
@@ -103,7 +103,7 @@ La comparación directa relevante es con el modelo base original: misma arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hdrrayan/multilingual-e5-small-gguf
+- Modelo en Hugging Face: https://huggingface.co/hdrrayan/multilingual-e5-small-gguf
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Repositorio de llama.cpp (herramienta de conversión y servidor): https://github.com/ggml-org/llama.cpp
 - Script de conversión empleado: `convert_hf_to_gguf.py` en el repositorio de llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fishaudio/s2-pro es un modelo de síntesis de voz (text-to-speech) desarrollado por FishAudio, diseñado para generar audio hablado a partir de texto con capacidad de seguir instrucciones. El tag `fish_qwen3_omni` sugiere que está construido sobre la arquitectura Qwen3 Omni, aunque no se confirma oficialmente en la ficha de HuggingFace. Se presenta como un sistema multilingüe con soporte para más de 80 idiomas, lo que lo hace relevante para aplicaciones de narración, asistentes de voz y localización de contenido.
+fishaudio/s2-pro es un modelo de síntesis de voz (text-to-speech) desarrollado por FishAudio, diseñado para generar audio hablado a partir de texto con capacidad de seguir instrucciones. El tag `fish_qwen3_omni` sugiere que está construido sobre la arquitectura Qwen3 Omni, aunque no se confirma oficialmente en la ficha de Hugging Face. Se presenta como un sistema multilingüe con soporte para más de 80 idiomas, lo que lo hace relevante para aplicaciones de narración, asistentes de voz y localización de contenido.
 
 El modelo se distribuye en formato `safetensors` y ha acumulado más de 500.000 descargas y 1.200 likes en su primer día de publicación, lo que indica un interés significativo de la comunidad. Al ser un modelo reciente (marzo de 2026), aún no se dispone de documentación técnica detallada sobre parámetros, contexto o metodología de entrenamiento en la información pública disponible.
 
@@ -27,7 +27,7 @@ No se dispone de informacion publica detallada sobre la arquitectura interna, el
 
 - Sintesis de voz a partir de texto (text-to-speech) con capacidad de seguir instrucciones, segun el tag `instruction-following`.
 - Soporte multilingue amplio: mas de 80 idiomas listados en los tags, incluyendo espanol, ingles, chino, japones, coreano, frances, aleman, arabe, ruso, portugues, entre otros.
-- Generacion de audio hablado en formato safetensors, compatible con el pipeline `text-to-speech` de HuggingFace.
+- Generacion de audio hablado en formato safetensors, compatible con el pipeline `text-to-speech` de Hugging Face.
 - No se confirma soporte para tool calling, agentes, razonamiento multi-paso ni capacidades de vision o audio mas alla de la sintesis de voz.
 
 ## Casos de uso
@@ -41,7 +41,7 @@ No se dispone de informacion publica detallada sobre la arquitectura interna, el
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre MMLU, HumanEval, GSM8K ni metricas especificas de calidad de voz (MOS, WER, etc.) en la ficha de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre MMLU, HumanEval, GSM8K ni metricas especificas de calidad de voz (MOS, WER, etc.) en la ficha de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -61,5 +61,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- [HuggingFace: fishaudio/s2-pro](https://huggingface.co/fishaudio/s2-pro)
+- [Hugging Face: fishaudio/s2-pro](https://huggingface.co/fishaudio/s2-pro)
 - [Articulo arXiv: 2603.08823](https://arxiv.org/abs/2603.08823) (contenido no verificado)

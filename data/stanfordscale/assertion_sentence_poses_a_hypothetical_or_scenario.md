@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `StanfordSCALE/assertion_sentence_poses_a_hypothetical_or_scenario` | 109,5 M | no disponible (encoder MPNet, hasta 512 tokens) | Clasificacion binaria de movimientos de discurso de aula | no disponible | HuggingFace, 0 descargas |
+| `StanfordSCALE/assertion_sentence_poses_a_hypothetical_or_scenario` | 109,5 M | no disponible (encoder MPNet, hasta 512 tokens) | Clasificacion binaria de movimientos de discurso de aula | no disponible | Hugging Face, 0 descargas |
 | `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | ~109 M (misma familia MPNet) | hasta 512 tokens | Generacion de embeddings de frases | Apache 2.0 (segun su propia model card) | Ampliamente desplegado |
 | `sentence-transformers/all-MiniLM-L6-v2` | ~22 M | hasta 256 tokens | Embeddings de frases | Apache 2.0 (segun su propia model card) | Muy extendido |
-| Otros clasificadores de la familia EduBehaviors (StanfordSCALE) | no disponible | no disponible | Clasificacion de otras aserciones de discurso | no disponible | HuggingFace |
+| Otros clasificadores de la familia EduBehaviors (StanfordSCALE) | no disponible | no disponible | Clasificacion de otras aserciones de discurso | no disponible | Hugging Face |
 
 La comparación relevante no es de rendimiento en benchmarks, ya que no existen datos comparables publicados para esta tarea concreta. La diferencia principal frente a los encoders genéricos es la cabeza de clasificación específica del dominio; frente a un LLM anotador, la ventaja es el coste de inferencia y la reproducibilidad, y la desventaja es la fidelidad respecto al etiquetado humano.
 
@@ -100,7 +100,7 @@ La comparación relevante no es de rendimiento en benchmarks, ya que no existen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_poses_a_hypothetical_or_scenario
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_poses_a_hypothetical_or_scenario
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio): https://github.com/SumnerLab/TalkMoves

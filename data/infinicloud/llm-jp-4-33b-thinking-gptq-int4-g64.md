@@ -89,8 +89,8 @@ En el análisis por pares de la evaluación MGSM, 7 errores del BF16 pasaron a s
 
 | Modelo | Parametros | Contexto | Formato y cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (GPTQ INT4 G64) | 33 B denso (31.205.621.760 elementos cuantizados) | 16.384 tokens probados | GPTQ W4A16, grupo 64, safetensors + compressed-tensors, 20,606 GB | Apache 2.0 | HuggingFace, validado en vLLM 0.29.0 |
-| llm-jp/llm-jp-4-33b-thinking (BF16) | 33 B denso | Igual que el derivado | BF16 safetensors, 66,439 GB (61,876 GiB) | Apache 2.0 según los tags del derivado; verificar términos del repositorio base | HuggingFace |
+| Este modelo (GPTQ INT4 G64) | 33 B denso (31.205.621.760 elementos cuantizados) | 16.384 tokens probados | GPTQ W4A16, grupo 64, safetensors + compressed-tensors, 20,606 GB | Apache 2.0 | Hugging Face, validado en vLLM 0.29.0 |
+| llm-jp/llm-jp-4-33b-thinking (BF16) | 33 B denso | Igual que el derivado | BF16 safetensors, 66,439 GB (61,876 GiB) | Apache 2.0 según los tags del derivado; verificar términos del repositorio base | Hugging Face |
 | Modelo relacionado 32B-A3B (MoE) mencionado por el autor | Aproximadamente 32 B totales y 3 B activos según la mención | No disponible | No disponible | No disponible | Mencionado por el autor, sin identificador de repositorio |
 | Qwen3.8-27B-FP8 | No disponible | No disponible | FP8 | No disponible | Solo se menciona como modelo con el que co-alojar, no como alternativa equivalente |
 

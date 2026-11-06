@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JayCao99/pi05-rm65b-cns-rl10-K6R-v0.0 es un checkpoint de politica (policy checkpoint) para robotica publicado en HuggingFace por el usuario JayCao99 y pensado para su uso con LeRobot, la libreria de aprendizaje por imitacion de HuggingFace. No se trata de un modelo de lenguaje generativo, sino de una politica visomotora (vision-language-action en la practica, por el prefijo pi05) que mapea observaciones del robot y del entorno a acciones de control, entrenada mediante aprendizaje por imitacion.
+JayCao99/pi05-rm65b-cns-rl10-K6R-v0.0 es un checkpoint de politica (policy checkpoint) para robotica publicado en Hugging Face por el usuario JayCao99 y pensado para su uso con LeRobot, la libreria de aprendizaje por imitacion de Hugging Face. No se trata de un modelo de lenguaje generativo, sino de una politica visomotora (vision-language-action en la practica, por el prefijo pi05) que mapea observaciones del robot y del entorno a acciones de control, entrenada mediante aprendizaje por imitacion.
 
 El artefacto consiste en un unico subdirectorio, `checkpoint-003700`, que contiene la carga lista para despliegue: `model.safetensors`, `config.json`, los pre/postprocesadores y `train_config.json`. El repositorio completo ocupa 9,4 GB, lo que sugiere un modelo del orden de miles de millones de parametros, aunque el numero exacto no se declara en la informacion disponible. El checkpoint se ha entrenado hasta el paso 3.700.
 
@@ -72,7 +72,7 @@ No hay datos verificables en la informacion proporcionada para comparar este che
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JayCao99/pi05-rm65b-cns-rl10-K6R-v0.0 | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace |
+| JayCao99/pi05-rm65b-cns-rl10-K6R-v0.0 | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face |
 | Otras politicas de LeRobot (pi0, ACT, Diffusion Policy) | no disponible | no disponible | no disponible | no disponible | no disponible en esta busqueda |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No hay datos verificables en la informacion proporcionada para comparar este che
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JayCao99/pi05-rm65b-cns-rl10-K6R-v0.0
+- Hugging Face: https://huggingface.co/JayCao99/pi05-rm65b-cns-rl10-K6R-v0.0
 - LeRobot (libreria referenciada en la model card): no se proporciona enlace en la informacion disponible.
 - Paper o blog del autor: no disponible.
 - Repositorio de codigo: no disponible.

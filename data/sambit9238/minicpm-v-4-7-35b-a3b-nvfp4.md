@@ -112,7 +112,7 @@ Este repositorio pesa aproximadamente 1 GB más que las cuantizaciones oficiales
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sambit9238/MiniCPM-V-4.7-35B-A3B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/sambit9238/MiniCPM-V-4.7-35B-A3B-NVFP4
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Cuantización oficial FP8: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-FP8
 - Cuantización oficial AWQ: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-AWQ

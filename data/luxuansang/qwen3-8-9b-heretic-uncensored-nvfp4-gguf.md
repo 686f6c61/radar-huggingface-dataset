@@ -95,5 +95,5 @@ La principal diferencia es la ausencia de censura en este modelo, lo que lo hace
 
 ## Enlaces
 
-- [HuggingFace - luxuansang/Qwen3.8-9B-heretic-uncensored-NVFP4-GGUF](https://huggingface.co/luxuansang/Qwen3.8-9B-heretic-uncensored-NVFP4-GGUF)
+- [Hugging Face - luxuansang/Qwen3.8-9B-heretic-uncensored-NVFP4-GGUF](https://huggingface.co/luxuansang/Qwen3.8-9B-heretic-uncensored-NVFP4-GGUF)
 - [Modelo original - empero-ai/Qwen3.8-9B](https://huggingface.co/empero-ai/Qwen3.8-9

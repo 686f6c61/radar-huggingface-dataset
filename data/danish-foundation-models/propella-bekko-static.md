@@ -93,7 +93,7 @@ La comparativa relevante es interna a la familia propella: bekkos-static sacrifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danish-foundation-models/propella-bekko-static
+- Modelo en Hugging Face: https://huggingface.co/danish-foundation-models/propella-bekko-static
 - Modelo profesor propella-1-4b: https://huggingface.co/ellamind/propella-1-4b
 - Referencia de propiedades: https://huggingface.co/ellamind/propella-1-4b/blob/main/property_descriptions.md
 - Backbone bekko-static-embedding-v1: https://huggingface.co/hotchpotch/bekko-static-embedding-v1

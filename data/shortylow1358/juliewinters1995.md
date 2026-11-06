@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shortylow1358/juliewinters1995` es un repositorio publicado en HuggingFace por el usuario shortylow1358 el 25 de octubre de 2026 (con actualización el mismo día) que, a fecha de esta ficha, no incluye model card descriptiva, no declara pipeline y no especifica idiomas soportados. El único metadato técnico verificable es el tamaño del repositorio (0,4 GB), la licencia openrail y la región de publicación (US). No hay descargas ni likes registrados, y el autor no aporta información sobre arquitectura, datos de entrenamiento ni uso previsto.
+`shortylow1358/juliewinters1995` es un repositorio publicado en Hugging Face por el usuario shortylow1358 el 25 de octubre de 2026 (con actualización el mismo día) que, a fecha de esta ficha, no incluye model card descriptiva, no declara pipeline y no especifica idiomas soportados. El único metadato técnico verificable es el tamaño del repositorio (0,4 GB), la licencia openrail y la región de publicación (US). No hay descargas ni likes registrados, y el autor no aporta información sobre arquitectura, datos de entrenamiento ni uso previsto.
 
 El nombre del repositorio remite a Julie Winters, personaje de la serie de cómic y animación *The Maxx* (1995). Las búsquedas web devuelven exclusivamente modelos de personaje de terceros con esa temática: un modelo de conversión de voz RVC v2 alojado en voice-models.com, un LoRA para SDXL en PixAI, un LoRA para Pony en Tensor.Art y un modelo en SeaArt. Ninguno de esos recursos está vinculado de forma verificable con este repositorio, por lo que no es posible confirmar que su contenido sea un adaptador LoRA de difusión, un modelo de voz RVC, un checkpoint o cualquier otra cosa.
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente auditar el estado de
 | Parámetros activos | no aplica / no disponible (no se declara que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible (el campo de idiomas de HuggingFace está vacío) |
+| Idiomas soportados | no disponible (el campo de idiomas de Hugging Face está vacío) |
 | Licencia | openrail (OpenRAIL, según el campo `license: openrail` del repositorio) |
 | Formato de pesos | no disponible (no se especifica safetensors, GGUF, bin, .pth ni otro) |
 | Tamaño del repositorio | 0,4 GB |
@@ -54,13 +54,13 @@ Dado que no hay documentación, los casos siguientes son condicionales y deben v
 - Pruebas de conversión de voz, si resultase ser un modelo RVC v2: requeriría el pipeline de RVC, un audio de referencia y un índice opcional, ninguno de los cuales se documenta aquí.
 - Evaluación comparativa de licencias OpenRAIL: analizar cómo el uso de una licencia con restricciones de uso (Attachment A) convive con la ausencia total de documentación sobre el contenido del modelo.
 - Docencia sobre riesgos de cadena de suministro de modelos: ilustrar cómo un repositorio de 0,4 GB sin descargas ni validación comunitaria puede introducir dependencias no verificadas en un pipeline de MLOps.
-- Archivo y preservación: conservar el repositorio como muestra histórica de nomenclatura de modelos de personaje en HuggingFace, dado que el contenido podría desaparecer sin trazabilidad.
+- Archivo y preservación: conservar el repositorio como muestra histórica de nomenclatura de modelos de personaje en Hugging Face, dado que el contenido podría desaparecer sin trazabilidad.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-No existen datos de MMLU, HumanEval, GSM8K, FID, WER ni de ninguna otra métrica aplicable, ni en la model card ni en los metadatos de HuggingFace. Tampoco se dispone de una comparación oficial con modelos de la misma categoría.
+No existen datos de MMLU, HumanEval, GSM8K, FID, WER ni de ninguna otra métrica aplicable, ni en la model card ni en los metadatos de Hugging Face. Tampoco se dispone de una comparación oficial con modelos de la misma categoría.
 
 ## Requisitos de hardware
 
@@ -77,13 +77,13 @@ No se dispone de datos técnicos de este repositorio, y los modelos comparables 
 
 | Modelo | Autor / plataforma | Tipo declarado | Licencia | Documentación | Datos técnicos |
 |---|---|---|---|---|---|
-| `shortylow1358/juliewinters1995` | shortylow1358 / HuggingFace | no declarado | openrail | inexistente (solo licencia) | no disponibles |
+| `shortylow1358/juliewinters1995` | shortylow1358 / Hugging Face | no declarado | openrail | inexistente (solo licencia) | no disponibles |
 | Julie Winters (The Maxx 1995) [RVC v2] [300 Epochs] | voice-models.com (modelo a89) | conversión de voz RVC v2 | no indicada en el resultado | ficha de plataforma | no disponibles |
 | Julie Winters - The Maxx (SDXL) | PixAI (modelo 1875923877717224243) | LoRA de difusión SDXL | no indicada en el resultado | ficha de plataforma | no disponibles |
 | Julie Winters (The Maxx) - V1 | Tensor.Art (mallieDuhMadB1t) | LoRA Pony | no indicada en el resultado | ficha de plataforma | no disponibles |
 | Julie Winters (The Maxx) | SeaArt | modelo de personaje | no indicada en el resultado | ficha de plataforma | no disponibles |
 
-No hay evidencia de que ninguno de estos modelos de terceros sea el mismo artefacto que el repositorio de HuggingFace; la coincidencia es únicamente temática.
+No hay evidencia de que ninguno de estos modelos de terceros sea el mismo artefacto que el repositorio de Hugging Face; la coincidencia es únicamente temática.
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No hay evidencia de que ninguno de estos modelos de terceros sea el mismo artefa
 - Imposibilidad de verificar el contenido: 0,4 GB sin formato declarado obliga a inspeccionar los pesos antes de cualquier uso; cargar el repositorio con ejecución de código remoto es un riesgo de seguridad.
 - Riesgo de alucinación: no evaluable, al desconocerse si el artefacto genera texto y con qué datos se entrenó.
 - Sesgos: no evaluables; no hay información sobre el corpus ni sobre procesos de alineación.
-- Limitaciones de idioma y contexto: no disponibles; el campo de idiomas está vacío en HuggingFace.
+- Limitaciones de idioma y contexto: no disponibles; el campo de idiomas está vacío en Hugging Face.
 - Propiedad intelectual: Julie Winters es un personaje de *The Maxx*, obra de Sam Kieth publicada por Image Comics y adaptada por MTV. Un modelo derivado de su imagen o de su voz puede vulnerar derechos de autor o de imagen, con independencia de la licencia del repositorio.
 - Licencia OpenRAIL: permite uso comercial con restricciones (el texto de Attachment A limita usos concretos), pero exige que el uso se ajuste a esas cláusulas; sin documentación del modelo, evaluar el cumplimiento es prácticamente imposible.
 - Sin validación comunitaria: 0 descargas y 0 likes implican ausencia de revisión por terceros; no hay evidencia de calidad ni de funcionamiento.
@@ -100,7 +100,7 @@ No hay evidencia de que ninguno de estos modelos de terceros sea el mismo artefa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shortylow1358/juliewinters1995
+- Repositorio en Hugging Face: https://huggingface.co/shortylow1358/juliewinters1995
 - Perfil del autor: https://huggingface.co/shortylow1358
 - Otro repositorio del mismo autor (referencia de contexto): https://huggingface.co/shortylow1358/clovertotallyspies
 - Modelo de voz RVC v2 de Julie Winters (terceros, no vinculado): https://voice-models.com/model/a89

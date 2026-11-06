@@ -22,7 +22,7 @@ Su relevancia actual es doble: por un lado, ejemplifica un patrón de arquitectu
 | Formato de pesos | MLX (adaptador LoRA para mlx-lm) |
 | Modelo base | happybrian/fast-brain-base (obligatorio) |
 | Tamano del adaptador | ~20 MB (segun la model card) |
-| Fecha de publicacion | 22 de septiembre de 2026 (metadatos de HuggingFace) |
+| Fecha de publicacion | 22 de septiembre de 2026 (metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ Tampoco se han podido recuperar modelos comparables a través de la búsqueda we
 ## Limitaciones y advertencias
 
 - No es un modelo autónomo: requiere cargar obligatoriamente happybrian/fast-brain-base. La calidad final depende por completo de un base sobre el que no hay información publicada.
-- Sin validación independiente: cero descargas y cero "likes" en HuggingFace. El 96 % de precisión es una cifra autodeclarada y no replicada.
+- Sin validación independiente: cero descargas y cero "likes" en Hugging Face. El 96 % de precisión es una cifra autodeclarada y no replicada.
 - Metodología de evaluación opaca: no se especifica el conjunto de prueba, su tamaño, su idioma ni si hubo separación entre entrenamiento y evaluación. Con solo 450-650 ejemplos de destilación, existe riesgo real de sobreajuste y de que el 96 % no se generalice.
 - Sesgos heredados: cualquier sesgo presente en el modelo base y en el profesor Qwen3-8B-4bit se transfiere al adaptador, especialmente en el etiquetado de textos con sarcasmo, ironía, jerga o variantes dialectales.
 - Riesgo de etiquetado erróneo: en clasificación de sentimiento los falsos negativos y positivos son frecuentes fuera del dominio de entrenamiento. No debe usarse como única señal en decisiones con impacto sobre usuarios.
@@ -99,7 +99,7 @@ Tampoco se han podido recuperar modelos comparables a través de la búsqueda we
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/happybrian/fast-brain-sentiment-adapter
+- Modelo en Hugging Face: https://huggingface.co/happybrian/fast-brain-sentiment-adapter
 - Modelo base: https://huggingface.co/happybrian/fast-brain-base
 - Librería mlx-lm, referenciada en la model card: https://github.com/ml-explore/mlx-lm
 - Profesor de destilación Qwen3-8B, referenciado en la model card: https://huggingface.co/Qwen/Qwen3-8B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo tatjr13/tpn005-e2d-b es un modelo de lenguaje publicado en HuggingFace por el usuario tatjr13. Se distribuye principalmente en formato GGUF, lo que indica que está pensado para inferencia local mediante runtimes como llama.cpp u Ollama, y lleva la etiqueta "endpoints_compatible", que sugiere compatibilidad con despliegues servidos por API. El recuento de parametros reportado en los metadatos es de 8.489.553.920 parametros (unos 8,49 mil millones), lo que lo situa en el segmento de modelos de ~8B, un tamano habitual para uso en GPU de consumo con cuantizacion.
+El modelo tatjr13/tpn005-e2d-b es un modelo de lenguaje publicado en Hugging Face por el usuario tatjr13. Se distribuye principalmente en formato GGUF, lo que indica que está pensado para inferencia local mediante runtimes como llama.cpp u Ollama, y lleva la etiqueta "endpoints_compatible", que sugiere compatibilidad con despliegues servidos por API. El recuento de parametros reportado en los metadatos es de 8.489.553.920 parametros (unos 8,49 mil millones), lo que lo situa en el segmento de modelos de ~8B, un tamano habitual para uso en GPU de consumo con cuantizacion.
 
 La informacion publica disponible es muy limitada: no se especifican la arquitectura, la longitud de contexto, los idiomas soportados ni la licencia. El autor no ha publicado pipeline, ni ficha de modelo detallada, ni resultados de benchmarks. La etiqueta "imatrix" apunta a que las cuantizaciones GGUF se han generado utilizando una matriz de importancia (importance matrix), una tecnica habitual para reducir la perdida de calidad en cuantizaciones agresivas.
 
@@ -31,7 +31,7 @@ Tampoco se dispone de datos sobre el proceso de entrenamiento: numero de tokens,
 
 - Generacion de texto conversacional: la etiqueta "conversational" indica que el modelo esta orientado a mantener dialogos, aunque no se detalla el formato de plantilla de chat utilizado.
 - Inferencia local: al distribuirse en GGUF, puede ejecutarse con runtimes de CPU/GPU como llama.cpp u Ollama.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse a traves de una API compatible con el estilo de HuggingFace Endpoints.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse a traves de una API compatible con el estilo de Hugging Face Endpoints.
 - Razonamiento, codigo, matematicas, vision, tool calling, agentes, modo thinking y capacidades multilingues: no disponible (no se documenta ninguna de estas capacidades).
 
 ## Casos de uso
@@ -66,10 +66,10 @@ No hay datos de rendimiento del modelo analizado, por lo que la comparativa se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tatjr13/tpn005-e2d-b | ~8,49B | no disponible | no disponible | HuggingFace (GGUF) |
-| Llama 3.1 8B | ~8,03B | 128k | Llama 3.1 Community License | HuggingFace |
-| Qwen2.5 7B | ~7,62B | 128k | Apache 2.0 | HuggingFace |
-| Mistral 7B | ~7,24B | 32k | Apache 2.0 | HuggingFace |
+| tatjr13/tpn005-e2d-b | ~8,49B | no disponible | no disponible | Hugging Face (GGUF) |
+| Llama 3.1 8B | ~8,03B | 128k | Llama 3.1 Community License | Hugging Face |
+| Qwen2.5 7B | ~7,62B | 128k | Apache 2.0 | Hugging Face |
+| Mistral 7B | ~7,24B | 32k | Apache 2.0 | Hugging Face |
 
 No es posible comparar rendimiento (benchmarks), idiomas ni calidad de generacion del modelo analizado por falta de datos publicados.
 
@@ -87,7 +87,7 @@ No es posible comparar rendimiento (benchmarks), idiomas ni calidad de generacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tatjr13/tpn005-e2d-b
+- Modelo en Hugging Face: https://huggingface.co/tatjr13/tpn005-e2d-b
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

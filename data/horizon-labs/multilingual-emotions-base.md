@@ -96,7 +96,7 @@ Frente a SamLowe/roberta-base-go_emotions, el modelo de Horizon-Labs iguala apro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/multilingual-emotions-base
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-emotions-base
 - Version small (141M): https://huggingface.co/Horizon-Labs/multilingual-emotions-small
 - Demo en el navegador: https://huggingface.co/spaces/Horizon-Labs/multilingual-emotions
 - Modelo base mmBERT-base: https://huggingface.co/jhu-clsp/mmBERT-base

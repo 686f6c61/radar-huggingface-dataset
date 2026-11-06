@@ -2,9 +2,9 @@
 
 ## Resumen
 
-KKawa2700/geniac_prize_2026_stage2_3 es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario KKawa2700 sobre el modelo base Qwen/Qwen3-4B-Base. El repositorio, de apenas 0,1 GB, contiene exclusivamente los pesos del adaptador en formato safetensors y se distribuye a través de la librería PEFT (version 0.21.0 segun la model card). No se trata, por tanto, de un modelo completo, sino de un delta de pesos que debe combinarse con Qwen3-4B-Base para poder ejecutarse.
+KKawa2700/geniac_prize_2026_stage2_3 es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario KKawa2700 sobre el modelo base Qwen/Qwen3-4B-Base. El repositorio, de apenas 0,1 GB, contiene exclusivamente los pesos del adaptador en formato safetensors y se distribuye a través de la librería PEFT (version 0.21.0 segun la model card). No se trata, por tanto, de un modelo completo, sino de un delta de pesos que debe combinarse con Qwen3-4B-Base para poder ejecutarse.
 
-El nombre del repositorio sugiere que el adaptador se ha desarrollado en el contexto de una competicion o convocatoria denominada GENIAC, en su edicion de 2026 y en una fase identificada como stage2. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: todos los apartados (desarrollador, datos de entrenamiento, hiperparametros, evaluacion, licencia e idiomas) figuran como "[More Information Needed]" o directamente no aparecen.
+El nombre del repositorio sugiere que el adaptador se ha desarrollado en el contexto de una competicion o convocatoria denominada GENIAC, en su edicion de 2026 y en una fase identificada como stage2. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: todos los apartados (desarrollador, datos de entrenamiento, hiperparametros, evaluacion, licencia e idiomas) figuran como "[More Information Needed]" o directamente no aparecen.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente metodologica: sirve como ejemplo de adaptador SFT de bajo coste sobre un modelo denso de 4.000 millones de parametros, y como punto de partida reproducible para quien quiera inspeccionar como se estructura un artefacto PEFT (tags LoRA, SFT, TRL, Unsloth) antes de evaluar su calidad real. Cualquier dato de rendimiento, licencia o composicion del dataset debe considerarse no disponible hasta que el autor publique informacion adicional.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen3-4B-Base) | 4.000 M (base) + ~0,1 GB LoRA | 32.768 nativos / 131.072 con YaRN | No disponible | HuggingFace, 0 descargas, 0 likes | Model card sin cumplimentar; sin benchmarks |
-| Qwen3-4B-Base | 4.000 M | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente descargado | Base sin ajuste instruccional; documentacion completa |
-| Llama 3.2 3B | 3.200 M | 128.000 | Llama 3.2 Community License | HuggingFace / Meta | Requiere aceptar la licencia; no Apache 2.0 |
-| Gemma 3 4B | ~4.000 M | 128.000 | Gemma Terms of Use | HuggingFace / Google | Restricciones de uso comercial en los terminos de Google |
-| Phi-4-mini | 3.800 M | 128.000 | MIT | HuggingFace / Microsoft | Licencia permisiva; orientado a razonamiento y matematicas |
+| Este adaptador (sobre Qwen3-4B-Base) | 4.000 M (base) + ~0,1 GB LoRA | 32.768 nativos / 131.072 con YaRN | No disponible | Hugging Face, 0 descargas, 0 likes | Model card sin cumplimentar; sin benchmarks |
+| Qwen3-4B-Base | 4.000 M | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente descargado | Base sin ajuste instruccional; documentacion completa |
+| Llama 3.2 3B | 3.200 M | 128.000 | Llama 3.2 Community License | Hugging Face / Meta | Requiere aceptar la licencia; no Apache 2.0 |
+| Gemma 3 4B | ~4.000 M | 128.000 | Gemma Terms of Use | Hugging Face / Google | Restricciones de uso comercial en los terminos de Google |
+| Phi-4-mini | 3.800 M | 128.000 | MIT | Hugging Face / Microsoft | Licencia permisiva; orientado a razonamiento y matematicas |
 
 No hay datos de rendimiento de este adaptador que permitan una comparacion cuantitativa con las alternativas; la tabla recoge unicamente caracteristicas estructurales y de licencia.
 
@@ -91,7 +91,7 @@ No hay datos de rendimiento de este adaptador que permitan una comparacion cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KKawa2700/geniac_prize_2026_stage2_3
+- Modelo en Hugging Face: https://huggingface.co/KKawa2700/geniac_prize_2026_stage2_3
 - Modelo base Qwen3-4B-Base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Paper citado en los tags (estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

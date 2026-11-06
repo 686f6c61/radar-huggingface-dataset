@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B-oQ3.5-mtp es un checkpoint cuantizado del modelo Qwen3.5-2B, publicado en HuggingFace por el usuario bambocher. No es un modelo entrenado desde cero, sino una conversión de precisión mixta realizada con oQ (oMLX v0.7.1rc1), la herramienta del proyecto oMLX, y empaquetada en formato MLX para su ejecución sobre hardware de Apple. El checkpoint conserva 2.274.069.824 parámetros lógicos repartidos en tres componentes: el modelo de lenguaje (1,882B), una torre de visión (0,331B) y una cabeza MTP de predicción multi-token (0,061B), de modo que se trata de un modelo multimodal con soporte potencial de decodificación especulativa.
+Qwen3.5-2B-oQ3.5-mtp es un checkpoint cuantizado del modelo Qwen3.5-2B, publicado en Hugging Face por el usuario bambocher. No es un modelo entrenado desde cero, sino una conversión de precisión mixta realizada con oQ (oMLX v0.7.1rc1), la herramienta del proyecto oMLX, y empaquetada en formato MLX para su ejecución sobre hardware de Apple. El checkpoint conserva 2.274.069.824 parámetros lógicos repartidos en tres componentes: el modelo de lenguaje (1,882B), una torre de visión (0,331B) y una cabeza MTP de predicción multi-token (0,061B), de modo que se trata de un modelo multimodal con soporte potencial de decodificación especulativa.
 
 El interés técnico está en el esquema de cuantización: el 59,897% de los pesos se almacena a 3 bits con grupo 64, con fracciones menores en 4, 5, 6 y 8 bits, y un 14,967% que se mantiene en BF16. La media efectiva es de 5,886 bits por peso y el checkpoint completo ocupa 1,558 GiB, lo que permite ejecutar un modelo multimodal de 2,27B en equipos con memoria unificada muy limitada, incluidos Macs de gama base y dispositivos iOS/iPadOS.
 
@@ -92,7 +92,7 @@ Los datos de las filas comparativas no proceden de la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-2B-oQ3.5-mtp
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-2B-oQ3.5-mtp
 - Herramienta de cuantización oQ (proyecto oMLX): https://github.com/jundot/omlx
 - Model card del modelo base Qwen3.5-2B: no disponible en la información proporcionada
 - Paper técnico: no disponible

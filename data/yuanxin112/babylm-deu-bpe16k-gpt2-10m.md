@@ -6,7 +6,7 @@ babylm-deu-bpe16k-gpt2-10m es un modelo de lenguaje autoregresivo en alemán ent
 
 Arquitectónicamente es un transformer decoder-only de tipo GPT-2, con 4 capas, 8 cabezas de atención, dimensión de embedding 512 y 21,26 millones de parámetros totales (frente a los 17,1 M del baseline oficial, diferencia atribuible íntegramente a la tabla de embeddings más grande). La longitud de contexto es de 512 tokens y el entrenamiento se realizó sobre una reconstrucción local del corpus German BabyLM de 10 millones de palabras, durante 5 épocas, con una pérdida de evaluación final de 4,357.
 
-Su relevancia es fundamentalmente de investigación: se trata de un modelo pequeño y reproducible, pensado para experimentos controlados de adquisición del lenguaje, comparativas de tokenizadores y estudios de eficiencia de datos, no para aplicaciones en producción. No tiene descargas ni likes en HuggingFace y no declara licencia, lo que limita su uso comercial sin aclaración previa del autor.
+Su relevancia es fundamentalmente de investigación: se trata de un modelo pequeño y reproducible, pensado para experimentos controlados de adquisición del lenguaje, comparativas de tokenizadores y estudios de eficiencia de datos, no para aplicaciones en producción. No tiene descargas ni likes en Hugging Face y no declara licencia, lo que limita su uso comercial sin aclaración previa del autor.
 
 ## Especificaciones tecnicas
 
@@ -75,9 +75,9 @@ El autor advierte explícitamente que la comparación entre estas cifras no es e
 
 | Modelo | Parametros | Contexto | Vocab | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| yuanxin112/babylm-deu-bpe16k-gpt2-10m | 21,3 M | 512 | 16 384 | German BabyLM, 10M palabras (reconstruccion local) | no disponible | HuggingFace, 0 descargas |
-| BabyLM-community/deu-baseline-small | 17,1 M | 512 (receta equivalente) | 8192 | German BabyLM, 100M palabras | no disponible | HuggingFace (comunidad BabyLM) |
-| BabyLM-community/babylm-baseline-10m-gpt2 | 124 M | no disponible | no disponible | 10 epocas sobre ~100M palabras, ingles | no disponible | HuggingFace (comunidad BabyLM) |
+| yuanxin112/babylm-deu-bpe16k-gpt2-10m | 21,3 M | 512 | 16 384 | German BabyLM, 10M palabras (reconstruccion local) | no disponible | Hugging Face, 0 descargas |
+| BabyLM-community/deu-baseline-small | 17,1 M | 512 (receta equivalente) | 8192 | German BabyLM, 100M palabras | no disponible | Hugging Face (comunidad BabyLM) |
+| BabyLM-community/babylm-baseline-10m-gpt2 | 124 M | no disponible | no disponible | 10 epocas sobre ~100M palabras, ingles | no disponible | Hugging Face (comunidad BabyLM) |
 
 El primero y el segundo comparten receta y arquitectura, diferenciándose en el tokenizador y en el volumen de datos; el tercero es un baseline en inglés de escala superior, útil como referencia de la pista Strict-Small del reto de 2025 pero no comparable en idioma.
 
@@ -94,8 +94,8 @@ El primero y el segundo comparten receta y arquitectura, diferenciándose en el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuanxin112/babylm-deu-bpe16k-gpt2-10m
-- Perfil del autor en HuggingFace: https://huggingface.co/yuanxin112/datasets
+- Modelo en Hugging Face: https://huggingface.co/yuanxin112/babylm-deu-bpe16k-gpt2-10m
+- Perfil del autor en Hugging Face: https://huggingface.co/yuanxin112/datasets
 - Modelo de referencia de la receta: https://huggingface.co/BabyLM-community/deu-baseline-small
 - Baseline en ingles de 10M de palabras: https://huggingface.co/BabyLM-community/babylm-baseline-10m-gpt2
 - Sitio del reto BabyLM: https://babylm.github.io/

@@ -97,7 +97,7 @@ No se dispone de datos comparativos publicados con otros modelos de estimacion d
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation
+- Repositorio de Hugging Face: https://huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation
 - Repositorio de GitHub: https://github.com/mehmetaytugyuruk/retina-resnet-age-estimation
 - Articulo en IEEE Xplore: https://ieeexplore.ieee.org/document/11418414
 - DOI del articulo: https://doi.org/10.1109/IISEC69317.2026.11418414

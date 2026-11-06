@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Top-1 (Typed Decisions) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AgentJev-0.6B INT8 ONNX | ~0,6 mil millones | 2.048 | 79,25% | Apache-2.0 | Pesos ONNX abiertos en HuggingFace |
+| AgentJev-0.6B INT8 ONNX | ~0,6 mil millones | 2.048 | 79,25% | Apache-2.0 | Pesos ONNX abiertos en Hugging Face |
 | Laya (ModernBERT-large) | No disponible en la información proporcionada (ModernBERT-large) | 512 | 77,00% | No disponible en la información proporcionada | Open source según la model card |
 | TypeSafe Jev 1.13.0 | No disponible | 32K | 72,70% | Propietaria | Solo API |
-| aimeigaoshou/agent-jev (modelo base) | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Pesos abiertos en HuggingFace |
+| aimeigaoshou/agent-jev (modelo base) | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Pesos abiertos en Hugging Face |
 
 La comparación se limita a la tarea de decisión tipada evaluada por el autor. No se dispone de datos que permitan comparar estos modelos en generación de texto, razonamiento general o código, ya que AgentJev no es un modelo generativo.
 
@@ -98,7 +98,7 @@ La comparación se limita a la tarea de decisión tipada evaluada por el autor. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lujihong/agentjev-0.6b-int8-onnx
+- Modelo en Hugging Face: https://huggingface.co/lujihong/agentjev-0.6b-int8-onnx
 - Modelo base: https://huggingface.co/aimeigaoshou/agent-jev
 - Conjunto de datos de evaluación Typed Decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Librería Go de inferencia: https://github.com/lujihong/go-agentjev

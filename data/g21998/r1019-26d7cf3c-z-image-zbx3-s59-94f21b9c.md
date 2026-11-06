@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s59-94f21b9c` es un artefacto alojado en HuggingFace por el usuario G21998 bajo la etiqueta `sn56-replay`. Segun la model card, se trata de un registro de investigacion privado generado por un proceso de replay de validacion, no de un modelo entrenado para uso general. El nombre codifica una tarea (`26d7cf3c`), un brazo experimental (`zbx3`), una semilla (`59`) y un identificador de arbol (`94f21b9c`), lo que sugiere un artefacto producido por un pipeline automatizado de experimentacion.
+El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s59-94f21b9c` es un artefacto alojado en Hugging Face por el usuario G21998 bajo la etiqueta `sn56-replay`. Segun la model card, se trata de un registro de investigacion privado generado por un proceso de replay de validacion, no de un modelo entrenado para uso general. El nombre codifica una tarea (`26d7cf3c`), un brazo experimental (`zbx3`), una semilla (`59`) y un identificador de arbol (`94f21b9c`), lo que sugiere un artefacto producido por un pipeline automatizado de experimentacion.
 
 La model card indica explicitamente que es un "Private research record, not a submission" y que el contenido de `checkpoints/` representa lo que el validador habria subido, mientras que `replay/` contiene logs y registros. El estado reportado es `UPLOAD` con codigo de retorno 0 y finalizacion normal (`finish`), con 6 miembros en el artefacto. El repositorio ocupa 4.2 GB y no dispone de pipeline declarado, descargas ni likes.
 
@@ -68,11 +68,11 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, param
 - No hay informacion sobre sesgos, riesgo de alucinacion ni limitaciones de contexto o idioma.
 - La licencia es `other` sin texto publicado, por lo que no se puede determinar si se permite uso comercial; se debe contactar con el autor antes de cualquier uso.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado con dos segundos de diferencia, lo que sugiere un artefacto automatizado sin curacion posterior.
-- No se declara pipeline de HuggingFace, lo que impide cargarlo directamente con `transformers` u otras librerias estandar sin inspeccion manual.
+- No se declara pipeline de Hugging Face, lo que impide cargarlo directamente con `transformers` u otras librerias estandar sin inspeccion manual.
 - El contenido de `checkpoints/` corresponde a lo que "el validador habria subido", no necesariamente a pesos finales listos para inferencia.
 - No apto para produccion sin documentacion adicional, validacion de pesos y aclaracion de licencia.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s59-94f21b9c
+- Repositorio Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s59-94f21b9c
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

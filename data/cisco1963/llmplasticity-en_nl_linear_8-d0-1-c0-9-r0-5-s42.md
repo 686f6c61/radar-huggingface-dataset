@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo de lenguaje publicado por el usuario Cisco1963 bajo el identificador `llmplasticity-en_nl_linear_8-d0.1-c0.9-r0.5-s42`. Segun los metadatos de HuggingFace, se trata de un modelo con arquitectura GPT-2 (etiqueta `gpt2` en los tags), con 122.706.432 parametros totales confirmados a partir de los pesos en formato safetensors. El nombre del repositorio sugiere que forma parte de una linea de experimentos sobre plasticidad en modelos de lenguaje (`llmplasticity`), probablemente un estudio academico sobre la capacidad de aprendizaje continuo de redes transformer de tamano pequeno.
+Este repositorio contiene un modelo de lenguaje publicado por el usuario Cisco1963 bajo el identificador `llmplasticity-en_nl_linear_8-d0.1-c0.9-r0.5-s42`. Segun los metadatos de Hugging Face, se trata de un modelo con arquitectura GPT-2 (etiqueta `gpt2` en los tags), con 122.706.432 parametros totales confirmados a partir de los pesos en formato safetensors. El nombre del repositorio sugiere que forma parte de una linea de experimentos sobre plasticidad en modelos de lenguaje (`llmplasticity`), probablemente un estudio academico sobre la capacidad de aprendizaje continuo de redes transformer de tamano pequeno.
 
 El sufijo `en_nl` apunta a un entrenamiento o evaluacion sobre un par de idiomas ingles-neerlandes, mientras que el resto de identificadores (`linear_8`, `d0.1`, `c0.9`, `r0.5`, `s42`) parecen corresponder a hiperparametros de un experimento concreto: probablemente tipo de capa o estrategia `linear`, un dropout o tasa de decaimiento de 0.1, un coeficiente de 0.9, un ratio o factor de 0.5 y una semilla aleatoria de 42. No se dispone de documentacion oficial que confirme esta interpretacion.
 
@@ -48,7 +48,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 - Baseline de investigacion en PLN de bajo recurso: con 122M de parametros se puede ejecutar y comparar en un solo GPU consumer frente a GPT-2 estandar.
 - Estudio de transferencia entre ingles y neerlandes: el identificador `en_nl` lo hace util para medir transferencia cross-lingue en modelos pequenos.
 - Fine-tuning exploratorio: su tamano permite ajustarlo rapidamente en tareas especificas para investigar regimenes de aprendizaje con tasas de plasticidad controladas.
-- Docencia y practicas de ingenieria de modelos: sirve como ejemplo real de como se estructuran checkpoints experimentales en HuggingFace, incluyendo la advertencia de repositorios sin model card.
+- Docencia y practicas de ingenieria de modelos: sirve como ejemplo real de como se estructuran checkpoints experimentales en Hugging Face, incluyendo la advertencia de repositorios sin model card.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, agentes autonomos ni ningun escenario que requiera contexto largo, tool calling o garantias de licencia.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Cisco1963/llmplasticity-en_nl_linear_8... | 122,7M | no disponible | no disponible | HuggingFace, 21 descargas | Sin model card, sin benchmarks |
+| Cisco1963/llmplasticity-en_nl_linear_8... | 122,7M | no disponible | no disponible | Hugging Face, 21 descargas | Sin model card, sin benchmarks |
 | GPT-2 base (OpenAI) | 124M | 1024 tokens | MIT (pesos publicos) | Ampliamente disponible | Referencia estandar de la misma escala |
 | DistilGPT-2 | 82M | 1024 tokens | MIT-like | Ampliamente disponible | Version destilada, mas rapida |
 | GPT-2 medium | 355M | 1024 tokens | MIT-like | Ampliamente disponible | Escala superior dentro de la misma familia |
@@ -89,5 +89,5 @@ La comparativa se limita a la familia GPT-2 porque es la unica referencia objeti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-d0.1-c0.9-r0.5-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-d0.1-c0.9-r0.5-s42
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos en la busqueda no guardan relacion con el modelo y se han descartado por no ser relevantes.

@@ -75,4 +75,4 @@ No se dispone de información comparativa con otros modelos de estimación de co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DougDong/SICE-Foundation
+- Hugging Face: https://huggingface.co/DougDong/SICE-Foundation

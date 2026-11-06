@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mulemp/fluxis` es un repositorio alojado en HuggingFace, creado por el usuario `mulemp` en julio de 2026. El repositorio tiene un tamaño de 37,9 GB y su acceso está restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar los pesos. No se dispone de información pública sobre la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso.
+El modelo `mulemp/fluxis` es un repositorio alojado en Hugging Face, creado por el usuario `mulemp` en julio de 2026. El repositorio tiene un tamaño de 37,9 GB y su acceso está restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar los pesos. No se dispone de información pública sobre la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso.
 
 A fecha de la última actualización (agosto de 2026), el modelo cuenta con una única descarga y un "like", lo que sugiere que es un proyecto reciente o poco difundido. La ausencia de documentación técnica, benchmarks o ejemplos de uso dificulta su evaluación objetiva. Esta ficha recoge únicamente los datos disponibles y señala explícitamente las carencias de información.
 
@@ -47,11 +47,11 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio del mod
 
 - Ausencia total de documentación técnica: no se especifican arquitectura, parámetros, contexto, ni proceso de entrenamiento.
 - Licencia no publicada: no se puede determinar si el uso comercial está permitido o restringido.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, cuyo contenido no está visible públicamente.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, cuyo contenido no está visible públicamente.
 - Sin benchmarks ni ejemplos de uso: no hay evidencia de rendimiento en tareas estándar.
 - Riesgo de sesgos y alucinaciones: al desconocer los datos de entrenamiento, no se pueden evaluar sesgos potenciales ni la fiabilidad de las respuestas.
 - No apto para producción sin evaluación previa: cualquier integración en sistemas reales debería ir precedida de pruebas exhaustivas y validación de la licencia.
 
 ## Enlaces
 
-- [Repositorio HuggingFace: mulemp/fluxis](https://huggingface.co/mulemp/fluxis)
+- [Repositorio Hugging Face: mulemp/fluxis](https://huggingface.co/mulemp/fluxis)

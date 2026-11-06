@@ -92,7 +92,7 @@ La comparación directa no es posible sin datos de benchmarks del modelo evaluad
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kwondw/bert-base-uncased-tsdae)
+- [Modelo en Hugging Face](https://huggingface.co/kwondw/bert-base-uncased-tsdae)
 - [Paper TSDAE (arxiv:1908.10084)](https://arxiv.org/abs/1908.10084)
 - [Paper SimCSE (arxiv:2104.06979)](https://arxiv.org/abs/2104.06979)
 - [Documentación de sentence-transformers](https://sbert.net)

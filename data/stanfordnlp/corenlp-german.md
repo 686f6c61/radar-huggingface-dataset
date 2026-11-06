@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`stanfordnlp/corenlp-german` es el paquete de recursos lingüísticos en alemán del toolkit CoreNLP de la Universidad de Stanford, publicado en HuggingFace como repositorio de modelos. No se trata de un modelo generativo de lenguaje, sino de un conjunto de anotadores y recursos (aproximadamente 1,0 GB) que permiten a CoreNLP procesar texto en alemán y derivar anotaciones lingüísticas sobre él. El repositorio fue creado el 2 de marzo de 2022 y actualizado por última vez el 27 de septiembre de 2026, y su tarjeta fue generada automáticamente con la herramienta `hugging_corenlp.py` del repositorio `stanfordnlp/huggingface-models`.
+`stanfordnlp/corenlp-german` es el paquete de recursos lingüísticos en alemán del toolkit CoreNLP de la Universidad de Stanford, publicado en Hugging Face como repositorio de modelos. No se trata de un modelo generativo de lenguaje, sino de un conjunto de anotadores y recursos (aproximadamente 1,0 GB) que permiten a CoreNLP procesar texto en alemán y derivar anotaciones lingüísticas sobre él. El repositorio fue creado el 2 de marzo de 2022 y actualizado por última vez el 27 de septiembre de 2026, y su tarjeta fue generada automáticamente con la herramienta `hugging_corenlp.py` del repositorio `stanfordnlp/huggingface-models`.
 
 El valor del paquete reside en que CoreNLP ofrece, en una única librería Java, un pipeline completo de procesamiento de lenguaje natural: segmentación de tokens y frases, etiquetado gramatical (POS), reconocimiento de entidades nombradas, normalización de valores numéricos y temporales, análisis de dependencias y de constituyentes, resolución de correferencia, análisis de sentimiento, atribución de citas y extracción de relaciones. Este repositorio aporta los modelos específicos para alemán que ese pipeline necesita, de modo que un desarrollador puede aplicar todo el stack a texto en alemán sin entrenar componentes propios.
 
-Es relevante ahora como alternativa consolidada y de referencia académica para tareas de análisis lingüístico en alemán dentro de aplicaciones Java, en un momento en el que la mayoría de las fichas de HuggingFace corresponden a modelos neuronales generativos. Sin embargo, la información pública disponible es muy escasa: la tarjeta no detalla arquitectura interna, número de parámetros, composición del dataset de entrenamiento ni resultados de benchmarks, y el repositorio registra 0 descargas y 1 "like".
+Es relevante ahora como alternativa consolidada y de referencia académica para tareas de análisis lingüístico en alemán dentro de aplicaciones Java, en un momento en el que la mayoría de las fichas de Hugging Face corresponden a modelos neuronales generativos. Sin embargo, la información pública disponible es muy escasa: la tarjeta no detalla arquitectura interna, número de parámetros, composición del dataset de entrenamiento ni resultados de benchmarks, y el repositorio registra 0 descargas y 1 "like".
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ La información disponible no incluye métricas ni parámetros que permitan una 
 
 ## Enlaces
 
-- [Modelo en HuggingFace: stanfordnlp/corenlp-german](https://huggingface.co/stanfordnlp/corenlp-german)
+- [Modelo en Hugging Face: stanfordnlp/corenlp-german](https://huggingface.co/stanfordnlp/corenlp-german)
 - [Sitio web de CoreNLP](https://stanfordnlp.github.io/CoreNLP)
 - [Repositorio GitHub de CoreNLP](https://github.com/stanfordnlp/CoreNLP)
-- [Repositorio de modelos para HuggingFace de Stanford: stanfordnlp/huggingface-models](https://github.com/stanfordnlp/huggingface-models)
+- [Repositorio de modelos para Hugging Face de Stanford: stanfordnlp/huggingface-models](https://github.com/stanfordnlp/huggingface-models)

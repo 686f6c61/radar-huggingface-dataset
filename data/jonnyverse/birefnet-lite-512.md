@@ -78,7 +78,7 @@ La principal diferencia es la resolución de entrada y la viabilidad en navegado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/birefnet-lite-512
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/birefnet-lite-512
 - Modelo base original: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Repositorio GitHub de BiRefNet: https://github.com/ZhengPeng7/BiRefNet
 - Web oficial de BiRefNet: https://www.birefnet.cv/

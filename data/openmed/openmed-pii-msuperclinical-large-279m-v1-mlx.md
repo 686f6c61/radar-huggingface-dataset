@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-mSuperClinical-Large-279M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-mSuperClinical-Large-279M-v1-mlx
 - Modelo base original: https://huggingface.co/OpenMed/OpenMed-PII-mSuperClinical-Large-279M-v1
 - Version ONNX para Android/Web: https://huggingface.co/OpenMed/OpenMed-PII-mSuperClinical-Large-279M-v1-onnx-android
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed

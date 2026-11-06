@@ -118,7 +118,7 @@ La comparación directa es con las otras dos variantes de la misma familia: el b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/JEV-35B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/autotrust/JEV-35B-NVFP4
 - Modelo base (bf16): https://huggingface.co/autotrust/JEV-35B
 - Variante anterior de la familia: https://huggingface.co/autotrust/JEV-27B-VL
 - Demo en vivo de recomendación y búsqueda (GuruSearch): https://news.guru.so/ui

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`simonefontanadam/classification-weights` es un repositorio de HuggingFace que contiene un prototipo de investigación de clasificación de imágenes basado en una implementación propia de Swin Transformer, etiquetada como `swin_t`. El autor lo publica de forma explícita como un punto de partida experimental: el archivo `model.safetensors` se describe como un checkpoint de inicialización válido para pruebas de humo y no como un modelo entrenado ni evaluado. No se reclama ninguna métrica de rendimiento en la model card.
+`simonefontanadam/classification-weights` es un repositorio de Hugging Face que contiene un prototipo de investigación de clasificación de imágenes basado en una implementación propia de Swin Transformer, etiquetada como `swin_t`. El autor lo publica de forma explícita como un punto de partida experimental: el archivo `model.safetensors` se describe como un checkpoint de inicialización válido para pruebas de humo y no como un modelo entrenado ni evaluado. No se reclama ninguna métrica de rendimiento en la model card.
 
 El repositorio incluye un script de inferencia (`inference.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de entrenamiento por defecto (optimizador Adam y scheduler polinómico) y el checkpoint de pesos. El tamaño del repositorio figura como 0.0 GB y el número de descargas es de 12, con 0 likes, lo que indica que se trata de un artefacto sin adopción ni validación por parte de la comunidad.
 
@@ -32,7 +32,7 @@ En cuanto al entrenamiento, no hay ningun dato disponible: no se especifica el n
 - Clasificacion de imagenes: es la tarea declarada del prototipo, aunque no existe evidencia de que el checkpoint incluido produzca predicciones utiles, al tratarse de pesos de inicializacion.
 - Punto de entrada de entrenamiento: el script `inference.py` contiene un bloque `__main__` con un ejemplo de prueba de humo que puede servir como plantilla para lanzar un entrenamiento o una inferencia de prueba.
 - Inspeccion de configuracion: `config.json` y `training_args.json` permiten reconstruir los hiperparametros y ajustes de arquitectura generados.
-- Carga mediante adaptador explicito: al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace requieren un adaptador antes de poder usarse.
+- Carga mediante adaptador explicito: al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face requieren un adaptador antes de poder usarse.
 - Generacion de texto: no, no es un modelo de lenguaje.
 - Tool calling / function calling: no disponible, no aplica.
 - Soporte de agentes o razonamiento multi-paso: no disponible, no aplica.
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, no hay ningun dato disponible: no se especifica el n
 - Punto de partida para reproducir un baseline de clasificacion: el repositorio aporta estructura de proyecto, configuracion y script, de modo que un equipo puede clonarlo y entrenarlo sobre su propio dataset etiquetado para obtener una referencia inicial de Swin-T.
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de inicializacion permite verificar que el flujo de carga de pesos, el `forward` y el guardado funcionan antes de invertir horas de computo en un entrenamiento real.
 - Auditoria de implementaciones de Swin Transformer: util para comparar una reimplementacion concreta (ventanas, atencion, normalizacion) contra la implementacion de referencia de Microsoft, detectando divergencias como las que sugiere la tabla de arquitectura.
-- Docencia y formacion: sirve como ejemplo minimo y legible de la estructura de un repositorio de vision por computador en HuggingFace (pesos, config, argumentos de entrenamiento, script de inferencia).
+- Docencia y formacion: sirve como ejemplo minimo y legible de la estructura de un repositorio de vision por computador en Hugging Face (pesos, config, argumentos de entrenamiento, script de inferencia).
 - Base para experimentos de destilacion o ajuste fino: al ser un modelo pequeno en el rango Tiny, puede actuar como alumno en esquemas de destilacion desde modelos mayores una vez entrenado.
 - Extraccion de caracteristicas en investigacion: si la implementacion expone las representaciones intermedias, podria emplearse como backbone congelado para tareas aguas abajo (deteccion, segmentacion, recuperacion de imagenes), previo entrenamiento.
 
@@ -66,14 +66,14 @@ La model card declara explicitamente que no se reclama ninguna puntuacion de ben
 
 ## Comparativa con modelos similares
 
-La comparativa se establece contra backbones de clasificacion de rango Tiny ampliamente usados. Los datos de la columna "este repositorio" son los declarados en la ficha de HuggingFace; los de las alternativas son las cifras publicas habituales de sus implementaciones de referencia, no medidas en este repositorio.
+La comparativa se establece contra backbones de clasificacion de rango Tiny ampliamente usados. Los datos de la columna "este repositorio" son los declarados en la ficha de Hugging Face; los de las alternativas son las cifras publicas habituales de sus implementaciones de referencia, no medidas en este repositorio.
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| simonefontanadam/classification-weights | 16.576 declarados (ambiguo) | no disponible | sin benchmarks publicados; checkpoint sin entrenar | MIT | HuggingFace, 12 descargas |
+| simonefontanadam/classification-weights | 16.576 declarados (ambiguo) | no disponible | sin benchmarks publicados; checkpoint sin entrenar | MIT | Hugging Face, 12 descargas |
 | Swin-T (Microsoft, referencia) | ~28 M | imagenes, habitualmente 224x224 | resultados publicados en ImageNet-1k en la implementacion original | MIT | pesos oficiales disponibles |
-| DeiT-Small | ~22 M | imagenes, habitualmente 224x224 | resultados publicados en ImageNet-1k | Apache 2.0 / MIT segun variante | HuggingFace y repositorio original |
-| ConvNeXt-Tiny | ~28 M | imagenes, habitualmente 224x224 | resultados publicados en ImageNet-1k | MIT | HuggingFace y repositorio original |
+| DeiT-Small | ~22 M | imagenes, habitualmente 224x224 | resultados publicados en ImageNet-1k | Apache 2.0 / MIT segun variante | Hugging Face y repositorio original |
+| ConvNeXt-Tiny | ~28 M | imagenes, habitualmente 224x224 | resultados publicados en ImageNet-1k | MIT | Hugging Face y repositorio original |
 
 Nota: las cifras de las alternativas se incluyen a titulo orientativo de categoria y tamano. No se dispone de una evaluacion comparable de este repositorio, por lo que no es posible establecer una comparacion de rendimiento real.
 
@@ -93,6 +93,6 @@ Nota: las cifras de las alternativas se incluyen a titulo orientativo de categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simonefontanadam/classification-weights
+- Modelo en Hugging Face: https://huggingface.co/simonefontanadam/classification-weights
 
 No se han encontrado en la busqueda web enlaces relevantes sobre este modelo: los resultados obtenidos (un comparador de benchmarks de modelos de lenguaje, noticias sobre un incidente de un modelo de Anthropic y un articulo divulgativo sobre pesos de modelos) no guardan relacion con este repositorio de clasificacion de imagenes. No se dispone, por tanto, de paper, blog tecnico, repositorio de codigo adicional ni demo asociados.

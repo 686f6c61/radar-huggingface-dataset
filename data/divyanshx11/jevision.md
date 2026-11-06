@@ -73,7 +73,7 @@ El autor indica explícitamente que la calidad de las respuestas en contexto lar
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JEVision (divyanshx11) | ~0,8 B base + LoRA | Envelope de hasta 80.000 tokens | Decisión tipada texto e imagen con adaptadores y pointer heads | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
+| JEVision (divyanshx11) | ~0,8 B base + LoRA | Envelope de hasta 80.000 tokens | Decisión tipada texto e imagen con adaptadores y pointer heads | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
 | Qwen3.5-0.8B-Base | ~0,8 B | No disponible | Modelo base generativo | No disponible en esta información | Modelo base referenciado por JEVision |
 | KEV-0.8B (jaredpalmer) | ~0,8 B | No disponible | Interfaz System One textual | No disponible en esta información | Checkpoint opcional incluido como adaptador alternativo |
 
@@ -82,7 +82,7 @@ No se dispone de información sobre otros sistemas de decisión tipada comparabl
 ## Limitaciones y advertencias
 
 - No se han publicado evaluaciones de calidad de las respuestas; las pruebas registradas solo verifican el manejo de peticiones, no la corrección de las decisiones.
-- El modelo está etiquetado únicamente para inglés, tanto en la model card como en los metadatos de HuggingFace; no hay evidencia de soporte multilingüe.
+- El modelo está etiquetado únicamente para inglés, tanto en la model card como en los metadatos de Hugging Face; no hay evidencia de soporte multilingüe.
 - El tipo de respuesta Noul aparece mencionado en la documentación pero no se define su semántica ni su formato, lo que dificulta su uso sin revisar el código del runtime.
 - El repositorio tiene 0 descargas y 1 like, y fue creado el 24 de septiembre de 2026 con última actualización el 25 de septiembre de 2026, por lo que se trata de una publicación muy reciente y con validación externa nula.
 - El paquete no incluye los pesos base; es necesario descargar Qwen/Qwen3.5-0.8B-Base por separado, lo que añade un paso de instalación y posibles dependencias de red.
@@ -93,7 +93,7 @@ No se dispone de información sobre otros sistemas de decisión tipada comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divyanshx11/JEVision
+- Modelo en Hugging Face: https://huggingface.co/divyanshx11/JEVision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Checkpoint KEV-0.8B opcional: https://huggingface.co/jaredpalmer/kev-0.8b
 - Fotografía de ejemplo (Shixart1985, CC BY 2.0, vía Wikimedia Commons): https://commons.wikimedia.org/wiki/File:Coffee_cup_next_to_laptop_on_wooden_table_in_cozy_indoor_workspace_during_daytime.jpg

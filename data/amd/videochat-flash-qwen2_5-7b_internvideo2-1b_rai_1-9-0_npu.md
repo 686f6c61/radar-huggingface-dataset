@@ -22,7 +22,7 @@ La relevancia actual es doble: por un lado, demuestra la madurez de los runtimes
 | Formato de pesos | ONNX (con codigo personalizado, custom_code) |
 | Tamano del repositorio | 14.0 GB |
 | Runtime objetivo | RyzenAI 1.9.0 sobre NPU AMD |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VideoChat-Flash-Qwen2_5-7B_InternVideo2-1B (este repo, AMD) | ~8B (7B LLM + 1B vision) | no disponible | ONNX para NPU Ryzen AI | Apache 2.0 | Gated en HuggingFace |
+| VideoChat-Flash-Qwen2_5-7B_InternVideo2-1B (este repo, AMD) | ~8B (7B LLM + 1B vision) | no disponible | ONNX para NPU Ryzen AI | Apache 2.0 | Gated en Hugging Face |
 | Qwen2.5-7B (LLM base) | 7B | no disponible en esta ficha | safetensors / GGUF | Apache 2.0 | Publico |
 | InternVideo2-1B (codificador visual) | 1B | no aplica | pesos propios | no disponible en esta ficha | Publico |
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Idioma: el repositorio declara unicamente ingles; el rendimiento en castellano no esta garantizado ni documentado.
 - Plataforma: el artefacto esta empaquetado para NPU AMD con RyzenAI 1.9.0; no es portable directamente a GPU o CPU sin reconversion.
 - Formato ONNX con codigo personalizado: requiere el runtime especifico de AMD, lo que limita la integracion con stacks estandar (transformers, vLLM, llama.cpp).
@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/VideoChat-Flash-Qwen2_5-7B_InternVideo2-1B_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/VideoChat-Flash-Qwen2_5-7B_InternVideo2-1B_rai_1.9.0_npu
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos especificos de esta version.

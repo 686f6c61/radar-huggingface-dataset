@@ -94,7 +94,7 @@ La comparativa se limita a los derivados de la misma familia, ya que no se dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-4bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Versión 8-bit: https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-8bit
 - Versión BF16: https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-BF16

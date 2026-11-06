@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento de este artefacto ni de sus alternativas d
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| timlikesai/Qwen3.8-27B-MXFP4 | 26.895.998.464 | GGUF MXFP4 4,25 bits | no disponible | no disponible | HuggingFace, 0 descargas |
-| ggml-org/Qwen3.8-27B (base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace, referenciado por el autor |
+| timlikesai/Qwen3.8-27B-MXFP4 | 26.895.998.464 | GGUF MXFP4 4,25 bits | no disponible | no disponible | Hugging Face, 0 descargas |
+| ggml-org/Qwen3.8-27B (base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face, referenciado por el autor |
 | Otras cuantizaciones del mismo modelo base | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada modelos alternativos de tamano o tarea comparable con datos verificables.
@@ -94,7 +94,7 @@ No se han identificado en la informacion proporcionada modelos alternativos de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timlikesai/Qwen3.8-27B-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/timlikesai/Qwen3.8-27B-MXFP4
 - Modelo base referenciado por el autor: https://huggingface.co/ggml-org/Qwen3.8-27B
 - Pull request del fork de llama.cpp citada en la model card: https://github.com/timlikesai/llama.cpp/pull/14
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; las entradas devueltas corresponden a listados de hoteles en Sydney y no guardan ninguna relacion con el modelo.

@@ -97,7 +97,7 @@ Las guardas son pequenos ajustes de codigo en la aplicacion (por ejemplo, pedir 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-tool-router-v3-q4f32_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-tool-router-v3-q4f32_1-MLC
 - Build f16: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-tool-router-v3-q4f16_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE

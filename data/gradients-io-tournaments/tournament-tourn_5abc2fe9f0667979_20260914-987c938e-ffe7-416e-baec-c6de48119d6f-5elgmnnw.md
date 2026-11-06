@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (Llama 3.1 8B + LoRA) | 8B | 128k | no disponible | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 128k | no disponible | HuggingFace |
+| Este adaptador (Llama 3.1 8B + LoRA) | 8B | 128k | no disponible | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 128k | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,5 +73,5 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-987c938e-ffe7-416e-baec-c6de48119d6f-5ELGMNNW
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-987c938e-ffe7-416e-baec-c6de48119d6f-5ELGMNNW
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

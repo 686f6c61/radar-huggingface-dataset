@@ -74,7 +74,7 @@ La precision dura excluye las filas con objetivos suaves (soft targets). La prec
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| Open-Jev-9B | 9B en el modelo base; adaptador LoRA r8/alpha 16 + cabeza escalar | 4096 tokens por candidato | Decisiones tipadas (Choice, Noul, Score) | Apache 2.0 | Adaptador en HuggingFace, requiere cargador propio |
+| Open-Jev-9B | 9B en el modelo base; adaptador LoRA r8/alpha 16 + cabeza escalar | 4096 tokens por candidato | Decisiones tipadas (Choice, Noul, Score) | Apache 2.0 | Adaptador en Hugging Face, requiere cargador propio |
 | Qwen/Qwen3.5-9B | 9B | No disponible | Generacion de texto autoregresiva | No disponible en la informacion facilitada | Modelo base upstream |
 | Otros adaptadores de decision tipada comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -97,7 +97,7 @@ La unica alternativa identificable en la informacion disponible es el propio mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZefanCai/Open-Jev-9B
+- Modelo en Hugging Face: https://huggingface.co/ZefanCai/Open-Jev-9B
 - Repositorio del cargador y servidor Open-Jev: https://github.com/Zefan-Cai/Open-Jev
 - Dataset publico: https://huggingface.co/datasets/ZefanCai/Open-Jev (proyeccion `release-v2-redistributable`)
 - Provenance del paquete: `package/provenance.json` dentro del repositorio del modelo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Recipe-Tagger es un repositorio de modelos publicado en HuggingFace por el usuario Gobsmacked bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica asociada al repositorio se reduce a los metadatos de la plataforma: no hay model card (el README solo contiene el campo `license: mit`), no se declara un pipeline o tarea, no se indican idiomas y el repositorio no registra descargas ni interacciones.
+Recipe-Tagger es un repositorio de modelos publicado en Hugging Face por el usuario Gobsmacked bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica asociada al repositorio se reduce a los metadatos de la plataforma: no hay model card (el README solo contiene el campo `license: mit`), no se declara un pipeline o tarea, no se indican idiomas y el repositorio no registra descargas ni interacciones.
 
 El nombre del repositorio sugiere un sistema de etiquetado de recetas de cocina, presumiblemente orientado a clasificacion o extraccion de atributos (ingredientes, tipo de plato, dieta, tiempo de preparacion), pero esta interpretacion no esta confirmada por ninguna documentacion oficial. Tampoco se especifican arquitectura, numero de parametros, longitud de contexto ni procedimiento de entrenamiento.
 
@@ -84,5 +84,5 @@ No es posible establecer una comparativa fiable: se desconocen parametros, conte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gobsmacked/Recipe-Tagger
+- Hugging Face: https://huggingface.co/Gobsmacked/Recipe-Tagger
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

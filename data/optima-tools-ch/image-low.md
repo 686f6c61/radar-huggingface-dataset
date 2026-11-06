@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros (UNet) | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `optima-tools-ch/image-low` (SSD-1B reempaquetado) | ~1.330 M | no disponible | Apache 2.0 | HuggingFace, 21 descargas | Pesos FP16 con nombres estandar Diffusers; sin validacion de ejecucion |
-| `segmind/SSD-1B` (fuente) | ~1.330 M | no disponible | Apache 2.0 | HuggingFace | Incluye ficheros autonomos para A1111/ComfyUI y variantes FP32 |
-| SDXL base | ~2.570 M (referencia publica) | no disponible en esta ficha | CreativeML Open RAIL++-M (referencia publica) | HuggingFace | Mayor coste de inferencia; calidad superior segun la fuente, sin cifras en esta ficha |
+| `optima-tools-ch/image-low` (SSD-1B reempaquetado) | ~1.330 M | no disponible | Apache 2.0 | Hugging Face, 21 descargas | Pesos FP16 con nombres estandar Diffusers; sin validacion de ejecucion |
+| `segmind/SSD-1B` (fuente) | ~1.330 M | no disponible | Apache 2.0 | Hugging Face | Incluye ficheros autonomos para A1111/ComfyUI y variantes FP32 |
+| SDXL base | ~2.570 M (referencia publica) | no disponible en esta ficha | CreativeML Open RAIL++-M (referencia publica) | Hugging Face | Mayor coste de inferencia; calidad superior segun la fuente, sin cifras en esta ficha |
 | FLUX.2 Klein | no disponible | no disponible | no disponible | Mencionado por Optima Tools | Unico modelo con retoque nativo soportado por el motor de Optima Tools |
 
 Los datos de SDXL base y FLUX.2 Klein no provienen de la informacion proporcionada para este modelo y se incluyen solo como referencia de categoria; no se dispone de comparaciones de rendimiento medidas.
@@ -76,7 +76,7 @@ Los datos de SDXL base y FLUX.2 Klein no provienen de la informacion proporciona
 
 - No es un modelo nuevo: es una copia reempaquetada de `segmind/SSD-1B`; los meritos tecnicos corresponden a Segmind, no a Optima Tools.
 - Validacion de ejecucion no realizada: el autor declara explicitamente que la publicacion no es un test de ejecucion y que los requisitos materiales no se han medido.
-- Integridad parcial: el SHA-256 de los pesos grandes proviene de metadatos LFS de HuggingFace y no se ha recalculado localmente; solo los ficheros pequenos se verificaron por contenido.
+- Integridad parcial: el SHA-256 de los pesos grandes proviene de metadatos LFS de Hugging Face y no se ha recalculado localmente; solo los ficheros pequenos se verificaron por contenido.
 - Riesgo de confusion FP16/FP32: los ficheros `model.safetensors` y `diffusion_pytorch_model.safetensors` entregados son los FP16 renombrados, no los FP32 de la fuente. Pasar `variant="fp16"` provocara errores de carga.
 - Sin soporte de retoque nativo en Optima Tools: inpainting e img2img no estan disponibles con este paquete en ese motor.
 - Sin ficheros para AUTOMATIC1111 ni ComfyUI: la compatibilidad anunciada por la fuente no se traslada al paquete distribuido.
@@ -88,7 +88,7 @@ Los datos de SDXL base y FLUX.2 Klein no provienen de la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/optima-tools-ch/image-low
+- Repositorio Hugging Face: https://huggingface.co/optima-tools-ch/image-low
 - Modelo fuente: https://huggingface.co/segmind/SSD-1B
 - Revision fuente concreta: https://huggingface.co/segmind/SSD-1B/tree/60987f37e94cd59c36b1cba832b9f97b57395a10
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0.txt

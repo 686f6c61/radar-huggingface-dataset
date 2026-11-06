@@ -2,11 +2,11 @@
 
 ## Resumen
 
-cross_encoder_tulati-v1-afrie5-salt es un modelo de tipo cross-encoder para clasificacion de pares de textos, desarrollado por el usuario amDANIEL2024 y publicado en HuggingFace. Se obtiene por fine-tuning del modelo amDANIEL2024/tulati-v1-afrie5-salt, que a su vez parte de la familia XLM-RoBERTa segun los tags del repositorio. El resultado es un clasificador de 559.892.482 parametros (aproximadamente 560 millones, coherente con una arquitectura XLM-RoBERTa large) que procesa conjuntamente dos secuencias y emite una puntuacion o etiqueta.
+cross_encoder_tulati-v1-afrie5-salt es un modelo de tipo cross-encoder para clasificacion de pares de textos, desarrollado por el usuario amDANIEL2024 y publicado en Hugging Face. Se obtiene por fine-tuning del modelo amDANIEL2024/tulati-v1-afrie5-salt, que a su vez parte de la familia XLM-RoBERTa segun los tags del repositorio. El resultado es un clasificador de 559.892.482 parametros (aproximadamente 560 millones, coherente con una arquitectura XLM-RoBERTa large) que procesa conjuntamente dos secuencias y emite una puntuacion o etiqueta.
 
 El modelo resuelve el problema del reordenamiento (reranking) y la clasificacion de pares en pipelines de recuperacion de informacion, donde un retriever ligero devuelve candidatos y un cross-encoder los reordena con mayor precision. Su relevancia practica esta en las metricas declaradas por el autor sobre el conjunto de evaluacion: accuracy 0,9582, F1 0,9583, precision 0,9566, recall 0,96 y AUC 0,9897, con una perdida de 0,3406.
 
-La model card es un artefacto autogenerado por el Trainer de HuggingFace y esta practicamente vacia en las secciones descriptivas: no especifica dataset de entrenamiento, idiomas, licencia ni usos previstos. Con cero descargas y cero likes en el momento de la consulta, se trata de un modelo sin validacion externa ni adopcion comunitaria, lo que condiciona cualquier evaluacion de produccion.
+La model card es un artefacto autogenerado por el Trainer de Hugging Face y esta practicamente vacia en las secciones descriptivas: no especifica dataset de entrenamiento, idiomas, licencia ni usos previstos. Con cero descargas y cero likes en el momento de la consulta, se trata de un modelo sin validacion externa ni adopcion comunitaria, lo que condiciona cualquier evaluacion de produccion.
 
 ## Especificaciones tecnicas
 
@@ -118,7 +118,7 @@ Frente a estas alternativas, el modelo evaluado no aporta datos publicos de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amDANIEL2024/cross_encoder_tulati-v1-afrie5-salt
+- Modelo en Hugging Face: https://huggingface.co/amDANIEL2024/cross_encoder_tulati-v1-afrie5-salt
 - Modelo base: https://huggingface.co/amDANIEL2024/tulati-v1-afrie5-salt
 - Paper, blog o repositorio adicional: no disponible
 - Demo: no disponible

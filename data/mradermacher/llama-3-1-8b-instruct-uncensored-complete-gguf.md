@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia es la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-Complete-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-Complete-GGUF
 - Modelo base: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Uncensored-Complete
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-Complete-i1-GGUF
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

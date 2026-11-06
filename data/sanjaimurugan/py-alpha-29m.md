@@ -104,5 +104,5 @@ La comparación con Qwen2.5-Coder-0.5B es la única aportada por el autor y debe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanjaimurugan/py-alpha-29m
+- Modelo en Hugging Face: https://huggingface.co/sanjaimurugan/py-alpha-29m
 - Dataset utilizado: https://huggingface.co/datasets/codeparrot/codeparrot-clean

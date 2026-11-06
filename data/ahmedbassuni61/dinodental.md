@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DinoDental es un detector de objetos basado en YOLO26, desarrollado por el usuario ahmedbassuni61 y publicado en HuggingFace con el identificador `ahmedbassuni61/DinoDental`. Su tarea especifica es la deteccion de las 32 piezas dentales segun la nomenclatura FDI (Federation Dentaire Internationale) en fotografias intraorales, es decir, clasifica y localiza cada diente con su numero FDI correspondiente en una unica pasada de inferencia. El modelo esta entrenado sobre el conjunto de datos clinico IOP-Compass, compuesto por 700 pacientes y 3.500 fotografias, y se distribuye bajo licencia AGPL-3.0.
+DinoDental es un detector de objetos basado en YOLO26, desarrollado por el usuario ahmedbassuni61 y publicado en Hugging Face con el identificador `ahmedbassuni61/DinoDental`. Su tarea especifica es la deteccion de las 32 piezas dentales segun la nomenclatura FDI (Federation Dentaire Internationale) en fotografias intraorales, es decir, clasifica y localiza cada diente con su numero FDI correspondiente en una unica pasada de inferencia. El modelo esta entrenado sobre el conjunto de datos clinico IOP-Compass, compuesto por 700 pacientes y 3.500 fotografias, y se distribuye bajo licencia AGPL-3.0.
 
 Se trata de un modelo de vision por computador para deteccion de objetos, no de un modelo de lenguaje, por lo que conceptos como ventana de contexto, cuantizacion GGUF o soporte multilingue no aplican directamente. El checkpoint publicado alcanza, en la epoca 14 de entrenamiento, un mAP@50 de 0,9349 y un mAP@50-95 de 0,8839 sobre el conjunto evaluado, con una precision de 0,8998 y un recall de 0,8920.
 
@@ -88,6 +88,6 @@ No disponible. En la informacion proporcionada no se incluyen modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahmedbassuni61/DinoDental
+- Hugging Face: https://huggingface.co/ahmedbassuni61/DinoDental
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.
 - Los resultados de busqueda web facilitados no contienen informacion relacionada con este modelo (corresponden a contenido no pertinente sobre tablaturas de guitarra), por lo que no se incluye ningun otro enlace.

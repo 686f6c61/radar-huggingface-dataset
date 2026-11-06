@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-beta es un repositorio de HuggingFace publicado por el usuario ppateldivya que contiene una implementación compacta y personalizada en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje contrastivo. El propio autor lo describe como un artefacto para revisión de código, pruebas de humo y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
+contrastive-beta es un repositorio de Hugging Face publicado por el usuario ppateldivya que contiene una implementación compacta y personalizada en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje contrastivo. El propio autor lo describe como un artefacto para revisión de código, pruebas de humo y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
 
 La configuración declarada corresponde a la escala "giant", con atención de ventana deslizante, fusión tensorial, activación mish y normalización scalenorm. Sin embargo, el checkpoint safetensors incluido contiene únicamente 24.832 parámetros (unos 24,8 mil), una cifra incompatible con cualquier ViT de escala gigante, lo que confirma que se trata de una inicialización de prueba y no de pesos entrenados.
 
@@ -92,13 +92,13 @@ La diferencia fundamental no es de tamaño ni de arquitectura, sino de estado: l
 - No hay información sobre sesgos, porque no hay datos de entrenamiento documentados.
 - No se declaran idiomas soportados; el uso previsto es exclusivamente visual.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero la propia model card advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se utiliza con conjuntos de datos externos.
-- Las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito, debido a que la implementación es personalizada.
+- Las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito, debido a que la implementación es personalizada.
 - El repositorio registra cero descargas y cero "likes", por lo que no existe validación por parte de la comunidad.
 - Cualquier resultado obtenido con este código debe documentarse de forma separada a los valores por defecto publicados, tal y como indica el autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ppateldivya/contrastive-beta
+- Repositorio en Hugging Face: https://huggingface.co/ppateldivya/contrastive-beta
 - Archivos incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog o repositorio adicional: no disponible
 - Demo o espacio de inferencia: no disponible

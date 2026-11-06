@@ -77,10 +77,10 @@ El modelo de 0,8B queda 5,1 puntos por debajo del de 2B en MDPBench, 3,4 en olmO
 
 | Modelo | Params | Contexto | MDPBench | olmOCR-bench | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| Typhoon OCR V2 0.8B | 0,8B | no disponible | 75,1 | 80,9 | Apache 2.0 | HuggingFace |
+| Typhoon OCR V2 0.8B | 0,8B | no disponible | 75,1 | 80,9 | Apache 2.0 | Hugging Face |
 | PaddleOCR-VL-1.6 | 0,9B | no disponible | 72,5 | 80,8 | no disponible | no disponible |
 | Infinity-Parser2-Flash | 2B | no disponible | 61,5 | 82,9 | no disponible | no disponible |
-| Typhoon OCR V2 2B | 2B | no disponible | 80,2 | 84,3 | Apache 2.0 | HuggingFace |
+| Typhoon OCR V2 2B | 2B | no disponible | 80,2 | 84,3 | Apache 2.0 | Hugging Face |
 
 Frente a PaddleOCR-VL-1.6, de tamaño similar, el modelo de Typhoon obtiene 2,6 puntos más en MDPBench y prácticamente el mismo resultado en olmOCR-bench, aunque PaddleOCR-VL-1.6 es muy superior en OmniDocBench (95,83 frente a 89,30). Frente a Infinity-Parser2-Flash (2B), el modelo de 0,8B es claramente mejor en MDPBench (75,1 frente a 61,5) y ligeramente inferior en olmOCR-bench (80,9 frente a 82,9). El modelo de 2B de la misma familia es superior en todas las métricas excepto en SEA-DocBench NED, donde el de 0,8B es marginalmente mejor.
 
@@ -97,7 +97,7 @@ Frente a PaddleOCR-VL-1.6, de tamaño similar, el modelo de Typhoon obtiene 2,6 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/typhoon-ai/typhoon-ocr2-0.8b
+- Modelo en Hugging Face: https://huggingface.co/typhoon-ai/typhoon-ocr2-0.8b
 - Modelo base: https://huggingface.co/ATH-MaaS/OvisOCR2
 - Modelo hermano de 2B: https://huggingface.co/typhoon-ai/typhoon-ocr2-2b
 - Versión anterior: https://huggingface.co/typhoon-ai/typhoon-ocr1.5-2b

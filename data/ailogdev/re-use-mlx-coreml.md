@@ -76,8 +76,8 @@ Calidad: en un par limpio/ruidoso de voz, el perfil hibrido de A19 Pro cambio el
 
 | Modelo | Tipo | Parametros | Contexto/ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RE-USE-MLX-CoreML (este) | Mejora de voz hibrida MLX/Core ML | no disponible | Ventanas de 5 s | openmdw-1.1 | HuggingFace, on-device Apple |
-| NVIDIA RE-USE (original) | Mejora de voz | no disponible | no disponible | openmdw-1.1 | HuggingFace (nvidia/NVIDIA-NemotronLabs-RE-USE) |
+| RE-USE-MLX-CoreML (este) | Mejora de voz hibrida MLX/Core ML | no disponible | Ventanas de 5 s | openmdw-1.1 | Hugging Face, on-device Apple |
+| NVIDIA RE-USE (original) | Mejora de voz | no disponible | no disponible | openmdw-1.1 | Hugging Face (nvidia/NVIDIA-NemotronLabs-RE-USE) |
 | Alternativas de reduccion de ruido en Apple Silicon | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de mejora de voz en la informacion proporcionada. La unica comparacion directa posible es con el modelo base de NVIDIA, del cual este es una conversion sin entrenamiento adicional.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de mejora de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AILogDev/RE-USE-MLX-CoreML
+- Modelo en Hugging Face: https://huggingface.co/AILogDev/RE-USE-MLX-CoreML
 - Modelo base NVIDIA: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE
 - Repositorio GitHub del SDK: https://github.com/Corvelis/RE-USE-MLX-CoreML
 - Paquete SDK: https://huggingface.co/AILogDev/RE-USE-MLX-CoreML/resolve/main/ReuseKit.zip

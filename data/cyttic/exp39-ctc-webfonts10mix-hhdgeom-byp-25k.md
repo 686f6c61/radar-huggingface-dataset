@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k` es un checkpoint publicado en HuggingFace por el usuario cyttic, con 87.279.756 parámetros totales según los metadatos de safetensors y un tamano de repositorio de aproximadamente 0,3 GB. Por la nomenclatura del identificador (CTC, webfonts, geom, 25k), todo apunta a un modelo de reconocimiento optico de caracteres (OCR) o de reconocimiento de escritura/texto en imagenes, probablemente entrenado con un objetivo CTC (Connectionist Temporal Classification) sobre un conjunto de datos de fuentes web. No obstante, esta interpretacion es inferida del nombre y no esta confirmada en la model card.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k` es un checkpoint publicado en Hugging Face por el usuario cyttic, con 87.279.756 parámetros totales según los metadatos de safetensors y un tamano de repositorio de aproximadamente 0,3 GB. Por la nomenclatura del identificador (CTC, webfonts, geom, 25k), todo apunta a un modelo de reconocimiento optico de caracteres (OCR) o de reconocimiento de escritura/texto en imagenes, probablemente entrenado con un objetivo CTC (Connectionist Temporal Classification) sobre un conjunto de datos de fuentes web. No obstante, esta interpretacion es inferida del nombre y no esta confirmada en la model card.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, arquitectura, datos de entrenamiento, evaluacion y uso previsto aparecen como `[More Information Needed]`. No hay informacion sobre el pipeline, los idiomas soportados ni los resultados de benchmarks. El unico dato tecnico verificable ademas del recuento de parametros es la licencia MIT y la referencia generica al paper de Lacoste et al. (2019) sobre emisiones de carbono (arXiv:1910.09700), que aparece como cita de la plantilla y no como paper del modelo.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, arquitectura, datos de entrenamiento, evaluacion y uso previsto aparecen como `[More Information Needed]`. No hay informacion sobre el pipeline, los idiomas soportados ni los resultados de benchmarks. El unico dato tecnico verificable ademas del recuento de parametros es la licencia MIT y la referencia generica al paper de Lacoste et al. (2019) sobre emisiones de carbono (arXiv:1910.09700), que aparece como cita de la plantilla y no como paper del modelo.
 
 Por tanto, esta ficha documenta lo que se puede verificar objetivamente y marca de forma explicita como "no disponible" todo aquello que el autor no ha publicado. Es relevante precisamente como ejemplo de checkpoint de investigacion sin documentacion, algo frecuente en repositorios experimentales.
 
@@ -69,10 +69,10 @@ No es posible establecer una comparativa fiable porque no se conoce la tarea exa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k | 87,3 M | no disponible | MIT | HuggingFace (solo safetensors) |
-| TrOCR (referencia) | ~334 M (base) | no aplica | MIT | HuggingFace, Transformers |
+| cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k | 87,3 M | no disponible | MIT | Hugging Face (solo safetensors) |
+| TrOCR (referencia) | ~334 M (base) | no aplica | MIT | Hugging Face, Transformers |
 | PaddleOCR (referencia) | variable, decenas de M | no aplica | Apache 2.0 | PaddlePaddle, ONNX |
-| Donut (referencia) | ~200 M | no aplica | MIT | HuggingFace, Transformers |
+| Donut (referencia) | ~200 M | no aplica | MIT | Hugging Face, Transformers |
 
 ## Limitaciones y advertencias
 
@@ -86,6 +86,6 @@ No es posible establecer una comparativa fiable porque no se conoce la tarea exa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k
+- Modelo en Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k
 - Paper citado en la plantilla (emisiones de carbono, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML mencionada en la plantilla: https://mlco2.github.io/impact

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Roisin es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes, publicado por el usuario Burroughs352 en HuggingFace. Está diseñado como un complemento del modelo base Tongyi-MAI/Z-Image-Turbo, un modelo de difusión de texto a imagen desarrollado por Tongyi-MAI. El adaptador se activa mediante la palabra clave «Roisin» y permite generar imágenes que siguen un estilo o identidad visual específica definida por el autor.
+Roisin es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes, publicado por el usuario Burroughs352 en Hugging Face. Está diseñado como un complemento del modelo base Tongyi-MAI/Z-Image-Turbo, un modelo de difusión de texto a imagen desarrollado por Tongyi-MAI. El adaptador se activa mediante la palabra clave «Roisin» y permite generar imágenes que siguen un estilo o identidad visual específica definida por el autor.
 
 El repositorio tiene un tamaño de 0,5 GB y se distribuye a través de la librería Diffusers, lo que facilita su integración en pipelines estándar de generación de imágenes. Aunque la ficha no incluye detalles sobre el contenido entrenado ni el propósito exacto, la estructura típica de un LoRA de este tipo es personalizar la salida del modelo base hacia un personaje, estilo artístico o temática concreta, mediante un prompt de activación. La relevancia de este adaptador es limitada y su uso requiere disponer del modelo base, que actúa como motor de generación.
 

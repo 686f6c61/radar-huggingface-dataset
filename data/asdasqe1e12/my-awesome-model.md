@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASDASQE1E12 bajo licencia MIT. Segun su model card, se trata de un modelo de razonamiento que ha recibido una actualizacion significativa en su capacidad de inferencia, con mejoras en matematicas, programacion y logica general. La model card reporta un incremento en la precision del test AIME 2025 del 70% al 87,5% respecto a la version anterior, atribuido a un mayor uso de tokens de razonamiento (de 12K a 23K tokens por pregunta), asi como una reduccion de la tasa de alucinacion y un soporte mejorado de function calling.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASDASQE1E12 bajo licencia MIT. Segun su model card, se trata de un modelo de razonamiento que ha recibido una actualizacion significativa en su capacidad de inferencia, con mejoras en matematicas, programacion y logica general. La model card reporta un incremento en la precision del test AIME 2025 del 70% al 87,5% respecto a la version anterior, atribuido a un mayor uso de tokens de razonamiento (de 12K a 23K tokens por pregunta), asi como una reduccion de la tasa de alucinacion y un soporte mejorado de function calling.
 
-Sin embargo, la informacion disponible presenta contradicciones importantes. El repositorio de HuggingFace tiene un tamano de 0.0 GB, no contiene pesos publicados, y acumula 0 descargas y 0 likes. Los metadatos etiquetan el modelo como BERT para feature-extraction, lo que contradice la descripcion de la model card, que presenta un modelo conversacional de razonamiento avanzado. No se especifican datos fundamentales como arquitectura, numero de parametros o longitud de contexto. Se trata, con alta probabilidad, de un proyecto en fase inicial o de una prueba sin artefactos publicados.
+Sin embargo, la informacion disponible presenta contradicciones importantes. El repositorio de Hugging Face tiene un tamano de 0.0 GB, no contiene pesos publicados, y acumula 0 descargas y 0 likes. Los metadatos etiquetan el modelo como BERT para feature-extraction, lo que contradice la descripcion de la model card, que presenta un modelo conversacional de razonamiento avanzado. No se especifican datos fundamentales como arquitectura, numero de parametros o longitud de contexto. Se trata, con alta probabilidad, de un proyecto en fase inicial o de una prueba sin artefactos publicados.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Sin embargo, la informacion disponible presenta contradicciones importantes. El 
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles tecnicos sobre la arquitectura del modelo. Menciona que existe una variante denominada MyAwesomeModel-Small que comparte arquitectura con el modelo base y utiliza el mismo tokenizer que la version principal, pero no se especifican los detalles de diseno. Los metadatos de HuggingFace incluyen la etiqueta "bert" y el pipeline "feature-extraction", lo que sugeriria un modelo encoder tipo BERT, aunque esto resulta incompatible con las capacidades descritas en la model card (razonamiento profundo, function calling, generacion aumentada por busqueda web), mas propias de un LLM autoregresivo.
+La model card no proporciona detalles tecnicos sobre la arquitectura del modelo. Menciona que existe una variante denominada MyAwesomeModel-Small que comparte arquitectura con el modelo base y utiliza el mismo tokenizer que la version principal, pero no se especifican los detalles de diseno. Los metadatos de Hugging Face incluyen la etiqueta "bert" y el pipeline "feature-extraction", lo que sugeriria un modelo encoder tipo BERT, aunque esto resulta incompatible con las capacidades descritas en la model card (razonamiento profundo, function calling, generacion aumentada por busqueda web), mas propias de un LLM autoregresivo.
 
 Sobre el entrenamiento, la model card menciona de forma generica el uso de "recursos computacionales incrementados" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", pero no ofrece datos concretos sobre volumen de datos, composicion del dataset, ni tecnicas como RLHF, DPO o SFT. Tampoco se documenta el numero de tokens de entrenamiento ni la procedencia de los datos.
 
@@ -78,8 +78,8 @@ No disponible. La model card menciona dos modelos de referencia ("Model1" y "Mod
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace esta vacio (0.0 GB) y no contiene pesos del modelo, por lo que no es posible descargarlo ni ejecutarlo localmente.
-- Los metadatos de HuggingFace (tags BERT, pipeline feature-extraction) contradicen la descripcion de la model card, que presenta un modelo de razonamiento conversacional con function calling.
+- El repositorio de Hugging Face esta vacio (0.0 GB) y no contiene pesos del modelo, por lo que no es posible descargarlo ni ejecutarlo localmente.
+- Los metadatos de Hugging Face (tags BERT, pipeline feature-extraction) contradicen la descripcion de la model card, que presenta un modelo de razonamiento conversacional con function calling.
 - Los benchmarks publicados son auto-reportados y no han sido verificados por terceros; los modelos de referencia no estan identificados.
 - No se especifican los idiomas soportados ni la longitud de contexto.
 - No se documentan sesgos conocidos, riesgos de alucinacion ni limitaciones de contexto.
@@ -89,7 +89,7 @@ No disponible. La model card menciona dos modelos de referencia ("Model1" y "Mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ASDASQE1E12/my-awesome-model
+- Repositorio Hugging Face: https://huggingface.co/ASDASQE1E12/my-awesome-model
 - Repositorio de prueba: https://huggingface.co/ASDASQE1E12/MyAwesomeModel-TestRepo
 
 No se han encontrado papers, repositorios de codigo, demos ni documentacion adicional asociada a este modelo en la busqueda web realizada.

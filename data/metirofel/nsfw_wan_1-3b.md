@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Wan 1.3b es un ajuste fino (fine-tune) del modelo de generación de vídeo a partir de texto Wan-AI/Wan2.1-T2V-1.3B, publicado por el usuario Metirofel en HuggingFace. Se trata de un modelo denso de 1.300 millones de parámetros, con arquitectura de transformer para texto-a-vídeo (T2V), especializado en la generación de clips cortos de contenido para adultos. El objetivo declarado por el autor es servir como herramienta de investigación y creación dentro del ámbito del contenido NSFW, manteniendo coherencia temporal nativa sin necesidad de LoRAs auxiliares.
+NSFW Wan 1.3b es un ajuste fino (fine-tune) del modelo de generación de vídeo a partir de texto Wan-AI/Wan2.1-T2V-1.3B, publicado por el usuario Metirofel en Hugging Face. Se trata de un modelo denso de 1.300 millones de parámetros, con arquitectura de transformer para texto-a-vídeo (T2V), especializado en la generación de clips cortos de contenido para adultos. El objetivo declarado por el autor es servir como herramienta de investigación y creación dentro del ámbito del contenido NSFW, manteniendo coherencia temporal nativa sin necesidad de LoRAs auxiliares.
 
 El interés técnico del repositorio no está en el rendimiento bruto, sino en el registro metodológico que documenta el autor: describe un primer entrenamiento en dos fases (10 epochs de imagen seguidas de 10 epochs de vídeo) que provocó olvido catastrófico y artefactos anatómicos graves, y una segunda ejecución con dataset mixto simultáneo (30.000 clips de vídeo y 20.000 imágenes fijas) que corrigió parcialmente esos problemas. Es, por tanto, un caso de estudio útil sobre regularización espacial en ajuste fino de modelos de vídeo, además del propio uso generativo.
 
@@ -102,7 +102,7 @@ La comparacion con el modelo base es la unica que puede establecerse con la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Metirofel/NSFW_Wan_1.3b
+- Modelo en Hugging Face: https://huggingface.co/Metirofel/NSFW_Wan_1.3b
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Guia de prompting incluida en el repositorio: https://huggingface.co/Metirofel/NSFW_Wan_1.3b/blob/main/prompting-guide.json
 - Texto de la licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

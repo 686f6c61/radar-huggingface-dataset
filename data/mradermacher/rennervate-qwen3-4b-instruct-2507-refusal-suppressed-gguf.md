@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed-GGUF es una cuantizacion estatica en formato GGUF del modelo Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed, publicado por el usuario mradermacher en HuggingFace. El modelo base es un ajuste fino de Qwen3-4B-Instruct-2507, desarrollado por BanZhuan-AI, en el que se ha suprimido el comportamiento de rechazo (refusal) del modelo original, es decir, se ha modificado para que responda a peticiones que el modelo base tenderia a declinar.
+Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed-GGUF es una cuantizacion estatica en formato GGUF del modelo Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed, publicado por el usuario mradermacher en Hugging Face. El modelo base es un ajuste fino de Qwen3-4B-Instruct-2507, desarrollado por BanZhuan-AI, en el que se ha suprimido el comportamiento de rechazo (refusal) del modelo original, es decir, se ha modificado para que responda a peticiones que el modelo base tenderia a declinar.
 
 La relevancia de esta publicacion es practica: se trata de un artefacto de cuantizacion que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y derivados (Ollama, LM Studio, etc.), ofreciendo multiples niveles de compresion (desde Q2_K hasta Q8_0, ademas de F16 e IQ4_XS). El repositorio no incluye model card descriptiva, pipeline, idiomas ni licencia declarados, por lo que la mayor parte de las especificaciones tecnicas deben inferirse del modelo base y de las etiquetas de cuantizacion incluidas en el README.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo para este ajuste concreto; la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed-GGUF
 - Modelo base del ajuste: https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed
 - Modelo original Qwen3-4B-Instruct-2507 (referencia): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher

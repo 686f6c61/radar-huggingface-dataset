@@ -68,7 +68,7 @@ No disponible. No se han encontrado comparaciones directas con otros adaptadores
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/mihirpatil/forge-fraud-analyst-qwen2.5-3b
+- Repositorio Hugging Face del adaptador: https://huggingface.co/mihirpatil/forge-fraud-analyst-qwen2.5-3b
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/mihirpatil0209/forge-payment-fraud-sft
 - Kernel de verificación en Kaggle: https://www.kaggle.com/code/mihirpatil0209/forge-analyst-model-verification

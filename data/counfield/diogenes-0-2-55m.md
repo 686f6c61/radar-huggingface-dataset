@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Diogenes-0.2-55M es un modelo de lenguaje desarrollado por Counfield, publicado en HuggingFace bajo licencia MIT. Con 55 millones de parametros, se situa en la categoria de modelos ultraligeros, pensados para entornos con recursos computacionales muy limitados o para experimentacion temprana. El repositorio fue creado el 1 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones.
+Diogenes-0.2-55M es un modelo de lenguaje desarrollado por Counfield, publicado en Hugging Face bajo licencia MIT. Con 55 millones de parametros, se situa en la categoria de modelos ultraligeros, pensados para entornos con recursos computacionales muy limitados o para experimentacion temprana. El repositorio fue creado el 1 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones.
 
 La model card es minima: unicamente declara la licencia MIT y contiene la anotacion "In training", lo que indica que el modelo se encuentra en fase de entrenamiento o que su publicacion es preliminar. No se proporciona informacion sobre arquitectura, datos de entrenamiento, tokenizador, longitud de contexto ni capacidades.
 
@@ -81,5 +81,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Counfield/Diogenes-0.2-55M
+- Hugging Face: https://huggingface.co/Counfield/Diogenes-0.2-55M
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

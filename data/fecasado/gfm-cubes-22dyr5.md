@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`gfm-cubes-22dYR5` es una política robótica entrenada con LeRobot y publicada en HuggingFace por el usuario `fecasado`. No es un modelo de lenguaje: es un controlador de imitación (imitation learning) para un brazo robótico tipo SO-100, orientado a tareas de manipulación de objetos cúbicos. El nombre `gaze_flow_matching` sugiere una política basada en flow matching, una familia de modelos generativos que aprenden campos vectoriales continuos para producir trayectorias de acciones suaves y multimodales.
+`gfm-cubes-22dYR5` es una política robótica entrenada con LeRobot y publicada en Hugging Face por el usuario `fecasado`. No es un modelo de lenguaje: es un controlador de imitación (imitation learning) para un brazo robótico tipo SO-100, orientado a tareas de manipulación de objetos cúbicos. El nombre `gaze_flow_matching` sugiere una política basada en flow matching, una familia de modelos generativos que aprenden campos vectoriales continuos para producir trayectorias de acciones suaves y multimodales.
 
-El modelo cuenta con 75.247.306 parámetros (aproximadamente 75 M) y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en la categoría de políticas ligeras que pueden ejecutarse en tiempo real en hardware modesto. Se distribuye en formato safetensors y está pensado para integrarse en el ecosistema LeRobot, la librería de HuggingFace para aprendizaje por imitación en robótica.
+El modelo cuenta con 75.247.306 parámetros (aproximadamente 75 M) y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en la categoría de políticas ligeras que pueden ejecutarse en tiempo real en hardware modesto. Se distribuye en formato safetensors y está pensado para integrarse en el ecosistema LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica.
 
 Su relevancia es acotada pero concreta: sirve como ejemplo reproducible de entrenamiento de una política de manipulación con un dataset específico (`fecasado/Ncubes-to-Nbaskets-320x240`, resolución 320x240) y demuestra el flujo completo de LeRobot, desde el entrenamiento hasta la evaluación en un robot real o simulado. La model card es una plantilla sin completar, por lo que la mayor parte de los detalles técnicos no están documentados por el autor.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gfm-cubes-22dYR5 | 75,2 M | no aplica | no disponible | apache-2.0 | HuggingFace |
-| Políticas ACT de LeRobot | variable (típicamente 10-80 M) | no aplica | no disponible | apache-2.0 | HuggingFace / LeRobot |
-| Políticas diffusion de LeRobot | variable | no aplica | no disponible | apache-2.0 | HuggingFace / LeRobot |
+| gfm-cubes-22dYR5 | 75,2 M | no aplica | no disponible | apache-2.0 | Hugging Face |
+| Políticas ACT de LeRobot | variable (típicamente 10-80 M) | no aplica | no disponible | apache-2.0 | Hugging Face / LeRobot |
+| Políticas diffusion de LeRobot | variable | no aplica | no disponible | apache-2.0 | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas. La comparación se limita a la familia de políticas soportadas por LeRobot (ACT, diffusion, flow matching), que comparten el mismo ecosistema de entrenamiento y evaluación.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fecasado/gfm-cubes-22dYR5
+- Hugging Face: https://huggingface.co/fecasado/gfm-cubes-22dYR5
 - Dataset de entrenamiento: https://huggingface.co/datasets/fecasado/Ncubes-to-Nbaskets-320x240
 - LeRobot (repositorio): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

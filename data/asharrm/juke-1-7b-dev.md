@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juke-1.7b | 1,72B | no disponible | Generación de playlists con direcciones semánticas | cc-by-sa-4.0 | HuggingFace (safetensors, GGUF) |
-| Qwen3-1.7B (base) | 1,72B | no disponible | Generación de texto general | no disponible en la información | HuggingFace |
+| juke-1.7b | 1,72B | no disponible | Generación de playlists con direcciones semánticas | cc-by-sa-4.0 | Hugging Face (safetensors, GGUF) |
+| Qwen3-1.7B (base) | 1,72B | no disponible | Generación de texto general | no disponible en la información | Hugging Face |
 | Text2Tracks (Spotify) | no disponible | no disponible | Recuperación generativa de canciones | no disponible | No es un modelo abierto comparable directamente |
 
 No se dispone de datos de benchmarks para comparar el rendimiento de juke-1.7b con alternativas de la misma categoría. La comparación con Qwen3-1.7B es únicamente arquitectónica, ya que juke es un ajuste fino especializado. Text2Tracks se menciona en la model card como inspiración conceptual, pero no se ofrecen cifras comparativas.
@@ -83,6 +83,6 @@ No se dispone de datos de benchmarks para comparar el rendimiento de juke-1.7b c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asharrm/juke-1.7b-dev
+- Hugging Face: https://huggingface.co/asharrm/juke-1.7b-dev
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio llama.cpp (conversión GGUF): https://github.com/ggerganov/llama.cpp

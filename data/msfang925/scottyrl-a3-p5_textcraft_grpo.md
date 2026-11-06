@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `msfang925/scottyrl-a3-p5_textcraft_grpo` | LoRA rango 32 sobre Qwen3.5-4B | Adaptador; base 4B | No disponible | No disponible | HuggingFace (0 descargas) |
-| `Qwen/Qwen3.5-4B` (modelo base) | Transformer denso | 4B | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
+| `msfang925/scottyrl-a3-p5_textcraft_grpo` | LoRA rango 32 sobre Qwen3.5-4B | Adaptador; base 4B | No disponible | No disponible | Hugging Face (0 descargas) |
+| `Qwen/Qwen3.5-4B` (modelo base) | Transformer denso | 4B | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
 | Otros adaptadores scottyrl del mismo autor | LoRA sobre Qwen3.5-4B | Adaptador | No disponible | No disponible | No verificado en la información proporcionada |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/msfang925/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/msfang925/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Referencia de exportación Tinker: `tinker://model_ad84975e/v50_r3` (identificador interno, no es una URL pública)
 - Configuración de entrenamiento: `configs/p5_textcraft_grpo.yaml` (no enlazada en la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0002_q_1e-05` es una variante del modelo Llama-3.1-8B-Instruct de Meta, publicada por el usuario hadasor en HuggingFace. El nombre sugiere que se ha aplicado una técnica de poda (prune) orientada a eliminar o mitigar la generación de consejos médicos perjudiciales, con parámetros de poda `p=0.0002` y `q=1e-05`. Sin embargo, la model card no proporciona ninguna información técnica concreta sobre el proceso de poda, los datos utilizados ni la metodología. Se trata de un modelo experimental con cero descargas y sin documentación sustancial, lo que limita su uso directo en producción sin una evaluación adicional.
+El modelo `hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0002_q_1e-05` es una variante del modelo Llama-3.1-8B-Instruct de Meta, publicada por el usuario hadasor en Hugging Face. El nombre sugiere que se ha aplicado una técnica de poda (prune) orientada a eliminar o mitigar la generación de consejos médicos perjudiciales, con parámetros de poda `p=0.0002` y `q=1e-05`. Sin embargo, la model card no proporciona ninguna información técnica concreta sobre el proceso de poda, los datos utilizados ni la metodología. Se trata de un modelo experimental con cero descargas y sin documentación sustancial, lo que limita su uso directo en producción sin una evaluación adicional.
 
 La arquitectura subyacente es la de Llama-3.1-8B-Instruct, un transformer decoder-only con 8.030 millones de parámetros, pero no se especifica si la poda altera la arquitectura interna o solo los pesos. El repositorio contiene únicamente pesos en formato safetensors (16,1 GB), sin archivos de configuración adicionales ni ejemplos de uso. Dada la ausencia de información verificable, cualquier despliegue debe considerar que el modelo no ha sido validado externamente y que su comportamiento real es desconocido.
 
@@ -61,9 +61,9 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B-Instruct (original) | 8,03B | 128k | Llama 3.1 Community License | HuggingFace |
-| hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0002_q_1e-05 | 8,03B | no disponible | no disponible | HuggingFace |
-| hadasor/Llama-3.1-8B-Instruct-prune_risky_financial_advice (variante similar) | 8,03B | no disponible | no disponible | HuggingFace |
+| Llama-3.1-8B-Instruct (original) | 8,03B | 128k | Llama 3.1 Community License | Hugging Face |
+| hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0002_q_1e-05 | 8,03B | no disponible | no disponible | Hugging Face |
+| hadasor/Llama-3.1-8B-Instruct-prune_risky_financial_advice (variante similar) | 8,03B | no disponible | no disponible | Hugging Face |
 
 No hay informacion sobre si la poda reduce el numero de parametros efectivos o solo modifica los pesos. Tampoco se conocen diferencias de rendimiento frente al original.
 
@@ -79,7 +79,7 @@ No hay informacion sobre si la poda reduce el numero de parametros efectivos o s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0002_q_1e-05
+- Modelo en Hugging Face: https://huggingface.co/hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0002_q_1e-05
 - Variante similar (p=0.0007, q=4e-05): https://huggingface.co/hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0007_q_4e-05
 - Variante de consejos financieros: https://huggingface.co/hadasor/Llama-3.1-8B-Instruct-prune_risky_financial_advice_p_0.0007_q_1e-05/discussions
 - Referencia a la calculadora de impacto ambiental (mencionada en la model card): https://arxiv.org/abs/1910.09700

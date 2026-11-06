@@ -21,7 +21,7 @@ Su relevancia práctica es doble: baja el coste de despliegue de un modelo multi
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors en formato compressed-tensors (`pack-quantized`), autodetectado por vLLM |
 
-Nota sobre el recuento de parámetros: la discrepancia entre los ~36.000 millones declarados en la model card y los 5.954.701.156 registrados en safetensors no está explicada por el autor. Lo más probable es que el recuento de HuggingFace refleje las formas empaquetadas de los tensores int4, pero es una suposición no confirmada.
+Nota sobre el recuento de parámetros: la discrepancia entre los ~36.000 millones declarados en la model card y los 5.954.701.156 registrados en safetensors no está explicada por el autor. Lo más probable es que el recuento de Hugging Face refleje las formas empaquetadas de los tensores int4, pero es una suposición no confirmada.
 
 ## Arquitectura y entrenamiento
 
@@ -83,8 +83,8 @@ Estos datos describen la distribución del enrutado durante la calibración, no 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Qwen/Qwen3.6-35B-A3B` (base, BF16) | ~36B totales / ~3B activos | 262.144 | BF16 | Apache 2.0 | HuggingFace |
-| `fasolack/Qwen3.6-35B-A3B-W4A16` | ~36B totales / ~3B activos (recuento safetensors: 5.954.701.156) | 262.144 | int4 W4A16, grupo 128, AutoRound | Apache 2.0 | HuggingFace |
+| `Qwen/Qwen3.6-35B-A3B` (base, BF16) | ~36B totales / ~3B activos | 262.144 | BF16 | Apache 2.0 | Hugging Face |
+| `fasolack/Qwen3.6-35B-A3B-W4A16` | ~36B totales / ~3B activos (recuento safetensors: 5.954.701.156) | 262.144 | int4 W4A16, grupo 128, AutoRound | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones int4 del mismo modelo base | mismos | 262.144 | int4 (calibración genérica) | Apache 2.0 (heredada) | no disponible (no se detallan en la información) |
 
 El autor afirma explícitamente que esta compilación se diferencia de otras cuantizaciones de 4 bits del mismo modelo en dos puntos: la calibración orientada a tool calling y código en lugar de texto web genérico, y la publicación de estadísticas de cobertura de expertos. No se aportan identificadores, cifras de rendimiento ni comparaciones cuantitativas con esas alternativas, por lo que la comparación no puede cerrarse con datos objetivos. Tampoco se dispone de datos de modelos de otros fabricantes con arquitectura, tamaño o tarea equivalentes.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-kx-native-w15-s130` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,02 B) almacenado en formato safetensors, con un peso total del repositorio de 8,1 GB, lo que sugiere pesos en precision alta (probablemente fp16 o bf16). El identificador incluye la etiqueta `sn38-nanochrono`, que apunta a una familia o arquitectura interna no documentada publicamente.
+El modelo `alfred8995/r18-a2-w13-kx-native-w15-s130` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,02 B) almacenado en formato safetensors, con un peso total del repositorio de 8,1 GB, lo que sugiere pesos en precision alta (probablemente fp16 o bf16). El identificador incluye la etiqueta `sn38-nanochrono`, que apunta a una familia o arquitectura interna no documentada publicamente.
 
-La informacion disponible es extremadamente limitada: no se especifican pipeline, idiomas, arquitectura, contexto ni datos de entrenamiento. El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. No consta ninguna descarga ni interaccion registrada en el momento de redactar esta ficha.
+La informacion disponible es extremadamente limitada: no se especifican pipeline, idiomas, arquitectura, contexto ni datos de entrenamiento. El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. No consta ninguna descarga ni interaccion registrada en el momento de redactar esta ficha.
 
 Por su tamano (2 B de parametros) y su empaquetado en safetensors, el modelo se situa en la categoria de modelos pequenos-medianos aptos para inferencia en GPU de consumo, aunque sin documentacion tecnica no es posible confirmar su arquitectura ni su calidad. Esta ficha recoge unicamente los datos verificables y marca explicitamente como no disponibles aquellos que no han sido publicados.
 
@@ -68,17 +68,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w13-kx-native-w15-s130 | ~2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace |
-| Gemma 2 2B (Google) | 2,6 B | 8.192 tokens | Gemma Terms | Abierto en HuggingFace |
-| Qwen2.5 1.5B (Alibaba) | 1,54 B | 32.768 tokens | Apache 2.0 | Abierto en HuggingFace |
-| SmolLM2 1.7B (HuggingFace) | 1,71 B | 8.192 tokens | Apache 2.0 | Abierto en HuggingFace |
+| alfred8995/r18-a2-w13-kx-native-w15-s130 | ~2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face |
+| Gemma 2 2B (Google) | 2,6 B | 8.192 tokens | Gemma Terms | Abierto en Hugging Face |
+| Qwen2.5 1.5B (Alibaba) | 1,54 B | 32.768 tokens | Apache 2.0 | Abierto en Hugging Face |
+| SmolLM2 1.7B (Hugging Face) | 1,71 B | 8.192 tokens | Apache 2.0 | Abierto en Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia, ya que no hay datos de rendimiento del modelo evaluado. Los tres alternativos cuentan con model cards detalladas y benchmarks publicos; el modelo de alfred8995 no.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay informacion sobre arquitectura, datos de entrenamiento, idiomas ni comportamiento esperado, lo que impide evaluar su idoneidad para produccion.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y a la integracion en pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y a la integracion en pipelines automatizados.
 - Riesgo elevado de alucinacion y comportamiento impredecible: sin datos de alineacion ni evaluaciones, no puede asumirse ninguna garantia de calidad.
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no es posible caracterizar sesgos de genero, raza, idioma o dominio.
 - Idiomas no declarados: no se puede confirmar soporte de castellano ni de otros idiomas.
@@ -89,5 +89,5 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w15-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w15-s130
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

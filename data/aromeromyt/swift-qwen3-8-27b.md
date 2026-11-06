@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27b es un modelo de lenguaje de 27.356.723.952 parametros publicado por el usuario aromeromyt en HuggingFace. Se distribuye en formato safetensors con cuantizacion de 4 bits (segun las etiquetas del repositorio) y su etiqueta de arquitectura apunta a la familia `qwen3_5`. El repositorio ocupa 16,9 GB y fue creado y actualizado el 13 de septiembre de 2026, practicamente sin actividad posterior: cero descargas y cero "likes" en el momento de redactar esta ficha.
+Swift-Qwen3.8-27b es un modelo de lenguaje de 27.356.723.952 parametros publicado por el usuario aromeromyt en Hugging Face. Se distribuye en formato safetensors con cuantizacion de 4 bits (segun las etiquetas del repositorio) y su etiqueta de arquitectura apunta a la familia `qwen3_5`. El repositorio ocupa 16,9 GB y fue creado y actualizado el 13 de septiembre de 2026, practicamente sin actividad posterior: cero descargas y cero "likes" en el momento de redactar esta ficha.
 
 La model card no describe el modelo base, sino una variante derivada: un modelo con marca MTPLX de prediccion multi-token (multi-token prediction) para Apple Silicon sobre MLX, generado con la herramienta MTPLX Forge a partir de `ukisai/Swift-Qwen3.8-27b`. Segun esa misma model card, la verificacion del autor reporta una profundidad optima de decodificacion D2 y un multiplicador de 2,49x frente a una linea base autorregresiva, medida en un Apple M4 Max.
 
@@ -110,7 +110,7 @@ El unico antecesor identificado es `ukisai/Swift-Qwen3.8-27b`, del que este arte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aromeromyt/Swift-Qwen3.8-27b
+- Modelo en Hugging Face: https://huggingface.co/aromeromyt/Swift-Qwen3.8-27b
 - MTPLX Forge (herramienta de generacion, citada en la model card): https://github.com/youssofal/MTPLX
 - Modelo origen citado: `ukisai/Swift-Qwen3.8-27b` (no se ha localizado enlace directo en la informacion disponible)
 - Registro de verificacion: `mtplx_runtime.json` dentro del repositorio (no se incluye su contenido en la informacion disponible)

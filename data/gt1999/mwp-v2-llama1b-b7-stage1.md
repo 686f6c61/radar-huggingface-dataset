@@ -67,6 +67,6 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GT1999/mwp-v2-llama1b-b7-stage1
+- Repositorio Hugging Face: https://huggingface.co/GT1999/mwp-v2-llama1b-b7-stage1
 - Otros modelos del mismo autor (referencia): https://huggingface.co/GT1999/mwp_sft_llama3.23b_MATH
 - Checkpoint posterior del mismo proyecto: https://huggingface.co/GT1999/mwp-v2-llama1b-b9-stage1

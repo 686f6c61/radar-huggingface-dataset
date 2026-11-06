@@ -23,7 +23,7 @@ Su relevancia actual radica en la nicho que ocupa: modelos pequeños y abiertos 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura del modelo base (tipo de attention, número de capas, dimensiones ocultas) ni sobre el proceso de entrenamiento. El modelo se distribuye mediante la librería `transformers` de HuggingFace, lo que indica una arquitectura de tipo transformer estándar, y sus 4,02 mil millones de parámetros lo sitúan en la categoría de modelos pequeños (SLM).
+No se ha publicado información detallada sobre la arquitectura del modelo base (tipo de attention, número de capas, dimensiones ocultas) ni sobre el proceso de entrenamiento. El modelo se distribuye mediante la librería `transformers` de Hugging Face, lo que indica una arquitectura de tipo transformer estándar, y sus 4,02 mil millones de parámetros lo sitúan en la categoría de modelos pequeños (SLM).
 
 El entrenamiento se realizó sobre el dataset `coppead/causalista-worlds`, un conjunto de datos sintético. Los tags del repositorio (causal-inference, management, adjustment-set, abstention, synthetic-data) sugieren que el fine-tuning se orientó a tareas de razonamiento causal estructurado en contextos de gestión empresarial, con énfasis en la identificación de conjuntos de ajuste para estimación de efectos causales y en la abstención como comportamiento explícito. No hay datos disponibles sobre el número de tokens de entrenamiento, el uso de RLHF/DPO ni la fecha de entrenamiento.
 

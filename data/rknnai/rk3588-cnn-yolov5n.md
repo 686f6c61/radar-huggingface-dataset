@@ -31,7 +31,7 @@ Datos adicionales de la configuracion publicada:
 | Version de runtime RKNN | v2.4.0 |
 | Modelo de origen | https://github.com/airockchip/yolov5 |
 | Verificacion de integridad | SHA256SUMS incluido en el repositorio |
-| Tamano del repositorio | 0,0 GB segun la ficha de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun la ficha de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento propios para establecer una comparacion cu
 
 | Modelo | Arquitectura | Entrada | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RK3588-CNN-yolov5n (este) | CNN YOLOv5n | 640x640 | w8a8 | GPL-3.0 | HuggingFace, ModelScope |
+| RK3588-CNN-yolov5n (este) | CNN YOLOv5n | 640x640 | w8a8 | GPL-3.0 | Hugging Face, ModelScope |
 | YOLOv5 (otras variantes del zoo) | CNN YOLOv5 | no disponible | no disponible | GPL-3.0 segun el modelo de origen | RKNN Model Zoo |
 | Otros detectores del RKNN Model Zoo | no disponible | no disponible | no disponible | no disponible | RKNN Model Zoo |
 
@@ -103,7 +103,7 @@ El RKNN Model Zoo cubre varios algoritmos y plataformas (RK3562, RK3566, RK3568,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov5n
+- Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov5n
 - RKNN Model Zoo (repositorio principal): https://github.com/airockchip/rknn_model_zoo
 - Ejemplo de YOLOv5 en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/blob/main/examples/yolov5/README.md
 - Ejemplo YOLOv5 en el arbol de ejemplos: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov5

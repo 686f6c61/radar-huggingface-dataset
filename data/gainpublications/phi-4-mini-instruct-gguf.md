@@ -80,6 +80,6 @@ No se dispone de información suficiente para comparar con alternativas de otros
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/GainPublications/Phi-4-mini-instruct-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/Phi-4-mini-instruct
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/GainPublications/Phi-4-mini-instruct-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

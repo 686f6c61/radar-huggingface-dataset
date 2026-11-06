@@ -4,7 +4,7 @@
 
 OAC System Health v1 es un modelo de regresión logística, sin dependencias, desarrollado por SZL Holdings para monitorizar la salud operativa de infraestructuras de transporte mediante telemetría sintética. No se trata de un modelo clínico ni médico; el repositorio fue renombrado desde `oac-clinical-transport-health-v1` para eliminar una nomenclatura engañosa. Está diseñado para emitir un aviso de atención del operador (`operator_attention_score`) basado en 8 campos operativos concretos.
 
-El modelo se publica en HuggingFace bajo licencia Apache-2.0 y se distribuye como un archivo JSON (`model.json`) junto con un recibo de artefacto (`artifact_receipt.json`) que permite verificar el SHA-256 del modelo antes de la inferencia. Al ser una regresión logística con 8 entradas, no es un modelo de lenguaje: su valor reside en su simplicidad, interpretabilidad y en la verificación de integridad.
+El modelo se publica en Hugging Face bajo licencia Apache-2.0 y se distribuye como un archivo JSON (`model.json`) junto con un recibo de artefacto (`artifact_receipt.json`) que permite verificar el SHA-256 del modelo antes de la inferencia. Al ser una regresión logística con 8 entradas, no es un modelo de lenguaje: su valor reside en su simplicidad, interpretabilidad y en la verificación de integridad.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No disponible. No se dispone de información sobre modelos comparables en la doc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/oac-system-health-v1
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/oac-system-health-v1
 - Dataset sintético: https://huggingface.co/datasets/SZLHOLDINGS/oac-clinical-transport-observability-synthetic
 - GitHub de SZL Holdings: https://github.com/szl-holdings
 - Repositorio source szl-forge: https://github.com/szl-holdings/szl-forge

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Hieuvo96/clip-matching` es un repositorio de HuggingFace que contiene una implementación propia y reducida de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de *matching* imagen-texto. No es un modelo entrenado: el autor lo describe explícitamente como un punto de partida reproducible y el fichero `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo.
+`Hieuvo96/clip-matching` es un repositorio de Hugging Face que contiene una implementación propia y reducida de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de *matching* imagen-texto. No es un modelo entrenado: el autor lo describe explícitamente como un punto de partida reproducible y el fichero `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 El dato más relevante es su tamaño: 24.832 parámetros totales (aproximadamente 24,8 mil), lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier CLIP utilizable en producción. La model card etiqueta la escala como "huge", una etiqueta que contradice el recuento real de parámetros del checkpoint publicado y que conviene interpretar como el nombre de una configuración de arquitectura, no como un indicador de capacidad.
 
@@ -21,7 +21,7 @@ El repositorio se publicó el 18 de octubre de 2026 bajo licencia Apache-2.0, co
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (`model.safetensors`), acompañado de `config.json` y `training_args.json` |
 | Escala declarada por el autor | "huge" (no consistente con los 24.832 parámetros del checkpoint) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repo | 0.0 GB |
 
@@ -75,10 +75,10 @@ La comparación no es homogénea: este repositorio no contiene un modelo entrena
 
 | Modelo | Parametros | Contexto texto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hieuvo96/clip-matching | 24.832 | No disponible | No (checkpoint de inicialización) | apache-2.0 | HuggingFace, 0 descargas |
+| Hieuvo96/clip-matching | 24.832 | No disponible | No (checkpoint de inicialización) | apache-2.0 | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens | Sí | MIT (pesos) | Ampliamente disponible |
 | CLIP ViT-L/14 (OpenAI) | ~428 M | 77 tokens | Sí | MIT (pesos) | Ampliamente disponible |
-| OpenCLIP (varias escalas) | ~86 M a >1 B | 77 tokens | Sí | MIT en código; licencia de pesos variable según checkpoint | HuggingFace / GitHub |
+| OpenCLIP (varias escalas) | ~86 M a >1 B | 77 tokens | Sí | MIT en código; licencia de pesos variable según checkpoint | Hugging Face / GitHub |
 
 Diferencias clave frente a las alternativas: el repositorio de `Hieuvo96` aporta un mecanismo de fusión distinto (*gated fusion* con groupnorm y swish) y un esqueleto reproducible, pero carece de pesos entrenados, de documentación de contexto y de cualquier métrica. Las cifras de parámetros de los modelos CLIP de referencia son aproximadas y corresponden a las variantes habitualmente citadas.
 
@@ -96,7 +96,7 @@ Diferencias clave frente a las alternativas: el repositorio de `Hieuvo96` aporta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hieuvo96/clip-matching
+- Repositorio en Hugging Face: https://huggingface.co/Hieuvo96/clip-matching
 - Árbol de ficheros: https://huggingface.co/Hieuvo96/clip-matching/tree/main
 - Script de evaluación: https://huggingface.co/Hieuvo96/clip-matching/blob/main/eval.py
 - Configuración de arquitectura: https://huggingface.co/Hieuvo96/clip-matching/blob/main/config.json
